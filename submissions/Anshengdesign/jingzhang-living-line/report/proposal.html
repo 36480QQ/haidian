@@ -64,7 +64,7 @@ code { background: #f2f4f7; padding: 1px 5px; border-radius: 4px; font-size: 13p
 <tr>
 <td>这条带到底病在哪？</td>
 <td>骨架健康，三处被挡（连接/职住/生态）</td>
-<td>EI₀=0.823 四子指数体检单（E_link 0.73 黄 / E_entangle 0.75 黄 / E_ecosys 0.77 黄）[metric:EI.ei1.value]</td>
+<td>EI₀=0.795 四子指数体检单（E_link 0.62 黄 / E_entangle 0.75 黄 / E_ecosys 0.77 黄）[metric:EI.ei1.value]</td>
 </tr>
 <tr>
 <td>处方是什么？</td>
@@ -73,7 +73,7 @@ code { background: #f2f4f7; padding: 1px 5px; border-radius: 4px; font-size: 13p
 </tr>
 <tr>
 <td>有没有用？</td>
-<td>涌现指数 0.823 → <strong>0.9625 全绿档</strong></td>
+<td>涌现指数 0.795 → <strong>0.9625 全绿档</strong></td>
 <td>ei1_anchored.json + 权重/输入双重敏感性区间 [metric:EI.ei1_design_S4]</td>
 </tr>
 <tr>
@@ -83,7 +83,7 @@ code { background: #f2f4f7; padding: 1px 5px; border-radius: 4px; font-size: 13p
 </tr>
 <tr>
 <td>不利读数？</td>
-<td><strong>缝合不改变净网 λ</strong>（29.167%→29.167%）；冗余度 R 从 0.826 升到 0.870（更混合，非更精巧）</td>
+<td><strong>缝合不改变净网 λ</strong>（24.76%→24.76%）；冗余度 R 从 0.826 升到 0.870（更混合，非更精巧）</td>
 <td>c32 K008 实证 [metric:C32_LAMBDA_STITCHED] + c29 冗余度 [metric:C29_REDUNDANCY]</td>
 </tr>
 </tbody>
@@ -138,8 +138,8 @@ code { background: #f2f4f7; padding: 1px 5px; border-radius: 4px; font-size: 13p
 <tbody>
 <tr>
 <td><strong>Wilson 空间交互</strong></td>
-<td>λ 净网超临界占比 <strong>29.167%</strong>（λc=0.42）；5 核仅 2/5 超临界耦合 [metric:C1_WILSON]</td>
-<td>E_link 0.73 黄</td>
+<td>λ 净网超临界占比 <strong>24.76%</strong>（λc=0.42）；5 核仅 2/5 超临界耦合（原点=清华园车站真实站址） [metric:C1_WILSON]</td>
+<td>E_link 0.62 黄</td>
 </tr>
 <tr>
 <td><strong>Hillier 空间句法</strong></td>
@@ -164,7 +164,7 @@ code { background: #f2f4f7; padding: 1px 5px; border-radius: 4px; font-size: 13p
 </tbody>
 </table>
 <p><img alt="五位科学家会诊：Wilson/Hillier/Batty/Bettencourt/Jacobs 五把尺子量同一对象" src="../assets/figures/c24-scientists-consultation.png" /></p>
-<p><strong>环结论 →</strong> 骨架健康，三处被挡：连接弱（λ/句法）、职住失衡、生态缺口。体检总分 EI₀=0.823 黄档。药的靶点锁定为"缝合、补位、度量"。</p>
+<p><strong>环结论 →</strong> 骨架健康，三处被挡：连接弱（λ/句法）、职住失衡、生态缺口。体检总分 EI₀=0.795 黄档。药的靶点锁定为"缝合、补位、度量"。</p>
 <hr />
 <h2>使用者调研与需求清单（诊断环）</h2>
 <p>城市的主人是七类人：AI 开发者、科研人员、居民、学生、游客、产业服务者、<strong>一线劳动者（保洁/安保/配送）</strong>。前六类已在 v0.x 画像，一线劳动者本轮补入——因为公共利益的底线，是"最不便利的那个人也能用"。</p>
@@ -322,7 +322,7 @@ code { background: #f2f4f7; padding: 1px 5px; border-radius: 4px; font-size: 13p
 </tr>
 <tr>
 <td>λ 信息条（唯一屏幕）</td>
-<td>Wilson λ 数据层（超临界占比 29.17%）；铁律 11：屏幕 ≤1 处功能配角</td>
+<td>Wilson λ 数据层（超临界占比 24.76%）；铁律 11：屏幕 ≤1 处功能配角</td>
 </tr>
 </tbody>
 </table>
@@ -565,7 +565,7 @@ code { background: #f2f4f7; padding: 1px 5px; border-radius: 4px; font-size: 13p
 <p><img alt="道路交通规划图：分级+主脊慢行+七点接驳+轨道七站" src="../assets/figures/zoning-road.png" /></p>
 <p><img alt="主脊·Hyper Line 街道剖面 S-S'（步骑分离，概念断面）" src="../assets/figures/spine-section.png" /></p>
 <p><img alt="主脊·Hyper Line 步骑分离效果图（AI 概念意向，非实施图）— 对应 S-S' 断面：连续平坦慢行步道（无高差路堤、无架空），铁路本体由平嵌构造设计图表达" src="../assets/media/hyperline-spine.jpg" /></p>
-<p>主脊贯通（步行/骑行脊，weight=几何距离）+ 七点接驳（双侧，≤150m）；轨道依托五道口/大钟寺/知春路等 7 站；市政/公共服务为体系建议（无管线底数，不给工程线位结论）。交通组织遵循"网络优先于地块"：先接回主脊，再谈地块功能 [metric:C32_LAMBDA_STITCHED]。诚实声明：缝合不改净网 λ（29.167% 不变），交通收益在句法可达性（+36%）而非机动车耦合距离。几何含义：七点接驳各连走廊两侧最近路网节点（≤150m），形成连续的慢行主脊；数据缺口：道路红线与断面未公开，断面尺寸为概念建议；轨道站点接驳与市政管线布局待官方底数后给出。</p>
+<p>主脊贯通（步行/骑行脊，weight=几何距离）+ 七点接驳（双侧，≤150m）；轨道依托五道口/大钟寺/知春路等 7 站；市政/公共服务为体系建议（无管线底数，不给工程线位结论）。交通组织遵循"网络优先于地块"：先接回主脊，再谈地块功能 [metric:C32_LAMBDA_STITCHED]。诚实声明：缝合不改净网 λ（24.76% 不变），交通收益在句法可达性（+36%）而非机动车耦合距离。几何含义：七点接驳各连走廊两侧最近路网节点（≤150m），形成连续的慢行主脊；数据缺口：道路红线与断面未公开，断面尺寸为概念建议；轨道站点接驳与市政管线布局待官方底数后给出。</p>
 <hr />
 <h2>蓝绿空间、公共空间与城市风貌（处方环）</h2>
 <p><img alt="蓝绿系统规划图：渗流巨分量 0.840→0.904" src="../assets/figures/zoning-bluegreen.png" /></p>
@@ -890,13 +890,13 @@ code { background: #f2f4f7; padding: 1px 5px; border-radius: 4px; font-size: 13p
 <p><img alt="财务测算：投资构成 / 收入模型 / 现金流与回收 / 敏感性矩阵（概念量级 DCF，非投资承诺；市场基准见假设表）" src="../assets/figures/c35-finance.png" /></p>
 <h2>指标体系、面积复算与合规矩阵（验证环）</h2>
 <p><strong>涌现指数 EI = 0.30·E_form + 0.25·E_link + 0.30·E_entangle + 0.15·E_ecosys</strong>：
-- EI₀ = 0.823 [0.775, 0.848] 黄档 → EI₁ = <strong>0.9625 [0.9125, 0.985] 全绿档</strong> [metric:EI.ei1_design_S4]
+- EI₀ = 0.795 [0.748, 0.821] 黄档 → EI₁ = <strong>0.9625 [0.9125, 0.985] 全绿档</strong> [metric:EI.ei1_design_S4]
 - 敏感性：权重 ±0.05 → [0.799, 0.818]；输入 ±10% → [0.779, 0.832]（报区间不报单数）[metric:EI.ei1_sensitivity]</p>
 <p><strong>三闸门（设计情景一票否决，全部实算）</strong>：G1 渗流 ≥0.90（实测 0.904 ✓）/ G2 句法 ≥+30%（实测 +36% ✓）/ G3 职住熵 ≥+4%（实测 +5.3% ✓）。<strong>五实例拒绝演示</strong>（弱干预/只补业不补住/过度集聚/S2 单兵/S3 单兵全部退出码 2 拦截，validate_ei.py 亲手复跑）[data:ei/rejection_gallery.md]。</p>
 <p><strong>Score 权衡</strong>：Score = 0.35·ΔEI + 0.15·稳健 + 0.35·可实施 − 0.15·风险。S4=<strong>0.3568</strong> 三候选第一，权重扰动排序不变 [metric:SCORE.S4]。</p>
 <p><img alt="标度律：创新 β&gt;1 超线性，基础设施 β&lt;1 亚线性" src="../assets/figures/c3-scaling.png" />
 <img alt="传导地图：六环论证链的指标流向" src="../assets/figures/transmission-map.png" />
-<img alt="结论仪表盘：EI 0.823→0.9625 全绿 + 三闸门全过" src="../assets/figures/c23-conclusion-dashboard.png" /></p>
+<img alt="结论仪表盘：EI 0.795→0.9625 全绿 + 三闸门全过" src="../assets/figures/c23-conclusion-dashboard.png" /></p>
 <p><strong>环结论 →</strong> 药有效、且"组合才有解"被证明。剩下的交给时间。</p>
 <p><img alt="EI 仪表盘" src="../assets/figures/metrics-evidence.png" /></p>
 <hr />
@@ -912,7 +912,7 @@ code { background: #f2f4f7; padding: 1px 5px; border-radius: 4px; font-size: 13p
 <h2>设计结论</h2>
 <p>这条带的骨架是健康的（D=1.746）。它缺的不是再造，是三件"挪开"的动作——<strong>缝合接回连通、补位接回职住、解锁接回可能</strong>——而每一件都被量过、被证明过：</p>
 <ul>
-<li>现状 EI₀=0.823 黄档 → 处方后 EI₁=0.9625 全绿档；</li>
+<li>现状 EI₀=0.795 黄档 → 处方后 EI₁=0.9625 全绿档；</li>
 <li>三闸门全过（0.904 / +36% / +5.3%）；只有"缝合+纠缠"能过闸门；</li>
 <li>每处权重、每处阈值，人都能改、改完可重算。</li>
 </ul>
