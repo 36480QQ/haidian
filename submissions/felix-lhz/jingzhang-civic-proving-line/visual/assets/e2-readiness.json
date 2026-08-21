@@ -1,15 +1,15 @@
 {
-  "schema_version": "1.8.0",
-  "dataset_id": "jingzhang-v14-pretrial-g0-gate",
+  "schema_version": "1.12.0",
+  "dataset_id": "jingzhang-v15-buildable-civic-cross-g0",
   "title": {
-    "zh": "V14 S7 G0 试验准入门",
-    "en": "V14 S7 G0 Pre-trial Gate"
+    "zh": "V15 可建造公共十字 G0 准入门",
+    "en": "V15 Buildable Civic Cross G0 Gate"
   },
   "definition": {
     "zh": "设计原型和准备表单已经形成，但测绘、权属、八类许可、独立岗位和普通服务基线未完成；当前结论为NO-GO。",
     "en": "The design prototype and preparation forms exist, but survey, title, eight permits, independent posts and the ordinary-service baseline are incomplete; the current decision is NO-GO."
   },
-  "prototype_readiness": "G0_no_go_pending_survey_and_permits",
+  "prototype_readiness": "design_documented_trial_not_admitted",
   "field_status": "not_field_run",
   "permitted_states": [
     "ready_documented",

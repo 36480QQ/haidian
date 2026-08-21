@@ -9,4 +9,10 @@
 - **许可 / permitted display.** The package is submitted under `COMMUNITY-DISPLAY-ONLY` for repository review and competition display. Third-party rights remain with their owners; place and institution names are contextual references, not project marks or evidence of endorsement.
 
 - **V13 ALT-C experience view.** `assets/media/dazhongsi-alt-c-v13.webp` follows the selected design geometry as a generated concept view. It is not field evidence; vector plan, section and geometry audit remain authoritative for scale and selection.
-- **V14 project-bound experience views.** `verification-ring-v14`, `translation-gate-v14` and `receipt-porch-v14` were generated with OpenAI's built-in image-generation mode from prompts constrained to the same ring, gate and porch geometries used in the vector drawings. WebP files serve the offline exhibition; JPEG companions are embedded in vector-first PDFs. They remain concept-generated, non-field evidence; their full prompt summaries, intended use and limits are registered in `sources.json`.
+## V15 concept-generated architectural experience images
+
+- assets/media/verification-ring-v15.webp / .jpg
+- assets/media/translation-gate-v15.webp / .jpg
+- assets/media/receipt-porch-v15.webp / .jpg
+
+Generated with OpenAI built-in image generation on 2026-08-21. They communicate the Ring, Gate and Porch architectural prototypes only and are not site photographs, surveys, field evidence, consultation records or approvals. Text, dimensions, IDs and evidence status are added by local vector layers; professional judgement relies on the plans, sections, structured data and cited public sources.

@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "The public cross never breaks; AI enters one reversible bay only, crossing options are rejected, and the current implementation gate is G0 NO-GO."
+summary: "Build the unbroken public route as an enterable, maintainable, closable and recoverable civic cross; the current implementation gate remains G0 NO-GO."
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterprise-service-copilot", "robot-delivery-low-speed"]
 ---
@@ -14,17 +14,21 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterpris
 # JING-ZHANG TWO ANSWERS / 京张双答
 
 
-> **THE UNBROKEN PUBLIC CROSS.** Ordinary service stands first. AI may enter one reversible bay only; any option that cuts the public route or occupies fire and removal access must be rejected in public. The geometry audit remains the back-stage “Civic Adoption Compiler”, while the first screen shows one enterable, pausable and recoverable civic space.[data:visual/assets/v14-spatial-model.json] [data:visual/assets/spatial-decision.json]
+> **BUILDABLE CIVIC CROSS.** Turn “do not sacrifice the public route” into an enterable, maintainable, closable and recoverable civic space. The public cross and staffed service stand alone; AI enters one reversible bay; every decision remains visible in the Receipt Porch.[data:visual/assets/prototype-model.json] [data:visual/assets/spatial-decision.json]
 
-Public sources establish only directional relations among the Jing-Zhang heritage park, rail, roads, water and parks. They do not establish the existing frontage at Dazhongsi: the 2026-08-13 OSM crop contains one building feature in this context. V14 therefore does not invent station exits or buildings; the data gap is a precondition, and all dimensions remain prototype assumptions pending survey.[data:visual/assets/context-open-map.json] [source:OPENSTREETMAP-CONTEXT-20260813]
+One architectural-ground system contains five locatable parts: the all-day public cross, one-sided trial bay, staffed Receipt Porch, blue-green edge and independent back-of-house. A single model generates 1:5000 context, 1:2000 plan, 1:500 architectural-ground plan, two 1:200 sections, a 1:50 porch node and three 1:20 prototype details. Every dimension is a design assumption pending survey, structural, fire, foundation and durability review.[data:visual/assets/prototype-model.json] [depth:three_key_area_detailed_design]
 
-Under the same task, users, site and hard gates, ALT-A is **REJECTED** for cutting the public cross; ALT-B is **REVISED** because supervision and removal are fragmented; ALT-C advances. ALT-C draws the all-day public cross, south-east trial bay, south-west staffed receipt porch and two blue-green edges into the same 1:500 plan and 1:200 section.[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count] [metric:advanced_spatial_alternative_count]
+The material family uses bolted galvanized steel frames, perforated-metal sun screens, dry precast ballast, permeable precast paving and replaceable evidence panels. The permanent public layer is built first; removable AI plug-ins assemble only after permits close; after a stop, equipment leaves on an independent service route while the porch remains staffed public service.[metric:architectural_prototype_count] [metric:material_system_count] [metric:architectural_detail_count]
 
-**The present implementation decision is G0 NO-GO.** Design documents exist, but precise survey, title, eight permits, four independent duty posts and seven consecutive baseline days do not. Closed permits are 0/8 and recorded baseline days are 0/7, so no AI trial may begin. This honest no-go is the starting point of feasibility, not a failure.[data:visual/assets/e2-readiness.json] [metric:current_trial_open_gate_count] [metric:pending_trial_permit_count]
+ALT-A is **REJECTED** for severing the public cross; ALT-B is **REVISED** because supervision, fire and removal access fragment; ALT-C advances into architectural development. The spatial decision answers “why this option”; twelve measurement contracts answer “how to verify it after construction”. Neither is field evidence.[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count] [metric:advanced_spatial_alternative_count]
 
-The six tasks have separate entrances: Agent 1 regional capability exchange; Agent 2 ground interfaces and public baseline; Agent 3 twelve scenes and three hero contracts; Agent 4 the Ring, Gate and Porch; Agent 5 the Jing-Zhang evidence mile and bilingual tactile identity; Agent 6 one-day operation, the 90-day pilot and civic year. Field decisions remain `adopt / revise / stop`, made by a human scene committee.[depth:three_level_scope_framework] [depth:three_key_area_detailed_design]
+**The present implementation decision remains G0 NO-GO.** Precise survey, title, eight permits, four independent duty posts and seven consecutive ordinary-service days are incomplete; 0/8 permits and 0/7 days are closed, so AI trial may not begin.[data:visual/assets/e2-readiness.json] [metric:current_trial_open_gate_count] [metric:pending_trial_permit_count]
 
-![Overall Two Answers structure](assets/figures/site-overview.en.png)
+Design evidence has three classes: **known design** means reproducible geometry, quantities and document coverage; **synthetic verification** means rule-driven desktop cases; **field unknown** includes footfall, safety performance, efficiency, satisfaction, energy, cost and recovery duration.[depth:existing_conditions_diagnosis]
+
+The 84 synthetic cases record input hashes, rule versions, expected and observed states, accountable triggers and recovery exits, but produce no claim of institutional partnership, investment, permit closure or field performance.[data:visual/assets/tabletop-results.json] [metric:synthetic_design_verification_case_count] [metric:field_verification_result_count]
+
+![Overall urban design and three architectural landmarks](assets/figures/site-overview.en.png)
 
 <!-- V11_DECISION_START -->
 ## One Real Spatial Decision
@@ -116,6 +120,8 @@ The ordinary public cross and staffed service must be surveyed and logged for se
 
 The three landmarks retain different spatial archetypes: the Verification Ring wraps a controlled inner ring with a complete public bypass; the Translation Gate carries three account-free paths past staffed service and professional review; the Receipt Porch combines a public cross, one-side trial bay and staffed evidence interface. All three experiential views are geometry-matched concept images, not evidence of existing conditions, dimensions or performance.
 
+![Plan–section–assembly comparison of the three architectural landmarks](assets/figures/key-areas.en.png)
+
 ## Overall design: renewal, mobility, blue-green and baseline
 
 Renewal follows baseline → ground floor → envelope. First repair crossings, ramps, tactile cues, lighting, shade, seating, water and staffed service. Then open existing ground floors for evaluation, translation and operations. Only after survey, ownership and statutory controls may intensity or retain/renovate/rebuild decisions be made. Submitted building polygons are conceptual adaptive envelopes.[data:geometry/buildings.geojson#BLDG-001]
@@ -126,39 +132,32 @@ The typical section aligns a 3.0 m step-free walk, 2.5 m cycle lane, 1.8 m shade
 
 ## Detailed Design of Key Areas
 
-![Three key areas: plan, section and operation](assets/figures/key-areas.en.png)
+### Architectural family: Ring, Gate and Porch
 
-**Zhongzhiyuan Verification Ring** combines a controlled loop, complete bypass, staffed safety desk and removable cabinet bay for T1–T3. Its ring silhouette makes the public outside and controlled inside legible. The honour interface publishes task, evidence level, failure reason, decision and review date—not unverified company rankings.[data:geometry/public_space.geojson#PUBLIC-001] [data:visual/assets/spatial-atlas.json]
+The three landmarks share the dry-assembly **MAT-01–05** family and the grammar “public baseline / AI plug-in / evidence interface”, yet remain unmistakable in plan and section.[data:visual/assets/prototype-model.json]
 
-Hero scenario T2 places the B01 bypass, suggested 4.0 m A01 controlled lane, suggested 1.5 m safety buffers, E02 stop sightline, two staff positions and equipment-removal route in the same 1:500 detail and 1:200 section. These dimensions are unverified prototype proposals. Buffer intrusion, two consecutive near misses or E-stop failure are zero-tolerance stop events.[data:visual/assets/two-answers.json#SCN-002]
+- **Zhongzhiyuan Verification Ring (T2):** an all-day bypass surrounds the controlled test court. Observation arcade, safety desk, failure display and east equipment exit align across the 1:500 plan and 1:200 section. Closing the court leaves the public ring working.
+- **AI Origin Translation Gate (S2):** three account-free passages cross the staffed bilingual desk, waiting edge and review backstage; a rear service strip maintains the closable plug-in wall. Static guidance and staffed service survive the night closure.
+- **Dazhongsi Receipt Porch (S7):** the public cross, one-sided bay, staffed porch, blue-green edge and back-of-house form one architectural-ground system. Public, fire and removal routes do not occupy one another.
 
-![Zhongzhiyuan controlled test loop and public bypass](assets/figures/station-zhongzhiyuan.en.png)
+### Dazhongsi flagship: five scales
 
-**AI Origin Translation Gate** uses three no-account step-free passages through a gate-like public interface, staffed desks, co-creation tables and a closeable plug-in wall for S1–S3. When AI closes, bilingual static guidance and human review remain complete and visible.[data:geometry/public_space.geojson#PUBLIC-002] [data:visual/assets/spatial-atlas.json]
+**1:5000 / 1:2000** establish directional relations among rail, park, roads and four quadrants only. The public crop contains one building feature at Dazhongsi; missing fabric is labelled “adaptation interface / survey-pending band”, never invented.[data:visual/assets/context-open-map.json] [source:OPENSTREETMAP-CONTEXT-20260813]
 
-Hero scenario S2 overlays three barrier-free passages, a staffed bilingual arrival desk, closeable optional terminal, professional review back office and nearest human escalation route. With AI closed, paper maps, static signs, telephone booking and staffed reception still complete the same task.[data:visual/assets/two-answers.json#SCN-005]
+The **1:500 plan** draws kerbs, four ramps, two tactile routes, permeable paving, tree pits, rain gardens, waiting and shade, Receipt Porch, dual E-stops, control booth, equipment interfaces, fire route and independent removal line. A 2.4 m rear maintenance strip connects control, storage, maintenance and waste.[data:visual/assets/prototype-model.json]
 
-![AI Origin porous hall and three staffed services](assets/figures/station-ai-origin.en.png)
+Two **1:200 sections** cut public route—buffer—trial bay and Receipt Porch—public cross—blue-green edge, checking relative clear height, shade, sightline, drainage edge and human-machine separation. They are not construction drawings.[metric:architectural_section_count]
 
-**Dazhongsi Receipt Porch** is the flagship: public cross, conventional interchange, southeast reversible trial bay, southwest evidence porch and blue-green edges. OSM cannot confirm exact exits or complete building edges; the four entrances remain directional interfaces and the southern data gap is visible. AI enters only the southeast bay; the porch gathers staffed service, status, appeals and the adoption decision, while removal restores waiting, short stay or civic activity.[data:geometry/public_space.geojson#V7-D-FORECOURT] [data:geometry/public_space.geojson#V7-D-NODATA]
+The **1:50 / 1:20 details** record reversible connections: bolted frame on ballast, removable boundary outside the tactile route, replaceable evidence rail and temporary power, and a flush permeable kerb with rain-garden overflow. Structural sizes, fire rating, wind, drainage capacity and durability await professional calculation.[metric:architectural_detail_count]
 
-S7 combines two 4.0 m prototype public axes, 0.4 m tactile guidance, two curb ramps, interchange, waiting and shade, rain gardens, separate low-speed bay, evidence porch, safety buffer, evacuation, staff and storage/removal. Dimensions are reviewable assumptions used only to prove that baseline routes never cross the trial boundary.[data:geometry/roads.geojson#V7-D-TACTILE-NS] [data:geometry/buildings.geojson#V7-D-PORCH]
+### Assembly, maintenance and four states
 
-Four states change space. `OPEN` uses the public cross, interchange, staffed service and evidence porch. `TRIAL` activates only the southeast bay, buffer, trial post and two E-stops. `PAUSE` closes AI while staff complete the task and the cross stays open. `RETIRE` moves equipment to storage or supplier return and restores the bay. The porch remains the public status, appeal and exit interface.[data:visual/assets/spatial-atlas.json] [data:geometry/buildings.geojson#V7-D-STORAGE]
+- **OPEN**: ordinary feeder, public cross, shaded waiting and staffed porch work independently.
+- **TRIAL**: after eight permits, four posts and seven baseline days close, only the one-sided bay opens.
+- **PAUSE**: dual E-stops isolate equipment; the safety lead takes over; the public route does not move.
+- **RETIRE**: plug-ins and boundary leave, lifted paving is relaid, equipment exits east and evidence panels remain for review.
 
-The S7 denominator is specified while results remain unknown. After the E2 baseline prototype, each mode records 100 eligible passages, stratified by peak/off-peak, day/night, weather and assistance need. Severe collision, buffer intrusion, E-stop failure, baseline-route interruption or takeover timeout stops the trial without waiting for sample completion. The human scene committee registers any AI-increment threshold only after seven consecutive baseline operating days.[metric:field_verification_result_count] [data:visual/assets/two-answers.json#SCN-010]
-
-RACI is spatially located: the asset representative owns forecourt, storage and restoration; baseline staff occupy the evidence porch; AI controls only the southeast bay; safety controls the buffer and E-stops; data maintains a manual, non-identifying ledger; the public representative reviews appeals at the porch. During `TRIAL`, the safety lead and ordinary-service post cannot be held by one person. A missing permit or minimum post keeps S7 in `OPEN`.[data:geometry/buildings.geojson#V7-D-PORCH] [data:geometry/constraints.geojson#V7-D-STAFF-TRIAL]
-
-The 16-item kit converts feasibility into reproducible design quantities: public paving, tactile guidance, ramps, rain gardens, shade, seats, water, lighting, removable barriers, E-stops, state boards, staffed service, control, edge cabinet, manual counting and storage. Each records its quantity formula, assembly state, maintenance owner and retirement destination. Unit and total prices remain `pending_market_quote`; total cost is only “quantity × formal quotation”.[metric:measurement_contract_count] [metric:field_verification_result_count]
-
-The operating day has six steps: opening check; independent baseline; controlled trial after permits; staffed takeover on stop; closing comparison; storage or supplier return. Recovery time starts at the stop command and ends when staff complete the ordinary task and both public routes reopen; no target is invented before the E2 drill.[data:visual/assets/spatial-atlas.json]
-
-![Dazhongsi four-quadrant interchange and timed test bay](assets/figures/station-dazhongsi.en.png)
-
-The three prototypes deliberately do not share one plan type: a controlled ring and bypass resolves human–machine safety; a porous hall makes staffed translation public; a four-quadrant forecourt keeps conventional mobility dominant. Each situates baseline, plug-in and evidence interface so they remain mutually visible without making ordinary service dependent on AI.[metric:key_area_count]
-
-S7 uses six review views: 1:5000 connection, 1:2000 plan, 1:500 detail, 1:200 section, 1:50 assembly node and layered axonometric; T2/S2 add their defining local details so ring, gate and porch remain identifiable without titles. Every scale is a prototype pending survey and official-base verification.[data:visual/assets/spatial-atlas.json]
+The 90-day sequence maps survey, permanent public layer, baseline record, timed plug-in and removal review to drawn components. Any failed permit, post or ordinary service blocks the next stage. Quantities are reproducible; prices remain **pending_market_quote**.[data:visual/assets/e2-readiness.json]
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 

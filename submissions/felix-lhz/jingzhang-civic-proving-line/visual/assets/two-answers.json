@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.11.0",
+  "schema_version": "1.12.0",
   "dataset_id": "jingzhang-two-answers",
   "title": {
     "zh": "京张双答：三站一历",
@@ -557,7 +557,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": null
     },
     {
       "id": "SCN-002",
@@ -1066,7 +1067,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": "LMK-01"
     },
     {
       "id": "SCN-003",
@@ -1572,7 +1574,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": null
     },
     {
       "id": "SCN-004",
@@ -2081,7 +2084,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": null
     },
     {
       "id": "SCN-005",
@@ -2592,7 +2596,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": "LMK-02"
     },
     {
       "id": "SCN-006",
@@ -3101,7 +3106,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": null
     },
     {
       "id": "SCN-007",
@@ -3597,7 +3603,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": null
     },
     {
       "id": "SCN-008",
@@ -4094,7 +4101,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": null
     },
     {
       "id": "SCN-009",
@@ -4591,7 +4599,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": null
     },
     {
       "id": "SCN-010",
@@ -5403,7 +5412,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": "LMK-03"
     },
     {
       "id": "SCN-011",
@@ -5916,7 +5926,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": null
     },
     {
       "id": "SCN-012",
@@ -6429,7 +6440,8 @@
         "data_steward",
         "safety_owner",
         "public_representative"
-      ]
+      ],
+      "architectural_prototype_ref": null
     }
   ],
   "subtitle": {
@@ -7221,6 +7233,6 @@
     ],
     "field_status": "not_field_run"
   },
-  "v14_spatial_model_ref": "visual/assets/v14-spatial-model.json",
-  "current_implementation_gate": "G0_no_go_pending_survey_and_permits"
+  "current_implementation_gate": "G0_no_go_pending_survey_and_permits",
+  "prototype_model_ref": "visual/assets/prototype-model.json"
 }

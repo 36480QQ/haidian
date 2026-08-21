@@ -4432,5 +4432,97 @@
       "rights_status": "not_fully_cleared",
       "independent_file_level_clearance_audits": 0
     }
+  },
+  "front_backstage_compression_r55": {
+    "scope": "Editorial lived-Haidian cold-read, front/back-stage compression and fixed-page publication audit only.",
+    "red": {
+      "proposal_lines_each": 997,
+      "visual_sections_each": 37,
+      "no_javascript_height_px": 52123,
+      "reading_selector_collapsed": true,
+      "narrative_summary_after_round_archive": true,
+      "a0_slide_like_layout": true
+    },
+    "keep_repair_demote_lock": {
+      "keep": [
+        "sole Twin-Track master idea",
+        "three non-interchangeable prototypes",
+        "existing cover and ordinary-life media",
+        "six-item primary navigation"
+      ],
+      "repair": [
+        "visible 30-second / 3-minute / 15-minute selector",
+        "present-day Haidian baseline",
+        "conditional site fit",
+        "ordinary meta-task",
+        "proposal/report hierarchy",
+        "A3/A0 publication layout"
+      ],
+      "demote": [
+        "repeated backstage figures",
+        "long JSON-pointer tables",
+        "T-02 detail before spatial handoff",
+        "round archive before current narrative"
+      ],
+      "lock": [
+        "nine geometry files",
+        "metrics.json",
+        "12/8/3/36",
+        "G0",
+        "NO-GO",
+        "provisional",
+        "zero real outcomes",
+        "complete non-AI paths",
+        "verification-only failure stop",
+        "non-authorising recovery",
+        "professional veto",
+        "not_fully_cleared",
+        "zero independent audits"
+      ]
+    },
+    "cold_read_answers": {
+      "thirty_seconds": "Twin-Track Jing-Zhang: continuous ordinary civic ground, side verification and three non-interchangeable prototypes.",
+      "three_minutes": "Find entrance, understand status, complete a staffed task, correct or exit; only the verification overlay changes across ordinary, verification, failure and recovery.",
+      "fifteen_minutes": "One professional-handoff entry traces D01-D08 replacement inputs, H01-H07 unsubmitted packs, metrics, rights, sources and NO-GO."
+    },
+    "after": {
+      "proposal_lines_each": 632,
+      "visual_sections_each": 16,
+      "zh_desktop_height_px": 10935,
+      "en_desktop_height_px": 11793,
+      "primary_navigation_items": 6,
+      "remote_dependencies": 0,
+      "autoplay": false
+    },
+    "publication": {
+      "page_counts": {
+        "a3_zh": 14,
+        "a3_en": 14,
+        "a0_zh": 8,
+        "a0_en": 8
+      },
+      "two_fresh_processes_byte_identical": true,
+      "sha256": {
+        "a3_zh": "28df546c648c8d45bb703e6f3e727f7bebf39eb7c8da028fdec9acad94c37c4f",
+        "a3_en": "6d52f2aeae0755bc6b008af27145b802ffb1a930053e1b1651d5f2f4a3f872aa",
+        "a0_zh": "eca4f2d9d3ab978c5fec0e9f5d90e3d9c1c2ce98d40bff8024760194d53bb801",
+        "a0_en": "83db54a01baede32389d04c3f334af3ae90f2458b93d2758fbf3da4117a7197e"
+      },
+      "full_page_qa": 44
+    },
+    "truth_boundary": {
+      "new_path": false,
+      "new_source": false,
+      "new_media": false,
+      "new_media_generation_model_call": false,
+      "new_fact_or_claim": false,
+      "field_observation": false,
+      "public_feedback": false,
+      "expert_opinion": false,
+      "official_geometry": false,
+      "planning_approval": false,
+      "rights_status": "not_fully_cleared",
+      "independent_file_level_clearance_audits": 0
+    }
   }
 }

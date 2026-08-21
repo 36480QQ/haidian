@@ -527,7 +527,7 @@
       "source_files": [
         "visual/assets/e2-readiness.json"
       ],
-      "formula": "count(readiness gates whose current decision permits TRIAL)",
+      "formula": "count(readiness gates permitting TRIAL)",
       "confidence": "high",
       "assumptions": []
     },
@@ -538,7 +538,51 @@
       "source_files": [
         "visual/assets/e2-readiness.json"
       ],
-      "formula": "count(permit_checklist where status=pending_permit)",
+      "formula": "count(pending permit gates)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "architectural_prototype_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/prototype-model.json"
+      ],
+      "formula": "count(architectural_prototypes)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "material_system_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/prototype-model.json"
+      ],
+      "formula": "count(material_palette)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "architectural_section_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/prototype-model.json"
+      ],
+      "formula": "count(section_refs across three prototypes)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "architectural_detail_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/prototype-model.json"
+      ],
+      "formula": "count(detail_refs across three prototypes)",
       "confidence": "high",
       "assumptions": []
     }

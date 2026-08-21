@@ -63,7 +63,7 @@
       "severity": "info",
       "target": "self_check.json",
       "source": "package-provided",
-      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 127 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 130 条 = 127 道闸门 + 3 条披露。）"
+      "message": "以 PKG_ 开头的条目是本方案自建的闸门，不是组织方检查项，不参与 ok / can_enter_formal_review 的判定。**它们只可能记录『通过』**——任一闸门不过，构建即停止，包不会存在，因此『通过』二字本身不构成证据。有证据价值的是每条 message 里的读数：它可以拿随包产物直接复核。（本次记录 128 道闸门，逐道由构建的输出现取，而不是从一份手写名单里挑——名单曾经只列了 7 道。另有 3 条以 PKG_ 开头的条目**不是闸门**：本条与两条统计披露，它们的 `result` 字段对它们没有意义，有意义的是 message 里那几个可以拿随包产物复核的数。因此 PKG_ 行共 131 条 = 128 道闸门 + 3 条披露。）"
     },
     {
       "check_id": "PKG_ACCESSIBILITY_QA",
@@ -120,6 +120,15 @@
       "message": "block_type_qa.py — block types: 3 key areas, each paired in proposal.md with the type the announcement assigns it (花园型人工智能创新街区, 近校型人工智能创新街区, 城市型人工智能创新街区), each carrying a row with its own failable condition and evidence this document holds; whether the block is designed as that type is the reviewer's call and this does not claim it"
     },
     {
+      "check_id": "PKG_BOARD_CLAIM_QA",
+      "result": "pass",
+      "severity": "info",
+      "target": "package",
+      "source": "package-provided",
+      "what_it_holds_en": "What the prose says the two composed products carry, against what they carry.",
+      "message": "board_claim_qa.py — board claims: 34 sheets compose into the A3 booklet and 12 of them onto the 6 A0 boards, 2 to a board, read from build_drawings rather than typed; every clause naming both products names both counts. Scope: this does not judge which twelve belong on the boards, which is a curatorial decision, nor the booklet's order"
+    },
+    {
       "check_id": "PKG_BOARD_PAGE_REACH_QA",
       "result": "pass",
       "severity": "info",
@@ -171,7 +180,7 @@
       "target": "proposal.md, report/, assumptions.json",
       "source": "package-provided",
       "what_it_holds_en": "Every census-derived number in the prose must equal the shipped census.",
-      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 935)"
+      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 941)"
     },
     {
       "check_id": "PKG_CENSUS_CURRENCY_QA",
@@ -189,7 +198,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The citation check ran in the direction that could not catch a dangling tag.",
-      "message": "citation_resolves_qa.py — citation resolution: 367 citation(s) across both editions each resolve to a registered id, checked prose-to-registry — the direction source_citation_qa cannot see, and the one a fabricated tag survives (assumption 19, depth 15, metric 60, self_check 138, source 35, standard 9). Scope: [data:] resolves against geometry that is not in the reviewer's packet and is claim_state_qa's to check, not this gate's"
+      "message": "citation_resolves_qa.py — citation resolution: 367 citation(s) across both editions each resolve to a registered id, checked prose-to-registry — the direction source_citation_qa cannot see, and the one a fabricated tag survives (assumption 19, depth 15, metric 60, self_check 139, source 35, standard 9). Scope: [data:] resolves against geometry that is not in the reviewer's packet and is claim_state_qa's to check, not this gate's"
     },
     {
       "check_id": "PKG_CJK_LEAK_QA",
@@ -324,7 +333,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "An unresolved check may not send the reviewer somewhere they cannot go.",
-      "message": "evidence_in_payload_qa.py — evidence in payload: 4 of 138 shipped checks are unresolved by construction, and not one of them sends the reviewer to a file the reviewer is not sent — each names manifest.json's validation_claim, which they hold"
+      "message": "evidence_in_payload_qa.py — evidence in payload: 4 of 139 shipped checks are unresolved by construction, and not one of them sends the reviewer to a file the reviewer is not sent — each names manifest.json's validation_claim, which they hold"
     },
     {
       "check_id": "PKG_EVIDENCE_REF_QA",
@@ -423,7 +432,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Fail when the prose describing the mutation harness has gone stale.",
-      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 184 mutations, 126 of 127 gates proven able to fail, 1 with published reasons, every figure read from gate_mutation.json rather than trusted"
+      "message": "gate_count_qa.py — gate counts: both editions quote the harness correctly — 185 mutations, 127 of 128 gates proven able to fail, 1 with published reasons, every figure read from gate_mutation.json rather than trusted"
     },
     {
       "check_id": "PKG_GATE_MUTATION_QA",
@@ -432,7 +441,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Prove the gates can fail, by making them fail on purpose.",
-      "message": "gate_mutation_qa.py — gate mutation: 184 deliberate defects across 126 of 127 gates, all caught and all named by the gate that caught them; 1 gate not yet proven able to fail, with its reason published"
+      "message": "gate_mutation_qa.py — gate mutation: 185 deliberate defects across 127 of 128 gates, all caught and all named by the gate that caught them; 1 gate not yet proven able to fail, with its reason published"
     },
     {
       "check_id": "PKG_GENERATION_CHAIN_QA",
@@ -441,7 +450,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The paragraph that says everything is deterministically generated, checked.",
-      "message": "generation_chain_qa.py — generation chain: 2 count(s) in copyright_statement.md recomputed from agent.json's 241 shipped script names, and the disclosure does not claim the scripts ship"
+      "message": "generation_chain_qa.py — generation chain: 2 count(s) in copyright_statement.md recomputed from agent.json's 243 shipped script names, and the disclosure does not claim the scripts ship"
     },
     {
       "check_id": "PKG_GEOMETRY_CITATION_QA",
@@ -504,7 +513,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The intake caps, enforced where a mutation can reach them.",
-      "message": "intake_limits_qa.py — intake limits: 61 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 27 bytes to spare. The package totals 30.2 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 61 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 18 bytes to spare. The package totals 30.2 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_INTERNED_RENDER_QA",
@@ -603,7 +612,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A sentence stating a number a shipped record holds must point at that record.",
-      "message": "metric_citation_qa.py — metric citations: 39 sentence(s) joined to metrics.json by value and pointing at it, 16 numeric collision(s) published with the reason each is not a citation, 0 deferred against 27 bytes of English headroom (they cost 0, and this check fails when there is room)"
+      "message": "metric_citation_qa.py — metric citations: 39 sentence(s) joined to metrics.json by value and pointing at it, 16 numeric collision(s) published with the reason each is not a citation, 0 deferred against 18 bytes of English headroom (they cost 0, and this check fails when there is room)"
     },
     {
       "check_id": "PKG_METRIC_CLASS_PROSE_QA",
@@ -648,7 +657,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A measurement may not be broken across a line.",
-      "message": "number_break_qa.py — number breaks: 18,915 wrappings across 291 translated strings carrying a digit, at 5 sizes and 13 widths, and not one line ends inside a numeral"
+      "message": "number_break_qa.py — token breaks: 25,610 wrappings across 394 translated strings carrying a digit or an identifier, at 5 sizes and 13 widths, and not one line ends inside a numeral or inside a path, filename or registered id. Scope: this holds the property on `wrap`, over every string the package translates at every width its sheets use; it does not read the rendered drawings, where a table column of stacked numbers is indistinguishable from a split one"
     },
     {
       "check_id": "PKG_OBSERVATION_REACH_QA",
@@ -1062,7 +1071,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "No past corpus size may sit in hand-written prose as if it were current.",
-      "message": "stale_corpus_qa.py — stale corpus sizes: none — 24 superseded readings (184–929) appear only inside generated blocks or sentences that declare them historical; the prose is at 935"
+      "message": "stale_corpus_qa.py — stale corpus sizes: none — 27 superseded readings (184–939) appear only inside generated blocks or sentences that declare them historical; the prose is at 941"
     },
     {
       "check_id": "PKG_STANDARD_CLAUSE_QA",
@@ -1098,7 +1107,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A reading taken from outside this package must be able to say when.",
-      "message": "survey_dated_qa.py — survey dated: 11 externally sourced asset(s) — 7 carry an ISO reading date (census.json 2026-08-20, manifest_schema_survey.json 2026-08-20, osm_reference.json 2026-08-08, osm_stitching.json 2026-08-20, review_gate_survey.json 2026-08-20, score_correlates.json 2026-08-09, track_scan.json 2026-08-20); 4 declared exempt with the reason: block_types.json (regenerated from the shipped package on every build); field_extras.json (regenerated from the shipped package on every build); osm_fabric.json (regenerated from the shipped package on every build); census_history.json (a historical series by construction)"
+      "message": "survey_dated_qa.py — survey dated: 11 externally sourced asset(s) — 7 carry an ISO reading date (census.json 2026-08-21, manifest_schema_survey.json 2026-08-20, osm_reference.json 2026-08-08, osm_stitching.json 2026-08-20, review_gate_survey.json 2026-08-20, score_correlates.json 2026-08-09, track_scan.json 2026-08-21); 4 declared exempt with the reason: block_types.json (regenerated from the shipped package on every build); field_extras.json (regenerated from the shipped package on every build); osm_fabric.json (regenerated from the shipped package on every build); census_history.json (a historical series by construction)"
     },
     {
       "check_id": "PKG_TABLE_POINTER_QA",
@@ -1222,7 +1231,7 @@
       "severity": "info",
       "target": "visual/assets/gate_mutation.json",
       "source": "package-provided",
-      "message": "闸门变异测试：184 处人为缺陷，覆盖 126 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 184 deliberate defects across 126 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
+      "message": "闸门变异测试：185 处人为缺陷，覆盖 127 道闸门，全部被抓住且被点名；另有 3 条规则当前匹配为零，逐条附理由。**「通过」本身不构成证据——任一闸门不过，构建即停，包不会存在**；有证据价值的是这些读数，而完整记录同样不在评审工具读取的九个文件之内。 / Mutation testing: 185 deliberate defects across 127 gates, all caught and named, plus 3 rules currently matching nothing, each with its reason. The full record is not among the nine files the harness reads."
     }
   ],
   "ok": true,
@@ -1430,7 +1439,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31571971,
+      "total_bytes": 31576892,
       "maintainer_bypass": false
     },
     "stderr": ""

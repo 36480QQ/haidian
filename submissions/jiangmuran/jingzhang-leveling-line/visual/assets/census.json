@@ -1,7 +1,7 @@
 {
  "source": "git tree (authoritative) + per-proposal proposal.md and agent.json",
- "retrieved": "2026-08-20",
- "tree_count": 935,
+ "retrieved": "2026-08-21",
+ "tree_count": 941,
  "gallery_index_count": 872,
  "missing_from_gallery_index": [
   "0237/jingzhang-ai-spine",
@@ -18,6 +18,7 @@
   "Jefferson-qi/ai-innovation-ecosystem-corridor",
   "L4NCAST3R/jingzhang-token-line",
   "LLLLRRZZ/jingzhang-origin-loop",
+  "LiuLin1220/jingzhang-open-integrity-yard",
   "Maxaccurate/mapping-beijing-civic-intelligence",
   "MrFengcn/jingzhang-ai-innovation-belt",
   "Pasukalu/jingzhang-ai-civic-spine",
@@ -25,6 +26,7 @@
   "PozdnyakovMaxim/shared-floor-jingzhang",
   "RyanYang25/jingzhang-ai-belt",
   "StevePan-912/jingzhang-ai-open-loop",
+  "SumAiLLLL/jingzhang-gauge",
   "Tinxyoo/origin-smart-jingzhang",
   "Wang-Lvjing/jingzhang-ai-rail-optics",
   "XJungit/jingzhang-ai-innovation-belt",
@@ -34,6 +36,7 @@
   "Yuru-Rin/jingzhang-ai-artery",
   "ZaVang/jingzhang-ai-urban-braid",
   "aiguozhi123456/jingzhang-opc-belt",
+  "anbo-hu/open-loop-jingzhang",
   "caninlew/jingzhang-rain-rehearsal",
   "climashscape/the-nursery",
   "cnbitac/jingzhang-fallback-line",
@@ -62,6 +65,9 @@
   "www41818520-coder/jingzhang-civic-intelligence-protocol-v4",
   "www41818520-coder/jingzhang-civic-intelligence-protocol-v5",
   "www41818520-coder/jingzhang-civic-intelligence-protocol-v6",
+  "www41818520-coder/jingzhang-civic-intelligence-protocol-v7",
+  "www41818520-coder/jingzhang-civic-intelligence-protocol-v8",
+  "www41818520-coder/jingzhang-civic-interlocking-v9",
   "xhily/five-minute-ai-encounter",
   "xhily/jingzhang-ai-innovation-corridor",
   "xhily/jingzhi-belt-concept",
@@ -479,7 +485,7 @@
     11,
     12
    ],
-   "b": 47344,
+   "b": 51555,
    "m": 5,
    "f": 0
   },
@@ -496,14 +502,14 @@
    "f": 0
   },
   "147228/enterprise-resident-flow-commons": {
-   "t": "京张流线公地：企业—居民全域通勤公平优化器",
-   "s": "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。",
+   "t": "京张流线公地：企业—居民互惠通勤操作系统",
+   "s": "用众智园清河前厅、AI 原点照护环和大钟寺四象限换乘厅三种空间原型，把企业的到岗与路缘请求，同居民的连续通行、人工入口和申诉暂停权成对交付；缺少现场证据时只登记、不预约、不扩容。",
    "k": [
     0,
     6,
     5
    ],
-   "b": 72991,
+   "b": 43662,
    "m": 6,
    "f": 0
   },
@@ -520,14 +526,14 @@
    "f": 0
   },
   "147228/jingzhang-open-pulse": {
-   "t": "京张开源脉冲：一条可验证的 AI 创新公共带",
-   "s": "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。",
+   "t": "京张开源脉冲，城市发布自己的公共版本",
+   "s": "城市不追随模型版本，城市发布自己的公共版本。每项 AI 试验都须经过问题单、试验分支、有界测试、双重审查、公共发布和修复或退役，把短期演示转成可复核、可停止、能回到日常的城市能力。",
    "k": [
     0,
     6,
     5
    ],
-   "b": 88166,
+   "b": 22929,
    "m": 2,
    "f": 2
   },
@@ -1723,7 +1729,7 @@
     6,
     5
    ],
-   "b": 22921,
+   "b": 22842,
    "m": 56,
    "f": 1
   },
@@ -2604,6 +2610,18 @@
    ],
    "b": 31940,
    "m": 19,
+   "f": 0
+  },
+  "LiuLin1220/jingzhang-open-integrity-yard": {
+   "t": "京张开源验真场：城市 AI 可信发布、召回与公共学习基础设施",
+   "s": "以一条待官方边界与公共可达性核验的生命周期廊道串联可信发布场、公共追溯厅与召回服务交换站，把城市 AI 制品从来源登记、隔离验证、签名发布、运行观察到协调披露、召回、人工兜底和公共学习的全生命周期转化为可见、可参与、可退出的城市基础设施。",
+   "k": [
+    17,
+    25,
+    15
+   ],
+   "b": 54840,
+   "m": 0,
    "f": 0
   },
   "LiuXiu233/switchback-belt-jingzhang": {
@@ -3752,6 +3770,18 @@
    "m": 9,
    "f": 2
   },
+  "SumAiLLLL/jingzhang-gauge": {
+   "t": "京张标定带 THE GAUGE：以标定为铰链连接京张百年自主测绘与AI时代基准创新",
+   "s": "京张铁路的历史成就是一次自主标定——詹天佑团队独立完成关沟段测绘与1435mm标准轨距确立。AI时代面临平行的标定问题：没有公共基准就没有自主创新，没有对齐就没有问责，没有评测场就没有朝圣地标。本方案把标定做成可见的空间制度：一脊（9.4km基准走廊）、三场（众智园标定场/AI原点对齐广场/大钟寺轨距门）、五门（轨距门互操作准入）、两翼（中关村科技服务翼+小月河场景赋能翼），含8个全球AI评测基准案例、10张场景卡、3处朝圣地标与长期运营机制。",
+   "k": [
+    20,
+    14,
+    2
+   ],
+   "b": 38922,
+   "m": 36,
+   "f": 3
+  },
   "Sunrongguo2008/jingzhang-address-line": {
    "t": "京张有址 / AI HAS AN ADDRESS",
    "s": "给每项城市AI服务一个可走到的地点、一位能被找到的责任人、一份可查的证据和一条可执行的退出路径。方案以一条地址线、三座责任站、两翼支撑和十二个场景地址组织京张创新带。",
@@ -4631,6 +4661,14 @@
    "m": 132,
    "f": 2
   },
+  "anbo-hu/open-loop-jingzhang": {
+   "t": "Open Loop 开源走廊：百年京张AI创新带城市设计",
+   "s": "以一条开放、可步行、可测试、可运营的 AI 公共走廊，串联众智园、北京AI原点社区与大钟寺AI产业聚集区，把百年京张文化、中关村创新文化与AI新文化转译为可被人体验、被智能体协作、被专业团队继续深化的城市设计框架。",
+   "k": [],
+   "b": 18872,
+   "m": 9,
+   "f": 2
+  },
   "anjiuxiansheng/jingzhang-switch": {
    "t": "京张道岔 JINGZHANG SWITCH——让人类决定轨道的百年AI创新带",
    "s": "以1909年詹天佑青龙桥人字形折返线的道岔智慧为历史原点，把AI创新带设计为一套由人类在关键节点决定方向的轨道系统：一轨（京张遗址公园慢行绿脊）三岔（众智园研发道岔·绿、原点社区人才道岔·黄、大钟寺市场道岔·红）两翼（中关村科技服务翼、小月河场景赋能翼），用绿/黄/红三态道岔语言把AI城市的方向选择权交还人类。",
@@ -5306,7 +5344,7 @@
     14,
     16
    ],
-   "b": 44813,
+   "b": 50020,
    "m": 147,
    "f": 2
   },
@@ -5719,13 +5757,13 @@
   },
   "felix-lhz/jingzhang-civic-proving-line": {
    "t": "京张双答 / JING-ZHANG TWO ANSWERS",
-   "s": "公共十字永远不断线，AI只进入一侧可逆试验湾；越线方案公开淘汰，当前实施门为G0 NO-GO。",
+   "s": "把不牺牲公共路径建成可进入、可维护、可关闭、可恢复的公共十字；当前实施门仍为G0 NO-GO。",
    "k": [
     0,
     21,
     5
    ],
-   "b": 44058,
+   "b": 40603,
    "m": 12,
    "f": 0
   },
@@ -6570,7 +6608,7 @@
     23,
     18
    ],
-   "b": 255281,
+   "b": 255410,
    "m": 36,
    "f": 3
   },
@@ -9734,13 +9772,13 @@
   },
   "viviseason/jingzhang-ai-civic-spine": {
    "t": "京张AI新篇章：人—城—伟业",
-   "s": "以 Jacobs 的日常多样性、Newman 的低汽车依赖和 Gehl 的公共生活观察构成三重人本检验；先用合规开放数据建立网络、形态、服务和蓝绿代理基线，再由本地独立观察验证真实公共生活，且不把代理数据冒充现场事实。",
+   "s": "以混合渐进更新、低碳可达和可停留公共生活三项空间原则组织铁路遗产、创新协作与日常服务；先用合规开放数据建立网络、形态、服务和蓝绿代理基线，再由本地独立观察验证真实公共生活，且不把代理数据冒充现场事实。",
    "k": [
     0,
     6,
     5
    ],
-   "b": 38023,
+   "b": 43434,
    "m": 2,
    "f": 1
   },
@@ -10131,6 +10169,42 @@
     5
    ],
    "b": 52109,
+   "m": 14,
+   "f": 0
+  },
+  "www41818520-coder/jingzhang-civic-intelligence-protocol-v7": {
+   "t": "京张市民智能协议：城市有智，人民作主",
+   "s": "把京张铁路遗址公园及其两侧城市界面转化为可进入、可理解、可参与、可接管的城市智能体：人民提问，城市作答；所有空间几何均为临时约束，待官方数据发布后整体复算。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 53944,
+   "m": 14,
+   "f": 0
+  },
+  "www41818520-coder/jingzhang-civic-intelligence-protocol-v8": {
+   "t": "京张市民智能协议：城市有智，人民作主",
+   "s": "把京张铁路遗址公园及其两侧城市界面转化为可进入、可理解、可参与、可接管的城市智能体：人民提问，城市作答；所有空间几何均为临时约束，待官方数据发布后整体复算。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 54898,
+   "m": 14,
+   "f": 0
+  },
+  "www41818520-coder/jingzhang-civic-interlocking-v9": {
+   "t": "京张市民联锁：城市有智，人民作主",
+   "s": "把京张铁路遗址公园及其两侧城市界面转化为可进入、可理解、可参与、可接管的城市智能体：人民提问，城市作答；所有空间几何均为临时约束，待官方数据发布后整体复算。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 57408,
    "m": 14,
    "f": 0
   },
@@ -10666,7 +10740,7 @@
     26,
     11
    ],
-   "b": 161917,
+   "b": 105449,
    "m": 7,
    "f": 0
   },
