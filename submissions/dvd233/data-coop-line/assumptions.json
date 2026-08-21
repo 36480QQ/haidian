@@ -28,6 +28,18 @@
       "verification_script": "visual/assets/site-evidence-audit.js"
     },
     {
+      "id": "A-PLAN-ALIGNMENT-001",
+      "status": "text_level_alignment_without_official_plan_document_or_geometry",
+      "statement": "An official 2025 participation notice proves the draft consultation process, while a 2026 Beijing Daily report republished by People.cn reports approval and selected text facts for a 2024-2035 plan. The official approval document, complete plan text, statutory drawings and rights-cleared vector geometry have not been retrieved; the 2022-2035 draft label and 2024-2035 reported-approved label therefore remain separately attributed rather than silently reconciled.",
+      "impact": "Planning signals may qualify the narrative and prioritise the heritage-park line, Dazhongsi focus, walking/cycling continuity and survey-first reuse. They cannot modify geometry, metrics, statutory controls, real-building decisions, approval claims, government endorsement or implementation commitments.",
+      "source_ids": [
+        "JINGZHANG-PLAN-PARTICIPATION-NOTICE-20250208",
+        "JINGZHANG-PLAN-APPROVAL-REPORT-20260812"
+      ],
+      "evidence_register": "visual/assets/planning-alignment-register.json",
+      "verification_script": "visual/assets/planning-alignment-audit.js"
+    },
+    {
       "id": "A-BUILDING-001",
       "status": "conceptual_test_fit",
       "statement": "Six small footprints test reversible rooms or adaptive reuse; they are not surveyed existing buildings or approved envelopes.",

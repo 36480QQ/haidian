@@ -31,6 +31,22 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![共数京张五分钟评审证据脊柱；从来源权限到失败关闭，明确已验证、待验证与禁止推断](assets/figures/reviewer-evidence-spine.png)
 
+## P1-05｜已获批街区控规的文本级对齐与证据边界
+
+本轮把最新规划信息纳入**文本级设计依据**，不把新闻报道升级为法定文件或空间数据。唯一事实源 `visual/assets/planning-alignment-register.json` 的 Register ID 为 `DATA-COOP-PLAN-ALIGNMENT-01`，SHA-256 为 `a3d01d5cd3745ae753865ac076c363b585403bf61688b60fb23aae75e0262650`；分支冻结于 `upstream/main@114f06a1d59b94aece4807747ac00e3d6a396d40`。该台账同时钉死本轮开始时的 `metrics.json` 与九个 GeoJSON 哈希，任何借“对齐”改变 geometry 或 metrics 的操作都会显式失败。
+
+| 证据层 | 可核验文本事实 | 本轮不可推断 |
+| --- | --- | --- |
+| 海淀分局 2025-02-08 官方公示采信通告 | 2022—2035 年版本草案于 2024-12-19 至 2025-01-19 网上公示，并记录公众意见研究与采纳 [source:JINGZHANG-PLAN-PARTICIPATION-NOTICE-20250208] | 不是最终批复文件，不能证明批复日期、法定图则、polygon 或未载明控制值 |
+| 北京日报经人民网转载的 2026-08-12 报道 | 报道称 2024—2035 年版本街区控规获批；文字范围为东至新街口外大街、西至中关村大街、北至成府路、南至西直门外大街，共 9 个街区、约 1668.2 公顷 [source:JINGZHANG-PLAN-APPROVAL-REPORT-20260812] | 没有取得官方批复文号、完整控规文本、法定图则或清权 vector；报道数字不进入 `metrics.json`，文字四至不用于绘制 polygon |
+| 同一报道的结构概括 | “一带一轴、两心多点”：京张铁路遗址公园产业创新带、中关村大街创新发展轴、大钟寺与五道口两中心及知春路、四道口等节点 [source:JINGZHANG-PLAN-APPROVAL-REPORT-20260812] | 不能据此把本方案的“一线、三区、两翼、多站”说成官方采用，也不能推导项目实施或政府背书 |
+
+2025 官方过程通告使用 2022—2035 年标签，2026 报道所述获批版本使用 2024—2035 年标签；在官方批复文件到位前分别保留来源原标签，不静默归一化或推断修编链。文本对齐带来四项**不改方向的校准**：遗址公园绿色公共空间与产业创新带支持继续把“合作线”作为公共利益服务层；大钟寺被报道为两中心之一，支持继续把 `DAZHONGSI-MVP-01` 作为单一样板，但 `PROV-KEY-003` 绝不是官方中心边界；南北贯通、东西连通的慢行方向支持无数据等价步行骑行正线与公共缝合线，但不确认站口、路权或无障碍绩效；老旧厂房与低效楼宇更新方向支持“先调查、再适应性再利用、可逆 test-fit”，但不确认任何真实建筑、产权、容量或时序 [assumption:A-PLAN-ALIGNMENT-001]。
+
+![共数京张 P1-05 控规文本级对齐：证据层级、报道事实、设计响应与不可推断边界](assets/figures/planning-alignment.png)
+
+复现命令为 `node visual/assets/planning-alignment-audit.js --json`；`--self-test --json` 把“已取得官方批复文件”错误翻转为 true，审计必须 fail-closed。本轮不改变核心价值主张、投稿许可、GeoJSON、metrics 或证据签名，也不复制外部图片或长段文字；“控规获批”只描述所引用的街区控规报道，不描述本投稿状态。
+
 ## 设计依据与资料清单
 
 本方案首先回应《百年京张 AI 创新带城市设计国际方案征集资格预审公告》及面向智能体的任务书：统筹研究、总体设计、三处重点区域、AI 创新生态和长期运营必须互相校核，而不能用一个技术展馆代替整条创新带。公告给出的 43.6 平方公里、11.4 平方公里和 368.4 公顷是工作尺度依据；提交包中的可计算边界则来自仓库临时几何，两类数字不可混称。公告、任务书、标准快照与资料用途登记共同构成本方案的事实入口 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]。
