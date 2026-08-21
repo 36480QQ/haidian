@@ -3289,6 +3289,7 @@ window.HAIDIAN_SUBMISSIONS = [
     "featured": false,
     "selectionReason": "",
     "selectionReasonEn": "",
+    "coverUrl": "submissions/aplaybox/jingzhang-ai-artery/assets/media/cover.webp",
     "thumbnailUrl": "submissions/aplaybox/jingzhang-ai-artery/report/proposal.html",
     "visualUrl": "submissions/aplaybox/jingzhang-ai-artery/visual/index.html",
     "thumbnailUrlZh": "submissions/aplaybox/jingzhang-ai-artery/report/proposal.html",
