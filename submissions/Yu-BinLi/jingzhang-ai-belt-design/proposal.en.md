@@ -72,7 +72,7 @@ Roads are organized in four levels: arterial, secondary, slow mobility and green
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-The blue-green network is anchored by the heritage park [data:geometry/green_space.geojson#GREEN-001]. Green space is about 352.8 ha, green ratio about 30.92% (recalculated from provisional boundary; the earlier 28.1% is obsolete) [metric:green_space_area_sqm] [metric:green_ratio]. Public space is about 2.95 ha, public-space ratio about 0.26%. Heritage-park public space follows "heritage protection first, AI enhances experience". Three AI landmarks are Jing-Zhang Memory Station, AI Origin Tower, and Vein Gate. Urban character is "heritage-led, open, human-centered"; the visual base fuses rail imagery with AI neural topology; the Logo direction is a "Vein" graphic concept, using no unauthorized fonts or trademarks.
+The blue-green network is anchored by the heritage park [data:geometry/green_space.geojson#GREEN-001]. Green space is about 321.1 ha, green ratio about 28.13% (recalculated from provisional boundary; the earlier 28.1% is obsolete) [metric:green_space_area_sqm] [metric:green_ratio]. Public space is about 2.95 ha, public-space ratio about 0.26%. Heritage-park public space follows "heritage protection first, AI enhances experience". Three AI landmarks are Jing-Zhang Memory Station, AI Origin Tower, and Vein Gate. Urban character is "heritage-led, open, human-centered"; the visual base fuses rail imagery with AI neural topology; the Logo direction is a "Vein" graphic concept, using no unauthorized fonts or trademarks.
 
 ![Mobility and Blue-Green Network](assets/figures/mobility-bluegreen.en.png)
 
@@ -95,8 +95,8 @@ Metrics split into known and pending [metric:site_area_sqm] [depth:metrics_evide
 | Metric | Value | Confidence |
 | --- | --- | --- |
 | Site area | 11,412,825 m² | medium |
-| Green area | 3,528,342 m² | medium |
-| Green ratio | 30.92% | medium |
+| Green area | 3,210,552 m² | medium |
+| Green ratio | 28.13% | medium |
 | Public space | 29,467 m² | medium |
 | Public-space ratio | 0.26% | medium |
 | Building footprint | 79,427 m² | medium |

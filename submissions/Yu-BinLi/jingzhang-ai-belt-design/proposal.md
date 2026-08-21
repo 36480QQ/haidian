@@ -71,7 +71,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张遗址公园绿地为主体 [data:geometry/green_space.geojson#GREEN-001]。绿地总面积约 352.8 ha，绿地率约 30.92%（基于临时边界重算，旧版图件中 28.1% 已废弃）[metric:green_space_area_sqm] [metric:green_ratio]。公共空间面积约 2.95 ha，公共空间率约 0.26% 。京张遗址公园AI公共空间设计以“遗址保护优先、AI增强体验”为原则 。方案提出3个AI朝圣地标：京张记忆驿站、AI原点塔和智脉之门 。城市风貌定位于“传承开创、开放协作、人本活力”，以铁轨意象与AI神经网络拓扑融合为视觉基底，Logo方向为“智脉”图形系统概念，不使用未授权字体或商标 。
+蓝绿空间以京张遗址公园绿地为主体 [data:geometry/green_space.geojson#GREEN-001]。绿地总面积约 321.1 ha，绿地率约 28.13%（基于临时边界重算，旧版图件中 28.1% 已废弃）[metric:green_space_area_sqm] [metric:green_ratio]。公共空间面积约 2.95 ha，公共空间率约 0.26% 。京张遗址公园AI公共空间设计以“遗址保护优先、AI增强体验”为原则 。方案提出3个AI朝圣地标：京张记忆驿站、AI原点塔和智脉之门 。城市风貌定位于“传承开创、开放协作、人本活力”，以铁轨意象与AI神经网络拓扑融合为视觉基底，Logo方向为“智脉”图形系统概念，不使用未授权字体或商标 。
 
 ![交通与蓝绿空间系统图](assets/figures/mobility-bluegreen.png)
 
@@ -94,8 +94,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 指标 | 值 | 置信度 |
 | --- | --- | --- |
 | 场地总面积 | 11,412,825 m² | medium |
-| 绿地面积 | 3,528,342 m² | medium |
-| 绿地率 | 30.92% | medium |
+| 绿地面积 | 3,210,552 m² | medium |
+| 绿地率 | 28.13% | medium |
 | 公共空间面积 | 29,467 m² | medium |
 | 公共空间率 | 0.26% | medium |
 | 建筑基底面积 | 79,427 m² | medium |

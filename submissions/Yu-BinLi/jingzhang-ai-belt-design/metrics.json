@@ -33,7 +33,7 @@
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 3528342.395,
+      "value": 3210551.597,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
@@ -46,7 +46,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.309156,
+      "value": 0.281311,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -230,6 +230,149 @@
       "formula": "count(public_space_polygons)",
       "confidence": "high",
       "assumptions": []
+    },
+    "land_use_area_by_code.0702": {
+      "status": "known",
+      "value": 1788211.476,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area) by code in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
+    },
+    "land_use_area_by_code.0802": {
+      "status": "known",
+      "value": 2904708.08,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area) by code in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
+    },
+    "land_use_area_by_code.1401": {
+      "status": "known",
+      "value": 2489747.883,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area) by code in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
+    },
+    "land_use_area_by_code.05": {
+      "status": "known",
+      "value": 2489746.138,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area) by code in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
+    },
+    "land_use_area_by_code.0803": {
+      "status": "known",
+      "value": 1740419.319,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(polygon_area) by code in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
+    },
+    "phasing_area_by_phase.phase_1": {
+      "status": "known",
+      "value": 2250518.97,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "sum(polygon_area) by phase in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
+    },
+    "phasing_area_by_phase.phase_2": {
+      "status": "known",
+      "value": 5992136.953,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "sum(polygon_area) by phase in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
+    },
+    "phasing_area_by_phase.phase_3": {
+      "status": "known",
+      "value": 3148220.482,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "sum(polygon_area) by phase in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Provisional boundary; recalculate when official polygon is available."
+      ]
+    },
+    "key_area_areas_sqm.zhongzhiyuan_ai_acceleration_area": {
+      "status": "known",
+      "value": 1929201.877,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(key_area) in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Key area boundaries are provisional."
+      ]
+    },
+    "key_area_areas_sqm.beijing_ai_origin_community": {
+      "status": "known",
+      "value": 1043236.909,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(key_area) in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Key area boundaries are provisional."
+      ]
+    },
+    "key_area_areas_sqm.dazhongsi_ai_industry_cluster": {
+      "status": "known",
+      "value": 720454.219,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "polygon_area(key_area) in EPSG:4548",
+      "confidence": "medium",
+      "assumptions": [
+        "Key area boundaries are provisional."
+      ]
     }
   }
 }
