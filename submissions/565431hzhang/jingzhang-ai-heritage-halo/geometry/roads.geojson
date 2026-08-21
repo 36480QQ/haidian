@@ -13,9 +13,7 @@
         "geometry_role": "design_proposal",
         "road_type": "secondary",
         "name_zh": "西侧联络道",
-        "length_m": 6232.6,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 6232.6
+        "length_m": 4774.5
       },
       "geometry": {
         "type": "LineString",
@@ -84,11 +82,9 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "road_type": "greenway",
-        "name_zh": "公共服务脊柱",
-        "length_m": 9435.0,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 9435.0
+        "road_type": "pedestrian_priority",
+        "name_zh": "京张绿廊慢行道",
+        "length_m": 7227.6
       },
       "geometry": {
         "type": "LineString",
@@ -179,9 +175,7 @@
         "geometry_role": "design_proposal",
         "road_type": "primary",
         "name_zh": "中央智脉大道",
-        "length_m": 9435.0,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 9435.0
+        "length_m": 7227.6
       },
       "geometry": {
         "type": "LineString",
@@ -271,10 +265,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_type": "secondary",
-        "name_zh": "东侧联络道",
-        "length_m": 9435.0,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 9435.0
+        "name_zh": "东侧服务道",
+        "length_m": 7227.6
       },
       "geometry": {
         "type": "LineString",
@@ -365,9 +357,7 @@
         "geometry_role": "design_proposal",
         "road_type": "primary",
         "name_zh": "学院路辅路",
-        "length_m": 9435.0,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 9435.0
+        "length_m": 7227.6
       },
       "geometry": {
         "type": "LineString",
@@ -457,10 +447,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_type": "secondary",
-        "name_zh": "大钟寺南侧连接",
-        "length_m": 1020.0,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 1020.0
+        "name_zh": "大钟寺南侧路",
+        "length_m": 1020.4
       },
       "geometry": {
         "type": "LineString",
@@ -498,10 +486,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_type": "secondary",
-        "name_zh": "大钟寺北侧连接",
-        "length_m": 1020.0,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 1020.0
+        "name_zh": "大钟寺北侧路",
+        "length_m": 1020.4
       },
       "geometry": {
         "type": "LineString",
@@ -538,11 +524,9 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "road_type": "pedestrian_priority",
-        "name_zh": "大钟寺进入连接",
-        "length_m": 1020.0,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 1020.0
+        "road_type": "primary",
+        "name_zh": "知春路",
+        "length_m": 1020.4
       },
       "geometry": {
         "type": "LineString",
@@ -580,10 +564,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_type": "primary",
-        "name_zh": "原点到达连接",
-        "length_m": 1020.0,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 1020.0
+        "name_zh": "成府路",
+        "length_m": 1020.4
       },
       "geometry": {
         "type": "LineString",
@@ -620,11 +602,9 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "road_type": "pedestrian_priority",
-        "name_zh": "原点进入连接",
-        "length_m": 1008.1,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 1008.1
+        "road_type": "primary",
+        "name_zh": "清华东路",
+        "length_m": 1008.5
       },
       "geometry": {
         "type": "LineString",
@@ -662,10 +642,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_type": "secondary",
-        "name_zh": "五道口连接",
-        "length_m": 765.0,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 765.0
+        "name_zh": "五道口-学院路",
+        "length_m": 765.3
       },
       "geometry": {
         "type": "LineString",
@@ -698,11 +676,9 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "road_type": "pedestrian_priority",
-        "name_zh": "众智园到达连接",
-        "length_m": 1020.0,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 1020.0
+        "road_type": "primary",
+        "name_zh": "北五环南路",
+        "length_m": 1020.4
       },
       "geometry": {
         "type": "LineString",
@@ -740,10 +716,8 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "road_type": "secondary",
-        "name_zh": "众智园进入连接",
-        "length_m": 1008.2,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 1008.2
+        "name_zh": "众智园南界路",
+        "length_m": 1008.5
       },
       "geometry": {
         "type": "LineString",
@@ -782,9 +756,7 @@
         "geometry_role": "design_proposal",
         "road_type": "primary",
         "name_zh": "北五环辅路",
-        "length_m": 765.0,
-        "alignment_status": "concept_only_pending_transport_review",
-        "length_m_declared": 765.0
+        "length_m": 765.3
       },
       "geometry": {
         "type": "LineString",
