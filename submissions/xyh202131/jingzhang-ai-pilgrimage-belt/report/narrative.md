@@ -6,35 +6,21 @@
 
 ## Round 54 front-stage spatial decision / 第 54 轮空间裁决前置
 
-第 54 轮只修复一个高影响冷读断点：评审先看到阅读方法和证据编号，后看到空间决定。现在 proposal、visual、A3 与 A0 的首个设计答案统一为“验证不得占用普通任务所需地面”，并以三种不可互换取舍回答：众智园拒绝穿路／保留旁置，原点社区拒绝占街／保留退院，大钟寺拒绝占中／保留路外服务。详细 RED、四份 PDF 哈希与真实性边界见 `changelog.md#v540---2026-08-21`、`agent.json#round_54_provenance` 和 `visual/assets/review-handoff-index.json#spatial_decision_frontstage_r54`。
+第 54 轮把首个答案从阅读方法改为一项空间裁决：验证不得占普通地面；众智园拒绝穿路／保留旁置，原点社区拒绝占街／保留退院，大钟寺拒绝占中／保留路外服务。`key-areas` 双语原路径重绘，旧冷读元叙事下沉；A3 14+14、A0 8+8 不增页重建，首轮中文标签替换字形已修复，最终双构建一致且 44 页 QA 通过。完整 RED、哈希与边界见 `changelog.md#v540---2026-08-21`、`agent.json#round_54_provenance` 和 `review-handoff-index.json#spatial_decision_frontstage_r54`。
 
-中英 `key-areas` 原路径重绘；proposal 和离线 visual 把旧冷读元叙事下沉到专业交接；A3 14+14、A0 8+8 不增页重建。首轮 PDF QA 发现并修复中文审计栏替换字形，最终两次新进程逐文件字节一致，44 页彩色、灰度和细节 QA 通过。以上均为编辑性审查，不是公众反馈、专家意见、现场观察或评审结果。
-
-本轮没有新增路径、方向、事实、来源或媒体。geometry、`metrics.json`、12/8/3/36、G0、provisional、NO-GO、完整非 AI 路径、故障只停验证、恢复非授权、现实结果 0、`not_fully_cleared` 与独立逐文件清权 0 全部冻结；本轮无新媒体。
-
-Round 54 repairs one high-impact cold-read break: reviewers previously met reading instructions and evidence IDs before a spatial decision. Proposal, visual, A3, and A0 now share one first design answer—proof may not occupy ground required for ordinary tasks—with three non-interchangeable choices: Zhongzhiyuan rejects crossing and keeps proof beside; Origin rejects street occupation and keeps courts stepped back; Dazhongsi rejects a blocked centre and keeps service off-route. The full RED, four PDF hashes, and truth boundary are recorded in the three files above.
-
-The bilingual `key-areas` pair is redrawn in place; proposal and offline visual demote the old cold-read meta layer to professional handoff; A3 14+14 and A0 8+8 are rebuilt without page growth. Initial PDF QA found and repaired unsupported Chinese audit-label glyphs. Two final fresh processes are byte-identical and all 44 pages pass colour, grayscale, and detail QA. These are editorial findings, not public feedback, expert opinion, field observation, or jury results.
-
-No path, direction, fact, source, or media is added. Geometry, `metrics.json`, 12/8/3/36, G0, provisional/NO-GO status, complete non-AI paths, proof-only failure stop, non-authorising recovery, zero real outcomes, `not_fully_cleared`, and zero independent file-level audits remain frozen. This round adds no media.
+Round 54 leads with one spatial ruling: proof may not take ordinary ground. Zhongzhiyuan keeps proof beside, Origin keeps courts stepped back, and Dazhongsi keeps service off-route. Bilingual figures and reading surfaces align in place; fixed page counts, G0/provisional/NO-GO, 12/8/3/36, non-AI continuity, proof-only failure stop, non-authorising recovery, zero real outcomes, `not_fully_cleared`, and zero independent audits remain frozen. These are editorial findings, not public, expert, field, or jury results; no path, source, fact, or media is added.
 
 ## Round 53 jury atlas integrity / 第 53 轮评审图集完整性
 
-第 53 轮只修复可重放的出版断点：重复图号、空间图集顶栏叠字、英文还场说明和底栏溢出，以及 A0 核心双图页仅 30.4% 的图面占比。九组双语核心图统一为 `S01—S08 / E01`，还场说明真实分行；A0 核心双图页提升到 38.1%，宽屏媒体页保持 35.1%。A3 仍为 14+14 页，A0 仍为 8+8 页；两次新进程逐文件字节一致，44 页彩色、灰度和细节 QA 通过。完整 RED、哈希与边界见 `changelog.md#v530---2026-08-20`、`agent.json#round_53_provenance` 和 `visual/assets/review-handoff-index.json#jury_atlas_integrity_r53`。
+第 53 轮修复重复图号、叠字、英文溢出和 A0 图面占比，形成 `S01—S08 / E01`，保持 A3 14+14、A0 8+8 并通过双构建与 44 页 QA。完整 RED、哈希和冻结边界见 `changelog.md#v530---2026-08-20`、`agent.json#round_53_provenance` 与 `review-handoff-index.json#jury_atlas_integrity_r53`；这是编辑性出版审查，不是公众、专家、现场或评审结果，也未新增方向、路径、来源、媒体、事实、geometry、metric 或页面。
 
-这些发现与修复都是编辑性出版审查，不是公众反馈、专家意见、现场观察或评审结果。本轮没有新增方向、路径、来源、媒体、模型调用、事实、主张、geometry、metric 或页面；G0、provisional、NO-GO、12/8/3/36、三处不可互换原型、完整非 AI 路径、故障只停验证叠层、恢复非授权、现实结果 0、`not_fully_cleared` 和独立逐文件清权 0 均冻结。本轮无新媒体。
-
-Round 53 repairs reproducible publication breaks only: duplicate figure identifiers, a spatial-atlas header collision, overflowing English restoration/footer lines and 30.4% dominant-figure coverage on core A0 pairs. Nine bilingual core families now use `S01–S08 / E01`, restoration instructions wrap within their cards, core A0 pairs reach 38.1%, and the wide-media page stays at 35.1%. Page counts remain A3 14+14 and A0 8+8. Two fresh processes are byte-identical and all 44 pages pass colour, grayscale and detail QA. Full RED, hashes and boundaries are in the three records above.
-
-These are editorial publication findings—not public feedback, expert opinion, field observation or jury results. No direction, path, source, media, model call, fact, claim, geometry, metric or page is added. G0, provisional/NO-GO status, 12/8/3/36, three non-interchangeable prototypes, complete non-AI paths, proof-only failure stop, non-authorising recovery, zero real outcomes, `not_fully_cleared` and zero independent file-level audits remain frozen. This round adds no media.
+Round 53 repaired duplicate identifiers, collisions, English overflow, and A0 figure coverage, yielding `S01–S08 / E01` while preserving page counts and passing two-build and 44-page QA. The cited records retain all G0, provisional/NO-GO, 12/8/3/36, non-AI, recovery, zero-real-outcome, and rights boundaries; no path, source, media, fact, geometry, metric, or page was added.
 
 ## Round 52 civic ground detail atlas / 第 52 轮公共地面详细设计图集
 
-PR #3511 merge 已进入 `main@fcaf7a9f…`，串行门通过。RED、修复、PDF SHA、工具和权利记录见 `changelog.md#v520---2026-08-20`、`agent.json#round_52_provenance` 和 `review-handoff-index.json#civic_ground_detail_atlas_r52`；它们不是公众、专家、现场或评审反馈。
+第 52 轮原位重建四组双语图件和四份定页 PDF，连成连续公共地面、三处原型、季节基线与拆除—还场图纸链。RED、哈希和边界见 `changelog.md#v520---2026-08-20`、`agent.json#round_52_provenance` 与 `review-handoff-index.json#civic_ground_detail_atlas_r52`；无新路径、来源、媒体、事实、geometry、metric 或页面，全部 G0、provisional、NO-GO、非 AI、恢复和权利边界不变。
 
-本轮原位重建 4 组双语图件和 4 份定页 PDF，只把连续公共地面、三处非同构原型、季节普通基线与拆除—还场关系连成图纸链。无新路径、来源、媒体、事实、主张、geometry、metric 或页面；G0、provisional、NO-GO、12/8/3/36、现实结果 0、完整非 AI 路径、恢复非授权、`not_fully_cleared` 和独立清权 0 均冻结。
-
-Round 52 rebuilds four bilingual figure families and four fixed-page PDFs in place. Full RED, hashes and limits are stored in the three records above. No path, source, media, fact, claim, geometry, metric or page is added; all G0, provisional, non-AI, recovery, NO-GO and rights boundaries remain unchanged.
+Round 52 rebuilt four bilingual figure families and four fixed-page PDFs in place; the cited records preserve all RED, hashes, G0/provisional/NO-GO, non-AI, recovery, and rights limits without adding paths, sources, media, facts, geometry, metrics, or pages.
 
 ## Round 51 spatial-design proof / 第 51 轮空间设计证明
 
