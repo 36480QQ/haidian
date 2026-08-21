@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Re-imagining the Jingzhang Railway Heritage Park as a 'silver-age service spine' for the elderly communities along the corridor: an AI-assisted public-service belt covering elderly medical visits, civic errands and barrier-free mobility. The proposal sets out the 'Jingzhang Silver-Age Accessibility Belt' concept, linking three key areas and沿线 communities, hospitals, civic-service points and metro entrances via a ~9 km continuous barrier-free slow-mobility spine, with 10 AI elderly-service scenario cards (incl. 3 test/validation scenarios), 5 elderly personas, 3 warmth landmarks, 8 elderly-use land types and 7 silver service nodes — an experienceable, replicable and iterable concept for elderly-friendly barrier-free smart services."
 tracks: ["ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v7.0"
+iteration: "v6.0"
 ---
 
 # Jingzhang Silver-Age Accessibility Belt: AI-Assisted Medical, Civic and Barrier-Free Mobility Services for the Elderly
@@ -294,32 +294,6 @@ The proposal claims "service success = connection strengthening". This claim is 
 **Rule-closure verification.** `run_connection_strength_tabletop.js` correctly classifies all 60 synthetic cases — 10 scenarios × 6 rule branches (all three levels reached / interaction only, not retained / retained but no growth / not measured / no instrument consent / identified individual) — as 10 strong connections / 10 weak / 10 stable / 10 unknown / 20 blocked. This only proves the rules classify correctly; actual instrument use requires ethics review and does not constitute on-site effectiveness evidence [data:visual/assets/connection-strength-evidence.json#blocked].
 
 **Relation to the Connection Points.** The Connection Points generate connections; connection measurability proves that connections actually occurred and are sustainable — without measurement, "connection strengthening" is only a wish; with L1–L3 measurement, "the elderly are not lonely" moves from vision to a verifiable engineering commitment that can be compared against the no-AI baseline [depth:metrics_recalculation].
-
-### Meta-Design Layer: Philosophy-Layer Enhancement (original to this proposal, v7)
-
-The Connection Points resolved "connection remains after the service"; connection measurability resolved "connections actually occurred". The meta-design layer of this proposal goes further, raising six questions at the logical and philosophical levels — none of them external judgements; each **illuminates logic already implicit in the connection lens**. The six directions correspond to six artifacts under `visual/assets/philosophy/`, each making the lens's own logic explicit [E:SILVER-PHILOSOPHY-META].
-
-**Value Theory — Value Trade-offs.** The connection lens already implies a value ordering; the value trade-off table makes implicit value conflicts explicit as "priority direction + cost" [data:visual/assets/philosophy/value-tradeoffs.json#tradeoffs]:
-
-| Value conflict | Priority | Encoded in | Cost |
-| --- | --- | --- | --- |
-| Connection vs efficiency | Connection | Service points are connection starting points, not endpoints | Service process slows down |
-| Connection vs privacy | Privacy | Receipts record only that a connection occurred, not the conversation content | Conversation quality cannot be tracked |
-| Connection vs autonomy | Autonomy | The elderly may opt out; connection is not forced | Some elderly may remain unconnected |
-
-The costs are accepted because the priority direction is a prerequisite for "the elderly as the active party".
-
-**Teleology — Site Necessity.** Argues why the intergenerational-connection mechanism fits Jingzhang — site-specificity moves from background to a necessary condition [data:visual/assets/philosophy/site-necessity.json#necessity_arguments]: (1) communities along the Jingzhang corridor are dense with elderly concentration (the need for connection is real); (2) the memory of the Jingzhang railway provides a memory anchor shared across generations; (3) the design positioning of Jingzhang as the "silver-age service spine".
-
-**Phenomenology — First-Person Empathy Scripts.** First-person scripts verify that each step of the connection-experience chain runs smoothly — engineering verification of experience, not marketing narrative [data:visual/assets/philosophy/first-person-scripts.json#scripts]. Three scripts (an elderly person being connected / a volunteer companion chat / a family member learning that their elderly relative has been connected) each verify one connection-experience chain.
-
-**Epistemology — Epistemic Grading.** Every claim is graded as description / prediction / prescription, with its knowledge basis stated — honesty about epistemic boundaries [data:visual/assets/philosophy/epistemic-grading.json#claim_grades].
-
-**Game Theory — Incentive Compatibility.** The core of mechanism design: make "connection" the dominant strategy — the elderly and volunteers only truly connect when they have motives to connect [data:visual/assets/philosophy/incentive-compatibility.json#incentive_mechanisms]. Volunteers on rotation earn community points and honour; the elderly gain companionship and social fulfilment from connection; publishing connection quality makes connection effects visible and comparable.
-
-**Temporal — Self-Update Protocol.** The proposal is not static; it defines a trigger protocol specifying which parts of the connection mechanism must be recalculated when the city changes [data:visual/assets/philosophy/self-update-protocol.json#triggers]. Elderly population structure changes → recalculate Connection Point density; loneliness-scale standards change → recalculate connection-strength thresholds; community structure changes → recalculate Connection Point siting.
-
-**Relation of the six directions to the connection lens.** All six directions are logical extensions of the lens itself: the value table makes explicit the value ordering implicit in the lens; site necessity is the lens's site legitimacy; empathy scripts are the proof that the lens can be experienced; epistemic grading is the lens's honesty about its own epistemic boundaries; incentive compatibility is the mechanism guarantee that the lens is complied with; self-update is the lens's honesty about time. Together, the six upgrade "the elderly as the active party" from a design principle into a six-dimensionally self-consistent engineering commitment spanning value, site, experience, cognition, incentive and time [depth:metrics_recalculation].
 
 ### Conceptual Renewal Project List
 
