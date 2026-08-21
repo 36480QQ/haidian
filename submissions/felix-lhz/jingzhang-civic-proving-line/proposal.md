@@ -62,7 +62,9 @@ ALT-C 同时把最远急停—人工岗位距离控制为 24.3 米的原型假�
 
 北京市政府公开的中关村创新史用于说明“试验—转化—共享”的文化线索；大钟寺轨道背景仅作方向性接口。它们均不证明精确站口、建筑、红线或权属。[source:ZHONGGUANCUN-HISTORY-OFFICIAL] [source:DAZHONGSI-LINE13-CONTEXT]
 
-设计证据明确分为三类：**已知设计**是可复算的几何、数量与文档覆盖；**合成验证**是规则驱动的 84 项桌面用例；**现场未知**包括客流、安全表现、效率、满意度、能耗、成本和恢复时长。合成验证记录输入哈希、规则版本、预期/实际状态、责任触发和恢复出口，但不产生机构合作、投资、许可或现场绩效结论。[data:visual/assets/tabletop-results.json] [metric:synthetic_design_verification_case_count] [metric:field_verification_result_count] [depth:existing_conditions_diagnosis]
+设计证据明确分为三类：**已知设计**是可复算的几何、数量与文档覆盖；**合成验证**是规则驱动的桌面用例；**现场未知**包括客流、安全表现、效率、满意度、能耗、成本和恢复时长。[depth:existing_conditions_diagnosis]
+
+84 项合成验证记录输入哈希、规则版本、预期/实际状态、责任触发和恢复出口，但不产生机构合作、投资、许可或现场绩效结论。[data:visual/assets/tabletop-results.json] [metric:synthetic_design_verification_case_count] [metric:field_verification_result_count]
 
 ## 三层范围工作框架
 
@@ -125,6 +127,8 @@ S7 的 **设计完整 / 试验未准入文件包**由同一套几何生成五级
 S7 的普通公共十字和人工服务必须先完成测绘与 7 个连续运行日的基线记录。只有场地、权属、消防、无障碍、临电、网络、交通组织和设备安全八道许可门全部关闭，且场地负责人、普通服务人员、安全负责人和数据记录人员独立在岗，东南侧试验湾才可进入 `TRIAL`。碰撞、缓冲侵入、急停失效、公共路线中断或人工接管失败均触发零容忍停止；计时从停止指令开始，到人工完成同题任务且两条公共路线恢复开放为止。当前恢复时间仍为 `unknown / not_field_run`。
 
 三座地标继续采用不同空间原型：众智园验真环以完整公共旁路包围受控内环；AI 原点共译门以三条无账户路线穿过人工服务与复核后台；大钟寺回执廊以公共十字、单侧试验湾和人工证据门廊构成旗舰样机。三张体验图均为严格对应构件关系的概念生成图，不承担现状、尺度或绩效证明。
+
+![三座建筑地标平面—剖面—轴测对照](assets/figures/key-areas.png)
 
 ## 总体设计：用地更新、慢行蓝绿与公共基线
 

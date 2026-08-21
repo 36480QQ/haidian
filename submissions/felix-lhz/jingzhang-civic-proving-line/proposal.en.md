@@ -24,6 +24,10 @@ ALT-A is **REJECTED** for severing the public cross; ALT-B is **REVISED** becaus
 
 **The present implementation decision remains G0 NO-GO.** Precise survey, title, eight permits, four independent duty posts and seven consecutive ordinary-service days are incomplete; 0/8 permits and 0/7 days are closed, so AI trial may not begin.[data:visual/assets/e2-readiness.json] [metric:current_trial_open_gate_count] [metric:pending_trial_permit_count]
 
+Design evidence has three classes: **known design** means reproducible geometry, quantities and document coverage; **synthetic verification** means rule-driven desktop cases; **field unknown** includes footfall, safety performance, efficiency, satisfaction, energy, cost and recovery duration.[depth:existing_conditions_diagnosis]
+
+The 84 synthetic cases record input hashes, rule versions, expected and observed states, accountable triggers and recovery exits, but produce no claim of institutional partnership, investment, permit closure or field performance.[data:visual/assets/tabletop-results.json] [metric:synthetic_design_verification_case_count] [metric:field_verification_result_count]
+
 ![Overall urban design and three architectural landmarks](assets/figures/site-overview.en.png)
 
 <!-- V11_DECISION_START -->
@@ -115,6 +119,8 @@ The compiler runs seven cases for each of `SCN-001—012`: ordinary baseline, mi
 The ordinary public cross and staffed service must be surveyed and logged for seven consecutive operating days first. The southeast trial bay may enter `TRIAL` only after site, title, fire, accessibility, temporary power, network, traffic-management and equipment-safety gates are closed and four independent posts are staffed. Collision, buffer intrusion, emergency-stop failure, interruption of a public route or failed human takeover triggers a zero-tolerance stop. The recovery clock runs from the stop command until staff complete the same task and both public routes reopen. Recovery time remains `unknown / not_field_run`.
 
 The three landmarks retain different spatial archetypes: the Verification Ring wraps a controlled inner ring with a complete public bypass; the Translation Gate carries three account-free paths past staffed service and professional review; the Receipt Porch combines a public cross, one-side trial bay and staffed evidence interface. All three experiential views are geometry-matched concept images, not evidence of existing conditions, dimensions or performance.
+
+![Plan–section–assembly comparison of the three architectural landmarks](assets/figures/key-areas.en.png)
 
 ## Overall design: renewal, mobility, blue-green and baseline
 
