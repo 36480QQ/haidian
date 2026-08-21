@@ -288,7 +288,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 
 ## 蓝绿空间、公共空间与城市风貌
 
-**蓝绿系统** `[depth:blue_green_public_space]`：京张遗址公园绿带（南北向 `[data:geometry/green_space.geojson#GR-001]`）+三区绿环，绿地率 `[metric:green_ratio]`；海绵/调蓄为概念方向，须水文模型 `[assumption:A-GREEN-BLUE-CONCEPT-001]`。**公共空间**：新轨中央广场 `[data:geometry/public_space.geojson#PS-001]`+三区广场，公共空间率 `[metric:public_space_ratio]`。
+**蓝绿系统** `[depth:blue_green_public_space]`：京张遗址公园绿带（南北向 `[data:geometry/green_space.geojson#GR-001]`）+三区绿环，绿地率 `[metric:green_ratio]`；海绵/调蓄为概念方向，须水文模型 `[assumption:A-GREEN-BLUE-CONCEPT-001]`。**公共空间**：人字线中央广场 `[data:geometry/public_space.geojson#PS-001]`+三区广场，公共空间率 `[metric:public_space_ratio]`。
 
 **AI朝圣地标**（agent.4，3个，概念建议须清权 `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`）：①人字线纪念碑（中央广场，"人"字形折返母题的极简工程艺术装置）；②人字线体验馆（AI原点社区，铁路遗产+AI历史的可体验节点）；③基准测试场观景台（众智园，可观摩AI基准测试的公共荣誉展示节点）。**荣誉展示体系**（agent.4）：沿主轴设基准测试排行榜墙（众智园）—开发者贡献星谱（AI原点）—企业创新荣誉廊（大钟寺），统一视觉、公开可审计。
 

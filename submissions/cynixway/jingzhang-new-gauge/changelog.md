@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v8.4 - 2026-08-21
+
+**品牌一致性收尾**：清理 v8.2 未覆盖到的残留旧品牌：
+
+- **visual 门户（中英）**：导语"定下新轨距(新标准)"→"以AI攻克城市陡坡"；"一轴三轨两翼"→"一轴三极两翼"；场景卡数 12→14；主轴名补全"京张人字创新主轴"；地标表"轨距纪念碑/新轨中央广场"→"人字线纪念碑/人字线中央广场"；hero_en "THE NEW GAUGE"→"THE SWITCHBACK LINE"；版本徽章 v1.0→v8.4。
+- **`visual/assets/evidence-ledger.json`**：标题"京张新轨 / The New Gauge"→"京张人字新线 / The Switchback Line"。
+- **广场更名**："新轨中央广场"→"人字线中央广场"（proposal.md / proposal.en.md / `geometry/public_space.geojson` name_zh 同步）。
+- 图件按当前脚本重生成（内容与 v8.2 一致）。正文机制与结构零改动；manifest 哈希重算；四 gate 自检 PASS。
+
+**Files changed**: proposal.md, proposal.en.md, geometry/public_space.geojson, assets/figures/*.png (12), visual/index*.html (2), visual/assets/evidence-ledger.json, changelog.md, manifest.json, self_check.json.
+
 ## v8.3 - 2026-08-21
 
 **概念收拢（v8.2 视觉修复持平 86 后的文本层冲刺）**：对照 96 分方案的"单一核心概念"共性，把散布于各章的机制统一到一条可复述的总纲下。结构不变：
