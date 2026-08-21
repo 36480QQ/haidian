@@ -2006,15 +2006,15 @@
     {
       "id": "M13",
       "gate": "accessibility_qa.py",
-      "target": "fig_visit.py",
+      "target": "figures.py",
       "caught": true,
       "exit_code": 1,
       "named_the_damage": true,
       "rendered": true,
-      "what_zh": "把 FIG.27 一段正文的字号压到 2.0，远低于远距可读性下限。",
-      "what_en": "Drop one body run on FIG.27 to 2.0 pt, far below the legible-height floor.",
-      "why_zh": "本包用「可读字高 ≈ 视距 ÷ 250」核自己的图纸，报最小字高 4.73 mm 全部达标。**FIG.27 刚刚把同一条比例指向牌面**——那么这条比例自己有没有被验证过会失败，就是必须回答的问题。",
-      "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.73 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** — which makes whether the ratio itself has ever been shown to fail a question that has to be answered."
+      "what_zh": "把 `figures.txt` 里的字号下限改成 2.0 的上限，两版全部图纸的每一段文字都落到远距可读性下限以下，FIG.27 也在其中。",
+      "what_en": "Turn the type floor in `figures.txt` into a 2.0 ceiling, so every text run on every sheet in both languages falls below the legible-height floor, FIG.27 among them.",
+      "why_zh": "本包用「可读字高 ≈ 视距 ÷ 250」核自己的图纸，报最小字高 4.99 mm 全部达标。**FIG.27 刚刚把同一条比例指向牌面**——那么这条比例自己有没有被验证过会失败，就是必须回答的问题。而这条比例现在之所以成立，靠的是一个常量：**要证明闸门还会失败，就得打这个常量，不能打一处被它兜住的字号**。",
+      "why_en": "This package checks its own drawings with the legible-height ratio and reports a 4.99 mm minimum, all passing. **FIG.27 has just pointed that same ratio at the plate** - which makes whether the ratio itself has ever been shown to fail a question that has to be answered. What makes the ratio hold is now a single constant, so **the mutation has to strike the constant; striking a size the constant catches proves nothing**."
     },
     {
       "id": "M56",
