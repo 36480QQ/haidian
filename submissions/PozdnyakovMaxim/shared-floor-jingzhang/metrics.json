@@ -1008,6 +1008,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1035,6 +1036,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1062,6 +1064,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1089,6 +1092,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1116,6 +1120,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1143,6 +1148,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1170,6 +1176,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1197,6 +1204,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1224,6 +1232,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1251,6 +1260,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1278,6 +1288,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1305,6 +1316,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1332,6 +1344,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1359,6 +1372,7 @@
         "visual/assets/delivery-register.json",
         "visual/assets/delivery-permit-consent-register.json",
         "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
         "visual/assets/delivery-procurement-cost-plan.json",
         "visual/assets/delivery-operator-commissioning-plan.json",
         "visual/assets/delivery-field-baseline-protocol.json",
@@ -1366,6 +1380,594 @@
         "visual/assets/delivery-build-receipt.json"
       ],
       "formula": "count completed field observations recorded by the protocol",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_conditional_program_activity_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(T00 documentary precondition + T01-T11 post-T0 conditional activities)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_conditional_program_timed_activity_count": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(T01-T11 timed activities occupying the conditional W1-W15 reference window after accepted T0)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_conditional_program_reference_week_count": {
+      "status": "known",
+      "value": 15,
+      "unit": "week",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(unique reference weeks occupied by T01-T11 after documentary T0; not an approved programme)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_raci_role_class_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(future unappointed role classes R01-R12)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_raci_task_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(conditional activities carrying RACI)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_raci_single_accountability_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "conditional activities with exactly one Accountable / all conditional activities",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_two_key_separation_pass_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(service-data and rights-safety keys proven to be separate role classes)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_quantity_line_count": {
+      "status": "known",
+      "value": 16,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(unpriced P0 quantity-schedule lines Q00-Q15)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_design_reference_derived_quantity_line_count": {
+      "status": "known",
+      "value": 14,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(participant design/reference-derived quantity lines; not survey quantities)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_quantity_tbc_line_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(quantity lines held TBC pending survey or authorised review)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_formal_unit_rate_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(formal unit rates evidenced in the participant dossier)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_gate_handoff_template_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(G01-G12 preparer-future document issuer or accountable-party class-reviewer-acceptor handoff templates)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_external_document_receipt_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(external documentary receipts actually supplied to gate templates)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_acceptance_indicator_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(P0 acceptance indicators I01-I12)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_acceptance_hold_rule_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(participant-authored deny-by-default acceptance hold rules with stated numeric thresholds)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_acceptance_baseline_tbc_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(acceptance thresholds held TBC pending an authorised ratified field baseline)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_measured_field_indicator_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(acceptance indicators with authorised measured field values)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_named_role_appointment_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(future role classes with evidenced named appointments)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_external_release_stage_hold_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(external implementation states remaining HOLD)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_site_action_before_release_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(pre-release starts recorded in verifier input and emitted dossier state; not evidence of all real-world acts)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROJECTS-001",
+        "A-LIFE-SAFETY-001",
+        "A-BASELINE-001",
+        "A-DELIVERY-001"
+      ]
+    },
+    "delivery_false_transition_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery-run-contract.json",
+        "visual/assets/delivery-changeover-binding.json",
+        "visual/assets/delivery-package-input-snapshot.json",
+        "visual/assets/delivery-module-register.json",
+        "visual/assets/delivery-register.json",
+        "visual/assets/delivery-permit-consent-register.json",
+        "visual/assets/delivery-p0-station-porch.json",
+        "visual/assets/delivery-p0-implementation-contract.json",
+        "visual/assets/delivery-procurement-cost-plan.json",
+        "visual/assets/delivery-operator-commissioning-plan.json",
+        "visual/assets/delivery-field-baseline-protocol.json",
+        "visual/assets/delivery-verification.json",
+        "visual/assets/delivery-build-receipt.json"
+      ],
+      "formula": "count(activity, gate, stage, construction or opening transitions emitted by the dossier without evidence; not a field observation)",
       "confidence": "high",
       "assumptions": [
         "A-PROJECTS-001",

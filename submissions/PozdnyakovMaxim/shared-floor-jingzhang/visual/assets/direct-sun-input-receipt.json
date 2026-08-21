@@ -1,6 +1,6 @@
 {
-  "builder_sha256": "818ff790e7b74b6433c97d7329451cde7e462fd890ef252cbc6d2b8026751651",
-  "contract_sha256": "26e376964c4160501cd4a2009db74b87e380fc7e65a29684c755a10b6a76ff38",
+  "builder_sha256": "06a11540f0fd33eeee91034484fc34a6a3a614a67811575fb768f9ead3d5b032",
+  "contract_sha256": "8b61d47be4663e45ae89b7e853ca4a881c7ff61ff4483678ede5a1bc09d8b319",
   "dependencies": {
     "matplotlib": "3.11.1",
     "numpy": "2.5.2",
@@ -8,7 +8,7 @@
     "pvlib": "0.15.2",
     "shapely": "2.1.2"
   },
-  "embedded_builder_sha256": "818ff790e7b74b6433c97d7329451cde7e462fd890ef252cbc6d2b8026751651",
+  "embedded_builder_sha256": "06a11540f0fd33eeee91034484fc34a6a3a614a67811575fb768f9ead3d5b032",
   "geometry_authority": "tools/build_shared_floor.py::PROTOTYPES",
   "harness_context_only": {
     "c03_design_state_sha256": "7e5561025c29c31bf54e2fb930fecd77d0049f77de139734a2112cbfcc014d07",
@@ -34,10 +34,10 @@
       "prototype_route_count": 13,
       "public_room_count": 5
     },
-    "receipt_sha256": "790cf096096b24a97a896e80fc6c9ac54e9fb915fe7185af030ab4eb1c7cebfa",
-    "run_id": "jingzhang-ffbd9b52097d",
-    "sha256": "00f8659192a79d22fc6ae5f88ea38abb14e94942b62316a7bef88df74e00d7c6",
-    "submitted_harness_run_sha256": "20708d46036ffcfd8dc4ec4635cd37532ef8e99317b8049982e4694f832ee28b"
+    "receipt_sha256": "dffed78424c8c54b163b1a56da4ef215535eb3c8b00b53fbcb3a01a646c65006",
+    "run_id": "jingzhang-722d533a7a6a",
+    "sha256": "d79b2976377b455c0d37fbf58bebe9a883d5f888673bd20f02546dc74f79f0d8",
+    "submitted_harness_run_sha256": "c106d690fbe4c6d6fbb6fbf9bc1b732e90ce03b590046371cd172223d16b1d1a"
   },
   "location_seed": {
     "centroid_assertion_pass": true,
@@ -48,7 +48,7 @@
     "site_boundary_sha256": "c5b06167727a1a7c9b505b661dddb5a7beae41c1ea355362cec1ccccd7a01cd1"
   },
   "method_source_sha256": "092d3b56b77ab41930bb7c8de8213c4e3aa424c5e71e7c38a349bf1958c47fc4",
-  "package_manifest_sha256": "10df1c99dbbd9b48e92875dd1176377b06c86a14fc6392f3a009fba599a14b96",
+  "package_manifest_sha256": "8aea967762cafe88212217d9b1e4a860a35cd6c8ac304c66e4899e24fc30f92a",
   "package_state": "scaffold",
   "prototype_payload_sha256": "8d4f0e033793973cef93da3ba0f1eb34b8d9d7f575b51ad5a55e0fdcdae87880",
   "schema_version": "jingzhang-direct-sun-input-receipt-v1"

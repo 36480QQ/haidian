@@ -6,15 +6,15 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Replace the model, not the city: one shared ground builds on the existing Jing-Zhang heritage public space; seven Switch Streets connect campuses, neighbourhoods, transit and industry; and three long-life frames—Proof Yard, Origin Cloister and Exchange Hall—host replaceable services, infill and AI equipment. Official polygons trigger whole-package rebinding and recalculation."
+summary: "Replace the model, not the city: Jing-Zhang heritage public space becomes one continuous shared ground where 12 services compare incumbent A and candidate B on the same task and data boundary while the design requires ordinary service to remain completable on H after authorisation; paired Proof bays, the Origin difference cloister and the Exchange one-queue/three-exit hall host removable model slots, and an unsigned P0 control template keeps the first bay on documentary HOLD."
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v1.7-candidate"
+iteration: "v1.8-candidate"
 ---
 
 # 京张共地 / THE SHARED FLOOR
 
-> **REPLACE THE MODEL, NOT THE CITY / 换模型，不换城市.** A is the incumbent model, B the candidate, and H the human route with final takeover authority. A/B share one task, data boundary and user burden; B replaces A only after service and rights/safety stewards sign. Public ground, ordinary service and H remain continuous.
+> **REPLACE THE MODEL, NOT THE CITY / 换模型，不换城市.** A is the incumbent model, B the candidate, and H the human route with final takeover authority. A/B share one task, data boundary and user burden; B replaces A only after service and rights/safety stewards sign. The design requires public ground, ordinary service and H to remain continuous during any authorised changeover. P0 remains an unsigned, unapproved participant control template: T00 is unmet, all 12 future responsibility classes are unappointed, external receipts are zero, no formal unit-rate entries exist, and none of the 12 indicators carries an authorised field value; build and opening remain `HOLD`.
 
 ![Three A/B/H spaces place the same task, actual shadow deltas, human authority and delivery HOLD on one inspectable surface](assets/figures/three-areas-delivery.en.png)
 
@@ -26,9 +26,19 @@ AI turns over in months; civic ground endures for centuries. Jing-Zhang evolved 
 
 Twelve services share a `City Task Contract` fixing task, data/tools, A/H baseline, B configuration, fixtures, rollback, two keys and retirement proof. B cannot self-promote; expanded data or authority means `HOLD`, and severe regression physically returns service to A/H without closing the public route. [metric:scenario_card_count] [assumption:A-OPERATIONS-001]
 
-v1.7 puts that proposition before one real but strictly bounded model witness for the first time: a pinned BGE-M3 locally reads 36 hypothetical text fixtures across AI01–AI12 in one batch. [source:BGE-M3-OFFICIAL] [metric:semantic_witness_model_api_call_count] [metric:semantic_witness_fixture_count]
+v1.8 keeps one real but strictly bounded model witness: a pinned BGE-M3 locally reads 36 hypothetical text fixtures across AI01–AI12 in one batch. [source:BGE-M3-OFFICIAL] [metric:semantic_witness_model_api_call_count] [metric:semantic_witness_fixture_count]
 
 The result is 29/36 topology agreements and seven visible deltas; four non-hard-stop deltas concentrate on Origin-labelled fixtures. Participant-authored A/reference labels are not independent ground truth, so this is not accuracy but a spatial pressure map: it confirms that the Origin Cloister's permanent H table and difference display must remain non-removable spatial provisions, without inventing a dimensional change; B remains shadow-only. [metric:semantic_witness_topology_agreement_ratio] [metric:semantic_witness_disagreement_count] [metric:semantic_witness_origin_nonhardstop_disagreement_count]
+
+The same version advances P0 from “drawings plus HOLD” to a **participant implementation-control template (unsigned and unapproved)**: T00 is the pre-week-1 documentary precondition; only after future accountable parties accept T0 do T01–T11 occupy conditional reference weeks 1–15. This is not an approved programme and has not started. [data:visual/assets/delivery-p0-implementation-contract.json] [metric:delivery_conditional_program_activity_count] [metric:delivery_conditional_program_reference_week_count]
+
+Twelve unappointed role classes cover 12 RACI tasks with exactly one Accountable each, while service/data and rights/safety keys remain separate; named appointments remain zero. [metric:delivery_raci_role_class_count] [metric:delivery_raci_single_accountability_ratio] [metric:delivery_named_role_appointment_count]
+
+A 16-line unpriced schedule separates 14 participant design/reference-derived lines from two TBC after survey or authorised user–operator review; twelve gate-by-gate handoff templates await future document issuer/accountable-party classes, and twelve acceptance indicators await authorised field values. Formal unit-rate entries, external receipts and indicators carrying authorised measurements all remain zero. [metric:delivery_quantity_line_count] [metric:delivery_gate_handoff_template_count] [metric:delivery_acceptance_indicator_count]
+
+Of the twelve acceptance indicators, eight are participant-authored deny-by-default numeric HOLD rules; four thresholds require ratification against an authorised field baseline and remain TBC. [metric:delivery_acceptance_hold_rule_count] [metric:delivery_acceptance_baseline_tbc_count]
+
+This is therefore not self-certified buildability: all six external states remain `HOLD`; the verifier records zero premature site starts and emits zero false state transitions, without claiming that no other real-world act occurred. [metric:delivery_external_release_stage_hold_count] [metric:delivery_site_action_before_release_count] [metric:delivery_false_transition_count]
 
 > **How to read.** Chapters follow section 1.5 and six agent tasks. Geometry claims recompute from one package; registry/narrative counts name sources, and “Assumption” separates reasoning from measurement. No field survey or resident interview occurred; provisional boundaries and unknowns stay explicit until official boundaries, controls and ownership trigger whole-package rebinding. [assumption:A-BND-001] [assumption:A-CONTROLS-001]
 
@@ -343,6 +353,20 @@ Against 京建发〔2024〕182号, it maps eleven implementation-plan modules: p
 
 Joint-review policy is future procedural context only; the participant delivery register defines the twelve documentary gates, and this proposal has not entered joint review. [source:BEIJING-URBAN-RENEWAL-JOINT-REVIEW-2024] [metric:delivery_permit_gate_count]
 
+#### P0 Implementation-Evidence Handoff (Participant Control Template · Unsigned · Not an Agreement/Approval)
+
+| Relay surface | Current participant artifact | Future responsibility and required evidence | Current release |
+|---|---|---|---|
+| Conditional programme | T00 is the pre-week-1 condition; T01–T11 occupy reference weeks 1–15 only after documentary T0 | Coordinating, implementation and rights parties accept the applicable route, official extent and access/restoration right | `HOLD`; absolute start date null |
+| Responsibility matrix | R01–R12; 12 RACI tasks with exactly one A each; R10/R11 two keys separated | Future named appointments and duty instruments; role classes do not impersonate institutions | `HOLD`; appointments 0 |
+| Unpriced quantities | Q00–Q15, 16 lines; 14 participant design/reference-derived and two TBC after survey or authorised user–operator review | Qualified measurement/cost and procurement parties plus authorised users/operators verify quantities, rates, risk and route | `HOLD`; formal unit-rate entries 0 |
+| Evidence handoff | Each G01–G12 names a preparer → future document issuer/accountable-party class → reviewer → acceptor plus revalidation triggers | Title, metro, heritage, fire, utility, professional, finance, operation, participation and opening documents | `HOLD`; external receipts 0 |
+| Acceptance and exit | I01–I12 cover H route, no-phone same task, access, rollback, data boundary, complaint, burden, restoration and non-inferiority; eight participant HOLD rules plus four baseline thresholds TBC | Operator, professionals and authorised users establish baselines, execute, accept or require removal | 6/6 external states `HOLD`; indicators with authorised field values 0 |
+
+This unsigned P0 micro-sequence does not supersede the corridor's 0–6-month, 6–18-month, 18–36-month and 3–8-year phase bands; its clock may start only after documentary T0 is accepted within an authorised phase.
+
+The control template makes the next responsibility, input, deliverable, denial condition and restoration endpoint machine-readable; it does not turn participant sequencing into an agreement, approval, quotation, appointment, consultation or implementation commitment. [data:visual/assets/delivery-p0-implementation-contract.json] [assumption:A-DELIVERY-001]
+
 The P0 Station Porch retains its 36×36-metre screen, 16×16-metre reversible ground, 8×8-metre demountable bay and complete assembly-to-decommissioning sequence. [data:visual/assets/delivery-p0-station-porch.json]
 
 The ¥1.9–3.8m ROM and ¥1.2–2.2m/year OPEX ranges are participant sensitivities only; formal estimate, tender price, vendor quotations and funding remain null, with no monthly unit rates imported. [source:BEIJING-COST-BASIS-2026] [source:BEIJING-COST-INFORMATION-2026] [data:visual/assets/delivery-procurement-cost-plan.json]
@@ -408,7 +432,7 @@ Each archive image retains its source, IIIF URL, byte hash and credit. The Libra
 
 PDFs embed a Noto Sans SC 2.004 Regular subset; its byte hash, immutable commit source, build recipe and OFL 1.1 license URL are recorded in `visual/assets/reproducibility.json`. NASA POWER data is attributed under NASA's open-data policy, and no competing submission is embedded. Because the relationship between the agent track and the professional announcement's intellectual-property terms is not yet clarified in writing, the package remains `COMMUNITY-DISPLAY-ONLY`; the complete record is in `report/copyright_statement.md`. [source:NASA-DATA-POLICY] [source:OFFICIAL-ANNOUNCEMENT]
 
-Model disclosure: the initial concept, parametric geometry, drawings and three experience images were produced in an OpenAI Codex workflow; the images used the OpenAI image-generation tool exposed in Codex, which did not provide a model ID to that workflow. Claude Code assisted text, tables, packaging, validation and PR revisions in v1.2–v1.5b; local session records explicitly identify Claude Fable 5, while other Claude Code turns do not expose an equally verifiable model ID and are therefore not labelled more specifically. The v1.6–v1.7 source audit, A/B/H contract verifier, Beijing implementation-handoff register and visible review surface were produced in an OpenAI Codex workflow. The v1.7 semantic witness made one Ollama `/api/embed` batch call to local `bge-m3:latest`; the tag, registry digest, blob digest, Ollama version and receipt are pinned in the reproducibility bundle, and model weights are not redistributed. No tool conducted a site visit, authorised interview, public service, field action or local professional sign-off; public identity, submission and implementation decisions remain with the user and future named accountable parties.
+Model disclosure: the initial concept, parametric geometry, drawings and three experience images were produced in an OpenAI Codex workflow; the images used the OpenAI image-generation tool exposed in Codex, which did not provide a model ID to that workflow. Claude Code assisted text, tables, packaging, validation and PR revisions in v1.2–v1.5b; local session records explicitly identify Claude Fable 5, while other Claude Code turns do not expose an equally verifiable model ID and are therefore not labelled more specifically. The v1.6–v1.8 source audit, A/B/H contract verifier, Beijing delivery/P0 participant implementation-control template and visible review surface were produced in an OpenAI Codex workflow. The v1.7–v1.8 package retains one Ollama `/api/embed` batch witness using local `bge-m3:latest`; the tag, registry digest, blob digest, Ollama version and receipt are pinned in the reproducibility bundle, and model weights are not redistributed. No tool conducted a site visit, authorised interview, public service, field action or local professional sign-off; public identity, submission and implementation decisions remain with the user and future named accountable parties.
 
 ## References
 
