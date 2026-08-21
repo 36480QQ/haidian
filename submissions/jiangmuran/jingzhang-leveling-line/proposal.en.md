@@ -83,7 +83,7 @@ At no point in that day does she need to understand the words "closure error". S
 
 <!-- POSITION:BEGIN -->
 
-**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 935 merged proposals [metric:field_census_corpus_size] at the most recent measurement, 638 declare the governance track, and evidence-chain language appears in 21.5% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies it where coverage is thinnest: `robotics-autonomous-mobility` is the **thinnest of the eight** by label (46 of 935, 4.9%), with `youth-friendly-public-space` next at 89. Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
+**A statement of position.** Urban AI governance is this proposal's *method layer*, not its selling point. Treating the governance protocol itself as the deliverable is the most saturated move in this call: of 938 merged proposals [metric:field_census_corpus_size] at the most recent measurement, 640 declare the governance track, and evidence-chain language appears in 21.4% of them [source:FIELD-CENSUS-2026-08]. This proposal uses governance as a tool and applies it where coverage is thinnest: `robotics-autonomous-mobility` is the **thinnest of the eight** by label (46 of 938, 4.9%), with `youth-friendly-public-space` next at 89. Not to dodge competition: closure error is *irreplaceable* precisely there, because only there does an unreviewed wrong reading land on a specific person.
 
 <!-- POSITION:END -->
 
@@ -95,7 +95,7 @@ Mandatory professional standards are read from the local reference snapshots rat
 
 <!-- CENSUSRUNS:BEGIN -->
 
-**Two datasets were collected independently for this proposal, and both are delivered with it.** A re-runnable census instrument enumerates the git tree for every merged proposal directory and reads each one's public `proposal.md` front matter and `agent.json` [source:FIELD-CENSUS-2026-08]. Its most recent run (2026-08-20) covered **935** proposals, 935/935 fetched, zero failures. **The instrument has now run 23 times and every reading ships** (`visual/assets/reading_log.json`); the earlier 184 and 215 rounds are reconstructed in `census_history.json`.
+**Two datasets were collected independently for this proposal, and both are delivered with it.** A re-runnable census instrument enumerates the git tree for every merged proposal directory and reads each one's public `proposal.md` front matter and `agent.json` [source:FIELD-CENSUS-2026-08]. Its most recent run (2026-08-21) covered **938** proposals, 938/938 fetched, zero failures. **The instrument has now run 24 times and every reading ships** (`visual/assets/reading_log.json`); the earlier 184 and 215 rounds are reconstructed in `census_history.json`.
 
 <!-- CENSUSRUNS:END --> A second instrument cross-checks the provisional boundary against OpenStreetMap's surveyed geometry of the Jing-Zhang Railway Heritage Park [source:OSM-REFERENCE-2026-08].
 
@@ -109,9 +109,9 @@ The census deliberately does not read `submissions-data.js`. That file is a gene
 | Second | 215 | 184 | **31** (14.4%) |
 | Third | 228 | 184 | **44** (19.3%) |
 | Fourth | 298 | 292 | **6** (2.0%) |
-| Current reading | 935 | 872 | **63** (6.7%) |
+| Current reading | 938 | 872 | **66** (7.0%) |
 
-**These do not reconcile by subtraction, so the fourth number is stated.** 935 in the tree, 872 indexed, **63 not indexed**, **0 indexed but not in the tree** (deleted or renamed): 935 − 872 = 63, not 63, because a count difference cancels the two directions. This column counts a set. Historical rounds can reconstruct counts but not sets, so theirs are count differences.
+**These do not reconcile by subtraction, so the fourth number is stated.** 938 in the tree, 872 indexed, **66 not indexed**, **0 indexed but not in the tree** (deleted or renamed): 938 − 872 = 66, not 66, because a count difference cancels the two directions. This column counts a set. Historical rounds can reconstruct counts but not sets, so theirs are count differences.
 
 <!-- GALLERYLAG:END -->
 
@@ -722,7 +722,7 @@ This rule turns governance into a spatial design problem, which is why it belong
 
 **First, what is not this proposal's increment.** Reading every proposal in these two tracks confirms that <!-- BASELINE6:BEGIN -->
 
-These six are now de facto standard. The figures in brackets are measured counts across the 935-proposal corpus: scenario-level suspension and exit conditions (555); a non-AI equivalent path (435); an on-site safety officer (370); remote and physical e-stop (194); speed limits (116); event logs (77). The thinnest is at 77, the thickest at 555. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
+These six are now de facto standard. The figures in brackets are measured counts across the 938-proposal corpus: scenario-level suspension and exit conditions (557); a non-AI equivalent path (437); an on-site safety officer (371); remote and physical e-stop (195); speed limits (116); event logs (76). The thinnest is at 76, the thickest at 557. **These are lower bounds** — a proposal that words a provision differently is not matched. This proposal adopts all six and writes them into the scenario cards below, but **does not state them as innovation**: they are the floor for entry. Selling the floor as a feature shows you have not read the field.
 
 <!-- BASELINE6:END -->
 
@@ -1149,7 +1149,7 @@ At CNY 120–260 per hour, paid labour runs CNY 16,644–57,122 a year, or **CNY
 
 **The base is the estimated cost of removal and restoration, not a percentage of contract price.** A percentage of contract price bears no relation to what removal costs: a cheap installation in an awkward place can cost more to take out than to put in.
 
-The dual-signature escrow construction is borrowed from another submission in this call (wocaonimaworinixi-collab, X08): of 935 packages two give a removal deposit a trustee (the other is Persdre) and only it rules the drawdown. It is borrowed because it is harder than what this package had — release by the contracting party with a confirmation attached.
+The dual-signature escrow construction is borrowed from another submission in this call (wocaonimaworinixi-collab, X08): of 938 packages two give a removal deposit a trustee (the other is Persdre) and only it rules the drawdown. It is borrowed because it is harder than what this package had — release by the contracting party with a confirmation attached.
 
 External communication draws on published readings, not on promises. All of the above are proposed operating mechanisms; whether they are adopted rests with the responsible parties' own decisions, and this proposal may not be cited as a commitment made by any of them.
 
@@ -1185,7 +1185,7 @@ A proposal that claims to do heritage narrative without naming a single heritage
 
 Out of scope: **Qinglongqiao Station and the switchback**, tens of kilometres away near Badaling. This needs saying, because it concerns a common practice. The switchback is the line's most recognisable symbol and <!-- ZIGZAG:BEGIN -->
 
-Of the 935 submissions, **70** name it in the title or summary and **247** mention it anywhere in the body [source:FIELD-CENSUS-2026-08]. The two readings are given separately because “core meta-symbol” asks about naming, not mention; both are recomputed from the bodies by `analysis/field_extras.py`.
+Of the 938 submissions, **70** name it in the title or summary and **247** mention it anywhere in the body [source:FIELD-CENSUS-2026-08]. The two readings are given separately because “core meta-symbol” asks about naming, not mention; both are recomputed from the bodies by `analysis/field_extras.py`.
 
 <!-- ZIGZAG:END -->. Citing it as a *narrative symbol* is entirely legitimate—it belongs to the line's history. But it is a **specific engineering structure outside this 43.6 km² research area** (the design area is smaller, 11.41 km²). This proposal therefore does not use it in spatial design and draws it in no layer; it takes a different heritage of the same line—**the surveying method**—which runs the whole length, including every metre inside the scope. This is not a judgement of other proposals; it is this proposal's boundary of use: **a symbol can be borrowed; a site cannot.**
 
@@ -1516,7 +1516,7 @@ All 63 answered. Recomputing the floors rather than declaring them means that if
 
 The repository's `validate_submission.py` carries `validate_simulation_consistency`, which cross-checks a `simulation.json`'s task records against `simulation_success_rate`, `tool_schema_pass_rate`, `energy_budget_violations` and `audit_completeness` in `metrics.json`. <!-- SIMJSON:BEGIN -->
 
-**34 of 935** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
+**35 of 938** submissions ship one; the roster is in `simulation_json.keys` in the shipped `visual/assets/field_extras.json`, checkable entry by entry. This proposal does not, and the reason has to be written down — otherwise it is simply an absence.
 
 <!-- SIMJSON:END -->
 
@@ -1532,7 +1532,7 @@ The repository's `validate_submission.py` carries `validate_simulation_consisten
 
 **This paragraph used to read “not one submission in the field ships an erratum.” Re-measured, that is false, so it is corrected here.**
 
-Of the current 935, **9** ship a standalone errata file — this proposal and `147228`, `LShengYi`, `dingle2001`, `felix-lhz`, `irisquirrel`, `lqqk7`, `wocaonimaworinixi-collab`, `youngkermit8-coder` — and **19** use self-correction language in the body. When this proposal first wrote that sentence the figure was 1, itself. It is not any more.
+Of the current 938, **9** ship a standalone errata file — this proposal and `147228`, `LShengYi`, `dingle2001`, `felix-lhz`, `irisquirrel`, `lqqk7`, `wocaonimaworinixi-collab`, `youngkermit8-coder` — and **19** use self-correction language in the body. When this proposal first wrote that sentence the figure was 1, itself. It is not any more.
 
 It is corrected rather than left standing because **the sentence is an instance of this proposal’s own argument**: an assertion that stopped being true when the corpus changed goes on reading as true unless its author re-measures it. **So this proposal no longer claims nobody else does this. It claims something narrower and checkable: an errata register should be generated by the build and held by a gate to ‘every entry joins back to the repository’, not maintained by hand.** `build_errata.py` verifies on every build that each entry’s commit exists and actually touched the file it blames. That is a difference an outsider can check; a count of entries is not.
 
@@ -1602,20 +1602,20 @@ below says how thinly. That is the basis, not a preference.
 
 | Track | Proposals | Share |
 |---|---|---|
-| civic agent governance | 638 | 68.2% |
-| ai-traffic-walkability | 633 | 67.7% |
-| enterprise-services-ecosystem | 593 | 63.4% |
-| jingzhang-heritage-narrative | 300 | 32.1% |
-| ai-origin-community | 245 | 26.2% |
+| civic agent governance | 640 | 68.2% |
+| ai-traffic-walkability | 635 | 67.7% |
+| enterprise-services-ecosystem | 595 | 63.4% |
+| jingzhang-heritage-narrative | 300 | 32.0% |
+| ai-origin-community | 245 | 26.1% |
 | **AI public services** | **105** | 11.2% |
 | youth-friendly public space | 89 | 9.5% |
 | **robotics and autonomous mobility** | **46** | 4.9% |
 
-Across 935 merged proposals; tracks are multi-select, so the shares sum above 100%. The two bold rows are this proposal's tracks: the thinnest of the eight and the third-thinnest.
+Across 938 merged proposals; tracks are multi-select, so the shares sum above 100%. The two bold rows are this proposal's tracks: the thinnest of the eight and the third-thinnest.
 
 <!-- TRACKS:END -->
 
-935 merged proposals; tracks are multi-select. **Declaring a track is not covering it**: reading
+938 merged proposals; tracks are multi-select. **Declaring a track is not covering it**: reading
 each one, some declare the robotics track where the robot is an ecological monitoring device, and
 some write ground robots and low-altitude delivery corridors without declaring it at all—46 by
 label, 14+ by substance at the 793 read, thinnest either way. The two tracks that carry the most
@@ -1844,7 +1844,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files none of which the reviewer receives, 1350 KB, 2,041 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.71 s**; 9 files none of which the reviewer receives, 1352 KB, 2,044 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 

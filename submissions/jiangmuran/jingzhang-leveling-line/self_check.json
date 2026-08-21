@@ -180,7 +180,7 @@
       "target": "proposal.md, report/, assumptions.json",
       "source": "package-provided",
       "what_it_holds_en": "Every census-derived number in the prose must equal the shipped census.",
-      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 935)"
+      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 938)"
     },
     {
       "check_id": "PKG_CENSUS_CURRENCY_QA",
@@ -198,7 +198,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The citation check ran in the direction that could not catch a dangling tag.",
-      "message": "citation_resolves_qa.py — citation resolution: 367 citation(s) across both editions each resolve to a registered id, checked prose-to-registry — the direction source_citation_qa cannot see, and the one a fabricated tag survives (assumption 19, depth 15, metric 60, self_check 138, source 35, standard 9). Scope: [data:] resolves against geometry that is not in the reviewer's packet and is claim_state_qa's to check, not this gate's"
+      "message": "citation_resolves_qa.py — citation resolution: 367 citation(s) across both editions each resolve to a registered id, checked prose-to-registry — the direction source_citation_qa cannot see, and the one a fabricated tag survives (assumption 19, depth 15, metric 60, self_check 139, source 35, standard 9). Scope: [data:] resolves against geometry that is not in the reviewer's packet and is claim_state_qa's to check, not this gate's"
     },
     {
       "check_id": "PKG_CJK_LEAK_QA",
@@ -333,7 +333,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "An unresolved check may not send the reviewer somewhere they cannot go.",
-      "message": "evidence_in_payload_qa.py — evidence in payload: 4 of 138 shipped checks are unresolved by construction, and not one of them sends the reviewer to a file the reviewer is not sent — each names manifest.json's validation_claim, which they hold"
+      "message": "evidence_in_payload_qa.py — evidence in payload: 4 of 139 shipped checks are unresolved by construction, and not one of them sends the reviewer to a file the reviewer is not sent — each names manifest.json's validation_claim, which they hold"
     },
     {
       "check_id": "PKG_EVIDENCE_REF_QA",
@@ -657,7 +657,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A measurement may not be broken across a line.",
-      "message": "number_break_qa.py — number breaks: 18,915 wrappings across 291 translated strings carrying a digit, at 5 sizes and 13 widths, and not one line ends inside a numeral"
+      "message": "number_break_qa.py — token breaks: 25,610 wrappings across 394 translated strings carrying a digit or an identifier, at 5 sizes and 13 widths, and not one line ends inside a numeral or inside a path, filename or registered id. Scope: this holds the property on `wrap`, over every string the package translates at every width its sheets use; it does not read the rendered drawings, where a table column of stacked numbers is indistinguishable from a split one"
     },
     {
       "check_id": "PKG_OBSERVATION_REACH_QA",
@@ -1071,7 +1071,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "No past corpus size may sit in hand-written prose as if it were current.",
-      "message": "stale_corpus_qa.py — stale corpus sizes: none — 24 superseded readings (184–929) appear only inside generated blocks or sentences that declare them historical; the prose is at 935"
+      "message": "stale_corpus_qa.py — stale corpus sizes: none — 25 superseded readings (184–935) appear only inside generated blocks or sentences that declare them historical; the prose is at 938"
     },
     {
       "check_id": "PKG_STANDARD_CLAUSE_QA",
@@ -1107,7 +1107,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A reading taken from outside this package must be able to say when.",
-      "message": "survey_dated_qa.py — survey dated: 11 externally sourced asset(s) — 7 carry an ISO reading date (census.json 2026-08-20, manifest_schema_survey.json 2026-08-20, osm_reference.json 2026-08-08, osm_stitching.json 2026-08-20, review_gate_survey.json 2026-08-20, score_correlates.json 2026-08-09, track_scan.json 2026-08-20); 4 declared exempt with the reason: block_types.json (regenerated from the shipped package on every build); field_extras.json (regenerated from the shipped package on every build); osm_fabric.json (regenerated from the shipped package on every build); census_history.json (a historical series by construction)"
+      "message": "survey_dated_qa.py — survey dated: 11 externally sourced asset(s) — 7 carry an ISO reading date (census.json 2026-08-21, manifest_schema_survey.json 2026-08-20, osm_reference.json 2026-08-08, osm_stitching.json 2026-08-20, review_gate_survey.json 2026-08-20, score_correlates.json 2026-08-09, track_scan.json 2026-08-21); 4 declared exempt with the reason: block_types.json (regenerated from the shipped package on every build); field_extras.json (regenerated from the shipped package on every build); osm_fabric.json (regenerated from the shipped package on every build); census_history.json (a historical series by construction)"
     },
     {
       "check_id": "PKG_TABLE_POINTER_QA",
@@ -1439,7 +1439,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31573387,
+      "total_bytes": 31577604,
       "maintainer_bypass": false
     },
     "stderr": ""
