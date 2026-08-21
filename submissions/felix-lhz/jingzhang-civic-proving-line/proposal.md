@@ -22,6 +22,8 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterpris
 
 ![已批空间结构与京张双答运营叠加层](assets/figures/site-overview.png)
 
+![已批规划背景下的连续首层、公共服务与临时试验界面](assets/figures/land-use-structure.png)
+
 <!-- V11_DECISION_START -->
 ## 一次真正的空间裁决
 

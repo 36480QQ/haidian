@@ -22,6 +22,8 @@ The Dazhongsi Receipt Porch adapts between the existing park, a directional rail
 
 ![Approved spatial structure and Jing-Zhang operating overlay](assets/figures/site-overview.en.png)
 
+![Continuous ground interface of approved context, public service and timed trial](assets/figures/land-use-structure.en.png)
+
 <!-- V11_DECISION_START -->
 ## One Real Spatial Decision
 

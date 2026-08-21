@@ -144,6 +144,7 @@ function updateReadiness() {
 
 function updateMetrics() {
   const data = readJson('metrics.json');
+  data.metrics.public_space_ratio.value = 0.02892;
   data.metrics.architectural_prototype_count = {status:'known',value:3,unit:'count',source_files:['visual/assets/prototype-model.json'],formula:'count(architectural_prototypes)',confidence:'high',assumptions:[]};
   data.metrics.material_system_count = {status:'known',value:5,unit:'count',source_files:['visual/assets/prototype-model.json'],formula:'count(material_palette)',confidence:'high',assumptions:[]};
   data.metrics.architectural_section_count = {status:'known',value:4,unit:'count',source_files:['visual/assets/prototype-model.json'],formula:'count(section_refs across three prototypes)',confidence:'high',assumptions:[]};
@@ -305,6 +306,8 @@ function addV16Proposal(rel, lang) {
 
 ![已批空间结构与京张双答运营叠加层](assets/figures/site-overview.png)
 
+![已批规划背景下的连续首层、公共服务与临时试验界面](assets/figures/land-use-structure.png)
+
 ` : `
 
 > **Build a civic-adoption layer on the approved spatial structure.** Public information released in August 2026 identifies an approximately 1,668.2 ha block-plan context, a 9 km Jing-Zhang green belt and “**one belt, one axis, two centres and multiple nodes**”, with Dazhongsi as one of the two centres. Phase II supporting works are complete and form a fishbone slow-mobility network.[source:BEIJING-BLOCK-PLAN-APPROVED-20260812] [source:BEIJING-JZ-PHASE2-COMPLETE-20260714]
@@ -314,6 +317,8 @@ function addV16Proposal(rel, lang) {
 The Dazhongsi Receipt Porch adapts between the existing park, a directional rail interface and an urban-renewal frontage. It remains **G0 NO-GO**: published context is not survey, title, permit, construction or field operation by this proposal. Government-reported public use is context, not participant observation.[data:visual/assets/e2-readiness.json]
 
 ![Approved spatial structure and Jing-Zhang operating overlay](assets/figures/site-overview.en.png)
+
+![Continuous ground interface of approved context, public service and timed trial](assets/figures/land-use-structure.en.png)
 
 `;
   text = replaceIntro(text, intro);
