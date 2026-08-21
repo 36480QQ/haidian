@@ -13,6 +13,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # Dazhongsi Area Urban Renewal Implementation Plan — Road-Network Restructuring and Spatial Activation Based on Bio-Physarum Algorithm Insights
 
+> **The ordinary path always comes first; AI only adds reversible, stoppable, rollback-able gains.**
+
 ## Executive Summary
 
 The Centenary Jing-Zhang AI Innovation Belt aims to become a **global AI industry highland and pilgrimage destination**, the flagship carrier of Haidian's Zhongguancun Science City innovation corridor. This proposal is the detailed design for one of its three key areas — the **Dazhongsi AI industry cluster** — turning this belt-level vision into implementable urban renewal: led by the three positionings "Centenary Jing-Zhang Cultural Belt / Urban AI Life Experience Belt / AI Convergence Innovation Belt", framed by the five functions "AI full-stack autonomous innovation system / world-class AI innovation ecosystem / AI+ scenario-empowerment new paradigm / intelligent AI vibrant city / AI governance global discourse", and aligned with the "three-area two-wing" layout.
@@ -20,6 +22,8 @@ The Centenary Jing-Zhang AI Innovation Belt aims to become a **global AI industr
 The Dazhongsi area faces three urban-renewal problems: a fragmented slow-travel system, the tension between heritage protection and development, and insufficient rail-station coverage. This proposal takes the **bio-Physarum adaptive network (Physarum polycephalum, Tero et al. 2010) + NSGA-II multi-objective optimization (Deb et al. 2002)** as its method tools, translating the natural principle of "growing an efficient, robust, low-crossing network from anchors" into a road-network renewal strategy, and proposes the "one core · three areas · one interface · one link" spatial structure with six renewal projects (JZ-01..06).
 
 **Method evidence**: a real run produced a 167-edge skeleton, optimal efficiency 19.20 (baseline 1.143, Run7 frozen objective 2.802), and zero heritage hard-crossings, entering as method-validation evidence (due to the coordinate offset it is not treated as formal site geometry — see "Methodology").
+
+**Governance mechanism (ordinary path first + graded release G0-G3)**: every AI scenario moving from demonstration to daily use must pass a graded ladder — G0 ordinary path always open / G1 local recomputation / G2 professional re-review / G3 limited on-site window; failing any level falls back to the previous one. Each level keeps a stop condition, reversible measures, and an archivable receipt; the ordinary path is always available and AI only adds reversible gains.
 
 **Feasibility**: road-network municipal cost of RMB 29.655 million (with investment-scope layering, explicitly excluding pipeline relocation / rail civil works / demolition); a phased implementation roadmap (near-term pilot → mid-term rollout → long-term governance, each phase with measurable milestones and acceptance metrics); an approval flow (8 real competent authorities); stakeholder analysis (8 types); economic feasibility (land value capture → tax increment → employment, as an illustration); a metrics system (12 recalculable metrics); and a risk matrix (R-01..06).
 
@@ -92,6 +96,8 @@ A real run produced a 167-edge skeleton, optimal efficiency 19.20 (baseline 1.14
 | alpha still saturating the extended upper bound 3.0 | the optimum is sensitive to the "growth intensity" parameter | JZ-06 reserves true on-site parameter recalibration |
 
 **Honest boundary**: the heritage objective f3 degenerates to f2 (f3≡f2) under the local manually-digitized boundary, so it is not treated as an independent heritage-compliance conclusion; the real run lies ~2–3 km west of the provisional boundary, so the skeleton enters figures and metrics as **method-validation evidence**, not as formal site geometry, redlines, or approval basis (see "Design Basis"); the algorithm provides orders of magnitude and topological preference only, and specific redlines, sections, and property rights are determined by statutory planning and the competent authority [depth:existing_conditions_diagnosis].
+
+**Governance and release (the algorithm-to-deployment boundary)**: the algorithm's conclusions serve only as design input and topological preference, and never move directly into daily operation; every AI scenario moving from demonstration to daily use must pass the graded release G0-G3 (G0 ordinary path always open → G1 local recomputation → G2 professional re-review → G3 limited on-site window, see "Test and Validation Scenarios"), falling back on any failed level, with the ordinary path always available.
 
 ## Three-Level Scope Framework
 
