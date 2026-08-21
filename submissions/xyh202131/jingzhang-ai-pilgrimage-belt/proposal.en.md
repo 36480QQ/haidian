@@ -5,8 +5,8 @@ language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-version: "51.0"
-iteration: "51.0"
+version: "54.0"
+iteration: "54.0"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Haidian's innovation density becomes public capability only when people can use, question and exit without accounts, devices or professional identity. Twin-Track Jing-Zhang keeps ordinary tasks continuous and G0 proof tests intermittent and stoppable; three distinct prototypes connect evidence, risk and professional handoff. Boundaries remain provisional; outcomes, approvals and independent clearance remain zero."
 tracks:
@@ -25,7 +25,7 @@ scenarios:
 # Twin-Track Jing-Zhang
 
 - Chinese name: `双轨京张`
-- Core system: JZ-AIOS (Jing-Zhang Auditable Innovation Operating System)
+- Back-stage audit system: JZ-AIOS (Jing-Zhang Auditable Innovation Operating System)
 
 ![Twin-Track Jing-Zhang final cover: continuous ordinary track, side-positioned intermittent proof track, and three switchyards; a synthetic conceptual presentation, not field evidence, a confirmed viewpoint, built condition, approved design, accessibility result, or resident feedback](assets/media/twin-track-cover.webp)
 
@@ -35,50 +35,25 @@ Haidian's university research, entrepreneurship and enterprise services, permane
 
 Accounts, devices, professional language, available time, and algorithmic decisions are only five **design thresholds to verify** in this round. They may affect how residents, commuters, older people, children, caregivers, and service workers enter, understand, refuse, or reach a person, but the package has not recruited a sample, created new personas, or measured impact. The spatial response is not a separate set of facilities for each group. The Continuous Civic Track first carries movement, rest, questions, care, and basic services; the Intermittent Proof Track appears only beside it, within a bounded area and in removable form. Anyone can complete the same basic task without registration or data authorization [source:HAIDIAN-15FYP-2026] [data:visual/assets/non-ai-parity-contract.json].
 
-> **One judgement:** Twin-Track Jing-Zhang uses a continuous ordinary track (the Continuous Civic Track) so anyone can complete the full ordinary task without registration or a QR code and without AI, while the intermittent proof track appears only as a voluntary, announced, bounded, stoppable, and removable side proof overlay. Zhongzhiyuan, Origin Community, and Dazhongsi are three non-interchangeable switchyards. The proposal remains a G0 concept based on provisional geometry, not evidence of field conditions, approval, or operation.
+## One Spatial Decision: Proof Must Step Aside from Ordinary Life
 
-> **Four-state conclusion:** the ordinary task works first; optional proof appears only once all preconditions are satisfied; failure stops only the proof overlay while the continuous ordinary track, complete non-AI path, staffed handoff, withdrawal, and appeal continue; recovery restores ordinary use first but is not authorization, restart, or G1. The 48 seconds are presentation pacing, not a field recovery duration.
+Twin-Track Jing-Zhang is not a matter of drawing two lines more brightly. It makes one checkable spatial choice first: **proof may not occupy the ground required to complete an ordinary task.** The continuous ordinary track carries movement, rest, questions, care, and basic services first. Intermittent proof may appear only beside it, bounded, stoppable, and removable.
 
-### Completed G0 Proof and the Next Candidate
-
-| What can a reviewer verify now? | The package's single answer | What must still not be inferred? |
-|---|---|---|
-| **Completed proof** | One PII-free T-02 synthetic governance replay is complete: 10/10 decisions exactly matched the frozen expectations, 4/4 declared stop events mapped to their exact recovery actions, and 13/13 negative mutation controls failed closed as expected. | This proves deterministic G0 contract behavior and refusal precedence only; it proves no site, service, accessibility, public acceptance, approval, or G1 result. |
-| **Next candidate** | At the Dazhongsi staffed service portal, use the existing `JZ-05 × SCENE-011 × T-02` set to form one candidate chain: staffed-counter/static-guide baseline → side-positioned shadow proof → stop and human takeover → independent retest, all using the same frozen question set. | This is an **editorial review order** for this round, not a new project, site selection, priority, roster, partner, approved pilot, or implementation commitment. |
-| **Current block** | Accountable parties, exact site, real threshold, source coverage, staffed capacity, approval, real service, and independent retest all remain 0 or `unknown`; any open item keeps G0 / NO-GO. | Document completeness, machine PASS, restoration of ordinary use, or graphic clarity cannot create authorization, approval, restart, or maturity advancement. |
-
-![Twin-Track Jing-Zhang civic-ground structure: one continuous ordinary spine and six cross-links connect three non-interchangeable prototypes—parallel bypass at Zhongzhiyuan, one street and two courts at Origin Community, and four-way commute at Dazhongsi—while side proof, staffed handoff, and failure objects stay off the ordinary path; G0, provisional, not to scale](assets/figures/site-overview.en.png)
-
-> **Editorial hierarchy: 13 required chapters + 8 extended evidence units.** The required proposal consists of Chapters 1–12, from “Design Basis and Source List” through “Risk, Copyright, and Compliance,” plus Chapter 13, “References,” at the end. This reading entry is Extended Evidence E0; the seven H3 deep-read units between Chapters 12 and 13 are E1–E7. Extended evidence expands verification, professional handoff, and field-replacement rules. It does not replace a required chapter or change any G0 status, provisional boundary, unknown, non-AI path, rights block, or professional veto.
-
-## 30-Second / 3-Minute / 15-Minute Entry
-
-| Reading time | Answer only this | Start here | Misreading to stop |
+| Three non-interchangeable prototypes | Explicitly rejected | Spatial answer kept | What continues on failure |
 |---|---|---|---|
-| 30 seconds | One concept: the civic track is continuous and the proof track intermittent; three prototypes: Zhongzhiyuan verifies, Origin co-creates, Dazhongsi publishes and provides staffed service; one boundary: the whole proposal remains G0. | Figure 01 and the one-judgement statement above. | The railway grammar is not a logo; the proof track is not a continuous footprint; clarity is not site precision. |
-| 3 minutes | The completed T-02 synthetic proof, the next `JZ-05 × SCENE-011 × T-02` candidate, a complete non-AI journey for the same ordinary task, the four states, and why D01–D08 / H01–H07 still block real-world advancement. | Figures 02–05, the three switchyards, and the evidence gates. | A candidate is not priority or approval; a relationship diagram is not an existing plan; a machine PASS is not real-world quality, professional duty, or authorization. |
-| 15 minutes | Audit every scene, project, key area, right, maintenance, resource, failure, climate, long-term operations, source, and recalculation trigger. | Sole professional-handoff start: [review handoff](visual/index.en.html#review-handoff). | Back-stage contracts cannot manufacture field data; no gap may be bypassed with a more polished image. |
+| **Zhongzhiyuan · Verify** | Proof crossing the ordinary path | Parallel bypass plus a side proof garden, with staffed handoff between the routes | Ordinary bypass, non-AI information, and staffed handoff |
+| **Origin Community · Co-create** | Proof nodes taking the resident street | One open resident street, two stepped-back courts, and four independently withdrawable nodes | Resident street, paper/spoken entry, and staffed handoff |
+| **Dazhongsi · Publish** | Service objects taking the four-way commute centre | A clear centre, with information hall and staffed desk off the main route | Four-way commute, quiet rest, and off-route staffed service |
 
-### Eight-Question Cold-Read Answer Map (Editorial Review Only)
+![One spatial decision: Zhongzhiyuan rejects proof crossing through a parallel bypass and side proof garden; Origin Community rejects nodes taking the street through one street, two courts, and four withdrawal points; Dazhongsi rejects service taking the centre through a four-way commute and off-route staffed service; G0, provisional relationships, not to scale](assets/figures/key-areas.en.png)
 
-Each question below has one front-stage primary answer. The proposal, A3 and A0 are equivalent checking surfaces, not second conclusions. Cold-read records are not public feedback, expert opinion, jury results or approval. This round adds no new media.
+> **The four states change only the proof overlay, never ordinary life.** Ordinary use works first. Proof appears only after all preconditions are met. Failure stops and isolates proof objects while the complete non-AI path, staffed handoff, withdrawal, and appeal continue. Recovery first returns ordinary ground and the same basic task, then awaits recheck; it **is not authorization, approval, restart, or G1**. The existing 48-second motion is presentation pacing, not a real recovery duration.
 
-| ID and question | Single primary answer | Single front-stage entry | Print cross-check |
-|---|---|---|---|
-| Q1 · What is the single core concept? | “Twin-Track Jing-Zhang”: the continuous ordinary track comes first and the intermittent proof track appears only beside it; the three prototypes are non-interchangeable; everything remains G0. | `visual/index.en.html#jury-entry` | A3 P1; A0 P1 |
-| Q2 · Can the ordinary task be completed without registration, QR or AI? | Yes. Physical wayfinding, screen-free information, a continuous non-AI/accessibility-intent route, paper or spoken guidance, staffed handoff and a clear exit stand on their own first. | `visual/index.en.html#ordinary-life` | A3 P8; A0 P5 |
-| Q3 · Why can the three places not copy one another? | Zhongzhiyuan uses a parallel proof court, equipment isolation edge and physical stop; Origin uses one street, two courts, four nodes and point-by-point withdrawal; Dazhongsi uses a four-way commute, off-route publishing hall and staffed desk. | `visual/index.en.html#areas` | A3 P4–P7; A0 P3–P4 |
-| Q4 · Why is the proof track not continuous occupation? | It is a voluntary, announced, bounded, stoppable and removable side task overlay. Twin tracks express task relationships, not coordinates, distances, a continuous footprint or a construction alignment. | `visual/index.en.html#cold-read-proof-boundary` | A3 P1, P3; A0 P1 |
-| Q5 · What stops and what continues on failure? | Automation, collection, amplification, display or service overlays stop and isolate. The continuous ordinary track, complete non-AI route, screen-free information, staffed takeover, withdrawal, appeal and safe exit continue. | `visual/index.en.html#four-state-motion` | A3 P9; A0 P6 |
-| Q6 · Why is recovery not G1, approval or restart? | Recovery first returns the ordinary route, screen-free information, quiet conditions and the same basic task. Real acceptance and GO remain zero; an open gap keeps the overlay at G0, closed or retired. | `visual/index.en.html#cold-read-recovery-boundary` | A3 P9, P13; A0 P6, P8 |
-| Q7 · Which spatial information remains provisional or unknown? | `PROV-SITE-001` and all three `PROV-KEY` objects are provisional containers. Official redlines, coordinate alignment, station/road/parcel/building anchors, component dimensions, materials, connections and specialist conclusions remain unknown. | `visual/index.en.html#cold-read-spatial-unknowns` | A3 P2, P14; A0 P1, P3–P4 |
-| Q8 · Which inputs and future professional parties may recalculate, revise, condition, reject or delete the proposal? | D01–D08 real inputs may replace provisional geometry, typed placeholders and unverified sources. H01–H07 are unsubmitted handoff/evidence packs, not people, disciplines or accepted duties; P01–P07 are suggested discipline types only. Only a future competent professional party that accepts an exact scope may recalculate, revise, condition, reject or delete the affected concept within that scope; a major gap keeps NO-GO. | `visual/index.en.html#review-handoff` | A3 P13–P14; A0 P7–P8 |
+> **Truth boundary.** These drawings are G0 conceptual relationships based on provisional geometry, not an existing-condition survey, precise masterplan, approved design, accessibility result, or resident opinion. Official redlines, exact anchors, real thresholds, accountable parties, field service, approval, and independent retesting remain 0 or `unknown`. Rights remain `not_fully_cleared`; independent file-by-file clearance remains 0. This round adds no new media.
 
-**Package navigation and review handoff index.** Review locating for all 156 package paths lives in `visual/assets/review-handoff-index.json`: seven reading routes (the 30-second / 3-minute / 15-minute entries, the five-step accessible walk, all 21 chapter reading units, the D01–D08/H01–H07 handoff and the [eight-question cold-read answer map](visual/index.en.html#cold-read-answer-map)) plus a per-file registry with five statuses (current / historical snapshot / machine input / frozen / provisional), language pairs, round provenance and rights backlinks. `round15-baseline.json` is a historical snapshot rather than current state, and `t02-g0-g1-replay-fixtures.json` is synthetic-replay machine input; neither may be misread as current evidence. The index only locates; it creates no evidence and changes no maturity or rights state [data:visual/assets/review-handoff-index.json].
+![Twin-Track Jing-Zhang civic-ground structure: one continuous ordinary spine and six cross-links connect three non-interchangeable prototypes while side proof, staffed handoff, and failure objects stay off the ordinary path; G0, provisional, not to scale](assets/figures/site-overview.en.png)
 
-Figure 01 draws the **conceptual spatial relay only**: the continuous civic track links the three switchyards first; intermittent proof appears beside it; two supply wings bring problems and professional advice; and the failure siding stops only the proof overlay. The outer dashed line is a provisional design container. North–south is reading order, not a coordinate, distance, station anchor, approval order, or construction alignment. Published background orientation remains a set of field questions and is not co-registered with design relationships to make an apparently real site plan. The recorded 0% overlap and about 412.5-metre separation in the existing OSM background check remain an unresolved background divergence. `PROV-KEY-003` remains unanchored to Dazhongsi station, a road, parcel, or building. The geometry therefore stays in place, with explicit recalculation triggers [data:visual/assets/site-grounding-register.json#JZ-SITE-READING-R17] [assumption:A-SITE-READING-020].
-
-The proposal retains twelve existing machine-readable scenes, eight projects, and three key areas. The front-matter `scenarios` list uses the repository’s six current scenario-registry families only as discovery metadata; it deletes, renumbers, and advances no `SCENE-*` object. Chinese and English prose, structured evidence, figures, and the offline entry share one conclusion: **document completeness proves neither field maturity nor approval.** [assumption:A-JURY-CONVERGENCE-019] [assumption:A-SITE-READING-020]
+The audit reading routes, eight-question answer map, synthetic replay, and itemized professional handoff remain available at the sole back-stage entry: [review handoff](visual/index.en.html#review-handoff). They support traceability only; they are not public feedback, expert opinion, field results, authorization, or maturity advancement. The proposal still retains 12 scenarios, 8 projects, 3 key areas, and 36 conceptual land-use cells; all 13 formal chapters and their order remain unchanged.
 
 > **Formal proposal · Chapters 1–12 of 13.** The following twelve chapters retain the required headings and order. Chapter 13, “References,” resumes after the extended evidence.
 

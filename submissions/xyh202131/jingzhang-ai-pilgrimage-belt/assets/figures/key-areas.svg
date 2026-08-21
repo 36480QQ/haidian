@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
-<title id="title">三处不是三张同构卡片，而是三种不同的公共地面组织</title><desc id="desc">Three non-isomorphic conceptual plan prototypes: parallel bypass and proof garden, one street with two courts and four withdrawal points, and four-way commute with off-route staffed service.</desc>
+<title id="title">一次空间裁决，三处给出不可互换的答案</title><desc id="desc">三处概念平面分别拒绝验证穿越普通路径、验证节点占用居民街和服务设施占据通勤中心，并保留旁置证明园、退后两院和路外人工服务。</desc>
 <defs>
 <style>.sans{font-family:"Microsoft YaHei","Noto Sans CJK SC","Segoe UI",Arial,sans-serif}.kicker{font-size:17px;font-weight:900;letter-spacing:1.6px}.head{font-size:38px;font-weight:900}.sub{font-size:21px;font-weight:650}.label{font-size:27px;font-weight:900}.body{font-size:21px;font-weight:760}.small{font-size:18px;font-weight:720}.micro{font-size:16px;font-weight:650}.tiny{font-size:14px;font-weight:650}.number{font-size:42px;font-weight:950}</style>
 <marker id="greenArrow" viewBox="0 0 16 16" refX="13" refY="8" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L15 8 L1 15 Z" fill="#087E68"/></marker>
@@ -8,14 +8,16 @@
 </defs>
 <rect width="1800" height="1100" fill="#F5F1E8"/><rect width="1800" height="142" fill="#102A43"/>
 <text x="56" y="48" class="sans kicker" fill="#D6A21D" text-anchor="start">S03 / THREE PLAN PROTOTYPES / 三处平面</text>
-<text x="56" y="104" class="sans head" fill="#FFFFFF" text-anchor="start">三处不是三张同构卡片，而是三种不同的公共地面组织</text>
+<text x="56" y="104" class="sans head" fill="#FFFFFF" text-anchor="start">一次空间裁决，三处给出不可互换的答案</text>
 <text x="1740" y="48" class="sans kicker" fill="#F8D56A" text-anchor="end">G0 · PROVISIONAL · NOT TO SCALE</text>
-<text x="56" y="178" class="sans sub" fill="#526675" text-anchor="start">不看标题也可从平行绕行、一街两院、四向通勤三种空间关系区分；所有图均为 G0 临时关系图。</text>
+<text x="56" y="178" class="sans sub" fill="#526675" text-anchor="start">共同裁决：验证不得接管普通地面；三处分别用旁置、退院、路外作出不同空间回答。G0 · 临时关系 · 非批准。</text>
 <line x1="602" y1="228" x2="602" y2="970" stroke="#C7D0CC" stroke-width="2" stroke-dasharray="8 9"/>
 <line x1="1200" y1="228" x2="1200" y2="970" stroke="#C7D0CC" stroke-width="2" stroke-dasharray="8 9"/>
 <text x="55" y="258" class="sans kicker" fill="#167FA5" text-anchor="start">01 VERIFY · 众智园</text>
 <text x="55" y="302" class="sans label" fill="#102A43" text-anchor="start">平行绕行 + 旁置证明园</text>
 <text x="55" y="337" class="sans micro" fill="#526675" text-anchor="start"><tspan x="55" dy="0">普通路径不穿越验证边</tspan><tspan x="55" dy="27">人工交接位于两条路径之间</tspan></text>
+<rect x="55" y="380" width="240" height="42" rx="13" fill="#F8E4DE" stroke="#D75D45" stroke-width="2"/><text x="175" y="407" class="sans micro" fill="#D75D45" text-anchor="middle">拒绝：验证穿路</text>
+<rect x="315" y="380" width="230" height="42" rx="13" fill="#DFF1EA" stroke="#087E68" stroke-width="2"/><text x="430" y="407" class="sans micro" fill="#087E68" text-anchor="middle">保留：旁置</text>
 <path d="M90 500 C150 420 390 420 510 510 C555 545 555 630 500 670 C380 755 165 715 95 650 C55 612 52 548 90 500 Z" fill="#DCEEF4" stroke="#167FA5" stroke-width="5"/>
 <path d="M145 520 C220 470 385 472 460 535 C492 563 487 610 448 633 C355 688 205 658 145 610 C115 586 115 545 145 520 Z" fill="#FFFFFF" stroke="#167FA5" stroke-width="4" stroke-dasharray="13 9"/>
 <text x="300" y="555" class="sans body" fill="#167FA5" text-anchor="middle">证明园</text>
@@ -41,12 +43,14 @@
 <text x="635" y="258" class="sans kicker" fill="#B77A13" text-anchor="start">02 CO-CREATE · 原点社区</text>
 <text x="635" y="302" class="sans label" fill="#102A43" text-anchor="start">一街两院 + 四个撤回节点</text>
 <text x="635" y="337" class="sans micro" fill="#526675" text-anchor="start"><tspan x="635" dy="0">居民街持续开放</tspan><tspan x="635" dy="27">验证从街边进入，不接管街道</tspan></text>
-<rect x="650" y="420" width="215" height="190" rx="8" fill="#FFF4D9" stroke="#B77A13" stroke-width="5"/>
-<path d="M690 470 L825 470 L825 570 L690 570 Z" fill="#FFFFFF" stroke="#B77A13" stroke-width="3" stroke-dasharray="10 8"/>
-<text x="758" y="525" class="sans small" fill="#B77A13" text-anchor="middle">问题院</text>
-<rect x="965" y="410" width="200" height="205" rx="8" fill="#DCEEF4" stroke="#167FA5" stroke-width="5"/>
-<path d="M1004 460 L1126 460 L1126 575 L1004 575 Z" fill="#FFFFFF" stroke="#167FA5" stroke-width="3"/>
-<text x="1065" y="525" class="sans small" fill="#167FA5" text-anchor="middle">评议院</text>
+<rect x="635" y="380" width="250" height="42" rx="13" fill="#F8E4DE" stroke="#D75D45" stroke-width="2"/><text x="760" y="407" class="sans micro" fill="#D75D45" text-anchor="middle">拒绝：节点占街</text>
+<rect x="905" y="380" width="250" height="42" rx="13" fill="#DFF1EA" stroke="#087E68" stroke-width="2"/><text x="1030" y="407" class="sans micro" fill="#087E68" text-anchor="middle">保留：退院</text>
+<rect x="650" y="445" width="215" height="190" rx="8" fill="#FFF4D9" stroke="#B77A13" stroke-width="5"/>
+<path d="M690 495 L825 495 L825 595 L690 595 Z" fill="#FFFFFF" stroke="#B77A13" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="758" y="550" class="sans small" fill="#B77A13" text-anchor="middle">问题院</text>
+<rect x="965" y="435" width="200" height="205" rx="8" fill="#DCEEF4" stroke="#167FA5" stroke-width="5"/>
+<path d="M1004 485 L1126 485 L1126 600 L1004 600 Z" fill="#FFFFFF" stroke="#167FA5" stroke-width="3"/>
+<text x="1065" y="550" class="sans small" fill="#167FA5" text-anchor="middle">评议院</text>
 <path d="M620 742 C760 700 920 770 1180 710" fill="none" stroke="#DFF1EA" stroke-width="92" stroke-linecap="round"/>
 <path d="M620 742 C760 700 920 770 1180 710" fill="none" stroke="#087E68" stroke-width="12" stroke-linecap="round" marker-end="url(#greenArrow)"/>
 <text x="900" y="830" class="sans small" fill="#087E68" text-anchor="middle">居民街 / ORDINARY STREET</text>
@@ -75,6 +79,8 @@
 <text x="1230" y="258" class="sans kicker" fill="#D75D45" text-anchor="start">03 PUBLISH · 大钟寺</text>
 <text x="1230" y="302" class="sans label" fill="#102A43" text-anchor="start">四向通勤 + 路外人工服务</text>
 <text x="1230" y="337" class="sans micro" fill="#526675" text-anchor="start"><tspan x="1230" dy="0">中心保持通行，不承载验证</tspan><tspan x="1230" dy="27">信息厅与人工台退出主路</tspan></text>
+<rect x="1230" y="380" width="250" height="42" rx="13" fill="#F8E4DE" stroke="#D75D45" stroke-width="2"/><text x="1355" y="407" class="sans micro" fill="#D75D45" text-anchor="middle">拒绝：服务占中</text>
+<rect x="1500" y="380" width="230" height="42" rx="13" fill="#DFF1EA" stroke="#087E68" stroke-width="2"/><text x="1615" y="407" class="sans micro" fill="#087E68" text-anchor="middle">保留：路外</text>
 <line x1="1480" y1="430" x2="1480" y2="840" stroke="#DFF1EA" stroke-width="100"/>
 <line x1="1260" y1="635" x2="1705" y2="635" stroke="#DFF1EA" stroke-width="100"/>
 <line x1="1480" y1="420" x2="1480" y2="850" stroke="#087E68" stroke-width="13"/>

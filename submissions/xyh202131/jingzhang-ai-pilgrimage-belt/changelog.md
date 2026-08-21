@@ -1,5 +1,23 @@
 # 方案迭代记录 / Changelog
 
+## v54.0 - 2026-08-21
+
+**空间裁决前置与前台去元叙事 / Front-stage Spatial Decision**
+
+- 串行门：前序 PR #3545 已合并，merge `d35e9e561a48f5ea757414df2d88691b0d0d35c8` 已进入 canonical `main@8afbdbfdaacdbf06373237c1b6393f3614704bbc`；同包开放 PR 为 0，工作树洁净。开工前重新完整读取最新 README、Skill、公开任务书、taskbook、source registry、formal guide、涉及 references、Issues/PR 与验证规则。
+- 修复前 RED：中英文 proposal 的首个答案是阅读时长和证据索引，而不是空间取舍；visual 首屏先出现证明编号、专家速判和阅读路线；`key-areas` 虽可区分三处，却没有把“拒绝何种占用／保留何种空间”合成同一裁决。这是编辑性冷读审查，不是公众反馈、专家意见、现场观察或评审结果。
+- 唯一空间裁决现为：验证不得占用完成普通任务所需的地面。众智园拒绝验证穿路，保留平行绕行与旁置证明园；原点社区拒绝节点占街，保留一街两院四个可撤回节点；大钟寺拒绝服务占中，保留四向通勤与路外信息厅／人工台。中英 `key-areas` SVG/PNG 在原路径重绘，不移动 geometry、不新增场地事实。
+- 双语 proposal 以同一裁决作为首个 H2，旧 30 秒／3 分钟／15 分钟元叙事退出正文前台；visual 主导航保持六项并改为“空间裁决—普通生活—公共地面—三处原型—四态—专业交接”，旧冷读基线折叠到后台。无 JavaScript、键盘、减少动态、打印和静态回退继续成立；48 秒仍只是展示节奏。
+- 四份 PDF 不增页重建，保持 A3 14+14、A0 8+8；A3 P3 和 A0 P3 前置同一空间裁决。第一次本地构建发现中文审计栏标签因错误字体选择显示替换字形，已在提交前修复并重建。最终两次新进程逐文件字节一致：中文 A3 `b32a01e57c5957ff971065d8a0e4b2e97684aabf7643fe32956e521296c4ffe8`、英文 A3 `2e5cda8b9eaf2041523eeb6a83882740cc2004b639a7f4b2aa256bfb03c5dcfe`、中文 A0 `5dedb32876f357ecf4cebe5e9ffa3e2d31d721817a9da0f0a1857aa1814f0c69`、英文 A0 `c04800cdf762dcfbca209aa2858506c9d68d7f19560386c916bc3caf6df3b42b`。44 页彩色、灰度和细节 QA 通过，替换字形、越界、裁切、空白和加密页均为 0。
+- 本轮没有新增路径、方向、品牌、场景、项目、重点区、治理合同、成熟度、事实、来源或媒体。九份 geometry、`metrics.json`、12/8/3/36、G0、NO-GO、provisional、现实结果 0、完整非 AI 路径、故障只停验证叠层、恢复非授权／批准／G1、专业否决、`not_fully_cleared` 和独立逐文件清权 0 全部冻结；本轮无新媒体。
+
+- Serial gate: predecessor PR #3545 was merged and merge `d35e9e561a48f5ea757414df2d88691b0d0d35c8` entered canonical `main@8afbdbfdaacdbf06373237c1b6393f3614704bbc`; no package PR remained open and the worktree was clean. The latest README, Skill, public brief, taskbook, source registry, formal guide, relevant references, Issues/PRs and validation rules were reread before work.
+- Pre-repair RED: the first bilingual proposal answer explained reading times and evidence indexing rather than a spatial choice; the visual front stage led with proof IDs, expert metadata and reading lanes; and `key-areas` distinguished three sites without joining “occupation rejected / spatial alternative kept” into one ruling. These are editorial cold-read findings, not public feedback, expert opinion, field observation or jury results.
+- The sole spatial ruling is now: proof may not occupy ground required for an ordinary task. Zhongzhiyuan rejects proof crossing and keeps a parallel bypass plus side proof garden; Origin rejects nodes taking the street and keeps one street, two stepped-back courts and four withdrawable nodes; Dazhongsi rejects service taking the centre and keeps four-way commuting plus an off-route hall and staffed desk. Bilingual `key-areas` SVG/PNG are redrawn in place without moving geometry or adding site facts.
+- Bilingual proposals now use the ruling as their first H2; the former 30-second/3-minute/15-minute meta layer leaves the proposal front stage. The six-item visual navigation now reads spatial decision—ordinary life—civic ground—three prototypes—four states—professional handoff, while the old cold-read baseline is collapsed back-stage. No-JavaScript, keyboard, reduced-motion, print and static fallbacks remain; 48 seconds remains presentation pacing only.
+- Four PDFs are rebuilt without page growth: A3 14+14 and A0 8+8. The same ruling moves to A3 P3 and A0 P3. An unsupported-glyph defect in Chinese audit labels was found in the first local build, repaired before commit, and rebuilt. Two final fresh processes are byte-identical with the four SHA-256 values recorded above. All 44 pages pass colour, grayscale and detail QA with zero replacement glyph, out-of-bounds, clipped, blank or encrypted page.
+- No path, direction, brand, scene, project, key area, governance contract, maturity, fact, source or media is added. Nine geometry files, `metrics.json`, 12/8/3/36, G0, NO-GO, provisional status, zero real outcomes, complete non-AI paths, proof-only failure stop, non-authorising/non-approving/non-G1 recovery, professional veto, `not_fully_cleared` and zero independent file-level audits remain frozen. This round adds no media.
+
 ## v53.0 - 2026-08-20
 
 **评审图集完整性与定页出版终审 / Jury Atlas Integrity & Fixed-page Review**
