@@ -483,7 +483,17 @@
             "reopened_or_escalated",
             "archived"
           ],
-          "closure_review_required": true
+          "closure_review_required": true,
+          "impact_ledger_fields": [
+            "baseline",
+            "intended_public_benefit",
+            "beneficiary_groups",
+            "resource_workload_privacy_environmental_costs",
+            "cost_bearing_groups",
+            "responsible_role",
+            "correction_trigger",
+            "exit_condition"
+          ]
         }
       ]
     },
@@ -726,6 +736,35 @@
         "handover_route"
       ],
       "sensing_boundary": "Asset and environmental condition data only; no worker location, time-ranking, or productivity profiling."
+    },
+    "memory_link_distributional_impact_coverage": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(active Memory Links with baseline, intended public benefit, beneficiary groups, resource/workload/privacy/environmental costs, cost-bearing groups, responsible role, correction trigger, and exit condition) / count(active Memory Links)",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-OPERATIONS-001",
+        "A-PRIVACY-001",
+        "A-IMPACT-001"
+      ],
+      "reason": "No pilot baseline, affected-group participation process, audited resource or workload method, privacy impact assessment, environmental assessment, or correction threshold has been confirmed.",
+      "required_fields": [
+        "baseline",
+        "intended_public_benefit",
+        "beneficiary_groups",
+        "resource_workload_privacy_environmental_costs",
+        "cost_bearing_groups",
+        "responsible_role",
+        "correction_trigger",
+        "exit_condition"
+      ],
+      "interpretation_boundary": "Coverage measures whether distributional effects are documented; it does not by itself prove fairness, effectiveness, or public consent."
     }
   }
 }

@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v0.8 - 2026-08-21
+
+- Added a public impact ledger to Memory Links so expected benefits cannot appear without the corresponding baseline, beneficiary groups, resource/workload/privacy/environmental costs, cost-bearing groups, responsible role, correction trigger, and exit condition.
+- Added `memory_link_distributional_impact_coverage` as an explicitly `unknown` metric, extended MEM-12 with matching structured fields, and registered a pending distributional-impact assumption. Coverage measures documentation completeness only; it does not prove fairness, effectiveness, or public consent.
+- This refinement was prompted by progressive reading of the public [`glove11111-design/observable-jingzhang`](https://github.com/open-city-ai/haidian/tree/main/submissions/glove11111-design/observable-jingzhang) proposal (`COMMUNITY-DISPLAY-ONLY`) and independently adapted to Rail Memory. No peer text, named ledger structure, case-study claims, geometry, metrics, figures, media, or code was copied, and the peer proposal is not used as formal evidence.
+- Regenerated bilingual figures, visual indexes, report HTML, A3 booklets, and A0 boards. Geometry coordinates and all area/ratio metrics remain unchanged; impact definitions, affected-group participation, official geometry, and professional acceptance still require human confirmation.
+
 ## v0.7 - 2026-08-20
 
 - Added a Memory Link maintenance covenant covering the accountable owner, day-to-day operator, funding status, inspection interval, minimum service requirement, replacement or retirement trigger, and handover route. Funding status records a confirmed source, gap, or pending condition; it is not a budget or investment promise.
