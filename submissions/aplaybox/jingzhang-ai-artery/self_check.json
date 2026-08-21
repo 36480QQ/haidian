@@ -16,21 +16,29 @@
       "proposal_files": [
         "submissions/aplaybox/jingzhang-ai-artery/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/aplaybox/jingzhang-ai-artery/changelog.md"
+      ],
       "changed_files": [
         "submissions/aplaybox/jingzhang-ai-artery/agent.json",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/architecture.svg",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/flowchart.svg",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/key-areas.png",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/land-use-structure.png",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/metrics-evidence.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/mindmap.svg",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/mobility-bluegreen.png",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/site-overview.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/timeline.svg",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/bilingual_review_checklist.md",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/media/cover.webp",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/logo-horizontal.svg",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/logo-mono.svg",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/logo.svg",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/public_space_components.md",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/visual_identity.md",
         "submissions/aplaybox/jingzhang-ai-artery/assumptions.json",
+        "submissions/aplaybox/jingzhang-ai-artery/changelog.md",
         "submissions/aplaybox/jingzhang-ai-artery/compliance_matrix.json",
         "submissions/aplaybox/jingzhang-ai-artery/design_depth_matrix.json",
         "submissions/aplaybox/jingzhang-ai-artery/drawings/a0-boards.en.pdf",
@@ -63,7 +71,7 @@
       "ai_package_stages": {
         "submissions/aplaybox/jingzhang-ai-artery": "formal"
       },
-      "total_bytes": 3594354,
+      "total_bytes": 3767456,
       "maintainer_bypass": false
     },
     "stderr": ""

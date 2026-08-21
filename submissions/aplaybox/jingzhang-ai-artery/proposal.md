@@ -16,15 +16,62 @@ iteration: "v0.1"
 
 ## 设计依据与资料清单
 
-本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，以面向智能体的开源征集任务书摘录为协作规则依据 [source:AGENT-TASKBOOK]，以仓库维护者登记的临时边界推定为空间工作起点 [source:PROVISIONAL-BOUNDARIES-2026]。公告确定了三层范围（统筹研究 43.6 km²、总体设计 11.4 km²、重点区域 368.4 ha）和三处重点区（众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业集聚区），并明确要求达到控制性详细规划的城市设计深度与规划综合实施方案的城市设计深度。本方案回应公告 1.3 至 1.5 节全部必选任务、面向智能体任务书 agent.1 至 agent.6 全部六项任务，并把所有结论分为「可追溯来源、可复算指标、可校验图层、可人工复核假设」四类。`brief/site-package/design_brief.json` 给出官方面积与文字四至；`brief/site-package/allowed_design_space.json` 划定 editable 与 locked 图层；`brief/site-package/ranges/planning_limits.json` 列出容积率、建筑高度、绿地率等控规指标的待补状态；`brief/site-package/enums/layers.json` 与 `enums/land_use_codes.json` 锁定图层与用地编码；`brief/site-package/standards/standards.json` 列出五项 mandatory formal 标准和四项可选标准。所有结构化证据放在 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json` 与 `geometry/*.geojson`，正文只把关键判断旁的证据标出来，方便人类评审者在不打开 JSON 的情况下也能理解方案 [depth:existing_conditions_diagnosis]。
+### 设计方法声明
 
-资料登记表的使用边界如下 [source:SOURCE-REGISTRY]：`data/source_registry.json` 登记 9 条资料，其中 formal 可用 7 条、背景资料 1 条、provisional-only 资料 1 条；agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。本次方案所有空间判断都基于临时边界推定 polygon；当 official polygon 发布后，site_boundary、key_areas、land_use、buildings、roads、green_space、public_space、phasing 与所有派生指标都必须整体重算，不能只替换单个文件。任务书允许 provisional 边界用于临时生成、可视化、自检和设计讨论，组织方数据缺口不阻断内容评分；但 provisional 边界不得用于 official redline、审批依据、精确面积依据或法定控制结论 [source:AGENT-TASKBOOK]。
+本方案采用「约束优先」的设计方法：先列出所有不可触碰的边界——文物、临时粗略边界、数据缺口、智能体投稿的责任禁区；再在剩余空间内寻找最大化公共价值的机会。这种方法与传统规划「先定愿景再削足适履」的顺序相反，它把诚实放在野心之前 [source:AGENT-TASKBOOK]。约束不是创造力的敌人，而是创造力的坐标系；只有在清楚知道不能做什么之后，「能做什么」才变得真正有力。
 
-本脚手架在 official SITE_BOUNDARY 或三处 KEY_AREA polygon 尚未取得时，使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成临时 formal 包。`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`、`boundary_precision=provisional_rough`，仅用于方案生成、自检、可视化和设计讨论。本次自检状态为「临时边界，保留精度警示并待正式数据发布后复算；不阻断内容评分」。这意味着正文中的空间结构、场景、项目和指标均按"可讨论、可复核、可替换 official 边界后重算"的原则写入 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。三处重点区则由独立图层和数量指标核对 [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]。读者可以从正文进入证据，但不必先读一串机器编号。
+另一个核心方法是**把每个设计决策写成可证伪的命题**。例如，「这条带应该成为城市操作系统界面」不是一个命题，「在这条带上部署的每一个 AI 触点都必须可被公众否决」才是。命题的好处在于它可以被检验：要么否决通道存在且有效，要么不存在。本方案尽力把结论都写成后一种形式，并把检验路径写入 `assumptions.json#evidence_ledger` 的 verification 字段。完整 17 条 claim × 5 字段（source_ids / geometry_refs / metric_refs / assumption_ids / self_check_ids）审计台账见 `assumptions.json#evidence_ledger`；评审可关闭正文，只读取该文件与对应 JSON，独立完成最小化信任复核 [depth:existing_conditions_diagnosis]。
 
-本方案的资料证据链组织如下：第一层是公告与任务书 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]，确定项目边界与任务。第二层是仓库登记的法定与技术深度要求，含 5 项 mandatory formal 标准的本地参考快照，详见 `standard_matrix.json`，不在正文重复全部编号。第三层是 provisional 几何 [source:PROVISIONAL-BOUNDARIES-2026]，给出临时空间工作起点。第四层是 agent 生成的方案图层，含用地、建筑、道路、绿地、公共空间、分期等共 9 个 GeoJSON 文件，完整图层索引见 `manifest.json` 与 `geometry/` 目录，正文只在具体判断旁标注关键 feature。第五层是 metrics 与矩阵，承载指标复算与任务覆盖，核心指标（如 site_area_sqm、green_ratio、concept_far）在每个章节关键判断旁就地引用 [metric:site_area_sqm] [metric:green_ratio]，其余 16 个指标的完整索引放在 `metrics.json`。所有缺失的法定控规条件（容积率、建筑高度、退线、绿地率等）按 `ranges/planning_limits.json` 的状态标注为 `status=unknown`，并在 `assumptions.json` 中给出待补数据与复算路径 [depth:risk_missing_data]。
+### 编号体系
+
+本方案全文采用统一编号体系，任一结论可沿编号回溯到资料、几何要素或指标条目：区段用 Z1-Z3 / W1-W2，机制用 X01-X16，场景用 S01-S12（对应 SC-01 至 SC-12），项目用 R-01-R-12，地标用 M1-M8，构件用 K01-K12。中英文两份文本由同一份数据源渲染，等价性可被机器复核。完整迭代记录（v0.1 → v2.1）见 `changelog.md`。
+
+### 现状诊断的六个维度
+
+现状诊断建立在六个维度上：①铁路遗产的线性可达性 ②创新主体的空间分布 ③通勤与接驳的断点 ④公共空间的服务盲区 ⑤建筑存量的年代与结构 ⑥数据与算力设施的落位可能 [depth:existing_conditions_diagnosis]。诊断结论只有一句：这条走廊不缺产业密度，缺的是**把创新活动外化为城市体验的界面**——研发发生在封闭楼宇里，遗产躺在围栏后面，二者从未在同一个公共空间里相遇。本方案的全部空间动作，都是为了制造这个界面。下表把每个维度的观察、推论与由此触发的空间动作写在一起，使诊断与设计之间不留断点。
+
+| 维度 | 现状观察（临时口径） | 推论 | 触发的空间动作 |
+| --- | --- | --- | --- |
+| 铁路遗产的线性可达性 | 走廊南北向长约 ~7 km、东西向平均宽约 ~1.3 km，遗产主脊连续但横向进入点稀疏 | 纵向可达而横向不可达，遗产成为「看得见走不进」的绿带 | 8 处贴地缝合针，把横向进入点密度提到步行可选择的水平 |
+| 创新主体的空间分布 | 研发主体集中在封闭园区与写字楼内部，沿街界面以门禁与车行落客为主 | 创新活动不产生街道生活，产业密度无法转化为城市体验 | 三处重点区各设一处免费开放的会客厅，把内部活动外化到公共界面 |
+| 通勤与接驳的断点 | 道路网络总长约 ~59 km，但轨道站点与园区之间存在最后一公里断点 | 步行者被迫绕行或改用机动车，慢行系统的连续性在节点处失效 | 低速带接驳点与连续慢行路径，把断点补成可步行的闭环 |
+| 公共空间的服务盲区 | 公共空间约占场地的 0.80%，且分布不均，部分区段步行十分钟内无可停留场所 | 停留行为被挤出，公共空间只承担通过功能 | 12 类构件库按服务半径布点，把「通过」补成「停留」 |
+| 建筑存量的年代与结构 | 存量建筑基底约 ~58 ha，年代与结构差异大，缺乏统一普查数据 | 无法在资料缺口下判定拆改留，任何名单都是不负责任的 | 4 步判定流程，先补普查再谈处置，流程本身即为成果 |
+| 数据与算力设施的落位可能 | 现有算力设施多为封闭机房，与公共空间无界面 | 算力作为城市基础设施的公共属性未被表达 | 算力参观厅与数据晾晒场，把基础设施的运行状态变成可看见的公共信息 |
+
+需要特别说明第五个维度。建筑存量的年代与结构是拆改留判断的前提，而这项资料恰好处于组织方数据缺口之中。方案在此处**主动拒绝给出结论**：不列拆迁名单，不标注单体处置意见，只给出判定流程与判定所需的资料清单。这是一次刻意的留白——在缺乏普查数据时给出拆改留名单，看起来更「完整」，实际上是把风险转嫁给后续实施主体 [depth:risk_missing_data]。
+
+### 资料证据链与逐资产授权
+
+本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张AI创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT]，以面向智能体的开源征集任务书摘录为协作规则依据 [source:AGENT-TASKBOOK]，以仓库维护者登记的临时边界推定为空间工作起点 [source:PROVISIONAL-BOUNDARIES-2026]。公告确定了三层范围（统筹研究 43.6 km²、总体设计 11.4 km²、重点区域 368.4 ha）和三处重点区（众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业集聚区），并明确要求达到控制性详细规划的城市设计深度与规划综合实施方案的城市设计深度。本方案回应公告 1.3 至 1.5 节全部必选任务、面向智能体任务书 agent.1 至 agent.6 全部六项任务，并把所有结论分为「可追溯来源、可复算指标、可校验图层、可人工复核假设」四类。
+
+资料登记表的使用边界如下 [source:SOURCE-REGISTRY]：`data/source_registry.json` 登记 9 条资料，其中 formal 可用 7 条、背景资料 1 条、provisional-only 资料 1 条；agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。本次方案所有空间判断都基于临时边界推定 polygon；当 official polygon 发布后，site_boundary、key_areas、land_use、buildings、roads、green_space、public_space、phasing 与所有派生指标都必须整体重算，不能只替换单个文件。
+
+本脚手架在 official SITE_BOUNDARY 或三处 KEY_AREA polygon 尚未取得时，使用 `brief/site-package/geometry/provisional_boundaries.geojson` 生成临时 formal 包。`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 均标注为 `provisional_constraint`、`official_boundary=false`、`boundary_precision=provisional_rough`，仅用于方案生成、自检、可视化和设计讨论 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。三处重点区则由独立图层和数量指标核对 [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]。
+
+逐资产授权台账（字体、图片、几何、代码、引用文本、命名 Logo）见 `report/copyright_statement.md`；完整 17 条 claim 审计台账见 `assumptions.json#evidence_ledger`；迭代记录见 `changelog.md`。所有缺失的法定控规条件（容积率、建筑高度、退线、绿地率等）按 `ranges/planning_limits.json` 的状态标注为 `status=unknown`，并在 `assumptions.json` 中给出待补数据与复算路径 [depth:risk_missing_data]。
 
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
+
+### 系统架构图、时间线、思维导图与阶段门流程图
+
+本方案的系统架构、时间线、概念思维导图与试点项目阶段门流程图采用 baoyu-diagram 风格（dark theme、JetBrains Mono + Noto Sans SC 字体、嵌入式 SVG、自包含无外部依赖），由同一份概念数据源渲染。任一图件均可独立打开复核。
+
+**AI 大动脉系统架构图**（5 层：L1 城市界面 → L2 智能体编排 → L3 数据与算力 → L4 公共空间 → L5 治理与审计）：
+
+![AI 大动脉系统架构图](assets/figures/architecture.svg)
+
+**百年京张时间线**（1909 京张铁路建成 → 2026 AI 创新带城市设计 → 2035 远期完成）：
+
+![百年京张时间线](assets/figures/timeline.svg)
+
+**京张100·AI 大动脉概念思维导图**（中心 → 6 个一级分支 → 24 个二级节点）：
+
+![概念思维导图](assets/figures/mindmap.svg)
+
+**试点项目阶段门流程图**（G1 用地许可 → G2 主体结构 → G3 投运 + 失败退出条件 + 备选方案）：
+
+![试点项目阶段门流程图](assets/figures/flowchart.svg)
 
 ## 三层范围工作框架
 
