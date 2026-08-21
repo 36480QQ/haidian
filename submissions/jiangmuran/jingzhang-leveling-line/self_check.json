@@ -180,7 +180,7 @@
       "target": "proposal.md, report/, assumptions.json",
       "source": "package-provided",
       "what_it_holds_en": "Every census-derived number in the prose must equal the shipped census.",
-      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 938)"
+      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 939)"
     },
     {
       "check_id": "PKG_CENSUS_CURRENCY_QA",
@@ -1071,7 +1071,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "No past corpus size may sit in hand-written prose as if it were current.",
-      "message": "stale_corpus_qa.py — stale corpus sizes: none — 25 superseded readings (184–935) appear only inside generated blocks or sentences that declare them historical; the prose is at 938"
+      "message": "stale_corpus_qa.py — stale corpus sizes: none — 26 superseded readings (184–938) appear only inside generated blocks or sentences that declare them historical; the prose is at 939"
     },
     {
       "check_id": "PKG_STANDARD_CLAUSE_QA",
@@ -1439,7 +1439,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31577604,
+      "total_bytes": 31575715,
       "maintainer_bypass": false
     },
     "stderr": ""

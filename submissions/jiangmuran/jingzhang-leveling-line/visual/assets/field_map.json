@@ -1,13 +1,13 @@
 {
  "retrieved": "2026-08-21",
- "corpus_size": 938,
+ "corpus_size": 939,
  "authoritative_source": "git tree",
  "gallery_index_count": 872,
- "missing_from_gallery_index": 66,
+ "missing_from_gallery_index": 67,
  "track_declarations": {
-  "civic-agent-governance": 640,
-  "ai-traffic-walkability": 635,
-  "enterprise-services-ecosystem": 595,
+  "civic-agent-governance": 641,
+  "ai-traffic-walkability": 636,
+  "enterprise-services-ecosystem": 596,
   "jingzhang-heritage-narrative": 300,
   "ai-origin-community": 245,
   "ai-public-services": 105,
@@ -19,65 +19,65 @@
  "structural_convergence": {
   "three_cores": {
    "count": 441,
-   "share": 0.4701
+   "share": 0.4696
   },
   "two_wings": {
    "count": 341,
-   "share": 0.3635
+   "share": 0.3632
   },
   "one_spine": {
    "count": 256,
-   "share": 0.2729
+   "share": 0.2726
   },
   "evidence_chain": {
    "count": 201,
-   "share": 0.2143
+   "share": 0.2141
   },
   "reversible": {
-   "count": 145,
-   "share": 0.1546
+   "count": 144,
+   "share": 0.1534
   },
   "landmark": {
    "count": 132,
-   "share": 0.1407
+   "share": 0.1406
   },
   "scenario_cards": {
    "count": 126,
-   "share": 0.1343
+   "share": 0.1342
   },
   "personas": {
    "count": 66,
-   "share": 0.0704
+   "share": 0.0703
   }
  },
  "meta_symbol_saturation": {
   "证明/验证": {
    "count": 210,
-   "share": 0.2239
+   "share": 0.2236
   },
   "脉/血脉": {
    "count": 195,
-   "share": 0.2079
+   "share": 0.2077
   },
   "铁轨/线路/轨道": {
    "count": 115,
-   "share": 0.1226
+   "share": 0.1225
   },
   "人字形/折返": {
    "count": 99,
-   "share": 0.1055
+   "share": 0.1054
   },
   "契约/协议": {
-   "count": 83,
-   "share": 0.0885
+   "count": 84,
+   "share": 0.0895
   },
   "缝合/织补": {
    "count": 53,
-   "share": 0.0565
+   "share": 0.0564
   },
   "公地/commons": {
    "count": 50,
-   "share": 0.0533
+   "share": 0.0532
   },
   "交接/接力": {
    "count": 31,
@@ -89,7 +89,7 @@
   },
   "测量/水准": {
    "count": 13,
-   "share": 0.0139
+   "share": 0.0138
   },
   "闭塞/令牌": {
    "count": 12,
@@ -100,7 +100,7 @@
   "未披露（占位符或空）": 164,
   "OpenAI Codex": 76,
   "deepseek-v4-flash": 75,
-  "GPT-5": 63,
+  "GPT-5": 64,
   "OpenAI Codex (GPT-5)": 33,
   "GPT-5 Codex": 32,
   "claude-opus-5": 29,
@@ -361,7 +361,7 @@
  "model_declaration_writings": 259,
  "model_family_count": 9,
  "model_families": {
-  "GPT / Codex": 412,
+  "GPT / Codex": 413,
   "DeepSeek": 127,
   "Claude": 105,
   "其他 / 无法归类": 66,
@@ -372,8 +372,8 @@
   "Qwen": 2
  },
  "undisclosed_model_count": 164,
- "model_family_declared_count": 536,
- "undisclosed_model_share": 0.1748,
+ "model_family_declared_count": 537,
+ "undisclosed_model_share": 0.1747,
  "proposal_bytes": {
   "min": 12102,
   "median": 35016,
