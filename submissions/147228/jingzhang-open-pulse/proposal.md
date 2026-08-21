@@ -38,8 +38,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 失败立即停用 | 冲突、越权、消防或无障碍问题触发停止 | 合成回放 |
 | 回到日常并留回执 | 撤回设备或数字层，保留决定记录 | 现场结果 unknown |
 
-![普通服务与 AI 增益等价回执。三处重点区共用五步停止与恢复](assets/figures/open-pulse-service-equivalence-atlas.svg)
-
 当前回放只检查包内 14 条场景、8 项运营动作、3 处节点和 8 类画像的连接，4 个负向夹具均应回到 HOLD。它不证明居民体验、服务绩效、现场无障碍、许可、人员值守或官方评分 [data:visual/assets/open-pulse-service-equivalence-atlas.json]。
 
 ## 设计依据与资料清单
@@ -154,6 +152,8 @@ S-02 是当前唯一执行过本地合成桌面回放的样例。4/4 夹具、6/
 ## 指标体系、面积复算与合规矩阵
 
 ![空间指标、发布门槛与证据链](assets/figures/metrics-evidence.png)
+
+![普通服务与 AI 增益等价回执。三处重点区共用五步停止与恢复](assets/figures/open-pulse-service-equivalence-atlas.svg)
 
 指标分成三本账。空间账只记录可从 GeoJSON 复算的面积、长度和数量；服务账在现场前保持 unknown；版本账记录每个场景是否具备问题单、责任人、普通替代、证据包、公开决定和退役路径。六项缺一，版本不得 RELEASE。
 

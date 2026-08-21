@@ -493,6 +493,15 @@ function updateCopyrightLedger() {
     source_inputs: ['metrics.json', 'proposal.md', 'proposal.en.md', 'report/proposal.html', 'report/proposal.en.html', 'visual/assets/claim-provenance.json'],
     attribution: 'Self-generated offline audit; no network request and no field-performance inference.',
   });
+  for (const [assetPath, assetClass, method, inputs, attribution] of [
+    ['assets/figures/open-pulse-service-equivalence-atlas.svg', 'authored_vector_figure', 'authored in the submission worktree from the registered ordinary-service equivalence contract', ['visual/assets/open-pulse-service-equivalence-atlas.json'], 'Self-generated Chinese evidence atlas; no remote asset fetch.'],
+    ['assets/figures/open-pulse-service-equivalence-atlas.en.svg', 'authored_vector_figure', 'authored in the submission worktree as the equivalent English evidence atlas', ['visual/assets/open-pulse-service-equivalence-atlas.json'], 'Self-generated English evidence atlas; no remote asset fetch.'],
+    ['visual/assets/open-pulse-service-equivalence-atlas.json', 'metadata_or_matrix', 'authored in the submission worktree to connect ordinary routes, bounded AI gains, stop rules and restoration receipts', ['visual/assets/scenario-operation-matrix.json', 'visual/assets/operations-matrix.json', 'visual/assets/key-area-node-plans.json', 'visual/assets/persona-and-inclusion-matrix.json'], 'Self-generated structural contract with explicit HOLD and no-field-result boundary.'],
+    ['visual/assets/run-open-pulse-service-equivalence.js', 'self_generated_audit_script', 'authored in the submission worktree to replay the ordinary-service equivalence contract offline', ['visual/assets/open-pulse-service-equivalence-atlas.json'], 'Self-generated offline runner; no network request or field authorization.'],
+    ['visual/assets/test-open-pulse-service-equivalence.js', 'self_generated_regression_test', 'authored in the submission worktree to prove duplicate, unknown-route and unregistered-decision fixtures fail closed', ['visual/assets/run-open-pulse-service-equivalence.js', 'visual/assets/open-pulse-service-equivalence-atlas.json'], 'Self-generated offline regression test; temporary fixtures are isolated outside the package.'],
+  ]) {
+    specs.push({ path: assetPath, asset_class: assetClass, generation_method: method, source_inputs: inputs, attribution });
+  }
   for (const pdfPath of ['drawings/a3-booklet.pdf', 'drawings/a3-booklet.en.pdf', 'drawings/a0-boards.pdf', 'drawings/a0-boards.en.pdf']) {
     specs.push({
       path: pdfPath,
@@ -536,6 +545,11 @@ function updateManifest() {
   }
   paths.push(['visual/assets/build-open-pulse-review-boards.js', 'visualization', null, null]);
   paths.push(['visual/assets/build-open-pulse-booklets.js', 'visualization', null, null]);
+  paths.push(['assets/figures/open-pulse-service-equivalence-atlas.svg', 'figure_source', 'zh', null]);
+  paths.push(['assets/figures/open-pulse-service-equivalence-atlas.en.svg', 'figure_source', 'en', 'assets/figures/open-pulse-service-equivalence-atlas.svg']);
+  paths.push(['visual/assets/open-pulse-service-equivalence-atlas.json', 'evidence_register', 'neutral', null]);
+  paths.push(['visual/assets/run-open-pulse-service-equivalence.js', 'validation_runner', 'neutral', null]);
+  paths.push(['visual/assets/test-open-pulse-service-equivalence.js', 'regression_test', 'neutral', null]);
   for (const [filePath, role, language, translationOf] of paths) {
     const item = byPath.get(filePath) || { path: filePath, role, required: false };
     item.role = role;

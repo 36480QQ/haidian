@@ -39,8 +39,6 @@ Each key area keeps an ordinary service route that does not depend on an account
 | Stop on failure | Conflict, overreach, fire or accessibility breach stops the route | Synthetic replay |
 | Restore and receipt | Remove the device or digital layer and retain the decision record | Field result unknown |
 
-![Ordinary service and AI gain equivalence receipt. Five stop and restore steps across three key areas](assets/figures/open-pulse-service-equivalence-atlas.en.svg)
-
 The replay checks only the links among 14 package scenarios, 8 operating actions, 3 nodes and 8 personas, with four negative fixtures returning to HOLD. It provides no resident experience, service performance, field accessibility, permit, staffing or official-score evidence [data:visual/assets/open-pulse-service-equivalence-atlas.json].
 
 ## Design Basis and Source List
@@ -155,6 +153,8 @@ Eight operating packages cover official geometry, human-experience baseline, win
 ## Metrics, Area Recalculation, and Compliance Matrix
 
 ![Spatial metrics, release gates and evidence chain](assets/figures/metrics-evidence.en.png)
+
+![Ordinary service and AI gain equivalence receipt. Five stop and restore steps across three key areas](assets/figures/open-pulse-service-equivalence-atlas.en.svg)
 
 The proposal keeps three accounts. The spatial account contains only values recomputable from GeoJSON. The service account remains unknown before field evidence. The version account records whether each scenario has an issue, accountable owner, ordinary alternative, evidence pack, public decision and retirement path. Missing one of six blocks RELEASE.
 
