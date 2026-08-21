@@ -3,30 +3,30 @@
   "rights": "COMMUNITY-DISPLAY-ONLY",
   "source": {
     "path": "tools/build_shared_floor.py",
-    "sha256": "818ff790e7b74b6433c97d7329451cde7e462fd890ef252cbc6d2b8026751651",
-    "size_bytes": 604372
+    "sha256": "06a11540f0fd33eeee91034484fc34a6a3a614a67811575fb768f9ead3d5b032",
+    "size_bytes": 616327
   },
   "assembly": "Concatenate content_utf8_chunk in ascending part_index; verify UTF-8 byte size and SHA-256 against source.",
   "parts": [
     {
       "path": "visual/assets/compiler-source-part-01.json",
-      "sha256": "07c2cce2fb46e4e4e027447b151e5fc07247ed47a1871322d93dc12eac62ee25",
-      "size_bytes": 191903
+      "sha256": "999e31cdd3e54090eb031842f1549af3751684e3234b0fbd5a1a903dbcfaa4cb",
+      "size_bytes": 192019
     },
     {
       "path": "visual/assets/compiler-source-part-02.json",
-      "sha256": "9f620ce83c8e5ba4919e42bae86d01a32ae1ceb7fee16adf82323edb54e639b2",
-      "size_bytes": 189231
+      "sha256": "51844b36d8139d0181274799f8f7eb8ccf6558607a424d874cc10777a99d90ce",
+      "size_bytes": 189168
     },
     {
       "path": "visual/assets/compiler-source-part-03.json",
-      "sha256": "a8e706a4b45ae4f20e8c82ac3edd76dfb89c3c1ff60cd4ff8744ef6c2958127f",
-      "size_bytes": 187910
+      "sha256": "e5322ef860be1a069c3e675b736d7ad74b8cc4818b86470c076fffa2fa2a2acb",
+      "size_bytes": 187883
     },
     {
       "path": "visual/assets/compiler-source-part-04.json",
-      "sha256": "9291339cd12f03d68e2787c054a5d5a3bbed0ef2c9805d292750d5c0bf7ccdbd",
-      "size_bytes": 67106
+      "sha256": "12a31e12ec7308a00c8c4b94651cb36a51af29bb1c72c50704d6171e284eaa38",
+      "size_bytes": 79525
     }
   ]
 }

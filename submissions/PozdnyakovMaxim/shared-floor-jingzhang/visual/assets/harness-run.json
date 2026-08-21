@@ -1,9 +1,9 @@
 {
   "schema_version": "shared-floor-immutable-run-v1",
   "rights": "COMMUNITY-DISPLAY-ONLY",
-  "run_id": "jingzhang-ffbd9b52097d",
-  "receipt_sha256": "790cf096096b24a97a896e80fc6c9ac54e9fb915fe7185af030ab4eb1c7cebfa",
-  "canonical_submitted_harness_payload_sha256": "e4572a18c28fd0116c2f72467f17e5f9e5971342d706798e9e423454c9a84683",
+  "run_id": "jingzhang-722d533a7a6a",
+  "receipt_sha256": "dffed78424c8c54b163b1a56da4ef215535eb3c8b00b53fbcb3a01a646c65006",
+  "canonical_submitted_harness_payload_sha256": "7a551723fc42874ce45a6ab495a1ee231c397029ccd39a003cb301cc6ab8c79a",
   "immutable_run_artifacts": [
     {
       "path": "candidate-comparison.png",
@@ -108,28 +108,28 @@
     },
     {
       "path": "run_contract.json",
-      "sha256": "d0fa03978767c48f47e036a51110c1302ed1aaba7c93e056c18c79d67d47599a",
+      "sha256": "2de4e2cb5e3b95c75976d58a7991982c9f2f152a7712a58bea484886f17f8336",
       "size_bytes": 1196,
       "bundle_path": "visual/assets/harness-artifact-run-contract-json.json",
-      "bundle_sha256": "f67e21feb1f7985ca836e747a99e18d8652173bcf77187c56270485c0d24d098"
+      "bundle_sha256": "7ee5b859deb657b3ed8f9423ace647e103befb223b36aee672de1ad5b1eca986"
     },
     {
       "path": "selection.json",
-      "sha256": "43c07c7e9569125170ba8f4cd137fdeb0964cdf0144061766f4d7695badade6d",
+      "sha256": "264633530ce1686e59337652279cd307ef5cc79563c60758d4208938d64425bc",
       "size_bytes": 1468,
       "bundle_path": "visual/assets/harness-artifact-selection-json.json",
-      "bundle_sha256": "1f61194bd50fdb377dba92b2e35db3116576b1a6ce29455f968875cae5ac8b28"
+      "bundle_sha256": "3964604c08093fdf85467a2a79842eb69de05b4b43168369f1e81d064bfbef76"
     },
     {
       "path": "simulation.json",
-      "sha256": "f3c28341ea52671581bdc60cbb3f5f9bbb8be68e6b5673df011f96df2b619c82",
+      "sha256": "c60bc6533b9d84fc77cec720ca685147d56f44011097cf879024ed57dfb65306",
       "size_bytes": 347940,
       "bundle_path": "visual/assets/harness-artifact-simulation-json.json",
-      "bundle_sha256": "1d91c806b2b02bec80e92dc65a37ac95c964181ee07e5a5063d248763ad00a81"
+      "bundle_sha256": "5753fbe1e426cb09f175e3c5aa00c1d7abfbf7b3dae3ae7df8bab7178c10dac5"
     }
   ],
   "build_receipt": {
-    "run_id": "jingzhang-ffbd9b52097d",
+    "run_id": "jingzhang-722d533a7a6a",
     "status": "pass",
     "artifact_hashes": {
       "candidate-comparison.png": "32f63cefafcb65dec8094fa8537ec5bf3c5aab31f700329caf41f49cc6230f2c",
@@ -147,9 +147,9 @@
       "candidates/C03-SHARED-FLOOR/plan.png": "b6d1f628a9479bdf17acbeef7a17c0ef883493936b87b3da77b6feecda6f889c",
       "counterfactual-rebind-gate-challenge.json": "bd79743b67c38b01b30695550b3a5c493be179211f47fcb886866f30e6a29800",
       "human-handoff-recovery.json": "d87becd3daf49585b80e7618811955a981e158aa9707f65db06f5259189a4be4",
-      "run_contract.json": "d0fa03978767c48f47e036a51110c1302ed1aaba7c93e056c18c79d67d47599a",
-      "selection.json": "43c07c7e9569125170ba8f4cd137fdeb0964cdf0144061766f4d7695badade6d",
-      "simulation.json": "f3c28341ea52671581bdc60cbb3f5f9bbb8be68e6b5673df011f96df2b619c82"
+      "run_contract.json": "2de4e2cb5e3b95c75976d58a7991982c9f2f152a7712a58bea484886f17f8336",
+      "selection.json": "264633530ce1686e59337652279cd307ef5cc79563c60758d4208938d64425bc",
+      "simulation.json": "c60bc6533b9d84fc77cec720ca685147d56f44011097cf879024ed57dfb65306"
     },
     "candidate_hashes": {
       "C01-ROUTE-SEQUENCE-CONTROL": "c905d6166d73e33fcba0d31423e0e5cb133509c749657638398cb5e07df37181",

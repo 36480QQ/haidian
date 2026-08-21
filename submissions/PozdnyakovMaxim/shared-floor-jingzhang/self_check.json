@@ -95,6 +95,7 @@
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-latest.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-module-register.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-operator-commissioning-plan.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-p0-implementation-contract.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-p0-station-porch.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-package-input-snapshot.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-permit-consent-register.json",
@@ -198,6 +199,19 @@
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-4d6984f130e425f9/procurement_cost_plan.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-4d6984f130e425f9/run_contract.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-4d6984f130e425f9/verification.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/build_receipt.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/changeover_binding.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/delivery_register.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/field_baseline_protocol.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/module_register.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/operator_commissioning_plan.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/p0_implementation_contract.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/p0_station_porch.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/package_input_snapshot.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/permit_consent_register.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/procurement_cost_plan.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/run_contract.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-delivery-72f53d1289056a65/verification.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-semantic-6a5d2a20e10577c1/build_receipt.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-semantic-6a5d2a20e10577c1/fixtures.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-semantic-6a5d2a20e10577c1/inference_receipt.json",
@@ -255,7 +269,7 @@
       "ai_package_stages": {
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang": "formal"
       },
-      "total_bytes": 36356735,
+      "total_bytes": 39464716,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -329,15 +343,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 104,
+        "known_metric_refs_required": 125,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 47,
           "standard": 6,
           "depth": 14,
-          "data": 24,
-          "metric": 72
+          "data": 25,
+          "metric": 85
         }
       }
     },
