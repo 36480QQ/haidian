@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v2.2 - 2026-08-21
+
+- Rebuilt the bilingual `key-areas` figure as three distinct spatial prototypes: the Zhongzhiyuan River Forecourt, AI Origin Care Loop and Dazhongsi Four-Quadrant Hall. Each now carries a concept plan, indicative section, enterprise request, resident return, stop condition and evidence request.
+- Kept the Dazhongsi announcement task anchor separate from the unresolved `PROV-KEY-003` coordinates documented in Issue #1029; no participant-side geometry shift or station-condition claim was introduced.
+- Reduced the bilingual proposal from 491/432 to 311/254 lines by consolidating four delivery screens into hard gates, keeping only population-scale results that change spatial decisions, and removing the duplicate evidence-readback tail. Detailed runners remain available in `visual/assets`.
+- Restored exact bilingual parity for all ten scenario cards and linked the three-key-area depth record directly to the new prototype chapter, Issue #1029 and the `A-KEY003-POSITION-001` recalculation assumption.
+
 ## v2.1 - 2026-08-12
 
 - Replaced the migrated Mobility Commons first-screen pair with an independent bilingual reciprocity gate for `enterprise-resident-flow-commons`; aligned the proposal title, agent provenance, operation-contract scope and visual identity.
