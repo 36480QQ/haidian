@@ -7,7 +7,7 @@ bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "The historic achievement of the Jing-Zhang Railway was an act of self-determined calibration — Zhan Tianyou's team independently completed the Guan'gou survey and established the 1435mm standard gauge. The AI era faces a parallel calibration problem: without public benchmarks there is no self-reliant innovation, without alignment there is no accountability, without evaluation arenas there are no pilgrimage landmarks. This proposal makes calibration a visible spatial institution: one spine (a 9.4km benchmark corridor), three yards (Zhongzhiyuan Calibration Yard / AI Origin Alignment Square / Dazhongsi Gauge Gate), five gates (interoperability access gates), and two wings (Zhongguancun service wing + Xiaoyuehe scenario wing), with eight global AI benchmarking cases, ten scenario cards, three pilgrimage landmarks, and a long-term operation mechanism."
-tracks: ["civic-agent-governance", "enterprise-services-ecosystem", "jingzhang-heritage-narrative", "ai-traffic-walkability", "robotics-autonomous-mobility"]
+tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
 iteration: "v0.1"
 ---
@@ -280,6 +280,8 @@ All content in this proposal is original or based on public materials; external 
 This proposal does not give: regulatory plan adjustments, FAR, building height, building intensity or other statutory planning judgments; parcel-level retain/renovate/demolish plans; road alignment, rail alignment, bridge/tunnel engineering, utility pipelines or other engineering schemes; underground space feasibility, energy load, utility capacity or other professional calculations; land ownership, investment estimation, development sequencing, or approval judgments. All spatial recommendations are worded as "conceptual suggestions," "reference schemes," or "material for professional teams to deepen" [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
 ## References
+
+All sources are fully recorded in `sources.json` [source:SOURCE-REGISTRY]; the main sources are:
 
 - Official announcement: Beijing Municipal Planning and Natural Resources Commission Haidian Branch, Prequalification Announcement
 - Agent open-call taskbook: six required tasks, ten co-creation principles, three areas + two wings

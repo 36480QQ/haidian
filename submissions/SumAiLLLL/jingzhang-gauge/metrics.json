@@ -166,7 +166,7 @@
     },
     "road_area_sqm": {
       "status": "known",
-      "value": 25753970128695.24,
+      "value": 317882.3,
       "unit": "sqm",
       "source_files": [
         "geometry/roads.geojson"
@@ -174,14 +174,12 @@
       "formula": "sum(length * 24m road width)",
       "confidence": "low",
       "assumptions": [
-        "道路面积按12m双侧buffer估算，非官方道路红线。",
-        "面积基于公告文字四至推定的临时粗略边界复算，官方 polygon 发布后必须整链重算。",
-        "置信度与 provisional geometry (official_boundary=false, boundary_precision=provisional_rough) 一致。"
+        "道路面积按12m双侧buffer在EPSG:4548下估算，非官方道路红线。"
       ]
     },
     "road_ratio": {
       "status": "known",
-      "value": 2256581.4554,
+      "value": 0.0279,
       "unit": "ratio",
       "source_files": [
         "geometry/roads.geojson",
@@ -190,9 +188,7 @@
       "formula": "road_area_sqm / site_area_sqm",
       "confidence": "low",
       "assumptions": [
-        "道路面积按buffer估算，非官方道路红线。",
-        "面积基于公告文字四至推定的临时粗略边界复算，官方 polygon 发布后必须整链重算。",
-        "置信度与 provisional geometry (official_boundary=false, boundary_precision=provisional_rough) 一致。"
+        "道路面积按buffer估算，非官方道路红线。"
       ]
     },
     "phasing_area_sqm": {

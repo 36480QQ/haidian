@@ -14,7 +14,7 @@
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
         "name_zh": "基准走廊主脊 Benchmark Spine",
-        "road_class": "slow_mobility_spine"
+        "road_class": "greenway"
       },
       "geometry": {
         "type": "LineString",
@@ -42,7 +42,7 @@
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
         "name_zh": "缝合口1 Stitching Link 1",
-        "road_class": "pedestrian_priority"
+        "road_class": "pedestrian"
       },
       "geometry": {
         "type": "LineString",
@@ -70,7 +70,7 @@
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
         "name_zh": "缝合口2 Stitching Link 2",
-        "road_class": "pedestrian_priority"
+        "road_class": "pedestrian"
       },
       "geometry": {
         "type": "LineString",
@@ -98,7 +98,7 @@
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
         "name_zh": "缝合口3 Stitching Link 3",
-        "road_class": "pedestrian_priority"
+        "road_class": "pedestrian"
       },
       "geometry": {
         "type": "LineString",
@@ -126,7 +126,7 @@
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
         "name_zh": "缝合口4 Stitching Link 4",
-        "road_class": "pedestrian_priority"
+        "road_class": "pedestrian"
       },
       "geometry": {
         "type": "LineString",
@@ -154,7 +154,7 @@
         "official_boundary": false,
         "boundary_precision": "provisional_rough",
         "name_zh": "缝合口5 Stitching Link 5",
-        "road_class": "pedestrian_priority"
+        "road_class": "pedestrian"
       },
       "geometry": {
         "type": "LineString",

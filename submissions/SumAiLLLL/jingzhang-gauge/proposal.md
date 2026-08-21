@@ -7,7 +7,7 @@ bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "京张铁路的历史成就是一次自主标定——詹天佑团队独立完成关沟段测绘与1435mm标准轨距确立。AI时代面临平行的标定问题：没有公共基准就没有自主创新，没有对齐就没有问责，没有评测场就没有朝圣地标。本方案把标定做成可见的空间制度：一脊（9.4km基准走廊）、三场（众智园标定场/AI原点对齐广场/大钟寺轨距门）、五门（轨距门互操作准入）、两翼（中关村科技服务翼+小月河场景赋能翼），含8个全球AI评测基准案例、10张场景卡、3处朝圣地标与长期运营机制。"
-tracks: ["civic-agent-governance", "enterprise-services-ecosystem", "jingzhang-heritage-narrative", "ai-traffic-walkability", "robotics-autonomous-mobility"]
+tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
 iteration: "v0.1"
 ---
@@ -280,6 +280,8 @@ iteration: "v0.1"
 本方案不给出：控规调整、容积率、建筑高度、建筑强度等法定规划判断；具体地块拆改留方案；道路线形、轨道线位、桥隧工程、市政管线等工程方案；地下空间工程可行性、能源负荷、市政容量等专业测算；土地权属、投资测算、开发时序和审批判断。所有空间落地建议表述为"概念建议""参考方案""可供专业团队深化研究" [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
 ## 参考资料
+
+本方案的全部来源已在 `sources.json` 中完整记录，以下为主要来源 [source:SOURCE-REGISTRY]：
 
 - 官方公告：北京市规划和自然资源委员会海淀分局《资格预审公告》
 - 面向智能体任务书：六项必答任务、十条共创原则、三区两翼
