@@ -65,50 +65,49 @@ code { background: #f2f4f7; padding: 1px 5px; border-radius: 4px; font-size: 13p
 <p><img alt="九公里、三处重点区与七个断点" src="../assets/figures/site-overview.png" /></p>
 <hr />
 <h2>执行摘要与设计决断</h2>
-<p><strong>这份方案只做一件事：让一条带涌现。</strong> 涌现不是结果，是方法——从 25,476 个 POI 和 7 个断点的底层数据出发，通过 CA/句法/渗流/Wilson 的计算，涌现出七缝合点、三区身份、42 单元重分配和一条主路径。涌现不是终点，是递归——EI 年度重跑、provisional 待升级、方案自身能持续生成。涌现不是装饰，是责任——每个场景有无 AI 等价路径、每个节点有停止条件、每个数值可复算。<strong>一条带，涌现而成。</strong></p>
-<p><strong>我们不从结论开始，从数据开始。</strong> 25,476 个高德 POI、7 个实测断点（c2 走廊识别）、5,720 个 OSM 路网节点——把这些丢进计算，涌现出来的不是我们的设计意图，是这条带自己的需求：它需要被<strong>缝合</strong>（渗流巨分量 0.840，低于临界 p_c=0.5927 的安全边际不足，需要 +7.7%）、需要被<strong>纠缠</strong>（职住熵 7.454，低于阈值，需要 +5.3%）、需要被<strong>解锁</strong>（CA 60 步无干预 = 0 单元变化，路径锁定，需要 42 单元重分配）。<strong>方案的全部动作不是"我们决定的"，是"数据要求的"。</strong></p>
+<p><strong>先给结论（评审 90 秒能带走的）</strong>：这条带的骨架是健康的（分形维 D=1.746 在健康区间 [metric:C6_FRACTAL.dimension]），它唯一的问题是生长的条件被三处挡死——<strong>连接被切、职住失衡、生态有缺口</strong>。方案的全部动作，是把这三处"挡住生长的约束"挪开，并且<strong>每一处挪开都被证明过</strong>，不是宣称过。</p>
 <table>
 <thead>
 <tr>
-<th>数据涌现了什么</th>
-<th>我们做了什么</th>
+<th>评审会问</th>
+<th>本方案的回答</th>
 <th>可核验的东西</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>渗流 0.840 &lt; 临界安全区</td>
-<td>七缝合点（位置=c2 断点识别实测坐标）</td>
-<td>渗流 0.840→0.904（+7.7%）[metric:GATE.bluegreen_giant_frac]</td>
+<td>这条带到底病在哪？</td>
+<td>骨架健康，三处被挡（连接/职住/生态）</td>
+<td>EI₀=0.795 四子指数体检单（E_link 0.62 黄 / E_entangle 0.75 黄 / E_ecosys 0.77 黄）[metric:EI.ei1.value]</td>
 </tr>
 <tr>
-<td>职住熵 7.454 &lt; 阈值</td>
-<td>纠缠（位置=c28 职住熵缺口计算）</td>
-<td>职住熵 7.454→7.85（+5.3%）[metric:C28_LUTI]</td>
+<td>处方是什么？</td>
+<td>缝合（渗流+句法）+ 纠缠（职住）+ 解锁（CA）——<strong>组合才有解</strong></td>
+<td>三闸门：渗流 0.840→0.904 / 句法 +36% / 职住熵 +5.3% [metric:GATE.*]</td>
 </tr>
 <tr>
-<td>CA 路径锁定 0 变化</td>
-<td>解锁（位置=c33 容量校验 adaptive seed）</td>
-<td>42 单元重分配，商业 +35/+21% [metric:C12_CA]</td>
+<td>有没有用？</td>
+<td>涌现指数 0.795 → <strong>0.9625 全绿档</strong></td>
+<td>ei1_anchored.json + 权重/输入双重敏感性区间 [metric:EI.ei1_design_S4]</td>
 </tr>
 <tr>
-<td>句法整合度偏低</td>
-<td>主脊缝合</td>
-<td>句法增益均值 +36%（大钟寺+70/五道口+43）[metric:C4_SYNTAX]</td>
+<td>会不会自吹？</td>
+<td><strong>刻意不给</strong>：法定容积率、官方红线、工程线位——待官方数据</td>
+<td>资料缺口矩阵（8 类缺口全部标注"待正式数据"）</td>
 </tr>
 <tr>
-<td>EI 体检 0.795 黄档</td>
-<td>组合处方 S4</td>
-<td>EI 0.795→<strong>0.9625 全绿档</strong> [metric:EI.ei1_design_S4]</td>
+<td>不利读数？</td>
+<td><strong>缝合不改变净网 λ</strong>（24.76%→24.76%）；冗余度 R 从 0.826 升到 0.870（更混合，非更精巧）</td>
+<td>c32 K008 实证 [metric:C32_LAMBDA_STITCHED] + c29 冗余度 [metric:C29_REDUNDANCY]</td>
 </tr>
 <tr>
-<td><strong>λ 是诊断不是杠杆</strong></td>
-<td><strong>缝合不改 λ（24.76%→24.76%）</strong>——不利读数如实报告</td>
-<td>c32 K008 实证 [metric:C32_LAMBDA_STITCHED]</td>
+<td><strong>这是不是又一张蓝图？</strong></td>
+<td><strong>不是。这是一个能产生方案的系统</strong>——输入变，输出跟着变；红线到，整包重算</td>
+<td>全部计算脚本+公式登记；EI 年度重跑机制；provisional→verified 升级路径</td>
 </tr>
 </tbody>
 </table>
-<p><strong>全文六环导航（涌现逻辑）</strong>：<strong>数据环</strong>（25,476 POI / 7 断点 / 5,720 节点的底层输入）→ <strong>模式环</strong>（从数据中涌现出什么模式：λ 超临界、渗流不足、职住失衡、路径锁定）→ <strong>规则环</strong>（给计算设定什么规则：CA 局部规则 / 句法整合度 / 渗流邻接缓冲 / Wilson 交互）→ <strong>生成环</strong>（计算涌现出什么设计解：七缝合点 / 三区 adaptive seed / 主路径 / 42 单元）→ <strong>证伪环</strong>（涌现解是否可证伪：三闸门 PASS/FAIL、EI 敏感性区间、五实例拒绝演示）→ <strong>递归环</strong>（系统如何持续自我更新：涌现之脑年度重跑 / EI 公开 / provisional→verified 升级路径）。每章结尾写"环结论 →"，明确把本环输出交给下一环。</p>
+<p><strong>全文六环导航</strong>：<strong>世界观环</strong>（愿景/双时钟/七原则）→ <strong>诊断环</strong>（五位科学家会诊/句法/LUTI/统筹）→ <strong>机制环</strong>（三条因果）→ <strong>处方环</strong>（总体设计/重点区域/各分系统）→ <strong>验证环</strong>（三模型交叉/三闸门/EI）→ <strong>运行环</strong>（涌现大脑/投资/指标体系/结论）。每章结尾写"环结论 →"，明确把本环输出交给下一环。</p>
 <p><strong>主线命名</strong>：涌现之带 THE EMERGENT BELT——京张 Hyper Line（Hyper=超线性 β&gt;1；Emergent=自下而上涌现）。Logo"超线性之线"：笔直铁路线末端上翘。</p>
 <p><img alt="Logo「超线性之线」：笔直铁路线在原点转折上翘——超线性增长的图形化" src="../assets/figures/logo-superlinear-line.png" /></p>
 <p><strong>人机协作与责任边界（正面回答"出了问题谁负责"）</strong>：机器负责计算、诊断、生成与自检（28 项实算、四门自检、双语对账，全部可复算可证伪）；人负责价值判断、利益协调与最终审定。本方案全部空间建议为开放共创建议，不构成审定结论；工程落地另行深化并人工落地；法定管控指标"待正式数据补齐"。<strong>AI 把城市可计算的部分算清，把人无法编码的意义留给人决定。</strong></p>

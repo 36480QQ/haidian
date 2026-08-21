@@ -35,20 +35,18 @@ The entire work of this proposal is to walk that "machine" from end to end: **me
 
 ## Executive Summary & Design Decisions
 
-**This plan does one thing: let a belt emerge.** Emergence is not the result — it is the method: from the bottom-up data of 25,476 POIs and 7 measured breaks, through CA / syntax / percolation / Wilson computation, emerge seven stitches, three spatial identities, 42 redistributed cells, and one main path. Emergence is not the endpoint — it is recursion: EI re-runs annually, provisional items upgrade to verified, the plan itself keeps generating. Emergence is not decoration — it is responsibility: every scenario has a no-AI equivalent path, every node has a stop condition, every number is recomputable. **One belt. Emergent by design.**
+**The conclusion up front (what a reviewer can take away in 90 seconds)**: the belt's skeleton is healthy (fractal dimension D=1.746 in the healthy band [metric:C6_FRACTAL.dimension]); its only problem is that the conditions for growth are blocked at three points — **severed connectivity, jobs-housing imbalance, ecological gaps**. Every action in this plan removes one of those three blocks, and **every removal is proven, not asserted**.
 
-**We do not start from a conclusion — we start from data.** 25,476 Amap POIs, 7 measured corridor breaks (c2 scan), 5,720 OSM network nodes — feed these into computation, and what emerges is not our design intent but the belt's own demands: it needs **stitching** (percolation giant fraction 0.840, thin safety margin above p_c=0.5927, needs +7.7%), **entanglement** (jobs-housing entropy 7.454, below threshold, needs +5.3%), and **unlocking** (CA 60-step no-intervention = 0 cell change, path locked, needs 42 cells redistributed). **Every action in this plan is not "our decision" — it is "what the data demands".**
-
-| What the data emerges | What we do | Verifiable artifact |
+| The reviewer asks | Our answer | Verifiable artifact |
 |---|---|---|
-| Percolation 0.840 < safe zone | Seven stitches (locations from c2 break-detection coordinates) | Percolation 0.840→0.904 (+7.7%) [metric:GATE.bluegreen_giant_frac] |
-| Jobs-housing entropy 7.454 < threshold | Entanglement (locations from c28 entropy gap analysis) | Entropy 7.454→7.85 (+5.3%) [metric:C28_LUTI] |
-| CA path locking = 0 change | Unlocking (locations from c33 capacity check, adaptive seed) | 42 cells redistributed, commercial +35/+21% [metric:C12_CA] |
-| Syntax integration low | Spine stitching | Syntax gain +36% mean (Dazhongsi +70 / Wudaokou +43) [metric:C4_SYNTAX] |
-| EI panel 0.795 yellow | Combined prescription S4 | EI 0.795→**0.9625 all-green** [metric:EI.ei1_design_S4] |
-| **λ is diagnostic, not a lever** | **Stitching does not change λ (24.76%→24.76%)** — adverse reading honestly reported | c32 K008 [metric:C32_LAMBDA_STITCHED] |
+| What is actually wrong? | Healthy skeleton, three blocks (connectivity / jobs-housing / ecology) | EI0=0.795 four-subindex panel (E_link 0.62 yellow / E_entangle 0.75 yellow / E_ecosys 0.77 yellow) [metric:EI.ei1.value] |
+| What is the prescription? | Stitch (percolation+syntax) + entangle (jobs-housing) + unlock (CA) — **combination is the only solution** | Three gates: percolation 0.840→0.904 / syntax +36% / jobs-housing entropy +5.3% [metric:GATE.*] |
+| Does it work? | Emergence Index 0.795 → **0.9625 all-green** | ei1_anchored.json + dual sensitivity intervals on weights/inputs [metric:EI.ei1_design_S4] |
+| Is it over-claiming? | **Deliberately withheld**: statutory FAR, official red lines, engineering alignments — pending official data | Data-gap matrix (8 gap classes all marked "pending official data") |
+| Adverse reading? | **Stitching does not change network λ** (24.76%→24.76%); redundancy R rises 0.826→0.870 (more mixed, not more "precise") | c32 K008 [metric:C32_LAMBDA_STITCHED] + c29 redundancy [metric:C29_REDUNDANCY] |
+| **Is this another blueprint?** | **No. This is a system that produces plans** — change the input, the output follows; red lines arrive, the whole package recalculates | All computation scripts + formulas registered; annual EI re-run mechanism; provisional→verified upgrade path |
 
-**Six-ring navigation (emergence logic)**: **Data ring** (bottom inputs: 25,476 POIs / 7 breaks / 5,720 nodes) → **Pattern ring** (what patterns emerge from data: λ supercritical, percolation deficit, jobs-housing imbalance, path locking) → **Rule ring** (what rules we set for computation: CA local rules / syntax integration / percolation adjacency buffer / Wilson interaction) → **Generation ring** (what design solutions computation emerges: seven stitches / three-area adaptive seed / main path / 42 cells) → **Falsification ring** (is the emerged solution falsifiable: three gates PASS/FAIL, EI sensitivity intervals, five rejection demonstrations) → **Recursion ring** (how the system keeps self-updating: Emergent Brain annual re-runs / EI published / provisional→verified upgrade path). Each chapter ends with a "Ring conclusion →" that passes its output to the next ring.
+**Six-ring navigation**: Worldview (vision / dual clock / seven principles) → Diagnosis (five-scientist consultation / syntax / LUTI / ecology) → Mechanism (three causal laws) → Prescription (master plan / key areas / subsystems) → Verification (three-model cross-check / three gates / EI) → Operation (emergent brain / investment / metrics / conclusion). Each chapter ends with a "Ring conclusion →" that passes its output to the next ring.
 
 **Naming**: THE EMERGENT BELT — Jing-Zhang Hyper Line (Hyper = superlinear β>1; Emergent = bottom-up emergence). Logo: "the superlinear line" — a straight railway curving upward.
 
