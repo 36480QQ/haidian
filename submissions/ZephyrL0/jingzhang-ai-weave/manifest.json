@@ -682,7 +682,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3403976bc4395af04f453436db93b960ee2d630ad76bbcfde056e9c9e89ddfa5"
+      "sha256": "88ba66d676f0e4f73c77a2991d73994b58394af985e8005c021eab8dd9dbea93"
     },
     {
       "path": "simulation.json",
@@ -798,6 +798,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence_summary": "v5.2-depth separates official O-tier, public-observation P-tier, derived D-tier, and concept C-tier evidence. A 2021 ESA WorldCover signal is aggregated into 1,248 clipped 100m supporting cells and corrects the concept partition, but is not current-condition certification. Required design GeoJSON remains provisional. Dazhongsi transport figures are a scoped project stress case. Agent prompts, concise traces, tool versions, hashes, human decisions, responsibility gates, and stop rules are persisted; implementation approval, representative consent, official geometry, professional cost, and deterministic LLM prose are not claimed."
+    "data_confidence_summary": "v5.2-depth separates official O-tier, public-observation P-tier, derived D-tier, and concept C-tier evidence. A 2021 ESA WorldCover signal is aggregated into 1,248 clipped 100m supporting cells and corrects the concept partition, but is not current-condition certification. Required design GeoJSON remains provisional. Dazhongsi transport figures are a scoped project stress case. Agent prompts, concise traces, tool versions, hashes, human decisions, responsibility gates, and stop rules are persisted; implementation approval, representative consent, official geometry, professional cost, and deterministic LLM prose are not claimed.",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
