@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "project_id": "centennial-jingzhang-ai-belt",
+  "package_id": "jingzhang-ai-artery",
+  "assumptions": [
+    {
+      "id": "ASM-001",
+      "topic": "provisional_boundary",
+      "assumption_zh": "总体设计范围与三处重点区 polygon 使用仓库维护者推定的 provisional_boundaries.geojson，仅依据公告文字四至与约面积推定；与公告偏差均在 ±0.5% 以内，但不构成 official redline。",
+      "impact_zh": "所有几何派生的图层（land_use, buildings, roads, green_space, public_space, phasing）和面积指标在 official polygon 发布后须整体重算，不能只替换单个文件。",
+      "recalculation_path_zh": "取得 official CAD/GIS/PDF 边界文件后，登记文件哈希、发布机构、发布日期、版本、坐标系和转换方法，并同时替换三层范围与三处重点区；然后重新运行 generate_geometry.py + generate_metrics.py + generate_figures.py + render_proposal_html.py + self_check_submission.py。",
+      "confidence": "medium"
+    },
+    {
+      "id": "ASM-002",
+      "topic": "regulatory_control_missing",
+      "assumption_zh": "容积率、建筑高度、建筑密度、绿地率、退线等控规条件尚未公开，按 ranges/planning_limits.json 中 status=missing 处理。",
+      "impact_zh": "本方案 concept_far=1.30、建筑高度 12-60m 等数值均为概念设计量，明确不等于法定控规值。",
+      "recalculation_path_zh": "取得 official 控规条件后，重新复算所有开发强度类指标；如与现状冲突，需调整用地分区与建筑形态。",
+      "confidence": "low"
+    },
+    {
+      "id": "ASM-003",
+      "topic": "existing_building_ownership",
+      "assumption_zh": "现状建筑、权属与拆改留分类基于公开资料与 provisional 边界推定；本方案 buildings.geojson 中 34 个建筑基底为概念示意，不代表实际权属。",
+      "impact_zh": "拆改留分类（保留/改造/拆除/新建）仅为方向性建议，最终须以 official 现状建筑与权属数据为准。",
+      "recalculation_path_zh": "取得 official 现状建筑与权属数据后，更新 buildings.geojson 的 building_type 字段并重新生成图纸与指标。",
+      "confidence": "low"
+    },
+    {
+      "id": "ASM-004",
+      "topic": "heritage_protection",
+      "assumption_zh": "清华园火车站遗址、大钟寺历史文化节点、京张铁路遗址等文保范围尚未取得 official polygon。",
+      "impact_zh": "方案中保留类建筑与公共空间布局仅为概念建议，最终须以 official 文保范围为准。",
+      "recalculation_path_zh": "取得 official 文保范围后，更新 constraints.geojson 并调整周边建筑退线。",
+      "confidence": "low"
+    },
+    {
+      "id": "ASM-005",
+      "topic": "road_redline",
+      "assumption_zh": "道路红线与轨道保护范围尚未取得 official 数据；roads.geojson 中 11 条道路中心线为概念路网。",
+      "impact_zh": "道路等级、宽度与线位最终须以 official 道路红线与轨道保护范围为准。",
+      "recalculation_path_zh": "取得 official 道路红线与轨道保护范围后，更新 roads.geojson 并调整周边建筑退线。",
+      "confidence": "medium"
+    },
+    {
+      "id": "ASM-006",
+      "topic": "ai_scenario_data_governance",
+      "assumption_zh": "AI 场景数据治理遵循 brief/site-package/standards/references/generative-ai-interim-measures.md 与 barrier-free-environment-law.md；所有个人可识别信息须脱敏，所有 AI 关键判断须人工复核。",
+      "impact_zh": "AI 场景卡中的数据输入、隐私边界、人工复核机制为概念建议，实施前需经数据合规与隐私评估。",
+      "recalculation_path_zh": "实施前由数据合规专家复核每个 AI 场景的数据流、隐私边界与人工复核机制，按 generative-ai-interim-measures 落实管理责任。",
+      "confidence": "medium"
+    },
+    {
+      "id": "ASM-007",
+      "topic": "concept_far",
+      "assumption_zh": "概念容积率 1.30 由建筑基底面积 × 平均建筑高度 ÷ site_area 估算，仅用于指标复算与可视化。",
+      "impact_zh": "明确不等于法定容积率；待 official 控规条件补齐后须按 status=missing 的所有控规指标重算。",
+      "recalculation_path_zh": "取得 official 控规条件后，按 ranges/planning_limits.json 中所有 missing 指标重算并更新 metrics.json。",
+      "confidence": "low"
+    },
+    {
+      "id": "ASM-008",
+      "topic": "funding_and_policy",
+      "assumption_zh": "投资规模、政策安排、运营主体、活动品牌等均为概念建议；不得表述为已确定政府安排或投资承诺。",
+      "impact_zh": "所有更新项目清单、实施政策、分期计划与运营机制均为深化方向，最终须以 official 政府审定为准。",
+      "recalculation_path_zh": "实施前由海淀区政府、企业联合体与专业团队共同审定实施计划、政策与运营机制。",
+      "confidence": "low"
+    }
+  ]
+}
