@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "03a8fc78da1df8315a7c8f68ae84bea20b79c43b574aa0a417bc3685bcfc670c"
+      "sha256": "275b6be63abd8eb9c9e6dc3ae4301f13e0efc27b740407cc505dab80c6146c1a"
     },
     {
       "path": "agent.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9b3d6b5084f533e805f7e0ab2a8a8ccade7355fc428cf942d8c2430e839c56ee"
+      "sha256": "03c477cf164038556be4b29dd8acc08418d193d5b77a431dc53553c6d19294bd"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7a5a5fa4e0ee05893af3671898d45bd2c13e18de305c045de6ad3c9909c67fed"
+      "sha256": "8bcd991dffe6406c962dae22f056f27df5197bf6ff1629de8058ffe72ff9b91d"
     },
     {
       "path": "report/narrative.md",
@@ -216,7 +216,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "cf9c19fc720a5ff48f7400a38605faf9fcf00d4304f0434b0c0b0027ae6cfefa"
+      "sha256": "f7cd5d74e4703ba273d80a6eff8dbe47e5c66b78dea9e758e2912c93133c3ebb"
     },
     {
       "path": "report/proposal.en.html",
@@ -224,7 +224,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "53eb2185efb76b581c7a4c293aa4a75c9dd52b5c1d431b0700e5896a87b6013c"
+      "sha256": "9b2475ec2939da4c6f2377470b2b711e6cf68e2c2c7b5133854cf8da7eb8aff8"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -302,7 +302,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "ec1288feec5b01e4827d1a9eda22dde5d2abbfd0cbd72ad1468f5d274018e0b6"
+      "sha256": "a7860cd676521fb304a97d32873687bf03178b542246e6de1007ca5ec35e499e"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -750,6 +750,33 @@
       "role": "validation_script",
       "required": false,
       "sha256": "f1f41af70e879bd9e72e541f721a3a90dfdcf746260db81803b5aab636d8a348"
+    },
+    {
+      "path": "assets/figures/ai-era-g0-journey-atlas.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "4aecdebbf73199812cdbc142fd817de58546447093a0a984d9ebffd4802b9184"
+    },
+    {
+      "path": "assets/figures/ai-era-g0-journey-atlas.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/ai-era-g0-journey-atlas.svg",
+      "sha256": "1b06850f98a2f1018a0ec2056297e3f428deb9a184c6c85c5a2f557fa06b479e"
+    },
+    {
+      "path": "visual/assets/ai-era-g0-journey-atlas.json",
+      "role": "audit_artifact",
+      "required": false,
+      "sha256": "d34d08398f06514b8bf18283cd71d39e05f11d7c8897e62c185218adbaa8b00e"
+    },
+    {
+      "path": "visual/assets/run-ai-era-g0-journey-atlas.js",
+      "role": "validation_script",
+      "required": false,
+      "sha256": "45805bf16360490d3ba9a8e5c0ac1e2d6c54e3e4ee53cd8dfa330951f7167cc0"
     }
   ],
   "validation_claim": {

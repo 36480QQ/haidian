@@ -10,7 +10,7 @@ summary: "以人本缓冲、机器可调用的公共规则和可撤回的版本�
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
-iteration: "v2.1"
+iteration: "v2.4"
 tracks: "ai-traffic-walkability,civic-agent-governance,youth-friendly-public-space"
 scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-navigation,ai-cultural-guide,enterprise-service-copilot,public-safety-operations-review"
 ---
@@ -32,6 +32,14 @@ scenarios: "ai-traffic-walkability,robot-delivery-low-speed,ai-health-service-na
 | 第三方复演并决定扩展/返修/退出 | 证据柜、版本牌、公众观察席 | 复演差异、最差组结果、决定记录 | 不能复演则回到纸面协议 |
 
 当前包只声明 G0 概念证据链；G1/G2 仍需要现场、正式数据、专业复核与授权。五步链与现有 10 张场景卡、人工兜底和 implementation matrix 相互对照，不把概念指标写成服务绩效 [data:geometry/constraints.geojson#SCN-06] [metric:scenario_g0_count]。新增的离线 runner 将四条既有路线绑定到真实 GeoJSON 要素：代际共学、城市 API、夜间人工服务和技能再造各有一条普通人入口；要求 5/5 步骤、5/5 回退、6/6 验收检查和 4/4 路线可解析。五个失败夹具会停止、拒绝数据调用、冻结夜间扩展、暂停自动分流或退回 G0；三个普通/人工替代夹具继续。它只证明本地结构可回放，不证明现场服务、无障碍、人员值守或安全结果 [data:visual/assets/ai-era-ordinary-journey-evidence.json] [metric:scenario_g0_count]。
+
+## 五步回执把普通服务留在自动化旁边
+
+现有普通人链路已经登记了四条示范路线、八个夹具、六项验收和五个回退动作。新增双语图件把这些字段放在一张回执上，方便先看普通路线，再看 AI 辅助路径。当前回放只覆盖包内结构，授权数量为 0，现场观察数量为 0，本地基线仍为 unknown，方案保持 HOLD [data:visual/assets/ai-era-g0-journey-atlas.json] [data:visual/assets/run-ai-era-g0-journey-atlas.js]。
+
+![G0 普通人任务链回执。四条路线共用五步交接和人工回退](assets/figures/ai-era-g0-journey-atlas.svg)
+
+图中把选择、目的、接管、申诉和独立复演分别放回动作位置。缺少普通路线、人工责任或独立复演时，链路回到 G0；图件不提供居民体验、服务绩效、许可或实施结论 [data:visual/assets/ai-era-g0-journey-atlas.json]。
 
 ## 设计依据与资料清单
 

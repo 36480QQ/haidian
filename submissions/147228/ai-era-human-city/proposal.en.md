@@ -9,7 +9,7 @@ translation_of: "proposal.md"
 license: "CC-BY-4.0"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v2.1"
+iteration: "v2.4"
 ---
 
 # From an AI Showcase to a City for People in the AI Era
@@ -29,6 +29,14 @@ The first G0 acceptance unit starts with a complete ordinary-person journey. The
 | Independent replay and decide expand/repair/exit | Evidence cabinet, version board and public observer seat | Replay difference, worst-group result and decision record | Return to the paper protocol if it cannot be replayed |
 
 The package claims only a G0 conceptual evidence chain; G1/G2 still require field work, formal data, professional review and authorization. The five-step chain cross-checks the ten scenario cards, human fallback and implementation matrix without turning concept metrics into service performance [data:geometry/constraints.geojson#SCN-06] [metric:scenario_g0_count]. The offline runner now binds four existing routes to real GeoJSON features: intergenerational learning, civic API, night human service, and reskilling each have an ordinary-person entry. It requires 5/5 journey steps, 5/5 rollback steps, 6/6 acceptance checks, and 4/4 resolving routes; five failing fixtures stop, reject a data call, freeze night expansion, hold automated routing, or return to G0, while three ordinary or human alternatives continue. This proves only local structural replay, not field service, accessibility, staffing, or safety outcomes [data:visual/assets/ai-era-ordinary-journey-evidence.json] [metric:scenario_g0_count].
+
+## Five Receipt Steps Keep Ordinary Service Beside Automation
+
+The existing ordinary-person journey records four sample routes, eight fixtures, six acceptance checks and five rollback actions. The new bilingual board puts these fields on one receipt so a reviewer can read the ordinary route before the AI-assisted route. The replay covers package structure only; authorisation count is zero, field observations are zero, the local baseline remains unknown, and the package stays at HOLD [data:visual/assets/ai-era-g0-journey-atlas.json] [data:visual/assets/run-ai-era-g0-journey-atlas.js].
+
+![G0 ordinary-person journey receipt: four routes, five handoffs and human fallback](assets/figures/ai-era-g0-journey-atlas.en.svg)
+
+The board places choice, purpose, takeover, appeal and independent replay back into the sequence of actions. Missing ordinary route, human responsibility or independent replay returns the chain to G0; the board provides no resident experience, service performance, permit or implementation evidence [data:visual/assets/ai-era-g0-journey-atlas.json].
 
 ## Design Basis and Source List
 
