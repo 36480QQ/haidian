@@ -7,31 +7,36 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11412825.386,
+      "value": 11411954,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "formula": "geodesic_polygon_area(submitted_provisional_site_boundary, WGS84)",
+      "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Area derived from the provisional site boundary in the public site package (geometry_role=provisional_constraint).",
+        "Not an official redline or precise-area basis; recalculate when organizer publishes official SITE_BOUNDARY.",
+        "Value rounded to nearest whole square metre from geodesic computation (11411954.21 sqm)."
       ]
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 310807.184,
+      "value": 310783,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(polygon_area(building_footprints))",
+      "formula": "sum(geodesic_polygon_area(building_footprints, WGS84))",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Building footprints are a provisional base-map / agent-generated design dataset, not a surveyed cadastre.",
+        "Value rounded to nearest whole square metre from geodesic computation (310783.05 sqm)."
+      ]
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.123423,
+      "value": 0.123,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -39,11 +44,13 @@
       ],
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Both numerator and denominator rely on provisional geometry; ratio shown to three decimals."
+      ]
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.073281,
+      "value": 0.073,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -51,7 +58,9 @@
       ],
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "Both numerator and denominator rely on provisional geometry; ratio shown to three decimals."
+      ]
     },
     "floor_area_ratio": {
       "status": "unknown",
@@ -74,7 +83,9 @@
       ],
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "Count reflects the three KEY_AREA polygons declared in the brief; polygon geometry itself remains provisional."
+      ]
     }
   }
 }
