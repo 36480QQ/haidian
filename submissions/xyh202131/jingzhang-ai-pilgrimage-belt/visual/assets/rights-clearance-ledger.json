@@ -248,7 +248,7 @@
           "assets/media/4-state-narration-script.md"
         ],
         "limits": [
-          "No standalone source font file is shipped. Historical Round 19 PDFs contained visible NotoSansSC-Medium/Bold subsets, but the current Round 52 PDFs contain no Noto subset. Read-only inspection finds 280 visible Base-14 Helvetica spans across all four current PDFs and 118 visible Heiti CID spans in the two Chinese PDFs; neither font program is embedded. The accepted synthetic Round 19 cover contains rasterized DengXian glyph pixels. HTML requests system font stacks, and concrete fonts resolved while rasterizing checked-in SVG files were not recorded. Embedding, referencing, substitution, or rasterization does not establish license compliance.",
+          "No standalone source font file is shipped. Historical Round 19 PDFs contained visible NotoSansSC-Medium/Bold subsets; superseded Round 52 PDFs exposed non-embedded Helvetica and Heiti references. The current Round 55 PDFs embed local Microsoft YaHei Regular/Bold or Arial Regular/Bold subsets, while vector-inserted package SVGs additionally expose locally rendered Times-Roman, Droid Sans Fallback, Noto Sans Math/Symbols and small Helvetica subsets. The accepted synthetic Round 19 cover contains rasterized DengXian glyph pixels. Exact font versions, licences, embedding and redistribution conditions remain independently unaudited. Embedding, referencing, substitution, or rasterization does not establish license compliance.",
           "Editable package-authored SVG sources are declared for sixteen bilingual figure pairs. The reversible-components pair is separately recorded as a repository-provisional derivative. Editable sources exist for Markdown, HTML, CSS, JavaScript, JSON and GeoJSON, but no separate editable vector or publication-layout source is declared for every remaining PNG or PDF.",
           "The conceptual JZ logo grammar has not received trademark or production-brand clearance."
         ]
@@ -312,9 +312,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e07e8aa2d709bfd313450cd42db649c21334cbcff113e50e053b07c805b72e4a",
+        "digest": "e4b6618cff929ef56fd6f9d550a17993cb1de54f1eb8486d370866dbf618b465",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [
@@ -357,9 +357,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "bilingual_spatial_decision_frontstage_r54",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 changes answer order and backlinks on bilingual reading surfaces only. Presentation clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -389,9 +389,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "b2b0b8de2cc1915eac9cfc7ac6e05a177a08af57482d5b4f3d5cf44c9d64cc65",
+        "digest": "cb30e753235dea07691310f026a1957e84105f78bc430163314f73d3afdaec6c",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [],
@@ -404,9 +404,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_54_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 updates package-authored provenance and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -668,9 +668,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "631e39ac954256e62e9f5e2d00ebf2f26cbef29075499bc1c6e32941bde4fbe1",
+        "digest": "9381a84e7bcadac90b102495ec54df0b1e13d264bef937e6627452f3751d3657",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [],
@@ -683,9 +683,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_54_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 updates package-authored provenance and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -1686,9 +1686,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "a347b79a7a35c8e546f66ec942126edeb0c0db20970cccb5cdfd00737dfa4474",
+        "digest": "681748b5a1f913941ed28001a34a9d8bc0e9da2485be70fdf3ca3cda2dec51e8",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [
@@ -1747,9 +1747,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_54_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 updates package-authored provenance and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -1831,9 +1831,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "2362dcbf13938017d36de5d0215000886c919f806425a6a30985d825c67a2f8c",
+        "digest": "1b795ffb7f4a696189b384d4d77178c72b443aa462cb02782f06440d0e5ea3a6",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [
@@ -1891,9 +1891,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "bilingual_spatial_decision_frontstage_r54",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 changes answer order and backlinks on bilingual reading surfaces only. Presentation clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -1923,9 +1923,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "0eb4ed03b85f5d83a070e38b518a98926752124a7343b59c5fb51f0773826059",
+        "digest": "6c65713749435429daf220092867318627600df0dac74059358d5f0d6f286310",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1941,9 +1941,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_54_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 updates package-authored provenance and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -1971,9 +1971,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "1837f1cf810ea0520501733f71538d3d97ac3098b46bcaab77b8a2d883cfd5a6",
+        "digest": "93f8b146c47e018cd2f0fc4878134c370e16bfc3915b525490c71623cc418893",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [],
@@ -1992,9 +1992,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_54_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 updates package-authored provenance and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2022,9 +2022,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "b32a01e57c5957ff971065d8a0e4b2e97684aabf7643fe32956e521296c4ffe8",
+        "digest": "28df546c648c8d45bb703e6f3e727f7bebf39eb7c8da028fdec9acad94c37c4f",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2048,27 +2048,20 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
-        "TOOL-CHROME",
-        "TOOL-FONTTOOLS",
-        "TOOL-PILLOW",
-        "TOOL-PYMUPDF",
         "TOOL-PYTHON",
-        "TOOL-REPORTLAB"
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
       ],
       "embedded_components": [
         {
-          "component_ref": "source-rights-evidence.json#FONT-HELVETICA-R19-RESOURCE",
-          "state": "referenced_not_embedded_visible_publication_text"
-        },
-        {
-          "component_ref": "source-rights-evidence.json#FONT-HEITI-R48-PDF-RESOURCE",
-          "state": "referenced_not_embedded_visible_publication_text"
+          "component_ref": "source-rights-evidence.json#FONT-PDF-R55-LOCAL-SUBSETS",
+          "state": "embedded_subsets_pending_independent_licence_review"
         }
       ],
       "generation_recipe": {
-        "status": "deterministic_fixed_page_rebuild_round_54",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 recomposes four fixed-page publications without adding pages. Two byte-identical builds and 44-page QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, approval, maturity or rights clearance."
+        "status": "deterministic_fixed_page_rebuild_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 recomposes four fixed-page publications from existing package assets without adding pages. Two byte-identical builds and 44-page QA prove reproducibility and legibility only, not font licence, embedded-asset rights, field fact, accessibility, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2098,9 +2091,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "5dedb32876f357ecf4cebe5e9ffa3e2d31d721817a9da0f0a1857aa1814f0c69",
+        "digest": "eca4f2d9d3ab978c5fec0e9f5d90e3d9c1c2ce98d40bff8024760194d53bb801",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2138,27 +2131,20 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
-        "TOOL-CHROME",
-        "TOOL-FONTTOOLS",
-        "TOOL-PILLOW",
-        "TOOL-PYMUPDF",
         "TOOL-PYTHON",
-        "TOOL-REPORTLAB"
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
       ],
       "embedded_components": [
         {
-          "component_ref": "source-rights-evidence.json#FONT-HELVETICA-R19-RESOURCE",
-          "state": "referenced_not_embedded_visible_publication_text"
-        },
-        {
-          "component_ref": "source-rights-evidence.json#FONT-HEITI-R48-PDF-RESOURCE",
-          "state": "referenced_not_embedded_visible_publication_text"
+          "component_ref": "source-rights-evidence.json#FONT-PDF-R55-LOCAL-SUBSETS",
+          "state": "embedded_subsets_pending_independent_licence_review"
         }
       ],
       "generation_recipe": {
-        "status": "deterministic_fixed_page_rebuild_round_54",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 recomposes four fixed-page publications without adding pages. Two byte-identical builds and 44-page QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, approval, maturity or rights clearance."
+        "status": "deterministic_fixed_page_rebuild_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 recomposes four fixed-page publications from existing package assets without adding pages. Two byte-identical builds and 44-page QA prove reproducibility and legibility only, not font licence, embedded-asset rights, field fact, accessibility, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -2188,9 +2174,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "70553a453636fba7a20b2520067f446eaabe6d532bb3c7cf372fdbcedd883c7b",
+        "digest": "0827494e56a3c5a1f9765aa9d7c75381e8e6d03a8c7f40b180ff84e79d0693e8",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [],
@@ -2229,9 +2215,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "bilingual_spatial_decision_frontstage_r54",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 changes answer order and backlinks on bilingual reading surfaces only. Presentation clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3250,9 +3236,9 @@
       "origin_status": "self_declared_origin_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "36bc54bc25fb7b3b55a21f8514fc45e6a1bf07d7648522c3c6077b58521d0b2e",
+        "digest": "22c011444b3275cf60fd6f62d96a95f6b95b8580dbd21a24ee88fc34e409c7a4",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [
@@ -3295,9 +3281,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "bilingual_spatial_decision_frontstage_r54",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 changes answer order and backlinks on bilingual reading surfaces only. Presentation clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3327,9 +3313,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "e789ef6842f0164801b38805496208ecb23f1534e576b6bf82dcb223511da0c6",
+        "digest": "62ff76513b26be014b548b8385f70dda6d396428923903ec7d9c8aefb7c98592",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [
@@ -3387,9 +3373,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "bilingual_spatial_decision_frontstage_r54",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 changes answer order and backlinks on bilingual reading surfaces only. Presentation clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3419,9 +3405,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "532a3011589f433e85edeb89faaacb1d441551e65809c3e126857427fb7e759c",
+        "digest": "866ea2d90a52a84537ead9b4cd8fb71906d86e58b0ecf22f6c8d6cd923615fff",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3460,9 +3446,9 @@
         }
       ],
       "generation_recipe": {
-        "status": "bilingual_spatial_decision_frontstage_r54",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 changes answer order and backlinks on bilingual reading surfaces only. Presentation clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3491,9 +3477,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "2e5cda8b9eaf2041523eeb6a83882740cc2004b639a7f4b2aa256bfb03c5dcfe",
+        "digest": "6d52f2aeae0755bc6b008af27145b802ffb1a930053e1b1651d5f2f4a3f872aa",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3517,23 +3503,20 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
-        "TOOL-CHROME",
-        "TOOL-FONTTOOLS",
-        "TOOL-PILLOW",
-        "TOOL-PYMUPDF",
         "TOOL-PYTHON",
-        "TOOL-REPORTLAB"
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
       ],
       "embedded_components": [
         {
-          "component_ref": "source-rights-evidence.json#FONT-HELVETICA-R19-RESOURCE",
-          "state": "referenced_not_embedded_visible_publication_text"
+          "component_ref": "source-rights-evidence.json#FONT-PDF-R55-LOCAL-SUBSETS",
+          "state": "embedded_subsets_pending_independent_licence_review"
         }
       ],
       "generation_recipe": {
-        "status": "deterministic_fixed_page_rebuild_round_54",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 recomposes four fixed-page publications without adding pages. Two byte-identical builds and 44-page QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, approval, maturity or rights clearance."
+        "status": "deterministic_fixed_page_rebuild_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 recomposes four fixed-page publications from existing package assets without adding pages. Two byte-identical builds and 44-page QA prove reproducibility and legibility only, not font licence, embedded-asset rights, field fact, accessibility, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -3563,9 +3546,9 @@
       "origin_status": "generated_derivative_pending_embedded_asset_audit",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "c04800cdf762dcfbca209aa2858506c9d68d7f19560386c916bc3caf6df3b42b",
+        "digest": "83db54a01baede32389d04c3f334af3ae90f2458b93d2758fbf3da4117a7197e",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [],
@@ -3603,23 +3586,20 @@
         "source_evidence_ref": "source-rights-evidence.json#source_records"
       },
       "tool_ids": [
-        "TOOL-CHROME",
-        "TOOL-FONTTOOLS",
-        "TOOL-PILLOW",
-        "TOOL-PYMUPDF",
         "TOOL-PYTHON",
-        "TOOL-REPORTLAB"
+        "TOOL-PYMUPDF",
+        "TOOL-PILLOW"
       ],
       "embedded_components": [
         {
-          "component_ref": "source-rights-evidence.json#FONT-HELVETICA-R19-RESOURCE",
-          "state": "referenced_not_embedded_visible_publication_text"
+          "component_ref": "source-rights-evidence.json#FONT-PDF-R55-LOCAL-SUBSETS",
+          "state": "embedded_subsets_pending_independent_licence_review"
         }
       ],
       "generation_recipe": {
-        "status": "deterministic_fixed_page_rebuild_round_54",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 recomposes four fixed-page publications without adding pages. Two byte-identical builds and 44-page QA prove reproducibility and legibility only, not font licence, field fact, accessibility certification, approval, maturity or rights clearance."
+        "status": "deterministic_fixed_page_rebuild_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 recomposes four fixed-page publications from existing package assets without adding pages. Two byte-identical builds and 44-page QA prove reproducibility and legibility only, not font licence, embedded-asset rights, field fact, accessibility, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -7831,9 +7811,9 @@
       "origin_status": "package_authored_pending_independent_review",
       "content_identity": {
         "algorithm": "sha256",
-        "digest": "fae20adcb053e602b118214a18fa4c6a9bd94123ef71f515259201a06f8791cd",
+        "digest": "252fc1aef4e04264dd4ad1a2273554aa467b9289a3b0547cbde8199ec691476f",
         "digest_status": "matches_final_manifest_after_refresh",
-        "reason": "SHA-256 is computed from final Round 54 bytes and refreshed into manifest.json after ledger finalization."
+        "reason": "SHA-256 is computed from final Round 55 bytes and refreshed into manifest.json after ledger finalization."
       },
       "source_lineage": {
         "source_ids": [],
@@ -7849,9 +7829,9 @@
       ],
       "embedded_components": [],
       "generation_recipe": {
-        "status": "round_54_provenance_and_disclosure_closure",
-        "evidence_ref": "../../agent.json#round_54_provenance",
-        "limitation": "Round 54 updates package-authored provenance and disclosure records only. Structural coverage and hashes prove auditability, not legal clearance, field evidence, professional acceptance, approval or maturity."
+        "status": "front_backstage_compression_round_55",
+        "evidence_ref": "../../agent.json#round_55_provenance",
+        "limitation": "Round 55 compresses bilingual reading hierarchy and disclosure records only. Editorial clarity proves no public feedback, field result, professional acceptance, approval, maturity or rights clearance."
       },
       "review_state": {
         "independent_file_level_audit": "not_started",
@@ -8693,16 +8673,16 @@
     },
     {
       "id": "RIGHTS-THIRD-06",
-      "material": "Visible Base-14 Helvetica references in the four Round 52 PDFs",
+      "material": "Historical visible Base-14 Helvetica references in the superseded Round 52 PDFs",
       "scope": [
         "drawings/a3-booklet.pdf",
         "drawings/a3-booklet.en.pdf",
         "drawings/a0-boards.pdf",
         "drawings/a0-boards.en.pdf"
       ],
-      "embedding_state": "referenced_not_embedded_visible_route_labels",
-      "status": "font_resolution_and_terms_not_independently_audited",
-      "limit": "Read-only inspection finds 280 visible Helvetica spans across the four Round 52 PDFs. No Helvetica font program is embedded. The producing environment and applicable terms remain independently unaudited."
+      "embedding_state": "historical_superseded_by_round_55",
+      "status": "historical_font_resolution_and_terms_not_independently_audited",
+      "limit": "Read-only inspection found 280 visible Helvetica spans across the four Round 52 PDFs. Those PDF bytes were replaced in Round 55; this record is historical and establishes no licence compliance."
     },
     {
       "id": "RIGHTS-THIRD-07",
@@ -8725,14 +8705,28 @@
     },
     {
       "id": "RIGHTS-THIRD-09",
-      "material": "Visible Heiti CID references in the two Round 52 Chinese PDFs",
+      "material": "Historical visible Heiti CID references in the superseded Round 52 Chinese PDFs",
       "scope": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
-      "embedding_state": "referenced_not_embedded_visible_publication_text",
-      "status": "font_resolution_and_terms_not_independently_audited",
-      "limit": "Read-only inspection finds 118 visible Heiti CID spans using china-s / UniGB-UTF16-H in the two Round 52 Chinese PDFs. No Heiti font program is embedded. Historical local QA substitution records do not represent embedded final-PDF fonts. The producing environment and applicable terms remain independently unaudited."
+      "embedding_state": "historical_superseded_by_round_55",
+      "status": "historical_font_resolution_and_terms_not_independently_audited",
+      "limit": "Read-only inspection found 118 visible Heiti CID spans using china-s / UniGB-UTF16-H in the two Round 52 Chinese PDFs. Those PDF bytes were replaced in Round 55; this record is historical and establishes no licence compliance."
+    },
+    {
+      "id": "RIGHTS-THIRD-10",
+      "material": "Local font subsets visible in the four current Round 55 PDFs",
+      "scope": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
+      ],
+      "component_ref": "source-rights-evidence.json#FONT-PDF-R55-LOCAL-SUBSETS",
+      "embedding_state": "embedded_or_vector_renderer_subset_visible",
+      "status": "font_versions_licences_embedding_and_redistribution_not_independently_audited",
+      "limit": "Round 55 primary publication text embeds local Microsoft YaHei Regular/Bold or Arial Regular/Bold subsets. Vector-inserted package SVGs additionally expose locally rendered Times-Roman, Droid Sans Fallback, Noto Sans Math/Symbols and small Helvetica subsets. No standalone font file is shipped; the package remains not_fully_cleared."
     }
   ],
   "unresolved_items": [
