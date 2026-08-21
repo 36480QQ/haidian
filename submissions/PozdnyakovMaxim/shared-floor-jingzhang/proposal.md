@@ -343,11 +343,7 @@ A/B/H 空间不变量为：同入口/任务，同尺度可拆 A/B 位，无手�
 
 联合审查政策仅作未来程序语境；12 道凭证门由参赛者交付台账定义，不表示本方案已经进入审查。[source:BEIJING-URBAN-RENEWAL-JOINT-REVIEW-2024] [metric:delivery_permit_gate_count]
 
-#### P0 可逆空间试点：分期、责任与验收
-
-在走廊四段分期内，P0 把大钟寺站前共享檐的一跨可撤试点接入可交接路径：T00 是第 1 周前文件条件，获接受后 T01–T11 才形成第 1–15 周条件参考程序。[data:visual/assets/delivery-p0-implementation-contract.json] [metric:delivery_conditional_program_timed_activity_count] [metric:delivery_conditional_program_reference_week_count] 12 类未来角色以 12 项 RACI 做到每项一个 Accountable，并分开服务/数据与权利/安全两钥匙。[metric:delivery_raci_role_class_count] [metric:delivery_raci_single_accountability_ratio] [assumption:A-DELIVERY-001] 16 行未计价数量、12 份逐门交接和 12 项验收指标，把一跨装配、连续 H 路、无手机同任务、无障碍、回退、投诉、复原与非劣效串到同一退出终点。[metric:delivery_quantity_line_count] [metric:delivery_gate_handoff_template_count] [metric:delivery_acceptance_indicator_count]
-
-*证据边界。* 上述为未签署、未批准的参赛者模板，不是协议、审批、报价、任命、咨询或开工承诺；未来角色任命、外部凭证回执、正式单价记录和带获授权现场值的指标仍为空。具名运营者、专业签署和供应商报价同样不存在。[metric:delivery_named_operator_count] [metric:delivery_professional_signoff_count] [metric:delivery_vendor_quote_count] 获授权现场基线不存在；12 道外部许可与责任门保持 `HOLD`，错误场地、施工或开放放行为 0。[metric:delivery_field_baseline_count] [metric:delivery_external_gate_hold_count] [metric:delivery_unsafe_site_release_count]
+一份未签署、未批准的参赛者交接模板把 T00 文件前提、T01–T11 条件参考时序、12 类未来角色的 RACI、16 行未计价数量、12 份逐门交接与 12 项验收指标固化为可核查工件；具名任命、报价、咨询与开工承诺均为空，任一凭证缺失即整体保持 `HOLD`。[data:visual/assets/delivery-p0-implementation-contract.json] [assumption:A-DELIVERY-001]
 
 P0 站前共享檐保留 36×36 米筛查、16×16 米可逆地面、8×8 米可拆一跨及完整装配—退役序列。[data:visual/assets/delivery-p0-station-porch.json]
 
