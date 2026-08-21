@@ -413,8 +413,8 @@
       ],
       "not_usable_for": [
         "主张对该字体的任何权利",
-        "证明拉丁字形的来源（PDF 内见 FONT-PDF-BASE14，栅格图件内见 FONT-HELVETICA-RASTER）",
-        "证明栅格图件的中文字形来源（见 FONT-STHEITI-RASTER）"
+        "证明拉丁字形的来源（PDF 内见 FONT-PDF-BASE14，栅格图件内见 FONT-NOTO-RASTER）",
+        "证明栅格图件的中文字形来源（见 FONT-NOTO-RASTER）"
       ],
       "limitations": "PDF 内容流沿用原有排版，仅替换字体程序；字体名对象已同步由 STSong-Light 改为 NotoSerifSC，使文件自述与实际嵌入字形一致。字体文件本身不随包提交（投稿目录不接受 .ttf 扩展名），凭上述 URL 与 sha256 可独立取得并复核。",
       "registry_source_id": null,
@@ -436,14 +436,14 @@
       "spatial_coverage": "不适用",
       "temporal_coverage": "不适用",
       "license_or_reuse_terms": "PDF 规范规定的基础十四款字体，按字体名引用，不在文件中嵌入或再分发任何字体文件，因此本包不承载这部分字体的授权义务。",
-      "usage": "四套图纸 PDF 中全部拉丁文字（页眉编号、页脚、英文标签）。不含栅格图件——图件的拉丁文字见 FONT-HELVETICA-RASTER。",
+      "usage": "四套图纸 PDF 中全部拉丁文字（页眉编号、页脚、英文标签）。不含栅格图件——图件的拉丁文字见 FONT-NOTO-RASTER。",
       "usable_for": [
         "证明四套 PDF 中的拉丁文字与符号不依赖任何需授权的第三方字体文件",
         "说明四套 PDF 中剩余 emb=no 条目的性质"
       ],
       "not_usable_for": [
         "证明 CJK 字形的来源",
-        "证明栅格图件中拉丁字形的来源（图件未走按名引用，而是加载系统字体文件栅格化，见 FONT-HELVETICA-RASTER）",
+        "证明栅格图件中拉丁字形的来源（图件未走按名引用，而是读取仓库外工具链目录的 OFL 字体文件栅格化，见 FONT-NOTO-RASTER）",
         "证明打印效果或字距在任意阅读器中一致"
       ],
       "limitations": "emb=no 意味着字形由阅读器提供。与中文字体不同，基础十四款字体是 PDF 规范要求符合规范的阅读器自行提供的，因此不构成显示风险；本包选择不嵌入其替代实现，以免在文件中以 Helvetica 之名承载另一铸字厂的字形。不同阅读器的度量差异可能造成拉丁文字的轻微字距差别。",
@@ -496,7 +496,7 @@
       "spatial_coverage": "不适用",
       "temporal_coverage": "该版本协议文本；本机所用 macOS 版本的协议随系统提供",
       "license_or_reuse_terms": "Apple 公开发布的许可协议文本；本包只引用其中一条并注明出处，不复制全文。",
-      "usage": "为 FONT-STHEITI-RASTER 与 FONT-HELVETICA-RASTER 两条提供**可核验的许可条款出处**。此前这两条只写了本包的行为（未再分发字体文件），没有指出允许该行为的条款在哪；本条补上这一半。",
+      "usage": "为 FONT-STHEITI-RASTER 与 FONT-HELVETICA-RASTER 两条**历史登记**提供可核验的许可条款出处。**2026-08-17 起本条同样不再是任何现行交付物的权利依据**——全部栅格产物已迁到 OFL-1.1 的 Noto（见 FONT-NOTO-RASTER），本条随那两条一并转为历史。此前这两条只写了本包的行为（未再分发字体文件），没有指出允许该行为的条款在哪；本条补上这一半。",
       "observations": [
         {
           "id": "apple_sla_clause_e_fonts_verbatim",
@@ -515,7 +515,8 @@
         "作为法律意见或对本包用法的合规结论",
         "主张 Apple 对本包的用法作过任何认可",
         "推断本机所用 macOS 版本协议的逐字内容（本条引用的是可公开下载的那一版）",
-        "覆盖任何**嵌入**了 Apple 字体的情形——本包不存在这种情形，四套 PDF 嵌入的是 OFL 的 Noto Serif SC"
+        "覆盖任何**嵌入**了 Apple 字体的情形——本包不存在这种情形，四套 PDF 嵌入的是 OFL 的 Noto Serif SC",
+        "作为当前任何交付物的权利依据（2026-08-17 起全部栅格产物已迁至 FONT-NOTO-RASTER）"
       ],
       "limitations": "该条允许「display and print content」，本包的用法是把字形渲染为 PNG 像素并随包分发这些像素。**「生成并分发像素产物」与「display and print」之间的对应关系，是参赛者对条款的理解，不是法律意见**，也未取得 Apple 的任何确认；如需正式结论应由法律专业人员判断。本条能被独立核验的部分是：包内不含任何字体文件（`find <包> -name '*.tt[cf]' -o -name '*.otf'` 结果为 0），四套 PDF 中 emb=yes 的中文字体只有 NotoSerifSC（`pdffonts` 可查），**即本包确实没有嵌入任何 Apple 字体**。",
       "registry_source_id": null,
@@ -1096,7 +1097,7 @@
       ],
       "not_usable_for": [
         "主张对这些字体的任何权利",
-        "证明 assets/figures/ 下 26 张栅格图件的字形来源（中文见 FONT-STHEITI-RASTER，拉丁见 FONT-HELVETICA-RASTER）",
+        "证明 assets/figures/ 下 26 张栅格图件的字形来源（见 FONT-NOTO-RASTER）",
         "证明四套 PDF 的中文字形来源（见 FONT-NOTO-SERIF-SC）"
       ],
       "limitations": "本条**仅**覆盖 assets/media/cover.png 一张图；assets/figures/ 下的 24 张 PNG 与 2 张 JPEG 见 FONT-NOTO-RASTER，两条同属 OFL-1.1 家族但由不同生成器渲染，故分条登记、范围不重叠。栅格产物无法反查字形来源，可独立核验的是「包内不含任何字体文件」与上列逐款 sha256。",
