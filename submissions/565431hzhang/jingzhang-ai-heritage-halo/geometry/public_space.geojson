@@ -14,7 +14,8 @@
         "public_space_type": "plaza",
         "name_zh": "众智园AI创新广场",
         "area_sqm_declared": 42818.137,
-        "access_rule": "registration_free_equal_no_app_route"
+        "access_rule": "registration_free_equal_no_app_route",
+        "node_type": "innovation_plaza"
       },
       "geometry": {
         "type": "Polygon",
@@ -294,9 +295,10 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "public_space_type": "plaza",
-        "name_zh": "AI原点社区广场",
+        "name_zh": "原点社区广场",
         "area_sqm_declared": 29746.938,
-        "access_rule": "registration_free_equal_no_app_route"
+        "access_rule": "registration_free_equal_no_app_route",
+        "node_type": "community_plaza"
       },
       "geometry": {
         "type": "Polygon",
@@ -578,7 +580,8 @@
         "public_space_type": "plaza",
         "name_zh": "大钟寺AI城市客厅",
         "area_sqm_declared": 29764.747,
-        "access_rule": "registration_free_equal_no_app_route"
+        "access_rule": "registration_free_equal_no_app_route",
+        "node_type": "civic_living_room"
       },
       "geometry": {
         "type": "Polygon",
@@ -858,9 +861,10 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "public_space_type": "activity_node",
-        "name_zh": "京张绿廊活动节点1",
+        "name_zh": "先问台公共前场",
         "area_sqm_declared": 19050.802,
-        "access_rule": "registration_free_equal_no_app_route"
+        "access_rule": "registration_free_equal_no_app_route",
+        "node_type": "ask_first_desk"
       },
       "geometry": {
         "type": "Polygon",
@@ -1140,9 +1144,10 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "public_space_type": "activity_node",
-        "name_zh": "京张绿廊活动节点2",
+        "name_zh": "人工接手亭公共前场",
         "area_sqm_declared": 19047.239,
-        "access_rule": "registration_free_equal_no_app_route"
+        "access_rule": "registration_free_equal_no_app_route",
+        "node_type": "human_takeover_pavilion"
       },
       "geometry": {
         "type": "Polygon",
@@ -1422,9 +1427,10 @@
         "confidence": "medium",
         "geometry_role": "design_proposal",
         "public_space_type": "activity_node",
-        "name_zh": "京张绿廊活动节点3",
+        "name_zh": "公开改进墙公共前场",
         "area_sqm_declared": 19043.126,
-        "access_rule": "registration_free_equal_no_app_route"
+        "access_rule": "registration_free_equal_no_app_route",
+        "node_type": "public_change_log"
       },
       "geometry": {
         "type": "Polygon",
