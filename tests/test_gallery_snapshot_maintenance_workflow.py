@@ -34,21 +34,28 @@ class GallerySnapshotMaintenanceWorkflowTests(unittest.TestCase):
         self.assertIn("tests.test_prelaunch_check", self.workflow)
 
     def test_uses_stable_branch_and_safe_force_lease(self) -> None:
-        self.assertIn(
-            "MAINTENANCE_BRANCH: codex/refresh-gallery-after-pr-868", self.workflow
-        )
+        self.assertIn("MAINTENANCE_BRANCH: automation/gallery-snapshot", self.workflow)
+        self.assertNotIn("codex/refresh-gallery-after-pr-868", self.workflow)
         self.assertIn('git ls-remote --exit-code origin "refs/heads/${branch}"', self.workflow)
-        self.assertIn("forbids", self.workflow)
+        self.assertIn("ruleset", self.workflow)
         self.assertIn("git push --force-with-lease=", self.workflow)
         self.assertNotIn("0000000000000000000000000000000000000000", self.workflow)
         self.assertNotIn("HEAD:refs/heads/main", self.workflow)
 
     def test_missing_maintenance_branch_fails_with_bootstrap_instructions(self) -> None:
-        self.assertIn("bootstrap-required=true", self.workflow)
+        self.assertIn("bootstrap_required=true", self.workflow)
         self.assertIn("GITHUB_STEP_SUMMARY", self.workflow)
         self.assertIn("One-time bootstrap", self.workflow)
         self.assertIn("administrator must create it", self.workflow)
         self.assertIn("git push origin origin/main:refs/heads/${branch}", self.workflow)
+        self.assertIn("gallery-snapshot-bootstrap-handoff", self.workflow)
+        self.assertIn("bootstrap-required.txt", self.workflow)
+        self.assertIn("Fail closed: the canonical gallery maintenance ref is missing", self.workflow)
+
+    def test_snapshot_failures_are_not_masked_by_continue_on_error(self) -> None:
+        self.assertIn("id: snapshot\n        continue-on-error: true", self.workflow)
+        self.assertIn("steps.snapshot.outcome == 'failure'", self.workflow)
+        self.assertIn("steps.snapshot.outputs.bootstrap_required != 'true'", self.workflow)
 
     def test_only_opens_draft_pr_when_snapshot_changed(self) -> None:
         self.assertIn('echo "changed=false"', self.workflow)

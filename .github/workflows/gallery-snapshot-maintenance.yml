@@ -15,11 +15,10 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  # The repository ruleset allows updates to existing refs but forbids
-  # creating new branches. Reuse the pre-existing maintainer branch that
-  # already carried the gallery refresh workflow instead of creating a new
-  # automation ref on every first run.
-  MAINTENANCE_BRANCH: codex/refresh-gallery-after-pr-868
+  # The canonical maintenance ref is administrator-bootstrapped once. The
+  # workflow may update it, but it must fail closed if a ruleset or cleanup
+  # removes it instead of depending on a historical PR branch forever.
+  MAINTENANCE_BRANCH: automation/gallery-snapshot
 
 jobs:
   refresh:
@@ -35,6 +34,7 @@ jobs:
 
       - name: Generate and publish maintenance branch
         id: snapshot
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
@@ -49,6 +49,9 @@ jobs:
           # GITHUB_TOKEN: it cannot satisfy the admin-only branch-creation rule.
           if ! git ls-remote --exit-code origin "refs/heads/${branch}" >/dev/null 2>&1; then
             message="${branch} does not exist. An administrator must create it from trusted main before this workflow can publish a review PR."
+            handoff_dir="${RUNNER_TEMP}/gallery-snapshot-bootstrap-handoff"
+            rm -rf "${handoff_dir}"
+            mkdir -p "${handoff_dir}"
             {
               echo "### Gallery snapshot maintenance blocked"
               echo
@@ -60,8 +63,17 @@ jobs:
               echo
               echo "Then re-run this workflow with workflow_dispatch."
             } >> "${GITHUB_STEP_SUMMARY}"
+            {
+              echo "repository=${GITHUB_REPOSITORY}"
+              echo "source_main_sha=${GITHUB_SHA}"
+              echo "maintenance_branch=${branch}"
+              echo "generated_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+              echo "status=bootstrap-required"
+            } > "${handoff_dir}/metadata.txt"
+            printf '%s\n' "${message}" > "${handoff_dir}/bootstrap-required.txt"
+            echo "handoff_dir=${handoff_dir}" >> "${GITHUB_OUTPUT}"
             echo "::error title=Maintenance branch bootstrap required::${message}"
-            echo "bootstrap-required=true" >> "${GITHUB_OUTPUT}"
+            echo "bootstrap_required=true" >> "${GITHUB_OUTPUT}"
             exit 1
           fi
           git fetch origin "refs/heads/${branch}:refs/remotes/origin/${branch}"
@@ -104,6 +116,30 @@ jobs:
           git push --force-with-lease="refs/heads/${branch}:${expected}" \
             origin "HEAD:refs/heads/${branch}"
           echo "changed=true" >> "${GITHUB_OUTPUT}"
+
+      - name: Upload bootstrap handoff when maintenance ref is unavailable
+        if: always() && steps.snapshot.outputs.bootstrap_required == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: gallery-snapshot-bootstrap-handoff-${{ github.sha }}
+          path: ${{ steps.snapshot.outputs.handoff_dir }}
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Fail closed when maintenance ref bootstrap is required
+        if: always() && steps.snapshot.outputs.bootstrap_required == 'true'
+        shell: bash
+        run: |
+          echo "Fail closed: the canonical gallery maintenance ref is missing."
+          echo "The bootstrap handoff artifact contains the exact source main SHA and administrator instructions."
+          exit 1
+
+      - name: Fail closed when snapshot generation fails
+        if: always() && steps.snapshot.outcome == 'failure' && steps.snapshot.outputs.bootstrap_required != 'true'
+        shell: bash
+        run: |
+          echo "Fail closed: gallery snapshot generation or publication failed before a review handoff was ready."
+          exit 1
 
       - name: Open or update snapshot maintenance PR
         id: pr
