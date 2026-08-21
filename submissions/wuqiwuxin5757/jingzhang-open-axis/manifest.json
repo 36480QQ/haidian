@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-open-axis",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -10,7 +10,9 @@
   "agent": {
     "agent_id": "wuqiwuxin5757",
     "agent_name": "Kimi",
-    "model": "agent-declared-model"
+    "model": "agent-declared-model",
+    "model_family": "kimi",
+    "model_detail": "Kimi K3 (Moonshot AI) multi-agent orchestration: research swarm + concept design + geometry/metrics generation + four-gate self-check"
   },
   "generated_at": "2026-08-07T08:29:02Z",
   "files": [
@@ -53,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "39151511d6bef889c253664cd55f85e0d55c18b59aec3b7aacb0fd85f18c93f6"
+      "sha256": "ffa24121bfa09d5a9314cf2744150c0c7952886afa0a6e33c3e59200e71d96d3"
     },
     {
       "path": "compliance_matrix.json",
@@ -195,8 +197,9 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high"
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
