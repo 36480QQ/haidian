@@ -14,6 +14,11 @@ iteration: "v2.0"
 
 *Centennial Jing-Zhang AI Innovation Belt urban design · open-call submission · KUN-SAL Urban Science Lab*
 
+> **Core proposition: when the constraint cannot be changed, what can design still do?**
+> Our answer: turn constraints into the conditions for emergence — **measure the disease first** (28 local computations), **then prescribe** (stitching + entanglement + unlocking), **and finally prove the medicine works** (Emergence Index EI 0.795 → 0.9625, all three gates PASS).
+> Three verification points: ① every number is recomputable (formulas and source files registered); ② every node has measured coordinates (7 breaks, c2 corridor scan); ③ every uncertainty is honestly flagged provisional — unmeasured is not zero, and no average improvement offsets a single failure.
+> **The recursivity of emergence: this is not a blueprint — it is a system that keeps emerging.** The 28 computations are its senses, the three gates its immune system, the Emergence Index its health metric. When official red lines arrive, it does not need to be redesigned — only recomputed. That is the true meaning of "emergence": not that we produced a plan, but that the plan itself can keep emerging.
+
 In 1909, facing the extreme gradient of Badaling, Zhan Tianyou did not "build a flatter line" — he invented the switchback, **letting the train find its own path within the constraint**. That was the first time a Chinese engineer answered the question: when the constraint cannot be changed, what can design still do?
 
 One hundred and seventeen years later, the same question stands on the Jing-Zhang corridor. The constraints have changed — no longer mountains, but seven arterial roads, university walls, existing-stock property rights. But the question has not — **when the constraint cannot be changed, what can design still do?**
@@ -30,17 +35,20 @@ The entire work of this proposal is to walk that "machine" from end to end: **me
 
 ## Executive Summary & Design Decisions
 
-**The conclusion up front (what a reviewer can take away in 90 seconds)**: the belt's skeleton is healthy (fractal dimension D=1.746 in the healthy band [metric:C6_FRACTAL.dimension]); its only problem is that the conditions for growth are blocked at three points — **severed connectivity, jobs-housing imbalance, ecological gaps**. Every action in this plan removes one of those three blocks, and **every removal is proven, not asserted**.
+**This plan does one thing: let a belt emerge.** Emergence is not the result — it is the method: from the bottom-up data of 25,476 POIs and 7 measured breaks, through CA / syntax / percolation / Wilson computation, emerge seven stitches, three spatial identities, 42 redistributed cells, and one main path. Emergence is not the endpoint — it is recursion: EI re-runs annually, provisional items upgrade to verified, the plan itself keeps generating. Emergence is not decoration — it is responsibility: every scenario has a no-AI equivalent path, every node has a stop condition, every number is recomputable. **One belt. Emergent by design.**
 
-| The reviewer asks | Our answer | Verifiable artifact |
+**We do not start from a conclusion — we start from data.** 25,476 Amap POIs, 7 measured corridor breaks (c2 scan), 5,720 OSM network nodes — feed these into computation, and what emerges is not our design intent but the belt's own demands: it needs **stitching** (percolation giant fraction 0.840, thin safety margin above p_c=0.5927, needs +7.7%), **entanglement** (jobs-housing entropy 7.454, below threshold, needs +5.3%), and **unlocking** (CA 60-step no-intervention = 0 cell change, path locked, needs 42 cells redistributed). **Every action in this plan is not "our decision" — it is "what the data demands".**
+
+| What the data emerges | What we do | Verifiable artifact |
 |---|---|---|
-| What is actually wrong? | Healthy skeleton, three blocks (connectivity / jobs-housing / ecology) | EI0=0.795 four-subindex panel (E_link 0.62 yellow / E_entangle 0.75 yellow / E_ecosys 0.77 yellow) [metric:EI.ei1.value] |
-| What is the prescription? | Stitch (percolation+syntax) + entangle (jobs-housing) + unlock (CA) — **combination is the only solution** | Three gates: percolation 0.840→0.904 / syntax +36% / jobs-housing entropy +5.3% [metric:GATE.*] |
-| Does it work? | Emergence Index 0.795 → **0.9625 all-green**
-| Is it over-claiming? | **Deliberately withheld**: statutory FAR, official red lines, engineering alignments — pending official data | Data-gap matrix (8 gap classes all marked "pending official data") |
-| Adverse reading? | **Stitching does not change network λ** (24.76%→24.76%); redundancy R rises 0.826→0.870 (more mixed, not more "precise") | c32 K008 [metric:C32_LAMBDA_STITCHED] + c29 redundancy [metric:C29_REDUNDANCY] |
+| Percolation 0.840 < safe zone | Seven stitches (locations from c2 break-detection coordinates) | Percolation 0.840→0.904 (+7.7%) [metric:GATE.bluegreen_giant_frac] |
+| Jobs-housing entropy 7.454 < threshold | Entanglement (locations from c28 entropy gap analysis) | Entropy 7.454→7.85 (+5.3%) [metric:C28_LUTI] |
+| CA path locking = 0 change | Unlocking (locations from c33 capacity check, adaptive seed) | 42 cells redistributed, commercial +35/+21% [metric:C12_CA] |
+| Syntax integration low | Spine stitching | Syntax gain +36% mean (Dazhongsi +70 / Wudaokou +43) [metric:C4_SYNTAX] |
+| EI panel 0.795 yellow | Combined prescription S4 | EI 0.795→**0.9625 all-green** [metric:EI.ei1_design_S4] |
+| **λ is diagnostic, not a lever** | **Stitching does not change λ (24.76%→24.76%)** — adverse reading honestly reported | c32 K008 [metric:C32_LAMBDA_STITCHED] |
 
-**Six-ring navigation**: Worldview (vision / dual clock / seven principles) → Diagnosis (five-scientist consultation / syntax / LUTI / ecology) → Mechanism (three causal laws) → Prescription (master plan / key areas / subsystems) → Verification (three-model cross-check / three gates / EI) → Operation (emergent brain / investment / metrics / conclusion). Each chapter ends with a "Ring conclusion →" that passes its output to the next ring.
+**Six-ring navigation (emergence logic)**: **Data ring** (bottom inputs: 25,476 POIs / 7 breaks / 5,720 nodes) → **Pattern ring** (what patterns emerge from data: λ supercritical, percolation deficit, jobs-housing imbalance, path locking) → **Rule ring** (what rules we set for computation: CA local rules / syntax integration / percolation adjacency buffer / Wilson interaction) → **Generation ring** (what design solutions computation emerges: seven stitches / three-area adaptive seed / main path / 42 cells) → **Falsification ring** (is the emerged solution falsifiable: three gates PASS/FAIL, EI sensitivity intervals, five rejection demonstrations) → **Recursion ring** (how the system keeps self-updating: Emergent Brain annual re-runs / EI published / provisional→verified upgrade path). Each chapter ends with a "Ring conclusion →" that passes its output to the next ring.
 
 **Naming**: THE EMERGENT BELT — Jing-Zhang Hyper Line (Hyper = superlinear β>1; Emergent = bottom-up emergence). Logo: "the superlinear line" — a straight railway curving upward.
 
@@ -52,7 +60,7 @@ The entire work of this proposal is to walk that "machine" from end to end: **me
 
 ## Vision & Goals (Worldview ring)
 
-**Vision (three heights, one goal) — with THE EMERGENT BELT as the paradigm**: make Centennial Jing-Zhang the world's first AI innovation belt fully designed by urban science — computable, evolvable, human-serving — a belt that truly EMERGES: not drawn, but grown by rules (a superlinear soul on a sublinear skeleton).
+**Vision (three heights, one goal) — with THE EMERGENT BELT as the paradigm**: make Centennial Jing-Zhang the world's first AI innovation belt fully designed by urban science — computable, evolvable, human-serving — a belt that truly EMERGES: not drawn, but grown by rules (a superlinear soul on a sublinear skeleton). Others submit "blueprints"; we submit a "recursive city operating system" — a living system where inputs change, outputs follow; red lines arrive, the whole package recalculates. Asked "how do we know the belt succeeded in five years", our answer is not adjectives but four numbers: percolation giant fraction ≥0.90, syntax anchor integration gain ≥30%, jobs-housing entropy ≥+4%, EI recomputed and published annually [metric:GATE.bluegreen_giant_frac].
 
 **The dual clock**: the high-frequency city ticks in seconds/days/months (25,476 Amap POIs are its heartbeat); the low-frequency city settles in years/decades (control plans, red lines, property rights are its skeleton). A design that sees only one clock mistakes transient phenomena for permanent structure, or permanent constraints for ignorable ones.
 
@@ -159,7 +167,7 @@ art15 (Batty LUTI) three-level nesting, completed in this plan [standard:luti]:
 
 **Ring conclusion →** Entanglement is quantifiable and verifiable, but must combine with stitching. The Mechanism ring consolidates three causal laws.
 
-![Land-use / live-work board](assets/figures/land-use-structure.png)
+![Emergent-rule zoning board: Catalyst / Free / Stable / Protected / Boundary roles + 54 CA cells at measured coordinates (dot color = emergence direction)](assets/figures/land-use-structure.png)
 
 ---
 
@@ -174,6 +182,8 @@ Functional deviation (c8) five deficit categories: finance −63%, research −4
 ---
 
 ## Master Plan Scope: Urban Renewal & Regulatory-depth Design (Mechanism + Prescription rings)
+
+**Methodological position: mosaic renewal + toolbox elastic planning.** Dominique Perrault's "City of Tomorrow" for the Handan steelworks (2020 international competition, first prize) proved two things: ① restoring and reusing old industrial transport systems (rail tracks, pedestrian bridges) can define the skeleton of a new urban network — our spine stitching and embedded rails are exactly this method applied to the Jing-Zhang corridor; ② a data-driven strategic planning plane replaces rigid regulatory zoning, with functional zones computed directly from field data and reorganized as parameters change — our provisional tagging discipline and "full recalculation on official data" commitment are the tooling of that same elastic-planning philosophy. Perrault calls it the "toolbox" (Boîte à outils); we call it "computable emergence" — the same philosophy: not a rigid blueprint, but an iterable, recomputable, growable city operating system.
 
 **Three mechanisms (each a reproducible "why")**: sever→stitch (percolation 0.840→0.904 crosses the phase change); empty-shell→paired backfill (jobs-housing entropy +5.3%); lock→unlock (CA redistributes 42 cells) [metric:C2_PERC].
 
@@ -211,6 +221,24 @@ Functional deviation (c8) five deficit categories: finance −63%, research −4
 
 ## Key-Area Detailed Design (Prescription ring)
 
+**Spatial narrative: the spine is not a line — it is an emergent spatial structure.** Learning from the High Line's "slow linear wander" and Superkilen's "three-color rhythm", the spine is not a uniform corridor but a sequenced composition — three movements (three areas) each with a spatial character, seven notes (seven stitches) each with a distinct entrance. But the true organizing principle is not "rhythm" — it is **recursion**: the embedded rails are the invariant ground rule; the functional modules above (scenario cards) are cells that can be born, closed, and replaced. Space is not designed — it is grown from rules. The detailed designs below are not "final states" but "initial conditions" — given the rules, space self-organizes through use.
+
+**Three movements, three spatial identities:**
+
+| Area | Spatial identity | Core concept | Lineage |
+|---|---|---|---|
+| Zhongzhiyuan (north) | **Quantum Garden** | Garden is not decoration — it is the research infrastructure. Test bands, shared labs and apartments embedded in terrain; bounded testing in a garden | Perrault · Heritage Island |
+| Origin Community (mid) | **Origin Living Room** | Not a commercial center — the city's public living room. Qinghuayuan Station (1909) is its fireplace, the campus-edge gallery its bookshelf, the university boundary its porch | Perrault · Hotel Metropole |
+| Dazhongsi (south) | **Interface Gate** | Southern gateway — the exchange interface between city and belt. Quadrant stitching is its hinge, the luminous front its door face, evening classes its porch light | BIG · Superkilen |
+
+**Design method declaration: space is not drawn — it is computationally generated.** Every spatial decision in this proposal has a computational origin, not derived from a function checklist: the seven stitch locations come from c2 corridor break detection (geometry + road class, measured — not chosen by intuition); the three-area new-build / infill / disposal classification comes from c33 capacity check (adaptive seed — not one-size-fits-all); the land-use structure comes from c7 POI survey (25,476 POIs — not statutory zoning templates); the jobs-housing infill locations come from c28 entropy gap analysis (fill what is missing — not uniform redistribution); the stitching effect is verified by c2b percolation + c4 syntax (dual gates PASS — not self-declared). **The designer's role is not to draw, but to set rules and objective functions for computation, then select the optimal output.** This is not rhetoric — every number in this document traces back to `研究数据/计算/*.json` and `metrics.json` formula registrations.
+
+**Case study: CA emergence as spatial generation for "Quantum Garden" (c12 simulation).** Set 100m cells with states (empty / locked / residential / research-office / commercial / education), POI-driven bottom-up initial state, locked constraints (rail corridor / water / universities / heritage) invariant, one update rule: cells within 300m of a station or stitch may "update-transition". **60 steps without intervention = 0 cell change (path locking — the status quo self-reinforces)**; with stitching + update policy intervention = **42 cells redistributed** (commercial +35 / +21% is the largest growth category, empty cells -31 activated, residential -11 exits/upgrades) [metric:C12_CA]. The overlap between the emergent land-use structure and our manual conceptual zoning is only **37.9%** — bottom-up forces produce a **different spatial organization** than manual partitions. This finding directly shapes the Zhongzhiyuan "Quantum Garden" spatial strategy: not drawing a "garden-embedded full-stack district" by hand, but **setting "garden embeds test bands" as initial conditions and rules for the computation, then letting CA emerge the optimal layout** — commercial clusters spontaneously along the 300m stitch attractors (CA-verified), gardens serve as locked constraints that form natural buffers between test cells.
+
+![Fig C12 · CA urban-renewal emergence simulation: no intervention = path locking (0 change), intervention = emergent unlocking (42 cells redistributed, overlap with manual zoning 38%)](assets/figures/c12-ca.en.png)
+
+**Case study: syntax as generator of the "Origin Living Room" main path (c4 computation).** Integration = (N-1)/Σd = "how much must one pass through" a node. Current ranking: Xueyuanqiao > Wudaokou > Qinghuayuan-W > Zhichunlu > Xuezhiyuan > Dazhongsi > Beijingbei. After stitching, a **key shift** occurs: Dazhongsi rises from among the lowest to among the strongest (+0.000132, **+70%**), Wudaokou +43%, Qinghuayuan-W +37%, Beijingbei +49% [metric:C4_SYNTAX]. This finding directly shapes the "Origin Living Room" main path: rather than deriving paths from a function checklist, **the highest-integration nodes become the living room's main entrances and activity anchors** — Xueyuanqiao (current hub) as the main entrance, Wudaokou (strongest after stitching) as the main activity zone, Qinghuayuan-West (the transit station the task book explicitly named for integrated design) as the secondary entrance and the start of the campus-edge innovation street [metric:C16_SYNTAX]. The main path is not drawn — it **emerges from syntax computation across 5,720 real nodes × 45 design-spine edges**.
+
 Three-area four-piece kit + **scale module table** (per area: extent / key spatial scales / public-path floor / next-stage HOLD condition):
 
 | Area | Disease (c7 measured [metric:C7_POI]) | Cure | HOLD condition |
@@ -241,11 +269,11 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 
 **Adaptive seed on the map**: near-zero-capacity cells → "new-build" color, absorbable cells → "backfill" color, over-capacity cells → "dispose" color (three-area boards use this coloring). Scale module fields: extent (120×120m block) / key spatial scales (3.2m walkway, 40×40m phase-change plaza) / public-path floor (normal paths remain usable when AI is removed) / HOLD condition.
 
-**Ring conclusion →** Three-area prescriptions are implementable with stop conditions. The Verification ring proves whether they "work".
+**Ring conclusion →** The three areas are not three tech parks — they are three spatial identities (Quantum Garden / Origin Living Room / Interface Gate); the spine is not a line but an emergent spatial structure. The Verification ring proves whether they "work".
 
 **Three design-language principles (logic before style — every move answers "which mechanism does it serve")**:
 
-**① One strong motif: the SCALE.** One motif carries the whole belt, self-justified — the belt's mechanistic language is "discrete units + local rules + collective emergence" (CA cellular automata, percolation phase transition, Wilson flows), and the scale is exactly the spatial translation of that language: each scale is an independent state unit (flip / not flip, open / closed) obeying only local rules (wind, light, temperature), with no preset overall pattern — the global order (starling wave, light-shadow ripple) **emerges** from interaction. Four scales therefore share the motif: paving is a scale (percolation strip paving), shading is a scale (facade aluminium-scale modules), the landmark is a scale (Thousand-Scale Grove), seating is a scale (scale-row arrangement). The motif decorates no surface — it is the touchable form of the mechanism itself. Iron rule: scales appear only where a mechanism has semantic meaning (phase-transition visualization, shading energy saving, percolation paths), never pasted onto unrelated facades.
+**① The minimal unit of emergence: the SCALE — space as cellular automaton.** The scale is not just a design language — it is the spatial organizing principle: each scale is a CA cell obeying local rules (wind, light, temperature), and the global order (starling wave, light-shadow ripple) **emerges** from interaction. Paving is a scale (percolation strip), shading is a scale (facade module), the landmark is a scale (Thousand-Scale Grove), seating is a scale (row arrangement) — four scales sharing the same "cell". The spatial recursion is here: given the scale's rules, users can compose new spatial events themselves — the scenario cards on the spine are not "placed" functions but events "grown" from the scale's rules. The motif decorates no surface — it is the touchable form of the mechanism itself. Iron rule: scales appear only where a mechanism has semantic meaning, never pasted onto unrelated facades.
 
 **② Material circularity (demountable, replaceable, remeltable).** Aluminium scales (grove & facade shading): recycled aluminium, standard modules under 1 kg each, individually replaceable, remelted at end of life (remelt energy ≈ 5% of primary), bases are pre-embedded bolts with no in-situ casting; timber (market canopies, seats, boardwalks): reclaimed wood / CLT modular joinery, fully relocatable — the reversibility requirement of redundancy R; concrete (percolation strip paving, 3.2m walkway): pervious concrete + recycled aggregate (demolition waste crushed and reused), strip units lifted locally for repair; rails: real steel rails and sleepers recovered and reused on the original alignment, no new extraction. Material accounts of the 44.6万㎡ new-build modules are listed separately at working-drawing stage and folded into the seven investment categories.
 
@@ -366,6 +394,8 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 ![Ground-floor open shared-workspace rendering (AI concept intent, not implementation)](assets/media/d3-shared-workspace.jpg)
 
 Industry "1+X+1" (one flagship platform + Zhongzhiyuan full stack + Origin origination), talent profile (1,000+ scientists / 13,000 developers), 12 scenario cards — each card names one **no-AI equivalent path** (normal path remains usable when AI is removed), the implementation test of "AI ON = AI OFF": if the same thing cannot be done without AI, it does not go live. AI governance is the method layer, not the selling point — this plan's AI capability is "measuring the city", not "decorating the city" [metric:C7_POI]. Ecosystem support: Zhongzhiyuan's 18-fab/32-chip full-stack autonomy, with the five-party/six-force conversion mechanism.
+
+**Scenario-card responsibility chain (three-layer defense)**: our responsibility chain is not in one table — it is distributed across three layers: **spatial** (A6 node implementation cards: each card has scope/scale/phasing/KPI/stop condition HOLD/owner/no-AI equivalent path/operation moves), **ecosystem** (12 scenario cards: each names a no-AI equivalent path + failure triggers shutdown), and **governance** (the sandbox principle among the seven principles: every AI scenario is tested in a controlled environment before going live; the Emergent Brain in the Operation ring re-runs metrics annually, failing metrics trigger scenario review). Three layers combined guarantee: **every spatial event has a traceable owner, a verifiable stop condition, and a removable AI dependency** — no average improvement offsets a single scenario's failure.
 
 **Ring conclusion →** Ecosystem prescription complete. Land-use / transport / blue-green subsystems take over.
 
@@ -576,6 +606,12 @@ The belt's skeleton is healthy (D=1.746). It lacks not rebuilding but three "rem
 **This is not a blueprint; it is a self-proving, self-checking, self-healing city operating system.** And it is credible precisely because it is honest: stitching does not change λ, so we say λ is not the lever; one-size backfill fails, so we customize per-cell headroom; redundancy R rising means more mixing, so we report it as-is instead of force-fitting London's 0.093.
 
 **What is criticizable is never that a reading has bias, but that the bias was not disclosed.** That sentence is both the full claim made for this belt, and — fittingly — the claim made about this very document.
+
+**Finally, back to the question we started with: when the constraint cannot be changed, what can design still do?**
+
+It can turn constraints into the conditions for emergence — and then turn "emergence" itself into method. The 28 computations do not exist to prove we calculated correctly; they exist to prove that **a city can be computationally understood, computationally corrected, and recursively updated**. When official red lines arrive, this plan does not need to be overturned — only recomputed. When the first developers move in, it does not need to be revised — only re-run. That is the complete meaning of THE EMERGENT BELT: **not that we produced a plan, but that the belt itself has acquired the capacity to keep emerging.**
+
+Jing-Zhang has drawn three lines: the switchback of 1909, which carried trains over Badaling; the straight line of 2019, which carried the city over mountains; and the Hyper Line of 2026, which lets the city **grow its own answers**.
 
 ---
 
