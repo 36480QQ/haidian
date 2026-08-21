@@ -121,6 +121,18 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![大钟寺待授权现场运营责任与证据模板信息图；不是地图或现场记录，全部现场结果未观测](assets/figures/dazhongsi-field-validation-pack.png)
 
+### P1-04 · 大钟寺合成演练与失败测试
+
+**边界与状态。** `DAZHONGSI-DRILL-01` 是对 `DAZHONGSI-FIELD-OPS-01` 模板契约的合成演练与失败测试套件，声明性台账为 `visual/assets/dazhongsi-drill-tests.json`，配套运行器为 `visual/assets/dazhongsi-drill-test-runner.js`（仅用 Node 内置库、只读）。台账 SHA-256 为 `86ebfa7655e4cc79fb9d155d22cb62c821a131ec5e4882d71153e7dd13bd5507`。全部输入为合成或纸面夹具；模板中的现场值仍为 `null / unknown / not_observed / not_signed`。测试通过只证明契约逻辑可复现执行，不证明场地可进入、服务可运营或风险已排除 [assumption:A-DAZHONGSI-DRILL-001]。
+
+**六类 21 项用例。** 正例验证全部开始条件齐备时三阶段链路、11 份回执与唯一问责可通；负例验证任一开始条件未 `verified` 即拒绝开始、模板空值纪律、`not_observed` 不得解释为风险已排除；撤回验证任一阶段的撤回都有回执槽位与停机覆盖、公共回报不得被表述为购买同意；服务中断验证六项停止触发器逐项触发即暂停或停止并阻断阶段推进；恢复验证四项条件与三方共同签署缺一不可且须按同一口径复测；无障碍任务测试验证无数据等价与人工复核覆盖全部 MVP 场景、离线正线与人工接管在契约中可定位 [data:visual/assets/dazhongsi-drill-tests.json#DRILL-META-01] [metric:dazhongsi_drill_category_coverage_ratio]。
+
+**元检查与负向自测。** 运行器把实际执行的用例 ID 全集与钉死清单逐一比对（含元检查自身），少跑一项即失败，「少跑一项」与「全部通过」在输出上不可区分的情况被阻断；`--self-test` 对 8 个变异夹具（删回执、填入观测值、断证据链、重复回执 ID、删撤回停止条件、加第二问责、删用例 ID、关闭无数据等价）逐一验证运行器必然以退出码 1 失败。当前 21/21 用例通过、8/8 负向夹具全部 fail-closed [metric:dazhongsi_drill_case_passed] [metric:dazhongsi_drill_negative_fixture_fail_closed_total]。
+
+**复现。** `node visual/assets/dazhongsi-drill-test-runner.js --json` 退出码 0 为通过；`--self-test --json` 输出每个夹具的 fail-closed 证据。该套件是模板契约级的合成验证；官方数据或现场证据到位后，按同一链条整包复算，不得以合成通过替代现场证据。
+
+![大钟寺合成演练与失败测试证据图；合成夹具，非现场记录](assets/figures/dazhongsi-drill-tests.png)
+
 ![三处重点区域、三地标与治理链图](assets/figures/key-areas.png)
 
 三处片区合起来完成“一次合作的全旅程”：原点社区形成议题和劳动规则，众智园执行受控计算与模型验证，大钟寺完成应用互操作、公共回报披露和公众体验；任一环节都可因证据不足、风险超限或参与者撤回而暂停。三地标不是纪念技术公司的广告装置，而是把计算状态、退出边界和共同作者关系变成城市记忆。其建筑形态、消防、容量、造价、运营主体与审批均需专业团队继续深化，不能从概念图直接推导实施结论 [depth:three_key_area_detailed_design]。

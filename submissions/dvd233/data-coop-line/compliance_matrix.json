@@ -749,7 +749,11 @@
         "dazhongsi_mvp_public_receipt_space_sqm",
         "dazhongsi_mvp_route_length_m",
         "dazhongsi_mvp_scenario_count",
-        "dazhongsi_mvp_no_data_route_coverage_ratio"
+        "dazhongsi_mvp_no_data_route_coverage_ratio",
+        "dazhongsi_drill_case_total",
+        "dazhongsi_drill_case_passed",
+        "dazhongsi_drill_negative_fixture_fail_closed_total",
+        "dazhongsi_drill_category_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -758,7 +762,8 @@
       "visual_sections": [
         "三层范围",
         "大钟寺可演练 MVP",
-        "核心指标"
+        "核心指标",
+        "大钟寺合成演练与失败测试"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -770,7 +775,8 @@
         "A-BOUNDARY-001",
         "A-BUILDING-001",
         "A-CONTROLS-001",
-        "A-DAZHONGSI-MVP-001"
+        "A-DAZHONGSI-MVP-001",
+        "A-DAZHONGSI-DRILL-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
