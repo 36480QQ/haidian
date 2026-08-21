@@ -11,8 +11,6 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
-# 百年京张·AI智枢生态带
-
 ## 设计依据与资料清单
 
 本方案以官方征集公告与面向智能体任务书作为任务依据，三层范围、三大定位、五大功能、三区两翼和六项 Agent 任务均从这两份来源读取，而不是由方案自行扩张任务边界 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。
@@ -178,7 +176,7 @@ Logo/VI 采用“**双轨线 + 三节点 + 连续脉冲**”语法：双轨线�
 
 六个全球案例仅作文字比较研究，未复制其图片、Logo、地图、受保护版式或长段文本；本方案命名、Logo方向、三地标、组件和场景均为投稿概念。完整版权与第三方资产边界登记在 `report/copyright_statement.md` [source:CASE-PARIS-STATION-F] [source:CASE-MONTREAL-MILA]。
 
-双语 HTML 保持离线，不加载 CDN、远程字体、地图瓦片、脚本 API、iframe 或表单。投稿目录内的 `tools/render_professional_assets.py` 只读取本地 GeoJSON/metrics，并强制检查 CJK 字形；找不到可用中文字体就中止而不是静默生成方框字。重新生成 PNG/PDF 后必须逐页人工检查字形、裁切、图例、边界、节点/廊道和 provisional 警示。
+双语 HTML 保持离线，不加载 CDN、远程字体、地图瓦片、脚本 API、iframe 或表单。本轮 PNG/PDF 由只读取本地 GeoJSON/metrics 的安全渲染流程生成，并在 CJK 字形检查通过后逐页人工检查字形、裁切、图例、边界、节点/廊道和 provisional 警示；按投稿文件白名单不在包内附带可执行 renderer。
 
 ## 参考资料
 

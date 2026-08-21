@@ -79,7 +79,7 @@
         "BOUNDARY_TRUST",
         "KEY_AREAS_TRUST"
       ],
-      "evidence_summary_zh": "统筹研究（43.6 km²）、总体设计（11.41 km²）与重点片区（368.4 ha）三层空间联动推演，层级分工清晰。"
+      "evidence_summary_zh": "以约 11.41 km² 的总体设计临时边界、三处低置信度重点区面积和三层职责划分组织推演；统筹研究层不新增或伪造可复算红线。"
     },
     {
       "item_id": "overall_spatial_structure",
@@ -110,7 +110,7 @@
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
@@ -141,8 +141,8 @@
         "site_area_sqm"
       ],
       "source_ids": [
-        "MNR-LAND-USE-CLASSIFICATION-GUIDE",
-        "MOHURD-CONTROL-DETAILED-PLANNING"
+        "SITE-PACKAGE",
+        "BOUNDARY-SOURCE"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
@@ -150,7 +150,7 @@
       "self_check_ids": [
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "11.41 km² 范围内 18 个用地分区无缝拓扑闭合，科研、商业、居住社区服务与绿地合理配比，混合度达标。"
+      "evidence_summary_zh": "四个设计用地分区以可校验 land_use_code 表达科研、公园绿地、商业服务和社区服务，并覆盖临时总体边界；该图层不声称法定配比或混合度达标。"
     },
     {
       "item_id": "development_intensity_controls",
@@ -171,10 +171,12 @@
         "geometry/buildings.geojson"
       ],
       "metric_refs": [
-        "building_footprint_area_sqm"
+        "building_footprint_area_sqm",
+        "floor_area_ratio"
       ],
       "source_ids": [
-        "MOHURD-CONTROL-DETAILED-PLANNING"
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -183,7 +185,7 @@
       "self_check_ids": [
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "对容积率与建筑密度提出弹性区间控制，明确法定控规指标待政府正式条件发布后严格对齐落实。"
+      "evidence_summary_zh": "建筑基底面积仅由概念建筑图层复算；容积率、建筑密度、高度和退界均保持 unknown，待取得正式控规与权属条件后再深化。"
     },
     {
       "item_id": "height_massing_character",
@@ -207,15 +209,17 @@
         "building_footprint_area_sqm"
       ],
       "source_ids": [
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "AGENT-TASKBOOK",
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-BOUNDARY-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "控制铁路遗址公园视廊高度跌落与天际线节奏，结合清华园车站等历史遗存形成古今交融风貌导则。"
+      "evidence_summary_zh": "以遗产公共主脊、共享首层、可进入界面和三处重点区空间原型提出概念风貌策略；高度、体量、视廊和历史建筑控制仍待正式资料确认。"
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -239,16 +243,17 @@
         "building_footprint_area_sqm"
       ],
       "source_ids": [
-        "MOHURD-CONTROL-DETAILED-PLANNING",
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY"
       ],
       "assumption_ids": [
-        "A-BOUNDARY-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "对现状建筑逐栋划定保留、改造、拆除分类，优先盘活低效工业厂房与近校科研楼宇，保留工业肌理。"
+      "evidence_summary_zh": "提出先核实现状、权属、结构和文保条件再逐栋分类的方法；当前 BLDG-001 仅为概念建筑基底，不构成逐栋保留、改造或拆除决定。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -272,15 +277,18 @@
         "public_space_ratio"
       ],
       "source_ids": [
-        "MOHURD-CONTROL-DETAILED-PLANNING"
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK",
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-BOUNDARY-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "统筹五道口、大钟寺等轨交站点四象限接驳，缝合主要干道与环路慢行断点，建立小街区微循环网。"
+      "evidence_summary_zh": "以设计道路中心线、公共空间和约束图层提出轨道接驳—遗产慢行—两翼横联—三核步行环的概念组织；道路红线、停车供给和站点衔接仍待核实。"
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -301,20 +309,20 @@
         "geometry/public_space.geojson"
       ],
       "metric_refs": [
-        "ai_scenario_count",
-        "test_scenario_count"
+        "scenario_card_count",
+        "validation_scenario_count"
       ],
       "source_ids": [
         "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-AI-SCENARIOS-001"
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "部署分布式端侧微算力驿站与绿色低碳能源微电网，支撑 AI 智慧感知、导航导视与安全测试运行。"
+      "evidence_summary_zh": "提出可关闭、可隔离的端侧算力驿站及断网和人工兜底，用于导航导视与安全测试；供电容量、市政接入和能源方案仍为待确认前置条件。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -338,10 +346,12 @@
         "public_space_ratio"
       ],
       "source_ids": [
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "OFFICIAL-ANNOUNCEMENT",
+        "SITE-PACKAGE"
       ],
       "assumption_ids": [
-        "A-BOUNDARY-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "VISUAL_STATIC"
@@ -371,7 +381,7 @@
         "zhongzhiyuan_area_sqm_provisional",
         "ai_origin_area_sqm_provisional",
         "dazhongsi_area_sqm_provisional",
-        "ai_landmark_count"
+        "pilgrimage_landmark_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -408,10 +418,12 @@
         "renewal_project_count"
       ],
       "source_ids": [
-        "MOHURD-CONTROL-DETAILED-PLANNING"
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK"
       ],
       "assumption_ids": [
-        "A-BOUNDARY-001"
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001"
       ],
       "self_check_ids": [
         "VISUAL_STATIC"
@@ -447,7 +459,7 @@
       "self_check_ids": [
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "划分近期试点启动（Q1-Q2）、中期重点片区推进（Q3-Q4）与远期常态化运营治理阶段，节奏稳健。"
+      "evidence_summary_zh": "以 PHASE-001 一期可讨论范围、JZ-01 至 JZ-06 的时间窗和退出条件形成概念分期；Q1-Q4 仅表示年度活动日历，不冒充空间建设分期。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -491,7 +503,7 @@
         "KEY_AREAS_TRUST",
         "LAND_USE_TOPOLOGY"
       ],
-      "evidence_summary_zh": "基于 EPSG:4548 严格复算全部空间指标，对 provisional 数据透明标注置信度与重算触发条件。"
+      "evidence_summary_zh": "基于 EPSG:4548 复算现有几何能够支持的面积与比例，对 provisional 数据标注置信度和重算触发条件；缺少依据的容积率保持 unknown。"
     },
     {
       "item_id": "risk_missing_data",
