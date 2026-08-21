@@ -41,7 +41,11 @@ const IDS = [
   "G1", "G2", "G3", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "Z1",
 ];
-const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48 };
+const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48, rollback_evidence_checks: 12 };
+/* protocol-check-runner.js 里也有一份 ENUM_SCALE 与 FAIL_CLOSED_SMART_LAYER。这里
+   刻意再写一份：判据不能与被测对象同处一文件，两份分岔时正向用例即报错。 */
+const ENUM_SCALE = { enum_fields: 17, enum_instances: 300 };
+const FAIL_CLOSED_SMART_LAYER = ["off", "sandbox_preview", "limited_trial"];
 
 /* ---------------- 运行与临时覆盖层 ---------------- */
 const TMP = fs.mkdtempSync(path.join(os.tmpdir(), "jz-audit-selftest-"));
@@ -99,16 +103,31 @@ positive("claims-audit.js 全部通过，且恰好跑 54 项、ID 与本文件�
   return null;
 });
 
-positive("protocol-check-runner.js 全部通过，且规模恰为 12 账 / 96 规则 / 48 断言", () => {
+positive("protocol-check-runner.js 全部通过，且规模恰为 12 账 / 96 规则 / 48 断言 / 12 回滚证据检查 / 17 枚举字段 / 300 枚举实例，fail-closed 上限未被改动", () => {
   const r = runRunner();
   if (r.code !== 0) return `退出码 ${r.code}，应为 0`;
   if (!r.json || r.json.all_match !== true) return "all_match 不为真";
-  const got = { ledgers: r.json.ledgers, rule_checks: r.json.rule_checks_recomputed, assertions: r.json.assertions_recomputed };
+  const got = { ledgers: r.json.ledgers, rule_checks: r.json.rule_checks_recomputed,
+                assertions: r.json.assertions_recomputed, rollback_evidence_checks: r.json.rollback_evidence_checked };
   for (const k of Object.keys(EXPECTED_SCALE)) {
     if (got[k] !== EXPECTED_SCALE[k]) return `${k} ${got[k]}，应为 ${EXPECTED_SCALE[k]}`;
   }
   if (r.json.rule_checks_matching_published !== EXPECTED_SCALE.rule_checks) return "规则检查有不一致";
   if (r.json.assertions_matching_published !== EXPECTED_SCALE.assertions) return "接管断言有不一致";
+  if (r.json.enum_fields_in_schema !== ENUM_SCALE.enum_fields) {
+    return `schema 枚举字段 ${r.json.enum_fields_in_schema}，应为 ${ENUM_SCALE.enum_fields}（两份规模常量已分岔）`;
+  }
+  if (r.json.enum_instances_checked !== ENUM_SCALE.enum_instances) {
+    return `枚举实例 ${r.json.enum_instances_checked}，应为 ${ENUM_SCALE.enum_instances}（两份规模常量已分岔）`;
+  }
+  if (r.json.enum_instances_valid !== ENUM_SCALE.enum_instances) return "有枚举取值越界";
+  if (r.json.fail_closed_ok !== true) return "fail_closed_ok 不为真";
+  if ((r.json.rollback_evidence_problems || []).length) return "回滚证据一致性有问题";
+  const se = r.json.fail_closed_smart_layer_enum || [];
+  const seBad = FAIL_CLOSED_SMART_LAYER.findIndex((x, i) => se[i] !== x);
+  if (se.length !== FAIL_CLOSED_SMART_LAYER.length || seBad !== -1) {
+    return `smart_layer 枚举为 ${JSON.stringify(se)}，应逐位等于 ${JSON.stringify(FAIL_CLOSED_SMART_LAYER)}`;
+  }
   return null;
 });
 
@@ -224,6 +243,40 @@ negRunner("simulation.json 里翻转一条已发布的接管断言",
       t.checks[k] = t.checks[k] === "pass" ? "fail" : "pass";
     }) },
   (r) => ((r.json && r.json.assertion_mismatches || []).length ? null : "未报断言不一致"));
+
+/* 三例打新加的 schema 枚举校验与 fail-closed 结构断言。前者是 2026-08-21 当场被证实
+   的洞：手造 shadow 扰动时用了 assigned / attested / official_and_field_confirmed
+   三个不在枚举里的取值，而当时包内无一处能拦下。 */
+negRunner("夹具里把 assignment_state 写成不在枚举里的 \"assigned\"（那正是当时手造扰动犯的错）",
+  { "visual/assets/governance/shift-ledger-suite.json": jsonMutated("visual/assets/governance/shift-ledger-suite.json", (d) => {
+      d.ledgers[0].control_pair.release_role.assignment_state = "assigned";
+    }) },
+  (r) => ((r.json && r.json.enum_violations || []).some((x) => x.includes("assignment_state"))
+          ? null : "未报 assignment_state 枚举越界"));
+
+negRunner("schema 里给 smart_layer_state_after_decision 加一个 \"fully_enabled\" —— fail-closed 上限被抬高",
+  { "visual/assets/governance/shift-ledger.schema.json": jsonMutated("visual/assets/governance/shift-ledger.schema.json", (d) => {
+      d.$defs.transferAttempt.properties.smart_layer_state_after_decision.enum.push("fully_enabled");
+    }) },
+  (r) => ((r.json && r.json.fail_closed_problems || []).length ? null : "未报 fail-closed 断言失败"));
+
+negRunner("夹具里把回滚演练改成 observed_pass 但 evidence_pointer 留空 —— 「声称通过却无可核证据」，schema 不禁止它",
+  { "visual/assets/governance/shift-ledger-suite.json": jsonMutated("visual/assets/governance/shift-ledger-suite.json", (d) => {
+      const rb = d.ledgers[0].rollback_rehearsal;
+      rb.execution_state = "observed_pass";
+      rb.pass = true;
+      rb.executed_at = "2026-08-21T00:00:00Z";
+      rb.evidence_pointer = null;
+    }) },
+  (r) => ((r.json && r.json.rollback_evidence_problems || []).some((x) => x.includes("evidence_pointer"))
+          ? null : "未报回滚证据不一致"));
+
+negRunner("schema 里删掉一个枚举定义 —— 枚举字段由 17 变 16，比对条数跟着变少但「逐条合法」仍成立",
+  { "visual/assets/governance/shift-ledger.schema.json": jsonMutated("visual/assets/governance/shift-ledger.schema.json", (d) => {
+      delete d.$defs.scenarioAnchor.properties.confidence.enum;
+    }) },
+  (r) => ((r.json && r.json.scale_problems || []).some((x) => x.includes("枚举"))
+          ? null : "未报枚举规模不符"));
 
 /* ---------------- 执行 ---------------- */
 const results = cases.map((c) => {

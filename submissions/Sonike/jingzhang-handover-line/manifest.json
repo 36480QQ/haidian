@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ccbb1af5cea37ec6c518910273bf4a1d44d1a426723b33cd403f1aa4e65005a0"
+      "sha256": "ea9afb8d61b76eec1ebed2ab136dba0908819ff6704df5b129e39b05ceeef416"
     },
     {
       "path": "agent.json",
@@ -59,7 +59,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "60fbdcaf4b82409c43df7f6e55fa6066f461a5e414e467b4384af76bc6d00c6d"
+      "sha256": "bbacb4f4f04e31fedc5ec71f4f7cc20998cefb1aead8ab29b990b84551fa9115"
     },
     {
       "path": "assumptions.json",
@@ -83,13 +83,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4d6ec80d36b5619303fafda41f4d528c3881ef6c83cff9954f02d90e58bb52eb"
+      "sha256": "63d55f627cf2bc6c426c29ed8a470388a5a4478d02da923364f283e43e6bfbe4"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "879c6984267acdd51fe1d163ce46d4d729c772f7b722ff4eda68f1df0c12d363"
+      "sha256": "c9a919d58f06fdf75eb54cf9bc4e92f9c0449cd85a575ed633f6c68754a9a7fa"
     },
     {
       "path": "standard_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ff90a9a6fa9aad9beb4759478ab681dd96298845a4a45b6be76f802225693884"
+      "sha256": "9217ac2ac44d19c806ea0467a1e83d7527bc311955ed2a68f9f8033c2aae7e50"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "1c88d3e444ec1f5227899fd421e516f219121b8597ac26fb5f535944213ff5be"
+      "sha256": "223e693a8fc9842e4fa2b60fced17d1931eb19b46d04790da0aab9e3c42f27c0"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "65218482adfa7575b0cc7fdcf382337cae6392b6ea0fe83380647c159b94618c"
+      "sha256": "5cd1e157d5a21373927d552e528d6f0e79fe2e5d85a62198517ce69bb00c507b"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "a3009c1e486924786665e474640415b71d1949bc0499cbd28594f774afad22cf"
+      "sha256": "c5d7f6b767c958ffbbb8d35a8de2349180d1e64ecb0a7f140446c05595365f3e"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -440,34 +440,42 @@
       "sha256": "5406b1f1d692a1ed326934549d0d471843ba121c2caa3f2234a0d692d0d11412"
     },
     {
+      "path": "visual/assets/governance/model-shadow-run.json",
+      "role": "governance_validation",
+      "required": false,
+      "description_zh": "模型影子测试的完整运行记录：12 条交接账 × 3 档清障状态 = 36 例，每例移除三个决定字段后单独交给一个真实模型（gpt-5.6-sol，reasoning effort high），与确定性基准逐例比对。**确定性判 HOLD 的 24 例，模型全部保持 smart_layer=off，无一例更宽松；36 例的 smart_layer 取值全部一致。** 文件含逐例原始判定与四条设计发现：refusal_reasons 无枚举导致同一概念 14 种拼法（SHADOW-F1）；observed_pass 可与 evidence_pointer 为 null 并存（SHADOW-F2，已加机器判定）；四个理由码里没有对应「人工兜底未验证」的那一个（SHADOW-F3）；智能层被封顶时该配哪个 disposition 未写明（SHADOW-F4，如实记为未解决）。**模型输出不可字节复现，文件已写明可复现的是夹具生成、比对逻辑与逐例原始记录，并登记被审夹具与 schema 的 sha256。**",
+      "description_en": "The full record of the model shadow run: 12 shift ledgers x 3 clearance variants = 36 cases; in each case the three decision fields were removed before handing the ledger to a real model (gpt-5.6-sol, reasoning effort high), and every verdict was compared case by case against the deterministic baseline. **In the 24 deterministic-hold cases the model also kept smart_layer=off — none more permissive — and all 36 smart_layer values matched.** The file carries every raw verdict plus four design findings: refusal_reasons has no enumeration, so one concept was spelled 14 ways (SHADOW-F1); observed_pass can coexist with a null evidence_pointer (SHADOW-F2, now a machine-decidable check); none of the four reason codes covers 'the human floor is unproven' (SHADOW-F3); and the disposition that pairs with a capped smart layer is unspecified (SHADOW-F4, recorded as unresolved). **Model outputs are not byte-reproducible; the file states what is reproducible and registers the sha256 of the audited fixture suite and schema.**",
+      "sha256": "5971600dc6cc057c23da9e4486c083a3a154f8cfd9d46428ebb4287aee96021f"
+    },
+    {
       "path": "visual/assets/governance/protocol-check-runner.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "f2cf7041f3a6b37a7466ffd26645924753f30e5996c1dfc888750cbed6695422",
+      "sha256": "4c4d9816f8afbf87160da84e8a524a6f6fb50b2e6fbbc1820ac48f578c93c45f",
       "title_zh": "协议自检重跑器",
       "title_en": "Protocol self-check re-runner",
-      "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把本包两个此前无法在包内复算的数字当场重算：读取输入夹具 shift-ledger-suite.json，按 rule-check-report.json 的规则表述**独立重写**七条规则（不是搬运原生成脚本），对 12 条交接账各跑 1 条基线与 7 类缺陷注入共 96 条，并按四项接管断言重算 12 × 4 ＝ 48 项，再与随包发布结果逐条比对。`node protocol-check-runner.js` 全部一致退出 0，任何一条不一致退出 1 并打印发布值与重算值；`--json` 输出机器可读结果。注入口径写在脚本注释里，其中 R4 的注入会同时触发 R3，与随包结果中那 12 条 violations 为两元素的记录一致。另有一道规模守卫：12 条交接账／96 条规则检查／48 项接管断言的规模写死在脚本里，夹具或发布结果被删掉几条时「逐条一致」仍会成立、条数却已变少，这道守卫专防那种情形。**只重算协议逻辑，不证明现场绩效、安全、合规或获批；现场演练仍为 0/12。**",
-      "description_en": "A read-only, offline Node script with no third-party dependencies that recomputes on the spot the two numbers in this package that previously could not be recomputed from inside it. It reads the input fixture shift-ledger-suite.json, **independently reimplements** the seven rules from the rule statements in rule-check-report.json (rather than porting the original generator), runs one baseline plus seven defect injections against each of the twelve ledgers for 96 checks in total, recomputes the four takeover assertions across 12 × 4 = 48, and compares every entry with the published results. `node protocol-check-runner.js` exits 0 when all match and exits 1 on any mismatch, printing the published and recomputed values; `--json` emits machine-readable output. Injection definitions are documented in the script, and the R4 injection also trips R3, matching the twelve published records whose violations have two elements. A scale guard is also hardcoded — 12 ledgers / 96 rule checks / 48 takeover assertions — because if entries were dropped from the fixture or the published results, \"every entry matches\" would still hold while the count silently shrank. **It recomputes protocol logic only; it proves nothing about field performance, safety, compliance or approval; the field rehearsal remains 0/12.**"
+      "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把本包两个此前无法在包内复算的数字当场重算：读取输入夹具 shift-ledger-suite.json，按 rule-check-report.json 的规则表述**独立重写**七条规则（不是搬运原生成脚本），对 12 条交接账各跑 1 条基线与 7 类缺陷注入共 96 条，并按四项接管断言重算 12 × 4 ＝ 48 项，再与随包发布结果逐条比对。`node protocol-check-runner.js` 全部一致退出 0，任何一条不一致退出 1 并打印发布值与重算值；`--json` 输出机器可读结果。注入口径写在脚本注释里，其中 R4 的注入会同时触发 R3，与随包结果中那 12 条 violations 为两元素的记录一致。另有一道规模守卫：12 条交接账／96 条规则检查／48 项接管断言的规模写死在脚本里，夹具或发布结果被删掉几条时「逐条一致」仍会成立、条数却已变少，这道守卫专防那种情形。**只重算协议逻辑，不证明现场绩效、安全、合规或获批；现场演练仍为 0/12。**　2026-08-21 增两项：按 shift-ledger.schema.json 的 17 个枚举定义校验 12 条账里全部 300 个受枚举约束的字段实例（越界 0 个），以及一条 fail-closed 结构断言——smart_layer_state_after_decision 的枚举必须逐位等于 off/sandbox_preview/limited_trial，**该枚举没有任何表示完全启用的取值**，往里加更高状态即退出 1。17 与 300 同样写死在脚本里参与退出码。",
+      "description_en": "A read-only, offline Node script with no third-party dependencies that recomputes on the spot the two numbers in this package that previously could not be recomputed from inside it. It reads the input fixture shift-ledger-suite.json, **independently reimplements** the seven rules from the rule statements in rule-check-report.json (rather than porting the original generator), runs one baseline plus seven defect injections against each of the twelve ledgers for 96 checks in total, recomputes the four takeover assertions across 12 × 4 = 48, and compares every entry with the published results. `node protocol-check-runner.js` exits 0 when all match and exits 1 on any mismatch, printing the published and recomputed values; `--json` emits machine-readable output. Injection definitions are documented in the script, and the R4 injection also trips R3, matching the twelve published records whose violations have two elements. A scale guard is also hardcoded — 12 ledgers / 96 rule checks / 48 takeover assertions — because if entries were dropped from the fixture or the published results, \"every entry matches\" would still hold while the count silently shrank. **It recomputes protocol logic only; it proves nothing about field performance, safety, compliance or approval; the field rehearsal remains 0/12.** Two checks were added on 2026-08-21: all 300 enum-constrained field instances across the twelve ledgers are validated against the 17 enumerations declared in shift-ledger.schema.json (zero violations), and a fail-closed structural assertion requires the smart_layer_state_after_decision enumeration to equal off/sandbox_preview/limited_trial position by position — the enumeration contains no value meaning full enablement, and adding a higher state exits 1. Both 17 and 300 are hardcoded into the exit code."
     },
     {
       "path": "visual/assets/governance/claims-audit.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "7c231d4502662f89dd90de7f0330cd86b945bc51cbfbca0db57bff2b2a306483",
+      "sha256": "4387178b7fe59e83f89a9588310eb7e606b92a889561f51d60f3ccc72c0f5420",
       "title_zh": "正文数值声明审计器",
       "title_en": "Prose claim auditor",
-      "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把正文里可复算的数值与结构声明逐条对结构化文件重算，**共 54 项**。分七层：① 计数与内部一致性（58＝44＋14；三期面积相加逐位等于总体范围；分期／重点区／更新单元／地标／场景节点／道路要素与各 geojson 一致；48＝12×4；96＝12＋84；现场演练 0/12 两处同为 0）；② 二十个更新单元的结构规则（基底合计 221,014.099；四类各五个；东西各十；西收东放二十个无一例外；研制与服务逐位相等 51,744；验证与公开差 73.901＝0.126%；六个先查证落在第 2/3/5/6/8/9 对且每对最多一个；全部标 conceptual_typology_cell_not_existing_inventory 且回滚状态含「保持现状」）；③ **正文↔数据双向核对**——直接读 proposal.md，核落点表恰好 20 行、编号集合与 geojson 相同、**并逐行比对类型与东西侧**；④ **断面表算术**——每区 A1＋A2＋A3＝小计、小计＋余量＝退线 A、合计＝A＋B＋C＋D＋E 五项之和，**且把容器子段再加一遍必须得到与声明明显不同的数**（防那处 18–27 m 式的错回来）、等候面积＝进深×面宽、通用表两条求和式与两个区间声明自身成立；⑤ **交叉引用与字段深度**——三个矩阵的章节引用必须命中真实标题、正文 [standard:]／[depth:] 必须能解析到、sources.json 43 条八字段齐备、22 项深小数带 precision_note。⑥ **布局对照实验的复算（K1–K4）**——三种功能配置（现状西收东放／同类对置／沿轴分段）共用同一组位置、面积与东西侧，只有功能标签不同，故全部指标只用落点表那三列整数、是纯算术不需投影：一次交接循环最短步行（5⁴ ＝ 625 种组合穷举）、该循环跨轴次数、异类与同类互达合计、三处交接场 ±500 m 内类型齐备数、每对与单侧类型数、四类基底极差，**声明值从正文那张对照表里解析而来、不写死在脚本里**，正文改了或算法改了都会报错；⑦ **sources.json 的内部指针（J1）**——已自陈作废的历史登记不得被任何现行登记当作现行依据引用（引用须明标历史）。**最后一项 Z1 是元检查**：54 项 ID 全集写死在脚本里、**含 Z1 自己**，少一条、多一条、重一条都判失败——因为审计器最危险的失效方式不是判错，而是某一项悄悄没跑。**退出码另有一道不走登记函数的结构性守卫**：把实跑 ID 序列与全集逐位比对，缺一条（含 Z1 被删掉）、多一条、顺序变了都判失败——一条检查查不到自己被删掉，所以守卫必须站在检查清单之外。这一层由同目录 audit-selftest.js 的阴性用例反过来检验。`node claims-audit.js` 全部一致退出 0，任何一项不符退出 1 并打印实算值；`--json` 输出机器可读结果。**它不是自动化闸门**：`scripts/`、`tests/`、`.github/` 都不调用它（投稿 PR 不得改那些路径），运行方式是提交前手动执行，登记在 compliance_matrix.json#self_check_expectations。与 protocol-check-runner.js、audit-selftest.js 合起来覆盖本包全部可复算声明；设计判断、未测项与现场结论不在范围内。",
+      "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把正文里可复算的数值与结构声明逐条对结构化文件重算，**共 54 项**。分七层：① 计数与内部一致性（68＝54＋14；三期面积相加逐位等于总体范围；分期／重点区／更新单元／地标／场景节点／道路要素与各 geojson 一致；48＝12×4；96＝12＋84；现场演练 0/12 两处同为 0）；② 二十个更新单元的结构规则（基底合计 221,014.099；四类各五个；东西各十；西收东放二十个无一例外；研制与服务逐位相等 51,744；验证与公开差 73.901＝0.126%；六个先查证落在第 2/3/5/6/8/9 对且每对最多一个；全部标 conceptual_typology_cell_not_existing_inventory 且回滚状态含「保持现状」）；③ **正文↔数据双向核对**——直接读 proposal.md，核落点表恰好 20 行、编号集合与 geojson 相同、**并逐行比对类型与东西侧**；④ **断面表算术**——每区 A1＋A2＋A3＝小计、小计＋余量＝退线 A、合计＝A＋B＋C＋D＋E 五项之和，**且把容器子段再加一遍必须得到与声明明显不同的数**（防那处 18–27 m 式的错回来）、等候面积＝进深×面宽、通用表两条求和式与两个区间声明自身成立；⑤ **交叉引用与字段深度**——三个矩阵的章节引用必须命中真实标题、正文 [standard:]／[depth:] 必须能解析到、sources.json 43 条八字段齐备、22 项深小数带 precision_note。⑥ **布局对照实验的复算（K1–K4）**——三种功能配置（现状西收东放／同类对置／沿轴分段）共用同一组位置、面积与东西侧，只有功能标签不同，故全部指标只用落点表那三列整数、是纯算术不需投影：一次交接循环最短步行（5⁴ ＝ 625 种组合穷举）、该循环跨轴次数、异类与同类互达合计、三处交接场 ±500 m 内类型齐备数、每对与单侧类型数、四类基底极差，**声明值从正文那张对照表里解析而来、不写死在脚本里**，正文改了或算法改了都会报错；⑦ **sources.json 的内部指针（J1）**——已自陈作废的历史登记不得被任何现行登记当作现行依据引用（引用须明标历史）。**最后一项 Z1 是元检查**：54 项 ID 全集写死在脚本里、**含 Z1 自己**，少一条、多一条、重一条都判失败——因为审计器最危险的失效方式不是判错，而是某一项悄悄没跑。**退出码另有一道不走登记函数的结构性守卫**：把实跑 ID 序列与全集逐位比对，缺一条（含 Z1 被删掉）、多一条、顺序变了都判失败——一条检查查不到自己被删掉，所以守卫必须站在检查清单之外。这一层由同目录 audit-selftest.js 的阴性用例反过来检验。`node claims-audit.js` 全部一致退出 0，任何一项不符退出 1 并打印实算值；`--json` 输出机器可读结果。**它不是自动化闸门**：`scripts/`、`tests/`、`.github/` 都不调用它（投稿 PR 不得改那些路径），运行方式是提交前手动执行，登记在 compliance_matrix.json#self_check_expectations。与 protocol-check-runner.js、audit-selftest.js 合起来覆盖本包全部可复算声明；设计判断、未测项与现场结论不在范围内。",
       "description_en": "A read-only, offline Node script with no third-party dependencies that recomputes every recomputable numeric and structural claim in the text against the structured files — **54 checks in seven layers**: (1) counts and internal consistency; (2) structural rules across the twenty renewal cells; (3) **two-way prose↔data checking** — it reads proposal.md directly and compares the type and side of every row of the location table; (4) **section-table arithmetic** — per-area A1＋A2＋A3＝subtotal, subtotal＋slack＝setback A, total＝the five items A–E, **and adding the container's children a second time must yield a number clearly different from the stated one** (guarding the earlier 18–27 m class of error); (5) **cross-reference and field depth** — matrix section references must hit real headings, [standard:]/[depth:] markers must resolve, all 43 sources carry eight required fields, all 22 deep-decimal metrics carry a precision_note. **The last check, Z1, is a meta-check**: the full 54-ID list is hardcoded, **Z1 included**, and a missing, extra or duplicated ID fails — because the most dangerous way an auditor fails is not a wrong verdict but a check that quietly did not run. **The exit code carries a second, structural guard that does not go through the registration function**: it compares the ID sequence that actually ran against the full list position by position, and a missing entry (including Z1 itself being deleted), an extra entry or a reordering all fail — a check cannot detect its own deletion, so the guard has to sit outside the check list. That layer is in turn exercised by the negative cases in audit-selftest.js in the same directory. `node claims-audit.js` exits 0 when all match and 1 on any mismatch, printing the recomputed value; `--json` emits machine-readable output. **It is not an automated gate**: nothing in `scripts/`, `tests/` or `.github/` invokes it (a submission PR may not modify those paths); it is run manually before submission and is registered in compliance_matrix.json#self_check_expectations. Together with protocol-check-runner.js and audit-selftest.js it covers every recomputable claim in this package; design judgements, unmeasured items and field conclusions are out of scope."
     },
     {
       "path": "visual/assets/governance/audit-selftest.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "3ee229cc82e6fab16a032243fd023ef2f5b683ac56423362b6b4e1b31b9e07b7",
+      "sha256": "c0795eeb7d0353d12bbf1231d8f3a8c7fa8dd26018556be3d2595bd66103b9a5",
       "title_zh": "自检脚本的回归测试",
       "title_en": "Regression test for the self-check scripts",
-      "description_zh": "只读、离线、零第三方依赖的 Node 脚本，检验同目录 claims-audit.js 与 protocol-check-runner.js **会不会漏检**——因为一个只会通过的自检和没有自检是等价的，而本包在这件事上栽过两次：一次是条件式 add() 让两项检查在正文措辞改动后从清单里消失、脚本报 47/47 通过；一次是元检查的 ID 全集不含元检查自己、删掉它后脚本报 48/48 通过。两次都是「检查悄悄没跑」而非「检查判错」，所以判据不能与被测对象同处一文件。**共 20 例，全部通过**：2 例正向（两个脚本须退出 0，且规模恰为 54 项／12 账／96 规则／48 断言，ID 序列须与本脚本独立记录的那份全集逐位相同——两份分岔即报错）；18 例阴性，每例注入一类已知缺陷并要求脚本退出 1 且报出指定项：把「之和为」换成同义词须报 F9；落点表某行东侧写成西侧、或几何里 side 被改须报 P3；断面单侧合计写成容器重复加的 21.1 m 须报 F3／F4；删掉一条来源的必备字段须报 H1；矩阵引用指向不存在的标题须报 G1；删掉任意一条检查（含元检查自己）须报「缺 X」；从 EXPECTED_IDS 里去掉 Z1 须报「多出 Z1」；重跑器那侧少一条规则检查须报「95 条，应为 96 条」；夹具被篡改须报规则不一致；simulation.json 的已发布断言被翻转须报断言不一致。**缺陷注入一律写进系统临时目录，包内文件不被改动**，被测脚本通过 JZ_AUDIT_OVERLAY（改输入）与 JZ_AUDIT_HOME（改脚本自身）读入，跑完即删；两个环境变量都不设置时被测脚本行为不变。`node audit-selftest.js` 全部通过退出 0，任何一例未通过退出 1；`--json` 输出机器可读结果。**它同样不是自动化闸门**：`scripts/`、`tests/`、`.github/` 都不调用它（投稿 PR 不得改那些路径），运行方式是提交前手动执行，登记在 compliance_matrix.json#self_check_expectations。它检验的是「审计器还拦不拦得住」，不检验设计内容。",
-      "description_en": "A read-only, offline Node script with no third-party dependencies that tests whether claims-audit.js and protocol-check-runner.js in the same directory **still catch anything** — because a self-check that can only pass is equivalent to no self-check, and this package has been caught by exactly that twice: once when a conditional add() made two checks disappear from the list after a wording change, so the script reported 47/47 and passed; and once when the meta-check's ID list did not include the meta-check itself, so deleting it left the script reporting 48/48 and passing. Both were \"a check quietly did not run\", not \"a check reached the wrong verdict\", so the criterion cannot live in the same file as the thing being tested. **20 cases, all passing**: 2 positive (both scripts must exit 0 at a scale of exactly 54 checks / 12 ledgers / 96 rules / 48 assertions, and the ID sequence must match, position by position, the independent copy of the full list kept in this script — divergence between the two copies is an error); and 18 negative, each injecting one class of known defect and requiring the script to exit 1 and name the specific check: replacing \"sum of\" with a synonym must report F9; writing a row's east side as west, or altering `side` in the geometry, must report P3; writing the one-sided section total as the 21.1 m obtained by double-counting the container must report F3/F4; deleting a required field from a source must report H1; a matrix reference pointing at a non-existent heading must report G1; deleting any single check (including the meta-check itself) must report \"missing X\"; removing Z1 from EXPECTED_IDS must report \"extra Z1\"; dropping one rule check on the re-runner side must report \"95, expected 96\"; a tampered fixture must report a rule mismatch; and flipping a published assertion in simulation.json must report an assertion mismatch. **Every injection is written into the system temp directory and no file inside the package is modified**; the scripts under test read them via JZ_AUDIT_OVERLAY (mutated inputs) and JZ_AUDIT_HOME (a mutated copy of the script itself), and the directory is removed on exit. With neither variable set, the behaviour of the scripts under test is unchanged. `node audit-selftest.js` exits 0 when all cases pass and 1 otherwise; `--json` emits machine-readable output. **It is not an automated gate either**: nothing in `scripts/`, `tests/` or `.github/` invokes it (a submission PR may not modify those paths); it is run manually before submission and is registered in compliance_matrix.json#self_check_expectations. It tests whether the auditors still catch defects, not the design content."
+      "description_zh": "只读、离线、零第三方依赖的 Node 脚本，检验同目录 claims-audit.js 与 protocol-check-runner.js **会不会漏检**——因为一个只会通过的自检和没有自检是等价的，而本包在这件事上栽过两次：一次是条件式 add() 让两项检查在正文措辞改动后从清单里消失、脚本报 47/47 通过；一次是元检查的 ID 全集不含元检查自己、删掉它后脚本报 48/48 通过。两次都是「检查悄悄没跑」而非「检查判错」，所以判据不能与被测对象同处一文件。**共 24 例，全部通过**：2 例正向（两个脚本须退出 0，且规模恰为 54 项／12 账／96 规则／48 断言／17 枚举字段／300 枚举实例，ID 序列须与本脚本独立记录的那份全集逐位相同——两份分岔即报错）；22 例阴性，每例注入一类已知缺陷并要求脚本退出 1 且报出指定项：把「之和为」换成同义词须报 F9；落点表某行东侧写成西侧、或几何里 side 被改须报 P3；断面单侧合计写成容器重复加的 21.1 m 须报 F3／F4；删掉一条来源的必备字段须报 H1；矩阵引用指向不存在的标题须报 G1；删掉任意一条检查（含元检查自己）须报「缺 X」；从 EXPECTED_IDS 里去掉 Z1 须报「多出 Z1」；重跑器那侧少一条规则检查须报「95 条，应为 96 条」；夹具被篡改须报规则不一致；simulation.json 的已发布断言被翻转须报断言不一致。**缺陷注入一律写进系统临时目录，包内文件不被改动**，被测脚本通过 JZ_AUDIT_OVERLAY（改输入）与 JZ_AUDIT_HOME（改脚本自身）读入，跑完即删；两个环境变量都不设置时被测脚本行为不变。`node audit-selftest.js` 全部通过退出 0，任何一例未通过退出 1；`--json` 输出机器可读结果。**它同样不是自动化闸门**：`scripts/`、`tests/`、`.github/` 都不调用它（投稿 PR 不得改那些路径），运行方式是提交前手动执行，登记在 compliance_matrix.json#self_check_expectations。它检验的是「审计器还拦不拦得住」，不检验设计内容。",
+      "description_en": "A read-only, offline Node script with no third-party dependencies that tests whether claims-audit.js and protocol-check-runner.js in the same directory **still catch anything** — because a self-check that can only pass is equivalent to no self-check, and this package has been caught by exactly that twice: once when a conditional add() made two checks disappear from the list after a wording change, so the script reported 47/47 and passed; and once when the meta-check's ID list did not include the meta-check itself, so deleting it left the script reporting 48/48 and passing. Both were \"a check quietly did not run\", not \"a check reached the wrong verdict\", so the criterion cannot live in the same file as the thing being tested. **24 cases, all passing**: 2 positive (both scripts must exit 0 at a scale of exactly 54 checks / 12 ledgers / 96 rules / 48 assertions, and the ID sequence must match, position by position, the independent copy of the full list kept in this script — divergence between the two copies is an error); and 22 negative, each injecting one class of known defect and requiring the script to exit 1 and name the specific check: replacing \"sum of\" with a synonym must report F9; writing a row's east side as west, or altering `side` in the geometry, must report P3; writing the one-sided section total as the 21.1 m obtained by double-counting the container must report F3/F4; deleting a required field from a source must report H1; a matrix reference pointing at a non-existent heading must report G1; deleting any single check (including the meta-check itself) must report \"missing X\"; removing Z1 from EXPECTED_IDS must report \"extra Z1\"; dropping one rule check on the re-runner side must report \"95, expected 96\"; a tampered fixture must report a rule mismatch; and flipping a published assertion in simulation.json must report an assertion mismatch. **Every injection is written into the system temp directory and no file inside the package is modified**; the scripts under test read them via JZ_AUDIT_OVERLAY (mutated inputs) and JZ_AUDIT_HOME (a mutated copy of the script itself), and the directory is removed on exit. With neither variable set, the behaviour of the scripts under test is unchanged. `node audit-selftest.js` exits 0 when all cases pass and 1 otherwise; `--json` emits machine-readable output. **It is not an automated gate either**: nothing in `scripts/`, `tests/` or `.github/` invokes it (a submission PR may not modify those paths); it is run manually before submission and is registered in compliance_matrix.json#self_check_expectations. It tests whether the auditors still catch defects, not the design content."
     },
     {
       "path": "assets/figures/shift-ledger.png",
