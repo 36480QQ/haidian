@@ -368,7 +368,7 @@ See `sources.json`, `standard_matrix.json`, `design_depth_matrix.json`, `complia
 
 For bilingual traceability, the remaining source, standard, design-depth, data, metric and assumption markers are retained below with the same occurrence counts as the Chinese companion.
 - [source:AGENT-TASKBOOK] [depth:overall_spatial_structure] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/site_boundary.geojson#SITE-001]
-- [source:OFFICIAL-ANNOUNCEMENT] [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:PROCESSED-FACT-PACK]
+- [source:OFFICIAL-ANNOUNCEMENT] [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:PROCESSED-FACT-PACK] [source:PUBLIC-BRIEF]
 - [source:PROCESSED-FACT-PACK] [source:PROCESSED-FACT-PACK] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 - [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 - [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/key_areas.geojson#PROV-KEY-001]

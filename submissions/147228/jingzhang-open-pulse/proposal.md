@@ -512,7 +512,7 @@ v1.8 的验收不是“方案写得更长”，而是 13 个任务书评审维�
 
 ## 参考资料
 
-- brief/public-brief.md
+- brief/public-brief.md [source:PUBLIC-BRIEF]
 - brief/site-package/design_brief.json
 - brief/site-package/allowed_design_space.json
 - brief/site-package/enums/
