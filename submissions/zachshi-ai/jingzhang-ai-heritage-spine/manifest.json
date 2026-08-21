@@ -14,7 +14,7 @@
     "model_family": "glm",
     "model_detail": "ZCode agent powered by GLM-4 (glm-latest) for urban design proposal generation, geometry derivation, and bilingual narrative authoring"
   },
-  "generated_at": "2026-08-19T06:00:00Z",
+  "generated_at": "2026-08-16T09:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d7b64b507f1958b5e877b2cbf3915443d8191865c9d34a05f7375b7a4db08f25"
+      "sha256": "4a05c6d46bb51b72864d54486710133df897c6c08df16290f8223c756720200f"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "2f90ea7b118cad701a4328c58b6acb3ab1e25a7ab819bb05f94302ca93132980"
+      "sha256": "82360037f7265d6776c55fa73d8d5bfb314815207f41bc29f1d0dd0e26f8d080"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "239dc422ccf3c02b14f673da537a01ea7db2ce884ad3bdfa871a195535d64f02"
+      "sha256": "a6825a81022a0407516d1e6d3048c3cf120c1f0bfe8b7e096d96dc0637a1b900"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0c06103fb0fe3f211eb8363a3b4ec949ba2c6c92fcfcbdff8b9e8be4a39cd620"
+      "sha256": "8aae02338c02ee5a6c03ea05d04e8cd3f11f73d3cb71906ee028861387b18d13"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "fad83cbeebd914b0bae90fe3d3d592d107f7efb815ae542f64b865ee3047470f"
+      "sha256": "8f7aa9af39f024140322162cf2f5f71f4e4d8cbc13a0880083c0625a5c4fa4df"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "fdc233be9345b8567ba8b75066b7b11420ae36e3f52af3fac9126f70b60f770c"
+      "sha256": "cca73a7a0a6d147102e93c059edaca0da1bae63d035cd5b8fdc492840848947c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -368,60 +368,6 @@
       "role": "evidence_data",
       "required": false,
       "sha256": "1c200f7abd91f6876656a8f00ce9b090371e1d595c775a7948f44348a41b115e"
-    },
-    {
-      "path": "visual/assets/reciprocity-usage-register.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "24d95a256a17f8dfca2564f9c54bbdbaac1332585f9a501b8fbdd7c5e4dc35ef"
-    },
-    {
-      "path": "visual/assets/run_reciprocity_usage_tabletop.js",
-      "role": "verification_script",
-      "required": false,
-      "sha256": "2dd2863149a5221b401ea74fad4d46658379feb16739b965c109b4c3b4e09efb"
-    },
-    {
-      "path": "visual/assets/reciprocity-usage-evidence.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "0b350ead279713110234ceb0d3859065616a23ac63808cf6f292fe183c1557fe"
-    },
-    {
-      "path": "visual/assets/philosophy/value-tradeoffs.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "fd1465c80b2126b58057593dab00d0959b5a9e18e7546029a11a62ad5fbd559b"
-    },
-    {
-      "path": "visual/assets/philosophy/site-necessity.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "b08f5f296f3c256e5a2d7bab14de326dc2ad6bf29c067bcd559e876b0882b331"
-    },
-    {
-      "path": "visual/assets/philosophy/first-person-scripts.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "14e663631ebd2c7dae33bc8a68222ee47153e1bd8899aa1dd200b87b8f7e3564"
-    },
-    {
-      "path": "visual/assets/philosophy/epistemic-grading.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "7081847c8b2ff9d6fad525215dd1bdfe52829b4f70fa8c4db769afc5f1fd2513"
-    },
-    {
-      "path": "visual/assets/philosophy/incentive-compatibility.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "61e97411f8c9788d4fe4c6559babd255179451476b981150322217321b92dea6"
-    },
-    {
-      "path": "visual/assets/philosophy/self-update-protocol.json",
-      "role": "evidence_data",
-      "required": false,
-      "sha256": "5e01f208388fc05aef7593cb76f337d154c8934575918b8365cd56dde1d65c76"
     }
   ],
   "validation_claim": {

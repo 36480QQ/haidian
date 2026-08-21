@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the Jingzhang Railway Heritage Corridor as a spine, the proposal links the Zhongzhiyuan AI Acceleration Area, Beijing AI Origin Community, and Dazhongsi AI Industry Cluster to build a world-class AI innovation belt with three zones and two wings. The proposal introduces the 'AI Origin · Jingzhang Spine' concept, using the heritage park slow-mobility axis to stitch east-west and connect north-south, with 10 land-use zones, 15 concept buildings, 12 AI scenario cards, and 3 pilgrimage landmarks, forming an experienceable, scalable, and iterative smart city concept."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "jingzhang-heritage-narrative"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide", "robot-delivery-low-speed"]
-iteration: "v6.0"
+iteration: "v4.0"
 ---
 
 # Jingzhang AI Heritage Spine: A Century-Old Railway Corridor Reborn as an Intelligent City
@@ -302,51 +302,6 @@ Cultural reciprocity answers "what AI must give back to culture," but it does no
 | Smart Delivery Ark Station | Surface overlay | Module wholly relocatable | Silver-gray modular appearance | Station can revert to a staffed service point |
 
 The three principles connect to the G gate: every node must submit an intervention register before the G0 spatial gate; a register that does not pass (e.g., proposing to alter the heritage itself) may not enter design deepening. All entries in the register are `not_authorized_not_run`; on-site implementation requires professional review by the heritage protection authority [depth:risk_missing_data].
-
-### Meta-level Verification: Reciprocity Artifact Usage Verification (Original to This Proposal, v5)
-
-The Ren-Track Grammar promises that "every AI node owes culture one physical reciprocity artifact." This promise **can be verified**: a reciprocity artifact that is never touched, read, or visited is a decoration, not a reciprocity. The definition of reciprocity includes "being used"-therefore reciprocity artifact verification = usage verification [E:HERITAGE-USAGE-VERIFICATION].
-
-**Usage register of the 12 reciprocity artifacts** (each defines a usage metric and a "decoration risk" criterion; full version in `visual/assets/reciprocity-usage-register.json`) [data:visual/assets/reciprocity-usage-register.json#artifacts]:
-
-| Reciprocity Artifact | Usage Metric | Threshold | Decoration Risk Criterion |
-| --- | --- | --- | --- |
-| Ren-Track scale model + full-line history map | Model interaction count + monthly map pickups | Map ≥400 copies/month | <120 copies indicates insufficient landmark attraction |
-| Station history timeline + paper guide booklet | Monthly guide booklet pickups | ≥300 copies/month | <100 copies triggers position and content adjustment |
-| Community memory collection box | Monthly submission count | ≥20 items/month | <5 items indicates the collection mechanism has failed |
-| Station service commitment plaque | Gaze rate (proportion of station entrants who look at it) | ≥30% | <10% triggers relocation to the entrance sightline |
-
-**Honest status of usage volumes.** All usage volumes are currently `unknown`-before on-site data arrives, neither 0 nor estimates are filled in. This is the most critical boundary between usage verification and "decoration risk": **unknown does not mean no one uses it; it means it has not yet been measured**.
-
-**Rule closure verification.** `run_reciprocity_usage_tabletop.js` correctly classifies all 72 synthetic cases-12 reciprocity artifacts × 6 rule branches (meets threshold / below lower limit / virtual-only / unmeasured / missing threshold / node missing reciprocity artifact)-(12 reciprocity / 12 decoration risk / 12 unknown / 36 blocked), demonstrating that the usage rules are logically closed. But this only proves correct classification; it does not constitute evidence of on-site visits, pickups, or authorization [data:visual/assets/reciprocity-usage-evidence.json#blocked].
-
-**Relationship to the Ren-Track Grammar.** The grammar requires that "the reciprocity artifact must be physical" (virtual does not count); usage verification further requires that "the physical must be used" (decoration does not count)-together they upgrade "culture is not consumed" from a design principle to an engineering commitment that is **measurable, able to flag decoration risk, and able to prompt remediation**: a reciprocity artifact below the lower limit is not discarded, but re-curated or relocated until it genuinely returns to cultural use [depth:metrics_recalculation].
-
-### Meta-Design Layer: Philosophy Enhancement (Original to This Proposal, v6)
-
-The Ren-Track Grammar answers "AI must reciprocate culture," and usage verification answers "reciprocity must be used." The meta-design layer of this proposal goes further, raising six questions of logic and philosophy—none of them externally imposed judgments; each one **illuminates logic already implicit in the Ren-Track Grammar**. The six directions correspond to six artifacts under `visual/assets/philosophy/`, each making explicit the logic of the grammar itself [E:HERITAGE-PHILOSOPHY-META].
-
-**Value Theory — Value Trade-offs.** The Ren-Track Grammar already contains an implicit value ordering; the value trade-off table makes implicit value conflicts explicit as "priority + cost" [data:visual/assets/philosophy/value-tradeoffs.json#tradeoffs]:
-
-| Value Conflict | Priority | Encoded In | Cost |
-| --- | --- | --- | --- |
-| Heritage conservation vs. AI intervention | Heritage conservation | Conservation Principle P1 Minimum Intervention | AI facilities may only be surface overlays |
-| Reciprocity vs. efficiency | Reciprocity | Every node must reciprocate with a physical reciprocity artifact | Construction and operation cost of reciprocity artifacts |
-| Rich experience vs. heritage authenticity | Heritage authenticity | Tours use physical reciprocity artifacts, not virtual effects | The experience is less dazzling than digital spectacle |
-
-The costs are accepted because the priorities are preconditions for "culture is not consumed."
-
-**Teleology — Site Necessity.** This argument establishes why the cultural reciprocity mechanism can only happen on the Jingzhang—site specificity moves from background to necessary condition [data:visual/assets/philosophy/site-necessity.json#necessity_arguments]: ① The reciprocity spirit of the Ren-Track is unique to the Jingzhang ("the Ren-Track giving back along its own line" is precisely the metaphor the Jingzhang heritage offers AI); ② The Jingzhang is the only linear railway heritage crossing the core of Haidian District (the spatial carrier of the reciprocity chain); ③ The Jingzhang is the spiritual origin of "China's independent construction" (the spiritual anchor of reciprocity's legitimacy). Detached from the Jingzhang, the reciprocity mechanism loses its spiritual source, its spatial carrier, and its legitimacy.
-
-**Phenomenology — First-Person Empathy Scripts.** First-person scripts verify whether each step of the cultural reciprocity experience chain holds together—engineering verification of the experience, not marketing narrative [data:visual/assets/philosophy/first-person-scripts.json#scripts]. Three scripts (a visitor touching a reciprocity artifact / a resident submitting a memory / a student reading a test report) each verify one reciprocity experience chain.
-
-**Epistemology — Epistemic Grading.** Every claim is graded as description/prediction/prescription, with its knowledge base stated—honesty about epistemic boundaries [data:visual/assets/philosophy/epistemic-grading.json#claim_grades].
-
-**Game Theory — Incentive Compatibility.** The core of mechanism design: making "reciprocating culture" the dominant strategy—AI nodes only truly reciprocate when they have a motive to reciprocate [data:visual/assets/philosophy/incentive-compatibility.json#incentive_mechanisms]. Reciprocity artifacts meeting usage thresholds earn priority display placement; registering reciprocity earns cultural compliance certification; publishing usage verification makes non-reciprocity auditable. When the benefit of reciprocating exceeds the cost of not reciprocating, reciprocity becomes the dominant strategy.
-
-**Temporal — Self-Update Protocol.** The proposal is not static; it defines a trigger protocol specifying which parts of the reciprocity mechanism must be recalculated when the city changes [data:visual/assets/philosophy/self-update-protocol.json#triggers]. Changes in cultural heritage understanding → recalculate reciprocity artifact content; changes in heritage protection policy → recalculate siting; changes in visitor behavior → recalculate usage thresholds.
-
-**Relationship of the six directions to the Ren-Track Grammar.** All six directions are logical extensions of the grammar itself: the value table makes explicit the grammar's implicit value ordering; site necessity is the grammar's spiritual legitimacy; the empathy scripts are proof that the grammar can be experienced; epistemic grading is the grammar's honesty about its own epistemic boundaries; incentive compatibility is the mechanism guarantee that the grammar is followed; self-update is the grammar's honesty toward time. Together the six upgrade "culture is not consumed" from a design principle into an engineering commitment self-consistent across six dimensions—value, spirit, experience, epistemics, incentives, and time [depth:metrics_recalculation].
 
 ### Cultural Tour Route and Spatial Narrative Spine
 
