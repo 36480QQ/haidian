@@ -68,6 +68,12 @@
       "status": "background_transfer_only",
       "statement": "International cases are first-party background references from different legal and institutional contexts.",
       "impact": "They inform mechanisms but do not prove Chinese project legality, effectiveness, partnerships or implementation."
+    },
+    {
+      "id": "A-DAZHONGSI-DRILL-001",
+      "status": "synthetic_contract_test_only",
+      "statement": "DAZHONGSI-DRILL-01 is a synthetic drill and failure-test suite over the DAZHONGSI-FIELD-OPS-01 template contract. All fixtures are synthetic or paper inputs; field values in the template remain null / unknown / not_observed / not_signed.",
+      "impact": "Passing proves reproducible contract logic only. It must not be cited as field observation, site access, permission, entity confirmation, risk clearance, or operating commitment; official or field evidence still triggers full recalculation."
     }
   ]
 }

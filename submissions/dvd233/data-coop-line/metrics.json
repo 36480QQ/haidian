@@ -279,6 +279,66 @@
         "Conceptual governance target; operating and legal arrangements are unconfirmed."
       ],
       "metric_kind": "design_target"
+    },
+    "dazhongsi_drill_case_total": {
+      "status": "known",
+      "value": 21,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/dazhongsi-drill-tests.json",
+        "visual/assets/dazhongsi-drill-test-runner.js"
+      ],
+      "formula": "dazhongsi-drill-tests.json expected_case_count; recompute: node visual/assets/dazhongsi-drill-test-runner.js --json",
+      "confidence": "low",
+      "assumptions": [
+        "Synthetic contract tests over the DAZHONGSI-FIELD-OPS-01 template only; they prove reproducible contract logic, not field truth, site access, permission, or operability."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "dazhongsi_drill_case_passed": {
+      "status": "known",
+      "value": 21,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/dazhongsi-drill-tests.json",
+        "visual/assets/dazhongsi-drill-test-runner.js"
+      ],
+      "formula": "runner summary.passed while exit code = 0; any failed case forces exit 1 and this value is invalid",
+      "confidence": "low",
+      "assumptions": [
+        "Synthetic contract tests over the DAZHONGSI-FIELD-OPS-01 template only; they prove reproducible contract logic, not field truth, site access, permission, or operability."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "dazhongsi_drill_negative_fixture_fail_closed_total": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/dazhongsi-drill-tests.json",
+        "visual/assets/dazhongsi-drill-test-runner.js"
+      ],
+      "formula": "negative fixtures that make the runner exit 1 under --self-test / all 8 declared fixtures",
+      "confidence": "low",
+      "assumptions": [
+        "Synthetic contract tests over the DAZHONGSI-FIELD-OPS-01 template only; they prove reproducible contract logic, not field truth, site access, permission, or operability."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "dazhongsi_drill_category_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/dazhongsi-drill-tests.json",
+        "visual/assets/dazhongsi-drill-test-runner.js"
+      ],
+      "formula": "covered required categories (positive, negative, withdrawal, service_interruption, recovery, accessibility) / 6",
+      "confidence": "low",
+      "assumptions": [
+        "Synthetic contract tests over the DAZHONGSI-FIELD-OPS-01 template only; they prove reproducible contract logic, not field truth, site access, permission, or operability."
+      ],
+      "metric_kind": "synthetic_contract_test"
     }
   }
 }

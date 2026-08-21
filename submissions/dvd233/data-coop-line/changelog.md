@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v1.6 - 2026-08-21
+
+P1-04 Dazhongsi synthetic drill and failure tests / 大钟寺合成演练与失败测试
+
+- Baseline / 基线：从 `upstream/main` `83c87354d35186a56cd3d2816a27da9acf844915`（2026-08-21T08:59:43Z）建立干净 worktree 与分支 `codex/data-coop-line-p1-04-drill-tests-20260821`；发布前再次观察 main 并核对相关路径。自 P1-03 冻结点以来的 main 窗口只含无关投稿与维护者工具；`docs/formal-submission-guide.md` 新增 simulation/评测基线一致性阻断规则（本包无 simulation.json / evaluation-baseline.json，不适用）、`scripts/front_matter.py` 解析修复（低险）与多模态参考图体积说明（本包远低于预算），未触及本投稿、brief、schema 与门禁脚本。
+- Single source / 唯一事实源：新增 `visual/assets/dazhongsi-drill-tests.json`（Suite ID `DAZHONGSI-DRILL-01`，SHA-256 `86ebfa7655e4cc79fb9d155d22cb62c821a131ec5e4882d71153e7dd13bd5507`），锁定对 `DAZHONGSI-FIELD-OPS-01` 模板契约的 21 项合成用例与 8 个负向夹具；运行器 `visual/assets/dazhongsi-drill-test-runner.js` 仅用 Node 内置库、只读，双语载体以套件 ID 与台账哈希锁定一致性。
+- Coverage / 覆盖：正例（三阶段链路、11 份回执、唯一 A）、负例（任一条件未 verified 即拒绝、空值纪律、not_observed ≠ 风险排除）、撤回（各阶段回执槽位 + 停机覆盖 + 回报非购买同意）、服务中断（六项触发器逐项停机并阻断推进）、恢复（四条件 + 三方签署 + 同口径复测）、无障碍任务测试（无数据等价与人工复核 3/3、离线正线与人工接管可定位）。
+- Meta & fail-closed / 元检查与负向自测：用例 ID 全集钉死（含元检查自身），少跑一项即失败；`--self-test` 对 8 个变异夹具逐一证明运行器退出 1（删回执、填观测值、断证据链、重复 ID、删停止条件、加第二问责、删用例 ID、关闭无数据等价）。当前 21/21 通过、8/8 fail-closed。
+- Carriers / 载体：中英 proposal 各增 P1-04 小节并嵌入新图；派生报告 HTML 由当前 main 渲染脚本重新生成；双语离线 visual 新增 drill 区段（4 项 drill 指标以 data-metric/data-value 登记并与 metrics.json 一致）；新增 2400×1500 双语技术信息图（PNG tEXt 含套件 ID、台账哈希、证据签名与基线）；四份 PDF 各追加一页 drill 证据页并以明文 Info 键 /P104DrillSuiteID、/P104DrillTestsSHA256、/P104SyntheticOnly 登记（修复 pypdf 6.16 默认八进制转义会隐藏连字符令牌的问题：monkey-patch TextStringObject 为规范合法明文字符串，生成器留在投稿包外）。
+- Metrics / 指标：新增 `dazhongsi_drill_case_total`、`dazhongsi_drill_case_passed`、`dazhongsi_drill_negative_fixture_fail_closed_total`、`dazhongsi_drill_category_coverage_ratio`（metric_kind=synthetic_contract_test，confidence=low，可由台账与运行器复算）；1.5.3.3 合规矩阵与假设 `A-DAZHONGSI-DRILL-001` 同步。
+- Verification boundary / 验证边界：套件为模板契约级合成验证；现场授权、站口、路线、实测绩效、主体、签署、许可与无障碍结论仍未观测；`not_observed` 不得解释为风险已排除。GeoJSON、既有 metrics 与证据签名 c880c438… 不变；PDF 仅追加页，既有页面逐字节保留。
+
 ## v1.5 - 2026-08-21
 
 P1-03 Dazhongsi field-operations responsibility and evidence template / 大钟寺现场运营责任与证据模板
