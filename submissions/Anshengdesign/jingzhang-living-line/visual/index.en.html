@@ -50,7 +50,7 @@
     <figure><img src="../assets/figures/masterplan.en.png" alt="Master plan"><figcaption>Master plan（Fig1）: light grey = existing buildings (OSM), white-cased dark line = real Jing-Zhang railway, dark green = Hyper Line spine, red dots = seven stitches, stars = three pilgrimage landmarks</figcaption></figure>
     <figure><img src="../assets/figures/site-overview.en.png" alt="Belt overview"><figcaption>Belt overview（Fig2）</figcaption></figure>
     <div class="metric-row">
-      <div class="metric"><div class="m">Emergence Index EI (0.823 yellow → all-green)</div><div class="n" data-vid="ei">0.9625</div></div>
+      <div class="metric"><div class="m">Emergence Index EI (0.795 yellow → all-green)</div><div class="n" data-vid="ei">0.9625</div></div>
       <div class="metric"><div class="m">Gate 1: percolation p_c</div><div class="n" data-vid="per">0.840→0.904</div></div>
       <div class="metric"><div class="m">Gate 2: syntactic integration</div><div class="n" data-vid="syn">+36%</div></div>
       <div class="metric"><div class="m">Gate 3: jobs-housing entropy</div><div class="n" data-vid="ent">+5.3%</div></div>
@@ -227,7 +227,7 @@
   });
   lb.addEventListener('click',function(){lb.classList.remove('open');});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open');});
-  var B={ei:['0.823（黄档）','0.9625（全绿档）'],per:['0.840','0.904'],syn:['现状偏低','+36%'],ent:['7.454','7.850（+5.3%）']};
+  var B={ei:['0.795（黄档）','0.9625（全绿档）'],per:['0.840','0.904'],syn:['现状偏低','+36%'],ent:['7.454','7.850（+5.3%）']};
   document.querySelectorAll('button[data-vid]').forEach(function(btn){
     btn.addEventListener('click',function(){
       var on=!btn.classList.contains('on'),v=btn.dataset.vid;
