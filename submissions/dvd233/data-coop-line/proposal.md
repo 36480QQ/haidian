@@ -15,6 +15,22 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 “共数”不是要求每个人交出更多数据，而是让谁提出问题、谁贡献材料、谁运行计算、谁取得收益、谁承担纠错责任都被看见。方案把京张铁路曾经组织人流与货流的线性基础设施，转译为组织用途许可、受控计算、公共回报和撤回回执的城市合作线；与此同时，任何人都可走一条不提供可选个人数据、仍获得同等核心服务的“无数据等价正线”。这是一套供专业团队和公众继续深化的城市设计与运营参考，不是已批准规划、已成立法人或已承诺实施的项目。
 
+## 五分钟评审入口 · P2-03
+
+`DATA-COOP-REVIEW-SPINE-01` 把既有证据压缩为一条 **300 秒、5 步**的评审路径；唯一事实源是 `visual/assets/reviewer-evidence-spine.json`，SHA-256 为 `966cd7eed4227078342f4bcd5aacf039438f7720a1049fcebe9a67413411e7ee`。本轮分支冻结于 `upstream/main@9782df83a8f2a58ebe79823fe8001f18d129b975`。该入口不改变方案方向、GeoJSON、metrics、来源或许可边界；它只让评审者更快区分“已验证”“待验证”和“禁止推断”。临时几何不升级为官方红线，合成通过不升级为现场事实，`not_observed` 不解释为风险已排除。
+
+| 时间 | 评审问题 | 直接证据 | 停止推断的位置 |
+| --- | --- | --- | --- |
+| 0:00—0:45 | 哪些事实可正式表达，哪些控制几何仍缺失 | `site-evidence-register.json` + `site-evidence-audit.js`：4/4 geometry、18/18 检查、0 official-control feature / 6 类缺口 | 空集表示缺口已核验，不表示现实中无控制 |
+| 0:45—1:40 | 图、文与指标是否来自同一计算链 | `evidence-snapshot.json` + `metrics.json` + `evidence-consistency.js`：EPSG:4548 复算与签名 `c880c438…a45bbf` | 仅为临时计算包内的概念量，不是法定面积或工程量 |
+| 1:40—2:45 | 核心主张是否落到可定位、可停机的样板 | `DAZHONGSI-MVP-01`：`SCN-05/09/10`、两处房间测试基底、公共回执空间与两条概念线 | 站口、路权、无障碍与工程可行性仍待实证 |
+| 2:45—3:55 | 未知状态、唯一问责与停机条件是否清楚 | `DAZHONGSI-FIELD-OPS-01`：5 点、3 路、6 角色、6—6—4 闸门、11 回执、6 签署位；215/215 审计通过 | 现场授权 `unknown`、工作流 `not_observed`，主体与实测值均未确认 |
+| 3:55—5:00 | 少跑、断链或条件不足时是否显式失败 | `DAZHONGSI-DRILL-01`：21/21 合成用例、8/8 负向夹具 fail-closed；随后核对四门 self-check 与 preflight | 合成通过不证明可进入、可运营、许可成立或风险已排除 |
+
+复现命令为 `node visual/assets/reviewer-evidence-spine-audit.js --json`；`--self-test --json` 会删除末步的内存夹具并证明审计 fail-closed。该审计只读、仅用 Node 内置库；最终载体仍须经过 manifest refresh 后的完整 self-check，而不能预写通过状态。
+
+![共数京张五分钟评审证据脊柱；从来源权限到失败关闭，明确已验证、待验证与禁止推断](assets/figures/reviewer-evidence-spine.png)
+
 ## 设计依据与资料清单
 
 本方案首先回应《百年京张 AI 创新带城市设计国际方案征集资格预审公告》及面向智能体的任务书：统筹研究、总体设计、三处重点区域、AI 创新生态和长期运营必须互相校核，而不能用一个技术展馆代替整条创新带。公告给出的 43.6 平方公里、11.4 平方公里和 368.4 公顷是工作尺度依据；提交包中的可计算边界则来自仓库临时几何，两类数字不可混称。公告、任务书、标准快照与资料用途登记共同构成本方案的事实入口 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]。
