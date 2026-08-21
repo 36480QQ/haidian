@@ -12,7 +12,7 @@
         "site_boundary.geojson"
       ],
       "metrics": [
-        "site_area_sqm"
+        "coordinated_research_area_sqm"
       ],
       "drawings": [
         "assets/figures/site-overview.png"
@@ -30,7 +30,7 @@
         "DETERMINISTIC_VALIDATION"
       ],
       "covered": true,
-      "evidence_summary_zh": "统筹研究范围 43.6 km² 已在三层范围工作框架章节说明。"
+      "evidence_summary_zh": "统筹研究范围 43.6 km² 已在三层范围工作框架章节说明；方案在该层级提出产业战略、命名体系与全球 AI 创新生态案例。"
     },
     {
       "requirement_id": "1.3.2",
@@ -105,7 +105,7 @@
         "site_boundary.geojson"
       ],
       "metrics": [
-        "site_area_sqm"
+        "coordinated_research_area_sqm"
       ],
       "drawings": [
         "assets/figures/site-overview.png"
@@ -123,7 +123,7 @@
         "DETERMINISTIC_VALIDATION"
       ],
       "covered": true,
-      "evidence_summary_zh": "包含 5-8 个全球 AI 创新生态案例（实际 7 个）、命名方案、Logo 方向、五大功能空间分工。"
+      "evidence_summary_zh": "统筹研究范围（43.6 km²）关注 AI 产业生态、战略定位、创新链和未来城市形态；本方案在该层级提出「京张100·AI 大动脉」总体概念、7 个全球 AI 创新生态案例、命名与 Logo 方向、五大功能空间分工、三区两翼协同回路，详见 proposal.md 统筹研究范围产业与未来城市研究章节。"
     },
     {
       "requirement_id": "1.4.2",
@@ -200,7 +200,7 @@
         "site_boundary.geojson"
       ],
       "metrics": [
-        "site_area_sqm"
+        "coordinated_research_area_sqm"
       ],
       "drawings": [
         "assets/figures/site-overview.png"
@@ -547,7 +547,7 @@
         "site_boundary.geojson"
       ],
       "metrics": [
-        "site_area_sqm"
+        "coordinated_research_area_sqm"
       ],
       "drawings": [
         "assets/figures/site-overview.png"
@@ -578,7 +578,8 @@
         "site_boundary.geojson"
       ],
       "metrics": [
-        "global_ai_ecosystem_cases_count"
+        "global_ai_ecosystem_cases_count",
+        "coordinated_research_area_sqm"
       ],
       "drawings": [
         "assets/figures/site-overview.png"

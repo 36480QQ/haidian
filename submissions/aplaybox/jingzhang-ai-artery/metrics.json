@@ -14,7 +14,9 @@
       "formula": "shapely.area(project(EPSG:4326 -> EPSG:4548, site_polygon))",
       "confidence": "medium",
       "assumptions": "基于公告约 11.4 km² 面积推定的临时边界复算；official polygon 发布后需重算。",
-      "name_zh": "总体设计范围面积"
+      "name_zh": "总体设计范围面积",
+      "display_precision": "km2_or_ha",
+      "display_value_zh": "~11.4 km² (公告值，provisional 模型几何)"
     },
     "key_area_count": {
       "status": "known",
@@ -38,7 +40,9 @@
       "formula": "sum(project(polygon).area for k in key_areas)",
       "confidence": "medium",
       "assumptions": "公告约 368.4 ha；provisional 边界复算存在偏差，待 official polygon 发布后重算。",
-      "name_zh": "三处重点区合计面积"
+      "name_zh": "三处重点区合计面积",
+      "display_precision": "km2_or_ha",
+      "display_value_zh": "~3.69 km² (公告 368.4 ha，provisional 模型几何)"
     },
     "land_use_polygon_count": {
       "status": "known",
@@ -62,11 +66,13 @@
       "formula": "shapely.area(unary_union(project(green_space.features))) (avoiding overlap double-count)",
       "confidence": "medium",
       "assumptions": "使用 unary_union 合并后复算，避免绿地重叠重复计算；待 official polygon 发布后重算。",
-      "name_zh": "绿地面积"
+      "name_zh": "绿地面积",
+      "display_precision": "km2_or_ha",
+      "display_value_zh": "~33 ha (provisional 模型几何)"
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.028958,
+      "value": 0.029,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -75,7 +81,8 @@
       "formula": "green_space_area_sqm / site_area_sqm (union-based)",
       "confidence": "medium",
       "assumptions": "概念性绿地占比；不含居住区附属绿地与道路绿带；待 official 控规条件补齐后正式复算。",
-      "name_zh": "绿地率"
+      "name_zh": "绿地率",
+      "display_precision": "percent_2dp"
     },
     "public_space_area_sqm": {
       "status": "known",
@@ -87,20 +94,23 @@
       "formula": "shapely.area(unary_union(project(public_space.features)))",
       "confidence": "medium",
       "assumptions": "8 个公共空间节点（含3个 AI 朝圣地标）。",
-      "name_zh": "公共空间面积"
+      "name_zh": "公共空间面积",
+      "display_precision": "km2_or_ha",
+      "display_value_zh": "~9.2 ha (provisional 模型几何)"
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.00805,
+      "value": 0.008,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "public_space_area / site_area",
+      "formula": "public_space_area_sqm / site_area_sqm (union-based)",
       "confidence": "medium",
-      "assumptions": "概念性公共空间占比。",
-      "name_zh": "公共空间率"
+      "assumptions": "概念性公共空间占比（0-1）；待 official 控规条件补齐后正式复算。",
+      "name_zh": "公共空间率",
+      "display_precision": "percent_2dp"
     },
     "ai_landmark_count": {
       "status": "known",
@@ -125,7 +135,9 @@
       "confidence": "low",
       "assumptions": "概念性建筑基底，用于指标复算与图面表达。",
       "name_zh": "建筑基底总面积",
-      "reason": "概念设计量；待 official 数据补齐后重算"
+      "reason": "概念设计量；待 official 数据补齐后重算",
+      "display_precision": "km2_or_ha",
+      "display_value_zh": "~58 ha (34 栋概念建筑基底)"
     },
     "building_count": {
       "status": "known",
@@ -140,18 +152,19 @@
       "name_zh": "建筑数量"
     },
     "concept_far": {
-      "status": "known",
-      "value": 1.301,
+      "status": "unknown",
+      "value": null,
       "unit": "index",
       "source_files": [
         "geometry/buildings.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(footprint * height) / site_area",
+      "formula": "GFA / site_area (GFA = sum(footprint * floor_count); floor_count requires floor_height which is not yet available)",
       "confidence": "low",
-      "assumptions": "概念设计量，不等于法定容积率；待 official 控规条件补齐后正式复算。",
-      "name_zh": "概念容积率",
-      "reason": "概念设计量，不等于法定容积率；待 official 控规条件补齐后重算"
+      "assumptions": "原始公式 sum(footprint * height) / site_area 量纲为长度而非容积率，已废弃；待 official 控规条件与建筑层高/层数数据补齐后按 GFA / site_area 复算。",
+      "reason": "原始公式量纲错误；待 official 控规条件与建筑层高/层数数据补齐后按 GFA / site_area 复算。",
+      "name_zh": "概念容积率（待复算）",
+      "display_precision": "unknown"
     },
     "road_total_length_m": {
       "status": "known",
@@ -179,14 +192,14 @@
     },
     "scenario_card_count": {
       "status": "known",
-      "value": 10,
+      "value": 12,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
       "formula": "manual count from proposal.md scenario card table",
       "confidence": "high",
-      "assumptions": "满足任务书要求的不少于10张AI场景卡（其中3张为AI产业测试验证场景）。",
+      "assumptions": "实际 proposal.md 中 SC-01 至 SC-12 共 12 张场景卡（含 3 张 AI 产业测试验证场景）。",
       "name_zh": "AI 场景卡数量"
     },
     "user_persona_count": {
@@ -237,6 +250,35 @@
       "confidence": "high",
       "assumptions": "满足任务书要求的不少于3个AI朝圣地标或荣誉展示节点。",
       "name_zh": "AI 朝圣地标/荣誉展示节点数量"
+    },
+    "coordinated_research_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/geometry/provisional_boundaries.geojson#PROV-RESEARCH-001"
+      ],
+      "formula": "shapely.area(project(EPSG:4326 -> EPSG:4548, PROV-RESEARCH-001 polygon))",
+      "confidence": "low",
+      "assumptions": "公告约 43.6 km²；本方案未生成统筹研究范围的设计图层，仅引用公告约面积。",
+      "reason": "统筹研究范围 polygon 仅为公告推定，未在本次方案中生成派生图层；待 official polygon 发布后整体重算。",
+      "name_zh": "统筹研究范围面积",
+      "display_precision": "km2",
+      "display_value_zh": "~43.6 km² (公告值，provisional)"
+    },
+    "building_gfa_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(footprint * floor_count) for each building; floor_count requires floor_height per building",
+      "confidence": "low",
+      "assumptions": "GFA 需要每栋建筑的层数或层高数据；当前仅有概念建筑基底与示意性高度，不足以复算 GFA。",
+      "reason": "缺少建筑层高/层数数据；待 official 现状建筑数据补齐后复算。",
+      "name_zh": "建筑总规模 (GFA)",
+      "display_precision": "unknown"
     }
   },
   "land_use_breakdown": [
