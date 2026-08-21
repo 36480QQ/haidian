@@ -398,7 +398,7 @@
     "local_public_source_count": {
       "status": "known", "value": 5, "unit": "count",
       "source_files": ["sources.json"],
-      "formula": "count(V6 local public evidence records)",
+      "formula": "count(V7 local public evidence records)",
       "confidence": "high", "assumptions": []
     },
     "regional_interface_count": {

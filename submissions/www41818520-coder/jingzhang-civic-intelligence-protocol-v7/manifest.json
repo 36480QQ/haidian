@@ -1,6 +1,6 @@
 {
   "schema_version": "0.2.0",
-  "package_id": "jingzhang-civic-intelligence-protocol-v6",
+  "package_id": "jingzhang-civic-intelligence-protocol-v7",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "012f2fed5b8693056965e96dfa01700ca86c3cea5014d10591e87d5fd4aa8c13"
+      "sha256": "38bf94c4a6fe5e2dd207d3bb9bb8ff7e9510234234572cabfeb01c942d3b04a7"
     },
     {
       "path": "agent.json",
@@ -39,7 +39,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "2bc7633cd5089fc14b26fe35edf1bc0bb6c4601e238d18fef33b53be97c63f6d"
+      "sha256": "a97439d5b500204129c2ba3661e708852038156fe067ee5653cae6dbcedd290f"
     },
     {
       "path": "assumptions.json",
@@ -57,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "73a1693ddac43d3143f96d023982c3dc70d8d4f7deb6c6cfa4d4f4c68f81152a"
+      "sha256": "0bd267f8ef75acc7dab16155bde609083daeab8d0510867662515bfc70d68a7a"
     },
     {
       "path": "compliance_matrix.json",
@@ -82,7 +82,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d47405d9b5db1f1539a5a1471f8e8f98ce23cf95509e68d1525af43483a89281"
+      "sha256": "8adc64f8fe31975518a93ac649225c69e427a79ae5bfd1dd23b354ed5cd5be3e"
     },
     {
       "path": "report/narrative.md",
@@ -115,7 +115,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "926776f0f2d277619c1e9113b25988f71b1086056431b08f11c35cd55c956454"
+      "sha256": "05d4e985208dde08f9d943dc9a3fa87add7ef9724680b0fdcc478439d2c64e94"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -223,7 +223,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e3be76bb7ee8569b926c7c1161caa694c485efff8ae1cc8ada443d14eaed6498"
+      "sha256": "58233231d40a6506aa369e704219d8e110e8be67c343f57a7ec8a5a1acf22c3e"
     },
     {
       "path": "report/proposal.en.html",
@@ -231,7 +231,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0b48ddf0adb82c9532c81364010798478cb3d29a89d28af2e4dd42f44629b3d6"
+      "sha256": "bf5cd2a8ef8c6cf9576967441ed008cf044401e4febb953a7ba05eb83f270da0"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -255,7 +255,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "fbfd540f5ea9d7a07569a01a643ec70bf596f8ee8421a3112635267812b278c7"
+      "sha256": "ffa27e5a6dd9a49d20417435ba0bf70532f2375723f4887f5790ac2ffda673a4"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -337,7 +337,7 @@
       "role": "changelog",
       "required": false,
       "language": "neutral",
-      "sha256": "13ebb7e2d252f4fde4781c19725f1e93797e2c7a904e1b6ff25d63192af0e9a7"
+      "sha256": "8134a468a5e10325078d9120814bb81dfb595c3a1f58b3d882d236eef5b2d430"
     },
     {
       "path": "risk.json",
@@ -429,7 +429,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"

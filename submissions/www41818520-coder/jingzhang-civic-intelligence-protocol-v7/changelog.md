@@ -1,8 +1,8 @@
 # 方案迭代记录
 
-## v6.0 - 2026-08-21
+## v7.0 - 2026-08-21
 
-- Created a new independent package under `jingzhang-civic-intelligence-protocol-v6`, preserving the previously merged 74-, 81-, 81- and 86-point proposals.
+- Created a new independent package under `jingzhang-civic-intelligence-protocol-v7`, preserving the previously merged 74-, 81-, 81- and 86-point proposals.
 - Added five verified local public sources for Three Zones and Two Wings, AI Origin, Tsinghua Yuan Station history and conservation, and heritage-park use; all published figures retain background-only limitations.
 - Expanded the bilingual proposal to a 52 KB primary narrative with a five-interface local evidence ledger, a one-to-one five-zone off-station prototype and twelve same-task human baselines.
 - Converted the implementation list into eight evidence-gated projects with resource bands and explicit stop contracts, tied to First 100 Days RACI and a six-gate adoption/exit path.
