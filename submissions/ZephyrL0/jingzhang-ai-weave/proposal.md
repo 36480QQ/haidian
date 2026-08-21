@@ -139,6 +139,8 @@ v3新增“京张反方设计室”。无障碍与照护、北京气候、遗产
 
 Agent特色不是生成更多概念，而是把反方设计室做成可重放协议：3个公开提示模板、4条简明trace、输入哈希、工具版本、失败测试和4项人工决定被保存为离线资产；不保存也不声称隐藏思维链，不声称LLM文本确定性。Agent可以指出证据越界和设计矛盾，但扩展、许可、暂停与退出必须由具名人或机构记录。[metric:agent_replay_trace_count] [metric:human_decision_record_count]
 
+v5.3将“Agent服务契约”收束为一条可审阅流程：最小数据输入→规则准入→人工接管→非数字替代→申诉/退出→学习回执。新增的三个必失败样本分别拦截个人识别、试图改变真实信号和缺少人工接管人的请求；它们是离线概念测试，不代表真实部署、备案或安全评估已完成。[source:SRC-BEIJING-AGENT-DEVELOPMENT-MEASURES-202607] [metric:negative_test_count]
+
 ![可重放的反方设计室](assets/figures/agent_replay.png)
 
 ## 用地、建筑规模与拆改留方案
@@ -197,6 +199,8 @@ v4的十个更新工作包均经过四道门：资料门确认边界、权属、
 
 参与主体按决策权分层：政府与主管部门确认法定边界和公共责任，专业团队完成规划、建筑、交通、市政、文保与无障碍深化，高校和企业提出真实研发与场景需求，社区、居民和一线维护者参与走读与复核，Agent只整理证据和暴露冲突。每阶段使用同一组评估指标：公共服务是否无需手机、无障碍旅程能否完成、免费停留是否保留、维护工单是否闭环、负样本是否被拦截；没有可信基线的满意度、成本和交通改善保持待确认。
 
+v5.3把零阶段协商和五缝路线审计写成前置资料门：参与者需覆盖居民、产权/经营相关方、学校与科研人员、维护人员、通勤者及行动不便者；观察记录日期、时段、入口、方向、等待、绕行、净行带、照明和天气，但不做人脸识别、不外推为全带客流或居民偏好。任何正式边界、权属、树木、排水或公众协商资料到位，都触发旧结论、指标和图件复核。[source:SRC-BEIJING-URBAN-RENEWAL-JOINT-REVIEW-202501] [source:SRC-BEIJING-BLOCK-CONTROL-REFORM-202607] [metric:public_audit_protocol_count]
+
 2026—2030对应已正式发布的十五五实施窗口：先补人口、客流、气候、权属和运维基线，再运行清河基准花园、小月河公测岸、四角客厅三类中试场，深化共享檐与四角客厅，并逐年公开学习回执。2031—2035只设置‘2035适配窗口’：截至2026年8月尚无可用于本案的十六五正式文件，必须待十五五评估和国家、北京、海淀十六五发布后，才决定保留、调整、扩展或退出。[source:SRC-HAIDIAN-15TH-2026] [source:SRC-BEIJING-MASTER-2035] [metric:policy_horizon_count]
 
 v5.2新增六项责任账本，为每类工作记录牵头主体类型、专业许可门、相对成本带、运维、阶段和停止条件。S/M/L不是投资估算；尚未明确法定申请人、专业造价、运维预算和代表性公众授权时，不得把概念成熟度写成可开工。[metric:responsibility_ledger_record_count]
@@ -205,13 +209,13 @@ v5.2新增六项责任账本，为每类工作记录牵头主体类型、专业�
 
 ## 指标体系、面积复算与合规矩阵
 
-官方intake、professional与visual校验已通过；本轮另以依赖无关脚本完成结构和明显拓扑错误审计，但当前环境未安装Shapely/PyProj，不能声称完成仓库专业空间复核。临时总体面积、绿地、公共空间和建筑基底均可由GeoJSON复算，容积率、高度、退线和法定绿地率保持未知。官方边界替换时，九个图层、指标、图件、HTML和PDF同时重算。[metric:site_area_sqm] [depth:metrics_recalculation]
+官方intake、professional与visual校验已通过；专业空间复核已在声明依赖的隔离环境、固定设计Git头上完成并通过，无依赖脚本仅作为结构和明显拓扑错误的补充审计，不能替代专业复核。临时总体面积、绿地、公共空间和建筑基底均可由GeoJSON复算，容积率、高度、退线和法定绿地率保持未知。官方边界替换时，九个图层、指标、图件、HTML和PDF同时重算。[metric:site_area_sqm] [depth:metrics_recalculation]
 
 评委视角的自评重点不是“有没有填满任务”，而是两项公共设计是否在任务契合、原创性、AI规划创新、可实施性、包容性、风险合规和表达完整度上形成同一条证据链。[source:SRC-PEER-CATALOG-20260810] [metric:flagship_public_design_count]
 
 ![项目缺口、地方依据与Agent服务契约](assets/figures/metrics-evidence.png)
 
-反方设计室现有12项任务、3个负样本，任务记录的dispatch schema与审计字段完整率均为100%。这些是从simulation.json逐项复算的包内质量指标，只证明记录可回放；平均绕行改善、遮蔽覆盖、真实公众接受和运营成本仍为unknown。[metric:simulation_success_rate] [metric:tool_schema_pass_rate] [metric:audit_completeness]
+反方设计室保留12项设计任务和3个设计负样本，并新增3个不计入任务指标的治理必失败fixture；任务记录的dispatch schema与审计字段完整率均为100%。这些是从simulation.json逐项复算的包内质量指标，只证明离线记录可回放；平均绕行改善、遮蔽覆盖、真实公众接受和运营成本仍为unknown。[metric:simulation_success_rate] [metric:tool_schema_pass_rate] [metric:agent_governance_fixture_count]
 
 v4新增20个规划单元、5条横向城市缝、10个更新工作包、12类建筑公共界面、9条概念交通联系和11个蓝绿组件的包内可复算指标。它们证明规划系统不是只存在于文字中；但由于总体边界、宗地、控规、现状建筑和工程底数仍缺，所有比例只用于概念比较，不形成法定规划结论。[metric:planning_unit_count] [metric:cross_city_seam_count] [metric:green_network_component_count]
 

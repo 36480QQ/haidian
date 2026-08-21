@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "title": "v5.2 evidence and correction register",
+  "title": "v5.3 evidence, correction, and governance register",
   "generated_for": "concept design review",
   "tiers": {
     "O": "official scope/policy/project record",
@@ -101,6 +101,18 @@
       "evidence": "local project predicts 3,190 persons/hour at project AM peak and names station/bus/bike interfaces",
       "after": "ground-first multimodal arrival commons with stop rules",
       "status": "implemented in flagship protocol"
+    },
+    {
+      "before": "Agent governance was described mainly as a general human-in-the-loop aspiration",
+      "evidence": "Beijing's agent policy requires safety governance and usable benchmark scenes; the package still has no deployment authority",
+      "after": "minimum-data admission, human takeover, offline equivalent, appeal/exit, learning receipt, and three must-fail fixtures",
+      "status": "implemented as offline concept protocol in simulation.json and risk.json"
+    },
+    {
+      "before": "public participation and route continuity were narrative prerequisites",
+      "evidence": "no representative engagement or five-seam field audit has been executed",
+      "after": "zero-phase consent/withdrawal protocol and 15-minute, single-segment route audit with stop and remeasure triggers",
+      "status": "registered as protocol_not_executed in assumptions.json"
     }
   ],
   "unknowns": [

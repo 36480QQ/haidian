@@ -96,17 +96,57 @@
         "cross_city_seam_count"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-JINGZHANG-COCREATION-2021",
+        "SRC-JINGZHANG-PHASE1-OPS-2026",
+        "DATA-ESA-WORLDCOVER-2021-V200-N39E114"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CROSS-SEAMS-001",
+        "A-WORLDCOVER-001"
       ],
       "self_check_ids": [
         "LAND_USE_TOPOLOGY",
-        "BILINGUAL_DELIVERY"
+        "BILINGUAL_DELIVERY",
+        "SPATIAL_REVIEW_RUNTIME",
+        "V52_PUBLIC_EVIDENCE_ROLE_SEPARATION"
       ],
-      "evidence_summary_zh": "v4以三层范围工作框架为人类阅读入口，并由3个针对性空间图层和2项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
+      "evidence_summary_zh": "v5.3将总体结构明确为后续图纸必须回答的‘遗产—气候脊、五类横向缝、入口阈值’空间协议。协议依据京张分段差异化实施的公开工作逻辑和2021年公开地表信号，但不把概念线、入口或临时边界写成官方红线。",
+      "spatial_design_requirements": {
+        "evidence_role_zh": "以下内容是概念图纸与专业深化的必答空间要求，不是已批准的道路、地块、建筑控制参数。",
+        "requirements": [
+          {
+            "component_id": "SPINE-THRESHOLD-01",
+            "title_zh": "遗产—气候脊与入口阈值",
+            "problem_zh": "九公里铁路遗产廊道需要连续的步行、停留和气候服务，但连续性不能被误解为一条需要大规模置换的宽绿带。",
+            "spatial_action_zh": "以保留的植被/水体信号簇、既有遗产展示和窄公共气候缝共同组织纵向脊线；将每个进入点画成从城市街道、公共首层或绿地过渡到慢行脊的阈值，而不是在全线复制同一种节点。",
+            "drawing_scale_and_section_hint_zh": "总体图宜补一张约1:2500的纵向‘地面—界面—阈值’图；在北、中、南至少各取一处约1:500横剖，标出净行空间、树荫/遮蔽、坐靠、服务界面与遗产的相对关系。",
+            "provisional_boundary_limit_zh": "SITE_BOUNDARY、GREEN-001和道路关系线均为概念/临时约束；2021年WorldCover仅为地表覆盖信号，不能作为树木、权属、入口位置、绿地性质或拆建结论。",
+            "professional_gates_zh": [
+              "正式GIS、权属与既有公园实施资料复核",
+              "树木普查、根系、排水和海绵专项",
+              "遗产本体、保护范围与展示方式审查",
+              "无障碍连续性、消防与日常维护审查"
+            ]
+          },
+          {
+            "component_id": "SEAM-FAMILY-02",
+            "title_zh": "五类横向城市缝",
+            "problem_zh": "铁路、河流、校园围合、轨道与快速路让东西联系在不同片段呈现不同障碍；五条缝不能只以一条概念连接线替代真实的地面条件。",
+            "spatial_action_zh": "将五缝作为五种可复用但不等形的界面原型：站城到达、快速路等候、遗产日常、校城学习、北端生态；每条均以‘来向—净行带—停留/服务—对侧界面’四段组织，并与现有公共空间和首层界面相接。",
+            "drawing_scale_and_section_hint_zh": "每条缝至少需要一张约1:500平面关系图和一条约1:200的关键断面；图中应明确步行/轮椅、自行车、服务物流、雨天候行和边界开口的相对次序。",
+            "provisional_boundary_limit_zh": "五缝的GeoJSON为Agent概念关系线，不能据此认定道路红线、桥隧、河道管理线、校园开口或围墙拆除范围。",
+            "professional_gates_zh": [
+              "道路、轨道和交叉口交通专项",
+              "河道/绿地/校园/铁路权属与管理主体协商",
+              "无障碍、照明、治安和夜间运营审查",
+              "施工阶段通行、消防、排水与市政条件复核"
+            ]
+          }
+        ]
+      }
     },
     {
       "item_id": "land_use_layout",
@@ -198,17 +238,45 @@
         "concept_building_interface_count"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-HERITAGE-PROTECTION-2021",
+        "SRC-JINGZHANG-PHASE1-OPS-2026",
+        "SRC-HAIDIAN-GREEN-PLAN"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-HERITAGE-001",
+        "A-FLAGSHIP-SITING-001",
+        "A-TRANSFER-CLIMATE-001"
       ],
       "self_check_ids": [
         "LAND_USE_TOPOLOGY",
-        "BILINGUAL_DELIVERY"
+        "BILINGUAL_DELIVERY",
+        "FLAGSHIP_PUBLIC_DESIGNS",
+        "V3_ARCHITECTURAL_DEPTH"
       ],
-      "evidence_summary_zh": "v4以用地、建筑规模与拆改留方案为人类阅读入口，并由2个针对性空间图层和1项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
+      "evidence_summary_zh": "v5.3把清华园共享檐落实为一套待绘制、待复核的‘铁路月台式公共基础设施’要求：以日常服务和可逆构造界定场所，而非以单一的屋顶造型替代场地关系。",
+      "spatial_design_requirements": {
+        "evidence_role_zh": "共享檐的尺度和构造提示仅用于概念深化，不能替代正式测绘、建筑施工图、文保或消防审查。",
+        "requirements": [
+          {
+            "component_id": "COMMON-EAVE-01",
+            "title_zh": "清华园共享檐：可逆的公共月台",
+            "problem_zh": "近校与遗产邻接处需要不依赖手机的学习、等候、照护、维修和人工问询空间；把所有功能置于一张均质大棚下，既会削弱场所识别，也可能触碰遗产、树木和消防条件。",
+            "spatial_action_zh": "以概念6米结构节拍、3米服务子模块组织六类无墙房间，并按遗产邻接、树下学习、雨天干行和夜间服务形成不同的檐口、地面、桌台和可见人工台；构造须独立、自支撑、可拆卸，并与轨道遗存保持可核查的脱离关系。",
+            "drawing_scale_and_section_hint_zh": "后续宜提供约1:200平面与功能湾排序、四条约1:100剖面（遗产、树下、雨天、夜间），以及约1:50的屋檐排水/基础/服务台节点；6米和3米均须标注为概念模数，不能作为审批尺寸。",
+            "provisional_boundary_limit_zh": "当前未指认确切地块、退让距离、遗产保护范围、树位、消防通道或地下管线；不得把概念檐的位置、朝向、基础和服务面积解释为项目实施结论。",
+            "professional_gates_zh": [
+              "遗产价值、保护范围与可逆性论证",
+              "权属/校园界面及公共开放协商",
+              "结构、风雪荷载、防火、疏散和无障碍审查",
+              "树根、排水、日照风环境和市政接入复核",
+              "运营主体、夜间值守、清洁维修与拆除恢复方案确认"
+            ]
+          }
+        ]
+      }
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -267,17 +335,84 @@
         "cross_city_seam_count"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-JINGZHANG-CONTROL-DRAFT-2025",
+        "SRC-DAZHONGSI-BLUE-SCENE-TRANSPORT-2026",
+        "SRC-JINGZHANG-PHASE1-OPS-2026"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-CROSS-SEAMS-001",
+        "A-DAZHONGSI-STRESS-001",
+        "A-METRO-WALKING-001"
       ],
       "self_check_ids": [
         "LAND_USE_TOPOLOGY",
-        "BILINGUAL_DELIVERY"
+        "BILINGUAL_DELIVERY",
+        "SPATIAL_REVIEW_RUNTIME",
+        "FLAGSHIP_PUBLIC_DESIGNS"
       ],
-      "evidence_summary_zh": "v4以交通、轨道、市政与公共服务设施为人类阅读入口，并由2个针对性空间图层和2项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
+      "evidence_summary_zh": "v5.3将五条缝和大钟寺四角客厅转译为可在下一轮现场、平面和剖面中检验的地面优先协议；公开控规反馈与大钟寺项目交通报告只限定问题和局部压力情景，不替代道路、轨道或信号专项。",
+      "spatial_design_requirements": {
+        "evidence_role_zh": "五缝和四角客厅均是下一轮绘图、走读和专业协调的空间任务；所有道路、桥隧、站点、信号与红线仍由法定资料和专项确定。",
+        "requirements": [
+          {
+            "component_id": "SEAM-01-DAZHONGSI",
+            "title_zh": "大钟寺站城共地缝",
+            "problem_zh": "轨道、公交、自行车、步行及项目首层在局部高峰到达时互相挤压。",
+            "spatial_action_zh": "先把逐出口到达、无障碍、排队、非机动车停放和错峰物流组织为地面连续路线；地下连通仅保留为后续专业备选。",
+            "drawing_scale_and_section_hint_zh": "约1:500逐出口平面与约1:200站前/首层断面，标出净行带、候行边、自行车区和服务物流边。",
+            "provisional_boundary_limit_zh": "3190人/小时仅是5.03公顷蓝景项目预测的局部压力情景；概念线不构成站点、道路、地下连廊或信号方案。",
+            "professional_gates_zh": ["轨道与交通影响专项", "路缘/公交/非机动车组织", "消防疏散、无障碍、排水和夜间安全", "项目、道路、轨道管理主体协调"]
+          },
+          {
+            "component_id": "SEAM-02-SIDAOKOU",
+            "title_zh": "北三环—四道口安全等候缝",
+            "problem_zh": "公开采信意见已表明北三环、四道口、京包路等节点涉及立交类型、用地条件与下一阶段深化，不能用一条概念线宣称解决穿越。",
+            "spatial_action_zh": "将可先行的遮蔽等候、可读导向、非数字服务点和首层/街角可见性作为最小公共工程，并把穿越方案留给专项。",
+            "drawing_scale_and_section_hint_zh": "约1:500等待区—人行横道—沿街界面平面及约1:200路缘/候行剖面，分开画行人、轮椅和自行车的冲突点。",
+            "provisional_boundary_limit_zh": "不得把公开控规反馈理解为已确定的立交、道路拓宽、下穿、桥梁或围墙拆除结论。",
+            "professional_gates_zh": ["快速路/主干路交叉口专项", "道路红线与用地条件", "无障碍与过街安全", "交警、道路及周边产权主体协调"]
+          },
+          {
+            "component_id": "SEAM-03-ZHICHUN",
+            "title_zh": "知春—京包遗产日常缝",
+            "problem_zh": "一期公园已形成基础慢行与遗产展示，而知春路铁路下穿及京包路节点的立体关系仍需深化，日常跨越不能只依赖活动景观。",
+            "spatial_action_zh": "保留既有公园运营，以可逆门厅、雨雪候行、生活服务导向和连续地面把遗产展示接入周边日常路径。",
+            "drawing_scale_and_section_hint_zh": "约1:500遗产轨迹—入口—街道平面及约1:200遗产邻接/雨天通行剖面，区分展示带、净行带与维护带。",
+            "provisional_boundary_limit_zh": "不得将铁路遗存、已实施公园、知春路下穿条件或周边开口重画为本方案的新工程或法定边界。",
+            "professional_gates_zh": ["遗产保护与展示审查", "道路/铁路立体关系复核", "公园运营与施工期通行", "树木、排水、照明与无障碍审查"]
+          },
+          {
+            "component_id": "SEAM-04-QINGHUAYUAN",
+            "title_zh": "清华园—五道口共享学习缝",
+            "problem_zh": "近校区域的校园、社区和产业边界可能缺少免费学习、照护、维修、夜间问询和雨天等候的连续公共界面。",
+            "spatial_action_zh": "以共享檐及开放首层为界面原型，按进入、安静学习、修理共餐、照护、人工服务和雨天通行排序，优先形成不依赖手机的公共服务链。",
+            "drawing_scale_and_section_hint_zh": "约1:500校城界面平面、约1:200共享檐—首层—慢行带剖面；另以人行/轮椅雨天旅程校验门槛和净宽。",
+            "provisional_boundary_limit_zh": "校园开口、公共首层、产权边界、遗产退让和共享檐位置都尚未确认，不能由临时范围或概念建筑界面推定。",
+            "professional_gates_zh": ["校园/产权主体开放协商", "遗产、结构、防火和消防车道", "无障碍、儿童照护与夜间运营", "树根、雨水与市政接入复核"]
+          },
+          {
+            "component_id": "SEAM-05-QINGHE",
+            "title_zh": "清河北五环河园转换缝",
+            "problem_zh": "北端公开地表信号中的植被比例较高，若套用高密度科技展示或硬质广场，可能破坏生态与日常使用的潜力。",
+            "spatial_action_zh": "以保留植被信号簇、基准花园、雨洪观察和维修型场景组织从河/绿地到慢行脊的低扰动转换，避免把生态缝画成统一展陈空间。",
+            "drawing_scale_and_section_hint_zh": "约1:500河园—慢行带平面及约1:200雨水/植被/停留剖面，标出硬铺装上限的待验证位置与维护通道。",
+            "provisional_boundary_limit_zh": "2021年地表覆盖不能证明现状树种、河道管理范围、积水条件、生境或正式绿地性质；不得据此确定工程范围。",
+            "professional_gates_zh": ["河道与绿地管理边界复核", "树木/生境/水文与海绵专项", "五环外部交通与慢行接驳", "低扰动施工和长期养护审查"]
+          },
+          {
+            "component_id": "FOUR-CORNER-COMMONS-01",
+            "title_zh": "大钟寺四角客厅：分时地面公共建筑",
+            "problem_zh": "四象限的站点到达、照护、商业交换与夜间归家需要不同速度和不同人工责任，中心软X不能被理解为可任意斜穿的交通改造。",
+            "spatial_action_zh": "四角分别配置到达、照护、交换、夜间服务的厚边空间；在早晚高峰保留清晰净行与候行，在平峰再扩展免费停留和活动，中心仅作为受交通专项约束的地面导向/过街关系。",
+            "drawing_scale_and_section_hint_zh": "以大钟寺站300米审查框架绘约1:1000到达图，选四角各一处约1:500平面和约1:200路缘/首层剖面，并配早高峰、日间、晚高峰、夜间四时段图。",
+            "provisional_boundary_limit_zh": "300米管控范围、E口非机动车安排和客流预测来自特定项目公开报告；不能把它们外推为整个重点区的正式红线、流量或交通工程方案。",
+            "professional_gates_zh": ["轨道站城一体化、道路交叉口和信号专项", "公交/非机动车/配送/消防冲突审查", "无障碍、夜间照明、治安与雨天排水", "站点、道路、项目和城市管理主体共同值守机制"]
+          }
+        ]
+      }
     },
     {
       "item_id": "municipal_new_infrastructure",
@@ -370,17 +505,58 @@
         "renewal_work_package_count"
       ],
       "source_ids": [
-        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-JINGZHANG-COCREATION-2021",
+        "SRC-DAZHONGSI-BLUE-SCENE-TRANSPORT-2026",
+        "DATA-ESA-WORLDCOVER-2021-V200-N39E114"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-WORLDCOVER-001",
+        "A-DAZHONGSI-STRESS-001",
+        "A-FLAGSHIP-SITING-001"
       ],
       "self_check_ids": [
         "LAND_USE_TOPOLOGY",
-        "BILINGUAL_DELIVERY"
+        "BILINGUAL_DELIVERY",
+        "SPATIAL_REVIEW_RUNTIME",
+        "V52_PUBLIC_EVIDENCE_ROLE_SEPARATION",
+        "V3_ARCHITECTURAL_DEPTH"
       ],
-      "evidence_summary_zh": "v4以重点区域详细设计为人类阅读入口，并由3个针对性空间图层和2项指标支撑；临时几何和待补专业资料仍在假设与风险门中披露。"
+      "evidence_summary_zh": "v5.3规定三处重点区必须从产业角色进一步转成三种可辨识的地面形态与剖面规则：花园型创新街区、近校型创新街区、城市型创新街区。三处粗略范围及2021地表信号仅服务概念差异化，不能替代建筑、地籍、交通和生态现状。",
+      "spatial_design_requirements": {
+        "evidence_role_zh": "三项要求均为后续综合实施方案城市设计的概念前置条件；不等同于建筑规模、拆改留、地块边界或许可结论。",
+        "requirements": [
+          {
+            "component_id": "KEY-AREA-01-ZHONGZHIYUAN",
+            "title_zh": "众智园：花园型创新街区",
+            "problem_zh": "该临时范围的2021植被信号相对较高，国家级全栈研发与标准治理不能以硬质展示广场覆盖潜在生态基底。",
+            "spatial_action_zh": "以林下研发前庭、清河基准花园、工单/维修台和物流—公众分时边为四个空间部件，优先让研发、生态观测和日常维护共用可进入的地面。",
+            "drawing_scale_and_section_hint_zh": "约1:1000结构平面，至少两条约1:500剖面（林下前庭、基准花园—服务边），并标出需现场核实的树、水、硬铺装和维护通道。",
+            "provisional_boundary_limit_zh": "PROV-KEY-001是按公告名称、顺序和面积反推的粗略范围；植被信号不是树木/水系普查，也不是正式生态或用地控制。",
+            "professional_gates_zh": ["五环对外交通与市政容量", "树木、水文、生境与热环境", "安全治理场景的数据边界", "权属、消防和维护主体"]
+          },
+          {
+            "component_id": "KEY-AREA-02-ORIGIN",
+            "title_zh": "北京AI原点：近校型创新街区",
+            "problem_zh": "原始创新、成果转化与近校生活需要穿透校园/园区/社区边界的公共首层，但不应以高扰动更新或单一科技园形象处理。",
+            "spatial_action_zh": "以开放转化院、公共首层、共享檐和近校生活环组织由校城边界向慢行脊渗透的院落序列，先验证免费学习、照护、维修和人工服务。",
+            "drawing_scale_and_section_hint_zh": "约1:1000院落—慢行—首层关系图，约1:500校城界面平面，以及共享檐约1:200平面/约1:100剖面。",
+            "provisional_boundary_limit_zh": "PROV-KEY-002、校园开口、现状建筑、遗产退让和公共首层均未取得正式资料；不得将概念序列解释为具体拆改留或开放承诺。",
+            "professional_gates_zh": ["校园和产权主体协商", "遗产、建筑、消防、结构和无障碍", "租金/原有使用者与夜间运营", "树根、排水和市政条件"]
+          },
+          {
+            "component_id": "KEY-AREA-03-DAZHONGSI",
+            "title_zh": "大钟寺：城市型创新街区",
+            "problem_zh": "站城到达、AI原生业态、国际交往和夜间生活在高强度城市界面叠加，不能用单一地标或单一地下连通假设消解四象限冲突。",
+            "spatial_action_zh": "以四角客厅、站前地面公共层、商业首层和南端公园门厅组织四种速度的到达/照护/交换/夜间服务；先证明地面公共价值，再决定是否深化更重工程。",
+            "drawing_scale_and_section_hint_zh": "以300米站点审查框架绘约1:1000街区到达图，配约1:500四象限图和约1:200站前—首层—路缘剖面，并以四时段图说明运营切换。",
+            "provisional_boundary_limit_zh": "PROV-KEY-003为临时范围；蓝景项目的5.03公顷、客流、非机动车与地下连廊建议只适用于其公开报告，不可当作整个重点区现状或批准方案。",
+            "professional_gates_zh": ["轨道、交通、交叉口与停车专项", "地上地下市政/消防/排水", "首层界面、夜间运营和公共安全", "多主体权属及建设时序协调"]
+          }
+        ]
+      }
     },
     {
       "item_id": "renewal_project_list",
