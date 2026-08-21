@@ -1,7 +1,7 @@
 {
  "source": "git tree (authoritative) + per-proposal proposal.md and agent.json",
  "retrieved": "2026-08-20",
- "tree_count": 929,
+ "tree_count": 935,
  "gallery_index_count": 872,
  "missing_from_gallery_index": [
   "0237/jingzhang-ai-spine",
@@ -29,6 +29,7 @@
   "Wang-Lvjing/jingzhang-ai-rail-optics",
   "XJungit/jingzhang-ai-innovation-belt",
   "YOUYINGYANG/jingzhang-doorstep",
+  "Yu-BinLi/jingzhang-ai-belt-design",
   "YuanYii/jingzhang-ai-corridor-rail-city",
   "Yuru-Rin/jingzhang-ai-artery",
   "ZaVang/jingzhang-ai-urban-braid",
@@ -51,11 +52,16 @@
   "popzrq0215-png/jingzhang-time-traces",
   "ringwraith/care-work-relay",
   "sukikeeling/ai-jingzhang-corridor-v10",
+  "tcjyq/jingzhang-cross-project-journey",
   "tianye-GD/new-hundred-trades",
   "vegetable-kun/jingzhang-mobility-hub",
   "viviseason/jingzhang-ai-civic-spine",
   "wwumit/jz-ai-native-belt",
   "www41818520-coder/jingzhang-civic-intelligence-loop",
+  "www41818520-coder/jingzhang-civic-intelligence-protocol",
+  "www41818520-coder/jingzhang-civic-intelligence-protocol-v4",
+  "www41818520-coder/jingzhang-civic-intelligence-protocol-v5",
+  "www41818520-coder/jingzhang-civic-intelligence-protocol-v6",
   "xhily/five-minute-ai-encounter",
   "xhily/jingzhang-ai-innovation-corridor",
   "xhily/jingzhi-belt-concept",
@@ -429,7 +435,7 @@
     6,
     5
    ],
-   "b": 70813,
+   "b": 73328,
    "m": 1,
    "f": 1
   },
@@ -907,13 +913,13 @@
   },
   "Anshengdesign/jingzhang-living-line": {
    "t": "涌现之带 THE EMERGENT BELT——京张 Hyper Line",
-   "s": "以城市科学范式设计百年京张AI创新带：28 项本地实算（λ/渗流/句法/LUTI/CA/分形）诊断出骨架健康（分形维1.746）而三处被挡；方案以缝合+纠缠+解锁把涌现指数从 0.823（黄档）抬到 0.9625（全绿档），三闸门可执行、五实例拒绝演示、权重阈值皆可改可重算。",
+   "s": "以城市科学范式设计百年京张AI创新带：28 项本地实算（λ/渗流/句法/LUTI/CA/分形）诊断出骨架健康（分形维1.746）而三处被挡；方案以缝合+纠缠+解锁把涌现指数从 0.795（黄档）抬到 0.9625（全绿档），三闸门可执行、五实例拒绝演示、权重阈值皆可改可重算。",
    "k": [
     0,
     14,
     16
    ],
-   "b": 66298,
+   "b": 66793,
    "m": 20,
    "f": 4
   },
@@ -937,7 +943,7 @@
     6,
     5
    ],
-   "b": 24281,
+   "b": 25512,
    "m": 25,
    "f": 0
   },
@@ -2560,7 +2566,7 @@
     7,
     2
    ],
-   "b": 55617,
+   "b": 45794,
    "m": 80,
    "f": 1
   },
@@ -3693,7 +3699,7 @@
     6,
     5
    ],
-   "b": 193279,
+   "b": 198916,
    "m": 111,
    "f": 2
   },
@@ -4177,7 +4183,7 @@
     25,
     15
    ],
-   "b": 23263,
+   "b": 32655,
    "m": 78,
    "f": 2
   },
@@ -4264,6 +4270,18 @@
    "b": 28453,
    "m": 2,
    "f": 2
+  },
+  "Yu-BinLi/jingzhang-ai-belt-design": {
+   "t": "京张智脉 · Centennial Jing-Zhang AI Innovation Belt Urban Design",
+   "s": "以百年京张铁路遗址为文化基底、以AI全栈自主创新为产业内核、以人本活力城市为空间目标的城市设计方案。基于临时边界生成，保留精度警示并待正式数据补齐后复算。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 16503,
+   "m": 18,
+   "f": 0
   },
   "YuanYii/jingzhang-ai-corridor-rail-city": {
    "t": "京张AI走廊·城市车场 JINGZHANG AI CORRIDOR RAIL CITY",
@@ -6060,7 +6078,7 @@
     25,
     19
    ],
-   "b": 49228,
+   "b": 54671,
    "m": 54,
    "f": 5
   },
@@ -6552,7 +6570,7 @@
     23,
     18
    ],
-   "b": 255248,
+   "b": 255281,
    "m": 36,
    "f": 3
   },
@@ -7309,7 +7327,7 @@
     6,
     5
    ],
-   "b": 27489,
+   "b": 27588,
    "m": 2,
    "f": 2
   },
@@ -7485,7 +7503,7 @@
     21,
     5
    ],
-   "b": 215828,
+   "b": 218013,
    "m": 194,
    "f": 3
   },
@@ -9382,6 +9400,18 @@
    "m": 21,
    "f": 2
   },
+  "tcjyq/jingzhang-cross-project-journey": {
+   "t": "跨项目完整旅程共同交付",
+   "s": "以人的完整 Journey 为跨项目城市建设的共同交付单元：大钟寺以全时地面公共基线及条件性公共首层构成旗舰设计，清河校核六次空间换手，AI 原点以保留与重审避免重复建设。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 40519,
+   "m": 14,
+   "f": 0
+  },
   "teddyli18000/jingzhang-ai-kernel": {
    "t": "京张元枢｜JING-ZHANG AI KERNEL",
    "s": "以百年京张为城市级 AI 公共内核：把科研、模型验证、产业转译、真实场景、公共治理与全球发布接入同一套可审计、可迭代的开放协议。",
@@ -10056,6 +10086,54 @@
    "m": 14,
    "f": 0
   },
+  "www41818520-coder/jingzhang-civic-intelligence-protocol": {
+   "t": "京张市民智能协议：城市有智，人民作主",
+   "s": "把京张铁路遗址公园及其两侧城市界面转化为可进入、可理解、可参与、可接管的城市智能体：人民提问，城市作答；所有空间几何均为临时约束，待官方数据发布后整体复算。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 24713,
+   "m": 14,
+   "f": 0
+  },
+  "www41818520-coder/jingzhang-civic-intelligence-protocol-v4": {
+   "t": "京张市民智能协议：城市有智，人民作主",
+   "s": "把京张铁路遗址公园及其两侧城市界面转化为可进入、可理解、可参与、可接管的城市智能体：人民提问，城市作答；所有空间几何均为临时约束，待官方数据发布后整体复算。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 28307,
+   "m": 14,
+   "f": 0
+  },
+  "www41818520-coder/jingzhang-civic-intelligence-protocol-v5": {
+   "t": "京张市民智能协议：城市有智，人民作主",
+   "s": "把京张铁路遗址公园及其两侧城市界面转化为可进入、可理解、可参与、可接管的城市智能体：人民提问，城市作答；所有空间几何均为临时约束，待官方数据发布后整体复算。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 43277,
+   "m": 14,
+   "f": 0
+  },
+  "www41818520-coder/jingzhang-civic-intelligence-protocol-v6": {
+   "t": "京张市民智能协议：城市有智，人民作主",
+   "s": "把京张铁路遗址公园及其两侧城市界面转化为可进入、可理解、可参与、可接管的城市智能体：人民提问，城市作答；所有空间几何均为临时约束，待官方数据发布后整体复算。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 52109,
+   "m": 14,
+   "f": 0
+  },
   "wwwaaa123122/jingzhang-first-track": {
    "t": "百年京张·第一轨——从自主铁路到自主AI的城市脊柱",
    "s": "百年京张·第一轨——以詹天佑'中国人自主设计建造的第一条干线铁路'精神为文脉原点，把京张遗址公园走廊转化为'从自主铁路到自主AI'的城市脊柱，交付原创Logo与视觉系统、空间-产业-运营映射、6个国际案例、AI创新生态图谱、10张场景卡、3个测试验证场景、3个朝圣地标、12项公共空间组件库、导视符号系统、年度活动日历与长期运营设计；所有面积按 provisional estimate 标注并待官方边界复算。",
@@ -10588,7 +10666,7 @@
     26,
     11
    ],
-   "b": 167995,
+   "b": 161917,
    "m": 7,
    "f": 0
   },
@@ -10898,7 +10976,7 @@
     6,
     22
    ],
-   "b": 44333,
+   "b": 38524,
    "m": 257,
    "f": 6
   },
@@ -10909,7 +10987,7 @@
     3,
     5
    ],
-   "b": 34560,
+   "b": 31121,
    "m": 257,
    "f": 6
   },
@@ -10920,7 +10998,7 @@
     23,
     16
    ],
-   "b": 73079,
+   "b": 69072,
    "m": 257,
    "f": 6
   },
@@ -10931,7 +11009,7 @@
     3,
     15
    ],
-   "b": 51828,
+   "b": 48496,
    "m": 257,
    "f": 6
   },
