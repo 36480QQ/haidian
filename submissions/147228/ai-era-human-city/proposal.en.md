@@ -9,7 +9,7 @@ translation_of: "proposal.md"
 license: "CC-BY-4.0"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v2.4"
+iteration: "v2.5"
 ---
 
 # From an AI Showcase to a City for People in the AI Era
@@ -37,6 +37,21 @@ The existing ordinary-person journey records four sample routes, eight fixtures,
 ![G0 ordinary-person journey receipt: four routes, five handoffs and human fallback](assets/figures/ai-era-g0-journey-atlas.en.svg)
 
 The board places choice, purpose, takeover, appeal and independent replay back into the sequence of actions. Missing ordinary route, human responsibility or independent replay returns the chain to G0; the board provides no resident experience, service performance, permit or implementation evidence [data:visual/assets/ai-era-g0-journey-atlas.json].
+
+## AI Is Optional and the City Keeps Running
+
+Four routes use ordinary service without AI as the baseline and place AI only in a reversible gain position. Intergenerational learning keeps human explanation, the civic API keeps a staffed service without a data call, night service keeps staffing and paper rules, and reskilling keeps human consultation. Each route passes through ordinary baseline, optional gain, stop trigger and retained public asset [data:visual/assets/ai-era-off-city-on-contract.json] [data:visual/assets/run-ai-era-off-city-on.js].
+
+| State | Reviewer check | Current boundary |
+| --- | --- | --- |
+| Ordinary baseline | Human, paper, voice or physical wayfinding can complete the task first | Concept contract |
+| Optional gain | AI offers bounded prompts, retrieval or matching and is never the only entry | G0 design target |
+| Stop trigger | Missing takeover, unclear rights, night risk or failed exit freezes the route | Synthetic replay |
+| Retained public asset | Remove the digital layer and retain access, service, redress and the decision record | Field result unknown |
+
+![AI is optional and the city keeps running. Four routes share an ordinary baseline and a withdrawal state](assets/figures/ai-era-off-city-on-atlas.en.svg)
+
+This contract links each existing route to an ordinary entry, the AI role, the stop condition and the public asset retained after withdrawal. Four negative fixtures return to HOLD and three ordinary or human controls continue. The result remains zero authorisations, zero field data, not run and HOLD; it provides no service performance, staffing or official-score evidence [data:visual/assets/ai-era-off-city-on-contract.json].
 
 ## Design Basis and Source List
 

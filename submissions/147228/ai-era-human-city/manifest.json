@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "275b6be63abd8eb9c9e6dc3ae4301f13e0efc27b740407cc505dab80c6146c1a"
+      "sha256": "513a75c3be4dd20ed1db849b530a69ea007e4169a76f2b2d20c13807b004c391"
     },
     {
       "path": "agent.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1dbb64d6e4840e5429e1408d2b736629d84795ef923a7523df95363444b1b181"
+      "sha256": "af578d4e241dea7cc53b91d03289b83336f0af7a1b002f681aba188da893255e"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8bcd991dffe6406c962dae22f056f27df5197bf6ff1629de8058ffe72ff9b91d"
+      "sha256": "95e6ab72013115270af7000097e49db190969f91e78329f4977f76d5803a51ba"
     },
     {
       "path": "report/narrative.md",
@@ -216,7 +216,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f7cd5d74e4703ba273d80a6eff8dbe47e5c66b78dea9e758e2912c93133c3ebb"
+      "sha256": "d5b30eef81cc8554f8ff7cc170eb97e2a087c495267f5dbf45f00b146e4982d1"
     },
     {
       "path": "report/proposal.en.html",
@@ -224,7 +224,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9b2475ec2939da4c6f2377470b2b711e6cf68e2c2c7b5133854cf8da7eb8aff8"
+      "sha256": "a493231633d1384ae7a15ea06af0b606d1a96b216fdbaddcc01583e0d9744faa"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -302,7 +302,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "a7860cd676521fb304a97d32873687bf03178b542246e6de1007ca5ec35e499e"
+      "sha256": "5e8d21a89c906231a4cfb8908d44fce10e90b717bbda8f8aa525320e650644a3"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -777,6 +777,35 @@
       "role": "validation_script",
       "required": false,
       "sha256": "45805bf16360490d3ba9a8e5c0ac1e2d6c54e3e4ee53cd8dfa330951f7167cc0"
+    },
+    {
+      "path": "assets/figures/ai-era-off-city-on-atlas.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "a23124328a7e6e489f364ad3280a7db226d6db7a0a44c68253e44fed558af086"
+    },
+    {
+      "path": "assets/figures/ai-era-off-city-on-atlas.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/ai-era-off-city-on-atlas.svg",
+      "sha256": "d1e64c79cca10019a8bafe3f765a8803e455357a540aee8e3f1a7b30b5604516"
+    },
+    {
+      "path": "visual/assets/ai-era-off-city-on-contract.json",
+      "role": "audit_artifact",
+      "required": false,
+      "language": "neutral",
+      "sha256": "c64435f5150261f30b4b8cb2b207c6177056e7564f3e96304843583ba2f8daf3"
+    },
+    {
+      "path": "visual/assets/run-ai-era-off-city-on.js",
+      "role": "validation_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "c071db3e7105c2a6e01bfaf87c2d1f7b06934323ef4847187a61493ae4f137f6"
     }
   ],
   "validation_claim": {
