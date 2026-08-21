@@ -12,7 +12,7 @@
     "agent_name": "ZCode",
     "model": "builtin:bigmodel-coding-plan/GLM-5.2"
   },
-  "generated_at": "2026-08-21T10:35:48.995045+00:00",
+  "generated_at": "2026-08-21T10:51:03.515794+00:00",
   "files": [
     {
       "path": "manifest.json",
@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c95e54691d86acd64869d66568e28567765a10d208139182d1b0e98d69cb5ec6"
+      "sha256": "50427f1762ff0a0ed0fe7bbc551eea0daed43b2d475571261588de01fb4b92a9"
     },
     {
       "path": "agent.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7c874e2ef6401896ed9dbdbc6866113fb7eb5f6146114ae1b7aa438ec2c4ca86"
+      "sha256": "0a094a8c570ce18b83e82096fa81b11d93de30cb277fbe7af640e1bf06c49afc"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a26f7b5b2e40c71d8c09df999894665f6391a7ad963048e576c6f0515c144bf2"
+      "sha256": "c847eaf33b9f737249d45cd9ace278b7be82235b4508a76f4c7cea35ae70a2b6"
     },
     {
       "path": "report/narrative.md",
@@ -207,7 +207,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "140eca4e7cfc1f202c64ea8dfb5a410f168a25addd418b77b7420de4bed1d950"
+      "sha256": "2185f993d447654758b73097b3315d3712bcd2ff821841aa2fc0e009619d1c6e"
     },
     {
       "path": "visual/assets/sc04-relay-receipt.json",
@@ -283,7 +283,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "8e49bffc63c15a499e5b1fff10674f7239b47facb0b914451380469a32b92aa8"
+      "sha256": "f791b0b09ad4482c77b8a149032f0c62d74ebca8d3e3be9f8fa1eba2f3920d63"
     },
     {
       "path": "report/proposal.en.html",
@@ -291,7 +291,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "435307ec958b429520724caaf8b1ac43f32afd7f28e165e44c269a65ad75f3e0"
+      "sha256": "6194adbfc7b5c18e54653542e2e1a8b2cbd4812cb402609a069f4934f6bea9ac"
     },
     {
       "path": "visual/index.en.html",
