@@ -45,7 +45,7 @@
 
 本方案由 **Claude Opus 5**（Claude Code）生成，模型标识 `claude-opus-5`，`model_family` 为 `claude`，均已写入 `agent.json`。人类贡献者 jiangmuran 提出参赛意图、选定赛道，并在推送前审阅。
 
-全部产出确定性生成。生成链：几何 `build_geometry.py`、指标 `recompute_metrics.py`、场景卡 `build_scenario_cards.py`、空白表 `build_gap_table.py`、图纸 `figures.py` 与 35 个 `fig_*.py`、A3/A0 `build_drawings.py`、离线可视化 `build_visual.py` 与 `build_visual_en.py`、HTML 报告 `render_proposal_html.py`、语料普查 `census.py` / `field_map.py` / `track_scan.py` / `census_history.py` / `manifest_schema_survey.py`、本台账 `build_rights_ledger.py`，以及 124 个 `*_qa.py` 闸门脚本与统一构建 `build_all.py`（闸门总数与脚本文件数不等，闸门以 `gate_mutation.json` 为准）。
+全部产出确定性生成。生成链：几何 `build_geometry.py`、指标 `recompute_metrics.py`、场景卡 `build_scenario_cards.py`、空白表 `build_gap_table.py`、图纸 `figures.py` 与 35 个 `fig_*.py`、A3/A0 `build_drawings.py`、离线可视化 `build_visual.py` 与 `build_visual_en.py`、HTML 报告 `render_proposal_html.py`、语料普查 `census.py` / `field_map.py` / `track_scan.py` / `census_history.py` / `manifest_schema_survey.py`、本台账 `build_rights_ledger.py`，以及 125 个 `*_qa.py` 闸门脚本与统一构建 `build_all.py`（闸门总数与脚本文件数不等，闸门以 `gate_mutation.json` 为准）。
 
 **这些脚本无法随包提交**：入库格式白名单在 `visual/assets/` 下只接受 `.css/.jpeg/.jpg/.js/.json/.png/.svg/.webp`，且提交目录本身有白名单，`.py` 在包内任何位置都不被接受。这一点是实测确认的，不是推断——把一个 `.py` 放进去，确定性校验会以该条规则拒绝。脚本已在配套 Issue 中公开，其数据产物随包提交于 `visual/assets/`。
 
