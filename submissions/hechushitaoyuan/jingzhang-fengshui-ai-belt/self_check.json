@@ -78,6 +78,7 @@
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/self_check.json",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/sources.json",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/standard_matrix.json",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/a11y-color-check.json",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/governance/qi-protocol.json",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/governance/role-spec.json",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/index.en.html",
@@ -86,7 +87,7 @@
       "ai_package_stages": {
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt": "formal"
       },
-      "total_bytes": 15152352,
+      "total_bytes": 15196020,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -163,15 +164,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 43,
+        "known_metric_refs_required": 45,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 11,
+          "source": 12,
           "standard": 6,
           "depth": 6,
           "data": 10,
-          "metric": 14
+          "metric": 16
         }
       }
     },
