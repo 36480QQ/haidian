@@ -2004,6 +2004,19 @@
       "why_en": "This is what E90 records, and it lived here across ten sheets: a value labelled as fixed by an outside rule that was never named, with `A-DEVICE-002` saying in bold that v therefore had a source. **This package's entire argument rests on 「a number that cannot be verified is not evidence」** — if the same value can be relabelled a regulation with nothing objecting, that standard applies only to other people's numbers."
     },
     {
+      "id": "M183",
+      "gate": "board_claim_qa.py",
+      "target": "build_drawings.py",
+      "caught": true,
+      "exit_code": 1,
+      "named_the_damage": true,
+      "rendered": true,
+      "what_zh": "给第六块展板多排一张图，展板便携带 13 张而不是 12 张。",
+      "what_en": "Put a third sheet on the sixth board, so the boards carry 13 of the 34 rather than 12.",
+      "why_zh": "正文说三十四张同时排进两份成品，而 A0 展板只排了十二张——真数一直印在`board_page_reach_qa` 的读数里，没有任何东西把它和那句话接上。**这条变异从相反方向打同一处**：让展板的实际张数变，看这道闸门读的是构建还是那句话。",
+      "why_en": "The body said the thirty-four compose into both products while the A0 boards take twelve - and the true count had been printing in board_page_reach_qa's readout all along, joined to nothing. **This mutation strikes the same place from the other side**: it moves what the boards actually carry, so the gate must be reading the build rather than the sentence."
+    },
+    {
       "id": "M13",
       "gate": "accessibility_qa.py",
       "target": "figures.py",
@@ -2264,7 +2277,7 @@
       "why_en": "**This sheet is one of the five the review pipeline sends every time, and the six crossings on it exist to satisfy a crossability condition this package published.** Drawn at the weight and colour of the measured streets, a reader sees no intervention. E242 set this rule on this very sheet for buildings — the designed thing must not be the faintest mark in its own frame — and the lines were never covered by it. The mutation proves the build stops when this proposal's own lines are drawn fainter than the survey beneath them."
     }
   ],
-  "caught": 184,
+  "caught": 185,
   "survived": 0,
   "gates_proven_able_to_fail": [
     "accessibility_qa.py",
@@ -2273,6 +2286,7 @@
     "attribution_kind_qa.py",
     "benchmark_chain_qa.py",
     "block_type_qa.py",
+    "board_claim_qa.py",
     "board_page_reach_qa.py",
     "boundary_state_qa.py",
     "brief_name_on_page1_qa.py",
@@ -2433,6 +2447,6 @@
       "why_en": "The English patterns match the unscoped present perfect, and the English text writes the past perfect, where the tense is the scope. Zero matches is the correct reading, and it was probed: switching one English sentence to the present perfect makes the gate name it."
     }
   ],
-  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 127 道闸门，其中 126 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
-  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 127 gates, 126 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
+  "coverage_note_zh": "**覆盖率的分母写在这里，而且是读出来的不是写死的。** 本包共 128 道闸门，其中 127 道已被证明会失败；其余 1 道没有，理由逐条列出而不是省略——一个不写分母的覆盖声明，正是本包在别人包里、以及两次在自己包里查出的那种缺陷。",
+  "coverage_note_en": "**The denominator is written down, and it is read rather than retyped.** Of this package's 128 gates, 127 have been shown capable of failing and 1 have not, each with its reason stated rather than omitted — a coverage claim with an unstated denominator is the defect this package keeps finding in other people's work and, twice, in its own."
 }
