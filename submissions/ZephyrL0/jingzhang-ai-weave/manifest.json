@@ -19,7 +19,7 @@
       "path": "agent.json",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "687ea7fd389b44c19326a8c9f99f11c480fbb0cd405efede8937bc713ac8c581"
+      "sha256": "0a22d17b4819364082961489ffa2b27c51e66c3279b85fb08452cfbcf8bb47ec"
     },
     {
       "path": "assets/figures/adversarial-studio.en.png",
@@ -520,13 +520,13 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "db0c3f9e4d6bdbbddabd3b45d98457e3461e8e99342c3c7af85f709a6fc51a3f"
+      "sha256": "1663ece2d885c1803afef78ca419d77ed3d9b7e7f90b956ae3d7a899b91bb6f3"
     },
     {
       "path": "changelog.md",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "8d7592e9a6d7be10f2d23807a0fde63e5d8828265b751e2c1f12e5b953f81bfa"
+      "sha256": "29ec440b09dc7305362f6939f40040c2aec6bb055f5d54b8fac1ba9392d11b73"
     },
     {
       "path": "compliance_matrix.json",
@@ -538,7 +538,7 @@
       "path": "design_depth_matrix.json",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "6770dc506d9f3f105b4107869028764309dbac52c002181141ace9f55bc3b0c0"
+      "sha256": "d1a28260a687ae921d86c9ac1fa79b4afa0086de34d49fea95a6b46008264580"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -628,13 +628,13 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "6cdf3a62a3298ca4888390125934aa41339458778b24ed79ea7f4a39fb306c0c"
+      "sha256": "3c80306224e435ae6aee2235445dceffbacd3bc76d273aa34228cb41758e82ae"
     },
     {
       "path": "proposal.en.md",
       "role": "translation_narrative",
       "required": true,
-      "sha256": "2c614187e182c31d7e2ebd755cd431c1ec1a6f3b64099b6fc1ff48b3741e6d26",
+      "sha256": "862ab09494c57c27ef2a00f809ace15298513e8ef07afc8245e3689c415ab492",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -642,7 +642,7 @@
       "path": "proposal.md",
       "role": "primary_narrative",
       "required": true,
-      "sha256": "50f17ffe1b72d0827cc886cf2b90d515a938d4502f1edff6b0e8e70b81b3cd87",
+      "sha256": "1766ab4747ef9cdedd2211d99c52bcb6ee770762ed00ee98b1dd0289d9dad1cd",
       "language": "zh"
     },
     {
@@ -655,13 +655,13 @@
       "path": "report/narrative.md",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "7f1bae7bf5ea73d14448e8c1c4d3da5c6921b1ffe94bb0131919d51f07ea65f5"
+      "sha256": "1bc0e8a681a9efeeec331c631bffdf12608c90a67429f510e5bb9baa5774a94f"
     },
     {
       "path": "report/proposal.en.html",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "0db9f81e8587dfec0ba1e1a465ff384e45f3822e26f725c74298271f5cfccb61",
+      "sha256": "e9580595c53359f5418e3c8d9349aeb99a9773e9e9555abad4e222d7d22f2a8b",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -669,32 +669,32 @@
       "path": "report/proposal.html",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "8bacef46ca8ea4e758fc03b7100ee0b87eea00a5ba89bd14bb6cb786f1187e5f",
+      "sha256": "7ef95c40028c0c24761738343f4f8a904329734cc325132c55575cefe1908b10",
       "language": "zh"
     },
     {
       "path": "risk.json",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "d2a47f64a2a14ac4b319a842cf47545049770baebbc11756442a661c3c534feb"
+      "sha256": "dc477a9cfe7258de8bbb105a02776e0061ac200a1c58cd24d1aa9b985df8b81b"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3403976bc4395af04f453436db93b960ee2d630ad76bbcfde056e9c9e89ddfa5"
+      "sha256": "943acbf522dc1e4856517b99eaaaef549b1759e2afb6bd475dcd06a76b39a2b7"
     },
     {
       "path": "simulation.json",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "e5e40694cd09e297c7fee7dc59a35a0f575a052935e431b6d421889139567578"
+      "sha256": "8cd31cf5d8a439e5ffbb1591b93c9d2b9f02a67a284d33cd54cb5963359ae1d8"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "8ac7401969b447d959c1ae8e368767654b1ba67bc251b5ce1c68575305c97066"
+      "sha256": "81998f2899f2e67866ce701a2d89c5de2301bf01a2319a4228011c9bfe61a152"
     },
     {
       "path": "spatial.json",
@@ -730,7 +730,7 @@
       "path": "visual/assets/evidence-register.json",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "acbae08360e9f5ea9d68eb007137df143391d7d45cfd6ffc23b92bed43c0d2a4"
+      "sha256": "125da00fd6f39b17554b4f953a80b045d1b5902cdc7f5f5e5f21a36feea4ef81"
     },
     {
       "path": "visual/assets/replay.js",
@@ -778,7 +778,7 @@
       "path": "visual/index.en.html",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "60f756b50781399178e9105f360fe4ddbecc8640eda0328183b5c15d7f0435fc",
+      "sha256": "e50b79f765aac5442bf9f4ba0ccba96021e3487fde9a0c439ac6759f5008a1fe",
       "language": "en",
       "translation_of": "visual/index.html"
     },
@@ -786,7 +786,7 @@
       "path": "visual/index.html",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "56ea8689cc034b196169161ae7ad35c80e4e269ac2a1fb280a0c102d4478cc65",
+      "sha256": "4be8841abd1e56239b33980e8dad7fde76acc13b3c3d226da0bf4f5cb299c94f",
       "language": "zh"
     },
     {
@@ -798,6 +798,7 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence_summary": "v5.2-depth separates official O-tier, public-observation P-tier, derived D-tier, and concept C-tier evidence. A 2021 ESA WorldCover signal is aggregated into 1,248 clipped 100m supporting cells and corrects the concept partition, but is not current-condition certification. Required design GeoJSON remains provisional. Dazhongsi transport figures are a scoped project stress case. Agent prompts, concise traces, tool versions, hashes, human decisions, responsibility gates, and stop rules are persisted; implementation approval, representative consent, official geometry, professional cost, and deterministic LLM prose are not claimed."
+    "data_confidence_summary": "v5.3-depth separates official O-tier, public-observation P-tier, derived D-tier, and concept C-tier evidence. A 2021 ESA WorldCover signal is aggregated into 1,248 clipped 100m supporting cells and corrects the concept partition, but is not current-condition certification. Required design GeoJSON remains provisional. Dazhongsi transport figures are a scoped project stress case. Agent prompts, concise traces, tool versions, hashes, human decisions, responsibility gates, zero-phase participation, five-seam audit, three governance must-fail fixtures, and stop rules are persisted; implementation approval, representative consent, official geometry, professional cost, and deterministic LLM prose are not claimed.",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }
