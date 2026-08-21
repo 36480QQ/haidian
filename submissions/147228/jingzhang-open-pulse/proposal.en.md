@@ -148,7 +148,7 @@ Urban character retains the railway's line, rhythm, durable material and maintai
 | P2 bounded release | months 10–18 | at most one witnessed scenario per station, each with a public receipt | baseline, incident, group impact, professional review and recovery | return on safety, rights, access, ecology or group-impact breach |
 | P3 review and migrate | annual | compare versions; expand, repair or retire; publish failure records | annual evidence account, budget, work orders, dissent and retirement list | retire if evidence cannot replay or lifecycle cost is unsustainable |
 
-Eight operating packages cover official geometry, human-experience baseline, wind-heat-water validation, embodied-AI testing, open-source rights, Dazhongsi event reduction, rain/quiet-night operations, and annual review. Roles remain conceptual; real bodies, budget, procurement and SLA require professional and public confirmation. [data:visual/assets/operations-matrix.json]
+Eight operating packages cover official geometry, human-experience baseline, wind-heat-water validation, embodied-AI testing, open-source rights, Dazhongsi event reduction, rain/quiet-night operations, and annual review. Responsibility slots first name the organizer's data steward, transport/accessibility specialists, community liaison, site maintainer, test observer and independent reviewer; real bodies, budget, procurement and SLA require professional and public confirmation. The first P1/P2 screen uses five measures: ordinary-route completion, staffed-takeover response time, complaint closure, withdrawal execution and on-time maintenance work orders. If a measure has no baseline, it remains `unknown` and no release is issued. [data:visual/assets/operations-matrix.json]
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
@@ -187,11 +187,9 @@ The proposal claims no confirmed partnership, land supply, investment, approval,
 - `brief/site-package/design_brief.json`
 - `brief/site-package/agent_taskbook.json`
 - `data/processed/agent_fact_pack.md`
-- `visual/assets/civic-pulse-protocol.json`
-- `visual/assets/scenario-operation-matrix.json`
-- `visual/assets/operations-matrix.json`
-- `visual/assets/open-pulse-tabletop-evidence.json`
-- `visual/assets/example-s02-embodied-test-window.json`
+Appendix receipt entry points (1): [data:visual/assets/civic-pulse-protocol.json] [data:visual/assets/scenario-operation-matrix.json] [data:visual/assets/operations-matrix.json]
+
+Appendix receipt entry points (2): [data:visual/assets/open-pulse-tabletop-evidence.json] [data:visual/assets/example-s02-embodied-test-window.json]
 - Open-call and governance references: [source:OFFICIAL-ANNOUNCEMENT], [source:NIST-AI-RMF-1.0]
 - Longevity and public-transparency references: [source:ANICHE-URBAN-LIVING-LAB-LONGEVITY-2026], [source:CASE-UK-ATRS]
 - Accessibility and embodied-AI safety references: [source:BEIJING-ACCESSIBILITY-REGULATION], [source:ISO-13482-SERVICE-ROBOT-SAFETY]

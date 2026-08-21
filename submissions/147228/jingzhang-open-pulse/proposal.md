@@ -147,7 +147,7 @@ S-02 是当前唯一执行过本地合成桌面回放的样例。4/4 夹具、6/
 | P2 小范围发布 | 10 至 18 个月 | 每站最多启动一个有见证场景，发布公开回执 | 基线、事件、分组影响、专业审查与恢复记录 | 安全、权利、无障碍、生态或群体差异越线即退回 |
 | P3 复盘与迁移 | 每年 | 比较版本，决定扩展、修复或退役，公开失败档案 | 年度证据账、预算、工单、公众异议和退役清单 | 证据不可复现或长期维护成本失控则退役 |
 
-八项运维包把上述阶段拆成官方边界复核、人的体验基线、风热雨洪验证、具身智能测试、开源清权、大钟寺活动降容、雨洪与夜间运维、年度复盘。责任角色均是概念建议，真实主体、预算、采购与 SLA 需由后续专业和公共程序确认。[data:visual/assets/operations-matrix.json]
+八项运维包把上述阶段拆成官方边界复核、人的体验基线、风热雨洪验证、具身智能测试、开源清权、大钟寺活动降容、雨洪与夜间运维、年度复盘。参与主体先按证据责任分为组织方资料责任人、交通与无障碍专业团队、社区联络者、场地维护者、测试观察者和独立复核团队；真实主体、预算、采购与 SLA 仍需由后续专业和公共程序确认。P1/P2 首轮只读五项指标：普通路线完成率、人工接管响应时长、投诉闭环率、撤回执行率和维护工单按期率；任一指标没有基线就保持 `unknown`，不发布。[data:visual/assets/operations-matrix.json]
 
 ## 指标体系、面积复算与合规矩阵
 
@@ -186,11 +186,9 @@ S-02 是当前唯一执行过本地合成桌面回放的样例。4/4 夹具、6/
 - `brief/site-package/design_brief.json`
 - `brief/site-package/agent_taskbook.json`
 - `data/processed/agent_fact_pack.md`
-- `visual/assets/civic-pulse-protocol.json`
-- `visual/assets/scenario-operation-matrix.json`
-- `visual/assets/operations-matrix.json`
-- `visual/assets/open-pulse-tabletop-evidence.json`
-- `visual/assets/example-s02-embodied-test-window.json`
+附录回执入口（一）：[data:visual/assets/civic-pulse-protocol.json] [data:visual/assets/scenario-operation-matrix.json] [data:visual/assets/operations-matrix.json]
+
+附录回执入口（二）：[data:visual/assets/open-pulse-tabletop-evidence.json] [data:visual/assets/example-s02-embodied-test-window.json]
 - 征集与治理依据 [source:OFFICIAL-ANNOUNCEMENT]、[source:NIST-AI-RMF-1.0]
 - 长期运行与公开透明依据 [source:ANICHE-URBAN-LIVING-LAB-LONGEVITY-2026]、[source:CASE-UK-ATRS]
 - 无障碍与具身智能安全依据 [source:BEIJING-ACCESSIBILITY-REGULATION]、[source:ISO-13482-SERVICE-ROBOT-SAFETY]
