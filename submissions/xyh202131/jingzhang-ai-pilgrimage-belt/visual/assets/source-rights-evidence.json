@@ -4782,14 +4782,9 @@
     },
     {
       "font_id": "FONT-HELVETICA-R19-RESOURCE",
-      "scope": [
-        "../../drawings/a3-booklet.pdf",
-        "../../drawings/a3-booklet.en.pdf",
-        "../../drawings/a0-boards.pdf",
-        "../../drawings/a0-boards.en.pdf"
-      ],
-      "embedding_state": "referenced_not_embedded_visible_publication_text",
-      "source_or_resolution": "Read-only PyMuPDF inspection of the current Round 54 PDFs reports 220 visible Helvetica spans. No Helvetica font program is embedded. Reference and visible use do not establish licence compliance.",
+      "scope": [],
+      "embedding_state": "historical_round_54_not_current_primary_text",
+      "source_or_resolution": "Historical Round 54 read-only inspection found non-embedded Helvetica spans. Round 55 replaces the four PDFs; this record remains historical and establishes no licence compliance.",
       "evidence_state": "facts_recorded_compliance_unreviewed",
       "independent_review_status": "not_started",
       "unresolved_item_ids": [
@@ -4798,12 +4793,9 @@
     },
     {
       "font_id": "FONT-HEITI-R48-PDF-RESOURCE",
-      "scope": [
-        "../../drawings/a3-booklet.pdf",
-        "../../drawings/a0-boards.pdf"
-      ],
-      "embedding_state": "referenced_not_embedded_visible_publication_text",
-      "source_or_resolution": "Read-only PyMuPDF inspection of the current Round 54 Chinese PDFs reports 177 visible Heiti CID spans using china-s / UniGB-UTF16-H. No Heiti font program is embedded. Reference does not establish licence compliance.",
+      "scope": [],
+      "embedding_state": "historical_round_54_not_current_primary_text",
+      "source_or_resolution": "Historical Round 54 Chinese PDFs exposed non-embedded Heiti CID spans. Round 55 replaces the four PDFs; this record remains historical and establishes no licence compliance.",
       "evidence_state": "facts_recorded_compliance_unreviewed",
       "independent_review_status": "not_started",
       "unresolved_item_ids": [
@@ -4894,8 +4886,8 @@
     {
       "font_id": "FONT-NOTO-R19-PDF-SUBSETS",
       "scope": [],
-      "embedding_state": "historical_not_present_in_round_54_current_pdfs",
-      "source_or_resolution": "Historical Round 19-derived PDFs exposed embedded NotoSansSC subsets. The current Round 54 PDFs were rebuilt in full and read-only inspection finds no Noto subset. This historical record establishes no licence compliance.",
+      "embedding_state": "historical_notosanssc_not_current_primary_text",
+      "source_or_resolution": "Historical Round 19-derived PDFs exposed NotoSansSC subsets. Round 55 primary publication text uses different local subsets; vector-inserted SVGs may still expose renderer fallback subsets. This historical record establishes no licence compliance.",
       "evidence_state": "facts_recorded_compliance_unreviewed",
       "independent_review_status": "not_started",
       "unresolved_item_ids": [
@@ -4913,6 +4905,23 @@
       "embedding_state": "referenced_not_embedded",
       "source_or_resolution": "Round 19 offline HTML requests local CSS system font stacks and makes no remote font request. The concrete local fonts selected by each browser and operating system are environment-dependent and were not fixed or packaged; a system-stack reference is not a licence-compliance finding.",
       "evidence_state": "resolution_unrecorded",
+      "independent_review_status": "not_started",
+      "unresolved_item_ids": [
+        "RIGHTS-OPEN-02",
+        "RIGHTS-OPEN-04"
+      ]
+    },
+    {
+      "font_id": "FONT-PDF-R55-LOCAL-SUBSETS",
+      "scope": [
+        "../../drawings/a3-booklet.pdf",
+        "../../drawings/a3-booklet.en.pdf",
+        "../../drawings/a0-boards.pdf",
+        "../../drawings/a0-boards.en.pdf"
+      ],
+      "embedding_state": "embedded_subsets_pending_independent_licence_review",
+      "source_or_resolution": "Round 55 primary publication text embeds local Microsoft YaHei Regular/Bold or Arial Regular/Bold subsets. Vector-inserted package SVGs additionally expose locally rendered Times-Roman, Droid Sans Fallback, Noto Sans Math/Symbols and small Helvetica subsets. Exact versions, licences, embedding and redistribution conditions were not independently audited; no font file is shipped separately.",
+      "evidence_state": "facts_recorded_compliance_unreviewed",
       "independent_review_status": "not_started",
       "unresolved_item_ids": [
         "RIGHTS-OPEN-02",
