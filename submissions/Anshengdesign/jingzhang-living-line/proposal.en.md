@@ -255,13 +255,13 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 |---|---|
 | Thousand-Scale Grove (wind-flip aluminium scales) | Visualization of percolation phase transition 0.840→0.904: scale flips = local state changes, the overall wave = emergent transition |
 | Percolation strip paving + fine mist | Blue-green percolation paths (giant component 86.5%); the strip = permeable edge |
-| Kept-rail seats / rail-motif paving | Fact F1 (real rails & sleepers restored) + tangible continuity of the spine's syntactic integration |
+| Kept-rail seats / rail-motif paving | real rails & sleepers restored + tangible continuity of the spine's syntactic integration |
 | Terrace seats / view frames / wildflower band (three High-Line moves) | Park-like livability (third goal of the approved plan) + public stay supply behind jobs-housing entropy +5.3% |
 | Green-culture gallery wall | Repair of the wall-cutting mechanism (B2 BUAA/BLCU boundary), syntactic integration gain |
 | Quantum Garden 120m modules + ground-level single-storey service pavilion | CA unlock (42 cells reallocated) + redundancy R (reversible light intervention) |
 | λ information strip (the only screen) | Wilson λ data layer (supercritical share 29.17%); iron rule 11: screens ≤1, functional supporting role |
 
-**Three-layer urban-design frame (where every design object belongs — urban design includes architecture, blocks, plazas AND landscape; this is not a landscape scheme)**:
+**Three-layer urban-design frame** (design objects at three layers: macro structure / meso blocks & buildings / micro places & landscape):
 
 | Layer | Scale | Urban-design body | This proposal |
 |---|---|---|---|
@@ -281,13 +281,13 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 |---|---|---|---|
 | Phase Plaza | A breathing silver screen — the wind directs, scales are pixels, the plaza is a theater | pole canopy fills the frame, low upward angle | blue hour: backlit silver canopy + copper rim light |
 | Quantum Garden | An industrial greenhouse of memory — a test garden grows inside the old factory's skeleton | 768 trusses = greenhouse frame, warm interior glow | dusk: cold blue × warm gold |
-| Origin Plaza | A TIME AXIS, not gravestones: flush sleepers = timestamps, glowing seams = circuit traces, alive and growing toward the future | sleepers embedded flush (zero raised) + light seams + steel inlay, sparse near, dense far | morning long shadows; a glowing timeline at night |
+| Origin Plaza | A TIME AXIS: flush sleepers = timestamps, glowing seams = circuit traces, alive and growing toward the future | sleepers embedded flush (zero raised) + light seams + steel inlay, sparse near, dense far | morning long shadows; a glowing timeline at night |
 | Interface Plaza | The bell sinks into the ground — the old bell's shadow is the AI bell face | copper bell lines + sound-pipe slope, temple silhouette | blue hour + last daylight |
 | Railside Market | Improvisation in a thousand profiles — no cutting, no drilling, today's stalls assembled | aluminum-profile structure forest | matte aluminum + warm stall lamps |
 | Stitch Bridge | An arc of white light across the traffic — white concrete + stainless steel + glass, the spine glowing in backlight | 3-span white fair-faced concrete box girder + steel railings + glass balustrade | blue dusk backlight: the white bridge glows, light trails below |
 | 1733 Light Interface | Keep the shell, free the inside — the old mall's shell holds the night school's lamps | lit-window rhythm + loft steel showing through | dark facade × warm gold windows |
 
-**Rendering anchoring discipline (written in after boss review)**: every rendering must be bound to a real anchor card (real OSM fabric + coordinates + design placement); unanchored scenes do not enter the package.
+**Rendering anchoring discipline**: every rendering must be bound to a real anchor card (real OSM fabric + coordinates + design placement); unanchored scenes do not enter the package.
 
 ![Anchor card: Stitch Bridge real site — N.3rd Ring Rd × Mingguang Rd crossing (47 road segs / 18 rails measured)](assets/figures/anchor-stitch.en.png)
 
@@ -299,17 +299,17 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 
 ![Phase Plaza · Thousand-Scale Grove development: emergence premise (local rules → macro order) / translation (scale + wind = light-dark wave = the 0.904 transition made visible) / construction / use](assets/figures/scale-grove-study.en.png)
 
-![Quantum Garden development: CA unlock of 42 cells → garden blocks; 768 retrofit core + 120m modules + ground-level single-storey pavilion (§5 modest folly, not a floating building) + thousand-grass wave](assets/figures/qg-garden-study.en.png)
+![Quantum Garden development: CA unlock of 42 cells → garden blocks; 768 retrofit core + 120m modules + ground-level single-storey pavilion (a modest folly) + thousand-grass wave](assets/figures/qg-garden-study.en.png)
 
-![Railside market development: standard aluminum module system (§2 zero-cutting + §6 Delta Stack) — one module × three rules = stall / canopy / kiosk / bench](assets/figures/market-study.en.png)
+![Railside market development: standard aluminum module system (standard aluminum zero-cutting system + modular stacking) — one module × three rules = stall / canopy / kiosk / bench](assets/figures/market-study.en.png)
 
-![Origin Plaza development: 93.5th-percentile integration = the structural origin (data, not myth); TIME AXIS concept — flush sleepers = timestamps + glowing seams + steel inlay (not a gravestone field), density gradient, emptiness before the station](assets/figures/origin-study.en.png)
+![Origin Plaza development: 93.5th-percentile integration = the structural origin (data, not myth); TIME AXIS concept — flush sleepers = timestamps + glowing seams + steel inlay , density gradient, emptiness before the station](assets/figures/origin-study.en.png)
 
 ![Interface Plaza development: 20.2% → +70% network transition; sound-pipe steps (emergent sound) + copper bell lines + temple emptiness](assets/figures/interface-study.en.png)
 
-![Seven stitches development: network before parcels; sculptural green bridge (§4 Gehry stair: one form + one material + crisp shadow)](assets/figures/stitch-study.en.png)
+![Seven stitches development: network before parcels; sculptural green bridge (a sculptural component: one form + one material + crisp shadow)](assets/figures/stitch-study.en.png)
 
-![1733 light interface development: reuse as initial condition (§9 CENTERPIECE narrative); keep shell, free inside — the lit-dark rhythm emerges from use](assets/figures/1733-study.en.png)
+![1733 light interface development: reuse as initial condition (reuse narrative); keep shell, free inside — the lit-dark rhythm emerges from use](assets/figures/1733-study.en.png)
 
 ![Landscape design (concept): Phase Plaza / Origin Plaza / Interface Plaza](assets/figures/landscape-phase.en.png)
 
@@ -319,7 +319,7 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 
 ![Landscape design: Interface Plaza](assets/figures/landscape-front.en.png)
 
-![Quantum Garden rendering (AI concept intent, not implementation) — real anchor: Zhichunli 768 Creative Park (8,735 sqm factory, 116.3290E 39.9765N); the service pavilion is a ground-level modest single-storey folly (eave 3.5m, thin columns + glass + warm wood), NO floating building](assets/media/quantum-garden.jpg)
+![Quantum Garden rendering (AI concept intent, not implementation) — real anchor: Zhichunli 768 Creative Park (8,735 sqm factory, 116.3290E 39.9765N); the service pavilion is a ground-level modest single-storey folly (eave 3.5m, thin columns + glass + warm wood)](assets/media/quantum-garden.jpg)
 
 ![Railside market rendering (AI concept intent, not implementation) — real anchor: N.4th Ring Rd × west street edge of JZ Park Phase I (outside the park red line; the built park is untouched; rendering contains no railway elements)](assets/media/market-module.jpg)
 
@@ -333,7 +333,7 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 
 ![Night design (concept): the spine](assets/figures/night-spine.en.png)
 
-![Spine · flush-embedded rail construction design: plan / cross-section / axonometric — rail top = finished paving (0 step), resilient infill between rails, buried sleepers, wildflower bands (Fact F1: real rails & sleepers restored into the landscape, flush paving level, no viaduct)](assets/figures/spine-rail-embed.en.png)
+![Spine · flush-embedded rail construction design: plan / cross-section / axonometric — rail top = finished paving (0 step), resilient infill between rails, buried sleepers, wildflower bands (real rails & sleepers restored into the landscape, flush paving level, no viaduct)](assets/figures/spine-rail-embed.en.png)
 
 ![Spine night rendering (AI concept intent, not implementation) — the railway is expressed by the flush-embed design drawing above; this rendering contains no rail element](assets/media/d1-spine-night.jpg)
 
@@ -442,7 +442,7 @@ Blue-green percolation: current giant fraction 0.840 → design 0.904 (stitching
 ### Card 5 · Quantum Garden (768 retrofit core)
 | Card | Content |
 |---|---|
-| Scope/scale | 8,735 m² heritage factory retained; 120m modules; ground-level single-storey pavilion (eave 3.5m, no floating building) |
+| Scope/scale | 8,735 m² heritage factory retained; 120m modules; ground-level single-storey pavilion (eave 3.5m) |
 | Phase/KPI | long-term (Y6–10); KPI = test-band occupancy and 42-cell unlock progress; HOLD otherwise |
 | Owner | 768 campus operator + Zhongzhiyuan platform |
 | Materials | brick/steel trusses kept (greenhouse image) + glass + warm wood + grass wave; fixed stamped scales for shading |
@@ -472,7 +472,7 @@ Blue-green percolation: current giant fraction 0.840 → design 0.904 (stitching
 | Scope/scale | 11 new-build units (446,000 m², FAR≈0.91); 24m podium + 60–80m towers set back; 20% housing in office-led / 15% office in housing-led |
 | Phase/KPI | long-term; KPI = entropy ≥+4% and vacancy ≤ market; HOLD otherwise |
 | Owner | developers + talent-housing body (affordability covenant) |
-| Materials | podium warm wood/metal + glass towers + vertical greenery (§3); scale shading |
+| Materials | podium warm wood/metal + glass towers + vertical greenery (vertical greenery); scale shading |
 | Operations | two-clock operation (separate lift zones); affordable talent housing; AI-free path = regular lifts/manual property |
 
 ### Card 9 · Spine flush-embedded walkway (the timeline)
