@@ -7,7 +7,7 @@ bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以保留为始、以缝合为形、以可撤回AI为制度；公开证据修正11.4平方公里总体规划，五缝、三区与两项拳头公共设计共同形成可审查、可重放、可止损的城市更新协议。"
-iteration: "v5.2-depth"
+iteration: "v5.3-depth"
 ---
 
 # 京张共檐：一条由公共生活组织的AI创新带

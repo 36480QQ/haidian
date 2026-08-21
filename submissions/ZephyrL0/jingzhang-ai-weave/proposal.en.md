@@ -5,7 +5,7 @@ language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Begin with retention, shape through seams, and govern AI through reversibility: public evidence corrects the 11.4 sq km plan, while five seams, three regimes, and two flagships form a reviewable, replayable, stoppable renewal protocol."
-iteration: "v5.2-depth"
+iteration: "v5.3-depth"
 ---
 
 # THE COMMON EAVE: An AI Innovation Belt Organised by Public Life
