@@ -403,6 +403,17 @@
         "closure_review_required": true,
         "closure_reviewers": "Affected people where consent and privacy allow; otherwise a designated community or public-interest reviewer.",
         "reopen_policy": "A disputed closure reopens or escalates the existing Memory Link while preserving its version and responsibility history.",
+        "impact_ledger_fields": [
+          "baseline",
+          "intended_public_benefit",
+          "beneficiary_groups",
+          "resource_workload_privacy_environmental_costs",
+          "cost_bearing_groups",
+          "responsible_role",
+          "correction_trigger",
+          "exit_condition"
+        ],
+        "impact_ledger_status": "pending_pilot_public_participation_and_professional_assessment",
         "privacy_boundary": "No personal data or non-public records are required for concept review.",
         "proposal_status": "scenario_card_concept_inside_provisional_site"
       },

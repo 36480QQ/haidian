@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "An urban-science paradigm for the Centennial Jing-Zhang AI Innovation Belt: 28 local computations (λ/percolation/space syntax/LUTI/CA/fractal) diagnose a healthy skeleton (fractal dimension 1.746) blocked at three points; the plan lifts the Emergence Index from 0.823 (yellow) to 0.9625 (all green) via stitch + entangle + unlock, with three executable gates, five rejection demos, and every weight/threshold human-editable and recomputable."
+summary: "An urban-science paradigm for the Centennial Jing-Zhang AI Innovation Belt: 28 local computations (λ/percolation/space syntax/LUTI/CA/fractal) diagnose a healthy skeleton (fractal dimension 1.746) blocked at three points; the plan lifts the Emergence Index from 0.795 (yellow) to 0.9625 (all-green)
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["ai-traffic-walkability"]
 iteration: "v2.0"
@@ -34,11 +34,11 @@ The entire work of this proposal is to walk that "machine" from end to end: **me
 
 | The reviewer asks | Our answer | Verifiable artifact |
 |---|---|---|
-| What is actually wrong? | Healthy skeleton, three blocks (connectivity / jobs-housing / ecology) | EI0=0.823 four-subindex panel (E_link 0.73 yellow / E_entangle 0.75 yellow / E_ecosys 0.77 yellow) [metric:EI.ei1.value] |
+| What is actually wrong? | Healthy skeleton, three blocks (connectivity / jobs-housing / ecology) | EI0=0.795 four-subindex panel (E_link 0.62 yellow / E_entangle 0.75 yellow / E_ecosys 0.77 yellow) [metric:EI.ei1.value] |
 | What is the prescription? | Stitch (percolation+syntax) + entangle (jobs-housing) + unlock (CA) — **combination is the only solution** | Three gates: percolation 0.840→0.904 / syntax +36% / jobs-housing entropy +5.3% [metric:GATE.*] |
-| Does it work? | Emergence Index 0.823 → **0.9625 all green** | ei1_anchored.json + dual sensitivity intervals [metric:EI.ei1_design_S4] |
+| Does it work? | Emergence Index 0.795 → **0.9625 all-green**
 | Is it over-claiming? | **Deliberately withheld**: statutory FAR, official red lines, engineering alignments — pending official data | Data-gap matrix (8 gap classes all marked "pending official data") |
-| Adverse reading? | **Stitching does not change network λ** (29.167%→29.167%); redundancy R rises 0.826→0.870 (more mixed, not more "precise") | c32 K008 [metric:C32_LAMBDA_STITCHED] + c29 redundancy [metric:C29_REDUNDANCY] |
+| Adverse reading? | **Stitching does not change network λ** (24.76%→24.76%); redundancy R rises 0.826→0.870 (more mixed, not more "precise") | c32 K008 [metric:C32_LAMBDA_STITCHED] + c29 redundancy [metric:C29_REDUNDANCY] |
 
 **Six-ring navigation**: Worldview (vision / dual clock / seven principles) → Diagnosis (five-scientist consultation / syntax / LUTI / ecology) → Mechanism (three causal laws) → Prescription (master plan / key areas / subsystems) → Verification (three-model cross-check / three gates / EI) → Operation (emergent brain / investment / metrics / conclusion). Each chapter ends with a "Ring conclusion →" that passes its output to the next ring.
 
@@ -73,6 +73,8 @@ The entire work of this proposal is to walk that "machine" from end to end: **me
 
 **Heritage assetization (no lyricism, only utilization)**: ①Tsinghuayuan Station relic → **activated** as the Origin Plaza + developer Name Wall (contributions remembered); ②the Jing-Zhang Railway heritage alignment → **exhibited** as a linear museum (the heritage-park spine); ③Wudaokou → **operated** as the Phase Plaza λ gauge (a public thermometer of whether the city is connected); ④Zhongguancun Electronics Avenue · Inno Way → **branded** as the entrepreneurship-lineage trail (a 40-year walking history from electronic components to AI origination); ⑤**Qinghe culture** (the Zhongzhiyuan reach) → **exhibited** as a waterfront culture band (Qinghe flood-control history + test-band science); ⑥the Dazhongsi ancient bell → **activated** in counterpoint with the Emergence Bell (the old bell tolls time, the new bell tolls "emergence"); ⑦Beijing Film Academy artistic resources → **operated** as AI+film co-creation scenarios (an intelligent-native content lab). Historical basis: the 1909 opening of the Jing-Zhang Railway, the Tsinghuayuan Station, and the development history of Zhongguancun Electronics Avenue and Inno Way are public facts; all utilization modes are conceptual suggestions.
 
+**Origin fact verification (2026-08)**: the Tsinghuayuan Station relic stands at **Sancaitang, south of Chengfu Road** (≈400m SW of Wudaokou station), its name plaque **personally inscribed by Zhan Tianyou** — the real Tsinghuayuan station of the 1909 Jing-Zhang Railway. Its location is precisely the **center of the triangle formed by Origin Building, Tsinghua Science Park and the BAAI Zhiyuan Building**: the century-old siting is today's AI-origination core — "the origin" is not a name but a double fact of history and today. All origin designs (Origin Plaza, time-axis name field) anchor to this real site; the organizer's provisional polygon is a proxy boundary; the whole package is recalculated when the official polygon arrives.
+
 **The AI pilgrimage landmark system (task book agent.4: no fewer than three)**: ①**Tsinghuayuan · Origin** — reason to come: a 1909 siting that still ranks at the belt's 93.5th syntactic percentile, the coordinate origin of China's engineering self-reliance; ②**Wudaokou · Phase Plaza** — reason to come: the home of the λ gauge, where every AI practitioner can see "whether the city is connected"; ③**Dazhongsi · Interface Plaza** — reason to come: the Emergence Bell counterposed to the ancient bell, where the AI-era bells start counting. The three landmarks are strung by the **pilgrimage route** along the main spine (Origin → Phase Plaza → Interface Plaza), forming a pilgrimage calendar with the developer festival and the annual Name Wall engraving.
 
 **Naming alignment (approved plan §09)**: the plan's principle — keep existing place names and add innovation-character names — matches our naming system: existing names (Wudaokou/Zhichunlu/Sidaokou/Jimenli…) fully kept; new names apply only to new modules (THE EMERGENT BELT / Quantum Garden / Phase Plaza…, all tentative, subject to official announcement).
@@ -99,13 +101,13 @@ We measure one object with five rulers, yielding four health scores:
 
 | Ruler | Quantified finding | Index |
 |---|---|---|
-| **Wilson spatial interaction** | Network λ supercritical fraction **29.167%** (λc=0.42); 5 cores only 2/5 supercritically coupled [metric:C1_WILSON] | E_link 0.73 yellow |
+| **Wilson spatial interaction** | Network λ supercritical fraction **24.76%** (λc=0.42); 5 cores only 2/5 supercritically coupled (origin = the real Tsinghuayuan station) [metric:C1_WILSON] | E_link 0.62 yellow |
 | **Hillier space syntax** | 7-anchor integration gain after stitch **+36%** (Wudaokou +43 / Dazhongsi +70 / Beijingbei +49) [metric:C4_SYNTAX] | E_link (design caliber) |
 | **Batty fractals** | Fractal dimension **D=1.746** ∈ [1.6,1.8] healthy band — the skeleton is "alive" [metric:C6_FRACTAL.dimension] | E_form 1.0 green |
 | **Bettencourt scaling** | Health factor **H=1.556** above baseline 1.35 [metric:C10_HEALTH] | E_form (corroboration) |
 | **Jacobs vitality** | Intersection density 132.9/km²; corridor functional diversity 0.941, highest on the belt [metric:C7_POI] | E_ecosys (corroboration) |
 
-**Ring conclusion →** Healthy skeleton, three blocks: weak connectivity (λ/syntax), jobs-housing imbalance, ecological gaps. Panel total EI0=0.823 yellow. The prescription targets "stitch, backfill, measure".
+**Ring conclusion →** Healthy skeleton, three blocks: weak connectivity (λ/syntax), jobs-housing imbalance, ecological gaps. Panel total EI0=0.795 yellow. The prescription targets "stitch, backfill, measure".
 
 ---
 
@@ -255,13 +257,13 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 |---|---|
 | Thousand-Scale Grove (wind-flip aluminium scales) | Visualization of percolation phase transition 0.840→0.904: scale flips = local state changes, the overall wave = emergent transition |
 | Percolation strip paving + fine mist | Blue-green percolation paths (giant component 86.5%); the strip = permeable edge |
-| Kept-rail seats / rail-motif paving | Fact F1 (real rails & sleepers restored) + tangible continuity of the spine's syntactic integration |
+| Kept-rail seats / rail-motif paving | real rails & sleepers restored + tangible continuity of the spine's syntactic integration |
 | Terrace seats / view frames / wildflower band (three High-Line moves) | Park-like livability (third goal of the approved plan) + public stay supply behind jobs-housing entropy +5.3% |
 | Green-culture gallery wall | Repair of the wall-cutting mechanism (B2 BUAA/BLCU boundary), syntactic integration gain |
 | Quantum Garden 120m modules + ground-level single-storey service pavilion | CA unlock (42 cells reallocated) + redundancy R (reversible light intervention) |
-| λ information strip (the only screen) | Wilson λ data layer (supercritical share 29.17%); iron rule 11: screens ≤1, functional supporting role |
+| λ information strip (the only screen) | Wilson λ data layer (supercritical share 24.76%); iron rule 11: screens ≤1, functional supporting role |
 
-**Three-layer urban-design frame (where every design object belongs — urban design includes architecture, blocks, plazas AND landscape; this is not a landscape scheme)**:
+**Three-layer urban-design frame** (design objects at three layers: macro structure / meso blocks & buildings / micro places & landscape):
 
 | Layer | Scale | Urban-design body | This proposal |
 |---|---|---|---|
@@ -281,13 +283,13 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 |---|---|---|---|
 | Phase Plaza | A breathing silver screen — the wind directs, scales are pixels, the plaza is a theater | pole canopy fills the frame, low upward angle | blue hour: backlit silver canopy + copper rim light |
 | Quantum Garden | An industrial greenhouse of memory — a test garden grows inside the old factory's skeleton | 768 trusses = greenhouse frame, warm interior glow | dusk: cold blue × warm gold |
-| Origin Plaza | A TIME AXIS, not gravestones: flush sleepers = timestamps, glowing seams = circuit traces, alive and growing toward the future | sleepers embedded flush (zero raised) + light seams + steel inlay, sparse near, dense far | morning long shadows; a glowing timeline at night |
+| Origin Plaza | A TIME AXIS: flush sleepers = timestamps, glowing seams = circuit traces, alive and growing toward the future | sleepers embedded flush (zero raised) + light seams + steel inlay, sparse near, dense far | morning long shadows; a glowing timeline at night |
 | Interface Plaza | The bell sinks into the ground — the old bell's shadow is the AI bell face | copper bell lines + sound-pipe slope, temple silhouette | blue hour + last daylight |
 | Railside Market | Improvisation in a thousand profiles — no cutting, no drilling, today's stalls assembled | aluminum-profile structure forest | matte aluminum + warm stall lamps |
 | Stitch Bridge | An arc of white light across the traffic — white concrete + stainless steel + glass, the spine glowing in backlight | 3-span white fair-faced concrete box girder + steel railings + glass balustrade | blue dusk backlight: the white bridge glows, light trails below |
 | 1733 Light Interface | Keep the shell, free the inside — the old mall's shell holds the night school's lamps | lit-window rhythm + loft steel showing through | dark facade × warm gold windows |
 
-**Rendering anchoring discipline (written in after boss review)**: every rendering must be bound to a real anchor card (real OSM fabric + coordinates + design placement); unanchored scenes do not enter the package.
+**Rendering anchoring discipline**: every rendering must be bound to a real anchor card (real OSM fabric + coordinates + design placement); unanchored scenes do not enter the package.
 
 ![Anchor card: Stitch Bridge real site — N.3rd Ring Rd × Mingguang Rd crossing (47 road segs / 18 rails measured)](assets/figures/anchor-stitch.en.png)
 
@@ -299,17 +301,17 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 
 ![Phase Plaza · Thousand-Scale Grove development: emergence premise (local rules → macro order) / translation (scale + wind = light-dark wave = the 0.904 transition made visible) / construction / use](assets/figures/scale-grove-study.en.png)
 
-![Quantum Garden development: CA unlock of 42 cells → garden blocks; 768 retrofit core + 120m modules + ground-level single-storey pavilion (§5 modest folly, not a floating building) + thousand-grass wave](assets/figures/qg-garden-study.en.png)
+![Quantum Garden development: CA unlock of 42 cells → garden blocks; 768 retrofit core + 120m modules + ground-level single-storey pavilion (a modest folly) + thousand-grass wave](assets/figures/qg-garden-study.en.png)
 
-![Railside market development: standard aluminum module system (§2 zero-cutting + §6 Delta Stack) — one module × three rules = stall / canopy / kiosk / bench](assets/figures/market-study.en.png)
+![Railside market development: standard aluminum module system (standard aluminum zero-cutting system + modular stacking) — one module × three rules = stall / canopy / kiosk / bench](assets/figures/market-study.en.png)
 
-![Origin Plaza development: 93.5th-percentile integration = the structural origin (data, not myth); TIME AXIS concept — flush sleepers = timestamps + glowing seams + steel inlay (not a gravestone field), density gradient, emptiness before the station](assets/figures/origin-study.en.png)
+![Origin Plaza development: 93.5th-percentile integration = the structural origin (data, not myth); TIME AXIS concept — flush sleepers = timestamps + glowing seams + steel inlay , density gradient, emptiness before the station](assets/figures/origin-study.en.png)
 
 ![Interface Plaza development: 20.2% → +70% network transition; sound-pipe steps (emergent sound) + copper bell lines + temple emptiness](assets/figures/interface-study.en.png)
 
-![Seven stitches development: network before parcels; sculptural green bridge (§4 Gehry stair: one form + one material + crisp shadow)](assets/figures/stitch-study.en.png)
+![Seven stitches development: network before parcels; sculptural green bridge (a sculptural component: one form + one material + crisp shadow)](assets/figures/stitch-study.en.png)
 
-![1733 light interface development: reuse as initial condition (§9 CENTERPIECE narrative); keep shell, free inside — the lit-dark rhythm emerges from use](assets/figures/1733-study.en.png)
+![1733 light interface development: reuse as initial condition (reuse narrative); keep shell, free inside — the lit-dark rhythm emerges from use](assets/figures/1733-study.en.png)
 
 ![Landscape design (concept): Phase Plaza / Origin Plaza / Interface Plaza](assets/figures/landscape-phase.en.png)
 
@@ -319,7 +321,7 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 
 ![Landscape design: Interface Plaza](assets/figures/landscape-front.en.png)
 
-![Quantum Garden rendering (AI concept intent, not implementation) — real anchor: Zhichunli 768 Creative Park (8,735 sqm factory, 116.3290E 39.9765N); the service pavilion is a ground-level modest single-storey folly (eave 3.5m, thin columns + glass + warm wood), NO floating building](assets/media/quantum-garden.jpg)
+![Quantum Garden rendering (AI concept intent, not implementation) — real anchor: Zhichunli 768 Creative Park (8,735 sqm factory, 116.3290E 39.9765N); the service pavilion is a ground-level modest single-storey folly (eave 3.5m, thin columns + glass + warm wood)](assets/media/quantum-garden.jpg)
 
 ![Railside market rendering (AI concept intent, not implementation) — real anchor: N.4th Ring Rd × west street edge of JZ Park Phase I (outside the park red line; the built park is untouched; rendering contains no railway elements)](assets/media/market-module.jpg)
 
@@ -333,7 +335,7 @@ Three-area four-piece kit + **scale module table** (per area: extent / key spati
 
 ![Night design (concept): the spine](assets/figures/night-spine.en.png)
 
-![Spine · flush-embedded rail construction design: plan / cross-section / axonometric — rail top = finished paving (0 step), resilient infill between rails, buried sleepers, wildflower bands (Fact F1: real rails & sleepers restored into the landscape, flush paving level, no viaduct)](assets/figures/spine-rail-embed.en.png)
+![Spine · flush-embedded rail construction design: plan / cross-section / axonometric — rail top = finished paving (0 step), resilient infill between rails, buried sleepers, wildflower bands (real rails & sleepers restored into the landscape, flush paving level, no viaduct)](assets/figures/spine-rail-embed.en.png)
 
 ![Spine night rendering (AI concept intent, not implementation) — the railway is expressed by the flush-embed design drawing above; this rendering contains no rail element](assets/media/d1-spine-night.jpg)
 
@@ -385,7 +387,7 @@ POI-proxy land-use structure: within the belt, research+commerce 57% vs resident
 
 ![Road & transport plan: hierarchy + slow spine + seven links + seven stations](assets/figures/zoning-road.en.png)
 
-Spine through-connection (walk/bike spine, weight = geometric distance) + seven-point two-sided links (≤150m); rail on 7 stations (Wudaokou/Dazhongsi/Zhichunlu etc.); municipal/public services are system-level suggestions (no utility stock — no engineering alignment conclusions). Transport follows "network before parcel": reconnect the spine before discussing parcel function [metric:C32_LAMBDA_STITCHED]. Honest statement: stitching does not change network λ (29.167% unchanged); the transport gain is in syntax reachability (+36%), not motorized coupling distance.
+Spine through-connection (walk/bike spine, weight = geometric distance) + seven-point two-sided links (≤150m); rail on 7 stations (Wudaokou/Dazhongsi/Zhichunlu etc.); municipal/public services are system-level suggestions (no utility stock — no engineering alignment conclusions). Transport follows "network before parcel": reconnect the spine before discussing parcel function [metric:C32_LAMBDA_STITCHED]. Honest statement: stitching does not change network λ (24.76% unchanged); the transport gain is in syntax reachability (+36%), not motorized coupling distance.
 
 ---
 
@@ -442,7 +444,7 @@ Blue-green percolation: current giant fraction 0.840 → design 0.904 (stitching
 ### Card 5 · Quantum Garden (768 retrofit core)
 | Card | Content |
 |---|---|
-| Scope/scale | 8,735 m² heritage factory retained; 120m modules; ground-level single-storey pavilion (eave 3.5m, no floating building) |
+| Scope/scale | 8,735 m² heritage factory retained; 120m modules; ground-level single-storey pavilion (eave 3.5m) |
 | Phase/KPI | long-term (Y6–10); KPI = test-band occupancy and 42-cell unlock progress; HOLD otherwise |
 | Owner | 768 campus operator + Zhongzhiyuan platform |
 | Materials | brick/steel trusses kept (greenhouse image) + glass + warm wood + grass wave; fixed stamped scales for shading |
@@ -472,7 +474,7 @@ Blue-green percolation: current giant fraction 0.840 → design 0.904 (stitching
 | Scope/scale | 11 new-build units (446,000 m², FAR≈0.91); 24m podium + 60–80m towers set back; 20% housing in office-led / 15% office in housing-led |
 | Phase/KPI | long-term; KPI = entropy ≥+4% and vacancy ≤ market; HOLD otherwise |
 | Owner | developers + talent-housing body (affordability covenant) |
-| Materials | podium warm wood/metal + glass towers + vertical greenery (§3); scale shading |
+| Materials | podium warm wood/metal + glass towers + vertical greenery (vertical greenery); scale shading |
 | Operations | two-clock operation (separate lift zones); affordable talent housing; AI-free path = regular lifts/manual property |
 
 ### Card 9 · Spine flush-embedded walkway (the timeline)
@@ -536,7 +538,7 @@ Three layers, four terminals + recursive loop + phase-change control room. Every
 ## Metrics System, Area Recomputation & Compliance Matrix (Verification ring)
 
 **Emergence Index EI = 0.30·E_form + 0.25·E_link + 0.30·E_entangle + 0.15·E_ecosys**:
-- EI0 = 0.823 [0.775, 0.848] yellow → EI1 = **0.9625 [0.9125, 0.985] all green** [metric:EI.ei1_design_S4]
+- EI0 = 0.795 [0.775, 0.848] yellow → EI1 = **0.9625 [0.9125, 0.985] all green** [metric:EI.ei1_design_S4]
 - Sensitivity: weights ±0.05 → [0.799, 0.818]; inputs ±10% → [0.779, 0.832] (intervals, not single numbers) [metric:EI.ei1_sensitivity]
 
 **Three gates (design-scenario veto, all computed)**: G1 percolation ≥0.90 (measured 0.904 PASS) / G2 syntax ≥+30% (measured +36% PASS) / G3 jobs-housing entropy ≥+4% (measured +5.3% PASS). **Five rejection demos** (weak intervention / jobs-only / over-concentration / S2 solo / S3 solo — all exit code 2, validate_ei.py re-run by hand) [data:ei/rejection_gallery.md].
@@ -569,7 +571,7 @@ Three layers, four terminals + recursive loop + phase-change control room. Every
 
 The belt's skeleton is healthy (D=1.746). It lacks not rebuilding but three "removals" — **stitch reconnects, backfill reconnects jobs-housing, unlock reconnects possibility** — each measured, each proven:
 
-- Now EI0=0.823 yellow → after prescription EI1=0.9625 all green;
+- Now EI0=0.795 yellow → after prescription EI1=0.9625 all green;
 - Three gates all pass (0.904 / +36% / +5.3%); only "stitch + entangle" passes;
 - Every weight and threshold is human-editable and recomputable.
 

@@ -13,7 +13,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "plaza",
         "name_zh": "众智园AI创新广场",
-        "area_sqm_declared": 42818.137
+        "area_sqm_declared": 42818.137,
+        "nearest_road": "ROAD-EW-8",
+        "distance_to_road_m": 199,
+        "serves_cluster": "NM"
       },
       "geometry": {
         "type": "Polygon",
@@ -294,7 +297,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "plaza",
         "name_zh": "AI原点社区广场",
-        "area_sqm_declared": 29746.938
+        "area_sqm_declared": 29746.938,
+        "nearest_road": "ROAD-NS-3",
+        "distance_to_road_m": 71,
+        "serves_cluster": "CM"
       },
       "geometry": {
         "type": "Polygon",
@@ -575,7 +581,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "plaza",
         "name_zh": "大钟寺AI城市客厅",
-        "area_sqm_declared": 29764.747
+        "area_sqm_declared": 29764.747,
+        "nearest_road": "ROAD-NS-4",
+        "distance_to_road_m": 263,
+        "serves_cluster": "SM"
       },
       "geometry": {
         "type": "Polygon",
@@ -856,7 +865,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "activity_node",
         "name_zh": "京张绿廊活动节点1",
-        "area_sqm_declared": 19050.802
+        "area_sqm_declared": 19050.802,
+        "nearest_road": "ROAD-EW-1",
+        "distance_to_road_m": 1,
+        "serves_cluster": "SM"
       },
       "geometry": {
         "type": "Polygon",
@@ -1137,7 +1149,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "activity_node",
         "name_zh": "京张绿廊活动节点2",
-        "area_sqm_declared": 19047.239
+        "area_sqm_declared": 19047.239,
+        "nearest_road": "ROAD-NS-2",
+        "distance_to_road_m": 140,
+        "serves_cluster": "SM"
       },
       "geometry": {
         "type": "Polygon",
@@ -1418,7 +1433,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "activity_node",
         "name_zh": "京张绿廊活动节点3",
-        "area_sqm_declared": 19043.126
+        "area_sqm_declared": 19043.126,
+        "nearest_road": "ROAD-EW-4",
+        "distance_to_road_m": 1,
+        "serves_cluster": "CM"
       },
       "geometry": {
         "type": "Polygon",
@@ -1699,7 +1717,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "activity_node",
         "name_zh": "京张绿廊活动节点4",
-        "area_sqm_declared": 19034.347
+        "area_sqm_declared": 19034.347,
+        "nearest_road": "ROAD-NS-2",
+        "distance_to_road_m": 238,
+        "serves_cluster": "NM"
       },
       "geometry": {
         "type": "Polygon",
@@ -1980,7 +2001,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "activity_node",
         "name_zh": "京张绿廊活动节点5",
-        "area_sqm_declared": 19029.955
+        "area_sqm_declared": 19029.955,
+        "nearest_road": "ROAD-NS-2",
+        "distance_to_road_m": 141,
+        "serves_cluster": "NM"
       },
       "geometry": {
         "type": "Polygon",
@@ -2261,7 +2285,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园1",
-        "area_sqm_declared": 7441.189
+        "area_sqm_declared": 7441.189,
+        "nearest_road": "ROAD-NS-2",
+        "distance_to_road_m": 256,
+        "serves_cluster": "SW"
       },
       "geometry": {
         "type": "Polygon",
@@ -2542,7 +2569,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园1",
-        "area_sqm_declared": 7441.18
+        "area_sqm_declared": 7441.18,
+        "nearest_road": "ROAD-NS-3",
+        "distance_to_road_m": 226,
+        "serves_cluster": "SM"
       },
       "geometry": {
         "type": "Polygon",
@@ -2823,7 +2853,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园2",
-        "area_sqm_declared": 7439.261
+        "area_sqm_declared": 7439.261,
+        "nearest_road": "ROAD-NS-2",
+        "distance_to_road_m": 169,
+        "serves_cluster": "SW"
       },
       "geometry": {
         "type": "Polygon",
@@ -3104,7 +3137,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园2",
-        "area_sqm_declared": 7439.252
+        "area_sqm_declared": 7439.252,
+        "nearest_road": "ROAD-NS-3",
+        "distance_to_road_m": 119,
+        "serves_cluster": "SM"
       },
       "geometry": {
         "type": "Polygon",
@@ -3385,7 +3421,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园3",
-        "area_sqm_declared": 7437.868
+        "area_sqm_declared": 7437.868,
+        "nearest_road": "ROAD-NS-2",
+        "distance_to_road_m": 169,
+        "serves_cluster": "CW"
       },
       "geometry": {
         "type": "Polygon",
@@ -3666,7 +3705,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园3",
-        "area_sqm_declared": 7437.86
+        "area_sqm_declared": 7437.86,
+        "nearest_road": "ROAD-NS-3",
+        "distance_to_road_m": 119,
+        "serves_cluster": "CM"
       },
       "geometry": {
         "type": "Polygon",
@@ -3947,7 +3989,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园4",
-        "area_sqm_declared": 7436.047
+        "area_sqm_declared": 7436.047,
+        "nearest_road": "ROAD-NS-1",
+        "distance_to_road_m": 129,
+        "serves_cluster": "NW"
       },
       "geometry": {
         "type": "Polygon",
@@ -4228,7 +4273,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园4",
-        "area_sqm_declared": 7436.038
+        "area_sqm_declared": 7436.038,
+        "nearest_road": "ROAD-NS-3",
+        "distance_to_road_m": 119,
+        "serves_cluster": "NM"
       },
       "geometry": {
         "type": "Polygon",
@@ -4509,7 +4557,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园5",
-        "area_sqm_declared": 7434.653
+        "area_sqm_declared": 7434.653,
+        "nearest_road": "ROAD-NS-2",
+        "distance_to_road_m": 169,
+        "serves_cluster": "NW"
       },
       "geometry": {
         "type": "Polygon",
@@ -4790,7 +4841,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园5",
-        "area_sqm_declared": 7434.644
+        "area_sqm_declared": 7434.644,
+        "nearest_road": "ROAD-NS-3",
+        "distance_to_road_m": 119,
+        "serves_cluster": "NM"
       },
       "geometry": {
         "type": "Polygon",
@@ -5071,7 +5125,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "西侧口袋公园6",
-        "area_sqm_declared": 3901.099
+        "area_sqm_declared": 3901.099,
+        "nearest_road": "ROAD-EW-9",
+        "distance_to_road_m": 218,
+        "serves_cluster": "NW"
       },
       "geometry": {
         "type": "Polygon",
@@ -5232,7 +5289,10 @@
         "geometry_role": "design_proposal",
         "public_space_type": "pocket_park",
         "name_zh": "东侧口袋公园6",
-        "area_sqm_declared": 7433.143
+        "area_sqm_declared": 7433.143,
+        "nearest_road": "ROAD-EW-9",
+        "distance_to_road_m": 119,
+        "serves_cluster": "NM"
       },
       "geometry": {
         "type": "Polygon",

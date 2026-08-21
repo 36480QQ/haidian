@@ -1,224 +1,342 @@
 {
-  "version": 2,
-  "summary": "智脊·京张AI创新带的任务审计模拟，验证场景卡、用户画像、地标、全球案例、更新项目、风险矩阵、空间概念和指标的可审计性与一致性。包含变异测试（mutation testing）：故意注入违规，验证方案的人工复核、硬停止、可撤回和数据边界机制能够拦截。",
-  "boundary_statement": "本模拟是离线概念验证。证明：判定逻辑可复现、高风险维度强制人工复核、AI场景无全自动决策、试点可撤回条件存在、数据边界不采集个人画像。不证明：实地读数、真实复核主体已介入、服务绩效、官方审批结论。变异测试的'拦截'指方案机制在文档层面识别并拒绝违规，不构成对真实系统安全性的承诺。",
+  "version": 1,
+  "summary": "智脊·京张AI创新带的任务审计模拟，验证场景卡、用户画像、地标、全球案例和更新项目的可审计性和一致性。每个任务包含命名断言，确保指标可复算。",
   "tasks": [
     {
       "id": "SIM-S01",
       "task_type": "scenario_validation",
-      "assertion_type": "human_review_enforced",
       "description": "验证开源发布厅(S01)场景的运营主体和数据边界是否在proposal.md中可追溯",
       "assertions": [
-        { "id": "scenario_defined", "check": "proposal.md中存在S01场景卡条目", "expected": true, "actual": true },
-        { "id": "operator_named", "check": "场景卡指明了运营主体", "expected": "开源社区运营", "actual": "开源社区运营" },
-        { "id": "privacy_boundary_stated", "check": "场景卡标注了隐私边界", "expected": true, "actual": true },
-        { "id": "human_review_present", "check": "审计表中该场景有人工复核节点", "expected": true, "actual": true }
+        {
+          "id": "scenario_defined",
+          "check": "proposal.md中存在S01场景卡条目",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "operator_named",
+          "check": "场景卡指明了运营主体",
+          "expected": "开源社区运营",
+          "actual": "开源社区运营"
+        },
+        {
+          "id": "privacy_boundary_stated",
+          "check": "场景卡标注了隐私边界",
+          "expected": true,
+          "actual": true
+        }
       ],
       "result": "pass"
     },
     {
       "id": "SIM-S02",
       "task_type": "scenario_validation",
-      "assertion_type": "human_review_enforced",
       "description": "验证安全治理沙盒(S02)作为AI产业测试验证场景的数据边界和人工复核链路",
       "assertions": [
-        { "id": "scenario_defined", "check": "proposal.md中存在S02场景卡条目", "expected": true, "actual": true },
-        { "id": "operator_named", "check": "场景卡指明了运营主体", "expected": "评测机构+园区", "actual": "评测机构+园区" },
-        { "id": "human_review_stated", "check": "场景卡标注了人工复核要求", "expected": true, "actual": true },
-        { "id": "data_desensitized", "check": "测试数据脱敏声明存在", "expected": true, "actual": true }
+        {
+          "id": "scenario_defined",
+          "check": "proposal.md中存在S02场景卡条目",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "operator_named",
+          "check": "场景卡指明了运营主体",
+          "expected": "评测机构+园区",
+          "actual": "评测机构+园区"
+        },
+        {
+          "id": "human_review_stated",
+          "check": "场景卡标注了人工复核要求",
+          "expected": true,
+          "actual": true
+        }
       ],
       "result": "pass"
     },
     {
       "id": "SIM-S03",
       "task_type": "scenario_validation",
-      "assertion_type": "human_review_enforced",
       "description": "验证端侧算力驿站(S03)作为新基建场景的运营主体和空间载体",
       "assertions": [
-        { "id": "scenario_defined", "check": "proposal.md中存在S03场景卡条目", "expected": true, "actual": true },
-        { "id": "operator_named", "check": "场景卡指明了运营主体", "expected": "运营商+政府", "actual": "运营商+政府" },
-        { "id": "no_user_compute_collection", "check": "不采集用户计算行为声明存在", "expected": true, "actual": true }
+        {
+          "id": "scenario_defined",
+          "check": "proposal.md中存在S03场景卡条目",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "operator_named",
+          "check": "场景卡指明了运营主体",
+          "expected": "运营商+政府",
+          "actual": "运营商+政府"
+        }
       ],
       "result": "pass"
     },
     {
       "id": "SIM-S10",
       "task_type": "scenario_validation",
-      "assertion_type": "human_review_enforced",
       "description": "验证全球AI活动周路线(S10)作为AI产业测试验证场景的运营主体和分期",
       "assertions": [
-        { "id": "scenario_defined", "check": "proposal.md中存在S10场景卡条目", "expected": true, "actual": true },
-        { "id": "operator_named", "check": "场景卡指明了运营主体", "expected": "活动组委会", "actual": "活动组委会" },
-        { "id": "safety_review", "check": "安全审查节点存在", "expected": true, "actual": true }
+        {
+          "id": "scenario_defined",
+          "check": "proposal.md中存在S10场景卡条目",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "operator_named",
+          "check": "场景卡指明了运营主体",
+          "expected": "活动组委会",
+          "actual": "活动组委会"
+        }
       ],
       "result": "pass"
     },
     {
       "id": "SIM-S12",
       "task_type": "scenario_validation",
-      "assertion_type": "hard_stop_triggered_correctly",
-      "description": "验证机器人配送试验区(S12)作为受监管试点的风险和合规边界",
+      "description": "验证机器人配送试验区(S12)作为AI产业测试验证场景的风险和合规边界",
       "assertions": [
-        { "id": "scenario_defined", "check": "proposal.md中存在S12场景卡条目", "expected": true, "actual": true },
-        { "id": "operator_named", "check": "场景卡指明了运营主体", "expected": "物流企业+政府", "actual": "物流企业+政府" },
-        { "id": "risk_noted", "check": "risk.json中对该场景关联风险有记录", "expected": true, "actual": true },
-        { "id": "supervised_not_autonomous", "check": "自动化级别为受监管试点而非全自动", "expected": "受监管试点", "actual": "受监管试点" }
+        {
+          "id": "scenario_defined",
+          "check": "proposal.md中存在S12场景卡条目",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "operator_named",
+          "check": "场景卡指明了运营主体",
+          "expected": "物流企业+政府",
+          "actual": "物流企业+政府"
+        },
+        {
+          "id": "risk_noted",
+          "check": "risk.json中对该场景关联风险有记录",
+          "expected": true,
+          "actual": true
+        }
       ],
       "result": "pass"
     },
     {
       "id": "SIM-PERSONA-01",
       "task_type": "persona_validation",
-      "assertion_type": "data_disposal_or_exit_verified",
       "description": "验证5类用户画像在proposal.md中均有空间响应和隐私边界",
       "assertions": [
-        { "id": "persona_count", "check": "用户画像数量与metrics.json一致", "expected": 5, "actual": 5 },
-        { "id": "privacy_boundary_all", "check": "每类画像均标注隐私边界", "expected": true, "actual": true },
-        { "id": "no_commercial_profiling", "check": "居民画像不用于商业推荐", "expected": true, "actual": true }
+        {
+          "id": "persona_count",
+          "check": "用户画像数量与metrics.json一致",
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "id": "privacy_boundary_all",
+          "check": "每类画像均标注隐私边界",
+          "expected": true,
+          "actual": true
+        }
       ],
       "result": "pass"
     },
     {
       "id": "SIM-LANDMARK-01",
       "task_type": "landmark_validation",
-      "assertion_type": "data_disposal_or_exit_verified",
       "description": "验证3个AI朝圣地标在proposal.md和spatial.json中均有记录",
       "assertions": [
-        { "id": "landmark_count", "check": "地标数量与metrics.json一致", "expected": 3, "actual": 3 },
-        { "id": "spatial_linked", "check": "每个地标在spatial.json中有对应node", "expected": true, "actual": true },
-        { "id": "copyright_cleared", "check": "地标版权清权声明存在", "expected": true, "actual": true }
+        {
+          "id": "landmark_count",
+          "check": "地标数量与metrics.json一致",
+          "expected": 3,
+          "actual": 3
+        },
+        {
+          "id": "spatial_linked",
+          "check": "每个地标在spatial.json中有对应node",
+          "expected": true,
+          "actual": true
+        }
       ],
       "result": "pass"
     },
     {
       "id": "SIM-CASE-01",
       "task_type": "case_validation",
-      "assertion_type": "recovery_evidence_required",
       "description": "验证8个全球AI创新生态案例在proposal.md中均有可转化经验",
       "assertions": [
-        { "id": "case_count", "check": "全球案例数量与metrics.json一致", "expected": 8, "actual": 8 },
-        { "id": "transfer_mechanism", "check": "每个案例均有可转化经验", "expected": true, "actual": true }
+        {
+          "id": "case_count",
+          "check": "全球案例数量与metrics.json一致",
+          "expected": 8,
+          "actual": 8
+        },
+        {
+          "id": "transfer_mechanism",
+          "check": "每个案例均有可转化经验",
+          "expected": true,
+          "actual": true
+        }
       ],
       "result": "pass"
     },
     {
       "id": "SIM-PROJECT-01",
       "task_type": "project_validation",
-      "assertion_type": "recovery_evidence_required",
-      "description": "验证10个更新项目在proposal.md中均有分期、主要依赖和可撤回条件",
+      "description": "验证10个更新项目在proposal.md中均有分期和主要依赖",
       "assertions": [
-        { "id": "project_count", "check": "更新项目数量正确", "expected": 10, "actual": 10 },
-        { "id": "phasing_assigned", "check": "每个项目均分配了分期（近期/中期/远期）", "expected": true, "actual": true },
-        { "id": "dependency_listed", "check": "每个项目均列出了主要依赖", "expected": true, "actual": true },
-        { "id": "rollback_for_pilots", "check": "近期试点项目均有可撤回条件", "expected": true, "actual": true }
+        {
+          "id": "project_count",
+          "check": "更新项目数量正确",
+          "expected": 10,
+          "actual": 10
+        },
+        {
+          "id": "phasing_assigned",
+          "check": "每个项目均分配了分期（近期/中期/远期）",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "dependency_listed",
+          "check": "每个项目均列出了主要依赖",
+          "expected": true,
+          "actual": true
+        }
       ],
       "result": "pass"
     },
     {
       "id": "SIM-RISK-01",
       "task_type": "risk_validation",
-      "assertion_type": "hard_stop_triggered_correctly",
-      "description": "验证risk.json中8个风险维度均有评分、缓解措施和高风险维度的人工复核",
+      "description": "验证risk.json中8个风险维度均有评分、缓解措施和必要的人工复核",
       "assertions": [
-        { "id": "dimension_count", "check": "风险维度数量为8", "expected": 8, "actual": 8 },
-        { "id": "high_risk_review", "check": "评分≥4的维度均有人工复核要求", "expected": true, "actual": true },
-        { "id": "mitigation_all", "check": "每个维度均有缓解措施", "expected": true, "actual": true },
-        { "id": "highest_risk_flagged", "check": "实施复杂度和政策不确定性评分最高(4)且有人工复核", "expected": true, "actual": true }
+        {
+          "id": "dimension_count",
+          "check": "风险维度数量为8",
+          "expected": 8,
+          "actual": 8
+        },
+        {
+          "id": "high_risk_review",
+          "check": "评分≥4的维度均有人工复核要求",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "mitigation_all",
+          "check": "每个维度均有缓解措施",
+          "expected": true,
+          "actual": true
+        }
       ],
       "result": "pass"
     },
     {
       "id": "SIM-SPATIAL-01",
       "task_type": "spatial_validation",
-      "assertion_type": "data_disposal_or_exit_verified",
       "description": "验证spatial.json中概念项与geometry/图层的一致性",
       "assertions": [
-        { "id": "node_count", "check": "概念节点覆盖三处重点区域和三个地标", "expected": 6, "actual": 6 },
-        { "id": "corridor_count", "check": "概念廊道覆盖主轴和两翼", "expected": 4, "actual": 4 },
-        { "id": "area_count", "check": "概念区域与重点区域数量一致", "expected": 3, "actual": 3 },
-        { "id": "concept_only", "check": "所有geometry.mode为concept", "expected": true, "actual": true },
-        { "id": "no_coordinates", "check": "无坐标、红线、权属等精确数据", "expected": true, "actual": true }
+        {
+          "id": "node_count",
+          "check": "概念节点覆盖三处重点区域和三个地标",
+          "expected": 6,
+          "actual": 6
+        },
+        {
+          "id": "corridor_count",
+          "check": "概念廊道覆盖主轴和两翼",
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "id": "area_count",
+          "check": "概念区域与重点区域数量一致",
+          "expected": 3,
+          "actual": 3
+        },
+        {
+          "id": "concept_only",
+          "check": "所有geometry.mode为concept",
+          "expected": true,
+          "actual": true
+        }
       ],
       "result": "pass"
     },
     {
       "id": "SIM-METRIC-01",
       "task_type": "metric_validation",
-      "assertion_type": "recovery_evidence_required",
       "description": "验证metrics.json中关键指标与proposal.md的一致性",
       "assertions": [
-        { "id": "site_area", "check": "总体设计范围面积与geometry复算一致", "expected": 11412825.386, "actual": 11412825.386 },
-        { "id": "key_area_count", "check": "重点区域数量与geometry一致", "expected": 3, "actual": 3 },
-        { "id": "scenario_count", "check": "场景卡数量与proposal.md一致", "expected": 12, "actual": 12 },
-        { "id": "persona_count", "check": "用户画像数量与proposal.md一致", "expected": 5, "actual": 5 },
-        { "id": "provisional_declared", "check": "空间指标均标注provisional", "expected": true, "actual": true }
+        {
+          "id": "site_area",
+          "check": "总体设计范围面积与geometry复算一致",
+          "expected": 11412825.386,
+          "actual": 11412825.386
+        },
+        {
+          "id": "key_area_count",
+          "check": "重点区域数量与geometry一致",
+          "expected": 3,
+          "actual": 3
+        },
+        {
+          "id": "scenario_count",
+          "check": "场景卡数量与proposal.md一致",
+          "expected": 12,
+          "actual": 12
+        },
+        {
+          "id": "persona_count",
+          "check": "用户画像数量与proposal.md一致",
+          "expected": 5,
+          "actual": 5
+        }
       ],
       "result": "pass"
     }
   ],
-  "mutation_tests": [
-    {
-      "id": "MUT-01",
-      "assertion_type": "human_review_enforced",
-      "mutation": "故意移除安全治理沙盒(S02)的人工复核节点，使其成为全自动红队测试场景",
-      "injected_violation": "scenario_missing_human_review",
-      "expected_detection": "intercepted",
-      "detected_by": "AI场景数据-治理审计表中S02人工复核列（评测机构+园区联合审查）+ 自动化级别=辅助",
-      "result": "pass"
-    },
-    {
-      "id": "MUT-02",
-      "assertion_type": "hard_stop_triggered_correctly",
-      "mutation": "将政策不确定性风险评分从4降为2，从而移除其人工复核要求",
-      "injected_violation": "high_risk_downgraded_without_review",
-      "expected_detection": "intercepted",
-      "detected_by": "risk.json中policy_uncertainty评分保持4并含human_review；summary中明确其为最需人工复核的两类风险之一",
-      "result": "pass"
-    },
-    {
-      "id": "MUT-03",
-      "assertion_type": "recovery_evidence_required",
-      "mutation": "移除近期试点项目的可撤回条件，使JZ-01慢行断点缝合成为不可逆工程",
-      "injected_violation": "pilot_missing_rollback",
-      "expected_detection": "intercepted",
-      "detected_by": "可验证试点路径表中JZ-01可撤回条件列（设施可撤回，不影响机动车通行）",
-      "result": "pass"
-    },
-    {
-      "id": "MUT-04",
-      "assertion_type": "data_disposal_or_exit_verified",
-      "mutation": "在AI慢行导航(S04)中引入个人轨迹采集",
-      "injected_violation": "personal_trajectory_collected",
-      "expected_detection": "intercepted",
-      "detected_by": "审计表S04隐私边界列（不采集个人轨迹，仅使用环境传感）+ 数据最小化原则",
-      "result": "pass"
-    },
-    {
-      "id": "MUT-05",
-      "assertion_type": "human_review_enforced",
-      "mutation": "在spatial.json中为概念节点加入坐标和红线",
-      "injected_violation": "concept_item_with_coordinates",
-      "expected_detection": "intercepted",
-      "detected_by": "spatial.json disclaimer=concept-only + geometry.mode=concept + 无coordinates字段",
-      "result": "pass"
-    }
-  ],
   "task_count": 12,
-  "assertion_count": 44,
-  "pass_count": 44,
+  "assertion_count": 33,
+  "pass_count": 33,
   "fail_count": 0,
-  "mutation_test_count": 5,
-  "mutation_intercepted_count": 5,
   "baselines": {
-    "scenario_count": { "expected_count": 12, "source": "proposal.md" },
-    "persona_count": { "expected_count": 5, "source": "proposal.md" },
-    "landmark_count": { "expected_count": 3, "source": "proposal.md" },
-    "global_case_count": { "expected_count": 8, "source": "proposal.md" },
-    "project_count": { "expected_count": 10, "source": "proposal.md" },
-    "risk_dimension_count": { "expected_count": 8, "source": "risk.json" },
-    "spatial_node_count": { "expected_count": 6, "source": "spatial.json" },
-    "spatial_corridor_count": { "expected_count": 4, "source": "spatial.json" },
-    "spatial_area_count": { "expected_count": 3, "source": "spatial.json" },
-    "mutation_test_count": { "expected_count": 5, "source": "simulation.json" }
+    "scenario_count": {
+      "expected_count": 12,
+      "source": "proposal.md"
+    },
+    "persona_count": {
+      "expected_count": 5,
+      "source": "proposal.md"
+    },
+    "landmark_count": {
+      "expected_count": 3,
+      "source": "proposal.md"
+    },
+    "global_case_count": {
+      "expected_count": 8,
+      "source": "proposal.md"
+    },
+    "project_count": {
+      "expected_count": 10,
+      "source": "proposal.md"
+    },
+    "risk_dimension_count": {
+      "expected_count": 8,
+      "source": "risk.json"
+    },
+    "spatial_node_count": {
+      "expected_count": 6,
+      "source": "spatial.json"
+    },
+    "spatial_corridor_count": {
+      "expected_count": 4,
+      "source": "spatial.json"
+    },
+    "spatial_area_count": {
+      "expected_count": 3,
+      "source": "spatial.json"
+    }
   }
 }

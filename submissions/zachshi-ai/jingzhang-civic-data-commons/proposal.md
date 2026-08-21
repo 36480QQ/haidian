@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把京张AI创新带重构为'数据即公共产品'的服务型城市脊梁：一脊（开放数据公共主轴）、三心（众智园数据工厂、AI原点社区服务客厅、大钟寺企业数据港）、多点（市民可参与的AI服务舱）。公共数据沿带开放，市民与开发者在共创节点上开发AI服务，数字平台与物理空间一体设计，形成可治理、可体验、可推广的数据公共带。"
 tracks: ["ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide"]
-iteration: "v6.0"
+iteration: "v5.0"
 ---
 
 # 京张AI数据公共带：人人共创的AI服务型城市脊梁
@@ -254,32 +254,6 @@ iteration: "v6.0"
 **规则闭合验证。** `run_timetable_tabletop.js` 对 12 行 × 6 条规则分支（完整/缺用途/缺复核人/缺保留期/超期未删/异议未答）共 72 个合成案例全部正确分类（36 阻断/12 可显示/24 标记），证明时刻表显示规则逻辑闭合——但仅证明分类正确，不构成数据授权、合规或实际使用证据，现场绩效仍为 null、状态 `not_authorized_not_run` [data:visual/assets/timetable-tabletop-evidence.json#blocked]。
 
 **与数据回执的关系。** 回执是"每一笔的记录"（管理侧），时刻表是"每一笔的公开"（公共侧）——回执保证数据使用有据可查，时刻表保证市民看得见、可质疑。两者共同构成"数据公共设施"的可见性闭环：**看不见的数据不是公共的，看得见且可质疑的数据才是** [source:public-data-policy]。
-
-### 元设计层：哲学层增强（本方案原创，v6）
-
-数据时刻表解决了"数据被看见"，数据回执解决了"数据使用有据可查"。本方案的元设计层进一步追问六个逻辑与哲学层的问题——每一个都不是外加判断，而是**照亮可见性透镜中已隐含的逻辑**。六个方向对应 `visual/assets/philosophy/` 下六件制品，每件都是透镜自身逻辑的显式化 [E:DATA-PHILOSOPHY-META]。
-
-**价值论层——价值交易表。** 可见性透镜已隐含价值排序，价值交易表把隐含的价值冲突显式化为"优先方向+代价" [data:visual/assets/philosophy/value-tradeoffs.json#tradeoffs]：
-
-| 价值冲突 | 优先 | 编码在 | 代价 |
-| --- | --- | --- | --- |
-| 可见 vs 便捷 | 可见 | 时刻表公示每笔使用，运营方须额外记录 | 运营成本增加 |
-| 可见 vs 隐私 | 隐私 | 时刻表公示脱敏，不显示个人记录 | 公示无法精确到个人级 |
-| 可见 vs 效率 | 可见 | 异议通道冗余，市民可质疑任何一行 | 异议处理成本 |
-
-代价被接受，因为优先方向是"公共性"的前提。
-
-**目的论层——在地必然性论证。** 论证数据时刻表为什么只能在京张发生——在地性从背景变成必要条件 [data:visual/assets/philosophy/site-necessity.json#necessity_arguments]：①"时刻表"公共记忆符号仅属于京张（自主建造第一条铁路的时刻表）；②京张是"数据公共带"的设计定位；③京张铁路的公共性靠"看得见"建立，数据时刻表延续这个可见性公共性传统。
-
-**现象学层——第一人称共情脚本。** 用第一人称脚本验证看见体验链路每步是否通顺——体验的工程验证，非营销叙事 [data:visual/assets/philosophy/first-person-scripts.json#scripts]。三个脚本（市民看见数据使用/市民质疑被受理/运营方诚实公示有利）各验证一条看见体验链路。
-
-**认识论层——认识论分级。** 每个主张分级描述/预测/规范，注明知识基础——对认知边界诚实 [data:visual/assets/philosophy/epistemic-grading.json#claim_grades]。
-
-**博弈论层——激励相容。** 机制设计核心：让"诚实公示"成为占优策略——数据提供方只有在有动机公示时才会真正公示 [data:visual/assets/philosophy/incentive-compatibility.json#incentive_mechanisms]。诚实公示获时段优先权、获"透明数据方"标识、公示后可被任何人核查使隐瞒不可能。
-
-**时间层——自更新协议。** 方案不是静态；定义当城市变化时可见性机制哪部分必须重算的触发协议 [data:visual/assets/philosophy/self-update-protocol.json#triggers]。数据类型变化→重算时刻表行定义；数据保护政策变化→重算脱敏规则；市民数据素养变化→重算呈现方式与异议通道设计。
-
-**六方向与可见性透镜的关系。** 六个方向都是透镜自身的逻辑延伸：价值表是透镜隐含的价值排序显式化，在地必然性是透镜的在地正当性，共情脚本是透镜可被体验的证明，认识论分级是透镜对自身认知边界的诚实，激励相容是透镜被遵守的机制保证，自更新是透镜对时间的诚实。六者共同把"公共性=可见性"从设计原则升级为价值、在地、体验、认知、激励、时间六维自洽的工程承诺 [depth:metrics_recalculation]。
 
 ### 开放数据政策路线图
 

@@ -4355,5 +4355,82 @@
       "rights_status": "not_fully_cleared",
       "independent_file_level_clearance_audits": 0
     }
+  },
+  "spatial_decision_frontstage_r54": {
+    "scope": "Editorial spatial-decision and publication repair only; no new direction, fact, geometry, metric, media, page, contract or maturity narrative.",
+    "pre_repair_red": [
+      {
+        "surface": "proposal",
+        "finding": "Reading-time and evidence-index metadata preceded the first explicit spatial decision.",
+        "finding_type": "editorial_spatial_cold_read_only"
+      },
+      {
+        "surface": "visual",
+        "finding": "Proof IDs and expert metadata preceded the ordinary-ground ruling.",
+        "finding_type": "editorial_spatial_cold_read_only"
+      },
+      {
+        "surface": "key-areas",
+        "finding": "The plans did not pair each rejected occupation with the kept spatial alternative.",
+        "finding_type": "editorial_spatial_cold_read_only"
+      },
+      {
+        "surface": "initial_round_54_pdf",
+        "finding": "Chinese audit labels rendered unsupported glyphs in the first local build and were repaired before commit.",
+        "finding_type": "editorial_publication_audit_only"
+      }
+    ],
+    "front_stage_answer": {
+      "common_ruling": "proof_may_not_take_ordinary_ground",
+      "zhongzhiyuan": "reject_crossing_keep_beside",
+      "origin_community": "reject_street_occupation_keep_courts_stepped_back",
+      "dazhongsi": "reject_blocked_centre_keep_service_off_route",
+      "failure": "proof_overlay_stops_ordinary_life_continues",
+      "recovery": "ordinary_ground_returns_before_recheck_not_authorization_approval_restart_or_g1"
+    },
+    "primary_navigation": [
+      "spatial-decision",
+      "ordinary-life",
+      "spatial-atlas",
+      "areas",
+      "four-state-motion",
+      "review-handoff"
+    ],
+    "publication_sync": {
+      "page_counts": {
+        "a3_zh": 14,
+        "a3_en": 14,
+        "a0_zh": 8,
+        "a0_en": 8
+      },
+      "two_fresh_processes_byte_identical": true,
+      "sha256": {
+        "a3_zh": "b32a01e57c5957ff971065d8a0e4b2e97684aabf7643fe32956e521296c4ffe8",
+        "a3_en": "2e5cda8b9eaf2041523eeb6a83882740cc2004b639a7f4b2aa256bfb03c5dcfe",
+        "a0_zh": "5dedb32876f357ecf4cebe5e9ffa3e2d31d721817a9da0f0a1857aa1814f0c69",
+        "a0_en": "c04800cdf762dcfbca209aa2858506c9d68d7f19560386c916bc3caf6df3b42b"
+      },
+      "full_page_qa": 44,
+      "qa_modes": [
+        "colour",
+        "grayscale",
+        "detail"
+      ],
+      "failure_count_after_repair": 0
+    },
+    "truth_boundary": {
+      "new_package_path": false,
+      "new_source": false,
+      "new_media": false,
+      "new_media_generation_model_call": false,
+      "new_fact_or_claim": false,
+      "field_observation": false,
+      "public_feedback": false,
+      "expert_opinion": false,
+      "official_geometry": false,
+      "planning_approval": false,
+      "rights_status": "not_fully_cleared",
+      "independent_file_level_clearance_audits": 0
+    }
   }
 }

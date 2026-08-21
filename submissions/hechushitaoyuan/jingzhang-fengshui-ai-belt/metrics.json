@@ -604,6 +604,32 @@
       "assumptions": [
         "演练由确定性脚本解析正文表格复算，逐项结果登记于 qi-protocol.json offline_drill.checks。"
       ]
+    },
+    "a11y_color_pair_count": {
+      "status": "known",
+      "value": 220,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/a11y-color-check.json"
+      ],
+      "formula": "4 vision conditions x 55 color pairs (11-color palette, pairwise)",
+      "confidence": "high",
+      "assumptions": [
+        "核验为确定性计算（Machado 2009 模拟 + CIEDE2000），方法在 sources.json SRC-A11Y-CHECK-V12 披露，可复算。"
+      ]
+    },
+    "a11y_color_pair_fail_count": {
+      "status": "known",
+      "value": 39,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/a11y-color-check.json"
+      ],
+      "formula": "count(pairs with simulated dE00 < 20): normal 5 + deuteranopia 10 + protanopia 13 + tritanopia 11",
+      "confidence": "high",
+      "assumptions": [
+        "例外不造成信息丢失：图件全部类别带文字冗余编码；整改说明见正文无障碍专节。"
+      ]
     }
   }
 }
