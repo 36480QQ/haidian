@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v1.7 - 2026-08-21
+
+P2-03 five-minute reviewer evidence spine / 五分钟评审证据脊柱
+
+- Baseline / 基线：从最新 `upstream/main` `9782df83a8f2a58ebe79823fe8001f18d129b975`（最后观察 `2026-08-21T21:14:57+08:00`）建立干净投稿分支 `codex/data-coop-line-p2-03-evidence-spine-20260821`。前次主控观察点 `b52bb75d8a0caba420454633a6c975ca06d58e4e` 至冻结点的 12 个提交、121 个路径仅涉及其他投稿，未触及本投稿、投稿 Skill、brief、schema、validator、helper 或门禁，因此判定与本轮无关，不为其制造图件、PDF 或 manifest churn。
+- Reason / 原因：PR #3676 已合并且 intake-only 评审为 86/100；P0 与 P1-01—P1-04 已闭环，但正文、结构化证据、离线 visual 和 PDF 的评审入口分散，主控 P2-03/G4 仍待完成。同行近期方案强化实施交接、角色和可审计证据，故本轮不改变方案方向，而把既有证据压缩为一条可在 300 秒内完成的可复核路径。
+- Before → After / 修正前后：评审者原需自行跨正文、台账、审计脚本、图件与 PDF 拼接权威边界、空间复算、MVP、现场控制和 fail-closed 演练；现新增唯一事实源 `visual/assets/reviewer-evidence-spine.json`（Spine ID `DATA-COOP-REVIEW-SPINE-01`，SHA-256 `966cd7eed4227078342f4bcd5aacf039438f7720a1049fcebe9a67413411e7ee`），固定 R1—R5 五步、总计 300 秒、12 个载体引用与每步“已验证 / 未证明”边界。
+- Verification spine / 评审脊柱：Node built-ins-only 只读审计 `visual/assets/reviewer-evidence-spine-audit.js` 同时核对五步时长、冻结 SHA、证据签名、空间指标、MVP 指标、现场包与演练台账哈希、manifest 登记、持久化自检状态及双语图尺寸；`--self-test` 删除末步后必须 fail-closed。脊柱审计与负向自测通过，证据一致性通过，site evidence 18/18、field operations 215/215、drill 21/21 及 8/8 负向夹具通过。
+- Carriers / 载体：中英 proposal 各新增首屏评审入口，派生报告 HTML 用冻结基线的最新 renderer 重新生成；双语离线 visual 新增脊柱区段；新增 2400×1500 双语信息图，PNG tEXt 写入 Spine ID、完整 hash、冻结 SHA 与 300 秒契约。四份 PDF 仅在首页前置对应脊柱页并写入同一组 Info 元数据；A0 中英既有页各 7/7、A3 中英既有页各 9/9 与冻结版本逐像素一致，全部 36 个当前页面已渲染检查，无裁切、重叠或乱码。
+- Gate discipline / 门禁纪律：所有载体完成后才执行 ready-package manifest refresh；refresh 清空 `self_checked` 后立即用冻结 main 的完整 self-check 重新取得状态，再运行 strict-manifest、preflight 与全部专项审计。最终状态以 `manifest.json` 与 `self_check.json` 为准，不回填旧结果、不运行 finalize。
+- Scope & boundary / 范围与边界：只修改 `submissions/dvd233/data-coop-line/`；GeoJSON、既有 metrics、来源、许可、证据签名、核心价值主张与方案方向均不变。评审脊柱只降低核验摩擦，不把概念指标、未观测现场条件、未分配主体、未签署许可或合成测试提升为实施事实；Issue #3571 的政策判断仍是非硬门禁依赖。
+
 ## v1.6 - 2026-08-21
 
 P1-04 Dazhongsi synthetic drill and failure tests / 大钟寺合成演练与失败测试
