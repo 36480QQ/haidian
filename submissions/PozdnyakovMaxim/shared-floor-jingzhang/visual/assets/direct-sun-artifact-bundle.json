@@ -1,10 +1,10 @@
 {
   "schema": "shared-floor-direct-sun-public-artifact-bundle/v1",
-  "run_id": "direct-sun-4a624a83d461",
-  "source_latest_sha256": "fe8981e2d333428625f50dafdf74ec6ede34325aef4fd515f8f1feb3e6bfc251",
+  "run_id": "direct-sun-001b993785eb",
+  "source_latest_sha256": "3fa79d7627eab0dcedbf3f030f4baf34dc972db77a5f6fd4e4f09a13df021d0a",
   "source_latest_encoding": "base64",
-  "source_latest_content_base64": "ewogICJidWlsZF9yZWNlaXB0X3NoYTI1NiI6ICJjM2Q2NjA2M2U1MDAwYmNhZmRiZjQ1MzU2N2Y3ODk5NTgxMzliMGExNjE1N2U5MTk2NDM1ZjYwZWU4MTMzYTY2IiwKICAicHJvdG90eXBlX3BheWxvYWRfc2hhMjU2IjogIjhkNGYwZTAzMzc5Mzk3M2NlZjkzZGEzYmEwZjFlYjM0YjhkOWQ3ZjU3NWI1MWFkNWE1NWUwZmRjZGFlODc4ODAiLAogICJydW5faWQiOiAiZGlyZWN0LXN1bi00YTYyNGE4M2Q0NjEiLAogICJydW5fcGF0aCI6ICJzdHVkaW8tcHJvamVjdHMvamluZ3poYW5nLXdvcmxkL2FuYWx5c2lzL2RpcmVjdC1zdW4tdjEvcnVucy9kaXJlY3Qtc3VuLTRhNjI0YTgzZDQ2MSIsCiAgInNjaGVtYV92ZXJzaW9uIjogImppbmd6aGFuZy1kaXJlY3Qtc3VuLWxhdGVzdC12MSIsCiAgInN0YXR1cyI6ICJwYXNzIgp9Cg==",
-  "source_build_receipt_sha256": "c3d66063e5000bcafdbf453567f789958139b0a16157e9196435f60ee8133a66",
+  "source_latest_content_base64": "ewogICJidWlsZF9yZWNlaXB0X3NoYTI1NiI6ICI5YTIyZmI1MzdjNmNiNTM0MWRlYWFlZjk5MDI2NzEzODMxYWM3OGI3ZjhjMDIzMjYyZWE2Y2JiZjJhZGUzODM0IiwKICAicHJvdG90eXBlX3BheWxvYWRfc2hhMjU2IjogIjhkNGYwZTAzMzc5Mzk3M2NlZjkzZGEzYmEwZjFlYjM0YjhkOWQ3ZjU3NWI1MWFkNWE1NWUwZmRjZGFlODc4ODAiLAogICJydW5faWQiOiAiZGlyZWN0LXN1bi0wMDFiOTkzNzg1ZWIiLAogICJydW5fcGF0aCI6ICJzdHVkaW8tcHJvamVjdHMvamluZ3poYW5nLXdvcmxkL2FuYWx5c2lzL2RpcmVjdC1zdW4tdjEvcnVucy9kaXJlY3Qtc3VuLTAwMWI5OTM3ODVlYiIsCiAgInNjaGVtYV92ZXJzaW9uIjogImppbmd6aGFuZy1kaXJlY3Qtc3VuLWxhdGVzdC12MSIsCiAgInN0YXR1cyI6ICJwYXNzIgp9Cg==",
+  "source_build_receipt_sha256": "9a22fb537c6cb5341deaaef99026713831ac78b7f8c023262ea6cbbf2ade3834",
   "source_build_receipt_staged_path": "visual/assets/direct-sun-build-receipt.json",
   "source_run_path_is_not_a_public_locator": true,
   "artifact_count": 11,
@@ -32,7 +32,7 @@
     },
     {
       "source_path": "input-receipt.json",
-      "sha256": "39604c3be633d6ee889093986a8b4f7bf12ae890a46ab37239a1c413f3f268d7",
+      "sha256": "60af21b6a43b7ce1cdf0353f2abe4855fe901d540291190c699ae33d7ccbe5c0",
       "size_bytes": 2652,
       "representation": "identity_file",
       "staged_path": "visual/assets/direct-sun-input-receipt.json"
@@ -46,7 +46,7 @@
     },
     {
       "source_path": "metrics.json",
-      "sha256": "db685560bece312dcc7ce171c2d104f6f5b26630eb3a6a0d6413a2e90a5099ff",
+      "sha256": "ff1c0cf3dbe29ce62b8a643d507fa5da17050720a01659b21b21de498b9980d9",
       "size_bytes": 19021,
       "representation": "identity_file",
       "staged_path": "visual/assets/direct-sun-metrics.json"
