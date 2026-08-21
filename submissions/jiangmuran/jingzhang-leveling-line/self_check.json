@@ -171,7 +171,7 @@
       "target": "proposal.md, report/, assumptions.json",
       "source": "package-provided",
       "what_it_holds_en": "Every census-derived number in the prose must equal the shipped census.",
-      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 929)"
+      "message": "正文所述语料读数与随包 JSON 是否一致 — census claims: 9 facts in both editions and 14 context patterns (17 occurrence(s) constrained) across 8 shipped files, all current (corpus 935)"
     },
     {
       "check_id": "PKG_CENSUS_CURRENCY_QA",
@@ -252,7 +252,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A containment share may not be written as a share *of* the container.",
-      "message": "containment_wording_qa.py — containment wording: the dictionary entries that state this relation render it as containment, and 56 English surface(s) read — both editions, both visual pages, and every built drawing and composed page — and none states a containment share as a share of research area, design area, key area or the park. Those percentages are how much of the surveyed park falls inside a boundary, which this package writes as 'in' or 'contained in'. Chinese is not read here: 吻合 and 相交 already name the relation, and this does not judge translation quality elsewhere"
+      "message": "containment_wording_qa.py — containment wording: the dictionary entries that state this relation render it as containment, and 56 English surface(s) read — both editions, both visual pages, and every built drawing and composed page — and none states a containment share as a share of research area, design area, key area or the park. Those percentages are how much of the surveyed park falls inside a boundary, which this package writes as 'in' or 'contained in' - and never as agreement, which is the same claim in politer words and is what this gate used to read past. Scope: the relation is checked wherever English states it and in every dictionary entry that carries it; it does not judge translation quality elsewhere"
     },
     {
       "check_id": "PKG_DECLARED_GEOMETRY_QA",
@@ -504,7 +504,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The intake caps, enforced where a mutation can reach them.",
-      "message": "intake_limits_qa.py — intake limits: 61 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 15 bytes to spare. The package totals 30.2 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 61 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 27 bytes to spare. The package totals 30.2 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_INTERNED_RENDER_QA",
@@ -603,7 +603,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A sentence stating a number a shipped record holds must point at that record.",
-      "message": "metric_citation_qa.py — metric citations: 39 sentence(s) joined to metrics.json by value and pointing at it, 17 numeric collision(s) published with the reason each is not a citation, 0 deferred against 15 bytes of English headroom (they cost 0, and this check fails when there is room)"
+      "message": "metric_citation_qa.py — metric citations: 39 sentence(s) joined to metrics.json by value and pointing at it, 16 numeric collision(s) published with the reason each is not a citation, 0 deferred against 27 bytes of English headroom (they cost 0, and this check fails when there is room)"
     },
     {
       "check_id": "PKG_METRIC_CLASS_PROSE_QA",
@@ -1062,7 +1062,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "No past corpus size may sit in hand-written prose as if it were current.",
-      "message": "stale_corpus_qa.py — stale corpus sizes: none — 23 superseded readings (184–927) appear only inside generated blocks or sentences that declare them historical; the prose is at 929"
+      "message": "stale_corpus_qa.py — stale corpus sizes: none — 24 superseded readings (184–929) appear only inside generated blocks or sentences that declare them historical; the prose is at 935"
     },
     {
       "check_id": "PKG_STANDARD_CLAUSE_QA",
@@ -1143,7 +1143,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "One Chinese term, one English wording — across all three translation tables.",
-      "message": "term_consistency_qa.py — term consistency: 1793 distinct Chinese terms across i18n_en 665, i18n_drawings 797, i18n_html 357; 26 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 0 declared exception(s), each still in use; and 7 term(s) written inside sentences rather than as keys keep one English word across 53 uses; and 78 mention(s) of the three key areas each spell the name exactly as an organiser file publishes it, with no spacing variant of our own"
+      "message": "term_consistency_qa.py — term consistency: 1792 distinct Chinese terms across i18n_en 665, i18n_drawings 797, i18n_html 357; 27 of them are translated in more than one table and every one uses the same English wording (case and punctuation aside), with 0 declared exception(s), each still in use; and 7 term(s) written inside sentences rather than as keys keep one English word across 53 uses; and 78 mention(s) of the three key areas each spell the name exactly as an organiser file publishes it, with no spacing variant of our own"
     },
     {
       "check_id": "PKG_TRACK_RANK_QA",
@@ -1430,7 +1430,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31567695,
+      "total_bytes": 31571971,
       "maintainer_bypass": false
     },
     "stderr": ""
