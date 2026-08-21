@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "公共十字永远不断线，AI只进入一侧可逆试验湾；越线方案公开淘汰，当前实施门为G0 NO-GO。"
+summary: "把不牺牲公共路径建成可进入、可维护、可关闭、可恢复的公共十字；当前实施门仍为G0 NO-GO。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterprise-service-copilot", "robot-delivery-low-speed"]
 ---
@@ -14,17 +14,17 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterpris
 # 京张双答 / JING-ZHANG TWO ANSWERS
 
 
-> **不断线的公共十字 / THE UNBROKEN PUBLIC CROSS。** 普通服务先成立，AI 只进入一侧可逆试验湾；任何会切断公共路线、侵占消防或撤场路径的备选都必须被公开淘汰。后台几何审计仍称“城市采纳编译器”，但首屏只展示一个可进入、可暂停、可恢复的城市空间。[data:visual/assets/v14-spatial-model.json] [data:visual/assets/spatial-decision.json]
+> **可建造的公共十字 / BUILDABLE CIVIC CROSS。** 把“不牺牲公共路径”建成一段可进入、可维护、可关闭、可恢复的城市空间：公共十字和人工服务先独立成立，AI 只进入一侧可逆试验湾，所有决定留在可见的回执廊。[data:visual/assets/prototype-model.json] [data:visual/assets/spatial-decision.json]
 
-公开资料能够确认京张铁路遗址公园、轨道、道路、水系与公园的方向性关系，却不能确认大钟寺现状建筑界面：2026-08-13 的 OSM 裁切在该范围仅含 1 个建筑要素。因此 V14 不虚构站口或沿街建筑，而以“公开数据缺测”作为设计前置条件；所有尺寸仍是待测绘复核的原型假设。[data:visual/assets/context-open-map.json] [source:OPENSTREETMAP-CONTEXT-20260813]
+同一建筑—地面系统包含五个可定位部分：全天公共十字、单侧试验湾、有人值守的回执廊、蓝绿边界和独立维护后场。统一模型同时生成 1:5000 城市联系、1:2000 总平面、1:500 场地与建筑平面、两道 1:200 剖面、1:50 门廊节点和三项 1:20 原型详图。尺寸均为待测绘、结构、消防、基础和耐久复核的设计假设。[data:visual/assets/prototype-model.json] [depth:three_key_area_detailed_design]
 
-同一任务、同一用户、同一场地接受同一组硬门后，ALT-A 中央混合湾因切断公共十字被 **REJECT**，ALT-B 因监督与撤场碎片化被 **REVISE**，ALT-C 单侧可逆湾进入深化。ALT-C 将全天公共十字、东南试验湾、西南人工回执廊和双侧蓝绿边界画进同一张 1:500 平面与 1:200 剖面。[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count] [metric:advanced_spatial_alternative_count]
+材料家族采用螺栓连接镀锌钢框架、穿孔金属遮阳屏、干式预制压重基础、透水预制铺装和可更换证据面板。永久公共层先建；可拆 AI 插件在许可齐全后装配；试验停止时设备沿独立后勤线撤出，门廊继续作为人工公共服务。[metric:architectural_prototype_count] [metric:material_system_count] [metric:architectural_detail_count]
 
-**当前实施决定是 G0 NO-GO。** 设计文件已形成，但精确测绘、权属、八类许可、四个独立岗位和连续 7 日普通服务基线均未完成；当前关闭许可为 0/8、已记录基线为 0/7 日，因此 AI 试验不得开始。这个 no-go 是可实施性的诚实起点，不是失败。[data:visual/assets/e2-readiness.json] [metric:current_trial_open_gate_count] [metric:pending_trial_permit_count]
+ALT-A 因切断公共十字被 **REJECT**，ALT-B 因监督、消防与撤场碎片化被 **REVISE**，ALT-C 单侧可逆湾进入建筑深化。空间裁决只回答“为什么选择”；十二份测量契约回答“建成后如何验证”。两者均不冒充现场结果。[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count] [metric:advanced_spatial_alternative_count]
 
-六项任务各有独立入口：Agent 1 见区域能力交换；Agent 2 见首层界面和公共基线；Agent 3 见十二场景与三份英雄契约；Agent 4 见验真环、共译门、回执廊；Agent 5 见京张文化里程与双语触觉识别；Agent 6 见一天运行、90 天试点和城市采纳年。现场决定仍只允许人类委员会作出 `adopt / revise / stop`。[depth:three_level_scope_framework] [depth:three_key_area_detailed_design]
+**当前实施决定仍是 G0 NO-GO。** 精确测绘、权属、八类许可、四个独立岗位和连续 7 日普通服务基线尚未完成；当前关闭许可 0/8、基线 0/7 日，AI 试验不得开始。[data:visual/assets/e2-readiness.json] [metric:current_trial_open_gate_count] [metric:pending_trial_permit_count]
 
-![总体双答结构](assets/figures/site-overview.png)
+![总体城市设计与三座建筑地标](assets/figures/site-overview.png)
 
 <!-- V11_DECISION_START -->
 ## 一次真正的空间裁决
@@ -62,7 +62,9 @@ ALT-C 同时把最远急停—人工岗位距离控制为 24.3 米的原型假�
 
 北京市政府公开的中关村创新史用于说明“试验—转化—共享”的文化线索；大钟寺轨道背景仅作方向性接口。它们均不证明精确站口、建筑、红线或权属。[source:ZHONGGUANCUN-HISTORY-OFFICIAL] [source:DAZHONGSI-LINE13-CONTEXT]
 
-设计证据明确分为三类：**已知设计**是可复算的几何、数量与文档覆盖；**合成验证**是规则驱动的 84 项桌面用例；**现场未知**包括客流、安全表现、效率、满意度、能耗、成本和恢复时长。合成验证记录输入哈希、规则版本、预期/实际状态、责任触发和恢复出口，但不产生机构合作、投资、许可或现场绩效结论。[data:visual/assets/tabletop-results.json] [metric:field_verification_result_count] [depth:existing_conditions_diagnosis]
+设计证据明确分为三类：**已知设计**是可复算的几何、数量与文档覆盖；**合成验证**是规则驱动的桌面用例；**现场未知**包括客流、安全表现、效率、满意度、能耗、成本和恢复时长。[depth:existing_conditions_diagnosis]
+
+84 项合成验证记录输入哈希、规则版本、预期/实际状态、责任触发和恢复出口，但不产生机构合作、投资、许可或现场绩效结论。[data:visual/assets/tabletop-results.json] [metric:synthetic_design_verification_case_count] [metric:field_verification_result_count]
 
 ## 三层范围工作框架
 
@@ -126,6 +128,8 @@ S7 的普通公共十字和人工服务必须先完成测绘与 7 个连续运�
 
 三座地标继续采用不同空间原型：众智园验真环以完整公共旁路包围受控内环；AI 原点共译门以三条无账户路线穿过人工服务与复核后台；大钟寺回执廊以公共十字、单侧试验湾和人工证据门廊构成旗舰样机。三张体验图均为严格对应构件关系的概念生成图，不承担现状、尺度或绩效证明。
 
+![三座建筑地标平面—剖面—轴测对照](assets/figures/key-areas.png)
+
 ## 总体设计：用地更新、慢行蓝绿与公共基线
 
 更新遵循“基线—首层—包络”顺序：0 级先完成路口、坡道、触觉、照明、遮阴、座椅、饮水和人工服务；1 级开放存量首层为评测、转译、公共服务与夜班运维界面；2 级才在专业调查后决定保留、改造或新建。三个建筑 polygon 只是适应性更新包络，不代表现状建筑或拆改结论。[data:geometry/buildings.geojson#BLDG-001] [depth:retain_renovate_demolish]
@@ -136,39 +140,32 @@ S7 的普通公共十字和人工服务必须先完成测绘与 7 个连续运�
 
 ## 重点区域详细设计
 
-![三处重点区：平面、剖面与运营](assets/figures/key-areas.png)
+### 建筑家族：环、门、廊
 
-**众智园·验真环 / Verification Ring**以“围合测试环 + 完整旁路 + 人工安全台 + 可拆机柜带”组织 T1—T3。机器人不进入连续公共基线，评测结果分公开/受限层，端侧设备先做断网和降级演练。外圈公共旁路与内圈试验状态共同形成可辨认地标；荣誉界面只展示任务、证据等级、失败原因、决定和复核日期，不做企业广告排名。[data:geometry/public_space.geojson#PUBLIC-001] [data:visual/assets/spatial-atlas.json]
+三座地标共享 **MAT-01–05** 干式材料家族和“公共基线 / AI 插件 / 证据界面”语法，却采用不可混淆的平面和剖面。[data:visual/assets/prototype-model.json]
 
-英雄场景 T2 把 B01 公共旁路、A01 4.0 m 受控环、1.5 m 建议安全缓冲、E02 急停视线、两处人工岗位和设备撤场通道画在同一张 1:500 详图与 1:200 剖面上。上述尺寸只代表待复核的原型设计建议；任何人进入缓冲区、连续两次近失误或急停失效均是零容忍停止事件。[data:visual/assets/two-answers.json#SCN-002]
+- **众智园·验真环（T2）**：全天公共旁路围绕受控测试庭；观察廊、安全台、失败公示和东侧设备退出口在 1:500 平面与 1:200 剖面中对位。关闭测试庭后，公共外环和观察廊继续运行。
+- **AI 原点·共译门（S2）**：三条无账户穿行线穿过人工双语台、等候界面和复核后台；可关闭插件墙由后勤带维护。夜间关闭插件后，静态导视和人工窗口仍成立。
+- **大钟寺·回执廊（S7）**：公共十字、单侧试验湾、有人值守门廊、蓝绿边界与维护后场组成完整建筑—地面系统；公共路线、消防和撤场互不占用。
 
-![众智园能力验证庭：围合测试环、完整旁路与运维院](assets/figures/station-zhongzhiyuan.png)
+### 大钟寺旗舰样板：五级尺度
 
-**AI 原点·共译门 / Translation Gate**以“三条无账户穿行路径 + 人工窗口 + 共创桌 + 可关闭插件墙”组织 S1—S3。企业、人才、社区使用同一排队和人工接管规则；门形公共界面在 AI 关闭时仍提供静态双语服务；高风险事项只做导航和转介，不自动作出专业决定。[data:geometry/public_space.geojson#PUBLIC-002] [data:visual/assets/spatial-atlas.json]
+**1:5000 / 1:2000** 只判断轨道、公园、道路和四象限方向性接口；公开快照在大钟寺仅含一个建筑要素，缺测处统一标为“适配界面 / 待调查带”，不补画虚构建筑。[data:visual/assets/context-open-map.json] [source:OPENSTREETMAP-CONTEXT-20260813]
 
-英雄场景 S2 将三条无门槛穿行线、双语人工抵达台、可关闭服务终端、专业复核后台和最近人工升级路径叠合；AI 关闭时纸质地图、静态导视、电话预约和人工接待仍完成同一抵达任务。[data:visual/assets/two-answers.json#SCN-005]
+**1:500 平面**直接绘出路缘、四处坡道、两条触觉路线、透水铺装、树池、雨水花园、候车与遮阴、回执廊、双急停、控制亭、设备接口、消防线和独立撤场线。门廊后侧 2.4 米维护带连接控制、存储、维护和废弃物空间。[data:visual/assets/prototype-model.json]
 
-![AI 原点公共转译厅：可穿行大厅与三类人工服务](assets/figures/station-ai-origin.png)
+**1:200 两道剖面**分别穿过公共路径—缓冲—试验湾和回执廊—公共十字—蓝绿边界，验证净高、遮阴、视线、雨水边缘和人机分离的相对关系；它们不是施工图。[metric:architectural_section_count]
 
-**大钟寺·回执廊 / Receipt Porch**是旗舰样板，以“公共十字 + 常规接驳 + 东南可逆试验湾 + 西南证据门廊 + 蓝绿边界”组织 S7—S9。OSM 只能支持方向性城市联系，不能确认精确站口或完整建筑界面；四个入口是待核验的方向性接口，南侧缺测带也被直接披露。AI 只进入东南试验湾，门廊集中人工服务、运行状态、申诉与采纳决定，撤场后场地恢复为候车、短停或公共活动面。[data:geometry/public_space.geojson#V7-D-FORECOURT] [data:geometry/public_space.geojson#V7-D-NODATA]
+**1:50 / 1:20 节点**记录三类可逆连接：螺栓钢框架与压重基础、触觉路线外侧的可拆隔离、可更换证据牌与临电接口、齐平透水路缘与雨水花园溢流。结构尺寸、防火等级、抗风、排水能力和耐久年限均待专业计算。[metric:architectural_detail_count]
 
-英雄场景 S7 将两条 4.0m 原型公共路线、0.4m 触觉引导、两处路缘坡道、常规接驳、双侧候车与遮阴、雨水花园、独立低速湾、证据门廊、安全缓冲、疏散面、人工岗位和存储撤场线并置。所有尺寸是待复核的设计假设，只用于明确“普通路线不穿过试验边界”的空间关系。[data:geometry/roads.geojson#V7-D-TACTILE-NS] [data:geometry/buildings.geojson#V7-D-PORCH]
+### 装配、维护与四态
 
-四态运行直接改变空间：`OPEN` 开放公共十字、常规接驳、服务亭和证据门廊；`TRIAL` 才激活东南试验湾、缓冲、试验岗位和双急停；`PAUSE` 关闭 AI 边界、人工完成任务并保持公共十字开放；`RETIRE` 沿服务撤场线将设备移入存储或返还供应商，试验湾恢复普通用途。证据门廊在四态中持续提供状态、申诉和退出公告。[data:visual/assets/spatial-atlas.json] [data:geometry/buildings.geojson#V7-D-STORAGE]
+- **OPEN**：普通接驳、公共十字、遮阴候车和人工门廊独立运行。
+- **TRIAL**：八类许可、四岗位和七日普通基线齐全后，仅开启单侧试验湾。
+- **PAUSE**：双急停切断设备，安全负责人接管，公众路线保持不变。
+- **RETIRE**：拆除插件和隔离，铺装抬起复位，设备沿东侧撤场，证据面板保留复盘。
 
-S7 的测量分母预先写清但结果保持未知：E2 普通原型建成后，每种模式连续记录 100 次符合准入条件的通行，并按高峰/平峰、昼/夜、天气和辅助需求分层；严重碰撞、人员进入缓冲、急停失效、公共路线中断或人工接管超时均不需要等待样本量即可停止。AI 增量阈值只在 7 个连续运行日的普通基线完成后，由人类场景委员会登记。[metric:field_verification_result_count] [data:visual/assets/two-answers.json#SCN-010]
-
-运营 RACI 落到具体位置：资产代表负责前场、存储与恢复；普通服务人员驻证据门廊；AI 运营者只管理东南试验湾；安全负责人驻缓冲西缘并控制双急停；数据负责人维护人工、非识别事件台账；公众代表在门廊审阅申诉。`TRIAL` 时安全负责人不得与普通服务岗位由同一人兼任；任一适用许可或最低岗位缺失只能保持 `OPEN`。[data:geometry/buildings.geojson#V7-D-PORCH] [data:geometry/constraints.geojson#V7-D-STAFF-TRIAL]
-
-16 项原型包把可实施性拆成可复算数量：公共铺装、盲道、坡道、雨水花园、遮阴、座椅、饮水、照明、可拆围挡、双急停、状态牌、服务亭、控制亭、端侧机柜、人工计数和存储单元。每项登记数量公式、装配状态、维护责任和退役去向；单价与总价统一为 `pending_market_quote`，总价只保留“数量 × 正式询价”的公式。[metric:measurement_contract_count] [metric:field_verification_result_count]
-
-一天运行被固定为六步：开场检查；普通基线独立运行；许可齐全后开启受控试验；触发停止后人工接管；闭场对照记录；设备进入存储或供应商回收。恢复计时从停止指令发出开始，到人工完成普通任务且两条公共路线恢复开放为止；E2 演练前不预填达标值。[data:visual/assets/spatial-atlas.json]
-
-![大钟寺城市采用场：四象限联系、常规接驳与限时试验湾](assets/figures/station-dazhongsi.png)
-
-三处原型故意不共享同一平面母题：众智园以环形隔离和旁路解决人机安全；AI 原点以三条无门槛穿行线把服务嵌入公共大厅；大钟寺以四象限步行联系和独立时限湾保障常规交通优先。每处均把普通基线、AI 插件和证据界面落实为相互可见但不相互挟持的位置关系。[metric:key_area_count]
-
-S7 采用六项审查视图：1:5000 城市联系、1:2000 总平面、1:500 组件详图、1:200 剖面、1:50 装配节点和分层轴测；T2/S2 补齐各自关键局部，使“环、门、廊”不依赖标题辨认。比例均为原型建议，待测绘与官方底图复核。[data:visual/assets/spatial-atlas.json]
+90 天实施依次对应测绘核验、永久公共层、基线记录、限时插件和撤场复核；任何阶段的许可、岗位或普通服务失败都阻止进入下一阶段。数量可复算，单价与总价保持 **pending_market_quote**。[data:visual/assets/e2-readiness.json]
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -259,7 +256,7 @@ S7 另设 90 天最小试点：0—15 天核验测绘、权属、站口、消防
 
 `known design` 只包括可复算的文档与设计覆盖：12 个双答场景、3 座回执地标、4 个季节程序、16 项 S7 构件和空间对象；它不代表现场成效。[metric:paired_scenario_count] [metric:key_area_count] 
 
-`synthetic verification` 是 12×7=84 项规则演练，84/84 通过只说明准入、状态跃迁、停止、恢复和退役契约在给定输入下自洽；`field unknown` 包括服务完成率、安全表现、满意度、能耗、单价、总价、无障碍失败率和恢复时长，交互展显示“待现场基线 / 待正式询价”。[metric:measurement_contract_count]  [metric:field_verification_result_count]
+`synthetic verification` 是 12×7=84 项规则演练，84/84 通过只说明准入、状态跃迁、停止、恢复和退役契约在给定输入下自洽；`field unknown` 包括服务完成率、安全表现、满意度、能耗、单价、总价、无障碍失败率和恢复时长，交互展显示“待现场基线 / 待正式询价”。[metric:synthetic_design_verification_case_count] [metric:measurement_contract_count] [metric:field_verification_result_count]
 
 证据链为“任务问题 → 空间节点 → 重点区总平面 → 场景详图 → 典型剖面 → 普通/AI 两条路径 → 90 天试点 → 四季复核 → 最小数据 → 人工责任 → 共同指标 → 准入/停止 → 城市采纳回执 → adopt/revise/stop → 退出还场 → 公共知识归档”。回执和台账当前统一标记 `not_field_run / pending_field_evidence`，不把设计完成度误写成运行效果。公开界面不展示个人轨迹或未经核验的排名；模型输出不是采纳决定；`score_submission.py` 只作内部建议检查，不冒充正式评分。
 
