@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v1.8 - 2026-08-21
+
+### Review-agent evidence strengthening (benchmarked against top-scoring submissions)
+- Added a running mechanism threaded through the whole proposal — the "public circuit" (ask → approve → small-scale test → adjudicate → receipt → exit) as the shared operating charter for near-term pilots, mid-term construction, and long-term operations
+- Replaced the Policy Chain Alignment table with a Hard Mapping table: the three announcement positionings, five taskbook functions, and Three Areas/Two Wings each map to a spatial/operational answer, reviewable evidence, and an explicit "what it is not" boundary (addresses the perceived "policy stacking" that did not move the review score)
+- Rebuilt external regional coordination from a name list into a returnable responsibility chain ("input — output — responsibility/evidence") for Beiwei Community, Future Science City, Huairou Science City, Beijing E-Town, and the BTH network
+- Added a Scenario Minimum Operation Contract table: 7 scenario groups with spatial carrier, trigger/minimum data, responsibility and SLA, and non-AI equivalent/exit conditions
+- Upgraded the public interest section from descriptive safeguards to a "measure first, then promise" verifiable baseline (accessibility, app-free access, differential impact, complaints, privacy/clearance)
+- Added a Review-Visible Evidence Layer section: all 13 taskbook review dimensions return to one verifiable sentence with evidence locations
+- proposal.en.md synced with all five changes; self-check PASS
+
 ## v1.7 - 2026-08-20
 
 ### Visual presentation overhaul (5 figures + visual/index.html)
