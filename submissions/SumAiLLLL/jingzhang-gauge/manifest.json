@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-gauge",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "bb5b42e4daf29e524be4fb2ef53470efee3bcd78d0541cd72b45a9153b8a5376"
+      "sha256": "706ef3d975f34608820a8658076becac6727853bfb162f4f6413a42a8485a7ab"
     },
     {
       "path": "compliance_matrix.json",
