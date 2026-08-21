@@ -16,6 +16,31 @@ iteration: "v0.1"
 
 ## Design Basis and Source List
 
+### Design Method Statement
+
+This proposal adopts a "constraint-first" design method: it first lists all untouchable boundaries — heritage, provisional rough boundaries, data gaps, and the agent submission responsibility zones — and then finds the maximum public value in the remaining space. This method is the reverse of traditional planning's "fix the vision first, then fit the shoe to the foot"; it puts honesty before ambition [source:AGENT-TASKBOOK]. Constraints are not the enemy of creativity but its coordinate system; only after clearly knowing what cannot be done does "what can be done" become truly powerful.
+
+A second core method is **to write every design decision as a falsifiable proposition**. For example, "this belt should become a city operating system interface" is not a proposition; "every AI touchpoint deployed on this belt must be contestable by the public" is. The advantage of a proposition is that it can be tested: either the contestation channel exists and works, or it does not. This proposal tries to write all conclusions in the latter form, and writes the verification paths into the `verification` field of `assumptions.json#evidence_ledger`. The full 17 claims × 5 fields (source_ids / geometry_refs / metric_refs / assumption_ids / self_check_ids) audit ledger is in `assumptions.json#evidence_ledger`; reviewers can close the body text and read only that file and the corresponding JSON to complete a minimum-trust review independently [depth:existing_conditions_diagnosis].
+
+### Numbering System
+
+This proposal uses a unified numbering system throughout, so any conclusion can be traced back via numbering to its sources, geometry features, or metric entries: zones use Z1–Z3 / W1–W2, mechanisms use X01–X16, scenarios use S01–S12 (corresponding to SC-01 to SC-12), projects use R-01–R-12, landmarks use M1–M8, and components use K01–K12. The Chinese and English texts are rendered from the same data source, and their equivalence is machine-verifiable. The full iteration log (v0.1 → v2.1) is in `changelog.md`.
+
+### Six-Dimension Existing Conditions Diagnosis
+
+The existing-conditions diagnosis is built on six dimensions: ① linear accessibility of railway heritage ② spatial distribution of innovation actors ③ commuting and connection breakpoints ④ public space service blind spots ⑤ age and structure of building stock ⑥ placement possibilities for data and compute facilities [depth:existing_conditions_diagnosis]. The diagnostic conclusion is a single sentence: this corridor does not lack industrial density; what it lacks is **a city-experience interface that externalizes innovation activity** — R&D happens inside closed buildings, heritage lies behind fences, and the two never meet in the same public space. All spatial actions in this proposal aim to manufacture this interface. The table below writes each dimension's observation, inference, and triggered spatial action together, leaving no gap between diagnosis and design.
+
+| Dimension | Observation (provisional) | Inference | Triggered Spatial Action |
+| --- | --- | --- | --- |
+| Linear accessibility of railway heritage | Corridor N-S ~7 km, E-W average ~1.3 km, heritage spine continuous but lateral entry points sparse | Longitudinally accessible but laterally not; heritage becomes a "visible but unreachable" green belt | 8 ground-stitching needles, raising lateral entry density to walkable choice |
+| Spatial distribution of innovation actors | R&D in closed campuses and office buildings, street interface dominated by access controls and car drop-off | Innovation activity produces no street life; industrial density cannot translate to city experience | Each of the three key areas gets a free open reception hall, externalizing internal activity to the public interface |
+| Commuting and connection breakpoints | Road network ~59 km total, but last-mile breakpoints between rail stations and campuses | Pedestrians forced to detour or switch to cars; slow-traffic continuity fails at nodes | Low-speed connection points and continuous slow-traffic paths, closing breakpoints into walkable loops |
+| Public space service blind spots | Public space ~0.80% of site, unevenly distributed, some segments with no resting place within a 10-min walk | Resting behavior squeezed out; public space only serves through-flow | 12-type component library placed by service radius, turning "pass-through" into "stay" |
+| Age and structure of building stock | Existing building footprint ~58 ha, varied age and structure, no unified survey data | Cannot determine retain-renovate-demolish under data gap; any list is irresponsible | 4-step decision process: survey first, then disposition; the process itself is the deliverable |
+| Placement possibilities for data and compute facilities | Existing compute facilities mostly closed server rooms, no interface with public space | Compute's public-infrastructure attribute unexpressed | Compute viewing hall and data sunning field, making infrastructure status visible public information |
+
+A special note on the fifth dimension. The age and structure of building stock is the premise of retain-renovate-demolish judgment, and this material happens to fall within the organizer's data gap. The proposal **deliberately refuses to give a conclusion** here: no demolition list, no individual building disposition opinion, only the decision process and the list of required data. This is intentional blankness — under missing survey data, giving a demolition list appears more "complete" but actually transfers risk to subsequent implementers [depth:risk_missing_data].
+
 This proposal takes as its primary basis the *International Call for Prequalification for Urban Design of the Centennial Jingzhang AI Innovation Belt*, issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources [source:OFFICIAL-ANNOUNCEMENT]. It uses excerpts from the agent-oriented open-call taskbook as its collaboration-rule basis [source:AGENT-TASKBOOK], and takes the provisional-boundary record registered by repository maintainers as its spatial starting point [source:PROVISIONAL-BOUNDARIES-2026]. The announcement establishes a three-level scope (coordinated research 43.6 km², overall design 11.4 km², key areas 368.4 ha) and three key areas (Zhongzhiyuan AI Indigenous Innovation Acceleration Zone, Beijing AI Origin Community, Dazhongsi AI Industry Agglomeration Zone), and explicitly requires urban design at the depth of both regulatory detailed planning and integrated planning implementation. The proposal responds to all mandatory tasks in Sections 1.3–1.5 of the announcement and to all six tasks (agent.1–agent.6) of the agent-oriented taskbook, classifying all conclusions into four types: "traceable source, recomputable metric, verifiable layer, human-reviewable assumption." `brief/site-package/design_brief.json` provides the official area and textual four-side description; `brief/site-package/allowed_design_space.json` delimits editable and locked layers; `brief/site-package/ranges/planning_limits.json` lists the pending status of regulatory-plan indicators such as floor area ratio, building height, and green ratio; `brief/site-package/enums/layers.json` and `enums/land_use_codes.json` lock layer and land-use codes; `brief/site-package/standards/standards.json` lists five mandatory formal standards and four optional standards. All structured evidence is stored in `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json`, `design_depth_matrix.json`, and `geometry/*.geojson`; the body text marks evidence only beside key judgments so that human reviewers can understand the proposal without opening the JSON [depth:existing_conditions_diagnosis].
 
 The usage boundaries of the source registry are as follows [source:SOURCE-REGISTRY]: `data/source_registry.json` registers nine entries, of which seven are formally usable, one is background material, and one is provisional-only. Agents must not promote background_only or provisional_only material to official boundary, statutory regulatory plan, formal scoring basis, or government implementation commitment. All spatial judgments in this proposal are based on provisional-boundary polygons; when official polygons are released, `site_boundary`, `key_areas`, `land_use`, `buildings`, `roads`, `green_space`, `public_space`, `phasing`, and all derived metrics must be recomputed as a whole, not by replacing a single file. The taskbook permits provisional boundaries for temporary generation, visualization, self-checking, and design discussion; data gaps of the organizers do not block content scoring. However, provisional boundaries must not be used for official redlines, approval basis, precise area basis, or statutory control conclusions [source:AGENT-TASKBOOK].
@@ -25,6 +50,26 @@ When the official SITE_BOUNDARY or the three KEY_AREA polygons are not yet obtai
 The evidence chain of this proposal is organized in five layers. The first layer is the announcement and the taskbook [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK], which define project boundaries and tasks. The second layer is the statutory and technical-depth requirements registered in the repository, including local reference snapshots of the five mandatory formal standards (see `standard_matrix.json`; not all IDs repeated in the body). The third layer is provisional geometry [source:PROVISIONAL-BOUNDARIES-2026], giving a temporary spatial starting point. The fourth layer is the proposal layers generated by the agent, including nine GeoJSON files for land use, buildings, roads, green space, public space, and phasing; the full layer index is in `manifest.json` and the `geometry/` directory, with only key features annotated beside specific judgments in the body. The fifth layer is metrics and matrices, carrying metric recomputation and task coverage; core metrics (such as `site_area_sqm`, `green_ratio`, `concept_far`) are cited inline beside key judgments in each section [metric:site_area_sqm] [metric:green_ratio], while the full index of the remaining 16 metrics is held in `metrics.json`. All missing statutory control-plan conditions (FAR, building height, setback line, green ratio, etc.) are tagged `status=unknown` per `ranges/planning_limits.json`, and `assumptions.json` provides the pending data and recomputation path [depth:risk_missing_data].
 
 ![Site & Evidence Chain Overview](assets/figures/site-overview.png)
+
+### System Architecture, Timeline, Mind Map, and Stage-Gate Flowchart
+
+The system architecture, timeline, concept mind map, and pilot project stage-gate flowchart of this proposal use baoyu-diagram style (dark theme, JetBrains Mono + Noto Sans SC fonts, embedded SVG, self-contained with no external dependencies), rendered from the same conceptual data source. Each figure can be opened independently for review.
+
+**AI Artery System Architecture** (5 layers: L1 City Interface → L2 Agent Orchestration → L3 Data & Compute → L4 Public Space → L5 Governance & Audit):
+
+![AI Artery System Architecture](assets/figures/architecture.svg)
+
+**Centennial Jingzhang Timeline** (1909 railway completion → 2026 AI innovation belt → 2035 long-term completion):
+
+![Centennial Jingzhang Timeline](assets/figures/timeline.svg)
+
+**Concept Mind Map** (center → 6 primary branches → 24 secondary nodes):
+
+![Concept Mind Map](assets/figures/mindmap.svg)
+
+**Pilot Project Stage-Gate Flowchart** (G1 land permit → G2 main structure → G3 commissioning + failure-exit conditions + fallback):
+
+![Pilot Project Stage-Gate Flowchart](assets/figures/flowchart.svg)
 
 ## Three-Level Scope Framework
 

@@ -274,5 +274,395 @@
       "recalculation_path_zh": "实施前由海淀区政府、企业联合体与专业团队共同审定实施计划、政策与运营机制。",
       "confidence": "low"
     }
-  ]
+  ],
+  "evidence_ledger": {
+    "schema_version": "0.1.0",
+    "project_id": "centennial-jingzhang-ai-belt",
+    "package_id": "jingzhang-ai-artery",
+    "description_zh": "本台账把 proposal.md 中每条正文证据声明映射到 source_id、geometry feature、metric、assumption 与 self_check ID，可机器复核。评审可关闭正文，只读取本文件与对应 JSON，独立完成最小化信任复核。",
+    "verification_method_zh": "对每条 claim 提取 5 个字段：source_ids（来源）、geometry_refs（几何要素）、metric_refs（指标）、assumption_ids（假设）、self_check_ids（自检项）。任一字段为空表示该 claim 无对应结构化证据，需在 review 时人工判断是否补足。",
+    "claims": [
+      {
+        "claim_id": "C-001",
+        "proposal_section": "设计依据与资料清单",
+        "claim_zh": "本 formal 方案以公告为第一依据",
+        "source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+          "SRC-PROVISIONAL-BOUNDARIES-2026"
+        ],
+        "geometry_refs": [],
+        "metric_refs": [],
+        "assumption_ids": [
+          "ASM-001"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION",
+          "PROFESSIONAL_EVIDENCE"
+        ]
+      },
+      {
+        "claim_id": "C-002",
+        "proposal_section": "三层范围工作框架",
+        "claim_zh": "三层范围（43.6 / 11.4 / 368.4）由 provisional polygon 复算",
+        "source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        ],
+        "geometry_refs": [
+          "geometry/site_boundary.geojson#SITE-001",
+          "geometry/key_areas.geojson#PROV-KEY-001",
+          "geometry/key_areas.geojson#PROV-KEY-002",
+          "geometry/key_areas.geojson#PROV-KEY-003"
+        ],
+        "metric_refs": [
+          "coordinated_research_area_sqm",
+          "site_area_sqm",
+          "key_area_total_sqm",
+          "key_area_count"
+        ],
+        "assumption_ids": [
+          "ASM-001"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION",
+          "SPATIAL_REVIEW"
+        ]
+      },
+      {
+        "claim_id": "C-003",
+        "proposal_section": "统筹研究范围产业与未来城市研究",
+        "claim_zh": "总体概念「京张100·AI 大动脉」回应百年京张文化叙事",
+        "source_ids": [
+          "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
+        ],
+        "geometry_refs": [],
+        "metric_refs": [
+          "global_ai_ecosystem_cases_count"
+        ],
+        "assumption_ids": [],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION"
+        ]
+      },
+      {
+        "claim_id": "C-004",
+        "proposal_section": "统筹研究范围产业与未来城市研究",
+        "claim_zh": "Logo 草案已生成（钢轨横截面 × 神经网络拓扑）",
+        "source_ids": [],
+        "geometry_refs": [
+          "assets/media/logo.svg",
+          "assets/media/logo-horizontal.svg",
+          "assets/media/logo-mono.svg"
+        ],
+        "metric_refs": [],
+        "assumption_ids": [],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION"
+        ]
+      },
+      {
+        "claim_id": "C-005",
+        "proposal_section": "区域协同与京津冀 AI 创新共同体",
+        "claim_zh": "方案建立与未来科学城、怀柔科学城、北京经开区、京津冀的协同机制",
+        "source_ids": [
+          "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
+        ],
+        "geometry_refs": [],
+        "metric_refs": [],
+        "assumption_ids": [
+          "ASM-008"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION"
+        ]
+      },
+      {
+        "claim_id": "C-006",
+        "proposal_section": "用地、建筑规模与拆改留方案",
+        "claim_zh": "12 个用地多边形按 MNR 用地用海分类指南编码",
+        "source_ids": [
+          "SRC-2023-MNR-LAND-USE-CLASSIFICATION"
+        ],
+        "geometry_refs": [
+          "geometry/land_use.geojson#LU-001"
+        ],
+        "metric_refs": [
+          "land_use_polygon_count"
+        ],
+        "assumption_ids": [
+          "ASM-001"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION",
+          "SPATIAL_REVIEW"
+        ]
+      },
+      {
+        "claim_id": "C-007",
+        "proposal_section": "用地、建筑规模与拆改留方案",
+        "claim_zh": "概念容积率因原始公式量纲错误已标为 unknown",
+        "source_ids": [],
+        "geometry_refs": [
+          "geometry/buildings.geojson#BLDG-001"
+        ],
+        "metric_refs": [
+          "concept_far",
+          "building_footprint_area_sqm",
+          "building_gfa_sqm"
+        ],
+        "assumption_ids": [
+          "ASM-002",
+          "ASM-007"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION"
+        ]
+      },
+      {
+        "claim_id": "C-008",
+        "proposal_section": "重点区域详细设计",
+        "claim_zh": "三处重点区分别提出定位、空间结构、建筑更新、交通慢行、公共空间、AI 场景、实施风险",
+        "source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
+        ],
+        "geometry_refs": [
+          "geometry/key_areas.geojson#PROV-KEY-001",
+          "geometry/key_areas.geojson#PROV-KEY-002",
+          "geometry/key_areas.geojson#PROV-KEY-003"
+        ],
+        "metric_refs": [
+          "key_area_total_sqm"
+        ],
+        "assumption_ids": [
+          "ASM-001",
+          "ASM-004"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION",
+          "SPATIAL_REVIEW"
+        ]
+      },
+      {
+        "claim_id": "C-009",
+        "proposal_section": "AI 创新生态、人才画像与 AI+ 场景",
+        "claim_zh": "12 张 AI 场景卡按 PIPL/数据安全法/网络安全法三重法律框架组织",
+        "source_ids": [
+          "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
+        ],
+        "geometry_refs": [
+          "geometry/public_space.geojson#PUBLIC-001",
+          "geometry/public_space.geojson#PUBLIC-003",
+          "geometry/public_space.geojson#PUBLIC-005",
+          "geometry/public_space.geojson#PUBLIC-004"
+        ],
+        "metric_refs": [
+          "scenario_card_count",
+          "user_persona_count",
+          "industry_test_scenario_count",
+          "ai_landmark_count",
+          "ai_pilgrimage_landmark_count"
+        ],
+        "assumption_ids": [
+          "ASM-006"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION",
+          "PROFESSIONAL_EVIDENCE"
+        ]
+      },
+      {
+        "claim_id": "C-010",
+        "proposal_section": "交通、轨道、市政与公共服务设施",
+        "claim_zh": "11 条道路中心线 + 4 轨道 TOD + 端侧算力 + 分布式能源 + 智能感知",
+        "source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        ],
+        "geometry_refs": [
+          "geometry/roads.geojson#ROAD-NS-01",
+          "geometry/roads.geojson#ROAD-EW-01",
+          "geometry/roads.geojson#ROAD-GW-01",
+          "geometry/roads.geojson#ROAD-RING-01"
+        ],
+        "metric_refs": [
+          "road_total_length_m"
+        ],
+        "assumption_ids": [
+          "ASM-005"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION",
+          "SPATIAL_REVIEW"
+        ]
+      },
+      {
+        "claim_id": "C-011",
+        "proposal_section": "蓝绿空间、公共空间与城市风貌",
+        "claim_zh": "京张遗址公园走廊 + 5 个口袋公园 + 4 个 AI 朝圣地标",
+        "source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        ],
+        "geometry_refs": [
+          "geometry/green_space.geojson#GREEN-001",
+          "geometry/green_space.geojson#GREEN-002",
+          "geometry/public_space.geojson#PUBLIC-001"
+        ],
+        "metric_refs": [
+          "green_ratio",
+          "public_space_ratio",
+          "ai_landmark_count"
+        ],
+        "assumption_ids": [
+          "ASM-001"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION",
+          "SPATIAL_REVIEW"
+        ]
+      },
+      {
+        "claim_id": "C-012",
+        "proposal_section": "更新项目清单、实施政策与分期计划",
+        "claim_zh": "近期/中期/远期三期 14 个更新项目清单",
+        "source_ids": [
+          "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
+        ],
+        "geometry_refs": [
+          "geometry/phasing.geojson#PHASE-001",
+          "geometry/phasing.geojson#PHASE-002",
+          "geometry/phasing.geojson#PHASE-003"
+        ],
+        "metric_refs": [
+          "phase_count"
+        ],
+        "assumption_ids": [
+          "ASM-008"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION"
+        ]
+      },
+      {
+        "claim_id": "C-013",
+        "proposal_section": "试点项目阶段门、KPI 与失败退出条件",
+        "claim_zh": "5 个近期试点项目按 6 字段管理（现状基线/阶段门/KPI/失败退出/运营责任/资金假设）",
+        "source_ids": [
+          "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
+        ],
+        "geometry_refs": [
+          "geometry/phasing.geojson#PHASE-001"
+        ],
+        "metric_refs": [
+          "phase_count"
+        ],
+        "assumption_ids": [
+          "ASM-008"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION"
+        ]
+      },
+      {
+        "claim_id": "C-014",
+        "proposal_section": "指标体系、面积复算与合规矩阵",
+        "claim_zh": "19 个核心指标由 EPSG:4326 → EPSG:4548 投影后 shapely.area 复算",
+        "source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
+        ],
+        "geometry_refs": [
+          "geometry/site_boundary.geojson#SITE-001",
+          "geometry/key_areas.geojson#PROV-KEY-001"
+        ],
+        "metric_refs": [
+          "site_area_sqm",
+          "key_area_total_sqm",
+          "green_ratio",
+          "public_space_ratio",
+          "concept_far",
+          "ai_landmark_count",
+          "scenario_card_count",
+          "user_persona_count",
+          "industry_test_scenario_count",
+          "global_ai_ecosystem_cases_count",
+          "ai_pilgrimage_landmark_count",
+          "building_footprint_area_sqm",
+          "building_count",
+          "road_total_length_m",
+          "phase_count",
+          "green_space_area_sqm",
+          "public_space_area_sqm",
+          "land_use_polygon_count",
+          "key_area_count"
+        ],
+        "assumption_ids": [
+          "ASM-001",
+          "ASM-002",
+          "ASM-007"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION",
+          "SPATIAL_REVIEW"
+        ]
+      },
+      {
+        "claim_id": "C-015",
+        "proposal_section": "指标体系、面积复算与合规矩阵",
+        "claim_zh": "合规矩阵覆盖公告 1.3-1.5 全部 17 项 + agent.1-6 全部 6 项",
+        "source_ids": [
+          "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+          "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
+        ],
+        "geometry_refs": [],
+        "metric_refs": [],
+        "assumption_ids": [],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION",
+          "PROFESSIONAL_EVIDENCE"
+        ]
+      },
+      {
+        "claim_id": "C-016",
+        "proposal_section": "风险、版权与合规说明",
+        "claim_zh": "7 类数据缺口已登记在 assumptions.json",
+        "source_ids": [
+          "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK"
+        ],
+        "geometry_refs": [
+          "geometry/constraints.geojson"
+        ],
+        "metric_refs": [
+          "concept_far",
+          "building_gfa_sqm"
+        ],
+        "assumption_ids": [
+          "ASM-001",
+          "ASM-002",
+          "ASM-003",
+          "ASM-004",
+          "ASM-005",
+          "ASM-006",
+          "ASM-007",
+          "ASM-008"
+        ],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION",
+          "PROFESSIONAL_EVIDENCE"
+        ]
+      },
+      {
+        "claim_id": "C-017",
+        "proposal_section": "中英双语人工等价复核清单",
+        "claim_zh": "9 个复核维度 × 159 个证据标记 × 22 个术语对照",
+        "source_ids": [],
+        "geometry_refs": [
+          "assets/media/bilingual_review_checklist.md"
+        ],
+        "metric_refs": [],
+        "assumption_ids": [],
+        "self_check_ids": [
+          "DETERMINISTIC_VALIDATION"
+        ]
+      }
+    ]
+  }
 }
