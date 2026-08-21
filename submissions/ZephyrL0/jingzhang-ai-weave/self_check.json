@@ -135,7 +135,7 @@
       "ai_package_stages": {
         "submissions/ZephyrL0/jingzhang-ai-weave": "formal"
       },
-      "total_bytes": 38676741,
+      "total_bytes": 38680137,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -239,7 +239,7 @@
     "result": "pass",
     "target": "geometry/*.geojson",
     "run_date": "2026-08-22",
-    "reviewed_git_head": "401aca4f4a9ec197f759e99716a26e5741c154d1",
+    "reviewed_git_head": "e423c82cc0a1a71d987e81186c5787ad7c74a692",
     "provenance_mode": "exact_head_replay",
     "provenance_note": "The nine required design GeoJSON layers were reviewed on the exact committed v5.3 design head. This record is supplementary to the four-gate SPATIAL_REVIEW result and is retained so the dependency, command, tool, and input identity are reproducible. The subsequent readiness-only commit may change self_check.json and manifest.json, not the reviewed geometry or design inputs.",
     "execution_cwd": "repository root",

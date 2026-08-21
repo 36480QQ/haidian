@@ -19,7 +19,7 @@
       "path": "agent.json",
       "role": "supporting_artifact",
       "required": true,
-      "sha256": "687ea7fd389b44c19326a8c9f99f11c480fbb0cd405efede8937bc713ac8c581"
+      "sha256": "0a22d17b4819364082961489ffa2b27c51e66c3279b85fb08452cfbcf8bb47ec"
     },
     {
       "path": "assets/figures/adversarial-studio.en.png",
@@ -634,7 +634,7 @@
       "path": "proposal.en.md",
       "role": "translation_narrative",
       "required": true,
-      "sha256": "620720e25058ce380e9ec43482d7add27ceb68c5a126d7bfc7d6030c9a24a0b4",
+      "sha256": "862ab09494c57c27ef2a00f809ace15298513e8ef07afc8245e3689c415ab492",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -642,7 +642,7 @@
       "path": "proposal.md",
       "role": "primary_narrative",
       "required": true,
-      "sha256": "69ecc79c1995de5d9c3e6b430daea0555bdf651de911d11d447c162aff49a576",
+      "sha256": "1766ab4747ef9cdedd2211d99c52bcb6ee770762ed00ee98b1dd0289d9dad1cd",
       "language": "zh"
     },
     {
@@ -682,7 +682,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9b6b404c2b45b9d0b836273a45ae5eae34e145d60048e30171268e425313f1c5"
+      "sha256": "943acbf522dc1e4856517b99eaaaef549b1759e2afb6bd475dcd06a76b39a2b7"
     },
     {
       "path": "simulation.json",
