@@ -29,7 +29,7 @@ const PKG = path.resolve(HERE, "../../..");
 const AUDITOR = "claims-audit.js";
 const RUNNER = "protocol-check-runner.js";
 
-/* 这份 49 项 ID 全集是**刻意重复**的第二份来源。
+/* 这份 54 项 ID 全集是**刻意重复**的第二份来源。
    claims-audit.js 里也有一份；两份不一致就说明有人动了其中一份，本文件会报错。
    判据与被测对象放在同一处，等于没有判据。 */
 const IDS = [
@@ -38,7 +38,8 @@ const IDS = [
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
-  "G1", "G2", "G3", "H1", "I1", "Z1",
+  "G1", "G2", "G3", "H1", "I1",
+  "K1", "K2", "K3", "K4", "J1", "Z1",
 ];
 const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48 };
 
@@ -86,7 +87,7 @@ const cases = [];
 const positive = (label, fn) => cases.push({ label, kind: "正向", fn });
 const negative = (label, fn) => cases.push({ label, kind: "阴性", fn });
 
-positive("claims-audit.js 全部通过，且恰好跑 49 项、ID 与本文件独立记录的全集逐位相同", () => {
+positive("claims-audit.js 全部通过，且恰好跑 54 项、ID 与本文件独立记录的全集逐位相同", () => {
   const r = runAuditor();
   if (r.code !== 0) return `退出码 ${r.code}，应为 0：${(failedIds(r).join("、") || r.stderr).slice(0, 300)}`;
   if (!r.json || r.json.all_match !== true) return "all_match 不为真";
@@ -173,6 +174,26 @@ negInput("standard_matrix.json 的章节引用指向不存在的标题 —— v2
   { "standard_matrix.json": jsonMutated("standard_matrix.json", (d) => {
       d.standards[0].proposal_sections[0] = "一个并不存在的章节标题";
     }) }, ["G1"]);
+
+negInput("对照表把「一次交接循环」的 4,284 m 改成 4,300 m",
+  { "proposal.md": textOf("proposal.md").replace("| **一次交接循环最短步行** | **4,284 m** |", "| **一次交接循环最短步行** | **4,300 m** |") }, ["K1"]);
+
+negInput("对照表把现状的同类互达 51,619 m 改成 51,000 m",
+  { "proposal.md": textOf("proposal.md").replace("| 51,619 m（**三者最差**） |", "| 51,000 m（**三者最差**） |") }, ["K2"]);
+
+negInput("对照表把交接场齐备度 2／2／3 改成 2／2／2",
+  { "proposal.md": textOf("proposal.md").replace("| **2／2／3 类** |", "| **2／2／2 类** |") }, ["K3"]);
+
+negInput("正文把十对里程差里的 61 m 写成 60 m",
+  { "proposal.md": textOf("proposal.md").replace("2、2、15、15、21、21、22、23、23、61 m", "2、2、15、15、21、21、22、23、23、60 m") }, ["K4"]);
+
+negInput("sources.json 把现行登记的指针改回已作废的历史条目 —— 本包真出现过的六处",
+  { "sources.json": jsonMutated("sources.json", (d) => {
+      const e = d.sources.find((x) => x.id === "FONT-NOTO-COVER");
+      e.not_usable_for = e.not_usable_for.map((t) =>
+        t.replace("证明 assets/figures/ 下 26 张栅格图件的字形来源（见 FONT-NOTO-RASTER）",
+                  "证明 assets/figures/ 下 26 张栅格图件的字形来源（中文见 FONT-STHEITI-RASTER）"));
+    }) }, ["J1"]);
 
 /* 最后两例打 runner。 */
 const negRunner = (label, files, want) => negative(label, () => {

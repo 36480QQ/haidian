@@ -386,6 +386,135 @@ const noNote = deep.filter(([, m]) => !m.precision_note);
 add("I1", `三位以上小数的指标全部带 precision_note（共 ${deep.length} 项）`,
     noNote.length === 0, noNote.length ? noNote.map(([k]) => k).join("、") : `${deep.length} 项全部带说明`);
 
+/* K. 布局对照实验的复算。三种布局共用同一组位置、面积与东西侧，只有功能标签不同，
+   所以全部指标只用落点表那三列整数（里程、垂距、基底），是纯算术，不需要投影。
+   声明值从正文那张对照表里**解析**而来，不写死在这里——正文改了或算法改了都会报错。 */
+const KT = ["开放研发院", "验证工坊", "社区协作屋", "共享服务栈"]; // 研制→验证→公开→服务
+const KFIELD_CH = [8529, 5391, 777]; // 三处交接场形心里程，正文口径段已写明
+const kRows = tableRows.map((l) => {
+  const c = l.split("|").map((x) => x.trim());
+  return {
+    id: c[1], typ: c[2], side: c[4].replace(/\*/g, ""),
+    area: Number(c[5].replace(/,/g, "")), ch: Number(c[6].replace(/,/g, "")), off: Number(c[7]),
+  };
+}).sort((a, b) => a.ch - b.ch);
+const kWalk = (a, b) => a.off + b.off + Math.abs(a.ch - b.ch);
+const kPairs = [];
+for (let i = 0; i + 1 < kRows.length; i += 2) kPairs.push([kRows[i], kRows[i + 1]]);
+
+const layout = (assign) => {
+  const cs = kRows.map((c) => Object.assign({}, c, { typ: assign[c.id] }));
+  const by = {};
+  for (const t of KT) by[t] = cs.filter((c) => c.typ === t);
+  if (KT.some((t) => by[t].length < 2)) return null;
+  const same = cs.reduce((s, c) =>
+    s + Math.min(...by[c.typ].filter((o) => o.id !== c.id).map((o) => kWalk(c, o))), 0);
+  const cross = cs.reduce((s, c) => s + KT.filter((t) => t !== c.typ)
+    .reduce((u, t) => u + Math.min(...by[t].map((o) => kWalk(c, o))), 0), 0);
+  let cyc = Infinity, path = null;
+  for (const a of by[KT[0]]) for (const b of by[KT[1]]) for (const c of by[KT[2]]) for (const d of by[KT[3]]) {
+    const t = kWalk(a, b) + kWalk(b, c) + kWalk(c, d);
+    if (t < cyc) { cyc = t; path = [a, b, c, d]; }
+  }
+  const tot = KT.map((t) => by[t].reduce((s, c) => s + c.area, 0));
+  return {
+    same, cross, cyc,
+    crossAxis: [0, 1, 2].filter((i) => path[i].side !== path[i + 1].side).length,
+    full: KFIELD_CH.map((f) => new Set(cs.filter((c) => Math.abs(c.ch - f) <= 500).map((c) => c.typ)).size),
+    pairTypes: kPairs.map(([a, b]) => new Set([assign[a.id], assign[b.id]]).size),
+    spread: Math.max(...tot) - Math.min(...tot),
+    sides: ["西", "东"].map((sd) => new Set(cs.filter((c) => c.side === sd).map((c) => c.typ)).size),
+  };
+};
+const asgCur = Object.fromEntries(kRows.map((c) => [c.id, c.typ]));
+const asgA = {};
+kPairs.forEach(([a, b], i) => { asgA[a.id] = KT[i % 4]; asgA[b.id] = KT[i % 4]; });
+const asgB = Object.fromEntries(kRows.map((c, i) => [c.id, KT[Math.floor(i / 5)]]));
+const L3 = [layout(asgCur), layout(asgA), layout(asgB)];
+const kOk = kRows.length === 20 && L3.every((x) => x !== null);
+
+/* 从正文对照表解析声明值：按行首标签找行，取每格的数字 */
+const kLine = (label) => prose.split("\n").find((l) => l.startsWith("| ") && l.includes(label));
+const kCells = (label) => {
+  const l = kLine(label);
+  return l ? l.split("|").slice(2, 5).map((x) => x.trim()) : null;
+};
+const nums = (cell) => (cell.replace(/,/g, "").match(/\d+/g) || []).map(Number);
+const first3 = (label) => {
+  const c = kCells(label);
+  return c && c.every((x) => nums(x).length) ? c.map((x) => nums(x)[0]) : null;
+};
+
+const kCmp = (label, got, want) =>
+  want === null ? `正文未解析到「${label}」一行——表被改动或该声明被删`
+    : (JSON.stringify(got) === JSON.stringify(want) ? null
+       : `声明 ${JSON.stringify(want)}，实算 ${JSON.stringify(got)}`);
+
+const dCyc = first3("一次交接循环最短步行");
+const dAxis = first3("该循环的跨轴次数");
+let why = !kOk ? "落点表未解析成 20 行或某类不足两个，本项无法判定"
+  : (kCmp("一次交接循环最短步行", L3.map((x) => x.cyc), dCyc)
+     || kCmp("该循环的跨轴次数", L3.map((x) => x.crossAxis), dAxis));
+add("K1", "三种布局的「一次交接循环最短步行」与该循环跨轴次数，由落点表整数列复算后与正文对照表逐个一致",
+    why === null, why || `循环 ${L3.map((x) => x.cyc).join("／")} m，跨轴 ${L3.map((x) => x.crossAxis).join("／")}`);
+
+const dCross = first3("异类互达合计"), dSame = first3("同类互达合计");
+why = !kOk ? "同上，本项无法判定"
+  : (kCmp("异类互达合计", L3.map((x) => x.cross), dCross)
+     || kCmp("同类互达合计", L3.map((x) => x.same), dSame));
+add("K2", "三种布局的异类互达合计与同类互达合计，复算后与正文对照表逐个一致",
+    why === null, why || `异类 ${L3.map((x) => x.cross).join("／")}，同类 ${L3.map((x) => x.same).join("／")}`);
+
+const cFull = kCells("三处交接场 500 m 内类型齐备");
+const dFull = cFull && cFull.every((x) => nums(x).length >= 3) ? cFull.map((x) => nums(x).slice(0, 3)) : null;
+const dSpread = first3("四类基底合计极差");
+why = !kOk ? "同上，本项无法判定"
+  : (kCmp("三处交接场 500 m 内类型齐备", L3.map((x) => x.full), dFull)
+     || kCmp("四类基底合计极差", L3.map((x) => x.spread), dSpread));
+add("K3", "三处交接场 ±500 m 内的类型齐备数与四类基底极差，复算后与正文对照表逐个一致",
+    why === null, why || `齐备 ${L3.map((x) => x.full.join("/")).join("／")}，极差 ${L3.map((x) => x.spread).join("／")}`);
+
+const gaps = kPairs.map(([a, b]) => Math.abs(a.ch - b.ch)).sort((x, y) => x - y);
+const accSum = kRows.reduce((s, c) => s + c.off, 0);
+const dGaps = (() => {
+  const m = prose.match(/十对单元横跨主轴的里程差是 \*\*([\d、\s]+?)\s*m\*\*/);
+  return m ? m[1].split("、").map((x) => Number(x.trim())).sort((x, y) => x - y) : null;
+})();
+const pairOk = JSON.stringify(L3[0].pairTypes) === JSON.stringify(Array(10).fill(2))
+  && JSON.stringify(L3[1].pairTypes) === JSON.stringify(Array(10).fill(1))
+  && L3[2].pairTypes.filter((x) => x === 2).length === 2;
+why = !kOk ? "同上，本项无法判定"
+  : (dGaps === null ? "正文未解析到「十对单元横跨主轴的里程差是 … m」——措辞变了或该声明被删"
+     : JSON.stringify(gaps) !== JSON.stringify(dGaps) ? `十对里程差 声明 ${dGaps.join("、")}，实算 ${gaps.join("、")}`
+     : accSum !== 6596 ? `接入段合计实算 ${accSum}，应为 6596`
+     : !pairOk ? `每对类型数不符：现状 ${L3[0].pairTypes.join("")}，A ${L3[1].pairTypes.join("")}，B ${L3[2].pairTypes.join("")}`
+     : L3.map((x) => x.sides.join("")).join(",") !== "22,44,44" ? `单侧类型数 ${L3.map((x) => x.sides.join("")).join(",")}，应为 22,44,44`
+     : null);
+add("K4", "十对横跨主轴的里程差、接入段合计 6,596 m、每对类型数与单侧类型数四项，复算后与正文一致",
+    why === null, why || `里程差 ${gaps.join("、")}；接入 ${accSum} m；每对 现状全2／A全1／B八1两2；单侧 22,44,44`);
+
+/* J. sources.json 的内部指针：现行登记不得把读者指向已作废的历史条目。
+   本包出现过一次——栅格字体 2026-08-17 迁到 OFL 之后，三条现行登记的
+   not_usable_for／usage 仍把「26 张图件的字形来源」指向那两条 Apple 字体历史登记。 */
+const sup = new Set(sources.filter((x) => (x.not_usable_for || [])
+  .some((t) => String(t).includes("作为当前任何交付物的权利依据"))).map((x) => x.id));
+const badPtr = [];
+for (const x of sources) {
+  if (sup.has(x.id)) continue;
+  for (const [k, v] of Object.entries(x)) {
+    for (const t of (Array.isArray(v) ? v : [v])) {
+      if (typeof t !== "string") continue;
+      for (const dead of sup) {
+        if (t.includes(dead) && !t.includes("历史") && !t.includes("之前")) {
+          badPtr.push(`${x.id}#${k} → ${dead}`);
+        }
+      }
+    }
+  }
+}
+add("J1", `sources.json 里 ${sup.size} 条已自陈作废的登记，没有被任何现行登记当作现行依据引用（引用须明标历史）`,
+    badPtr.length === 0, badPtr.length ? badPtr.join("；") : `作废 ${[...sup].join("、")}；现行条目零处误引`);
+
 /* Z. 元检查：断言检查清单本身没有缺项。
    审计器最危险的失效方式不是「某一项判错」，而是「某一项悄悄没跑」——
    条件式 add() 会让检查总数变少而 all_match 仍为真。2026-08-20 实测过这个洞：
@@ -405,6 +534,7 @@ const EXPECTED_IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "H1", "I1",
+  "K1", "K2", "K3", "K4", "J1",
   "Z1",
 ];
 {
