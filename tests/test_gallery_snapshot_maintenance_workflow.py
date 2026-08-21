@@ -46,11 +46,21 @@ class GallerySnapshotMaintenanceWorkflowTests(unittest.TestCase):
         self.assertIn("bootstrap_required=true", self.workflow)
         self.assertIn("GITHUB_STEP_SUMMARY", self.workflow)
         self.assertIn("One-time bootstrap", self.workflow)
-        self.assertIn("administrator must create it", self.workflow)
-        self.assertIn("git push origin origin/main:refs/heads/${branch}", self.workflow)
+        self.assertIn("normal repository ruleset", self.workflow)
+        self.assertIn("bootstrap-maintenance-ref.sh", self.workflow)
+        self.assertIn("git fetch origin main", self.workflow)
+        self.assertIn('git push origin "${source_main_sha}:refs/heads/${maintenance_branch}"', self.workflow)
+        self.assertNotIn("administrator bypass", self.workflow.lower())
+        self.assertNotIn("--admin", self.workflow)
         self.assertIn("gallery-snapshot-bootstrap-handoff", self.workflow)
         self.assertIn("bootstrap-required.txt", self.workflow)
         self.assertIn("Fail closed: the canonical gallery maintenance ref is missing", self.workflow)
+
+    def test_maintainer_handoff_can_open_pr_without_workflow_token(self) -> None:
+        self.assertIn("open-maintenance-pr.sh", self.workflow)
+        self.assertIn('gh pr list --repo "${repository}"', self.workflow)
+        self.assertIn('gh pr create --repo "${repository}" --base main --head "${branch}"', self.workflow)
+        self.assertIn("normal maintainer credentials", self.workflow)
 
     def test_snapshot_failures_are_not_masked_by_continue_on_error(self) -> None:
         self.assertIn("id: snapshot\n        continue-on-error: true", self.workflow)
@@ -110,7 +120,7 @@ class GallerySnapshotMaintenanceWorkflowTests(unittest.TestCase):
             ("next push after handoff PR is closed", True, False, "create-draft-pr"),
             ("next push after handoff PR is merged and ref retained", True, False, "create-draft-pr"),
             ("merged handoff ref deleted", False, False, "bootstrap-required"),
-            ("next push after administrator restores the ref", True, False, "create-draft-pr"),
+            ("next push after normal maintainer bootstrap restores the ref", True, False, "create-draft-pr"),
         ]
         for label, ref_exists, open_pr, expected in cases:
             with self.subTest(label=label):
