@@ -288,7 +288,7 @@ Land use follows the five-band zoning refined into 17 parcels (matrix in the key
 
 ## Blue-green space, public space and urban character
 
-**Blue-green system** `[depth:blue_green_public_space]`: heritage park green band (north–south `[data:geometry/green_space.geojson#GR-001]`) + three-area green rings, green ratio `[metric:green_ratio]`; sponge/retention is directional, pending hydrology `[assumption:A-GREEN-BLUE-CONCEPT-001]`. **Public space**: New Gauge Central Plaza `[data:geometry/public_space.geojson#PS-001]` + three pole plazas, public-space ratio `[metric:public_space_ratio]`.
+**Blue-green system** `[depth:blue_green_public_space]`: heritage park green band (north–south `[data:geometry/green_space.geojson#GR-001]`) + three-area green rings, green ratio `[metric:green_ratio]`; sponge/retention is directional, pending hydrology `[assumption:A-GREEN-BLUE-CONCEPT-001]`. **Public space**: Switchback Line Central Plaza `[data:geometry/public_space.geojson#PS-001]` + three pole plazas, public-space ratio `[metric:public_space_ratio]`.
 
 **AI pilgrimage landmarks** (agent.4; three; conceptual, rights-cleared assets required `[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]`): ① Switchback Monument (central plaza, minimal engineering art on the '人' motif); ② Switchback Experience Hall (AI Origin; rail heritage + AI history); ③ Benchmark Field Viewing Platform (Zhongzhi Garden; public honor node watching AI benchmarks run). **Honor display system** (agent.4): along the spine — benchmark leaderboard wall (Zhongzhi) — developer contribution constellation (Origin) — enterprise innovation gallery (Dazhongsi), unified visuals, publicly auditable.
 
