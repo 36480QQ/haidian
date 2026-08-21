@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "submission_id": "dvd233/data-coop-line",
   "register_id": "DATA-COOP-PLAN-ALIGNMENT-01",
   "generated_at": "2026-08-22",
   "branch_freeze": {
-    "upstream_main_sha": "114f06a1d59b94aece4807747ac00e3d6a396d40",
-    "observed_at": "2026-08-22T00:30:22+08:00",
-    "previous_observation_sha": "bfd1cff1d6db793f8dc52321b406e23ea830b6fd",
-    "relevance_since_previous_observation": "unrelated_submission_only",
+    "upstream_main_sha": "c79854e90b2e9a641d367c9e91f3f3031e20c127",
+    "observed_at": "2026-08-22T06:44:00+08:00",
+    "previous_observation_sha": "5287a6299d77c7298bd56853097add81401bf0c6",
+    "relevance_since_previous_observation": "unrelated_submissions_only",
     "gate_scripts_from_this_freeze": true
   },
   "source_hierarchy": [
@@ -46,6 +46,26 @@
         "official plan text, statutory map, polygon or coordinates",
         "endorsement of this submission or implementation commitment"
       ]
+    },
+    {
+      "source_id": "JINGZHANG-PLAN-OFFICIAL-PUBLICATION-20260817",
+      "authority": "official_government_portal_publication_of_approved_plan_text",
+      "publisher": "Haidian District People's Government portal (plan text signed by Beijing Municipal Commission of Planning and Natural Resources and Haidian District People's Government)",
+      "published_at": "2026-08-17",
+      "retrieved_at": "2026-08-22",
+      "retrieved_response_sha256": "e669105c1f94081213740a44a899b2823aff9622e8b3f89a48fac7fce8073b86",
+      "supports": [
+        "official plan title and the 2024-2035 period label of the published version",
+        "statutory-document nature of the approved plan results (text, drawings, zoning maps)",
+        "planning-scope textual bounds, nine named block codes, 16.7 km2 total planned area and 75 functional zones",
+        "chapter structure of the published plan text"
+      ],
+      "does_not_support": [
+        "official approval document number or exact approval date",
+        "complete plan text beyond the retrieved general-provisions excerpt (PDF attachment HTTP 404 at retrieval)",
+        "statutory drawings, plan polygons or coordinates",
+        "endorsement of this submission or implementation commitment"
+      ]
     }
   ],
   "text_claims": [
@@ -80,21 +100,47 @@
       "claim_en": "The report summarizes a one-belt, one-axis, two-centres, multiple-nodes structure: the Jing-Zhang Railway Heritage Park innovation belt, Zhongguancun Street innovation axis, Dazhongsi and Wudaokou centres, and nodes including Zhichun Road and Sidaokou.",
       "claim_status": "reported_text_fact",
       "spatial_use": "text_only_no_digitisation"
+    },
+    {
+      "claim_id": "PLAN-TEXT-05",
+      "source_id": "JINGZHANG-PLAN-OFFICIAL-PUBLICATION-20260817",
+      "claim_zh": "海淀区人民政府门户网站于 2026-08-17 发布该控规（公开版）全文页，公开版标题确认获批版本为 2024—2035 年，文本署名单位为北京市海淀区人民政府与北京市规划和自然资源委员会。",
+      "claim_en": "The Haidian District government portal published the (public version) plan text page on 2026-08-17; its title confirms the approved version is the 2024-2035 plan, signed by the Haidian District People's Government and the Beijing Municipal Commission of Planning and Natural Resources.",
+      "claim_status": "official_publication_fact",
+      "spatial_use": "none"
+    },
+    {
+      "claim_id": "PLAN-TEXT-06",
+      "source_id": "JINGZHANG-PLAN-OFFICIAL-PUBLICATION-20260817",
+      "claim_zh": "公开版总则第 2—3 条载明：范围北至成府路、南至西直门外大街、西至中关村大街、东至新街口外大街，含 HD00—1601、1602、1603、2001、2002、2003、2101、2102、2103 共九个街区，规划总面积 16.7 平方公里，划定 75 个主导功能分区。",
+      "claim_en": "General provisions articles 2-3 of the published text state the four textual bounds (Chengfu Road north, Xizhimenwai Street south, Zhongguancun Street west, Xinjiekouwai Street east), name the nine blocks HD00-1601/1602/1603/2001/2002/2003/2101/2102/2103, give a total planned area of 16.7 square kilometres and record 75 dominant functional zones.",
+      "claim_status": "official_publication_fact",
+      "spatial_use": "text_only_no_digitisation"
+    },
+    {
+      "claim_id": "PLAN-TEXT-07",
+      "source_id": "JINGZHANG-PLAN-OFFICIAL-PUBLICATION-20260817",
+      "claim_zh": "总则第 1 条载明规划成果由文本、图纸、图则组成且均为法定审批文件；但公开页未载批复文号与确切批复日期，全文 PDF 附件于 2026-08-22 检索时返回 HTTP 404，法定图纸未取得。",
+      "claim_en": "Article 1 states the plan results consist of text, drawings and zoning maps, all statutory approval documents; however the page states no approval document number or exact approval date, the full-text PDF attachment returned HTTP 404 when retrieved on 2026-08-22, and the statutory drawings were not obtained.",
+      "claim_status": "official_publication_gap_fact",
+      "spatial_use": "none"
     }
   ],
   "version_delta": {
     "official_participation_notice_period_label": "2022-2035",
     "reported_approved_plan_period_label": "2024-2035",
-    "resolution_status": "unreconciled_without_official_approval_document",
-    "required_action": "Retain both labels with their source dates; do not silently normalize or infer amendment history."
+    "officially_published_plan_period_label": "2024-2035",
+    "resolution_status": "officially_published_plan_confirms_2024_2035_label_without_approval_document_number",
+    "required_action": "The published (public version) text confirms the 2024-2035 label for the approved plan; retain the 2022-2035 label for the earlier draft notice, keep both attributed to their sources, and do not infer an amendment history or an exact approval date."
   },
   "alignment_decisions": [
     {
       "alignment_id": "ALIGN-01",
       "reported_plan_signal": "railway-heritage-park green public space and industrial innovation belt",
       "submission_response": "Retain the Co-op Line along the heritage park as a public-interest service and cooperation layer.",
-      "alignment_status": "conceptually_aligned_no_geometry_transfer",
-      "boundary": "This is not official endorsement, land allocation or a new statutory belt."
+      "alignment_status": "conceptually_aligned_official_scope_confirmed_no_geometry_transfer",
+      "boundary": "This is not official endorsement, land allocation or a new statutory belt.",
+      "officially_published_corroboration": "The published general provisions confirm the plan combines Jing-Zhang Railway Heritage Park and Haidian AI innovation street-district construction; the one-belt structure wording remains media-reported."
     },
     {
       "alignment_id": "ALIGN-02",
@@ -114,8 +160,9 @@
       "alignment_id": "ALIGN-04",
       "reported_plan_signal": "reuse of old factories and renewal of inefficient buildings",
       "submission_response": "Retain survey-first adaptive reuse and reversible test fits instead of presuming demolition or new build.",
-      "alignment_status": "renewal_principle_alignment_pending_building_survey",
-      "boundary": "No real building, owner, permission, capacity, cost or implementation timing is confirmed."
+      "alignment_status": "renewal_principle_officially_confirmed_pending_building_survey",
+      "boundary": "No real building, owner, permission, capacity, cost or implementation timing is confirmed.",
+      "officially_published_corroboration": "The published general provisions confirm stock renewal (存量更新) as the primary approach with function and quality improvement as core goals."
     }
   ],
   "evidence_boundary": {
@@ -129,8 +176,12 @@
     "changes_submission_license": false,
     "external_images_or_long_text_redistributed": false,
     "implementation_or_partnership_commitment": false,
-    "statement_zh": "本轮只把分层文本事实变成可审计设计依据；不把报道数字写入 metrics，不从文字四至绘制 polygon，不把获批报道解释为本方案获批、政府背书或实施承诺。",
-    "statement_en": "This round turns tiered textual facts into an auditable design basis only. It does not place reported figures in metrics, digitize a polygon from textual bounds, or treat reported plan approval as approval, government endorsement, or implementation of this submission."
+    "statement_zh": "本轮把官方公开版页面可逐字支撑的事实（标题、2024—2035 版本标签、四至、九个街区编码、16.7 平方公里、75 个主导功能分区、法定审批文件性质）升级为官方公开层级证据；批复文号、确切批复日期、完整控规文本（PDF 附件 404）、法定图则与清权 vector 仍未取得，不写入 metrics、不从文字四至绘制 polygon、不把官方公开解释为本投稿获批、政府背书或实施承诺。",
+    "statement_en": "This round upgrades only the facts verbatim-supported by the official publication page (title, 2024-2035 label, textual bounds, nine block codes, 16.7 km2, 75 functional zones, statutory-document nature) to the officially published tier. The approval document number, exact approval date, complete plan text (PDF attachment HTTP 404), statutory drawings and rights-cleared vector remain unretrieved; nothing enters metrics, no polygon is digitized from textual bounds, and official publication is not approval, endorsement or implementation of this submission.",
+    "official_publication_page_retrieved": true,
+    "official_complete_plan_text_retrieved": false,
+    "official_plan_drawings_or_maps_retrieved": false,
+    "full_text_attachment_http_status_at_retrieval": 404
   },
   "frozen_package_inputs": {
     "metrics.json": "83c534bc099da4bbcc618967a876b7e12296459232c2a1c149fdde4f625b764c",

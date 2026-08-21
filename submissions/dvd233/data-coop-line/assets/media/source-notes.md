@@ -17,6 +17,12 @@
 - 不可证明：最终批复状态、确切批复日期、法定图则、polygon、道路红线或未在通告中出现的控制指标。
 - 权利边界：只作最小事实转述和链接引用，不复制网页图片、附件、视觉设计或长段原文。
 
+### `JINGZHANG-PLAN-OFFICIAL-PUBLICATION-20260817`
+
+- 北京市海淀区人民政府门户网站 2026-08-17 发布的控规（公开版）文本页（`zyk.bjhd.gov.cn`），检索于 2026-08-22，响应字节 SHA-256 `e669105c1f94081213740a44a899b2823aff9622e8b3f89a48fac7fce8073b86`（两次取回一致，21,562 字节）。
+- 仅作最小事实引用并署名：官方标题与 2024—2035 版本标签、法定审批文件性质、四至、九个街区编码、16.7 平方公里与 75 个主导功能分区。
+- 不镜像全文、不复制 PDF 附件/图纸/页面图片；公开页未载批复文号与确切批复日期；全文 PDF 附件检索时 HTTP 404，法定图则未取得。
+
 ### `JINGZHANG-PLAN-APPROVAL-REPORT-20260812`
 
 - URL：<https://bj.people.com.cn/n2/2026/0812/c82840-41665678.html>
@@ -28,7 +34,7 @@
 - 版本差异：2025 官方过程通告标题为 2022—2035，2026 报道所述获批版本为 2024—2035；在取得官方批复文件前分别保留原标签，不静默归一化或推断修编链。
 - 权利边界：只作最小事实转述和链接引用，不复制新闻图片、页面视觉或长段原文；报道数字不写入 `metrics.json`，文字四至不用于绘制 polygon。
 
-机器入口为 `visual/assets/planning-alignment-register.json`（`DATA-COOP-PLAN-ALIGNMENT-01`，SHA-256 `a3d01d5cd3745ae753865ac076c363b585403bf61688b60fb23aae75e0262650`）；审计脚本同时钉死现有 GeoJSON 与 `metrics.json` 哈希，确保文本对齐不被偷换为空间精度升级。
+机器入口为 `visual/assets/planning-alignment-register.json`（`DATA-COOP-PLAN-ALIGNMENT-01`，SHA-256 `fa284ec31ae8fc68a88a3b73ef9b3eb2cf9278f597b9df55ae3f0d391d45adda`）；审计脚本同时钉死现有 GeoJSON 与 `metrics.json` 哈希，确保文本对齐不被偷换为空间精度升级。
 
 ## 使用边界
 
