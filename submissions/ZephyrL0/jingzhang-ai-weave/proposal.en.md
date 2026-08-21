@@ -5,7 +5,7 @@ language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Begin with retention, shape through seams, and govern AI through reversibility: public evidence corrects the 11.4 sq km plan, while five seams, three regimes, and two flagships form a reviewable, replayable, stoppable renewal protocol."
-iteration: "v5.3-depth"
+iteration: "v5.2-depth"
 ---
 
 # THE COMMON EAVE: An AI Innovation Belt Organised by Public Life
@@ -99,8 +99,6 @@ Ten scenarios include three industrial tests—green-AI energy comparison, edge-
 
 The Agent is not a citywide controller but ten bounded collaboration roles. A spatial Agent reads only de-identified facility conditions and human reports, then suggests a maintenance order; a service Agent supports multilingual questions, on-site routing, and appointments but cannot refuse an offline service; a mobility Agent issues conflict warnings and time-sharing options while on-site staff and competent authorities retain every final decision. Each trial publishes a learning receipt: whether the problem improved, who benefited, who may have been missed, what failed, and whether the next cycle should continue or exit. AI innovation is therefore judged by its ability to help public problems be found, deliberated, and reversibly improved—not by the model name alone.
 
-v5.3 makes the Agent Service Contract a reviewable sequence: minimum data input → admission rule → human takeover → offline equivalent → appeal/exit → learning receipt. Three mandatory-failure fixtures intercept identity recognition, an attempt to change a real traffic signal, and a request without a named human owner. They are offline concept tests, not proof of deployment, filing, or completed safety assessment. [source:SRC-BEIJING-AGENT-DEVELOPMENT-MEASURES-202607] [metric:negative_test_count]
-
 ## Land Use, Building Scale, and Adaptation
 
 Auditable concept land-use zones remain complete and non-overlapping, but design attention shifts to public ground and porous edges. Building action follows use first, adaptation second, construction last; structural, fire, heritage, carbon, rent, and displacement evidence is required before any building-level decision. [data:geometry/land_use.geojson#LU-001] [depth:retain_renovate_demolish]
@@ -157,8 +155,6 @@ Each of the ten work packages passes four gates: a data gate for boundary, right
 
 Actors are separated by decision authority. Government and responsible departments confirm statutory geometry and public duties; professional teams deepen planning, architecture, mobility, utilities, heritage, and accessibility; universities and companies provide real research and scenario needs; communities, residents, and front-line maintainers join walks and reviews; Agents organise evidence and expose conflict only. Every stage uses the same evaluation indicators: phone-free service, completed accessible journeys, protected free pause, closed maintenance tickets, and intercepted negative samples. Satisfaction, cost, and mobility improvement remain pending without credible baselines.
 
-v5.3 turns zero-phase co-design and five-seam route audits into a data gate. Participants should include residents, rights/operating stakeholders, universities and research staff, maintainers, commuters, and people with mobility or sensory disabilities. Observations record date, time, entrance, direction, wait, detour, clear path, lighting, and weather; they do not use facial recognition or generalise into belt-wide flows or resident preferences. Formal geometry, rights, trees, drainage, or consented engagement data trigger a review of prior claims, metrics, and figures. [source:SRC-BEIJING-URBAN-RENEWAL-JOINT-REVIEW-202501] [source:SRC-BEIJING-BLOCK-CONTROL-REFORM-202607] [metric:public_audit_protocol_count]
-
 2026-2030 is the adopted Fifteenth Five-Year Plan delivery window: establish demographic, flow, climate, rights, and maintenance baselines; run three testbeds at Qinghe Benchmark Garden, Xiaoyuehe Public Test Bank, and Four-Corner Commons; deepen the two flagships; and publish annual learning receipts. 2031-2035 is only a 2035 adaptation window. As of August 2026 no formal Sixteenth Five-Year Plan is available for this proposal; retention, revision, scaling, or exit must follow formal plans and evaluation. [source:SRC-HAIDIAN-15TH-2026] [source:SRC-BEIJING-MASTER-2035] [metric:policy_horizon_count]
 
 v5.2 adds six responsibility-ledger records covering lead class, permit gate, relative cost band, O&M, phase, and stop rule. S/M/L are not estimates. Without statutory applicants, professional costs, approved O&M budgets, and representative public mandate, concept maturity cannot be presented as construction readiness. [metric:responsibility_ledger_record_count]
@@ -167,13 +163,13 @@ v5.2 adds six responsibility-ledger records covering lead class, permit gate, re
 
 ## Metrics, Recalculation, and Compliance
 
-The official intake, professional, and visual checks pass. A professional spatial review was completed and passed in the declared isolated dependency environment against the fixed design Git head; the dependency-free script is supplementary structural/topology evidence and does not replace that review. Provisional site, green, public-space, and footprint values are reproducible; FAR, height, setbacks, and statutory green ratios remain unknown. Official geometry will trigger recalculation of nine layers, metrics, figures, HTML, and PDFs. [metric:site_area_sqm] [depth:metrics_recalculation]
+The official intake, professional, and visual checks pass. A dependency-free script also checks structure and obvious topology, but Shapely and PyProj are not installed in this runtime, so the repository's professional spatial review is not claimed. Provisional site, green, public-space, and footprint values are reproducible; FAR, height, setbacks, and statutory green ratios remain unknown. Official geometry will trigger recalculation of nine layers, metrics, figures, HTML, and PDFs. [metric:site_area_sqm] [depth:metrics_recalculation]
 
 From a jury perspective, completeness is not enough. The two flagships must connect brief alignment, originality, AI-planning innovation, feasibility, inclusion, risk compliance, and expression into one evidence chain. [source:SRC-PEER-CATALOG-20260810] [metric:flagship_public_design_count]
 
 ![Project gap, local evidence, and Agent contract](assets/figures/metrics-evidence.en.png)
 
-The studio retains 12 design tasks and 3 design negative samples, and adds 3 governance must-fail fixtures that do not enter the task-derived metrics; every task records a valid dispatch schema and complete audit fields. These values are recomputed from simulation.json and prove offline replayability only. Average detour reduction, shelter coverage, public acceptance, and operating cost remain unknown. [metric:simulation_success_rate] [metric:tool_schema_pass_rate] [metric:agent_governance_fixture_count]
+The studio contains 12 tasks and 3 negative samples; every task records a valid dispatch schema and complete audit fields. These values are recomputed from simulation.json and prove package replayability only. Average detour reduction, shelter coverage, public acceptance, and operating cost remain unknown. [metric:simulation_success_rate] [metric:tool_schema_pass_rate] [metric:audit_completeness]
 
 v4 adds package-recomputable counts for twenty planning units, five cross-city seams, ten renewal packages, twelve building-interface types, nine mobility links, and eleven green-network components. They prove that the planning system exists beyond the narrative. Because official geometry, parcels, controls, surveyed buildings, and engineering baselines remain missing, every ratio supports concept comparison only and is not a statutory conclusion. [metric:planning_unit_count] [metric:cross_city_seam_count] [metric:green_network_component_count]
 

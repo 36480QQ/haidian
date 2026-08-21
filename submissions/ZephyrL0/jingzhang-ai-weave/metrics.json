@@ -20,7 +20,7 @@
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 3159036.712,
+      "value": 3159125.179,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
@@ -33,7 +33,7 @@
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 879132.939,
+      "value": 879157.451,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
@@ -46,7 +46,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 1672787.92,
+      "value": 1672759.049,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -59,7 +59,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.276797,
+      "value": 0.276805,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -73,7 +73,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.07703,
+      "value": 0.077032,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -704,35 +704,6 @@
       "confidence": "medium",
       "assumptions": [
         "2021 ESA WorldCover signal on provisional key-area polygons."
-      ]
-    },
-    "public_audit_protocol_count": {
-      "status": "known",
-      "value": 2,
-      "unit": "count",
-      "source_files": [
-        "assumptions.json",
-        "risk.json",
-        "proposal.md"
-      ],
-      "formula": "count(structured protocols for zero-phase co-design and five-seam route audit)",
-      "confidence": "medium",
-      "assumptions": [
-        "协议定义可复核字段与停止条件，不代表已完成现场观察或公众授权。"
-      ]
-    },
-    "agent_governance_fixture_count": {
-      "status": "known",
-      "value": 3,
-      "unit": "count",
-      "source_files": [
-        "simulation.json",
-        "risk.json"
-      ],
-      "formula": "count(must_fail_fixtures in public_space_agent_admission_exit_protocol)",
-      "confidence": "high",
-      "assumptions": [
-        "治理fixture为离线合成测试，不计入原有12项设计任务，也不代表真实部署或安全评估。"
       ]
     }
   }
