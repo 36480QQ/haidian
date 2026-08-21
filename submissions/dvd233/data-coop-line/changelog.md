@@ -1,5 +1,19 @@
 # 方案迭代记录
 
+## v1.8 - 2026-08-22
+
+P1-05 text-level alignment with the reported approved regulatory plan / 已获批街区控规的文本级对齐与证据边界
+
+- Baseline / 基线：从最新 `upstream/main` `114f06a1d59b94aece4807747ac00e3d6a396d40`（最后观察 `2026-08-22T00:30:22+08:00`）建立干净分支 `codex/data-coop-line-p1-05-plan-alignment-20260822`。前次观察 `bfd1cff1d6db793f8dc52321b406e23ea830b6fd` 至冻结点只含 PR #3693 的另一投稿更新，未触及本投稿、投稿 Skill、brief、schema、validator、helper 或门禁，判定与本轮无关。
+- Reason / 原因：既有包已闭合空间复算、场地证据、可演练 MVP、现场模板、失败测试和五分钟评审脊柱，但尚未把最新规划文本事实纳入设计依据。同行方案正强化规划对齐和实施证据；本轮选择不改变方向、许可或空间量即可单轮闭环的文本级校准，避免在缺少官方批复文件和清权 geometry 时制造伪法定图层。
+- Evidence tiers / 证据分层：官方海淀分局 2025-02-08 公开参与采信通告仅证明 2022—2035 标签草案于 2024-12-19 至 2025-01-19 公示并记录意见研究与采纳；北京日报经人民网转载的 2026-08-12 报道称 2024—2035 版本获批，并报道文字四至、9 个街区、约 1668.2 公顷与“一带一轴、两心多点”。未取得官方批复文号、确切批复日期、完整控规文本、法定图则或清权 vector，两个年限标签分别归因，不静默合并；报道数字不进入 `metrics.json`，文字四至不绘制 polygon。
+- Before → After / 修正前后：修订前，评审者无法在本包内区分“官方公开参与过程”与“媒体获批报道”，也无法核对这些信号是否漂移既有空间证据；修订后新增唯一事实源 `visual/assets/planning-alignment-register.json`（Register ID `DATA-COOP-PLAN-ALIGNMENT-01`，SHA-256 `a3d01d5cd3745ae753865ac076c363b585403bf61688b60fb23aae75e0262650`），固定 4 项文本事实、4 项方向不变的设计响应、来源用途边界，以及本轮开始时 `metrics.json` 和九个 GeoJSON 的哈希。
+- Design calibration / 设计校准：规划报道只强化四个既有优先级——遗址公园线作为公共利益服务层、大钟寺作为单一演练焦点、南北/东西慢行与无数据正线优先、存量建筑先调查后适应性再利用并保持 test-fit 可逆；不把本方案结构说成官方采用，不确认站口、路权、真实建筑、产权、容量、无障碍绩效、实施时序、政府背书或合作承诺。
+- Carriers & rights / 载体与权利：同步中英 proposal、脚本派生报告 HTML、双语离线 visual、来源/假设/合规/版权说明、2400×1500 双语原创技术图与四份 PDF。A0 中英各由 8→9 页、A3 中英各由 10→11 页；冻结版全部 36 个既有页面逐像素一致，只追加 P1-05 页。外部网页仅作最小事实转述和链接引用，不复制图片、页面视觉、附件、地图、vector 或长段原文。
+- Verification / 验证：证据一致性复算 PASS，EPSG:4548 既有指标与证据签名 `c880c438924399d40267391551669d937dcfc5e144850eb511a45bbf024c4a52` 不变；site evidence 17/17、field operations 215/215、drill 21/21 与 8/8 负向夹具、reviewer spine 94/94 与负向自测、planning alignment 113/113 与伪造“已取得官方批复文件”的负向自测均通过。四份 HTML 在 1440×900 与 390×844 下均无坏图、远程资源、控制台错误或横向页面溢出；四份 PDF 共 40 页完成 contact-sheet 检查，新页全分辨率复核无裁切、重叠或乱码。
+- Gate discipline / 门禁纪律：所有受影响载体完成后才执行 ready-package manifest refresh；refresh 清空 `self_checked` 后必须立即用冻结 main 的完整 self-check 重新取得状态，再运行 strict-manifest、普通 preflight、`--check-push` 与专项审计。不运行 finalize，不删除、跳过或弱化检查，最终状态以 `manifest.json` 与 `self_check.json` 为准。
+- Scope & boundary / 范围与边界：只修改 `submissions/dvd233/data-coop-line/`；GeoJSON、metrics、证据签名、投稿许可、核心价值主张和方案方向不变。官方批复文件、完整控规、法定图则、规划 polygon 和真实实施条件仍是明确缺口；PR #2540、#2746 及其他已合并 PR 保持只读，不修改共享协议、工具、数据、仓库文档或 Gallery 生成物。
+
 ## v1.7 - 2026-08-21
 
 P2-03 five-minute reviewer evidence spine / 五分钟评审证据脊柱

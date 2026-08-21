@@ -32,6 +32,8 @@
         "submissions/dvd233/data-coop-line/assets/figures/metrics-evidence.png",
         "submissions/dvd233/data-coop-line/assets/figures/mobility-bluegreen.en.png",
         "submissions/dvd233/data-coop-line/assets/figures/mobility-bluegreen.png",
+        "submissions/dvd233/data-coop-line/assets/figures/planning-alignment.en.png",
+        "submissions/dvd233/data-coop-line/assets/figures/planning-alignment.png",
         "submissions/dvd233/data-coop-line/assets/figures/reviewer-evidence-spine.en.png",
         "submissions/dvd233/data-coop-line/assets/figures/reviewer-evidence-spine.png",
         "submissions/dvd233/data-coop-line/assets/figures/site-overview.en.png",
@@ -71,6 +73,8 @@
         "submissions/dvd233/data-coop-line/visual/assets/dazhongsi-field-validation-pack.json",
         "submissions/dvd233/data-coop-line/visual/assets/evidence-consistency.js",
         "submissions/dvd233/data-coop-line/visual/assets/evidence-snapshot.json",
+        "submissions/dvd233/data-coop-line/visual/assets/planning-alignment-audit.js",
+        "submissions/dvd233/data-coop-line/visual/assets/planning-alignment-register.json",
         "submissions/dvd233/data-coop-line/visual/assets/reviewer-evidence-spine-audit.js",
         "submissions/dvd233/data-coop-line/visual/assets/reviewer-evidence-spine.json",
         "submissions/dvd233/data-coop-line/visual/assets/site-evidence-audit.js",
@@ -81,7 +85,7 @@
       "ai_package_stages": {
         "submissions/dvd233/data-coop-line": "formal"
       },
-      "total_bytes": 11689953,
+      "total_bytes": 13268142,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -168,7 +172,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 14,
+          "source": 16,
           "standard": 1,
           "depth": 13,
           "data": 12,

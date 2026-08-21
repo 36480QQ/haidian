@@ -128,6 +128,57 @@
       "limitations": "Textual extents and approximate areas cannot substitute for official GIS/CAD geometry."
     },
     {
+      "id": "JINGZHANG-PLAN-PARTICIPATION-NOTICE-20250208",
+      "url": "https://ghzrzyw.beijing.gov.cn/chengxiangguihua/ghlgg/hd_ghlgg/202502/t20250207_4005553.html",
+      "source_type": "official_public_process_notice",
+      "title": "关于《京张铁路遗址公园沿线（人工智能创新街区重点地区）街区控制性详细规划》（草案）公示采信情况的通告",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "published_at": "2025-02-08",
+      "accessed_at": "2026-08-22",
+      "retrieved_response_sha256": "e37446c8f0d675b31031468a5aa37fcfcc2b62a7df30298d91432544b1214f0d",
+      "review_status": "official_process_notice_citation_only",
+      "license_or_reuse_terms": "Public government notice used through minimal factual paraphrase and citation; no page image, attachment or long passage is redistributed.",
+      "allowed_uses": [
+        "draft title and 2022-2035 period label",
+        "public display period",
+        "documented consideration of public feedback"
+      ],
+      "prohibited_uses": [
+        "final approval status or approval date",
+        "official plan polygon or coordinates",
+        "statutory controls not reproduced in the notice",
+        "government endorsement of this submission"
+      ],
+      "usage": "Official evidence of the public-participation process only.",
+      "limitations": "This is a consultation-adoption notice for a draft, not the final approval document, statutory map or official vector geometry."
+    },
+    {
+      "id": "JINGZHANG-PLAN-APPROVAL-REPORT-20260812",
+      "url": "https://bj.people.com.cn/n2/2026/0812/c82840-41665678.html",
+      "source_type": "media_report_attributed_to_official_department",
+      "title": "京张铁路遗址公园沿线街区控规获批 一条“绿带”建设引领区域城市更新",
+      "publisher": "人民网北京频道（来源：北京日报）",
+      "published_at": "2026-08-12T08:54:00+08:00",
+      "accessed_at": "2026-08-22",
+      "retrieved_response_sha256": "0fd37bec49cdae71f86aaddb92be68952d8625f9ebcab65e9219e4c208079bc2",
+      "review_status": "media_report_citation_only",
+      "license_or_reuse_terms": "Public news report used through minimal factual paraphrase and citation; no article image, page visual or long passage is redistributed.",
+      "allowed_uses": [
+        "reported approval status and 2024-2035 period label",
+        "reported textual bounds, block count and approximate total area",
+        "reported one-belt one-axis two-centres multiple-nodes structure",
+        "reported urban-renewal directions"
+      ],
+      "prohibited_uses": [
+        "official approval document number or exact approval date",
+        "official plan text, statutory map, polygon or coordinates",
+        "conversion of reported figures into submission metrics",
+        "government endorsement or implementation commitment"
+      ],
+      "usage": "Time-sensitive text-level planning alignment, always attributed as reporting rather than the official plan document.",
+      "limitations": "The official approval document, complete plan text, statutory drawings and rights-cleared vector geometry were not retrieved; the report cannot support digitisation or legal-control conclusions."
+    },
+    {
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
