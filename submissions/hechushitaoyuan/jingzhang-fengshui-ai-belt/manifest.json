@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "9219f23c124c737d1df2dae6f8b6bc1b9a289a7ee40920c2c34954ed5713cdb2"
+      "sha256": "20ae40a36945e503b0a9eabdefd45858aa9b81446672855aa1878b79cfa89bd6"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "4e19e91a1f7bd059decb94676567a420ad38362405e32df040b73a096647bbff"
+      "sha256": "bcfa54669b1e147196bc115316c2d794680146bb929aee9ed6cd08b66c884876"
     },
     {
       "path": "assumptions.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "c3770e1d3a7d739aeaf925503c3552e8d862d730d4b09a8c79711dbe27f9ead0"
+      "sha256": "4e315cbabdc41784d009113fbc8141ec8882f260a9b51e02c65909b0fec690bf"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "584f0dae4727f6cc842a162b2f0aadf690487028d4a7418a877eb0cf23b6cbdf"
+      "sha256": "a346b5a7d6dfacecd7e1a017ed30152c7f0ab693b90d8e8bac4f0bb928d78c78"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c52a6948bbd58275f80d99b00ed172c8cf828735c0e9f784105430c10a77244d"
+      "sha256": "ec1e8f7c7c2366256f22aaf8c52eb2ec8a0b5bc67399afd33c871a93aa5bdd91"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d74ff118e019d1f8b1365c1abb549bcb93aadee85098cea5e76b44ac6af84fac"
+      "sha256": "003ce3e45649d0d4f6cee78edb6eab8364d2dae2bf11a3b27fa2f61e5403356e"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "eb93d4aa2df8573e4f6bc6970f1cd8dfd7073525eb4d91bb7a7152e417a61a44"
+      "sha256": "0c5e15d06022954091a695dd7c37aecabff14b05703040669a5417d2142fe59d"
     },
     {
       "path": "visual/index.en.html",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "b25160d367aefd4c322080b3267c70b568e2b142c290eb4c6bb608636982c4e1",
+      "sha256": "1a6a80977b7f0c6bbbb6e03ccc0863c84e3643956de007a5ecd673b6392673f1",
       "language": "neutral"
     },
     {
@@ -483,6 +483,17 @@
       "description_zh": "四步治理协议 + 七条规则 + 156 项离线演练记录（解析双语场景卡表逐项检查，全通过，可复算）。",
       "description_en": "Four-step governance protocol, seven rules, and a 156-check offline drill record parsed from the bilingual scenario tables (all passing, recomputable).",
       "sha256": "312d45bdaad98e6fd83f0e38e2f3ae2c4f7aa33ccc0b5370d98b81446dfe8f92"
+    },
+    {
+      "path": "visual/assets/a11y-color-check.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "无障碍色觉核验结果（四类色觉 × 55 色对）",
+      "title_en": "Accessibility colour-check results",
+      "description_zh": "11 色语义色板在正常/绿盲/红盲/蓝盲条件下的 CIEDE2000 两两核验逐对结果；39 对例外与整改说明见正文。",
+      "description_en": "Pairwise CIEDE2000 results of the 11-colour palette under four vision conditions; 39 exceptions with remediation notes in the proposal.",
+      "sha256": "16ba0b27b94d4ca717751f4a0f954dcab67527e03b1343ca3ea3be310987a4d4"
     }
   ],
   "validation_claim": {

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Reframing fengshui as China's traditional science of human-settlement performance, this proposal turns the centennial Jing-Zhang railway corridor into a computable, recomputable and operable AI innovation belt: one dragon pulse, three areas and five bands, embracing waters, and deliberate reserve land."
 tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.1"
+iteration: "v1.2"
 ---
 
 # Jing-Zhang Qi-Pulse · Fengshui AI
@@ -34,6 +34,8 @@ This proposal is built first on the official pre-qualification announcement issu
 **Generation disclosure**. This package is a multi-agent collaboration: the first draft was produced by an AI agent (opencode, model kimi-k3), and this revision was deepened by zcode (model GLM-5.3). Spatial layers were deterministically derived from the provisional boundary with Python (shapely/pyproj); figures were rendered with matplotlib from the same geometry; the narrative was written by the agents under human direction. All scripts and intermediate artifacts are recomputable and auditable, as required by the co-creation charter [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ![Overall concept: one dragon pulse runs north–south; three areas and five bands unfold along it](assets/figures/site-overview.en.png)
+
+*How to read: find the gold spine running north-south first, then the three areas (store north, gather centre, face south) and the five bands; dashed lines are provisional boundaries — the whole figure recomputes on official data.*
 
 ## Three-Level Scope Framework
 
@@ -69,6 +71,8 @@ Four translations define the working content of Qi-as-Data, each pointing at a m
 **Naming and identity**. Primary name "京张气脉 · 风水AI" (Jing-Zhang Qi-Pulse · Fengshui AI). Logo direction (conceptual): a luopan compass fused with concentric rail circles — the outer ring carries the twenty-four mountain directions, the centre embeds the herringbone rail symbol in homage to Zhan Tianyou; the palette is rice-paper white, ink, cinnabar, and gilt. The tagline reads "fengshui as recomputable urban science". The twenty-four mountain directions double as the site's wayfinding orientation system — district suffixes, signage-column headings, and scenario IDs share one direction coordinate, so the cultural symbol performs real spatial work.
 
 ![Brand identity: compass-and-rail mark construction, palette, and the 24-direction wayfinding application](assets/figures/logo-identity.en.png)
+
+*How to read: the mark builds outward in three layers — the 24-direction ring, the rail rings, the central herringbone; the middle band is the six-colour palette and its uses.*
 
 **Global cases and transferable mechanisms**. Eight public cases along the "linear heritage + innovation ecosystem + Eastern wisdom" axis (background-level compilation in `sources.json`; facts rely on public reporting and require professional verification before formal use) [source:SRC-GLOBAL-CASE-REFERENCES]:
 
@@ -113,6 +117,8 @@ This reading rests on background-level material and common observation [source:P
 
 ![One pulse, five bands — land-use structure](assets/figures/land-use-structure.en.png)
 
+*How to read: one pulse at centre, five bands in balance, reserve at the outer edges; the legend carries land-use codes, and the labels printed on patches are the accessibility redundancy.*
+
 **Renewal strategy**. The overall design area is primarily stock renewal: retain universities, existing industry buildings, and railway relics as the "skeleton"; retrofit inefficient interfaces along the pulse; insert public space and scenario nodes. Parcel-level retain/renovate/demolish decisions, FAR, and height controls all await official regulatory conditions; this proposal states no statutory indicator conclusions [depth:development_intensity_controls]. Renewal proceeds along three interfaces: the spine interface (open walls, add entries and dwell points), the qi-gateway interface (ground-floor activation and arcade-style retrofit of the cross streets), and the compound interface (softening unit and neighbourhood edges with time-shared opening). Urban character follows "open and permeable — let wind pass through the city", avoiding wall-like sealed development on the pulse.
 
 ## Detailed Design of Key Areas
@@ -135,9 +141,31 @@ The three areas share one design language, so the scheme reads as "one proposal,
 
 ![Three key areas — the triad](assets/figures/key-areas.en.png)
 
+*How to read: the positioning difference shows in the landmark motifs — tower "ring", overlook "line", plaza "disc"; note the PROV dashes and the Issue #1029 position note.*
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-**Six personas**: the deep-research AI scientist (Xuanwu band), the open-source developer (Origin Community), university students around Wudaokou, long-time local residents, pilgrimage visitors, and the delivery riders who cross the corridor daily. Each persona maps to concrete spatial interfaces and service levels, recorded in the "spatial carrier" and "no-AI path" columns of the scenario card table below [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. In detail: researchers need quiet deep-work interfaces and controllable experimental carriers (Xuanwu band, #8); developers need showable, collaborable public interfaces (Origin Community, #1 and the solar-term fairs); students need low-cost, high-frequency third places (Azure-Dragon band and the kiosks); long-time residents need familiar daily services and a channel that does not depend on smartphones (#5, staffed desks); pilgrimage visitors need a narrative they can take away (#1, #9); riders need safe, efficient crossing and docking (#3, #4).
+**Six personas**: the deep-research AI scientist (Xuanwu band), the open-source developer (Origin Community), university students around Wudaokou, long-time local residents, pilgrimage visitors, and the delivery riders who cross the corridor daily [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. The need–space–boundary mapping for each persona, with scenario-card numbers in the response column:
+
+| Persona | Typical need | Spatial response (scenario cards) | Self-check boundary |
+| --- | --- | --- | --- |
+| AI researcher | Quiet deep-work interface; controllable test carrier | Xuanwu band test interface; #8 testbed, #13 pavilion | Test data processed on site; no personal data |
+| Open-source developer | Showable, collaborable public interface | Origin Community gallery; #1 guide, solar-term fairs | Aggregated registration only; no personal profiling |
+| University student | Low-cost, high-frequency third places | Azure-Dragon band and kiosks; #5 enquiries | One-off requests; no health records kept |
+| Long-time resident | Familiar daily services without smartphones | Kiosk staffed desks; #5 human channel | Non-digital equivalent channel in every scenario |
+| Pilgrimage visitor | A narrative to take away | Three landmarks; #1 guide, #9 AR trail | Non-contact AR overlay; no contact with relics |
+| Rider / courier | Safe, efficient crossing and docking | Gateway streets and the port; #3 escort, #4 port | Device logs only; no recipient data |
+
+**Accessibility and inclusion check (quantified)**. The figure palette's eleven semantic colours were checked pairwise under four vision conditions with CIEDE2000 [metric:a11y_color_pair_count]: vision simulation uses the Machado et al. (2009) dichromatic matrices (severity 1.0); colour difference uses CIEDE2000 (Sharma et al. 2005 implementation, self-tested 5/5 against the paper's official vectors); the pass threshold is ΔE00 ≥ 20 [source:SRC-A11Y-CHECK-V12]. Results: normal-vision median 37.7 (5/55 pairs below threshold), deuteranopia 35.5 (10/55), protanopia 33.7 (13/55), tritanopia 37.8 (11/55) — 39 exceptions in total [metric:a11y_color_pair_fail_count].
+
+| Vision condition | Pairs | Median ΔE00 | Min ΔE00 | Below threshold |
+| --- | --- | --- | --- | --- |
+| Normal | 55 | 37.7 | 7.5 | 5 pairs |
+| Deuteranopia | 55 | 35.5 | 3.8 | 10 pairs |
+| Protanopia | 55 | 33.7 | 4.3 | 13 pairs |
+| Tritanopia | 55 | 37.8 | 3.4 | 11 pairs |
+
+The exceptions cluster in same-family colours (gold ↔ bronze ↔ amber, azure ↔ deep-azure, grey ↔ pale jade) and red-green pairs (cinnabar ↔ jade). **The figures never rely on colour alone**: every band carries its name and land-use code, every scenario card its number, every phase its "Phase 1/2/3" label — textual redundancy covers every categorical distinction, so the exceptions cause no information loss. Remediation note (for professional deepening): separate the three golds by at least 1.5 lightness steps, push the two azures apart in hue, darken the pale jade. The full exception list with per-pair values is registered in `visual/assets/a11y-color-check.json`; method and recomputation path are disclosed in `sources.json` entry SRC-A11Y-CHECK-V12. Risk item ⑤ (equivalent channels) and this section back each other.
 
 **Thirteen AI+ scenario cards (conceptual; ★ = industry test-and-validation scenario)** — each card is itself the scenario–space–operation mapping: a spatial carrier pinned to a band or node; minimal data respecting data-minimisation and anonymity; human takeover and a no-AI path so services survive intelligent-layer failure; an operator recorded as organisation type, never a named unit; and a post-exit spatial use so the city stays useful after a scenario retires [metric:scenario_card_count]. Three of the thirteen are industry test-and-validation scenarios (#4, #8, #13), meeting the taskbook minimum of three [metric:testbed_count]:
 
@@ -165,9 +193,13 @@ A note on reading the cards: a reviewer can audit any card from three columns �
 
 ![Thirteen AI+ scenario cards at a glance: carriers, operator types, and testbed marks](assets/figures/scenario-cards.en.png)
 
+*How to read: cinnabar-bordered starred cards are the three industry test cards (#4/#8/#13); the two lines under each card are its carrier and operator type.*
+
 **Cultural narrative (three layers of time)**. The 1909 railway is the "skeleton" — self-reliant engineering wisdom; Zhongguancun since the 1980s is the "blood" — grassroots innovation energy; AI in the 2020s is the "spirit" — machine intelligence becoming self-aware. Fengshui gathers all three into one spatial grammar: the pulse as axis, mountain-directions as signage, solar terms as calendar. Culture here is not decoration on technology; it is the operating system of space and operation [source:SRC-JINGZHANG-RAILWAY-HISTORY]. Spatially: the skeleton corresponds to the conservation interface of the spine and rail relics; the blood to the everyday interfaces of the habitat and waterside-retail bands; the spirit to the research interface of the Xuanwu band — three layers of time are not three theme zones but three densities overlaid on one corridor [source:SRC-QINGHUAYUAN-STATION].
 
 ![Three layers of time: skeleton, blood, and spirit in one spatial grammar](assets/figures/cultural-narrative.en.png)
+
+*How to read: three eras top-down — 1909 skeleton, 1980s blood, 2020s spirit; the strip at the bottom is the shared spatial grammar.*
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -190,6 +222,8 @@ The land-use layer fully partitions the provisional boundary (union identical to
 **Slow-mobility first: five gateways, two avenues**. The ~9.7 km heritage greenway is the sole high-order slow spine; Qi-Pulse East/West Avenues carry vehicles along the park interface; five east–west branch streets (Mingtang, Shuangqing, Origin, Xueyuan Gateway, Xuanwu) act as "qi gateways", channelling urban energy into the pulse [data:geometry/roads.geojson] [depth:traffic_rail_slow_parking]. All roads are conceptual centrelines, not redlines or engineering alignments. The slow network is organised in three levels — greenway (all-age accessibility, full lighting and rescue), qi gateway (safe crossings and dwell nodes), lane (softened, time-shared compound edges) — sharing one direction wayfinding so that "learn the directions once, never lose the way". Parking is conceptually externalised to cluster interfaces on both sides of the spine; the spine is car-free end to end, and freight enters via the gateway streets to the delivery port (#4) for last-mile low-speed distribution.
 
 ![Five gateways, two avenues — blue-green mobility](assets/figures/mobility-bluegreen.en.png)
+
+*How to read: the gold spine is the sole high-order slow axis; the five cross streets are the qi gateways; blue tones mark the water intent and the embracing buffer.*
 
 **Rail and interchange**. Existing metro anchors (Wudaokou, Dazhongsi, etc.) connect to the greenway conceptually via gateway streets; no new alignment conclusions. **Municipal and new infrastructure**: a sensing and communications strip along the pulse (microclimate sensors, Wi-Fi/5G micro-cells, robot charging) — also the physical carrier of scenario cards #13 "Wind-Harbouring compute pavilion" and #4 delivery port — with capacity and routing pending professional study. **Public services**: "wind-shelter pavilions" (community services, health navigation, public toilets) coupled to the plaza system for the six personas [data:geometry/public_space.geojson].
 
@@ -234,6 +268,8 @@ Policy suggestions (non-binding): a single public operator stewards the corridor
 
 ![Phasing and renewal projects: three conceptual phases and six numbered projects](assets/figures/phasing-renewal.en.png)
 
+*How to read: upper map is the three phases advancing south to north; lower table is the six action packs and their phase; phasing is condition gates, not a timetable.*
+
 **Long-term operation (agent.6)**: an annual calendar paced by the twenty-four solar terms, each node with a concrete deliverable rather than a ritual — the Lichun opening run (the corridor's annual "qi-opening" ceremony with a facilities health report), the Chunfen open-source fair (the developer community's annual market and scenario-card recruitment), the Xiazhi light festival (the Zhuque light field's annual peak with published energy accounting), the Qiufen global developer conference (the Register's annual honours), and the Dongzhi Wind-Harbouring forum (annual closed-door review and next year's solar-term calendar release). A "Site-Reader Programme" grows the developer community and open-sources the reading of urban data (role specification R-SITE-READER, see the action-pack section); international messaging leads with "Fengshui: the original urban algorithm", presenting fengshui as urban science the world can read — supported by a three-sentence kit (one history, one translation, one invitation) ready for international media and conferences.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
@@ -259,6 +295,8 @@ Phase areas likewise recompute from `phasing.geojson`: ~470 ha south, ~345 ha ce
 
 ![Metrics evidence and recomputation](assets/figures/metrics-evidence.en.png)
 
+*How to read: core metric cards on the left, recomputation chain and sources on the right; "pending" cells are control-class indicators, never placeholder numbers.*
+
 Task coverage: announcement items 1.3/1.4/1.5 and agent tasks agent.1–agent.6 are registered item by item with sections, layers, metrics, drawings, and HTML evidence in `compliance_matrix.json`; professional-standard responses live in `standard_matrix.json`; design-depth self-evidence in `design_depth_matrix.json`; the four-gate self-check report is authoritative in `self_check.json`.
 
 ## Multimodal Expression: Cover, Audio Guides, and Concept Video
@@ -276,6 +314,26 @@ Three rules govern all media: **no autoplay** (visible controls, silent start); 
 **Key risks and mitigations (summary)**: ① provisional-boundary precision — every metric carries a recalculation trigger for official data; ② key-area position dispute (Issue #1029) — rough positioning only, no precise inference; ③ cultural-expression risk — fengshui content is strictly framed as traditional human-settlement science and cultural symbolism, with no divination, superstition marketing, or "fortune-changing" claims, and no over-entertaining landmarks (per agent.4 prohibitions); ④ data compliance — scenario sensing is anonymised and aggregated with human review, consistent with generative-AI interim measures [standard:GENERATIVE-AI-INTERIM-MEASURES]; ⑤ elderly and vulnerable groups — equivalent non-digital channels are retained [standard:ELDERLY-SMART-TECH-PLAN-2020-45].
 
 Each risk has an owner in the design: ① is procedural and digested by this package's recalculation triggers, needing no extra act; ② is a community-communication risk — deepening should recheck it with public data and community discussion, not "fix" it unilaterally; ③ is an expression risk controlled by continuing discipline in naming, guiding, and event copy — the Golden Stele Register carries no "fortune-changing" categories; ④ is a compliance risk whose execution checklist is each card's minimal-data column — any new data item must be registered there before activation; ⑤ is an inclusion risk backstopped jointly by the no-AI-path and human-takeover columns — any scenario is accepted only after its no-AI path is. Risk here is not an appendix but a design constraint carried by every card and component.
+
+**Compliance anchors: statutory floor versus self-imposed standards**. To avoid "reading voluntarily adopted standards as legal obligations", the actual effect boundary of each main reference is stated item by item (this table is not legal advice; professional legal review governs at deepening):
+
+| Reference | What it actually prescribes | What it does not | What this scheme adds voluntarily |
+| --- | --- | --- | --- |
+| Generative-AI Interim Measures, Art. 14 | The generator's duty to dispose of unlawful content | No general-user stop switch is required | On-site stop buttons and human takeover on every card |
+| Same Measures, Art. 15 | A complaint-handling mechanism | No specific numerical deadlines | Closure deadlines left to operating procedures, not invented |
+| Barrier-Free Environment Law, Art. 39 | Accessibility requirements for certain new facilities | Does not automatically cover all stock spaces and digital interfaces | Full-route accessibility and per-card no-AI paths as voluntary upgrades |
+| State Council Notice 2020-45 (elderly-smart-tech) | Government-side age-friendly service duties | A policy notice, not a statutory duty on market actors | Non-digital equivalent channels as a voluntary commitment |
+| Urban Design Measures | General requirements for preparing and managing urban design | No regulatory indicator of this case | All metrics remain provisional pending official data |
+
+**Per-asset rights verification commands**. Every asset class can be independently verified by a third party:
+
+| Asset | Verification | Expected result |
+| --- | --- | --- |
+| Embedded PDF fonts | `pdffonts drawings/a3-booklet.pdf` | Only system-font subsets embedded; no uncleared fonts |
+| Font files in package | search `*.ttf / *.ttc / *.otf` | Zero (no font files redistributed) |
+| Metric recomputation | rerun each `metrics.json` formula under EPSG:4548 | Values match metrics.json |
+| Media generation chain | check `sources.json` entry SRC-MEDIA-RENDER-V11 | All locally and deterministically generated; no third-party assets |
+| Colour check | recompute per SRC-A11Y-CHECK-V12 | Matches `visual/assets/a11y-color-check.json` pair by pair |
 
 **Copyright**. Text, code, and figures are generated by AI agents (multi-agent: first draft opencode/kimi-k3, iteration zcode/GLM-5.3); figures and PDFs are rendered locally with the operating system's Microsoft YaHei and matplotlib's bundled DejaVu fonts (no font files redistributed); cases and historical facts are compiled from public sources at background level; no uncleared images, map screenshots, or third-party assets are used. Media disclosure: the cover and figures are deterministically rendered by matplotlib from package geometry; the audio guides are synthesised sentence-by-sentence by the built-in Windows speech engine (not a human recording); the concept video is rendered frame-by-frame by matplotlib and encoded locally with ffmpeg — all three are **concept ambience / guide narration, not spatial evidence**; methods are documented in `assets/media/experience.md`, the audio transcripts, and `sources.json` entry SRC-MEDIA-RENDER-V11. See `report/copyright_statement.md`.
 
