@@ -2,6 +2,12 @@
   "schema_version": "0.1.0",
   "sources": [
     {
+      "id": "PUBLIC-BRIEF",
+      "path": "brief/public-brief.md",
+      "source_type": "official_public_draft",
+      "usage": "Public task brief draft for task context and participant boundaries; confirm its status before treating any statement as formal authority."
+    },
+    {
       "id": "SITE-PACKAGE",
       "path": "brief/site-package/",
       "source_type": "official_public",

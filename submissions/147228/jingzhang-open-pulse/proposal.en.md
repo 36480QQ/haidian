@@ -5,7 +5,7 @@ author_github: "147228"
 author_name: "许丙南"
 language: "en"
 translation_of: "proposal.md"
-iteration: "v2.4"
+iteration: "v2.5"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "An evidence-led urban design proposal that turns the century-old railway corridor into a reversible, human-first and auditable AI innovation public belt."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
@@ -29,6 +29,22 @@ Every pilot follows one civic loop: question, authorise, test small, decide, iss
 ![One spine, three stations, two wings and the two-state S-02 evidence loop](assets/figures/site-overview.en.png)
 
 The first board separates the S-02 tabletop replay from the field window. The local synthetic tabletop repeats 4/4 fixtures, 6/6 checks and 5/5 restoration steps; that PASS applies only to the stop, withdrawal and restoration logic. The bounded field window remains on HOLD, is not authorised and has not run. Ordinary walking and human delivery stay available, and any person may ask to stop, until route, accessibility, safety, permission, maintenance and human-takeover evidence is complete. The replay record is `visual/assets/open-pulse-tabletop-evidence.json`; the field-window boundary is `visual/assets/example-s02-embodied-test-window.json`.
+
+## Ordinary Routes Come First and AI Adds a Reversible Gain
+
+Each key area keeps an ordinary service route that does not depend on an account, model or network. Zhongzhi Garden places human delivery beside a low-speed robot window, AI Origin places a staffed counter beside process retrieval, and Dazhongsi places resident return and ordinary retail beside capacity prompts. Each route leaves a five-step receipt that checks the ordinary entry, the AI role, human takeover, stop conditions and restoration [data:visual/assets/open-pulse-service-equivalence-atlas.json] [data:visual/assets/run-open-pulse-service-equivalence.js].
+
+| Receipt step | Reviewer check | Current boundary |
+| --- | --- | --- |
+| See ordinary entry | Walking, paper, human help and public rules remain available | Concept contract |
+| Know the AI role | Only bounded retrieval, prompts or window gains are described | Role pending review |
+| Human takeover | Accountable roles, complaint and exit paths remain | Not authorised |
+| Stop on failure | Conflict, overreach, fire or accessibility breach stops the route | Synthetic replay |
+| Restore and receipt | Remove the device or digital layer and retain the decision record | Field result unknown |
+
+![Ordinary service and AI gain equivalence receipt. Five stop and restore steps across three key areas](assets/figures/open-pulse-service-equivalence-atlas.en.svg)
+
+The replay checks only the links among 14 package scenarios, 8 operating actions, 3 nodes and 8 personas, with four negative fixtures returning to HOLD. It provides no resident experience, service performance, field accessibility, permit, staffing or official-score evidence [data:visual/assets/open-pulse-service-equivalence-atlas.json].
 
 ## Design Basis and Source List
 
@@ -352,7 +368,7 @@ See `sources.json`, `standard_matrix.json`, `design_depth_matrix.json`, `complia
 
 For bilingual traceability, the remaining source, standard, design-depth, data, metric and assumption markers are retained below with the same occurrence counts as the Chinese companion.
 - [source:AGENT-TASKBOOK] [depth:overall_spatial_structure] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/site_boundary.geojson#SITE-001]
-- [source:OFFICIAL-ANNOUNCEMENT] [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:PROCESSED-FACT-PACK]
+- [source:OFFICIAL-ANNOUNCEMENT] [source:OFFICIAL-ANNOUNCEMENT] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] [source:PROCESSED-FACT-PACK] [source:PUBLIC-BRIEF]
 - [source:PROCESSED-FACT-PACK] [source:PROCESSED-FACT-PACK] [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 - [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-URBAN-DESIGN-MEASURES]
 - [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/key_areas.geojson#PROV-KEY-001]
