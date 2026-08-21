@@ -1,7 +1,7 @@
 {
  "generated_from": "upstream/main",
- "corpus_size": 939,
- "proposals_with_readable_body": 939,
+ "corpus_size": 941,
+ "proposals_with_readable_body": 941,
  "method_note_zh": "全部读数从 upstream/main 的提案正文直接统计，可用本脚本重跑。只保存计数与目录键，不保存正文。关键词匹配是**下界**：一份用了别的说法的方案不会被计入，因此每个数字应读作「至少」。这一点写在这里而不是留给读者推断。",
  "method_note_en": "Every reading is counted from proposal bodies in upstream/main and is reproducible by re-running this script. Only counts and directory keys are stored, never bodies. Keyword matching is a LOWER BOUND: a proposal that words a provision differently is not counted, so read every figure as 'at least'.",
  "simulation_json": {
@@ -140,7 +140,7 @@
    ]
   },
   "remote_and_physical_estop": {
-   "count": 196,
+   "count": 198,
    "keys": [
     "submissions/007xf/jingzhang-on-duty",
     "submissions/147228/jingzhang-open-pulse",
@@ -191,7 +191,6 @@
     "submissions/007xf/jingzhang-on-duty",
     "submissions/147228/ai-era-human-city",
     "submissions/147228/commute-co-benefit-jingzhang",
-    "submissions/147228/enterprise-resident-flow-commons",
     "submissions/147228/jingzhang-human-city-os",
     "submissions/147228/jingzhang-open-pulse",
     "submissions/147228/mobility-commons-jingzhang",
@@ -226,14 +225,14 @@
     "submissions/DLucxoket/centennial-jingzhang-ai-belt",
     "submissions/Daolang239342/ren-track-ai-belt",
     "submissions/Davdong2/city-of-agents-jingzhang",
-    "submissions/DuanYuFi/jingzhang-room-for-error"
+    "submissions/DuanYuFi/jingzhang-room-for-error",
+    "submissions/Dytchem/heritage-ai-loop"
    ]
   },
   "event_log": {
-   "count": 76,
+   "count": 75,
    "keys": [
     "submissions/147228/ai-era-human-city",
-    "submissions/147228/enterprise-resident-flow-commons",
     "submissions/147228/jingzhang-open-pulse",
     "submissions/147228/mobility-commons-jingzhang",
     "submissions/147228/zhongzhiyuan-autonomy-commons",
@@ -271,11 +270,12 @@
     "submissions/dingle2001/jingzhang-growth-mesh",
     "submissions/dizhiwangawa-design/jingzhang-meet-yard",
     "submissions/ferretgeek/jingzhang-sonic-commons",
-    "submissions/gehryliuRMuniversity/jingzhang-proving-line"
+    "submissions/gehryliuRMuniversity/jingzhang-proving-line",
+    "submissions/guyhuang/jz-common-ports"
    ]
   },
   "non_ai_equivalent_path": {
-   "count": 438,
+   "count": 439,
    "keys": [
     "submissions/007xf/everyday-jingzhang",
     "submissions/007xf/jingzhang-on-duty",
@@ -320,7 +320,7 @@
    ]
   },
   "scenario_level_suspension": {
-   "count": 558,
+   "count": 559,
    "keys": [
     "submissions/007xf/everyday-jingzhang",
     "submissions/007xf/jingzhang-on-duty",

@@ -1,7 +1,7 @@
 {
  "source": "git tree (authoritative) + per-proposal proposal.md and agent.json",
  "retrieved": "2026-08-21",
- "tree_count": 939,
+ "tree_count": 941,
  "gallery_index_count": 872,
  "missing_from_gallery_index": [
   "0237/jingzhang-ai-spine",
@@ -26,6 +26,7 @@
   "PozdnyakovMaxim/shared-floor-jingzhang",
   "RyanYang25/jingzhang-ai-belt",
   "StevePan-912/jingzhang-ai-open-loop",
+  "SumAiLLLL/jingzhang-gauge",
   "Tinxyoo/origin-smart-jingzhang",
   "Wang-Lvjing/jingzhang-ai-rail-optics",
   "XJungit/jingzhang-ai-innovation-belt",
@@ -66,6 +67,7 @@
   "www41818520-coder/jingzhang-civic-intelligence-protocol-v6",
   "www41818520-coder/jingzhang-civic-intelligence-protocol-v7",
   "www41818520-coder/jingzhang-civic-intelligence-protocol-v8",
+  "www41818520-coder/jingzhang-civic-interlocking-v9",
   "xhily/five-minute-ai-encounter",
   "xhily/jingzhang-ai-innovation-corridor",
   "xhily/jingzhi-belt-concept",
@@ -500,14 +502,14 @@
    "f": 0
   },
   "147228/enterprise-resident-flow-commons": {
-   "t": "京张流线公地：企业—居民全域通勤公平优化器",
-   "s": "把地铁、公交、自行车、步行/无障碍、汽车与停车装卸纳入同一张可审计的时段路缘账本，并把企业—居民对外通勤、人员动线和综合仿真接上；未来空中出行只作为受审批、可撤回、地面接驳优先的实验接口，三处重点区以五道硬门逐步验证。",
+   "t": "京张流线公地：企业—居民互惠通勤操作系统",
+   "s": "用众智园清河前厅、AI 原点照护环和大钟寺四象限换乘厅三种空间原型，把企业的到岗与路缘请求，同居民的连续通行、人工入口和申诉暂停权成对交付；缺少现场证据时只登记、不预约、不扩容。",
    "k": [
     0,
     6,
     5
    ],
-   "b": 72991,
+   "b": 43662,
    "m": 6,
    "f": 0
   },
@@ -524,14 +526,14 @@
    "f": 0
   },
   "147228/jingzhang-open-pulse": {
-   "t": "京张开源脉冲：一条可验证的 AI 创新公共带",
-   "s": "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。",
+   "t": "京张开源脉冲，城市发布自己的公共版本",
+   "s": "城市不追随模型版本，城市发布自己的公共版本。每项 AI 试验都须经过问题单、试验分支、有界测试、双重审查、公共发布和修复或退役，把短期演示转成可复核、可停止、能回到日常的城市能力。",
    "k": [
     0,
     6,
     5
    ],
-   "b": 89757,
+   "b": 22929,
    "m": 2,
    "f": 2
   },
@@ -3767,6 +3769,18 @@
    "b": 23577,
    "m": 9,
    "f": 2
+  },
+  "SumAiLLLL/jingzhang-gauge": {
+   "t": "京张标定带 THE GAUGE：以标定为铰链连接京张百年自主测绘与AI时代基准创新",
+   "s": "京张铁路的历史成就是一次自主标定——詹天佑团队独立完成关沟段测绘与1435mm标准轨距确立。AI时代面临平行的标定问题：没有公共基准就没有自主创新，没有对齐就没有问责，没有评测场就没有朝圣地标。本方案把标定做成可见的空间制度：一脊（9.4km基准走廊）、三场（众智园标定场/AI原点对齐广场/大钟寺轨距门）、五门（轨距门互操作准入）、两翼（中关村科技服务翼+小月河场景赋能翼），含8个全球AI评测基准案例、10张场景卡、3处朝圣地标与长期运营机制。",
+   "k": [
+    20,
+    14,
+    2
+   ],
+   "b": 38922,
+   "m": 36,
+   "f": 3
   },
   "Sunrongguo2008/jingzhang-address-line": {
    "t": "京张有址 / AI HAS AN ADDRESS",
@@ -10179,6 +10193,18 @@
     5
    ],
    "b": 54898,
+   "m": 14,
+   "f": 0
+  },
+  "www41818520-coder/jingzhang-civic-interlocking-v9": {
+   "t": "京张市民联锁：城市有智，人民作主",
+   "s": "把京张铁路遗址公园及其两侧城市界面转化为可进入、可理解、可参与、可接管的城市智能体：人民提问，城市作答；所有空间几何均为临时约束，待官方数据发布后整体复算。",
+   "k": [
+    0,
+    6,
+    5
+   ],
+   "b": 57408,
    "m": 14,
    "f": 0
   },
