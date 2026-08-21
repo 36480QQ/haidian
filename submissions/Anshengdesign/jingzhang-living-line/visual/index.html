@@ -50,7 +50,7 @@
     <figure><img src="../assets/figures/masterplan.png" alt="总体设计总平面"><figcaption>总体设计总平面（图1）：浅灰=现状建筑肌理(OSM)、白边深灰=京张铁路真实线位、深绿=Hyper Line 主脊、红点=七缝合节点、星=三朝圣地标</figcaption></figure>
     <figure><img src="../assets/figures/site-overview.png" alt="一带总览"><figcaption>一带总览结构图（图2）：一线三折两翼七节点</figcaption></figure>
     <div class="metric-row">
-      <div class="metric"><div class="m">涌现指数 EI（0.823 黄档 → 全绿档）</div><div class="n" data-vid="ei">0.9625</div></div>
+      <div class="metric"><div class="m">涌现指数 EI（0.795 黄档 → 全绿档）</div><div class="n" data-vid="ei">0.9625</div></div>
       <div class="metric"><div class="m">闸门一：渗流 p_c</div><div class="n" data-vid="per">0.840→0.904</div></div>
       <div class="metric"><div class="m">闸门二：句法整合度</div><div class="n" data-vid="syn">+36%</div></div>
       <div class="metric"><div class="m">闸门三：职住熵</div><div class="n" data-vid="ent">+5.3%</div></div>
@@ -228,7 +228,7 @@
   });
   lb.addEventListener('click',function(){lb.classList.remove('open');});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open');});
-  var B={ei:['0.823（黄档）','0.9625（全绿档）'],per:['0.840','0.904'],syn:['现状偏低','+36%'],ent:['7.454','7.850（+5.3%）']};
+  var B={ei:['0.795（黄档）','0.9625（全绿档）'],per:['0.840','0.904'],syn:['现状偏低','+36%'],ent:['7.454','7.850（+5.3%）']};
   document.querySelectorAll('button[data-vid]').forEach(function(btn){
     btn.addEventListener('click',function(){
       var on=!btn.classList.contains('on'),v=btn.dataset.vid;
