@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.11.0",
+  "schema_version": "1.12.0",
   "dataset_id": "jingzhang-two-answers-spatial-atlas",
   "status": "concept_proposal_under_provisional_boundaries",
   "view_box": [
@@ -3680,6 +3680,127 @@
     "verification_scope": "geometry_based_design_audit",
     "field_status": "not_field_run"
   },
-  "v14_spatial_model_ref": "visual/assets/v14-spatial-model.json",
-  "current_implementation_gate": "G0_no_go_pending_survey_and_permits"
+  "current_implementation_gate": "G0_no_go_pending_survey_and_permits",
+  "prototype_model_ref": "visual/assets/prototype-model.json",
+  "architectural_prototypes": [
+    {
+      "id": "LMK-01",
+      "station_ref": "zhongzhiyuan",
+      "spatial_archetype": "verification_ring",
+      "hero_scene": "T2",
+      "title": {
+        "zh": "众智园·验真环",
+        "en": "Zhongzhiyuan Verification Ring"
+      },
+      "plan_refs": [
+        "T2-PLAN-500"
+      ],
+      "section_refs": [
+        "T2-SEC-200"
+      ],
+      "detail_refs": [
+        "T2-CLOSE-01"
+      ],
+      "public_baseline_refs": [
+        "T2-OUTER-BYPASS"
+      ],
+      "ai_plugin_refs": [
+        "T2-INNER-TEST"
+      ],
+      "evidence_interface_refs": [
+        "T2-FAILURE-DISPLAY"
+      ],
+      "service_access_refs": [
+        "T2-SERVICE-E"
+      ],
+      "maintenance_clearance": "independent_outer_service_gate",
+      "interface_condition": "open outer bypass / controlled inner courtyard",
+      "climate_state": "shaded observation arcade",
+      "adaptation_mode": "close inner test, retain public ring",
+      "field_status": "not_field_run"
+    },
+    {
+      "id": "LMK-02",
+      "station_ref": "ai_origin",
+      "spatial_archetype": "translation_gate",
+      "hero_scene": "S2",
+      "title": {
+        "zh": "AI原点·共译门",
+        "en": "AI Origin Translation Gate"
+      },
+      "plan_refs": [
+        "S2-PLAN-500"
+      ],
+      "section_refs": [
+        "S2-SEC-200"
+      ],
+      "detail_refs": [
+        "S2-CLOSE-01"
+      ],
+      "public_baseline_refs": [
+        "S2-PASSAGE-01",
+        "S2-PASSAGE-02",
+        "S2-PASSAGE-03"
+      ],
+      "ai_plugin_refs": [
+        "S2-PLUGIN-WALL"
+      ],
+      "evidence_interface_refs": [
+        "S2-BILINGUAL-DESK",
+        "S2-REVIEW-BACKSTAGE"
+      ],
+      "service_access_refs": [
+        "S2-REAR-SERVICE"
+      ],
+      "maintenance_clearance": "rear plug-in service strip",
+      "interface_condition": "three account-free through-routes / closable plug-in wall",
+      "climate_state": "daylit sheltered hall",
+      "adaptation_mode": "close plug-in wall, retain staffed public hall",
+      "field_status": "not_field_run"
+    },
+    {
+      "id": "LMK-03",
+      "station_ref": "dazhongsi",
+      "spatial_archetype": "receipt_porch",
+      "hero_scene": "S7",
+      "title": {
+        "zh": "大钟寺·回执廊",
+        "en": "Dazhongsi Receipt Porch"
+      },
+      "plan_refs": [
+        "S7-CONTEXT-5000",
+        "S7-PLAN-2000",
+        "S7-PLAN-500"
+      ],
+      "section_refs": [
+        "S7-SEC-AA-200",
+        "S7-SEC-BB-200"
+      ],
+      "detail_refs": [
+        "S7-DTL-PORCH-50",
+        "S7-DTL-BOUNDARY-20",
+        "S7-DTL-DRAIN-20"
+      ],
+      "public_baseline_refs": [
+        "S7-BASE-NS",
+        "S7-BASE-EW"
+      ],
+      "ai_plugin_refs": [
+        "S7-TRIAL-SE"
+      ],
+      "evidence_interface_refs": [
+        "S7-PORCH-SW",
+        "S7-EVIDENCE-WALL"
+      ],
+      "service_access_refs": [
+        "S7-SERVICE-S",
+        "S7-RETIRE-E"
+      ],
+      "maintenance_clearance": "2.4 m rear service route kept outside public cross",
+      "interface_condition": "unbroken public cross / one-sided reversible trial bay / staffed receipt porch",
+      "climate_state": "shade, rain garden, permeable paving and night lighting",
+      "adaptation_mode": "OPEN / TRIAL / PAUSE / RETIRE",
+      "field_status": "not_field_run"
+    }
+  ]
 }
