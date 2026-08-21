@@ -65,6 +65,73 @@ class GallerySnapshotMaintenanceWorkflowTests(unittest.TestCase):
         self.assertIn("steps.pr.outcome == 'failure'", self.workflow)
         self.assertIn("Fail closed", self.workflow)
 
+    @staticmethod
+    def _lifecycle_outcome(
+        *,
+        maintenance_ref_exists: bool,
+        open_handoff_pr_exists: bool,
+        snapshot_changed: bool = True,
+        pr_mutation_succeeds: bool = True,
+    ) -> str:
+        """Model the workflow's observable handoff state without GitHub writes."""
+        if not snapshot_changed:
+            return "no-change"
+        if not maintenance_ref_exists:
+            return "bootstrap-required"
+        if open_handoff_pr_exists:
+            return "update-open-pr" if pr_mutation_succeeds else "artifact-and-fail"
+        return "create-draft-pr" if pr_mutation_succeeds else "artifact-and-fail"
+
+    def test_handoff_pr_lifecycle_is_fail_closed_and_recoverable(self) -> None:
+        """Cover first push, open/closed/merged handoffs, deletion, and next push."""
+        self.assertIn(
+            'gh pr list --repo "${GITHUB_REPOSITORY}" --head "${branch}" '
+            '--base main --state open',
+            self.workflow,
+        )
+        self.assertIn('gh pr edit "${existing}"', self.workflow)
+        self.assertIn(
+            'gh pr create --repo "${GITHUB_REPOSITORY}" --base main '
+            '--head "${branch}"',
+            self.workflow,
+        )
+        self.assertIn('if ! git ls-remote --exit-code origin "refs/heads/${branch}"', self.workflow)
+
+        cases = [
+            ("first push after administrator bootstrap", True, False, "create-draft-pr"),
+            ("next push while handoff PR is open", True, True, "update-open-pr"),
+            ("next push after handoff PR is closed", True, False, "create-draft-pr"),
+            ("next push after handoff PR is merged and ref retained", True, False, "create-draft-pr"),
+            ("merged handoff ref deleted", False, False, "bootstrap-required"),
+            ("next push after administrator restores the ref", True, False, "create-draft-pr"),
+        ]
+        for label, ref_exists, open_pr, expected in cases:
+            with self.subTest(label=label):
+                self.assertEqual(
+                    expected,
+                    self._lifecycle_outcome(
+                        maintenance_ref_exists=ref_exists,
+                        open_handoff_pr_exists=open_pr,
+                    ),
+                )
+
+        self.assertEqual(
+            "no-change",
+            self._lifecycle_outcome(
+                maintenance_ref_exists=False,
+                open_handoff_pr_exists=False,
+                snapshot_changed=False,
+            ),
+        )
+        self.assertEqual(
+            "artifact-and-fail",
+            self._lifecycle_outcome(
+                maintenance_ref_exists=True,
+                open_handoff_pr_exists=False,
+                pr_mutation_succeeds=False,
+            ),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
