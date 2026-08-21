@@ -6,15 +6,15 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "换模型，不换城市：京张遗产公共空间是一层不断线共地，12 种服务以同任务、同数据边界比较现役 A 与候选 B，设计要求获授权后普通公众可由 H 完成；验证院双跨、原点差分廊和交汇厅单队列三出口承载可拆模型位，未签署 P0 控制模板把第一跨保持在凭证 HOLD。"
+summary: "换模型，不换城市：以既有京张遗产公共空间为一层共地，用七条转换街缝合校园、社区、站点与产业，并以验证院、原点廊院、城市交汇厅三种长期框架承载可替换的服务、内装和 AI 设备；官方边界到位后整包重绑定、复算。"
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v1.8-candidate"
+iteration: "v1.9-candidate"
 ---
 
 # 京张共地 / THE SHARED FLOOR
 
-> **换模型，不换城市 / REPLACE THE MODEL, NOT THE CITY.** A 是现役模型，B 是候选，H 是有最终接管权的人工路径。A/B 以同任务、同数据边界、同人群负担比较；服务与权利/安全责任人双签后 B 才可替换 A。设计要求获授权换模期间公共地面、普通服务与 H 不断线。P0 仍只是未签署、未批准的参赛者控制模板：T00 未满足，12 类未来责任均未任命，外部回执为 0，正式单价记录为 0 项，12 项指标均无获授权现场测量值；建设与开放保持 `HOLD`。
+> **换模型，不换城市 / REPLACE THE MODEL, NOT THE CITY.** A 是现役模型，B 是候选，H 是有最终接管权的人工路径。A/B 以同任务、同数据边界、同人群负担比较；服务与权利/安全责任人双签后 B 才可替换 A。换模期间公共地面、普通服务与 H 不断线。
 
 ![三处 A/B/H 空间把同一任务、真实 shadow 分歧、人工权力与交付 HOLD 放在一张可核查图上](assets/figures/three-areas-delivery.png)
 
@@ -26,19 +26,9 @@ AI 以月换代，城市地面以百年计。京张从 1909 年干线到 2019 �
 
 十二种服务共用 `City Task Contract`，锁定任务、数据/工具、A/H 基线、B 配置、夹具、回退、两钥匙与退役证明。B 不得自我晋升；数据或权限扩张即 `HOLD`，严重回归则物理回退至 A/H，公共路线不关闭。[metric:scenario_card_count] [assumption:A-OPERATIONS-001]
 
-v1.8 继续使用一个真实但严格受限的模型见证：固定的 BGE-M3 在本地一次批量读取 AI01–AI12 的 36 条假设文本夹具。[source:BGE-M3-OFFICIAL] [metric:semantic_witness_model_api_call_count] [metric:semantic_witness_fixture_count]
+v1.7 第一次把这一命题交给一个真实但严格受限的模型见证：固定的 BGE-M3 在本地一次批量读取 AI01–AI12 的 36 条假设文本夹具。[source:BGE-M3-OFFICIAL] [metric:semantic_witness_model_api_call_count] [metric:semantic_witness_fixture_count]
 
 结果为 29/36 项拓扑一致与 7 项可见分歧；其中 4 项非 hard-stop 分歧集中在原点标签。参赛者写下的 A/参考标签不是独立真值，因此这不是准确率，而是一张空间压力图：它确认原点廊院的永久 H 桌与差分显示必须作为不可删减的空间配置保留，但不据此虚构尺寸变化；B 继续只做 shadow。[metric:semantic_witness_topology_agreement_ratio] [metric:semantic_witness_disagreement_count] [metric:semantic_witness_origin_nonhardstop_disagreement_count]
-
-同一版把 P0 从“有图与 HOLD”推进为 **参赛者实施控制模板（未签署、未批准）**：T00 是第 1 周前的文件前提，只有未来责任主体接受 T0 后，T01–T11 才占用第 1–15 周条件参考窗；它不是批准工期，也尚未启动。[data:visual/assets/delivery-p0-implementation-contract.json] [metric:delivery_conditional_program_activity_count] [metric:delivery_conditional_program_reference_week_count]
-
-12 类待任命角色覆盖 12 项 RACI，每项恰有一个 Accountable，服务/数据与权利/安全两钥匙分离；当前具名任命仍为 0。[metric:delivery_raci_role_class_count] [metric:delivery_raci_single_accountability_ratio] [metric:delivery_named_role_appointment_count]
-
-16 行未计价数量表分开 14 项参赛者设计/参考推导与 2 项待实测或获授权使用者—运营者复核后确定；12 份逐门交接模板等待未来文件出具/责任主体，12 项验收指标等待获授权现场值。正式单价记录、外部回执和带获授权实测值的指标均为 0 项。[metric:delivery_quantity_line_count] [metric:delivery_gate_handoff_template_count] [metric:delivery_acceptance_indicator_count]
-
-12 项验收中，8 项只是参赛者写定的 deny-by-default 数值 HOLD 规则，另 4 项阈值必须由获授权现场基线共同批准，当前仍为 TBC。[metric:delivery_acceptance_hold_rule_count] [metric:delivery_acceptance_baseline_tbc_count]
-
-因此这不是自证“可建”：所有 6 个外部状态保持 `HOLD`；验证器记录的提前现场启动与它发出的错误状态转移均为 0，不据此声称现场从未发生其他行为。[metric:delivery_external_release_stage_hold_count] [metric:delivery_site_action_before_release_count] [metric:delivery_false_transition_count]
 
 > **怎么读。** 各章对应公告 1.5 与六项任务；几何结论由同一套几何整包复算，登记/叙事计数注明来源，「假设」区分推演与实测。未做踏勘或居民访谈；临时边界与未知项均登记为 unknown，官方边界、控规和权属到位即全包重绑定复算。[assumption:A-BND-001] [assumption:A-CONTROLS-001]
 
@@ -353,19 +343,11 @@ A/B/H 空间不变量为：同入口/任务，同尺度可拆 A/B 位，无手�
 
 联合审查政策仅作未来程序语境；12 道凭证门由参赛者交付台账定义，不表示本方案已经进入审查。[source:BEIJING-URBAN-RENEWAL-JOINT-REVIEW-2024] [metric:delivery_permit_gate_count]
 
-#### P0 实施证据交接表（参赛者控制模板 · 未签署 · 非协议/审批）
+#### P0 可逆空间试点：分期、责任与验收
 
-| 接力面 | 当前参赛者产物 | 未来责任与所需凭证 | 当前释放 |
-|---|---|---|---|
-| 条件程序 | T00 为第 1 周前提；T01–T11 仅在文件化 T0 后参考 1–15 周 | 协调/实施/权利主体接受适用程序、正式范围及进入—复原权 | `HOLD`；绝对开工日为空 |
-| 责任矩阵 | R01–R12；12 项 RACI 每项恰有一个 A；R10/R11 两钥匙分离 | 未来具名委任及职责文件；角色类别不冒充机构 | `HOLD`；任命 0 |
-| 未计价数量 | Q00–Q15 共 16 行；14 项参赛者设计/参考推导、2 项待实测或获授权使用者—运营者复核后 TBC | 具资质测量/造价与采购主体及获授权使用者—运营者复核数量、单价、风险和采购路线 | `HOLD`；正式单价记录 0 项 |
-| 凭证交接 | G01–G12 各有编制者 → 未来文件出具/责任角色类别 → 复核者 → 接收者及重验触发 | 权属、地铁、文保、消防、市政、专业、资金、运营、参与和开放文件 | `HOLD`；外部回执 0 |
-| 验收与退出 | I01–I12 覆盖 H 路、无手机同任务、无障碍、回退、数据边界、投诉、负担、复原和非劣效；8 项为参赛者 HOLD 规则，4 项基线阈值 TBC | 运营者、专业人员与获授权使用者共同建立基线、执行、签收或要求拆除 | 6/6 外部状态 `HOLD`；带获授权实测值的指标 0 项 |
+在走廊四段分期内，P0 把大钟寺站前共享檐的一跨可撤试点接入可交接路径：T00 是第 1 周前文件条件，获接受后 T01–T11 才形成第 1–15 周条件参考程序。[data:visual/assets/delivery-p0-implementation-contract.json] [metric:delivery_conditional_program_timed_activity_count] [metric:delivery_conditional_program_reference_week_count] 12 类未来角色以 12 项 RACI 做到每项一个 Accountable，并分开服务/数据与权利/安全两钥匙。[metric:delivery_raci_role_class_count] [metric:delivery_raci_single_accountability_ratio] [assumption:A-DELIVERY-001] 16 行未计价数量、12 份逐门交接和 12 项验收指标，把一跨装配、连续 H 路、无手机同任务、无障碍、回退、投诉、复原与非劣效串到同一退出终点。[metric:delivery_quantity_line_count] [metric:delivery_gate_handoff_template_count] [metric:delivery_acceptance_indicator_count]
 
-这份未签署的 P0 微序列不替代走廊的 0–6 月、6–18 月、18–36 月与 3–8 年四段分期；它只能在获授权分期内、文件化 T0 获接受后启动。
-
-该控制模板让下一步的责任、输入、交付物、拒绝条件和复原终点可机读，但不把参赛者编排冒充协议、审批、报价、任命、咨询或实施承诺。[data:visual/assets/delivery-p0-implementation-contract.json] [assumption:A-DELIVERY-001]
+*证据边界。* 上述为未签署、未批准的参赛者模板，不是协议、审批、报价、任命、咨询或开工承诺；未来角色任命、外部凭证回执、正式单价记录和带获授权现场值的指标仍为空。具名运营者、专业签署和供应商报价同样不存在。[metric:delivery_named_operator_count] [metric:delivery_professional_signoff_count] [metric:delivery_vendor_quote_count] 获授权现场基线不存在；12 道外部许可与责任门保持 `HOLD`，错误场地、施工或开放放行为 0。[metric:delivery_field_baseline_count] [metric:delivery_external_gate_hold_count] [metric:delivery_unsafe_site_release_count]
 
 P0 站前共享檐保留 36×36 米筛查、16×16 米可逆地面、8×8 米可拆一跨及完整装配—退役序列。[data:visual/assets/delivery-p0-station-porch.json]
 
@@ -432,7 +414,7 @@ P0 站前共享檐保留 36×36 米筛查、16×16 米可逆地面、8×8 米可
 
 图纸内嵌 Noto Sans SC 2.004 子集，其哈希、commit、方法和 OFL 见复现文件；NASA POWER 按政策署名，未嵌其他投稿。因 agent-track 与公告知识产权关系未书面澄清，暂用 `COMMUNITY-DISPLAY-ONLY`；详见版权声明。[source:NASA-DATA-POLICY] [source:OFFICIAL-ANNOUNCEMENT]
 
-模型披露：初版概念、参数几何、图纸和三张体验图由 OpenAI Codex 工作流生成；图像工具未返回模型 ID。v1.2–v1.5b 的文字、表格、打包、校验和 PR 修订由 Claude Code 辅助；仅部分记录明确 Claude Fable 5，故不扩大归因。v1.6–v1.8 的审计、A/B/H 验证器、北京交付/P0 参赛者实施控制模板和评审面由 Codex 完成。v1.7–v1.8 沿用本地 `bge-m3:latest` 单次 Ollama `/api/embed` 批量见证；tag、两类 digest、Ollama 版本及回执固化，权重不再分发。工具均未踏勘、获授权访谈、提供公共服务、现场动作或专业签署；公开身份、提交和实施仍由用户及未来责任人决定。
+模型披露：初版概念、参数几何、图纸和三张体验图由 OpenAI Codex 工作流生成；图像工具未返回模型 ID。v1.2–v1.5b 的文字、表格、打包、校验和 PR 修订由 Claude Code 辅助；仅部分记录明确 Claude Fable 5，故不扩大归因。v1.6–v1.9 的审计、A/B/H 验证器、北京交付/P0 参赛者实施控制模板和评审面由 Codex 完成。v1.7 的本地 `bge-m3:latest` 单次 Ollama `/api/embed` 批量见证原样沿用至 v1.9；tag、两类 digest、Ollama 版本及回执固化，权重不再分发。工具均未踏勘、获授权访谈、提供公共服务、现场动作或专业签署；公开身份、提交和实施仍由用户及未来责任人决定。
 
 ## 参考资料
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "run_id": "jingzhang-722d533a7a6a",
+  "run_id": "jingzhang-aae9aee9d0d9",
   "evaluation_type": "deterministic_typed_geometry_continuity_counterfactual_and_recovery_proxy",
   "candidate_id": "C03-SHARED-FLOOR",
   "candidate_spec_hash": "b4bfcfd1b3d017a4b707b0355504b9eaaebc46df107c2a3330b48f1df1ea5460",
@@ -8182,7 +8182,7 @@
     "Digital-outage token checks remain declaration checks; the separate recovery DAG verifies only the encoded fallback transition contract.",
     "No energy, crowd, drainage, fire or legal-insolation performance is claimed."
   ],
-  "harness_payload_sha256_before_planning_library": "7a551723fc42874ce45a6ab495a1ee231c397029ccd39a003cb301cc6ab8c79a",
+  "harness_payload_sha256_before_planning_library": "b420c0f7bcda59e7abd2b515555c61bd83a126b755d6bbca44220853c7eb93ec",
   "planning_scenario_library": {
     "schema_version": "1.0.0",
     "evidence_status": "participant_authored_hypotheses_not_harness_verified",
@@ -8891,7 +8891,7 @@
   },
   "delivery_readiness_verification": {
     "evidence_status": "participant_authored_design_handoff_readiness_only",
-    "run_id": "shared-floor-delivery-72f53d1289056a65",
+    "run_id": "shared-floor-delivery-faf3d510d026513d",
     "summary": {
       "acceptance_baseline_tbc_count": 4,
       "acceptance_hold_rule_count": 8,
