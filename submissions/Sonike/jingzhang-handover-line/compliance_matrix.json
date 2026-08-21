@@ -1974,7 +1974,7 @@
       "assertion_zh": "正文里可复算的数值与结构声明共 54 项，逐条与结构化文件一致。含正文↔数据的逐行核对（落点表每一行的类型与东西侧）、断面表算术（含「容器子段不得重复相加」）、三个矩阵的交叉引用完整性，以及一项断言 ID 全集无缺项的元检查 Z1。**Z1 自己也在那份 54 项全集内，且退出码另由一道不走登记函数的结构性守卫决定**——一条检查查不到自己被删掉，所以守卫必须站在检查清单之外。",
       "evidence_in_package": "visual/assets/governance/claims-audit.js",
       "covered_by_self_check_id": null,
-      "independent_verification_zh": "`node visual/assets/governance/claims-audit.js` 输出「49/49 条声明与包内数据一致」且退出码 0。阴性测试已做成随包脚本，不再是自述：见同目录 audit-selftest.js（AUDITOR_SELFTEST 一条）。**该脚本不在 CI 或 preflight 中被调用**，须手动执行。"
+      "independent_verification_zh": "`node visual/assets/governance/claims-audit.js` 输出「54/54 条声明与包内数据一致」且退出码 0。阴性测试已做成随包脚本，不再是自述：见同目录 audit-selftest.js（AUDITOR_SELFTEST 一条）。**该脚本不在 CI 或 preflight 中被调用**，须手动执行。"
     },
     {
       "expectation_id": "AUDITOR_SELFTEST",
