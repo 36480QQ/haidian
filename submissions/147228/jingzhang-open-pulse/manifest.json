@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "42b1b281d917c0330a76d2beaa879bd3e6606411b10c738c520dd5e5fa6cf6bc"
+      "sha256": "6127c951a479abb0f9c47bbe05a3bf659fbf47aea0e34bef0e907855526c2244"
     },
     {
       "path": "compliance_matrix.json",
@@ -113,7 +113,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "bf2aa4d869fefbd72c473b4dd02758d31fbe5e0eab9b9e72d0293d1e68355c3b"
+      "sha256": "9d01448d313f11171d703f5ef3a354f2f175793da71768539c41490c5896c21a"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -845,7 +845,14 @@
       "role": "validation_runner",
       "required": false,
       "language": "neutral",
-      "sha256": "cb4dc9a5ec409c3dad5c1974fadd875520172f06b9b56210c98d27871be9a514"
+      "sha256": "1ced3a3af0413bc8599d4371829de7727b3b828455d4a69d7aba78e6fcb9a4d8"
+    },
+    {
+      "path": "visual/assets/test-open-pulse-service-equivalence.js",
+      "role": "regression_test",
+      "required": false,
+      "language": "neutral",
+      "sha256": "ef103729d45c6825f00fe7054ede983e8f627a2990ea4d4fa82f1087ed834c63"
     }
   ],
   "validation_claim": {
