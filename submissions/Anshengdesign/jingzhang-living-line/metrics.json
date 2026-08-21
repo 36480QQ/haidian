@@ -903,19 +903,24 @@
    "formula": "(emergent COMM - no_intervention COMM) / no_intervention COMM",
    "confidence": "medium"
   },
-  "ca_emergent_shares": {
+  "ca_emergent_research_share": {
    "status": "known",
-   "value": {
-    "居住": 0.25,
-    "科研办公": 0.319,
-    "商业": 0.276,
-    "教育": 0.155
-   },
-   "unit": "shares",
+   "value": 0.319,
+   "unit": "ratio",
    "source_files": [
     "计算/c12_ca.json"
    ],
-   "formula": "emergent_shares (post-intervention CA)",
+   "formula": "emergent_shares[科研办公]",
+   "confidence": "medium"
+  },
+  "ca_emergent_commercial_share": {
+   "status": "known",
+   "value": 0.276,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c12_ca.json"
+   ],
+   "formula": "emergent_shares[商业]",
    "confidence": "medium"
   }
  }
