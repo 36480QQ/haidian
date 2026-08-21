@@ -1195,5 +1195,142 @@
       "approval, authorization, GO, G1, professional acceptance or rights clearance"
     ],
     "reality_boundary": "Twin-Track remains the sole master idea; three prototypes, JZ-AIOS, G0-G3, four axes, three carriers, evidence and rights gates, nine geometry files, metrics.json, 12/8/3/36, G0, NO-GO, provisional status, zero real outcomes, same-task non-AI path, proof-only failure stop, non-authorising recovery, professional veto, not_fully_cleared, zero independent file-level audits and fixed PDF page counts remain unchanged."
+  },
+  "round_54_provenance": {
+    "scope": "Front-stage spatial-decision and fixed-page publication repair only; no new design direction.",
+    "serial_gate": {
+      "predecessor_pr": 3545,
+      "predecessor_merge_sha": "d35e9e561a48f5ea757414df2d88691b0d0d35c8",
+      "canonical_base_sha": "8afbdbfdaacdbf06373237c1b6393f3614704bbc",
+      "predecessor_merge_in_base": true,
+      "competing_package_open_pr_count": 0,
+      "clean_before_edit": true
+    },
+    "pre_repair_red": {
+      "finding_type": "editorial_spatial_cold_read_only",
+      "proposal_front_stage": "The first answer was a reading-time and evidence-index explanation rather than a spatial decision.",
+      "visual_front_stage": "Cold-read routes, proof IDs and expert metadata preceded the first explicit spatial choice.",
+      "key_areas": "Three prototypes were distinguishable but did not state the rejected occupation and kept spatial alternative as one ruling.",
+      "publication": "A3 did not place the three-plan ruling before the overall relation drawing; Chinese audit labels exposed unsupported glyphs in the initial Round 54 build."
+    },
+    "repair_decisions": {
+      "key_areas_bilingual_svg_png": "REBUILD_IN_PLACE",
+      "proposal_front_stage": "REPAIR_AND_DEMOTE_META",
+      "offline_visual_front_stage": "REPAIR_AND_COLLAPSE_META",
+      "fixed_page_pdfs": "REBUILD_WITHOUT_PAGE_GROWTH",
+      "existing_cover_and_media": "LOCK",
+      "geometry_and_metrics": "LOCK"
+    },
+    "spatial_ruling": {
+      "common": "Proof may not occupy the ground required for an ordinary task.",
+      "zhongzhiyuan": {
+        "reject": "proof crossing the ordinary path",
+        "keep": "parallel bypass plus side proof garden"
+      },
+      "origin_community": {
+        "reject": "proof nodes taking the resident street",
+        "keep": "one street, two stepped-back courts and four withdrawable nodes"
+      },
+      "dazhongsi": {
+        "reject": "service taking the four-way centre",
+        "keep": "clear commute centre plus off-route hall and staffed desk"
+      }
+    },
+    "reading_surfaces": {
+      "first_proposal_h2": "One Spatial Decision: Proof Must Step Aside from Ordinary Life",
+      "primary_navigation_items": 6,
+      "primary_visual_order": [
+        "spatial_decision",
+        "ordinary_life",
+        "civic_ground",
+        "three_prototypes",
+        "four_states",
+        "professional_handoff"
+      ],
+      "cold_read_metadata_collapsed_or_handed_off": true,
+      "no_javascript_static_fallback": true,
+      "keyboard_reduced_motion_print_fallbacks": true,
+      "remote_dependencies": 0,
+      "autoplay": false
+    },
+    "figure_generation": {
+      "dimensions_px": [
+        1800,
+        1100
+      ],
+      "editable_sources": "bilingual package-authored SVG",
+      "display_exports": "local Chrome screenshots",
+      "external_image_inputs": 0,
+      "new_media_generation_model_calls": 0,
+      "resolved_svg_fonts": "unknown_pending_independent_review"
+    },
+    "publication_rebuild": {
+      "toolchain": {
+        "python": "3.14.7",
+        "pymupdf": "1.27.2.3",
+        "pillow": "12.2.0"
+      },
+      "page_counts": {
+        "a3_zh": 14,
+        "a3_en": 14,
+        "a0_zh": 8,
+        "a0_en": 8
+      },
+      "two_fresh_processes_byte_identical": true,
+      "sha256": {
+        "a3_zh": "b32a01e57c5957ff971065d8a0e4b2e97684aabf7643fe32956e521296c4ffe8",
+        "a3_en": "2e5cda8b9eaf2041523eeb6a83882740cc2004b639a7f4b2aa256bfb03c5dcfe",
+        "a0_zh": "5dedb32876f357ecf4cebe5e9ffa3e2d31d721817a9da0f0a1857aa1814f0c69",
+        "a0_en": "c04800cdf762dcfbca209aa2858506c9d68d7f19560386c916bc3caf6df3b42b"
+      },
+      "full_page_qa": 44,
+      "qa_modes": [
+        "colour",
+        "grayscale",
+        "detail"
+      ],
+      "minimum_live_text_pt": {
+        "a3": 8.5,
+        "a0": 24.06
+      },
+      "blank_replacement_clipped_outside_encrypted_pages": 0,
+      "initial_round_54_chinese_audit_label_glyph_defect": "detected_and_repaired_before_commit",
+      "qa_boundary": "Determinism and publication QA prove reproducibility and legibility only, not font licence, field state, accessibility, professional acceptance, approval, rights clearance or maturity."
+    },
+    "changed_surfaces": [
+      "agent.json",
+      "assets/figures/key-areas.en.png",
+      "assets/figures/key-areas.en.svg",
+      "assets/figures/key-areas.png",
+      "assets/figures/key-areas.svg",
+      "changelog.md",
+      "drawings/a0-boards.en.pdf",
+      "drawings/a0-boards.pdf",
+      "drawings/a3-booklet.en.pdf",
+      "drawings/a3-booklet.pdf",
+      "manifest.json",
+      "proposal.en.md",
+      "proposal.md",
+      "report/copyright_statement.md",
+      "report/narrative.md",
+      "report/proposal.en.html",
+      "report/proposal.html",
+      "self_check.json",
+      "visual/assets/review-handoff-index.json",
+      "visual/assets/rights-clearance-ledger.json",
+      "visual/assets/source-rights-evidence.json",
+      "visual/index.en.html",
+      "visual/index.html"
+    ],
+    "package": {
+      "path_count": 156,
+      "new_path": false
+    },
+    "new_external_source": false,
+    "new_media": false,
+    "new_media_generation_model_call": false,
+    "new_fact_or_claim": false,
+    "geometry_metrics_frozen": true,
+    "reality_boundary": "Twin-Track remains the sole master idea; three prototypes, JZ-AIOS, G0-G3, four axes, three carriers, evidence and rights gates, nine geometry files, metrics.json, 12/8/3/36, G0, NO-GO, provisional status, zero real outcomes, same-task non-AI path, proof-only failure stop, non-authorising recovery, professional veto, not_fully_cleared, zero independent file-level audits and fixed PDF page counts remain unchanged."
   }
 }
