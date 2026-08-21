@@ -12,7 +12,7 @@
     "author_grant_en": "As rights holders in the contents of this package, the authors additionally grant that any use complying with CC BY-NC 4.0 (attribution, non-commercial, changes indicated) is licensed.",
     "required_attribution_line_zh": "本方案为开放共创建议，不代表任何政府决定或审批结论。",
     "required_attribution_line_en": "This proposal is open co-creation advice and represents no government decision or approval.",
-    "third_party_exclusion_zh": "本授权不覆盖第三方素材。包内未使用任何第三方图片、地图、商标或受保护版式；字体权利链见 proposal.md 风险与合规一节的字体表与 sources.json 的 FONT-* 条目。",
+    "third_party_exclusion_zh": "本授权不覆盖第三方素材。**本条所称「未使用第三方图片」指包内不含任何他人既有作品**——未使用任何他人的图片、地图（含商业地图与 OSM）、商标或受保护版式。**它不等于「包内没有模型输出」，这一点必须分开说清**：包内唯一的非程序化图像素材是 assets/media/cover.png 的背景层，由参与者以**纯文字提示词**调用图像模型 gpt-image-2 生成，**未向模型提供任何图片、照片、地图或既有作品作为输入**；画面人物为无面部特征的剪影，不涉及肖像权。其生产方法、权利归属与不可复现性见 `manifest.json#rights_inventory` 的 generated_illustration 一条与 `sources.json#IMAGEGEN-COVER-ILLUSTRATION`。除该背景层外，**全部 26 张图件、四套图纸与两个离线页面均由包内 geojson 与 metrics.json 程序化渲染**，不含任何图像素材。字体权利链见 proposal.md 风险与合规一节的字体表与 sources.json 的 FONT-* 条目。",
     "government_endorsement_zh": "任何使用不得暗示政府背书、实施批准、已建成或已完成公众参与。",
     "precedence_zh": "三个许可信号冲突时的优先顺序，自高到低：(1) 第三方排除范围与政府不背书声明——禁止项，任何授权都不能突破；(2) 权利人的完整授权文本 author_grant_zh/en——权利人对自有权利的直接授予，不需外部文本支持即可执行；(3) 机器可读标识 identifier——条款未发布；若日后被定义得比 (2) 更严则以更严者为准，若被定义得更宽，本包仍只按 (2) 的范围授权。",
     "precedence_en": "Order of precedence when the three licence signals conflict, highest first: (1) the third-party exclusion and the no-government-endorsement statement, which are prohibitions no grant can override; (2) the rights holders' full grant text in author_grant_zh/en, a direct grant over rights they hold that is enforceable without external support; (3) the machine-readable identifier, whose terms are unpublished — if it is later defined more strictly than (2) the stricter governs, and if more loosely, this package still grants only within the scope of (2).",
@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "23f561f39073eec2440b5d5bb8813a7933e962be5877f14bdd49a62a32031dd0"
+      "sha256": "eb7cff3e1eab2e1bcc5ca42d1a4627f0d390cd01e6c6b251db263c3a1f70fdb9"
     },
     {
       "path": "agent.json",
@@ -83,7 +83,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7548ac28470ea526e80c551a95dfd0daa0f409e28c09f214ab804e71a59c1879"
+      "sha256": "ccee8e1ab7deed8f9a4cdceaa587636912833e2afb9cffc8e7f5b51bd2842e47"
     },
     {
       "path": "compliance_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0ea54683f4db053711b5f9011e7a739dc49da2659ad1099faac7fdba07542e33"
+      "sha256": "1187f27de7a4eaeff56c856a98666e80a43e3358e9afffefd940e0b02e72214d"
     },
     {
       "path": "report/narrative.md",
@@ -120,7 +120,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "4a537f680996193972afc89c33ba57887ff768938aa9c0739770fcab06d973cf"
+      "sha256": "9f67bc8d0424b50750647cb8b38b6a779f11eb66777db3ce2c4ec6f6f8144fd8"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f1658f4d6c57f7195e04c86e86aa98db7a638b0c5b44f94af9a4c69215c38f64"
+      "sha256": "628e97ebc726c7b1edc87056607d2ad918bb19a8dd590ed746f3069e12fc48c4"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e84c2f2e8025133e214606cdff381b0e97511c56a3cf789e0ef1723655ef7c87"
+      "sha256": "5c43a4d3665f0a8e1a05066cca2c046584c6a8dd9ee9d474af0ed449cda89129"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "6679d508ac083ae597a090560c28e26a59feec354bf84a7ed960dde37d2e4c84"
+      "sha256": "6b72a4b507cfe4cdae45b746477a8d60808183dba93a5b859c90ed0ad6b11de1"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
