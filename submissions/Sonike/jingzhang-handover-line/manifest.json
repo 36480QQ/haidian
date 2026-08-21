@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e6c17da0cbb239eb181d6ee144d461e851e09d2ccde76afc97772f7592f957b3"
+      "sha256": "f01e140b8fb0f5b2940504a30987323286f522cfb464ce9181d2f87a14b32802"
     },
     {
       "path": "agent.json",
@@ -83,7 +83,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b2d1603405b13e1f10af144cfae867aac4d006e876ecfb00ad451ad3eed6398c"
+      "sha256": "c757b2eb43368a3c33013d48b10617d9baecb8904bae0358ee48f795729c268e"
     },
     {
       "path": "compliance_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "fa4ad4a8db8dbdd95ffa57a41a84624930c246e443aa9faa9e6483aa6453d5eb"
+      "sha256": "9869f70c91d3226ab2494e70ee4551459178bf9a4241ddbed979ad96c7867a93"
     },
     {
       "path": "report/narrative.md",
@@ -148,7 +148,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "052239527e4751c43ef0c7bf891d35edc0635b8fcd420f9771b1c318009c65b8"
+      "sha256": "37562ac8496233eb744c6732a8b48fe729d8fe85247de2af724f70be5096b8a7"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "eb681985782ed1bfe7e91334cf90ba4d806e6f9ed432987f07b2a8a16d9a95e2"
+      "sha256": "107ac27ef32338aefe56e451bc1d58b842adcc5ec9f1f7f6ac53b28f9831edcc"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "cade7a7c1cacc7886c731f2b79f83d284000eabed4d393740ebc73fbaf63bc33"
+      "sha256": "c9de9029e7851e5a35448a4a9f304e59cc2885dd4e1af5af8654df3be1505ad8"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -278,7 +278,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "79bdb385bdeae1c2e3274612460a03b322801086d324dd7f8ad7beebf760ec3f"
+      "sha256": "861352964c0237a756fca34ea105d6ab4ee779d684cfee04730e772548fd4d15"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "6d0b26b306802f975c34e5fd3411a5324a45fc5a1536ec94310948d8ebc8f246"
+      "sha256": "131047f69975db43b7a1835bce88253dfb5e0c61a8a3269d9c9343d6cfa2976f"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
