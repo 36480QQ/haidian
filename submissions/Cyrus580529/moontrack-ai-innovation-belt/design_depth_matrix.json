@@ -208,7 +208,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 本项仅达到方法层:用地分类术语依据自然资源部指南,并提出'场景使用权叠加而非新划用地'的规划方法建议;**具体用地布局方案待官方控规条件发布后方可编制**,当前 land_use.geojson 为脚手架示意图层,不构成用地方案。"
+      "evidence_summary_zh": "⚠️ 本项仅达到方法层:用地分类术语依据自然资源部指南,并提出'场景使用权叠加而非新划用地'的规划方法建议;**具体用地布局方案待官方控规条件发布后方可编制**,当前 land_use.geojson 为脚手架示意图层,不构成用地方案。",
+      "completeness_limited_by": [
+        "official control-plan (控规) conditions not published"
+      ]
     },
     {
       "item_id": "development_intensity_controls",
@@ -259,7 +262,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 本项仅达到方法层:容积率、建筑密度等强度指标缺少官方控规条件,按要求列为 pending_control,**本方案未提出任何强度数值**,避免以推测值冒充审定指标。"
+      "evidence_summary_zh": "⚠️ 本项仅达到方法层:容积率、建筑密度等强度指标缺少官方控规条件,按要求列为 pending_control,**本方案未提出任何强度数值**,避免以推测值冒充审定指标。",
+      "completeness_limited_by": [
+        "official control-plan FAR/density conditions not published"
+      ]
     },
     {
       "item_id": "height_massing_character",
@@ -312,7 +318,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 风貌与视觉方向有实质内容(水系-轨道叠印、人字展线母题、导视三原则);**建筑高度与体量控制无官方条件,未提出具体数值**。"
+      "evidence_summary_zh": "⚠️ 风貌与视觉方向有实质内容(水系-轨道叠印、人字展线母题、导视三原则);**建筑高度与体量控制无官方条件,未提出具体数值**。",
+      "completeness_limited_by": [
+        "official height and massing control conditions not published"
+      ]
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -364,7 +373,11 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 本项仅达到方法层:提出遗产建筑做生产性再利用的原则(参照Station F、国王十字),清华园车站按'忠于现状'原则不做本体改造;**缺少现状建筑、权属与控规条件,未提出任何具体地块的拆改留结论**。"
+      "evidence_summary_zh": "⚠️ 本项仅达到方法层:提出遗产建筑做生产性再利用的原则(参照Station F、国王十字),清华园车站按'忠于现状'原则不做本体改造;**缺少现状建筑、权属与控规条件,未提出任何具体地块的拆改留结论**。",
+      "completeness_limited_by": [
+        "existing-building survey and ownership data not published",
+        "official control-plan conditions not published"
+      ]
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -469,7 +482,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 本项仅达到方法层:提出端侧与分布式算力节点与公共服务设施复合利用的方向;**管线、能源、排水、防洪、消防等工程资料缺失,规模与布局待正式条件确认**。"
+      "evidence_summary_zh": "⚠️ 本项仅达到方法层:提出端侧与分布式算力节点与公共服务设施复合利用的方向;**管线、能源、排水、防洪、消防等工程资料缺失,规模与布局待正式条件确认**。",
+      "completeness_limited_by": [
+        "municipal engineering data (pipelines, energy, drainage, flood control, fire protection) not published"
+      ]
     },
     {
       "item_id": "blue_green_public_space",
@@ -630,7 +646,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 更新项目清单沿用脚手架示例(JZ-01至JZ-06);本方案自有的可实施内容集中在场景开放三阶段与四类月台活动,**未形成基于权属与现状的正式更新项目清单**。"
+      "evidence_summary_zh": "更新项目清单 JZ-01至JZ-06 为方法层分类示例;JZ-07(慢行网三处关键缺口现场核验与连接)为本方案基于网络连通性实测新增的自有内容,并排在清单首位——56 米缺口打通可使可用主网从 27.56 公里扩到 57.77 公里,投入产出比在清单中最高。⚠️ **仍缺少基于正式权属与现状调查的完整更新项目清单**,进入实施前需现场核验。",
+      "completeness_limited_by": [
+        "parcel ownership and cadastral survey data not published"
+      ]
     },
     {
       "item_id": "phasing_implementation",
@@ -735,7 +754,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 空间指标可由提交几何复算,但 metrics.json 尚未填入本方案自有的真实指标值(如河道范围内占比5/8、邻近非机动车道26段、研究范围内高校50所),**待补**。"
+      "evidence_summary_zh": "metrics.json 已按实测填入 23 项指标,22 项 known(含 8-12 网络分析实测:62 个连通分量、最大分量占全网 14.9%、五家适老机构法定路权可达数为 0、最短三处空隙合计 56 米等)、1 项(容积率 floor_area_ratio)因官方控规条件未发布列为 unknown 并写明原因;全部 23 项指标均在正文被引用,脚本核验未引用 0 项、引用不存在 0 项。"
     },
     {
       "item_id": "risk_missing_data",
