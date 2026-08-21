@@ -1469,7 +1469,7 @@ Reviews of the highest-scoring submissions keep asking for one thing: distance-l
 
 Contrast (WCAG 2.1, ≥ 4.5 body text, ≥ 3.0 large text and graphical objects, against the paper surface): principal ink 11.44, secondary text 4.56, muted annotation 3.00, datum red 4.74, instrument blue 4.59, brass 4.51, surveyed green 6.86—all clearing their floors. **Four of these failed before this revision**—muted annotation at 2.30, brass 3.47, olive 2.60, secondary 4.30. The script found them; new values were then derived against the target ratios and applied throughout. Chosen by eye, all four looked "clear enough".
 
-Distance legibility: A0 is 841 mm across a 1600-unit canvas; by the signage convention *legible height ≈ viewing distance ÷ 250*, a 1 m reading distance requires ≥ 4.0 mm. The smallest actual type across all sheets is **4.47 mm**—the minimum, not the usual 4.73 mm. Offline HTML: **every one of 34 images carries alt text**, the language is declared, heading levels do not skip, there are 38 figure captions, dark mode is supported, and 2 `<script>` tags—an inline model JSON and one local script, neither requesting anything external; **the page reads with scripting off**, the canvas's numbers repeated in the table below.
+Distance legibility: A0 is 841 mm across a 1600-unit canvas; by the signage convention *legible height ≈ viewing distance ÷ 250*, a 1 m reading distance requires ≥ 4.0 mm. The smallest actual type across all sheets is **4.99 mm**, a floor rather than a worst case: no sheet sets type below it. Offline HTML: **every one of 34 images carries alt text**, the language is declared, heading levels do not skip, there are 38 figure captions, dark mode is supported, and 2 `<script>` tags—an inline model JSON and one local script, neither requesting anything external; **the page reads with scripting off**, the canvas's numbers repeated in the table below.
 
 ![FIG.27 One reading: where a person stands, and whether they block the way](assets/figures/visit.en.png)
 
@@ -1844,7 +1844,7 @@ Everything here is **open collaborative concept advice** for professional teams 
 
 So of the 12 items above, **0 can be run literally by the AI reviewer**; the rest name files it was not given. **Anyone with the repository can run them all; the model scoring this submission can run none.** Not saying so would be an invitation to verify addressed to someone who cannot.
 
-**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.74 s**; 9 files none of which the reviewer receives, 1344 KB, 2,033 entries left to read, per item in `visual/assets/review_route.json`.
+**Nothing had measured the walk through this package's own evidence.** The five verifiers exit 0 in **0.72 s**; 9 files none of which the reviewer receives, 1346 KB, 2,034 entries left to read, per item in `visual/assets/review_route.json`.
 
 **This disclosure had a shelf life, and the fix has landed.** Issue #2170 became PR #2181, now merged on `upstream/main`: the review input carries an auditable access boundary, states that participant verification scripts are never executed, and tells the model **not to deduct points for an artifact it was not given**. The count above is unchanged; its consequence is not, because unreachability is no longer read as something withheld (E210). The key derivations are written into `assumptions.json` and `metrics.json`, and each matrix row records how much of its own evidence a reviewer can open.
 

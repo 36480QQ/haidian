@@ -72,7 +72,7 @@
       "target": "visual/index.html, report/proposal.html",
       "source": "package-provided",
       "what_it_holds_en": "Measure the package's own legibility instead of asserting it.",
-      "message": "对比度与无障碍 — accessibility: 0 failure(s) — 14 contrast ratios, tightest 3.00:1 against its own 3.0 floor (1.00x); 69 sheets checked for type size at A0, smallest 4.47 mm; 2 offline pages, 0 image(s) without alt text"
+      "message": "对比度与无障碍 — accessibility: 0 failure(s) — 14 contrast ratios, tightest 3.00:1 against its own 3.0 floor (1.00x); 69 sheets checked for type size at A0, smallest 4.99 mm; 2 offline pages, 0 image(s) without alt text"
     },
     {
       "check_id": "PKG_ANNOUNCEMENT_TERMS_QA",
@@ -207,7 +207,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A number in one edition and not the other is a claim only half the readers get.",
-      "message": "claim_audit_qa.py — claim audit: 83 zh / 83 en unit-carrying measurements in prose, same set in both editions; 166/153 bare numbers reported but not blocked, and one designed check (76 candidates) not shipped"
+      "message": "claim_audit_qa.py — claim audit: 82 zh / 82 en unit-carrying measurements in prose, same set in both editions; 165/152 bare numbers reported but not blocked, and one designed check (76 candidates) not shipped"
     },
     {
       "check_id": "PKG_CLAIM_STATE_QA",
@@ -504,7 +504,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "The intake caps, enforced where a mutation can reach them.",
-      "message": "intake_limits_qa.py — intake limits: 61 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 41 bytes to spare. The package totals 30.1 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
+      "message": "intake_limits_qa.py — intake limits: 61 shipped Markdown and JSON files within the organisers' caps; the tightest is proposal.en.md with 15 bytes to spare. The package totals 30.2 MiB against a 40 MiB total cap and a 5 MiB per-asset cap, both read from upstream/main"
     },
     {
       "check_id": "PKG_INTERNED_RENDER_QA",
@@ -603,7 +603,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A sentence stating a number a shipped record holds must point at that record.",
-      "message": "metric_citation_qa.py — metric citations: 39 sentence(s) joined to metrics.json by value and pointing at it, 17 numeric collision(s) published with the reason each is not a citation, 0 deferred against 41 bytes of English headroom (they cost 0, and this check fails when there is room)"
+      "message": "metric_citation_qa.py — metric citations: 39 sentence(s) joined to metrics.json by value and pointing at it, 17 numeric collision(s) published with the reason each is not a citation, 0 deferred against 15 bytes of English headroom (they cost 0, and this check fails when there is room)"
     },
     {
       "check_id": "PKG_METRIC_CLASS_PROSE_QA",
@@ -738,7 +738,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "Every word drawn on a page has to reach that page's text layer.",
-      "message": "pdf_text_layer_qa.py — pdf text layer: 7,512 text runs across 38 pages of 4 shipped PDFs, and every one of them reaches the page it is drawn on — the primer is removed by matching it, never by counting how many objects it ought to have become. 3 English basemap street names are excepted by name and by page: the converter loses them before any of this package's post-processing runs, and a fourth would fail here"
+      "message": "pdf_text_layer_qa.py — pdf text layer: 7,516 text runs across 38 pages of 4 shipped PDFs, and every one of them reaches the page it is drawn on — the primer is removed by matching it, never by counting how many objects it ought to have become. 3 English basemap street names are excepted by name and by page: the converter loses them before any of this package's post-processing runs, and a fourth would fail here"
     },
     {
       "check_id": "PKG_PLANNING_CONTROLS_QA",
@@ -792,7 +792,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "A shipped image has to still be an image.",
-      "message": "raster_integrity_qa.py — raster integrity: 71 shipped PNG(s), 20.6 MB, every chunk passing its own CRC and every image stream inflating to exactly the size its header declares; and 4 PDF(s) whose 58 compressed streams all inflate, none skipped"
+      "message": "raster_integrity_qa.py — raster integrity: 71 shipped PNG(s), 20.7 MB, every chunk passing its own CRC and every image stream inflating to exactly the size its header declares; and 4 PDF(s) whose 58 compressed streams all inflate, none skipped"
     },
     {
       "check_id": "PKG_READING_CALENDAR_QA",
@@ -972,7 +972,7 @@
       "target": "package",
       "source": "package-provided",
       "what_it_holds_en": "No drawing may print Markdown at a reader.",
-      "message": "sheet_markup_qa.py — sheet markup: the conversion seam turns emphasis into bold and leaves no marker, and 12333 text element(s) across 4 built folder(s) — the drawings in both languages and the composed pages of both PDFs — and not one prints an emphasis marker or a code fence at the reader. Emphasis written in the prose becomes a bold tspan at the drawing seam rather than being dropped, because the author meant it. This does not judge whether the emphasis falls on the right word"
+      "message": "sheet_markup_qa.py — sheet markup: the conversion seam turns emphasis into bold and leaves no marker, and 12339 text element(s) across 4 built folder(s) — the drawings in both languages and the composed pages of both PDFs — and not one prints an emphasis marker or a code fence at the reader. Emphasis written in the prose becomes a bold tspan at the drawing seam rather than being dropped, because the author meant it. This does not judge whether the emphasis falls on the right word"
     },
     {
       "check_id": "PKG_SHEET_PLACEMENT_QA",
@@ -1430,7 +1430,7 @@
       "ai_package_stages": {
         "submissions/jiangmuran/jingzhang-leveling-line": "formal"
       },
-      "total_bytes": 31458245,
+      "total_bytes": 31567695,
       "maintainer_bypass": false
     },
     "stderr": ""
