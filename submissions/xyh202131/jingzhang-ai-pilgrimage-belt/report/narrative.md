@@ -1,8 +1,28 @@
-# 投稿包内验收参考 / Package-local acceptance reference
+# 双轨京张：叙事与版本记录
+
+## 方案叙事摘要 / Narrative summary
+
+“双轨京张”只作一个空间裁决：连续日常轨先保证普通人进入、通行、休息、问询、人工完成任务、纠错与离开；间歇验证轨只能旁置、限域、可停止、可撤除。众智园以平行旁路和验证庭分离设备测试，原点社区以一街两院四个可撤回节点保护居民日常，大钟寺以四向通勤净空和路外服务保护高峰通行。三处共享非 AI 权利与失败回写内核，但空间关系不能互换。
+
+普通—验证—故障—恢复只改变验证叠层：故障时人工接管和普通路径继续，恢复先还场再复核，绝不自动产生授权、批准、重启或 G1。方案基于临时 geometry，现实结果、责任接受、批准与独立清权均为 0 或 `unknown`，总体权利状态为 `not_fully_cleared`。图件与多媒体是明确披露的 G0 概念展示，不是现场、建成状态、无障碍结果或公众意见。
+
+Twin-Track Jing-Zhang makes one spatial ruling: the continuous civic track first secures ordinary entry, movement, rest, inquiry, staffed task completion, correction and exit; the intermittent verification track may appear only beside it, bounded, stoppable and removable. Zhongzhiyuan separates a parallel bypass from a verification court, Origin Community protects resident life through one street, two courts and four withdrawable nodes, and Dazhongsi keeps a four-way commute clear while service remains off-route. The three share non-AI rights and failure writeback, but their spatial relations cannot interchange.
+
+Ordinary—verification—failure—recovery changes only the verification overlay: staff and the ordinary path continue during failure, and recovery returns the place before review; it never creates authorization, approval, restart or G1. Geometry remains provisional; real outcomes, accepted duties, approvals and independent rights clearance remain 0 or `unknown`, with overall rights `not_fully_cleared`. Figures and media are disclosed G0 concept displays—not field, built, accessibility or public-opinion evidence.
+
+## 版本与验收附录
+
+### Package-local acceptance reference / 投稿包内验收参考
 
 > 本文件只服务于 `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`，是投稿内可复制参考，不是仓库级 reusable template、公共 PR template 或维护者规范。复制到其他提交或后续 PR 时，不得继承任何 `[x]`。
 >
 > This file applies only to `submissions/xyh202131/jingzhang-ai-pilgrimage-belt/`. It is a package-local copy reference, not a repository-level reusable template, public PR template, or maintainer policy. No `[x]` may be inherited when it is copied into another submission or later PR.
+
+## Round 55 lived-Haidian evidence and front/back-stage compression / 第 55 轮海淀日常证据化与前后台压缩
+
+第 55 轮不增加内容方向，而把现有成果重新组织为“海淀现实基线—一次空间裁决—三处条件式原型—普通任务—四态—专业交接”。双语 proposal 各保持 13 个正式章节并由 997 行压至 632 行；visual 保持六项主导航，由 37 个 section 压至 16 个，阅读档位与已开放公园／约 9 公里绿廊的公开基线前置，后台图表进入一个原生折叠索引。A3 14+14、A0 8+8 以既有 SVG/PNG/WebP 重排为连续出版序列，两次独立进程逐文件字节一致，44 页 QA 通过。本轮无新媒体、来源、事实、geometry、metric、场景、项目、重点区、合同或成熟度；全部 G0、provisional、NO-GO、非 AI、恢复、专业否决和权利边界不变。
+
+Round 55 adds no design direction. Existing material is reorganized as present-day Haidian baseline—one spatial ruling—three conditional prototypes—ordinary task—four states—professional handoff. Both proposals retain 13 formal chapters and fall from 997 to 632 lines; the visual retains six primary entries and falls from 37 to 16 sections, with reading depths and the reported open-park / roughly nine-kilometre green-corridor baseline visible first and back-stage tables in one native details index. A3 remains 14+14 pages and A0 8+8, recomposed from existing SVG/PNG/WebP into a continuous publication sequence. Two fresh processes are byte-identical and all 44 pages pass QA. No medium, source, fact, geometry, metric, scene, project, key area, contract or maturity is added; all G0, provisional, NO-GO, non-AI, recovery, professional-veto and rights boundaries remain.
 
 ## Round 54 front-stage spatial decision / 第 54 轮空间裁决前置
 
@@ -218,17 +238,13 @@ The eight long-running truth questions remain explicit: the version is clearer r
 
 Round 38 began only after Round 37 PR #3050 merged (head `c39ad374bd737dd150787b9f8d81017ad5a9e302`; merge `e7aeb8ca8802f7dea5d9cfbb85b75f0c88baffbe` entered the latest canonical `main`) and no other open PR touched this package. The work only tightens reviewer routing and publication legibility: bilingual visual navigation is fixed at six items, the evidence index leaves the sticky bar, and the 12-row public-signal table plus backstage library start collapsed while retaining no-JavaScript and print fallbacks; the five-scenario browser review passes. Bilingual proposals/reports label the interrupted sequence as 13 formal chapters and 8 extended evidence units while retaining 21 H2 units, 21 figures and every per-chapter evidence marker. The four A3/A0 publications enlarge primary figures and tighten sidebars/judgment bands without adding pages; two fresh processes using the same frozen build logic are byte-identical file by file, and full-page thumbnail plus structural QA finds no clipping, overlap, encryption or widgets. No media or source is added; `sources.json`, geometry, metrics and all locked media/key-area figures keep their bytes. These checks establish only readability, structure and reproducible package construction, not field evidence, assistive-technology certification, approval, professional acceptance, real recovery or rights permission. G0, provisional status, zero real-world outcomes, `not_fully_cleared`, non-AI paths and professional vetoes remain unchanged.
 
-## Round 37 Browser QA matrix re-validation after the foreign-restore incident / 第 37 轮外部恢复事件后的浏览器 QA 矩阵复验
+## Round 37 browser regression checkpoint / 第 37 轮浏览器回归检查点
 
-第 37 轮在第 36 轮 PR #3043 合并（`1e967d1b0eb83ca8c90862d6fce7cd94b18c0406` 进入 `origin/main`）后开始，规则层无变化。第 35—36 轮修复了外部恢复提交 `b6c05fffe` 的台账后遗症并建立回归护栏；本轮用第 22 轮同款零依赖 CDP 驱动在 2026-08-17 对当前包字节重跑 18 例双语浏览器矩阵，全部通过（无横向溢出、无 JS 回退可见、reduced-motion 状态 01、运动边界状态 02、跳过链接为首焦点、0 缺 alt、aria-live、h1=1、控制台/请求/外域 0），确认交互层未受恢复事件影响；site-grounding 新增 `browser_matrix_r37` 合同记录该复验。无内容、图面、PDF 或数据变化。外部开放 PR #1471 状态未变，按第 30—36 轮同款操作者决定继续并监控。
+第 37 轮仅复验第 22 轮的双语 18 项浏览器矩阵并保持全绿；结构化明细留在 `site-grounding-register.json#package_validation_contract.browser_matrix_r37`。Round 37 only re-ran the bilingual 18-case browser matrix from Round 22 and kept it green; structured detail remains at `site-grounding-register.json#package_validation_contract.browser_matrix_r37`.
 
-Round 37 began after Round 36 PR #3043 merged (`1e967d1b0eb83ca8c90862d6fce7cd94b18c0406` entered `origin/main`); the rule layer is unchanged. Rounds 35–36 repaired the ledger aftermath of the foreign restore commit `b6c05fffe` and built regression guards; this round re-runs the 18-case bilingual browser matrix on 2026-08-17 with the same zero-dependency CDP driver as Round 22 against the current package bytes — all pass (no horizontal overflow, no-JS fallback visible, reduced-motion state 01, motion-boundary state 02, skip link first focus, 0 missing alt, aria-live, h1=1, 0 console/request/external-host errors), confirming the interactive layer is unaffected by the restore incident; site-grounding gains the `browser_matrix_r37` contract recording the re-validation. No content, figure, PDF or data change. External open PR #1471 is unchanged; the operator decision to proceed while monitoring continues, as in Rounds 30–36.
+## Round 36 evidence-namespace checkpoint / 第 36 轮证据命名空间检查点
 
-## Round 36 Compliance evidence-namespace separation & presentation regression guard / 第 36 轮合规证据命名空间分离与展示回归护栏
-
-第 36 轮在第 35 轮 PR #2848 合并（`4348bfcb96b373937c6e62d86afb8dcfde8ae717` 进入 `origin/main`）后开始。规则层大更新（guide/SKILL 的证据命名空间规则、compliance_matrix.schema.json、land_use_codes.json 及一批脚本）。本轮重读并响应：6 行合规矩阵把 `STD-URBAN-DESIGN` 从 `source_ids` 移到 `standard_ids=["MOHURD-URBAN-DESIGN-MEASURES"]`（与 standard_matrix 一致、快照来源保留在 sources.json）；23 行 schema 必填字段齐全、9 个用地代码全部在新枚举内，新规则层下 self-check 与 strict 8/8 通过。同时把第 24—27 轮的展示契约（对比度值、h2 阅读入口、官方章节标题）纳入索引生成器强制不变量，任何静默回退都会使再生成失败。外部开放 PR #1471 状态未变，按第 30—35 轮同款操作者决定继续并监控。
-
-Round 36 began after Round 35 PR #2848 merged (`4348bfcb96b373937c6e62d86afb8dcfde8ae717` entered `origin/main`). The rule layer changed substantially (evidence-namespace rules in the guide/SKILL, compliance_matrix.schema.json, land_use_codes.json and a batch of scripts). This round re-reads and responds: six compliance-matrix rows move `STD-URBAN-DESIGN` from `source_ids` to `standard_ids=["MOHURD-URBAN-DESIGN-MEASURES"]` (consistent with standard_matrix; the snapshot source stays in sources.json); all 23 rows carry the schema-required fields, all 9 used land-use codes are inside the new enum, and self-check plus strict 8/8 pass under the new rule layer. The Round 24–27 presentation contracts (contrast values, h2 reading entry, official chapter heading) also join the index generator's enforced invariants so any silent reversion fails regeneration. External open PR #1471 is unchanged; the operator decision to proceed while monitoring continues, as in Rounds 30–35.
+第 36 轮将标准、来源和用地代码按新版 schema 归位，并把第 24—27 轮展示契约纳入回归不变量。Round 36 aligned standards, sources and land-use codes with the then-current schema and promoted the Round 24–27 presentation contracts to regression invariants.
 
 ## Round 35 Rights-ledger digest coherence repair & second freshness audit / 第 35 轮权利台账摘要一致性修复与第二次来源新鲜度审计
 
@@ -431,13 +447,6 @@ Two fresh Python processes rebuilt all four publications with fixed input order,
 | `drawings/a0-boards.pdf` | 8 / A0 landscape | `66a325709cfc36de7a9e8c86c7beafce645dca630b94dcd0d1f4e0ce4316c0e4` |
 | `drawings/a0-boards.en.pdf` | 8 / A0 landscape | `103918c52bed55325c1fa8c98de803afafaa86ca5fcaaac23bd59758791c33b3` |
 
-## 方案叙事摘要 / Narrative summary
-
-AI 朝圣·铁轨新生带当前方案将百年京张定义为一条可审计的 AI 公共创新生产线。小月河场景赋能翼提出真实问题，AI 原点社区共创，众智园验证，大钟寺发布与服务，中关村科技服务翼提供建议性的合规与转化支持，公众反馈和失败证据回流下一年度。
-
-第 2 轮不另起一套规划，而把三处重点区深化为不可机械复制的公共空间原型：众智园以平行验证庭、实体设备隔离和维护/急停边保护公众观察；原点社区以一街两院四节点、无屏共学和同意撤回保护居民日常；大钟寺以四向步行、一厅一台、来源纠错和人工同任务服务保护通勤。平面、关系剖面、首层界面、连续非 AI / 无障碍意图线、四步旅程、可拆构件、普通—验证—故障—恢复四态和场所恢复验收回链同一结构化合同。全部节点仍处于 G0；临时 geometry、字段覆盖、本地 PASS 与生成记录均不构成审批、现场结果或清权证明。
-
-Round 2 adds no competing plan. It deepens the three key areas into public-space prototypes that cannot be mechanically copied. Zhongzhiyuan protects public observation through a parallel proof court, physical equipment isolation, and a service/stop edge. Origin Community protects resident daily life through one street, two courts, four nodes, screen-free learning, and consent withdrawal. Dazhongsi protects commuting through four-way walking, one hall/one desk, source correction, and same-task staffed service. Plans, relationship sections, ground-floor interfaces, continuous non-AI/accessibility intent, four-step journeys, removable components, ordinary–proof–fault–recovery states, and place-restoration acceptance link to one structured contract. Every node remains G0; provisional geometry, field coverage, local PASS results, and generation records are not approval, field performance, or rights-clearance evidence.
 
 ## 第 12 轮普通生活空间场景册 / Round 12 ordinary-life spatial scenes
 

@@ -49,6 +49,8 @@
         "submissions/147228/jingzhang-open-pulse/assets/figures/mobility-bluegreen.en.svg",
         "submissions/147228/jingzhang-open-pulse/assets/figures/mobility-bluegreen.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/mobility-bluegreen.svg",
+        "submissions/147228/jingzhang-open-pulse/assets/figures/open-pulse-service-equivalence-atlas.en.svg",
+        "submissions/147228/jingzhang-open-pulse/assets/figures/open-pulse-service-equivalence-atlas.svg",
         "submissions/147228/jingzhang-open-pulse/assets/figures/public-interest-positions.en.png",
         "submissions/147228/jingzhang-open-pulse/assets/figures/public-interest-positions.en.svg",
         "submissions/147228/jingzhang-open-pulse/assets/figures/public-interest-positions.png",
@@ -156,6 +158,7 @@
         "submissions/147228/jingzhang-open-pulse/visual/assets/model-backtest.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/open-pulse-relay-receipt.schema.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/open-pulse-scenario-audit.json",
+        "submissions/147228/jingzhang-open-pulse/visual/assets/open-pulse-service-equivalence-atlas.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/open-pulse-tabletop-contract.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/open-pulse-tabletop-evidence.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/open-pulse-test-window-record.schema.json",
@@ -175,6 +178,7 @@
         "submissions/147228/jingzhang-open-pulse/visual/assets/run-open-pulse-public-interest-positions.js",
         "submissions/147228/jingzhang-open-pulse/visual/assets/run-open-pulse-resilience-boundary-audit.js",
         "submissions/147228/jingzhang-open-pulse/visual/assets/run-open-pulse-scenario-audit.js",
+        "submissions/147228/jingzhang-open-pulse/visual/assets/run-open-pulse-service-equivalence.js",
         "submissions/147228/jingzhang-open-pulse/visual/assets/run-open-pulse-tabletop.js",
         "submissions/147228/jingzhang-open-pulse/visual/assets/run-spatial-lineage-register.js",
         "submissions/147228/jingzhang-open-pulse/visual/assets/scenario-operation-matrix.json",
@@ -182,6 +186,7 @@
         "submissions/147228/jingzhang-open-pulse/visual/assets/sustainability-timeseries.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/taskbook-crosswalk.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/territorial-data-baseline.json",
+        "submissions/147228/jingzhang-open-pulse/visual/assets/test-open-pulse-service-equivalence.js",
         "submissions/147228/jingzhang-open-pulse/visual/assets/v2-evidence-gate-index.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/wind-health-field-protocol.json",
         "submissions/147228/jingzhang-open-pulse/visual/assets/wind-health-point-register.json",
@@ -192,7 +197,7 @@
       "ai_package_stages": {
         "submissions/147228/jingzhang-open-pulse": "formal"
       },
-      "total_bytes": 13689021,
+      "total_bytes": 13725473,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -277,10 +282,10 @@
         "proposal_format_version": "1",
         "evidence_contract": "legacy-exhaustive-inline",
         "proposal_reference_counts": {
-          "source": 59,
+          "source": 60,
           "standard": 6,
           "depth": 15,
-          "data": 18,
+          "data": 20,
           "metric": 31
         }
       }

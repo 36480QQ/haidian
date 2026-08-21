@@ -179,7 +179,7 @@
       "ai_package_stages": {
         "submissions/xyh202131/jingzhang-ai-pilgrimage-belt": "formal"
       },
-      "total_bytes": 41389938,
+      "total_bytes": 23680310,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -237,20 +237,9 @@
       "ok": true,
       "issues": [],
       "metrics_seen": {
-        "site_area_sqm": 11412825.385554,
-        "land_use_unit_count": 36.0,
-        "building_count": 180.0,
-        "key_area_building_count": 135.0,
+        "site_area_sqm": 11412825.386,
         "green_ratio": 0.126157,
-        "public_space_ratio": 0.012831,
-        "public_space_node_count": 9.0,
-        "gateway_count": 6.0,
-        "mapped_scenario_node_count": 12.0,
-        "ai_service_zone_count": 3.0,
-        "scenario_passport_coverage_ratio": 1.0,
-        "manual_fallback_coverage_ratio": 1.0,
-        "non_ai_access_coverage_ratio": 1.0,
-        "phase_count": 3.0
+        "public_space_ratio": 0.012831
       }
     },
     "stderr": ""
@@ -268,11 +257,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 50,
+          "source": 36,
           "standard": 6,
           "depth": 15,
-          "data": 79,
-          "metric": 80
+          "data": 61,
+          "metric": 60
         }
       }
     },

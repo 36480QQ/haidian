@@ -5,7 +5,7 @@ language: "zh"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "基于 provisional boundary 和结构化自检要求生成的 formal AI 城市设计方案包；保留精度警示和复算要求，但组织方数据缺口不阻断内容评分。"
 translation_file: "proposal.en.md"
-iteration: "v2.4"
+iteration: "v2.5"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -21,6 +21,22 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ![一轴三站两翼与 S-02 双状态证据回路](assets/figures/site-overview.png)
 
 首图把 S-02 的桌面回放与现场窗口分开。本地合成桌面回放可重复通过 4/4 夹具、6/6 检查和 5/5 恢复步骤，只说明停止、撤回和恢复逻辑能够复跑；有限现场窗口继续 HOLD，尚未授权，也没有运行。路线、无障碍、安全、许可、维护责任和人工接管证据到齐前，普通步行与人工配送保持可用，任何人都可以要求停止。复跑记录见 `visual/assets/open-pulse-tabletop-evidence.json`，现场窗口边界见 `visual/assets/example-s02-embodied-test-window.json`。
+
+## 普通路径先行，AI 只做可撤回增益
+
+三处重点区各保留一条不依赖账号、模型或网络的普通服务路径。众智园把人工配送放在低速机器人窗口旁，AI 原点把人工柜台放在流程检索旁，大钟寺把居民归家和普通商业放在活动容量提示旁。每条路径都留下五步回执，先看普通入口，再看 AI 做什么，随后确认人工接管、停止条件和恢复动作 [data:visual/assets/open-pulse-service-equivalence-atlas.json] [data:visual/assets/run-open-pulse-service-equivalence.js]。
+
+| 回执步骤 | 读者要核对的内容 | 当前边界 |
+| --- | --- | --- |
+| 看见普通入口 | 步行、纸面、人工和公开规则仍然可用 | 概念合同 |
+| 知道 AI 做什么 | 只描述有限的检索、提示或窗口增益 | 角色待复核 |
+| 人工可以接管 | 具名责任、投诉和退出入口留在路径上 | 尚未授权 |
+| 失败立即停用 | 冲突、越权、消防或无障碍问题触发停止 | 合成回放 |
+| 回到日常并留回执 | 撤回设备或数字层，保留决定记录 | 现场结果 unknown |
+
+![普通服务与 AI 增益等价回执。三处重点区共用五步停止与恢复](assets/figures/open-pulse-service-equivalence-atlas.svg)
+
+当前回放只检查包内 14 条场景、8 项运营动作、3 处节点和 8 类画像的连接，4 个负向夹具均应回到 HOLD。它不证明居民体验、服务绩效、现场无障碍、许可、人员值守或官方评分 [data:visual/assets/open-pulse-service-equivalence-atlas.json]。
 
 ## 设计依据与资料清单
 
@@ -496,7 +512,7 @@ v1.8 的验收不是“方案写得更长”，而是 13 个任务书评审维�
 
 ## 参考资料
 
-- brief/public-brief.md
+- brief/public-brief.md [source:PUBLIC-BRIEF]
 - brief/site-package/design_brief.json
 - brief/site-package/allowed_design_space.json
 - brief/site-package/enums/
