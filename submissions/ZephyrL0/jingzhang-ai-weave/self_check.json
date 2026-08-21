@@ -87,6 +87,9 @@
         "submissions/ZephyrL0/jingzhang-ai-weave/assets/figures/site-overview.png",
         "submissions/ZephyrL0/jingzhang-ai-weave/assets/figures/three-key-areas-detail.en.png",
         "submissions/ZephyrL0/jingzhang-ai-weave/assets/figures/three-key-areas-detail.png",
+        "submissions/ZephyrL0/jingzhang-ai-weave/assets/media/common-eave-v6-concept.png",
+        "submissions/ZephyrL0/jingzhang-ai-weave/assets/media/four-corner-v61-concept.png",
+        "submissions/ZephyrL0/jingzhang-ai-weave/assets/media/shared-eave-v61-concept.png",
         "submissions/ZephyrL0/jingzhang-ai-weave/assumptions.json",
         "submissions/ZephyrL0/jingzhang-ai-weave/changelog.md",
         "submissions/ZephyrL0/jingzhang-ai-weave/compliance_matrix.json",
@@ -121,6 +124,10 @@
         "submissions/ZephyrL0/jingzhang-ai-weave/visual/assets/agent-prompts.json",
         "submissions/ZephyrL0/jingzhang-ai-weave/visual/assets/agent-runtime.json",
         "submissions/ZephyrL0/jingzhang-ai-weave/visual/assets/agent-traces.json",
+        "submissions/ZephyrL0/jingzhang-ai-weave/visual/assets/civic-weather-steward-contract.json",
+        "submissions/ZephyrL0/jingzhang-ai-weave/visual/assets/civic-weather-steward-fixtures.json",
+        "submissions/ZephyrL0/jingzhang-ai-weave/visual/assets/civic-weather-steward-run.json",
+        "submissions/ZephyrL0/jingzhang-ai-weave/visual/assets/civic-weather-steward-testbench.js",
         "submissions/ZephyrL0/jingzhang-ai-weave/visual/assets/evidence-register.json",
         "submissions/ZephyrL0/jingzhang-ai-weave/visual/assets/replay.js",
         "submissions/ZephyrL0/jingzhang-ai-weave/visual/assets/responsibility-ledger.json",
@@ -135,7 +142,7 @@
       "ai_package_stages": {
         "submissions/ZephyrL0/jingzhang-ai-weave": "formal"
       },
-      "total_bytes": 38602483,
+      "total_bytes": 38279980,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -173,33 +180,6 @@
           "target_feature_id": "PROV-KEY-003",
           "expected": null,
           "actual": null
-        },
-        {
-          "check_id": "METRIC_RECALC_DRIFT",
-          "severity": "minor",
-          "target_file": "metrics.json",
-          "message": "green_space_area_sqm is within the legacy tolerance but drifts beyond ordinary reporting precision; reconcile before publication.",
-          "target_feature_id": null,
-          "expected": 3159036.712482,
-          "actual": 3159125.179
-        },
-        {
-          "check_id": "METRIC_RECALC_DRIFT",
-          "severity": "minor",
-          "target_file": "metrics.json",
-          "message": "public_space_area_sqm is within the legacy tolerance but drifts beyond ordinary reporting precision; reconcile before publication.",
-          "target_feature_id": null,
-          "expected": 879132.939325,
-          "actual": 879157.451
-        },
-        {
-          "check_id": "METRIC_RECALC_DRIFT",
-          "severity": "minor",
-          "target_file": "metrics.json",
-          "message": "building_footprint_area_sqm is within the legacy tolerance but drifts beyond ordinary reporting precision; reconcile before publication.",
-          "target_feature_id": null,
-          "expected": 1672787.919572,
-          "actual": 1672759.049
         }
       ],
       "metrics": {
@@ -221,8 +201,12 @@
       "issues": [],
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
-        "green_ratio": 0.276805,
-        "public_space_ratio": 0.077032
+        "green_ratio": 0.276797077467,
+        "public_space_ratio": 0.077030262848,
+        "civic_weather_steward_fixture_count": 18.0,
+        "civic_weather_steward_must_fail_count": 10.0,
+        "civic_weather_steward_test_pass_rate": 1.0,
+        "civic_weather_steward_automatic_action_count": 0.0
       }
     },
     "stderr": ""
@@ -236,15 +220,15 @@
       "summary": {
         "standard_matrix_items": 5,
         "design_depth_items": 15,
-        "known_metric_refs_required": 50,
+        "known_metric_refs_required": 54,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 39,
+          "source": 45,
           "standard": 2,
           "depth": 15,
-          "data": 14,
-          "metric": 37
+          "data": 23,
+          "metric": 40
         }
       }
     },
@@ -253,10 +237,7 @@
   "spatial_issue_ids": [
     "KEY_AREA_PROVISIONAL",
     "KEY_AREA_PROVISIONAL",
-    "KEY_AREA_PROVISIONAL",
-    "METRIC_RECALC_DRIFT",
-    "METRIC_RECALC_DRIFT",
-    "METRIC_RECALC_DRIFT"
+    "KEY_AREA_PROVISIONAL"
   ],
   "visual_issue_ids": [],
   "professional_issue_ids": [],
