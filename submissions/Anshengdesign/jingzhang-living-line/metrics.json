@@ -922,6 +922,216 @@
    ],
    "formula": "emergent_shares[商业]",
    "confidence": "medium"
+  },
+  "percolation_giant_fraction_now": {
+   "status": "known",
+   "value": 0.84,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c2_percolation.json"
+   ],
+   "formula": "blue-green giant fraction (current)",
+   "confidence": "medium"
+  },
+  "percolation_giant_fraction_design": {
+   "status": "known",
+   "value": 0.904,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c2b_gates.json"
+   ],
+   "formula": "giant fraction after 7 stitches (design)",
+   "confidence": "medium"
+  },
+  "syntax_integration_gain_pct": {
+   "status": "known",
+   "value": 36,
+   "unit": "percent",
+   "source_files": [
+    "计算/c4_syntax.json"
+   ],
+   "formula": "mean anchor integration gain after stitching",
+   "confidence": "medium"
+  },
+  "syntax_gain_dazhongsi_pct": {
+   "status": "known",
+   "value": 70,
+   "unit": "percent",
+   "source_files": [
+    "计算/c4_syntax.json"
+   ],
+   "formula": "(design-real)/real integration, Dazhongsi",
+   "confidence": "medium"
+  },
+  "syntax_gain_wudaokou_pct": {
+   "status": "known",
+   "value": 43,
+   "unit": "percent",
+   "source_files": [
+    "计算/c4_syntax.json"
+   ],
+   "formula": "(design-real)/real integration, Wudaokou",
+   "confidence": "medium"
+  },
+  "jobs_housing_entropy_now": {
+   "status": "known",
+   "value": 7.454,
+   "unit": "nats",
+   "source_files": [
+    "计算/c28_luti.json"
+   ],
+   "formula": "jobs-housing entropy (current)",
+   "confidence": "medium"
+  },
+  "jobs_housing_entropy_design": {
+   "status": "known",
+   "value": 7.85,
+   "unit": "nats",
+   "source_files": [
+    "计算/c28_luti.json"
+   ],
+   "formula": "entropy after entanglement S4",
+   "confidence": "medium"
+  },
+  "jobs_housing_entropy_gain_pct": {
+   "status": "known",
+   "value": 5.3,
+   "unit": "percent",
+   "source_files": [
+    "计算/c28_luti.json"
+   ],
+   "formula": "(design-now)/now entropy",
+   "confidence": "medium"
+  },
+  "ei1_value": {
+   "status": "known",
+   "value": 0.795,
+   "unit": "ratio",
+   "source_files": [
+    "计算/ei1.json"
+   ],
+   "formula": "Emergence Index E0 (anchored, four sub-indices)",
+   "confidence": "medium"
+  },
+  "ei1_design_s4": {
+   "status": "known",
+   "value": 0.9625,
+   "unit": "ratio",
+   "source_files": [
+    "计算/ei1_anchored.json"
+   ],
+   "formula": "EI under prescription S4",
+   "confidence": "medium"
+  },
+  "ei1_sensitivity_low": {
+   "status": "known",
+   "value": 0.93,
+   "unit": "ratio",
+   "source_files": [
+    "计算/ei1_sensitivity.json"
+   ],
+   "formula": "EI sensitivity interval lower bound",
+   "confidence": "medium"
+  },
+  "ei1_sensitivity_high": {
+   "status": "known",
+   "value": 0.97,
+   "unit": "ratio",
+   "source_files": [
+    "计算/ei1_sensitivity.json"
+   ],
+   "formula": "EI sensitivity interval upper bound",
+   "confidence": "medium"
+  },
+  "redundancy_R_now": {
+   "status": "known",
+   "value": 0.826,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c29_redundancy.json"
+   ],
+   "formula": "R_od (current)",
+   "confidence": "medium"
+  },
+  "redundancy_R_after": {
+   "status": "known",
+   "value": 0.87,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c29_redundancy.json"
+   ],
+   "formula": "R_od after entanglement",
+   "confidence": "medium"
+  },
+  "lambda_net_pct_stitched": {
+   "status": "known",
+   "value": 24.76,
+   "unit": "percent",
+   "source_files": [
+    "计算/c32_lambda_stitched.json"
+   ],
+   "formula": "net λ after stitching (unchanged - diagnostic)",
+   "confidence": "medium"
+  },
+  "fl_employment_min_sqm": {
+   "status": "known",
+   "value": 181000,
+   "unit": "sqm",
+   "source_files": [
+    "计算/c31_fl.json"
+   ],
+   "formula": "employment floor-area lower bound",
+   "confidence": "medium"
+  },
+  "fl_employment_max_sqm": {
+   "status": "known",
+   "value": 1190000,
+   "unit": "sqm",
+   "source_files": [
+    "计算/c31_fl.json"
+   ],
+   "formula": "employment floor-area upper bound",
+   "confidence": "medium"
+  },
+  "new_build_area_sqm": {
+   "status": "known",
+   "value": 446000,
+   "unit": "sqm",
+   "source_files": [
+    "计算/c33_capacity.json"
+   ],
+   "formula": "new-build total (67 absorb + 11 new cells)",
+   "confidence": "medium"
+  },
+  "score_s4": {
+   "status": "known",
+   "value": 0.3568,
+   "unit": "ratio",
+   "source_files": [
+    "计算/score_s4.json"
+   ],
+   "formula": "Score=0.35ΔEI+0.15robust+0.35feasible-0.15risk (S4)",
+   "confidence": "medium"
+  },
+  "corridor_length_m": {
+   "status": "known",
+   "value": 7919,
+   "unit": "m",
+   "source_files": [
+    "计算/c2_corridor.json"
+   ],
+   "formula": "spine corridor length (7 breaks measured)",
+   "confidence": "medium"
+  },
+  "talent_apartment_sqm": {
+   "status": "known",
+   "value": 178400,
+   "unit": "sqm",
+   "source_files": [
+    "计算/c33_capacity.json"
+   ],
+   "formula": "talent apartments (guaranteed-price)",
+   "confidence": "medium"
   }
  }
 }
