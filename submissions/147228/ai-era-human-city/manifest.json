@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "513a75c3be4dd20ed1db849b530a69ea007e4169a76f2b2d20c13807b004c391"
+      "sha256": "b93d58a52ded02d78b48583ffdabe0c07d1c6d5383d4c92728c16c8b871185da"
     },
     {
       "path": "agent.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "af578d4e241dea7cc53b91d03289b83336f0af7a1b002f681aba188da893255e"
+      "sha256": "47a5c45f4bd4e27d60d7c70b853c94eb04ba841761ba16db387bc0debcfc4a74"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "95e6ab72013115270af7000097e49db190969f91e78329f4977f76d5803a51ba"
+      "sha256": "9ba48e2adfed94acdf7c74c721e6a76ca9aaee49c14a2b98f38ce01c55b2311e"
     },
     {
       "path": "report/narrative.md",
@@ -216,7 +216,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d5b30eef81cc8554f8ff7cc170eb97e2a087c495267f5dbf45f00b146e4982d1"
+      "sha256": "c4f8c4bc8f87c3a0b084612688676be5c1bfebd2768b3b464a4651afd9301d94"
     },
     {
       "path": "report/proposal.en.html",
@@ -224,7 +224,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a493231633d1384ae7a15ea06af0b606d1a96b216fdbaddcc01583e0d9744faa"
+      "sha256": "01d6fcf3c81aa18bf9922e459287db57f6a89fc17409dee2fb0ff7d5fb58af5d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -302,7 +302,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "5e8d21a89c906231a4cfb8908d44fce10e90b717bbda8f8aa525320e650644a3"
+      "sha256": "ccb3a8b08f72fec1290d29b91814f2fb93889857ed2246c67b85d2c27841f30c"
     },
     {
       "path": "assets/identity/belt-logo-concept.svg",
@@ -428,7 +428,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "narrative",
       "required": false,
-      "sha256": "228f41015050eb74fdd57d1c8071346d12a316069d0f7267f6a6f34714c6210d"
+      "sha256": "b15ec7925bcd018e7aa97a6df2528e320d7dfe813438b517943762a9b7fe2871"
     },
     {
       "path": "visual/assets/bilingual-equivalence-audit.json",
@@ -806,6 +806,35 @@
       "required": false,
       "language": "neutral",
       "sha256": "c071db3e7105c2a6e01bfaf87c2d1f7b06934323ef4847187a61493ae4f137f6"
+    },
+    {
+      "path": "assets/figures/ai-era-continuity-maintenance-atlas.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "733bf9d8b3e0b657c69c6c974969506a525ffdf1974717e9fa27c98091475731"
+    },
+    {
+      "path": "assets/figures/ai-era-continuity-maintenance-atlas.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/ai-era-continuity-maintenance-atlas.svg",
+      "sha256": "705fd7ad037a61595fdacc5547e4736fbbaa0ec8ea702e1d87df58023dd26b49"
+    },
+    {
+      "path": "visual/assets/ai-era-continuity-maintenance-contract.json",
+      "role": "audit_artifact",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e05cc9189408b7146fd79b223f36e0b32e5a5af55be726c52c504d4c2fd7ac66"
+    },
+    {
+      "path": "visual/assets/run-ai-era-continuity-maintenance.js",
+      "role": "validation_script",
+      "required": false,
+      "language": "neutral",
+      "sha256": "9c81cd974a2ea8d86c9e046c3f81b31627dfad01b784bfbc3cb7e55458b05d25"
     }
   ],
   "validation_claim": {

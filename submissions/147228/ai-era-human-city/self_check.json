@@ -30,6 +30,8 @@
       ],
       "changed_files": [
         "submissions/147228/ai-era-human-city/agent.json",
+        "submissions/147228/ai-era-human-city/assets/figures/ai-era-continuity-maintenance-atlas.en.svg",
+        "submissions/147228/ai-era-human-city/assets/figures/ai-era-continuity-maintenance-atlas.svg",
         "submissions/147228/ai-era-human-city/assets/figures/ai-era-g0-journey-atlas.en.svg",
         "submissions/147228/ai-era-human-city/assets/figures/ai-era-g0-journey-atlas.svg",
         "submissions/147228/ai-era-human-city/assets/figures/ai-era-off-city-on-atlas.en.svg",
@@ -107,6 +109,7 @@
         "submissions/147228/ai-era-human-city/spatial.json",
         "submissions/147228/ai-era-human-city/standard_matrix.json",
         "submissions/147228/ai-era-human-city/visual/assets/accessibility-audit.json",
+        "submissions/147228/ai-era-human-city/visual/assets/ai-era-continuity-maintenance-contract.json",
         "submissions/147228/ai-era-human-city/visual/assets/ai-era-g0-journey-atlas.json",
         "submissions/147228/ai-era-human-city/visual/assets/ai-era-off-city-on-contract.json",
         "submissions/147228/ai-era-human-city/visual/assets/ai-era-ordinary-journey-contract.json",
@@ -131,6 +134,7 @@
         "submissions/147228/ai-era-human-city/visual/assets/public-space-landmarks.json",
         "submissions/147228/ai-era-human-city/visual/assets/regional-collaboration.json",
         "submissions/147228/ai-era-human-city/visual/assets/rights-clearance-ledger.json",
+        "submissions/147228/ai-era-human-city/visual/assets/run-ai-era-continuity-maintenance.js",
         "submissions/147228/ai-era-human-city/visual/assets/run-ai-era-evidence-boards.js",
         "submissions/147228/ai-era-human-city/visual/assets/run-ai-era-g0-journey-atlas.js",
         "submissions/147228/ai-era-human-city/visual/assets/run-ai-era-off-city-on.js",
@@ -151,7 +155,7 @@
       "ai_package_stages": {
         "submissions/147228/ai-era-human-city": "formal"
       },
-      "total_bytes": 22039556,
+      "total_bytes": 22079520,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -232,7 +236,7 @@
           "source": 13,
           "standard": 5,
           "depth": 16,
-          "data": 42,
+          "data": 44,
           "metric": 21
         }
       }

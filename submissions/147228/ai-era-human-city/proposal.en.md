@@ -9,7 +9,7 @@ translation_of: "proposal.md"
 license: "CC-BY-4.0"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "v2.5"
+iteration: "v2.6"
 ---
 
 # From an AI Showcase to a City for People in the AI Era
@@ -52,6 +52,21 @@ Four routes use ordinary service without AI as the baseline and place AI only in
 ![AI is optional and the city keeps running. Four routes share an ordinary baseline and a withdrawal state](assets/figures/ai-era-off-city-on-atlas.en.svg)
 
 This contract links each existing route to an ordinary entry, the AI role, the stop condition and the public asset retained after withdrawal. Four negative fixtures return to HOLD and three ordinary or human controls continue. The result remains zero authorisations, zero field data, not run and HOLD; it provides no service performance, staffing or official-score evidence [data:visual/assets/ai-era-off-city-on-contract.json].
+
+## A Continuity Receipt Connects Maintenance to Ordinary Service
+
+The four states now continue into a maintenance handoff. BASE checks the ordinary entry, screen-free alternative and exit record. BOOST keeps AI as a bounded gain. BLACKOUT stops the route when role, rights or safety conditions are unclear. BEQUEST retains access, service, redress and the release record. After handoff, the public asset returns to the ordinary route and the digital layer is not the only entrance [data:visual/assets/ai-era-continuity-maintenance-contract.json] [data:visual/assets/run-ai-era-continuity-maintenance.js].
+
+| State | Reviewer action | Passing condition |
+| --- | --- | --- |
+| BASE ordinary route | Staffed entry, paper rule, screen-free wayfinding, exit record | Ordinary service is visible and staffed |
+| BOOST optional gain | Purpose bound, human review, withdrawal | AI is not the only entry |
+| BLACKOUT stop and takeover | Stop trigger, safe retreat, incident record | Every failing fixture returns to HOLD |
+| BEQUEST public retention | Maintenance handoff, release note, public replay | Access, service and redress remain usable |
+
+![Human continuity and maintenance receipt: four states, three key areas, seven maintenance roles and twelve conceptual review windows](assets/figures/ai-era-continuity-maintenance-atlas.en.svg)
+
+The receipt places the ordinary entries of Zhongzhiyuan, AI Origin Community and Dazhongsi under one handoff rule. It also records six handoff seams, seven proposed responsibility roles and seven offline components. W01 through W12 are conceptual review windows covering source inventory, paper replay, screen-free checks, stop replay, maintenance handoff, public replay and stage decisions. They are not field work periods or operating commitments. Six negative fixtures remain HOLD. Four positive controls only show that ordinary service, a human option or a retained public asset can continue in replay. The package remains at zero authorisations, zero field observations, baseline unknown and performance not run [data:visual/assets/ai-era-continuity-maintenance-contract.json].
 
 ## Design Basis and Source List
 
