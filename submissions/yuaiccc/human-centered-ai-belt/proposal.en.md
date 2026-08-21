@@ -75,6 +75,36 @@ The package records site and key-area geometry, land-use coverage, building foot
 
 ![Metrics and evidence](assets/figures/metrics-evidence.en.png)
 
+## JZ-01..JZ-06 implementation matrix (actor, phasing, KPI, exit)
+
+The table below advances the proposed projects from a "list" to the level of detail that a professional team can refine. The "Lead actor" and "Co-actor" columns are **suggestions**, not commitments; real implementation must follow official control planning, municipal, ownership and approval outcomes.
+
+| ID | Project | Type | Lead / co-actor | Start condition | Phase milestones (T+M) | Resource scale | Main risk | Acceptance KPI (suggested) | Pause / exit condition |
+|---|---|---|---|---|---|---|---|---|---|
+| JZ-01 | Jing-Zhang Heritage Park slow-traffic gap stitching | Public space / mobility | Haidian Urban Management + sub-district + university volunteers + design team | Road red-line + under-bridge ownership confirmed | M+3 pilot node / M+9 corridor open / M+24 full nodes accepted | Medium (CNY 100M scale, requires control plan) | Under-bridge ownership unclear; low pedestrian volume | Walking-gap closure ≥ 80%; night-lighting coverage ≥ 90%; crossing volume +30% | Red-line conflict or volume too low → pause peripheral nodes |
+| JZ-02 | Zhongzhiyuan Qinghe innovation frontage | Blue-green / industry showcase | Haidian Water Authority + sub-district + lead enterprises + design team | River blue-line + flood-control + ecological assessment | M+6 pilot / M+18 main frontage open / M+36 full acceptance | High (hydraulic works) | Flood safety; ecological sensitivity | Public open frontage ≥ 70%; ≥ 6 open public events / year | Flood or ecological assessment fails → pause hard works |
+| JZ-03 | Origin Community near-campus commercialization street | Renewal / industry | Zhongguancun Science City + universities + start-ups + property owners | Campus boundary + ownership + ground-floor viability | M+6 pilot tenancy / M+24 main street open / M+36 stable platform | Medium (depends on ownership coordination) | Fragmented ownership; rent affordability | Conversion occupancy ≥ 60%; ≥ 12 campus-enterprise events / year | Ownership deadlock or rent overshoot → shrink |
+| JZ-04 | Dazhongsi station four-quadrant pedestrian connectivity | Rail integration / slow traffic | Beijing MTR + Haidian Transport + utility owners + design team | Rail red-line + utility survey + approval interface | M+6 pilot quadrant / M+24 two open / M+36 all quadrants | High (utility relocation) | Utility relocation; night-work constraints | 500m pedestrian connectivity ≥ 95%; barrier-free path 100% | Utility cost over budget 30% → phase the works |
+| JZ-05 | AI public service and edge-compute nodes | New infrastructure / public service | Haidian S&T + compute operator + sub-district + design team | Energy access + compute safety review + operating entity | M+6 single pilot / M+18 three-node network / M+36 area-wide | High (compute + energy) | Energy footprint; data security | Compute utilization ≥ 40%; ≥ 5 public service interfaces | Sustained vacancy ≥ 50% → freeze new nodes |
+| JZ-06 | Global AI Week public route | Operation / brand | Haidian Culture & Tourism + sub-district + associations + international partners | Public space permits + safety assessment + rights clearance | M+3 route trial / M+12 full open / M+24 inaugural global week | Medium (event-led) | Event safety; cultural-symbol rights | Daily visitors ≥ 5,000; ≥ 10% international participants | Any safety incident → immediate pause and review |
+
+> Note: Phasing uses T = project kick-off month. M+N means N months after kick-off. All KPIs and exit conditions are **suggestions**; a professional team must reconfirm them once formal control conditions are known.
+
+## Inclusion supplement: vulnerable and access-limited groups
+
+Beyond the developer / start-up / enterprise visitor / resident / student personas covered in the main narrative, this section lists six vulnerable or access-limited groups with concrete needs and spatial responses, as a refinement-stage checklist:
+
+| Group | Core need | Spatial and service response | Verification indicator |
+|---|---|---|---|
+| Older adults (60+) | Slow walking, legible signage, shelter, rest seats | Rest nodes every 200m along blue-green public space; sun shelters; night high-contrast signage; slow-traffic slope ≤ 2% | ≥ 4 rest nodes per 1km; barrier-free slope compliance 100% |
+| Children (3–12) | Safe school commute, parental waiting, toilets, baby rooms | Dedicated school commute routes in key areas + parent waiting zones; public toilets every 500m; baby rooms per national standard | Public toilet coverage ≥ 95%; ≥ 1 children's activity space per key area |
+| People with disabilities (visual / wheelchair / hearing) | Barrier-free access, tactile guidance, audio/visual aids | Continuous tactile paving; tactile guidance bricks at key nodes; elevator audio cues; hearing-loop in theatres/exhibits | Barrier-free path continuity ≥ 95%; barrier-free toilet coverage 100% |
+| Low digital-literacy / elderly | Non-App service access, in-person service, phone hotlines | Every AI scenario keeps an offline counter or phone entry; no mandatory QR codes | ≥ 1 offline interface per key area; in-person service ≥ 30% of opening hours |
+| Night / shift workers | 24h safe passage, night food, safety lighting | Slow-traffic corridors ≥ 50 lux at night; ≥ 1 24h convenience store / light-meal spot per key area; emergency call points ≤ 300m | Night luminance compliance ≥ 90%; emergency response ≤ 5 minutes |
+| Low-income / temporary visitors | Affordable housing, food, public services | ≥ 15% affordable rental housing in key areas; tiered public canteens; free Wi-Fi and rest space coverage | Affordable rental completion 100%; ≥ 30 free rest seats per key area |
+
+> No AI scenario, mechanism or data-governance proposal may replace the offline alternatives or in-person override for these groups with an online-only entry. `assumptions.json` and `compliance_matrix.json` should record the sources and verification responsibility for these personas in parallel.
+
 ## Risk, rights and review statement
 
 The package is released under `COMMUNITY-DISPLAY-ONLY`. It does not grant planning, procurement or construction rights. Personal data, campus data, enterprise marks, imagery and third-party content require permission. The GitHub contributor is responsible for this package; the repository maintainers and public authorities retain review and acceptance decisions. “Ye Pulse” is a personal design signature made public as a conceptual layer, not a claim of endorsement.
