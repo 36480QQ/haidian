@@ -10,24 +10,6 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[0]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[1]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[2]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[3]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[4]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[5]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[6]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[7]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[8]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[9]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[10]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[11]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[12]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[13]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[14]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[15]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[16]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
-        "submissions/147228/ai-era-human-city/compliance_matrix.json: requirements[20]: source_ids contains standard IDs that belong in standard_ids: MOHURD-URBAN-DESIGN-MEASURES",
         "submissions/147228/ai-era-human-city/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
         "submissions/147228/ai-era-human-city/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context",
         "submissions/147228/ai-era-human-city/spatial.json: items[1]: provisional spatial concept needs maintainer review before being treated as public-facing context",
@@ -165,7 +147,7 @@
       "ai_package_stages": {
         "submissions/147228/ai-era-human-city": "formal"
       },
-      "total_bytes": 22012177,
+      "total_bytes": 22018320,
       "maintainer_bypass": false
     },
     "stderr": ""
