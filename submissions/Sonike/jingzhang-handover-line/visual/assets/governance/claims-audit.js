@@ -703,6 +703,121 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
       bad.length ? bad.join("；") : (claims.length !== 4 ? `抽到 ${claims.length} 条声明，应为 4 条` : `4 条逐条相符：${claims.map((c) => c.id + "→" + c.want).join("、")}`));
 }
 
+/* G5. 场景卡的「空间载体」声明 vs 几何逐点复算。
+   2026-08-22 抓到的一类真错：四张场景卡把落点写成某座交接场内部（「开源交接场授权台」
+   「城市交接场维修驿／社区照护桌／口述史亭」），而 public_space.geojson 里这四个点全在
+   三处重点区之外，其中三个的最近重点区还是另一座交接场——SCN-08 距大钟寺 3127 m、距原点
+   社区仅 611 m。同一份正文的重点区复算表（「场景节点」那一行）反而与几何一致，即同一文档
+   内两处口径互斥。已按几何把落点改写为「连续公共交接面 ＋ 连接段里程」。
+   本项把它变成机器判定：容器判定用射线法，在 WGS84 经纬度下即可精确判断包含关系（多边形
+   简单、尺度小，「含不含」与投影无关）；里程用本站纬度上的局部等距近似复算（1° 纬 111195 m、
+   1° 经 111195·cos φ，10 km 尺度上误差 <0.1%，远优于「约 X.X km」的有效位数）。
+   三类声明的条数 5／4／3 与卡片总数 12 写死参与退出码——某张卡被悄悄删掉时
+   「逐条一致」仍会成立。 */
+{
+  const ks = readPkg("geometry/key_areas.geojson").features;
+  const ps = readPkg("geometry/public_space.geojson").features;
+  const rd = readPkg("geometry/roads.geojson").features;
+
+  const inRing = (pt, ring) => {
+    let hit = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const [xi, yi] = ring[i];
+      const [xj, yj] = ring[j];
+      if ((yi > pt[1]) !== (yj > pt[1]) &&
+          pt[0] < ((xj - xi) * (pt[1] - yi)) / (yj - yi) + xi) hit = !hit;
+    }
+    return hit;
+  };
+  const contains = (g, pt) => {
+    const polys = g.type === "Polygon" ? [g.coordinates] : g.coordinates;
+    return polys.some((rr) => inRing(pt, rr[0]) && !rr.slice(1).some((h) => inRing(pt, h)));
+  };
+  const centroidOf = (g) => {
+    const pts = [];
+    const walk = (c) => (typeof c[0] === "number" ? pts.push(c) : c.forEach(walk));
+    walk(g.coordinates);
+    return [pts.reduce((s, q) => s + q[0], 0) / pts.length,
+            pts.reduce((s, q) => s + q[1], 0) / pts.length];
+  };
+
+  const yardOf = {};
+  for (const f of ks) {
+    const n = f.properties.name_zh || "";
+    const short = ["众智园", "原点社区", "大钟寺"].find((s) => n.includes(s));
+    if (short) yardOf[short] = f.geometry;
+  }
+
+  // 主轴折线 → 局部米制，累计里程（0 = 折线起点，即南端）
+  const spine = rd.find((f) => f.properties.id === "ROAD-001");
+  const sc = spine ? spine.geometry.coordinates : [];
+  const phi0 = sc.length ? sc.reduce((s, c) => s + c[1], 0) / sc.length : 0;
+  const kx = 111195 * Math.cos((phi0 * Math.PI) / 180);
+  const toM = ([lon, lat]) => [lon * kx, lat * 111195];
+  const P = sc.map(toM);
+  const cum = [0];
+  for (let i = 1; i < P.length; i++) {
+    cum.push(cum[i - 1] + Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]));
+  }
+  const mileageM = (pt) => {
+    const q = toM(pt);
+    let best = { d: Infinity, m: 0 };
+    for (let i = 1; i < P.length; i++) {
+      const a = P[i - 1];
+      const b = P[i];
+      const vx = b[0] - a[0];
+      const vy = b[1] - a[1];
+      const L2 = vx * vx + vy * vy;
+      let s = L2 === 0 ? 0 : ((q[0] - a[0]) * vx + (q[1] - a[1]) * vy) / L2;
+      s = Math.max(0, Math.min(1, s));
+      const d = Math.hypot(q[0] - (a[0] + s * vx), q[1] - (a[1] + s * vy));
+      if (d < best.d) best = { d, m: cum[i - 1] + s * Math.sqrt(L2) };
+    }
+    return best;
+  };
+
+  const YARD_ALIAS = { "研制交接场": "众智园", "开源交接场": "原点社区", "城市交接场": "大钟寺" };
+  const cards = [];
+  const rowRe = /^\|\s*(SCN-\d\d)\s*\|([^|]*)\|([^|]*)\|/gm;
+  let mm;
+  while ((mm = rowRe.exec(prose)) !== null) cards.push({ id: mm[1], carrier: mm[3].trim() });
+
+  const bad = [];
+  let nYard = 0;
+  let nLink = 0;
+  let nSpine = 0;
+  for (const c of cards) {
+    const f = ps.find((x) => x.properties.id === c.id);
+    if (!f) { bad.push(`${c.id}：public_space.geojson 无此要素`); continue; }
+    const pt = centroidOf(f.geometry);
+    const inside = Object.keys(yardOf).filter((k) => contains(yardOf[k], pt));
+    const alias = Object.keys(YARD_ALIAS).find((a) => c.carrier.includes(a));
+    if (alias) {
+      nYard++;
+      if (!inside.includes(YARD_ALIAS[alias])) {
+        bad.push(`${c.id} 卡片写「${alias}」，几何实落在 ${inside.length ? inside.join("／") : "三区之外"}`);
+      }
+    } else if (c.carrier.includes("连续公共交接面")) {
+      nLink++;
+      if (inside.length) {
+        bad.push(`${c.id} 卡片写「连续公共交接面…连接段」，几何却落在 ${inside.join("／")} 之内`);
+      }
+      const km = c.carrier.match(/([\d.]+)\s*km/);
+      if (!km) bad.push(`${c.id}：连接段卡片未给里程`);
+      else {
+        const got = mileageM(pt).m / 1000;
+        if (Math.abs(got - Number(km[1])) > 0.1) {
+          bad.push(`${c.id} 声明里程 ${km[1]} km，复算 ${got.toFixed(2)} km`);
+        }
+      }
+    } else nSpine++;
+  }
+  add("G5", "十二张场景卡的空间载体声明与 public_space.geojson 逐点复算一致：5 张声称落在某座交接场内的确在该区内，4 张声称落在连接段的确在三区之外且里程复算相符（±0.1 km），3 张只声称沿主轴、不作容器断言",
+      bad.length === 0 && cards.length === 12 && nYard === 5 && nLink === 4 && nSpine === 3,
+      bad.length ? bad.join("；")
+        : `12 张（交接场内 ${nYard}／连接段 ${nLink}／沿主轴 ${nSpine}）全部相符`);
+}
+
 /* Z. 元检查：断言检查清单本身没有缺项。
    审计器最危险的失效方式不是「某一项判错」，而是「某一项悄悄没跑」——
    条件式 add() 会让检查总数变少而 all_match 仍为真。2026-08-20 实测过这个洞：
@@ -722,7 +837,7 @@ const EXPECTED_IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "G4", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3",
+  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5",
   "Z1",
 ];
 {
