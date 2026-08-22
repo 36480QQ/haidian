@@ -792,7 +792,7 @@ Logo 只是起点，真正落到街道上的是四类不依赖屏幕的实体符
 
 **① `refusal_reasons` 在 schema 里没有枚举约束，同一个概念被拼成多种写法。** 模型在 36 例里产出 **14 个不同理由码**，而协议本身只有 4 个；单是「场地未确认」就出现 `SITE_SCOPE_UNCONFIRMED`（7 次）、`SITE_AND_SCOPE_UNCONFIRMED`（3 次）、`SITE_AND_OPEN_SCOPE_UNCONFIRMED`（1 次）、`SITE_CONFIRMATION_MISSING`（1 次）四种拼法，回滚证据类有五种。**后果不是难看，是「统计拒收理由分布」这件事会失效**：独立复核者照这套协议做出来的账互相不可比，而年度交接账要公布的正是拒收理由的分类分布 [metric:model_shadow_distinct_reason_codes_produced]。
 
-**② `rollback_rehearsal` 允许「声称演练通过」与「没有证据指针」并存。** schema 不禁止 `execution_state: observed_pass` 与 `evidence_pointer: null` 同时成立，模型在 P4／P5 档共 8 次点出这一点。**这个状态是本轮扰动无意造出来的**——也就是说，任何人按合法取值填这份账，都能填出一条「通过了但没有任何可核证据」的回滚记录。已按此加了一条机器判定：`execution_state` 一旦是 `observed_pass` 或 `observed_fail`，`evidence_pointer` 与 `executed_at` 必须非空，否则 `protocol-check-runner.js` 退出 1。
+**② `rollback_rehearsal` 允许「声称演练通过」与「没有证据指针」并存。** schema 不禁止 `execution_state: observed_pass` 与 `evidence_pointer: null` 同时成立，模型在 P4／P5 档共 **12** 次点出这一点，分散在五种拼法里（`ROLLBACK_EVIDENCE_MISSING` 4、`ROLLBACK_EVIDENCE_NOT_REVIEWABLE` 4、`ROLLBACK_REHEARSAL_EVIDENCE_MISSING` 2、`ROLLBACK_EVIDENCE_POINTER_MISSING` 1、`ROLLBACK_REHEARSAL_EVIDENCE_NOT_REVIEWABLE` 1）——**这同时是缺陷 ①（同一概念多种拼法）的又一个实例**。**这个状态是本轮扰动无意造出来的**——也就是说，任何人按合法取值填这份账，都能填出一条「通过了但没有任何可核证据」的回滚记录。已按此加了一条机器判定：`execution_state` 一旦是 `observed_pass` 或 `observed_fail`，`evidence_pointer` 与 `executed_at` 必须非空，否则 `protocol-check-runner.js` 退出 1。
 
 **③ 四个已记录的理由码里，没有一个对应「人工兜底未验证」——而那恰恰是本方案最核心的底线。** `human_service_floor.must_exist_before_smart_layer` 为 `true` 是规范性的，但四项阻断一旦清除，协议就没有码可以记下「因为人工兜底未验证而拒收」。模型在 24 例里自己命名了它（`HUMAN_SERVICE_FLOOR_NOT_OBSERVED` 23 次 ＋ 一个变体 1 次），并且**在 P4 档 12 例里全部据此维持 `off`**。这条缺口的严重性在于：它不是一个未写的边角，而是那条底线在协议编码里没有对应的可记录状态。
 
