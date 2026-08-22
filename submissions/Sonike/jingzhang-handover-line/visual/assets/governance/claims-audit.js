@@ -61,8 +61,8 @@ const add = (id, claim, pass, actual) => checks.push({ id, claim, pass: !!pass, 
 /* A. metrics.json 的自陈与内部一致性 */
 const valued = Object.values(metrics).filter((m) => m.value !== null && m.value !== undefined).length;
 const pending = Object.keys(metrics).length - valued;
-add("M1", "68 项指标 ＝ 54 已赋值 ＋ 14 待测",
-    Object.keys(metrics).length === 68 && valued === 54 && pending === 14,
+add("M1", "70 项指标 ＝ 56 已赋值 ＋ 14 待测",
+    Object.keys(metrics).length === 70 && valued === 56 && pending === 14,
     `${Object.keys(metrics).length} ＝ ${valued} ＋ ${pending}`);
 
 const phaseSum = val("phase_1_area_sqm") + val("phase_2_area_sqm") + val("phase_3_area_sqm");
@@ -643,6 +643,31 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
       ? `规则导出但未声明 ${notInPlace.length} 处：${notInPlace.slice(0, 6).join("、")}`
       : `声明 ${declaredPairs} ＝ 规则导出 ${derivedPairs} ＋ 定义性 ${defnExtra} ＋ 相关性 ${relExtra}`);
 
+/* L1. 许可块的机器读取入口必须自足，且复制出来的授权正文不得与原文漂移。
+   2026-08-22 按严格口径的 risk_compliance repair 补了 license.effective_grant——
+   把「当前即时生效的完整授权」做成机器可读（SPDX 表达式 ＋ 条件 ＋ 禁止项 ＋
+   未发布条款只能收紧不能放宽的上界规则），因为只读 identifier 的工具会拿到一个
+   组织方未发布条款的枚举值、得不到任何可执行条款。
+   **补它的代价是把授权正文复制了一份，复制就会漂移**，所以这一项把两处钉在一起：
+   effective_grant.full_text_zh/en 必须与 author_grant_zh/en 逐字节相同。
+   顺带钉住三个布尔／表达式，防止「未发布条款可以放宽」这条被悄悄改掉。 */
+{
+  const lic = readPkg("manifest.json").license || {};
+  const eg = lic.effective_grant || {};
+  const probs = [];
+  if (lic.identifier_is_operative !== false) probs.push("identifier_is_operative 不为 false");
+  if (eg.depends_on_unpublished_terms !== false) probs.push("effective_grant.depends_on_unpublished_terms 不为 false");
+  if (eg.expression !== "CC-BY-NC-4.0") probs.push(`effective_grant.expression = ${JSON.stringify(eg.expression)}，应为 "CC-BY-NC-4.0"`);
+  if (eg.full_text_zh !== lic.author_grant_zh) probs.push("effective_grant.full_text_zh 与 author_grant_zh 已漂移");
+  if (eg.full_text_en !== lic.author_grant_en) probs.push("effective_grant.full_text_en 与 author_grant_en 已漂移");
+  for (const [k, needle] of [["future_terms_rule_zh", "更宽"], ["future_terms_rule_en", "looser"]]) {
+    if (!String(eg[k] || "").includes(needle)) probs.push(`${k} 里找不到「更宽时仍按本条范围授权」那一层`);
+  }
+  add("L1", "许可块的机器读取入口自足：identifier 明标为非实际条款，effective_grant 给出当前即时生效的完整授权（SPDX 表达式 ＋ 条件 ＋ 禁止项 ＋ 未发布条款只能收紧的上界），且复制的授权正文与 author_grant 逐字节相同",
+      probs.length === 0,
+      probs.length ? probs.join("；") : `expression ${eg.expression}；授权正文两处逐字节相同；未发布条款为上界规则在位`);
+}
+
 /* Z. 元检查：断言检查清单本身没有缺项。
    审计器最危险的失效方式不是「某一项判错」，而是「某一项悄悄没跑」——
    条件式 add() 会让检查总数变少而 all_match 仍为真。2026-08-20 实测过这个洞：
@@ -662,7 +687,7 @@ const EXPECTED_IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "G4", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1", "J2",
+  "K1", "K2", "K3", "K4", "J1", "J2", "L1",
   "Z1",
 ];
 {
