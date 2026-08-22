@@ -48,6 +48,18 @@ The 2025 official process notice uses a 2022-2035 label; the official publicatio
 
 Reproduce with `node visual/assets/planning-alignment-audit.js --json`; `--self-test --json` incorrectly flips “official approval document retrieved” to true and must fail closed. This round changes no core value proposition, submission licence, GeoJSON, metric, or evidence signature and redistributes no external image, attachment, or long passage. “Approved regulatory plan” and “official public-version publication” describe the cited street-block plan material, not the status of this submission.
 
+## P2-04 | Offline experience and media: service-journey short, interactive journey and original cover
+
+This round turns the enter-use-exit journey into directly experiencable offline media. Everything is generated originally inside this package; no external material is imported and no registered value changes.
+
+- `assets/media/experience.mp4`: a 44-second silent concept short (1280×720, H.264) walking the no-data line through three governance stations and six reviewable gates before unfolding the 12+3 scenario matrix; with bilingual `experience.vtt` captions, the `experience.md` transcript and rights note, and the `experience-poster.webp` poster frame.
+- `visual/index.html` and `index.en.html` gain a service-journey section: a keyboard-operable six-gate stepper (WAI-ARIA tablist semantics, reduced-motion fallback, all panels readable without JS) with the captioned video embedded.
+- `assets/media/cover.webp`: an original gallery cover (the line, three stations, six gates and key metrics), registered via `manifest.cover_image`; it is not an official rendering or an approved outcome.
+
+![Service-journey poster for the Data Co-op Line: the no-data line, three stations and six gates as a conceptual journey](assets/media/experience-poster.webp)
+
+The video and cover serve communication only; GeoJSON, metrics, matrices and the audit ledgers remain authoritative [data:geometry/public_space.geojson] [metric:no_data_equivalent_service_target_ratio].
+
 ## Design Basis and Source List
 
 The proposal first responds to the official announcement for the Centennial Jing-Zhang AI Innovation Belt and the Agent taskbook. Coordinated research, overall design, three key areas, the AI innovation ecosystem, and long-term operations must check one another; a single technology pavilion cannot substitute for the belt. The announcement's 43.6 sq km, approximately 11.4 sq km, and 368.4 ha figures define work scales. The computable boundary in this package comes from repository provisional geometry, so the two classes of figures must not be conflated. The announcement, taskbook, local standard snapshots, and registry of permitted source uses form the factual entry points [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY].

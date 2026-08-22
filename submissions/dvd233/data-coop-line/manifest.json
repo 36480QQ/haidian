@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b613d84e41d81e67312249557b4548c2d80b0f59956913fe60978897e335105a"
+      "sha256": "c4e391d957e46d2893b199910ad67261d022c29ee06dd1208058fc366178790d"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b0cf8475d257ed6ad955ef1ac95090296d0aede89567a483a3485f861e045025"
+      "sha256": "6002d1a67cc7294261674444152dcdea467061cf0ece98a5bded34baffc66017"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cdcd24da50e1cb9a6236d44df21c1c81f918b8e7d7275c37908691a360b266b2"
+      "sha256": "b7cd4ff177cb363878b6d9a767b1d857b4bf2da0b2963b95015260ed0f586f94"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "4ee571e25956150e03bb122be180c4887f9138e2eeccdf470b855bb4d22d9a58"
+      "sha256": "936b61dcccdc5b4d8e13771d5037d5c693e37417742525c890860fccc32b655f"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3deb4141cb2d12ef272d4aeb7475aea0574b5ba5b27849e8beaf5e30d7652e2a"
+      "sha256": "8368ce0134a66eaf5b7c7f1f7e9fdc3bdac35b09ef108e798934545e93439a59"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "331be4c2b6e1103e93c8c05309b65058776c04e6f861479c7c9ccae68cc43c2c"
+      "sha256": "2ce944cd68ff1e1b5792ec0993103b94a9663d97c8fbe16945f6150116b6fc58"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "62b975b79e9ed03736a7aa43f438456e2151981afe5cc70ddefbaa738bd8fb34"
+      "sha256": "da40a36d7dcdab2248d7a19110a8f2f93a7ce68c09038caaac9f80483dc168d8"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -290,7 +290,7 @@
       "role": "changelog",
       "required": true,
       "language": "neutral",
-      "sha256": "4db38630d9fb369f1428088e8a59ac5ce7489c9816e5c087a3add68166147211"
+      "sha256": "f3a76502751913df60da4246a54be6ab62e3fccaf757bfbf140b0356b1e95e01"
     },
     {
       "path": "visual/assets/evidence-consistency.js",
@@ -435,6 +435,48 @@
       "language": "en",
       "sha256": "d8ea7a7754ef2b8d960fdbd10a687716323aee5b2c65f6cef3a0cf59d1c49c35",
       "translation_of": "assets/figures/planning-alignment.png"
+    },
+    {
+      "path": "assets/media/experience.mp4",
+      "role": "video",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "共数京张服务旅程短片",
+      "title_en": "The Data Co-op Line service-journey short",
+      "description_zh": "44 秒无声概念短片：沿无数据正线走过三座治理站与六道可复核闸门，展开 12+3 场景矩阵。",
+      "description_en": "A 44-second silent concept short along the no-data line: three stations, six reviewable gates, and the 12+3 scenario matrix.",
+      "poster": "assets/media/experience-poster.webp",
+      "caption": "assets/media/experience.vtt",
+      "transcript": "assets/media/experience.md",
+      "sha256": "81b64985f2c57ec23dc69ebacb10d758106d48cdbc5c53849039d4cd9720430d"
+    },
+    {
+      "path": "assets/media/experience.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "neutral",
+      "sha256": "6436d7c7bf494e722a810f6d6050bafeb7f485d312deecf7435399d7925e9aa9"
+    },
+    {
+      "path": "assets/media/experience.md",
+      "role": "transcript",
+      "required": false,
+      "language": "neutral",
+      "sha256": "ef74c6b77dbd68496b14cc0edc7a40a41bf33839af87f0ad31d2b07a853ff116"
+    },
+    {
+      "path": "assets/media/experience-poster.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e6aff135bb0ff6bfcee7e3f4e17828d7d25e4424054f50d0379250923a43672b"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "75025f737861704aee9ec70f918483ddcf7ce4809053f753507905ed255ba545"
     }
   ],
   "validation_claim": {
@@ -442,5 +484,6 @@
     "known_blockers": [],
     "data_confidence": "mixed_provisional_and_conceptual",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/cover.webp"
 }
