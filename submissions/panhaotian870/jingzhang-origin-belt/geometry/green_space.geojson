@@ -1,0 +1,194 @@
+{
+  "type": "FeatureCollection",
+  "name": "origin_jingzhang_green_space",
+  "metadata": {
+    "proposal_slug": "jingzhang-origin-belt",
+    "coordinate_reference_system": "EPSG:4326",
+    "generated_date": "2026-08-14",
+    "note": "Conceptual green space network. All features are conceptual suggestions."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "GS-HERITAGE-PARK-001",
+      "properties": {
+        "id": "GS-HERITAGE-PARK-001",
+        "layer": "green_space",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "green_type": "park",
+        "name_zh": "京张铁路遗址公园",
+        "name_en": "Jing-Zhang Railway Heritage Park",
+        "area_sqm": 540000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.346, 39.939],
+            [116.350, 39.939],
+            [116.350, 40.0265],
+            [116.346, 40.0265],
+            [116.346, 39.939]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GS-PLAZA-001",
+      "properties": {
+        "id": "GS-PLAZA-001",
+        "layer": "green_space",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "green_type": "plaza",
+        "name_zh": "源·智创新广场",
+        "name_en": "Origin Intelligence Plaza",
+        "area_sqm": 8000
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.345, 39.987],
+            [116.350, 39.987],
+            [116.350, 39.990],
+            [116.345, 39.990],
+            [116.345, 39.987]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GS-THEME-ROBOT",
+      "properties": {
+        "id": "GS-THEME-ROBOT",
+        "layer": "green_space",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "green_type": "ai_theme_park",
+        "name_zh": "源·机器人乐园",
+        "name_en": "Origin·Robot Park",
+        "area_sqm": 30000,
+        "theme": "embodied_intelligence_robotics",
+        "ecosystem_ring": "origin_create",
+        "near_apm_station": "origin_create_station",
+        "highlights_zh": "机器人互动广场、机器人足球场、AI导览花径、无人车体验环线",
+        "viral_spots_zh": "机器人群舞、AI花径自拍、无人车第一视角视频"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.345, 40.005],
+            [116.352, 40.005],
+            [116.352, 40.008],
+            [116.345, 40.008],
+            [116.345, 40.005]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GS-THEME-ALGORITHM",
+      "properties": {
+        "id": "GS-THEME-ALGORITHM",
+        "layer": "green_space",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "green_type": "ai_theme_park",
+        "name_zh": "源·算法花园",
+        "name_en": "Origin·Algorithm Garden",
+        "area_sqm": 20000,
+        "theme": "algorithm_visualization_data_beauty",
+        "ecosystem_ring": "origin_incubate",
+        "near_apm_station": "origin_intelligence_station",
+        "highlights_zh": "植物迷宫（路径搜索算法）、喷泉神经网络、花田数据热力图、夜间灯光矩阵",
+        "viral_spots_zh": "夜间灯光矩阵秀、植物迷宫航拍、喷泉神经网络互动"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.346, 39.984],
+            [116.350, 39.984],
+            [116.350, 39.987],
+            [116.346, 39.987],
+            [116.346, 39.984]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GS-THEME-LLM",
+      "properties": {
+        "id": "GS-THEME-LLM",
+        "layer": "green_space",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "green_type": "ai_theme_park",
+        "name_zh": "源·大模型广场",
+        "name_en": "Origin·LLM Plaza",
+        "area_sqm": 25000,
+        "theme": "generative_ai_creativity",
+        "ecosystem_ring": "origin_share",
+        "near_apm_station": "origin_share_station",
+        "highlights_zh": "AI生成艺术长廊、声音交互装置、数字人合影亭、AI实时画作大屏",
+        "viral_spots_zh": "AI实时画作生成、数字人合影、声音可视化灯光秀"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.344, 39.950],
+            [116.350, 39.950],
+            [116.350, 39.953],
+            [116.344, 39.953],
+            [116.344, 39.950]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GS-THEME-OPENSOURCE",
+      "properties": {
+        "id": "GS-THEME-OPENSOURCE",
+        "layer": "green_space",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "green_type": "ai_theme_park",
+        "name_zh": "源·开源森林",
+        "name_en": "Origin·Open Source Forest",
+        "area_sqm": 40000,
+        "theme": "open_source_collaboration_nature",
+        "ecosystem_ring": "origin_govern",
+        "near_apm_station": null,
+        "highlights_zh": "开源树铭牌林、开发者露天工位、WiFi全覆盖、太阳能充电桌、星空帐篷区",
+        "viral_spots_zh": "开源树铭牌墙、星空帐篷区、林下开发者工位"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.335, 39.970],
+            [116.340, 39.970],
+            [116.340, 39.978],
+            [116.335, 39.978],
+            [116.335, 39.970]
+          ]
+        ]
+      }
+    }
+  ]
+}
