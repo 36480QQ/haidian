@@ -1,6 +1,18 @@
 # 方案迭代记录
 
+## v2.0 - 2026-08-22
+
+P2-06 A3/A0 narrative rebuild / A3 与 A0 图纸叙事重构（兑现台账 P2-03「A3/A0 重构」待办项；该编号曾被评审脊柱轮占用，本轮以 P2-06 执行并消解）
+
+- Baseline / 基线：从最新 `upstream/main` `704cdf5ed33b31ab4fcd115f20f715224e7fdbf5`（最后观察 `2026-08-22T08:39:00+08:00`，即 P1-06 合并点，零移动）建立干净分支 `codex/data-coop-line-p2-06-a3a0-narrative-20260822`。
+- Reason / 原因：旧 A3（11 页）/A0（9 页）为逐轮追加的薄页，页面日期混乱（08-15/08-20 并存）、多数页无图件锚点、叙事不连贯，是评审体验最弱载体；台账 P2-03 要求详图、剖面、实施、复算关系与服务旅程形成连贯叙事且中英等价。
+- Before → After / 修正前后：修订前为「脊柱图单页 + 7 张旧页 + 3 张追加页」的拼贴；修订后 A3 中英各 12 页（封面 KPI 与证据链 → 五分钟评审入口 → 场地范围 → 用地结构 → 三区两翼 → 慢行蓝绿 → 指标复算 → 大钟寺现场 → 演练失败测试 → 控规对齐 → 12+3 场景矩阵 → 实施与审计令牌封底），A0 中英各 4 板（总览 / 空间系统 / 证据运营 / 对齐治理）；每页统一页眉页码、冻结标识与临时边界声明，全部锚定包内既有图件与 metrics，中英逐页等价。
+- Evidence integrity / 证据完整性：geometry、metrics、来源、许可、证据签名 `c880c438…`、核心价值主张与方案方向均不变；四份 PDF 的 Info 元数据与封底令牌页继续携带 SPINE/FIELD/DRILL/PLAN 全 ID 与哈希、证据签名、基线与冻结 SHA；`metrics-evidence` 图件在每份 PDF 中仍恰好嵌入一张当前 raster（evidence-consistency 的 PDF 像素审计硬约束，已逐份验证 count=1）。
+- Verification / 验证：四份 PDF 共 32 页全部渲染逐页检查（封面 KPI、面板正文、场景矩阵、令牌页无丢字）；`refresh_submission_manifest.py` → 完整 self-check → 六项专项审计 → preflight 的完整门禁链复跑，结果以 `manifest.json` 与 `self_check.json` 为准。
+- Scope & boundary / 范围与边界：仅修改 `submissions/dvd233/data-coop-line/` 下四份 drawings PDF 与本 changelog；不重渲染既有图件，不改任何 JSON/GeoJSON/HTML；已合并 PR 全部只读。
+
 ## v1.9 - 2026-08-22
+
 
 P1-06 official-publication upgrade of plan alignment evidence / 控规官方公开版页面的证据层级升级
 
