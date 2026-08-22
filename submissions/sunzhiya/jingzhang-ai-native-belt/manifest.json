@@ -364,14 +364,14 @@
     },
     {
       "path": "report/narrative.md",
-      "role": "narrative_support",
+      "role": "narrative",
       "language": "zh",
       "required": false,
       "sha256": "32784f6b7c36a8cdefc9c816ff6090bb1c2e43a4df9ecaa5220ae04ceec9978d"
     },
     {
       "path": "report/proposal.en.html",
-      "role": "rendered_report",
+      "role": "rendered_proposal_html",
       "language": "en",
       "required": false,
       "translation_of": "report/proposal.html",
@@ -379,17 +379,18 @@
     },
     {
       "path": "report/proposal.html",
-      "role": "rendered_report",
+      "role": "rendered_proposal_html",
       "language": "zh",
       "required": true,
       "sha256": "de3c6092f6c85fa744ac491085803213f408764095948ee339862701167d5c18"
     },
     {
       "path": "risk.json",
-      "role": "risk_register",
+      "role": "other",
       "language": "neutral",
       "required": false,
-      "sha256": "524d41dfdbe0b09cc838da1f4cfdad231b55a68f1273ab7e0a196bb0fd7f1502"
+      "sha256": "524d41dfdbe0b09cc838da1f4cfdad231b55a68f1273ab7e0a196bb0fd7f1502",
+      "role_detail": "risk_register"
     },
     {
       "path": "self_check.json",
@@ -400,7 +401,7 @@
     },
     {
       "path": "simulation.json",
-      "role": "simulation_harness",
+      "role": "verification_script",
       "language": "neutral",
       "required": false,
       "sha256": "b974a2a53c60c7c3dca07e2066513e1685d191315641bdb5906b817048b46ea5"
@@ -414,10 +415,11 @@
     },
     {
       "path": "spatial.json",
-      "role": "spatial_concept",
+      "role": "other",
       "language": "neutral",
       "required": false,
-      "sha256": "d1a1098fc33e498c9c8e7d97a2493d13ab26412027e440b4c7e461012e7a6ddb"
+      "sha256": "d1a1098fc33e498c9c8e7d97a2493d13ab26412027e440b4c7e461012e7a6ddb",
+      "role_detail": "spatial_concept"
     },
     {
       "path": "standard_matrix.json",
@@ -428,329 +430,331 @@
     },
     {
       "path": "visual/assets/claim-provenance.json",
-      "role": "claim_provenance",
+      "role": "other",
       "language": "neutral",
       "required": false,
-      "sha256": "16bbd5d2f55f4612090af78d86bf18f8b86dc741f0bbcc33cc33551ce616d424"
+      "sha256": "16bbd5d2f55f4612090af78d86bf18f8b86dc741f0bbcc33cc33551ce616d424",
+      "role_detail": "claim_provenance"
     },
     {
       "path": "visual/assets/copyright-ledger.json",
-      "role": "evidence_ledger",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "1a427f1e378276a5e8e42c2eacc473f539ca16415fbb84f8a45ce643421f3ebe"
     },
     {
       "path": "visual/assets/evaluation-baseline.json",
-      "role": "evaluation_baseline",
+      "role": "other",
       "language": "neutral",
       "required": false,
-      "sha256": "1105cc5d6265416e4594711f8247a4f6f4ae42461421fb8df5c2962a440934a7"
+      "sha256": "1105cc5d6265416e4594711f8247a4f6f4ae42461421fb8df5c2962a440934a7",
+      "role_detail": "evaluation_baseline"
     },
     {
       "path": "visual/assets/evidence-audit.js",
-      "role": "evidence_audit_script",
+      "role": "verification_script",
       "language": "neutral",
       "required": false,
       "sha256": "843bda9831c7086c59deaf3e420566e10e372dd0f4027ee130d141452d6d9486"
     },
     {
       "path": "visual/assets/evidence-ledger.json",
-      "role": "evidence_ledger",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "db447610d6d6dfa1faa17dc113c3bd8f5df7f671e963190bfa46abfa608439d0"
     },
     {
       "path": "visual/assets/gates/01-boundary-handoff.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "74670f85453adad4d32ea83f72aa6a06702b44e682a247dc87bdf04e04d6a544"
     },
     {
       "path": "visual/assets/gates/02-coordinate-frame.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "7fbc32417036842fd599021e6106913fe7a934945c42601e0f112bdef46c6295"
     },
     {
       "path": "visual/assets/gates/03-layer-nesting.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "f81acfa86624ba21b1985670d9c3287d484e3b89b1f42c6f085d4fbcf31fa9f1"
     },
     {
       "path": "visual/assets/gates/04-magnitude-sanity.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "ae728ddaaaaae95168480e489ffe8ac47c17d717e7cd0d44090ab080401b24f1"
     },
     {
       "path": "visual/assets/gates/05-key-area-depth.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "638eaaecae160892d31e22f136548d49ef33c8789461995b45057eacd1cf796f"
     },
     {
       "path": "visual/assets/gates/06-provisional-flagging.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "5d15af833672ec10dfc47f0a6caf80ffecdf59dbb84d4f84fb4e50eac92a5fac"
     },
     {
       "path": "visual/assets/gates/07-source-classification.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "4ba3bc74768cba46469f2497fcb03aff9402c9d4ea49dfefbd53dd21fbc9ed7c"
     },
     {
       "path": "visual/assets/gates/08-no-basemap.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "a497f9ed6b518dc0a856a8daf2a94916bbe832f80b69be5a875bce3f67516bc5"
     },
     {
       "path": "visual/assets/gates/09-personal-data-zero.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "a32914137b5a93a5df01b7f2b4b6b4bb2e30f892d7237295e90f2a48f73eb353"
     },
     {
       "path": "visual/assets/gates/10-metric-formula.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "f341fdb827c177a92490c232fc5208669cc0cb8409d5bdc2e6e57ffaf8c27d84"
     },
     {
       "path": "visual/assets/gates/11-human-review-trigger.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "acc832a7fad8ca00860de889dc7fe7e95c83ea2a0b0b3105c64cf06ec2d50893"
     },
     {
       "path": "visual/assets/gates/12-refusal-boundary.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "84b13869b7e5bf7fb9501cdf87f398cb2e4510ef97be9f0bbc5506a981c8de71"
     },
     {
       "path": "visual/assets/gates/13-no-approval-claim.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "de955faa4191e1e0cd3214d265807b9444f1e7f53265f5405d28167ab569241d"
     },
     {
       "path": "visual/assets/gates/14-responsibility-map.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "f7171b4f5327c879ce24d13e3caace59ea6e516fcf83f29f132121726257e3e2"
     },
     {
       "path": "visual/assets/gates/15-appeal-channel.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "e7ed256b915b2eeb4117ebc7d83bf3a14b9556e62b9db215f8799ae8adfa50bb"
     },
     {
       "path": "visual/assets/gates/16-fallback-manual.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "eddd1ef1c2d3e37eb051fdfcbabd7642a7957f8d7ddc27013db27f60d50d5168"
     },
     {
       "path": "visual/assets/gates/17-low-speed-robot-safety.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "4174b86d972791db4511471ef107b5b25cfa158c299e14f3aef537c4b9d00f59"
     },
     {
       "path": "visual/assets/gates/18-crowd-safety.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "a114a1909225834b6d46615ba575c5e3cc30d42251974a2db9a1adb0f8de9476"
     },
     {
       "path": "visual/assets/gates/19-heritage-protection.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "ec82526d5fc1ee3fb50f72b70e351d5255fd88cc9e6edc7fc3550fb76c9af393"
     },
     {
       "path": "visual/assets/gates/20-construction-staging.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "905fefea9e42724d24c6f5d519eca5c9123aeadefbef6f48eff1d885eb0856bd"
     },
     {
       "path": "visual/assets/gates/21-walkability.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "4cd6de15aa7b904875d541ae6ade42cd79bae95f7cff519c693fcc40df90d593"
     },
     {
       "path": "visual/assets/gates/22-rail-interface.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "537f8b8fb69a5bbf267ce456684bf0e00b3bc31d6f9f7c0d402f9a1d157fd50d"
     },
     {
       "path": "visual/assets/gates/23-cycle-network.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "76d669aeead82ab1b3b718282ad25c9bff2baa3b3b20f642bba0d604008e327f"
     },
     {
       "path": "visual/assets/gates/24-green-continuity.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "46466a791d9509120cdad7aaff4ee761bcf5c421035a30e5184d366ad9db5408"
     },
     {
       "path": "visual/assets/gates/25-stormwater.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "096fa2e5e49f5f52093e2a621802a8416ccfee8d364bcc813c0affefa4e81b0d"
     },
     {
       "path": "visual/assets/gates/26-microclimate.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "c901254d796ea7735a61693b6320636fcbaddeeab4be8d5d68c540dfe5659aea"
     },
     {
       "path": "visual/assets/gates/27-compute-siting.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "b51306a471aaee763e2225e719240622c64c64bc5ea67cf4d21b002e6830398b"
     },
     {
       "path": "visual/assets/gates/28-waste-heat.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "a5ab70cbfd82905160e09c0e3bfb8e811a5e7830572a64950ad6cde48a126414"
     },
     {
       "path": "visual/assets/gates/29-accessibility.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "1cb64d232b93adc7af3dc8dac084080b51a31037a6648d2459074bb43ba896b7"
     },
     {
       "path": "visual/assets/gates/30-digital-divide.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "ff7e4afa3b49c9896cb20f43f0af31cd2b7266a874b15f0d7c670884f76ab063"
     },
     {
       "path": "visual/assets/gates/31-affordability.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "762d1d2985330eb5f0e7f679475c38fdf082aeee4bd4cb27f0fd3e79cbdc750c"
     },
     {
       "path": "visual/assets/gates/32-phasing-feasibility.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "96930f87633e6753484d225fac30003f557fe12e5c67466c22be222b262aa1fa"
     },
     {
       "path": "visual/assets/gates/33-project-list.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "577e441913330199a3003ae64c694444a49aa370f6d86e723bd05dc3f1ae6f45"
     },
     {
       "path": "visual/assets/gates/34-cost-order.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "faaa9c3b0a381f9320bcdc569389d10b78295a2e07b3ed57e9b583fb20708342"
     },
     {
       "path": "visual/assets/gates/35-operations-model.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "5e0bbe04f3569276583ed8bdd2983badbea9f186ad390a42b69d548537c4749e"
     },
     {
       "path": "visual/assets/gates/36-monitoring-loop.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "d275dc97a1f2c611a22b2e85e976381a09af4309766b851e642f30adf196a53a"
     },
     {
       "path": "visual/assets/gates/37-tool-schema.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "734414674cb96023e1f467ad794e438663ec82d778abcbd06911d62c45ad9077"
     },
     {
       "path": "visual/assets/gates/38-replan-latency.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "fa6be35ba065b3e113ab2ba5ee34fd370e8f79ec5eead80b0f4893929dc83e74"
     },
     {
       "path": "visual/assets/gates/39-model-boundary.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "4b4b4bc5b5f9877f60351d3d8d12cc5d453e0306cbbc8e7b4ee6066337a19d16"
     },
     {
       "path": "visual/assets/gates/40-self-audit-run.json",
-      "role": "evidence_gate",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "94b315a3229b26d72e1e35fb69d38b03d63ff87d370831dc4f306346fbe9fda8"
     },
     {
       "path": "visual/assets/v2-evidence-gate-index.json",
-      "role": "evidence_gate_index",
+      "role": "evidence_data",
       "language": "neutral",
       "required": false,
       "sha256": "50285c70ffd82c99fae498d6ae73ddec6270aacd25f635f0feb40e9055d4a134"
     },
     {
       "path": "visual/index.en.html",
-      "role": "visual",
+      "role": "visualization",
       "language": "en",
       "required": false,
       "translation_of": "visual/index.html",
@@ -758,7 +762,7 @@
     },
     {
       "path": "visual/index.html",
-      "role": "visual",
+      "role": "visualization",
       "language": "zh",
       "required": true,
       "sha256": "9d4a6cbbffc11a2d6aab226af515c45ce7810f06324751b00784b9c4a0437014"
