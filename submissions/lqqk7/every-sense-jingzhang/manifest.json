@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f0f4bf947036b2815326651405b675d247b76971fcb177eec9f0293bfdd23395"
+      "sha256": "a4429abfdceadec8b4ec3fcdf456543019fbe24408eeb6543e8c53b433a12935"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "161734807600c782adfd45735ce32e7aec1639be169c51f98eab9ba5db5db442"
+      "sha256": "1e2b9a9e1df9489e1c7fc6e60f13bce8f714d8f16e60ff350f4d1cc9ac05eab5"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ef40500ec75f33c15bc25525c5c9429a653826c34fb44d87b10d5cd010759a2b"
+      "sha256": "5a6fbb43bdfce27355963f6de63e1e88e303e2a6b1ed5b23c9f17a8d2dd09134"
     },
     {
       "path": "report/narrative.md",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6cef3cc88a42e5f9510c5dccb8585b619fb8a3cfe172352aac62c7b52d26aa63"
+      "sha256": "c5f6d0999f41b2ab283068c047699e000dd8f4c86d325b2272016a080a7deb3a"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d19dfd96a28cccee52965950d7ce99e16694535dfda49d8003b055470700a6fb"
+      "sha256": "949daf19254398337676d52aa7311dcbf9624fb3e5ee44bb249fbbfa1e11df47"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -590,7 +590,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "0b13780684cd87cd3399bc676fb5086ead88920114bce154560d485abbb0d39c"
+      "sha256": "0cf1b2e0afc3e89ead1c6ed8782ec47ed5aeeb7966b8272b9424a5fe9a5d36c1"
     },
     {
       "path": "visual/assets/changelog-archive.json",
@@ -784,7 +784,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "4f56c0c86446a37ddf5daec96a3e2fc5e656869caee31c1da74c9cd56a123b1f"
+      "sha256": "82b603d524c47dc0ff36b4d77cd0669552f72bab50e123f5c3eb611988aa56b5"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -793,7 +793,7 @@
       "language": "neutral",
       "title_zh": "随包自检闸门台账（十一道闸门，逐道登记口径、当前读数与历史查获缺陷共 30 条）",
       "title_en": "Package self-check gate register (eleven gates, each with its criterion, current reading and the 30 defects the gates actually caught)",
-      "sha256": "65046e389956e68d1218ba9d477bbfc25e0d7727cfa34889fd140ecf5c0ceebe"
+      "sha256": "dd3ffddfbbbe18e155762e3e4c3ea542f99a091b511d60050f911443f3065816"
     },
     {
       "path": "visual/assets/service-desk-gonogo.json",
