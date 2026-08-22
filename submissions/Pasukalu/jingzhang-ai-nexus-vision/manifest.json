@@ -19,8 +19,7 @@
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true,
-      "sha256": "eee4462cbcc79aaaddfc89d5a35d8a07fd1f7ca656d1ace6a6fdb04242450f10"
+      "required": true
     },
     {
       "path": "proposal.md",
@@ -63,7 +62,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "8c00f1c4f7af49241ec111c3ea10eb4a958601c2fb9e280fa911958dfe33a19f"
+      "sha256": "feb054b5f80e1c013ed701962ed2870d568570c03d677a951d405b6d6eef8ffe"
     },
     {
       "path": "standard_matrix.json",
