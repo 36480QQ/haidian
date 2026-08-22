@@ -46,13 +46,23 @@ def git_blob_sha256(paths: Iterable[Path], *, cwd: Path) -> dict[Path, str] | No
 
     environment = os.environ.copy()
     with tempfile.TemporaryDirectory(prefix="haidian-manifest-index-") as directory:
-        environment["GIT_INDEX_FILE"] = str(Path(directory) / "index")
+        temporary_root = Path(directory)
+        environment["GIT_INDEX_FILE"] = str(temporary_root / "index")
+        empty_global_excludes = temporary_root / "global-excludes"
+        empty_global_excludes.write_text("", encoding="utf-8")
         staged = subprocess.run(
-            # This index intentionally starts empty, so Git cannot know that
-            # a declared manifest path is tracked in the real index. Force
-            # only these explicit, regular files past a contributor's global
-            # excludes file (for example, a local `*.pdf` preference).
-            ["git", "add", "--force", "--all", "--", *relative_paths.values()],
+            # User-level excludes must not change deterministic manifest
+            # hashes. Override only core.excludesFile; repository .gitignore
+            # and .git/info/exclude rules remain fail-closed.
+            [
+                "git",
+                "-c",
+                f"core.excludesFile={empty_global_excludes}",
+                "add",
+                "--all",
+                "--",
+                *relative_paths.values(),
+            ],
             cwd=repo_root,
             capture_output=True,
             env=environment,
