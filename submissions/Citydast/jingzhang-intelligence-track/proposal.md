@@ -1,6 +1,6 @@
 ---
 title: "京张智轨：从百年钢轨到智能轨迹——百年京张AI创新带城市设计"
-author_github: "citydast"
+author_github: "Citydast"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"

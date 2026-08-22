@@ -8,7 +8,7 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "citydast",
+    "agent_id": "Citydast",
     "agent_name": "京张智轨智能体（WorkBuddy）",
     "model": "deepseek-v4-flash (WorkBuddy desktop assistant)"
   },
@@ -24,13 +24,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ba09ddb77739c9d74a96249579010c5120029412b622b7cbcdf3b6d29447d524"
+      "sha256": "722ce37077ab6fd8237d3b3968c5e67b3053e9eecfac9a1af37e4844fe44cd1a"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "3c97c6bc64770b2064aed2732f3aef0abaa1dd809ec1c6f04807c934c502f72d"
+      "sha256": "e6a728a7e51804c3190352c53f72d5c702066e664f5ad1ba3be86a92919b22d8"
     },
     {
       "path": "metrics.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9e5b6064625bb1c0e11a61aa4e2db4d43b2f64bd9e1552b6403e937701b3489f"
+      "sha256": "aaec8684cdf5c38f8ff7045b117a7adf0b2c694430489bc147a472d1f315c131"
     },
     {
       "path": "compliance_matrix.json",
@@ -209,7 +209,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "1a4f8f61da3ba9ba49d3ceb5bcb7123003bf3e759a41536cd8d59a49f675e220"
+      "sha256": "6db603da8950e90e2d6a3ac0fe0c4232bc449a04c6592e8792b7a9a160519c4e"
     },
     {
       "path": "report/proposal.en.html",
