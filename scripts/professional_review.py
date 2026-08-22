@@ -2,7 +2,32 @@
 """Review professional standard/depth evidence for a formal submission.
 
 This script is dependency-free. It summarizes the evidence chain that makes
-`proposal.md` human-readable while keeping JSON/GeoJSON as machine evidence.
+``proposal.md`` human-readable while keeping JSON/GeoJSON as machine evidence.
+
+Checks performed
+----------------
+- ``standard_matrix.json`` covers all required professional standard IDs
+  loaded from the repository's standard registry.
+- ``design_depth_matrix.json`` covers all 15 required design-depth item IDs.
+- For v1 proposals: ``proposal.md`` contains inline ``[standard:...]``,
+  ``[depth:...]``, ``[data:...]``, and ``[metric:...]`` references for every
+  item in the matrices.  (v2 proposals use section-anchored evidence instead;
+  exhaustive inline references are not required.)
+- ``metrics.json`` is present and parseable.
+
+Usage
+-----
+Human-readable output::
+
+    python3 scripts/professional_review.py submissions/<login>/<slug>
+
+Machine-readable JSON::
+
+    python3 scripts/professional_review.py submissions/<login>/<slug> --json
+
+This script is gate 4 of the four-gate self-check. It has no optional
+dependencies and can run offline in any environment where Python 3.9+ is
+available.
 """
 
 from __future__ import annotations
@@ -16,9 +41,12 @@ from pathlib import Path
 from typing import Any
 
 from validate_submission import (
+    PROPOSAL_FORMAT_VERSION,
     PROPOSAL_READABLE_DATA_REFS,
     REQUIRED_DESIGN_DEPTH_IDS,
     load_required_standard_ids,
+    parse_front_matter,
+    proposal_format_version,
 )
 
 
@@ -66,6 +94,7 @@ def load_json(path: Path, report: ProfessionalReport, label: str) -> Any:
 
 
 def extract_refs(text: str) -> dict[str, set[str]]:
+    """Extract all evidence marker IDs from *text* grouped by marker type."""
     refs: dict[str, set[str]] = {"source": set(), "standard": set(), "depth": set(), "data": set(), "metric": set()}
     for kind, value in REFERENCE_RE.findall(text):
         refs[kind].add(value)
@@ -106,6 +135,8 @@ def build_professional_review(repo_root: Path, submission_dir: Path) -> Professi
     depth_matrix = load_json(submission_dir / "design_depth_matrix.json", report, "design_depth_matrix.json")
     metrics = load_json(submission_dir / "metrics.json", report, "metrics.json")
 
+    metadata, _ = parse_front_matter(proposal_text)
+    format_version = proposal_format_version(metadata)
     refs = extract_refs(proposal_text)
     required_standard_ids = load_required_standard_ids(repo_root)
     matrix_standard_ids = collect_ids(standard_matrix, "standards", "standard_id")
@@ -117,9 +148,10 @@ def build_professional_review(repo_root: Path, submission_dir: Path) -> Professi
             "standard_matrix.json",
             f"Missing required standard responses: {', '.join(missing_standard_matrix)}.",
         )
-    for standard_id in sorted(matrix_standard_ids):
-        if standard_id not in refs["standard"]:
-            report.add("STANDARD_PROPOSAL_REF", "major", "proposal.md", f"Missing [standard:{standard_id}] reference.")
+    if format_version != PROPOSAL_FORMAT_VERSION:
+        for standard_id in sorted(matrix_standard_ids):
+            if standard_id not in refs["standard"]:
+                report.add("STANDARD_PROPOSAL_REF", "major", "proposal.md", f"Missing [standard:{standard_id}] reference.")
 
     matrix_depth_ids = collect_ids(depth_matrix, "items", "item_id")
     missing_depth = sorted(REQUIRED_DESIGN_DEPTH_IDS - matrix_depth_ids)
@@ -130,13 +162,15 @@ def build_professional_review(repo_root: Path, submission_dir: Path) -> Professi
             "design_depth_matrix.json",
             f"Missing required design depth items: {', '.join(missing_depth)}.",
         )
-    for item_id in sorted(matrix_depth_ids):
-        if item_id not in refs["depth"]:
-            report.add("DEPTH_PROPOSAL_REF", "major", "proposal.md", f"Missing [depth:{item_id}] reference.")
+    if format_version != PROPOSAL_FORMAT_VERSION:
+        for item_id in sorted(matrix_depth_ids):
+            if item_id not in refs["depth"]:
+                report.add("DEPTH_PROPOSAL_REF", "major", "proposal.md", f"Missing [depth:{item_id}] reference.")
 
-    for rel_path in sorted(PROPOSAL_READABLE_DATA_REFS):
-        if not data_ref_present(refs["data"], rel_path):
-            report.add("DATA_PROPOSAL_REF", "major", "proposal.md", f"Missing [data:{rel_path}#...] reference.")
+    if format_version != PROPOSAL_FORMAT_VERSION:
+        for rel_path in sorted(PROPOSAL_READABLE_DATA_REFS):
+            if not data_ref_present(refs["data"], rel_path):
+                report.add("DATA_PROPOSAL_REF", "major", "proposal.md", f"Missing [data:{rel_path}#...] reference.")
 
     metric_items = metrics.get("metrics") if isinstance(metrics, dict) else {}
     known_metric_ids = {
@@ -144,14 +178,17 @@ def build_professional_review(repo_root: Path, submission_dir: Path) -> Professi
         for name, value in metric_items.items()
         if isinstance(value, dict) and value.get("status") == "known"
     } if isinstance(metric_items, dict) else set()
-    for metric_id in sorted(known_metric_ids):
-        if metric_id not in refs["metric"]:
-            report.add("METRIC_PROPOSAL_REF", "major", "proposal.md", f"Missing [metric:{metric_id}] reference.")
+    if format_version != PROPOSAL_FORMAT_VERSION:
+        for metric_id in sorted(known_metric_ids):
+            if metric_id not in refs["metric"]:
+                report.add("METRIC_PROPOSAL_REF", "major", "proposal.md", f"Missing [metric:{metric_id}] reference.")
 
     report.summary = {
         "standard_matrix_items": len(matrix_standard_ids),
         "design_depth_items": len(matrix_depth_ids),
         "known_metric_refs_required": len(known_metric_ids),
+        "proposal_format_version": format_version,
+        "evidence_contract": "section-anchors-plus-structured-audit" if format_version == PROPOSAL_FORMAT_VERSION else "legacy-exhaustive-inline",
         "proposal_reference_counts": {kind: len(values) for kind, values in refs.items()},
     }
     return report
@@ -174,10 +211,24 @@ def format_markdown(report: ProfessionalReport) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("submission_dir")
-    parser.add_argument("--repo-root", default=".")
-    parser.add_argument("--json", action="store_true")
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "submission_dir",
+        help="Path to the proposal directory, e.g. submissions/<login>/<slug>",
+    )
+    parser.add_argument(
+        "--repo-root",
+        default=".",
+        help="Repository root directory (default: current working directory)",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Emit machine-readable JSON instead of human-readable Markdown",
+    )
     args = parser.parse_args()
 
     repo_root = Path(args.repo_root)

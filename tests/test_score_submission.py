@@ -90,6 +90,23 @@ class ScoreSubmissionTests(unittest.TestCase):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(index, ensure_ascii=False), encoding="utf-8")
 
+    def write_package_source_index(self, proposal: Path) -> None:
+        index = {
+            "schema_version": "0.1.0",
+            "package_id": "ai-urban-loop",
+            "sources": [
+                {
+                    "id": "OFFICIAL-ANNOUNCEMENT",
+                    "registry_source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+                    "title": "公开征集公告",
+                    "url": "https://example.com/announcement",
+                }
+            ],
+        }
+        (proposal.parent / "sources.json").write_text(
+            json.dumps(index, ensure_ascii=False), encoding="utf-8"
+        )
+
     def check_map(self, report):
         return {check.dimension: check.status for check in report.checks}
 
@@ -135,6 +152,92 @@ class ScoreSubmissionTests(unittest.TestCase):
             self.assertEqual(checks["公开资料引用"], STATUS_NEEDS_WORK)
             self.assertEqual(report.matched_sources, [])
 
+    def test_formal_package_source_registry_is_used_for_v2_markers(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            body = VALID_BODY.replace(
+                "- `brief/public-brief.md`\n- `brief/README.md`",
+                "- `[source:OFFICIAL-ANNOUNCEMENT]`\n- `[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]`",
+            )
+            proposal = self.write_proposal(root, body)
+            self.write_package_source_index(proposal)
+
+            report = score_proposal(root, proposal)
+            checks = self.check_map(report)
+
+            self.assertEqual(checks["公开资料引用"], STATUS_PASS)
+            self.assertEqual(
+                [item.id for item in report.matched_sources],
+                ["OFFICIAL-ANNOUNCEMENT"],
+            )
+            self.assertEqual(report.unmatched_reference_lines, [])
+
+    def test_local_package_artifacts_do_not_require_public_source_records(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_source_index(root)
+            body = VALID_BODY.replace(
+                "- `brief/public-brief.md`\n- `brief/README.md`",
+                "- `brief/public-brief.md`\n- `metrics.json`, `assumptions.json` 与 `compliance_matrix.json`",
+            )
+            proposal = self.write_proposal(root, body)
+
+            report = score_proposal(root, proposal)
+
+            self.assertEqual(self.check_map(report)["公开资料引用"], STATUS_PASS)
+            self.assertEqual(report.unmatched_reference_lines, [])
+
+    def test_package_artifact_does_not_hide_descriptive_source_claim(self) -> None:
+        claims = [
+            "居民访谈与现场观察结论见 metrics.json",
+            "未公开内部数据已汇总到 assumptions.json",
+            "第三方商业热力数据见 metrics.json",
+        ]
+        for claim in claims:
+            with self.subTest(claim=claim), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                self.write_source_index(root)
+                body = VALID_BODY.replace(
+                    "- `brief/public-brief.md`\n- `brief/README.md`",
+                    f"- `brief/public-brief.md`\n- {claim}",
+                )
+                proposal = self.write_proposal(root, body)
+
+                report = score_proposal(root, proposal)
+
+                self.assertEqual(self.check_map(report)["公开资料引用"], STATUS_NEEDS_WORK)
+                self.assertEqual(report.unmatched_reference_lines, [claim])
+
+    def test_unknown_local_reference_still_needs_source_status_note(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_source_index(root)
+            body = VALID_BODY.replace(
+                "- `brief/public-brief.md`\n- `brief/README.md`",
+                "- `brief/public-brief.md`\n- `research/field-observations.json`",
+            )
+            proposal = self.write_proposal(root, body)
+
+            report = score_proposal(root, proposal)
+
+            self.assertEqual(self.check_map(report)["公开资料引用"], STATUS_NEEDS_WORK)
+            self.assertEqual(report.unmatched_reference_lines, ["`research/field-observations.json`"])
+
+    def test_nested_package_artifact_name_still_needs_source_status_note(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_source_index(root)
+            body = VALID_BODY.replace(
+                "- `brief/public-brief.md`\n- `brief/README.md`",
+                "- `brief/public-brief.md`\n- `research/manifest.json`",
+            )
+            proposal = self.write_proposal(root, body)
+
+            report = score_proposal(root, proposal)
+
+            self.assertEqual(self.check_map(report)["公开资料引用"], STATUS_NEEDS_WORK)
+            self.assertEqual(report.unmatched_reference_lines, ["`research/manifest.json`"])
+
     def test_weak_landing_path_needs_work(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -160,8 +263,58 @@ class ScoreSubmissionTests(unittest.TestCase):
 
             self.assertIn("Proposal self-check", markdown)
             self.assertIn("advisory", markdown)
-            self.assertIn("Matched public sources", markdown)
+            self.assertIn("Formal readiness: not assessed", markdown)
+            self.assertIn("scripts/self_check_submission.py", markdown)
+            self.assertIn("Matched indexed sources", markdown)
 
+    def test_json_marks_formal_readiness_as_not_assessed(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_source_index(root)
+            proposal = self.write_proposal(root)
+
+            payload = score_proposal(root, proposal).to_dict()
+
+            self.assertEqual(payload["check_scope"], "advisory_proposal_only")
+            self.assertEqual(payload["formal_readiness"], "not_assessed")
+            self.assertEqual(payload["next_required_check"], "scripts/self_check_submission.py")
+
+
+
+    def test_placeholder_text_causes_missing_completeness(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_source_index(root)
+            # Inject a known placeholder string
+            body = VALID_BODY + "\n方案标题\n"
+            proposal = self.write_proposal(root, body)
+
+            report = score_proposal(root, proposal)
+            checks = self.check_map(report)
+
+            self.assertEqual(checks["表达完整度"], STATUS_MISSING)
+
+    def test_score_proposal_returns_all_eight_dimensions(self) -> None:
+        """score_proposal must always return exactly the eight rubric dimensions."""
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_source_index(root)
+            proposal = self.write_proposal(root)
+
+            report = score_proposal(root, proposal)
+
+            dimension_names = {check.dimension for check in report.checks}
+            expected = {
+                "任务书相关性",
+                "原创性",
+                "AI 与城市规划创新性",
+                "可实施性",
+                "公共利益",
+                "风险合规",
+                "表达完整度",
+                "公开资料引用",
+            }
+            self.assertEqual(dimension_names, expected)
 
 if __name__ == "__main__":
     unittest.main()
