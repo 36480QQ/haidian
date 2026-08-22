@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v4.10"
+iteration: "v4.15"
 summary: "Using the centennial Jingzhang railway heritage corridor as its frame, the scheme rebuilds the Haidian AI industrial belt into an Origin Force belt shared by people and machine agents: one belt, three zones with two wings and five gates, eight narrative landmarks, eight personas, twelve auditable AI+ scenario cards, sixteen implementation mechanisms and twelve numbered renewal projects, all anchored to a provisional boundary basis, structured metrics and a reproducible evidence chain, with both language versions rendered from one data source."
 tracks: ["ai-origin-community", "jingzhang-heritage-narrative", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide", "ai-health-service-navigation", "robot-delivery-low-speed"]
@@ -310,6 +310,20 @@ The overall structure is summarised as **one belt, three zones with two wings, a
 
 *Figure · Conceptual suggestion for land use and intensity zoning. Zones show relative relationships only and contain no FAR or height conclusions.*
 
+### The governance translation of the switchback: points, reversals and sidings
+
+The famous "人"-shaped switchback on the Jingzhang railway was not built to look better uphill. It existed because the Badaling grade exceeded the tractive limit of the locomotives of the day — **acknowledge the limit of capability, and find another way forward**. That engineering judgement is the prototype of this scheme's governance logic: rather than letting an AI service force its way into public space when it is not ready, let it first enter a "siding" that can be stopped, withdrawn and reversed.
+
+| Railway syntax | Governance translation in this scheme | Corresponding mechanism and component |
+| --- | --- | --- |
+| Point (道岔) | Human confirmation before AI enters public space | X15 algorithmic-impact assessment + X16 reversibility contract and public veto |
+| Reversal (折返) | Usage failure returns to R&D and generates a new test condition | X08 removal reserve + S12 public veto and appeal |
+| Siding (侧线) | Staged R&D trial, removable | X02 reversible land contract + K08 reversible base (48-hour removal) |
+| Line (线路) | Independent right of way for people, slow, low-speed and motor traffic | X03 four-band cross-section |
+| Station (站点) | Lateral entry point where problems and capabilities change hands | eight stitching needles S1–S8 + X05 scenario-as-infrastructure |
+
+These five translations move "Origin Force" from a name to a mechanism: Origin Force is not a slogan but an executable process in which "any AI entering public space, like the locomotives of that era, is first tested by the grade, then confirmed by the point, and reverses to try again when necessary." Every spatial and governance action in Chapters 5 (key areas) and 6 (scenario cards) that follows is a concrete unfolding of these five translations.
+
 ### Four-band cross-section and stitching strategy
 
 The overall level organises the corridor through a four-band cross-section: the western block band,
@@ -450,6 +464,30 @@ be completed within a one-hour walking circle.
 The three scripts point to a single design principle: key areas are not there to be looked at but to
 be used, and the test of their success is whether a person can complete their dominant daily routine
 without depending on a private car [depth:three_key_area_detailed_design].
+
+### One case running through the whole proposal: Zheng Jie's morning rush
+
+The eight personas are not a side-by-side list. This scheme lets one of their journeys run through the whole proposal — **the morning rush of the child-carrying commuter Zheng Jie (P5), who pushes a stroller to daycare and then catches the metro**. The journey tests all three disciplines of the scheme at once: it can be powered up (she gets through without a phone), it can be stopped (the human counter remains when the AI fails), and it can be questioned (there is always a name and an appeal when something goes wrong).
+
+**07:48, leaving home.** Zheng Jie pushes the stroller out of the Origin Community. She opens no app: following the blue numbering on the ground, she immediately sees the "continuous barrier-free route" sign. At the junction a see-through guardrail (K06) separates the footway from the low-speed band, so the stroller never competes with delivery robots.
+
+**07:55, dropping off at daycare.** The daycare point sits within 300 m of the station, and the stroller parks in a "robot no-stop zone" outside it, explicitly excluded by the docking rules of K07.
+
+**08:05, entering the station.** The four-quadrant pedestrian system at Dazhongsi spares her a street crossing and a detour.
+
+**08:12, the conflict.** A low-speed delivery robot (scenario S02) holds a temporary position in a docking harbour, and a watching crowd compresses the clear width of the stroller lane. Zheng Jie has no phone, but she sees the human-call button on a service post (M6 Ask Post).
+
+**08:14, pressing the call.** A duty officer arrives within 30 seconds, stops the device and clears the crossing first — without waiting for an algorithm to decide. The human counter is still there, and her daycare registration is handled by a person throughout.
+
+**08:16, anonymous complaint.** Zheng Jie states it verbally and receives a paper receipt with an event number within five minutes. No ID number, contact details or long-term trajectory are recorded.
+
+**08:20, the removal decision.** The public-service lead judges that the problem is not a single failed yield, but the untested stacking of "docking + crowd + stroller priority". The trial pocket closes, the device withdraws along the rear side, and the low-speed band returns to ordinary green space. Zheng Jie continues her journey.
+
+**08:32, arriving.** The AI's exit has not made the service disappear — this proves the space is not a stand that only works when a device is attached.
+
+**12:00 the same day, a new test condition returns to R&D.** The conflict is written into a new Zhongzhiyuan condition: "When device docking, a watching crowd and stroller priority happen at once, how is public clearance maintained?" It enters the next verification round of scenario card S02, rather than being recorded as "the user is not used to technology".
+
+This journey is echoed throughout the rest of the text: scenario S02 in Chapter 6 states its failure-first boundary, S12 public veto carries its appeal channel, and X08 removal reserve guarantees the device can be withdrawn without depending on later funding. A reviewer does not need to understand every mechanism; walking through Zheng Jie's morning once is enough to see what this belt is arguing for.
 
 ### Eight narrative landmarks
 
@@ -776,6 +814,18 @@ The twelve cards share one set of hard constraints. Any new scenario wishing to 
 8. Decommissioning reserve: every new intelligent facility must set aside funds for removal and a site restoration plan, so that no ownerless legacy system accumulates.
 
 These governance constraints are **conceptual suggestions** put forward by the scheme. Their legal force, competent authority and enforcement procedure must be determined under national and local regulations in force, and may be developed further by professional teams and authorities during institutional design. The scheme claims no approval or binding force for any clause [depth:risk_missing_data] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+### How three kinds of failure are closed out: who stops, what closes, what stays open
+
+Failure is not the exception the scheme tries to hide; it is the object the scheme designs for. This scheme prescribes a closing action for each of three failure types, under one common baseline — **the public never pays for a product's failure with a detour, a wait or a data cost**.
+
+**Technical failure (a failed yield).** A low-speed device fails to yield and comes close to a person. Independent right-of-way monitoring triggers HOLD first, and a duty officer executes a physical emergency stop; the low-speed band closes while the footway and slow-mobility band stay open permanently; event telemetry is frozen, and imagery is still handled under the "no retention" rule, without expanding collection because of an accident. The device withdraws and the space returns to ordinary green. Re-testing is only allowed after the "failed yield — minimum-risk stop — human takeover" condition is re-run and passes on the same hardware and software version.
+
+**Rights failure (unclear model copyright).** A fine-tuned voice model reaches pre-release and it is found that the training-data licence has expired or does not match the tested hash. The release status is immediately HOLD, the data airing ground withdraws "available for trial", and the system stops distribution without deleting the necessary audit records. Release may resume only after clearance and version-hash closure — a corporate promise or an on-site demo cannot substitute for clearance.
+
+**Public-use failure (the stroller lane is encroached).** This is Zheng Jie's case. Stop the device and clear the crossing first, without waiting for an algorithm; an anonymous complaint gets a receipt within five minutes; restoration requires a user-led route re-test and no significant group divergence for two review cycles.
+
+The three failures map to three spatial actions: technical failure shrinks the machine boundary, rights failure withdraws the release interface, and public failure restores ordinary passage and human service. Every RETURN must answer five questions — who stops, what closes, what stays open, how the record is handled, and when it may come back.
 
 ### Mapping of AI+ scenarios to evidence gates
 
