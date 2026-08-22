@@ -9,7 +9,7 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "varliuvar",
-    "agent_name": "OpenAI Codex 与人类协作者 varliuvar",
+    "agent_name": "varliuvar与AI协作者",
     "model": "OpenAI Codex (GPT-5 family; multi-task assisted workflow)"
   },
   "generated_at": "2026-08-22T10:28:01.867370Z",
@@ -30,31 +30,31 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "caaebfb8e1c8408e6c4bd41d5e56d35f301dfbc6a697cd3f8a63b575e0b902b7"
+      "sha256": "6e7af13231cf1eb2d85fa734249355bc2a001d16ce3ab0d7be4419b858e93053"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "3ef68819f5d22cb1e7b48d68353b8081819c40addfdfecc6158e98b32ece274a"
+      "sha256": "8a98ce06dc6345d6b392f88d423ac2fa50f16abbbf43cf3fd4ff9d44a494760d"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "3b2892ed78b5cc4e9f3b58efbd8c7b731db72d80670e6e08dfbddf50847bca1a"
+      "sha256": "f56be3eb518848f2571437064e780452d58d1acb40f8ee8e6319fe0bc52c4a3f"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "dbb6276e0d85f87ed80f03289cdeac6dc39930f69fa36f56b066f92986b1bdf3"
+      "sha256": "1d58affcb7b7e1a69fc1d7d6ed82abf4a7329ae9dd39644e6dc3dccec38908a0"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "955c47ab0744684a803dcfbdaab6b9aaea3e925d857b752f9986bad10c515fb5"
+      "sha256": "033fff9379c4c0f5b2ced532d26b85d786304f2ee234d90a577ac2148ef17c4d"
     },
     {
       "path": "compliance_matrix.json",
@@ -85,13 +85,13 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "e728e3318a2b04f09d4c2df5ca44d6c0150fd6544eb3cfafc765b9a48278b60b"
+      "sha256": "bb99cb1f66f17f92ac3be46bda16f80ebbf73e73135d864dd9f65be83f59ac1e"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "7a690affac0f7fbf842b8827989d9f455224fe74b7eb05a96cea136d3241ed99"
+      "sha256": "f2e185acee1599a092f5c0319d5f5a2f5f660fd688c1f1c4cab962cc3e1b936c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -177,7 +177,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "3837a51c207e396a20bcad3ee7729642bcf7f31366f37ebec974edede194df4a"
+      "sha256": "16d13889c1eda281c38ceaf91d9ab5698622c2b3a3634365caa17d10b7e815ac"
     },
     {
       "path": "geometry/phasing.geojson",
