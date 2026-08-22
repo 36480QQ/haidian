@@ -26,7 +26,7 @@
    "role": "narrative",
    "required": true,
    "language": "zh",
-   "sha256": "58e8823c72d4d421a8fcb3d412cc324b5c6449626a4e3bce4b3170822f988bc5"
+   "sha256": "4b31892eb1cd80d63028c8ce04f817fac91f41d0f0afa1afb7085b52071aae06"
   },
   {
    "path": "agent.json",
@@ -44,13 +44,13 @@
    "path": "assumptions.json",
    "role": "assumptions",
    "required": true,
-   "sha256": "61393106cf6570b958aad0a75d284fea02f9f97d3e0f5f1e8ab5c8e540021f24"
+   "sha256": "e77e06a137c9320cdbd47bd635eaa0ce2c6999ef92b92f9acaf2f92fe94aea4e"
   },
   {
    "path": "sources.json",
    "role": "sources",
    "required": true,
-   "sha256": "1240d473a78b85750bd2872122b414f4f404f69a8064148a97cc4f4a2f61f93a"
+   "sha256": "111b0a42effc24e52d22f2fc8382eab5df8f4479400cc33d8239748908327ccf"
   },
   {
    "path": "self_check.json",
@@ -68,7 +68,7 @@
    "path": "standard_matrix.json",
    "role": "standard_matrix",
    "required": true,
-   "sha256": "f16122ea863936c52f56b54773f08451dce4336c7da44d008b6a47bcb5901ba4"
+   "sha256": "b73f0a30fd1b8282037adcb528a26fe638b57808b0a2ce3f2235e06236044acc"
   },
   {
    "path": "design_depth_matrix.json",
@@ -81,7 +81,7 @@
    "role": "rendered_proposal_html",
    "required": true,
    "language": "zh",
-   "sha256": "b0ded2cde4ebdca6c7671c82f343fb605fff9b416a15ba8c15df339cf31e2a07"
+   "sha256": "57a5804b97dee8912fcdd7497fe7c6c553a7b59c1f98fbf0f3d9ed3d9270475c"
   },
   {
    "path": "report/narrative.md",
@@ -161,7 +161,7 @@
    "path": "geometry/constraints.geojson",
    "role": "geometry",
    "required": true,
-   "sha256": "301958eb77ee35637b55331a1d79f17236de82a1e75e94b7c55be605d13f9cd7"
+   "sha256": "0ac1a07f864f47b02db8933848f19b629ff39a39dc70fcf9ea4dbccbd8ab9ff5"
   },
   {
    "path": "geometry/green_space.geojson",
@@ -217,7 +217,7 @@
    "required": true,
    "language": "en",
    "translation_of": "proposal.md",
-   "sha256": "2c76d8dcf90a0d263b19988213867c011f2e2be1b5ee19ae6bb256c424849e1e"
+   "sha256": "fc11f794b040b7e2d4ce0be0713b9c9398aa71708d26a8c7e92350d27125b799"
   },
   {
    "path": "report/proposal.en.html",
