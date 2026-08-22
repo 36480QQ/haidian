@@ -25,6 +25,15 @@ const CLAIM_IDS = [
 ];
 const ASSUMPTION_ID = "A-PLAN-ALIGNMENT-001";
 const UNCHANGED_EVIDENCE_SIGNATURE = "c880c438924399d40267391551669d937dcfc5e144850eb511a45bbf024c4a52";
+const PRIOR_METRICS_SHA256 = "83c534bc099da4bbcc618967a876b7e12296459232c2a1c149fdde4f625b764c";
+const CURRENT_METRICS_SHA256 = "9c27a7ffbdb60768a9084ef7d41f5073fb0102b4f7f73629c1423a15748c8128";
+const RECERTIFIED_METRIC_IDS = [
+  "expiring_ticket_synthetic_case_total",
+  "expiring_ticket_synthetic_case_passed",
+  "expiring_ticket_negative_path_fail_closed_total",
+  "expiring_ticket_no_data_rule_coverage_ratio",
+  "expiring_ticket_conditional_artifact_coverage_ratio",
+];
 
 function absolute(relative) {
   return path.join(SUBMISSION_DIR, relative);
@@ -40,6 +49,7 @@ function sha256(relative) {
 
 function structuralErrors(register) {
   const errors = [];
+  if (register.schema_version !== "1.2.0") errors.push("schema_version must be 1.2.0 after full-metrics recertification");
   if (register.register_id !== REGISTER_ID) errors.push(`register_id must be ${REGISTER_ID}`);
   if (register.branch_freeze?.upstream_main_sha !== FREEZE_SHA) errors.push(`branch freeze must be ${FREEZE_SHA}`);
   if (register.branch_freeze?.gate_scripts_from_this_freeze !== true) errors.push("gate scripts must come from the branch freeze");
@@ -81,6 +91,17 @@ function structuralErrors(register) {
   for (const item of register.alignment_decisions || []) {
     if (!String(item.boundary || "").trim()) errors.push(`${item.alignment_id} must state an inference boundary`);
   }
+  const recertification = register.current_package_recertification || {};
+  if (recertification.prior_metrics_sha256 !== PRIOR_METRICS_SHA256) errors.push("recertification must retain the prior metrics hash");
+  if (recertification.current_metrics_sha256 !== CURRENT_METRICS_SHA256) errors.push("recertification must pin the current complete metrics hash");
+  if (recertification.metric_change_scope !== "non_spatial_e2_governance_metrics_only") errors.push("recertification scope must remain non-spatial E2 governance metrics only");
+  if (JSON.stringify(recertification.added_metric_ids) !== JSON.stringify(RECERTIFIED_METRIC_IDS)) errors.push("recertification metric IDs must exactly match the five appended ticket metrics");
+  for (const key of ["planning_alignment_claims_changed", "spatial_metrics_or_geometry_changed"]) {
+    if (recertification[key] !== false) errors.push(`current_package_recertification.${key} must remain false`);
+  }
+  if (recertification.all_nine_geometry_hashes_reverified !== true) errors.push("all nine geometry hashes must be reverified");
+  if (recertification.evidence_signature_reverified !== UNCHANGED_EVIDENCE_SIGNATURE) errors.push("recertification must retain the evidence signature");
+  if (register.frozen_package_inputs?.["metrics.json"] !== CURRENT_METRICS_SHA256) errors.push("frozen metrics input must use the recertified complete-file hash");
   return errors;
 }
 
@@ -113,6 +134,13 @@ function main() {
   check("ALIGNMENT_IDS", JSON.stringify(register.alignment_decisions.map((item) => item.alignment_id)) === JSON.stringify(["ALIGN-01", "ALIGN-02", "ALIGN-03", "ALIGN-04"]), register.alignment_decisions.map((item) => item.alignment_id));
   check("NO_GEOMETRY_TRANSFER", register.text_claims.filter((item) => item.spatial_use === "text_only_no_digitisation").length === 3 && register.evidence_boundary.changes_submission_geometry === false, register.text_claims.map((item) => [item.claim_id, item.spatial_use]));
   check("VERSION_DELTA_VISIBLE", register.version_delta?.resolution_status === "officially_published_plan_confirms_2024_2035_label_without_approval_document_number", register.version_delta);
+  check("METRICS_RECERTIFICATION", register.current_package_recertification?.current_metrics_sha256 === CURRENT_METRICS_SHA256
+    && register.current_package_recertification?.metric_change_scope === "non_spatial_e2_governance_metrics_only"
+    && JSON.stringify(register.current_package_recertification?.added_metric_ids) === JSON.stringify(RECERTIFIED_METRIC_IDS)
+    && register.current_package_recertification?.spatial_metrics_or_geometry_changed === false
+    && register.current_package_recertification?.all_nine_geometry_hashes_reverified === true
+    && register.current_package_recertification?.evidence_signature_reverified === UNCHANGED_EVIDENCE_SIGNATURE,
+  register.current_package_recertification);
 
   const sources = readJson("sources.json").sources || [];
   const sourceMap = Object.fromEntries(sources.map((item) => [item.id, item]));

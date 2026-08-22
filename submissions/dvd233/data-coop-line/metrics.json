@@ -339,6 +339,81 @@
         "Synthetic contract tests over the DAZHONGSI-FIELD-OPS-01 template only; they prove reproducible contract logic, not field truth, site access, permission, or operability."
       ],
       "metric_kind": "synthetic_contract_test"
+    },
+    "expiring_ticket_synthetic_case_total": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/expiring-data-ticket-protocol.json",
+        "visual/assets/evidence-consistency.js"
+      ],
+      "formula": "count(EXPIRING-DATA-TICKET-01.synthetic_rehearsals); recompute: node visual/assets/evidence-consistency.js --json",
+      "confidence": "low",
+      "assumptions": [
+        "E2 synthetic contract cases only; no field or stakeholder evidence has been collected."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "expiring_ticket_synthetic_case_passed": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/expiring-data-ticket-protocol.json",
+        "visual/assets/evidence-consistency.js"
+      ],
+      "formula": "cases whose instantiated ticket, single-node scope, event-derived ticket/execution coupling, observation-batch parity, six paired accessibility fixtures, applicable SLA observations, substantiated public return, residual crosswalk and artifact records all pass; any failure forces audit exit 1",
+      "confidence": "low",
+      "assumptions": [
+        "E2 synthetic pass status does not prove site access, operating performance, a legal role, professional approval or implementation."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "expiring_ticket_negative_path_fail_closed_total": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/expiring-data-ticket-protocol.json",
+        "visual/assets/evidence-consistency.js"
+      ],
+      "formula": "declared in-memory mutations rejected / ten declared mutations: post-term unauthorized release, raw export, undersized aggregate output, unmapped derivative, missing stopping coupling, missing public-return deliverable, below-target public value, empty return evidence, unauthorized cross-node scope, and both routes failing the same accessibility task",
+      "confidence": "low",
+      "assumptions": [
+        "The passing result means the illegal synthetic action was blocked; it is not evidence that withdrawal fails."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "expiring_ticket_no_data_rule_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/expiring-data-ticket-protocol.json",
+        "visual/assets/evidence-consistency.js"
+      ],
+      "formula": "passed no-data equivalence checks / all applicable checks (22 / 22 across two cases): attempts, both time conditions, price, failures, core schema, safety alerts, 6 tasks x 2 routes of synthetic accessibility-fixture coverage, human takeover and complaint channels; no observed usability performance",
+      "confidence": "low",
+      "assumptions": [
+        "Thresholds are executable E2 design gates pending authorized E3 field measurement and E4 professional/operator confirmation."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "expiring_ticket_conditional_artifact_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/expiring-data-ticket-protocol.json",
+        "visual/assets/evidence-consistency.js"
+      ],
+      "formula": "valid artifact records / conditionally required records (24 / 24 across two cases); each record must satisfy minimum fields, identity, role, state, timestamp and resolvable content pointers",
+      "confidence": "low",
+      "assumptions": [
+        "Synthetic record coverage proves a machine-readable E2 evidence contract, not that field artifacts or responsible entities exist."
+      ],
+      "metric_kind": "synthetic_contract_test"
     }
   }
 }
