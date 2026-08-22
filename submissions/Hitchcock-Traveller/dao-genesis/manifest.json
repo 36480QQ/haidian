@@ -17,6 +17,11 @@
   "generated_at": "2026-08-22T03:55:27Z",
   "files": [
     {
+      "path": "manifest.json",
+      "role": "manifest",
+      "required": true
+    },
+    {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
@@ -73,7 +78,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "670e1fb614a9afa2aab054f8b1c7a13260a87326f463adefe591db8e353d7afd",
+      "sha256": "cdce1b07626794da07cbe9a7f075565eede49a394f5f188dc9f036e78d829ff3",
       "language": "neutral"
     },
     {
