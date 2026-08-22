@@ -65,7 +65,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "a224aad1d376ffd25e1e25ad3eae1d8b8429e9f115ccb254d9aafef149b40c3b"
+      "sha256": "a264cfbfce665f559a007c2d40401d45d852ae750c2eae66bc74cecb99aff0b7"
     },
     {
       "path": "simulation.json",
@@ -83,7 +83,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fdfc39b1bc3a0b8e5440deb20628b9db4497087876d2d8649d3b5f058438e5ea"
+      "sha256": "e4f086e3b8c82145319ce30d8a554a83bd0020e1e337bb40ca27d7c26dc914e7"
     },
     {
       "path": "compliance_matrix.json",
@@ -95,7 +95,7 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "bda3e1e822b66ea71a2dca85adf950d28379d074acb07a7a87af478afc3f1013"
+      "sha256": "6cd632b5c13b666408d7ed9f886f63e674e52228b05484baff9c8f4c59f8e9f0"
     },
     {
       "path": "design_depth_matrix.json",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "87b737932bf9e8d9f85cbcae59ef005f9eaf7b428daa0d1314df6fb29e854dc3"
+      "sha256": "d4f3c90995bcd7be032434758c2f1682ac678784dc7d8a4c90eee6f611d3ce3b"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
