@@ -21,8 +21,7 @@
         "submissions/Citydast/jingzhang-intelligence-track/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
         "submissions/Citydast/jingzhang-intelligence-track/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
         "submissions/Citydast/jingzhang-intelligence-track/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-        "submissions/Citydast/jingzhang-intelligence-track/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-        "submissions/Citydast/jingzhang-intelligence-track/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
+        "submissions/Citydast/jingzhang-intelligence-track/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible"
       ],
       "proposal_files": [
         "submissions/Citydast/jingzhang-intelligence-track/proposal.md"
@@ -63,12 +62,13 @@
         "submissions/Citydast/jingzhang-intelligence-track/self_check.json",
         "submissions/Citydast/jingzhang-intelligence-track/sources.json",
         "submissions/Citydast/jingzhang-intelligence-track/standard_matrix.json",
+        "submissions/Citydast/jingzhang-intelligence-track/visual/index.en.html",
         "submissions/Citydast/jingzhang-intelligence-track/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/Citydast/jingzhang-intelligence-track": "formal"
       },
-      "total_bytes": 2153798,
+      "total_bytes": 2172798,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -175,8 +175,7 @@
     "Review legacy bilingual compatibility warning: submissions/Citydast/jingzhang-intelligence-track/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
     "Review legacy bilingual compatibility warning: submissions/Citydast/jingzhang-intelligence-track/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
     "Review legacy bilingual compatibility warning: submissions/Citydast/jingzhang-intelligence-track/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/Citydast/jingzhang-intelligence-track/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/Citydast/jingzhang-intelligence-track/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
+    "Review legacy bilingual compatibility warning: submissions/Citydast/jingzhang-intelligence-track/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible"
   ],
   "schema_version": "0.1.0",
   "checks": [

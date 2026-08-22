@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5856b6158c9a3fb2cc80f1f2b4de27ef32188dc4c9e4f95e1c676b44e78f5757"
+      "sha256": "5d19695e28ef053db288f283efcdf50d957db1b1966d8df610b57791d5cb2870"
     },
     {
       "path": "compliance_matrix.json",
@@ -218,6 +218,14 @@
       "language": "en",
       "translation_of": "report/proposal.html",
       "sha256": "75da2b34fed59bcb8f0fb8a7f4b0b54e310c3c4f19a8a60a3412fbdcafb41d56"
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "required": true,
+      "language": "en",
+      "translation_of": "visual/index.html",
+      "sha256": "977f6ba8de5ffd66e43402bd7671f840e4b40299d7e74864e683ce4fd9aa74f0"
     }
   ],
   "validation_claim": {
