@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is explicitly disclosed and is not claimed as an official redline."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "All three key areas remain provisional and require official polygons before precise spatial review."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Research polygons satisfy the submission structure and carry a non-statutory metadata warning."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Offline HTML uses local assets only and states evidence limitations."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "Proposal links readable design content to figures, geometry, metrics, sources, assumptions, matrices, and drawings."
+    },
+    {
+      "check_id": "GENERATED_VISUAL_DISCLOSURE",
+      "result": "pass",
+      "severity": "major",
+      "target": "assets/figures/",
+      "message": "Core figures carry a visual-intent, non-existing, non-survey, and non-statutory disclosure."
+    },
+    {
+      "check_id": "IDENTITY_PENDING",
+      "result": "unknown",
+      "severity": "major",
+      "target": "agent.json",
+      "message": "GitHub login, final contributor names, and exact model declaration remain pending before publication."
+    }
+  ]
+}
