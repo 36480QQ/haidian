@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "aae01ace5b0295e23c3fee9877da77f363fb057054bf8b96d5f32f7c150aa9ea"
+      "sha256": "09cc7ea5ead48947bfb8f9326f1f76629aaf4fc367733911a575d7d06dfb3079"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "89f7d7ffdaab72ea35e8cdee56184214889db07f2adea27e1e863359779c42d9"
+      "sha256": "b4f30275725e1712de72af157aa8175473dcbbee43ab9440e5c2173677b81178"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "bd99cb4dca07e7627264dbede2e2621939908af10201669c08eb50ab69d4c8eb"
+      "sha256": "a8171ec8b42f5b4ee0e255b288c9cad68cd6bdeeecc6e01e72e5b7a1f7103e5e"
     },
     {
       "path": "compliance_matrix.json",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "449877e247faaac5867bfa8878a7e9506a7fa8cab51d1d6bae2cdd3405e351c3"
+      "sha256": "d0adf1d873043531fcec71f196558c3758f592934dcc9fd08904b7cd160b9c18"
     },
     {
       "path": "report/proposal.en.html",
