@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "jingzhang_168_public_time_belt",
+  "name": "jingzhang_city_on_public_baseline",
   "features": [
     {
       "type": "Feature",
@@ -11,32 +11,39 @@
         "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "design_proposal",
-        "name_zh": "168小时公共时间带",
-        "weekly_open_hours": 112,
+        "name_zh": "京张常在公共基线",
+        "name_en": "Jing-Zhang City-On Public Baseline",
+        "protocol_version": "4.0.0",
+        "baseline_status": "ordinary_public_service_precedes_any_ai_overlay",
         "scenario_node_count": 12,
-        "scenario_nodes": [
-          "合成数据门诊",
-          "模型红队工棚",
-          "低速机器人时窗",
-          "端侧能耗沙盒",
-          "公共服务导航",
-          "无障碍寻路",
-          "夜校共享教室",
-          "实验室时间银行",
-          "遗产声音站",
-          "静默街道协议",
-          "城市模型阅览室",
-          "开源发车板"
+        "scenario_locator_ids": [
+          "SCN-01",
+          "SCN-02",
+          "SCN-03",
+          "SCN-04",
+          "SCN-05",
+          "SCN-06",
+          "SCN-07",
+          "SCN-08",
+          "SCN-09",
+          "SCN-10",
+          "SCN-11",
+          "SCN-12"
         ],
-        "access_rule": "默认公共、预约共享、人工可接管；活动后恢复原状",
-        "scenario_ids": [
-          "ai-traffic-walkability",
-          "robot-delivery-low-speed",
-          "ai-cultural-guide",
-          "public-safety-operations-review",
-          "enterprise-service-copilot",
-          "ai-health-service-navigation"
+        "component_ids": [
+          "OC-01-TACTILE-BASELINE",
+          "OC-02-HUMAN-DESK",
+          "OC-03-REVERSIBLE-PLUG-RAIL",
+          "OC-04-RAIN-SHADE-BENCH",
+          "OC-05-OFFGRID-LIGHT",
+          "OC-06-RED-UNPLUG-SWITCH",
+          "OC-07-DIVIDEND-FRAME"
         ],
+        "baseline_rule_zh": "普通通行、静态导向、休息和人工求助先行；AI增益不得占用无障碍净宽或取消无账号服务。",
+        "baseline_rule_en": "Ordinary passage, static wayfinding, rest and staffed help come first; AI boost may not occupy accessible clear width or remove account-free service.",
+        "exit_rule_zh": "模型、网络、传感器和执行器可物理拔除；场地、数据与维护责任必须归还。",
+        "exit_rule_en": "Model, network, sensors and actuators can be physically unplugged; space, data and maintenance responsibility must be returned.",
+        "field_access_result": null,
         "area_sqm_declared": 865643.58
       },
       "geometry": {

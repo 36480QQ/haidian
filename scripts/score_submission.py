@@ -4,6 +4,36 @@
 This script is advisory. It helps contributors find missing or weak areas
 before opening a PR, but it does not replace maintainer review and does not call
 AI services.
+
+It evaluates eight scoring dimensions:
+
+1. **任务书相关性** — coverage of key Jing-Zhang AI innovation belt terms.
+2. **原创性** — presence of concept, mechanism, and scenario language.
+3. **AI 与城市规划创新性** — AI and urban-planning term density.
+4. **可实施性** — phasing, actor, and metric language.
+5. **公共利益** — inclusion of resident and accessibility terms.
+6. **风险合规** — presence of risk, copyright, and data-gap disclosure.
+7. **表达完整度** — required section coverage and metadata completeness.
+8. **公开资料引用** — citation of public sources from the repository index.
+
+This script checks ``proposal.md`` only.  It does not run the four formal
+validation gates (deterministic, spatial, visual, professional).  A ``pass``
+result here does not guarantee formal review readiness; run
+``scripts/self_check_submission.py --mark-self-checked`` for that.
+
+Usage
+-----
+Advisory run::
+
+    python3 scripts/score_submission.py submissions/<login>/<slug>/proposal.md
+
+Machine-readable output::
+
+    python3 scripts/score_submission.py submissions/<login>/<slug>/proposal.md --json
+
+Strict mode (exits 1 when any dimension is ``missing``)::
+
+    python3 scripts/score_submission.py submissions/<login>/<slug>/proposal.md --strict
 """
 
 from __future__ import annotations
@@ -68,6 +98,20 @@ PUBLIC_TERMS = ["居民", "青年", "学生", "企业", "高校", "游客", "无
 RISK_TERMS = ["公开", "非公开", "隐私", "版权", "授权", "复核", "风险", "合规", "涉密", "边界"]
 MANUAL_REVIEW_TERMS = ["内部资料", "内部数据", "非公开空间数据", "未公开图件", "无需审批", "保证落地", "一定实施"]
 
+# These are first-party audit artifacts inside a formal submission package,
+# not public evidence that needs a source-registry record.
+PACKAGE_ARTIFACT_NAMES = {
+    "agent.json",
+    "assumptions.json",
+    "compliance_matrix.json",
+    "design_depth_matrix.json",
+    "manifest.json",
+    "metrics.json",
+    "self_check.json",
+    "sources.json",
+    "standard_matrix.json",
+}
+
 
 @dataclass
 class CheckResult:
@@ -119,6 +163,9 @@ class SelfCheckReport:
 
     def to_dict(self) -> dict[str, Any]:
         return {
+            "check_scope": "advisory_proposal_only",
+            "formal_readiness": "not_assessed",
+            "next_required_check": "scripts/self_check_submission.py",
             "proposal_path": self.proposal_path,
             "ready": self.ready,
             "summary": self.summary,
@@ -164,6 +211,7 @@ def first_section(sections: dict[str, str], required_title: str) -> str:
 
 
 def find_section(sections: dict[str, str], aliases: list[str]) -> str:
+    """Return the body of the first section whose title contains any alias."""
     for title, content in sections.items():
         if any(alias in title for alias in aliases):
             return content
@@ -179,6 +227,7 @@ def status_from_term_count(count: int, pass_at: int = 3, needs_at: int = 1) -> s
 
 
 def load_source_index(repo_root: Path, index_path: Path | None = None) -> list[dict[str, Any]]:
+    """Load the repository-wide public source index."""
     index_path = index_path or repo_root / "sources" / "public-sources.json"
     if not index_path.is_absolute():
         index_path = repo_root / index_path
@@ -192,6 +241,42 @@ def load_source_index(repo_root: Path, index_path: Path | None = None) -> list[d
     return sources if isinstance(sources, list) else []
 
 
+def load_package_source_index(proposal_path: Path) -> list[dict[str, Any]]:
+    """Load the formal package-local source registry when one is present.
+
+    Proposal format v2 keeps the human-readable proposal beside a package
+    ``sources.json``.  The advisory score should recognize those citations in
+    addition to the repository-wide lightweight index; otherwise a valid
+    formal package is reported as having no source coverage.
+    """
+    package_index_path = proposal_path.parent / "sources.json"
+    if not package_index_path.exists():
+        return []
+    try:
+        index_data = json.loads(package_index_path.read_text(encoding="utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError):
+        return []
+    raw_sources = index_data.get("sources") if isinstance(index_data, dict) else []
+    if not isinstance(raw_sources, list):
+        return []
+
+    sources: list[dict[str, Any]] = []
+    for source in raw_sources:
+        if not isinstance(source, dict):
+            continue
+        normalized = dict(source)
+        if not normalized.get("id") and normalized.get("registry_source_id"):
+            normalized["id"] = normalized["registry_source_id"]
+        if not normalized.get("citation"):
+            for key in ("url", "path", "title"):
+                value = normalized.get(key)
+                if isinstance(value, str) and value.strip():
+                    normalized["citation"] = value.strip()
+                    break
+        sources.append(normalized)
+    return sources
+
+
 def reference_lines(reference_section: str) -> list[str]:
     lines = []
     for raw_line in reference_section.splitlines():
@@ -203,26 +288,47 @@ def reference_lines(reference_section: str) -> list[str]:
     return lines
 
 
+def is_package_artifact_reference(line: str) -> bool:
+    """Return true when a reference bullet names only local package artifacts."""
+    if re.search(r"https?://", line, flags=re.IGNORECASE):
+        return False
+    file_tokens = re.findall(r"[\w./-]+\.(?:json|geojson)", line, flags=re.IGNORECASE)
+    if not file_tokens or not all(token in PACKAGE_ARTIFACT_NAMES for token in file_tokens):
+        return False
+
+    remainder = line
+    for token in file_tokens:
+        remainder = remainder.replace(token, "", 1)
+    return re.fullmatch(r"(?:[\s`*_()\[\]{},，、;；:+&/|]|and|与|及)*", remainder, flags=re.IGNORECASE) is not None
+
+
 def match_sources(text: str, reference_section: str, sources: list[dict[str, Any]]) -> tuple[list[SourceMatch], list[str]]:
     haystack = f"{text}\n{reference_section}"
     matched: list[SourceMatch] = []
+    matched_ids: set[str] = set()
     matched_tokens: set[str] = set()
     for source in sources:
         if not isinstance(source, dict):
             continue
-        source_id = str(source.get("id", "")).strip()
+        source_id = str(source.get("id") or "").strip()
+        registry_source_id = str(source.get("registry_source_id") or "").strip()
         citation = str(source.get("citation", "")).strip()
         path = str(source.get("path", "")).strip()
         url = str(source.get("url", "")).strip()
-        candidates = [item for item in [source_id, citation, path, url] if item]
+        candidates = [item for item in [source_id, registry_source_id, citation, path, url] if item]
         if any(candidate in haystack for candidate in candidates):
-            matched.append(SourceMatch(source_id, citation or path or url))
+            match_id = source_id or registry_source_id or citation or path or url
+            if match_id not in matched_ids:
+                matched.append(SourceMatch(match_id, citation or path or url))
+                matched_ids.add(match_id)
             matched_tokens.update(candidates)
 
     unmatched = []
     for line in reference_lines(reference_section):
         normalized = line.replace("`", "")
-        if not any(token and token in normalized for token in matched_tokens):
+        if not any(token and token in normalized for token in matched_tokens) and not is_package_artifact_reference(
+            normalized
+        ):
             unmatched.append(line)
     return matched, unmatched
 
@@ -352,18 +458,19 @@ def score_proposal(
 
     reference_section = find_section(sections, REFERENCE_SECTION_ALIASES)
     sources = load_source_index(repo_root, sources_index_path)
+    sources.extend(load_package_source_index(proposal_path))
     matched_sources, unmatched_references = match_sources(text, reference_section, sources)
     if not reference_section:
         source_status = STATUS_MISSING
         source_message = "缺少参考资料章节内容。"
     elif matched_sources:
         source_status = STATUS_PASS if not unmatched_references else STATUS_NEEDS_WORK
-        source_message = "已引用公开资料索引内资料。"
+        source_message = "已引用全局或方案包来源索引内资料。"
         if unmatched_references:
-            source_message += " 索引外资料需要说明来源和公开性。"
+            source_message += " 未匹配的资料需要说明来源和公开性。"
     else:
         source_status = STATUS_NEEDS_WORK
-        source_message = "未匹配到公开资料索引内资料；建议至少引用 brief/public-brief.md。"
+        source_message = "未匹配到来源索引内资料；轻量方案建议引用 brief/public-brief.md，正式 v2 包建议提供可匹配的 sources.json。"
     checks.append(build_check("公开资料引用", source_status, source_message))
 
     ordered_checks = sorted(checks, key=lambda item: DIMENSION_ORDER.index(item.dimension))
@@ -389,7 +496,15 @@ def format_report(report: SelfCheckReport) -> str:
         f"{summary.get(STATUS_MANUAL_REVIEW, 0)} manual-review"
     )
     lines.append("")
-    lines.append("> This self-check is advisory. It does not replace maintainer or expert review.")
+    lines.append(
+        "> This is advisory only: `pass` and a zero `--strict` exit code apply only to this "
+        "proposal-level check. They do not assess formal readiness."
+    )
+    lines.append(
+        "> Formal readiness: not assessed. Next run "
+        "`scripts/self_check_submission.py <submission-dir> --pr-author <github-login>` "
+        "for deterministic, spatial, visual, and professional evidence validation."
+    )
 
     if report.metadata_missing:
         lines.extend(["", "Missing metadata:"])
@@ -403,7 +518,7 @@ def format_report(report: SelfCheckReport) -> str:
         lines.append(f"- [{check.status}] {check.dimension}: {' '.join(check.messages)}")
 
     if report.matched_sources:
-        lines.extend(["", "Matched public sources:"])
+        lines.extend(["", "Matched indexed sources:"])
         lines.extend(f"- {item.id}: {item.citation}" for item in report.matched_sources)
     if report.unmatched_reference_lines:
         lines.extend(["", "References needing source/public-status notes:"])
@@ -413,15 +528,36 @@ def format_report(report: SelfCheckReport) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("proposal", help="Path to proposal.md")
-    parser.add_argument("--repo-root", default=".")
-    parser.add_argument("--sources-index", default="sources/public-sources.json")
-    parser.add_argument("--json", action="store_true")
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "proposal",
+        help="Path to proposal.md, e.g. submissions/<login>/<slug>/proposal.md",
+    )
+    parser.add_argument(
+        "--repo-root",
+        default=".",
+        help="Repository root directory (default: current working directory)",
+    )
+    parser.add_argument(
+        "--sources-index",
+        default="sources/public-sources.json",
+        help="Path to the public sources index relative to --repo-root (default: sources/public-sources.json)",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Emit machine-readable JSON instead of human-readable Markdown",
+    )
     parser.add_argument(
         "--strict",
         action="store_true",
-        help="Exit non-zero when any self-check dimension is missing.",
+        help=(
+            "Exit non-zero when any advisory dimension is 'missing'; "
+            "formal readiness is not assessed by this flag"
+        ),
     )
     args = parser.parse_args()
 

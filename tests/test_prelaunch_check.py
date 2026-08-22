@@ -86,9 +86,11 @@ class PrelaunchCheckTests(unittest.TestCase):
     def test_workflow_keeps_pull_request_target_safe(self) -> None:
         workflow = (ROOT / ".github" / "workflows" / "submission-validation.yml").read_text(encoding="utf-8")
         self.assertIn("pull_request_target", workflow)
-        self.assertIn("github.event.pull_request.base.sha", workflow)
+        self.assertIn("github.event.repository.default_branch", workflow)
         self.assertNotIn("github.event.pull_request.head.sha", workflow)
         self.assertIn("python3 scripts/github_pr_validation.py", workflow)
+        self.assertIn("pip install", workflow)
+        self.assertIn("requirements-review.txt", workflow)
 
     def test_pr_template_and_gallery_keep_review_results_out_of_public_index(self) -> None:
         template = (ROOT / ".github" / "PULL_REQUEST_TEMPLATE.md").read_text(encoding="utf-8")
