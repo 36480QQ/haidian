@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "813664f82aae9bbb1083541b9927fd5356c6a66b545a3e53fc195f985187a6a2"
+      "sha256": "9df6f0a80e5a1bba192612c873b01e2d10e3023989207c0e927c354cbf22810d"
     },
     {
       "path": "compliance_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "13e05d3d80ed9ce119a80454f486be4b1d18ac1f837a69f2059f1b72eb246f04"
+      "sha256": "351bdec311c34709b7817ae9fc1bf2001bbf919dea5cfbd190bfed6bd98f4929"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "59d4dd99cc6bab8a0ad81711ec7d750738185387109e777024ee6b3b107e553f"
+      "sha256": "4f53677314e8cba1d0a05b258dc65cfb71f5ffbc2476afb818d9b6ad5e3cdb60"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -287,7 +287,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
