@@ -61,8 +61,8 @@ const add = (id, claim, pass, actual) => checks.push({ id, claim, pass: !!pass, 
 /* A. metrics.json 的自陈与内部一致性 */
 const valued = Object.values(metrics).filter((m) => m.value !== null && m.value !== undefined).length;
 const pending = Object.keys(metrics).length - valued;
-add("M1", "68 项指标 ＝ 54 已赋值 ＋ 14 待测",
-    Object.keys(metrics).length === 68 && valued === 54 && pending === 14,
+add("M1", "70 项指标 ＝ 56 已赋值 ＋ 14 待测",
+    Object.keys(metrics).length === 70 && valued === 56 && pending === 14,
     `${Object.keys(metrics).length} ＝ ${valued} ＋ ${pending}`);
 
 const phaseSum = val("phase_1_area_sqm") + val("phase_2_area_sqm") + val("phase_3_area_sqm");

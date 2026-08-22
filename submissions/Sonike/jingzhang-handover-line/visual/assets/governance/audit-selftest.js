@@ -44,7 +44,8 @@ const IDS = [
 const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48, rollback_evidence_checks: 12 };
 /* protocol-check-runner.js 里也有一份 ENUM_SCALE 与 FAIL_CLOSED_SMART_LAYER。这里
    刻意再写一份：判据不能与被测对象同处一文件，两份分岔时正向用例即报错。 */
-const ENUM_SCALE = { enum_fields: 17, enum_instances: 300 };
+const ENUM_SCALE = { enum_fields: 18, enum_instances: 360 };
+  const REASON_SCALE = { codes: 5, compat_rows: 4, compat_pairs: 7 };
 const FAIL_CLOSED_SMART_LAYER = ["off", "sandbox_preview", "limited_trial"];
 
 /* ---------------- 运行与临时覆盖层 ---------------- */
@@ -103,7 +104,7 @@ positive("claims-audit.js 全部通过，且恰好跑 55 项、ID 与本文件�
   return null;
 });
 
-positive("protocol-check-runner.js 全部通过，且规模恰为 12 账 / 96 规则 / 48 断言 / 12 回滚证据检查 / 17 枚举字段 / 300 枚举实例，fail-closed 上限未被改动", () => {
+positive("protocol-check-runner.js 全部通过，且规模恰为 12 账 / 96 规则 / 48 断言 / 12 回滚证据检查 / 18 枚举字段 / 360 枚举实例 / 5 理由码 / 7 兼容对，fail-closed 上限未被改动", () => {
   const r = runRunner();
   if (r.code !== 0) return `退出码 ${r.code}，应为 0`;
   if (!r.json || r.json.all_match !== true) return "all_match 不为真";
@@ -121,6 +122,10 @@ positive("protocol-check-runner.js 全部通过，且规模恰为 12 账 / 96 �
     return `枚举实例 ${r.json.enum_instances_checked}，应为 ${ENUM_SCALE.enum_instances}（两份规模常量已分岔）`;
   }
   if (r.json.enum_instances_valid !== ENUM_SCALE.enum_instances) return "有枚举取值越界";
+  if ((r.json.reason_code_catalogue || []).length !== REASON_SCALE.codes) {
+    return `理由码目录 ${(r.json.reason_code_catalogue || []).length} 条，应为 ${REASON_SCALE.codes}（两份规模常量已分岔）`;
+  }
+  if ((r.json.reason_problems || []).length) return `理由码／兼容表有问题：${r.json.reason_problems.slice(0, 2).join("；")}`;
   if (r.json.fail_closed_ok !== true) return "fail_closed_ok 不为真";
   if ((r.json.rollback_evidence_problems || []).length) return "回滚证据一致性有问题";
   const se = r.json.fail_closed_smart_layer_enum || [];
@@ -322,12 +327,29 @@ negRunner("夹具里把回滚演练改成 observed_pass 但 evidence_pointer 留
   (r) => ((r.json && r.json.rollback_evidence_problems || []).some((x) => x.includes("evidence_pointer"))
           ? null : "未报回滚证据不一致"));
 
-negRunner("schema 里删掉一个枚举定义 —— 枚举字段由 17 变 16，比对条数跟着变少但「逐条合法」仍成立",
+negRunner("schema 里删掉一个枚举定义 —— 枚举字段由 18 变 17，比对条数跟着变少但「逐条合法」仍成立",
   { "visual/assets/governance/shift-ledger.schema.json": jsonMutated("visual/assets/governance/shift-ledger.schema.json", (d) => {
       delete d.$defs.scenarioAnchor.properties.confidence.enum;
     }) },
   (r) => ((r.json && r.json.scale_problems || []).some((x) => x.includes("枚举"))
           ? null : "未报枚举规模不符"));
+
+negRunner("schema 的理由码目录删掉一条 —— 目录与枚举分岔，而两处各自「逐条一致」仍成立",
+  { "visual/assets/governance/shift-ledger.schema.json": jsonMutated("visual/assets/governance/shift-ledger.schema.json", (d) => {
+      d.refusal_reason_catalog.codes = d.refusal_reason_catalog.codes.slice(1);
+    }) },
+  (r) => ((r.json && r.json.reason_problems || []).some((x) => x.includes("目录"))
+          ? null : "未报理由码目录与枚举分岔"));
+
+negRunner("夹具里把一条账改成「附条件接受」却把智能层推到限定试用 —— 违反兼容表，而旧 schema 只管 refused ⇒ off 时这是合法的",
+  { "visual/assets/governance/shift-ledger-suite.json": jsonMutated("visual/assets/governance/shift-ledger-suite.json", (d) => {
+      const ta = d.ledgers[0].transfer_attempt;
+      ta.receiver_disposition = "accepted_with_conditions";
+      ta.refusal_reasons = [];
+      ta.smart_layer_state_after_decision = "limited_trial";
+    }) },
+  (r) => ((r.json && r.json.reason_problems || []).some((x) => x.includes("违反兼容表"))
+          ? null : "未报兼容表违规"));
 
 /* ---------------- 执行 ---------------- */
 const results = cases.map((c) => {
