@@ -2,7 +2,7 @@
 
 ## 本包原创成果
 
-`proposal.md`、结构化 JSON/GeoJSON 的方案表达、V13 分析图的自制版式、五张核心图、A3/A0 图册、离线 HTML、节点设计记录与自制图形由本项目的人类协作者与 AI agent 共同整理。最终贡献者姓名、GitHub 登录名和精确模型声明在公开提交前补齐。
+`proposal.md`、结构化 JSON/GeoJSON 的方案表达、V13 分析图的自制版式、五张核心图、A3/A0 图册、离线 HTML、节点设计记录与自制图形由 GitHub 提交者 `varliuvar` 与 OpenAI Codex 共同整理，并由 `varliuvar` 完成人工复核。AI 模型按可核验范围声明为 OpenAI Codex（GPT-5 系列、多任务协作工作流）；未推测无法从运行记录确认的具体子型号。
 
 ## AI 生成视觉
 

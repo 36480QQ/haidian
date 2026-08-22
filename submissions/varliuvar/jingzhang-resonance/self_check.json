@@ -10,16 +10,15 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/varliuvar/jingzhang-resonance/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved",
         "submissions/varliuvar/jingzhang-resonance/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/varliuvar/jingzhang-resonance/assets/figures/key-areas.png: add non-blocking en display counterpart `assets/figures/key-areas.en.png`; submission and review remain allowed",
-        "submissions/varliuvar/jingzhang-resonance/assets/figures/land-use-structure.png: add non-blocking en display counterpart `assets/figures/land-use-structure.en.png`; submission and review remain allowed",
-        "submissions/varliuvar/jingzhang-resonance/assets/figures/metrics-evidence.png: add non-blocking en display counterpart `assets/figures/metrics-evidence.en.png`; submission and review remain allowed",
-        "submissions/varliuvar/jingzhang-resonance/assets/figures/mobility-bluegreen.png: add non-blocking en display counterpart `assets/figures/mobility-bluegreen.en.png`; submission and review remain allowed",
-        "submissions/varliuvar/jingzhang-resonance/assets/figures/site-overview.png: add non-blocking en display counterpart `assets/figures/site-overview.en.png`; submission and review remain allowed",
-        "submissions/varliuvar/jingzhang-resonance/drawings/a0-boards.pdf: add non-blocking en display counterpart `drawings/a0-boards.en.pdf`; submission and review remain allowed",
-        "submissions/varliuvar/jingzhang-resonance/drawings/a3-booklet.pdf: add non-blocking en display counterpart `drawings/a3-booklet.en.pdf`; submission and review remain allowed",
-        "submissions/varliuvar/jingzhang-resonance/visual/index.html: add non-blocking en display counterpart `visual/index.en.html`; submission and review remain allowed"
+        "submissions/varliuvar/jingzhang-resonance/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
+        "submissions/varliuvar/jingzhang-resonance/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
+        "submissions/varliuvar/jingzhang-resonance/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
+        "submissions/varliuvar/jingzhang-resonance/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
+        "submissions/varliuvar/jingzhang-resonance/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
+        "submissions/varliuvar/jingzhang-resonance/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
+        "submissions/varliuvar/jingzhang-resonance/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
+        "submissions/varliuvar/jingzhang-resonance/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
       ],
       "proposal_files": [
         "submissions/varliuvar/jingzhang-resonance/proposal.md"
@@ -82,7 +81,7 @@
       "ai_package_stages": {
         "submissions/varliuvar/jingzhang-resonance": "formal"
       },
-      "total_bytes": 35929148,
+      "total_bytes": 35940465,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -157,6 +156,8 @@
         "standard_matrix_items": 6,
         "design_depth_items": 15,
         "known_metric_refs_required": 5,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 15,
           "standard": 6,
@@ -180,15 +181,14 @@
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
   "next_actions": [
-    "Resolve formal-readiness warning: submissions/varliuvar/jingzhang-resonance/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved",
-    "Add recommended bilingual display material (non-blocking): submissions/varliuvar/jingzhang-resonance/assets/figures/key-areas.png: add non-blocking en display counterpart `assets/figures/key-areas.en.png`; submission and review remain allowed",
-    "Add recommended bilingual display material (non-blocking): submissions/varliuvar/jingzhang-resonance/assets/figures/land-use-structure.png: add non-blocking en display counterpart `assets/figures/land-use-structure.en.png`; submission and review remain allowed",
-    "Add recommended bilingual display material (non-blocking): submissions/varliuvar/jingzhang-resonance/assets/figures/metrics-evidence.png: add non-blocking en display counterpart `assets/figures/metrics-evidence.en.png`; submission and review remain allowed",
-    "Add recommended bilingual display material (non-blocking): submissions/varliuvar/jingzhang-resonance/assets/figures/mobility-bluegreen.png: add non-blocking en display counterpart `assets/figures/mobility-bluegreen.en.png`; submission and review remain allowed",
-    "Add recommended bilingual display material (non-blocking): submissions/varliuvar/jingzhang-resonance/assets/figures/site-overview.png: add non-blocking en display counterpart `assets/figures/site-overview.en.png`; submission and review remain allowed",
-    "Add recommended bilingual display material (non-blocking): submissions/varliuvar/jingzhang-resonance/drawings/a0-boards.pdf: add non-blocking en display counterpart `drawings/a0-boards.en.pdf`; submission and review remain allowed",
-    "Add recommended bilingual display material (non-blocking): submissions/varliuvar/jingzhang-resonance/drawings/a3-booklet.pdf: add non-blocking en display counterpart `drawings/a3-booklet.en.pdf`; submission and review remain allowed",
-    "Add recommended bilingual display material (non-blocking): submissions/varliuvar/jingzhang-resonance/visual/index.html: add non-blocking en display counterpart `visual/index.en.html`; submission and review remain allowed"
+    "Review legacy bilingual compatibility warning: submissions/varliuvar/jingzhang-resonance/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/varliuvar/jingzhang-resonance/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/varliuvar/jingzhang-resonance/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/varliuvar/jingzhang-resonance/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/varliuvar/jingzhang-resonance/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/varliuvar/jingzhang-resonance/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/varliuvar/jingzhang-resonance/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/varliuvar/jingzhang-resonance/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
   ],
   "schema_version": "0.1.0",
   "checks": [
@@ -200,25 +200,25 @@
       "message": "deterministic_validation: PASS"
     },
     {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "professional_review.py",
-      "message": "professional evidence review: PASS"
-    },
-    {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
       "severity": "blocking",
       "target": "spatial_review.py",
-      "message": "spatial review: PASS"
+      "message": "spatial_review: PASS"
     },
     {
       "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "blocking",
       "target": "visual_review.py",
-      "message": "visual packaging review: PASS"
+      "message": "visual_review: PASS"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }
