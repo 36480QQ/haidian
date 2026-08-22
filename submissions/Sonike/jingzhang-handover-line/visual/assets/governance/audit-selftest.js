@@ -39,7 +39,7 @@ const IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1", "Z1",
+  "K1", "K2", "K3", "K4", "J1", "J2", "Z1",
 ];
 const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48, rollback_evidence_checks: 12 };
 /* protocol-check-runner.js 里也有一份 ENUM_SCALE 与 FAIL_CLOSED_SMART_LAYER。这里
@@ -216,6 +216,18 @@ negInput("sources.json 把现行登记的指针改回已作废的历史条目 �
         t.replace("证明 assets/figures/ 下 26 张栅格图件的字形来源（见 FONT-NOTO-RASTER）",
                   "证明 assets/figures/ 下 26 张栅格图件的字形来源（中文见 FONT-STHEITI-RASTER）"));
     }) }, ["J1"]);
+
+  negInput("compliance_matrix 去掉一条规则导出的 standard_ids（WCAG-CONTRAST）—— 本包 2026-08-22 修掉的 26 处缺失里的一处",
+    { "compliance_matrix.json": jsonMutated("compliance_matrix.json", (d) => {
+        const r = d.requirements.find((x) => (x.standard_ids || []).includes("WCAG-CONTRAST"));
+        r.standard_ids = r.standard_ids.filter((s) => s !== "WCAG-CONTRAST");
+      }) }, ["J2"]);
+
+  negInput("compliance_matrix 多挂一处相关性标准 —— 三段分解由 92＋12＋8 变成 92＋12＋9，而「规则导出全部在位」仍成立",
+    { "compliance_matrix.json": jsonMutated("compliance_matrix.json", (d) => {
+        const r = d.requirements.find((x) => x.requirement_id === "agent.5");
+        if (!r.standard_ids.includes("WCAG-CONTRAST")) r.standard_ids.push("WCAG-CONTRAST");
+      }) }, ["J2"]);
 
 /* 最后两例打 runner。 */
 const negRunner = (label, files, want) => negative(label, () => {

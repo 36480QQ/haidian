@@ -539,6 +539,37 @@ for (const x of sources) {
 add("J1", `sources.json 里 ${sup.size} 条已自陈作废的登记，没有被任何现行登记当作现行依据引用（引用须明标历史）`,
     badPtr.length === 0, badPtr.length ? badPtr.join("；") : `作废 ${[...sup].join("、")}；现行条目零处误引`);
 
+/* J2. 矩阵自陈的推导规则。compliance_matrix.json 写着「standard_ids 的下界＝本条
+   report_sections 与 standard_matrix.proposal_sections 的交集」——2026-08-22 复算发现
+   该规则此前只跑了一部分：8 个标准共 26 处应得引用缺失，其中 WCAG-CONTRAST 按规则
+   应挂 7 条、实挂 0 条（全包唯一无人引用的标准）。补齐后由这一项盯着，防止再次漂移。
+   三段分解的规模写死在这里：夹具少几条时「逐条一致」仍会成立而总数变小，
+   所以 N 必须来自被审对象之外（同 protocol-check-runner.js 的 EXPECTED_SCALE）。 */
+const cmJ2 = readPkg("compliance_matrix.json");
+const smJ2 = readPkg("standard_matrix.json");
+const secOfJ2 = new Map((smJ2.standards || []).map((s) => [s.standard_id, new Set(s.proposal_sections || [])]));
+const DEFN_J2 = new Set(["PROJECT-OFFICIAL-ANNOUNCEMENT", "PROJECT-AGENT-OPEN-CALL-TASKBOOK"]);
+let derivedPairs = 0, declaredPairs = 0, defnExtra = 0, relExtra = 0;
+const notInPlace = [];
+for (const r of cmJ2.requirements || []) {
+  const secs = new Set(r.report_sections || []);
+  const derived = new Set();
+  for (const [sid, ps] of secOfJ2) {
+    for (const s of secs) if (ps.has(s)) { derived.add(sid); break; }
+  }
+  derivedPairs += derived.size;
+  const declared = new Set(r.standard_ids || []);
+  declaredPairs += declared.size;
+  for (const sid of derived) if (!declared.has(sid)) notInPlace.push(`${r.requirement_id}:${sid}`);
+  for (const sid of declared) if (!derived.has(sid)) { if (DEFN_J2.has(sid)) defnExtra++; else relExtra++; }
+}
+add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则导出的每一对 (要求,标准) 都已声明，且三段分解与自陈一致（92 规则导出 ＋ 12 定义性挂接 ＋ 8 实质相关性挂接 ＝ 112）",
+    notInPlace.length === 0 && derivedPairs === 92 && declaredPairs === 112
+    && defnExtra === 12 && relExtra === 8,
+    notInPlace.length
+      ? `规则导出但未声明 ${notInPlace.length} 处：${notInPlace.slice(0, 6).join("、")}`
+      : `声明 ${declaredPairs} ＝ 规则导出 ${derivedPairs} ＋ 定义性 ${defnExtra} ＋ 相关性 ${relExtra}`);
+
 /* Z. 元检查：断言检查清单本身没有缺项。
    审计器最危险的失效方式不是「某一项判错」，而是「某一项悄悄没跑」——
    条件式 add() 会让检查总数变少而 all_match 仍为真。2026-08-20 实测过这个洞：
@@ -558,7 +589,7 @@ const EXPECTED_IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1",
+  "K1", "K2", "K3", "K4", "J1", "J2",
   "Z1",
 ];
 {
