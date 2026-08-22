@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "jingzhang-civic-relay",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -23,7 +23,7 @@
     },
     {
       "path": "proposal.md",
-      "role": "narrative",
+      "role": "changelog",
       "required": true,
       "language": "zh",
       "sha256": "a19cbd8a295f709695f77d9e3c6ddc986de6489928feb57b8cfdbd9b79dfcfb0"
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a251ca786d5383baee31d80fc59bfedcbdd289d1a3938e69a0b808f1507c47ab"
+      "sha256": "1da28d7193c595139972aba75ebaee4925a169bad8e4b740699de89e69fb8003"
     },
     {
       "path": "compliance_matrix.json",
@@ -221,13 +221,15 @@
     },
     {
       "path": "risk.json",
-      "role": "risk_register",
+      "role": "other",
+      "role_detail": "risk_register",
       "required": false,
       "sha256": "4b683cc367317ba9cf6e3af08ae954e2b85acaf2e5d6513cb449a2a0a7dae123"
     },
     {
       "path": "spatial.json",
-      "role": "risk_register",
+      "role": "other",
+      "role_detail": "spatial_catalog",
       "required": false,
       "sha256": "289dcbeeda62fd6bfea54b1ea6e0fb618905184f3d5470d14202f34d97620241"
     },
@@ -305,67 +307,67 @@
     },
     {
       "path": "visual/assets/scenario-cards.json",
-      "role": "review_asset",
+      "role": "evidence_data",
       "required": false,
       "sha256": "67114e4b549a2fcde3fbfd9fc3b0d1ab59806d785573f0b5a8e9d284f6b6b512"
     },
     {
       "path": "visual/assets/personas.json",
-      "role": "review_asset",
+      "role": "evidence_data",
       "required": false,
       "sha256": "2c684d991cbd2ed4db36c604f194137beea17c03a1bfb4416d623a53dd8ba6c3"
     },
     {
       "path": "visual/assets/test-protocols.json",
-      "role": "review_asset",
+      "role": "evidence_data",
       "required": false,
       "sha256": "4be9b605aa35e04846aa8376b3e63b4b2786904119db5aa1d8a5a60933928891"
     },
     {
       "path": "visual/assets/action-packages.json",
-      "role": "review_asset",
+      "role": "evidence_data",
       "required": false,
       "sha256": "82e0cabb395faa393a123a434a10c572f62fe65b7d792e51f52030d2e45c7c93"
     },
     {
       "path": "visual/assets/test-fixtures.json",
-      "role": "review_asset",
+      "role": "evidence_data",
       "required": false,
       "sha256": "c7ab72799a16cb8a6c3196a95767a9a8cb96aa04daac418d3fbc70ed51959a89"
     },
     {
       "path": "visual/assets/evaluation-results.json",
-      "role": "review_asset",
+      "role": "evidence_data",
       "required": false,
       "sha256": "dbbda1e92f7b04abebebcf15ad86dff87313180aacc1689ceaedd9fe4b2b1c6f"
     },
     {
       "path": "visual/assets/life-capacity-receipt.example.json",
-      "role": "review_asset",
+      "role": "evidence_data",
       "required": false,
       "sha256": "ed7fa22f493455c603dbf34022601147858ecd71e063504cf8b5b0ac8c3139c6"
     },
     {
       "path": "visual/assets/rights-ledger.json",
-      "role": "review_asset",
+      "role": "evidence_data",
       "required": false,
       "sha256": "e630586c8a777e0f37d4037ba447d0ecd36cfbfe26694b038f4cbf9a875e0790"
     },
     {
       "path": "visual/assets/ai-native-technical-contract.json",
-      "role": "review_asset",
+      "role": "evidence_data",
       "required": false,
       "sha256": "1675064d0f1a3eb777550fbfbca6136abdeebdd9c21b6fb95dd3a3838034ca35"
     },
     {
       "path": "visual/assets/run-evaluation.js",
-      "role": "review_asset",
+      "role": "verification_script",
       "required": false,
       "sha256": "e62a197fa514c27bb50980752323e7f891e11bd41587eadf95d935fd08f5db82"
     },
     {
       "path": "visual/assets/ai-leverage.json",
-      "role": "review_asset",
+      "role": "evidence_data",
       "required": false,
       "sha256": "c346835e44b53afdb8862e145337f0be12bae15584247670a049395e129ced89"
     }
@@ -374,10 +376,6 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
-    "notes": [
-      "Provisional geometry is disclosed and must be recalculated when official polygons are supplied.",
-      "AI evaluation is synthetic and offline; no field performance or live public-service integration is claimed."
-    ],
     "readiness_contract": "persisted-self-check-v1"
   }
 }
