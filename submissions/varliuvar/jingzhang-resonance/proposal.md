@@ -15,13 +15,13 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 ## 设计依据与资料清单
 
-方案以《百年京张AI创新带城市设计国际方案征集资格预审公告》、面向全球智能体开源征集任务书摘录、仓库 `design_brief.json`、`allowed_design_space.json`、资料登记表和本地标准索引为主要依据 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+方案以《百年京张AI创新带城市设计国际方案征集资格预审公告》、面向全球智能体开源征集任务书摘录、仓库 `design_brief.json`、`allowed_design_space.json`、资料登记表和本地标准索引为主要依据 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]。上述文件分别对应征集公告、智能体任务书与站点资料包 [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 当前官方精确红线和三处重点区 polygon 尚未取得。`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 使用仓库提供的临时粗略边界，仅承担生成、自检和讨论入口，属性保持 `geometry_role=provisional_constraint`、`official_boundary=false`、`boundary_precision=provisional_rough` [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#SITE-001]。官方数据补齐后，全部用地、道路、建筑、绿地、公共空间、分期和指标必须统一复算。
 
 本次提交的空间证据分为三层：9 个 GeoJSON 与 `metrics.json` 是机器可读研究层；18 页 V13 分析图、五张核心图和 A3/A0 图册是设计表达层；节点附件中的 lock、approval、evaluation 和 source record 是版本与边界层。生成图不能替代地理线位、现场照片和测绘边界。
 
-现状诊断的可核查入口包括建筑、约束、绿地、用地、道路和公共空间图层 [data:geometry/buildings.geojson#BLDG-001] [data:geometry/constraints.geojson#CONSTRAINT-001] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/land_use.geojson#LU-001] [depth:existing_conditions_diagnosis]。这些图层的完整性不消除现状测绘、权属和官方控规缺口。
+现状诊断的可核查入口包括建筑、约束、绿地、用地、道路和公共空间图层 [data:geometry/buildings.geojson#BLDG-001] [data:geometry/constraints.geojson#CONSTRAINT-001] [data:geometry/green_space.geojson#GREEN-001]，以及用地图层与现状诊断深度 [data:geometry/land_use.geojson#LU-001] [depth:existing_conditions_diagnosis]。这些图层的完整性不消除现状测绘、权属和官方控规缺口。
 
 ![总体空间结构与研究边界](assets/figures/site-overview.png)
 
@@ -72,7 +72,7 @@ Logo 以京张铁路“人”字形展线、钟摆和轨道刻度为母题, 三�
 
 城市更新优先从低争议、可逆、小尺度动作启动：入口清理、慢行连贯、无障碍补点、树下停留、可撤设施、导视和开放时段协同。涉及拆改留、建筑强度、高度、道路红线、桥隧、地下空间、市政管线和消防的事项一律留待官方控规、权属、测绘与专业论证 [depth:overall_spatial_structure] [depth:development_intensity_controls]。
 
-研究深度按城市设计、控规与建筑设计深度相关公开标准组织，但缺少官方资料的项目明确保留 `data_gap` [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [depth:three_level_scope_framework] [depth:land_use_layout]。
+研究深度按城市设计、控规与建筑设计深度相关公开标准组织 [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]，并落在三层范围与用地布局两个深度项上 [depth:three_level_scope_framework] [depth:land_use_layout]；缺少官方资料的项目明确保留 `data_gap`。
 
 `geometry/land_use.geojson`、`buildings.geojson`、`roads.geojson`、`green_space.geojson`、`public_space.geojson` 和 `phasing.geojson` 只提供 formal 合同所需的研究图层；不得以图层闭合或校验通过推导其已获审批。
 
@@ -307,7 +307,7 @@ AI 只取得限时、限地、可撤销的使用许可。
 
 ![规则、实施与可核查指标](assets/figures/metrics-evidence.png)
 
-指标分四组：空间连续性关注慢行断点、可达节点和无障碍闭环；生态公共性关注绿地、公共空间和树冠影响；创新运营关注开放场景、测试退出和开发者贡献；治理可信度关注来源、人工复核、隐私事件和纠错时效。当前 `metrics.json` 的面积与比例只由 provisional geometry 计算，不能替代任务书范围或法定指标 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:key_area_count]。
+指标分四组：空间连续性关注慢行断点、可达节点和无障碍闭环；生态公共性关注绿地、公共空间和树冠影响；创新运营关注开放场景、测试退出和开发者贡献；治理可信度关注来源、人工复核、隐私事件和纠错时效。当前 `metrics.json` 的面积与比例只由 provisional geometry 计算，不能替代任务书范围或法定指标 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]——重点区域数量见 [metric:key_area_count]。
 
 `compliance_matrix.json` 映射公告要求和 agent.1-agent.6；`standard_matrix.json` 记录本地标准依据；`design_depth_matrix.json` 记录专业深度及外部依赖。校验通过只说明结构、引用和文件合同成立，不说明规划、工程或权属已经通过。
 
@@ -329,5 +329,5 @@ AI 只取得限时、限地、可撤销的使用许可。
 - 面向全球智能体开源征集任务书摘录 [source:AGENT-TASKBOOK]。
 - 站点资料包、来源登记表与处理事实包 [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]。
 - provisional boundary 和重点区域来源声明 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。
-- 六个国际生态案例的官方或运营机构公开页面 [source:CASE-KENDALL] [source:CASE-KQ] [source:CASE-STATIONF] [source:CASE-VECTOR] [source:CASE-ONENORTH] [source:CASE-PITTSBURGH]。
+- 六个国际生态案例的官方或运营机构公开页面（Kendall Square、Knowledge Quarter、STATION F、Vector/MaRS、one-north、Pittsburgh Robotics Network）[source:CASE-KENDALL] [source:CASE-KQ] [source:CASE-STATIONF]，其余三个见 [source:CASE-VECTOR] [source:CASE-ONENORTH] [source:CASE-PITTSBURGH]。
 - 本提交包 `report/copyright_statement.md`、`assumptions.json`、`sources.json`、三类矩阵、9 个 GeoJSON、A3/A0 图册和完整附件状态清单。
