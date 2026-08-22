@@ -76,6 +76,8 @@ class AutoReviewQueueTests(unittest.TestCase):
     def test_accepts_score_at_threshold_when_all_gates_pass(self) -> None:
         review = {
             "mandatory_rejection": {"result": "pass"},
+            "recommendation": "formal-review-ready",
+            "can_enter_formal_review": True,
             "gate_checks": {
                 name: {"status": "pass"}
                 for name in [
@@ -91,6 +93,8 @@ class AutoReviewQueueTests(unittest.TestCase):
     def test_low_score_is_not_merged(self) -> None:
         review = {
             "mandatory_rejection": {"result": "pass"},
+            "recommendation": "formal-review-ready",
+            "can_enter_formal_review": True,
             "gate_checks": {
                 name: {"status": "pass"}
                 for name in [
@@ -106,11 +110,49 @@ class AutoReviewQueueTests(unittest.TestCase):
     def test_failed_gate_overrides_high_score(self) -> None:
         review = {
             "mandatory_rejection": {"result": "pass"},
+            "recommendation": "formal-review-ready",
+            "can_enter_formal_review": True,
             "gate_checks": {
                 "deterministic_validation": {"status": "pass"},
                 "spatial_review": {"status": "pass"},
                 "visual_review": {"status": "fail"},
                 "professional_evidence_review": {"status": "pass"},
+            },
+        }
+        self.assertEqual("request-changes", decide(review, {"weighted_score_100": 95}, 60).action)
+
+    def test_multimodal_request_changes_overrides_threshold_score(self) -> None:
+        review = {
+            "mandatory_rejection": {"result": "pass"},
+            "recommendation": "request-changes",
+            "can_enter_formal_review": False,
+            "gate_checks": {
+                name: {"status": "pass"}
+                for name in [
+                    "deterministic_validation",
+                    "spatial_review",
+                    "visual_review",
+                    "professional_evidence_review",
+                ]
+            },
+        }
+        decision = decide(review, {"weighted_score_100": 60}, 60)
+        self.assertEqual("request-changes", decision.action)
+        self.assertIn("multimodal", decision.reason)
+
+    def test_formal_recommendation_without_readiness_is_fail_closed(self) -> None:
+        review = {
+            "mandatory_rejection": {"result": "pass"},
+            "recommendation": "formal-review-ready",
+            "can_enter_formal_review": False,
+            "gate_checks": {
+                name: {"status": "pass"}
+                for name in [
+                    "deterministic_validation",
+                    "spatial_review",
+                    "visual_review",
+                    "professional_evidence_review",
+                ]
             },
         }
         self.assertEqual("request-changes", decide(review, {"weighted_score_100": 95}, 60).action)
@@ -253,6 +295,8 @@ class AutoReviewQueueTests(unittest.TestCase):
             review = {
                 "submission_dir": "submissions/alice/plan",
                 "mandatory_rejection": {"result": "pass"},
+                "recommendation": "formal-review-ready",
+                "can_enter_formal_review": True,
                 "gate_checks": {
                     name: {"status": "pass"}
                     for name in [

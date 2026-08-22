@@ -184,6 +184,12 @@ def decide(review: dict[str, Any], decision: dict[str, Any], threshold: float) -
     failed = sorted(name for name in required if gates.get(name, {}).get("status") != "pass")
     if failed:
         return Decision("request-changes", decision.get("weighted_score_100"), f"failed gates: {', '.join(failed)}")
+    if review.get("recommendation") != "formal-review-ready" or review.get("can_enter_formal_review") is not True:
+        return Decision(
+            "request-changes",
+            decision.get("weighted_score_100"),
+            "multimodal review did not confirm formal-review readiness",
+        )
     score = decision.get("weighted_score_100")
     if not isinstance(score, (int, float)):
         raise WorkerError("AI decision has no numeric weighted_score_100")
