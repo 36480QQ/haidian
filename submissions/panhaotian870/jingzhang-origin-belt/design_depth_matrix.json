@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "proposal_slug": "jingzhang-origin-belt",
+  "generated_date": "2026-08-14",
+  "depth_entries": [
+    {
+      "depth_id": "DD-CONCEPT",
+      "title_zh": "总体概念与命名体系",
+      "title_en": "Overall Concept and Naming System",
+      "status": "complete",
+      "evidence_locations": ["proposal.md#brand_identity_system"]
+    },
+    {
+      "depth_id": "DD-ECOSYSTEM",
+      "title_zh": "AI创新生态体系",
+      "title_en": "AI Innovation Ecosystem",
+      "status": "complete",
+      "evidence_locations": ["proposal.md#ecosystem", "proposal.md#global_cases"]
+    },
+    {
+      "depth_id": "DD-SCENARIOS",
+      "title_zh": "AI+场景设计",
+      "title_en": "AI+ Scenario Design",
+      "status": "complete",
+      "evidence_locations": ["proposal.md#scenario_cards", "proposal.md#test_scenarios"]
+    },
+    {
+      "depth_id": "DD-PUBLIC-SPACE",
+      "title_zh": "公共空间与地标设计",
+      "title_en": "Public Space and Landmark Design",
+      "status": "complete",
+      "evidence_locations": ["proposal.md#landmarks", "proposal.md#heritage_park"]
+    },
+    {
+      "depth_id": "DD-CULTURE",
+      "title_zh": "文化叙事与传播",
+      "title_en": "Cultural Narrative and Communication",
+      "status": "complete",
+      "evidence_locations": ["proposal.md#cultural_narrative", "proposal.md#international_communication"]
+    },
+    {
+      "depth_id": "DD-OPERATION",
+      "title_zh": "长期运营体系",
+      "title_en": "Long-term Operation System",
+      "status": "complete",
+      "evidence_locations": ["proposal.md#event_system", "proposal.md#operation"]
+    },
+    {
+      "depth_id": "DD-LAND-USE",
+      "title_zh": "用地布局",
+      "title_en": "Land Use Layout",
+      "status": "complete",
+      "evidence_locations": ["proposal.md#land_use", "geometry/land_use.geojson"]
+    },
+    {
+      "depth_id": "DD-TRANSPORT",
+      "title_zh": "交通与市政设施",
+      "title_en": "Transportation and Municipal Facilities",
+      "status": "complete",
+      "evidence_locations": ["proposal.md#transportation"]
+    },
+    {
+      "depth_id": "DD-PHASING",
+      "title_zh": "分期实施",
+      "title_en": "Phasing Implementation",
+      "status": "complete",
+      "evidence_locations": ["proposal.md#phasing", "geometry/phasing.geojson"]
+    },
+    {
+      "depth_id": "DD-METRICS",
+      "title_zh": "指标与合规矩阵",
+      "title_en": "Indicators and Compliance Matrix",
+      "status": "complete",
+      "evidence_locations": ["proposal.md#indicators", "metrics.json", "compliance_matrix.json"]
+    }
+  ]
+}
