@@ -7,8 +7,8 @@ bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Drawing on the meta-logic of Laozi's 'The Dao begets One, One begets Two, Two begets Three, Three begets All Things,' this proposal maps the century-long legacy of independent innovation along the Jingzhang Railway onto the spatial genesis of an AI-native city. It presents the spatial structure of 'One Lineage · Two Wings · Three Zones · All Things' and envisions the world's first AI open-source civilization testbed."
-tracks: ["ai-traffic-walkability", "ai-public-space", "ai-culture-narrative"]
-scenarios: ["ai-traffic-walkability", "ai-public-space", "ai-culture-narrative", "ai-ecosystem", "ai-scenario-card"]
+tracks: ["jingzhang-heritage-narrative", "youth-friendly-public-space", "ai-traffic-walkability"]
+scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "robot-delivery-low-speed", "public-safety-operations-review", "enterprise-service-copilot"]
 iteration: "v1.0"
 ---
 
