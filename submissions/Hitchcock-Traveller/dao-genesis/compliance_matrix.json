@@ -187,7 +187,10 @@
         "建筑",
         "核心指标"
       ],
-      "source_ids": [],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
       "assumption_ids": [
         "A-CONTROLS-001"
       ],
@@ -219,7 +222,10 @@
       "visual_sections": [
         "建筑"
       ],
-      "source_ids": [],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
       "assumption_ids": [
         "A-CONTROLS-001",
         "A-BUILDING-001"
