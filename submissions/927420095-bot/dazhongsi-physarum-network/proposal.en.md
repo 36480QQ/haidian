@@ -25,7 +25,7 @@ The Dazhongsi area faces three urban-renewal problems: a fragmented slow-travel 
 
 **Governance mechanism (ordinary path first + graded release G0-G3)**: every AI scenario moving from demonstration to daily use must pass a graded ladder — G0 ordinary path always open / G1 local recomputation / G2 professional re-review / G3 limited on-site window; failing any level falls back to the previous one. Each level keeps a stop condition, reversible measures, and an archivable receipt; the ordinary path is always available and AI only adds reversible gains.
 
-**Feasibility**: road-network municipal cost of RMB 29.655 million (with investment-scope layering, explicitly excluding pipeline relocation / rail civil works / demolition); a phased implementation roadmap (near-term pilot → mid-term rollout → long-term governance, each phase with measurable milestones and acceptance metrics); an approval flow (8 real competent authorities); stakeholder analysis (8 types); economic feasibility (land value capture → tax increment → employment, as an illustration); a metrics system (12 recalculable metrics); and a risk matrix (R-01..06).
+**Feasibility**: road-network municipal cost of RMB 29.655 million (with investment-scope layering, explicitly excluding pipeline relocation / rail civil works / demolition); a phased implementation roadmap (near-term pilot → mid-term rollout → long-term governance, each phase with measurable milestones and acceptance metrics); an approval flow (8 real competent authorities); stakeholder analysis (8 types); economic feasibility (land value capture → tax increment → employment, as an illustration); a metrics system (12 recalculable metrics: 1141.3-hectare site, 12.34% green ratio, 7.33% public-space ratio, 31.1-hectare building footprint, 3 key areas); and a risk matrix (R-01..06).
 
 **Public value**: oriented around "heritage-sensitive, human-machine-coexistent, youth-friendly", implementing the GB 50763-2012 accessibility threshold and sponge-city rain-flood resilience, with an accessibility governance framework covering five population groups.
 
@@ -123,7 +123,7 @@ Based on the public announcement and OSM existing-condition data (qualitative, p
 2. **Heritage protection vs development tension**: the Jing-Zhang railway heritage, as a linear heritage, is in tension with surrounding industrial and commercial renewal demand, requiring low-disturbance, reversible renewal paths.
 3. **Insufficient rail-station coverage**: pedestrian interchange and four-quadrant connectivity around Dazhongsi station (Metro Line 13, an elevated station opened in 2002; transfer to Line 12 available since December 2024, currently out-of-station transfer with the in-station passage pending Line 13 expansion) are insufficient, and station integration with industrial service space needs strengthening.
 
-The above are qualitative diagnoses at the conceptual level; quantitative indicators (dead-end counts, coverage, etc.) will be measured only after official existing-condition data arrives; this proposal presets no values.
+The above are qualitative diagnoses of the **existing condition**; quantitative values for existing dead-end counts and slow-travel coverage await an official existing-condition survey, and this proposal presets none. **The submitted geometry (provisional boundary, recalculable via `self_check_submission.py`)**: 1141.3-hectare design area, 31.1-hectare building footprint, 12.34% green ratio, 7.33% public-space ratio, 3 key areas (see “Metrics, Area Recalculation, and Compliance Matrix”).
 
 ### Renewal Goals (slow-travel stitching · heritage coordination · rail integration · blue-green connectivity)
 
@@ -374,7 +374,7 @@ The main land-use and building evidence is [data:geometry/land_use.geojson#LU-00
 | Blue-green space | Qinghe, Xiaoyue, and park green space lack connectivity | Blue-green slow composite ring connects them | River blue lines and green-space planning |
 | Heritage protection | Single-note display of the Jing-Zhang linear heritage | Low-disturbance renewal, node-based cultural anchors | Protection-scope map |
 
-The "existing" column above is a qualitative judgment based on public material; quantitative indicators will be measured after an official existing-condition survey; this proposal presets no values.
+The "existing" column above is a qualitative judgment based on public material; existing-condition quantitative indicators will be measured after an official survey and this proposal presets none; **recalculable facts of the submitted geometry** (1141.3-hectare design area, 12.34% green ratio, 7.33% public-space ratio, etc.) are given as known values in “Metrics, Area Recalculation, and Compliance Matrix”.
 
 ![Land-use plan ](assets/figures/land_use_plan.png)
 
