@@ -1235,7 +1235,7 @@
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "background_only",
       "usable_for_formal_basis": "participant_self_assessed",
-      "independent_verification": "打开 url，检索“1909年10月2日”“青龙桥”“完全自己勘测”三处原句即可逐条对读；本包对它的处理可用 `grep -c SRC-JINGZHANG-1909 proposal.md` → 2（正文史实表 1 处、参考资料 1 处）——**此前这条声明的是同一个 2，但当时实测已是 3**：任务书总对照表里还有一处，写这条时漏算了。2026-08-21 精简正文删去任务书总对照一节后，实测回到 2，与声明一致；每次改动正文后这条都应重新实测，不要沿用旧数，2026-08-21 精简正文时删去任务书总对照与参考资料两节后实测为 1，已按实测改准），且 `python3 -c \"import json;print('jingzhang_opening_1909' in open('metrics.json').read())\"` → False，确认未进入指标。"
+      "independent_verification": "打开 url，检索「1909年10月2日」「青龙桥」「完全自己勘测」三处原句即可逐条对读。本包对它的处理可当场核验：`grep -c SRC-JINGZHANG-1909 proposal.md` → **2**（第 61 行史实表 1 处、参考资料一节 1 处），且 `python3 -c \"import json;print('jingzhang_opening_1909' in open('metrics.json').read())\"` → False，确认该年份未进入指标。**这条核验说明本身错过两次，值得留个记号。** 第一次：声明 2 而实测已是 3——当时任务书总对照表里还有一处，写这条时漏算了；该节 2026-08-21 精简正文时删去，实测回到 2。第二次（2026-08-22 修）：上一次改动的末尾又写了「删去任务书总对照与参考资料两节后实测为 1」——**参考资料一节并没有被删**（曾误删一次，因触发「missing required section」当轮已完整恢复），所以那句既与同段前面的「→ 2」自相矛盾，数也是错的。**教训：这类「命令 → 期望值」的核验说明，改正文后必须重新实测并把旧句改掉，不能在后面追加一句了事——追加会造出一段自己跟自己矛盾的文字。**"
     },
     {
       "id": "SRC-QINGHUAYUAN-STATION",

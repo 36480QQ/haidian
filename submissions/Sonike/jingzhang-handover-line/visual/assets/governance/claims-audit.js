@@ -668,6 +668,41 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
       probs.length ? probs.join("；") : `expression ${eg.expression}；授权正文两处逐字节相同；未发布条款为上界规则在位`);
 }
 
+/* J3. sources.json 里「`grep -c X <文件>` → N」这类可执行核验声明必须真的等于 N。
+   2026-08-22 修掉一处：SRC-JINGZHANG-1909 的核验字段同段先写「→ 2（史实表 1 处、
+   参考资料 1 处）」，末尾又写「删去任务书总对照与参考资料两节后实测为 1」——参考资料
+   一节并没有被删（曾误删一次、当轮已恢复），所以那段自己跟自己矛盾，数也是错的。
+   成因是上一次改正文后**在旧句后面追加了一句**而没有把旧句改掉。
+   本项按 grep -c 的语义算「命中的行数」（不是出现次数），支持 `\|` 交替；
+   声明条数 4 写死参与退出码——某条声明被悄悄删掉时「逐条一致」仍会成立。 */
+{
+  const srcs = readPkg("sources.json").sources || [];
+  const re = /`grep -c\s+([^\s`]+)\s+([A-Za-z0-9_.\/-]+)`\s*(?:→|->)\s*\*{0,2}(\d+)/g;
+  const claims = [];
+  for (const s of srcs) {
+    for (const [k, v] of Object.entries(s)) {
+      if (typeof v !== "string") continue;
+      let m;
+      re.lastIndex = 0;
+      while ((m = re.exec(v)) !== null) {
+        claims.push({ id: s.id, field: k, token: m[1].replace(/^['"]|['"]$/g, ""), file: m[2], want: Number(m[3]) });
+      }
+    }
+  }
+  const bad = [];
+  for (const c of claims) {
+    let text;
+    try { text = fs.readFileSync(resolveIn(PKG, c.file), "utf8"); }
+    catch (e) { bad.push(`${c.id}: 读不到 ${c.file}`); continue; }
+    const alts = c.token.split("\\|").filter(Boolean);
+    const got = text.split("\n").filter((line) => alts.some((t) => line.includes(t))).length;
+    if (got !== c.want) bad.push(`${c.id}.${c.field}: grep -c ${c.token} ${c.file} 声明 ${c.want}，实为 ${got}`);
+  }
+  add("J3", "sources.json 里可执行的「grep -c X 文件 → N」核验声明逐条成立（按 grep -c 的行计数语义复算），且声明条数恰为 4",
+      bad.length === 0 && claims.length === 4,
+      bad.length ? bad.join("；") : (claims.length !== 4 ? `抽到 ${claims.length} 条声明，应为 4 条` : `4 条逐条相符：${claims.map((c) => c.id + "→" + c.want).join("、")}`));
+}
+
 /* Z. 元检查：断言检查清单本身没有缺项。
    审计器最危险的失效方式不是「某一项判错」，而是「某一项悄悄没跑」——
    条件式 add() 会让检查总数变少而 all_match 仍为真。2026-08-20 实测过这个洞：
@@ -687,7 +722,7 @@ const EXPECTED_IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "G4", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1", "J2", "L1",
+  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3",
   "Z1",
 ];
 {
