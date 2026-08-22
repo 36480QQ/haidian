@@ -39,7 +39,7 @@ const IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "G4", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1", "J2", "Z1",
+  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "Z1",
 ];
 const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48, rollback_evidence_checks: 12 };
 /* protocol-check-runner.js 里也有一份 ENUM_SCALE 与 FAIL_CLOSED_SMART_LAYER。这里
@@ -233,6 +233,17 @@ negInput("sources.json 把现行登记的指针改回已作废的历史条目 �
         const r = d.requirements.find((x) => x.requirement_id === "agent.5");
         if (!r.standard_ids.includes("WCAG-CONTRAST")) r.standard_ids.push("WCAG-CONTRAST");
       }) }, ["J2"]);
+
+  negInput("manifest 里把复制出来的授权正文改一个字 —— 与 author_grant 漂移，而两处各自读起来都通顺",
+    { "manifest.json": jsonMutated("manifest.json", (d) => {
+        d.license.effective_grant.full_text_zh = d.license.effective_grant.full_text_zh.replace("非商业", "非营利");
+      }) }, ["L1"]);
+
+  negInput("manifest 里把「未发布条款更宽时仍按本条授权」那一层删掉 —— 上界变成了可被放宽",
+    { "manifest.json": jsonMutated("manifest.json", (d) => {
+        const eg = d.license.effective_grant;
+        eg.future_terms_rule_zh = eg.future_terms_rule_zh.replace(/更宽/g, "更严");
+      }) }, ["L1"]);
 
   negInput("正文把退役的活动名「维护者之夜」写回《条件分期》一节 —— 本包 2026-08-22 修掉的三套并存里的一套",
     { "proposal.md": textOf("proposal.md").replace("夏季**验证开放日**", "夏季**维护者之夜**") }, ["P11"]);

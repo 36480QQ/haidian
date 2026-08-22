@@ -1997,17 +1997,17 @@
     },
     {
       "expectation_id": "CLAIM_AUDIT",
-      "assertion_zh": "正文里可复算的数值与结构声明共 58 项，逐条与结构化文件一致。含正文↔数据的逐行核对（落点表每一行的类型与东西侧）、断面表算术（含「容器子段不得重复相加」）、三个矩阵的交叉引用完整性，以及一项断言 ID 全集无缺项的元检查 Z1。**Z1 自己也在那份 58 项全集内，且退出码另由一道不走登记函数的结构性守卫决定**——一条检查查不到自己被删掉，所以守卫必须站在检查清单之外。　2026-08-22 另增 G4：四套图纸的每个 ToUnicode CMap 都必须是恒等 bfrange——用 Node 内置 zlib 解开 Flate 压缩的流后逐个检查，防止 v1.11 那种 code→字形索引错映被后续总装静默带回（本包真发生过一次：修好后又被覆盖）。　2026-08-22 另增 P11：四季活动只有一套名称——《年度活动体系》表恰 4 行、四个名字在正文另有引用、三套并存时的退役名（开源交班／维护者之夜／夜班维护者之夜／年度复盘班）零出现。　2026-08-22 另增 J2：核本文件自陈的 `standard_ids` 推导规则——下界＝本条 `report_sections` 与 `standard_matrix.json` 的 `proposal_sections` 之交集。复算发现该规则此前只跑了一部分，8 个标准共 26 处应得引用缺失（`WCAG-CONTRAST` 应挂 7 条实挂 0 条，是全包唯一无人引用的标准），已补齐；三段分解 112 ＝ 92 ＋ 12 ＋ 8 的规模写死在脚本里。　2026-08-22 增 P10：落点表垂距一列的四个统计量（区间／平均／中位／合计）与正文摘要一致，**中位按偶数个取值取第 10、11 项之均值**——此前摘要句写「中位 337」是把第 11 项本身当成中位数，而当时只有区间被钉住。",
+      "assertion_zh": "正文里可复算的数值与结构声明共 59 项，逐条与结构化文件一致。含正文↔数据的逐行核对（落点表每一行的类型与东西侧）、断面表算术（含「容器子段不得重复相加」）、三个矩阵的交叉引用完整性，以及一项断言 ID 全集无缺项的元检查 Z1。**Z1 自己也在那份 59 项全集内，且退出码另由一道不走登记函数的结构性守卫决定**——一条检查查不到自己被删掉，所以守卫必须站在检查清单之外。　2026-08-22 另增 G4：四套图纸的每个 ToUnicode CMap 都必须是恒等 bfrange——用 Node 内置 zlib 解开 Flate 压缩的流后逐个检查，防止 v1.11 那种 code→字形索引错映被后续总装静默带回（本包真发生过一次：修好后又被覆盖）。　2026-08-22 另增 P11：四季活动只有一套名称——《年度活动体系》表恰 4 行、四个名字在正文另有引用、三套并存时的退役名（开源交班／维护者之夜／夜班维护者之夜／年度复盘班）零出现。　2026-08-22 另增 J2：核本文件自陈的 `standard_ids` 推导规则——下界＝本条 `report_sections` 与 `standard_matrix.json` 的 `proposal_sections` 之交集。复算发现该规则此前只跑了一部分，8 个标准共 26 处应得引用缺失（`WCAG-CONTRAST` 应挂 7 条实挂 0 条，是全包唯一无人引用的标准），已补齐；三段分解 112 ＝ 92 ＋ 12 ＋ 8 的规模写死在脚本里。　2026-08-22 增 P10：落点表垂距一列的四个统计量（区间／平均／中位／合计）与正文摘要一致，**中位按偶数个取值取第 10、11 项之均值**——此前摘要句写「中位 337」是把第 11 项本身当成中位数，而当时只有区间被钉住。",
       "evidence_in_package": "visual/assets/governance/claims-audit.js",
       "covered_by_self_check_id": null,
-      "independent_verification_zh": "`node visual/assets/governance/claims-audit.js` 输出「58/58 条声明与包内数据一致」且退出码 0。阴性测试已做成随包脚本，不再是自述：见同目录 audit-selftest.js（AUDITOR_SELFTEST 一条）。**该脚本不在 CI 或 preflight 中被调用**，须手动执行。"
+      "independent_verification_zh": "`node visual/assets/governance/claims-audit.js` 输出「59/59 条声明与包内数据一致」且退出码 0。阴性测试已做成随包脚本，不再是自述：见同目录 audit-selftest.js（AUDITOR_SELFTEST 一条）。**该脚本不在 CI 或 preflight 中被调用**，须手动执行。"
     },
     {
       "expectation_id": "AUDITOR_SELFTEST",
       "assertion_zh": "上面两条自检脚本本身经过回归测试：注入已知缺陷时它们必须退出 1 并报出指定的那一项。**加这一条的理由是本包两次栽在「自检只会通过」上**：一次条件式 add() 让两项检查在正文措辞改动后从清单里消失、脚本报 47/47 通过；一次元检查的 ID 全集不含元检查自己、删掉它后脚本报 48/48 通过。两次都是「检查悄悄没跑」而非「检查判错」，所以判据不能与被测对象同处一文件。共 20 例：2 例正向（含规模与 ID 序列须与本脚本独立记录的那份全集逐位相同）＋ 18 例阴性。　2026-08-21 增三例阴性，打新加的枚举校验与 fail-closed 断言：夹具里把 `assignment_state` 写成不在枚举里的 `assigned` 须报枚举越界；schema 里给 `smart_layer_state_after_decision` 加 `fully_enabled` 须报 fail-closed 断言失败；删掉 schema 里任一枚举定义须报枚举规模不符。　再增一例：夹具里把回滚演练改成 observed_pass 却把 evidence_pointer 留空须报回滚证据不一致。　再增一例：把摘要句的垂距中位改回 337 须报 P10。",
       "evidence_in_package": "visual/assets/governance/audit-selftest.js",
       "covered_by_self_check_id": null,
-      "independent_verification_zh": "`node visual/assets/governance/audit-selftest.js` 输出「32/32 例通过（2 正向 ＋ 30 阴性）」且退出码 0；任何一例未通过即退出 1 并打印该例期望与实得（例如「仍以退出码 0 通过」）。缺陷注入一律写进系统临时目录，**包内文件不被改动**，跑完即删。**该脚本同样不在 CI 或 preflight 中被调用**，须手动执行；已就此向上游提 Issue #3571 建议 participant_preflight.py 支持运行本节声明的自检命令。"
+      "independent_verification_zh": "`node visual/assets/governance/audit-selftest.js` 输出「34/34 例通过（2 正向 ＋ 32 阴性）」且退出码 0；任何一例未通过即退出 1 并打印该例期望与实得（例如「仍以退出码 0 通过」）。缺陷注入一律写进系统临时目录，**包内文件不被改动**，跑完即删。**该脚本同样不在 CI 或 preflight 中被调用**，须手动执行；已就此向上游提 Issue #3571 建议 participant_preflight.py 支持运行本节声明的自检命令。"
     }
   ],
   "self_check_expectations_note_zh": "三个矩阵的 self_check_ids 引用的就是本表的 expectation_id。此前这些标签只在矩阵里出现、包内没有定义，而本包的 G01 闸门声称「三个矩阵里的每一条引用都必须能在包内解析到实体」——该自陈对其中 16 个标签（81 处引用）并不成立。本表把它们逐条定义在矩阵自身，因此引用与定义同文件可解析。covered_by_self_check_id 只取 self_check.json 中真实存在的四个 check_id。",
