@@ -1,0 +1,111 @@
+{
+  "type": "FeatureCollection",
+  "name": "origin_jingzhang_buildings",
+  "metadata": {
+    "proposal_slug": "jingzhang-origin-belt",
+    "coordinate_reference_system": "EPSG:4326",
+    "generated_date": "2026-08-14",
+    "note": "Conceptual building massing. NOT official building plans. All features are conceptual suggestions."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "BLD-TOWER-001",
+      "properties": {
+        "id": "BLD-TOWER-001",
+        "layer": "buildings",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "building_type": "landmark",
+        "name_zh": "源·塔（Origin Tower）",
+        "name_en": "Origin Tower",
+        "concept_height_m": 100,
+        "concept_floors": 25,
+        "primary_function_zh": "AI展览、观景、会议",
+        "primary_function_en": "AI exhibition, observation, conference",
+        "parent_area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.3475, 39.9885]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-GATE-001",
+      "properties": {
+        "id": "BLD-GATE-001",
+        "layer": "buildings",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "building_type": "landmark",
+        "name_zh": "源·门（Origin Gate）",
+        "name_en": "Origin Gate",
+        "concept_height_m": 45,
+        "concept_floors": 10,
+        "primary_function_zh": "门户空间、商业、文化展示",
+        "primary_function_en": "Gateway space, commercial, cultural exhibition",
+        "parent_area_id": "dazhongsi_ai_industry_cluster"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.3485, 39.9469]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-MONUMENT-001",
+      "properties": {
+        "id": "BLD-MONUMENT-001",
+        "layer": "buildings",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "building_type": "landmark",
+        "name_zh": "源·碑（Origin Monument）",
+        "name_en": "Origin Monument",
+        "concept_height_m": 15,
+        "primary_function_zh": "纪念碑、公共艺术",
+        "primary_function_en": "Memorial, public art",
+        "parent_area_id": "zhongzhiyuan_ai_acceleration_area"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.3485, 40.0167]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLD-INNOVATION-001",
+      "properties": {
+        "id": "BLD-INNOVATION-001",
+        "layer": "buildings",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "building_type": "innovation_complex",
+        "name_zh": "源·创综合体",
+        "name_en": "Origin Innovation Complex",
+        "concept_height_m": 60,
+        "concept_floors": 15,
+        "primary_function_zh": "研发办公、众创空间、路演中心",
+        "primary_function_en": "R&D office, maker space, demo center",
+        "parent_area_id": "zhongzhiyuan_ai_acceleration_area"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.349, 40.015],
+            [116.353, 40.015],
+            [116.353, 40.02],
+            [116.349, 40.02],
+            [116.349, 40.015]
+          ]
+        ]
+      }
+    }
+  ]
+}
