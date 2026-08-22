@@ -13,16 +13,32 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 本成果是开放共创的城市设计研究与概念建议，不替代法定规划、测绘、工程设计、权属核验或政府审定。图中 Tokai/Oskyi/GPT-image 等生成内容均为视觉意向；研究点位、临时边界和比例估算不得作为施工放线、审批或现状证明。
 
+## 模型与协作声明
+
+本次提交的工作流协作 agent 为 `zcode`、`Codex`、`Ima`；概念生成由 `Fable`、`DeepSeek`、`Kimi3`、`Hunyuan3`、`OpusT5` 共同完成；详细规划图与设计图由 `Fable5`、`GPT-5.6` 共同完成。上述声明描述协作分工，不改变图件的视觉意向、研究表达和非测绘边界。
+
 ## 设计依据与资料清单
 
 方案以《百年京张AI创新带城市设计国际方案征集资格预审公告》、面向全球智能体开源征集任务书摘录、仓库 `design_brief.json`、`allowed_design_space.json`、资料登记表和本地标准索引为主要依据 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE]。上述文件分别对应征集公告、智能体任务书与站点资料包 [source:SOURCE-REGISTRY] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 当前官方精确红线和三处重点区 polygon 尚未取得。`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 使用仓库提供的临时粗略边界，仅承担生成、自检和讨论入口，属性保持 `geometry_role=provisional_constraint`、`official_boundary=false`、`boundary_precision=provisional_rough` [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#SITE-001]。官方数据补齐后，全部用地、道路、建筑、绿地、公共空间、分期和指标必须统一复算。
 
-本次提交的空间证据分为三层：9 个 GeoJSON 与 `metrics.json` 是机器可读研究层；18 页 V13 分析图、五张核心图和 A3/A0 图册是设计表达层；节点附件中的 lock、approval、evaluation 和 source record 是版本与边界层。生成图不能替代地理线位、现场照片和测绘边界。
+## 提交阅读路径
+
+| 任务 | 直接成果 | 主要入口 | 状态边界 |
+| --- | --- | --- | --- |
+| agent.1 总体概念 | proposal、logo-direction、land-use-structure、A3/A0 | `proposal.md`、`assets/figures/`、`drawings/` | 概念研究 / 无法定红线 |
+| agent.2 创新生态 | 六案例表、生态回路、三站两翼 | proposal 章节、`compliance_matrix.json` | 机制提案 / 无资金或企业承诺 |
+| agent.3 AI+场景 | 14 张卡、六类人群、场景-空间-运营映射 | proposal 场景章节、geometry 图层 | 测试提案 / 无已批准运营 |
+| agent.4 公共空间与地标 | N01-N03、重点区行动图、公共空间规则 | `assets/analysis-18/`、`assets/figures/key-areas.png` | 研究点位图 / 非施工图 |
+| agent.5 文化叙事 | 京张、中关村、AI 文化与身份方向 | proposal、logo、视觉索引 | 叙事系统 / 来源与权利边界仍有效 |
+| agent.6 长期运营 | 分期、年度节奏、暂停/退出/复测规则 | proposal、`geometry/phasing.geojson`、矩阵 | 运营提案 / 无政府或投资承诺 |
+
+本次提交的空间证据分为三层：9 个 GeoJSON 与 `metrics.json` 是机器可读研究层；21 页 A3 文册（含 18 页 V13 分析图）、3 张 A0 展板和五张核心图是设计表达层；节点附件中的 lock、approval、evaluation 和 source record 是版本与边界层。生成图不能替代地理线位、现场照片和测绘边界。
 
 现状诊断的可核查入口包括建筑、约束、绿地、用地、道路和公共空间图层 [data:geometry/buildings.geojson#BLDG-001] [data:geometry/constraints.geojson#CONSTRAINT-001] [data:geometry/green_space.geojson#GREEN-001]，以及用地图层与现状诊断深度 [data:geometry/land_use.geojson#LU-001] [depth:existing_conditions_diagnosis]。这些图层的完整性不消除现状测绘、权属和官方控规缺口。
 
+![AI 原点公共空间效果表达与行动框架](assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png)
 ![总体空间结构与研究边界](assets/figures/site-overview.png)
 
 ## 三层范围工作框架
@@ -330,4 +346,4 @@ AI 只取得限时、限地、可撤销的使用许可。
 - 站点资料包、来源登记表与处理事实包 [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]。
 - provisional boundary 和重点区域来源声明 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。
 - 六个国际生态案例的官方或运营机构公开页面（Kendall Square、Knowledge Quarter、STATION F、Vector/MaRS、one-north、Pittsburgh Robotics Network）[source:CASE-KENDALL] [source:CASE-KQ] [source:CASE-STATIONF]，其余三个见 [source:CASE-VECTOR] [source:CASE-ONENORTH] [source:CASE-PITTSBURGH]。
-- 本提交包 `report/copyright_statement.md`、`assumptions.json`、`sources.json`、三类矩阵、9 个 GeoJSON、A3/A0 图册和完整附件状态清单。
+- 本提交包 `report/copyright_statement.md`、`assumptions.json`、`sources.json`、三类矩阵、9 个 GeoJSON、A3/A0 图册和完整附件状态清单 [source:PACKAGE-MANIFEST]。

@@ -56,6 +56,12 @@
       "usage": "Locked, unlocked, rejected, and pending node artifacts with explicit status records; only locked concept baselines may support the main narrative."
     },
     {
+      "id": "PACKAGE-MANIFEST",
+      "path": "manifest.json",
+      "source_type": "participant_generated_delivery_record",
+      "usage": "Submission package inventory, language declarations, hashes, and review-state record."
+    },
+    {
       "id": "CASE-KENDALL",
       "url": "https://www.kendallsquare.org/",
       "source_type": "background_only_official_operator",
