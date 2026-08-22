@@ -39,7 +39,7 @@ const IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "G4", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "Z1",
+  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "Z1",
 ];
 const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48, rollback_evidence_checks: 12 };
 /* protocol-check-runner.js 里也有一份 ENUM_SCALE 与 FAIL_CLOSED_SMART_LAYER。这里
@@ -244,6 +244,18 @@ negInput("sources.json 把现行登记的指针改回已作废的历史条目 �
         const eg = d.license.effective_grant;
         eg.future_terms_rule_zh = eg.future_terms_rule_zh.replace(/更宽/g, "更严");
       }) }, ["L1"]);
+
+  negInput("sources.json 里把一条「grep -c X proposal.md → N」的 N 改掉 —— 命令还在、期望值已不成立",
+    { "sources.json": jsonMutated("sources.json", (d) => {
+        const e = d.sources.find((x) => x.id === "SRC-JINGZHANG-1909");
+        e.independent_verification = e.independent_verification.replace("→ **2**", "→ **1**");
+      }) }, ["J3"]);
+
+  negInput("sources.json 里把那条核验命令整句删掉 —— 声明条数由 4 变 3，而剩下 3 条仍逐条相符",
+    { "sources.json": jsonMutated("sources.json", (d) => {
+        const e = d.sources.find((x) => x.id === "SRC-JINGZHANG-1909");
+        e.independent_verification = e.independent_verification.replace(/`grep -c SRC-JINGZHANG-1909 proposal\.md`\s*→\s*\*{0,2}2\*{0,2}/, "（核验方式待补）");
+      }) }, ["J3"]);
 
   negInput("正文把退役的活动名「维护者之夜」写回《条件分期》一节 —— 本包 2026-08-22 修掉的三套并存里的一套",
     { "proposal.md": textOf("proposal.md").replace("夏季**验证开放日**", "夏季**维护者之夜**") }, ["P11"]);
