@@ -38,7 +38,7 @@ const IDS = [
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
-  "G1", "G2", "G3", "H1", "I1",
+  "G1", "G2", "G3", "G4", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "J2", "Z1",
 ];
 const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48, rollback_evidence_checks: 12 };
@@ -235,6 +235,35 @@ negInput("sources.json 把现行登记的指针改回已作废的历史条目 �
   negInput("四季表少一行 —— 由 4 行变 3 行，而「逐名一致」与「退役名零出现」都仍成立",
     { "proposal.md": textOf("proposal.md").replace(
         "| 冬 | 年度交接账发布：留下、修改、停用的项目同屏公布 | SHARE→SERVE | 年度交接账与逐项停用原因 |\n", "") }, ["P11"]);
+
+  /* 二进制注入：把一套图纸的 ToUnicode 换回 v1.11 那种 code→字形索引映射。
+     CMap 流是 Flate 压缩的，所以要解压、改、再压回；/Length 会不对但 G4 不读它。
+     overlayWith 传 Buffer 时 Node 忽略 encoding 参数、按二进制写。 */
+  const pdfWithBadCmap = (rel) => {
+    const zlib = require("zlib");
+    const buf = fs.readFileSync(path.join(PKG, rel));
+    let from = 0;
+    for (;;) {
+      const s0 = buf.indexOf("stream", from);
+      if (s0 < 0) break;
+      let b = s0 + 6;
+      if (buf[b] === 0x0d) b += 1;
+      if (buf[b] === 0x0a) b += 1;
+      const e0 = buf.indexOf("endstream", b);
+      if (e0 < 0) break;
+      from = e0 + 9;
+      let t;
+      try { t = zlib.inflateSync(buf.subarray(b, e0)).toString("latin1"); } catch (_) { continue; }
+      if (!t.includes("begincmap") || !t.replace(/\s/g, "").includes("<0000><ffff><0000>")) continue;
+      const broken = t.replace(/<0000>\s*<ffff>\s*<0000>/, "<0020><0020><003f>");
+      const blob = zlib.deflateSync(Buffer.from(broken, "latin1"));
+      return Buffer.concat([buf.subarray(0, b), blob, buf.subarray(e0)]);
+    }
+    throw new Error("找不到可注入的恒等 CMap 流");
+  };
+
+  negInput("把一套图纸的 ToUnicode 换回 code→字形索引映射 —— 本包修好过一次、又被后续总装静默覆盖回来的那处",
+    { "drawings/a0-boards.pdf": pdfWithBadCmap("drawings/a0-boards.pdf") }, ["G4"]);
 
 /* 最后两例打 runner。 */
 const negRunner = (label, files, want) => negative(label, () => {
