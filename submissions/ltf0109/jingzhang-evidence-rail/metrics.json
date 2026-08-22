@@ -45,9 +45,9 @@
   },
   "public_space_ratio": {
    "status": "known",
-   "value": 0.002542,
+   "value": 0.117777,
    "unit": "ratio",
-   "formula": "public_space.area/site.area in EPSG:4548",
+   "formula": "union(public_space.geometry).area/site.area in EPSG:4548",
    "source_files": [
     "geometry/public_space.geojson",
     "geometry/site_boundary.geojson"
@@ -342,14 +342,16 @@
   },
   "public_space_area_sqm": {
    "status": "known",
-   "value": 29015.22,
+   "value": 1344166.894,
    "unit": "sqm",
-   "formula": "sum(public_space.geometry.area) in EPSG:4548",
+   "formula": "union(public_space.geometry).area in EPSG:4548",
    "source_files": [
     "geometry/public_space.geojson"
    ],
    "confidence": "high",
-   "assumptions": []
+   "assumptions": [
+    "含京张遗址公园活力带（GREEN-001 兼作公共空间主轴，D1 修复）"
+   ]
   }
  }
 }
