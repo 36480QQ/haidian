@@ -68,7 +68,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ac2eaa4e96569e52818e900a4b44d04ef13fbdc1b63105ca6e50ca2131071815"
+      "sha256": "135bfa2507482cec5162890578478eb79135c8ab902f8b8c970d7aa331c84ae5"
     },
     {
       "path": "compliance_matrix.json",
@@ -98,7 +98,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "9e0b35430d9529efe3d1deabb1703dbdf90d2ab8afdfca6a53cbe4abde21e993",
+      "sha256": "63f3bfb9ced6d404d5156bc271d94a806090470e3216eb04a673fc2736972fa8",
       "language": "zh",
       "title_zh": "中文提案HTML",
       "title_en": "Chinese proposal HTML"
@@ -107,7 +107,7 @@
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "1402e6546095ce3859ee9702a1546b12de5b3764ba573ca7c4dd0ea291a6aa04",
+      "sha256": "d5ef34e9981db2bc18a430f4a00ee65f28515029b7a9d7c690fc8feadb171fa0",
       "language": "en",
       "translation_of": "report/proposal.html",
       "title_zh": "英文提案HTML",
