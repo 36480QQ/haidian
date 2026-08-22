@@ -12,7 +12,7 @@
     "agent_name": "Codex与人类协作者（提交身份待确认）",
     "model": "agent-declared-model"
   },
-  "generated_at": "2026-08-22T10:06:14.642430Z",
+  "generated_at": "2026-08-22T10:18:16.310689Z",
   "files": [
     {
       "path": "manifest.json",
@@ -233,6 +233,132 @@
       "language": "en",
       "translation_of": "assets/figures/logo-direction.png",
       "sha256": "352b2bdbe8cf633dd009b0801bd50e1c8b35fa3f0574209fb16da78e81822e7f"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_01_context.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "4cbe9f0778ad4fbc69ef6d4b72656500bdcce907bc1d829026fdc7ac407998da"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_02_three_voices.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "755db811df2f3e924864c6c6809e1ee4d8f85cef89d90e89ff48d3f6009e18ee"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_03_users.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "87e88c6724fa736555305f3a35a8a6d1eaea97d8a80fd34c9fd296e6f831caa8"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_04_city_fractures.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "de1d6b8947edba1bf873df03730d4e8d6acccba9efc609ec7e4fd1181dc78b9b"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_05_actions.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "c2ce664684629b89c4833ad2ed8d01abd1fee6709c042fd93619d7fd40de9f05"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_06a_concept_origins.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "0a995c2f4a5d89e52c3522eea4f0a853debe0e25e43c7aeadedff38656f67fe2"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_06b_resonance.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "09da1c96d9a1d45ce852530aa7dc1d45b24ad89530797a07c9f91118dc2ecb2f"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_07_polyphonic_score.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "469251b81c7e343ba7ccda9d416715b46c7a02b0bffc2c325e45d54c5561259c"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_08_spatial_actions.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "3c08add8444ab6d4fdc074cf5210904bb30135bf7aa95751e2519b4786929a43"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_09_overall_structure.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "bd57ce5580c74cdea34491e1dd7cb424ef075ff55b103731aa8546178f39db38"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_10_bluegreen_network.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "68af70380225f292bd68ac849dc72ff0680f0a67596b0025aab792e49c3bd347"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_11_segments_actions.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "c8edda1abefd50a892f2049ad5706fb459dc5dd2c1b58de86fac6efdd66eec3a"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_12_segments_sections.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "56d0529b734a48edf413a2011855edde5c704f1c90e9d2f07411e8eb1e1559f8"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_13_dazhongsi.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "37c01491862a8ec655ae836cdd087f23da6658c1620770a7616702e25ada41ca"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "dacc13e686cf7d81e9ea6d99f1c0e495455ec418dd94c62222eaa91f5d129a2e"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_15_zhongzhi.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "a405f47b4b6a0b31598326366c046c631356df8cba25fb60a6ce04098af426b1"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_16_scene_rules.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "9f66bc628753b222ae3bfb4de838f3b7fd056dd330d2433120ae75d285befaec"
+    },
+    {
+      "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_17_implementation.png",
+      "role": "analysis_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "d58f812c0ed3dda177658f88bcfb98f817e8671d8fc81213e42def9e41fb9271"
     }
   ],
   "validation_claim": {
