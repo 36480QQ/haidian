@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3D · 人字京张 The Switchback</title><style>body{margin:0;background:#0b131d;color:#e8eef4;font-family:'Microsoft YaHei',sans-serif}
+#c{width:100vw;height:82vh;display:block}#hint{padding:10px 6%;font-size:12.5px;color:#8fa3b5}
+nav{padding:8px 6%;font-size:13px}a{color:#4d8bff;text-decoration:none}
+button{background:#121e2b;color:#e8eef4;border:1px solid #1e3040;border-radius:8px;padding:6px 14px;cursor:pointer;margin-right:8px}
+</style></head><body>
+<nav><a href="index.html">← 返回 Back</a> · 三维概念场景 3D concept · <span style="color:#8fa3b5">概念建议，非工程精度</span></nav>
+<canvas id="c" role="img" aria-label="三维概念体量场景"></canvas>
+<div id="hint">
+<button id="rot" aria-label="toggle rotation">旋转 ⏸</button>
+<button id="spin" aria-label="toggle stroke pulse">智轨脉冲 ✨</button>
+键盘：方向键旋转 / +− 缩放 · 若 WebGL 不可用请看 <a href="../assets/figures/key-areas.png">静态图降级</a></div>
+<script src="assets/vendor/three.min.js"></script>
+<script>
+const rm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const R = THREE.MathUtils.degToRad, blds = [[[116.3418459, 40.0066109], 28], [[116.3433098, 40.0066192], 28], [[116.3418369, 40.0075565], 28], [[116.3433007, 40.0075648], 28], [[116.3432917, 40.0085104], 28], [[116.3432826, 40.009456], 28], [[116.3432736, 40.0104016], 28], [[116.3432645, 40.0113472], 28], [[116.3432554, 40.0122928], 28], [[116.3432464, 40.0132383], 28], [[116.3432373, 40.0141839], 28], [[116.3432282, 40.0151295], 28], [[116.3432192, 40.0160751], 28], [[116.343201, 40.0179663], 28], [[116.343192, 40.0189119], 28], [[116.3431285, 40.025531], 28], [[116.3450887, 40.0187513], 66], [[116.3465528, 40.0187596], 66], [[116.3450796, 40.0196969], 66], [[116.3450706, 40.0206425], 66], [[116.3450615, 40.0215881], 66], [[116.3450525, 40.0225337], 66], [[116.3450435, 40.0234793], 66], [[116.3450344, 40.0244248], 66], [[116.3450254, 40.0253704], 66], [[116.3526631, 40.0058155], 34], [[116.3526542, 40.006761], 34], [[116.3526452, 40.0077066], 34], [[116.3526363, 40.0086522], 34], [[116.3540378, 40.0152795], 34], [[116.3540289, 40.0162251], 34], [[116.3451455, 40.006447], 28], [[116.3451364, 40.0073926], 28], [[116.3451274, 40.0083382], 28], [[116.3465823, 40.009292], 28], [[116.3465732, 40.0102376], 28], [[116.3465642, 40.0111832], 28], [[116.3465552, 40.0121288], 28]];
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0x0b131d); scene.fog = new THREE.Fog(0x0b131d, 1800, 5200);
+const cam = new THREE.PerspectiveCamera(50, innerWidth/(innerHeight*0.82), 10, 12000);
+cam.position.set(2600, 2400, 3200);
+const ren = new THREE.WebGLRenderer({canvas: document.getElementById('c'), antialias: true});
+ren.setSize(innerWidth, innerHeight*0.82);
+scene.add(new THREE.AmbientLight(0x8fb4d8, 0.7));
+const sun = new THREE.DirectionalLight(0xffe8c0, 1.1); sun.position.set(3000, 4000, 1500); scene.add(sun);
+// 地面网格（蓝图感）
+const grid = new THREE.GridHelper(7000, 46, 0x1e3040, 0x16222e); grid.position.y = 0; scene.add(grid);
+// 建筑体量（从 GeoJSON 投影为局部坐标）
+const bmat = new THREE.MeshLambertMaterial({color: 0x2e4a63});
+for (const [p, h] of blds) {
+  const x = (p[0]-116.33)*85000, z = (40.0-p[1])*111000;
+  const b = new THREE.Mesh(new THREE.BoxGeometry(96, h, 74), bmat);
+  b.position.set(x, h/2, z); scene.add(b);
+}
+// 撇：绿脉（绿光带）
+const spine = new THREE.Mesh(new THREE.BoxGeometry(160, 14, 6600),
+  new THREE.MeshBasicMaterial({color: 0x3ddc84, transparent: true, opacity: .8}));
+spine.position.set(0, 7, 0); scene.add(spine);
+// 捺：智轨（蓝光带）
+const pulse = new THREE.Mesh(new THREE.BoxGeometry(90, 10, 6400),
+  new THREE.MeshBasicMaterial({color: 0x4d8bff}));
+pulse.position.set(320, 8, -220); pulse.rotation.y = R(-6); scene.add(pulse);
+// 交汇节点
+const node = new THREE.Mesh(new THREE.SphereGeometry(60, 20, 20), new THREE.MeshBasicMaterial({color: 0xe8c35a}));
+node.position.set(120, 40, -100); scene.add(node);
+let rot = !rm, pulsing = !rm, t = 0;
+document.getElementById('rot').onclick = e => {rot = !rot; e.target.textContent = rot ? '旋转 ⏸' : '旋转 ▶'};
+document.getElementById('spin').onclick = e => {pulsing = !pulsing; e.target.textContent = pulsing ? '智轨脉冲 ✨' : '智轨脉冲 ⏹'};
+addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft') scene.rotation.y += .05;
+  if (e.key === 'ArrowRight') scene.rotation.y -= .05;
+  if (e.key === '+' || e.key === '=') cam.position.multiplyScalar(.92);
+  if (e.key === '-') cam.position.multiplyScalar(1.08);
+});
+addEventListener('resize', () => {ren.setSize(innerWidth, innerHeight*0.82)});
+(function loop(){ requestAnimationFrame(loop); t += .016;
+  if (rot) scene.rotation.y += .0015;
+  if (pulsing) { pulse.scale.y = 1 + .25*Math.sin(t*3); pulse.material.opacity = .6 + .4*Math.sin(t*3);
+    pulse.material.transparent = true; node.scale.setScalar(1 + .18*Math.sin(t*3 + 1)); }
+  ren.render(scene, cam); })();
+</script></body></html>

@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a115fdf2c57e5aade54ee6d17dc6a353cd45b23cba1d07b0753f76f0a772bb11"
+      "sha256": "13e05d3d80ed9ce119a80454f486be4b1d18ac1f837a69f2059f1b72eb246f04"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "90934e6595e2cc755ae3ec0be9adf1d1237faa2eb53cd05af64373a489003e0f"
+      "sha256": "59d4dd99cc6bab8a0ad81711ec7d750738185387109e777024ee6b3b107e553f"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -287,7 +287,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
