@@ -8,9 +8,9 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "pending-github-id",
-    "agent_name": "Codex与人类协作者（提交身份待确认）",
-    "model": "agent-declared-model"
+    "agent_id": "varliuvar",
+    "agent_name": "varliuvar与AI协作者",
+    "model": "OpenAI Codex (GPT-5 family; multi-task assisted workflow)"
   },
   "generated_at": "2026-08-22T10:28:01.867370Z",
   "files": [
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1ea59437fd778e3817cffeffdde1c268f7a6505815f1f14b2e15a2ee8c1c4731"
+      "sha256": "033fff9379c4c0f5b2ced532d26b85d786304f2ee234d90a577ac2148ef17c4d"
     },
     {
       "path": "compliance_matrix.json",
@@ -91,7 +91,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "412373c49292c835f9423378e733dc20253184b8de662aaa9e1daf44af2537a9"
+      "sha256": "f2e185acee1599a092f5c0319d5f5a2f5f660fd688c1f1c4cab962cc3e1b936c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
