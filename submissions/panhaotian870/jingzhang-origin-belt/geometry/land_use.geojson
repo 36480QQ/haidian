@@ -1,0 +1,155 @@
+{
+  "type": "FeatureCollection",
+  "name": "origin_jingzhang_land_use",
+  "metadata": {
+    "proposal_slug": "jingzhang-origin-belt",
+    "coordinate_reference_system": "EPSG:4326",
+    "generated_date": "2026-08-14",
+    "note": "Conceptual land use partition. NOT official regulatory planning. All polygons are conceptual suggestions for professional teams to deepen."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "LU-RESEARCH-001",
+      "properties": {
+        "id": "LU-RESEARCH-001",
+        "layer": "land_use",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "land_use_code": "A35",
+        "land_use_zh": "科研用地",
+        "land_use_en": "Research Land",
+        "area_name_zh": "众智园AI研发集群",
+        "area_name_en": "Zhongzhiyuan AI R&D Cluster",
+        "parent_area_id": "zhongzhiyuan_ai_acceleration_area"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.343, 40.015],
+            [116.3485, 40.015],
+            [116.3485, 40.026],
+            [116.343, 40.026],
+            [116.343, 40.015]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-INNOVATION-001",
+      "properties": {
+        "id": "LU-INNOVATION-001",
+        "layer": "land_use",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "land_use_code": "B29",
+        "land_use_zh": "科研设计用地",
+        "land_use_en": "R&D Design Land",
+        "area_name_zh": "AI原点创新走廊",
+        "area_name_en": "AI Origin Innovation Corridor",
+        "parent_area_id": "beijing_ai_origin_community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.342, 39.9835],
+            [116.3475, 39.9835],
+            [116.3475, 39.9935],
+            [116.342, 39.9935],
+            [116.342, 39.9835]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-COMMERCIAL-001",
+      "properties": {
+        "id": "LU-COMMERCIAL-001",
+        "layer": "land_use",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "land_use_code": "B1",
+        "land_use_zh": "商业用地",
+        "land_use_en": "Commercial Land",
+        "area_name_zh": "大钟寺AI体验商业区",
+        "area_name_en": "Dazhongsi AI Experience Commercial Area",
+        "parent_area_id": "dazhongsi_ai_industry_cluster"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.342, 39.944],
+            [116.3485, 39.944],
+            [116.3485, 39.94984],
+            [116.342, 39.94984],
+            [116.342, 39.944]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-GREEN-001",
+      "properties": {
+        "id": "LU-GREEN-001",
+        "layer": "land_use",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "land_use_code": "G1",
+        "land_use_zh": "公园绿地",
+        "land_use_en": "Park Green Space",
+        "area_name_zh": "京张遗址公园主轴",
+        "area_name_en": "Jing-Zhang Heritage Park Main Axis"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.347, 39.939],
+            [116.349, 39.939],
+            [116.349, 40.0265],
+            [116.347, 40.0265],
+            [116.347, 39.939]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-RESIDENTIAL-001",
+      "properties": {
+        "id": "LU-RESIDENTIAL-001",
+        "layer": "land_use",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "land_use_code": "R2",
+        "land_use_zh": "二类居住用地",
+        "land_use_en": "Class II Residential Land",
+        "area_name_zh": "AI人才社区",
+        "area_name_en": "AI Talent Community"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [116.349, 40.0075],
+            [116.354, 40.0075],
+            [116.354, 40.015],
+            [116.349, 40.015],
+            [116.349, 40.0075]
+          ]
+        ]
+      }
+    }
+  ]
+}
