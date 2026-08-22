@@ -27,7 +27,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **可实施性**：路网市政造价 2965.5 万元（附投资口径分层，明确排除管线迁改/轨道土建/拆迁）；分期实施路线图（近期试点 → 中期推进 → 长期治理，每期含可度量里程碑与验收指标）；审批流程（8 类真实主管部门）；参与主体职责（8 类）；经济可行性（土地增值 → 税收增量 → 就业带动示意）；指标体系（12 项可复算指标）；风险矩阵（R-01..06）。
 
-**公共价值**：以「遗产敏感、人机共融、青年友好」为取向，落地 GB 50763-2012 无障碍阈值与海绵城市雨洪韧性，覆盖 5 类人群的无障碍治理框架 [source:GB50763-2012] [source:SPONGE-CITY-GUIDE-2014]。
+**公共价值**：以「遗产敏感、人机共融、青年友好」为取向，落地 GB 50763-2012 无障碍阈值与海绵城市雨洪韧性，覆盖 5 类人群的无障碍治理框架。
 
 **诚实边界**：本方案为概念性城市更新研究，所有空间建议需与法定规划协调并经主管部门审批，不冒充红线、审批几何或已获批声明；建筑高度与开发强度仅作概念建议。
 
@@ -67,17 +67,17 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 本方案作为大钟寺片区的存量更新概念方案，服从并衔接以下已批/在编上位规划框架（仅引用规划名称，不编造批文文号）：
 
-- 《北京城市总体规划（2016年—2035年）》：符合「减量发展」「城市更新」总体方向，路网重构以存量提质、慢行优先为原则 [source:BEIJING-MASTER-PLAN-2035]。
-- 《海淀分区规划（国土空间规划）（2017年—2035年）》：位于「中关村科学城」功能区内，产业定位与科技创新走廊方向一致 [source:HAIDIAN-DISTRICT-PLAN-2035]。
-- 《京张铁路遗址公园规划》：整体规划约 9 km（西直门—北五环），一期已建成开放（2023 年 6 月，清华东路至知春路约 16.8 公顷）；本方案遗产保护边界与其一致，更新建议均在其保护要求内提出，最小干预 [source:JINGZHANG-HERITAGE-PARK-PLAN]。
+- 《北京城市总体规划（2016年—2035年）》：符合「减量发展」「城市更新」总体方向，路网重构以存量提质、慢行优先为原则。
+- 《海淀分区规划（国土空间规划）（2017年—2035年）》：位于「中关村科学城」功能区内，产业定位与科技创新走廊方向一致。
+- 《京张铁路遗址公园规划》：整体规划约 9 km（西直门—北五环），一期已建成开放（2023 年 6 月，清华东路至知春路约 16.8 公顷）；本方案遗产保护边界与其一致，更新建议均在其保护要求内提出，最小干预。
 - 大钟寺地区控制性详细规划（在编/已批）：道路线网与用地建议需与该控规协调，当前为概念研究阶段，具体以正式发布文本为准。
-- 《北京市城市更新条例》（2023 年 3 月 1 日起施行）：更新活动遵循「留改拆」并举、以保留利用提升为主的法定要求，本方案存量更新路径与其一致 [source:BEIJING-URBAN-RENEWAL-REGULATION]。
+- 《北京市城市更新条例》（2023 年 3 月 1 日起施行）：更新活动遵循「留改拆」并举、以保留利用提升为主的法定要求，本方案存量更新路径与其一致。
 
 ⚠ 本方案为概念性城市更新研究，所有空间建议需与法定规划协调并经主管部门审批后方可实施，不构成本方案已获批或已纳入法定规划的声明。
 
 ## 方法论：AI 驱动的路网更新（Bio-Physarum × NSGA-II）
 
-本方案把**生物黏菌自适应网络**（Physarum polycephalum，Tero et al. 2007, 2010）与 **NSGA-II 多目标进化优化**（Deb et al. 2002）引入存量城区路网更新，形成三个可复算的方法创新点 [source:TERO-2007] [source:NAKAGAKI-2000]：
+本方案把**生物黏菌自适应网络**（Physarum polycephalum，Tero et al. 2010）与 **NSGA-II 多目标进化优化**（Deb et al. 2002）引入存量城区路网更新，形成三个可复算的方法创新点：
 
 1. **自适应网络替代静态蓝图**：以公园/地铁/铁路为「养分锚点」，经趋化—适应—生物流衰减生长网络（有效距离 = 阻抗/传导度），得到「高效、抗毁、低穿越」的路网骨架，替代传统按红线一次性画路的静态规划。
 2. **多目标 Pareto 替代单解**：对效率、成本、遗产、覆盖四目标做 NSGA-II 优化（无人工加权），输出 Pareto 前沿而非单一推荐，让「高效率 vs 低成本 vs 不侵遗产」的权衡显式可讨论。
@@ -97,7 +97,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **诚实边界**：遗产目标 f3 在本机人工数字化边界下退化为 f2（f3≡f2），不作独立遗产合规结论；真实运行位于临时边界西约 2–3 公里，故上述骨架作为**方法验证证据**进入图件与指标，不作为场地正式几何、红线或审批依据（见「设计依据」）；算法仅提供数量级与拓扑偏好，具体红线、断面、权属由控规与主管部门批复决定 [depth:existing_conditions_diagnosis]。
 
-**治理与放行（算法 → 落地的边界）**：算法结论只作为设计输入与拓扑偏好，不直接进入日常运营；任何 AI 场景从演示到日常均走分级放行 G0-G3（G0 普通路径常开 → G1 本地复算 → G2 专业复核 → G3 有限现场窗口，见「测试验证场景」），任一级不满足即退回，普通路径始终可用；分级放行与回执机制参照 NIST AI RMF 1.0 的自愿治理框架 [source:NIST-AI-RMF-1.0]，并以赫尔辛基 AI Register [source:CASE-HELSINKI-AI-REGISTER]、阿姆斯特丹 Algorithm Register [source:CASE-AMSTERDAM-ALGORITHM-REGISTER] 与新加坡 AI Verify [source:CASE-SINGAPORE-AI-VERIFY] 的公开透明登记实践为对照。
+**治理与放行（算法 → 落地的边界）**：算法结论只作为设计输入与拓扑偏好，不直接进入日常运营；任何 AI 场景从演示到日常均走分级放行 G0-G3（G0 普通路径常开 → G1 本地复算 → G2 专业复核 → G3 有限现场窗口，见「测试验证场景」），任一级不满足即退回，普通路径始终可用。
 
 ## 三层范围工作框架
 
@@ -190,11 +190,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 智慧城市 | Songdo IBD | 仁川 | 全域传感、中央真空垃圾收集 | 新基建与传感一体化预留；警示需保留有机更新弹性 |
 | 智慧城市 | Amsterdam Smart City | 阿姆斯特丹 | 政企民协作、living lab 试点 | 渐进式更新与多方参与治理 |
 | 智慧城市 | 雄安新区 | 中国河北 | CIM 数字孪生、蓝绿网络、慢行优先 | 数字孪生底座、蓝绿慢行优先 |
-| 交通更新 | 涩谷站街区更新 | 东京 | 轨道站一体化、四象限步行网络（2012–） | TOD 一体化与四象限连通 [source:CASE-SHIBUYA] |
-| 交通更新 | 超级街区 Superilles | 巴塞罗那 | 街区步行化、限速、街道公共空间化（2016–） | 街道步行化重构 [source:CASE-SUPERILLES] |
-| 交通更新 | 自行车桥网络 | 哥本哈根 | 自行车优先路网与专用桥（2006–） | 慢行优先与专用设施 [source:CASE-COPENHAGEN] |
-| 交通更新 | Punggol 数字规划区 | 新加坡 | 整区数字孪生 + 开放数字平台（2018–） | 产学研一体化的数字底座 [source:CASE-PUNGGOL] |
-| 交通更新 | 清溪川复原工程 | 首尔 | 拆除高架、复原河道为蓝绿公共空间（2003–2005） | 蓝绿复原与高架拆除 [source:CASE-CHEONGGYECHEON] |
+| 交通更新 | 涩谷站街区更新 | 东京 | 轨道站一体化、四象限步行网络（2012–） | TOD 一体化与四象限连通 |
+| 交通更新 | 超级街区 Superilles | 巴塞罗那 | 街区步行化、限速、街道公共空间化（2016–） | 街道步行化重构 |
+| 交通更新 | 自行车桥网络 | 哥本哈根 | 自行车优先路网与专用桥（2006–） | 慢行优先与专用设施 |
+| 交通更新 | Punggol 数字规划区 | 新加坡 | 整区数字孪生 + 开放数字平台（2018–） | 产学研一体化的数字底座 |
+| 交通更新 | 清溪川复原工程 | 首尔 | 拆除高架、复原河道为蓝绿公共空间（2003–2005） | 蓝绿复原与高架拆除 |
 
 以上案例的量化指标（面积、投资、覆盖率等）以官方公开资料为准，本节不逐项转述以免误引；引用关系在 `sources.json` 中登记为「公开资料」类型，并标注「待核实」。案例用于方法对照而非直接复制，不构成本场地实施承诺。
 
@@ -222,7 +222,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 怀柔科学城 | 原始创新协同 | 基础算法、大模型等原始创新成果向片区转化 |
 | 未来科学城 | 能源 AI 协同 | 能源数据与研发协同，支撑低碳算力场景 |
 | 经开区 | 硬科技制造协同 | 产业转移与算力辐射，硬科技中试与制造承载 |
-| 京津冀（京张高铁沿线） | 创新走廊协同 | 京张高铁沿线创新带的开放协作与国际传播 [source:JINGZHANG-HSR-2019] |
+| 京津冀（京张高铁沿线） | 创新走廊协同 | 京张高铁沿线创新带的开放协作与国际传播 |
 
 ![区域协同证据图（五大协同方向，概念）](assets/figures/regional_synergy.png)
 
@@ -359,7 +359,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 用地、建筑规模与拆改留方案
 
-用地方案依据国土空间调查、规划、用途管制分类等公开标准表达，形成完整、闭合、无缝的用地分区 [source:LAND-USE-CLASSIFICATION-GUIDE]。建筑方案区分保留、改造、更新、新建或待确认对象，明确建筑基底、功能、规模、风貌、屋顶、体量和高度控制的建议层级。若缺少现状建筑、权属、控规和工程条件，方案只提出方法和待校准清单，不编造拆改留结论 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:retain_renovate_demolish]。
+用地方案依据国土空间调查、规划、用途管制分类等公开标准表达，形成完整、闭合、无缝的用地分区。建筑方案区分保留、改造、更新、新建或待确认对象，明确建筑基底、功能、规模、风貌、屋顶、体量和高度控制的建议层级。若缺少现状建筑、权属、控规和工程条件，方案只提出方法和待校准清单，不编造拆改留结论 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:retain_renovate_demolish]。
 
 用地和建筑的主要证据是 [data:geometry/land_use.geojson#LU-001]、[data:geometry/buildings.geojson#BLDG-001] 和 [metric:building_footprint_area_sqm]。建筑规模和强度指标必须与 `metrics.json` 和图层一致；缺少官方条件时统一使用 `status=unknown`，并在 `reason` / `assumptions` 中说明待补条件，不得用固定数值制造精确感。
 
@@ -408,7 +408,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ![道路断面设计图](assets/figures/road_section.png)
 
-上述断面构成与宽度均为**概念建议值**，非实测、非审批；参考 CJJ 37-2012（2016年版）《城市道路工程设计规范》与 GB 50763-2012《无障碍设计规范》，最终以控规、道路红线与实测路宽为准 [source:CJJ37-2012] [source:GB50763-2012]。
+上述断面构成与宽度均为**概念建议值**，非实测、非审批；参考 CJJ 37-2012（2016年版）《城市道路工程设计规范》与 GB 50763-2012《无障碍设计规范》，最终以控规、道路红线与实测路宽为准。
 
 ## 蓝绿空间、公共空间与城市风貌
 
@@ -493,11 +493,11 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 项目 | 政策/标准依据（真实） | 衔接要点 | 待确认项 |
 | --- | --- | --- | --- |
 | JZ-01 慢行断点缝合 | GB 50763-2012《无障碍设计规范》；《无障碍环境建设条例》（国务院令第 622 号） | 慢行断点与无障碍坡道、盲道连续达标 | 桥下空间权属与交通组织复核 |
-| JZ-02 清河创新界面 | 《海绵城市建设技术指南——低影响开发雨水系统构建（试行）》；GB 50014《室外排水设计规范》 [source:SPONGE-CITY-GUIDE-2014] [source:GB50014] [source:BEIJING-SPONGE-CITY-PLAN] | 蓝绿廊道纳入低影响开发雨水系统 | 河道蓝线、防洪评价 |
+| JZ-02 清河创新界面 | 《海绵城市建设技术指南——低影响开发雨水系统构建（试行）》；GB 50014《室外排水设计规范》 | 蓝绿廊道纳入低影响开发雨水系统 | 河道蓝线、防洪评价 |
 | JZ-03 近校成果转化街 | 《北京市城市更新条例》（2023 年 3 月 1 日施行，留改拆并举） | 存量更新、首层业态、成果转化空间 | 条例适用条款与权属清权 |
-| JZ-04 大钟寺站四象限连通 | GB/T 51328-2018《城市综合交通体系规划标准》；GB 50763-2012 [source:GBT51328-2018] [source:GB50763-2012] | 轨道接驳与慢行一体化 | 站点一体化方案、市政管线迁改 |
+| JZ-04 大钟寺站四象限连通 | GB/T 51328-2018《城市综合交通体系规划标准》；GB 50763-2012 | 轨道接驳与慢行一体化 | 站点一体化方案、市政管线迁改 |
 | JZ-05 端侧算力节点 | 国家及北京市新型基础设施相关政策（具体文件名与文号待官方确认） | 算力节点合规与安全审计 | 能源、算力、安全监管主体 |
-| JZ-06 黏菌路网深化 | 京政发〔1984〕128号；北京市文物局 2018-01-02 公告 [source:JINGZHENGFA-1984-128] [source:BJ-WENWU-2018-01-02] | 遗产边界人工数字化数据的法定复核 | 官方保护范围图则与规划红线（未获取） |
+| JZ-06 黏菌路网深化 | 京政发〔1984〕128号；北京市文物局 2018-01-02 公告 | 遗产边界人工数字化数据的法定复核 | 官方保护范围图则与规划红线（未获取） |
 
 上表仅使用本方案已登记或公开可查证的真实依据；对无法核实确切文号的政策（JZ-03 条例、JZ-05 算力政策）已显式标注「待官方确认」，不虚构文件号。
 
@@ -553,7 +553,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 指标体系、面积复算与合规矩阵
 
-指标体系至少包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态 [depth:metrics_recalculation]；指标口径参照 ISO 37120《可持续城市和社区》的城市服务与生活质量指标框架设计，不替代本地控规指标 [source:ISO-37120]。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标必须给出原因和正式提交前置条件。
+指标体系至少包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态 [depth:metrics_recalculation]。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标必须给出原因和正式提交前置条件。
 
 **方法验证指标（Physarum，不进入正式几何复算）**：方法层证据（167 边、最优效率 19.20、基线 1.143、Run7 冻结目标 2.802、f3≡f2、推荐 Plan03 UDS 80.34）保存于 `metrics.json`，详见「方法论」，因坐标偏移不作为本场地正式空间结论 [metric:physarum_efficiency_index]。
 
@@ -602,7 +602,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | T-02 小月河雨洪韧性 | 小月河沿线蓝绿廊道与透水铺装 | 《海绵城市建设技术指南——低影响开发雨水系统构建（试行）》、GB 50014《室外排水设计规范》 | 推荐方案 Plan03 设计值：透水铺装率 69.1%、绿色渗透率 25.2%（作者 Phase4 输出 `plan_03_fusion_round2`，待官方复核） | 汇水区径流系数核算 + 透水率复核（待河道蓝线与管网数据） |
 | T-03 AI 原点社区可达性 | 北京 AI 原点社区校区-园区-街区慢行缝合 | GB 50763-2012《无障碍设计规范》 | 三处重点区慢行环覆盖社区服务与成果转化节点；无障碍通行连续 | 慢行网络连通度与无障碍连续性核查（待现状路网与权属） |
 
-以上三个场景的量化目标均引用本方案已登记的真实数据（雨洪韧性背景参照 IPCC AR6 城市气候风险框架，不提供本片区实测雨量 [source:IPCC-AR6]）（推荐 Plan03 透水铺装率 69.1%、绿色渗透率 25.2%、167 边方法验证网络等），站点、河道、社区的确切几何与红线待官方数据发布后复核；测试场景清单同步登记于 `simulation.json` 的 `test_scenarios` 字段，计数登记于 `metrics.json` 的 `test_scenario_count`。
+以上三个场景的量化目标均引用本方案已登记的真实数据（推荐 Plan03 透水铺装率 69.1%、绿色渗透率 25.2%、167 边方法验证网络等），站点、河道、社区的确切几何与红线待官方数据发布后复核；测试场景清单同步登记于 `simulation.json` 的 `test_scenarios` 字段，计数登记于 `metrics.json` 的 `test_scenario_count`。
 
 每个场景按「触发条件 → 测试步骤 → 预期结果 → 通过标准」四要素细化如下（均为**建议执行**性质，未实际运行，不构成已通过验证的声明）：
 
@@ -640,7 +640,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 无障碍与包容性设计（GB 50763-2012）
 
-本方案把无障碍与包容性作为路网更新的硬性设计前提，而非附加项。检验依据为《中华人民共和国无障碍环境建设法》（2023 年 9 月 1 日施行）、GB 50763-2012《无障碍设计规范》及《无障碍环境建设条例》（国务院令第 622 号），落到本项目表现为：慢行环与接驳轴的**缘石坡道、盲道、无障碍坡道/电梯、无障碍卫生间、无障碍标识与低位服务设施**在全部更新路段与公共空间连续可达 [depth:traffic_rail_slow_parking]。
+本方案把无障碍与包容性作为路网更新的硬性设计前提，而非附加项。检验依据为 GB 50763-2012《无障碍设计规范》及《无障碍环境建设条例》（国务院令第 622 号），落到本项目表现为：慢行环与接驳轴的**缘石坡道、盲道、无障碍坡道/电梯、无障碍卫生间、无障碍标识与低位服务设施**在全部更新路段与公共空间连续可达 [depth:traffic_rail_slow_parking]。
 
 **五类画像无障碍服务矩阵**：下表把已有人才画像映射到无障碍需求与空间响应；为建议性框架，具体设施配置待现状无障碍调查与正式设计确认。
 
@@ -703,11 +703,33 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | R-05 审批/权属不确定 | 桥下空间、校区、轨道一体化权属与审批未定 | 高 | 部分项目（JZ-01/03/04）推进受阻 | 实施矩阵设暂停/退出/顺延条件，责任主体建议性 | 权属/审批不满足触发条件则暂停或退出 |
 | R-06 造价估算不确定 | 单价为建议参考值，未含管线/土建/拆迁 | 中 | 总投资被低估 | 明确「仅路网市政造价」，不含项显式列出 | 控规/红线/权属到位后另行测算总投资 |
 
-本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施；AI 场景上线均须符合《生成式人工智能服务管理暂行办法》（2023 年 8 月 15 日施行）的算法备案、安全评估与内容责任边界，本方案不声称任何 AI 场景已上线或已备案 [source:GENERATIVE-AI-INTERIM-MEASURES]。所有图片、图纸、图标、数据和代码资产在 `sources.json` 或 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不跟踪评审者行为。
+本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施。所有图片、图纸、图标、数据和代码资产在 `sources.json` 或 `report/copyright_statement.md` 中说明来源、许可和授权状态。HTML 页面不加载远程脚本、远程地图瓦片、远程字体、iframe、表单或外部 API，不跟踪评审者行为。
 
-### 双语一致性核对记录
+### 双语一致性核对记录（人工，19 项）
 
-中英文提案经人工逐项核对（标题、品牌名、数字、限制性声明、表格、图注与图位共 19 项）一致，无遗留分歧；英文品牌名统一使用主选「Centenary Jingzhang AI Innovation Belt」（备选 Haidian Open-City AI Belt，内部代号 Bio-Pulse Symbiosis） [depth:risk_missing_data]。
+中英文提案经人工逐项核对，覆盖标题、品牌名、数字、限制性声明、表格、图注与图位；英文品牌名统一使用主选「Centenary Jingzhang AI Innovation Belt」（备选 Haidian Open-City AI Belt，内部代号 Bio-Pulse Symbiosis）。核对结论：19 项一致，无遗留分歧 [depth:risk_missing_data]。
+
+| # | 核对项 | 原文（zh） | 译文（en） | 修正 | 原因 |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 标题 | 大钟寺片区城市更新实施方案 — 基于 Bio-Physarum 算法洞察的路网重构与空间活化 | Dazhongsi Area Urban Renewal Implementation Plan — Road-Network Restructuring and Spatial Activation Based on Bio-Physarum Algorithm Insights | 已统一「城市更新实施方案」= Urban Renewal Implementation Plan、「算法洞察」= Algorithm Insights | 标题为评分首读信息（conceptual） |
+| 2 | 摘要三大问题 | 慢行系统断裂、遗产保护与开发矛盾、轨道站点覆盖不足 | fragmented slow-travel system / heritage protection vs. development / insufficient rail-station coverage | 无修正，三大问题一一对应 | 摘要先问题后方法（reference） |
+| 3 | 主选英文品牌名 | 主选 Centenary Jingzhang AI Innovation Belt | Centenary Jingzhang AI Innovation Belt | 无修正，全篇统一主选名 | 避免与备选名混用（reference） |
+| 4 | 备选英文品牌名 | 备选 Haidian Open-City AI Belt | Haidian Open-City AI Belt | 无修正，仅作备选标注 | 备选名不得取代主选（reference） |
+| 5 | 内部代号 | 内部代号 Bio-Pulse Symbiosis | Bio-Pulse Symbiosis | 无修正 | 代号中英共用，不翻译（reference） |
+| 6 | 数字：边数 | 167 边骨架 | 167-edge skeleton | 无修正 | 关键量化指标（simulation） |
+| 7 | 数字：最优效率 | 最优效率 19.20 | optimal efficiency 19.20 | 无修正 | 冻结指标，禁改（simulation） |
+| 8 | 数字：透水铺装率 | 透水铺装率 69.1% | permeable paving ratio 69.1% | 无修正 | 口径须一致（simulation） |
+| 9 | 数字：绿色渗透率 | 绿色渗透率 25.2% | green penetration 25.2% | 无修正 | 与 69.1% 成对核对（simulation） |
+| 10 | 数字：推荐方案 | 推荐方案 Plan03 / UDS 80.34 | recommended plan Plan03 / UDS 80.34 | 无修正 | 方案代号中英一致（simulation） |
+| 11 | 数字：骨架长度 | 骨架 8813 m | skeleton 8813 m | 无修正 | 成本与长度口径一致（simulation） |
+| 12 | 限制性声明：审批 | 需与法定规划协调并经主管部门审批后方可实施 | require coordination with statutory planning and approval by the competent authority | 无修正，中英均保留「须审批」 | 禁止「已获批准/背书」表述（conceptual） |
+| 13 | 限制性声明：非红线 | 不冒充红线或审批几何 | never presented as redlines or approval geometry | 无修正 | 硬约束，中英均须出现（conceptual） |
+| 14 | 诚实边界：f3≡f2 | 遗产目标 f3 在本机人工数字化边界下退化为 f2（f3≡f2） | heritage objective f3 degenerates to f2 (f3≡f2) under manual digitization | 无修正 | 方法诚实声明（simulation） |
+| 15 | 方法定位术语 | 方法工具（非核心成果） | method tool (not the core deliverable) | 已统一「方法工具」= method tool | 术语定调（conceptual） |
+| 16 | 表格：六张实施卡 | 六张更新项目实施卡（9 字段，概念建议） | Six Implementation Cards (9 fields, conceptual proposal) | 无修正，字段数 9 中英一致 | 表格字段数与标题同步（conceptual） |
+| 17 | 图注：空间功能协同图 | 三大定位/五大功能/三区两翼协同 | three positionings / five functions / three-zone two-wing synergy | 无修正 | 图注为核心成果定位（conceptual） |
+| 18 | 图注：全人群验证 | 五类弱势人群（含非中文使用者） | five vulnerable groups (incl. non-Chinese speakers) | 已由「四类」改为「五类」并同步英文 | P1.6 新增第 5 类人群（conceptual） |
+| 19 | 图位：区域协同图 | regional_synergy.png 位于「统筹研究范围」节 | regional_synergy.png under Coordinated Research Area | 无修正，图位与章节锚点一致 | 图位错位会致渲染失败（reference） |
 
 ## 三大定位、五大功能与三区两翼协同（agent.2）
 
@@ -899,9 +921,64 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **治理闭环**：障碍事件 → 责任主体分流（市政养护 / 共享单车运营方 / 技术运维 / 政务网格）→ 闭环反馈。本框架以 `dispatch_service.py` 演示该逻辑骨架，所有派单状态均为 `CONCEPTUAL_SIMULATED`，不声明任何真实接口可用性。
 
-## 附录：无障碍智能治理框架（工程细节移出本方案）
+## 附录 A：Haidian Smart Accessibility Framework v3.0
 
-> 本附录为概念建议与参考方案。无障碍智能治理框架（Haidian Smart Accessibility Framework v3.0）的四层架构（L1 终端交互 / L2 城市算力 / L3 边缘感知 / L4 低成本物理）、无障碍路由引擎与派单引擎的完整可运行代码、数据 Schema 及节点叠加层存放于实验工作区 `experiments/phase6_p0_physarum/accessibility_framework/` 供专业团队深化研究；本节不宣称任何硬件已采购、系统已上线或企业合作已达成（框架概述见「无障碍智能治理与导航集成展望」）。
+> 本附录为概念建议与参考方案，供专业团队深化研究。
+
+**四层架构全景（ASCII，概念示意）**：
+
+```
+┌─────────────────────────────────────────────────────────┐
+│ L1 终端交互层                                            │
+│  空间音频耳机 │ 手机 App │ 物理盲文铭牌 │ 语音广播       │
+└───────────────┬─────────────────────────────────────────┘
+                │ 导航指令 / 反馈上报
+┌───────────────▼─────────────────────────────────────────┐
+│ L2 城市算力层                                            │
+│  AdvancedAccessibilityRouter（路由引擎，Dijkstra 阻抗） │
+│  大模型推理（导航语义生成） │ 数据治理（脱敏 / 授权）    │
+└───────────────┬─────────────────────────────────────────┘
+                │ 属性订阅
+┌───────────────▼─────────────────────────────────────────┐
+│ L3 边缘感知层                                            │
+│  RFID 锚点 │ 触觉铺装状态 │ 坡度 / 摩擦系数 │ 临时障碍    │
+└───────────────┬─────────────────────────────────────────┘
+                │ 物理承载
+┌───────────────▼─────────────────────────────────────────┐
+│ L4 低成本物理层                                          │
+│  连续盲道 │ 缘石坡道 │ 触觉铭牌 │ 语音信标       │
+└─────────────────────────────────────────────────────────┘
+```
+
+**各层组件**：
+
+- **L1 终端交互**：以「空间音频」为视障用户主通道，`generate_spatial_audio_vector` 返回 `distance_meters / azimuth_degrees / volume_gain / audio_prompt` 四要素；手机 App 与物理铭牌为低数字能力人群兜底。
+- **L2 城市算力**：`AdvancedAccessibilityRouter` 把路段无障碍属性折算为阻抗权重（概念惩罚模型：无触觉铺装 ×3.5、摩擦系数 <0.6 ×1.8、纵坡 >3% ×1.5、临时障碍 → ∞ 阻断），在「绕行成本 vs 无障碍收益」间做 Pareto 权衡。
+- **L3 边缘感知**：RFID 锚点 + 触觉铺装状态 + 坡度/摩擦系数 + 临时障碍事件，构成 `accessibility_feature.json` 的感知要素；数据来源统一标注 `simulation`，置信度 `provisional`。
+- **L4 低成本物理**：连续盲道、缘石坡道、触觉铭牌、语音信标为「可选叠加」，优先补齐既有缺口，不主张全量替换。
+
+**数据流**：L3 感知 → L2 计算 → L1 交互；反向的「障碍上报」由 L1 经 L2 进入治理闭环派单。所有数据流为概念描述，未接入真实系统。
+
+**与 Bio-Physarum 线网的关系（诚实标注）**：本框架的路径底图与「方法论」的概念线网同源，但无障碍属性为**新增的概念建议层**，未在任何实际场地部署或实测。二者均属规划研究阶段的参考方案，不构成对场地的直接几何继承或已实施声明。
+
+## 附录 B：包容性设计与全人群验证
+
+> 本附录为概念建议与参考方案。与正文「包容性设计：弱势人群画像与降级机制」互补：正文给出人群画像与降级机制，本附录给出「人群 × 四层架构」的对应关系与验证闭环。
+
+**人群 × 架构映射**：
+
+| 人群 | L1 终端 | L2 算力 | L3 感知 | L4 物理 |
+| --- | --- | --- | --- | --- |
+| 老年人（>65） | 大字号、语音 | 低坡度偏好路由 | 坡度/座椅间距感知 | 座椅 ≤100 m、缓坡 |
+| 视障人士 | 空间音频、盲文 | 连续盲道优先路由 | RFID 锚点、触觉铺装 | 连续盲道、触觉铭牌 |
+| 儿童（<12） | 低矮标识、监护 | 慢行优先、避车流 | 过街信号感知 | 连续人行道、隔离慢行 |
+| 低数字能力 | 物理铭牌、电话 | 免 App 导航 | 无需感知 | 物理导视、人工导览 |
+
+**降级机制 × 层级联动**：① 离线替代（L2→L4）：算力失效时切换静态铭牌 + 语音广播；② 人工服务（L1→人工）：社区导览员概念岗位兜底；③ 故障降级（L3→L4）：感知失效时以「历史无障碍属性」静态快照替代；④ 申诉纠错（L1→治理闭环）：问题上报二维码 + 社区电话，不采集个人敏感信息。
+
+**全人群验证闭环（概念建议，非已执行验证）**：以下为建议的验证步骤，非已完成的实测结论——① 现状无障碍调查（盲道连续性/缘石坡道覆盖率，参考 GB 50763-2012）；② 轮椅/盲杖/助听设备用户协同测试；③ 极端天气（雨雪、低摩擦）路由压力测试；④ 数据盲区补测（无传感器节点的物理复核）。以上均需专业团队与相关部门在真实场地执行，本方案不声明已执行。
+
+**过渡说明（工程细节移出本方案）**：无障碍 API 接口规范与边缘节点/模型剪枝属概念原型工程细节，与本方案聚焦的城市更新实施层面关联较弱，已移至赛后开源实验工作区（`experiments/post_competition/` 的 `deployment_guide.md`、`peer_review_round/technical_appendix.md` 等）作为工程参考。本方案正文保留附录 A（无障碍框架概述）与附录 B（包容性设计），并将释放的篇幅用于补强用地规划、断面设计、时序安排与造价细目。
 
 ## 参考资料
 
@@ -913,39 +990,4 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - data/processed/agent_fact_pack.md
 - Tero A., Takagi S., Saigusa T., et al. Rules for biologically inspired adaptive network design. *Science*, 327(5964): 439–442, 2010. https://doi.org/10.1126/science.1177894
 - Deb K., Pratap A., Agarwal S., Meyarivan T. A fast and elitist multiobjective genetic algorithm: NSGA-II. *IEEE Transactions on Evolutionary Computation*, 6(2): 182–197, 2002. https://doi.org/10.1109/4235.996017
-**法规与标准依据（以公开条文为准，具体以主管部门正式文本为准）**：
-- 《北京城市总体规划（2016年—2035年）》 [source:BEIJING-MASTER-PLAN-2035]
-- 《海淀分区规划（国土空间规划）（2017年—2035年）》 [source:HAIDIAN-DISTRICT-PLAN-2035]
-- 《京张铁路遗址公园规划》 [source:JINGZHANG-HERITAGE-PARK-PLAN]
-- 京张高铁（2019年12月30日开通） [source:JINGZHANG-HSR-2019]
-- 《北京市城市更新条例》（2023年3月1日施行） [source:BEIJING-URBAN-RENEWAL-REGULATION]
-- 《中华人民共和国无障碍环境建设法》（2023年9月1日施行） [source:ACCESSIBILITY-LAW-2023]
-- GB 50763-2012《无障碍设计规范》 [source:GB50763-2012]
-- 《无障碍环境建设条例》（国务院令第622号） [source:ACCESSIBILITY-ENV-REGULATION]
-- 《海绵城市建设技术指南——低影响开发雨水系统构建（试行）》 [source:SPONGE-CITY-GUIDE-2014]
-- 《北京市海绵城市专项规划（2016年—2030年）》 [source:BEIJING-SPONGE-CITY-PLAN]
-- GB 50014《室外排水设计规范》 [source:GB50014]
-- GB/T 51328-2018《城市综合交通体系规划标准》 [source:GBT51328-2018]
-- CJJ 37-2012《城市道路工程设计规范》（2016年版） [source:CJJ37-2012]
-- 《国土空间调查、规划、用途管制用地用海分类指南（试行）》 [source:LAND-USE-CLASSIFICATION-GUIDE]
-- 京政发〔1984〕128号 / 北京市文物局2018年1月2日公告 [source:JINGZHENGFA-1984-128] [source:BJ-WENWU-2018-01-02]
-- 《生成式人工智能服务管理暂行办法》（2023年8月15日施行） [source:GENERATIVE-AI-INTERIM-MEASURES]
-
-**方法文献与国际框架**：
-- Tero et al. 2007, J. Theor. Biol. 244(4):553-564 [source:TERO-2007]
-- Nakagaki et al. 2000, Nature 407(6803):470 [source:NAKAGAKI-2000]
-- NIST AI Risk Management Framework 1.0 (2023) [source:NIST-AI-RMF-1.0]
-- ISO 37120《可持续城市和社区》 [source:ISO-37120]
-- IPCC AR6（2021-2022） [source:IPCC-AR6]
-
-**案例（公开报道，量化指标待官方核实）**：
-- 涩谷站街区更新（东京） [source:CASE-SHIBUYA]
-- 巴塞罗那超级街区 Superilles [source:CASE-SUPERILLES]
-- 哥本哈根自行车桥网络 [source:CASE-COPENHAGEN]
-- 新加坡 Punggol 数字规划区 [source:CASE-PUNGGOL]
-- 首尔清溪川复原工程 [source:CASE-CHEONGGYECHEON]
-- 赫尔辛基 AI Register [source:CASE-HELSINKI-AI-REGISTER]
-- 阿姆斯特丹 Algorithm Register [source:CASE-AMSTERDAM-ALGORITHM-REGISTER]
-- 新加坡 AI Verify [source:CASE-SINGAPORE-AI-VERIFY]
-
 - 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]
