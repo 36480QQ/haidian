@@ -489,6 +489,10 @@ The eight personas are not a side-by-side list. This scheme lets one of their jo
 
 This journey is echoed throughout the rest of the text: scenario S02 in Chapter 6 states its failure-first boundary, S12 public veto carries its appeal channel, and X08 removal reserve guarantees the device can be withdrawn without depending on later funding. A reviewer does not need to understand every mechanism; walking through Zheng Jie's morning once is enough to see what this belt is arguing for.
 
+![Origin Force node full lifecycle: one AI product completes the test—release—use—return loop, the public main line stays open, and the AI side line can be stopped, withdrawn and restored](assets/figures/origin-force-lifecycle.svg)
+
+*Figure · Origin Force node full lifecycle. The four stages map to the three questions — test to "power up", release to "can stop", use to "can question", return turning failure into the next test condition; the public main line remains fully usable after a device is withdrawn.*
+
 ### Eight narrative landmarks
 
 The task of a landmark on this belt is not to be a photo spot but to **turn abstract technical activity into something the body can experience**. Eight landmarks are distributed along the belt, all free, without booking and without any spending threshold, and each carries an explicit rule of use that prevents it from decaying into a monument. The three most important are the Data Airing Ground, the Wall of Firsts and the Decommissioning Square. The first hangs operating data in the open, the second records events without grading them, and the third gives a dignified public place to **deliberately dismantle a failed intelligent facility**. A corridor of innovation that reserves no space for failure will only accumulate legacy systems nobody dares switch off.
@@ -1032,6 +1036,24 @@ This subsection answers the review's request on *implementability* by adding an 
 **Professional-review triggers**: any public AI touchpoint triggers a third-party professional review when any of the following occurs — (1) the algorithm impact assessment (X15) expires or is rejected; (2) civic veto votes reach the threshold (X16); (3) a low-speed-device incident, or noise / waste-heat monitoring near residences breaches limits (X12); (4) the data-trust晾晒 record (X14) shows an unauthorised call. Operation stops until review passes.
 
 **Passive-safety mode**: every public AI touchpoint defaults to a *degrade-first* state — when the model is unavailable it falls back to human windows and paper / voice channels, and never reduces pedestrian width by introducing smart devices; the reversible land covenant (X02) and reversibility covenant (X16) guarantee restoration on failure, leaving no half-built project. The phase-1 minimum pilot package is premised on this: connect first, then load, so the completed part is always a usable public space [depth:phasing_implementation].
+
+### The fourteen-day minimum pilot of an Origin Force node: day-by-day responsibility from D-30 to D14
+
+The fourteen-day pilot does not pursue scale. It answers one question: **can a problem raised by a real user complete the "power up → stop → question" loop, and return to R&D with a new test condition**. The suggested ceiling remains one problem, one designated device, one low-speed test pocket and one always-open barrier-free public path; exact dimensions, distances, speeds and headcounts must await official boundaries, on-site measurement and risk analysis, and are not pre-filled by a conceptual scheme.
+
+| Day | Responsibility on duty | Required action | Pass evidence | Immediate stop / blocker |
+| --- | --- | --- | --- | --- |
+| D-30 | Candidate site and operating lead | Fix site, insurance, safety and accessibility review roles | Responsibility list and fields to sign | Any responsibility unclaimed |
+| D-7 | Site lead + accessibility reviewer | Complete survey, notice-comprehension test, normal-state restoration drill | Break map, notice test, restoration checklist | Barrier-free spine interrupted or restoration failed |
+| D0 | Product team + independent reviewer | Freeze version, re-run synthetic conditions | Reproducible desktop record | Condition, version or script mismatch |
+| D1–D3 | Site duty + safety stop | Closed test (public does not enter the machine pocket) | Duty, stop, boundary, event records | Out-of-bounds, loss of link or takeover failure |
+| D4 | Independent safety reviewer | Independent re-test and test-ticket decision | Dual signature and unclosed defects | Cannot reproduce or defect hidden |
+| D5–D7 | Rights reviewer + release lead | Check rights, version, limits and withdrawal path | Release-ticket candidate | Unclear rights, version mismatch or no withdrawer |
+| D8–D12 | Public service + accessibility duty | Limited public use, no-AI service in parallel | Opening check, complaint tickets, service log | Human absent, substitute service broken, or major objection |
+| D13 | Public service + data-rights reviewer | Publish de-identified problems, group divergence, restoration evidence | Public problem list | Accident, complaint or divergence omitted |
+| D14 | Three-station sign-off + user/accessibility reviewer | Decide continue, modify or RETURN | Public verdict | Ending the activity must not substitute for a formal decision |
+
+The fourteen days do not renew by default. PASS allows only the same version, the same boundary and the same use to enter the next time-limited review; HOLD keeps the responsibility point facing the public main line; RETURN executes, in order, power-down stop, moving the device out along the station's withdrawal path, withdrawing the release/trial status, restoring ordinary use and generating a new test task. The "Zheng Jie's morning rush" in Chapter 5 is a concrete unfolding of D8–D12 in this table: a public-use failure triggers removal and generates a new condition — "when device docking, a watching crowd and stroller priority happen at once, how is public clearance maintained" — which returns to D0 to be re-run.
 
 ### Annual events and the open ecosystem
 
