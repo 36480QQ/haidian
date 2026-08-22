@@ -16,7 +16,7 @@ iteration: "v2.0"
 
 > **The question of our time: when AI can compute the city, does the city still need to be designed?**
 > Our answer: yes — but the designer's role has changed. **No longer draw blueprints — set the rules by which the city grows.**
-> The Jing-Zhang Hyper Line in one line: **an urban belt that grows by itself** — not planned, but grown out of the data.
+> The Jing-Zhang Hyper Line in one line: **the world's first urban belt that grows by itself** — not planned, but grown out of the data.
 
 In 1909, facing the extreme gradient of Badaling, Zhan Tianyou did not "build a flatter line" — he invented the switchback, **letting the train find its own path within the constraint**.
 
@@ -47,22 +47,6 @@ The entire work of this proposal is to walk that "let the city grow by itself" s
 | Adverse reading? | **Stitching does not change network λ** (24.76%→24.76%); redundancy R rises 0.826→0.870 (more mixed, not more "precise") | c32 K008 [metric:lambda_net_pct_stitched] + c29 redundancy [metric:redundancy_R_after] |
 | **Is this another blueprint?** | **No. This is a system that produces plans** — change the input, the output follows; red lines arrive, the whole package recalculates | All computation scripts + formulas registered; annual EI re-run mechanism; provisional→verified upgrade path |
 
-| Task-book 11 items (announcement 1.5) | Where this plan lands |
-|---|---|
-| 1 World-class AI innovation ecosystem | 1+X+1 full stack, three zones two wings, 18 factories / 32 chips |
-| 2 New urban form for new productive forces | Jobs-housing entanglement, CA unlock, 120 m modules |
-| 3 High-quality urban district for global AI talent | 178,400 m² talent apartments, park-like livability |
-| 4 Jing-Zhang heritage park vitality belt | Main spine, seven stitches, timeline name wall |
-| 5 Transport / rail / municipal & new infrastructure | Graded road network, seven rail stations, municipal system proposal |
-| 6 Fine-grained key-area design | Three zones four-piece set, nine-page node studies, A6 cards |
-| 7 Overall concept / naming / visual / logo | THE EMERGENT BELT, the Third Line, the superlinear-line logo |
-| 8 ≥10 scenario cards / 3 industry test scenarios / 5 user personas | 12 scenario cards (4 industry-verified), seven user groups |
-| 9 AI public space / AI-native formats / ≥3 pilgrimage landmarks | Three pilgrimage landmarks, AI-native interface |
-| 10 Three-culture fusion narrative | Origin layer / growth layer / future layer |
-| 11 Global events / developer community / brand assets | Developer festival, honor wall, emergent-brain annual report |
-
-**Public-interest floor (stated up front)**: all seven user groups are covered (frontline workers included); vulnerable groups hold a veto — any scenario unusable by a vulnerable group triggers HOLD, and no average improvement offsets a single group's failure; every AI scenario carries an **AI-free equivalent path** — remove the AI, and the city still works.
-
 **Six-ring navigation**: Worldview (vision / dual clock / seven principles) → Diagnosis (five-scientist consultation / syntax / LUTI / ecology) → Mechanism (three causal laws) → Prescription (master plan / key areas / subsystems) → Verification (three-model cross-check / three gates / EI) → Operation (emergent brain / investment / metrics / conclusion). Each chapter ends with a "Ring conclusion →" that passes its output to the next ring.
 
 **Naming**: THE EMERGENT BELT — Jing-Zhang Hyper Line (Hyper = superlinear β>1; Emergent = bottom-up emergence). Logo: "the superlinear line" — a straight railway curving upward.
@@ -75,7 +59,7 @@ The entire work of this proposal is to walk that "let the city grow by itself" s
 
 ## Vision & Goals (Worldview ring)
 
-**Vision (three heights, one goal) — with THE EMERGENT BELT as the paradigm**: make Centennial Jing-Zhang an AI innovation belt fully designed by urban science — computable, evolvable, human-serving — a belt that truly EMERGES: not drawn, but grown by rules (a superlinear soul on a sublinear skeleton). Others submit "blueprints"; we submit a "recursive city operating system" — a living system where inputs change, outputs follow; red lines arrive, the whole package recalculates. Asked "how do we know the belt succeeded in five years", our answer is not adjectives but four numbers: percolation giant fraction ≥0.90, syntax anchor integration gain ≥30%, jobs-housing entropy ≥+4%, EI recomputed and published annually [metric:percolation_giant_fraction_design].
+**Vision (three heights, one goal) — with THE EMERGENT BELT as the paradigm**: make Centennial Jing-Zhang the world's first AI innovation belt fully designed by urban science — computable, evolvable, human-serving — a belt that truly EMERGES: not drawn, but grown by rules (a superlinear soul on a sublinear skeleton). Others submit "blueprints"; we submit a "recursive city operating system" — a living system where inputs change, outputs follow; red lines arrive, the whole package recalculates. Asked "how do we know the belt succeeded in five years", our answer is not adjectives but four numbers: percolation giant fraction ≥0.90, syntax anchor integration gain ≥30%, jobs-housing entropy ≥+4%, EI recomputed and published annually [metric:percolation_giant_fraction_design].
 
 **The dual clock**: the high-frequency city ticks in seconds/days/months (25,476 Amap POIs are its heartbeat); the low-frequency city settles in years/decades (control plans, red lines, property rights are its skeleton). A design that sees only one clock mistakes transient phenomena for permanent structure, or permanent constraints for ignorable ones.
 
@@ -240,17 +224,17 @@ Functional deviation (c8) five deficit categories: finance −63%, research −4
 
 **Spatial narrative: the spine is not a line — it is an emergent spatial structure.** Learning from the High Line's "slow linear wander" and Superkilen's "three-color rhythm", the spine is not a uniform corridor but a sequenced composition — three movements (three areas) each with a spatial character, seven notes (seven stitches) each with a distinct entrance. But the true organizing principle is not "rhythm" — it is **recursion**: the embedded rails are the invariant ground rule; the functional modules above (scenario cards) are cells that can be born, closed, and replaced. Space is not designed — it is grown from rules. The detailed designs below are not "final states" but "initial conditions" — given the rules, space self-organizes through use.
 
-**Three original spatial prototypes (not style labels — verifiable spatial mechanisms):**
+**Three world-first spatial prototypes (not style labels — verifiable spatial mechanisms):**
 
-### Prototype 1 · The AI Test Garden (Zhongzhiyuan) — a district that hides its labs inside a garden
+### Prototype 1 · The AI Test Garden (Zhongzhiyuan) — the world's first district that hides its labs inside a garden
 
 **Mechanism: test pods × terrain nesting.** Test pods are not labs inside buildings — they are glass vessels in the landscape: semi-buried earth-sheltered pods (embedded), under-eave shallow pods (light-touch), and freestanding glass pods (showcase). Three nesting modes make the act of testing itself part of the garden scenery. **Plants as sensors**: the planting bands double as an environmental monitoring network (temperature / humidity / air / soil data streamed live to tests) — research behavior and landscape maintenance become one. **Boundary-less testing**: developers test on real streets, gardens, and waterfronts — the entire 1.93 km² is an open laboratory, with controlled boundaries only around the test core. **Verifiable support**: CA emergence confirms commercial clustering along the 300m stitch attractors (15 cells → commercial, lat. 40.011–40.016) — the spatial coupling of test band and commercial catalyst is an emergent result, not a plan [metric:ca_intervention_change].
 
-### Prototype 2 · The Heritage Living Room (Origin Community) — an urban living room organized around a century-old station as its fireplace
+### Prototype 2 · The Heritage Living Room (Origin Community) — the world's first urban living room organized around a century-old station as its fireplace
 
 **Mechanism: centrifugal wrapping.** The innovation street, gallery, market, and cafés are not lined along streets — they wrap **centrifugally around the 1909 Qinghuayuan Station relic**: from any point in the living room one can see the station; heritage becomes the organizing core, not scenery. **Fireplace effect**: the station relic carries no commercial function — it carries "presence": winter warm-light seating, the station clock tolling on the hour, night silhouette lighting — giving the room a spiritual core. **Porch interface**: university walls become see-through galleries (the room's bookshelf); campus and living room are mutually visible — students walk out and walk in. **Verifiable support**: syntax computation fixes the room's circulation — Xueyuanqiao (current hub) = main entrance, Wudaokou (strongest after stitching, +43%) = main activity zone, Qinghuayuan-West (the task-book-named station) = secondary entrance — circulation emerges from 5,720 nodes of computation [metric:syntax_integration_gain_pct].
 
-### Prototype 3 · The Station-City Shopwindow (Dazhongsi) — a two-way display interface between station and city
+### Prototype 3 · The Station-City Shopwindow (Dazhongsi) — the world's first two-way display interface between station and city
 
 **Mechanism: the two-way shopwindow.** The arcade interface shows the city "what is happening in the belt" (AI demo windows / achievement exhibits / test live-feeds) on one side, and shows the belt "what the city offers" (commerce / services / culture) on the other — the stitch bridge is not a crossing facility, it is an **exchange surface**. **Ground-floor fully open**: the quadrant stitching's ground floor has no walls — arcade + eave + pilotis, three open interfaces; flows pass through rather than detour. **Night conversion**: commuter passage by day; evening classes / exhibitions / night market after dark — 12-hour two-sided operation. **Verifiable support**: quadrant pedestrian-stitch construction (green bridge 5.5m clearance / 6m deck + station-hall underpass 8m connecting level + arcade setback 3m / 3.6m height) + CA-emergent exchange interface (11 cells, lat. 39.944–39.948: 8 commercial + 3 research) [metric:poi_dazhongsi_int_pct].
 
