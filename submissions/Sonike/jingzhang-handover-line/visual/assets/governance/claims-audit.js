@@ -416,6 +416,50 @@ add("G2", "正文的 [standard:] 标记全部能在 standard_matrix.json 里解�
 add("G3", "正文的 [depth:] 标记全部能在 design_depth_matrix.json 里解析到",
     badDep.length === 0, badDep.length ? badDep.join("、") : `${usedDep.length} 个全部命中`);
 
+/* G4. 四套图纸的 ToUnicode 必须是恒等映射。2026-08-22 修好一处真错：v1.11 用
+   Ghostscript 换嵌中文字体时生成的 ToUnicode 写的是 code→字形索引（<0020>→<003f>、
+   <0030>→<004f>、<6eda>→<4aff>），渲染正确但文本抽取全是乱码——四套图纸里凡用 CID
+   中文字体排的文字都受影响，英文本里错映成拉丁形状（ihmfLyg`mf 应为 JING-ZHANG）。
+   **这处此前被修过一次又被后续总装静默覆盖回来**，所以需要一道回归守卫：本项直接读
+   PDF 字节、用 Node 内置 zlib 解开 FlateDecode 流，凡含 begincmap 的流都必须只有一条
+   恒等 bfrange。不引入第三方依赖。 */
+{
+  const zlib = require("zlib");
+  const PDFS = ["a0-boards.pdf", "a3-booklet.pdf", "a0-boards.en.pdf", "a3-booklet.en.pdf"];
+  const bad = [];
+  let cmapCount = 0;
+  for (const name of PDFS) {
+    let buf;
+    try { buf = fs.readFileSync(resolveIn(PKG, path.join("drawings", name))); }
+    catch (e) { bad.push(`${name}: 读不到（${e.code}）`); continue; }
+    let from = 0;
+    for (;;) {
+      const s0 = buf.indexOf("stream", from);
+      if (s0 < 0) break;
+      let b = s0 + 6;
+      if (buf[b] === 0x0d) b += 1;
+      if (buf[b] === 0x0a) b += 1;
+      const e0 = buf.indexOf("endstream", b);
+      if (e0 < 0) break;
+      from = e0 + 9;
+      const raw = buf.subarray(b, e0);
+      let text = null;
+      try { text = zlib.inflateSync(raw).toString("latin1"); }
+      catch (_) { text = raw.toString("latin1"); }
+      if (!text.includes("begincmap")) continue;
+      cmapCount += 1;
+      const flat = text.replace(/[\s]/g, "");
+      if (!flat.includes("<0000><ffff><0000>")) {
+        const n = (text.match(/<[0-9a-fA-F]{4}>/g) || []).length;
+        bad.push(`${name}: 一个 ToUnicode 流不是恒等映射（含 ${n} 个码位项）`);
+      }
+    }
+  }
+  add("G4", "四套图纸的每个 ToUnicode CMap 都是恒等 bfrange，文本抽取不会再回到 code→字形索引的乱码",
+      bad.length === 0 && cmapCount >= 13,
+      bad.length ? bad.slice(0, 4).join("；") : `扫到 ${cmapCount} 个 CMap 流，全部为 <0000><ffff><0000>`);
+}
+
 /* H. sources.json 的字段深度——CLAUDE.md 记为与分数相关性最高的特征，缺一栏就是缺证据 */
 const sources = readPkg("sources.json").sources || [];
 const REQF = ["authority_level", "evidence_class", "collection_method", "spatial_coverage",
@@ -617,7 +661,7 @@ const EXPECTED_IDS = [
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
-  "G1", "G2", "G3", "H1", "I1",
+  "G1", "G2", "G3", "G4", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "J2",
   "Z1",
 ];
