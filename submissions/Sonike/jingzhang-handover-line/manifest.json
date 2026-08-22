@@ -111,7 +111,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "26bf3305c24d32688e1a8f8b7d9b8b6bcd95334ac2d31cd958a9dd20ef2b7d2f"
+      "sha256": "c1873094bd8972f0caeb724b446c169828671b17cf38443c1187634c4ec05a31"
     },
     {
       "path": "compliance_matrix.json",
@@ -148,7 +148,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "9f67bc8d0424b50750647cb8b38b6a779f11eb66777db3ce2c4ec6f6f8144fd8"
+      "sha256": "6ac6023ab0a1d05ddfa8b8e9b235927c9707e0ec6de3dc39d9cd5dd54cd5ca97"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -405,7 +405,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "90457698dc75b231c7afc68e2276dd21a5cac4c9d678b3865e34a2c24f5473b0"
+      "sha256": "df905b18243329beb5d5fb5a27254ff6447142449966a5d407f78a30a3d9231b"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -617,7 +617,7 @@
       "path": "assets/media/guided-tour.md",
       "role": "transcript",
       "required": false,
-      "sha256": "24111973b325463ad6938b06ed901ed600f0a29f709529453065e0eadc28cf41",
+      "sha256": "31a298107eef89aa9fb9664c398e74950cdc9a4bece55486bf748ac82d385251",
       "title_zh": "三分钟导览视频文字稿与分镜（中文）",
       "title_en": "Guided-tour transcript and shot list (Chinese)",
       "description_zh": "逐句文字稿，外加九段分镜表：写明每一段配的是哪张图件、为什么配它。",
@@ -627,7 +627,7 @@
       "path": "assets/media/guided-tour-en.md",
       "role": "transcript",
       "required": false,
-      "sha256": "74d02c1a79d2768bd3f344dc623d6e3f8e01d29ebbf0d17025bc1c96ad852d8b",
+      "sha256": "42da645d4237c87fc9a845081a9750e0e61cc58b397698d369698d0c397257e8",
       "title_zh": "三分钟导览视频文字稿与分镜（英文）",
       "title_en": "Guided-tour transcript and shot list (English)",
       "description_zh": "英文版文字稿与分镜表。",
@@ -640,8 +640,8 @@
       "sha256": "a8d2dd5db7af4b42c73bef42f3f608f186bbef9ca0ad51d85a94f5115bacbe34",
       "title_zh": "京张交接线 · 三分钟导览视频（中文）",
       "title_en": "Jing-Zhang Handover Line · three-minute guided tour (Chinese)",
-      "description_zh": "任务书「表达完整度」点名文本、图像、表格、场景卡、视频/声音与交互网页；本包此前有声音而无视频，本文件补上这一类。**视频不引入任何新主张**：音轨与 audio-guide.m4a 完全相同，字幕逐句一致，画面全部取自包内已有图件。**九个切换点按音轨内容而非均分设置**——讲三座交接场时切 F/03，讲公开交接桌时切 F/10，讲十二个场景的拒收状态时切 F/05 的 96 格矩阵；分镜表见文字稿。1280×720、12 fps（画面为静帧，低帧率只为减小体积），H.264 + AAC，181.8 秒。",
-      "description_en": "The taskbook's expression-completeness clause names text, images, tables, scenario cards, video/sound and an interactive page; this package had sound but no video, and this file supplies that kind. **The video introduces no new claim**: the audio track is identical to audio-guide.m4a, the captions match it sentence for sentence, and every frame is a figure already in the package. **Its nine cuts follow the narration rather than an even split** — F/03 for the three handover yards, F/10 at the public handover table, F/05's 96-cell matrix at the refusal state of all twelve scenarios; the shot list is in the transcript. 1280×720, 12 fps (static frames; the low rate only reduces size), H.264 + AAC, 181.8 s.",
+      "description_zh": "任务书「表达完整度」点名文本、图像、表格、场景卡、视频/声音与交互网页；本包此前有声音而无视频，本文件补上这一类。**视频不引入任何新主张，但三处来源要分开说准**：音轨与 audio-guide.m4a 是同一段合成解说、同一对齐，但各自编码、采样不逐位相同（实测 r = 0.999964、零偏移、平均绝对差 17／32768、时长差 2.9 ms）；字幕逐句一致且 guided-tour.vtt 与 audio-guide.vtt 逐字节相同；**画面并非全部取自包内已有图件**——七个正文段用包内 F/01–F/05 与 F/10，首尾两段（约 21% 时长）用的是程序化封面卡，它与 assets/media/cover.png 同版式但不含那张 gpt-image-2 生成的插画背景，且不作为文件随包分发。**因此可以说一句更强的话：整片画面 100% 程序化渲染，没有任何生成式图像素材出现在视频里。****九个切换点按音轨内容而非均分设置**——讲三座交接场时切 F/03，讲公开交接桌时切 F/10，讲十二个场景的拒收状态时切 F/05 的 96 格矩阵；分镜表见文字稿。1280×720、12 fps（画面为静帧，低帧率只为减小体积），H.264 + AAC，181.8 秒。",
+      "description_en": "The taskbook's expression-completeness clause names text, images, tables, scenario cards, video/sound and an interactive page; this package had sound but no video, and this file supplies that kind. **The video introduces no new claim, but three provenance statements need separating**: the audio track is the same synthesised narration in the same alignment as audio-guide.m4a, though independently encoded and therefore not bit-identical (measured r = 0.999964 at zero offset, mean absolute difference 17/32768, duration difference 2.9 ms); the captions match it sentence for sentence and guided-tour.vtt is byte-identical to audio-guide.vtt; and **not every frame is a figure already in the package** — the seven body segments use F/01–F/05 and F/10, while the opening and closing segments (about 21% of the running time) use a programmatic cover card with the same layout as assets/media/cover.png but without its gpt-image-2 generated illustration background, not shipped as a file. **This permits a stronger statement: every frame in the video is programmatically rendered and no generated image material appears in it.** **Its nine cuts follow the narration rather than an even split** — F/03 for the three handover yards, F/10 at the public handover table, F/05's 96-cell matrix at the refusal state of all twelve scenarios; the shot list is in the transcript. 1280×720, 12 fps (static frames; the low rate only reduces size), H.264 + AAC, 181.8 s.",
       "transcript": "assets/media/guided-tour.md",
       "poster": "assets/media/cover.png",
       "caption": "assets/media/guided-tour.vtt"
@@ -650,11 +650,11 @@
       "path": "assets/media/guided-tour.en.mp4",
       "role": "video",
       "required": false,
-      "sha256": "55d4aa5b80838e547e97e5ca79f8ba65f81722d9a42673aee172cb3c5a5830e7",
+      "sha256": "eebfd00e8a57d1f91f943fd922f76637644b5df37eeb69208b7c9f6e5b6e7e10",
       "title_zh": "京张交接线 · 三分钟导览视频（英文）",
       "title_en": "Jing-Zhang Handover Line · three-minute guided tour (English)",
-      "description_zh": "英文版导览视频，结构与中文版相同，画面改用图件的英文版本；176.5 秒。",
-      "description_en": "English guided tour; same structure as the Chinese edition with the English figure editions; 176.5 s.",
+      "description_zh": "英文版导览视频，结构与中文版相同，正文七段改用图件的英文版本；176.5 秒。**2026-08-22 修一处真错**：首尾两段（0–22.8 s 与 167 s 之后，合计约 21% 时长）此前用的是**中文**封面卡——英文交付物里五分之一时长显示纯中文。已换成英文版封面卡：用叠加只替换这两段，音轨按流拷贝（sha256 与替换前完全相同）、时长仍为 176.500 s、正文帧与替换前逐像素相同（抽检 r = 1.0000），切换点仍精确落在分镜表声明的 22.8 s 与 167.0 s。",
+      "description_en": "English guided tour; same structure as the Chinese edition, with the seven body segments using the English figure editions; 176.5 s. **One real defect fixed on 2026-08-22**: the opening and closing segments (0–22.8 s and after 167 s, about 21% of the running time) had been carrying the **Chinese** cover card, so a fifth of an English deliverable showed Chinese-only text. They now carry the English cover card, replaced by overlay: the audio stream was copied bit-identically (same sha256), the duration is unchanged at 176.500 s, the body frames are pixel-identical to before (spot-checked r = 1.0000), and the cuts still land exactly on the 22.8 s and 167.0 s boundaries the shot list declares.",
       "transcript": "assets/media/guided-tour-en.md",
       "poster": "assets/media/cover.png",
       "caption": "assets/media/guided-tour-en.vtt"
