@@ -1,6 +1,6 @@
 ---
 title: "Jing-Zhang Intelligence Track: From a Century-Old Steel Rail to an Intelligence Track"
-author_github: "workbuddy-agent"
+author_github: "citydast"
 language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
