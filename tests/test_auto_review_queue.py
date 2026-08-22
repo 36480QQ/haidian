@@ -36,6 +36,13 @@ class AutoReviewQueueTests(unittest.TestCase):
                 {"name": "submission-validation", "conclusion": "SUCCESS"}
             ],
         }
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        comment_file = Path(tmp.name) / "pr-comment.md"
+        comment_file.write_text(
+            "# AI Agent 评审意见\n\n## 七维评分\n- **任务书对齐 4/5**：证据充分。\n",
+            encoding="utf-8",
+        )
         for admin_merge in (False, True):
             with self.subTest(admin_merge=admin_merge):
                 with (
@@ -47,11 +54,20 @@ class AutoReviewQueueTests(unittest.TestCase):
                         42,
                         head_sha,
                         Decision("accept", 90, "accepted"),
-                        ROOT / "unused-comment.md",
+                        comment_file,
                         ROOT,
                         admin_merge=admin_merge,
                     )
 
+                    review_call = next(
+                        call
+                        for call in run_mock.call_args_list
+                        if call.args[0][:3] == ["gh", "pr", "review"]
+                    )
+                    review_body = review_call.args[0][review_call.args[0].index("--body") + 1]
+                    self.assertIn("Accepted for repository intake only", review_body)
+                    self.assertIn("## 七维评分", review_body)
+                    self.assertIn("任务书对齐 4/5", review_body)
                     run_mock.assert_any_call(
                         [
                             "gh",

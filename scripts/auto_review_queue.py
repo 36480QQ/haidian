@@ -297,10 +297,14 @@ def apply_review(
     if outcome.action == "accept":
         if live.get("mergeable") == "CONFLICTING":
             raise WorkerError("PR became conflicting before merge")
+        authoritative_comment = comment_file.read_text(encoding="utf-8").strip()
+        if not authoritative_comment:
+            raise WorkerError("authoritative PR comment is empty")
         body = (
             f"{marker}\nMaintainer intake decision: Review Agent score {outcome.score:g}/100. "
             "Mandatory rejection and all four local gates passed. Accepted for repository intake only; "
             "this is not gallery publication, award selection, implementation approval, or government endorsement."
+            f"\n\n{authoritative_comment}"
         )
         run(["gh", "pr", "review", str(number), "--repo", repo, "--approve", "--body", body], cwd=cwd)
         assert_live(pr_meta(repo, number, cwd), head_sha, require_success=True)
