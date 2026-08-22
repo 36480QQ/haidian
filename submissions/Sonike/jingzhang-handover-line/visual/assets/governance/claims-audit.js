@@ -197,6 +197,30 @@ add("P8", "正文写出了「西收东放」这条横向语法", proseHas("西�
 add("P9", "正文写出了三处重点区的断面实取值 15.4／17.1／15.1", proseHas("15.4／17.1／15.1"),
     `×${prose.split("15.4／17.1／15.1").length - 1}`);
 
+/* P10：二十个单元垂距的四个统计量，全部由落点表那一列当场算出。
+   2026-08-22 加。此前只钉住区间「245–414」，而摘要句里的「中位 337」在偶数个取值下
+   把第 11 项本身当成了中位数（正确口径是第 10、11 项之均值 = 330），**无人拦下**。
+   四个数一并钉住，且合计必须等于正文另一处声明的接入段合计 6596 m —— 两处互为校验。 */
+{
+  const col = (l) => l.replace(/^\|/, "").split("|").map((x) => x.trim());
+  const dists = tableRows.map((l) => Number(col(l)[6].replace(/,/g, ""))).sort((a, b) => a - b);
+  const sum = dists.reduce((a, b) => a + b, 0);
+  const mean = sum / dists.length;
+  const med = dists.length % 2 === 0
+    ? (dists[dists.length / 2 - 1] + dists[dists.length / 2]) / 2
+    : dists[(dists.length - 1) / 2];
+  const near = (a, b, t) => Math.abs(a - b) <= t;
+  const allNum = dists.length === 20 && dists.every((x) => Number.isFinite(x));
+  add("P10", "落点表垂距一列的四个统计量与正文摘要一致（区间／平均／中位／合计），中位按偶数个取值取第 10、11 项之均值",
+      allNum && near(dists[0], 245, 0.5) && near(dists[19], 414, 0.5)
+      && near(mean, 330, 0.5) && near(med, 330, 0.5) && sum === 6596
+      && proseHas("245–414") && proseHas("平均 330 m") && proseHas("中位 330 m")
+      && proseHas("6596 m"),
+      allNum
+        ? `表内 min ${dists[0]} / max ${dists[19]} / 平均 ${mean.toFixed(1)} / 中位 ${med} / 合计 ${sum}`
+        : `落点表垂距列解析失败：解析到 ${dists.length} 个值`);
+}
+
 /* F. 断面表的算术。
    本包第一处硬错就出在这里：通用断面表把「建筑退线」定义为 A1＋A2＋A3＋余量（一个容器），
    却又把它和它自己的子段一起相加，写出一个复算不出来的「单侧合计 18–27 m」。
@@ -531,7 +555,7 @@ const EXPECTED_IDS = [
   "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8",
   "S1", "S2", "S3", "S4",
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
-  "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9",
+  "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1",

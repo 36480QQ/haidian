@@ -29,14 +29,14 @@ const PKG = path.resolve(HERE, "../../..");
 const AUDITOR = "claims-audit.js";
 const RUNNER = "protocol-check-runner.js";
 
-/* 这份 54 项 ID 全集是**刻意重复**的第二份来源。
+/* 这份 55 项 ID 全集是**刻意重复**的第二份来源。
    claims-audit.js 里也有一份；两份不一致就说明有人动了其中一份，本文件会报错。
    判据与被测对象放在同一处，等于没有判据。 */
 const IDS = [
   "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8",
   "S1", "S2", "S3", "S4",
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
-  "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9",
+  "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "Z1",
@@ -91,7 +91,7 @@ const cases = [];
 const positive = (label, fn) => cases.push({ label, kind: "正向", fn });
 const negative = (label, fn) => cases.push({ label, kind: "阴性", fn });
 
-positive("claims-audit.js 全部通过，且恰好跑 54 项、ID 与本文件独立记录的全集逐位相同", () => {
+positive("claims-audit.js 全部通过，且恰好跑 55 项、ID 与本文件独立记录的全集逐位相同", () => {
   const r = runAuditor();
   if (r.code !== 0) return `退出码 ${r.code}，应为 0：${(failedIds(r).join("、") || r.stderr).slice(0, 300)}`;
   if (!r.json || r.json.all_match !== true) return "all_match 不为真";
@@ -205,6 +205,9 @@ negInput("对照表把交接场齐备度 2／2／3 改成 2／2／2",
 
 negInput("正文把十对里程差里的 61 m 写成 60 m",
   { "proposal.md": textOf("proposal.md").replace("2、2、15、15、21、21、22、23、23、61 m", "2、2、15、15、21、21、22、23、23、60 m") }, ["K4"]);
+
+negInput("摘要句把垂距中位改回 337（偶数个取值下把第 11 项当中位数）—— 本包 2026-08-22 真出现过的那处",
+  { "proposal.md": textOf("proposal.md").replace("中位 330 m", "中位 337 m") }, ["P10"]);
 
 negInput("sources.json 把现行登记的指针改回已作废的历史条目 —— 本包真出现过的六处",
   { "sources.json": jsonMutated("sources.json", (d) => {
