@@ -414,6 +414,38 @@
    "self_check_ids": [
     "KEY_AREAS_TRUST"
    ]
+  },
+  {
+   "standard_id": "SPONGE-CITY-RESILIENCE",
+   "requirement_zh": "国务院推进海绵城市建设指导意见（国办发〔2015〕75号）确立'渗滞蓄净用排'技术路径，作为蓝绿空间生态韧性措施（雨洪调蓄、径流控制、生态廊道）的官方依据。",
+   "professional_dimension": "生态韧性",
+   "mandatory": false,
+   "review_status": "addressed",
+   "proposal_sections": [
+    "蓝绿空间、公共空间与城市风貌"
+   ],
+   "drawing_refs": [
+    "drawings/a3-booklet.pdf",
+    "drawings/a0-boards.pdf"
+   ],
+   "geometry_refs": [
+    "geometry/green_space.geojson",
+    "geometry/constraints.geojson"
+   ],
+   "metric_refs": [
+    "green_ratio",
+    "green_space_area_sqm"
+   ],
+   "source_ids": [
+    "SPONGE-CITY-GUIDE"
+   ],
+   "assumption_ids": [
+    "A-UPPER-PLAN-001"
+   ],
+   "self_check_ids": [
+    "PROFESSIONAL_EVIDENCE"
+   ],
+   "evidence_summary_zh": "蓝绿空间章节引用海绵城市官方指导意见与标准，green_space.geojson 承载绿地几何，绿地指标在 metrics.json 复算。"
   }
  ]
 }
