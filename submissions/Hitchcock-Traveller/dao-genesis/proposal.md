@@ -7,8 +7,8 @@ bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以《道德经》'道生一，一生二，二生三，三生万物'为元逻辑，将京张铁路百年自主创新之道映射为AI原生城市的空间生成法则，提出'一脉·两翼·三区·万物'的空间结构与全球首个AI开源文明试验场概念。"
-tracks: ["ai-traffic-walkability", "ai-public-space", "ai-culture-narrative"]
-scenarios: ["ai-traffic-walkability", "ai-public-space", "ai-culture-narrative", "ai-ecosystem", "ai-scenario-card"]
+tracks: ["jingzhang-heritage-narrative", "youth-friendly-public-space", "ai-traffic-walkability"]
+scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "robot-delivery-low-speed", "public-safety-operations-review", "enterprise-service-copilot"]
 iteration: "v1.0"
 ---
 
