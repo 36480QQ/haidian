@@ -23,7 +23,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **方法证据**：真实运行得 167 边骨架、最优效率 19.20（基线 1.143、Run7 冻结 2.802）、遗产硬穿越 0，作为方法验证证据（因坐标偏移不作场地正式几何，见「方法论」）。
 
-**治理机制（普通路径先行 + 分级放行 G0-G3）**：任何 AI 场景从演示进入日常都须逐级放行，8 个已声明场景逐场景绑定五字段（ai_off_path / human_handoff / gate_id / operating_mode / responsible_role，见 `simulation.json`）；停止条件、可逆措施、责任矩阵与回执分别机器化登记于 `risk.json`、`governance-raci.json`、`governance-receipts.json`，普通路径永远可用、AI 只做可撤回增益。
+**治理机制（普通路径先行 + 分级放行 G0-G3）**：任何 AI 场景从演示进入日常都须逐级放行——G0 普通路径常开 / G1 本地复算 / G2 专业复核 / G3 有限现场窗口，任一级不满足即退回上一级；每级保留停止条件、可逆措施与可归档回执，普通路径永远可用、AI 只做可撤回增益。
 
 **可实施性**：路网市政造价 2965.5 万元（附投资口径分层，明确排除管线迁改/轨道土建/拆迁）；分期实施路线图（近期试点 → 中期推进 → 长期治理，每期含可度量里程碑与验收指标）；审批流程（8 类真实主管部门）；参与主体职责（8 类）；经济可行性（土地增值 → 税收增量 → 就业带动示意）；指标体系（12 项可复算指标）；风险矩阵（R-01..06）。
 
@@ -97,7 +97,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **诚实边界**：遗产目标 f3 在本机人工数字化边界下退化为 f2（f3≡f2），不作独立遗产合规结论；真实运行位于临时边界西约 2–3 公里，故上述骨架作为**方法验证证据**进入图件与指标，不作为场地正式几何、红线或审批依据（见「设计依据」）；算法仅提供数量级与拓扑偏好，具体红线、断面、权属由控规与主管部门批复决定 [depth:existing_conditions_diagnosis]。
 
-**治理与放行（算法 → 落地的边界）**：算法结论只作为设计输入与拓扑偏好，不直接进入日常运营；任何 AI 场景从演示到日常均走分级放行 G0-G3（定义见「测试验证场景」，逐场景绑定与停止/恢复规则机器化登记于 `simulation.json` 与 `risk.json`），任一级不满足即退回，普通路径始终可用。
+**治理与放行（算法 → 落地的边界）**：算法结论只作为设计输入与拓扑偏好，不直接进入日常运营；任何 AI 场景从演示到日常均走分级放行 G0-G3（G0 普通路径常开 → G1 本地复算 → G2 专业复核 → G3 有限现场窗口，见「测试验证场景」），任一级不满足即退回，普通路径始终可用。
 
 ## 三层范围工作框架
 
@@ -594,7 +594,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 为把概念方案推进到可验证阶段，本方案提出三个**测试验证场景**，均基于真实站点/河道/社区对象，检验依据为现行国家标准与公开技术指南；场景为「建议执行」性质，待官方站点、河道、社区与现状数据到位后正式执行，本节不声称已完成验证 [depth:metrics_recalculation] [depth:traffic_rail_slow_parking]。
 
-**分级放行（所有 AI 场景共同遵守）**：本方案不主张任何 AI 场景从演示直接进入日常，而是统一走四级放行阶梯——**G0 普通路径常开**（无账号、无模型、无网络的步行 / 人工 / 手推车路径始终可用，见「传统服务通道」）；**G1 本地复算**（算法结论在 `simulation.json` 参数下可复现，seed=42）；**G2 专业复核**（无障碍、安全、许可、维护由 8 类真实主管部门与专业团队独立复核）；**G3 有限现场窗口**（仅在有见证、可回退、可停止的条件下开放一段受控现场）。任一级不满足即退回上一级，不把桌面复算当作现场安全或公众接受的证据。逐场景绑定、责任矩阵与 8 项风险的停止/恢复规则已机器化登记于 `visual/assets/ai-off-baseline.json`、`visual/assets/governance-raci.json` 与 `risk.json`。
+**分级放行（所有 AI 场景共同遵守）**：本方案不主张任何 AI 场景从演示直接进入日常，而是统一走四级放行阶梯——**G0 普通路径常开**（无账号、无模型、无网络的步行 / 人工 / 手推车路径始终可用，见「传统服务通道」）；**G1 本地复算**（算法结论在 `simulation.json` 参数下可复现，seed=42）；**G2 专业复核**（无障碍、安全、许可、维护由 8 类真实主管部门与专业团队独立复核）；**G3 有限现场窗口**（仅在有见证、可回退、可停止的条件下开放一段受控现场）。任一级不满足即退回上一级，不把桌面复算当作现场安全或公众接受的证据。
 
 | 场景 | 验证对象 | 检验依据（真实） | 关键指标与目标 | 验证方法 |
 | --- | --- | --- | --- | --- |
@@ -988,11 +988,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 - brief/site-package/enums/
 - brief/site-package/ranges/planning_limits.json
 - data/processed/agent_fact_pack.md
-- data/processed/project_scope_summary.csv
-- data/processed/agent_task_requirements.csv
-- data/processed/source_use_matrix.csv
-- data/processed/missing_data_checklist.csv
 - Tero A., Takagi S., Saigusa T., et al. Rules for biologically inspired adaptive network design. *Science*, 327(5964): 439–442, 2010. https://doi.org/10.1126/science.1177894
 - Deb K., Pratap A., Agarwal S., Meyarivan T. A fast and elitist multiobjective genetic algorithm: NSGA-II. *IEEE Transactions on Evolutionary Computation*, 6(2): 182–197, 2002. https://doi.org/10.1109/4235.996017
-- 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`
 - 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]
