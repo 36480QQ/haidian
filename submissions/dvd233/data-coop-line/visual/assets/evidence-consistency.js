@@ -1211,6 +1211,247 @@ function evaluateTicketCase(protocol, rehearsal) {
   };
 }
 
+function roundSix(value) {
+  return Math.round(value * 1e6) / 1e6;
+}
+
+function evaluateSyntheticCapacityEnvelope(envelope, implementationEnvelope) {
+  const errors = [];
+  const failedAssertionIds = new Set();
+  const failedModelIds = new Set();
+  const fail = (assertionId, message, modelIds = []) => {
+    errors.push(`[${assertionId}] ${message}`);
+    failedAssertionIds.add(assertionId);
+    for (const modelId of modelIds) failedModelIds.add(modelId);
+  };
+  const equalNumber = (left, right) =>
+    typeof left === "number" && Number.isFinite(left) && Math.abs(left - right) <= 1e-6;
+  const expectedScope = {
+    scenario_id: "SCN-06",
+    key_area_id: "PROV-KEY-001",
+    project_ids: ["C-01", "C-02", "C-04"],
+    window_minutes: 60,
+    unit_definition: "abstract_parallel_service_unit_for_rehearsal_only",
+    excludes: [
+      "named_or_counted_real_staff", "physical_compute_hardware",
+      "power_cooling_or_network_engineering", "facility_or_fire_capacity",
+      "cost_budget_procurement_or_approval",
+    ],
+  };
+  const expectedDemandFixture = {
+    source: "submission_owned_synthetic_fixture",
+    arrivals_per_window: 12,
+    route_split: { data_route: 6, no_data_route: 6 },
+    observed_arrivals: null,
+    field_observation_status: "not_observed",
+  };
+  const expectedConfirmations = {
+    operator_entity: null,
+    staffing_assignment: null,
+    site_capacity: null,
+    power_kw: null,
+    cooling_kw: null,
+    network_bandwidth: null,
+    cost_cny: null,
+    procurement_status: "unknown",
+    approval_status: "unknown",
+    professional_confirmation_status: "unknown",
+  };
+  const expectedModelInputs = [
+    {
+      model_id: "CAP-C01-PURPOSE-TICKET-REVIEW",
+      project_id: "C-01",
+      service_role: "purpose_ticket_review",
+      route_id: "all_requests",
+      demand_requests_per_window: 12,
+      service_minutes_per_request: 15,
+      declared_parallel_units: 4,
+      protected_reserve_units: 0,
+      dedicated_to_route: false,
+      borrowable_by_other_route: false,
+      reserve_purpose: null,
+    },
+    {
+      model_id: "CAP-C02-DATA-ROUTE",
+      project_id: "C-02",
+      service_role: "equivalent_service_delivery",
+      route_id: "data_route",
+      demand_requests_per_window: 6,
+      service_minutes_per_request: 12,
+      declared_parallel_units: 2,
+      protected_reserve_units: 0,
+      dedicated_to_route: true,
+      borrowable_by_other_route: false,
+      reserve_purpose: "preserve_route_capacity",
+    },
+    {
+      model_id: "CAP-C02-NO-DATA-ROUTE",
+      project_id: "C-02",
+      service_role: "equivalent_service_delivery",
+      route_id: "no_data_route",
+      demand_requests_per_window: 6,
+      service_minutes_per_request: 12,
+      declared_parallel_units: 2,
+      protected_reserve_units: 0,
+      dedicated_to_route: true,
+      borrowable_by_other_route: false,
+      reserve_purpose: "protect_no_data_equivalence",
+    },
+    {
+      model_id: "CAP-C04-CONTROLLED-COMPUTE",
+      project_id: "C-04",
+      service_role: "controlled_compute_job",
+      route_id: "data_route",
+      demand_requests_per_window: 6,
+      service_minutes_per_request: 20,
+      declared_parallel_units: 4,
+      protected_reserve_units: 1,
+      dedicated_to_route: true,
+      borrowable_by_other_route: false,
+      reserve_purpose: "teardown_and_recovery_only",
+    },
+  ];
+
+  if (!envelope || typeof envelope !== "object" ||
+      envelope.envelope_id !== "SCN06-C010204-SYNTHETIC-CAPACITY-01" ||
+      envelope.version !== "1.0.0") {
+    fail("ASSERT-CAPACITY-RECALCULATION", "synthetic capacity envelope identity drifted");
+  }
+  if (!sameJson(envelope.scope, expectedScope)) {
+    fail("ASSERT-CAPACITY-RECALCULATION", "scope, window or abstract-unit boundary drifted");
+  }
+  if (!sameJson(envelope.demand_fixture, expectedDemandFixture)) {
+    fail("ASSERT-CAPACITY-DEMAND-HEADROOM", "the pinned synthetic demand fixture drifted");
+  }
+
+  const models = Array.isArray(envelope.resource_models) ? envelope.resource_models : [];
+  const expectedIds = expectedModelInputs.map((item) => item.model_id);
+  if (!sameJson(models.map((item) => item && item.model_id), expectedIds)) {
+    fail("ASSERT-CAPACITY-RECALCULATION", "resource model identity or order drifted", expectedIds);
+  }
+  const expectedById = Object.fromEntries(expectedModelInputs.map((item) => [item.model_id, item]));
+  const computedById = {};
+  for (const model of models) {
+    if (!model || !expectedById[model.model_id]) continue;
+    const expected = expectedById[model.model_id];
+    const modelId = model.model_id;
+    const inputProjection = Object.fromEntries(
+      Object.keys(expected).map((key) => [key, model[key]]),
+    );
+    if (!sameJson(inputProjection, expected)) {
+      const assertionId = modelId === "CAP-C02-NO-DATA-ROUTE"
+        ? "ASSERT-CAPACITY-NO-DATA-RESERVE"
+        : modelId === "CAP-C04-CONTROLLED-COMPUTE"
+          ? "ASSERT-CAPACITY-STOP-RESERVE"
+          : model.demand_requests_per_window !== expected.demand_requests_per_window
+            ? "ASSERT-CAPACITY-DEMAND-HEADROOM"
+            : "ASSERT-CAPACITY-RECALCULATION";
+      fail(assertionId, `${modelId} synthetic input contract drifted`, [modelId]);
+    }
+    const numericInputs = [
+      model.demand_requests_per_window, model.service_minutes_per_request,
+      model.declared_parallel_units, model.protected_reserve_units,
+    ];
+    if (numericInputs.some((value) => !Number.isFinite(value)) ||
+        model.service_minutes_per_request <= 0 || model.declared_parallel_units < 0 ||
+        model.protected_reserve_units < 0 ||
+        model.protected_reserve_units > model.declared_parallel_units) {
+      fail("ASSERT-CAPACITY-RECALCULATION", `${modelId} has invalid numeric inputs`, [modelId]);
+      continue;
+    }
+    const available = model.declared_parallel_units - model.protected_reserve_units;
+    const capacity = Math.floor((60 * available) / model.service_minutes_per_request);
+    const headroom = capacity - model.demand_requests_per_window;
+    const utilization = capacity > 0
+      ? roundSix(model.demand_requests_per_window / capacity)
+      : null;
+    computedById[modelId] = { available, capacity, headroom, utilization };
+    if (!equalNumber(model.available_parallel_units, available) ||
+        !equalNumber(model.capacity_requests_per_window, capacity) ||
+        !equalNumber(model.headroom_requests, headroom) ||
+        !equalNumber(model.utilization_ratio, utilization)) {
+      fail(
+        "ASSERT-CAPACITY-RECALCULATION",
+        `${modelId} available units, throughput, headroom or utilization is not reproducible`,
+        [modelId],
+      );
+    }
+    if (model.demand_requests_per_window < 0 || capacity <= 0 || headroom < 0) {
+      fail(
+        "ASSERT-CAPACITY-DEMAND-HEADROOM",
+        `${modelId} cannot admit the pinned synthetic demand with non-negative headroom`,
+        [modelId],
+      );
+    }
+  }
+
+  const dataId = "CAP-C02-DATA-ROUTE";
+  const noDataId = "CAP-C02-NO-DATA-ROUTE";
+  const dataModel = models.find((item) => item && item.model_id === dataId);
+  const noDataModel = models.find((item) => item && item.model_id === noDataId);
+  if (!dataModel || !noDataModel || !computedById[dataId] || !computedById[noDataId] ||
+      dataModel.route_id !== "data_route" || noDataModel.route_id !== "no_data_route" ||
+      noDataModel.declared_parallel_units !== 2 || noDataModel.available_parallel_units !== 2 ||
+      noDataModel.dedicated_to_route !== true || noDataModel.borrowable_by_other_route !== false ||
+      noDataModel.reserve_purpose !== "protect_no_data_equivalence" ||
+      computedById[noDataId].capacity < computedById[dataId].capacity) {
+    fail(
+      "ASSERT-CAPACITY-NO-DATA-RESERVE",
+      "the no-data route lost its dedicated non-borrowable capacity or parity",
+      [dataId, noDataId],
+    );
+  }
+
+  const stopId = "CAP-C04-CONTROLLED-COMPUTE";
+  const stopModel = models.find((item) => item && item.model_id === stopId);
+  if (!stopModel || stopModel.declared_parallel_units !== 4 ||
+      stopModel.protected_reserve_units !== 1 || stopModel.available_parallel_units !== 3 ||
+      stopModel.borrowable_by_other_route !== false ||
+      stopModel.reserve_purpose !== "teardown_and_recovery_only") {
+    fail(
+      "ASSERT-CAPACITY-STOP-RESERVE",
+      "C-04 must protect one abstract unit for teardown and recovery",
+      [stopId],
+    );
+  }
+
+  const expectedResult = envelope.expected_result || {};
+  if (envelope.evidence_level !== "E2" ||
+      envelope.status !== "synthetic_planning_envelope_not_confirmed_capacity" ||
+      !sameJson(envelope.real_world_confirmations, expectedConfirmations) ||
+      expectedResult.synthetic_admission_decision !== "pass_for_E2_rehearsal_only" ||
+      expectedResult.field_operation_decision !== "not_ready_for_field_operation" ||
+      !implementationEnvelope ||
+      implementationEnvelope.synthetic_capacity_envelope_status !==
+        "passed_for_E2_rehearsal_only" ||
+      implementationEnvelope.field_capacity_status !== "unknown") {
+    fail(
+      "ASSERT-CAPACITY-E2-BOUNDARY",
+      "synthetic evidence was promoted to a real capacity or field-readiness claim",
+    );
+  }
+
+  const projectIds = [...new Set(models.map((item) => item && item.project_id).filter(Boolean))];
+  const projectGatePassed = projectIds.filter((projectId) =>
+    models.filter((item) => item && item.project_id === projectId)
+      .every((item) => !failedModelIds.has(item.model_id))).length;
+  const computedModels = Object.values(computedById);
+  const capacityMetrics = {
+    synthetic_capacity_resource_gate_total: models.length,
+    synthetic_capacity_resource_gate_passed:
+      models.filter((item) => item && !failedModelIds.has(item.model_id)).length,
+    synthetic_capacity_project_gate_passed: projectGatePassed,
+    synthetic_capacity_minimum_headroom_requests: computedModels.length
+      ? Math.min(...computedModels.map((item) => item.headroom))
+      : 0,
+    synthetic_capacity_no_data_to_data_capacity_ratio:
+      computedById[dataId] && computedById[dataId].capacity > 0 && computedById[noDataId]
+        ? computedById[noDataId].capacity / computedById[dataId].capacity
+        : 0,
+  };
+  return { errors, failedAssertionIds: [...failedAssertionIds], capacityMetrics };
+}
+
 function auditExpiringTicket(metrics, texts, manifest) {
   const errors = [];
   const protocolAbsolute = path.join(ROOT, EXPIRING_TICKET_PATH);
@@ -1281,7 +1522,7 @@ function auditExpiringTicket(metrics, texts, manifest) {
       "ticket_closure_requires_execution_stopped_or_closed",
     ],
   };
-  if (protocol.protocol_id !== "EXPIRING-DATA-TICKET-01" || protocol.version !== "1.0.0" ||
+  if (protocol.protocol_id !== "EXPIRING-DATA-TICKET-01" || protocol.version !== "1.1.0" ||
       protocol.scenario_id !== "SCN-06" || protocol.frozen_main_sha !== FROZEN_MAIN_SHA) {
     errors.push("Expiring-ticket identity, scenario or frozen main SHA drifted");
   }
@@ -1711,6 +1952,9 @@ function auditExpiringTicket(metrics, texts, manifest) {
     "ASSERT-POST-TERM-OUTPUT-BLOCKED",
     "ASSERT-RESIDUAL-NOT-ERASURE", "ASSERT-PUBLIC-RETURN-SUBSTANTIATED",
     "ASSERT-ARTIFACT-COVERAGE", "ASSERT-E2-BOUNDARY",
+    "ASSERT-CAPACITY-RECALCULATION", "ASSERT-CAPACITY-DEMAND-HEADROOM",
+    "ASSERT-CAPACITY-NO-DATA-RESERVE", "ASSERT-CAPACITY-STOP-RESERVE",
+    "ASSERT-CAPACITY-E2-BOUNDARY",
   ];
   const expectedNegativeMutations = [
     {
@@ -1784,8 +2028,48 @@ function auditExpiringTicket(metrics, texts, manifest) {
       expected_failed_assertion_id: "ASSERT-ACCESSIBILITY-TASK-CONTRACT",
     },
   ];
+  const expectedCapacityRuleIds = [
+    "ASSERT-CAPACITY-RECALCULATION", "ASSERT-CAPACITY-DEMAND-HEADROOM",
+    "ASSERT-CAPACITY-NO-DATA-RESERVE", "ASSERT-CAPACITY-STOP-RESERVE",
+    "ASSERT-CAPACITY-E2-BOUNDARY",
+  ];
+  const expectedCapacityMutations = [
+    {
+      mutation_id: "MUT-CAPACITY-DECLARED-CALCULATION-DRIFT",
+      mutation: "Set C-01 declared capacity_requests_per_window from 16 to 15.",
+      required_audit_result: "fail",
+      expected_failed_assertion_id: "ASSERT-CAPACITY-RECALCULATION",
+    },
+    {
+      mutation_id: "MUT-CAPACITY-DEMAND-EXCEEDS-C01",
+      mutation: "Set C-01 demand_requests_per_window from 12 to 17.",
+      required_audit_result: "fail",
+      expected_failed_assertion_id: "ASSERT-CAPACITY-DEMAND-HEADROOM",
+    },
+    {
+      mutation_id: "MUT-CAPACITY-BORROW-NO-DATA-UNITS",
+      mutation: "Make one no-data route unit borrowable by the data route.",
+      required_audit_result: "fail",
+      expected_failed_assertion_id: "ASSERT-CAPACITY-NO-DATA-RESERVE",
+    },
+    {
+      mutation_id: "MUT-CAPACITY-REMOVE-STOP-RESERVE",
+      mutation: "Set C-04 protected_reserve_units to zero and expose all units to live work.",
+      required_audit_result: "fail",
+      expected_failed_assertion_id: "ASSERT-CAPACITY-STOP-RESERVE",
+    },
+    {
+      mutation_id: "MUT-CAPACITY-FALSE-FIELD-CONFIRMATION",
+      mutation: "Invent an operator entity and change the field operation decision to ready.",
+      required_audit_result: "fail",
+      expected_failed_assertion_id: "ASSERT-CAPACITY-E2-BOUNDARY",
+    },
+  ];
+  const capacityEnvelope = protocol.synthetic_capacity_envelope || {};
   if (!sameJson((protocol.fail_closed_assertions || []).map((item) => item.assertion_id), expectedAssertionIds) ||
-      !sameJson(protocol.negative_mutations, expectedNegativeMutations)) {
+      !sameJson(protocol.negative_mutations, expectedNegativeMutations) ||
+      !sameJson(capacityEnvelope.admission_rule_ids, expectedCapacityRuleIds) ||
+      !sameJson(capacityEnvelope.negative_mutations, expectedCapacityMutations)) {
     errors.push("Expiring-ticket fail-closed assertion or mutation set drifted");
   }
 
@@ -1884,6 +2168,100 @@ function auditExpiringTicket(metrics, texts, manifest) {
       errors.push(`${mutation.mutation_id} did not fail closed on ${mutation.expected_failed_assertion_id}`);
     }
   }
+  const capacityEvaluation = evaluateSyntheticCapacityEnvelope(
+    capacityEnvelope,
+    protocol.implementation_envelope,
+  );
+  errors.push(...capacityEvaluation.errors);
+  const capacityMutationHandlers = {
+    "MUT-CAPACITY-DECLARED-CALCULATION-DRIFT": (mutated) => {
+      const model = mutated.resource_models.find(
+        (item) => item.model_id === "CAP-C01-PURPOSE-TICKET-REVIEW",
+      );
+      if (!model) return false;
+      model.capacity_requests_per_window = 15;
+      return true;
+    },
+    "MUT-CAPACITY-DEMAND-EXCEEDS-C01": (mutated) => {
+      const model = mutated.resource_models.find(
+        (item) => item.model_id === "CAP-C01-PURPOSE-TICKET-REVIEW",
+      );
+      if (!model) return false;
+      model.demand_requests_per_window = 17;
+      return true;
+    },
+    "MUT-CAPACITY-BORROW-NO-DATA-UNITS": (mutated) => {
+      const model = mutated.resource_models.find(
+        (item) => item.model_id === "CAP-C02-NO-DATA-ROUTE",
+      );
+      if (!model) return false;
+      model.borrowable_by_other_route = true;
+      return true;
+    },
+    "MUT-CAPACITY-REMOVE-STOP-RESERVE": (mutated) => {
+      const model = mutated.resource_models.find(
+        (item) => item.model_id === "CAP-C04-CONTROLLED-COMPUTE",
+      );
+      if (!model) return false;
+      model.protected_reserve_units = 0;
+      model.available_parallel_units = 4;
+      model.capacity_requests_per_window = 12;
+      model.headroom_requests = 6;
+      model.utilization_ratio = 0.5;
+      return true;
+    },
+    "MUT-CAPACITY-FALSE-FIELD-CONFIRMATION": (mutated) => {
+      if (!mutated.real_world_confirmations || !mutated.expected_result) return false;
+      mutated.real_world_confirmations.operator_entity = "invented_operator";
+      mutated.expected_result.field_operation_decision = "ready_for_field_operation";
+      return true;
+    },
+  };
+  let capacityNegativePathFailClosed = 0;
+  for (const mutation of capacityEnvelope.negative_mutations || []) {
+    const handler = capacityMutationHandlers[mutation.mutation_id];
+    if (typeof handler !== "function") {
+      errors.push(`${mutation.mutation_id || "Unknown capacity mutation"} has no executable handler`);
+      continue;
+    }
+    const mutated = JSON.parse(JSON.stringify(capacityEnvelope));
+    const applied = handler(mutated);
+    const mutationEvaluation = applied
+      ? evaluateSyntheticCapacityEnvelope(mutated, protocol.implementation_envelope)
+      : null;
+    if (applied && capacityEvaluation.errors.length === 0 &&
+        mutationEvaluation.errors.length > 0 &&
+        mutationEvaluation.failedAssertionIds.includes(mutation.expected_failed_assertion_id)) {
+      capacityNegativePathFailClosed += 1;
+    } else {
+      errors.push(
+        `${mutation.mutation_id} did not fail closed on ${mutation.expected_failed_assertion_id}`,
+      );
+    }
+  }
+  const capacityProtocolMetrics = {
+    ...capacityEvaluation.capacityMetrics,
+    synthetic_capacity_negative_path_fail_closed_total: capacityNegativePathFailClosed,
+  };
+  const expectedCapacityResult = {
+    resource_gate_total: capacityProtocolMetrics.synthetic_capacity_resource_gate_total,
+    resource_gate_passed: capacityProtocolMetrics.synthetic_capacity_resource_gate_passed,
+    project_gate_passed: capacityProtocolMetrics.synthetic_capacity_project_gate_passed,
+    negative_path_fail_closed_total:
+      capacityProtocolMetrics.synthetic_capacity_negative_path_fail_closed_total,
+    minimum_headroom_requests:
+      capacityProtocolMetrics.synthetic_capacity_minimum_headroom_requests,
+    no_data_to_data_capacity_ratio:
+      capacityProtocolMetrics.synthetic_capacity_no_data_to_data_capacity_ratio,
+    synthetic_admission_decision: "pass_for_E2_rehearsal_only",
+    field_operation_decision: "not_ready_for_field_operation",
+  };
+  if (!sameJson(capacityEnvelope.expected_result, expectedCapacityResult) ||
+      capacityEnvelope.field_replacement_trigger !==
+        "Authorized E3 demand and service observations plus E4 operator, accessibility and professional confirmation must replace or reject every synthetic input before Gate 2.") {
+    errors.push("Synthetic capacity expected result or field replacement boundary drifted");
+  }
+
   const parityRuleCount = evaluations.reduce((sum, item) => sum + item.parityRuleCount, 0);
   const parityRulePassCount = evaluations.reduce((sum, item) => sum + item.parityRulePassCount, 0);
   const requiredArtifactCount = evaluations.reduce(
@@ -1898,7 +2276,11 @@ function auditExpiringTicket(metrics, texts, manifest) {
       parityRuleCount ? parityRulePassCount / parityRuleCount : 0,
     expiring_ticket_conditional_artifact_coverage_ratio:
       requiredArtifactCount ? validArtifactCount / requiredArtifactCount : 0,
+    ...capacityProtocolMetrics,
   };
+  if (!sameJson((protocol.recalculation_contract || {}).expected_metrics, protocolMetrics)) {
+    errors.push("Expiring-ticket recalculation contract metrics drifted from executable results");
+  }
   for (const [name, expected] of Object.entries(protocolMetrics)) {
     const metric = metrics[name];
     if (!metric) {
@@ -1915,7 +2297,10 @@ function auditExpiringTicket(metrics, texts, manifest) {
 
   const assumptions = loadJson("assumptions.json").assumptions || [];
   const assumptionIds = assumptions.map((item) => item.id);
-  for (const assumptionId of ["A-EXPIRING-TICKET-001", "A-EXPIRING-TICKET-THRESHOLDS-001"]) {
+  for (const assumptionId of [
+    "A-EXPIRING-TICKET-001", "A-EXPIRING-TICKET-THRESHOLDS-001",
+    "A-SYNTHETIC-CAPACITY-001",
+  ]) {
     if (!assumptionIds.includes(assumptionId)) errors.push(`assumptions.json is missing ${assumptionId}`);
   }
   const compliance = loadJson("compliance_matrix.json").requirements || [];
@@ -1926,15 +2311,25 @@ function auditExpiringTicket(metrics, texts, manifest) {
       errors.push(`compliance_matrix.json ${requirementId} is missing the expiring-ticket evidence link`);
     }
   }
+  const capacityMetricNames = Object.keys(capacityProtocolMetrics);
+  for (const requirementId of ["1.5.2.2", "1.5.2.3", "1.5.3.1", "agent.2", "agent.3", "agent.6"]) {
+    const requirement = compliance.find((item) => item.requirement_id === requirementId);
+    if (!requirement || !requirement.assumption_ids.includes("A-SYNTHETIC-CAPACITY-001") ||
+        capacityMetricNames.some((name) => !requirement.metrics.includes(name))) {
+      errors.push(`compliance_matrix.json ${requirementId} is missing the synthetic-capacity evidence link`);
+    }
+  }
 
   const zhTokens = [
     "EXPIRING-DATA-TICKET-01", "CASE-NORMAL-EXPIRY-01", "CASE-MIDSTREAM-WITHDRAWAL-01",
-    "stopping", "10 / 10", "单节点",
+    "stopping", "10 / 10", "单节点", "SCN06-C010204-SYNTHETIC-CAPACITY-01",
+    "4 / 4", "5 / 5", "无数据专用容量", "not_ready_for_field_operation",
     ...officialThree, ...officialFive,
   ];
   const enTokens = [
     "EXPIRING-DATA-TICKET-01", "CASE-NORMAL-EXPIRY-01", "CASE-MIDSTREAM-WITHDRAWAL-01",
-    "stopping", "10 / 10", "single-node",
+    "stopping", "10 / 10", "single-node", "SCN06-C010204-SYNTHETIC-CAPACITY-01",
+    "4 / 4", "5 / 5", "dedicated no-data capacity", "not_ready_for_field_operation",
     "Centennial Jing-Zhang Cultural Belt", "Urban AI Life Experience Belt",
     "AI Integration Innovation Belt", "Full-stack Independent AI Innovation System",
     "World-class AI Innovation Ecosystem", "New AI+ Scenario-Empowerment Paradigm",

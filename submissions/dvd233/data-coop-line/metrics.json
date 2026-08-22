@@ -414,6 +414,96 @@
         "Synthetic record coverage proves a machine-readable E2 evidence contract, not that field artifacts or responsible entities exist."
       ],
       "metric_kind": "synthetic_contract_test"
+    },
+    "synthetic_capacity_resource_gate_total": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/expiring-data-ticket-protocol.json",
+        "visual/assets/evidence-consistency.js"
+      ],
+      "formula": "count(SCN06-C010204-SYNTHETIC-CAPACITY-01.resource_models); recompute: node visual/assets/evidence-consistency.js --json",
+      "confidence": "low",
+      "assumptions": [
+        "E2 synthetic admission envelope only; no real staffing, hardware, engineering, facility, cost, operator, approval or field capacity is confirmed."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "synthetic_capacity_resource_gate_passed": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/expiring-data-ticket-protocol.json",
+        "visual/assets/evidence-consistency.js"
+      ],
+      "formula": "resource models whose available units, 60-minute throughput, headroom and utilization recompute exactly and whose applicable reserve gate passes / 4",
+      "confidence": "low",
+      "assumptions": [
+        "E2 synthetic admission envelope only; no real staffing, hardware, engineering, facility, cost, operator, approval or field capacity is confirmed."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "synthetic_capacity_project_gate_passed": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/expiring-data-ticket-protocol.json",
+        "visual/assets/evidence-consistency.js"
+      ],
+      "formula": "unique project_ids (C-01, C-02, C-04) for which every synthetic resource and route-reserve gate passes",
+      "confidence": "low",
+      "assumptions": [
+        "E2 synthetic admission envelope only; no real staffing, hardware, engineering, facility, cost, operator, approval or field capacity is confirmed."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "synthetic_capacity_negative_path_fail_closed_total": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/expiring-data-ticket-protocol.json",
+        "visual/assets/evidence-consistency.js"
+      ],
+      "formula": "declared in-memory capacity mutations rejected / five declared mutations: calculation drift, demand above capacity, borrowed no-data units, removed stop reserve and false field confirmation",
+      "confidence": "low",
+      "assumptions": [
+        "E2 synthetic admission envelope only; no real staffing, hardware, engineering, facility, cost, operator, approval or field capacity is confirmed."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "synthetic_capacity_minimum_headroom_requests": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/expiring-data-ticket-protocol.json",
+        "visual/assets/evidence-consistency.js"
+      ],
+      "formula": "min(floor(60 * (declared_parallel_units - protected_reserve_units) / service_minutes_per_request) - demand_requests_per_window) over four synthetic resource models",
+      "confidence": "low",
+      "assumptions": [
+        "E2 synthetic admission envelope only; no real staffing, hardware, engineering, facility, cost, operator, approval or field capacity is confirmed."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "synthetic_capacity_no_data_to_data_capacity_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/expiring-data-ticket-protocol.json",
+        "visual/assets/evidence-consistency.js"
+      ],
+      "formula": "recalculated C-02 no-data-route capacity_requests_per_window / recalculated C-02 data-route capacity_requests_per_window",
+      "confidence": "low",
+      "assumptions": [
+        "E2 synthetic admission envelope only; no real staffing, hardware, engineering, facility, cost, operator, approval or field capacity is confirmed."
+      ],
+      "metric_kind": "synthetic_contract_test"
     }
   }
 }
