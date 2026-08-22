@@ -87,20 +87,6 @@ The overall concept proposed here is "Jingzhang 100 · AI Artery": with the Jing
 
 ![Land Use Structure & Three-Level Scope Framework](assets/figures/land-use-structure.png)
 
-### Five Gateway Transition Functions
-
-The proposal identifies five gateway nodes within the 11.4 km² overall design scope, each carrying a transition function from one urban state to another. A gateway is not a physical entrance but an interface for functional transition — at each gateway, people and agents complete a role switch, a speed switch, or a service switch [depth:overall_spatial_structure].
-
-| Gateway ID | Name | Location | Transition Function | Trigger Condition | Spatial Action |
-| --- | --- | --- | --- | --- | --- |
-| G1 | Qinghe Gateway | North of Zhongzhiyuan, intersection of Qinghe and the Jingzhang corridor | From urban motor-vehicle speed to walking speed | Motor vehicle ≤30 km/h → pedestrian priority | Sunken plaza + bicycle parking + computing exhibition hall entrance |
-| G2 | Wudaokou Gateway | Middle of the AI Origin Community, around Wudaokou Station | From rail transit to neighborhood life | Rail arrival → 5-minute living circle | Station-front plaza + AI guide terminal + incubator permeable ground floor |
-| G3 | Qinghuayuan Gateway | South of the AI Origin Community, Qinghuayuan Railway Station site | From historical heritage to AI culture | Site visit → AI cultural experience | Heritage preservation + open-source results display node + cultural narrative wall |
-| G4 | Dazhongsi Gateway | Around Dazhongsi Station | From traditional commerce to intelligence-native business forms | Wholesale-market demolition → intelligent-terminal display belt | Station-front public space + four-quadrant pedestrian connectivity + digital-asset trading entrance |
-| G5 | Xizhimen Gateway | South end of the overall design scope | From city-level to regional-level | 11.4 km² → 43.6 km² coordinated research | Signage system + slow-traffic connection + information guide |
-
-The spatial actions of each gateway are conceptual recommendations, subject to adjustment after official road redlines, heritage-protection ranges, and rail-protection ranges are completed. The transition function of the gateways does not replace statutory planning control but rather provides a deepening direction for professional teams [depth:overall_spatial_structure] [depth:risk_missing_data].
-
 ## Coordinated Research Area: Industry and Future City Research
 
 The core task of the coordinated research scope is to build a world-class AI innovation ecosystem [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. The proposal surveys Haidian universities and institutes (Tsinghua, Peking University, Beihang, BUPT, BIT, CAS, etc.), leading enterprises (Baidu, ByteDance, Kuaishou, Cambricon, BAAI, SenseTime, Megvii, etc.), computing-power / algorithm / data elements (BAAI, Beijing Data Basic Pioneer Zone, Beijing AI Data Training Base), incubation platforms (Zhongguancun Innovation Street, Tsinghua Science Park, Beihang Tianhui, BUPT incubator, PKU incubator), listed companies, unicorns, and sci-tech service resources, and proposes a four-chain spatial framework coordinating "AI innovation chain, industry chain, talent chain, and urban-service chain." The naming concept "Jingzhang 100 · AI Artery" directly serves the overall recognizability of three positions — "Centennial Jingzhang Cultural Belt, Urban AI Life Experience Belt, AI Integration Innovation Belt." "Jingzhang 100" responds to the dual meaning of the centennial Jingzhang cultural narrative and the new centennial journey; "AI Artery" positions agents as new infrastructure supporting urban operation (as railways supported industrial cities a century ago). The naming system unfolds as follows: the core zones "Zhongzhiyuan," "AI Origin Community," and "Dazhongsi" retain official names; corridor nodes are named by combining historical toponyms with agent functions, such as "Zhan Tianyou Node," "Qinghuayuan Node," and "Dazhongsi Node"; public spaces use explicitly commemorative names such as "AI Agent Contribution Honor Wall," "AI Milestone," "Open-Source Achievements Gallery," and "Global Developer Honor Wall"; sub-brands include "AI Artery" (technology brand), "Zhan Tianyou" (talent brand), "Qinghuayuan" (culture brand), and "Haidian AI Developer Community" (community brand) [depth:overall_spatial_structure].
@@ -149,28 +135,6 @@ Spatial organization model: within the overall design scope, the proposal propos
 
 Municipal capacity and new infrastructure: the proposal advances a "edge computing + distributed energy + intelligent sensing" triad strategy. Edge computing: deploy several edge data centers (~300 m² conceptual scale each, with count pending computing-demand assessment) along the Jingzhang Heritage Park corridor to provide low-latency computing for agents, robots, AR/VR, and autonomous driving in public space. Distributed energy: deploy rooftop PV on key-area buildings (photovoltaic coverage per official rooftop load-bearing and insolation assessment), combined with storage and DC distribution; deploy ground-source heat pumps in parks, green space, and road green belts. Intelligent sensing: deploy multimodal sensors on roads and in public spaces (traffic flow, air quality, noise, pedestrian flow), feeding data into the urban agent governance platform; all personally identifiable information must be desensitized and registered per the traceability rules in `brief/site-package/enums/source_types.json` [depth:municipal_new_infrastructure]. Character controls follow [standard:MOHURD-URBAN-DESIGN-MEASURES] across dimensions such as urban tone, building massing, roof form, street-wall alignment, ground-floor permeability, and nighttime lighting, applied to the `building_type` field of each parcel in `geometry/land_use.geojson`.
 
-### Interface with Statutory Planning System
-
-This proposal explicitly distinguishes conceptual recommendations from statutory planning and establishes interfaces with the three-layer statutory system of the Haidian District Plan, Regulatory Detailed Plan, and Urban Design Guidelines [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MOHURD-URBAN-DESIGN-MEASURES]. The interface is not a replacement but a structured input for subsequent statutory deepening.
-
-| Statutory Level | This Proposal's Role | Provided Input | Not Provided | Interface File |
-| --- | --- | --- | --- | --- |
-| District Plan | Conceptual recommendation | Industrial functional zoning, key-area positioning, corridor structure | Land-use nature change, population-scale adjustment | compliance_matrix.json |
-| Regulatory Detailed Plan | Direction for deepening | Land-use codes, conceptual development-intensity recommendation, height zoning | Confirmed FAR values, setback distances, building density | metrics.json (status=unknown) |
-| Urban Design Guidelines | Conceptual guidelines | Character four-color tonal system, building-mass grading, conceptual street-wall alignment | Precise view-corridor control, heritage construction-control zones | standard_matrix.json |
-
-**Pending list of regulatory-plan conditions**: Five regulatory-plan indicators — floor-area ratio (floor_area_ratio), building height (building_height_m), building density (building_density), green ratio (green_ratio), and setback distance (setback_m) — are all marked `status=unknown`, registered in `metrics.json` and `assumptions.json#ASM-002`. After official regulatory-plan conditions are obtained, the proposal must recalculate according to the following seven-step flow:
-
-1. Replace `geometry/site_boundary.geojson` with the official polygon.
-2. Re-run `scripts/generate_geometry.py` to regenerate all 9 GeoJSON files.
-3. Re-run `scripts/generate_metrics.py` to recalculate all 21 core metrics.
-4. Re-run `scripts/generate_figures.py` to render all 5 PNG images.
-5. Re-run `scripts/render_proposal_html.py` and `scripts/embed_fonts_in_html.py`.
-6. Re-run `scripts/self_check_submission.py --mark-self-checked --json`.
-7. Check whether the evidence mapping of the 23 tasks in `compliance_matrix.json` remains valid.
-
-This flow ensures that once official data are released, the proposal can complete all updates in a single recalculation, with no need to revise the body text clause by clause [depth:risk_missing_data].
-
 ## Detailed Design of Key Areas
 
 Detailed design of key areas is mandatory [depth:three_key_area_detailed_design]. The three key-area polygons are tagged provisional in `geometry/key_areas.geojson`, with recomputed areas as follows: Zhongzhiyuan ~192 ha (provisional model geometry) (announcement ~192.1 ha, deviation +0.43%), Beijing AI Origin Community ~104 ha (provisional model geometry) (announcement ~104.3 ha, deviation +0.02%), Dazhongsi ~72 ha (provisional model geometry) (announcement ~72.0 ha, deviation +0.06%) [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003]. Also [metric:key_area_total_sqm]. All three key areas are roughly positioned within the provisional overall design scope as directional design references; all conclusions must be re-evaluated after official polygons are released.
@@ -182,45 +146,6 @@ Detailed design of key areas is mandatory [depth:three_key_area_detailed_design]
 **Dazhongsi AI Industry Agglomeration Zone (south, ~72 ha (provisional model geometry))**: positioned as "intelligence-native new business forms," carrying leading-enterprise headquarters, agents, intelligent terminals, content consumption, data elements, digital assets, commercial services, planned green-space composite use, Dazhongsi Station integration, and four-quadrant pedestrian connectivity. Spatial structure: organized as "enterprise-HQ polar core + intelligent-terminal display belt + digital-asset trading center." Enterprise-HQ polar core: in the northwest quadrant of Dazhongsi Station, place several HQ towers (height 60–80 m conceptual, pending official height limit) (subject to aviation height limits and heritage controls around Dazhongsi; final values subject to official height limits), with stilted or permeable ground floors connecting the station-front public space. Intelligent-terminal display belt: along the north–south axis of Dazhongsi Station, place several smart terminal flagship stores and experience centers (robots, autonomous driving, AR/VR, smart speakers, etc.). Digital-asset trading center: in the southeast quadrant of the station, place data-element, digital-asset trading, and regulatory sandbox. Building renewal: the existing Dazhongsi Wholesale Market and other inefficient commerce are recommended for demolition and rebuild; retain some historical nodes as Dazhongsi cultural-narrative display. Transport and slow traffic: connect to Dazhongsi Station via [data:geometry/roads.geojson#ROAD-TC-03]; four-quadrant pedestrian connectivity is recommended via underground passages and second-level skywalk systems, subject to official road redlines and rail-protection ranges. AI scenarios: (1) AI+ commerce (intelligent-terminal retail, personalized recommendations, virtual try-on); (2) AI+ content consumption (AIGC content production and copyright trading); (3) AI+ data elements (data trading, regulatory sandbox). Implementation risks: Dazhongsi Station rail-protection range, surrounding heritage range, and wholesale-market ownership have not yet obtained official data; conclusions require re-verification after official data are completed [depth:risk_missing_data].
 
 ![Detailed Design of Three Key Areas](assets/figures/key-areas.png)
-
-### Daily Scripts for Three Key Areas
-
-The proposal writes "daily scripts" for each of the three key areas, describing the sequence of interactions between people and agents in space during a typical working day. The scripts are not implementation plans but help reviewers understand how the spatial design supports daily activities [depth:three_key_area_detailed_design].
-
-**Zhongzhiyuan daily script (working day 09:00–18:00)**:
-
-| Time slot | People | Spatial Action | Agent Role | Data Flow |
-| --- | --- | --- | --- | --- |
-| 09:00 | AI researchers walk from Qinghe Station to Zhongzhiyuan | Pass through G1 Qinghe Gateway, switching from motor-vehicle to walking speed | Computing exhibition hall displays current-day compute usage | Anonymous dwell-time count |
-| 10:00 | Research teams work in the basic-large-model R&D center | Inner-core zone closed R&D | SC-09 chip test-and-validation scenario running | Test data localized |
-| 12:00 | Lunch break, walk to Qinghe waterfront park | Corridor greenway rest | AI guide terminal recommends nearby restaurants | No personal-data collection |
-| 14:00 | Safety-governance lab red-team testing | SC-10 safety-governance scenario running | Attack samples stored in physical isolation | No external data outflow |
-| 16:00 | International conference center academic exchange | Outer-ring layout | AI translation assist | Public conference text |
-| 18:00 | End of workday, walk to Qinghe Station | Return through G1 gateway | Computing exhibition hall switches to night-time display | Anonymous dwell-time count reset to zero |
-
-**AI Origin Community daily script (working day 07:00–22:00)**:
-
-| Time slot | People | Spatial Action | Agent Role | Data Flow |
-| --- | --- | --- | --- | --- |
-| 07:00 | Students travel from Wudaokou Station to campus | Pass through G2 Wudaokou Gateway | SC-06 AI+ education scenario starts | Learning behavior ≤6 months |
-| 09:00 | Entrepreneurs work in incubators | Near-campus incubation belt with permeable ground floors | SC-03 enterprise-service agent | Enterprise data localized |
-| 12:00 | Residents seek care at the community center | 5-minute living circle | SC-07 AI+ medical-assisted diagnosis | Medical data encrypted transmission |
-| 14:00 | Developers exchange at the AI Origin Plaza | Open-source results display node | SC-01 AI cultural guide | Anonymous dwell-time count |
-| 18:00 | Residents rest at pocket park | GREEN-003 Xueyuan Road pocket park | Smart-seat charging and environmental sensing | PM2.5/noise public API |
-| 22:00 | Nighttime lighting auto-dims | Residential-zone light-pollution control | Smart lighting with human and light sensing | No personal data |
-
-**Dazhongsi daily script (working day 10:00–20:00)**:
-
-| Time slot | People | Spatial Action | Agent Role | Data Flow |
-| --- | --- | --- | --- | --- |
-| 10:00 | Consumers travel from Dazhongsi Station to the intelligent-terminal display belt | Pass through G4 Dazhongsi Gateway | SC-12 AI+ commerce recommendation | Shopping behavior 90 days |
-| 12:00 | Lunch at the ground floor of the enterprise-HQ tower | Stilted permeable ground floor | SC-03 enterprise service | Enterprise data localized |
-| 14:00 | Visit to the data-element trading center | Station-southeast-quadrant regulatory sandbox | SC-11 standardization verification | Public standard draft |
-| 16:00 | Visit to the AI milestone park | PUBLIC-005 milestone node | 12 AI historical events interactive | No personal-data collection |
-| 18:00 | Evening peak, four-quadrant pedestrian connectivity | Underground passage + second-level skywalk | SC-02 AI+ traffic slow-movement | Aggregated traffic indicators 30 days |
-| 20:00 | Nighttime intelligent-terminal display belt light show | Brand-color lighting | SC-12 recommendation strategy review | Recommendation bias 7-day review |
-
-The time slots, people, and spatial actions in all scripts are conceptual recommendations and do not constitute a specific operational plan; the agent roles are implemented according to the data-governance ledger in `assumptions.json#ASM-006`, with privacy boundaries and human-review mechanisms enforced [source:AGENT-TASKBOOK].
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -257,31 +182,6 @@ The 12 AI scenario cards in this proposal are organized under a three-tier legal
 > Note 3: This proposal no longer uses "video stored 7 days" as a simplified description of the public-safety scenario; SC-04 is now "structured metadata 7 days, raw video not stored," strictly complying with the minimization principle of PIPL Article 26 (public-place exception).
 > Note 4: This proposal no longer uses the Barrier-Free Environment Law as the legal basis for AI-scenario data governance; that law applies to physical-space accessibility construction and does not constitute a legal basis for AI privacy processing. Accessibility design is implemented separately in the physical-space and interface layer (see the "Transport, Rail, Municipal Infrastructure, and Public Services" chapter).
 
-### Governance Constraints Across All Scenarios
-
-The 12 AI scenario cards share a set of cross-cutting governance constraints, ensuring that agent behavior maintains consistent auditability across all scenarios [standard:GENERATIVE-AI-INTERIM-MEASURES]. These constraints do not replace the separate data-governance ledger for each scenario (see `assumptions.json#ASM-006`) but provide a unified baseline across scenarios.
-
-| Constraint ID | Constraint Content | Verification Method | Applicable Scenarios |
-| --- | --- | --- | --- |
-| X01 | Every AI touchpoint must be contestable by the public | Check whether a contestation channel exists and is effective | SC-01 to SC-12 |
-| X02 | Every key AI judgment must be human-reviewed by ≥1 person | Check review records and shift schedules | SC-03/04/06/07/08/09/10/11 |
-| X03 | Personal-information collection requires separate consent (PIPL Art. 28) | Check consent forms and authorization chain | SC-06/07/12 |
-| X04 | Non-personal data must be anonymized before publication | Check anonymization algorithm and public API | SC-01/02/05 |
-| X05 | Data-retention periods must be published | Check publication page and actual enforcement | SC-01 to SC-12 |
-| X06 | Data breaches must trigger response within 1h and notification within 24h | Check incident-response plan and drill records | SC-03/04/07/09/10/12 |
-| X07 | Agent decisions must be traceable | Check decision logs and audit interfaces | SC-03/04/06/07/09/10/11 |
-| X08 | Public complaint channels must reply within 7 days | Check complaint records and reply timeliness | SC-01/04/06/07/08/12 |
-| X09 | AI-generated content must be labeled "AI generated" | Check content labeling and user notification | SC-01/06/08/12 |
-| X10 | Accessible channels must be provided in parallel with AI services | Check physical channels and human alternatives | SC-01/02/04/06/07/08 |
-| X11 | Elderly must have a non-agent alternative path | Check human-service windows and telephone service | SC-01/03/06/07/08/12 |
-| X12 | Minors must have a guardian-authorization mechanism | Check authorization process and age verification | SC-06 |
-| X13 | Business data must be portable and deletable | Check data-export and deletion interfaces | SC-03/12 |
-| X14 | Public-safety data must be subject to public-security approval | Check approval documents and operation permissions | SC-04 |
-| X15 | Attack samples must be stored in physical isolation | Check physical-isolation measures and access logs | SC-10 |
-| X16 | Standard drafts must be published with version control | Check version history and public repository | SC-11 |
-
-These 16 constraints (X01–X16) constitute the "agent behavior baseline" of this proposal; any pre-implementation review of any scenario must check each item. The constraints themselves are not laws but operational refinements under the legal framework of PIPL, the Data Security Law, the Cybersecurity Law, and the Generative AI Service Management Interim Measures [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW].
-
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Within the 11.4 km² overall design scope, the proposal defines 12 land-use polygons, tagged with land-use codes from `brief/site-package/enums/land_use_codes.json` [data:geometry/land_use.geojson#LU-001] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. The land-use structure follows a conceptual ratio of "35% research, 25% residential, 15% commercial-service, 15% green and open space, 5% culture and education, 5% roads and transport." Detailed recomputation: 4 research parcels (0802), 2 residential parcels (0701/0702), 2 commercial-service parcels (05), 1 cultural parcel (0803), 1 educational parcel (0804), and 2 park-green parcels (1401). Adjacent polygons share boundary coordinates with no overlap and no gap; the total area matches the `site_boundary` recomputation [metric:site_area_sqm] [depth:land_use_layout].
@@ -291,26 +191,6 @@ Building scale is organized by 34 conceptual building footprints, with a total f
 The retain-renovate-demolish classification follows the principle of "old-city protection first, industrial-heritage reuse first, inefficient-commerce demolition and rebuild." Retain: Qinghuayuan Railway Station heritage, Dazhongsi historical-cultural nodes, and industrial heritage along Qinghe, carrying cultural-narrative and public-space functions. Renovate: old residential areas and campus-edge inefficient buildings, recommended for conversion into talent apartments, incubators, and community centers. Demolish and rebuild: Dazhongsi Wholesale Market and other inefficient commerce, and industry/warehousing on the south bank of Qinghe, recommended for rebuild as AI enterprise HQs and mixed commerce. The specific retain-renovate-demolish list is tagged via the `building_type` field in `geometry/buildings.geojson#BLDG-xxx` and will be formalized after official as-built building and ownership data are completed [depth:retain_renovate_demolish].
 
 Agent submission boundaries: the taskbook explicitly prohibits writing FAR, building height, building intensity, or specific retain-renovate-demolish outcomes as statutory planning, approval, or engineering implementation conclusions [source:AGENT-TASKBOOK]. When official regulatory plans, as-built buildings, ownership, or engineering conditions are missing, the corresponding control indicators are uniformly recorded as `status=unknown`, and `assumptions.json` describes the recomputation path after official control conditions are completed and the current assumptions and data are in place. Conceptual volumes or design values recomputed from this package's geometry may be retained, but they must be tagged as "concept recommendation / low-confidence design value" and explicitly stated as not equal to statutory control values [depth:risk_missing_data].
-
-### Four-Step Retain-Renovate-Demolish Decision Process
-
-The proposal does not directly provide a retain-renovate-demolish list but instead establishes a four-step decision process for professional teams to execute building by building once official as-built building-census data are completed [depth:retain_renovate_demolish]. The process itself is a proposal outcome — it converts uncertain conclusions into an operable decision method.
-
-| Step | Assessment Content | Required Data | Current Status | Post-Assessment Action |
-| --- | --- | --- | --- | --- |
-| Step 1 | Building age and structural assessment | As-built building census (age, structural type, number of floors, footprint area) | Missing → pending official data | Age ≥50 years or special structure → proceed to Step 2; otherwise → proceed to Step 3 |
-| Step 2 | Heritage-value and protection assessment | Heritage census, historic-building registry, heritage-protection-zone polygon | Missing → pending official data | Heritage value → retain and renovate for cultural display; no heritage value → proceed to Step 3 |
-| Step 3 | Functional adaptability assessment | Current usage, building capacity, renovation feasibility | Missing → pending official data | Adaptable to new function → renovate; not adaptable → proceed to Step 4 |
-| Step 4 | Demolition-and-rebuild necessity and feasibility | Ownership, demolition permit, investment conditions, environmental impact | Missing → pending official data | Demolition-rebuild conditions met → demolish and rebuild; conditions not met → retain status quo and await next renewal round |
-
-**Before official data are completed, the proposal provides the following substitute directional principles** (not a list, only directional):
-
-- Qinghuayuan Railway Station site → retain and renovate as an AI cultural-display node (heritage value is clear).
-- Dazhongsi Wholesale Market → demolish and rebuild as AI enterprise HQs (function has become obsolete; ownership pending confirmation).
-- Old research buildings around universities → renovate as incubators (structure is adaptable; age is moderate).
-- Industry and warehousing on the south bank of Qinghe → await full execution of Steps 1–4 before determining (age and structure pending census).
-
-This process ensures that under any data gap, the proposal does not provide an irresponsible specific list but rather offers a decision method that professional teams can use directly [depth:risk_missing_data] [depth:retain_renovate_demolish].
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -323,26 +203,6 @@ New infrastructure: the proposal advances the "edge computing + distributed ener
 Public service facilities: within the 11.4 km² overall design scope, the proposal places 8 public-space nodes (including 4 AI pilgrimage landmarks), 6 pocket parks, and 5 community centers (matching the rail-station 5-minute living circles) [data:geometry/public_space.geojson#PUBLIC-001] [data:geometry/green_space.geojson#GREEN-001]. Each community center is paired with one primary school, one community health service center, one community legal-aid station, one co-working space, and one pocket park. The specific scale, number of classes, and staffing of public service facilities follow official public-service-facility standards; this proposal provides only spatial locations and conceptual scales [depth:traffic_rail_slow_parking].
 
 ![Mobility, Slow-Traffic & Blue-Green Public Space System](assets/figures/mobility-bluegreen.png)
-
-### Right-of-Way Principles for Four Types of Road Users
-
-The proposal establishes right-of-way principles for four types of road users within the 11.4 km² overall design scope, ensuring that streets in the agent era no longer serve only motor vehicles [depth:traffic_rail_slow_parking].
-
-| User Type | Priority | Right-of-Way Principle | Design Speed | Spatial Guarantee |
-| --- | --- | --- | --- | --- |
-| Pedestrian | 1 (highest) | Full-corridor pedestrian priority; zero-wait pedestrian crossings at intersections | 0–5 km/h | Sidewalk ≥3 m; barrier-free ramps 100% coverage |
-| Bicycle / low-speed shuttle | 2 | Independent non-motor-vehicle lane, physically separated from motor vehicles | 5–20 km/h | Non-motor-vehicle lane ≥2.5 m; docking point every 500 m |
-| Robot / low-speed delivery | 3 | Dedicated robot lane (may share alignment with bicycle lane), speed limit 15 km/h | 5–15 km/h | Robot lane ≥1.5 m; charging pile every 200 m |
-| Motor vehicle | 4 (lowest) | Yield to pedestrians and bicycles; speed limit 30 km/h within key areas | ≤30 km/h | Narrowest lane within road redline; no surface parking lots |
-
-**Right-of-way conflict resolution rules**:
-
-- Pedestrian vs. motor vehicle: intersections use raised crosswalks; motor vehicles must slow to ≤5 km/h.
-- Bicycle vs. robot: when sharing alignment, robots are limited to 10 km/h; bicycles have priority.
-- Robot vs. pedestrian: robots stop automatically when encountering pedestrians; if a pedestrian has not passed within 3 seconds, the robot reroutes.
-- Emergency vehicles: emergency vehicles have priority throughout; the agent traffic system auto-switches to emergency mode.
-
-**Slow-traffic continuity guarantee**: the Jingzhang Heritage Park corridor (~7 km) and the blue-green composite slow-traffic ring (~15 km) have no motor-vehicle crossings along their entire length, with underground passages or skybridges only at rail-station points [data:geometry/roads.geojson#ROAD-GW-01] [data:geometry/roads.geojson#ROAD-RING-01].
 
 ## Blue-Green Network, Public Space, and Urban Character
 
