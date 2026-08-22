@@ -87,6 +87,18 @@
       "status": "synthetic_contract_test_only",
       "statement": "DAZHONGSI-DRILL-01 is a synthetic drill and failure-test suite over the DAZHONGSI-FIELD-OPS-01 template contract. All fixtures are synthetic or paper inputs; field values in the template remain null / unknown / not_observed / not_signed.",
       "impact": "Passing proves reproducible contract logic only. It must not be cited as field observation, site access, permission, entity confirmation, risk clearance, or operating commitment; official or field evidence still triggers full recalculation."
+    },
+    {
+      "id": "A-EXPIRING-TICKET-001",
+      "status": "E2_synthetic_recalculable_contract_only",
+      "statement": "EXPIRING-DATA-TICKET-01 and its normal-expiry and midstream-withdrawal cases are machine-readable E2 synthetic contract evidence for the single node SCN-06 / PROV-KEY-001. No ticket, data, role or stop authority crosses to AI Origin or the separate Dazhongsi package. Field observation, stakeholder evidence, entity assignment, professional confirmation and implementation have not been collected or confirmed.",
+      "impact": "The package may claim that the lifecycle, ticket-execution coupling, substantiated synthetic public return, accessibility fixture coverage, thresholds and checked failure paths are reproducible. It may not claim cross-node operation, observed accessibility or public impact, field performance, site operability, a confirmed legal/operator role, E3/E4 evidence or an implemented service."
+    },
+    {
+      "id": "A-EXPIRING-TICKET-THRESHOLDS-001",
+      "status": "design_threshold_pending_E3_E4_confirmation",
+      "statement": "The no-data-equivalence tolerances, six-task paired accessibility fixtures, and expiry, withdrawal, teardown, derivative, residual, public-return and complaint targets in EXPIRING-DATA-TICKET-01 are executable synthetic admission thresholds, not observed service levels or usability performance.",
+      "impact": "Authorized E3 field tests and E4 professional/operator review must confirm, tighten or reject the thresholds before Gate 2. Any failed threshold blocks output and stops or pauses the scenario; zero observed users must remain explicit until an authorized test occurs."
     }
   ]
 }
