@@ -53,7 +53,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "9e410e1434dfb753440b0710aa458ac07c904548c20c0c05cedee9ec489f5ab6"
+      "sha256": "5c2be45eea98737dccd6ff0ac887f016930f6d270a70cd2964c8b62e2c3383da"
     },
     {
       "path": "metrics.json",
@@ -77,13 +77,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "ab3d8a1ff263980054f2a57e0dc7b012cd42882a919236f2394cab662839ca5a"
+      "sha256": "98b0c0d3c84e048bebc5a6ff982b3b327bd8dfca3267e32896c048d6e4fc2424"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e4f086e3b8c82145319ce30d8a554a83bd0020e1e337bb40ca27d7c26dc914e7"
+      "sha256": "cbad07a888f1aef898898e01bb8c4ddd0390a907b0d7de796f6126c3a546826b"
     },
     {
       "path": "compliance_matrix.json",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "d4f3c90995bcd7be032434758c2f1682ac678784dc7d8a4c90eee6f611d3ce3b"
+      "sha256": "1d0d08700edbd441e316ccc5a86b67a4f2dbd4cf1d3da2783a1381021f9127d8"
     },
     {
       "path": "assets/figures/spatial-prototype.png",

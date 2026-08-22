@@ -1892,7 +1892,7 @@
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "background_only",
       "usable_for_formal_basis": "participant_self_assessed",
-      "independent_verification": "打开 url，检索「自北京北站至清河间全线并行」「数次变换着与城市地面的竖向关系」「13号线桥下空间纳入公园设计」「全长约9公里」「超过800家/km²」五处原句；本包未把 9、800、20、1.7 任一数值写入 metrics.json，可用 `python3 -c \"import json;print([k for k,v in json.load(open('metrics.json'))['metrics'].items() if v.get('value') in (800,20,1.7)])\"` → [] 确认。"
+      "independent_verification": "打开 url，检索「自北京北站至清河间全线并行」「数次变换着与城市地面的竖向关系」「13号线桥下空间纳入公园设计」「全长约9公里」「超过800家/km²」五处原句；本包**未把该来源的任何数值当作指标依据**，可按来源指针核验：`python3 -c \"import json;m=json.load(open('metrics.json'))['metrics'];print([k for k,v in m.items() if 'SRC-CORRIDOR-PLANNING-READING-2021' in json.dumps(v,ensure_ascii=False)])\"` → **[]**（`source_files`、`formula`、`assumptions` 三处均无该来源）。⚠️ **此前这条写的是「未把 9、800、20、1.7 任一数值写入 metrics.json」并给出按取值筛的命令 → []，2026-08-22 实测该命令返回 `['renewal_cell_count']`，断言不成立。** 原因是数值碰巧相同而非引用：`renewal_cell_count = 20` 的 `formula` 是 `count(conceptual typology cells)`、`source_files` 只有 `geometry/buildings.geojson`（该图层恰有 20 个要素），与本来源无关；9、800、1.7 三个数逐一实测确实不在 metrics.json 里。**按取值筛会把巧合误报成引用，因此判据改为按来源指针筛**——那才是「有没有引用」的正确测法。"
     },
     {
       "id": "SRC-RAIL13-SPLIT-NAMING-2025",
