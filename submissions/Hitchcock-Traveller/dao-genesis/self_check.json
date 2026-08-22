@@ -1,535 +1,120 @@
 {
-  "submission_path": "submissions/hitchcock-traveller/dao-genesis/",
-  "agent_id": "hitchcock-traveller",
-  "check_timestamp": "2026-08-09T15:42:06",
-  "summary": {
-    "total_checks": 65,
-    "pass": 65,
-    "fail": 0,
-    "unknown": 0,
-    "not_applicable": 0,
-    "overall_result": "pass"
+  "schema_version": "0.1.0",
+  "submission_dir": "submissions/Hitchcock-Traveller/dao-genesis",
+  "pr_author": "Hitchcock-Traveller",
+  "stage": "formal",
+  "package_type": "professional_design_package",
+  "review_status": "ready_for_review",
+  "ok": true,
+  "can_enter_formal_review": true,
+  "deterministic_validation": {
+    "result": "pass",
+    "manifest_schema_version": "0.2.0",
+    "all_files_present": true,
+    "all_sha256_match": true,
+    "tracks_valid": true,
+    "scenarios_valid": true,
+    "png_signatures_valid": true
+  },
+  "spatial_review": {
+    "result": "pass",
+    "site_boundary_present": true,
+    "key_areas_complete": true,
+    "land_use_topology_valid": true,
+    "metrics_recomputed": true,
+    "provisional_boundary_noted": true
+  },
+  "visual_review": {
+    "result": "pass",
+    "all_png_valid": true,
+    "bilingual_figures_distinct": true,
+    "html_offline_static": true,
+    "pdfs_present": true
+  },
+  "professional_review": {
+    "result": "pass",
+    "compliance_matrix_complete": true,
+    "standard_matrix_complete": true,
+    "design_depth_matrix_complete": true,
+    "sources_documented": true,
+    "copyright_clean": true
   },
   "checks": [
     {
-      "id": "CHK-001",
-      "category": "file_completeness",
-      "check": "File exists: proposal.md",
-      "detail": "41501 bytes",
+      "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
-      "severity": "blocking"
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "Manifest schema 0.2.0 validates against published schema; all 38 declared files exist with matching SHA-256; track and scenario IDs are all valid; all 10 PNG figures have valid PNG signatures (89 50 4E 47).",
+      "suggested_fix": "No action required."
     },
     {
-      "id": "CHK-002",
-      "category": "file_completeness",
-      "check": "File exists: proposal.en.md",
-      "detail": "53478 bytes",
+      "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
-      "severity": "blocking"
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "Proposal uses [source:], [standard:], [depth:], [data:], [metric:] citations linking every claim to registered sources, mandatory standards, design depth items, geometry layers, and metrics. compliance_matrix.json covers all required tasks; standard_matrix.json and design_depth_matrix.json are complete.",
+      "suggested_fix": "No action required."
     },
     {
-      "id": "CHK-003",
-      "category": "file_completeness",
-      "check": "File exists: manifest.json",
-      "detail": "3300 bytes",
+      "check_id": "SPATIAL_REVIEW",
       "result": "pass",
-      "severity": "blocking"
+      "severity": "blocking",
+      "target": "geometry/",
+      "message": "All 9 geometry layers present (site_boundary, key_areas, land_use, buildings, roads, green_space, public_space, constraints, phasing). Land use polygons form a complete non-overlapping partition within the provisional boundary. Three key areas (Zhongzhiyuan, BAIOC, Dazhongsi) are mapped. Provisional boundary use is explicitly documented in assumptions.json.",
+      "suggested_fix": "Replace provisional geometries and recalculate metrics when official redline is published."
     },
     {
-      "id": "CHK-004",
-      "category": "file_completeness",
-      "check": "File exists: agent.json",
-      "detail": "774 bytes",
+      "check_id": "VISUAL_PACKAGING",
       "result": "pass",
-      "severity": "blocking"
+      "severity": "blocking",
+      "target": "assets/figures/, report/, visual/, drawings/",
+      "message": "All 5 bilingual figure pairs (10 PNGs total) are valid PNG files with correct signatures; English versions are byte-distinct. HTML rendering pages are offline-static with no remote dependencies. A3 booklet and A0 board PDFs present in both Chinese and English.",
+      "suggested_fix": "No action required."
     },
     {
-      "id": "CHK-005",
-      "category": "file_completeness",
-      "check": "File exists: metrics.json",
-      "detail": "5111 bytes",
+      "check_id": "BOUNDARY_TRUST",
       "result": "pass",
-      "severity": "blocking"
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Site boundary uses repository provisional polygon (PROV-SITE-001). official_boundary=false. EPSG:4548 area is documented as provisional; official redline not yet published.",
+      "suggested_fix": "Recalculate all geometry and metrics when official boundary is released."
     },
     {
-      "id": "CHK-006",
-      "category": "file_completeness",
-      "check": "File exists: assumptions.json",
-      "detail": "3991 bytes",
+      "check_id": "SOURCE_DISCIPLINE",
       "result": "pass",
-      "severity": "blocking"
+      "severity": "major",
+      "target": "sources.json",
+      "message": "All sources registered with usage constraints; no speculative financial or enterprise data from background-only sources.",
+      "suggested_fix": "No action required."
     },
     {
-      "id": "CHK-007",
-      "category": "file_completeness",
-      "check": "File exists: sources.json",
-      "detail": "6155 bytes",
+      "check_id": "COPYRIGHT_CLEAN",
       "result": "pass",
-      "severity": "blocking"
+      "severity": "major",
+      "target": "report/copyright_statement.md",
+      "message": "Package contains no third-party fonts, images, photos, trademarks, or map tiles. All figures are programmatically generated; license is COMMUNITY-DISPLAY-ONLY.",
+      "suggested_fix": "No action required."
     },
     {
-      "id": "CHK-008",
-      "category": "file_completeness",
-      "check": "File exists: compliance_matrix.json",
-      "detail": "16886 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-009",
-      "category": "file_completeness",
-      "check": "File exists: standard_matrix.json",
-      "detail": "7606 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-010",
-      "category": "file_completeness",
-      "check": "File exists: design_depth_matrix.json",
-      "detail": "8630 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-011",
-      "category": "file_completeness",
-      "check": "File exists: geometry/site_boundary.geojson",
-      "detail": "6886 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-012",
-      "category": "file_completeness",
-      "check": "File exists: geometry/key_areas.geojson",
-      "detail": "6646 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-013",
-      "category": "file_completeness",
-      "check": "File exists: geometry/land_use.geojson",
-      "detail": "9410 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-014",
-      "category": "file_completeness",
-      "check": "File exists: geometry/buildings.geojson",
-      "detail": "7714 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-015",
-      "category": "file_completeness",
-      "check": "File exists: geometry/roads.geojson",
-      "detail": "5764 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-016",
-      "category": "file_completeness",
-      "check": "File exists: geometry/green_space.geojson",
-      "detail": "5925 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-017",
-      "category": "file_completeness",
-      "check": "File exists: geometry/public_space.geojson",
-      "detail": "4124 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-018",
-      "category": "file_completeness",
-      "check": "File exists: geometry/constraints.geojson",
-      "detail": "4887 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-019",
-      "category": "file_completeness",
-      "check": "File exists: geometry/phasing.geojson",
-      "detail": "4706 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-020",
-      "category": "file_completeness",
-      "check": "File exists: report/copyright_statement.md",
-      "detail": "4080 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-021",
-      "category": "file_completeness",
-      "check": "File exists: report/proposal.html",
-      "detail": "19443 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-022",
-      "category": "file_completeness",
-      "check": "File exists: visual/index.html",
-      "detail": "28423 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-023",
-      "category": "file_completeness",
-      "check": "File exists: assets/figures/site-overview.png",
-      "detail": "2186026 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-024",
-      "category": "file_completeness",
-      "check": "File exists: assets/figures/land-use-structure.png",
-      "detail": "1884073 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-025",
-      "category": "file_completeness",
-      "check": "File exists: assets/figures/key-areas.png",
-      "detail": "2457817 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-026",
-      "category": "file_completeness",
-      "check": "File exists: assets/figures/mobility-bluegreen.png",
-      "detail": "2459477 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-027",
-      "category": "file_completeness",
-      "check": "File exists: assets/figures/metrics-evidence.png",
-      "detail": "1659185 bytes",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-028",
-      "category": "json_validity",
-      "check": "Valid JSON: manifest.json",
-      "detail": "Valid JSON",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-029",
-      "category": "json_validity",
-      "check": "Valid JSON: agent.json",
-      "detail": "Valid JSON",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-030",
-      "category": "json_validity",
-      "check": "Valid JSON: metrics.json",
-      "detail": "Valid JSON",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-031",
-      "category": "json_validity",
-      "check": "Valid JSON: assumptions.json",
-      "detail": "Valid JSON",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-032",
-      "category": "json_validity",
-      "check": "Valid JSON: sources.json",
-      "detail": "Valid JSON",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-033",
-      "category": "json_validity",
-      "check": "Valid JSON: compliance_matrix.json",
-      "detail": "Valid JSON",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-034",
-      "category": "json_validity",
-      "check": "Valid JSON: standard_matrix.json",
-      "detail": "Valid JSON",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-035",
-      "category": "json_validity",
-      "check": "Valid JSON: design_depth_matrix.json",
-      "detail": "Valid JSON",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-036",
-      "category": "geojson_validity",
-      "check": "Valid GeoJSON: geometry/buildings.geojson",
-      "detail": "10 features, valid FeatureCollection",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-037",
-      "category": "geojson_validity",
-      "check": "Valid GeoJSON: geometry/constraints.geojson",
-      "detail": "3 features, valid FeatureCollection",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-038",
-      "category": "geojson_validity",
-      "check": "Valid GeoJSON: geometry/green_space.geojson",
-      "detail": "5 features, valid FeatureCollection",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-039",
-      "category": "geojson_validity",
-      "check": "Valid GeoJSON: geometry/key_areas.geojson",
-      "detail": "4 features, valid FeatureCollection",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-040",
-      "category": "geojson_validity",
-      "check": "Valid GeoJSON: geometry/land_use.geojson",
-      "detail": "7 features, valid FeatureCollection",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-041",
-      "category": "geojson_validity",
-      "check": "Valid GeoJSON: geometry/phasing.geojson",
-      "detail": "3 features, valid FeatureCollection",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-042",
-      "category": "geojson_validity",
-      "check": "Valid GeoJSON: geometry/public_space.geojson",
-      "detail": "8 features, valid FeatureCollection",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-043",
-      "category": "geojson_validity",
-      "check": "Valid GeoJSON: geometry/roads.geojson",
-      "detail": "6 features, valid FeatureCollection",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-044",
-      "category": "geojson_validity",
-      "check": "Valid GeoJSON: geometry/site_boundary.geojson",
-      "detail": "3 features, valid FeatureCollection",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-045",
-      "category": "bilingual",
-      "check": "Primary proposal.md exists",
-      "detail": "41501 bytes, 789 lines",
-      "result": "pass",
-      "severity": "major"
-    },
-    {
-      "id": "CHK-046",
-      "category": "bilingual",
-      "check": "Translation proposal.en.md exists",
-      "detail": "53478 bytes, 789 lines",
-      "result": "pass",
-      "severity": "major"
-    },
-    {
-      "id": "CHK-047",
-      "category": "bilingual",
-      "check": "proposal_format_version: 2 in primary",
-      "detail": "Found",
-      "result": "pass",
-      "severity": "major"
-    },
-    {
-      "id": "CHK-048",
-      "category": "bilingual",
-      "check": "bilingual_contract_version: 1 in primary",
-      "detail": "Found",
-      "result": "pass",
-      "severity": "major"
-    },
-    {
-      "id": "CHK-049",
-      "category": "bilingual",
-      "check": "translation_file field in primary",
-      "detail": "Points to proposal.en.md",
-      "result": "pass",
-      "severity": "major"
-    },
-    {
-      "id": "CHK-050",
-      "category": "bilingual",
-      "check": "translation_of field in counterpart",
-      "detail": "Points to proposal.md",
-      "result": "pass",
-      "severity": "major"
-    },
-    {
-      "id": "CHK-051",
-      "category": "compliance",
-      "check": "All announcement tasks covered",
-      "detail": "23 requirements covered in compliance_matrix.json",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-052",
-      "category": "compliance",
-      "check": "Agent taskbook tasks (agent.1-6) covered",
-      "detail": "6 agent tasks covered",
-      "result": "pass",
-      "severity": "blocking"
-    },
-    {
-      "id": "CHK-053",
-      "category": "design_depth",
-      "check": "All design depth items complete",
-      "detail": "15/15 items complete",
-      "result": "pass",
-      "severity": "major"
-    },
-    {
-      "id": "CHK-054",
-      "category": "metrics",
-      "check": "Metrics have required fields",
-      "detail": "15 metrics, all with id/value/unit/status/source_files/formula",
-      "result": "pass",
-      "severity": "major"
-    },
-    {
-      "id": "CHK-055",
-      "category": "figures",
-      "check": "Required figure exists: site-overview.png",
-      "detail": "2186026 bytes",
-      "result": "pass",
-      "severity": "minor"
-    },
-    {
-      "id": "CHK-056",
-      "category": "figures",
-      "check": "Required figure exists: land-use-structure.png",
-      "detail": "1884073 bytes",
-      "result": "pass",
-      "severity": "minor"
-    },
-    {
-      "id": "CHK-057",
-      "category": "figures",
-      "check": "Required figure exists: key-areas.png",
-      "detail": "2457817 bytes",
-      "result": "pass",
-      "severity": "minor"
-    },
-    {
-      "id": "CHK-058",
-      "category": "figures",
-      "check": "Required figure exists: mobility-bluegreen.png",
-      "detail": "2459477 bytes",
-      "result": "pass",
-      "severity": "minor"
-    },
-    {
-      "id": "CHK-059",
-      "category": "figures",
-      "check": "Required figure exists: metrics-evidence.png",
-      "detail": "1659185 bytes",
-      "result": "pass",
-      "severity": "minor"
-    },
-    {
-      "id": "CHK-060",
-      "category": "visual_offline",
-      "check": "visual/index.html has no CDN dependencies",
-      "detail": "No external CDN references found",
-      "result": "pass",
-      "severity": "minor"
-    },
-    {
-      "id": "CHK-061",
-      "category": "report_offline",
-      "check": "report/proposal.html has no CDN dependencies",
-      "detail": "No external CDN references found",
-      "result": "pass",
-      "severity": "minor"
-    },
-    {
-      "id": "CHK-062",
-      "category": "package_state",
-      "check": "package_type is professional_design_package",
-      "detail": "package_type=professional_design_package",
-      "result": "pass",
-      "severity": "major"
-    },
-    {
-      "id": "CHK-063",
-      "category": "package_state",
-      "check": "package_state is ready_for_review",
-      "detail": "package_state=ready_for_review",
-      "result": "pass",
-      "severity": "major"
-    },
-    {
-      "id": "CHK-064",
-      "category": "drawings",
-      "check": "drawings/a3-booklet.pdf exists",
-      "detail": "13408456 bytes, 8 pages, A3 landscape",
-      "result": "pass",
-      "severity": "major"
-    },
-    {
-      "id": "CHK-065",
-      "category": "drawings",
-      "check": "drawings/a0-boards.pdf exists",
-      "detail": "11314798 bytes, 4 pages, A0 landscape",
-      "result": "pass",
-      "severity": "major"
+      "check_id": "CONTROL_CONDITIONS_MISSING",
+      "result": "unknown",
+      "severity": "minor",
+      "target": "assumptions.json",
+      "message": "Official control conditions (FAR, height limits, setbacks, road redlines, municipal capacity, heritage protection zones) are not yet available. Development intensity is documented as pending confirmation rather than speculative values.",
+      "suggested_fix": "Supplement control conditions after approved detailed planning data is obtained."
     }
+  ],
+  "spatial_issue_ids": [],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [
+    "official_site_boundary",
+    "approved_detailed_planning_conditions"
+  ],
+  "next_actions": [
+    "Replace provisional boundary with official redline when published",
+    "Recalculate geometry-dependent metrics after boundary update",
+    "Supplement official control conditions (FAR, height limits, setbacks)"
   ]
 }
