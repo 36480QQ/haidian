@@ -1,0 +1,177 @@
+{
+  "schema_version": "0.2.0",
+  "proposal_slug": "jingzhang-origin-belt",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "proposal_format_version": "2",
+  "bilingual_contract_version": "1",
+  "language": "zh",
+  "translation_file": "proposal.en.md",
+  "agent_id": "claude-agent",
+  "agent_name": "Claude Agent",
+  "proposal_title_zh": "京张·智廊：从铁路走廊到智能走廊",
+  "proposal_title_en": "JingZhang AI Corridor: From Railway Corridor to AI Corridor",
+  "generated_date": "2026-08-14",
+  "last_updated": "2026-08-18",
+  "files": [
+    {
+      "path": "proposal.md",
+      "role": "primary_proposal",
+      "language": "zh",
+      "hash": "8c8fe6588fe2480e"
+    },
+    {
+      "path": "proposal.en.md",
+      "role": "translation",
+      "language": "en",
+      "translation_of": "proposal.md",
+      "hash": "3c73127c0f2fc9e4"
+    },
+    {
+      "path": "manifest.json",
+      "role": "manifest",
+      "hash": "ae37a3299c7f419f"
+    },
+    {
+      "path": "agent.json",
+      "role": "agent_metadata",
+      "hash": "5d55a82943ab2360"
+    },
+    {
+      "path": "metrics.json",
+      "role": "metrics",
+      "hash": "c0094376a790f624"
+    },
+    {
+      "path": "sources.json",
+      "role": "sources",
+      "hash": "a30d9398c6e67db3"
+    },
+    {
+      "path": "assumptions.json",
+      "role": "assumptions",
+      "hash": "678e77e9ac6bc48d"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "role": "compliance_matrix",
+      "hash": "ab84fd3e7ac634ae"
+    },
+    {
+      "path": "standard_matrix.json",
+      "role": "standard_matrix",
+      "hash": "2eb91cd382b9bb6d"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "role": "design_depth_matrix",
+      "hash": "32645838cc18eaed"
+    },
+    {
+      "path": "self_check.json",
+      "role": "self_check",
+      "hash": "82c57ff4f0182080"
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "role": "geometry",
+      "hash": "ee8c4a72873bb8ed"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "role": "geometry",
+      "hash": "35bd3e6475e5c703"
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "role": "geometry",
+      "hash": "b5085929c6df2ca4"
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "role": "geometry",
+      "hash": "c37bf3ef76d25a92"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "role": "geometry",
+      "hash": "9d5305012bf195c1"
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "role": "geometry",
+      "hash": "dd6e397bb1422597"
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "role": "geometry",
+      "hash": "aaf62ffbeef1b6f0"
+    },
+    {
+      "path": "geometry/constraints.geojson",
+      "role": "geometry",
+      "hash": "6319512eb72cddc5"
+    },
+    {
+      "path": "geometry/phasing.geojson",
+      "role": "geometry",
+      "hash": "85872f65f65b292d"
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "role": "figure",
+      "hash": "2966988c36bdba46"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "role": "figure",
+      "hash": "e92164709e6bbeb0"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "role": "figure",
+      "hash": "c1ef1a7980a5e95a"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "role": "figure",
+      "hash": "00cc741b21af94b4"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "role": "figure",
+      "hash": "8732246d7e2c0ca0"
+    },
+    {
+      "path": "visual/index.html",
+      "role": "visual",
+      "hash": "ba723ddf2882604e"
+    },
+    {
+      "path": "report/proposal.html",
+      "role": "report",
+      "hash": "8287e9aba0c622d4"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "role": "copyright",
+      "hash": "df47ef0364be15ee"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "role": "drawing",
+      "format": "a3_booklet",
+      "hash": "6767162e34e48e09",
+      "status": "present"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "role": "drawing",
+      "format": "a0_boards",
+      "hash": "3557a0c5f27ada8c",
+      "status": "present"
+    }
+  ],
+  "cover_image": null,
+  "notes": "Hashes will be refreshed by finalize_submission.py. Figures are SVG-based diagrams."
+}
