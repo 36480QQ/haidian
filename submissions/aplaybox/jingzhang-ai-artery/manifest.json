@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "0e9b659d2d80055bcf2e6b1c17adac5bedf39f160c468ef69c2e0c4b96c09017"
+      "sha256": "1520901c564c3d80389d6cb99224a230fd13c21f54caae8b8976cd192fd24491"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0d435496c2e69878d072c383da93d05314bbcb14cf51b8a2d30ef1f06c2f610b"
+      "sha256": "780ede8de50d9dec9a5ad2ec313f3fd31d2f281b84d29f292d9d7fdbf9ec20e7"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "9d6877641204f952370a93469df12f4921515918def5b712b77a0e5c1dca0476"
+      "sha256": "b8f42a96243de1627d511567e24e2f75adabf9fcea7010f88c28a434cc8c408a"
     },
     {
       "path": "report/narrative.md",
@@ -114,42 +114,42 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "537c6d3c19e52a03bccaadf698b85f7c365898fe1c491b6b43be3339ea579d81"
+      "sha256": "013a3b1ec34a7d9d5fe17e7f200c9ad450cf2e79194698632e673aaa11f9fa2e"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "2fa6909a465b2e9894fed7691d4c72e9b66c7f44f2fe2ecadf342c5bc7f8005e"
+      "sha256": "b7033e84915d4c65eef220202b54d35e8cc411eed265b7f3e519a57bff2c368e"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "c9242b273ce6ccc6735ebc6daac71aefb214d8a1d23b9b5e422aab3356be15b0"
+      "sha256": "ff072afe113f6d3547de71947de7186e11719357bf6ef83788d07baadb87e4c2"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "8df14be69be847f627343da917a64eafcb7a6d6d27b3210a34fd795796910078"
+      "sha256": "407d625db27a4a9d89c2bf51c67b6bae79a0e8e3bfd3da32c6d42a2dadcb2dee"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "dd72c3bff0074c2c64e79a585385a325d8e61ce62d62e366a022ccc8189732d8"
+      "sha256": "1d6cf583f7fc9c5e47d805ddd4d09187f240e49379358f06ece068b4122e30e5"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "f9258b92d61dad04c5bdaa97e9d82ea124dbde5b3dd42884fe4a771b038a78fc"
+      "sha256": "f74d32e6fff1b5f22afb50b1a432a18f30a3dc681a19b64bf4bc8636eecc8f50"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f214cc7171afcee129bfee8f78303f6334a2292ca2675d176a977f1a3e9f8d6d"
+      "sha256": "0e0eef99f7d04c19fdab8c1e746e799fe510a5ec83e56510bf35ae091d366994"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b6df26e0226d3dcfe3e3ccad58a412ba2bcbfffb880462fe10c4ad8b65d6d6ab"
+      "sha256": "1bffd06cf65cd41beea629380b10a9cf7c713d56c5dbd0921c90d01d0e8279f5"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "9fc8a9ee94d72a32ffc48b6981f90336ffb91c1cb7d997f7a1743c573b44542e"
+      "sha256": "77a3035d0e94497d9710eb5f2626602253643a1f07ce031c8002c92d1def2e09"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -292,7 +292,7 @@
       "role": "narrative",
       "required": false,
       "language": "zh",
-      "sha256": "20714a7b6a0992671db02fee51332ac5865e538cb84baf074241c662542de1e6"
+      "sha256": "a4f2d072779a30cffd55a677b6a8a084245c1f59bcadbfea8256182a09dadac0"
     },
     {
       "path": "assets/media/cover.webp",
