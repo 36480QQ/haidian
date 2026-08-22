@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "5e4ab0ef0599a688af8d9d373f834724d6718a82b03175f96b7d3ef33679e0e9"
+      "sha256": "901fb6b90f22e8d899694f37a501aa6cf9fed51e3783d5a9094c3a62152172c9"
     },
     {
       "path": "agent.json",
@@ -83,7 +83,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0dffbb318debc230e48012e4f77386448739291e0294e9186f01ae922e0c23f1"
+      "sha256": "3b31e1b155e55117bad5ba0b71f283de7c485b361f1b9fa157039243885bd7a8"
     },
     {
       "path": "compliance_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7651e03bbd49912360c7ef92113318b3755f23b9c650fce8dce66dddcaa65600"
+      "sha256": "682f4e296b977ccaac9746b6aa3a77d0e936daf113c1e159e968d34f37d77d2a"
     },
     {
       "path": "report/narrative.md",
@@ -148,14 +148,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "37562ac8496233eb744c6732a8b48fe729d8fe85247de2af724f70be5096b8a7"
+      "sha256": "052239527e4751c43ef0c7bf891d35edc0635b8fcd420f9771b1c318009c65b8"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "b17234e956ee18aab7474edadba6fd5fa4d81ca18ea1e3a58a0df5fd64e5e2b7"
+      "sha256": "d04cff78fa9c338968fbb7d7e4177cd4ab5574993555511ae8dde01dd8cb520d"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -169,7 +169,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "5563a82aefba99dc9ac75ebc99d54d1298ff2ff918eabd799d6b371f4cd86a32"
+      "sha256": "691ae684b1a85c34845d3ee6903ac89922378bf4decde09002b87806aca455c4"
     },
     {
       "path": "assets/figures/site-overview.png",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4967be0ea92812bcff0137aa0f3fcc0f06fbb0b4276e602e8a535b8c997081b3"
+      "sha256": "ffac0c43749d82466d428dd30587b1600c5b0489a58105c832eb82f957ccedd1"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "116b9de570adf05c154510a23253c969ddc0c820c5a5a516f6549610a7a0c2ee"
+      "sha256": "b01252dba8fcf275d14dde2f87177b51160bd79b026ee661edb6a72bddd5264b"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -278,7 +278,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "861352964c0237a756fca34ea105d6ab4ee779d684cfee04730e772548fd4d15"
+      "sha256": "79bdb385bdeae1c2e3274612460a03b322801086d324dd7f8ad7beebf760ec3f"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -286,7 +286,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "2e80d0e9cef2ae8be2ee5e9fd2e6469061659b49a2b5e2c7be162a3a1a7be139"
+      "sha256": "68100ed7d4bc1f6e870034764ecf31b2727d13ba3d988fb168af209c38995268"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -362,7 +362,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "93029a47cb4841e5aa1edac751cac18601aea46e062766a4da5da2db9b546534"
+      "sha256": "bfb17d198ec4844c1edd6287a9b1bddfda8d1471cb5bb790f7264f5da9750080"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "0f919d37c1d8c4e1659e0323c60fee130e6d0945e0f338759e3cfaece33a0e9c"
+      "sha256": "055f0548e9b5971876411819bc86a747e937564de6519dd4695374e2ddddfc64"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
