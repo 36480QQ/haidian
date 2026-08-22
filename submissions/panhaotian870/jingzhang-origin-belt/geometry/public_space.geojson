@@ -1,0 +1,72 @@
+{
+  "type": "FeatureCollection",
+  "name": "origin_jingzhang_public_space",
+  "metadata": {
+    "proposal_slug": "jingzhang-origin-belt",
+    "coordinate_reference_system": "EPSG:4326",
+    "generated_date": "2026-08-14",
+    "note": "Conceptual public space nodes. All features are conceptual suggestions."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PS-HONOR-WALL-001",
+      "properties": {
+        "id": "PS-HONOR-WALL-001",
+        "layer": "public_space",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "space_type": "honor_display",
+        "name_zh": "智能体贡献荣誉墙",
+        "name_en": "Agent Contribution Honor Wall",
+        "description_zh": "展示AI Agent和人类贡献者的数字+实体荣誉墙",
+        "description_en": "Digital + physical honor wall displaying AI Agent and human contributors"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.348, 39.97]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PS-MILESTONE-001",
+      "properties": {
+        "id": "PS-MILESTONE-001",
+        "layer": "public_space",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "space_type": "milestone_plaza",
+        "name_zh": "AI里程碑广场",
+        "name_en": "AI Milestone Plaza",
+        "description_zh": "时间轴形式展示AI发展史重要里程碑",
+        "description_en": "Timeline display of major AI milestones"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.348, 39.955]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PS-LIGHT-TUNNEL-001",
+      "properties": {
+        "id": "PS-LIGHT-TUNNEL-001",
+        "layer": "public_space",
+        "source_type": "agent_design",
+        "confidence": "conceptual",
+        "geometry_role": "design_layer",
+        "space_type": "immersive_experience",
+        "name_zh": "源·光隧道",
+        "name_en": "Origin Light Tunnel",
+        "description_zh": "利用铁路隧道空间打造沉浸式AI艺术体验",
+        "description_en": "Immersive AI art experience in railway tunnel space"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.348, 39.975]
+      }
+    }
+  ]
+}
