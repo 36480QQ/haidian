@@ -36,7 +36,7 @@ const IDS = [
   "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8",
   "S1", "S2", "S3", "S4",
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
-  "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10",
+  "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "J2", "Z1",
@@ -228,6 +228,13 @@ negInput("sources.json 把现行登记的指针改回已作废的历史条目 �
         const r = d.requirements.find((x) => x.requirement_id === "agent.5");
         if (!r.standard_ids.includes("WCAG-CONTRAST")) r.standard_ids.push("WCAG-CONTRAST");
       }) }, ["J2"]);
+
+  negInput("正文把退役的活动名「维护者之夜」写回《条件分期》一节 —— 本包 2026-08-22 修掉的三套并存里的一套",
+    { "proposal.md": textOf("proposal.md").replace("夏季**验证开放日**", "夏季**维护者之夜**") }, ["P11"]);
+
+  negInput("四季表少一行 —— 由 4 行变 3 行，而「逐名一致」与「退役名零出现」都仍成立",
+    { "proposal.md": textOf("proposal.md").replace(
+        "| 冬 | 年度交接账发布：留下、修改、停用的项目同屏公布 | SHARE→SERVE | 年度交接账与逐项停用原因 |\n", "") }, ["P11"]);
 
 /* 最后两例打 runner。 */
 const negRunner = (label, files, want) => negative(label, () => {

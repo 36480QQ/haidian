@@ -221,6 +221,35 @@ add("P9", "正文写出了三处重点区的断面实取值 15.4／17.1／15.1",
         : `落点表垂距列解析失败：解析到 ${dists.length} 个值`);
 }
 
+/* P11. 四季活动名的单一权威。2026-08-22 查出正文里有两套四季活动：
+   《年度活动体系》一节的表给出 开放问题周／验证开放日／全球交接周／年度交接账发布，
+   而《条件分期》一节写的是 开源交班／维护者之夜／全球交接周／（冬季无名），只有一个对上；
+   F/08 图件上的活动 IP 又是第三套（含 夜班维护者之夜、年度复盘班，两者全文 0 次）。
+   已统一到表为准。这一项盯三件事：表恰 4 行、每个名字在正文另一处也出现、退役名零出现。
+   4 这个规模写死——表少一行时「逐名一致」仍会成立。 */
+{
+  const head = "| 时节 | 活动 | 对应环节 | 留下的公共产物 |";
+  const i = prose.indexOf(head);
+  const rows = i < 0 ? [] : prose.slice(i, prose.indexOf("\n\n", i)).split("\n")
+    .filter((l) => l.startsWith("|")).slice(2);
+  const names = rows.map((l) => {
+    const cell = l.split("|").map((x) => x.trim())[2] || "";
+    return cell.split(/[：:]/)[0].replace(/\*+/g, "").trim();
+  }).filter(Boolean);
+  const retired = ["开源交班", "维护者之夜", "夜班维护者之夜", "年度复盘班"];
+  const stillThere = retired.filter((n) => prose.includes(n));
+  const onlyOnce = names.filter((n) => (prose.split(n).length - 1) < 2);
+  add("P11", "四季活动只有一套名称：《年度活动体系》表恰 4 行，四个名字在正文另有引用，三套并存时的退役名零出现",
+      names.length === 4 && stillThere.length === 0 && onlyOnce.length === 0,
+      names.length !== 4
+        ? `四季表解析到 ${names.length} 行，应为 4 行`
+        : stillThere.length
+          ? `退役活动名仍在正文：${stillThere.join("、")}`
+          : onlyOnce.length
+            ? `只在表里出现一次、正文别处未引用：${onlyOnce.join("、")}`
+            : `${names.join("／")}；退役名 0 处`);
+}
+
 /* F. 断面表的算术。
    本包第一处硬错就出在这里：通用断面表把「建筑退线」定义为 A1＋A2＋A3＋余量（一个容器），
    却又把它和它自己的子段一起相加，写出一个复算不出来的「单侧合计 18–27 m」。
@@ -586,7 +615,7 @@ const EXPECTED_IDS = [
   "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8",
   "S1", "S2", "S3", "S4",
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
-  "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10",
+  "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "J2",
