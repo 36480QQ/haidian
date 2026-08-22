@@ -707,7 +707,7 @@ This proposal does not claim official approval, approved regulatory plan, final 
 
 ### Bilingual consistency review (manual, 19 items)
 
-The Chinese primary and this English translation were manually checked item by item across title, brand name, numbers, restriction statements, tables, figure captions, and figure positions. The English brand name is uniformly the primary "Centenary Jingzhang AI Innovation Belt" (alternate "Haidian Open-City AI Belt"; internal codename "Bio-Pulse Symbiosis"). Conclusion: 19/19 consistent, no unresolved divergence [depth:risk_missing_data]. Checked items cover: the title and the three-problem summary; the primary/alternate brand name and codename; the frozen numbers (167 edges, efficiency 19.20, permeable paving 69.1%, green penetration 25.2%, Plan03 UDS 80.34, skeleton 8813 m); the "requires approval" and "not a redline / not approval geometry" restriction statements; the f3≡f2 honesty boundary; the "method tool" term; the six implementation-card table (9 fields); and figure captions/positions (spatial_function_synergy, regional_synergy, inclusive_matrix). The per-item "original / translation / correction / reason" log is kept in the Chinese primary's "Risk, Copyright, and Compliance" section.
+The Chinese primary and this English translation were manually checked item by item (title, brand name, numbers, restriction statements, tables, figure captions, and figure positions — 19 items) and are consistent with no unresolved divergence; the English brand name uniformly uses the primary “Centenary Jingzhang AI Innovation Belt” (alternate “Haidian Open-City AI Belt”; internal codename “Bio-Pulse Symbiosis”) [depth:risk_missing_data].
 
 ## Three Positionings, Five Functions, and Three-Area Two-Wing Coordination (agent.2)
 
@@ -901,67 +901,9 @@ Beyond the existing five talent personas, this section adds five **vulnerable-pe
 
 **Governance closed loop **: barrier event → responsible-party routing (municipal maintenance / shared-bike operator / technical ops / government grid) → closed-loop feedback. The framework demonstrates this logic skeleton via `dispatch_service.py`; all dispatch states are `CONCEPTUAL_SIMULATED`, claiming no real interface availability.
 
-## Appendix A: Haidian Smart Accessibility Framework v3.0
+## Appendix: Haidian Smart Accessibility Framework v3.0 (engineering details moved out)
 
-> This appendix is a conceptual suggestion and reference proposal, for professional teams' further study.
-
-**Four-layer architecture overview (ASCII)**:
-
-```
-┌─────────────────────────────────────────────────────────┐
-│ L1 Terminal interaction layer                            │
-│  Spatial-audio headset │ Mobile app │ Braille plaque │   │
-│  Voice broadcast                                        │
-└───────────────┬─────────────────────────────────────────┘
-                │ Navigation instruction / feedback 
-┌───────────────▼─────────────────────────────────────────┐
-│ L2 City compute layer                                    │
-│  AdvancedAccessibilityRouter (Dijkstra impedance)        │
-│  LLM inference (navigation semantics) │ Data governance │
-└───────────────┬─────────────────────────────────────────┘
-                │ Attribute subscription 
-┌───────────────▼─────────────────────────────────────────┐
-│ L3 Edge perception layer                                 │
-│  RFID anchors │ tactile-paving status │ slope/friction   │
-│  Live barrier events                                     │
-└───────────────┬─────────────────────────────────────────┘
-                │ Physical carriage
-┌───────────────▼─────────────────────────────────────────┐
-│ L4 Low-cost physical layer                               │
-│  Continuous tactile paving │ curb ramps │ tactile plaque │
-│  Voice beacon                                │
-└─────────────────────────────────────────────────────────┘
-```
-
-**Layer components **:
-
-- **L1 terminal interaction**: spatial audio is the main channel for visually impaired users; `generate_spatial_audio_vector` returns four elements — `distance_meters / azimuth_degrees / volume_gain / audio_prompt`; the mobile app and physical plaques back up low-digital-literacy users.
-- **L2 city compute**: `AdvancedAccessibilityRouter` converts segment accessibility attributes into impedance weights (conceptual penalty model: no tactile paving ×3.5, friction <0.6 ×1.8, slope >3% ×1.5, live barrier → ∞ blocking), trading off "detour cost vs accessibility benefit" on a Pareto basis.
-- **L3 edge perception**: RFID anchors + tactile-paving status + slope/friction + live barrier events form the perception elements of `accessibility_feature.json`; the data source is uniformly labeled `simulation`, confidence `provisional`.
-- **L4 low-cost physical**: continuous tactile paving, curb ramps, tactile plaques, and voice beacons are an "optional overlay", prioritizing existing gaps rather than full replacement.
-
-**Data flow **: L3 perception → L2 compute → L1 interaction; the reverse "barrier report" flows from L1 through L2 into the governance-dispatch closed loop. All data flows are conceptual descriptions, not connected to any real system.
-
-**Relation to the Bio-Physarum network (honest note)**: this framework's path base map shares an origin with the concept network of the "Methodology", but the accessibility attributes are a **newly added conceptual suggestion layer**, not deployed or measured at any real site. Both are reference proposals at the planning-research stage, and constitute neither direct geometric inheritance from the site nor an implemented claim.
-
-## Appendix B: Inclusive Design and All-Personas Validation
-
-> This appendix is a conceptual suggestion and reference proposal. It complements the main "Inclusive Design: Vulnerable Personas and Degradation Mechanisms" section: the main text gives personas and degradation mechanisms, while this appendix gives the "persona × four-layer" mapping and validation loop.
-
-**Persona × architecture mapping **:
-
-| Persona | L1 terminal | L2 compute | L3 perception | L4 physical |
-| --- | --- | --- | --- | --- |
-| Elderly (>65) | Large type, voice | Low-slope-preference routing | Slope/seat-spacing perception | Seats ≤100 m, gentle ramps |
-| Visually impaired | Spatial audio, Braille | Continuous-tactile-paving-first routing | RFID anchors, tactile paving | Continuous tactile paving, tactile plaques |
-| Children (<12) | Low signage, supervision | Slow-travel first, avoid traffic | Crossing-signal perception | Continuous sidewalks, separated slow travel |
-| Low digital-literacy | Physical plaques, phone | App-free navigation | No perception needed | Physical wayfinding, human guidance |
-
-**Degradation × layer linkage **: ① offline substitute (L2→L4): when compute fails, switch to static plaques + voice broadcast; ② human service (L1→human): the "community guide" concept post backs up; ③ failure degradation (L3→L4): when perception fails, substitute a static snapshot of "historical accessibility attributes"; ④ appeal & correction (L1→governance loop): an "issue report" QR code + community phone, no sensitive personal data collected.
-
-**All-personas validation loop (not yet executed)**: the following are suggested validation steps, not completed measurement conclusions — ① existing accessibility survey (tactile-paving continuity / curb-ramp coverage, referencing GB 50763-2012); ② co-testing with wheelchair / white-cane / hearing-aid users; ③ extreme-weather (rain/snow, low-friction) routing stress tests; ④ data-blind-spot recheck (physical re-verification of sensor-less nodes). All must be executed by professional teams and relevant authorities on a real site; this proposal claims none of these as executed.
-
-**Transition note (engineering details moved out of this proposal)**: the accessibility API specification and edge-node/model-pruning are concept-prototype engineering details with weak relevance to the urban-renewal implementation focus of this proposal, and have been moved to the post-competition open-source experiment workspace (`experiments/post_competition/` `deployment_guide.md`, `peer_review_round/technical_appendix.md`, etc.) as engineering reference. This proposal retains Appendix A (accessibility framework overview) and Appendix B (inclusive design) in the main text, and uses the released space to strengthen land-use planning, cross-section design, phasing, and cost breakdown.
+> This appendix is a conceptual suggestion and reference proposal. The framework's four-layer architecture (L1 terminal interaction / L2 city compute / L3 edge perception / L4 low-cost physical), the accessible routing and dispatch engines' complete runnable code, data schemas, and node overlay files live in the experiment workspace `experiments/phase6_p0_physarum/accessibility_framework/` for professional teams' further study; this proposal claims no hardware has been procured, no system is live, and no enterprise partnership has been reached (framework overview in “Accessible Smart Governance and Navigation Integration Outlook”).
 
 ## References
 
@@ -973,4 +915,39 @@ Beyond the existing five talent personas, this section adds five **vulnerable-pe
 - data/processed/agent_fact_pack.md
 - Tero A., Takagi S., Saigusa T., et al. Rules for biologically inspired adaptive network design. *Science*, 327(5964): 439–442, 2010. https://doi.org/10.1126/science.1177894
 - Deb K., Pratap A., Agarwal S., Meyarivan T. A fast and elitist multiobjective genetic algorithm: NSGA-II. *IEEE Transactions on Evolutionary Computation*, 6(2): 182–197, 2002. https://doi.org/10.1109/4235.996017
+**Statutory and standards basis (public text; subject to the competent authority's official version)**:
+- Beijing Master Plan (2016–2035) [source:BEIJING-MASTER-PLAN-2035]
+- Haidian District Zoning Plan (Territorial Spatial Plan) (2017–2035) [source:HAIDIAN-DISTRICT-PLAN-2035]
+- Jing-Zhang Railway Heritage Park Plan [source:JINGZHANG-HERITAGE-PARK-PLAN]
+- Jing-Zhang High-Speed Railway (opened 2019-12-30) [source:JINGZHANG-HSR-2019]
+- Beijing Urban Renewal Regulations (effective 2023-03-01) [source:BEIJING-URBAN-RENEWAL-REGULATION]
+- Accessibility Environment Construction Law of the PRC (effective 2023-09-01) [source:ACCESSIBILITY-LAW-2023]
+- GB 50763-2012 Code for Accessibility Design [source:GB50763-2012]
+- Regulations on the Construction of an Accessible Environment (State Council Decree No. 622) [source:ACCESSIBILITY-ENV-REGULATION]
+- Technical Guide for Sponge City Construction (MOHURD, 2014) [source:SPONGE-CITY-GUIDE-2014]
+- Beijing Sponge City Special Plan (2016–2030) [source:BEIJING-SPONGE-CITY-PLAN]
+- GB 50014 Outdoor Drainage Design Code [source:GB50014]
+- GB/T 51328-2018 Urban Comprehensive Transport System Planning Standard [source:GBT51328-2018]
+- CJJ 37-2012 Code for Design of Urban Road Engineering (2016 ed.) [source:CJJ37-2012]
+- Land Use Classification Guide for Territorial Spatial Survey/Planning/Control [source:LAND-USE-CLASSIFICATION-GUIDE]
+- Jing Zheng Fa [1984] No. 128 / Beijing Cultural Relics Bureau notice 2018-01-02 [source:JINGZHENGFA-1984-128] [source:BJ-WENWU-2018-01-02]
+- Interim Measures for the Administration of Generative AI Services (effective 2023-08-15) [source:GENERATIVE-AI-INTERIM-MEASURES]
+
+**Method literature and international frameworks**:
+- Tero et al. 2007, J. Theor. Biol. 244(4):553-564 [source:TERO-2007]
+- Nakagaki et al. 2000, Nature 407(6803):470 [source:NAKAGAKI-2000]
+- NIST AI Risk Management Framework 1.0 (2023) [source:NIST-AI-RMF-1.0]
+- ISO 37120 Sustainable cities and communities [source:ISO-37120]
+- IPCC AR6 (2021-2022) [source:IPCC-AR6]
+
+**Cases (public reports; quantitative metrics to be verified with official sources)**:
+- Shibuya station-area renewal (Tokyo) [source:CASE-SHIBUYA]
+- Barcelona Superilles [source:CASE-SUPERILLES]
+- Copenhagen bicycle-bridge network [source:CASE-COPENHAGEN]
+- Singapore Punggol Digital District [source:CASE-PUNGGOL]
+- Seoul Cheonggyecheon restoration [source:CASE-CHEONGGYECHEON]
+- Helsinki AI Register [source:CASE-HELSINKI-AI-REGISTER]
+- Amsterdam Algorithm Register [source:CASE-AMSTERDAM-ALGORITHM-REGISTER]
+- Singapore AI Verify [source:CASE-SINGAPORE-AI-VERIFY]
+
 - The bibliographic entry for this section follows the site-package register; full provenance and license are in the structured source list [source:SITE-PACKAGE].
