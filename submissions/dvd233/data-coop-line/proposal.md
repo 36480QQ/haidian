@@ -33,7 +33,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## P1-05｜已获批街区控规的文本级对齐与证据边界
 
-2026-08-22 的证据升级把官方公开版页面纳入证据链：海淀区人民政府门户网站于 2026-08-17 发布该控规（公开版）文本页，总则条款可直接核验；仍不把任何文本升级为空间数据。唯一事实源 `visual/assets/planning-alignment-register.json` 的 Register ID 为 `DATA-COOP-PLAN-ALIGNMENT-01`，SHA-256 为 `59d5a1bf4ab30e5b3fc7216d2191e378881ec4af80ee0e902af8da64fa3657c9`；分支冻结于 `upstream/main@c79854e90b2e9a641d367c9e91f3f3031e20c127`。该台账同时钉死完整 `metrics.json` 与九个 GeoJSON 哈希，任何借“对齐”改变 geometry 或 metrics 的操作都会显式失败；到期数据票增加非空间 E2 治理指标后，台账已重新认证整份 `metrics.json`，九个 geometry 哈希与证据签名保持不变。
+2026-08-22 的证据升级把官方公开版页面纳入证据链：海淀区人民政府门户网站于 2026-08-17 发布该控规（公开版）文本页，总则条款可直接核验；仍不把任何文本升级为空间数据。唯一事实源 `visual/assets/planning-alignment-register.json` 的 Register ID 为 `DATA-COOP-PLAN-ALIGNMENT-01`，SHA-256 为 `daea14242a25926bebbe781d948571117e71c418304dc7a7c7951e49b37e2f7d`；分支冻结于 `upstream/main@c79854e90b2e9a641d367c9e91f3f3031e20c127`。该台账同时钉死完整 `metrics.json` 与九个 GeoJSON 哈希，任何借“对齐”改变 geometry 或 metrics 的操作都会显式失败；C-01/C-02/C-04 合成容量包络增加六项非空间 E2 治理指标后，台账已重新认证整份 `metrics.json`，九个 geometry 哈希与证据签名保持不变。
 
 | 证据层 | 可核验文本事实 | 本轮不可推断 |
 | --- | --- | --- |
@@ -284,6 +284,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | C-07 派生链回执服务 | 版本清单、撤回状态、不可回滚说明 | 数据映射、技术审计、申诉流程 | 近期原型；成本待测算 |
 | C-08 三地标与遗产导引 | 灯塔、回执亭、共同作者广场及双线导视 | 规划、文保、景观、版权和运维 | 中长期；成本待测算 |
 | C-09 蓝绿慢行断点修补 | 无障碍、遮阴、停留、换乘与生态恢复 | 道路、河道、树木、市政专项 | 依专项推进；成本待测算 |
+
+**C-01 / C-02 / C-04 合成容量准入包络。** `SCN06-C010204-SYNTHETIC-CAPACITY-01` 用同一份 60 分钟、12 个到达请求的投稿自有合成夹具检查三项目怎样共同接住一个 `SCN-06` 服务窗口：C-01 的 4 个抽象并行服务单元按每请求 15 分钟复算为容量 16、余量 4；C-02 将 6 个数据线请求和 6 个无数据线请求分别交给两组不可互借的 2 单元，各自容量 10、余量 4，因此**无数据专用容量**与数据线容量比为 1.0；C-04 的 4 单元中先保护 1 单元用于拆卸与恢复，只以 3 单元承接工作，容量 9、余量 3 [metric:synthetic_capacity_resource_gate_total] [metric:synthetic_capacity_minimum_headroom_requests] [metric:synthetic_capacity_no_data_to_data_capacity_ratio]。
+
+审计不采信手填合计，而是从服务时长、可用单元和需求独立复算容量、余量与利用率：目前 4 / 4 资源闸门、3 / 3 项目闸门通过；篡改计算、让需求超过容量、借走无数据单元、移除停止预留或伪造现场确认等 5 / 5 负向变体均 fail-closed [metric:synthetic_capacity_resource_gate_passed] [metric:synthetic_capacity_project_gate_passed] [metric:synthetic_capacity_negative_path_fail_closed_total]。这些“单元”不是人员、服务器、供配电、散热、网络、场地、消防或造价数量；真实运营主体、容量、采购、审批与专业确认仍为 `null / unknown`，现场决定固定为 `not_ready_for_field_operation`。因此它只把资源约束从 E0 叙述提升为可复算 E2 准入证据，不构成 E3 实测、E4 确认或实施承诺 [assumption:A-SYNTHETIC-CAPACITY-001]。
 
 所有项目共用七条政策闸门：用途必须可读且可集体修改；许可按目的和期限拆分；原始数据优先不出控制域；数据劳动的工时、质量争议和回报规则事前公开；模型、特征、报告和公开输出建立派生链；撤回回执区分“删除受控副本”“停止未来使用”“公开输出下架”“模型需重评”和“无法保证抹除”；形成经济或非经济收益时，项目启动前就约定可审计的公共回报选项。任何项目未提供无数据等价正线、人工复核和停止条件，均不得进入下一阶段。
 

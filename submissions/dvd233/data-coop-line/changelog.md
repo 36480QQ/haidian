@@ -1,5 +1,19 @@
 # 方案迭代记录
 
+## v2.3 - 2026-08-23
+
+C-01/C-02/C-04 synthetic capacity admission envelope / 合成容量准入包络
+
+- Baseline / 基线：从 `upstream/main` `d2fd993aff6f1afc1e21496581ae2de85779532a` 建立干净分支 `codex/data-coop-line-capacity-envelope-20260823`；启动时自己的旗舰与公共贡献开放 PR 均为 0。原工作树已有两份报告 HTML 改动，未读取为本轮成果、未覆盖、未暂存，本轮始终在隔离 worktree 内实施。
+- Gap & users / 缺口与使用者：既有 C-01 用途票、C-02 无数据等价服务与 C-04 受控计算站写清了原则和停机边界，但真实容量正确保持 `null / unknown` 时，运营交接与规划评审仍缺少可独立复算的需求—服务单元—无数据预留—停止预留准入模型。新增证据服务于运营团队、规划评审者及选择无数据正线的人，不把合成数字冒充工程量。
+- Canonical envelope / 单一事实源：在既有 `EXPIRING-DATA-TICKET-01` 内原位升级至 v1.1.0，并新增 `SCN06-C010204-SYNTHETIC-CAPACITY-01`；不新增近似载体。唯一 60 分钟投稿自有夹具含 12 个合成请求，全部资源使用“抽象并行服务单元”，明确排除实名或实数人员、硬件、供配电、散热、网络、场地、消防、成本、采购与审批推断。
+- Recalculation / 复算：C-01 以 4 单元、15 分钟/请求复算容量 16、需求 12、余量 4；C-02 数据线与无数据线各保留不可互借的 2 单元，分别容量 10、需求 6、余量 4，无数据/数据容量比 1.0；C-04 在 4 单元中保护 1 单元只用于拆卸与恢复，以 3 单元复算容量 9、需求 6、余量 3。审计从服务时长、可用单元与需求重算 available、capacity、headroom 与 utilization，不信任手填合计。
+- Fail-closed / 失败即停：4/4 资源闸门与 3/3 项目闸门通过；五个在内存执行的变体分别篡改计算、让需求超过 C-01、借走无数据单元、移除 C-04 停止预留及伪造现场确认，5/5 必须命中各自断言并失败。容量负例与既有 10 个数据票负例共同由同一只读运行器执行，不通过删减或跳过检查制造通过。
+- Traceability & carriers / 追踪与载体：新增六项 `synthetic_contract_test`、低置信度指标和假设 `A-SYNTHETIC-CAPACITY-001`，同步 compliance、design-depth、standard matrix、中英正文、脚本派生报告与离线 visual；GeoJSON、来源、许可、证据快照、核心方向和现场包不变。视觉只复用既有组件，不新增图件；A3/A0 页面内容不重排。报告经当前 renderer 更新后继续执行既有派生修复：保留单一 `<h1>` 并恢复长代码令牌断行；中英 390 px 与 1440 px 视口均无页面横向溢出。
+- Derived-chain recertification / 派生链重认证：完整 `metrics.json` 哈希变化使 planning-alignment 审计按预期 fail-closed；未缩窄校验，而是把 prior `9c27a7ff…` 更新为 current `d94a8b7b…`，登记六项非空间 E2 容量指标并重核九个 geometry 哈希与证据签名不变。规划 register 新 SHA-256 为 `daea14242a25926bebbe781d948571117e71c418304dc7a7c7951e49b37e2f7d`；双语 planning-alignment PNG 仅更新文本元数据且像素哈希不变，四份 PDF 仅等长替换证明令牌且 32 页低分辨率渲染哈希逐页不变。
+- Evidence boundary / 证据边界：合成包络把容量主张从 E0 叙述提升为可复算 E2 准入证据；真实运营主体、人员、设备、工程、场地、成本、许可、采购、审批、专业确认和实际需求仍为 `null / unknown / not_observed`，现场状态固定为 `not_ready_for_field_operation`。它不构成 E3 现场、E4 主体/专业确认、E5 采用或实施承诺；`SCN-06-E3E4` 继续 `DEFERRED / DO_NOT_CONTACT / DO_NOT_REASK`。
+- Verification / 验证：专项复核已取得 site evidence 18/18、field validation 215/215、drill 21/21 与 8/8 负向、review spine 94/94 与负向自测、planning alignment 131/131 与负向自测；ready-package 的 manifest refresh、完整 self-check、strict manifest、participant preflight 与 push dry-run 的最终状态只以本轮最终机器输出为准。
+
 ## v2.2 - 2026-08-22
 
 P1-07 expiring data-ticket contract / 会到期、会撤回、会披露残余并回报公共价值的数据票

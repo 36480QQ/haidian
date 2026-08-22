@@ -2,9 +2,9 @@
   "schema_version": "1.0.0",
   "submission_id": "dvd233/data-coop-line",
   "protocol_id": "EXPIRING-DATA-TICKET-01",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scenario_id": "SCN-06",
-  "generated_at": "2026-08-22T16:07:00+08:00",
+  "generated_at": "2026-08-23T02:58:25+08:00",
   "frozen_main_sha": "a8f150d86480f8efc0716069ece406edf013502b",
   "evidence_boundary": {
     "evidence_level": "E2",
@@ -17,7 +17,8 @@
     "allowed_claims": [
       "ticket lifecycle rules are machine-readable",
       "synthetic expiry and withdrawal paths are reproducible",
-      "declared thresholds fail closed under the checked fixtures"
+      "declared thresholds fail closed under the checked fixtures",
+      "synthetic C-01, C-02 and C-04 service-capacity admission gates are independently reproducible"
     ],
     "prohibited_claims": [
       "field performance",
@@ -25,7 +26,8 @@
       "confirmed operator or legal role",
       "professional approval",
       "implemented service",
-      "E3, E4 or E5 evidence"
+      "E3, E4 or E5 evidence",
+      "confirmed staffing, compute, facility, engineering or operating capacity"
     ],
     "phasing_status": {
       "gate_0": "synthetic_contract_only",
@@ -1034,7 +1036,175 @@
         "status": "unknown"
       }
     ],
-    "gate_2_rule": "Every blocker must be confirmed by an authorized source and all E3 field tests and E4 professional/operator confirmations must pass before any controlled live scenario."
+    "gate_2_rule": "Every blocker must be confirmed by an authorized source and all E3 field tests and E4 professional/operator confirmations must pass before any controlled live scenario.",
+    "synthetic_capacity_envelope_status": "passed_for_E2_rehearsal_only",
+    "field_capacity_status": "unknown"
+  },
+  "synthetic_capacity_envelope": {
+    "envelope_id": "SCN06-C010204-SYNTHETIC-CAPACITY-01",
+    "version": "1.0.0",
+    "evidence_level": "E2",
+    "status": "synthetic_planning_envelope_not_confirmed_capacity",
+    "scope": {
+      "scenario_id": "SCN-06",
+      "key_area_id": "PROV-KEY-001",
+      "project_ids": [
+        "C-01",
+        "C-02",
+        "C-04"
+      ],
+      "window_minutes": 60,
+      "unit_definition": "abstract_parallel_service_unit_for_rehearsal_only",
+      "excludes": [
+        "named_or_counted_real_staff",
+        "physical_compute_hardware",
+        "power_cooling_or_network_engineering",
+        "facility_or_fire_capacity",
+        "cost_budget_procurement_or_approval"
+      ]
+    },
+    "demand_fixture": {
+      "source": "submission_owned_synthetic_fixture",
+      "arrivals_per_window": 12,
+      "route_split": {
+        "data_route": 6,
+        "no_data_route": 6
+      },
+      "observed_arrivals": null,
+      "field_observation_status": "not_observed"
+    },
+    "real_world_confirmations": {
+      "operator_entity": null,
+      "staffing_assignment": null,
+      "site_capacity": null,
+      "power_kw": null,
+      "cooling_kw": null,
+      "network_bandwidth": null,
+      "cost_cny": null,
+      "procurement_status": "unknown",
+      "approval_status": "unknown",
+      "professional_confirmation_status": "unknown"
+    },
+    "resource_models": [
+      {
+        "model_id": "CAP-C01-PURPOSE-TICKET-REVIEW",
+        "project_id": "C-01",
+        "service_role": "purpose_ticket_review",
+        "route_id": "all_requests",
+        "demand_requests_per_window": 12,
+        "service_minutes_per_request": 15,
+        "declared_parallel_units": 4,
+        "protected_reserve_units": 0,
+        "available_parallel_units": 4,
+        "capacity_requests_per_window": 16,
+        "headroom_requests": 4,
+        "utilization_ratio": 0.75,
+        "dedicated_to_route": false,
+        "borrowable_by_other_route": false,
+        "reserve_purpose": null
+      },
+      {
+        "model_id": "CAP-C02-DATA-ROUTE",
+        "project_id": "C-02",
+        "service_role": "equivalent_service_delivery",
+        "route_id": "data_route",
+        "demand_requests_per_window": 6,
+        "service_minutes_per_request": 12,
+        "declared_parallel_units": 2,
+        "protected_reserve_units": 0,
+        "available_parallel_units": 2,
+        "capacity_requests_per_window": 10,
+        "headroom_requests": 4,
+        "utilization_ratio": 0.6,
+        "dedicated_to_route": true,
+        "borrowable_by_other_route": false,
+        "reserve_purpose": "preserve_route_capacity"
+      },
+      {
+        "model_id": "CAP-C02-NO-DATA-ROUTE",
+        "project_id": "C-02",
+        "service_role": "equivalent_service_delivery",
+        "route_id": "no_data_route",
+        "demand_requests_per_window": 6,
+        "service_minutes_per_request": 12,
+        "declared_parallel_units": 2,
+        "protected_reserve_units": 0,
+        "available_parallel_units": 2,
+        "capacity_requests_per_window": 10,
+        "headroom_requests": 4,
+        "utilization_ratio": 0.6,
+        "dedicated_to_route": true,
+        "borrowable_by_other_route": false,
+        "reserve_purpose": "protect_no_data_equivalence"
+      },
+      {
+        "model_id": "CAP-C04-CONTROLLED-COMPUTE",
+        "project_id": "C-04",
+        "service_role": "controlled_compute_job",
+        "route_id": "data_route",
+        "demand_requests_per_window": 6,
+        "service_minutes_per_request": 20,
+        "declared_parallel_units": 4,
+        "protected_reserve_units": 1,
+        "available_parallel_units": 3,
+        "capacity_requests_per_window": 9,
+        "headroom_requests": 3,
+        "utilization_ratio": 0.666667,
+        "dedicated_to_route": true,
+        "borrowable_by_other_route": false,
+        "reserve_purpose": "teardown_and_recovery_only"
+      }
+    ],
+    "admission_rule_ids": [
+      "ASSERT-CAPACITY-RECALCULATION",
+      "ASSERT-CAPACITY-DEMAND-HEADROOM",
+      "ASSERT-CAPACITY-NO-DATA-RESERVE",
+      "ASSERT-CAPACITY-STOP-RESERVE",
+      "ASSERT-CAPACITY-E2-BOUNDARY"
+    ],
+    "negative_mutations": [
+      {
+        "mutation_id": "MUT-CAPACITY-DECLARED-CALCULATION-DRIFT",
+        "mutation": "Set C-01 declared capacity_requests_per_window from 16 to 15.",
+        "required_audit_result": "fail",
+        "expected_failed_assertion_id": "ASSERT-CAPACITY-RECALCULATION"
+      },
+      {
+        "mutation_id": "MUT-CAPACITY-DEMAND-EXCEEDS-C01",
+        "mutation": "Set C-01 demand_requests_per_window from 12 to 17.",
+        "required_audit_result": "fail",
+        "expected_failed_assertion_id": "ASSERT-CAPACITY-DEMAND-HEADROOM"
+      },
+      {
+        "mutation_id": "MUT-CAPACITY-BORROW-NO-DATA-UNITS",
+        "mutation": "Make one no-data route unit borrowable by the data route.",
+        "required_audit_result": "fail",
+        "expected_failed_assertion_id": "ASSERT-CAPACITY-NO-DATA-RESERVE"
+      },
+      {
+        "mutation_id": "MUT-CAPACITY-REMOVE-STOP-RESERVE",
+        "mutation": "Set C-04 protected_reserve_units to zero and expose all units to live work.",
+        "required_audit_result": "fail",
+        "expected_failed_assertion_id": "ASSERT-CAPACITY-STOP-RESERVE"
+      },
+      {
+        "mutation_id": "MUT-CAPACITY-FALSE-FIELD-CONFIRMATION",
+        "mutation": "Invent an operator entity and change the field operation decision to ready.",
+        "required_audit_result": "fail",
+        "expected_failed_assertion_id": "ASSERT-CAPACITY-E2-BOUNDARY"
+      }
+    ],
+    "expected_result": {
+      "resource_gate_total": 4,
+      "resource_gate_passed": 4,
+      "project_gate_passed": 3,
+      "negative_path_fail_closed_total": 5,
+      "minimum_headroom_requests": 3,
+      "no_data_to_data_capacity_ratio": 1.0,
+      "synthetic_admission_decision": "pass_for_E2_rehearsal_only",
+      "field_operation_decision": "not_ready_for_field_operation"
+    },
+    "field_replacement_trigger": "Authorized E3 demand and service observations plus E4 operator, accessibility and professional confirmation must replace or reject every synthetic input before Gate 2."
   },
   "crosswalk": {
     "official_three_positioning": [
@@ -2656,6 +2826,26 @@
     {
       "assertion_id": "ASSERT-E2-BOUNDARY",
       "rule": "The protocol remains E2, with field, entity, professional and implementation states unconfirmed."
+    },
+    {
+      "assertion_id": "ASSERT-CAPACITY-RECALCULATION",
+      "rule": "Every declared available unit, throughput, headroom and utilization value must be recomputed from the pinned 60-minute synthetic fixture."
+    },
+    {
+      "assertion_id": "ASSERT-CAPACITY-DEMAND-HEADROOM",
+      "rule": "Every C-01, C-02 route and C-04 model must retain non-negative headroom under the synthetic demand fixture."
+    },
+    {
+      "assertion_id": "ASSERT-CAPACITY-NO-DATA-RESERVE",
+      "rule": "The no-data route keeps two dedicated non-borrowable abstract units and at least the same synthetic throughput as the data route."
+    },
+    {
+      "assertion_id": "ASSERT-CAPACITY-STOP-RESERVE",
+      "rule": "C-04 keeps one abstract unit outside live work for teardown and recovery; it is not a confirmed hardware or staffing reserve."
+    },
+    {
+      "assertion_id": "ASSERT-CAPACITY-E2-BOUNDARY",
+      "rule": "All real entities, staffing, site, engineering, cost, procurement and approval fields stay null or unknown and field operation remains blocked."
     }
   ],
   "negative_mutations": [
@@ -2733,13 +2923,19 @@
   "recalculation_contract": {
     "runner": "visual/assets/evidence-consistency.js",
     "command": "node visual/assets/evidence-consistency.js --json",
-    "negative_test": "The runner clones the declared base cases, applies all ten negative mutations in memory, and must reject post-term release, raw export, undersized output, unmapped derivatives, missing stopping coupling, missing return deliverables, below-target value, empty return evidence, unauthorized cross-node scope, and both routes failing the same accessibility task.",
+    "negative_test": "The runner clones the two ticket cases and the synthetic capacity envelope in memory. It must reject all ten ticket mutations plus five capacity mutations covering a drifted calculation, demand above C-01 capacity, borrowed no-data units, a removed C-04 stop reserve, and a false field confirmation.",
     "expected_metrics": {
       "expiring_ticket_synthetic_case_total": 2,
       "expiring_ticket_synthetic_case_passed": 2,
       "expiring_ticket_negative_path_fail_closed_total": 10,
       "expiring_ticket_no_data_rule_coverage_ratio": 1.0,
-      "expiring_ticket_conditional_artifact_coverage_ratio": 1.0
+      "expiring_ticket_conditional_artifact_coverage_ratio": 1.0,
+      "synthetic_capacity_resource_gate_total": 4,
+      "synthetic_capacity_resource_gate_passed": 4,
+      "synthetic_capacity_project_gate_passed": 3,
+      "synthetic_capacity_negative_path_fail_closed_total": 5,
+      "synthetic_capacity_minimum_headroom_requests": 3,
+      "synthetic_capacity_no_data_to_data_capacity_ratio": 1.0
     },
     "manifest_integrity": "The canonical protocol file is covered by manifest sha256; it contains no self-hash or invented artifact hash."
   }

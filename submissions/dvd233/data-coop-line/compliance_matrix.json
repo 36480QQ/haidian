@@ -440,7 +440,13 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "synthetic_capacity_resource_gate_total",
+        "synthetic_capacity_resource_gate_passed",
+        "synthetic_capacity_project_gate_passed",
+        "synthetic_capacity_negative_path_fail_closed_total",
+        "synthetic_capacity_minimum_headroom_requests",
+        "synthetic_capacity_no_data_to_data_capacity_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -450,7 +456,8 @@
         "三层范围",
         "用地分区",
         "核心指标",
-        "P1-05 控规文本级对齐"
+        "P1-05 控规文本级对齐",
+        "合成容量准入包络"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -463,7 +470,8 @@
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
-        "A-PLAN-ALIGNMENT-001"
+        "A-PLAN-ALIGNMENT-001",
+        "A-SYNTHETIC-CAPACITY-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -489,7 +497,13 @@
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio",
-        "key_area_count"
+        "key_area_count",
+        "synthetic_capacity_resource_gate_total",
+        "synthetic_capacity_resource_gate_passed",
+        "synthetic_capacity_project_gate_passed",
+        "synthetic_capacity_negative_path_fail_closed_total",
+        "synthetic_capacity_minimum_headroom_requests",
+        "synthetic_capacity_no_data_to_data_capacity_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -499,7 +513,8 @@
         "三层范围",
         "用地分区",
         "核心指标",
-        "P1-05 控规文本级对齐"
+        "P1-05 控规文本级对齐",
+        "合成容量准入包络"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -512,7 +527,8 @@
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
-        "A-PLAN-ALIGNMENT-001"
+        "A-PLAN-ALIGNMENT-001",
+        "A-SYNTHETIC-CAPACITY-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -685,7 +701,13 @@
         "expiring_ticket_synthetic_case_passed",
         "expiring_ticket_negative_path_fail_closed_total",
         "expiring_ticket_no_data_rule_coverage_ratio",
-        "expiring_ticket_conditional_artifact_coverage_ratio"
+        "expiring_ticket_conditional_artifact_coverage_ratio",
+        "synthetic_capacity_resource_gate_total",
+        "synthetic_capacity_resource_gate_passed",
+        "synthetic_capacity_project_gate_passed",
+        "synthetic_capacity_negative_path_fail_closed_total",
+        "synthetic_capacity_minimum_headroom_requests",
+        "synthetic_capacity_no_data_to_data_capacity_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -695,7 +717,8 @@
         "三层范围",
         "用地分区",
         "核心指标",
-        "到期数据票 E2 契约"
+        "到期数据票 E2 契约",
+        "合成容量准入包络"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -708,7 +731,8 @@
         "A-BUILDING-001",
         "A-CONTROLS-001",
         "A-EXPIRING-TICKET-001",
-        "A-EXPIRING-TICKET-THRESHOLDS-001"
+        "A-EXPIRING-TICKET-THRESHOLDS-001",
+        "A-SYNTHETIC-CAPACITY-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -890,7 +914,13 @@
         "expiring_ticket_synthetic_case_passed",
         "expiring_ticket_negative_path_fail_closed_total",
         "expiring_ticket_no_data_rule_coverage_ratio",
-        "expiring_ticket_conditional_artifact_coverage_ratio"
+        "expiring_ticket_conditional_artifact_coverage_ratio",
+        "synthetic_capacity_resource_gate_total",
+        "synthetic_capacity_resource_gate_passed",
+        "synthetic_capacity_project_gate_passed",
+        "synthetic_capacity_negative_path_fail_closed_total",
+        "synthetic_capacity_minimum_headroom_requests",
+        "synthetic_capacity_no_data_to_data_capacity_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -900,7 +930,8 @@
         "重点区域",
         "AI 场景",
         "核心指标",
-        "到期数据票 E2 契约"
+        "到期数据票 E2 契约",
+        "合成容量准入包络"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -914,7 +945,8 @@
         "A-DEMO-DATA-001",
         "A-WITHDRAWAL-001",
         "A-EXPIRING-TICKET-001",
-        "A-EXPIRING-TICKET-THRESHOLDS-001"
+        "A-EXPIRING-TICKET-THRESHOLDS-001",
+        "A-SYNTHETIC-CAPACITY-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -943,7 +975,13 @@
         "expiring_ticket_synthetic_case_passed",
         "expiring_ticket_negative_path_fail_closed_total",
         "expiring_ticket_no_data_rule_coverage_ratio",
-        "expiring_ticket_conditional_artifact_coverage_ratio"
+        "expiring_ticket_conditional_artifact_coverage_ratio",
+        "synthetic_capacity_resource_gate_total",
+        "synthetic_capacity_resource_gate_passed",
+        "synthetic_capacity_project_gate_passed",
+        "synthetic_capacity_negative_path_fail_closed_total",
+        "synthetic_capacity_minimum_headroom_requests",
+        "synthetic_capacity_no_data_to_data_capacity_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -953,7 +991,8 @@
         "AI 场景",
         "交通慢行",
         "自检状态",
-        "到期数据票 E2 契约"
+        "到期数据票 E2 契约",
+        "合成容量准入包络"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -966,7 +1005,8 @@
         "A-DEMO-DATA-001",
         "A-WITHDRAWAL-001",
         "A-EXPIRING-TICKET-001",
-        "A-EXPIRING-TICKET-THRESHOLDS-001"
+        "A-EXPIRING-TICKET-THRESHOLDS-001",
+        "A-SYNTHETIC-CAPACITY-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1079,7 +1119,13 @@
         "expiring_ticket_synthetic_case_passed",
         "expiring_ticket_negative_path_fail_closed_total",
         "expiring_ticket_no_data_rule_coverage_ratio",
-        "expiring_ticket_conditional_artifact_coverage_ratio"
+        "expiring_ticket_conditional_artifact_coverage_ratio",
+        "synthetic_capacity_resource_gate_total",
+        "synthetic_capacity_resource_gate_passed",
+        "synthetic_capacity_project_gate_passed",
+        "synthetic_capacity_negative_path_fail_closed_total",
+        "synthetic_capacity_minimum_headroom_requests",
+        "synthetic_capacity_no_data_to_data_capacity_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1089,7 +1135,8 @@
         "更新项目",
         "核心指标",
         "假设",
-        "到期数据票 E2 契约"
+        "到期数据票 E2 契约",
+        "合成容量准入包络"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -1103,7 +1150,8 @@
         "A-DEMO-DATA-001",
         "A-WITHDRAWAL-001",
         "A-EXPIRING-TICKET-001",
-        "A-EXPIRING-TICKET-THRESHOLDS-001"
+        "A-EXPIRING-TICKET-THRESHOLDS-001",
+        "A-SYNTHETIC-CAPACITY-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",

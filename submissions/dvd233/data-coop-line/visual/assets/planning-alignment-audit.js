@@ -25,14 +25,15 @@ const CLAIM_IDS = [
 ];
 const ASSUMPTION_ID = "A-PLAN-ALIGNMENT-001";
 const UNCHANGED_EVIDENCE_SIGNATURE = "c880c438924399d40267391551669d937dcfc5e144850eb511a45bbf024c4a52";
-const PRIOR_METRICS_SHA256 = "83c534bc099da4bbcc618967a876b7e12296459232c2a1c149fdde4f625b764c";
-const CURRENT_METRICS_SHA256 = "9c27a7ffbdb60768a9084ef7d41f5073fb0102b4f7f73629c1423a15748c8128";
+const PRIOR_METRICS_SHA256 = "9c27a7ffbdb60768a9084ef7d41f5073fb0102b4f7f73629c1423a15748c8128";
+const CURRENT_METRICS_SHA256 = "d94a8b7bcad389bf26aad70d7ca4b02d4f02042b9a17288e990361f5167d2ba5";
 const RECERTIFIED_METRIC_IDS = [
-  "expiring_ticket_synthetic_case_total",
-  "expiring_ticket_synthetic_case_passed",
-  "expiring_ticket_negative_path_fail_closed_total",
-  "expiring_ticket_no_data_rule_coverage_ratio",
-  "expiring_ticket_conditional_artifact_coverage_ratio",
+  "synthetic_capacity_resource_gate_total",
+  "synthetic_capacity_resource_gate_passed",
+  "synthetic_capacity_project_gate_passed",
+  "synthetic_capacity_negative_path_fail_closed_total",
+  "synthetic_capacity_minimum_headroom_requests",
+  "synthetic_capacity_no_data_to_data_capacity_ratio",
 ];
 
 function absolute(relative) {
@@ -95,7 +96,7 @@ function structuralErrors(register) {
   if (recertification.prior_metrics_sha256 !== PRIOR_METRICS_SHA256) errors.push("recertification must retain the prior metrics hash");
   if (recertification.current_metrics_sha256 !== CURRENT_METRICS_SHA256) errors.push("recertification must pin the current complete metrics hash");
   if (recertification.metric_change_scope !== "non_spatial_e2_governance_metrics_only") errors.push("recertification scope must remain non-spatial E2 governance metrics only");
-  if (JSON.stringify(recertification.added_metric_ids) !== JSON.stringify(RECERTIFIED_METRIC_IDS)) errors.push("recertification metric IDs must exactly match the five appended ticket metrics");
+  if (JSON.stringify(recertification.added_metric_ids) !== JSON.stringify(RECERTIFIED_METRIC_IDS)) errors.push("recertification metric IDs must exactly match the six appended synthetic-capacity metrics");
   for (const key of ["planning_alignment_claims_changed", "spatial_metrics_or_geometry_changed"]) {
     if (recertification[key] !== false) errors.push(`current_package_recertification.${key} must remain false`);
   }
