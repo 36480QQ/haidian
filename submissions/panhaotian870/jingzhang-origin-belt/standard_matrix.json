@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "proposal_slug": "jingzhang-origin-belt",
+  "generated_date": "2026-08-14",
+  "standard_entries": [
+    {
+      "standard_id": "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
+      "title": "城市设计管理办法",
+      "status": "covered",
+      "response_zh": "回应城市设计目的与范围、公共空间与城市特色要求、建筑高度体量风格色彩天际线和界面控制参考",
+      "evidence_locations": ["proposal.md#design_concept", "proposal.md#spatial_structure"]
+    },
+    {
+      "standard_id": "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+      "title": "城市、镇控制性详细规划编制审批办法",
+      "status": "covered",
+      "response_zh": "区分已知控制与待补控制，不声称已批准的控规条件",
+      "evidence_locations": ["proposal.md#assumptions", "proposal.md#legal_boundaries"]
+    },
+    {
+      "standard_id": "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+      "title": "国土空间调查、规划、用途管制用地用海分类指南",
+      "status": "covered",
+      "response_zh": "统一用地分类术语，用于GeoJSON land_use_code字段",
+      "evidence_locations": ["geometry/land_use.geojson"]
+    }
+  ]
+}
