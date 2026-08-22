@@ -1,0 +1,405 @@
+{
+  "schema_version": "0.1.0",
+  "proposal_slug": "jingzhang-origin-belt",
+  "generated_date": "2026-08-14",
+  "area_check_crs": "EPSG:4548",
+  "metrics": [
+    {
+      "metric_id": "MT-AREA-RESEARCH",
+      "name_zh": "统筹研究范围面积",
+      "name_en": "Coordinated Research Area",
+      "status": "provisional",
+      "value": 43609232.558,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson#PROV-RESEARCH-001"
+      ],
+      "formula": "EPSG:4548 area calculation of PROV-RESEARCH-001 polygon",
+      "confidence": "medium",
+      "assumptions": [
+        "Based on provisional boundary from announcement text, not official redline"
+      ]
+    },
+    {
+      "metric_id": "MT-AREA-DESIGN",
+      "name_zh": "总体设计范围面积",
+      "name_en": "Overall Design Area",
+      "status": "provisional",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson#PROV-SITE-001"
+      ],
+      "formula": "EPSG:4548 area calculation of PROV-SITE-001 polygon",
+      "confidence": "medium",
+      "assumptions": [
+        "Based on provisional boundary from announcement text, not official redline"
+      ]
+    },
+    {
+      "metric_id": "MT-AREA-KEY",
+      "name_zh": "重点区域总面积",
+      "name_en": "Key Areas Total Area",
+      "status": "provisional",
+      "value": 3692893.005,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "Sum of EPSG:4548 area of PROV-KEY-001 + PROV-KEY-002 + PROV-KEY-003",
+      "confidence": "medium",
+      "assumptions": [
+        "Based on provisional boundaries"
+      ]
+    },
+    {
+      "metric_id": "MT-AREA-KEY-001",
+      "name_zh": "众智园AI自主创新加速区面积",
+      "name_en": "Zhongzhiyuan AI Acceleration Area",
+      "status": "provisional",
+      "value": 1929201.877,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson#PROV-KEY-001"
+      ],
+      "formula": "EPSG:4548 area calculation",
+      "confidence": "medium"
+    },
+    {
+      "metric_id": "MT-AREA-KEY-002",
+      "name_zh": "北京AI原点社区面积",
+      "name_en": "Beijing AI Origin Community Area",
+      "status": "provisional",
+      "value": 1043236.909,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson#PROV-KEY-002"
+      ],
+      "formula": "EPSG:4548 area calculation",
+      "confidence": "medium"
+    },
+    {
+      "metric_id": "MT-AREA-KEY-003",
+      "name_zh": "大钟寺AI产业聚集区面积",
+      "name_en": "Dazhongsi AI Industry Cluster Area",
+      "status": "provisional",
+      "value": 720454.221,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson#PROV-KEY-003"
+      ],
+      "formula": "EPSG:4548 area calculation",
+      "confidence": "medium"
+    },
+    {
+      "metric_id": "MT-LENGTH-HERITAGE",
+      "name_zh": "遗址公园长度",
+      "name_en": "Heritage Park Length",
+      "status": "conceptual",
+      "value": 9,
+      "unit": "km",
+      "source_files": [
+        "geometry/roads.geojson#RD-HERITAGE-PATH-001"
+      ],
+      "formula": "Approximate length of Developer Walk path",
+      "confidence": "conceptual",
+      "assumptions": [
+        "Concept value based on public information about the heritage park"
+      ]
+    },
+    {
+      "metric_id": "MT-APM-LINE",
+      "name_zh": "京张APM线长度",
+      "name_en": "Jing-Zhang APM Line Length",
+      "status": "conceptual",
+      "value": 7.5,
+      "unit": "km",
+      "source_files": [
+        "geometry/roads.geojson#RD-APM-001"
+      ],
+      "formula": "APM line length through innovation area interior",
+      "confidence": "conceptual",
+      "assumptions": [
+        "Concept for an Automated People Mover through innovation area interior",
+        "Inspired by Guangzhou Zhujiang New Town APM line",
+        "Does NOT follow heritage park main corridor (Line 13 corridor)",
+        "Penetrates innovation area interior connecting core nodes of three key areas",
+        "GoA4 fully autonomous operation",
+        "10 stations, avg 750m spacing, design speed 40-60km/h",
+        "Interchanges with Line 13 at Dazhongsi and Wudaokou"
+      ]
+    },
+    {
+      "metric_id": "MT-LANDUSE-MIX",
+      "name_zh": "用地构成比例",
+      "name_en": "Land Use Mix",
+      "status": "conceptual",
+      "value": null,
+      "unit": "percentage",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "Conceptual land use partition percentages",
+      "confidence": "conceptual",
+      "breakdown": {
+        "research_industry": 35,
+        "public_services": 15,
+        "commercial": 12,
+        "residential": 18,
+        "green_open_space": 12,
+        "roads_transport": 8
+      }
+    },
+    {
+      "metric_id": "MT-SCENARIO-CARDS",
+      "name_zh": "AI场景卡数量",
+      "name_en": "AI Scenario Card Count",
+      "status": "complete",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "Count of scenario cards in proposal (S01-S10)",
+      "confidence": "high",
+      "assumptions": [
+        "Meets agent.3 requirement of at least 10 scenario cards (10 provided)"
+      ]
+    },
+    {
+      "metric_id": "MT-TEST-SCENARIOS",
+      "name_zh": "AI测试验证场景数量",
+      "name_en": "AI Test/Validation Scenario Count",
+      "status": "complete",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "Count of test/validation scenarios",
+      "confidence": "high",
+      "assumptions": [
+        "Meets agent.3 requirement of at least 3 test scenarios"
+      ]
+    },
+    {
+      "metric_id": "MT-PERSONAS",
+      "name_zh": "用户画像数量",
+      "name_en": "User Persona Count",
+      "status": "complete",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "Count of user personas",
+      "confidence": "high",
+      "assumptions": [
+        "Meets agent.3 requirement of at least 5 personas"
+      ]
+    },
+    {
+      "metric_id": "MT-LANDMARKS",
+      "name_zh": "AI朝圣地标数量",
+      "name_en": "AI Pilgrimage Landmark Count",
+      "status": "complete",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "geometry/buildings.geojson"
+      ],
+      "formula": "Count of pilgrimage landmarks",
+      "confidence": "high",
+      "assumptions": [
+        "Meets agent.4 requirement of at least 3 landmarks"
+      ]
+    },
+    {
+      "metric_id": "MT-CASES",
+      "name_zh": "全球AI创新生态案例数量",
+      "name_en": "Global AI Innovation Case Count",
+      "status": "complete",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "Count of case studies",
+      "confidence": "high",
+      "assumptions": [
+        "Meets agent.2 requirement of 5-8 cases"
+      ]
+    },
+    {
+      "metric_id": "MT-APM-CAPACITY",
+      "name_zh": "APM单向高峰小时运能",
+      "name_en": "APM Peak Hour Directional Capacity",
+      "status": "conceptual",
+      "value": 5400,
+      "unit": "pax/h",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "3-car trains x 60 pax/car x 30 trains/h (2-min headway)",
+      "confidence": "medium",
+      "assumptions": [
+        "Based on Guangzhou APM operational data scaled for Beijing context"
+      ]
+    },
+    {
+      "metric_id": "MT-APM-DAILY",
+      "name_zh": "APM日均客流预测",
+      "name_en": "APM Daily Ridership Forecast",
+      "status": "conceptual",
+      "value": 16000,
+      "unit": "pax/day",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "Logit mode split model: near-term ~16,000 pax/day, long-term ~29,000 pax/day",
+      "confidence": "medium",
+      "assumptions": [
+        "Near-term forecast; long-term forecast ~29,000 pax/day",
+        "Logit parameters (β₁=-0.04, β₂=-0.03, β₃=-0.06) are hypothetical, need RP/SP survey calibration",
+        "Based on Guangzhou Zhujiang New Town APM line experience scaled for Beijing context"
+      ]
+    },
+    {
+      "metric_id": "MT-EXPRESSWAY-CAPACITY",
+      "name_zh": "京新快速路延伸通行能力",
+      "name_en": "Jingxin Expressway Extension Capacity",
+      "status": "conceptual",
+      "value": 12800,
+      "unit": "pcu/h",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "4 lanes x 1600 pcu/h/lane (CJJ37-2012)",
+      "confidence": "medium",
+      "assumptions": [
+        "Based on Shanghai Beiheng Passage standard"
+      ]
+    },
+    {
+      "metric_id": "MT-CARBON-SINK",
+      "name_zh": "年碳汇能力",
+      "name_en": "Annual Carbon Sequestration",
+      "status": "conceptual",
+      "value": 2187,
+      "unit": "tonnes_CO2/year",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "596 tC/yr x 3.67 CO2/C ratio",
+      "confidence": "medium",
+      "assumptions": [
+        "115 ha green space x weighted average carbon coefficient"
+      ]
+    },
+    {
+      "metric_id": "MT-HEAT-ISLAND",
+      "name_zh": "热岛降温效果",
+      "name_en": "Heat Island Cooling Effect",
+      "status": "conceptual",
+      "value": 2.25,
+      "unit": "celsius",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "Average of 1.5-3°C range for core innovation zone",
+      "confidence": "medium",
+      "assumptions": [
+        "Combined effect of green coverage increase + cold corridors + heritage park"
+      ]
+    },
+    {
+      "metric_id": "MT-ENTERPRISE-FORECAST",
+      "name_zh": "远期AI企业数量预测",
+      "name_en": "Long-term AI Enterprise Forecast",
+      "status": "conceptual",
+      "value": 2000,
+      "unit": "enterprises",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "Zhongguancun density 120/km² x agglomeration coeff 1.8 x 15km² ÷ 1.6 adjustment",
+      "confidence": "low",
+      "assumptions": [
+        "2040 target; depends on policy support and market conditions"
+      ]
+    },
+    {
+      "metric_id": "MT-OUTPUT-FORECAST",
+      "name_zh": "远期年产值预测",
+      "name_en": "Long-term Annual Output Forecast",
+      "status": "conceptual",
+      "value": 1500,
+      "unit": "hundred_million_yuan",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "Based on MaRS and Station F benchmark scaled for Beijing",
+      "confidence": "low",
+      "assumptions": [
+        "2040 target; ¥150 billion total"
+      ]
+    },
+    {
+      "metric_id": "MT-CORE-SITE-AREA",
+      "name_zh": "总体设计范围面积（核心可视化指标）",
+      "name_en": "Overall Design Site Area (Core Visual Metric)",
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson#PROV-SITE-001"
+      ],
+      "formula": "EPSG:4548 area calculation of PROV-SITE-001 polygon",
+      "confidence": "medium",
+      "assumptions": [
+        "Based on provisional boundary from announcement text, not official redline",
+        "Recalculation required when official GIS/CAD data becomes available"
+      ]
+    },
+    {
+      "metric_id": "MT-CORE-GREEN-RATIO",
+      "name_zh": "绿地率（核心可视化指标）",
+      "name_en": "Green Space Ratio (Core Visual Metric)",
+      "status": "known",
+      "value": 0.0581,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson#PROV-SITE-001"
+      ],
+      "formula": "Total green space area (663,000 sqm) / Site area (11,412,825 sqm) = 5.81%",
+      "confidence": "medium",
+      "assumptions": [
+        "Green space includes: Heritage Park (540,000) + Origin Plaza (8,000) + Robot Park (30,000) + Algorithm Garden (20,000) + LLM Plaza (25,000) + Open Source Forest (40,000) = 663,000 sqm",
+        "All green space features are conceptual design suggestions",
+        "Does not include green areas within land_use parcels not yet modeled as separate green_space features",
+        "Ratio will change when official boundary and detailed land use are available"
+      ]
+    },
+    {
+      "metric_id": "MT-CORE-PUBLIC-SPACE-RATIO",
+      "name_zh": "公共空间比例（核心可视化指标）",
+      "name_en": "Public Space Ratio (Core Visual Metric)",
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson#PROV-SITE-001"
+      ],
+      "formula": "Public space polygon area / Site area — currently unavailable",
+      "confidence": "low",
+      "assumptions": [
+        "public_space.geojson currently contains only Point features (honor wall, milestone plaza, light tunnel) without polygon area data",
+        "Polygon-based public space geometry needed for area calculation",
+        "Will be recalculated when public_space polygons are generated from land_use partition"
+      ]
+    }
+  ]
+}
