@@ -237,7 +237,7 @@ code {
 <p><strong>机制意义。</strong> 把判据做成基准，改变了三件事的性质。治理话语权不来自宣布自己是标准制定者，而来自别人在用你的标准检验自己，因此本方案把“AI 治理全球话语权”这项功能落在一份可被引用的判据上，而不是落在会议或宣言上。国际传播的对象随之从口号变成引用：一个能被外部复算的服务等价差读数，比任何形容词都更容易跨越语言。长期运营的成本结构同样改变——基准的版本迭代不需要许可、预算或场地，只需要有人持续登记失败样本，这使得万感周之外的日常也能产生可累积的公共资产 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="W3C-ACCESSIBILITY-PRINCIPLES" title="来源：W3C-ACCESSIBILITY-PRINCIPLES">来源</sup>。基准本身不构成合规结论、认证资格或专业符合性评价，它只是把“怎样才算做到了”写成任何人都能逐项核对的形式。</p>
 <h2>OP-01 桌面配对试点档案（方法学演示）</h2>
 <p><strong>演示性质声明。现场状态：未获授权 · 未现场运行。</strong> 本章没有真实参与者，没有现场测量，也没有任何一次运行记录。这里做的是一次桌面配对推演：把上一章的服务等价基准施加在文本样例上，看判据能不能被逐条执行、会在哪里失效。因此本章不产生任何绩效指标数值，七项包容性指标在指标文件中保持待实测状态，任何一项都不得依据本章填写 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="independent_task_completion_rate" title="指标：independent_task_completion_rate">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="ai_off_service_equivalence_gap" title="指标：ai_off_service_equivalence_gap">指标</sup>。本章能够证明的是“制度可执行”——判据写得足够具体，机器可以判、第三方可以复核；它不能证明“结果已达标”，后者需要伦理化的真实测试，属于取得授权之后的事 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="phasing_implementation" title="深度：phasing_implementation">深度</sup>。把这两件事分开陈述，是本方案对自身适用分母纪律：不能一边要求别人不得删除失败样本，一边把一次推演说成一次试点。</p>
-<p><strong>推演对象与工具。</strong> 推演以场景 S01 多模态无障碍寻路在 OP-01 多模态到达校正点上的一次完整闸门过程为对象 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/constraints.geojson#OP-01" title="空间数据：geometry/constraints.geojson#OP-01">空间数据</sup>。三件工具随包提交，均为零依赖的离线文件：<code>visual/assets/seb-tabletop-run.js</code> 是校验器，读取基准与样例并逐条判定；<code>visual/assets/seb-tabletop-fixtures.json</code> 是六十条样例，正例二十三条、反例三十七条（v0.4 扩充二十条覆盖生命周期、权限边界与测量声明类判据的正反分支，v0.5 再扩充二十条：十个 OP 节点各一条双联交接实例，与十条按风险台账注入的缺陷变体），每条自带预期判定与双语说明；<code>visual/assets/seb-change-receipt-sample.json</code> 是变更回执的格式与两条回执。在 <code>visual/assets</code> 目录下执行 <code>node seb-tabletop-run.js</code> 可复现本章全部结论，退出码为零表示六十条样例的判定与预期完全一致；校验器在判定之前先校验基准版本与样例声明是否匹配——样例声明的版本须与所用规范快照严格一致，不一致即以退出码二拒绝运行而不作任何判定，采用方按「快照入包」方式采用时快照与样例自然同版，无须随本包演进重跑 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PACKAGE-STRUCTURED-EVIDENCE-INDEX" title="来源：PACKAGE-STRUCTURED-EVIDENCE-INDEX">来源</sup>。样例不含任何计数或比例，分母只以“哪些类别被声明”的方式表达，因此工具无法、也不会生成读数 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="op_node_count" title="指标：op_node_count">指标</sup>。</p>
+<p><strong>推演对象与工具。</strong> 推演以场景 S01 多模态无障碍寻路在 OP-01 多模态到达校正点上的一次完整闸门过程为对象 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/constraints.geojson#OP-01" title="空间数据：geometry/constraints.geojson#OP-01">空间数据</sup>。三件工具随包提交，均为零依赖的离线文件：<code>visual/assets/seb-tabletop-run.js</code> 是校验器，读取基准与样例并逐条判定；<code>visual/assets/seb-tabletop-fixtures.json</code> 是六十二条样例，正例二十三条、反例三十九条（v0.4 扩充二十条覆盖生命周期、权限边界与测量声明类判据的正反分支，v0.5 再扩充二十条：十个 OP 节点各一条双联交接实例，与十条按风险台账注入的缺陷变体，v9.5 再补两条来源对齐反例），每条自带预期判定与双语说明；<code>visual/assets/seb-change-receipt-sample.json</code> 是变更回执的格式与两条回执。在 <code>visual/assets</code> 目录下执行 <code>node seb-tabletop-run.js</code> 可复现本章全部结论，退出码为零表示六十二条样例的判定与预期完全一致；校验器在判定之前先校验基准版本与样例声明是否匹配——样例声明的版本须与所用规范快照严格一致，不一致即以退出码二拒绝运行而不作任何判定，采用方按「快照入包」方式采用时快照与样例自然同版，无须随本包演进重跑 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PACKAGE-STRUCTURED-EVIDENCE-INDEX" title="来源：PACKAGE-STRUCTURED-EVIDENCE-INDEX">来源</sup>。样例不含任何计数或比例，分母只以“哪些类别被声明”的方式表达，因此工具无法、也不会生成读数 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="op_node_count" title="指标：op_node_count">指标</sup>。</p>
 <p>推演按 G0、G1、G2 三步进行。每一步的准入条件都不是为本章新写的，而是逐字取自开放机制表中 L0、L1、L2 三行与节点的既有属性；工具在第一步之前先把 L2 样例的五个必填字段与几何文件中 OP-01 的属性逐字比对，比对通过才继续，以免推演落在一个与提交数据不一致的影子节点上 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="phasing_implementation" title="深度：phasing_implementation">深度</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/constraints.geojson#OP-01" title="空间数据：geometry/constraints.geojson#OP-01">空间数据</sup>。</p>
 <div class="proposal-table"><table><thead><tr><th>推演步骤</th><th>准入条件的来源</th><th>桌面推演做了什么</th><th>样例判定</th><th>本步不产生什么</th></tr></thead><tbody><tr><td>G0 资料与许可（等级 L0）</td><td>开放机制表 L0 行的准入、停止、恢复与责任四项</td><td>以 OP-01 的五个必填字段与 L0 四项绑定条件组成样例 TT-P1，检查字段完整性与等级闸门一致性</td><td>通过</td><td>不产生测量，不招募任何人</td></tr><tr><td>G1 可逆原型（等级 L1）</td><td>开放机制表 L1 行的四项，节点闸门随之为 G1</td><td>样例 TT-P2 把运行方式改写为可撤除构件的安装撤除演练，并附维护卡与故障绕行方案</td><td>通过</td><td>不产生测量，不安装任何真实构件</td></tr><tr><td>G2 封闭成对测试（等级 L2）</td><td>开放机制表 L2 行的四项，成对协议与合理便利事先约定</td><td>样例 TT-P3 申报成对测试，分母同时声明完成、撤回、技术故障与其他非完成原因四类</td><td>通过</td><td>不产生完成率、等价差或任何读数</td></tr></tbody></table></div>
 <p>比对结果是五个必填字段逐字一致，说明推演使用的节点与提交的几何数据是同一个 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/constraints.geojson#OP-01" title="空间数据：geometry/constraints.geojson#OP-01">空间数据</sup>。这一步之所以必要，是因为桌面推演最容易出现的自欺方式，就是在纸上重新写一个比现实更整齐的节点，然后在它上面证明制度可行。</p>
@@ -248,7 +248,7 @@ code {
 <pre><code>$ node seb-tabletop-run.js
 SEB 桌面配对推演 / SEB tabletop pairing run
 基准 / Baseline : service-equivalence-baseline v0.5.0 (draft_concept_recommendation)
-样例 / Fixtures : seb-tabletop-fixtures v0.5.0 · 60 条 / items
+样例 / Fixtures : seb-tabletop-fixtures v0.5.0 · 62 条 / items
 运行 / Run      : as_of_date 2026-08-16（复审到期比较基准）
 性质 / Nature   : 方法学演示，无真实参与者，不产生任何绩效指标数值
 
@@ -307,8 +307,9 @@ SEB 桌面配对推演 / SEB tabletop pairing run
 …
 汇总 / Summary
     通过 / accepted : 23
-    拒绝 / rejected : 37
-    与期望一致 / matching expectation : 60 / 60
+    拒绝 / rejected : 39
+    与期望一致 / matching expectation : 62 / 62
+…
     本次运行不写入 metrics.json，七项包容性指标保持 unknown</code></pre>
 <p><strong>试点档案模板：最终责任与值守排班。</strong> 下面四张表是可以直接交给实施团队填写的空白结构，填写者不需要重新设计流程，只需要把待办逐项变成有名有姓的记录。最终 A 角色为<strong>未来经授权的项目发起或运营主体（当前待确认）</strong>；在该主体确认之前，任何一张表都不得被当作已生效的安排。值守规模沿用 90 天零阶段资源框架的口径，不新增数量主张 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="phasing_implementation" title="深度：phasing_implementation">深度</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="gate_count" title="指标：gate_count">指标</sup>。</p>
 <div class="proposal-table"><table><thead><tr><th>班次结构</th><th>适用闸门与口径</th><th>在岗角色</th><th>值守规模</th><th>缺岗时的处置</th></tr></thead><tbody><tr><td>不设值守</td><td>G0 资料与许可，不进行现场测试</td><td>不适用</td><td>零班次</td><td>不适用</td></tr><tr><td>单班</td><td>G1 可逆原型，沿用资源框架的一班次每试验日</td><td>无障碍值守、场地运营、维护待命</td><td>一班次每试验日</td><td>构件不得开放使用，当日改为闭场安装撤除演练</td></tr><tr><td>双班</td><td>G2 封闭成对测试，沿用资源框架的两班次每测试日</td><td>测试主持、技术安全、无障碍值守、参与者代表联络</td><td>两班次每测试日</td><td>当日测试取消，不以单班替代</td></tr><tr><td>临时安排</td><td>G3 独立复核，按复核现场需要</td><td>未参与制作的独立专业人员、参与者代表、运营</td><td>按复核现场需要</td><td>独立人员未到场即改期，不由制作方自行复核</td></tr></tbody></table></div>
@@ -349,7 +350,7 @@ OP-04 配对试点全过程证据链复演 / OP-04 paired-pilot evidence-chain r
 [P] 前置校验器 / Prerequisite checker
     命令 / command  : node seb-tabletop-run.js
     退出码 / exit code : 0（入档期望 / archived expectation: 0）
-    摘录 / excerpt  : 与期望一致 / matching expectation : 60 / 60
+    摘录 / excerpt  : 与期望一致 / matching expectation : 62 / 62
 [G] v0.4.0 判据输入域 / v0.4.0 criteria input domain
     扫描声明 / claims scanned : 4（判据函数对每条真实执行 / the criteria functions ran for real against each）
     触发输入 / triggering inputs : level_claim 0 · authority_declaration 0 · measurement_declaration 0（登记表 applies_when：结构性缺席则该码不可能触发 / registry applies_when: structurally absent, so the codes cannot fire）
