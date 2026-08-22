@@ -304,6 +304,24 @@
           "provenance_en": "Measured this round",
           "limitations_zh": "只核对文字稿存在，未逐句核对文字稿与音轨内容的一致性",
           "limitations_en": "Only the existence of the transcripts is verified; their consistency with the audio track was not checked sentence by sentence"
+        },
+        {
+          "id": "R2-09",
+          "item_zh": "报告页正文与 proposal 正文的活读数一致性",
+          "item_en": "Live-reading consistency between the report pages and the proposal text",
+          "method_zh": "把 `report/proposal.html` 与 `report/proposal.en.html` 剥标签取纯文本，与对应 `proposal.md`／`proposal.en.md` 去 frontmatter 后的正文，按受控模式表逐类提取会随版本漂移的读数（件数条目、双语自查读数、桌面推演控制台块与汇总行、迭代号族）并比对两侧集合是否逐值相同",
+          "method_en": "Strip tags from `report/proposal.html` and `report/proposal.en.html` to plain text and compare, against the front-matter-stripped body of `proposal.md`/`proposal.en.md`, the version-drifting readings extracted by a controlled pattern table (file-entry count, bilingual self-check readings, tabletop console block and summary line, iteration strings), asserting the two sides yield identical value sets",
+          "tool_zh": "Python 正则集合比对（`refcheck` F16 项）",
+          "tool_en": "Python regex set comparison (check F16 of `refcheck`)",
+          "date": "2026-08-23",
+          "scope_zh": "report/proposal.html、report/proposal.en.html 与 proposal.md、proposal.en.md 全文",
+          "scope_en": "The full text of report/proposal.html, report/proposal.en.html, proposal.md and proposal.en.md",
+          "result_zh": "双语两侧逐模式全等，不一致项 0：件数条目 153、非空行自查 676/676、四类锚点自查 278/278、桌面推演控制台块 62 条与汇总 62/62、迭代号族 v9.5（正文对 v9.5 一轮工作的历史记述，双语同位）。本项为 v9.6 新设：v9.0 至 v9.5 六轮中两份报告页只被手工补过一处读数，其余停留在 v8.9 渲染产物，本轮按 `render_proposal_html.py` → `post_render_report.py` → `imgdim.py` 全链重渲后复测，并把该比对固化为 `refcheck` 的 F16 项，使同类落后由检查而非由记忆拦截。",
+          "result_en": "Every pattern matches on both language sides, zero mismatches: 153 file entries, the 676/676 non-blank self-check, the 278/278 four-type anchor self-check, the 62-item tabletop console block and its 62/62 summary, and the iteration string v9.5 (the prose record of the v9.5 round, at the same position in both languages). Newly added at v9.6: across the six rounds from v9.0 to v9.5 the two report pages received one hand-patched reading and otherwise remained the v8.9 render, so this round re-rendered them through the full `render_proposal_html.py` → `post_render_report.py` → `imgdim.py` chain, re-measured, and fixed the comparison as check F16 of `refcheck` so that the same lag is caught by a check rather than by memory.",
+          "provenance_zh": "本轮实测",
+          "provenance_en": "Measured in this round",
+          "limitations_zh": "模式表是有限枚举，只覆盖当前会随版本漂移的印刷读数；新增此类读数时须同步扩表，否则新读数不在本项覆盖内。本项不比对两侧的完整文本，只比对读数值集合。",
+          "limitations_en": "The pattern table is a finite enumeration covering the readings that currently drift with each version; new readings of this kind must be added to it or they fall outside this check. The check compares reading value sets, not the full text of either side."
         }
       ],
       "record_limitations_zh": [
