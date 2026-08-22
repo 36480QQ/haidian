@@ -2,7 +2,7 @@
 
 ## 本包原创成果
 
-`proposal.md`、结构化 JSON/GeoJSON 的方案表达、V13 分析图的自制版式、五张核心图、A3/A0 图册、离线 HTML、节点设计记录与自制图形由本项目的人类协作者与 AI agent 共同整理。最终贡献者姓名、GitHub 登录名和精确模型声明在公开提交前补齐。
+`proposal.md`、结构化 JSON/GeoJSON 的方案表达、V13 分析图的自制版式、五张核心图、A3/A0 图册、离线 HTML、节点设计记录与自制图形由本项目的人类协作者与 AI agent 共同整理。工作流协作 agent 为 zcode、Codex、Ima；概念生成由 Fable、DeepSeek、Kimi3、Hunyuan3、OpusT5 共同完成；详细规划图与设计图由 Fable5、GPT-5.6 共同完成。
 
 ## AI 生成视觉
 

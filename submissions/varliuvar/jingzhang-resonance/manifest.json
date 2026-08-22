@@ -10,7 +10,25 @@
   "agent": {
     "agent_id": "varliuvar",
     "agent_name": "varliuvar与AI协作者",
-    "model": "OpenAI Codex (GPT-5 family; multi-task assisted workflow)"
+    "model": "zcode + Codex + Ima; concept: Fable + DeepSeek + Kimi3 + Hunyuan3 + OpusT5; detailed planning/design: Fable5 + GPT-5.6",
+    "model_roles": {
+      "workflow_agents": [
+        "zcode",
+        "Codex",
+        "Ima"
+      ],
+      "concept_generation": [
+        "Fable",
+        "DeepSeek",
+        "Kimi3",
+        "Hunyuan3",
+        "OpusT5"
+      ],
+      "detailed_planning_and_design": [
+        "Fable5",
+        "GPT-5.6"
+      ]
+    }
   },
   "generated_at": "2026-08-22T10:28:01.867370Z",
   "files": [
@@ -24,13 +42,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8b2de0b4a9e85ba16b67b68feaace396ab402e733ed33dc0dcd8d1ef139d5ac3"
+      "sha256": "a18ee52e74b5d7d3b68ad3e33176e4afd831888df9a2b1af466f37761ac0fc87"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "6e7af13231cf1eb2d85fa734249355bc2a001d16ce3ab0d7be4419b858e93053"
+      "sha256": "abfd117586cdae6f30a65c201672b7089e97655cdde0d1a485b24d68dbe31820"
     },
     {
       "path": "metrics.json",
@@ -48,13 +66,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "dbb6276e0d85f87ed80f03289cdeac6dc39930f69fa36f56b066f92986b1bdf3"
+      "sha256": "4bdb2350e32f03cbf53db1687f5702e96a2f3b6f3a62a7b3b6f492bd57ba4813"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "033fff9379c4c0f5b2ced532d26b85d786304f2ee234d90a577ac2148ef17c4d"
+      "sha256": "942f10d9a26402c285a7e5ab90bdd4cc036417c059e468e90741d68caca9f41e"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +97,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d1172580b23dfd93ad0a13ab5b0d9908bb49b24876fa4f2dd12e8a707fae126b"
+      "sha256": "c27337b58aba70bf79f0284a08a6cbd2aa38b560b56035c0109d18733bc43965"
     },
     {
       "path": "report/narrative.md",
@@ -91,7 +109,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f2e185acee1599a092f5c0319d5f5a2f5f660fd688c1f1c4cab962cc3e1b936c"
+      "sha256": "cf94cc9ca06479591dbdbc0023b546d58351cffd68bde276d1f202d16029cfc4"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -112,7 +130,15 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "56ea8f0fc4ff017559366693141fbd9a829bbaffb4197b6935ace37ec228b742"
+      "sha256": "711348c79ed9c22d85407ddb5f85b8b16277a783ed7d1f8cc2890cee0937fef4"
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "required": true,
+      "language": "en",
+      "sha256": "b87cc9335eecb513d4ff67bcfc1e7b5bbed5856618cf83caa72dc3df457ef10e",
+      "translation_of": "visual/index.html"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -209,7 +235,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "93be024a1509463b31537bb6acbf91a5953094ebf7a4f318c79d956127fa968a"
+      "sha256": "ca746d1f160352e1f8b3e3141a9ccb5f4220f04b1eb7aeb26dd4e2194865c53d"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +243,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "54c2e698ba2ad9ed0275386b7258639be535e9a91b260848cb0fbe657cafd422"
+      "sha256": "3a379a9a1a3773e69175b921aeea99a6f7ebd958ab89804fb23981fca697811e"
     },
     {
       "path": "assets/figures/logo-direction.png",

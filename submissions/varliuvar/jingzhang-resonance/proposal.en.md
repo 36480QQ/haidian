@@ -13,12 +13,28 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 
 This is an open co-creation concept and research proposal. It is not a statutory plan, survey, engineering design, property determination, or government approval. Tokai, Oskyi, and GPT-image visuals communicate spatial actions and atmosphere only; they do not prove current conditions, location, scale, boundary, or buildability.
 
+## Model and Collaboration Declaration
+
+The workflow agents for this submission were `zcode`, `Codex`, and `Ima`. Concept generation was completed jointly by `Fable`, `DeepSeek`, `Kimi3`, `Hunyuan3`, and `OpusT5`. Detailed planning diagrams and design drawings were completed jointly by `Fable5` and `GPT-5.6`. This declaration describes collaboration roles and does not change the visual-intention, research-expression, or non-survey boundary of the figures.
+
 ## Design Basis and Source List
 
 The proposal responds to the official open-call announcement, the agent taskbook, the repository design brief, allowed design space, source registry, and local standards index [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]. The official site redline and three exact key-area polygons are not yet available. The submitted boundary files remain provisional rough constraints and must not be treated as official redlines [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE].
 
-The evidence system has three layers: nine GeoJSON files and metrics for machine review; the V13 analysis set, five core figures, and A3/A0 drawings for design communication; and lock, approval, evaluation, and source records for version control.
+## Submission Reading Path
 
+| Task | Direct deliverables | Primary entry | Status boundary |
+| --- | --- | --- | --- |
+| agent.1 Overall concept | proposal, logo-direction, land-use-structure, A3/A0 | `proposal.md`, `assets/figures/`, `drawings/` | concept research / no statutory redline |
+| agent.2 Innovation ecosystem | six-case table, ecosystem loop, three stations/two wings | proposal sections and `compliance_matrix.json` | mechanism proposal / no funding or enterprise commitment |
+| agent.3 AI + scenarios | 14 cards, six personas, scenario-space-operation mapping | proposal scenario section and geometry layers | test proposal / no approved operation |
+| agent.4 Public space and landmarks | N01-N03, key-area action diagrams, public-space rules | `assets/analysis-18/`, `assets/figures/key-areas.png` | research point map / no construction drawing |
+| agent.5 Cultural narrative | Jing-Zhang, Zhongguancun, AI culture, and identity direction | proposal, logo, visual index | narrative system / source and rights boundaries remain active |
+| agent.6 Long-term operation | phasing, annual rhythm, pause/exit/retest rules | proposal, `geometry/phasing.geojson`, matrices | operating proposal / no government or investment commitment |
+
+The evidence system has three layers: nine GeoJSON files and metrics for machine review; the 21-page A3 booklet (including 18 V13 analysis pages), plus 3 A0 boards and five core figures for design communication; and lock, approval, evaluation, and source records for version control.
+
+![AI Origin public-space visual intention and action framework](assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png)
 ![Overall structure and research boundary](assets/figures/site-overview.png)
 
 ## Three-Level Scope Framework
@@ -161,4 +177,4 @@ Evidence carried over from the corresponding Chinese sections: existing conditio
 - Site package, source registry, and processed fact pack [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK].
 - Provisional boundary declarations [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE].
 - Six international reference operators [source:CASE-KENDALL] [source:CASE-KQ] [source:CASE-STATIONF] [source:CASE-VECTOR] [source:CASE-ONENORTH] [source:CASE-PITTSBURGH].
-- Copyright statement, assumptions, sources, three matrices, nine GeoJSON layers, A3/A0 drawings, and the full artifact status register in this package.
+- Copyright statement, assumptions, sources, three matrices, nine GeoJSON layers, A3/A0 drawings, and the full artifact status register in this package [source:PACKAGE-MANIFEST].
