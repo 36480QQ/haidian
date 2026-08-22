@@ -1,0 +1,165 @@
+{
+  "type": "FeatureCollection",
+  "name": "origin_jingzhang_key_areas",
+  "metadata": {
+    "proposal_slug": "jingzhang-origin-belt",
+    "coordinate_reference_system": "EPSG:4326",
+    "generated_date": "2026-08-14",
+    "note": "Copied from repository provisional boundaries. These are NOT official redlines."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PROV-KEY-001",
+      "properties": {
+        "id": "PROV-KEY-001",
+        "layer": "KEY_AREA",
+        "area_id": "zhiyuan_rd_innovation_zone",
+        "name_zh": "众智园AI自主创新加速区",
+        "name_en": "Zhongzhiyuan AI Acceleration Area",
+        "brand_name_zh": "众智园",
+        "brand_name_en": "Zhongzhiyuan",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "announced_area_sqm": 1921000,
+        "area_sqm_calculated": 1929201.877,
+        "design_focus_zh": "AI基础研究、大模型训练、具身智能、AI芯片、高校科研",
+        "design_focus_en": "AI fundamental research, large model training, embodied intelligence, AI chips, university research",
+        "boundary_roads_zh": "北界：北五环；南界：北四环",
+        "boundary_roads_en": "North: North 5th Ring Road; South: North 4th Ring Road"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.985
+            ],
+            [
+              116.3553,
+              39.985
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3407,
+              39.985
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PROV-KEY-002",
+      "properties": {
+        "id": "PROV-KEY-002",
+        "layer": "KEY_AREA",
+        "area_id": "zhihuo_life_service_zone",
+        "name_zh": "北京AI原点社区",
+        "name_en": "Beijing AI Origin Community",
+        "brand_name_zh": "AI原点",
+        "brand_name_en": "AI Origin",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "announced_area_sqm": 1043000,
+        "area_sqm_calculated": 1043236.909,
+        "design_focus_zh": "商业综合体、AI人才社区、生活服务、烟火气",
+        "design_focus_en": "Commercial complex, AI talent community, life services, street vitality",
+        "boundary_roads_zh": "北界：北四环；南界：北三环",
+        "boundary_roads_en": "North: North 4th Ring Road; South: North 3rd Ring Road"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3397,
+              39.965
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3553,
+              39.985
+            ],
+            [
+              116.3397,
+              39.985
+            ],
+            [
+              116.3397,
+              39.965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PROV-KEY-003",
+      "properties": {
+        "id": "PROV-KEY-003",
+        "layer": "KEY_AREA",
+        "area_id": "zhichan_industry_transport_zone",
+        "name_zh": "大钟寺AI产业集聚区",
+        "name_en": "Dazhongsi AI Industry Cluster",
+        "brand_name_zh": "大钟寺",
+        "brand_name_en": "Dazhongsi",
+        "source_type": "agent_inferred_from_public_data",
+        "confidence": "medium",
+        "geometry_role": "provisional_constraint",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "announced_area_sqm": 720000,
+        "area_sqm_calculated": 720454.221,
+        "design_focus_zh": "AI企业总部、智能原生商业、交通枢纽、产业窗口",
+        "design_focus_en": "AI enterprise HQ, smart-native business, transport hub, industry window",
+        "boundary_roads_zh": "北界：北三环；南界：北二环",
+        "boundary_roads_en": "North: North 3rd Ring Road; South: North 2nd Ring Road"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3407,
+              39.965
+            ],
+            [
+              116.3407,
+              39.939
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
