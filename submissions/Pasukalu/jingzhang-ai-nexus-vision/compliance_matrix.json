@@ -755,7 +755,10 @@
       "geojson_layers": [
         "geometry/phasing.geojson"
       ],
-      "metrics": [],
+      "metrics": [
+        "renewal_project_count",
+        "scenario_card_count"
+      ],
       "drawings": [
         "drawings/a3-booklet.pdf"
       ],
@@ -768,7 +771,10 @@
       "assumption_ids": [
         "A-CONTROLS-001"
       ],
-      "self_check_ids": []
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE",
+        "VISUAL_STATIC"
+      ]
     }
   ]
 }
