@@ -47,7 +47,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7fbc56594eef75704385f7bbd5de5bc7a74314be25609a9712f5d8e24246f525"
+      "sha256": "faef8fbe90b0c4e2a7807fbd9a41e648f6411cf0b3b4cbb2129f52ae8f6a2b62"
     },
     {
       "path": "agent.json",
@@ -83,7 +83,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "34094c623ea7121548934062c5f36ac606dc66d90dcef40a38850d7177fe25f4"
+      "sha256": "b66c056cd7e59bc12f8406fdc02da7a21e2f7c262e58510370d0edc0a2af3e07"
     },
     {
       "path": "compliance_matrix.json",
@@ -108,7 +108,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "19779dea92c46ecf022e155dc65af846a5cac148d0c83996fcf27a2cff41d1fb"
+      "sha256": "be33c3f2f9c848b9fb6d9f3f58d852f78c801e8859d4ae722cc6fede3b8639b8"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +238,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6e11f5943e53f862b0819659dc062c85b6c6fdf8efe53982baae84a990f3df34"
+      "sha256": "b33f69beb8ef5c22dc8a11f365195b20b46c76e2bce36dd0fdb5bc2a49f39e0c"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9bac71b7758f6e0b287ebf0b976f8cb4d62a92c3cc2bdf53803de4298d393878"
+      "sha256": "89ba43690019545ba7993c4694aba7cbcab000dab5bf61ed11b5b94562579fda"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -377,7 +377,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "d5c2c5febe97702061821a2839fb337e1d7c79c4ba84aef62144509c11726b11"
+      "sha256": "98face5123a3e14494478d1e0decfa08415aa3932d05f53df216b8f080dca48e"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -445,7 +445,7 @@
       "required": false,
       "description_zh": "模型影子测试的完整运行记录：12 条交接账 × 3 档清障状态 = 36 例，每例移除三个决定字段后单独交给一个真实模型（gpt-5.6-sol，reasoning effort high），与确定性基准逐例比对。**确定性判 HOLD 的 24 例，模型全部保持 smart_layer=off，无一例更宽松；36 例的 smart_layer 取值全部一致。** 文件含逐例原始判定与四条设计发现：refusal_reasons 无枚举导致同一概念 14 种拼法（SHADOW-F1）；observed_pass 可与 evidence_pointer 为 null 并存（SHADOW-F2，已加机器判定）；四个理由码里没有对应「人工兜底未验证」的那一个（SHADOW-F3）；智能层被封顶时该配哪个 disposition 未写明（SHADOW-F4，如实记为未解决）。**模型输出不可字节复现，文件已写明可复现的是夹具生成、比对逻辑与逐例原始记录，并登记被审夹具与 schema 的 sha256。**",
       "description_en": "The full record of the model shadow run: 12 shift ledgers x 3 clearance variants = 36 cases; in each case the three decision fields were removed before handing the ledger to a real model (gpt-5.6-sol, reasoning effort high), and every verdict was compared case by case against the deterministic baseline. **In the 24 deterministic-hold cases the model also kept smart_layer=off — none more permissive — and all 36 smart_layer values matched.** The file carries every raw verdict plus four design findings: refusal_reasons has no enumeration, so one concept was spelled 14 ways (SHADOW-F1); observed_pass can coexist with a null evidence_pointer (SHADOW-F2, now a machine-decidable check); none of the four reason codes covers 'the human floor is unproven' (SHADOW-F3); and the disposition that pairs with a capped smart layer is unspecified (SHADOW-F4, recorded as unresolved). **Model outputs are not byte-reproducible; the file states what is reproducible and registers the sha256 of the audited fixture suite and schema.**",
-      "sha256": "5971600dc6cc057c23da9e4486c083a3a154f8cfd9d46428ebb4287aee96021f"
+      "sha256": "00cc1658d8311de17dece6fda7b2b393170fa0b339d529ea05710eac201e2dcb"
     },
     {
       "path": "visual/assets/governance/protocol-check-runner.js",

@@ -38,7 +38,7 @@
   {
    "id": "SHADOW-F2",
    "severity": "design_gap",
-   "statement_zh": "`rollback_rehearsal` 允许 `execution_state: observed_pass` 与 `evidence_pointer: null` 并存——即「声称演练通过」却没有任何可核的证据指针。模型在 P4／P5 档共 8 次点出这一点（ROLLBACK_EVIDENCE_MISSING 4／ROLLBACK_EVIDENCE_NOT_REVIEWABLE 4 等）。**这是本轮扰动无意造出来的状态，而 schema 不禁止它。**",
+   "statement_zh": "`rollback_rehearsal` 允许 `execution_state: observed_pass` 与 `evidence_pointer: null` 并存——即「声称演练通过」却没有任何可核的证据指针。模型在 P4／P5 档共 **12** 次点出这一点，分散在五种拼法里：ROLLBACK_EVIDENCE_MISSING 4、ROLLBACK_EVIDENCE_NOT_REVIEWABLE 4、ROLLBACK_REHEARSAL_EVIDENCE_MISSING 2、ROLLBACK_EVIDENCE_POINTER_MISSING 1、ROLLBACK_REHEARSAL_EVIDENCE_NOT_REVIEWABLE 1——**这同时是 SHADOW-F1 的又一个实例**。（首版本文件与正文都写作「8 次」：当时只加了前两个码，漏掉三个变体拼法；2026-08-22 逐码复算后改准。）**这是本轮扰动无意造出来的状态，而 schema 不禁止它。**",
    "fix_direction_zh": "execution_state 为 observed_pass／observed_fail 时，evidence_pointer 与 executed_at 必须非空。"
   },
   {
