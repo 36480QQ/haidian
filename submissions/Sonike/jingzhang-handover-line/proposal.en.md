@@ -39,19 +39,6 @@ This iteration completes one implementation proof that remains under participant
 | How does public interest enter? | Staffed counters, a continuous step-free walk, fixed wayfinding, paper and telephone channels precede the smart layer | Every scenario states its human service and post-exit spatial use |
 | Are claim boundaries honest? | All spatial moves are concepts; provisional geometry is not an official redline; fieldwork, prices and appointments remain subject to due process | Itemised in `assumptions.json` and the risk chapter |
 
-### Three Reading Paths: 60 Seconds, 5 Minutes, Deep Read
-
-This proposal is long. So that readers with different time budgets can still reach a complete judgement, three non-overlapping paths follow — **each is self-contained, and finishing any one of them answers "what does this propose, and how far does the evidence go".**
-
-| Path | What to read | What it lets you answer |
-| --- | --- | --- |
-| **60 seconds** | The one-sentence claim above this section, figure F/05, and the three lines of figures below | What this proposal builds, how far it has got, and that it has not entered the field |
-| **5 minutes** | Three-level scope framework → the five-functions table → the three Handover Yards → the twelve scenario cards → the first-year verification plan | Spatial structure, division of responsibility, the scenario list, and how it is measured |
-| **Deep read** | Read in order of contents while checking against `compliance_matrix.json`, `metrics.json` and `sources.json` item by item | Where the evidence for each claim sits, how it is recomputed, and what would invalidate it |
-
-**The three lines of figures for the 60-second path:** offline tabletop tasks **12/12** passed; takeover assertions **48/48** passed; field tasks **0/12**, carried by the post-authorisation professional process. **These three lines appear together in the figures, in both offline pages and in `simulation.json` — the same numbers in all four places.**
-
-
 ## Three Legacies of One Railway: Alignment, Level Crossing, and Shift Handover
 
 The previous section treats "handover" as the core mechanism of this proposal; this section states where it comes from, so that a metaphor is not mistaken for evidence. The facts below are public and verifiable. The proposal extracts transferable practice from them and infers no statutory conclusion.
@@ -715,41 +702,6 @@ Cultural signage and handover symbols stay in separate layers: cultural signage 
 **Colour-vision-deficiency separation is now measured, not asserted.** For the eleven fill colours the figures actually use (seven land-use code colours plus four semantic colours), CIEDE2000 differences were computed for every pair, then recomputed after simulating deuteranopia, protanopia and tritanopia with the Viénot 1999 LMS matrices: the median pairwise ΔE00 is 38.0 for normal vision, 25.2 under deuteranopia, 26.9 under protanopia and 55.5 under tritanopia. **Three exceptions are stated item by item**: "09 tech services and business" and the duty-yellow accent differ by only about 2.3 under any vision (they occupy different roles, fill versus accent, and are never compared within one layer); under protanopia "0701 talent living" and "1401 continuous parkland" fall to 2.8; under tritanopia "0702 community service" and "0803 culture and civic service" fall to 0.4.
 
 **Once measured, it was fixed rather than merely listed as a limitation.** The corridor plan in the land-use figure (F/02) previously separated its parcels by colour alone; each parcel now carries its land-use code printed on it (0802, 0804, 09, 0701, 0702, 0803, 1401), placed largest parcel first and skipped on collision so that labels never overlap. The legend prints code, area and share line by line. **The figure therefore no longer requires hue discrimination to be read**, satisfying WCAG 2.1 SC 1.4.1 (colour is not the only visual means). The boundaries are recorded in the same place, and that boundary has a definite scope: the two colour pairs remain close in value, and a minimal-perturbation replacement set has already been computed that lifts the minimum ΔE00 across four vision conditions from 5.92 to 14.00 (each hue stays inside its family, maximum drift 15.6). **However `jzstyle.LAND_USE_COLORS` is one shared set used by F/02, F/03 and the A0/A3 boards, and the legend on A0 sheet B/01 prints the same codes. Changing a single figure alone would show one land-use class in two different colours across the submitted drawings, so a palette change must be issued for the whole drawing set at once rather than figure by figure.** This package has therefore never adjusted the land-use values of any single figure on its own — that is exactly what the scope constrains; real-user testing belongs to the on-site stage led by an accessibility reviewer once site authorisation exists, and its trigger and owner are registered in `assumptions.json#A-CONTRAST-001`. All values above can be recomputed independently from `jzstyle.LAND_USE_COLORS` using Viénot 1999 simulation plus CIEDE2000 [standard:WCAG-CONTRAST] [assumption:A-CONTRAST-001].
-
-### Bilingual Spot Check: What Was Checked and What It Found
-
-A bilingual package is not finished when the translation is finished. This round ran a machine spot check comparing the two versions class by class. The results follow — **including the one inconsistency it found**.
-
-| Checked item | Method | Result |
-| --- | --- | --- |
-| Key numbers with units | Regex-extract every "number + unit" pair from both versions, normalise the units, compare class by class | 36 classes. **One inconsistency found**: the English read `221,014 m²` while the Chinese read 22.10 万平方米, a difference in precision; both now read about 221,000 m², with the exact 221,014.099 kept in `metrics.json` |
-| Area unit notation | Count the notations used in each version | **Mixed usage found in the English**: `km²` 8 times alongside `sq km` 6 times, and `ha` alongside `hectares`; now standardised to `km²` / `m²` / `ha` |
-| Field 0/12 | Compare every occurrence and its position | Same figure in the same place in both versions, none missing |
-| Provisional-boundary qualifiers | Compare the paragraphs where provisional appears | Paragraph for paragraph |
-| Licence terms and no-endorsement | Compare the full grant, the third-party exclusion and the no-endorsement statement | All three present in both versions and matching the positions listed in `same_text_locations` in `manifest.json` |
-| Position of the five core figures | Compare the line numbers of the figure references | Line numbers identical |
-| Heading and table structure | Compare heading and table line numbers | Line numbers identical |
-
-**The value of this table is that it records a failure.** Through earlier iterations an inconsistency of this kind only surfaced when somebody else pointed it out; once the spot check became a fixed step, it was caught before submission. The check script stays outside the repository under the submission rules, but **every row above can be reproduced from the two files in this package with common command-line tools**.
-
-
-### Three Reading Distances, Three Type Layers: Measured Values and the Test
-
-A drawing is not one scale: a board, a booklet and a phone are three reading distances. **The test follows common exhibition practice: cap height must be no less than one 250th of the reading distance.** The sizes below are the actual minimum and title sizes used in each medium, with cap height taken as 0.70 of the type size. They are reviewable measurements, not design intentions.
-
-| Medium and reading layer | Design reading distance | Actual type size | Cap height | Maximum legible distance |
-| --- | --- | --- | --- | --- |
-| A0 board · far layer (main title) | 3 m | 95.4 pt | 23.5 mm | 5.9 m |
-| A0 board · middle layer (section titles, footer) | 1.5 m | 25.0–34.6 pt | 6.2–8.5 mm | 1.5–2.1 m |
-| A0 board · near layer (body and captions) | 0.8 m | 13.0 pt | 3.2 mm | 0.80 m |
-| A3 booklet · desk (main title) | 0.4 m | 47.6 pt | 11.8 mm | 2.9 m |
-| A3 booklet · desk (smallest body) | 0.4 m | 7.6 pt | 1.9 mm | 0.47 m |
-| Offline page · phone | 0.35 m | 10–14 px | 1.9–2.6 mm | 0.46–0.65 m |
-
-**The three layers each stand on their own and do not substitute for one another.** The far layer of an A0 board is what tells a passer-by at three metres what this is; the middle layer lets someone at a metre and a half find the section they want; the near layer is the evidence and the qualifiers, read at the board itself. **Detailed evidence on an A0 board is therefore not solved by enlarging type but by layering: not being able to read the body text from three metres is the design, not a defect.** The same test governs wayfinding and the identity: street wayfinding takes a far-layer size, service-desk cards a 0.4 m size, and international-communication thumbnails a 0.35 m size, with the thumbnail layer carrying no figures or qualifiers, only the name and a status label.
-
-**Each of the five core figures carries a short alternative text**, held in the guide text under `assets/media/` for screen readers and plain-text environments. Each one states four fixed things: the conclusion of the figure, the key numbers on it, the provisional nature of the boundary, and **the conclusions that cannot be drawn from it**. Alternative text differs from a caption: a caption explains how to read the figure, while alternative text gives someone who cannot see it the same judgement [depth:metrics_recalculation] [assumption:A-CONTRAST-001].
-
 
 ### Reading this proposal without a screen: audio, video, tactile, and 3D
 
