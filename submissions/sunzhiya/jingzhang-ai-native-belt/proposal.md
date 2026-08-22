@@ -1,6 +1,6 @@
 ---
 title: "京张·原力 — AI 原生创新带城市设计"
-author_github: "wocaonimaworinixi-collab"
+author_github: "sunzhiya"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
