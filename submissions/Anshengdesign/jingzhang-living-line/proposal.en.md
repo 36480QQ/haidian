@@ -120,7 +120,7 @@ We measure one object with five rulers, yielding four health scores:
 
 ## User Research & Requirements (Diagnosis ring)
 
-The city's masters are seven kinds of people: AI developers, researchers, residents, students, visitors, industry service workers, and **frontline workers (cleaning/security/delivery)** — added this round because the bottom line of public interest is that "the least convenient person can still use it".
+The city's masters are seven kinds of people: AI developers, researchers, residents, students, visitors, industry service workers, and **frontline workers (cleaning/security/delivery)** — none of the seven is omitted, because the bottom line of public interest is that "the least convenient person can still use it".
 
 **Six-line public-rights floor**: unconditional entry; human-equivalent service (normal paths/human service remain usable when AI is removed); independent appeal arbitration; pause/resume/exit. Desktop proxy calibers are stated honestly ("desktop supply audit", not real interviews — real interviews are a pre-implementation task).
 
