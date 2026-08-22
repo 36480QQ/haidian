@@ -48,6 +48,18 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 复现命令为 `node visual/assets/planning-alignment-audit.js --json`；`--self-test --json` 把“已取得官方批复文件”错误翻转为 true，审计必须 fail-closed。本轮不改变核心价值主张、投稿许可、GeoJSON、metrics 或证据签名，也不复制外部图片、附件或长段文字；“控规获批”与“官方公开版发布”只描述所引用的街区控规信息，不描述本投稿状态。
 
+## P2-04｜离线体验与媒体：服务旅程短片、交互旅程与原创封面
+
+本轮把方案的「进入—使用—退出」旅程做成可直接体验的离线媒体，全部内容为本包原创生成，不引入外部素材、不改变任何已登记数值。
+
+- `assets/media/experience.mp4`：44 秒无声概念短片（1280×720，H.264），沿无数据正线走过三座治理站与六道可复核闸门，并展开 12+3 场景矩阵；配 `experience.vtt` 中英双语字幕、`experience.md` 文字稿与权利说明、`experience-poster.webp` 海报帧。
+- `visual/index.html` 与 `index.en.html` 新增「服务旅程」区段：键盘 ←/→ 可达的六闸门步进器（WAI-ARIA tablist 语义、reduced-motion 降级、无 JS 时全部面板静态可读），并内嵌带字幕的视频播放器。
+- `assets/media/cover.webp`：原创 Gallery 封面（线、三站、六闸门与核心指标），经 `manifest.cover_image` 登记；不代表官方渲染或获批效果。
+
+![共数京张服务旅程海报：无数据正线、三座治理站与六道闸门的概念旅程](assets/media/experience-poster.webp)
+
+视频与封面只承担概念沟通；权威数据仍以 GeoJSON、metrics、矩阵与审计台账为准 [data:geometry/public_space.geojson] [metric:no_data_equivalent_service_target_ratio]。
+
 ## 设计依据与资料清单
 
 本方案首先回应《百年京张 AI 创新带城市设计国际方案征集资格预审公告》及面向智能体的任务书：统筹研究、总体设计、三处重点区域、AI 创新生态和长期运营必须互相校核，而不能用一个技术展馆代替整条创新带。公告给出的 43.6 平方公里、11.4 平方公里和 368.4 公顷是工作尺度依据；提交包中的可计算边界则来自仓库临时几何，两类数字不可混称。公告、任务书、标准快照与资料用途登记共同构成本方案的事实入口 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]。

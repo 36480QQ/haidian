@@ -1,6 +1,17 @@
 # 方案迭代记录
 
+## v2.1 - 2026-08-22
+
+P2-04 offline experience and media / 离线体验与媒体：服务旅程短片、可键盘交互旅程与原创封面
+
+- Baseline / 基线：从最新 `upstream/main` `58b8dd439e6ad519dc9b8ce70c04b6256232eca0`（最后观察 `2026-08-22T10:24:00+08:00`）建立干净分支 `codex/data-coop-line-p2-04-media-journey-20260822`。前次观察 2518132221（P2-06 合并点）至冻结点仅含 Anshengdesign/aplaybox 投稿变更，未触及本投稿、投稿 Skill、brief、schema、validator、helper 或门禁，判定无关。
+- Reason / 原因：投稿 Skill 明确鼓励多模态表达；本包此前零媒体、零交互，是公开详情页与 Gallery 的最大表达缺口。仓库 proposal-view 原生支持 manifest 媒体条目（video/poster/caption/transcript 角色）与 `visual/index.html` 交互入口，闭环路径现成。
+- Before → After / 修正前后：修订前 Gallery 卡片使用仓库生成的默认封面，公开页无视频、无交互；修订后新增 `assets/media/experience.mp4`（44 秒无声概念短片：正线生长 → 三站 → 六闸门 → 12+3 场景矩阵 → 证据封底，中英双语 VTT 字幕、文字稿与权利说明、海报帧齐全）、双语「服务旅程」交互区段（ARIA tablist、键盘 ←/→、reduced-motion 降级、无 JS 静态可读）与原创 `cover.webp`（经 `manifest.cover_image` 登记）。
+- Rights & scope / 权利与范围：视频、海报与封面全部由包内设计语言逐帧原创绘制（Pillow + 本地 ffmpeg 编码），不含外部图片、音频、地图或人物素材；geometry、metrics、证据签名、许可与核心价值主张不变。
+- Verification / 验证：视频逐场景抽帧 QA；交互区段桌面与移动视口、键盘操作与无 JS 回退检查；四门 self-check、六项专项审计与 preflight 全 PASS；manifest 五个新媒体条目角色与 sha256 齐全。
+
 ## v2.0 - 2026-08-22
+
 
 P2-06 A3/A0 narrative rebuild / A3 与 A0 图纸叙事重构（兑现台账 P2-03「A3/A0 重构」待办项；该编号曾被评审脊柱轮占用，本轮以 P2-06 执行并消解）
 
