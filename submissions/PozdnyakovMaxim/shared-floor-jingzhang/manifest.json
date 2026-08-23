@@ -269,7 +269,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "5dc62326831766efb0b53689ef3bc410ad8b939c5a6e5dfa81effee40e5e6ec4"
+      "sha256": "937ed5ce7adcc462739afbe2af6da595e981479362ec6f7fe50c258061f48081"
     },
     {
       "path": "compliance_matrix.json",
@@ -384,14 +384,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3c232d94e2c4a8a993f33955dc6865a015003f1e274ac892a3e4e158c234019f"
+      "sha256": "ee73f265a557fcaa38b3a4bd748406d37a70d70a554cc39857217787f5b6618b"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "6e60c9786d2d5e255545043bf0ddb77c25a6899396609bb694b73e5482fed9e6"
+      "sha256": "3d330c5cce9e64174b45891ff0e2e0775b00c9bdc08319faa98e9d9fb2053e84"
     },
     {
       "path": "report/copyright_statement.md",
@@ -411,14 +411,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ab524805319388a0cd14d462c7cb8fa919d4ba593616a42065ded06c7d498db7"
+      "sha256": "94abd986696754099c25789746c191503d70939444445a2a51f9ff1325847a4f"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "76004234a54952cc407321421836c3ecdf40f503f6bd847e24b05b2cfad25b89"
+      "sha256": "aa16b7c9915502bfa4ff51a32e53eae0cfef72078887e6c1a01d7c9b0dafb5a3"
     },
     {
       "path": "risk.json",
@@ -430,7 +430,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "77a995871de08c06e541cfb29affd99af961ce48f9d5c332d51d590338d23fd5"
+      "sha256": "cf56abdc42a0277b7ef70c2aa0091ec5acb96bc8d788e5e7a300739dac9a6306"
     },
     {
       "path": "simulation.json",
@@ -911,6 +911,13 @@
       "required": true,
       "language": "neutral",
       "sha256": "3836abac1d85a137a42f135acd6fea457d32bade24a384120275d10e3f70fde0"
+    },
+    {
+      "path": "visual/assets/rights-matrix.json",
+      "role": "visualization",
+      "required": true,
+      "language": "neutral",
+      "sha256": "74bbc9c78d1c19f54bdc0162bea0e2fbabd05b0a302e17de2f402d0abf66cd3a"
     },
     {
       "path": "visual/assets/runs/shared-floor-changeover-ed41614d2fa3c85d/build_receipt.json",

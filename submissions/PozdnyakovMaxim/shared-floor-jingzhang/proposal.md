@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "换模型，不换城市：以既有京张遗产公共空间为一层共地，用七条转换街缝合校园、社区、站点与产业，并以验证院、原点廊院、城市交汇厅三种长期框架承载可替换的服务、内装和 AI 设备；官方边界到位后整包重绑定、复算。"
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.2-candidate"
+iteration: "v2.3-candidate"
 ---
 
 # 京张共地 / THE SHARED FLOOR
@@ -521,6 +521,23 @@ P0 交接由条件时序、角色责任、未计价数量、逐门交接四本�
 
 图纸内嵌 Noto Sans SC 2.004 子集，其哈希、commit、方法和 OFL 见复现文件；NASA POWER 按政策署名，未嵌其他投稿。因 agent-track 与公告知识产权关系未书面澄清，暂用 `COMMUNITY-DISPLAY-ONLY`；详见版权声明。[source:NASA-DATA-POLICY] [source:OFFICIAL-ANNOUNCEMENT]
 
+
+### 整包权利矩阵
+
+八类资产的来源、权利依据、署名与对征集的授权在此一次列全；本表是参赛者声明，不是法律意见，也不额外授予任何许可。[data:visual/assets/rights-matrix.json]
+
+| 编号 | 资产 | 来源与工具 | 权利依据 | 署名/回执与限制 |
+|---|---|---|---|---|
+| R-01 | 正文、参赛者几何、图表、离线 HTML 与 PDF | 本投稿工作流创作 | 参赛者原创 | 署名投稿作者；以 `COMMUNITY-DISPLAY-ONLY` 供征集方评审与展示 |
+| R-02 | 三张概念体验图 | 2026-08-11 Codex 内 OpenAI 图像工具；工具未返回模型标识 | 受适用 OpenAI 服务条款约束；提示词源自参赛者类型化档案，未嵌外部参考图 | 逐张 SHA-256 见版权声明；仅表现层，不是证据、测绘或现场照片 |
+| R-03 | Noto Sans SC 2.004 子集 | 由官方可变字体以 fontTools 实例化 | SIL Open Font License 1.1 | 哈希、commit、方法与 OFL 链接见复现文件 |
+| R-04 | OSM 派生定位几何 | 重绘自公开 OpenStreetMap 事实几何 | ODbL，署名保留 | 不复制瓦片或页面版式；不作法定地图、地块、测绘或审批依据 |
+| R-05 | 1909 京张影集四幅低清图 | 国家图书馆原件；WDL / Library of Congress，LCCN 2021668851 | LOC 仅称不知存在限制并附条件说明再用 | 条目/IIIF URL、署名与字节哈希保留；本包不简化为 public domain |
+| R-06 | NASA POWER 气候数值 | NASA POWER 1991–2020 | 按 NASA 数据政策署名 | 仅作粗略概念种子，不是法定日照或热舒适模拟 |
+| R-07 | 本地 BGE-M3 语义见证 | 一次本地 Ollama `/api/embed` 批量调用 | tag、两类 digest、版本与回执固化；权重不随包分发 | 仅处理参赛者自撰假设文本，未提供公共服务 |
+| R-08 | 官方与公开资料引用 | 公开政府页面与官方来源 | 仅引用可署名的事实主张与链接 | 不复制其照片、插图、地图、标识、版式或字体 |
+
+关于 R-02 的精确模型标识：该图像工具在生成时未向本工作流返回模型 ID，此标识现已不可恢复；因此本包不主张任何未经证实的模型名称，改以生成日期、工具入口、提示词来源与逐张字节哈希作为可核查依据，使用仍受平台服务条款与 `COMMUNITY-DISPLAY-ONLY` 双重约束。[source:OFFICIAL-ANNOUNCEMENT]
 模型披露：初版概念、参数几何、图纸和三张体验图由 OpenAI Codex 工作流生成；图像工具未返回模型 ID。v1.2–v1.5b 的文字、表格、打包、校验和 PR 修订由 Claude Code 辅助；仅部分记录明确 Claude Fable 5，故不扩大归因。v1.6–v1.9 的审计、A/B/H 验证器、北京交付/P0 参赛者实施控制模板和评审面由 Codex 完成；v2.0–v2.1 的评审面收敛、工程预可行性包络、备选方案对照登记与判据恢复由 Claude Code (Claude Fable 5) 完成。v1.7 的本地 `bge-m3:latest` 单次 Ollama `/api/embed` 批量见证原样沿用至 v2.1；tag、两类 digest、Ollama 版本及回执固化，权重不再分发。工具均未踏勘、获授权访谈、提供公共服务、现场动作或专业签署；公开身份、提交和实施仍由用户及未来责任人决定。
 
 ## 参考资料

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Replace the model, not the city: one shared ground builds on the existing Jing-Zhang heritage public space; seven Switch Streets connect campuses, neighbourhoods, transit and industry; and three long-life frames—Proof Yard, Origin Cloister and Exchange Hall—host replaceable services, infill and AI equipment. Official polygons trigger whole-package rebinding and recalculation."
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.2-candidate"
+iteration: "v2.3-candidate"
 ---
 
 # 京张共地 / THE SHARED FLOOR
@@ -521,6 +521,23 @@ Each archive image retains its source, IIIF URL, byte hash and credit. The Libra
 
 PDFs embed a Noto Sans SC 2.004 Regular subset; its byte hash, immutable commit source, build recipe and OFL 1.1 license URL are recorded in `visual/assets/reproducibility.json`. NASA POWER data is attributed under NASA's open-data policy, and no competing submission is embedded. Because the relationship between the agent track and the professional announcement's intellectual-property terms is not yet clarified in writing, the package remains `COMMUNITY-DISPLAY-ONLY`; the complete record is in `report/copyright_statement.md`. [source:NASA-DATA-POLICY] [source:OFFICIAL-ANNOUNCEMENT]
 
+
+### Whole-Package Rights Matrix
+
+Origin, rights basis, attribution and the grant to this open call are listed once for all eight asset classes. This is a participant declaration, not a legal opinion, and it grants no additional licence. [data:visual/assets/rights-matrix.json]
+
+| ID | Asset | Origin and tool | Rights basis | Attribution, receipt and restriction |
+|---|---|---|---|---|
+| R-01 | Narrative, participant geometry, figures, offline HTML and PDF | Created in this submission workflow | Participant-authored | Credited to the submitting author; offered to the call for review and exhibition under `COMMUNITY-DISPLAY-ONLY` |
+| R-02 | Three conceptual experience images | OpenAI image tool inside Codex, 2026-08-11; the tool returned no model identifier | Subject to the applicable OpenAI service terms; prompts from participant-authored typed dossiers, no external reference image embedded | Per-image SHA-256 in the copyright statement; presentation layer only, not evidence, survey or site photography |
+| R-03 | Noto Sans SC 2.004 subset | Instanced from the official variable font with fontTools | SIL Open Font License 1.1 | Byte hash, commit, recipe and OFL link in the reproducibility bundle |
+| R-04 | OSM-derived orientation geometry | Redrawn from public OpenStreetMap factual geometry | ODbL, attribution retained | No tiles or page layouts copied; not a statutory map, parcel, survey or approval basis |
+| R-05 | Four 1909 Jing-Zhang album images | National Library of China original; WDL / Library of Congress, LCCN 2021668851 | LOC states only that it is unaware of restrictions and describes reuse conditionally | Item and IIIF URLs, credit and byte hashes retained; not simplified to public domain |
+| R-06 | NASA POWER climate values | NASA POWER 1991-2020 | Attributed under the NASA data policy | Coarse conceptual seed only, not a statutory insolation or thermal-comfort simulation |
+| R-07 | Local BGE-M3 semantic witness | One local Ollama `/api/embed` batch call | Tag, both digests, version and receipt pinned; weights not redistributed | Processed participant-authored hypothetical text only; provided no public service |
+| R-08 | Official and public source citations | Public government pages and official sources | Attributed factual claims and links only | Their photographs, illustrations, maps, logos, layouts and fonts are not copied |
+
+On the exact model identifier behind R-02: the image tool returned no model ID to this workflow at generation time and that identifier is not recoverable, so the package asserts no unsupported model name and relies instead on the generation date, the tool entry point, the prompt provenance and per-image byte hashes as checkable evidence. Use remains bound by both the platform service terms and `COMMUNITY-DISPLAY-ONLY`. [source:OFFICIAL-ANNOUNCEMENT]
 Model disclosure: the initial concept, parametric geometry, drawings and three experience images were produced in an OpenAI Codex workflow; the images used the OpenAI image-generation tool exposed in Codex, which did not provide a model ID to that workflow. Claude Code assisted text, tables, packaging, validation and PR revisions in v1.2–v1.5b; local session records explicitly identify Claude Fable 5, while other Claude Code turns do not expose an equally verifiable model ID and are therefore not labelled more specifically. The v1.6–v1.9 source audit, A/B/H contract verifier, Beijing delivery/P0 participant implementation-control template and visible review surface were produced in an OpenAI Codex workflow; the v2.0–v2.1 review-surface convergence, engineering pre-feasibility envelopes, compared-alternatives register and restored judgeability tables were produced with Claude Code (Claude Fable 5). The v1.7 local Ollama `/api/embed` batch witness using `bge-m3:latest` is reused unchanged through v2.1; the tag, registry digest, blob digest, Ollama version and receipt are pinned in the reproducibility bundle, and model weights are not redistributed. No tool conducted a site visit, authorised interview, public service, field action or local professional sign-off; public identity, submission and implementation decisions remain with the user and future named accountable parties.
 
 ## References
