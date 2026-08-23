@@ -119,7 +119,7 @@
         "geometry/green_space.geojson",
         "geometry/roads.geojson"
       ],
-      "formula": "count(approved changes to L1 blue-green line, L2 alignment-protection plan, L3 grain guideline outside their statutory windows)",
+      "formula": "count(approved changes to L1 blue-green line, L2 alignment-protection plan, L3 grain guideline outside their proposal-defined change windows)",
       "confidence": "high",
       "assumptions": [
         "Design baseline: the first metric of the proposal. Target stays 0 between Repave Assemblies (A-ASSEMBLY-001)."
@@ -331,7 +331,7 @@
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(scenario cards with a statutory non-AI parity path) / count(scenario cards)",
+      "formula": "count(scenario cards whose text carries the proposal-defined mandatory contract clause for a non-AI parity path — document coverage, not an existing legal obligation and not tested accessibility) / count(scenario cards)",
       "confidence": "high",
       "assumptions": [
         "Design-document basis: 12 of 12 scenario cards carry a parity-path clause (A-PARITY-001); operational coverage audited annually on Chassis Day."

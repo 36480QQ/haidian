@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "74ee8fa1e092b62acd2773d51f0796435ab7bbd05f676a71418e747c3e15505b"
+      "sha256": "b90b8af9c336bfb918782dd4be8184dd8b48fc851dde5a87e2f5b281a7504680"
     },
     {
       "path": "agent.json",
@@ -38,13 +38,13 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "83b06f739b9d665f7c18bcfd8e5daffabe7ad7ba1c7a1a7df494a36b0806a441"
+      "sha256": "8330e7e5d698f110f8e9510e84e011814cc4147b73485f09883700080aa24583"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "30be39681377045f8fa10159aa2fe19fa6c8076a641c2148ab15ee881688cfa4"
+      "sha256": "1e20957c780f4d11e3b62be61c5f1e58e5a091908df735f80f9bc9d2fa446357"
     },
     {
       "path": "sources.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f18fddf74999bd36ece579103e70f46a1b967001cab79015c7c022a7d93b364e"
+      "sha256": "29377259265f20c31c1b9b082f2c466dad2986be0715da51badbd3e91c9c2449"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f07a23abc4c3b3e703eedfb7fe788064411cfb457a7f91ace4153fb8f515c655"
+      "sha256": "672e0af99d1a1613865a2e800299e0acefc64d5555e3f0d8a09e8464493d3def"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "941c519fc4b12541757452762f094c7d2d286b51c767b1c59d6b5963b13a06be"
+      "sha256": "b9b31348c448b5311133d694d6fff6421b13173cb425ae4e56b12aa1706a55b6"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "3596bc62f3791d5e66a67c3ff87cc8090a2e682f378ab209cf0283e84a7f4c48"
+      "sha256": "690a80d03ace7653d2b02518460c7958ec491e8fa0fb3299fb0f7a332258fc11"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -270,7 +270,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "88323a8f5a068bfade5d0407d22dd3b4b425bdb91f9df649f7ace5f54b4b9377"
+      "sha256": "b80a32da72b4ce768172dfe1d5416709f30a0e7594fd61bd04a9563b61577e9c"
     }
   ],
   "validation_claim": {
