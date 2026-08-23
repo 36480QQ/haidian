@@ -850,6 +850,24 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
       problems.length ? problems.join("；") : `zh ${total}/${valuedN}、en ${total}/${valuedN}、en 复述 ${valuedN} 逐位相符`);
 }
 
+/* T1. 任务书 boundary_clause 强制措辞逐条在位。
+   `brief/site-package/agent_taskbook.json#boundary_clause` 给了两条硬要求：
+     must_state_zh      = 「所有成果均为开放共创建议，不替代正式规划，不构成政府审定结论。」
+     required_wording_zh = 「所有空间落地建议应表述为『概念建议』『参考方案』『可供专业团队深化研究』。」
+   2026-08-22 实测：本包实质上说了同一件事（「不替代法定审批」「不代表任何政府决定或审批结论」），
+   但**任务书点名的四个措辞里有三个一次都没出现**——「不替代正式规划」0、「不构成政府审定结论」0、
+   「参考方案」0，只有「概念建议」在（7 次）。已就地补齐，不新增章节。
+   判据写死在本脚本里——它来自任务书（被审对象之外），而任务书不在投稿包内、脚本必须离线自足，
+   所以这是唯一可行的取值方式；条数 4 同样写死参与退出码。 */
+{
+  const REQUIRED = ["不替代正式规划", "不构成政府审定结论", "概念建议", "参考方案", "可供专业团队深化研究"];
+  const missing = REQUIRED.filter((w) => !prose.includes(w));
+  const counts = REQUIRED.map((w) => `${w}×${prose.split(w).length - 1}`);
+  add("T1", `任务书 boundary_clause 的 ${REQUIRED.length} 个强制措辞在正文中逐条在位（must_state_zh 的两句 ＋ required_wording_zh 的三个表述）`,
+      missing.length === 0 && REQUIRED.length === 5,
+      missing.length ? `缺 ${missing.join("、")}` : counts.join("、"));
+}
+
 /* Z. 元检查：断言检查清单本身没有缺项。
    审计器最危险的失效方式不是「某一项判错」，而是「某一项悄悄没跑」——
    条件式 add() 会让检查总数变少而 all_match 仍为真。2026-08-20 实测过这个洞：
@@ -869,7 +887,7 @@ const EXPECTED_IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "G4", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9",
+  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "T1",
   "Z1",
 ];
 {
