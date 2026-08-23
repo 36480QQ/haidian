@@ -1,0 +1,112 @@
+{
+ "schema_version": "0.1.0",
+ "risks": [
+  {
+   "risk_id": "R-BOUNDARY",
+   "title_zh": "边界精度",
+   "category": "data_gap",
+   "severity": "medium",
+   "description_zh": "全部几何基于 provisional 边界；正式图形到位后需重新计算面积与指标并调整图件。",
+   "mitigation_zh": "已在正文、矩阵与图件中标明 provisional 状态与复算触发条件。"
+  },
+  {
+   "risk_id": "R-AIRSPACE",
+   "title_zh": "空域政策与运行标准变化",
+   "category": "policy",
+   "severity": "high",
+   "description_zh": "低空航线、起降点审批与运行标准仍在演进，方案中的航线与节点选址属概念建议。",
+   "mitigation_zh": "节点与净空表述均以现行法规为参照并预留弹性接口，正式实施前须完成法定审批。"
+  },
+  {
+   "risk_id": "R-NOISE",
+   "title_zh": "噪声与公众接受度",
+   "category": "public_acceptance",
+   "severity": "medium",
+   "description_zh": "起降与配送飞行可能带来噪声与干扰投诉。",
+   "mitigation_zh": "设置静音隔离区、限时飞行与噪声监测，配送路径避开学校与住宅敏感时段。"
+  },
+  {
+   "risk_id": "R-TECH",
+   "title_zh": "技术成熟度",
+   "category": "technology",
+   "severity": "medium",
+   "description_zh": "无人机配送、避障与应急返航技术仍在迭代。",
+   "mitigation_zh": "以成熟技术与人工值守兜底，新场景先测试验证后规模化。"
+  },
+  {
+   "risk_id": "R-CONTROL",
+   "title_zh": "法定控制缺位",
+   "category": "statutory",
+   "severity": "medium",
+   "description_zh": "控规指标未公开，开发强度表述仅限概念层面。",
+   "mitigation_zh": "不给出数值结论，全部表述为‘可供专业团队深化研究’。"
+  }
+ ],
+ "version": 1,
+ "dimensions": [
+  {
+   "id": "data_privacy",
+   "label": "数据隐私",
+   "score": 2,
+   "note": "航迹与客流数据仅采用匿名聚合，不做个体识别；AI生成内容全部人工复核后发布。",
+   "mitigation": "在文本与图件中声明仅聚合不识别，发布流程设人工复核岗。",
+   "human_review": "由 JohnXu22786 在汇总阶段逐项人工核对该条目（AI生成初稿后人工复核）。"
+  },
+  {
+   "id": "implementation_complexity",
+   "label": "实施复杂度",
+   "score": 3,
+   "note": "低空设施需空域审批、结构、机电多专业协同，概念到落地跨度大。",
+   "mitigation": "方案明确为概念建议，各专项预留深化接口与分阶段决策点。",
+   "human_review": "由 JohnXu22786 在汇总阶段逐项人工核对该条目（AI生成初稿后人工复核）。"
+  },
+  {
+   "id": "public_acceptance",
+   "label": "公众接受度",
+   "score": 3,
+   "note": "飞行噪声与安全顾虑可能影响公众接受度。",
+   "mitigation": "设静音隔离区、限时飞行、噪声监测与公众参与反馈机制。",
+   "human_review": "由 JohnXu22786 在汇总阶段逐项人工核对该条目（AI生成初稿后人工复核）。"
+  },
+  {
+   "id": "operations_cost",
+   "label": "运维成本",
+   "score": 2,
+   "note": "起降点、机巢与运控大屏存在持续运维成本。",
+   "mitigation": "统一建设、多元运营模式建议；设施采用模块化可逆设计。",
+   "human_review": "由 JohnXu22786 在汇总阶段逐项人工核对该条目（AI生成初稿后人工复核）。"
+  },
+  {
+   "id": "policy_uncertainty",
+   "label": "政策不确定性",
+   "score": 3,
+   "note": "低空空域政策与运行标准仍在演进，审批路径未定型。",
+   "mitigation": "以现行法规为参照，保留弹性接口；正式实施前完成法定审批。",
+   "human_review": "由 JohnXu22786 在汇总阶段逐项人工核对该条目（AI生成初稿后人工复核）。"
+  },
+  {
+   "id": "spatial_dispute",
+   "label": "空间争议",
+   "score": 3,
+   "note": "全部几何基于 provisional 边界，正式边界发布后面积与指标可能有变。",
+   "mitigation": "已在 geometry、矩阵与指标复算说明中标注 provisional 状态与复算条件。",
+   "human_review": "由 JohnXu22786 在汇总阶段逐项人工核对该条目（AI生成初稿后人工复核）。"
+  },
+  {
+   "id": "technology_maturity",
+   "label": "技术成熟度",
+   "score": 3,
+   "note": "无人机配送、避障与应急返航技术仍在迭代。",
+   "mitigation": "以成熟技术与人工值守兜底，新场景先测试验证后规模化。",
+   "human_review": "由 JohnXu22786 在汇总阶段逐项人工核对该条目（AI生成初稿后人工复核）。"
+  },
+  {
+   "id": "equity_inclusion",
+   "label": "公平与包容性",
+   "score": 2,
+   "note": "低空体验设施可能造成使用门槛，需兼顾无障碍与适老化。",
+   "mitigation": "无障碍与适老化标准同步设计，科普与体验内容提供离线人工替代路径。",
+   "human_review": "由 JohnXu22786 在汇总阶段逐项人工核对该条目（AI生成初稿后人工复核）。"
+  }
+ ]
+}
