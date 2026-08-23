@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Reframing fengshui as China's traditional science of human-settlement performance, this proposal turns the centennial Jing-Zhang railway corridor into a computable, recomputable and operable AI innovation belt: one dragon pulse, three areas and five bands, embracing waters, and deliberate reserve land."
 tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.2"
+iteration: "v1.3"
 ---
 
 # Jing-Zhang Qi-Pulse · Fengshui AI
@@ -31,7 +31,9 @@ This proposal is built first on the official pre-qualification announcement issu
 
 **Reading method**. Beyond the announcement and taskbook, this package fully reads the site package's enums (land-use codes, road classes, building types), planning-limit ranges, the professional-standards list with its local reference snapshots, and the processed fact pack (fact navigation, task-requirement matrix, source-use matrix, and gap checklist) [source:SITE-PACKAGE] [source:PROCESSED-FACT-PACK]. These structured inputs fix the value domain of land-use codes, the naming of road classes, and the plausible ranges of metrics; the prose cites only the records that directly support a given judgement, while complete coverage is registered in the matrix files.
 
-**Generation disclosure**. This package is a multi-agent collaboration: the first draft was produced by an AI agent (opencode, model kimi-k3), and this revision was deepened by zcode (model GLM-5.3). Spatial layers were deterministically derived from the provisional boundary with Python (shapely/pyproj); figures were rendered with matplotlib from the same geometry; the narrative was written by the agents under human direction. All scripts and intermediate artifacts are recomputable and auditable, as required by the co-creation charter [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+**Generation disclosure**. This package is a multi-agent collaboration: the first draft was produced by an AI agent (opencode, model kimi-k3), and the revision was deepened by zcode (model GLM-5.3); the v1.3 stage attribution is "Tongji Design AI Cloud: DeepSeek Harness + ox-alpha, with subagent CLIs Codex (GPT-5.6-Sol) and Claude Code (Claude Opus 5)", with the human participant hechushitaoyuan directing instructions, confirming scope, and approving deliverables throughout. Spatial layers were deterministically derived from the provisional boundary with Python (shapely/pyproj); figures were rendered with matplotlib from the same geometry; the narrative was written by the agents under human direction. All scripts and intermediate artifacts are recomputable and auditable, as required by the co-creation charter [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+**External context data layer (background identification)**. To read the blue-green and built context of the corridor at regional scale, the package additionally takes an OpenStreetMap snapshot as a **pure background reference layer**: bbox (WGS84 south,west,north,east) 39.92,116.31,40.06,116.39, snapshot time around 2026-08-22T18:47Z; seven feature classes were extracted via the Overpass API — waterway 109, green 1780, amenity (node basis) 2424, road 4636, railway 267, building 14740, public-transport stops 2563, totalling 26,519 records. Of these, the building count of 14,740 includes multipolygon relations; the rendered map draws way-level geometries (14,648). Attribution: © OpenStreetMap contributors · Overpass API · ODbL 1.0. The companion figures `context-basemap.png` / `context-basemap.en.png` are for visualisation only. Three hard scoping statements apply to this layer: it is used solely for background identification; it participates in no boundary, land-use, road, or metric computation; and it is not a surveying product or an approval basemap [source:SRC-OSM-CONTEXT-SNAPSHOT].
 
 ![Overall concept: one dragon pulse runs north–south; three areas and five bands unfold along it](assets/figures/site-overview.en.png)
 
@@ -43,7 +45,7 @@ The proposal follows the announcement's three nested scopes and maps the fengshu
 
 - **Coordinated research area (~43.6 km²)**: the "reading the dragon" layer. Regional industry synergy, landscape structure, and innovation networks are studied without drawing boundaries.
 - **Overall design area (~11.4 km²)**: the "setting the orientation" layer. Using the provisional constraint as the working base [data:geometry/site_boundary.geojson#SITE-001], we deliver concept urban design at regulatory-plan depth; all land use, metrics, and figures derive from it [metric:site_area_sqm].
-- **Key detailed design area (~368.4 ha)**: the "fine calibration" layer, covering Zhongzhiyuan, the Beijing AI Origin Community, and Dazhongsi [data:geometry/key_areas.geojson].
+- **Key detailed design area (~369.3 ha)**: the "fine calibration" layer, covering Zhongzhiyuan, the Beijing AI Origin Community, and Dazhongsi [data:geometry/key_areas.geojson].
 
 All three scopes share one coordinate: the north–south heritage greenway is the spine and bright-hall axis of the whole site. Provisional boundaries are always drawn dashed and muted; once official geometry is published, land use, green/public space, massing, and every metric will be recomputed by the same pipeline.
 
@@ -282,16 +284,21 @@ All metrics are recomputed from submitted geometry under EPSG:4548; formulas, so
 | Pending official controls | floor_area_ratio, building_height_m (measurement protocols attached) | Await regulatory conditions; stay pending |
 | Conceptual counts | scenario_card_count, testbed_count, role_count, renewal_project_count, qi_gateway_street_count | Evolve with scheme versions; checkable against tables / the role-spec file |
 
-Phase areas likewise recompute from `phasing.geojson`: ~470 ha south, ~345 ha centre, ~327 ha north, together equal to the overall design area — phasing divides tasks and adds no territory [metric:phasing_phase_1_area_sqm].
+Phase areas likewise recompute from `phasing.geojson`: ~470 ha south (`phasing_phase_1_area_sqm` = 4697245.548), ~345 ha centre (`phasing_phase_2_area_sqm` = 3449335.858), ~327 ha north (`phasing_phase_3_area_sqm` = 3266243.98), together equal to the overall design area — phasing divides tasks and adds no territory [metric:phasing_phase_1_area_sqm] [metric:phasing_phase_2_area_sqm] [metric:phasing_phase_3_area_sqm].
 
-| Metric | Value (provisional geometry) | Confidence |
-| --- | --- | --- |
-| Site area | ~11.41 km² | medium (provisional boundary) |
-| Green ratio | ~29.4% | medium |
-| Public-space ratio | ~20.4% | medium |
-| Heritage greenway length | ~9.72 km | low (conceptual centreline) |
-| Footprint density | ~6.4% (conceptual massing) | low |
-| FAR / building height | pending official data | — |
+**Evidence pointers for public-interest metrics**. Each row below carries the exact `metrics.json` key in parentheses, so a reviewer can look up the formula, source files, and confidence directly by key without reading the prose first; the six groups tied most closely to public interest — green ratio, public-space ratio, greenway length, public-space feature count, key areas, and phase areas — are all geometry-recomputable and rerun through the same formulas once official boundaries are released [metric:green_ratio] [metric:public_space_ratio] [metric:greenway_length_m] (per-row pointers for public-space feature count and key areas follow in the table below).
+
+| Metric | Value (provisional geometry) | Evidence pointer (`metrics.json` key) | Confidence |
+| --- | --- | --- | --- |
+| Site area | ~11.41 km² | `site_area_sqm` = 11412825.386 | medium (provisional boundary) |
+| Green ratio | ~29.4% | `green_ratio` = 0.293695 (formula `green_space_area_sqm` / `site_area_sqm`) | medium |
+| Public-space ratio | ~20.4% | `public_space_ratio` = 0.204309 (formula `public_space_area_sqm` / `site_area_sqm`) | medium |
+| Heritage greenway length | ~9.72 km | `greenway_length_m` = 9721.9 | low (conceptual centreline) |
+| Public-space features | 5 | `public_space_feature_count` = 5 | high |
+| Key areas: count and component sizes | 3 | `key_area_count` = 3; `key_area_zhongzhiyuan_sqm` = 1929201.877, `key_area_origin_community_sqm` = 1043236.909, `key_area_dazhongsi_sqm` = 720454.219 | medium |
+| Phase areas | ~470 / ~345 / ~327 ha | `phasing_phase_1_area_sqm` = 4697245.548, `phasing_phase_2_area_sqm` = 3449335.858, `phasing_phase_3_area_sqm` = 3266243.98 | low |
+| Footprint density | ~6.4% (conceptual massing) | `building_density` = 0.06406 | low |
+| FAR / building height | pending official data | `floor_area_ratio`, `building_height_m` (`status=unknown`, measurement protocols attached) | — |
 
 ![Metrics evidence and recomputation](assets/figures/metrics-evidence.en.png)
 
@@ -335,7 +342,9 @@ Each risk has an owner in the design: ① is procedural and digested by this pac
 | Media generation chain | check `sources.json` entry SRC-MEDIA-RENDER-V11 | All locally and deterministically generated; no third-party assets |
 | Colour check | recompute per SRC-A11Y-CHECK-V12 | Matches `visual/assets/a11y-color-check.json` pair by pair |
 
-**Copyright**. Text, code, and figures are generated by AI agents (multi-agent: first draft opencode/kimi-k3, iteration zcode/GLM-5.3); figures and PDFs are rendered locally with the operating system's Microsoft YaHei and matplotlib's bundled DejaVu fonts (no font files redistributed); cases and historical facts are compiled from public sources at background level; no uncleared images, map screenshots, or third-party assets are used. Media disclosure: the cover and figures are deterministically rendered by matplotlib from package geometry; the audio guides are synthesised sentence-by-sentence by the built-in Windows speech engine (not a human recording); the concept video is rendered frame-by-frame by matplotlib and encoded locally with ffmpeg — all three are **concept ambience / guide narration, not spatial evidence**; methods are documented in `assets/media/experience.md`, the audio transcripts, and `sources.json` entry SRC-MEDIA-RENDER-V11. See `report/copyright_statement.md`.
+**Copyright**. Text, code, and figures are generated by AI agents (multi-agent: first draft opencode/kimi-k3, iteration zcode/GLM-5.3, v1.3 stage attribution "Tongji Design AI Cloud: DeepSeek Harness + ox-alpha, with subagent CLIs Codex (GPT-5.6-Sol) and Claude Code (Claude Opus 5)"); figures and PDFs are rendered locally with the operating system's Microsoft YaHei and matplotlib's bundled DejaVu fonts (no font files redistributed); cases and historical facts are compiled from public sources at background level; no uncleared images, map screenshots, or third-party assets are used. Media disclosure: the cover and figures are deterministically rendered by matplotlib from package geometry; the audio guides are synthesised sentence-by-sentence by the built-in Windows speech engine (not a human recording); the concept video is rendered frame-by-frame by matplotlib and encoded locally with ffmpeg — all three are **concept ambience / guide narration, not spatial evidence**; methods are documented in `assets/media/experience.md`, the audio transcripts, and `sources.json` entry SRC-MEDIA-RENDER-V11. See `report/copyright_statement.md`.
+
+**Open-data compliance note (ODbL)**. The OpenStreetMap data used in the external context data layer is licensed under the Open Database License (ODbL 1.0); the package marks each figure with "© OpenStreetMap contributors" as the licence requires; the snapshot was fetched via the Overpass API and is kept only as an in-package background reference, with no redistribution of the raw database contents; should deepening work publish derivative-database outputs, they will be opened under ODbL 1.0 on equivalent terms with attribution preserved. The layer shares the **non-authoritative positioning** of OSM data: it serves background identification only, enters no metric computation, and is neither a surveying product nor an approval basemap — every spatial conclusion rests on official data and recomputation from the package's provisional geometry [source:SRC-OSM-CONTEXT-SNAPSHOT].
 
 **Compliance restated**. All spatial, industrial, event, and policy content is a conceptual suggestion; it does not replace formal planning or constitute government approval; it involves no statutory judgements on FAR, height, demolition, engineering alignment, or investment; it uses no non-public data [standard:MOHURD-URBAN-DESIGN-MEASURES].
 

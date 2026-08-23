@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v1.3 - 2026-08-23
+
+外部上下文与证据指针轮（A+B+C+E），并按几何实证统一重点区面积口径。
+
+- **A 外部上下文数据层**：新增"外部上下文数据层（背景辨识）"小节（中英各一处），登记 OpenStreetMap 快照 bbox（WGS84 南,西,北,东）39.92,116.31,40.06,116.39、快照时间 2026-08-22T18:47Z±、七类要素计数（waterway 109 / green 1780 / amenity 节点 2424 / road 4636 / railway 267 / building 14740 / 公共交通站点 2563，合计 26,519），配套图件 `context-basemap.png` / `context-basemap.en.png`；来源标注 © OpenStreetMap contributors · Overpass API · ODbL 1.0，方法与限制登记 `sources.json` 条目 SRC-OSM-CONTEXT-SNAPSHOT。该层三条硬性声明：仅背景辨识、不参与边界/用地/道路/指标计算、不作测绘成果或审批底图；building 双口径已注明（14,740 含量关系，图面渲染取 way 级 14,648）。风险章另补 ODbL 合规与非权威定位专段（中英各一处）。
+- **B 引用规范核查**：核查正文官方文件引用的书名号全称，四处（《百年京张AI创新带城市设计国际方案征集资格预审公告》《生成式人工智能服务管理暂行办法》《无障碍环境建设法》《城市设计管理办法》）均为官方全称，无缩写错误，无需修正；`sources.json` 不在本轮内容面改动范围。
+- **C KPI 证据指针挂接**：指标章 KPI 表增列"证据指针（`metrics.json` 键名）"，公共利益相关指标逐行括注精确键名与复算值——`green_ratio`=0.293695、`public_space_ratio`=0.204309、`greenway_length_m`=9721.9、`public_space_feature_count`=5、`key_area_count`=3 及三处 `key_area_*_sqm`、三期 `phasing_phase_1/2/3_area_sqm`，另补 `site_area_sqm`、`building_density` 与两项 `status=unknown` 控规指标；新增公共空间要素数、重点区域分项规模两行，三期分期句内联三键并补全 `[metric:]` 标记。评审者可按键名直查公式、来源文件与置信度，数值口径与 `metrics.json` 逐项一致。
+- **E 署名更新**：v1.3 阶段署名定为"同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）"（EN: Tongji Design AI Cloud: DeepSeek Harness + ox-alpha, with subagent CLIs Codex (GPT-5.6-Sol) and Claude Code (Claude Opus 5)），proposal×2 / copyright_statement / agent.json / manifest 五处双语一致；历史链（初稿 opencode/kimi-k3 · 迭代 zcode/GLM-5.3）与人类参与者 hechushitaoyuan 署名与职责表述完整保留。agent 卡 `agent_name` 取短形"同济设计AI云"供画廊展示，全貌文本只落正文、条款与 `model_detail`；`model_family` 由 kimi 改为 deepseek（编排主体 ox-alpha 属 DeepSeek 系）。
+- **重点区面积口径统一**：按 `geometry/key_areas.geojson` 重投影 EPSG:4548 复算，三处重点区分项和=并集=3,692,893 ㎡=369.29 ha（零重叠），与 `metrics.json` 三键完全一致；正文陈旧值"约 368.4 公顷"订正为"约 369.3 公顷"，共六处（proposal×2、report/proposal(.en).html、visual/index(.en).html）。
+
+**管线**：待跑 render_proposal_html → refresh_submission_manifest → 四门自检 → participant_preflight（manifest 哈希与文件清单由 refresh 脚本统一重算）。
+
 ## v1.2 - 2026-08-20
 
 精瘦收尾轮（A+B+E+F，经评审纪律裁定为最后一轮内容迭代）。

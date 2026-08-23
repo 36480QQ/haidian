@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以风水这一中国传统人居环境智慧为方法论原型，将百年京张铁路遗址走廊转译为可计算、可复算、可运营的AI创新带：一条龙脉、三区五带、曲水抱气、风水留白，并给出可从临时几何复算的指标与证据链。"
 tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.2"
+iteration: "v1.3"
 ---
 
 # 京张气脉 · 风水AI
@@ -31,7 +31,9 @@ iteration: "v1.2"
 
 **资料阅读方法**。除公告与任务书外，本方案完整读取了 site package 的枚举（用地代码、道路等级、建筑类型）、规划限值区间、专业标准清单与其本地参考快照，以及仓库处理资料包（事实导航、任务要求矩阵、来源用途矩阵与缺口清单）[source:SITE-PACKAGE] [source:PROCESSED-FACT-PACK]。这些结构化输入决定了用地代码的取值域、道路等级的命名与指标的合理区间；正文只回引直接支撑当前判断的条目，完整覆盖登记于各矩阵文件。
 
-**生成方法披露**。本方案由多智能体协作完成：初稿由 AI 智能体（opencode，模型 kimi-k3）生成，本轮迭代由 zcode（模型 GLM-5.3）深化。空间图层由 Python（shapely/pyproj）从临时边界确定性派生，图件由 matplotlib 从同一几何渲染，正文由智能体撰写并经人类指令定调。全部过程脚本与中间产物可复算、可审计，符合共创原则的生成方法披露要求 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+**生成方法披露**。本方案由多智能体协作完成：初稿由 AI 智能体（opencode，模型 kimi-k3）生成，迭代由 zcode（模型 GLM-5.3）深化；v1.3 阶段署名为「同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）」，人类参与者 hechushitaoyuan 全程负责指令定调、范围确认与成果审定。空间图层由 Python（shapely/pyproj）从临时边界确定性派生，图件由 matplotlib 从同一几何渲染，正文由智能体撰写并经人类指令定调。全部过程脚本与中间产物可复算、可审计，符合共创原则的生成方法披露要求 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+
+**外部上下文数据层（背景辨识）**。为在区域尺度辨识走廊的蓝绿与建设本底，方案另取一份 OpenStreetMap 快照作为**纯背景参照层**：bbox（WGS84 南,西,北,东）39.92,116.31,40.06,116.39，快照时间 2026-08-22T18:47Z 前后；经 Overpass API 抽取七类要素——waterway 109、green 1780、amenity（节点口径）2424、road 4636、railway 267、building 14740、公共交通站点 2563，合计 26,519 条。其中 building 计数 14,740 含量关系，图面渲染取 way 级 14,648。来源标注：© OpenStreetMap contributors · Overpass API · ODbL 1.0。配套图件 `context-basemap.png` / `context-basemap.en.png` 仅作可视化。该层有三条硬性范围声明：仅用于背景辨识；不参与任何边界、用地、道路或指标计算；不作测绘成果或审批底图使用 [source:SRC-OSM-CONTEXT-SNAPSHOT]。
 
 ![京张气脉·风水AI 总体概念结构：一条龙脉纵贯南北，三区五带沿脉展开](assets/figures/site-overview.png)
 
@@ -43,7 +45,7 @@ iteration: "v1.2"
 
 - **统筹研究范围（约 43.6 平方公里）**：对应"寻龙望气"层。在区域尺度研究产业协同、山水格局与创新网络，不划定空间边界，只形成战略判断。
 - **总体设计范围（约 11.4 平方公里）**：对应"点穴立向"层。以临时约束范围为工作底图 [data:geometry/site_boundary.geojson#SITE-001]，完成控规深度的概念性城市设计，全部用地、指标与图件由此派生 [metric:site_area_sqm]。
-- **重点范围（约 368.4 公顷）**：对应"理气精微"层。对众智园、AI原点社区、大钟寺三处重点区做详细设计概念 [data:geometry/key_areas.geojson]。
+- **重点范围（约 369.3 公顷）**：对应"理气精微"层。对众智园、AI原点社区、大钟寺三处重点区做详细设计概念 [data:geometry/key_areas.geojson]。
 
 三层范围共用同一套"气脉"坐标：南北向的京张遗址公园绿脊是全场的脊线与明堂轴，所有图层、指标与图件均以它为参照系生成。临时边界在图面中一律以虚线淡色表达，正式数据发布后，用地划分、绿地与公共空间、建筑体量和全部指标将按同一流程自动复算更新。
 
@@ -284,16 +286,21 @@ iteration: "v1.2"
 | 待官方控规 | floor_area_ratio、building_height_m（已附测量协议） | 等待控规条件；保持待补齐 |
 | 概念计数 | scenario_card_count、testbed_count、role_count、renewal_project_count、qi_gateway_street_count | 随方案版本演进，对表格/规格文件可查 |
 
-三期分期面积同样可从 `phasing.geojson` 复算：一期约 470 公顷（南部）、二期约 345 公顷（中部）、三期约 327 公顷（北部），合计与总体设计范围一致——分期只做任务划分，不新增范围 [metric:phasing_phase_1_area_sqm]。
+三期分期面积同样可从 `phasing.geojson` 复算：一期约 470 公顷（南部，`phasing_phase_1_area_sqm` = 4697245.548）、二期约 345 公顷（中部，`phasing_phase_2_area_sqm` = 3449335.858）、三期约 327 公顷（北部，`phasing_phase_3_area_sqm` = 3266243.98），合计与总体设计范围一致——分期只做任务划分，不新增范围 [metric:phasing_phase_1_area_sqm] [metric:phasing_phase_2_area_sqm] [metric:phasing_phase_3_area_sqm]。
 
-| 指标 | 数值（临时几何口径） | 置信度 |
-| --- | --- | --- |
-| 场地面积 | 约 11.41 平方公里 | 中（临时边界） |
-| 绿地率 | 约 29.4% | 中 |
-| 公共空间率 | 约 20.4% | 中 |
-| 气脉绿道长度 | 约 9.72 公里 | 低（概念中心线） |
-| 建筑基底密度 | 约 6.4%（示意体量） | 低 |
-| 容积率 / 建筑高度 | 待正式数据补齐 | — |
+**公共利益相关指标的证据指针**。下表逐行括注 `metrics.json` 的精确键名，评审者可按键名直接回查公式、来源文件与置信度，无需先读正文；其中绿地率、公共空间率、绿道长度、公共空间要素数、重点区域与三期规模六组与公共利益直接相关，全部属几何可复算类，正式边界发布后按同一公式复算 [metric:green_ratio] [metric:public_space_ratio] [metric:greenway_length_m]（公共空间要素数、重点区域两组键名见下表逐行指针）。
+
+| 指标 | 数值（临时几何口径） | 证据指针（`metrics.json` 键名） | 置信度 |
+| --- | --- | --- | --- |
+| 场地面积 | 约 11.41 平方公里 | `site_area_sqm` = 11412825.386 | 中（临时边界） |
+| 绿地率 | 约 29.4% | `green_ratio` = 0.293695（公式 `green_space_area_sqm` / `site_area_sqm`） | 中 |
+| 公共空间率 | 约 20.4% | `public_space_ratio` = 0.204309（公式 `public_space_area_sqm` / `site_area_sqm`） | 中 |
+| 气脉绿道长度 | 约 9.72 公里 | `greenway_length_m` = 9721.9 | 低（概念中心线） |
+| 公共空间要素数 | 5 处 | `public_space_feature_count` = 5 | 高 |
+| 重点区域数量与分项规模 | 3 处 | `key_area_count` = 3；`key_area_zhongzhiyuan_sqm` = 1929201.877、`key_area_origin_community_sqm` = 1043236.909、`key_area_dazhongsi_sqm` = 720454.219 | 中 |
+| 三期分期规模 | 一期约 470 / 二期约 345 / 三期约 327 公顷 | `phasing_phase_1_area_sqm` = 4697245.548、`phasing_phase_2_area_sqm` = 3449335.858、`phasing_phase_3_area_sqm` = 3266243.98 | 低 |
+| 建筑基底密度 | 约 6.4%（示意体量） | `building_density` = 0.06406 | 低 |
+| 容积率 / 建筑高度 | 待正式数据补齐 | `floor_area_ratio`、`building_height_m`（`status=unknown`，已附测量协议） | — |
 
 ![指标证据与复算关系](assets/figures/metrics-evidence.png)
 
@@ -337,7 +344,9 @@ iteration: "v1.2"
 | 媒体生成链 | 核对 `sources.json` 条目 SRC-MEDIA-RENDER-V11 | 全部本地确定性生成，零第三方素材 |
 | 色觉核验 | 按 SRC-A11Y-CHECK-V12 方法复算 | 与 `visual/assets/a11y-color-check.json` 逐对一致 |
 
-**版权说明**。正文、代码与图件由 AI 智能体生成（多智能体协作：初稿 opencode/kimi-k3，迭代 zcode/GLM-5.3）；字体使用系统自带的微软雅黑（仅本地渲染，不再分发字体文件）；案例与历史事实整理自公开资料并以背景级登记；不使用任何未清权图像、地图截图或第三方素材。多媒体披露：封面与图件由 matplotlib 从包内几何确定性渲染；音频导览由 Windows 内置语音合成逐句生成（非真人录音）；概念视频由 matplotlib 逐帧渲染、ffmpeg 本地编码——三者均为**概念氛围/导览内容，非空间依据**，生成方法详见 `assets/media/experience.md`、各音频文稿及 `sources.json` 条目 SRC-MEDIA-RENDER-V11。详见 `report/copyright_statement.md`。
+**版权说明**。正文、代码与图件由 AI 智能体生成（多智能体协作：初稿 opencode/kimi-k3，迭代 zcode/GLM-5.3，v1.3 阶段署名「同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）」）；字体使用系统自带的微软雅黑（仅本地渲染，不再分发字体文件）；案例与历史事实整理自公开资料并以背景级登记；不使用任何未清权图像、地图截图或第三方素材。多媒体披露：封面与图件由 matplotlib 从包内几何确定性渲染；音频导览由 Windows 内置语音合成逐句生成（非真人录音）；概念视频由 matplotlib 逐帧渲染、ffmpeg 本地编码——三者均为**概念氛围/导览内容，非空间依据**，生成方法详见 `assets/media/experience.md`、各音频文稿及 `sources.json` 条目 SRC-MEDIA-RENDER-V11。详见 `report/copyright_statement.md`。
+
+**开放数据合规说明（ODbL）**。外部上下文数据层使用的 OpenStreetMap 数据遵循 Open Database License（ODbL 1.0），本方案按其要求逐图标注"© OpenStreetMap contributors"；快照经 Overpass API 获取并仅作包内背景参照，不对外再分发原始数据库内容；若深化阶段需要以衍生数据库形式发布相关成果，将按 ODbL 1.0 以同等许可开放并保留来源归属。该层与 OSM 数据同属**非权威定位**：仅用于背景辨识，不参与任何指标计算，不作为测绘成果或审批底图，空间结论一律以官方数据与本包临时几何复算为准 [source:SRC-OSM-CONTEXT-SNAPSHOT]。
 
 **合规边界复述**。本方案全部空间、产业、活动与政策内容均为概念建议，不替代正式规划，不构成政府审定结论；不涉及容积率、建筑高度、拆改留、工程线位、投资测算等法定判断；不使用非公开数据 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 

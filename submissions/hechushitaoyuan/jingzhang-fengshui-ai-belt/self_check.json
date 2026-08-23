@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "submission_dir": "submissions\\hechushitaoyuan\\jingzhang-fengshui-ai-belt",
+  "submission_dir": "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt",
   "pr_author": "hechushitaoyuan",
   "stage": "formal",
   "deterministic_validation": {
@@ -20,6 +20,8 @@
       ],
       "changed_files": [
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/agent.json",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/context-basemap.en.png",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/context-basemap.png",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/cultural-narrative.en.png",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/cultural-narrative.png",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/key-areas.en.png",
@@ -87,7 +89,7 @@
       "ai_package_stages": {
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt": "formal"
       },
-      "total_bytes": 15196020,
+      "total_bytes": 16408713,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -168,11 +170,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 12,
+          "source": 13,
           "standard": 6,
           "depth": 6,
           "data": 10,
-          "metric": 16
+          "metric": 19
         }
       }
     },
