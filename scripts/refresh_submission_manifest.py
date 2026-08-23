@@ -76,9 +76,9 @@ def refresh_manifest(root: Path) -> tuple[bool, str, list[str]]:
         with tempfile.NamedTemporaryFile(dir=root, prefix=".manifest-", suffix=".tmp", delete=False) as handle:
             temporary = handle.name
             handle.write(encoded)
-            os.fchmod(handle.fileno(), manifest_mode)
             handle.flush()
             os.fsync(handle.fileno())
+        os.chmod(temporary, manifest_mode)
         os.replace(temporary, manifest_path)
     except OSError as exc:
         if temporary:

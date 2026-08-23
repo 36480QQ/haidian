@@ -38,10 +38,34 @@ class RefreshSubmissionManifestTests(unittest.TestCase):
             manifest_path = self.write_manifest(root, "proposal.md")
             os.chmod(manifest_path, 0o640)
 
-            ok, error, _refreshed = refresh_manifest(root)
+            with mock.patch(
+                "refresh_submission_manifest.os.fchmod",
+                side_effect=AssertionError("refresh must not require os.fchmod"),
+                create=True,
+            ):
+                ok, error, _refreshed = refresh_manifest(root)
 
             self.assertTrue(ok, error)
             self.assertEqual(stat.S_IMODE(manifest_path.stat().st_mode), 0o640)
+
+    def test_chmod_failure_returns_error_and_removes_temporary_file(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "proposal.md").write_text("# Updated proposal\n", encoding="utf-8")
+            manifest_path = self.write_manifest(root, "proposal.md")
+            original_manifest = manifest_path.read_bytes()
+
+            with mock.patch(
+                "refresh_submission_manifest.os.chmod",
+                side_effect=OSError("simulated chmod failure"),
+            ):
+                ok, error, refreshed = refresh_manifest(root)
+
+            self.assertFalse(ok)
+            self.assertIn("simulated chmod failure", error)
+            self.assertEqual(refreshed, [])
+            self.assertEqual(manifest_path.read_bytes(), original_manifest)
+            self.assertEqual(list(root.glob(".manifest-*.tmp")), [])
 
     def test_read_failure_returns_error_without_updating_manifest(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
