@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v1.9 - 2026-08-23
+
+- Reframed R04 Open Knowledge Front Desk as the first readable review conclusion: a 120m conceptual public route, four decision points, one accessible service bay and a bounded 100-day sequence, all explicitly pending survey, rights and specialist review.
+- Added bilingual five-scale R04 pilot atlases, connecting city relation, district interface, 1:500 plan, 1:200 section and 1:50 reversible detail to the same spatial decision.
+- Added four readiness gates (G0–G3) and three future measurement contracts. They define a human-authorised route to revise or stop; field outcomes remain 0 / not field-run.
+- Reordered the Chinese primary proposal and visual first entry so the spatial choice, public baseline and no-expansion rule appear before the broader design narrative.
+
 ## v1.8 - 2026-08-20
 
 - Added the bilingual R04 Open Knowledge Front Desk flagship node: three alternative interface arrangements are explicitly rejected, revised or advanced through public-route, no-login, human-handoff, withdrawal and reversibility rules.

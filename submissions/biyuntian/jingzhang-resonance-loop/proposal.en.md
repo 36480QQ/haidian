@@ -13,6 +13,14 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # Jingzhang Resonance Loop
 
+## First-read conclusion: an R04 public pilot that can stop and restore
+
+The Jingzhang Resonance Loop links Zhongzhiyuan, AI Origin and Dazhongsi along a heritage-park public validation line. This submission does not frame all three as simultaneous works. Its first detailed prototype is **R04 Open Knowledge Front Desk** at AI Origin: within an approximately 120m conceptual public route, verify site conditions and rights first, establish an uninterrupted no-login ordinary service, and only then consider a side, removable information layer. R04-A central display island is rejected for compressing public movement; R04-B distributed points returns for revision because responsibility becomes unreadable; R04-C side front desk advances for conceptual detailing [metric:r04_spatial_alternative_count] [metric:r04_pilot_corridor_length_m].
+
+![R04 Open Knowledge Front Desk: five scales and a bounded 100-day pilot](assets/figures/r04-pilot-atlas.en.svg)
+
+The prototype can advance only after authorised people close four gates: G0 site/rights/accessibility, G1 ordinary public baseline, G2 limited-trial responsibility, and G3 human review. A failed gate does not trigger expansion: it returns to ordinary service, revision or stop. This is concept design and synthetic-rule verification only, with **0 field results**; it claims no permit, cost, construction or operating outcome [metric:r04_readiness_gate_count] [metric:r04_pilot_duration_days] [metric:r04_field_result_count].
+
 ## Design Basis and Source List
 
 This formal package responds to the public qualification announcement for the Centennial Jingzhang AI Innovation Belt and the agent open-call taskbook. It uses the registered brief, source registry, enumerations and schemas as its evidence layer [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The current site and key-area polygons are explicitly **provisional constraints**, not official boundaries, redlines or approval controls [source:SOURCE-REGISTRY]. Figures, GeoJSON and metrics are therefore reproducible design working materials rather than statutory conclusions.
@@ -69,6 +77,23 @@ The AI Origin “open knowledge front desk” does not aim to add more screens o
 This is not a survey, building permit or engineering proposal for an existing parcel. The alternatives test only five concept relations: continuous public route, no-login arrival at staffed help, readable responsibility, readable withdrawal and a removable optional information layer. The three alternatives are reproducible as [metric:r04_spatial_alternative_count]. R04-C’s four design-relation checks and zero field results are recorded in `visual/assets/r04-spatial-decision.json`, as [metric:r04_design_relation_check_count] and [metric:r04_field_result_count]. Any future plan dimensions, clear widths, fire conditions, equipment, tenure, trees, drainage, permits, costs and operating performance require official information and professional review.
 
 ![R04 Open Knowledge Front Desk four-part detail: concept plan, section of public baseline and removable information layer, four states from ordinary opening to pause and return, and four design-relation checks](assets/figures/r04-node-detail.en.svg)
+
+![R04 five-scale atlas and bounded 100-day pilot: from city relation to 1:50 reversible detail, organised through a 120m conceptual public route, four decision points, four gates and three measurement contracts](assets/figures/r04-pilot-atlas.en.svg)
+
+#### R04 first prototype: use one stoppable pilot to decide whether space merits deepening
+
+R04-C advances not by adding more scenes but by concentrating one **approximately 120m conceptual public route, four decision points, one accessible service bay and a 100-day bounded pilot**. The 120m envelope, 3.0m public route and 4.8m side desk are relationship dimensions for comparing one concept model and preparing a future survey brief; they are not a surveyed condition, construction dimension, fire route, permit or delivery commitment [metric:r04_pilot_corridor_length_m] [metric:r04_pilot_decision_point_count].
+
+The same R04 ID runs through five scales: city relation, district interface, 1:500 concept plan, 1:200 public-baseline/side-front-desk section and 1:50 reversible detail. Every scale remains within the expression boundary of formal information and specialist review. A public route, staffed handoff, removable information layer and pause/removal exit can therefore be examined as one spatial object.
+
+| 100-day phase | Entry gate | Only delivery at this phase | If it fails |
+| --- | --- | --- | --- |
+| days 0—15 | G0 site, rights, opening hours, accessibility and risk verification | verification and no-go list | retain ordinary opening and desktop proposal |
+| days 16—35 | G1 ordinary public baseline first | continuous route, static orientation, staffed help, shade and seating | do not enter any optional information layer |
+| days 36—70 | G2 staffed presence, rights, withdrawal, maintenance and removal responsibility | bounded removable result cards and check records | remove content and return to ordinary service |
+| days 71—100 | G3 human review | aggregated review, restoration and adopt / revise / stop advice | no automatic expansion; revise or stop |
+
+Three measurement contracts define only how a later review would judge the prototype: whether a no-login visitor reaches staffed help; whether content remains understandable after withdrawal; and whether ordinary service restores immediately after a pause. Each has an ordinary-service baseline, optional layer and stop condition. Field results remain **0 / not field-run** and cannot be substituted by drawings or synthetic rules [metric:r04_measurement_contract_count] [metric:r04_field_result_count] [metric:r04_pilot_duration_days] [metric:r04_readiness_gate_count].
 
 | R04 state | Public baseline visible on site | Optional information / AI layer | When to stop | What remains after pause |
 | --- | --- | --- | --- | --- |

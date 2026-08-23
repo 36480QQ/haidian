@@ -11,6 +11,15 @@
     "seating, shade and accessible stopping",
     "withdrawal and correction route"
   ],
+  "pilot_envelope": {
+    "status": "conceptual_dimensions_pending_survey",
+    "corridor_length_m": 120,
+    "decision_points_count": 4,
+    "accessible_service_bay_count": 1,
+    "clear_public_route_width_m": 3.0,
+    "side_front_desk_depth_m": 4.8,
+    "note_zh": "以上均为同一概念样板的关系尺寸，用于比选和后续测绘任务书；不是现状测量、施工尺寸、消防条件或许可结论。"
+  },
   "alternatives": [
     {
       "id": "R04-A",
@@ -45,6 +54,23 @@
     {"id": "CHK-02", "rule": "no_login_route_reaches_staffed_desk", "expected": "pass", "scope": "design_relation_only"},
     {"id": "CHK-03", "rule": "optional_display_can_be_removed_without_losing_static_guidance", "expected": "pass", "scope": "design_relation_only"},
     {"id": "CHK-04", "rule": "rights_or_safety_failure_transitions_to_pause_then_return", "expected": "pass", "scope": "design_relation_only"}
+  ],
+  "readiness_gates": [
+    {"id":"G0","name_zh":"场地与权利核验","entry_zh":"取得场地、开放时段、权利边界及无障碍走查的书面核验；未完成则不搭建。","failure_zh":"保持普通开放与桌面方案。"},
+    {"id":"G1","name_zh":"公共基线验收","entry_zh":"3.0m概念公共路线、静态导向、坐憩遮阴与人工咨询先独立成立。","failure_zh":"不得进入任何可选信息层。"},
+    {"id":"G2","name_zh":"有限试用准入","entry_zh":"人工值守、内容授权、撤回机制、维护/撤场责任和当日检查表齐全。","failure_zh":"撤下成果卡，回到普通服务。"},
+    {"id":"G3","name_zh":"复核与决定","entry_zh":"以聚合记录复核无账号抵达、人工交接、撤回响应与路径连续性。","failure_zh":"人类场景小组决定 revise 或 stop，不自动扩容。"}
+  ],
+  "hundred_day_pilot": [
+    {"days":"0-15","phase_zh":"G0 场地、权利、无障碍与风险核验","output_zh":"核验单和不实施清单"},
+    {"days":"16-35","phase_zh":"G1 普通公共基线","output_zh":"连续路线、静态导向、人工咨询与坐憩遮阴"},
+    {"days":"36-70","phase_zh":"G2 限时人工在场试用","output_zh":"可撤回成果卡、检查表和暂停记录"},
+    {"days":"71-100","phase_zh":"G3 复核、撤场或深化建议","output_zh":"聚合复核、拆除复位与 adopt/revise/stop 建议"}
+  ],
+  "measurement_contracts": [
+    {"id":"MC-01","question_zh":"无账号来访者能否到达人工前台？","baseline_zh":"静态导向+人工问询","trial_zh":"可选成果卡不改变路线","stop_zh":"路线受阻或人工缺席","field_results":"not_field_run"},
+    {"id":"MC-02","question_zh":"内容能否在撤回后保持解释与权利入口？","baseline_zh":"纸质/静态权利说明","trial_zh":"可撤回成果卡","stop_zh":"授权、署名或纠错不清","field_results":"not_field_run"},
+    {"id":"MC-03","question_zh":"暂停后公共服务是否立即复位？","baseline_zh":"人工咨询、实体导览、座椅遮阴","trial_zh":"边侧可拆信息层","stop_zh":"维护或安全职责失效","field_results":"not_field_run"}
   ],
   "field_results": {"count": 0, "status": "not_field_run"}
 }
