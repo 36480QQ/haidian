@@ -1,5 +1,18 @@
 # 方案迭代记录
 
+## v2.4 - 2026-08-23
+
+Synthetic-capacity decision diagram in A3/A0 / 合成容量准入决策图进入 A3/A0
+
+- Baseline & lane / 基线与通道：从 `upstream/main` `0c8234e4cc6a60ff31d809f43a9d5decded86f52` 建立干净分支 `codex/data-coop-line-capacity-visual-20260823`。启动时唯一自有开放 PR #3819 属于 public-good 通道、required CI 已通过且无参与者可操作失败；proposal 通道空闲。主工作树两份报告 HTML 的既有改动继续隔离，未覆盖、暂存或提交。
+- Gap & users / 缺口与使用者：v2.3 已把 C-01/C-02/C-04 容量约束提升为可复算 E2 包络，但明确未把它放入 A3/A0；评审者和运营交接人员需跨正文与离线页自行拼接“准入、拒绝、无数据专用容量和停机恢复预留”。本轮原位升级既有 `metrics-evidence` 双语图，不新增近似载体，也不改变方案方向。
+- One-source diagram / 单一事实源图：构建步骤只读取既有 `metrics.json` 与 `EXPIRING-DATA-TICKET-01 / SCN06-C010204-SYNTHETIC-CAPACITY-01`，先校验 60 分钟、12 请求、四个资源模型及计算字段，再生成 2400×1500 双语决策图。图上并列显示六项 EPSG:4548 空间指标、C-01 容量 16/需求 12/余量 4、C-02 两条不可互借正线各容量 10/需求 6/余量 4、C-04 四个声明单元中保护一个恢复预留后容量 9/需求 6/余量 3。
+- Admission & rejection / 准入与拒绝：同一首屏明确区分 `4 / 4` 资源闸门与 `3 / 3` 项目闸门的 `pass_for_E2_rehearsal_only`、五类负向变体的 `5 / 5 fail-closed`，以及 `not_ready_for_field_operation` 现场阻断；无数据/数据专用容量比 1.0、最小合成余量 3 与 E3/E4 替换触发条件均可直接读取。
+- Bilingual carriers / 双语载体：同步中英 Markdown 图注、脚本派生报告图注、离线 visual 的说明与替代文本；不改 canonical JSON、GeoJSON、metrics、assumptions、来源、许可语义或证据签名。图件写入空间基线、容量包络、E2 级别、现场决定与当前 package base 元数据，同时保留审计要求的空间基线 `c55ef181c…`。
+- PDF integration / PDF 集成：以 PyMuPDF 只替换四份既有 PDF 中唯一的 2400×1500 metrics raster，并添加可检索的容量 ID、E2 与现场阻断元数据；A3 第 7 页与 A0 第 3 板中英共四个目标页按预期改变，其他 28 页低分辨率渲染逐页一致。每份 PDF 仍恰好嵌入一张与当前双语 PNG 像素哈希一致的 metrics raster，页数保持 A3 各 12 页、A0 各 4 板。
+- Evidence boundary / 证据边界：所有单元仍是投稿自有合成夹具中的抽象服务单元，不是人员、硬件、供配电、散热、网络、场地、消防、成本、采购、许可或审批数量；观察参与者为 0，真实运营主体与专业确认仍为 `null / unknown`。证据等级保持 E2，不升级为 E3、E4、E5、工程能力或实施承诺；`SCN-06-E3E4` 继续 `DEFERRED / DO_NOT_CONTACT / DO_NOT_REASK`。
+- Verification / 验证：双语 PNG 全分辨率与四个 PDF 目标页逐页视觉检查无裁切、重叠或乱码；evidence-consistency 已复算空间指标、容量包络和 PDF raster 并通过。ready-package 的 manifest refresh、完整 self-check、专项审计、strict validation、participant preflight 与 push dry-run 的最终状态只以本轮最终机器输出为准。
+
 ## v2.3 - 2026-08-23
 
 C-01/C-02/C-04 synthetic capacity admission envelope / 合成容量准入包络

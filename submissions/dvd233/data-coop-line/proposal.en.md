@@ -312,7 +312,7 @@ Metrics fall into spatial facts, governance process, and public results. Spatial
 
 Proposed governance metrics include: share of purpose tickets amended collectively; raw-data zero-copy rate in controlled-compute tasks; attendance of data-worker governance seats; first-response and closure time for withdrawal; derivative-chain coverage; completion of public-output removal; disclosure rate for nonrollback items; public-return delivery rate; time, price, and failure-rate gaps between data and no-data lines; successful human takeover in test grounds; and energy and carbon intensity per task. Before operation, each needs a denominator, sample, auditor, appeal, and privacy treatment. Monitoring must not expand merely to produce attractive figures.
 
-![Core metrics, withdrawal chain, and public-return evidence](assets/figures/metrics-evidence.en.png)
+![Core spatial metrics and synthetic capacity admit-reject decision diagram](assets/figures/metrics-evidence.en.png)
 
 The compliance matrix connects announcement tasks 1.3, 1.4, and 1.5 to Agent tasks agent.1–agent.6. The design-depth matrix connects existing conditions, structure, land use, development intensity, buildings, transport, utilities, blue-green systems, key areas, projects, phasing, recalculation, and risk. The narrative explains consequential judgments rather than dumping all IDs. Missing organizer-supplied official geometry does not block content review, but provisional precision remains visible and all results are recalculated when formal data arrives. Every change to prose, layers, metrics, figures, HTML, or PDFs requires refreshed manifest hashes and the complete four-gate self-check. The proposal does not claim a pass before the actual output exists.
 
