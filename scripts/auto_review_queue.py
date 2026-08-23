@@ -45,7 +45,6 @@ from __future__ import annotations
 
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import fcntl
 import json
 import os
 import shutil
@@ -55,6 +54,14 @@ import threading
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+
+try:
+    import fcntl
+except ImportError:  # Windows has no fcntl; the worker lock uses msvcrt there.
+    fcntl = None
+    import msvcrt
+else:
+    msvcrt = None
 
 from generate_submissions_data import package_sha256
 
@@ -437,6 +444,33 @@ def process_pr(args: argparse.Namespace, meta: dict[str, Any], repo_root: Path) 
                 run(["git", "worktree", "remove", "--force", str(worktree)], cwd=repo_root)
 
 
+def acquire_worker_lock(lock_file: Any) -> None:
+    """Hold a non-blocking inter-process lock on the worker lock file.
+
+    The lock is released when the file object is closed or the process
+    exits, matching the previous flock lifetime. Raises WorkerError when
+    another live worker already holds the lock.
+    """
+    if fcntl is not None:
+        try:
+            fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError as exc:
+            raise WorkerError("another auto-review worker is already running") from exc
+        return
+    # Windows fallback: lock one byte at the start of the file. The byte is
+    # written only when the file is still empty; touching a byte range held
+    # by another worker fails, and any such OSError means contention.
+    try:
+        lock_file.seek(0, os.SEEK_END)
+        if lock_file.tell() == 0:
+            lock_file.write("0")
+            lock_file.flush()
+        lock_file.seek(0)
+        msvcrt.locking(lock_file.fileno(), msvcrt.LK_NBLCK, 1)
+    except OSError as exc:
+        raise WorkerError("another auto-review worker is already running") from exc
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", default="open-city-ai/haidian")
@@ -477,10 +511,7 @@ def main() -> int:
         raise WorkerError("--concurrency must be at least 1")
     args.audit_root.mkdir(parents=True, exist_ok=True)
     lock_file = (args.audit_root / ".worker.lock").open("w", encoding="utf-8")
-    try:
-        fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
-    except BlockingIOError as exc:
-        raise WorkerError("another auto-review worker is already running") from exc
+    acquire_worker_lock(lock_file)
     candidates = queued_prs(args.repo, args.label, repo_root)
     selected = []
     results = []

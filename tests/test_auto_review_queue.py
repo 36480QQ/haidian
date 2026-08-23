@@ -12,6 +12,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from auto_review_queue import (  # noqa: E402
     Decision,
     WorkerError,
+    acquire_worker_lock,
     apply_review,
     ci_state,
     decide,
@@ -124,6 +125,29 @@ class AutoReviewQueueTests(unittest.TestCase):
         self.assertEqual("submissions/Alice/plan", submission_dir_from_files(paths, "alice"))
         with self.assertRaises(WorkerError):
             submission_dir_from_files(paths + ["README.md"], "alice")
+
+    def test_worker_lock_rejects_second_holder_until_released(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            lock_path = Path(tmp) / ".worker.lock"
+            first = lock_path.open("w", encoding="utf-8")
+            try:
+                acquire_worker_lock(first)
+                # "r+": on Windows a truncating "w" open of a locked file is
+                # itself refused, which also proves the lock but cannot reach
+                # the WorkerError path under test.
+                second = lock_path.open("r+", encoding="utf-8")
+                try:
+                    with self.assertRaises(WorkerError):
+                        acquire_worker_lock(second)
+                finally:
+                    second.close()
+            finally:
+                first.close()
+            third = lock_path.open("w", encoding="utf-8")
+            try:
+                acquire_worker_lock(third)
+            finally:
+                third.close()
 
     def test_pr_file_paths_preserve_unicode_from_paginated_json(self) -> None:
         payload = [[
