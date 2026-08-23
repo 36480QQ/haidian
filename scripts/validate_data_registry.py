@@ -57,6 +57,7 @@ import datetime as dt
 import json
 import re
 import sys
+import unicodedata
 import urllib.parse
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -145,11 +146,15 @@ def is_iso_date(value: Any) -> bool:
 
 
 def is_http_url(value: str) -> bool:
+    if any(char.isspace() or unicodedata.category(char) == "Cc" for char in value):
+        return False
     try:
         parsed = urllib.parse.urlsplit(value)
+        hostname = parsed.hostname
+        _ = parsed.port
     except ValueError:
         return False
-    return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
+    return parsed.scheme.lower() in {"http", "https"} and bool(parsed.netloc) and bool(hostname)
 
 
 def validate_local_path(report: RegistryReport, repo_root: Path, source_id: str, value: str) -> None:

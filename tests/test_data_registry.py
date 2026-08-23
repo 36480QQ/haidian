@@ -177,6 +177,36 @@ class DataRegistryTests(unittest.TestCase):
         self.assertIn("public URL sources must use an http(s) url", joined)
         self.assertIn("url must be a non-empty string", joined)
 
+    def test_public_urls_reject_invalid_authority_port_and_whitespace(self) -> None:
+        invalid_urls = [
+            "https://:443/path",
+            "https://user@:443/path",
+            "https://example.com:bad/path",
+            "https://example.com:99999/path",
+            "https://exa mple.com/path",
+            "https://\nexample.com/path",
+            "https://example.com/\x00path",
+            " https://example.com/path",
+            "https://example.com/path ",
+        ]
+        baseline = json.loads((REPO_ROOT / "data" / "source_registry.json").read_text(encoding="utf-8"))
+
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "registry.json"
+            for invalid_url in invalid_urls:
+                with self.subTest(url=repr(invalid_url)):
+                    registry = json.loads(json.dumps(baseline))
+                    registry["sources"][0]["url"] = invalid_url
+                    path.write_text(json.dumps(registry), encoding="utf-8")
+                    completed = run_registry_validator(path)
+
+                    self.assertNotEqual(completed.returncode, 0)
+                    report = json.loads(completed.stdout)
+                    self.assertTrue(
+                        any("public URL sources must use an http(s) url" in error for error in report["errors"]),
+                        report["errors"],
+                    )
+
 
 if __name__ == "__main__":
     unittest.main()
