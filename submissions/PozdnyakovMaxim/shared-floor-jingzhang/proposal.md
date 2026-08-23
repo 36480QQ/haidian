@@ -198,7 +198,7 @@ v1.7 第一次把这一命题交给一个真实但严格受限的模型见证：
 
 人物登记表未单列游客类；本方案将游客需求按 P07 处理：外地与境外游客常无本地 App、无实名支付、无中文读写，故 AI04 可溯源京张导览与 AI12 多语种帮助台构成同一入口的两端，纸本铭牌、固定标识、人工讲解与人工译员为常设配置，不是降级方案。[metric:scenario_card_count] [source:AGENT-TASKBOOK] [assumption:A-OPERATIONS-001]
 
-弱势群体不作统称处理，而拆为四条可检验路径：P01 老年居民、P02 轮椅使用者与同行者、P06 照护者与儿童、P07 非智能终端与夜间使用者。承载它们的是连续无高差 H 路（编码检查 1 个连通分量、0 处公共空间断点）[metric:shared_floor_public_route_component_count] [metric:shared_floor_public_room_route_gap_count]、无手机同任务完成，以及交付台账中设有无障碍与工程复核责任类（R06）。[metric:delivery_raci_role_class_count] [standard:BARRIER-FREE-ENVIRONMENT-LAW] 七类人物是参赛者设定的设计假设：获授权参与者 0、已完成现场观察 0，尚未发生任何知情同意的共创，阈值须由使用者代表在获批试点前共定。[metric:delivery_authorised_participant_count] [metric:delivery_field_observation_count] [assumption:A-SOCIAL-BASELINE-001]
+弱势群体不作统称处理，而拆为四条可检验路径：P01 老年居民、P02 轮椅使用者与同行者、P06 照护者与儿童、P07 非智能终端与夜间使用者。承载它们的是连续无高差 H 路（编码检查 1 个连通分量、0 处公共空间断点）[metric:shared_floor_public_route_component_count] [metric:shared_floor_public_room_route_gap_count]、无手机同任务完成，以及交付台账中设有无障碍与工程复核责任类（R06）。[metric:delivery_raci_role_class_count] [standard:BARRIER-FREE-ENVIRONMENT-LAW] [assumption:A-SOCIAL-BASELINE-001]
 
 十二份契约把场景绑定到三种拓扑，以 normal / ambiguous / hard-stop 同任务夹具检查 A/B/H。H 从入口可选并有最终决定权，不是失败补丁：[data:geometry/public_space.geojson#ROOM-PROOF] [metric:scenario_card_count] [metric:test_scenario_count]
 
