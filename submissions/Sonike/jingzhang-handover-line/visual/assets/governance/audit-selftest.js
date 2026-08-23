@@ -28,6 +28,7 @@ const HERE = __dirname;
 const PKG = path.resolve(HERE, "../../..");
 const AUDITOR = "claims-audit.js";
 const RUNNER = "protocol-check-runner.js";
+const EVIDENCE = "assets/media/technical-evidence-book.md";
 
 /* 这份 64 项 ID 全集是**刻意重复**的第二份来源。
    claims-audit.js 里也有一份；两份不一致就说明有人动了其中一份，本文件会报错。
@@ -174,13 +175,13 @@ const negInput = (label, files, wantIds) => negative(label, () => {
 });
 
 negInput("正文「之和为」改成同义的「合计」—— 上一轮那个静默漏检",
-  { "proposal.md": textOf("proposal.md").replace("A1—A3 之和为 5.7–8.0 m", "A1—A3 合计 5.7–8.0 m") }, ["F9"]);
+  { [EVIDENCE]: textOf(EVIDENCE).replace("A1—A3 之和为 5.7–8.0 m", "A1—A3 合计 5.7–8.0 m") }, ["F9"]);
 
 negInput("落点表把 BLDG-020 的东侧写成西侧 —— 本包真出现过的「数据对、正文写反」",
-  { "proposal.md": textOf("proposal.md").replace("| BLDG-020 | 开放研发院 | 众智园 | **东** |", "| BLDG-020 | 开放研发院 | 众智园 | **西** |") }, ["P3"]);
+  { [EVIDENCE]: textOf(EVIDENCE).replace("| BLDG-020 | 开放研发院 | 众智园 | **东** |", "| BLDG-020 | 开放研发院 | 众智园 | **西** |") }, ["P3"]);
 
 negInput("断面单侧合计改成 21.1（容器重复加得到的那个数）—— 本包第一处硬错的形状",
-  { "proposal.md": textOf("proposal.md").replace("| **单侧合计** | **15.4 m** |", "| **单侧合计** | **21.1 m** |") }, ["F3", "F4"]);
+  { [EVIDENCE]: textOf(EVIDENCE).replace("| **单侧合计** | **15.4 m** |", "| **单侧合计** | **21.1 m** |") }, ["F3", "F4"]);
 
 negInput("几何里把 BLDG-020 的 side 由东改成西",
   { "geometry/buildings.geojson": jsonMutated("geometry/buildings.geojson", (d) => {
@@ -200,19 +201,19 @@ negInput("standard_matrix.json 的章节引用指向不存在的标题 —— v2
     }) }, ["G1"]);
 
 negInput("对照表把「一次交接循环」的 4,284 m 改成 4,300 m",
-  { "proposal.md": textOf("proposal.md").replace("| **一次交接循环最短步行** | **4,284 m** |", "| **一次交接循环最短步行** | **4,300 m** |") }, ["K1"]);
+  { [EVIDENCE]: textOf(EVIDENCE).replace("| **一次交接循环最短步行** | **4,284 m** |", "| **一次交接循环最短步行** | **4,300 m** |") }, ["K1"]);
 
 negInput("对照表把现状的同类互达 51,619 m 改成 51,000 m",
-  { "proposal.md": textOf("proposal.md").replace("| 51,619 m（**三者最差**） |", "| 51,000 m（**三者最差**） |") }, ["K2"]);
+  { [EVIDENCE]: textOf(EVIDENCE).replace("| 51,619 m（**三者最差**） |", "| 51,000 m（**三者最差**） |") }, ["K2"]);
 
 negInput("对照表把交接场齐备度 2／2／3 改成 2／2／2",
-  { "proposal.md": textOf("proposal.md").replace("| **2／2／3 类** |", "| **2／2／2 类** |") }, ["K3"]);
+  { [EVIDENCE]: textOf(EVIDENCE).replace("| **2／2／3 类** |", "| **2／2／2 类** |") }, ["K3"]);
 
 negInput("正文把十对里程差里的 61 m 写成 60 m",
-  { "proposal.md": textOf("proposal.md").replace("2、2、15、15、21、21、22、23、23、61 m", "2、2、15、15、21、21、22、23、23、60 m") }, ["K4"]);
+  { [EVIDENCE]: textOf(EVIDENCE).replace("2、2、15、15、21、21、22、23、23、61 m", "2、2、15、15、21、21、22、23、23、60 m") }, ["K4"]);
 
 negInput("摘要句把垂距中位改回 337（偶数个取值下把第 11 项当中位数）—— 本包 2026-08-22 真出现过的那处",
-  { "proposal.md": textOf("proposal.md").replace("中位 330 m", "中位 337 m") }, ["P10"]);
+  { [EVIDENCE]: textOf(EVIDENCE).replace("中位 330 m", "中位 337 m") }, ["P10"]);
 
 negInput("sources.json 把现行登记的指针改回已作废的历史条目 —— 本包真出现过的六处",
   { "sources.json": jsonMutated("sources.json", (d) => {
@@ -228,10 +229,10 @@ negInput("sources.json 把现行登记的指针改回已作废的历史条目 �
         r.standard_ids = r.standard_ids.filter((s) => s !== "WCAG-CONTRAST");
       }) }, ["J2"]);
 
-  negInput("compliance_matrix 多挂一处相关性标准 —— 三段分解由 92＋12＋8 变成 92＋12＋9，而「规则导出全部在位」仍成立",
+  negInput("compliance_matrix 多挂一处相关性标准 —— 三段分解由 120＋5＋5 变成 120＋5＋6，而「规则导出全部在位」仍成立",
     { "compliance_matrix.json": jsonMutated("compliance_matrix.json", (d) => {
         const r = d.requirements.find((x) => x.requirement_id === "agent.5");
-        if (!r.standard_ids.includes("WCAG-CONTRAST")) r.standard_ids.push("WCAG-CONTRAST");
+        if (!r.standard_ids.includes("MNR-LAND-USE-CLASSIFICATION-GUIDE")) r.standard_ids.push("MNR-LAND-USE-CLASSIFICATION-GUIDE");
       }) }, ["J2"]);
 
   negInput("manifest 里把复制出来的授权正文改一个字 —— 与 author_grant 漂移，而两处各自读起来都通顺",
@@ -248,20 +249,20 @@ negInput("sources.json 把现行登记的指针改回已作废的历史条目 �
   negInput("sources.json 里把一条「grep -c X proposal.md → N」的 N 改掉 —— 命令还在、期望值已不成立",
     { "sources.json": jsonMutated("sources.json", (d) => {
         const e = d.sources.find((x) => x.id === "SRC-JINGZHANG-1909");
-        e.independent_verification = e.independent_verification.replace("→ **2**", "→ **1**");
+        e.independent_verification = e.independent_verification.replace("→ **1**", "→ **2**");
       }) }, ["J3"]);
 
   negInput("sources.json 里把那条核验命令整句删掉 —— 声明条数由 4 变 3，而剩下 3 条仍逐条相符",
     { "sources.json": jsonMutated("sources.json", (d) => {
         const e = d.sources.find((x) => x.id === "SRC-JINGZHANG-1909");
-        e.independent_verification = e.independent_verification.replace(/`grep -c SRC-JINGZHANG-1909 proposal\.md`\s*→\s*\*{0,2}2\*{0,2}/, "（核验方式待补）");
+        e.independent_verification = e.independent_verification.replace(/`grep -c SRC-JINGZHANG-1909 proposal\.md`\s*→\s*\*{0,2}1\*{0,2}/, "（核验方式待补）");
       }) }, ["J3"]);
 
   negInput("正文把退役的活动名「维护者之夜」写回《条件分期》一节 —— 本包 2026-08-22 修掉的三套并存里的一套",
-    { "proposal.md": textOf("proposal.md").replace("夏季**验证开放日**", "夏季**维护者之夜**") }, ["P11"]);
+    { [EVIDENCE]: textOf(EVIDENCE).replace("夏季**验证开放日**", "夏季**维护者之夜**") }, ["P11"]);
 
   negInput("四季表少一行 —— 由 4 行变 3 行，而「逐名一致」与「退役名零出现」都仍成立",
-    { "proposal.md": textOf("proposal.md").replace(
+    { [EVIDENCE]: textOf(EVIDENCE).replace(
         "| 冬 | 年度交接账发布：留下、修改、停用的项目同屏公布 | SHARE→SERVE | 年度交接账与逐项停用原因 |\n", "") }, ["P11"]);
 
   /* 二进制注入：把一套图纸的 ToUnicode 换回 v1.11 那种 code→字形索引映射。
@@ -295,11 +296,11 @@ negInput("sources.json 把现行登记的指针改回已作废的历史条目 �
 
 /* 最后两例打 runner。 */
 negInput("场景卡把落点写回「城市交接场维修驿」—— 复刻 2026-08-22 修掉的那处错：该点距大钟寺 3127 m、距原点社区仅 611 m，而卡片读起来完全通顺",
-  { "proposal.md": textOf("proposal.md").replace(
+  { [EVIDENCE]: textOf(EVIDENCE).replace(
       "| 连续公共交接面维修驿（原点社区南侧连接段，约 4.2 km） |", "| 城市交接场维修驿 |") }, ["G5"]);
 
 negInput("连接段卡片只把里程数字改错 0.5 km —— 落点归属仍对，只有里程对不上几何",
-  { "proposal.md": textOf("proposal.md").replace("主轴里程约 7.2 km", "主轴里程约 7.7 km") }, ["G5"]);
+  { [EVIDENCE]: textOf(EVIDENCE).replace("主轴里程约 7.2 km", "主轴里程约 7.7 km") }, ["G5"]);
 
 negInput("英文正文的指标计数退回旧值 68/54 —— 复刻 2026-08-22 修掉的那处：中文写对、英文没跟着改，且英文内部算术自洽（68−54＝14）所以只看英文看不出来",
   { "proposal.en.md": textOf("proposal.en.md")
@@ -307,7 +308,7 @@ negInput("英文正文的指标计数退回旧值 68/54 —— 复刻 2026-08-22
       .replace("The 56 valued metrics", "The 54 valued metrics") }, ["M9"]);
 
 negInput("正文删掉任务书 required_wording_zh 里的「参考方案」—— 复刻 2026-08-22 补齐前的状态，其余措辞仍在所以读起来毫无异样",
-  { "proposal.md": textOf("proposal.md").replace("概念建议与参考方案，可供专业团队深化研究", "概念建议") }, ["T1"]);
+  { "proposal.md": textOf("proposal.md").replace(/参考方案/g, "") }, ["T1"]);
 
 negInput("assumptions 的 affected_files 退回裸目录 assets/figures/ —— 复刻 2026-08-22 修掉的那处，读起来像是「影响全部图件」的合理简写",
   { "assumptions.json": jsonMutated("assumptions.json", (d) => {

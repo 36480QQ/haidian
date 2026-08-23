@@ -60,6 +60,7 @@
         "submissions/Sonike/jingzhang-handover-line/assets/media/guided-tour.md",
         "submissions/Sonike/jingzhang-handover-line/assets/media/guided-tour.mp4",
         "submissions/Sonike/jingzhang-handover-line/assets/media/guided-tour.vtt",
+        "submissions/Sonike/jingzhang-handover-line/assets/media/technical-evidence-book.md",
         "submissions/Sonike/jingzhang-handover-line/assets/tactile/tactile-corridor-map.en.svg",
         "submissions/Sonike/jingzhang-handover-line/assets/tactile/tactile-corridor-map.svg",
         "submissions/Sonike/jingzhang-handover-line/assumptions.json",
@@ -92,6 +93,8 @@
         "submissions/Sonike/jingzhang-handover-line/sources.json",
         "submissions/Sonike/jingzhang-handover-line/standard_matrix.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/audit-selftest.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/build-champion-figures.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/build-champion-pdfs.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/claims-audit.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/example-scn05-shift-ledger.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/figure-contrast-report.json",
@@ -114,7 +117,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 20115821,
+      "total_bytes": 21106678,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -192,11 +195,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 36,
-          "standard": 10,
-          "depth": 15,
-          "data": 15,
-          "metric": 27
+          "source": 7,
+          "standard": 6,
+          "depth": 11,
+          "data": 4,
+          "metric": 16
         }
       }
     },
