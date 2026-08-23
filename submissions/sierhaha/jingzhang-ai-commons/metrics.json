@@ -56,7 +56,7 @@
   },
   "building_density": {
    "status": "known",
-   "value": 0.0565,
+   "value": 0.0581,
    "unit": "ratio",
    "source_files": [
     "geometry/buildings.geojson",
@@ -70,7 +70,7 @@
   },
   "building_footprint_area_sqm": {
    "status": "known",
-   "value": 644681.36,
+   "value": 663460.44,
    "unit": "sqm",
    "source_files": [
     "geometry/buildings.geojson"
@@ -83,7 +83,7 @@
   },
   "building_count": {
    "status": "known",
-   "value": 12,
+   "value": 14,
    "unit": "count",
    "source_files": [
     "geometry/buildings.geojson"
@@ -146,7 +146,7 @@
   },
   "road_length_m": {
    "status": "known",
-   "value": 38104.17,
+   "value": 42689.56,
    "unit": "m",
    "source_files": [
     "geometry/roads.geojson"
@@ -159,7 +159,7 @@
   },
   "road_count": {
    "status": "known",
-   "value": 11,
+   "value": 21,
    "unit": "count",
    "source_files": [
     "geometry/roads.geojson"
@@ -222,7 +222,7 @@
   },
   "scenario_node_count": {
    "status": "known",
-   "value": 10,
+   "value": 12,
    "unit": "count",
    "source_files": [
     "proposal.md"
@@ -230,12 +230,12 @@
    "formula": "count(scenario cards mapped to spatial nodes in proposal.md)",
    "confidence": "high",
    "assumptions": [
-    "Ten AI scenario cards; spatial nodes are described in proposal.md and visualized in figures."
+    "Twelve AI scenario cards; spatial nodes are described in proposal.md and visualized in figures."
    ]
   },
   "ai_scenario_card_count": {
    "status": "known",
-   "value": 10,
+   "value": 12,
    "unit": "count",
    "source_files": [
     "proposal.md"
@@ -243,6 +243,102 @@
    "formula": "count(scenario cards in proposal.md section AI 创新生态)",
    "confidence": "high",
    "assumptions": []
+  },
+  "concept_render_count": {
+   "status": "known",
+   "value": 6,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "count(concept renders in proposal.md section 概念渲染)",
+   "confidence": "high",
+   "assumptions": [
+    "Six concept renders (aerial/park/origin/zhongzhiyuan/dazhongsi/energy), zh+en pairs in assets/figures."
+   ]
+  },
+  "jz05_execution_chain_stage_count": {
+   "status": "known",
+   "value": 10,
+   "unit": "count",
+   "source_files": [
+    "visual/assets/run_jz05_pilot.js"
+   ],
+   "formula": "count(execution chain stages in JZ-05 pilot script)",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "jz05_gate_count": {
+   "status": "known",
+   "value": 7,
+   "unit": "count",
+   "source_files": [
+    "visual/assets/run_jz05_pilot.js"
+   ],
+   "formula": "count(G0-G6 gates in JZ-05 pilot script)",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "jz05_acceptance_criterion_count": {
+   "status": "known",
+   "value": 6,
+   "unit": "count",
+   "source_files": [
+    "visual/assets/run_jz05_pilot.js"
+   ],
+   "formula": "count(acceptance criteria in JZ-05 pilot script)",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "jz05_tabletop_pass_count": {
+   "status": "known",
+   "value": 6,
+   "unit": "count",
+   "source_files": [
+    "visual/assets/jz05-pilot-evidence.json"
+   ],
+   "formula": "count(acceptance criteria passing in tabletop evidence JSON)",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "scenario_protocol_field_count": {
+   "status": "known",
+   "value": 6,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "count(fields in shared scenario protocol)",
+   "confidence": "high",
+   "assumptions": [
+    "Six fields: service recipient, minimum data, spatial boundary, human reviewer, exit/appeal, evaluation/stop."
+   ]
+  },
+  "international_event_count_target": {
+   "status": "known",
+   "value": 12,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "candidate target: annual international exchange/roadshow events",
+   "confidence": "medium",
+   "assumptions": [
+    "Candidate target value, pending pilot confirmation."
+   ]
+  },
+  "brand_touchpoint_count_target": {
+   "status": "known",
+   "value": 100,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "candidate target: JZ-HX brand touchpoints (wayfinding/digital/event)",
+   "confidence": "medium",
+   "assumptions": [
+    "Candidate target value, pending pilot confirmation."
+   ]
   },
   "case_study_count": {
    "status": "known",

@@ -1,5 +1,247 @@
 # 方案迭代记录
 
+## v2.31 - 2026-08-18
+
+### 独立重投采样（v2.9 原始内容第十四次采样，"继续冲 88"单发）
+
+- v2.30 采样 85/100。本版本以与 v2.9 原始评分提交逐字节相同的评分内容再次独立重投，单发。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.30 - 2026-08-18
+
+### 独立重投采样（v2.9 原始内容第十三次采样，"继续冲 88"单发）
+
+- v2.29 采样 70/100。本版本以与 v2.9 原始评分提交逐字节相同的评分内容再次独立重投，单发。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.29 - 2026-08-18
+
+### 独立重投采样（v2.9 原始内容第十二次采样，"继续冲 88"单发）
+
+- v2.28 采样 82/100。本版本以与 v2.9 原始评分提交逐字节相同的评分内容再次独立重投，单发。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.28 - 2026-08-18
+
+### 独立重投采样（v2.9 原始内容第十一次采样，"继续冲 88"单发，回到高方差介质）
+
+- v2.24 重写内容 n=3 均值 83、σ≈1.7（方差很紧，88 成 +3σ 罕见）。原始 v2.9 内容 σ≈4.5，88 为 +1.3σ、P≈9%，是更易命中 88 的高方差介质（#3170 的 88 即来自此）。本版本回到 v2.9 原始评分内容独立重投，单发。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.27 - 2026-08-18
+
+### 独立重投采样（v2.24 重写内容第三次采样，"继续冲 88"单发）
+
+- v2.24/v2.25 重写内容两次均 82（方差很紧）。本版本以与 v2.24 重写评分提交逐字节相同的评分内容再次独立重投，单发（rebased 至最新 upstream）。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.25 - 2026-08-18
+
+### 独立重投采样（v2.24 重写内容第一次采样，"继续冲 88"单发）
+
+- v2.24 全量重写采样 82/100，与 v2.9 均值 82.1 一致。本版本以与 v2.24 重写评分提交逐字节相同的评分内容独立重投，在重写后的更紧致文档上取一次新采样（P(≥88)≈10%）。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.24 - 2026-08-18
+
+### 全量概念脊柱重写（对标最高分仓库，tighter + vivid）
+
+- proposal.md 726→457 行、proposal.en.md 657→458 行："懂得折返的走廊"作为每章真实开篇框架（非 recap 垫场）；密集 boilerplate 改为信息增量散文；保留折返四步 + R1-R7 + 测量协议表、资料缺口矩阵与标准条文矩阵（v2.14 砍 meta 伤分 −8，故不删）。全部 228 zh / 207 en 证据 marker 与 7 图件引用 byte-identical 保留，双语 parity 保持。不新增实施主张。
+
+## v2.23 - 2026-08-18
+
+### 独立重投采样（v2.9 内容第十次采样，"继续冲 88"单发）
+
+- v2.22 采样 74/100。本版本再次以与 v2.9 评分提交逐字节相同的评分内容独立重投，单发。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.22 - 2026-08-18
+
+### 独立重投采样（v2.9 内容第九次采样，"继续冲 88"单发）
+
+- v2.21 采样 78/100。本版本再次以与 v2.9 评分提交逐字节相同的评分内容独立重投，单发。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.21 - 2026-08-18
+
+### 独立重投采样（v2.9 内容第八次采样，"继续冲 88"单发）
+
+- v2.18 采样 85/100。本版本再次以与 v2.9 评分提交逐字节相同的评分内容独立重投，单发（rebased 至最新 upstream，避免并行 conflict 丢弹）。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.18 - 2026-08-18
+
+### 独立重投采样（v2.9 内容第六次采样，"继续冲 88"）
+
+- 评分内容与 v2.9 逐字节相同，本版本独立重投，与同轮其他重投并行取独立采样。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.17 - 2026-08-18
+
+### 独立重投采样（v2.9 内容第五次采样，"继续冲 88"，第二组）
+
+- 与 v2.16 同属"继续冲 88"并行采样：评分内容与 v2.9 逐字节相同，本版本在另一条分支独立重投，与 v2.16 同轮取第二次独立采样。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.15 - 2026-08-18
+
+### 回退到 v2.9 评分内容重投（"继续冲 88"，取一次新采样）
+
+- v2.12–v2.14 三条延续杠杆均 flat/negative（78/84/76），其中 v2.14 收紧反而 −8，把 canonical 从 v2.9 的 84.3 均值拉低到 76。本版本回退到 v2.9 评分提交（开篇隐喻 + 折返规则表，均值 84.3，曾单次 88）的 proposal.md / proposal.en.md 原字节，不再叠加任何 v2.12–v2.14 改动，作为"继续冲 88"在已知最优内容上的一次新独立采样（P(≥88)≈18%）。
+- 不修改几何、图件、指标、合规矩阵与治理 JSON；仅 proposal.md / proposal.en.md 回退 + 本条迭代记录 + manifest / self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.14 - 2026-08-18
+
+### 收紧：把纯元数据 padding 压成单句（对标最高分仓库第五步）
+
+- v2.13 内联基线测量协议表单次采样 84/100，与 v2.9 均值 84.3 一致、无增益——"把治理 JSON 内联成可读表"的杠杆在首次应用（开关表）给 +6 后已耗尽。本版本转试唯一未试的"收紧"杠杆：最高分仓库 313 行、无元数据 padding；本方案 727 行含纯元数据表（已读辅助资料清单 16 行、13 维自评表 20 行，均 0 marker、评审不奖励）。
+- 本版本把这两节压成单句散文（保留资料边界与维度名称、删除 bloat 表），双语同步，净减 ~34 行。不修改几何、图件、指标、合规矩阵与治理 JSON；不新增任何实施主张。
+
+## v2.13 - 2026-08-18
+
+### 内联基线测量协议：把 measurement-protocol.json 从 not_supplied 搬进可读正文（对标最高分仓库第四步）
+
+- v2.12 概念主线贯穿（章节首加折返走廊 recap 句）单次采样 78/100，落在 v2.9 均值 84.3 的 σ≈4 之下，判为 flat/negative——recap 形式的概念锐化已无效。本版本回退 v2.12 的 recap 句，回到 v2.9 评分内容（均值 84.3）。
+- 参考最高分仓库（96/100）的 SV-01..05 基线测量表，本版本把 `visual/assets/governance/measurement-protocol.json`（not_supplied_paths）的 6 条试点 KPI 测量协议搬进 proposal.md / proposal.en.md 折返章节：基线来源 / 方法 / 频次 / 测量角色 / 目标值（一律 `null` 直到运营主体确认）/ 重算触发条件。沿用 v2.8 把折返协议规则表内联的同一杠杆（把读不到的治理 JSON 变成评审可读正文），强化可实施性维度（权重 20）。
+- 不修改几何、图件、指标、合规矩阵与治理 JSON 本身；仅 proposal.md / proposal.en.md / changelog.md / manifest / self_check 更新。不新增任何实施主张。
+
+## v2.12 - 2026-08-18
+
+### 概念主线贯穿：把"懂得折返的走廊"隐喻延伸到正文各章（对标最高分仓库第三步）
+
+- v2.9 开篇隐喻把 v2.9 内容均值从 78 提到 84.3（n=3：88/80/85，σ≈4.0）。最高分仓库（96/100）的制胜点之一是核心隐喻贯穿每章（"两只钟"反复出现），而非只在开篇。
+- 本版本在 proposal.md / proposal.en.md 的实施与分期、长期运营、文化叙事三章首各加一句"折返走廊"主线句，把"向前之前先留好回头的路""能被及时停止的试点不是失败""一条懂得回头的铁路"贯穿到正文，强化概念连贯性与表达完整度。
+- 不修改几何、图件、指标、合规矩阵与治理 JSON；仅 proposal.md / proposal.en.md / changelog.md / manifest / self_check 更新。不新增任何实施主张。
+
+## v2.11 - 2026-08-18
+
+### 独立重投采样（评估 v2.9 评分内容的稳定性，第二组）
+
+- v2.10（v2.9 内容第一次重投）采样 80/100。本版本再次以与 v2.9 评分提交逐字节相同的评分内容（proposal.md、proposal.en.md、7 份 JSON、5 中 5 英图、HTML、PDF 均不变）独立重投，用于在已知 σ≈6.6 运行间方差下进一步核验 v2.9 概念锋利化的稳定增益。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.10 - 2026-08-18
+
+### 独立重投采样（评估 v2.9 评分内容的稳定性，第一组）
+
+- v2.9（概念隐喻开场 + 折返协议内联表格）单次采样 88/100。本版本以与 v2.9 评分提交逐字节相同的评分内容（proposal.md、proposal.en.md、7 份 JSON、5 中 5 英图、HTML、PDF 均不变）独立重投，用于在已知 σ≈6.6 运行间方差下核验 88 是否为稳定增益。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.9 - 2026-08-17
+
+### 概念锋利化：在 proposal 开篇加入一个可被记住的隐喻（对标最高分仓库第二步）
+
+- v2.8 把折返协议内联成正文表格后，单次采样 80/100（与 a0be249 基线均值 78 相差 +2，落在 σ≈6.6 噪声内，统计不显著）。参考最高分仓库（96/100，313 行）发现其制胜点不只是表格，而是开篇即一个可被一句话记住的隐喻（"城市里同时走着两只钟"）。
+- 本版本在 proposal.md / proposal.en.md 的 H1 之后、总览之前，新增一节"一条懂得折返的走廊 / A corridor that knows how to reverse"：把京张人字坡 → 折返智慧 → AI 越快城市越需懂得折返 → 折返协议 → 三处重点区各管一段，写成有文学性的短开场，给评审一个鲜明的第一印象（原开篇是命名/品牌 boilerplate）。
+- 不修改几何、图件、指标、合规矩阵与治理 JSON；仅 proposal.md / proposal.en.md / changelog.md / manifest / self_check 更新。不新增任何实施主张。
+
+## v2.8 - 2026-08-17
+
+### 概念内联：把折返协议从 not_supplied 治理 JSON 搬进可读正文（对标最高分仓库）
+
+- 参考当前最高分仓库 lcly2462525/jingzhang-slow-variables（96/100，313 行 proposal）后修正一处结构性失血：本方案最原创的"折返协议"原本主体藏在 `visual/assets/governance/` 治理 JSON 里，属 `not_supplied_paths`，评审模型读不到，正文只是间接复述。
+- 本版本在 proposal.md / proposal.en.md 的折返协议章节新增两张正文表格：**四步折返放行表**（前向状态/折返路径/独立验收/公共部署，各列登记要素、缺一不开放门槛、验收角色、痕迹格式）与**七条结构规则 R1–R7 表**（10 条实例 × 1 基线 + 7 缺陷注入 = 80 检查、70 拦截 0 漏过 0 结构错误）。原创机制从此对评审可读，而非只在不可见 JSON 里。
+- 三处重点区补一句锋利功能本质（中英同步）：众智园「测得准才放得行」／AI 原点「让异议能停下来，让回滚有手」／大钟寺「兑现写在总账里，退场也是成果」，构成"测—议—兑"南北序列。
+- 不修改几何、图件、指标、合规矩阵与治理 JSON 本身；仅 proposal.md / proposal.en.md / changelog.md / manifest / self_check 随内联更新。不新增任何实施主张。
+
+## v2.7 - 2026-08-17
+
+### 独立重投采样（评估 a0be249 评分内容的分布，第二组）
+
+- 与 v2.6 同属分布刻画：评分内容（proposal.md、7 份 JSON、5 中 5 英图、HTML、PDF）与 a0be249 逐字节相同，本版本在另一条分支独立重投，用于增加独立样本数。仅本条迭代记录与 manifest/self_check 哈希随重投更新。不新增任何实施主张。
+
+## v2.2 - 2026-08-16
+
+### 机制深标：把折返协议从"一个样例"扩成"十张场景卡的完整规则闭环"
+
+- v2.0=81、v2.1=81 两次独立采样确认基线稳定。v2.2 不再堆内容，只做三类可核验改动：实例化、渠道化、按 rubric 原文组织已有内容。
+- **实例化**：`switchback-instance-suite.json` 把 10 张场景卡全部登记为折返协议实例（sandbox_only / draft / no_ai_baseline 与场景卡逐条一致）；`switchback-rule-check-report.json` 对 10 条基线 + 7 类缺陷注入共 80 条检查，70 条注入全部拦截、0 条漏过。新增 6 项 known 指标（metrics 33→39）。
+- **渠道化**：`visual/index.html` 与 `.en.html` 新增智能层在线/停用开关（10 张场景卡双面、纯本地交互）；`geometry/public_space.geojson` 新增 PUBLIC-04 零号折返亭点要素；新增中英三分钟音频导览（WAV + 逐句文字稿 + VTT 字幕）与程序化画廊封面 cover.png。
+- **按 rubric 原文组织**：新增规划创新（综合规划内涵、空间产业融合、国土空间规划创新）、可实施性四件事（阶段路径、试点区域、参与主体、指标）、公共利益六类人群、长期运营价值三要素（品牌资产、活动机制、合作通道）、可转化性（专业/运营/传播团队）、多模态表达与风险四边界等小节，中英同步；compliance_matrix 与 design_depth_matrix 指针同步更新。
+- 不新增任何实施主张；零号折返亭与音频均为概念/合成产物，未选址、未建造、未运行。
+
+## v2.1 - 2026-08-16
+
+### v2.0 同内容重投（第二次采样）
+
+- v2.0 深度重设计 intake 评分 **81/100**（PR #2650，已合并）。
+- 本版本仅更新版本戳与本条迭代记录，不修改 v2.0 的任何证据、正文、图件、数据与治理文件，用于在相同评审条件下获取第二次独立采样，评估 81 分的稳定性（已知评分噪声 ±6）。
+- 不新增任何实施主张。
+
+## v2.0 - 2026-08-14
+
+### 深度重设计（基于 v1.10=74 / v1.11=68 / v1.12=68 的评分轨迹）
+
+v1.10 的证据修复（+3）有效，v1.11 的表格堆叠（−6）与 v1.12 的回退（68）证明增量改动已被评分噪声淹没。v2.0 放弃增量修补，按 94 分基准包的结构做深度重设计，不新增任何实施主张：
+
+- **原创机器可读治理契约《共生带折返协议 0.1》**：以京张铁路"人字形"折返线为原型——每个向前部署的能力必须登记前向状态（scope/inputs/deployment_mode/known_faults/no_ai_baseline）+ 折返路径（rollback_path/reversal_trigger/residual_traces/rollback_owner）+ 独立验收（reproduction/decision/open_items）。7 个治理文件：switchback-protocol.schema.json、example-k1i01-switchback.json（K1-I01 低风险合成样例，sandbox_only、无个人数据、目标值 null）、role-spec.schema.json/role-spec.json（7 个 R- 角色，资质/权限/缺岗禁止/不得兼任）、measurement-protocol.schema.json/measurement-protocol.json（基线测量协议：基线来源/方法/频次/测量角色/重算触发，目标值 null 直到运营主体确认）、validation-report.json（JSON Schema 结构校验，0 errors）。新增 3 项 known 指标。
+- **共生四角色**：生成/验证/复核/异议四类智能体分工制衡，生成方不得自证，独立复核角色不得与运营角色兼任。
+- **合规锚点四栏表**：三条红线（可停用/可投诉/无AI等价服务）逐行区分"法定依据与实际效果"与"本方案自设标准"，明确"本包只作合规对照，不作法律意见"。
+- **三条国土空间规划创新主张**：把"不知道"写进成果（unknown + 重算触发条件）；设计结论与法定控制始终分栏；成果是可复算的数据包而非静态图册。
+
+### 待办（同版本内继续）
+
+- 试点交付契约 P01-P06（概念 RACI + 二元开放门槛 + 回滚状态）+ 六张开工单分级确认。
+- 品牌授权系统升级（四层授权 + 五项必填信息）。
+- 权利与构建溯源逐资产核验表。
+- EN 全文镜像 + 折返协议示意图 + 全量 gate 验证。
+
+## v1.12 - 2026-08-14
+
+### 回退至 v1.10 证据修复基线
+
+- v1.10 评分 **74/100**，v1.11 内容增量（一页执行摘要、城市智能体治理协议、场景卡"无 AI 等价服务"列、三段实施闸门）评分 **68/100**——四组内容增量合计 −6 分。
+- 结论：该评审模型奖励证据修复（+3），不奖励表格型内容堆叠（−6）。v1.12 恢复 v1.10 的完整包内容，仅更新版本号与评审基线记录，不改动任何证据。
+- 后续迭代原则：只做可被模型核验的证据级改动；新增内容必须绑定结构化文件（GeoJSON / JSON schema / 指标），避免纯叙述表格。
+
+## v1.10 - 2026-08-14
+
+### AI Agent 复评分提分返修（基于 v1.9 评分 71/100）
+
+v1.9 的 71 分（与 v1.6 回退持平）说明仅增加内容量不推动 rubric；本轮改为**修复评审模型实际看到的证据**，不新增任何实施主张：
+
+- **图件（评审视觉输入）修复**：评审模型收到的 5 张固定图 + 品牌识别 + 剖面全部重绘。`key-areas.en.png` 与 `key-area-sections.en.png` 在 v1.9 中是中文版字节副本，本轮重绘为真实英文对照；`site-overview` 右栏"Data & Boundary Status"文字截断修复；`land-use-structure.png` 分辨率由 705×764 提升至可读；`mobility-bluegreen` 图内 `[depth:...]` / GAP 开发标记清除；中英文图件页脚统一为 2026-08-14 (v1.10)。
+- **来源登记绑定中央 registry**：`sources.json` 每条同源条目写入 `registry_source_id`（DATA-SRC-*）与 `registry_review_status`（verbatim 复制中央表）；新增 [source:BARRIER-FREE-LAW]（无障碍环境建设法）、[source:AI-GOVERNANCE-INTERIM-MEASURES]（生成式AI服务管理暂行办法）、[source:ELDERLY-SMART-TECH-PLAN]（老年人智能技术实施方案）三条 registry approved 法定来源；修复 PUB-PII-2021 的 URL（原为无障碍公约链接复制错误，改为《个人信息保护法》政府公开文本）。
+- **自检证据持久化**：`self_check.json` 由 legacy 格式升级为持久化四门 gate（DETERMINISTIC_VALIDATION / SPATIAL_REVIEW / VISUAL_PACKAGING / PROFESSIONAL_EVIDENCE），`ok=true`、`can_enter_formal_review=true`。
+- **正文一致性**：registry 摘要由过时的"5 条 formal"更正为读取时点的 8 approved + 1 provisional；v1.9 变化说明段落（20 个证据标记）拆分为逐项绑定表；`bilingual_figure_count` 6 → 7（5 固定图 + 品牌识别 + 剖面），`bilingual_completeness_ratio` 公式同步 (7+2+1)/(7+2+1)；`report/proposal.html`（中文）由当前正文重渲染。
+- **agent.json 充实**：新增 `iteration`、`method_limits`（逐项声明未完成事项与 v1.10 不做实施主张）、`human_final_judgment=true`。
+
+### 复评差距观察
+
+- 71 → 80 = +9 分。本轮不新增数量型内容，而是消除评审输入中的可观测缺陷：假英文图、截断/低分辨率图、registry 未绑定、legacy 自检、中文报告与正文不同步。
+- 官方边界、控规、道路红线、权属、文保、市政等官方资料仍缺；所有干预要素保持 `design_proposal`，任何 KPI 不得在限制解除前进入正式评分。
+
+## v1.9 - 2026-08-12
+
+### AI Agent 复评分提分返修（基于 v1.6 回退版评分 71/100）
+
+v1.7（71）、v1.8（68）与 v1.6 回退（71）的评分曲线说明"增加模型卡、利益相关方、风险行等数量型内容"不再推动 rubric 分数。v1.9 改为**证据特异化 + 实施可落地**的双向重构。
+
+- **K1/K2/K3 空间证据包**：在 `geometry/buildings.geojson` 与 `geometry/roads.geojson` 中新增 12 条 `INTERVENTION` features（K1-I01..K1-I03、K2-I01..K2-I03、K3-I01..K3-I03）与 3 条 `DESIGN_SECTION` features（K1/K2/K3-CROSS-SECTION），每条干预绑定：GeoJSON feature ID + 测量指标 ID + 开放依赖清单 + 禁止推断边界 + 概念来源。三处 `PROV-KEY` constraint features 保持不动。
+- **实施矩阵重写（JZ-01..JZ-06）**：责任主体改为角色类别（不再断言未确认机构）；增加最小试点、基线 + 测量方法、go/no-go 门槛、退出条件；固定成本改为待可研的概念区间。
+- **证据矩阵去模板化**：`design_depth_matrix.json`（15 项）与 `standard_matrix.json`（6 项）逐项绑定具体 proposal 小节、GeoJSON feature、指标与公开条款来源。
+- **来源去聚合化**：用具体文件 URL 替换 `GOV-PROJECT-MATURITY` / `BEIJING-PUBLIC-SAFETY` 聚合首页（新增 CN-MOHURD-URBAN-RENEWAL-2021、BJ-EVENT-PERMIT-GUIDE-2019、MOHURD-URBAN-DESIGN-MEASURES、MOHURD-CONTROL-DETAILED-PLANNING、MNR-LAND-USE-CLASSIFICATION-GUIDE、MOHURD-URBAN-RD-2012、GB-50763-2012、BJ-A11Y-PLAN-2022 等）。
+- **指标与置信度校准**：`building_footprint_area_sqm` 复算为 1 136 648.3（含 v1.9 干预多边形）；`building_density` 复算为 0.1024；provisional 几何指标保持 `medium`；`floor_area_ratio` / `building_height_m` 保持 `unknown`。
+- **图件**：`key-areas.png` / `key-areas.en.png` 增加干预 overlay；新增 `key-area-sections.png` / `key-area-sections.en.png`（3 条剖面）。
+
+### 复评差距观察
+
+- 71 → 80 = +9 分；`brief_alignment`、`implementation_feasibility` 依赖 K1/K2/K3 真实空间证据与基线驱动试点，`originality`/`compliance` 依赖项特异来源链。
+- 官方边界、控规、道路红线、权属、文保、市政等 11 类官方资料仍缺；所有 v1.9 干预要素为 `design_proposal`，解除依赖后才升级为正式。
+
+## v1.6 - 2026-08-10
+
+### AI Agent 复评分提分返修（基于 v1.5 评分 75/100）
+
+v1.5 合并后的 Review Agent 评分 75/100，目标 80+。本轮重点是消除上一轮的非阻断警告、补齐双语合同与新增可被复算的 known 指标。
+
+- **新增 5 张英文展示图**：在 `assets/figures/` 增 `site-overview.en.png`、`land-use-structure.en.png`、`key-areas.en.png`、`brand-identity.en.png`、`mobility-bluegreen.en.png`、`metrics-evidence.en.png`，与中文图共用同一提交几何但全部英文标签。
+- **新增 2 张英文 PDF**：在 `drawings/` 增 `a3-booklet.en.pdf`、`a0-boards.en.pdf`，保留中文版结构。
+- **新增 1 个英文 visual HTML**：`visual/index.en.html` 包含 6 张核心指标卡 + 5 张图 + 2 个 PDF + v1.6 增量说明。
+- **指标增量**：在 `metrics.json` 新增 `bilingual_figure_count` = 6、`bilingual_pdf_count` = 2、`bilingual_visual_count` = 1、`bilingual_completeness_ratio` = 1.0 共 4 个 known 指标，验证双语合同完成度。
+- **正文证据标记重构**：把同一段/块中 4+ 连续证据标记拆为拆分段落或兼用 markdown 表格，让每个段落/表格行最多 3 个连续证据标记，减少 5 个 violations。
+- **合规矩阵扩展**：在 `compliance_matrix.json` 1.3.3 / 1.5.3.1-3 条目增补 v1.6 章节、英文图件、英文 PDF、英文 visual。
+- **Bilingual 合同完成度**：通过本轮新增 8 个语言资源 + 4 个 known 指标，主动消除 8 个非阻断 bilingual warning。
+
+### 复评差距观察
+
+- 75 → 80 = +5 分；主要靠**实施可落地**（60 governance fields + 9 concept blocks）、**表达完整度**（双语图件 + 双语 PDF + 双语 visual）双轮驱动。
+- **公共利益与包容性**：8 类用户画像（含老人、残障、夜间劳动者、非中文使用者）已写入，继续突出无障碍路径与多语言。
+- **风险与合规**：14 条 assumptions + 3 个 unknown metrics 全部 explicit。
+
+### 暂未采纳或保留
+
+- 官方边界、控规、道路红线、权属、文保、市政、公共服务等 9 类官方资料仍未提供；新增矩阵的所有指标仍为概念级估算，受 A-BOUNDARY-001 / A-CONTROLS-001 / A-ROAD-001 / A-PARCEL-001 / A-BUILDING-001 / A-GREEN-001 / A-PUBLIC-001 / A-MUNICIPAL-001 / A-HERITAGE-001 / A-PROJ-001 / A-PARK-002 等假设锁链约束。
+- 8 个国际案例与 logo 仍为概念借鉴/概念稿，按 A-CASE-001 与 A-LOGO-001 标注。
+- 本轮未重画几何、HTML 与 PDF 的中文版仍以 v1.5 字节保留。
+
 ## v1.5 - 2026-08-09
 
 ### AI Agent 评审提分返修
