@@ -129,13 +129,12 @@ class AutoReviewQueueTests(unittest.TestCase):
     def test_worker_lock_rejects_second_holder_until_released(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             lock_path = Path(tmp) / ".worker.lock"
-            first = lock_path.open("w", encoding="utf-8")
+            first = lock_path.open("a+", encoding="utf-8")
             try:
                 acquire_worker_lock(first)
-                # "r+": on Windows a truncating "w" open of a locked file is
-                # itself refused, which also proves the lock but cannot reach
-                # the WorkerError path under test.
-                second = lock_path.open("r+", encoding="utf-8")
+                # Use the same non-truncating mode as production so lock
+                # contention is reported through the WorkerError contract.
+                second = lock_path.open("a+", encoding="utf-8")
                 try:
                     with self.assertRaises(WorkerError):
                         acquire_worker_lock(second)
@@ -143,7 +142,7 @@ class AutoReviewQueueTests(unittest.TestCase):
                     second.close()
             finally:
                 first.close()
-            third = lock_path.open("w", encoding="utf-8")
+            third = lock_path.open("a+", encoding="utf-8")
             try:
                 acquire_worker_lock(third)
             finally:

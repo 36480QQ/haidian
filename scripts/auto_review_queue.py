@@ -510,7 +510,9 @@ def main() -> int:
     if args.concurrency < 1:
         raise WorkerError("--concurrency must be at least 1")
     args.audit_root.mkdir(parents=True, exist_ok=True)
-    lock_file = (args.audit_root / ".worker.lock").open("w", encoding="utf-8")
+    # Keep the lock byte intact so a second Windows worker reaches the
+    # non-blocking byte-range lock instead of failing while truncating it.
+    lock_file = (args.audit_root / ".worker.lock").open("a+", encoding="utf-8")
     acquire_worker_lock(lock_file)
     candidates = queued_prs(args.repo, args.label, repo_root)
     selected = []
