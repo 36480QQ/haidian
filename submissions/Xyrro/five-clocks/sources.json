@@ -6,43 +6,50 @@
       "id": "SITE-PACKAGE",
       "path": "brief/site-package/",
       "source_type": "official_public",
-      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas.",
+      "verification_status": "official"
     },
     {
       "id": "SOURCE-REGISTRY",
       "path": "data/source_registry.json",
       "source_type": "repository_public_registry",
-      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials.",
+      "verification_status": "official_registry"
     },
     {
       "id": "PROCESSED-FACT-PACK",
       "path": "data/processed/agent_fact_pack.md",
       "source_type": "repository_processed_reference",
-      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source.",
+      "verification_status": "official_registry"
     },
     {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Submitted site boundary geometry source (provisional)."
+      "usage": "Submitted site boundary geometry source (provisional).",
+      "verification_status": "provisional"
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Three required detailed-design key area boundaries (provisional)."
+      "usage": "Three required detailed-design key area boundaries (provisional).",
+      "verification_status": "provisional"
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",
-      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context.",
+      "verification_status": "official"
     },
     {
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
-      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause.",
+      "verification_status": "official_registry"
     },
     {
       "id": "SRC-JZ-1905-1909",
@@ -53,7 +60,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "京张铁路1905年开工、1909年建成通车、詹天佑主持等历史事实。",
-      "limitation": "历史科普页面；具体日期与维基百科及多家权威报道互证。"
+      "limitation": "历史科普页面；具体日期与维基百科及多家权威报道互证。",
+      "verification_status": "official"
     },
     {
       "id": "SRC-JZ-RAILWAY-WIKI",
@@ -64,7 +72,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "京张铁路建设时间线与技术沿革的交叉验证。",
-      "limitation": "百科来源，仅用于与官方报道互证，不单独支撑正文结论。"
+      "limitation": "百科来源，仅用于与官方报道互证，不单独支撑正文结论。",
+      "verification_status": "background"
     },
     {
       "id": "SRC-HSR-OPENING-2019",
@@ -75,7 +84,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "京张高铁2019-12-30开通运营、世界首条时速350公里智能高铁。",
-      "limitation": "开通预告官方报道；开通事实另有央视报道互证。"
+      "limitation": "开通预告官方报道；开通事实另有央视报道互证。",
+      "verification_status": "official"
     },
     {
       "id": "SRC-QINGHUAYUAN-TUNNEL",
@@ -86,7 +96,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "清华园隧道单洞双线、全长6.02公里、高铁于学院南路南侧入地等事实。",
-      "limitation": "媒体转载报道；工程参数仅用于叙事背景，不用于工程结论。"
+      "limitation": "媒体转载报道；工程参数仅用于叙事背景，不用于工程结论。",
+      "verification_status": "background"
     },
     {
       "id": "SRC-PARK-WUDAOKOU-2019",
@@ -97,7 +108,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "遗址公园五道口启动区2019-09-19亮相、长约800米、面积约1.7公顷。",
-      "limitation": "媒体报道；数字仅作背景事实。"
+      "limitation": "媒体报道；数字仅作背景事实。",
+      "verification_status": "background"
     },
     {
       "id": "SRC-PARK-PLANNING",
@@ -108,7 +120,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "遗址公园全长约9公里、2020年国际方案征集与公众投票、众创机制。",
-      "limitation": "官方规划解读；公园分期细节以后续官方发布为准。"
+      "limitation": "官方规划解读；公园分期细节以后续官方发布为准。",
+      "verification_status": "official"
     },
     {
       "id": "SRC-PARK-CZONE",
@@ -119,7 +132,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "遗址公园一期C区试运行的阶段性进展。",
-      "limitation": "媒体报道，作为公园分期建设的背景证据。"
+      "limitation": "媒体报道，作为公园分期建设的背景证据。",
+      "verification_status": "background"
     },
     {
       "id": "SRC-HD00-1601",
@@ -130,7 +144,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "HD00-1601等街区控规（2024年-2035年）获批（报道称8月11日）、\"一带一轴、两心多点\"结构。",
-      "limitation": "媒体报道，控规图件未公开；本方案自我定位为其上的概念深化，不引用其任何地块级指标。"
+      "limitation": "媒体报道，控规图件未公开；本方案自我定位为其上的概念深化，不引用其任何地块级指标。该编号与「两心」等表述仅据媒体报道、未独立核实、不用于正式规划判断。 Media-reported only; not independently verified; not used for formal planning judgments.",
+      "verification_status": "unverified_media_report"
     },
     {
       "id": "SRC-BJ-RESERVE-LAND",
@@ -141,7 +156,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "战略留白用地制度：为长远发展预留空间、原则上2035年前不启用。L2/16类留白用地的制度参照。",
-      "limitation": "政策文件；本方案的预留线位为概念建议，不等于法定留白用地划定。"
+      "limitation": "政策文件；本方案的预留线位为概念建议，不等于法定留白用地划定。",
+      "verification_status": "official"
     },
     {
       "id": "SRC-BJ-RENEWAL-REG",
@@ -152,7 +168,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "\"以保留利用提升为主，严控大规模拆除增建\"的城市更新导向，支撑本方案改留优先原则。",
-      "limitation": "引用其原文导向；\"改留优先、拆为例外\"为本方案的转述。"
+      "limitation": "引用其原文导向；\"改留优先、拆为例外\"为本方案的转述。",
+      "verification_status": "official"
     },
     {
       "id": "SRC-CIVIL-CODE-EASEMENT",
@@ -163,7 +180,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "地役权的法定制度基础，支撑L3贯通公共通道地役权条款的可操作性。",
-      "limitation": "公共通道地役权的具体设立以权属方自愿协商与法定程序为准。"
+      "limitation": "公共通道地役权的具体设立以权属方自愿协商与法定程序为准。",
+      "verification_status": "official"
     },
     {
       "id": "SRC-BJ-RIVER-REG",
@@ -174,7 +192,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "河湖管理保护范围与滨水绿带的法定制度，作为L1蓝绿保护线的制度锚点。",
-      "limitation": "\"蓝绿空间\"为规划语汇；具体保护范围以水务部门划定为准。"
+      "limitation": "\"蓝绿空间\"为规划语汇；具体保护范围以水务部门划定为准。",
+      "verification_status": "official"
     },
     {
       "id": "SRC-XIONGAN-OUTLINE",
@@ -185,7 +204,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "综合管廊\"先地下后地上\"与留白机制的国内实践案例。",
-      "limitation": "案例引用，不构成对本场地的工程结论。"
+      "limitation": "案例引用，不构成对本场地的工程结论。",
+      "verification_status": "official"
     },
     {
       "id": "THEORY-BRAND-1994",
@@ -196,7 +216,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "Brand层速理论：Site/Structure/Skin/Services/Space plan/Stuff六层各按不同周期换代。",
-      "limitation": "概念综述页；原著为权威出处。"
+      "limitation": "概念综述页；原著为权威出处。",
+      "verification_status": "background"
     },
     {
       "id": "THEORY-CONZEN-1960",
@@ -207,7 +228,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "康泽恩城镇平面分析：街道网-地块-建筑三要素的存续期差异（街道网最持久）。",
-      "limitation": "存续排序为康泽恩学派的标准读法转述。"
+      "limitation": "存续排序为康泽恩学派的标准读法转述。",
+      "verification_status": "background"
     },
     {
       "id": "THEORY-ROSSI-1966",
@@ -218,7 +240,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "罗西\"永恒要素/主导要素\"：抵抗时间的城市人工物。",
-      "limitation": "理论引用。"
+      "limitation": "理论引用。",
+      "verification_status": "background"
     },
     {
       "id": "THEORY-HABRAKEN-1961",
@@ -229,7 +252,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "支撑体-填充体分离（SI体系与开放建筑运动的源头），支撑L4断面与新建建筑SI建议。",
-      "limitation": "理论引用。"
+      "limitation": "理论引用。",
+      "verification_status": "background"
     },
     {
       "id": "THEORY-SHANNON-INDEX",
@@ -240,7 +264,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "香农多样性指数 H' = -Σ p_i ln p_i 的权威定义，作为 speed_diversity_index 的计算口径。",
-      "limitation": "指数口径为本方案设计假设，基础数学定义引自该文献。"
+      "limitation": "指数口径为本方案设计假设，基础数学定义引自该文献。",
+      "verification_status": "background"
     },
     {
       "id": "CASE-BCN-22AT",
@@ -251,7 +276,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "巴塞罗那22@：塞尔达网格内的产业换代案例。",
-      "limitation": "\"网格不动、产业数代\"为本方案的层速读法。"
+      "limitation": "\"网格不动、产业数代\"为本方案的层速读法。",
+      "verification_status": "background"
     },
     {
       "id": "CASE-KINGS-CROSS",
@@ -262,7 +288,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "国王十字：铁路用地再生中20余处遗产构筑物保留+填充更新（Granary、Gasholders）。",
-      "limitation": "案例引用。"
+      "limitation": "案例引用。",
+      "verification_status": "background"
     },
     {
       "id": "CASE-OTEMACHI-OMY",
@@ -273,7 +300,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "大手町-丸之内-有乐町：跨权属地区经营协定与地下步行网络，地役权式公共通道的成熟先例。",
-      "limitation": "案例引用。"
+      "limitation": "案例引用。",
+      "verification_status": "background"
     },
     {
       "id": "CASE-ONE-NORTH",
@@ -284,7 +312,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "新加坡one-north：200公顷长周期滚动总体规划、分期兑现。",
-      "limitation": "\"留白\"表述统一转述为\"分期土地释放/长周期滚动建设\"。"
+      "limitation": "\"留白\"表述统一转述为\"分期土地释放/长周期滚动建设\"。",
+      "verification_status": "background"
     },
     {
       "id": "CASE-KENDALL-K2C2",
@@ -295,7 +324,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "肯德尔广场：由工业区向创新街区的长期演进与校园边缘混合开发。",
-      "limitation": "\"校区颗粒开放\"表述为MIT主导的校园边缘混合再开发。"
+      "limitation": "\"校区颗粒开放\"表述为MIT主导的校园边缘混合再开发。",
+      "verification_status": "background"
     },
     {
       "id": "CASE-PARIS-RIVE-GAUCHE",
@@ -306,7 +336,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "巴黎左岸：铁路上盖缝合、1991年至今30余年分期开发。",
-      "limitation": "百科来源；正式提交前如有SEMAPA稳定页面可替换。"
+      "limitation": "百科来源；正式提交前如有SEMAPA稳定页面可替换。",
+      "verification_status": "background"
     },
     {
       "id": "CASE-SZ-NANSHAN",
@@ -317,7 +348,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "规划文献对深圳科技园区大街区、车行导向路网的形态检讨。",
-      "limitation": "本条为规划文献观点与本方案分析视角，非定论。"
+      "limitation": "本条为规划文献观点与本方案分析视角，非定论。",
+      "verification_status": "background"
     },
     {
       "id": "CTX-QINGHE",
@@ -328,7 +360,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "清河生态治理与滨水公共空间提升（清河之洲约25.7公顷）。",
-      "limitation": "清河位于统筹研究范围北缘，作为L1河钟的语境证据。"
+      "limitation": "清河位于统筹研究范围北缘，作为L1河钟的语境证据。",
+      "verification_status": "official"
     },
     {
       "id": "CTX-XIAOYUEHE",
@@ -339,7 +372,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "小月河纳入海淀滨水廊道计划的官方信息。",
-      "limitation": "小月河与京张走廊的空间关系按一般邻接表述，不作精确定位主张。"
+      "limitation": "小月河与京张走廊的空间关系按一般邻接表述，不作精确定位主张。",
+      "verification_status": "official"
     },
     {
       "id": "CTX-YONGLE-BELL",
@@ -350,7 +384,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "大钟寺（觉生寺，1733年）藏明永乐大钟（高6.75米、重46.5吨）；1985年建馆。",
-      "limitation": "五钟命名体系的文化锚点。"
+      "limitation": "五钟命名体系的文化锚点。",
+      "verification_status": "official"
     },
     {
       "id": "CTX-ZHONGGUANCUN",
@@ -361,7 +396,8 @@
       "source_type": "official_public",
       "access_date": "2026-08-21",
       "usage": "1988年国务院批准北京市新技术产业开发试验区（第一个国家高新区）、2009年首个国家自主创新示范区。",
-      "limitation": "电子一条街形成于1980年代初，早于1988年批准设区。"
+      "limitation": "电子一条街形成于1980年代初，早于1988年批准设区。",
+      "verification_status": "official"
     },
     {
       "id": "CTX-METRO13",
@@ -372,7 +408,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "五道口、知春路站2002-09-28随西段开通，沿既有京张走廊敷设。",
-      "limitation": "百科来源，仅作背景互证。"
+      "limitation": "百科来源，仅作背景互证。",
+      "verification_status": "background"
     },
     {
       "id": "IND-AI-CADENCE",
@@ -383,7 +420,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "前沿AI模型约每半年至两年迭代一代、且趋于加快的行业观察。",
-      "limitation": "\"约18个月换代\"为量级表述（半年至两年区间），非精确周期。"
+      "limitation": "\"约18个月换代\"为量级表述（半年至两年区间），非精确周期。",
+      "verification_status": "background"
     },
     {
       "id": "DATA-OSM-ODBL",
@@ -394,7 +432,8 @@
       "source_type": "external_public_reference",
       "access_date": "2026-08-21",
       "usage": "R-02街块颗粒普查（v5）实际执行所用OSM数据的ODbL署名义务（© OpenStreetMap contributors）；快照2026-08-21，镜像maps.mail.ru overpass；2026-08-23独立重跑输出逐字节一致，走廊与断口几何以ODbL标注收录于geometry/constraints.geojson。",
-      "limitation": "OSM派生数字（颗粒、走廊、断口、偏差）按ODbL单独署名，不并入本包CC-BY-SA-4.0；口径为街道网拓扑，非法定权属边界。"
+      "limitation": "OSM派生数字（颗粒、走廊、断口、偏差）按ODbL单独署名，不并入本包CC-BY-SA-4.0；口径为街道网拓扑，非法定权属边界。",
+      "verification_status": "official"
     }
   ]
 }

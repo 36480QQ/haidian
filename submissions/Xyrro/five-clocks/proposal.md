@@ -24,7 +24,7 @@ iteration: "v2.0"
 
 第三步是场地证据：京张铁路 1905 年开工、1909 年建成通车 [source:SRC-JZ-1905-1909]，其上历经蒸汽、内燃、电力，2019 年 12 月 30 日京张高铁开通并经清华园隧道入地 [source:SRC-HSR-OPENING-2019]，地面转为遗址公园 [source:SRC-PARK-WUDAOKOU-2019]。技术换了五六代，这条线位与两侧街区的关系存续约一百二十年——上一个百年在这块场地上证明的定律是：**线位比列车活得久。**第四步是任务转译：因此本方案交付的不是一份「AI 场景集」，而是五个速度层、层间接口规则、与层速成反比的变更程序——一个能让十代还不存在的技术安全上场、也安全退场的城市底盘。
 
-五个层各配一口「城市之钟」：河钟（L1，五百年以上）、线钟（L2，百年）、块钟（L3，五十年）、面钟（L4，十五至三十年）、器钟（L5，半年至五年）。周期数字是设计假设而非实证测量 [assumption:A-CLOCK-001]。层间只有三条律：只租不占；快不改慢——**「机器人需要」永远不是修改街网的理由**；难度反比——备案、许可、听证、复线大会、不可议，五级程序台阶把「不变」设为默认状态。全部制度落在现行规划工具箱内：蓝绿保护线、线位保护图则、地役权条款、弹性断面图集、租约备案 [depth:overall_spatial_structure]。
+五个层各配一口「城市之钟」：河钟（L1，五百年以上）、线钟（L2，百年）、块钟（L3，五十年）、面钟（L4，十五至三十年）、器钟（L5，半年至五年）。周期数字是设计假设而非实证测量 [assumption:A-CLOCK-001]。层间只有三条律：只租不占；快不改慢——**「机器人需要」永远不是修改街网的理由**；难度反比——备案、许可、听证、复线大会、不可议，五级程序台阶（本方案设定的程序设计，非现行法定程序）把「不变」设为默认状态。全部制度落在现行规划工具箱内：蓝绿保护线、线位保护图则、地役权条款、弹性断面图集、租约备案 [depth:overall_spatial_structure]。
 
 「百年」在本方案里不是形容词，而是程序：二十五年一届的**复线大会**——2026 基线、2051、2076、2101、2126——是唯一可以提出 L2 线位变更动议的窗口 [metric:centennial_review_interval_years] [assumption:A-ASSEMBLY-001]。**2026 年出生的孩子，将在 2051 年第一届复线大会上正好 25 岁。**复线大会的第一代成年参与者，今年出生。
 
@@ -52,7 +52,7 @@ iteration: "v2.0"
 | design | 五层周期、预留线位、租约条款、指标目标区间 | 概念建议、制度设计 | 法定规划结论、政府承诺 |
 | unknown | 控规指标、街块颗粒基线、管廊余量 | 登记缺口、触发复算 | 冒充已知事实 |
 
-三处最重要的资料边界声明如下。其一，本包全部空间图层基于仓库临时粗略边界（provisional_rough）生成——**它不是官方红线，不得作为审批依据或精确面积复算依据**；官方边界公布后，边界、重点区、用地、绿地、公共空间、建筑与分期图层及其派生指标须整体复算 [data:geometry/site_boundary.geojson#SITE-001] [assumption:A-BND-001]。其二，控规控制条件（容积率、高度、密度、绿地率、退线）均未公开，相关指标一律记为待正式数据补齐 [metric:floor_area_ratio] [assumption:A-CONTROLS-001]。其三，据公开报道，《京张铁路遗址公园沿线（人工智能创新街区重点地区）HD00—1601等街区控制性详细规划（街区层面）（2024年—2035年）》已于 2026 年 8 月 11 日获批，确立「一带一轴、两心多点」的空间结构 [source:SRC-HD00-1601]。该控规图件尚未公开，本方案不引用其任何地块级指标；**本方案自我定位为该已批控规之上的概念深化，与之衔接、不与之并列**——五速控规是给既有法定框架补充「时间维度的管控字段」，而不是另画一张图。
+三处最重要的资料边界声明如下。其一，本包全部空间图层基于仓库临时粗略边界（provisional_rough）生成——**它不是官方红线，不得作为审批依据或精确面积复算依据**；官方边界公布后，边界、重点区、用地、绿地、公共空间、建筑与分期图层及其派生指标须整体复算 [data:geometry/site_boundary.geojson#SITE-001] [assumption:A-BND-001]。其二，控规控制条件（容积率、高度、密度、绿地率、退线）均未公开，相关指标一律记为待正式数据补齐 [metric:floor_area_ratio] [assumption:A-CONTROLS-001]。其三，据公开报道，《京张铁路遗址公园沿线（人工智能创新街区重点地区）HD00—1601等街区控制性详细规划（街区层面）（2024年—2035年）》已于 2026 年 8 月 11 日获批，确立「一带一轴、两心多点」的空间结构 [source:SRC-HD00-1601]。该编号、批复消息与结构表述**仅据媒体报道、未独立核实、不用于正式规划判断**。该控规图件尚未公开，本方案不引用其任何地块级指标；**本方案自我定位为该已批控规之上的概念深化，与之衔接、不与之并列**——五速控规是给既有法定框架补充「时间维度的管控字段」，而不是另画一张图。
 
 ### 场地事实链
 
@@ -67,7 +67,7 @@ iteration: "v2.0"
 | 5 | 遗址公园五道口启动区亮相（约 800 m，1.7 ha） | 2019-09-19 | [source:SRC-PARK-WUDAOKOU-2019] |
 | 6 | 遗址公园规划全长约 9 km，众创式国际征集 | 2020–2021 | [source:SRC-PARK-PLANNING] |
 | 7 | 遗址公园一期 C 区试运行 | 2023 | [source:SRC-PARK-CZONE] |
-| 8 | HD00-1601 等街区控规获批（报道口径） | 2026-08-11 | [source:SRC-HD00-1601] |
+| 8 | HD00-1601 等街区控规获批（报道口径·未独立核实） | 2026-08-11 | [source:SRC-HD00-1601] |
 
 理论与政策依据（布兰德、康泽恩、罗西、哈布瑞肯、战略留白、城市更新条例、民法典地役权、河湖保护条例）与八个全球案例的完整登记见来源清单，正文各章在相关判断处回引。专业标准响应见专业标准矩阵：城市设计管理办法、控制性详细规划编制审批办法与用地分类指南为本方案管控工具的编制依据 [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]；建筑工程设计文件编制深度规定的官方文本尚未取得本地参考，登记为资料缺口而非已满足依据。生成式 AI 服务、无障碍环境建设与适老化政策构成 L5 租约合规条款的上位依据 [standard:GENERATIVE-AI-INTERIM-MEASURES]。
 
@@ -150,8 +150,8 @@ R-02 复算还量化了临时几何自身的一处系统性误差：包内概念
 
 | 层 | 钟名 | 换代周期* | 包含要素 | 交付工具 | 变更程序 | 对应图层 |
 |---|---|---|---|---|---|---|
-| L1 场地水文 | 河钟 | 500 年+ | 清河、小月河及滨水缓冲、地形基面、古树名木点位（公开资料） | 蓝绿保护线 | **不可议**（仅记录，「修宪级」） | 绿地/蓝绿界面 |
-| L2 线位街网 | 线钟 | 100 年 | 京张线位（遗址公园廊道）、骨干街道通行权、**新增东西向预留线位 3 条 + 纵向慢行冗余线 1 条** | **线位保护图则**（每条：编号/宽度区间/功能白名单/服役起讫/复评窗口） | 仅 25 年一届**复线大会**窗口可议 | 道路中心线 |
+| L1 场地水文 | 河钟 | 500 年+ | 清河、小月河及滨水缓冲、地形基面、古树名木点位（公开资料） | 蓝绿保护线 | **不可议**（方案设定·仅记录，「修宪级」为隐喻） | 绿地/蓝绿界面 |
+| L2 线位街网 | 线钟 | 100 年 | 京张线位（遗址公园廊道）、骨干街道通行权、**新增东西向预留线位 3 条 + 纵向慢行冗余线 1 条** | **线位保护图则**（每条：编号/宽度区间/功能白名单/服役起讫/复评窗口） | 仅 25 年一届**复线大会**窗口可议（方案设定机制） | 道路中心线 |
 | L3 街块颗粒 | 块钟 | 50 年 | 街块与产权颗粒、大院边界、公共通道地役权 | **颗粒度导则** + 地役权条款（超大街块申请更新须捐出贯通公共通道地役权，宽度下限 + 24h 开放） | 听证程序 | 用地/公共空间 |
 | L4 断面支撑 | 面钟 | 15–30 年 | 街道弹性断面、路缘**设备带**（0.8–1.5 m 可逆安装带）、综合管廊余量、新建建筑支撑体—填充体分离（SI 体系） | 三种**弹性标准断面**图集 + 设备带构造节点 | 规划许可 | 公共空间/建筑基底 |
 | L5 设备与 AI | 器钟 | 0.5–5 年 | 一切 AI 设备、传感器、机器人、界面、模型 | **租约制**五要素：层位/期限/押金/恢复义务/非 AI 等价路径 + 现场账牌 + 押金池 | 日常备案，**到期默认退出** | 场景节点 |
@@ -161,7 +161,7 @@ R-02 复算还量化了临时几何自身的一处系统性误差：包内概念
 ### 层间接口三律
 
 1. **只租不占。**L5 对 L2–L4 的一切占用均为租约，含期限、押金、恢复义务；时间同样可租——夜间时段、分时车道，空间租约与时间租约同权 [assumption:A-LEASE-001]。
-2. **快不改慢。**任何快层需求不构成慢层变更理由——**「机器人需要」永远不是修改街网的理由**；反向优先：慢层首先服务于人，非 AI 等价路径是每份租约的法定条款 [metric:non_ai_parity_coverage]。
+2. **快不改慢。**任何快层需求不构成慢层变更理由——**「机器人需要」永远不是修改街网的理由**；反向优先：慢层首先服务于人，非 AI 等价路径是每份租约的必备合同条款（本方案设定的合同机制，非既有法定义务） [metric:non_ai_parity_coverage]。
 3. **难度反比。**变更程序难度与层速成反比：L5 备案 < L4 许可 < L3 听证 < L2 复线大会 < L1 不可议。默认状态是「不变」；举证责任永远在「要变」的一方。
 
 关键设计点：**默认即可逆。**同类方案常承诺设施「可撤除」，但撤除都需要有人主动执行；本方案把可逆做成默认路径——**L5 租约到期默认退出：不续约 = 自动拆除，续约才需要申请。**不作为即恢复原状，这是租约制与一般「临时设施管理」的根本区别 [metric:lease_default_exit_rate] [assumption:A-LEASE-001]。
@@ -174,7 +174,18 @@ R-02 复算还量化了临时几何自身的一处系统性误差：包内概念
 | L4 | 规划许可 | 规划主管部门 | 申请人 | 断面调整、设备带增设 |
 | L3 | 听证 | 听证会+权属方 | 申请人 | 颗粒切分、地役权设立 |
 | L2 | 复线大会（25 年窗口） | 届会全体 | 动议方 | 线位变更动议 |
-| L1 | 不可议 | —（仅记录） | 不受理 | — |
+| L1 | 不可议（方案设定） | —（仅记录） | 不受理 | — |
+
+上表与全篇的程序设定，其法律地位在此直接说明——四项关键机制逐项区分「现行法律基础 / 待创设部分 / 须确认的专业主体」，本方案不把任何待创设机制表述为既有法定程序：
+
+| 机制 | 现行法律基础 | 待创设部分 | 须确认的专业主体 |
+|---|---|---|---|
+| 贯通地役权 | 民法典物权编第 372–385 条的意定地役权制度 [source:SRC-CIVIL-CODE-EASEMENT] | 跨多权属主体的标准化地役权合同文本与登记流程 | 不动产登记机构、权属单位、规划主管部门 |
+| 复线大会（25 年届会） | 无直接对应；可参照城市更新条例的公众参与与听证程序 [source:SRC-BJ-RENEWAL-REG] | 届期议事规则、授权来源与决议效力的制度化 | 区级人大与规划委员会、法制部门 |
+| 押金池托管 | 既有持牌金融机构资金存管监管实践（类比参照） | 面向街道设备租约的专项存管账户规则 [assumption:A-FUND-001] | 金融监管部门、持牌托管银行 |
+| 测试准入（速度分区） | 既有智能网联车辆测试管理框架（类比参照） | 街道设备分级准入、成绩单联动与退出细则 | 行业主管部门、区管理机构 |
+
+四项均为**合同机制或程序设计的概念建议**，落地前须经上述主体确认；「法定」一词在本方案中仅用于既有法律制度（如民法典地役权、河湖保护条例）。
 
 ### 拒绝清单
 
@@ -192,7 +203,7 @@ R-02 复算还量化了临时几何自身的一处系统性误差：包内概念
 
 | 管控指标 | 锁定层位 | 复评周期 | 管控表述（全部为概念建议框架） |
 |---|---|---|---|
-| 蓝绿保护线 | L1 | 不可议 | 河湖管理保护范围与滨水绿带按法定划定 [source:SRC-BJ-RIVER-REG] |
+| 蓝绿保护线 | L1 | 不可议（方案设定） | 河湖管理保护范围与滨水绿带按法定划定 [source:SRC-BJ-RIVER-REG] |
 | 线位与骨干街道通行权 | L2 | 25 年届会 | 线位保护图则逐条登记宽度区间与功能白名单 |
 | 贴线率与街墙 | L3 | 50 年 | 沿主要街道给出贴线率区间引导 |
 | 高度分区骨架 | L3 | 50 年 | 只给分区骨架与区间，不给审定数值 [assumption:A-CONTROLS-001] |
@@ -259,7 +270,7 @@ R-02 街块颗粒普查已在 2026-08-21 的 OSM 快照上完成复算（口径�
 
 ### 大钟寺 AI 产业聚集区（约 72.0 ha）：L2 枢纽 + 文化点睛
 
-大钟寺是五速结构「最深」的一站：线钟的枢纽、五钟命名的原点 [source:CTX-YONGLE-BELL]、HD00-1601 报道所称「两心」之一 [source:SRC-HD00-1601]。
+大钟寺是五速结构「最深」的一站：线钟的枢纽、五钟命名的原点 [source:CTX-YONGLE-BELL]、HD00-1601 报道所称「两心」之一 [source:SRC-HD00-1601]（该表述仅据媒体报道、未独立核实、不用于正式规划判断）。
 
 - **断面塔（M1）**：可进入的垂直剖面馆——自下而上依次为 1909 路基层、普速铁路层、2019 地下高铁层、市政管廊层、以及**顶部刻意留空的「未来层」**。它把「一条线位摞着六代技术」变成一次十分钟的垂直步行。断面塔为策展性构筑物概念 [data:geometry/buildings.geojson#BLDG-SECTION-TOWER]，**不含任何桥隧、地下空间或工程可行性结论**——这是任务书禁区，本方案严格遵守 [source:AGENT-TASKBOOK]。
 - **五钟广场（M3）**：五口「城市之钟」装置，各按自身层速运转——器钟盘肉眼可见地快转，河钟盘肉眼不可辨地慢行。**用一个广场把全方案概念变成可感知场景**：不识字的孩子也能看懂「有的东西转得快，有的东西几乎不动」。广场为概念用地 [data:geometry/land_use.geojson#LU-016] [data:geometry/public_space.geojson#PS-PLAZA]，定位为公共艺术+科普装置，避免娱乐化。
@@ -319,7 +330,7 @@ R-02 街块颗粒普查已在 2026-08-21 的 OSM 快照上完成复算（口径�
 | S01 | 低速配送机器人 | L4 设备带 + L2 分时路权 | 2 年 | 中 | 雪雨天自动降级人工配送 | 众智园示范街 |
 | S02 | 无人接驳微循环 | L4 车道分时 | 3 年 | 高 | 常规公交与步行 | 众智园—原点社区 |
 | S03 | AI 文化导览 | L4 灯杆接口 | 1 年 | 低 | 实体导览牌与人工讲解 | 遗址公园主脊 |
-| S04 | AI 医疗服务导航站 | L3 地役权通道口部 | 2 年 | 中 | **线下人工窗口并行（法定条款）** | 原点社区 |
+| S04 | AI 医疗服务导航站 | L3 地役权通道口部 | 2 年 | 中 | **线下人工窗口并行（租约必备条款·方案设定）** | 原点社区 |
 | S05 | 企业服务 copilot 亭 | L4 设备带 | 1 年 | 低 | 人工企业服务窗口 | 两翼企业界面 |
 | S06 | 公共安全运维复盘屏 | L4 | 2 年 | 中 | 纸质公示与例会复盘；租约含数据边界与公开性条款 | 大钟寺 |
 | S07 | 高校一公里 AI 开放课桌 | L3 开放院落 | 1 年 | 低 | 传统自习与面授 | 原点社区（学生共创） |
@@ -403,14 +414,14 @@ R-02 街块颗粒普查已在 2026-08-21 的 OSM 快照上完成复算（口径�
 
 **市政与新型基础设施**：综合管廊余量是面钟的核心指标——电力、光缆、冷却、给排水的扩容空间以「余量年限」计量 [metric:corridor_conduit_headroom_years]，现状不明，列为 R-09 专项评估 [assumption:A-COND-001]；雄安「先地下后地上」的管廊实践为国内参照 [source:SRC-XIONGAN-OUTLINE]。算力设施按 L4 判层（S09 卡），端侧算力设备按 L5 判层——判层决定租期与程序，这正是五速方法对「新型基础设施」的治理贡献 [depth:municipal_new_infrastructure]。
 
-**公共服务**：租约服务站（原点社区)是新增的公共服务类型——面向市民的制度界面；AI 医疗导航站（S04）以线下人工窗口并行为法定条款；无障碍与适老要求纳入断面图集与等价路径审计 [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。
+**公共服务**：租约服务站（原点社区)是新增的公共服务类型——面向市民的制度界面；AI 医疗导航站（S04）以线下人工窗口并行为租约必备条款（合同机制）；无障碍与适老要求纳入断面图集与等价路径审计 [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。
 
 ![L1 蓝绿 + L2 线位 + 预留线位叠图（概念示意；临时边界；非官方红线）](assets/figures/mobility-bluegreen.png)
 
 *图 4 · 交通慢行与蓝绿复合系统。绿廊、蓝绿界面、既有轨道、三条东西向预留线位与纵向慢行冗余线的叠合。概念示意；临时边界；非官方红线。*
 ## 蓝绿空间、公共空间与城市风貌
 
-**河钟（L1）是全方案唯一「不可议」的层。**清河与小月河构成场地的水文恒层：清河生态治理与「清河之洲」滨水空间是统筹范围北缘的既成实践 [source:CTX-QINGHE]，小月河已纳入海淀滨水廊道计划 [source:CTX-XIAOYUEHE]，《北京市河湖保护管理条例》提供保护范围与滨水绿带的法定制度 [source:SRC-BJ-RIVER-REG]。本方案的蓝绿保护线以此为锚：东侧蓝绿防护界面带（概念示意 [data:geometry/green_space.geojson#GREEN-001]）与遗址公园绿廊共同构成 21.6% 的绿地占比 [metric:green_ratio] [metric:green_space_area_sqm]——此值为临时边界上的设计模型值 [assumption:A-LU-001] [depth:blue_green_public_space]。
+**河钟（L1）是全方案唯一「不可议」（方案设定）的层。**清河与小月河构成场地的水文恒层：清河生态治理与「清河之洲」滨水空间是统筹范围北缘的既成实践 [source:CTX-QINGHE]，小月河已纳入海淀滨水廊道计划 [source:CTX-XIAOYUEHE]，《北京市河湖保护管理条例》提供保护范围与滨水绿带的法定制度 [source:SRC-BJ-RIVER-REG]。本方案的蓝绿保护线以此为锚：东侧蓝绿防护界面带（概念示意 [data:geometry/green_space.geojson#GREEN-001]）与遗址公园绿廊共同构成 21.6% 的绿地占比 [metric:green_ratio] [metric:green_space_area_sqm]——此值为临时边界上的设计模型值 [assumption:A-LU-001] [depth:blue_green_public_space]。
 
 **遗址公园活力带**：绿廊纵贯全区（约 9.7 公里概念长度），连续步行界面沿主脊铺开 [data:geometry/public_space.geojson#PS-WALK]，公共空间合计占比 4.0% [metric:public_space_ratio] [metric:public_space_area_sqm]。活力的制度来源不是策划活动，而是租约制让街道界面每年都有新的 L5 内容上场退场，而底盘纹丝不动。
 
@@ -503,28 +514,30 @@ R-10 值得单独一段：**这场竞赛本身成为百年制度的第一份档�
 
 **全方案的第一指标是 `slow_layer_change_count`，目标恒为 0** [metric:slow_layer_change_count]——衡量一个「不需要重画的底盘」是否成立，就看慢层在两届复线大会之间被改动了几次。指标体系十八条核心指标按五层组织，每条含定义/基线/目标/复算方式/层位；数值区间化并逐项挂假设 [depth:metrics_recalculation]：
 
-| 指标 | 层位 | 现值 | 目标（2051 设计区间） | 状态 |
-|---|---|---|---|---|
-| slow_layer_change_count | L1–L3 | 0 | 恒 0 | known [metric:slow_layer_change_count] |
-| reserved_row_count / length_m | L2 | 4 / 13,151 | 划定并保持 | known [metric:reserved_row_length_m] |
-| easement_passage_count / length_m | L3 | 2 / 820 | 每个超大院落群 ≥1 | known [metric:easement_passage_count] |
-| easement_coverage_ratio | L3 | 待复算 | ≥0.8（区间） | unknown [metric:easement_coverage_ratio] |
-| superblock_area_share | L3 | 84.8%（2026-08-21 快照；inclusive 下界 69.0%） | 较基线下降 | known [metric:superblock_area_share] |
-| median_block_area_ha | L3 | 0.662 ha（均值 3.77 ha） | 双峰收敛 | known [metric:median_block_area_ha] |
-| ew_crossing_count | L2 | 8（京包线地面段，1/813 m） | 11（+3 预留兑现后） | known [metric:ew_crossing_count] |
-| device_band_coverage_km | L4 | 1.55（示范街） | 主要街道全覆盖（区间） | known [metric:device_band_coverage_km] |
-| corridor_conduit_headroom_years | L4 | 待评估（R-09） | ≥30 年（区间） | unknown [metric:corridor_conduit_headroom_years] |
-| section_redundancy_ratio | L4 | 待测 | ≥0.2（区间） | unknown [metric:section_redundancy_ratio] |
-| lease_active_count | L5 | 待运营 | 首期 12 卡落约 | unknown [metric:lease_active_count] |
-| lease_return_rate | L5 | 待运营 | ≥0.95 | unknown [metric:lease_return_rate] |
-| lease_default_exit_rate | L5 | 制度默认 1.0 | 1.0 | unknown [metric:lease_default_exit_rate] |
-| deposit_pool_balance | L5 | 演示口径 | —（持牌托管待补） | unknown [metric:deposit_pool_balance] |
-| non_ai_parity_coverage | 全带 | 1.0（12/12 卡） | 1.0 | known [metric:non_ai_parity_coverage] |
-| annual_silent_drill_completion | 全带 | 待首演 | ≥0.9 | unknown [metric:annual_silent_drill_completion] |
-| centennial_review_interval_years | 制度 | 25 | 25 | known [metric:centennial_review_interval_years] |
-| timeline_paving_length_m | 文化 | 1,000（一期） | 全脊（约 9.7 km 概念） | known [metric:timeline_paving_length_m] |
-| speed_diversity_index | 产业 | 待采集 | 逐届上升 | unknown [metric:speed_diversity_index] |
-| component_library_items | 公共空间 | 6 族 | 年度增补 | known [metric:component_library_items] |
+| 指标 | 层位 | 性质 | 现值 | 目标（2051 设计区间） | 状态 |
+|---|---|---|---|---|---|
+| slow_layer_change_count | L1–L3 | 设计承诺（起点状态，非成就） | 0 | 恒 0 | known [metric:slow_layer_change_count] |
+| reserved_row_count / length_m | L2 | 设计声明（图则划定） | 4 / 13,151 | 划定并保持 | known [metric:reserved_row_length_m] |
+| easement_passage_count / length_m | L3 | 设计声明（概念走向） | 2 / 820 | 每个超大院落群 ≥1 | known [metric:easement_passage_count] |
+| easement_coverage_ratio | L3 | 待运营实测 | 待复算 | ≥0.8（区间） | unknown [metric:easement_coverage_ratio] |
+| superblock_area_share | L3 | 实测（OSM 2026-08-21） | 84.8%（inclusive 下界 69.0%） | 较基线下降 | known [metric:superblock_area_share] |
+| median_block_area_ha | L3 | 实测（OSM 2026-08-21） | 0.662 ha（均值 3.77 ha） | 双峰收敛 | known [metric:median_block_area_ha] |
+| ew_crossing_count | L2 | 实测（OSM 2026-08-21） | 8（京包线地面段，1/813 m） | 11（+3 预留兑现后） | known [metric:ew_crossing_count] |
+| device_band_coverage_km | L4 | 设计声明（示范街设计） | 1.55 | 主要街道全覆盖（区间） | known [metric:device_band_coverage_km] |
+| corridor_conduit_headroom_years | L4 | 待勘测实测 | 待评估（R-09） | ≥30 年（区间） | unknown [metric:corridor_conduit_headroom_years] |
+| section_redundancy_ratio | L4 | 待勘测实测 | 待测 | ≥0.2（区间） | unknown [metric:section_redundancy_ratio] |
+| lease_active_count | L5 | 待运营实测 | 待运营 | 首期 12 卡落约 | unknown [metric:lease_active_count] |
+| lease_return_rate | L5 | 待运营实测 | 待运营 | ≥0.95 | unknown [metric:lease_return_rate] |
+| lease_default_exit_rate | L5 | 机制设定目标（非运营实绩） | —（待运营） | 1.0 | unknown [metric:lease_default_exit_rate] |
+| deposit_pool_balance | L5 | 待运营实测（托管待建立） | 演示口径 | —（持牌托管待补） | unknown [metric:deposit_pool_balance] |
+| non_ai_parity_coverage | 全带 | 设计声明（文档覆盖率，非实测可达性） | 1.0（12/12 卡含条款） | 1.0，并经无障碍实测验证 | known [metric:non_ai_parity_coverage] |
+| annual_silent_drill_completion | 全带 | 待运营实测 | 待首演 | ≥0.9 | unknown [metric:annual_silent_drill_completion] |
+| centennial_review_interval_years | 制度 | 机制设定 | 25 | 25 | known [metric:centennial_review_interval_years] |
+| timeline_paving_length_m | 文化 | 设计声明（一期概念） | 1,000 | 全脊（约 9.7 km 概念） | known [metric:timeline_paving_length_m] |
+| speed_diversity_index | 产业 | 待运营实测 | 待采集 | 逐届上升 | unknown [metric:speed_diversity_index] |
+| component_library_items | 公共空间 | 设计声明（组件族清单） | 6 族 | 年度增补 | known [metric:component_library_items] |
+
+「性质」列把**设计声明/机制设定**与**运营或勘测实测**明确分开，三条易误读的指标直说：non_ai_parity_coverage = 1.0 表示 12 张场景卡的文本均含等价路径条款——这是**文档覆盖率，不是经无障碍实测验证的可达性**；slow_layer_change_count = 0 是起点承诺而非已达成绩效；lease_default_exit_rate = 1.0 是机制设定目标，运营开始前没有实绩可言。任何「性质」非「实测」的数值都不得读作已实现的运营表现。
 
 面积复算：全部几何在 EPSG:4326 交换、EPSG:4548 复算；总体范围 11,412,825 m² [metric:site_area_sqm]、绿地率 21.6% [metric:green_ratio]、公共空间率 4.0% [metric:public_space_ratio]、概念基底 52,737 m² [metric:building_footprint_area_sqm]、重点区 3 处 [metric:key_area_count]。用地镶嵌对边界覆盖缺口 37 m²、零重叠。**全部为临时边界上的设计模型值** [assumption:A-BND-001]。三份矩阵——任务覆盖矩阵（公告 1.3/1.4/1.5 全部条目 + agent.1–agent.6）、专业标准矩阵、设计深度矩阵——已完整覆盖并与本文各章互指 [depth:metrics_recalculation]。
 
@@ -536,7 +549,7 @@ R-10 值得单独一段：**这场竞赛本身成为百年制度的第一份档�
 
 ## 风险、版权与合规说明
 
-**风险矩阵（1–5 分，全档见 risk.json）**：政策不确定性 4（图则/地役权/届会需法定程序或政策创设→全部概念建议、一期零施工）；空间争议 3（院落切分敏感→自愿+更新触发+不点名权属 [assumption:A-EASE-001]）；实施复杂度 3（依赖链 ≤2、每项目带退出条件）；数据隐私 2（租约登记不含个人数据）；公众接受度 2（默认退出+账牌可见）；技术成熟度 2（**几乎不依赖前沿技术，是本方案的卖点**）；运维成本 2（年度单锚点）；公平包容 2（等价路径为法定条款 [standard:BARRIER-FREE-ENVIRONMENT-LAW]） [depth:risk_missing_data]。
+**风险矩阵（1–5 分，全档见 risk.json）**：政策不确定性 4（图则/地役权/届会需法定程序或政策创设→全部概念建议、一期零施工）；空间争议 3（院落切分敏感→自愿+更新触发+不点名权属 [assumption:A-EASE-001]）；实施复杂度 3（依赖链 ≤2、每项目带退出条件）；数据隐私 2（租约登记不含个人数据）；公众接受度 2（默认退出+账牌可见）；技术成熟度 2（**几乎不依赖前沿技术，是本方案的卖点**）；运维成本 2（年度单锚点）；公平包容 2（等价路径为租约必备条款 [standard:BARRIER-FREE-ENVIRONMENT-LAW]） [depth:risk_missing_data]。
 
 **合规红线自查**：① 临时边界已在正文（第 2 章）、展示页、来源清单、假设登记表、自检结果五处醒目标注 [assumption:A-BND-001]；② 不点名任何真实权属单位——L3 试点为「某科研院落群（示意）」；③ 押金池与维护基金标注持牌金融机构与监管合规为待补条件 [assumption:A-FUND-001]；④ 全部历史年份与案例逐条带来源，查不到即降级或删除；⑤ HD00-1601 引用与「概念深化」定位语句在场（第 1 章）[source:SRC-HD00-1601]；⑥ 断面塔不含工程可行性结论；全部空间落位写为「概念建议/供专业团队深化」。
 
@@ -546,7 +559,7 @@ R-10 值得单独一段：**这场竞赛本身成为百年制度的第一份档�
 
 ## 参考资料
 
-真正影响方案判断的主要文献（完整机器索引见来源清单与三份矩阵）：
+来源清单（sources.json）已逐条标注核实状态 `verification_status`：official / official_registry（官方或组织方材料）、background（公开背景资料）、provisional（临时口径推定）、unverified_media_report（仅据媒体报道、未独立核实）。凡状态非 official 的来源只用于叙事背景与案例读法，不用于空间控制结论。真正影响方案判断的主要文献（完整机器索引见来源清单与三份矩阵）：
 
 1. 百年京张AI创新带城市设计国际方案征集资格预审公告，北京市规划和自然资源委员会海淀分局，2026-05 [source:OFFICIAL-ANNOUNCEMENT]
 2. 面向全球智能体开展百年京张AI创新带城市设计开源征集任务书，2026-05 [source:AGENT-TASKBOOK]

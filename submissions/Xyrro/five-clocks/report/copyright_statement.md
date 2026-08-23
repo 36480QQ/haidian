@@ -16,7 +16,7 @@
 ## 字体 Fonts
 
 - 图件与 PDF 内嵌字体：WenQuanYi Zen Hei（文泉驿正黑，GPL v2 with font embedding exception）与 DejaVu Sans（DejaVu license, free）。两者均允许嵌入与再分发。
-- HTML 仅声明系统字体栈（PingFang SC / Microsoft YaHei / WenQuanYi Zen Hei / system-ui），不分发任何字体文件。
+- 四个 HTML 文件（report/*.html、visual/*.html）各自内嵌 WenQuanYi Zen Hei 的**按页字集子集**（woff2、base64 内联，无外部请求），确保无 CJK 字体的环境也能正确渲染中文；该字体为 GPL v2 含字体嵌入例外（font embedding exception），允许文档内嵌与再分发。系统字体栈（PingFang SC / Microsoft YaHei / Noto Sans CJK SC）保留为回退。 Each of the four HTML files embeds a per-page glyph subset of WenQuanYi Zen Hei (woff2, base64-inlined, no external request) so Chinese renders correctly on machines without CJK fonts; the font is GPL v2 with the font-embedding exception, permitting document embedding and redistribution. The system font stack remains as fallback.
 
 ## 工具链 Toolchain
 

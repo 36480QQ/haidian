@@ -1,5 +1,14 @@
 # 方案迭代记录 Changelog
 
+## v4.3 - 2026-08-23（回应正式评审 request-changes）
+
+### 改动摘要
+- **CJK 渲染修复**：四个 HTML（report/proposal.html、report/proposal.en.html、visual/index.html、visual/index.en.html）各内嵌 WenQuanYi Zen Hei 按页字集子集（woff2 base64 内联，17–306 KB，无外部请求），在无 CJK 字体环境实测修复「豆腐块」；版权声明字体条目同步更新。
+- **图件底部标注修复**：land-use-structure / mobility-bluegreen / metrics-evidence 三图显式预留底部边距，说明文字与版权行不再重叠或裁切；A3/A0 与 HTML 同步重排。
+- **来源核实状态**：sources.json 全部 39 条登记 verification_status（official / official_registry / background / provisional / unverified_media_report）；SRC-HD00-1601 在两种语言正文三处标注「仅据媒体报道、未独立核实、不用于正式规划判断」。
+- **机制法律地位表**（新表）：贯通地役权、复线大会、押金池托管、测试准入四项逐项区分「现行法律基础 / 待创设部分 / 须确认的专业主体」；全篇「法定条款/不可议/唯一窗口」改为合同机制或方案设定表述，「法定」仅用于既有法律制度。
+- **指标性质列**（第 11 章表改版）：设计声明/机制设定与运营/勘测实测分列；明示 non_ai_parity_coverage=1.0 为文档覆盖率而非实测可达性、slow_layer_change_count=0 为起点承诺、lease_default_exit_rate=1.0 为机制目标；visual 指标区同步加注。
+
 ## v4.2 - 2026-08-23
 
 ### 改动摘要

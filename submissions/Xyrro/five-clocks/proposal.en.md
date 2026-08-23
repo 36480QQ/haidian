@@ -24,7 +24,7 @@ The argument takes four steps. First, the contradiction: frontier AI models iter
 
 Third, the site's own evidence: the Jing-Zhang Railway broke ground in 1905 and opened in 1909 [source:SRC-JZ-1905-1909]; it carried steam, diesel, and electric traction; on 30 December 2019 the Jing-Zhang high-speed railway opened and dived underground through the Qinghuayuan Tunnel [source:SRC-HSR-OPENING-2019], and the surface became a heritage park [source:SRC-PARK-WUDAOKOU-2019]. Five or six generations of technology have turned over, yet the alignment and its relationship to the blocks beside it have persisted for roughly a hundred and twenty years. The law this site proved over the last century: **the alignment outlives every train.** Fourth, the translation into a task: what this proposal delivers is therefore not a "collection of AI scenarios" but five speed layers, the interface rules between them, and change procedures inversely proportional to layer speed — an urban chassis on which ten generations of not-yet-existing technology can safely enter and safely exit.
 
-Each layer carries one "city clock": the River Clock (L1, 500+ years), the Line Clock (L2, 100 years), the Block Clock (L3, 50 years), the Section Clock (L4, 15–30 years), and the Device Clock (L5, six months to five years). The period figures are design assumptions, not empirical measurements [assumption:A-CLOCK-001]. Between layers there are only three laws: lease, never occupy; fast never rewrites slow — **"the robots need it" is never a reason to modify the street network**; and difficulty inversely proportional to speed — filing, permit, hearing, Repave Assembly, not amendable: a five-step procedural staircase that makes "no change" the default state. Every instrument sits inside the existing planning toolbox: blue-green protection line, alignment-protection regulating plan, easement clause, elastic section atlas, lease filing [depth:overall_spatial_structure].
+Each layer carries one "city clock": the River Clock (L1, 500+ years), the Line Clock (L2, 100 years), the Block Clock (L3, 50 years), the Section Clock (L4, 15–30 years), and the Device Clock (L5, six months to five years). The period figures are design assumptions, not empirical measurements [assumption:A-CLOCK-001]. Between layers there are only three laws: lease, never occupy; fast never rewrites slow — **"the robots need it" is never a reason to modify the street network**; and difficulty inversely proportional to speed — filing, permit, hearing, Repave Assembly, not amendable: a five-step procedural staircase (a procedural design proposed here, not an existing statutory procedure) that makes "no change" the default state. Every instrument sits inside the existing planning toolbox: blue-green protection line, alignment-protection regulating plan, easement clause, elastic section atlas, lease filing [depth:overall_spatial_structure].
 
 "Centennial" is not an adjective here; it is a procedure: the **Repave Assembly**, held once every twenty-five years — 2026 baseline, 2051, 2076, 2101, 2126 — is the only window in which motions to change L2 alignments may be tabled [metric:centennial_review_interval_years] [assumption:A-ASSEMBLY-001]. **A child born in 2026 will be exactly 25 at the first Repave Assembly in 2051.** The first generation of adult participants in the Repave Assembly is being born this year.
 
@@ -52,7 +52,7 @@ This proposal adopts the customary five-tier evidence classification: official, 
 | design | Layer periods, reserved corridors, lease clauses, metric target ranges | Conceptual recommendations, institutional design | Statutory planning conclusions, government commitments |
 | unknown | Regulatory controls, block-grain baseline, conduit headroom | Gap registration, recalculation triggers | Masquerading as known fact |
 
-The three most important boundary declarations. First, every spatial layer in this package is generated on the repository's provisional rough boundary — **it is not an official redline and must not serve as an approval basis or a precise-area basis**; once the official boundary is published, the boundary, key areas, land use, green space, public space, buildings, and phasing layers and their derived metrics must all be recalculated [data:geometry/site_boundary.geojson#SITE-001] [assumption:A-BND-001]. Second, regulatory control conditions (FAR, height, density, green ratio, setbacks) are unpublished; the corresponding indicators are uniformly recorded as pending official data [metric:floor_area_ratio] [assumption:A-CONTROLS-001]. Third, according to public reporting, the block-level regulatory detailed plan for the blocks along the Jing-Zhang Railway Heritage Park (AI innovation district key area), HD00-1601 et al. (2024–2035), was approved on 11 August 2026, establishing a "one belt, one axis, two centers, many nodes" structure [source:SRC-HD00-1601]. Its drawings are not public and this proposal cites none of its parcel-level indicators; **this proposal positions itself as a conceptual deepening built upon that approved plan — connected to it, never parallel to it.** The five-speed regulating plan adds a time-dimension control field to the existing statutory framework rather than drawing a rival map.
+The three most important boundary declarations. First, every spatial layer in this package is generated on the repository's provisional rough boundary — **it is not an official redline and must not serve as an approval basis or a precise-area basis**; once the official boundary is published, the boundary, key areas, land use, green space, public space, buildings, and phasing layers and their derived metrics must all be recalculated [data:geometry/site_boundary.geojson#SITE-001] [assumption:A-BND-001]. Second, regulatory control conditions (FAR, height, density, green ratio, setbacks) are unpublished; the corresponding indicators are uniformly recorded as pending official data [metric:floor_area_ratio] [assumption:A-CONTROLS-001]. Third, according to public reporting, the block-level regulatory detailed plan for the blocks along the Jing-Zhang Railway Heritage Park (AI innovation district key area), HD00-1601 et al. (2024–2035), was approved on 11 August 2026, establishing a "one belt, one axis, two centers, many nodes" structure [source:SRC-HD00-1601]. The plan number, approval news, and structure wording are **media-reported only, not independently verified, and not used for formal planning judgments**. Its drawings are not public and this proposal cites none of its parcel-level indicators; **this proposal positions itself as a conceptual deepening built upon that approved plan — connected to it, never parallel to it.** The five-speed regulating plan adds a time-dimension control field to the existing statutory framework rather than drawing a rival map.
 
 ### The Site Fact Chain
 
@@ -67,7 +67,7 @@ The chain of facts behind the core claim — "the alignment outlives every train
 | 5 | Heritage park Wudaokou launch section unveiled (~800 m, 1.7 ha) | 2019-09-19 | [source:SRC-PARK-WUDAOKOU-2019] |
 | 6 | Heritage park planned at ~9 km, co-creative international solicitation | 2020–2021 | [source:SRC-PARK-PLANNING] |
 | 7 | Heritage park Phase 1 Zone C trial operation | 2023 | [source:SRC-PARK-CZONE] |
-| 8 | HD00-1601 block regulatory plan approved (as reported) | 2026-08-11 | [source:SRC-HD00-1601] |
+| 8 | HD00-1601 block regulatory plan approved (as reported; not independently verified) | 2026-08-11 | [source:SRC-HD00-1601] |
 
 Theory and policy anchors (Brand, Conzen, Rossi, Habraken, strategic reserve land, the Beijing Urban Renewal Regulation, the Civil Code easement provisions, the Beijing River and Lake Regulation) and the eight global cases are fully registered in the source list; each chapter cites them beside the judgments they support. Professional standards are answered in the standard matrix: the Urban Design Administrative Measures, the Regulatory Detailed Planning Compilation Measures, and the land-use classification guide are the drafting bases for this proposal's control instruments [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]; the official text of the architectural design-depth regulation lacks a local reference and is registered as a data gap rather than a satisfied basis. The interim measures on generative AI services, the Barrier-Free Environment Law, and the smart-technology-for-the-elderly policy form the superior bases of the L5 lease compliance clauses [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
@@ -161,7 +161,7 @@ The deliverable of the overall design is a "five-speed regulating plan." First, 
 ### The Three Interface Laws
 
 1. **Lease, never occupy.** Every L5 occupation of L2–L4 is a lease with term, deposit, and restoration duty; time is equally leasable — night hours, time-shared lanes — and time leases rank equally with space leases [assumption:A-LEASE-001].
-2. **Fast never rewrites slow.** No fast-layer demand constitutes grounds for slow-layer change — **"the robots need it" is never a reason to modify the street network**; the priority runs the other way: slow layers serve humans first, and a non-AI parity path is a statutory clause of every lease [metric:non_ai_parity_coverage].
+2. **Fast never rewrites slow.** No fast-layer demand constitutes grounds for slow-layer change — **"the robots need it" is never a reason to modify the street network**; the priority runs the other way: slow layers serve humans first, and a non-AI parity path is a mandatory contract clause of every lease (a contract mechanism this proposal defines, not an existing statutory duty) [metric:non_ai_parity_coverage].
 3. **Difficulty inversely proportional to speed.** L5 filing < L4 permit < L3 hearing < L2 Repave Assembly < L1 not amendable. The default state is "no change"; the burden of proof always sits with whoever wants change.
 
 The key design point: **reversible by default.** Comparable proposals often promise that installations are "removable," but removal always requires someone to act; this proposal makes reversibility the default path — **an L5 lease exits by default on expiry: no renewal = automatic removal; it is renewal that requires an application.** Inaction restores the street. This is the fundamental difference between the lease system and ordinary "temporary facility management" [metric:lease_default_exit_rate] [assumption:A-LEASE-001].
@@ -174,7 +174,18 @@ The three laws map onto the five-step procedural staircase as follows:
 | L4 | Planning permit | Planning authority | Applicant | Section changes, device-band additions |
 | L3 | Public hearing | Hearing + rights-holders | Applicant | Grain subdivision, easement creation |
 | L2 | Repave Assembly (25-y window) | The Assembly plenary | Movant | Alignment-change motions |
-| L1 | Not amendable | — (record only) | Not admissible | — |
+| L1 | Not amendable (proposal-defined) | — (record only) | Not admissible | — |
+
+The legal standing of the procedural settings above, and of the proposal at large, is stated directly here — four key mechanisms are each broken into "current legal basis / part yet to be created / professional body that must confirm," and no yet-to-be-created mechanism is presented as an existing statutory procedure:
+
+| Mechanism | Current legal basis | Yet to be created | Body that must confirm |
+|---|---|---|---|
+| Through-passage easements | The consensual-easement regime of the Civil Code, Property section, arts. 372–385 [source:SRC-CIVIL-CODE-EASEMENT] | Standardized easement contract texts and registration workflow across multiple rights-holders | Real-estate registration authority, rights-holding entities, planning authority |
+| Repave Assembly (25-year) | No direct counterpart; the Urban Renewal Regulation's public-participation and hearing procedures are reference points [source:SRC-BJ-RENEWAL-REG] | Institutionalized session rules, source of authorization, and force of resolutions | District people's congress and planning commission, legislative-affairs bodies |
+| Deposit-pool custody | Existing licensed-institution fund-custody supervisory practice (by analogy) | Dedicated custody-account rules for street-device leases [assumption:A-FUND-001] | Financial regulator, licensed custodian bank |
+| Test admission (speed zoning) | Existing intelligent-connected-vehicle testing management frameworks (by analogy) | Tiered admission, scorecard linkage, and exit rules for street devices | Sector authority, district administration |
+
+All four are **conceptual proposals of contract mechanisms or procedural designs** that require confirmation by the bodies above before taking effect; the word "statutory" is reserved in this proposal for existing legal institutions (the Civil Code easement, the river-protection regulation).
 
 ### The Refusal List
 
@@ -192,7 +203,7 @@ The announcement requires "control guidance on building height, intensity, chara
 
 | Control indicator | Lock layer | Review period | Control statement (all conceptual frameworks) |
 |---|---|---|---|
-| Blue-green protection line | L1 | Not amendable | River/lake protection ranges and waterfront green belts per statute [source:SRC-BJ-RIVER-REG] |
+| Blue-green protection line | L1 | Not amendable (proposal-defined) | River/lake protection ranges and waterfront green belts per statute [source:SRC-BJ-RIVER-REG] |
 | Alignments and trunk rights of way | L2 | 25-year Assembly | Alignment-protection plan registers width ranges and function whitelists per corridor |
 | Build-to line and street wall | L3 | 50 y | Build-to ratio ranges along principal streets |
 | Height zoning skeleton | L3 | 50 y | Skeleton and ranges only; no approved values [assumption:A-CONTROLS-001] |
@@ -259,7 +270,7 @@ The Block Clock ticks once in fifty years; the Origin Community is the only plac
 
 ### Dazhongsi AI Industry Cluster (~72.0 ha): L2 Hub + Cultural Apex
 
-Dazhongsi is the "deepest" station of the five-speed structure: hub of the Line Clock, origin of the five-clock naming [source:CTX-YONGLE-BELL], and one of the "two centers" in the HD00-1601 reporting [source:SRC-HD00-1601].
+Dazhongsi is the "deepest" station of the five-speed structure: hub of the Line Clock, origin of the five-clock naming [source:CTX-YONGLE-BELL], and one of the "two centers" in the HD00-1601 reporting [source:SRC-HD00-1601] (media-reported only, not independently verified, not used for formal planning judgments).
 
 - **The Section Tower (M1)**: an enterable vertical section museum — from bottom to top, the 1909 roadbed layer, the conventional rail layer, the 2019 underground HSR layer, the utility corridor layer, and **a deliberately empty "future layer" on top**. It turns "one alignment stacked with six generations of technology" into a ten-minute vertical walk. The tower is a curatorial structure concept [data:geometry/buildings.geojson#BLDG-SECTION-TOWER] and **carries no bridge, tunnel, underground-space, or engineering feasibility conclusions** — a taskbook red line this proposal strictly observes [source:AGENT-TASKBOOK].
 - **Five Clocks Plaza (M3)**: five "city clock" installations, each turning at its layer's speed — the Device dial visibly fast, the River dial imperceptibly slow. **One plaza makes the whole thesis perceivable**: a child who cannot yet read can still see that some things turn fast and some almost not at all. The plaza is conceptual land use [data:geometry/land_use.geojson#LU-016] [data:geometry/public_space.geojson#PS-PLAZA], positioned as public art + science communication, never entertainment.
@@ -319,7 +330,7 @@ Eight global ecosystem cases, each with a one-line pace-layer reading and one tr
 | S01 | Low-speed delivery robots | L4 device band + L2 time-shared right of way | 2 y | mid | Auto-downgrade to human delivery in snow/rain | Zhongzhiyuan demo street |
 | S02 | Autonomous micro-shuttle | L4 time-shared lane | 3 y | high | Regular bus and walking | Zhongzhiyuan–Origin Community |
 | S03 | AI heritage guide | L4 lamppost interface | 1 y | low | Physical guide boards and human docents | Heritage-park spine |
-| S04 | AI health-navigation kiosk | L3 easement mouth | 2 y | mid | **Parallel staffed window (statutory clause)** | Origin Community |
+| S04 | AI health-navigation kiosk | L3 easement mouth | 2 y | mid | **Parallel staffed window (mandatory lease clause, proposal-defined)** | Origin Community |
 | S05 | Enterprise copilot booth | L4 device band | 1 y | low | Staffed enterprise-service window | Both wings' interfaces |
 | S06 | Public-safety operations review screen | L4 | 2 y | mid | Paper notices and review meetings; lease carries data-boundary and publicity clauses | Dazhongsi |
 | S07 | Campus-mile open AI desks | L3 open courtyards | 1 y | low | Traditional study and tutoring | Origin Community (student co-creation) |
@@ -410,7 +421,7 @@ East–west mending and north–south throughline are the taskbook's named strat
 *Fig. 4 · The mobility and blue-green composite. Green corridor, blue-green interface, existing rail, three E–W reserved corridors, and the N–S slow-mobility redundancy line. Conceptual; provisional boundary; not an official redline.*
 ## Blue-Green Network, Public Space, and Urban Character
 
-**The River Clock (L1) is the only "not amendable" layer of the proposal.** The Qinghe and the Xiaoyue River form the site's hydrological constant: the Qinghe's ecological restoration and the "Qinghe Isle" waterfront are accomplished practice at the research area's northern edge [source:CTX-QINGHE]; the Xiaoyue River is included in Haidian's waterfront corridor program [source:CTX-XIAOYUEHE]; the Beijing River and Lake Protection and Administration Regulation supplies the statutory system of protection ranges and waterfront green belts [source:SRC-BJ-RIVER-REG]. This proposal's blue-green protection line anchors there: the eastern blue-green protective interface band (conceptual [data:geometry/green_space.geojson#GREEN-001]) and the heritage-park green corridor together give a 21.6% green share [metric:green_ratio] [metric:green_space_area_sqm] — a design-model value on the provisional boundary [assumption:A-LU-001] [depth:blue_green_public_space].
+**The River Clock (L1) is the only "not amendable" (proposal-defined) layer of the proposal.** The Qinghe and the Xiaoyue River form the site's hydrological constant: the Qinghe's ecological restoration and the "Qinghe Isle" waterfront are accomplished practice at the research area's northern edge [source:CTX-QINGHE]; the Xiaoyue River is included in Haidian's waterfront corridor program [source:CTX-XIAOYUEHE]; the Beijing River and Lake Protection and Administration Regulation supplies the statutory system of protection ranges and waterfront green belts [source:SRC-BJ-RIVER-REG]. This proposal's blue-green protection line anchors there: the eastern blue-green protective interface band (conceptual [data:geometry/green_space.geojson#GREEN-001]) and the heritage-park green corridor together give a 21.6% green share [metric:green_ratio] [metric:green_space_area_sqm] — a design-model value on the provisional boundary [assumption:A-LU-001] [depth:blue_green_public_space].
 
 **The heritage-park vitality belt**: the green corridor runs the full site (about 9.7 km conceptual length); a continuous walking interface unrolls along the spine [data:geometry/public_space.geojson#PS-WALK]; public space totals 4.0% [metric:public_space_ratio] [metric:public_space_area_sqm]. The institutional source of vitality is not event programming but the lease system: new L5 content enters and exits the street interface every year while the chassis holds still.
 
@@ -503,28 +514,30 @@ All events, investment attraction, funding, policy, and operating arrangements a
 
 **The first metric of the whole proposal is `slow_layer_change_count`, whose target is always 0** [metric:slow_layer_change_count] — whether a "chassis that never needs redrawing" holds is measured by how many times the slow layers were changed between two Assemblies. Eighteen core indicators are organized by layer, each with definition / baseline / target / recomputation / lock layer; values are ranges and each carries its assumption [depth:metrics_recalculation]:
 
-| Indicator | Layer | Current | Target (2051 design range) | Status |
-|---|---|---|---|---|
-| slow_layer_change_count | L1–L3 | 0 | always 0 | known [metric:slow_layer_change_count] |
-| reserved_row_count / length_m | L2 | 4 / 13,151 | designated and held | known [metric:reserved_row_length_m] |
-| easement_passage_count / length_m | L3 | 2 / 820 | ≥1 per superblock cluster | known [metric:easement_passage_count] |
-| easement_coverage_ratio | L3 | pending | ≥0.8 (range) | unknown [metric:easement_coverage_ratio] |
-| superblock_area_share | L3 | 84.8% (2026-08-21 snapshot; inclusive bound 69.0%) | declining | known [metric:superblock_area_share] |
-| median_block_area_ha | L3 | 0.662 ha (mean 3.77 ha) | bimodality converging | known [metric:median_block_area_ha] |
-| ew_crossing_count | L2 | 8 (at-grade 京包线, 1/813 m) | 11 (+3 after redemption) | known [metric:ew_crossing_count] |
-| device_band_coverage_km | L4 | 1.55 (demo street) | principal streets covered (range) | known [metric:device_band_coverage_km] |
-| corridor_conduit_headroom_years | L4 | pending (R-09) | ≥30 y (range) | unknown [metric:corridor_conduit_headroom_years] |
-| section_redundancy_ratio | L4 | pending | ≥0.2 (range) | unknown [metric:section_redundancy_ratio] |
-| lease_active_count | L5 | pre-operational | first cohort: 12 cards | unknown [metric:lease_active_count] |
-| lease_return_rate | L5 | pre-operational | ≥0.95 | unknown [metric:lease_return_rate] |
-| lease_default_exit_rate | L5 | 1.0 by construction | 1.0 | unknown [metric:lease_default_exit_rate] |
-| deposit_pool_balance | L5 | illustrative | — (licensed custody pending) | unknown [metric:deposit_pool_balance] |
-| non_ai_parity_coverage | belt | 1.0 (12/12 cards) | 1.0 | known [metric:non_ai_parity_coverage] |
-| annual_silent_drill_completion | belt | pre-first-drill | ≥0.9 | unknown [metric:annual_silent_drill_completion] |
-| centennial_review_interval_years | institution | 25 | 25 | known [metric:centennial_review_interval_years] |
-| timeline_paving_length_m | culture | 1,000 (Phase 1) | full spine (~9.7 km conceptual) | known [metric:timeline_paving_length_m] |
-| speed_diversity_index | industry | pending collection | rising each Assembly | unknown [metric:speed_diversity_index] |
-| component_library_items | public space | 6 families | annual additions | known [metric:component_library_items] |
+| Indicator | Layer | Nature | Current | Target (2051 design range) | Status |
+|---|---|---|---|---|---|
+| slow_layer_change_count | L1–L3 | design pledge (starting state, not an achievement) | 0 | always 0 | known [metric:slow_layer_change_count] |
+| reserved_row_count / length_m | L2 | design declaration (plan designation) | 4 / 13,151 | designated and held | known [metric:reserved_row_length_m] |
+| easement_passage_count / length_m | L3 | design declaration (conceptual routes) | 2 / 820 | ≥1 per superblock cluster | known [metric:easement_passage_count] |
+| easement_coverage_ratio | L3 | operational measurement pending | pending | ≥0.8 (range) | unknown [metric:easement_coverage_ratio] |
+| superblock_area_share | L3 | measured (OSM 2026-08-21) | 84.8% (inclusive bound 69.0%) | declining | known [metric:superblock_area_share] |
+| median_block_area_ha | L3 | measured (OSM 2026-08-21) | 0.662 ha (mean 3.77 ha) | bimodality converging | known [metric:median_block_area_ha] |
+| ew_crossing_count | L2 | measured (OSM 2026-08-21) | 8 (at-grade 京包线, 1/813 m) | 11 (+3 after redemption) | known [metric:ew_crossing_count] |
+| device_band_coverage_km | L4 | design declaration (demo-street design) | 1.55 | principal streets covered (range) | known [metric:device_band_coverage_km] |
+| corridor_conduit_headroom_years | L4 | survey measurement pending | pending (R-09) | ≥30 y (range) | unknown [metric:corridor_conduit_headroom_years] |
+| section_redundancy_ratio | L4 | survey measurement pending | pending | ≥0.2 (range) | unknown [metric:section_redundancy_ratio] |
+| lease_active_count | L5 | operational measurement pending | pre-operational | first cohort: 12 cards | unknown [metric:lease_active_count] |
+| lease_return_rate | L5 | operational measurement pending | pre-operational | ≥0.95 | unknown [metric:lease_return_rate] |
+| lease_default_exit_rate | L5 | mechanism-design target (not operational performance) | — (pre-operational) | 1.0 | unknown [metric:lease_default_exit_rate] |
+| deposit_pool_balance | L5 | operational measurement pending (custody not yet established) | illustrative | — (licensed custody pending) | unknown [metric:deposit_pool_balance] |
+| non_ai_parity_coverage | belt | design declaration (document coverage, not tested accessibility) | 1.0 (12/12 cards carry the clause) | 1.0, verified by accessibility testing | known [metric:non_ai_parity_coverage] |
+| annual_silent_drill_completion | belt | operational measurement pending | pre-first-drill | ≥0.9 | unknown [metric:annual_silent_drill_completion] |
+| centennial_review_interval_years | institution | mechanism setting | 25 | 25 | known [metric:centennial_review_interval_years] |
+| timeline_paving_length_m | culture | design declaration (Phase 1 concept) | 1,000 | full spine (~9.7 km conceptual) | known [metric:timeline_paving_length_m] |
+| speed_diversity_index | industry | operational measurement pending | pending collection | rising each Assembly | unknown [metric:speed_diversity_index] |
+| component_library_items | public space | design declaration (component-family list) | 6 families | annual additions | known [metric:component_library_items] |
+
+The "Nature" column visibly separates **design declarations / mechanism settings** from **operational or survey measurements**; the three most misreadable indicators, stated plainly: non_ai_parity_coverage = 1.0 means the text of all 12 scenario cards carries the parity clause — **document coverage, not accessibility verified by testing**; slow_layer_change_count = 0 is a starting pledge, not an achieved result; lease_default_exit_rate = 1.0 is a mechanism-design target with no operational record before operations begin. No value whose Nature is not "measured" may be read as achieved operational performance.
 
 Area recalculation: all geometry exchanges in EPSG:4326 and recomputes in EPSG:4548; overall area 11,412,825 m² [metric:site_area_sqm], green ratio 21.6% [metric:green_ratio], public-space ratio 4.0% [metric:public_space_ratio], conceptual footprints 52,737 m² [metric:building_footprint_area_sqm], three key areas [metric:key_area_count]. The land-use mosaic leaves a 37 m² residual against the boundary and zero overlaps. **All are design-model values on a provisional boundary** [assumption:A-BND-001]. The three matrices — the task coverage matrix (every item of announcement 1.3/1.4/1.5 plus agent.1–agent.6), the professional standard matrix, and the design depth matrix — are complete and cross-referenced with these chapters [depth:metrics_recalculation].
 
@@ -536,7 +549,7 @@ The design meaning of each indicator, stated for human reviewers: the green rati
 
 ## Risk, Copyright, and Compliance
 
-**Risk matrix (1–5; full file in risk.json)**: policy uncertainty 4 (plans/easements/Assembly need statutory procedure or policy creation → everything conceptual, Phase 1 zero-construction); spatial contestation 3 (compound subdivision is tenure-sensitive → voluntary + renewal-triggered + no naming [assumption:A-EASE-001]); implementation complexity 3 (dependency chains ≤ 2, every project carries an exit); data privacy 2 (the lease registry holds no personal data); public acceptance 2 (default exit + visible ledger plates); technology maturity 2 (**the proposal barely depends on frontier technology — that is its selling point**); operations cost 2 (one annual anchor); equity and inclusion 2 (the parity path is a statutory clause [standard:BARRIER-FREE-ENVIRONMENT-LAW]) [depth:risk_missing_data].
+**Risk matrix (1–5; full file in risk.json)**: policy uncertainty 4 (plans/easements/Assembly need statutory procedure or policy creation → everything conceptual, Phase 1 zero-construction); spatial contestation 3 (compound subdivision is tenure-sensitive → voluntary + renewal-triggered + no naming [assumption:A-EASE-001]); implementation complexity 3 (dependency chains ≤ 2, every project carries an exit); data privacy 2 (the lease registry holds no personal data); public acceptance 2 (default exit + visible ledger plates); technology maturity 2 (**the proposal barely depends on frontier technology — that is its selling point**); operations cost 2 (one annual anchor); equity and inclusion 2 (the parity path is a mandatory lease clause [standard:BARRIER-FREE-ENVIRONMENT-LAW]) [depth:risk_missing_data].
 
 **Compliance red-line self-check**: ① the provisional boundary is prominently flagged in the narrative (Ch. 2), the visual page, the source list, the assumptions register, and the self-check output [assumption:A-BND-001]; ② no real rights-holder is named — the L3 pilot is "an unnamed research campus cluster (illustrative)"; ③ the deposit pool and maintenance fund are flagged as requiring a licensed financial institution and regulatory compliance [assumption:A-FUND-001]; ④ every historical date and case is individually sourced; anything unverifiable was softened or cut; ⑤ the HD00-1601 citation and the "conceptual deepening upon it" positioning sentence are present (Ch. 1) [source:SRC-HD00-1601]; ⑥ the Section Tower carries no engineering feasibility conclusions; every spatial placement is written as "conceptual recommendation / for professional deepening."
 
@@ -546,7 +559,7 @@ The design meaning of each indicator, stated for human reviewers: the green rati
 
 ## References
 
-The principal materials that actually shaped the proposal's judgments (the complete machine index is in the source list and the three matrices):
+Every entry in the source list (sources.json) now carries a `verification_status` label: official / official_registry (official or organizer materials), background (public background references), provisional (provisional-basis inferences), unverified_media_report (media-reported only, not independently verified). Sources whose status is not official are used only for narrative context and case readings, never for spatial control conclusions. The principal materials that actually shaped the proposal's judgments (the complete machine index is in the source list and the three matrices):
 
 1. Pre-qualification announcement, Centennial Jing-Zhang AI Innovation Belt international urban design solicitation, Beijing Municipal Commission of Planning and Natural Resources (Haidian), 2026-05 [source:OFFICIAL-ANNOUNCEMENT]
 2. Agent-facing open-call taskbook, 2026-05 [source:AGENT-TASKBOOK]
