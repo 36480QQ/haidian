@@ -273,6 +273,30 @@
       "impact_zh": "所有更新项目清单、实施政策、分期计划与运营机制均为深化方向，最终须以 official 政府审定为准。",
       "recalculation_path_zh": "实施前由海淀区政府、企业联合体与专业团队共同审定实施计划、政策与运营机制。",
       "confidence": "low"
+    },
+    {
+      "id": "ASM-009",
+      "topic": "beijing_ai_plus_action_plan",
+      "assumption_zh": "方案引用《北京市推动“人工智能+”行动计划（2024-2025年）》[source:SRC-BJ-AI-PLUS-ACTION-2024]与《中关村科学城加快建设具有全球影响力人工智能产业高地的若干措施》[source:SRC-ZGC-AI-INDUSTRY-2025]作为AI场景与产业政策依据。",
+      "impact_zh": "AI场景卡的政策框架与北京市及中关村科学城的现行政策对齐，增加可实施性。",
+      "recalculation_path_zh": "实施前核验两份政策文件的最新版本与后续修订，按最新政策调整AI场景范围。",
+      "confidence": "high"
+    },
+    {
+      "id": "ASM-010",
+      "topic": "beijing_urban_renewal_regulation",
+      "assumption_zh": "拆改留按《北京市城市更新条例》[source:SRC-BJ-URBAN-RENEWAL-REGULATION]落实，该条例（2023年3月1日施行）为城市更新的法定依据。",
+      "impact_zh": "拆改留分类有明确法定依据，增加方案可实施性。",
+      "recalculation_path_zh": "取得 official 现状建筑与权属数据后，按条例逐栋落实拆改留分类。",
+      "confidence": "high"
+    },
+    {
+      "id": "ASM-011",
+      "topic": "jingzhang_park_phase2_open",
+      "assumption_zh": "京张铁路遗址公园二期已于2026年8月建成向公众开放 [source:SRC-JZ-PARK-PHASE2-OPEN-2026]，方案走廊空间基于已建成公共空间。",
+      "impact_zh": "走廊空间已有实际建成基础（一期2023年、二期2026年8月开放），显著增加方案可实施性。",
+      "recalculation_path_zh": "取得 official 公园红线后调整走廊边界；二期各标段开放范围以园林部门 official 图纸为准。",
+      "confidence": "high"
     }
   ],
   "evidence_ledger": {

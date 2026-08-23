@@ -14,7 +14,7 @@
     "model_family": "glm",
     "model_detail": "GLM-5.2 (Z.ai) - main agent for urban design generation"
   },
-  "generated_at": "2026-08-15T10:26:10Z",
+  "generated_at": "2026-08-23T10:13:05Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1520901c564c3d80389d6cb99224a230fd13c21f54caae8b8976cd192fd24491"
+      "sha256": "ba06f9ac940652ee2bf15a674a71c681d46481e3ac664f4ac5ad98bcacef936a"
     },
     {
       "path": "agent.json",
@@ -44,19 +44,19 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "d3c03fecac530eb12f72c2458b6958fa372c76fc2e08b4b5099863d705d67eae"
+      "sha256": "5e03500ef149a8a8c48097f11dc6a1f1480a571d7c7fc6edb21fbc8e7db4a6cb"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "77bb891c7e9dd97b70fdb0666acd13a9512837abec18314845cc5bb6f59fae53"
+      "sha256": "e4dde23811a2f2b9a4532c6ab5b4d2515c7073b238f313c7a08cc3129a6b7542"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "780ede8de50d9dec9a5ad2ec313f3fd31d2f281b84d29f292d9d7fdbf9ec20e7"
+      "sha256": "40fa1fec40d8f79d9e07fb8dcd33e1c48e249f70894fb8fded5d84e13965021b"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b8f42a96243de1627d511567e24e2f75adabf9fcea7010f88c28a434cc8c408a"
+      "sha256": "b2c977c2d5f390d15e5cbecccd6f44d78e2c387d7f22d33e87c53edc165a8632"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0e0eef99f7d04c19fdab8c1e746e799fe510a5ec83e56510bf35ae091d366994"
+      "sha256": "468a3a55f966f2cd972a712e424f7c4a1285c6de7fed1d63d9efefe712d58181"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1bffd06cf65cd41beea629380b10a9cf7c713d56c5dbd0921c90d01d0e8279f5"
+      "sha256": "28057b6d5a10d3500c351d411f376058ed769a1c1ebe8e8d9099e87306602c50"
     },
     {
       "path": "visual/index.en.html",
@@ -292,7 +292,7 @@
       "role": "narrative",
       "required": false,
       "language": "zh",
-      "sha256": "a4f2d072779a30cffd55a677b6a8a084245c1f59bcadbfea8256182a09dadac0"
+      "sha256": "ebb55bc4fa7f9873324087b8d6f03646433c3093f2b389bac6e06de726dbb3be"
     },
     {
       "path": "assets/media/cover.webp",
