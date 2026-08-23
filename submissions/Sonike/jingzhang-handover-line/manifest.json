@@ -93,7 +93,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "d202b67b20dc00eb28682f1605f9b565dfd4e996277cfbf4d8e65d3105bbce0c"
+      "sha256": "d60ab2d8cbef6325fd9d6614cba2dbc5685027e5ae716286fc21fdc9c79071f3"
     },
     {
       "path": "simulation.json",
@@ -405,7 +405,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "22ced641e04e7a10053752e1151a69589d9402cc33e1e9a981470ff2cd346274"
+      "sha256": "8f8305488568c632ba9b8fa76b622c8f53b55ca2d44237a60b85abc664212a48"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -489,7 +489,7 @@
       "path": "visual/assets/governance/claims-audit.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "2d29be3ef272e73fc1ac574f615e9e0feeb3fb97bf4ade2642d72ae1dd10c233",
+      "sha256": "fa42b03ef8ca81c8a4e6cc7fbc0ff947e6f43bcfa879eacd4ec062863f8bdd8c",
       "title_zh": "正文数值声明审计器",
       "title_en": "Prose claim auditor",
       "description_zh": "只读、离线、零第三方依赖的 Node 脚本，把正文里可复算的数值与结构声明逐条对结构化文件重算，**共 60 项**。分十一层：① 计数与内部一致性（68＝54＋14；三期面积相加逐位等于总体范围；分期／重点区／更新单元／地标／场景节点／道路要素与各 geojson 一致；48＝12×4；96＝12＋84；现场演练 0/12 两处同为 0）；② 二十个更新单元的结构规则（基底合计 221,014.099；四类各五个；东西各十；西收东放二十个无一例外；研制与服务逐位相等 51,744；验证与公开差 73.901＝0.126%；六个先查证落在第 2/3/5/6/8/9 对且每对最多一个；全部标 conceptual_typology_cell_not_existing_inventory 且回滚状态含「保持现状」）；③ **正文↔数据双向核对**——直接读 proposal.md，核落点表恰好 20 行、编号集合与 geojson 相同、**并逐行比对类型与东西侧**；④ **断面表算术**——每区 A1＋A2＋A3＝小计、小计＋余量＝退线 A、合计＝A＋B＋C＋D＋E 五项之和，**且把容器子段再加一遍必须得到与声明明显不同的数**（防那处 18–27 m 式的错回来）、等候面积＝进深×面宽、通用表两条求和式与两个区间声明自身成立；⑤ **交叉引用与字段深度**——三个矩阵的章节引用必须命中真实标题、正文 [standard:]／[depth:] 必须能解析到、sources.json 43 条八字段齐备、22 项深小数带 precision_note。⑥ **布局对照实验的复算（K1–K4）**——三种功能配置（现状西收东放／同类对置／沿轴分段）共用同一组位置、面积与东西侧，只有功能标签不同，故全部指标只用落点表那三列整数、是纯算术不需投影：一次交接循环最短步行（5⁴ ＝ 625 种组合穷举）、该循环跨轴次数、异类与同类互达合计、三处交接场 ±500 m 内类型齐备数、每对与单侧类型数、四类基底极差，**声明值从正文那张对照表里解析而来、不写死在脚本里**，正文改了或算法改了都会报错；⑦ **sources.json 的内部指针（J1）**——已自陈作废的历史登记不得被任何现行登记当作现行依据引用（引用须明标历史）；⑧ **矩阵自陈的推导规则（J2）**——compliance_matrix.json 写着「standard_ids 的下界＝本条 report_sections 与 standard_matrix.json 的 proposal_sections 之交集」，2026-08-22 复算发现该规则此前只跑了一部分（8 个标准共 26 处缺失，WCAG-CONTRAST 应挂 7 条实挂 0 条），补齐后三段分解 112 ＝ 规则导出 92 ＋ 定义性挂接 12 ＋ 实质相关性挂接 8，规模写死；⑨ **四套图纸的 ToUnicode 恒等性（G4）**——四套 PDF 里每个 ToUnicode CMap 都必须是一条恒等 bfrange，检查直接读 PDF 字节、用 Node 内置 zlib 解开 Flate 压缩的流；起因是 v1.11 用 Ghostscript 换嵌字体时写成了 code→字形索引（空格→'?'、'0'→'O'），渲染正确但文本抽取全是乱码，**而这处修好过一次又被后续总装静默覆盖回来**，所以需要一道回归守卫；⑩ **许可块的机器读取入口自足（L1）**——`license.identifier` 明标为非实际条款（组织方未发布其文本），`license.effective_grant` 给出当前即时生效的完整授权：SPDX 表达式 `CC-BY-NC-4.0`、条件、禁止项，以及「未发布条款更严时以更严者为准、更宽时仍只按本条范围授权」这条上界规则；**并把复制出来的授权正文与 `author_grant_zh/en` 钉成逐字节相同**，因为补机器入口的代价就是把正文复制了一份，复制就会漂移；⑪ **可执行核验声明的复算（J3）**——`sources.json` 里「`grep -c X <文件>` → N」这类声明按 grep -c 的行计数语义逐条复算，声明条数 4 写死；起因是一处此前改正文后**在旧句后面追加了一句而没改旧句**，造出「→ 2」与「实测为 1」同段并存的自相矛盾。**最后一项 Z1 是元检查**：60 项 ID 全集写死在脚本里、**含 Z1 自己**，少一条、多一条、重一条都判失败——因为审计器最危险的失效方式不是判错，而是某一项悄悄没跑。**退出码另有一道不走登记函数的结构性守卫**：把实跑 ID 序列与全集逐位比对，缺一条（含 Z1 被删掉）、多一条、顺序变了都判失败——一条检查查不到自己被删掉，所以守卫必须站在检查清单之外。这一层由同目录 audit-selftest.js 的阴性用例反过来检验。`node claims-audit.js` 全部一致退出 0，任何一项不符退出 1 并打印实算值；`--json` 输出机器可读结果。**它不是自动化闸门**：`scripts/`、`tests/`、`.github/` 都不调用它（投稿 PR 不得改那些路径），运行方式是提交前手动执行，登记在 compliance_matrix.json#self_check_expectations。与 protocol-check-runner.js、audit-selftest.js 合起来覆盖本包全部可复算声明；设计判断、未测项与现场结论不在范围内。",
@@ -499,7 +499,7 @@
       "path": "visual/assets/governance/audit-selftest.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "5f2e386e73dfef84c7fcd9ee06bbf29e1dd6661bbc47bcaa97237f1d90a98dd3",
+      "sha256": "edc8dc6f96a9d0f254f68bdf0a47433b61515409a704ad35435d1941a82f3112",
       "title_zh": "自检脚本的回归测试",
       "title_en": "Regression test for the self-check scripts",
       "description_zh": "只读、离线、零第三方依赖的 Node 脚本，检验同目录 claims-audit.js 与 protocol-check-runner.js **会不会漏检**——因为一个只会通过的自检和没有自检是等价的，而本包在这件事上栽过两次：一次是条件式 add() 让两项检查在正文措辞改动后从清单里消失、脚本报 47/47 通过；一次是元检查的 ID 全集不含元检查自己、删掉它后脚本报 48/48 通过。两次都是「检查悄悄没跑」而非「检查判错」，所以判据不能与被测对象同处一文件。**共 36 例，全部通过**：2 例正向（两个脚本须退出 0，且规模恰为 60 项／12 账／96 规则／48 断言／18 枚举字段／360 枚举实例，ID 序列须与本脚本独立记录的那份全集逐位相同——两份分岔即报错）；34 例阴性，每例注入一类已知缺陷并要求脚本退出 1 且报出指定项：把「之和为」换成同义词须报 F9；落点表某行东侧写成西侧、或几何里 side 被改须报 P3；断面单侧合计写成容器重复加的 21.1 m 须报 F3／F4；删掉一条来源的必备字段须报 H1；矩阵引用指向不存在的标题须报 G1；删掉任意一条检查（含元检查自己）须报「缺 X」；从 EXPECTED_IDS 里去掉 Z1 须报「多出 Z1」；重跑器那侧少一条规则检查须报「95 条，应为 96 条」；夹具被篡改须报规则不一致；simulation.json 的已发布断言被翻转须报断言不一致。**缺陷注入一律写进系统临时目录，包内文件不被改动**，被测脚本通过 JZ_AUDIT_OVERLAY（改输入）与 JZ_AUDIT_HOME（改脚本自身）读入，跑完即删；两个环境变量都不设置时被测脚本行为不变。`node audit-selftest.js` 全部通过退出 0，任何一例未通过退出 1；`--json` 输出机器可读结果。**它同样不是自动化闸门**：`scripts/`、`tests/`、`.github/` 都不调用它（投稿 PR 不得改那些路径），运行方式是提交前手动执行，登记在 compliance_matrix.json#self_check_expectations。它检验的是「审计器还拦不拦得住」，不检验设计内容。",

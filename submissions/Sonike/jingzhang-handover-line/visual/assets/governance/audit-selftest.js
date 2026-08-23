@@ -29,7 +29,7 @@ const PKG = path.resolve(HERE, "../../..");
 const AUDITOR = "claims-audit.js";
 const RUNNER = "protocol-check-runner.js";
 
-/* 这份 63 项 ID 全集是**刻意重复**的第二份来源。
+/* 这份 64 项 ID 全集是**刻意重复**的第二份来源。
    claims-audit.js 里也有一份；两份不一致就说明有人动了其中一份，本文件会报错。
    判据与被测对象放在同一处，等于没有判据。 */
 const IDS = [
@@ -39,7 +39,7 @@ const IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "G4", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "T1", "Z1",
+  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "T1", "A2", "Z1",
 ];
 const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48, rollback_evidence_checks: 12 };
 /* protocol-check-runner.js 里也有一份 ENUM_SCALE 与 FAIL_CLOSED_SMART_LAYER。这里
@@ -92,7 +92,7 @@ const cases = [];
 const positive = (label, fn) => cases.push({ label, kind: "正向", fn });
 const negative = (label, fn) => cases.push({ label, kind: "阴性", fn });
 
-positive("claims-audit.js 全部通过，且恰好跑 63 项、ID 与本文件独立记录的全集逐位相同", () => {
+positive("claims-audit.js 全部通过，且恰好跑 64 项、ID 与本文件独立记录的全集逐位相同", () => {
   const r = runAuditor();
   if (r.code !== 0) return `退出码 ${r.code}，应为 0：${(failedIds(r).join("、") || r.stderr).slice(0, 300)}`;
   if (!r.json || r.json.all_match !== true) return "all_match 不为真";
@@ -308,6 +308,13 @@ negInput("英文正文的指标计数退回旧值 68/54 —— 复刻 2026-08-22
 
 negInput("正文删掉任务书 required_wording_zh 里的「参考方案」—— 复刻 2026-08-22 补齐前的状态，其余措辞仍在所以读起来毫无异样",
   { "proposal.md": textOf("proposal.md").replace("概念建议与参考方案，可供专业团队深化研究", "概念建议") }, ["T1"]);
+
+negInput("assumptions 的 affected_files 退回裸目录 assets/figures/ —— 复刻 2026-08-22 修掉的那处，读起来像是「影响全部图件」的合理简写",
+  { "assumptions.json": jsonMutated("assumptions.json", (d) => {
+      const a = d.assumptions.find((x) => x.id === "A-CONTRAST-001");
+      a.affected_files = a.affected_files.filter((f) => !f.startsWith("assets/figures/"));
+      a.affected_files.splice(1, 0, "assets/figures/");
+    }) }, ["A2"]);
 
 const negRunner = (label, files, want) => negative(label, () => {
   const dir = overlayWith(files);

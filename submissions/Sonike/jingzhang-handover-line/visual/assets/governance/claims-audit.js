@@ -868,6 +868,34 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
       missing.length ? `缺 ${missing.join("、")}` : counts.join("、"));
 }
 
+/* A2. assumptions.json 的 affected_files 逐条解析到包内实际文件，且每条假设都带复算触发器与责任角色。
+   2026-08-22 抓到的一处：11 条假设里 10 条的 `affected_files` 都是具体文件路径（`A-BOUNDARY-001`
+   连四张图件都逐一列出），**只有 `A-CONTRAST-001` 写了一个裸目录 `assets/figures/`**。字段名是
+   affected_files，机器按它算复算范围时这一项解析不出来。已按 `figure-contrast-report.json` 自陈的
+   范围（26 张栅格图件 ＝ 24 PNG ＋ 2 JPEG）展开成 26 个具体路径，与报告声明逐一对应。
+   规模 11 条假设／77 处文件引用写死参与退出码——某条引用被悄悄删掉时「逐条可解析」仍会成立。 */
+{
+  const asms = readPkg("assumptions.json").assumptions || [];
+  const problems = [];
+  let refs = 0;
+  for (const a of asms) {
+    for (const rel of a.affected_files || []) {
+      refs++;
+      let ok = false;
+      try { ok = fs.statSync(resolveIn(PKG, rel)).isFile(); } catch (e) { ok = false; }
+      if (!ok) problems.push(`${a.id}: affected_files 解析不到文件 ${rel}`);
+    }
+    for (const k of ["recalculation_trigger", "responsible_role"]) {
+      if (!a[k]) problems.push(`${a.id}: 缺 ${k}`);
+    }
+  }
+  add("A2", "assumptions.json 的 11 条假设各带复算触发器与责任角色，且 77 处 affected_files 逐条解析到包内实际文件（不接受目录）",
+      problems.length === 0 && asms.length === 11 && refs === 77,
+      problems.length ? problems.join("；")
+        : (asms.length !== 11 || refs !== 77 ? `实为 ${asms.length} 条假设／${refs} 处引用，应为 11／77`
+           : `11 条假设、77 处引用逐条可解析`));
+}
+
 /* Z. 元检查：断言检查清单本身没有缺项。
    审计器最危险的失效方式不是「某一项判错」，而是「某一项悄悄没跑」——
    条件式 add() 会让检查总数变少而 all_match 仍为真。2026-08-20 实测过这个洞：
@@ -887,7 +915,7 @@ const EXPECTED_IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "G4", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "T1",
+  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "T1", "A2",
   "Z1",
 ];
 {
