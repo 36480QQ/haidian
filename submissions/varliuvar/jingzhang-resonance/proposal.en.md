@@ -32,6 +32,10 @@ The proposal responds to the official open-call announcement, the agent taskbook
 | agent.5 Cultural narrative | Jing-Zhang, Zhongguancun, AI culture, and identity direction | proposal, logo, visual index | narrative system / source and rights boundaries remain active |
 | agent.6 Long-term operation | phasing, annual rhythm, pause/exit/retest rules | proposal, `geometry/phasing.geojson`, matrices | operating proposal / no government or investment commitment |
 
+- agent.2 incremental attachment: `report/narrative.md#agent2-ecosystem-case-matrix-en`, with the six-case transferable-mechanism table and eight-factor interface matrix.
+- agent.4 incremental attachment: `report/narrative.md#agent4-landmark-component-catalog-en`, with the N01-N03 catalog, public-space component library, and contribution-honour rule.
+- agent.6 incremental attachment: `report/narrative.md#agent6-operation-conversion-matrix-en`, with the four-season operation, developer loop, and conversion pathway matrix.
+
 The evidence system has three layers: nine GeoJSON files and metrics for machine review; the 21-page A3 booklet (including 18 V13 analysis pages), plus 3 A0 boards and five core figures for design communication; and lock, approval, evaluation, and source records for version control.
 
 ![AI Origin public-space visual intention and action framework](assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png)

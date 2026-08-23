@@ -34,6 +34,10 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 | agent.5 文化叙事 | 京张、中关村、AI 文化与身份方向 | proposal、logo、视觉索引 | 叙事系统 / 来源与权利边界仍有效 |
 | agent.6 长期运营 | 分期、年度节奏、暂停/退出/复测规则 | proposal、`geometry/phasing.geojson`、矩阵 | 运营提案 / 无政府或投资承诺 |
 
+- agent.2 增量附件：`report/narrative.md#agent2-ecosystem-case-matrix`，含六案例可转译表与八要素接口矩阵。
+- agent.4 增量附件：`report/narrative.md#agent4-landmark-component-catalog`，含 N01-N03 地标目录、公共空间组件库与贡献荣誉规则。
+- agent.6 增量附件：`report/narrative.md#agent6-operation-conversion-matrix`，含四季运营、开发者回路与转化路径矩阵。
+
 本次提交的空间证据分为三层：9 个 GeoJSON 与 `metrics.json` 是机器可读研究层；21 页 A3 文册（含 18 页 V13 分析图）、3 张 A0 展板和五张核心图是设计表达层；节点附件中的 lock、approval、evaluation 和 source record 是版本与边界层。生成图不能替代地理线位、现场照片和测绘边界。
 
 现状诊断的可核查入口包括建筑、约束、绿地、用地、道路和公共空间图层 [data:geometry/buildings.geojson#BLDG-001] [data:geometry/constraints.geojson#CONSTRAINT-001] [data:geometry/green_space.geojson#GREEN-001]，以及用地图层与现状诊断深度 [data:geometry/land_use.geojson#LU-001] [depth:existing_conditions_diagnosis]。这些图层的完整性不消除现状测绘、权属和官方控规缺口。
