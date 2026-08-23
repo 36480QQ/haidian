@@ -37,6 +37,9 @@ class RefreshSubmissionManifestTests(unittest.TestCase):
             (root / "proposal.md").write_text("# Updated proposal\n", encoding="utf-8")
             manifest_path = self.write_manifest(root, "proposal.md")
             os.chmod(manifest_path, 0o640)
+            expected_mode = stat.S_IMODE(manifest_path.stat().st_mode)
+            if os.name == "posix":
+                self.assertEqual(expected_mode, 0o640)
 
             with mock.patch(
                 "refresh_submission_manifest.os.fchmod",
@@ -46,7 +49,7 @@ class RefreshSubmissionManifestTests(unittest.TestCase):
                 ok, error, _refreshed = refresh_manifest(root)
 
             self.assertTrue(ok, error)
-            self.assertEqual(stat.S_IMODE(manifest_path.stat().st_mode), 0o640)
+            self.assertEqual(stat.S_IMODE(manifest_path.stat().st_mode), expected_mode)
 
     def test_chmod_failure_returns_error_and_removes_temporary_file(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
