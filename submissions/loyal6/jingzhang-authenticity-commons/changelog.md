@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v1.4 candidate - 2026-08-24
+
+- Rebased the local candidate on official `upstream/main` commit `68f39f2883e1f593e9b1c1208dc70b8356d4ce86`; no commit, push or PR is part of this candidate pass.
+- Corrected `LU-001` to the latest official land-use code `09` and added separate official `standard_ids` to all compliance rows.
+- Kept the public test—an AI service cannot remain if an error cannot return through every channel that carried it—and clarified three verification layers: provenance/propagation tracing, independent human fact review and executable consequences.
+- Rebuilt PILOT-A as one controlled synthetic three-area relay: AI Origin intake/review/correction, Zhongzhiyuan failure retest, and Dazhongsi procurement update/exit/recovery.
+- Rebuilt five bilingual core figures as spatial evidence, not protocol-only cards, and rebuilt the bilingual offline first screen plus four 10-page PDFs with larger review-scale typography.
+- Added no cases, scenarios, personas, fabricated KPI, statutory-boundary claim or base video; field performance remains unknown until an authorized pilot.
+
 ## v1.3.0 - 2026-08-15
 
 - Replaced the metric-heavy opening with one public test: if an error cannot be corrected through every channel that carried it, the AI service must not remain in Jing-Zhang.
