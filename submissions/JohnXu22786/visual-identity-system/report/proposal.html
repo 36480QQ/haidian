@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>视觉识别智环：视觉识别系统专项（概念） - proposal report</title>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1>视觉识别智环：视觉识别系统专项（概念）</h1>
+<p class="summary">以「视觉识别智环（VIS·JZ · 视觉识别系统专项）」构建沿京张AI创新带的视觉识别系统专项概念：以「主视台」为视觉识别中枢（主视觉、Logo方向与品牌规范体系，匿名聚合服务），「导视廊」为导视标识示范段（导视、标识、符号系统与公开口径校核），「叙视厅」为叙事展示站（京张铁路历史文化与AI新文化叙事表达载体，人工复核兜底），五类AI+场景（视觉规范校验AI、导视内容生成AI、标识信息维护AI、叙事内容策展AI、公众视觉反馈AI）仅处理匿名聚合数据、关键决策人工复核、禁止过度监控（不进行个体识别式视觉追踪），交通慢行优先、连续慢行轴贯通三节点、蓝绿公共空间低干预融合布置，三项formal核心指标（site_area_sqm、green_ratio、public_space_ratio）以本包几何复算、面积以官方文本口径为底，分期实施+年度复算与公示计划。全部为概念建议、参考方案，不给出容积率、建筑高度、具体拆改留或工程实施结论，不编造数据，基于 provisional 边界，官方数据发布后复算。</p>
+
+</section>
+<blockquote><p>编制定位：本方案为视觉识别系统专项概念方案章节草案，属概念建议层面；不给出容积率、建筑高度、拆改留或工程实施结论，不编造官方数据。主名称「视觉识别智环」，英文名称 VIS·JZ，命名体系与全称以正式评选与官方文本口径为准。</p></blockquote>
+<h2>设计依据与资料清单</h2>
+<p>资料清单所列公开史料、规划报道与通则规范等均为概念工作依据清单，并非本包已获取的数据；本包实际使用的全部数据见 sources.json，未获取项已在假设与缺失数据说明中如实标注。</p>
+<p>本节所列均为引用清单而非已获取数据：征集公告与任务书（总体概念含主名称、英文名称与命名体系、视觉识别与Logo方向要求；导视、标识、符号系统与京张铁路历史文化、中关村创新文化与AI新文化叙事融合表达要求）；京张铁路遗址公园沿线「留改拆并举、优先保留遗址公园肌理与铁路历史遗存」公开口径；中关村创新文化公开材料；GB/T 10001类公共信息图形符号、GB/T 20501类导向系统相关公开规范；国内外城市视觉识别公开案例。清单仅作依据索引，待资料核验后补全书目。</p>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509" title="来源：DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509">来源</sup>、<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-AGENT-TASKBOOK-20260518" title="来源：DATA-SRC-AGENT-TASKBOOK-20260518">来源</sup>（组织方公告与任务书为文本口径依据）。</p></blockquote>
+<h2>三层范围工作框架</h2>
+<p>三层成果逐级传导：统筹研究输出的视觉识别治理环境与沿线协同判断约束总体设计，总体设计校核的视觉节点布局、导视骨架与时序生长落实到节点详设；每层均保留与任务书对应章节的机器可读证据锚点，便于评审对照。</p>
+<p>采用「统筹研究—总体设计—重点区域」三层递进框架：统筹研究层开展产业与未来城市研究，判断沿线主体的形象协同与传播协同关系；总体设计层以城市更新与控规深度开展视觉识别总概念与导视骨架设计；重点区域层聚焦原创节点的详细设计。各层范围边界均标注为 provisional（暂定），随资料深化与官方口径更新而调整，不构成承诺性边界。</p>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-AGENT-TASKBOOK-20260518" title="来源：DATA-SRC-AGENT-TASKBOOK-20260518">来源</sup>（三层范围划分依据任务书官方文本口径）。</p></blockquote>
+<h2>统筹研究范围产业与未来城市研究</h2>
+<p>产业与城市研究识别视觉识别系统的「适配」效应：以主视觉与导视网络把沿线高校、科创片区、轨道站点与住区的形象需求有序组织为可识别、可导视、可叙事的视觉单元，形成「视觉节点—科创片区—住区」三级联动结构；未来城市研究仅作方向性预判，不构成对用地与投资的承诺。 概念级判断：视觉识别系统应与沿线高校、科创片区、轨道站点及住区形成形象协同与传播协同——高校与科创片区贡献创新语义，轨道站点承担门户导视职能，住区提供日常使用场景；统一识别母题在不同场景作适度变体，保持可识别与可延展；传播上以公共空间为载体，与各主体既有宣传渠道衔接，形成分时、分层的内容协同。本节仅给出关系框架判断，不预设量化指标。</p>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARIES-20260605" title="来源：DATA-SRC-PROVISIONAL-BOUNDARIES-20260605">来源</sup>（边界为 provisional，研究范围仅作概念示意）。</p></blockquote>
+<h2>总体设计范围城市更新与控规深度城市设计</h2>
+<p>总体设计强调「以绿带为骨架的视觉识别环境」：依托京张铁路遗址公园绿带组织视觉节点、导视骨架与慢行系统，视觉设施可逆生长、街道可分时承载识别与节事需求；强调更新而非新建，优先利用存量空间植入视觉功能；对控规指标只做校核建议，不预设数值结论。 以京张铁路遗址公园绿带为骨架，构建「区域—节点—设施」三级视觉识别层级：区域级确立全线识别母题与色彩语义；节点级对应站点、园区入口与重点公共空间；设施级覆盖导视、坐凳、照明等城市家具。导视骨架与慢行系统一体化布置，标识信息沿慢行路径连续呈现。控规指标仅作校核建议，本专项不新增或更改规划指标结论。</p>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="总体设计总览（provisional 几何）"><figcaption>总体设计总览（provisional 几何）</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.png" alt="用地结构（概念）"><figcaption>用地结构（概念）</figcaption></figure>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING" title="来源：DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING">来源</sup>、<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARIES-20260605" title="来源：DATA-SRC-PROVISIONAL-BOUNDARIES-20260605">来源</sup>。</p></blockquote>
+<h2>重点区域详细设计</h2>
+<p>三节点的设施选址均为概念点位，须经现场踏勘、资料核验与主管部门评估及公众意见后重新落位；节点间的绿带动线与慢行通道构成完整视觉动线，详细平面与剖面以图册与 geometry 层表达。</p>
+<p>设三个原创节点，选址均为概念点位。其一「主视台」：视觉识别中枢，承担全线视觉母题的原型呈现与规范示范；其二「导视廊」：导视标识示范段，验证三级层级在真实慢行路径中的连续性与可读性；其三「叙视厅」：叙事展示站，以京张铁路历史与AI新文化叙事的展示为特色。三节点形成示范、验证与传播闭环，具体落位与规模留待后续论证。</p>
+<figure class="proposal-figure"><img src="../assets/figures/key-areas.png" alt="三节点索引与设计任务图"><figcaption>三节点索引与设计任务图</figcaption></figure>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="PACKAGE-GEOMETRY" title="空间数据：PACKAGE-GEOMETRY">空间数据</sup>（三节点示意多边形来自本包 geometry/key_areas.geojson）。</p></blockquote>
+<h2>AI 创新生态、人才画像与 AI+ 场景</h2>
+<p>视觉规范校验AI、导视内容生成AI、标识信息维护AI为主干场景，每处均配置人工复核兜底；叙事内容策展AI、公众视觉反馈AI为支撑场景；仅处理匿名聚合数据、关键决策人工复核双保险，不设过度监控（不进行个体识别式视觉追踪）；视觉识别管理为概念性机制建议，不替代法定管理职责。 五类用户画像：创业者、AI开发者、社区居民、学生、访客游客，信息需求与动线特征各异。五个AI+场景：视觉规范校验AI（辅助标识规范符合性校验）、导视内容生成AI、标识信息维护AI、叙事内容策展AI、公众视觉反馈AI（汇聚公众对导视体验的反馈）。相关数据全部匿名聚合并经人工复核，禁止过度监控，不进行个体识别式视觉追踪。</p>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES" title="来源：DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES">来源</sup>（AI 生成内容治理表述的参照依据）。</p></blockquote>
+<h2>用地、建筑规模与拆改留方案</h2>
+<p>拆改留坚持留改拆并举：以留为主保留遗址公园肌理与铁路历史遗存，存量建筑功能置换并预留视觉化改造方向（标识接口、展示窗口），拆除仅限经个案论证的局部疏通慢行零星建筑；视觉识别设施以轻介入、可逆、低占地为主，不新增大体量建筑；全部面积为概念口径，官方数据发布后复算。</p>
+<p>视觉识别设施坚持轻介入、可逆、低占地原则，以标识、装置、城市家具为主，不新增大体量建筑；与既有遗存构筑物结合时优先采用可逆连接方式。遵循留改拆并举概念：优先保留遗址公园肌理与铁路历史遗存，标识设施以「留中加、改中嵌、拆后补」方式布局。本方案不预设拆改留的具体数值与清单结论。</p>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311" title="来源：DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311">来源</sup>（用地分类名称参照现行国标口径）。</p></blockquote>
+<h2>交通、轨道、市政与公共服务设施</h2>
+<p>以交通慢行优先为核心组织交通概念机制：连续慢行轴贯通主视台、导视廊与叙视厅，导视与慢行系统一体化，衔接沿线高校、园区与轨道站点（接驳以步行与骑行为主），标识与导向设施沿慢行空间低干预布置；市政以集约共享为原则，标识照明等设施与建筑一体化概念、优先利用现状设施条件；公共服务配置多语导视、视觉展陈与研习空间，AI决策均设人工复核。</p>
+<p>慢行优先：以连续慢行轴贯通三节点，导视系统与慢行系统一体化，标识节点与路径端点对应；轨道站点接驳导视保持顺畅连续，与既有站内导视衔接预留余量；标识照明等设施与市政设施一体化设置，减少独立立杆；沿线设施兼顾无障碍与多语言信息。本节为概念原则，不预设工程数值与技术参数。</p>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES" title="来源：DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES">来源</sup>（市政与慢行设计表述的方法参照）。</p></blockquote>
+<h2>蓝绿空间、公共空间与城市风貌</h2>
+<p>构建「绿带为轴、节点公园为珠」的蓝绿公共空间体系：以遗址公园绿带为蓝绿骨架串联沿线小微绿地与开敞空间，标识与展示设施与公园融合布置、宜轻宜透宜可逆，不遮挡历史遗迹与绿带视线；指示与解说系统统一克制；风貌延续京张铁路工业记忆语汇并与创新有序的新氛围对话，整体风貌导控克制统一，避免符号堆砌与口号化包装。</p>
+<p>依托公园绿带形成连续蓝绿公共空间体系，标识与展示设施以低干预方式融入公园绿地，不遮挡历史遗迹视线廊道，不破坏遗址公园肌理；风貌整体克制统一，色彩、材质、字体与铁路历史语汇及AI新文化语汇协调，克制用色、适度留白。具体风貌参数留待详细设计阶段校核，本专项不先行取值。</p>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.png" alt="慢行与蓝绿空间分析图"><figcaption>慢行与蓝绿空间分析图</figcaption></figure>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES" title="来源：DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES">来源</sup>（蓝绿空间组织的方法参照）。</p></blockquote>
+<h2>更新项目清单、实施政策与分期计划</h2>
+<p>四类项目清单（视觉规范建立/导视网络扩展/叙事表达完善/年度更新上线）为概念清单，规模与投资估算均为建议性表述；政策建议（标识规范入库规程、实施导则、公众参与渠道）均须依法依规论证，不构成政府或运营方承诺。</p>
+<p>近期（1-3年）：视觉识别基础规范编制与样板段试验；中期（3-5年）：导视廊、叙视厅落地与全线导视骨架展开；远期（5-10年）：全域视觉识别体系建成并转入年度更新。标识规范成果入库管理，设置公众参与与意见反馈渠道，纳入日常维护闭环。分期计划为概念建议，不含任何暗示政府承诺的表述。</p>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-AGENT-TASKBOOK-20260518" title="来源：DATA-SRC-AGENT-TASKBOOK-20260518">来源</sup>（分期与实施条目对应任务书要求）。</p></blockquote>
+<h2>指标体系、面积复算与合规矩阵</h2>
+<p>视觉识别覆盖率、导视完整率、标识规范符合率、叙事内容更新率、公众反馈处理率五类概念指标体系进入 metrics.json；三项formal核心指标（site_area_sqm、green_ratio、public_space_ratio）以本包几何复算为准，面积复算以官方文本口径为底，官方数据到位后整体复算并标注复算版本。</p>
+<p>概念指标体系设五项：视觉识别覆盖率、导视完整率、标识规范符合率、叙事内容更新率、公众反馈处理率，均为概念口径。涉及面积、规模类的三项formal核心指标以本包几何复算为准，面积复算以官方文本口径为底数，不另行取值。合规矩阵对应强制性规范逐项核对，本专项不替代法定审查程序。</p>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="核心指标证据图"><figcaption>核心指标证据图</figcaption></figure>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="指标：green_ratio">指标</sup>、<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="指标：public_space_ratio">指标</sup>、<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PACKAGE-GEOMETRY" title="来源：PACKAGE-GEOMETRY">来源</sup>。</p></blockquote>
+<h2>风险、版权与合规说明</h2>
+<p>本方案为概念研究性设计，不构成行政审批依据，也不构成容积率、建筑高度、拆改留或工程可行性结论；风险已按商标与在先权利检索、标识与历史遗存风貌协调、导视信息准确性、AI生成内容与字体图片版权、公众接受度波动五维度如实登记于 assumptions.json 与缺失数据说明（应对原则：来源标注、人工复核、意见通道与法定程序）；引用公开资料均已标注来源并注明获取时间，图形、名称与文字为原创或公共领域素材，若与既有标识雷同属巧合；视觉表达不歪曲事实，未经授权不使用肖像商标字体图片论文图像等版权材料；正式实施前须完成多部门联审与公开评估。</p>
+<p>如实登记以下风险：标识名称与图形的商标及在先权利检索风险；标识与历史遗存风貌协调风险；导视信息准确性及其更新维护风险；AI生成内容、字体与图片的版权风险；公众接受度波动风险。上述风险以清单形式登记入档，采取人工复核、试运行评估与反馈修正等常规对策，不作确定性承诺。</p>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509" title="来源：DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509">来源</sup>（征集规则为权属与合规表述的依据）。</p></blockquote>
+<h2>参考资料</h2>
+<p>参考资料以政府正式发布版本为准，按公开/内部分类存档并标注获取时间：京张铁路历史与遗址公园公开材料（含詹天佑与京张铁路公开史料口径）、北京城市总体规划及分区规划公开口径、北京城市更新专项规划与实施意见及配套文件、公共信息图形符号与标识导视相关公开规范口径、国内外城市视觉识别与导视公开案例（伦敦交通局导视系统、纽约城市视觉识别、东京地铁导视、新加坡城市导视体系，以及北京、上海、深圳、杭州国内对标）、现场踏勘记录与自绘分析草图（本项目自行采集）；本包 sources.json 仅收录可查证条目，未虚构任何官方数据或链接。</p>
+<p>本清单为公开资料索引：征集公告与任务书；京张铁路遗址公园与京张铁路历史公开资料；中关村创新文化公开资料；GB/T 10001类、GB/T 20501类等公共信息图形符号与导向系统公开规范；伦敦交通局、纽约、东京地铁、新加坡等国际城市视觉识别公开案例；北京、上海、深圳、杭州等国内城市视觉识别与导视公开案例。详细书目与链接待资料核验后另行补全。</p>
+<blockquote><p><strong>证据锚点</strong>：<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509" title="来源：DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509">来源</sup>（本清单首条即组织方公开资料包）。</p></blockquote>
+<h2>附：国际案例与国内对标（公开案例引用）</h2>
+<p><strong>国际案例</strong></p>
+<ul>
+<li><strong>伦敦交通局（Transport for London）</strong>：以圆形标识（Roundel）为核心建立跨年代、跨媒介的统一视觉识别，导视与字体体系高度统一，历经百年仍具可扩展性；启示为单一母题加可延展规范的组织方式。</li>
+<li><strong>纽约市</strong>：以城市层级导视系统与公共空间标识实现多部门协作下的视觉一致性，重视信息层级与步行者体验，示范大城市多主体协调推进路径。</li>
+<li><strong>东京地铁</strong>：以线色识别与清晰信息层级著称，标识位置、尺寸均有细致规范，多语言与无障碍信息配置完善，示范高密度地下空间导视的秩序感。</li>
+<li><strong>新加坡</strong>：以全岛统一导视标识体系与多语言、无障碍规范见长，示范识别系统与市政设施的一体化治理。</li>
+</ul>
+<p><strong>国内对标</strong></p>
+<ul>
+<li><strong>北京</strong>：依托轨道网络、公共文化设施与大型活动持续推动城市导视与视觉识别更新，示范特大城市系统性推进与风貌协调经验。</li>
+<li><strong>上海</strong>：在城市公共空间导视与国际化多语言标识方面积累公开经验，示范高密度城区中导视设施与既有市政风貌的融合。</li>
+<li><strong>深圳</strong>：以公开征集与系统更新方式推进城市视觉识别建设，示范创新城市的形象迭代机制与公众参与。</li>
+<li><strong>杭州</strong>：以公共自行车、景区与滨水空间导视为代表形成较完整的城市标识使用经验，示范导视与慢行日常场景的深度融合。</li>
+</ul>
+</main>
+</body>
+</html>
