@@ -207,7 +207,20 @@ def decide(review: dict[str, Any], decision: dict[str, Any], threshold: float) -
         raise WorkerError("AI decision has no numeric weighted_score_100")
     if float(score) < threshold:
         return Decision("low-quality", float(score), f"score below {threshold:g}")
-    return Decision("accept", float(score), "threshold and all gates passed")
+    intake_blocks = []
+    if review.get("recommendation") != "formal-review-ready":
+        intake_blocks.append("recommendation")
+    if review.get("can_enter_formal_review") is not True:
+        intake_blocks.append("can_enter_formal_review")
+    if review.get("required_next_actions_zh") != []:
+        intake_blocks.append("required_next_actions_zh")
+    if intake_blocks:
+        return Decision(
+            "request-changes",
+            float(score),
+            f"intake blocked by review fields: {', '.join(intake_blocks)}",
+        )
+    return Decision("accept", float(score), "threshold, gates, and intake readiness passed")
 
 
 def pr_meta(repo: str, number: int, cwd: Path) -> dict[str, Any]:
@@ -317,7 +330,8 @@ def apply_review(
             raise WorkerError("PR became conflicting before merge")
         body = (
             f"{marker}\nMaintainer intake decision: Review Agent score {outcome.score:g}/100. "
-            "Mandatory rejection and all four local gates passed. Accepted for repository intake only; "
+            "Mandatory rejection, all four local gates, and review readiness passed. "
+            "Accepted for repository intake only; "
             "this is not gallery publication, award selection, implementation approval, or government endorsement."
         )
         run(["gh", "pr", "review", str(number), "--repo", repo, "--approve", "--body", body], cwd=cwd)
