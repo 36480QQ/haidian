@@ -107,7 +107,17 @@ The three key areas (PROV-KEY-001/002/003) receive directional detailed design o
 
 **Scenario Archive Station · Dazhongsi AI Industry Cluster (approx. 72.0 ha).** Positioned as an urban AI-native consumption district: the four-quadrant pedestrian connection around Dazhongsi station is the first public move (conceptual); business clusters around agents, smart terminals, and content consumption; intersection traffic organization and station integration require a formal transport study and are listed as pending. All spatial conclusions in the three areas remain directional.
 
+All three stations use an "enterable public edge + legible service state + human fallback" as their spatial baseline. The following are conceptual spatial rules only; they do not replace engineering, transport, or regulatory-plan studies.
+
+| Archive station | Spatial organization | Public edge | Human path after failure |
+|:---|:---|:---|:---|
+| Source · Zhongzhiyuan | A shaded test court and slow loop connect research, evaluation, and exchange spaces | Contribution Intake Desk on a walkable public edge | Staffed intake and paper archive cards; testing stops and moves to human investigation on exception |
+| Transform · AI Origin Community | A bookish courtyard and station-front slow stitch organize campus–park–neighborhood continuity | Honor Yearbook Node and Commit Stele face the everyday walking edge | Honors and corrections receive dual human review; on-site submission remains when terminals fail |
+| Scenario · Dazhongsi | A service street edge and four-way crossing join rail access, consumption, and community services at grade | Service Archive Panel is paired with a staffed counter | Network or judgement failure moves to paper notice, conventional service, and human flow management |
+
 ![Key-area index: positioning and design tasks of the three archive stations (provisional boundary)](assets/figures/key-areas.en.png)
+
+![Three archive stations: spatial rules for slow routes, public edges, and manual fallback (conceptual)](assets/figures/station-typology.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -205,6 +215,14 @@ Renewal projects follow "archive anchors + spine stitching + blue-green upgrade 
 The implementation mechanism uses "project library + annual action plan + dynamic adjustment" language (conceptual recommendation): it aligns with the Beijing Urban Renewal Ordinance's retain-renovate-demolish principle, survey-before-renewal, a two-tier project library with routine application and dynamic adjustment, and incentive tools such as building-scale incentives, a five-year transition period, and flexible land tenure [source:BEIJING-URBAN-RENEWAL-REG]; the involvement of the Haidian district-planner "1+1+N" system and block-survey mechanisms is proposed for implementation oversight [source:HAIDIAN-PLANNER-MECHANISM].
 
 Phasing as learning: rolling progression through "Archive Starter Zone → full-line skeleton → node deepening," with each phase's findings written into the archive (aligned with the High Line's four-phase, learn-while-building practice [source:HIGH-LINE-PHASING]) [depth:phasing_implementation] [data:geometry/phasing.geojson#PHASE-001].
+
+**Archive Starter Zone: start-control table (conceptual recommendation).** Before any field construction, data processing, or public service begins, a legally authorized professional or operating body must complete the respective review. This table defines proposed entry, stopping, and record-keeping rules only; it does not imply that any project is authorized.
+
+| Pilot | Proposed entry condition | Minimum operating setup | Human takeover and stop | Acceptance evidence to retain |
+|:---|:---|:---|:---|:---|
+| S01 Contribution Intake Desk | Site-use consent, privacy notice, and paper process ready | One staffed-intake role, paper archive cards, level access | Terminal failure moves to paper; disputed entries pause display for human review | Paper/digital flow rehearsal record; correction-closure record |
+| S02 Service Archive Panel | Data-minimization review and a community staffed counter available | Panel, static notice board, on-site correction entry | Network failure moves to static notice; misread feedback enters human review | Staffed-counter accessibility check; status-update and correction record |
+| S04 Honor Yearbook Node | Authorization rules, human-review procedure, and withdrawal mechanism defined | Readable yearbook display and on-site submission channel | Nomination dispute or withdrawal pauses display while retaining correction history | Human-review record; authorization, withdrawal, and correction records |
 
 **Long-term operations (agent.6 response)**: the annual "JZ Archive Open Season"—spring: Global Developer Archive Open Week; summer: Scenario Archive Testing Month; autumn: outcome roadshows and industry matchmaking; winter: Honor Yearbook publication and award ceremony. The developer community accumulates reputation through the Open-Source Commit Stele and contribution archiving; scenario access follows a four-step mechanism of "application–assessment–public notice–review"; the conversion pathway covers talent, enterprises, and developers. All activities, policies, and funding statements are conceptual recommendations, not confirmed government arrangements [source:AGENT-TASKBOOK].
 
