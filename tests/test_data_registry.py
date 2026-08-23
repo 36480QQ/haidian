@@ -186,6 +186,9 @@ class DataRegistryTests(unittest.TestCase):
             "https://exa mple.com/path",
             "https://\nexample.com/path",
             "https://example.com/\x00path",
+            "https://exa\u200bmple.com/path",
+            "https://exa\u202emple.com/path",
+            "https://exa\ud800mple.com/path",
             " https://example.com/path",
             "https://example.com/path ",
         ]

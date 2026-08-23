@@ -146,7 +146,7 @@ def is_iso_date(value: Any) -> bool:
 
 
 def is_http_url(value: str) -> bool:
-    if any(char.isspace() or unicodedata.category(char) == "Cc" for char in value):
+    if any(char.isspace() or unicodedata.category(char) in {"Cc", "Cf", "Cs"} for char in value):
         return False
     try:
         parsed = urllib.parse.urlsplit(value)
