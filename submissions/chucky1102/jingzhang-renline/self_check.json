@@ -64,13 +64,16 @@
         "submissions/chucky1102/jingzhang-renline/report/narrative.md",
         "submissions/chucky1102/jingzhang-renline/report/proposal.en.html",
         "submissions/chucky1102/jingzhang-renline/report/proposal.html",
+        "submissions/chucky1102/jingzhang-renline/risk.json",
         "submissions/chucky1102/jingzhang-renline/self_check.json",
         "submissions/chucky1102/jingzhang-renline/sources.json",
         "submissions/chucky1102/jingzhang-renline/standard_matrix.json",
         "submissions/chucky1102/jingzhang-renline/visual/assets/fixtures/invalid-geojson-ref-without-anchor.json",
+        "submissions/chucky1102/jingzhang-renline/visual/assets/fixtures/invalid-interop-level-overclaim.json",
         "submissions/chucky1102/jingzhang-renline/visual/assets/fixtures/invalid-null-takeover-without-status.json",
         "submissions/chucky1102/jingzhang-renline/visual/assets/fixtures/invalid-overclaimed-ascent.json",
         "submissions/chucky1102/jingzhang-renline/visual/assets/fixtures/invalid-yellow-without-gate.json",
+        "submissions/chucky1102/jingzhang-renline/visual/assets/fixtures/valid-card-with-interop.json",
         "submissions/chucky1102/jingzhang-renline/visual/assets/fixtures/valid-card.json",
         "submissions/chucky1102/jingzhang-renline/visual/assets/renline-explorer-fallback.png",
         "submissions/chucky1102/jingzhang-renline/visual/assets/renline-explorer.js",
@@ -84,7 +87,7 @@
       "ai_package_stages": {
         "submissions/chucky1102/jingzhang-renline": "formal"
       },
-      "total_bytes": 13844037,
+      "total_bytes": 15425052,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -165,7 +168,7 @@
           "source": 11,
           "standard": 6,
           "depth": 15,
-          "data": 26,
+          "data": 32,
           "metric": 24
         }
       }

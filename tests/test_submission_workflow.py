@@ -7,7 +7,9 @@ import subprocess
 import hashlib
 import io
 import re
+import struct
 import urllib.error
+import zlib
 from pathlib import Path
 from unittest.mock import MagicMock, call, patch
 
@@ -20,6 +22,8 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 from validate_submission import (  # noqa: E402
     ALL_REQUIRED_TASK_IDS,
     FALLBACK_REQUIRED_STANDARD_IDS,
+    MAX_SINGLE_FILE_BYTES,
+    MAX_VIDEO_BYTES,
     MODEL_FAMILY_VALUES,
     REQUIRED_SECTIONS,
     REQUIRED_SECTIONS_EN,
@@ -27,6 +31,8 @@ from validate_submission import (  # noqa: E402
     ValidationReport,
     is_empty_pdf,
     media_signature_is_valid,
+    png_integrity_issue,
+    png_integrity_result,
     validate_agent_disclosure,
     validate_compliance_matrix_file,
     validate_media_manifest_entries,
@@ -51,6 +57,25 @@ from github_pr_validation import (  # noqa: E402
     validation_paths_for,
 )
 from validate_local_submission import discover_submission_files  # noqa: E402
+
+
+class LandUseCodeRegistryTests(unittest.TestCase):
+    def test_wetland_and_commercial_service_codes_match_official_numeric_system(self) -> None:
+        registry = json.loads(
+            (REPO_ROOT / "brief/site-package/enums/land_use_codes.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        labels = {item["code"]: item["label_zh"] for item in registry["codes"]}
+
+        self.assertEqual("湿地", labels["05"])
+        self.assertEqual("商业服务业用地", labels["09"])
+        self.assertEqual(
+            {"0901", "0902", "0903", "0904"},
+            {code for code in labels if code.startswith("09") and len(code) == 4},
+        )
+        self.assertIn("自然资发〔2023〕234号", registry["note"])
+        self.assertIn("GB 50137-2011", registry["note"])
 
 
 class ComplianceMatrixNamespaceTests(unittest.TestCase):
@@ -723,27 +748,35 @@ class ManifestHydrationTests(unittest.TestCase):
             required,
         )
 
-    def test_download_content_accepts_ten_mib_file(self) -> None:
-        client = GitHubClient("token", "owner/repo")
-        with tempfile.TemporaryDirectory() as tmp:
-            destination = Path(tmp) / "artifact.pdf"
-            with patch(
-                "github_pr_validation.urllib.request.urlopen",
-                return_value=_Response(b"x" * MAX_DOWNLOAD_BYTES),
-            ):
-                client.download_content("owner/repo", "artifact.pdf", "sha", destination)
-            self.assertEqual(MAX_DOWNLOAD_BYTES, destination.stat().st_size)
+    def test_download_content_default_covers_validator_video_limit(self) -> None:
+        self.assertEqual(MAX_SINGLE_FILE_BYTES, MAX_DOWNLOAD_BYTES)
+        self.assertGreaterEqual(MAX_DOWNLOAD_BYTES, MAX_VIDEO_BYTES)
 
-    def test_download_content_rejects_file_over_ten_mib(self) -> None:
+    def test_download_content_accepts_file_at_explicit_boundary(self) -> None:
         client = GitHubClient("token", "owner/repo")
         with tempfile.TemporaryDirectory() as tmp:
             destination = Path(tmp) / "artifact.pdf"
             with patch(
                 "github_pr_validation.urllib.request.urlopen",
-                return_value=_Response(b"x" * (MAX_DOWNLOAD_BYTES + 1)),
+                return_value=_Response(b"1234"),
+            ):
+                client.download_content(
+                    "owner/repo", "artifact.pdf", "sha", destination, max_bytes=4
+                )
+            self.assertEqual(b"1234", destination.read_bytes())
+
+    def test_download_content_rejects_file_over_explicit_boundary(self) -> None:
+        client = GitHubClient("token", "owner/repo")
+        with tempfile.TemporaryDirectory() as tmp:
+            destination = Path(tmp) / "artifact.pdf"
+            with patch(
+                "github_pr_validation.urllib.request.urlopen",
+                return_value=_Response(b"12345"),
             ):
                 with self.assertRaisesRegex(RuntimeError, "file exceeds download cap"):
-                    client.download_content("owner/repo", "artifact.pdf", "sha", destination)
+                    client.download_content(
+                        "owner/repo", "artifact.pdf", "sha", destination, max_bytes=4
+                    )
             self.assertFalse(destination.exists())
 
     def test_accepts_only_safe_relative_manifest_paths(self) -> None:
@@ -1183,6 +1216,45 @@ REFERENCE_BLOCK = (
 REFERENCE_BLOCK += " " + " ".join(f"[depth:{item_id}]" for item_id in sorted(REQUIRED_DESIGN_DEPTH_IDS))
 
 
+def png_chunk(chunk_type: bytes, payload: bytes) -> bytes:
+    checksum = zlib.crc32(chunk_type)
+    checksum = zlib.crc32(payload, checksum) & 0xFFFFFFFF
+    return struct.pack(">I", len(payload)) + chunk_type + payload + struct.pack(">I", checksum)
+
+
+def valid_png_bytes() -> bytes:
+    ihdr = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 0)
+    return (
+        b"\x89PNG\r\n\x1a\n"
+        + png_chunk(b"IHDR", ihdr)
+        + png_chunk(b"IDAT", zlib.compress(b"\x00\x00\x00\x00\x00"))
+        + png_chunk(b"IEND", b"")
+    )
+
+
+def custom_png_bytes(
+    ihdr: bytes,
+    scanlines: bytes,
+    *,
+    before_idat: tuple[tuple[bytes, bytes], ...] = (),
+    split_idat: bool = False,
+) -> bytes:
+    compressed = zlib.compress(scanlines)
+    split = max(1, len(compressed) // 2)
+    idat_chunks = (
+        png_chunk(b"IDAT", compressed[:split]) + png_chunk(b"IDAT", compressed[split:])
+        if split_idat
+        else png_chunk(b"IDAT", compressed)
+    )
+    return (
+        b"\x89PNG\r\n\x1a\n"
+        + png_chunk(b"IHDR", ihdr)
+        + b"".join(png_chunk(kind, payload) for kind, payload in before_idat)
+        + idat_chunks
+        + png_chunk(b"IEND", b"")
+    )
+
+
 def english_primary(text: str) -> str:
     text = text.replace(
         'language: "zh"',
@@ -1389,6 +1461,119 @@ class SubmissionWorkflowTests(unittest.TestCase):
         path = root / rel
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(content)
+
+    def test_png_integrity_rejects_payload_damage_after_digest_refresh(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/design"
+            changed = self.write_minimal_ai_package(root, base)
+            image = root / base / "assets/figures/key-areas.png"
+            damaged = bytearray(image.read_bytes())
+            idat = damaged.index(b"IDAT")
+            damaged[idat + 5] ^= 0x01
+            image.write_bytes(damaged)
+
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for item in manifest["files"]:
+                if item.get("path") == "assets/figures/key-areas.png":
+                    item["sha256"] = hashlib.sha256(damaged).hexdigest()
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            report = validate_submission(root, "alice", changed)
+            self.assertIn(
+                "invalid PNG `assets/figures/key-areas.png`: IDAT chunk checksum is invalid",
+                "\n".join(report.errors),
+            )
+            self.assertIsNone(png_integrity_issue(root / base / "assets/figures/site-overview.png"))
+
+    def test_png_integrity_checks_decoder_structure_and_resource_bounds(self) -> None:
+        rgba = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 0)
+        indexed = struct.pack(">IIBBBBB", 1, 1, 1, 3, 0, 0, 0)
+        grayscale = struct.pack(">IIBBBBB", 1, 1, 16, 0, 0, 0, 0)
+        interlaced = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 1)
+        cases = {
+            "invalid-filter.png": (
+                custom_png_bytes(rgba, b"\x05\x00\x00\x00\x00"),
+                "invalid filter type 5",
+            ),
+            "missing-palette.png": (
+                custom_png_bytes(indexed, b"\x00\x00"),
+                "missing PLTE",
+            ),
+            "empty-palette.png": (
+                custom_png_bytes(indexed, b"\x00\x00", before_idat=((b"PLTE", b""),)),
+                "PLTE chunk has an invalid length",
+            ),
+            "grayscale-palette.png": (
+                custom_png_bytes(
+                    grayscale,
+                    b"\x00\x00\x00",
+                    before_idat=((b"PLTE", b"\x00\x00\x00"),),
+                ),
+                "PLTE is not allowed",
+            ),
+            "unknown-critical.png": (
+                custom_png_bytes(rgba, b"\x00\x00\x00\x00\x00", before_idat=((b"ABCD", b""),)),
+                "unknown critical chunk ABCD",
+            ),
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for name, (payload, expected) in cases.items():
+                path = root / name
+                path.write_bytes(payload)
+                with self.subTest(name=name):
+                    self.assertIn(expected, png_integrity_issue(path) or "")
+
+            for name, payload in {
+                "multi-idat.png": custom_png_bytes(
+                    rgba, b"\x00\x00\x00\x00\x00", split_idat=True
+                ),
+                "adam7.png": custom_png_bytes(interlaced, b"\x00\x00\x00\x00\x00"),
+                "grayscale16.png": custom_png_bytes(grayscale, b"\x00\x00\x00"),
+                "indexed.png": custom_png_bytes(
+                    indexed,
+                    b"\x00\x00",
+                    before_idat=((b"PLTE", b"\x00\x00\x00\xff\xff\xff"),),
+                ),
+            }.items():
+                path = root / name
+                path.write_bytes(payload)
+                with self.subTest(name=name):
+                    self.assertIsNone(png_integrity_issue(path))
+
+            bounded = root / "bounded.png"
+            bounded.write_bytes(valid_png_bytes())
+            issue, decoded = png_integrity_result(bounded, max_inflated_bytes=4)
+            self.assertIn("safe decoding limit", issue or "")
+            self.assertEqual(0, decoded)
+
+    def test_png_integrity_enforces_validation_wide_decode_budget(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/design"
+            changed = self.write_minimal_ai_package(root, base)
+            first = root / base / "assets/figures/site-overview.png"
+            rgba = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 0)
+            first.write_bytes(custom_png_bytes(rgba, b"\x05\x00\x00\x00\x00"))
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for item in manifest["files"]:
+                if item.get("path") == "assets/figures/site-overview.png":
+                    item["sha256"] = hashlib.sha256(first.read_bytes()).hexdigest()
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            )
+            with patch("validate_submission.MAX_TOTAL_PNG_INFLATED_BYTES", 9):
+                report = validate_submission(root, "alice", changed)
+            errors = "\n".join(report.errors)
+            self.assertIn("invalid filter type 5", errors)
+            self.assertIn("safe decoding limit", errors)
+            self.assertEqual(5, report.png_inflated_bytes)
 
     def write_minimal_ai_package(self, root: Path, base: str) -> list[str]:
         proposal = f"{base}/proposal.md"
@@ -1718,11 +1903,7 @@ class SubmissionWorkflowTests(unittest.TestCase):
 </main></body></html>""",
         )
         for figure in figure_assets:
-            self.write(
-                root,
-                f"{base}/{figure}",
-                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><title>Figure</title><rect width="10" height="10"/></svg>',
-            )
+            self.write_bytes(root, f"{base}/{figure}", valid_png_bytes())
         return [proposal] + [f"{base}/{item}" for item in required]
 
     def add_bilingual_v2_display(self, root: Path, base: str, changed: list[str]) -> None:
@@ -2199,6 +2380,35 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertIn("HTML report must not contain scripts", errors)
             self.assertIn("HTML report must not load remote resources", errors)
             self.assertIn("missing rendered figure reference `../assets/figures/land-use-structure.png`", errors)
+
+    def test_inline_string_remote_css_imports_fail_validation(self) -> None:
+        cases = (
+            (
+                "report/proposal.html",
+                "https://cdn.example.com/report.css",
+                "HTML report CSS must not import remote styles",
+            ),
+            (
+                "visual/index.html",
+                "//cdn.example.com/visual.css",
+                "visual HTML/CSS must not import remote styles",
+            ),
+        )
+        for rel_path, remote_url, expected in cases:
+            with self.subTest(rel_path=rel_path), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                base = "submissions/alice/ai-urban-loop"
+                changed = self.write_minimal_ai_package(root, base)
+                path = root / base / rel_path
+                html = path.read_text(encoding="utf-8").replace(
+                    "</head>", f'<style>@import "{remote_url}";</style></head>'
+                )
+                path.write_text(html, encoding="utf-8")
+
+                report = validate_submission(root, "alice", changed)
+
+                self.assertFalse(report.ok)
+                self.assertIn(expected, "\n".join(report.errors))
 
     def test_privacy_pattern_fails_validation(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -3126,6 +3336,24 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertIn("visual/index.en.html", "\n".join(report.errors))
             self.assertIn("iframe", "\n".join(report.errors))
 
+    def test_undeclared_svg_asset_receives_xml_safety_validation(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            asset = root / base / "visual" / "assets" / "nested" / "active.svg"
+            asset.parent.mkdir(parents=True)
+            asset.write_text(
+                '<svg xmlns="http://www.w3.org/2000/svg"><image href="https://example.com/a.png"/></svg>',
+                encoding="utf-8",
+            )
+            changed.append(f"{base}/visual/assets/nested/active.svg")
+            report = validate_submission(root, "alice", changed)
+            self.assertFalse(report.ok)
+            joined = "\n".join(report.errors)
+            self.assertIn("visual/assets/nested/active.svg", joined)
+            self.assertIn("external, data, or script URIs", joined)
+
     def test_stale_translation_manifest_hash_is_non_blocking(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -3628,6 +3856,36 @@ class SubmissionWorkflowTests(unittest.TestCase):
             )
             self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
             self.assertIn("Result: PASS", completed.stdout)
+
+    def test_local_submission_wrapper_accepts_only_verified_owner_alias(self) -> None:
+        base = "submissions/zymk8353/jingzhang-safe-return-line"
+        common = [
+            sys.executable,
+            str(REPO_ROOT / "scripts" / "validate_local_submission.py"),
+            base,
+            "--repo-root",
+            str(REPO_ROOT),
+            "--pr-author",
+            "zyaoii",
+            "--json",
+        ]
+        allowed = subprocess.run(
+            [*common, "--pr-author-id", "51290995"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(allowed.returncode, 0, allowed.stdout + allowed.stderr)
+        self.assertTrue(json.loads(allowed.stdout)["ok"])
+
+        denied = subprocess.run(
+            [*common, "--pr-author-id", "7"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertNotEqual(denied.returncode, 0)
+        self.assertFalse(json.loads(denied.stdout)["ok"])
 
     def test_local_submission_wrapper_can_enforce_forward_manifest_contract(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

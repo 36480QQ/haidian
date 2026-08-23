@@ -8,6 +8,14 @@
    "usage": "Project brief, enums, allowed design space, ranges, and schemas."
   },
   {
+   "id": "PUBLIC-BRIEF",
+   "path": "brief/public-brief.md",
+   "source_type": "user_provided_cleared",
+   "public_status": "public-draft",
+   "usage": "Public task-book draft for agents and participants: background, vision, the seven priority directions indexed by this proposal's official-task table, continued-participation expectations, proposal boundary, review dimensions, and multimodal-expression requirements.",
+   "not_usable_for": "The file states its own status as a public draft awaiting maintainer confirmation before formal release; it is not the official announcement text, not an approval conclusion, and not an authority for boundaries, statutory controls, or measured data."
+  },
+  {
    "id": "SOURCE-REGISTRY",
    "path": "data/source_registry.json",
    "source_type": "repository_public_registry",
@@ -431,9 +439,9 @@
    "publisher": "北京日报（批复机构：北京市规划和自然资源委员会）",
    "url": "https://baijiahao.baidu.com/s?id=1873235523070347358",
    "accessed_date": "2026-08-16",
-   "source_type": "official_media_report",
+   "source_type": "media_report",
    "usable_for_formal": "background_only",
-   "usage": "Registers the reported 2026-08-11 approval: nine blocks of about 1,668.2 ha bounded by Xinjiekou Outer St / Zhongguancun St / Chengfu Rd / Xizhimen Outer St; spatial structure of one belt, one axis, two centres (Dazhongsi, Wudaokou) and multiple nodes; green public space leading urban renewal; large-model, agent and embodied-intelligence industries; a fifteen-minute community service circle merging living and innovation circles. Structural reference only.",
+   "usage": "Registers the reported 2026-08-11 approval: nine blocks of about 1,668.2 ha bounded by Xinjiekou Outer St / Zhongguancun St / Chengfu Rd / Xizhimen Outer St; spatial structure of one belt, one axis, two centres (Dazhongsi, Wudaokou) and multiple nodes; green public space leading urban renewal; large-model, agent and embodied-intelligence industries; a fifteen-minute community service circle merging living and innovation circles. Structural reference only. Source tier: this is a newspaper account of the approval, not the approval itself — no gazette notice, approval document or statutory drawing has been obtained, so the entry is registered one tier below the official_public sources and is quoted in the text as a report, not as an official conclusion.",
    "not_usable_for": "The approved plan's full text and statutory drawings have not been publicly obtained by this package; no plot-level control value (FAR, height, density, green rate) may be inferred from this report, and this proposal derives none."
   },
   {
@@ -462,7 +470,7 @@
    "attribution": "© OpenStreetMap contributors",
    "license": "Open Database License (ODbL) 1.0",
    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
-   "usage": "Computing as-is fabric readings (walkable-network density, intersection density, block sizes, oversized-block share), contextual deviation readings, and the lateral-crossing evidence inventory. The compact snapshot is a derivative database distributed with this package under ODbL 1.0 with attribution; the raw Overpass response is not redistributed (its byte count and hash are registered in the snapshot metadata).",
+   "usage": "Computing as-is fabric readings (walkable-network density, intersection density, block sizes, oversized-block share), contextual deviation readings, and the lateral-crossing evidence inventory. The compact snapshot is a derivative database distributed with this package under ODbL 1.0 with attribution; the raw Overpass response is not redistributed (its byte count and hash are registered in the snapshot metadata). From package revision v7.7 the same snapshot also renders the road-and-rail basemap laid beneath four plates (site-overview, land-use-structure, mobility-bluegreen, dual-state-plan, zh and en) and the seven geometry verification sheets; those images are Produced Works carrying the ODbL attribution and licence on the sheet itself. The snapshot holds highway and railway elements only, so the basemap shows no buildings and no water, as the sheets state.",
    "not_usable_for": "Deriving, revising, validating, or replacing the project boundary or key-area geometry; official redlines; statutory planning controls; road or engineering alignments; heritage controls; ownership or parcel/building status; site-accessibility compliance conclusions. Deviation readings are contextual descriptions of concept geometry against community-mapped data and constitute no validation of the submitted geometry. Completeness caveats (sparse pedestrian detail, near-empty accessibility attributes) are stated in the snapshot and readings files.",
    "redistribution": "The compact snapshot (two JSON parts under visual/assets/osm-fabric/, field-level merge byte-exact) is the only OSM-derived database redistributed, under ODbL 1.0 share-alike with attribution; no raw response and no map tiles are redistributed.",
    "bbox_epsg4326": {

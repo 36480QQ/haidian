@@ -6,18 +6,49 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "For every civic problem, make the ordinary answer work first, then prove the AI answer: a permanent public baseline, removable AI enhancement and public evidence interface create a system that can adopt, revise or stop."
+summary: "Build the unbroken public route as an enterable, maintainable, closable and recoverable civic cross; the current implementation gate remains G0 NO-GO."
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterprise-service-copilot", "robot-delivery-low-speed"]
 ---
 
 # JING-ZHANG TWO ANSWERS / 京张双答
 
-> **Civic Adoption Receipt: for every civic problem, make the baseline work independently, then require AI to prove its increment in the same task, with the same people and in the same space.** This is one spatial plan, not two alternatives. Outcomes are limited to `adopt`, `revise` or `stop`, decided by a human scenario committee.
 
-V4 no longer gives 12 scenarios equal graphic weight. T2, S2 and S7 become three hero scenarios for human–machine safety, civic service and transit adoption; nine further scenes remain traceable replication items. Each hero has a 1:5000 city link, 1:2000 key-area plan, 1:500 detail, 1:200 section, operating window, staff positions, emergency/removal routes and a Civic Adoption Receipt awaiting field evidence.[data:visual/assets/two-answers.json] [data:visual/assets/spatial-atlas.json]
+> **Build a civic-adoption layer on the approved spatial structure.** Public information released in August 2026 identifies an approximately 1,668.2 ha block-plan context, a 9 km Jing-Zhang green belt and “**one belt, one axis, two centres and multiple nodes**”, with Dazhongsi as one of the two centres. Phase II supporting works are complete and form a fishbone slow-mobility network.[source:BEIJING-BLOCK-PLAN-APPROVED-20260812] [source:BEIJING-JZ-PHASE2-COMPLETE-20260714]
 
-![Overall Two Answers structure](assets/figures/site-overview.en.png)
+“One spine, three stations and two wings” is therefore not a competing statutory plan. It is a **selectable, stoppable and removable operating overlay** embedded in the Jing-Zhang green belt and aligned with Dazhongsi centre and the innovation axis. The official 1,668.2 ha context and the 11.4 sq km provisional submission geometry are registered separately and never substituted.[data:visual/assets/spatial-atlas.json] [metric:official_planning_area_ha] [metric:submitted_provisional_area_sqm]
+
+The Dazhongsi Receipt Porch adapts between the existing park, a directional rail interface and an urban-renewal frontage. It remains **G0 NO-GO**: published context is not survey, title, permit, construction or field operation by this proposal. Government-reported public use is context, not participant observation.[data:visual/assets/e2-readiness.json]
+
+![Approved spatial structure and Jing-Zhang operating overlay](assets/figures/site-overview.en.png)
+
+![Continuous ground interface of approved context, public service and timed trial](assets/figures/land-use-structure.en.png)
+
+<!-- V11_DECISION_START -->
+## One Real Spatial Decision
+
+The Civic Adoption Compiler no longer treats an all-green matrix as excellence. The current proposal generates three spatial alternatives for the same S7 task, users and site, then audits each with identical geometry gates: **ALT-A Central Mixed Bay is rejected, ALT-B Split Bays returns for revision, and ALT-C One-sided Reversible Bay advances.** These reject_design / revise_design / advance_design labels describe design alternatives, not field adoption; only a human committee may later issue adopt / revise / stop.[data:visual/assets/spatial-decision.json] [metric:spatial_alternative_count]
+
+ALT-A severs the public cross and conflicts with fire access, retirement and staffed E-stop reach, failing six hard gates. ALT-B preserves routes but fragments supervision and retirement, so it returns for revision.[metric:rejected_spatial_alternative_count] [metric:revised_spatial_alternative_count]
+
+ALT-C keeps the 372-metre concept public route unchanged in trial and concentrates a 2,496-square-metre trial plus a 3,840-square-metre reversible buffer on one side.[metric:alt_c_public_route_length_m] [metric:alt_c_trial_area_sqm] [metric:alt_c_reversible_buffer_area_sqm]
+
+ALT-C also limits the furthest E-stop-to-staff distance to a 24.3-metre prototype assumption and is the sole design to advance.[metric:alt_c_max_estop_staff_distance_m] [metric:advanced_spatial_alternative_count] [data:geometry/public_space.geojson#V11-ALT-C-TRIAL-1]
+
+The figures use a local equidistant approximation centred on the Dazhongsi prototype. They audit design geometry only; they do not establish surveyed conditions, transport performance, fire approval or safety performance. Any change in the official base, station entrance, ownership or professional constraints must rerun the audit, and drawings and prose must follow the calculation.[data:geometry/roads.geojson#V11-ALT-C-BASE-NS] [depth:three_key_area_detailed_design]
+<!-- V11_DECISION_END -->
+
+<!-- V12_MEASUREMENT_START -->
+## Measure after selection: three hero contracts and a twelve-scene directory
+
+The spatial decision answers why ALT-C is selected; measurement contracts answer how the city will know whether AI deserves to remain. All 12/12 contracts stay in structured data, while this review entrance shows only three transferable hero contracts.[data:visual/assets/two-answers.json] [metric:measurement_contract_count]
+
+- **T2 robot passage:** 100 same-route passages per ordinary and trial mode, stratified by wheelchair, visual impairment, walking and day/night; collision, bypass interruption or E-stop failure triggers an immediate stop.
+- **S2 international arrival:** 100 same-task requests per staffed and AI-assisted mode, stratified by language, assistance need and complexity; account-free entry, bilingual staff and review backstage remain open.
+- **S7 transit feeder:** record seven ordinary operating days first, then 100 timed trials only after eight permits and four independent posts close; a broken public route, absent takeover or degraded baseline is zero-tolerance.
+
+The status remains **12 contracts / 0 field results**. Missing samples cannot be imputed as success; non-safety thresholds are registered by the scene committee after a field baseline exists.[metric:field_verification_result_count]
+<!-- V12_MEASUREMENT_END -->
 
 ## Design Basis and Source List
 
@@ -25,29 +56,23 @@ Jing-Zhang Two Answers defines the Centennial Jing-Zhang AI Innovation Belt as a
 
 All boundaries, key areas, land-use interfaces, building envelopes and nodes are conceptual proposals under provisional geometry—not official boundaries, road redlines, ownership or statutory controls. Missing survey, utilities, fire, heritage, buildings, users and performance remain unknown. Generated images are concepts, never site evidence.[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]
 
+Culture and site context use official public sources only. Beijing's Jing-Zhang park interpretation and phase-one/two notices support the railway-memory, continuous-park and public-space background; the municipal Zhongguancun history supports a culture of experiment, transfer and sharing; Dazhongsi rail material supports directional context only. None proves exact exits, buildings, redlines or ownership.[source:JINGZHANG-PLAN-OFFICIAL] [source:JINGZHANG-PHASE1-OFFICIAL] [source:JINGZHANG-PHASE2-OFFICIAL] [source:ZHONGGUANCUN-HISTORY-OFFICIAL] [source:DAZHONGSI-LINE13-CONTEXT]
+
 ## Three-Level Scope Framework
 
 The 43.6 km² coordinated research context organises capability exchange; the roughly 11.4 km² provisional overall design area carries the public baseline; three provisional key areas totalling roughly 368.4 ha host full-scale prototypes. All share one protocol and evidence chain.[data:geometry/site_boundary.geojson#SITE-001]
 
 ## Coordinated Research Area: Industry and Future City Research
 
-The regional diagram exchanges problems, evidence and capabilities: Beiwei for founder and alumni service; Future Science City for application demand; Huairou for research facilities and instruments.[source:REGION-BEIWEI] [source:REGION-FUTURE-SCIENCE-CITY] [source:REGION-HUAIROU]
+Five exchange contracts replace generic regional arrows with fallible evidence exchange. Beiwei community supplies resident problems and accessibility baselines; Future Science City supplies research tasks and open-model capability; Huairou Science City supplies instruments and reproduction conditions; Beijing E-Town supplies manufacturing, device-safety and maintenance interfaces; the Jing-Jin-Ji interface carries cross-regional problems, compute and knowledge reuse. Each contract records problem input, capability, validation place, evidence product, four owner roles and a failure exit. Institutions are proposed roles, not partnership claims.[data:visual/assets/spatial-atlas.json]
 
-E-Town connects engineering, manufacturing and scenarios; Beijing–Tianjin–Hebei connects facilities, computing and industrial transfer. Every interface stays conceptual until accountable parties and agreements exist.[source:REGION-ETOWN] [source:REGION-CAPITAL-CIRCLE]
-
-Seven primary/official references transfer one mechanism each: long-term shared operations from one-north; renewal plus knowledge district from 22@; and evidence-led scenarios from Paris-Saclay.[source:CASE-ONE-NORTH] [source:CASE-BARCELONA] [source:CASE-PARIS-SACLAY]
-
-Brainport contributes shared labs, Helsinki a public AI register, and Woven City a controlled test course.[source:CASE-BRAINPORT] [source:CASE-HELSINKI] [source:CASE-WOVEN]
-
-Toronto Quayside is used only for binding public-interest and phase commitments. None proves a Beijing control condition.[source:CASE-QUAYSIDE]
-
-![Regional exchange and spatial structure](assets/figures/land-use-structure.en.png)
+Validation places are the Xiaoyuehe wing, Verification Ring, Translation Gate and Receipt Porch. Any failed permit, data right or ordinary baseline stops exchange and returns to ordinary service; both success and failure enter the public knowledge base.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-V4 grounds the protocol in public urban fabric and a four-scale drawing evidence chain. `visual/assets/context-open-map.json` freezes the 2026-08-13 OpenStreetMap snapshot for roads, rail, water, parks and available local building footprints. It is shown only as low-contrast context; every feature is `open_data_context / reference_only` and excluded from area, intensity, capacity and performance calculations. Drawings carry the attribution “Map data © OpenStreetMap contributors, ODbL”.
+The Civic Adoption Compiler grounds the protocol in three civic landmarks, four-season operation, a five-level evidence chain and a deterministic state machine. The OSM snapshot contains only one building feature in the Dazhongsi context, so roads, rail, water and parks remain directional reference while a visible “open-data gap” hatch identifies missing building context. Every proposed edge is a design assumption rather than an existing building or statutory plan.
 
-Each station moves from a 1:5000 city link to a 1:2000 key-area plan; its hero scenario then reaches a 1:500 detail and 1:200 section. Every scale remains conceptual and requires survey and official-base verification. Z01–Z07 define Zhongzhiyuan's complete bypass, enclosed loop, reproduction room, cabinet yard, safety buffer, emergency-stop sightline and removal route. A11–A16 define AI Origin's three step-free passages, staffed desk, bilingual arrival, workshop tables, closeable plug-in wall and review back office. D21–D26 define Dazhongsi's four-quadrant walking links, conventional forecourt, independent timed bay, evacuation surface, evidence square and restoration route. Suggested dimensions are prototype design decisions, not measured existing conditions; experience views convey atmosphere only.
+Each station moves from a 1:5000 city link to a 1:2000 plan; hero scenes add a 1:500 detail and 1:200 section, while S7 continues to a 1:50 assembly node and layered axonometric. Zhongzhiyuan retains its ring court and complete bypass; AI Origin retains its no-account porous hall; Dazhongsi becomes a public cross, southeast reversible trial bay, southwest evidence porch and two blue-green edges. Dimensions are prototype decisions, not measured conditions.
 
 The 43.6 km² research context organises capability exchange; the roughly 11.4 km² provisional design scope carries the public baseline; three provisional key areas totalling roughly 368.4 ha host full-scale prototypes. The Public Baseline Spine links the Zhongzhiyuan Capability Validation Station, AI Origin Public Translation Station and Dazhongsi Civic Adoption Station. The Zhongguancun Service Wing supplies legal, IP, evaluation, finance and international services; the Xiaoyuehe Scene Wing brings resident problems, climate resilience and everyday feedback.[data:geometry/site_boundary.geojson#SITE-001]
 
@@ -57,13 +82,31 @@ Six east–west stitches, `STITCH-01—06`, give each proof field two addressed 
 
 ## Core concept: three spatial components and the protocol
 
-Every location uses only three component classes: permanent public baseline; removable AI plug-in; public evidence interface. The AI layer is admitted only when the ordinary answer works independently, both paths serve the same task and users, accessibility/equity/reliability do not regress, data/energy/labour/lifecycle can be recorded, and a human owner, stop condition and restoration route exist.[metric:ordinary_baseline_coverage_count]
+Every location uses only three component classes: permanent public baseline; removable AI plug-in; public evidence interface. The AI layer is admitted only when the ordinary answer works independently, both paths serve the same task and users, accessibility/equity/reliability do not regress, data/energy/labour/lifecycle can be recorded, and a human owner, stop condition and restoration route exist.[metric:paired_scenario_count]
 
 The three classes resolve into nine stable component IDs: `B01` continuous step-free path, `B02` shade/seating/water, `B03` static signs and staffed service; `A01` low-speed robot bay, `A02` edge-compute cabinet, `A03` optional service terminal; `E01` state and metric board, `E02` human takeover and emergency stop, `E03` feedback, appeal and exit notice. The IDs recur in the atlas, station plans, scenario data and exhibit. Each also records spatial/interface demand, minimum public-route separation, power/data/staff/maintenance interfaces, open–trial–pause–retire states and its retirement destination.[data:visual/assets/spatial-atlas.json] [metric:spatial_component_type_count]
 
 The protocol is simultaneously a spatial concept, repeatable operating mechanism, governance system and scenario network. It can travel from test courts to public service, heritage, mobility and climate settings, but every location must pass its own local gate.
 
+The supporting proposition is “**Verification forms a ring, translation forms a gate, adoption forms a porch; rules compile first, the field proves later.**” To preserve traceability to merged versions, S7 keeps stable `V7-D-*` geometry IDs; the prefix is an object lineage, not the publication version. Baseline paths, tactile guidance, ramps, crossings, curbs, interchange, trial boundary, porch, staff, E-stops, fire, storage and removal still resolve through one WGS84 chain.[data:geometry/roads.geojson#V7-D-BASE-EW] [metric:key_area_count]
+
+Evidence progresses through `E0 public source → E1 concept design → E2 documented prototype ready → E3 controlled trial pending → E4 civic adoption pending`.[metric:evidence_ladder_level_count] S7 is `E2_documented_prototype_ready`; T2/S2 are `E1_concept_design`; `T0_synthetic_contract_verified` is a separate rule-consistency status, not a field level. E2 does not mean survey, permits, assembly or field baseline. Every publication shows `NOT FIELD-RUN`.[metric:measurement_contract_count] [metric:field_verification_result_count]
+
 ![Three-layer spatial section](assets/figures/section-prototype.en.png)
+
+### Civic Adoption Compiler: measurement contracts, spatial decision and E2 documentation
+
+One S7 model drives five review scales and a documented 16-item component kit.[data:visual/assets/spatial-atlas.json] [metric:s7_review_scale_count] [metric:s7_prototype_kit_item_count]
+
+E2 also registers eight permit gates, four procurement packages and five blank forms. It **does not mean** survey, permits, procurement, assembly or field operation have occurred.[metric:e2_permit_gate_count] [metric:e2_procurement_package_count] [metric:e2_printable_form_count]
+
+The compiler runs seven cases for each of `SCN-001—012`: ordinary baseline, missing permit, missing role, public-service regression, zero-tolerance event, human recovery and equipment retirement. It accepts only `OPEN→TRIAL`, `TRIAL→PAUSE`, `PAUSE→OPEN`, `PAUSE→RETIRE` and `RETIRE→OPEN`. Illegal jumps, incomplete permits/roles, interrupted public routes or field unknowns presented as known fail the build. The script actually generated and passed 84/84 cases as `synthetic_design_verification`; this is not field simulation or safety certification.[data:visual/assets/tabletop-results.json] [metric:synthetic_design_verification_case_count]
+
+The ordinary public cross and staffed service must be surveyed and logged for seven consecutive operating days first. The southeast trial bay may enter `TRIAL` only after site, title, fire, accessibility, temporary power, network, traffic-management and equipment-safety gates are closed and four independent posts are staffed. Collision, buffer intrusion, emergency-stop failure, interruption of a public route or failed human takeover triggers a zero-tolerance stop. The recovery clock runs from the stop command until staff complete the same task and both public routes reopen. Recovery time remains `unknown / not_field_run`.
+
+The three landmarks retain different spatial archetypes: the Verification Ring wraps a controlled inner ring with a complete public bypass; the Translation Gate carries three account-free paths past staffed service and professional review; the Receipt Porch combines a public cross, one-side trial bay and staffed evidence interface. All three experiential views are geometry-matched concept images, not evidence of existing conditions, dimensions or performance.
+
+![Plan–section–assembly comparison of the three architectural landmarks](assets/figures/key-areas.en.png)
 
 ## Overall design: renewal, mobility, blue-green and baseline
 
@@ -75,27 +118,32 @@ The typical section aligns a 3.0 m step-free walk, 2.5 m cycle lane, 1.8 m shade
 
 ## Detailed Design of Key Areas
 
-![Three key areas: plan, section and operation](assets/figures/key-areas.en.png)
+### Architectural family: Ring, Gate and Porch
 
-**Zhongzhiyuan Capability Validation Court** combines a controlled loop, complete bypass, staffed safety desk and removable cabinet bay for T1–T3. Its ring geometry separates machine tests from the continuous public route.[data:geometry/public_space.geojson#PUBLIC-001]
+The three landmarks share the dry-assembly **MAT-01–05** family and the grammar “public baseline / AI plug-in / evidence interface”, yet remain unmistakable in plan and section.[data:visual/assets/prototype-model.json]
 
-Hero scenario T2 places the B01 bypass, suggested 4.0 m A01 controlled lane, suggested 1.5 m safety buffers, E02 stop sightline, two staff positions and equipment-removal route in the same 1:500 detail and 1:200 section. These dimensions are unverified prototype proposals. Buffer intrusion, two consecutive near misses or E-stop failure are zero-tolerance stop events.[data:visual/assets/two-answers.json#SCN-002]
+- **Zhongzhiyuan Verification Ring (T2):** an all-day bypass surrounds the controlled test court. Observation arcade, safety desk, failure display and east equipment exit align across the 1:500 plan and 1:200 section. Closing the court leaves the public ring working.
+- **AI Origin Translation Gate (S2):** three account-free passages cross the staffed bilingual desk, waiting edge and review backstage; a rear service strip maintains the closable plug-in wall. Static guidance and staffed service survive the night closure.
+- **Dazhongsi Receipt Porch (S7):** the public cross, one-sided bay, staffed porch, blue-green edge and back-of-house form one architectural-ground system. Public, fire and removal routes do not occupy one another.
 
-![Zhongzhiyuan controlled test loop and public bypass](assets/figures/station-zhongzhiyuan.en.png)
+### Dazhongsi flagship: five scales
 
-**AI Origin Public Translation Hall** uses three step-free passages through an open forecourt, staffed desks, co-creation tables and a closeable plug-in wall for S1–S3. No-account entry and human review remain visible from every service point.[data:geometry/public_space.geojson#PUBLIC-002]
+**1:5000 / 1:2000** establish directional relations among rail, park, roads and four quadrants only. The public crop contains one building feature at Dazhongsi; missing fabric is labelled “adaptation interface / survey-pending band”, never invented.[data:visual/assets/context-open-map.json] [source:OPENSTREETMAP-CONTEXT-20260813]
 
-Hero scenario S2 overlays three barrier-free passages, a staffed bilingual arrival desk, closeable optional terminal, professional review back office and nearest human escalation route. With AI closed, paper maps, static signs, telephone booking and staffed reception still complete the same task.[data:visual/assets/two-answers.json#SCN-005]
+The **1:500 plan** draws kerbs, four ramps, two tactile routes, permeable paving, tree pits, rain gardens, waiting and shade, Receipt Porch, dual E-stops, control booth, equipment interfaces, fire route and independent removal line. A 2.4 m rear maintenance strip connects control, storage, maintenance and waste.[data:visual/assets/prototype-model.json]
 
-![AI Origin porous hall and three staffed services](assets/figures/station-ai-origin.en.png)
+Two **1:200 sections** cut public route—buffer—trial bay and Receipt Porch—public cross—blue-green edge, checking relative clear height, shade, sightline, drainage edge and human-machine separation. They are not construction drawings.[metric:architectural_section_count]
 
-**Dazhongsi Civic Adoption Field** sets conventional interchange and four-quadrant walking links ahead of a bounded, timed low-speed bay and public evidence square for S7–S9. The bay restores to ordinary accessible pick-up when the trial stops.[data:geometry/public_space.geojson#PUBLIC-003]
+The **1:50 / 1:20 details** record reversible connections: bolted frame on ballast, removable boundary outside the tactile route, replaceable evidence rail and temporary power, and a flush permeable kerb with rain-garden overflow. Structural sizes, fire rating, wind, drainage capacity and durability await professional calculation.[metric:architectural_detail_count]
 
-Hero scenario S7 brings four-quadrant walking, the conventional interchange forecourt, separate low-speed trial bay, evacuation surface, human takeover point and restoration line into one spatial judgement. The trial may never consume the only accessible route or conventional transport capacity.[data:visual/assets/two-answers.json#SCN-010]
+### Assembly, maintenance and four states
 
-![Dazhongsi four-quadrant interchange and timed test bay](assets/figures/station-dazhongsi.en.png)
+- **OPEN**: ordinary feeder, public cross, shaded waiting and staffed porch work independently.
+- **TRIAL**: after eight permits, four posts and seven baseline days close, only the one-sided bay opens.
+- **PAUSE**: dual E-stops isolate equipment; the safety lead takes over; the public route does not move.
+- **RETIRE**: plug-ins and boundary leave, lifted paving is relaid, equipment exits east and evidence panels remain for review.
 
-The three prototypes deliberately do not share one plan type: a controlled ring and bypass resolves human–machine safety; a porous hall makes staffed translation public; a four-quadrant forecourt keeps conventional mobility dominant. Each situates baseline, plug-in and evidence interface so they remain mutually visible without making ordinary service dependent on AI.[metric:station_spatial_prototype_count]
+The 90-day sequence maps survey, permanent public layer, baseline record, timed plug-in and removal review to drawn components. Any failed permit, post or ordinary service blocks the next stage. Quantities are reproducible; prices remain **pending_market_quote**.[data:visual/assets/e2-readiness.json]
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -132,19 +180,37 @@ Conventional rail and bus services remain primary. The Baseline Spine completes 
 
 The blue-green system retains mature trees, rail memory and continuous open space. Shade, rest, water, permeability and night safety form the ordinary answer. Graphite, green, amber and blue distinguish the three layers; AI hardware stays visually secondary and the public space remains complete after removal.[data:geometry/green_space.geojson#GREEN-001]
 
+### Three receipt landmarks, the evidence mile and international communication
+
+The evidence mile turns the published rail, gantry crane, narrow gauge, whistle and rail-garden resources into five component types. Each follows “heritage fact—static bilingual/tactile/phone-free interpretation—optional AI enhancement—public correction—staff-reviewed receipt”. AI may not rewrite unsourced history or invent exact resource locations.[data:visual/assets/spatial-atlas.json]
+
+Verification Ring, Translation Gate and Receipt Porch share heritage graphite, public green, AI amber and evidence blue, but not silhouettes. The honour interface records only task, evidence tier, decision, review date and contributor; it never becomes an unverified technology leaderboard.
+
 ### Industry, talent and future-city programme
 
 The operating loop is problem register → ordinary baseline → capability reproduction → controlled prototype → paired comparison → human adoption → annual review. Seven enduring roles are proposed: public problem owner, accessibility observer, model/data auditor, safety steward, night maintainer, multilingual service worker and scenario product manager. Rights, licensing, privacy and exit ownership are resolved before entry.[source:AGENT-TASKBOOK]
 
+## Global AI Innovation Programme and Long-Term Operation
+
+An “Ordinary Open Day” runs public routes, accessibility, ordinary feeder, shaded waiting, staffed service and static guidance first, then checks developer permits, independent posts and the ordinary baseline. Morning opens and records the baseline; midday checks admission only; afternoon publishes state, failure and staff intervention; closing stops plug-ins, restores space, reviews manually and archives. Any missing item holds OPEN and blocks TRIAL.[data:visual/assets/two-answers.json]
+
+Each Civic Adoption Year season produces one reusable knowledge asset: spring accessibility audit, summer capability reproduction record, autumn public-trial receipt set, and winter asset-and-exit review. Government-reported daily use is background, not public participation or field performance completed by this proposal.[source:BEIJING-JZ-PUBLIC-USE-20260730]
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
-Five work packages—the Baseline Spine, Validation Court, Translation Hall, Adoption Field and public evidence/committee—each name a conceptual lead operator, collaborators, permissions, S/M resource class, start gate, KPI establishment method, risks, stop condition, destination of assets and review owner. Actor names describe responsibility, not confirmed institutional participation. No investment value or public commitment is invented.[depth:renewal_project_list]
+Five work packages name conceptual operators, collaborators, permissions, start gates, risks, stop conditions and asset destinations. S7 adds 16 reproducible design quantities while unit prices, total price and procurement method remain pending formal quotation. Actor names do not imply confirmed participation.[depth:renewal_project_list] [metric:field_verification_result_count]
+
+T2, S2 and S7 share seven RACI roles. S7 locates them at the evidence porch, trial bay, buffer, E-stops, event ledger and storage/removal line. Permit prerequisites cover site, fire, accessibility, temporary power, network, traffic and equipment safety; any gap keeps the site in `OPEN`. The kit receives daily opening checks, pre-trial interlocks, monthly lighting checks, inventory and restoration acceptance.[data:visual/assets/two-answers.json]
 
 The near-term 0–6 month pilot establishes ordinary-service and accessibility baselines. Operators, collaborators and resident representatives then define measurable indicators, monitoring and evaluation before any AI pilot advances.
+
+S7 also has a 90-day minimum pilot. Days 0–15 verify survey, ownership, exits, fire, utilities, accessibility and traffic. Days 16–30 build only the public routes, waiting, shade, staffed service and Receipt Porch. Days 31–45 establish the ordinary baseline over seven consecutive operating days. Days 46–75 permit a time-bounded trial only when permits and four minimum posts are in place. Days 76–90 run stop and removal drills, restore ordinary space, invite public review and sign `adopt / revise / stop`. Any failed gate pauses or returns the pilot.[data:visual/assets/two-answers.json] [metric:s7_pilot_phase_count]
 
 ### Governance and exit
 
 0–6 months: evidence, survey, ownership/control checks, accessibility audit, ordinary-service baseline, metric definitions and accountable staff. 6–12 months: three full-scale ordinary-answer prototypes only. 12–24 months: controlled removable AI enhancement and paired comparison. 24–36 months: adopt, revise or stop, with annual public review. Any stage may return to the ordinary answer.[data:geometry/phasing.geojson#PHASE-000]
+
+Each phase has entry, output and failure gates. Phase 0 advances only when source, permit route and accessibility audit are complete. Phase 1 outputs an independently usable ordinary service and E2 baseline; an incomplete baseline stays in Phase 1. Phase 2 begins only when zero-tolerance safety conditions, staffed RACI roles and measurable interfaces are all in place; any safety or rights event triggers `PAUSE`. Phase 3 accepts only reproducible evidence; insufficient evidence leads to `revise` or `stop`, never substitution by experience images or model self-scores.
 
 A human scenario committee combines operator, accessibility/community, domain, data and safety voices. Suppliers disclose interests but do not control the final vote. Severe safety or rights events trigger immediate stop by the accountable site lead.
 
@@ -152,7 +218,7 @@ A human scenario committee combines operator, accessibility/community, domain, d
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Known values are limited to reproducible document coverage: 12 paired scenarios, 3 hero scenarios, 9 catalogue items, 3 industry tests, 6 profiles, 12/12 ordinary baselines, 12/12 human-review assignments and 12/12 stop conditions. Completion, satisfaction, energy, cost, accessibility failure and incident metrics remain unknown and display “Field baseline pending”. The evidence chain is task → node → key-area plan → scene detail → section → two paths → minimum data → human owner → shared metric → gate/stop → Civic Adoption Receipt → adopt/revise/stop → restored site. Every receipt remains `not_field_run / pending_field_evidence`.[metric:paired_scenario_count]
+`Known design` is limited to reproducible geometry, quantities and document coverage: 12 paired scenarios, three landmarks, four seasonal cycles and 16 S7 kit items. `Synthetic verification` is 12×7=84 deterministic cases; 84/84 pass means only that admission, transition, stop, recovery and retirement contracts are internally consistent. `Field unknown` includes safety performance, completion, satisfaction, energy, cost, accessibility failure and recovery duration. Every receipt remains `not_field_run`.[metric:measurement_contract_count]  [metric:field_verification_result_count]
 
 ![Metrics, gates and evidence chain](assets/figures/metrics-evidence.en.png)
 

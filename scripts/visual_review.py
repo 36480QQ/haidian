@@ -10,6 +10,7 @@ Checks performed
 - ``visual/index.html`` exists and is valid UTF-8.
 - The page contains no remote-resource patterns (no ``<iframe>``, ``fetch()``,
   ``WebSocket``, remote ``<script src>``, remote CSS ``@import``, etc.).
+- SVG files under ``visual/assets`` are well-formed, passive, and self-contained.
 - The page contains the 14 required Chinese-language content markers
   (总览地图, 三层范围, 重点区域, …).
 - Metric ``data-metric`` / ``data-value`` attributes declare finite numeric
@@ -44,6 +45,7 @@ from pathlib import Path
 from typing import Any
 
 from metric_types import is_json_number
+from svg_asset_safety import visual_svg_asset_issues
 
 
 REQUIRED_TEXT_MARKERS = [
@@ -71,7 +73,7 @@ FORBIDDEN_PATTERNS = [
     (re.compile(r"\bWebSocket\b", re.I), "HTML must not open WebSocket connections"),
     (re.compile(r"\bEventSource\b", re.I), "HTML must not open EventSource connections"),
     (re.compile(r"\bsendBeacon\s*\(", re.I), "HTML must not send beacon requests"),
-    (re.compile(r"@import\s+url\s*\(\s*['\"]?(?:https?:)?//", re.I), "HTML/CSS must not import remote styles"),
+    (re.compile(r"@import\s+(?:url\s*\(\s*)?['\"]?(?:https?:)?//", re.I), "HTML/CSS must not import remote styles"),
     (re.compile(r"url\s*\(\s*['\"]?(?:https?:)?//", re.I), "HTML/CSS must not load remote assets"),
     (re.compile(r"<script\b[^>]*\bsrc\s*=\s*['\"]?(?:https?:)?//", re.I), "HTML must not load remote scripts"),
     (re.compile(r"<link\b[^>]*\bhref\s*=\s*['\"]?(?:https?:)?//", re.I), "HTML must not load remote linked resources"),
@@ -171,6 +173,8 @@ def review_visual(submission_dir: Path) -> VisualReport:
     for pattern, message in FORBIDDEN_PATTERNS:
         if pattern.search(text):
             report.add("VISUAL_REMOTE_OR_ACTIVE_CONTENT", "blocking", display_path, message)
+    for rel_path, message in visual_svg_asset_issues(submission_dir):
+        report.add("VISUAL_REMOTE_OR_ACTIVE_CONTENT", "blocking", rel_path, message)
 
     plain = re.sub(r"<[^>]+>", " ", text)
     plain = html.unescape(re.sub(r"\s+", " ", plain))

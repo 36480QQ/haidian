@@ -397,7 +397,8 @@
     "A-ENGINEERING-AND-HERITAGE-001",
     "A-BUILDINGS-AND-OWNERSHIP-001",
     "A-IMPLEMENTATION-001",
-    "A-CASE-TRANSFER-001"
+    "A-CASE-TRANSFER-001",
+    "A-11"
    ]
   },
   {
@@ -406,8 +407,8 @@
    "title_en": "Spatial dispute",
    "trigger_zh": "临时边界和概念中心线不能说明权属、道路红线、消防、防洪、文保或不同使用者的真实冲突。",
    "trigger_en": "The provisional boundary and conceptual centreline cannot establish ownership, road redlines, fire access, flood control, heritage protection, or real conflicts between different users.",
-   "pause_threshold_zh": "OP 节点、路线或构件与真实通行、消防、防洪、文保、权属或维护需求发生未解冲突。",
-   "pause_threshold_en": "An OP node, route, or component has an unresolved conflict with real passage, fire safety, flood control, heritage protection, ownership, or maintenance needs.",
+   "pause_threshold_zh": "OP 节点、路线或构件与真实通行、消防、防洪、文保、权属或维护需求发生未解冲突。另：凡把 visual/assets/alignment-reference.json 的廊道参考线读数用于判定主脊选线正确与否、用于与遗址公园边界对位、或用以顶替官方测绘成果者，即为越界使用，相关工作立即停止并退回读数登记口径。",
+   "pause_threshold_en": "An OP node, route, or component has an unresolved conflict with real passage, fire safety, flood control, heritage protection, ownership, or maintenance needs. Further: using the corridor reference-line readings in visual/assets/alignment-reference.json to judge whether the spine alignment is correct, to register anything against the heritage park boundary, or to stand in for official survey data is out-of-scope use; the work concerned stops immediately and returns to the registered caliber of the readings.",
    "owner_role_zh": "城市设计、交通与场地管理专业人员",
    "owner_role_en": "Urban design, transport, and site-management professionals",
    "current_control_zh": "只用公开背景解释关系；待官方资料和现场审计后，在可逆原型中测试通行、安静、停留和维护冲突。",
@@ -422,7 +423,8 @@
     "A-ENGINEERING-AND-HERITAGE-001",
     "A-BUILDINGS-AND-OWNERSHIP-001",
     "A-ACCESS-BASELINE-001",
-    "A-OPERATION-NODES-001"
+    "A-OPERATION-NODES-001",
+    "A-11"
    ]
   },
   {

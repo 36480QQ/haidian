@@ -1,6 +1,6 @@
 {
  "receipt_schema_id": "seb-change-receipt",
- "version": "0.2.0",
+ "version": "0.3.0",
  "status": "draft_concept_recommendation",
  "schema_ref": "visual/assets/seb-change-receipt-sample.json",
  "schema_ref_note_zh": "本文件不重复回执 schema 的定义，字段口径、verdict 枚举、不可改写规则与拒绝规则全部沿用上述文件中的 schema 节；两份文件的回执共用同一编号序列，本文件承载 CR-2026-08-12-003。",
@@ -163,6 +163,76 @@
    "posting": [
     "visual/assets/seb-change-receipt-op04.json",
     "proposal.md OP-04 章 / the OP-04 chapter of proposal.md"
+   ],
+   "status": "published"
+  },
+  {
+   "receipt_id": "CR-2026-08-18-008",
+   "issued_at": "2026-08-18",
+   "gate_round": "not_applicable",
+   "node_id": "OP-04",
+   "raised_by": {
+    "role_group": "维护方几何自查（专业评图口径：五条中心线自 v1.0 起全部为两点直线，共十个顶点，无任何走向依据）",
+    "role_group_en": "the maintainer's geometry self-audit (professional plan-review lens: since v1.0 all five centrelines were two-point straight lines, ten vertices in total, with no alignment evidence)",
+    "disclosure": "按包内署名，不记录个人身份信息 / per in-package attribution, no personal identifying data"
+   },
+   "opinion": {
+    "zh": "五条提交中心线全部是两点直线，总计十个顶点：线位既不避让铁路走廊与封闭大院，也不对应任何一条现实道路，长度读数因此只是两点间的直线距离。凡以该几何为输入的长度、行程、可达域与比值读数，都建立在一个未作任何走向判断的图形上；对手方案的差分只需数一下顶点数即可指出本包「没有做设计」。",
+    "en": "All five submitted centrelines were two-point straight lines, ten vertices in total: they avoided neither the rail corridor nor the gated compounds, corresponded to no real street, and their lengths were therefore nothing but point-to-point distances. Every length, trip, reachability and ratio reading taking that geometry as input rested on a figure that embodied no alignment judgement at all; a rival differential need only count the vertices to show that no design work had been done."
+   },
+   "finding": {
+    "zh": "逐条复核坐实为几何缺口而非读数缺陷：包内已随附 OSM 快照（osm-fabric-snapshot-part1/2.json，3,878 条 way、24,447 个顶点），足以为五条线位提供真实走向依据，此前从未被用于线位本身；两条南北线位在旧几何下恒定相距 273 米，是坐标构造的产物而非街道事实；OP-04 在旧几何下同时落在 ROAD-001 与 ROAD-004 上（两者到该点距离均为 0.0 米），其「物理接口线」是一次由遍历顺序决定的并列取舍，档案对此毫无登记。",
+    "en": "Each point checked and confirmed as a geometry gap rather than a reading defect: the package already shipped the OpenStreetMap snapshot (osm-fabric-snapshot-part1/2.json, 3,878 ways and 24,447 vertices), enough to give all five lines a real alignment basis, and it had never been used for the lines themselves; under the old geometry the two north-south lines stood a constant 273 m apart, an artefact of coordinate construction rather than a fact about streets; and OP-04 lay on ROAD-001 and ROAD-004 simultaneously (both 0.0 m away), so its physical interface line was a tie broken by iteration order, which the archive nowhere registered."
+   },
+   "verdict": "adopted",
+   "change_made": {
+    "summary_zh": "五条线位按包内 OSM 快照的真实走向加密：以原线位为基线按 40 米间距布站，每站作法线在 ±260 米内取与线位走向夹角不超过 45 度的 way 交点为候选，用 Viterbi 动态规划（节点代价贴合原线位、转移代价惩罚横向跳变与换街道）求全局最优走廊，再以 Douglas-Peucker 简化至 20—24 顶点；端点坐标一律不变，以免 constraints 节点挂接连锁。安静替代线在主脊求出后再解，对距主脊 130 米内的候选加惩罚，保证两线不塌陷为同一条路（最小间距 62 米）。顶点数 10→114，网络总长 20,140.6→22,858.6 米，AI 关闭态声明网络长 17,322.014→18,882.811 米。复演器几何支持范围由「仅两点线段」扩至「任意顶点数 LineString」，交点打断、接入挂接与备选构造改按折线弧长口径。档案 seb-op04-chain-data.json 递增至 v0.4.0，41+2 项链读数与九项 metrics 读数全量回填。",
+    "summary_en": "All five centrelines were densified onto the real alignments in the in-package OpenStreetMap snapshot: stations were laid every 40 m along the original line, each station's normal collected way intersections within +/-260 m whose bearing agreed with the line to within 45 degrees, a Viterbi dynamic program (node cost pulling toward the declared line, transition cost penalising lateral jumps and street changes) selected the globally optimal corridor, and Douglas-Peucker simplified it to 20-24 vertices. Endpoint coordinates were left untouched so that no constraints-node attachment moved for that reason. The quiet alternative was solved after the spine, with a penalty on candidates within 130 m of it so the two lines could not collapse into one route (minimum separation 62 m). Vertices went from 10 to 114, the network total from 20,140.6 m to 22,858.6 m, and the AI-off declared network from 17,322.014 m to 18,882.811 m. The replayer's geometry support was widened from two-point segments to LineStrings of any vertex count, with noding, attachment and alternative construction moved to polyline arc length. The archive seb-op04-chain-data.json was incremented to v0.4.0 and all 41+2 chain readings plus nine metrics readings were refilled."
+   },
+   "not_adopted_reason": {
+    "zh": "两项明确不做：①不为保住旧读数而把线位拉回节点——OP-04 的接口线由 ROAD-001 变为 ROAD-004 是加密后的真实最近邻结果（主脊 112 米、ROAD-004 31 米），据实登记并改写环节四结论，不做几何回调；②不改动 constraints.geojson 的节点坐标——端点不动已使挂接不因端点迁移而变，节点位置属另一议题，本轮不静默处置。旧读数不改写：CR-2026-08-12-003、CR-2026-08-16-006 与 v0.3.1 及此前档案条目按「已发布记录不改写」纪律原样保留。",
+    "en": "Two moves are expressly declined. First, the lines were not pulled back onto the nodes to preserve the old figures: OP-04's interface moving from ROAD-001 to ROAD-004 is the genuine nearest-neighbour outcome after densification (spine 112 m, ROAD-004 31 m), so it is registered as found and the stage-4 conclusion rewritten, with no geometric rollback. Second, the node coordinates in constraints.geojson were not touched: holding the endpoints fixed already prevents any attachment change caused by endpoint movement, and node placement is a separate question, not to be handled silently this round. Old figures are not rewritten: CR-2026-08-12-003, CR-2026-08-16-006 and the v0.3.1 and earlier archive entries stay as issued under the no-rewrite discipline."
+   },
+   "failed_sample_register": {
+    "samples": [
+     {
+      "sample_id": "FS-060",
+      "description_zh": "v1.0–v7.9 的 geometry/roads.geojson 五条中心线全部为两点直线（共十个顶点），线位不含任何走向依据，而包内随附的 OSM 快照始终可用作依据",
+      "description_en": "from v1.0 to v7.9 all five centrelines in geometry/roads.geojson were two-point straight lines (ten vertices in total) carrying no alignment evidence, while the OpenStreetMap snapshot shipped inside the package was available as a basis throughout",
+      "status": "fixed",
+      "disposition_zh": "按快照真实走向加密至 20—24 顶点并在要素属性内登记方法、来源 way、简化容差与前后长度",
+      "disposition_en": "densified to 20-24 vertices along the snapshot's real alignments, with the method, source ways, simplification tolerance and before/after lengths registered in each feature's properties"
+     },
+     {
+      "sample_id": "FS-061",
+      "description_zh": "OP-04 在旧几何下到 ROAD-001 与 ROAD-004 的距离并列为 0.0 米，其「物理接口线」实由遍历顺序决定，档案与回执均未登记该并列",
+      "description_en": "under the old geometry OP-04 was 0.0 m from both ROAD-001 and ROAD-004, so its physical interface line was decided by iteration order, a tie that neither the archive nor any receipt registered",
+      "status": "fixed",
+      "disposition_zh": "加密后并列消失（主脊 112 米、ROAD-004 31 米），接口线据实改判并在 v0.4.0 修订说明与环节四结论中明写",
+      "disposition_en": "the tie disappears after densification (spine 112 m, ROAD-004 31 m); the interface line is re-ruled as found and stated in the v0.4.0 revision note and the stage-4 conclusion"
+     },
+     {
+      "sample_id": "FS-062",
+      "description_zh": "链复演器把「仅支持两点线段」写成硬守卫，任何折线几何一律拒绝运行——守卫本身正确（拒绝优于静默截断），但使几何精化在工具层被封死",
+      "description_en": "the chain replayer hard-guarded on two-point segments and refused to run against any polyline — the guard itself was right (refusing beats silent truncation) but it sealed off geometric refinement at the tool layer",
+      "status": "fixed",
+      "disposition_zh": "几何支持范围扩至任意顶点数 LineString，守卫改为拒绝非 LineString 与不足两点的线；两点线段下读数与旧口径完全等价",
+      "disposition_en": "support widened to LineStrings of any vertex count, with the guard now refusing non-LineString geometry and lines of fewer than two points; on a two-point line the readings remain exactly those of the old convention"
+     }
+    ]
+   },
+   "affected_metrics": {
+    "summary_zh": "metrics.json 九项：ai_off_declared_network_length_m 17,322.014→18,882.811；reachability_audit_network_length_m 20,140.6→22,858.6；ai_on_reachability_union_sqm 482,266.876→438,298.947；ai_off_reachability_union_sqm 257,208.435→222,078.217；ai_off_reachability_difference_sqm 225,058.441→216,220.730；ai_off_reachability_shrink_ratio 0.466668→0.493318（人读 46.7%→49.3%）；op04_reachability_difference_sqm 50,920→44,356；ai_off_network_component_count 与 op04_ai_off_unreachable_same_area_node_count 复算后仍为 2。链读数 41+2 项：BASE_ON T1 243.514→306.210 米（接入段 55.505→69.038、起点接入段 0.011→30.984）、T2 470.780→371.193 米（接入段 188.776→237.868）；BASE_OFF 仍不可达且 OP-04 自身亦无挂接；ALT-A 工程量 281.975→333.150、ALT-B 281.982→400.023，比值 1→1.201；ALT-B 行程比 2.532→2.018 / 0.996→1.266，差值 +372.973→+311.619 / −2.095→+98.834；OP-08 ALT-B 接入距离比 4.389→3.528。",
+    "summary_en": "Nine metrics.json entries: ai_off_declared_network_length_m 17,322.014 to 18,882.811; reachability_audit_network_length_m 20,140.6 to 22,858.6; ai_on_reachability_union_sqm 482,266.876 to 438,298.947; ai_off_reachability_union_sqm 257,208.435 to 222,078.217; ai_off_reachability_difference_sqm 225,058.441 to 216,220.730; ai_off_reachability_shrink_ratio 0.466668 to 0.493318 (46.7% to 49.3% as read); op04_reachability_difference_sqm 50,920 to 44,356; ai_off_network_component_count and op04_ai_off_unreachable_same_area_node_count recompute to 2 as before. The 41+2 chain readings: BASE_ON T1 243.514 to 306.210 m (destination stub 55.505 to 69.038, origin stub 0.011 to 30.984), T2 470.780 to 371.193 m (destination stub 188.776 to 237.868); BASE_OFF still unreachable, and OP-04 itself now has no attachment either; ALT-A works 281.975 to 333.150 and ALT-B 281.982 to 400.023, ratio 1 to 1.201; ALT-B trip ratios 2.532 to 2.018 and 0.996 to 1.266, deltas +372.973 to +311.619 and -2.095 to +98.834; the OP-08 ALT-B approach ratio 4.389 to 3.528."
+   },
+   "verification": {
+    "zh": "在 visual/assets 下运行 node seb-op04-chain-run.js，对 seb-op04-chain-data.json v0.4.0 全量读数复演得 0 不符，前置校验器 seb-tabletop-run.js 退出码 0（40/40，其判据不读取 roads.geojson，读数零变化）；可达域四项汇总与十节点台账由 w82 复算脚本在 EPSG:4548 下重跑，口径常数 R_on=300 / R_off=150 / w=40 / 圆弧每象限 12 段一律未改；加密结果的方法、来源 way id、简化容差与最大偏差逐条登记在 roads.geojson 各要素的 densification 字段内，可独立复核。",
+    "en": "Run node seb-op04-chain-run.js inside visual/assets: every figure of seb-op04-chain-data.json v0.4.0 replays with zero disagreement, and the prerequisite seb-tabletop-run.js exits 0 (40/40; its criteria never read roads.geojson, so its figures do not move). The four reachability summaries and the ten-node ledger were rerun by the w82 recomputation scripts in EPSG:4548 with the convention constants R_on = 300, R_off = 150, w = 40 and twelve arc segments per quadrant all unchanged. The densification method, source way ids, simplification tolerance and maximum deviation are registered per feature in the densification field of roads.geojson and can be checked independently."
+   },
+   "posting": [
+    "visual/assets/seb-change-receipt-op04.json",
+    "geometry/roads.geojson 各要素 properties.densification / the densification block of each feature in geometry/roads.geojson",
+    "visual/assets/seb-op04-chain-data.json archive_revision_note"
    ],
    "status": "published"
   }

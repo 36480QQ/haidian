@@ -7,12 +7,22 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以詹天佑京张铁路标志性的人字形线路为总体概念:人字形折返=以迭代换爬升,暗合AI训练的反向传播;人字=以人为本的AI城区。方案提出一脊两轨三折返、东西七缝、K标十驿的空间结构,12张AI场景卡、6类用户画像、4处AI朝圣地标与人字线年度活动体系,全部空间内容为概念建议,基于provisional边界生成并待官方红线后整包重算。"
 tracks: ["robotics-autonomous-mobility", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.4"
+iteration: "v1.6"
 ---
 
 # 人字线 RENLINE:百年京张AI创新带城市设计方案
 
 > 1909年,詹天佑在关沟段用一个"人"字形线路解决了当时中国工业能力爬不上八达岭陡坡的难题——不硬冲,而是折返:退一步、换个方向、再爬升。这恰好是今天人工智能最基本的学习方式:迭代、回传、再逼近。百年之后,本方案把这套"折返智慧"转译为京张AI创新带的空间与制度原型,取名**人字线 RENLINE**。"人"字的两笔,一笔是百年京张的历史轨,一笔是都市AI生活的未来轨;两笔交汇之处,是以人为本的AI融合创新。
+
+## 一页判读:这条带子在地上变成什么
+
+人字线把「AI创新带」读成一个动词:像1909年的列车那样,以折返换爬升。它不在街道上陈列AI,而是把京张遗址公园读成一条公共主脊,让人字的两笔逐笔承接任务书三大定位——历史轨承接百年京张文化带,未来轨承接都市AI生活体验带,两笔交汇处即AI融合创新带 [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]。(一页判读的做法致谢 147228/jingzhang-open-pulse,独立编写。)
+
+主脊上落三处折返站,逐个承接任务书的三区角色。**众智园AI自主创新加速区(登顶站,约192.1公顷)**承接「AI全栈自主创新体系」与「AI治理全球话语权」,以全链条中试与验证设施为主;**北京AI原点社区(原点站,约104.3公顷)**承接「世界级AI创新生态」,把研发日常化为生活,沿街首层全部改为开发者友好界面;**大钟寺AI产业集聚区(钟声站,约72.0公顷)**承接「智能原生新业态」,并向觉生寺文物低强度退让 [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]。两翼在本方案中只登记接口角色,不编空间实质:中关村科技服务翼按任务书承担「要素全球化配置、中关村IP与资本赋能」的接入,小月河场景赋能翼承担「AI场景赋能与智能化AI活力城市」的接入 [source:AGENT-TASKBOOK]。北纬社区、未来科学城、怀柔科学城、北京经开区与京津冀同样只登记为任务书要求的协同接口,不代表已确认合作 [depth:three_level_scope_framework]。
+
+每一次试点都走同一条公共回路——**折返协议**:登记、限时、亮灯、复审、折返、留痕。没有普通服务等价路径、人工接管责任、停止条件与清权证据,就不进入下一阶段。三色状态与量化触发/恢复判据写在 `visual/assets/switchback-protocol.json`,并配机器可校验合同(schema+正负样例+零依赖校验器),任何人可一行复算 `node visual/assets/run-switchback-validation.js` [data:visual/assets/switchback-validation-receipt.json] [depth:phasing_implementation]。该协议已被 loml13、Dytchem、RichardGuan1 三份同行方案署名采用,采用登记在 Issue #1119。
+
+**证据边界先说在前面。**全部边界为组织方 provisional,官方红线、控规条件、现状建筑与权属、市政容量、文物法定范围五类缺口逐项登记,任一公布后对应图层与指标整包重算 [data:geometry/site_boundary.geojson] [depth:risk_missing_data]。协议校验通过只证明协议逻辑自洽,**不证明现场成效**;现场验证为零,爬升等级如实停在G0-G2。本方案不主张合作、供地、投资、审批或现场绩效已经成立 [source:OFFICIAL-ANNOUNCEMENT]。
 
 ## 评审导航:七维执行摘要
 
@@ -62,7 +72,7 @@ iteration: "v1.4"
 
 ## 统筹研究范围产业与未来城市研究
 
-**总体概念与命名体系(回应 agent.1)。**主名称:**人字线**;英文名:**RENLINE — The Jing-Zhang AI Switchback**。命名逻辑有三层:其一,"人字形"是京张铁路最具全球辨识度的工程符号,是"自主创新"在1909年的空间形态;其二,人字形折返"以迭代换爬升",与AI以反向传播逐步逼近的学习方式构成跨越百年的同构,故英文副题用 Switchback 对应 Backprop 的攀登隐喻;其三,"人"字本义直接锚定任务书"人本治理"共创原则——AI城区的一切以人为尺度。命名体系分三级:一级为"人字线"整带品牌;二级沿用官方片区名(众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业聚集区、中关村科技服务翼、小月河场景赋能翼),并赋予人字线站名转译——众智园="登顶站"、AI原点社区="原点站"、大钟寺="钟声站";三级为 **K标里程碑体系**:沿京张遗址公园绿脊设 K0-K9 十处里程碑节点,编号致敬铁路公里标,每处对应一个AI场景或荣誉展示点。Logo方向:"人"字抽象为两条交汇的轨道线,交点上方置一枚圆点(既是信号灯也是神经元),轨道线向两端渐变为数据流点阵;标准色为信号绿、铁锈红、计算蓝。视觉系统只使用开源许可(SIL OFL)字体或委托定制字体,不使用任何未清权字体、图片、商标与人物形象;主口号"百年折返,一线登顶 / Climb by Iteration"。以上均为品牌概念方向,供专业设计团队深化 [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]。
+**总体概念与命名体系(回应 agent.1)。**主名称:**人字线**;英文名:**RENLINE — The Jing-Zhang AI Switchback**。命名逻辑有三层:其一,"人字形"是京张铁路最具全球辨识度的工程符号,是"自主创新"在1909年的空间形态;其二,人字形折返"以迭代换爬升",与AI以反向传播逐步逼近的学习方式构成跨越百年的同构,故英文副题用 Switchback 对应 Backprop 的攀登隐喻;其三,"人"字本义直接锚定任务书"人本治理"共创原则——AI城区的一切以人为尺度。命名体系分三级:一级为"人字线"整带品牌;二级沿用官方片区名(众智园AI自主创新加速区、北京AI原点社区、大钟寺AI产业集聚区、中关村科技服务翼、小月河场景赋能翼),并赋予人字线站名转译——众智园="登顶站"、AI原点社区="原点站"、大钟寺="钟声站";三级为 **K标里程碑体系**:沿京张遗址公园绿脊设 K0-K9 十处里程碑节点,编号致敬铁路公里标,每处对应一个AI场景或荣誉展示点。Logo方向:"人"字抽象为两条交汇的轨道线,交点上方置一枚圆点(既是信号灯也是神经元),轨道线向两端渐变为数据流点阵;标准色为信号绿、铁锈红、计算蓝。视觉系统只使用开源许可(SIL OFL)字体或委托定制字体,不使用任何未清权字体、图片、商标与人物形象;主口号"百年折返,一线登顶 / Climb by Iteration"。以上均为品牌概念方向,供专业设计团队深化 [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]。
 
 ![人字线 RENLINE 原创Logo概念稿:人字双轨在信号灯节点交汇,轨道渐变为数据流](assets/figures/renline-logo.svg)
 
@@ -74,7 +84,7 @@ iteration: "v1.4"
 | --- | --- | --- |
 | 展厅封面 | `assets/media/cover.webp` | Pillow 代码绘制人字双轨与K5零公里节点;概念示意,非官方效果图 |
 | 人字线交互漫游 | `visual/assets/renline-explorer.js` | 内嵌中英展示页的 Canvas 区块,零外部依赖;点选或键盘浏览各驿承载内容与关联场景卡(含折返协议三色状态)、开关七缝与场景卡图层、中英切换;配静态兜底图、键盘可达、reduced-motion 与加载错误态,页面保持离线与确定性 |
-| 原创声景《钟声与爬升》 | `assets/media/renline-soundscape.m4a` | 100秒器乐,NumPy 加法合成钟形非谐泛音,零采样零人声;声音结构即方案结构(钟声→节奏爬升→**旋律折返再爬更高**→登顶合鸣),兼作场景卡C12「AI编钟共创」的概念自证 |
+| 原创声景《钟声与爬升》 | `assets/media/renline-soundscape.m4a` | 100秒立体声器乐,NumPy 加法合成钟形非谐泛音,零采样零人声;声音结构即方案结构(钟声→C宫节奏爬升→**折返退步转暗**→**转调至D宫再爬升**→登顶合鸣)。折返后的"更高"用调性升高而非音区拔高表达——折返换来的是新起点,不是更用力地硬冲;兼作场景卡C12「AI编钟共创」的概念自证 |
 | 60秒漫游短片 | `assets/media/renline-walkthrough.mp4` | 代码逐帧绘制712帧 + ffmpeg 合成,十驿逐站走览;中英双语字幕(vtt)、海报、分镜与权利说明齐备,无人声,配乐即上述声景 |
 
 两处授权边界须专门说明:声景**未使用任何真实馆藏钟声采样**——大钟寺古钟的采样须先取得博物馆授权,授权到手之前,合成音色是唯一诚实的做法;短片**刻意不使用系统 TTS 人声**,因为合成语音的再分发授权在各平台口径不一,宁可无人声。全部资产均为概念示意,不表述为官方渲染、测绘成果或现状记录。
@@ -120,15 +130,15 @@ iteration: "v1.4"
 
 **北京AI原点社区(原点站,约104.3公顷)。**定位:世界级AI创新生态的日常发生地——不是园区,是"生活着的模型社区"。空间结构:西侧清华东AI原点研发区(校城融合界面),东侧五道口智能消费区(青年夜间经济),原点广场(里程K5·人字交点)居中锚定 [data:geometry/public_space.geojson#PS-PLZ-3]。建筑更新:以既有楼宇更新+少量新建为主,重点是把沿街首层全部改为开发者友好界面(工位、路演、市集)。交通:五道口站接驳径与成府路缝合街打通东西。AI场景:智能体市集、开发者街面、夜间经济智能治理。实施风险:高校边界开放需校方共建机制,人流高峰治理需与轨道运营协同。
 
-**大钟寺AI产业聚集区(钟声站,约72.0公顷)。**定位:智能原生新业态的旗舰展场——AI时代"逛街"的原型。空间结构:西侧智能消费更新区(既有大体量商业设施的存量改造),东侧文化展示区围绕大钟寺(觉生寺)组织 [data:geometry/constraints.geojson#CON-HERITAGE-DZS]——觉生寺1996年11月经国务院公布为第四批全国重点文物保护单位,1985年起为大钟寺古钟博物馆 [source:DZS-HERITAGE-PUBLIC],钟声广场衔接两者。建筑更新:以改造为主,严控文物周边高度与体量,保护范围内只做低强度退让性设计(法定保护范围以文物部门公布为准)。交通:13号线大钟寺站TOD缝合街,北三环方向为南门户。AI场景:城市级AI体检、AI编钟共创。实施风险:文物保护专项评估前,一切邻近文物的改造只作概念表达 [data:geometry/land_use.geojson#LU-AE]。
+**大钟寺AI产业集聚区(钟声站,约72.0公顷)。**定位:智能原生新业态的旗舰展场——AI时代"逛街"的原型。空间结构:西侧智能消费更新区(既有大体量商业设施的存量改造),东侧文化展示区围绕大钟寺(觉生寺)组织 [data:geometry/constraints.geojson#CON-HERITAGE-DZS]——觉生寺1996年11月经国务院公布为第四批全国重点文物保护单位,1985年起为大钟寺古钟博物馆 [source:DZS-HERITAGE-PUBLIC],钟声广场衔接两者。建筑更新:以改造为主,严控文物周边高度与体量,保护范围内只做低强度退让性设计(法定保护范围以文物部门公布为准)。交通:13号线大钟寺站TOD缝合街,北三环方向为南门户。AI场景:城市级AI体检、AI编钟共创。实施风险:文物保护专项评估前,一切邻近文物的改造只作概念表达 [data:geometry/land_use.geojson#LU-AE]。
 
 ![三处重点区差异化任务:众智园新建为主做全栈验证,原点社区楼宇更新做开放生活社区,大钟寺存量改造并向文物低强度退让](assets/figures/key-areas.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-**六类用户画像([metric:persona_count],回应 agent.3)。**①AI研究员/博士生:需要十分钟生活圈内的实验设施与深夜食堂,痛点是通勤与居住成本;②创业者与独立开发者:需要低租金工位、算力券与路演曝光,痛点是与大厂和高校的连接效率;③产业工程师:需要测试场景与中试设施,痛点是审批周期;④社区原住民与长者:需要更新不驱逐、服务可及,痛点是数字鸿沟与施工扰动;⑤青少年与家庭访客:需要可触摸的AI科普与安全的公共空间;⑥国际访问者与会议客商:需要多语言无障碍与高品质会展住宿。每类画像映射到具体空间:①→原点研发区与人才公寓,②→开发者街面与市集,③→众智园测试场,④→北下关与皂君庙宜居带 [data:geometry/land_use.geojson#LU-BE],⑤→绿脊K标科普驿,⑥→登顶广场会展带。
+**六类用户画像([metric:persona_count],回应 agent.3 [source:AGENT-TASKBOOK])。**①AI研究员/博士生:需要十分钟生活圈内的实验设施与深夜食堂,痛点是通勤与居住成本;②创业者与独立开发者:需要低租金工位、算力券与路演曝光,痛点是与大厂和高校的连接效率;③产业工程师:需要测试场景与中试设施,痛点是审批周期;④社区原住民与长者:需要更新不驱逐、服务可及,痛点是数字鸿沟与施工扰动;⑤青少年与家庭访客:需要可触摸的AI科普与安全的公共空间;⑥国际访问者与会议客商:需要多语言无障碍与高品质会展住宿。每类画像映射到具体空间:①→原点研发区与人才公寓,②→开发者街面与市集,③→众智园测试场 [data:geometry/key_areas.geojson#PROV-KEY-002],④→北下关与皂君庙宜居带 [data:geometry/land_use.geojson#LU-BE],⑤→绿脊K标科普驿 [data:geometry/green_space.geojson],⑥→登顶广场会展带 [data:geometry/public_space.geojson]。
 
-**12张AI场景卡([metric:scenario_card_count]),其中3个为产业测试验证场景([metric:industry_test_scenario_count])。**每张卡按"位置/服务对象/运行数据/隐私边界/人工复核/运营主体"六要素组织,空间锚点均可在图层中定位:
+**12张AI场景卡([metric:scenario_card_count]),其中3个为产业测试验证场景([metric:industry_test_scenario_count])。**每张卡按"位置/服务对象/运行数据/隐私边界/人工复核/运营主体"六要素组织,空间锚点均可在图层中定位 [depth:three_key_area_detailed_design],隐私边界与人工复核逐卡按折返协议登记 [data:visual/assets/switchback-protocol.json]:
 
 | # | 场景卡 | 空间锚点 | 服务对象 | 隐私边界与人工复核 |
 | --- | --- | --- | --- | --- |
@@ -151,7 +161,9 @@ iteration: "v1.4"
 
 **折返的触发与恢复都要有判据。**测试类场景(T1-T3)发生一次需人工接管的安全级事件、或90天周期内投诉率/接管失败率超过阈值即触发转红;阈值不预填虚构数字,一期先测量基线再定值并公开。恢复条件同样明确:转红场景须连续两个复审期全部合格并加一期黄灯观察,方可回绿——折返之后凭什么回来,和为什么折返一样需要判据。方法边界一并声明:折返判定只判断"是否退回",不等于对场景有效性的判定。
 
-**协议是机器可读的。**`visual/assets/switchback-protocol.json`(schema 0.2.0)逐卡登记状态、验证门、接管时限、非智能替代路径、数据边界、人工复核、当前爬升等级与升门条件,并登记全带默认值与五类责任角色(单一实名运营方/安全员/数据管家/公共救济/独立复核),供机器聚合与后续运营主体直接取用。顶层带机器可读许可块(CC-BY-4.0,范围仅限协议规范本身,不含本包图文、几何与数据);状态枚举含预备态 green_candidate;接管时限的空值区分「不适用」与「未有基线」;场景锚点分型为 geojson_ref(9张卡落到包内几何要素,可空间校验)与 text_only(3张仅文字描述,不冒充几何证据)。
+**协议是机器可读的。**`visual/assets/switchback-protocol.json`(schema 0.3.0)逐卡登记状态、验证门、接管时限、非智能替代路径、数据边界、人工复核、当前爬升等级与升门条件,并登记全带默认值与五类责任角色(单一实名运营方/安全员/数据管家/公共救济/独立复核),供机器聚合与后续运营主体直接取用。顶层带机器可读许可块(CC-BY-4.0,范围仅限协议规范本身,不含本包图文、几何与数据);状态枚举含预备态 green_candidate;接管时限的空值区分「不适用」与「未有基线」;场景锚点分型为 geojson_ref(9张卡落到包内几何要素,可空间校验)与 text_only(3张仅文字描述,不冒充几何证据)。
+
+**协议与相邻标准的互操作已声明,并且可被机器拒绝。**0.3.0 新增 `interop` 块,登记与 lqqk7 发布的《服务等价基准 SEB》(CC-BY-SA-4.0,Issue #2549)的对照关系。此处纠正一处易错映射:外部对照把互转轴称作 `gate_id` 并假定它在卡片层,但本协议卡片层没有该字段,只有 `gate`(当前验证阶梯位置,承担等级排序,它才是互转轴)与 `ascent_grade`(**已达成**的证据等级)。二者共用 G0-G3 值域而语义不同,把后者当互转轴会让一张只有 G0 纸面证据的卡片认领 L3 开放等级——即 R4「纸面证据不得冒充现场证据」在互操作层的同型违例。新增规则 R5 即拒绝此类映射,配一正一负样例,`node visual/assets/run-switchback-validation.js` 可复算 [data:visual/assets/switchback-validation-receipt.json]。**本包未采用 SEB 任何字段,也未认领任何 SEB 开放等级**;对照表与 R5 是给同时采用两套标准的方案用的。
 
 **协议还是一份可校验的合同。**光有字段,写的人可以自说自话。因此协议配一份卡片合同 `visual/assets/switchback-protocol.schema.json`,把四处最容易被绕过的地方写成机器规则:
 
@@ -170,7 +182,7 @@ node visual/assets/run-switchback-validation.js
 
 当前结论:真协议12卡全过,4张非法卡分别被 R1/R2/R3/R4 按预期拒绝,1张合法卡通过。**必须写明的自我设限:校验通过只证明协议逻辑自洽,不证明现场成效。**R4 正是用来防止本方案自己把"设计目标值"读成"现场已验证"——本包现场验证为零,爬升等级如实停在 G0-G2。
 
-**机制来源与致谢。**上述机制受社区同行方案启发,均为机制思路的 RENLINE 化转译,未复用任何文本、图面或数据:公开服务时限致谢 to-real/jingzhang-on-time-city,三色状态信号致谢 sLingli/jingzhang-beacon,递进验证门致谢 leeight/jingzhang-calibration-yard,机器可读运营合约致谢 147228/jingzhang-open-pulse,"先测量再定阈值"致谢 phtphtpht/jingzhang-near-miss-line,判定量与恢复条件致谢 jiangmuran/jingzhang-leveling-line,可校验合同实践致谢 NearCai/jingzhang-home-work-relay。协议 schema 0.2.0 的四条兼容修法响应 Issue #1119 中 147228 与维护者的复核,以及 loml13/switchback-line 采用包的实测反馈。
+**机制来源与致谢。**上述机制受社区同行方案启发,均为机制思路的 RENLINE 化转译,未复用任何文本、图面或数据:公开服务时限致谢 to-real/jingzhang-on-time-city,三色状态信号致谢 sLingli/jingzhang-beacon,递进验证门致谢 leeight/jingzhang-calibration-yard,机器可读运营合约致谢 147228/jingzhang-open-pulse,"先测量再定阈值"致谢 phtphtpht/jingzhang-near-miss-line,判定量与恢复条件致谢 jiangmuran/jingzhang-leveling-line,可校验合同实践致谢 NearCai/jingzhang-home-work-relay。协议 schema 0.2.0 的四条兼容修法响应 Issue #1119 中 147228 与维护者的复核,以及 loml13/switchback-line 采用包的实测反馈;0.3.0 的互操作块与规则 R5 响应 lqqk7 于 2026-08-13 在同一 Issue 发布的接口对照(该对照按 CC-BY-4.0 署名引用本协议),并按其提议做了机器层的第二轮对照。
 
 生态图谱上,场景卡是"应用层",与研发轨的"模型层"、众智园的"验证层"、两翼的"要素层"构成完整创新生态,其空间浓度由 [metric:road_centerline_length_m] 的慢行与街道网络串联。
 
@@ -242,7 +254,7 @@ node visual/assets/run-switchback-validation.js
 
 ## 指标体系、面积复算与合规矩阵
 
-全部空间指标由 GeoJSON 在 EPSG:4548 下复算 [depth:metrics_recalculation],与 `metrics.json` 一致,HTML 展示值亦与之对齐。核心指标逐项列表如下(每项一个可校验标签,设计含义随行说明;按表格呈现以降低正文连排引用密度):
+全部空间指标由 GeoJSON 在 EPSG:4548 下复算 [depth:metrics_recalculation] [data:geometry/land_use.geojson] [data:geometry/green_space.geojson],与 `metrics.json` 一致,HTML 展示值亦与之对齐。核心指标逐项列表如下(每项一个可校验标签,设计含义随行说明;按表格呈现以降低正文连排引用密度):
 
 | 指标 | 复算值 | 设计含义 |
 | --- | --- | --- |
@@ -270,7 +282,7 @@ node visual/assets/run-switchback-validation.js
 | 缝合街 [metric:stitch_street_count] | 7 | 按割裂分级布点 |
 | 重点区 [metric:key_area_count] | 3 | 公告确定 |
 
-容积率为 unknown:官方控制指标未公布,不作测算结论。
+容积率为 unknown [depth:development_intensity_controls]:官方控制指标未公布,不作测算结论 [source:SITE-PACKAGE]。
 
 **证据状态四分法。**全文数字统一按四态口径标注(做法致谢 147228/jingzhang-open-pulse,独立转译):**known**=EPSG:4548可复算值(上表全部面积与网络指标,受provisional边界限制);**design_target**=设计目标值(折返协议全部时限、15分钟圈、展示界面等,非政府承诺);**unknown**=官方未公布且本方案不作主张(容积率、高度、市政容量);**blocked**=需权属/文保/工程专项前置方可测算(地块级拆改留、文物法定范围、桥隧可行性)。四态之间只能靠新数据移动,不能靠改写移动。
 

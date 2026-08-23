@@ -137,14 +137,14 @@
       "zh": {
         "title": "沿普通—验证—故障—恢复读一次连续旅程",
         "question": "失败发生后，谁停、谁接管、如何恢复？",
-        "answer": "物理停止优先于界面提示；人工接管、隔离和非 AI 绕行立即保住普通任务。只有恢复材料、居民确认、维护关闭和责任复核齐备，验证叠层才可重新候选。",
+        "answer": "物理停止优先于界面提示；人工接管、隔离和非 AI 绕行立即保住普通任务。只有恢复材料、居民确认、维护关闭和责任复核齐备，验证叠层才可重新候选；它仍只是下一道证据门的候选，不产生重启授权、批准、G1 或现实结果。",
         "alt": "失败侧线与回写图：停止、人工接管、隔离、普通任务继续、恢复验收和证据回写。",
         "limit": "合成回放 PASS 只证明文件合同可重放；现实事故、恢复时长、班次、场所验收与 GO 决定均为 0 或 unknown。"
       },
       "en": {
         "title": "Follow one ordinary–proof–failure–recovery journey",
         "question": "After failure, who stops, who takes over and what permits recovery?",
-        "answer": "Physical stop precedes interface messaging. Staffed takeover, isolation and a non-AI bypass preserve the ordinary task. Proof may become a candidate again only after restoration evidence, resident confirmation, maintenance closure and duty review exist.",
+        "answer": "Physical stop precedes interface messaging. Staffed takeover, isolation and a non-AI bypass preserve the ordinary task. Proof may become a candidate again only after restoration evidence, resident confirmation, maintenance closure and duty review exist; it remains only a candidate for a separate evidence-gate review and does not authorize restart, approval, G1, or a real-world result.",
         "alt": "Failure-siding and writeback diagram showing stop, staffed takeover, isolation, ordinary-task continuity, restoration acceptance and evidence writeback.",
         "limit": "A synthetic replay PASS proves only that file contracts can be replayed. Real incidents, recovery duration, rosters, site acceptance and GO decisions remain 0 or unknown."
       }

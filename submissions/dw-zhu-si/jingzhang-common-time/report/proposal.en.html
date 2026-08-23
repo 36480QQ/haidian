@@ -12,28 +12,44 @@
   --paper: #ffffff;
   --bg: #f4f7fa;
   --accent: #245b8f;
+  --navy: #17313c;
+  --orange: #e66a36;
 }
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
 }
 main {
-  max-width: 980px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 42px 24px 72px;
+  padding: 46px 44px 72px;
   background: var(--paper);
   min-height: 100vh;
   box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
 }
 .hero {
-  border-bottom: 3px solid var(--accent);
-  padding-bottom: 24px;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  gap: 38px;
+  color: #fff;
+  background: var(--navy);
+  border-left: 10px solid var(--orange);
+  border-radius: 0 18px 18px 0;
+  padding: 48px 48px 44px;
+  margin-bottom: 38px;
 }
+.hero h1 { font-size: clamp(48px, 6vw, 76px); line-height: .98; letter-spacing: -.045em; margin: 10px 0 24px; }
+.hero .summary { color: #dbe5e8; font-size: 19px; line-height: 1.55; max-width: 38em; }
+.hero-kicker { color: #f4a16f; font-weight: 800; letter-spacing: .08em; font-size: 13px; }
+.hero-claims { display: grid; align-content: center; gap: 12px; }
+.hero-claims article { padding: 18px 20px; background: rgba(255,255,255,.07); border-top: 1px solid rgba(255,255,255,.25); }
+.hero-claims b { display: block; color: #fff; font-size: 20px; margin-bottom: 4px; }
+.hero-claims span { color: #bfcfd4; font-size: 14px; line-height: 1.45; }
+.hero-boundary { color: #f3d6c6; font-size: 12px; line-height: 1.45; padding: 10px 2px 0; }
 h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
 h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
 h3 { font-size: 20px; margin: 26px 0 10px; }
@@ -52,7 +68,7 @@ code {
   border-radius: 4px;
 }
 .summary { color: var(--muted); font-size: 17px; }
-.translation-link a { color: var(--accent); font-weight: 700; }
+.translation-link a { color: #fff; font-weight: 750; }
 .proposal-table { margin: 20px 0 26px; overflow-x: auto; }
 .proposal-table table {
   border-collapse: collapse;
@@ -101,20 +117,31 @@ code {
   line-height: 1.35;
   vertical-align: super;
 }
+.implementation-brief { margin: -8px 0 40px; padding: 22px 24px; border: 1px solid var(--line); border-top: 5px solid var(--accent); background: #f8fafc; }
+.implementation-brief h2 { margin: 0 0 14px; border: 0; padding: 0; font-size: 20px; }
+.implementation-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.implementation-grid article { min-height: 108px; padding: 13px 14px; background: #fff; border: 1px solid var(--line); }
+.implementation-grid b { display: block; color: var(--accent); font-size: 13px; letter-spacing: .03em; }
+.implementation-grid span { display: block; margin-top: 5px; color: var(--muted); font-size: 13px; line-height: 1.45; }
+.implementation-note { margin: 13px 0 0; color: #8a4a2d; font-size: 13px; line-height: 1.5; }
 @media (max-width: 720px) {
   main { padding: 26px 16px 52px; }
+  .hero { grid-template-columns: 1fr; padding: 32px 24px; }
+  .hero h1 { font-size: 42px; }
   h1 { font-size: 26px; }
   h2 { font-size: 21px; }
+  .implementation-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
 <main>
 <section class="hero">
-<h1>COMMON TIME JING-ZHANG: A Civic AI Adoption Belt Governed by Evidence Gates</h1>
-<p class="summary">A three-scale urban design framework that links railway memory, public space, research translation and accountable AI adoption through VERIFY, LEARN and LIVE districts. All spatial locations remain provisional pending official data and professional verification.</p>
-<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+<div class="hero-copy"><div class="hero-kicker">01 / DR-01 DECISION REPLAY / COMMON TIME JING–ZHANG / V13</div><h1>One decision.<br>Two recalculations.<br>One deliberate failure.</h1><p class="summary">The tabletop fixture places eight non-compensable gates, three reversible options, two independent calculations and one mutation in a single evidence chain. It verifies a downgrade rule without pretending to be field performance.</p><p class="translation-link"><a href="proposal.html">阅读中文版本 →</a></p></div>
+<div class="hero-claims"><article><b>8 hard gates</b><span>Authority, fire/access, quiet, offline parity, privacy, human takeover, reversibility and exit reserve; one failure exits first.</span></article><article><b>2 independent calculations</b><span>Gate-product plus lexicographic ranking and row enumeration both select K1 without model self-scoring.</span></article><article><b>1 deliberate failure</b><span>Changing K1 offline parity from 1 to 0 must downgrade the result to K0; no reweighting or silent gate movement.</span></article><div class="hero-boundary">SIMULATED FOR LOGIC QA · REAL PROJECT REMAINS HOLD · NOT COMPLETED AUTHORITY, FIELDWORK, BUDGET OR IMPLEMENTATION</div></div>
 </section>
+<section class="implementation-brief" aria-label="six bounded AI-planning roles"><h2>COMMON TIME EVIDENCE OS | bounded input, human decision, explicit exit</h2><div class="implementation-grid"><article><b>01 SENSE</b><span>Registers public facts, anonymous counts and UNKNOWN only; never fills conjecture in as existing condition.</span></article><article><b>02 COMPARE</b><span>Places the non-AI baseline, group differences and null results in one record; never cherry-picks success.</span></article><article><b>03 MATCH</b><span>Offers shared, light and reversible spatial options only; never crosses title, heritage or lawful right of way.</span></article><article><b>04 SIMULATE</b><span>Drills time bands, takeover and conflict only; never moves a co-signed threshold silently.</span></article><article><b>05 EXPLAIN</b><span>Produces bilingual, paper/digital-equivalent public explanation with human correction and appeal.</span></article><article><b>06 AUDIT</b><span>At expiry, permits only renew, revise or retire; model self-scoring can never renew a trial.</span></article></div><p class="implementation-note">The first cycle is P-L01 AI Origin public learning court: 90 days, no new build, no personal profiling and human sign-off throughout. Without real authority and external evidence it remains HOLD.</p></section>
+<section class="implementation-brief" aria-label="DR-01 reproducible decision replay"><h2>DR-01 | hard gates first, failure made testable</h2><div class="implementation-grid"><article><b>K0 / ELIGIBLE</b><span><code>11111111</code>; paper material + staffed service; 2 channels, 4 removable parts, 0 fixed parts.</span></article><article><b>K1 / SELECT</b><span><code>11111111</code>; movable learning island + rights-cleared digital aid; both independent methods select K1.</span></article><article><b>K2 / EXIT</b><span><code>11100101</code>; offline parity, privacy and reversibility fail, so it is never ranked.</span></article></div><p class="implementation-note">The mutation changes K1 offline parity from 1 to 0 and must downgrade the result to K0. SIMULATED FOR LOGIC QA; simulated inputs are never written back as real passes.</p></section>
 <h1>COMMON TIME JING-ZHANG</h1>
 <blockquote><p>AI should not occupy more of the city by default. Before any technology enters public life it must identify whose problem it solves, who remains accountable, how it will be tested, and when it will stop.</p></blockquote>
 <p>COMMON TIME treats a possible mismatch between the operating hours of research, community, commerce and public services as a hypothesis to be measured, not as an established fact. The proposal begins with weekday/weekend and day/night baselines. It then applies four levels of intervention—shared use, light retrofit, reversible additions and only then necessary construction—to test whether existing assets can serve more people for longer periods. AI may assist retrieval, matching, translation, booking and review; human problem owners, property owners, operators, independent evaluators and affected communities retain approval, appeal and stop authority.</p>
@@ -195,7 +222,7 @@ code {
 <p>Three phases are evidence sequences rather than promised dates. Phase 1 uses LEARN for registration, team formation, translation and opening-time baselines. Phase 2 uses VERIFY for reproducibility, comparison, controlled testing and independent evaluation. Phase 3 uses LIVE for limited trial, adoption readiness, renewal, replication or retirement. <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson#PHASE-01" title="Spatial data: geometry/phasing.geojson#PHASE-01">Spatial data</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="phase_count" title="Metric: phase_count">Metric</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="phasing_implementation" title="Depth: phasing_implementation">Depth</sup> Each phase ends in <code>GO / HOLD / PIVOT / RETIRE</code>; it cannot advance until public value, privacy, safety, accessibility, noise, labour, budget and retirement funds are jointly closed.</p>
 <h2>Metrics, Area Recalculation, and Compliance Matrix</h2>
 <p>Metrics are divided into four types. Package geometry checks include provisional area, blue-green and public-space coverage, prototype demand zones and relationship-line length. Content counts include twelve commons, six personas, twelve adoption roles, four testbeds, four memory nodes, three key areas and three phases. Operating metrics—time utilisation, accessibility, detour, responsibility, adoption and cost—remain unknown until measured. Statutory and engineering metrics—FAR, height, density, setbacks, green-space requirements and capacity—remain unknown until official data and professional approval. <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="metrics_recalculation" title="Depth: metrics_recalculation">Depth</sup></p>
-<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.en.png" alt="Projects, gates, responsibility chain and metric status"><figcaption>Projects, gates, responsibility chain and metric status</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.en.png" alt="DR-01 three tabletop options, two independent recalculation paths and one mutation test"><figcaption>DR-01 decision replay: hard gates first, two matching results, failure downgrades; not field performance</figcaption></figure>
 <p><code>metrics.json</code> is the sole numerical source for the package. The relationship spine, cross-gardens, twelve commons, ten prototype demand zones and candidate lines are recalculated in EPSG:4548. Machine validation proves only internal completeness and consistency; it does not prove survey accuracy, statutory compliance, engineering feasibility, investment readiness or professional sign-off. The compliance matrix maps all public-call requirements and the six agent tasks. The standards and design-depth matrices link each obligation to prose, drawings, data or an explicit data gap. “Complete” means an evidence obligation is answered, not that absent local information has been acquired.</p>
 <h2>Risk, Copyright, and Compliance</h2>
 <p>The following remain unknown: official scope and key-area polygons; survey and coordinate basis; parcels, ownership and statutory use; existing building footprints, age, height and retain/retrofit/remove decisions; FAR, density, height and setbacks; road lines, sections, passenger demand, parking and station engineering; heritage-park phases; Qinghuayuan protection GIS; Juesheng Temple’s exact relationship; river control and flood data; utility, fire, energy, computing and public-service capacity; current projects; real demand; cost, investment, tenants and public funding. <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="Depth: risk_missing_data">Depth</sup></p>

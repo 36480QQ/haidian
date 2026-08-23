@@ -1,10 +1,10 @@
-# 轨迹织城 v2.4 叙事简报
+# 轨迹织城 v2.7 叙事简报
 
 ## 一句话说明
 
 RailWeave（轨迹织城）把百年京张理解为一条持续服务城市日常的公共经线：众智园、北京 AI 原点社区和大钟寺不是三个孤立项目，而是由公共空间、慢行联系、验证流程、人才服务和首用场景共同编织的三个结点。AI 作为可拆卸、可停止、可复核的纬线接入，不替代普通通行、人工服务、专业判断或法定程序。
 
-v2.4 以“区域定链—走廊织网—重点区落项目”重组首读逻辑，形成“一脊三廊三结六界面”的空间骨架和“开放问题—自主验证—首用转化—知识回流”的城市创新链。众智园对应可旁观的验证院，AI原点对应开源修补街，大钟寺对应首用四象限站厅；普通服务不断线，AI应用按需接入，创新成果持续沉淀。当前处于G0前置核验阶段：未授权、未运行、现场绩效为空；空间入选仍不产生现场准入。
+v2.7 以“区域定链—走廊织网—重点区落项目”重组首读逻辑，形成“一脊三廊三结六界面”的空间骨架和“开放问题—自主验证—首用转化—知识回流”的城市创新链。众智园对应可旁观的验证院，AI原点对应开源修补街，大钟寺对应首用四象限站厅；普通服务不断线，AI应用按需接入，创新成果持续沉淀。当前处于G0前置核验阶段：未授权、未运行、现场绩效为空；空间入选仍不产生现场准入。
 
 本成果是面向开放征集的概念性城市设计研究。其工作范围、重点片区索引、功能组件、项目清单、时间切片、成本控制带和责任角色均需在正式边界、权属、现状调查、专业条件、公众参与及依法履行的程序基础上确认。它不构成政府审定、规划许可、项目立项、预算批复、采购决定、合作安排、投资承诺、建设时序或工程可行性结论。
 
@@ -44,7 +44,7 @@ S06 同时要求六个成本包完整覆盖普通服务、参与支持、设备�
 
 ## 交接给后续专业与公众过程
 
-v2.4 的价值在于从“结构完整”进一步转向“单点可实施”：明确在哪一处候选界面、用什么相对时序、由谁签下一步、哪些成本可汇总、如何在第100日完整退出。后续深化应优先补充正式 GIS/CAD、权属与建筑调查、交通和无障碍现场核验、文保、水务、市政、消防、生态、运营、采购与全寿命成本资料；同时通过可访问的线上、线下、电话、纸质和人工渠道邀请受影响公众参与。
+v2.7 的价值在于从“结构完整”进一步转向“单点可实施”：明确在哪一处候选界面、用什么相对时序、由谁签下一步、哪些成本可汇总、如何在第100日完整退出。后续深化应优先补充正式 GIS/CAD、权属与建筑调查、交通和无障碍现场核验、文保、水务、市政、消防、生态、运营、采购与全寿命成本资料；同时通过可访问的线上、线下、电话、纸质和人工渠道邀请受影响公众参与。
 
 在上述条件未满足前，RailWeave 仍是一套可讨论、可复算、可失败关闭的研究性接口，而不是已经确定的城市项目。任何引用者均应连同来源、假设、临时几何、权利声明和验证边界一起阅读，不应只截取效果图、成本比例或合成 PASS。
 
@@ -54,7 +54,7 @@ v2.4 的价值在于从“结构完整”进一步转向“单点可实施”：
 
 RailWeave treats the Centennial Jing-Zhang corridor as a public warp that continues to support everyday urban life. Zhongzhiyuan, Beijing AI Origin Community, and Dazhongsi are not three isolated projects but three nodes woven together by public space, walking links, validation processes, talent services, and first-use scenarios. AI enters as a removable, stoppable, and reviewable weft; it does not replace ordinary access, staffed service, professional judgement, or statutory procedure.
 
-Version 2.4 restructures first reading around “set the regional chain, weave the corridor network, and land projects in key areas.” One spine, three corridors, three knots, and six reversible interfaces support a civic innovation chain from open problems through independent validation and first use to knowledge return. Zhongzhiyuan becomes a Visible Validation Court, AI Origin an Open Repair Street, and Dazhongsi a First-Use Concourse. Ordinary service remains, AI enters as needed, and knowledge continues to accumulate. The current stage is G0 pre-verification: not authorised, not run, and field performance null; spatial selection still confers no field admission.
+Version 2.6 restores the core urban-design proposition: public space and ordinary service form the enduring urban fabric, while AI is a removable technical thread. One warp, three wefts, three differentiated knots and six reversible interfaces support a civic innovation chain from open problems through independent validation and first use to knowledge return. AI assists evidence tiering, spatial-option generation, six-rule screening, cross-scale conflict checks and scenario replay; planners, the public and authorised bodies retain judgement. The submission includes a complete S06 100-day implementation-readiness package; lawful field activation remains subject to G0 site and authority checks.
 
 This is a conceptual urban-design study for the open call. Its working extent, key-area locators, functional components, project list, time slices, cost-control bands, and responsibility roles remain subject to confirmation through official boundaries, site rights, baseline surveys, professional conditions, public participation, and all legally required procedures. It is not a government determination, planning permission, project approval, approved budget, procurement decision, partnership arrangement, investment commitment, construction programme, or engineering-feasibility finding.
 
@@ -94,6 +94,6 @@ This result proves only that the current JSON contracts and runner return the ex
 
 ### Handover to professional and public processes
 
-The contribution of v2.4 is to move from structural completeness to single-site specificity: one candidate interface, one relative programme, one accountable signer per task, a controlled price-formation gate, and a complete day-100 exit. Further work should prioritise official GIS/CAD, site-rights and building surveys, field checks for transport and accessibility, and evidence for heritage, water, municipal systems, fire safety, ecology, operations, procurement, and whole-life cost. Affected publics should participate through accessible online, offline, telephone, paper, and staffed channels.
+The contribution of v2.7 is to move from structural completeness to single-site specificity: one candidate interface, one relative programme, one accountable signer per task, a controlled price-formation gate, and a complete day-100 exit. Further work should prioritise official GIS/CAD, site-rights and building surveys, field checks for transport and accessibility, and evidence for heritage, water, municipal systems, fire safety, ecology, operations, procurement, and whole-life cost. Affected publics should participate through accessible online, offline, telephone, paper, and staffed channels.
 
 Until those conditions are met, RailWeave remains a research interface that can be discussed, recalculated, and made to fail closed, not a determined urban project. Any reuse should preserve its sources, assumptions, provisional geometry, rights statement, and verification boundary rather than extracting only a rendering, cost percentage, or synthetic PASS.

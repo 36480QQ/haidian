@@ -1,5 +1,21 @@
 # 方案迭代记录
 
+## v4.1 - 2026-08-22（本地协议快照与可离线 crosswalk fixture）
+
+- **快照**：将 SEB v0.5.0 规范、Switchback v0.3.0 规范与 schema 按字节快照放入 `visual/assets/protocol_snapshots/`，并登记来源提交、SHA-256、许可与署名边界。
+- **fixture**：新增一个可通过的组件级 crosswalk 正例和一个必须拒绝的外部等级冒认负例；字段范围限定为 `ai_off_path`、`human_handoff`、`gate_id`、`operating_mode`、`responsible_role`。
+- **校验**：新增零依赖 `check-protocol-crosswalk.js`，验证快照完整性、source-of-record、登记状态、字段映射和安全边界。
+- **体积**：移除与 `metrics-evidence` 内容逐字节相同的 `implementation-operations` 重复图像，并将原有中英文引用切换到保留资产；不改变展示像素或图注语义，以满足仓库 40 MiB 提交包上限。
+- **边界**：仍为 `optional_crosswalk_concept_only`；不认领外部开放等级，不声明现场数据、性能结果、部署授权或官方背书，也不改变几何与既有 G0-G4 口径。
+
+## v4.0 - 2026-08-20（证据锚点与协议交叉映射）
+
+- **锚点**：移除不存在的 `constraints.geojson#CONSTRAINTS` 引用；空约束图层不推导法定控制。
+- **位置**：`PROV-KEY-003` 未与大钟寺站、道路或地块官方几何锚定；不改临时 polygon。
+- **协议**：SEB v0.5.0 `node_schema` 与 Switchback v0.3.0 `status/gate/review` 映射至 G0–G4、90 天试点和三处审计包，仅作可选对照。
+- **登记**：机器资产记录快照、哈希、许可、字段和三处 `concept_only`；5 分钟、1/7 个工作日与 90 天是设计目标。
+
+
 ## v2.0 - 2026-08-12
 
 - 将第一阶段的概念与证据板，深化为“总体母图—街区肌理—重点区平面/剖面—公共首层—运营门槛”的城市形态表达。

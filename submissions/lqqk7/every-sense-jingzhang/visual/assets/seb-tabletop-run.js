@@ -2,13 +2,13 @@
 /*
  * SEB 桌面配对推演校验器 / SEB tabletop pairing-run checker
  *
- * 方法学演示工具，不构成实测。本脚本只把服务等价基准（seb-spec.json）的四个组件
+ * 方法学演示工具，不构成实测。本脚本只把服务等价基准（seb-spec.json）的各个组件
  * 施加在文本样例（seb-tabletop-fixtures.json）上，不接触任何真实参与者、现场设备
  * 或运行中的系统，不写入 metrics.json，也不产生任何绩效指标数值。它能证明的只有
  * 一件事：判据是否可以被机器逐条执行。
  *
  * Methodology demonstration tool, not a field measurement. The script applies the
- * four components of the Service Equivalence Baseline (seb-spec.json) to text
+ * components of the Service Equivalence Baseline (seb-spec.json) to text
  * fixtures (seb-tabletop-fixtures.json). It touches no real participant, no site
  * equipment and no running system, writes nothing to metrics.json, and produces no
  * performance metric value. It demonstrates one thing only: whether the criteria
@@ -29,6 +29,12 @@
  * 动作清单读自第五组件 ai_authority_boundary，按 action_id 精确相等判定，不做子串；
  * 等价三维条件、阈值预注册、分列报告与最差组护栏、不可靠声明与样本充分性读自
  * scoring_definitions 的 equivalence_conditions、stratified_reporting 与两条规则条文。
+ * v0.5.0 起增第六组件双联交接台账的七类判据，同样一律读自基准：字段存在性读自各字段的
+ * required 与 required_when，取值判据读自 constraint_machine_rule（handover_distinct_roles /
+ * handover_dual_signature / handover_open_items_carry / handover_enum /
+ * handover_refusal_duty / handover_station_sequence / handover_flag_true），服务桌四位序
+ * 读自基准的 canonical_station_sequence，本工具不持有位序副本。该组件全部判定码以样例的
+ * handover_ledger 块为触发输入，未声明该块的样例结构性不触发。
  * 本工具另在启动时自检：凡本工具可能给出的判定码，必须全部登记在基准的
  * violation_code_registry 中，否则整次拒绝——「实现不得发明本表之外的判定码」由此
  * 成为可执行约束而不只是承诺。
@@ -43,18 +49,27 @@
  * The promotions are recorded in change receipts CR-2026-08-12-002 and CR-2026-08-15-005.
  *
  * 用法 / Usage: node seb-tabletop-run.js
- * 零依赖，仅使用 Node 内置模块（Node >= 18）；本工具版本 0.4.0。
- * Zero dependencies, Node built-ins only (Node >= 18); runner version 0.4.0.
+ * 零依赖，仅使用 Node 内置模块（Node >= 18）；本工具版本 0.5.0。
+ * Zero dependencies, Node built-ins only (Node >= 18); runner version 0.5.0.
  * 退出码 / Exit codes:
  *   0 — 全部样例的判定与 expected_verdict 一致 / every verdict matched its expectation
  *   1 — 至少一条样例的判定与期望不一致 / at least one verdict missed its expectation
  *   2 — 兼容失败，不作任何判定：基准版本过低、版本不匹配、词表不合格、
- *       声明的来源文件不可读、基准声明了本工具未支持的规则类型，或本工具可能
- *       给出的判定码未登记在基准的违例码登记表中
+ *       声明的来源文件不可读、基准声明了本工具未支持的规则类型、本工具可能
+ *       给出的判定码未登记在基准的违例码登记表中，或基准与样例文件不可读、
+ *       不是合法 JSON、缺必需组件、样例集为空或声明总数与实跑条目数不等，
+ *       以及运行中任何未捕获的异常
  *       compatibility failure, no verdict issued: baseline too low, version mismatch,
  *       ineligible lexicon, an unreadable declared source file, a rule type this tool
- *       does not support, or a verdict code this tool can emit that the baseline's
- *       violation-code registry does not carry
+ *       does not support, a verdict code this tool can emit that the baseline's
+ *       violation-code registry does not carry, an unreadable or malformed baseline or
+ *       fixtures file, a missing required component, an empty fixture set or a declared
+ *       item count that disagrees with what actually ran, and any uncaught exception
+ *   退出码 1 只承载「判定与期望不一致」一件事：解析失败与结构缺失自 v9.5 起一律
+ *   落在退出码 2，此前两者混用同一个码（审计缺陷 S2-1/S2-2/S3-5）。
+ *   Exit code 1 carries one meaning only — a verdict disagreeing with its expectation.
+ *   From v9.5 parse failures and structural gaps all land on exit code 2; previously the
+ *   two shared one code (audit findings S2-1, S2-2 and S3-5).
  */
 
 "use strict";
@@ -109,6 +124,16 @@ const REASON_TEXT = {
   GROUP_MEMBERSHIP_INFERRED: ["组归属由推断得来而非参与者自愿自报", "group membership was inferred rather than voluntarily self-reported"],
   SILENT_UNRELIABLE_OUTPUT: ["系统自知不可靠的输出未当场声明不可靠并指向人工通道", "an output the system knows to be unreliable was not declared unreliable on the spot with a pointer to the staffed channel"],
   SAMPLE_INSUFFICIENT_CLAIMED_FAIR: ["分组样本低于预注册最低值，结论只能记证据不足", "the group sample falls below the pre-registered minimum, so the conclusion may only read insufficient evidence"],
+  // v0.5.0 双联交接台账判据 / v0.5.0 two-part handover ledger criteria
+  HANDOVER_FIELD_MISSING: ["双联交接台账缺少必填字段，该次交接不得计入已完成交接", "the two-part handover ledger is missing a required field, and the handover may not count as completed"],
+  HANDOVER_ROLES_NOT_SEPARATED: ["交出方与接收方是同一角色，双联单的第二联没有第二个人核对", "the handing-over and receiving parties are one role, so nobody checks the second half of the slip"],
+  HANDOVER_SIGNATURE_MISSING: ["两方署名缺其一或全缺，口头移交不是交接", "one or both signatures are absent, and a spoken hand-off is not a handover"],
+  HANDOVER_OPEN_ITEMS_CLEARED: ["未决项在交接时被清空，与分母删除失败样本是同一条纪律", "open items were cleared at handover, which is the same discipline as dropping failed samples from a denominator"],
+  HANDOVER_RECEIPT_ACTION_INVALID: ["接收方处置不在接收、拒收、暂缓三项之内，交接停在没有责任人的状态", "the receiver's action is none of accept, refuse or hold, leaving the handover with nobody accountable"],
+  HANDOVER_REFUSAL_UNSTAFFED: ["拒收或暂缓未写明理由，或上一责任方未继续在岗", "a refusal or hold states no reason, or the previous responsible party was not kept on duty"],
+  HANDOVER_STATION_SEQUENCE_INVALID: ["服务桌四位序与规范位序不逐位相等，顺序是判据不是布置建议", "the four service-desk stations do not equal the canonical sequence position by position; the order is a criterion, not a layout suggestion"],
+  STAFFED_WINDOW_NOT_FIRST: ["人工窗口未先于一切 AI 构件设立，先上 AI 层等于有一段时间只剩 AI 一条路", "the staffed window was not established before every AI component, so for a period AI was the only route"],
+  EXIT_RECEIPT_STATION_ABSENT: ["退出回执位在最后一步之后不在场，使用者在最需要留痕的时刻无处留痕", "the exit-receipt station is not present after the last step, leaving the user nowhere to leave a trace when it matters most"],
 };
 
 // 本工具在任何基准下都可能给出的基础判定码（去掉冒号后缀的规范名）。v0.4.0 起的
@@ -118,10 +143,18 @@ const REASON_TEXT = {
 // suffix stripped). The v0.4.0 codes are not hard-coded here: they are derived from the
 // baseline's own rule objects (see emittableCodes), so pairing this tool with an older
 // snapshot is not refused merely because that registry does not yet carry them.
+// LEVEL_GATE_MISMATCH 与 DENOMINATOR_SAMPLE_DROPPED 不在此表：这两个码本工具在运行时
+// 读自基准的 level_definitions.gate_violation_code 与
+// scoring_definitions.denominator_integrity_violation_code，以字面量登记会让基准把它们
+// 改成未登记的值时自检仍报「全部登记」（见 emittableCodes 末段）。
+// LEVEL_GATE_MISMATCH and DENOMINATOR_SAMPLE_DROPPED are deliberately absent here: the tool
+// reads both from the baseline at run time, and registering them as literals would let a
+// baseline rename them to unregistered values while the self-check still reported "all
+// registered" (see the closing lines of emittableCodes).
 const BASE_EMITTED_CODES = [
   "NODE_FIELD_MISSING", "NODE_ENUM_INVALID", "NODE_CONSTRAINT_VIOLATION", "SOURCE_MISMATCH",
-  "SOURCE_FILE_UNREADABLE", "DENOMINATOR_SAMPLE_DROPPED", "METRIC_ID_UNKNOWN", "LEVEL_UNKNOWN",
-  "LEVEL_BINDING_MISSING", "LEVEL_GATE_MISMATCH", "STOP_NOT_ENFORCED", "RESUME_WITHOUT_EVIDENCE",
+  "SOURCE_FILE_UNREADABLE", "METRIC_ID_UNKNOWN", "LEVEL_UNKNOWN",
+  "LEVEL_BINDING_MISSING", "STOP_NOT_ENFORCED", "RESUME_WITHOUT_EVIDENCE",
   "RISK_ID_UNKNOWN", "ADOPTER_LEXICON_INVALID_TOKEN", "ADOPTER_LEXICON_EVIDENCE_MISSING",
   "ADOPTER_LEXICON_MALFORMED", "RULE_TYPE_UNSUPPORTED",
 ];
@@ -168,6 +201,16 @@ function machineRuleFields(schema) {
   return fields.filter((field) => field.constraint_machine_rule);
 }
 
+// 第六组件的带规则字段。组件在 v0.5.0 之前的快照中不存在，缺席时返回空数组，
+// 本工具与低版本快照配对时行为与 v0.4.0 完全一致。
+// The rule-carrying fields of the sixth component. It does not exist in snapshots before
+// v0.5.0; where absent this returns an empty list and the tool behaves exactly as v0.4.0
+// did when paired with an older snapshot.
+function handoverRuleFields(ledger) {
+  if (!ledger) return [];
+  return (ledger.required_fields || []).filter((field) => field.constraint_machine_rule);
+}
+
 // 本次运行下本工具可能给出的判定码：基础码加上由基准自身规则对象声明的码。
 // 判定码一律取自基准，本工具不发明任何一个。
 // The codes this tool can emit in this run: the base set plus whatever the baseline's own
@@ -177,6 +220,8 @@ function emittableCodes(spec) {
   const schema = component(spec, "node_schema");
   const scoring = component(spec, "scoring_definitions");
   const boundary = component(spec, "ai_authority_boundary");
+  const ledger = component(spec, "handover_ledger");
+  const levels = component(spec, "level_definitions");
   if (schema && (schema.lifecycle_fields || schema.vendor_independence_field)) {
     codes.add("LIFECYCLE_FIELD_MISSING");
   }
@@ -185,6 +230,11 @@ function emittableCodes(spec) {
     if (code) codes.add(code.split(":")[0]);
   }
   if (boundary && boundary.violation_code) codes.add(boundary.violation_code);
+  if (ledger && ledger.missing_field_violation_code) codes.add(ledger.missing_field_violation_code);
+  for (const field of handoverRuleFields(ledger)) {
+    const code = field.constraint_machine_rule.violation_code;
+    if (code) codes.add(code.split(":")[0]);
+  }
   const equivalence = scoring && scoring.equivalence_conditions;
   if (equivalence) {
     if (equivalence.violation_code) codes.add(equivalence.violation_code);
@@ -196,6 +246,19 @@ function emittableCodes(spec) {
   if (stratified) (stratified.violation_codes || []).forEach((code) => codes.add(code));
   if (scoring && scoring.reliability_disclosure_rule_zh) codes.add("SILENT_UNRELIABLE_OUTPUT");
   if (scoring && scoring.sample_sufficiency_rule_zh) codes.add("SAMPLE_INSUFFICIENT_CLAIMED_FAIR");
+  // 运行时从基准读取的两个码，与实际发出的值同源：等级闸门码由 checkLevel 直接发出
+  // （levels.gate_violation_code），分母完整性码由 checkDenominator 直接发出
+  // （scoring.denominator_integrity_violation_code，带类别后缀）。此前两者以字面量登记，
+  // 基准把 gate_violation_code 改成未登记的码时本自检毫无反应（审计缺陷 S1-2）。
+  // The two codes read from the baseline at run time, drawn from the same source as the
+  // values actually emitted: checkLevel emits levels.gate_violation_code and
+  // checkDenominator emits scoring.denominator_integrity_violation_code with a category
+  // suffix. They used to be registered as literals, so a baseline renaming
+  // gate_violation_code to an unregistered code drew no reaction (audit finding S1-2).
+  if (levels && levels.gate_violation_code) codes.add(String(levels.gate_violation_code).split(":")[0]);
+  if (scoring && scoring.denominator_integrity_violation_code) {
+    codes.add(String(scoring.denominator_integrity_violation_code).split(":")[0]);
+  }
   return codes;
 }
 
@@ -209,7 +272,17 @@ function emittableCodes(spec) {
 // the registry never registered).
 function registryProblems(spec) {
   const registry = spec.violation_code_registry && spec.violation_code_registry.codes;
-  if (!registry) return [];
+  // 元检查的输入缺席不是「无问题」：整张登记表不存在时本自检无从执行，必须报出来而不是
+  // 把自己关掉。此前这里返回空数组，删掉整张 violation_code_registry.codes 后输出与干净
+  // 运行逐字节相同且退出 0，而第二实现对同一输入以退出码 2 拒绝（审计缺陷 S1-1、S3-3）。
+  // An absent input to the meta-check is not a clean bill: with no registry at all the
+  // self-check cannot run and must say so instead of switching itself off. This used to
+  // return an empty list, so deleting the whole violation_code_registry.codes table left
+  // byte-identical output at exit 0 while the second implementation refused the same input
+  // at exit 2 (audit findings S1-1 and S3-3).
+  if (!registry) {
+    return ["violation_code_registry.codes 缺失，码集自检无从执行，不作判定 / violation_code_registry.codes is absent, the code self-check cannot run and no verdict is issued"];
+  }
   const known = new Set(Object.keys(registry));
   const problems = [];
   for (const code of emittableCodes(spec)) {
@@ -246,6 +319,95 @@ function resolvePath(root, dotted) {
   );
 }
 
+// 基准的结构性前提：本工具真正解引用的组件与字段路径必须存在。缺失属兼容问题，
+// 以退出码 2 拒绝整次运行，而不是在判定过程中裸抛 TypeError 落到退出码 1
+//（审计缺陷 S2-2：删掉 node_schema 组件曾在第 182 行崩溃并退出 1）。
+// Structural prerequisites of the baseline: every component and field path this tool
+// actually dereferences must exist. An absence is a compatibility matter refusing the run
+// at exit code 2, rather than a bare TypeError mid-verdict landing on exit code 1 (audit
+// finding S2-2: deleting the node_schema component used to crash and exit 1).
+const REQUIRED_SPEC_PATHS = [
+  "node_schema.required_fields",
+  "scoring_definitions.metrics",
+  "scoring_definitions.denominator_integrity_applies_to",
+  "scoring_definitions.denominator_integrity_required_categories",
+  "level_definitions.levels",
+  "level_definitions.level_binding_fields",
+  "decision_rules.risk_entries",
+];
+
+function structureProblems(spec) {
+  if (!spec || !Array.isArray(spec.components)) {
+    return ["SPEC_STRUCTURE_INVALID: 基准缺 components 数组，不作判定 / the baseline carries no components array; no verdict is issued"];
+  }
+  const problems = [];
+  for (const dotted of REQUIRED_SPEC_PATHS) {
+    const parts = String(dotted).split(".");
+    const comp = component(spec, parts[0]);
+    if (!comp) {
+      problems.push(`SPEC_STRUCTURE_INVALID: 基准缺必需组件 ${parts[0]}，不作判定 / required component ${parts[0]} is absent from the baseline; no verdict is issued`);
+      continue;
+    }
+    if (!isPresent(resolvePath(comp, parts.slice(1).join(".")))) {
+      problems.push(`SPEC_STRUCTURE_INVALID: 基准的 ${dotted} 缺失或为空，不作判定 / ${dotted} is absent or empty in the baseline; no verdict is issued`);
+    }
+  }
+  return [...new Set(problems)];
+}
+
+// 样例集的结构性前提与期望总数。空集不是「全部通过」，少一条不得与全部通过在输出上
+// 不可区分：条目总数与正反两侧计数由样例集自身声明（expected_fixture_count /
+// expected_accept_count / expected_reject_count），本工具读入后与实到条目逐项比对，
+// 不等即整次拒绝（审计缺陷 S1-7）。标识唯一性同时在此校验（S2-4），逐样例必备字段
+// 也在此核，避免在判定循环里裸崩（S2-2）。
+// Structural prerequisites of the fixture set, and its declared totals. An empty set is
+// not "everything passed", and one fixture fewer may not be indistinguishable from a full
+// pass: the item total and the two polarity counts are declared by the set itself
+// (expected_fixture_count / expected_accept_count / expected_reject_count), read here and
+// compared item by item against what actually arrived, with any disagreement refusing the
+// run (audit finding S1-7). Identifier uniqueness is checked here too (S2-4), as are the
+// per-fixture mandatory fields, so the verdict loop can no longer crash bare (S2-2).
+function fixtureSetProblems(fixtureFile) {
+  const fixtures = fixtureFile && fixtureFile.fixtures;
+  if (!Array.isArray(fixtures) || fixtures.length === 0) {
+    return ["FIXTURE_SET_INVALID: 样例集为空或不是数组；零条样例不是「全部通过」，不作判定 / the fixture set is empty or not an array; zero fixtures is not a full pass and no verdict is issued"];
+  }
+  const problems = [];
+  const seen = new Set();
+  for (const fixture of fixtures) {
+    const id = fixture && fixture.fixture_id;
+    if (typeof id !== "string" || id.trim() === "") {
+      problems.push("FIXTURE_SET_INVALID: 有样例缺 fixture_id，不作判定 / a fixture carries no fixture_id; no verdict is issued");
+      continue;
+    }
+    if (seen.has(id)) {
+      problems.push(`FIXTURE_SET_INVALID: 样例标识 ${id} 重复，重复条目不得计入总数 / fixture id ${id} appears more than once and duplicates may not count towards the total`);
+    }
+    seen.add(id);
+    if (fixture.expected_verdict !== "accept" && fixture.expected_verdict !== "reject") {
+      problems.push(`FIXTURE_SET_INVALID: ${id} 的 expected_verdict 不是 accept 或 reject / expected_verdict of ${id} is neither accept nor reject`);
+    }
+    if (fixture.expected_reasons !== undefined && !Array.isArray(fixture.expected_reasons)) {
+      problems.push(`FIXTURE_SET_INVALID: ${id} 的 expected_reasons 不是数组 / expected_reasons of ${id} is not an array`);
+    }
+  }
+  const counts = [
+    ["expected_fixture_count", fixtureFile.expected_fixture_count, fixtures.length],
+    ["expected_accept_count", fixtureFile.expected_accept_count,
+      fixtures.filter((item) => item && item.expected_verdict === "accept").length],
+    ["expected_reject_count", fixtureFile.expected_reject_count,
+      fixtures.filter((item) => item && item.expected_verdict === "reject").length],
+  ];
+  for (const [key, declared, actual] of counts) {
+    if (typeof declared !== "number") {
+      problems.push(`FIXTURE_SET_INVALID: 样例集未声明 ${key}，条目总数无从复核，不作判定 / the fixture set declares no ${key}, the item total cannot be re-checked and no verdict is issued`);
+    } else if (declared !== actual) {
+      problems.push(`FIXTURE_SET_INVALID: ${key} 声明 ${declared}，实到 ${actual} / ${key} declares ${declared} but ${actual} arrived`);
+    }
+  }
+  return [...new Set(problems)];
+}
+
 // 兼容校验：基准版本须达到 v0.2，样例须声明与之相同的基准版本。任一不满足即停止，
 // 不作任何判定——这一步本身就是版本治理的执行，不是可选的礼貌检查。
 // Compatibility gate: the baseline must be at least v0.2 and the fixtures must declare
@@ -253,6 +415,14 @@ function resolvePath(root, dotted) {
 // version governance being executed rather than a courtesy check.
 function checkCompatibility(spec, fixtureFile) {
   const problems = [];
+  // 结构性前提先于一切判据：缺组件、缺字段、空样例集或声明总数不符时，后续判据无从执行，
+  // 在此即返回，不再往下解引用。
+  // Structural prerequisites come before every criterion: with a component, a field, the
+  // fixture set or the declared totals missing, nothing below can run, so the run returns
+  // here rather than dereferencing further.
+  problems.push(...structureProblems(spec));
+  problems.push(...fixtureSetProblems(fixtureFile));
+  if (problems.length > 0) return problems;
   if (!versionAtLeast(spec.version, MIN_SPEC_VERSION)) {
     problems.push(
       `基准版本 ${spec.version} 低于本工具要求的 ${MIN_SPEC_VERSION.join(".")}；`
@@ -271,13 +441,19 @@ function checkCompatibility(spec, fixtureFile) {
     // v0.4.0 生命周期字段组的五种规则类型 / the five lifecycle rule types of v0.4.0
     "lifecycle_status_gate", "lifecycle_date_gate", "lifecycle_enum_plus_flag",
     "lifecycle_floor_check", "lifecycle_enum_gate",
+    // v0.5.0 双联交接台账的七种规则类型 / the seven handover-ledger rule types of v0.5.0
+    "handover_distinct_roles", "handover_dual_signature", "handover_open_items_carry",
+    "handover_enum", "handover_refusal_duty", "handover_station_sequence",
+    "handover_flag_true",
   ];
-  // 规则类型的巡检范围与判定范围一致：必填字段、生命周期字段组、供应商独立性字段。
-  // 若只巡检必填字段，基准在生命周期字段里声明的未知规则类型会被静默漏过。
+  // 规则类型的巡检范围与判定范围一致：必填字段、生命周期字段组、供应商独立性字段，
+  // 自 v0.5.0 起再加第六组件的交接台账字段。若只巡检必填字段，基准在其余字段里声明的
+  // 未知规则类型会被静默漏过。
   // The sweep covers exactly what the tool rules on: required fields, the lifecycle
-  // field group and the vendor-independence field. Sweeping only the required fields
-  // would let an unknown rule type declared inside a lifecycle field pass in silence.
-  for (const field of machineRuleFields(schema)) {
+  // field group, the vendor-independence field and, from v0.5.0, the handover-ledger
+  // fields of the sixth component. Sweeping only the required fields would let an unknown
+  // rule type declared elsewhere pass in silence.
+  for (const field of [...machineRuleFields(schema), ...handoverRuleFields(component(spec, "handover_ledger"))]) {
     const rule = field.constraint_machine_rule;
     if (rule && !SUPPORTED_RULE_TYPES.includes(rule.type)) {
       problems.push(`RULE_TYPE_UNSUPPORTED:${rule.type} — 基准声明了本工具尚未实现的规则类型，不作判定 / the baseline declares a rule type this tool does not implement, so no verdict is issued`);
@@ -658,6 +834,114 @@ function checkAuthority(declaration, boundary) {
   return [...new Set(reasons)];
 }
 
+// 组件六：双联交接台账（v0.5.0）。触发输入域按登记表 applies_when：判据只在样例声明
+// handover_ledger 块时执行，未声明该块的样例结构性不触发，不属违例。存在性由字段自身的
+// required 与 required_when 决定，取值合规一律且只由该字段的 constraint_machine_rule
+// 判定（machine_rule_contract），本工具不新增任何字段、不持有位序副本——四位序读自基准的
+// canonical_station_sequence。
+// Component 6: the two-part handover ledger (v0.5.0). The triggering input domain follows
+// the registry's applies_when: the criteria run only where a fixture declares a
+// handover_ledger, and a fixture declaring none does not engage them and violates nothing.
+// Presence follows each field's own required and required_when, value compliance is ruled
+// by that field's constraint_machine_rule and by nothing else (machine_rule_contract), and
+// this tool adds no field and keeps no copy of the station order — the four stations are
+// read from the baseline's canonical_station_sequence.
+function checkHandover(ledger, component6) {
+  if (!ledger || !component6) return [];
+  const reasons = [];
+  const missingCode = component6.missing_field_violation_code || "HANDOVER_FIELD_MISSING";
+  for (const field of component6.required_fields || []) {
+    // required_when 由基准声明触发条件，本工具不推断哪些字段何时必填。
+    // required_when states the condition in the baseline; the tool infers nothing.
+    let required = field.required === true;
+    const when = field.required_when;
+    if (!required && when && when.field_path !== undefined) {
+      required = resolvePath(ledger, when.field_path) === when.equals;
+    }
+    const value = ledger[field.field];
+    const present = isPresent(value);
+    if (required && !present) {
+      reasons.push(`${missingCode}:${field.field}`);
+      continue;
+    }
+    const rule = field.constraint_machine_rule;
+    if (!rule) continue;
+    // 适用前提：rule.precondition_path 由基准声明（位序三判据以 service_desk_present 为
+    // 前提），未满足即不判定——不向没有服务桌的节点摊派位序判据。它与规则自身的
+    // trigger_path（handover_refusal_duty 的处置触发）是两件事，键名不共用。
+    // Precondition: rule.precondition_path is stated by the baseline (the three sequence
+    // criteria are conditioned on service_desk_present); unmet means no ruling, so the
+    // sequence criteria are never levied on a node with no desk. It is distinct from a
+    // rule's own trigger_path (the action trigger of handover_refusal_duty) and the two
+    // never share a key.
+    if (rule.precondition_path !== undefined
+        && resolvePath(ledger, rule.precondition_path) !== rule.precondition_value) continue;
+    const code = applyHandoverRule(rule, ledger, field, component6);
+    if (code) reasons.push(code);
+  }
+  return [...new Set(reasons)];
+}
+
+function applyHandoverRule(rule, ledger, field, component6) {
+  if (rule.type === "handover_distinct_roles") {
+    // 交出方与接收方必须是不同角色；两者取值字面相同即违例。缺一方时不在此判定——
+    // 缺失由 HANDOVER_FIELD_MISSING 处置，此处不重复报。
+    // The two parties must be different roles; literally equal values violate. Where one
+    // is absent the ruling is left to HANDOVER_FIELD_MISSING and not restated here.
+    const a = resolvePath(ledger, rule.field_path_a);
+    const b = resolvePath(ledger, rule.field_path_b);
+    if (typeof a !== "string" || typeof b !== "string") return null;
+    return a === b ? rule.violation_code : null;
+  }
+  if (rule.type === "handover_dual_signature") {
+    // 两方署名逐项须等于 required_value；任一项未署名或未作声明即违例。
+    // Each signature must equal required_value; either unsigned or undeclared violates.
+    const bad = (rule.entries || []).some((entry) => resolvePath(ledger, entry) !== rule.required_value);
+    return bad ? rule.violation_code : null;
+  }
+  if (rule.type === "handover_open_items_carry") {
+    // 未决项不得在交接时清空：存在未决项与已清空同时成立即违例。
+    // Open items may not be cleared at handover: both present and cleared violates.
+    const combo = rule.forbidden_combination || {};
+    const hit = Object.keys(combo).every((path) => resolvePath(ledger, path) === combo[path]);
+    return hit ? rule.violation_code : null;
+  }
+  if (rule.type === "handover_enum") {
+    // 枚举取自字段自身的 allowed_values，本工具不持有副本。
+    // The enumeration comes from the field's own allowed_values; the tool keeps no copy.
+    const value = resolvePath(ledger, rule.field_path);
+    if (!Array.isArray(field.allowed_values)) return null;
+    return field.allowed_values.includes(value) ? null : rule.violation_code;
+  }
+  if (rule.type === "handover_refusal_duty") {
+    // 拒收与暂缓必须写明理由并触发上一责任方继续在岗，两者缺一即违例。
+    // A refusal or hold must state a reason and keep the previous party on duty; either
+    // omission violates.
+    const trigger = resolvePath(ledger, rule.trigger_path);
+    if (!(rule.trigger_values || []).includes(trigger)) return null;
+    const noReason = (rule.required_non_empty_paths || [])
+      .some((path) => !isPresent(resolvePath(ledger, path)));
+    const notOnDuty = (rule.required_true_paths || [])
+      .some((path) => resolvePath(ledger, path) !== true);
+    return noReason || notOnDuty ? rule.violation_code : null;
+  }
+  if (rule.type === "handover_station_sequence") {
+    // 四位序读自基准的 canonical_station_sequence，逐位比对次序与成员。
+    // The four stations are read from the baseline's canonical_station_sequence and
+    // compared position by position for both order and membership.
+    const canonical = (component6[rule.canonical_ref] || []).map((item) => item.station_id);
+    const declared = resolvePath(ledger, rule.field_path);
+    if (!Array.isArray(declared)) return rule.violation_code;
+    if (declared.length !== canonical.length) return rule.violation_code;
+    return declared.every((id, i) => id === canonical[i]) ? null : rule.violation_code;
+  }
+  if (rule.type === "handover_flag_true") {
+    const value = resolvePath(ledger, rule.field_path);
+    return value === rule.required_value ? null : rule.violation_code;
+  }
+  return `RULE_TYPE_UNSUPPORTED:${rule.type}`;
+}
+
 // 组件三：等级定义。四项绑定字段缺一不可；闸门比对直接取结构化的 gate_binding.gate_id，
 // 不再从自由文本抽取，gate_id 为 none 时不比对。
 // Component 3: level definitions. All four binding fields are required, and the gate
@@ -715,7 +999,7 @@ function checkDecision(decision, rules) {
 // Step 0: any fixture naming a source of record must match the five required fields
 // of the same node in constraints.geojson, verbatim.
 function checkSourceAlignment(fixture, schema, nodeSource) {
-  if (!nodeSource) return { reasons: [], line: null };
+  if (!nodeSource) return { reasons: [], line: null, engaged: false };
   let record = fixture.source_of_record;
   // 强制对齐：样例节点 id 与来源文件中的 feature id 相同时，即使未声明
   // source_of_record 也须逐字对齐——真实节点 id 不得携带被改写的字段值
@@ -728,10 +1012,10 @@ function checkSourceAlignment(fixture, schema, nodeSource) {
       && nodeSource.features.some((item) => item.properties.id === fixture.node.id)) {
     record = { file: nodeSource.__source_label || "node source", feature_id: fixture.node.id };
   }
-  if (!record) return { reasons: [], line: null };
-  if (!fixture.node) return { reasons: [`SOURCE_MISMATCH:${record.feature_id}`], line: null };
+  if (!record) return { reasons: [], line: null, engaged: false };
+  if (!fixture.node) return { reasons: [`SOURCE_MISMATCH:${record.feature_id}`], line: null, engaged: true };
   const feature = nodeSource.features.find((item) => item.properties.id === record.feature_id);
-  if (!feature) return { reasons: [`SOURCE_MISMATCH:${record.feature_id}`], line: null };
+  if (!feature) return { reasons: [`SOURCE_MISMATCH:${record.feature_id}`], line: null, engaged: true };
   const reasons = [];
   for (const field of schema.required_fields) {
     if (feature.properties[field.field] !== fixture.node[field.field]) {
@@ -742,7 +1026,7 @@ function checkSourceAlignment(fixture, schema, nodeSource) {
     ? `    ${fixture.fixture_id} ← ${record.file}#${record.feature_id} : `
       + `${schema.required_fields.length} 个必填字段逐字一致 / ${schema.required_fields.length} required fields match verbatim`
     : `    ${fixture.fixture_id} ← ${record.file}#${record.feature_id} : 不一致 / mismatch`;
-  return { reasons, line };
+  return { reasons, line, engaged: true };
 }
 
 function evaluate(fixture, parts, nodeSource, runContext) {
@@ -755,6 +1039,7 @@ function evaluate(fixture, parts, nodeSource, runContext) {
     ...checkDenominator(fixture.measurement_declaration, parts.scoring),
     ...checkMeasurementClaims(fixture.measurement_declaration, parts.scoring),
     ...checkAuthority(fixture.authority_declaration, parts.boundary),
+    ...checkHandover(fixture.handover_ledger, parts.ledger),
     ...checkLevel(fixture.level_claim, parts.levels, fixture.node),
     ...checkDecision(fixture.decision, parts.rules),
   ];
@@ -762,10 +1047,12 @@ function evaluate(fixture, parts, nodeSource, runContext) {
   const skipped = [];
   if (!fixture.level_claim) skipped.push("level_definitions");
   if (!fixture.decision) skipped.push("decision_rules");
+  if (parts.ledger && !fixture.handover_ledger) skipped.push("handover_ledger");
   return {
     verdict: unique.length === 0 ? "accept" : "reject",
     reasons: unique,
     alignmentLine: alignment.line,
+    alignmentEngaged: alignment.engaged === true,
     skipped,
     // 有效等级：仅在基准明文规定回落时给出（REVIEW_OVERDUE 报 L0），其余情形为 null，
     // 即申报等级本身，不由本工具另行折算。
@@ -816,6 +1103,14 @@ function provenanceLines(parts) {
         + `按 action_id 精确相等判定，不做子串 / human-exclusive actions matched on exact action_id, never as substrings`
     );
   }
+  if (parts.ledger) {
+    const seq = (parts.ledger.canonical_station_sequence || []).map((item) => item.station_id);
+    lines.push(
+      `    双联交接 / Handover ledger : ${(parts.ledger.required_fields || []).length} 个字段，`
+        + `四位序 ${seq.join(" → ")} 读自基准，位序不可调换 / `
+        + `${(parts.ledger.required_fields || []).length} fields; the four stations are read from the baseline and may not be rearranged`
+    );
+  }
   const equivalence = parts.scoring.equivalence_conditions;
   if (equivalence) {
     lines.push(
@@ -845,8 +1140,37 @@ function provenanceLines(parts) {
 }
 
 function main() {
-  const spec = readJson(SPEC_PATH);
-  const fixtureFile = readJson(FIXTURES_PATH);
+  // 解析失败属兼容问题：基准或样例不是合法 JSON 时以退出码 2 拒绝整次运行，不再让
+  // SyntaxError 裸抛并落到与「有样例不一致」同一个退出码 1（审计缺陷 S2-1）。
+  // A parse failure is a compatibility matter: an unreadable or malformed baseline or
+  // fixtures file refuses the run at exit code 2 instead of letting a SyntaxError escape
+  // onto the same exit code 1 that means "a fixture disagreed" (audit finding S2-1).
+  let spec;
+  let fixtureFile;
+  try {
+    spec = readJson(SPEC_PATH);
+  } catch (error) {
+    process.stderr.write("兼容校验未通过，不作任何判定 / compatibility gate failed, no verdict issued\n");
+    process.stderr.write(`    SPEC_UNREADABLE: 基准文件不可读或不是合法 JSON（${path.basename(SPEC_PATH)}）：${error.message} / the baseline file is unreadable or not valid JSON\n`);
+    return 2;
+  }
+  try {
+    fixtureFile = readJson(FIXTURES_PATH);
+  } catch (error) {
+    process.stderr.write("兼容校验未通过，不作任何判定 / compatibility gate failed, no verdict issued\n");
+    process.stderr.write(`    FIXTURES_UNREADABLE: 样例文件不可读或不是合法 JSON（${path.basename(FIXTURES_PATH)}）：${error.message} / the fixtures file is unreadable or not valid JSON\n`);
+    return 2;
+  }
+
+  // 码全集导出：供对拍脚本 seb-crosscheck-run.js 与第二实现的可发码集合作双向比对。
+  // 默认运行不打印此行，正常输出一字不变。
+  // Code-set export: consumed by the cross-check script seb-crosscheck-run.js to compare
+  // this tool's emittable set against the second implementation's, in both directions. A
+  // default run prints none of this and its output is unchanged to the letter.
+  if (process.argv.includes("--print-emittable-codes")) {
+    process.stdout.write(`EMITTABLE_CODES_JSON ${JSON.stringify([...emittableCodes(spec)].sort())}\n`);
+    return 0;
+  }
 
   const compatibility = checkCompatibility(spec, fixtureFile);
   if (compatibility.length > 0) {
@@ -864,6 +1188,10 @@ function main() {
     // The fifth component does not exist in snapshots before v0.4.0; where it is absent
     // the authority-boundary criterion simply does not apply.
     boundary: component(spec, "ai_authority_boundary"),
+    // 第六组件在 v0.5.0 之前的快照中不存在；缺席时双联交接判据整体不适用。
+    // The sixth component does not exist in snapshots before v0.5.0; where it is absent
+    // the handover-ledger criteria simply do not apply.
+    ledger: component(spec, "handover_ledger"),
   };
 
   // 运行声明：REVIEW_OVERDUE 的比较基准 run.as_of_date 由样例的顶层 run 块给出，
@@ -975,11 +1303,41 @@ function main() {
     out.push("");
   }
 
+  // 各组件本轮实际执行次数：读者据此能看出某组判据本轮是否真的跑过，而不只是「存在」。
+  // 组件在基准中被删除、或样例不再声明其触发输入时，对应计数即降为 0（审计缺陷 S4-1）。
+  // How many times each component actually engaged this round: a reader can see whether a
+  // criteria group ran at all, not merely that it exists. Deleting a component from the
+  // baseline, or fixtures no longer declaring its triggering input, drops the count to 0
+  // (audit finding S4-1).
+  const hasLifecycleFields = Boolean(
+    (parts.schema.lifecycle_fields && parts.schema.lifecycle_fields.length) || parts.schema.vendor_independence_field
+  );
+  const executed = [
+    ["来源对齐 / source_alignment", results.filter((item) => item.result.alignmentEngaged).length],
+    ["节点 schema / node_schema", results.length],
+    ["生命周期 / lifecycle_fields", hasLifecycleFields ? results.filter((item) => item.fixture.level_claim).length : 0],
+    ["评分口径 / scoring_definitions", results.filter((item) => item.fixture.measurement_declaration).length],
+    ["权限边界 / ai_authority_boundary", parts.boundary ? results.filter((item) => item.fixture.authority_declaration).length : 0],
+    ["双联交接 / handover_ledger", parts.ledger ? results.filter((item) => item.fixture.handover_ledger).length : 0],
+    ["等级定义 / level_definitions", results.filter((item) => item.fixture.level_claim).length],
+    ["判定规则 / decision_rules", results.filter((item) => item.fixture.decision).length],
+  ];
+  out.push("[E] 组件执行次数 / Component engagements");
+  executed.forEach(([label, count]) => {
+    out.push(`    ${label} : ${count} / ${results.length}`);
+  });
+  out.push("");
+
   const accepted = results.filter((item) => item.result.verdict === "accept").length;
   out.push("汇总 / Summary");
   out.push(`    通过 / accepted : ${accepted}`);
   out.push(`    拒绝 / rejected : ${results.length - accepted}`);
   out.push(`    与期望一致 / matching expectation : ${matched} / ${results.length}`);
+  out.push(
+    `    条目总数复核 / declared item count : 声明 ${fixtureFile.expected_fixture_count} · 实跑 ${results.length}`
+      + `（正例 ${accepted} / 声明 ${fixtureFile.expected_accept_count}，反例 ${results.length - accepted} / 声明 ${fixtureFile.expected_reject_count}，逐项相等）`
+      + ` / declared ${fixtureFile.expected_fixture_count}, ran ${results.length}, each figure equal`
+  );
   out.push("    本次运行不写入 metrics.json，七项包容性指标保持 unknown");
   out.push("    this run writes nothing to metrics.json; the seven inclusion metrics stay unknown");
 
@@ -987,4 +1345,15 @@ function main() {
   return matched === results.length ? 0 : 1;
 }
 
-process.exitCode = main();
+// 运行中任何未捕获的异常都是「不作判定」，不是「有样例不一致」：此前样例缺字段一类
+// 结构缺口会裸抛 TypeError 并落在退出码 1，与判定不一致同码（审计缺陷 S2-2、S3-5）。
+// Any uncaught exception means no verdict was issued, never that a fixture disagreed:
+// structural gaps such as a fixture missing a field used to throw a bare TypeError onto
+// exit code 1, the same code as a disagreeing verdict (audit findings S2-2 and S3-5).
+try {
+  process.exitCode = main();
+} catch (error) {
+  process.stderr.write("运行中出现未捕获异常，不作任何判定 / an uncaught exception occurred; no verdict is issued\n");
+  process.stderr.write(`    ${error && error.stack ? error.stack : String(error)}\n`);
+  process.exitCode = 2;
+}

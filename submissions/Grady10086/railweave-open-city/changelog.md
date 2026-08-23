@@ -1,5 +1,48 @@
 # 方案迭代记录
 
+## v2.7 - 2026-08-18
+
+- 恢复交通慢行蓝绿核查图和空间—AI—实施—公共价值四闭环证据板，使五组固定评审图各自承担明确的城市设计任务，不再以通用流程图替代交通与公共价值证据。
+- 将三处重点区总图与 AI 原点平面—剖面—运营详图合并为固定可见证据：首屏同时保留三处差异化分工，并把首期 S06 落到 `AN-V21-005` 候选界面、共享首层、无障碍界面和退出闭环。
+- 重构中英文正文及报告首屏，以“百年前让速度服从山势、今天让技术速度服从城市尺度与公共利益”统领空间主张；总体空间图前置，百日六窗口仅完整出现一次。
+- 修复视觉索引首图懒加载风险、报告重复标题和英文返回链接；统一矩阵版本字段与 v2.7 状态表述。
+
+- Restored the access/rail/blue-green audit and the four-loop spatial–AI–delivery–public-value evidence board so each fixed review slot performs its stated urban-design task.
+- Combined the three-key-area overview with the AI Origin plan–section–operation detail, retaining differentiated roles while placing S06 at the `AN-V21-005` candidate interface, shared ground floor, accessible edge, and exit loop.
+- Rebuilt the bilingual opening around one Jing-Zhang proposition: a century ago speed answered to terrain; today technological speed must answer to urban scale and public value. The spatial plan now leads, and the six 100-day windows appear in full only once.
+- Removed the first-image lazy-load risk, duplicate report title, and broken English return link; synchronised matrix version fields with v2.7.
+
+## v2.6 - 2026-08-18
+
+- 将全包统一为“四个工作阶段、六个决策窗口”：D90 仅办理强制收尾交接，D100 才形成唯一的保留、优化、复原或不转段决定；同步修正正文、任务矩阵、S06 交付包与中英文图面中的旧口径。
+- 重构固定评审图 `mobility-bluegreen`，把 AI 在规划阶段承担的资料分级、三案生成、六则筛选、专业选择与现场反馈完整显性化，明确 AI 提供备选和证据、人工承担判断。
+- 重构固定评审图 `metrics-evidence` 为 S06 百日实施证据板，直接呈现 100—150 米路线、3—5 个决策点、1:1 服务湾、六窗口、六包 BoQ、E0—E6 和单一 A 签收责任。
+- 重排中英文正文与网页首屏：先呈现空间设计、AI 规划、实施准备和公共价值，再呈现一场地、一 S06、100 日；将现场 G0 核验与成果实施准备度分开表达。
+- 修复 A3 标题遮挡，并明确 90/180 日为上线后复盘；A0 首页改为可读的六窗口实施条带，消除四/五/六分组并存。
+- 修复 HTML 重复 H1，并以 1440×1600 真实首屏完成中英文网页和固定 18 图复核。
+
+- Unified the package around four work stages and six decision windows: D90 is close-out handover only, while D100 is the sole retain, modify, remove, or do-not-advance decision.
+- Rebuilt the fixed planning figure to show AI-assisted evidence tiering, option generation, six-rule screening, professional selection, and field-feedback revision.
+- Rebuilt the fixed delivery-evidence figure around the S06 route, accessible bay, six windows, six BoQ packages, E0–E6, and one-accountable-party sign-off.
+- Reordered both narratives and report first screens so spatial design, AI planning, implementation readiness, and public value precede detailed governance boundaries.
+- Repaired the A3 title collision, clarified post-launch 90/180-day review, and replaced the A0 five-part strip with six decision windows.
+
+## v2.5 - 2026-08-18
+
+- 恢复并强化 RailWeave 独有命题：以百年京张公共空间和普通服务为不断线的城市经线，以区域协同廊道为纬线，以单项 AI 服务为可准入、可暂停、可解编的技术线程；“区域定链、走廊织网、重点区落项目”作为空间转译，不再替代总命题。
+- 将“如果今晚关闭 AI，明天城市还能不能照常运行”前置为中英文首问，并在正文前部直接呈现任务书映射、无账号访客旅程和“一处场地、一个 S06、100 日”的实施闭环。
+- 统一 S06 为 0—100 日、P1—P4、E0—E6：第 91—100 日强制撤权、删数、拆机、复原并形成保留、修改、撤除或不推进决定；清理 0—90 日、P1—P3 和旧版本号冲突。
+- 恢复 v2.2 正式 94 分版本中空间信息最完整的 `site-overview` 与“四个可核验闭环”证据板，移除固定评审图中的 90 日样布冲突。
+- A3 首页恢复“城市织体 × AI 线程”四段用户旅程，A0 首页恢复大比例空间总图；两者均新增“一处场地、一个 S06、100 日”的高可读实施提示，并保留现版后续实施页。
+- 重构中英文 `visual/index` 首屏：同时呈现空间骨架、双独立门、拒绝 AI 仍可办理和 100 日限定样布；G0 作为依法启动条件，不再占据公共价值之前的核心卡位。
+- 重新生成中英文正文 HTML，并修复报告首屏重复显示相同 H1 的表达问题。
+
+- Restored RailWeave's distinctive urban-fabric / removable-AI-thread proposition and made regional chain-setting, corridor weaving, and place-based delivery its spatial translation rather than its substitute.
+- Moved the question “If AI is switched off tonight, will the city still work tomorrow?” to the first screen, followed immediately by brief alignment, the no-account visitor journey, and one-site / one-S06 / 100-day delivery.
+- Unified S06 as Days 0-100, P1-P4, and E0-E6, including mandatory Days 91-100 restoration and re-decision; removed legacy 0-90, P1-P3, and version conflicts.
+- Restored the strongest spatial overview and four-loop evidence board from the exact formal 94-point v2.2 package while retaining v2.4 implementation detail in subsequent pages.
+- Rebuilt bilingual fixed first screens so spatial clarity, two independent gates, service without AI, and the 100-day sample are visible together.
+
 ## v2.4 - 2026-08-13
 
 - 以政府面向的公共命题重构首读：以百年京张为公共创新主轴，通过“区域定链—走廊织网—重点区落项目”形成开放问题、自主验证、首用转化和知识回流的城市创新链。

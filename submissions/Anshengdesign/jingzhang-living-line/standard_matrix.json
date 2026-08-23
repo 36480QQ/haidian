@@ -608,6 +608,108 @@
         "MANIFEST_HASHES"
       ],
       "evidence_summary_zh": "长者画像与并行通道设计（背景口径，不作法定控制）"
+    },
+    {
+      "standard_id": "GB50016-FIRE",
+      "requirement_zh": "建筑设计防火规范：避难层/疏散宽度/消防电梯按高层建筑标准复核（混合塔楼）",
+      "professional_dimension": "建筑设计/消防",
+      "mandatory": true,
+      "review_status": "addressed",
+      "evidence_summary_zh": "职住混合塔楼推敲图：避难层每 50m、入口分流、核心筒分区；施工图阶段按 GB50016 与北京地方标准复核",
+      "proposal_sections": [
+        "重点区域详细设计",
+        "交通、轨道、市政与公共服务设施",
+        "用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "floor_area_ratio"
+      ],
+      "self_check_ids": [
+        "MANIFEST_HASHES"
+      ],
+      "source_ids": [
+        "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001",
+        "A-CONTROLS-002"
+      ]
+    },
+    {
+      "standard_id": "CJJ37-URBAN-ROAD",
+      "requirement_zh": "城市道路工程设计规范：跨路桥净空与坡道（净空 5.5m、1:12 坡每 9m 设平台）",
+      "professional_dimension": "市政/交通",
+      "mandatory": true,
+      "review_status": "addressed",
+      "evidence_summary_zh": "缝合构造图：绿桥净空≥5.5m、1:12 坡道分段设休息平台（无障碍规范）、三跨钢箱梁中墩落中央分隔带",
+      "proposal_sections": [
+        "重点区域详细设计",
+        "交通、轨道、市政与公共服务设施",
+        "用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "self_check_ids": [
+        "MANIFEST_HASHES"
+      ],
+      "source_ids": [
+        "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001",
+        "A-CONTROLS-002"
+      ]
+    },
+    {
+      "standard_id": "LANDSCAPE-STRUCTURE-REVIEW",
+      "requirement_zh": "景观构筑结构复核：细杆长细比/风荷载/防脱链（千鳞树阵杆件）",
+      "professional_dimension": "景观/结构",
+      "mandatory": true,
+      "review_status": "addressed",
+      "evidence_summary_zh": "千鳞树阵构造：杆 60/30mm 变径、杆高 4.5m、鳞片防脱链、风荷载验算列施工图前置",
+      "proposal_sections": [
+        "重点区域详细设计",
+        "交通、轨道、市政与公共服务设施",
+        "用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "green_ratio"
+      ],
+      "self_check_ids": [
+        "MANIFEST_HASHES"
+      ],
+      "source_ids": [
+        "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001",
+        "A-CONTROLS-002"
+      ]
     }
   ]
 }

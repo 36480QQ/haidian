@@ -251,10 +251,11 @@
     "proposal.md",
     "geometry/constraints.geojson"
    ],
-   "formula": "count(distinct scenario cards S01-S16 in the proposal scenario table); S01-S10 are additionally cross-checked against count(distinct scenario_card_id on SCENARIO_NODE features), while S11-S16 declare no scenario node of their own",
+   "formula": "count(distinct scenario cards S01-S16 in the proposal scenario table); S01-S10 are additionally cross-checked against count(distinct scenario_card_id on SCENARIO_NODE features), while S11-S16 declare no scenario node of their own. The count registers drafted test scripts held in this package; whether any card holds is decided by G2 paired testing, and the count constitutes no requirement-coverage reading.",
    "confidence": "high",
    "assumptions": [
-    "The count describes declared design scenarios inside this package, not approved pilots, deployed services, or completed user research.",
+    "The sixteen cards are drafted test scripts, not approved pilots, deployed services, or completed user research; whether a card holds is decided by the G2 paired test, and the count is no measure of requirement coverage.",
+    "confidence=high describes only how exactly the count itself can be recomputed from the scenario table; it says nothing about whether any scenario holds.",
     "S11-S16 reuse existing scenario nodes (S11 on OP-09 and OP-10, S12 on OP-03 and OP-07, S13 on OP-03 and OP-06, S14 on OP-02 and OP-07, S15 on OP-05, S16 on OP-08) and add no spatial facility, so scenario_card_count and op_node_count are deliberately no longer equal."
    ],
    "calculation_metadata": {
@@ -263,7 +264,10 @@
     "rounding": "integer count",
     "responsible_role": "design-evidence author and independent reviewer",
     "recalculation_trigger": "addition, merger, or withdrawal of a scenario card"
-   }
+   },
+   "metric_class": "registered_item_count",
+   "notes_zh": "十六张卡为测试脚本草稿数量，成立与否由 G2 封闭成对测试判定，不构成需求覆盖度。status 保持 known 是因为该计数确实可复算；known 描述的是计数本身，不是场景已经成立。",
+   "notes_en": "The sixteen cards are a count of drafted test scripts. Whether they hold is decided by the G2 closed paired test, and the count constitutes no requirement coverage. The status stays known because the count really is recomputable; known describes the count, not any scenario having been established."
   },
   "inclusive_ai_ecosystem_stage_coverage": {
    "status": "known",
@@ -296,10 +300,11 @@
    "source_files": [
     "proposal.md"
    ],
-   "formula": "count(rows in the proposal persona table, five user-side personas plus the service-provider and maintainer role)",
+   "formula": "count(rows in the proposal persona table, five user-side personas plus the service-provider and maintainer role). The count registers task-constraint dimensions used to organise design questions and test scripts; it is not a population segmentation and constitutes no coverage reading.",
    "confidence": "high",
    "assumptions": [
-    "Personas organise design questions and test scripts; they are not diagnostic labels, commercial segments, identity claims, or completed user research.",
+    "The six rows are task-constraint dimensions, not a classification of people: they organise design questions and test scripts and are not diagnostic labels, commercial segments, identity claims, or completed user research.",
+    "confidence=high describes only how exactly the row count can be recomputed from the persona table; it says nothing about participation having occurred or about coverage being achieved.",
     "Real co-design must be voluntary, accommodated, understandable, and withdrawable; the count says nothing about participation having occurred.",
     "The cross-language and low-digital-literacy persona describes a service threshold, not a nationality, migration status, or education claim; no such attribute is collected."
    ],
@@ -309,7 +314,10 @@
     "rounding": "integer count",
     "responsible_role": "co-design lead and participant representatives",
     "recalculation_trigger": "revision of the persona structure agreed with participant representatives"
-   }
+   },
+   "metric_class": "registered_item_count",
+   "notes_zh": "六类为任务约束维度，不是人群分类，也不是已完成的用户研究；共同设计席位是否覆盖必需角色由 co_design_role_coverage_ratio 衡量，该项保持 unknown。",
+   "notes_en": "The six are task-constraint dimensions, not a classification of people and not completed user research; whether the co-design seats cover the required roles is measured by co_design_role_coverage_ratio, which stays unknown."
   },
   "landmark_count": {
    "status": "known",
@@ -354,7 +362,7 @@
   },
   "ai_off_declared_network_length_m": {
    "status": "known",
-   "value": 17322.014,
+   "value": 18882.811,
    "unit": "m",
    "source_files": [
     "geometry/roads.geojson"
@@ -368,7 +376,7 @@
    "calculation_metadata": {
     "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
     "projection": "EPSG:4548",
-    "verified_on": "2026-08-12",
+    "verified_on": "2026-08-18",
     "rounding": "0.001 m",
     "responsible_role": "spatial-analysis professional",
     "recalculation_trigger": "revision of any road centreline or of its design_role declaration",
@@ -391,7 +399,7 @@
    "calculation_metadata": {
     "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
     "projection": "EPSG:4548",
-    "verified_on": "2026-08-12",
+    "verified_on": "2026-08-18",
     "rounding": "integer count",
     "responsible_role": "spatial-analysis professional",
     "recalculation_trigger": "revision of any road centreline or of its design_role declaration",
@@ -417,7 +425,7 @@
    "calculation_metadata": {
     "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
     "projection": "EPSG:4548",
-    "verified_on": "2026-08-12",
+    "verified_on": "2026-08-18",
     "rounding": "integer count",
     "responsible_role": "spatial-analysis professional",
     "recalculation_trigger": "revision of any road centreline, of its design_role declaration, or of the node positions in that key area",
@@ -733,11 +741,11 @@
   "human_handover_response_time_seconds": {
    "status": "unknown",
    "value": null,
-   "unit": "seconds",
+   "unit": "index",
    "source_files": [
     "assumptions.json"
    ],
-   "formula": "median(human_acknowledgement_timestamp - valid_handover_trigger_timestamp)",
+   "formula": "本项的实际单位为秒（官方 metrics.schema.json 的 unit 枚举只有 sqm / m / ratio / count / index / none，无时间单位，故按 index 登记，单位由本行与指标键名 `_seconds` 后缀声明）/ Unit: seconds (the official metrics.schema.json unit enum offers only sqm, m, ratio, count, index and none, with no time unit, so this metric is registered as index and its real unit is declared here and by the `_seconds` suffix in the key). median(human_acknowledgement_timestamp - valid_handover_trigger_timestamp)",
    "confidence": "unknown",
    "assumptions": [
     "The trigger and acknowledgement events must be defined before timing; no target threshold is asserted."
@@ -835,6 +843,362 @@
     "JZ-03",
     "JZ-06"
    ]
+  },
+  "ai_on_reachability_union_sqm": {
+   "status": "known",
+   "value": 438298.947,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/roads.geojson",
+    "geometry/green_space.geojson",
+    "geometry/public_space.geojson",
+    "geometry/constraints.geojson",
+    "assets/figures/mobility-bluegreen-audit.png",
+    "changelog.md"
+   ],
+   "formula": "area(union of the AI-on reachability buffers over the twenty-one submitted features and ten Independent Completion Points, R_on = 300 m with a 40 m service-band half-width), recomputed in EPSG:4548 on the ledger of A3 page 11",
+   "confidence": "medium",
+   "assumptions": [
+    "The reading depends on three figure-convention constants this proposal sets for itself with no external basis: R_on = 300 m, R_off = 150 m, and a service-band half-width w = 40 m. Changing any one changes every reading in this family.",
+    "The reachability envelopes are drawn at conceptual radii and represent neither measured walking time, gradient, crossing conditions, nor real service coverage; the difference area is an audit target zone, not a compliance claim.",
+    "The value is the four-summary reading recomputed for the A3 page 11 reachability ledger after the v8.0 densified-centreline rerun; the human-readable position of the same figure is 438,000 sqm at three significant digits."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-18",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "revision of any road centreline, green-space or public-space polygon, scenario node, or of any of the three figure-convention constants",
+    "rounding": "0.001 sqm"
+   }
+  },
+  "ai_off_reachability_union_sqm": {
+   "status": "known",
+   "value": 222078.217,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/roads.geojson",
+    "geometry/green_space.geojson",
+    "geometry/public_space.geojson",
+    "geometry/constraints.geojson",
+    "assets/figures/mobility-bluegreen-audit.png",
+    "changelog.md"
+   ],
+   "formula": "area(union of the AI-off reachability buffers over the same features, R_off = 150 m with a 40 m service-band half-width), recomputed in EPSG:4548 on the ledger of A3 page 11",
+   "confidence": "medium",
+   "assumptions": [
+    "The reading depends on three figure-convention constants this proposal sets for itself with no external basis: R_on = 300 m, R_off = 150 m, and a service-band half-width w = 40 m. Changing any one changes every reading in this family.",
+    "The reachability envelopes are drawn at conceptual radii and represent neither measured walking time, gradient, crossing conditions, nor real service coverage; the difference area is an audit target zone, not a compliance claim.",
+    "Which centrelines remain usable once AI is off is read from each feature's own design_role declaration, not judged by the computing tool."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-18",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "revision of any road centreline, green-space or public-space polygon, scenario node, or of any of the three figure-convention constants",
+    "rounding": "0.001 sqm"
+   }
+  },
+  "ai_off_reachability_difference_sqm": {
+   "status": "known",
+   "value": 216220.73,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/roads.geojson",
+    "geometry/green_space.geojson",
+    "geometry/public_space.geojson",
+    "geometry/constraints.geojson",
+    "assets/figures/mobility-bluegreen-audit.png",
+    "changelog.md"
+   ],
+   "formula": "ai_on_reachability_union_sqm - ai_off_reachability_union_sqm, recomputed in EPSG:4548 on the ledger of A3 page 11",
+   "confidence": "medium",
+   "assumptions": [
+    "The reading depends on three figure-convention constants this proposal sets for itself with no external basis: R_on = 300 m, R_off = 150 m, and a service-band half-width w = 40 m. Changing any one changes every reading in this family.",
+    "The reachability envelopes are drawn at conceptual radii and represent neither measured walking time, gradient, crossing conditions, nor real service coverage; the difference area is an audit target zone, not a compliance claim.",
+    "The difference area marks where the audit should go first; it produces no reading whatsoever for ai_off_service_equivalence_gap, which stays unknown and is defined by paired task testing."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-18",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "revision of any road centreline, green-space or public-space polygon, scenario node, or of any of the three figure-convention constants",
+    "rounding": "0.001 sqm"
+   }
+  },
+  "ai_off_reachability_shrink_ratio": {
+   "status": "known",
+   "value": 0.493318,
+   "unit": "ratio",
+   "source_files": [
+    "geometry/roads.geojson",
+    "geometry/green_space.geojson",
+    "geometry/public_space.geojson",
+    "geometry/constraints.geojson",
+    "assets/figures/mobility-bluegreen-audit.png",
+    "changelog.md"
+   ],
+   "formula": "ai_off_reachability_difference_sqm / ai_on_reachability_union_sqm = 216220.730 / 438298.947; the same value reads 49.3318% as a percentage and 49.3% at the package's three-significant-digit display rule",
+   "confidence": "medium",
+   "assumptions": [
+    "The reading depends on three figure-convention constants this proposal sets for itself with no external basis: R_on = 300 m, R_off = 150 m, and a service-band half-width w = 40 m. Changing any one changes every reading in this family.",
+    "The reachability envelopes are drawn at conceptual radii and represent neither measured walking time, gradient, crossing conditions, nor real service coverage; the difference area is an audit target zone, not a compliance claim.",
+    "This is the figure whose title on assets/figures/mobility-bluegreen.png reads 49.3%; the ledger on A3 page 11 previously carried an inconsistent 48.16% under a different convention, corrected in v7.8.",
+    "Timeline caliber, so that this reading is not read against the AI ON = AI OFF headline as a contradiction: 49.3% is the gap still to be closed under today's conditions, while AI ON = AI OFF states the target state to be accepted at G3. The figure measures the work between today and that target; it is neither a result of the proposal nor a claim that the target has been met."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-18",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "revision of any road centreline, green-space or public-space polygon, scenario node, or of any of the three figure-convention constants",
+    "rounding": "0.000001 ratio"
+   }
+  },
+  "reachability_audit_network_length_m": {
+   "status": "known",
+   "value": 22858.6,
+   "unit": "m",
+   "source_files": [
+    "geometry/roads.geojson",
+    "geometry/green_space.geojson",
+    "geometry/public_space.geojson",
+    "geometry/constraints.geojson",
+    "assets/figures/mobility-bluegreen-audit.png",
+    "changelog.md"
+   ],
+   "formula": "sum(length(centreline)) over the network the reachability ledger of A3 page 11 buffers, recomputed in EPSG:4548; the ledger prints the human-readable 22,859 m",
+   "confidence": "medium",
+   "assumptions": [
+    "The reading depends on three figure-convention constants this proposal sets for itself with no external basis: R_on = 300 m, R_off = 150 m, and a service-band half-width w = 40 m. Changing any one changes every reading in this family.",
+    "The reachability envelopes are drawn at conceptual radii and represent neither measured walking time, gradient, crossing conditions, nor real service coverage; the difference area is an audit target zone, not a compliance claim.",
+    "The figure is a ledger-convention network length and is distinct from ai_off_declared_network_length_m (18,882.811 m), which sums only centrelines whose design_role declares independence from AI. The two are not interchangeable."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-18",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "revision of any road centreline, green-space or public-space polygon, scenario node, or of any of the three figure-convention constants",
+    "rounding": "0.1 m"
+   }
+  },
+  "op04_reachability_difference_sqm": {
+   "status": "known",
+   "value": 44356,
+   "unit": "sqm",
+   "source_files": [
+    "geometry/roads.geojson",
+    "geometry/green_space.geojson",
+    "geometry/public_space.geojson",
+    "geometry/constraints.geojson",
+    "assets/figures/mobility-bluegreen-audit.png",
+    "changelog.md"
+   ],
+   "formula": "the OP-04 row of the ten-node difference ledger on A3 page 11: area(AI-on reachability at OP-04) - area(AI-off reachability at OP-04), recomputed with the same script as the other nine rows; the same row prints a 63.4% share",
+   "confidence": "medium",
+   "assumptions": [
+    "The reading depends on three figure-convention constants this proposal sets for itself with no external basis: R_on = 300 m, R_off = 150 m, and a service-band half-width w = 40 m. Changing any one changes every reading in this family.",
+    "The reachability envelopes are drawn at conceptual radii and represent neither measured walking time, gradient, crossing conditions, nor real service coverage; the difference area is an audit target zone, not a compliance claim.",
+    "Before the v7.8 whole-table rerun this row read 48,000 sqm / 55.9%, word for word identical to the OP-02 row — a copied row caught and corrected by the geometry non-regression gate."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-18",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "revision of any road centreline, green-space or public-space polygon, scenario node, or of any of the three figure-convention constants",
+    "rounding": "1 sqm (ledger display precision; no full-precision value is registered in structured form)"
+   }
+  },
+  "spine_to_heritage_corridor_median_offset_m": {
+   "status": "known",
+   "value": 905.879,
+   "unit": "m",
+   "source_files": [
+    "visual/assets/alignment-reference.json",
+    "geometry/roads.geojson",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part1.json",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part2.json"
+   ],
+   "formula": "median(distance(sample_point(ROAD-001, every 25 m), heritage_corridor_reference_line)) over samples inside the corridor data band",
+   "confidence": "low",
+   "assumptions": [
+    "Computed from the OpenStreetMap snapshot already inside the package (sha256 855296cd…), not from field measurement, official survey, or planning data; status PROVISIONAL.",
+    "The corridor is a positional proxy assembled from the snapshot's 京包线 and 京包客专线 ways; most of its length is a newly built high-speed corridor, so the figure is an order-of-magnitude reference and neither locates the heritage park nor judges the alignment. The full risk note is registered as PROXY-01 in visual/assets/alignment-reference.json.",
+    "The corridor data band stops at latitude 40.007178; samples north of it issue no reading and are not extrapolated, so the reading covers the southern part of the line only and its sample count is registered with it.",
+    "299 of the 379 samples on ROAD-001 lie inside the band; P90 is 1265.793 m, maximum 1275.264 m, minimum 1.810 m.",
+    "ROAD-001 is tagged agent_generated_design with geometry_role=design_proposal, so the figure describes the distance between a schematic alignment and a reference line, not an alignment error."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-20",
+    "rounding": "0.001 m",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "revision of ROAD-001, of the site geometry it follows, or replacement of the OSM snapshot",
+    "reproduction_command": "compute_alignment.py (embedded verbatim in visual/assets/alignment-reference.json, reproduction.compute_alignment_py)"
+   }
+  },
+  "quiet_route_to_heritage_corridor_median_offset_m": {
+   "status": "known",
+   "value": 1389.166,
+   "unit": "m",
+   "source_files": [
+    "visual/assets/alignment-reference.json",
+    "geometry/roads.geojson",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part1.json",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part2.json"
+   ],
+   "formula": "median(distance(sample_point(ROAD-005, every 25 m), heritage_corridor_reference_line)) over samples inside the corridor data band",
+   "confidence": "low",
+   "assumptions": [
+    "Computed from the OpenStreetMap snapshot already inside the package (sha256 855296cd…), not from field measurement, official survey, or planning data; status PROVISIONAL.",
+    "The corridor is a positional proxy assembled from the snapshot's 京包线 and 京包客专线 ways; most of its length is a newly built high-speed corridor, so the figure is an order-of-magnitude reference and neither locates the heritage park nor judges the alignment. The full risk note is registered as PROXY-01 in visual/assets/alignment-reference.json.",
+    "The corridor data band stops at latitude 40.007178; samples north of it issue no reading and are not extrapolated, so the reading covers the southern part of the line only and its sample count is registered with it.",
+    "317 of the 380 samples on ROAD-005 lie inside the band; P90 is 1574.371 m, maximum 1693.829 m, minimum 232.089 m.",
+    "ROAD-005 runs parallel to and east of the spine, so its larger offset follows from that placement and indicates no greater departure from design intent."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-20",
+    "rounding": "0.001 m",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "revision of ROAD-005, of the site geometry it follows, or replacement of the OSM snapshot",
+    "reproduction_command": "compute_alignment.py (embedded verbatim in visual/assets/alignment-reference.json, reproduction.compute_alignment_py)"
+   }
+  },
+  "site_boundary_to_heritage_corridor_outside_length_m": {
+   "status": "known",
+   "value": 8645.571,
+   "unit": "m",
+   "source_files": [
+    "visual/assets/alignment-reference.json",
+    "geometry/site_boundary.geojson",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part1.json",
+    "visual/assets/osm-fabric/osm-fabric-snapshot-part2.json"
+   ],
+   "formula": "length(heritage_corridor_reference_line difference polygon(SITE-001))",
+   "confidence": "low",
+   "assumptions": [
+    "Computed from the OpenStreetMap snapshot already inside the package (sha256 855296cd…), not from field measurement, official survey, or planning data; status PROVISIONAL.",
+    "The corridor is a positional proxy assembled from the snapshot's 京包线 and 京包客专线 ways; most of its length is a newly built high-speed corridor, so the figure is an order-of-magnitude reference and neither locates the heritage park nor judges the alignment. The full risk note is registered as PROXY-01 in visual/assets/alignment-reference.json.",
+    "The corridor reference line totals 14086.884 m, of which 5441.313 m falls inside SITE-001 and 8645.571 m outside; the inside part is confined to latitudes 39.941482 to 39.960482, the southern end of the site.",
+    "SITE-001 is declared provisional_rough with official_boundary=false, so this reading records the relation between two provisional geometries and passes no judgement on either.",
+    "The reading points the same way as rail_corridor_extent in the DQ section of visual/assets/osm-fabric/osm-fabric-readings.json."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-SPATIAL-RECALCULATION-METHOD",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-20",
+    "rounding": "0.001 m",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "publication of an official design extent, revision of SITE-001, or replacement of the OSM snapshot",
+    "reproduction_command": "compute_alignment.py (embedded verbatim in visual/assets/alignment-reference.json, reproduction.compute_alignment_py)"
+   }
+  },
+  "osm_walkable_network_density_index": {
+   "status": "known",
+   "value": 24.94,
+   "unit": "index",
+   "source_files": [
+    "visual/assets/osm-fabric/osm-fabric-readings.json",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "FAB-01: clipped walkable-network length inside the site (284.64 km) / site area (11.413 km2); the reading carries the unit km/km2, recorded here under the schema's index unit because km/km2 is not in the unit enumeration",
+   "confidence": "medium",
+   "assumptions": [
+    "Snapshot convention: the value is computed at the timestamp of the 2026-08-15 bounded OpenStreetMap snapshot (status PROVISIONAL in the readings file). It is not a field measurement, not official survey or planning data, and constitutes no planning conclusion, design basis, or compliance determination.",
+    "Derived from OpenStreetMap data under ODbL 1.0; attribution to OpenStreetMap contributors and same-terms sharing of any derived database are required.",
+    "Sidewalks mapped separately from their parallel carriageway are each counted, so the reading exceeds a planning figure computed on road centrelines; uneven sidewalk mapping depresses it on the other side. The two conventions are not directly comparable."
+   ],
+   "calculation_metadata": {
+    "method_source": "OSM-FABRIC-SNAPSHOT-20260815",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-15",
+    "rounding": "0.01 km/km2",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "replacement of the bounded OpenStreetMap snapshot or revision of the site boundary",
+    "reproduction_command": "compute_fabric.py (parameters and determinism statement registered in visual/assets/osm-fabric/osm-fabric-readings.json)"
+   }
+  },
+  "osm_intersection_density_index": {
+   "status": "known",
+   "value": 137.477,
+   "unit": "index",
+   "source_files": [
+    "visual/assets/osm-fabric/osm-fabric-readings.json",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "FAB-02: intersections inside the site after clustering (1569) / site area (11.413 km2); the reading carries the unit intersections/km2, recorded here under the schema's index unit because that unit is not in the enumeration",
+   "confidence": "medium",
+   "assumptions": [
+    "Snapshot convention: the value is computed at the timestamp of the 2026-08-15 bounded OpenStreetMap snapshot (status PROVISIONAL in the readings file). It is not a field measurement, not official survey or planning data, and constitutes no planning conclusion, design basis, or compliance determination.",
+    "Derived from OpenStreetMap data under ODbL 1.0; attribution to OpenStreetMap contributors and same-terms sharing of any derived database are required.",
+    "Candidates are vertices of degree three or more clustered by single linkage at 15 metres, which merged 973 vertices; the radius is a method choice and a larger radius lowers the reading."
+   ],
+   "calculation_metadata": {
+    "method_source": "OSM-FABRIC-SNAPSHOT-20260815",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-15",
+    "rounding": "0.001 intersections/km2",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "replacement of the bounded OpenStreetMap snapshot or revision of the site boundary",
+    "reproduction_command": "compute_fabric.py (parameters and determinism statement registered in visual/assets/osm-fabric/osm-fabric-readings.json)"
+   }
+  },
+  "osm_block_median_area_sqm": {
+   "status": "known",
+   "value": 1387.366,
+   "unit": "sqm",
+   "source_files": [
+    "visual/assets/osm-fabric/osm-fabric-readings.json",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "FAB-03: median of the areas of all 1288 blocks falling inside the site boundary, computed on the walkable-network planar graph in EPSG:4548",
+   "confidence": "medium",
+   "assumptions": [
+    "Snapshot convention: the value is computed at the timestamp of the 2026-08-15 bounded OpenStreetMap snapshot (status PROVISIONAL in the readings file). It is not a field measurement, not official survey or planning data, and constitutes no planning conclusion, design basis, or compliance determination.",
+    "Derived from OpenStreetMap data under ODbL 1.0; attribution to OpenStreetMap contributors and same-terms sharing of any derived database are required.",
+    "A block here is a face of the walkable-network planar graph, not a cadastral parcel or an ownership unit."
+   ],
+   "calculation_metadata": {
+    "method_source": "OSM-FABRIC-SNAPSHOT-20260815",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-15",
+    "rounding": "0.001 sqm",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "replacement of the bounded OpenStreetMap snapshot or revision of the site boundary",
+    "reproduction_command": "compute_fabric.py (parameters and determinism statement registered in visual/assets/osm-fabric/osm-fabric-readings.json)"
+   }
+  },
+  "osm_superblock_area_share": {
+   "status": "known",
+   "value": 0.52324,
+   "unit": "ratio",
+   "source_files": [
+    "visual/assets/osm-fabric/osm-fabric-readings.json",
+    "geometry/site_boundary.geojson"
+   ],
+   "formula": "FAB-04: sum of areas of blocks larger than 40000 m2 / sum of all block areas = 4968672.328 / 9495999.944; the same value reads 52.324% as a percentage and 52.3% at the package's three-significant-digit display rule",
+   "confidence": "medium",
+   "assumptions": [
+    "Snapshot convention: the value is computed at the timestamp of the 2026-08-15 bounded OpenStreetMap snapshot (status PROVISIONAL in the readings file). It is not a field measurement, not official survey or planning data, and constitutes no planning conclusion, design basis, or compliance determination.",
+    "Derived from OpenStreetMap data under ODbL 1.0; attribution to OpenStreetMap contributors and same-terms sharing of any derived database are required.",
+    "Enclosed here denotes only the topological fact that the snapshot's walkable network does not subdivide the block further; it does not mean ownership enclosure or a physical wall."
+   ],
+   "calculation_metadata": {
+    "method_source": "OSM-FABRIC-SNAPSHOT-20260815",
+    "projection": "EPSG:4548",
+    "verified_on": "2026-08-15",
+    "rounding": "0.00001 ratio",
+    "responsible_role": "spatial-analysis professional",
+    "recalculation_trigger": "replacement of the bounded OpenStreetMap snapshot or revision of the site boundary",
+    "reproduction_command": "compute_fabric.py (parameters and determinism statement registered in visual/assets/osm-fabric/osm-fabric-readings.json)"
+   }
   }
  }
 }

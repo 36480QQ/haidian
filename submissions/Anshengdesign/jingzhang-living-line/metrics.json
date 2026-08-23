@@ -205,7 +205,7 @@
   },
   "wilson_supercritical_net_pct": {
    "status": "known",
-   "value": 29.17,
+   "value": 24.76,
    "unit": "%",
    "source_files": [],
    "formula": "λ_ij=exp(-d_ij/2500m)>0.42 配对占比（OSM路网口径，16节点，C1脚本）",
@@ -559,13 +559,12 @@
   "ca_intervention_change": {
    "status": "known",
    "value": 42,
-   "unit": "count",
-   "source_files": [],
-   "formula": "CA模拟60步干预单元变化数（解锁证据）",
-   "confidence": "medium",
-   "assumptions": [
-    "同上"
-   ]
+   "unit": "cells",
+   "source_files": [
+    "计算/c12_ca.json"
+   ],
+   "formula": "CA intervention_cell_change after 60 iterations (stitching + update policy)",
+   "confidence": "medium"
   },
   "ca_overlap_manual": {
    "status": "known",
@@ -744,6 +743,395 @@
    "assumptions": [
     "道路β取自C3 98个概念分区单元；建筑基底β取自C3；H 的 γ 取自 72 个 400m POI 单元拟合"
    ]
+  },
+  "c35_capex_yi": {
+   "status": "known",
+   "value": 23.9,
+   "unit": "亿元",
+   "source_files": [
+    "计算/c35_finance_balance.json",
+    "计算/c35_pro.json"
+   ],
+   "formula": "16.98–30.89 亿（七类：缝合0.21–0.56+公共空间1.20–2.40+界面更新0.90–1.80+人才公寓5.70–10.20+测试带4.30–7.60+涌现之脑3.20–6.00+运营基金1.47–2.33；中值单方约5360元/㎡）",
+   "confidence": "medium",
+   "assumptions": [
+    "概念量级",
+    "全口径单方中值约5360元/㎡"
+   ]
+  },
+  "c35_gri_yi": {
+   "status": "known",
+   "value": 3.6,
+   "unit": "亿元/年",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "满租毛收入 2.51–4.69 亿/年（办公10.7万㎡@3.0–5.5元/㎡/天+研发7.1@2.4–4.5+公寓17.8@55–95元/㎡/月+商业3.6@3.5–7.5+公共5.4@0.5–1.5）",
+   "confidence": "medium",
+   "assumptions": [
+    "市场基准：诸葛找房2024Q1/高力国际2024/CBRE2024/华夏北京保障房REIT2024中报",
+    "可出租系数0.50–0.78"
+   ]
+  },
+  "c35_noi_floor_yi": {
+   "status": "known",
+   "value": 0.96,
+   "unit": "亿元/年",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "保障口径稳定期 NOI 0.75–1.25 亿/年（锚 0.96=中值造价×4%）",
+   "confidence": "medium",
+   "assumptions": [
+    "保障定价+政策折扣",
+    "与旧口径0.96亿/4%收益率衔接"
+   ]
+  },
+  "c35_payback_years": {
+   "status": "known",
+   "value": 20.8,
+   "unit": "年",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "静态回收期 14.8–26.9 年（=总投资/年净现金流1.15亿）",
+   "confidence": "medium",
+   "assumptions": [
+    "投资前置、收入后置（十年分期爬坡）"
+   ]
+  },
+  "c35_irr_base": {
+   "status": "known",
+   "value": 4.5,
+   "unit": "%",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "保障口径全投资 IRR 3.5–5.5%（20年DCF，含Y10退出）",
+   "confidence": "medium",
+   "assumptions": [
+    "cap rate 4.5–5.5%",
+    "税盾+补贴后净现金流1.15亿/年"
+   ]
+  },
+  "c35_irr_market": {
+   "status": "known",
+   "value": 12.0,
+   "unit": "%",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "市场口径上限 IRR 10–14%（上限参考，非承诺）",
+   "confidence": "low",
+   "assumptions": [
+    "市场租金全额实现",
+    "上限参考，不作承诺"
+   ]
+  },
+  "c35_exit_base_yi": {
+   "status": "known",
+   "value": 17.5,
+   "unit": "亿元",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "退出估值 13.6–27.8 亿（cap 4.5–5.5%）；中值低于总投资→缺口=公共补贴/社会价值；市场上限 25–57 亿",
+   "confidence": "medium",
+   "assumptions": [
+    "内生回报不足→缺口=公共补贴/社会价值，应单列专项支持"
+   ]
+  },
+  "c35_npv4": {
+   "status": "known",
+   "value": 0.0,
+   "unit": "亿元",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "NPV@4% 区间 −2 ~ +2 亿（跨零）",
+   "confidence": "low",
+   "assumptions": [
+    "跨零→项目可行性依赖公共口径与补贴结构"
+   ]
+  },
+  "c35_dscr_base": {
+   "status": "known",
+   "value": 0.7,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c35_pro.json"
+   ],
+   "formula": "DSCR 保障口径 0.6–0.8（补贴后 ≥1.2）；资本金35%+债65%，利率4.0–5.0%",
+   "confidence": "medium",
+   "assumptions": [
+    "债务本息中值1.55亿/年",
+    "缺口=公共补贴"
+   ]
+  },
+  "ca_path_locking_no_change": {
+   "status": "known",
+   "value": 0,
+   "unit": "cells",
+   "source_files": [
+    "计算/c12_ca.json"
+   ],
+   "formula": "CA no_intervention_cell_change after 60 iterations",
+   "confidence": "medium",
+   "assumptions": [
+    "100m cells",
+    "POI-driven initial state",
+    "rules: station/stitch 300m update potential + neighbor agglomeration + spine attraction"
+   ]
+  },
+  "ca_overlap_with_manual": {
+   "status": "known",
+   "value": 0.379,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c12_ca.json"
+   ],
+   "formula": "overlap_with_manual_partition (emergent CA vs 400m conceptual zoning)",
+   "confidence": "medium"
+  },
+  "ca_commercial_growth": {
+   "status": "known",
+   "value": 0.21,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c12_ca.json"
+   ],
+   "formula": "(emergent COMM - no_intervention COMM) / no_intervention COMM",
+   "confidence": "medium"
+  },
+  "ca_emergent_research_share": {
+   "status": "known",
+   "value": 0.319,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c12_ca.json"
+   ],
+   "formula": "emergent_shares[科研办公]",
+   "confidence": "medium"
+  },
+  "ca_emergent_commercial_share": {
+   "status": "known",
+   "value": 0.276,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c12_ca.json"
+   ],
+   "formula": "emergent_shares[商业]",
+   "confidence": "medium"
+  },
+  "percolation_giant_fraction_now": {
+   "status": "known",
+   "value": 0.84,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c2_percolation.json"
+   ],
+   "formula": "blue-green giant fraction (current)",
+   "confidence": "medium"
+  },
+  "percolation_giant_fraction_design": {
+   "status": "known",
+   "value": 0.904,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c2b_gates.json"
+   ],
+   "formula": "giant fraction after 7 stitches (design)",
+   "confidence": "medium"
+  },
+  "syntax_integration_gain_pct": {
+   "status": "known",
+   "value": 36,
+   "unit": "percent",
+   "source_files": [
+    "计算/c4_syntax.json"
+   ],
+   "formula": "mean anchor integration gain after stitching",
+   "confidence": "medium"
+  },
+  "syntax_gain_dazhongsi_pct": {
+   "status": "known",
+   "value": 70,
+   "unit": "percent",
+   "source_files": [
+    "计算/c4_syntax.json"
+   ],
+   "formula": "(design-real)/real integration, Dazhongsi",
+   "confidence": "medium"
+  },
+  "syntax_gain_wudaokou_pct": {
+   "status": "known",
+   "value": 43,
+   "unit": "percent",
+   "source_files": [
+    "计算/c4_syntax.json"
+   ],
+   "formula": "(design-real)/real integration, Wudaokou",
+   "confidence": "medium"
+  },
+  "jobs_housing_entropy_now": {
+   "status": "known",
+   "value": 7.454,
+   "unit": "nats",
+   "source_files": [
+    "计算/c28_luti.json"
+   ],
+   "formula": "jobs-housing entropy (current)",
+   "confidence": "medium"
+  },
+  "jobs_housing_entropy_design": {
+   "status": "known",
+   "value": 7.85,
+   "unit": "nats",
+   "source_files": [
+    "计算/c28_luti.json"
+   ],
+   "formula": "entropy after entanglement S4",
+   "confidence": "medium"
+  },
+  "jobs_housing_entropy_gain_pct": {
+   "status": "known",
+   "value": 5.3,
+   "unit": "percent",
+   "source_files": [
+    "计算/c28_luti.json"
+   ],
+   "formula": "(design-now)/now entropy",
+   "confidence": "medium"
+  },
+  "ei1_value": {
+   "status": "known",
+   "value": 0.795,
+   "unit": "ratio",
+   "source_files": [
+    "计算/ei1.json"
+   ],
+   "formula": "Emergence Index E0 (anchored, four sub-indices)",
+   "confidence": "medium"
+  },
+  "ei1_design_s4": {
+   "status": "known",
+   "value": 0.9625,
+   "unit": "ratio",
+   "source_files": [
+    "计算/ei1_anchored.json"
+   ],
+   "formula": "EI under prescription S4",
+   "confidence": "medium"
+  },
+  "ei1_sensitivity_low": {
+   "status": "known",
+   "value": 0.93,
+   "unit": "ratio",
+   "source_files": [
+    "计算/ei1_sensitivity.json"
+   ],
+   "formula": "EI sensitivity interval lower bound",
+   "confidence": "medium"
+  },
+  "ei1_sensitivity_high": {
+   "status": "known",
+   "value": 0.97,
+   "unit": "ratio",
+   "source_files": [
+    "计算/ei1_sensitivity.json"
+   ],
+   "formula": "EI sensitivity interval upper bound",
+   "confidence": "medium"
+  },
+  "redundancy_R_now": {
+   "status": "known",
+   "value": 0.826,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c29_redundancy.json"
+   ],
+   "formula": "R_od (current)",
+   "confidence": "medium"
+  },
+  "redundancy_R_after": {
+   "status": "known",
+   "value": 0.87,
+   "unit": "ratio",
+   "source_files": [
+    "计算/c29_redundancy.json"
+   ],
+   "formula": "R_od after entanglement",
+   "confidence": "medium"
+  },
+  "lambda_net_pct_stitched": {
+   "status": "known",
+   "value": 24.76,
+   "unit": "percent",
+   "source_files": [
+    "计算/c32_lambda_stitched.json"
+   ],
+   "formula": "net λ after stitching (unchanged - diagnostic)",
+   "confidence": "medium"
+  },
+  "fl_employment_min_sqm": {
+   "status": "known",
+   "value": 181000,
+   "unit": "sqm",
+   "source_files": [
+    "计算/c31_fl.json"
+   ],
+   "formula": "employment floor-area lower bound",
+   "confidence": "medium"
+  },
+  "fl_employment_max_sqm": {
+   "status": "known",
+   "value": 1190000,
+   "unit": "sqm",
+   "source_files": [
+    "计算/c31_fl.json"
+   ],
+   "formula": "employment floor-area upper bound",
+   "confidence": "medium"
+  },
+  "new_build_area_sqm": {
+   "status": "known",
+   "value": 446000,
+   "unit": "sqm",
+   "source_files": [
+    "计算/c33_capacity.json"
+   ],
+   "formula": "new-build total (67 absorb + 11 new cells)",
+   "confidence": "medium"
+  },
+  "score_s4": {
+   "status": "known",
+   "value": 0.3568,
+   "unit": "ratio",
+   "source_files": [
+    "计算/score_s4.json"
+   ],
+   "formula": "Score=0.35ΔEI+0.15robust+0.35feasible-0.15risk (S4)",
+   "confidence": "medium"
+  },
+  "corridor_length_m": {
+   "status": "known",
+   "value": 7919,
+   "unit": "m",
+   "source_files": [
+    "计算/c2_corridor.json"
+   ],
+   "formula": "spine corridor length (7 breaks measured)",
+   "confidence": "medium"
+  },
+  "talent_apartment_sqm": {
+   "status": "known",
+   "value": 178400,
+   "unit": "sqm",
+   "source_files": [
+    "计算/c33_capacity.json"
+   ],
+   "formula": "talent apartments (guaranteed-price)",
+   "confidence": "medium"
   }
  }
 }

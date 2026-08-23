@@ -1,71 +1,67 @@
 {
-  "schema_version": "1.1.0",
-  "review_date": "2026-08-13",
-  "version": "V4",
-  "status": "local_review_complete_with_follow_up",
+  "schema_version": "1.11.0",
+  "review_date": "2026-08-20",
+  "version": "V13",
+  "calibration_baseline": "V11 Review Agent 90/100; V12 Review Agent 88/100",
+  "status": "v13_local_freeze_qa_complete",
   "summary": {
     "blocking_open": 0,
     "major_open": 0,
-    "major_closed": 4,
-    "minor_open": 2
+    "major_closed": 3,
+    "minor_open_external_dependency": 4
   },
   "findings": [
     {
-      "id": "V4-UD-01",
-      "round": "urban_design_site_specificity",
+      "id": "V13-EVID-01",
       "severity": "major",
-      "finding": "The merged version distributed attention equally across 12 scenes and lacked a professional scale chain for any one scene.",
-      "evidence": ["PR #2272 Review Agent 69/100", "pre-V4 A3 pages", "pre-V4 scenario matrix"],
-      "remediation": "Promoted T2, S2 and S7 to hero status with 1:5000/1:2000/1:500/1:200 evidence, routes, staff positions and receipts.",
-      "verification": "Closed by bilingual A3 pages 8-14 and A0 board 2; structured references in two-answers.json and spatial-atlas.json.",
+      "finding": "V12 collapsed 55 metrics to 18 and reused unrelated metric IDs for stitches, components, landmarks, prototype kit and pilot phases.",
+      "remediation": "Restore the accumulated evidence set and bind each narrative conclusion to its exact recomputable metric; add bilingual semantic assertions.",
+      "verification": "semantic-qa-v13.js rejects substituted IDs, duplicate paragraph references, unresolved references and bilingual drift.",
       "status": "closed"
     },
     {
-      "id": "V4-EX-01",
-      "round": "expression_and_jury_readability",
+      "id": "V13-VIS-01",
       "severity": "major",
-      "finding": "A missing CSS brace collapsed intended grids into one column; page-count checks still returned 20 pages and therefore concealed clipped content.",
-      "evidence": ["original-size raster review of A3 pages 2, 7, 15 and 18"],
-      "remediation": "Corrected stylesheet closure, added computed-layout validation and regenerated all four PDFs.",
-      "verification": "Closed after full 72/150-DPI raster review, 20-page/3-board page checks and file-size checks.",
+      "finding": "V12 let a twelve-row measurement table displace the decisive ALT-A/B/C spatial judgement in the actual scoring entrances.",
+      "remediation": "Restore the reject/revise/advance decision as the primary metrics figure and PDF first-page message; retain only T2, S2 and S7 hero contracts as secondary evidence.",
+      "verification": "At 1024 px the decision, reason and selected ALT-C are visible without reading a twelve-row table.",
       "status": "closed"
     },
     {
-      "id": "V4-AI-01",
-      "round": "ai_governance_industry_translation",
+      "id": "V13-PUB-01",
       "severity": "major",
-      "finding": "The protocol described human decisions but did not expose a single inspectable and printable adoption record per scene.",
-      "evidence": ["pre-V4 evidence drawer", "pre-V4 equal-weight scene data"],
-      "remediation": "Added receipt_fields to 12/12 scenes, NOT FIELD-RUN state, allowed decisions and printable receipt UI.",
-      "verification": "Closed by schema 1.2.0 data and desktop/mobile offline interaction tests.",
+      "finding": "The first V13 A0 draft retained low-information areas and did not connect the selected geometry to a spatial experience.",
+      "remediation": "Rebalance all three boards around one dominant visual and add a generated ALT-C experience view tied to the public cross, one-sided trial bay, staffed receipt porch and removal route.",
+      "verification": "Final A0 contact-sheet review shows denser single-focus boards; the experience image is explicitly non-field evidence and vector geometry remains authoritative.",
       "status": "closed"
     },
     {
-      "id": "V4-PR-01",
-      "round": "accessibility_public_rights",
-      "severity": "major",
-      "finding": "Station plans did not consistently expose baseline, emergency and removal routes together with staff positions.",
-      "evidence": ["pre-V4 station figures", "pre-V4 spatial-atlas.json"],
-      "remediation": "Added route geometries, buffers, section lines, operation windows and human positions for all three stations.",
-      "verification": "Closed by A3 hero pages, A0 board 2 and interactive station views.",
-      "status": "closed"
-    },
-    {
-      "id": "V4-MIN-01",
-      "round": "urban_design_site_specificity",
+      "id": "V13-MIN-01",
       "severity": "minor",
-      "finding": "Official survey, ownership, statutory controls, utilities and observed flows remain unavailable.",
-      "remediation": "Retain provisional-boundary and concept-scale disclosures; require these inputs before professional development.",
+      "finding": "Official survey, ownership, station entrances, statutory controls, utilities and observed flows remain unavailable.",
+      "remediation": "Keep dimensions and boundaries provisional and rerun the audit when formal data arrives.",
       "status": "open_external_dependency"
     },
     {
-      "id": "V4-MIN-02",
-      "round": "ai_governance_industry_translation",
+      "id": "V13-MIN-02",
       "severity": "minor",
-      "finding": "No scene has been field-run, so outcome targets cannot yet be set from evidence.",
-      "remediation": "All performance remains unknown; receipts are pending_field_evidence and define measurement methods only.",
+      "finding": "No scene has been field-run; safety, traffic, satisfaction, cost and recovery time remain unknown.",
+      "remediation": "Do not issue adopt/revise/stop until baseline and controlled field evidence exist.",
+      "status": "open_external_dependency"
+    },
+    {
+      "id": "V13-MIN-03",
+      "severity": "minor",
+      "finding": "Public OSM context is incomplete around the prototype.",
+      "remediation": "Show low-confidence context and verify building edges professionally before implementation.",
+      "status": "open_external_dependency"
+    },
+    {
+      "id": "V13-MIN-04",
+      "severity": "minor",
+      "finding": "Automated in-app browser control rejects file:// navigation, so runtime visual interaction was not automatically asserted.",
+      "remediation": "Keep static offline dependency QA as passed and require the user to perform the final local runtime visual review before any Ready PR.",
       "status": "open_external_dependency"
     }
-  ],
-  "note": "Internal adversarial review only; not an official score, statutory review or field validation."
+  ]
 }

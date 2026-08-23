@@ -12,28 +12,44 @@
   --paper: #ffffff;
   --bg: #f4f7fa;
   --accent: #245b8f;
+  --navy: #17313c;
+  --orange: #e66a36;
 }
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
 }
 main {
-  max-width: 980px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 42px 24px 72px;
+  padding: 46px 44px 72px;
   background: var(--paper);
   min-height: 100vh;
   box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
 }
 .hero {
-  border-bottom: 3px solid var(--accent);
-  padding-bottom: 24px;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  gap: 38px;
+  color: #fff;
+  background: var(--navy);
+  border-left: 10px solid var(--orange);
+  border-radius: 0 18px 18px 0;
+  padding: 48px 48px 44px;
+  margin-bottom: 38px;
 }
+.hero h1 { font-size: clamp(48px, 6vw, 76px); line-height: .98; letter-spacing: -.045em; margin: 10px 0 24px; }
+.hero .summary { color: #dbe5e8; font-size: 19px; line-height: 1.55; max-width: 38em; }
+.hero-kicker { color: #f4a16f; font-weight: 800; letter-spacing: .08em; font-size: 13px; }
+.hero-claims { display: grid; align-content: center; gap: 12px; }
+.hero-claims article { padding: 18px 20px; background: rgba(255,255,255,.07); border-top: 1px solid rgba(255,255,255,.25); }
+.hero-claims b { display: block; color: #fff; font-size: 20px; margin-bottom: 4px; }
+.hero-claims span { color: #bfcfd4; font-size: 14px; line-height: 1.45; }
+.hero-boundary { color: #f3d6c6; font-size: 12px; line-height: 1.45; padding: 10px 2px 0; }
 h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
 h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
 h3 { font-size: 20px; margin: 26px 0 10px; }
@@ -52,7 +68,7 @@ code {
   border-radius: 4px;
 }
 .summary { color: var(--muted); font-size: 17px; }
-.translation-link a { color: var(--accent); font-weight: 700; }
+.translation-link a { color: #fff; font-weight: 750; }
 .proposal-table { margin: 20px 0 26px; overflow-x: auto; }
 .proposal-table table {
   border-collapse: collapse;
@@ -101,20 +117,31 @@ code {
   line-height: 1.35;
   vertical-align: super;
 }
+.implementation-brief { margin: -8px 0 40px; padding: 22px 24px; border: 1px solid var(--line); border-top: 5px solid var(--accent); background: #f8fafc; }
+.implementation-brief h2 { margin: 0 0 14px; border: 0; padding: 0; font-size: 20px; }
+.implementation-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.implementation-grid article { min-height: 108px; padding: 13px 14px; background: #fff; border: 1px solid var(--line); }
+.implementation-grid b { display: block; color: var(--accent); font-size: 13px; letter-spacing: .03em; }
+.implementation-grid span { display: block; margin-top: 5px; color: var(--muted); font-size: 13px; line-height: 1.45; }
+.implementation-note { margin: 13px 0 0; color: #8a4a2d; font-size: 13px; line-height: 1.5; }
 @media (max-width: 720px) {
   main { padding: 26px 16px 52px; }
+  .hero { grid-template-columns: 1fr; padding: 32px 24px; }
+  .hero h1 { font-size: 42px; }
   h1 { font-size: 26px; }
   h2 { font-size: 21px; }
+  .implementation-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
 <main>
 <section class="hero">
-<h1>共时京张 / COMMON TIME：一条由证据门驱动的 AI 创新采用带</h1>
-<p class="summary">以时段基线、三尺度空间系统和 VERIFY—LEARN—LIVE—ADOPT/RETIRE 采用回路，检验存量空间能否在更长时间服务科研转译、城市采用与公共生活；所有空间落位均为 provisional 关系示意。</p>
-<p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
+<div class="hero-copy"><div class="hero-kicker">01 / DR-01 DECISION REPLAY / COMMON TIME JING–ZHANG / V13</div><h1>一个决定，<br>两条复算路径，<br>一次故意失败。</h1><p class="summary">桌面夹具把八个不可平均的硬门、三个可逆候选、两种独立计算和一次变异测试放进同一证据链；它验证规则能降级，不冒充现场绩效。</p><p class="translation-link"><a href="proposal.en.html">Read in English →</a></p></div>
+<div class="hero-claims"><article><b>8 个硬门</b><span>授权、消防/无障碍、安静、纸数同效、隐私、人工接管、可逆与退役金；任一失败先退出。</span></article><article><b>2 条独立复算</b><span>门乘积＋字典序与逐行枚举都选择 K1，不依赖模型自评分。</span></article><article><b>1 次故意失败</b><span>把 K1 纸数同效从 1 改为 0，结果必须降级为 K0；不得调权或静默改门槛。</span></article><div class="hero-boundary">SIMULATED FOR LOGIC QA · 真实项目仍 HOLD · 不代表授权、现场绩效、预算或实施已经发生</div></div>
 </section>
+<section class="implementation-brief" aria-label="六个受限 AI 规划角色"><h2>COMMON TIME EVIDENCE OS｜输入有限、决定归人、失败可退</h2><div class="implementation-grid"><article><b>01 SENSE</b><span>只登记公开事实、匿名计数和 UNKNOWN；不得把推测补成现状。</span></article><article><b>02 COMPARE</b><span>把非 AI 基线、群体差异和无效结果放在同一比较表；不得只挑成功样本。</span></article><article><b>03 MATCH</b><span>只提出共享、轻改、可逆的空间候选；不得跨越权属、文保和法定路权。</span></article><article><b>04 SIMULATE</b><span>只演练时段、接管和冲突；不得静默移动共同阈值。</span></article><article><b>05 EXPLAIN</b><span>输出双语、纸数同源的公众说明，并保留人工纠错与申诉路径。</span></article><article><b>06 AUDIT</b><span>到期只允许续期、修订或退役；不得因模型自评自动续期。</span></article></div><p class="implementation-note">首轮范围收敛为 P-L01 AI 原点公共共学院：90 日、无新建、无个人画像、全程人工签发。真实授权与外部证据不到位则保持 HOLD。</p></section>
+<section class="implementation-brief" aria-label="DR-01 可复算决策回放"><h2>DR-01｜硬门先行，失败可验证</h2><div class="implementation-grid"><article><b>K0 / ELIGIBLE</b><span><code>11111111</code>；纸质资料＋人工服务；渠道 2、可撤构件 4、固定构件 0。</span></article><article><b>K1 / SELECT</b><span><code>11111111</code>；移动共学岛＋清权数字辅助；两种独立复算都选 K1。</span></article><article><b>K2 / EXIT</b><span><code>11100101</code>；纸数同效、隐私和可逆三门失败，不进入排序。</span></article></div><p class="implementation-note">变异测试把 K1 的纸数同效从 1 改为 0，结果必须降级到 K0。SIMULATED FOR LOGIC QA；模拟输入不回写成真实通过。</p></section>
 <h1>共时京张 / COMMON TIME</h1>
 <blockquote><p><strong>不是让 AI 占领更多城市，而是让每一次技术进入城市之前，先回答：谁的问题、谁负责、如何验证、何时停止。</strong></p></blockquote>
 <p>“共时京张”把“科研、社区、商业与公共服务可能存在时段错配”作为<strong>待调查假设</strong>，而不是既成事实。方案先建立工作日/周末、昼/夜的时段基线，再以共享、轻改、可逆补点和必要建设四级动作，检验存量空间能否在更多时间服务更多人。AI 仅承担检索、匹配、翻译、预约和复盘；问题业主、产权人、运营者、独立评测者与公众保留批准、申诉和停止权。</p>
@@ -282,7 +309,7 @@ code {
 <h2>指标体系、面积复算与合规矩阵</h2>
 <p>指标分四类：<sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="metrics_recalculation" title="深度：metrics_recalculation">深度</sup></p>
 <div class="proposal-table"><table><thead><tr><th>类型</th><th>示例</th><th>当前状态</th><th>解释边界</th></tr></thead><tbody><tr><td>包内几何复算</td><td>临时面积、概念蓝绿/公共节点覆盖、原型需求区、关系线长度</td><td>known/低置信</td><td>证明 GeoJSON 内部一致，不是现状或控规</td></tr><tr><td>内容计数</td><td>12 场、6 类服务对象、12 个采用角色、4 testbed、4 记忆节点、3 重点区、3 阶段</td><td>known/高置信</td><td>证明成果覆盖，不等于绩效</td></tr><tr><td>运营性能</td><td>时效系数、无障碍连续、绕行、责任链、采用、单位晋级成本</td><td>unknown</td><td>由调查与试点产生基线，禁止预填</td></tr><tr><td>法定/工程指标</td><td>FAR、高度、密度、退线、绿地率、市政容量</td><td>unknown</td><td>取得官方资料与专业批准后计算</td></tr></tbody></table></div>
-<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="项目、阶段门、责任链与指标状态"><figcaption>项目、阶段门、责任链与指标状态</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="DR-01 三个桌面候选、两条独立复算路径与一次变异测试"><figcaption>DR-01 决策回放：硬门先行、两路同解、失败降级；不是现场绩效</figcaption></figure>
 <p>本轮重绘后，概念关系带、公园横园、十二节点、十个原型需求区和八条候选关系线均按 EPSG:4548 复算。<code>metrics.json</code> 是唯一数值真源；图文出现的 8.50%、0.28% 等均由该文件生成，而不是人工估算。机器 PASS 只表示包具备内容评审条件，不表示已达到审批、施工、投资或专业签章状态。</p>
 <p>合规矩阵覆盖公告 1.3、1.4、1.5 共 17 项和 Agent 六项任务；专业矩阵将项目公告、任务书、城市设计、控规和用地分类逐项回链；设计深度矩阵覆盖现状、三层范围、总体结构、用地、强度缺口、风貌、拆改留、交通、市政、蓝绿、重点区、项目、分期、复算和风险。每项 <code>complete</code> 仅表示“证据义务已被正文/图件/数据或明确 data gap 回应”，不表示缺失现状资料已经补齐。</p>
 <h2>风险、版权与合规说明</h2>
