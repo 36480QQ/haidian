@@ -129,24 +129,14 @@ class AutoReviewQueueTests(unittest.TestCase):
     def test_worker_lock_rejects_second_holder_until_released(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             lock_path = Path(tmp) / ".worker.lock"
-            first = lock_path.open("a+", encoding="utf-8")
+            first = acquire_worker_lock(lock_path)
             try:
-                acquire_worker_lock(first)
-                # Use the same non-truncating mode as production so lock
-                # contention is reported through the WorkerError contract.
-                second = lock_path.open("a+", encoding="utf-8")
-                try:
-                    with self.assertRaises(WorkerError):
-                        acquire_worker_lock(second)
-                finally:
-                    second.close()
+                with self.assertRaises(WorkerError):
+                    acquire_worker_lock(lock_path)
             finally:
                 first.close()
-            third = lock_path.open("a+", encoding="utf-8")
-            try:
-                acquire_worker_lock(third)
-            finally:
-                third.close()
+            third = acquire_worker_lock(lock_path)
+            third.close()
 
     def test_pr_file_paths_preserve_unicode_from_paginated_json(self) -> None:
         payload = [[

@@ -444,19 +444,21 @@ def process_pr(args: argparse.Namespace, meta: dict[str, Any], repo_root: Path) 
                 run(["git", "worktree", "remove", "--force", str(worktree)], cwd=repo_root)
 
 
-def acquire_worker_lock(lock_file: Any) -> None:
+def acquire_worker_lock(lock_path: Path) -> Any:
     """Hold a non-blocking inter-process lock on the worker lock file.
 
     The lock is released when the file object is closed or the process
     exits, matching the previous flock lifetime. Raises WorkerError when
     another live worker already holds the lock.
     """
+    lock_file = lock_path.open("a+", encoding="utf-8")
     if fcntl is not None:
         try:
             fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError as exc:
+            lock_file.close()
             raise WorkerError("another auto-review worker is already running") from exc
-        return
+        return lock_file
     # Windows fallback: lock one byte at the start of the file. The byte is
     # written only when the file is still empty; touching a byte range held
     # by another worker fails, and any such OSError means contention.
@@ -468,7 +470,9 @@ def acquire_worker_lock(lock_file: Any) -> None:
         lock_file.seek(0)
         msvcrt.locking(lock_file.fileno(), msvcrt.LK_NBLCK, 1)
     except OSError as exc:
+        lock_file.close()
         raise WorkerError("another auto-review worker is already running") from exc
+    return lock_file
 
 
 def parse_args() -> argparse.Namespace:
@@ -510,10 +514,7 @@ def main() -> int:
     if args.concurrency < 1:
         raise WorkerError("--concurrency must be at least 1")
     args.audit_root.mkdir(parents=True, exist_ok=True)
-    # Keep the lock byte intact so a second Windows worker reaches the
-    # non-blocking byte-range lock instead of failing while truncating it.
-    lock_file = (args.audit_root / ".worker.lock").open("a+", encoding="utf-8")
-    acquire_worker_lock(lock_file)
+    lock_file = acquire_worker_lock(args.audit_root / ".worker.lock")
     candidates = queued_prs(args.repo, args.label, repo_root)
     selected = []
     results = []
