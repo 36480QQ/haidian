@@ -151,6 +151,12 @@ function svgWrap(content) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect width="${W}" height="${H}" fill="${C.paper}"/>${content}</svg>`;
 }
 
+function placedImage(name, x, y, w, h, clipId, align = 'xMidYMid') {
+  const payload = fs.readFileSync(path.join(FIGURES, name)).toString('base64');
+  return `<defs><clipPath id="${clipId}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="5"/></clipPath></defs>
+    <image x="${x}" y="${y}" width="${w}" height="${h}" href="data:image/png;base64,${payload}" preserveAspectRatio="${align} slice" clip-path="url(#${clipId})"/>`;
+}
+
 function keyAreasFigure(lang) {
   const zh = lang === 'zh';
   const title = ['三站现场合同', 'THREE STATIONS AS SITE CONTRACTS'];
@@ -526,180 +532,165 @@ function pilotFigure(lang) {
 function innovationLineFigure(lang) {
   const zh = lang === 'zh';
   const extent = [116.337, 39.937, 116.359, 40.029];
-  const rect = { x: 58, y: 160, w: 1160, h: 930 };
+  const rect = { x: 58, y: 160, w: 1192, h: 930 };
   let body = header(1,
-    '让城市的问题进入研发，让AI的答案回到生活',
-    'CITY QUESTIONS IN. AI ANSWERS BACK TO LIFE.',
-    '一条京张公共创新线 × 三个不可互换的城市站点',
-    'ONE PUBLIC INNOVATION LINE × THREE URBAN STATIONS', lang);
-  body += `<defs>
-    <marker id="innov-arrow-${lang}" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="${C.cyan}"/></marker>
-    <marker id="question-arrow-${lang}" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="${C.coral}"/></marker>
-  </defs>`;
-  body += `<rect x="58" y="160" width="1160" height="930" rx="5" fill="white" stroke="${C.line}"/>`;
+    '九公里城市，就是九公里AI研发环境',
+    'THE CITY IS THE AI DEVELOPMENT ENVIRONMENT',
+    '六类城市知识接口 × 三处深度共同开发场',
+    'SIX URBAN KNOWLEDGE INTERFACES × THREE CO-DEVELOPMENT GROUNDS', lang);
+  body += `<rect x="58" y="160" width="1192" height="930" rx="5" fill="white" stroke="${C.line}"/>`;
   body += mapLayer(extent, rect, `innovation-${lang}`, { lightBuildings: true });
   body += drawDesignNetwork(extent, rect);
+  const interfaces = zh ? [
+    ['社区 X', '照护与日常服务', C.coral], ['校园 X', '研究方法与人才', C.blue],
+    ['轨道 X', '高频出行工况', C.amber], ['生态 X', '河岸与气候知识', C.green],
+    ['产业 X', '工程制造与维护', C.cyan], ['文化 X', '工程史与公众记忆', C.ink],
+  ] : [
+    ['COMMUNITY X', 'CARE + DAILY SERVICE', C.coral], ['CAMPUS X', 'RESEARCH + TALENT', C.blue],
+    ['TRANSIT X', 'MOBILITY CONDITIONS', C.amber], ['ECOLOGY X', 'RIVER + CLIMATE', C.green],
+    ['INDUSTRY X', 'ENGINEERING + REPAIR', C.cyan], ['CULTURE X', 'MEMORY + INTERPRETATION', C.ink],
+  ];
+  const ys = [270, 405, 540, 675, 810, 945];
+  interfaces.forEach((item, index) => {
+    const fromLeft = index % 2 === 0;
+    const x1 = fromLeft ? rect.x + 34 : rect.x + rect.w - 34;
+    const x2 = fromLeft ? rect.x + rect.w * .64 : rect.x + rect.w * .36;
+    const labelX = fromLeft ? rect.x + 20 : rect.x + rect.w - 244;
+    body += `<line x1="${x1}" y1="${ys[index]}" x2="${x2}" y2="${ys[index]}" stroke="white" stroke-width="12" opacity=".92"/>
+      <line x1="${x1}" y1="${ys[index]}" x2="${x2}" y2="${ys[index]}" stroke="${item[2]}" stroke-width="5" stroke-dasharray="12 8"/>
+      <rect x="${labelX}" y="${ys[index]-32}" width="224" height="64" rx="4" fill="white" stroke="${item[2]}" stroke-width="2"/>
+      ${text(labelX+14, ys[index]-6, item[0], zh ? 16 : 13, item[2], 700)}
+      ${text(labelX+14, ys[index]+18, item[1], zh ? 13 : 10, C.ink, 500)}`;
+  });
   const centers = keyAreas.features.map((area) => {
     const ring = area.geometry.coordinates[0].slice(0, -1);
     const center = ring.reduce((acc, point) => [acc[0] + point[0] / ring.length, acc[1] + point[1] / ring.length], [0, 0]);
     return project(center, extent, rect);
   });
-  const [z, a, d] = centers;
-  body += `<path d="M${d[0]-42},${d[1]} C${d[0]-190},${d[1]-80} ${z[0]-190},${z[1]+80} ${z[0]-42},${z[1]}" fill="none" stroke="white" stroke-width="18" opacity=".92"/>`;
-  body += `<path d="M${d[0]-42},${d[1]} C${d[0]-190},${d[1]-80} ${z[0]-190},${z[1]+80} ${z[0]-42},${z[1]}" fill="none" stroke="${C.coral}" stroke-width="8" stroke-dasharray="15 10" marker-end="url(#question-arrow-${lang})"/>`;
-  body += `<path d="M${z[0]+38},${z[1]} L${a[0]+38},${a[1]} L${d[0]+38},${d[1]}" fill="none" stroke="white" stroke-width="20" opacity=".92"/>`;
-  body += `<path d="M${z[0]+38},${z[1]} L${a[0]+38},${a[1]} L${d[0]+38},${d[1]}" fill="none" stroke="${C.cyan}" stroke-width="10" marker-end="url(#innov-arrow-${lang})"/>`;
-  const stationRole = zh ? ['共研 / BUILD', '开放 / OPEN', '使用 / LIVE'] : ['CO-DEVELOP / BUILD', 'OPEN / OPEN', 'USE / LIVE'];
+  const stationRole = zh ? ['把公众知识变成工程材料', '让任何团队都能接着做', '让日常生活继续改产品'] : ['TURN PUBLIC KNOWLEDGE INTO ENGINEERING', 'LET ANY TEAM CONTINUE THE WORK', 'LET DAILY LIFE KEEP CHANGING IT'];
   centers.forEach((point, index) => {
-    body += `<circle cx="${point[0]}" cy="${point[1]}" r="24" fill="${stationColors[index]}" stroke="white" stroke-width="7"/>`;
-    body += `<rect x="${point[0]+34}" y="${point[1]-38}" width="${zh ? 212 : 250}" height="76" rx="4" fill="white" stroke="${stationColors[index]}"/>`;
-    body += text(point[0]+50, point[1]-8, stationNames[lang][index], zh ? 18 : 15, C.ink, 700);
-    body += text(point[0]+50, point[1]+20, stationRole[index], 13, stationColors[index], 700);
+    const cardW = zh ? 270 : 310;
+    const cardX = index === 2 ? point[0] - cardW - 34 : point[0] + 34;
+    body += `<circle cx="${point[0]}" cy="${point[1]}" r="39" fill="${stationColors[index]}" fill-opacity=".18" stroke="white" stroke-width="12"/>
+      <circle cx="${point[0]}" cy="${point[1]}" r="22" fill="${stationColors[index]}" stroke="white" stroke-width="6"/>
+      <rect x="${cardX}" y="${point[1]-40}" width="${cardW}" height="80" rx="4" fill="white" stroke="${stationColors[index]}" stroke-width="2"/>
+      ${text(cardX+16, point[1]-11, stationNames[lang][index], zh ? 18 : 15, C.ink, 700)}
+      ${text(cardX+16, point[1]+20, stationRole[index], zh ? 13 : 10, stationColors[index], 700)}`;
   });
-  const lateral = zh ? [
-    ['高校 / 科研园区', 120, 300, z[0]-18, z[1]],
-    ['社区 / 小月河', 940, 390, a[0]+18, a[1]],
-    ['轨道 / 商业 / 日常服务', 870, 930, d[0]+18, d[1]],
-  ] : [
-    ['UNIVERSITIES / R&D', 105, 300, z[0]-18, z[1]],
-    ['COMMUNITIES / XIAOYUE', 915, 390, a[0]+18, a[1]],
-    ['TRANSIT / COMMERCE / DAILY LIFE', 805, 930, d[0]+18, d[1]],
-  ];
-  lateral.forEach((item, index) => {
-    body += `<rect x="${item[1]}" y="${item[2]-30}" width="${index === 2 ? 300 : 230}" height="54" rx="4" fill="${C.ink}"/>`;
-    body += text(item[1]+14, item[2]+5, item[0], zh ? 14 : 12, C.white, 650);
+  body += `<rect x="1280" y="160" width="662" height="930" rx="5" fill="white" stroke="${C.line}"/>
+    ${text(1316, 216, zh ? 'AI由城市共同做成' : 'AI IS MADE WITH THE CITY', zh ? 28 : 24, C.ink, 700)}
+    ${lines(1316, 254, zh ? ['不是把生活变成测试场，而是让生活经验、', '研究方法和工程能力共享同一张研发桌。'] : ['Urban life is not a testing ground.', 'Experience, research and engineering', 'share the same development table.'], zh ? 16 : 14, C.muted, 500, 1.45)}`;
+  const photos = ['experience-zhongzhi.png', 'experience-ai-origin.png', 'experience-dazhongsi.png'];
+  const photoLabels = zh ? ['公共实验花园', '公共共研大厅', '城市生活客厅'] : ['PUBLIC EXPERIMENT GARDEN', 'PUBLIC CO-DEVELOPMENT HALL', 'CITY LIFE ROOM'];
+  photos.forEach((photo, index) => {
+    const y = 360 + index * 218;
+    body += placedImage(photo, 1316, y, 590, 188, `innovation-photo-${lang}-${index}`, index === 2 ? 'xMaxYMid' : 'xMidYMid');
+    body += `<rect x="1316" y="${y+140}" width="590" height="48" fill="${C.ink}" fill-opacity=".86"/>`;
+    body += text(1334, y+171, `${stationNames[lang][index]} · ${photoLabels[index]}`, zh ? 15 : 12, C.white, 700);
   });
-  body += `<rect x="1248" y="160" width="694" height="930" rx="5" fill="white" stroke="${C.line}"/>`;
-  body += text(1284, 218, zh ? '一条创新链，不是一套门禁' : 'AN INNOVATION LINE, NOT AN ACCESS GATE', zh ? 24 : 21, C.ink, 700);
-  const steps = zh ? [
-    ['01 城市出题', '居民、服务人员、园区与河岸把困难写成可工作的任务', C.coral],
-    ['02 众智园共研', '开发者把任务做成工况、原型与开放测试方法', C.blue],
-    ['03 AI原点开放', '高校、企业与公众复现、解释、修改并形成公共能力', C.green],
-    ['04 大钟寺使用', '成果进入通勤、商业和社区服务，判断是否真正改善生活', C.amber],
-    ['05 带题返回', '现场反馈成为下一版研发输入，而不是停在投诉端', C.coral],
-  ] : [
-    ['01 FRAME THE QUESTION', 'Residents, staff, campuses and the river edge turn difficulty into a workable brief.', C.coral],
-    ['02 CO-DEVELOP AT ZHONGZHI', 'Developers turn the brief into conditions, prototypes and open test methods.', C.blue],
-    ['03 OPEN AT AI ORIGIN', 'Universities, enterprises and the public reproduce, explain and improve it.', C.green],
-    ['04 USE AT DAZHONGSI', 'The answer meets transit, commerce and community life to prove real value.', C.amber],
-    ['05 RETURN WITH A QUESTION', 'Field feedback becomes the next research input instead of ending as a complaint.', C.coral],
-  ];
-  steps.forEach((step, index) => {
-    const y = 278 + index * 145;
-    body += `<circle cx="1299" cy="${y+29}" r="18" fill="${step[2]}"/>`;
-    if (index < steps.length-1) body += `<line x1="1299" y1="${y+50}" x2="1299" y2="${y+132}" stroke="${C.line}" stroke-width="4"/>`;
-    body += text(1333, y+21, step[0], zh ? 18 : 15, step[2], 700);
-    body += lines(1333, y+57, zh ? [step[1]] : wrapWords(step[1], 48), zh ? 16 : 13, C.ink, 500, 1.45);
-  });
-  body += `<rect x="1284" y="1010" width="622" height="54" rx="4" fill="${C.ink}"/>`;
-  body += text(1595, 1044, zh ? 'X = 城市问题 × AI能力' : 'X = CITY QUESTION × AI CAPABILITY', zh ? 18 : 16, C.white, 700, 'middle');
+  body += `<rect x="1316" y="1028" width="590" height="38" rx="3" fill="${C.ink}"/>`;
+  body += text(1611, 1054, zh ? 'X = 不同城市知识共享一张研发桌' : 'X = URBAN KNOWLEDGE SHARES ONE DEVELOPMENT TABLE', zh ? 15 : 12, C.white, 700, 'middle');
   return svgWrap(body + footer(lang));
 }
 
 function stationInnovationFigure(lang) {
   const zh = lang === 'zh';
   let body = header(3,
-    '三站城市空间：做东西、开放东西、真正使用东西',
-    'THREE URBAN STATIONS: MAKE, OPEN, USE',
-    '创新活动是空间主体；治理合同是安全底盘',
-    'INNOVATION IS THE SPATIAL PROGRAMME; GOVERNANCE IS THE FOUNDATION', lang);
-  const titles = zh ? ['众智园｜把问题做成原型', 'AI原点｜把原型变成公共能力', '大钟寺｜让公共能力进入生活'] : ['ZHONGZHI | TURN QUESTIONS INTO PROTOTYPES', 'AI ORIGIN | TURN PROTOTYPES INTO PUBLIC CAPABILITY', 'DAZHONGSI | PUT CAPABILITY INTO DAILY LIFE'];
-  const users = zh ? ['开发者 · 企业 · 居民 · 孩子', '高校 · 开发者 · 创业者 · 社区', '通勤者 · 老人 · 儿童 · 商户'] : ['DEVELOPERS · ENTERPRISES · RESIDENTS · CHILDREN', 'UNIVERSITIES · DEVELOPERS · START-UPS · COMMUNITY', 'COMMUTERS · OLDER PEOPLE · CHILDREN · SHOPS'];
-  const spaces = zh ? [
-    ['城市问题厅', '开发者工作台', '开放实验庭院', '观察廊', '机器人测试街', '清河生态工况'],
-    ['城市问题墙', '开放实验大厅', '原型工坊', '开源剧场', '开发者阶梯', '人才生活庭院'],
-    ['轨道到达厅', '城市服务街', '人工服务岛', '社区问题桌', '终端工坊', '公共活动客厅'],
+    '三种共同开发关系，三种值得到访的城市空间',
+    'THREE WAYS TO CO-DEVELOP IN THE CITY',
+    '公众不在流程末端反馈，而在研发桌边共同修改',
+    'THE PUBLIC CHANGES THE WORK AT THE DEVELOPMENT TABLE', lang);
+  const titles = zh ? ['众智园｜和城市一起做', 'AI原点｜让别人接着做', '大钟寺｜让生活继续改'] : ['ZHONGZHI | MAKE WITH THE CITY', 'AI ORIGIN | LET OTHERS CONTINUE', 'DAZHONGSI | LET LIFE KEEP CHANGING IT'];
+  const photos = ['experience-zhongzhi.png', 'experience-ai-origin.png', 'experience-dazhongsi.png'];
+  const relations = zh ? [
+    ['公众知识', '全尺度工况桌', '共同改原型'],
+    ['一个团队的成果', '公共原型长桌', '另一个团队接手'],
+    ['日常使用经验', '社区共研桌', '下一轮研发任务'],
   ] : [
-    ['QUESTION HALL', 'DEVELOPER BENCHES', 'OPEN LAB COURT', 'OBSERVATION', 'ROBOT TEST STREET', 'QINGHE ECO FIXTURES'],
-    ['QUESTION WALL', 'OPEN LAB HALL', 'PROTOTYPE WORKSHOP', 'OPEN-SOURCE THEATRE', 'DEVELOPER STEPS', 'TALENT-LIFE COURT'],
-    ['TRANSIT ARRIVAL', 'CITY SERVICE STREET', 'STAFFED ISLAND', 'COMMUNITY QUESTION DESK', 'TERMINAL WORKSHOP', 'PUBLIC ACTIVITY ROOM'],
+    ['PUBLIC KNOWLEDGE', 'FULL-SCALE CONDITION TABLE', 'CHANGE THE PROTOTYPE TOGETHER'],
+    ['ONE TEAM\'S WORK', 'PUBLIC PROTOTYPE TABLE', 'THE NEXT TEAM CONTINUES'],
+    ['LIVED EXPERIENCE', 'NEIGHBOURHOOD WORKTABLE', 'THE NEXT DEVELOPMENT TASK'],
   ];
-  const foundations = zh ? ['TEST：边界、急停、撤出', 'RELEASE：方法、权利、责任', 'USE：人工服务、无障碍、返回'] : ['TEST: LIMIT · STOP · EXIT', 'RELEASE: METHOD · RIGHTS · OWNER', 'USE: STAFF · ACCESS · RETURN'];
+  const spaces = zh ? [
+    ['公共实验花园', '机器人开放测试庭', '开发者工坊', '河岸生态样场'],
+    ['公共共研大厅', '透明实验室', '开源剧场', '开发者阶梯与咖啡'],
+    ['轨道到达客厅', '人工服务岛', '终端工坊', '商业休息与社区活动'],
+  ] : [
+    ['PUBLIC EXPERIMENT GARDEN', 'OPEN ROBOT COURT', 'MAKER WORKSHOP', 'RIVERSIDE ECO FIELD'],
+    ['PUBLIC CO-DEVELOPMENT HALL', 'TRANSPARENT LABS', 'OPEN-SOURCE THEATRE', 'STEPS + COFFEE'],
+    ['TRANSIT ARRIVAL ROOM', 'STAFFED SERVICE ISLAND', 'TERMINAL WORKSHOP', 'COMMERCE + COMMUNITY'],
+  ];
+  const foundations = zh ? ['TEST：安全边界、急停、撤出', 'RELEASE：方法、权利、责任', 'USE：人工服务、无障碍、返回'] : ['TEST: LIMIT · STOP · EXIT', 'RELEASE: METHOD · RIGHTS · OWNER', 'USE: STAFF · ACCESS · RETURN'];
   keyAreas.features.forEach((area, index) => {
     const x = 58 + index * 636;
     const color = stationColors[index];
-    const mapRect = { x: x+20, y: 214, w: 566, h: 250 };
-    const ring = area.geometry.coordinates[0];
-    const extent = extentForRing(ring, 0.14);
     body += `<rect x="${x}" y="160" width="606" height="930" rx="5" fill="white" stroke="${C.line}"/><rect x="${x}" y="160" width="606" height="10" fill="${color}"/>`;
-    body += text(x+24, 203, titles[index], zh ? 20 : 15, C.ink, 700);
-    body += mapLayer(extent, mapRect, `station-innovation-${lang}-${index}`, { lightBuildings: true });
-    body += ringOverlay(ring, extent, mapRect, color, stationNames[lang][index]);
-    body += text(x+24, 500, users[index], zh ? 14 : 11, color, 700);
-    const px = x+24, py = 542, pw = 558, ph = 354;
-    body += `<rect x="${px}" y="${py}" width="${pw}" height="${ph}" rx="5" fill="${[C.paleBlue,C.paleGreen,C.paleAmber][index]}" stroke="${color}"/>`;
-    if (index === 0) {
-      body += `<rect x="${px+26}" y="${py+26}" width="188" height="92" fill="white" stroke="${color}"/><rect x="${px+232}" y="${py+26}" width="296" height="92" fill="white" stroke="${color}"/>`;
-      body += `<rect x="${px+26}" y="${py+140}" width="502" height="58" fill="white" stroke="${C.green}"/><rect x="${px+26}" y="${py+218}" width="96" height="108" fill="white" stroke="${C.green}"/><rect x="${px+140}" y="${py+218}" width="388" height="108" fill="white" stroke="${C.coral}" stroke-width="3"/>`;
-      body += text(px+40,py+64,spaces[index][0],13,C.ink,700)+text(px+246,py+64,spaces[index][1],13,C.ink,700)+text(px+40,py+176,spaces[index][2],13,C.ink,700)+text(px+40,py+256,spaces[index][3],zh?12:10,C.ink,700)+text(px+154,py+256,spaces[index][4],zh?13:11,C.ink,700)+text(px+154,py+294,spaces[index][5],zh?12:10,C.green,700);
-    } else if (index === 1) {
-      body += `<rect x="${px+26}" y="${py+26}" width="80" height="302" fill="${C.ink}"/><rect x="${px+124}" y="${py+26}" width="184" height="138" fill="white" stroke="${color}"/><rect x="${px+326}" y="${py+26}" width="202" height="138" fill="white" stroke="${color}"/>`;
-      body += `<path d="M${px+142},${py+242} L${px+278},${py+180} L${px+414},${py+242}" fill="none" stroke="${color}" stroke-width="14"/><rect x="${px+124}" y="${py+262}" width="404" height="66" rx="30" fill="white" stroke="${C.green}"/>`;
-      body += text(px+66,py+178,spaces[index][0],zh?12:9,C.white,700,'middle')+text(px+140,py+67,spaces[index][1],zh?12:10,C.ink,700)+text(px+342,py+67,spaces[index][2],zh?12:10,C.ink,700)+text(px+250,py+224,spaces[index][3],zh?12:10,C.ink,700,'middle')+text(px+430,py+224,spaces[index][4],zh?12:10,C.ink,700,'middle')+text(px+326,py+302,spaces[index][5],zh?12:10,C.green,700,'middle');
-    } else {
-      body += `<rect x="${px+26}" y="${py+26}" width="502" height="74" fill="white" stroke="${C.blue}" stroke-width="3"/><rect x="${px+26}" y="${py+122}" width="502" height="64" fill="white" stroke="${color}"/>`;
-      body += `<circle cx="${px+120}" cy="${py+256}" r="55" fill="white" stroke="${C.green}" stroke-width="3"/><rect x="${px+196}" y="${py+210}" width="142" height="94" fill="white" stroke="${C.coral}"/><rect x="${px+356}" y="${py+210}" width="172" height="94" fill="white" stroke="${color}"/>`;
-      body += text(px+277,py+70,spaces[index][0],13,C.ink,700,'middle')+text(px+277,py+162,spaces[index][1],13,C.ink,700,'middle')+text(px+120,py+260,spaces[index][2],zh?11:9,C.green,700,'middle')+text(px+267,py+250,spaces[index][3],zh?11:9,C.coral,700,'middle')+text(px+442,py+250,spaces[index][4],zh?11:9,C.ink,700,'middle')+text(px+442,py+280,spaces[index][5],zh?11:9,C.ink,700,'middle');
-    }
-    for (let i=0; i<7; i++) {
-      const cx=px+54+i*74, cy=py+ph-18-(i%2)*9;
-      body += `<circle cx="${cx}" cy="${cy-10}" r="6" fill="${color}"/><line x1="${cx}" y1="${cy-2}" x2="${cx}" y2="${cy+13}" stroke="${color}" stroke-width="3"/>`;
-    }
-    body += `<rect x="${x+24}" y="934" width="558" height="74" rx="4" fill="${C.ink}"/>`;
-    body += text(x+44, 966, zh ? '安全底盘' : 'SAFETY FOUNDATION', 12, '#a9bed1', 700);
-    body += text(x+44, 992, foundations[index], zh ? 15 : 12, C.white, 650);
-    body += text(x+24, 1052, zh ? ['看见问题怎样变成原型','加入方法怎样被共同改进','让日常使用产生下一道题'][index] : ['SEE A QUESTION BECOME A PROTOTYPE','JOIN THE OPEN IMPROVEMENT','TURN DAILY USE INTO THE NEXT QUESTION'][index], zh ? 15 : 12, color, 700);
+    body += placedImage(photos[index], x+18, 178, 570, 360, `station-photo-${lang}-${index}`, index === 2 ? 'xMaxYMid' : 'xMidYMid');
+    body += `<rect x="${x+18}" y="458" width="570" height="80" fill="${C.ink}" fill-opacity=".88"/>`;
+    body += text(x+38, 494, titles[index], zh ? 20 : 15, C.white, 700);
+    body += text(x+38, 520, stationNames[lang][index], 12, '#b8c8da', 700);
+    const y = 594;
+    relations[index].forEach((label, relIndex) => {
+      const cx = x + 84 + relIndex * 218;
+      body += `<circle cx="${cx}" cy="${y}" r="19" fill="${color}" fill-opacity="${relIndex === 1 ? 1 : .18}" stroke="${color}" stroke-width="3"/>`;
+      if (relIndex < 2) body += `<line x1="${cx+24}" y1="${y}" x2="${cx+194}" y2="${y}" stroke="${color}" stroke-width="3"/>`;
+      body += text(cx, y+58, label, zh ? 13 : 10, relIndex === 1 ? color : C.ink, 700, 'middle');
+    });
+    body += `<line x1="${x+28}" y1="690" x2="${x+578}" y2="690" stroke="${C.line}"/>`;
+    body += text(x+28, 730, zh ? '持续开放的日常城市用途' : 'EVERYDAY URBAN PROGRAMME', zh ? 15 : 11, C.muted, 700);
+    spaces[index].forEach((label, spaceIndex) => {
+      const sy = 774 + spaceIndex * 47;
+      body += `<circle cx="${x+38}" cy="${sy-5}" r="5" fill="${color}"/>${text(x+55, sy, label, zh ? 15 : 12, C.ink, 600)}`;
+    });
+    body += `<rect x="${x+24}" y="974" width="558" height="68" rx="4" fill="${C.ink}"/>`;
+    body += text(x+44, 1002, zh ? '质量保障层' : 'QUALITY FOUNDATION', 11, '#a9bed1', 700);
+    body += text(x+44, 1028, foundations[index], zh ? 14 : 11, C.white, 650);
+    body += text(x+24, 1070, zh ? ['公众知识直接进入工程','成果留下让别人继续','生活经验生成下一版'][index] : ['PUBLIC KNOWLEDGE ENTERS ENGINEERING','WORK REMAINS OPEN FOR THE NEXT TEAM','LIVED EXPERIENCE WRITES THE NEXT VERSION'][index], zh ? 14 : 11, color, 700);
   });
   return svgWrap(body + footer(lang));
 }
 
 function cityQuestionJourneyFigure(lang) {
   const zh = lang === 'zh';
-  const extent = [116.337, 39.937, 116.359, 40.029];
-  const rect = { x: 58, y: 160, w: 850, h: 930 };
   let body = header(2,
-    '一个城市问题，如何变成AI能力，又如何回来继续改变它',
-    'ONE CITY QUESTION CHANGES AN AI ANSWER',
-    '概念演练：大钟寺无障碍到达 × 72岁非数字用户',
-    'DAZHONGSI ACCESS × A 72-YEAR-OLD NON-DIGITAL USER', lang);
-  body += `<defs><marker id="journey-arrow-${lang}" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="${C.coral}"/></marker></defs>`;
-  body += `<rect x="58" y="160" width="850" height="930" rx="5" fill="white" stroke="${C.line}"/>` + mapLayer(extent, rect, `question-journey-${lang}`, { lightBuildings: true }) + drawDesignNetwork(extent, rect);
-  const centers = keyAreas.features.map((area) => {
-    const ring = area.geometry.coordinates[0].slice(0,-1);
-    return project(ring.reduce((acc,p)=>[acc[0]+p[0]/ring.length,acc[1]+p[1]/ring.length],[0,0]), extent, rect);
-  });
-  const [z,a,d]=centers;
-  body += `<path d="M${d[0]-20},${d[1]} C${d[0]-160},${d[1]-110} ${z[0]-160},${z[1]+110} ${z[0]-20},${z[1]} L${a[0]+28},${a[1]} L${d[0]+28},${d[1]}" fill="none" stroke="white" stroke-width="18" opacity=".9"/>`;
-  body += `<path d="M${d[0]-20},${d[1]} C${d[0]-160},${d[1]-110} ${z[0]-160},${z[1]+110} ${z[0]-20},${z[1]} L${a[0]+28},${a[1]} L${d[0]+28},${d[1]}" fill="none" stroke="${C.coral}" stroke-width="8" stroke-dasharray="13 9" marker-end="url(#journey-arrow-${lang})"/>`;
-  centers.forEach((point,index)=>body += `<circle cx="${point[0]}" cy="${point[1]}" r="20" fill="${stationColors[index]}" stroke="white" stroke-width="6"/>`);
-  body += `<rect x="940" y="160" width="1002" height="930" rx="5" fill="white" stroke="${C.line}"/>`;
-  body += text(980,214,zh?'问题主角：不是机器人，而是一次真实到达':'THE PROTAGONIST IS AN ARRIVAL PROBLEM, NOT A ROBOT',zh?23:19,C.ink,700);
-  const stages = zh ? [
-    ['01 大钟寺提出问题','72岁的周阿姨不用手机，能否在复杂到达环境中获得连续、有人支持的无障碍服务？',C.amber],
-    ['02 众智园把问题做成工况','拥挤、设备停靠、围观、轮椅优先和人工接管被组合成可重复任务；SC-03只是候选工具。',C.blue],
-    ['03 0.8失败也产生知识','意外穿越触发急停；失败没有被抹掉，而是改进测试边界和下一版原型。',C.coral],
-    ['04 AI原点开放共同改进','开发者和无障碍专业人员复现方法、检查边界并修改接口，0.9才进入有限使用。',C.green],
-    ['05 大钟寺真实使用','设备无碰撞，但停靠与围观仍侵入优先路线；人工服务继续，周阿姨线下提出问题。',C.amber],
-    ['06 带着新问题返回','0.10携带“停靠 + 围观 + 轮椅优先”新工况返回众智园，城市生活改变下一轮研发。',C.coral],
-  ] : [
-    ['01 DAZHONGSI FRAMES THE QUESTION','Can 72-year-old Ms Zhou complete accessible arrival without a phone, with clear and staffed support?',C.amber],
-    ['02 ZHONGZHI MAKES CONDITIONS','Crowding, parking, spectators, wheelchair priority and takeover become a repeatable task; SC-03 is one tool.',C.blue],
-    ['03 VERSION 0.8 FAILS USEFULLY','An unexpected crossing triggers a stop. Failure changes the boundary and next prototype instead of disappearing.',C.coral],
-    ['04 AI ORIGIN OPENS IMPROVEMENT','Developers and access specialists reproduce the method, inspect limits and revise the interface before 0.9 use.',C.green],
-    ['05 DAZHONGSI USES IT','No collision occurs, yet parking and spectators invade the priority route. Staff remain; Ms Zhou reports offline.',C.amber],
-    ['06 RETURN WITH A NEW QUESTION','Version 0.10 carries parking + spectators + wheelchair priority back to Zhongzhi for the next research cycle.',C.coral],
+    '不是一个产品通关，而是一群人共同改同一个问题',
+    'ONE CITY QUESTION, CHANGED TOGETHER',
+    '周阿姨的无障碍到达 × 城市共同开发',
+    'MS ZHOU\'S ACCESSIBLE ARRIVAL × URBAN CO-DEVELOPMENT', lang);
+  const panels = [
+    { photo: 'experience-dazhongsi.png', align: 'xMinYMid', color: C.amber },
+    { photo: 'experience-zhongzhi.png', align: 'xMidYMid', color: C.blue },
+    { photo: 'experience-ai-origin.png', align: 'xMidYMid', color: C.green },
+    { photo: 'experience-dazhongsi.png', align: 'xMaxYMid', color: C.coral },
   ];
-  stages.forEach((stage,index)=>{
-    const y=258+index*126;
-    body += `<circle cx="992" cy="${y+17}" r="15" fill="${stage[2]}"/>`;
-    if(index<stages.length-1) body += `<line x1="992" y1="${y+35}" x2="992" y2="${y+116}" stroke="${C.line}" stroke-width="4"/>`;
-    body += text(1024,y+12,stage[0],zh?17:14,stage[2],700);
-    const desc=stage[1];
-    const chunks=zh?[desc]:wrapWords(desc, 72);
-    body += lines(1024,y+48,chunks,zh?15:12,C.ink,500,1.42);
+  const stages = zh ? [
+    ['大钟寺｜共同定义', '周阿姨、轮椅使用者与服务人员把“连续到达”写成城市任务，不假定未经核验的现场断点。', '使用者决定什么算改善'],
+    ['众智园｜共同制作', '公众与开发者一起移动路缘、停靠位和人群标记，把身体经验变成可重复工况。', '使用者直接改路线和原型'],
+    ['AI原点｜共同接续', '方法、接口和限制留在公共原型长桌；另一团队复现、拆解并继续修改。', '成果成为别人能继续做的能力'],
+    ['大钟寺｜生活继续改', '设备没有碰撞，停靠与围观却影响转弯；人工服务继续，新问题回到研发桌。', '终点立刻成为下一题起点'],
+  ] : [
+    ['DAZHONGSI | DEFINE TOGETHER', 'Ms Zhou, wheelchair users and staff frame continuous arrival without inventing an unsurveyed defect.', 'USERS DECIDE WHAT COUNTS AS IMPROVEMENT'],
+    ['ZHONGZHI | MAKE TOGETHER', 'Participants and developers move kerbs, parking and crowd markers, turning body knowledge into repeatable conditions.', 'USERS CHANGE THE ROUTE AND PROTOTYPE'],
+    ['AI ORIGIN | CONTINUE TOGETHER', 'Method, interfaces and limits remain on a public table for another team to reproduce, dismantle and change.', 'WORK BECOMES A CAPABILITY OTHERS CAN CONTINUE'],
+    ['DAZHONGSI | LIFE KEEPS CHANGING IT', 'No collision occurs, yet parking and spectators restrict turning. Staff remain and the new issue returns.', 'THE END BECOMES THE NEXT QUESTION'],
+  ];
+  panels.forEach((panel, index) => {
+    const x = 58 + index * 471;
+    body += `<rect x="${x}" y="160" width="441" height="900" rx="5" fill="white" stroke="${C.line}"/><rect x="${x}" y="160" width="441" height="9" fill="${panel.color}"/>`;
+    body += placedImage(panel.photo, x+14, 181, 413, 430, `journey-photo-${lang}-${index}`, panel.align);
+    body += `<rect x="${x+14}" y="526" width="413" height="85" fill="${C.ink}" fill-opacity=".88"/>`;
+    body += text(x+32, 565, stages[index][0], zh ? 18 : 13, C.white, 700);
+    body += text(x+32, 590, index === 1 ? 'SC-03 IS A TOOL, NOT THE PROTAGONIST' : '', 9, '#b9cadc', 700);
+    body += lines(x+28, 670, zh ? [stages[index][1].slice(0, 29), stages[index][1].slice(29, 58), stages[index][1].slice(58)] : wrapWords(stages[index][1], 44), zh ? 15 : 12, C.ink, 500, 1.55);
+    body += `<line x1="${x+28}" y1="820" x2="${x+413}" y2="820" stroke="${C.line}"/>`;
+    body += `<circle cx="${x+48}" cy="874" r="18" fill="${panel.color}"/>`;
+    body += lines(x+78, 865, zh ? [stages[index][2]] : wrapWords(stages[index][2], 34), zh ? 14 : 11, panel.color, 700, 1.4);
+    const actors = zh ? ['周阿姨 · 轮椅使用者 · 服务人员', '使用者 · 开发者 · 工程师', '居民 · 高校 · 团队 · 开发者', '通勤者 · 商户 · 服务人员 · 开发者'][index] : ['MS ZHOU · WHEELCHAIR USERS · STAFF', 'USERS · DEVELOPERS · ENGINEERS', 'RESIDENTS · UNIVERSITIES · TEAMS', 'COMMUTERS · SHOPS · STAFF · DEVELOPERS'][index];
+    body += `<rect x="${x+28}" y="960" width="385" height="58" rx="4" fill="${[C.paleAmber,C.paleBlue,C.paleGreen,C.paleCoral][index]}"/>`;
+    body += text(x+220, 995, actors, zh ? 12 : 9, C.ink, 700, 'middle');
   });
-  body += `<rect x="980" y="1014" width="926" height="54" rx="4" fill="${C.ink}"/>`;
-  body += text(1443,1048,zh?'RETURN = 真实生活为下一轮研发重新出题':'RETURN = DAILY LIFE WRITES THE NEXT RESEARCH BRIEF',zh?17:15,C.white,700,'middle');
+  body += `<rect x="58" y="1034" width="1854" height="38" rx="3" fill="${C.ink}"/>`;
+  body += text(985, 1060, zh ? '城市问题不是一次输入：公众始终坐在研发桌边' : 'A CITY QUESTION IS NOT A ONE-OFF INPUT: THE PUBLIC STAYS AT THE DEVELOPMENT TABLE', zh ? 16 : 13, C.white, 700, 'middle');
   return svgWrap(body + footer(lang));
 }
 
