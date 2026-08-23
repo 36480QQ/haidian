@@ -20,7 +20,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "08a4c5f937e4f5c8851f0a679af286e49f5bb2e1d501640da6acff5f4a618cbc"
+      "sha256": "52f2ee501af73855773e2233b21f567967821e7a3a09d8dc98d1867fd002fb6d"
     },
     {
       "path": "assets/figures/corridor-atlas.en.png",
@@ -269,7 +269,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "f2141b1bc25da2af4bcd36799ea8dc4a856202666fddfd2e2a5e5c017acc26e0"
+      "sha256": "7c9a651f57cd0667dd4ccd90a1ff7fd67d4fe471b1fd9a36bbea7c9bdc8f2c59"
     },
     {
       "path": "compliance_matrix.json",
@@ -376,7 +376,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "28e7c04395d6406b2567bb986340fb0c633d2027e7fd6f9e3aa909850c9b3c42"
+      "sha256": "0353de7325d382f1d192db39659fe9a217b4bc10afe68bd6191ad808a3886771"
     },
     {
       "path": "proposal.en.md",
@@ -384,14 +384,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5572bf985cff03f7b208261fe32d2b5e4d09c773dac74b913ca9b2577e18101e"
+      "sha256": "9e9bdd30ab3cf26b8b5cdc131d1b4aa5773fafdae96e06d40d015a4501df8dae"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "56b5ea7641d5c5d75b3f1d13b6fea6121a08cb8a130984cf2d7c72d5ef8e7299"
+      "sha256": "bd0fe8169ff2f7ad90a4814f396a0ccec690803144faeb0c1e666baaec7092cf"
     },
     {
       "path": "report/copyright_statement.md",
@@ -411,14 +411,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "af271e4a8c0ec39c6d6869506321b5cdbb5ad416ca006056d3638f89dce8a8d7"
+      "sha256": "e64461ad01c9b6884968e915123f29e05202f89577e49eae5b91494914c975e0"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0fcb3e7564151454f5f37c6c89cde1eae18df5206f1eeb8f256b290d3a08ef54"
+      "sha256": "4037fe93d7f29e141d25412981f3edcdd7fa92a30191dccf17ba9c8a9d019592"
     },
     {
       "path": "risk.json",
@@ -430,7 +430,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0f4dbd975b1f1a67607adafa38f84b4b2dd63930b8bd30c71d3d26fb710eb8c6"
+      "sha256": "db4199e18bf09fb8f76f9a9c91e2ea4dafe932f8294638743dbfc53d06352189"
     },
     {
       "path": "simulation.json",
@@ -505,6 +505,13 @@
       "required": true,
       "language": "neutral",
       "sha256": "c90087f35bfa8371bfaebb48c7780f9e1ff5f7311d95aa3b9649a632c3ebf456"
+    },
+    {
+      "path": "visual/assets/delivery-alternatives-register.json",
+      "role": "visualization",
+      "required": true,
+      "language": "neutral",
+      "sha256": "5ffd589245e0f972028f914a58cd459438e73f79f070d6f260df582a55676b50"
     },
     {
       "path": "visual/assets/delivery-build-receipt.json",

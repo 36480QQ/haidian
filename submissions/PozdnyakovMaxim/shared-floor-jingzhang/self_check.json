@@ -89,6 +89,7 @@
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/corridor-context.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/corridor-room-figure-ground.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/dazhongsi-osm-context.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-alternatives-register.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-build-receipt.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-changeover-binding.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-field-baseline-protocol.json",
@@ -269,7 +270,7 @@
       "ai_package_stages": {
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang": "formal"
       },
-      "total_bytes": 38076264,
+      "total_bytes": 38304452,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -343,15 +344,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 111,
+        "known_metric_refs_required": 126,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 47,
+          "source": 48,
           "standard": 6,
           "depth": 14,
-          "data": 25,
-          "metric": 72
+          "data": 26,
+          "metric": 100
         }
       }
     },
