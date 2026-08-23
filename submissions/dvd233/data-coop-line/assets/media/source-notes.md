@@ -34,7 +34,7 @@
 - 版本差异：2025 官方过程通告标题为 2022—2035，2026 报道所述获批版本为 2024—2035；在取得官方批复文件前分别保留原标签，不静默归一化或推断修编链。
 - 权利边界：只作最小事实转述和链接引用，不复制新闻图片、页面视觉或长段原文；报道数字不写入 `metrics.json`，文字四至不用于绘制 polygon。
 
-机器入口为 `visual/assets/planning-alignment-register.json`（`DATA-COOP-PLAN-ALIGNMENT-01`，SHA-256 `daea14242a25926bebbe781d948571117e71c418304dc7a7c7951e49b37e2f7d`）；审计脚本同时钉死现有 GeoJSON 与完整 `metrics.json` 哈希，确保文本对齐不被偷换为空间精度升级。C-01/C-02/C-04 合成容量包络新增六项非空间 E2 治理指标后已再次重认证整份指标文件，九个 geometry 哈希与证据签名未变化。
+机器入口为 `visual/assets/planning-alignment-register.json`（`DATA-COOP-PLAN-ALIGNMENT-01`，SHA-256 `8a31ff2d9d8d4883e889184198cafe406d413b6e8f8af75463807ef1abeb3b39`）；审计脚本同时钉死现有 GeoJSON 与完整 `metrics.json` 哈希，确保文本对齐不被偷换为空间精度升级。C-01/C-02/C-04 合成容量包络新增六项非空间 E2 治理指标后已再次重认证整份指标文件，九个 geometry 哈希与证据签名未变化。
 
 ## 使用边界
 

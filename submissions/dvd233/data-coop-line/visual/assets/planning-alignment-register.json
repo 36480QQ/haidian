@@ -184,10 +184,10 @@
     "full_text_attachment_http_status_at_retrieval": 404
   },
   "current_package_recertification": {
-    "recertified_at": "2026-08-23T02:58:25+08:00",
-    "reason": "The SCN-06 C-01/C-02/C-04 synthetic capacity admission round appends six non-spatial E2 governance metrics, so the complete metrics.json pin is deliberately renewed instead of bypassed or narrowed.",
-    "prior_metrics_sha256": "9c27a7ffbdb60768a9084ef7d41f5073fb0102b4f7f73629c1423a15748c8128",
-    "current_metrics_sha256": "d94a8b7bcad389bf26aad70d7ca4b02d4f02042b9a17288e990361f5167d2ba5",
+    "recertified_at": "2026-08-24T02:30:00+08:00",
+    "reason": "The BRAND-IDENTITY-01 round appends eight non-spatial E2 brand-identity audit metrics on top of the six capacity metrics from the previous recertification, so the complete metrics.json pin is deliberately renewed a second time instead of bypassed or narrowed.",
+    "prior_metrics_sha256": "d94a8b7bcad389bf26aad70d7ca4b02d4f02042b9a17288e990361f5167d2ba5",
+    "current_metrics_sha256": "6abfc1a9e00228244506266e95829e3ce0beff4d4a9768be6f98e25ffd3c4375",
     "metric_change_scope": "non_spatial_e2_governance_metrics_only",
     "added_metric_ids": [
       "synthetic_capacity_resource_gate_total",
@@ -195,7 +195,15 @@
       "synthetic_capacity_project_gate_passed",
       "synthetic_capacity_negative_path_fail_closed_total",
       "synthetic_capacity_minimum_headroom_requests",
-      "synthetic_capacity_no_data_to_data_capacity_ratio"
+      "synthetic_capacity_no_data_to_data_capacity_ratio",
+      "brand_identity_contrast_pair_total",
+      "brand_identity_contrast_pair_passed",
+      "brand_identity_lockup_bilingual_coverage_ratio",
+      "brand_identity_no_color_only_coverage_ratio",
+      "brand_identity_application_anchor_coverage_ratio",
+      "brand_identity_negative_fixture_fail_closed_total",
+      "brand_identity_audit_case_total",
+      "brand_identity_audit_case_passed"
     ],
     "planning_alignment_claims_changed": false,
     "spatial_metrics_or_geometry_changed": false,
@@ -204,7 +212,7 @@
     "boundary": "This recertification does not turn synthetic capacity metrics into planning, field, stakeholder, professional, approval, partnership or implementation evidence, and does not confirm people, hardware, engineering or operating capacity."
   },
   "frozen_package_inputs": {
-    "metrics.json": "d94a8b7bcad389bf26aad70d7ca4b02d4f02042b9a17288e990361f5167d2ba5",
+    "metrics.json": "6abfc1a9e00228244506266e95829e3ce0beff4d4a9768be6f98e25ffd3c4375",
     "geometry/buildings.geojson": "2d95a1f77a6a609ebbfd909b1cde56b0757050ec6335262d95bd900343fc7c1f",
     "geometry/constraints.geojson": "0da1ca77d06424555dcc6bc2e1bba37a87c44988fd199d95f458c519003af8b7",
     "geometry/green_space.geojson": "e090b6fb2f3b78f705e8e23921085dd948555bb4377cc31f154ca5d576054d80",

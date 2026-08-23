@@ -33,7 +33,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## P1-05｜已获批街区控规的文本级对齐与证据边界
 
-2026-08-22 的证据升级把官方公开版页面纳入证据链：海淀区人民政府门户网站于 2026-08-17 发布该控规（公开版）文本页，总则条款可直接核验；仍不把任何文本升级为空间数据。唯一事实源 `visual/assets/planning-alignment-register.json` 的 Register ID 为 `DATA-COOP-PLAN-ALIGNMENT-01`，SHA-256 为 `daea14242a25926bebbe781d948571117e71c418304dc7a7c7951e49b37e2f7d`；分支冻结于 `upstream/main@c79854e90b2e9a641d367c9e91f3f3031e20c127`。该台账同时钉死完整 `metrics.json` 与九个 GeoJSON 哈希，任何借“对齐”改变 geometry 或 metrics 的操作都会显式失败；C-01/C-02/C-04 合成容量包络增加六项非空间 E2 治理指标后，台账已重新认证整份 `metrics.json`，九个 geometry 哈希与证据签名保持不变。
+2026-08-22 的证据升级把官方公开版页面纳入证据链：海淀区人民政府门户网站于 2026-08-17 发布该控规（公开版）文本页，总则条款可直接核验；仍不把任何文本升级为空间数据。唯一事实源 `visual/assets/planning-alignment-register.json` 的 Register ID 为 `DATA-COOP-PLAN-ALIGNMENT-01`，SHA-256 为 `8a31ff2d9d8d4883e889184198cafe406d413b6e8f8af75463807ef1abeb3b39`；分支冻结于 `upstream/main@c79854e90b2e9a641d367c9e91f3f3031e20c127`。该台账同时钉死完整 `metrics.json` 与九个 GeoJSON 哈希，任何借“对齐”改变 geometry 或 metrics 的操作都会显式失败；C-01/C-02/C-04 合成容量包络增加六项、`BRAND-IDENTITY-01` 再增加八项非空间 E2 治理指标后，台账已两次重新认证整份 `metrics.json`，九个 geometry 哈希与证据签名保持不变。
 
 | 证据层 | 可核验文本事实 | 本轮不可推断 |
 | --- | --- | --- |
@@ -59,6 +59,24 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 ![共数京张服务旅程海报：无数据正线、三座治理站与六道闸门的概念旅程](assets/media/experience-poster.webp)
 
 视频与封面只承担概念沟通；权威数据仍以 GeoJSON、metrics、矩阵与审计台账为准 [data:geometry/public_space.geojson] [metric:no_data_equivalent_service_target_ratio]。
+
+## P3-01｜品牌识别与视觉系统：两条正线，一张会到期的票
+
+任务书要求命名与 Logo（agent.1）、导视标识系统（agent.5）和活动品牌与传播视觉系统（agent.6），而本方案此前只用一句话描述过标识构想，没有可核验的视觉系统本体。本轮把它落成 `BRAND-IDENTITY-01`：唯一事实源是 `visual/assets/brand-identity-system.json`，SHA-256 以审计输出为准；零依赖审计脚本为 `visual/assets/brand-identity-audit.js`。这是投稿者原创的 E2 规格：观察用户数为 0，未做商标或字体清权检索，未获专业品牌评审，也不代表官方标识、获奖或实施 [assumption:A-BRAND-IDENTITY-001]。
+
+**标识构造。** 「共」字被写成两条不闭合的轨线：实线代表数据参与正线，虚线代表无数据等价正线——两条线在任何版本中都靠线型而非纯颜色区分；两笔竖道与下端八字开口表示共同但有边界的相遇；右侧七孔撕线表示每个人可以撕下并保留的回执。图形在 64 网格上以 6 格笔画构造，最小显示 16 px 时笔画不小于 1.5 px，净空间为 8 格，永不闭合为矩形框 [data:visual/assets/brand-identity-system.json#BRAND-IDENTITY-01]。
+
+**色板与可复算无障碍门槛。** 八个登记色全部给出用途角色；15 组声明色对的 WCAG 2.1 相对亮度对比度由审计脚本按 sRGB 公式独立复算，文字对必须不小于 4.5、图形对不小于 3.0——当前 15 / 15 通过；rail-blue 叠 heritage-green（约 1.36）被列为禁用反例，若未来色板调整使其意外达标，审计会显式失败 [metric:brand_identity_contrast_pair_passed] [metric:brand_identity_contrast_pair_total]。
+
+**四态识别不靠颜色。** 计算开放、暂停、停止、审计中四态各自绑定唯一形状（圆、双竖、方、三角）、中英文字与登记色，供算力灯塔光带与导视复用；两条正线的实/虚线型规则同样被审计锁定，no-color-only 覆盖率 6 / 6 token [metric:brand_identity_no_color_only_coverage_ratio]。
+
+**联排、单色与应用模板。** 中文、英文与双语堆叠三种联排均给出最小宽度与净空间；单色版只用一个墨色，仍保留实/虚线区分。七个应用锚点——算力灯塔四态光带（`PROV-KEY-001`）、第一张回执亭票夹（`PROV-KEY-002`）、共同作者广场荣誉标识（`PROV-KEY-003`）、无数据服务站导视（`SCN-08`）、数据票票面（`EXPIRING-DATA-TICKET-01`）、共数开放周活动品牌模板（agent.6）、国际传播双语一页纸模板（agent.5）——全部由审计解析回包内真实节点，且全部标记为 template_only：没有真实活动、主办方、档期或经费被承诺 [metric:brand_identity_application_anchor_coverage_ratio]。
+
+六条禁用规则同样机器可读：不得拉伸变形、不得换用色板外颜色、不得加入第三方商标或未授权字体、导视不得展示身份或贡献排名、不得暗示官方批准或已实施、不得只用颜色编码。复现命令为 `node visual/assets/brand-identity-audit.js --json`；`--self-test --json` 对六个内存变异（抬高门槛、删除英文标签、去掉虚线、注入远程引用、指错锚点、删除单色版）逐一验证审计必然 fail-closed，当前 6 / 6 被拒绝 [metric:brand_identity_negative_fixture_fail_closed_total]。
+
+![共数京张品牌识别系统图：标识构造、色板与复算对比度、联排、四态识别、应用锚点与禁用规则](assets/figures/brand-identity.png)
+
+该系统只提供可核验的设计语言与规则，不声称品牌认知度、可用性或国际传播效果已经验证；官方发布正式视觉识别要求、取得授权清权检索或真实用户测试时，按 `replacement_triggers` 让位或修订。
 
 ## 设计依据与资料清单
 
@@ -265,7 +283,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 提交图层以 EPSG:4548 联合复算：概念绿地面积为 2,384,747.221 平方米，占临时计算边界的 20.8953%；概念公共空间面积为 98,164.982 平方米，占 0.8601%。二者都是设计几何相对临时计算边界的结果，不是审定绿地率、确权公共空间或控制指标 [metric:green_ratio] [metric:public_space_ratio]。后续取得官方边界和现状绿地、树木、水系、生态及权属资料后，应分别复核数量、连通性、树冠遮阴、透水性、热舒适、洪涝安全和全龄可达性。场景试验需设置季节性关闭与恢复条款，任何数字装置都不得以维护或布线为由长期破坏根系、岸线和遗产铺装。
 
-公共空间语言取自铁路而不复制怀旧符号：两条并行线分别代表“数据参与”和“无数据等价”，交汇的道岔代表可改变用途，时刻表代表授权期限，运单代表派生链，打孔车票代表执行日志，站台钟代表自动到期。品牌标识以“共”字的两条开口轨线和一枚可撕回执构成，必须在黑白、高对比、触觉和中英双语环境中可识别。地面导引只显示流程与方向，不显示参与者身份、贡献量排名或企业广告。
+公共空间语言取自铁路而不复制怀旧符号：两条并行线分别代表“数据参与”和“无数据等价”，交汇的道岔代表可改变用途，时刻表代表授权期限，运单代表派生链，打孔车票代表执行日志，站台钟代表自动到期。品牌标识以“共”字的两条开口轨线和一枚可撕回执构成，其几何、色板、联排、状态 token 与禁用规则以 `BRAND-IDENTITY-01` 为唯一事实源，并须在黑白、高对比、触觉和中英双语环境中可识别 [data:visual/assets/brand-identity-system.json#BRAND-IDENTITY-01]。地面导引只显示流程与方向，不显示参与者身份、贡献量排名或企业广告。
 
 文化叙事从“铁路把远方带到城市”转向“合作让不同知识在保留边界的前提下相遇”。清华园火车站等遗产资源若纳入路线，应以正式文保要求和运营许可为前提；口述史、照片、声音和肖像采用分段用途许可，展览、研究、模型训练分别选择，撤回的技术限制在采集前说明。算力灯塔、第一张回执亭和共同作者广场构成三座 AI 朝圣与荣誉节点，但荣誉授予基于可核验贡献和自愿署名，拒绝公开者可以匿名或不出现 [source:AGENT-TASKBOOK] [depth:height_massing_character]。
 

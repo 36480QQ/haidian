@@ -1,5 +1,20 @@
 # 方案迭代记录
 
+## v2.5 - 2026-08-24
+
+P3-01 brand identity and visual system / 品牌识别与视觉系统（BRAND-IDENTITY-01）
+
+- Baseline & lane / 基线与通道：从投稿 PR #3821 的 exact head `35b74be4182f3ff72aabe4fcf4266597e5f9dcaa` 建立干净分支 `codex/data-coop-line-brand-identity-20260824`（#3821 在 review/queued 队列中等待外部评审，本分支不创建第二个投稿 PR，仅作本地准备；发布时以届时 upstream/main 复核基线）。上轮触发 PLATEAU_RESET：最近八个投稿 PR 公开总分均为 86，本轮选择能整体提升表达完整性与品牌识别维度的主题，不再做相邻微调。
+- Gap & users / 缺口与使用者：任务书 agent.1 要求 Logo/视觉识别方向、agent.5 要求导视标识系统、agent.6 要求活动品牌与传播视觉系统，补充评审维度含 brand_identity 与 international_communication；此前方案只用一句话描述标识构想，没有可核验的系统本体。新增证据服务于评审者、运营交接团队与两条正线上的普通使用者。
+- Canonical register / 单一事实源：新增 `visual/assets/brand-identity-system.json`（BRAND-IDENTITY-01 v1.0.0）——64 网格标识几何（实线=数据参与、虚线=无数据等价、七孔回执撕线、永不闭合）、八色板、15 组声明色对、三种双语联排、四态 token、七个应用锚点、六条禁用规则与替换触发器；观察用户 0、未做商标清权检索、不代表官方标识或实施。
+- Recomputable gates / 可复算门禁：零依赖 `brand-identity-audit.js` 按 sRGB 公式独立复算 WCAG 2.1 对比度（文字 ≥4.5、图形 ≥3.0，15/15 通过），锁定 no-color-only（6/6 token）、联排双语覆盖（3/3）、应用锚点解析（7/7，全部 template_only）；`--self-test` 对六个内存变异（抬高门槛、删英文标签、去虚线、注入远程引用、指错锚点、删单色版）6/6 fail-closed。八项新指标进入 metrics.json，全部 E2、synthetic_contract_test、低置信度。
+- Original assets / 原创资产：五个手写 SVG（标识、单色版、中英与双语联排）+ 双语 2400×1500 识别图（Pillow 从 register 派生，内嵌 register SHA-256 与 package base 元数据）；仅使用操作系统字体栈渲染，不分发字体文件，不含第三方商标、官方徽标或图片。
+- Carriers / 载体：中英 proposal 新增 P3-01 章节并更新蓝绿风貌段落的标识描述；双语离线 visual 新增「品牌识别」区段（含 data-metric 指标卡口）；A3 中英各增 A3-13 页、A0 中英各增 A0-05 板，既有页面只更新页码分母与规划台账哈希令牌；evidence-consistency 的 PDF 栅格审计扩展为每份 PDF 同时钉死 metrics 与 brand 两张当前图。
+- Derived-chain recertification / 派生链重认证：新增八项非空间 E2 指标使 planning-alignment 对完整 metrics.json 的固定输入哈希按预期 fail-closed；未缩窄校验，而是把 register 升级为第二次重认证（prior `d94a8b7b…` → current `159e1643f…`），登记 14 项新增指标并重核九个 geometry 哈希与证据签名不变；规划 register 新 SHA-256 为 `b8dba99bfecd8642170fc15ab7c086bc803abc37b25a9bf21675077b5b496bd1`，全部文本/二进制载体同步更新该令牌，双语规划对齐 PNG 仅更新文本元数据且像素哈希不变。
+- Evidence boundary / 证据边界：本轮只把品牌识别从 E0 文字构想提升为 E2 可复算规格；品牌认知度、可用性、国际传播效果、商标可用性与专业品牌评审均未验证，`SCN-06-E3E4` 继续 `DEFERRED / DO_NOT_CONTACT / DO_NOT_REASK`。
+- Verification / 验证：brand audit 14/14 与 6/6 负向自测、planning alignment 131/131、evidence-consistency 全链路通过；双语图件与四个 PDF 新页全分辨率视觉检查；ready-package 的 manifest refresh、完整 self-check、专项审计、strict validation、participant preflight 与 push dry-run 的最终状态以本轮最终机器输出为准。
+
+
 ## v2.4 - 2026-08-23
 
 Synthetic-capacity decision diagram in A3/A0 / 合成容量准入决策图进入 A3/A0
