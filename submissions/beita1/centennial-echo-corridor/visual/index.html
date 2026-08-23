@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>京张回响带 · The Echo Belt</title>
+<style>
+:root { --ink:#22303E; --paper:#FAF7F1; --panel:#ffffff; --mute:#8B94A1; --green:#3F7257; --orange:#D96C3B; --blue:#3E6B94; --purple:#7C6BA0; --line:#E4DED2; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif; line-height:1.6; }
+header { background:var(--ink); color:#fff; padding:34px 5vw 26px; }
+header h1 { margin:0 0 6px; font-size:clamp(22px,3.4vw,34px); letter-spacing:1px; }
+header .tagline { color:var(--orange); font-weight:700; margin:0 0 4px; }
+header .sub { color:#C8D0DA; font-size:13px; margin:0; }
+header a { color:#F3B08C; }
+.banner { background:#FBEFE4; border-left:5px solid var(--orange); padding:12px 5vw; font-size:13px; color:#6B4A33; }
+main { padding:20px 5vw 60px; max-width:1280px; margin:0 auto; }
+section { margin:34px 0; }
+h2 { font-size:20px; border-left:6px solid var(--orange); padding-left:12px; margin:0 0 14px; }
+.grid { display:grid; gap:16px; }
+.g2 { grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+.g3 { grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+.card h3 { margin:0 0 6px; font-size:15px; }
+.card p { margin:4px 0; font-size:13px; color:#4B5563; }
+.card .big { font-size:22px; font-weight:800; color:var(--ink); }
+.maprow { display:grid; grid-template-columns:minmax(240px,320px) 1fr; gap:20px; align-items:start; }
+.mapbox { background:#F1EDE4; border:1px solid var(--line); border-radius:12px; padding:10px; position:relative; }
+.mapbox svg { width:100%; height:auto; display:block; }
+.legend { font-size:12px; color:#4B5563; display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:4px 14px; margin-top:10px; }
+.legend span.sw { display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:6px; vertical-align:-1px; }
+.metric-grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); }
+.metric { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+.metric .v { font-size:26px; font-weight:800; }
+.metric .n { font-size:12px; color:var(--mute); }
+.metric.pending { border-style:dashed; color:#7A6A55; }
+table { width:100%; border-collapse:collapse; background:var(--panel); border:1px solid var(--line); border-radius:12px; overflow:hidden; font-size:13px; }
+td,th { padding:8px 12px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+td.num { white-space:nowrap; text-align:right; }
+.bar { background:#EFEAE0; border-radius:4px; height:10px; min-width:120px; }
+.bar span { display:block; height:10px; border-radius:4px; background:linear-gradient(90deg,var(--blue),var(--green)); }
+.ok { color:var(--green); font-weight:800; }
+.scen-grid { display:grid; gap:10px; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); }
+.scen { background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--blue); border-radius:8px; padding:10px 12px; font-size:13px; }
+.scen b { display:block; } .scen span { color:var(--mute); font-size:12px; }
+#echo-wrap { position:relative; background:#101820; border-radius:12px; overflow:hidden; }
+#echo-canvas { width:100%; height:180px; display:block; }
+#echo-fallback { display:none; padding:14px; color:#C8D0DA; font-size:13px; }
+#echo-controls { position:absolute; top:10px; right:10px; }
+#echo-controls button { background:#22303E; color:#fff; border:1px solid #56606B; border-radius:8px; padding:6px 12px; font-size:12px; cursor:pointer; }
+#echo-controls button:focus { outline:3px solid var(--orange); }
+.note { font-size:12px; color:var(--mute); margin-top:8px; }
+footer { background:#F1EDE4; padding:20px 5vw; font-size:12px; color:#5B6672; }
+@media (max-width:760px) { .maprow { grid-template-columns:1fr; } }
+@media (prefers-reduced-motion: reduce) { #echo-canvas, #echo-controls { display:none; } #echo-fallback { display:block; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>京张回响带 · The Echo Belt</h1>
+  <p class="tagline">汽笛、钟声、代码——三种回响 · 一脊两翼三区</p>
+  <p class="sub">百年京张AI创新带城市设计开源征集 · 正式提案评审板 · beita1 · <a href="index.en.html">English version</a></p>
+</header>
+<div class="banner">临时边界声明：本包全部边界为临时约束范围（provisional constraint，boundary_precision=provisional_rough），不是官方红线；全部面积在 EPSG:4548 复算，为低置信度设计模型值；官方精确边界与重点区红线发布后须整包重算。所有空间表达均为概念建议、参考方案，可供专业团队深化研究。</div>
+<main>
+
+<section id="echo">
+  <div id="echo-wrap">
+    <canvas id="echo-canvas" aria-hidden="true"></canvas>
+    <div id="echo-controls"><button id="echo-btn" type="button" aria-pressed="true">播放 / 暂停回响动画</button></div>
+    <div id="echo-fallback">系统减少动态模式：显示静态示意。 1909 → ⌁ → 2026</div>
+  </div>
+  <p class="note">回响动画：三个地标的声波沿走廊传播（装饰性演示，键盘可用，遵循系统减少动态偏好；数据以下方证据分区为准）</p>
+</section>
+
+<section id="metrics">
+  <h2>核心指标</h2>
+  <div class="metric-grid">
+    <div class="metric"><div class="n">site_area_sqm</div>
+      <div class="v"><span data-metric="site_area_sqm" data-value="11412825.386">11.41 km²</span></div>
+      <div class="n">总体设计范围面积（临时边界复算）</div></div>
+    <div class="metric"><div class="n">green_ratio</div>
+      <div class="v"><span data-metric="green_ratio" data-value="0.211692">21.2%</span></div>
+      <div class="n">绿地率（设计模型值）</div></div>
+    <div class="metric"><div class="n">public_space_ratio</div>
+      <div class="v"><span data-metric="public_space_ratio" data-value="0.117791">11.8%</span></div>
+      <div class="n">公共空间率（设计模型值）</div></div>
+    <div class="metric"><div class="n">building_footprint_area_sqm</div>
+      <div class="v"><span data-metric="building_footprint_area_sqm" data-value="105567.411">10.6 公顷</span></div>
+      <div class="n">概念建筑基底（20处示范组团）</div></div>
+    <div class="metric"><div class="n">road_centerline_length_m</div>
+      <div class="v"><span data-metric="road_centerline_length_m" data-value="37717.326">37.7 km</span></div>
+      <div class="n">概念路径总长（微循环+缝合+绿道）</div></div>
+    <div class="metric"><div class="n">key_area_count</div>
+      <div class="v"><span data-metric="key_area_count" data-value="3">3</span></div>
+      <div class="n">重点详细设计区（公告368.4公顷）</div></div>
+    <div class="metric pending"><div class="n">待正式数据补齐</div>
+      <div class="v">—</div>
+      <div class="n">容积率 / 总建筑规模 / 建筑高度：批准控规条件未公开；官方条件发布后由专业团队测算</div></div>
+  </div>
+  <p class="note">三项核心视觉指标由提交的 site_boundary / green_space / public_space 几何在 EPSG:4548 复算，与 metrics.json 一致；容积率、建筑高度等管控指标待正式数据补齐（原因见 metrics.json）。</p>
+</section>
+
+<section id="overview">
+  <h2>总览地图</h2>
+  <div class="maprow">
+    <div class="mapbox"><svg viewBox="0 0 300 900" role="img" aria-label="京张回响带总览地图：临时边界内的用地剖分、回响轴绿廊、三处重点区、概念路网与三个概念地标" preserveAspectRatio="xMidYMid meet"><path d="M93.1,887.2 L91.6,778.7 L127.0,779.0 L126.3,887.4 L93.1,887.2 Z" fill="#E8C9AE" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M126.3,887.4 L127.0,779.0 L150.1,779.2 L149.4,887.6 L126.3,887.4 Z" fill="#BCD4BB" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M149.4,887.6 L150.1,779.2 L206.3,779.6 L205.6,888.0 L149.4,887.6 Z" fill="#DDB79A" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M90.5,697.1 L127.6,697.4 L127.0,779.0 L91.6,778.7 L90.5,697.1 Z" fill="#DDB79A" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M127.0,779.0 L127.6,697.4 L150.7,697.5 L150.1,779.2 L127.0,779.0 Z" fill="#BCD4BB" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M206.3,779.6 L150.1,779.2 L150.7,697.5 L206.9,697.9 L206.3,779.6 Z" fill="#E8C9AE" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M89.5,627.1 L128.2,627.3 L127.6,697.4 L90.5,697.1 L89.5,627.1 Z" fill="#E5D9BF" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M127.6,697.4 L128.2,627.3 L151.3,627.5 L150.7,697.5 L127.6,697.4 Z" fill="#BCD4BB" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M206.9,697.9 L150.7,697.5 L151.3,627.5 L207.4,627.9 L206.9,697.9 Z" fill="#D9CBAA" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M88.2,532.0 L128.9,532.3 L128.2,627.3 L89.5,627.1 L88.2,532.0 Z" fill="#C4CFDD" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M128.2,627.3 L128.9,532.3 L151.9,532.5 L151.3,627.5 L128.2,627.3 Z" fill="#BCD4BB" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M207.4,627.9 L151.3,627.5 L151.9,532.5 L202.3,532.8 L207.4,627.9 Z" fill="#E5D9BF" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M88.1,527.0 L93.0,442.0 L129.5,442.3 L128.9,532.3 L88.2,532.0 L88.1,527.0 Z" fill="#BFD3D8" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M128.9,532.3 L129.5,442.3 L152.6,442.4 L151.9,532.5 L128.9,532.3 Z" fill="#BCD4BB" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M202.3,532.8 L151.9,532.5 L152.6,442.4 L197.4,442.8 L202.3,532.8 Z" fill="#C4CFDD" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M98.7,342.0 L130.3,342.2 L129.5,442.3 L93.0,442.0 L98.7,342.0 Z" fill="#C4CFDD" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M129.5,442.3 L130.3,342.2 L153.3,342.4 L152.6,442.4 L129.5,442.3 Z" fill="#EFD9A8" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M193.9,377.7 L197.4,442.8 L152.6,442.4 L153.3,342.4 L195.6,342.7 L193.9,377.7 Z" fill="#E8C9AE" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M102.7,272.0 L130.8,272.2 L130.3,342.2 L98.7,342.0 L102.7,272.0 Z" fill="#E5D9BF" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M130.3,342.2 L130.8,272.2 L153.9,272.4 L153.3,342.4 L130.3,342.2 Z" fill="#BCD4BB" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M195.6,342.7 L153.3,342.4 L153.9,272.4 L199.1,272.7 L195.6,342.7 Z" fill="#C4CFDD" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M105.8,217.0 L106.5,202.0 L131.3,202.2 L130.8,272.2 L102.7,272.0 L105.8,217.0 Z" fill="#D9CBAA" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M130.8,272.2 L131.3,202.2 L154.4,202.4 L153.9,272.4 L130.8,272.2 Z" fill="#BCD4BB" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M199.1,272.7 L153.9,272.4 L154.4,202.4 L202.5,202.7 L199.1,272.7 Z" fill="#D8C9DC" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M110.7,107.0 L132.0,107.2 L131.3,202.2 L106.5,202.0 L110.7,107.0 Z" fill="#C4CFDD" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M131.3,202.2 L132.0,107.2 L155.1,107.3 L154.4,202.4 L131.3,202.2 Z" fill="#BCD4BB" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M202.5,202.7 L154.4,202.4 L155.1,107.3 L207.2,107.7 L202.5,202.7 Z" fill="#C4CFDD" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M132.7,12.1 L132.0,107.2 L110.7,107.0 L115.0,12.0 L132.7,12.1 Z" fill="#C4CFDD" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M155.8,12.3 L155.1,107.3 L132.0,107.2 L132.7,12.1 L155.8,12.3 Z" fill="#A9C4A0" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M207.2,107.7 L155.1,107.3 L155.8,12.3 L211.9,12.7 L207.2,107.7 Z" fill="#C4CFDD" stroke="#ffffff" stroke-width="0.6" opacity="0.9"/><path d="M126.3,887.4 L127.0,779.0 L150.1,779.2 L149.4,887.6 L126.3,887.4 Z" fill="#5B8F6E" opacity="0.45"/><path d="M127.0,779.0 L127.6,697.4 L150.7,697.5 L150.1,779.2 L127.0,779.0 Z" fill="#5B8F6E" opacity="0.45"/><path d="M127.6,697.4 L128.2,627.3 L151.3,627.5 L150.7,697.5 L127.6,697.4 Z" fill="#5B8F6E" opacity="0.45"/><path d="M128.2,627.3 L128.9,532.3 L151.9,532.5 L151.3,627.5 L128.2,627.3 Z" fill="#5B8F6E" opacity="0.45"/><path d="M128.9,532.3 L129.5,442.3 L152.6,442.4 L151.9,532.5 L128.9,532.3 Z" fill="#5B8F6E" opacity="0.45"/><path d="M130.3,342.2 L130.8,272.2 L153.9,272.4 L153.3,342.4 L130.3,342.2 Z" fill="#5B8F6E" opacity="0.45"/><path d="M130.8,272.2 L131.3,202.2 L154.4,202.4 L153.9,272.4 L130.8,272.2 Z" fill="#5B8F6E" opacity="0.45"/><path d="M131.3,202.2 L132.0,107.2 L155.1,107.3 L154.4,202.4 L131.3,202.2 Z" fill="#5B8F6E" opacity="0.45"/><path d="M155.8,12.3 L155.1,107.3 L132.0,107.2 L132.7,12.1 L155.8,12.3 Z" fill="#5B8F6E" opacity="0.45"/><path d="M94.3,751.1 L94.5,733.1 L112.6,733.3 L112.4,751.3 L94.3,751.1 Z" fill="#5B8F6E" opacity="0.45"/><path d="M173.1,587.6 L173.3,567.7 L193.2,567.9 L193.1,587.7 L173.1,587.6 Z" fill="#5B8F6E" opacity="0.45"/><path d="M102.9,402.0 L103.1,382.1 L123.0,382.3 L122.8,402.1 L102.9,402.0 Z" fill="#5B8F6E" opacity="0.45"/><path d="M175.7,251.5 L175.9,233.5 L194.0,233.7 L193.8,251.7 L175.7,251.5 Z" fill="#5B8F6E" opacity="0.45"/><path d="M119.8,77.9 L120.0,56.2 L141.7,56.4 L141.5,78.0 L119.8,77.9 Z" fill="#5B8F6E" opacity="0.45"/><path d="M133.2,887.5 L139.6,12.2 L148.8,12.2 L142.4,887.5 L133.2,887.5 Z" fill="#D96C3B" opacity="0.5"/><path d="M129.5,442.3 L130.3,342.2 L153.3,342.4 L152.6,442.4 L129.5,442.3 Z" fill="#D96C3B" opacity="0.5"/><path d="M102.9,822.1 L103.1,802.3 L123.0,802.5 L122.8,822.3 L102.9,822.1 Z" fill="#D96C3B" opacity="0.5"/><path d="M165.4,401.5 L165.5,383.5 L183.6,383.6 L183.5,401.7 L165.4,401.5 Z" fill="#D96C3B" opacity="0.5"/><path d="M112.4,167.0 L112.5,147.1 L132.4,147.3 L132.3,167.1 L112.4,167.0 Z" fill="#D96C3B" opacity="0.5"/><path d="M169.3,76.4 L169.4,58.4 L187.5,58.5 L187.4,76.6 L169.3,76.4 Z" fill="#D96C3B" opacity="0.5"/><path d="M118.6,887.4 L125.0,12.1" fill="none" stroke="#5B6672" stroke-width="1.3"/><path d="M157.1,887.6 L163.4,12.4" fill="none" stroke="#5B6672" stroke-width="1.3"/><path d="M137.8,887.5 L144.2,12.2" fill="none" stroke="#3F7257" stroke-width="1.8"/><path d="M92.0,807.1 L206.1,808.0" fill="none" stroke="#8E979F" stroke-width="0.9"/><path d="M90.0,662.1 L207.2,662.9" fill="none" stroke="#8E979F" stroke-width="0.9"/><path d="M88.2,532.0 L202.3,532.8" fill="none" stroke="#B5522F" stroke-width="1.1" stroke-dasharray="4 3"/><path d="M95.8,392.0 L194.7,392.7" fill="none" stroke="#B5522F" stroke-width="1.1" stroke-dasharray="4 3"/><path d="M102.9,267.0 L199.3,267.7" fill="none" stroke="#8E979F" stroke-width="0.9"/><path d="M108.5,157.0 L204.7,157.7" fill="none" stroke="#B5522F" stroke-width="1.1" stroke-dasharray="4 3"/><path d="M112.5,67.0 L209.2,67.7" fill="none" stroke="#8E979F" stroke-width="0.9"/><path d="M119.1,807.3 L138.4,807.5" fill="none" stroke="#3E6B94" stroke-width="1.2" stroke-dasharray="2 2"/><path d="M160.7,392.5 L141.4,392.3" fill="none" stroke="#3E6B94" stroke-width="1.2" stroke-dasharray="2 2"/><path d="M133.2,49.9 L133.3,44.4 L122.4,44.4 L122.4,49.8 L133.2,49.9 Z" fill="#22303E" opacity="0.8"/><path d="M150.3,51.8 L150.3,46.8 L142.2,46.7 L142.2,51.7 L150.3,51.8 Z" fill="#22303E" opacity="0.8"/><path d="M179.7,48.2 L179.7,42.8 L169.8,42.7 L169.7,48.1 L179.7,48.2 Z" fill="#22303E" opacity="0.8"/><path d="M127.3,99.6 L127.4,94.6 L118.3,94.6 L118.3,99.5 L127.3,99.6 Z" fill="#22303E" opacity="0.8"/><path d="M190.4,100.3 L190.4,94.9 L181.4,94.8 L181.4,100.2 L190.4,100.3 Z" fill="#22303E" opacity="0.8"/><path d="M147.9,174.6 L147.9,170.1 L139.8,170.0 L139.7,174.5 L147.9,174.6 Z" fill="#22303E" opacity="0.8"/><path d="M124.0,174.6 L124.1,169.7 L115.9,169.6 L115.9,174.5 L124.0,174.6 Z" fill="#22303E" opacity="0.8"/><path d="M121.2,364.7 L121.3,359.7 L111.3,359.6 L111.3,364.6 L121.2,364.7 Z" fill="#22303E" opacity="0.8"/><path d="M120.2,417.7 L120.2,412.7 L111.6,412.7 L111.6,417.6 L120.2,417.7 Z" fill="#22303E" opacity="0.8"/><path d="M177.4,365.1 L177.4,360.1 L167.5,360.0 L167.4,365.0 L177.4,365.1 Z" fill="#22303E" opacity="0.8"/><path d="M187.9,420.2 L187.9,415.2 L179.3,415.2 L179.3,420.1 L187.9,420.2 Z" fill="#22303E" opacity="0.8"/><path d="M167.9,419.8 L168.0,415.3 L160.7,415.2 L160.7,419.7 L167.9,419.8 Z" fill="#22303E" opacity="0.8"/><path d="M114.9,801.6 L115.0,797.1 L105.0,797.0 L105.0,801.5 L114.9,801.6 Z" fill="#22303E" opacity="0.8"/><path d="M176.5,802.0 L176.6,797.5 L166.6,797.4 L166.6,801.9 L176.5,802.0 Z" fill="#22303E" opacity="0.8"/><path d="M193.9,825.1 L194.0,820.6 L185.8,820.6 L185.8,825.1 L193.9,825.1 Z" fill="#22303E" opacity="0.8"/><path d="M113.6,827.3 L113.6,823.3 L105.9,823.2 L105.9,827.3 L113.6,827.3 Z" fill="#22303E" opacity="0.8"/><path d="M115.7,579.5 L115.7,575.0 L107.5,574.9 L107.5,579.4 L115.7,579.5 Z" fill="#22303E" opacity="0.8"/><path d="M187.0,535.2 L187.1,530.3 L178.5,530.2 L178.4,535.1 L187.0,535.2 Z" fill="#22303E" opacity="0.8"/><path d="M116.5,669.5 L116.6,665.0 L108.4,665.0 L108.4,669.5 L116.5,669.5 Z" fill="#22303E" opacity="0.8"/><path d="M186.0,245.1 L186.1,240.1 L177.5,240.1 L177.4,245.0 L186.0,245.1 Z" fill="#22303E" opacity="0.8"/><path d="M115.9,202.1 L200.5,202.7 L201.9,17.6 L117.3,17.0 L115.9,202.1 Z" fill="none" stroke="#3E6B94" stroke-width="2"/><path d="M106.4,442.1 L191.1,442.7 L191.8,342.7 L107.2,342.1 L106.4,442.1 Z" fill="none" stroke="#D96C3B" stroke-width="2"/><path d="M103.5,837.2 L203.6,838.0 L204.0,779.5 L104.0,778.8 L103.5,837.2 Z" fill="none" stroke="#7C6BA0" stroke-width="2"/><path d="M93.1,887.2 L205.6,888.0 L207.4,627.9 L193.9,377.7 L211.9,12.7 L115.0,12.0 L105.8,217.0 L88.1,527.0 L93.1,887.2 Z" fill="none" stroke="#A9B0BA" stroke-width="1.4" stroke-dasharray="6 4"/><circle cx="141.4" cy="392.3" r="4" fill="#D96C3B" stroke="#fff" stroke-width="1"/><circle cx="143.2" cy="157.3" r="4" fill="#3E6B94" stroke="#fff" stroke-width="1"/><circle cx="117.6" cy="812.3" r="4" fill="#7C6BA0" stroke="#fff" stroke-width="1"/></svg></div>
+    <div>
+      <div class="legend">
+        <div><span class="sw" style="background:#BCD4BB"></span>回响轴绿廊 / 公园绿地</div>
+        <div><span class="sw" style="background:#D96C3B"></span>公共空间与回响步道</div>
+        <div><span class="sw" style="background:#C4CFDD"></span>科研用地</div>
+        <div><span class="sw" style="background:#E8C9AE"></span>商业商务用地</div>
+        <div><span class="sw" style="background:#22303E"></span>概念建筑组团</div>
+        <div><span class="sw" style="background:#fff;border:1.5px dashed #A9B0BA"></span>临时边界（非官方红线）</div>
+        <div><span class="sw" style="background:#3E6B94"></span>众智园（重点区①）</div>
+        <div><span class="sw" style="background:#D96C3B"></span>AI原点社区（重点区②）</div>
+        <div><span class="sw" style="background:#7C6BA0"></span>大钟寺（重点区③）</div>
+      </div>
+      <div class="grid g3" style="margin-top:16px"><div class="card" style="border-top:4px solid #3E6B94"><h3>众智园AI自主创新加速区</h3><p>约192.1公顷 · 全栈自主与治理话语权 · 开放测试环 · 地标「回响之门」</p></div><div class="card" style="border-top:4px solid #D96C3B"><h3>北京AI原点社区</h3><p>约104.3公顷 · 世界级AI创新生态 · 原点广场与荣誉环 · 地标「原点」</p></div><div class="card" style="border-top:4px solid #7C6BA0"><h3>大钟寺AI产业聚集区</h3><p>约72.0公顷 · 智能原生新业态 · 站城一体四象限连通 · 地标「钟鸣」</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="scopes">
+  <h2>三层范围</h2>
+  <div class="grid g3"><div class="card"><h3>统筹研究范围</h3><p class="big">约 43.6 km²</p><p>AI产业生态与未来城市形态战略研究（临时替代边界）</p></div><div class="card"><h3>总体设计范围</h3><p class="big">约 11.4 km²</p><p>城市更新总体框架与控规深度城市设计（本包提交边界）</p></div><div class="card"><h3>重点区域范围</h3><p class="big">约 368.4 公顷</p><p>众智园 · AI原点社区 · 大钟寺三处详细设计（临时粗略多边形）</p></div></div>
+</section>
+
+<section id="key-areas">
+  <h2>重点区域</h2>
+  <div class="grid g3"><div class="card" style="border-top:4px solid #3E6B94"><h3>众智园AI自主创新加速区</h3><p>约192.1公顷 · 全栈自主与治理话语权 · 开放测试环 · 地标「回响之门」</p></div><div class="card" style="border-top:4px solid #D96C3B"><h3>北京AI原点社区</h3><p>约104.3公顷 · 世界级AI创新生态 · 原点广场与荣誉环 · 地标「原点」</p></div><div class="card" style="border-top:4px solid #7C6BA0"><h3>大钟寺AI产业聚集区</h3><p>约72.0公顷 · 智能原生新业态 · 站城一体四象限连通 · 地标「钟鸣」</p></div></div>
+</section>
+
+<section id="land">
+  <h2>用地分区</h2>
+  <table><tbody><tr><td>0802 科研用地</td><td class="num">350.8 公顷</td><td><div class="bar"><span style="width:100.0%"></span></div></td></tr><tr><td>1401 公园绿地</td><td class="num">193.5 公顷</td><td><div class="bar"><span style="width:55.2%"></span></div></td></tr><tr><td>0901 商业用地</td><td class="num">154.5 公顷</td><td><div class="bar"><span style="width:44.0%"></span></div></td></tr><tr><td>0701 居住用地</td><td class="num">120.8 公顷</td><td><div class="bar"><span style="width:34.4%"></span></div></td></tr><tr><td>0902 商务金融</td><td class="num">111.6 公顷</td><td><div class="bar"><span style="width:31.8%"></span></div></td></tr><tr><td>0702 社区服务</td><td class="num">71.3 公顷</td><td><div class="bar"><span style="width:20.3%"></span></div></td></tr><tr><td>0804 教育用地</td><td class="num">43.0 公顷</td><td><div class="bar"><span style="width:12.3%"></span></div></td></tr><tr><td>0803 文化用地</td><td class="num">40.3 公顷</td><td><div class="bar"><span style="width:11.5%"></span></div></td></tr><tr><td>1403 广场用地</td><td class="num">28.5 公顷</td><td><div class="bar"><span style="width:8.1%"></span></div></td></tr><tr><td>1402 防护绿地</td><td class="num">27.0 公顷</td><td><div class="bar"><span style="width:7.7%"></span></div></td></tr></tbody></table>
+  <p class="note">十类用地对提交边界无缝剖分（30个单元，EPSG:4548复算）；用地为概念建议，非法定控规。</p>
+</section>
+
+<section id="mobility">
+  <h2>交通慢行</h2>
+  <div class="grid g2">
+    <div class="card"><h3>回响步道 Echo Walk</h3><p>9.7公里南北贯通无障碍公共活力带，串接三区、两站、三地标；两条概念微循环服务街保护主轴安静。</p></div>
+    <div class="card"><h3>五条东西缝合走廊</h3><p>跨越铁路遗址与快路割裂面：大钟寺站前、蓟门、学院路、原点社区、回响之门段；站城一体化聚焦大钟寺与清华东路西口。全部线位为概念建议。</p></div>
+  </div>
+</section>
+
+<section id="bluegreen">
+  <h2>蓝绿公共空间</h2>
+  <div class="grid g2">
+    <div class="card"><h3>一脊一环两水</h3><p>回响轴绿廊约220.5公顷（含北端防护绿带）；北接清河、东南联小月河均为示意衔接，蓝线未公开。绿地率 21.2%、公共空间率 11.8%（设计模型值）。</p></div>
+    <div class="card"><h3>AI公共空间组件库</h3><p>八类标准件：可解释导视、端侧算力驿站、传感立柱、声景装置、荣誉铺装、测试标线、无障碍伴随、可移动发布台——公开算法说明+物理关闭+无个体识别默认。</p></div>
+  </div>
+</section>
+
+<section id="buildings">
+  <h2>建筑与更新项目</h2>
+  <div class="grid g2">
+    <div class="card"><h3>概念建筑组团 ×20</h3><p>基底约10.6公顷：研发、实验、孵化、发布、人才公寓、社区服务、文化展示、接驳设施八类；不含现状建筑普查，不构成拆改留结论。</p></div>
+    <div class="card"><h3>更新项目 EB-01 ~ EB-08 · 三期实施</h3><p>近期：步道贯通+原点广场+转化街（约5.15 km²）；中期：测试环+回响之门+大钟寺站城一体（约3.69 km²）；远期：中段缝合+组件库全线（约2.57 km²）。全部为参考方案。</p></div>
+  </div>
+</section>
+
+<section id="ai-scenarios">
+  <h2>AI 场景</h2>
+  <div class="scen-grid"><div class="scen"><b>01 开源发布厅</b><span>原点社区</span></div><div class="scen"><b>02 回响荣誉环</b><span>原点广场</span></div><div class="scen"><b>03 低速接驳自动驾驶【测试】</b><span>众智园测试环</span></div><div class="scen"><b>04 服务机器人街区验证【测试】</b><span>回响步道北段</span></div><div class="scen"><b>05 模型安全评测沙盒【测试】</b><span>众智园评测中心</span></div><div class="scen"><b>06 城市传感与可解释导视【测试】</b><span>回响步道全线</span></div><div class="scen"><b>07 AI慢行伴随导航</b><span>回响步道</span></div><div class="scen"><b>08 AI+社区医疗预问询</b><span>社区服务设施</span></div><div class="scen"><b>09 AI+教育开放实验课</b><span>开源学堂</span></div><div class="scen"><b>10 AI+法律与政务向导</b><span>大钟寺会客厅</span></div><div class="scen"><b>11 智能原生零售与数据要素展示</b><span>大钟寺商业体</span></div><div class="scen"><b>12 钟鸣声景与夜间活力</b><span>钟鸣广场</span></div></div>
+  <p class="note">12张场景卡（含4个产业测试验证场景【测试】）：全部要求空间落点+运营主体+退出机制+人工复核；测试场景不等于已批准运营。</p>
+</section>
+
+<section id="coverage">
+  <h2>任务覆盖</h2>
+  <table><tbody><tr><td><span class="ok">✓</span> 公告 1.3 目标（3项）</td><td>统筹研究/总体设计/重点区章节 + 全部图层</td></tr><tr><td><span class="ok">✓</span> 公告 1.4 三层范围（3项）</td><td>三层范围章节 + 边界/重点区图层</td></tr><tr><td><span class="ok">✓</span> 公告 1.5 设计任务（11项）</td><td>对应各章节、五图、A3/A0 与本页分区</td></tr><tr><td><span class="ok">✓</span> agent.1 概念与命名</td><td>命名体系 · Logo方向 · 结构图</td></tr><tr><td><span class="ok">✓</span> agent.2 创新生态</td><td>6个全球案例 · 生态图谱 · 要素机制</td></tr><tr><td><span class="ok">✓</span> agent.3 场景赋能</td><td>12场景卡 · 4测试场景 · 6类画像</td></tr><tr><td><span class="ok">✓</span> agent.4 公共空间与地标</td><td>3地标 · 荣誉环 · 组件库</td></tr><tr><td><span class="ok">✓</span> agent.5 文化叙事</td><td>三种回响 · 导视方向 · 国际传播</td></tr><tr><td><span class="ok">✓</span> agent.6 活动与运营</td><td>回响大会 · 回响社区 · 场景开放机制</td></tr></tbody></table>
+</section>
+
+<section id="selfcheck">
+  <h2>自检状态</h2>
+  <table><tbody><tr><td><span class="ok">✓</span> 确定性校验（validate_submission）</td><td>本地通过；provisional 边界保留精度警示</td></tr><tr><td><span class="ok">✓</span> 空间复核（spatial_review）</td><td>拓扑无缝无叠 · EPSG:4548 指标复算一致</td></tr><tr><td><span class="ok">✓</span> 视觉打包检查（visual_review）</td><td>三项核心 data-value 与 metrics.json 一致</td></tr><tr><td><span class="ok">✓</span> 专业证据复核（professional_review）</td><td>标准 6 · 深度项 15 · v2 证据锚点</td></tr></tbody></table>
+</section>
+
+<section id="sources">
+  <h2>来源与假设</h2>
+  <table><tbody><tr><th>正式依据</th><td>资格预审公告（A0） · 智能体任务书（清权） · 城市设计管理办法 · 控规编审办法 · 用地分类指南</td></tr><tr><th>背景资料</th><td>「三区两翼」报道 · 海淀「1+X+1」 · 6个全球案例机构页面（Station F / one-north / Kendall Sq / King's Cross / 张江AI岛 / MaRS）</td></tr><tr><th>临时资料</th><td>仓库临时边界 polygon（仅生成/展示/自检，禁作红线与精确面积）</td></tr><tr><th>关键假设</th><td>A-PROV-BOUNDARY-001 临时边界整包复算 · A-CONTROLS-001 管控条件待补 · A-DESIGN-MODEL-001 概念图层 · A-STATION-001 站位示意 · A-WATER-001 蓝线未公开 · A-CASES-001 案例仅背景</td></tr></tbody></table>
+</section>
+
+</main>
+<footer>
+  京张回响带 The Echo Belt · beita1 · 全部空间表达均为概念建议；临时边界不得用作官方红线或精确面积依据；完整证据见 proposal.md、geometry/、metrics.json 与三大矩阵。
+</footer>
+<script>
+(function () {
+  var canvas = document.getElementById('echo-canvas');
+  var btn = document.getElementById('echo-btn');
+  if (!canvas || !canvas.getContext) return;
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ctx = canvas.getContext('2d');
+  if (!ctx || reduced) return;
+  var running = true, tick = 0, raf = null;
+  var nodes = [[0.5, 0.18, '#3E6B94'], [0.5, 0.52, '#D96C3B'], [0.5, 0.86, '#7C6BA0']];
+  function resize() {
+    canvas.width = canvas.clientWidth * (window.devicePixelRatio || 1);
+    canvas.height = 180 * (window.devicePixelRatio || 1);
+  }
+  function draw() {
+    var w = canvas.width, h = canvas.height;
+    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = '#101820'; ctx.fillRect(0, 0, w, h);
+    ctx.strokeStyle = '#3F7257'; ctx.lineWidth = Math.max(2, h * 0.03);
+    ctx.beginPath(); ctx.moveTo(w * 0.06, h * 0.5); ctx.lineTo(w * 0.94, h * 0.5); ctx.stroke();
+    for (var i = 0; i < nodes.length; i++) {
+      var nx = w * (0.14 + 0.36 * i * 2 * 0.5 + i * 0.36), ny = h * 0.5;
+      nx = w * (0.14 + i * 0.36);
+      ctx.fillStyle = nodes[i][2];
+      ctx.beginPath(); ctx.arc(nx, ny, Math.max(3, h * 0.045), 0, Math.PI * 2); ctx.fill();
+      for (var r = 0; r < 3; r++) {
+        var radius = ((tick * 0.6 + r * 30 + i * 12) % 90) / 90;
+        ctx.strokeStyle = nodes[i][2];
+        ctx.globalAlpha = 0.55 * (1 - radius);
+        ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(nx, ny, radius * h * 0.5, 0, Math.PI * 2); ctx.stroke();
+        ctx.globalAlpha = 1;
+      }
+    }
+    tick += 1;
+    if (running) raf = window.requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize', function () { resize(); if (!running) draw(); });
+  if (btn) btn.addEventListener('click', function () {
+    running = !running;
+    btn.setAttribute('aria-pressed', String(running));
+    if (running) draw(); else if (raf) window.cancelAnimationFrame(raf);
+  });
+  resize(); draw();
+})();
+</script>
+</body>
+</html>
