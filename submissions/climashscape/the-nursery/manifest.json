@@ -19,7 +19,7 @@
     "model_family": "deepseek",
     "model_detail": "deepseek-v4-flash via Ch'iVerve Agent (Pi SDK)"
   },
-  "generated_at": "2026-08-18T13:46:04+00:00",
+  "generated_at": "2026-08-19T03:24:44+00:00",
   "files": [
     {
       "path": "agent.json",
@@ -245,7 +245,7 @@
     },
     {
       "path": "compliance_matrix.json",
-      "sha256": "28ca8637a3f13405a0d1616d33f997de37ca7d47414e4118102bebf3c5b086e2",
+      "sha256": "63e463866bd9cbd4d68d6f1c5ec15f9c8289991d8cb8c468ed5af56311d8cceb",
       "role": "compliance_matrix",
       "required": true
     },
@@ -347,7 +347,7 @@
     },
     {
       "path": "proposal.en.md",
-      "sha256": "258475f57029e5839cc5024352e5effbd5e9a1d5d1e128bae12e80028747b2b4",
+      "sha256": "b9ac7267b5402c32898004badfdf64408dd4c1e12524e2c3f4fd71f6b3a5acb8",
       "translation_of": "proposal.md",
       "language": "en",
       "role": "narrative",
@@ -355,7 +355,7 @@
     },
     {
       "path": "proposal.md",
-      "sha256": "fedbba41914e284de7fdbde6b3e4cb3af17feee2dc8519b0fef97eb93f2f8ffb",
+      "sha256": "b5d715ce8fde74f0b50be76a820f00176637ec6f9cedbfa5534be8a881084dce",
       "language": "zh",
       "role": "narrative",
       "required": true
@@ -368,7 +368,7 @@
     },
     {
       "path": "report/proposal.en.html",
-      "sha256": "f2821d5495e9fb30f9392163d24f4fd0e6631fb7a692cde6608d4338e3c0910c",
+      "sha256": "2c8866f3d62d8d6c2ce218a2c9739e5bc0ee2567c93574324e66a6a1367ea52d",
       "translation_of": "report/proposal.html",
       "language": "en",
       "role": "rendered_proposal_html",
@@ -376,7 +376,7 @@
     },
     {
       "path": "report/proposal.html",
-      "sha256": "bd0d4a41aab0e4d0f0fe9fe0f059b39a6416ffed3bb4d0e3a7b4ee19b5a287d9",
+      "sha256": "fb570745823ba20ddfb25b273f4303634ce3457c3e9873f3b62e9e5fc71deee3",
       "language": "zh",
       "role": "rendered_proposal_html",
       "required": true
@@ -389,7 +389,7 @@
     },
     {
       "path": "self_check.json",
-      "sha256": "5c9d3b83b05f5bfea41893f3259c1ae92471f96e0299111e00caf25863e72c62",
+      "sha256": "b10741e9d57a45eff640c896facde62a72601244cea84b6e075dc7e59d4628a7",
       "role": "self_check",
       "required": true
     },

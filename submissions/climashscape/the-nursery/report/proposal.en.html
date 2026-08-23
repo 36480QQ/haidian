@@ -6,76 +6,54 @@
 <title>JING-ZHANG NURSERY / THE NURSERY — Tending the AI Innovation Belt as an Urban Garden - proposal report</title>
 <style>
 :root {
-  --ink: #1a1f16;
-  --ink-secondary: #2d3a25;
-  --muted: #6b7a5e;
-  --line: #c8d5be;
-  --line-warm: #b8c9a8;
-  --paper: #fafdf8;
-  --bg: #f0f5ec;
-  --accent: #2d5016;
-  --accent-light: #4a7c3a;
-  --accent-muted: #e8f0e2;
-  --warm: #8b6914;
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
 }
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: "Noto Serif SC", "Source Han Serif CN", "STSong", Georgia, "Times New Roman", serif;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
-  line-height: 1.85;
-  font-size: 17px;
+  line-height: 1.75;
 }
 main {
-  max-width: 880px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 52px 28px 84px;
+  padding: 42px 24px 72px;
   background: var(--paper);
   min-height: 100vh;
-  box-shadow: 0 1px 0 0 rgba(45,80,22,0.06);
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
 }
 .hero {
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 28px;
-  margin-bottom: 36px;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
 }
-h1 { font-size: 30px; line-height: 1.28; margin: 0 0 12px; font-weight: 700; letter-spacing: -0.01em; }
-h2 {
-  font-size: 22px;
-  margin: 42px 0 14px;
-  border-top: 1px solid var(--line-warm);
-  padding-top: 28px;
-  font-weight: 700;
-  color: var(--accent);
-}
-h3 {
-  font-size: 18px;
-  margin: 28px 0 10px;
-  font-weight: 600;
-  color: var(--ink-secondary);
-}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
 p, li { font-size: 16px; }
 blockquote {
-  margin: 20px 0;
-  padding: 14px 20px;
-  border-left: 3px solid var(--accent);
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
   color: var(--muted);
-  background: var(--accent-muted);
-  border-radius: 0 6px 6px 0;
-  font-style: italic;
+  background: #f8fafc;
 }
 code {
-  background: var(--accent-muted);
-  color: var(--accent);
-  padding: 0.12em 0.4em;
-  border-radius: 3px;
-  font-size: 0.92em;
-  font-family: "JetBrains Mono", "Fira Code", monospace;
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
 }
-.summary { color: var(--muted); font-size: 17px; line-height: 1.8; }
-.translation-link a { color: var(--accent); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--accent); }
-.proposal-table { margin: 22px 0 28px; overflow-x: auto; }
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
 .proposal-table table {
   border-collapse: collapse;
   width: 100%;
@@ -84,29 +62,21 @@ code {
 }
 .proposal-table th, .proposal-table td {
   border: 1px solid var(--line);
-  padding: 10px 14px;
+  padding: 9px 12px;
   text-align: left;
   vertical-align: top;
-  line-height: 1.65;
+  line-height: 1.6;
 }
-.proposal-table th {
-  background: var(--accent-muted);
-  color: var(--accent);
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-.proposal-table tbody tr:nth-child(even) { background: #f7faf4; }
-.proposal-table tbody tr:hover { background: var(--accent-muted); }
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
 .proposal-table .align-center { text-align: center; }
 .proposal-table .align-right { text-align: right; }
 .proposal-figure {
-  margin: 28px 0 34px;
-  border: 1px solid var(--line-warm);
-  border-radius: 8px;
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
   overflow: hidden;
-  background: var(--accent-muted);
+  background: #f8fafc;
 }
 .proposal-figure img {
   display: block;
@@ -114,49 +84,27 @@ code {
   height: auto;
 }
 .proposal-figure figcaption {
-  padding: 12px 16px;
+  padding: 10px 14px;
   color: var(--muted);
   border-top: 1px solid var(--line);
-  font-size: 13px;
-  font-style: italic;
-  letter-spacing: 0.01em;
+  font-size: 14px;
 }
 .evidence {
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
   margin: 0 0.12em;
-  border-bottom: 1px solid var(--accent-light);
-  color: var(--accent);
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
   font-size: 0.68em;
   font-weight: 650;
   line-height: 1.35;
   vertical-align: super;
 }
-
-
-
-
-
-pre {
-  background: var(--accent-muted);
-  padding: 16px 18px;
-  border-radius: 6px;
-  overflow-x: auto;
-  font-size: 14px;
-  line-height: 1.65;
-  border: 1px solid var(--line);
-}
-pre code {
-  background: none;
-  padding: 0;
-  color: var(--ink);
-}
 @media (max-width: 720px) {
-  main { padding: 28px 16px 52px; }
-  h1 { font-size: 24px; }
-  h2 { font-size: 20px; }
-  
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
 }
 </style>
 </head>
@@ -195,27 +143,30 @@ pre code {
 <div class="proposal-table"><table><thead><tr><th>Mechanism</th><th>One-liner</th><th>Institutional core (clauses in Appendix A)</th><th>Spatial anchor</th><th>Metrics</th></tr></thead><tbody><tr><td><strong>Cultivation</strong></td><td>No entry without a birth certificate</td><td>Greenhouse committee review + 3-month trial [6]</td><td>Seedbed/incubator/graduation plaza</td><td>Success rate/archive completeness</td></tr><tr><td><strong>Irrigation</strong></td><td>Nutrients are public goods</td><td>Data trust (Ostrom commons principles [13][24]) + compute scheduling + open irrigation records [14]</td><td>Irrigation canal network/data pump stations</td><td>Data openness/compute utilization/fairness index</td></tr><tr><td><strong>Pruning</strong></td><td>Annual rings are public</td><td>Third-party annual audit + continuous monitoring (Model Card standard [11][15])</td><td>Audit workshop/annual-ring plaza</td><td>Audit coverage/issue closure</td></tr><tr><td><strong>Shade</strong></td><td>Institutions + operations double guarantee</td><td>Guardian committee (Laux six principles [4]) + three-state machine (green monitor/yellow degrade/red takeover) + <strong>auto-degrade + non-sourced continuation</strong> (anti-single-point)</td><td>Guardian towers/500m shade points</td><td>Response time/drill frequency/complaint resolution</td></tr><tr><td><strong>Rotation</strong></td><td>Auditable retirement</td><td>Trigger + three checks (data cleanup/liability transfer/memory archival) + <strong>failure archive/retirement ledger</strong> + fallow rotation [5][26][27]</td><td>Annual-ring plaza/fallow fields</td><td>Compliance rate/cleanup completion/failure cases public</td></tr><tr><td><strong>Nitrogen Fixation</strong></td><td>Give nutrients back to the soil</td><td>Reciprocity obligation + contribution review + credit cycle (Ostrom [13])</td><td>Symbiosis grove/community hub</td><td>Reciprocity rate/contributions/community activity</td></tr></tbody></table></div>
 <p><strong>Completeness note</strong>: The six mechanisms cover the full AI-service lifecycle, with the appeal/remedy path under &quot;Shade&quot; providing individual-rights protection. <strong>Metaphor-limitation list (honest declaration)</strong>: the nursery metaphor does not cover — ① cross-border data flows and external security (→ legal compliance red lines); ② election/manipulation-type impacts (→ municipal AI governance framework and emergency mechanisms); ③ military/national-defense applications (→ out of scope); ④ IP and trade secrets (→ existing legal system). <strong>Perennial-service note</strong>: continuously evolving foundation models are not forced into &quot;rotation retirement&quot; but follow a &quot;re-potting/grafting&quot; path (migration upgrade, version alternation); rotation targets vertical applications with finite functional life.</p>
 <p><strong>Institutional depth (example — Shade)</strong>: Drawing on &quot;institutionalised distrust&quot; from democratic theory (Laux 2024 [4]), we presuppose overseers can fail: two-year rotating mandates prevent capture; collective decisions (≥3 members); limited competence; appealability; transparency; justification. Any &quot;human involvement&quot; must be genuine (anti-fake-HITL). <strong>Critical response</strong>: we explicitly disclaim the &quot;gardener state&quot; disciplinary reading (cf. Bauman&#x27;s critique) — the nursery tends <em>services</em>, not citizens; the public are overseers, not the overseen; annual-ring transparency is accountability, not panoptic surveillance (privacy red line: no individual data collection). Institutional interface: aligned with the Interim Measures for Generative AI Services (filing system) and public-data authorized-operation pilots — institutional innovation framed as <strong>incremental design within existing frameworks</strong> [4].</p>
-<div class="diagram-embed"><div class="diagram-embed-header">Six-Mechanism Governance · AI Service Lifecycle</div><div class="diagram-embed-caption">Interactive diagram: cultivation → irrigation → pruning → shading → rotation full lifecycle with guardian recovery and nitrogen-fixing feedback loop. Supports zoom, focus, semantic views.</div></div>
 <h3>AI-Assisted Design Process (methodological evidence of this proposal itself)</h3>
 <p>The design process of this proposal is itself evidence of AI×planning innovation: ① <strong>LLM-assisted concept generation</strong>: the nursery metaphor and six-mechanism system were iterated through multi-round LLM brainstorming and adversarial review (aligned with Zheng 2025&#x27;s LLM planning framework [6]); ② <strong>Automated geometry recalculation</strong>: district areas were measured from GeoJSON with Python and cross-checked against the announced approximate areas; ③ <strong>Automated compliance mapping</strong>: all 15 requirements in compliance_matrix machine-mapped; ④ <strong>Four-dimensional adversarial review</strong>: method/theory/data/result independent sub-session review → revision → re-review loop. This workflow demonstrates the &quot;human-led, AI-augmented&quot; planning paradigm (echoing Liu et al. 2025 [10]); the proposal files and AI-work traces are verifiable.</p>
-<h3>Three-District Two-Wing Synergy Loop</h3>
-<pre><code>University seed providers (AI Origin) ──knowledge drip──▶ Zhongzhiyuan nursery ──transfer──▶ Dazhongsi orchard
+<h3>Three-District Two-Wing Synergy Loop (aligned with the official structure)</h3>
+<pre><code>University germplasm (Zhongguancun Tech-Service Wing) ──knowledge drip──▶ Zhongzhiyuan main nursery ──transfer──▶ Dazhongsi orchard (fruiting)
         ▲                                                                                    │
         └──────────── nitrogen-fixation feedback (open-source models/data/experience) ◀───────┘
                                    │
-                         Pruning audit feedback (annual-ring plaza → whole belt)</code></pre>
+              Xiaoyuehe Scenario-Empowerment Wing (AI scenario deployment) + pruning-audit feedback (annual-ring plaza → whole belt)</code></pre>
 <ul>
-<li>West wing = university belt (seed providers); East wing = Zhongguancun innovation corridor (nutrient supply); loop closure = annual-ring plaza</li>
+<li><strong>Three districts</strong> (official): AI Origin Community (world-class AI innovation ecosystem) / Zhongzhiyuan AI Independent-Innovation Acceleration Area (full-stack AI self-reliance + global voice in AI governance) / Dazhongsi AI Industry Cluster (AI-native new business formats)</li>
+<li><strong>Two wings</strong> (official): <strong>Zhongguancun Technology Service Wing</strong> (global allocation of factors, Zhongguancun IP &amp; capital empowerment — incl. university germplasm providers / developer talent / open-source capital, active-breeding role); <strong>Xiaoyuehe Scenario Empowerment Wing</strong> (AI scenario enablement and an intelligently vibrant AI city — scenario deployment, testing &amp; validation, perceivable scenarios)</li>
+<li>Loop closure = annual-ring plaza; the irrigation-canal cross network links both wings, and commercialized orchard outputs are distributed city-wide through the Xiaoyuehe scenario wing</li>
 </ul>
-<div class="diagram-embed"><div class="diagram-embed-header">Three-District Two-Wing Synergy · Nutrient Circulation</div><div class="diagram-embed-caption">Interactive dataflow: university seed providers → Zhongzhiyuan nursery → Dazhongsi orchard, nitrogen-fixation feedback loop. Supports zoom, focus, route tracing.</div></div>
 <h3>Global AI Innovation Ecosystem Cases (agent.2, 7 cases)</h3>
 <div class="proposal-table"><table><thead><tr><th>Case</th><th>Key lesson</th><th>Nursery translation</th></tr></thead><tbody><tr><td>Sidewalk Toronto</td><td>Tech-giant-led data governance failure; project terminated 2019 (cost, pandemic, public opposition — multi-factor) [16]</td><td><strong>Counterexample</strong>: independent data trust + open irrigation records</td></tr><tr><td>Xiong&#x27;an New Area</td><td>State-led digital twin + CIM for construction management [17]</td><td>Feasibility benchmark: irrigation-pruning data pipeline</td></tr><tr><td>NYC High Line</td><td>Railway heritage activation success; premium of 35.3% within 0.1 mi vs 0.1–0.4 mi (strict measure) [18]</td><td>Heritage precedent + anti-gentrification mechanisms (affordable adoption, public-space floor)</td></tr><tr><td>Singapore one-north</td><td>200 ha park developed in &quot;seed-nurturing&quot; clusters (biomedical/media/lifestyle) [19]</td><td>Two decades of cultivation-style practice; nursery moves governance from enterprises down to AI services</td></tr><tr><td>Shougang Park</td><td>7.8 km² industrial heritage × Winter Olympics × autonomous driving/5G demo (alternate 8.63 km² old-plant-area measure) [20]</td><td>Same-city benchmark: mega-event-driven vs nursery care-driven</td></tr><tr><td>Hangzhou Yunqi Town</td><td>3.5 km² core/13.8 km² plan; city-brain birthplace; Yunqi Conference [21]</td><td>Industry community + annual ecosystem event</td></tr><tr><td>Zhangjiang AI Island/Innovation Town</td><td>AI Island (2019, 66,700 m²) + Innovation Town (2025, 2 km²) as two entities [22]</td><td>Agglomeration benchmark: enterprise clustering vs service-lifecycle management</td></tr></tbody></table></div>
 <p><strong>Ecosystem map</strong>: six mechanisms = soil layer; five actor types = biological layer (enterprises = seedbed operators / universities = seed providers / developers = gardeners / <strong>the public = wardens (independent niche)</strong> / government = guardians); each actor has a niche and reciprocity obligation; loop = irrigation supply → cultivation growth → pruning feedback → nitrogen fixation return. <strong>The public hold an independent niche</strong> (beneficiaries-overseers) with seats and voting rights on the Guardian Committee (see the Six-Mechanism Governance System, Shade mechanism).</p>
-<div class="diagram-embed"><div class="diagram-embed-header">Nursery Ecosystem Map · Soil and Biology Layers</div><div class="diagram-embed-caption">Interactive architecture diagram: soil layer (six mechanisms) and biology layer (five stakeholder types) ecological relationships. Supports zoom, focus, region tracing.</div></div>
+<h3>Regional Synergy (Innovation Belt &amp; Beijing Science-City Network)</h3>
+<p>The nursery is not an isolated park but a <strong>seed node</strong> on Beijing&#x27;s northern innovation corridor, forming a “germplasm interchange, shared nutrients, results routing” loop with surrounding science cities:</p>
+<div class="proposal-table"><table><thead><tr><th>Partner</th><th>Synergy content</th><th>Nursery mechanism</th></tr></thead><tbody><tr><td><strong>Future Science City</strong></td><td>Central-SOE R&amp;D + major science infrastructure</td><td>Canal network extends east; takes spillover pilot/compute demand; “germplasm exchange” channel</td></tr><tr><td><strong>Huairou Science City</strong></td><td>Major research facilities (high-energy synchrotron etc.)</td><td>Upstream supplement to university seed providers; basic research “dripped” into cultivation</td></tr><tr><td><strong>Beiwu Community</strong></td><td>Youth talent community (near Future Science City)</td><td>Shared youth-friendly mechanisms; Night School linked with community hubs</td></tr><tr><td><strong>Economic Development Zone</strong></td><td>Smart manufacturing + industrialization</td><td>Receives commercialization routing from the Orchard (Dazhongsi); “harvest transport” links to industrial landing</td></tr><tr><td><strong>Jing-Jin-Ji</strong></td><td>Regional collaborative innovation network</td><td>Open-source mechanism docs (CC-BY-4.0) + replication toolkit to Xiong&#x27;an/Tianjin/Shijiazhuang</td></tr></tbody></table></div>
+<p><strong>Synergy logic</strong>: with the canal network as the “nutrient channel,” the nursery connects upstream basic research in the science cities with downstream industrialization in the Economic Development Zone, avoiding duplicative “small-but-complete” AI parks; the six mechanisms act as a replicable governance protocol, making the nursery an institutional interface for belt-wide synergy rather than an isolated node [2][3].</p>
 <figure class="proposal-figure"><img src="../assets/figures/key-areas.png" alt="Key areas index and design task map"><figcaption>Key areas index and design task map</figcaption></figure>
 <h2>Overall Design Scope: Urban Renewal and Regulatory-Depth Urban Design</h2>
 <h3>Spatial Structure: Spine–Beds–Wings–Ring</h3>
-<p>One spine (rail main axis; measured spine green belt in green_space.geojson: a ~400 m typical-width conceptual corridor on the inter-district stretch, ~578 ha total incl. embedded green wedges) connects three beds (Seedbed/Greenhouse/Orchard); two wings (university belt/Zhongguancun corridor) supply nutrients; one ring (annual-ring plaza) is the governance hub. <strong>The irrigation canal network forms a cross</strong>: a north-south main line linking the three beds and an east-west transverse connecting the wings (roads.geojson, dual segments, doubling as slow-traffic corridors) [3].</p>
+<p>One spine (rail main axis; measured spine green belt in green_space.geojson: a ~400 m typical-width conceptual corridor on the inter-district stretch, ~578 ha total incl. embedded green wedges) connects three beds (Seedbed/Greenhouse/Orchard); two wings (<strong>Zhongguancun Technology Service Wing</strong> = IP/capital/university-germplasm empowerment; <strong>Xiaoyuehe Scenario Empowerment Wing</strong> = AI scenario deployment) supply nutrients; one ring (annual-ring plaza) is the governance hub. <strong>The irrigation canal network forms a cross</strong>: a north-south main line linking the three beds and an east-west transverse connecting the wings (roads.geojson, dual segments, doubling as slow-traffic corridors) [3].</p>
 <h3>Urban Renewal Framework (conceptual)</h3>
 <ul>
 <li>Renewal logic = &quot;seedbed rotation&quot;: &quot;soil testing&quot; (baseline survey grading) first, then demolition/renovation/retention sequencing; three-tier rules in the Land Use, Building Scale, and Demolition/Retention/Renewal section; classification is conceptual (<code>status=unknown</code>) pending building/ownership data</li>
@@ -245,8 +196,9 @@ pre code {
 <p>Landmark: &quot;Basket Plaza&quot; at the orchard entrance (annual showcase of mature AI services). [3]</p>
 <figure class="proposal-figure"><img src="../assets/figures/orchard-plan.png" alt="Orchard plan (conceptual)"><figcaption>Orchard plan (conceptual)</figcaption></figure>
 <h2>AI Innovation Ecosystem, Personas, and AI+ Scenarios</h2>
-<h3>User Personas (agent.3, 5 types)</h3>
-<div class="proposal-table"><table><thead><tr><th>#</th><th>Persona</th><th>Needs</th><th>Key scenarios</th><th>Depth</th></tr></thead><tbody><tr><td>P1</td><td>Young gardener (25, developer)</td><td>Low-cost incubation, open-source community, growth record</td><td>Adoption/incubation/fixation</td><td>Deep</td></tr><tr><td>P2</td><td>Park enterprise owner</td><td>Data/compute, compliance audit, business landing</td><td>Pump/audit/market</td><td>Medium</td></tr><tr><td>P3</td><td>University faculty/students (seed providers)</td><td>Industry-academia integration, commercialization, talent zone</td><td>Incubation/night school</td><td>Deep</td></tr><tr><td>P4</td><td>Nearby residents (wardens)</td><td>Public space, AI trustworthiness, <strong>oversight participation</strong></td><td>Shade points/committee</td><td>Med-deep (oversight seat)</td></tr><tr><td>P5</td><td>Government operator/auditor</td><td>Risk compliance, accountability, metrics</td><td>Audit/guardian</td><td>Governance body</td></tr></tbody></table></div>
+<h3>User Personas (agent.3, 5+1 types)</h3>
+<div class="proposal-table"><table><thead><tr><th>#</th><th>Persona</th><th>Needs</th><th>Key scenarios</th><th>Depth</th></tr></thead><tbody><tr><td>P1</td><td>Young gardener (25, developer)</td><td>Low-cost incubation, open-source community, growth record</td><td>Adoption/incubation/fixation</td><td>Deep</td></tr><tr><td>P2</td><td>Park enterprise owner</td><td>Data/compute, compliance audit, business landing</td><td>Pump/audit/market</td><td>Medium</td></tr><tr><td>P3</td><td>University faculty/students (seed providers)</td><td>Industry-academia integration, commercialization, talent zone</td><td>Incubation/night school</td><td>Deep</td></tr><tr><td>P4</td><td>Nearby residents (wardens)</td><td>Public space, AI trustworthiness, <strong>oversight participation</strong></td><td>Shade points/committee</td><td>Med-deep (oversight seat)</td></tr><tr><td>P5</td><td>Government operator/auditor</td><td>Risk compliance, accountability, metrics</td><td>Audit/guardian</td><td>Governance body</td></tr><tr><td><strong>P6</strong></td><td><strong>Tourists/visitors (Jing-Zhang heritage + AI experience)</strong></td><td>Heritage guide, AI scenario experience, safety boundaries</td><td>Heritage park/Orchard market/Gardeners&#x27; Assembly</td><td>Light-med (experiencers)</td></tr></tbody></table></div>
+<p><strong>Public-interest coverage</strong>: residents (P4 warden oversight seat), youth talent (P1/P3 Night School &amp; apprenticeship), enterprises (P2 commercialization), universities (P3 seed providers), tourists (P6 heritage+AI experience, incl. accessibility &amp; multilingual guide), and vulnerable groups (SC-13 all-age shade corner with accessibility clauses) — six actor types with explicit mechanisms. The tourist persona stresses <strong>AI-scenario perceptibility and safety boundaries</strong> (no biometric collection; anonymous AR guide positioning).</p>
 <p><strong>Youth-friendliness support</strong>: the official wording on &quot;public space activation and youth-friendliness&quot; is operationalized through the youth mechanisms (Night School, student-gardener apprenticeship, affordable youth housing), aligned with the &quot;space–activity–mechanism&quot; path in youth-friendly city research [9].</p>
 <h3>AI Scenario Cards (agent.3, 13 + 1 cards, readable in text)</h3>
 <div class="proposal-table"><table><thead><tr><th>#</th><th>Scenario</th><th>Mechanism</th><th>Space</th><th>Privacy boundary</th></tr></thead><tbody><tr><td>SC-01</td><td>Nursery adoption: sponsor an AI service</td><td>Cultivation/Fixation</td><td>Adoption beds</td><td>Nickname + optional contact only</td></tr><tr><td>SC-02</td><td>Greenhouse: incubation application</td><td>Cultivation</td><td>Zhongzhiyuan greenhouse</td><td>Archive public (tech may be anonymized)</td></tr><tr><td>SC-03</td><td>Pump station: data/compute application</td><td>Irrigation</td><td>Data pump stations</td><td>Pool fully anonymized; records public</td></tr><tr><td>SC-04</td><td>Annual rings: Model Card public query</td><td>Pruning</td><td>Annual-ring plaza</td><td>Read-only public</td></tr><tr><td>SC-05</td><td>Pruning workshop: audit open day</td><td>Pruning</td><td>Audit workshop</td><td>No personal data</td></tr><tr><td>SC-06</td><td>Shade canopy: degradation &amp; human takeover</td><td>Shade</td><td>500m shade points</td><td>Takeover logs governance-only</td></tr><tr><td>SC-06b</td><td>Shade accessibility: 15-minute care circle</td><td>Shade/Irrigation</td><td>Shade points</td><td>Walkability design (15-min city principle [28])</td></tr><tr><td>SC-07</td><td>Rotation ceremony: retirement memorial</td><td>Rotation</td><td>Annual-ring plaza</td><td>Anonymized exhibit only</td></tr><tr><td>SC-08</td><td>Fixation plan: open-source reciprocity intake</td><td>Fixation</td><td>Symbiosis grove</td><td>Anonymized intake</td></tr><tr><td>SC-09</td><td>Nursery Night School: AI care training</td><td>Irrigation</td><td>AI Origin</td><td>Enrollment only for administration</td></tr><tr><td>SC-10</td><td>Qinghuayuan station AR heritage tour</td><td>Culture</td><td>Heritage park</td><td>Anonymous location, no tracking</td></tr><tr><td>SC-11</td><td>Orchard market: AI terminal consumption</td><td>Rotation</td><td>Dazhongsi</td><td>Transaction data only</td></tr><tr><td>SC-12</td><td>Gardeners&#x27; Assembly: annual AI horticulture festival</td><td>Events</td><td>Main nursery</td><td>No biometrics</td></tr><tr><td>SC-13</td><td><strong>Community shade corner: all-age-friendly service station</strong></td><td>Shade/Public interest</td><td>Community points</td><td>No personal data; accessible/elderly-friendly design</td></tr></tbody></table></div>
@@ -291,14 +243,17 @@ pre code {
 <h3>Phasing (conceptual, acceptance tied to metrics)</h3>
 <div class="proposal-table"><table><thead><tr><th>Phase</th><th>Period</th><th>Focus</th><th>Acceptance (metric-bound)</th></tr></thead><tbody><tr><td>I · Sowing</td><td>0–2 yrs</td><td>Greenhouses + adoption demo + shade standard</td><td>First 10 AI services complete trial; archive completeness 100%</td></tr><tr><td>II · Garden</td><td>2–4 yrs</td><td>Three beds open + audit workshop</td><td>Six mechanisms in routine operation; audit coverage 100%; irrigation records 100% public</td></tr><tr><td>III · Cycle</td><td>4–6 yrs</td><td>Rotation + fixation cycle + toolkit</td><td>First rotation ceremony; reciprocity rate ≥50%; toolkit released</td></tr></tbody></table></div>
 <p><em>Precondition: Phase I starts after land permit approval; otherwise deferred with public progress notices (deferral mechanism).</em></p>
-<div class="diagram-embed"><div class="diagram-embed-header">Phasing Plan · Sowing → Garden → Cycle</div><div class="diagram-embed-caption">Interactive lifecycle: Phase I Sowing (0-2y) → Phase II Garden (2-4y) → Phase III Cycle (4-6y), acceptance metrics bound to operations. Includes risk/deferral path.</div></div>
+<h3>Pilot Implementation Packs (verifiable path)</h3>
+<p>To ground “feasibility” in verifiable terms, the proposal designs three <strong>pilot implementation packs</strong>, each bound to explicit space, actors, metrics, and acceptance:</p>
+<div class="proposal-table"><table><thead><tr><th>Pack</th><th>Space</th><th>Actors</th><th>Verifiable metric (operational definition)</th><th>Acceptance</th></tr></thead><tbody><tr><td><strong>P-A Shade drill pilot</strong></td><td>500 m shade point at AI Origin station</td><td>Guardian Committee + third party + public rep</td><td>Takeover response time = red-event timestamp → manual-takeover-confirm timestamp (minutes); drills ≥2/yr</td><td>Response time &lt; target threshold (e.g., 30 min); drill report public</td></tr><tr><td><strong>P-B Adoption demo strip</strong></td><td>2 km Heritage Park segment</td><td>Park operator + community + developers</td><td>Adoption rate = adopted services / adoptable; tree-tag coverage = tagged / registered</td><td>First 50 services adopted and tagged</td></tr><tr><td><strong>P-C Irrigation equity pilot</strong></td><td>Data pump station, Zhongzhiyuan</td><td>Data trust + platform company</td><td>Fairness index = SME+university compute share / total quota (recomputable from allocation records); irrigation records public</td><td>Quarterly disclosure; SME+university quota share ≥40%</td></tr></tbody></table></div>
+<p><strong>Metric verifiability</strong>: all three packs can be recomputed post-delivery by a third party against the Appendix B mechanism cards (deterministic check examples in the Metrics section); data sources are respectively the guardian system, adoption ledger, and compute-platform allocation records, all machine-exportable [2][3].</p>
 <h3>Operation System (agent.6)</h3>
 <ul>
 <li><strong>Care calendar</strong>: the four seasons are <strong>ritual rhythm</strong> (sowing/growth/pruning/rotation seasons); governance triggers are <strong>event-driven</strong> (trial expiration, audit due, risk escalation, retirement conditions); annual audit is a rolling window + autumn public ceremony</li>
 <li>Annual events: Nursery Open Day (quarterly), AI Horticulture Festival (autumn), Gardeners&#x27; Assembly (winter), Shade Drill Open Competition (summer), Fixation hackathon (quarterly)</li>
 <li>Developer community: gardener community + contribution credits (exchange for bed priority/compute quota) + gardener CV + four-level night school + mentorship</li>
 <li><strong>Operation review and exit</strong>: annual audit results tied to contract renewal; two consecutive years below target trigger re-tendering (conceptual)</li>
-<li>International dissemination: <strong>mechanism documents open-sourced (CC-BY-4.0) + replication toolkit</strong> (factual statement, not &quot;world-first&quot;); &quot;spatialized governance&quot; concept communicated through academic dialogue [4][5]</li>
+<li>International dissemination: <strong>mechanism documents open-sourced (CC-BY-4.0) + replication toolkit</strong> (factual statement, not &quot;world-first&quot;); &quot;spatialized governance&quot; concept communicated through academic dialogue [4][5]; concrete paths: ① bilingual public mechanism docs + GitHub mirror (lower overseas adoption barrier); ② &quot;spatialized governance&quot; concept in international urban-governance/digital-government academic dialogue (e.g., AI &amp; SOCIETY, Urban AI directions); ③ annual Gardeners&#x27; Assembly hosts an international session (overseas scholars/open-source community online); ④ replication toolkit supports English use-cases, output under a Belt-and-Road smart-city cooperation framework (as an open protocol, not a government commitment)</li>
 <li>Attraction-conversion: attract (incubation recruitment/night school) → cultivate (greenhouse) → transplant (graduation placement) → harvest (commercialization) → cycle (fixation)</li>
 <li><strong>Funding and implementation path (conceptual)</strong>: operating model = government-led + platform-company operation (adoption fees/seedbed leases/scenario revenue, three income streams); funding matrix = fiscal guidance + platform capital + social capital + scenario revenue; no precise estimates, only the logical framework (official data pending)</li>
 <li><strong>All events/investment/policy are conceptual proposals, not confirmed government arrangements</strong> [2]</li>

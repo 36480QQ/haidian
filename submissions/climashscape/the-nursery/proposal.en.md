@@ -83,16 +83,18 @@ Cultivation → Irrigation → Pruning → Shade → Rotation
 
 The design process of this proposal is itself evidence of AI×planning innovation: ① **LLM-assisted concept generation**: the nursery metaphor and six-mechanism system were iterated through multi-round LLM brainstorming and adversarial review (aligned with Zheng 2025's LLM planning framework [6]); ② **Automated geometry recalculation**: district areas were measured from GeoJSON with Python and cross-checked against the announced approximate areas; ③ **Automated compliance mapping**: all 15 requirements in compliance_matrix machine-mapped; ④ **Four-dimensional adversarial review**: method/theory/data/result independent sub-session review → revision → re-review loop. This workflow demonstrates the "human-led, AI-augmented" planning paradigm (echoing Liu et al. 2025 [10]); the proposal files and AI-work traces are verifiable.
 
-### Three-District Two-Wing Synergy Loop
+### Three-District Two-Wing Synergy Loop (aligned with the official structure)
 
 ```
-University seed providers (AI Origin) ──knowledge drip──▶ Zhongzhiyuan nursery ──transfer──▶ Dazhongsi orchard
+University germplasm (Zhongguancun Tech-Service Wing) ──knowledge drip──▶ Zhongzhiyuan main nursery ──transfer──▶ Dazhongsi orchard (fruiting)
         ▲                                                                                    │
         └──────────── nitrogen-fixation feedback (open-source models/data/experience) ◀───────┘
                                    │
-                         Pruning audit feedback (annual-ring plaza → whole belt)
+              Xiaoyuehe Scenario-Empowerment Wing (AI scenario deployment) + pruning-audit feedback (annual-ring plaza → whole belt)
 ```
-- West wing = university belt (seed providers); East wing = Zhongguancun innovation corridor (nutrient supply); loop closure = annual-ring plaza
+- **Three districts** (official): AI Origin Community (world-class AI innovation ecosystem) / Zhongzhiyuan AI Independent-Innovation Acceleration Area (full-stack AI self-reliance + global voice in AI governance) / Dazhongsi AI Industry Cluster (AI-native new business formats)
+- **Two wings** (official): **Zhongguancun Technology Service Wing** (global allocation of factors, Zhongguancun IP & capital empowerment — incl. university germplasm providers / developer talent / open-source capital, active-breeding role); **Xiaoyuehe Scenario Empowerment Wing** (AI scenario enablement and an intelligently vibrant AI city — scenario deployment, testing & validation, perceivable scenarios)
+- Loop closure = annual-ring plaza; the irrigation-canal cross network links both wings, and commercialized orchard outputs are distributed city-wide through the Xiaoyuehe scenario wing
 
 ### Global AI Innovation Ecosystem Cases (agent.2, 7 cases)
 
@@ -108,13 +110,27 @@ University seed providers (AI Origin) ──knowledge drip──▶ Zhongzhiyuan
 
 **Ecosystem map**: six mechanisms = soil layer; five actor types = biological layer (enterprises = seedbed operators / universities = seed providers / developers = gardeners / **the public = wardens (independent niche)** / government = guardians); each actor has a niche and reciprocity obligation; loop = irrigation supply → cultivation growth → pruning feedback → nitrogen fixation return. **The public hold an independent niche** (beneficiaries-overseers) with seats and voting rights on the Guardian Committee (see the Six-Mechanism Governance System, Shade mechanism).
 
+### Regional Synergy (Innovation Belt & Beijing Science-City Network)
+
+The nursery is not an isolated park but a **seed node** on Beijing's northern innovation corridor, forming a “germplasm interchange, shared nutrients, results routing” loop with surrounding science cities:
+
+| Partner | Synergy content | Nursery mechanism |
+|---|---|---|
+| **Future Science City** | Central-SOE R&D + major science infrastructure | Canal network extends east; takes spillover pilot/compute demand; “germplasm exchange” channel |
+| **Huairou Science City** | Major research facilities (high-energy synchrotron etc.) | Upstream supplement to university seed providers; basic research “dripped” into cultivation |
+| **Beiwu Community** | Youth talent community (near Future Science City) | Shared youth-friendly mechanisms; Night School linked with community hubs |
+| **Economic Development Zone** | Smart manufacturing + industrialization | Receives commercialization routing from the Orchard (Dazhongsi); “harvest transport” links to industrial landing |
+| **Jing-Jin-Ji** | Regional collaborative innovation network | Open-source mechanism docs (CC-BY-4.0) + replication toolkit to Xiong'an/Tianjin/Shijiazhuang |
+
+**Synergy logic**: with the canal network as the “nutrient channel,” the nursery connects upstream basic research in the science cities with downstream industrialization in the Economic Development Zone, avoiding duplicative “small-but-complete” AI parks; the six mechanisms act as a replicable governance protocol, making the nursery an institutional interface for belt-wide synergy rather than an isolated node [2][3].
+
 ![Key areas index and design task map](assets/figures/key-areas.png)
 
 ## Overall Design Scope: Urban Renewal and Regulatory-Depth Urban Design
 
 ### Spatial Structure: Spine–Beds–Wings–Ring
 
-One spine (rail main axis; measured spine green belt in green_space.geojson: a ~400 m typical-width conceptual corridor on the inter-district stretch, ~578 ha total incl. embedded green wedges) connects three beds (Seedbed/Greenhouse/Orchard); two wings (university belt/Zhongguancun corridor) supply nutrients; one ring (annual-ring plaza) is the governance hub. **The irrigation canal network forms a cross**: a north-south main line linking the three beds and an east-west transverse connecting the wings (roads.geojson, dual segments, doubling as slow-traffic corridors) [3].
+One spine (rail main axis; measured spine green belt in green_space.geojson: a ~400 m typical-width conceptual corridor on the inter-district stretch, ~578 ha total incl. embedded green wedges) connects three beds (Seedbed/Greenhouse/Orchard); two wings (**Zhongguancun Technology Service Wing** = IP/capital/university-germplasm empowerment; **Xiaoyuehe Scenario Empowerment Wing** = AI scenario deployment) supply nutrients; one ring (annual-ring plaza) is the governance hub. **The irrigation canal network forms a cross**: a north-south main line linking the three beds and an east-west transverse connecting the wings (roads.geojson, dual segments, doubling as slow-traffic corridors) [3].
 
 ### Urban Renewal Framework (conceptual)
 
@@ -169,7 +185,7 @@ Landmark: "Basket Plaza" at the orchard entrance (annual showcase of mature AI s
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-### User Personas (agent.3, 5 types)
+### User Personas (agent.3, 5+1 types)
 
 | # | Persona | Needs | Key scenarios | Depth |
 |---|---|---|---|---|
@@ -178,6 +194,9 @@ Landmark: "Basket Plaza" at the orchard entrance (annual showcase of mature AI s
 | P3 | University faculty/students (seed providers) | Industry-academia integration, commercialization, talent zone | Incubation/night school | Deep |
 | P4 | Nearby residents (wardens) | Public space, AI trustworthiness, **oversight participation** | Shade points/committee | Med-deep (oversight seat) |
 | P5 | Government operator/auditor | Risk compliance, accountability, metrics | Audit/guardian | Governance body |
+| **P6** | **Tourists/visitors (Jing-Zhang heritage + AI experience)** | Heritage guide, AI scenario experience, safety boundaries | Heritage park/Orchard market/Gardeners' Assembly | Light-med (experiencers) |
+
+**Public-interest coverage**: residents (P4 warden oversight seat), youth talent (P1/P3 Night School & apprenticeship), enterprises (P2 commercialization), universities (P3 seed providers), tourists (P6 heritage+AI experience, incl. accessibility & multilingual guide), and vulnerable groups (SC-13 all-age shade corner with accessibility clauses) — six actor types with explicit mechanisms. The tourist persona stresses **AI-scenario perceptibility and safety boundaries** (no biometric collection; anonymous AR guide positioning).
 
 **Youth-friendliness support**: the official wording on "public space activation and youth-friendliness" is operationalized through the youth mechanisms (Night School, student-gardener apprenticeship, affordable youth housing), aligned with the "space–activity–mechanism" path in youth-friendly city research [9].
 
@@ -278,13 +297,25 @@ Landmarks are conceptual designs, not approved constructions; no unauthorized po
 
 *Precondition: Phase I starts after land permit approval; otherwise deferred with public progress notices (deferral mechanism).*
 
+### Pilot Implementation Packs (verifiable path)
+
+To ground “feasibility” in verifiable terms, the proposal designs three **pilot implementation packs**, each bound to explicit space, actors, metrics, and acceptance:
+
+| Pack | Space | Actors | Verifiable metric (operational definition) | Acceptance |
+|---|---|---|---|---|
+| **P-A Shade drill pilot** | 500 m shade point at AI Origin station | Guardian Committee + third party + public rep | Takeover response time = red-event timestamp → manual-takeover-confirm timestamp (minutes); drills ≥2/yr | Response time < target threshold (e.g., 30 min); drill report public |
+| **P-B Adoption demo strip** | 2 km Heritage Park segment | Park operator + community + developers | Adoption rate = adopted services / adoptable; tree-tag coverage = tagged / registered | First 50 services adopted and tagged |
+| **P-C Irrigation equity pilot** | Data pump station, Zhongzhiyuan | Data trust + platform company | Fairness index = SME+university compute share / total quota (recomputable from allocation records); irrigation records public | Quarterly disclosure; SME+university quota share ≥40% |
+
+**Metric verifiability**: all three packs can be recomputed post-delivery by a third party against the Appendix B mechanism cards (deterministic check examples in the Metrics section); data sources are respectively the guardian system, adoption ledger, and compute-platform allocation records, all machine-exportable [2][3].
+
 ### Operation System (agent.6)
 
 - **Care calendar**: the four seasons are **ritual rhythm** (sowing/growth/pruning/rotation seasons); governance triggers are **event-driven** (trial expiration, audit due, risk escalation, retirement conditions); annual audit is a rolling window + autumn public ceremony
 - Annual events: Nursery Open Day (quarterly), AI Horticulture Festival (autumn), Gardeners' Assembly (winter), Shade Drill Open Competition (summer), Fixation hackathon (quarterly)
 - Developer community: gardener community + contribution credits (exchange for bed priority/compute quota) + gardener CV + four-level night school + mentorship
 - **Operation review and exit**: annual audit results tied to contract renewal; two consecutive years below target trigger re-tendering (conceptual)
-- International dissemination: **mechanism documents open-sourced (CC-BY-4.0) + replication toolkit** (factual statement, not "world-first"); "spatialized governance" concept communicated through academic dialogue [4][5]
+- International dissemination: **mechanism documents open-sourced (CC-BY-4.0) + replication toolkit** (factual statement, not "world-first"); "spatialized governance" concept communicated through academic dialogue [4][5]; concrete paths: ① bilingual public mechanism docs + GitHub mirror (lower overseas adoption barrier); ② "spatialized governance" concept in international urban-governance/digital-government academic dialogue (e.g., AI & SOCIETY, Urban AI directions); ③ annual Gardeners' Assembly hosts an international session (overseas scholars/open-source community online); ④ replication toolkit supports English use-cases, output under a Belt-and-Road smart-city cooperation framework (as an open protocol, not a government commitment)
 - Attraction-conversion: attract (incubation recruitment/night school) → cultivate (greenhouse) → transplant (graduation placement) → harvest (commercialization) → cycle (fixation)
 - **Funding and implementation path (conceptual)**: operating model = government-led + platform-company operation (adoption fees/seedbed leases/scenario revenue, three income streams); funding matrix = fiscal guidance + platform capital + social capital + scenario revenue; no precise estimates, only the logical framework (official data pending)
 - **All events/investment/policy are conceptual proposals, not confirmed government arrangements** [2]
