@@ -29,7 +29,7 @@ const PKG = path.resolve(HERE, "../../..");
 const AUDITOR = "claims-audit.js";
 const RUNNER = "protocol-check-runner.js";
 
-/* 这份 61 项 ID 全集是**刻意重复**的第二份来源。
+/* 这份 62 项 ID 全集是**刻意重复**的第二份来源。
    claims-audit.js 里也有一份；两份不一致就说明有人动了其中一份，本文件会报错。
    判据与被测对象放在同一处，等于没有判据。 */
 const IDS = [
@@ -39,7 +39,7 @@ const IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "G4", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "Z1",
+  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "Z1",
 ];
 const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48, rollback_evidence_checks: 12 };
 /* protocol-check-runner.js 里也有一份 ENUM_SCALE 与 FAIL_CLOSED_SMART_LAYER。这里
@@ -92,7 +92,7 @@ const cases = [];
 const positive = (label, fn) => cases.push({ label, kind: "正向", fn });
 const negative = (label, fn) => cases.push({ label, kind: "阴性", fn });
 
-positive("claims-audit.js 全部通过，且恰好跑 61 项、ID 与本文件独立记录的全集逐位相同", () => {
+positive("claims-audit.js 全部通过，且恰好跑 62 项、ID 与本文件独立记录的全集逐位相同", () => {
   const r = runAuditor();
   if (r.code !== 0) return `退出码 ${r.code}，应为 0：${(failedIds(r).join("、") || r.stderr).slice(0, 300)}`;
   if (!r.json || r.json.all_match !== true) return "all_match 不为真";
@@ -300,6 +300,11 @@ negInput("场景卡把落点写回「城市交接场维修驿」—— 复刻 20
 
 negInput("连接段卡片只把里程数字改错 0.5 km —— 落点归属仍对，只有里程对不上几何",
   { "proposal.md": textOf("proposal.md").replace("主轴里程约 7.2 km", "主轴里程约 7.7 km") }, ["G5"]);
+
+negInput("英文正文的指标计数退回旧值 68/54 —— 复刻 2026-08-22 修掉的那处：中文写对、英文没跟着改，且英文内部算术自洽（68−54＝14）所以只看英文看不出来",
+  { "proposal.en.md": textOf("proposal.en.md")
+      .replace("**70 metrics, 56 of them valued", "**68 metrics, 54 of them valued")
+      .replace("The 56 valued metrics", "The 54 valued metrics") }, ["M9"]);
 
 const negRunner = (label, files, want) => negative(label, () => {
   const dir = overlayWith(files);

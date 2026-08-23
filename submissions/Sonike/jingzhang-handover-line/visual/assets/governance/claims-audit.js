@@ -818,6 +818,38 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
         : `12 张（交接场内 ${nYard}／连接段 ${nLink}／沿主轴 ${nSpine}）全部相符`);
 }
 
+/* M9. 中英两侧自陈的指标计数都必须与 metrics.json 实算相符。
+   2026-08-22 抓到的一处真错：`metrics.json` 实为 70 项／56 已赋值／14 待测，中文正文写对了，
+   而**英文正文两处仍写「68 metrics, 54 of them valued」**——指标从 68 涨到 70 时英文没跟着改，
+   而且它内部算术自洽（68−54＝14），所以只看英文看不出来。这是本包第五次「新工作做完、旧字段没同步」。
+   M1 只核中文侧，因此这一项专核**双语两侧**：从两份正文里分别抓「N 项指标／M 项已赋值」与
+   「N metrics, M of them valued」，与 metrics.json 实算逐位比对。四个数（zh N/M、en N/M）
+   必须全部抓到——抓不到即判失败，不跳过。 */
+{
+  const total = Object.keys(metrics).length;
+  const valuedN = Object.values(metrics).filter((m) => m.value !== null && m.value !== undefined).length;
+  const en = fs.readFileSync(resolveIn(PKG, "proposal.en.md"), "utf8");
+  const zhM = prose.match(/\*\*(\d+)\s*项指标[，,]\s*(\d+)\s*项已赋值/);
+  const enM = en.match(/\*\*(\d+)\s+metrics,\s*(\d+)\s+of them valued/);
+  const enM2 = en.match(/The\s+(\d+)\s+valued metrics/);
+  const problems = [];
+  if (!zhM) problems.push("中文正文里抓不到「N 项指标，M 项已赋值」");
+  else {
+    if (Number(zhM[1]) !== total) problems.push(`中文自陈 ${zhM[1]} 项，实为 ${total}`);
+    if (Number(zhM[2]) !== valuedN) problems.push(`中文自陈已赋值 ${zhM[2]}，实为 ${valuedN}`);
+  }
+  if (!enM) problems.push("英文正文里抓不到「N metrics, M of them valued」");
+  else {
+    if (Number(enM[1]) !== total) problems.push(`英文自陈 ${enM[1]} metrics，实为 ${total}`);
+    if (Number(enM[2]) !== valuedN) problems.push(`英文自陈 valued ${enM[2]}，实为 ${valuedN}`);
+  }
+  if (!enM2) problems.push("英文正文里抓不到「The N valued metrics」");
+  else if (Number(enM2[1]) !== valuedN) problems.push(`英文「The ${enM2[1]} valued metrics」，实为 ${valuedN}`);
+  add("M9", `中英正文自陈的指标计数与 metrics.json 实算一致（共 ${total} 项 ／ 已赋值 ${valuedN} 项，两侧三处自陈全部相符）`,
+      problems.length === 0,
+      problems.length ? problems.join("；") : `zh ${total}/${valuedN}、en ${total}/${valuedN}、en 复述 ${valuedN} 逐位相符`);
+}
+
 /* Z. 元检查：断言检查清单本身没有缺项。
    审计器最危险的失效方式不是「某一项判错」，而是「某一项悄悄没跑」——
    条件式 add() 会让检查总数变少而 all_match 仍为真。2026-08-20 实测过这个洞：
@@ -837,7 +869,7 @@ const EXPECTED_IDS = [
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
   "G1", "G2", "G3", "G4", "H1", "I1",
-  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5",
+  "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9",
   "Z1",
 ];
 {
