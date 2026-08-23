@@ -78,9 +78,20 @@ class Decision:
 
 
 def run(command: list[str], *, cwd: Path, capture: bool = True) -> subprocess.CompletedProcess[str]:
-    completed = subprocess.run(command, cwd=cwd, text=True, capture_output=capture, check=False)
+    completed = subprocess.run(
+        command,
+        cwd=cwd,
+        text=True,
+        capture_output=capture,
+        encoding="utf-8",
+        errors="replace",
+        env={**os.environ, "PYTHONUTF8": "1", "PYTHONIOENCODING": "utf-8"},
+        check=False,
+    )
     if completed.returncode:
-        detail = completed.stderr.strip() or completed.stdout.strip() or "command failed"
+        stdout = completed.stdout or ""
+        stderr = completed.stderr or ""
+        detail = stderr.strip() or stdout.strip() or "command failed"
         raise WorkerError(f"{command[0]} failed: {detail}")
     return completed
 
