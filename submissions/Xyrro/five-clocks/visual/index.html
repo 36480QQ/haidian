@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>京张五速 THE FIVE CLOCKS</title>
+<style>
+:root { --ink:#1f2933; --mut:#7b8794; --grid:#e4e7eb; --paper:#fcfcfb;
+  --l1:#2f6f9f; --l2:#b08514; --l3:#8a3a45; --l4:#5567a8; --l5:#20876b; }
+* { box-sizing:border-box; margin:0; }
+body { font-family:'PingFang SC','Microsoft YaHei','WenQuanYi Zen Hei',system-ui,sans-serif;
+  color:var(--ink); background:var(--paper); line-height:1.7; }
+.wrap { max-width:1100px; margin:0 auto; padding:0 20px; }
+header.hero { text-align:center; padding:56px 16px 40px;
+  background:linear-gradient(180deg,#f4f7f9 0%,var(--paper) 100%); }
+.dial { position:relative; width:320px; height:320px; margin:24px auto; }
+.ring { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  border:3px solid; border-radius:50%; animation:spin linear infinite; }
+.tick { position:absolute; top:-6px; left:50%; width:5px; height:14px; border-radius:2px; }
+@keyframes spin { from { transform:translate(-50%,-50%) rotate(0deg); } to { transform:translate(-50%,-50%) rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .ring { animation:none; } }
+h1 { font-size:2.2rem; letter-spacing:.02em; }
+.sub { color:var(--mut); margin-top:8px; }
+.doctrine { max-width:720px; margin:20px auto 0; font-size:1.05rem; color:var(--l3); }
+.notice { background:#fdf3f2; border:1px solid #f0d9d6; color:#8a3a45; border-radius:10px;
+  padding:14px 18px; margin:26px auto; max-width:860px; font-size:.95rem; }
+nav { position:sticky; top:0; background:rgba(252,252,251,.96); border-bottom:1px solid var(--grid);
+  z-index:9; padding:9px 0; text-align:center; font-size:.9rem; }
+nav a { color:var(--mut); text-decoration:none; margin:0 9px; }
+nav a:hover { color:var(--ink); }
+section { padding:44px 0 10px; }
+h2 { font-size:1.45rem; border-left:6px solid var(--l2); padding-left:12px; margin-bottom:16px; }
+h3 { margin:18px 0 8px; }
+figure { margin:18px 0; } figure img { width:100%; border:1px solid var(--grid); border-radius:8px; }
+figcaption { font-size:.85rem; color:var(--mut); margin-top:6px; }
+.layer { background:#fff; border:1px solid var(--grid); border-radius:8px; margin:10px 0; padding:4px 16px; }
+.layer summary { cursor:pointer; padding:10px 0; font-size:1.02rem; }
+.layer p { padding:0 0 12px; color:var(--ink); }
+.grid { display:grid; gap:14px; } .g3 { grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+.card { background:#fff; border:1px solid var(--grid); border-radius:10px; padding:14px 16px; position:relative; }
+.cid { position:absolute; top:10px; right:14px; color:var(--l5); font-weight:700; }
+.card h4 { margin-bottom:2px; } .mut { color:var(--mut); font-size:.85rem; }
+.parity { font-size:.88rem; color:var(--l3); }
+.metric { background:#fff; border:1px solid var(--grid); border-radius:10px; padding:12px 14px; text-align:center; }
+.metric.known { border-color:var(--l2); }
+.mv { font-size:1.25rem; font-weight:700; } .metric.pending .mv { font-size:.9rem; color:var(--mut); font-weight:400; }
+.mk { font-size:.72rem; color:var(--mut); font-family:ui-monospace,monospace; word-break:break-all; }
+table { border-collapse:collapse; width:100%; font-size:.86rem; }
+td, th { border-bottom:1px solid var(--grid); padding:7px 9px; text-align:left; vertical-align:top; }
+.mono { font-family:ui-monospace,monospace; font-size:.8rem; white-space:nowrap; }
+.ok { color:#20876b; font-weight:700; }
+ul.tasks { list-style:none; } ul.tasks li { padding:5px 0; }
+footer { padding:40px 0 60px; color:var(--mut); font-size:.85rem; text-align:center; }
+.lang { position:absolute; top:14px; right:18px; font-size:.9rem; }
+.lang a { color:var(--l1); }
+.statgrid { grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); }
+</style>
+</head>
+<body>
+<div class="lang"><a href="index.en.html">English</a></div>
+<header class="hero">
+  <div class="dial" role="img" aria-label="五环刻度盘：五个转速不同的环"><div class="ring" style="width:300px;height:300px;border-color:#2f6f9f;animation-duration:240s"><span class="tick" style="background:#2f6f9f"></span></div><div class="ring" style="width:248px;height:248px;border-color:#b08514;animation-duration:120s"><span class="tick" style="background:#b08514"></span></div><div class="ring" style="width:196px;height:196px;border-color:#8a3a45;animation-duration:60s"><span class="tick" style="background:#8a3a45"></span></div><div class="ring" style="width:144px;height:144px;border-color:#5567a8;animation-duration:24s"><span class="tick" style="background:#5567a8"></span></div><div class="ring" style="width:92px;height:92px;border-color:#20876b;animation-duration:6s"><span class="tick" style="background:#20876b"></span></div></div>
+  <h1>京张五速 <span style="color:var(--l2)">THE FIVE CLOCKS</span></h1>
+  <p class="sub">为下一个百年，设计一个不需要重画的底盘</p>
+  <p class="doctrine">五个速度不同的层：任何快层只能「租用」慢层，不得改写慢层；变更难度与层速成反比。</p>
+  <div class="notice"><b>临时边界声明</b> · 本页全部空间内容基于仓库临时粗略边界（provisional_rough）生成：不是官方红线，不得作为审批依据或精确面积复算依据；官方边界公布后整体复算。全部空间结论为概念建议。</div>
+</header>
+<nav>
+  <a href="#map">总览地图</a><a href="#scopes">三层范围</a>
+  <a href="#areas">重点区域</a><a href="#landuse">用地分区</a>
+  <a href="#mobility">交通慢行</a><a href="#bluegreen">蓝绿公共空间</a>
+  <a href="#buildings">建筑</a><a href="#projects">更新项目</a>
+  <a href="#scenarios">AI 场景</a><a href="#metrics">核心指标</a>
+  <a href="#coverage">任务覆盖</a><a href="#selfcheck">自检状态</a>
+  <a href="#sources">来源</a><a href="#assumptions">假设</a>
+</nav>
+<div class="wrap">
+
+<section id="map"><h2>总览地图 · 五速总图</h2>
+<figure><img src="../assets/figures/site-overview.png" alt="五层分解轴测总图">
+<figcaption>图 1 · 五层分解轴测。概念示意；临时边界；非官方红线。</figcaption></figure>
+<h3>五层手风琴</h3><details class="layer" style="border-left:6px solid #2f6f9f">
+<summary><b style="color:#2f6f9f">L1 河钟 · 场地水文</b> · 500 年+</summary>
+<p>清河、小月河与滨水缓冲。工具：蓝绿保护线。程序：不可议。</p></details><details class="layer" style="border-left:6px solid #b08514">
+<summary><b style="color:#b08514">L2 线钟 · 线位街网</b> · 100 年</summary>
+<p>京张线位与骨干通行权；新增预留线位 3+1。工具：线位保护图则。程序：25 年复线大会。</p></details><details class="layer" style="border-left:6px solid #8a3a45">
+<summary><b style="color:#8a3a45">L3 块钟 · 街块颗粒</b> · 50 年</summary>
+<p>街块与产权颗粒、地役权。工具：颗粒度导则+地役权条款。程序：听证。</p></details><details class="layer" style="border-left:6px solid #5567a8">
+<summary><b style="color:#5567a8">L4 面钟 · 断面支撑</b> · 15–30 年</summary>
+<p>弹性断面、0.8–1.5 m 设备带、管廊余量、SI 体系。工具：断面图集。程序：规划许可。</p></details><details class="layer" style="border-left:6px solid #20876b">
+<summary><b style="color:#20876b">L5 器钟 · 设备与 AI</b> · 0.5–5 年</summary>
+<p>一切 AI 设备与界面。工具：租约制五要素+账牌+押金池。程序：备案，到期默认退出。</p></details></section>
+
+<section id="scopes"><h2>三层范围</h2>
+<p>统筹研究范围 43.6 km²（速度结构与区域协同）· 总体设计范围 11.4 km²（五速控规）· 重点区域 368.4 ha（三区五速角色）。</p></section>
+
+<section id="areas"><h2>重点区域</h2>
+<figure><img src="../assets/figures/key-areas.png" alt="三区五速角色">
+<figcaption>图 3 · 众智园=L5 试验区；原点社区=L3 试点；大钟寺=L2 枢纽+文化。</figcaption></figure></section>
+
+<section id="landuse"><h2>用地分区（概念镶嵌）</h2>
+<figure><img src="../assets/figures/land-use-structure.png" alt="分层管控引导图">
+<figcaption>图 2 · 每条管控指标 = 内容 + 锁定层位 + 复评周期。</figcaption></figure></section>
+
+<section id="mobility"><h2>交通慢行与预留线位</h2>
+<figure><img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿复合系统">
+<figcaption>图 4 · 三条东西向预留线位 + 纵向慢行冗余线 + 两条地役权 + 设备带示范街。</figcaption></figure>
+<p style="color:var(--l3)"><b>「机器人需要」永远不是修改街网的理由。</b></p></section>
+
+<section id="bluegreen"><h2>蓝绿公共空间</h2>
+<p>L1 河钟不可议：清河与小月河为水文恒层；绿廊+蓝绿界面 = 绿地占比 21.6%；连续步行界面 + 五钟广场 + 设备带 = 公共空间 4.0%。</p></section>
+
+<section id="buildings"><h2>建筑（示范性概念基底）</h2>
+<p>九处概念基底共约 5.3 万 m²：断面塔、租约服务站、三栋青年公寓、组件库工坊、两处测试场用房、展贸厅。制度的空间道具，不是开发量方案；新建建筑建议 SI 支撑体/填充体分离。</p></section>
+
+<section id="projects"><h2>更新项目 R-01…R-10</h2>
+<p>一期（0–1 年）全部零施工：图则、颗粒普查、租约系统、策划、基线档案；二期示范街与年表带；三期线位与颗粒试点择机兑现；四期复线大会周期运转。每项目附退出条件，依赖链 ≤ 2。</p></section>
+
+<section id="scenarios"><h2>AI 场景 · 十二张租约卡</h2>
+<div class="grid g3"><div class="card"><div class="cid">S01</div>
+<h4>低速配送机器人</h4><p class="mut">Low-speed delivery robots</p>
+<p>所租层位: <b>L4+L2</b> · 租期: <b>2年 2y</b></p>
+<p class="parity">等价路径: 雪雨天降级人工</p></div><div class="card"><div class="cid">S02</div>
+<h4>无人接驳微循环</h4><p class="mut">Autonomous micro-shuttle</p>
+<p>所租层位: <b>L4</b> · 租期: <b>3年 3y</b></p>
+<p class="parity">等价路径: 常规公交与步行</p></div><div class="card"><div class="cid">S03</div>
+<h4>AI 文化导览</h4><p class="mut">AI heritage guide</p>
+<p>所租层位: <b>L4</b> · 租期: <b>1年 1y</b></p>
+<p class="parity">等价路径: 实体导览牌与人工讲解</p></div><div class="card"><div class="cid">S04</div>
+<h4>AI 医疗导航站</h4><p class="mut">AI health-navigation kiosk</p>
+<p>所租层位: <b>L3</b> · 租期: <b>2年 2y</b></p>
+<p class="parity">等价路径: 线下人工窗口（法定）</p></div><div class="card"><div class="cid">S05</div>
+<h4>企业服务 copilot 亭</h4><p class="mut">Enterprise copilot booth</p>
+<p>所租层位: <b>L4</b> · 租期: <b>1年 1y</b></p>
+<p class="parity">等价路径: 人工企业服务窗口</p></div><div class="card"><div class="cid">S06</div>
+<h4>公共安全复盘屏</h4><p class="mut">Safety operations review screen</p>
+<p>所租层位: <b>L4</b> · 租期: <b>2年 2y</b></p>
+<p class="parity">等价路径: 纸质公示与例会</p></div><div class="card"><div class="cid">S07</div>
+<h4>高校 AI 开放课桌</h4><p class="mut">Campus open AI desks</p>
+<p>所租层位: <b>L3</b> · 租期: <b>1年 1y</b></p>
+<p class="parity">等价路径: 传统自习与面授</p></div><div class="card"><div class="cid">S08</div>
+<h4>夜间清扫（时间租约）</h4><p class="mut">Night cleaning (time lease)</p>
+<p>所租层位: <b>L2·夜 night</b> · 租期: <b>2年 2y</b></p>
+<p class="parity">等价路径: 日间人工保洁</p></div><div class="card"><div class="cid">S09</div>
+<h4>算力余热接口（判层卡）</h4><p class="mut">Waste-heat interface (decoy)</p>
+<p>所租层位: <b>L4</b> · 租期: <b>10年 10y</b></p>
+<p class="parity">等价路径: 常规市政热源</p></div><div class="card"><div class="cid">S10</div>
+<h4>五钟广场装置</h4><p class="mut">Plaza installation</p>
+<p>所租层位: <b>L5</b> · 租期: <b>1年 1y</b></p>
+<p class="parity">等价路径: 静态展陈</p></div><div class="card"><div class="cid">S11</div>
+<h4>测试场速度隔离</h4><p class="mut">Test-field segregation</p>
+<p>所租层位: <b>专用 dedicated</b> · 租期: <b>—</b></p>
+<p class="parity">等价路径: 测试→租约转化通道</p></div><div class="card"><div class="cid">S12</div>
+<h4>年度底盘日</h4><p class="mut">Annual Chassis Day</p>
+<p>所租层位: <b>全带 belt</b> · 租期: <b>1小时/年 1h/y</b></p>
+<p class="parity">等价路径: 演练对象即等价路径</p></div></div>
+<p style="margin-top:12px" class="mut">全部押金为演示口径；非 AI 等价路径是每份租约的法定条款；到期默认退出。</p></section>
+
+<section id="metrics"><h2>核心指标</h2>
+<div class="grid statgrid">
+<div class="metric known"><div class="mv"><span data-metric="site_area_sqm" data-value="11412825.386">11,412,825</span><small> m²</small></div><div class="mk">site_area_sqm （临时口径）</div></div>
+<div class="metric known"><div class="mv"><span data-metric="green_ratio" data-value="0.215692">21.6%</span></div><div class="mk">green_ratio</div></div>
+<div class="metric known"><div class="mv"><span data-metric="public_space_ratio" data-value="0.040438">4.0%</span></div><div class="mk">public_space_ratio</div></div>
+</div>
+<h3>五速指标盘</h3>
+<div class="grid statgrid"><div class="metric known"><div class="mv">0<small> count</small></div><div class="mk">slow_layer_change_count</div></div><div class="metric known"><div class="mv">4<small> count</small></div><div class="mk">reserved_row_count</div></div><div class="metric known"><div class="mv">13150.9<small> m</small></div><div class="mk">reserved_row_length_m</div></div><div class="metric known"><div class="mv">2<small> count</small></div><div class="mk">easement_passage_count</div></div><div class="metric known"><div class="mv">1.555<small> km</small></div><div class="mk">device_band_coverage_km</div></div><div class="metric known"><div class="mv">1<small> ratio</small></div><div class="mk">non_ai_parity_coverage</div></div><div class="metric known"><div class="mv">25<small> years</small></div><div class="mk">centennial_review_interval_years</div></div><div class="metric known"><div class="mv">1000<small> m</small></div><div class="mk">timeline_paving_length_m</div></div><div class="metric known"><div class="mv">6<small> count</small></div><div class="mk">component_library_items</div></div><div class="metric known"><div class="mv">12<small> count</small></div><div class="mk">scenario_card_count</div></div><div class="metric known"><div class="mv">0.8478<small> ratio</small></div><div class="mk">superblock_area_share</div></div><div class="metric known"><div class="mv">0.662<small> ha</small></div><div class="mk">median_block_area_ha</div></div><div class="metric known"><div class="mv">66<small> count</small></div><div class="mk">superblock_count</div></div><div class="metric known"><div class="mv">8<small> count</small></div><div class="mk">ew_crossing_count</div></div><div class="metric known"><div class="mv">1247.2<small> m</small></div><div class="mk">spine_to_corridor_offset_m</div></div><div class="metric pending"><div class="mv">待正式数据补齐</div><div class="mk">speed_diversity_index</div></div><div class="metric pending"><div class="mv">待正式数据补齐</div><div class="mk">lease_active_count</div></div><div class="metric pending"><div class="mv">待正式数据补齐</div><div class="mk">corridor_conduit_headroom_years</div></div><div class="metric pending"><div class="mv">待正式数据补齐</div><div class="mk">floor_area_ratio</div></div></div>
+<p class="mut">三项视觉核验指标由本包几何在 EPSG:4548 下复算（临时边界，低置信度）；「待正式数据补齐」为诚实状态，非缺项。</p></section>
+
+<section id="coverage"><h2>任务覆盖</h2>
+<ul class="tasks"><li>✓ agent.1 命名/Logo/结构 Naming & structure</li><li>✓ agent.2 生态案例×8 Ecosystem cases</li><li>✓ agent.3 场景卡×12+画像×6 Scenarios & personas</li><li>✓ agent.4 地标×4+组件库 Landmarks & components</li><li>✓ agent.5 文化叙事 Cultural narrative</li><li>✓ agent.6 长期运营 Long-term operations</li></ul>
+<p>公告 1.3 / 1.4 / 1.5 全部条目与 agent.1–agent.6 已在任务覆盖矩阵中逐项映射到章节、图层、指标、图纸与本页。</p></section>
+
+<section id="selfcheck"><h2>自检状态</h2>
+<p><span class="ok">✓</span> 确定性校验 · 空间复核 · 视觉核验 · 专业证据链 —— 提交前四门全部本地通过（结果存 self_check.json）。
+临时边界警示按规则保留。</p></section>
+
+<section id="sources"><h2>来源（39 条）</h2>
+<table><tr><th>ID</th><th>题名/用途</th><th>发布者</th></tr><tr><td class="mono">SITE-PACKAGE</td><td>Project brief, enums, allowed design space, ranges, and schemas.</td><td>brief/site-package/</td></tr><tr><td class="mono">SOURCE-REGISTRY</td><td>Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials.</td><td>data/source_registry.json</td></tr><tr><td class="mono">PROCESSED-FACT-PACK</td><td>Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source.</td><td>data/processed/agent_fact_pack.md</td></tr><tr><td class="mono">BOUNDARY-SOURCE</td><td>Submitted site boundary geometry source (provisional).</td><td>brief/site-package/geometry/provisional_boundaries.geojson</td></tr><tr><td class="mono">KEY-AREA-SOURCE</td><td>Three required detailed-design key area boundaries (provisional).</td><td>brief/site-package/geometry/provisional_boundaries.geojson</td></tr><tr><td class="mono">OFFICIAL-ANNOUNCEMENT</td><td>Official announcement tasks, scope levels, key areas, language, and deliverable context.</td><td></td></tr><tr><td class="mono">AGENT-TASKBOOK</td><td>Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause.</td><td>brief/site-package/agent_taskbook.json</td></tr><tr><td class="mono">SRC-JZ-1905-1909</td><td>1909年9月24日 中国设计的第一条铁路——京张铁路通车</td><td>北京市科学技术委员会（首都科技网）</td></tr><tr><td class="mono">SRC-JZ-RAILWAY-WIKI</td><td>京张铁路（词条）</td><td>Wikipedia（中文）</td></tr><tr><td class="mono">SRC-HSR-OPENING-2019</td><td>定了！京张高铁12月30日开通运营</td><td>中国政府网（国务院客户端）</td></tr><tr><td class="mono">SRC-QINGHUAYUAN-TUNNEL</td><td>京张高铁清华园隧道贯通报道</td><td>新华社/新浪新闻转载</td></tr><tr><td class="mono">SRC-PARK-WUDAOKOU-2019</td><td>百年京张铁路遗址变公园，五道口启动区今起亮相</td><td>新京报</td></tr><tr><td class="mono">SRC-PARK-PLANNING</td><td>规划解读：京张铁路遗址公园，一场各方响应的众创之旅</td><td>北京市规划和自然资源委员会</td></tr><tr><td class="mono">SRC-PARK-CZONE</td><td>京张铁路遗址公园一期C区试运行</td><td>北京日报（京报网）</td></tr><tr><td class="mono">SRC-HD00-1601</td><td>京张铁路遗址公园沿线（人工智能创新街区重点地区）HD00-1601等街区控制性详细规划（街区层面）获批报道</td><td>北京日报客户端（百家号转载）</td></tr><tr><td class="mono">SRC-BJ-RESERVE-LAND</td><td>北京市战略留白用地管理办法</td><td>北京市人民政府（首都之窗）</td></tr><tr><td class="mono">SRC-BJ-RENEWAL-REG</td><td>北京市城市更新条例</td><td>北京市人民政府（首都之窗）</td></tr><tr><td class="mono">SRC-CIVIL-CODE-EASEMENT</td><td>中华人民共和国民法典（物权编第十五章 地役权，第372-385条）</td><td>中国政府网</td></tr><tr><td class="mono">SRC-BJ-RIVER-REG</td><td>北京市河湖保护管理条例</td><td>北京市人民政府（首都之窗）</td></tr><tr><td class="mono">SRC-XIONGAN-OUTLINE</td><td>河北雄安新区规划纲要</td><td>中国雄安官网（新华社受权发布）</td></tr><tr><td class="mono">THEORY-BRAND-1994</td><td>Shearing layers（Stewart Brand, How Buildings Learn, Viking 1994）</td><td>Wikipedia（概念综述）</td></tr><tr><td class="mono">THEORY-CONZEN-1960</td><td>Alnwick, Northumberland: A Study in Town-Plan Analysis（M.R.G. Conzen）</td><td>Internet Archive（原刊IBG Publication 27）</td></tr><tr><td class="mono">THEORY-ROSSI-1966</td><td>The Architecture of the City（Aldo Rossi）</td><td>MIT Press</td></tr><tr><td class="mono">THEORY-HABRAKEN-1961</td><td>Supports: An Alternative to Mass Housing（N.J. Habraken）</td><td>Routledge</td></tr><tr><td class="mono">THEORY-SHANNON-INDEX</td><td>Shannon-Weaver Diversity Index（Encyclopedia of Estuaries）</td><td>Springer Nature</td></tr><tr><td class="mono">CASE-BCN-22AT</td><td>Discover 22@, Barcelona's innovation district</td><td>Ajuntament de Barcelona</td></tr><tr><td class="mono">CASE-KINGS-CROSS</td><td>Historic buildings at King's Cross</td><td>King's Cross Central Limited Partnership</td></tr><tr><td class="mono">CASE-OTEMACHI-OMY</td><td>OMY Area Management Council — History</td><td>The Council for Area Development and Management of Otemachi, Marunouchi, and Yurakucho</td></tr><tr><td class="mono">CASE-ONE-NORTH</td><td>One North Masterplan</td><td>Zaha Hadid Architects（JTC开发）</td></tr><tr><td class="mono">CASE-KENDALL-K2C2</td><td>Kendall Square Central Square Planning Study (K2C2)</td><td>City of Cambridge Community Development Department</td></tr><tr><td class="mono">CASE-PARIS-RIVE-GAUCHE</td><td>Paris Rive Gauche（ZAC, SEMAPA）</td><td>Wikipedia（开发主体SEMAPA）</td></tr><tr><td class="mono">CASE-SZ-NANSHAN</td><td>超级实验：深圳城市设计总结纲要（黄伟文，《城市规划学刊》2025年第6期）</td><td>城市规划学刊（搜狐转载）</td></tr><tr><td class="mono">CTX-QINGHE</td><td>点河成"金"！海淀新晋景点"清河之洲"为何火了？</td><td>北京市水务局</td></tr><tr><td class="mono">CTX-XIAOYUEHE</td><td>海淀2024年将打造滨水会客厅（滨水生态绿廊与滨水慢行河道）</td><td>北京市人民政府（首都之窗）</td></tr><tr><td class="mono">CTX-YONGLE-BELL</td><td>大钟寺古钟博物馆</td><td>北京市人民政府（首都之窗）</td></tr><tr><td class="mono">CTX-ZHONGGUANCUN</td><td>中关村国家自主创新示范区基本情况</td><td>科技部火炬高技术产业开发中心</td></tr><tr><td class="mono">CTX-METRO13</td><td>北京地铁13号线（词条）</td><td>Wikipedia（中文）</td></tr><tr><td class="mono">IND-AI-CADENCE</td><td>The 2026 AI Index Report</td><td>Stanford Institute for Human-Centered AI</td></tr><tr><td class="mono">DATA-OSM-ODBL</td><td>OpenStreetMap Copyright and License</td><td>OpenStreetMap Foundation</td></tr></table></section>
+
+<section id="assumptions"><h2>假设（16 条）</h2>
+<table><tr><th>ID</th><th>内容</th></tr><tr><td class="mono">A-CONTROLS-001</td><td>Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.</td></tr><tr><td class="mono">A-BND-001</td><td>全部空间图层基于仓库临时粗略边界（provisional_rough）生成；官方红线、三处重点区精确polygon未公开。R-02复算另发现所供临时几何存在系统性西偏：包内概念主脊到OSM铁路几何的垂距中位数约1,247米（均值1,061、最大2,447米，61采样），实测线位大部分位于临时范围西缘之外；另一参赛方案独立报告约906米同向偏差。此为所供临时数据的局限，非本方案构造误差。</td></tr><tr><td class="mono">A-CLOCK-001</td><td>五层换代周期（河钟500年+/线钟100年/块钟50年/面钟15-30年/器钟0.5-5年）为设计假设，不是实证测量。</td></tr><tr><td class="mono">A-ROW-001</td><td>3条东西向预留线位与1条纵向慢行冗余线为概念走廊，仅表达联通意图与宽度区间，不是道路工程线位。</td></tr><tr><td class="mono">A-EASE-001</td><td>L3贯通公共通道地役权为概念示意（"某科研院落群（示意）"），不指认任何真实权属单位；设立以权属方自愿与法定程序为前提。</td></tr><tr><td class="mono">A-LEASE-001</td><td>L5租约制的押金分级、费率与恢复保证金均为演示口径；押金池托管须由持牌金融机构承担并满足监管合规（待补条件）。</td></tr><tr><td class="mono">A-GRAIN-001</td><td>R-02街块颗粒普查已在2026-08-21 OSM快照上完成复算（v5脚本：缓冲抓取+0.012°、strict/inclusive双口径、隧道段剔除、分线走廊测量；镜像 maps.mail.ru overpass）。数字描述该快照的街道网拓扑，不是法定权属边界；官方路网与红线数据公布后整体复核。</td></tr><tr><td class="mono">A-SEC-001</td><td>三种弹性标准断面与断面冗余率基于公开街道影像与规范经验拟定，未做现场测量。</td></tr><tr><td class="mono">A-COND-001</td><td>综合管廊余量（电力/光缆/冷却/给排水）现状不明，需专项评估（R-09）。</td></tr><tr><td class="mono">A-PARITY-001</td><td>非AI等价路径覆盖率按本方案12张场景卡的租约条款统计（12/12含等价路径条款），是设计文档口径而非运营实测。</td></tr><tr><td class="mono">A-DIVERSITY-001</td><td>speed_diversity_index（按层分类的香农多样性）需要园区租户及其产品换代周期登记数据，当前无公开数据。</td></tr><tr><td class="mono">A-PAVING-001</td><td>技术年表带一期长度1000米为设计声明（主脊南段），非已批准工程。</td></tr><tr><td class="mono">A-FUND-001</td><td>租约费+押金池收益→公共空间维护基金的资金闭环为概念测算（演示口径）。</td></tr><tr><td class="mono">A-ASSEMBLY-001</td><td>25年一届复线大会（2026基线→2051→2076→2101→2126）是制度设计建议，无既有法定程序对应。</td></tr><tr><td class="mono">A-LU-001</td><td>用地镶嵌图（land_use.geojson）是在临时边界上的概念设计模型：走廊绿地、蓝绿界面、留白与功能组团表达五速结构意图，不对应任何审定地块。</td></tr><tr><td class="mono">A-PHASE-001</td><td>四期分期（0-1年/1-5年/5-25年/25年+）为概念时序，一期项目均为零施工或可逆轻量动作。</td></tr></table></section>
+
+</div>
+<footer>《京张五速 THE FIVE CLOCKS》 · submissions/Xyrro/five-clocks · CC-BY-SA-4.0<br>
+概念示意 · 临时边界 · 非官方红线 · 全部空间结论为概念建议，供专业团队深化研究<br>
+2026 年出生的孩子，将在 2051 年第一届复线大会上正好 25 岁。</footer>
+</body>
+</html>
