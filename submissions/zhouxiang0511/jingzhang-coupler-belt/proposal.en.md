@@ -24,7 +24,7 @@ Notes on figures: ① the widely circulated figure of "about 70 ha" for the park
 
 **All spatial conclusions in this proposal are conceptual suggestions**, for professional teams to deepen and research, and do not constitute statutory planning, approvals, or government commitments [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-Source status note: the 2026 public industry/park/regulatory-plan/case facts cited in the proposal come from sources that have not yet been reviewed by the organisers' central source registry (`data/source_registry.json`); this proposal uses them as **background / pending-review evidence**, and each entry in this package's `sources.json` is annotated with `review_status: pending_review` plus source/date/licence/restriction; official published wording prevails [source:SOURCE-REGISTRY]. The proposal meets the deliverable requirement of "urban design depth of a regulatory detailed plan + urban design depth of an integrated planning implementation plan" [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
+Source status note: the 2026 public industry/park/regulatory-plan/case facts cited in the proposal come from sources that have not yet been reviewed by the organisers' central source registry (`data/source_registry.json`); this proposal uses them as **background / pending-review evidence**, and each entry in this package's `sources.json` is annotated with `review_status: pending_review` plus source/date/licence/restriction; **the related quantitative facts and status-like conclusions are not treated as formal planning conditions until approved**, and official published wording prevails [source:SOURCE-REGISTRY]. The proposal meets the deliverable requirement of "urban design depth of a regulatory detailed plan + urban design depth of an integrated planning implementation plan" [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
 
 ![Overall concept and submission-package evidence chain](assets/figures/site-overview.en.png)
 
@@ -159,6 +159,14 @@ The boundaries of the three areas are provisional inferences, and the following 
 - **AI scenarios**: an AI application experience street, a robot low-speed delivery demonstration, and an AI cultural guide.
 - **Implementation risks**: existing commercial operators and traffic distribution pressure; piloting in a "time-phased, zone-based, retractable" manner.
 
+The "existing problems — conceptual interventions — scenario operations — risk boundaries" comparison for the three areas (directional concepts; not existing ownership or engineering conclusions):
+
+| Key area | Existing problems (conceptual) | Conceptual intervention | Scenario operations | Risk boundary |
+| --- | --- | --- | --- | --- |
+| Zhongzhiyuan | Low-efficiency plants, fragmented public space | Compute core + pilot-test ring + garden belt; plant retrofit | Full-stack assembly line, emergency drill ground | Complex ownership, large retrofit scope; no demolition/retain conclusions |
+| AI Origin Community | Fragmented campus-city interface, peak-hour traffic pressure | Campus-city interface + talent corridor + start-up courts | Talent hall, Interlocking Tower, education lab | Sensitive campus boundaries; joint study with universities/transport authorities |
+| Dazhongsi | Commercial operation and traffic-distribution pressure | Market core + experience ring + station-city gateway | Outcome Market, robot delivery, AI guide | Coordination with existing operators; phased/zoned/reversible pilots |
+
 ![Index and detailed design of the three key areas](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
@@ -169,7 +177,7 @@ The boundaries of the three areas are provisional inferences, and the following 
 
 ### AI Scenario Cards (12)
 
-Each scenario card registers "location mapping — target users — operational data — privacy boundaries — human review — operating entity — visualization layers — risks" (see `compliance_matrix.json` for the complete fields) [source:AGENT-TASKBOOK].
+Each scenario card registers "location mapping — target users — operational data — privacy boundaries — human review — operating entity — visualization layers — risks"; **the verifiable structured per-card fields (data category and source / authorisation and minimisation / retention period / physical-safety stop / appeal channel / KPIs / maintenance and exit, plus pass/stop criteria for the four test scenarios) are provided in `visual/assets/scenario-cards.json`** [source:AGENT-TASKBOOK].
 
 | # | Scenario card | Location mapping | Target users | Layer |
 | --- | --- | --- | --- | --- |
@@ -263,7 +271,8 @@ Landing the 21 conceptual renewal projects into a "near/medium/long term × oper
 - **Community co-creation**: organizing co-creation workshops (residents/merchants/universities/developers) in the early stage of renewal projects, with results incorporated into scheme iteration (conceptual);
 - **Complaints and appeals**: AI scenarios set up public appeal channels (online + on-site manual handling), processed in a "receipt—verification—human review—feedback" closed loop; a correction process is established for algorithmic errors (conceptual) [standard:GENERATIVE-AI-INTERIM-MEASURES];
 - **Testing rounds with vulnerable groups**: before healthcare/finance/payment-category scenarios go live, testing rounds with elderly and disabled groups are carried out, retaining manual handling and on-site guidance (Barrier-Free Environment Law §39-2) [standard:BARRIER-FREE-ENVIRONMENT-LAW];
-- **Fairness indicators (conceptual)**: accessibility-task success rate, testing coverage of vulnerable groups, complaint response time limit and case-closure rate, and sampling of the diversity of people using public space, incorporated into the annual public evaluation.
+- **Fairness indicators (conceptual, executable targets)**: accessibility-task success rate ≥ 95%, 100% testing coverage of vulnerable groups before launch, complaint response within 3 working days and closure within 15, and an annual sampling assessment of the diversity of public-space users — incorporated into the annual public evaluation;
+- **Needs baseline (conceptual assumption)**: the park's ~70 communities / ~450,000 residents and the three stations' passenger flows serve as the needs baseline; a demand survey and service-gap study are to be conducted before formal operation (see assumption A-PHASING-NODE-001) to calibrate node spacing, service radius and KPIs.
 
 ### Global AI Innovation Events System and Long-Term Operation (agent.6)
 
