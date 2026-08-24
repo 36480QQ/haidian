@@ -64,6 +64,7 @@ else:
     msvcrt = None
 
 from generate_submissions_data import package_sha256
+from review_submission import ADVISORY_REVIEW_SCHEMA_PATH
 
 
 REVIEW_MARKER = "<!-- haidian-auto-review:{head_sha} -->"
@@ -214,6 +215,20 @@ def decide(review: dict[str, Any], decision: dict[str, Any], threshold: float) -
         intake_blocks.append("can_enter_formal_review")
     if review.get("required_next_actions_zh") != []:
         intake_blocks.append("required_next_actions_zh")
+    conditional_followups = review.get("conditional_followups")
+    if conditional_followups is not None:
+        valid_followups = isinstance(conditional_followups, list) and all(
+            isinstance(item, dict)
+            and item.get("blocking_now") is False
+            and isinstance(item.get("action_zh"), str)
+            and bool(item["action_zh"].strip())
+            and isinstance(item.get("trigger"), str)
+            and bool(item["trigger"].strip())
+            and item.get("owner") in {"participant", "organizer", "external", "shared"}
+            for item in conditional_followups
+        )
+        if not valid_followups:
+            intake_blocks.append("conditional_followups")
     if intake_blocks:
         return Decision(
             "request-changes",
@@ -286,6 +301,7 @@ def load_cached_review(
     submission_dir: str,
     checkout_root: Path,
     threshold: float,
+    advisory_schema_path: Path | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any], Decision] | None:
     try:
         review = json.loads((audit_dir / "ai-review.json").read_text(encoding="utf-8"))
@@ -294,6 +310,14 @@ def load_cached_review(
     except (OSError, json.JSONDecodeError):
         return None
     if not comment.strip():
+        return None
+    schema_path = advisory_schema_path or checkout_root / ADVISORY_REVIEW_SCHEMA_PATH
+    try:
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        current_schema_version = schema["properties"]["schema_version"]["const"]
+    except (OSError, json.JSONDecodeError, KeyError, TypeError):
+        return None
+    if review.get("schema_version") != current_schema_version:
         return None
     if review.get("submission_dir") != submission_dir or decision.get("submission_dir") != submission_dir:
         return None
@@ -384,6 +408,7 @@ def process_pr(args: argparse.Namespace, meta: dict[str, Any], repo_root: Path) 
         return {"number": number, "head_sha": head_sha, "result": "skipped-conflicting"}
 
     submission_dir = submission_dir_from_files(pr_file_paths(args.repo, number, repo_root), author)
+    advisory_schema_path = repo_root / ADVISORY_REVIEW_SCHEMA_PATH
     worktree = args.worktree_root / f"pr-{number}-{head_sha[:12]}"
     audit_dir = args.audit_root / f"pr-{number}" / head_sha
     ref = f"refs/codex-auto-review/pr-{number}-{head_sha[:12]}"
@@ -396,7 +421,13 @@ def process_pr(args: argparse.Namespace, meta: dict[str, Any], repo_root: Path) 
         checked = run(["git", "rev-parse", "HEAD"], cwd=worktree).stdout.strip()
         if checked != head_sha:
             raise WorkerError("fetched worktree SHA does not match live PR head")
-        cached = load_cached_review(audit_dir, submission_dir, worktree, args.threshold)
+        cached = load_cached_review(
+            audit_dir,
+            submission_dir,
+            worktree,
+            args.threshold,
+            advisory_schema_path,
+        )
         if cached is None:
             command = [
                 sys.executable,
@@ -418,6 +449,8 @@ def process_pr(args: argparse.Namespace, meta: dict[str, Any], repo_root: Path) 
                 str(args.retries),
                 "--max-images",
                 str(args.max_images),
+                "--advisory-schema",
+                str(advisory_schema_path),
                 "--comment",
                 "--json",
             ]
