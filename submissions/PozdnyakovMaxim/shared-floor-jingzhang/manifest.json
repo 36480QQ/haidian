@@ -12,7 +12,7 @@
     "agent_name": "Shared Floor Spatial Design Compiler",
     "model": "OpenAI Codex + Claude Code workflows + local BAAI BGE-M3 semantic witness",
     "model_family": "other",
-    "model_detail": "Mixed OpenAI Codex and Claude Code workflows. Codex produced the initial concept, typed geometry, drawings and experience-image workflow, then the v1.6-v1.9 source audit, A/B/H verifier, Beijing delivery/P0 participant implementation-control template and review-surface rebuild. Claude Code assisted v1.2-v1.5b text, tables, packaging, validation and PR revisions; local session records explicitly identify Claude Fable 5, while other Claude Code turns do not expose an equally verifiable model ID. The v1.7 witness is retained unchanged through v1.9 and uses the exact BAAI bge-m3:latest tag and blob pinned in its local Ollama /api/embed run contract; it processed hypothetical text only and performed no public service or field action."
+    "model_detail": "Mixed OpenAI Codex and Claude Code workflows. Codex produced the initial concept, typed geometry, drawings and experience-image workflow, then the v1.6-v1.9 source audit, A/B/H verifier, Beijing delivery/P0 participant implementation-control template and review-surface rebuild. Claude Code assisted v1.2-v1.5b text, tables, packaging, validation and PR revisions, and produced the v2.0-v2.6 review-surface convergence, engineering pre-feasibility envelopes, compared-alternatives register, whole-package rights matrix and bilingual repairs; local session records explicitly identify Claude Fable 5, while other Claude Code turns do not expose an equally verifiable model ID. The v1.7 witness is retained unchanged through v2.6 and uses the exact BAAI bge-m3:latest tag and blob pinned in its local Ollama /api/embed run contract; it processed hypothetical text only and performed no public service or field action."
   },
   "generated_at": "2026-08-21T13:44:06Z",
   "files": [
@@ -269,7 +269,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "94ca78573fa4fac2a5537d5d0e7d0cb70312a7618e0583a0ed2e08df39f5d402"
+      "sha256": "ca108e1798288dc870ae0cf0fd57ccc876b672cea1d14925a0ccb38449177fe8"
     },
     {
       "path": "compliance_matrix.json",
@@ -384,14 +384,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "17a382f45a469f015bdd82ae22d1cded08be8191e2e2f16320422eb3d4612a26"
+      "sha256": "06313efc3a66c60e7809065f04f74d3fd56bad9c2c1e4223dc895c4be688225e"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4be266ebe04847ce3a4d114a01f0900474b85b439f3e4c4c6f11fe5eaced215e"
+      "sha256": "a4e303381f40727f2c351525ffb973e719a815b7f560a5c2ad53fbf3fbdf0467"
     },
     {
       "path": "report/copyright_statement.md",
@@ -411,14 +411,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "73877aeb1bef0fd6c6b3add053df0b077b303a59272b0dd3ed2dfc9342e6c42d"
+      "sha256": "20799fe6729f272a1bdc0f9af81b0e26c0d8c685783dfe4884816696183b3257"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8b923b073b53f073c8090645289d86dd69b1d88b6ace0c6907be3a35da3bd752"
+      "sha256": "c686a6b639b61039949379899799cf9a6af0752aaaa78dd24996f38e058cd37f"
     },
     {
       "path": "risk.json",
@@ -430,7 +430,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "cbefb053daa6e526abbdccf57d01f6eb390b35a1ef3f5214e4b557425455ebba"
+      "sha256": "26a7e83353e9c3387601ff19ff7a921a51c8e077b924479719eafe68c369f711"
     },
     {
       "path": "simulation.json",
