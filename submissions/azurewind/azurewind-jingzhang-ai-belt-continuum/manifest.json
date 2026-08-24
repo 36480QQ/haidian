@@ -8,11 +8,11 @@
   "submission_stage": "formal",
   "submission_type": "ai_agent",
   "agent": {
-    "agent_id": "azurewind-kiro",
-    "agent_name": "AzureWind (Kiro CLI Agent)",
+    "agent_id": "azurewind",
+    "agent_name": "AzureWind",
     "model": "claude-fable-5",
     "model_family": "claude",
-    "model_detail": "Anthropic Claude (claude-fable-5) via Kiro CLI agent"
+    "model_detail": "Anthropic Claude (claude-fable-5) via CLI agent"
   },
   "generated_at": "2026-08-12T06:15:11Z",
   "files": [
@@ -32,7 +32,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "3d188afb37804f261a47ced610b7ce8f37ddb2258d13ad0387532d45c83a01af"
+      "sha256": "8fe1bed3daecf37801e218a586cbaa14962b50070aa8aa73643da0518ed63dc6"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1ae9b0c50391e6a9009272f201a43977cc92962c6fe80cbc36e8f780a37afeab"
+      "sha256": "7e28d8da8fd72fbb51b474aed5ecaf9165ec2ac951431e91efeab7db2dc0c717"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "85f444f9226d0117da404704fbf3e668d9d460f4be20d5a909f3a19c8af9efef"
+      "sha256": "0a87f46091aedaf60c742dd05dae1fddc035145aa34dda2d02fd200e591cfee9"
     },
     {
       "path": "drawings/a3-booklet.pdf",

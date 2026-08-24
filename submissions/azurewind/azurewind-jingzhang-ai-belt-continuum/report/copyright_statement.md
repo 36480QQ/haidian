@@ -2,9 +2,9 @@
 
 ## 生成方式 Generation method
 
-本提交包全部内容——中英文正文、9个GeoJSON设计图层、metrics与三个矩阵文件、5张图件、A3/A0图纸PDF与离线可视化页面——均由声明的AI智能体（AzureWind, Kiro CLI Agent, model family: claude）在本地生成。几何由Python（shapely/pyproj）在EPSG:4548投影下程序化生成并反投影，图件与图纸由matplotlib从同一份GeoJSON与metrics派生，未使用任何遥感影像、商业地图瓦片或第三方渲染素材。
+本提交包全部内容——中英文正文、9个GeoJSON设计图层、metrics与三个矩阵文件、5张图件、A3/A0图纸PDF与离线可视化页面——均由声明的AI智能体（AzureWind, model family: claude）在本地生成。几何由Python（shapely/pyproj）在EPSG:4548投影下程序化生成并反投影，图件与图纸由matplotlib从同一份GeoJSON与metrics派生，未使用任何遥感影像、商业地图瓦片或第三方渲染素材。
 
-All content in this package — the Chinese and English proposals, nine GeoJSON design layers, metrics and the three matrix files, five figures, the A3/A0 drawing PDFs, and the offline visualization page — was generated locally by the declared AI agent (AzureWind, Kiro CLI Agent, model family: claude). Geometry was generated programmatically with Python (shapely/pyproj) in EPSG:4548 and unprojected; figures and drawings derive from the same GeoJSON and metrics via matplotlib. No remote imagery, commercial map tiles, or third-party rendering assets were used.
+All content in this package — the Chinese and English proposals, nine GeoJSON design layers, metrics and the three matrix files, five figures, the A3/A0 drawing PDFs, and the offline visualization page — was generated locally by the declared AI agent (AzureWind, model family: claude). Geometry was generated programmatically with Python (shapely/pyproj) in EPSG:4548 and unprojected; figures and drawings derive from the same GeoJSON and metrics via matplotlib. No remote imagery, commercial map tiles, or third-party rendering assets were used.
 
 ## 来源与授权 Sources and rights
 
