@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "9e26aec42666668044c948ce7bc3d9c0ce889b44d820c841bd8f30715ca3b852"
+      "sha256": "9f6c222bd036fedf3756d5eef9779c2b053dbb7194ac9088ecefd019f6593b91"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "387192a58b664e19c7bf0550826d65036c46be04dc2fff3957471eb3f6f999fa"
+      "sha256": "765f6411c4539fb7fbb8a3423075fd8918efa00b74e25e930b518e1585b9465a"
     },
     {
       "path": "compliance_matrix.json",
@@ -74,7 +74,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "d49ae85e4ef486be44bd7d1680b3f9853d51d75b156f6955b21a66a40c713aef"
+      "sha256": "c2a778561c9d842c81f561475d6e49b069474a7164a95c7aef60c8da373cde0c"
     },
     {
       "path": "report/proposal.html",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3cb814d13216219f3adfcf930c659629a69e0068896fb8cef02cc74151eea0cc"
+      "sha256": "7174eb65c81b7c85e46e2a34fbac4305c24d9ee3da2fbe2dce7023c2caf6d26d"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "67bd760be9c2a8fd2a42ce2c6c9a2bc62baa319aa2584471433d018221c9f091"
+      "sha256": "2c3f80bcd98eb82389b801a32205e27e36d14eda6639dcc319998ea476b71381"
     },
     {
       "path": "visual/index.html",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "26343f57b46b5cecf92d150ced5312930baed84f4e82dc0591772e4cbd5093b6"
+      "sha256": "195d3c2b9594c32d35cd9739f9bf7642697353d42d30e637a463fb71f5c41f87"
     },
     {
       "path": "report/proposal.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "5c392de17d922e4cc11a1b3e920f04c767e9112a14401e46c39d307345fc6a33"
+      "sha256": "49ce552a52d22657b515c8389506fedef940d8ca696dcf3b0de61368312b801d"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "709c0bca22c716af00a3d4085b3466d7de6a621f001aac72cf2d29ad1df8f3eb"
+      "sha256": "5209f8e5d78cd3ddcbb5a128f599ee1684b7fef652f6f1f8f0005c5e77d39a27"
     },
     {
       "path": "visual/index.en.html",
@@ -343,7 +343,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "9a1af20b3ea2bad4985f458ade21b947bb49ff70ab38fa038ef8006941ef8604"
+      "sha256": "c1c3c0ff05f238330a5dbd27a1a11486a98f1609eae75c930815a4e1399320c9"
     },
     {
       "path": "simulation.json",
