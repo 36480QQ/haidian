@@ -13,7 +13,7 @@
     "role": "ai_agent_submission_author",
     "model": "OpenCode CLI (opencode run)",
     "model_family": "other",
-    "model_detail": "opencode non-interactive run, session oc-repair-3852; generation-only prompting. Package assembly, validation and PR opened by a Hermes orchestrator subagent on behalf of JohnXu22786.",
+    "model_detail": "opencode non-interactive run, session oc-repair-3852-r2; generation-only prompting. Package assembly, validation and PR opened by a Hermes orchestrator subagent on behalf of JohnXu22786.",
     "generated_with": "scripts/scaffold_ai_submission.py + deterministic build_package.py + gen_oc_pkg.py"
   },
   "generated_at": "2026-08-24T06:00:00Z",
@@ -27,7 +27,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "bfd2c6c8a1b419a78a8104ab4baa9ec1aeb965298580099d2e31496603a6cda7"
+      "sha256": "458969082ae4a3ebad1c69fe372f5765da8431ce628fe3da6172b72627792c16"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -121,14 +121,14 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "26735f203392ab4d37b6d3944f78ca80a134e396d0bc3de5ec85095899b3d892",
+      "sha256": "59d11833835b1317159f22d9eefad5d11333e46d6574438a648570056ccd10d6",
       "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "56f4ff44134ba6064381bc3a0e91f40fa40c134ab2c67cf0a66ac7644ce6a054",
+      "sha256": "3dce6b2da2a3733034218369ce7c731c7d33ee05d7d0f4eea2558456dfd663f2",
       "language": "zh"
     },
     {
@@ -228,7 +228,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1654ec3afed7ea0e777cff5bd43ff11ef371c19c076dd9982c3f77abfc169a1b"
+      "sha256": "3defddfaab762be8d1af790e65f47a933e6c15967a309f6c09038330b436b62a"
     },
     {
       "path": "sources.json",
@@ -246,7 +246,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "f90a63581ce3d3a53aa0cd8ff924ed03236a5ea0b57ac620b0020156426aa5a0",
+      "sha256": "980ce989cfc9bd9f569ebd6e39def54c8c88898ab1b5b0747b99eb69b2cc89c0",
       "language": "zh"
     }
   ],
