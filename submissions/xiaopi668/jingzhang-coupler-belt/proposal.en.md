@@ -222,6 +222,18 @@ Ten project packages can each be paused independently [metric:renewal_project_co
 
 **Pilot staffing and budget magnitude (conceptual estimate).** The minimum running staffing for two pilot couplers: 1 Confirmer per coupler (may double as Node Officer), 1 Main-Line Guardian, 1 part-time Auditor — about 5–7 full-time-equivalent posts in year one; the coupler-system sandbox (PRJ-01) minimum start condition is a route-table schema, one simulated coupling environment and one 12-week exercise, with budget magnitude estimated by reference to routine public consultation and digital projects. All figures are conceptual estimates; they are not investment, procurement or fiscal commitments [assumption:A-RESOURCES-001].
 
+**Pilot startup responsibility–evidence–resource baseline (PRJ-01/PRJ-02 and the two first-run coupler nodes).** Provided so a professional team can pick it up directly; all entries are conceptual suggestions [assumption:A-COUPLER-001] [assumption:A-RESOURCES-001]:
+
+| Work item | Lead role (candidate direction) | Key deliverable evidence | Resource scale (concept) | Completion criterion |
+|---|---|---|---|---|
+| Coupling waybill schema finalization | Confirmer (lead candidate: development & planning bureau) | Schema doc, 3 mock waybills, public-readable explainer | 1 part-time architect × 6 weeks | Passed public review session, archived |
+| Baseline walkover survey (PRJ-02) | Main-line guardian (candidates: city management / parks) | Segment-by-segment access/rest/help-point ledger, gap photo library | 2 surveyors × 4 weeks + 1 reviewer | Gap list published for 30 days |
+| Test coupler site & safety envelope | Node keeper (candidate: park operator) | Site plan, fencing & fire review, power connection plan | Reversible components only where possible | Safety sign-off + shadow-run permit |
+| Staffed counter at open coupler | Node keeper + confirmer dual staffing | Duty roster, accessible-route check, complaint-response pledge | 2 people per opening day | Accessibility & consumer-rights review passed |
+| Audit & failure archive | Auditor (candidate: third-party body) | Monthly coupling/uncoupling records, public failure archive page | 1 part-time auditor (ongoing) | First monthly report publicly downloadable |
+
+All roles above are concretizations of the four named roles; their appointment mode and legal responsibility are determined by the professional team under current rules; no statutory duty is assigned to any department here.
+
 **Pilot lead and authorisation path (conceptual suggestion).** It is suggested that initial pilots are coordinated by the relevant Haidian district government departments (e.g. development-reform, planning, urban management or park management) under their current duties as the candidate direction for the ultimate coupling-confirmation duty-holder; the four named roles get draft job descriptions and authorisation lists defining duties and accountability, and the way roles are filled (concurrent posts/purchased services/volunteers) is determined by professional teams under current institutions. All are deepening directions, not arrangements or authorisation commitments to any department [assumption:A-COUPLER-001] [assumption:A-VERB-001].
 
 **Pilot start checklist (conceptual).** Entry conditions become checkable items: responsible subject confirmed, energy capacity verified, ecology and heritage assessed, safety plan filed, accessibility reviewed, ordinary baseline walked through, uncoupling drill passed once — any unchecked item stops issuance [assumption:A-COUPLER-001].
