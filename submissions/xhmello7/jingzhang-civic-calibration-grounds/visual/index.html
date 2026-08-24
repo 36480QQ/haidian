@@ -1,38 +1,44 @@
 <!doctype html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>京张城市校准场｜V5 城市设计图集</title>
+  <title>京张城市校准场｜城市设计图集</title>
   <style>
-    *{box-sizing:border-box}body{margin:0;background:#f4f6f5;color:#182126;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans GB","Segoe UI",sans-serif}main{max-width:1500px;margin:auto;padding:28px 34px 80px}h1{font-size:34px;margin:0 0 8px;letter-spacing:0}.intro{font-size:15px;color:#667078;margin:0 0 34px}section{margin:0 0 46px;border-top:1px solid #ccd3d1;padding-top:18px}header{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:12px}header span{font-size:20px;font-weight:700}header p{margin:0;color:#667078}img{display:block;width:100%;height:auto;background:white}.audit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}article{border:1px solid #ccd3d1;padding:14px;background:white}article p{margin:7px 0 0;color:#667078}.metric-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}.metric-row div{background:#182126;color:white;padding:15px}.metric-row strong{display:block;font-size:23px;margin-top:6px}footer{color:#667078;font-size:12px;border-top:1px solid #ccd3d1;padding-top:18px}@media(max-width:700px){main{padding:18px 14px 50px}h1{font-size:27px}header{display:block}header p{margin-top:5px}.audit-grid,.metric-row{grid-template-columns:1fr}}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f6f3;color:#1d2a2e;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;letter-spacing:0}a{color:inherit}nav{position:sticky;top:0;z-index:10;background:rgba(245,246,243,.96);border-bottom:1px solid #ccd3d0}nav div{max-width:1680px;margin:auto;height:54px;padding:0 32px;display:flex;align-items:center;justify-content:space-between;font-size:13px}nav span{font-weight:700}nav a{text-decoration:none;border-bottom:2px solid #b54056;padding-bottom:3px}main{max-width:1680px;margin:auto;padding:44px 32px 86px}.masthead{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:end;border-bottom:3px solid #203136;padding-bottom:28px;margin-bottom:20px}.eyebrow{font-size:14px;color:#b54056;font-weight:700}.masthead h1{font-size:52px;line-height:1.06;font-weight:560;margin:12px 0 14px}.masthead p{margin:0;color:#657378;font-size:17px;line-height:1.55}.thesis{border-left:10px solid #16857b;padding:10px 0 10px 22px;font-size:20px;line-height:1.5}.thesis b{color:#b54056}.coverage{margin:0 0 46px;padding:14px 16px;background:#e9ece9;color:#566469;font-size:12px;line-height:1.7}.coverage b{color:#203136;margin-right:10px}figure{margin:0 0 62px;border-top:1px solid #cbd2cf;padding-top:18px}.figure-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:13px}.figure-head h2{font-size:25px;margin:0}.figure-head p{margin:0;color:#657378;text-align:right}img{display:block;width:100%;height:auto;background:white;border:1px solid #d3d8d5}.retirement-endpoint{margin:-24px 0 62px;background:#283238;color:white;border-left:12px solid #b54056;padding:28px 32px;display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:center}.retirement-endpoint b{color:#efb45a;font-size:22px}.retirement-endpoint span{font-size:18px;line-height:1.55}.system-band{margin:10px 0 62px;background:#203136;color:white;display:grid;grid-template-columns:repeat(5,1fr);gap:1px}.system-band div{padding:21px;background:#203136}.system-band b{display:block;color:#efb45a;font-size:13px;margin-bottom:9px}.system-band span{font-size:15px;line-height:1.4}.facts{border-top:3px solid #203136;padding-top:22px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.facts div{background:white;border-top:7px solid #16857b;padding:20px}.facts div:nth-child(4n+2){border-color:#bd8b2c}.facts div:nth-child(4n+3){border-color:#e8751a}.facts div:nth-child(4n){border-color:#b54056}.facts b{display:block;font-size:26px;margin-bottom:7px}.facts span{color:#657378;font-size:14px;line-height:1.45}footer{margin-top:48px;border-top:1px solid #ccd3d0;padding-top:18px;color:#657378;font-size:12px;line-height:1.6}@media(max-width:760px){nav div,main{padding-left:14px;padding-right:14px}.masthead{grid-template-columns:1fr}.masthead h1{font-size:34px}.figure-head{display:block}.figure-head p{text-align:left;margin-top:6px}.retirement-endpoint,.system-band,.facts{grid-template-columns:1fr}.thesis{font-size:17px}}
   </style>
 </head>
-<body><main>
-  <h1>京张城市校准场｜V5 城市设计图集</h1>
-  <p class="intro">先看京张真实城市空间，再看大钟寺如何让发布、复核、回滚与退场成为一条日常步行序列。</p>
-  <section><header><span>01 京张真实城市基底</span><p>总览地图 + 三层范围</p></header><img src="../assets/figures/site-overview.png" alt="京张真实城市基底"></section>
-  <section><header><span>02 大钟寺示范区</span><p>重点区域 + 真实建筑净空总平面</p></header><img src="../assets/figures/key-areas.png" alt="大钟寺发布至退场示范区"></section>
-  <section><header><span>03 用地与更新</span><p>用地分区留白 + 建筑与更新项目边界</p></header><img src="../assets/figures/land-use-structure.png" alt="用地与更新边界"></section>
-  <section><header><span>04 两条场地断面</span><p>交通慢行 + 蓝绿公共空间 + 退场记忆</p></header><img src="../assets/figures/mobility-bluegreen.png" alt="两条大钟寺场地断面"></section>
-  <section><header><span>05 AI 进入与退出</span><p>AI 场景 + 两个旗舰案例 + 任务覆盖</p></header><img src="../assets/figures/metrics-evidence.png" alt="AI 发布、复核、回滚与退场"></section>
-  <section><header><span>06 审查索引与核心指标</span><p>图件之后再进入证据与限制</p></header>
-    <div class="audit-grid">
-      <article><b>总览地图 · 三层范围 · 重点区域</b><p>43.6 km2 统筹研究、≈11.4 km2 暂定计算几何、大钟寺≈8.7 ha V5 研究窗。</p></article>
-      <article><b>用地分区 · 建筑 · 更新项目</b><p>全域代码16资料缺口；10个OSM现状候选；不虚构容积率、权属或拆除量。</p></article>
-      <article><b>交通慢行 · 蓝绿公共空间</b><p>大钟寺3段设计步行线≈625 m；北中段4条旧线仅表示联系需求；2处建筑净空公共空间≈1,220 m2。</p></article>
-      <article><b>AI 场景 · 任务覆盖</b><p>一条映射到总平面的生命周期与2个旗舰案例；另2个案例降级为 secondary scenario library。</p></article>
-      <article><b>自检状态</b><p>Reality QA 2.0 与正式校验结果以最终生成的审计和 self_check.json 为准。</p></article>
-      <article><b>来源</b><p>官方公告、site package、京张公园与12号线公开资料、OSM ODbL总体底图和大钟寺API窗口。</p></article>
-      <article><b>假设</b><p>正式站口、通行权、坡度、铺装、人流、控规、权属、文保、市政和成本缺口均已登记。</p></article>
-      <article><b>核心指标的含义</b><p>机器值用于复算；人读值采用合理有效数字，不是法定指标或建设承诺。</p></article>
-    </div>
-    <div class="metric-row">
-      <div data-metric="site_area_sqm" data-value="11412825.386">暂定计算几何<strong>≈11.4 km2</strong></div>
-      <div data-metric="green_ratio" data-value="0.018223299">选定绿地背景 / 暂定几何<strong>≈1.82%</strong></div>
-      <div data-metric="public_space_ratio" data-value="0.000106934">V5公共空间 / 暂定几何<strong>≈0.011%</strong></div>
-    </div>
+<body>
+<nav><div><span>京张 AI 创新带 × Civic Calibration Layer</span><a href="index.en.html">EN</a></div></nav>
+<main>
+  <section class="masthead">
+    <div><div class="eyebrow">JINGZHANG AI INNOVATION BELT × CIVIC CALIBRATION LAYER</div><h1>京张城市校准场</h1><p>完整创新带负责让 AI 在京张产生、转化、进入生活并形成文化；城市校准层负责规定创新如何获得、维持或失去公共运行资格。</p></div>
+    <div class="thesis">Calibration 不再定义整条创新带。<br><b>它定义创新如何被允许进入公共生活。</b></div>
   </section>
-  <footer>OSM © OpenStreetMap contributors, ODbL 1.0。Repository provisional geometry 不是官方红线；大钟寺设计为需测绘、需核通行权的意向方案。</footer>
-</main></body>
+  <section class="coverage"><b>图集阅读索引</b>总览地图 · 三层范围 · 重点区域 · 用地分区 · 建筑 · 交通慢行 · 蓝绿公共空间 · 更新项目 · AI 场景 · 核心指标 · 任务覆盖 · 自检状态 · 来源 · 假设</section>
+  <figure><div class="figure-head"><h2>01｜京张 AI 创新带</h2><p>43.6 km² 统筹语境 · ≈11.4 km² 暂定计算几何 · 三段 · 三区 · 两翼</p></div><img src="../assets/figures/site-overview.png" alt="京张 AI 创新带总体结构"></figure>
+  <figure><div class="figure-head"><h2>02｜空间—创新—公共生活</h2><p>真实底图上的北中南节奏、三重点接口与两侧翼协同</p></div><img src="../assets/figures/land-use-structure.png" alt="京张创新带空间系统"></figure>
+  <figure><div class="figure-head"><h2>03｜三个城市接口</h2><p>众智园与 AI 原点为意向关系；大钟寺保留通过冲突检查的总平面</p></div><img src="../assets/figures/key-areas.png" alt="众智园、AI原点和大钟寺三个城市接口"></figure>
+  <figure><div class="figure-head"><h2>04｜从研究到公共生活</h2><p>创新生态、校准层、旗舰场景、支撑场景与无 AI 连续性</p></div><img src="../assets/figures/metrics-evidence.png" alt="从研究到公共生活的创新生态与校准机制"></figure>
+  <figure><div class="figure-head"><h2>05｜持续学习的工程文化</h2><p>三个公共文化节点、两条场地断面与五阶段年度运营闭环</p></div><img src="../assets/figures/mobility-bluegreen.png" alt="京张工程文化路线与年度运营"></figure>
+  <section class="retirement-endpoint"><b>RETIREMENT MEMORY<br>≈535 m²</b><span>失败的 AI 也会被城市公开记住：停止原因、责任决定、替代服务与数据处置进入耐久档案；没有退场事件时，这里仍是可步行、可休息、有遮荫且无障碍的日常公共空间。</span></section>
+  <section class="system-band">
+    <div><b>VALUE FLOW</b><span>研究问题 → 原型 → 首用 → 服务 → 迭代</span></div>
+    <div><b>PEOPLE FLOW</b><span>学生 / 研究者 ↔ 开发者 ↔ 居民 / 服务人员</span></div>
+    <div><b>DATA / EVIDENCE</b><span>来源 → 评测 → 发布条件 → 公共记录</span></div>
+    <div><b>SUPPORT INTERFACE</b><span>专业服务与资本仅作为潜在、需合作接口</span></div>
+    <div><b>PUBLIC FEEDBACK</b><span>使用 → 复核 → 申诉 → 下一年度问题受理</span></div>
+  </section>
+  <section class="facts">
+    <div><b>43.6 km²</b><span>整条创新带的统筹研究语境，不作为机器面积计算边界。</span></div>
+    <div><b>≈625 m</b><span>大钟寺发布、复核、申诉、回滚与退场的连续步行序列。</span></div>
+    <div><b>≈535 m²</b><span>Retirement Memory 日常公共空间；记录停止原因、替代服务与数据处置。</span></div>
+    <div><b>0</b><span>大钟寺路线穿楼、公共空间压楼、生命周期节点落入确认建筑。</span></div>
+    <div data-metric="site_area_sqm" data-value="11412825.386"><b>≈11.4 km²</b><span>暂定计算几何；43.6 km² 为更大的统筹研究语境。</span></div>
+    <div data-metric="green_ratio" data-value="0.018223"><b>≈1.8%</b><span>已提交绿地 polygon / 暂定计算几何；不是现状或规划总绿地率。</span></div>
+    <div data-metric="public_space_ratio" data-value="0.000107"><b>≈0.011%</b><span>两处详细设计公共空间 / 暂定计算几何；不是全走廊公共空间率。</span></div>
+  </section>
+  <footer>OSM © OpenStreetMap contributors, ODbL 1.0。Repository provisional geometry 不是官方红线。众智园和 AI 原点界面属于意向设计，需正式测绘与合作确认；未声称签约运营主体、资金、数据授权、实测 AI 性能或部署许可。</footer>
+</main>
+</body>
 </html>
