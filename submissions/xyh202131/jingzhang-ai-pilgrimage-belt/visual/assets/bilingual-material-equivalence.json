@@ -137,10 +137,109 @@
       "topic": "publication_pair_positions",
       "zh_location": "A3 14 pages, A0 8 pages, 22 text-bearing figure files",
       "en_location": "A3.en 14 pages, A0.en 8 pages, 22 .en figure files",
-      "paired_statement": "Paired publication surfaces retain the same page/figure order, warning prominence and evidence status; the Chapter 3 relay clarification does not alter the fixed-page PDF scope.",
+      "paired_statement": "Paired publication surfaces retain the same page/figure order, warning prominence and evidence status; the Chapter 3 relay and Chapter 10 professional-handoff clarifications deepen existing contracts and do not alter the fixed-page PDF scope.",
       "result": "equivalent"
     }
   ],
+  "formal_human_review_packet": {
+    "packet_id": "JZ-BILINGUAL-HUMAN-SAMPLE-R58-3",
+    "status": "ready_for_independent_human_sampling_not_signed",
+    "machine_supported_surface_facts": {
+      "proposal_line_count_zh": 653,
+      "proposal_line_count_en": 653,
+      "h2_count_zh": 14,
+      "h2_count_en": 14,
+      "h3_count_zh": 24,
+      "h3_count_en": 24,
+      "embedded_figure_count_zh": 8,
+      "embedded_figure_count_en": 8,
+      "evidence_marker_count_zh": 276,
+      "evidence_marker_count_en": 276,
+      "evidence_marker_sequence_equal": true,
+      "metric_marker_count_zh": 89,
+      "metric_marker_count_en": 89,
+      "structured_metric_record_count": 169,
+      "a3_page_count_zh": 14,
+      "a3_page_count_en": 14,
+      "a0_page_count_zh": 8,
+      "a0_page_count_en": 8
+    },
+    "required_sample_items": [
+      {
+        "sample_id": "HUMAN-EQ-01",
+        "scope": "summary and single public thesis",
+        "zh_location": "proposal.md front matter summary and opening decision",
+        "en_location": "proposal.en.md front matter summary and opening decision",
+        "review_question": "Do both versions say that ordinary life remains continuous while G0 verification is bounded, stoppable and removable?",
+        "human_result": null,
+        "reviewer_initials": null
+      },
+      {
+        "sample_id": "HUMAN-EQ-02",
+        "scope": "three non-interchangeable prototypes",
+        "zh_location": "proposal.md opening prototype table and Chapter 5",
+        "en_location": "proposal.en.md opening prototype table and Chapter 5",
+        "review_question": "Are Zhongzhiyuan, Origin Community and Dazhongsi spatially and operationally distinct in both languages?",
+        "human_result": null,
+        "reviewer_initials": null
+      },
+      {
+        "sample_id": "HUMAN-EQ-03",
+        "scope": "all visible numbers and structured metrics",
+        "zh_location": "proposal.md, metrics.json, Chinese figures and PDFs",
+        "en_location": "proposal.en.md, metrics.json, English figures and PDFs",
+        "review_question": "Do every visible value, unit, denominator, confidence and zero/unknown qualifier agree with the language-neutral metrics record?",
+        "human_result": null,
+        "reviewer_initials": null
+      },
+      {
+        "sample_id": "HUMAN-EQ-04",
+        "scope": "source classes and evidence limits",
+        "zh_location": "proposal.md Chapters 1, 12 and 13",
+        "en_location": "proposal.en.md Chapters 1, 12 and 13",
+        "review_question": "Are approved-formal, background-only, provisional-only and contributor-contract sources assigned the same authority and limitations?",
+        "human_result": null,
+        "reviewer_initials": null
+      },
+      {
+        "sample_id": "HUMAN-EQ-05",
+        "scope": "G0, provisional and approval boundaries",
+        "zh_location": "proposal.md opening truth boundary and Chapters 10-12",
+        "en_location": "proposal.en.md opening truth boundary and Chapters 10-12",
+        "review_question": "Do both languages retain G0/NO-GO, provisional, not-to-scale, not-approved and real-results-zero without softening?",
+        "human_result": null,
+        "reviewer_initials": null
+      },
+      {
+        "sample_id": "HUMAN-EQ-06",
+        "scope": "figure numbering, captions and page positions",
+        "zh_location": "8 embedded Chinese figures, A3 14 pages and A0 8 pages",
+        "en_location": "8 embedded English figures, A3 14 pages and A0 8 pages",
+        "review_question": "Are paired figures/pages in the same order with equivalent captions, legends, warnings and backlink positions?",
+        "human_result": null,
+        "reviewer_initials": null
+      },
+      {
+        "sample_id": "HUMAN-EQ-07",
+        "scope": "implementation gates and professional veto",
+        "zh_location": "proposal.md Chapter 10 and visual/assets/professional-handoff-candidate.json",
+        "en_location": "proposal.en.md Chapter 10 and visual/assets/professional-handoff-candidate.json",
+        "review_question": "Do H01-H07, D01-D08, the sole primary metric, stop precedence, independent retest and NO-GO decision carry identical effect?",
+        "human_result": null,
+        "reviewer_initials": null
+      }
+    ],
+    "discrepancy_register": [],
+    "signoff": {
+      "reviewer_name": null,
+      "reviewer_role": null,
+      "independence_statement": null,
+      "reviewed_at": null,
+      "result": "not_signed",
+      "accepted_correction_refs": []
+    },
+    "signoff_rule": "Do not change the independent-human status until a real reviewer completes every sample, records discrepancies and signs the result."
+  },
   "open_boundary": {
     "independent_human_translation_review": "not_provided",
     "certified_translation": "not_provided",

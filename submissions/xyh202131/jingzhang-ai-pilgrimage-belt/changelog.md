@@ -1,5 +1,19 @@
 # 方案迭代记录 / Changelog
 
+## v58.3 - 2026-08-24
+
+**96 分评审的专业交接落实 / Professional Handoff Response to the 96-Point Review**
+
+- 把 `JZ-05 × SCENE-011 × T-02` 从简短候选摘要扩展为单一专业审查包，集中呈现来源维护责任、正式程序边界、人工窗口、普通任务基线、无障碍/公共同权共测、唯一主指标及分母、四项停止硬门、批准范围和独立复测计划。
+- 将 H01—H07 逐项写成可签署的关闭条件，并为 D01—D08 建立八条候选材料记录，具备来源/接收者、保管者、专业审查者、日期、版本、定位符、哈希、质量门和处置字段；真实附件、责任接受、批准、现场值和独立复测仍为 0，不以目标或模拟值填充。
+- 为独立人工中英文实质等价抽检准备七项签核包，覆盖摘要、三原型、全部可见数字与结构化指标、来源等级、G0/批准边界、图号/版位和实施门；签名字段保持空白，不冒充人工确认。
+- 继续冻结 geometry、`metrics.json`、12/8/3/36 计数、四份 PDF 页数、媒体与权利边界；10/10 T-02 合成回放不写成服务准确率。
+
+- Expanded `JZ-05 × SCENE-011 × T-02` from a short candidate summary into one professional review packet covering source maintenance, formal-procedure limits, staffed window, ordinary-task baseline, accessibility/public-parity co-test, the sole primary metric and denominator, four stop hard gates, approval scope and independent retest.
+- Turned H01-H07 into signable closure conditions and created eight candidate-scoped D01-D08 material records with source/receiver, custodian, professional reviewer, date, version, locator, hash, quality-gate and disposition fields. Real attachments, duty acceptance, approvals, field values and independent retest remain zero and are not filled with targets or simulations.
+- Prepared a seven-item independent human bilingual sampling/signoff packet covering the summary, three prototypes, every visible number and structured metric, source classes, G0/approval limits, figure/page positions and implementation gates. Signature fields remain empty and no human confirmation is claimed.
+- Geometry, `metrics.json`, 12/8/3/36 counts, all four PDF page counts, media and rights boundaries remain frozen; the 10/10 T-02 synthetic replay is not service accuracy.
+
 ## v58.2 - 2026-08-24
 
 **93 分 exact-head 评审定向修复 / Exact-Head 93-Point Review Repair**

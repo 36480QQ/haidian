@@ -25,8 +25,16 @@
   ],
   "single_handoff_candidate": {
     "candidate_id": "PRE-G1-JZ05-SCENE011-T02",
+    "packet_version": "2.0.0",
     "status": "G0 / NO-GO",
-    "accepted_H01_H07_items": 0
+    "prepared_H01_H07_items": 7,
+    "accepted_H01_H07_items": 0,
+    "prepared_D01_D08_records": 8,
+    "submitted_real_materials": 0,
+    "sole_primary_metric": "tasks_with_correct_current_source_and_successful_required_handoff / all_started_service_tasks",
+    "professional_packet": "visual/assets/professional-handoff-candidate.json",
+    "field_intake": "visual/assets/field-evidence-intake-contract.json",
+    "bilingual_human_sample_packet": "visual/assets/bilingual-material-equivalence.json#/formal_human_review_packet"
   },
   "authority_order": [
     "geometry/*.geojson",

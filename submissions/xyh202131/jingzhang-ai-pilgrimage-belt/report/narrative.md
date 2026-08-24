@@ -18,9 +18,9 @@ The proposal makes one spatial decision: verification may not occupy the ground 
 
 ## Single professional handoff candidate / 唯一专业交接候选
 
-`JZ-05 × SCENE-011 × T-02` is the only pre-G1 professional review candidate. Its five bounded questions, ten PII-free synthetic decisions and four stop/recovery branches are reviewable without a model or API. It remains G0 / NO-GO because H01-H07 have no real acceptance, field execution, approval or independent retest.
+`JZ-05 × SCENE-011 × T-02` is the only pre-G1 professional review candidate. Its version-2 packet now fixes source-maintenance duties, procedure boundaries, staffed-window fields, the same-task baseline, accessibility/public-parity co-testing, one primary metric and denominator, four stop hard gates, approval scope and independent retest. Its five bounded questions, ten PII-free synthetic decisions and four stop/recovery branches remain reviewable without a model or API. Seven H01-H07 conditions and eight D01-D08 records are prepared, but real acceptance, attachments, field execution, approval and independent retest remain zero; the decision stays G0 / NO-GO.
 
-`JZ-05 × SCENE-011 × T-02` 是唯一 pre-G1 专业核验候选。五个来源边界问题、十条无 PII 合成决策和四条停止/恢复分支可在无模型、无 API 情况下复核；H01—H07 没有真实接受、现场执行、批准或独立复测，因此仍为 G0 / NO-GO。
+`JZ-05 × SCENE-011 × T-02` 是唯一 pre-G1 专业核验候选。其第二版审查包已固定来源维护责任、程序边界、人工窗口字段、同任务基线、无障碍/公共同权共测、唯一主指标及分母、四项停止硬门、批准范围和独立复测；五个来源边界问题、十条无 PII 合成决策和四条停止/恢复分支仍可在无模型、无 API 情况下复核。H01—H07 七项条件和 D01—D08 八条记录已经备齐，但真实接受、附件、现场执行、批准或独立复测仍为 0，因此继续 G0 / NO-GO。
 
 ## Rights and authenticity / 权利与真实性
 

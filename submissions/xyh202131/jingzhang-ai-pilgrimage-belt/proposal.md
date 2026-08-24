@@ -5,8 +5,8 @@ language: "zh"
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-version: "58.2"
-iteration: "58.2"
+version: "58.3"
+iteration: "58.3"
 license: "CC-BY-4.0"
 summary: "海淀的创新密度，只有在普通人无需账户、设备或专业身份也能使用、质疑和退出时，才会成为公共能力。双轨京张以连续日常轨保障普通任务，以间歇、可停止的 G0 验证轨承载概念测试；三种不可互换原型连接证据、风险与专业交接。边界仍为临时约束，现实结果、批准、现场执行和专业接责仍为 0。"
 tracks:
@@ -626,7 +626,9 @@ AI 与公共价值指标同样按核验问题拆开：
 
 ### 唯一 pre-G1 专业交接候选：JZ-05 × SCENE-011 × T-02
 
-本轮只把大钟寺的 JZ-05 企业服务站、SCENE-011 企业服务协同助手与 T-02 来源化企业服务协议组合成一个**下一步核验对象**。选择理由不是它更成熟，而是它已有五问来源边界、10 条无 PII 合成回放、停止/拒答/人工转接和恢复分支，可在不接入模型、不调用 API、不提供实体办事答案的条件下由专业团队先审查。它仍为 G0 / NO-GO；现实责任主体、服务人员、正式程序入口、数据安全、现场普通任务基线、无障碍共测、批准范围、恢复验收与独立复测均为 0。任何 H01—H07 未被真实责任方接受，候选就不得进入 G1 [data:visual/assets/g0-offline-enterprise-service-baseline.json] [data:visual/assets/t02-g0-g1-replay-result.json] [data:visual/assets/implementation-handoff-matrix.json]。
+本轮只把大钟寺的 JZ-05 企业服务站、SCENE-011 企业服务协同助手与 T-02 来源化企业服务协议组合成一个**下一步核验对象**。选择理由不是它更成熟，而是它已有五问来源边界、10 条无 PII 合成回放、停止/拒答/人工转接和恢复分支，可在不接入模型、不调用 API、不提供实体办事答案的条件下由专业团队先审查。它仍为 G0 / NO-GO；现实责任主体、服务人员、正式程序入口、数据安全、现场普通任务基线、无障碍共测、批准范围、恢复验收与独立复测均为 0。任何 H01—H07 未被真实责任方接受，候选就不得进入 G1 [data:visual/assets/g0-offline-enterprise-service-baseline.json] [data:visual/assets/t02-g0-g1-replay-result.json] [data:visual/assets/professional-handoff-candidate.json]。
+
+专业审查包现把来源维护责任、正式程序边界、人工服务窗口、现场普通任务基线、无障碍与公共同权共测、批准范围和独立复测逐项落到可签署字段。唯一主指标固定为“来源正确且成功转接的服务任务数 / 全部已开始服务任务数”；样本量、现实值和绩效阈值继续为空，须在获批现场基线之后、结果采集之前由责任主体、社区共测代表与独立复测者共同锁定。过期来源未提示、来源冲突未解决、人工/非 AI 路径不可用或出现禁止数据，任一项立即覆盖数值结果并停止验证叠层；10/10 合成回放不得写成服务准确率。D01—D08 已成为该候选的八条带保管链和专业处置字段的材料记录，但尚无真实附件，因此材料数、接受数和批准数仍为 0。
 
 三处可逆构件继续保持类型化未知：类型、尺寸、材料、连接、专项结论、精确位置、安装方法和恢复时长均为 `unknown`；未来资料冲突时，普通公共权利优先，验证叠层停止，官方资料不得为保住图面而被修改 [data:visual/assets/reversible-component-restoration-register.json]。八类现场资料包均为 `not_collected`，可进入复算不等于批准；模板完整不等于证据存在 [data:visual/assets/field-evidence-intake-contract.json]。
 

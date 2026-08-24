@@ -37,8 +37,66 @@
       "gap_id": "PC-05",
       "gap": "Counterpart existence did not evidence material bilingual equivalence",
       "status": "closed_at_contributor_side_agent_editorial_review_level",
-      "evidence": "visual/assets/bilingual-material-equivalence.json",
+      "evidence": "visual/assets/bilingual-material-equivalence.json now includes seven required human sampling items and an unsigned discrepancy/signoff form",
       "residual_boundary": "Independent human confirmation, certified translation and external professional review are not provided."
+    },
+    {
+      "gap_id": "PC-06",
+      "gap": "The sole pre-G1 candidate existed only as a short cross-reference and did not expose one professional-review surface for source maintenance, procedure boundaries, staffing, baseline, parity, metric, stop, approval and retest decisions",
+      "status": "closed_at_professional_handoff_design_level",
+      "evidence": "visual/assets/professional-handoff-candidate.json version 2.0.0 and visual/assets/field-evidence-intake-contract.json candidate-scoped D01-D08 records",
+      "residual_boundary": "Prepared fields and records are not real artifacts or accepted duties; H01-H07 acceptances, D01-D08 attachments, field values, approvals and independent retest remain 0."
+    }
+  ],
+  "review_required_action_register": [
+    {
+      "action_id": "REVIEW-96-01",
+      "required_action": "close H01-H07 before any G1 application or field deepening",
+      "participant_delivery": "visual/assets/professional-handoff-candidate.json exposes seven candidate-specific signable closure conditions and fail-closed sequencing",
+      "participant_status": "prepared",
+      "external_status": "0 accepted items; G0 / NO-GO"
+    },
+    {
+      "action_id": "REVIEW-96-02",
+      "required_action": "convert JZ-05 × SCENE-011 × T-02 into a professional review packet",
+      "participant_delivery": "packet version 2.0.0 fixes source maintenance, procedure boundary, staffed window, ordinary baseline, parity co-test, sole primary metric/denominator, stop thresholds, approval scope and independent retest",
+      "participant_status": "complete_at_handoff_design_level",
+      "external_status": "real owner, staff, approved window, threshold and retester remain unconfirmed"
+    },
+    {
+      "action_id": "REVIEW-96-03",
+      "required_action": "replace generic D01-D08 placeholders with dated, versioned, attributable and professionally disposable material records",
+      "participant_delivery": "visual/assets/field-evidence-intake-contract.json now reserves eight candidate-specific records with source/receiver, custody, reviewer, date, version, locator, hash, quality gate and disposition",
+      "participant_status": "record_structure_complete",
+      "external_status": "all real artifact fields remain null and disposition remains not_submitted"
+    },
+    {
+      "action_id": "REVIEW-96-04",
+      "required_action": "review future cultural content, people, images, trademarks and permanent landmarks before addition",
+      "participant_delivery": "no new cultural or third-party media is added; D08 and the rights contracts retain item-level source, consent, trademark, generated-content, accessible-alternative and withdrawal requirements",
+      "participant_status": "current_package_scope_preserved",
+      "external_status": "future additions require new item-level review"
+    },
+    {
+      "action_id": "REVIEW-96-05",
+      "required_action": "perform human substantive bilingual sampling",
+      "participant_delivery": "visual/assets/bilingual-material-equivalence.json provides seven required samples, a discrepancy register and independent signoff fields backed by exact structural counts",
+      "participant_status": "sample_packet_ready",
+      "external_status": "independent human signature not provided"
+    },
+    {
+      "action_id": "REVIEW-96-06",
+      "required_action": "replace and recalculate when official geometry or controls arrive",
+      "participant_delivery": "D01/D03 records, replacement triggers, difference-report rule and frozen provisional warnings remain explicit",
+      "participant_status": "replacement_protocol_ready",
+      "external_status": "official geometry and controls not provided"
+    },
+    {
+      "action_id": "REVIEW-96-07",
+      "required_action": "organizer supplies reusable official geometry and controls",
+      "participant_delivery": "affected outputs, responsible source and invalid substitutes remain recorded under AI-01 and AI-02",
+      "participant_status": "dependency_documented",
+      "external_status": "organizer input pending; not replaced by inference"
     }
   ],
   "authoritative_input_required": [
