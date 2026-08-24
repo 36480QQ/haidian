@@ -97,7 +97,14 @@
     "zh_stack": ["Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", "sans-serif"],
     "en_stack": ["Segoe UI", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
     "mono_stack": ["Consolas", "Cascadia Mono", "Courier New", "monospace"],
-    "offline_rule_zh": "只使用操作系统自带字体栈，不下载、不内嵌、不引用任何网络字体；字号层级与字重只作建议，不强制替换既有载体。",
+    "offline_rule_zh": "正文与标识优先使用操作系统自带字体栈，不下载、不引用任何网络字体；唯一的例外是为无障碍可读性而内嵌的 OFL 授权 Noto Sans SC 子集（local() 优先，缺失时回退包内嵌子集样式表），见 visual/assets/fonts-noto-subset.css 与 sources.json 的 FONT-NOTO-SANS-SC 记录。",
+    "embedded_accessibility_fallback": {
+      "files": ["visual/assets/fonts-noto-subset.css"],
+      "license": "SIL OFL 1.1",
+      "reason": "P3-02 review response: keep Chinese readable in font-deprived environments",
+      "subset_scope": "glyphs used by this package's bilingual HTML carriers only, embedded as base64 data-URIs (the validator allows no font file extensions)",
+      "source_id": "FONT-NOTO-SANS-SC"
+    },
     "min_body_px": 12,
     "lockup_capitalization_en": "ALL CAPS with letter-spacing 0.12em for THE DATA CO-OP LINE"
   },

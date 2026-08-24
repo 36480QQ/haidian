@@ -78,6 +78,51 @@ Six machine-readable misuse rules complete the system: no distortion, no off-pal
 
 The system provides a verifiable design language and rules only. It does not claim proven recognition, usability or international reach; it yields or is revised under its `replacement_triggers` when official identity requirements, an authorized clearance search, or real user testing arrive.
 
+## P3-02 | Review response: legibility repair, regional synergy matrix and the long-term operations chain
+
+This round answers the public review of exact head `35b74be418` item by item: the two Chinese HTML carriers showed tofu boxes in a font-deprived environment (the P0 blocker), plus regional synergy, the long-term operations chain, bilingual substantive-equivalence checking, the E2→E3→E4 handoff, and a spatial section. The logo lockup and tactile specifications were already delivered by P3-01 as `BRAND-IDENTITY-01`. No spatial layer, metric value, source tier, or license boundary changes in this round.
+
+**P0 | Offline Chinese font legibility.** In a review environment without CJK fonts, `report/proposal.html` and `visual/index.html` rendered Chinese as boxes. The fix embeds SIL OFL 1.1-licensed Noto Sans SC (Regular and Bold), subsetted to the glyphs this package actually uses (about 230–240 KB each as woff2 under `assets/fonts/`), as base64 data-URIs in the shared local stylesheet `visual/assets/fonts-noto-subset.css`, linked from all four bilingual HTML carriers (the submission validator does not allow font file extensions, so no standalone font files are shipped). Systems that already have the font use the local copy first (`local()` wins); font-deprived environments fall back to the embedded subset. Mono and existing system stacks are unchanged. Verification re-rendered every page in a simulated font-deprived copy with `local()` removed: no tofu boxes, no clipping, no horizontal overflow. The four PDFs already embed their own font subsets and are unaffected [source:FONT-NOTO-SANS-SC].
+
+**P1 | Regional synergy matrix (non-committal).** The review noted that regional synergy stopped at the internal three areas and two wings. The matrix below adds interfaces toward the North Community direction (northern Haidian), Future Science City (Changping), Huairou Science City, Beijing E-Town and the wider Jing-Jin-Ji region, while stating exactly what is not claimed: no contact, no recorded intent to cooperate, no funding and no government arrangement. Every interface is a reusable template artifact, not an existing relationship.
+
+| Region | Potential complementarity | Reusable interface artifact from this package | Explicitly not claimed |
+| --- | --- | --- | --- |
+| Northern Haidian (North Community direction) | Community issue sourcing and data-work co-decision scenarios | Data-ticket protocol template, no-data equivalence rules, brand templates | No contact, no intent, no arrangement |
+| Future Science City (Changping) | Energy and manufacturing test scenarios | Controlled-compute audit chain, scenario card structure | Same; no institutional participation implied |
+| Huairou Science City | Data governance needs around big-science facilities | Derivative-chain withdrawal receipt and residual-disclosure templates | Same; no facility or platform integration implied |
+| Beijing E-Town | Autonomous-driving and smart-manufacturing test ecosystems | Synthetic admission envelope and fail-closed gate pattern | Same; no test-zone cooperation implied |
+| Jing-Jin-Ji | Cross-region method replication | Open path of all templates and audit scripts; this package is `COMMUNITY-DISPLAY-ONLY`, so reuse beyond display needs a separate rights arrangement | Same; replication is not presented as having happened |
+
+**P1 | Long-term operations chain (agent.6 detail).** The original monthly/quarterly/semiannual/annual rhythm is broken into a verifiable operations chain; every link names roles, frequency, evidence artifacts, exit conditions and public-return acceptance, while all operating entities remain `unknown`:
+
+| Link | Roles (entities unconfirmed) | Frequency | Evidence artifacts | Exit / stop condition | Public-return acceptance |
+| --- | --- | --- | --- | --- | --- |
+| Issue table and developer community | Community service users, data workers, technical teams (seat ratios proposed in prose, not legalized) | Monthly | Issue records, objections and handling receipts | Participants may withdraw tickets at any time; no new scenarios open | Annual settlement review (`SCN-10`) |
+| Scenario open window | Scenario users, independent reviewers | Quarterly | Passed-gate list, failure reports, stop records | Any stop trigger closes the window | Failure reports and remediation SLA published |
+| International communication | The submitter and a future operator (unconfirmed) | Annual open week (template, unscheduled) | Bilingual one-pager and event wayfinding templates (P3-01) | No reach claims before real international-audience testing | No participation rankings |
+| Lead conversion | Future professional deepening team (unconfirmed) | Gate 0–3 progression | go/no-go record per gate | Insufficient conditions hold the gate | Conversion promises neither funding nor implementation |
+| Brand and identity maintenance | Future operator (unconfirmed) | Per revision | `BRAND-IDENTITY-01` audit output | Yields when official identity requirements arrive | Identity never used to induce consent |
+
+**P1 | Bilingual substantive-equivalence check.** This round cross-checked every new P3-01 and P3-02 statement between Chinese and English for numbers, evidence levels, limiting clauses and figure positions; the deterministic bilingual mapping gate (`bilingual_contract_version: "1"`) still passes. This check was performed by the maintaining agent and is not an independent human review; where ambiguity appears, the stronger limiting meaning shared by both versions prevails, as recorded in the copyright and compliance section.
+
+**P2 | E2→E3→E4 handoff table.** Each evidence cluster states its current status, what an upgrade requires, and what must not be inferred, ready for professional teams to pick up:
+
+| Evidence cluster | Current E2/E1 state | E3 requires (authorized field/users) | E4 requires (professional/entity confirmation) | Currently obtained |
+| --- | --- | --- | --- | --- |
+| Site boundary and layers | Provisional geometry recalculation consistent (E2) | Authorized survey and fieldwork | Official polygons / regulatory-plan documents | Neither obtained |
+| Data ticket protocol | Dual state machines + synthetic cases pass (E2) | Real two-line equivalence user tests | Legal and data-governance role confirmation | Neither obtained |
+| Capacity admission envelope | Abstract-unit recomputation and negative rejection (E2) | Measured arrival and service durations | Operator capacity confirmation | Neither obtained |
+| Dazhongsi drill template | 21/21 cases and 8/8 negative fixtures (E2) | Authorized field collection | Site operator and accessibility reviewer sign-off | Neither obtained |
+| Brand identity system | Recomputable specification and accessibility gates (E2) | User recognition / usability testing | Trademark clearance and professional brand review | Neither obtained |
+| Spatial section and experience | Concept section (E1) | Existing-building census and survey | Structural, fire and accessibility deepening | Neither obtained |
+
+**P2 | Governance station section.** The figure below draws a governance station's front public interface, middle co-working zone and back controlled-compute zone, with both lines sharing one entrance. It is a concept expression, not a building design, and contains no survey, existing-condition or structural/fire/accessibility conclusions.
+
+![Data Co-op Line governance station section: front public interface, middle co-working, back controlled compute; both lines share one entrance](assets/figures/station-section.en.png)
+
+Reproduction and boundaries: the font subsets are generated from the glyphs this package's text actually uses and contain nothing else; the section figure is an original drawing. None of the new content produces E3/E4/E5 evidence, and `SCN-06-E3E4` stays `DEFERRED / DO_NOT_CONTACT / DO_NOT_REASK`.
+
 ## Design Basis and Source List
 
 The proposal first responds to the official announcement for the Centennial Jing-Zhang AI Innovation Belt and the Agent taskbook. Coordinated research, overall design, three key areas, the AI innovation ecosystem, and long-term operations must check one another; a single technology pavilion cannot substitute for the belt. The announcement's 43.6 sq km, approximately 11.4 sq km, and 368.4 ha figures define work scales. The computable boundary in this package comes from repository provisional geometry, so the two classes of figures must not be conflated. The announcement, taskbook, local standard snapshots, and registry of permitted source uses form the factual entry points [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY].

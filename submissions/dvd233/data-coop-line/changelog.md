@@ -1,5 +1,20 @@
 # 方案迭代记录
 
+## v2.6 - 2026-08-24
+
+P3-02 review response: fonts, regional synergy, operations chain / 评审响应：字体、区域协同、运营链
+
+- Review trigger / 评审触发：公开评审对 exact head `35b74be418` 给出 82.0/100 与 request-changes（表达完整度 3/5、可实施性 3/5，其余 5/5），P0 阻断为两个中文 HTML 在缺 CJK 字体环境的大面积方框字；同时列出区域协同、agent.6 运营链、中英实质等价、E2→E3→E4 交接、空间剖面与 Logo 规范六项后续。本轮逐项响应，不改变空间图层、指标数值、来源等级或许可边界。
+- P0 font fix / 字体修复：SIL OFL 1.1 授权的 Noto Sans SC（Regular/Bold）按包内实际用字（约 1185 字符）子集化为 woff2 各约 230–240 KB，经共享本地样式表 `visual/assets/fonts-noto-subset.css`（base64 data-URI）内嵌，四个 HTML 载体 `<link>` 引入（投稿校验不允许字体文件扩展名，故不用独立字体文件）；`local()` 优先，缺失环境回退内嵌子集；报告页体文字体栈补入 "Noto Sans SC"。在移除 `local()` 的模拟缺字副本上整页渲染复核：无方框、无裁切、无横向溢出；真实页面在本机复核一致。PDF 早已内嵌各自字体子集，不受影响。
+- P1 regional synergy / 区域协同：新增非承诺型协同矩阵——海淀北部（北纬社区方向）、未来科学城、怀柔科学城、北京经开区、京津冀；每行写明潜在互补、本包可复用模板产物与明确不声称（未接触、无意向、无资金或政府安排；本包 COMMUNITY-DISPLAY-ONLY，跨区域复用需另行授权）。
+- P1 operations chain / 长期运营链：agent.6 拆成可核验五环（议题桌与开发者社区、场景开放窗、国际传播、线索转化、品牌维护），每环写明角色、频次、证据产物、退出/停止条件与公共回报验收；运营主体保持未指定。
+- P1 bilingual equivalence / 中英等价核对：维护 Agent 对 P3-01/P3-02 新增内容逐项核对数值、证据等级、限制语与图位；确定性双语门禁保持通过；该核对不是独立人工复核，歧义时以限制性较强含义为准。
+- P2 handoff + section / 交接表与剖面：新增 E2→E3→E4 交接表（六个证据簇各写当前状态、升级条件与禁止推断，均未取得）；新增原创双语 `station-section` 图（前区公共界面—中区共同工作—后区受控计算剖面，两条正线同一入口），E1 概念表达、无测绘或工程结论。
+- Logo spec / 标识规范：评审 P2 第 7 项（中英锁定稿与黑白、高对比、小尺寸、触觉规范）已由 P3-01 `BRAND-IDENTITY-01` 交付，本轮只把 typography 规则补充嵌入式无障碍回退的说明并同步重签（register SHA-256 更新为 `a0fca2c46bc82092aa89017ce973d49e8e9488e78ceb89ca6aa185a10516ef10`；双语品牌图与四份 PDF 的品牌页令牌/栅格已同步替换，像素内容不变）。
+- Evidence boundary / 证据边界：全部为 E1/E2；无 E3 现场、E4 主体/专业确认或 E5 实施；`SCN-06-E3E4` 继续 `DEFERRED / DO_NOT_CONTACT / DO_NOT_REASK`。
+- Verification / 验证：报告渲染 + H1 去重 + 字体注入后，manifest refresh、完整 self-check、六项专项审计与负向自测、evidence-consistency、strict manifest、participant preflight 与 diff --check 的最终状态以本轮最终机器输出为准。
+
+
 ## v2.5 - 2026-08-24
 
 P3-01 brand identity and visual system / 品牌识别与视觉系统（BRAND-IDENTITY-01）

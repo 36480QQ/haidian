@@ -40,6 +40,8 @@
         "submissions/dvd233/data-coop-line/assets/figures/reviewer-evidence-spine.png",
         "submissions/dvd233/data-coop-line/assets/figures/site-overview.en.png",
         "submissions/dvd233/data-coop-line/assets/figures/site-overview.png",
+        "submissions/dvd233/data-coop-line/assets/figures/station-section.en.png",
+        "submissions/dvd233/data-coop-line/assets/figures/station-section.png",
         "submissions/dvd233/data-coop-line/assets/media/cover.webp",
         "submissions/dvd233/data-coop-line/assets/media/experience-poster.webp",
         "submissions/dvd233/data-coop-line/assets/media/experience.md",
@@ -88,6 +90,7 @@
         "submissions/dvd233/data-coop-line/visual/assets/evidence-consistency.js",
         "submissions/dvd233/data-coop-line/visual/assets/evidence-snapshot.json",
         "submissions/dvd233/data-coop-line/visual/assets/expiring-data-ticket-protocol.json",
+        "submissions/dvd233/data-coop-line/visual/assets/fonts-noto-subset.css",
         "submissions/dvd233/data-coop-line/visual/assets/planning-alignment-audit.js",
         "submissions/dvd233/data-coop-line/visual/assets/planning-alignment-register.json",
         "submissions/dvd233/data-coop-line/visual/assets/reviewer-evidence-spine-audit.js",
@@ -100,7 +103,7 @@
       "ai_package_stages": {
         "submissions/dvd233/data-coop-line": "formal"
       },
-      "total_bytes": 19069217,
+      "total_bytes": 20097505,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -202,7 +205,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 17,
+          "source": 18,
           "standard": 1,
           "depth": 13,
           "data": 15,
