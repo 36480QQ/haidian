@@ -31,6 +31,8 @@
       ],
       "changed_files": [
         "submissions/zachshi-ai/jingzhang-robot-comobility/agent.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/assets/figures/cross-sections.en.png",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/assets/figures/cross-sections.png",
         "submissions/zachshi-ai/jingzhang-robot-comobility/assets/figures/key-areas.en.png",
         "submissions/zachshi-ai/jingzhang-robot-comobility/assets/figures/key-areas.png",
         "submissions/zachshi-ai/jingzhang-robot-comobility/assets/figures/land-use-structure.en.png",
@@ -104,7 +106,7 @@
       "ai_package_stages": {
         "submissions/zachshi-ai/jingzhang-robot-comobility": "formal"
       },
-      "total_bytes": 3749174,
+      "total_bytes": 3935468,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -192,7 +194,7 @@
           "source": 11,
           "standard": 4,
           "depth": 15,
-          "data": 29,
+          "data": 30,
           "metric": 9
         }
       }

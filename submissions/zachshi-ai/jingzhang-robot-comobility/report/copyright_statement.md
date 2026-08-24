@@ -13,8 +13,9 @@ All submitted text, geometry, diagrams, PDFs, and static HTML assets are generat
 | A3 文册 / A0 展板（中/英） | drawings/*.pdf | reportlab 程序化排版（原创代码） | 无 | 原创生成 |
 | 电子展示页（中/英） | visual/index.html / index.en.html | 程序化 HTML，内联 CSS | 无外部字体/脚本/CDN | 原创生成 |
 | HTML 报告（中/英） | report/proposal.html / proposal.en.html | scripts/render_proposal_html.py 渲染 | 仓库脚本 | 工具生成 |
-| 字体 | 全文 | 系统字体 PingFang SC（渲染）与 reportlab STSong-Light CID 字体 | 系统/内置 CID 字体，无外部字体文件分发 | 无版权风险 |
+| 字体 | 全部 HTML/PDF | Noto Sans SC 子集化嵌入（HTML @font-face base64；PDF TrueType 子集） | SIL Open Font License 1.1（允许嵌入与再分发） | 合规嵌入，无版权风险 |
 | 案例引用（美团/新石器/京东/Starship/Serve） | 正文与 sources.json | 公开报道与企业公开信息引用 | 各企业公开来源，标注 background_only | 引用+说明，无复制素材 |
+| 治理合同形态启发 | 正文与 sources.json#jingzhang-168-license-inspiration | 借鉴同征集投稿 jingzhang-168 的四阶段合同结构 | 开源征集社区公开投稿，已注明血统 | 结构启发，无代码/文本复制 |
 | 政策引用（高级别自动驾驶示范区/无障碍法/生成式AI办法） | 正文与 sources.json | 官方公开文本引用 | 公开法规与政策 | 引用 |
 | 代码依赖 | /tmp 生成脚本（matplotlib/shapely/pyproj/reportlab/Pillow） | 开源库 | 各库开源许可（BSD/MIT/BSD-3/Apache） | 合规使用 |
 

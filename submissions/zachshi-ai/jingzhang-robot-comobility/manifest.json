@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "446aaf6940984ac50af0deb1bcc41e75fb33308995655a79199bc4c77940de63"
+      "sha256": "32d89f4c4382f722d1178d4f1cfc3b9c8159bfbb41a3174d90adb6fe82c933b7"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "db72a6c3fa8f0ee3e90e312f8e919319d5f5aa6d03a85695d6ea08d301d77986"
+      "sha256": "4fc19e09a55e705b898eeacc0efb8b8b33ad6858aeae7e2ab751bac724780343"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "eac3d35240b3cf277cc9b8576f67920f5fa2b57e0093d8152e8dcc2402321908"
+      "sha256": "abb0786fe7a446f166dd4b35261dab78d9013bcede37e5f65eca389c7d182f5c"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "79f618b812e67223de2bc066b5d23a63b1d92962a3846ae7c3cc3f26fc650381"
+      "sha256": "f9d708eabec4dde5dc040520ea9257302bfbd399f81c74c291a455f1a03ba61b"
     },
     {
       "path": "report/narrative.md",
@@ -93,21 +93,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "060af3bc1fd67a0720f3ec4b51bf1f0777cae135d8479b244d03ae73d60f7569"
+      "sha256": "77196ba36611a573e18f610a3bb74d015f11fc8c59c9f1c98f7ae6f4ca425427"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "6298602bfbac69ce14e1f64c77847aedfcf58d5e7a8b9c097e34bba314b4aa11"
+      "sha256": "ebe3f30aa6dc73524e6dbb55f1ec619c18efa152d5e04bae4de426a6d9664f96"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "5ac4f63d408e39ff7642794fd6b6e060651c0fc5a37e7085a5fed36dd3ee6c65"
+      "sha256": "897c8e89f6ae8571f7aa64db5eff929ac7497caf5fdade6c3a1241bb01e5eea7"
     },
     {
       "path": "visual/index.html",
@@ -142,7 +142,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "3f32999e3cde0a690e878179c9265cb90e3e43485444d300ec853f92f213e066"
+      "sha256": "fa6588682e8559d088145327a0b6b7dae6384e368c30b9038c07dfbc7502f53d"
     },
     {
       "path": "assets/figures/site-overview.png",
@@ -213,7 +213,7 @@
       "translation_of": "proposal.md",
       "title_zh": "京张AI低速机器人共行网（英文正式译文）",
       "title_en": "Jingzhang AI Low-Speed Robot Co-Mobility Network (English translation)",
-      "sha256": "b0527c71abfe6ac71fd4dfbc03f65559d6d37096aee8b6895477018903a63656"
+      "sha256": "eb560ee4abe241ec6ce6f6ec1d75a82d83ad0178786400b27921d9d828b1afff"
     },
     {
       "path": "risk.json",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2cb32aa0ef8cb81db85de2387ba947bf3b7462c130174c9f25314cf8b84ebe19"
+      "sha256": "25d1c92bbdc3e0d1962949f4e1ae66fe2df729e706002a08db207f2214560a9a"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "b2db249dabd75f2936234f540d7a331418ae9977c5eb1130bb5453f0a3c16e21"
+      "sha256": "fbd695d3207aa78518f9da2cf0374ec9ee1b5168ce1730979dfa1e0696c5076d"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -245,7 +245,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "5a43f4d11b957b4e4e50a8c03a49cf176658a4dc4a4f07685f39897858c3dda1"
+      "sha256": "a4e487b991a1368dc1cb510be4f3217a00bb0810577671e96ca121198dbca0f3"
     },
     {
       "path": "visual/index.en.html",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "d8c4aef272f1f54b871f651e0ef1a451277178ca37f775e1c5b48ff4d2c3e3b7"
+      "sha256": "3944d86c96be8e91ec0725a7fd66c4fd3a7776fe6b73c662831fcddd3fa87c04"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -285,7 +285,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "cfcf12c62e40f4a593e3a8fba747c4e8f88807c7ee12a199da9705910093cc4a"
+      "sha256": "03d3655b7a63c083ffc02a5bb1a0f8ec18e8283157bf50f97510d6e235309a96"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -293,7 +293,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "e4793b781a7e22a0214e86810065ec52931db921a5dc04a28774b29902e1652e"
+      "sha256": "1521fd9ae652c1324d7dbc7b1957a2e29ff4006e5333cb9dc2b41760f1bc1e3f"
     },
     {
       "path": "visual/assets/co-mobility-license.schema.json",
@@ -353,7 +353,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "6c3419151d7ca5db164d1c99fc693298d0ee7b67f9c3d292fd2a067fb4c9cb78"
+      "sha256": "e090abf13e19d44845fdac093e60856ce2e348a5c874d70542a1fe51a24ef1fa"
     },
     {
       "path": "simulation.json",
@@ -468,6 +468,21 @@
       "role": "asset",
       "required": false,
       "sha256": "9600f951dc0f7e3ce8eb1298d290a7ec57112861d34a13b3a9e25d5330f2e54c"
+    },
+    {
+      "path": "assets/figures/cross-sections.png",
+      "role": "figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "898fb37114231e18950e12aebf928ba7fd7e04c7833df2ebd17764feb0075515"
+    },
+    {
+      "path": "assets/figures/cross-sections.en.png",
+      "role": "figure",
+      "required": false,
+      "language": "en",
+      "sha256": "e02a331d618dbe380f173818169f052a60a8a5665f8edb8029e4da600d7a6160",
+      "translation_of": "assets/figures/cross-sections.png"
     }
   ],
   "validation_claim": {
