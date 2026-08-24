@@ -110,16 +110,16 @@
           "data_sources": [
             "视频结构化数据（非人脸）"
           ],
-          "legal_basis": "《个人信息保护法》第 26 条公共场所例外 + 区公安审批",
+          "legal_basis": "依《个人信息保护法》第 26 条所设「维护公共安全所必需、有特定法律授权」前提下设置标识或分析记录的条款（本方案为概念设计，实施前需经数据合规专项复核与主管部门审定；非「公共场所例外 + 区公安审批」二要素简化表述）",
           "data_minimization": "结构化元数据 7 天；原始视频不入库",
           "controller": "区公安分局（候选控制者，待主管部门确认）",
-          "processor": "街道办（受托，候选处理者）",
-          "retention_period": "结构化元数据 7 天；原始视频不入库",
+          "processor": "街道办（候选处理者，受托，待主管部门确认）",
+          "retention_period": "结构化元数据 7 天；原始视频不入库（设计目标，力求符合 PIPL 最小必要原则，实施前需经数据合规专项复核）",
           "access_control": "公安授权人员；街道办受托访问",
           "data_subject_rights": "居民享有知情权；非个人数据无主体权利请求",
           "human_takeover": "公安复核所有关键判断（≥1 人/班次）",
           "complaint_channel": "12345 市民热线 + 公安督察",
-          "incident_response": "误判 5 分钟人工复核；事件 24h 通报"
+          "incident_response": "误判 5 分钟人工复核；事件 24h 通报（运营设计目标，非法定时限，实际以主管部门审定为准）"
         },
         "SC-05": {
           "name": "机器人低速配送与巡检",
@@ -277,26 +277,26 @@
     {
       "id": "ASM-009",
       "topic": "beijing_ai_plus_action_plan",
-      "assumption_zh": "方案引用《北京市推动“人工智能+”行动计划（2024-2025年）》[source:SRC-BJ-AI-PLUS-ACTION-2024]与《中关村科学城加快建设具有全球影响力人工智能产业高地的若干措施》[source:SRC-ZGC-AI-INDUSTRY-2025]作为AI场景与产业政策依据。",
-      "impact_zh": "AI场景卡的政策框架与北京市及中关村科学城的现行政策对齐，增加可实施性。",
-      "recalculation_path_zh": "实施前核验两份政策文件的最新版本与后续修订，按最新政策调整AI场景范围。",
-      "confidence": "high"
+      "assumption_zh": "方案参考《北京市推动\"人工智能+\"行动计划（2024-2025年）》[source:SRC-BJ-AI-PLUS-ACTION-2024]与《中关村科学城加快建设具有全球影响力人工智能产业高地的若干措施》[source:SRC-ZGC-AI-INDUSTRY-2025]作为 AI 场景与产业政策的参考性背景（参与者新增登记来源，未进入 approved_formal，待核验，最终以 official 公告为准）。",
+      "impact_zh": "AI 场景卡的政策框架参考北京市及中关村科学城的现行政策方向，但不构成对已授权政策的法定引用；审定时须以 official 文本为准。",
+      "recalculation_path_zh": "实施前核验两份政策文件的 official 版本与后续修订；在本期不作为政策依据或法定依据使用，仅作背景参考。",
+      "confidence": "medium"
     },
     {
       "id": "ASM-010",
       "topic": "beijing_urban_renewal_regulation",
-      "assumption_zh": "拆改留按《北京市城市更新条例》[source:SRC-BJ-URBAN-RENEWAL-REGULATION]落实，该条例（2023年3月1日施行）为城市更新的法定依据。",
-      "impact_zh": "拆改留分类有明确法定依据，增加方案可实施性。",
-      "recalculation_path_zh": "取得 official 现状建筑与权属数据后，按条例逐栋落实拆改留分类。",
-      "confidence": "high"
+      "assumption_zh": "拆改留参考《北京市城市更新条例》[source:SRC-BJ-URBAN-RENEWAL-REGULATION]（2023年3月1日施行）作为参考性法定框架（参与者新增登记来源，未进入 approved_formal，待核验，最终以 official 公告与文本为准）。",
+      "impact_zh": "拆改留分类可参考上述条例的法定框架方向，但本方案不将其作为已确认的法定依据使用；审定时须以 official 文本为准。",
+      "recalculation_path_zh": "取得 official 现状建筑与权属数据后，按条例 official 文本逐栋落实拆改留分类；在本期仅作背景参考，不作法定依据。",
+      "confidence": "medium"
     },
     {
       "id": "ASM-011",
       "topic": "jingzhang_park_phase2_open",
-      "assumption_zh": "京张铁路遗址公园二期已于2026年8月建成向公众开放 [source:SRC-JZ-PARK-PHASE2-OPEN-2026]，方案走廊空间基于已建成公共空间。",
-      "impact_zh": "走廊空间已有实际建成基础（一期2023年、二期2026年8月开放），显著增加方案可实施性。",
-      "recalculation_path_zh": "取得 official 公园红线后调整走廊边界；二期各标段开放范围以园林部门 official 图纸为准。",
-      "confidence": "high"
+      "assumption_zh": "京张铁路遗址公园二期参考 2026 年 8 月向公众开放的状态 [source:SRC-JZ-PARK-PHASE2-OPEN-2026]（参与者新增登记来源，未进入 approved_formal，待核验，最终以 official 公园红线与园林部门 official 图纸为准）；方案走廊空间参考该开放状态。",
+      "impact_zh": "走廊空间参考已开放的公共空间状态作为设计基础，但不作为已确认建成事实使用；审定时须以 official 公园红线与开放范围为准。",
+      "recalculation_path_zh": "取得 official 公园红线后调整走廊边界；二期各标段开放范围以园林部门 official 图纸为准；在本期仅作背景参考，不作已建成事实。",
+      "confidence": "medium"
     }
   ],
   "evidence_ledger": {

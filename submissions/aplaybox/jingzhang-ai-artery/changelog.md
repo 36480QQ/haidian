@@ -2,6 +2,20 @@
 
 本文件按版本记录方案的实质变化、外部反馈与仍然敞开的问题。每一条都写明改了什么、为什么改、以及这次修改暴露出的下一个问题，不写空泛的完善与优化。
 
+## v2.10 — 2026-08-24 P9 评审 64.0 反馈修复（修 P9 漏改）
+
+P9 评审 75.0 → 64.0 跌 11 分，原因定位为 P9 task 1/2/3 三项**修错地方**——只改了 proposal.md 正文，没改 assumptions.json 中评审实际看到的字段；只改了 evidence_ledger C-012 的项目数，没改 compliance_matrix 中英文 HTML / mindmap.svg 的对应数字。本轮按评审原话定位 4 处具体漏改并补齐。
+
+- **task1 v2 — assumptions.json ASM-009/010/011 来源分级一致性**：评审原话「ASM-009、ASM-010、ASM-011 分别以 high confidence 把 participant_added_pending_registry 文件表述为政策依据、法定依据或已建成事实」。本轮把三条 assumption 的 confidence 从 high 改为 medium；assumption_zh / impact_zh / recalculation_path_zh 三字段措辞从「作为政策依据 / 为法定依据 / 已建成公共空间」改为「作为参考性背景 / 参考性法定框架 / 参考已开放状态（参与者新增登记来源，未进入 approved_formal，待核验，最终以 official 公告为准）」，与 P9 正文已经做出的"待核验背景"措辞对齐。
+- **task2 v2 — ASM-006 SC-04 与正文 SC-04 法律基础对齐**：评审原话「ASM-006 中的 SC-04 法律基础又与正文修订后的谨慎表述不一致」。本轮把 ASM-006.scenario_data_governance.SC-04.legal_basis 从「《个人信息保护法》第 26 条公共场所例外 + 区公安审批」改为「依《个人信息保护法》第 26 条所设维护公共安全所必需、有特定法律授权前提下设置标识或分析记录的条款（本方案为概念设计，实施前需经数据合规专项复核与主管部门审定；非「公共场所例外 + 区公安审批」二要素简化表述）」，与 P9 正文 SC-04 表格行 + 注 3 完全一致；retention_period / incident_response 字段补"设计目标 / 非法定时限"标签；controller / processor 字段加"候选控制者 / 候选处理者，待主管部门确认"标签。
+- **task3 v2 — 数字一致性补齐漏改位置**：P9 只改了 evidence_ledger C-012 与 assumptions/design_depth_matrix 的 14→17，但漏改 4 处仍保留 14 或 R-01-R-12，造成评审在任务书相关性维度明确指出「正文称17个项目，compliance_matrix 1.5.2.2 与中英 A0 首屏称14个项目，英文HTML可见编号体系又写为 R-01至 R-12」。本轮补齐：
+  - `compliance_matrix.json:319` evidence_summary_zh "14 个更新项目清单" → "17 个"
+  - `assets/figures/mindmap.svg:127` 文本 "三期分期 + 14 项目" → "三期分期 + 17 项目"
+  - `report/proposal.html:144` "项目用 R-01-R-12" → "项目用 R-01-R-17"
+  - `report/proposal.en.html:144` "projects use R-01–R-12" → "projects use R-01–R-17"
+  - changelog.md 中历史记录（v0.1 / v2.4 / v2.9 章节）的 14/R-12 是历史事实，保留不动
+- **遗留**：评审 P1 三项（5 张核心图重做、空间特异性深化、公众否决与荣誉墙机制重构）与 P2 两项（试点 KPI 公式化、双语人工抽查签核）仍未做，留到 P11。预期本轮（P10）恢复任务书相关性 4→5、风险合规 3→4，分数区间 70-75；若评审仍以"图件表达"或"实施接口"扣分，说明文本层已无修复空间，剩余扣分必须靠图件层与空间层动作才能收回。
+
 ## v0.1 - 2026-08-15
 
 *首版提交*
