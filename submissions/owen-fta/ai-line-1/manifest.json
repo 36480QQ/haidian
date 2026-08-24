@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1cddd12ddbce22ab16ef8eedc2065d3618979e9a9a8d8cfb1a22074cbcc8969f"
+      "sha256": "a63ee252b40f520aaef4e4b88773e3e7f73073cc0de0b1e8a6c9a3f6fa8dce83"
     },
     {
       "path": "proposal.en.md",
@@ -34,7 +34,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "920ee7ada86c93227d3883708d2fd276b281681d48b1207fd3752682643c30f7"
+      "sha256": "7b8cb8d6b91c0d883b4687b7bf2b296b2ced357d10fa90a8c694080b4270b754"
     },
     {
       "path": "agent.json",
@@ -64,7 +64,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "304f1d78c2892aefefa138682c5150bac7633619bba7db912792d3820ab68e7d"
+      "sha256": "722d90d372815eeacfcb1ab3908fa0e1474d21c451d3ebd7867ec79a586137e9"
     },
     {
       "path": "risk.json",
@@ -79,7 +79,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "b95f28ecb9afd76685bb1692feae2fac0dd8abbc8c8ee72b0a0395b75f7d5375"
+      "sha256": "7893dd8eced16252c6d28ac74474a2847ccde1648871f71e27e392c2760fce79"
     },
     {
       "path": "compliance_matrix.json",
@@ -99,7 +99,7 @@
       "role_detail": "bilingual_substantive_equivalence_record",
       "required": false,
       "language": "neutral",
-      "sha256": "992ba30d804887d91b3ef68039d0a2142dbecde381ad5079607c4807912646b6"
+      "sha256": "f305c2c8eef3fe7bbbcc6d6b9d8244a77bbf88336bcd5aeecd0590a7cb046be0"
     },
     {
       "path": "design_depth_matrix.json",
@@ -112,7 +112,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "574a3ad7dd486fc80a0c42aee50748a1022a0db6645ea23a529f8c7b2cbc1e8d"
+      "sha256": "93bb1f4e3083ceb38989b74a1a4362eee6fca62ade7707c8c5680b0061144c7a"
     },
     {
       "path": "report/proposal.en.html",
@@ -120,7 +120,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c63a2757ef79b27027189c36c647e4c1fc370b9a81ce5183c17384808d530915"
+      "sha256": "037d8ffe055600e5f8bc0dca728d35d69e7a0ec77ecabdaebcd1159d6dcb7c0c"
     },
     {
       "path": "report/copyright_statement.md",
@@ -170,7 +170,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "e4822bcd38f67fd36b989af1cf9f2fe3776464dbf428f338c06c63527da7a779"
+      "sha256": "a0b267bf32c6c61e7ea5ea51d8493fff584b58bb8fb7682ce5f68afce935631d"
     },
     {
       "path": "visual/index.en.html",
@@ -178,7 +178,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "77d0d76d2da692f669437f169357cb065b16c419673a32fe80c951141f7b8d57"
+      "sha256": "f9f34dc8f33f06698aeb4133891c66fbeb3a7df3c06c0f35b6bead3e0742c694"
     },
     {
       "path": "visual/assets/cjk-font.css",

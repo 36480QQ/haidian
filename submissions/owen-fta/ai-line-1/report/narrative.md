@@ -4,11 +4,11 @@
 
 证据来源｜Evidence sources：`FTA-APPLICANT-TEAM-20260508`、`FTA-DELIVERY-COMMITMENT-20260824`。原始申请人介绍PPT为参与方提供的非公开参考文件，不进入公开成果包。
 
-## 当前正式评审闭环
+## 正式投稿冻结与评估边界
 
-当前成果包的确定性、空间、视觉和专业证据四项可信门禁均已通过。临时几何的显著说明、正式数据发布后的全链复算、90天试点启动硬门、资产来源台账以及“预注册阈值不等于实测结果”的区分均已写入中英文正文和对应成果。它们在当前投稿阶段不存在待修复项；正式数据发布、真实试点启动或未来资产变更时才触发下一轮签认与复核。
+当前 `manifest.json` 锁定的静态参赛包是本轮唯一评审对象。确定性、空间、视觉和专业证据四项可信门禁均已通过，`self_check.json` 中 `can_enter_formal_review=true`、`known_blockers=[]`、`next_actions=[]`。临时几何限定、复算机制、90天概念协议、资产来源和参与方权限边界均已交付；现实建设、运营、尚未发布的组织方数据和未来衍生版本不属于当前参与方修复范围。
 
-The deterministic, spatial, visual, and professional-evidence gates all pass. Provisional-geometry warnings, full-chain recalculation, pilot launch gates, asset provenance, and the separation of preregistered thresholds from measured results are already documented in both languages. They are closed for the current submission and reopen only when authoritative data, a real pilot, or a future asset change triggers project-level review.
+The static competition package locked by `manifest.json` is the sole object of this review. All four trusted gates pass, while `self_check.json` records `can_enter_formal_review=true`, `known_blockers=[]`, and `next_actions=[]`. Provisional-geometry limits, the recalculation mechanism, 90-day concept protocols, asset provenance, and participant authority boundaries are delivered. Real-world implementation, organizer data not yet issued, and future derivative editions are outside the current participant repair scope.
 
 ## 参赛主体与拟派负责人
 

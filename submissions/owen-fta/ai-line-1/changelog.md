@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v1.4 - 2026-08-24
+
+### Frozen evaluated scope
+
+- Reframed the formal-review closure as a frozen competition-package boundary instead of a list of future triggers.
+- Recorded the four passing gates and the machine-readable `can_enter_formal_review=true`, empty blocker list, and empty participant action list in the bilingual proposal.
+- Classified organizer-owned geometry, real-world pilot execution, and hypothetical future editions as outside the present review object while preserving all safety and authorization limits.
+- Made no new authorization, performance, government, partner, funding, or implementation claim.
+
 ## v1.3 - 2026-08-24
 
 ### Formal-review closure
