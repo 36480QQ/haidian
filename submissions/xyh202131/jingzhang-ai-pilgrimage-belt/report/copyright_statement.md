@@ -13,8 +13,14 @@ Contributor-authored replay and offline interaction code is under the **MIT Lice
 ## 第三方与字体 / Third-party data and font
 
 - `geometry/constraints.geojson` 含 OpenStreetMap 方向性背景，署名 `© OpenStreetMap contributors`，数据库许可为 **ODbL 1.0**：<https://opendatacommons.org/licenses/odbl/1-0/>。该层不进入 CC BY 授权；任何符合衍生数据库定义的再分发须保留署名与相同方式共享。它不是官方道路红线、铁路保护边界、市政线位、测绘或批准依据。
-- 四份 PDF 嵌入本机 Noto Sans SC 字体子集。该字体声明采用 **SIL Open Font License 1.1**：<https://openfontlicense.org/>；源字体二进制未作为独立文件随包分发。
+- 四份 PDF 的页眉、页题、说明和页脚在本地构建时使用 Noto Sans SC Regular/Bold 静态字面并确定性栅格化，修复 PyMuPDF CJK cmap 错配；PDF 不嵌入字体程序。Regular/Bold 源 SHA-256 分别为 `a2b93e6c2db05d6bbbf6f27d413ec73269735b7b679019c8a5aa9670ff0ffbf2` 与 `d1961be1161ea1be08496c920862d06ea5c23a757628f4fd69368de1d9f51bed`。四份离线 HTML 则通过 `visual/assets/offline-cjk-font.css` 共用一份 WOFF2 子集，避免干净 Linux Chromium 缺少 CJK 系统字体时出现方框；其源文件 `NotoSansSC-VF.ttf` SHA-256 为 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`，子集由 fontTools 4.62.1 对四份最终 HTML 的完整字符并集与声明审查符号生成，覆盖 1158 个 Unicode 码点，WOFF2 SHA-256 为 `311746a1703338c8828c2bcfab61232ed837214351f9f02d7fa562e321aa8f24`。三者均采用 **SIL Open Font License 1.1**：<https://openfontlicense.org/>；源字体不作为独立文件分发。
 - Repository-provided provisional inputs, cited policy pages, cases, standards, trademarks, names and links are not relicensed. Their uses remain bounded by `sources.json` and `visual/assets/source-governance-register.json`.
+
+## 逐路径自查 / File-by-file contributor inventory
+
+`visual/assets/file-rights-inventory.json` 覆盖本次分发树的每个路径，并分别记录投稿方原创内容、投稿方代码、OSM 衍生数据库、仓库 provisional 输入、嵌入字体与仅引用外部来源的许可路径。该清单可以证明“每个文件都有明确处理决定”，但它仍是投稿方自查，不等同于独立法律意见、独立逐文件权利审计或商标检索。
+
+`visual/assets/file-rights-inventory.json` covers every path in the current distribution tree and distinguishes contributor-authored content, contributor code, OSM-derived database content, repository provisional inputs, embedded font software and citation-only external sources. It proves that every file has an explicit handling decision, but remains a contributor inventory rather than independent legal advice, an independent file-level rights audit or a trademark search.
 
 ## 真实性与排除 / Authenticity and exclusions
 

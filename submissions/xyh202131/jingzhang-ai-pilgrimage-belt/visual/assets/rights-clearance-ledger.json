@@ -1,12 +1,16 @@
 {
   "schema_version": "2.0",
   "as_of": "2026-08-24",
-  "status": "cleared_for_repository_review_with_declared_component_licenses",
+  "status": "not_fully_cleared_component_licenses_and_contributor_file_inventory_complete",
   "legal_opinion_provided": false,
   "independent_file_level_audit_completed": false,
   "independent_trademark_review_completed": false,
-  "summary_zh": "投稿方已授权自有内容 CC BY 4.0、自有代码 MIT；OSM 衍生数据库单独 ODbL；第三方引用与仓库临时输入不被重新许可；模型生成媒体已清退。",
-  "summary_en": "Contributor-owned content is CC BY 4.0, contributor-owned code is MIT, the OSM-derived database remains separately ODbL, third-party citations and repository provisional inputs are not relicensed, and generated media has been removed.",
+  "contributor_file_inventory_complete": true,
+  "contributor_file_inventory": "visual/assets/file-rights-inventory.json",
+  "contributor_file_inventory_path_count": 152,
+  "contributor_file_inventory_coverage_ratio": 1.0,
+  "summary_zh": "投稿方已逐路径自查当前分发包：自有内容 CC BY 4.0、自有代码 MIT；OSM 衍生数据库单独 ODbL；Noto Sans SC 子集按 OFL 1.1 嵌入 PDF 与离线 HTML；第三方引用与仓库临时输入不被重新许可；模型生成媒体已清退。该清单是投稿方自查，不冒充独立法律审计。",
+  "summary_en": "The contributor has inventoried every current distribution path: contributor-owned content is CC BY 4.0, contributor-owned code is MIT, the OSM-derived database remains separately ODbL, Noto Sans SC subsets are embedded in PDF and offline HTML under OFL 1.1, third-party citations and repository provisional inputs are not relicensed, and generated media has been removed. This is a contributor inventory, not an independent legal audit.",
   "components": [
     {
       "component_id": "RIGHTS-CONTENT",
@@ -46,10 +50,27 @@
     },
     {
       "component_id": "RIGHTS-FONT",
-      "scope": "Noto Sans SC subsets embedded in the four final PDF outputs",
+      "scope": "Noto Sans SC Regular/Bold glyph output rasterized into the four final PDFs at build time, plus the WOFF2 subset shared by the four offline HTML outputs through visual/assets/offline-cjk-font.css",
       "license": "SIL-OFL-1.1",
       "status": "permitted_embedding_and_redistribution",
-      "notice": "report/copyright_statement.md"
+      "notice": "report/copyright_statement.md",
+      "pdf_regular_source_file_name": "Noto Sans SC (TrueType).otf",
+      "pdf_regular_source_sha256": "a2b93e6c2db05d6bbbf6f27d413ec73269735b7b679019c8a5aa9670ff0ffbf2",
+      "pdf_bold_source_file_name": "Noto Sans SC Bold (TrueType).otf",
+      "pdf_bold_source_sha256": "d1961be1161ea1be08496c920862d06ea5c23a757628f4fd69368de1d9f51bed",
+      "pdf_render_method": "Pillow 12.2.0 deterministic 2x transparent glyph layers inserted into PyMuPDF pages; font_programs_embedded=false",
+      "html_source_file_name": "NotoSansSC-VF.ttf",
+      "html_source_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "html_subset_sha256": "311746a1703338c8828c2bcfab61232ed837214351f9f02d7fa562e321aa8f24",
+      "html_subset_method": "fontTools subset 4.62.1 over the complete character union of both final report and visual HTML counterparts plus declared review symbols; WOFF2; 1158 Unicode code points; font-display block"
+    },
+    {
+      "component_id": "RIGHTS-FILE-INVENTORY",
+      "scope": "Every path in the current submission distribution tree",
+      "license": "component_specific",
+      "status": "contributor_self_inventory_complete",
+      "notice": "visual/assets/file-rights-inventory.json",
+      "limit": "The inventory records provenance and licence decisions but is not an independent legal opinion, trademark search or professional rights audit."
     },
     {
       "component_id": "RIGHTS-GENERATED-MEDIA",
@@ -60,7 +81,8 @@
   ],
   "release_decisions": {
     "repository_review": "allowed_with_attribution_and_component_notices",
-    "public_reuse_of_contributor_content": "allowed_under_CC-BY-4.0",
+    "public_reuse_of_contributor_content": "allowed_under_CC-BY-4.0_for_contributor_owned_components_only",
+    "package_wide_public_or_professional_reuse": "blocked_pending_component_terms_and_independent_audit",
     "code_reuse": "allowed_under_MIT",
     "osm_database_reuse": "allowed_under_ODbL-1.0_with_attribution_and_share_alike",
     "third_party_source_reproduction": "not_granted",

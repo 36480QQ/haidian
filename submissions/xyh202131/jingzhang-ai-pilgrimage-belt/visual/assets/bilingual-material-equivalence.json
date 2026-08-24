@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R58",
+  "as_of": "2026-08-24",
+  "audit_type": "contributor_editorial_review",
+  "status": "material_equivalence_checked",
+  "scope": [
+    "proposal.md <-> proposal.en.md",
+    "report/proposal.html <-> report/proposal.en.html",
+    "visual/index.html <-> visual/index.en.html",
+    "22 Chinese/English PNG figure pairs",
+    "A3 Chinese/English 14-page pair",
+    "A0 Chinese/English 8-page pair"
+  ],
+  "checks": [
+    {
+      "check_id": "BME-01",
+      "topic": "formal_structure",
+      "result": "pass",
+      "evidence": "Both Markdown counterparts retain the same 13 formal chapters in the required order; the one mid-document transition into Chapter 13 is paired and no duplicate Chapter 13 cue remains."
+    },
+    {
+      "check_id": "BME-02",
+      "topic": "core_concept_and_prototypes",
+      "result": "pass",
+      "evidence": "Twin-Track Jing-Zhang remains the sole public thesis; Zhongzhiyuan parallel bypass/proof garden, Origin Community one street/two courtyards/four withdrawal nodes, and Dazhongsi four-way commute/off-route service remain distinct in both languages."
+    },
+    {
+      "check_id": "BME-03",
+      "topic": "state_logic",
+      "result": "pass",
+      "evidence": "Ordinary, verification, failure and recovery are paired as service states, not maturity levels; failure stops the verification overlay while ordinary life and the same-task non-AI route continue."
+    },
+    {
+      "check_id": "BME-04",
+      "topic": "frozen_counts",
+      "result": "pass",
+      "evidence": "Both languages preserve 12 scenarios, 8 projects, 3 key areas and 36 conceptual land-use cells."
+    },
+    {
+      "check_id": "BME-05",
+      "topic": "evidence_and_maturity_boundaries",
+      "result": "pass",
+      "evidence": "G0, NO-GO, provisional geometry, not to scale, not approved, real outcomes 0 and professional veto are materially equivalent across the reviewed surfaces."
+    },
+    {
+      "check_id": "BME-06",
+      "topic": "rights_and_sources",
+      "result": "pass_with_open_external_boundary",
+      "evidence": "Both languages distinguish contributor file inventory and component licence declarations from independent legal clearance; refreshed case sources remain background-only."
+    },
+    {
+      "check_id": "BME-07",
+      "topic": "figure_pairing",
+      "result": "pass",
+      "evidence": "All 22 raster figures have one Chinese and one English counterpart; the repaired English site-overview keeps its title, explanatory copy, warning band and panel labels inside the canvas."
+    },
+    {
+      "check_id": "BME-08",
+      "topic": "publication_pairing",
+      "result": "pass",
+      "evidence": "The rebuilt A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages; page counts, warnings and backlink positions are checked again in final PDF QA."
+    }
+  ],
+  "non_certification": "This is a contributor editorial equivalence record. It is not certified translation, public feedback, professional approval, field evidence or an independent rights audit. Exact-head automated and visual QA remains authoritative for the PR artifact set."
+}

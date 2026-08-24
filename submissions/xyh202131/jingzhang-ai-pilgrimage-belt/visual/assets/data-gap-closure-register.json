@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "register_id": "JZ-DATA-GAP-CLOSURE-R58",
+  "as_of": "2026-08-24",
+  "status": "participant_controlled_gaps_closed_external_gaps_preserved",
+  "purpose": "Separate gaps the contributor can close in the current publication package from authoritative or field inputs that cannot be fabricated, and bind every open gap to an owner, trigger and invalid substitute.",
+  "participant_controlled": [
+    {
+      "gap_id": "PC-01",
+      "gap": "Chinese text rendered as tofu in clean Chromium",
+      "status": "closed",
+      "evidence": "visual/assets/offline-cjk-font.css; clean-profile offline screenshots; final glyph coverage check",
+      "residual_boundary": "Font licence and subset method are declared; independent legal audit remains absent."
+    },
+    {
+      "gap_id": "PC-02",
+      "gap": "English site-overview heading and explanatory text exceeded the canvas",
+      "status": "closed",
+      "evidence": "assets/figures/site-overview.en.svg and site-overview.en.png; rebuilt English A3/A0",
+      "residual_boundary": "The diagram remains conceptual, provisional and not to scale."
+    },
+    {
+      "gap_id": "PC-03",
+      "gap": "Two background case records were review_due",
+      "status": "closed_for_background_use",
+      "evidence": "sources.json and visual/assets/evidence-freshness-policy.json record a 2026-08-24 public-page refresh",
+      "residual_boundary": "Neither case is upgraded to formal spatial, approval, partner or performance evidence."
+    },
+    {
+      "gap_id": "PC-04",
+      "gap": "No current-tree file-by-file contributor rights handling record",
+      "status": "closed_at_contributor_inventory_level",
+      "evidence": "visual/assets/file-rights-inventory.json covers every current distribution path",
+      "residual_boundary": "Independent legal advice, file-level clearance and trademark search remain 0."
+    },
+    {
+      "gap_id": "PC-05",
+      "gap": "Counterpart existence did not evidence material bilingual equivalence",
+      "status": "closed_at_editorial_review_level",
+      "evidence": "visual/assets/bilingual-material-equivalence.json",
+      "residual_boundary": "This is not certified translation or external professional review."
+    }
+  ],
+  "authoritative_input_required": [
+    {
+      "gap_id": "AI-01",
+      "required_input": "official overall and key-area polygons with coordinate reference system, issuer and version",
+      "current_state": "unknown; repository geometry remains provisional",
+      "responsible_source": "organizer or competent planning authority",
+      "recalculation_trigger": "valid authoritative files are published or formally supplied",
+      "affected_outputs": ["all geometry", "metrics.json", "all boundary-derived figures and ratios"],
+      "invalid_substitutes": ["bbox", "textual extent", "OSM guess", "commercial-map screenshot", "AI-generated polygon"]
+    },
+    {
+      "gap_id": "AI-02",
+      "required_input": "approved regulatory plan text and plates, official GIS/CAD, parcel and ownership, road redlines, railway/heritage protection, utilities, fire, transport and building controls",
+      "current_state": "unknown; no approved control conclusion claimed",
+      "responsible_source": "competent planning, transport, railway, heritage, fire and municipal authorities",
+      "recalculation_trigger": "applicable approved documents are supplied with scope and date",
+      "affected_outputs": ["land-use precision", "dimensions", "capacity", "retention/removal", "implementation permissions"],
+      "invalid_substitutes": ["open-web paraphrase", "case-study analogy", "illustrative diagram", "temporary geometry"]
+    },
+    {
+      "gap_id": "AI-03",
+      "required_input": "dated post-opening survey, as-built/current survey, accessibility co-test, peak movement, quietness, stormwater, ecology and maintenance records",
+      "current_state": "0 completed field records",
+      "responsible_source": "authorized field team with affected-community participation and professional review",
+      "recalculation_trigger": "approved field scope, consent, method and dated evidence pack exist",
+      "affected_outputs": ["baseline", "field thresholds", "accessibility outcome", "environmental performance"],
+      "invalid_substitutes": ["AI-generated image", "undated photograph", "desktop inference", "synthetic replay"]
+    },
+    {
+      "gap_id": "AI-04",
+      "required_input": "accepted accountable roles, named staff, budget, approved site/window, complaint chain, stop authority, recovery acceptance and independent real-world retest",
+      "current_state": "all real closure counts remain 0; G0 and NO-GO",
+      "responsible_source": "future accountable owner, competent approvers, operators, community representatives and independent reviewers",
+      "recalculation_trigger": "H01-H07 and C01-C09 evidence slots close for an exact site, time and activity",
+      "affected_outputs": ["G1 eligibility", "field operation", "restart decision", "real outcome claims"],
+      "invalid_substitutes": ["role archetype", "unsigned RACI", "concept budget", "48-second animation", "T-02 synthetic replay"]
+    },
+    {
+      "gap_id": "AI-05",
+      "required_input": "independent legal/file-level rights clearance and trademark conclusions for applicable distribution and professional reuse contexts",
+      "current_state": "component licences declared and contributor inventory complete; independent conclusions 0",
+      "responsible_source": "qualified independent rights reviewer and relevant rights holders",
+      "recalculation_trigger": "signed scope-specific clearance records cover the exact final manifest",
+      "affected_outputs": ["public or professional reuse", "logo and landmark trademark decisions"],
+      "invalid_substitutes": ["contributor assertion", "public URL", "open licence without compatibility review", "automated metadata scan"]
+    }
+  ],
+  "decision_rule": "Close participant-controlled publication defects now. Preserve external gaps as explicit unknown/provisional/zero states. No missing official or field input may be replaced by inference merely to improve a score."
+}

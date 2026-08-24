@@ -1,7 +1,11 @@
 {
   "schema_version": "2.0",
   "as_of": "2026-08-24",
-  "status": "component_licenses_declared",
+  "status": "not_fully_cleared_component_licenses_declared_with_complete_contributor_file_inventory",
+  "file_inventory": "visual/assets/file-rights-inventory.json",
+  "file_inventory_path_count": 152,
+  "file_inventory_coverage_ratio": 1.0,
+  "independent_file_level_audit_completed": false,
   "purpose_zh": "把公开评审、内容复用、代码复用、OSM 数据库衍生、第三方引用和专业实施分开判断。",
   "purpose_en": "Separate repository review, content reuse, code reuse, OSM database derivatives, third-party citations and professional implementation.",
   "decisions": [
@@ -40,6 +44,12 @@
       "use": "Professional deepening, field pilot or construction",
       "decision": "content_may_be_reused_but_execution_not_authorized",
       "conditions": ["obtain official geometry and controls", "complete H01-H07", "professional sign-off", "site and community verification", "separate contracts and approvals"]
+    },
+    {
+      "use_id": "USE-07",
+      "use": "Reuse or redistribution of the complete package as one cleared bundle",
+      "decision": "blocked_pending_component_terms_and_independent_audit",
+      "conditions": ["verify every component term against the exact manifest", "complete independent file-level clearance", "complete applicable trademark review"]
     }
   ],
   "non_equivalence": "An open licence is permission to reuse an artifact, not evidence that its spatial claims are official, its service works, or its proposal is approved."
