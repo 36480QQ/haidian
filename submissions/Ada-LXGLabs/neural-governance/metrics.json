@@ -6,16 +6,17 @@
   },
   "metrics": {
     "site_area_sqm": {
-      "status": "known",
-      "value": 11412825.386,
+      "status": "estimated",
+      "value": 11412825,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "low",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Provisional boundary (agent-inferred from public data); not an official red line.",
+        "Value is a provisional design-model figure; official geometry will trigger full re-computation of all metrics."
       ]
     },
     "building_footprint_area_sqm": {
