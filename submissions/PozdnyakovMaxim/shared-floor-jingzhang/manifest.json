@@ -269,7 +269,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "8559ba52806a45901e03e6d0d6a81ab57b1a607c563d6ae63c4e19d5e4c05d02"
+      "sha256": "94ca78573fa4fac2a5537d5d0e7d0cb70312a7618e0583a0ed2e08df39f5d402"
     },
     {
       "path": "compliance_matrix.json",
@@ -289,14 +289,14 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "3a0b42d79bc510349da8484afccb4efbc6e9a6113198097e9a20fd3baac554dd"
+      "sha256": "b987dc0aa7a433205222f7b1f44bb2ea3cb60ed8ae4fe6d82e44871e130acf33"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4288f7fd040649737eb07c8a2db370c71e9f9920b606f53d29603afb650d68b2"
+      "sha256": "66908d94553fc738afe47c0624c3aea3b6fa1f80bc79ecfa00555a8f50880645"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -384,14 +384,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "c6ded9d98f45a0a65bcd99b8093a40db8cb3acf58c67a3380c9e7b45a9726cce"
+      "sha256": "17a382f45a469f015bdd82ae22d1cded08be8191e2e2f16320422eb3d4612a26"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "fb578651657764276e2f438bcc30a63d7b095c1de5faa3d67f615377b1546a07"
+      "sha256": "4be266ebe04847ce3a4d114a01f0900474b85b439f3e4c4c6f11fe5eaced215e"
     },
     {
       "path": "report/copyright_statement.md",
@@ -411,14 +411,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d467de36c375693820559c80ab8820a8b29cb142b6aa9ca6ba7459c0b97c9c99"
+      "sha256": "73877aeb1bef0fd6c6b3add053df0b077b303a59272b0dd3ed2dfc9342e6c42d"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5f692ef8623909d7745683fa01f24d45e28df78e8c04729595631d070fb7792f"
+      "sha256": "8b923b073b53f073c8090645289d86dd69b1d88b6ace0c6907be3a35da3bd752"
     },
     {
       "path": "risk.json",
@@ -430,7 +430,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "669ffb5724014121770d16a5a960303fe106eda2b93e5366653c274fac1865aa"
+      "sha256": "cbefb053daa6e526abbdccf57d01f6eb390b35a1ef3f5214e4b557425455ebba"
     },
     {
       "path": "simulation.json",
