@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f1aca221c5fdf2696af4c607f16b0e63fa11aa498befcde6314c39f05d5116be"
+      "sha256": "353d1dfa57e6d700d7fa483fbbdc003445c57c9331df7365ff416c0e2bd95de1"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "62e0480f979d5509ab31fdefaec862e7a9acacd17c6b887eb9a81d1e520c9aaf"
+      "sha256": "060470569fc588bfc1fd298997ad44815547cf169e647f1de2b99763aa99722b"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f1647aef0dd6865294e9cdfb0cc2b044f0938d4053f925010705292f1e335cfb"
+      "sha256": "a3d857ead67af9fb84a1f019d42964bc2092241f655258777ada30ffcd3466f8"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "954cd21a9859f41f7fbd9f3b749401ef88ba237e27a8179ba7835ce942410259"
+      "sha256": "3935b23a941eeb1b1916f70e4665388b223c7743d66de7a8822bec9d45751937"
     },
     {
       "path": "report/narrative.md",
@@ -213,7 +213,7 @@
       "translation_of": "proposal.md",
       "title_zh": "京张AI低速机器人共行网（英文正式译文）",
       "title_en": "Jingzhang AI Low-Speed Robot Co-Mobility Network (English translation)",
-      "sha256": "e6c16edfd00e74b5372301d2d2df2473428357d96e8651b49546a3dc66cb5823"
+      "sha256": "49f8afbd683f3472680a898f5e27263afe6f14875b81a70a5257b3454f3eacf4"
     },
     {
       "path": "risk.json",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "72edd3e7e24ac5cc8524adc6058aa46f2a19acbd508897ed5298ace25e880853"
+      "sha256": "949040774cf8a69bbf8ea73a396d41d3595ac13958591faf18a7d69929974736"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -353,7 +353,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "a9ee591c15511bb339f6638c488435c2fa1db39f56360301e2320834be09e45e"
+      "sha256": "b115b72fdc2806e321f85d5c0c6cd12e1bc3eb7d3dc8bfb48e0992d886dc80e7"
     },
     {
       "path": "simulation.json",
@@ -401,7 +401,7 @@
       "path": "visual/assets/signaling-grammar.json",
       "role": "evidence_data",
       "required": false,
-      "sha256": "181bd5ff037b05a4c28867d62cfcd80c7d752e7071906ca923fce32cc5549b3e"
+      "sha256": "90a97669a1258159f0fcf19b43d62acc4aa0d9476c62df2c4afcfe57e98bd8f8"
     },
     {
       "path": "visual/assets/signaling-state-table.json",
@@ -432,6 +432,24 @@
       "role": "evidence_data",
       "required": false,
       "sha256": "cd835ac3a91df7dcfe8f4fa306983b3dfc3977ec6156c575ebd4f425b4eec254"
+    },
+    {
+      "path": "visual/assets/signal-daily-timetable.json",
+      "role": "asset",
+      "required": false,
+      "sha256": "ae3af6362ae54a3d60d926dfcfb2e89653844901b90997e3043eec423460cd12"
+    },
+    {
+      "path": "visual/assets/run_signal_daily_tabletop.js",
+      "role": "asset",
+      "required": false,
+      "sha256": "5349cd44d5dbace5f8501047de7daed0f69ccddf711889d55dd37012c7645d9b"
+    },
+    {
+      "path": "visual/assets/signal-daily-evidence.json",
+      "role": "asset",
+      "required": false,
+      "sha256": "da23aec2dea24033c3ed8b3e40ed2c771509d4b73ad97f4ac81ca39ac839f782"
     }
   ],
   "validation_claim": {

@@ -562,6 +562,54 @@
       "confidence": "high",
       "assumptions": [],
       "rationale": "0.8"
+    },
+    "signal_timetable_scenario_count": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/signal-daily-timetable.json"
+      ],
+      "formula": "count(periods)+count(events)",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "6 routine periods + 5 event scenarios"
+    },
+    "signal_timetable_case_count": {
+      "status": "known",
+      "value": 88,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/signal-daily-evidence.json"
+      ],
+      "formula": "11 scenarios x 8 blocks",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "88 cases derived from interlock rules, golden output verified"
+    },
+    "signal_timetable_assertion_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/signal-daily-evidence.json"
+      ],
+      "formula": "count(assertions), all passed",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "8 safety assertions, 8/8 pass"
+    },
+    "night_return_window_hours": {
+      "status": "known",
+      "value": 6,
+      "unit": "hour",
+      "source_files": [
+        "visual/assets/signal-daily-timetable.json"
+      ],
+      "formula": "24:00-00:00 to 06:00",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "Negative-space baseline in time: corridor 100% returned to pedestrians 00:00-06:00 daily"
     }
   },
   "recalculation_notes": {
