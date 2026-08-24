@@ -13,7 +13,11 @@
       "authority_level": "A0",
       "timeliness_level": "T0",
       "public_access_status": "public_local_snapshot",
-      "license_summary": "Official public announcement snapshot retained for reference and citation.",
+      "license": "public-information-notice",
+      "license_summary": "Official public announcement snapshot retained for reference and citation; no reuse permission is inferred for page chrome or third-party content.",
+      "attribution": "北京市规划和自然资源委员会海淀分局",
+      "transformation": "Text caliber extraction only; no reproduction of page graphics.",
+      "restrictions": "Not an official polygon boundary; not statutory control; not an implementation commitment.",
       "review_status": "approved",
       "usable_for_formal": "yes",
       "allowed_uses": [
@@ -54,7 +58,11 @@
       "authority_level": "CLEARED_USER_DOCUMENT",
       "timeliness_level": "T0",
       "public_access_status": "cleared_for_repo",
+      "license": "cleared-user-document",
       "license_summary": "User provided this document for repository use and public agent-facing task alignment.",
+      "attribution": "Provided by the participating user (cleared for repository use).",
+      "transformation": "Task-caliber extraction only.",
+      "restrictions": "Not an official redline or statutory control; no approval commitments.",
       "review_status": "approved",
       "usable_for_formal": "yes",
       "allowed_uses": [
@@ -98,7 +106,11 @@
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "public-information-notice",
       "license_summary": "Official public standard/policy page snapshot retained for reference and citation.",
+      "attribution": "中华人民共和国住房和城乡建设部",
+      "transformation": "Method terminology reference only.",
+      "restrictions": "No site-specific control conclusions may be derived from it alone.",
       "review_status": "approved",
       "usable_for_formal": "yes",
       "allowed_uses": [
@@ -133,7 +145,11 @@
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "public-information-notice",
       "license_summary": "Official public government page snapshot retained for reference and citation.",
+      "attribution": "中华人民共和国住房和城乡建设部",
+      "transformation": "Procedure terminology reference only.",
+      "restrictions": "No invented FAR/height/redline/ownership conclusions.",
       "review_status": "approved",
       "usable_for_formal": "yes",
       "allowed_uses": [
@@ -166,7 +182,11 @@
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "public-information-notice",
       "license_summary": "Official public government page snapshot retained for reference and citation.",
+      "attribution": "自然资源部",
+      "transformation": "Land-use terminology mapping only.",
+      "restrictions": "No site-specific land-use approval conclusions.",
       "review_status": "approved",
       "usable_for_formal": "yes",
       "allowed_uses": [
@@ -198,7 +218,11 @@
       "authority_level": "PROVISIONAL_REPOSITORY",
       "timeliness_level": "T0",
       "public_access_status": "provisional_repository",
+      "license": "provisional-repository-data",
       "license_summary": "Repository-maintained provisional geometry for intake testing and visualization only.",
+      "attribution": "Repository maintainers (provisional derivation from the official announcement text).",
+      "transformation": "Used as provisional design study boundary; explicit PROVISIONAL stamps on every figure.",
+      "restrictions": "Not an official redline; not statutory control; not a precise-area basis.",
       "review_status": "provisional",
       "usable_for_formal": "provisional_only",
       "allowed_uses": [
@@ -246,7 +270,11 @@
       "authority_level": "A0",
       "timeliness_level": "T1",
       "public_access_status": "public_local_snapshot",
-      "license_summary": "Official public government text; attributed Markdown snapshot retained for reference. No reuse permission is inferred for page chrome, images or third-party editorial content; any reuse remains subject to official terms.",
+      "license": "public-information-notice",
+      "license_summary": "Official public government text; attributed Markdown snapshot retained for reference. No reuse permission is inferred for page chrome, images or third-party editorial content.",
+      "attribution": "国家互联网信息办公室等七部门",
+      "transformation": "Abstracted to concept-level governance wording only.",
+      "restrictions": "No legal opinion; no filing/security-assessment inference; no generalization to every AI application.",
       "review_status": "approved",
       "usable_for_formal": "yes",
       "allowed_uses": [
@@ -283,7 +311,11 @@
       "authority_level": "A0",
       "timeliness_level": "T1",
       "public_access_status": "public_local_snapshot",
-      "license_summary": "Official public government text; attributed Markdown snapshot retained for reference. No reuse permission is inferred for page chrome, images or third-party editorial content; any reuse remains subject to official terms.",
+      "license": "public-information-notice",
+      "license_summary": "Official public government text; attributed Markdown snapshot retained for reference.",
+      "attribution": "全国人民代表大会常务委员会",
+      "transformation": "Article 39 boundary is quoted with explicit scope limitation.",
+      "restrictions": "No venue-specific compliance determination; no generalization beyond the listed statutory service matters.",
       "review_status": "approved",
       "usable_for_formal": "yes",
       "allowed_uses": [
@@ -303,7 +335,7 @@
       "local_paths": [
         "brief/site-package/standards/references/barrier-free-environment-law.md"
       ],
-      "notes_zh": "法律于 2023-06-28 通过（人大常委会通过/公布），gov.cn/Xinhua 页面于 2023-06-29 发布；2023-09-01 起施行。第39条的现场指导、人工办理边界仅限正文列举的医疗、社会保障、金融、生活缴费等服务事项公共服务场所，不能泛化为所有公共空间或数字界面。快照仅供离线检索，具体场所合规仍需单独判断。"
+      "notes_zh": "法律于 2023-06-28 通过，2023-09-01 起施行。第39条的现场指导、人工办理边界仅限正文列举的医疗、社会保障、金融、生活缴费等服务事项公共服务场所，不能泛化为所有公共空间或数字界面。快照仅供离线检索。"
     },
     {
       "source_id": "PACKAGE-GEOMETRY",
@@ -317,7 +349,11 @@
       "authority_level": "SELF-DECLARED",
       "timeliness_level": "T0",
       "public_access_status": "cleared_for_repo",
-      "license_summary": "Original AI-generated design geometry, free for repository display.",
+      "license": "self-generated-original",
+      "license_summary": "Original AI-generated design geometry, generated for this submission; free for repository display under COMMUNITY-DISPLAY-ONLY.",
+      "attribution": "JohnXu22786 / dsh-haidian-agent (generator: DeepSeek-V4-Flash concept prompting + deterministic build script).",
+      "transformation": "Rendered into proposal figures, drawings and the visual page with PROVISIONAL stamps.",
+      "restrictions": "Provisional study geometry only; not an official boundary or statutory control; no co-copyright claim.",
       "review_status": "self_reviewed",
       "usable_for_formal": "provisional_only",
       "allowed_uses": [
@@ -338,6 +374,470 @@
         "generation_method": "concept prompting + geometry program",
         "limitations": "low confidence conceptual envelopes"
       }
+    },
+    {
+      "source_id": "GLOBAL-CASE-JURONG-2016",
+      "title": "Jurong Lake District Master Plan (裕廊湖区总体规划)",
+      "publisher": "Singapore Urban Redevelopment Authority (URA Singapore)",
+      "source_kind": "public_reference_case",
+      "url": "https://www.ura.gov.sg/Corporate/Planning/Master-Plan",
+      "published_date": "2016-06-01",
+      "accessed_date": "2026-08-24",
+      "file_type": "markdown",
+      "authority_level": "B1",
+      "timeliness_level": "T2",
+      "public_access_status": "public_official_web",
+      "license": "public-information-notice",
+      "license_summary": "Official planning agency public pages; referenced as a mechanism case only, no reproduction of agency graphics.",
+      "attribution": "Urban Redevelopment Authority, Singapore",
+      "transformation": "Summarized as a transferable mechanism (hub-driven innovation district, slow-traffic-first station-city integration).",
+      "restrictions": "Not a commitment that this proposal replicates the case; case facts per URA public materials.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "global case comparison and mechanism transfer reference"
+      ],
+      "prohibited_uses": [
+        "claiming Singapore lands/plans for this site",
+        "deriving site-specific quantities from the case"
+      ],
+      "topics": [
+        "global_case",
+        "station_city_integration",
+        "innovation_district"
+      ],
+      "notes_zh": "案例表第1行：新加坡裕廊湖区，2016年总体规划为机制参照。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-TOKYO-2007",
+      "title": "Tokyo Station City / Marunouchi redevelopment (东京站丸之内再开发)",
+      "publisher": "East Japan Railway Company (JR East)",
+      "source_kind": "public_reference_case",
+      "url": "https://www.jreast.co.jp/e/development/tokyo/",
+      "published_date": "2007-10-01",
+      "accessed_date": "2026-08-24",
+      "file_type": "markdown",
+      "authority_level": "B1",
+      "timeliness_level": "T2",
+      "public_access_status": "public_official_web",
+      "license": "public-information-notice",
+      "license_summary": "Operator public pages; referenced as a mechanism case only.",
+      "attribution": "East Japan Railway Company",
+      "transformation": "Summarized as a transferable mechanism (station-complex and business-district integration; underground connection).",
+      "restrictions": "Case facts per JR East public materials; no site-specific quantities transferred.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "global case comparison and mechanism transfer reference"
+      ],
+      "prohibited_uses": [
+        "claiming Japanese plans for this site",
+        "deriving site-specific quantities from the case"
+      ],
+      "topics": [
+        "global_case",
+        "station_complex_redevelopment"
+      ],
+      "notes_zh": "案例表第2行：东京站丸之内再开发，2007年起，JR东日本。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-KINGSX-2008",
+      "title": "King's Cross regeneration programme (伦敦国王十字更新计划)",
+      "publisher": "King's Cross Central Limited Partnership (with Camden Council)",
+      "source_kind": "public_reference_case",
+      "url": "https://www.kingscross.co.uk/",
+      "published_date": "2008-01-01",
+      "accessed_date": "2026-08-24",
+      "file_type": "markdown",
+      "authority_level": "B1",
+      "timeliness_level": "T2",
+      "public_access_status": "public_official_web",
+      "license": "public-information-notice",
+      "license_summary": "Developer/operator public pages; referenced as a mechanism case only.",
+      "attribution": "King's Cross Central Limited Partnership",
+      "transformation": "Summarized as a transferable mechanism (whole-area renewal of a station district; knowledge-economy scenarios).",
+      "restrictions": "Case facts per the developer's public materials; no site-specific quantities transferred.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "global case comparison and mechanism transfer reference"
+      ],
+      "prohibited_uses": [
+        "claiming London plans for this site",
+        "deriving site-specific quantities from the case"
+      ],
+      "topics": [
+        "global_case",
+        "station_area_renewal",
+        "knowledge_economy"
+      ],
+      "notes_zh": "案例表第3行：伦敦国王十字更新，2008年起。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-HUDSON-2012",
+      "title": "Hudson Yards district development (纽约哈德逊广场开发)",
+      "publisher": "Related Oxford (Hudson Yards developer)",
+      "source_kind": "public_reference_case",
+      "url": "https://www.hudsonyardsnewyork.com/",
+      "published_date": "2012-12-01",
+      "accessed_date": "2026-08-24",
+      "file_type": "markdown",
+      "authority_level": "B1",
+      "timeliness_level": "T2",
+      "public_access_status": "public_official_web",
+      "license": "public-information-notice",
+      "license_summary": "Developer public pages; referenced as a mechanism case only.",
+      "attribution": "Related Oxford",
+      "transformation": "Summarized as a transferable mechanism (platform development above rail yards; public realm with tech scenarios).",
+      "restrictions": "Case facts per the developer's public materials; no site-specific quantities transferred.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "global case comparison and mechanism transfer reference"
+      ],
+      "prohibited_uses": [
+        "claiming New York plans for this site",
+        "deriving site-specific quantities from the case"
+      ],
+      "topics": [
+        "global_case",
+        "over_track_development",
+        "public_realm"
+      ],
+      "notes_zh": "案例表第4行：哈德逊广场，2012年起，Related Oxford。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-HONGQIAO-2008",
+      "title": "虹桥综合交通枢纽与商务区联动发展 (Hongqiao Integrated Transport Hub)",
+      "publisher": "上海市规划和自然资源局（规划组织方公开资料）",
+      "source_kind": "public_reference_case",
+      "url": "https://ghzyj.sh.gov.cn/",
+      "published_date": "2008-01-01",
+      "accessed_date": "2026-08-24",
+      "file_type": "markdown",
+      "authority_level": "B1",
+      "timeliness_level": "T2",
+      "public_access_status": "public_official_web",
+      "license": "public-information-notice",
+      "license_summary": "Official planning agency public pages; referenced as a mechanism case only.",
+      "attribution": "上海市规划和自然资源局",
+      "transformation": "Summarized as a transferable mechanism (air-rail hub linked with a business district; integrated walking network).",
+      "restrictions": "Case facts per public agency materials; no site-specific quantities transferred.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "global case comparison and mechanism transfer reference"
+      ],
+      "prohibited_uses": [
+        "claiming Shanghai plans for this site",
+        "deriving site-specific quantities from the case"
+      ],
+      "topics": [
+        "global_case",
+        "integrated_transport_hub"
+      ],
+      "notes_zh": "案例表第5行：上海虹桥综合交通枢纽，2008年起。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-QIANHAI-2010",
+      "title": "前海深港现代服务业合作区 (Qianhai Shenzhen-Hong Kong Modern Service Industry Cooperation Zone)",
+      "publisher": "深圳市前海深港现代服务业合作区管理局",
+      "source_kind": "public_reference_case",
+      "url": "http://qh.sz.gov.cn/",
+      "published_date": "2010-08-26",
+      "accessed_date": "2026-08-24",
+      "file_type": "markdown",
+      "authority_level": "B1",
+      "timeliness_level": "T2",
+      "public_access_status": "public_official_web",
+      "license": "public-information-notice",
+      "license_summary": "Official authority public pages; referenced as a mechanism case only.",
+      "attribution": "深圳市前海深港现代服务业合作区管理局",
+      "transformation": "Summarized as a transferable mechanism (TOD combined with an innovation industry cluster; institutional opening pilot).",
+      "restrictions": "Case facts per public authority materials; no site-specific quantities transferred.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "global case comparison and mechanism transfer reference"
+      ],
+      "prohibited_uses": [
+        "claiming Shenzhen plans for this site",
+        "deriving site-specific quantities from the case"
+      ],
+      "topics": [
+        "global_case",
+        "tod",
+        "innovation_cluster"
+      ],
+      "notes_zh": "案例表第6行：深圳前海合作区，2010年起。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-SEOUL-DMC",
+      "title": "首尔数字媒体城 (Digital Media City, Seoul)",
+      "publisher": "首尔特别市（Seoul Metropolitan Government）",
+      "source_kind": "public_reference_case",
+      "url": "https://www.seoul.go.kr/",
+      "published_date": "2000-01-01",
+      "accessed_date": "2026-08-24",
+      "file_type": "markdown",
+      "authority_level": "B1",
+      "timeliness_level": "T2",
+      "public_access_status": "public_official_web",
+      "license": "public-information-notice",
+      "license_summary": "City government public pages; referenced as a mechanism case only.",
+      "attribution": "Seoul Metropolitan Government",
+      "transformation": "Summarized as a transferable mechanism (media-tech cluster coupled with public transport; shared media facilities).",
+      "restrictions": "Case facts per city public materials; no site-specific quantities transferred.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "global case comparison and mechanism transfer reference"
+      ],
+      "prohibited_uses": [
+        "claiming Seoul plans for this site",
+        "deriving site-specific quantities from the case"
+      ],
+      "topics": [
+        "global_case",
+        "media_cluster",
+        "transit_coupling"
+      ],
+      "notes_zh": "案例表第7行：首尔数字媒体城，2000年起。"
+    },
+    {
+      "source_id": "ASSET-FONT-NOTO-SANS-SC",
+      "title": "Noto Sans SC 字体（HTML 内嵌子集与图纸渲染）",
+      "publisher": "Google Noto Project (SIL Open Font License 1.1)",
+      "source_kind": "asset_ledger",
+      "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+      "published_date": null,
+      "accessed_date": "2026-08-24",
+      "file_type": "font",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T2",
+      "public_access_status": "public_free",
+      "license": "OFL-1.1",
+      "license_summary": "Open Font License 1.1: free to use, subset, embed and redistribute with the license notice; no restriction on embedding in documents.",
+      "attribution": "Google Noto Project contributors (OFL-1.1).",
+      "transformation": "Subset per HTML deliverable to the characters actually used, converted to WOFF2 and base64-embedded with an @font-face rule.",
+      "restrictions": "Reserved font name clause: the font may not be sold by itself under the same name; subsetting and embedding in proposals are permitted.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "text rendering in proposal HTML, visual HTML and drawings"
+      ],
+      "prohibited_uses": [
+        "reselling the font standalone",
+        "claiming the font as the participant's own work"
+      ],
+      "topics": [
+        "asset",
+        "font"
+      ],
+      "notes_zh": "所有4个最终HTML均内嵌 OTF/WOFF2 子集 @font-face（OFL-1.1），本地 Windows 字体 NotoSansSC-VF.ttf 为实例化权重来源。"
+    },
+    {
+      "source_id": "ASSET-LOGO",
+      "title": "知春路智核 Logo（assets/figures/logo.png）",
+      "publisher": "JohnXu22786 / dsh-haidian-agent",
+      "source_kind": "agent_generated_design",
+      "url": "assets/figures/logo.png",
+      "published_date": "2026-08-24",
+      "accessed_date": "2026-08-24",
+      "file_type": "png",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "self-generated-original",
+      "license_summary": "Original generated logo for this submission; free for repository display under COMMUNITY-DISPLAY-ONLY; no third-party elements.",
+      "attribution": "JohnXu22786 / dsh-haidian-agent (generated with matplotlib, Noto Sans SC text under OFL-1.1).",
+      "transformation": "Used in proposal.md, brand/VI section and the visual pages.",
+      "restrictions": "Display-only for this proposal; any commercial use requires separate authorization; no co-copyright claim.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "brand display in this proposal",
+        "visual identity explanation"
+      ],
+      "prohibited_uses": [
+        "commercial registration without authorization",
+        "attributing the mark to any third party"
+      ],
+      "topics": [
+        "asset",
+        "logo",
+        "brand"
+      ],
+      "notes_zh": "Logo为参与方原创生成资产，登记于资产权利清单。"
+    },
+    {
+      "source_id": "ASSET-FIGURES",
+      "title": "方案图件（assets/figures/ 下全部 PNG，含英文对应）",
+      "publisher": "JohnXu22786 / dsh-haidian-agent",
+      "source_kind": "agent_generated_design",
+      "url": "assets/figures/",
+      "published_date": "2026-08-24",
+      "accessed_date": "2026-08-24",
+      "file_type": "png",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "self-generated-original",
+      "license_summary": "Original generated figures from the package's own geometry and metrics; free for repository display under COMMUNITY-DISPLAY-ONLY.",
+      "attribution": "JohnXu22786 / dsh-haidian-agent (matplotlib rendering of package geometry/metrics; Noto Sans SC text under OFL-1.1).",
+      "transformation": "Every map carries scale bar, north arrow, node ids N1-N3, legend and a PROVISIONAL stamp; metrics figure splits ratio % vs count panels.",
+      "restrictions": "Provisional concept graphics; not statutory drawings; recompute when official geometry is published.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "provisional_only",
+      "allowed_uses": [
+        "proposal display and review"
+      ],
+      "prohibited_uses": [
+        "official approval drawings",
+        "resale of the rendering pipeline output under another attribution"
+      ],
+      "topics": [
+        "asset",
+        "figures",
+        "mapping"
+      ],
+      "notes_zh": "13幅图件（5张主图+关系图+Logo及英文对应）全部自产。"
+    },
+    {
+      "source_id": "ASSET-MAPS-BASELINE",
+      "title": "图面底图语境（道路/站点/轨道示意）",
+      "publisher": "JohnXu22786 / dsh-haidian-agent",
+      "source_kind": "agent_generated_design",
+      "url": "geometry/roads.geojson",
+      "published_date": "2026-08-24",
+      "accessed_date": "2026-08-24",
+      "file_type": "geojson",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "self-generated-original",
+      "license_summary": "All cartographic base context (concept roads, rail lines, station marker) is drawn from the package's own provisional geometry; no external basemap imagery or tiles are used.",
+      "attribution": "JohnXu22786 / dsh-haidian-agent",
+      "transformation": "Concept schematic base; positions are approximations on EPSG:4548.",
+      "restrictions": "Not survey-accurate; not road redlines; PROVISIONAL stamped on every map.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "provisional_only",
+      "allowed_uses": [
+        "concept map background"
+      ],
+      "prohibited_uses": [
+        "survey or statutory boundary use"
+      ],
+      "topics": [
+        "asset",
+        "basemap",
+        "mapping"
+      ],
+      "notes_zh": "未使用任何第三方底图影像或瓦片，避免地图权利风险。"
+    },
+    {
+      "source_id": "ASSET-STATISTICS-HYPOTHESIS",
+      "title": "公开统计与客流类数据（方法假设，非已获取数据）",
+      "publisher": "JohnXu22786 / dsh-haidian-agent（假设登记）",
+      "source_kind": "hypothesis_pending_verification",
+      "url": null,
+      "published_date": null,
+      "accessed_date": "2026-08-24",
+      "file_type": "markdown",
+      "authority_level": "HYPOTHESIS",
+      "timeliness_level": "T1",
+      "public_access_status": "hypothesis_only",
+      "license": "not-applicable",
+      "license_summary": "No raw datasets were acquired; the items (bus smart-card, bike-sharing, mobile signaling anonymous aggregates and passenger-flow materials) are declared as methodological hypotheses pending verification, and are not cited as facts.",
+      "attribution": "N/A (hypothesis; would follow the original publisher if ever acquired).",
+      "publisher_expected": "公开数据发布主体（待核验，通常为北京市交通委/轨道运营方/单车企业等）",
+      "time_range": "未获取（假设针对近年典型工作日，待核验）",
+      "collection_method": "拟采用匿名聚合方法（不落个人）、分组汇总、去标识化；仅为方法设想",
+      "transformation": "Downgraded from 'data used' to 'hypothesis pending verification' in proposal.md section '设计依据与资料清单'.",
+      "restrictions": "Must not be presented as verifiable fact; any future acquisition requires a new sources.json entry with the original publisher and license.",
+      "review_status": "hypothesis_only",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "methodology description with explicit hypothesis labeling"
+      ],
+      "prohibited_uses": [
+        "asserting actual data acquisition",
+        "citing specific numbers derived from unverified data"
+      ],
+      "topics": [
+        "asset",
+        "data_hypothesis",
+        "passenger_flow"
+      ],
+      "notes_zh": "评审要求：无可核验证据的场地事实删除或标为待验证假设。本条目即为下修登记。"
+    },
+    {
+      "source_id": "ASSET-SURVEY-HYPOTHESIS",
+      "title": "现场踏勘记录、现状照片与测绘草图（待验证假设）",
+      "publisher": "JohnXu22786 / dsh-haidian-agent（假设登记）",
+      "source_kind": "hypothesis_pending_verification",
+      "url": null,
+      "published_date": null,
+      "accessed_date": "2026-08-24",
+      "file_type": "markdown",
+      "authority_level": "HYPOTHESIS",
+      "timeliness_level": "T1",
+      "public_access_status": "hypothesis_only",
+      "license": "not-applicable",
+      "license_summary": "Site survey records, current-condition photos and survey sketches cannot be verified from public channels; declared as hypotheses pending verification and excluded from factual citations.",
+      "attribution": "N/A (hypothesis).",
+      "publisher_expected": "现场踏勘记录来源（参与方内部记录，无公开凭证）",
+      "time_range": "未获取（拟覆盖2026年春夏非高峰期工作时段，待核验）",
+      "collection_method": "拟采用步行踏勘+现场拍照+草图测绘；未经第三方核验，不作为事实",
+      "transformation": "Downgraded in proposal.md references [11] and section '设计依据与资料清单'.",
+      "restrictions": "Not cited as facts; field facts without verifiable evidence are deleted or labeled pending verification.",
+      "review_status": "hypothesis_only",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "methodology and data-gap description"
+      ],
+      "prohibited_uses": [
+        "asserting current-condition facts from unverified surveys"
+      ],
+      "topics": [
+        "asset",
+        "survey_hypothesis",
+        "data_gap"
+      ],
+      "notes_zh": "场地事实（如具体建筑年代、现状业态）凡无可核验证据的，均在正文中仅作概念假设表述。"
+    },
+    {
+      "source_id": "ASSET-HTML-PDF-CODE",
+      "title": "HTML/PDF/代码与工具资产",
+      "publisher": "JohnXu22786 / dsh-haidian-agent",
+      "source_kind": "agent_generated_design",
+      "url": "report/, visual/, drawings/",
+      "published_date": "2026-08-24",
+      "accessed_date": "2026-08-24",
+      "file_type": "html",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "self-generated-original",
+      "license_summary": "All HTML reports, visual pages, drawing PDFs and the deterministic build tooling are original outputs of this submission; COMMUNITY-DISPLAY-ONLY. No third-party code libraries are shipped inside the package (matplotlib/fontTools are runtime tooling used locally to produce artifacts).",
+      "attribution": "JohnXu22786 / dsh-haidian-agent; runtime tooling: matplotlib, fontTools/brotli (BSD/Apache/MIT licensed, not redistributed in the package).",
+      "transformation": "HTML embeds OFL-1.1 Noto Sans SC subsets as base64 @font-face; PDFs embed package figures.",
+      "restrictions": "Display-only; code/tooling is not shipped as a product; no co-copyright assertion.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "submission display and review"
+      ],
+      "prohibited_uses": [
+        "commercial redistribution without authorization"
+      ],
+      "topics": [
+        "asset",
+        "html",
+        "pdf",
+        "code"
+      ],
+      "notes_zh": "工具类资产（matplotlib 等）仅本地构建用，不随包分发。"
     }
   ]
 }

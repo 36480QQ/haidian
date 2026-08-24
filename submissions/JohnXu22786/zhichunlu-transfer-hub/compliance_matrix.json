@@ -957,7 +957,8 @@
    "mandatory": true,
    "report_sections": [
     "三层范围工作框架",
-    "总体设计范围城市更新与控规深度城市设计"
+    "三区两翼协同回路与区域创新节点（概念）",
+    "品牌命名、视觉识别与Logo（概念）"
    ],
    "geojson_layers": [
     "geometry/site_boundary.geojson",
@@ -978,7 +979,9 @@
    ],
    "drawings": [
     "drawings/a3-booklet.pdf",
-    "drawings/a0-boards.pdf"
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a0-boards.en.pdf"
    ],
    "visual_sections": [
     "总览地图",
@@ -988,9 +991,12 @@
    "source_ids": [
     "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
     "DATA-SRC-AGENT-TASKBOOK-20260518",
-    "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
-    "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+    "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+    "GLOBAL-CASE-JURONG-2016",
+    "GLOBAL-CASE-KINGSX-2008",
+    "ASSET-FONT-NOTO-SANS-SC",
+    "ASSET-LOGO",
+    "ASSET-FIGURES"
    ],
    "assumption_ids": [
     "A-BOUNDARY-001",
@@ -1006,7 +1012,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "一带总体概念：知春路智核——轨道枢纽站城融合与AI出行服务的总体统筹。"
+   "evidence_summary_zh": "一带总体概念：知春路智核（英文主名 Zhichun Road Smart-Core，命名体系与原创Logo）；三层范围口径表澄清约11.4km²总体设计范围与500米重点区域关系；三区两翼协同回路+五类区域创新节点关系图（region-loop.png）。"
   },
   {
    "requirement_id": "agent.2",
@@ -1014,7 +1020,8 @@
    "mandatory": true,
    "report_sections": [
     "AI 创新生态、人才画像与 AI+ 场景",
-    "重点区域详细设计"
+    "全球AI创新生态案例与机制迁移（有来源）",
+    "要素保障矩阵与数据治理（概念）"
    ],
    "geojson_layers": [
     "geometry/site_boundary.geojson",
@@ -1035,7 +1042,9 @@
    ],
    "drawings": [
     "drawings/a3-booklet.pdf",
-    "drawings/a0-boards.pdf"
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a0-boards.en.pdf"
    ],
    "visual_sections": [
     "总览地图",
@@ -1045,9 +1054,12 @@
    "source_ids": [
     "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
     "DATA-SRC-AGENT-TASKBOOK-20260518",
-    "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
-    "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+    "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+    "GLOBAL-CASE-JURONG-2016",
+    "GLOBAL-CASE-KINGSX-2008",
+    "ASSET-FONT-NOTO-SANS-SC",
+    "ASSET-LOGO",
+    "ASSET-FIGURES"
    ],
    "assumption_ids": [
     "A-BOUNDARY-001",
@@ -1063,14 +1075,16 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "智核集散广场、AI出行服务大厅与智慧换乘走廊，支撑轨道枢纽全链条场景表达。"
+   "evidence_summary_zh": "五类人才画像表+残障人士旅程与共创验证；7行有来源全球案例表（URA/JR东日本/国王十字/Hudson Yards/虹桥/前海/首尔DMC）；AI创新生态三圈层图谱；众智园/AI原点社区/中关村科技服务翼机制；土地/空间/产业/资金/人才/算力/数据/场景八要素矩阵（责任主体/准入条件/机制）。"
   },
   {
    "requirement_id": "agent.3",
    "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
    "mandatory": true,
    "report_sections": [
-    "AI 创新生态、人才画像与 AI+ 场景"
+    "AI 创新生态、人才画像与 AI+ 场景",
+    "场景卡索引（概念，10项）",
+    "场景—空间—运营矩阵与TRL（概念）"
    ],
    "geojson_layers": [
     "geometry/site_boundary.geojson",
@@ -1091,7 +1105,9 @@
    ],
    "drawings": [
     "drawings/a3-booklet.pdf",
-    "drawings/a0-boards.pdf"
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a0-boards.en.pdf"
    ],
    "visual_sections": [
     "总览地图",
@@ -1101,9 +1117,12 @@
    "source_ids": [
     "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
     "DATA-SRC-AGENT-TASKBOOK-20260518",
-    "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
-    "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+    "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+    "GLOBAL-CASE-JURONG-2016",
+    "GLOBAL-CASE-KINGSX-2008",
+    "ASSET-FONT-NOTO-SANS-SC",
+    "ASSET-LOGO",
+    "ASSET-FIGURES"
    ],
    "assumption_ids": [
     "A-BOUNDARY-001",
@@ -1119,7 +1138,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "六类AI+场景：通勤助手、客流可视化与预测、无障碍AI导乘、共享单车智能调度、智慧灯杆、AI社区服务站，匿名聚合+人工复核。"
+   "evidence_summary_zh": "10张完整场景卡（落位空间/运营主体建议/数据边界/人工复核/离线替代/KPI/退出条件）；场景—空间—运营矩阵；TRL估计表（10项）；3项产业测试验证协议（测试条件/指标/准入/退出机制）。"
   },
   {
    "requirement_id": "agent.4",
@@ -1127,6 +1146,7 @@
    "mandatory": true,
    "report_sections": [
     "重点区域详细设计",
+    "公共空间策略、缝合轴、业态与地标体系（概念）",
     "蓝绿空间、公共空间与城市风貌"
    ],
    "geojson_layers": [
@@ -1148,7 +1168,9 @@
    ],
    "drawings": [
     "drawings/a3-booklet.pdf",
-    "drawings/a0-boards.pdf"
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a0-boards.en.pdf"
    ],
    "visual_sections": [
     "总览地图",
@@ -1158,9 +1180,12 @@
    "source_ids": [
     "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
     "DATA-SRC-AGENT-TASKBOOK-20260518",
-    "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
-    "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+    "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+    "GLOBAL-CASE-JURONG-2016",
+    "GLOBAL-CASE-KINGSX-2008",
+    "ASSET-FONT-NOTO-SANS-SC",
+    "ASSET-LOGO",
+    "ASSET-FIGURES"
    ],
    "assumption_ids": [
     "A-BOUNDARY-001",
@@ -1176,15 +1201,16 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "枢纽AI公共空间与三处创新节点：智核集散广场、AI出行服务大厅、智慧换乘走廊，含人工服务兜底窗口。"
+   "evidence_summary_zh": "三节点N1-N3索引图（500米半径重点区域，含比例尺/指北针/图例/PROVISIONAL章）；京张遗址公园公共空间分段策略；东西缝合（三条横向缝合联系）与南北贯通（慢行主轴）；大钟寺业态建议；三地标目录（对应landmark_count=3）；荣誉展示体系与模块化组件库（概念）。"
   },
   {
    "requirement_id": "agent.5",
    "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
    "mandatory": true,
    "report_sections": [
-    "设计依据与资料清单",
-    "风险、版权与合规说明"
+    "文化叙事、导视符号与国际传播（概念）",
+    "品牌命名、视觉识别与Logo（概念）",
+    "设计依据与资料清单"
    ],
    "geojson_layers": [
     "geometry/site_boundary.geojson",
@@ -1205,7 +1231,9 @@
    ],
    "drawings": [
     "drawings/a3-booklet.pdf",
-    "drawings/a0-boards.pdf"
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a0-boards.en.pdf"
    ],
    "visual_sections": [
     "总览地图",
@@ -1215,9 +1243,12 @@
    "source_ids": [
     "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
     "DATA-SRC-AGENT-TASKBOOK-20260518",
-    "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
-    "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+    "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+    "GLOBAL-CASE-JURONG-2016",
+    "GLOBAL-CASE-KINGSX-2008",
+    "ASSET-FONT-NOTO-SANS-SC",
+    "ASSET-LOGO",
+    "ASSET-FIGURES"
    ],
    "assumption_ids": [
     "A-BOUNDARY-001",
@@ -1233,14 +1264,16 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "学院底蕴+科技气质+烟火生活的融合叙事，知春路枢纽作为「智核」的城市精神表达。"
+   "evidence_summary_zh": "京张历史—中关村创新—AI新文化三幕空间叙事；三级导视与符号系统（N1-N3编号/无障碍符号/统一色板字体）；可直接评审的中英双语国际传播文案与主标语；品牌命名体系、VI规则与原创Logo资产。"
   },
   {
    "requirement_id": "agent.6",
    "title_zh": "一带全球AI创新活动体系与长期运营设计",
    "mandatory": true,
    "report_sections": [
-    "更新项目清单、实施政策与分期计划"
+    "年度活动品牌与长期运营（概念）",
+    "更新项目清单、实施政策与分期计划",
+    "产业测试验证与试点责任矩阵（概念）"
    ],
    "geojson_layers": [
     "geometry/site_boundary.geojson",
@@ -1261,7 +1294,9 @@
    ],
    "drawings": [
     "drawings/a3-booklet.pdf",
-    "drawings/a0-boards.pdf"
+    "drawings/a0-boards.pdf",
+    "drawings/a3-booklet.en.pdf",
+    "drawings/a0-boards.en.pdf"
    ],
    "visual_sections": [
     "总览地图",
@@ -1271,9 +1306,12 @@
    "source_ids": [
     "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
     "DATA-SRC-AGENT-TASKBOOK-20260518",
-    "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
-    "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+    "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+    "GLOBAL-CASE-JURONG-2016",
+    "GLOBAL-CASE-KINGSX-2008",
+    "ASSET-FONT-NOTO-SANS-SC",
+    "ASSET-LOGO",
+    "ASSET-FIGURES"
    ],
    "assumption_ids": [
     "A-BOUNDARY-001",
@@ -1289,7 +1327,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "枢纽活动体系：知春通勤周、AI出行开放日、智慧换乘月、站前广场夏季活动、绿廊慢骑日（概念）。"
+   "evidence_summary_zh": "5项年度活动品牌表（时间/载体/IP要素/公众参与方式，对应annual_program_count=5）；开发者社区、场景开放、公众体验、地标运营、人才/企业转化机制；试点责任矩阵（主体/依赖/数据/人工接管/投诉申诉/无障碍共创/周期/阈值/退出）。"
   }
  ]
 }
