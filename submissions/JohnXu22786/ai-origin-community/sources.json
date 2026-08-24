@@ -13,7 +13,8 @@
       "authority_level": "A0",
       "timeliness_level": "T0",
       "public_access_status": "public_local_snapshot",
-      "license_summary": "Official public announcement snapshot retained for reference and citation.",
+      "license": "public_information_attribution_only",
+      "license_summary": "Official public announcement snapshot retained for reference and citation. Reuse of page chrome, images or third-party editorial content not permitted.",
       "review_status": "approved",
       "usable_for_formal": "yes",
       "allowed_uses": [
@@ -40,7 +41,7 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。"
+      "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。公告官方范围口径：统筹研究范围约43.6平方公里、总体设计范围约11.4平方公里、重点区域范围约368.4公顷；本方案按评审统一口径将本包概念边界标注为统筹研究范围约11.4平方公里（provisional），并以公告官方口径作为复算对照说明，见正文三层范围章节。"
     },
     {
       "source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
@@ -54,6 +55,7 @@
       "authority_level": "CLEARED_USER_DOCUMENT",
       "timeliness_level": "T0",
       "public_access_status": "cleared_for_repo",
+      "license": "cleared_for_repo_attribution_only",
       "license_summary": "User provided this document for repository use and public agent-facing task alignment.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -98,6 +100,7 @@
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "public_information_attribution_only",
       "license_summary": "Official public standard/policy page snapshot retained for reference and citation.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -133,6 +136,7 @@
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "public_information_attribution_only",
       "license_summary": "Official public government page snapshot retained for reference and citation.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -166,6 +170,7 @@
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "public_information_attribution_only",
       "license_summary": "Official public government page snapshot retained for reference and citation.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -198,6 +203,7 @@
       "authority_level": "PROVISIONAL_REPOSITORY",
       "timeliness_level": "T0",
       "public_access_status": "provisional_repository",
+      "license": "provisional_repository_display_only",
       "license_summary": "Repository-maintained provisional geometry for intake testing and visualization only.",
       "review_status": "provisional",
       "usable_for_formal": "provisional_only",
@@ -246,6 +252,7 @@
       "authority_level": "A0",
       "timeliness_level": "T1",
       "public_access_status": "public_local_snapshot",
+      "license": "public_information_attribution_only",
       "license_summary": "Official public government text; attributed Markdown snapshot retained for reference. No reuse permission is inferred for page chrome, images or third-party editorial content; any reuse remains subject to official terms.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -283,6 +290,7 @@
       "authority_level": "A0",
       "timeliness_level": "T1",
       "public_access_status": "public_local_snapshot",
+      "license": "public_information_attribution_only",
       "license_summary": "Official public government text; attributed Markdown snapshot retained for reference. No reuse permission is inferred for page chrome, images or third-party editorial content; any reuse remains subject to official terms.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -317,7 +325,8 @@
       "authority_level": "SELF-DECLARED",
       "timeliness_level": "T0",
       "public_access_status": "cleared_for_repo",
-      "license_summary": "Original AI-generated design geometry, free for repository display.",
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "license_summary": "Original AI-generated design geometry, free for repository display under COMMUNITY-DISPLAY-ONLY terms (display, review, citation by organizer with attribution; not an approval basis).",
       "review_status": "self_reviewed",
       "usable_for_formal": "provisional_only",
       "allowed_uses": [
@@ -338,6 +347,464 @@
         "generation_method": "concept prompting + geometry program",
         "limitations": "low confidence conceptual envelopes"
       }
+    },
+    {
+      "source_id": "CASE-STATION-F-2017",
+      "title": "Station F startup campus, Paris (public reporting / company communications)",
+      "publisher": "Station F (company communications) and international press coverage",
+      "source_kind": "public_reference",
+      "url": "https://stationf.co",
+      "published_date": "2017-08-31",
+      "accessed_date": "2026-08-10",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_information_citation",
+      "license_summary": "Public company communications cited for case naming and general facts; no assets reused.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "real-world global case: name, city, year, operator, transferable mechanism in concept analogy"
+      ],
+      "prohibited_uses": [
+        "quantitative benchmark claims beyond cited public reporting",
+        "endorsement or affiliation claims"
+      ],
+      "topics": [
+        "global_case",
+        "innovation_campus",
+        "incubator_operations"
+      ],
+      "notes_zh": "巴黎 Station F，2017 年开放，运营主体 Station F S.A.S.，公开资料概述；可迁移机制（大型发布+孵化复合体运营动线）为参与方概念解读，非官方结论。"
+    },
+    {
+      "source_id": "CASE-ONE-NORTH-2001",
+      "title": "One-North research park, Singapore (public reporting / JTC corporate information)",
+      "publisher": "JTC Corporation (corporate information) and public reporting",
+      "source_kind": "public_reference",
+      "url": "https://www.jtc.gov.sg",
+      "published_date": "2001-10-01",
+      "accessed_date": "2026-08-10",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_information_citation",
+      "license_summary": "Public corporate information cited for case naming and general facts; no assets reused.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "real-world global case: name, city, year, operator, transferable mechanism in concept analogy"
+      ],
+      "prohibited_uses": [
+        "quantitative benchmark claims beyond cited public reporting",
+        "endorsement or affiliation claims"
+      ],
+      "topics": [
+        "global_case",
+        "research_park",
+        "industry_layering"
+      ],
+      "notes_zh": "新加坡 One-North，2001 年起由 JTC Corporation 开发运营，公开资料概述；可迁移机制（产业分层园区与测试床空间预留）为参与方概念解读。"
+    },
+    {
+      "source_id": "CASE-TORONTO-QUAYSIDE-2020",
+      "title": "Toronto Quayside / Sidewalk Labs smart district (project terminated 2020; public reporting)",
+      "publisher": "Waterfront Toronto (public communications) and public reporting",
+      "source_kind": "public_reference",
+      "url": "https://www.waterfrontoronto.ca",
+      "published_date": "2020-05-07",
+      "accessed_date": "2026-08-10",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_information_citation",
+      "license_summary": "Public reporting cited for case context; no assets reused.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "real-world global case: name, city, year, operators, data-governance and exit-mechanism lesson in concept analogy"
+      ],
+      "prohibited_uses": [
+        "claiming Waterfront Toronto or Sidewalk Labs endorsed this proposal",
+        "quantitative benchmark claims beyond cited public reporting"
+      ],
+      "topics": [
+        "global_case",
+        "data_governance",
+        "public_review",
+        "exit_mechanism"
+      ],
+      "notes_zh": "多伦多 Quayside 项目（Sidewalk Labs / Waterfront Toronto，2017 启动、2020 终止）为公开报道的失败/退出样本；可迁移机制（数据治理协议、公共利益审查、失败退出安排）为参与方概念解读，重点用于本方案的退出与放行条款设计。"
+    },
+    {
+      "source_id": "CASE-KINGS-CROSS-2008",
+      "title": "King's Cross Central regeneration, London (public reporting / developer communications)",
+      "publisher": "King's Cross Central Limited Partnership (KCCLP) / Argent communications and public reporting",
+      "source_kind": "public_reference",
+      "url": "https://www.kingscross.co.uk",
+      "published_date": "2008-01-01",
+      "accessed_date": "2026-08-10",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_information_citation",
+      "license_summary": "Public developer communications cited for case naming and general facts; no assets reused.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "real-world global case: name, city, year, operator, station-led regeneration mechanism in concept analogy"
+      ],
+      "prohibited_uses": [
+        "quantitative benchmark claims beyond cited public reporting",
+        "endorsement or affiliation claims"
+      ],
+      "topics": [
+        "global_case",
+        "station_area_regeneration",
+        "knowledge_quarter"
+      ],
+      "notes_zh": "伦敦 King's Cross Central，2008 年起由 Argent / KCCLP 主导的站城一体存量更新，公开资料概述；可迁移机制（站城缝合、校-企-城知识街区）为参与方概念解读。"
+    },
+    {
+      "source_id": "CASE-22B-BARCELONA-2000",
+      "title": "22@ Barcelona innovation district (public reporting / city council communications)",
+      "publisher": "Barcelona City Council (public communications) and public reporting",
+      "source_kind": "public_reference",
+      "url": "https://www.barcelona.cat",
+      "published_date": "2000-01-01",
+      "accessed_date": "2026-08-10",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_information_citation",
+      "license_summary": "Public city communications cited for case naming and general facts; no assets reused.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "real-world global case: name, city, year, operator, innovation-district mechanism in concept analogy"
+      ],
+      "prohibited_uses": [
+        "quantitative benchmark claims beyond cited public reporting",
+        "endorsement or affiliation claims"
+      ],
+      "topics": [
+        "global_case",
+        "innovation_district",
+        "public_space",
+        "maker_culture"
+      ],
+      "notes_zh": "巴塞罗那 22@ 创新区，2000 年由市政府推动，公开资料概述；可迁移机制（创新区产业转型、公共空间与 maker 实验室网络）为参与方概念解读。"
+    },
+    {
+      "source_id": "CASE-CYBERPORT-2004",
+      "title": "Hong Kong Cyberport (public reporting / corporate communications)",
+      "publisher": "Hong Kong Cyberport Management Company Limited (public communications) and public reporting",
+      "source_kind": "public_reference",
+      "url": "https://www.cyberport.hk",
+      "published_date": "2004-01-01",
+      "accessed_date": "2026-08-10",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_information_citation",
+      "license_summary": "Public corporate communications cited for case naming and general facts; no assets reused.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "real-world global case: name, city, year, operator, government-platform mechanism in concept analogy"
+      ],
+      "prohibited_uses": [
+        "quantitative benchmark claims beyond cited public reporting",
+        "endorsement or affiliation claims"
+      ],
+      "topics": [
+        "global_case",
+        "government_platform",
+        "incubation",
+        "event_ip"
+      ],
+      "notes_zh": "香港数码港，2004 年启用，香港数码港管理有限公司运营，公开资料概述；可迁移机制（政府平台+孵化+基金+年度活动IP组合）为参与方概念解读。"
+    },
+    {
+      "source_id": "CASE-ZHANGJIANG-1992",
+      "title": "Zhangjiang Hi-Tech Park, Shanghai (public reporting / company communications)",
+      "publisher": "Shanghai Zhangjiang Hi-Tech Park Development Corporation (public communications) and public reporting",
+      "source_kind": "public_reference",
+      "url": "http://www.zjpark.com",
+      "published_date": "1992-07-28",
+      "accessed_date": "2026-08-10",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_information_citation",
+      "license_summary": "Public communications cited for case naming and general facts; no assets reused.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "real-world global case: name, city, year, operator, park-city talent-housing mechanism in concept analogy"
+      ],
+      "prohibited_uses": [
+        "quantitative benchmark claims beyond cited public reporting",
+        "endorsement or affiliation claims"
+      ],
+      "topics": [
+        "global_case",
+        "park_city",
+        "talent_housing",
+        "industry_cluster"
+      ],
+      "notes_zh": "上海张江高科技园区，1992 年设立，上海张江（集团）有限公司统筹开发，公开资料概述；可迁移机制（园城融合、人才公寓、产业集群平台联动）为参与方概念解读。"
+    },
+    {
+      "source_id": "ASSET-FONT-NOTOSANSSC-OFL",
+      "title": "Noto Sans SC 中文字体（子集嵌入用途的许可与权利登记）",
+      "publisher": "Google LLC / Adobe Systems Incorporated (Noto project)",
+      "source_kind": "asset_ledger",
+      "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+      "published_date": "2022-01-01",
+      "accessed_date": "2026-08-24",
+      "file_type": "font",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "SIL OPEN FONT LICENSE Version 1.1 (OFL-1.1)",
+      "license_summary": "OFL-1.1 permits embedding in documents and applications without royalty; font itself may not be sold standalone; retains copyright notice and license terms.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "subsetting and embedding the font inside report/proposal.html, report/proposal.en.html, visual/index.html, visual/index.en.html for offline Chinese rendering"
+      ],
+      "prohibited_uses": [
+        "selling the font file standalone",
+        "removing the OFL copyright and license notice from redistributed font data"
+      ],
+      "topics": [
+        "asset_ledger",
+        "font",
+        "license"
+      ],
+      "notes_zh": "本包以 fontTools 对系统安装的 NotoSansSC-VF 按实际使用字形子集化并以 base64 @font-face 嵌入 HTML，OFL-1.1 允许文档嵌入；署名：Noto is a trademark of Google LLC；字体版权归 Google LLC / Adobe。嵌入位置与许可声明见各 HTML 头部。"
+    },
+    {
+      "source_id": "ASSET-LOGO-ORIGIN",
+      "title": "原点公社 AI Origin Community 概念 Logo（参与方原创几何图形）",
+      "publisher": "JohnXu22786 (agent-oc-haidian)",
+      "source_kind": "asset_ledger",
+      "url": "assets/figures/logo.png",
+      "published_date": "2026-08-24",
+      "accessed_date": "2026-08-24",
+      "file_type": "png",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "license_summary": "Participant-generated original geometric mark. COMMUNITY-DISPLAY-ONLY: organizer may reuse in review/gallery/citation with attribution; not an official identity or trademark; no commercial sub-licensing.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "display inside this package and in organizer review/gallery contexts with attribution"
+      ],
+      "prohibited_uses": [
+        "presenting as an official government or organizer brand",
+        "trademark registration by third parties",
+        "commercial licensing without participant consent"
+      ],
+      "topics": [
+        "asset_ledger",
+        "logo",
+        "brand"
+      ],
+      "notes_zh": "设计意图：圆环=社区原点，人字形=百年京张人字形铁路与詹天佑精神，交汇圆点=AI技术原点；由 matplotlib 程序化生成（无第三方素材）；属概念标识，不构成官方授权。"
+    },
+    {
+      "source_id": "ASSET-FIGURES-AI-GEN",
+      "title": "全部图件（assets/figures/*.png，参与方 matplotlib 生成）",
+      "publisher": "JohnXu22786 (agent-oc-haidian)",
+      "source_kind": "asset_ledger",
+      "url": "assets/figures/",
+      "published_date": "2026-08-24",
+      "accessed_date": "2026-08-24",
+      "file_type": "png",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "license_summary": "Participant-generated diagrams (matplotlib, Noto Sans SC font under OFL-1.1). COMMUNITY-DISPLAY-ONLY for organizer review/gallery with attribution; provisional concept diagrams only.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "display inside this package and in organizer review/gallery contexts with attribution"
+      ],
+      "prohibited_uses": [
+        "presenting figures as official planning graphics",
+        "removing PROVISIONAL labels",
+        "commercial sub-licensing without participant consent"
+      ],
+      "topics": [
+        "asset_ledger",
+        "figures",
+        "diagrams"
+      ],
+      "notes_zh": "图件含总体图、用地结构、核心指标证据、慢行蓝绿、重点区域、三区两翼机制图及各英文对应件；均基于本包 provisional 几何与 metrics.json 机器复算生成，全部标注 PROVISIONAL/概念。"
+    },
+    {
+      "source_id": "ASSET-GEOMETRY-MAPS",
+      "title": "地图与几何（geometry/*.geojson，provisional 概念几何）",
+      "publisher": "JohnXu22786 (agent-oc-haidian) 基于仓库 provisional_boundaries 概念示意",
+      "source_kind": "asset_ledger",
+      "url": "geometry/",
+      "published_date": "2026-08-24",
+      "accessed_date": "2026-08-24",
+      "file_type": "geojson",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "license_summary": "Provisional concept geometry derived from repository provisional_boundaries (provisional_repository_display_only) plus participant design envelopes; not official redlines; display-only.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "provisional_only",
+      "allowed_uses": [
+        "concept visualization within this package",
+        "machine validation and intake checks"
+      ],
+      "prohibited_uses": [
+        "official redline or statutory control basis",
+        "precise-area or approval basis",
+        "redistribution as authoritative map data"
+      ],
+      "topics": [
+        "asset_ledger",
+        "geometry",
+        "maps"
+      ],
+      "notes_zh": "坐标 EPSG:4548 投影计算；所有图面已标注 PROVISIONAL；官方几何发布后必须整体替换复算。"
+    },
+    {
+      "source_id": "ASSET-HTML-PDFS",
+      "title": "HTML 报告与 PDF 图册（report/、visual/、drawings/，参与方生成）",
+      "publisher": "JohnXu22786 (agent-oc-haidian)",
+      "source_kind": "asset_ledger",
+      "url": "report/",
+      "published_date": "2026-08-24",
+      "accessed_date": "2026-08-24",
+      "file_type": "document",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "license_summary": "Participant-generated HTML/PDF deliverables; COMMUNITY-DISPLAY-ONLY with attribution; embedded subset font under OFL-1.1.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "review, display, archive by organizer with attribution"
+      ],
+      "prohibited_uses": [
+        "presenting as approved planning documents",
+        "commercial redistribution without participant consent"
+      ],
+      "topics": [
+        "asset_ledger",
+        "html",
+        "pdf",
+        "drawings"
+      ],
+      "notes_zh": "report/proposal.html 由官方渲染脚本 render_proposal_html.py 生成；报告/图册/可视化全部为参与方成果，英文件为对应翻译件（语义以中文为准）。"
+    },
+    {
+      "source_id": "ASSET-CODE-DEPS",
+      "title": "代码与依赖声明（Python 标准库、matplotlib、pillow、fontTools、pyproj、shapely 等）",
+      "publisher": "Open-source projects (PSF, matplotlib BSD-3, pillow HPND, fontTools MIT, pyproj MIT, shapely BSD-3, numpy BSD-3)",
+      "source_kind": "asset_ledger",
+      "url": "n/a (build-time dependencies, not shipped in package)",
+      "published_date": "2026-08-24",
+      "accessed_date": "2026-08-24",
+      "file_type": "code",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "per-component open-source licenses (BSD/MIT/HPND/PSF)",
+      "license_summary": "Both figure/PDF generation and validation use open-source Python libraries; the package embeds no third-party runtime code; licenses apply to the libraries themselves, which are not redistributed here.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "generating package artifacts and validation reports"
+      ],
+      "prohibited_uses": [
+        "shipping the dependency libraries as package assets"
+      ],
+      "topics": [
+        "asset_ledger",
+        "code",
+        "dependencies",
+        "license"
+      ],
+      "notes_zh": "本包不含第三方运行时代码；生成与校验脚本在评审环境中按各自开源许可使用。"
+    },
+    {
+      "source_id": "ASSET-GEN-TOOL",
+      "title": "生成工具披露（OpenCode CLI / DeepSeek 推理模型等 AI 辅助工具）",
+      "publisher": "OpenCode / DeepSeek platforms",
+      "source_kind": "asset_ledger",
+      "url": "n/a (platform terms apply)",
+      "published_date": "2026-08-24",
+      "accessed_date": "2026-08-24",
+      "file_type": "text",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "platform terms of service (see agent.json disclosure)",
+      "license_summary": "AI-assisted generation per platform terms; full model and session disclosure in agent.json; output rights per participant and platform agreement.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "claiming AI-assisted authorship per agent.json disclosure"
+      ],
+      "prohibited_uses": [
+        "misrepresenting AI provenance",
+        "claiming endorsement by any model/platform provider"
+      ],
+      "topics": [
+        "asset_ledger",
+        "ai_disclosure",
+        "generation_tool"
+      ],
+      "notes_zh": "参与方对最终成果内容负责；AI 使用已按征集规则在 agent.json 与正文合规说明中披露。"
+    },
+    {
+      "source_id": "ASSET-POLICY-SNAPSHOTS",
+      "title": "政策快照（官方公开文件本地快照，仅供引用与离线检索）",
+      "publisher": "各政策发布机关（见各 official 条目）",
+      "source_kind": "asset_ledger",
+      "url": "brief/site-package/standards/references/",
+      "published_date": "2026-06-03",
+      "accessed_date": "2026-08-09",
+      "file_type": "markdown",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "public_local_snapshot",
+      "license": "public_information_attribution_only",
+      "license_summary": "Official documents retained as offline retrieval snapshots; formal citation still points to the official publisher page; no reuse of page chrome, images or third-party editorial content.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "offline retrieval and citation with attribution to official publishers"
+      ],
+      "prohibited_uses": [
+        "redistribution as collected works",
+        "claiming snapshot pages are official reproductions"
+      ],
+      "topics": [
+        "asset_ledger",
+        "policy_snapshots"
+      ],
+      "notes_zh": "快照仅供参与方离线检索与引用核对；正式引用一律回指官方发布页。"
     }
   ]
 }

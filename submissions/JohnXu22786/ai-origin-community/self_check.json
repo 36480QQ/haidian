@@ -10,20 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/JohnXu22786/ai-origin-community/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/JohnXu22786/ai-origin-community/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-origin-community/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
+        "submissions/JohnXu22786/ai-origin-community/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/JohnXu22786/ai-origin-community/proposal.md"
@@ -33,16 +20,26 @@
       ],
       "changed_files": [
         "submissions/JohnXu22786/ai-origin-community/agent.json",
+        "submissions/JohnXu22786/ai-origin-community/assets/figures/key-areas.en.png",
         "submissions/JohnXu22786/ai-origin-community/assets/figures/key-areas.png",
+        "submissions/JohnXu22786/ai-origin-community/assets/figures/land-use-structure.en.png",
         "submissions/JohnXu22786/ai-origin-community/assets/figures/land-use-structure.png",
+        "submissions/JohnXu22786/ai-origin-community/assets/figures/logo.png",
+        "submissions/JohnXu22786/ai-origin-community/assets/figures/mechanism-diagram.en.png",
+        "submissions/JohnXu22786/ai-origin-community/assets/figures/mechanism-diagram.png",
+        "submissions/JohnXu22786/ai-origin-community/assets/figures/metrics-evidence.en.png",
         "submissions/JohnXu22786/ai-origin-community/assets/figures/metrics-evidence.png",
+        "submissions/JohnXu22786/ai-origin-community/assets/figures/mobility-bluegreen.en.png",
         "submissions/JohnXu22786/ai-origin-community/assets/figures/mobility-bluegreen.png",
+        "submissions/JohnXu22786/ai-origin-community/assets/figures/site-overview.en.png",
         "submissions/JohnXu22786/ai-origin-community/assets/figures/site-overview.png",
         "submissions/JohnXu22786/ai-origin-community/assumptions.json",
         "submissions/JohnXu22786/ai-origin-community/changelog.md",
         "submissions/JohnXu22786/ai-origin-community/compliance_matrix.json",
         "submissions/JohnXu22786/ai-origin-community/design_depth_matrix.json",
+        "submissions/JohnXu22786/ai-origin-community/drawings/a0-boards.en.pdf",
         "submissions/JohnXu22786/ai-origin-community/drawings/a0-boards.pdf",
+        "submissions/JohnXu22786/ai-origin-community/drawings/a3-booklet.en.pdf",
         "submissions/JohnXu22786/ai-origin-community/drawings/a3-booklet.pdf",
         "submissions/JohnXu22786/ai-origin-community/geometry/buildings.geojson",
         "submissions/JohnXu22786/ai-origin-community/geometry/constraints.geojson",
@@ -59,16 +56,18 @@
         "submissions/JohnXu22786/ai-origin-community/proposal.md",
         "submissions/JohnXu22786/ai-origin-community/report/copyright_statement.md",
         "submissions/JohnXu22786/ai-origin-community/report/narrative.md",
+        "submissions/JohnXu22786/ai-origin-community/report/proposal.en.html",
         "submissions/JohnXu22786/ai-origin-community/report/proposal.html",
         "submissions/JohnXu22786/ai-origin-community/self_check.json",
         "submissions/JohnXu22786/ai-origin-community/sources.json",
         "submissions/JohnXu22786/ai-origin-community/standard_matrix.json",
+        "submissions/JohnXu22786/ai-origin-community/visual/index.en.html",
         "submissions/JohnXu22786/ai-origin-community/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/JohnXu22786/ai-origin-community": "formal"
       },
-      "total_bytes": 1058777,
+      "total_bytes": 4187056,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -141,16 +140,16 @@
       "issues": [],
       "summary": {
         "standard_matrix_items": 5,
-        "design_depth_items": 15,
+        "design_depth_items": 21,
         "known_metric_refs_required": 17,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 8,
+          "source": 9,
           "standard": 0,
           "depth": 0,
           "data": 1,
-          "metric": 2
+          "metric": 8
         }
       }
     },
@@ -167,21 +166,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-origin-community/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
-  ],
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
