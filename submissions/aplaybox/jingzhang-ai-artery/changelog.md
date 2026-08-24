@@ -16,6 +16,24 @@ P9 评审 75.0 → 64.0 跌 11 分，原因定位为 P9 task 1/2/3 三项**修�
   - changelog.md 中历史记录（v0.1 / v2.4 / v2.9 章节）的 14/R-12 是历史事实，保留不动
 - **遗留**：评审 P1 三项（5 张核心图重做、空间特异性深化、公众否决与荣誉墙机制重构）与 P2 两项（试点 KPI 公式化、双语人工抽查签核）仍未做，留到 P11。预期本轮（P10）恢复任务书相关性 4→5、风险合规 3→4，分数区间 70-75；若评审仍以"图件表达"或"实施接口"扣分，说明文本层已无修复空间，剩余扣分必须靠图件层与空间层动作才能收回。
 
+## v2.11 — 2026-08-24 P10 评审 68.0 反馈修复（湿地/商业服务业用地 + standard_matrix 章节精化）
+
+P10 评审 75→64→68 修复，仍未回到 75。本轮按评审原话定位 3 处新问题：①代码 05 在正文称湿地但 metrics 与图件称商业服务业用地；②report HTML 中英两版用地数量分布与正文/JSON 不一致（HTML 写 4 块科研 + 2 块居住 + 缺道路与留白，正文/JSON 是 3 块科研 + 1 块住宅 + 含道路与留白）；③standard_matrix 把 9 项法律/标准全部只映射到 #设计依据与资料清单 章节过于粗糙，被评审说成"多项法律错误映射到征集公告"。
+
+- **task1 — 湿地 vs 商业服务业用地 label 统一**：按 MNR《国土空间调查、规划、用途管制用地用海分类指南》项目子集 `brief/site-package/enums/land_use_codes.json`，code 05 = 湿地。本轮把 metrics.json#land_use_breakdown[code=05].label_zh 从「商业服务业用地」改为「湿地」，land_use.geojson 中 2 处 `land_use_label_zh="商业服务业用地"` 改为「湿地」（同步 en label Wetland）。proposal.md / proposal.en.md 正文已正确使用「湿地/wetland」，本轮不改。
+- **task2 — report HTML 用地数量分布与正文对齐**：原 report/proposal.html 与 proposal.en.html 写「4 块科研 + 2 块居住 + 2 块商业服务业 + 1 块文化 + 1 块教育 + 2 块公园绿地」（仅 6 类 12 块），与正文「3 块科研 + 1 块城镇住宅 + 2 块湿地 + 1 块文化 + 1 块教育 + 2 块公园绿地 + 1 块城镇村道路 + 1 块留白」（8 类 12 块）不一致，且与 metrics.json/land_use.geojson 完全不符。本轮把 HTML 中英两版改为正文一致的 8 类 12 块分布，并加注释说明 code 05 = 湿地的 MNR 语义与正文/assumptions/metrics/geojson 完全一致。
+- **task3 — standard_matrix proposal_sections 精细化**：原 9 项 standard 全部只映射到 `proposal.md#设计依据与资料清单`，被评审指出"多项法律错误映射到征集公告"。本轮按各法律/标准在 proposal.md 中的实际引用章节精化：
+  - PROJECT-OFFICIAL-ANNOUNCEMENT → 4 节（设计依据 + 三层范围 + 重点区域 + 更新项目清单）
+  - PROJECT-AGENT-OPEN-CALL-TASKBOOK → 5 节（设计依据 + AI 场景 + 公共利益 + 北纬社区 + 更新项目清单）
+  - MOHURD-URBAN-DESIGN-MEASURES → 3 节（总体设计 + 重点区域 + 蓝绿空间）
+  - MOHURD-CONTROL-DETAILED-PLANNING → 3 节（用地拆改留 + 指标体系 + 风险合规）
+  - MNR-LAND-USE-CLASSIFICATION-GUIDE → 2 节（用地拆改留 + 指标体系）
+  - MOHURD-ARCH-DESIGN-DEPTH-2016 → 2 节（更新项目清单 + 阶段门 KPI）
+  - GENERATIVE-AI-INTERIM-MEASURES → 3 节（AI 场景 + 风险合规 + 双语复核）
+  - BARRIER-FREE-ENVIRONMENT-LAW → 2 节（公共利益 + 蓝绿空间）
+  - ELDERLY-SMART-TECH-PLAN-2020-45 → 2 节（公共利益 + AI 场景）
+- **遗留**：评审 P1 三项（5 张核心图重做、空间特异性深化、公众否决与荣誉墙机制重构）与 P2 两项（试点 KPI 公式化、双语人工抽查签核）仍未做，留到 P12。预期本轮恢复任务书相关性 4→5、风险合规 3→4，分数区间 70-75；若评审仍扣分，必须靠图件层 + 空间层动作。
+
 ## v0.1 - 2026-08-15
 
 *首版提交*
