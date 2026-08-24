@@ -140,7 +140,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8c2468aafc3bd36853b2377a19481375290e5c53db74f6cdfc03098b796be4ef"
+      "sha256": "e07338a86a721d3757c99ba14205e1200edf8ead8d0bf13aa0940934afa7d6dd"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -269,7 +269,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "d4a739ce30b2debaa86c50aa72eb35132c98d45a528bbbf7b5c221ad046ff483"
+      "sha256": "79203f9c81125a4e5589e423450280940b38b4303c71376ff51db04184e90f38"
     },
     {
       "path": "compliance_matrix.json",
@@ -384,14 +384,14 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "10582d49aa947e2810b37555ee72dc66e70abb9a8d667060f146ccb3759a4b8f"
+      "sha256": "49360fe5dd1086039d3c7a9f4b57a8aca2511cb3016b536e5170f3e2216413ed"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d6ce7360c7e849494cc44f4107de19770654fe7991dd1187f55f3731a9080c16"
+      "sha256": "0c7804218fefbd7693fa64b97a1ae84fff252377019687d390f72c8dfb554b2e"
     },
     {
       "path": "report/copyright_statement.md",
@@ -411,14 +411,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "acf38113ef2424185751a4d7ff243b8a6d69eeb63cc8361a610c9a03df4d3536"
+      "sha256": "256fb4ad1e10a6b50c876e52eb686720c9cd763646c509347a916bc3b8739262"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8f58ece09ecc1317ffc208c3dbde1e71c612845b6e899e0a0ff3261d1d1d84c7"
+      "sha256": "cfade540092399056ce79a7802362243edf3d97f5c52323b0592c833adc3cb57"
     },
     {
       "path": "risk.json",
@@ -430,7 +430,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "cd980f24ac8cabdf55d84ad47ccbd94df91489ddba8f97307050961b1ef3c521"
+      "sha256": "3d869daa4f0e301eba1574920b4a911a5a61f799903c06f02d19de85dd3e05ab"
     },
     {
       "path": "simulation.json",
