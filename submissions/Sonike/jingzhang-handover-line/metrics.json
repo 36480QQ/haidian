@@ -973,6 +973,121 @@
       ],
       "verification": "没有场地授权、角色指派或真实使用者参与，本轮未进行任何现场演练。"
     },
+    "no_ai_equivalent_scenario_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/public-service-equivalence-contract.json",
+        "visual/assets/governance/shift-ledger-suite.json",
+        "simulation.json"
+      ],
+      "formula": "count(scenarios with a named human_service_floor, device_free_access=true and a no-AI base route that exists before the smart layer)",
+      "confidence": "low",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "metric_kind": "design_target",
+      "verification": "合同把 SCN-01 至 SCN-12 逐一绑定到 simulation.json 的人工兜底和交接账的人力底线；只证明设计路线完整，不证明现场可用。"
+    },
+    "no_ai_equivalent_service_target_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/governance/public-service-equivalence-contract.json",
+        "visual/assets/governance/public-service-equivalence-audit.js"
+      ],
+      "formula": "scenarios_with_no_ai_base_route / all_scenarios = 12 / 12",
+      "confidence": "low",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "metric_kind": "design_target",
+      "verification": "E2 设计目标覆盖率；同一核心结果、同队列优先级、零额外费用和基础安全信息等价仍须由授权后的真实任务验证。"
+    },
+    "algorithm_refusal_no_penalty_scenario_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/public-service-equivalence-contract.json",
+        "visual/assets/governance/shift-ledger-suite.json"
+      ],
+      "formula": "count(shift ledgers whose human_service_floor prohibits a lower basic service level after refusing the smart service)",
+      "confidence": "low",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "metric_kind": "design_target",
+      "verification": "十二条交接账逐条写明“拒绝智能服务不得降低该场景的基本服务水平”；真实队列、费用、结果与安全信息同等性尚未观察。"
+    },
+    "accessibility_requirement_fixture_task_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/public-service-equivalence-contract.json"
+      ],
+      "formula": "count(accessibility requirement fixtures: nonvisual, keyboard/no pointer, low/colour vision, reduced mobility, older/cognitive load, multilingual, no device, algorithm/data refusal)",
+      "confidence": "low",
+      "assumptions": [
+        "A-CONTRAST-001",
+        "A-OPERATIONS-001"
+      ],
+      "metric_kind": "design_requirement_fixture",
+      "verification": "八类任务各带两条路线、至少三项设计要件、至少两项待采现场证据、关闭智能层条件，并显式保持 observed_user_count=0、pass_claimed=false。"
+    },
+    "accessibility_requirement_fixture_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/governance/public-service-equivalence-contract.json",
+        "visual/assets/governance/public-service-equivalence-audit.js"
+      ],
+      "formula": "valid_accessibility_requirement_fixtures / required_fixtures = 8 / 8",
+      "confidence": "low",
+      "assumptions": [
+        "A-CONTRAST-001",
+        "A-OPERATIONS-001"
+      ],
+      "metric_kind": "synthetic_contract_test",
+      "verification": "覆盖率只量设计需求字段与停止条件是否齐备，不量真实用户完成率、时间、求助、绕行或满意度。"
+    },
+    "real_user_accessibility_observation_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/public-service-equivalence-contract.json",
+        "visual/assets/governance/figure-contrast-report.json"
+      ],
+      "formula": "sum(observed real participants across the eight accessibility tasks)",
+      "confidence": "high",
+      "assumptions": [
+        "A-CONTRAST-001",
+        "A-OPERATIONS-001"
+      ],
+      "metric_kind": "observed_count",
+      "verification": "当前没有任何真实参与者记录；0 是证据边界，不是缺失值，也不得被解释为失败率为零。"
+    },
+    "real_user_accessibility_pass_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/public-service-equivalence-contract.json"
+      ],
+      "formula": "count(real-user accessibility tasks with an observed pass record)",
+      "confidence": "high",
+      "assumptions": [
+        "A-CONTRAST-001",
+        "A-OPERATIONS-001"
+      ],
+      "metric_kind": "observed_count",
+      "verification": "真实观察人数为 0，因此真实通过记录也保持 0；设计夹具 8/8 不得计入本指标。"
+    },
     "handover_to_service_days": {
       "status": "unknown",
       "value": null,

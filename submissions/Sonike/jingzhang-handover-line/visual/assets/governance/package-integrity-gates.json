@@ -217,7 +217,7 @@
       "statement_en": "All four HTML files must open offline and render completely in a clean browser with no system CJK font.",
       "checks": "visual/index[.en].html、report/proposal[.en].html",
       "decision_rule_zh": "全文不得出现指向 http(s) 的 src / href 资源引用；四页须加载包内哈希绑定的 CJK WOFF2，中文 body 以 JZHandoverCJK 为首选，交互页 24 类等宽标签须显式把该字体列在 generic monospace 之前，且不得使用无效的 `font: … inherit` shorthand。",
-      "current_result": "四个 HTML 的外部 http(s) 资源引用数 = 0；251,392 字节 WOFF2 哈希、OFL、1,511 组可见字符全部闭合；交互页 24/24 类等宽标签显式回退 JZHandoverCJK；评审同参数 1440×1600 Chrome 截图无缺字",
+      "current_result": "四个 HTML 的外部 http(s) 资源引用数 = 0；256,296 字节 WOFF2 哈希、OFL、1,540 组可见字符全部闭合；交互页 24/24 类等宽标签显式回退 JZHandoverCJK；评审同参数 1440×1600 Chrome 截图无缺字",
       "caught_real_defects": [
         {
           "when": "2026-08-23 88 分评审",

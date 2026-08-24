@@ -75,25 +75,25 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "600125cfe10e66ab8c4470209353f49b8798f18a0999717ba3e80141488387ca"
+      "sha256": "8bf5dc7cc8a0c4b888e6c0a8dee3e538682d036118995b62e3a2806bc846a60b"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "9799e4b7add9aa6eb85ed19e3fa1da987ac13be03d3b09e4e188feda163d46e9"
+      "sha256": "2dfdffd22dc0840a143cb1010ecaf858bff5897e71d7a851ca5d2beb4888bf08"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "c279da3557923cd49c87f1adff19d5c61c08740340a76ad64b0a49e8c8224259"
+      "sha256": "1e28be60d7c2bbd8b8c61bbd86591b7cda382fdd87738809680a5cb3b9b8f649"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "6783841e37b2a8cbf6be669438f38e7e7e5b3d84e74dcd77129c7aab30ec60d8"
+      "sha256": "20c44523699a7225ae967cd1daaa7d864b8bd57f8b481244cca1461aa7ee002b"
     },
     {
       "path": "simulation.json",
@@ -105,25 +105,25 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "45e14225cfaea4ad75dd9afe37d30a610f4bc0552651aba99f28a432bbbb1f4f"
+      "sha256": "0ae41ccb39b3a12e72ec4d0e61700a1bf09fdefd793a1e74890de075468ef89b"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9c5c47b1baea67c5f2c66298c6c52494055945dd8148548e6f1670debf03c1e9"
+      "sha256": "f16096f9df3f212ee03c3899141221e1108375ca87d8a0489c494d9727021eb2"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "85d44ef30307a342e852021058defd59eec318f137b2224f54ce7383678cc149"
+      "sha256": "73eedeb524f2bd5728dd014386f847a9f398b50013776d038b770fdeaeb1e8a1"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "610b0fc0d1d677233f30d7188cc3c6d5b2c2e7b0f2dc3b9f5a9d9af1f3fc83b7"
+      "sha256": "fee76c8f969e5b78a27931cd6a62d3ecf42974cb387722f78e7d0c07ac5fc665"
     },
     {
       "path": "design_depth_matrix.json",
@@ -136,19 +136,19 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bc97c662e4bea06df575a2c367562ce9ff63431b16bf131a34d0e0309286d230"
+      "sha256": "3878a3b26ee4555e62c3efd10a3ab780d1c4a84fa4b97bf9cf2a7fe19deda7bd"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "8274933875f1971ae55dc077c8253fc4ccee5b11215f24378c29c5586a84e68f"
+      "sha256": "dbfc59974ac542a4daa8b467ad889171238c52c280b92b09c4e604580b30df71"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "5b8c180c60dccd7a2fd9dddffdf9822c7323390987e4d3dae13f40f9611c6ace"
+      "sha256": "4312b17e46eca45861645339be9f3a67d04fd0a5875b1c9b4c23b20738592571"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -169,7 +169,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "d50071db65a3373062144c3aa2c05ab4d719cf69fe53bfe96cdca1548f1b2a8d"
+      "sha256": "a8d8a0f2be009679509db58b7845a70d0fe0b671ba3677d071f72a3dc91f04f1"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -266,7 +266,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "72f3839460b99de1d2429434258dd49195c7b6d016329d7ec7d0978eeb576e0c"
+      "sha256": "5526c305a547dfa30b34ff41bf7c71639c0ff0f90fcba112abfe1c8a5e7b8abf"
     },
     {
       "path": "report/proposal.en.html",
@@ -274,7 +274,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e04a232b8de4bd143eac92d35b72e22593eafd67db2df9c41e66a6d5a6048859"
+      "sha256": "a0338a9b323d8bebb4c8d3baedf50a3a16964f643cf3dc91c124a970500bf98b"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -298,7 +298,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "42650718691786e445f3c17684f92d07cf750ad06507b99a66e5d463d0ecc5fd"
+      "sha256": "e0d083ad2b884cf4e9ca5412db25c339559310b7549340cc98099d55032de7cb"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -405,7 +405,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "7328d8a0d2ec036796966e92be7f15ee136fdc85caeaf7ba65171ae0169fc635"
+      "sha256": "3cb6f6af6c7fe3e120da09d4ca0da4645b95358e37403bfd799ad94730d699a6"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -489,21 +489,21 @@
       "path": "visual/assets/governance/claims-audit.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "600b5169816c9295fd6940bc024100480e381e9e2471a591c9ed0227941f7107",
+      "sha256": "acd307ab35ebcc09d57d5febf2b6460d3c4574f8bd058b0e1dbb2bbed8416e59",
       "title_zh": "正文数值声明审计器",
       "title_en": "Prose claim auditor",
-      "description_zh": "只读、离线、零网络依赖的 67 项声明审计：复算指标、几何、二十单元、断面、布局对照、矩阵引用、来源深度、许可一致性、PDF 文字层、HTML 包内 CJK 字体、全载体 v2.0 可见版本，以及七类用地在六个载体中的非颜色纹理冗余。全部一致退出 0，任一回归退出 1。",
-      "description_en": "A read-only, offline claim auditor with 67 checks across metrics, geometry, the twenty cells, sections, layout comparison, matrix references, source depth, licence consistency, PDF text layers, local CJK webfonts, visible v2.0 identity, and the seven non-colour land-use patterns across six carriers. All matches exit 0; any regression exits 1."
+      "description_zh": "只读、离线、零网络依赖的 68 项声明审计：复算指标、几何、二十单元、断面、布局对照、矩阵引用、来源深度、许可一致性、PDF 文字层、HTML 包内 CJK 字体、全载体 v2.0 可见版本、七类用地在六个载体中的非颜色纹理冗余，以及十二场景无 AI 等价路线与八类无障碍需求夹具。全部一致退出 0，任一回归退出 1。",
+      "description_en": "A read-only, offline claim auditor with 68 checks across metrics, geometry, the twenty cells, sections, layout comparison, matrix references, source depth, licence consistency, PDF text layers, local CJK webfonts, visible v2.0 identity, seven non-colour land-use patterns across six carriers, and the twelve-scenario no-AI equivalence routes with eight accessibility requirement fixtures. All matches exit 0; any regression exits 1."
     },
     {
       "path": "visual/assets/governance/audit-selftest.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "049a5464d1c7881498934b3a70dcc9967ea1cdd96e8705f7400624564397ce88",
+      "sha256": "8bceeaa19bedfaceedd232cfe7b48b4549e1469254f8a8455b82a9219cb6df08",
       "title_zh": "自检脚本的回归测试",
       "title_en": "Regression test for the self-check scripts",
-      "description_zh": "对四条审计链做 48 例回归测试：2 例正向锁定 67 项声明、A0 内嵌图 4/4 像素一致、12 账、96 规则与 48 断言；46 例阴性逐一注入已知缺陷并要求对应检查失败，最新一例让两组近似用地色重新共用同一种纹理。注入只写系统临时目录，不改投稿包。",
-      "description_en": "A 48-case regression test across four audit chains: two positive cases lock 67 claim checks, 4/4 pixel-identical embedded A0 figures, 12 ledgers, 96 rules and 48 assertions; 46 negative cases inject known defects one by one, including a duplicated texture for two confusable land-use colours. Mutations stay in the system temporary directory."
+      "description_zh": "对五条审计链做 49 例回归测试：2 例正向锁定 68 项声明、A0 内嵌图 4/4 像素一致、12 账、96 规则、48 断言、12/12 无 AI 路线与 8/8 无障碍需求夹具；47 例阴性逐一注入已知缺陷并要求对应检查失败，最新一例删除拒绝算法／数据需求夹具。注入只写系统临时目录，不改投稿包。",
+      "description_en": "A 49-case regression test across five audit chains: two positive cases lock 68 claim checks, 4/4 pixel-identical embedded A0 figures, 12 ledgers, 96 rules, 48 assertions, 12/12 no-AI routes and 8/8 accessibility requirement fixtures; 47 negative cases inject known defects one by one, including removal of the algorithm/data-refusal fixture. Mutations stay in the system temporary directory."
     },
     {
       "path": "visual/assets/governance/apply-land-use-patterns.js",
@@ -524,6 +524,26 @@
       "description_zh": "只读审计器，直接解码两张 F/02 PNG 并渲染四套 PDF 第 2 页，逐像素核验 7 类 × 6 载体、98 个图斑／构成条／图例区域的唯一纹理、原色保留及“真实用户共测未完成”边界。",
       "description_en": "A read-only auditor that decodes both F/02 PNGs and renders page 2 of all four PDFs to verify unique textures, retained base colours and the pending-real-user-test boundary across 7 codes x 6 carriers and 98 plan/mix/legend regions.",
       "sha256": "cfb0eabefd54a7d3357acf434f238caa98d688f59132dcda68a30ad48814b428"
+    },
+    {
+      "path": "visual/assets/governance/public-service-equivalence-contract.json",
+      "role": "governance_contract",
+      "required": false,
+      "title_zh": "公共服务等价与无障碍需求合同",
+      "title_en": "Public-service equivalence and accessibility requirement contract",
+      "description_zh": "把十二个场景逐一绑定到智能层关闭时仍可完成同一核心结果的基础路线与 24 条人工渠道，并为非视觉、纯键盘、低视力／色觉、行动不便、认知负荷、多语、无 App、拒绝算法／数据八类需求各给两条服务路线、设计特征、现场证据要求和停用条件。八类均为“设计已规定、现场未观察”的需求夹具；真实用户观察与实测通过都锁为 0。",
+      "description_en": "Binds each of the twelve scenarios to a base route that preserves the same core outcome with the smart layer off and to 24 human channels. Eight requirement fixtures — nonvisual, keyboard-only, low/colour vision, reduced mobility, cognitive load, multilingual, no-app and algorithm/data refusal — each define two service routes, design features, field-evidence requirements and shutdown conditions. All eight are specified-but-unobserved design fixtures; real-user observations and observed passes are locked at zero.",
+      "sha256": "85b574a7a046080e8dfc88a50d22bdfd32eb56330da56bf74254c668e29097ab"
+    },
+    {
+      "path": "visual/assets/governance/public-service-equivalence-audit.js",
+      "role": "governance_validation",
+      "required": false,
+      "title_zh": "公共服务等价与无障碍需求审计器",
+      "title_en": "Public-service equivalence and accessibility requirement auditor",
+      "description_zh": "只读、离线、零第三方依赖的审计器：交叉核验合同、十二场景、交接账与 metrics.json，要求 12/12 无 AI 基础路线、24/24 人工渠道、8/8 无障碍需求夹具和八条公共服务规则同时闭合，并拒绝把设计夹具、零观察或零通过写成真实用户测试。",
+      "description_en": "A read-only offline auditor with no third-party dependency. It cross-checks the contract, twelve scenarios, shift ledgers and metrics.json, requiring 12/12 no-AI base routes, 24/24 human channels, 8/8 accessibility requirement fixtures and eight public-service rules to close together, while rejecting any attempt to present design fixtures, zero observations or zero passes as real-user testing.",
+      "sha256": "cca18b0ca127e2489b0c64f0b2744c5c2fa38653cee349cdb0a8fc7ef5f58fff"
     },
     {
       "path": "assets/figures/shift-ledger.png",
@@ -764,19 +784,19 @@
       "path": "visual/assets/governance/noto-cjk-subset.css",
       "role": "asset",
       "required": true,
-      "sha256": "b073c88f31305127a940f72566704a17f35411500fa24856975252a78f1f84ba"
+      "sha256": "29c15fda3380722c16ebe2de9834f3dc3f522ca76bee19f88d04da5d09e96ddd"
     },
     {
       "path": "visual/assets/governance/noto-cjk-subset.coverage.json",
       "role": "asset",
       "required": true,
-      "sha256": "29278c09de879d2fea136747af5e377e6da146757ffd4ae2679a52f94b3e01aa"
+      "sha256": "13639236fca39e3e07511065cc7aaf1b2dfd3a67879521ca513b474ebc843dd0"
     },
     {
       "path": "visual/assets/governance/noto-cjk-subset.rights.json",
       "role": "asset",
       "required": true,
-      "sha256": "171ed7981965029dd73c7d83c43f92f0ae9746e08b3a30adaa8c4acbf88db654"
+      "sha256": "f77dc56a0818d73ee6be5cf779fbcf67fea0676c698ce6146f435279c4866611"
     },
     {
       "path": "visual/assets/public-handover-table-3d.json",

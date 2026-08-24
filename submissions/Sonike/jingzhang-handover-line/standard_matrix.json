@@ -375,9 +375,9 @@
       "professional_dimension": "无障碍与图面表达",
       "mandatory": false,
       "review_status": "addressed",
-      "proposal_sections": [
-        "更新项目清单、实施政策与分期计划",
-        "AI 创新生态、人才画像与 AI+ 场景"
+  "proposal_sections": [
+    "更新项目清单、实施政策与分期计划",
+    "AI 创新生态、人才画像与 AI+ 场景"
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf#p03",
@@ -386,10 +386,13 @@
       "geometry_refs": [
         "geometry/key_areas.geojson"
       ],
-      "metric_refs": [
-        "key_area_zhongzhiyuan_sqm",
-        "key_area_origin_community_sqm",
-        "key_area_dazhongsi_sqm"
+  "metric_refs": [
+    "key_area_zhongzhiyuan_sqm",
+    "key_area_origin_community_sqm",
+    "key_area_dazhongsi_sqm",
+    "accessibility_requirement_fixture_task_count",
+    "accessibility_requirement_fixture_coverage_ratio",
+    "real_user_accessibility_observation_count"
       ],
       "source_ids": [
         "W3C-WCAG-21"
@@ -400,7 +403,7 @@
       "self_check_ids": [
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "逐色测量而非声明达标：七种文字色在纸面 #f1ecdf 与卡面 #faf7ef 两种底色上共 14 个比值，**最低 4.60:1**，一律按正文阈值 4.5 判定。11 种填充色另以 Viénot 1999＋CIEDE2000 逐对复算，三对例外如实登记；不通过暗改共享色值掩盖，而是为七类用地增加七种唯一纹理，同步覆盖中英 F/02 与四套 PDF 第 2 页。`land-use-pattern-audit.js` 直接解码／渲染六个载体，逐像素核得 7 类 × 6 载体、98 个图斑／构成条／图例区域全部在位，原色仍占多数像素。**本条仍不证明真实用户可读性**：包内计算、纹理和目检都不能替代低视力或色觉障碍参与者共测；该边界在 figure-contrast-report.json、proposal[.en].md 与 assumptions.json#A-CONTRAST-001 同时保留，假设状态仍为 open。"
+  "evidence_summary_zh": "逐色测量而非声明达标：七种文字色在纸面 #f1ecdf 与卡面 #faf7ef 两种底色上共 14 个比值，**最低 4.60:1**，一律按正文阈值 4.5 判定。11 种填充色另以 Viénot 1999＋CIEDE2000 逐对复算，三对例外如实登记；不通过暗改共享色值掩盖，而是为七类用地增加七种唯一纹理，同步覆盖中英 F/02 与四套 PDF 第 2 页。`land-use-pattern-audit.js` 直接解码／渲染六个载体，逐像素核得 7 类 × 6 载体、98 个图斑／构成条／图例区域全部在位，原色仍占多数像素。公共服务等价合同另将非视觉／屏幕阅读、仅键盘、低／色觉、行动不便、老年／认知、多语、无设备和拒绝算法八类任务各自绑定设计要件、待采证据与失败即关闭条件；夹具覆盖 8/8，但真实观察与真实通过均为 0。**本条仍不证明真实用户可读性**：包内计算、纹理、需求夹具和目检都不能替代目标参与者共测；该边界在 figure-contrast-report.json、public-service-equivalence-contract.json、proposal[.en].md 与 assumptions.json#A-CONTRAST-001 同时保留，假设状态仍为 open。"
     }
   ]
 }

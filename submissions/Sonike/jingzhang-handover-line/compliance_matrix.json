@@ -1514,7 +1514,11 @@
         "industry_validation_scenario_count",
         "machine_readable_shift_protocol_count",
         "schema_valid_synthetic_shift_count",
-        "shift_protocol_validation_error_count"
+        "shift_protocol_validation_error_count",
+        "no_ai_equivalent_service_target_ratio",
+        "accessibility_requirement_fixture_task_count",
+        "accessibility_requirement_fixture_coverage_ratio",
+        "real_user_accessibility_observation_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#p08",
@@ -1574,7 +1578,7 @@
         "G09_GEOMETRY_NON_REGRESSION",
         "G10_EVIDENCE_MARKER_DENSITY"
       ],
-      "evidence_summary_zh": "十二张场景卡超过10张下限，四个产业测试验证场景超过3个下限，八类用户画像表超过5类下限。双联交接账以Schema与十二条合成实例把交出、独立复现、接收/拒收、无AI底线与回滚收进同一个机器对象，并对七条协议规则逐条做缺陷注入：12 条基线加 84 条注入共 96 条检查，注入全部被拦截，schema 错误 0。结构校验通过不代表性能或现场安全通过；测试场景一律按沙盒处理，不表述为已批准运营。"
+      "evidence_summary_zh": "十二张场景卡超过10张下限，四个产业测试验证场景超过3个下限，八类用户画像表超过5类下限。双联交接账以Schema与十二条合成实例把交出、独立复现、接收/拒收、无AI底线与回滚收进同一个机器对象，并对七条协议规则逐条做缺陷注入：12 条基线加 84 条注入共 96 条检查，注入全部被拦截，schema 错误 0。公共服务等价合同进一步把 12/12 无 AI 基础路线、24 条人工渠道和八类无障碍需求夹具结构化；夹具 8/8、真实观察 0、真实通过 0 分栏记录。结构校验通过不代表性能、现场安全或真实可用性通过；测试场景一律按沙盒处理，不表述为已批准运营。"
     },
     {
       "requirement_id": "agent.4",
@@ -1601,13 +1605,25 @@
         "LANDMARK-02",
         "LANDMARK-03",
         "LANDMARK-04",
-        "PUBLIC-01"
+        "PUBLIC-01",
+        "SCN-05",
+        "SCN-06",
+        "SCN-09",
+        "SCN-10",
+        "SCN-12"
       ],
       "metrics": [
         "civic_landmark_count",
         "green_space_area_sqm",
         "public_space_area_sqm",
-        "public_space_ratio"
+        "public_space_ratio",
+        "no_ai_equivalent_scenario_count",
+        "no_ai_equivalent_service_target_ratio",
+        "algorithm_refusal_no_penalty_scenario_count",
+        "accessibility_requirement_fixture_task_count",
+        "accessibility_requirement_fixture_coverage_ratio",
+        "real_user_accessibility_observation_count",
+        "real_user_accessibility_pass_count"
       ],
       "drawings": [
         "drawings/a0-boards.pdf#p02",
@@ -1644,6 +1660,10 @@
         "ROLE_SPEC_TRANSFERABLE"
       ],
       "scenario_ids": [
+        "SCN-05",
+        "SCN-06",
+        "SCN-09",
+        "SCN-10",
         "SCN-12"
       ],
       "gate_ids": [
@@ -1654,7 +1674,7 @@
         "G09_GEOMETRY_NON_REGRESSION",
         "G10_EVIDENCE_MARKER_DENSITY"
       ],
-      "evidence_summary_zh": "京张遗址公园既有南北贯通与东西连通被升级为公共交接机制（不另起绿廊）；四处朝圣地标（交接钟 LANDMARK-01、公开交接桌 -02、百年值班簿 -03、零号接管亭 -04）在 public_space.geojson 定位并各带启用闸与回滚状态；荣誉记录按提名—证据—双复核—公示异议—纠错—撤回—申诉七步闭环运行，允许匿名且不按流量排名；公共空间组件库以 8 类可撤构件 × 参考做法／维护责任／撤除恢复标准成表，并声明为参考规格而非施工图。"
+      "evidence_summary_zh": "京张遗址公园既有南北贯通与东西连通被升级为公共交接机制（不另起绿廊）；四处朝圣地标（交接钟 LANDMARK-01、公开交接桌 -02、百年值班簿 -03、零号接管亭 -04）在 public_space.geojson 定位并各带启用闸与回滚状态。公共服务不是附属设备：十二场景逐一绑定先于智能层存在的无 AI 基础路线和两条人工渠道，八类需求夹具覆盖非视觉、仅键盘、低／色觉、行动不便、老年／认知、多语、无设备及拒绝算法；每项都写明待采证据与失败即关闭条件。设计覆盖 8/8 与真实观察／通过 0/0 分开登记，不把机器夹具冒充用户测试。荣誉记录按提名—证据—双复核—公示异议—纠错—撤回—申诉七步闭环运行，允许匿名且不按流量排名；公共空间组件库以 8 类可撤构件 × 参考做法／维护责任／撤除恢复标准成表，并声明为参考规格而非施工图。"
     },
     {
       "requirement_id": "agent.5",
@@ -1965,17 +1985,17 @@
     },
     {
       "expectation_id": "CLAIM_AUDIT",
-      "assertion_zh": "正文与交付物中可复算的数值、结构和呈现声明共 67 项，逐条与结构化文件一致。覆盖指标、几何、二十单元、断面算术、双语布局、矩阵引用、来源与许可、四套 PDF 文字层、四个 HTML 的包内 CJK 字体及 24 类等宽控件显式回退、全载体 v2.0 可见版本、A0 首页内嵌图 4/4 的源图像素绑定，以及七类用地在六个载体中的唯一纹理。断言 ID 全集与数量另由不走登记函数的结构性守卫锁定。",
+      "assertion_zh": "正文与交付物中可复算的数值、结构和呈现声明共 68 项，逐条与结构化文件一致。覆盖指标、几何、二十单元、断面算术、双语布局、矩阵引用、来源与许可、四套 PDF 文字层、四个 HTML 的包内 CJK 字体及 24 类等宽控件显式回退、全载体 v2.0 可见版本、A0 首页内嵌图 4/4 的源图像素绑定、七类用地在六个载体中的唯一纹理，以及十二场景的无 AI 等价路线与八类无障碍需求夹具。断言 ID 全集与数量另由不走登记函数的结构性守卫锁定。",
       "evidence_in_package": "visual/assets/governance/claims-audit.js",
       "covered_by_self_check_id": null,
-      "independent_verification_zh": "`node visual/assets/governance/claims-audit.js` 输出「67/67 条声明与包内数据一致」且退出码 0；G6 输出 4 页／251,392 bytes／1,511 组可见字符／24 类等宽控件，G7 输出 26 图件／4 套 38 页 PDF／A0 内嵌图 4/4 像素一致／6 静态载体，G8 输出 7 类 × 6 载体／98 个纹理区域检查。阴性测试见同目录 audit-selftest.js。**该脚本不在 CI 或 preflight 中被调用**，须手动执行。"
+      "independent_verification_zh": "`node visual/assets/governance/claims-audit.js` 输出「68/68 条声明与包内数据一致」且退出码 0；G6 输出 4 页／256,296 bytes／1,540 组可见字符／24 类等宽控件，G7 输出 26 图件／4 套 38 页 PDF／A0 内嵌图 4/4 像素一致／6 静态载体，G8 输出 7 类 × 6 载体／98 个纹理区域检查，G9 输出 12/12 无 AI 基础路线／24/24 人工渠道／8/8 无障碍需求夹具，并保持真实观察 0、实测通过 0。阴性测试见同目录 audit-selftest.js。**该脚本不在 CI 或 preflight 中被调用**，须手动执行。"
     },
     {
       "expectation_id": "AUDITOR_SELFTEST",
-      "assertion_zh": "声明审计器、版本审计器、用地纹理审计器与协议重跑器共经过 48 例回归测试：2 例正向锁定完整规模与 ID 序列，46 例阴性逐一注入已知缺陷并要求对应检查退出 1。最新一例把 1401 的点纹退成与 0701 相同的横线，证明七类虽都有登记、两组近似色却重新共用纹理时仍会被拒绝。所有扰动只写系统临时目录，不改投稿包。",
+      "assertion_zh": "声明审计器、版本审计器、用地纹理审计器、公共服务等价审计器与协议重跑器共经过 49 例回归测试：2 例正向锁定完整规模与 ID 序列，47 例阴性逐一注入已知缺陷并要求对应检查退出 1。最新一例删除“拒绝算法／拒绝数据”需求夹具，证明场景仍有人工路线、其他七类需求仍完整时，八类覆盖缩小也会被拒绝。所有扰动只写系统临时目录，不改投稿包。",
       "evidence_in_package": "visual/assets/governance/audit-selftest.js",
       "covered_by_self_check_id": null,
-      "independent_verification_zh": "`node visual/assets/governance/audit-selftest.js` 输出「48/48 例通过（2 正向 ＋ 46 阴性）」且退出码 0；任何一例未通过即退出 1 并打印该例期望与实得。缺陷注入一律写进系统临时目录，**包内文件不被改动**，跑完即删。**该脚本同样不在 CI 或 preflight 中被调用**，须手动执行；已就此向上游提 Issue #3571 建议 participant_preflight.py 支持运行本节声明的自检命令。"
+      "independent_verification_zh": "`node visual/assets/governance/audit-selftest.js` 输出「49/49 例通过（2 正向 ＋ 47 阴性）」且退出码 0；任何一例未通过即退出 1 并打印该例期望与实得。缺陷注入一律写进系统临时目录，**包内文件不被改动**，跑完即删。**该脚本同样不在 CI 或 preflight 中被调用**，须手动执行；已就此向上游提 Issue #3571 建议 participant_preflight.py 支持运行本节声明的自检命令。"
     }
   ],
   "self_check_expectations_note_zh": "三个矩阵的 self_check_ids 引用的就是本表的 expectation_id。此前这些标签只在矩阵里出现、包内没有定义，而本包的 G01 闸门声称「三个矩阵里的每一条引用都必须能在包内解析到实体」——该自陈对其中 16 个标签（81 处引用）并不成立。本表把它们逐条定义在矩阵自身，因此引用与定义同文件可解析。covered_by_self_check_id 只取 self_check.json 中真实存在的四个 check_id。",

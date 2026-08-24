@@ -110,6 +110,8 @@
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/package-integrity-gates.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/pdf-version-report.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/protocol-check-runner.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/public-service-equivalence-audit.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/public-service-equivalence-contract.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/rights-inventory.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.schema.json",
@@ -127,7 +129,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 21721935,
+      "total_bytes": 21783664,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -187,7 +189,8 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.198434,
-        "public_space_ratio": 0.09106
+        "public_space_ratio": 0.09106,
+        "accessibility_requirement_fixture_coverage_ratio": 1.0
       }
     },
     "stderr": ""
@@ -201,7 +204,7 @@
       "summary": {
         "standard_matrix_items": 10,
         "design_depth_items": 15,
-        "known_metric_refs_required": 56,
+        "known_metric_refs_required": 63,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -209,7 +212,7 @@
           "standard": 7,
           "depth": 11,
           "data": 4,
-          "metric": 16
+          "metric": 22
         }
       }
     },

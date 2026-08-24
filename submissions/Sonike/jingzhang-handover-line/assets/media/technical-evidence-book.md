@@ -858,9 +858,11 @@ P0 的成本等级为 **S：小型、可移动、无固定土建的公共界面*
 | **阶段路径** | 三道**条件门**而非时间表：一期交回基线与南段公共服务试点；二期开源交接场与中段连接；三期研制交接场与全带运营 | `geometry/phasing.geojson` 三个要素逐期写入进入闸、验收闸与回滚状态，**不写固定年份** | 前一期的正负结果未继承即不进入下一期 |
 | **试点区域** | 三座交接场＋十二个场景节点＋二十个更新单元，全部有坐标与编号 | `geometry/key_areas.geojson`、`geometry/public_space.geojson#SCN-01…12`、`geometry/buildings.geojson` | 场地权利与责任主体未获授权即不落点 |
 | **参与主体** | 八个**岗位规格**（不是任命）：资质、权限、缺岗禁止条件与升级路径；六个行动包各写明责任组织类型 | `visual/assets/governance/role-spec.json`，八个岗位的 `assignment_status` **全部为 `unassigned`** | 角色归属由主管部门确定；双联两侧未指派即不放行 |
-| **指标** | **70 项指标，56 项已赋值可复算**；未赋值的 14 项**每一项都有一份完整测量协议** | `metrics.json`（含 `formula` 与 `source_files`）、`visual/assets/governance/measurement-protocol.json` 的 14 条协议 | 发布门槛任一不成立即保持未赋值 |
+| **指标** | **77 项指标，63 项已赋值可复算**；未赋值的 14 项**每一项都有一份完整测量协议** | `metrics.json`（含 `formula` 与 `source_files`）、`visual/assets/governance/measurement-protocol.json` 的 14 条协议 | 发布门槛任一不成立即保持未赋值 |
 
-**指标这一项的口径值得单独说清。** 56 项已赋值指标——场地面积、绿地率、公共空间占比、主轴长度、场景节点数、用地要素数等——全部在 EPSG:4548 中按 `formula` 与 `source_files` 可独立复算：任何人拿同一份几何都会得到同一个数。其余 14 项属法定控制、产业绩效与交接时间三类，其目标值须由主管部门依官方控规、导则与运营基线确定，本方案不代为设定，但已为每一项写明可直接执行的测量协议（定义、采集角色、采样单元、频率或触发、分母、缺失值处理、质量检查、争议复核、隐私与留存、发布门槛）。**其中交接时间两项是本轮新增，专为检验标题里的「更快」而设**：`handover_to_service_days` 与 `handover_rework_rounds` 的基线只能来自授权后的真实交接账，因此同样保持待测——一个没有基线的加速承诺，比不承诺更不可复核。**发布一套测量协议不等于发布一个目标——方法做完，决定留给有权做决定的人** [metric:site_area_sqm] [depth:metrics_recalculation]。
+**指标这一项的口径值得单独说清。** 63 项已赋值指标——场地面积、绿地率、公共空间占比、主轴长度、场景节点数、用地要素数，以及公共服务等价合同的设计覆盖量——全部按各自 `formula` 与 `source_files` 可独立复算：任何人拿同一份数据都会得到同一个数。其余 14 项属法定控制、产业绩效与交接时间三类，其目标值须由主管部门依官方控规、导则与运营基线确定，本方案不代为设定，但已为每一项写明可直接执行的测量协议（定义、采集角色、采样单元、频率或触发、分母、缺失值处理、质量检查、争议复核、隐私与留存、发布门槛）。**其中交接时间两项是本轮新增，专为检验标题里的「更快」而设**：`handover_to_service_days` 与 `handover_rework_rounds` 的基线只能来自授权后的真实交接账，因此同样保持待测——一个没有基线的加速承诺，比不承诺更不可复核。**发布一套测量协议不等于发布一个目标——方法做完，决定留给有权做决定的人** [metric:site_area_sqm] [depth:metrics_recalculation]。
+
+**公共服务等价不是一句原则，而是第二层可审计合同。** `visual/assets/governance/public-service-equivalence-contract.json` 把十二个场景逐一绑定到“智能层关闭仍可完成同一核心结果”的基础路线与人工渠道，并把非视觉／读屏、纯键盘／无指针、低视力／色觉、轮椅／行动不便、老年／认知负荷、非中文／多语、无智能手机／无 App、拒绝算法／拒绝数据八类需求分别写成设计夹具。随包审计器核得 **12/12 条无 AI 等价路线、24/24 条人工渠道、8/8 类需求夹具**；这些都是设计要求，不是用户测试，故合同同时锁定**真实用户观察 0、实测通过 0、现场状态 `not_observed`**。任一夹具缺人工路线、退出条件、现场证据要求，或有人把 0 改写成通过，审计即退出 1 [metric:no_ai_equivalent_service_target_ratio] [metric:accessibility_requirement_fixture_coverage_ratio] [metric:real_user_accessibility_observation_count]。
 
 ### 条件分期，而非政府时间表
 
@@ -986,7 +988,7 @@ P0 的成本等级为 **S：小型、可移动、无固定土建的公共界面*
 | 四套 PDF 拉丁文字 | PDF 基础十四款 | PDF 规范内置，不随包分发字体文件 [source:FONT-PDF-BASE14] | 同上，基础字体不显示为嵌入 |
 | 26 张栅格图件文字 | Noto Sans CJK SC / Noto Sans | SIL OFL 1.1，仅把字形渲染为像素 [source:FONT-NOTO-RASTER] | 包内完整源字体数为 0：`find <包> -name '*.tt[cf]' -o -name '*.otf'` |
 | 画廊封面文字 | Noto Sans CJK SC / Noto Sans | 同上 [source:FONT-NOTO-COVER] | 同上 |
-| 四份离线 HTML | Noto Sans CJK SC Medium 字符子集 | SIL OFL 1.1，251,392 字节 WOFF2 嵌入包内 CSS data URI，官方许可正文与版权通知另存 JSON [source:FONT-NOTO-WEB] | `node visual/assets/governance/webfont-audit.js` |
+| 四份离线 HTML | Noto Sans CJK SC Medium 字符子集 | SIL OFL 1.1，256,296 字节 WOFF2 嵌入包内 CSS data URI，官方许可正文与版权通知另存 JSON [source:FONT-NOTO-WEB] | `node visual/assets/governance/webfont-audit.js` |
 | 字符编码资源 | Adobe CMap UniGB-UCS2-H | Adobe 公开 CMap，仅作编码、不含字形 [source:FONT-ADOBE-CID] | `pdffonts` 输出中无该项字形嵌入 |
 
 音频由本机语音合成生成、不含真人音色样本 [source:TTS-MACOS-SYNTH]；工具链依赖及其许可逐项登记 [source:TOOLCHAIN-BUILD]。任何外部使用不得暗示政府背书、实施批准、已建成或已完成公众参与 [assumption:A-FONT-001]。

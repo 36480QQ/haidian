@@ -196,6 +196,21 @@ Conceptual green space is approximately 226.5 ha and the public handover surface
 
 Eight user groups—researchers, founders, campus workers, residents, older people, disabled people, children and international visitors—are not averaged into one persona. The strict counterexample is someone without a smartphone, with limited mobility, unable to read Chinese and unwilling to be recorded by an algorithm. They must still reach a staffed counter by fixed wayfinding, receive the same basic service and lodge an objection. If that route fails, the smart layer does not open.
 
+**The public-service equivalence contract turns that floor into auditable tasks rather than leaving “inclusion” as an adjective.** `visual/assets/governance/public-service-equivalence-contract.json` binds SCN-01—12 to a no-AI base route and two human channels that must exist before the smart layer. All 12/12 require no personal device, and refusing the smart service must not lower the basic service level. The design targets the same core outcome, queue priority, zero price premium and the same basic safety information [metric:no_ai_equivalent_scenario_count] [metric:no_ai_equivalent_service_target_ratio] [metric:algorithm_refusal_no_penalty_scenario_count].
+
+| Eight requirement fixtures | Base route that must coexist | Failure action |
+| --- | --- | --- |
+| Nonvisual / screen reader | Real readable text + tactile or staffed narration + result readback | Close the smart layer if the staffed route or same core result cannot be reached |
+| Keyboard only / no pointer | Native keyboard controls + visible focus; no personal-device interaction in the field base route | Close the smart layer if a critical action requires a mouse or personal device |
+| Low or colour vision | High-contrast text + codes, shapes or unique textures + large-print paper | Close the smart layer if a critical distinction still relies on colour alone |
+| Reduced mobility / wheelchair | Continuous surface + seated counter/waiting place + reachable stop point | Close the smart layer if level change, obstruction or machine space breaks the route |
+| Older user / cognitive load | One-task paper steps + repeated explanation/readback + no forced countdown | Close the smart layer if complex memory, time pressure or help-seeking causes downgrade |
+| Non-Chinese / multilingual | Bilingual core carriers + multilingual paper + human review of rights decisions | Close the smart layer if rights or stop conditions rely only on Chinese or machine translation |
+| No smartphone / no app | Fixed wayfinding + staffed counter + paper, phone or shift log | Close the smart layer if any step mandates a phone, app, scan or personal account |
+| Algorithm / optional-data refusal | Human decision + minimal record + appeal, deletion or stop receipt | Close the smart layer if refusal causes delay, added price, less safety information or no core result |
+
+These are currently **8/8 design requirement fixtures, not eight user tests**. Real-participant observations are **0** and observed passes are **0**; every human channel remains `not_observed` [metric:accessibility_requirement_fixture_task_count] [metric:accessibility_requirement_fixture_coverage_ratio] [metric:real_user_accessibility_observation_count]. The contract freezes future tasks, required evidence and fail-closed actions. After site authorisation, accessibility professionals must lead real tasks and replace fixtures one by one with observations; a machine-audit PASS cannot be relabelled as real usability.
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
 ### P0 Delivery | Assemble One Table Before Deciding to Build a Line
@@ -245,7 +260,7 @@ International communication uses one identity—**HANDOVER LINE**. A visitor enc
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-`metrics.json` contains **70 metrics, 56 of them valued, 14 pending**. The 56 valued metrics derive from GeoJSON, synthetic rehearsals or machine checks. Pending items include statutory intensity, real handover time, rework rounds, public acceptance, field accessibility and operational effect; none is filled by inference [depth:metrics_recalculation].
+`metrics.json` contains **77 metrics, 63 of them valued, 14 pending**. The 63 valued metrics derive from GeoJSON, synthetic rehearsals, design contracts or machine checks. “8/8 requirement fixtures” and “zero real observations” separately record design coverage and the evidence boundary; they are never merged into a user-test pass. Pending items include statutory intensity, real handover time, rework rounds, public acceptance, field accessibility and operational effect; none is filled by inference [depth:metrics_recalculation].
 
 | Observation layer | Current verifiable value | Correct reading |
 | --- | ---: | --- |

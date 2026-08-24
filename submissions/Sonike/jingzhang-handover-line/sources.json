@@ -1146,7 +1146,7 @@
       "source_locator": "https://github.com/notofonts/noto-cjk/tree/main/Sans/OTF/SimplifiedChinese；许可正文 https://github.com/notofonts/noto-cjk/blob/main/Sans/LICENSE",
       "retrieved_at": "2026-08-14",
       "accessed_date": "2026-08-24",
-      "collection_method": "以 FONT-NOTO-RASTER 已登记的 NotoSansCJKsc-Medium.otf（sha256 ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7，16,523,632 字节，Version 2.004）为唯一输入；visual/assets/governance/build-webfont.js 先强制核对原始 sha256，再收集 report/proposal.html、report/proposal.en.html、visual/index.html、visual/index.en.html 的全部实际字符，用 fontTools 4.60.1 与 Brotli 1.1.0 确定性子集化，生成 251,392 字节 WOFF2（sha256 09af5d77dc31caaedbbe5123af73339468e17c893cb75a283e7201b9051eb896），并以 data URI 写入包内 CSS。覆盖记录从交付 WOFF2 自身 cmap 反读；2026-08-24 增加用地纹理与真实用户共测边界文案后重建，新增字符已进入同一权利链。",
+      "collection_method": "以 FONT-NOTO-RASTER 已登记的 NotoSansCJKsc-Medium.otf（sha256 ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7，16,523,632 字节，Version 2.004）为唯一输入；visual/assets/governance/build-webfont.js 先强制核对原始 sha256，再收集 report/proposal.html、report/proposal.en.html、visual/index.html、visual/index.en.html 的全部实际字符，用 fontTools 4.60.1 与 Brotli 1.1.0 确定性子集化，生成 256,296 字节 WOFF2（sha256 3076dc4955e472cc366cfcb93708cd5b1e56a9febc5b54d5179663a09653e66e），并以 data URI 写入包内 CSS。覆盖记录从交付 WOFF2 自身 cmap 反读；2026-08-24 增加用地纹理、公共服务等价合同与真实用户共测边界文案后重建，新增字符已进入同一权利链。",
       "spatial_coverage": "不适用",
       "temporal_coverage": "不适用",
       "license_or_reuse_terms": "SIL Open Font License 1.1。字体版权声明为 © 2014-2021 Adobe；OFL 允许使用、修改、嵌入与再分发。交付子集嵌入本地 CSS，版权通知与官方 Sans/LICENSE 完整正文写入 visual/assets/governance/noto-cjk-subset.rights.json；该字体不受本包作者的 CC BY-NC 4.0 授权支配。",

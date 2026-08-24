@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * 京张交接线 · 四条审计链的回归测试（离线、只读包内文件）
+ * 京张交接线 · 五条审计链的回归测试（离线、只读包内文件）
  *
  * 为什么需要它：同目录的 claims-audit.js 与 protocol-check-runner.js 都会自报「全部一致」，
  * 而一个只会通过的自检和没有自检是等价的。本包已经两次栽在这件事上：
@@ -30,9 +30,10 @@ const AUDITOR = "claims-audit.js";
 const RUNNER = "protocol-check-runner.js";
 const VERSION_AUDITOR = "version-audit.js";
 const PATTERN_AUDITOR = "land-use-pattern-audit.js";
+const SERVICE_AUDITOR = "public-service-equivalence-audit.js";
 const EVIDENCE = "assets/media/technical-evidence-book.md";
 
-/* 这份 67 项 ID 全集是**刻意重复**的第二份来源。
+/* 这份 68 项 ID 全集是**刻意重复**的第二份来源。
    claims-audit.js 里也有一份；两份不一致就说明有人动了其中一份，本文件会报错。
    判据与被测对象放在同一处，等于没有判据。 */
 const IDS = [
@@ -41,7 +42,7 @@ const IDS = [
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
-  "G1", "G2", "G3", "G4", "G6", "G7", "G8", "H1", "I1",
+  "G1", "G2", "G3", "G4", "G6", "G7", "G8", "G9", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "T1", "A2", "Z1",
 ];
 const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48, rollback_evidence_checks: 12 };
@@ -95,7 +96,7 @@ const cases = [];
 const positive = (label, fn) => cases.push({ label, kind: "正向", fn });
 const negative = (label, fn) => cases.push({ label, kind: "阴性", fn });
 
-positive("claims-audit.js 全部通过，且恰好跑 67 项、ID 与本文件独立记录的全集逐位相同", () => {
+positive("claims-audit.js 全部通过，且恰好跑 68 项、ID 与本文件独立记录的全集逐位相同", () => {
   const r = runAuditor();
   if (r.code !== 0) return `退出码 ${r.code}，应为 0：${(failedIds(r).join("、") || r.stderr).slice(0, 300)}`;
   if (!r.json || r.json.all_match !== true) return "all_match 不为真";
@@ -217,6 +218,13 @@ negInput("用地纹理登记把 1401 的点纹理改成 0701 的横线 —— �
       "visual/assets/governance/figure-contrast-report.json", (d) => {
         d.non_color_redundancy.land_use_encodings.find((item) => item.code === "1401").pattern_id = "horizontal";
       }) }, ["G8"]);
+
+negInput("公共服务等价合同删掉拒绝算法任务 —— 其余七类与十二条基础路线仍完整，但拒绝不降级不再有独立任务",
+  { "visual/assets/governance/public-service-equivalence-contract.json": jsonMutated(
+      "visual/assets/governance/public-service-equivalence-contract.json", (d) => {
+        d.accessibility_requirement_fixtures = d.accessibility_requirement_fixtures.filter(
+          (item) => item.mode !== "algorithm_or_data_refusal");
+      }) }, ["G9"]);
 
 negative("A0 首页内嵌图的预期顺序调换 —— 可搜索页脚全为 v2.0 也必须被像素绑定拦住", () => {
   const script = scriptMutated(VERSION_AUDITOR, (text) => text.replace(
@@ -340,10 +348,10 @@ negInput("场景卡把落点写回「城市交接场维修驿」—— 复刻 20
 negInput("连接段卡片只把里程数字改错 0.5 km —— 落点归属仍对，只有里程对不上几何",
   { [EVIDENCE]: textOf(EVIDENCE).replace("主轴里程约 7.2 km", "主轴里程约 7.7 km") }, ["G5"]);
 
-negInput("英文正文的指标计数退回旧值 68/54 —— 复刻 2026-08-22 修掉的那处：中文写对、英文没跟着改，且英文内部算术自洽（68−54＝14）所以只看英文看不出来",
+negInput("英文正文的指标计数退回旧值 70/56 —— 中文写对、英文没跟着新增的七项公共服务指标，且英文内部算术自洽（70−56＝14）所以只看英文看不出来",
   { "proposal.en.md": textOf("proposal.en.md")
-      .replace("**70 metrics, 56 of them valued", "**68 metrics, 54 of them valued")
-      .replace("The 56 valued metrics", "The 54 valued metrics") }, ["M9"]);
+      .replace("**77 metrics, 63 of them valued", "**70 metrics, 56 of them valued")
+      .replace("The 63 valued metrics", "The 56 valued metrics") }, ["M9"]);
 
 negInput("正文删掉任务书 required_wording_zh 里的「参考方案」—— 复刻 2026-08-22 补齐前的状态，其余措辞仍在所以读起来毫无异样",
   { "proposal.md": textOf("proposal.md").replace(/参考方案/g, "") }, ["T1"]);
@@ -444,8 +452,8 @@ const results = cases.map((c) => {
 const bad = results.filter((r) => !r.pass);
 const out = {
   selftest: "audit-selftest.js",
-  targets: [AUDITOR, RUNNER, VERSION_AUDITOR, PATTERN_AUDITOR],
-  scope_zh: "只检验四条审计链会不会漏检：正向须通过，注入已知缺陷须退出 1 并报出指定检查项。不评价设计内容。",
+  targets: [AUDITOR, RUNNER, VERSION_AUDITOR, PATTERN_AUDITOR, SERVICE_AUDITOR],
+  scope_zh: "只检验五条审计链会不会漏检：正向须通过，注入已知缺陷须退出 1 并报出指定检查项。不评价设计内容。",
   cases_run: results.length,
   cases_passed: results.length - bad.length,
   all_pass: bad.length === 0,
@@ -460,6 +468,6 @@ if (process.argv.includes("--json")) {
     if (!r.pass) console.log(`            ${r.why}`);
   }
   console.log(`\n${out.cases_passed}/${out.cases_run} 例通过（${cases.filter((c) => c.kind === "正向").length} 正向 ＋ ${cases.filter((c) => c.kind === "阴性").length} 阴性）`);
-  console.log(out.all_pass ? "四条审计链都仍拦得住已知缺陷" : "有用例未通过：审计链存在漏检");
+  console.log(out.all_pass ? "五条审计链都仍拦得住已知缺陷" : "有用例未通过：审计链存在漏检");
 }
 process.exit(out.all_pass ? 0 : 1);
