@@ -12,7 +12,7 @@
     "agent_name": "Shared Floor Spatial Design Compiler",
     "model": "OpenAI Codex + Claude Code workflows + local BAAI BGE-M3 semantic witness",
     "model_family": "other",
-    "model_detail": "Mixed OpenAI Codex and Claude Code workflows. Codex produced the initial concept, typed geometry, drawings and experience-image workflow, then the v1.6-v1.9 source audit, A/B/H verifier, Beijing delivery/P0 participant implementation-control template and review-surface rebuild. Claude Code assisted v1.2-v1.5b text, tables, packaging, validation and PR revisions, and produced the v2.0-v2.6 review-surface convergence, engineering pre-feasibility envelopes, compared-alternatives register, whole-package rights matrix and bilingual repairs; local session records explicitly identify Claude Fable 5, while other Claude Code turns do not expose an equally verifiable model ID. The v1.7 witness is retained unchanged through v2.6 and uses the exact BAAI bge-m3:latest tag and blob pinned in its local Ollama /api/embed run contract; it processed hypothetical text only and performed no public service or field action."
+    "model_detail": "Mixed OpenAI Codex and Claude Code workflows. Codex produced the initial concept, typed geometry, drawings and experience-image workflow, then the v1.6-v1.9 source audit, A/B/H verifier, Beijing delivery/P0 participant implementation-control template and review-surface rebuild. Claude Code assisted v1.2-v1.5b text, tables, packaging, validation and PR revisions, and produced the v2.0-v2.11 review-surface convergence, engineering pre-feasibility envelopes, compared-alternatives register, whole-package rights matrix and bilingual repairs; local session records explicitly identify Claude Fable 5, while other Claude Code turns do not expose an equally verifiable model ID. The v1.7 witness is retained unchanged through v2.11 and uses the exact BAAI bge-m3:latest tag and blob pinned in its local Ollama /api/embed run contract; it processed hypothetical text only and performed no public service or field action."
   },
   "generated_at": "2026-08-21T13:44:06Z",
   "files": [
@@ -269,7 +269,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "79203f9c81125a4e5589e423450280940b38b4303c71376ff51db04184e90f38"
+      "sha256": "c9980af2526b41a4dc42772de05752dcc34f0368c2ae75b0421020fb895c0931"
     },
     {
       "path": "compliance_matrix.json",
@@ -384,20 +384,20 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "49360fe5dd1086039d3c7a9f4b57a8aca2511cb3016b536e5170f3e2216413ed"
+      "sha256": "b85105a44b8a3570a996a94d216cdc04306f54d4edb2d5e98f24982f4ed40328"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "0c7804218fefbd7693fa64b97a1ae84fff252377019687d390f72c8dfb554b2e"
+      "sha256": "3572010386bfb6a87577ed1007ab050343b6d5eb9a48e94fd9c87a4757b5b675"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "aefc65243d477d956ff9d38ad1cd1ed405fdca34b318aa3da15109ac619e6ef0"
+      "sha256": "29eafd83db58473bc3e1e8d4caac604e79de0812c6fbdda2ac6e7b4cd65d640a"
     },
     {
       "path": "report/narrative.md",
@@ -411,14 +411,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "256fb4ad1e10a6b50c876e52eb686720c9cd763646c509347a916bc3b8739262"
+      "sha256": "b62959e6774d1680e455f43e8770fd30b7a3ed629cdcb8e9668ce1c560b1f370"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cfade540092399056ce79a7802362243edf3d97f5c52323b0592c833adc3cb57"
+      "sha256": "cf7bfa57450d02ee2497598df7b0369f1b5ea1e7e642d49f988f00fa4c20f193"
     },
     {
       "path": "risk.json",
@@ -430,7 +430,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3d869daa4f0e301eba1574920b4a911a5a61f799903c06f02d19de85dd3e05ab"
+      "sha256": "dc9e620617f8185cc71409ce1a4582fd8d7f270bcaefb99e183ea5be105da1f6"
     },
     {
       "path": "simulation.json",
@@ -1744,14 +1744,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a3d68baf2f76069da85a8769738e0df5a01079b69c046f51d23e46c9c15f2345"
+      "sha256": "8e4a27735e3236c81096436a4a94d97ac65905ba12953e0b4139e0746a55c254"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "cb1d686e03891e448d081fa5081ce0a0429bdb1b78cbc2be30b4c67f5c5f3e34"
+      "sha256": "628dc74ece6e5dbcfef9978ce17b108b29fe5697a888ca4225c71c96cf412807"
     }
   ],
   "validation_claim": {

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "换模型，不换城市：以既有京张遗产公共空间为一层共地，用七条转换街缝合校园、社区、站点与产业，并以验证院、原点廊院、城市交汇厅三种长期框架承载可替换的服务、内装和 AI 设备；官方边界到位后整包重绑定、复算。"
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.11-candidate"
+iteration: "v2.12-candidate"
 ---
 
 # 京张共地 / THE SHARED FLOOR
@@ -542,7 +542,7 @@ P0 交接由条件时序、角色责任、未计价数量、逐门交接四本�
 | R-08 | 官方与公开资料引用 | 公开政府页面与官方来源 | 仅引用可署名的事实主张与链接 | 不复制其照片、插图、地图、标识、版式或字体 |
 
 关于 R-02 的精确模型标识：该图像工具在生成时未向本工作流返回模型 ID，此标识现已不可恢复；因此本包不主张任何未经证实的模型名称，改以生成日期、工具入口、提示词来源与逐张字节哈希作为可核查依据，使用仍受平台服务条款与 `COMMUNITY-DISPLAY-ONLY` 双重约束。[source:OFFICIAL-ANNOUNCEMENT]
-模型披露：初版概念、参数几何、图纸和三张体验图由 OpenAI Codex 工作流生成；图像工具未返回模型 ID。v1.2–v1.5b 的文字、表格、打包、校验和 PR 修订由 Claude Code 辅助；仅部分记录明确 Claude Fable 5，故不扩大归因。v1.6–v1.9 的审计、A/B/H 验证器、北京交付/P0 参赛者实施控制模板和评审面由 Codex 完成；v2.0–v2.1 的评审面收敛、工程预可行性包络、备选方案对照登记与判据恢复由 Claude Code (Claude Fable 5) 完成。v1.7 的本地 `bge-m3:latest` 单次 Ollama `/api/embed` 批量见证原样沿用至 v2.1；tag、两类 digest、Ollama 版本及回执固化，权重不再分发。工具均未踏勘、获授权访谈、提供公共服务、现场动作或专业签署；公开身份、提交和实施仍由用户及未来责任人决定。
+模型披露：初版概念、参数几何、图纸和三张体验图由 OpenAI Codex 工作流生成；图像工具未返回模型 ID。v1.2–v1.5b 的文字、表格、打包、校验和 PR 修订由 Claude Code 辅助；仅部分记录明确 Claude Fable 5，故不扩大归因。v1.6–v1.9 的审计、A/B/H 验证器、北京交付/P0 参赛者实施控制模板和评审面由 Codex 完成；v2.0–v2.11 的评审面收敛、工程预可行性包络、备选方案对照登记、整包权利矩阵、体验附页与参考剖面、以及临时总图重绘由 Claude Code (Claude Fable 5) 完成。v1.7 的本地 `bge-m3:latest` 单次 Ollama `/api/embed` 批量见证原样沿用至 v2.11；tag、两类 digest、Ollama 版本及回执固化，权重不再分发。工具均未踏勘、获授权访谈、提供公共服务、现场动作或专业签署；公开身份、提交和实施仍由用户及未来责任人决定。
 
 ## 参考资料
 
