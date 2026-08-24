@@ -9,10 +9,10 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Replace the model, not the city: one shared ground builds on the existing Jing-Zhang heritage public space; seven Switch Streets connect campuses, neighbourhoods, transit and industry; and three long-life frames—Proof Yard, Origin Cloister and Exchange Hall—host replaceable services, infill and AI equipment. Official polygons trigger whole-package rebinding and recalculation."
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.8-candidate"
+iteration: "v2.9-candidate"
 ---
 
-# THE SHARED FLOOR
+# 京张共地 / THE SHARED FLOOR
 
 > **REPLACE THE MODEL, NOT THE CITY / 换模型，不换城市.** A is the incumbent model, B the candidate, and H the human route with final takeover authority. A/B share one task, data boundary and user burden; B replaces A only after service and rights/safety stewards sign. Public ground, ordinary service and H remain continuous.
 
