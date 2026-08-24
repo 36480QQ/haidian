@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f3d946821cb4d9a5af314123c0af64b3087cac15f890bafc6523f27904c2a831"
+      "sha256": "c3eedb82fc588572f4db41b4bab1f824fb589b3b9fe06f0f2c805a9c870f8926"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fd123bbea262a1402f9b18773442b2a921203ff90589da851a28134d8fa25b4f"
+      "sha256": "942e18eca08757ba141dd8d872aa081f9fc945eab5a8c9dd7e270371f864c42f"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "025f3fde55b1660d122117193ceda00ca86aee582971183d96b93a51a94b8139"
+      "sha256": "2efbf552bc2d421068225d439303da523ee004ee5fa5a77e856cc84a2e826ddb"
     },
     {
       "path": "report/narrative.md",
@@ -107,7 +107,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3a3d846aecb85bd723a1d9768737936bbac840a99c5a9ca090ee696a50d92223"
+      "sha256": "be71dccfac5f31f0641f7faa9849bb7ee62bb27b7a798e0d1be3ba8e4a78dd78"
     },
     {
       "path": "visual/index.html",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "bed9261bdc5a1a0ccc4583a81b6b2d201d0c1a978fbe143133cc66298ee16119"
+      "sha256": "6596cc4dd5597222fb65cea6cfb5f0fd7d7016bb0408ae194a64093b95d19869"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f7e870802ce32c04f4b5902ca2d4a4f47e1d461bce8cb416b334ea043dd7fc1e"
+      "sha256": "a8b359269e49aebe26c79ba2f7a27829123ba70ccff4fdeb65b436d624e8eaa9"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "a6eaf7b0f9bc37968f826c3c6ad3e6a6e4eab9cffcd8674c5b8136682f706fd5"
+      "sha256": "ec5e81aae27a6f6c128a5e7f6e6baa23c5b7c487c102a9f502a5ea67662352f9"
     },
     {
       "path": "visual/index.en.html",

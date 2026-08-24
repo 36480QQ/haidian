@@ -158,7 +158,18 @@ The six steps are not paper mechanisms; this proposal lands them as six visitabl
 5. **Risk Disclosure Screen (safety net)** — one in each of the three areas. Real-time display of the confidence, assumptions, and possible-error points of AI suggestions, making "honesty" a public interface of the city;
 6. **Urban Governance Library (knowledge base)** — Dazhongsi. A reading space where the public can consult how this city "was thought through" — a revocable, question-able, and correctable memory.
 
-These six scenarios turn "neural governance" from a concept into a **walkable, visitable, and communicable pilgrimage experience** — they are both governance mechanisms and the concrete carrier of the "pilgrimage site." What visitors walk is not an ordinary park path but **a pilgrimage route of "seeing how an AI city is governed"**: this route itself is the belt's most recognizable and internationally communicable brand asset.
+These six scenarios turn "neural governance" from a concept into a **walkable, visitable, and communicable pilgrimage experience** — they are both governance mechanisms and the concrete carrier of the "pilgrimage site." What visitors walk is not an ordinary park path but **a pilgrimage route of "seeing how an AI city is governed"**: this route itself is the belt's most recognizable and internationally communicable brand asset. (The table below gives each scenario's spatial anchor and implementation dependency, all based on the provisional boundary and to be recomputed after the official redline is released):
+
+| Governance scenario | Node ID | Conceptual location | Spatial type | Walking link | Implementation dependency |
+|---|---|---|---|---|---|
+| Recomputable Square | GS-01 | Zhongzhiyuan south entrance | Public plaza | north spine ~400m | official redline, ownership |
+| Decision Tracing Corridor | GS-02 | mid Jing-Zhang heritage park | linear gallery | mid spine ~2.1km | heritage conditions, park ownership |
+| Feedback Garden | GS-03 | Origin Community center | community garden | mid spine | community ownership, operator |
+| Permission Sandbox | GS-04 | Zhongzhiyuan safety-governance zone | indoor + outdoor | north spine | operator, safety qualification |
+| Risk Disclosure Screen | GS-05 | one per key area | digital screen + manual board | whole spine | power access, maintenance |
+| Urban Governance Library | GS-06 | Dazhongsi data lounge | reading space | south spine | ownership, heritage conditions |
+
+Renewal projects JZ-01 to JZ-06 spatial anchors: JZ-01 slow-traffic break stitching (ROAD layer, crossing North 4th Ring, municipal redline); JZ-02 Qinghe innovation interface (GREEN layer, Qinghe waterfront, river blue line); JZ-03 achievement-transfer street (BUILDING layer, Origin Community, current ownership); JZ-04 Dazhongsi four-quadrant connectivity (ROAD layer, transit-station conditions); JZ-05 edge-computing station (CONSTRAINTS layer, energy capacity); JZ-06 global AI activity week (PUBLIC layer, operator and activity mechanism). All are conceptual locations, not pseudo-precise redlines; recomputed once official geometry arrives [depth:key_area_detailed_design].
 
 ## Coordinated Research Scope: Industry and Future City
 
@@ -255,6 +266,8 @@ This proposal turns the "soft mechanism" of the AI innovation ecosystem into "ha
 
 1. **Computing guarantee — edge-computing stations + compute-power-electricity coordination**: edge-computing nodes are laid out along the belt and linked with distributed energy through "compute-power-electricity coordination," providing a "computing entry" for startups and open-source communities; AI racks become part of a "controlled DC microgrid," enabling programmable scheduling of computing and power;
 2. **Energy guarantee — building-level DC busbar**: AI buildings adopt 800V DC distribution + liquid cooling to supply stable energy to high-density computing — the energy nerve of the full "grid-to-compute" path;
+5. **Component library and open-source reference design (agent.4)**: build the "SparkLink Agent Connection Kit" component library — low-latency connection modules, precision-synchronization modules, RF-fingerprint identity modules, integrated sensing-communication modules, and deterministic-latency scheduling modules — opened to members as open-source reference designs to lower the barrier for terminal/module/solution vendors to join the Agent-era connection base; library entries correspond to the technology-neutral short-range connection capability features (deterministic, low latency, high concurrency) [source:AGENT-TASKBOOK].
+
 3. **Data guarantee — data-factor lounge**: the Dazhongsi area builds a circulation-service interface for data factors and digital assets on the premise of "compliance, authorization, and auditability," turning "data" from a slogan into a tradable, auditable factor;
 4. **Scenario and mechanism guarantee — testing, opening, governance**: Zhongzhiyuan's safety-governance sandbox (model red-team testing), three industrial test-verification scenarios, and standard-setting workshops form the closed loop of "technology testing — scenario opening — standard governance."
 
@@ -289,6 +302,8 @@ The blue-green space plan should take the Jing-Zhang Railway Heritage Park vital
 Blue-green public space is jointly checked by the design-depth item and the green-space and public-space layers [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]. The design significance of the green and public-space ratios is explained in the narrative, and the complete recalculation is kept in `metrics.json`; the coordination of urban character, public space, and building control returns to the professional standard matrix [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
 The urban-character plan should integrate Jing-Zhang railway history and culture, Zhongguancun innovation culture, and AI innovation culture, using cultural resources such as Qinghuayuan railway station and the Beijing Film Academy to propose urban tone, building character, roof form, massing, interface, and public-art guidance. The agent should also propose wayfinding signage, cultural symbols, international-communication narrative, AI pilgrimage landmarks, contribution walls, or honor-display systems, but all brands, fonts, images, portraits, and enterprise logos must have cleared sources. Character control should distinguish official control, design suggestions, and to-be-confirmed conditions, and must not give pseudo-precise control lines without heritage-protection or regulatory-planning grounds.
+
+**AI pilgrimage landmarks and contribution wall (agent.4 honor display)**: three recognizable pilgrimage landmarks — ① **Tsinghuayuan railway station** (origin of the century-old Jing-Zhang railway, the start of the pilgrimage route); ② the **Recomputable Square** (Zhongzhiyuan, symbol of governance transparency); ③ the **Decision Tracing Corridor** (mid heritage park, a visitable window into AI governance). A companion "AI contribution wall" (at Origin Community) displays enterprises, open-source developers, and residents who have contributed to civic AI governance, forming a sustainable honor-display mechanism; all brands, fonts, images, portraits, and corporate marks must have cleared rights [source:AGENT-TASKBOOK].
 
 ## Renewal Project List, Implementation Policy, and Phasing Plan
 
@@ -328,6 +343,8 @@ This proposal grounds "implementation feasibility" in four operable elements: a 
 - **Enterprises / universities**: computing, technology, scenarios, and talent supply;
 - **Public / communities**: feedback, participation, oversight;
 - **Agents (assistive)**: document organization, proposal reasoning, review support — not replacing planning approval.
+
+**Annual operations system (agent.6)**: a sustainable annual rhythm — ① the **Global AI Activity Week** (JZ-06, annual, linking heritage culture / open-source community / industry display / international roadshow); ② **developer-community operation** (quarterly hackathons + monthly scenario open days + a standing open-source collaboration space); ③ a **scenario-opening mechanism** (solicit scenario needs from society, entering test verification after the verification wall and human review); ④ an **international attraction-and-translation funnel** (international communication — experience roadshow — demand matching — landing translation, with translation metrics and responsibility boundaries). All of these are "conceptual suggestions/reference schemes" for professional teams to deepen, not written as settled government activities [source:AGENT-TASKBOOK][depth:annual_operations].
 
 **Implementation metrics (staged targets)**: three pilot scenarios land in the near term (soft infrastructure startable immediately). The quantitative targets for stitched walking-and-cycling breaks, edge-computing nodes, governance knowledge-base records, and public-feedback iterations are currently status=unknown — to be set with sourced staged targets and calculation methods once the official boundary, municipal/transport/ownership conditions, and a formal operational baseline are available, with full re-computation triggered on official geometry [metric:key_area_count] [data:geometry/phasing.geojson#PHASE-001].
 
