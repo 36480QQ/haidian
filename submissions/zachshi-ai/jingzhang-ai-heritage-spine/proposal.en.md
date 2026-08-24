@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the Jingzhang Railway Heritage Corridor as a spine, the proposal links the Zhongzhiyuan AI Acceleration Area, Beijing AI Origin Community, and Dazhongsi AI Industry Cluster to build a world-class AI innovation belt with three zones and two wings. The proposal introduces the 'AI Origin · Jingzhang Spine' concept, using the heritage park slow-mobility axis to stitch east-west and connect north-south, with 10 land-use zones, 15 concept buildings, 12 AI scenario cards, and 3 pilgrimage landmarks, forming an experienceable, scalable, and iterative smart city concept."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "jingzhang-heritage-narrative"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide", "robot-delivery-low-speed"]
-iteration: "v8.0"
+iteration: "v8.1"
 ---
 
 # Jingzhang AI Heritage Spine: A Century-Old Railway Corridor Reborn as an Intelligent City

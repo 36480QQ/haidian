@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗产走廊为脊梁，串联众智园AI加速区、北京AI原点社区和大钟寺AI产业集聚区，构建三区两翼协同的世界级AI创新生态带。方案提出'AI原点·京张脊梁'总体概念，通过遗产公园慢行主轴缝合东西、贯通南北，布局10类用地、15栋概念建筑、12张AI场景卡和3个朝圣地标，形成可体验、可推广、可迭代的智能城市概念方案。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "jingzhang-heritage-narrative"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide", "robot-delivery-low-speed"]
-iteration: "v8.0"
+iteration: "v8.1"
 ---
 
 # 京张AI创新遗产脊梁：百年铁路走廊的智能城市新生
