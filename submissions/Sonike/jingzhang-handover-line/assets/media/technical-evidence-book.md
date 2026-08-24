@@ -703,7 +703,7 @@ Logo 只是起点，真正落到街道上的是四类不依赖屏幕的实体符
 文化标识与交接符号分层：文化标识讲历史，交接符号讲当下责任，两套不混用，也不与一带整体 Logo 系统混淆。所有符号采用可更换面板，改版只换面板不换基座，避免每次迭代都在公共空间留下一批废弃物 [assumption:A-CONTRAST-001]。
 **色觉障碍区分度已经量化，不再停留在「已考虑无障碍」一句话。** 对图件实际使用的 11 种填充色（7 类用地代码色 + 4 种语义色）两两计算 CIEDE2000 色差，再按 Viénot 1999 的 LMS 矩阵分别模拟绿色盲、红色盲与蓝色盲后重算：正常视觉下两两色差中位 ΔE00 = 38.0，绿色盲 25.2、红色盲 26.9、蓝色盲 55.5。**三对例外逐条写明**：09 科技服务与商务与值班黄在任何视觉下都只差约 2.3（二者分处填充色与强调色两种角色，不在同一图层内比较）；红色盲下 0701 人才生活与 1401 连续公园绿地降到 2.8；蓝色盲下 0702 社区服务与 0803 文化公共服务降到 0.4。
 
-**测出来之后就把它修掉，而不是只写进限制清单。** 用地图（F/02）的走廊平面此前只以颜色区分图斑，现已在每个图斑上直接印出用地代码（0802、0804、09、0701、0702、0803、1401），标注按图斑面积从大到小放置、遇碰撞即跳过，宁可少标也不叠字；图例逐条印有代码、面积与占比。**因此这张图不再依赖辨色即可读**，符合 WCAG 2.1 SC 1.4.1「不以颜色作为唯一视觉手段」。边界写在同一处，并且这条边界有确定的作用范围：上述两对色值本身仍然接近，已算出一组最小扰动替代色值可把四种视觉条件下的最小 ΔE00 由 5.92 提到 14.00（每色留在原色族、最大漂移 15.6），**但 `jzstyle.LAND_USE_COLORS` 是 F/02、F/03 与 A0／A3 图纸共用的同一组取值——A0 首页 B/01 的图例逐条印着同一批代码。只改单张图件会让同一用地类在送审图纸之间出现两种颜色，因此配色调整必须与全套图纸同批重出，不能按图件逐张改。** 本包因此从未单独调整过任一张图件的用地取值——受约束的正是这一点；真实用户测试属于取得场地授权后由专业无障碍复核方主持的现场环节，其触发条件与责任方登记在 `assumptions.json#A-CONTRAST-001`。以上数值可用 Viénot 1999 模拟加 CIEDE2000 对 `jzstyle.LAND_USE_COLORS` 的取值独立复算 [standard:WCAG-CONTRAST] [assumption:A-CONTRAST-001]。
+**测出来之后就把包内能修的部分修掉，而不是只写进限制清单。** F/02 保留每个图斑的用地代码与逐条图例，并为七类用地再加七种唯一纹理：竖线、反斜线、短横、横线、正斜线、交叉线与点纹。纹理同时覆盖走廊图斑、面积构成条和图例；中英 A0／A3 第 2 页也把同一映射同步到图斑与图例。原 `LAND_USE_COLORS`、几何、面积、占比和代码一位未改，因此不会让共用色值的 F/02、F/03 与图纸分叉。`apply-land-use-patterns.js` 首次在六个载体写入 57,987 个纹理像素，再跑为 0；独立的 `land-use-pattern-audit.js` 逐像素核验 **7 类 × 6 载体、98 个区域**，并有一条阴性用例专门把 1401 点纹退成与 0701 相同的横线，要求 G8 失败。**因此颜色不再是唯一视觉手段，但真实用户可读性仍未验证。** 上述两对色值本身依然接近；真实用户共测仍须在公众部署前由无障碍专业人员与低视力／色觉障碍参与者完成，保留失败与修复记录 [standard:WCAG-CONTRAST] [assumption:A-CONTRAST-001]。
 
 ### 不看屏幕也能读完这份方案：音频、视频、触觉与三维
 
@@ -732,7 +732,7 @@ Logo 只是起点，真正落到街道上的是四类不依赖屏幕的实体符
 
 交接协议不是一句原则，而是七条可被机器判定的规则。为确认这七条**既拦得住该拦的、也不误伤合规的**，对十二份合成交接账做了两类检查：十二条基线用例（合规实例，期望全部放行）与八十四条缺陷注入用例（每条注入一类缺陷，期望全部被拦），合计 **96 条，误拦 0、漏检 0**。**两侧都测是关键**：只测注入可以靠「一律拦截」拿满分，只测基线可以靠「一律放行」拿满分；零误拦与零漏检同时成立，规则才算既有效又不过度。
 
-**这 96 条与上一节那 48 项断言可由随包脚本当场重算，不必相信本文。** `visual/assets/governance/` 下五个只读、离线、零第三方依赖的 Node 脚本各管一件事：重跑器把七条规则按发布表述独立重写一遍并与随包结果逐条比对（另核 360 个受枚举约束的字段实例、18 个枚举定义、12 条回滚证据、拒收理由码 5/5 与「处置 × 智能层」兼容表 4 行 7 对）；声明审计器把正文与交付物里可复算的数值、结构和呈现声明逐条重算，**66 项全部一致**；版本审计器另核 26 张图件、四套 38 页 PDF、6 个静态载体与 A0 首页 4/4 内嵌图像素绑定；字体审计同时核四页 WOFF2 权利链、可见字形与交互页 24 类等宽标签的包内 CJK 回退；自检脚本再检验三条主审计链还拦不拦得住，**47 例全部通过**（2 例正向 ＋ 45 例阴性，每例注入一类已知缺陷并要求报出指定项）。**五个脚本的逐项说明、命令与规模守卫写在 `manifest.json` 的文件描述与 `compliance_matrix.json#self_check_expectations` 里，本节不复述** [data:visual/assets/governance/protocol-check-runner.js] [data:visual/assets/governance/claims-audit.js] [data:visual/assets/governance/version-audit.js] [data:visual/assets/governance/webfont-audit.js] [data:visual/assets/governance/audit-selftest.js] [metric:offline_takeover_assertion_count]。
+**这 96 条与上一节那 48 项断言可由随包脚本当场重算，不必相信本文。** `visual/assets/governance/` 下六个只读审计脚本各管一件事：协议重跑器核 96 条规则、48 项断言、360 个枚举实例与 12 条回滚证据；声明审计器把正文与交付物的可复算声明逐条重算，**67 项全部一致**；版本审计器核 26 张图件、四套 38 页 PDF、6 个静态载体与 A0 首页 4/4 内嵌图；字体审计核四页 WOFF2 权利链、可见字形与 24 类等宽标签；用地纹理审计核 7 类 × 6 载体与 98 个区域；自检脚本再检验四条审计链还拦不拦得住，**48 例全部通过**（2 例正向 ＋ 46 例阴性）。逐项命令、规模守卫与“不证明现场”的边界写在 `manifest.json` 与 `compliance_matrix.json#self_check_expectations` [data:visual/assets/governance/protocol-check-runner.js] [data:visual/assets/governance/claims-audit.js] [data:visual/assets/governance/version-audit.js] [data:visual/assets/governance/webfont-audit.js] [data:visual/assets/governance/land-use-pattern-audit.js] [data:visual/assets/governance/audit-selftest.js] [metric:offline_takeover_assertion_count]。
 
 **其中一条是结构断言，也是这套协议一个此前没写出来的性质：它在 schema 层面就无法表达「已全面启用」。** `smart_layer_state_after_decision` 的枚举只有 `off`、`sandbox_preview`、`limited_trial` 三个取值，**没有任何一个表示完全启用**。所以「智能层不得越过有限试用」不是一句承诺，而是结构性不可能——往枚举里加更高状态会让脚本退出 1。同类的还有兼容表：处置越保守，智能层上限越低，拒收与暂缓一律 `off` [data:visual/assets/governance/shift-ledger.schema.json]。
 
@@ -986,7 +986,7 @@ P0 的成本等级为 **S：小型、可移动、无固定土建的公共界面*
 | 四套 PDF 拉丁文字 | PDF 基础十四款 | PDF 规范内置，不随包分发字体文件 [source:FONT-PDF-BASE14] | 同上，基础字体不显示为嵌入 |
 | 26 张栅格图件文字 | Noto Sans CJK SC / Noto Sans | SIL OFL 1.1，仅把字形渲染为像素 [source:FONT-NOTO-RASTER] | 包内完整源字体数为 0：`find <包> -name '*.tt[cf]' -o -name '*.otf'` |
 | 画廊封面文字 | Noto Sans CJK SC / Noto Sans | 同上 [source:FONT-NOTO-COVER] | 同上 |
-| 四份离线 HTML | Noto Sans CJK SC Medium 字符子集 | SIL OFL 1.1，251,232 字节 WOFF2 嵌入包内 CSS data URI，官方许可正文与版权通知另存 JSON [source:FONT-NOTO-WEB] | `node visual/assets/governance/webfont-audit.js` |
+| 四份离线 HTML | Noto Sans CJK SC Medium 字符子集 | SIL OFL 1.1，251,392 字节 WOFF2 嵌入包内 CSS data URI，官方许可正文与版权通知另存 JSON [source:FONT-NOTO-WEB] | `node visual/assets/governance/webfont-audit.js` |
 | 字符编码资源 | Adobe CMap UniGB-UCS2-H | Adobe 公开 CMap，仅作编码、不含字形 [source:FONT-ADOBE-CID] | `pdffonts` 输出中无该项字形嵌入 |
 
 音频由本机语音合成生成、不含真人音色样本 [source:TTS-MACOS-SYNTH]；工具链依赖及其许可逐项登记 [source:TOOLCHAIN-BUILD]。任何外部使用不得暗示政府背书、实施批准、已建成或已完成公众参与 [assumption:A-FONT-001]。

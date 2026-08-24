@@ -13,7 +13,11 @@
  * Rebuild:
  *   PYTHON=python3 node build-webfont.js \
  *     --source-font /path/to/NotoSansCJKsc-Medium.otf \
- *     --license-file /path/to/noto-cjk/Sans/LICENSE
+ *     [--license-file /path/to/noto-cjk/Sans/LICENSE]
+ *
+ * When --license-file is omitted, the builder reuses the hash-bound full OFL
+ * text already present in noto-cjk-subset.rights.json. This keeps an offline
+ * rebuild self-contained without weakening the fixed licence checksum.
  *
  * Python needs fontTools with WOFF2/Brotli support.
  */
@@ -49,6 +53,11 @@ function argument(name) {
   return path.resolve(process.argv[index + 1]);
 }
 
+function optionalArgument(name) {
+  const index = process.argv.indexOf(name);
+  return index < 0 || !process.argv[index + 1] ? null : path.resolve(process.argv[index + 1]);
+}
+
 function runPython(python, args) {
   const result = spawnSync(python, args, { encoding: "utf8", maxBuffer: 32 * 1024 * 1024 });
   if (result.status !== 0) {
@@ -73,10 +82,12 @@ function requiredCodepoints() {
 
 function main() {
   const source = argument("--source-font");
-  const licenseFile = argument("--license-file");
+  const licenseFile = optionalArgument("--license-file");
   const python = process.env.PYTHON || "python3";
   const sourceBuffer = fs.readFileSync(source);
-  const licenseText = fs.readFileSync(licenseFile, "utf8");
+  const licenseText = licenseFile
+    ? fs.readFileSync(licenseFile, "utf8")
+    : JSON.parse(fs.readFileSync(path.join(PKG, RIGHTS_REL), "utf8")).license.text;
   if (sha256(sourceBuffer) !== SOURCE_SHA256) throw new Error("原始 OTF sha256 不匹配");
   if (sha256(Buffer.from(licenseText)) !== LICENSE_SHA256) throw new Error("OFL 正文 sha256 不匹配");
 

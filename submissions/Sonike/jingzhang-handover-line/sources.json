@@ -1146,7 +1146,7 @@
       "source_locator": "https://github.com/notofonts/noto-cjk/tree/main/Sans/OTF/SimplifiedChinese；许可正文 https://github.com/notofonts/noto-cjk/blob/main/Sans/LICENSE",
       "retrieved_at": "2026-08-14",
       "accessed_date": "2026-08-24",
-      "collection_method": "以 FONT-NOTO-RASTER 已登记的 NotoSansCJKsc-Medium.otf（sha256 ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7，16,523,632 字节，Version 2.004）为唯一输入；visual/assets/governance/build-webfont.js 先强制核对原始 sha256，再收集 report/proposal.html、report/proposal.en.html、visual/index.html、visual/index.en.html 的全部实际字符，用 fontTools 4.60 与 Brotli 1.1.0 确定性子集化，生成 251,232 字节 WOFF2（sha256 cf002461c44d6f44783f4ee56a61bd31412a6c7c1ff9aa38aedea4c5f437941a），并以 data URI 写入仓库允许的 visual/assets/governance/noto-cjk-subset.css。覆盖记录从交付 WOFF2 自身 cmap 反读，不凭输入字符表自证。",
+      "collection_method": "以 FONT-NOTO-RASTER 已登记的 NotoSansCJKsc-Medium.otf（sha256 ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7，16,523,632 字节，Version 2.004）为唯一输入；visual/assets/governance/build-webfont.js 先强制核对原始 sha256，再收集 report/proposal.html、report/proposal.en.html、visual/index.html、visual/index.en.html 的全部实际字符，用 fontTools 4.60.1 与 Brotli 1.1.0 确定性子集化，生成 251,392 字节 WOFF2（sha256 09af5d77dc31caaedbbe5123af73339468e17c893cb75a283e7201b9051eb896），并以 data URI 写入包内 CSS。覆盖记录从交付 WOFF2 自身 cmap 反读；2026-08-24 增加用地纹理与真实用户共测边界文案后重建，新增字符已进入同一权利链。",
       "spatial_coverage": "不适用",
       "temporal_coverage": "不适用",
       "license_or_reuse_terms": "SIL Open Font License 1.1。字体版权声明为 © 2014-2021 Adobe；OFL 允许使用、修改、嵌入与再分发。交付子集嵌入本地 CSS，版权通知与官方 Sans/LICENSE 完整正文写入 visual/assets/governance/noto-cjk-subset.rights.json；该字体不受本包作者的 CC BY-NC 4.0 授权支配。",
@@ -1172,21 +1172,22 @@
       "source_type": "standard_resource",
       "evidence_class": "published_standard",
       "authority_level": "T1",
-      "title": "Web Content Accessibility Guidelines (WCAG) 2.1，成功准则 1.4.3 Contrast (Minimum)（AA 级）",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.1，成功准则 1.4.1 Use of Color 与 1.4.3 Contrast (Minimum)（AA 级）",
       "publisher": "World Wide Web Consortium (W3C)，W3C Recommendation 2018-06-05（最新勘误版 2023-09-21）",
       "retrieved_at": "2026-08-17",
       "accessed_date": "2026-08-17",
-      "collection_method": "读取 W3C 推荐标准正文中 SC 1.4.3 的阈值（正文 4.5:1、大号文字 3:1）与相对亮度定义（WCAG 2.1 §Definitions: relative luminance），按该定义在本机对本包实际使用的 sRGB 色值逐对计算对比度；不引用任何第三方对该标准的转述。",
+      "collection_method": "读取 W3C 推荐标准正文中 SC 1.4.1“不以颜色作为传达信息、指示动作、提示响应或区分视觉元素的唯一视觉手段”，以及 SC 1.4.3 的阈值（正文 4.5:1、大号文字 3:1）与相对亮度定义；按后者在本机计算实际 sRGB 对比度，并按前者检查用地图是否保留代码与逐类唯一纹理。不引用第三方转述。",
       "spatial_coverage": "不适用（技术标准）",
       "temporal_coverage": "WCAG 2.1 自 2018-06-05 起为 W3C Recommendation",
       "license_or_reuse_terms": "W3C Document License：允许复制与引用标准文本，须保留出处与版权声明。本包只引用阈值数值与相对亮度公式两项事实，未复制标准正文。",
-      "usage": "本包 26 张栅格图件文字前景色的对比度自检基准；测量结果见 visual/assets/governance/figure-contrast-report.json。",
+      "usage": "本包 26 张栅格图件文字前景色的对比度自检基准，以及七类用地在六个载体中不以颜色作为唯一视觉手段的自检基准；测量、纹理映射与真实用户测试边界见 visual/assets/governance/figure-contrast-report.json。",
       "transformations": [
         "原文表述：contrast ratio of at least 4.5:1 for text（SC 1.4.3, AA） → 方法：按 WCAG 2.1 相对亮度定义 L = 0.2126R + 0.7152G + 0.0722B（各通道先按 c/12.92 或 ((c+0.055)/1.055)^2.4 线性化），对比度 =(L_亮+0.05)/(L_暗+0.05) → 入库值：七种文字色 × 两种底色共 14 个比值，最低 4.60 → 单位：无量纲比值"
       ],
       "usable_for": [
         "判定本包栅格图件的文字前景色是否达到 AA 级正文对比度阈值",
-        "说明四色亮版为何只用于填充而不用于文字"
+        "说明四色亮版为何只用于填充而不用于文字",
+        "检查 F/02 与四套图纸第 2 页是否以代码和七种唯一纹理避免只靠颜色区分七类用地"
       ],
       "not_usable_for": [
         "认定本方案整体符合任何无障碍法定义务——WCAG 是自愿采纳的技术标准，非中国法定强制要求",
@@ -1198,7 +1199,7 @@
       "registry_review_status": "not_in_central_registry",
       "usable_for_formal": "supporting_standard",
       "usable_for_formal_basis": "participant_self_assessed",
-      "independent_verification": "本包只引用该标准的两项事实（正文阈值 4.5、相对亮度公式），二者的应用结果可完全复算：`python3 -c \"import json;d=json.load(open('visual/assets/governance/figure-contrast-report.json'));print(d['minimum_text_contrast'], d['all_text_colours_pass_aa'])\"` → `4.6 True`；报告内含逐色 sRGB 值与公式，任何人可用同一公式重算 14 个比值。"
+      "independent_verification": "对比度结果可完全复算：`python3 -c \"import json;d=json.load(open('visual/assets/governance/figure-contrast-report.json'));print(d['minimum_text_contrast'], d['all_text_colours_pass_aa'])\"` → `4.6 True`。非颜色冗余可运行 `node visual/assets/governance/land-use-pattern-audit.js --json`，应输出 ok=true、7 类、6 载体、42 个类—载体对与 98 个纹理区域检查；报告同时固定写明 real_user_testing_completed=false。"
     },
     {
       "id": "SRC-JINGZHANG-1909",

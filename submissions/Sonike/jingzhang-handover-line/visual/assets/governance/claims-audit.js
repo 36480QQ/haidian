@@ -493,9 +493,10 @@ add("G3", "正文的 [depth:] 标记全部能在 design_depth_matrix.json 里解
       bad.length ? bad.slice(0, 4).join("；") : `155 个 CMap：技术内页 9 个恒等映射＋首页 146 个合法稀疏映射`);
 }
 
-/* G6/G7. 评分器暴露的表达层盲点必须进入总退出码：无系统中文字体时的
-   HTML 字形覆盖、等宽控件重置后的显式 CJK 回退，以及各可见载体的包版本一致性。
-   两项各由独立小审计器负责，本审计器只把其机器可读结论并入 66 项总清单；
+/* G6/G7/G8. 评分器暴露的表达层盲点必须进入总退出码：无系统中文字体时的
+   HTML 字形覆盖、等宽控件重置后的显式 CJK 回退、各可见载体的包版本一致性，
+   以及七类用地在六个载体中的非颜色纹理冗余。三项各由独立小审计器负责，
+   本审计器只把其机器可读结论并入 67 项总清单；
    覆盖层原样下传给阴性自测。 */
 function runNestedAudit(filename) {
   const env = Object.assign({}, process.env);
@@ -526,6 +527,16 @@ function runNestedAudit(filename) {
       result.status === 0 && result.parsed && result.parsed.ok === true,
       problems.length ? problems.slice(0, 4).join("；")
         : `${result.parsed.figure_count} 图件／${result.parsed.pdf_count} 套 ${result.parsed.pdf_page_count} 页 PDF／A0 内嵌图 ${result.parsed.a0_embedded_figure_pixel_matches}/4 像素一致／${result.parsed.static_deliverables_checked} 静态载体`);
+}
+
+{
+  const result = runNestedAudit("land-use-pattern-audit.js");
+  const problems = result.parsed && Array.isArray(result.parsed.errors)
+    ? result.parsed.errors : [result.stderr || "无法解析 land-use-pattern-audit.js 输出"];
+  add("G8", "七类用地在中英 F/02 与四套送审 PDF 第 2 页均使用唯一纹理，覆盖图斑与图例且保留原色值；真实用户共测仍明确为未完成",
+      result.status === 0 && result.parsed && result.parsed.ok === true,
+      problems.length ? problems.slice(0, 4).join("；")
+        : `${result.parsed.land_use_codes_checked} 类 × ${result.parsed.carriers_checked} 载体／${result.parsed.pattern_region_checks} 个纹理区域检查`);
 }
 
 /* H. sources.json 的字段深度——CLAUDE.md 记为与分数相关性最高的特征，缺一栏就是缺证据 */
@@ -940,7 +951,7 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
    连四张图件都逐一列出），**只有 `A-CONTRAST-001` 写了一个裸目录 `assets/figures/`**。字段名是
    affected_files，机器按它算复算范围时这一项解析不出来。已按 `figure-contrast-report.json` 自陈的
    范围（26 张栅格图件 ＝ 24 PNG ＋ 2 JPEG）展开成 26 个具体路径，与报告声明逐一对应。
-   规模 11 条假设／77 处文件引用写死参与退出码——某条引用被悄悄删掉时「逐条可解析」仍会成立。 */
+   规模 11 条假设／83 处文件引用写死参与退出码——某条引用被悄悄删掉时「逐条可解析」仍会成立。 */
 {
   const asms = readPkg("assumptions.json").assumptions || [];
   const problems = [];
@@ -956,11 +967,11 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
       if (!a[k]) problems.push(`${a.id}: 缺 ${k}`);
     }
   }
-  add("A2", "assumptions.json 的 11 条假设各带复算触发器与责任角色，且 77 处 affected_files 逐条解析到包内实际文件（不接受目录）",
-      problems.length === 0 && asms.length === 11 && refs === 77,
+  add("A2", "assumptions.json 的 11 条假设各带复算触发器与责任角色，且 83 处 affected_files 逐条解析到包内实际文件（不接受目录）",
+      problems.length === 0 && asms.length === 11 && refs === 83,
       problems.length ? problems.join("；")
-        : (asms.length !== 11 || refs !== 77 ? `实为 ${asms.length} 条假设／${refs} 处引用，应为 11／77`
-           : `11 条假设、77 处引用逐条可解析`));
+        : (asms.length !== 11 || refs !== 83 ? `实为 ${asms.length} 条假设／${refs} 处引用，应为 11／83`
+           : `11 条假设、83 处引用逐条可解析`));
 }
 
 /* Z. 元检查：断言检查清单本身没有缺项。
@@ -981,7 +992,7 @@ const EXPECTED_IDS = [
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
-  "G1", "G2", "G3", "G4", "G6", "G7", "H1", "I1",
+  "G1", "G2", "G3", "G4", "G6", "G7", "G8", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "T1", "A2",
   "Z1",
 ];

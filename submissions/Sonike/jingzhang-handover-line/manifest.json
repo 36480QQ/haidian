@@ -75,7 +75,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ea9bf14a9d724c79f8442e8fc066310e0e30a87d902f4929e79c9f7898a06c0b"
+      "sha256": "600125cfe10e66ab8c4470209353f49b8798f18a0999717ba3e80141488387ca"
     },
     {
       "path": "agent.json",
@@ -93,7 +93,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "1ea359c6027dc5d50e768b8be8f55cfcc587d36b2c11ba73155e85864e0826cc"
+      "sha256": "6783841e37b2a8cbf6be669438f38e7e7e5b3d84e74dcd77129c7aab30ec60d8"
     },
     {
       "path": "simulation.json",
@@ -105,25 +105,25 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "cbd4da567b43777996766c740e6e865968a3170b35c3ba150997bdfa65a710cf"
+      "sha256": "45e14225cfaea4ad75dd9afe37d30a610f4bc0552651aba99f28a432bbbb1f4f"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "11bedaffcac1812d9ec2900b53e05a58bac0d4c4c399f50f928defb4a9e3a41d"
+      "sha256": "9c5c47b1baea67c5f2c66298c6c52494055945dd8148548e6f1670debf03c1e9"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "97b368441260629cf0938f7edef18b40f252fdafe34ab55fcd56323a1ac60ea1"
+      "sha256": "85d44ef30307a342e852021058defd59eec318f137b2224f54ce7383678cc149"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "2812d7be07165518876fd4df583bf837473f932dc1e41a179c08fe729766281a"
+      "sha256": "610b0fc0d1d677233f30d7188cc3c6d5b2c2e7b0f2dc3b9f5a9d9af1f3fc83b7"
     },
     {
       "path": "design_depth_matrix.json",
@@ -136,7 +136,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "048fee7ea2c47b546118520963597a04532dfcdfe2e7b5bfc65f1b91dbc39d7d"
+      "sha256": "bc97c662e4bea06df575a2c367562ce9ff63431b16bf131a34d0e0309286d230"
     },
     {
       "path": "report/narrative.md",
@@ -148,28 +148,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "aa288edd47d975fa0567afbd33f0bbc4ac2ae9b5cbd6710ee936605776d9a5cd"
+      "sha256": "5b8c180c60dccd7a2fd9dddffdf9822c7323390987e4d3dae13f40f9611c6ace"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "106c7ea9444f21325c4f509a55d66ce95d59200bb251c0249586202a298ff730"
+      "sha256": "5d5d19c04bc20a07932d28cb9d4127c26bc9c057b8db65fc0839677ab9e62c9c"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "8662bb5632bef2118662962e28bc505e28a6748753431f52faf00eed4c8463cb"
+      "sha256": "88fb587db9c31fea247a3821521aee169935089178ad8827de5acab88b4a21f8"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "9991fb8a4461591f8f56a0b12153f40af1df26a1cf3e692049df3178cb785e29"
+      "sha256": "d50071db65a3373062144c3aa2c05ab4d719cf69fe53bfe96cdca1548f1b2a8d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -183,7 +183,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "57819a8713fc0a7d6c182c066e100fb346656d4c60e07445a5777823d2c75874"
+      "sha256": "a7e74da5b6f7fc1089cef63b017308cccfb6837af4bfb3f1f6d8e8faa1da1816"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -266,7 +266,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "bb10052348c4e08e75945e9a5f9c2a15fa315c47ffb616636f3eacbd9425efe5"
+      "sha256": "72f3839460b99de1d2429434258dd49195c7b6d016329d7ec7d0978eeb576e0c"
     },
     {
       "path": "report/proposal.en.html",
@@ -274,7 +274,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "ca18d228d7b500e490c24eee6eca080e706e254e90c4d70125ff8af0caee4081"
+      "sha256": "e04a232b8de4bd143eac92d35b72e22593eafd67db2df9c41e66a6d5a6048859"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -282,7 +282,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "7bffe4fc0e2ef1a9b002e56b3d8d6bec09117a393d6c8a0f8c5d6cf386e38c1b"
+      "sha256": "254f26b72c932c54f961cb2ef04fe422ba649ceb0ea00b739c37d67fedeea05c"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -290,7 +290,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "0bedbb99e814053e98921c6f44e88e2f6610c4804d1f3254af56d3bc10917b15"
+      "sha256": "1ae26dad5d3f968950bee15face652190f19205f75ba87fea62e68f058223f5f"
     },
     {
       "path": "visual/index.en.html",
@@ -298,7 +298,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "1837fe5dbeb53c47d6d32c1a543f5139dbf75a138031c6568cc3a982f2f944d9"
+      "sha256": "42650718691786e445f3c17684f92d07cf750ad06507b99a66e5d463d0ecc5fd"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -314,7 +314,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "6a02346d2c80352ab1174215f873e026b12f4c010f801caad57200286f231e44"
+      "sha256": "18237a7a2ad81900b8b44cc9e1dff4bd759799d9112e46d9152c58ebb6949660"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -405,7 +405,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "c2a5164fbb69cfe188233a12dda040c935b2b20eddc3aad134c029ee3790fe4c"
+      "sha256": "7328d8a0d2ec036796966e92be7f15ee136fdc85caeaf7ba65171ae0169fc635"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -489,21 +489,41 @@
       "path": "visual/assets/governance/claims-audit.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "7958e26aead4410e4db712cb7e2f6527dc079da77e440d99a8c0647926fc87a8",
+      "sha256": "600b5169816c9295fd6940bc024100480e381e9e2471a591c9ed0227941f7107",
       "title_zh": "正文数值声明审计器",
       "title_en": "Prose claim auditor",
-      "description_zh": "只读、离线、零网络依赖的 66 项声明审计：复算指标、几何、二十单元、断面、布局对照、矩阵引用、来源深度、许可一致性、PDF 文字层、HTML 包内 CJK 字体与全载体 v2.0 可见版本。全部一致退出 0，任一回归退出 1。",
-      "description_en": "A read-only, offline, zero-third-party-dependency auditor with 66 checks across metrics, geometry, the twenty cells, sections, layout comparison, matrix references, source depth, licence consistency, PDF text layers, local CJK webfonts and visible v2.0 identity. It locks identity ToUnicode on technical pages and the scale and valid destinations of the OFL Noto sparse ToUnicode maps on the v2.0 covers. All matches exit 0; any regression exits 1."
+      "description_zh": "只读、离线、零网络依赖的 67 项声明审计：复算指标、几何、二十单元、断面、布局对照、矩阵引用、来源深度、许可一致性、PDF 文字层、HTML 包内 CJK 字体、全载体 v2.0 可见版本，以及七类用地在六个载体中的非颜色纹理冗余。全部一致退出 0，任一回归退出 1。",
+      "description_en": "A read-only, offline claim auditor with 67 checks across metrics, geometry, the twenty cells, sections, layout comparison, matrix references, source depth, licence consistency, PDF text layers, local CJK webfonts, visible v2.0 identity, and the seven non-colour land-use patterns across six carriers. All matches exit 0; any regression exits 1."
     },
     {
       "path": "visual/assets/governance/audit-selftest.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "3cbbbf16206fb9de7a35faa266c5b25ebc86248efc3c45353705aedc16d2d3df",
+      "sha256": "049a5464d1c7881498934b3a70dcc9967ea1cdd96e8705f7400624564397ce88",
       "title_zh": "自检脚本的回归测试",
       "title_en": "Regression test for the self-check scripts",
-      "description_zh": "对声明审计器、版本审计器与协议重跑器做 47 例回归测试：2 例正向锁定 66 项声明、A0 内嵌图 4/4 像素一致、12 账、96 规则与 48 断言；45 例阴性逐一注入已知缺陷并要求对应检查失败，其中包括交换 A0 首页预期源图及移除等宽控件的包内 CJK 回退。注入只写系统临时目录，不改投稿包。",
-      "description_en": "A 47-case regression test for the claim auditor, version auditor and protocol re-runner: two positive cases lock 66 claim checks, 4/4 pixel-identical embedded A0 figures, 12 ledgers, 96 rules and 48 assertions; 45 negative cases inject known defects one by one, including swapping the expected A0 sources and removing the package-local CJK fallback from monospaced controls. Mutations stay in the system temporary directory and never alter the package."
+      "description_zh": "对四条审计链做 48 例回归测试：2 例正向锁定 67 项声明、A0 内嵌图 4/4 像素一致、12 账、96 规则与 48 断言；46 例阴性逐一注入已知缺陷并要求对应检查失败，最新一例让两组近似用地色重新共用同一种纹理。注入只写系统临时目录，不改投稿包。",
+      "description_en": "A 48-case regression test across four audit chains: two positive cases lock 67 claim checks, 4/4 pixel-identical embedded A0 figures, 12 ledgers, 96 rules and 48 assertions; 46 negative cases inject known defects one by one, including a duplicated texture for two confusable land-use colours. Mutations stay in the system temporary directory."
+    },
+    {
+      "path": "visual/assets/governance/apply-land-use-patterns.js",
+      "role": "governance_validation",
+      "required": false,
+      "title_zh": "用地非颜色纹理构建器",
+      "title_en": "Land-use non-colour pattern builder",
+      "description_zh": "像素幂等的六载体构建器：保留七种用地原色、几何、指标和代码不变，把七种唯一纹理同步写入中英 F/02 与四套 PDF 第 2 页；首次写入 57,987 个纹理像素，再跑为 0。",
+      "description_en": "A pixel-idempotent six-carrier builder that preserves all seven base colours, geometries, metrics and codes while applying seven unique textures to both F/02 rasters and page 2 of all four PDFs; the first run changed 57,987 pixels and the second changed zero.",
+      "sha256": "200b89ae67ccd89f1802eb219aec6c9763b6b1677c2c9ef0e1b9dc11a92e7338"
+    },
+    {
+      "path": "visual/assets/governance/land-use-pattern-audit.js",
+      "role": "governance_validation",
+      "required": false,
+      "title_zh": "用地非颜色纹理审计器",
+      "title_en": "Land-use non-colour pattern auditor",
+      "description_zh": "只读审计器，直接解码两张 F/02 PNG 并渲染四套 PDF 第 2 页，逐像素核验 7 类 × 6 载体、98 个图斑／构成条／图例区域的唯一纹理、原色保留及“真实用户共测未完成”边界。",
+      "description_en": "A read-only auditor that decodes both F/02 PNGs and renders page 2 of all four PDFs to verify unique textures, retained base colours and the pending-real-user-test boundary across 7 codes x 6 carriers and 98 plan/mix/legend regions.",
+      "sha256": "cfb0eabefd54a7d3357acf434f238caa98d688f59132dcda68a30ad48814b428"
     },
     {
       "path": "assets/figures/shift-ledger.png",
@@ -710,7 +730,7 @@
       "path": "visual/assets/governance/build-webfont.js",
       "role": "verification_script",
       "required": false,
-      "sha256": "fdc7e88501b59bd08fda4441891e6380bf5aebe04c03c8432639db7d547a22a5"
+      "sha256": "e5d974e444efe74b04e885058ad86c383fbce140a17ba1e6c3585d75f66b13c1"
     },
     {
       "path": "visual/assets/governance/webfont-audit.js",
@@ -732,31 +752,31 @@
       "path": "visual/assets/governance/version-stamp-report.json",
       "role": "asset",
       "required": false,
-      "sha256": "723983952f8dbe17fd65575cb03a438d15b729f1c0ebc400273cedaad342b769"
+      "sha256": "03651976718506f1e0322a4d991f9e1a685a8cd7b5e5d77acc6baca2b4e2d310"
     },
     {
       "path": "visual/assets/governance/pdf-version-report.json",
       "role": "asset",
       "required": false,
-      "sha256": "2908adbd3397455971ffb8aad126783fff081c592df02acf169ab9abe5991e3e"
+      "sha256": "2a275f10960f93cc381fd81e43339d41995d3087ff9ac2c9b550dd11976ecd6d"
     },
     {
       "path": "visual/assets/governance/noto-cjk-subset.css",
       "role": "asset",
       "required": true,
-      "sha256": "3ac98c16859c9c5fd8833f58c372c238aafd098742f51a3deba81ce908e7adb8"
+      "sha256": "b073c88f31305127a940f72566704a17f35411500fa24856975252a78f1f84ba"
     },
     {
       "path": "visual/assets/governance/noto-cjk-subset.coverage.json",
       "role": "asset",
       "required": true,
-      "sha256": "f94191e9d7463c39418c52b11614926ae5f4557428a8974da0eb725d34b6595f"
+      "sha256": "29278c09de879d2fea136747af5e377e6da146757ffd4ae2679a52f94b3e01aa"
     },
     {
       "path": "visual/assets/governance/noto-cjk-subset.rights.json",
       "role": "asset",
       "required": true,
-      "sha256": "076b6033058a864b9834f16bc858062f3dd9d3cdc8c22b7e6f81901f68ccacd8"
+      "sha256": "171ed7981965029dd73c7d83c43f92f0ae9746e08b3a30adaa8c4acbf88db654"
     },
     {
       "path": "visual/assets/public-handover-table-3d.json",

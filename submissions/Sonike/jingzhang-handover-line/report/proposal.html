@@ -52,6 +52,12 @@ code {
   padding: 0.1em 0.35em;
   border-radius: 4px;
 }
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 .summary { color: var(--muted); font-size: 17px; }
 .package-version { color: var(--accent); font: 700 12px/1.4 monospace; letter-spacing: .12em; }
 .translation-link a { color: var(--accent); font-weight: 700; }
@@ -236,6 +242,7 @@ code {
 <p>指标不是为了证明方案永远正确，而是让方案能被及时推翻。详细采样、统计、异常处理和公开格式见技术证据册与 <code>visual/assets/governance/measurement-protocol.json</code>。</p>
 <h2>风险、版权与合规说明</h2>
 <div class="proposal-table"><table><thead><tr><th>主要风险</th><th>当前控制</th><th>触发后的回滚</th></tr></thead><tbody><tr><td>临时边界被误读为正式红线</td><td>全图虚线、低置信度、临时模型注记</td><td>停止精确落位和法定解读，等待官方几何重算</td></tr><tr><td>智能层失联、越权或误导</td><td>人工窗口、物理停用、双联角色</td><td>关闭智能层，基础服务继续</td></tr><tr><td>个人数据过采或无法撤回</td><td>最小数据、合成夹具、删除断言</td><td>停止采集并清除临时记录</td></tr><tr><td>老人、残障者或无设备者被排除</td><td>触觉、纸本、电话、固定导视与人工服务</td><td>不开放智能层，先修复路径</td></tr><tr><td>临时试点长期化</td><td>S 级可移动构件、撤场清单、维护责任</td><td>当日撤除，空间恢复普通使用</td></tr><tr><td>概念方案被宣传为政府决定</td><td>全包统一边界声明与来源登记</td><td>撤回误导材料并发布订正</td></tr></tbody></table></div>
+<p>针对两组在色觉模拟下接近的用地色，F/02 与中英 A0／A3 第 2 页现已在保留原色、代码、面积和几何不变的前提下，为七类用地分别叠加七种唯一纹理；图斑与图例不再只靠颜色区分。随包脚本逐像素核验 7 类 × 6 载体和 98 个区域，但<strong>这仍不是低视力或色觉障碍真实用户共测</strong>；公众部署前须由无障碍专业人员与真实参与者完成共测并保留失败与修复记录 [assumption:A-CONTRAST-001] <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="WCAG-CONTRAST" title="标准：WCAG-CONTRAST">标准</sup>。</p>
 <p>本包不使用个人隐私、非公开政府数据或企业专有信息，不作诊断、判决、资格、评分和审批决定。任何涉及公共安全、结构、消防、交通、市政、文保、无障碍、法律或个人权益的判断，必须由具备相应资质的专业团队依法依规复核 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GENERATIVE-AI-INTERIM-MEASURES" title="标准：GENERATIVE-AI-INTERIM-MEASURES">标准</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup>。</p>
 <p>全部成果<strong>不代表任何机构，不得被表述为政府背书或官方认可，不得被表述为实施批准或已确定安排</strong>。空间、品牌、活动、责任组织、成本等级与工序均为概念建议，可供专业、运营和传播团队深化研究。</p>
 <p>包内正文、几何推演、程序化图件、PDF、离线网页与合成演练由参与者和已披露智能体协作完成；外部案例只转述公开机制，不复制照片、地图、商标或受保护版式。字体、生成工具、封面生成图、音视频与许可边界逐项登记在 <code>sources.json</code>、<code>manifest.json#rights_inventory</code> 与 <code>report/copyright_statement.md</code>。</p>

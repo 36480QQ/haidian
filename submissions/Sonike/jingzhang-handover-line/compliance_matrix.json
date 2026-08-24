@@ -1965,17 +1965,17 @@
     },
     {
       "expectation_id": "CLAIM_AUDIT",
-      "assertion_zh": "正文与交付物中可复算的数值、结构和呈现声明共 66 项，逐条与结构化文件一致。覆盖指标、几何、二十单元、断面算术、双语布局、矩阵引用、来源与许可、四套 PDF 文字层、四个 HTML 的包内 CJK 字体及 24 类等宽控件显式回退、全载体 v2.0 可见版本，以及 A0 首页内嵌图 4/4 的源图像素绑定。断言 ID 全集与数量另由不走登记函数的结构性守卫锁定，防止检查自身被静默删除。",
+      "assertion_zh": "正文与交付物中可复算的数值、结构和呈现声明共 67 项，逐条与结构化文件一致。覆盖指标、几何、二十单元、断面算术、双语布局、矩阵引用、来源与许可、四套 PDF 文字层、四个 HTML 的包内 CJK 字体及 24 类等宽控件显式回退、全载体 v2.0 可见版本、A0 首页内嵌图 4/4 的源图像素绑定，以及七类用地在六个载体中的唯一纹理。断言 ID 全集与数量另由不走登记函数的结构性守卫锁定。",
       "evidence_in_package": "visual/assets/governance/claims-audit.js",
       "covered_by_self_check_id": null,
-      "independent_verification_zh": "`node visual/assets/governance/claims-audit.js` 输出「66/66 条声明与包内数据一致」且退出码 0；G6 输出 4 页／251,232 bytes／1,507 组可见字符／24 类等宽控件，G7 输出 26 图件／4 套 38 页 PDF／A0 内嵌图 4/4 像素一致／6 静态载体。阴性测试见同目录 audit-selftest.js。**该脚本不在 CI 或 preflight 中被调用**，须手动执行。"
+      "independent_verification_zh": "`node visual/assets/governance/claims-audit.js` 输出「67/67 条声明与包内数据一致」且退出码 0；G6 输出 4 页／251,392 bytes／1,511 组可见字符／24 类等宽控件，G7 输出 26 图件／4 套 38 页 PDF／A0 内嵌图 4/4 像素一致／6 静态载体，G8 输出 7 类 × 6 载体／98 个纹理区域检查。阴性测试见同目录 audit-selftest.js。**该脚本不在 CI 或 preflight 中被调用**，须手动执行。"
     },
     {
       "expectation_id": "AUDITOR_SELFTEST",
-      "assertion_zh": "声明审计器、版本审计器与协议重跑器共经过 47 例回归测试：2 例正向锁定完整规模与 ID 序列，45 例阴性逐一注入已知缺陷并要求对应检查退出 1。最新两例分别交换 A0 首页预期源图，以及只移除等宽控件的包内 CJK 回退，证明审计器能抓住文本层与栅格层版本分岔、以及 body 字体正确但控件字体栈重置的缺陷。所有扰动只写系统临时目录，不改投稿包。",
+      "assertion_zh": "声明审计器、版本审计器、用地纹理审计器与协议重跑器共经过 48 例回归测试：2 例正向锁定完整规模与 ID 序列，46 例阴性逐一注入已知缺陷并要求对应检查退出 1。最新一例把 1401 的点纹退成与 0701 相同的横线，证明七类虽都有登记、两组近似色却重新共用纹理时仍会被拒绝。所有扰动只写系统临时目录，不改投稿包。",
       "evidence_in_package": "visual/assets/governance/audit-selftest.js",
       "covered_by_self_check_id": null,
-      "independent_verification_zh": "`node visual/assets/governance/audit-selftest.js` 输出「47/47 例通过（2 正向 ＋ 45 阴性）」且退出码 0；任何一例未通过即退出 1 并打印该例期望与实得。缺陷注入一律写进系统临时目录，**包内文件不被改动**，跑完即删。**该脚本同样不在 CI 或 preflight 中被调用**，须手动执行；已就此向上游提 Issue #3571 建议 participant_preflight.py 支持运行本节声明的自检命令。"
+      "independent_verification_zh": "`node visual/assets/governance/audit-selftest.js` 输出「48/48 例通过（2 正向 ＋ 46 阴性）」且退出码 0；任何一例未通过即退出 1 并打印该例期望与实得。缺陷注入一律写进系统临时目录，**包内文件不被改动**，跑完即删。**该脚本同样不在 CI 或 preflight 中被调用**，须手动执行；已就此向上游提 Issue #3571 建议 participant_preflight.py 支持运行本节声明的自检命令。"
     }
   ],
   "self_check_expectations_note_zh": "三个矩阵的 self_check_ids 引用的就是本表的 expectation_id。此前这些标签只在矩阵里出现、包内没有定义，而本包的 G01 闸门声称「三个矩阵里的每一条引用都必须能在包内解析到实体」——该自陈对其中 16 个标签（81 处引用）并不成立。本表把它们逐条定义在矩阵自身，因此引用与定义同文件可解析。covered_by_self_check_id 只取 self_check.json 中真实存在的四个 check_id。",

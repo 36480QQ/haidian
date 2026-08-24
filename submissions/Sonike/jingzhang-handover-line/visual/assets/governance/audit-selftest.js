@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * 京张交接线 · 三个自检脚本的回归测试（离线、只读包内文件）
+ * 京张交接线 · 四条审计链的回归测试（离线、只读包内文件）
  *
  * 为什么需要它：同目录的 claims-audit.js 与 protocol-check-runner.js 都会自报「全部一致」，
  * 而一个只会通过的自检和没有自检是等价的。本包已经两次栽在这件事上：
@@ -29,9 +29,10 @@ const PKG = path.resolve(HERE, "../../..");
 const AUDITOR = "claims-audit.js";
 const RUNNER = "protocol-check-runner.js";
 const VERSION_AUDITOR = "version-audit.js";
+const PATTERN_AUDITOR = "land-use-pattern-audit.js";
 const EVIDENCE = "assets/media/technical-evidence-book.md";
 
-/* 这份 66 项 ID 全集是**刻意重复**的第二份来源。
+/* 这份 67 项 ID 全集是**刻意重复**的第二份来源。
    claims-audit.js 里也有一份；两份不一致就说明有人动了其中一份，本文件会报错。
    判据与被测对象放在同一处，等于没有判据。 */
 const IDS = [
@@ -40,7 +41,7 @@ const IDS = [
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
-  "G1", "G2", "G3", "G4", "G6", "G7", "H1", "I1",
+  "G1", "G2", "G3", "G4", "G6", "G7", "G8", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "T1", "A2", "Z1",
 ];
 const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48, rollback_evidence_checks: 12 };
@@ -94,7 +95,7 @@ const cases = [];
 const positive = (label, fn) => cases.push({ label, kind: "正向", fn });
 const negative = (label, fn) => cases.push({ label, kind: "阴性", fn });
 
-positive("claims-audit.js 全部通过，且恰好跑 66 项、ID 与本文件独立记录的全集逐位相同", () => {
+positive("claims-audit.js 全部通过，且恰好跑 67 项、ID 与本文件独立记录的全集逐位相同", () => {
   const r = runAuditor();
   if (r.code !== 0) return `退出码 ${r.code}，应为 0：${(failedIds(r).join("、") || r.stderr).slice(0, 300)}`;
   if (!r.json || r.json.all_match !== true) return "all_match 不为真";
@@ -210,6 +211,12 @@ negInput("Web 字体覆盖记录删掉「京」字 —— 字体文件仍在、C
 negInput("图件版本报告把 package_version 改回 v1.15 —— 二进制哈希仍全部相符也必须拒绝",
   { "visual/assets/governance/version-stamp-report.json": jsonMutated(
       "visual/assets/governance/version-stamp-report.json", (d) => { d.package_version = "v1.15"; }) }, ["G7"]);
+
+negInput("用地纹理登记把 1401 的点纹理改成 0701 的横线 —— 七类仍都有登记，但两组近似色重新共用同一种非颜色编码",
+  { "visual/assets/governance/figure-contrast-report.json": jsonMutated(
+      "visual/assets/governance/figure-contrast-report.json", (d) => {
+        d.non_color_redundancy.land_use_encodings.find((item) => item.code === "1401").pattern_id = "horizontal";
+      }) }, ["G8"]);
 
 negative("A0 首页内嵌图的预期顺序调换 —— 可搜索页脚全为 v2.0 也必须被像素绑定拦住", () => {
   const script = scriptMutated(VERSION_AUDITOR, (text) => text.replace(
@@ -437,8 +444,8 @@ const results = cases.map((c) => {
 const bad = results.filter((r) => !r.pass);
 const out = {
   selftest: "audit-selftest.js",
-  targets: [AUDITOR, RUNNER, VERSION_AUDITOR],
-  scope_zh: "只检验三个自检脚本会不会漏检：正向须通过，注入已知缺陷须退出 1 并报出指定检查项。不评价设计内容。",
+  targets: [AUDITOR, RUNNER, VERSION_AUDITOR, PATTERN_AUDITOR],
+  scope_zh: "只检验四条审计链会不会漏检：正向须通过，注入已知缺陷须退出 1 并报出指定检查项。不评价设计内容。",
   cases_run: results.length,
   cases_passed: results.length - bad.length,
   all_pass: bad.length === 0,
@@ -453,6 +460,6 @@ if (process.argv.includes("--json")) {
     if (!r.pass) console.log(`            ${r.why}`);
   }
   console.log(`\n${out.cases_passed}/${out.cases_run} 例通过（${cases.filter((c) => c.kind === "正向").length} 正向 ＋ ${cases.filter((c) => c.kind === "阴性").length} 阴性）`);
-  console.log(out.all_pass ? "三个自检脚本都仍拦得住已知缺陷" : "有用例未通过：自检脚本存在漏检");
+  console.log(out.all_pass ? "四条审计链都仍拦得住已知缺陷" : "有用例未通过：审计链存在漏检");
 }
 process.exit(out.all_pass ? 0 : 1);
