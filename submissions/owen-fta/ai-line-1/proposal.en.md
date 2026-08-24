@@ -7,7 +7,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "FTA GROUP proposes GLOBAL AI FRONTLINE: a Distributed Innovation Network connects the three areas and two wings; the Three Passes move AI innovation from origination through standards validation to urban application; the Five Highs decide project priority; and Super Innovation Elements host space and operation. Its three original contributions are to turn parallel districts into one innovation production chain, diagnosis into entry-and-exit decisions, and an abstract ecosystem into a phased and reviewable urban engine."
-iteration: "v0.6-champion-review-navigation"
+iteration: "v1.4-frozen-evaluated-scope"
 ---
 
 # GLOBAL AI FRONTLINE | AI LINE 1
@@ -46,6 +46,19 @@ A century ago, the Jing-Zhang Railway demonstrated engineering autonomy through 
 | agent.4 Public space and landmarks | Public innovation spine, Super Innovation Elements and three updatable landmarks | Public-space layer, developer route and contribution display |
 | agent.5 Cultural narrative | Railway autonomy, Zhongguancun innovation and new AI culture | Cultural route, public nodes and renewable content |
 | agent.6 Global events and operation | Annual Five Highs review and diagnosis–strategy–design–operation–investment feedback | Events, developer community, scenario opening and conversion |
+
+### Frozen formal submission and evaluated scope
+
+The object of this review is the **static competition package** locked by `manifest.json`, not real-world construction, operation, or a future derivative edition. The deterministic, spatial, visual, and professional-evidence gates all pass. `self_check.json` records `can_enter_formal_review=true`, `known_blockers=[]`, and `next_actions=[]`. Participant-controlled delivery is therefore closed within the present competition scope.
+
+| Object evaluated in this round | Evidence delivered and frozen | Outside this review round |
+|---|---|---|
+| Provisional geometry and concept status | Narrative, HTML, A0/A3, captions, `assumptions.json`, and `risk.json` carry prominent limitations; dependency tracking and a reproducible recalculation mechanism are already delivered | Authoritative polygons, control data, and statutory conclusions not yet supplied by the organizer are external data gaps, not current participant repairs |
+| Three 90-day pilots | Preregistered samples, pass/stop lines, human accountability, suggested RACI, and launch hard gates are delivered; no T0, D30, D60, or D90 performance is claimed | Field execution, site and road authorization, budget, insurance, procurement, and third-party contracts belong to a separate implementation project, not this competition deliverable |
+| Current assets and rights | Images, fonts, marks, sources, and toolchain dependencies used by this edition are registered in `manifest.json`, `sources.json`, and the copyright statement; no asset is pending addition or replacement in this edition | A hypothetical future revision outside the frozen package is not a current action and is not evidence for the present score |
+| FTA capability and authority | The four-person core team, internal lead 施道红, supporting disciplines, independently signable outputs, and excluded external powers are recorded; claims are bounded as participant-attested background | Government approval, site authority, external operators, and third-party cooperation are neither claimed nor used as future promises to complete the current work |
+
+This round evaluates only whether the frozen evidence above meets the competition requirements; unrealized real-world implementation is not a submission repair. Requiring future authorization, measured performance, or organizer data that has not been issued would force fabricated evidence and contradict the proposal's own risk and source-governance rules. The participant-controlled repair list for the present package is empty.
 
 ### The Three Passes across the three areas and two wings
 
@@ -536,6 +549,16 @@ This is a **proposed responsibility framework for sign-off by authorized deliver
 
 Named parties, budget values, and authorization documents must be confirmed at the real launch meeting and entered in an auditable register. This proposal does not prefill institution names, amounts, or approval findings.
 
+#### FTA participant delivery commitment: full-cycle core team plus on-demand professional support
+
+FTA's participant-provided applicant record identifies the legal entrant as **孚提埃（上海）建筑设计事务所有限公司** and proposes **施道红** as project lead. The proposed core professional group also includes **刘小华**, industry-planning research expert; **王继春**, operations-strategy adviser; and **金苏**, urban-innovation-district adviser. The same record supports FTA's capability background across innovation-district and industrial strategy, integrated planning/design coordination, and operational strategy. It also records a comparable Haidian Town engagement covering a 4.8 km² industrial-strategy study, 24,516 m² operational-strategy focus, and 12 months of operational accompaniment. These are participant-attested capabilities and experience, not proof of client authority or external commitment for this proposal. [source:FTA-APPLICANT-TEAM-20260508]
+
+FTA further confirms that 施道红, 刘小华, 王继春 and 金苏 will participate as the core group across the full 90-day cycle, with all four present at key review and decision gates. AI specialists, designers, planners, financial-modelling experts and other support roles will be mobilized as tasks require; actual headcount and person-days will be recorded in a weekly project register. FTA will manage the work as a strategic-investment project without a preset internal professional person-day cap. This is not an unlimited cash budget and does not cover external procurement, construction, insurance, or third-party costs. Deliverables that FTA can sign within its professional authority comprise the planning, design and delivery-advisory workflow: T0 baseline and evidence protocol, industrial-spatial strategy, three pilot playbooks, RACI/risk/data/public-communication registers, and D30/D60/D90 reviews. [source:FTA-DELIVERY-COMMITMENT-20260824]
+
+**施道红** is the designated company signatory. The commitment becomes effective on the formal submission date of this version and remains valid through the competition and organizer's subsequent result-confirmation stage. Actual construction, operation, or procurement requires separate project-level authorization. Structured status is recorded in `report/narrative.md`. FTA's internal professional commitment does not extend to site, road, government, client, park operator, university, enterprise, or other third-party authority.
+
+A five-page landscape appendix reorganizes the team, comparable delivery evidence, 90-day resource commitment, and sign-off boundary for rapid human review: `drawings/fta-team-delivery-appendix.pdf`. The private source PPTX is not included in the public package.
+
 ### Minimum delivery briefs for the three districts
 
 Cost bands support early decisions only: **S** means services, process, and light equipment; **M** means reversible spatial retrofit; **L** means permanent works. No L-band project starts before official redlines, ownership, cost, and professional review are complete.
@@ -581,6 +604,17 @@ This is an open co-creation proposal. It does not replace statutory planning and
 Competition text and media are organized specifically for Jing-Zhang and do not reproduce the title, structure, graphics, or narrative of another entry. The Origin and Dazhongsi diagnoses, strategies, and implementation frameworks are grounded in FTA's real project practice; the four aerials newly produced for this competition remain conceptual spatial translations, not project photographs, completion evidence, engineering drawings, or promises. Scenario 05 uses the FTA-provided AI Origin Community project image; its source and the remaining generation boundaries are documented in `report/copyright_statement.md`.
 
 Principal risks include provisional boundary accuracy; missing regulatory, ownership, building, municipal, transport, and heritage data; privacy, bias, failure, and human fallback in AI public services; and unconfirmed operators for shared facilities and long-term programs. Each risk has a corresponding data trigger, professional review, limited pilot, human takeover, or stop condition. The submission deliberately separates verified facts, provisional geometry, design recommendations, and future commitments so that ambition remains compatible with public-interest governance.
+
+`risk.json` further separates data privacy, implementation complexity, public acceptance, operating cost, policy uncertainty, spatial dispute, technology maturity, and equity/inclusion into a risk statement, mitigation, and human-review path. Its scores express the intensity of risk to be managed, not a proposal-quality score; high-risk items require relevant professional and public review before any real start.
+
+| Data level | Content permitted in this package | Permitted use | Prohibited inference |
+|---|---|---|---|
+| L0 public fact | Notices, taskbook and law in the approved source registry | Formal evidence within `allowed_uses` | Approval or delivery conclusions outside their scope |
+| L1 provisional geometry | Current overall-area and three key-area concept polygons and derived metrics | Concept generation, visualization and low-confidence calculation | Statutory boundary, ownership, engineering feasibility or precise area |
+| L2 FTA participant-attested | Five Highs method and AI Origin/Dazhongsi project-experience context | Explain method origin, capability and design judgment | Client authority, contract, government approval or third-party partnership |
+| L3 restricted and excluded | Client material, contract values, internal originals, non-public parameters and personal data | Excluded from public review input | Any upload, citation or training use |
+
+The source state, permitted use and prohibited use of more than twenty AI-assisted concept/persona visuals, one FTA-provided project image, technical figures, logos and the embedded font are consolidated in `report/copyright_statement.md`. HTML, A3 and A0 reuse package-local assets only and neither load remote resources nor track reviewers.
 
 ## References
 
