@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v1.4-fixes-r2 - 2026-08-24（付费 AI 评审 88/100 request-changes → 8 项必改全部落地）
+
+付费评审（exact head 788266805）四门本地 Gate 全 PASS；建议 request-changes 的 8 项「必须完成的下一步」已逐项响应：
+
+- **中文 HTML 缺字（□）**：评审渲染环境无 CJK 字体。修复：包内新增 `assets/fonts/` Noto Sans CJK SC 子集字体（SIL OFL 1.1，400/700，按方案文本子集化约 900KB），`report/proposal.html` 与 `visual/index.html` 均以 `@font-face` 内嵌引用 + 字体栈补「Noto Sans SC」回退；子集已对全部 HTML 字符 950/950 覆盖验证
+- **8 个 CASE-* 案例来源补全**：sources.json 逐项补 title/publisher/url/published_at/reuse_boundary（官方页 URL 均已重新核实）；「Cambridge The Foundry」事实修正——实为马萨诸塞州剑桥市（MA）市属社区艺术与 STEAM 中心（免费社区界面+滑动费率免卡预约），非创新区，zh/en 案例表同步订正
+- **开篇区级口径**：proposal.md/en.md 开篇「走廊两侧集聚北京 60%…17.9%」改为「这条走廊所在的海淀区集聚…（均全区级统计口径，2025 公报，非走廊沿线实测）」；数据节结语「走廊两侧已是 AI 要素最密集城区」→「海淀区已是北京 AI 要素最密集城区」
+- **两个经济推导指标**：tech_contract_strength_index 与 lab_density_per_research_area 增补「地理范围不匹配」与「禁止用途」披露（分子=全区口径、分母=临时概念范围，二者不构成对应；仅作探索性背景指标，不得用于场地绩效/实施/投资判断）
+- **分区口径统一**：design_depth_matrix「九个无缝拼合分区」与 compliance_matrix「用地 9 分区」→「十四个/14 分区」（生成脚本常量未同步所致，已改 build_matrices 常量防复发）
+- **图面**：key-areas 底部说明改图底全局单条（原三卡内 6pt 文字互相挤压重叠）；A3 竖图改竖盒布局（消除左右留白与页中空白带）+ 单图页全宽横盒；A0 右列 2×2 分格匹配图幅比例；表字号与警示说明字号统一放大
+- **中英实质等价**：本轮全部改动 zh/en 成对同步；结构对齐复核 42/42 标题、157/157 表格行
+
 ## v1.4-fixes - 2026-08-24（评审后全面审查修复）
 
 全面审查（引用闭环 + 双语等值 + 原生视觉图纸复核）后集中修复：

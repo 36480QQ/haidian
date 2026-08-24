@@ -17,7 +17,7 @@ iteration: "v1.4"
 
 > Let the same corridor complete its second infrastructure leap.
 
-One hundred years ago, Zhan Tianyou presided over the construction of China's first self-designed trunk railway here; the full line opened to traffic on 1909-09-24, with the opening ceremony held at Nankou on 1909-10-02.[source:JHZ-PEOPLE-1909] [source:JHZ-ARCHIVES] Today, the corridor flanking the Jing-Zhang railway heritage park concentrates 60% of Beijing's registered large models and 17.9% of the nation's key national laboratories. This proposal defines **the corridor as an infrastructure belt of the intelligent era - the "Compute Belt"**. Rails were the infrastructure of the industrial era; compute is the infrastructure of the intelligent era. The corridor's leap from "rail belt" to "compute belt" is the second unfolding of infrastructure logic on the same land.[source:OFFICIAL-ANNOUNCEMENT] [source:GONGBAO-2025] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
+One hundred years ago, Zhan Tianyou presided over the construction of China's first self-designed trunk railway here; the full line opened to traffic on 1909-09-24, with the opening ceremony held at Nankou on 1909-10-02.[source:JHZ-PEOPLE-1909] [source:JHZ-ARCHIVES] Today, the Haidian District where this corridor is located concentrates 60% of Beijing's registered large models and 17.9% of the nation's key national laboratories - all figures are district-level statistical returns from the 2025 Statistical Bulletin, not corridor-side field measurements (see "Data and Evidence"). This proposal defines **the corridor as an infrastructure belt of the intelligent era - the "Compute Belt"**. Rails were the infrastructure of the industrial era; compute is the infrastructure of the intelligent era. The corridor's leap from "rail belt" to "compute belt" is the second unfolding of infrastructure logic on the same land.[source:OFFICIAL-ANNOUNCEMENT] [source:GONGBAO-2025] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 
 ![Overall concept and system boundary](assets/figures/site-overview.en.png)
 
@@ -80,7 +80,7 @@ The three areas and two wings are not five parallel parks but the spatial mappin
 | Punggol Digital District, Singapore | Digital platform linked with real-environment trials | Centralized surveillance architecture, unexamined data scope |
 | Kalasatama, Helsinki | Small-scale, time-boxed agile trials with real users; expiry-and-exit decisions | Mandatory citizen participation |
 | Seoul AI Hub | Staged services: education-incubation-research-open innovation | Funding scale and policy commitments |
-| The Foundry, Cambridge | Innovation district with a no-card community interface | Fixed area metrics |
+| The Foundry, Cambridge (MA) | City-owned community arts & STEAM centre: free community interface, sliding-scale card-free reservations | Fixed area metrics |
 | Shenzhen | AI decomposed into accountable scenario lists | Skyline, density, city-wide platform scale |
 | Chongqing | Small-cut closed loops (verify-warn-classify-coordinate) | Mountainous form, internet-famous landscaping |
 | Station F, Paris | Project + daily amenities for startup services | Campus scale, operating model replication |
@@ -90,7 +90,7 @@ These cases come from public institutional or project pages; they support mechan
 
 ### Haidian's Data Base: Why This Corridor Can Be a Compute Belt
 
-Public district data show innovation factors already agglomerating here: 123 registered large models (60% of Beijing), 92 national key laboratories (63.4% of the city, 17.9% of the nation), 405.31 billion CNY technology contract turnover (+6.5%), 188.71 billion CNY computer/communication/electronics manufacturing output (+7.7%), and information/software/IT-services investment growing 1.5x. These data are the macro evidence for the Compute Belt positioning - the corridor already hosts the densest AI factors in the city, and this proposal's spatial design gives existing agglomeration a structure.[source:GONGBAO-2025] [metric:tech_contract_strength_index] [metric:lab_density_per_research_area]
+Public district data show innovation factors already agglomerating here: 123 registered large models (60% of Beijing), 92 national key laboratories (63.4% of the city, 17.9% of the nation), 405.31 billion CNY technology contract turnover (+6.5%), 188.71 billion CNY computer/communication/electronics manufacturing output (+7.7%), and information/software/IT-services investment growing 1.5x. These data are the macro evidence for the Compute Belt positioning - Haidian District already hosts the densest AI factors in the city, and this proposal's spatial design gives existing agglomeration a structure.[source:GONGBAO-2025] [metric:tech_contract_strength_index] [metric:lab_density_per_research_area]
 
 ### Regional Synergy: How the Compute Belt Fits the Jing-Jin-Ji Innovation Network
 
