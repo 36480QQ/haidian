@@ -395,6 +395,18 @@ These thresholds are **future decision lines, not current performance**. Each pi
 | Dazhongsi active ground floor + continuous walking prototype | ≥240 crossing observations, ≥120 intercept surveys, ≥18 observation periods | 100% accessibility checklist; median detour/arrival time improves ≥20% from T0; conflict rate does not worsen and targets ≥20% improvement; zero major traffic incident | Stop if conflict worsens, a major incident occurs, or professional review fails; scope is local/approach conditions only |
 | Zhongzhiyuan bounded safety test garden | ≥30 supervised sessions, ≥5 teams, ≥10 emergency-stop drills | 100% registration/sign-off; 100% successful stops; zero uncontrolled incursion; median human takeover ≤30 seconds; 100% timely incident closure | Stop on failed emergency stop, incursion, major bodily risk, or loss of accountable operator |
 
+#### Proposed RACI for the three pilots: confirm accountability before launch
+
+This is a **proposed responsibility framework for sign-off by authorized delivery parties**, not a claim of existing authority, funding, approval, or partnership. R is the proposed delivery role, A is the single proposed accountable role, C identifies professional and public parties that must be consulted, and I identifies parties that must remain informed. Until A, site authority, budget, insurance, and approvals are signed, every pilot remains **unconfirmed and must not launch**.
+
+| Pilot | R - proposed delivery | A - proposed accountability | C - required consultation | I - continuous information | Pre-launch sign-offs |
+|---|---|---|---|---|---|
+| AI Origin Open Living Room + PoC service | Authorized community/park operator and PoC service team | One project owner to be designated by the competent site and operating body | University transfer, data/privacy, accessibility, and user representatives | Residents, participant teams, and the public | Site permission, budget source, data notice, public-liability insurance, human service, and complaint flow |
+| Dazhongsi active ground floor + continuous walking prototype | Authorized district operator, mobility-observation team, and accessibility professionals | One project owner to be designated by the competent road/site body | Transport, rail, fire, accessibility, frontage owners, and public representatives | Pedestrians, cyclists, businesses, and communities | Road/site authority, T0 baseline, mobility review, event plan, insurance, and stop authority |
+| Zhongzhiyuan bounded safety test garden | Authorized park operator, device teams, and safety evaluators | One safety owner to be designated by the competent park body | Fire, emergency, data security, equipment insurance, test teams, and public observers | Park users, adjacent users, and regulatory interfaces | Enclosure permission, equipment register, insurance, emergency-stop drill, response plan, responsibility and exit agreement |
+
+Named parties, budget values, and authorization documents must be confirmed at the real launch meeting and entered in an auditable register. This proposal does not prefill institution names, amounts, or approval findings.
+
 ### Minimum delivery briefs for the three districts
 
 Cost bands support early decisions only: **S** means services, process, and light equipment; **M** means reversible spatial retrofit; **L** means permanent works. No L-band project starts before official redlines, ownership, cost, and professional review are complete.

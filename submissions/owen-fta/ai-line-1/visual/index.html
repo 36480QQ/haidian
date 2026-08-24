@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>全球AI第一线｜AI LINE 1：三区两翼、多点协同的分布式创新网络 - proposal report</title>
+<link rel="stylesheet" href="assets/cjk-font.css">
 <style>
 :root {
   --navy: #063844;
@@ -21,7 +22,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: "AILineCJK", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
@@ -395,6 +396,10 @@ code {
 <h3>三个90天预注册试点：先写判定规则，再看结果</h3>
 <p>以下门槛在启动前登记，是<strong>未来判定线而非现状成绩</strong>。三个试点均在第0周锁定T0基线，在D30、D60、D90复测；原始记录、责任签认、异常与退出决定进入可审计台账。完整字段见<code>simulation.json</code>。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="pilot_protocol_count" title="指标：pilot_protocol_count">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="pilot_duration_days" title="指标：pilot_duration_days">指标</sup></p>
 <div class="proposal-table"><table><thead><tr><th>试点</th><th>最小样本</th><th>D90通过线</th><th>暂缓／停止线</th></tr></thead><tbody><tr><td>AI原点开放客厅＋概念验证服务</td><td>≥120名去重参与者、≥8场公开活动、≥6支概念验证团队</td><td>重复参与≥30%；≥2支团队形成可追溯验证或转介；体验中位数≥4/5；重大隐私／安全事件=0</td><td>样本不足只延长不外推；重大事件未关闭或人工公共服务无法维持即停</td></tr><tr><td>大钟寺公共首层＋连续步行原型</td><td>≥240次过街观察、≥120份拦截访谈、≥18个观测时段</td><td>无障碍检查100%；绕行／到达时间中位数较T0改善≥20%；冲突率不恶化且目标改善≥20%；重大交通事件=0</td><td>冲突率恶化、重大事件或专业复核不通过即停；仅覆盖辅助路／支路／到达段</td></tr><tr><td>众智园可围合安全测试花园</td><td>≥30次受监管测试、≥5支团队、≥10次急停演练</td><td>登记与责任签认100%；急停成功100%；未受控越界=0；人工接管中位数≤30秒；事件按期关闭100%</td><td>急停失败、越界、重大人身风险或责任主体退出即停</td></tr></tbody></table></div>
+<h4>三项试点建议 RACI：先确认责任，再启动</h4>
+<p>下表是供有权实施主体签认的<strong>建议责任框架</strong>，不是对任何机构的既定授权、资金承诺或合作确认。R 为建议执行角色，A 为唯一建议问责角色，C 为启动前必须协商的专业与公众角色，I 为应持续公开告知的对象；在 A、场地授权、预算、保险和审批尚未签认前，试点状态一律为“待确认／不得启动”。</p>
+<div class="proposal-table"><table><thead><tr><th>试点</th><th>R｜建议执行</th><th>A｜建议问责</th><th>C｜必须协商</th><th>I｜持续知情</th><th>启动前签认项</th></tr></thead><tbody><tr><td>AI原点开放客厅＋概念验证服务</td><td>经授权的社区／园区运营团队、概念验证服务团队</td><td>待有权场地与运营主体指定的单一项目负责人</td><td>高校成果转化、数据与隐私、无障碍、用户代表</td><td>周边居民、参与团队与公众</td><td>场地许可、预算来源、数据告知、公众责任险、人工服务与投诉流程</td></tr><tr><td>大钟寺公共首层＋连续步行原型</td><td>经授权的片区运营、交通观察和无障碍专业团队</td><td>待道路／场地有权主体指定的单一项目负责人</td><td>交通、轨道、消防、无障碍、沿街业主与公众代表</td><td>行人、骑行者、周边商户与社区</td><td>道路及场地授权、T0基线、交通复核、活动预案、保险与停止权限</td></tr><tr><td>众智园可围合安全测试花园</td><td>经授权的园区运营、设备团队和安全评测团队</td><td>待园区有权主体指定的单一安全负责人</td><td>消防、应急、数据安全、设备保险、测试团队与公众观察者</td><td>园区使用者、相邻空间使用者与监管接口</td><td>围合许可、设备清单、保险、急停演练、应急预案、责任与退出协议</td></tr></tbody></table></div>
+<p>RACI 名单、预算数值和授权文件必须在真实启动会上由相关主体确认并进入可审计台账；本方案不预填机构名称、金额或审批结论。</p>
 <h3>三区最小实施任务书：把概念落到责任、成本级与停线</h3>
 <p>成本级仅用于前期决策：<strong>S</strong>为服务、流程和轻量设备配置，<strong>M</strong>为可逆空间改造，<strong>L</strong>为永久工程；在正式红线、权属、造价和专业审查完成前，本方案不启动L级建设。</p>
 <div class="proposal-table"><table><thead><tr><th>节点</th><th>90天最小空间包</th><th>建议牵头角色</th><th>成本级</th><th>启动前置条件</th><th>D90过线／停线</th></tr></thead><tbody><tr><td>AI原点社区</td><td>开放客厅、概念验证服务台、公开项目台账</td><td>社区／园区运营＋高校转化＋中关村服务翼</td><td>S—M</td><td>场地许可、运营人、数据告知、无障碍与人工服务</td><td>按预注册试点过线；重大事件未关闭或人工公共服务失效即停</td></tr><tr><td>众智园</td><td>可围合测试花园、责任签认台、急停区与观察界面</td><td>园区运营＋技术评测＋安全审查</td><td>M</td><td>围合、消防、应急、设备保险、责任主体与退出路径</td><td>急停100%、越界0；任一急停失败或责任主体退出即停</td></tr><tr><td>大钟寺</td><td>辅助路／到达段连续步行、公共首层、人工交接点</td><td>街道／片区运营＋交通与无障碍专业团队</td><td>M</td><td>道路与场地授权、交通T0基线、专业复核、活动预案</td><td>到达改善且冲突不恶化；冲突恶化、重大事件或复核不通过即停</td></tr></tbody></table></div>

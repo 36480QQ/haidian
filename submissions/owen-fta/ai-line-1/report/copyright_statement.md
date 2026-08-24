@@ -9,6 +9,7 @@
 - `assets/figures/twelve-scenarios-overview.png`由12张场景图片排版汇总而成，其中场景05同步采用上述FTA项目图片，其余为既有概念图；本轮没有重新生成图片。
 - FTA GROUP名称与企业Logo由FTA GROUP授权用于本次公司署名；AI LINE 1为本方案独立公共品牌方向。
 - 官方公告、任务书、法规标准及临时边界按来源清单引用；临时边界不构成官方红线或精确面积依据。
+- 中文离线HTML内嵌由Noto Sans CJK SC生成的字符子集，原字体来自notofonts/noto-cjk并依据SIL Open Font License 1.1使用；仅保留本成果实际字符，用于保证Linux、Windows和macOS离线渲染一致，不改变正文版权归属。
 - 本方案属于开放共创建议，不构成政府审定、工程可行性、投资承诺或具体地块实施结论。
 
 正文采用`COMMUNITY-DISPLAY-ONLY`许可声明；第三方公开资料仍分别受其原始许可和引用规则约束。

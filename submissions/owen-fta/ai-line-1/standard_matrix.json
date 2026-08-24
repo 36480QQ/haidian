@@ -26,7 +26,7 @@
       "drawing_refs": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
       "geometry_refs": ["geometry/key_areas.geojson", "geometry/public_space.geojson", "geometry/phasing.geojson"],
       "metric_refs": ["scenario_count", "industry_test_scenario_count", "persona_count", "pilgrimage_landmark_count"],
-      "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"],
+      "source_ids": ["DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"],
       "assumption_ids": ["A-CONTROLS-001"],
       "self_check_ids": ["TASK_COVERAGE", "SOURCE_TRACEABILITY", "COPYRIGHT_DISCLOSURE"],
       "evidence_summary_zh": "AI LINE 1把三区两翼转化为技术策源、成果转化、城市应用、科技服务和场景验证的协同回路，以12张场景卡、5类人物、3个地标与长期运营体系落实六项任务。"
@@ -86,7 +86,7 @@
       "drawing_refs": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
       "geometry_refs": ["geometry/public_space.geojson"],
       "metric_refs": ["scenario_count", "industry_test_scenario_count"],
-      "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"],
+      "source_ids": ["DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW"],
       "assumption_ids": ["A-MUNICIPAL-001"],
       "self_check_ids": ["RISK_DISCLOSURE", "COPYRIGHT_DISCLOSURE"],
       "evidence_summary_zh": "每张AI场景卡均以问题、用户、空间、数据、人工复核、运营主体和退出机制构成，敏感场景保留非AI通道、责任人和停止条件。"
