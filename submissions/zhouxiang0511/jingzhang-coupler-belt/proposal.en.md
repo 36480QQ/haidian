@@ -22,7 +22,9 @@ At the same time, the proposal cites publicly verifiable planning facts of 2026 
 
 Notes on figures: ① the widely circulated figure of "about 70 ha" for the park **has not been officially confirmed**; the official figure is about 53 ha, and this proposal adopts the official figure; ② "37 km²" is the coordinated figure for the innovation belt from the Second Ring to the Fifth Ring, which is a different level from the regulatory plan's 16.7 km² and this overall design area's 11.4 km², and is noted separately when cited [source:JZ-PARK-PHASE2-20260806] [source:JZ-CONTROL-PLAN-20260817]. The official precise planning red line has not yet been publicly released; the boundary uses the repository's provisional boundaries and discloses the precision limits [source:BOUNDARY-SOURCE] [depth:existing_conditions_diagnosis].
 
-**All spatial conclusions in this proposal are conceptual suggestions**, for professional teams to deepen and research, and do not constitute statutory planning, approvals, or government commitments [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. The proposal meets the deliverable requirement of "urban design depth of a regulatory detailed plan + urban design depth of an integrated planning implementation plan" [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
+**All spatial conclusions in this proposal are conceptual suggestions**, for professional teams to deepen and research, and do not constitute statutory planning, approvals, or government commitments [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+Source status note: the 2026 public industry/park/regulatory-plan/case facts cited in the proposal come from sources that have not yet been reviewed by the organisers' central source registry (`data/source_registry.json`); this proposal uses them as **background / pending-review evidence**, and each entry in this package's `sources.json` is annotated with `review_status: pending_review` plus source/date/licence/restriction; official published wording prevails [source:SOURCE-REGISTRY]. The proposal meets the deliverable requirement of "urban design depth of a regulatory detailed plan + urban design depth of an integrated planning implementation plan" [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
 
 ![Overall concept and submission-package evidence chain](assets/figures/site-overview.en.png)
 
@@ -40,7 +42,7 @@ Boundary note: the official precise polygon has not yet been released; this prop
 
 **Primary name: "Jingzhang Coupler Belt" (English: Jingzhang Coupler Belt, JCB).**
 
-In 1909, Zhan Tianyou led the construction of the Jingzhang Railway — the first trunk railway independently designed and built by Chinese people, known as the "railway of pride" [source:JZ-PARK-PHASE1-20211014]. In the public narrative of railway history, Zhan Tianyou developed the "automatic coupler" to solve the problem of connecting vehicles, enabling carriages to be **coupled in a standardized way, uncoupled at any time, and safely marshaled** — in essence, China's first set of "standardized interoperability interfaces". This proposal elevates this century-old wisdom into an organizational proposition for a city:
+In 1909, Zhan Tianyou led the construction of the Jingzhang Railway — the first trunk railway independently designed and built by Chinese people, known as the "railway of pride" [source:JZ-PARK-PHASE1-20211014]. The link between Zhan Tianyou and the "automatic coupler" (also called the Jiangni coupler) is a widely circulated narrative in railway history and public communication; the China State Railway Group official site's "Zhan Tianyou and the Jiangni Coupler" provides a systematic account [source:C-RAILWAY-JZ-COUPLER], while scholarly scrutiny also exists (e.g., *Issues in History Teaching*, 1982, No. 3, "The Automatic Coupler Was Not Invented by Zhan Tianyou") [source:JZ-COUPLER-DEBATE-1982]. This proposal uses the "automatic coupler" **only as a cultural-narrative and interoperability symbol** — carriages **coupled in a standardized way, uncoupled at any time, and safely marshaled** — and makes no academic judgment on the historical attribution (see assumption A-HISTORY-001). This proposal elevates this century-old wisdom into an organizational proposition for a city:
 
 > **Composable City: Turn a century of coupling wisdom into a city that plugs in, reconfigures, and fails safe.**
 > *"Couple anything, anywhere, anytime — the city that plugs in."*
@@ -224,7 +226,7 @@ Implementation policy recommendations (conceptual directions): a "application—
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Core metrics are recalculated from the submitted geometry under EPSG:4548 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]. Key readings:
+Core metrics are recalculated from the submitted geometry under EPSG:4548; **all areas on this page are provisional approximations from the provisional boundary, not official figures** [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]. Key readings:
 
 - The overall design area is approximately 11.41 km² (recalculated from the provisional boundaries, consistent with the announcement's approximately 11.4 km²) [metric:site_area_sqm]
 - Green space and open space are approximately 3.58 km², with a green ratio of approximately 31.4% [metric:green_ratio]

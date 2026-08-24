@@ -22,7 +22,9 @@ iteration: "v0.2"
 
 口径说明：①公园"约70公顷"流传口径**未获官方证实**，官方口径为约53公顷，本方案采用官方口径；②"37平方公里"为创新带二环至五环统筹口径，与控规16.7平方公里、本次总体设计范围11.4平方公里为不同层次，引用时分别标注 [source:JZ-PARK-PHASE2-20260806] [source:JZ-CONTROL-PLAN-20260817]。官方精确红线尚未公开，边界采用仓库临时边界并披露精度限制 [source:BOUNDARY-SOURCE] [depth:existing_conditions_diagnosis]。
 
-**本方案所有空间结论均为概念建议**，供专业团队深化研究，不构成法定规划、审批或政府承诺 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。方案达到"控规的城市设计深度+规划综合实施方案的城市设计深度"成果要求 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
+**本方案所有空间结论均为概念建议**，供专业团队深化研究，不构成法定规划、审批或政府承诺 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+
+资料状态说明：正文引用的 2026 年公开产业/公园/控规/案例事实，其来源尚未经组织方中央来源登记（`data/source_registry.json`）复核，本方案按**背景/待审证据**使用，并已在该包 `sources.json` 中逐条标注 `review_status: pending_review`、来源/日期/许可/限制；以官方发布口径为准 [source:SOURCE-REGISTRY]。方案达到"控规的城市设计深度+规划综合实施方案的城市设计深度"成果要求 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。
 
 ![总体概念与提交包证据链](assets/figures/site-overview.png)
 
@@ -40,7 +42,7 @@ iteration: "v0.2"
 
 **主名称：「京张·自动车钩带」（英文：Jingzhang Coupler Belt, JCB）。**
 
-1909年，詹天佑主持建成京张铁路——中国人自主设计建造的第一条干线铁路，被称为"争气路" [source:JZ-PARK-PHASE1-20211014]。铁路史公共叙事中，詹天佑为解决车辆连接问题研制"自动车钩"，使车厢**标准化挂接、随时摘挂、安全编组**——这实质是中国的第一套"标准化互操作接口"。本方案把这一百年智慧升格为一座城市的组织命题：
+1909年，詹天佑主持建成京张铁路——中国人自主设计建造的第一条干线铁路，被称为"争气路" [source:JZ-PARK-PHASE1-20211014]。关于詹天佑与"自动车钩"（又称姜坭车钩/姜尼车钩）的关联，是铁路史与公众传播中广为流传的叙事，中国国家铁路集团官网《詹天佑与姜坭车钩》有系统讲述 [source:C-RAILWAY-JZ-COUPLER]；同时学界也存在考据异议（如《历史教学问题》1982年第3期《自动车钩不是詹天佑发明的》）[source:JZ-COUPLER-DEBATE-1982]。本方案仅将"自动车钩"作为**文化叙事与互操作符号**使用——车厢**标准化挂接、随时摘挂、安全编组**——不对该历史归因作学术定论（见假设 A-HISTORY-001）。本方案把这一百年智慧升格为一座城市的组织命题：
 
 > **可组合城市（Composable City）：把一百年的挂接智慧，变成一座随插随用、随时重组、故障安全解挂的城市。**
 
@@ -223,7 +225,7 @@ iteration: "v0.2"
 
 ## 指标体系、面积复算与合规矩阵
 
-核心指标由提交几何在EPSG:4548下复算 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]。关键读数：
+核心指标由提交几何在EPSG:4548下复算；**本页全部面积为临时边界复算的约值（provisional approximations），非官方审定数据** [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]。关键读数：
 
 - 总体设计范围面积约11.41 km²（临时边界复算，与公告约11.4 km²一致）[metric:site_area_sqm]
 - 绿地与开敞空间约3.58 km²，绿地率约31.4% [metric:green_ratio]
