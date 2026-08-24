@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8dbd7e62a4e522e1952f0e05dba3261ed7e2b2054c448becfff12ab96ad93135"
+      "sha256": "51e0ef87492ca6377abd1ebdb15bf075fc3c3cbdfefb8a1e7317ffd504e03de4"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "7c810c9a269b8ccab00466dfa734698898249cc5ac511ab42d52a70ae6726a1e"
+      "sha256": "f1554150b9109d0a53f8f738fa83287668a133b78b738ab2a195f4124ac97efc"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8a46e342594e5c063facf492560c7f0ab503d4e2865a6ca73b898215d84ce487"
+      "sha256": "195f7d1d636a9437e012aab51e730171edac1e03ee8b6ce9de22a92ffc05fe0a"
     },
     {
       "path": "compliance_matrix.json",
@@ -68,7 +68,7 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "6e0bc86418ce5b2866e22bdd0446a0b959c9976e5b99f5323f1a7fc46fc017dd"
+      "sha256": "494884db99f133b322db32871b35073e913dbe50a53e41036244870b46993043"
     },
     {
       "path": "design_depth_matrix.json",
@@ -95,7 +95,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c305b6f61c8666824f917d6cea7e6b31e5425d8e7c327f8d33317e3257a5ddda"
+      "sha256": "b277a428c087a9084298a3c66a93ed317d1648612a1a0d764b1d568d94a77870"
     },
     {
       "path": "report/narrative.md",
@@ -128,7 +128,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7ab2b02b5e2ca960f6b60125defe3f6d2694835c78afd6e8a020f44eedeb5b60"
+      "sha256": "367854ee37512bbb56946602e4ac3dc06b11207ff9aa3d9b14e4eafe8f1ecbd0"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ebe34cf97ed55851d94e9f5c89ca9c073c844caf033ef0c98d83b64188361695"
+      "sha256": "0075dcf7d00c380e0722f1c59e6f2e2450fe381c191417754e16b59d646ca884"
     },
     {
       "path": "report/proposal.en.html",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "916760eb3820eb76f538f64b0886e04a2a24bd21a438ecb5eeb20f1ff45c5f18"
+      "sha256": "b44a88859c083a21287e8452adbe1b5c69c1d3a89c41550d5c42e977f3c42103"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -257,7 +257,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0670e2d8e0f9ff25cfbd720df10da1526ceb6c896779a16cb039ef2b6a27ffc7"
+      "sha256": "3b381e1a9bf7b72611e13d27c0643d5fc114d70d34c447dfc42f3eb7ab389a65"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -309,7 +309,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "9e61fda52c4c69bf409603f7567f728eb7d9ff82c16bc043f544c83f430d535f"
+      "sha256": "0f9886b2027ede4a0f371627ebf1d431951380d0f0c9502c05a6edb0ad74361b"
     },
     {
       "path": "assets/branding/logo-construction.png",

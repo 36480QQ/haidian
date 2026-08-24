@@ -224,6 +224,7 @@
       "source_files": [
         "sources.json"
       ],
+      "display_label": "技术合同强度指数（背景指标：全区公报分子 ÷ 临时范围分母，地理口径不匹配、非场地实测；低置信度；禁止用于场地绩效或实施/投资决策） / Tech-contract intensity index (background metric: district numerator over provisional denominator, geographies not aligned, low confidence; prohibited for site-performance or implementation/investment use)",
       "formula": "haidian_2025_tech_contract_total (district-wide) / provisional_site_area (design-boundary, non-aligned geographies)",
       "confidence": "low",
       "assumptions": [
@@ -240,6 +241,7 @@
       "source_files": [
         "sources.json"
       ],
+      "display_label": "全国重点实验室密度（背景指标：全区 92 家 ÷ 临时研究范围，地理口径不匹配、非场地实测；低置信度；禁止用于场地绩效或实施/投资决策） / Key-lab density (background metric: 92 district labs over provisional research area, geographies not aligned, low confidence; prohibited for site-performance or implementation/investment use)",
       "formula": "national_key_labs_92 (district-wide) / coordinated_research_area_43.6sqkm (conceptual, non-aligned geographies)",
       "confidence": "low",
       "assumptions": [

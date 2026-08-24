@@ -90,7 +90,7 @@ These cases come from public institutional or project pages; they support mechan
 
 ### Haidian's Data Base: Why This Corridor Can Be a Compute Belt
 
-Public district data show innovation factors already agglomerating here: 123 registered large models (60% of Beijing), 92 national key laboratories (63.4% of the city, 17.9% of the nation), 405.31 billion CNY technology contract turnover (+6.5%), 188.71 billion CNY computer/communication/electronics manufacturing output (+7.7%), and information/software/IT-services investment growing 1.5x. These data are the macro evidence for the Compute Belt positioning - Haidian District already hosts the densest AI factors in the city, and this proposal's spatial design gives existing agglomeration a structure.[source:GONGBAO-2025] [metric:tech_contract_strength_index] [metric:lab_density_per_research_area]
+Public district data show innovation factors already agglomerating here: 123 registered large models (60% of Beijing), 92 national key laboratories (63.4% of the city, 17.9% of the nation), 405.31 billion CNY technology contract turnover (+6.5%), 188.71 billion CNY computer/communication/electronics manufacturing output (+7.7%), and information/software/IT-services investment growing 1.5x. These data are the macro evidence for the Compute Belt positioning - Haidian District already hosts the densest AI factors in the city, and this proposal's spatial design gives existing agglomeration a structure. Two derived indices (tech-contract intensity, lab density) are background metrics: district numerator over provisional denominator, geographies not aligned, low confidence, background reference only - not to be used for site-performance comparison or implementation/investment decisions (see display_label and prohibited-use statements in metrics.json).[source:GONGBAO-2025] [metric:tech_contract_strength_index] [metric:lab_density_per_research_area]
 
 ### Regional Synergy: How the Compute Belt Fits the Jing-Jin-Ji Innovation Network
 
@@ -345,7 +345,7 @@ All three industry-test scenarios (1-3) set a "shutdown threshold": precision de
 | Non-digital alternative | On-site registration, paper schedules |
 | Recovery and maintenance | Event review, annual improvements |
 
-Accessibility and elder-friendly requirements run through all scenarios: public interfaces keep no-login human service paths and continuous accessible design, in line with the barrier-free environment law and the convenience requirements for elderly smart-technology use; no AI service introduction may come at the cost of accessibility for vulnerable groups.[standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45]
+Accessibility and elder-friendly requirements run through all scenarios: public interfaces keep no-login human service paths and continuous accessible design, in line with the barrier-free environment law; the 2020 State Council plan on easing elderly use of smart technology is additionally referenced as background policy (registered as background_only, not a statutory control in this proposal); no AI service introduction may come at the cost of accessibility for vulnerable groups.[standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45]
 
 ### Phase-1 Priority Scenario Operations Package: RACI, KPI Baselines, Audit and Cost Categories
 
@@ -381,6 +381,17 @@ Baseline values are confirmed by the operating entity with the sub-district/comm
 | Exit and recovery | Removal/restoration/data deletion after stop, incident review, failed-run archive | Triggered via "shutdown threshold - recovery process"; accessible alternatives kept after exit |
 
 This framework links with the existing "pilot gate - shutdown threshold - failed-run archive - annual evolvability loop": KPI sampling data also feeds the annual evaluation, and exit cost categories are already included (no separate estimation). [depth:renewal_project_list] [depth:phasing_implementation]
+
+#### Implementation checklist (Cards 1-4, concept-level; amounts are order-of-magnitude estimates only - neither commitments nor budgets before formal approval)
+
+| Scenario | Pre-conditions | Licence/approval type | Conceptual responsible role | CAPEX/OPEX order of magnitude | Cycle | Insurance | Exit/recovery and data deletion |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Card 1 evaluation ground | Site ownership and power self-check | Pilot filing (not a planning-control permit) | Zhongzhiyuan operating entity + on-duty evaluator | 10^6-10^7 CNY (equipment and fit-out) | Monthly windows / 6-month observation | Public-event liability | Bench removal/restoration; evaluation logs deletable after 90 days |
+| Card 2 delivery ring | Circulation, footfall and on-site obstacle survey | Pilot filing + safety-run rules publication | Ring operator + on-site safety officer | 10^6-10^7 CNY (ring equipment and fit-out) | 3-month acceptance period | Third-party liability | Barrier removal; test data deletable after 90 days |
+| Card 3 shuttle line | Rail/transport special data (pre-requisite) | Transport special review + demonstration licence | Demo-line operator + onboard safety officer | 10^7 CNY (vehicles and station works) | Demonstration phase (months, renewed annually) | Passenger liability | Stop and exit; vehicle disposal and station restoration |
+| Card 4 health navigation | Healthcare catalogue field verification | Service-launch confirmation (not an administrative permit) | Community service operator + social worker | 10^5-10^6 CNY (counter and catalogue upkeep) | Continuous / 6-month observation | Public-event liability | Retirement and rollback; catalogue corrections and public ledger |
+
+Roles above are conceptual pending confirmation of formal entities; licence types are expected categories subject to competent-authority approval; order-of-magnitude figures are coarse estimates from analogous public projects (not quotations or budgets).
 
 ## Land Use, Building Scale, and Retain/Renovate/Demolish/New
 
