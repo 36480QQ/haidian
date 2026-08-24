@@ -159,6 +159,12 @@ Positioned as an AI public-service community interface where "services work with
 
 Positioned as the standing home of the Compute Belt Open Day and an AI-native business operation node on the accessibility of the Dazhongsi transport hub. Spatial structure: AI-native mixed-use complex + compute open-market plaza + developer community space. Functions: Compute Belt Open Day (scenario card 10), the southern end of the autonomous shuttle demo line (scenario card 3), and the home of the annual event system. Risk note: the industry-residential mix ratio and parking/freight organization depend on regulatory-plan and transport data and are listed as pending confirmation.[source:AGENT-TASKBOOK] [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]
 
+### Key-Area Local Prototypes: Section and Node Concepts
+
+Beyond the overall and zoning scales, the proposal adds conceptual "section/node" prototypes for the three key areas, showing how three interface logics land in space - controlled-vs-public (Zhongzhiyuan: controlled evaluation layer, public plaza interface, observation deck), digital-vs-human (AI Origin: digital interface, human counter with low desk plus paper/phone/human paths and no-login entry, social-worker duty), and operation-vs-safety (Dazhongsi: open-market plaza, stepped platform with accessible ramp, egress and standby route). Prototypes are conceptual illustrations (not construction drawings); dimensions and facility configuration follow regulatory-plan and special studies. [depth:three_key_area_detailed_design]
+
+![Key-area local prototypes: section and node concepts](assets/figures/local-prototypes.en.png)
+
 ## AI Innovation Ecosystem, Talent Profiles, and AI+ Scenarios
 
 ### Five User Personas
@@ -384,14 +390,14 @@ This framework links with the existing "pilot gate - shutdown threshold - failed
 
 #### Implementation checklist (Cards 1-4, concept-level; amounts are order-of-magnitude estimates only - neither commitments nor budgets before formal approval)
 
-| Scenario | Pre-conditions | Licence/approval type | Conceptual responsible role | CAPEX/OPEX order of magnitude | Cycle | Insurance | Exit/recovery and data deletion |
+| Scenario | Pre-conditions | Licence/approval type | Conceptual responsible role | CAPEX/OPEX order of magnitude (pending professional estimate) | Cycle | Insurance | Exit/recovery and data deletion |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Card 1 evaluation ground | Site ownership and power self-check | Pilot filing (not a planning-control permit) | Zhongzhiyuan operating entity + on-duty evaluator | 10^6-10^7 CNY (equipment and fit-out) | Monthly windows / 6-month observation | Public-event liability | Bench removal/restoration; evaluation logs deletable after 90 days |
-| Card 2 delivery ring | Circulation, footfall and on-site obstacle survey | Pilot filing + safety-run rules publication | Ring operator + on-site safety officer | 10^6-10^7 CNY (ring equipment and fit-out) | 3-month acceptance period | Third-party liability | Barrier removal; test data deletable after 90 days |
+| Card 1 evaluation ground | Site ownership and power self-check | Pilot filing (not a planning-control permit) | Zhongzhiyuan operating entity + on-duty evaluator | 10^6-10^7 CNY (equipment and fit-out) | Monthly windows / 6-month observation | Public-event liability | Bench removal/restoration; evaluation logs deletable after 90 days (proposed) |
+| Card 2 delivery ring | Circulation, footfall and on-site obstacle survey | Pilot filing + safety-run rules publication | Ring operator + on-site safety officer | 10^6-10^7 CNY (ring equipment and fit-out) | 3-month acceptance period | Third-party liability | Barrier removal; test data deletable after 90 days (proposed) |
 | Card 3 shuttle line | Rail/transport special data (pre-requisite) | Transport special review + demonstration licence | Demo-line operator + onboard safety officer | 10^7 CNY (vehicles and station works) | Demonstration phase (months, renewed annually) | Passenger liability | Stop and exit; vehicle disposal and station restoration |
 | Card 4 health navigation | Healthcare catalogue field verification | Service-launch confirmation (not an administrative permit) | Community service operator + social worker | 10^5-10^6 CNY (counter and catalogue upkeep) | Continuous / 6-month observation | Public-event liability | Retirement and rollback; catalogue corrections and public ledger |
 
-Roles above are conceptual pending confirmation of formal entities; licence types are expected categories subject to competent-authority approval; order-of-magnitude figures are coarse estimates from analogous public projects (not quotations or budgets).
+Roles above are conceptual pending confirmation of formal entities; licence types are expected categories subject to competent-authority approval. CAPEX/OPEX figures are coarse order-of-magnitude estimates from analogous public projects, assumption status "pending professional estimate" - neither quotations nor budgets; the proposed 90-day deletable record applies subject to a data-protection impact assessment (DPIA) confirming the applicable conditions and legal basis.
 
 ## Land Use, Building Scale, and Retain/Renovate/Demolish/New
 
