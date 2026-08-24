@@ -6,6 +6,7 @@
 - 用最新版仓库渲染器重建中英文报告，英文证据标签改用 `Source`、`Standard`、`Depth`、`Spatial data` 与 `Metric`。
 - 将已有赛博朋克未来主义 hero 登记为 gallery 自定义封面，沿用原始生成来源、权利说明与概念表达边界。
 - 为双语 HTML 嵌入自包含 Noto Sans SC WOFF2 CSS 与 OFL 1.1 文本，中文报告和 visual 在无系统 CJK 字体的离线环境中保持可读。
+- 将三处重点区域核心图重绘为人本概念剖面，加入 1.7 m 人物参照、提案宽度、G0 校准条件、早/昼/晚使用序列与 AI-OFF 基线，并同步四份 PDF；目标宽度登记在结构化合同中，当前结果保持 null。
 
 ## v1.2 visible-evidence update - 2026-08-11
 
