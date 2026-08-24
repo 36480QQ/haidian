@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "1.0.0"
-summary: "A heritage-led, walkable, testable and operable civic loop connecting three key areas; all spatial and operating moves are conceptual suggestions and must be recalculated when official data arrives."
+iteration: "1.1.0"
+summary: "A heritage-led, walkable, testable and operable civic loop connecting three key areas; this revision adds five AI pilot gates, an eight-package implementation matrix and inclusive-service acceptance checks, while all spatial and operating moves remain conceptual and must be recalculated when official data arrives."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -37,6 +37,10 @@ Open Weave uses one heritage public-space spine, three innovation cores, two win
 | Key-area scope | Give the three areas distinct but complementary public values | Zhongzhiyuan for standards, AI Origin for near-campus transfer, Dazhongsi for urban exchange |
 
 The provisional boundary is shown as a low-contrast dashed constraint. It carries no official area or engineering meaning. Land-use polygons are complete intersections with the same boundary, and metrics are recalculated in EPSG:4548 [data:geometry/land_use.geojson#LU-001] [depth:three_level_scope_framework].
+
+### Taskbook anchors and inspectable evidence
+
+To keep “three areas and two wings” from remaining a narrative only, the proposal translates the taskbook into an evidence chain: the three scope levels have overview, structure and key-area drawings; the three cores and two wings have role assignments and project packages; the AI ecosystem has scenario cards, personas and an open challenge channel; public space and culture have the heritage spine, contribution nodes and an accessibility matrix; implementation has eight packages, stage gates and retrospectives. Every future refinement must answer who is responsible, what input is required, how it is accepted and when it stops.
 
 ![One belt, three cores and two wings](assets/figures/land-use-structure.en.png)
 
@@ -87,6 +91,19 @@ Dazhongsi is proposed as a city-scale interface organized around station four-qu
 
 Six personas make “AI talent friendliness” spatial and operational: an open-source student needs learning and low-friction release; a research lead needs standards, compute and testing; an SME founder needs compliance, IP and customer scenarios; residents and older adults need human service, legible wayfinding and a non-tracked daily environment; commuters and visitors need continuous, understandable walking and station connections; operators and governance teams need auditable prompts, human review and exit mechanisms [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
+### Public-interest and inclusion acceptance matrix
+
+“Talent-friendly” cannot mean service only for people who already use AI. The proposal therefore makes each persona’s spatial promise, offline alternative and data boundary part of acceptance. The targets below are design checks, not existing conditions or policy commitments.
+
+| User | Spatial and service promise | Offline alternative | Design acceptance target | Data boundary |
+| --- | --- | --- | --- | --- |
+| Student / open-source contributor | Learning court, open release desk and low-friction contribution entry | On-site registration, paper challenge cards, human explanation | A newcomer can find learning, submission and feedback points through wayfinding | Keep public contribution and voluntary attribution only |
+| Research lead | Standards commons, test booking and review seats | Human booking and printed checklist | Every test has downloadable rules, version and review status | Authorize research data by project; no personal fields by default |
+| SME founder | Transfer street, IP and compliance inquiry | Human desk and phone follow-up | Every AI suggestion can hand over to professional human service | Never write business secrets into public logs |
+| Resident / older adult | Continuous shaded walk, quiet rest and legible wayfinding | Paper map, phone and human desk | A person without a smartphone can ask, register, complain and opt out | No face recognition, route profiling or covert collection |
+| Commuter / visitor | Station-quadrant wayfinding, bicycle parking and accessible alternatives | Printed route and on-site guidance | Understandable alternatives exist for night, rain and mobility barriers | Use public-space and authorized environmental information only |
+| Operator / governance team | Audit panel, staffed point and rollback tools | Manual duty log and paper incident form | Every pilot has an owner, contact and stop button | Minimize logs, tier access and delete on schedule |
+
 ### Ten AI scenario cards
 
 | No. | Scenario | Space and users | Human boundary |
@@ -103,6 +120,20 @@ Six personas make “AI talent friendliness” spatial and operational: an open-
 | 10 | Global AI week route | Whole belt / global visitors | Recheck safety, access and copyright for each event |
 
 Cards 02, 04, 08 and 10 are candidates for industry or governance validation. Each begins with public rules, minimum data, human review, exit conditions and a retrospective; none is an approved operation or vendor requirement [source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES].
+
+### The Open Weave operating protocol: from problem to reversible pilot
+
+AI does not replace planning, public services or professional judgment. It enters a five-gate, auditable loop. These are design targets and a working template, not a government approval process or an operating commitment; if any gate is incomplete, the scenario remains a desk exercise and cannot be executed for the public.
+
+| Gate | Evidence to publish | Proposed responsible role | Pass / stop condition |
+| --- | --- | --- | --- |
+| 0. Public problem | Problem card, applicable space, beneficiaries, provenance and copyright | Scenario initiator + community liaison | No clear public problem, provenance or beneficiary: no test |
+| 1. Minimum data | Data inventory, authorization boundary, retention, bias and accessibility risks | Test operator + privacy/safety reviewer | Identification, unauthorized data or unexplained critical bias: stop |
+| 2. Human review | Professional opinion, public feedback, legible prompts and limits | Relevant planning, architecture, mobility, accessibility or heritage reviewers | No human review: no automatic clearance or field instruction |
+| 3. Reversible pilot | Roster, on-site notice, complaint route, rollback script and log | Scenario operator + on-site safety lead | Incident, persistent misdirection, overreach or abnormal rejection: take offline |
+| 4. Public retrospective | Success, failure, complaints, exit, revisions and next decision | Operations team + public/professional review group | Incomplete evidence: no expansion; return to desk testing when needed |
+
+The first acceptance loop for four priority pilots is explicit: the safety governance sandbox must publish its rules, data scope, human conclusions and withdrawal record; the AI walking guide must field-check accessible, older-adult and night routes and go offline when it misleads; the data commons lounge may show only authorization-chain summaries, blocking personal fields or untraceable sources; the global AI week route needs a capacity, accessibility, safety and copyright checklist before opening. These are design targets; professional teams and authorities set the final thresholds.
 
 ![Mobility and blue-green civic loop](assets/figures/mobility-bluegreen.en.png)
 
@@ -131,6 +162,23 @@ Eight project packages can be taken forward by a professional team: JZ-01 herita
 Phasing is “public first, tests second, deeper renewal third”: Phase 1 discusses light public space, wayfinding, walking continuity and human service; Phase 2 pilots small scenarios after data, privacy, safety and professional review; Phase 3 considers ecosystem integration, building renewal and long-term operations. `phasing.geojson` is a reference sequence, not a government schedule, funding, approval or construction commitment [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation].
 
 Four operating mechanisms are proposed: an open challenge and scenario-application channel; professional review plus public feedback; contribution records with revocable honor display; and annual retrospective with knowledge-base updates. Operators should record evidence, failure, exit and revision, not only successful demonstrations.
+
+### Implementation matrix for the eight project packages
+
+The matrix below moves the project list toward a first deliverable and a stop condition. Roles are proposed professional roles, not appointments to any institution. Every package requires official boundary, ownership, heritage, mobility, municipal, safety, accessibility and public-participation inputs before deepening.
+
+| Package | First deliverable | Proposed lead role | Key prerequisite | Stage gate / rollback |
+| --- | --- | --- | --- | --- |
+| JZ-01 Slow-mobility gap repair | Gap list, continuous routes and accessibility walk audit | Urban design + mobility team | Official road, station and obstacle data | If the field audit fails, keep human guidance and do not deepen construction |
+| JZ-02 Qinghe innovation edge | Riverside public interface and low-carbon display sample | Public-space + water/safety advisers | River, flood, edge and maintenance conditions | If flood, lighting or maintenance is inadequate, return to movable displays |
+| JZ-03 Near-campus transfer street | Ground-floor opening and human-service node list | Building retrofit + campus/community operations | Ownership, fire, campus and community coordination | If ownership or fire conditions are unconfirmed, no fixed retrofit or data link |
+| JZ-04 Station four-quadrant walking | Pedestrian conflict points and time-based organization map | Mobility + station-area coordination team | Rail interchange, road redline and demand data | If safety conflicts remain, test with wayfinding and temporary organization |
+| JZ-05 Public service / edge nodes | Human service, compute and energy demand sheet | Municipal + AI infrastructure team | Power, network, fire and operations capacity | Without staffing and rollback ability, no edge pilot |
+| JZ-06 Contribution wall / honor system | Public contribution fields and withdrawal prototype | Cultural narrative + knowledge-governance team | Attribution consent, copyright and history review | If consent is unclear or withdrawal impossible, use anonymous version records |
+| JZ-07 Low-speed robotics test | Controlled test area and safety checklist | Mobility safety + operations team | Site, insurance, staffing and incident response | Any boundary breach or incident stops the test and returns to desk review |
+| JZ-08 AI week public route | Capacity, accessibility, safety and copyright checklist | Event operations + public-safety team | Venue, emergency, copyright and public notice | If the checklist is incomplete, publish no public route or event promise |
+
+The sequence is not a simultaneous start of all eight packages. JZ-01, JZ-06 and human-service nodes establish public evidence first; later pilots are selected by the gates. Any package can pause, narrow or roll back because of missing data, public feedback or professional review.
 
 ### Four AI pilgrimage landmarks / contribution nodes
 
