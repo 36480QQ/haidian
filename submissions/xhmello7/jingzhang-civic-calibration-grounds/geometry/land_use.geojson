@@ -17,7 +17,9 @@
         "land_use_code": "16",
         "data_status": "data_gap",
         "proposed": false,
-        "limitation_zh": "公开资料不足以支持全域现状用地或法定用途判断；V5 主动留白，取得正式控规、权属和测绘后重建。",
+        "limitation_zh": "公开资料不足以支持全域现状用地或法定用途判断；V6 继续主动留白，取得正式控规、权属和测绘后重建。",
+        "co_located_with": "SITE-001",
+        "co_location_reason": "The full provisional computation geometry is reused only to declare a complete land-use data gap; it is not a second site boundary or a physical land-use proposal.",
         "area_sqm_declared": 11412825.386
       },
       "geometry": {
