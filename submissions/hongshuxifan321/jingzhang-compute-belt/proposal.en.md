@@ -347,6 +347,41 @@ All three industry-test scenarios (1-3) set a "shutdown threshold": precision de
 
 Accessibility and elder-friendly requirements run through all scenarios: public interfaces keep no-login human service paths and continuous accessible design, in line with the barrier-free environment law and the convenience requirements for elderly smart-technology use; no AI service introduction may come at the cost of accessibility for vulnerable groups.[standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45]
 
+### Phase-1 Priority Scenario Operations Package: RACI, KPI Baselines, Audit and Cost Categories
+
+To turn the three-phase plan from a conceptual staging into an auditable operations package, the Phase-1 priority scenarios (Cards 1-3 industry tests + Card 4 health navigation) receive the governance and cost framework below. Three principles: **baselines first, performance commitments second**; **every KPI defines sampling and audit rules**; **costs are framed by category without preset amounts** (to be detailed by professional cost consultants after formal project approval - this proposal does not state government budgeting).
+
+### KPI baselines, sampling and audit rules
+
+| Scenario | KPI | Baseline treatment | Sampling | Audit |
+| --- | --- | --- | --- | --- |
+| Card 1 evaluation ground | Monthly open hours, public result entries, 7-day complaint closure rate | First 6 months = observation window (monthly mini-sample), no performance target; after baseline confirmed, rolling target of "baseline +5%" | Monthly data extract (automated toolchain) + 10% on-site manual check | Quarterly third-party 5% sample; semi-annual public Dashboard (desensitized) |
+| Card 2 delivery ring | Public intrusion events (target 0), safety-response time, monthly safety drills | First 3 months acceptance period (response time recorded, not scored) | Event-by-event immediate logging; monthly summary | Quarterly third-party safety audit + sub-district/community briefing |
+| Card 3 shuttle line | On-time rate, monthly ridership, safety events (target 0) | First month trial: record only, no scoring | Automatic vehicle telemetry + shuttle safety-officer spot reports | Transport special-review recheck + semi-annual operations report |
+| Card 4 health navigation | Navigation accuracy (spot check), monthly senior usage, human-transfer response time | First 6 months observation; accuracy judged against the health authority's public catalogue | Monthly 100-item spot check + service logs | Quarterly social-worker representative review + public correction ledger |
+
+Baseline values are confirmed by the operating entity with the sub-district/community at pilot launch; this proposal assumes no commitment values.
+
+### RACI assignment (conceptual roles; formal entities per licensing documents)
+
+| Scenario | Organizer (A approve) | Operating entity (R execute) | Vendor/model provider (C consult) | Sub-district/community (C consult) | Third-party audit (I inform) |
+| --- | --- | --- | --- | --- | --- |
+| Card 1 evaluation ground | Pilot scheme approval | Evaluation scheduling, review, complaint closure | Benchmark and toolchain submission | Hearing and pilot feedback | Quarterly sample + annual audit |
+| Card 2 delivery ring | Pilot operation approval | On-site safety dispatch, stop, recovery | Device and algorithm iteration | Circulation and public-notice suggestions | Annual safety audit |
+| Card 3 shuttle line | Demonstration approval (transport special review) | Operations, onboard safety, dispatch | Vehicle and algorithm | Station siting and peak-offset suggestions | Semi-annual operations audit |
+| Card 4 health navigation | Service launch confirmation | Counter duty, catalogue maintenance | Public catalogue and interface | Social-worker review and feedback | Content-accuracy spot check |
+
+### Cost-category framework (no preset amounts)
+
+| Category | Coverage | Recording and trigger |
+| --- | --- | --- |
+| Human watchkeeping | On-duty evaluators/safety officers/social workers, escalation contacts, pilot-launch review | Funded per pilot duration from the pilot budget; formal breakdown pending project approval |
+| Equipment maintenance | Test benches, LiDAR, vehicles, charging points, roadside sensing nodes - inspection and spares | Equipment ledger + published annual maintenance plan |
+| Insurance | Public-event liability, delivery-test third-party liability, shuttle demonstration passenger liability | Pilot on/off condition: no start before coverage is in force |
+| Exit and recovery | Removal/restoration/data deletion after stop, incident review, failed-run archive | Triggered via "shutdown threshold - recovery process"; accessible alternatives kept after exit |
+
+This framework links with the existing "pilot gate - shutdown threshold - failed-run archive - annual evolvability loop": KPI sampling data also feeds the annual evaluation, and exit cost categories are already included (no separate estimation). [depth:renewal_project_list] [depth:phasing_implementation]
+
 ## Land Use, Building Scale, and Retain/Renovate/Demolish/New
 
 The land-use layout covers fourteen tiled zones (research 0802, industry-commerce 05, residential 0701, park green 1401, coded per the 2023 Land Use and Sea Classification Guide; the university-colocation circle is counted under research 0802 by dominant use); every zone area is recomputable from `geometry/land_use.geojson`. Concept building envelopes total 11 (footprint ~1.099 million m², all conceptual illustrations, not existing or approved buildings).[data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]; additionally, [depth:land_use_layout]. Concept envelopes follow the architectural design-depth regulation (a deepening reminder until the official document is available).[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]

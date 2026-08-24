@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3d9adc3d8b06648f37c5246041811e3b7601043442eaa5a7bb4c134e24aafed8"
+      "sha256": "8dbd7e62a4e522e1952f0e05dba3261ed7e2b2054c448becfff12ab96ad93135"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d92c4bb052e531c8e671b392b661b2df33c100d118e04724d3ce3f695cf508e8"
+      "sha256": "6031c762781986013300c368eeda75aaa9d82d15c53289cb104eca64916e7a10"
     },
     {
       "path": "compliance_matrix.json",
@@ -95,7 +95,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f22c5ede6502177bd324f1de83fbee80d015965e4026003362b50a91bcacb798"
+      "sha256": "c305b6f61c8666824f917d6cea7e6b31e5425d8e7c327f8d33317e3257a5ddda"
     },
     {
       "path": "report/narrative.md",
@@ -114,21 +114,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "0bb1be5b085fcc7749a59fce72818775e9774c015acf49776552782fedd0e0b9"
+      "sha256": "6cd3b24d2b3a2560d5719347f1d9ab70054e551f99233e87be63936589452e3e"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "662f6264b35932abc23b7b777330dcc9d5cb1e48107a580b92a5adec8e5172ae"
+      "sha256": "be7db2d54d50b0f51ca1855ec6cc485e92970826dc61f3e8dbdb8d3e32a270b1"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "365cf748f531798eb1a99b0d84e505d5576f4f1c849ae016312d876c7c4528ae"
+      "sha256": "7ab2b02b5e2ca960f6b60125defe3f6d2694835c78afd6e8a020f44eedeb5b60"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "826d5379801332ce46ac00f96784dc8a04b0ce3bae99699f1599138324d71e83"
+      "sha256": "89e16768095de93b26d3545bb2684026b309af9b98a7015ff69e3276c10dc455"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "271c9a35d8a8a0c962ef3efdf171fc5b8e335e50d3f764ed1bb36caa20681a8c"
+      "sha256": "ebe34cf97ed55851d94e9f5c89ca9c073c844caf033ef0c98d83b64188361695"
     },
     {
       "path": "report/proposal.en.html",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "afa794a9fb29dcc43304a0aebe36b1e548d5117fd0ceaa14eff4e04a129831b1"
+      "sha256": "916760eb3820eb76f538f64b0886e04a2a24bd21a438ecb5eeb20f1ff45c5f18"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -241,7 +241,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "1b2578ba54d3ed4fba9eb100de490a4eec5e922ebeae8433c05d939cdf25782b"
+      "sha256": "3ac85f9dfb724de4a442e0a9234dafde372da242ee34011a289b9644e7e4ad94"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -249,7 +249,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "8a809131934938ce97c7db2eb0b3a06bea0ea903c673914ca527848c21319ec3"
+      "sha256": "f565ae96860f13a69d87b1c981c3889650d68199a9ce1130ca11cda6ffcb9c16"
     },
     {
       "path": "visual/index.en.html",
@@ -257,7 +257,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a9d5743386df0ebf8f10084cf6a9cf7d55febe7713c2e920d287137c26760ab4"
+      "sha256": "0670e2d8e0f9ff25cfbd720df10da1526ceb6c896779a16cb039ef2b6a27ffc7"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -281,7 +281,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "3fe03da0d3e246f60d8cea6bbf8c50c35d99ceb25de7ed8a484200db13f669cb"
+      "sha256": "d1bc794a45601441fdb39c0116a0b452831d7e83d9f303c0f3a877e122903728"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
