@@ -232,6 +232,32 @@
         "Priority pilots are design targets and require professional thresholds before public testing."
       ]
     },
+    "ai_interface_layer_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(conceptual AI architecture layers from civic access to edge infrastructure)",
+      "confidence": "medium",
+      "assumptions": [
+        "Layers are a vendor-neutral professional handoff model, not a deployed system architecture."
+      ]
+    },
+    "ai_evaluation_baseline_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(priority pilots with an explicit comparison baseline)",
+      "confidence": "medium",
+      "assumptions": [
+        "Baselines are conceptual paper/human comparison protocols; field thresholds remain unknown/null."
+      ]
+    },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,

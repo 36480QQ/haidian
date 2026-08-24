@@ -183,6 +183,29 @@ AI does not replace planning, public services or professional judgment. It enter
 
 The first acceptance loop for four priority pilots is explicit: the safety governance sandbox must publish its rules, data scope, human conclusions and withdrawal record; the AI walking guide must field-check accessible, older-adult and night routes and go offline when it misleads; the data commons lounge may show only authorization-chain summaries, blocking personal fields or untraceable sources; the global AI week route needs a capacity, accessibility, safety and copyright checklist before opening. These are design targets; professional teams and authorities set the final thresholds.
 
+### Concept technical architecture, interfaces and evaluation baselines
+
+To keep AI from stopping at scenario cards and perspective images, the proposal adds a vendor-neutral conceptual architecture. It defines interface responsibilities and evidence forms; it does not claim that a production system, model, compute supply or engineering capacity already exists.
+
+| Layer | Spatial/operational interface | Minimum data and output | Evaluation baseline | Energy/capacity and human fallback |
+| --- | --- | --- | --- | --- |
+| Civic access | Paper maps, phone, staffed desk, terminal and travelling exhibit | Problem type, node, language/access need; readable advice plus human route | Compare with paper and human-route baseline | No phone required; return to paper and staff when terminal fails |
+| Scenario orchestration | Shared `scenario_id`, `consent_scope`, `risk_state`, `human_decision`, `withdrawal_state` fields | Pass only authorized minimum fields; output version, provenance, limits and confidence/uncertainty notice | Trace every output to a problem card, version and human conclusion | Interface, latency, concurrency and storage thresholds pending professional confirmation; block on anomaly |
+| Model/rule services | Replaceable retrieval, routing, anomaly, translation and summarization services | Never execute planning, transaction, medical, legal or safety decisions; output advice, not commands | Compare with human review, paper rules and counterexample set | Model, vendor and deployment location unknown; human review precedes any release |
+| Evidence registry | Provenance, authorization, version, evaluation, complaint, exit and rollback records | Downloadable evidence summary without personal fields or trade secrets | Completeness, explainability, withdrawal reachability and bilingual equivalence | Retention, deletion owner and audit cadence pending; no expansion when records are incomplete |
+| Edge infrastructure | Edge node, network, power, cooling, fire safety and maintenance entry | Device list, energy reading, offline state and human-takeover state | Exercise offline, power-loss, boundary breach, failure and human takeover | Power, network, fire, energy and maintenance capacity remain unknown/null; no rollback means no field pilot |
+
+The interface uses conceptual vendor-neutral fields and legible evidence, not a specified model, cloud supplier or procurement route. The four priority pilots use the following acceptance baselines; “100%” describes a design-completeness requirement, not a claim that a real system has already met it. Professional teams set all remaining thresholds after field baselines [standard:GENERATIVE-AI-INTERIM-MEASURES] [metric:priority_ai_pilot_count].
+
+| Pilot | Observable acceptance | Comparison baseline | Archive required | Stop/rollback |
+| --- | --- | --- | --- | --- |
+| 02 Safety governance sandbox | Rules, data scope, human conclusion, version and withdrawal record are 100% complete | Human rule review + paper process | Rule card, version diff, human opinion, exit record | Unauthorized field, unexplained bias or audit gap: return to desk exercise |
+| 04 AI walking guide | Accessible, older-adult, night and rain routes are field-checked; wrong advice has human takeover | Paper map + human inquiry route | Walk audit, route version, issue log, complaint and rollback record | Misdirection, missed barrier or takeover failure: take offline and return to human guidance |
+| 08 Data commons lounge | Every displayed field has an authorization summary; personal fields and untraceable sources are zero | Human authorization list + redacted display | Field allow-list, authorization summary, redaction check, deletion proof | Broken provenance, overreach or failed deletion: clear display and stop |
+| 10 Global AI week route | Capacity, accessibility, safety and copyright checklist is 100% complete; retrospective is downloadable | Manual event route and site checklist | Checklist, duty roster, emergency exercise, public feedback, annual retrospective | Missing item, unknown capacity/safety or insufficient authorization: do not open public route |
+
+These interfaces and baselines are a handoff protocol for professional deepening: start with a paper/human comparison, then run a small reversible validation. Do not convert model accuracy, concurrency, energy consumption or cross-system interoperability into confirmed facts at this stage.
+
 ### Annual operating calendar, developer community and international transfer path
 
 Agent.6's “global events” are translated into a verifiable annual operating cycle. This is a conceptual calendar, not a government event schedule; every quarter first completes capacity, accessibility, safety, copyright and data-boundary checklists.

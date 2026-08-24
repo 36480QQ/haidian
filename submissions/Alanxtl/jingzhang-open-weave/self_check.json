@@ -65,7 +65,7 @@
       "ai_package_stages": {
         "submissions/Alanxtl/jingzhang-open-weave": "formal"
       },
-      "total_bytes": 23794218,
+      "total_bytes": 22612796,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -127,7 +127,8 @@
         "green_ratio": 0.213945,
         "public_space_ratio": 0.02194,
         "ai_scenario_card_count": 10.0,
-        "ai_landmark_count": 4.0
+        "ai_landmark_count": 4.0,
+        "ai_interface_layer_count": 5.0
       }
     },
     "stderr": ""
@@ -141,7 +142,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 22,
+        "known_metric_refs_required": 24,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -149,7 +150,7 @@
           "standard": 7,
           "depth": 9,
           "data": 9,
-          "metric": 4
+          "metric": 5
         }
       }
     },
