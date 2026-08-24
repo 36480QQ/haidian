@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the Jingzhang Railway Heritage Corridor as a spine, the proposal links the Zhongzhiyuan AI Acceleration Area, Beijing AI Origin Community, and Dazhongsi AI Industry Cluster to build a world-class AI innovation belt with three zones and two wings. The proposal introduces the 'AI Origin · Jingzhang Spine' concept, using the heritage park slow-mobility axis to stitch east-west and connect north-south, with 10 land-use zones, 15 concept buildings, 12 AI scenario cards, and 3 pilgrimage landmarks, forming an experienceable, scalable, and iterative smart city concept."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "jingzhang-heritage-narrative"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide", "robot-delivery-low-speed"]
-iteration: "v4.0"
+iteration: "v8.1"
 ---
 
 # Jingzhang AI Heritage Spine: A Century-Old Railway Corridor Reborn as an Intelligent City
@@ -77,6 +77,15 @@ The proposal defines synergy interfaces with innovation nodes outside Haidian [s
 - **Beijing-Tianjin-Hebei**: Zhongguancun Service Wing's capital and IP resources radiate to Tianjin and Hebei, forming a regional AI industrial division network
 
 All synergies are conceptual suggestions requiring deepening after regional planning and policy coordination conditions are confirmed.
+
+### Interlock with Sibling Proposals on the Same Corridor (v8)
+
+The spirit of the switchback railway is "letting every section do its own job." Four sibling proposals on the same Jingzhang heritage corridor (submitted by the same author) interlock with this proposal in space and mechanism, together forming the corridor's complete AI service system; the following are design-coordination proposals, subject to each party's detailed design [E:HERITAGE-CROSS-INTERLOCK]:
+
+- **With robot-comobility (Cross-Section Grammar × Co-Mobility Signaling)**: the robot network's heritage-range section spatially overlaps this proposal's conservation nodes, and the robot system only subtracts there — 5 km/h follow-flow, closure on heritage event days, no paving changes. This is exactly this proposal's "minimum intervention, reversibility, distinguishability" principles applied to mobile facilities.
+- **With silver-accessibility (Silver Relay × intergenerational connection stations)**: the connection stations' "cultural mutual-teaching counters" use heritage memory as material — elders tell Jingzhang stories while young people teach digital tools; heritage narrative becomes the content carrier of intergenerational connection. The stations are proposed to sit adjacent to this proposal's heritage nodes.
+- **With civic-data-commons (Data Receipt × Data Timetable)**: heritage archives and conservation-monitoring data are proposed for the public-data opening list, with every use generating an auditable receipt — the visibility of data's whereabouts extends the "distinguishability" principle into the digital layer.
+- **With ai-civic-services (Three-Guarantees-One-Verification × accountability spaces)**: public services at heritage nodes (guidance, ticketing, consultation) are proposed to join the three-guarantees chain, with accountability stands accepting heritage-area service complaints — service promises inside heritage space equally need a named human behind them.
 
 ### Global AI Innovation Ecosystem Case Studies
 
