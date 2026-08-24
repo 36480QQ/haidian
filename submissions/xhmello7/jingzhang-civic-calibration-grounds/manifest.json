@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a2b0fafb91b9b50359e6006a343b191fe4e8125f04718a52daa53fcedf50074b"
+      "sha256": "7ece1d0968cf644aa232b168aaa65288c78f308500bf9324d32b8415ed88794e"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ce3552214f81fb76fc30173d53ddb527a7e247c8abb86805941944cd5c7733ab"
+      "sha256": "e7e841881daa4cc2428bd3b7651c93ae804a30aaa99b0609c2e838e00c4ee972"
     },
     {
       "path": "report/narrative.md",
@@ -99,7 +99,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "4486370c81e5aa2b0eaaa36c9cbe7b9f126c14cc17df2cf9f3eeec679a228b59"
+      "sha256": "d04db7620090d3330bdb1dd3dc12d2e2ea6135a4fef7d7a19b37241b213921d0"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -120,7 +120,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "2389fc111f1e0fcbb4f4bb4cb99bef237107770b69dc402c8b602d52869a77a8"
+      "sha256": "807be4ecb3f2464ad87d2f1a9c40d13aaf658876d9b6f4b8bb3469c929c2885a"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a1a2f20f79f2d4bba1afae36c56a906e2e3b46a186d517636fed8c995c9615c4"
+      "sha256": "67d127f78f0aa95bb2b32045a006f810b508effa222dee0381cb7082ab39c2fc"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -249,7 +249,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "22cc7a3912d05bef88dd1bd2687c8c66afe02259d718eaa2c7d59fef716a236a"
+      "sha256": "40827944b33d1a4825e428e4e40e33a70b20536b6b77ba39c685e1d528314371"
     },
     {
       "path": "assets/figures/key-areas.en.png",
