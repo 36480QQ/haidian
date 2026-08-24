@@ -21,7 +21,9 @@
       "metrics": [
         "global_case_group_count",
         "land_use_0802_area_sqm",
-        "land_use_05_area_sqm",
+        "land_use_09_area_sqm",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio",
         "scenario_node_count",
         "industry_validation_scenario_count",
         "protocol_interface_count",
@@ -49,6 +51,10 @@
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026",
         "CASE-AMSTERDAM-ALGORITHM-REGISTER",
         "CASE-EU-TEF",
         "CASE-HELSINKI-AI-REGISTER",
@@ -61,6 +67,8 @@
         "A-KEYAREA-001",
         "A-OPERATIONS-001",
         "A-METRICS-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001",
         "A-FLAGSHIP-FP01",
         "A-FLAGSHIP-FP02",
         "A-FLAGSHIP-FP03",
@@ -73,7 +81,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "以六组国际机制比较、研发与产业服务用地、12个场景节点和七类公共接口共同证明生态体系；不把企业、投资或政策设想写成既成事实；V0.7将12场景收束为五个概念旗舰试点，以技术突破、实景试验、首用采购、市场扩散和标准输出形成可停可审的转化链。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。",
+      "evidence_summary_zh": "以六组国际机制比较、研发与产业服务用地、12个场景节点和七类公共接口共同证明生态体系；不把企业、投资或政策设想写成既成事实；V0.7将12场景收束为五个概念旗舰试点，以技术突破、实景试验、首用采购、市场扩散和标准输出形成可停可审的转化链。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。V0.9把国家应用导向和海淀中期要求转译为六项转化能力与横贯式可信运行层；两个新增指标只证明内部映射完整，不证明国家试点、获批、实施、外部采用、绩效或全球领先。",
       "geojson_feature_ids": [
         "SCENARIO-S01",
         "SCENARIO-S02",
@@ -138,7 +146,9 @@
         "public_space_ratio",
         "road_centerline_length_m",
         "network_role_anchor_count",
-        "network_role_count"
+        "network_role_count",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -152,14 +162,20 @@
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "BOUNDARY-SOURCE"
+        "BOUNDARY-SOURCE",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
         "A-CONTROLS-001",
         "A-TRANSPORT-001",
         "A-METRICS-001",
-        "A-SCENARIO-LOCATION-001"
+        "A-SCENARIO-LOCATION-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -167,7 +183,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "用完整无缝的概念用地分区、慢行服务网络和蓝绿公共空间指标表达未来城市形态，边界与交通精度均保留临时性说明；六个唯一临时锚点使SOURCE、STACK、PROVE、LIVE_MARKET、ENABLE、COMMONS角色可定位、可复算，但不形成新法定分区。",
+      "evidence_summary_zh": "用完整无缝的概念用地分区、慢行服务网络和蓝绿公共空间指标表达未来城市形态，边界与交通精度均保留临时性说明；六个唯一临时锚点使SOURCE、STACK、PROVE、LIVE_MARKET、ENABLE、COMMONS角色可定位、可复算，但不形成新法定分区。V0.9以造得出、接得上、验得真、用得上、推得开、留得下六项转化能力解释城市应用能力；运行稳是横贯全部阶段的可信运行层，不是第七空间节点，映射完整度也不构成采用或绩效事实。",
       "geojson_feature_ids": [
         "PUBLIC-BUILD-002",
         "PUBLIC-LIVE-002",
@@ -410,7 +426,9 @@
         "protocol_interface_count",
         "land_use_0802_area_sqm",
         "network_role_anchor_count",
-        "network_role_count"
+        "network_role_count",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -423,6 +441,10 @@
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026",
         "CASE-EU-TEF",
         "CASE-PUNGGOL-ODP",
         "CASE-NIST-AI-RMF"
@@ -432,7 +454,9 @@
         "A-SCENARIO-LOCATION-001",
         "A-INDUSTRY-DATA-001",
         "A-OPERATIONS-001",
-        "A-METRICS-001"
+        "A-METRICS-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -474,7 +498,9 @@
         "scenario_node_count",
         "protocol_interface_entity_count",
         "protocol_interface_entity_coverage_ratio",
-        "protocol_street_room_count"
+        "protocol_street_room_count",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -487,7 +513,11 @@
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK"
+        "AGENT-TASKBOOK",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -495,7 +525,9 @@
         "A-SCENARIO-LOCATION-001",
         "A-TRANSPORT-001",
         "A-METRICS-001",
-        "A-PROTOCOL-PROTOTYPE-001"
+        "A-PROTOCOL-PROTOTYPE-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -535,11 +567,13 @@
         "land_use_0802_area_sqm",
         "land_use_0803_area_sqm",
         "land_use_0804_area_sqm",
-        "land_use_05_area_sqm",
+        "land_use_09_area_sqm",
         "scenario_node_count",
         "industry_validation_scenario_count",
         "network_role_anchor_count",
-        "network_role_count"
+        "network_role_count",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -552,7 +586,11 @@
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK"
+        "AGENT-TASKBOOK",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -560,7 +598,9 @@
         "A-INDUSTRY-DATA-001",
         "A-METRICS-001",
         "A-OPERATIONS-001",
-        "A-SCENARIO-LOCATION-001"
+        "A-SCENARIO-LOCATION-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1193,7 +1233,7 @@
         "dazhongsi_announced_area_sqm",
         "key_area_dazhongsi_geometry_sqm",
         "scenario_node_dazhongsi_count",
-        "land_use_05_area_sqm",
+        "land_use_09_area_sqm",
         "land_use_0803_area_sqm",
         "land_use_1401_area_sqm",
         "landmark_count",
@@ -1299,7 +1339,9 @@
         "flagship_scenario_bundle_coverage_ratio",
         "flagship_verified_public_benefit_count",
         "network_role_anchor_count",
-        "network_role_count"
+        "network_role_count",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1313,7 +1355,11 @@
       "source_ids": [
         "AGENT-TASKBOOK",
         "OFFICIAL-ANNOUNCEMENT",
-        "COMMUNITY-GEOMETRY-CROSSCHECK-1029"
+        "COMMUNITY-GEOMETRY-CROSSCHECK-1029",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026"
       ],
       "assumption_ids": [
         "A-KEYAREA-001",
@@ -1326,7 +1372,9 @@
         "A-FLAGSHIP-FP05",
         "A-METRICS-001",
         "A-SCENARIO-LOCATION-001",
-        "A-GEOMETRY-CROSSCHECK-001"
+        "A-GEOMETRY-CROSSCHECK-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1334,7 +1382,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "‘京张，再次开路’以六节点网络和五旗舰试点统筹三区两翼，AI City API、城市公约、人工接管与七接口仅构成次级可信运行层；北纬社区、未来科学城、怀柔科学城、经开区和京津冀均为概念协作接口，不表示已确认合作、项目或空间边界；三间街室和I1-I7实体节点作为次级可信运行证据，为六节点网络和五旗舰提供可核验但非官方的责任接口；SOURCE、STACK、PROVE、LIVE_MARKET、ENABLE、COMMONS六节点由六个唯一几何锚点组织，五旗舰负责实施转化，可信运行层保持次级支撑；六角色各有且仅有一个临时几何锚点；北纬社区、未来科学城、怀柔科学城、经开区和京津冀只作为概念协作接口。 V0.8 登记社区可复算定位差异为 background-only 警示，不移动临时坐标，也不把同名地物关系写成已确认工程位置。",
+      "evidence_summary_zh": "‘京张，再次开路’以六节点网络和五旗舰试点统筹三区两翼，AI City API、城市公约、人工接管与七接口仅构成次级可信运行层；北纬社区、未来科学城、怀柔科学城、经开区和京津冀均为概念协作接口，不表示已确认合作、项目或空间边界；三间街室和I1-I7实体节点作为次级可信运行证据，为六节点网络和五旗舰提供可核验但非官方的责任接口；SOURCE、STACK、PROVE、LIVE_MARKET、ENABLE、COMMONS六节点由六个唯一几何锚点组织，五旗舰负责实施转化，可信运行层保持次级支撑；六角色各有且仅有一个临时几何锚点；北纬社区、未来科学城、怀柔科学城、经开区和京津冀只作为概念协作接口。 V0.8 登记社区可复算定位差异为 background-only 警示，不移动临时坐标，也不把同名地物关系写成已确认工程位置。V0.9以四条官方战略和项目直连来源校准六项转化能力与横贯式可信运行层；运行稳不是第七空间节点，整套框架也不构成国家试点、获批、采纳、实施或领先证明。",
       "geojson_feature_ids": [
         "INTERFACE-I1",
         "INTERFACE-I2",
@@ -1402,7 +1450,7 @@
       "metrics": [
         "global_case_group_count",
         "land_use_0802_area_sqm",
-        "land_use_05_area_sqm",
+        "land_use_09_area_sqm",
         "scenario_node_count",
         "industry_validation_scenario_count",
         "protocol_interface_count",
@@ -1413,7 +1461,9 @@
         "flagship_pilot_count",
         "flagship_published_standard_output_count",
         "flagship_scenario_bundle_coverage_ratio",
-        "flagship_verified_public_benefit_count"
+        "flagship_verified_public_benefit_count",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1426,6 +1476,10 @@
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026",
         "CASE-AMSTERDAM-ALGORITHM-REGISTER",
         "CASE-EU-TEF",
         "CASE-HELSINKI-AI-REGISTER",
@@ -1438,7 +1492,9 @@
         "A-KEYAREA-001",
         "A-OPERATIONS-001",
         "A-METRICS-001",
-        "A-FLAGSHIP-FP02"
+        "A-FLAGSHIP-FP02",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1446,7 +1502,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "六组案例、科研与产业服务空间、三项验证场景和公共协议接口构成全栈生态证据；案例只转译机制，不复制境外绩效；FP02把全栈安全、算力和能耗约束纳入同一开放试验庭，并以独立复核决定是否进入首用。",
+      "evidence_summary_zh": "六组案例、科研与产业服务空间、三项验证场景和公共协议接口构成全栈生态证据；案例只转译机制，不复制境外绩效；FP02把全栈安全、算力和能耗约束纳入同一开放试验庭，并以独立复核决定是否进入首用。V0.9把国家应用导向映射为六项转化能力，并以运行稳作为横贯全部阶段的可信运行层；新增指标不替代尚未发生的采购、采用、标准发布和公共收益。",
       "geojson_feature_ids": [
         "BLDG-BUILD-001",
         "LU-BUILD-01",
@@ -1481,6 +1537,8 @@
         "scenario_spatial_assignment_coverage_ratio",
         "scenario_phase_assignment_coverage_ratio",
         "protocol_interface_count",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio",
         "public_space_ratio",
         "green_ratio",
         "capacity_return_node_count",
@@ -1512,6 +1570,10 @@
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026",
         "CASE-EU-TEF",
         "CASE-HELSINKI-AI-REGISTER",
         "CASE-AMSTERDAM-ALGORITHM-REGISTER",
@@ -1527,7 +1589,9 @@
         "A-FLAGSHIP-FP01",
         "A-FLAGSHIP-FP02",
         "A-FLAGSHIP-FP03",
-        "A-FLAGSHIP-FP04"
+        "A-FLAGSHIP-FP04",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1535,7 +1599,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "12个场景点、3个产业验证场景、25个去重测试角色和I1—I7最低公共接口提供场景—空间—治理闭环；可信运行层将12个应用场景与街室、接口、三条人物旅程及Return Ticket形成双向可解析关系，辅助节点不计入应用场景总数；FP01至FP04逐一覆盖S01-S08及S10-S12，S09由公共证据层承接，12场景无遗漏且无重复。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。",
+      "evidence_summary_zh": "12个场景点、3个产业验证场景、25个去重测试角色和I1—I7最低公共接口提供场景—空间—治理闭环；可信运行层将12个应用场景与街室、接口、三条人物旅程及Return Ticket形成双向可解析关系，辅助节点不计入应用场景总数；FP01至FP04逐一覆盖S01-S08及S10-S12，S09由公共证据层承接，12场景无遗漏且无重复。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。V0.9以六项转化能力说明从创新到可信应用的方案结构，可信运行层横贯其间而不新增空间节点；结构覆盖不等于真实应用绩效。",
       "geojson_feature_ids": [
         "SCENARIO-S01",
         "SCENARIO-S02",
@@ -1756,6 +1820,8 @@
         "scenario_node_count",
         "protocol_interface_count",
         "renewal_project_count",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio",
         "capacity_return_node_count",
         "human_journey_count",
         "return_ticket_reference_coverage_ratio",
@@ -1782,6 +1848,10 @@
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026",
         "CASE-MONTREAL-DECLARATION",
         "CASE-NIST-AI-RMF",
         "CASE-SIDEWALK-QUAYSIDE"
@@ -1795,7 +1865,9 @@
         "A-FLAGSHIP-FP02",
         "A-FLAGSHIP-FP03",
         "A-FLAGSHIP-FP04",
-        "A-FLAGSHIP-FP05"
+        "A-FLAGSHIP-FP05",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1803,7 +1875,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制；三条旅程和三处能力返还台把长期运营的暂停、补救、退役及公共能力返还写成引用完整的概念登记，不声称已经兑现；每项试点以90日go/revise/stop记录进入一年评估，未验证采购、扩散、标准和公共收益继续保持unknown。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。",
+      "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制；三条旅程和三处能力返还台把长期运营的暂停、补救、退役及公共能力返还写成引用完整的概念登记，不声称已经兑现；每项试点以90日go/revise/stop记录进入一年评估，未验证采购、扩散、标准和公共收益继续保持unknown。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。V0.9所称复制是方法、合同、接口、运行手册和失败记录的建议包，不证明已有外部采用。",
       "geojson_feature_ids": [
         "PHASE-001",
         "PHASE-002",

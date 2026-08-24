@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v0.9 - 2026-08-24
+
+- Raised the public proposition to **从自主筑路到自主用智——面向国家“人工智能+”战略的城市级先行验证 / From Independent Railway Engineering to Trusted AI at City Scale — An Urban-Scale Demonstrator Aligned with China’s “AI Plus” Strategy**, while retaining **京张，再次开路 / JING-ZHANG BREAKS NEW GROUND** as the stable identity.
+- Recast the stable SOURCE—STACK—PROVE—LIVE & MARKET—ENABLE—COMMONS network as six public-facing conversion capabilities—**造得出、接得上、验得真、用得上、推得开、留得下 / ORIGINATE, INTEGRATE, PROVE, DEPLOY, SCALE, RETAIN**—with trusted operation remaining a cross-cutting layer rather than a seventh spatial node.
+- Added national, Beijing and Haidian policy context for application orientation, “AI Plus,” industrial-application leadership, the super AI test field and the “human—AI symbiosis test field”; every alignment statement explicitly remains a proposal thesis rather than national-pilot designation, government authorization, approved planning status, adoption of this submission or proof of global leadership.
+- Renamed the public civic compact **京张 AI 可信应用公约 / Jing-Zhang Trusted AI Compact** while preserving all stable protocol, interface, street-room, journey and capacity-return machine IDs.
+- Kept FP01’s unexecuted 100-day first-use contract as the smallest executable prototype, and added structure-only capability-stage and mapping-coverage evidence; the new values do not claim procurement, deployment, external adoption, standards output, public benefit or global leadership.
+- Corrected the three commercial-service land-use cells from code `05` (wetland) to the current official code `09` (commercial and business service), renamed `land_use_05_area_sqm` to `land_use_09_area_sqm`, and kept their coordinates, topology and area unchanged.
+- Preserved the provisional V0.3 SITE/KEY geometry, 3×4 topology, five flagship assignments and all stable scenario IDs; no narrative upgrade is represented as a new statutory zone, confirmed site or implementation commitment.
+- Rebuilt the paired main figures, offline exhibit, rendered HTML and Chinese/English A3/A0 PDFs around the V0.9 strategic proposition, six-capability mapping and unchanged provisional-geometry disclosures.
+
 ## v0.8 - 2026-08-15
 
 - Sharpened the public proposition to **让海淀 AI 从源头创新走到城市首用 / From Frontier AI to Trusted Urban First Use**, while keeping **京张，再次开路 / JING-ZHANG BREAKS NEW GROUND** and the six-node network as the stable identity.

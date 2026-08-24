@@ -70,7 +70,7 @@
       "ai_package_stages": {
         "submissions/Garylauchina/jingzhang-protocol": "formal"
       },
-      "total_bytes": 28886282,
+      "total_bytes": 28954279,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -132,6 +132,7 @@
         "network_role_anchor_count": 6.0,
         "flagship_pilot_count": 5.0,
         "scenario_node_count": 12.0,
+        "protocol_interface_count": 7.0,
         "fp01_first_use_delivery_contract_template_count": 1.0,
         "fp01_100_day_gate_coverage_ratio": 1.0,
         "fp01_contract_clause_coverage_ratio": 1.0,
@@ -151,15 +152,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 68,
+        "known_metric_refs_required": 70,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 20,
+          "source": 24,
           "standard": 9,
           "depth": 15,
           "data": 42,
-          "metric": 49
+          "metric": 51
         }
       }
     },

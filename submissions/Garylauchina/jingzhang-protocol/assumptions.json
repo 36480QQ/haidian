@@ -85,7 +85,7 @@
         "land_use_0802_area_sqm",
         "land_use_0803_area_sqm",
         "land_use_0804_area_sqm",
-        "land_use_05_area_sqm",
+        "land_use_09_area_sqm",
         "land_use_0702_area_sqm",
         "land_use_1401_area_sqm",
         "land_use_1403_area_sqm"
@@ -245,6 +245,130 @@
       ],
       "resolution_trigger": "A dated official industry baseline with definitions and rights-cleared data is supplied.",
       "replacement_action": "Add baseline and target series with provenance, uncertainty and owner; revise industry-validation priorities against measured gaps."
+    },
+    {
+      "id": "A-NATIONAL-STRATEGIC-FRAMING-001",
+      "status": "conceptual_governance",
+      "statement": "Three national official sources establish an application-oriented AI strategy context, while the Haidian Jing-Zhang midterm direction connects national deployment to a proposed human-AI integrated test field, AI safety governance and perceivable public scenarios.",
+      "impact": "V0.9 may frame Jing-Zhang as a city-scale concept demonstrator aligned with national strategy, but must not call this submission a nationally designated pilot, approved plan, adopted proposal, implemented project, world first or proven world leader.",
+      "affected_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "sources.json",
+        "metrics.json",
+        "compliance_matrix.json",
+        "standard_matrix.json",
+        "design_depth_matrix.json"
+      ],
+      "affected_metric_ids": [
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio",
+        "flagship_first_use_procurement_count",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_published_standard_output_count",
+        "flagship_verified_public_benefit_count"
+      ],
+      "source_ids": [
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026"
+      ],
+      "resolution_trigger": "A competent authority publishes a Jing-Zhang-specific designation, approval, adoption or implementation decision with a verifiable scope and date.",
+      "replacement_action": "Update only the status explicitly supported by that record; preserve the distinction between national policy alignment, open-call requirements, proposal content, formal approval, implementation and measured outcomes."
+    },
+    {
+      "id": "A-APPLICATION-CAPABILITY-REPLICATION-001",
+      "status": "design_metric_only",
+      "statement": "The six application-capability stages are a V0.9 proposal taxonomy for organizing existing spatial, contractual and governance components; mapping every stage proves structural coverage only.",
+      "impact": "The stage count and mapping ratio do not prove procurement, deployment, external adoption, public benefit, published standards, national replication or global leadership. All related outcome metrics remain unknown until dated independent evidence exists.",
+      "affected_files": [
+        "proposal.md",
+        "proposal.en.md",
+        "metrics.json",
+        "compliance_matrix.json",
+        "standard_matrix.json",
+        "design_depth_matrix.json"
+      ],
+      "affected_metric_ids": [
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio",
+        "flagship_first_use_procurement_count",
+        "flagship_market_diffusion_adoption_count",
+        "flagship_published_standard_output_count",
+        "flagship_verified_public_benefit_count"
+      ],
+      "application_capability_stages": [
+        {
+          "stage_id": "AC01_ORIGINATE",
+          "label_zh": "造得出",
+          "label_en": "Originate",
+          "mapping_refs": [
+            "SOURCE"
+          ]
+        },
+        {
+          "stage_id": "AC02_INTEGRATE",
+          "label_zh": "接得上",
+          "label_en": "Integrate",
+          "mapping_refs": [
+            "STACK"
+          ]
+        },
+        {
+          "stage_id": "AC03_PROVE",
+          "label_zh": "验得真",
+          "label_en": "Prove",
+          "mapping_refs": [
+            "PROVE",
+            "FP02",
+            "FP03"
+          ]
+        },
+        {
+          "stage_id": "AC04_DEPLOY",
+          "label_zh": "用得上",
+          "label_en": "Deploy",
+          "mapping_refs": [
+            "LIVE_MARKET",
+            "FP01-CONTRACT-001",
+            "FP04"
+          ]
+        },
+        {
+          "stage_id": "AC05_SCALE",
+          "label_zh": "推得开",
+          "label_en": "Scale",
+          "mapping_refs": [
+            "ENABLE"
+          ]
+        },
+        {
+          "stage_id": "AC06_RETAIN",
+          "label_zh": "留得下",
+          "label_en": "Retain",
+          "mapping_refs": [
+            "COMMONS",
+            "FP05"
+          ]
+        }
+      ],
+      "trusted_operations_layer": {
+        "label_zh": "运行稳",
+        "label_en": "Trusted operations",
+        "spatial_role": "cross_cutting_layer_not_a_seventh_spatial_node",
+        "mapping_refs": [
+          "AI_CITY_API",
+          "I1-I7",
+          "HUMAN_TAKEOVER",
+          "NON_DIGITAL_FALLBACK",
+          "APPEAL",
+          "EXIT"
+        ]
+      },
+      "replication_boundary": "Replication means a proposed package of reusable evidence methods, contract clauses, interface specifications, operating playbooks and failure records; it is not evidence that another district or city has adopted them.",
+      "resolution_trigger": "Dated procurement, operation, independent evaluation, publication and additional-operator adoption records become available for the corresponding outcome.",
+      "replacement_action": "Keep the two structural metrics as design-coverage measures and populate separately named outcome metrics only from accountable, independently auditable evidence."
     },
     {
       "id": "A-ARCH-STANDARD-001",
@@ -1224,7 +1348,7 @@
       "id": "A-GEOMETRY-CROSSCHECK-001",
       "status": "background_only_unresolved",
       "statement": "Independent community cross-checks report that the repository provisional SITE and Dazhongsi key-area polygons do not align with several namesake mapped features; these checks are reproducible background evidence, not official geometry corrections.",
-      "impact": "V0.8 keeps all coordinates unchanged, separates the announced relational design tasks from the provisional placeholder polygons, and prohibits parcel, station-exit or engineering claims until official geometry is released.",
+      "impact": "V0.9 retains V0.8's zero-coordinate-movement decision, separates the announced relational design tasks from the provisional placeholder polygons, and prohibits parcel, station-exit or engineering claims until official geometry is released.",
       "affected_files": [
         "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",

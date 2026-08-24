@@ -132,11 +132,17 @@
         "flagship_scenario_bundle_coverage_ratio",
         "flagship_verified_public_benefit_count",
         "network_role_anchor_count",
-        "network_role_count"
+        "network_role_count",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
-        "AGENT-TASKBOOK"
+        "AGENT-TASKBOOK",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -151,7 +157,9 @@
         "A-FLAGSHIP-FP03",
         "A-FLAGSHIP-FP04",
         "A-FLAGSHIP-FP05",
-        "A-METRICS-001"
+        "A-METRICS-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -159,7 +167,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "总体结构以六个唯一角色锚点组织SOURCE—STACK—PROVE—LIVE & MARKET—ENABLE—COMMONS网络，并由五旗舰、双纵向联系、四横链与西—中—东依赖包承载；既有三段仅为稳定底盘索引，不是总体品牌或工期；总体结构新增三处街室和七接口实体的可解析空间关系，仍依附原梯形网络和临时范围；五项旗舰按三区两翼和公园公共层组织，形成从研发与首用到实景证明、日常市场和公开反馈的空间分工；六角色、六唯一锚点与五旗舰共同构成V0.7总体结构的可复算机器证据。"
+      "evidence_summary_zh": "总体结构以六个唯一角色锚点组织SOURCE—STACK—PROVE—LIVE & MARKET—ENABLE—COMMONS网络，并由五旗舰、双纵向联系、四横链与西—中—东依赖包承载；既有三段仅为稳定底盘索引，不是总体品牌或工期；总体结构新增三处街室和七接口实体的可解析空间关系，仍依附原梯形网络和临时范围；五项旗舰按三区两翼和公园公共层组织，形成从研发与首用到实景证明、日常市场和公开反馈的空间分工；六角色、六唯一锚点与五旗舰共同构成V0.7总体结构的可复算机器证据。V0.9把六项转化能力逐一映射到六节点，并以横贯式可信运行层支撑全部阶段；它不是第七空间节点，也不构成实施绩效。"
     },
     {
       "item_id": "land_use_layout",
@@ -183,7 +191,7 @@
         "land_use_0802_area_sqm",
         "land_use_0803_area_sqm",
         "land_use_0804_area_sqm",
-        "land_use_05_area_sqm",
+        "land_use_09_area_sqm",
         "land_use_0702_area_sqm",
         "land_use_1401_area_sqm",
         "land_use_1403_area_sqm",
@@ -553,6 +561,8 @@
         "flagship_verified_public_benefit_count",
         "network_role_anchor_count",
         "network_role_count",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio",
         "fp01_first_use_delivery_contract_template_count",
         "fp01_100_day_gate_coverage_ratio",
         "fp01_contract_clause_coverage_ratio"
@@ -784,7 +794,11 @@
       ],
       "source_ids": [
         "SITE-PACKAGE",
-        "SOURCE-REGISTRY"
+        "SOURCE-REGISTRY",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -796,7 +810,9 @@
         "A-FLAGSHIP-FP04",
         "A-FLAGSHIP-FP05",
         "A-SCENARIO-LOCATION-001",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -804,7 +820,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "所有可由GeoJSON计算的核心指标已在EPSG:4548复算并逐项比对；公告约值与临时几何值保持不同字段；可信运行层的六项注册表指标从feature_kind和双向引用复算，12个应用场景与嵌套公共空间口径保持稳定且不取代六节点主结构；四项known指标只证明五试点、12场景、完整实施字段和五门登记齐全，四项结果指标保持unknown；network_role_count=6与network_role_anchor_count=6均直接由network_role_anchor=true的最终几何唯一锚点复算。"
+      "evidence_summary_zh": "所有可由GeoJSON计算的核心指标已在EPSG:4548复算并逐项比对；公告约值与临时几何值保持不同字段；可信运行层的六项注册表指标从feature_kind和双向引用复算，12个应用场景与嵌套公共空间口径保持稳定且不取代六节点主结构；四项known指标只证明五试点、12场景、完整实施字段和五门登记齐全，四项结果指标保持unknown；network_role_count=6与network_role_anchor_count=6均直接由network_role_anchor=true的最终几何唯一锚点复算。application_capability_stage_count=6与mapping_coverage_ratio=1.0只从假设登记的六项转化能力及非空映射复算；横贯式可信运行层不计作第七阶段或第七空间节点。"
     },
     {
       "item_id": "risk_missing_data",
@@ -854,14 +870,20 @@
         "flagship_pilot_count",
         "flagship_published_standard_output_count",
         "flagship_scenario_bundle_coverage_ratio",
-        "flagship_verified_public_benefit_count"
+        "flagship_verified_public_benefit_count",
+        "application_capability_stage_count",
+        "application_capability_mapping_coverage_ratio"
       ],
       "source_ids": [
         "SITE-PACKAGE",
         "SOURCE-REGISTRY",
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
-        "COMMUNITY-GEOMETRY-CROSSCHECK-1029"
+        "COMMUNITY-GEOMETRY-CROSSCHECK-1029",
+        "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
+        "STATE-COUNCIL-AI-PLUS-2025",
+        "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
+        "HAIDIAN-JINGZHANG-MIDTERM-2026"
       ],
       "assumption_ids": [
         "A-ARCH-STANDARD-001",
@@ -884,7 +906,9 @@
         "A-RESEARCH-SCOPE-001",
         "A-SCENARIO-LOCATION-001",
         "A-TRANSPORT-001",
-        "A-GEOMETRY-CROSSCHECK-001"
+        "A-GEOMETRY-CROSSCHECK-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -892,7 +916,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "边界、重点区、控规、现状建筑、交通、文保、运营和设计指标八类假设均有影响说明；图纸、双语与正式包状态均纳入阻断级自检；新增协议原型假设明确区分引用完整性与真实运营成效，后者仍需测绘、运营协议、参与式测试和个案记录；五份A-FLAGSHIP假设逐项声明角色、资金、采购、空间、数据和成果未确认，并列出替换概念记录的触发条件。"
+      "evidence_summary_zh": "边界、重点区、控规、现状建筑、交通、文保、运营和设计指标八类假设均有影响说明；图纸、双语与正式包状态均纳入阻断级自检；新增协议原型假设明确区分引用完整性与真实运营成效，后者仍需测绘、运营协议、参与式测试和个案记录；五份A-FLAGSHIP假设逐项声明角色、资金、采购、空间、数据和成果未确认，并列出替换概念记录的触发条件。V0.9新增战略立意和复制边界假设，明确政策对齐不等于国家试点或采纳，结构完整不等于采购、外部采用、标准发布、公共收益或全球领先。"
     }
   ]
 }

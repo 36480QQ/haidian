@@ -244,14 +244,14 @@
         "A-METRICS-001"
       ]
     },
-    "land_use_05_area_sqm": {
+    "land_use_09_area_sqm": {
       "status": "known",
       "value": 4247444.882,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "sum(area where land_use_code=05)",
+      "formula": "sum(area where land_use_code=09)",
       "confidence": "medium",
       "assumptions": [
         "A-BOUNDARY-001",
@@ -1021,7 +1021,9 @@
         "A-FLAGSHIP-FP03",
         "A-FLAGSHIP-FP04",
         "A-FLAGSHIP-FP05",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "reason": "No accountable buyer, procurement route, budget or completed first-use record is confirmed.",
       "professional_follow_up_required": true
@@ -1041,7 +1043,9 @@
         "A-FLAGSHIP-FP03",
         "A-FLAGSHIP-FP04",
         "A-FLAGSHIP-FP05",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "reason": "The five pilots are concept proposals and no post-first-use adoption record exists.",
       "professional_follow_up_required": true
@@ -1061,7 +1065,9 @@
         "A-FLAGSHIP-FP03",
         "A-FLAGSHIP-FP04",
         "A-FLAGSHIP-FP05",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "reason": "Standard outputs are proposed lifecycle deliverables; no authorized issuer or publication exists.",
       "professional_follow_up_required": true
@@ -1081,7 +1087,9 @@
         "A-FLAGSHIP-FP03",
         "A-FLAGSHIP-FP04",
         "A-FLAGSHIP-FP05",
-        "A-OPERATIONS-001"
+        "A-OPERATIONS-001",
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
       ],
       "reason": "No pilot is deployed and no dated baseline or one-year outcome series exists.",
       "professional_follow_up_required": true
@@ -1115,6 +1123,38 @@
         "A-SCENARIO-LOCATION-001"
       ],
       "population_filter": "network_role_anchor=true"
+    },
+    "application_capability_stage_count": {
+      "status": "known",
+      "value": 6.0,
+      "unit": "count",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(A-APPLICATION-CAPABILITY-REPLICATION-001.application_capability_stages)",
+      "confidence": "high",
+      "assumptions": [
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
+      ],
+      "population_filter": "stage_id in AC01_ORIGINATE,AC02_INTEGRATE,AC03_PROVE,AC04_DEPLOY,AC05_SCALE,AC06_RETAIN",
+      "scope_note": "Proposal-taxonomy structure only; the trusted-operations layer runs across all six stages and is not a seventh spatial node. This metric is not proof of official designation, implementation, external adoption, performance, replication or global leadership."
+    },
+    "application_capability_mapping_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "count(application_capability_stages with non-empty mapping_refs) / application_capability_stage_count",
+      "confidence": "high",
+      "assumptions": [
+        "A-NATIONAL-STRATEGIC-FRAMING-001",
+        "A-APPLICATION-CAPABILITY-REPLICATION-001"
+      ],
+      "population_filter": "A-APPLICATION-CAPABILITY-REPLICATION-001.application_capability_stages",
+      "scope_note": "Structural mapping completeness only; procurement, market diffusion, published standards and verified public benefit remain unknown."
     },
     "fp01_first_use_delivery_contract_template_count": {
       "status": "known",
