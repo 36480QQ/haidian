@@ -2,7 +2,7 @@
   "schema_version": "0.1.0",
   "sources": [
     {
-      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-2026-05-09",
       "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
       "publisher": "北京市规划和自然资源委员会海淀分局",
       "source_kind": "official_announcement",
@@ -40,10 +40,11 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。"
+      "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。",
+      "license": "official_public_document_citation"
     },
     {
-      "source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
+      "source_id": "DATA-SRC-AGENT-TASKBOOK-2026-05-18",
       "title": "面向全球智能体开展“百年京张AI创新带城市设计开源征集”的任务书摘录",
       "publisher": "User-provided cleared document",
       "source_kind": "cleared_user_document",
@@ -84,7 +85,8 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "该资料更贴近 AI agent 任务要求，可作为方案任务响应依据，但不是官方空间红线或控规条件。"
+      "notes_zh": "该资料更贴近 AI agent 任务要求，可作为方案任务响应依据，但不是官方空间红线或控规条件。",
+      "license": "cleared_user_document_repo_use"
     },
     {
       "source_id": "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
@@ -119,7 +121,8 @@
       "local_paths": [
         "brief/site-package/standards/references/mohurd-urban-design-measures.md"
       ],
-      "notes_zh": "可作为专业标准响应依据。"
+      "notes_zh": "可作为专业标准响应依据。",
+      "license": "official_public_document_citation"
     },
     {
       "source_id": "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
@@ -152,7 +155,8 @@
       "local_paths": [
         "brief/site-package/standards/references/mohurd-control-detailed-planning.md"
       ],
-      "notes_zh": "可要求 agent 区分已知控制与待补控制。"
+      "notes_zh": "可要求 agent 区分已知控制与待补控制。",
+      "license": "official_public_document_citation"
     },
     {
       "source_id": "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
@@ -184,10 +188,11 @@
       "local_paths": [
         "brief/site-package/standards/references/mnr-land-use-classification-guide.md"
       ],
-      "notes_zh": "可用于统一 land_use_code 语义。"
+      "notes_zh": "可用于统一 land_use_code 语义。",
+      "license": "official_public_document_citation"
     },
     {
-      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-2026-06-05",
       "title": "百年京张AI创新带三层范围与三处重点区临时粗略 polygon",
       "publisher": "Repository maintainers",
       "source_kind": "provisional_repository_data",
@@ -232,7 +237,8 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "该 geometry 由维护者依据官方公告的文字四至、位置线索和约面积推定，并在 EPSG:4548 下校核；它提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。2026-08-07 复核时，征集组织机构的资格预审文件下载仍受密码保护，公开渠道未找到可验证坐标系的精确红线。"
+      "notes_zh": "该 geometry 由维护者依据官方公告的文字四至、位置线索和约面积推定，并在 EPSG:4548 下校核；它提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。2026-08-07 复核时，征集组织机构的资格预审文件下载仍受密码保护，公开渠道未找到可验证坐标系的精确红线。",
+      "license": "provisional_repository_data"
     },
     {
       "source_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
@@ -269,7 +275,8 @@
       "local_paths": [
         "brief/site-package/standards/references/generative-ai-interim-measures.md"
       ],
-      "notes_zh": "官方页面标注 2023-07-13 发布、2023-08-15 施行；第2条适用范围是向境内公众提供生成文本、图片、音频、视频等内容的生成式人工智能服务。第14条是违法内容与服务处置，不是一般用户退出权；第15条有投诉举报和及时处理要求，但没有法定数字响应期限；第17条安全评估、备案等表述仅针对具有舆论属性或社会动员能力的服务。快照仅供离线检索，正式引用仍以官方页面为准。"
+      "notes_zh": "官方页面标注 2023-07-13 发布、2023-08-15 施行；第2条适用范围是向境内公众提供生成文本、图片、音频、视频等内容的生成式人工智能服务。第14条是违法内容与服务处置，不是一般用户退出权；第15条有投诉举报和及时处理要求，但没有法定数字响应期限；第17条安全评估、备案等表述仅针对具有舆论属性或社会动员能力的服务。快照仅供离线检索，正式引用仍以官方页面为准。",
+      "license": "official_public_document_citation"
     },
     {
       "source_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
@@ -303,7 +310,8 @@
       "local_paths": [
         "brief/site-package/standards/references/barrier-free-environment-law.md"
       ],
-      "notes_zh": "法律于 2023-06-28 通过（人大常委会通过/公布），gov.cn/Xinhua 页面于 2023-06-29 发布；2023-09-01 起施行。第39条的现场指导、人工办理边界仅限正文列举的医疗、社会保障、金融、生活缴费等服务事项公共服务场所，不能泛化为所有公共空间或数字界面。快照仅供离线检索，具体场所合规仍需单独判断。"
+      "notes_zh": "法律于 2023-06-28 通过（人大常委会通过/公布），gov.cn/Xinhua 页面于 2023-06-29 发布；2023-09-01 起施行。第39条的现场指导、人工办理边界仅限正文列举的医疗、社会保障、金融、生活缴费等服务事项公共服务场所，不能泛化为所有公共空间或数字界面。快照仅供离线检索，具体场所合规仍需单独判断。",
+      "license": "official_public_document_citation"
     },
     {
       "source_id": "PACKAGE-GEOMETRY",
@@ -337,7 +345,385 @@
         "generator": "deepseek-v4-flash via DeepSeek Harness + deterministic build script",
         "generation_method": "concept prompting + geometry program",
         "limitations": "low confidence conceptual envelopes"
-      }
+      },
+      "license": "self_declared_original"
+    },
+    {
+      "source_id": "CASE-REF-01",
+      "title": "Stanford Research Park (About) - Silicon Valley university-industry park",
+      "publisher": "Stanford Research Park",
+      "source_kind": "institutional_page",
+      "url": "https://stanfordresearchpark.com/about/",
+      "published_date": null,
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "INSTITUTIONAL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_institutional_page",
+      "license_summary": "Public institutional/government web page; cited with attribution for the stated reuse boundary; no re-publication of the page itself.",
+      "license": "public_citation",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "case existence and institutional facts as stated on the page (founded 1951 as Stanford Industrial Park; 700 acres annexed to Palo Alto; 150+ companies, 10M sq ft, 140 buildings)"
+      ],
+      "prohibited_uses": [
+        "deriving statistics not stated on the page",
+        "presenting comparison conclusions as case facts"
+      ],
+      "topics": [
+        "silicon_valley",
+        "global_case",
+        "innovation_ecosystem"
+      ],
+      "local_paths": [],
+      "notes_zh": "机构页已核实（2026-08-25 访问）。页面未显示发布日期；比较结论为待研究假设。"
+    },
+    {
+      "source_id": "CASE-REF-02",
+      "title": "About the Development - King's Cross Central",
+      "publisher": "King's Cross Central Limited Partnership",
+      "source_kind": "institutional_page",
+      "url": "https://www.kingscross.co.uk/about-the-development",
+      "published_date": null,
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "INSTITUTIONAL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_institutional_page",
+      "license_summary": "Public institutional/government web page; cited with attribution for the stated reuse boundary; no re-publication of the page itself.",
+      "license": "public_citation",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "development milestones as stated on the page (2001 Argent selected; 2006 outline permission ~50 buildings/20 streets/10 public spaces/20 historic buildings/up to 2,000 homes; 2008 partnership; 2011 UAL Granary opening)"
+      ],
+      "prohibited_uses": [
+        "scale figures beyond the page",
+        "comparison conclusions as facts"
+      ],
+      "topics": [
+        "kings_cross",
+        "global_case",
+        "railway_regeneration"
+      ],
+      "local_paths": [],
+      "notes_zh": "机构页已核实；页面未显示发布日期；开发规模数字以机构页为准。"
+    },
+    {
+      "source_id": "CASE-REF-03",
+      "title": "Seoul Digital Media City (DMC) - Seoul Solution policy archive",
+      "publisher": "Seoul Metropolitan Government (Seoul Solution)",
+      "source_kind": "government_policy_archive",
+      "url": "https://www.seoulsolution.kr/en/content/5811",
+      "published_date": "2016-10-24",
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "INSTITUTIONAL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_institutional_page",
+      "license_summary": "Public institutional/government web page; cited with attribution for the stated reuse boundary; no re-publication of the page itself.",
+      "license": "public_citation",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "case facts as stated on the page (Sangam New Millennium City Plan April 2000; KRW 426 billion budget 2002-2014; DMC ordinance 2002-01-05)"
+      ],
+      "prohibited_uses": [
+        "statistics not on the page",
+        "comparison conclusions as facts"
+      ],
+      "topics": [
+        "seoul_dmc",
+        "global_case",
+        "digital_media_city"
+      ],
+      "local_paths": [],
+      "notes_zh": "首尔市政府政策档案页已核实，页面元数据发布日期 2016-10-24。"
+    },
+    {
+      "source_id": "CASE-REF-04",
+      "title": "One-North at a glance - JTC Corporation",
+      "publisher": "JTC Corporation (Singapore)",
+      "source_kind": "institutional_page",
+      "url": "https://www.jtc.gov.sg/find-land/jtc-key-estates/one-north",
+      "published_date": null,
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "INSTITUTIONAL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_institutional_page",
+      "license_summary": "Public institutional/government web page; cited with attribution for the stated reuse boundary; no re-publication of the page itself.",
+      "license": "public_citation",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "'At a Glance' facts as stated on the page (8 precincts; 400+ companies; 15 public research institutes; 5 IHLs; 50,000+ knowledge workers)"
+      ],
+      "prohibited_uses": [
+        "masterplan-refresh figures only if re-verified on the page",
+        "comparison conclusions as facts"
+      ],
+      "topics": [
+        "one_north",
+        "global_case",
+        "research_cluster"
+      ],
+      "local_paths": [],
+      "notes_zh": "JTC 机构页已核实；页面未显示发布日期。"
+    },
+    {
+      "source_id": "CASE-REF-05",
+      "title": "Munich Quantum Valley - official site",
+      "publisher": "Munich Quantum Valley e.V.",
+      "source_kind": "institutional_page",
+      "url": "https://www.munich-quantum-valley.de/",
+      "published_date": null,
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "INSTITUTIONAL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_institutional_page",
+      "license_summary": "Public institutional/government web page; cited with attribution for the stated reuse boundary; no re-publication of the page itself.",
+      "license": "public_citation",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "mission and support as stated on the page (promoting quantum science/technology in Bavaria; goal of competitive quantum computers; supported by Bavarian state government via Hightech Agenda Bayern); e.V. founded 2022-01-27 by seven institutions per the association page"
+      ],
+      "prohibited_uses": [
+        "funding figures beyond the page",
+        "comparison conclusions as facts"
+      ],
+      "topics": [
+        "munich_quantum_valley",
+        "global_case",
+        "quantum_cluster"
+      ],
+      "local_paths": [],
+      "notes_zh": "MQV 官网已核实；页面未显示发布日期；组建信息（2022-01-27，七家机构）见协会页。"
+    },
+    {
+      "source_id": "CASE-REF-06",
+      "title": "两'云'携手十年 小镇遍地沃野 - 杭州云栖小镇（西湖区人民政府门户）",
+      "publisher": "杭州市西湖区人民政府门户网站",
+      "source_kind": "government_article",
+      "url": "https://www.hzxh.gov.cn/art/2024/10/3/art_1177934_59041563.html",
+      "published_date": "2024-10-03",
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "INSTITUTIONAL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_institutional_page",
+      "license_summary": "Public institutional/government web page; cited with attribution for the stated reuse boundary; no re-publication of the page itself.",
+      "license": "public_citation",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "facts as stated in the article (2014-08 special-town concept; 2015 conference renamed and permanently based in Cloud Town; as of 2023: 68 national high-tech enterprises, 189 tech SMEs, 21 academicians, 145 overseas talents)"
+      ],
+      "prohibited_uses": [
+        "area figures from other sources without verification",
+        "comparison conclusions as facts"
+      ],
+      "topics": [
+        "yunqi_cloud_town",
+        "global_case",
+        "china_case"
+      ],
+      "local_paths": [],
+      "notes_zh": "杭州市西湖区政府门户文章已核实，发布时间 2024-10-03。"
+    },
+    {
+      "source_id": "CASE-REF-07",
+      "title": "Kendall Square Initiative - MIT",
+      "publisher": "Massachusetts Institute of Technology (Capital Projects)",
+      "source_kind": "institutional_page",
+      "url": "https://kendallsquare.mit.edu/",
+      "published_date": null,
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "INSTITUTIONAL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_institutional_page",
+      "license_summary": "Public institutional/government web page; cited with attribution for the stated reuse boundary; no re-publication of the page itself.",
+      "license": "public_citation",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "facts as stated on the page (2010 community planning process; five MIT-owned parking lots transformed into housing/lab/retail/innovation/open space and MIT Museum)"
+      ],
+      "prohibited_uses": [
+        "district statistics not on the page",
+        "comparison conclusions as facts"
+      ],
+      "topics": [
+        "kendall_square",
+        "global_case",
+        "innovation_district"
+      ],
+      "local_paths": [],
+      "notes_zh": "MIT 机构页已核实；页面未显示发布日期。"
+    },
+    {
+      "source_id": "HIST-REF-01",
+      "title": "百年京张 世纪经典（京张铁路修建历史）",
+      "publisher": "国家铁路局（来源：中国铁路总公司）",
+      "source_kind": "government_publication",
+      "url": "https://www.nra.gov.cn/tlfc/tpsy/202204/t20220405_293018.shtml",
+      "published_date": "2017-06-26",
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "INSTITUTIONAL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_institutional_page",
+      "license_summary": "Public institutional/government web page; cited with attribution for the stated reuse boundary; no re-publication of the page itself.",
+      "license": "public_citation",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "railway-authority statements: Zhan Tianyou presided over construction; first trunk railway surveyed, designed, built and managed by Chinese; construction 1905-1909; 2013 heritage listing of Nankou-Badaling section; Liucun starting point (photo caption in the page)"
+      ],
+      "prohibited_uses": [
+        "date-specific claims beyond the page (e.g. exact opening day)",
+        "treating the themed cultural coordinate as the official origin"
+      ],
+      "topics": [
+        "jingzhang_railway",
+        "railway_history",
+        "zhan_tianyou"
+      ],
+      "local_paths": [],
+      "notes_zh": "国家铁路局页面已核实；页面标注发布时间 2017-06-26（来源：中国铁路总公司，网址为 2022-04 转载路径）。柳村起点为页面图注表述，正文按'以权威史料为准'处理。"
+    },
+    {
+      "source_id": "HIST-REF-02",
+      "title": "规划解读：京张铁路遗址公园，一场各方响应的众创之旅",
+      "publisher": "北京市规划和自然资源委员会",
+      "source_kind": "government_publication",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/zxzt/wsghs/2021dej/d5j/202112/t20211216_2562970.html",
+      "published_date": "2021-12-16",
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "INSTITUTIONAL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_institutional_page",
+      "license_summary": "Public institutional/government web page; cited with attribution for the stated reuse boundary; no re-publication of the page itself.",
+      "license": "public_citation",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "planning-authority statements: HSR opened end of 2019 with ~6 km underground through Haidian; 2017-end approval to use the released above-ground space for the park; research/implementation started early 2019; 2019-09 Wudaokou start-up section (~800 m, 1.7 ha); 2019-10 international concept call (60+ applicants, 6 finalists); park ~9 km from Beijing North Station to 5th Ring Road"
+      ],
+      "prohibited_uses": [
+        "post-2021 park milestones not on this page",
+        "claiming official redline or statutory conclusions"
+      ],
+      "topics": [
+        "jingzhang_heritage_park",
+        "beijing_planning",
+        "haidian"
+      ],
+      "local_paths": [],
+      "notes_zh": "北京市规划自然资源委规划解读页已核实，日期 2021-12-16。"
+    },
+    {
+      "source_id": "HIST-REF-03",
+      "title": "大钟寺古钟博物馆（首都之窗·人文北京）",
+      "publisher": "首都之窗/北京市人民政府门户网站",
+      "source_kind": "government_publication",
+      "url": "https://www.beijing.gov.cn/renwen/rwzyd/bwg/dzsgzbwg/202301/t20230112_2897450.html",
+      "published_date": "2023-01-12",
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "INSTITUTIONAL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_institutional_page",
+      "license_summary": "Public institutional/government web page; cited with attribution for the stated reuse boundary; no re-publication of the page itself.",
+      "license": "public_citation",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "museum profile as stated on the page: originally Juesheng Temple; Yongle Bell height 6.75 m, diameter 3.3 m, weight 46.5 t, 230,000+ characters of inscriptions in Chinese and Sanskrit"
+      ],
+      "prohibited_uses": [
+        "alternative dimension figures from other official pages without cross-reference (6.75 m vs 5.5 m discrepancy noted)"
+      ],
+      "topics": [
+        "dazhongsi",
+        "ancient_bell_museum",
+        "yongle_bell"
+      ],
+      "local_paths": [],
+      "notes_zh": "首都之窗博物馆页已核实；URL 日期 2023-01-12。永乐大钟尺寸在不同官方来源间存在差异（文物局学术文为通高5.5米），正文以博物馆口径并注明差异。"
+    },
+    {
+      "source_id": "NAME-CLEAR-01",
+      "title": "品牌在先权利检索状态登记：智脉京张/JZ-PULSE、四座地标名称、0∞图形",
+      "publisher": "JohnXu22786 / dsh-haidian-agent（本包登记记录）",
+      "source_kind": "registry_record",
+      "url": "proposal.md#品牌与视觉识别（VI）方向",
+      "published_date": "2026-08-25",
+      "accessed_date": "2026-08-25",
+      "file_type": "markdown",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license_summary": "Internal registry record: states that NO official trademark/copyright prior-rights search has been completed at concept stage.",
+      "license": "internal_registry_record",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "informational_only",
+      "allowed_uses": [
+        "honest disclosure that prior-rights clearance is pending",
+        "internal working codenames for proposal expression and professional discussion"
+      ],
+      "prohibited_uses": [
+        "external adoption of names/marks",
+        "trademark or design registration before clearance",
+        "external communications or commercial use of the marks"
+      ],
+      "topics": [
+        "brand",
+        "trademark_pending",
+        "prior_rights"
+      ],
+      "local_paths": [],
+      "notes_zh": "如实登记：概念阶段未完成官方商标/著作权在先权利检索；名称与图形按内部工作代号处理；检索结果不支持时立即更换或降级。"
+    },
+    {
+      "source_id": "LOGO-ASSET-01",
+      "title": "智脉京张 JZ-PULSE 概念标识（0∞核心图形，内部工作代号）",
+      "publisher": "JohnXu22786 / dsh-haidian-agent（原创概念图形）",
+      "source_kind": "agent_generated_design",
+      "url": "assets/figures/logo-jz-pulse.png",
+      "published_date": "2026-08-25",
+      "accessed_date": "2026-08-25",
+      "file_type": "png",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license_summary": "Original AI-generated concept mark; displayed in the package only as an internal working codename pending prior-rights clearance.",
+      "license": "self_declared_concept_mark",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "informational_only",
+      "allowed_uses": [
+        "in-package concept visualisation",
+        "professional discussion of the VI direction"
+      ],
+      "prohibited_uses": [
+        "external adoption or registration",
+        "commercial use",
+        "claiming prior rights or clearance"
+      ],
+      "topics": [
+        "brand",
+        "logo",
+        "visual_identity"
+      ],
+      "local_paths": [
+        "assets/figures/logo-jz-pulse.png"
+      ],
+      "notes_zh": "原创概念图形，标注为内部工作代号；在先权利检索完成后更新。"
     }
   ]
 }
