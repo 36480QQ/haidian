@@ -6,6 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
+notice: "概念建议 · 非审批成果：本方案为概念性研究与设计建议，须与法定规划协调并经主管部门审批后方可实施，不冒充红线或审批几何。"
 summary: "作为百年京张 AI 创新带（全球人工智能产业高地与朝圣地）三大重点片区之一，大钟寺 AI 产业集聚区面临慢行系统断裂、遗产保护与开发矛盾、轨道站点覆盖不足三大更新问题。本方案以生物黏菌自适应网络（Tero et al. 2010）与 NSGA-II 多目标优化为方法，提出「一核·三区·一界面·一衔接」路网重构与空间活化概念方案（167 边骨架、最优效率 19.20、遗产硬穿越 0，均为方法验证证据），并以「普通路径先行 + 分级放行 G0-G3」的治理机制保证每个 AI 场景可撤回、可停止、可回退；规划建议均为概念方案，需与法定规划协调并经主管部门审批后方可实施，不冒充红线或审批几何。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
@@ -289,7 +290,7 @@ AI 治理是本方案的方法论延伸，而非附加场景。**普通路径先
 | Run7 冻结目标 | 2.802 | [metric:physarum_run7_frozen_objective] |
 | 遗产硬穿越 | 0 | [metric:physarum_heritage_crossing_count] |
 | 推荐方案 UDS | 80.34 | [metric:physarum_recommended_plan_uds] |
-| 骨架总长 | 8813.0 m | simulation.json |
+| 骨架总长 | 8813.1 m | simulation.json |
 
 上述场外指标源自作者真实 Physarum + NSGA-II 运行，仅作方法验证证据，不进入场内设计指标与正式几何；「0 硬穿越」是 g1 硬约束行为而非独立场地遗产合规结论（遗产目标 f3 在本机人工数字化边界下退化为 f2，f3≡f2）。测试情景 8 项。
 

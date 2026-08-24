@@ -6,6 +6,7 @@ translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
+notice: "Conceptual suggestion · Non-approval deliverable: this is a conceptual study and design proposal; implementation requires coordination with statutory planning and approval by the competent authority, and it does not impersonate a red-line or approved geometry."
 summary: "As one of the three key areas of the Centenary Jing-Zhang AI Innovation Belt (a global AI industry highland and pilgrimage destination), the Dazhongsi AI industry cluster faces three renewal problems: a fragmented slow-travel system, the tension between heritage protection and development, and insufficient rail-station coverage. This proposal uses the bio-Physarum adaptive network (Tero et al. 2010) and NSGA-II multi-objective optimization to propose a 'one core · three areas · one interface · one link' road-network restructuring and spatial-activation concept (167-edge skeleton, optimal efficiency 19.20, zero heritage hard-crossings, all method-validation evidence), and guarantees every AI scenario is reversible, stoppable, and rollback-able through an 'ordinary path first + staged release G0-G3' governance mechanism; all planning recommendations are conceptual proposals requiring coordination with statutory planning and approval by the competent authority, and are never presented as redlines or approval geometry."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
@@ -289,7 +290,7 @@ The municipal road-network cost is ≈20–39 million CNY (2026 Q2 price level, 
 | Run7 frozen target | 2.802 | [metric:physarum_run7_frozen_objective] |
 | Heritage hard-crossings | 0 | [metric:physarum_heritage_crossing_count] |
 | Recommended plan UDS | 80.34 | [metric:physarum_recommended_plan_uds] |
-| Skeleton total length | 8813.0 m | simulation.json |
+| Skeleton total length | 8813.1 m | simulation.json |
 
 The off-site metrics above come from the author's real Physarum + NSGA-II run and serve only as method-validation evidence, not entering on-site design metrics or formal geometry; "0 hard-crossings" is the g1 hard-constraint behavior rather than an independent in-site heritage-compliance conclusion (the heritage objective f3 degenerates to f2, f3≡f2, under the locally digitized boundary). 8 test scenarios.
 
