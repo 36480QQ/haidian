@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b17191b31223fd07e334450619a6655355d02ec3a55172d43ab03d706e28beef"
+      "sha256": "4a245a087d38f25d32e86828dfa74b4706c76da8fefa8587e82112a628a2f0b8"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9e7a59de926c1dc11f4a9425f652abca12d69156c25c23451f32ef419a041cc7"
+      "sha256": "988189150b98855a58582e5b1efe803cb9ec261d8843d9008530285e94af69f5"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8e4e7ba0ea10d19ac87a2f941d85d9e4f2143faa076c0abaf1bd380ae641e09a"
+      "sha256": "179a165dcfb4a184ee9a3dbe1ff01316273a68091e5472aa34b2b10215e92553"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "2529db8435c6f8b1b177e2c37554e2e18436672e365b66635530e5eb3f8dc618"
+      "sha256": "c3f977b91e6413f94cba0f7d1c8acc6ef2ad4e1d208786a965a12debf2880a49"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "40d3839d65c74721b05b18e25d7e81cde8a29027e66664d5870836ff48d44cf6"
+      "sha256": "cdbc4b1c0d701aa50bf9dc02e5cbe3852abdf7ca55d710fa3e15b2b7b6324233"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "27a39e17a0f3305fa1a6113ce5cfce440c7e9d81618e9aca4e90bb250bdc4757"
+      "sha256": "c0abdb1d7342a76833fb0d441df7441b6e9d7f3c277dc8732f46651ee22b4882"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -142,14 +142,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "b08734133fb3981f59702aecafda7f6b30b2110b381ac935e33ff9bc54c09e47"
+      "sha256": "85a540adfc153d1e3f14e131a232b8c0423576b806cec35caa3db0f73ad6f275"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "7f3efd037c4313c7a3bb4f3a9cc3fb46e1ac278766db364b6aa1481c2e806364"
+      "sha256": "b180014c8e89cf348183e633e5c9e562469e7c229b003d64d40ad4646a5d8d5d"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "353adab2b35d999264de66ffe0a79df06e2ece20647ccba638879bc4741a1006"
+      "sha256": "da3fe9b76aaaf8c272aa6eb7cfd4bb546768966ecc31d238d7b3c52487b42633"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c9222ada942748e5e4f06f3a206bb620dc64c6cbaf270a8d0f17b05611a16332"
+      "sha256": "684754bdc6bfc2f80ec43e60fc21117b0fa68165a7a12ed2509da319d3280436"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "067af8cdb7e79df08faaf14a4dccca7c313a6f15a0779c7cb2cacf647edc6ddf"
+      "sha256": "74cc1ca7b6ecf025b266f7a0ca3727271ddbdf03a9e23a75d63d058ad6059cf2"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "50550b11753f9aeecf141dc53e1c5b04124bf3617f0296c5325ba31b06a2bb2b"
+      "sha256": "fd1b55d476230b8782ba1666ea59ef821ac5557231bc91ac35b5ab2005c03b58"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "79c2661fea2fb0030ebc2e9a42f8343fe1596803e0e430bd5e09e0766e104df4"
+      "sha256": "58692c7364d6b82dad384aaa75a0a6efeba8a19fe2719254f142800e4fdeffc1"
     },
     {
       "path": "assets/figures/bonus-section-eras.png",
@@ -270,7 +270,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "c64b823c0157ae3bcb7ba54515ace56ef0bf875ccb008eeb0ce60094e9203a83"
+      "sha256": "0e1c1049b38c90fb825ad9ec7e86250f5140582396e173f69de6a7e12a5e2ce5"
     }
   ],
   "validation_claim": {

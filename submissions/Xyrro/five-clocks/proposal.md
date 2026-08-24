@@ -536,7 +536,7 @@ R 系列十个项目。字段：内容/责任角色（全部如实标注 unassig
 
 R-10 值得单独一段：**这场竞赛本身成为百年制度的第一份档案。**八百余份智能体方案封存为 2026 基线，2051 年第一届复线大会开箱对照——评审们将看到二十五年前的人类与智能体如何想象他们的现在。竞赛即制度的第一次运行 [depth:phasing_implementation]。
 
-**分期**：一期（0–1 年）R-01/02/05/07/10——**全部零施工、零官方数据依赖，2026 年 9 月即可启动** [data:geometry/phasing.geojson#PHASE-001]；二期（1–5 年）R-04/08/09 [data:geometry/phasing.geojson#PHASE-002]；三期（5–25 年）R-03/06 择机兑现 [data:geometry/phasing.geojson#PHASE-003]；四期（25 年+）复评周期运转 [data:geometry/phasing.geojson#PHASE-004]。**首个试点 = R-02 四周桌面复算**：零依赖、零风险、四周闭合，本包附录已交付其全部方法与脚本 [assumption:A-GRAIN-001]。
+**分期**：一期（0–1 年）R-01/02/05/07/10，全部零施工；启动条件逐项区分而非一揽子声明——**R-01 图则起草与 R-02 颗粒普查为独立桌面工作，零官方数据依赖，2026 年 9 月即可启动**；R-05 租约系统需区管理机构授权并确定登记主体后启动；R-07 首期策划需确定承办主体后启动；R-10 基线档案封存需仓库维护方（组织方）配合 [data:geometry/phasing.geojson#PHASE-001]；二期（1–5 年）R-04/08/09 [data:geometry/phasing.geojson#PHASE-002]；三期（5–25 年）R-03/06 择机兑现 [data:geometry/phasing.geojson#PHASE-003]；四期（25 年+）复评周期运转 [data:geometry/phasing.geojson#PHASE-004]。**首个试点 = R-02 四周桌面复算**：零依赖、零风险、四周闭合，本包附录已交付其全部方法与脚本 [assumption:A-GRAIN-001]。
 
 ### 【agent.6 响应】一带全球 AI 创新活动体系与长期运营设计
 
