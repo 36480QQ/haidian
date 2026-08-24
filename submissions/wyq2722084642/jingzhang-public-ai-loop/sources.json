@@ -320,9 +320,9 @@
       "retrieved_at": "2026-08-14",
       "url": "https://github.com/googlefonts/noto-cjk/blob/main/Sans/LICENSE",
       "source_type": "open_font_license",
-      "usage": "Typography for generated bilingual figures and PDF artifacts; PDF files embed font subsets. The two Chinese offline HTML artifacts embed a document-specific WOFF2 subset as a data URL so they remain readable without network access or a preinstalled CJK font.",
+      "usage": "Typography for generated bilingual figures and PDF artifacts; PDF files embed font subsets. The two Chinese offline HTML artifacts embed a document-specific WOFF2 subset as a data URL. The English proposal HTML embeds a separate navigation-only WOFF2 subset for its Chinese cross-language link, so all three remain readable without network access or a preinstalled CJK font.",
       "license": "SIL Open Font License 1.1",
-      "limitations": "Only the glyph subset required by the submitted Chinese HTML is embedded under SIL OFL 1.1; the full source font file is not redistributed. English HTML uses system fallbacks. Any new text requires regenerating the subset, and production identity still requires a separate font and mark review."
+      "limitations": "Only the glyph subsets required by the submitted Chinese HTML and the English proposal's Chinese navigation label are embedded under SIL OFL 1.1; the full source font file is not redistributed. English body text uses system fallbacks. Any new embedded CJK text requires regenerating the relevant subset, and production identity still requires a separate font and mark review."
     }
   ]
 }
