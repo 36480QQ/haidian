@@ -103,15 +103,15 @@
     },
     {
       "id": "PR-05",
-      "name_zh": "预检后换位/转介/取消决策",
-      "name_en": "relocate/referral/cancel decisions after screening",
+      "name_zh": "预检后换位/转介/停止决定",
+      "name_en": "relocate/referral/stop decisions after screening",
       "status": "unknown",
-      "numerator_definition": "signed dispositions of RELOCATE, REFER_SPECIALIST or CANCEL/STOP after complete screening",
-      "denominator_definition": "complete screening cases with a signed human disposition",
+      "numerator_definition": "signed human dispositions of RELOCATE or REFER_SPECIALIST, plus separately signed cross-cutting STOP decisions after complete screening",
+      "denominator_definition": "complete screening cases with a signed human disposition or a separately signed cross-cutting STOP decision",
       "zero_denominator": "not_applicable",
       "report_fields": [
         "decision_change_count",
-        "disposition_breakdown",
+        "decision_breakdown",
         "decision_change_ratio"
       ],
       "directionality": "neutral; more changes are not automatically better",

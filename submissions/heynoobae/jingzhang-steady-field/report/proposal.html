@@ -51,6 +51,12 @@ code {
   padding: 0.1em 0.35em;
   border-radius: 4px;
 }
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 .summary { color: var(--muted); font-size: 17px; }
 .translation-link a { color: var(--accent); font-weight: 700; }
 .proposal-table { margin: 20px 0 26px; overflow-x: auto; }
@@ -165,7 +171,7 @@ code {
 <figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.png" alt="普通路径、动态源与维护路线分层图"><figcaption>普通路径、动态源与维护路线分层图</figcaption></figure>
 <h2>蓝绿空间、公共空间与城市风貌</h2>
 <p>京张遗址公园、清河和小月河保持公共与生态优先，不成为实验专用地。开放公共空间只记录获授权的自然发生事件；受控激振只能进入获批测试环境。临时设计模型中的绿地率和公共空间率由相应GeoJSON与临时边界复算，保持known但只具有指标记录中的中等置信度，正式几何到位后整体重算。<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson#GREEN-001" title="空间数据：geometry/green_space.geojson#GREEN-001">空间数据</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="指标：green_ratio">指标</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="blue_green_public_space" title="深度：blue_green_public_space">深度</sup></p>
-<p>公共收益由五个带分母的读数核验：试点导致的普通/无障碍路径不可用分钟除以获批公共服务分钟；授权包络内完成动态运行分钟除以计划且获批分钟；试点直接维护工时除以QA通过的动态运行小时；有效反馈从收到到人工确认的中位数和最大时长；完成预检后进入换位、转专项或取消的签署数除以有签署处置的完整预检数。零分母报告N/A，不伪装为零；方向中性的原始量、分母和比例同时公开，且不预设胜利值。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_reading_count" title="指标：public_reading_count">指标</sup></p>
+<p>公共收益由五个带分母的读数核验：试点导致的普通/无障碍路径不可用分钟除以获批公共服务分钟；授权包络内完成动态运行分钟除以计划且获批分钟；试点直接维护工时除以QA通过的动态运行小时；有效反馈从收到到人工确认的中位数和最大时长；完成预检后，换位或转专项的签署人工处置数，加上另行签署的横切 STOP 决定数，除以具有签署人工处置或另行签署横切 STOP 决定的完整预检数。零分母报告N/A，不伪装为零；方向中性的原始量、分母和比例同时公开，且不预设胜利值。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_reading_count" title="指标：public_reading_count">指标</sup></p>
 <p>风貌不是“科技感装置”。双场接缝印以朱红动态板、深蓝稳定板、纸白负形接缝和不断开的普通路径形成标识；三处工作型荣誉节点只展示授权版本、负结果、维修、转介和贡献者，不做自动排名碑。视觉均标注概念表达，不得被读成现状照片或批准工程。<sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="height_massing_character" title="深度：height_massing_character">深度</sup></p>
 <h2>更新项目清单、实施政策与分期计划</h2>
 <p>90天只用于一处测量commissioning，不是同一产品的三站试用、公开运营或建设期。结构化日程按“授权与对象绑定—安装与QA—基线冻结—A-B-A可逆复测—独立复测、签署与恢复”组织；各段天数、L0—L3和分层STOP的唯一事实源是 <code>pilot-gates.json</code>。<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson#PHASE-L1" title="空间数据：geometry/phasing.geojson#PHASE-L1">空间数据</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="pilot_duration_days" title="指标：pilot_duration_days">指标</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="phasing_implementation" title="深度：phasing_implementation">深度</sup></p>

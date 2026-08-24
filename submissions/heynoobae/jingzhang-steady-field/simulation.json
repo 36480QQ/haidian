@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "status": "preregistered_not_run",
+  "status": "protocol_draft_not_run",
   "optional_ai_role": "multi_point_event_attribution",
   "preregistration_unit": "complete physical event before feature selection or augmentation",
   "task_count": 4,
@@ -61,7 +61,8 @@
   "delete_if": "Delete the AI arm if leakage, budget inequality or failure to reach preregistered stable held-out decision gain occurs.",
   "delete_if_zh": "数据泄漏、预算不等或留出事件无预注册稳定增益时，删除AI分支。",
   "blind_benchmark": {
-    "status": "preregistered_not_run",
+    "status": "protocol_draft_not_run",
+    "preregistration_status": "pending_real_task_binding_and_signed_preregistration",
     "arm_labels": [
       "A",
       "B"
@@ -81,5 +82,6 @@
     "minimum_stable_gain": null,
     "reveal_after": "human dispositions, investigation priority, refusal and review time are locked",
     "model_developer_can_view_heldout_labels": false
-  }
+  },
+  "preregistration_status": "pending_real_task_binding_and_signed_preregistration"
 }
