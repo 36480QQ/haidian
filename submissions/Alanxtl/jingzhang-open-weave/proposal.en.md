@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "1.2.0"
-summary: "A heritage-led, walkable, testable and operable civic loop connecting three key areas; this revision adds five AI pilot gates, an eight-package implementation matrix, inclusive-service acceptance checks and four perspective renderings, while all spatial and operating moves remain conceptual and must be recalculated when official data arrives."
+iteration: "1.3.0"
+summary: "A heritage-led, walkable, testable and operable civic loop connecting three key areas; this revision adds five AI pilot gates, an eight-package implementation matrix, inclusive-service acceptance checks and four perspective renderings with visible AI service carriers, while all spatial and operating moves remain conceptual and must be recalculated when official data arrives."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -89,23 +89,23 @@ Dazhongsi is proposed as a city-scale interface organized around station four-qu
 
 ## Perspective Renderings: From Structure to Everyday Space
 
-The following four images are concept renderings generated for this proposal. They communicate public-space scale, material language, operating atmosphere and user relationships; they are not existing photographs, official renderings or final architectural designs. They correspond to the provisional boundary, key areas and project packages. Once official boundaries, ownership, heritage, fire, municipal and accessibility conditions are available, professional teams must reposition, verify and deepen them.
+The following four images are concept renderings generated for this proposal. They communicate public-space scale, material language, operating atmosphere, user relationships and how AI is actually encountered in public life. AI appears as explainable, staffed and opt-out-capable civic service carriers; these are not existing photographs, official renderings or final architectural designs. They correspond to the provisional boundary, key areas and project packages. Once official boundaries, ownership, heritage, fire, municipal and accessibility conditions are available, professional teams must reposition, verify and deepen them.
 
 ![Jingzhang heritage slow-mobility spine with blue-green space and everyday movement](assets/renders/heritage-spine-perspective.png)
 
-*Heritage slow-mobility spine: walking, cycling, shade, rain gardens and an open-source contribution wall form one civic loop.*
+*Heritage slow-mobility spine: walking, cycling, shade, rain gardens and an open-source contribution wall form one civic loop; the right-side AI wayfinding node provides tactile maps, abstract route prompts and human guidance.*
 
 ![Zhongzhiyuan standards commons with riverside innovation edge and human review](assets/renders/zhongzhiyuan-standards-commons.png)
 
-*Zhongzhiyuan: open testing tables, a riverside public edge and human review form the standards commons.*
+*Zhongzhiyuan: open testing tables, a riverside public edge and human review form the standards commons; the foreground AI sandbox makes model comparison, audit flow and human review visible.*
 
 ![AI Origin learning court for near-campus transfer and inclusive service](assets/renders/ai-origin-learning-court.png)
 
-*AI Origin: learning, human inquiry, community activity and accessible everyday space share one courtyard.*
+*AI Origin: learning, human inquiry, community activity and accessible everyday space share one courtyard; the co-learning workstation pairs AI assistance with human handover and a paper fallback.*
 
 ![Dazhongsi smart-economy commons with station quadrants and staffed low-speed service](assets/renders/dazhongsi-smart-economy.png)
 
-*Dazhongsi: station-quadrant walking, public demonstration and staffed low-speed service form a city-scale interface.*
+*Dazhongsi: station-quadrant walking, public demonstration and staffed low-speed service form a city-scale interface; the lower-right AI terminal, edge device and human operator make the service auditable.*
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
