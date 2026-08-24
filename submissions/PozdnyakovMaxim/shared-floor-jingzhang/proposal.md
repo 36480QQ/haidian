@@ -9,14 +9,18 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "换模型，不换城市：以既有京张遗产公共空间为一层共地，用七条转换街缝合校园、社区、站点与产业，并以验证院、原点廊院、城市交汇厅三种长期框架承载可替换的服务、内装和 AI 设备；官方边界到位后整包重绑定、复算。"
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.3-candidate"
+iteration: "v2.4-candidate"
 ---
 
 # 京张共地 / THE SHARED FLOOR
 
 > **换模型，不换城市 / REPLACE THE MODEL, NOT THE CITY.** A 是现役模型，B 是候选，H 是有最终接管权的人工路径。A/B 以同任务、同数据边界、同人群负担比较；服务与权利/安全责任人双签后 B 才可替换 A。换模期间公共地面、普通服务与 H 不断线。
 
+> **名称层级。** 投稿名称是「京张共地 / THE SHARED FLOOR」，全部文件、图纸与页面统一使用；「A/B/H 换模面 / the A/B/H Changeover Floor」只是该投稿内空间机制的名称，不是第二个投稿名或第二个品牌。
+
 ![三处 A/B/H 空间把同一任务、真实 shadow 分歧、人工权力与交付 HOLD 放在一张可核查图上](assets/figures/three-areas-delivery.png)
+
+**一句话说清这份方案。** 沿着京张铁路遗址公园，做一层连续的公共地面，上面立三种房子：一种把两个 AI 模型放在同一任务上当众对比，一种把两者的分歧并排展示给人看，一种让所有人排同一条队、再分三个出口。三种房子的形状不同，但都留着同一条不会中断的人工服务路线——需要人的时候，总有人在柜台后面。这样，模型可以每几个月换一次，而地面、路线和窗口不动。城市不必跟着模型的节奏重建。
 
 ## 一块地面为什么比一代模型活得久
 
@@ -519,7 +523,7 @@ P0 交接由条件时序、角色责任、未计价数量、逐门交接四本�
 
 四幅档案图登记来源、IIIF URL、哈希与署名；因 LOC 仅称不知存在限制并附条件说明再用，本包不简标为 `public domain`。[source:LOC-JINGZHANG-ALBUM-1909]
 
-图纸内嵌 Noto Sans SC 2.004 子集，其哈希、commit、方法和 OFL 见复现文件；NASA POWER 按政策署名，未嵌其他投稿。因 agent-track 与公告知识产权关系未书面澄清，暂用 `COMMUNITY-DISPLAY-ONLY`；详见版权声明。[source:NASA-DATA-POLICY] [source:OFFICIAL-ANNOUNCEMENT]
+图纸内嵌 Noto Sans SC 2.004 子集，其哈希、commit、方法和 OFL 见复现文件；NASA POWER 按政策署名，未嵌其他投稿。本包许可确定为 `COMMUNITY-DISPLAY-ONLY`，不再是待澄清的临时状态：该取值是征集方投稿校验器自身列明的可选许可之一，即其可接受性由征集方规则本身确认。作者据此授予征集方在本次征集内的评审、PR 预览、仓库存档与公开展示，并要求保留署名；其余任何再利用、改作或实施须另行取得作者书面许可。详见版权声明与权利矩阵。[source:NASA-DATA-POLICY] [source:OFFICIAL-ANNOUNCEMENT]
 
 
 ### 整包权利矩阵

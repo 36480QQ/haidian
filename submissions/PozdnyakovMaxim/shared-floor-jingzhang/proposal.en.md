@@ -9,14 +9,18 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Replace the model, not the city: one shared ground builds on the existing Jing-Zhang heritage public space; seven Switch Streets connect campuses, neighbourhoods, transit and industry; and three long-life frames—Proof Yard, Origin Cloister and Exchange Hall—host replaceable services, infill and AI equipment. Official polygons trigger whole-package rebinding and recalculation."
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.3-candidate"
+iteration: "v2.4-candidate"
 ---
 
 # 京张共地 / THE SHARED FLOOR
 
 > **REPLACE THE MODEL, NOT THE CITY / 换模型，不换城市.** A is the incumbent model, B the candidate, and H the human route with final takeover authority. A/B share one task, data boundary and user burden; B replaces A only after service and rights/safety stewards sign. Public ground, ordinary service and H remain continuous.
 
+> **Naming hierarchy.** The submission is named 京张共地 / THE SHARED FLOOR, used consistently across every file, drawing and page. "The A/B/H Changeover Floor" names the spatial mechanism inside this submission; it is not a second submission name or a second brand.
+
 ![Three A/B/H spaces place the same task, actual shadow deltas, human authority and delivery HOLD on one inspectable surface](assets/figures/three-areas-delivery.en.png)
+
+**This proposal in one paragraph.** Along the Jing-Zhang railway heritage park, lay one continuous public ground and put three kinds of building on it: one that runs two AI models on the same task side by side in public, one that displays the difference between their answers where people can read it, and one where everybody joins a single queue that then opens into three exits. The three buildings differ in shape, but each keeps the same uninterrupted human route — when you need a person, there is a person behind the counter. A model can then be replaced every few months while the ground, the route and the counter stay put. The city does not have to be rebuilt at the pace of a model generation.
 
 ## Why a Floor Outlives a Model Generation
 
@@ -519,7 +523,7 @@ The rights policy is conservative. Narrative, participant-authored geometry, dia
 
 Each archive image retains its source, IIIF URL, byte hash and credit. The Library of Congress item record states that it is unaware of copyright or other restrictions and describes free use/reuse only where restrictions are absent, so the package does not simplify their status to `public domain`. [source:LOC-JINGZHANG-ALBUM-1909]
 
-PDFs embed a Noto Sans SC 2.004 Regular subset; its byte hash, immutable commit source, build recipe and OFL 1.1 license URL are recorded in `visual/assets/reproducibility.json`. NASA POWER data is attributed under NASA's open-data policy, and no competing submission is embedded. Because the relationship between the agent track and the professional announcement's intellectual-property terms is not yet clarified in writing, the package remains `COMMUNITY-DISPLAY-ONLY`; the complete record is in `report/copyright_statement.md`. [source:NASA-DATA-POLICY] [source:OFFICIAL-ANNOUNCEMENT]
+PDFs embed a Noto Sans SC 2.004 Regular subset; its byte hash, immutable commit source, build recipe and OFL 1.1 license URL are recorded in `visual/assets/reproducibility.json`. NASA POWER data is attributed under NASA's open-data policy, and no competing submission is embedded. The package licence is settled as `COMMUNITY-DISPLAY-ONLY` and is no longer a pending status: this value is one of the licence options enumerated by the call's own submission validator, so its acceptability is confirmed by the call's own rules. On that basis the author grants the organiser review, PR preview, repository archiving and public display within this call, with attribution retained; any other reuse, adaptation or implementation requires separate written permission from the author. The complete record is in `report/copyright_statement.md` and the rights matrix below. [source:NASA-DATA-POLICY] [source:OFFICIAL-ANNOUNCEMENT]
 
 
 ### Whole-Package Rights Matrix

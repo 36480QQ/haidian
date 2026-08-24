@@ -269,7 +269,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "937ed5ce7adcc462739afbe2af6da595e981479362ec6f7fe50c258061f48081"
+      "sha256": "8559ba52806a45901e03e6d0d6a81ab57b1a607c563d6ae63c4e19d5e4c05d02"
     },
     {
       "path": "compliance_matrix.json",
@@ -384,20 +384,20 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ee73f265a557fcaa38b3a4bd748406d37a70d70a554cc39857217787f5b6618b"
+      "sha256": "c6ded9d98f45a0a65bcd99b8093a40db8cb3acf58c67a3380c9e7b45a9726cce"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3d330c5cce9e64174b45891ff0e2e0775b00c9bdc08319faa98e9d9fb2053e84"
+      "sha256": "fb578651657764276e2f438bcc30a63d7b095c1de5faa3d67f615377b1546a07"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "91dc4b4ad13558a799def6796840de072269b17ce719b7cc4d7a5b356b326421"
+      "sha256": "aefc65243d477d956ff9d38ad1cd1ed405fdca34b318aa3da15109ac619e6ef0"
     },
     {
       "path": "report/narrative.md",
@@ -411,14 +411,14 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "94abd986696754099c25789746c191503d70939444445a2a51f9ff1325847a4f"
+      "sha256": "d467de36c375693820559c80ab8820a8b29cb142b6aa9ca6ba7459c0b97c9c99"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "aa16b7c9915502bfa4ff51a32e53eae0cfef72078887e6c1a01d7c9b0dafb5a3"
+      "sha256": "5f692ef8623909d7745683fa01f24d45e28df78e8c04729595631d070fb7792f"
     },
     {
       "path": "risk.json",
@@ -430,7 +430,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "cf56abdc42a0277b7ef70c2aa0091ec5acb96bc8d788e5e7a300739dac9a6306"
+      "sha256": "669ffb5724014121770d16a5a960303fe106eda2b93e5366653c274fac1865aa"
     },
     {
       "path": "simulation.json",
@@ -917,7 +917,7 @@
       "role": "visualization",
       "required": true,
       "language": "neutral",
-      "sha256": "74bbc9c78d1c19f54bdc0162bea0e2fbabd05b0a302e17de2f402d0abf66cd3a"
+      "sha256": "d9a13a1f2c45fc0b16079f344c10b9d01c9a906c1635dfc701604c3d84112158"
     },
     {
       "path": "visual/assets/runs/shared-floor-changeover-ed41614d2fa3c85d/build_receipt.json",

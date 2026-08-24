@@ -1,7 +1,7 @@
 {
   "schema": "shared-floor-rights-matrix/v1",
   "package_licence": "COMMUNITY-DISPLAY-ONLY",
-  "licence_clarification_status": "pending_written_clarification_of_agent_track_vs_announcement_ip_terms",
+  "licence_clarification_status": "settled_value_enumerated_by_the_call_submission_validator",
   "legal_opinion": false,
   "entries": [
     {
@@ -108,5 +108,18 @@
       "grant": "不复制其照片、插图、地图、标识、页面版式或字体",
       "grant_en": "Their photographs, illustrations, maps, logos, page layouts and fonts are not copied"
     }
-  ]
+  ],
+  "grant_to_open_call": [
+    "review",
+    "pull_request_preview",
+    "repository_archive",
+    "public_display"
+  ],
+  "grant_excludes": [
+    "commercial_reuse",
+    "adaptation",
+    "sublicensing",
+    "implementation"
+  ],
+  "attribution_required": true
 }
