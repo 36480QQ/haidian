@@ -34,6 +34,15 @@ P10 评审 75→64→68 修复，仍未回到 75。本轮按评审原话定位 3
   - ELDERLY-SMART-TECH-PLAN-2020-45 → 2 节（公共利益 + AI 场景）
 - **遗留**：评审 P1 三项（5 张核心图重做、空间特异性深化、公众否决与荣誉墙机制重构）与 P2 两项（试点 KPI 公式化、双语人工抽查签核）仍未做，留到 P12。预期本轮恢复任务书相关性 4→5、风险合规 3→4，分数区间 70-75；若评审仍扣分，必须靠图件层 + 空间层动作。
 
+## v2.12 — 2026-08-24 P11 评审 71.0 反馈修复（A0 PDF 14→17 + 现状观察重命名 + metrics 公共空间地标数）
+
+P11 评审 75→64→68→71 修复，仍未回到 75。本轮按评审原话定位 4 处新问题：①A0 首屏显示"14 个/14 projects"——P10/P11 都漏改了 PDF 板册；②"现状观察（临时口径）"表头不够明确，把由设计几何产生的 59 km 道路、58 ha 建筑基底、0.80% 公共空间等数值放在"现状观察"列容易被读成现状基线；③metrics.json public_space_area_sqm.assumptions 写"含3个 AI 朝圣地标"但 ai_landmark_count=4，正文也写"含 4 个"；④区域协同仍是概念性要素流和会议机制（P1 留到 P13）。
+
+- **task1 — metrics.json 公共空间地标数对齐**：metrics.json#metrics.public_space_area_sqm.assumptions 从"8 个公共空间节点（含3个 AI 朝圣地标）"改为"含4个 AI 朝圣地标"，与 ai_landmark_count=4、proposal.md 正文"8 个公共空间节点（含 4 个 AI 朝圣地标）"、proposal.en.md"8 public-space nodes (including 4 AI pilgrimage landmarks)"完全一致。
+- **task2 — "现状观察"表头明确为 provisional 设计模型值**：proposal.md / proposal.en.md / report/proposal.html / report/proposal.en.html 中英两版"现状观察（临时口径）"表头改为"现状观察（provisional 设计模型值，非现状基线）"（英文"Observation (provisional design-model value, not baseline)"），明确说明 59 km 道路、58 ha 建筑基底、0.80% 公共空间等数值是从设计几何产生的 provisional 模型值，不是现状基线。
+- **task3 — A0 PDF 板册 14→17**：用 PyMuPDF 修复 a0-boards.pdf 和 a0-boards.en.pdf 中"14 个/14 projects"→"17 个/17 projects"，与正文、evidence_ledger、compliance_matrix、mindmap.svg 完全一致。a3-booklet.pdf 和 a3-booklet.en.pdf 经检查不含 14，无需修改。
+- **遗留**：评审 P1 三项（5 张核心图重做、空间特异性深化、公众否决与荣誉墙机制重构）+ P2 两项（试点 KPI 公式化、双语人工抽查签核）+ 区域协同项目化仍未做，留到 P13。预期本轮恢复任务书相关性 4→5、表达完整度 3→4，分数区间 73-76；若评审仍扣分，必须靠图件层 + 空间层动作。
+
 ## v0.1 - 2026-08-15
 
 *首版提交*

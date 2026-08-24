@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "761a95069493c609fa1d8bc891b33684ae253a321cc0c8b49b2a56b5b6f7b036"
+      "sha256": "b97149037ceb346977146cced1fc9d5697d0b8c1203fa3242769b3315950ebcd"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "9e56eeacbc86ec5f750b21972a7e3dd6473232fc94ac8d612f034c3b30949b49"
+      "sha256": "6ab220fad95528196f18032bf5b24d4d54936f8a1790ca8889c1671f5cebf717"
     },
     {
       "path": "assumptions.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bc528eaddb75d5ed144232967c22b56a9ac83074c7d6fad16caefdc973e87286"
+      "sha256": "20a3102a87f0bb148f3a0f344d5c6188e70d17a0f15f7cf7087f319ae2a2f0ac"
     },
     {
       "path": "report/narrative.md",
@@ -107,7 +107,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "343117fd2e45f9c9b8cad84db00b3a204c2345230b885adf898cb183e91b5bf5"
+      "sha256": "2f2cc97093800af4028dc66d3a9847d945a973b039907bd11cbea58e7df602ac"
     },
     {
       "path": "visual/index.html",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "dee1746f7936b264afd33dad6c925501025ceed3ad3bb8fd3227e26fd41a91a1"
+      "sha256": "6a52a953490e5b14284fb5d06c460d173bd1c9f9a2a29be87b413ebefa8eb611"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "887ce7f2f10e2d32d113860f29556a827feaa0b84720660786ea391df6ed049a"
+      "sha256": "81ab6fae17f19bf59d0a91e6964dd1cb27ca0402f78bf366813c24591b373864"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "98b35d7e4d12a499fd556bebba8ddc91a5345d45ec6ee4cdf51c7bec50e633ae"
+      "sha256": "376cbe7a848734356b743cff69bec2b2b9419e40a62e2b20c510b221cad2d6db"
     },
     {
       "path": "assets/media/logo.svg",
@@ -292,7 +292,7 @@
       "role": "narrative",
       "required": false,
       "language": "zh",
-      "sha256": "5e9fea1e4463d08df83329d0c55f40cd5b03b7e072738ebd357c2236db8805d0"
+      "sha256": "fdf6b40fa357324d62fccbfc0421ce12fd8680b13478cee063004640653ae2f6"
     },
     {
       "path": "assets/media/cover.webp",
