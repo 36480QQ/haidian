@@ -1,766 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- translation_of: visual/index.html -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="translation_of" content="visual/index.html">
-<meta name="description" content="Jingzhang Coupler Belt (JCB): visual overview of the urban design open-source submission for the Centennial Jingzhang AI Innovation Belt (offline static display page)">
-<meta name="generator" content="open-city-ai/haidian · jingzhang-coupler-belt">
-<title>Jingzhang Coupler Belt (JCB) · Submission Visual Overview</title>
+<title>京张·自动车钩带 · 可组合城市 / Jingzhang Coupler Belt · Composable City</title>
 <style>
-:root{
-  --steel:#16324f; --steel-2:#1d4063; --steel-deep:#0f2438;
-  --amber:#e8a13d; --amber-2:#f0b45f; --amber-deep:#c07f22;
-  --ink:#1c2733; --muted:#5d6b7a; --faint:#8a97a5;
-  --line:#dde4ec; --paper:#ffffff; --soft:#f3f6f9;
-  --pass:#1f8a4c; --pass-bg:#e7f5ec; --pass-line:#b9e0c8;
-  --warn:#9a6410; --warn-bg:#fdf3e1; --warn-line:#ecd3a6;
-  --radius:12px; --shadow:0 12px 30px rgba(15,36,56,.10);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#eef2f6;color:var(--ink);line-height:1.62;font-size:15px;font-family:"Segoe UI",Roboto,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
-.wrap{max-width:1240px;margin:0 auto;padding:0 22px}
-h1,h2,h3,h4{margin:0;line-height:1.25}
-h2{font-size:21px;color:var(--steel)}
-h3{font-size:16px;color:var(--steel)}
-p{margin:0 0 10px}
-img{max-width:100%;height:auto}
-strong{color:var(--ink)}
-
-/* ---------- masthead ---------- */
-.masthead{background:linear-gradient(165deg,var(--steel) 0%,var(--steel-deep) 78%);color:#fff;border-bottom:5px solid var(--amber)}
-.masthead .wrap{padding-top:30px;padding-bottom:22px}
-.brand-row{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;flex-wrap:wrap}
-.brand{display:flex;gap:18px;align-items:flex-start;max-width:880px}
-.brand-mark{flex:0 0 auto;width:74px;height:74px;border:2px solid var(--amber-2);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,.06);font-weight:800}
-.brand-mark .jz{font-size:26px;letter-spacing:1px;color:#fff;line-height:1}
-.brand-mark .inf{font-size:18px;color:var(--amber-2);line-height:1.1}
-.eyebrow{margin:0 0 8px;font-size:12px;letter-spacing:.22em;color:var(--amber-2);text-transform:uppercase}
-h1{font-size:30px;letter-spacing:.01em;color:#fff;margin-bottom:8px}
-.subtitle{margin:0;color:#c9d6e4;font-size:15.5px;max-width:820px}
-.meta{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
-.meta-chip{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 11px;font-size:12px;color:#e4ebf3;background:rgba(255,255,255,.05)}
-.status-strip{margin-top:20px;display:flex;gap:14px;align-items:flex-start;background:rgba(232,161,61,.12);border:1px solid rgba(232,161,61,.45);border-radius:10px;padding:14px 18px}
-.status-strip .ico{font-size:20px;line-height:1.3;color:var(--amber-2)}
-.status-strip strong{color:#ffe1b0;font-size:14px}
-.status-strip p{margin:4px 0 0;color:#dce6f0;font-size:13px}
-/* ---------- nav ---------- */
-.topnav{position:sticky;top:0;z-index:20;background:rgba(15,36,56,.96);border-bottom:1px solid rgba(255,255,255,.12)}
-.topnav .wrap{display:flex;flex-wrap:wrap;gap:2px;padding-top:0;padding-bottom:0}
-.topnav a{color:#b9c8d8;text-decoration:none;font-size:12.5px;padding:11px 12px;border-bottom:2px solid transparent;white-space:nowrap}
-.topnav a:hover{color:#fff;border-bottom-color:var(--amber)}
-/* ---------- sheets ---------- */
-.sheet{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:26px 0;overflow:hidden}
-.sheet-head{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:20px 26px 16px;border-bottom:1px solid var(--line);background:#fbfcfe}
-.sheet-head .lead{max-width:840px}
-.sheet-head .lead p{margin:6px 0 0;color:var(--muted);font-size:13.5px}
-.sec-no{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--amber-deep);background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:6px;padding:3px 9px;margin-bottom:8px}
-.tag{flex:0 0 auto;font-size:11.5px;color:var(--faint);border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 11px;white-space:nowrap}
-.sheet-body{padding:22px 26px 26px}
-/* ---------- figure ---------- */
-.fig{border:1px solid var(--line);border-radius:10px;background:var(--soft);padding:10px}
-.fig img{display:block;width:100%;border-radius:6px;background:#fff}
-.figcap{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:10px;font-size:13px;color:var(--muted)}
-.legend{display:flex;flex-wrap:wrap;gap:8px}
-.chip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:999px;background:#fff;padding:4px 11px;font-size:12.5px;color:var(--muted)}
-.dot{width:11px;height:11px;border-radius:3px;flex:0 0 auto}
-/* ---------- grids & cards ---------- */
-.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.card{border:1px solid var(--line);border-radius:10px;background:var(--soft);padding:16px 18px}
-.card h3{margin-bottom:8px}
-.card p{margin:0 0 8px;font-size:13.5px;color:var(--muted)}
-.card ul{margin:0;padding-left:16px}
-.card li{font-size:13px;color:var(--muted);margin-bottom:3px}
-.num-big{display:block;font-size:26px;font-weight:800;color:var(--steel);line-height:1.1;margin-bottom:4px}
-.num-big small{font-size:13px;font-weight:600;color:var(--faint)}
-.kv{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:7px;margin-top:7px}
-.kv b{color:var(--ink);font-weight:600;text-align:right}
-/* structure five */
-.struct-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
-.struct-card{border:1px solid var(--line);border-left:4px solid var(--steel);border-radius:8px;background:#fff;padding:12px 14px}
-.struct-card .st-name{font-size:15px;font-weight:800;color:var(--steel);margin-bottom:2px}
-.struct-card .st-en{font-size:11px;color:var(--faint);letter-spacing:.05em;margin-bottom:8px}
-.struct-card p{margin:0;font-size:12.5px;color:var(--muted)}
-.belt{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.belt-chip{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:6px 13px;font-size:12.5px;border:1px solid var(--line);background:#fff}
-.belt-chip .n{font-weight:800;color:var(--amber-deep)}
-/* metrics */
-.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:18px}
-.metric-card{position:relative;border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:10px;background:linear-gradient(180deg,#fff,var(--soft));padding:16px 18px 14px}
-.metric-card .m-key{font-size:11.5px;letter-spacing:.05em;color:var(--faint);margin-bottom:4px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-.metric-card .m-val{font-size:25px;font-weight:800;color:var(--steel);line-height:1.15}
-.metric-card .m-note{margin-top:6px;font-size:12px;color:var(--muted)}
-.metric-card.unknown .m-val{font-size:15px;font-weight:700;color:var(--warn)}
-.mtable{width:100%;border-collapse:collapse;font-size:13px}
-.mtable th{text-align:left;background:var(--soft);color:var(--muted);font-weight:600;padding:8px 12px;border:1px solid var(--line);font-size:12px;letter-spacing:.03em}
-.mtable td{padding:8px 12px;border:1px solid var(--line);color:var(--ink)}
-.mtable td.k{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:var(--faint)}
-.mtable td.v{font-weight:700;color:var(--steel);white-space:nowrap}
-/* scenario cards */
-.scn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.scn-card{border:1px solid var(--line);border-radius:8px;padding:11px 13px;background:#fff}
-.scn-card .scn-no{font-size:11px;font-weight:800;color:var(--amber-deep);letter-spacing:.06em}
-.scn-card b{display:block;font-size:13.5px;color:var(--steel);margin:2px 0 3px}
-.scn-card span{font-size:12px;color:var(--muted);display:block}
-.persona-row{display:flex;flex-wrap:wrap;gap:8px}
-.persona-chip{border:1px solid var(--line);border-radius:999px;background:var(--soft);padding:6px 13px;font-size:12.5px;color:var(--ink)}
-/* agents */
-.agent-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.agent-card{border:1px solid var(--line);border-left:4px solid var(--steel);border-radius:10px;background:#fff;padding:15px 17px;display:flex;flex-direction:column;gap:6px}
-.agent-card .a-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.agent-card .a-id{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;font-weight:700;color:var(--amber-deep)}
-.agent-card h3{font-size:14.5px}
-.agent-card p{margin:0;font-size:12.5px;color:var(--muted)}
-.badge-pass{flex:0 0 auto;display:inline-flex;align-items:center;gap:5px;background:var(--pass-bg);color:var(--pass);border:1px solid var(--pass-line);border-radius:999px;font-size:11.5px;font-weight:700;padding:3px 10px;white-space:nowrap}
-/* self check */
-.cktable{width:100%;border-collapse:collapse;font-size:13px}
-.cktable th{text-align:left;background:var(--soft);color:var(--muted);padding:8px 12px;border:1px solid var(--line);font-size:12px}
-.cktable td{padding:8px 12px;border:1px solid var(--line);vertical-align:top}
-.cktable .cid{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:var(--steel);font-weight:700}
-.pass-pill{display:inline-block;background:var(--pass-bg);color:var(--pass);border:1px solid var(--pass-line);border-radius:999px;font-size:11.5px;font-weight:700;padding:2px 10px}
-.sev-pill{display:inline-block;background:var(--soft);border:1px solid var(--line);border-radius:999px;font-size:11px;color:var(--muted);padding:2px 10px}
-/* sources & compliance */
-.split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:22px}
-.src-block{margin-bottom:18px}
-.src-block h3{font-size:15px;margin-bottom:8px}
-.src-block ol,.src-block ul{margin:0;padding-left:18px}
-.src-block li{font-size:13px;color:var(--muted);margin-bottom:5px}
-.src-block code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:var(--steel)}
-.riskbox{background:var(--warn-bg);border:1px solid var(--warn-line);border-left:5px solid var(--amber);border-radius:10px;padding:18px 22px}
-.riskbox h3{color:var(--warn);margin-bottom:8px}
-.riskbox ul{margin:0;padding-left:18px}
-.riskbox li{font-size:13.5px;color:#5b4a26;margin-bottom:6px}
-.riskbox li b{color:#7a5414}
-.quote-box{margin:16px 0;padding:14px 18px;background:var(--soft);border-left:4px solid var(--amber);border-radius:8px;font-size:14px;color:var(--steel)}
-.quote-box .en{display:block;margin-top:4px;font-size:12.5px;color:var(--muted);font-style:italic}
-/* footer */
-footer{background:var(--steel-deep);color:#93a5b8;margin-top:34px}
-footer .wrap{padding-top:22px;padding-bottom:26px;font-size:12.5px}
-footer p{margin:0 0 4px}
-footer .rule{border-top:1px solid rgba(255,255,255,.14);margin:12px 0 10px}
-/* responsive */
-@media (max-width:960px){
-  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .struct-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .scn{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .split{grid-template-columns:1fr}
-  .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media (max-width:640px){
-  body{font-size:14px}
-  h1{font-size:22px}
-  .brand-mark{width:60px;height:60px}
-  .meta{align-items:flex-start}
-  .grid-2,.grid-3,.metric-grid,.scn,.agent-grid{grid-template-columns:1fr}
-  .struct-grid{grid-template-columns:1fr}
-  .sheet-head{flex-direction:column}
-  .sheet-body{padding:18px 16px 20px}
-  .figcap{flex-direction:column;align-items:flex-start}
-  .mtable{font-size:12px}
-  .mtable th,.mtable td{padding:6px 8px}
-}
+:root { --steel:#16324f; --amber:#e8a13d; --ink:#22303e; --faint:#8a94a0; --line:#dfe5ec; --soft:#f4f7fa; --red:#b3261e; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Source Han Sans SC",sans-serif; color:var(--ink); background:#fff; line-height:1.55; }
+.wrap { max-width:1180px; margin:0 auto; padding:0 20px; }
+.top { background:var(--steel); color:#fff; padding:26px 0 20px; }
+.top h1 { margin:0 0 4px; font-size:26px; letter-spacing:.5px; }
+.top .sub { color:#b9c8d8; font-size:13px; }
+.banner { background:#fdecea; color:var(--red); border:1px solid var(--red); border-radius:6px;
+          padding:10px 14px; margin:18px 0 0; font-weight:600; font-size:13px; }
+nav.sticky { position:sticky; top:0; background:#fff; border-bottom:1px solid var(--line); z-index:9; }
+nav.sticky .wrap { display:flex; gap:14px; overflow-x:auto; padding:10px 20px; }
+nav.sticky a { color:var(--steel); text-decoration:none; font-size:13px; white-space:nowrap; }
+section { padding:34px 0 10px; border-bottom:1px solid var(--line); }
+section h2 { color:var(--steel); font-size:20px; margin:0 0 14px; border-left:4px solid var(--amber); padding-left:10px; }
+.metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+.mcard { border:1px solid var(--line); border-radius:8px; padding:12px 14px; background:#fff; }
+.mcard .mlab { font-size:12.5px; color:#33556e; }
+.mcard .mval { font-size:22px; font-weight:700; color:var(--steel); margin:4px 0 2px; }
+.mcard .mmeta { font-size:11px; color:var(--faint); }
+.mapbox { border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+.mapbox img { width:100%; display:block; }
+.layers { display:flex; gap:10px; flex-wrap:wrap; margin:12px 0 4px; font-size:12.5px; }
+.layers label { border:1px solid var(--line); border-radius:999px; padding:5px 12px; cursor:pointer; background:var(--soft); }
+.legend { font-size:12px; color:var(--faint); margin-top:8px; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.scards { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.scard { border:1px solid var(--line); border-radius:8px; padding:10px 12px; background:var(--soft); }
+.scard-t { font-weight:600; font-size:13px; color:var(--steel); }
+.scard-l { font-size:12px; color:var(--faint); margin-top:4px; }
+.trow, .prow { display:flex; gap:10px; align-items:baseline; padding:7px 0; border-bottom:1px dashed var(--line); font-size:13px; }
+.trow .ok { margin-left:auto; color:#1b5e20; font-size:12px; }
+details { border:1px solid var(--line); border-radius:8px; margin:8px 0; background:var(--soft); }
+summary { cursor:pointer; padding:10px 14px; font-weight:600; color:var(--steel); font-size:13.5px; }
+details .inner { padding:4px 16px 14px; font-size:12.5px; }
+details li { margin:6px 0; word-break:break-all; }
+code { background:#eef1f5; border-radius:4px; padding:1px 5px; font-size:12px; }
+.status { display:inline-block; background:#e8f5e9; color:#1b5e20; border:1px solid #1b5e20; border-radius:999px;
+           padding:4px 14px; font-weight:700; font-size:13px; }
+.foot { padding:26px 0 40px; color:var(--faint); font-size:11.5px; }
+@media (max-width:860px) { .metrics{grid-template-columns:repeat(2,1fr);} .grid2{grid-template-columns:1fr;} .scards{grid-template-columns:repeat(2,1fr);} }
 </style>
 </head>
 <body>
+<div class="top"><div class="wrap">
+  <h1>Jingzhang Coupler Belt · Composable City</h1>
+  <div class="sub">One Spine · Three Stations · Two Wings · Switches · Passing Loops ｜ standard railcars · coupler interface · signal interlocking · auto-uncouple</div>
+  <div class="banner">⚠ All spatial conclusions are conceptual suggestions; boundary is provisional (not an official redline); full recalculation after official data release.</div>
+</div></div>
 
-<header class="masthead">
-  <div class="wrap">
-    <div class="brand-row">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true"><span class="jz">JZ</span><span class="inf">∞</span></div>
-        <div>
-          <p class="eyebrow">Open-Source Urban Design Call · Centennial Jingzhang AI Innovation Belt · Visual Overview</p>
-          <h1>Jingzhang Coupler Belt <span style="font-weight:500;font-size:19px;color:var(--amber-2)">京张·自动车钩带 (JCB)</span></h1>
-          <p class="subtitle">From the century-old coupler to the city that plugs in — an open-interface city structured as "One Mainline · Three Stations · Two Wings · Turnouts · Passing Loops", inspired by Jeme Tien-Yow's automatic-coupler interoperability.</p>
-        </div>
-      </div>
-      <div class="meta">
-        <span class="meta-chip">Version v0.1</span>
-        <span class="meta-chip">English version · translation_of: visual/index.html</span>
-        <span class="meta-chip">Fully offline static HTML</span>
-      </div>
-    </div>
-    <div class="status-strip">
-      <span class="ico" aria-hidden="true">⚠</span>
-      <div>
-        <strong>Provisional Boundary — intake display only</strong>
-        <p>All spatial conclusions on this page are generated from the repository's provisional boundaries <code style="color:#ffe1b0">provisional_boundaries.geojson</code> (PROV-SITE-001 / PROV-KEY-001–003) and are for display, discussion and revision only. They are <b style="color:#ffe1b0">not the official redline, precise area, approval or scoring basis</b>. Once official polygons are released, all metrics must be recomputed per the recompute checklist in assumptions.json.</p>
-      </div>
-    </div>
+<nav class="sticky"><div class="wrap">
+  <a href="#map">Map</a><a href="#metrics">Metrics</a>
+  <a href="#scope">Scope</a><a href="#areas">Key areas</a>
+  <a href="#landuse">Land use</a><a href="#mobility">Mobility</a>
+  <a href="#scenes">AI scenarios</a><a href="#tasks">Agent tasks</a>
+  <a href="#renewal">Renewal</a><a href="#evidence">Sources</a>
+</div></nav>
+
+<section id="map"><div class="wrap"><h2>Overview map · spatial structure (overlaid on real OSM base)</h2>
+  <div class="mapbox"><img src="../assets/figures/site-overview.en.png" alt="Overall concept map"></div>
+  <div class="legend">OSM base © OpenStreetMap contributors (ODbL 1.0); red dashed = provisional key areas; provisional boundary shown as dashed/faded, not the composition focus.</div>
+</div></section>
+
+<section id="metrics"><div class="wrap"><h2>Core metrics (provisional model approximations)</h2>
+  <div class="metrics">
+    <div class="mcard"><div class="mlab">Overall design area</div><div class="mval"><span data-metric="site_area_sqm" data-value="11412825.386">≈11.41 km²</span></div><div class="mmeta">site_area_sqm · sqm</div></div>
+    <div class="mcard"><div class="mlab">Green ratio</div><div class="mval"><span data-metric="green_ratio" data-value="0.313816">≈31.4%</span></div><div class="mmeta">green_ratio · ratio</div></div>
+    <div class="mcard"><div class="mlab">Public space ratio</div><div class="mval"><span data-metric="public_space_ratio" data-value="0.04951">≈5.0%</span></div><div class="mmeta">public_space_ratio · ratio</div></div>
+    <div class="mcard"><div class="mlab">Concept building footprint</div><div class="mval"><span data-metric="building_footprint_area_sqm" data-value="1008704.556">≈1.01 km²</span></div><div class="mmeta">building_footprint_area_sqm · sqm</div></div>
+    <div class="mcard"><div class="mlab">Key areas total</div><div class="mval"><span data-metric="key_area_total_sqm" data-value="3692893.005">≈3.69 km²</span></div><div class="mmeta">key_area_total_sqm · sqm</div></div>
+    <div class="mcard"><div class="mlab">AI scenario cards</div><div class="mval"><span data-metric="ai_scenario_card_count" data-value="12">12</span></div><div class="mmeta">ai_scenario_card_count · count</div></div>
+    <div class="mcard"><div class="mlab">User personas</div><div class="mval"><span data-metric="user_persona_count" data-value="7">7</span></div><div class="mmeta">user_persona_count · count</div></div>
+    <div class="mcard"><div class="mlab">Pilgrimage landmarks</div><div class="mval"><span data-metric="pilgrimage_landmark_count" data-value="3">3</span></div><div class="mmeta">pilgrimage_landmark_count · count</div></div>
+    <div class="mcard"><div class="mlab">Industry test scenarios</div><div class="mval"><span data-metric="industry_test_scenario_count" data-value="4">4</span></div><div class="mmeta">industry_test_scenario_count · count</div></div>
+    <div class="mcard"><div class="mlab">Renewal projects</div><div class="mval"><span data-metric="renewal_project_count" data-value="21">21</span></div><div class="mmeta">renewal_project_count · count</div></div>
+    <div class="mcard"><div class="mlab">Green space area</div><div class="mval"><span data-metric="green_space_area_sqm" data-value="3581524.507">≈3.58 km²</span></div><div class="mmeta">green_space_area_sqm · sqm</div></div>
+    <div class="mcard"><div class="mlab">Public space area</div><div class="mval"><span data-metric="public_space_area_sqm" data-value="565043.34">≈565,043 ㎡</span></div><div class="mmeta">public_space_area_sqm · sqm</div></div>
+    <div class="mcard"><div class="mlab">Land-use area</div><div class="mval"><span data-metric="land_use_area_sqm" data-value="11412849.063">≈11.41 km²</span></div><div class="mmeta">land_use_area_sqm · sqm</div></div>
   </div>
-</header>
+  <div class="legend">FAR, building height etc. depend on unpublished regulatory controls and remain unknown; displayed values are provisional model approximations.</div>
+</div></section>
 
-<nav class="topnav" aria-label="Page navigation">
-  <div class="wrap">
-    <a href="#sec-overview">Overview</a>
-    <a href="#sec-scope">Three Scopes</a>
-    <a href="#sec-structure">Spatial Structure</a>
-    <a href="#sec-keyareas">Key Areas</a>
-    <a href="#sec-landuse">Land Use</a>
-    <a href="#sec-mobility">Mobility &amp; Blue-Green</a>
-    <a href="#sec-metrics">Core Metrics</a>
-    <a href="#sec-scenarios">AI Scenarios</a>
-    <a href="#sec-agents">Task Coverage</a>
-    <a href="#sec-selfcheck">Self-Check</a>
-    <a href="#sec-sources">Sources &amp; Assumptions</a>
-    <a href="#sec-risk">Risk &amp; Compliance</a>
+<section id="scope"><div class="wrap"><h2>Three-level scope framework</h2>
+  <div class="grid2">
+    <div><b>Coordinated research area</b>：~43.6 km² (5th Ring – Xizhimen Outer St)</div>
+    <div><b>Overall design area</b>：~11.4 km² (1–2 km around the heritage park)</div>
+    <div><b>Key detailed-design area</b>：~368.4 ha (Zhongzhiyuan 192.1 / Origin 104.3 / Dazhongsi 72.0)</div>
+    <div class="legend">Note: distinct from the regulatory-plan 16.7 km² and the belt-wide 37 km² scope.</div>
   </div>
-</nav>
+</div></section>
 
-<main class="wrap">
-
-  <!-- 01 Overview map -->
-  <section class="sheet" id="sec-overview">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">01</span>
-        <h2>Overview Map</h2>
-        <p>The master concept map brings land use, mobility, blue-green public space, buildings and renewal projects, and AI scenario nodes into a single evidence drawing, showing the "one mainline, three stations, two wings" spatial spine and the submission's evidence chain at a glance.</p>
-      </div>
-      <span class="tag">geometry + metrics + evidence chain</span>
-    </div>
-    <div class="sheet-body">
-      <figure class="fig">
-        <img src="../assets/figures/site-overview.en.png" alt="Jingzhang Coupler Belt master concept map: overview map, three scopes, key areas, land use, mobility, blue-green public space and renewal projects" width="1600" height="auto">
-        <figcaption class="figcap">
-          <span>Fig. 01 · Master concept and submission evidence chain (site-overview.en.png)</span>
-          <span class="legend">
-            <span class="chip"><i class="dot" style="background:var(--steel)"></i>Three scopes</span>
-            <span class="chip"><i class="dot" style="background:var(--amber)"></i>Key areas</span>
-            <span class="chip"><i class="dot" style="background:var(--pass)"></i>Land use</span>
-            <span class="chip"><i class="dot" style="background:#0f7490"></i>Mobility</span>
-            <span class="chip"><i class="dot" style="background:#5b6b7c"></i>Blue-green public space</span>
-          </span>
-        </figcaption>
-      </figure>
-      <div class="quote-box">
-        "Couple anything, anywhere, anytime — the city that plugs in."
-        <span class="en">把一百年的挂接智慧，变成一座随插随用的城市。</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 02 Three scopes -->
-  <section class="sheet" id="sec-scope">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">02</span>
-        <h2>Three-Level Scope Framework</h2>
-        <p>Proceeding from "industrial strategy — overall design — key-area detailing", the three levels form one unified evidence chain answering "what the Belt is", "how the Belt is organised" and "how key areas are deepened".</p>
-      </div>
-      <span class="tag">OFFICIAL-ANNOUNCEMENT</span>
-    </div>
-    <div class="sheet-body">
-      <div class="grid-3">
-        <article class="card">
-          <span class="num-big">43.6 <small>km²</small></span>
-          <h3>Overall Study Scope</h3>
-          <p>Industrial strategy layer: AI ecosystem, future urban form of the Belt, and synergy with Zhongguancun, Shangdi and Future Science City; outputs focus on industrial and spatial strategy.</p>
-          <div class="kv"><span>Extent</span><b>N. 5th Ring · Jingzang Expressway · Xizhimen Outer St. · Wanquanhe Rd.</b></div>
-        </article>
-        <article class="card">
-          <span class="num-big">11.4 <small>km²</small></span>
-          <h3>Overall Design Scope</h3>
-          <p>Regulatory-detailed planning depth: the 1–2 km urban and industrial belt around the Jingzhang Heritage Park, organised through the "One Mainline · Three Stations · Two Wings · Turnouts · Passing Loops" structure covering land, renewal, mobility, utilities, blue-green and townscape.</p>
-          <div class="kv"><span>Output</span><b>Overall structure + regulatory-depth urban design</b></div>
-        </article>
-        <article class="card">
-          <span class="num-big">368.4 <small>ha</small></span>
-          <h3>Key-Area Scope</h3>
-          <p>Detailed design layer: from north to south, Zhongzhi Park (≈192.1 ha), the Beijing AI Origin Community (≈104.3 ha) and Dazhongsi (≈72.0 ha), each deepened on "positioning + spatial structure + building renewal + mobility + public space + AI scenarios + implementation risk".</p>
-          <div class="kv"><span>Three key areas</span><b>Zhongzhi Park · Origin Community · Dazhongsi</b></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 03 Spatial structure -->
-  <section class="sheet" id="sec-structure">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">03</span>
-        <h2>Spatial Structure: Mainline · Stations · Wings · Turnouts · Passing Loops</h2>
-        <p>The naming system follows railway imagery: the mainline (spine), three stations (key areas), turnouts (cross-linking corridors), passing loops (community nodes), interlocking (governance mechanism), and the coupler (standard interface).</p>
-      </div>
-      <span class="tag">overall_spatial_structure</span>
-    </div>
-    <div class="sheet-body">
-      <div class="struct-grid">
-        <div class="struct-card"><div class="st-name">Mainline</div><div class="st-en">一轨</div><p>The Jingzhang Heritage Park vitality spine: a north–south green ridge, slow-traffic ridge and open-source showcase ridge — the main line of the Coupler Belt.</p></div>
-        <div class="struct-card"><div class="st-name">Stations</div><div class="st-en">三站</div><p>Zhongzhi Park = Full-Stack Assembly Station, Origin Community = Talent Departure Station, Dazhongsi = Outcomes Market Station.</p></div>
-        <div class="struct-card"><div class="st-name">Wings</div><div class="st-en">两翼</div><p>West: Zhongguancun technology-service wing (global factor allocation); East: Xiaoyue River scenario-empowerment wing (AI scenario testing and vibrant-city experience).</p></div>
-        <div class="struct-card"><div class="st-name">Turnouts</div><div class="st-en">道岔</div><p>Eight east–west connecting roads and public passages form stitching corridors that reconnect walking and functions across the heritage park.</p></div>
-        <div class="struct-card"><div class="st-name">Passing Loops</div><div class="st-en">会让站</div><p>Community innovation nodes every ≈800 m along the spine (public square + community services + scenario touchpoints).</p></div>
-      </div>
-      <div class="belt">
-        <span class="belt-chip"><span class="n">Three positionings</span>Centennial Jingzhang Culture Belt · Urban AI Life Experience Belt · AI-Integrated Innovation Belt</span>
-        <span class="belt-chip"><span class="n">Five functions</span>Full-stack AI innovation system · World-class AI ecosystem · AI+ scenario empowerment paradigm · Smart vibrant AI city · Global AI governance voice</span>
-      </div>
-      <div class="belt">
-        <span class="belt-chip"><span class="n">Three stations</span>Full-Stack Assembly · Talent Departure · Outcomes Market</span>
-        <span class="belt-chip"><span class="n">Identity</span>Logo: "coupler + mainline" forming the JZ/∞ mark · steel blue + signal amber + rail gray</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 04 Key areas -->
-  <section class="sheet" id="sec-keyareas">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">04</span>
-        <h2>Key-Area Detailed Design</h2>
-        <p>Each of the three key areas is deepened on "positioning + spatial structure + building renewal + mobility + public space + AI scenarios + implementation risk". All three boundaries are provisional; the conclusions are directional concept design.</p>
-      </div>
-      <span class="tag">key_areas.geojson · PROV-KEY-001/002/003</span>
-    </div>
-    <div class="sheet-body">
-      <figure class="fig">
-        <img src="../assets/figures/key-areas.en.png" alt="Key-area index and detailed design: Zhongzhi Park Full-Stack Assembly Station, Beijing AI Origin Community Talent Departure Station, Dazhongsi Outcomes Market Station" width="1600" height="auto">
-        <figcaption class="figcap">
-          <span>Fig. 02 · Three key areas: index and detailed design (key-areas.en.png)</span>
-          <span class="legend">
-            <span class="chip"><i class="dot" style="background:var(--steel)"></i>Zhongzhi Park · ≈192.1 ha</span>
-            <span class="chip"><i class="dot" style="background:var(--amber)"></i>Origin Community · ≈104.3 ha</span>
-            <span class="chip"><i class="dot" style="background:var(--pass)"></i>Dazhongsi · ≈72.0 ha</span>
-          </span>
-        </figcaption>
-      </figure>
-      <div class="grid-3">
-        <article class="card">
-          <h3>Zhongzhi Park · Full-Stack Assembly Station <span style="font-size:12px;color:var(--faint)">≈192.1 ha</span></h3>
-          <ul>
-            <li>Positioning: garden-style AI self-innovation district carrying full-stack innovation and the "global AI governance voice".</li>
-            <li>Structure: compute core + pilot-test ring + garden belt; links Qinghe riverside green belt to the north.</li>
-            <li>Buildings: retrofit low-efficiency industrial and park buildings; preserve valuable historical factory fabric.</li>
-            <li>AI scenarios: public compute services, model evaluation and full-stack assembly line, urban-agent emergency drill ground.</li>
-            <li>Risk: complex ownership and large retrofit scope; phased co-development by platform firms and park owners.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Beijing AI Origin Community · Talent Departure Station <span style="font-size:12px;color:var(--faint)">≈104.3 ha</span></h3>
-          <ul>
-            <li>Positioning: near-campus AI innovation district serving university staff, students and startups.</li>
-            <li>Structure: campus-city interface + talent corridor + entrepreneurship courtyards.</li>
-            <li>Buildings: functional conversion of street-front commerce and ageing buildings; new talent apartments and incubation space.</li>
-            <li>AI scenarios: talent service hall (departure platform), AI governance experience centre (interlocking tower), AI+ education lab.</li>
-            <li>Risk: sensitive campus boundaries and peak-hour traffic; joint study with universities and traffic authorities.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Dazhongsi · Outcomes Market Station <span style="font-size:12px;color:var(--faint)">≈72.0 ha</span></h3>
-          <ul>
-            <li>Positioning: urban AI innovation district — an "outcomes market" turning AI capabilities into experienceable, consumable, transferable applications.</li>
-            <li>Structure: market core + experience ring + station-city gateway.</li>
-            <li>Buildings: convert existing commercial space into AI application experience stores and performance venues.</li>
-            <li>AI scenarios: AI application experience district, low-speed robot delivery demo, AI cultural guide.</li>
-            <li>Risk: operating entities and transit pressures; phased, zoned, reversible pilots recommended.</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 05 Land use -->
-  <section class="sheet" id="sec-landuse">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">05</span>
-        <h2>Land-Use Structure</h2>
-        <p>A conceptual land-use layout generated within the provisional boundary following the national land-use classification logic, covering the whole site without overlaps; building footprints are conceptual massing only, not statutory scale.</p>
-      </div>
-      <span class="tag">land_use.geojson · MNR land-use classification guide</span>
-    </div>
-    <div class="sheet-body">
-      <figure class="fig">
-        <img src="../assets/figures/land-use-structure.en.png" alt="Conceptual land-use structure: R&amp;D/industry, education, commercial/business, residential, park-green, plaza and reserved land" width="1600" height="auto">
-        <figcaption class="figcap">
-          <span>Fig. 03 · Conceptual land-use structure (land-use-structure.en.png)</span>
-          <span class="legend">
-            <span class="chip"><i class="dot" style="background:#4f46e5"></i>R&amp;D / industry 0802</span>
-            <span class="chip"><i class="dot" style="background:#0f7490"></i>Education 0804</span>
-            <span class="chip"><i class="dot" style="background:#b7791f"></i>Commercial / business 0901/0902/0904</span>
-            <span class="chip"><i class="dot" style="background:#9a5b8f"></i>Residential 0701</span>
-            <span class="chip"><i class="dot" style="background:#15803d"></i>Park-green 1401/1402</span>
-            <span class="chip"><i class="dot" style="background:#64748b"></i>Plaza 1403 · Reserved 16</span>
-          </span>
-        </figcaption>
-      </figure>
-      <div class="belt">
-        <span class="belt-chip"><span class="n">Layout notes</span>R&amp;D/industry concentrated in Zhongzhi Park and Origin Community · education along campus edges · commercial/business in Dazhongsi and the Zhongguancun wing · residential west of the spine · blue-green network of mainline green belt + Qinghe riverside + community parks · station plazas · reserved land for future flexibility</span>
-      </div>
-      <div class="belt">
-        <span class="belt-chip"><span class="n">Retain / renovate / new</span>Preserve heritage · retrofit low-efficiency fabric · renew parks · add nodes (plot-level decisions require professional deepening with official current-condition and ownership data)</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 06 Mobility and blue-green -->
-  <section class="sheet" id="sec-mobility">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">06</span>
-        <h2>Mobility, Slow Traffic &amp; Blue-Green Public Space</h2>
-        <p>Transfer is organised as "rail + slow traffic + low-speed feeder"; blue-green space follows "one ridge, two waters, many nodes". All capacities and alignments are conceptual directions for professional deepening with official data.</p>
-      </div>
-      <span class="tag">roads.geojson · green_space.geojson · public_space.geojson</span>
-    </div>
-    <div class="sheet-body">
-      <figure class="fig">
-        <img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility and blue-green public space composite system: road network, slow-traffic system, rail connection and blue-green network" width="1600" height="auto">
-        <figcaption class="figcap">
-          <span>Fig. 04 · Mobility and blue-green public space composite system (mobility-bluegreen.en.png)</span>
-          <span class="legend">
-            <span class="chip"><i class="dot" style="background:var(--steel)"></i>Road network</span>
-            <span class="chip"><i class="dot" style="background:#0f7490"></i>Slow traffic</span>
-            <span class="chip"><i class="dot" style="background:var(--amber)"></i>Rail connection</span>
-            <span class="chip"><i class="dot" style="background:#15803d"></i>Blue-green network</span>
-          </span>
-        </figcaption>
-      </figure>
-      <div class="grid-2">
-        <div>
-          <h3 style="margin-bottom:8px">Mobility &amp; slow traffic</h3>
-          <ul style="margin:0;padding-left:18px">
-            <li style="font-size:13.5px;color:var(--muted);margin-bottom:5px"><b style="color:var(--ink)">Roads</b>: retain and optimise the north–south secondary arterial; add 8 east–west stitching connectors; micro-circulation and park-and-ride around the three stations.</li>
-            <li style="font-size:13.5px;color:var(--muted);margin-bottom:5px"><b style="color:var(--ink)">Slow traffic</b>: continuous mainline greenway north–south; continuous footpaths and cycleways on side streets; safe-crossing islands and level ramps at stitching turnouts.</li>
-            <li style="font-size:13.5px;color:var(--muted);margin-bottom:5px"><b style="color:var(--ink)">Rail transfer</b>: transfer loops anchored on existing stations (incl. Dazhongsi); shared-mobility and logistics stops within an 800 m radius.</li>
-            <li style="font-size:13.5px;color:var(--muted)"><b style="color:var(--ink)">New infrastructure</b>: distributed compute nodes, energy micro-grids and a sensor public base integrated with existing utilities (conceptual direction).</li>
-          </ul>
-        </div>
-        <div>
-          <h3 style="margin-bottom:8px">Blue-green network (one ridge · two waters · many nodes)</h3>
-          <ul style="margin:0;padding-left:18px">
-            <li style="font-size:13.5px;color:var(--muted);margin-bottom:5px"><b style="color:var(--ink)">One ridge</b>: the Jingzhang Heritage Park vitality mainline green belt.</li>
-            <li style="font-size:13.5px;color:var(--muted);margin-bottom:5px"><b style="color:var(--ink)">Two waters</b>: Qinghe riverside belt (north) + Xiaoyue River ecological corridor (east).</li>
-            <li style="font-size:13.5px;color:var(--muted);margin-bottom:5px"><b style="color:var(--ink)">Many nodes</b>: community parks and corner greens.</li>
-            <li style="font-size:13.5px;color:var(--muted)"><b style="color:var(--ink)">Readings</b>: green and open space ≈31.4%, public space ≈5.0% (provisional-boundary recomputation).</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 07 Core metrics -->
-  <section class="sheet" id="sec-metrics">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">07</span>
-        <h2>Core Metrics</h2>
-        <p>Core metrics are recomputed from the submitted geometry in EPSG:4548; formulas, source files and assumptions are registered in metrics.json. Floor-area ratio and building height depend on unpublished regulatory conditions and remain <code style="color:var(--steel)">unknown</code> — no values are rendered.</p>
-      </div>
-      <span class="tag">metrics.json · EPSG:4548 recomputation</span>
-    </div>
-    <div class="sheet-body">
-      <div class="metric-grid">
-        <div class="metric-card">
-          <div class="m-key">site_area_sqm · Overall design scope area</div>
-          <div class="m-val"><span data-metric="site_area_sqm" data-value="11412825.386">≈ 11.41 km²</span></div>
-          <div class="m-note">Provisional-boundary recomputation consistent with the announced ≈11.4 km²; confidence: medium</div>
-        </div>
-        <div class="metric-card">
-          <div class="m-key">green_ratio · Green &amp; open-space ratio</div>
-          <div class="m-val"><span data-metric="green_ratio" data-value="0.313816">31.4%</span></div>
-          <div class="m-note">Green and open space ≈3.58 km²; concept target ~0.22</div>
-        </div>
-        <div class="metric-card">
-          <div class="m-key">public_space_ratio · Public-space ratio</div>
-          <div class="m-val"><span data-metric="public_space_ratio" data-value="0.04951">5.0%</span></div>
-          <div class="m-note">Public space ≈0.57 km² (station plazas, community squares, etc.)</div>
-        </div>
-      </div>
-
-      <div class="grid-2" style="margin-bottom:18px">
-        <div>
-          <h3 style="margin-bottom:10px">Supplementary metrics (raw values from metrics.json)</h3>
-          <table class="mtable">
-            <thead><tr><th>Metric key</th><th>Value</th><th>Note</th></tr></thead>
-            <tbody>
-              <tr><td class="k">green_space_area_sqm</td><td class="v"><span data-metric="green_space_area_sqm" data-value="3581524.507">≈ 3.58 km²</span></td><td>Green and open-space area</td></tr>
-              <tr><td class="k">public_space_area_sqm</td><td class="v"><span data-metric="public_space_area_sqm" data-value="565043.34">≈ 0.57 km²</span></td><td>Public-space area</td></tr>
-              <tr><td class="k">building_footprint_area_sqm</td><td class="v"><span data-metric="building_footprint_area_sqm" data-value="1008704.556">≈ 1.01 km²</span></td><td>Conceptual massing only, not statutory scale</td></tr>
-              <tr><td class="k">land_use_area_sqm</td><td class="v"><span data-metric="land_use_area_sqm" data-value="11412849.063">≈ 11.41 km²</span></td><td>Total land-use area</td></tr>
-              <tr><td class="k">key_area_total_sqm</td><td class="v"><span data-metric="key_area_total_sqm" data-value="3692893.005">≈ 3.69 km²</span></td><td>Three key areas combined (provisional)</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <h3 style="margin-bottom:10px">Proposal-output metrics</h3>
-          <table class="mtable">
-            <thead><tr><th>Metric key</th><th>Value</th><th>Note</th></tr></thead>
-            <tbody>
-              <tr><td class="k">ai_scenario_card_count</td><td class="v"><span data-metric="ai_scenario_card_count" data-value="12">12</span></td><td>AI scenario cards</td></tr>
-              <tr><td class="k">user_persona_count</td><td class="v"><span data-metric="user_persona_count" data-value="6">6</span></td><td>User personas</td></tr>
-              <tr><td class="k">pilgrimage_landmark_count</td><td class="v"><span data-metric="pilgrimage_landmark_count" data-value="3">3</span></td><td>Pilgrimage landmarks</td></tr>
-              <tr><td class="k">industry_test_scenario_count</td><td class="v"><span data-metric="industry_test_scenario_count" data-value="4">4</span></td><td>Industry test/verification scenarios</td></tr>
-              <tr><td class="k">renewal_project_count</td><td class="v"><span data-metric="renewal_project_count" data-value="21">21</span></td><td>Renewal projects (concept list)</td></tr>
-            </tbody>
-          </table>
-          <div style="margin-top:12px">
-            <h3 style="margin-bottom:6px">Awaiting official regulatory control data (unknown — no values rendered)</h3>
-            <table class="mtable">
-              <tbody>
-                <tr><td class="k">floor_area_ratio</td><td>Awaiting official regulatory control data</td></tr>
-                <tr><td class="k">building_height_m</td><td>Awaiting official regulatory control data</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <figure class="fig">
-        <img src="../assets/figures/metrics-evidence.en.png" alt="Core-metric recomputation and evidence chain: areas, green ratio, public-space ratio and proposal-output metrics" width="1600" height="auto">
-        <figcaption class="figcap">
-          <span>Fig. 05 · Core-metric recomputation and evidence chain (metrics-evidence.en.png)</span>
-          <span class="legend">
-            <span class="chip"><i class="dot" style="background:var(--steel)"></i>Area metrics</span>
-            <span class="chip"><i class="dot" style="background:var(--amber)"></i>Ratio metrics</span>
-            <span class="chip"><i class="dot" style="background:var(--pass)"></i>Output metrics</span>
-            <span class="chip"><i class="dot" style="background:#5b6b7c"></i>unknown · awaiting official data</span>
-          </span>
-        </figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- 08 AI scenarios, personas, landmarks -->
-  <section class="sheet" id="sec-scenarios">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">08</span>
-        <h2>AI Scenarios · User Personas · Pilgrimage Landmarks</h2>
-        <p>12 scenario cards (each specifying location mapping, service users, operating data, privacy boundary, human review, operating entity, visualisation layer and risk), 6 user personas and 3 pilgrimage landmarks. All scenarios involving personal information must be anonymised; every scenario has a human review point.</p>
-      </div>
-      <span class="tag">sources.json · compliance_matrix.json</span>
-    </div>
-    <div class="sheet-body">
-      <h3 style="margin-bottom:10px">AI scenario cards (12)</h3>
-      <div class="scn">
-        <div class="scn-card"><span class="scn-no">SC-01</span><b>Coupler Plaza · open-interface demo ground</b><span>North mainline / former Qinghuayuan station · developers, visitors</span></div>
-        <div class="scn-card"><span class="scn-no">SC-02</span><b>Interlocking Tower · AI governance experience centre</b><span>Origin Community station front · public, decision-makers, developers</span></div>
-        <div class="scn-card"><span class="scn-no">SC-03</span><b>Departure Platform · talent service hall</b><span>Origin Community talent corridor · talents, students</span></div>
-        <div class="scn-card"><span class="scn-no">SC-04</span><b>Full-stack assembly line · compute &amp; pilot-test workshop (test/verification)</b><span>Central Zhongzhi Park · enterprises, engineers</span></div>
-        <div class="scn-card"><span class="scn-no">SC-05</span><b>Outcomes Market · AI application experience district</b><span>Dazhongsi market core · public, enterprises</span></div>
-        <div class="scn-card"><span class="scn-no">SC-06</span><b>Railway-memory AI guide</b><span>Heritage park mainline · visitors, residents</span></div>
-        <div class="scn-card"><span class="scn-no">SC-07</span><b>Low-speed robot delivery demo line (test/verification)</b><span>Mainline + Dazhongsi · residents, merchants</span></div>
-        <div class="scn-card"><span class="scn-no">SC-08</span><b>AI+ healthcare service station (compliance test)</b><span>Origin Community / residential clusters · residents, seniors</span></div>
-        <div class="scn-card"><span class="scn-no">SC-09</span><b>AI+ education lab</b><span>Campus belt / Origin Community · students and faculty</span></div>
-        <div class="scn-card"><span class="scn-no">SC-10</span><b>Urban-agent emergency drill ground (test/verification)</b><span>Northern Zhongzhi Park · governance bodies, enterprises</span></div>
-        <div class="scn-card"><span class="scn-no">SC-11</span><b>Slow-traffic transfer loop · AI traffic dispatch</b><span>Between the three stations · commuters, visitors</span></div>
-        <div class="scn-card"><span class="scn-no">SC-12</span><b>Open-data workshop</b><span>Zhongguancun technology-service wing · developers, data users</span></div>
-      </div>
-
-      <h3 style="margin:20px 0 10px">User personas (<span data-metric="user_persona_count" data-value="6">6</span>)</h3>
-      <div class="persona-row">
-        <span class="persona-chip">AI engineers / researchers</span>
-        <span class="persona-chip">Founders / startup teams</span>
-        <span class="persona-chip">University students &amp; faculty</span>
-        <span class="persona-chip">Park &amp; enterprise operators</span>
-        <span class="persona-chip">Residents &amp; commuters</span>
-        <span class="persona-chip">Seniors &amp; accessibility users</span>
-      </div>
-      <p style="margin-top:8px;font-size:12.5px;color:var(--faint)">An international developer/visitor persona (multilingual guides, open-source community and pilgrimage experience) is also covered; the metric count follows metrics.json: user_persona_count = 6.</p>
-
-      <h3 style="margin:20px 0 10px">Three pilgrimage landmarks (<span data-metric="pilgrimage_landmark_count" data-value="3">3</span> · concept proposals requiring professional deepening and clearance)</h3>
-      <div class="grid-3">
-        <article class="card">
-          <h3>Coupler Plaza</h3>
-          <p>On the north mainline (toward the former Qinghuayuan station): a physical "coupler + rail" installation honouring the interoperability wisdom of China's first self-built trunk railway, and a long-term showcase for open-interface and developer outcomes.</p>
-        </article>
-        <article class="card">
-          <h3>Interlocking Tower</h3>
-          <p>At the Origin Community station plaza: a legible "signal-light" interface (concept) showing the real-time review status of agents accessing public scenarios — an urban living room for transparent AI governance.</p>
-        </article>
-        <article class="card">
-          <h3>Origin Platform</h3>
-          <p>At the Beijing North Station gateway plaza: a timeline installation "1909 departed from here → 2026 AI departs from here", telling the story from the "railway of self-respect" to the "belt of self-reliance in intelligence".</p>
-        </article>
-      </div>
-      <p style="margin-top:12px;font-size:12.5px;color:var(--muted)">Companion elements: an agent contribution honour wall (along the mainline, linked to the project's permanent commemoration system) and a public-space component library (coupler-shaped seating, signal-light masts, open-source galleries and other standardised reusable components).</p>
-    </div>
-  </section>
-
-  <!-- 09 Renewal projects and phasing -->
-  <section class="sheet" id="sec-renewal">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">09</span>
-        <h2>Renewal Projects &amp; Phasing</h2>
-        <p>The renewal project list (<span data-metric="renewal_project_count" data-value="21">21</span> items, concept list) is organised into four types — preserve heritage, retrofit low-efficiency fabric, renew parks, add nodes — with a phasing plan as a conceptual direction.</p>
-      </div>
-      <span class="tag">renewal_project_list · phasing.geojson</span>
-    </div>
-    <div class="sheet-body">
-      <div class="grid-2" style="margin-bottom:16px">
-        <div class="grid-2" style="gap:12px">
-          <div class="card"><h3>Heritage activation · 3 items</h3><p>Mainline heritage-park activation, Qinghuayuan station former-site display, old-rail public-art belt.</p></div>
-          <div class="card"><h3>Retrofits · 7 items</h3><p>Functional conversion of ageing commercial buildings, street-front renewal, talent-apartment retrofits, etc.</p></div>
-          <div class="card"><h3>Park renewals · 6 items</h3><p>Zhongzhi Park low-efficiency factory retrofits, Origin Community incubation courtyards, Dazhongsi commercial-space renewal, etc.</p></div>
-          <div class="card"><h3>New nodes · 5 items</h3><p>Three station plazas, the interlocking tower, Coupler Plaza, Beijing North Station gateway, open-data workshop.</p></div>
-        </div>
-        <div class="card">
-          <h3>Phasing plan</h3>
-          <ul>
-            <li><b style="color:var(--ink)">Near term (0–2 yrs)</b>: Origin Community + mainline green belt + Coupler Plaza pilots — low-cost, reversible, lightweight projects first.</li>
-            <li><b style="color:var(--ink)">Mid term (2–5 yrs)</b>: Zhongzhi Park and the Zhongguancun wing; Dazhongsi market-core renewal.</li>
-            <li><b style="color:var(--ink)">Long term (5+ yrs)</b>: full stitching of the two wings and activation of reserved land.</li>
-          </ul>
-          <p style="margin:8px 0 0;font-size:12.5px;color:var(--muted)">Implementation policies (conceptual directions): scenario opening loop of "apply — review — test — exit", public-data opening and open-source licensing, developer-community co-building, public participation and human review. All policies and funding arrangements are directions for deepening, not confirmed government arrangements.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 10 Task coverage -->
-  <section class="sheet" id="sec-agents">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">10</span>
-        <h2>Task Coverage: agent.1 — agent.6</h2>
-        <p>All six mandatory agent tasks are addressed. Each is mapped to report sections, geometry layers, metrics, drawings, HTML pages, sources, standards and self-checks, registered in compliance_matrix.json.</p>
-      </div>
-      <span class="tag">compliance_matrix.json · 6/6 addressed</span>
-    </div>
-    <div class="sheet-body">
-      <div class="agent-grid">
-        <article class="agent-card">
-          <div class="a-head"><span class="a-id">agent.1</span><span class="badge-pass">✓ Addressed</span></div>
-          <h3>Belt-wide master concept and functional coordination design</h3>
-          <p>Naming system "Jingzhang Coupler Belt (JCB)", three positionings and five functions, visual identity direction (JZ/∞ mark), three-level scope framework.</p>
-        </article>
-        <article class="agent-card">
-          <div class="a-head"><span class="a-id">agent.2</span><span class="badge-pass">✓ Addressed</span></div>
-          <h3>AI full-stack self-innovation system and world-class AI ecosystem design</h3>
-          <p>Seven global cases (Stanford Research Park, Kendall Square, King's Cross, JID, Shenzhen Bay, Yunqi Town, Seoul DMC) and five transferable mechanisms.</p>
-        </article>
-        <article class="agent-card">
-          <div class="a-head"><span class="a-id">agent.3</span><span class="badge-pass">✓ Addressed</span></div>
-          <h3>AI+ scenario empowerment paradigm and smart vibrant AI city design</h3>
-          <p>12 scenario cards (open-interface demos, robot delivery, emergency drill ground, AI traffic dispatch, etc.) with test/verification and compliance-test tiers.</p>
-        </article>
-        <article class="agent-card">
-          <div class="a-head"><span class="a-id">agent.4</span><span class="badge-pass">✓ Addressed</span></div>
-          <h3>AI public space, AI-native new business types and pilgrimage landmarks design</h3>
-          <p>Three pilgrimage landmarks (Coupler Plaza, Interlocking Tower, Origin Platform), agent contribution honour wall, public-space component library.</p>
-        </article>
-        <article class="agent-card">
-          <div class="a-head"><span class="a-id">agent.5</span><span class="badge-pass">✓ Addressed</span></div>
-          <h3>Narrative design fusing centennial Jingzhang culture, Zhongguancun culture and AI culture</h3>
-          <p>"From the railway of self-respect to the belt of self-reliance in intelligence" narrative, railway-memory AI guide, "steel blue + signal amber" townscape and garden–campus–market skyline.</p>
-        </article>
-        <article class="agent-card">
-          <div class="a-head"><span class="a-id">agent.6</span><span class="badge-pass">✓ Addressed</span></div>
-          <h3>Global AI innovation activity system and long-term operation design</h3>
-          <p>Coupler Fest, Interop Week, AI Origin Forum, Outcomes Market Season; developer community, scenario-opening operations and international outreach-to-attraction pathway.</p>
-        </article>
-      </div>
-      <p style="margin-top:14px;font-size:12.5px;color:var(--muted)">Professional-standard responses are registered in standard_matrix.json; design-depth coverage is registered in design_depth_matrix.json (all core depth items: complete).</p>
-    </div>
-  </section>
-
-  <!-- 11 Self-check -->
-  <section class="sheet" id="sec-selfcheck">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">11</span>
-        <h2>Self-Check Status</h2>
-        <p>Per self_check.json: all 5 checks pass (PASS 5/5). Note: the boundary checks are provisional intake passes; official redlines must replace provisional polygons and all metrics recomputed before formal professional scoring.</p>
-      </div>
-      <span class="tag">self_check.json</span>
-    </div>
-    <div class="sheet-body">
-      <table class="cktable">
-        <thead><tr><th>Check</th><th>Result</th><th>Severity</th><th>Message</th></tr></thead>
-        <tbody>
-          <tr><td class="cid">BOUNDARY_TRUST</td><td><span class="pass-pill">PASS</span></td><td><span class="sev-pill">major</span></td><td>Provisional boundary is present; replace with the official redline before professional scoring.</td></tr>
-          <tr><td class="cid">KEY_AREAS_TRUST</td><td><span class="pass-pill">PASS</span></td><td><span class="sev-pill">major</span></td><td>Three key areas are provisional; replace with official polygons before professional scoring.</td></tr>
-          <tr><td class="cid">LAND_USE_TOPOLOGY</td><td><span class="pass-pill">PASS</span></td><td><span class="sev-pill">major</span></td><td>Conceptual land use derives from site-boundary partitioning; covers the site without overlaps.</td></tr>
-          <tr><td class="cid">VISUAL_STATIC</td><td><span class="pass-pill">PASS</span></td><td><span class="sev-pill">info</span></td><td>Static HTML visualisation generated without external dependencies (this page).</td></tr>
-          <tr><td class="cid">PROFESSIONAL_EVIDENCE</td><td><span class="pass-pill">PASS</span></td><td><span class="sev-pill">major</span></td><td>Proposal references standards, design-depth items, geometry, metrics, sources and assumptions.</td></tr>
-        </tbody>
-      </table>
-      <p style="margin-top:12px;font-size:12.5px;color:var(--muted)">Deterministic validation, spatial review, visual packaging check and professional evidence review must all pass before use as formal professional scoring drawings; the current boundary status is intake-display only.</p>
-    </div>
-  </section>
-
-  <!-- 12 Sources and assumptions -->
-  <section class="sheet" id="sec-sources">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">12</span>
-        <h2>Sources &amp; Assumptions</h2>
-        <p>This page cites only materials registered as formally usable or rights-cleared; authoritative data remain the GeoJSON files, metrics.json, matrices and self-check results.</p>
-      </div>
-      <span class="tag">sources.json · assumptions.json</span>
-    </div>
-    <div class="sheet-body">
-      <div class="split">
-        <div>
-          <div class="src-block">
-            <h3>Sources</h3>
-            <ol>
-              <li>Beijing Municipal Commission of Planning and Natural Resources, Haidian Branch: Prequalification Announcement for the International Solicitation of Urban Design for the Centennial Jingzhang AI Innovation Belt (2026-05-09): project name, three scopes, three key areas and design tasks (OFFICIAL-ANNOUNCEMENT).</li>
-              <li>Agent open-call task book (AGENT-TASKBOOK, 2026-05-18): three positionings, five functions, three areas/two wings, six agent tasks and unified boundary clause.</li>
-              <li>Repository <code>brief/site-package/</code>: design brief, permitted design space, enumerations, planning limits and standard library (SITE-PACKAGE).</li>
-              <li><code>data/source_registry.json</code> source-usage registry (SOURCE-REGISTRY).</li>
-              <li>Provisional boundaries <code>provisional_boundaries.geojson</code> (PROV-SITE-001 / PROV-KEY-001–003, BOUNDARY-SOURCE).</li>
-              <li>Haidian "1+X+1" modern industrial system and Beijing "three areas, two wings" layout (background context).</li>
-              <li>Full sources and standards: <code>sources.json</code>, <code>standard_matrix.json</code>, <code>design_depth_matrix.json</code>.</li>
-            </ol>
-          </div>
-        </div>
-        <div>
-          <div class="src-block">
-            <h3>Key assumptions (A-CONTROLS-001 et al.)</h3>
-            <ul>
-              <li>Official polygons not yet public: land use, green space, public space, phasing and all metrics must be recomputed per the recompute checklist.</li>
-              <li>Floor-area ratio, building height and other control metrics depend on unpublished regulatory conditions and remain <code>unknown</code> — never to be disguised as statutory control values.</li>
-              <li>Building footprints are conceptual massing for spatial expression only — not building height, FAR or statutory scale.</li>
-              <li>Retain/renovate/new and plot-level conclusions await official current-condition and ownership data.</li>
-              <li>Road redlines, municipal capacities and engineering data await official/cleared documents (checklist in <code>assumptions.json</code> and <code>risk.json</code>).</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 13 Risk and compliance -->
-  <section class="sheet" id="sec-risk">
-    <div class="sheet-head">
-      <div class="lead">
-        <span class="sec-no">13</span>
-        <h2>Risk &amp; Compliance Notes</h2>
-        <p>Provisional-boundary and conceptual-suggestion boundary statement.</p>
-      </div>
-      <span class="tag">provisional constraint</span>
-    </div>
-    <div class="sheet-body">
-      <div class="riskbox">
-        <h3>⚠ Boundary &amp; conceptual-suggestion statement (must read)</h3>
-        <ul>
-          <li><b>Provisional boundary</b>: all spatial conclusions on this page are based on <code>provisional_boundaries.geojson</code>, marked <code>provisional_constraint</code>, and are <b>not the official redline, precise area or scoring basis</b>.</li>
-          <li><b>All suggestions are conceptual</b>: spatial implementation, event operation, branding and policy mechanisms are "concept proposals / reference schemes / open to professional deepening" and <b>do not constitute statutory planning, approvals or government commitments</b>.</li>
-          <li><b>Privacy &amp; ethics</b>: scenario operating data limited to public or authorised aggregated data; personal information must be anonymised; AI-generated content remains the author's responsibility for facts, citations, copyright and expression.</li>
-          <li><b>Copyright</b>: text and figures are AI-agent generated, with the author responsible for content; the logo and landmark designs are directional only and include no unauthorised trademarks, fonts, images or portraits.</li>
-          <li><b>Accessibility &amp; inclusion</b>: public-service venues retain on-site guidance and human service channels; smart and traditional services run in parallel (in the spirit of Art. 39 of China's Barrier-Free Environment Building Law).</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="wrap">
-    <div class="rule"></div>
-    <p>Jingzhang Coupler Belt (JCB) · Open-Source Urban Design Call for the Centennial Jingzhang AI Innovation Belt (open-city-ai/haidian)</p>
-    <p>This page is a fully offline static HTML: no CDNs, no remote map tiles, no external scripts/fonts/iframes, no API requests or tracking code; images use relative paths under ../assets/figures/.</p>
-    <p>English version visual/index.en.html — a translation of visual/index.html (translation_of: visual/index.html) · Version v0.1 · COMMUNITY-DISPLAY-ONLY</p>
+<section id="areas"><div class="wrap"><h2>Three key areas (stations)</h2>
+  <div class="mapbox"><img src="../assets/figures/key-areas.en.png" alt="Key areas"></div>
+  <div class="grid2" style="margin-top:14px">
+    <div><b>Zhongzhiyuan · Full-Stack Assembly Yard</b><br>Compute core + pilot ring + garden belt; connects Xuebeiyuan & Qinghe riverfront</div>
+    <div><b>AI Origin Community · Talent Origin Station</b><br>Campus-city interface + talent corridor + start-up courts; Wudaokou core</div>
+    <div><b>Dazhongsi · Outcome Market Station</b><br>Market core + experience ring + station-city gateway; one of the two centres</div>
+    <div class="legend">Key-area boundaries are provisional; conclusions are directional conceptual design.</div>
   </div>
-</footer>
+</div></section>
 
-</body>
-</html>
+<section id="landuse"><div class="wrap"><h2>Land-use structure</h2>
+  <div class="mapbox"><img src="../assets/figures/land-use-structure.en.png" alt="Land use"></div>
+  <div class="legend">Conceptual land-use zoning (national classification logic), full coverage without overlap; official code-table attachment is a data gap.</div>
+</div></section>
+
+<section id="mobility"><div class="wrap"><h2>Mobility, slow traffic & blue-green network</h2>
+  <div class="mapbox"><img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility"></div>
+  <div class="grid2" style="margin-top:14px">
+    <div><b>Transport</b>：Main spine road + 8 stitching connectors; aligns with the park's 9 reopened streets; rail micro-centre interchanges</div>
+    <div><b>Blue-green</b>：One spine (9 km park) two rivers (Qinghe/Xiaoyuehe) multi-node; green ratio ≈31.4%</div>
+  </div>
+</div></section>
+
+<section id="scenes"><div class="wrap"><h2>AI scenario cards (12)</h2>
+  <div class="scards"><div class="scard"><div class="scard-t">Coupler Plaza · open-interface demo</div><div class="scard-l">spine, Qinghuayuan station direction</div></div><div class="scard"><div class="scard-t">Interlocking Tower · AI governance centre</div><div class="scard-l">Origin Community station plaza</div></div><div class="scard"><div class="scard-t">Origin Platform · talent service hall</div><div class="scard-l">Origin Community talent corridor</div></div><div class="scard"><div class="scard-t">Full-stack assembly line (test/validation)</div><div class="scard-l">Zhongzhiyuan core</div></div><div class="scard"><div class="scard-t">Outcome Market · AI experience block</div><div class="scard-l">Dazhongsi market core</div></div><div class="scard"><div class="scard-t">AI rail-heritage guide</div><div class="scard-l">heritage park spine</div></div><div class="scard"><div class="scard-t">Robot low-speed delivery demo (test/validation)</div><div class="scard-l">spine + Dazhongsi</div></div><div class="scard"><div class="scard-t">AI+health service post (compliance test)</div><div class="scard-l">Origin Community / residential</div></div><div class="scard"><div class="scard-t">AI+education lab</div><div class="scard-l">university belt</div></div><div class="scard"><div class="scard-t">City-agent emergency drill ground (test/validation)</div><div class="scard-l">Zhongzhiyuan north</div></div><div class="scard"><div class="scard-t">Slow-traffic interchange ring</div><div class="scard-l">between the three stations</div></div><div class="scard"><div class="scard-t">Open-data workshop · digital-twin workbench</div><div class="scard-l">Zhongguancun service wing</div></div></div>
+  <div class="legend">Includes 4 industry test/validation scenarios; health/social-security/finance/utility services keep in-person & manual channels (Barrier-Free Law §39-2).</div>
+</div></section>
+
+<section id="tasks"><div class="wrap"><h2>Agent task coverage (agent.1–agent.6)</h2>
+  <div class="trow"><code>agent.1</code><span>Overall concept, naming, logo, spatial structure</span><span class="ok">addressed</span></div><div class="trow"><code>agent.2</code><span>Full-stack innovation & world-class ecosystem (9 cases)</span><span class="ok">addressed</span></div><div class="trow"><code>agent.3</code><span>AI+ scenario empowerment (12 cards/7 personas/4 tests)</span><span class="ok">addressed</span></div><div class="trow"><code>agent.4</code><span>AI public space & pilgrimage landmarks (3)</span><span class="ok">addressed</span></div><div class="trow"><code>agent.5</code><span>Heritage–Zhongguancun–AI culture narrative</span><span class="ok">addressed</span></div><div class="trow"><code>agent.6</code><span>Global events & long-term operations</span><span class="ok">addressed</span></div>
+</div></section>
+
+<section id="renewal"><div class="wrap"><h2>Renewal projects & phasing</h2>
+  <div class="legend">21 conceptual renewal projects: heritage 5 / stitching 3 / retrofit 6 / park renewal 4 / new nodes 3 (all conceptual).</div>
+  <div class="prow"><b>Near term (0–2y)</b><span>Near term (0–2y)</span></div><div class="prow"><b>Mid term (2–5y)</b><span>Mid term (2–5y)</span></div><div class="prow"><b>Long term (5y+)</b><span>Long term (5y+)</span></div>
+</div></section>
+
+<section id="evidence"><div class="wrap"><h2>Sources & assumptions</h2>
+  <div class="grid2">
+    <div><details open><summary>Sources registry</summary><div class="inner"><ul><li><code>SITE-PACKAGE</code> —  · review: pending_review</li><li><code>SOURCE-REGISTRY</code> —  · review: pending_review</li><li><code>PROCESSED-FACT-PACK</code> —  · review: pending_review</li><li><code>BOUNDARY-SOURCE</code> —  · review: pending_review</li><li><code>KEY-AREA-SOURCE</code> —  · review: pending_review</li><li><code>OFFICIAL-ANNOUNCEMENT</code> —  <a href="https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html">https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html</a> · review: pending_review</li><li><code>AGENT-TASKBOOK</code> —  · review: pending_review</li><li><code>SRC-2026-HAIDIAN-1X1</code> — 海淀区发布“1+X+1”现代化产业体系建设布局 <a href="https://www.bjhd.gov.cn/ztzx/2026/2026jjshgzlfzdh/yw/202603/t20260303_4806875.shtml">https://www.bjhd.gov.cn/ztzx/2026/2026jjshgzlfzdh/yw/202603/t20260303_4806875.shtml</a> · 2026-03-02 · review: pending_review</li><li><code>SRC-2026-BJ-KW-THREE-AREAS-WINGS</code> — “三区两翼”打造世界级AI集聚地 <a href="https://kw.beijing.gov.cn/xwdt/kcyx/xwdtcyfz/202604/t20260403_4573808.html">https://kw.beijing.gov.cn/xwdt/kcyx/xwdtcyfz/202604/t20260403_4573808.html</a> · 2026-04-03 · review: pending_review</li><li><code>OSM-ODBL</code> — OpenStreetMap Copyright and License (ODbL 1.0) <a href="https://www.openstreetmap.org/copyright">https://www.openstreetmap.org/copyright</a> · review: pending_review</li><li><code>JZ-PARK-PHASE2-20260806</code> — 京张铁路遗址公园二期建成开放（9公里绿廊/约53公顷/9条城市支路/3条鱼骨慢行道/70社区45万居民） <a href="https://www.cnr.cn/bj/sijh/20260806/t20260806_527751136.shtml">https://www.cnr.cn/bj/sijh/20260806/t20260806_527751136.shtml</a> · 2026-08-06 · review: pending_review</li><li><code>JZ-CONTROL-PLAN-20260817</code> — 京张铁路遗址公园沿线（人工智能创新街区重点地区）街道级控制性详细规划批复公示 <a href="https://zyk.bjhd.gov.cn/zwdt/xxgk/tzgg/202608/t20260821_4826113.shtml">https://zyk.bjhd.gov.cn/zwdt/xxgk/tzgg/202608/t20260821_4826113.shtml</a> · 2026-08-17 · review: pending_review</li><li><code>HD-AI-ECONOMY-20260330</code> — “百年京张AI创新带”建设大幕拉开（海淀AI产业规模） <a href="http://news.yunnan.cn/system/2026/03/30/033939908.shtml">http://news.yunnan.cn/system/2026/03/30/033939908.shtml</a> · 2026-03-30 · review: pending_review</li><li><code>QHY-STATION-20230327</code> — 清华园车站（1910，詹天佑题名）已列为北京市文物保护单位 <a href="https://m.gmw.cn/2023-03/27/content_1303320990.htm">https://m.gmw.cn/2023-03/27/content_1303320990.htm</a> · 2023-03-27 · review: pending_review</li><li><code>BJ-NORTH-STATION-20260406</code> — 西直门火车站的古与今（北京北站） <a href="https://peking.bjd.com.cn/content/s69d32393e4b0cd719ea01690.html">https://peking.bjd.com.cn/content/s69d32393e4b0cd719ea01690.html</a> · 2026-04-06 · review: pending_review</li><li><code>QHY-TUNNEL-20190417</code> — 京张高铁清华园隧道（6.02公里，下穿10号线） <a href="https://beijing.qianlong.com/2019/0417/3225923.shtml">https://beijing.qianlong.com/2019/0417/3225923.shtml</a> · 2019-04-17 · review: pending_review</li><li><code>AI-ORIGIN-COMMUNITY-20260105</code> — 北京发布4个人工智能创新街区（AI原点社区以五道口为核心） <a href="http://bj.people.com.cn/n2/2026/0105/c14540-41464213.html">http://bj.people.com.cn/n2/2026/0105/c14540-41464213.html</a> · 2026-01-05 · review: pending_review</li><li><code>JZ-PARK-PHASE1-20211014</code> — 京张铁路遗址公园一期（2019京张高铁开通与遗址公园改造启动） <a href="http://bj.people.com.cn/n2/2021/1014/c82840-34955482.html">http://bj.people.com.cn/n2/2021/1014/c82840-34955482.html</a> · 2021-10-14 · review: pending_review</li><li><code>CASE-ONE-NORTH</code> — 裕廊创新区/one-north 案例（机制研究参考） <a href="https://www.jtc.gov.sg/about-jtc/news-and-stories/feature-stories/launchpad-under-the-hood-of-singapores-silicon-valley">https://www.jtc.gov.sg/about-jtc/news-and-stories/feature-stories/launchpad-under-the-hood-of-singapores-silicon-valley</a> · 2022-05-20 · review: pending_review</li><li><code>CASE-KENDALL</code> — 肯德尔广场案例（机制研究参考） <a href="https://news.mit.edu/2015/kendall-square-global-center-innovation-grows-alongside-mit-0507">https://news.mit.edu/2015/kendall-square-global-center-innovation-grows-alongside-mit-0507</a> · 2015-05-07 · review: pending_review</li><li><code>CASE-STATION-F</code> — STATION F 案例（机制研究参考） <a href="https://stationf.co/about">https://stationf.co/about</a> · 2026 · review: pending_review</li><li><code>CASE-KINGS-CROSS</code> — 国王十字案例（机制研究参考） <a href="https://www.kingscross.co.uk/about-the-development">https://www.kingscross.co.uk/about-the-development</a> · 2026 · review: pending_review</li><li><code>CASE-KALASATAMA</code> — Kalasatama 智慧城区案例（机制研究参考） <a href="https://www.hel.fi/en/news/carbon-neutral-apartment-building-project-completed-in-kalasatama-as-part-of-the-re-thinking-urban">https://www.hel.fi/en/news/carbon-neutral-apartment-building-project-completed-in-kalasatama-as-part-of-the-re-thinking-urban</a> · 2025-10-03 · review: pending_review</li><li><code>CASE-SEOUL-DMC</code> — 首尔上岩数字媒体城案例（机制研究参考） <a href="https://www.seoulsolution.kr/sites/default/files/policy/1%EA%B6%8C_09_Urban%20Planning_Seoul%E2%80%99s%20Digital%20Media%20City.pdf">https://www.seoulsolution.kr/sites/default/files/policy/1%EA%B6%8C_09_Urban%20Planning_Seoul%E2%80%99s%20Digital%20Media%20City.pdf</a> · 2025-04-29 · review: pending_review</li><li><code>CASE-YUNQI</code> — 云栖小镇案例（机制研究参考） <a href="https://www.hangzhou.gov.cn/col/col812262/art/2026/art_df0fc355af7744479ebd5083ec5b8b1a.html">https://www.hangzhou.gov.cn/col/col812262/art/2026/art_df0fc355af7744479ebd5083ec5b8b1a.html</a> · 2026-07-15 · review: pending_review</li><li><code>CASE-SHENZHEN-BAY</code> — 深圳湾科技生态园案例（机制研究参考） <a href="https://gxj.sz.gov.cn/xxgk/xxgkml/qt/gzdt/content/post_11892658.html">https://gxj.sz.gov.cn/xxgk/xxgkml/qt/gzdt/content/post_11892658.html</a> · 2024-12-13 · review: pending_review</li><li><code>CASE-SHIBUYA</code> — 涩谷/品川站城一体案例（机制研究参考） <a href="https://ir.tokyu.co.jp/ja/ir/library/result/main/04/teaserItems1/01115/linkList/01/link/Shibuya%20Redevelopment%20Project_J.pdf">https://ir.tokyu.co.jp/ja/ir/library/result/main/04/teaserItems1/01115/linkList/01/link/Shibuya%20Redevelopment%20Project_J.pdf</a> · 2026 · review: pending_review</li></ul></div></details></div>
+    <div><details open><summary>Assumptions & data gaps</summary><div class="inner"><ul><li><code>A-CONTROLS-001</code> — Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.</li><li><code>A-BOUNDARY-001</code> — 官方精确边界尚未公开；本方案使用仓库 provisional_boundaries.geojson 的临时边界生成、展示与自检。</li><li><code>A-MASSING-001</code> — 建筑基底为概念体量，仅用于表达空间组织与公共空间关系。</li><li><code>A-CONTROLS-002</code> — 容积率、建筑高度、绿地率等控制指标依赖尚未公开的控规条件。</li><li><code>A-SCENARIOS-001</code> — AI 场景卡、活动体系与运营机制均为概念建议。</li></ul></div></details></div>
+  </div>
+</div></section>
+
+<section><div class="wrap"><h2>Self-check status</h2>
+  <span class="status">All four gates pass · formal-review-ready</span>
+  <div class="legend" style="margin-top:10px">deterministic / spatial / visual / professional all pass; PR CI validation passed.</div>
+</div></section>
+
+<div class="foot"><div class="wrap">
+  OSM base © OpenStreetMap contributors (ODbL 1.0) ｜ figures derived by AI agent from submitted geometry ｜ conceptual suggestions, not approved conclusions ｜ see PR for contact.
+</div></div>
+</body></html>

@@ -129,14 +129,16 @@
     },
     "user_persona_count": {
       "status": "known",
-      "value": 6,
+      "value": 7,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
       "formula": "count(personas)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "7 user personas in proposal"
+      ]
     },
     "pilgrimage_landmark_count": {
       "status": "known",

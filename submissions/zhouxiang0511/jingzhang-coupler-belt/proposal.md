@@ -127,7 +127,7 @@ iteration: "v0.2"
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
-### 用户画像（6类）
+### 用户画像（7类）
 
 1. AI工程师/研究员；2. 创业者/创业团队；3. 高校师生；4. 园区与企业运营者；5. 周边居民与通勤者（含公园沿线70个社区、45万居民的服务对象 [source:JZ-PARK-PHASE2-20260806]）；6. 银发人群与无障碍需求者；7. 国际开发者与游客。
 
@@ -230,7 +230,7 @@ iteration: "v0.2"
 - 公共空间约0.57 km²，公共空间比例约5.0% [metric:public_space_ratio]
 - 概念建筑基底约1.01 km²（仅示意空间组织）[metric:building_footprint_area_sqm]
 - 三处重点区合计约3.69 km² [metric:key_area_total_sqm]
-- 方案产出：12张AI场景卡 [metric:ai_scenario_card_count]、6类用户画像 [metric:user_persona_count]、3个朝圣地标 [metric:pilgrimage_landmark_count]、4个产业测试验证场景 [metric:industry_test_scenario_count]、21项更新项目 [metric:renewal_project_count]
+- 方案产出：12张AI场景卡 [metric:ai_scenario_card_count]、7类用户画像 [metric:user_persona_count]、3个朝圣地标 [metric:pilgrimage_landmark_count]、4个产业测试验证场景 [metric:industry_test_scenario_count]、21项更新项目 [metric:renewal_project_count]
 
 容积率、建筑高度依赖未公开控规条件，保持 `unknown` 并登记复算前置条件 [metric:floor_area_ratio] [metric:building_height_m]。公告任务1.3/1.4/1.5与智能体任务agent.1—agent.6全部必答项已映射到章节、图层、指标、图纸、HTML、来源、标准与自检项，见 `compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`（核心深度项均 `complete`）[depth:metrics_recalculation]。
 

@@ -231,7 +231,7 @@ Core metrics are recalculated from the submitted geometry under EPSG:4548 [metri
 - Public space is approximately 0.57 km², with a public space ratio of approximately 5.0% [metric:public_space_ratio]
 - The conceptual building footprint is approximately 1.01 km² (illustrating spatial organization only) [metric:building_footprint_area_sqm]
 - The three key areas total approximately 3.69 km² [metric:key_area_total_sqm]
-- Proposal outputs: 12 AI scenario cards [metric:ai_scenario_card_count], 6 user persona types [metric:user_persona_count], 3 pilgrimage landmarks [metric:pilgrimage_landmark_count], 4 industry testing and validation scenarios [metric:industry_test_scenario_count], and 21 renewal projects [metric:renewal_project_count]
+- Proposal outputs: 12 AI scenario cards [metric:ai_scenario_card_count], 7 user persona types [metric:user_persona_count], 3 pilgrimage landmarks [metric:pilgrimage_landmark_count], 4 industry testing and validation scenarios [metric:industry_test_scenario_count], and 21 renewal projects [metric:renewal_project_count]
 
 Floor area ratio and building height depend on undisclosed regulatory-plan conditions, remain `unknown`, and their recalculation preconditions are registered [metric:floor_area_ratio] [metric:building_height_m]. All mandatory items of announcement tasks 1.3/1.4/1.5 and agent tasks agent.1–agent.6 are mapped one by one to sections, layers, metrics, drawings, HTML pages, sources, standards, and self-check items — see `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json` (all core depth items are `complete`) [depth:metrics_recalculation].
 
