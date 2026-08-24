@@ -1947,7 +1947,7 @@
       "assertion_zh": "四套图纸的页数与版本印记命中数逐套相等，无旧版本号残留。",
       "evidence_in_package": "drawings/*.pdf 页脚",
       "covered_by_self_check_id": "VISUAL_PACKAGING",
-      "independent_verification_zh": "`qpdf --show-npages` 与 `pdftotext <pdf> - | grep -c 'PACKAGE v1.15'` 逐套比对：13/13、13/13、6/6、6/6。"
+      "independent_verification_zh": "`qpdf --show-npages` 与 `pdftotext <pdf> - | grep -c 'PACKAGE v2.0'` 逐套比对：13/13、13/13、6/6、6/6；`PACKAGE v1.15` 四套均为 0。"
     },
     {
       "expectation_id": "VISUAL_STATIC",

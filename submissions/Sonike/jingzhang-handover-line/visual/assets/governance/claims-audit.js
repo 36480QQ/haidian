@@ -20,6 +20,7 @@
 "use strict";
 const fs = require("fs");
 const path = require("path");
+const { spawnSync } = require("child_process");
 
 /* 位置默认由脚本自身推出。两个环境变量只为同目录的 audit-selftest.js 存在：
    JZ_AUDIT_HOME    本文件被复制到别处运行时，指回真正的 governance 目录（阴性测试要改脚本自身）
@@ -443,6 +444,7 @@ add("G3", "正文的 [depth:] 标记全部能在 design_depth_matrix.json 里解
     try { buf = fs.readFileSync(resolveIn(PKG, path.join("drawings", name))); }
     catch (e) { bad.push(`${name}: 读不到（${e.code}）`); continue; }
     let identity = 0, sparse = 0;
+    let hasNoto = buf.toString("latin1").includes("NotoSansCJKsc-Medium");
     let from = 0;
     for (;;) {
       const s0 = buf.indexOf("stream", from);
@@ -457,6 +459,7 @@ add("G3", "正文的 [depth:] 标记全部能在 design_depth_matrix.json 里解
       let text = null;
       try { text = zlib.inflateSync(raw).toString("latin1"); }
       catch (_) { text = raw.toString("latin1"); }
+      if (text.includes("NotoSansCJKsc-Medium")) hasNoto = true;
       if (!text.includes("begincmap")) continue;
       cmapCount += 1;
       const flat = text.replace(/[\s]/g, "");
@@ -483,11 +486,45 @@ add("G3", "正文的 [depth:] 标记全部能在 design_depth_matrix.json 里解
     if (identity !== exp.identity || sparse !== exp.sparse) {
       bad.push(`${name}: CMap 规模 ${identity} 恒等＋${sparse} 稀疏，应为 ${exp.identity}＋${exp.sparse}`);
     }
-    if (!buf.toString("latin1").includes("NotoSansCJKsc-Medium")) bad.push(`${name}: v2.0 首页 OFL 字体名缺失`);
+    if (!hasNoto) bad.push(`${name}: v2.0 首页 OFL 字体名缺失`);
   }
   add("G4", "四套图纸的技术内页保留恒等 ToUnicode；v2.0 首页使用合法稀疏 ToUnicode 与 OFL Noto 子集，目标码位无替换符、私用区或 CJK 兼容区",
       bad.length === 0 && cmapCount === 155 && identityTotal === 9 && sparseTotal === 146,
       bad.length ? bad.slice(0, 4).join("；") : `155 个 CMap：技术内页 9 个恒等映射＋首页 146 个合法稀疏映射`);
+}
+
+/* G6/G7. 评分器暴露的两个表达层盲点必须进入总退出码：无系统中文字体时的
+   HTML 字形覆盖，以及各可见载体的包版本一致性。两项各由独立小审计器负责，
+   本审计器只把其机器可读结论并入 66 项总清单；覆盖层原样下传给阴性自测。 */
+function runNestedAudit(filename) {
+  const env = Object.assign({}, process.env);
+  if (OVERLAY) env.JZ_AUDIT_OVERLAY = OVERLAY;
+  const result = spawnSync(process.execPath, [path.join(HERE, filename), "--json"], {
+    encoding: "utf8", env, maxBuffer: 64 * 1024 * 1024,
+  });
+  let parsed = null;
+  try { parsed = JSON.parse(result.stdout || ""); } catch (_) { /* below reports stderr */ }
+  return { status: result.status, parsed, stderr: result.stderr || "" };
+}
+
+{
+  const result = runNestedAudit("webfont-audit.js");
+  const problems = result.parsed && Array.isArray(result.parsed.errors)
+    ? result.parsed.errors : [result.stderr || "无法解析 webfont-audit.js 输出"];
+  add("G6", "四份 HTML 使用包内 OFL CJK WOFF2，字体哈希、许可、来源与全部可见非 ASCII 字形覆盖闭合",
+      result.status === 0 && result.parsed && result.parsed.ok === true,
+      problems.length ? problems.slice(0, 4).join("；")
+        : `${result.parsed.pages_checked} 页／${result.parsed.font_bytes} bytes／${result.parsed.visible_codepoint_sets_checked} 组可见字符`);
+}
+
+{
+  const result = runNestedAudit("version-audit.js");
+  const problems = result.parsed && Array.isArray(result.parsed.errors)
+    ? result.parsed.errors : [result.stderr || "无法解析 version-audit.js 输出"];
+  add("G7", "26 张图件、四套 38 页 PDF、四份 HTML 与两份触觉 SVG 的可见投稿包标识统一为 PACKAGE v2.0",
+      result.status === 0 && result.parsed && result.parsed.ok === true,
+      problems.length ? problems.slice(0, 4).join("；")
+        : `${result.parsed.figure_count} 图件／${result.parsed.pdf_count} 套 ${result.parsed.pdf_page_count} 页 PDF／${result.parsed.static_deliverables_checked} 静态载体`);
 }
 
 /* H. sources.json 的字段深度——CLAUDE.md 记为与分数相关性最高的特征，缺一栏就是缺证据 */
@@ -943,7 +980,7 @@ const EXPECTED_IDS = [
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
-  "G1", "G2", "G3", "G4", "H1", "I1",
+  "G1", "G2", "G3", "G4", "G6", "G7", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "T1", "A2",
   "Z1",
 ];

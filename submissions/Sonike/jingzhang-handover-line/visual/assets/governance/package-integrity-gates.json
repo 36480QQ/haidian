@@ -146,7 +146,7 @@
       "statement_zh": "每套图纸的页数必须等于版本印记命中数。",
       "statement_en": "For each drawing set, the page count must equal the number of version-stamp hits.",
       "checks": "drawings/*.pdf",
-      "decision_rule_zh": "`qpdf --show-npages` 的结果须等于 `pdftotext | grep -c 'PACKAGE v1.15'`；不相等即意味着有页面印着别的版本号。",
+      "decision_rule_zh": "`qpdf --show-npages` 的结果须等于 `pdftotext | grep -c 'PACKAGE v2.0'`，且 `PACKAGE v1.15` 命中数须为 0；否则即有页面仍带旧投稿包标识。",
       "current_result": "a0-boards 6/6、a0-boards.en 6/6、a3-booklet 13/13、a3-booklet.en 13/13",
       "caught_real_defects": [
         {

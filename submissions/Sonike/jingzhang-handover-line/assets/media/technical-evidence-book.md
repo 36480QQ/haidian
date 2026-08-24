@@ -14,7 +14,7 @@ iteration: "v2.0"
 
 # 京张交接线 / 技术证据册
 
-> **v2.0 阅读说明（2026-08-23）**：本文件保存 v1.15 的长表、推导、场景卡与逐项证据，供复算和追溯；正式主叙事改由根目录 `proposal.md` / `proposal.en.md` 承担。四套 PDF 的第 1 页已替换为空间命题优先、文字可检索的 v2.0 冠军版首页，页 2 至末页原样保留；网页入口与 F/03 同步使用“三场三剖面”新图。若本册与主叙事的章节组织不同，以主叙事为评审入口、以本册为技术证据层。
+> **v2.0 阅读说明（2026-08-24）**：本文件保存此前技术基线的长表、推导、场景卡与逐项证据，供复算和追溯；正式主叙事改由根目录 `proposal.md` / `proposal.en.md` 承担。四套 PDF 的第 1 页为空间命题优先、文字可检索的冠军版首页，页 2 至末页技术图面内容不变；四套 38 页的**可见投稿包标识**已统一为 v2.0。网页入口与 F/03 同步使用“三场三剖面”新图。若本册与主叙事的章节组织不同，以主叙事为评审入口、以本册为技术证据层。
 
 ## 让好 AI 更快进城，让每次交接都有回路
 
@@ -984,8 +984,9 @@ P0 的成本等级为 **S：小型、可移动、无固定土建的公共界面*
 | --- | --- | --- | --- |
 | 四套 PDF 内嵌中文 | Noto Serif SC | SIL Open Font License 1.1，允许嵌入与再分发 [source:FONT-NOTO-SERIF-SC] | `pdffonts drawings/a3-booklet.pdf` 看 emb 列 |
 | 四套 PDF 拉丁文字 | PDF 基础十四款 | PDF 规范内置，不随包分发字体文件 [source:FONT-PDF-BASE14] | 同上，基础字体不显示为嵌入 |
-| 26 张栅格图件文字 | Noto Sans CJK SC / Noto Sans | SIL OFL 1.1，仅把字形渲染为像素 [source:FONT-NOTO-RASTER] | 包内字体文件数为 0：`find <包> -name '*.tt[cf]' -o -name '*.otf'` |
+| 26 张栅格图件文字 | Noto Sans CJK SC / Noto Sans | SIL OFL 1.1，仅把字形渲染为像素 [source:FONT-NOTO-RASTER] | 包内完整源字体数为 0：`find <包> -name '*.tt[cf]' -o -name '*.otf'` |
 | 画廊封面文字 | Noto Sans CJK SC / Noto Sans | 同上 [source:FONT-NOTO-COVER] | 同上 |
+| 四份离线 HTML | Noto Sans CJK SC Medium 字符子集 | SIL OFL 1.1，251,232 字节 WOFF2 嵌入包内 CSS data URI，官方许可正文与版权通知另存 JSON [source:FONT-NOTO-WEB] | `node visual/assets/governance/webfont-audit.js` |
 | 字符编码资源 | Adobe CMap UniGB-UCS2-H | Adobe 公开 CMap，仅作编码、不含字形 [source:FONT-ADOBE-CID] | `pdffonts` 输出中无该项字形嵌入 |
 
 音频由本机语音合成生成、不含真人音色样本 [source:TTS-MACOS-SYNTH]；工具链依赖及其许可逐项登记 [source:TOOLCHAIN-BUILD]。任何外部使用不得暗示政府背书、实施批准、已建成或已完成公众参与 [assumption:A-FONT-001]。
@@ -995,7 +996,7 @@ P0 的成本等级为 **S：小型、可移动、无固定土建的公共界面*
 | 产出 | 生成方式 | 复核方式（读者可当场执行） |
 | --- | --- | --- |
 | 26 张栅格图件 | 由 `geometry/*.geojson` 与 `metrics.json` 程序化渲染，未描摹任何外部图片、地图或版式 | 图上每一处面积、长度与计数都能用包内几何与指标复算；投影与比例尺标在图内 |
-| 四套 PDF 图纸 | v2.0 首页由本包脚本用 OFL 的 Noto Sans CJK SC 生成并嵌入总体骨架与三场剖面；页 2 至末页保留 v1.15 技术图纸，内页中文仍嵌入 OFL 的 Noto Serif SC | `qpdf --check` 四套 PASS；页数仍为 13／13／6／6，纸张仍为 A3 横版／A0 竖版；逐套 `pdftotext` 得 v2.0 首页 1 处、保留内页 v1.15 为 12／12／5／5 处；私用区、CJK 兼容区与 U+FFFD 字符均为 0。首页标题、主张、图注、指标与边界为可检索文字；两张嵌入图件内部的小字是栅格，不主张逐字可复制，其完整替代文本见双语网页入口。 |
+| 四套 PDF 图纸 | v2.0 首页由本包脚本用 OFL 的 Noto Sans CJK SC 生成并嵌入总体骨架与三场剖面；页 2 至末页保留既有技术图面内容，内页中文仍嵌入 OFL 的 Noto Serif SC；可见投稿包标识统一为 v2.0 | `qpdf --check` 四套 PASS；页数为 13／13／6／6，纸张为 A3 横版／A0 竖版；逐套 `pdftotext` 得 `PACKAGE v2.0` 命中数与页数相等（13／13／6／6），`PACKAGE v1.15` 为 0；私用区、CJK 兼容区与 U+FFFD 字符均为 0。首页标题、主张、图注、指标与边界为可检索文字；两张嵌入图件内部的小字是栅格，不主张逐字可复制，其完整替代文本见双语网页入口。 |
 | 两份离线网页 | 由 `proposal.md` 渲染并加手写版式，不引用任何外部资源 | `grep -c 'https\?://' visual/index.html` 结果为 0；断网打开可用 |
 | 十二份合成交接账与离线演练记录 | 合成数据由 `shift-ledger.schema.json` 约束，离线状态机逐条重放 | `simulation.json` 的 `tasks` 数组可复算任务数、成功率、断言数与通过率 |
 | 音频与视频导览 | 本机语音合成加程序化字幕，不含真人音色样本 | 字幕文本与正文对应章节同源，可逐段比对 |

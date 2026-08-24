@@ -30,7 +30,7 @@ const AUDITOR = "claims-audit.js";
 const RUNNER = "protocol-check-runner.js";
 const EVIDENCE = "assets/media/technical-evidence-book.md";
 
-/* 这份 64 项 ID 全集是**刻意重复**的第二份来源。
+/* 这份 66 项 ID 全集是**刻意重复**的第二份来源。
    claims-audit.js 里也有一份；两份不一致就说明有人动了其中一份，本文件会报错。
    判据与被测对象放在同一处，等于没有判据。 */
 const IDS = [
@@ -39,7 +39,7 @@ const IDS = [
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
-  "G1", "G2", "G3", "G4", "H1", "I1",
+  "G1", "G2", "G3", "G4", "G6", "G7", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "T1", "A2", "Z1",
 ];
 const EXPECTED_SCALE = { ledgers: 12, rule_checks: 96, assertions: 48, rollback_evidence_checks: 12 };
@@ -93,7 +93,7 @@ const cases = [];
 const positive = (label, fn) => cases.push({ label, kind: "正向", fn });
 const negative = (label, fn) => cases.push({ label, kind: "阴性", fn });
 
-positive("claims-audit.js 全部通过，且恰好跑 64 项、ID 与本文件独立记录的全集逐位相同", () => {
+positive("claims-audit.js 全部通过，且恰好跑 66 项、ID 与本文件独立记录的全集逐位相同", () => {
   const r = runAuditor();
   if (r.code !== 0) return `退出码 ${r.code}，应为 0：${(failedIds(r).join("、") || r.stderr).slice(0, 300)}`;
   if (!r.json || r.json.all_match !== true) return "all_match 不为真";
@@ -194,6 +194,22 @@ negInput("metrics.json 删掉一条三位以上小数指标的 precision_note",
 
 negInput("sources.json 删掉一条来源的 not_usable_for",
   { "sources.json": jsonMutated("sources.json", (d) => { delete d.sources[0].not_usable_for; }) }, ["H1"]);
+
+negInput("离线中文网页删掉包内字体 CSS 链接 —— macOS 有系统字体时看不出，干净评审容器会出现方块字",
+  { "visual/index.html": textOf("visual/index.html").replace(/\s*<link rel="stylesheet" href="assets\/governance\/noto-cjk-subset\.css">/, "") }, ["G6"]);
+
+negInput("Web 字体覆盖记录删掉「京」字 —— 字体文件仍在、CSS 仍正确，但标题会缺字",
+  { "visual/assets/governance/noto-cjk-subset.coverage.json": jsonMutated(
+      "visual/assets/governance/noto-cjk-subset.coverage.json",
+      (d) => { d.codepoints = d.codepoints.filter((cp) => cp !== 0x4eac); }) }, ["G6"]);
+
+negInput("图件版本报告把 package_version 改回 v1.15 —— 二进制哈希仍全部相符也必须拒绝",
+  { "visual/assets/governance/version-stamp-report.json": jsonMutated(
+      "visual/assets/governance/version-stamp-report.json", (d) => { d.package_version = "v1.15"; }) }, ["G7"]);
+
+negInput("触觉 SVG 的可见页脚退回 PACKAGE v1.15 —— PDF 与栅格图件全对也必须拒绝",
+  { "assets/tactile/tactile-corridor-map.svg": textOf("assets/tactile/tactile-corridor-map.svg")
+      .replace("PACKAGE v2.0", "PACKAGE v1.15") }, ["G7"]);
 
 negInput("standard_matrix.json 的章节引用指向不存在的标题 —— v2 重写留下过 42 处",
   { "standard_matrix.json": jsonMutated("standard_matrix.json", (d) => {

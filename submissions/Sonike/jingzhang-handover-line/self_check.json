@@ -95,13 +95,18 @@
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/audit-selftest.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/build-champion-figures.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/build-champion-pdfs.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/build-webfont.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/claims-audit.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/example-scn05-shift-ledger.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/figure-contrast-report.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/measurement-protocol.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/measurement-protocol.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/model-shadow-run.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/noto-cjk-subset.coverage.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/noto-cjk-subset.css",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/noto-cjk-subset.rights.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/package-integrity-gates.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/pdf-version-report.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/protocol-check-runner.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/rights-inventory.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.json",
@@ -110,6 +115,9 @@
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/shift-ledger-suite.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/shift-ledger.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/validation-report.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/version-audit.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/version-stamp-report.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/webfont-audit.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/public-handover-table-3d.json",
         "submissions/Sonike/jingzhang-handover-line/visual/index.en.html",
         "submissions/Sonike/jingzhang-handover-line/visual/index.html"
@@ -117,7 +125,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 21106545,
+      "total_bytes": 21316463,
       "maintainer_bypass": false
     },
     "stderr": ""

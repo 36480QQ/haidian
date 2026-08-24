@@ -3,7 +3,7 @@
 
 /*
  * Rebuilds only page 1 of the four review PDFs. Pages 2..n are copied from the
- * audited v1.15 drawing set, so page references and technical content remain
+ * audited technical drawing set, so page references and technical content remain
  * stable while the AI/human review preview receives the v2.0 spatial thesis.
  */
 
