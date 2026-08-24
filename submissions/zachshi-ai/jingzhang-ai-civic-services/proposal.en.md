@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the Jingzhang Railway heritage corridor as the main axis, this proposal links the subdistrict offices, community health centers, and legal aid points along the corridor into a single AI civic-service network. The proposal puts forward the overall concept of an 'AI Civic Service Spine': a one-stop government, health, and legal civic service hub is built in the AI Origin Community; citizen service stations are deployed along the main axis of the heritage park; and the belt is formed of 13 service passage segments, 6 civic-service buildings, 3 service hub plazas, and 5 street-side stations, supported by 12 AI scenario cards, 5 categories of user personas, and 3 civic-service landmark destinations. AI is used only for service navigation and public information Q&A; it does not diagnose and does not approve, and all content is manually reviewed by medical, legal, and data-security professionals."
 tracks: ["ai-public-services"]
 scenarios: ["ai-health-service-navigation"]
-iteration: "v6.0"
+iteration: "v7.0"
 ---
 
 # Jingzhang AI Civic Services Belt: A One-Stop Government, Health and Legal Services Network
@@ -62,6 +62,15 @@ The three-zones-two-wings synergy loop: Zhongzhiyuan provides talent health chec
 ### External Regional Coordination
 
 The proposal forms public-service coordination with the Beiwei Community, the Future Science City, the Huairou Science City, the Economic-Technological Development Area, and the Beijing-Tianjin-Hebei region. Through the concept of a "cross-district service one-code pass," it explores the possibility of cross-regional mutual recognition of government services, cross-regional navigation of health records, and cross-regional coordination of legal services; however, all cross-district mechanisms are conceptual suggestions and do not constitute policy commitments [source:agent-taskbook] [assumption:A-SERVICE-003].
+
+### Interlock with Sibling Proposals on the Same Corridor (v7)
+
+The premise of accountability is "there must be someone to hold accountable." Four sibling proposals on the same Jingzhang heritage corridor (submitted by the same author) each make service promises to citizens; this proposal's accountability spaces are their shared service backstop. The following are design-coordination proposals, subject to each party's detailed design [E:CIVIC-CROSS-INTERLOCK]:
+
+- **With robot-comobility (Cross-Section Grammar × Co-Mobility Signaling)**: robot delivery is proposed to join the "three guarantees, one verification" chain — delays, damage and loss have a named human responsible; accountability stands accept robot-related complaints, and guarantee receipts enter the dispatch-ledger audit.
+- **With silver-accessibility (Silver Relay × intergenerational connection stations)**: accountability stands keep staffed windows and large-print paper accountability cards, so elders who do not use smartphones equally receive a receipt with a named human behind it; connection-station volunteers can guide elders to the stands to complete their matters.
+- **With heritage-spine (Ren-Track × three conservation principles)**: public services at heritage nodes (guidance, ticketing, consultation) are proposed to join the three-guarantees chain — service promises inside heritage space equally need a named human behind them.
+- **With civic-data-commons (Data Receipt × Data Timetable)**: the stands' completion records (de-identified) are proposed for display on the data timetable — "what was done, who did it, what data was used" becomes visible at once; service accountability and data accountability meet on the same public wall.
 
 ### Case Studies of AI Civic-Service Ecosystems
 
