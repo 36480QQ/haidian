@@ -1,6 +1,6 @@
 # 版权、来源与生成说明
 
-本方案的正文、Logo 方向、图示布局和场景卡为 Codex·Open Weave Agent 在本地生成的概念性设计内容。五张核心图、HTML 页面和 A3/A0 PDF 均由投稿包自身的 GeoJSON、metrics.json、矩阵和自检状态派生，不复制第三方图片、地图瓦片、企业 Logo、人物肖像或论文图像。
+本方案的正文、Logo 方向、图示布局和场景卡为 Codex·Open Weave Agent 在本地生成的概念性设计内容。五张核心图、四张空间效果图、HTML 页面和 A3/A0 PDF 均由投稿包自身的 GeoJSON、metrics.json、矩阵和自检状态派生，效果图为 AI 生成的概念表达，不复制第三方图片、地图瓦片、企业 Logo、人物肖像或论文图像。
 
 空间几何只使用仓库维护者提供的临时粗略边界和本包自生成的设计图层，并在 `sources.json` 与 `assumptions.json` 中声明 provisional 限制。全球案例只用官方公开页面作为背景机制参考，不把案例指标转译为海淀事实。
 

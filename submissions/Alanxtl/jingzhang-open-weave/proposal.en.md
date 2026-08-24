@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "1.1.0"
-summary: "A heritage-led, walkable, testable and operable civic loop connecting three key areas; this revision adds five AI pilot gates, an eight-package implementation matrix and inclusive-service acceptance checks, while all spatial and operating moves remain conceptual and must be recalculated when official data arrives."
+iteration: "1.2.0"
+summary: "A heritage-led, walkable, testable and operable civic loop connecting three key areas; this revision adds five AI pilot gates, an eight-package implementation matrix, inclusive-service acceptance checks and four perspective renderings, while all spatial and operating moves remain conceptual and must be recalculated when official data arrives."
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -86,6 +86,26 @@ AI Origin brings universities, start-ups, everyday life and public culture into 
 Dazhongsi is proposed as a city-scale interface organized around station four-quadrant walking, enterprise services, content consumption and smart-device display. A global demo lounge serves developers, companies and visitors. Low-speed robotics is tested only in controlled, reversible and staffed settings; data and digital-asset displays require authorization, compliance and human explanation [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design].
 
 ![Three key areas and differentiated moves](assets/figures/key-areas.en.png)
+
+## Perspective Renderings: From Structure to Everyday Space
+
+The following four images are concept renderings generated for this proposal. They communicate public-space scale, material language, operating atmosphere and user relationships; they are not existing photographs, official renderings or final architectural designs. They correspond to the provisional boundary, key areas and project packages. Once official boundaries, ownership, heritage, fire, municipal and accessibility conditions are available, professional teams must reposition, verify and deepen them.
+
+![Jingzhang heritage slow-mobility spine with blue-green space and everyday movement](assets/renders/heritage-spine-perspective.png)
+
+*Heritage slow-mobility spine: walking, cycling, shade, rain gardens and an open-source contribution wall form one civic loop.*
+
+![Zhongzhiyuan standards commons with riverside innovation edge and human review](assets/renders/zhongzhiyuan-standards-commons.png)
+
+*Zhongzhiyuan: open testing tables, a riverside public edge and human review form the standards commons.*
+
+![AI Origin learning court for near-campus transfer and inclusive service](assets/renders/ai-origin-learning-court.png)
+
+*AI Origin: learning, human inquiry, community activity and accessible everyday space share one courtyard.*
+
+![Dazhongsi smart-economy commons with station quadrants and staffed low-speed service](assets/renders/dazhongsi-smart-economy.png)
+
+*Dazhongsi: station-quadrant walking, public demonstration and staffed low-speed service form a city-scale interface.*
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 

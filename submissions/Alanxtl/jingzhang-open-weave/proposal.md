@@ -6,8 +6,8 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "1.1.0"
-summary: "以京张铁路线性遗产为公共空间骨架，把三处重点区组织成可步行、可验证、可运营的开放回路；新增五道 AI 试点闸门、八项目包实施矩阵和包容性服务验收，所有空间与运营内容均为概念建议，临时边界待正式数据替换后整体复算。"
+iteration: "1.2.0"
+summary: "以京张铁路线性遗产为公共空间骨架，把三处重点区组织成可步行、可验证、可运营的开放回路；新增五道 AI 试点闸门、八项目包实施矩阵、包容性服务验收和四张空间效果图，所有空间与运营内容均为概念建议，临时边界待正式数据替换后整体复算。"
 tracks: ["ai-traffic-walkability", "jingzhang-heritage-narrative", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -86,6 +86,26 @@ AI 原点社区建议把高校、创业团队、居住生活和公共文化放�
 大钟寺建议围绕站点四象限步行联系、企业服务、内容消费和智能终端展示形成城市型接口：国际路演客厅面向开发者、企业和访客，低速机器人服务原型只在可控、可撤回、有人值守的场景中验证，数字资产和数据要素展示必须以授权、合规和人工解释为前提 [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]。
 
 ![三处重点区与差异化动作](assets/figures/key-areas.png)
+
+## 空间效果图：从结构图到日常场景
+
+以下四张为本方案生成的概念性空间效果图，用于表达公共空间尺度、材料、运营氛围和用户关系，不是现状照片、官方效果图或最终建筑定稿。它们与临时边界、重点区和项目包建立对应关系；正式边界、权属、文保、消防、市政和无障碍条件到位后，应由专业团队重新定位、校核和深化。
+
+![遗址慢行主轴：历史线、蓝绿空间与日常人流](assets/renders/heritage-spine-perspective.png)
+
+*遗址慢行主轴：连续步行、骑行、遮荫、雨水花园和开源贡献墙共同组成公共回路。*
+
+![众智园标准治理客厅：河岸创新界面与人工复核](assets/renders/zhongzhiyuan-standards-commons.png)
+
+*众智园：开放测试台、河岸公共界面和人工复核共同构成“标准治理客厅”。*
+
+![AI 原点社区共学庭院：近校转化与包容性服务](assets/renders/ai-origin-learning-court.png)
+
+*AI 原点社区：共学、人工问询、社区活动和无障碍日常空间共享同一庭院。*
+
+![大钟寺智能经济客厅：站点四象限与有人值守的低速服务](assets/renders/dazhongsi-smart-economy.png)
+
+*大钟寺：站点四象限步行、展示活动和有人值守的低速服务原型形成城市型接口。*
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
