@@ -115,7 +115,7 @@ scenarios:
 
 ### 证据不是一次性快照：失效必须向下游传播
 
-`sources.json` 已记录 51 条来源及访问日期，但同一天访问不等于内容永久有效，也不能发现修订、替代、失联或临时边界被正式资料取代。`visual/assets/evidence-freshness-policy.json` 把来源分成项目资料、临时空间数据、城市背景、政策标准、案例参考和包内概念/方法材料六类，规定复核触发点、建议最长未核时间、责任角色和失效动作；来源变为 `review_due`、`superseded` 或 `unavailable` 时，受影响主张、矩阵项和场景门级必须同步降级或冻结。第 21 轮首次执行该机制：50 条来源逐条复核，48 条为 `verified_current`（包内/仓库内路径 SHA-256 或 HTTP 重取摘要），2 条为 `review_due`（CASE-22AT 证书校验失败、CASE-KINGS-CROSS 返回 403，均按访问未确认冻结升级、不删除陈述），逐条记录与摘要见 `refresh_records` [data:visual/assets/evidence-freshness-policy.json#refresh_records]。完成刷新审计数为 48，`review_due` 来源在下一门级推进前必须由责任角色重新复核，临时空间数据无论多新也仍然只是 `provisional_only` [data:visual/assets/evidence-freshness-policy.json#FRESH-01] [data:visual/assets/evidence-freshness-policy.json#FRESH-02] [data:visual/assets/evidence-freshness-policy.json#FRESH-06]。
+`sources.json` 当前登记 48 条来源；访问日期只说明何时读过，不证明页面永久有效，更不证明现实绩效。针对本次评审指出的两条 `review_due`，2026-08-24 只做了定向公开页面复核：Barcelona 市政府页面可访问并继续把 22@列为创新与技术转移节点；King's Cross 原 `workspace` 页面仍返回 403，因此改用同一项目运营方可访问的公共咨询页面，只保留“人尺度、公共空间与持续咨询”这类背景比较。两条记录均不得承担海淀控制、批准、现实绩效或成熟度升级证据；这次复核关闭的是访问状态，不是独立成效审计。URL、方法、用途边界与结果写入 `visual/assets/evidence-freshness-policy.json` [data:visual/assets/evidence-freshness-policy.json#refresh_records]；临时空间数据无论多新仍只可用于 `provisional_only` 关系表达。
 
 专业响应按问题拆分，而不是把标准编号堆在一个结论后：
 
@@ -621,8 +621,6 @@ AI 与公共价值指标同样按核验问题拆开：
 
 投稿方自有内容和代码已有明确开源许可；OSM、第三方引用与仓库输入仍按各自条款分层。文件检查、机器 PASS、PR 评审、许可声明或合并均不产生规划判断、专业接责、场地批准、现实结果或 G1。
 
-> **正式提案 · 第 13 章（共 13 章）。** 后台索引至此结束；以下“参考资料”续接正式提案。
-
 > **正式提案 · 第 13 章（共 13 章）。** 扩展证据至此结束；以下“参考资料”续接正式提案。
 
 ## 参考资料
@@ -639,4 +637,4 @@ AI 与公共价值指标同样按核验问题拆开：
 
 创新片区机制对照包括 [source:CASE-KENDALL]、[source:CASE-ONE-NORTH] 与 [source:CASE-22AT]。遗产更新和运营机制另参考 [source:CASE-KINGS-CROSS]、[source:CASE-STATION-F] 与 [source:CASE-MARS]。现状方向背景为 [source:OSM-CONTEXT]，其 ODbL 数据只用于道路、铁路和水系识别，不能作为官方边界或工程依据。
 
-生成方法：空间设计由公开临时边界、项目枚举、OSM 背景和确定性脚本派生；面积与长度在 EPSG:4548 中复算；场景护照、服务区、公共空间模式和阶段门以 GeoJSON 属性记录。PNG、A3/A0 与离线 HTML 是解释层，`geometry/*.geojson`、`metrics.json`、三类矩阵和 `self_check.json` 是证据层。本轮不使用模型生成图像、视频或音频；前台图件和图纸由投稿方原创 SVG、Noto Sans SC OFL 字体子集与本机确定性导出形成，构建器不进入最终投稿树。许可与例外统一见 `visual/assets/rights-clearance-ledger.json` 和 `report/copyright_statement.md`。
+生成方法：空间设计由公开临时边界、项目枚举、OSM 背景和确定性脚本派生；面积与长度在 EPSG:4548 中复算；场景护照、服务区、公共空间模式和阶段门以 GeoJSON 属性记录。PNG、A3/A0 与离线 HTML 是解释层，`geometry/*.geojson`、`metrics.json`、三类矩阵和 `self_check.json` 是证据层。本轮不使用模型生成图像、视频或音频；前台图件、图纸和 HTML 由投稿方原创 SVG、Noto Sans SC OFL 字体子集与本机确定性导出形成，构建器不进入最终投稿树。许可、字体子集方法、逐路径权利自查与例外统一见 `visual/assets/file-rights-inventory.json`、`visual/assets/rights-clearance-ledger.json` 和 `report/copyright_statement.md`。
