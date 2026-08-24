@@ -617,9 +617,15 @@ def enforce_local_gates(
         if action not in review["required_next_actions_zh"]:
             review["required_next_actions_zh"].append(action)
     mandatory = review["mandatory_rejection"]
-    if mandatory["hits"] and mandatory["result"] != "fail":
-        mandatory["result"] = "fail"
-        overrides.append("mandatory_rejection: hits require result=fail")
+    # ``hits`` is the evidence-bearing field. Keep the summary result derived
+    # from it so a model cannot reject a package while citing no condition.
+    if mandatory["hits"]:
+        if mandatory["result"] != "fail":
+            mandatory["result"] = "fail"
+            overrides.append("mandatory_rejection: hits require result=fail")
+    elif mandatory["result"] != "pass":
+        mandatory["result"] = "pass"
+        overrides.append("mandatory_rejection: fail without hits requires result=pass")
     mandatory_fail = mandatory["result"] == "fail"
     if mandatory_fail:
         review["recommendation"] = "reject"

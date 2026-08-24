@@ -270,6 +270,27 @@ class AIReviewSubmissionTests(unittest.TestCase):
             self.assertEqual("fail", result["review"]["mandatory_rejection"]["result"])
             self.assertFalse(result["review"]["can_enter_formal_review"])
 
+    def test_mandatory_fail_without_hits_is_normalized_to_pass(self) -> None:
+        review = valid_review()
+        review["mandatory_rejection"]["result"] = "fail"
+        review["mandatory_rejection"]["hits"] = []
+        review["mandatory_rejection"]["notes_zh"] = "未发现任何强制退回事实。"
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            result = run_ai_review(
+                ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+            )
+            self.assertEqual("pass", result["review"]["mandatory_rejection"]["result"])
+            self.assertEqual("formal-review-ready", result["review"]["recommendation"])
+            self.assertTrue(result["review"]["can_enter_formal_review"])
+            self.assertIn(
+                "mandatory_rejection: fail without hits requires result=pass",
+                result["decision"]["local_gate_overrides"],
+            )
+
     def test_invalid_model_schema_is_rejected(self) -> None:
         client = FakeClient({"recommendation": "formal-review-ready"})
         with tempfile.TemporaryDirectory() as tmp, mock.patch(
