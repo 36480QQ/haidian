@@ -381,6 +381,16 @@ R-02 街块颗粒普查已在 2026-08-21 的 OSM 快照上完成复算（口径�
 
 共测阶段：受控测试期即引入共测者（上表第五行），上街后每年「底盘日」复测一次；共测发现的不可达项在下一年审前整改，逾期未改触发租约暂停条款。**分配影响与负担能力评估（拟采用的方法框架，非已完成的评估）**：每张卡年审时按三问评估——成本谁担（设备与规程成本由运营方押金与租金内部化，不得转嫁为公共收费）、收益谁享（等价路径保障非用户不因拒用 AI 服务而受损；服务定价对老年人与低收入者设减免档）、负担能力如何校验（以既有公共服务同类收费为上限锚点，超限项进入听证）——评估结论随年审公示 [depth:risk_missing_data]。
 
+**逐场景数据处理矩阵**。绝对化的「不采集个人数据」与 S01 的「图像即时脱敏」在逻辑上不相容——即时脱敏本身意味着瞬时采集与处理。因此隐私边界不作总括声明，改为按场景登记（拟运行规程、演示口径，字段与期限随租约备案并受年审核查 [assumption:A-LEASE-001]）：
+
+| 场景 | 瞬时感知 | 是否留存 | 去标识化方式 | 字段清单 | 保存期限 | 责任主体 | 人工申诉 | 暂停条件 |
+|---|---|---|---|---|---|---|---|---|
+| S01 配送机器人 | 有（避障视觉，含行人影像瞬时处理） | 影像不留存；仅路径元数据 | 端侧即时脱敏，原始帧即弃 | 时间戳/路段编号/速度/事件代码 | 元数据 90 日 | 运营方（租约责任人） | 账牌二维码人工通道，7 日答复 | 脱敏失效或超采即停运并报告 |
+| S02 无人接驳 | 有（车内外感知） | 乘降计数留存；影像不留存 | 端侧计数，不存人脸特征 | 班次/乘降计数/运行状态 | 90 日 | 运营方 | 同上＋随车安全员现场受理 | 感知偏离备案口径即停运 |
+| S04 医疗导航站 | 有（语音/触屏交互瞬时处理） | 问诊内容不留存；仅匿名去向统计 | 会话即时丢弃；统计聚合 ≥20 人份 | 去向类别计数/时段 | 统计 180 日 | 运营方＋医疗服务监督渠道 | 线下人工窗口全时并行 | 发现任何可识别个体的留存即暂停 |
+| S06 复盘屏 | 无主动感知（仅展示） | 展示汇总指标；原始数据不出屏系统 | 上屏前聚合与脱敏 | 指标名/数值/时段 | 公示期 1 年 | 区管理机构＋运营方 | 例会现场与屏上公示渠道 | 涉个体信息上屏即撤屏整改 |
+| S08 夜间清扫 | 有（作业避障） | 影像不留存；作业轨迹留存 | 端侧脱敏，原始帧即弃 | 轨迹/耗材/时段 | 90 日 | 运营方 | 噪音与影像投诉同一台账 | 两次实质投诉调整时段；脱敏失效停运 |
+
 **六项证据基线登记格式（预登记）**。性质先行：下表是**先于任何真实试点预登记的证据格式——只承诺「将如何记录」，不含任何已测得的数值**；上表六项规程与七步全流程（申请—测试—定押—备案—上街—年审—退出）由此获得统一的证据模式，真实试点启动时按此表建档：
 
 | 项目 | 记录内容 | 单位·格式 | 记录人 | 阶段 | 合格判据（通过/不通过的证据） |
@@ -422,7 +432,7 @@ R-02 街块颗粒普查已在 2026-08-21 的 OSM 快照上完成复算（口径�
 | 导览线 | 主题 | 节点序列 | 承运 |
 |---|---|---|---|
 | 百年线 | 历史向 | 断面塔 → 技术年表带 → 五道口启动区 → 契约碑（北端） | S03 租约 |
-| 五速线 | 概念向 | 五钟广场 → 租约服务站 → 设备带示范街 → 测试场观察界面 | S03 租约 |隐私与人工复核边界：全部场景不采集个人数据、保留人工复核，S06 复盘屏的数据边界条款写入租约正文 [source:AGENT-TASKBOOK]。
+| 五速线 | 概念向 | 五钟广场 → 租约服务站 → 设备带示范街 → 测试场观察界面 | S03 租约 |隐私与人工复核边界：凡有环境感知的场景必然存在**瞬时感知与处理**，本方案不作「不采集个人数据」的绝对表述——各场景的留存与脱敏边界以第 7 章逐场景数据处理矩阵为准；全部场景保留人工复核，S06 复盘屏的数据边界条款写入租约正文 [source:AGENT-TASKBOOK]。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -602,7 +612,7 @@ R-10 值得单独一段：**这场竞赛本身成为百年制度的第一份档�
 
 ## 风险、版权与合规说明
 
-**风险矩阵（1–5 分，全档见 risk.json）**：政策不确定性 4（图则/地役权/届会需法定程序或政策创设→全部概念建议、一期零施工）；空间争议 3（院落切分敏感→自愿+更新触发+不点名权属 [assumption:A-EASE-001]）；实施复杂度 3（依赖链 ≤2、每项目带退出条件）；数据隐私 2（租约登记不含个人数据）；公众接受度 2（默认退出+账牌可见）；技术成熟度 2（**几乎不依赖前沿技术，是本方案的卖点**）；运维成本 2（年度单锚点）；公平包容 2（等价路径为租约必备条款 [standard:BARRIER-FREE-ENVIRONMENT-LAW]） [depth:risk_missing_data]。
+**风险矩阵（1–5 分，全档见 risk.json）**：政策不确定性 4（图则/地役权/届会需法定程序或政策创设→全部概念建议、一期零施工）；空间争议 3（院落切分敏感→自愿+更新触发+不点名权属 [assumption:A-EASE-001]）；实施复杂度 3（依赖链 ≤2、每项目带退出条件）；数据隐私 2（租约登记数据集不含个人数据；场景瞬时感知与留存边界见第 7 章逐场景矩阵）；公众接受度 2（默认退出+账牌可见）；技术成熟度 2（**几乎不依赖前沿技术，是本方案的卖点**）；运维成本 2（年度单锚点）；公平包容 2（等价路径为租约必备条款 [standard:BARRIER-FREE-ENVIRONMENT-LAW]） [depth:risk_missing_data]。
 
 **合规红线自查**：① 临时边界已在正文（第 2 章）、展示页、来源清单、假设登记表、自检结果五处醒目标注 [assumption:A-BND-001]；② 不点名任何真实权属单位——L3 试点为「某科研院落群（示意）」；③ 押金池与维护基金标注持牌金融机构与监管合规为待补条件 [assumption:A-FUND-001]；④ 全部历史年份与案例逐条带来源，查不到即降级或删除；⑤ HD00-1601 引用与「概念深化」定位语句在场（第 1 章）[source:SRC-HD00-1601]；⑥ 断面塔不含工程可行性结论；全部空间落位写为「概念建议/供专业团队深化」。
 
@@ -691,10 +701,10 @@ print(json.dumps({"snapshot": "RUN_DATE_HERE", "n_blocks": len(areas),
 
 供人工评审快速抽查中英文两稿的等义性。两稿逐行结构对齐：以下全部行号在 proposal.md 与 proposal.en.md 中**完全相同**。
 
-**章节对照（行号两稿一致）**：L17 执行摘要 Executive Summary · L39 设计依据 Design Basis and Source List · L89 三层范围 Three-Level Scope Framework · L122 统筹研究范围 Coordinated Research Area · L158 总体设计范围 Overall Design Area · L271 重点区域详细设计 Detailed Design of Key Areas · L313 生态与场景 AI Innovation Ecosystem, Personas, and AI+ Scenarios · L427 用地与拆改留 Land Use, Building Scale, and Retain-Renovate-Demolish · L449 交通市政 Transport, Rail, Municipal Infrastructure, and Public Services · L472 蓝绿与风貌 Blue-Green Network, Public Space, and Urban Character · L520 实施与分期 Renewal Projects, Implementation Policy, and Phasing · L563 指标与合规 Metrics, Area Recalculation, and Compliance Matrices · L603 风险与版权 Risk, Copyright, and Compliance · L613 参考资料 References · L630 附录 A Appendix A · L663 附录 B Appendix B。
+**章节对照（行号两稿一致）**：L17 执行摘要 Executive Summary · L39 设计依据 Design Basis and Source List · L89 三层范围 Three-Level Scope Framework · L122 统筹研究范围 Coordinated Research Area · L158 总体设计范围 Overall Design Area · L271 重点区域详细设计 Detailed Design of Key Areas · L313 生态与场景 AI Innovation Ecosystem, Personas, and AI+ Scenarios · L437 用地与拆改留 Land Use, Building Scale, and Retain-Renovate-Demolish · L459 交通市政 Transport, Rail, Municipal Infrastructure, and Public Services · L482 蓝绿与风貌 Blue-Green Network, Public Space, and Urban Character · L530 实施与分期 Renewal Projects, Implementation Policy, and Phasing · L573 指标与合规 Metrics, Area Recalculation, and Compliance Matrices · L613 风险与版权 Risk, Copyright, and Compliance · L623 参考资料 References · L640 附录 A Appendix A · L673 附录 B Appendix B。
 
-**插图对照（行号两稿一致）**：L35 site-overview · L118 land-use-structure · L275 key-areas · L469 mobility-bluegreen · L599 metrics-evidence。
+**插图对照（行号两稿一致）**：L35 site-overview · L118 land-use-structure · L275 key-areas · L479 mobility-bluegreen · L609 metrics-evidence。
 
-**计数对照（两稿逐类相同）**：表 32/32；核心指标 23 条（计数口径见第 11 章）；证据标记 source 82 · metric 66 · assumption 41 · depth 33 · standard 11 · data 30。
+**计数对照（两稿逐类相同）**：表 33/33；核心指标 23 条（计数口径见第 11 章）；证据标记 source 82 · metric 66 · assumption 42 · depth 33 · standard 11 · data 30。
 
 **数值抽查样例（v4.4 人工复核记录，全录见 changelog）**：52,737 m²（两稿约整分别为「约 5.3 万」与 "about 53,000"，等义）；中位街块 0.662 ha、超大占比 84.8%、主脊偏差 1,247.2 m、断口 G1 1,110.2 m（两稿数字逐一相同）；发现并已修正 1 处：中文中关村段年份表述（1980 年代电子一条街 vs 1988 年试验区，原文混并，英文本正确）。
