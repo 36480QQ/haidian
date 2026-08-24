@@ -163,7 +163,7 @@ The four tests publish method, incident log, repair status and stop condition be
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-The five land-use codes are 0802 research, 1401 park green, 0803 culture, 05 commercial services and 0702 community service facilities. They form a west-to-east gradient from research through civic commons and open culture to industry and daily support. Polygons cover the submitted boundary without overlap and declare EPSG:4548 area by feature. They remain conceptual design zones pending comparison with official land-use plans and ownership.[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
+The five land-use codes are 0802 research, 1401 park green, 0803 culture, 09 commercial services and 0702 community service facilities. They form a west-to-east gradient from research through civic commons and open culture to industry and daily support. Polygons cover the submitted boundary without overlap and declare EPSG:4548 area by feature. They remain conceptual design zones pending comparison with official land-use plans and ownership.[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 
 Building strategy classifies before it quantifies. Retain-and-adapt carriers host incubation, talent and enterprise services; renovation carriers support open ground floors, test workshops, culture and market functions; a new-concept carrier only signals the safety and energy envelope for an edge-compute sandbox. The submitted footprint total is about 16.59 hectares, but it is neither an existing-building survey nor approved development. FAR and height remain unknown, and no demolition decision is made.[data:geometry/buildings.geojson#BLDG-001]
 

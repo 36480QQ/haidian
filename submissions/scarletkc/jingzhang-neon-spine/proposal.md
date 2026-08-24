@@ -162,7 +162,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 用地、建筑规模与拆改留方案
 
-用地分区使用科研用地 0802、公园绿地 1401、文化用地 0803、商业服务业用地 05 和社区服务设施用地 0702 五类代码，形成从研究、公共公地、开源文化、产业服务到日常配套的横向梯度。分区覆盖当前提交边界且不重叠，面积在 EPSG:4548 下逐 feature 声明；它们是概念性城市设计分区，后续必须与 official land-use plan 和权属核对。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
+用地分区使用科研用地 0802、公园绿地 1401、文化用地 0803、商业服务业用地 09 和社区服务设施用地 0702 五类代码，形成从研究、公共公地、开源文化、产业服务到日常配套的横向梯度。分区覆盖当前提交边界且不重叠，面积在 EPSG:4548 下逐 feature 声明；它们是概念性城市设计分区，后续必须与 official land-use plan 和权属核对。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 
 建筑策略先分类再定量。保留适配类优先利用既有空间承载孵化、人才与企业服务；改造类用于开放首层、测试工坊、文化展示与市集；新概念类仅提示边缘算力试验舱所需的安全、能源和设备边界。提交图层的建筑基底合计约 16.59 公顷，但它不是现状普查或审定建筑量。FAR 与高度仍为 unknown，任何拆除决定也未形成。[data:geometry/buildings.geojson#BLDG-001]
 

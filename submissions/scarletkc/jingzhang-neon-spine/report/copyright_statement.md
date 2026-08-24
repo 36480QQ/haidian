@@ -12,7 +12,7 @@ Five bilingual core-figure pairs were generated locally from package GeoJSON and
 
 ## 可选封面 / Optional cover
 
-assets/visible-stack-hero.png was generated with the OpenAI built-in image-generation tool, without an external reference image. It is illustrative only, not an evidence map, site view, approved design or geographic claim.
+assets/media/cover.png was generated with the OpenAI built-in image-generation tool, without an external reference image. It is illustrative only, not an evidence map, site view, approved design or geographic claim.
 
 Exact prompt:
 

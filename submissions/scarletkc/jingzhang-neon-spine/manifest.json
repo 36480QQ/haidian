@@ -15,6 +15,7 @@
     "model_detail": "GPT-5 based Codex agent"
   },
   "generated_at": "2026-08-11T00:00:00Z",
+  "cover_image": "assets/media/cover.png",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3ecab228a5cb67faad0112550d91bc2c94f0e8c6c5e355d8989fecb67f4e2627"
+      "sha256": "253361ff9c94d82ace2f6464d8da60020f789fee6b6c8a89e95e0dd638ef55d0"
     },
     {
       "path": "agent.json",
@@ -50,13 +51,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "6a8ff27b397b6952e0ebea8ee4033b919a66fddcb40e924fc8d391b275941408"
+      "sha256": "7ddd7abf3eba981689afe56c0ffa32c78e45dacbdf51e92a2236943d754565c3"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "be3a103e386a41b7365d7a7db163943fe3406f3f9280a8e78ad92372ffab3cc2"
+      "sha256": "870d3397c2f16ec1de44de327600dc04704ff15b3cac464789739df258816547"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +82,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5ad7b7a9b14c3efc001ddb93b6d2b071de7abf414e15f3f91a1df8538709ca0b"
+      "sha256": "8ffd85bba4d05cab8323e660bd8ffc283f18c3a2795f90d13d666580310fbad0"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +94,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ed068c30a5d42b82a43111c0ed45b8a19e23f57f7591212009b05cf61c2ee9b4"
+      "sha256": "3bfebe1028629269591e3975179f2ac7261fa8590cbf2fcb00dc6690c9c67eae"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +115,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "eebb8484c2d66f15dfa95ca30f2cf1b53c21f844888542dd7ea361debb16b9ed"
+      "sha256": "48ee74e3add966bcf4cb8bf851200ec475fa7c5b11c68811d03a596c471c9575"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -179,7 +180,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "1954847a62b3e05bc416c104eb863f67e69d8133da2bae2260701d38a5a2cfbb"
+      "sha256": "8c45b415edf2a137883777ae37ae26555870acee8373f18d808fd45159af014f"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -206,10 +207,14 @@
       "sha256": "00c16451a0dda2a0b54f6affa492cab97441ccc93399a4f90fe923748703aefe"
     },
     {
-      "path": "assets/visible-stack-hero.png",
-      "role": "illustrative_asset",
+      "path": "assets/media/cover.png",
+      "role": "media_poster",
       "required": false,
       "language": "neutral",
+      "title_zh": "百年京张·霓光脊概念封面",
+      "title_en": "Jingzhang Neon Spine concept cover",
+      "description_zh": "赛博朋克未来主义概念图，用于展示霓光脊的公共界面与空间气质，不构成现场、边界、工程或审批证据。",
+      "description_en": "A cyberpunk-futurist concept image showing the Neon Spine's civic interfaces and spatial character; it is not site, boundary, engineering, or approval evidence.",
       "sha256": "71f1293adccd3cee5356b84c4e542fe58e09176bfbb395dae87411178fd216cc"
     },
     {
@@ -218,7 +223,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "c3e3b53bd39083812b89b8849ec7b2b6e6d51b3c4ac8f50cbe6b7593b1bcf4a8"
+      "sha256": "e2d57c252c2328b7910ec51f3f5097e8cd676051779bf570da525d26def42751"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +231,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b6e5805138c85ac72d2530177fae07ef20c5e1cde68d283b540d1e371a3b0628"
+      "sha256": "0feda6a1e470337d59b589efa9628e8c0626e32edbc27b7c66b7a36b79c0ada5"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -250,7 +255,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e1d56776040b4c5fb9bd61a8512efb2d73aed41058f8efdd17bf933b9df2181d"
+      "sha256": "7a1a27c9bc1f8d1bb7b98f5dca848e054d6c9618c7b42b4c3211a00386ea0ecd"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -297,7 +302,7 @@
       "role": "changelog",
       "required": false,
       "language": "neutral",
-      "sha256": "3eb5a2deda708da7a56f2b4606e1808a1a8fd170763c786e36c900f936f8dc95"
+      "sha256": "2c4fe769c8c8d64fd4e0cd529149a188e02d73d4b76553a48c23be9634f88cbc"
     },
     {
       "path": "risk.json",
