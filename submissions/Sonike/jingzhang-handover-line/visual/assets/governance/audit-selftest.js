@@ -233,6 +233,18 @@ negInput("公共利益硬门槛删掉访客群体 —— 十二场景仍在、�
         d.beneficiary_groups = d.beneficiary_groups.filter((item) => item.group_id !== "visitors");
       }) }, ["G10"]);
 
+negInput("正式评审修复矩阵把投稿包从 CLOSED 改成仍开放 —— 现场仍 BLOCKED、其余 P0 结构全对也必须拒绝",
+  { "visual/assets/governance/review-3825-readiness-matrix.json": jsonMutated(
+      "visual/assets/governance/review-3825-readiness-matrix.json", (d) => {
+        d.package_result = "OPEN_PARTICIPANT_REPAIR";
+      }) }, ["G10"]);
+
+negInput("正式评审资格事实把一项改成已观察到拒绝条件 —— 命中清单与投稿闭合状态矛盾时必须拒绝",
+  { "visual/assets/governance/review-3825-readiness-matrix.json": jsonMutated(
+      "visual/assets/governance/review-3825-readiness-matrix.json", (d) => {
+        d.eligibility_evidence[0].rejection_condition_observed = true;
+      }) }, ["G10"]);
+
 negative("A0 首页内嵌图的预期顺序调换 —— 可搜索页脚全为 v2.0 也必须被像素绑定拦住", () => {
   const script = scriptMutated(VERSION_AUDITOR, (text) => text.replace(
     'figures: ["assets/figures/site-overview.png", "assets/figures/key-areas.png"]',

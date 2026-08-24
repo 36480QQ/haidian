@@ -1849,6 +1849,25 @@
     "G13_REVIEW_VISUAL_BUDGET",
     "G14_HERO_IMAGE_NOT_CROPPED"
   ],
+  "formal_review_readiness_boundary": {
+    "source": "visual/assets/governance/review-3825-readiness-matrix.json",
+    "assessment_owner": "participant_self_audit",
+    "assessment_scope_zh": "仅判断当前概念投稿包是否已完成参与者可控制的材料修复并可交给正式评委评分；不判断官方接收、获奖、规划审定、采购、现场许可或公众绩效。",
+    "assessment_scope_en": "Determines only whether participant-controlled repairs to the current concept-submission package are closed for handover to formal jurors; it does not determine official intake, award status, planning approval, procurement, site permission or public performance.",
+    "package_result": "CLOSED_FOR_FORMAL_REVIEW",
+    "participant_controlled_open_repair_count": 0,
+    "eligibility_evidence_check_count": 6,
+    "eligibility_rejection_condition_observed_count": 0,
+    "latest_review_score_100": 96,
+    "latest_review_local_gate_pass_count": 4,
+    "latest_review_public_interest_inclusion_score_5": 5,
+    "latest_review_implementation_feasibility_score_5": 4,
+    "human_jury_procedure": "REVIEW_PROCEDURE_NOT_PARTICIPANT_REPAIR",
+    "official_geometry_result": "WAITING_ORGANIZER_INPUT",
+    "field_pilot_result": "BLOCKED_EXTERNAL_PRE_PILOT",
+    "public_performance_claim_result": "BLOCKED_UNTIL_24_REAL_TASKS",
+    "boundary_rule_zh": "投稿包闭合不等于现场获准。评委完整翻阅与双语实质比较属于正式评分程序；正式几何属于组织方输入；真实主体、授权、保险、报价、预算、签字与 24 场任务属于现场启动或绩效发布前置条件。后三类不得被伪造为当前投稿证据，也不得反向改写成当前投稿缺件。"
+  },
   "gate_scope_note_zh": "requirements[].gate_ids 只登记「该闸门失效会使这一条的证据失效」的闸门；对全部 23 条同样成立、无法按条目区分的包级闸门登记在 package_level_gates。闸门定义与判定规则见 visual/assets/governance/package-integrity-gates.json。",
   "gate_scope_note_en": "requirements[].gate_ids lists only the gates whose failure would invalidate that row's evidence; gates that hold identically for all 23 rows are recorded in package_level_gates. Definitions and decision rules live in visual/assets/governance/package-integrity-gates.json.",
   "cross_reference_derivation_zh": "本表把评委主稿、英文对照稿与结构化证据分成机械推导和实质关联两层。\n\n**机械推导。** `standard_ids` 的下界为：本条 `report_sections` 与 `standard_matrix.json` 各标准 `proposal_sections` 的交集。冠军版把旧版细碎章节归并为官方要求的 13 个主章节后，已重新跑完整交集并补齐所有引用；当前声明总数 130 ＝规则导出 120＋定义性挂接 5＋实质相关性挂接 5。10 条标准均至少被一条要求引用。中英 `report_sections` 按官方 13 个必备章节逐项映射，正文主章节次序完全一致，不依赖机器翻译。\n\n**实质关联。** `geometry_feature_ids` 与 `scenario_ids` 登记要求实际涉及的空间对象和场景，不等同于正文标记的机械抽取；每个几何 ID 都能在声明图层的 `properties.id` 中解析，十二个场景与 `geometry/public_space.geojson` 的场景节点一一对应。`title_en` 为本包自译，组织方仅发布中文标题。",
@@ -2002,10 +2021,10 @@
     },
     {
       "expectation_id": "P0_IMPLEMENTATION_AND_PUBLIC_VALUE",
-      "assertion_zh": "首个 SCN-05 P0 已从概念图深化为可操作离线服务原型、90 天交付合同和逐场景公共利益硬门槛：8 道进入门、5 个阶段、10 项 RACI、12 项构件、8 项预注册验收、六类任务书群体与 12/12 场景公共价值门同时完整；真实授权、角色、报价、预算、专业签认与参与者观察仍如实为未开始/空值/0。",
-      "evidence_in_package": "visual/index.html#p0-prototype；visual/assets/governance/p0-delivery-contract.json；visual/assets/governance/public-benefit-gate.json；visual/assets/governance/p0-readiness-audit.js",
+      "assertion_zh": "首个 SCN-05 P0 已从概念图深化为可操作离线服务原型、90 天交付合同和逐场景公共利益硬门槛：8 道进入门、5 个阶段、10 项 RACI、12 项构件、8 项预注册验收、六类任务书群体与 12/12 场景公共价值门同时完整；另把六项资格事实核对、七项官方后续动作、投稿闭合与现场阻断分栏记录；真实授权、角色、报价、预算、专业签认与参与者观察仍如实为未开始/空值/0。",
+      "evidence_in_package": "visual/index.html#p0-prototype；visual/assets/governance/p0-delivery-contract.json；visual/assets/governance/public-benefit-gate.json；visual/assets/governance/review-3825-readiness-matrix.json；visual/assets/governance/p0-readiness-audit.js",
       "covered_by_self_check_id": null,
-      "independent_verification_zh": "`node visual/assets/governance/p0-readiness-audit.js --json` 输出 ok=true、8/8 门、5/5 阶段、10/10 RACI、12/12 构件、8/8 验收、6/6 群体、12/12 场景公共门和原型 14/14，同时 real_participant_observations=0；删一类群体、一个场景门、一条无 AI 路线、一个关闭控件或把未开始改成已完成都会退出 1。"
+      "independent_verification_zh": "`node visual/assets/governance/p0-readiness-audit.js --json` 输出 ok=true、8/8 门、5/5 阶段、10/10 RACI、12/12 构件、8/8 验收、6/6 群体、12/12 场景公共门、资格证据 6/6、评审动作 7/7 和原型 14/14，同时 real_participant_observations=0；删一类群体、一个场景门、一条无 AI 路线、一个关闭控件、把未开始改成已完成、把投稿 CLOSED 改成开放或把资格事实改成命中都会退出 1。"
     },
     {
       "expectation_id": "CLAIM_AUDIT",
@@ -2016,10 +2035,17 @@
     },
     {
       "expectation_id": "AUDITOR_SELFTEST",
-      "assertion_zh": "声明审计器、版本审计器、用地纹理审计器、公共服务等价审计器、P0 就绪审计器与协议重跑器共经过 50 例回归测试：2 例正向锁定完整规模与 ID 序列，48 例阴性逐一注入已知缺陷并要求对应检查退出 1。最新两例分别删除“拒绝算法／拒绝数据”需求夹具和六类群体中的访客，证明其余结构仍完整时，需求覆盖或公共群体覆盖缩小也会被拒绝。所有扰动只写系统临时目录，不改投稿包。",
+      "assertion_zh": "声明审计器、版本审计器、用地纹理审计器、公共服务等价审计器、P0 就绪审计器与协议重跑器共经过 52 例回归测试：2 例正向锁定完整规模与 ID 序列，50 例阴性逐一注入已知缺陷并要求对应检查退出 1。最新四例分别删除“拒绝算法／拒绝数据”需求夹具、删除六类群体中的访客、把投稿 CLOSED 改成开放、把一项资格事实改成已命中，证明需求覆盖、公共群体和评审边界任何一项漂移都会被拒绝。所有扰动只写系统临时目录，不改投稿包。",
       "evidence_in_package": "visual/assets/governance/audit-selftest.js",
       "covered_by_self_check_id": null,
-      "independent_verification_zh": "`node visual/assets/governance/audit-selftest.js` 输出「50/50 例通过（2 正向 ＋ 48 阴性）」且退出码 0；任何一例未通过即退出 1 并打印该例期望与实得。缺陷注入一律写进系统临时目录，**包内文件不被改动**，跑完即删。**该脚本同样不在 CI 或 preflight 中被调用**，须手动执行；已就此向上游提 Issue #3571 建议 participant_preflight.py 支持运行本节声明的自检命令。"
+      "independent_verification_zh": "`node visual/assets/governance/audit-selftest.js` 输出「52/52 例通过（2 正向 ＋ 50 阴性）」且退出码 0；任何一例未通过即退出 1 并打印该例期望与实得。缺陷注入一律写进系统临时目录，**包内文件不被改动**，跑完即删。**该脚本同样不在 CI 或 preflight 中被调用**，须手动执行；已就此向上游提 Issue #3571 建议 participant_preflight.py 支持运行本节声明的自检命令。"
+    },
+    {
+      "expectation_id": "FORMAL_REVIEW_SCOPE_SEPARATION",
+      "assertion_zh": "当前投稿材料闭合、正式评委程序、组织方数据、现场启动与公众绩效发布五种状态被分栏记录：参与者可控制的当前开放修复为 0；六项资格事实核对 0 项观察到拒绝条件；真实现场和绩效主张继续保持 BLOCKED，不以虚构授权换取可实施性分数。",
+      "evidence_in_package": "compliance_matrix.json#formal_review_readiness_boundary；visual/assets/governance/review-3825-readiness-matrix.json；visual/assets/governance/p0-delivery-contract.json#formal_review_boundary",
+      "covered_by_self_check_id": null,
+      "independent_verification_zh": "`node visual/assets/governance/p0-readiness-audit.js --json` 须输出 eligibility_evidence_checks_valid=6、review_items_classified_valid=7、ok=true；把 package_result 改成非 CLOSED、把任一资格事实改成 observed、或把现场 BLOCKED 改成已启动都会退出 1。"
     }
   ],
   "self_check_expectations_note_zh": "三个矩阵的 self_check_ids 引用的就是本表的 expectation_id。此前这些标签只在矩阵里出现、包内没有定义，而本包的 G01 闸门声称「三个矩阵里的每一条引用都必须能在包内解析到实体」——该自陈对其中 16 个标签（81 处引用）并不成立。本表把它们逐条定义在矩阵自身，因此引用与定义同文件可解析。covered_by_self_check_id 只取 self_check.json 中真实存在的四个 check_id。",

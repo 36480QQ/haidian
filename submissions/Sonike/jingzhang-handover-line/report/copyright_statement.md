@@ -13,7 +13,7 @@
 | 图纸拉丁文字 | Helvetica 家族与 ZapfDingbats | PDF 内置基础字体，按名引用，不嵌入不再分发 | `pdffonts drawings/a3-booklet.pdf` → `Type 1 / WinAnsi / emb=no` |
 | 图纸中文文字 | Noto Serif SC Light，子集嵌入四套 PDF | SIL Open Font License 1.1（读自字体 name 表 nameID 13/14），OFL 明确允许嵌入子集并随文档再分发 | 同上 → `CID TrueType / UniGB-UCS2-H / emb=yes`，字体名为 `<子集前缀>+NotoSerifSC` |
 | 全部栅格产物文字（24 张 PNG 与 2 张 JPEG） | OFL-1.1 的 Noto Sans CJK SC（Medium／Light）与 Noto Sans | OFL 明文允许使用与再分发；字体文件在仓库外工具链目录，仅渲染阶段读取字形 | `find assets -name '*.tt[cf]' -o -name '*.otf'` → 无结果 |
-| 四份离线 HTML | Noto Sans CJK SC Medium 的 266,044 字节 WOFF2 字符子集，嵌入包内 CSS data URI | SIL Open Font License 1.1；官方完整正文与版权通知在 `visual/assets/governance/noto-cjk-subset.rights.json`，作者授权明确排除该第三方负载 | `node visual/assets/governance/webfont-audit.js` → 解码实际 WOFF2，并核对哈希、覆盖、许可、来源与四页本地 CSS 链接 |
+| 四份离线 HTML | Noto Sans CJK SC Medium 的 268,872 字节 WOFF2 字符子集，嵌入包内 CSS data URI | SIL Open Font License 1.1；官方完整正文与版权通知在 `visual/assets/governance/noto-cjk-subset.rights.json`，作者授权明确排除该第三方负载 | `node visual/assets/governance/webfont-audit.js` → 解码实际 WOFF2，并核对哈希、覆盖、许可、来源与四页本地 CSS 链接 |
 | 工具链 | Python 3.12.13(PSF)、reportlab 4.4.3(BSD)、Pillow 12.3.0(MIT-CMU)、shapely 2.1.2(BSD-3)、pyproj 3.7.2(MIT)、fontTools 4.60.1(MIT)、qpdf 12.3.2(Apache-2.0)、PyMuPDF 1.27.2.3(AGPL-3.0 或 Artifex 商业)、Ghostscript 10.07.0(AGPL-3.0) | 版本与许可逐个读取依赖自身分发元数据或 `--version` 自述 | `importlib.metadata.version()` / `metadata()['License-Expression']`、`gs --version` |
 
 **v1.11 关闭了此前登记在案的中文字体阅读依赖。** v1.10 及更早版本的 CJK 字形 `emb=no`，需要阅读器自带中文字体包；本版把四套 PDF 的中文字体程序替换为子集嵌入的 Noto Serif SC（OFL-1.1，允许嵌入与再分发），只改字体程序、不动内容流，断行与字位逐项不变，内嵌图件经提取比对逐像素相同，PDF 内的字体名对象同步改为 `NotoSerifSC` 以免自述与实际不符。拉丁文字仍不嵌入：基础十四款字体由 PDF 规范要求阅读器自备，不构成显示风险，若为凑 `emb=yes` 而嵌入仿制实现并继续挂 Helvetica 之名反而是更差的溯源。
@@ -37,6 +37,12 @@ v1.6 引用的三部法律法规与政策文件（《生成式人工智能服务
 场地与重点区域采用仓库 `provisional_boundaries.geojson`，明确保留 `official_boundary=false`、`provisional_constraint` 和低置信度；它们不构成官方红线、法定规划、权属或工程依据。官方几何和专业条件可用后，全部派生图层、指标、图件与图纸应重新生成。
 
 本包授权标识为 `COMMUNITY-DISPLAY-ONLY`，并由权利人另行授予「符合 CC BY-NC 4.0 即已获许可」的等效使用（同文见 `proposal.md` 与本文件上节，`assets/media/` 内各媒体的说明文件沿用同一句）。任何第三方进一步使用应遵守上游仓库规则、逐项核验来源权利，并不得把概念建议表述为政府批准、专业审定或实施承诺。
+
+## 当前评审包与外部阻断 / Package Review State and External Blockers
+
+PR #3825 最新 96/100 评审的修复归类保存在 `visual/assets/governance/review-3825-readiness-matrix.json`。当前参与者可控制的投稿修复为 0，包自审结果为 `CLOSED_FOR_FORMAL_REVIEW`；这只表示材料可交给正式评委，不表示官方接收、获奖、发布、审批、采购或政府背书。真实 SCN-05 现场继续为 `BLOCKED_EXTERNAL_PRE_PILOT`，须由真实有权主体、保险、预算、报价、签字和专业现场证据关闭八门；任何公众可用性、包容性或绩效主张继续为 `BLOCKED_UNTIL_24_REAL_TASKS`。这些外部条件未被冒充为已完成合作或权利证据。
+
+The PR #3825 repair classification is persisted in `visual/assets/governance/review-3825-readiness-matrix.json`. Participant-controlled submission repairs stand at zero and the participant package assessment is `CLOSED_FOR_FORMAL_REVIEW`; this means only that the material may be handed to formal jurors, not official intake, award, publication, approval, procurement or government endorsement. The real SCN-05 field pilot remains `BLOCKED_EXTERNAL_PRE_PILOT` until authorised actors, insurance, budget, quotations, signatures and professional field evidence close all eight gates. Any public usability, inclusion or performance claim remains `BLOCKED_UNTIL_24_REAL_TASKS`. None of those external conditions is represented as a completed partnership or rights proof.
 
 ---
 

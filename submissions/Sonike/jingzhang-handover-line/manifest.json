@@ -75,7 +75,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ded74b8869b78ffe1f087aa9e5f021633202e016dff275c140443404f786a3c5"
+      "sha256": "a0721083db9c99a800b43a5ed1a52fa6ae1beec82dbf3336f72d78031efc5ed1"
     },
     {
       "path": "agent.json",
@@ -105,19 +105,19 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "e269e030d858def78fd3fe7bc5633ce17e67e3838f8024bed3e552d09fb66343"
+      "sha256": "65eb9a0521d0cbac51b02be4455d859f5845db1c427225bb4e74b5774879b9a8"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ef398cb812c6f5b556fed25fa8a3775c374845aabf2db3129bfa1eb81027e769"
+      "sha256": "37a568414d6f2f9ae5e58c271b5cdb22291527f8e435098cddf7b4f675fb4285"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "ae0ea99ba54c4e97028adc5d81c7f40d84a4107a056866a810d0554ae8067e29"
+      "sha256": "a3c3e507584aeb87ce908c96aaa2c05ccdd93495ce9677a8be549bd37b94978e"
     },
     {
       "path": "standard_matrix.json",
@@ -136,7 +136,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d52154056b2c272c3f78769712e9f9cb4054bcfe8f460e3f085e133e14eec4cf"
+      "sha256": "63e0cb2aebd458756bc8fb864b4f0e4885ca4370e21fdc5865d50493c7e0c915"
     },
     {
       "path": "report/narrative.md",
@@ -148,7 +148,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "19dfcb9fa98408e42c8bde1405fed12e3f536544de329fa38fc0be0fa69635d5"
+      "sha256": "2f57cf47dcb6527873ff250885a3ec14258eaf27ca496b5f57499142a544a198"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -173,7 +173,7 @@
       "title_en": "Jing-Zhang Handover Line offline review entry with operable SCN-05 P0",
       "description_zh": "正式中文视觉入口内嵌纯离线 P0 原型：可关闭智能层、拒绝数据与算法、比较共享同一核心结果的智能／无 AI 路线、切换大字与高对比、打印纸本并生成投诉／停用／删除演示回执；真实观察、真实通过与场地授权均保持 0。",
       "description_en": "The official Chinese visual entry embeds an offline P0 prototype: reviewers can switch off the smart layer, refuse data and algorithms, compare smart and no-AI routes sharing one core outcome, enable large text or high contrast, print a paper route and issue a complaint/stop/delete demo receipt. Real observations, observed passes and site authorisation remain zero.",
-      "sha256": "1eaa13fcab8ffcfdbf519a0b89e3c7563415a9b0bd70d69f14bf16f2bae4d424"
+      "sha256": "51d3039881ad908eb791e7a41c39d055fff682567a1a5f99d712619c4ad624d8"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -270,7 +270,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "376c1d3702b087cd7b4cb2bf0583436e042bbad7de432e3ff0f6642da3904cc0"
+      "sha256": "88d06f929a57f5d3dd1fcc28669ac3ac3e84986f7d9880ba3879f960b88ee292"
     },
     {
       "path": "report/proposal.en.html",
@@ -278,7 +278,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f7f168647858b391159a53ebd94edab65ffe7f45970888dd8278f10c16a47111"
+      "sha256": "87315a14b799e92faf6972406a15b64fb29a1a360c785b605d887efec9c6cc3a"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -302,7 +302,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "9ab8c8c31ce112c8f16706566c93c9b4da526586b9ed8b5a380249fc9baeec7c"
+      "sha256": "c6b54371e0c4cd6aaff072b85566cb6e825465498af89afaa0cbc5f636f6196f"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -409,7 +409,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "d1c64c6d568288b633c8d30ed8d61fa7c80ab741723acdde36aafb1a39bd9096"
+      "sha256": "35bb72306dd5ac3da7f72d941d6743d448c85f16f1f13b413c9ead684c4f87a1"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -493,7 +493,7 @@
       "path": "visual/assets/governance/claims-audit.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "1190471d67d25db2071288eb12a37bb52a256809c6b8f683454a1ec9539ec7fb",
+      "sha256": "be0c34849d9ad50b09c6a3dd766d44001e0402f944c96e7d0beb18b50433f58e",
       "title_zh": "正文数值声明审计器",
       "title_en": "Prose claim auditor",
       "description_zh": "只读、离线、零网络依赖的 69 项声明审计：复算指标、几何、二十单元、断面、布局对照、矩阵引用、来源深度、许可一致性、PDF 文字层、四份 HTML 包内 CJK 字体、全载体 v2.0 可见版本、七类用地在六个载体中的非颜色纹理冗余、十二场景无 AI 等价路线与八类无障碍需求夹具，以及 P0 的 8 门／5 节点／10 RACI／12 构件／8 判据／6 群体／12 公共利益闸／14 项原型检查。全部一致退出 0，任一回归退出 1。",
@@ -503,11 +503,11 @@
       "path": "visual/assets/governance/audit-selftest.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "08b3e80885ab8ef896cd0026f60a3cadc007e322dbef9bac14af937c342ee4de",
+      "sha256": "4244daa6fd8acba88821a15eff35500e0a92323cd9406edafda98d0996770fcd",
       "title_zh": "自检脚本的回归测试",
       "title_en": "Regression test for the self-check scripts",
-      "description_zh": "对六条审计链做 50 例回归测试：2 例正向锁定 69 项声明、A0 内嵌图 4/4 像素一致、12 账、96 规则、48 断言、12/12 无 AI 路线、8/8 无障碍需求夹具和 P0 准备度审计；48 例阴性逐一注入已知缺陷并要求对应检查失败，最新一例删除公共利益合同中的访客群体。注入只写系统临时目录，不改投稿包。",
-      "description_en": "A 50-case regression test across six audit chains: two positive cases lock 69 claim checks, 4/4 pixel-identical embedded A0 figures, 12 ledgers, 96 rules, 48 assertions, 12/12 no-AI routes, 8/8 accessibility fixtures and the P0 readiness audit; 48 negative cases inject known defects one by one, with the latest removing the visitor group from the public-benefit contract. Mutations stay in the system temporary directory."
+      "description_zh": "对六条审计链做 52 例回归测试：2 例正向锁定 69 项声明、A0 内嵌图 4/4 像素一致、12 账、96 规则、48 断言、12/12 无 AI 路线、8/8 无障碍需求夹具和 P0 准备度审计；50 例阴性逐一注入已知缺陷并要求对应检查失败，最新两例分别把投稿 CLOSED 改成开放、把一项资格事实改成已命中。注入只写系统临时目录，不改投稿包。",
+      "description_en": "A 52-case regression test across six audit chains: two positive cases lock 69 claim checks, 4/4 pixel-identical embedded A0 figures, 12 ledgers, 96 rules, 48 assertions, 12/12 no-AI routes, 8/8 accessibility fixtures and the P0 readiness audit; 50 negative cases inject known defects one by one, with the latest two reopening a CLOSED package and flipping one eligibility fact to observed. Mutations stay in the system temporary directory."
     },
     {
       "path": "visual/assets/governance/p0-readiness-audit.js",
@@ -515,9 +515,9 @@
       "required": false,
       "title_zh": "P0 实施准备度与公共利益硬门审计器",
       "title_en": "P0 implementation-readiness and public-benefit hard-gate auditor",
-      "description_zh": "只读、离线、零第三方依赖地交叉核验交付合同、公共利益合同、服务原型、指标与中英正文；要求 8 门、5 节点、10 项 RACI、12 项构件、8 项判据、6 类群体、12 个场景公共利益闸、8 条跨场景保护与原型 14/14 项结构检查同时闭合，并拒绝把空报价、未指派角色、零观察或未授权状态伪装为完成。",
-      "description_en": "A read-only offline auditor with no third-party dependency that cross-checks the delivery contract, public-benefit contract, operable prototype, metrics and bilingual proposals. It requires 8 gates, 5 stages, 10 RACI packages, 12 components, 8 criteria, 6 groups, 12 scenario public-value gates, 8 cross-cutting protections and 14/14 prototype checks, while rejecting any attempt to turn blank quotes, unassigned roles, zero observations or absent authorisation into completion.",
-      "sha256": "d55a85bd83e65e254590eb1c4a7140cbc2056f10fd77c6ceadf03db5d4578e37"
+      "description_zh": "只读、离线、零第三方依赖地交叉核验交付合同、公共利益合同、评审修复矩阵、服务原型、指标与中英正文；要求 8 门、5 节点、10 项 RACI、12 项构件、8 项判据、6 类群体、12 个场景公共利益闸、8 条跨场景保护、6 项资格事实、7 项官方后续动作与原型 14/14 项结构检查同时闭合，并拒绝把空报价、未指派角色、零观察或未授权状态伪装为完成，也拒绝把投稿闭合误写成现场获准。",
+      "description_en": "A read-only offline auditor with no third-party dependency that cross-checks the delivery contract, public-benefit contract, review-repair matrix, operable prototype, metrics and bilingual proposals. It requires 8 gates, 5 stages, 10 RACI packages, 12 components, 8 criteria, 6 groups, 12 scenario public-value gates, 8 cross-cutting protections, 6 eligibility facts, 7 official follow-up items and 14/14 prototype checks, while rejecting fabricated completion and any conflation of package closure with field permission.",
+      "sha256": "945ef6e1b50634a17d26778a3239910d3a9fce818145604ceb5d48e6b6c661b1"
     },
     {
       "path": "visual/assets/governance/apply-land-use-patterns.js",
@@ -565,9 +565,19 @@
       "required": false,
       "title_zh": "SCN-05 P0 交付合同",
       "title_en": "SCN-05 P0 delivery contract",
-      "description_zh": "把首个试点限定为 SCN-05，并预注册 8 道准入门、5 个 90 天证据节点、10 项 RACI 工作包、12 条带数量和退出处置的构件清单、3 个空白报价槽、8 项公平与服务验收判据及至少 24 场真实共测计划。真实授权、角色、报价、预算、保险、专业签认与观察均保持未开始、空值或 0。",
-      "description_en": "Limits the first pilot to SCN-05 and pre-registers 8 entry gates, 5 evidence-driven stages over 90 days, 10 RACI packages, 12 quantified components with exit treatment, 3 blank quote slots, 8 equity/service criteria and a minimum 24-session real co-test plan. Real authorisation, roles, quotes, budgets, insurance, professional sign-offs and observations remain not started, null or zero.",
-      "sha256": "1e4aa97c5ba8d35e1e6414852769ea853dec5fec3ca9bb017141d28d56936fe5"
+      "description_zh": "把首个试点限定为 SCN-05，并预注册 8 道准入门、5 个 90 天证据节点、10 项 RACI 工作包、12 条带数量和退出处置的构件清单、3 个空白报价槽、8 项公平与服务验收判据及至少 24 场真实共测计划。投稿材料自审可闭合为 CLOSED_FOR_FORMAL_REVIEW；真实现场仍为 BLOCKED_EXTERNAL_PRE_PILOT，授权、角色、报价、预算、保险、专业签认与观察均保持未开始、空值或 0。",
+      "description_en": "Limits the first pilot to SCN-05 and pre-registers 8 entry gates, 5 evidence-driven stages over 90 days, 10 RACI packages, 12 quantified components with exit treatment, 3 blank quote slots, 8 equity/service criteria and a minimum 24-session real co-test plan. Submission materials may close as CLOSED_FOR_FORMAL_REVIEW while the real field pilot stays BLOCKED_EXTERNAL_PRE_PILOT; authorisation, roles, quotes, budgets, insurance, sign-offs and observations remain not started, null or zero.",
+      "sha256": "0d4cf1bb8e20c610625a4d93a0a060f850da93aaae33675fec0d5855925856a9"
+    },
+    {
+      "path": "visual/assets/governance/review-3825-readiness-matrix.json",
+      "role": "review_repair_matrix",
+      "required": false,
+      "title_zh": "PR #3825 正式评审准备度与修复归类矩阵",
+      "title_en": "PR #3825 formal-review readiness and repair-classification matrix",
+      "description_zh": "以最新官方 96/100 评审为基线，逐项归类七条后续动作，并用六项事实证据核对官方强制拒绝类型。当前参与者可控制的开放修复为 0，投稿包为 CLOSED_FOR_FORMAL_REVIEW；正式评委程序、组织方数据、现场试点与公众绩效发布分别保留自己的责任与阻断状态，不把未来条件伪造成已完成证据。",
+      "description_en": "Uses the latest official 96/100 review as its baseline, classifies all seven follow-up items, and fact-checks the six official mandatory-rejection categories. Participant-controlled open repairs are zero and the package is CLOSED_FOR_FORMAL_REVIEW; jury procedure, organiser data, field pilot and public-performance publication retain separate owners and blockers, without fabricating future conditions as completed evidence.",
+      "sha256": "0bbb0446486646132832c596ae4d5b3a6d608d328e20014ba4feffa373e22d12"
     },
     {
       "path": "visual/assets/governance/public-benefit-gate.json",
@@ -818,19 +828,19 @@
       "path": "visual/assets/governance/noto-cjk-subset.css",
       "role": "asset",
       "required": true,
-      "sha256": "9b70b6f801d4501a14e02594cad59f4cd7edd634b54410f0cf83ebbdc3e52960"
+      "sha256": "47cb43fc8cabd373fe3fd555516ad71dcf94f9c71d988ddc24e82744b35e056e"
     },
     {
       "path": "visual/assets/governance/noto-cjk-subset.coverage.json",
       "role": "asset",
       "required": true,
-      "sha256": "9c2e392368389ab27c2a57043272ff39072055c53235eb5c679d696b930f48ed"
+      "sha256": "f0a0d64f9a00f01b27cd96fab97ff2d12083309d078bd572bfee46f4069352e6"
     },
     {
       "path": "visual/assets/governance/noto-cjk-subset.rights.json",
       "role": "asset",
       "required": true,
-      "sha256": "c7f1e43f09931d871414efda9e095767d72f2ebe374db6b988f225301b097a2c"
+      "sha256": "c1cb05ee2009d9aee1891ab729119b4d14e1faca5b59a7e69abda661d9ad6d4c"
     },
     {
       "path": "visual/assets/public-handover-table-3d.json",

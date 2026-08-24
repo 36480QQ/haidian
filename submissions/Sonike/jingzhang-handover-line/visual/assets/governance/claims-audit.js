@@ -554,10 +554,10 @@ function runNestedAudit(filename) {
   const result = runNestedAudit("p0-readiness-audit.js");
   const problems = result.parsed && Array.isArray(result.parsed.errors)
     ? result.parsed.errors : [result.stderr || "无法解析 p0-readiness-audit.js 输出"];
-  add("G10", "SCN-05 单场景 P0 同时具备八门、五阶段、十项 RACI、十二项构件、八项预注册验收、六类公共群体、十二场景公共利益硬门槛与可操作离线原型；真实观察仍为 0",
+  add("G10", "SCN-05 单场景 P0 同时具备八门、五阶段、十项 RACI、十二项构件、八项预注册验收、六类公共群体、十二场景公共利益硬门槛与可操作离线原型；并把六项资格事实核对、七项官方后续动作、投稿闭合和现场阻断分栏锁定；真实观察仍为 0",
       result.status === 0 && result.parsed && result.parsed.ok === true,
       problems.length ? problems.slice(0, 4).join("；")
-        : `${result.parsed.entry_gates_valid} 门／${result.parsed.delivery_stages_valid} 阶段／${result.parsed.raci_work_packages_valid} RACI／${result.parsed.component_line_items_valid} 构件／${result.parsed.acceptance_criteria_valid} 验收／${result.parsed.public_benefit_groups_valid} 群体／${result.parsed.scenario_public_value_gates_valid} 场景公共门／原型 ${result.parsed.prototype_checks_valid}/${result.parsed.prototype_checks_expected}／真实观察 ${result.parsed.real_participant_observations}`);
+        : `${result.parsed.entry_gates_valid} 门／${result.parsed.delivery_stages_valid} 阶段／${result.parsed.raci_work_packages_valid} RACI／${result.parsed.component_line_items_valid} 构件／${result.parsed.acceptance_criteria_valid} 验收／${result.parsed.public_benefit_groups_valid} 群体／${result.parsed.scenario_public_value_gates_valid} 场景公共门／资格证据 ${result.parsed.eligibility_evidence_checks_valid}／评审归类 ${result.parsed.review_items_classified_valid}／原型 ${result.parsed.prototype_checks_valid}/${result.parsed.prototype_checks_expected}／真实观察 ${result.parsed.real_participant_observations}`);
 }
 
 /* H. sources.json 的字段深度——CLAUDE.md 记为与分数相关性最高的特征，缺一栏就是缺证据 */

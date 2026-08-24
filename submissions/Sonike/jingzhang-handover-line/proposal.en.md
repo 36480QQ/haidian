@@ -254,6 +254,20 @@ This is a **reference workflow ready for signature and evidence entry after auth
 
 The eight criteria do not hide inequity inside satisfaction averages. Core outcome and essential safety information must align 100%; queue difference and price premium after refusal must both be zero; the no-AI success rate may not trail the smart route by more than 10 percentage points; the median completion-time ratio must be at most 1.5 overall and 2.0 for every required group; every complaint/stop/delete request must receive a receipt; and all eight essential accessibility tasks require both real tasks and professional review. These are **pre-registered rules, not observed results**. Every `observed_value` remains `null`, and field tasks remain 0/12 [assumption:A-OPERATIONS-001].
 
+#### Formal-review Handover | Package Closure Is Not Field Permission
+
+The latest official review passed all four deterministic, spatial, visual and professional-evidence gates and scored the package **96/100**, including **5/5** for public interest and inclusion and **4/5** for implementation feasibility. Its seven “next actions” mix full-jury review procedure, organiser-owned official data, future field-entry conditions and a future gate for public-performance claims. `visual/assets/governance/review-3825-readiness-matrix.json` classifies every item so that future implementation responsibilities are not mistaken for a current package omission—and so that actors, authorisation, quotations, insurance, budget, signatures or user data are never fabricated merely to make the proposal look implementable.
+
+| Decision layer | Current state | Who closes it and when | May this submission fill it in? |
+| --- | --- | --- | --- |
+| Concept-submission package | `CLOSED_FOR_FORMAL_REVIEW`; **zero** open participant-controlled repairs | This revision hands narrative, matrices, prototype, rights chain and four passed gates to formal jurors | Closed as a participant self-audit only; not official intake or an award |
+| Human-jury procedure | `REVIEW_PROCEDURE_NOT_PARTICIPANT_REPAIR` | During formal scoring, jurors read all four PDFs and compare bilingual claims and figure positions; a discovered difference becomes a new repair | Pending jury reading cannot be represented as a participant omission |
+| Official boundary and controls | `WAITING_ORGANIZER_INPUT` | After organiser supply, professionals rerun the fixed EPSG:4548 formulas across every affected carrier | No guessing; the current package retains prominent provisional warnings |
+| Real SCN-05 field pilot | `BLOCKED_EXTERNAL_PRE_PILOT` | Authorised actors and professionals close all eight gates with real evidence | No; until then the field clock does not start and the smart layer stays off |
+| Inclusion and field-performance claims | `BLOCKED_UNTIL_24_REAL_TASKS` | After authorisation, real participants and accessibility professionals complete at least 24 tasks with failure–repair–retest | The package may claim 8/8 design fixtures and offline function only; real observations remain zero |
+
+The same matrix performs an **evidence check** against the six official mandatory-rejection fact patterns; it does not decide on behalf of jurors. Personal or non-public data, fabricated official endorsement, unlawful/discriminatory/malicious content, material irrelevance, missing agent.1–agent.6 coverage, and presentation as a settled government decision are each not observed in the package: **0/6 evidence triggers**. The package still states that every output is an open co-creation proposal, does not replace formal planning and does not constitute a government determination. `CLOSED` here likewise does not mean acceptance, approval, procurement, certification, implementation commitment or government endorsement.
+
 ### Phasing and Operations | Open Gates with Evidence, Not Calendar Promises
 
 The three phases are not a government schedule. They are reversible condition gates [metric:phase_count] [data:geometry/phasing.geojson#PHASE-001]:

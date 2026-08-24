@@ -39,6 +39,7 @@ const exactSet = (actual, expected) =>
 
 const DELIVERY_PATH = "visual/assets/governance/p0-delivery-contract.json";
 const PUBLIC_PATH = "visual/assets/governance/public-benefit-gate.json";
+const REVIEW_PATH = "visual/assets/governance/review-3825-readiness-matrix.json";
 const PROTOTYPE_PATH = "visual/index.html";
 const PROTOTYPE_LINK = "visual/index.html#p0-prototype";
 const EXPECTED_SCENARIOS = Array.from({ length: 12 }, (_, index) => `SCN-${String(index + 1).padStart(2, "0")}`);
@@ -88,11 +89,24 @@ const EXPECTED_PROTECTIONS = [
   "child_older_and_disability_safety",
   "shade_rest_low_light_low_noise",
 ];
+const EXPECTED_ELIGIBILITY_CHECKS = [
+  "privacy_personal_or_nonpublic_data",
+  "fabricated_official_endorsement",
+  "unlawful_discriminatory_malicious",
+  "material_irrelevance",
+  "agent_taskbook_coverage",
+  "settled_government_decision",
+];
+const EXPECTED_REVIEW_ITEMS = [
+  "R96-01", "R96-02", "R96-03", "R96-04", "R96-05", "R96-06", "R96-07",
+];
 
 const delivery = readJSON(DELIVERY_PATH);
 const publicGate = readJSON(PUBLIC_PATH);
+const reviewMatrix = readJSON(REVIEW_PATH);
 const prototype = readText(PROTOTYPE_PATH);
 const metricsDoc = readJSON("metrics.json");
+const compliance = readJSON("compliance_matrix.json");
 const roleSpec = readJSON("visual/assets/governance/role-spec.json");
 const proposalZh = readText("proposal.md");
 const proposalEn = readText("proposal.en.md");
@@ -263,6 +277,89 @@ if (publicGate) {
   }
 }
 
+let validEligibilityChecks = 0;
+let validReviewItems = 0;
+if (reviewMatrix) {
+  if (reviewMatrix.package_result !== "CLOSED_FOR_FORMAL_REVIEW") {
+    errors.push("投稿包自评结果必须为 CLOSED_FOR_FORMAL_REVIEW");
+  }
+  if (reviewMatrix.participant_controlled_open_repair_count !== 0) {
+    errors.push("当前参与者可控制的开放修复项必须为 0");
+  }
+  if (reviewMatrix.field_pilot_result !== "BLOCKED_EXTERNAL_PRE_PILOT") {
+    errors.push("真实现场试点必须保持 BLOCKED_EXTERNAL_PRE_PILOT");
+  }
+  if (reviewMatrix.public_performance_claim_result !== "BLOCKED_UNTIL_24_REAL_TASKS") {
+    errors.push("公众绩效主张必须保持 BLOCKED_UNTIL_24_REAL_TASKS");
+  }
+  if (reviewMatrix.official_geometry_result !== "WAITING_ORGANIZER_INPUT") {
+    errors.push("正式几何必须保持 WAITING_ORGANIZER_INPUT");
+  }
+  const eligibility = Array.isArray(reviewMatrix.eligibility_evidence)
+    ? reviewMatrix.eligibility_evidence : [];
+  if (!exactSet(eligibility.map((item) => item.check_id), EXPECTED_ELIGIBILITY_CHECKS)) {
+    errors.push("正式评审资格六项事实核对不完整");
+  }
+  for (const item of eligibility) {
+    const local = [];
+    if (item.rejection_condition_observed !== false) local.push("拒绝条件未保持 false");
+    if (!Array.isArray(item.evidence_refs) || item.evidence_refs.length < 2) local.push("证据少于 2 项");
+    if (!String(item.finding_zh || "").trim() || !String(item.finding_en || "").trim()) local.push("双语事实结论缺失");
+    if (local.length) errors.push(`${item.check_id || "未知资格核对"}: ${local.join("；")}`);
+    else validEligibilityChecks += 1;
+  }
+  const issues = Array.isArray(reviewMatrix.issues) ? reviewMatrix.issues : [];
+  if (!exactSet(issues.map((item) => item.review_item_id), EXPECTED_REVIEW_ITEMS)) {
+    errors.push("96 分评审七项后续动作映射不完整");
+  }
+  for (const item of issues) {
+    const local = [];
+    if (item.participant_controlled_current_repair !== false) local.push("被误标为当前参与者修复");
+    if (!String(item.classification || "").trim() || !String(item.status || "").trim()) local.push("分类或状态缺失");
+    if (!Array.isArray(item.evidence_refs) || item.evidence_refs.length < 1) local.push("证据引用缺失");
+    if (String(item.status || "").startsWith("OPEN_PARTICIPANT")) local.push("仍有开放参与者修复");
+    if (local.length) errors.push(`${item.review_item_id || "未知评审项"}: ${local.join("；")}`);
+    else validReviewItems += 1;
+  }
+}
+
+const readiness = compliance && compliance.formal_review_readiness_boundary;
+if (!readiness) {
+  errors.push("compliance_matrix.json 缺 formal_review_readiness_boundary");
+} else {
+  if (readiness.source !== REVIEW_PATH) errors.push("正式评审边界未指向唯一修复矩阵");
+  if (readiness.assessment_owner !== "participant_self_audit") errors.push("正式评审边界必须声明为参与者自审");
+  if (readiness.package_result !== "CLOSED_FOR_FORMAL_REVIEW" ||
+      readiness.participant_controlled_open_repair_count !== 0) {
+    errors.push("合规矩阵未把当前投稿闭合与开放修复数锁定为 CLOSED / 0");
+  }
+  if (readiness.eligibility_rejection_condition_observed_count !== 0 ||
+      readiness.eligibility_evidence_check_count !== EXPECTED_ELIGIBILITY_CHECKS.length) {
+    errors.push("合规矩阵资格事实核对计数必须为 6 项／0 命中");
+  }
+  if (readiness.field_pilot_result !== "BLOCKED_EXTERNAL_PRE_PILOT" ||
+      readiness.public_performance_claim_result !== "BLOCKED_UNTIL_24_REAL_TASKS") {
+    errors.push("合规矩阵未保持现场与公众绩效主张双重阻断");
+  }
+}
+
+const deliveryBoundary = delivery && delivery.formal_review_boundary;
+if (!deliveryBoundary || deliveryBoundary.package_result !== "CLOSED_FOR_FORMAL_REVIEW" ||
+    deliveryBoundary.field_pilot_result !== "BLOCKED_EXTERNAL_PRE_PILOT" ||
+    deliveryBoundary.participant_controlled_open_repair_count !== 0) {
+  errors.push("P0 交付合同未分离投稿包闭合与现场试点阻断");
+}
+
+const readinessPhrases = [
+  ["proposal.md", proposalZh, "CLOSED_FOR_FORMAL_REVIEW", "BLOCKED_EXTERNAL_PRE_PILOT"],
+  ["proposal.en.md", proposalEn, "CLOSED_FOR_FORMAL_REVIEW", "BLOCKED_EXTERNAL_PRE_PILOT"],
+];
+for (const [name, text, packageStatus, fieldStatus] of readinessPhrases) {
+  if (!text.includes(packageStatus) || !text.includes(fieldStatus)) {
+    errors.push(`${name} 未明确分离投稿包闭合与现场阻断`);
+  }
+}
+
 let validPrototypeChecks = 0;
 const prototypeChecks = [
   ["离线证据标记", /data-evidence-state="synthetic-offline-prototype"/],
@@ -277,8 +374,10 @@ const prototypeChecks = [
   ["大字模式", /id="large-text"/],
   ["高对比模式", /id="high-contrast"/],
   ["中英核心信息切换", (text) => /id="language-toggle"/.test(text) &&
+    /id="p0-prototype"[^>]*lang="zh-CN"/.test(text) &&
     (text.match(/data-zh="[^"]+" data-en="[^"]+"/g) || []).length >= 18 &&
     /function p0English\(\)/.test(text) &&
+    /prototype\.lang\s*=\s*english\s*\?\s*'en'\s*:\s*'zh-CN'/.test(text) &&
     text.includes("Synthetic smart suggestion") && text.includes("Staffed and paper route")],
   ["打印纸本", /id="print-card"/],
   ["真实现场边界", /真实参与者观察[^0]*0/],
@@ -336,6 +435,8 @@ const result = {
   public_benefit_groups_valid: validGroups,
   scenario_public_value_gates_valid: validScenarioGates,
   cross_cutting_protections_valid: validProtections,
+  eligibility_evidence_checks_valid: validEligibilityChecks,
+  review_items_classified_valid: validReviewItems,
   prototype_checks_valid: validPrototypeChecks,
   prototype_checks_expected: prototypeChecks.length,
   real_participant_observations: delivery && delivery.current_evidence && delivery.current_evidence.real_participant_observations,
@@ -344,7 +445,7 @@ const result = {
 
 if (process.argv.includes("--json")) console.log(JSON.stringify(result, null, 2));
 else if (result.ok) {
-  console.log("PASS  SCN-05 单场景 P0：8 门／5 阶段／10 RACI／12 构件／8 验收；6 类公共群体／12 场景硬门槛；离线原型 14/14；真实观察 0");
+  console.log("PASS  SCN-05 单场景 P0：8 门／5 阶段／10 RACI／12 构件／8 验收；6 类公共群体／12 场景硬门槛；资格证据 6/6／评审归类 7/7；离线原型 14/14；真实观察 0");
 } else {
   console.error("FAIL  P0 可实施性与公共利益就绪包不完整");
   for (const error of errors) console.error(`- ${error}`);
