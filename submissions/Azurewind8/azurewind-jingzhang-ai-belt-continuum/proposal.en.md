@@ -1,6 +1,6 @@
 ---
 title: "Continuum: A Coordinated Urban Design for the Centennial Jing-Zhang AI Innovation Belt"
-author_github: "azurewind"
+author_github: "Azurewind8"
 language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"

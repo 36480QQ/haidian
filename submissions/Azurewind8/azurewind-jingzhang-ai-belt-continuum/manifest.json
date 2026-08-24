@@ -1,6 +1,6 @@
 {
   "schema_version": "0.2.0",
-  "package_id": "Azurewind8-jingzhang-ai-belt-continuum",
+  "package_id": "azurewind8-jingzhang-ai-belt-continuum",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
   "package_type": "professional_design_package",
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "51b81d6f2df20e38e7f4f33f7c67109ff10c493cea0412297c7228e330d82e81"
+      "sha256": "8d2efa316cdbef8573fc85be6ec84a1206964525e4ef68f2f86de82d9f3a5bfb"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "8fe1bed3daecf37801e218a586cbaa14962b50070aa8aa73643da0518ed63dc6"
+      "sha256": "6b5bc4bd2ecc17044b086dc081ab3f9650a7b740be849d21d9bf051412a334c9"
     },
     {
       "path": "metrics.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7e28d8da8fd72fbb51b474aed5ecaf9165ec2ac951431e91efeab7db2dc0c717"
+      "sha256": "224f60cf22b518fbfc92f1bce3bedc374cdd91455e80c83f483edd84625d3414"
     },
     {
       "path": "compliance_matrix.json",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "8250e35b046ab9c68565f5f118fc5c9a3ba1d3d733b4b339c1a772da545c34e0"
+      "sha256": "0c040d40a88919c4796e2d47ad3caff8857dba2640ef8111f05934ae2e38c73a"
     },
     {
       "path": "report/proposal.en.html",

@@ -1,6 +1,6 @@
 ---
 title: "连续体：百年京张AI创新带三区两翼协同城市设计"
-author_github: "azurewind"
+author_github: "Azurewind8"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
