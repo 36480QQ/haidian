@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "The Jing-Zhang Archive Belt writes open co-creation into the city archive: a Memory Spine along the Jing-Zhang heritage park, with Source / Transform / Scenario Archive Stations on the three key areas and two record wings. The Archive Charter (open archiving, searchability, corrections, privacy, human-final honors, archive-as-evidence) organizes AI services and contributor recognition. All spatial content is a conceptual proposal on a provisional boundary and will be fully recalculated when official data is released."
+summary: "The Jing-Zhang Archive Belt writes open co-creation into the city archive: a Memory Spine along the Jing-Zhang heritage park, with Source / Transform / Scenario Archive Stations on the three key areas and two record wings. The Archive Charter (tiered archiving, tiered search, corrections and withdrawal, minimum-necessary fields, human-final honors, archive-as-evidence, and non-AI equivalent paths) organizes AI services and contributor recognition. All spatial content is a conceptual proposal on a provisional boundary and will be fully recalculated when official data is released."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -190,6 +190,27 @@ Non-AI equivalent paths (Charter article 7, operationalized): every AI service e
 | AI cultural guide | Human guide, printed guidebook | Fallback on device failure |
 | Scenario test block (TEST) | On-site staff, offline application | Stop testing and switch to human on anomalies |
 | Honor Yearbook Node / Open-Source Commit Stele | On-site filing, paper archive | Human channel retained on digital-terminal failure |
+
+### Figure–scenario–project–metric cross-index (conceptual correspondence)
+
+> This index checks the design narrative; spatial recomputation metrics do not substitute for operating performance. Every operating baseline, threshold and responsible entity awaits specialist studies and confirmation by a legally responsible body.
+
+| Scenario card | Figure / spatial carrier | Corresponding projects | Key metric or evidence to retain |
+|:---|:---|:---|:---|
+| S01 Contribution Intake Desk | `node-sequence`, `node-details`, Memory Spine | JZA-02 | Authorization coverage, paper/digital rehearsal and correction closure; baseline pending |
+| S02 Service Archive Panel | `node-details`, public-space nodes | JZA-03, JZA-13 | Staffed-counter accessibility, status updates and correction records; baseline pending |
+| S03 Memory era installations | `site-overview`, Memory Spine | JZA-01 | Public-space layer and on-site accessibility check |
+| S04 Honor Yearbook Node | `node-details`, AI Origin public edge | JZA-04 | Authorization, withdrawal and human-review records |
+| S05 Open-Source Commit Stele | `facility-system`, AI Origin public edge | JZA-05 | Rights verification, display capacity and correction records |
+| S06 Scenario Test Block | `key-areas`, Dazhongsi street corner | JZA-06, JZA-08 | Test boundary, safety review and suspension record |
+| S07 Model Evaluation & Standards Hall | `key-areas`, Zhongzhiyuan | JZA-07, JZA-10 | Evaluation version, energy and rerun-method study |
+| S08 AI cultural guide | `signage-system`, Memory Spine | JZA-01, JZA-13 | Human-guide/paper alternative and correction record |
+| S09 Smart civic service hub | `facility-system`, neighborhood nodes | JZA-03, JZA-13 | Service state, human handling and minimum-necessary data record |
+| S10 AI-native consumption block | `key-areas`, Dazhongsi | JZA-11 | Public access, service reachability and over-commercialization review |
+| S11 Xiaoyue experience path | `mobility-bluegreen`, Xiaoyue wing | JZA-09 | Greenway continuity, ecological impact and scenario-capacity study |
+| S12 Archive Open Season venue | `ai-ecosystem`, belt public space | JZA-12 | Event safety, non-AI equivalent path and retrospective record |
+
+![S01 Contribution Desk: human-scale spatial sequence (conceptual)](assets/figures/node-sequence.en.png)
 
 ![Mobility and blue-green system with archive facilities](assets/figures/mobility-bluegreen.en.png)
 
@@ -434,3 +455,16 @@ Area recalculation: all areas are computed directly from polygon geometry under 
 | JZA-11 | Dazhongsi Scenario Archive Station | Industry/building | 3 | District investment + commercial tenants | Plot renewal scheme | Renewal and public-opening specialist procedures | Public access, scenario operation and commercial-boundary studies | Over-commercialization → operating rights recalled |
 | JZA-12 | Archive Open Season annual operations | Operations | 1 (ongoing) | Joint operating committee | Resource arrangement, event safety plan | Event-safety and site-use procedures | Event scale, participation modes and accessible-service studies | Safety/reputation incident → pause |
 | JZA-13 | Archive data platform and charter | New infrastructure/governance | 2 | District data department + standards organization | Data-security assessment, tiering rules | Data-security and cyberspace-related procedures | Data classification, retention, access control and correction-loop studies | Data leak → shutdown |
+
+### Role, baseline and decision points for JZA-01–05 and JZA-12 (RACI types, pending)
+
+> This table defines role types only, not confirmed institutions. “A/R/C/I” means accountable, responsible, consulted and informed. No threshold is pre-set; an authorized legal body decides whether to advance or pause from retained evidence.
+
+| Project | A/R/C/I role types | Baseline and measurement frequency | Acceptance-evidence responsibility | Expansion / pause decision point |
+|:---|:---|:---|:---|:---|
+| JZA-01 | A: legally authorized project body; R: slow-mobility/landscape team; C: accessibility, ecology, heritage and ownership roles; I: corridor users | Check continuity, accessibility and ecology before implementation; recheck after design changes | Designated archive custodian keeps survey, accessibility and ecology-review records | Stage review uses conflict, reachability and ecology evidence to expand or revert |
+| JZA-02 | A: legally authorized operating body; R: staffed intake and data-handling roles; C: privacy, accessibility and community-service roles; I: participants | Establish authorization, paper/digital rehearsal and correction-closure baseline in the first week; review monthly | Designated operations recorder keeps authorization, rehearsal and closure records | Pause on privacy incident, no human takeover or unclosed correction; expand only after stage review |
+| JZA-03 | A: legally authorized operating body; R: community service and facility-maintenance roles; C: privacy, safety and accessibility roles; I: residents | Check staffed counter, static notice and correction route before opening; review monthly | Designated service recorder keeps accessibility, status-update and correction records | Pause on data/safety event or unavailable staffed counter; stage review decides expansion |
+| JZA-04 | A: legally authorized operating body; R: yearbook editor and human-review roles; C: rights, heritage and community roles; I: nominees and visitors | Establish authorization, withdrawal and human-review baseline for each nomination; annual review | Designated yearbook recorder keeps review, authorization and withdrawal records | Pause display on nomination dispute, withdrawal or heritage conflict; annual review decides continuation |
+| JZA-05 | A: legally authorized operating body; R: content-verification and display-maintenance roles; C: copyright, open-source and data-governance roles; I: contributors | Verify rights, attribution and correction route before each release; review at each version update | Designated display recorder keeps rights, version and correction records | Take down and review on rights/content dispute; stage review decides display expansion |
+| JZA-12 | A: legally authorized operating body; R: event coordination and on-site service roles; C: safety, accessibility, community and data-governance roles; I: participants and nearby users | Set safety, staffed-service and non-AI path checklist before each event; retrospective after each event and annually | Designated event recorder keeps safety, accessibility, staffed-service and retrospective records | Pause on safety/reputation incident or non-AI path failure; annual stage review decides subsequent scale |
