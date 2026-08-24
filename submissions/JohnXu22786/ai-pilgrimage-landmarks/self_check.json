@@ -12,16 +12,23 @@
       "warnings": [
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/key-areas.en.png` should declare language=en; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/key-areas.en.png` should declare translation_of=assets/figures/key-areas.png; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/land-use-structure.en.png` should declare language=en; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/land-use-structure.en.png` should declare translation_of=assets/figures/land-use-structure.png; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/metrics-evidence.en.png` should declare language=en; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/metrics-evidence.en.png` should declare translation_of=assets/figures/metrics-evidence.png; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/mobility-bluegreen.en.png` should declare language=en; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/mobility-bluegreen.en.png` should declare translation_of=assets/figures/mobility-bluegreen.png; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/site-overview.en.png` should declare language=en; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/site-overview.en.png` should declare translation_of=assets/figures/site-overview.png; legacy v1 package remains compatible",
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `proposal.en.md`; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `visual/index.en.html`; legacy v1 package remains compatible"
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `visual/index.en.html`; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
+        "submissions/JohnXu22786/ai-pilgrimage-landmarks/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
       ],
       "proposal_files": [
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/proposal.md"
@@ -65,7 +72,6 @@
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/report/copyright_statement.md",
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/report/narrative.md",
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/report/proposal.html",
-        "submissions/JohnXu22786/ai-pilgrimage-landmarks/risk.json",
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/self_check.json",
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/sources.json",
         "submissions/JohnXu22786/ai-pilgrimage-landmarks/standard_matrix.json",
@@ -75,7 +81,7 @@
       "ai_package_stages": {
         "submissions/JohnXu22786/ai-pilgrimage-landmarks": "formal"
       },
-      "total_bytes": 1122207,
+      "total_bytes": 1470755,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -135,11 +141,7 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.270479,
-        "public_space_ratio": 0.005702,
-        "road_network_length_m": 10154.351,
-        "landmark_count": 4.0,
-        "scenario_node_count": 12.0,
-        "phase_count": 3.0
+        "public_space_ratio": 0.005702
       }
     },
     "stderr": ""
@@ -180,16 +182,18 @@
   "review_status": "formal-review-ready",
   "next_actions": [
     "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/key-areas.en.png` should declare translation_of=assets/figures/key-areas.png; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/land-use-structure.en.png` should declare translation_of=assets/figures/land-use-structure.png; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/metrics-evidence.en.png` should declare translation_of=assets/figures/metrics-evidence.png; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/mobility-bluegreen.en.png` should declare translation_of=assets/figures/mobility-bluegreen.png; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `assets/figures/site-overview.en.png` should declare translation_of=assets/figures/site-overview.png; legacy v1 package remains compatible",
     "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
     "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `proposal.en.md`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
     "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `visual/index.en.html`; legacy v1 package remains compatible"
+    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/manifest.json: list bilingual counterpart `visual/index.en.html`; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
+    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/ai-pilgrimage-landmarks/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
   ],
   "schema_version": "0.1.0",
   "checks": [
