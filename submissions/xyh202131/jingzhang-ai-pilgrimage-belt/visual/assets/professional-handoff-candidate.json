@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "candidate_id": "PRE-G1-JZ05-SCENE011-T02",
-  "packet_version": "2.0.0",
+  "packet_version": "2.1.0",
   "as_of": "2026-08-24",
   "status": "g0_no_go_professional_review_packet_ready_external_acceptance_open",
   "selection_reason_zh": "唯一同时具有来源边界、拒答、停止、人工交接、恢复和无 PII 合成回放的既有对象组合；选择不代表成熟度更高。",
@@ -215,6 +215,126 @@
       "signed GO/NO-GO minute by the accountable owner"
     ],
     "completed_real_retest_count": 0
+  },
+  "future_field_preregistration": {
+    "status": "structure_ready_external_authority_and_site_access_required",
+    "preregistration_must_be_frozen_before_any_outcome_collection": true,
+    "lawful_start_prerequisites": [
+      "H01 written responsibility acceptance and reachable stop chain",
+      "H02 competent approval for the exact activity, site, time, participant and data envelope",
+      "lawful site access and an identified site custodian",
+      "accessible notice, consent, withdrawal, complaint and safeguarding routes",
+      "approved retention, deletion and public-release rules"
+    ],
+    "dated_walkthrough_record": {
+      "walkthrough_date": null,
+      "start_time": null,
+      "end_time": null,
+      "site_and_route_version": null,
+      "authorized_coverage": null,
+      "weather_and_operating_context": null,
+      "collector": null,
+      "site_custodian": null,
+      "professional_reviewers": [],
+      "before_state_artifact_refs": [],
+      "completed_count": 0
+    },
+    "observation_windows": {
+      "peak_window_definition": null,
+      "peak_window_basis": null,
+      "quiet_window_definition": null,
+      "quiet_window_basis": null,
+      "ordinary_day_comparator_window": null,
+      "approved_window_ref": null,
+      "completed_peak_observation_count": 0,
+      "completed_quiet_observation_count": 0,
+      "rule": "Window definitions and denominators must be signed and frozen before observation; retrospective selection from favorable outcomes is prohibited."
+    },
+    "ordinary_and_non_ai_baseline_lock": {
+      "task_version": null,
+      "five_fixed_question_set_hash": null,
+      "published_source_pack_hash": null,
+      "paper_path_version": null,
+      "staffed_path_version": null,
+      "all_started_task_denominator_definition": null,
+      "exclusion_rules": null,
+      "group_reporting_rule": null,
+      "performance_threshold": null,
+      "lock_minute_ref": null,
+      "baseline_completed_count": 0,
+      "rule": "The ordinary and same-task non-AI baseline is collected first. Neither a target nor the G0 replay may populate a baseline field."
+    },
+    "accessibility_cotest_execution": {
+      "accessible_information_version": null,
+      "co_test_facilitator": null,
+      "accessibility_professional": null,
+      "affected_group_representative_roles": [],
+      "consent_record_ref": null,
+      "withdrawal_and_correction_route_ref": null,
+      "group_specific_denominators_locked": false,
+      "completed_real_cotest_count": 0,
+      "universal_accessibility_claim_allowed": false
+    },
+    "exact_restoration_object_register": [
+      {
+        "object_id": "RESTORE-01-ORDINARY-ROUTE",
+        "object": "ordinary four-way commuting and no-account path",
+        "before_state_ref": null,
+        "removal_or_restoration_action": null,
+        "after_state_ref": null,
+        "accepting_role": null,
+        "accepted_at": null,
+        "status": "not_recorded"
+      },
+      {
+        "object_id": "RESTORE-02-STAFFED-PATH",
+        "object": "staffed same-task handoff and complaint path",
+        "before_state_ref": null,
+        "removal_or_restoration_action": null,
+        "after_state_ref": null,
+        "accepting_role": null,
+        "accepted_at": null,
+        "status": "not_recorded"
+      },
+      {
+        "object_id": "RESTORE-03-PUBLIC-SIGNAL",
+        "object": "public source-status, stop and recovery signal",
+        "before_state_ref": null,
+        "removal_or_restoration_action": null,
+        "after_state_ref": null,
+        "accepting_role": null,
+        "accepted_at": null,
+        "status": "not_recorded"
+      },
+      {
+        "object_id": "RESTORE-04-SOURCE-AND-DATA-PACK",
+        "object": "frozen source snapshot, temporary data and correction record",
+        "before_state_ref": null,
+        "removal_or_restoration_action": null,
+        "after_state_ref": null,
+        "accepting_role": null,
+        "accepted_at": null,
+        "status": "not_recorded"
+      }
+    ],
+    "outcome_collection_lock_sequence": [
+      "accept H01-H02 and lawful site access",
+      "freeze dated before-state and route coverage",
+      "freeze ordinary/non-AI task, source pack, denominator, exclusions and group reporting",
+      "freeze peak, quiet and ordinary comparator windows",
+      "freeze sole primary metric threshold and hard-stop precedence",
+      "freeze exact restoration objects and independent retest inputs",
+      "only then collect bounded shadow outcomes"
+    ],
+    "current_real_record_counts": {
+      "dated_walkthroughs": 0,
+      "ordinary_non_ai_baselines": 0,
+      "peak_observations": 0,
+      "quiet_observations": 0,
+      "accessibility_cotests": 0,
+      "restoration_objects_accepted": 0
+    },
+    "no_go_rule": "Any null prerequisite, unlocked denominator or threshold, missing before-state, unavailable ordinary/staffed path, absent stop holder, unaccepted restoration object or missing independent retester keeps the candidate at G0 / NO-GO."
   },
   "handoff_gate_matrix": [
     {

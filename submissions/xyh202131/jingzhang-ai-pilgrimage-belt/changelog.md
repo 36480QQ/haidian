@@ -1,5 +1,21 @@
 # 方案迭代记录 / Changelog
 
+## v58.4 - 2026-08-24
+
+**96 分 exact-head 评审的预注册与发布硬门 / Preregistration and Release Gates for the Exact-Head 96-Point Review**
+
+- 将唯一候选 `JZ-05 × SCENE-011 × T-02` 的专业包升级到 2.1.0：只有责任接受、准确批准范围和合法现场准入同时成立后，才能填写带日期踏勘、普通/非 AI 同任务基线、高峰/静音窗观察、无障碍共测、分母/阈值锁定与四类恢复对象。所有现实字段继续为空或 0，禁止从目标、行业值或 T-02 合成回放倒填。
+- 为任何未来公共装置、永久地标或外部品牌发布增加九项权利硬门，覆盖作者与贡献记录、CC BY/MIT、OSM ODbL、OFL 字体、第三方内容、商标/史实、生成内容标识、无障碍替代与撤回下架；当前公共装置和外部品牌部署均为 0。
+- 固定正式评审的精简入口为“一条裁决—三种原型—四种状态—一个候选”，后台来源、权利、现场采集、双语抽检和数据缺口登记只按需展开；阅读顺序的压缩不改变 G0、provisional、not to scale、not approved 和现实结果 0。
+- 将独立人工双语抽检细化为七项、固定 exact head 后执行的签核合同，增加差异严重度定义和 fail-closed 规则；投稿方预检发现的实质差异为 0，但人工结果、身份和签名仍保持空白。
+- 将最新评论六项公开行动逐条绑定到交付路径，并单列可实施性、权利发布和双语实质等价三类仍需外部完成的事实边界。几何、`metrics.json`、12/8/3/36、PDF、图像和媒体均未改变。
+
+- Upgraded the sole `JZ-05 × SCENE-011 × T-02` candidate packet to 2.1.0. A dated walk-through, ordinary/same-task non-AI baseline, peak/quiet observations, accessibility co-test, denominator/threshold lock and four restoration objects can be populated only after duty acceptance, exact approval and lawful site access. Every real field remains null or zero; targets, industry values and the T-02 synthetic replay cannot backfill them.
+- Added a nine-item rights gate for any future public installation, permanent landmark or external brand release, covering authorship, CC BY/MIT, OSM ODbL, OFL fonts, third-party content, trademark/history, generated-content labeling, accessible alternatives and takedown. Current public-installation and external-brand deployment counts remain zero.
+- Fixed the concise formal-review route as one ruling, three prototypes, four states and one candidate, with source, rights, field-intake, bilingual and gap registers opened on demand. A shorter reading order does not alter G0, provisional, not-to-scale, not-approved or zero-real-result status.
+- Expanded the independent human bilingual sample into a seven-item exact-head execution and signoff contract with discrepancy severity and fail-closed rules. Contributor precheck finds zero material discrepancy, while human results, identity and signature remain blank.
+- Bound the six published exact-head actions to delivery paths and separated feasibility, public-release rights and substantive bilingual equivalence conditions that still require external completion. Geometry, `metrics.json`, 12/8/3/36 counts, PDFs, figures and media are unchanged.
+
 ## v58.3 - 2026-08-24
 
 **96 分评审的专业交接落实 / Professional Handoff Response to the 96-Point Review**

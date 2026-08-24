@@ -229,6 +229,42 @@
         "reviewer_initials": null
       }
     ],
+    "independent_sampling_execution_contract": {
+      "reviewer_minimum_independence": "The reviewer did not author, translate, render or validate the submitted Chinese or English materials and declares any conflict of interest.",
+      "materials_presented": [
+        "the final exact-head Chinese and English Markdown sources",
+        "the final exact-head rendered HTML counterparts",
+        "paired key figures and their captions/legends/warnings",
+        "A3 14-page and A0 8-page Chinese/English pairs",
+        "metrics.json, sources.json and the professional handoff packet for authority checks"
+      ],
+      "review_order": [
+        "record exact head and artifact hashes before reading",
+        "review HUMAN-EQ-01 through HUMAN-EQ-07 without consulting contributor conclusions",
+        "record pass, discrepancy or cannot-determine for every sample",
+        "classify every discrepancy by claim effect rather than wording preference",
+        "correct all material discrepancies across every affected surface",
+        "refresh manifest and rerun exact-head checks before signoff",
+        "sign only the corrected exact head"
+      ],
+      "allowed_results": [
+        "pass",
+        "material_discrepancy",
+        "non_material_editorial_difference",
+        "cannot_determine"
+      ],
+      "material_discrepancy_definition": "Any difference that changes the core ruling, prototype identity, operating-state effect, number/unit/denominator, evidence authority, G0/approval boundary, public right, professional veto, figure meaning or implementation gate.",
+      "fail_closed_rule": "A missing sample result, cannot-determine result or unresolved material discrepancy prevents independent-human equivalence signoff; deterministic bilingual PASS remains only a packaging result."
+    },
+    "contributor_precheck_results": {
+      "status": "complete_not_independent",
+      "sample_count": 7,
+      "material_discrepancy_detected_count": 0,
+      "non_material_difference_detected_count": 0,
+      "human_result_fields_populated_count": 0,
+      "evidence": "BME-01 through BME-09 and EQ-01 through EQ-08 record contributor-side structural, claim, number, status and position comparisons.",
+      "limit": "This precheck helps a human reviewer sample efficiently but cannot populate human_result, reviewer identity, independence or signoff fields."
+    },
     "discrepancy_register": [],
     "signoff": {
       "reviewer_name": null,

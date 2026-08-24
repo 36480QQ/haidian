@@ -81,7 +81,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4edc3da696edbe3816268eef1addd5f6220bea000caf05b3abbb7eb2f8e76e26"
+      "sha256": "e0c8f4118eeea1ccab40b5e0554aa32853504275c5ea57dec25247ed68666d81"
     },
     {
       "path": "risk.json",
@@ -98,7 +98,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "7482dfb509808d0c5e017e5b1a2f1d98f5b91b81242737a013ff60bcfa163665"
+      "sha256": "069cb217c47c0722ff63e43f7623d4d97347d5e9019639955fffcc832b033f4c"
     },
     {
       "path": "compliance_matrix.json",
@@ -144,14 +144,14 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "4222dcc23f0d0af943fcf1f474c9c8bc8859c61aa61fc40196b0e31459afb38f"
+      "sha256": "3bba3433f4c7548a9e45ec14c2e8e70e1b7453768a61dc37515707bc77e24d74"
     },
     {
       "path": "visual/assets/data-gap-closure-register.json",
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "7bfa99062dcd1f93bb4892f6390033139b7300ed0842a071d78ce452c63ce54f"
+      "sha256": "b3985b0d18e557ac4cd296929d62dae47eba88c146edca911c34a32d03b0f4aa"
     },
     {
       "path": "visual/assets/site-grounding-register.json",
@@ -227,7 +227,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ecb78d3f342ecd69886f321789fe2d79730dd445ad2aee46c777c99c517fca39"
+      "sha256": "408e87ff937584e790cb6b85377d7377a38a5bae0b69e54c1a697744293a37f2"
     },
     {
       "path": "visual/assets/file-rights-inventory.json",
@@ -261,7 +261,7 @@
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "deb8003970c30c701f75a15c072c497ef80550c90b78920dd2287aecf8305218"
+      "sha256": "ba187c22a6e2a6c88fccc4e5968174f49c32ac861ed0027c63693c709aaa8025"
     },
     {
       "path": "report/copyright_statement.md",
@@ -903,7 +903,7 @@
       "role": "other",
       "required": true,
       "language": "neutral",
-      "sha256": "0f9434d0d36a8ccea8c93ffadccf8f995023c58897ad83f2ef2658d46a108294",
+      "sha256": "3ff94455ddd77c79b5985d1e238c4b85c5825105661ac5a17f8795bc23a64b0c",
       "role_detail": "public_interest_evidence"
     },
     {
@@ -956,7 +956,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "评审交接导航：三条时间阅读路线、唯一专业交接候选、证据权威顺序与固定事实边界；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review handoff navigation: three timed reading routes, one professional handoff candidate, evidence authority order and fixed fact boundaries; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "49ce8b4f681578b8493a80d79b506372084f51a0116dc13d8ff156d7c8c3c990"
+      "sha256": "8fb77eda62d27d769e9cec4a660cca1f46af2b46b66c5d4331bbcbde8a451f42"
     },
     {
       "path": "assets/figures/land-use-structure.svg",
@@ -1136,7 +1136,7 @@
       "path": "visual/assets/professional-handoff-candidate.json",
       "role": "evidence_data",
       "required": false,
-      "sha256": "32d0588537f02d1d5dd8a35d6e5bd582a4cc25d1d07870e6368f36b2e31ec800"
+      "sha256": "04bfabe1db392a871699e6272661a4234c14916d2918e759169b22be2681bf3e"
     },
     {
       "path": "visual/assets/convergence-baseline.json",

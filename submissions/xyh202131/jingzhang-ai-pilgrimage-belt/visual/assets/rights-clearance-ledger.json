@@ -88,5 +88,67 @@
     "third_party_source_reproduction": "not_granted",
     "professional_implementation": "requires_separate_data_professional_approval_and_contracts"
   },
+  "future_public_installation_and_brand_release_gate": {
+    "status": "not_requested_no_public_installation_or_external_brand_release_authorized",
+    "current_public_installation_count": 0,
+    "current_external_brand_deployment_count": 0,
+    "gate_items": [
+      {
+        "gate_id": "PUB-RIGHT-01-AUTHORSHIP",
+        "required_evidence": "versioned authorship and contribution record for every proposed public asset and derivative",
+        "current_state": "current_package_contributor_inventory_available_future_asset_not_submitted",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-02-CC-BY-MIT",
+        "required_evidence": "applicable CC BY 4.0 and MIT notices, attribution placement and derivative boundaries for the exact release",
+        "current_state": "component_notices_declared_future_release_review_open",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-03-OSM",
+        "required_evidence": "ODbL attribution, database/produced-work classification, share-alike decision and distribution notice for the exact public output",
+        "current_state": "current_osm_component_declared_future_release_review_open",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-04-FONT",
+        "required_evidence": "OFL notice, source/subset identity, reserved-font-name check and embedding or rasterization method for the exact output",
+        "current_state": "current_font_component_declared_future_release_review_open",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-05-THIRD-PARTY",
+        "required_evidence": "item-level reproduction or citation-only decision for every third-party text, image, archive item, oral-history record, person or mark",
+        "current_state": "no_new_third_party_public_asset_submitted",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-06-TRADEMARK-HISTORY",
+        "required_evidence": "scope-specific trademark search and professional historical or curatorial verification for final names, logo and landmark content",
+        "current_state": "not_reviewed",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-07-GENERATED-CONTENT",
+        "required_evidence": "tool/model, prompt or production method, output terms, edit history, disclosure label and non-evidence statement for each generated public asset",
+        "current_state": "not_applicable_current_generated_media_removed_future_asset_gate_open",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-08-ACCESSIBILITY",
+        "required_evidence": "reviewed alt text, caption/transcript, contrast, legibility, tactile/audio or other equivalent access appropriate to the installed medium",
+        "current_state": "future_installation_review_not_completed",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-09-WITHDRAWAL",
+        "required_evidence": "named takedown holder, correction route, withdrawal conditions, physical removal plan and archived rights decision",
+        "current_state": "future_release_owner_not_assigned",
+        "accepted_count": 0
+      }
+    ],
+    "release_rule": "A repository review, PR merge, current component licence declaration or contributor inventory does not authorize a public installation, permanent landmark, merchandise, external campaign or professional implementation. All applicable items must be accepted for the exact version and use context."
+  },
   "truth_boundary": "Rights clearance does not establish field truth, planning approval, accessibility compliance, service performance, G1 maturity or professional acceptance."
 }
