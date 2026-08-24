@@ -367,7 +367,7 @@ V0.10 把指标分为三类：可由 GeoJSON 在 EPSG:4548 复算的设计指标
 
 ## 风险、版权与合规说明
 
-本包已提供中文/英文 proposal、HTML、A3 文册、A0 展板及五组含文字图件的对应版本，并采用赛事术语表保持译名一致。图片、图纸、图标、数据和代码资产的来源、许可与授权状态记录在 `sources.json` 和 `report/copyright_statement.md`；离线 HTML 不加载远程脚本、地图瓦片、字体、iframe、表单或外部 API，也不跟踪评审者行为。
+本包已提供中文/英文 proposal、HTML、A3 文册、A0 展板及含文字图件的对应版本，并采用赛事术语表保持译名一致。图片、图纸、图标、数据和代码资产的来源、许可与授权状态记录在 `sources.json` 和 `report/copyright_statement.md`；离线 HTML 不加载远程脚本、地图瓦片、远程字体、iframe、表单或外部 API，也不跟踪评审者行为。为避免评审环境缺少中文系统字体，四份 HTML 共用一个本地 CSS，其中仅内嵌当前页面所需的 Noto Sans SC WOFF2 字形子集；字体取自固定的 Google Fonts 版本并遵循 SIL Open Font License 1.1，该资源只解决离线排版可移植性，不构成规划事实或方案证据 [source:FONT-NOTO-SANS-SC]。
 
 风险和缺资料清单由风险深度项、空的约束图层和场地包共同校核 [depth:risk_missing_data] [data:geometry/constraints.geojson] [source:SITE-PACKAGE]。`missing_data_checklist.csv` 中列出的 official boundary、key area、控规、道路、地块、建筑、市政、文保和公共服务缺口均进入 `assumptions.json`、自检和正文风险章节。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，都降级为待确认事项；完整专业核对保存在标准矩阵中。
 

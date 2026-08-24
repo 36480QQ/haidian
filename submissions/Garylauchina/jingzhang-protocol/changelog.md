@@ -2,6 +2,7 @@
 
 ## v0.10 - 2026-08-24
 
+- Repaired the repository review's visual-deliverable findings: rebuilt the four paired analytical figures from the current V0.10 geometry, metrics, role separation and FP01 evidence; marked every figure as a V0.10 current submission while preserving the provisional V0.7 spatial/role-base lineage; and added one local SIL-OFL Noto Sans SC WOFF2 subset for font-independent Chinese rendering in all four offline HTML artifacts.
 - Moved the first-screen argument from an abstract capability system to **one fictional composite user, one candidate service problem to be confirmed at D0, and one revocable, unexecuted first-use contract / 一个虚构复合使用者、一个 D0 待确认候选服务问题、一份可撤销且未执行的首用合同**.
 - Defined `FP01-S07-PROBLEM-001` as one bounded design question: whether an early-career user can obtain one human-confirmed learning or career referral—or a reasoned, appealable refusal—without depending on a smartphone or an AI-only path. The persona is explicitly fictional; wheelchair access and no-phone entry are synthetic accessibility and non-digital design-test conditions, not fieldwork findings.
 - Enforced a single service-role hierarchy across prose, geometry and machine evidence: **S07 is the only user-facing service problem, S03 performs independent evaluation only, and S04 provides interface support only**. AI may not decide admission, employment, hiring, benefits, credentials or ranking of people.

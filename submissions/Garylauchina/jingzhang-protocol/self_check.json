@@ -67,6 +67,7 @@
         "submissions/Garylauchina/jingzhang-protocol/sources.json",
         "submissions/Garylauchina/jingzhang-protocol/standard_matrix.json",
         "submissions/Garylauchina/jingzhang-protocol/visual/assets/fp01-contract.json",
+        "submissions/Garylauchina/jingzhang-protocol/visual/assets/jz-cjk-fallback.css",
         "submissions/Garylauchina/jingzhang-protocol/visual/assets/verify-fp01-contract.js",
         "submissions/Garylauchina/jingzhang-protocol/visual/index.en.html",
         "submissions/Garylauchina/jingzhang-protocol/visual/index.html"
@@ -74,7 +75,7 @@
       "ai_package_stages": {
         "submissions/Garylauchina/jingzhang-protocol": "formal"
       },
-      "total_bytes": 30356989,
+      "total_bytes": 30971154,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -160,7 +161,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 23,
+          "source": 24,
           "standard": 9,
           "depth": 15,
           "data": 43,
