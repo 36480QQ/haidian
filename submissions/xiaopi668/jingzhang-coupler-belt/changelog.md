@@ -1,5 +1,12 @@
 # 方案迭代记录 / Changelog
 
+## v0.9 - 2026-08-24
+
+修复第六轮评审指出的双语映射阻断项:
+
+- 英文可视化页 5 处图件引用此前固定指向中文版 PNG,现按语言正确映射到 site-overview.en / key-areas.en / land-use-structure.en / mobility-bluegreen.en / metrics-evidence.en;中文页保持不变。Version 2 中英对应关系经人工核对成立。
+- manifest 哈希刷新,四门自检与 preflight 复跑 PASS。
+
 ## v0.8 - 2026-08-24
 
 回应第五轮 AI 评审(93.0/100)的两项表达缺陷:
