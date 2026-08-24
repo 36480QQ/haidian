@@ -124,6 +124,32 @@
 - **新增公共利益与包容性实施表**：proposal.md/proposal.en.md 新增 6 行表格（海淀居民/既有商户/照护者/残障人士/老年人/无智能终端用户），每行列出空间与服务标准、非数字服务通道、公平性 KPI、公众否决/申诉/审计四列约束；并加"公众否决机制"段落——每个 AI 触点设否决按钮，触发后 24h 内降级为非自动化模式。响应评审"公共利益维度未转换为可量化的空间与服务标准"。
 - 遗留问题：① 5 张核心图和 A0/A3 首屏版式（标题叠压、裁切、小字号）未修复（评审第 5 条，需重生图件，下轮处理）；② 中英文关键主张人工实质等价签核仍为 agent 自动比对完成，待双语评审者签核（评审第 7 条）；③ 18 项详细 required repairs 逐项证据表待补充。
 
+## v2.9 — 2026-08-24 P9 评审反馈批量修复
+
+### 问题
+- 75.0 评审 task1（P0）：4 条 formal 来源（SRC-BJ-AI-PLUS-ACTION-2024、SRC-BJ-URBAN-RENEWAL-REGULATION、SRC-JZ-PARK-PHASE2-OPEN-2026、SRC-BJ-LINE12-OPEN-2024）虽未进入 source_registry_summary approved_formal 清单，却被用于政策依据/法定依据/已开放事实
+- 75.0 评审 task2（P0）：SC-04 把《个人信息保护法》第 26 条概括为"公共场所例外 + 区公安审批"（过度简化）；"24h 暂停/通报"被表述为法定时限（实际为运营设计目标）
+- 75.0 评审 task3（P0）：正文与结构化数据数字不一致——科研用地 4/3 块、AI 地标 3/4 个、场景卡 10/12 张、项目 12/14 个；用地比例 vs metrics.json land_use_breakdown
+
+### 修复
+- **来源用途降级**（4 条来源 → 全部加"待核验背景"标记）：
+  - SRC-BJ-AI-PLUS-ACTION-2024：proposal.md:96 + proposal.en.md:94 加"参考性背景；最终政策依据以 official 公告为准"
+  - SRC-BJ-URBAN-RENEWAL-REGULATION：proposal.md:142/156/204/252 + proposal.en.md:134/196 加"参考方向；法定程序以 official 实施细则为准"
+  - SRC-JZ-PARK-PHASE2-OPEN-2026：proposal.md:138 + proposal.en.md:130 加"据公开报道；待核验背景；最终以公园管理处公告为准"
+  - SRC-BJ-LINE12-OPEN-2024：proposal.md:228 + proposal.en.md:136 加"据公开报道；待核验背景；最终以京港地铁公司公告为准"
+- **SC-04 法律表述修订**：PIPL 第 26 条概括从"公共场所例外 + 区公安审批"扩展为"维护公共安全所必需、有明确公共场景目的、且有特定法律授权或区级公安机关审批授权"的完整三要素
+- **24h 法定时限脱敏**：proposal.md:210/193 + proposal.en.md:185/202 公众否决机制中加入"运营设计目标，非法定时限；[standard:GENERATIVE-AI-INTERIM-MEASURES] 并不直接建立通用公众否决权或固定 24 小时法定期限"
+- **数字一致性统一**：
+  - proposal.md:171 "10 张 AI 场景卡" → "12 张"
+  - proposal.md:218 + proposal.en.md:210 用地多边形分布改为与 land_use.geojson 实际一致：科研用地（0802）3 块（原误写 4）、城镇住宅用地（0701）1 块、湿地（05）2 块（原误写为商业服务业用地）、文化用地（0803）1 块、教育用地（0804）1 块、公园绿地（1401）2 块、城镇村道路用地（1207）1 块、留白用地（16）1 块
+  - proposal.md:27 + proposal.en.md:27 编号体系 R-01-R-12 → R-01-R-17（与近期 5 + 中期 7 + 远期 5 = 17 个项目实际数量一致）
+  - assumptions.json:550 + design_depth_matrix.json:370 "14 个更新项目清单" → "17 个"
+  - proposal.en.md:154 "10 AI scenario cards" → "12 AI scenario cards"
+
+### 验证
+- 本地 4 项 gate 全 PASS（visual/spatial/professional/validate_submission）
+- sha256 链式迭代 1 轮即达固定点
+
 ## v2.8 — 2026-08-24 P8 CI hotfix
 
 ### 问题
