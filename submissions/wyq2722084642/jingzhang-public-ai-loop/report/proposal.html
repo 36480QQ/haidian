@@ -51,6 +51,12 @@ code {
   padding: 0.1em 0.35em;
   border-radius: 4px;
 }
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 .summary { color: var(--muted); font-size: 17px; }
 .translation-link a { color: var(--accent); font-weight: 700; }
 .proposal-table { margin: 20px 0 26px; overflow-x: auto; }
@@ -177,7 +183,7 @@ code {
 <h3>5.3 大钟寺 AI 产业集聚区：把产业展示变成公共接口</h3>
 <p>概念角色是产业服务、数据治理展示和国际交流的“公共接口”。由于重点区准确 polygon 和站点接口均未公开，本轮不再给大钟寺指定“站点到首层”的连续路线、固定服务台或比例断面，只保留纸质权利说明、人工讲解、合成数据演示和可撤回展陈的治理要求。企业案例、商标、产品、数据和国际合作必须逐项清权；来源不明、无法撤回或审计记录断裂即撤下展项并转人工说明，不写成已入驻企业或招商结果。<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-003" title="空间数据：geometry/key_areas.geojson#PROV-KEY-003">空间数据</sup> [assumption:A-BOUNDARY-002] <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_key_area_detailed_design" title="深度：three_key_area_detailed_design">深度</sup></p>
 <h3>5.4 跨尺度公共服务样板：清河站“不靠手机也能换乘”</h3>
-<p>本轮只用一个真实小场地检验全带原则：清河站西广场/公交到达—地下慢行系统—B1 城市通廊—安检外人工接力。官方资料支持多层关系、地下通道和 B1 综合服务大厅等要素。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="QH-STATION-MAP-2026" title="来源：QH-STATION-MAP-2026">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="QH-B1-SERVICE-HALL-2024" title="来源：QH-B1-SERVICE-HALL-2024">来源</sup> 官方复核还覆盖无障碍设施要素与真实人工接力个案，但不支持精确入口、转角、距离、标高或岗位位置。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="QH-ACCESS-AUDIT-2025" title="来源：QH-ACCESS-AUDIT-2025">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="QH-HUMAN-HANDOFF-2026" title="来源：QH-HUMAN-HANDOFF-2026">来源</sup> 因此图件永久标注 NTS（非比例、非定位）；没有获准底图或实测时，不进入 1:200 或 1:100。[assumption:A-QH-SCALE-012]</p>
+<p>本轮只用一个真实小场地检验全带原则：清河站西广场/公交到达—地下慢行系统—B1 城市通廊—安检外人工接力。官方资料支持多层关系、地下通道和 B1 综合服务大厅等要素。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="QH-STATION-MAP-2026" title="来源：QH-STATION-MAP-2026">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="QH-B1-SERVICE-HALL-2024" title="来源：QH-B1-SERVICE-HALL-2024">来源</sup> 官方复核还覆盖无障碍设施要素与真实人工接力个案，但不支持精确入口、转角、距离、标高或岗位位置。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="QH-ACCESS-AUDIT-2025" title="来源：QH-ACCESS-AUDIT-2025">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="QH-HUMAN-HANDOFF-2026" title="来源：QH-HUMAN-HANDOFF-2026">来源</sup> 因此图件永久标注 NTS（非比例、非定位）；没有获准底图或实测时，不进入 1:200 或 1:100。图中小窗只把清河标记为京张走廊研究语境中的本轮小场地，不表示路线、距离或法定范围。[assumption:A-QH-SCALE-012]</p>
 <figure class="proposal-figure"><img src="../assets/figures/qinghe-evidence-relationship.png" alt="清河公共接力地上—地下 NTS 连续剖面"><figcaption>清河公共接力地上—地下 NTS 连续剖面</figcaption></figure>
 <p>唯一任务是：首次到访、没有智能手机或选择不用手机、需要无台阶路线的乘客，从地面到达后向真人提出“我要去 13 号线，需要无台阶路线”，取得可带走的纸质说明，并在安检/闸机外与既有工作人员完成接力。正常路径为固定总览—既有地下慢行—B1 人工询问—纸质路径卡—既有电梯—人工接力；完成也包括在电梯或 B1 不可用时得到明确限制和现实人工替代，而不是由 AI 编造一条路线。<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="spatial.json#qinghe-ground-arrival" title="空间数据：spatial.json#qinghe-ground-arrival">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="spatial.json#qinghe-human-handoff" title="空间数据：spatial.json#qinghe-human-handoff">空间数据</sup></p>
 <figure class="proposal-figure"><img src="../assets/figures/qinghe-non-ai-service-flow.png" alt="清河站完整非 AI 服务流程"><figcaption>清河站完整非 AI 服务流程</figcaption></figure>

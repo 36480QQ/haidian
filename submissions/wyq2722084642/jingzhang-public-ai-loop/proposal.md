@@ -147,7 +147,7 @@ Logo 方向是“一条可回到原点的折线 + 三个开放节点”：折线
 
 ### 5.4 跨尺度公共服务样板：清河站“不靠手机也能换乘”
 
-本轮只用一个真实小场地检验全带原则：清河站西广场/公交到达—地下慢行系统—B1 城市通廊—安检外人工接力。官方资料支持多层关系、地下通道和 B1 综合服务大厅等要素。[source:QH-STATION-MAP-2026] [source:QH-B1-SERVICE-HALL-2024] 官方复核还覆盖无障碍设施要素与真实人工接力个案，但不支持精确入口、转角、距离、标高或岗位位置。[source:QH-ACCESS-AUDIT-2025] [source:QH-HUMAN-HANDOFF-2026] 因此图件永久标注 NTS（非比例、非定位）；没有获准底图或实测时，不进入 1:200 或 1:100。[assumption:A-QH-SCALE-012]
+本轮只用一个真实小场地检验全带原则：清河站西广场/公交到达—地下慢行系统—B1 城市通廊—安检外人工接力。官方资料支持多层关系、地下通道和 B1 综合服务大厅等要素。[source:QH-STATION-MAP-2026] [source:QH-B1-SERVICE-HALL-2024] 官方复核还覆盖无障碍设施要素与真实人工接力个案，但不支持精确入口、转角、距离、标高或岗位位置。[source:QH-ACCESS-AUDIT-2025] [source:QH-HUMAN-HANDOFF-2026] 因此图件永久标注 NTS（非比例、非定位）；没有获准底图或实测时，不进入 1:200 或 1:100。图中小窗只把清河标记为京张走廊研究语境中的本轮小场地，不表示路线、距离或法定范围。[assumption:A-QH-SCALE-012]
 
 ![清河公共接力地上—地下 NTS 连续剖面](assets/figures/qinghe-evidence-relationship.png)
 
