@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Defines the century-old Jing-Zhang railway corridor as an infrastructure belt of the intelligent era: compute as the new public infrastructure, organized as a five-stage innovation chain (basic research - open-source acceleration - industrial agglomeration - technology services - scenario living) across the three areas and two wings, anchored on Haidian public statistics and the open-source compute stack 'Zhongzhi', forming a recomputable and evolvable urban design proposal."
 tracks: ["ai-public-services", "robotics-autonomous-mobility", "enterprise-services-ecosystem"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot"]
-iteration: "v0.1"
+iteration: "v1.4"
 ---
 
 # Jing-Zhang Compute Belt
@@ -25,7 +25,7 @@ One hundred years ago, Zhan Tianyou presided over the construction of China's fi
 
 This proposal is based on the qualification pre-announcement, the agent-facing task book, the provisional site package boundary, the Haidian 2025 Statistical Bulletin, and OpenStreetMap public mapping. Spatial generation uses only the registered provisional rough boundaries in the repository; district-level economic data serve as background and derivation only, not parcel-level assertions.[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:BOUNDARY-PROVISIONAL]; additionally, [source:GONGBAO-2025] [source:OSM-2026]
 
-Official `SITE_BOUNDARY` and `KEY_AREA` polygons are not yet available. All locked boundaries in this proposal are marked `official_boundary=false`, `geometry_role=provisional_constraint`, `boundary_precision=provisional_rough`; they support concept generation, content review, and recomputation after replacement, but not redlines, property rights, regulatory controls, or engineering basis.[source:BOUNDARY-PROVISIONAL] [data:geometry/site_boundary.geojson#SITE-001] [depth:existing_conditions_diagnosis]
+Official `SITE_BOUNDARY` and `KEY_AREA` polygons are not yet available. All locked boundaries in this proposal are marked `official_boundary=false`, `geometry_role=provisional_constraint`, `boundary_precision=provisional_rough`; they support concept generation, content review, and recomputation after replacement, but not redlines, property rights, regulatory controls, or engineering basis.[source:BOUNDARY-PROVISIONAL] [data:geometry/site_boundary.geojson#PROV-SITE-001] [depth:existing_conditions_diagnosis]
 
 Planning-control conditions (FAR, building height, building density, green ratio, setbacks) have not been published by the organizer; `planning_limits.json` marks them `missing`. The corresponding metrics are uniformly `status=unknown` with the recomputation path stated for when official data arrives; no conceptual volume is presented as a statutory control value.[source:OFFICIAL-ANNOUNCEMENT] [metric:floor_area_ratio] [depth:development_intensity_controls]
 
@@ -133,7 +133,7 @@ All four interfaces are conceptual suggestions: mechanisms involving cross-regio
 
 The overall spatial structure is **one spine (heritage park vitality belt), five stages (innovation-chain relay), two wings (Zhongguancun technology service wing, XiaoYue River scenario wing)**. The heritage park belt is the physical spine and "bus" - the rail imagery converts into a data-bus imagery that threads the five stages; the stages unfold along the corridor sharing one talent pool and public-service network.[source:AGENT-TASKBOOK] [data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure]
 
-The land-use intention uses nine fully tiled zones (cut from the provisional boundary, sharing boundary coordinates, no gaps and no overlaps) to demonstrate that machine recomputation and functional structure agree; the zoning is a conceptual intention, not statutory parcels cut from a temporary boundary.[data:geometry/land_use.geojson] [metric:site_area_sqm] [depth:land_use_layout]
+The land-use intention uses fourteen fully tiled zones (cut from the provisional boundary, sharing boundary coordinates, no gaps and no overlaps) to demonstrate that machine recomputation and functional structure agree; the zoning is a conceptual intention, not statutory parcels cut from a temporary boundary.[data:geometry/land_use.geojson] [metric:site_area_sqm] [depth:land_use_layout]
 
 ### Five-Stage Relay: Why Spatial Proximity Determines Innovation Efficiency
 
@@ -153,7 +153,7 @@ Positioned as an open-source validation field that "proves it can stop safely be
 
 ### 2. Beijing AI Origin Community: Service Pole (Service Duty Hall)
 
-Positioned as an AI public-service community interface where "services work without an app", anchored on the university laboratory colocation circle. Spatial structure: no-login human service counters + community feedback studio + cultural display nodes (Agent Contribution Honor Wall, Open-Source Achievement Gallery). Functions: AI+health navigation (scenario card 4), community elderly companion (scenario card 6), and civic service counters (scenario card 7). All services keep non-digital alternatives (paper, counters, phones); no automation of medical, legal, or administrative decisions - only information navigation, material prompts, and human referral.[source:AGENT-TASKBOOK] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
+Positioned as an AI public-service community interface where "services work without an app", anchored on the university laboratory colocation circle. Spatial structure: no-login human service counters + community feedback studio + cultural display nodes (Agent Contribution Honor Wall, Open-Source Achievement Gallery). Functions: AI+health navigation (scenario card 4, service counter in the XiaoYue River wing), community elderly companion (scenario card 6), and civic service counters (scenario card 7, counters in the Zhongguancun wing). All services keep non-digital alternatives (paper, counters, phones); no automation of medical, legal, or administrative decisions - only information navigation, material prompts, and human referral.[source:AGENT-TASKBOOK] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
 
 ### 3. Dazhongsi: Operation Pole (Operation Duty Hall)
 
@@ -192,30 +192,30 @@ All three industry-test scenarios (1-3) set a "shutdown threshold": precision de
 
 **Ten-item duty table template**: seven items are implementability elements - input data, model role, maturity, human-takeover trigger, responsible party, public-interest KPIs, and spatial/facility requirements - alongside service hours, non-digital alternatives, and recovery and maintenance from the duty discipline; maturity maps to the three-phase implementation (phase 1 trusted service, phase 2 controlled trials, phase 3 sustainable operations). The three industry-test scenarios add admission conditions, forming pilot gates (admission - human takeover - stop - evaluation).[source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES] [metric:scenario_card_count]
 
-#### Scenario Card 1: Open Model Evaluation Field (Zhongzhi Garden - industry test)
+#### Scenario Card 1: Open Model Evaluation Field (Zhongzhiyuan - industry test)
 
 | Duty item | Content |
 | --- | --- |
 | Service hours | Weekdays 10:00-18:00 evaluation field open; nights reserved for scheduled controlled evaluations |
 | Input data | Benchmarks and model weights (submitter-declared public parts only), evaluation logs, site sensor state; non-public inputs are not retained |
 | Model role | Deterministic benchmark scoring and report generation; no scoring or ranking decisions |
-| Maturity | P2 pilot (phase 2, Zhongzhi Garden); the toolchain already runs in open-source communities, site integration is pilot-level |
+| Maturity | P2 pilot (phase 2, Zhongzhiyuan); the toolchain already runs in open-source communities, site integration is pilot-level |
 | Human-takeover trigger | Precision anomaly, evaluation-environment excursion, abnormal complaint, or equipment fault triggers automatic degradation and on-duty human review |
-| Responsible party | Zhongzhi Garden operator (concept) on-duty evaluator + escalation contact; pilot launch needs operator review |
+| Responsible party | Zhongzhiyuan operator (concept) on-duty evaluator + escalation contact; pilot launch needs operator review |
 | Public-interest KPIs | Public evaluation hours/month, public evaluation results/month, 7-day complaint closure rate target 100% |
 | Spatial/facility requirements | Public evaluation plaza, evaluation stations, shared boundary with Card 2 test ring, open-source protocol market |
 | Non-digital alternative | Manual registration desk, paper benchmark brochure, phone consultation |
 | Recovery and maintenance | Work order, version, cause, and human review records before recovery |
 | Admission conditions | Submitter confirms the data-boundary agreement; equipment self-check passes before entry (pilot gate) |
 
-#### Scenario Card 2: Low-Speed Robot Delivery Test Ring (Zhongzhi Garden - industry test)
+#### Scenario Card 2: Low-Speed Robot Delivery Test Ring (Zhongzhiyuan - industry test)
 
 | Duty item | Content |
 | --- | --- |
 | Service hours | Test hours separated from public hours (e.g. 09:00-11:00, 14:00-16:00); no runs during public hours |
 | Input data | Test-ring real-time sensors (pedestrians/obstacles), weather data, test delivery orders, low-speed localization (GPS+LiDAR); no public identity data collected |
 | Model role | Low-speed path planning and obstacle avoidance inside the isolated ring (speed cap 5 km/h); no open-right-of-way coverage |
-| Maturity | P2 pilot (phase 2, Zhongzhi Garden); ring is trial-level, commercial delivery is out of scope |
+| Maturity | P2 pilot (phase 2, Zhongzhiyuan); ring is trial-level, commercial delivery is out of scope |
 | Human-takeover trigger | Pedestrian intrusion, sensor loss, speed excursion, or gale/snow-rain weather alert triggers emergency stop and remote human takeover |
 | Responsible party | Test-ring operator + on-site safety officer; the public is not included in tests by default |
 | Public-interest KPIs | Public intrusion incidents during test hours (target 0), safety-event response time, safety drills/month |
@@ -235,7 +235,7 @@ All three industry-test scenarios (1-3) set a "shutdown threshold": precision de
 | Human-takeover trigger | On-board safety officer takeover; excursion/fault/abnormal ridership stops the service |
 | Responsible party | Demo-line operator + on-board safety officer; operating permit needs transport special review (approval gate) |
 | Public-interest KPIs | Demo on-time rate, monthly ridership, safety incidents (target 0) |
-| Spatial/facility requirements | Shuttle stops (north end Zhongzhi Garden, south end Dazhongsi), roadside perception nodes, depot (pending confirmation) |
+| Spatial/facility requirements | Shuttle stops (north end Zhongzhiyuan, south end Dazhongsi), roadside perception nodes, depot (pending confirmation) |
 | Non-digital alternative | Regular bus and walking alternatives retained |
 | Recovery and maintenance | Stop-cause records, recovery after re-inspection |
 | Admission conditions | Certified on-board safety officer, minimum road-test mileage, transport special review passed before demo (pilot gate) |
@@ -349,7 +349,7 @@ Accessibility and elder-friendly requirements run through all scenarios: public 
 
 ## Land Use, Building Scale, and Retain/Renovate/Demolish/New
 
-The land-use layout covers nine tiled zones (research 0802, education-research 0802, industry-commerce 05, residential 0701, green 1401, reserved 16); every zone area is recomputable from `geometry/land_use.geojson`. Concept building envelopes total 11 (footprint ~1.099 million m², all conceptual illustrations, not existing or approved buildings).[data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]; additionally, [depth:land_use_layout]. Concept envelopes follow the architectural design-depth regulation (a deepening reminder until the official document is available).[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
+The land-use layout covers fourteen tiled zones (research 0802, industry-commerce 05, residential 0701, park green 1401, coded per the 2023 Land Use and Sea Classification Guide; the university-colocation circle is counted under research 0802 by dominant use); every zone area is recomputable from `geometry/land_use.geojson`. Concept building envelopes total 11 (footprint ~1.099 million m², all conceptual illustrations, not existing or approved buildings).[data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]; additionally, [depth:land_use_layout]. Concept envelopes follow the architectural design-depth regulation (a deepening reminder until the official document is available).[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
 Regulatory-plan metrics (FAR, height, density, setback) are all `status=unknown`: the organizer has not published regulatory-plan conditions, so any number would be fabricated; once official controls arrive, the concept volumes can be recalibrated by formula.[metric:floor_area_ratio] [metric:building_height_m] [depth:development_intensity_controls]
 
@@ -417,7 +417,7 @@ Full sources, formulas, confidence, and assumptions live in `metrics.json`; task
 - **Concept status**: all spatial landing suggestions are conceptual suggestions, reference schemes, or material for professional teams to deepen; they do not constitute government-approved conclusions or implementation commitments.
 - **"Zhongzhi" anchor**: the naming connection between the "Zhongzhi" compute stack and "Zhongzhiyuan" is an inference (the Bulletin does not state it directly) and is phrased as "naming echo".
 - **AI-generated disclosure**: this proposal was generated by Claude Code (an AI Agent); sources and generation methods are in `report/copyright_statement.md`; generated imagery/media are interpretive layers only and do not impersonate on-site conditions, resident opinions, official boundaries, or measured data.
-- **Missing data**: official polygons, regulatory-plan conditions, existing buildings and property rights, municipal surveys, rail data - each is listed in the gap registry of `sources.json`.[depth:risk_missing_data]
+- **Missing data**: official polygons, regulatory-plan conditions, existing buildings and property rights, municipal surveys, rail data - each is covered by the upstream brief's missing-data checklist and `sources.json` layer notes.[depth:risk_missing_data]
 
 ## References
 

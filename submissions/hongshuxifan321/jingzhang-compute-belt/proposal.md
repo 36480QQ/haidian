@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把百年京张铁路走廊定义为智能时代的基础设施带：以算力为新一代公共基础设施，用创新链五段接力（基础研究—开源加速—产业集聚—科技服务—场景生活）组织三区两翼，以海淀公开统计数据和开源智算栈「众智」为锚点，形成可复算、可演进的城市设计方案。"
 tracks: ["ai-public-services", "robotics-autonomous-mobility", "enterprise-services-ecosystem"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot"]
-iteration: "v1"
+iteration: "v1.4"
 ---
 
 # 京张算带 / Jing-Zhang Compute Belt
@@ -24,7 +24,7 @@ iteration: "v1"
 
 本方案以资格预审公告、面向智能体任务书、场地包临时边界、海淀区 2025 年统计公报和 OpenStreetMap 公开测绘为设计依据。空间生成只使用仓库内已登记的临时粗略边界；区级经济数据仅作背景与推导依据，不构成地块级断言。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:BOUNDARY-PROVISIONAL]；此外，[source:GONGBAO-2025] [source:OSM-2026]
 
-当前未获得官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` polygon。本方案锁定的总体范围与重点区均标记为 `official_boundary=false`、`geometry_role=provisional_constraint`、`boundary_precision=provisional_rough`，只能支持概念生成、内容评审与替换后的复算，不能作为红线、权属、控规或工程依据。[source:BOUNDARY-PROVISIONAL] [data:geometry/site_boundary.geojson#SITE-001] [depth:existing_conditions_diagnosis]
+当前未获得官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` polygon。本方案锁定的总体范围与重点区均标记为 `official_boundary=false`、`geometry_role=provisional_constraint`、`boundary_precision=provisional_rough`，只能支持概念生成、内容评审与替换后的复算，不能作为红线、权属、控规或工程依据。[source:BOUNDARY-PROVISIONAL] [data:geometry/site_boundary.geojson#PROV-SITE-001] [depth:existing_conditions_diagnosis]
 
 控规条件（容积率、建筑高度、建筑密度、绿地率、退线）均未由组织方公布，`planning_limits.json` 将其标记为 `missing`。本方案相应指标统一记为 `status=unknown`，并说明待正式数据补齐后的复算路径；不把任何概念体量伪装为法定控制值。[source:OFFICIAL-ANNOUNCEMENT] [metric:floor_area_ratio] [depth:development_intensity_controls]
 
@@ -132,7 +132,7 @@ VI 规范（构图/单色/最小尺寸/字体/应用样例见图）：标志构�
 
 「算带」的总体空间结构为**一脊（遗址公园活力带）、五段（创新链五段接力）、两翼（中关村科技服务翼、小月河场景赋能翼）**。遗址公园带是物理脊梁与「总线」——铁轨意象转化为数据总线意象，串联五个创新段；五段沿走廊依次展开，共享同一人才池与公共服务网络。[source:AGENT-TASKBOOK] [data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure]
 
-用地意向采用九个完整拼合分区（从临时边界切割，共享边界坐标，无缝隙无重叠），证明机器可复算与功能结构一致；该分区是概念意向，不是把临时边界切成法定地块。[data:geometry/land_use.geojson] [metric:site_area_sqm] [depth:land_use_layout]
+用地意向采用十四个完整拼合分区（从临时边界切割，共享边界坐标，无缝隙无重叠），证明机器可复算与功能结构一致；该分区是概念意向，不是把临时边界切成法定地块。[data:geometry/land_use.geojson] [metric:site_area_sqm] [depth:land_use_layout]
 
 ### 五段接力：为什么空间相邻性决定创新效率
 
@@ -152,7 +152,7 @@ VI 规范（构图/单色/最小尺寸/字体/应用样例见图）：标志构�
 
 ### 2. 北京 AI 原点社区：服务极（服务值守厅）
 
-定位为「没有 App 也能完成服务」的 AI 公共服务社区接口，依托高校实验室共址圈。空间结构：免登录人工服务台 + 社区反馈工作室 + 文化展示节点（智能体贡献荣誉墙、开源成果展示廊）。功能承载：AI+健康导航（场景卡 4）、社区养老陪伴（场景卡 6）、政务服务柜台（场景卡 7）。所有服务保留纸本、柜台、电话等非数字替代路径；不进行医疗、法律或行政决定的自动化，只做信息导航、材料提示与人工转接。[source:AGENT-TASKBOOK] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
+定位为「没有 App 也能完成服务」的 AI 公共服务社区接口，依托高校实验室共址圈。空间结构：免登录人工服务台 + 社区反馈工作室 + 文化展示节点（智能体贡献荣誉墙、开源成果展示廊）。功能承载：AI+健康导航（场景卡 4，实体服务台位于小月河翼）、社区养老陪伴（场景卡 6）、政务服务柜台（场景卡 7，柜台实体位于中关村翼）。所有服务保留纸本、柜台、电话等非数字替代路径；不进行医疗、法律或行政决定的自动化，只做信息导航、材料提示与人工转接。[source:AGENT-TASKBOOK] [data:geometry/key_areas.geojson#PROV-KEY-002] [depth:three_key_area_detailed_design]
 
 ### 3. 大钟寺：运营极（运营值守厅）
 
@@ -348,7 +348,7 @@ VI 规范（构图/单色/最小尺寸/字体/应用样例见图）：标志构�
 
 ## 用地、建筑规模与拆改留方案
 
-用地布局覆盖九个拼合分区（科研 0802、教育科研 0802、产业商业 05、居住 0701、绿地 1401、留白 16），各分区面积均可从 `geometry/land_use.geojson` 复算。概念建筑体块共 11 栋（基底约 109.9 万平方米，均为概念示意，非现状或批准建筑）。[data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]；此外，[depth:land_use_layout]。概念体量按建筑专业设计深度规定（官方文件到位前作为深化提醒）生成。[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
+用地布局覆盖十四个拼合分区（科研 0802、产业商业 05、居住 0701、公园绿地 1401，按《国土空间调查、规划、用途管制用地用海分类指南》（2023）归码；高校共址圈按主导用途计入科研 0802），各分区面积均可从 `geometry/land_use.geojson` 复算。概念建筑体块共 11 栋（基底约 109.9 万平方米，均为概念示意，非现状或批准建筑）。[data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]；此外，[depth:land_use_layout]。概念体量按建筑专业设计深度规定（官方文件到位前作为深化提醒）生成。[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
 控规指标（容积率、建筑高度、建筑密度、退线）全部为 `status=unknown`：组织方尚未公布控规条件，任何数值都将是编造；待正式控制条件到位后，本方案的概念体量可按公式复算校准。[metric:floor_area_ratio] [metric:building_height_m] [depth:development_intensity_controls]
 
@@ -416,7 +416,7 @@ VI 规范（构图/单色/最小尺寸/字体/应用样例见图）：标志构�
 - **概念属性**：所有空间落地建议为概念建议、参考方案或供专业团队深化材料；不构成政府审定结论或实施承诺。
 - **「众智」锚点**：开源智算栈「众智」与「众智园」命名关联为推断（公报未直接说明），表述为「命名呼应」。
 - **AI 生成披露**：本方案由 Claude Code（AI Agent）生成，来源与生成方式见 `report/copyright_statement.md`；生成图像/媒体均属解释层，不冒充现场、居民意见、官方边界或实测数据。
-- **待补资料**：官方 polygon、控规条件、现状建筑与权属、市政专项、轨道数据——逐项列入 `sources.json` 的缺口登记。[depth:risk_missing_data]
+- **待补资料**：官方 polygon、控规条件、现状建筑与权属、市政专项、轨道数据——逐项见上游 brief 的 missing-data checklist 与 `sources.json` 的分层说明。[depth:risk_missing_data]
 
 ## 参考资料
 
