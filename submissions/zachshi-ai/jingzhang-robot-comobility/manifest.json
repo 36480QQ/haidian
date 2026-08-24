@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "143fed6a29b6a22f723c9ebf94af546965cefefb6fed1676c0bbc0f660f26e22"
+      "sha256": "195fd91e363a54a7d3f815047e1c9d670bc5224411a5fd88e9da7212a2ad191c"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d5d7d851ae7cb20c4ed54cc0eea8acd439625aa79f53e1d528067b38812d611f"
+      "sha256": "8935b43653f4d799bc1c3e0ab3f8a05f69a3b4a0cb782548082b4ded53568737"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,28 +93,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "77196ba36611a573e18f610a3bb74d015f11fc8c59c9f1c98f7ae6f4ca425427"
+      "sha256": "7c64ab8ef6e9597e47cacfa0f097eea8c555e2bcccdaabe5b9ce5776608f4a85"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "fd70ba32d5139ddab6daea12ae6d755894ad40fb3a06a6f58a39b70b743fa6ea"
+      "sha256": "a8a4de1dfc40a50af857578246abbf9bbca2d787b36a7c114442b687ca4cd879"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "71b222339942ac76db8ff1b5232bd6fdba387d6618bad44a4376e431344c469b"
+      "sha256": "9582dfce7349b95cd7871bbb3df89e608d8f5672e961def6bb28510879b4c63c"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "16f880174dbb49cc9818b26e8868c7ff8da1c70495b275dd4b6c3572725feb31"
+      "sha256": "ec4f26ef24aabf8eee3a2f0aa86a3b5b1b48bdb7d192736ecb58d9cdca27528a"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -213,7 +213,7 @@
       "translation_of": "proposal.md",
       "title_zh": "京张AI低速机器人共行网（英文正式译文）",
       "title_en": "Jingzhang AI Low-Speed Robot Co-Mobility Network (English translation)",
-      "sha256": "3f2d2305e513805f67a057936534973c133d0b09fea6f75ea68f9ba93b3cbfb2"
+      "sha256": "1e3f7c39f1832fdd99df520cc420a1f2d95fb56e966cf744aafef29dac24f475"
     },
     {
       "path": "risk.json",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "afba7355098f3418428f7c14f86db004e4899e52ac76cbc9f87bb91a31a5dcc6"
+      "sha256": "c99675e72593afcb2acb5a3d4ff0bf68bf23739bf80a4368de059b8ae33d973d"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -245,7 +245,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "90d107aaba93014839606282150d34d79dcb9c754ca7fccc96ca8a91abd2d1ed"
+      "sha256": "a18beb418f5516397fa451386568c0f534d3f420059efad882a99b22c4018c46"
     },
     {
       "path": "visual/index.en.html",
@@ -253,7 +253,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "fb631d1ab7116e55a81473ac287f6a6813e8f57203ed12eec0fd02172436d564"
+      "sha256": "43d7dcc7410d53d387ddbb0c4e4da24d794f8076647994b9d3298ee4ef9ff702"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -353,7 +353,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "88fa8e73c92e1701e6e8afb0c69148a1731cc0746999ce34b289fcd343394c1c"
+      "sha256": "6d0d72ec671ad7bc5450e95151ca3c50c41fa5d2f6656e793197049bb24ae0a8"
     },
     {
       "path": "simulation.json",
