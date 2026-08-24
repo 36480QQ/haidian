@@ -15,7 +15,7 @@
       "id": "ASM-002",
       "topic": "regulatory_control_missing",
       "assumption_zh": "容积率、建筑高度、建筑密度、绿地率、退线等控规条件尚未公开，按 ranges/planning_limits.json 中 status=missing 处理。",
-      "impact_zh": "本方案 concept_far=1.30、建筑高度 12-60m 等数值均为概念设计量，明确不等于法定控规值。",
+      "impact_zh": "本方案 concept_far=unknown（原始公式量纲错误已废弃）、建筑高度 12-60m 等数值均为概念设计量，明确不等于法定控规值。",
       "recalculation_path_zh": "取得 official 控规条件后，重新复算所有开发强度类指标；如与现状冲突，需调整用地分区与建筑形态。",
       "confidence": "low"
     },
@@ -589,7 +589,7 @@
       {
         "claim_id": "C-014",
         "proposal_section": "指标体系、面积复算与合规矩阵",
-        "claim_zh": "19 个核心指标由 EPSG:4326 → EPSG:4548 投影后 shapely.area 复算",
+        "claim_zh": "21 个核心指标由 EPSG:4326 → EPSG:4548 投影后 shapely.area 复算",
         "source_ids": [
           "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT"
         ],
