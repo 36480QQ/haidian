@@ -333,7 +333,8 @@ def apply_review(
             raise WorkerError("authoritative PR comment is empty")
         body = (
             f"{marker}\nMaintainer intake decision: Review Agent score {outcome.score:g}/100. "
-            "Mandatory rejection, all four local gates, and review readiness passed. "
+            "The mandatory-rejection check passed (no rejection condition was triggered); "
+            "all four local gates and review-readiness checks also passed. "
             "Accepted for repository intake only; "
             "this is not gallery publication, award selection, implementation approval, or government endorsement."
             f"\n\n{authoritative_comment}"

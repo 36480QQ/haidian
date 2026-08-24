@@ -66,6 +66,8 @@ class AutoReviewQueueTests(unittest.TestCase):
                         if call.args[0][:3] == ["gh", "pr", "review"]
                     )
                     review_body = review_call.args[0][review_call.args[0].index("--body") + 1]
+                    self.assertIn("no rejection condition was triggered", review_body)
+                    self.assertIn("review-readiness checks also passed", review_body)
                     self.assertIn("Accepted for repository intake only", review_body)
                     self.assertIn("## 七维评分", review_body)
                     self.assertIn("任务书对齐 4/5", review_body)
@@ -89,7 +91,7 @@ class AutoReviewQueueTests(unittest.TestCase):
                         for call in run_mock.call_args_list
                         if call.args[0][:3] == ["gh", "pr", "review"]
                     )
-                    self.assertIn("review readiness passed", review_command[-1])
+                    self.assertIn("no rejection condition was triggered", review_command[-1])
 
     def test_default_image_budget_matches_bilingual_packet(self) -> None:
         with patch.object(sys, "argv", ["auto_review_queue"]):
