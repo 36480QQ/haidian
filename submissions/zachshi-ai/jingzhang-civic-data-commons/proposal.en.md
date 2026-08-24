@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Restructuring the Jingzhang AI Innovation Belt into a service-oriented city spine built on 'data as a public good': one spine (the open civic-data axis), three hearts (Zhongzhiyuan data factory, AI-Origin community service living room, Dazhongsi enterprise data port), and many nodes (citizen-participatory AI service pods). Public data opens along the belt; citizens and developers co-create AI services at co-creation nodes; the digital platform and physical space are designed as one, forming a governable, experienceable, and replicable civic-data commons."
 tracks: ["ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide"]
-iteration: "v5.0"
+iteration: "v8.0"
 ---
 
 # Jingzhang AI Civic Data Commons: A Co-Created Service-Oriented City Spine
@@ -55,6 +55,15 @@ The proposal advances "Jingzhang AI Civic Data Commons" as its overall concept, 
 ### Three Positionings, Five Functions, and Three-Areas-Two-Wings Coordination
 
 The proposal implements the taskbook's three positionings (Centennial Jingzhang Cultural Belt, Urban AI Life-Experience Belt, AI-Integration Innovation Belt) and five functions (data opening, service co-creation, industry cultivation, public experience, governance demonstration) [source:agent-taskbook]. In the three-areas-two-wings coordination, the three key areas respectively take on data production (Zhongzhiyuan), citizen service (AI-Origin Community), and industrial transformation (Dazhongsi); the Xiaoyuehe scenario wing carries public-experience routes, and the Zhongguancun service wing carries the developer community and policy consulting [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+### Interlock with Sibling Proposals on the Same Corridor (v8)
+
+The value of a data commons is "making every use of data visible." Four sibling proposals on the same Jingzhang heritage corridor (submitted by the same author) are both data sources and users of the receipt mechanism; the following are design-coordination proposals, subject to each party's detailed design [E:DATA-CROSS-INTERLOCK]:
+
+- **With robot-comobility (Cross-Section Grammar × Co-Mobility Signaling)**: every block/degradation event of the robot signal timetable produces a dispatch record, proposed to be registered under the data-receipt rules with destination and retention period; data-timetable stations may share the delivery hubs' public screens, so citizens see "when data opens" and "when robots come" on one screen.
+- **With heritage-spine (Ren-Track × three conservation principles)**: heritage archives and conservation-monitoring data are proposed for the public-data opening list, with every use generating an auditable receipt — traceable whereabouts of heritage data extend the "distinguishability" principle into the digital layer.
+- **With silver-accessibility (Silver Relay × intergenerational connection stations)**: health and mobility data involved in elderly services are among the most sensitive public-data categories, proposed for priority coverage by receipt rules and the objection channel; timetable-station screens provide large-print versions so elders can see where their data went.
+- **With ai-civic-services (Three-Guarantees-One-Verification × accountability spaces)**: the accountability stands' completion records (de-identified) are proposed for display on the data timetable — "what was done, who did it, what data was used" becomes visible at once; service accountability and data accountability meet on the same public wall.
 
 ### Global Civic-Data and AI-Service Co-Creation Case Studies
 
