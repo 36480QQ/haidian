@@ -24,7 +24,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "dc88bab187e077c0f3b746a980a5feddf0f0fef31db7d683d053ad44f4dba32c"
+      "sha256": "a1bca519f7d07d5b0c1b69d4d1c00d62e2e43155cb6309e29bf17d9701b8317f"
     },
     {
       "path": "agent.json",
@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "42a5aac67540ef4c46669e464cd4eeeb66540c6bb229477f2fbf60127e70bec2"
+      "sha256": "fef05bc2d2375a2cf90d2366c4dee6e4e69d61f16093bb867dfb0965b23446c2"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "87eb455a481b9bb47646dcf9f42845ffdf443a3806cd9d43f8cf5408722d6747"
+      "sha256": "f1bbe35ecd0f042328603c788d41a3a184f1c8570065161aed1f93037654cd5a"
     },
     {
       "path": "report/narrative.md",
@@ -112,7 +112,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7f9aa3de4058b958b5c518a48b0e94d66b54c7e143f4e83b934ce69e1f7f29ec"
+      "sha256": "d8b069a277bf7a8c03e474b0cd0b3c2d4b4bdf9410189bd1e79f1032395f6f50"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -209,7 +209,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "49ca28e45674b6256849d7f89449a4568e611e7600d1a422f2dfda6b3fc82341"
+      "sha256": "576c13739ffe53c8efcd2dcdf8fb61e5f17fb8960c632ade96157507df5125e4"
     },
     {
       "path": "report/proposal.en.html",
@@ -217,7 +217,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6987f77eceda7342c18dca15d20008f1746d272fa165dcf844d4265c0d36ab70"
+      "sha256": "b712981b237167f9424391bb970c9fab54ed8ef68132f0be27e73b91f0d6f5ca"
     },
     {
       "path": "visual/index.en.html",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "5d437b2927a576142540ce587b9340080be6162ae8fb2e6980b7681a5e60251b"
+      "sha256": "12287b239529d03ab640ef76c0d34f4798b3247d8a8266eb18cde2c558e2538b"
     },
     {
       "path": "risk.json",

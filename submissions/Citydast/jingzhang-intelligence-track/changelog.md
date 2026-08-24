@@ -111,3 +111,28 @@
 - 新增「智能体沙盒安全测试机制」段落（proposal/EN）：5 项机制（分级/安全评估/人工复核/退出条件/表述边界）
 - risk.json 扩展第 9 维「AI 治理全球话语权」(score 3)：proposal 风险章节 + visual 雷达色块同步
 - 9 项 detailed required repairs checklist 比对报告：F:\workbuddy\城市设计竞赛\workspace\checklist_v06.md
+
+### v0.7 评审硬伤整改 - 2026-08-24（未提交，待确认）
+- 针对 v0.6 评审（81 分，request-changes；表达完整度 3/5 中文方框 + logo 图未送达）：
+  1. 中文字体内嵌：report/proposal.html、visual/index.html 等 4 个 HTML 内嵌
+     Noto Sans SC 子集化 woff2（base64 @font-face，1009 字符，233KB）——评审容器无
+     系统中文字体也能正确渲染中文（MAX_HTML_BYTES=2MB 限制内，文件 368-524KB）
+  2. logo-prototypes.png 转 data URI 内联进 visual/index.html 与 en.html（评审包
+     FIGURE_PATHS 硬编码仅 5 张基础图，新增图不进入评审视觉证据；内联后评审渲染 HTML 必可见）
+  3. 每个醒目 needs_review 数字旁标注"背景/非正式证据"（visual 4 处 metric meta）
+  4. KPI 责任主体表后补"授权状态说明"：具名机构均为概念候选方向，不作政府安排承诺
+  5. 无障碍数值标准化：坡度≤1:20/对比度≥3:1/48h 响应等改标"自愿设计目标"，移除
+     data_gap 标准引用（MOHURD-ARCH-DESIGN-DEPTH-2016），改引无障碍法（SOURCE-REGISTRY）
+  6. 双语核对：3500 亿 en 侧补 "≈3500 亿元 (350 billion)" 双单位；其余数字/来源/
+     边界/测试语言对齐
+- 校验：validate PASS / self_check PASS（formal-review-ready）
+- 顺序要点：render_proposal_html.py 重渲染会覆盖内嵌字体 → 必须先渲染后嵌字体
+
+### v0.7 sprint 2（视觉修复 + 区域协同全覆盖）- 2026-08-24（未提交，待确认）
+- KEY AREAS 新增三区空间关系示意图 SVG（产业定位/空间动作/实施风险三段 + 协同箭头 + 分阶段色带）
+- OVERVIEW 修复：AI 原点色块上移（y 270→195）避开清华东路西口站点圆
+- LAND USE 堆叠条高度整体增加（viewBox 220→400，每条按比例放大）
+- 区域协同从五组升级为八组：新增上地（存量产业承接）、小月河翼（场景-产业闭环）、
+  雄安（标准输出-试点回馈）、天津/通州副中心（制造回流）——中英同步
+- 全面检查：HTML 标签平衡修复（zh 删 1 个 stray div、en 删 2 个）、JSON 有效、
+  字体内嵌完整、无外部引用、16 个视觉区块中英对齐、关键数字术语一致
