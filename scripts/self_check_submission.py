@@ -465,7 +465,8 @@ def mark_self_checked(submission_dir: Path, report: dict[str, Any]) -> tuple[boo
         self_check_item["sha256"] = hashlib.sha256(self_check_bytes).hexdigest()
         claim["readiness_contract"] = PERSISTED_READINESS_CONTRACT
         claim["self_checked"] = True
-        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        with manifest_path.open("w", encoding="utf-8", newline="\n") as handle:
+            handle.write(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     except OSError as exc:
         self_check_path.write_bytes(original_self_check)
         manifest_path.write_bytes(original_manifest)

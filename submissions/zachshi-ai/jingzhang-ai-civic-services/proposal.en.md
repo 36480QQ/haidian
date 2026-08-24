@@ -10,7 +10,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the Jingzhang Railway heritage corridor as the main axis, this proposal links the subdistrict offices, community health centers, and legal aid points along the corridor into a single AI civic-service network. The proposal puts forward the overall concept of an 'AI Civic Service Spine': a one-stop government, health, and legal civic service hub is built in the AI Origin Community; citizen service stations are deployed along the main axis of the heritage park; and the belt is formed of 13 service passage segments, 6 civic-service buildings, 3 service hub plazas, and 5 street-side stations, supported by 12 AI scenario cards, 5 categories of user personas, and 3 civic-service landmark destinations. AI is used only for service navigation and public information Q&A; it does not diagnose and does not approve, and all content is manually reviewed by medical, legal, and data-security professionals."
 tracks: ["ai-public-services"]
 scenarios: ["ai-health-service-navigation"]
-iteration: "v6.0"
+iteration: "v7.1"
 ---
 
 # Jingzhang AI Civic Services Belt: A One-Stop Government, Health and Legal Services Network
@@ -63,6 +63,15 @@ The three-zones-two-wings synergy loop: Zhongzhiyuan provides talent health chec
 
 The proposal forms public-service coordination with the Beiwei Community, the Future Science City, the Huairou Science City, the Economic-Technological Development Area, and the Beijing-Tianjin-Hebei region. Through the concept of a "cross-district service one-code pass," it explores the possibility of cross-regional mutual recognition of government services, cross-regional navigation of health records, and cross-regional coordination of legal services; however, all cross-district mechanisms are conceptual suggestions and do not constitute policy commitments [source:agent-taskbook] [assumption:A-SERVICE-003].
 
+### Interlock with Sibling Proposals on the Same Corridor (v7)
+
+The premise of accountability is "there must be someone to hold accountable." Four sibling proposals on the same Jingzhang heritage corridor (submitted by the same author) each make service promises to citizens; this proposal's accountability spaces are their shared service backstop. The following are design-coordination proposals, subject to each party's detailed design [E:CIVIC-CROSS-INTERLOCK]:
+
+- **With robot-comobility (Cross-Section Grammar × Co-Mobility Signaling)**: robot delivery is proposed to join the "three guarantees, one verification" chain — delays, damage and loss have a named human responsible; accountability stands accept robot-related complaints, and guarantee receipts enter the dispatch-ledger audit.
+- **With silver-accessibility (Silver Relay × intergenerational connection stations)**: accountability stands keep staffed windows and large-print paper accountability cards, so elders who do not use smartphones equally receive a receipt with a named human behind it; connection-station volunteers can guide elders to the stands to complete their matters.
+- **With heritage-spine (Ren-Track × three conservation principles)**: public services at heritage nodes (guidance, ticketing, consultation) are proposed to join the three-guarantees chain — service promises inside heritage space equally need a named human behind them.
+- **With civic-data-commons (Data Receipt × Data Timetable)**: the stands' completion records (de-identified) are proposed for display on the data timetable — "what was done, who did it, what data was used" becomes visible at once; service accountability and data accountability meet on the same public wall.
+
 ### Case Studies of AI Civic-Service Ecosystems
 
 This proposal studies 7 domestic and international public-service digitalization cases, extracting transferable mechanisms; all are compiled from public materials, with no fabricated enterprise lists or investment figures [source:estonia-eresidency-khealth]:
@@ -89,7 +98,7 @@ The chronic problem with AI in government services is "it answers very well, but
 
 **Guarantee Two: Response Time (Guarantee of Response Time).** Every service promises that a real person must respond within a limited time: 30 minutes for nighttime emergencies, 2 hours for government-service navigation, 24 hours for health referrals, and 3 working days for legal aid. The time-limit commitment is written into the service contract, and overruns automatically escalate.
 
-**Guarantee Three: Receipt (Guarantee Receipt).** Every service generates an auditable receipt: what the AI did, what humans reviewed, the done/escalated/failed status, and the complaint channel. Receipts are retained for 90 days for auditing, aggregated statistically after anonymization, and no identity or document content is collected. The receipt schema is at `visual/assets/guarantee-receipt.schema.json` [data:visual/assets/guarantee-receipt.schema.json#receipt].
+**Guarantee Three: Receipt (Guarantee Receipt).** Every service generates an auditable receipt: what the AI did, what humans reviewed, the done/escalated/failed status, and the complaint channel. Receipt data boundary: only the matter name, handling status and timestamps are recorded — no applicant identity, document content, medical records or case facts are collected; the displayed handler "surname + ID + signature" is duty-disclosure information of a staff role, not a personal-data profile. The 90-day retention has an explicit basis (quarterly audit and appeal traceability), access is limited to audit roles, and details are deleted after anonymized aggregation on expiry. The receipt schema is at `visual/assets/guarantee-receipt.schema.json` [data:visual/assets/guarantee-receipt.schema.json#receipt].
 
 **One Verification: Independent Verification.** Every quarter, an independent third-party evaluation body randomly samples ≥100 receipts from the receipt ledger (covering all 12 scenarios) and verifies: guarantee-fulfillment rate ≥95%, response-time compliance rate ≥90%, receipt-completeness rate ≥98%, escalation-chain effectiveness rate ≥95%, and complaint-handling timeliness rate ≥95%. If any threshold is not met, AI navigation for the corresponding scenario is suspended and switched to human-window priority, and it resumes after passing re-verification the next quarter. The verification protocol is at `visual/assets/independent-verification-protocol.json`, and verification reports are made public (after desensitization) for public and regulatory review [depth:risk_missing_data].
 
@@ -195,7 +204,7 @@ The regeneration strategy adopts a "retain–renovate–new-build" classificatio
 | Roles | Operator (station operating enterprise), subdistrict-office counter duty staff (human fallback), community health service desk guide (health fallback), legal aid receptionist (legal fallback), independent evaluation body (quarterly verification) |
 | Process | Resident comes to the station / calls the hotline → AI navigation (Q&A and guidance only) → guarantee receipt automatically generated → automatic escalation to human staff on time overrun → human handling / referral → receipt updated to completed status → quarterly sampled verification |
 | Equipment | AI interactive screen ×1 at the station (switchable to paper-based guidance), hotline line ×1, receipt printing terminal ×1 (replaceable by a fully paper-based process) |
-| Data | Only item names and processing status (aggregated); no identity, document content, medical records, or case facts are collected |
+| Data | Only matter names, handling status and timestamps (aggregated); no identity, document content, medical records or case facts; location data is used within the service session only and not retained; 90-day retention is audit-role only, details deleted after anonymization |
 | Human positions | Counter duty staff 1 person/shift, health guide 1 person/shift, legal aid receptionist 1 person/shift (8:00–18:00 during the pilot period) |
 | Cost range | Equipment RMB 80,000–150,000 (conceptual estimate, including transferable modules), labor cost RMB 30,000–50,000/month (conceptual estimate), evaluation fee RMB 20,000–30,000/quarter (conceptual estimate); all amounts are rough ranges pending verification, not commitments |
 | Timeline | Month 1: current-state survey + demand baseline; Month 2: equipment installation + staff training + trial run of the receipt process; Months 3–6: formal pilot + first quarterly verification |

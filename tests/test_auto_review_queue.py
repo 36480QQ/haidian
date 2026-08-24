@@ -120,6 +120,61 @@ class AutoReviewQueueTests(unittest.TestCase):
         }
         self.assertEqual("accept", decide(review, decision, 60).action)
 
+    def test_conditional_followups_do_not_block_intake(self) -> None:
+        review = {
+            "mandatory_rejection": {"result": "pass"},
+            "gate_checks": {
+                name: {"status": "pass"}
+                for name in [
+                    "deterministic_validation",
+                    "spatial_review",
+                    "visual_review",
+                    "professional_evidence_review",
+                ]
+            },
+            "recommendation": "formal-review-ready",
+            "can_enter_formal_review": True,
+            "required_next_actions_zh": [],
+            "conditional_followups": [
+                {
+                    "action_zh": "正式边界发布后，从拓扑开始重算全部空间载体。",
+                    "blocking_now": False,
+                    "trigger": "official-data-available",
+                    "owner": "participant",
+                }
+            ],
+        }
+        outcome = decide(review, {"weighted_score_100": 90}, 60)
+        self.assertEqual("accept", outcome.action)
+
+    def test_invalid_conditional_followup_fails_closed(self) -> None:
+        review = {
+            "mandatory_rejection": {"result": "pass"},
+            "gate_checks": {
+                name: {"status": "pass"}
+                for name in [
+                    "deterministic_validation",
+                    "spatial_review",
+                    "visual_review",
+                    "professional_evidence_review",
+                ]
+            },
+            "recommendation": "formal-review-ready",
+            "can_enter_formal_review": True,
+            "required_next_actions_zh": [],
+            "conditional_followups": [
+                {
+                    "action_zh": "立即修复当前错误声明。",
+                    "blocking_now": True,
+                    "trigger": "now",
+                    "owner": "participant",
+                }
+            ],
+        }
+        outcome = decide(review, {"weighted_score_100": 90}, 60)
+        self.assertEqual("request-changes", outcome.action)
+        self.assertIn("conditional_followups", outcome.reason)
+
     def test_non_formal_recommendation_blocks_intake(self) -> None:
         review = {
             "mandatory_rejection": {"result": "pass"},
@@ -349,12 +404,25 @@ class AutoReviewQueueTests(unittest.TestCase):
             checkout = Path(temp_dir) / "checkout"
             submission = checkout / "submissions" / "alice" / "plan"
             submission.mkdir(parents=True)
+            schema_path = (
+                checkout
+                / "brief"
+                / "site-package"
+                / "schemas"
+                / "advisory_review.schema.json"
+            )
+            schema_path.parent.mkdir(parents=True)
+            schema_path.write_text(
+                json.dumps({"properties": {"schema_version": {"const": "0.2.0"}}}),
+                encoding="utf-8",
+            )
             (submission / "proposal.md").write_text("proposal", encoding="utf-8")
             (submission / "manifest.json").write_text('{"files": []}', encoding="utf-8")
             digest = package_sha256(submission)
             audit = Path(temp_dir) / "audit"
             audit.mkdir()
             review = {
+                "schema_version": "0.2.0",
                 "submission_dir": "submissions/alice/plan",
                 "mandatory_rejection": {"result": "pass"},
                 "gate_checks": {
@@ -386,6 +454,13 @@ class AutoReviewQueueTests(unittest.TestCase):
             self.assertIsNotNone(cached)
             assert cached is not None
             self.assertEqual("accept", cached[2].action)
+
+            review["schema_version"] = "0.1.0"
+            (audit / "ai-review.json").write_text(json.dumps(review), encoding="utf-8")
+            self.assertIsNone(load_cached_review(audit, "submissions/alice/plan", checkout, 60))
+
+            review["schema_version"] = "0.2.0"
+            (audit / "ai-review.json").write_text(json.dumps(review), encoding="utf-8")
 
             (submission / "proposal.md").write_text("updated", encoding="utf-8")
             self.assertIsNone(load_cached_review(audit, "submissions/alice/plan", checkout, 60))
