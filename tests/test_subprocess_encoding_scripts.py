@@ -87,14 +87,24 @@ class BootstrapWorkspaceDecodingTests(unittest.TestCase):
     """bootstrap_participant_workspace.run() drives git/gh on participant machines."""
 
     def test_utf8_stdout_is_decoded_intact(self) -> None:
-        script = f"import sys; sys.stdout.write({SAMPLE_TEXT!r})"
+        # The child must emit UTF-8 bytes deterministically; on a Windows
+        # console with a legacy code page, Python's stdout defaults to the
+        # locale encoding and cannot even encode the sample. Reconfiguring
+        # the child's stream keeps this test about the parent's decoding.
+        script = (
+            f"import sys; sys.stdout.reconfigure(encoding='utf-8');"
+            f" sys.stdout.write({SAMPLE_TEXT!r})"
+        )
         self.assertEqual(
             SAMPLE_TEXT,
             bootstrap_participant_workspace.run([sys.executable, "-c", script]),
         )
 
     def test_utf8_stderr_survives_in_the_error_detail(self) -> None:
-        script = f"import sys; sys.stderr.write({SAMPLE_TEXT!r}); raise SystemExit(2)"
+        script = (
+            f"import sys; sys.stderr.reconfigure(encoding='utf-8');"
+            f" sys.stderr.write({SAMPLE_TEXT!r}); raise SystemExit(2)"
+        )
         with self.assertRaises(bootstrap_participant_workspace.BootstrapError) as raised:
             bootstrap_participant_workspace.run([sys.executable, "-c", script])
         message = str(raised.exception)
