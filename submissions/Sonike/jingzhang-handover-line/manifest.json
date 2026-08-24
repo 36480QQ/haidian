@@ -111,13 +111,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d8b2a7de596593fbe638317a173e293d4ca576672d136e29e72bb6df49ec2532"
+      "sha256": "11bedaffcac1812d9ec2900b53e05a58bac0d4c4c399f50f928defb4a9e3a41d"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "97ad5104c3b9d829527b64fdd5fc827695ef772b15eb0e41f5e202b810509409"
+      "sha256": "97b368441260629cf0938f7edef18b40f252fdafe34ab55fcd56323a1ac60ea1"
     },
     {
       "path": "standard_matrix.json",
@@ -169,7 +169,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3b783bc598660cf2cb9f96882b54d712c5e96d6fb2d2353a6450a6291636ec07"
+      "sha256": "9991fb8a4461591f8f56a0b12153f40af1df26a1cf3e692049df3178cb785e29"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -298,7 +298,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "728508730e392e6b2e494f4363e390e9fd39ee39192e6a0b282526a85cc4abc6"
+      "sha256": "1837fe5dbeb53c47d6d32c1a543f5139dbf75a138031c6568cc3a982f2f944d9"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -405,7 +405,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "6e4057cd753580a40658a20abbaec31d96c793b79c7802580d5ef31acbe2f056"
+      "sha256": "c2a5164fbb69cfe188233a12dda040c935b2b20eddc3aad134c029ee3790fe4c"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -489,7 +489,7 @@
       "path": "visual/assets/governance/claims-audit.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "133b9c531773dca511eb8b2ede4b83ba86ce110dbd956a6de59cee5e65e8f62d",
+      "sha256": "7958e26aead4410e4db712cb7e2f6527dc079da77e440d99a8c0647926fc87a8",
       "title_zh": "正文数值声明审计器",
       "title_en": "Prose claim auditor",
       "description_zh": "只读、离线、零网络依赖的 66 项声明审计：复算指标、几何、二十单元、断面、布局对照、矩阵引用、来源深度、许可一致性、PDF 文字层、HTML 包内 CJK 字体与全载体 v2.0 可见版本。全部一致退出 0，任一回归退出 1。",
@@ -499,11 +499,11 @@
       "path": "visual/assets/governance/audit-selftest.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "aeceed542ee83b7480733e68e4d9d102a5332ba03b0a17dee22ba652c7588c3e",
+      "sha256": "3cbbbf16206fb9de7a35faa266c5b25ebc86248efc3c45353705aedc16d2d3df",
       "title_zh": "自检脚本的回归测试",
       "title_en": "Regression test for the self-check scripts",
-      "description_zh": "对声明审计器、版本审计器与协议重跑器做 46 例回归测试：2 例正向锁定 66 项声明、A0 内嵌图 4/4 像素一致、12 账、96 规则与 48 断言；44 例阴性逐一注入已知缺陷并要求对应检查失败，其中包括交换 A0 首页预期源图以验证栅格版本绑定。注入只写系统临时目录，不改投稿包。",
-      "description_en": "A 46-case regression test for the claim auditor, version auditor and protocol re-runner: two positive cases lock 66 claim checks, 4/4 pixel-identical embedded A0 figures, 12 ledgers, 96 rules and 48 assertions; 44 negative cases inject known defects one by one, including swapping the expected A0 source figures to test raster-version binding. Mutations stay in the system temporary directory and never alter the package."
+      "description_zh": "对声明审计器、版本审计器与协议重跑器做 47 例回归测试：2 例正向锁定 66 项声明、A0 内嵌图 4/4 像素一致、12 账、96 规则与 48 断言；45 例阴性逐一注入已知缺陷并要求对应检查失败，其中包括交换 A0 首页预期源图及移除等宽控件的包内 CJK 回退。注入只写系统临时目录，不改投稿包。",
+      "description_en": "A 47-case regression test for the claim auditor, version auditor and protocol re-runner: two positive cases lock 66 claim checks, 4/4 pixel-identical embedded A0 figures, 12 ledgers, 96 rules and 48 assertions; 45 negative cases inject known defects one by one, including swapping the expected A0 sources and removing the package-local CJK fallback from monospaced controls. Mutations stay in the system temporary directory and never alter the package."
     },
     {
       "path": "assets/figures/shift-ledger.png",
@@ -716,7 +716,11 @@
       "path": "visual/assets/governance/webfont-audit.js",
       "role": "verification_script",
       "required": false,
-      "sha256": "5ebc4eda1b71808ec723efce0a2d01d7591109ab816033d1c1352cf0efffe6f2"
+      "sha256": "de9d8c1d9a454592ee06f782371e58c872a5dfcfd00d9cfce881cd97760fc3d7",
+      "title_zh": "离线网页 CJK 字体审计器",
+      "title_en": "Offline CJK webfont auditor",
+      "description_zh": "解码四页共用的包内 WOFF2，核字体哈希、OFL、来源、可见字形覆盖、中文 body 首选字体，以及交互页 24 类等宽标签对 JZHandoverCJK 的显式回退；另拒绝无效 font shorthand inherit。",
+      "description_en": "Decodes the package-local WOFF2 shared by four pages and verifies its hash, OFL, source, visible glyph coverage, primary Chinese body stack, and explicit JZHandoverCJK fallback for 24 monospaced interactive-label selectors; invalid font-shorthand inherit is rejected."
     },
     {
       "path": "visual/assets/governance/version-audit.js",

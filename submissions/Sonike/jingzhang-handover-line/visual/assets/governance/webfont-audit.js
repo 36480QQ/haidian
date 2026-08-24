@@ -26,10 +26,18 @@ const BUILD_REL = "visual/assets/governance/build-webfont.js";
 const FAMILY = "JZHandoverCJK";
 const LICENSE_SHA256 = "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2";
 const PAGES = [
-  { path: "report/proposal.html", href: "../visual/assets/governance/noto-cjk-subset.css", primary: true },
-  { path: "report/proposal.en.html", href: "../visual/assets/governance/noto-cjk-subset.css", primary: false },
-  { path: "visual/index.html", href: "assets/governance/noto-cjk-subset.css", primary: true },
-  { path: "visual/index.en.html", href: "assets/governance/noto-cjk-subset.css", primary: false },
+  { path: "report/proposal.html", href: "../visual/assets/governance/noto-cjk-subset.css", primary: true, interactive: false },
+  { path: "report/proposal.en.html", href: "../visual/assets/governance/noto-cjk-subset.css", primary: false, interactive: false },
+  { path: "visual/index.html", href: "assets/governance/noto-cjk-subset.css", primary: true, interactive: true },
+  { path: "visual/index.en.html", href: "assets/governance/noto-cjk-subset.css", primary: false, interactive: true },
+];
+const MONO_FALLBACK_MARKER = "/* CJK_MONO_FALLBACK_V1 */";
+const MONO_FALLBACK_SELECTORS = [
+  ".status", ".hero:after", ".eyebrow", ".hero-meta b", ".shift-line em",
+  ".kicker", ".caption", ".scope-card:before", ".yard .code", ".yard h4",
+  ".scenario-head .big", ".scenario .id", ".phase strong", ".metric strong",
+  ".check b", ".check em", ".end small", ".sw-kicker", ".sw-stats b",
+  ".off-k", ".off-s", ".reviewbar .rb-k", ".sw-btns button", ".reviewbar button",
 ];
 
 function resolveIn(relative) {
@@ -126,6 +134,24 @@ for (const page of PAGES) {
   if (!link.test(html)) errors.push(`${page.path}: 缺本地 CJK 字体 CSS 链接 ${page.href}`);
   if (!new RegExp(`font-family\\s*:[^;{}]*${FAMILY}`, "i").test(html)) errors.push(`${page.path}: 页面样式未使用 ${FAMILY}`);
   if (page.primary && !new RegExp(`body\\s*\\{[^}]*font-family\\s*:\\s*["']?${FAMILY}["']?`, "is").test(html)) errors.push(`${page.path}: 中文 body 必须把 ${FAMILY} 放在字体栈首位`);
+  if (page.interactive) {
+    const markerAt = html.indexOf(MONO_FALLBACK_MARKER);
+    const styleEnd = markerAt < 0 ? -1 : html.indexOf("</style>", markerAt);
+    const fallbackRule = markerAt < 0 || styleEnd < 0 ? "" : html.slice(markerAt, styleEnd);
+    if (!fallbackRule) errors.push(`${page.path}: 缺 CJK-safe 等宽字体回退规则`);
+    else {
+      const missingSelectors = MONO_FALLBACK_SELECTORS.filter((selector) => !fallbackRule.includes(selector));
+      if (missingSelectors.length) errors.push(`${page.path}: CJK-safe 等宽回退漏选择器 ${missingSelectors.slice(0, 5).join("、")}`);
+      const declaration = fallbackRule.match(/font-family\s*:\s*([^;}]+)/i);
+      if (!declaration || !declaration[1].includes(FAMILY) || !/monospace/i.test(declaration[1]) || !/!important/i.test(declaration[1])) {
+        errors.push(`${page.path}: 等宽标签未显式回退到 ${FAMILY}`);
+      }
+    }
+    const invalidInherit = [...html.matchAll(/font\s*:\s*([^;{}]+)/gi)]
+      .map((match) => match[1].trim())
+      .filter((value) => value !== "inherit" && /\binherit\b/i.test(value));
+    if (invalidInherit.length) errors.push(`${page.path}: 存在无效 font shorthand inherit（${invalidInherit[0]}）`);
+  }
   const codepoints = visibleCodepoints(html);
   requiredCount += codepoints.size;
   const missing = [...codepoints].filter((cp) => !covered.has(cp));
@@ -160,6 +186,7 @@ const result = {
   font_sha256: fontBuffer ? sha256(fontBuffer) : null,
   pages_checked: PAGES.length,
   visible_codepoint_sets_checked: requiredCount,
+  interactive_mono_fallback_selectors_checked: MONO_FALLBACK_SELECTORS.length,
   errors,
 };
 

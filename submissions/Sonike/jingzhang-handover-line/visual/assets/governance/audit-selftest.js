@@ -199,6 +199,9 @@ negInput("sources.json 删掉一条来源的 not_usable_for",
 negInput("离线中文网页删掉包内字体 CSS 链接 —— macOS 有系统字体时看不出，干净评审容器会出现方块字",
   { "visual/index.html": textOf("visual/index.html").replace(/\s*<link rel="stylesheet" href="assets\/governance\/noto-cjk-subset\.css">/, "") }, ["G6"]);
 
+negInput("中文等宽标签删掉包内 CJK 回退 —— 字体文件与 body 均正确，微标题和交互控件在干净 Linux 仍会变方框",
+  { "visual/index.html": textOf("visual/index.html").replace('"JZHandoverCJK",monospace !important', "monospace !important") }, ["G6"]);
+
 negInput("Web 字体覆盖记录删掉「京」字 —— 字体文件仍在、CSS 仍正确，但标题会缺字",
   { "visual/assets/governance/noto-cjk-subset.coverage.json": jsonMutated(
       "visual/assets/governance/noto-cjk-subset.coverage.json",

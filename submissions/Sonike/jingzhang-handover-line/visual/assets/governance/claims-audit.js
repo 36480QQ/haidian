@@ -493,9 +493,10 @@ add("G3", "正文的 [depth:] 标记全部能在 design_depth_matrix.json 里解
       bad.length ? bad.slice(0, 4).join("；") : `155 个 CMap：技术内页 9 个恒等映射＋首页 146 个合法稀疏映射`);
 }
 
-/* G6/G7. 评分器暴露的两个表达层盲点必须进入总退出码：无系统中文字体时的
-   HTML 字形覆盖，以及各可见载体的包版本一致性。两项各由独立小审计器负责，
-   本审计器只把其机器可读结论并入 66 项总清单；覆盖层原样下传给阴性自测。 */
+/* G6/G7. 评分器暴露的表达层盲点必须进入总退出码：无系统中文字体时的
+   HTML 字形覆盖、等宽控件重置后的显式 CJK 回退，以及各可见载体的包版本一致性。
+   两项各由独立小审计器负责，本审计器只把其机器可读结论并入 66 项总清单；
+   覆盖层原样下传给阴性自测。 */
 function runNestedAudit(filename) {
   const env = Object.assign({}, process.env);
   if (OVERLAY) env.JZ_AUDIT_OVERLAY = OVERLAY;
@@ -511,10 +512,10 @@ function runNestedAudit(filename) {
   const result = runNestedAudit("webfont-audit.js");
   const problems = result.parsed && Array.isArray(result.parsed.errors)
     ? result.parsed.errors : [result.stderr || "无法解析 webfont-audit.js 输出"];
-  add("G6", "四份 HTML 使用包内 OFL CJK WOFF2，字体哈希、许可、来源与全部可见非 ASCII 字形覆盖闭合",
+  add("G6", "四份 HTML 使用包内 OFL CJK WOFF2，字体哈希、许可、来源、全部可见非 ASCII 字形及 24 类等宽控件回退闭合",
       result.status === 0 && result.parsed && result.parsed.ok === true,
       problems.length ? problems.slice(0, 4).join("；")
-        : `${result.parsed.pages_checked} 页／${result.parsed.font_bytes} bytes／${result.parsed.visible_codepoint_sets_checked} 组可见字符`);
+        : `${result.parsed.pages_checked} 页／${result.parsed.font_bytes} bytes／${result.parsed.visible_codepoint_sets_checked} 组可见字符／${result.parsed.interactive_mono_fallback_selectors_checked} 类等宽控件`);
 }
 
 {
