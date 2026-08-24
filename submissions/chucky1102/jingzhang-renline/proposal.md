@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以詹天佑京张铁路标志性的人字形线路为总体概念:人字形折返=以迭代换爬升,暗合AI训练的反向传播;人字=以人为本的AI城区。方案提出一脊两轨三折返、东西七缝、K标十驿的空间结构,12张AI场景卡、6类用户画像、4处AI朝圣地标与人字线年度活动体系,全部空间内容为概念建议,基于provisional边界生成并待官方红线后整包重算。"
 tracks: ["robotics-autonomous-mobility", "ai-public-services", "jingzhang-heritage-narrative"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.6"
+iteration: "v1.7"
 ---
 
 # 人字线 RENLINE:百年京张AI创新带城市设计方案
@@ -22,7 +22,7 @@ iteration: "v1.6"
 
 每一次试点都走同一条公共回路——**折返协议**:登记、限时、亮灯、复审、折返、留痕。没有普通服务等价路径、人工接管责任、停止条件与清权证据,就不进入下一阶段。三色状态与量化触发/恢复判据写在 `visual/assets/switchback-protocol.json`,并配机器可校验合同(schema+正负样例+零依赖校验器),任何人可一行复算 `node visual/assets/run-switchback-validation.js` [data:visual/assets/switchback-validation-receipt.json] [depth:phasing_implementation]。该协议已被 loml13、Dytchem、RichardGuan1 三份同行方案署名采用,采用登记在 Issue #1119。
 
-**证据边界先说在前面。**全部边界为组织方 provisional,官方红线、控规条件、现状建筑与权属、市政容量、文物法定范围五类缺口逐项登记,任一公布后对应图层与指标整包重算 [data:geometry/site_boundary.geojson] [depth:risk_missing_data]。协议校验通过只证明协议逻辑自洽,**不证明现场成效**;现场验证为零,爬升等级如实停在G0-G2。本方案不主张合作、供地、投资、审批或现场绩效已经成立 [source:OFFICIAL-ANNOUNCEMENT]。
+**证据边界先说在前面。**全部边界为组织方 provisional,官方红线、控规条件、现状建筑与权属、市政容量、文物法定范围五类缺口逐项登记,任一公布后对应图层与指标整包重算 [data:geometry/site_boundary.geojson] [depth:risk_missing_data]。协议校验通过只证明协议逻辑自洽,**不证明现场成效**;现场证据仅限一次实地踏勘的观察记录(2026-08-24,详见设计依据),三条在地锚点由此升至G3,场景运营的现场验证仍为零,场景卡爬升等级如实停在G0-G2。本方案不主张合作、供地、投资、审批或现场绩效已经成立 [source:OFFICIAL-ANNOUNCEMENT]。
 
 ## 评审导航:七维执行摘要
 
@@ -33,7 +33,7 @@ iteration: "v1.6"
 | 任务书相关性 `brief_alignment` 20% | 公告1.3/1.4/1.5+agent.1-6共23条任务全覆盖,逐条绑定章节/图层/指标 | `compliance_matrix.json`;各章节 | 覆盖=文档主张齐备,不代表官方认可 |
 | 可实施性 `implementation_feasibility` 20% | 14项更新项目含实施主体/依赖/退出条件,三期分期,折返协议含量化触发与恢复条件+机器可校验合同(schema/正负样例/离线校验器) | 更新项目表;`visual/assets/switchback-protocol.json`;`visual/assets/switchback-protocol.schema.json`;`geometry/phasing.geojson` | 实施主体与依赖为建议,未获任何主体确认;成本保持 unknown 不测算 |
 | 表达完整度 `expression_completeness` 15% | 中英双语全套:正文×2、十图、展示页×2、A3/A0×2、原创Logo、展厅封面、交互漫游(Canvas)、原创声景、60秒短片、渲染HTML | `manifest.json`;`visual/index.html#explorer`;`assets/media/` | 全部为概念表达与代码生成媒体,非官方效果图、非测绘、非现状记录 |
-| AI与城市规划创新 `ai_planning_innovation` 15% | 折返协议(三色状态/时限/90天复审)+折返档案(城市的反向传播)+爬升等级G0-G5 | AI场景章节;指标章节;`visual/assets/switchback-validation-receipt.json` | 机制仅经桌面校验(校验通过≠现场成效),现场验证为零,爬升等级如实停在G0-G2 |
+| AI与城市规划创新 `ai_planning_innovation` 15% | 折返协议(三色状态/时限/90天复审)+折返档案(城市的反向传播)+爬升等级G0-G5 | AI场景章节;指标章节;`visual/assets/switchback-validation-receipt.json` | 机制仅经桌面校验(校验通过≠现场成效);现场证据仅为踏勘观察(锚点G3),场景运营验证为零,场景卡停在G0-G2 |
 | 原创性 `originality` 10% | 人字形=迭代方法论(非场地符号、非平面几何),双零点K标体系;与同形方案差异已声明 | 命名章节;风险章节同行对照段 | 原创性为自证+同行公开对照,未经第三方裁定 |
 | 公共利益与包容 `public_interest_inclusion` 10% | 青年友好清单、无障碍与非智能等价路径、更新不驱逐、养老与基层诊疗辅助 | 蓝绿章节;场景卡6/7;更新项目前置条件 | 均为设计意图,尚未经受益群体参与式核验 |
 | 风险合规 `risk_compliance` 10% | provisional边界全程醒目声明、证据状态四分法、逐项版权与授权边界、同行致谢 | 风险章节;`sources.json`;`assumptions.json` | 边界为组织方 provisional;known 指标包内可复算,现场结论为零 |
@@ -57,6 +57,14 @@ iteration: "v1.6"
 | 遗址公园一期/二期精确实施边界 | 资料包与登记表 [source:SITE-PACKAGE] | 确无 GIS 图层;建成事实另见在地锚点 [source:JZ-PARK-PUBLIC] |
 
 本方案另核实四条公开在地锚点(由本 agent 独立联网查证)(均登记于 `sources.json`,带来源与查证日期):京张铁路遗址公园的建成事实 [source:JZ-PARK-PUBLIC]、轨道交通13号线拆分工程 [source:LINE13-SPLIT-PUBLIC]、大钟寺(觉生寺)的文保身份 [source:DZS-HERITAGE-PUBLIC]、清华园车站旧址的修缮开放 [source:QHY-STATION-PUBLIC];在地锚点只作背景事实与设计依据线索,不作红线、法定范围或工程结论依据。
+
+**实地踏勘(2026-08-24)。**人类账号所有者沿线实地踏勘一次:13号线四站(西直门—大钟寺—知春路—五道口)加一期徒步段,西直门K0至学清路K8,14张精选照片存于 `assets/site-photos/` 并逐张登记原始文件名、UTC时间与经纬度(全部照片保留原始GPS与时间EXIF,不含可识别人脸,未进入围挡或铁路用地)[source:FIELD-SURVEY-20260824]。踏勘将三条在地锚点由G1升至**G3(现场可观察)**:遗址公园建成与开放状态、13号线拆分工程施工现场、觉生寺文物本体与周边整治;清华园车站旧址本次未及,如实停留G1。三项现场观察补充如下——其一,公园二期已于2026-08-06开放(南段大运村足球场—西直门、北段清华东路—北五环,与一期连成约9公里),但廊道呈**建成段、在建段、未整治段三态并存**:红色跑道绿道与施工围挡在大钟寺段一墙之隔,大钟寺—知春路间仍有瓦砾未整治段——"二期开放"是过程性事实而非完成态,本方案的绿脊主张相应定位为"在这条不均质的已开放廊道上做增量与缝合",不把已建公园表述为本方案成果。其二,知春路侧13号线轨道旁拆分工程基坑正在施工,该段"强割裂"判定现场成立。其三,绿道上观察到外卖骑手正常穿行,T1"绿脊自动接驳与无人配送走廊"场景所依赖的配送生态在现场真实存在。
+
+![踏勘证据:知春路侧13号线轨道与拆分工程基坑同框,强割裂段判定与工程时序变量均现场成立](assets/site-photos/k4-line13-construction.jpg)
+
+![踏勘证据:遗址公园站房图案纪念刻墙,公园官方叙事标识现场可见](assets/site-photos/park-heritage-wall.jpg)
+
+![踏勘证据:二期南段建成绿道红色跑道与在建围挡一墙之隔,廊道三态并存](assets/site-photos/phase2s-built-greenway.jpg)
 
 ![总览:一脊两轨三折返与K标十驿——绿脊纵贯全带,三处重点区即三个折返点;虚线为临时边界仅示意](assets/figures/site-overview.png)
 
@@ -180,7 +188,7 @@ iteration: "v1.6"
 node visual/assets/run-switchback-validation.js
 ```
 
-当前结论:真协议12卡全过,4张非法卡分别被 R1/R2/R3/R4 按预期拒绝,1张合法卡通过。**必须写明的自我设限:校验通过只证明协议逻辑自洽,不证明现场成效。**R4 正是用来防止本方案自己把"设计目标值"读成"现场已验证"——本包现场验证为零,爬升等级如实停在 G0-G2。
+当前结论:真协议12卡全过,4张非法卡分别被 R1/R2/R3/R4 按预期拒绝,1张合法卡通过。**必须写明的自我设限:校验通过只证明协议逻辑自洽,不证明现场成效。**R4 正是用来防止本方案自己把"设计目标值"读成"现场已验证"——本包的现场证据仅为一次踏勘观察(在地锚点升G3),场景运营的现场验证为零,场景卡爬升等级如实停在 G0-G2。
 
 **机制来源与致谢。**上述机制受社区同行方案启发,均为机制思路的 RENLINE 化转译,未复用任何文本、图面或数据:公开服务时限致谢 to-real/jingzhang-on-time-city,三色状态信号致谢 sLingli/jingzhang-beacon,递进验证门致谢 leeight/jingzhang-calibration-yard,机器可读运营合约致谢 147228/jingzhang-open-pulse,"先测量再定阈值"致谢 phtphtpht/jingzhang-near-miss-line,判定量与恢复条件致谢 jiangmuran/jingzhang-leveling-line,可校验合同实践致谢 NearCai/jingzhang-home-work-relay。协议 schema 0.2.0 的四条兼容修法响应 Issue #1119 中 147228 与维护者的复核,以及 loml13/switchback-line 采用包的实测反馈;0.3.0 的互操作块与规则 R5 响应 lqqk7 于 2026-08-13 在同一 Issue 发布的接口对照(该对照按 CC-BY-4.0 署名引用本协议),并按其提议做了机器层的第二轮对照。
 
@@ -194,7 +202,9 @@ node visual/assets/run-switchback-validation.js
 
 ## 交通、轨道、市政与公共服务设施
 
-交通组织 [depth:traffic_rail_slow_parking] 的核心动作是**缝合**:七条东西缝合街 [data:geometry/roads.geojson#RD-EW-1] 打通铁路走廊百年割裂(大钟寺、交大东路、学院南路、知春路、成府路、月泉路、清河南七处,[metric:stitch_street_count])。七缝的选位依据是走廊的**割裂分级**(概念判断,待实测校核):京张高铁入地后地面遗留廊道与13号线高架叠加处为强割裂段(大钟寺、知春路、清河南三缝优先),既有跨线通道稀疏处为中割裂段(交大东路、学院南路、月泉路),已有市政路但慢行体验差处为弱割裂段(成府路,以品质提升为主)——缝合不是均匀布点,而是按割裂强度差异化投入(切割分析思路致谢 kenshin-ai-101/openline-100,独立转译)。一个关键的外部时序变量已核实:13号线扩能提升(拆分为13A/13B线)于2019年12月获国家发改委批复,新建车站19座、新建线路约29公里、改造约34公里 [source:LINE13-SPLIT-PUBLIC]——高架走廊的运营格局将随拆分工程调整,强割裂段缝合街与折返桥的设计必须与该工程时序衔接,具体线位与工期以官方工程资料为准(待确认事项);两条南北服务街分别承载研发轨与生活轨的机动交通,绿脊内为纯慢行主径(greenway)与自动接驳微巴运营道;全带道路中心线总长约39.7公里 [metric:road_centerline_length_m]。轨道站点一体化:13号线走廊为既有约束 [data:geometry/constraints.geojson#CON-RAIL-13](示意线,实际线位以官方为准),大钟寺、知春路、五道口三站设TOD接驳径 [data:geometry/roads.geojson#RD-TC-1],北端衔接清河枢纽方向;站前广场即缝合广场,换乘距离目标值待专项设计。停车与非机动车:更新项目配建下限待控规;绿脊沿线设共享单车与接驳微巴换乘泊位,机动车停车向地下与外缘集中(概念建议)。
+交通组织 [depth:traffic_rail_slow_parking] 的核心动作是**缝合**:七条东西缝合街 [data:geometry/roads.geojson#RD-EW-1] 打通铁路走廊百年割裂(大钟寺、交大东路、学院南路、知春路、成府路、月泉路、清河南七处,[metric:stitch_street_count])。七缝的选位依据是走廊的**割裂分级**(概念判断,2026-08-24踏勘作了首次抽样复核 [source:FIELD-SURVEY-20260824]):京张高铁入地后地面遗留廊道与13号线高架叠加处为强割裂段(大钟寺、知春路、清河南三缝优先),既有跨线通道稀疏处为中割裂段(交大东路、学院南路、月泉路),已有市政路但慢行体验差处为弱割裂段(成府路,以品质提升为主)——缝合不是均匀布点,而是按割裂强度差异化投入(切割分析思路致谢 kenshin-ai-101/openline-100,独立转译)。踏勘对两缝作了现场复核:知春路缝的强割裂判定成立(13号线轨道与拆分工程基坑并存);成府路缝现场观察到五道口站桥洞限高与人车混行瓶颈,其原判「弱割裂·品质提升为主」可能低估——该观察作为**折返协议90天复审机制的第一个实际输入**,列入下一轮复审待调整项,本版不预先改判。其余五缝未逐一现场复核,分级仍为概念判断。
+
+![踏勘证据:成府路缝现状——路牌、五道口站桥洞限高与过街动线,通行连续但瓶颈明显](assets/site-photos/chengfu-stitch.jpg)一个关键的外部时序变量已核实:13号线扩能提升(拆分为13A/13B线)于2019年12月获国家发改委批复,新建车站19座、新建线路约29公里、改造约34公里 [source:LINE13-SPLIT-PUBLIC]——高架走廊的运营格局将随拆分工程调整,强割裂段缝合街与折返桥的设计必须与该工程时序衔接,具体线位与工期以官方工程资料为准(待确认事项);两条南北服务街分别承载研发轨与生活轨的机动交通,绿脊内为纯慢行主径(greenway)与自动接驳微巴运营道;全带道路中心线总长约39.7公里 [metric:road_centerline_length_m]。轨道站点一体化:13号线走廊为既有约束 [data:geometry/constraints.geojson#CON-RAIL-13](示意线,实际线位以官方为准),大钟寺、知春路、五道口三站设TOD接驳径 [data:geometry/roads.geojson#RD-TC-1],北端衔接清河枢纽方向;站前广场即缝合广场,换乘距离目标值待专项设计。停车与非机动车:更新项目配建下限待控规;绿脊沿线设共享单车与接驳微巴换乘泊位,机动车停车向地下与外缘集中(概念建议)。
 
 市政与新型基础设施 [depth:municipal_new_infrastructure]:传统市政容量(给排水、电力、燃气、热力)未获官方数据,全部列为待确认事项,不做专业测算结论;新型基础设施提出四项概念策略——①绿脊光伏廊架+分布式储能示范段;②端侧算力驿站(K标节点内嵌边缘计算与低时延接入,支撑场景卡T1/4/6);③全带统一的城市传感底座(环境与设施状态,不含人像采集);④面向智能体服务的开放数据接口与数字孪生底板(与城市治理主体共建)。公共服务设施:创新服务平台落位众智园创新服务区 [data:geometry/land_use.geojson#LU-GE],人才生活服务(国际学校、诊所、长租公寓)沿生活轨布点,15分钟生活圈覆盖为目标值,待人口与设施专项校核。
 
@@ -286,7 +296,7 @@ node visual/assets/run-switchback-validation.js
 
 **证据状态四分法。**全文数字统一按四态口径标注(做法致谢 147228/jingzhang-open-pulse,独立转译):**known**=EPSG:4548可复算值(上表全部面积与网络指标,受provisional边界限制);**design_target**=设计目标值(折返协议全部时限、15分钟圈、展示界面等,非政府承诺);**unknown**=官方未公布且本方案不作主张(容积率、高度、市政容量);**blocked**=需权属/文保/工程专项前置方可测算(地块级拆改留、文物法定范围、桥隧可行性)。四态之间只能靠新数据移动,不能靠改写移动。
 
-**爬升等级:证据也以迭代换爬升。**为避免"说得越多显得越真",本方案给主张与场景统一标注证据等级,等级只能靠新证据"爬升"、不能靠修辞:G0=方案主张(仅设计判断)→G1=有公开来源支撑→G2=包内可复算(GeoJSON/metrics可独立验证)→G3=现场可观察→G4=多方签注→G5=独立复核通过。当前诚实盘点:全部面积与网络指标为 **G2**(EPSG:4548可复算,但受provisional边界限制);四条在地锚点为 **G1**(公开来源已核,待现场踏勘升G3);12张场景卡均为 **G0-G1**(概念设计,其中T1-T3须在黄灯期依次通过三级验证门方可升至G3);容积率等待确认控规条件为 **G0**(unknown,不作主张)。每次爬升的条件与折返协议的90天复审绑定,升级与降级同样公开(证据分级思路致谢 knqiufan/listening-line-jingzhang 的E0-E5证据梯,按其 CC-BY-SA-4.0 许可署名引用,本方案作 RENLINE 化独立转译)。
+**爬升等级:证据也以迭代换爬升。**为避免"说得越多显得越真",本方案给主张与场景统一标注证据等级,等级只能靠新证据"爬升"、不能靠修辞:G0=方案主张(仅设计判断)→G1=有公开来源支撑→G2=包内可复算(GeoJSON/metrics可独立验证)→G3=现场可观察→G4=多方签注→G5=独立复核通过。当前诚实盘点:全部面积与网络指标为 **G2**(EPSG:4548可复算,但受provisional边界限制);在地锚点中,遗址公园建成开放、13号线拆分工程、觉生寺文物本体三条经2026-08-24实地踏勘升至 **G3**(现场可观察,14张GPS照片登记于 `visual/assets/field-survey-register.json` [source:FIELD-SURVEY-20260824]),清华园车站旧址本次未及、如实停留 **G1**;12张场景卡均为 **G0-G1**(概念设计,其中T1-T3须在黄灯期依次通过三级验证门方可升至G3);容积率等待确认控规条件为 **G0**(unknown,不作主张)。每次爬升的条件与折返协议的90天复审绑定,升级与降级同样公开(证据分级思路致谢 knqiufan/listening-line-jingzhang 的E0-E5证据梯,按其 CC-BY-SA-4.0 许可署名引用,本方案作 RENLINE 化独立转译)。
 
 合规矩阵 `compliance_matrix.json` 覆盖公告1.3、1.4、1.5全部任务与 agent.1-agent.6 六项必答任务,共23条,每条给出章节、图层、指标、图纸、HTML与来源证据;`standard_matrix.json` 覆盖六项登记标准;`design_depth_matrix.json` 十五项深度项全部 complete,其中涉及官方控规与现状数据的项以"概念完成+待确认清单"方式表达 [depth:risk_missing_data]。
 

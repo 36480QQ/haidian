@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "04ef043d1c8c1e286c9b704f35ca5f209d73495fc39a112f0fc747441aa2f73b"
+      "sha256": "ee6485dac7382bceb676370030866eb10a6ffc6305ab326776555a05e4057fea"
     },
     {
       "path": "agent.json",
@@ -50,7 +50,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "8f13f52e9ac36b5e2d2fa8180cfc4b183d461402772963e2c90cd5721b9f2c76"
+      "sha256": "1a085247049a89535398dc0539a7b0849023547612fedf0f0dab550b90686978"
     },
     {
       "path": "risk.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8661a92d80e25aa71a4ee8daaea5e287b7c6aeac103e1b7e38cf16321ee0029b"
+      "sha256": "8071c9641f93be3d9c364d0218e50546e06021cbafd2309c7069706bc8b08c81"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "90baf8dcf5ee1ca34f9d2e8cea45307885e428bd8c4bc5603f4f701e1cfb4d7d"
+      "sha256": "d7c2c5320433bfbac848edb10ccf754e9fae256471003e1a3e33818c426145ed"
     },
     {
       "path": "report/narrative.md",
@@ -99,7 +99,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "80d4037bcd3b165e463f2e80ffe52e7fffe892d577af90e281a70632e53c74a0"
+      "sha256": "f6df74d0b9618451c5baae65d257f5598a6e1a62566247cada52e4d5647a786d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -120,7 +120,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "211e49e10160b268be84c7c9ca1b0166e450a0e345f57a9a1d424a467b95cdeb"
+      "sha256": "38669f64f2e592e7c8972a1613711049679598120e92a62f3a14b689bbeaf254"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -217,7 +217,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "46c884fe8b9b3e1776251d26f16c66ce6e2157d04f2fd76eb2db2c91d6baf9cc"
+      "sha256": "702110c202f4cffa6d75ea23561fabc118e51a8e84aa4cce6aae5c25d8bb100b"
     },
     {
       "path": "report/proposal.en.html",
@@ -225,7 +225,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9539e6d4dd7533aa682aa25b149b2e756ee7af5b898e5e66004cf244b6456d09"
+      "sha256": "63e75720b3f6e3c5999c93fa69957302643d56fb100179cd37f72b864871a37d"
     },
     {
       "path": "visual/index.en.html",
@@ -233,7 +233,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e32c00a8adc47be5e068f4274f7262307adc2a84f0c707cd7292d75435c8e02d"
+      "sha256": "017c3842385863044f3e9b9ba09d1b61492c58b22b9054d22cc6e9831f602261"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -296,7 +296,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "7b04430ddc564520ec330e27d9ec8b517d3be683d816b451c27e7a1a5dbf492f"
+      "sha256": "6acb4b803e6c7dc817b437364b0300a1374cff780193a93d2eae7272ab78ebda"
     },
     {
       "path": "visual/assets/switchback-protocol.json",
@@ -504,6 +504,141 @@
       "sha256": "4248760ae0667cb5811d1614930bea02c77ff914ba15b6811dca742c85f09645",
       "title_zh": "短片海报",
       "title_en": "Walkthrough poster"
+    },
+    {
+      "path": "assets/site-photos/k0-beijingbei-gateway.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "K0 南门户:北京北站站房与西环双塔",
+      "title_en": "K0 Southern Gateway: Beijingbei Station and the Xihuan twin towers",
+      "sha256": "25ffa0ca19a2c663a725fa9abf227abb1b85fe62ceefa9d6b2b58603e35559e8"
+    },
+    {
+      "path": "assets/site-photos/k0-heritage-display.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "北京北站站内的京张铁路历史展陈屏",
+      "title_en": "Jing-Zhang railway heritage display inside Beijingbei Station",
+      "sha256": "af3c9876213b9a28558ec6e028e35970909b9228e474c0e7df7c8566b99bb122"
+    },
+    {
+      "path": "assets/site-photos/k1-juesheng-temple.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "觉生寺(大钟寺)山门与门前环境整治施工",
+      "title_en": "Juesheng Temple (Dazhongsi) gate with frontage improvement works underway",
+      "sha256": "ef5ce9e9904f1ba2645e0e62757f7a039f3cf4e8fd647a05d1acb3d110bf8997"
+    },
+    {
+      "path": "assets/site-photos/k1-dazhongsi-officeblock.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "大钟寺片区大体量新建办公与文物一街之隔",
+      "title_en": "Large new office volumes one street from the heritage compound",
+      "sha256": "595e3e0cfdb94b8676e62097e94539e03f8329d188f6dcf08609105f1784835e"
+    },
+    {
+      "path": "assets/site-photos/k1-street-frontage.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "大钟寺沿街首层门脸与非机动车停放现状",
+      "title_en": "Dazhongsi street-level frontages and bicycle parking as found",
+      "sha256": "0c9a8258dcb3abf28da5a91c19eb45fb98f32cadb3dbfbc2fc30cac19bd8f995"
+    },
+    {
+      "path": "assets/site-photos/k1-renewal-clearance.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "大钟寺旁大片拆迁平整场地",
+      "title_en": "Large clearance site beside Dazhongsi",
+      "sha256": "5094aae20a8c8a471c3efc95e8929bad8bfa09f19d5de1be85091caf8b1f8218"
+    },
+    {
+      "path": "assets/site-photos/phase2s-built-greenway.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "二期南段建成绿道(红色跑道)与在建围挡并存",
+      "title_en": "Phase-2 south: finished red jogging track beside fenced works",
+      "sha256": "b5bc51b20bc5febaba3126339d428bfe32b17d0cbfeb6d5fb8884f7eca92ad86"
+    },
+    {
+      "path": "assets/site-photos/corridor-unrenovated.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "大钟寺—知春路间廊道未整治段(列车车窗视角)",
+      "title_en": "Unrenovated corridor segment between Dazhongsi and Zhichunlu (from train window)",
+      "sha256": "2d4cc477d09267e8a4c19d4494547d254f4d736e131456fb5a5062e73d36067c"
+    },
+    {
+      "path": "assets/site-photos/k4-line13-construction.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "知春路侧13号线轨道与拆分工程基坑",
+      "title_en": "Line 13 tracks beside the split-works excavation pit near Zhichunlu",
+      "sha256": "da08570cc4cbe7d26bbd76afe682e911bd4beeb24e412ed9d7969d0f798db7fa"
+    },
+    {
+      "path": "assets/site-photos/phase1-greenway.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "一期绿道纵深:步道与芒草边坡",
+      "title_en": "Phase-1 greenway: path and grass slopes in depth",
+      "sha256": "c0eeee14afa31a59314a42e1da6052107014b59dccbe5773583cf1e381d385b9"
+    },
+    {
+      "path": "assets/site-photos/park-heritage-wall.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "遗址公园站房图案纪念刻墙",
+      "title_en": "Park memorial wall engraved with the historic station elevation",
+      "sha256": "f8c59088fdbef1b49c9f9d97ed73fefc05cc51dde75e0a94494ecfe2e4e51b3d"
+    },
+    {
+      "path": "assets/site-photos/greenway-courier.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "绿道上的外卖骑手",
+      "title_en": "A delivery courier riding along the greenway",
+      "sha256": "2318a45d82a256d62e8955dfdd9133fc15b38e22aaea9b6784aa53cb796897b7"
+    },
+    {
+      "path": "assets/site-photos/chengfu-stitch.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "成府路缝:路牌、五道口站桥洞与过街动线",
+      "title_en": "Chengfu Rd stitch: street sign, Wudaokou Station underpass and crossing flows",
+      "sha256": "89d03afe935a844816f3ebee31d6f03f63a78c52bf1e25b2c1aef381897c310d"
+    },
+    {
+      "path": "assets/site-photos/north-construction.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "二期北段旁在建工地群(塔吊与钢桁架)",
+      "title_en": "Construction cluster beside Phase-2 north (tower cranes and steel trusses)",
+      "sha256": "142a941012a9201f097b2895332c43f11afcbda7d56a0027ca02eea7591ffa45"
+    },
+    {
+      "path": "visual/assets/field-survey-register.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "实地踏勘逐张登记(2026-08-24)",
+      "title_en": "Field-survey per-photo register (2026-08-24)",
+      "sha256": "a4a4a5a5511f0f16ce3eda39eadd6a716acf6e535cd3839495cc2b81823829ad"
     }
   ],
   "validation_claim": {
