@@ -1,0 +1,279 @@
+---
+title: "Neural Governance: A Governance Handbook for a City of Agents"
+author_github: "Ada-LXGLabs"
+language: "en"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
+translation_of: "proposal.md"
+license: "COMMUNITY-DISPLAY-ONLY"
+summary: "A civic-agent-governance proposal centered on the proposition that 'connection is the interaction between agents, and governance is governing these interactions.' It translates the official six-step collaboration mechanism (public-data reading, proposal reasoning, public feedback, human review, risk flagging, and the urban governance knowledge base) into a recomputable, traceable, and feedback-looping governance framework, treating connection as the ontology and the object of governance of a multi-agent city."
+tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
+scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
+---
+
+# Neural Governance: A Governance Handbook for a City of Agents
+
+## Design Basis and Source Inventory
+
+This formal proposal takes as its first basis the *Pre-qualification Announcement for the International Open Call on Urban Design of the Centennial Jing-Zhang AI Innovation Belt* issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, and takes the maintainer-registered provisional rough boundaries, key areas, enums, metrics, and source inventory under `brief/site-package/` as machine-readable evidence. Before generating the proposal, the AI agent must read `design_brief.json`, `allowed_design_space.json`, `sources.json`, `enums/`, `ranges/`, `schemas/`, `data/source_registry.json`, and `data/processed/agent_fact_pack.md`, and use `project_scope_summary.csv`, `agent_task_requirements.csv`, `source_use_matrix.csv`, and `missing_data_checklist.csv` to establish the task, scope, source-use, and data-gap inventories. Every design judgment must be broken down into traceable sources, recomputable metrics, verifiable layers, and human-reviewable assumptions. The announcement requires the proposal to reach the urban-design depth of regulatory detailed planning and of an integrated implementation plan; textual narrative therefore cannot substitute for the GeoJSON, metric tables, A3 booklet, A0 boards, and HTML display deliverables.
+
+This proposal is not a stand-alone vision text; it organizes deliverables from the announcement, the agent-facing taskbook, and site materials. Only the most critical evidence is placed beside judgments here [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [depth:existing_conditions_diagnosis]. The complete source and standard coverage is kept in `sources.json`, `standard_matrix.json`, and `design_depth_matrix.json`, and is not repeated as machine indexes in the narrative.
+
+The usage boundary of the source registry is as follows [source:SOURCE-REGISTRY]:
+
+- `data/source_registry.json` registers the usage boundaries of public, cleared, and provisional materials.
+- Current registration summary: 7 formal-usable sources, 1 background source, 1 provisional-only source.
+- The agent must not upgrade `background_only` or `provisional_only` materials into an official boundary, statutory regulatory plan, formal scoring basis, or government implementation commitment.
+
+`data/processed/agent_fact_pack.md` is a reading-navigation layer for this proposal, not a new authoritative source [source:PROCESSED-FACT-PACK]. It helps the agent organize the three-level scope, three key areas, announcement tasks, agent.1–agent.6, source availability, and data-gap items into a readable proposal; factual judgments must still return to the registered original materials [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK], and the complete source relationships are kept in `sources.json`.
+
+![Source evidence chain and submission package](assets/figures/site-overview.png)
+
+While the official `SITE_BOUNDARY` or the three `KEY_AREA` polygons have not yet been obtained, this scaffold uses `brief/site-package/geometry/provisional_boundaries.geojson` to generate a provisional formal package. Both `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` in the submission must be marked `provisional_constraint` and `official_boundary=false`; they may only be used for proposal generation, self-check, visualization, and design discussion, and must not serve as an official redline, approval basis, precise-area basis, or statutory control conclusion. This organizer-side data gap does not itself block content scoring; once official polygons are supplied, site boundary, key areas, land use, roads, green space, public space, buildings, phasing, and metrics must all be recalculated.
+
+The scoreable status produced by this scaffold is: **provisional boundary, retaining precision warnings and pending recalculation after official data release; does not block content scoring**. Accordingly, spatial structure, scenarios, projects, and metrics in the narrative are written under the principle of "discussable, reviewable, and recalculable after replacing the official boundary." When the official boundary and key-area polygons are updated, the agent must re-run the scaffold, self-check, and drawing/HTML generation rather than replacing individual files.
+
+The boundary explanation returns to the overall-scope layer and area recalculation [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]. The three key areas are cross-checked through independent layers and the count metric [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]. This lets the reader enter the evidence from the narrative without first reading a string of machine identifiers.
+
+## Three-Level Scope Working Framework
+
+The proposal organizes work along the three levels established by the announcement: the coordinated research scope concerns the 43.6 km² AI industrial ecology, strategic positioning, innovation chain, and future urban form; the overall design scope concerns the 11.4 km² urban and industrial area within 1–2 km around the Jing-Zhang heritage park, requiring an overall urban renewal framework, industrial spatial layout, transport-municipal support, and urban character control; the key-area scope concerns the 368.4-hectare three detailed-design areas, requiring explicit functional programs, building scale, retain-renovate-demolish classification, public-space connectivity, and transport organization. The three levels are mapped item-by-item in `compliance_matrix.json`, ensuring that the mandatory tasks of announcement 1.3, 1.4, 1.5 and agent.1–agent.6 each have chapter, layer, metric, drawing, and HTML evidence.
+
+The depth items of the three-level framework are constrained by [depth:three_level_scope_framework] and [depth:overall_spatial_structure]; spatial evidence is anchored to [data:geometry/site_boundary.geojson#SITE-001] and [data:geometry/key_areas.geojson#PROV-KEY-001]; task basis is anchored to [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]; and scope indexing navigates via the three-level scope table in `project_scope_summary.csv` under [source:PROCESSED-FACT-PACK].
+
+![Three-level scope and spatial framework](assets/figures/land-use-structure.png)
+
+The three levels are not a set of disconnected drawings. The coordinated research determines the industrial-chain and urban-form judgments; the overall design turns those judgments into renewal projects, spatial structure, and facility carrying capacity; the key-area detailed design verifies the implementability of specific plots, buildings, transport, public space, and AI application scenarios. When generating the proposal, the agent must first lock the official or provisional boundary and constraints adopted for the current submission, then generate land use, buildings, roads, green space, public space, phasing, and AI service nodes, and finally recalculate metrics from those layers and explain in the narrative which conclusions remain limited by the provisional boundary. Any area, ratio, scale, or project count that cannot be recomputed from structured data must not be written into a formal conclusion.
+
+The overall concept proposed here is the **Jing-Zhang Intelligence Vein Belt — governing a thinking city through connection**: the Jing-Zhang heritage park serves as the historical and public-space spine, the three key areas (Zhongzhiyuan, Beijing AI Origin Community, and Dazhongsi) serve as innovation anchors, and universities, enterprises, communities, and rail stations form the everyday network, producing a spatial organization of "one belt, three cores, multiple scenario nodes, and a blue-green slow-traffic compound loop." The "belt" is not a newly drawn redline but a working method that translates the announcement's three-level scope; the "three cores" correspond to the three key areas; the "scenario nodes" correspond to operable nodes for AI+ public services, industrial services, and urban life; the "compound loop" corresponds to the linkage of slow traffic, green space, public space, and activity routes. The two characters "智脉" (intelligence vein) mean "intelligent nerve" — the core proposition of this proposal is that the future city is an ecosystem of countless agents whose ontology is the relationships (connections) among agents rather than entities; governing the city is governing the connections and interactions among agents (see the next section, "Civic Agent Governance: Connection as Nerve").
+
+| Level | Design question | Proposal answer | Data anchor |
+| --- | --- | --- | --- |
+| Coordinated research scope | How to organize the AI industrial ecology and future urban form | Build an innovation chain of "university origination – open-source collaboration – enterprise translation – public experience – international communication" | compliance_matrix.json, standard_matrix.json |
+| Overall design scope | How to place industrial space, urban renewal, transport-municipal, and character onto drawings | Land-use, building, road, green-space, public-space, and phasing layers jointly express it | [data:geometry/land_use.geojson#LU-001], [data:geometry/roads.geojson#ROAD-001] |
+| Key-area scope | How the three areas reach detailed-design depth | Propose positioning, spatial moves, AI scenarios, and implementation dependencies respectively | [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003] |
+
+## Civic Agent Governance: Connection as Nerve
+
+> The core proposition of this proposal: the future city is not "one agent" but an ecosystem of countless agents; the essence of connection is the interaction between agents. **Connection is the interaction between agents; governance is governing these interactions.**
+
+### Governance Overview: A City of Many Agents
+
+The future city will not be a single agent. It will be **an ecosystem of countless agents** — a car is an agent, a building is an agent, a trash bin may also be an agent; each perceives, judges, and acts, and they call, negotiate, and collaborate with each other through connections.
+
+From this follow the two core judgments of this proposal:
+
+**Judgment one: the essence of connection is the interaction between agents.** Connection is not merely a "channel for devices to sense data" but the medium of interaction between agents — it carries calls (API/MCP), negotiation, collaboration, trust-building, and conflict resolution. The "intelligence" of a city composed of agents is not the intelligence of some central brain, but the collective intelligence that **emerges** from countless agents interacting through connections.
+
+**Judgment two: the object of governance is these interactions.** Governing a city is not governing a pile of devices but governing the connections and interactions among multiple agents — how they discover each other, how they trust each other, how they collaborate, how they are reviewed, and how they resolve conflicts.
+
+### Ontological Foundation: Connection Is Relation, Not Entity
+
+The phrase "connection is the nerve" is superficially an analogy, but the judgment behind it is ontological — **the ontology of the city of agents is not "entity" but "relationship (connection) among agents."**
+
+Buildings, roads, cars, trash bins, and computing centers, each lying there on their own, are merely a pile of entities — **not an agent system**. Only when each becomes an agent that can perceive, judge, and act, and they interact through connections — calling, negotiating, giving feedback, leaving traces — does the "intelligence of the city" emerge. Remove the connections and what remains is not "an agent that lost its nerve" but "a crowd of unrelated devices." In other words: **the intelligence of the city lies not in any single agent but in the connections among agents.**
+
+This judgment has a reliable reference — the brain's connectome. A person's "self" is not in any single neuron (a single neuron does not think) but in the pattern of connections among neurons. "I" is not a location but a network of connections. The same holds for a city: **the "intelligence" of a city of agents lies not in any single agent or any single building but in the connections among them.** This is the same insight as Palantir's Ontology — the core of an ontology is never "objects" but "relationships among objects"; it is the edge, not the node, that makes data alive.
+
+Therefore, governing the city cannot be governing only the "nodes" (individual agents, devices, buildings, departments) but must govern **connection itself** — how agents call each other, negotiate, leave traces, build trust, and resolve conflicts. This is why every one of the six steps below lands on "the value of connection": not because connection is important, but because **connection is the object (ontology) of governance**.
+
+### The Engineering Constitution of the Nerve: Energy Nerve and Information Nerve
+
+"Connection" is not mysticism. The nerve of a city of agents consists of two concrete engineering systems:
+
+**Energy nerve** — the "blood vessels" of the city of agents:
+
+- **Building-level DC busbar**: the energy backbone of AI buildings, using an 800V DC distribution architecture to replace conventional AC, together with liquid cooling, to supply stable energy to high-density computing (following the design rule of "high voltage for distance, progressive step-down near the load, liquid cooling for density");
+- **Compute-power-electricity coordination**: the coordination of computing scheduling and power scheduling — wherever computing tasks queue or migrate, power follows on demand; AI racks become part of a "controlled DC microgrid," enabling programmable scheduling of the full "grid-to-compute" path.
+
+**Information nerve** — the "synapses" of the city of agents:
+
+- **East-west traffic**: the lateral traffic generated when an agent, to accomplish a north-south business goal, itself calls other data and other agents laterally through APIs/MCP. Unlike conventional communication networks, which are dominated by the north-south "human-accesses-service" traffic, east-west traffic in the agent era is not only larger in volume but also requires guaranteed latency determinism — it is the core load of agent collaboration and the real problem that "connection" must solve;
+- **Wireless short-range connection**: the "nerve endings" of sensing and interaction, connecting the city's devices, scenarios, and people in real time. Technology selection remains open — SparkLink, Bluetooth, WiFi, UWB, cellular, etc., combined per scenario, without binding to any single standard; what this proposal cares about is not a brand or protocol but the capability profile of "determinism, low latency, high concurrency" that connection must possess in the agent era (SparkLink is currently one of the preferred options close to this profile, but other technologies are not excluded).
+
+Governing the city of agents is governing these two nerves: **how energy is allocated (compute-power-electricity coordination), how energy is transmitted (DC busbar), how information flows (east-west traffic), and how the periphery senses (short-range connection)**. The six-step governance framework below is precisely the mechanism operating on top of these two nerves.
+
+The official definition of the "Civic Agent Governance" track gives this nerve network a skeleton — a six-step collaboration mechanism: **public-data reading, proposal reasoning, public feedback, human review, risk flagging, and the urban governance knowledge base**. This proposal turns these six steps into a recomputable, traceable, feedback-looping governance framework, with "connection" as the sole carrier running through all six steps.
+
+### The Six Steps of Governance (the Neural Governance Framework)
+
+**Step one: public-data reading — the verification wall.** Mechanism: every judgment can only rest on public, cleared sources; the core metrics (site area, green ratio, public-space ratio) must be recomputable from the submitted geometry and match the values annotated on the page one-to-one. Governance claim: turn "honesty" from a moral exhortation into an engineering constraint — what is audited is not the "conclusion" but the "recomputability of the conclusion"; it is allowed to say "I don't know," and never allowed to pretend to "know." Value of connection: **trusted data flow** — without connection, the verification wall is empty words.
+
+**Step two: proposal reasoning — the decision archive.** Mechanism: every judgment leaves a record of "basis → reasoning → conclusion → responsible party," and any conclusion can be traced back to its origin. Governance claim: the core of governance is not "how fast it computes" but "whether every judgment can be replayed." Value of connection: **data lineage** — a broken connection is a broken responsibility.
+
+**Step three: public feedback — learnability.** Mechanism: the proposal is not a static one-shot answer; the city of agents puts staged proposals into public discussion and feeds feedback back into the next iteration. The taskbook says the city must be "learnable and evolvable" — learning happens at the moment feedback loops back. Governance claim: the highest form of governance is not "control" but "getting smarter with use." Value of connection: **feedback-loop closure** — without connection, the city of agents would "learn without practicing."
+
+**Step four: human review — permission layering.** Mechanism: the agent computes and writes; humans review and decide. What can be seen, what can be computed, and what can be done are clearly separated into three levels, and out-of-scope actions stop immediately. Governance claim: the boundary between humans and agents is the cornerstone of governance; key value judgments — demolish or keep, preserve or change — must be finally confirmed by humans. Value of connection: **access control** — connection is the physical boundary of governance.
+
+**Step five: risk flagging — the safety net.** Mechanism: every conclusion carries its confidence, its assumptions, and where it might go wrong; risks are not hidden in an appendix but placed beside the conclusion and always visible. Governance claim: an honest agent's first duty is to "state clearly where it might be wrong." Value of connection: **deterministic transmission of risk signals** — the determinism of connection is the determinism of governance.
+
+**Step six: urban governance knowledge base — building infrastructure for agents.** Mechanism: all judgments, feedback, reviews, and risks produced by the six steps settle into an "urban governance knowledge base" — the memory of the city of agents and a public asset that successors can inherit. Governance claim: the real moat is not any single proposal but this "getting-smarter-with-use" knowledge base. Value of connection: **connection protocols are the trust foundation** (identity, trust, and reputation are all matters of the connection layer).
+
+### The Brake on Governance: Preventing the Force of Connection from Running Away (Goodness Constraint)
+
+**Harari's warning**: In *Nexus: A Brief History of Information Networks*, historian Yuval Noah Harari reminds us: the information network — that is, "connection" — is the foundation of large-scale human cooperation, but also its greatest risk. When a network is driven by non-human intelligence, its force can be "devastating," producing a situation entirely beyond human control. Connection can give rise to collective wisdom, but it can also run away into a torrent no one can stop.
+
+**Facing the double edge**: this proposal treats "connection" as the object of governance, but never evades the fact that the force of connection is double-edged. It can give rise to "learnable, evolvable" collective intelligence, yet it can also slide into runaway harm. A complete governance framework therefore needs not only mechanisms for "governing connection" but also a brake that "constrains the governance framework itself" — ensuring that this governance mechanism itself does not turn toward evil.
+
+**The Goodness Constraint (a brake that cannot be surrendered)**:
+
+1. **The human veto is non-transferable**: human review is not a "rubber stamp" but a non-transferable veto — for judgments involving public interest, personal safety, and value trade-offs, the final veto always rests with humans. Agents may reason at scale, but the word "no" can only be said by humans.
+2. **Recomputable means "overturnable"**: the verification wall means not only that conclusions are recomputable, but that conclusions can be overturned. No agent's conclusion is treated as unquestionable truth; it must be recomputable, requestionable, and overturnable by any third party at any time.
+3. **Out-of-scope means "hard stop"**: permission layering is not a "warning" but a "stop" — an out-of-scope action is physically cut off, not merely flagged. This is the physical brake of the governance framework, not dependent on the agent's self-restraint.
+4. **Reversibility of knowledge**: what the urban governance knowledge base accumulates is "revocable, question-able, correctable" records, not "unshakeable doctrine." Any accumulated piece of knowledge can be overturned by new evidence — the knowledge base is memory, not oracle.
+5. **Public-interest priority as the meta-principle**: the first article of the nine-point charter, "public-interest priority," is the topmost layer of this brake — the force of connection may only serve the public interest of the city; any tendency "toward evil," whether from a single agent or a collective of agents, is vetoed by this article.
+
+These five "goodness constraints" constitute the meta-governance of the governance framework — they answer not "how to govern connection" but "how to ensure that governance itself does not turn toward evil." As Harari reminds us, the greater the force of connection, the more it needs a brake that cannot be crossed.
+
+### Landing in Space: Governance Scenarios of the Three Key Areas
+
+The governance framework does not float in concepts; it lands in the three key areas:
+
+- **Zhongzhiyuan AI Self-Reliant Innovation Acceleration Area** — carries "global discourse power in AI governance": standard-setting, safety governance, and industrial display; it is the spatial carrier of the "verification wall" and "permission layering" among the six steps;
+- **Beijing AI Origin Community** — carries the "open-source system" and "talent special zone": public feedback and open collaboration; it is the spatial carrier of "learnability" and "human review";
+- **Dazhongsi AI Industry Cluster** — carries "agents, data factors, and digital assets": the governance knowledge base and data circulation; it is the spatial carrier of the "decision archive" and "building infrastructure for agents."
+
+The three areas are not three plots of land but three pillars of this governance framework. What this proposal delivers is not a uniformly controlled city, but a governance mechanism that lets countless agents connect, trust, collaborate, and constrain each other — a governable neural web woven from the connections among agents.
+
+## Coordinated Research Scope: Industry and Future City
+
+The core task of the coordinated research scope is to build a world-class AI innovation ecosystem. The proposal should map Haidian's universities and research institutes, leading enterprises, computing-algorithm-data factors, incubation platforms, listed companies, unicorns, and technology-service resources, and propose a spatially coordinated framework for the AI innovation chain, industrial chain, talent chain, and urban service chain. The naming scheme and logo design should serve the overall recognizability of the "Centennial Jing-Zhang Culture Belt, Urban AI Life Experience Belt, and AI Integration Innovation Belt," and must not stop at slogans but explain the relationship with industrial ecology, public space, and cultural resources. The agent-facing taskbook also requires responding to the coordination of the "five functions" and "three areas and two wings," forming a further-developable naming system, visual identity, overall spatial-structure diagram, scenario opening, and operation mechanism; this section must use [source:AGENT-TASKBOOK] and [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] to mark that these requirements come from the agent open-call taskbook, not statutory planning control.
+
+The coordinated research does not add new pseudo-precise redlines; through the urban character, public space, and building-layout coordination required by [standard:MOHURD-URBAN-DESIGN-MEASURES], it connects back to [data:geometry/land_use.geojson#LU-001], [data:geometry/public_space.geojson#PUBLIC-001], and [depth:overall_spatial_structure], showing that industrial strategy must ultimately land in visible, reviewable spatial structure.
+
+The future-urban-form study should answer how AI changes work, life, socializing, learning, transport, and public services. The proposal should translate AI transport systems, continuous green space, innovation-service facilities, and an international living-working atmosphere into locatable functional zones, nodes, corridors, and scenarios rather than vaguely describing technical visions. The agent should write industrial-strategy metrics, AI innovation index, talent density, space-supply types, and AI+ vertical-application key areas into the metric system, and mark which are official, which are design suggestions, and which still await formal-data calibration. If global AI innovation activities, developer communities, open scenarios, or pilgrimage routes are proposed, they should be written as "conceptual suggestions / reference plans / for professional-team deepening," not as already-determined government activities or implementation arrangements.
+
+## Overall Design Scope: Urban Renewal and Regulatory-Depth Urban Design
+
+The overall design scope requires reaching the urban-design depth of regulatory detailed planning. The proposal must put forward the overall spatial structure of urban renewal, identification of low-efficiency space, a renewal project list, implementation-policy suggestions, industrial-function ratios, spatial-organization patterns, total building scale, and comprehensive carrying-capacity assessment. `geometry/land_use.geojson` should fully cover the design boundary without overlap; `geometry/buildings.geojson` should express renewed or retained building footprints; `geometry/roads.geojson` should express micro-circulation, slow-traffic, and rail-transfer relationships; `metrics.json` should recompute the core areas, ratios, and layer counts.
+
+This section, following [standard:MOHURD-CONTROL-DETAILED-PLANNING], decomposes regulatory-depth content into auditable objects: [data:geometry/land_use.geojson#LU-001] expresses land-use structure, [data:geometry/buildings.geojson#BLDG-001] expresses building footprints, [data:geometry/roads.geojson#ROAD-001] expresses transport organization, [metric:building_footprint_area_sqm] is used to review building-footprint area, and [depth:land_use_layout] and [depth:development_intensity_controls] constrain the deliverable depth.
+
+The overall design must also support transport, rail, municipal, and supporting facilities. The proposal should put forward spatial layout and implementation paths around rail-station integration, road micro-circulation, non-motorized parking, parking supply, innovation-service platforms, talent life services, new infrastructure, distributed energy, and edge computing. Content involving building height, development intensity, road redlines, setbacks, and facility standards should be written as "pending formal regulatory-plan confirmation" if official control conditions are not yet available, and must not pass off agent speculation as approved metrics.
+
+## Key-Area Detailed Design
+
+Key-area detailed design is mandatory. The Zhongzhiyuan AI Self-Reliant Innovation Acceleration Area should put forward detailed proposals around the national AI platform, full-stack self-reliant innovation, standard-setting, safety governance, industrial display, external transport, Qinghe culture, low-carbon green innovation-exchange environment, and green-space AI scenarios. The Beijing AI Origin Community should put forward detailed proposals around near-campus innovation, incubation and translation, talent special zone, open-source system, brand activities, building retain-renovate-demolish, display and release, residential-life support, campus-park slow-traffic linkage, and rail-station integration. The Dazhongsi AI Industry Cluster should put forward detailed proposals around leading enterprises, agents, intelligent terminals, content consumption, data factors, digital assets, commercial services, composite use of planned green space, Dazhongsi station integration, and four-quadrant pedestrian connectivity at the intersection.
+
+The detailed design of the three key areas must cite [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], and [data:geometry/key_areas.geojson#PROV-KEY-003], and be checked by [depth:three_key_area_detailed_design] for reaching integrated-implementation-plan depth. If it only describes "building a demonstration zone" without evidence of functions, buildings, transport, public space, and implementation projects, it should be regarded as incomplete.
+
+![Three key areas index and design task](assets/figures/key-areas.png)
+
+The three key areas must appear in `geometry/key_areas.geojson`. If the repository provides official polygons, they should be used as `official_constraint`; if official polygons are missing, `provisional_constraint` may be used temporarily, but the narrative, HTML, sources, assumptions, and self-check must state that it cannot serve as a formal scoring or approval basis. `compliance_matrix.json` should separately cover announcement 1.5.3.1, 1.5.3.2, and 1.5.3.3. The design expression should include functional programs, building scale, building form, retain-renovate-demolish classification, public-space system, transport organization, slow-traffic connectivity, and implementation projects. The HTML page should support switching among the three key areas, and the A3 booklet and A0 boards should include at least the key-area master plans, local detail drawings, and metric explanations.
+
+| Key area | Design positioning | Spatial moves | AI industry and operation scenarios | Evidence citation |
+| --- | --- | --- | --- | --- |
+| Zhongzhiyuan AI Self-Reliant Innovation Acceleration Area | Garden-style full-stack self-reliant innovation block | Strengthen the Qinghe interface, industrial display, low-carbon innovation exchange, and external transport organization; use green space to carry open testing and standard-governance display | Self-reliant model testing, standard-setting workshops, safety-governance display, low-carbon computing experience | [data:geometry/key_areas.geojson#PROV-KEY-001], [depth:three_key_area_detailed_design] |
+| Beijing AI Origin Community | Near-campus translation and talent community | Organize campus-park-block slow-traffic stitching; supplement result-release, talent-service, residential-life, and open-source collaboration space | Open-source community, result release, talent special-zone service, near-campus incubation | [data:geometry/key_areas.geojson#PROV-KEY-002], [source:AGENT-TASKBOOK] |
+| Dazhongsi AI Industry Cluster | Urban intelligent economy and international-exchange block | Around Dazhongsi station integration, four-quadrant pedestrian connectivity, commercial services, and public-environment renewal of key enterprises | Agent and intelligent-terminal display, content consumption, data factors, and international roadshows | [data:geometry/key_areas.geojson#PROV-KEY-003], [metric:key_area_count] |
+
+## AI Innovation Ecosystem, Talent Profiles, and AI+ Scenarios
+
+The proposal should build a spatial-demand profile for AI talent and enterprises, covering R&D offices, open-source collaboration, result release, enterprise services, talent housing, social learning, consumption and life, sports and leisure, and international exchange. AI+ scenarios should revolve around the directions proposed in the announcement — transport, services, consumption, healthcare, education, law, life services, etc. — forming industrial-development scenarios and AI-empowered urban-function scenarios. Each scenario should state its service object, spatial location, data source, privacy boundary, human-review mechanism, and operating entity.
+
+AI scenarios must land in space and governance boundaries: public-space scenarios cite [data:geometry/public_space.geojson#PUBLIC-001], slow-traffic and transport scenarios cite [data:geometry/roads.geojson#ROAD-001], and open-space scenarios cite [data:geometry/green_space.geojson#GREEN-001] plus [metric:public_space_ratio] and [metric:green_ratio]. These citations let reviewers see that scenarios are not slogans but design objects located in specific layers and metrics. The agent-facing taskbook requires no fewer than 10 AI scenario cards, no fewer than 3 industrial test-verification scenarios, and no fewer than 5 user profiles; the scaffold only gives the structure, and a formal participant must write the scenario cards, profile tables, privacy boundaries, human review, and operating entities into the narrative, HTML, A3/A0, and compliance matrix.
+
+| User profile | Typical needs | Spatial response | Self-check boundary |
+| --- | --- | --- | --- |
+| Open-source developers | Release, collaboration, testing, community reputation | Origin Community open-source release hall, public code wall, nighttime collaboration space | No collection of personal behavior trajectories; activity data only aggregated statistics |
+| Startup teams | Low-cost offices, computing entry, product test field | Zhongzhiyuan shared test field, edge-computing service points, standard-governance consulting | Computing and data services require separate authorization |
+| Head-enterprise visitors | Display, business, international reception, talent recruitment | Dazhongsi international roadshow lounge, rail-station transfer, public space around key enterprises | Enterprise logos and cases must be cleared |
+| Surrounding residents | Commuting, leisure, community services, low-disturbance renewal | Jing-Zhang heritage park slow-traffic loop, embedded community services, nighttime lighting and activity grading | No use of resident profiles for commercial recommendation |
+| University faculty and students | Result translation, cross-campus collaboration, daily slow traffic | Campus-park slow-traffic stitching, result-translation station, AI education experience point | Campus data and research results require authorization |
+
+| Scenario card | Spatial carrier | Design description |
+| --- | --- | --- |
+| 01 Open-source release hall | Beijing AI Origin Community | For universities, open-source communities, and startups, providing result release, code-contribution display, and small roadshow space |
+| 02 Safety-governance sandbox | Zhongzhiyuan | Translate standard-setting, safety evaluation, and model red-team testing into visitable, reservable, and regulatable display and collaboration nodes |
+| 03 Edge-computing station | Overall design scope node | Combined with public services, enterprise services, and low-carbon energy strategy, as a new-infrastructure prototype to be deepened |
+| 04 AI slow-traffic navigation | Jing-Zhang heritage park vitality belt | Use explainable wayfinding and low-intrusion sensing to help identify slow-traffic breaks, congestion nodes, and accessibility needs |
+| 05 Dazhongsi international roadshow lounge | Dazhongsi AI Industry Cluster | Serve display, negotiation, media release, and international exchange for agent, intelligent-terminal, and content-consumption enterprises |
+| 06 Qinghe low-carbon innovation corridor | Zhongzhiyuan Qinghe interface | Combine green space, stormwater, walking-cycling, and AI display as the park's public living room |
+| 07 Near-campus result-translation street | Beijing AI Origin Community | For university result translation, organize incubation, display, legal, IP, and investment-financing services |
+| 08 Data-factor lounge | Dazhongsi area | On the premise of compliance, authorization, and auditability, display the urban-service interface for data-factor and digital-asset circulation |
+| 09 AI life-service model street | Community-commercial junction | Land AI+ scenarios such as healthcare, education, law, and life services in operable small-scale block space |
+| 10 Global AI activity-week route | Belt-wide public-space system | Form a walkable, communicable experience route from heritage culture, open-source community, industrial display to international roadshow |
+
+AI governance suggestions generated by the agent must comply with the principles of data minimization, public sources, explainability, and human review. The city of agents may assist in identifying slow-traffic breaks, public-space heat, facility maintenance, enterprise-service needs, and activity-safety risks, but must not replace planning approval, must not output unauthorized personal profiles, and must not claim to have obtained official implementation commitment. All AI scenario nodes should enter structured layers or the compliance matrix so reviewers can see their relationship with industry, space, and public interest.
+
+## Land Use, Building Scale, and Retain-Renovate-Demolish Plan
+
+The land-use plan should be expressed according to public standards such as the territorial-space survey, planning, and use-control classification, forming a complete, closed, seamless land-use zoning. The building plan should distinguish retained, renovated, renewed, newly built, or to-be-confirmed objects, and clarify the suggested levels of building footprint, function, scale, character, roof, massing, and height control. If current buildings, ownership, regulatory plans, and engineering conditions are missing, the plan can only propose methods and a to-be-calibrated checklist, and must not fabricate retain-renovate-demolish conclusions.
+
+Land-use classification follows [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]; building height, massing, interface, and character control are managed by [depth:height_massing_character]; the retain-renovate-demolish method is managed by [depth:retain_renovate_demolish]. The main evidence for land use and buildings is [data:geometry/land_use.geojson#LU-001], [data:geometry/buildings.geojson#BLDG-001], and [metric:building_footprint_area_sqm].
+
+Building-scale and intensity metrics must be consistent with `metrics.json` and the layers. If total building scale, floor-area ratio, building height, building density, green ratio, setbacks, and building-control lines lack official conditions, they should uniformly use `status=unknown`, and the pending conditions, current assumptions, and recalculation path after formal data arrives should be stated in `reason` / `assumptions`, without using fixed numbers to create a false sense of precision. The A3 booklet should provide the renewal-project list and a metric-review table; the A0 boards should clearly express the key spatial structure and key areas; the HTML page should provide linked viewing of metrics and layers.
+
+## Transport, Rail, Municipal, and Public Service Facilities
+
+The transport plan should respond to the announcement's requirements on rail-station integration, road micro-circulation, slow-traffic breaks, external transport, parking, non-motorized parking, and green transport systems. Key coverage should include the North Fifth Ring Road, the Jing-Zhang heritage park ring-crossing nodes, Wudaokou, West Qinghua East Road, Dazhongsi station, and transport links around key enterprises. Road and slow-traffic layers should stay within the submission boundary and be cross-checked with public space, green space, industrial nodes, and key areas; if the submission boundary is provisional, transport conclusions can only be treated as temporary design discussion.
+
+In this proposal, slow traffic and transport are the peripheral carrier of the **information nerve** (see the "Civic Agent Governance" section): the slow-traffic network carries not only human movement but also interaction among agents — autonomous vehicles, delivery robots, and sensing devices discover, negotiate, and collaborate with each other through **short-range connection** (determinism, low latency, high concurrency, open technology selection), and the resulting **east-west traffic** (agents laterally calling other data and agents to accomplish north-south business goals) requires guaranteed latency determinism. Therefore, the stitching of slow-traffic breaks and the transfer at rail stations should simultaneously consider the capability of being "passable and interactive for agents," not merely human walking accessibility; the corresponding interaction nodes should enter the spatial expression of [data:geometry/roads.geojson#ROAD-001] and [data:geometry/public_space.geojson#PUBLIC-001].
+
+Transport and municipal professional depth are constrained by [depth:traffic_rail_slow_parking] and [depth:municipal_new_infrastructure], respectively; layer evidence cites [data:geometry/roads.geojson#ROAD-001], [data:geometry/public_space.geojson#PUBLIC-001], and [data:geometry/constraints.geojson#CONSTRAINTS]. When road redlines, pipelines, fire, and municipal conditions are missing, they should be explained through assumptions as pending, rather than writing strategies as approved conditions.
+
+![Transport, slow traffic, and blue-green public space composite system](assets/figures/mobility-bluegreen.png)
+
+Municipal and public-service facilities should cover the integration of AI industrial-service facilities, innovation-service platforms, talent life-service facilities, new infrastructure, distributed energy, edge computing, and traditional municipal facilities. The proposal should state facility standards, spatial layout, service radius, operation model, and phased-implementation logic. When pipeline, energy, drainage, flood-control, and fire-protection engineering data are missing, they should be listed as formal preconditions for deepening.
+
+In this proposal, the energy and computing facilities are the spatial carrier of the **energy nerve** (see the "Civic Agent Governance" section): AI buildings adopt a **building-level DC busbar** (800V DC distribution + liquid cooling) as the energy backbone, and edge-computing nodes and distributed energy achieve programmable scheduling through **compute-power-electricity coordination** — wherever computing tasks queue or migrate, power follows on demand, making AI racks part of a "controlled DC microgrid" and achieving full "grid-to-compute" coordination. This set of facilities is not an isolated power-supply accessory but the physical realization of the energy nerve of the city of agents; its spatial layout and scale should enter the recomputation scope of [data:geometry/constraints.geojson#CONSTRAINTS] and the metric system, rather than being treated as conceptual description only.
+
+## Blue-Green Space, Public Space, and Urban Character
+
+The blue-green space plan should take the Jing-Zhang heritage park vitality belt as its backbone, coordinate the travel needs of the Qinghe and Xiaoyuehe rivers and surrounding universities, enterprises, and communities, and propose a north-south-through, east-west-linked system of walking paths, cycling paths, and green space. The plan should identify slow-traffic breaks, ring-crossing nodes, and the south and north landscape nodes of the park, and propose composite-use strategies for parking, sports, innovation exchange, technology testing, application display, and public services.
+
+Blue-green public space is jointly checked by the design-depth item and the green-space and public-space layers [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]. The design significance of the green and public-space ratios is explained in the narrative, and the complete recalculation is kept in `metrics.json`; the coordination of urban character, public space, and building control returns to the professional standard matrix [standard:MOHURD-URBAN-DESIGN-MEASURES].
+
+The urban-character plan should integrate Jing-Zhang railway history and culture, Zhongguancun innovation culture, and AI innovation culture, using cultural resources such as Qinghuayuan railway station and the Beijing Film Academy to propose urban tone, building character, roof form, massing, interface, and public-art guidance. The agent should also propose wayfinding signage, cultural symbols, international-communication narrative, AI pilgrimage landmarks, contribution walls, or honor-display systems, but all brands, fonts, images, portraits, and enterprise logos must have cleared sources. Character control should distinguish official control, design suggestions, and to-be-confirmed conditions, and must not give pseudo-precise control lines without heritage-protection or regulatory-planning grounds.
+
+## Renewal Project List, Implementation Policy, and Phasing Plan
+
+The implementation plan should form an auditable renewal-project list stating each project's location, type, function, responsible party, dependency conditions, implementation phase, risk, and evaluation metrics. Policy suggestions should cover coordinated implementation of urban renewal, space supply, operation mechanism, industrial services, public participation, data governance, and property coordination. `geometry/phasing.geojson` should express the phasing scope, and `compliance_matrix.json` should link each task to phasing and drawings.
+
+The project list and phasing depth are managed by [depth:renewal_project_list] and [depth:phasing_implementation], with the phasing spatial evidence being [data:geometry/phasing.geojson#PHASE-001]. If ownership, funding, implementation entity, and approval path are absent, the plan must write it as an implementation risk, not a promise to land.
+
+| Project ID | Project name | Type | Main dependencies | Evidence citation |
+| --- | --- | --- | --- | --- |
+| JZ-01 | Jing-Zhang heritage park slow-traffic break stitching | Public space / transport | Road redlines, under-bridge space, transport-organization review | [data:geometry/roads.geojson#ROAD-001] |
+| JZ-02 | Zhongzhiyuan Qinghe innovation interface | Blue-green space / industrial display | River blue-line, ecology and flood-control conditions | [data:geometry/green_space.geojson#GREEN-001] |
+| JZ-03 | Origin Community near-campus result-translation street | Urban renewal / industrial service | Campus boundary, ownership, ground-floor programs | [data:geometry/buildings.geojson#BLDG-001] |
+| JZ-04 | Dazhongsi station four-quadrant pedestrian connectivity | Rail integration / slow traffic | Rail station, road intersection, municipal pipelines | [data:geometry/public_space.geojson#PUBLIC-001] |
+| JZ-05 | AI public-service and edge-computing nodes | New infrastructure / public service | Energy, computing, safety, and operating entity | [data:geometry/constraints.geojson#CONSTRAINTS] |
+| JZ-06 | Global AI activity-week public route | Operation / brand | Public-space permits, activity safety, copyright clearance | [data:geometry/phasing.geojson#PHASE-001] |
+
+Phasing should be distinguished from the 100-day call-for-design period: the call period is the time requirement for submitting deliverables, while implementation phasing is the advancement path for urban renewal and project construction. The proposal should put forward near-term pilots, mid-term renewal, and a long-term governance framework, and mark which content can start first with lightweight facilities, operational activities, and service platforms, and which must await formal regulatory-plan, municipal, transport, and ownership conditions. For the annual activity system, developer-community operation, scenario open days, public experience routes, and international-communication mechanism, the narrative should state the operation object, frequency, responsibility boundary, translation path, and risk, and must not write only promotional slogans.
+
+## Metric System, Area Recalculation, and Compliance Matrix
+
+The metric system should include at least the overall design-scope area, key-area area, green and public-space ratios, building footprint, renewal-project count, AI scenario nodes, slow-traffic connectivity metrics, industrial-space metrics, talent-service metrics, and self-check status. All `known` metrics must be recomputable from GeoJSON or trusted sources; `unknown` metrics must give the reason and the formal-submission precondition. The results of `scripts/spatial_review.py` and `scripts/visual_review.py` are important evidence for the formal self-check.
+
+Metric recalculation follows the unified design-depth requirement [depth:metrics_recalculation]. The narrative focuses on explaining the design significance of metrics — for example, how the overall scope constrains spatial allocation, and how the blue-green and public-space ratios support daily interaction; the complete values, formulas, source files, and confidence are kept in `metrics.json`. Example key metrics can be reviewed from the overall scope and green-space data [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001].
+
+![Core metric recalculation and evidence chain](assets/figures/metrics-evidence.png)
+
+The compliance matrix is the master file for task responsiveness. Every announcement task and agent_taskbook task must map to a report chapter, layer, metric, drawing, HTML page, source, assumption, and self-check item. If any mandatory task of announcement 1.3, 1.4, 1.5 or agent.1–agent.6 is not covered, the proposal may not enter formal professional scoring.
+
+During formal deepening, the agent should further divide each metric into three categories: the first is spatial metrics directly recomputable from the submitted geometry, such as boundary area, green ratio, public-space ratio, building-footprint area, and phasing area; the second is control metrics that require official regulatory-plan or taskbook-annex support, such as floor-area ratio, building height, building density, setbacks, road redlines, and facility standards; the third is performance metrics that require continuous calibration with operational or industrial data, such as the AI innovation index, talent density, industrial-service satisfaction, slow-traffic accessibility, activity participation, and scenario-use frequency. The three categories should enter `metrics.json`, `assumptions.json`, and `compliance_matrix.json` respectively, avoiding writing operational visions as approved planning conditions.
+
+## Risk, Copyright, and Compliance Statement
+
+**Bilingualism is required.** The proposal's primary file may be in Chinese or English, but a complete counterpart translation must be provided through `proposal.en.md` or `proposal.zh.md`; A3/A0, HTML, and text-bearing figures must also provide corresponding language copies, preferably using the event's recommended translations in `docs/terminology-glossary.md`. A v2 package missing any required translation, language mapping, or valid file will be blocked by finalize and CI. All images, drawings, icons, data, and code assets must state their source, license, and authorization status in `sources.json` or `report/copyright_statement.md`. The HTML page must not load remote scripts, remote map tiles, remote fonts, iframes, forms, or external APIs, and must not track reviewer behavior.
+
+The risk and data-gap list is jointly checked by the risk-depth item, the constraint layer, and the site package [depth:risk_missing_data] [data:geometry/constraints.geojson#CONSTRAINTS] [source:SITE-PACKAGE]. The gaps listed in `missing_data_checklist.csv` — official boundary, key area, regulatory plan, roads, plots, buildings, municipal, heritage protection, and public services — must enter `assumptions.json`, the self-check, and the narrative risk section. Any conclusion lacking official regulatory-plan, road-redline, ownership, municipal, fire-protection, or heritage-protection conditions must be downgraded to a to-be-confirmed item; the complete professional check is kept in the standard matrix.
+
+This proposal does not claim official approval, approved regulatory plans, final land ownership, final construction scale, or guaranteed implementation. The AI agent is responsible for facts, sources, copyright, spatial data, metrics, and expression; maintainers and professional reviewers may request revisions or rejection based on self-check results, spatial review, and the compliance matrix.
+
+## References
+
+- brief/public-brief.md
+- brief/site-package/design_brief.json
+- brief/site-package/allowed_design_space.json
+- brief/site-package/enums/
+- brief/site-package/ranges/planning_limits.json
+- data/processed/agent_fact_pack.md
+- data/processed/project_scope_summary.csv
+- data/processed/agent_task_requirements.csv
+- data/processed/source_use_matrix.csv
+- data/processed/missing_data_checklist.csv
+- Complete machine index: see `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json`
+- The bibliographic entries in this section are based on the site-package registration; complete sources and licenses are in the structured source list [source:SITE-PACKAGE]
