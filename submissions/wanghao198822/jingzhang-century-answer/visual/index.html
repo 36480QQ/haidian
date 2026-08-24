@@ -312,6 +312,229 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
 </style>
 </head>
 <body>
+<!-- ══════════ 人本导览层（十分钟读完）══════════ -->
+<style>#ovx{background:var(--ov-paper);color:var(--ov-ink);font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Source Han Sans SC',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+
+#ovx{
+  --ov-paper:#EFEDE6; --ov-card:#E5E2D8; --ov-ink:#141A17; --ov-dim:#5D6560;
+  --ov-copper:#A4632A; --ov-patina:#2C5C50; --ov-hair:#D2CEC3;
+  --ov-scrim:rgba(10,14,12,.62); --ov-on:#F3F1EA; --ov-on-dim:#C3C4BC;
+  --ov-ease:cubic-bezier(.22,.75,.28,1);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) #ovx{
+  --ov-paper:#0C100F; --ov-card:#141A18; --ov-ink:#E8E6DF; --ov-dim:#8A938E;
+  --ov-copper:#D3975B; --ov-patina:#6EB09C; --ov-hair:#212B27;
+  --ov-scrim:rgba(5,8,7,.66); --ov-on:#F0EEE7; --ov-on-dim:#ABAFA8;}}
+:root[data-theme="dark"] #ovx{
+  --ov-paper:#0C100F; --ov-card:#141A18; --ov-ink:#E8E6DF; --ov-dim:#8A938E;
+  --ov-copper:#D3975B; --ov-patina:#6EB09C; --ov-hair:#212B27;
+  --ov-scrim:rgba(5,8,7,.66); --ov-on:#F0EEE7; --ov-on-dim:#ABAFA8;}#ovx *{box-sizing:border-box}#ovx{scroll-behavior:smooth}#ovx{margin:0;background:var(--ov-paper);color:var(--ov-ink);overflow-x:hidden;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased}#ovx .mono{font-family:ui-monospace,"Cascadia Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}#ovx :focus-visible{outline:2px solid var(--ov-copper);outline-offset:3px}#ovx section{position:relative}#ovx /* 道钉轨 */
+#ov-rail{position:fixed;left:20px;top:50%;transform:translateY(-50%);z-index:60;
+  display:flex;flex-direction:column;gap:12px;margin:0;padding:0;list-style:none}#ov-rail::before{content:"";position:absolute;left:9.2px;top:5px;bottom:5px;width:1.5px;background:var(--ov-hair);z-index:-1}#ov-rail button{all:unset;cursor:pointer;width:20px;height:20px;display:grid;place-items:center}#ov-rail i{width:6px;height:6px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--ov-dim);
+  transition:all .35s var(--ov-ease)}#ov-rail button[aria-current="true"] i{background:var(--ov-copper);box-shadow:inset 0 0 0 1.5px var(--ov-copper);transform:scale(1.8)}#ov-rail button:hover i{box-shadow:inset 0 0 0 1.5px var(--ov-copper);transform:scale(1.45)}
+@media(max-width:900px){#ov-rail{display:none}}#ovx /* ── 版式 A：引线标注大图 ───────────────────────────── */
+.plate{height:100vh;min-height:600px;overflow:hidden;background:#000}#ovx .plate .ph{position:absolute;inset:0}#ovx .plate .ph img{width:100%;height:100%;object-fit:cover;display:block;
+  transform:scale(1.05);transition:transform 2.6s var(--ov-ease)}#ovx .plate.in .ph img{transform:scale(1)}#ovx .plate .ph::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(105deg,var(--ov-scrim) 0 34%,rgba(10,14,12,.18) 56%,rgba(10,14,12,0) 76%)}#ovx .plate .txt{position:absolute;left:clamp(58px,7vw,110px);top:50%;transform:translateY(-50%);
+  width:min(680px,47vw);color:var(--ov-on)}#ovx .plate .txt .kick{font-size:11px;letter-spacing:.24em;font-weight:700;color:var(--ov-copper);
+  display:flex;align-items:center;gap:9px;margin-bottom:14px}#ovx .plate .txt .kick::before{content:"";width:24px;height:1.5px;background:var(--ov-copper)}#ovx .plate .txt h2{margin:0;font-size:clamp(25px,3vw,40px);font-weight:800;
+  letter-spacing:-.025em;line-height:1.2;text-wrap:balance}#ovx .plate .txt p{margin:16px 0 0;font-size:clamp(14px,1.15vw,16.5px);line-height:1.8;color:var(--ov-on-dim)}#ovx .plate .txt p b{color:var(--ov-on);font-weight:600}#ovx .plate .txt>*{opacity:0;transform:translateX(-16px);transition:opacity .8s var(--ov-ease),transform .8s var(--ov-ease)}#ovx .plate.in .txt>*{opacity:1;transform:none}#ovx .plate.in .txt>*:nth-child(2){transition-delay:.1s}#ovx .plate.in .txt>*:nth-child(3){transition-delay:.2s}#ovx /* 引线标注 */
+.pin{position:absolute;z-index:3;opacity:0;transition:opacity .55s var(--ov-ease)}#ovx .plate.in .pin{opacity:1}#ovx .plate.in .pin:nth-of-type(1){transition-delay:.55s}#ovx .plate.in .pin:nth-of-type(2){transition-delay:.75s}#ovx .plate.in .pin:nth-of-type(3){transition-delay:.95s}#ovx .plate.in .pin:nth-of-type(4){transition-delay:1.15s}#ovx .pin b{position:absolute;left:0;top:0;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;
+  border-radius:50%;background:var(--ov-copper);box-shadow:0 0 0 4px rgba(164,99,42,.28)}#ovx .pin i{position:absolute;left:0;top:0;height:1.5px;background:var(--ov-copper);transform-origin:left center}#ovx .pin span{position:absolute;white-space:nowrap;font-size:12.5px;color:var(--ov-on);
+  background:rgba(10,14,12,.6);border-left:2px solid var(--ov-copper);padding:5px 10px;
+  backdrop-filter:blur(3px);transform:translateY(-50%)}#ovx .pin.l span{transform:translate(-100%,-50%)}#ovx .pin.l i{transform-origin:right center}#ovx /* ── 版式 B：纯数字版面 ─────────────────────────────── */
+.nums{min-height:100vh;display:grid;place-items:center;background:var(--ov-card);
+  padding:clamp(70px,12vh,130px) clamp(24px,6vw,110px)}#ovx .nums .in{width:100%;max-width:1180px}#ovx .nums .kick{font-size:11px;letter-spacing:.24em;font-weight:700;color:var(--ov-copper);margin-bottom:26px}#ovx .nums h2{margin:0 0 46px;font-size:clamp(26px,3.6vw,46px);font-weight:800;letter-spacing:-.025em;
+  line-height:1.24;max-width:20em;text-wrap:balance}#ovx .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:2px;background:var(--ov-hair)}#ovx .grid div{background:var(--ov-card);padding:26px 22px 30px}#ovx .grid b{display:block;font-size:clamp(34px,4.6vw,60px);font-weight:800;color:var(--ov-copper);
+  letter-spacing:-.035em;line-height:1}#ovx .grid span{display:block;margin-top:9px;font-size:12.5px;color:var(--ov-dim);line-height:1.6}#ovx .nums .foot{margin-top:34px;font-size:12.5px;color:var(--ov-dim);max-width:64ch;line-height:1.85}#ovx .nums .in>*{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ov-ease),transform .8s var(--ov-ease)}#ovx .nums.in .in>*{opacity:1;transform:none}#ovx /* ── 版式 C：对开 ──────────────────────────────────── */
+.duo{min-height:100vh;display:grid;grid-template-columns:1.15fr .85fr;background:var(--ov-card)}#ovx .duo .im{position:relative;overflow:hidden;background:#000}#ovx .duo .im img{width:100%;height:100%;object-fit:cover;display:block;
+  transform:scale(1.05);transition:transform 2.6s var(--ov-ease)}#ovx .duo.in .im img{transform:scale(1)}#ovx .duo .sd{display:grid;align-content:center;padding:clamp(40px,5vw,76px);border-left:1px solid var(--ov-hair)}#ovx .duo .kick{font-size:11px;letter-spacing:.24em;font-weight:700;color:var(--ov-copper);margin-bottom:14px}#ovx .duo h2{margin:0;font-size:clamp(23px,2.4vw,33px);font-weight:800;letter-spacing:-.025em;line-height:1.25;text-wrap:balance}#ovx .duo p{margin:16px 0 0;font-size:clamp(14px,1.1vw,16px);line-height:1.85;color:var(--ov-dim)}#ovx .duo p b{color:var(--ov-ink);font-weight:600}#ovx .duo .sd>*{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ov-ease),transform .8s var(--ov-ease)}#ovx .duo.in .sd>*{opacity:1;transform:none}#ovx .duo.in .sd>*:nth-child(2){transition-delay:.1s}#ovx .duo.in .sd>*:nth-child(3){transition-delay:.2s}
+@media(max-width:900px){#ovx .duo{grid-template-columns:1fr}#ovx .duo .im{height:56vh}#ovx .duo .sd{border-left:0;border-top:1px solid var(--ov-hair)}}#ovx /* ── 版式 D：三图组 ────────────────────────────────── */
+.trio{min-height:100vh;display:grid;grid-template-rows:auto 1fr;background:var(--ov-card);
+  padding:clamp(60px,9vh,104px) clamp(24px,5vw,86px) clamp(40px,7vh,80px);gap:clamp(28px,4vh,46px)}#ovx .trio .hd{max-width:56em}#ovx .trio .kick{font-size:11px;letter-spacing:.24em;font-weight:700;color:var(--ov-copper);margin-bottom:14px}#ovx .trio h2{margin:0;font-size:clamp(25px,3.2vw,42px);font-weight:800;letter-spacing:-.025em;line-height:1.22;text-wrap:balance}#ovx .trio h2+p{margin:14px 0 0;font-size:15px;line-height:1.8;color:var(--ov-dim);max-width:40em}#ovx .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.6vw,24px);min-height:0}#ovx .cards figure{margin:0;display:grid;grid-template-rows:1fr auto;background:var(--ov-paper);
+  border:1px solid var(--ov-hair);overflow:hidden;transition:transform .5s var(--ov-ease),box-shadow .5s var(--ov-ease)}#ovx .cards figure:hover{transform:translateY(-7px);box-shadow:0 16px 40px rgba(0,0,0,.16)}#ovx .cards img{width:100%;height:100%;object-fit:cover;display:block;min-height:0;
+  transition:transform .8s var(--ov-ease)}#ovx .cards figure:hover img{transform:scale(1.05)}#ovx .cards figcaption{padding:16px 18px 20px}#ovx .cards figcaption b{display:block;font-size:16px;font-weight:700;letter-spacing:-.01em}#ovx .cards figcaption span{display:block;margin-top:7px;font-size:12.5px;line-height:1.7;color:var(--ov-dim)}#ovx .trio>*{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ov-ease),transform .8s var(--ov-ease)}#ovx .trio.in>*{opacity:1;transform:none}#ovx .trio.in .cards{transition-delay:.12s}
+@media(max-width:900px){#ovx .cards{grid-template-columns:1fr;gap:14px}#ovx .trio{min-height:auto}#ovx .cards img{height:34vh}}#ovx /* ── 封面 / 尾 ─────────────────────────────────────── */
+.cover{height:100vh;min-height:600px;overflow:hidden;background:#000}#ovx .cover .ph{position:absolute;inset:0}#ovx .cover .ph img{width:100%;height:100%;object-fit:cover;opacity:.62;
+  transform:scale(1.07);transition:transform 3.4s var(--ov-ease),opacity 2s var(--ov-ease)}#ovx .cover.in .ph img{transform:scale(1)}#ovx .cover .ct{position:absolute;left:clamp(58px,7vw,120px);top:50%;transform:translateY(-50%);color:var(--ov-on)}#ovx .cover h1{margin:0;font-size:clamp(52px,10.5vw,140px);font-weight:800;letter-spacing:-.05em;line-height:.92}#ovx .cover .en{margin-top:14px;font-size:clamp(10px,1.2vw,13px);letter-spacing:.44em;color:var(--ov-on-dim)}#ovx .cover .q{margin-top:clamp(28px,4.4vh,52px);font-size:clamp(15px,1.7vw,21px);line-height:1.82;max-width:23em}#ovx .cover .q em{font-style:normal;box-shadow:inset 0 -.4em 0 rgba(164,99,42,.5)}#ovx .cover .ct>*{opacity:0;transform:translateY(22px);transition:opacity 1s var(--ov-ease),transform 1s var(--ov-ease)}#ovx .cover.in .ct>*{opacity:1;transform:none}#ovx .cover.in .ct>*:nth-child(2){transition-delay:.14s}#ovx .cover.in .ct>*:nth-child(3){transition-delay:.28s}#ovx .hint{position:absolute;right:clamp(24px,6vw,86px);bottom:clamp(32px,6vh,60px);
+  font-size:10.5px;letter-spacing:.2em;color:var(--ov-on-dim)}#ovx .hint em{font-style:normal;display:inline-block;animation:nd 2.1s infinite}
+@keyframes nd{#ovx 0%, #ovx 100%{transform:translateY(0)}#ovx 50%{transform:translateY(5px)}}#ovx .fin{min-height:100vh;display:grid;place-items:center;text-align:center;background:var(--ov-paper);
+  padding:clamp(70px,12vh,130px) clamp(24px,6vw,86px)}#ovx .fin h2{margin:0;font-size:clamp(24px,3.4vw,44px);font-weight:800;line-height:1.4;
+  letter-spacing:-.025em;max-width:24em;text-wrap:balance}#ovx .fin .dis{margin:28px auto 0;max-width:62ch;font-size:12.5px;line-height:1.9;color:var(--ov-dim)}#ovx .fin .lk{margin-top:32px;font-size:13px;color:var(--ov-dim)}#ovx .fin .lk a{color:var(--ov-patina);font-weight:600;text-underline-offset:3px}
+
+@media(max-width:900px){#ovx .plate .txt{left:24px;right:24px;width:auto;top:auto;bottom:34px;transform:none}#ovx .plate .ph::after{background:linear-gradient(to top,var(--ov-scrim) 0 42%,rgba(10,14,12,0) 78%)}#ovx .pin{display:none}#ovx .cover .ct{left:24px;right:24px}
+}
+@media (prefers-reduced-motion:reduce){#ovx *, #ovx *::before, #ovx *::after{animation:none!important;transition:none!important}#ovx .plate .txt>*, #ovx .nums .in>*, #ovx .duo .sd>*, #ovx .trio>*, #ovx .cover .ct>*, #ovx .pin{opacity:1;transform:none}
+}
+</style>
+<div id="ovx">
+<ul id="ov-rail" aria-label="章节导航"></ul>
+
+<!-- 封面 -->
+<section class="cover" data-nav="封面">
+  <div class="ph"><img src="assets/renders/render-spike-belt-night.jpg" alt="夜间俯视京张铁路遗址公园步道，边缘一列铜道钉透出暖光"></div>
+  <div class="ct">
+    <h1>百年应答</h1>
+    <div class="en mono">THE CENTURY ANSWER</div>
+    <p class="q">1909 年，一条铁路问了一个问题：<em>中国人能不能自己修铁路</em>。<br>今天，同一条铁路旁，9 公里长卷正在回答第二个。</p>
+  </div>
+  <div class="hint mono">向下滚动 <em>↓</em></div>
+</section>
+
+<!-- A · 道钉带（引线） -->
+<section class="plate" data-nav="道钉带">
+  <div class="ph"><img src="assets/renders/render-spike-belt.jpg" alt="市民蹲在步道上端详嵌入铺装的铜道钉"></div>
+  <div class="pin" style="left:52%;top:74%" data-len="130" data-ang="-28"><b></b><i></i><span>铜道钉 · 刻四个可核对字段</span></div>
+  <div class="pin" style="left:60%;top:23%" data-len="120" data-ang="18"><b></b><i></i><span>13 号线高架</span></div>
+  <div class="pin l" style="left:88%;top:52%" data-len="110" data-ang="8"><b></b><i></i><span>老铁路挡墙</span></div>
+  <div class="txt">
+    <div class="kick mono">理念 · 道钉带</div>
+    <h2>一款备案大模型，一颗铜道钉</h2>
+    <p>钉面只刻名称、单位、编号、时间四个字段。<b>任何人下载国家网信办的公告附件，就能逐颗核对——不需要相信本方案的任何自述。</b></p>
+  </div>
+</section>
+
+<!-- B · 数字 -->
+<section class="nums" data-nav="尺度">
+  <div class="in">
+    <div class="kick mono">整体 · 尺度与结构</div>
+    <h2>一脊、三段、四十六座门</h2>
+    <div class="grid">
+      <div><b class="mono">9</b><span>公里应答长卷主脊<br>贯通南北</span></div>
+      <div><b class="mono">3</b><span>段：南问 · 中答 · 北跃<br>各只做一件最要紧的事</span></div>
+      <div><b class="mono">46</b><span>座应答门横向打开<br>以实际建成为准</span></div>
+      <div><b class="mono">70</b><span>个沿线社区<br>约 45 万居民</span></div>
+      <div><b class="mono">122</b><span>款海淀备案大模型<br>区级年度正式口径</span></div>
+    </div>
+    <p class="foot">三个工作层次：统筹研究 43.6 km² 决定「写什么」，总体设计 11.4 km² 决定「写在哪」，重点区域 368.4 ha 决定「怎么落笔」。<b style="color:var(--ink)">真正没解决的不是南北，是东西</b>——高架与老铁路路基形成隔断，围墙割裂街区；46 座应答门横向打开，是这条带唯一要做的缝合。</p>
+  </div>
+</section>
+
+<!-- A · 南问（引线） -->
+<section class="plate" data-nav="南问">
+  <div class="ph"><img src="assets/renders/render-dazhongsi-aerial.jpg" alt="大钟寺片区鸟瞰：古寺、13 号线高架与新增的钟声广场"></div>
+  <div class="pin" style="left:26%;top:47%" data-len="120" data-ang="-24"><b></b><i></i><span>觉生寺 · 一砖不动</span></div>
+  <div class="pin" style="left:47%;top:52%" data-len="120" data-ang="26"><b></b><i></i><span>钟声广场 · 退在院墙之外</span></div>
+  <div class="pin l" style="left:70%;top:66%" data-len="120" data-ang="14"><b></b><i></i><span>13 号线高架与桥下通廊</span></div>
+  <div class="txt">
+    <div class="kick mono">南问 · 鸣钟之门</div>
+    <h2>古寺一砖不动，广场退到院墙之外</h2>
+    <p>企业完成备案或 IPO，到寺旁新铸的应答钟敲一响。<b>钟架独立、不与任何既有物相连、不高过成熟树冠</b>——不与古寺争天际线。古寺与地铁站实测相距 676 米。</p>
+  </div>
+</section>
+
+<!-- C · 钟声广场（对开） -->
+<section class="duo" data-nav="钟声广场">
+  <div class="im"><img src="assets/renders/render-bell-plaza.jpg" alt="钟声广场：同心声环铺装与独立四柱钟架"></div>
+  <div class="sd">
+    <div class="kick mono">南问 · 结果</div>
+    <h2>钟声是这条带唯一的公共计分方式</h2>
+    <p>不发通稿，只敲一响。地面同心声环从钟架向外扩散，<b>全场无高差、无台阶</b>；出站流线从辅路侧石边挪进高架桥下的通廊，全程有遮蔽、与机动车物理分离。<br><br>钟架为独立四柱钢结构，不依附任何既有构筑物，敲击的动荷载由独立基础承担。</p>
+  </div>
+</section>
+
+<!-- A · 中答（引线） -->
+<section class="plate" data-nav="中答">
+  <div class="ph"><img src="assets/renders/render-answer-origin.jpg" alt="清华园车站站前素广场：老站房、零公里桩与应答簿"></div>
+  <div class="pin" style="left:50%;top:47%" data-len="118" data-ang="-30"><b></b><i></i><span>1910 年老站房 · 文物本体不动</span></div>
+  <div class="pin" style="left:36%;top:83%" data-len="104" data-ang="-14"><b></b><i></i><span>零公里桩 K0+000</span></div>
+  <div class="pin l" style="left:67%;top:83%" data-len="104" data-ang="10"><b></b><i></i><span>应答簿 · 可翻动金属书页</span></div>
+  <div class="txt">
+    <div class="kick mono">中答 · 应答原点</div>
+    <h2>不新建地标。站前只放两件东西</h2>
+    <p>0.6 公顷素广场，没有花坛、没有树阵、没有雕塑群——<b>空旷本身就是设计</b>。零公里桩柱脚嵌第 0 号道钉，刻的是「1909 年京张铁路建成通车」这件事本身。</p>
+  </div>
+</section>
+
+<!-- A · 北跃（引线） -->
+<section class="plate" data-nav="北跃">
+  <div class="ph"><img src="assets/renders/render-ren-bridge.jpg" alt="人字之跃片区鸟瞰：跨环路慢行桥与两端折返坡道"></div>
+  <div class="pin" style="left:50%;top:46%" data-len="112" data-ang="-32"><b></b><i></i><span>桥面之上无构筑物</span></div>
+  <div class="pin" style="left:41%;top:33%" data-len="112" data-ang="-8"><b></b><i></i><span>折返坡道 · 两段并排</span></div>
+  <div class="pin l" style="left:62%;top:66%" data-len="112" data-ang="16"><b></b><i></i><span>落在环路两侧绿地内</span></div>
+  <div class="txt">
+    <div class="kick mono">北跃 · 人字之跃</div>
+    <h2>抬升 6 米，坡道就要 128 米</h2>
+    <p>这不是造型选择，是 <span class="mono">L = H / i</span> 算出来的。折为并排两段各 62 米，端头一处折返平台，单侧占地 66×9 米。<b>不做塔、不做拱、不做门架</b>，结构全在桥面以下——在环路视野里是一条安静的横线。</p>
+  </div>
+</section>
+
+<!-- D · AI 场景三图组 -->
+<section class="trio" data-nav="AI 场景">
+  <div class="hd">
+    <div class="kick mono">AI 场景</div>
+    <h2>不是装一台设备，是出现一种以前没有的关系</h2>
+    <p>甲方点名的八类 AI 场景，本方案全部落成可指认的空间要素。判准只有一条：这个动作，在 AI 之前不成立。</p>
+  </div>
+  <div class="cards">
+    <figure>
+      <img src="assets/renders/render-robot-knocks.jpg" alt="配送机器人停在应答门门槛之外等待，门内居民按下同意">
+      <figcaption><b>机器人进社区，要先敲门</b><span>它停在门槛之外等，门里的居民按下同意，灯才转绿。社区认领的不只是这道门，还有「谁的机器人可以进」这项决定权。</span></figcaption>
+    </figure>
+    <figure>
+      <img src="assets/renders/render-disclosure-wall.jpg" alt="算法公示墙：蚀刻信息带与可按下的实体关闭键">
+      <figcaption><b>一堵站着能读完的墙</b><span>任何 AI 系统必须公示五件事：谁部署的、采什么数据、存多久、怎么关掉、找谁申诉。每条末端一枚能用手按下去的关闭键。</span></figcaption>
+    </figure>
+    <figure>
+      <img src="assets/renders/render-lesson-gate.jpg" alt="大学围墙开出的课门与墙外露天旁听席">
+      <figcaption><b>围墙不拆，只开一个口</b><span>高校公开课向带上开放旁听席，AI 助教按听者自己选的档位解释同一句话。一位老人和一个中学生并排听同一堂课。</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 尾 -->
+<section class="fin" data-nav="收尾">
+  <div>
+    <h2>市民不是来看展板的。他们蹲下来数道钉：中国自主创新，钉到第几颗了。</h2>
+    <p class="dis">全部空间与开发内容均为概念建议、参考方案，供专业团队深化研究，不构成政府审定结论；本方案不提出容积率、建筑高度、道路红线、拆改留分类等任何结论性判断。效果图为 AI 生成的概念意象，未经坐标配准、不由几何数据派生，不表达用地、边界与尺寸；用地与尺寸一律以规划图件和断面图为准。</p>
+    <p class="lk">完整正文、图纸、几何数据与合规矩阵见 <a href="#ovx-dense">下方完整总览</a>　·　<span class="mono">proposal.md</span>　·　<span class="mono">assets/figures/</span></p>
+  </div>
+</section>
+
+</div>
+<div id="ovx-dense" style="padding:64px 24px;text-align:center;border-top:2px solid #A4632A;background:#EFEDE6;color:#5D6560;font-size:14px">以下为完整方案总览：合规矩阵、指标复算、几何与来源假设 · 供评审与专业团队查证</div>
+<script>
+(function(){
+  // 引线：按 data-len / data-ang 画出连线并定位标签
+  document.querySelectorAll('#ovx .pin').forEach(function(p){
+    var len = +p.dataset.len || 110, ang = (+p.dataset.ang || 0) * Math.PI/180;
+    var left = p.classList.contains('l');
+    var line = p.querySelector('i'), lab = p.querySelector('span');
+    var dx = (left ? -1 : 1) * len * Math.cos(ang), dy = len * Math.sin(ang);
+    line.style.width = len + 'px';
+    line.style.transform = 'rotate(' + ((left ? 180 : 0) + (+p.dataset.ang || 0) * (left ? -1 : 1)) + 'deg)';
+    lab.style.left = dx + 'px';
+    lab.style.top  = dy + 'px';
+  });
+
+  var secs = [].slice.call(document.querySelectorAll('#ovx section'));
+  var rail = document.getElementById('ov-rail');
+  secs.forEach(function(s, i){
+    var li = document.createElement('li'), b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', s.dataset.nav || ('第 ' + (i+1) + ' 节'));
+    b.innerHTML = '<i></i>';
+    b.addEventListener('click', function(){ s.scrollIntoView({behavior:'smooth'}); });
+    li.appendChild(b); rail.appendChild(li);
+  });
+  var dots = [].slice.call(rail.querySelectorAll('button'));
+
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      if (e.intersectionRatio > .5) {
+        var i = secs.indexOf(e.target);
+        dots.forEach(function(d,k){ d.setAttribute('aria-current', k===i ? 'true' : 'false'); });
+      }
+    });
+  }, {threshold:[.14,.55]});
+  secs.forEach(function(s){ io.observe(s); });
+})();
+</script>
+
 <nav class="top"><div class="topin">
  <span class="brandmk">百年应答</span>
  <span class="tocl"><a href="#s01">01 总体结构</a><a href="#s02">02 三处重点区</a><a href="#s03">03 四项机制</a><a href="#s04">04 AI 场景</a><a href="#s05">05 交通蓝绿用地</a><a href="#s06">06 分期与运营</a><a href="#s07">07 图纸与效果图</a><span class="tocsep"></span><a href="#s08">附A 核心指标</a><a href="#s09">附B 任务覆盖</a><a href="#s10">附C 来源与假设</a><a href="#s11">附D 自检状态</a><a href="#s12">附E 核验工具</a></span>
@@ -536,7 +759,7 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
 <h3 class="sub3"><span class="ix">D·2</span>四门自检</h3>
 <div class="gates"><div class="gate"><div class="gn">确定性校验<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">deterministic_validation · returncode 0</div><pre>错误 0
 警告 24
-总字节 34,932,443
+总字节 37,716,826
 · submissions/wanghao198822/jingzhang-century-answer/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied
 · submissions/wanghao198822/jingzhang-century-answer/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context</pre></div><div class="gate"><div class="gn">空间审查<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">spatial_review · returncode 0</div><pre>阶段 formal
 问题 3 (minor:3)
@@ -553,7 +776,7 @@ known_metric_refs_required = 77
 proposal_format_version = 2
 evidence_contract = section-anchors-plus-structured-audit
 proposal_reference_counts = source:23, standard:8, depth:15, data:25, metric:5</pre></div></div>
-<div class="note">self_check.json 记录：stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>总字节口径：上表为自检写入时点的记录值。self_check.json 自身计入总字节，而工具先写入尚未附四门结果的中间文件再测量，故独立重跑会比表中大 685 字节（34,933,128）——差值即 self_check.json 附上四门结果后的增量，属工具固有的两阶段写入，不影响任何一门的结论。</div>
+<div class="note">self_check.json 记录：stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>总字节口径：上表为自检写入时点的记录值。self_check.json 自身计入总字节，而工具先写入尚未附四门结果的中间文件再测量，故独立重跑会比表中大 695 字节（37,717,521）——差值即 self_check.json 附上四门结果后的增量，属工具固有的两阶段写入，不影响任何一门的结论。</div>
 <div class="tw"><table class="dt"><thead><tr><th>自检项</th><th>结果</th><th>级别</th><th>对象</th><th>说明</th></tr></thead><tbody><tr><td><code class="mid2">DETERMINISTIC_VALIDATION</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">validate_local_submission.py</code></td><td>deterministic_validation: PASS</td></tr><tr><td><code class="mid2">SPATIAL_REVIEW</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">spatial_review.py</code></td><td>spatial_review: PASS</td></tr><tr><td><code class="mid2">VISUAL_PACKAGING</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">visual_review.py</code></td><td>visual_review: PASS</td></tr><tr><td><code class="mid2">PROFESSIONAL_EVIDENCE</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">professional_review.py</code></td><td>professional_review: PASS</td></tr></tbody></table></div>
 </div></section>
 <section class="sec apx" id="s12"><div class="wrap"><div class="sh rv"><span class="no">E</span><h2 class="serif">附录 E · 可当场核验工具</h2><span class="sub">三个脚本在你自己的浏览器里当场复算</span><span class="en">Appendix E · Verify it yourself, on the spot</span></div>
@@ -787,5 +1010,6 @@ addEventListener("scroll", onScroll, { passive: true });
 onScroll();
 })();
 </script>
+<script>(function(){var nav=document.querySelector('nav.top');var ov=document.getElementById('ovx');if(!nav||!ov)return;function u(){var r=ov.getBoundingClientRect();nav.style.transition='opacity .4s';if(r.bottom>120){nav.style.opacity='0';nav.style.pointerEvents='none';}else{nav.style.opacity='';nav.style.pointerEvents='';}}addEventListener('scroll',u,{passive:true});u();})();</script>
 </body>
 </html>

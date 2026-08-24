@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f2e3bd9430775c72c694169d8845fa2a778d9e64595360a52db4b954875fa55b"
+      "sha256": "fc9311f6bb8d54af36957eb565707fc296c1ecd099a1c4a58540114f5f2c3746"
     },
     {
       "path": "compliance_matrix.json",
@@ -105,28 +105,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "4649ff219290175773f1854e4fee54eb3fac4575e30065bcb0ee42c12254970f"
+      "sha256": "062f42175a3d9b2166b281ba841bc41d31607e4b77f84a6381a7418fad82096a"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "8bac4635c4acbe702384f8a438506a76ff26e61dd96d73519dcf116d0aaddf8d"
+      "sha256": "974114fbd7c6d5da17bb5888cef24a9139e9ae983f1fd8b7fe5028d3ccd79d4f"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "6f42a25fe20fca11fb063812bef28fd044f9939c8a7d102a1c7bde59e9032c38"
+      "sha256": "09395698500f8569bf33dfba2d055991864a7a1e1b8a98b6f529428f8d3c1e68"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7de475c89e72e40e0b8549cf07b8d2325bb710c7606cc0afaa9c72a608abf146"
+      "sha256": "e660dc3c96336c685b1a8f3bf373f7446cfee080c1caf5bec56bca9dde278d17"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -239,7 +239,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "d3896c9a025b611f1dd16a4b119562b6ed93f4977ce86c25c3d2b48700c92fed"
+      "sha256": "5ce1a82af3ccb1b34263d97ab14167355515b826d4be7be2ca49bb0a6d9f0532"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -247,7 +247,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "1818044f70377b143de8dd47427746548b765dff2f1a7e25c1fa1e0a14b39523"
+      "sha256": "0dbb03917b703ca0b25708277cf25a481f80d034dfcecad46d00f25f05e41cf1"
     },
     {
       "path": "visual/index.en.html",
@@ -255,7 +255,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "b708840c1f1f1427bb9418c000df0a3cd8f861f1db6f5a7a5d81df8645f3c47b"
+      "sha256": "3f700467d74ff07d98732a3749f60fa6e68dadbb3af0f460a566536cd962b5eb"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -602,14 +602,14 @@
       "description_en": "The university wall is not demolished — a single Lesson Gate is opened in it, with open-air auditing benches along the city side; a neighbouring university's public lecture is opened to the belt, an AI teaching assistant explains the same sentence at a tier the listener chooses, and an elderly resident and a secondary-school student sit side by side in the same class."
     },
     {
-      "path": "assets/media/cover.png",
+      "path": "assets/media/cover.jpg",
       "role": "media_poster",
       "required": false,
-      "sha256": "6ced0835a1c08202778c3d7e0bbd0d6c098f7f055990d902a22e49c2fb8c5663",
-      "title_zh": "方案封面 · 道钉截面与应答声环",
-      "title_en": "Cover — Rail-Spike Section and Answer Rings",
-      "description_zh": "程序化绘制的方案封面，母题为俯视铜道钉圆形与向外扩散的同心声波环。",
-      "description_en": "A programmatically drawn cover whose motif is a rail spike seen from above with concentric answer rings radiating outward."
+      "sha256": "9cbcb3c84e2e4bfbfa0bcf6c2270c9d1b4daa718228ae32aa64d155e2c617402",
+      "title_zh": "方案封面 · 大钟寺片区鸟瞰",
+      "title_en": "Cover — Dazhongsi key-area aerial",
+      "description_zh": "封面主图为 AI 生成的大钟寺片区鸟瞰概念意象（非实景照片、非官方审定成果），其上以 PIL 程序化排版标题、两问、三个核心数字与 K0–K9 疏密道钉带示意。",
+      "description_en": "The cover hero is an AI-generated concept aerial of the Dazhongsi key area (not a photograph, not an officially approved result), over which the title, the two questions, three key figures and the K0–K9 spike rhythm are typeset programmatically with PIL."
     },
     {
       "path": "assets/media/narrative-poster.jpg",
@@ -674,6 +674,16 @@
       "title_en": "Answer Bell Audio Description",
       "description_zh": "音频的生成方式、用途与合规边界说明。",
       "description_en": "How the audio was generated, what it is for, and its compliance boundaries."
+    },
+    {
+      "path": "visual/assets/renders/render-answer-origin.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "ad131b70ac7622b39b3035bbc1933a92b7a906014e825728c85693faf9d88bff",
+      "title_zh": "中答 · 应答原点站前素广场",
+      "title_en": "Answer Origin forecourt",
+      "description_zh": "清华园车站站前素广场鸟瞰：老站房本体不动，0.6 公顷留白广场上只有零公里桩与应答簿两件小体量物件，校园围墙改为通透格栅界面。AI 生成概念意象，未经坐标配准，不表达用地与尺寸。",
+      "description_en": "An aerial of the plain forecourt at Tsinghuayuan Station: the 1910 station house untouched, only the Kilometre-Zero Post and the Answer Book on 0.6 ha of deliberate emptiness, the campus wall rebuilt as a permeable lattice. AI-generated concept imagery, not coordinate-registered; it expresses no land use or dimensions."
     }
   ],
   "validation_claim": {
@@ -682,5 +692,5 @@
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
   },
-  "cover_image": "assets/media/cover.png"
+  "cover_image": "assets/media/cover.jpg"
 }
