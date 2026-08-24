@@ -29,6 +29,8 @@ Official `SITE_BOUNDARY` and `KEY_AREA` polygons are not yet available. All lock
 
 Planning-control conditions (FAR, building height, building density, green ratio, setbacks) have not been published by the organizer; `planning_limits.json` marks them `missing`. The corresponding metrics are uniformly `status=unknown` with the recomputation path stated for when official data arrives; no conceptual volume is presented as a statutory control value.[source:OFFICIAL-ANNOUNCEMENT] [metric:floor_area_ratio] [depth:development_intensity_controls]
 
+**Source tiers (explicit distinction to prevent misinterpretation)**: evidence is tagged in three tiers, indexed by `registry_tier` in `sources.json` and by figure footnotes - (1) **approved_formal** (approved by the organizer, usable as formal basis): the qualification-announcement, the agent task book, and site-package provisional boundaries (geometry treated separately as provisional); (2) **self_collected_review** (participant-collected, pending professional review / background evidence): the Haidian 2025 statistical bulletin, OpenStreetMap (ODbL), international institutional cases, and regional-collaboration public reporting - background and mechanism comparison only, not statutory controls, established cooperation, or official endorsement, with key figures and applicability to be professionally re-verified; (3) **provisional_only**: all geometry (provisional rough boundaries). All citations and figure footnotes follow these tiers; economic-derivation metrics of district-numerator over provisional-denominator (technology-contract intensity, laboratory density) are flagged low-confidence background indicators and are prohibited for site performance comparison or implementation/investment decisions.[source:SOURCE-REGISTRY] [source:OSM-2026]
+
 ## Three-Level Scope Framework
 
 The three levels are threaded by one innovation-chain logic: the coordinated research area answers "how the innovation ecosystem is organized", the overall design area answers "how spatial structure carries the innovation chain", and the key areas answer "how specific scenarios land in neighborhoods".[source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework]
@@ -175,7 +177,11 @@ Beyond the overall and zoning scales, the proposal adds conceptual "section/node
 4. **Community elder (70)**: XiaoYue River resident, needs no-login human services and fully non-digital alternatives.
 5. **School-family**: college-district residents, need AI education space and safe public grounds.
 
-The five personas map to five space-and-service demands, linked to scenario cards and spatial layers; personas are inferred from public population structure (33% migrant population) and facility bases (183 primary/secondary schools, 239 community health centers), not from field research.[source:GONGBAO-2025] [metric:persona_count]
+The five personas map to five space-and-service demands, linked to scenario cards and spatial layers; personas are inferred from public population structure (33% migrant population) and facility bases (183 primary/secondary schools, 239 community health centers), not from field research. **Persona status: draft awaiting verification** (draft-level, not resident-validated final). [source:GONGBAO-2025] [metric:persona_count]
+
+#### Participatory verification: mandatory gate before pilots
+
+Personas, non-digital alternative paths, and public-interest KPIs are inferred from district-level materials and have not been validated with in-place users - this is our explicit validation gap and planned remedy, not a completed achievement: (1) **Gate**: no pilot, scenario deepening, or public-interface launch before participatory verification is complete; unverified scenarios cannot enter M4 controlled trial (see "Implementation Milestones"); (2) **Populations and methods**: cover representatives of older adults, persons with disabilities, caregivers, teachers/students, general residents, and frontline service staff, using neighbourhood walk-through surveys, focus groups, and accessibility walk-throughs (including simulated elderly/disabled perspectives), sampled against public population structure and facility distribution; (3) **Auditable result backfill**: verification outputs (interview notes, walk-through reports, revised personas, alternative-path checklists) enter the P1 pilot review materials and backfill personas (draft awaiting verification -> verified), non-digital alternative paths, and public-interest KPIs; revisions are published through the annual evolution cycle; (4) **Boundary**: this proposal does not fabricate verification results or resident opinions; all current personas, persona KPIs, and satisfaction-type metrics in the scenario cards are provisional values and carry no performance commitment until verified.[source:GONGBAO-2025] [metric:persona_count]
 
 ### Ten AI Scenario Cards
 
@@ -399,6 +405,35 @@ This framework links with the existing "pilot gate - shutdown threshold - failed
 
 Roles above are conceptual pending confirmation of formal entities; licence types are expected categories subject to competent-authority approval. CAPEX/OPEX figures are coarse order-of-magnitude estimates from analogous public projects, assumption status "pending professional estimate" - neither quotations nor budgets; the proposed 90-day deletable record applies subject to a data-protection impact assessment (DPIA) confirming the applicable conditions and legal basis.
 
+#### Implementation milestones (M1-M7: expanding the card 1-4 ledger into a seven-stage path)
+
+The ledger's pre-surveys, licences, costs, cycles, and exit/data deletion are not a one-off checklist but a seven-stage path; each stage has explicit outputs, and the next stage is gated on them. Participatory verification and DPIA complete before pilot launch (M2/M3 gates), never retrofitted.
+
+| Stage | Key work | Scenarios | Stage outputs | Gate to next stage |
+| --- | --- | --- | --- | --- |
+| M1 Site survey and data filing | Ownership, power, and circulation surveys; rail/transport special-data prerequisites; existing building and ownership screening | Cards 1-4 | Survey checklist, missing-data ledger | Survey complete, gaps itemized |
+| M2 Compliance preparation (pre-pilot) | Pilot filing procedures, safety operating rules, DPIA draft, insurance quotes, participatory verification kick-off | Cards 1-4, 10 | DPIA draft, participatory verification report, insurance plan | DPIA and participatory verification complete |
+| M3 Build and equipment self-check | Test benches, isolation ring, shuttle stops, service counters built/fitted; equipment self-check and safety officer on duty | Cards 1-4 | Completion self-check report, equipment records | Self-check passed, safety officer on duty |
+| M4 Controlled trial and baseline observation | Isolated-hours operation, monthly small-sample values, public-intrusion events (target 0) recorded, complaint closure | Cards 1-4 | Baseline data (Cards 1/4: 6 months; Card 2: 3-month acceptance period; Card 3: first trial month) | Observation window complete with full baseline |
+| M5 Baseline calibration and rolling commitments | Rolling targets at "baseline + 5%"; KPI sampling and audit rules take effect | Cards 1-4 | Performance-commitment table (with audit frequency) | Baseline confirmed with operator and sub-district/community |
+| M6 Public opening and community interaction | Public hours, Open Day, public Dashboard (desensitized), quarterly third-party sampling audit | Cards 1-4, 10 | Public Dashboard, semi-annual audit report | Semi-annual audit passed |
+| M7 Annual evolution and escalation | Annual evaluation (maturity escalation/deprecation), failure-run archive update, participatory verification re-check | All scenarios | Annual route update, next-phase plan | Connects to the annual evolution cycle |
+
+#### Data-protection matrix (cards 1-7 and card 10; all provisional pending DPIA)
+
+| Scenario | Data classes | Use | Collection minimization | Retention and deletion (proposed) | Access control | DPIA status |
+| --- | --- | --- | --- | --- | --- | --- |
+| Card 1 evaluation | Benchmarks and model weights (declared-public parts only), evaluation logs, sensor status | Deterministic scoring and reports | No non-public inputs retained | 90 days, deletable | Duty evaluator + Zhongzhiyuan operator | Pending DPIA |
+| Card 2 delivery ring | Ring sensors (pedestrians/obstacles), weather, delivery orders, low-speed positioning | Path planning and safety monitoring | No public-person identity data collected | 90 days, deletable | Site safety officer + ring operator | Pending DPIA |
+| Card 3 shuttle | Station flows, weather, vehicle telemetry | Operation and safety review | Station-level aggregation | Per licensed operating rules | Line operator + onboard safety officer | Pending DPIA |
+| Card 4 health navigation | Public health-resource directory, map data | Information navigation and human transfer | No personal health data collected | Service logs cleared after catalogue-update period | Community operator + social worker | Pending DPIA |
+| Card 5 classroom | Textbooks and cleared public resources, anonymized exercise responses | Adaptive practice and learning reports | Minimal student personal data | Deleted on decommission | Pilot school + education operator | Pending DPIA + school-pilot licence |
+| Card 6 elderly companion | Public community resources, user-authorized preferences | Companionship and reminders | No health/medical data collected | Retained only within authorization | Community operator + social worker | Pending DPIA |
+| Card 7 civic counter | Public service guides, document checklists | Document prompts and pre-checks | No personal data beyond service necessity | Not retained, or per government procedures | Civic operator + counter staff | Pending DPIA (government procedures prevail) |
+| Card 10 Open Day | Public event information, authorized registration data | Event organization and recommendations | No sensitive personal data | Deleted after event | Dazhongsi operator + organizing committee | Pending DPIA |
+
+Data-protection-matrix status note: all entries are proposed designs; before formal implementation a project-level DPIA (business justification, legal basis, retention periods, deletion mechanisms) must confirm and finalize them; until then, no scenario may collect or retain data beyond the minimum necessary. The "90-day deletable" is a proposed value whose applicable conditions and legal basis follow the DPIA conclusion.
+
 ## Land Use, Building Scale, and Retain/Renovate/Demolish/New
 
 The land-use layout covers fourteen tiled zones (research 0802, industry-commerce 05, residential 0701, park green 1401, coded per the 2023 Land Use and Sea Classification Guide; the university-colocation circle is counted under research 0802 by dominant use); every zone area is recomputable from `geometry/land_use.geojson`. Concept building envelopes total 11 (footprint ~1.099 million m², all conceptual illustrations, not existing or approved buildings).[data:geometry/land_use.geojson] [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]; additionally, [depth:land_use_layout]. Concept envelopes follow the architectural design-depth regulation (a deepening reminder until the official document is available).[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
@@ -493,3 +528,25 @@ Full sources, formulas, confidence, and assumptions live in `metrics.json`; task
 18. China News Service: "A Century-Long Leap of the Jing-Zhang Railway", 2019-09-23.[source:JHZ-CHINANEWS]
 19. "Law of the People's Republic of China on the Construction of a Barrier-Free Environment", effective 2023-09-01.[standard:BARRIER-FREE-ENVIRONMENT-LAW]
 20. General Office of the State Council: "Implementation Plan on Properly Solving Difficulties of the Elderly in Using Intelligent Technology" (Guobanfa [2020] No. 45), 2020.[standard:ELDERLY-SMART-TECH-PLAN-2020-45]
+
+## Appendix A: Bilingual Equivalence Checklist
+
+Manual equivalence check between `proposal.en.md` (en) and `proposal.md` (zh) under bilingual contract v1 (checked by: hongshuxifan321 with Claude Code; iteration v1.4-fixes r7, 2026-08-25). Equivalence definition: chapter correspondence, semantically equivalent claims, identical metric values and units, preserved sources and warnings, consistent numbering, complete figure pairs; both versions independently pass structural validation.
+
+| # | Item | zh location | English location | Verdict |
+| --- | --- | --- | --- | --- |
+| 1 | Key claims: first infrastructure leap (1909 opening, compute-belt naming, rails-to-compute) | Intro paras 1-2 | Intro paras 1-2 | Equal |
+| 2 | Three-level scope 43.6 / 11.4 / 3.684 km² | Three-Level Scope Framework table | Same table in zh | Equal |
+| 3 | Site area 1,141.28 ha, with per-language unit conventions | Metrics section / metrics.json | Metrics section | Equal |
+| 4 | Green ratio 9.3%, public-space ratio 1.1%, building footprint 1.099M m² / 109.9 wan m², roads 83 km / 8.3 wan m | Metrics section | Metrics section | Equal |
+| 5 | Source tiers (approved / self-collected / provisional) | Design Basis and Source Inventory | Same section in zh | Equal |
+| 6 | Low-confidence warning: economic-derivation metric scope mismatch, prohibited uses | Metrics section + metrics-evidence figure caveat | Same in zh | Equal |
+| 7 | Scenario numbering: cards 1-10, names and locations | Scenario cards 1-10 table | Same in zh | Equal |
+| 8 | Approval limits: pilot gates, shutdown thresholds, licences "subject to competent-authority approval" | Admission conditions, RACI, ledger notes | Same in zh | Equal |
+| 9 | Data-protection matrix: 90-day proposed, pending DPIA | Implementation milestones + data-protection matrix | Same in zh | Equal |
+| 10 | Figure placement: 5 figures + local-prototypes, zh/en pairs, order consistent | In-text figure references | Corresponding `.en.png` references | Equal |
+| 11 | English in-figure phrasing fixes: "Scenario-led living", "Open-source acceleration", "Provisional boundary (unofficial)" | assets/figures/*.en.png | - | Equal (zh figures keep "scenario life", "open-source acceleration", "provisional (unofficial)" equivalents) |
+| 12 | Persona status "draft awaiting verification" + participatory verification gate | Personas + participatory verification | Same in zh | Equal |
+| 13 | Terminology: pending professional estimate / pending DPIA | Throughout | Throughout zh text | Equal |
+
+**Figure & PDF pairing**: 10 PNGs (5 figures x zh/en) generated by `build_figures.py`, paired and structurally identical (this revision fixes English title auto-scaling, adaptive legend wrapping, bottom contrast); `a3-booklet(.en).pdf` and `a0-boards(.en).pdf` generated by `build_pdfs.py` (first-page small type enlarged); `visual/index(.en).html` and `report/proposal(.en).html` generated from the bilingual proposal. This table does not cover pixel-level comparison of embedded PDF figures (translation equivalence is re-checked by maintainers).
