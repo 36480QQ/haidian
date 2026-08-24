@@ -297,6 +297,32 @@ The project list and phasing depth are managed by [depth:renewal_project_list] a
 | JZ-05 | AI public-service and edge-computing nodes | New infrastructure / public service | Energy, computing, safety, and operating entity | [data:geometry/constraints.geojson#CONSTRAINTS] |
 | JZ-06 | Global AI activity-week public route | Operation / brand | Public-space permits, activity safety, copyright clearance | [data:geometry/phasing.geojson#PHASE-001] |
 
+### Implementation Path and Pilot Plan
+
+This proposal grounds "implementation feasibility" in four operable elements: a phase path, pilot areas, participants, and implementation metrics.
+
+**Phase path (near, mid, and long term)**:
+
+- **Near term (1–2 years, lightweight pilots)**: each of the three areas launches one "soft-infrastructure" pilot requiring no large-scale demolition or construction — Zhongzhiyuan launches a "safety-governance sandbox + metric-recomputation wall," Origin Community launches a "feedback garden," and Dazhongsi launches an "urban governance library";
+- **Mid term (3–5 years, renewal)**: walking-and-cycling break stitching, the Qinghe innovation interface, and Dazhongsi four-quadrant connectivity land; edge-computing nodes and compute-power-electricity coordination are rolled out;
+- **Long term (5+ years, governance consolidation)**: the *Urban Agent Governance Handbook* becomes the long-term operating rules of the three areas, and the urban governance knowledge base settles into an inheritable public asset.
+
+**Pilot areas (what to pilot first)**:
+
+- **Zhongzhiyuan = governance-mechanism pilot**: verification wall + permission sandbox (leveraging its positioning of "global discourse power in AI governance");
+- **Origin Community = participation-mechanism pilot**: feedback garden + learnability (talent and open-source community with high willingness to participate);
+- **Dazhongsi = data-and-knowledge pilot**: data-factor lounge + governance library (a data-factor cluster).
+
+**Participants (five roles)**:
+
+- **Government** (Haidian District government, planning commission): planning approval, redline determination, policy supply;
+- **Platform companies / operators**: park operation, activity organization, facility maintenance;
+- **Enterprises / universities**: computing, technology, scenarios, and talent supply;
+- **Public / communities**: feedback, participation, oversight;
+- **Agents (assistive)**: document organization, proposal reasoning, review support — not replacing planning approval.
+
+**Implementation metrics (quantifiable)**: three pilot scenarios land in the near term; N walking-and-cycling breaks stitched; N edge-computing nodes; N reviewable records settled into the governance knowledge base; N effective public-feedback iterations. Specific values to be calibrated after the official boundary and formal data arrive [metric:key_area_count] [data:geometry/phasing.geojson#PHASE-001].
+
 Phasing should be distinguished from the 100-day call-for-design period: the call period is the time requirement for submitting deliverables, while implementation phasing is the advancement path for urban renewal and project construction. The proposal should put forward near-term pilots, mid-term renewal, and a long-term governance framework, and mark which content can start first with lightweight facilities, operational activities, and service platforms, and which must await formal regulatory-plan, municipal, transport, and ownership conditions. For the annual activity system, developer-community operation, scenario open days, public experience routes, and international-communication mechanism, the narrative should state the operation object, frequency, responsibility boundary, translation path, and risk, and must not write only promotional slogans.
 
 ## Metric System, Area Recalculation, and Compliance Matrix
