@@ -1,5 +1,15 @@
 # 方案迭代记录 / Changelog
 
+## v58.0 - 2026-08-24（进行中 / in progress）
+
+**终稿收敛重建 / Final Convergence Rebuild**
+
+- 从 latest canonical `main@37f5541dfab74d7f89aa0f57bf1c64ab542b036b` 建立新分支；前序 PR #3904 已关闭并明确由本轮替代，同一投稿包无其他开放 PR，开工工作树洁净。
+- 修复前基线写入 `visual/assets/convergence-baseline.json`：156 个包文件、23,720,803 字节、双语正文各 640 行、四份 PDF 共 44 页、9 个可选媒体路径，并锁定九份 geometry 与 `metrics.json` 的 Git-blob SHA-256。
+- RED-01—04 分别锁定：就绪声明与权利状态冲突、非必要生成媒体的真实性/许可负担、跨表面重复入口、以及缺少唯一 pre-G1 专业移交候选。它们是投稿方编辑与包审查，不是公众反馈、专家意见、现场观察、审批结论或评审结果。
+- 用户授权边界：投稿方自有文字、表格、图件、JSON/GeoJSON 整理与版式采用 CC BY 4.0；投稿方自有构建和交互代码采用 MIT。第三方材料、仓库临时空间数据、OSM 数据与模型生成资产不进入该授权，继续逐项遵守原许可或从包中清退。
+- 冻结“双轨京张 / Twin-Track Jing-Zhang”、三处不可互换原型、JZ-AIOS、G0—G3、四轴、三载体、12/8/3/36、九份 geometry、`metrics.json`、NO-GO、provisional、现实结果 0、完整非 AI 路径、故障只停验证叠层、恢复非授权/批准/G1 与专业否决。后续条目将在最终 exact head 验证后补齐。
+
 ## v56.0 - 2026-08-23
 
 **已批规划语境对位与前台图件去重 / Approved-Plan Alignment and Front-stage Figure De-duplication**
