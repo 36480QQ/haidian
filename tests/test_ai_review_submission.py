@@ -270,7 +270,7 @@ class AIReviewSubmissionTests(unittest.TestCase):
             self.assertEqual("fail", result["review"]["mandatory_rejection"]["result"])
             self.assertFalse(result["review"]["can_enter_formal_review"])
 
-    def test_mandatory_fail_without_hits_is_normalized_to_pass(self) -> None:
+    def test_mandatory_fail_without_hits_stops_review_fail_closed(self) -> None:
         review = valid_review()
         review["mandatory_rejection"]["result"] = "fail"
         review["mandatory_rejection"]["hits"] = []
@@ -279,17 +279,23 @@ class AIReviewSubmissionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp, mock.patch(
             "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
         ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
-            result = run_ai_review(
-                ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
-                "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
-            )
-            self.assertEqual("pass", result["review"]["mandatory_rejection"]["result"])
-            self.assertEqual("formal-review-ready", result["review"]["recommendation"])
-            self.assertTrue(result["review"]["can_enter_formal_review"])
-            self.assertIn(
-                "mandatory_rejection: fail without hits requires result=pass",
-                result["decision"]["local_gate_overrides"],
-            )
+            out = Path(tmp)
+            with self.assertRaisesRegex(
+                ReviewError,
+                "result=fail requires at least one evidence hit",
+            ):
+                run_ai_review(
+                    ROOT, SUBMISSION, "alice", out, client, "gpt-test",
+                    "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+                )
+            final_artifacts = [
+                "model-output.json",
+                "ai-review.json",
+                "ai-decision.json",
+                "pr-comment.md",
+            ]
+            for artifact in final_artifacts:
+                self.assertFalse((out / artifact).exists())
 
     def test_invalid_model_schema_is_rejected(self) -> None:
         client = FakeClient({"recommendation": "formal-review-ready"})

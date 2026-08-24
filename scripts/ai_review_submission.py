@@ -451,6 +451,7 @@ Rules:
 3. Check the agent taskbook: positioning/functions, brand and logo, regional collaboration, planning innovation, industrial support, perceptible scenarios, spatial specificity, transformability, international communication, and long-term operations.
 4. Mandatory rejection covers privacy/personal data, classified/internal/non-public spatial data, fabricated official endorsement or approval, unlawful/discriminatory/malicious content, material irrelevance, missing agent.1-agent.6 tasks, and presenting proposals as settled government decisions.
    Use mandatory rejection only when the supplied evidence directly proves the condition. A package that names/maps agent.1-agent.6 but incompletely executes their deliverables is request-changes, not reject. Placeholder markers and unreadable deliverables are participant-controlled gate failures and request-changes unless another mandatory condition is independently proven.
+   If mandatory_rejection.result is fail, mandatory_rejection.hits must contain at least one directly proven condition; never return fail with an empty hits array.
 5. Copyright and source review is evidence-based. If supplied package evidence shows that authorship, licenses, fonts, images, maps, datasets, or code are unresolved, do not claim they are cleared; use request-changes and list the exact proof needed. A manifest artifact whose raw content is explicitly marked unsupplied in `review_input_access_boundary` is a review-packet access limitation, not proof that the participant omitted evidence. Do not penalize that limitation by itself, claim to have inspected the artifact, or execute participant verification scripts; rely on the supplied trusted gate reports unless visible evidence establishes a contradiction.
 6. Inspect visual evidence for legibility, consistency, meaningful design information, obvious placeholders, clipping, blank pages, misleading precision, and prominence of provisional-boundary warnings. Machine visual review cannot certify accessibility or legal rights.
 7. Missing organizer-owned official geometry must create precision and recalculation warnings, but must not reduce rubric scores or block content scoring by itself.
@@ -560,6 +561,15 @@ def validate_schema(instance: dict[str, Any], schema: dict[str, Any]) -> None:
         raise ReviewError(f"AI review does not match advisory schema: {exc.message}") from exc
 
 
+def validate_semantic_invariants(review: dict[str, Any]) -> None:
+    """Reject cross-field contradictions before local enforcement or publication."""
+    mandatory = review["mandatory_rejection"]
+    if mandatory["result"] == "fail" and not mandatory["hits"]:
+        raise ReviewError(
+            "Inconsistent mandatory rejection: result=fail requires at least one evidence hit"
+        )
+
+
 def actual_gate(review_input: dict[str, Any], key: str) -> tuple[str, str]:
     self_check = review_input.get("pre_submit_self_check", {}).get("stdout", {})
     section = self_check.get(key, {}) if isinstance(self_check, dict) else {}
@@ -617,15 +627,12 @@ def enforce_local_gates(
         if action not in review["required_next_actions_zh"]:
             review["required_next_actions_zh"].append(action)
     mandatory = review["mandatory_rejection"]
-    # ``hits`` is the evidence-bearing field. Keep the summary result derived
-    # from it so a model cannot reject a package while citing no condition.
+    # Preserve the existing safe normalization: any cited mandatory condition
+    # forces fail even when the model's summary field incorrectly says pass.
     if mandatory["hits"]:
         if mandatory["result"] != "fail":
             mandatory["result"] = "fail"
             overrides.append("mandatory_rejection: hits require result=fail")
-    elif mandatory["result"] != "pass":
-        mandatory["result"] = "pass"
-        overrides.append("mandatory_rejection: fail without hits requires result=pass")
     mandatory_fail = mandatory["result"] == "fail"
     if mandatory_fail:
         review["recommendation"] = "reject"
@@ -856,6 +863,7 @@ def run_ai_review(
         if not isinstance(review, dict):
             raise ReviewError("Model output must be a JSON object")
         validate_schema(review, schema)
+        validate_semantic_invariants(review)
         model_review = json.loads(json.dumps(review, ensure_ascii=False))
         overrides = normalize_model_review(review, review_input["submission_dir"])
         overrides.extend(enforce_local_gates(
