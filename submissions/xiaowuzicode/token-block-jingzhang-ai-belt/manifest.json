@@ -26,14 +26,14 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "c4552084d6afb834d0304fb5b72dc7af41e7092b0336cc7fea5700c9179e6b4f",
+      "sha256": "6c6c5492071d487e7dac2ba82028dea9d13a7654bb9fe7590a23a825df2fc004",
       "language": "en"
     },
     {
       "path": "report/proposal.zh.html",
       "role": "rendered_proposal_html",
       "required": false,
-      "sha256": "ac6fa939e9dd49c1faa99b02f9832ee1f0f09171618f5ac259856f99b70611df",
+      "sha256": "cb3fcf505da8f2fcc95bbea159b6f8e4d5fde8c06df3279270657d6f3878337c",
       "language": "zh",
       "translation_of": "report/proposal.html"
     },
@@ -41,7 +41,7 @@
       "path": "proposal.zh.md",
       "role": "narrative",
       "required": false,
-      "sha256": "4c6520ccb4f3d956b3a0560134620dd91ebcbe18c3dc95178559c4b336c5063f",
+      "sha256": "86ee8c9db8d27b8000f0a8b4ae7e9f8764d7dcbf7bcf4827a7865856b4089d08",
       "language": "zh",
       "translation_of": "proposal.md"
     },
@@ -49,7 +49,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "9a38b968ddce65eb7f8442ccaead9b8baa231355eafef980a6bc0b3c20fcd645"
+      "sha256": "28df674f7e2b17e08e1fb5bb7642be455b106cdf9448007165359a03b1e454b2"
     },
     {
       "path": "agent.json",
@@ -73,13 +73,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "5e2832ef78fc082f9eb5f2f388650de44b9a12dd189fe37cea76adba0faf9881"
+      "sha256": "ae817dea4cc506221851ce025fe77fad79a640b46b628afa3c7cf5beb7b07df5"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d0c4f94c2a4e9e083da23835edf6141925fb4ee13cb1ff845f7f006ae420ddba"
+      "sha256": "c4479bfe7373a8aea1375cc249243076d630f1d8407418fcaa08f4e00d01a0ca"
     },
     {
       "path": "compliance_matrix.json",
@@ -103,7 +103,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "3125a9392ac6f115db1ff8c332d73258a365ba11a634e14a20266dad1ee2581a",
+      "sha256": "2a967ba77bc099cb4848270b8f82d864431ae4fa2dc31e593c9a1ffd702bc5f3",
       "language": "en"
     },
     {
@@ -116,7 +116,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "d31ef701dc8ce948b47311858ce694d5f1320e4a6b6432b9c618b07956528813"
+      "sha256": "e82f13e90bd7a0c311cffd109082c917dfc03f1289e7992460d6b3223d80b07b"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -136,7 +136,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "27ed55fe7a9e292d49ece6898cf03e274317bc72fca84525f919999f71b52646",
+      "sha256": "ddd3f4f9077c56a31454cc38809837b89380b6b2ab3e797ea5dd13dd3ede93fa",
       "language": "en"
     },
     {
@@ -435,7 +435,7 @@
       "path": "visual/index.zh.html",
       "role": "visualization",
       "required": false,
-      "sha256": "eb079ba118346a3be3ca56d0794030ccb06e115f1575654b36efdd489b8eec5c",
+      "sha256": "6a532d934d76bd3deb4f4c573fdaeb03d5bf4d4c9ecea30ad5de58a9f0017c67",
       "language": "zh",
       "title_zh": "离线展示页中文对照版（与 visual/index.html 同内容，中文主导）",
       "title_en": "Chinese display counterpart of the offline visual page (same content as visual/index.html, zh-primary)",
