@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "checked_date": "2026-08-24",
+  "checked_date": "2026-08-25",
   "scope": "package-local bilingual HTML font loading and responsive readability",
   "font_asset": {
     "path": "visual/assets/noto-sans-sc.woff2.css",
@@ -15,7 +15,7 @@
   "desktop_checks": [
     {
       "path": "report/proposal.html",
-      "viewport_css_px": [1280, 720],
+      "viewport_css_px": [1440, 900],
       "font_weights_loaded": [400, 700],
       "missing_image_count": 0,
       "horizontal_overflow": false,
@@ -23,7 +23,7 @@
     },
     {
       "path": "visual/index.html",
-      "viewport_css_px": [1280, 720],
+      "viewport_css_px": [1440, 900],
       "font_weights_loaded": [400, 800],
       "missing_image_count": 0,
       "horizontal_overflow": false,
@@ -32,15 +32,15 @@
     },
     {
       "path": "report/proposal.en.html",
-      "viewport_css_px": [1280, 720],
+      "viewport_css_px": [1440, 900],
       "missing_image_count": 0,
       "horizontal_overflow": false,
-      "english_evidence_label_count": 65,
+      "english_evidence_label_count": 70,
       "chinese_evidence_label_count": 0
     },
     {
       "path": "visual/index.en.html",
-      "viewport_css_px": [1280, 720],
+      "viewport_css_px": [1440, 900],
       "missing_image_count": 0,
       "horizontal_overflow": false,
       "navigation_target_count": 9
@@ -57,6 +57,29 @@
     },
     {
       "path": "visual/index.html",
+      "viewport_css_px": [390, 844],
+      "font_weights_loaded": [400],
+      "document_scroll_width_css_px": 375,
+      "document_client_width_css_px": 375,
+      "missing_image_count": 0,
+      "horizontal_overflow": false,
+      "manual_visible_tofu_count": 0,
+      "navigation_target_count": 9
+    },
+    {
+      "path": "report/proposal.en.html",
+      "viewport_css_px": [390, 844],
+      "font_weights_loaded": [400],
+      "document_scroll_width_css_px": 375,
+      "document_client_width_css_px": 375,
+      "missing_image_count": 0,
+      "horizontal_overflow": false,
+      "manual_visible_tofu_count": 0,
+      "english_evidence_label_count": 70,
+      "chinese_evidence_label_count": 0
+    },
+    {
+      "path": "visual/index.en.html",
       "viewport_css_px": [390, 844],
       "font_weights_loaded": [400],
       "document_scroll_width_css_px": 375,

@@ -234,6 +234,23 @@ Seven first-use rights are informed use, choice without penalty, no-app equivale
 
 No unsupported currency total is invented. Six ledgers—people, space, devices, data/licensing/compliance, maintenance, and exit/deletion/restoration—remain unknown. Before G1, each needs an owner, funding source, quote or workload basis, maintenance provision and exit provision. One empty ledger blocks the public gate. (Assumption register: A-COST-001.)
 
+### Current submission boundary and G1 cost baseline
+
+The current submission fixes the mandatory fields for role-appointment records, the owner role and estimation method for all six cost ledgers, and three G0-G2 receipt schemas. A role record must identify named A/R, authority, professional or competence basis, attendance and deputy, conflict of interest, and stop duty; a role label or suggested organisation cannot substitute for a signature. Before G1, every ledger must also receive an authorised amount, funding record and quote or workload basis. `amount_cny` and all three field-Gate results remain null, so the concept contract is reviewable while field activation remains refused.[source:PASSPORT-EVIDENCE]
+
+| Cost ledger | Owner role | Fixed estimation method | Evidence required at G1 |
+| --- | --- | --- | --- |
+| People | Project-controls and workforce lead | Approved activity roster × reviewed hours × documented rate, plus handover and relief | Budget code, signed sponsor or in-kind staff allocation; role-rate and workload calculation |
+| Space | Site and venue lead | Verified area × authorised use period × documented venue rate, plus temporary works and reinstatement | Site authority and budget/in-kind allocation; surveyed quantity and temporary-works basis |
+| Devices | Technical procurement and safety lead | Approved bill of quantities × comparable quotes, plus installation, testing, insurance and spares | Procurement funding or equipment contribution with liability; at least two comparable quotes or public framework rate |
+| Data/licensing/compliance | Data-protection, licensing and legal lead | Data inventory × review hours, plus licence, security assessment and independent-review fees | Compliance work package; scope-of-work and licence or audit quote |
+| Maintenance | Operations and maintenance lead | Asset/service roster × inspection frequency × labour and spares rate across the full trial | Ring-fenced operating line; SLA workload, spares and on-call basis |
+| Exit/deletion/restoration | Exit and site-restoration lead | Removal hours, transport, secure-deletion verification, reinstatement quantities and contingency | Exit reserve committed before G1; removal, deletion-verification and reinstatement method |
+
+`simulation.json` expands the submitted one-positive/three-negative tabletop into four recomputable tasks. All four observed decisions match their declared admit/stop expectation, so the synthetic expectation-match and audit-completeness rates are both 1.0; three successful outcomes mean the expected stop was enforced. The ledger contains no field task, public user or live-system performance, and every `field_claim` is false.[metric:simulation_task_count] [metric:simulation_success_rate] [metric:audit_completeness]
+
+These records complete the contract definition, estimation method and offline rule evidence within the participant's present authority. Named actors, real funding, market quotes, official geometry, professional sign-off and permits enter G0-G4 after their triggers occur; the present not-authorised status remains unchanged.[metric:tool_schema_pass_rate]
+
 Any severe safety or privacy incident, absent on-site steward, corrupted source, critical accessible-route failure, or undeleted record after withdrawal triggers immediate stop. Keep the staffed or non-AI route open, preserve only a minimum incident record, delete or quarantine affected data, restore the prior public-space and portable service interface, then publish a preliminary notice, repair evidence and continue/modify/sunset decision.[metric:negative_fixture_count]
 
 The Day-100 handover pack always contains G0-G5 logs; source and claim register; role-appointment record; accessible/no-app acceptance; incident and complaint ledger; deletion and portable-export proof; maintenance status; and an AI-OFF spatial restoration drawing. These items form the machine-readable `g5_completion_receipt`; its current result is null, and one missing item permits only sunset or evidence repair, never scaling.[source:PASSPORT-EVIDENCE]
