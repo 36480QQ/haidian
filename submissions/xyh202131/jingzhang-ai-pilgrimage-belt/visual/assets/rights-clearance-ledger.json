@@ -3,6 +3,7 @@
   "as_of": "2026-08-24",
   "status": "cleared_for_repository_review_with_declared_component_licenses",
   "legal_opinion_provided": false,
+  "independent_file_level_audit_completed": false,
   "independent_trademark_review_completed": false,
   "summary_zh": "投稿方已授权自有内容 CC BY 4.0、自有代码 MIT；OSM 衍生数据库单独 ODbL；第三方引用与仓库临时输入不被重新许可；模型生成媒体已清退。",
   "summary_en": "Contributor-owned content is CC BY 4.0, contributor-owned code is MIT, the OSM-derived database remains separately ODbL, third-party citations and repository provisional inputs are not relicensed, and generated media has been removed.",
@@ -45,7 +46,7 @@
     },
     {
       "component_id": "RIGHTS-FONT",
-      "scope": "Noto Sans SC subset used by final HTML/PDF outputs",
+      "scope": "Noto Sans SC subsets embedded in the four final PDF outputs",
       "license": "SIL-OFL-1.1",
       "status": "permitted_embedding_and_redistribution",
       "notice": "report/copyright_statement.md"

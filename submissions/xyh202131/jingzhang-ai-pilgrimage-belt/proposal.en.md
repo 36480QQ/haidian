@@ -581,17 +581,17 @@ All area ratios using the provisional boundary as their denominator have `low` c
 - Tool and evidence risk: Machine checks verify only structure, topology, references, and consistency. They do not replace professional judgment in planning, architecture, transport, municipal engineering, landscape, ecology, fire safety, railway safety, data security, accessibility, community engagement, or law [depth:risk_missing_data].
 - Public-reporting versus field-condition risk: The Firecrawl desk-research record preserves public-page sources, dates, summaries, and content digests for citation and design judgment only. It does not include a site visit, as-built drawing review, or facility-operations audit. Every claim involving exact location, built condition, intensity of use, or accessibility performance requires field verification before G1 [data:visual/assets/site-grounding-register.json#SG-001].
 
-The rights matrix strictly separates “reviewable inside the repository” from “cleared for public or professional reuse.” Only disclosed internal repository code review is currently allowed; code-review status, a machine PASS, or a publicly visible file never releases any other use automatically:
+The rights matrix answers “who licenses which component” while keeping permission separate from factual authority, planning approval and professional duty. A machine PASS or public visibility creates no licence by itself; permission comes from the contributor's express grant and each third-party component's own terms:
 
-| Use context | Current decision | Missing evidence |
+| Use context | Current permission basis | Boundary that remains |
 |---|---|---|
-| Repository validation, issue discussion, and code review | Disclosed review only | No additional licence; author, tool, source, and provisional-boundary disclosures must remain |
-| Organizer use or modification within this Jing-Zhang project | Needs confirmation | Clause applicability and third-party authorization audit |
-| Organizer printing, publication, exhibition, or promotion | Needs confirmation | Clause applicability, attribution form, and release audit |
-| Entrant external media, publication, or exhibition | Blocked | Written consent, complete licence terms, and independent file-level audit |
-| Reuse in another design project | Blocked | Authoritative rights decision or new project-specific authorization |
-| Translation, derivative editing, or professional deepening | Blocked pending scope confirmation | Derivative/professional-use authorization and complete editable-source inventory |
-| Release of OSM, fonts, logo, software, or generated assets | Blocked pending component audit | ODbL, font-embedding, trademark, and tool-output terms audit |
+| Repository validation, issue discussion and code review | Contributor content under CC BY 4.0; contributor code under MIT | Preserve author, source, provisional-boundary and modification notices |
+| Print, publication, exhibition, communication or translation of contributor-owned content | CC BY 4.0 permits attributed reuse and adaptation | Never rewrite provisional, G0 or zero real outcomes as official, built, approved or field-tested conclusions |
+| Modification or reuse of contributor code | MIT | Retain copyright and permission notice; machine results do not replace professional judgment |
+| Planning, architectural or engineering development | Contributor content/code may be reused as a licence matter | Reuser must independently verify sources, field conditions, law and professional duty; H01-H07 remain NO-GO until accepted |
+| OSM-derived database and PDF font subsets | ODbL 1.0 and OFL 1.1 respectively | Preserve OSM attribution/share-alike and font-licence obligations |
+| External pages, standards, cases and repository inputs | Cited only; not relicensed by this package | Follow original rights and the bounded uses in `sources.json`; no redistribution right is inferred |
+| Twin-Track name, logo and landmark expression | Reviewable/adaptable as CC BY concept content | No trademark search or registration conclusion and no third-party mark right; the final package contains no model-generated media |
 
 All current AI scenarios are in G0 conceptual status. The eight projects and four-season events are proposals: they are not approved, built, or operating, and no organization has committed to them. Entry to a higher operating gate may be discussed only after statutory approval, responsible entities, professional review, public participation, funding and operations, and incident response are all defined.
 
