@@ -33,6 +33,34 @@ R25-2「表达与合规修复」：回应评审 81/100 的 request-changes，修
 
 **未改动 / 冻结项**：方法核心代码、正式几何图层 `geometry/*.geojson`、三大定位锚定与「一核·三区·一界面·一衔接」空间结构；冻结指标数值未变，仅补溯源/回填来源。
 
+## v0.5 - 2026-08-24
+
+R25-3「根治视觉 + 治理资产可审计」：回应评审 81/100 中「必须完成的下一步」5+1 项，逐模块修复并保持中英完全等价。
+
+### 本轮修复
+
+| 模块 | 内容 | 交付物 |
+| --- | --- | --- |
+| 1.1 中文控件方框字根治 | 根因=字体子集缺 demo_data.json / scenes.json 的 8 个汉字（扑拓略米粗辐魏帮），地图标注豆腐块；补入子集源（覆盖 929 唯一汉字，缺口=0）+ 全局保险规则（控件 font-weight:400、内嵌字体优先） | `embed_font.py`、`visual/index.html`+`.en.html` |
+| 1.2 英文地图右侧说明裁切 | `.route-row`/图例 flex 项 `flex-shrink:0` + `flex-wrap`/`overflow-wrap`，英文长文本换行不裁切；补 `.docs-grid` 双列 | `visual/assets/demo.css` |
+| 1.3 A0 可读性 | 表格正文字号 7.2→8.0pt，全文无 <8pt；provisional/临时/建议警示已贯穿 | `gen_pdfs_enhanced.py` |
+| 2 遗产指标同屏同级重排 | metrics-evidence 图重排为 0 / 19.20 / 167 三张同级卡 + OFF-SITE 场外标签 | `inject_physarum.py`、`assets/figures/metrics-evidence.png`+`.en.png` |
+| 3 案例+成本逐项来源审计 | `sources.json` 增 COST-ESTIMATE-PLAN03（逐项 740.2/1744.1/3679.9/2648.8 m→2965.5 万元，口径北京市 2024 公开综合单价±30%）；10 案例补 location/period 结构化字段 | `sources.json`（25→26） |
+| 4 Physarum 转译说明 | `metrics.json` 增 `physarum_translation`：三可移植特性 + 锚点/障碍转译机制 + 场外边界 | `metrics.json` |
+| 5 T-01/02/03 测量协议 | 3 个验证场景增 `measurement_protocol`（MVMP 测量验证方法协议 + PAA 暂态验收评估），全 proposed，只写通用框架不虚构仪器/基线 | `simulation.json` |
+
+### 双语实质等价核对（R25-3 人工审计）
+
+| 核对项 | 结果 |
+| --- | --- |
+| 正文行数 | proposal.md ↔ proposal.en.md 均 316 行，一一对应 |
+| 冻结数字 | 19.20 / 2.802 / 8813 / 167 / 80.34 / 69.1% / 25.2% 中英一致 |
+| 图件双语 | metrics-evidence.png / .en.png 同一图重绘，标题/卡签/标签按语言分支 |
+| HTML 双语 | index.html / index.en.html 同步补字体子集 + 控件保险规则 |
+| 结构化 JSON | sources/metrics/simulation/compliance 全部可解析；新增字段为结构数据，非散文 |
+
+**未改动 / 冻结项**：方法核心代码、正式几何图层 `geometry/*.geojson`、三大定位锚定与「一核·三区·一界面·一衔接」空间结构；冻结指标数值未变。
+
 ## v0.3 - 2026-08-22
 
 R18「治理脊柱机器化」：把治理从正文散文升级为「机器可读 + 可逐点核验」的结构化资产，同时收敛正文重复。评审对照：R17 三分治理散文插入平盘 75/100，诊断真实差距在结构化治理资产（对标 94 分标杆与 86 分 peer 的 swb-spec / 回执账本 / RACI / 影子测试 / 工作包），而非散文重复。

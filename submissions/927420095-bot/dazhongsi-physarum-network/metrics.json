@@ -206,5 +206,36 @@
       "assumptions": [],
       "reason": "No deployment yet; the equivalence gap can only be read from the bounded field pilot, so it remains unknown until the first reading."
     }
+  },
+  "physarum_translation": {
+    "description": "Algorithm-to-design translation of the Physarum (slime mold) adaptive-network method into the Dazhongsi road-network renewal concept. Prose version: proposal.md / proposal.en.md §overall_spatial_structure.",
+    "transferable_properties": [
+      {
+        "algorithm": "minimal redundancy (total length near-optimal)",
+        "design": "renewal skeleton ~8813 m with minimal dead-end and redundant links"
+      },
+      {
+        "algorithm": "strong resilience (stays connected after local failure)",
+        "design": "main-vein + branch + slow-loop topology, so a single breakpoint does not sever the network"
+      },
+      {
+        "algorithm": "low crossing (detours around impassable obstacles)",
+        "design": "heritage-protection zones and impassable redlines are set as obstacles; the network detours around them (g1 hard constraint, 0 hard-crossings)"
+      }
+    ],
+    "translation_mechanism": {
+      "nutrient_anchors": [
+        "parks",
+        "metro stations",
+        "railway corridor",
+        "industry/office buildings"
+      ],
+      "obstacles": [
+        "heritage-protection zones",
+        "impassable redlines"
+      ],
+      "output_network": "four-level network: main vein — branch — slow-travel ring — green corridor"
+    },
+    "boundary": "Method-validation evidence only; the real Physarum run is ~2-3 km west of the provisional boundary, so the translated network is a conceptual design reference, not formal site geometry or approval geometry."
   }
 }

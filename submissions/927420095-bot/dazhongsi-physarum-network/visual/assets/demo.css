@@ -237,6 +237,14 @@ html, body {
 #docs-panel .docs-metrics b { color: var(--ink); font-weight: 600; }
 #docs-panel .docs-meta { font-size: 11px; color: var(--muted); }
 
+/* ---------- R25-3 1.2：英文长文本不裁切 ---------- */
+#route-info .route-row { flex-wrap: wrap; }
+#route-info .route-row span,
+#route-info .route-row b { flex-shrink: 0; }
+#route-info .route-row b { overflow-wrap: anywhere; }
+.legend-item > span:last-child { flex-shrink: 0; overflow-wrap: anywhere; }
+#docs-panel .docs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+
 /* ---------- 响应式 ---------- */
 @media (max-width: 720px) {
   #control-panel, #legend, #route-info { width: 190px; }
