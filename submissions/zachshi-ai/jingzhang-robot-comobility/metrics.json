@@ -610,6 +610,34 @@
       "confidence": "high",
       "assumptions": [],
       "rationale": "Negative-space baseline in time: corridor 100% returned to pedestrians 00:00-06:00 daily"
+    },
+    "signal_capacity_p1_max_orders_per_day": {
+      "status": "known",
+      "value": 348,
+      "unit": "orders/day",
+      "source_files": [
+        "visual/assets/signal-capacity-model.json"
+      ],
+      "formula": "bottleneck block trips/day x max orders per trip",
+      "confidence": "medium",
+      "assumptions": [
+        "Synthetic capacity model; field calibration required."
+      ],
+      "rationale": "Current block rule (one robot per block) honest ceiling: 232-348 orders/day"
+    },
+    "signal_capacity_p2_max_orders_per_day": {
+      "status": "known",
+      "value": 2160,
+      "unit": "orders/day",
+      "source_files": [
+        "visual/assets/signal-capacity-model.json"
+      ],
+      "formula": "500m sub-blocks: 30 trips/h x 12h x 2 directions x 3 orders",
+      "confidence": "medium",
+      "assumptions": [
+        "Sub-blocking scenario; requires signal system granularity upgrade."
+      ],
+      "rationale": "Sub-blocked spine capacity: 1440-2160 orders/day, making the 2000/day KPI reachable"
     }
   },
   "recalculation_notes": {

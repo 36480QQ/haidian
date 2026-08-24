@@ -85,11 +85,14 @@
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/robustness-simulation.js",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/run_license_tabletop.js",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/run_self_explaining_tabletop.js",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/run_signal_capacity.js",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/run_signal_daily_tabletop.js",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/scenario-cards.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/self-explaining-grammar.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/self-explaining-tabletop-evidence.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/self-explaining-test-protocol.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/signal-capacity-evidence.json",
+        "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/signal-capacity-model.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/signal-daily-evidence.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/signal-daily-timetable.json",
         "submissions/zachshi-ai/jingzhang-robot-comobility/visual/assets/signaling-grammar.json",
@@ -101,7 +104,7 @@
       "ai_package_stages": {
         "submissions/zachshi-ai/jingzhang-robot-comobility": "formal"
       },
-      "total_bytes": 5072538,
+      "total_bytes": 3749174,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -182,14 +185,14 @@
       "summary": {
         "standard_matrix_items": 11,
         "design_depth_items": 15,
-        "known_metric_refs_required": 45,
+        "known_metric_refs_required": 47,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 11,
           "standard": 4,
           "depth": 15,
-          "data": 28,
+          "data": 29,
           "metric": 9
         }
       }
