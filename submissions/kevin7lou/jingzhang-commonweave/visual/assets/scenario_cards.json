@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.1.0",
+  "scenarios": [
+    {
+      "id": "SC-01",
+      "domain": "住",
+      "name_zh": "家庭变化住房转换台",
+      "category": "human_service",
+      "safeguard_zh": "人工优先，AI只解释可选房源与资格",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-02",
+      "domain": "住",
+      "name_zh": "防搬迁租住风险预警",
+      "category": "public_service",
+      "safeguard_zh": "只用匿名聚合，个案由人处理",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-03",
+      "domain": "学",
+      "name_zh": "全龄课程翻译与线下报名",
+      "category": "public_service",
+      "safeguard_zh": "保留纸质与人工报名",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-04",
+      "domain": "学",
+      "name_zh": "少年安全独立路线陪练",
+      "category": "public_service",
+      "safeguard_zh": "不做人脸追踪，家长可退出",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-05",
+      "domain": "业",
+      "name_zh": "转岗技能与开放课题匹配",
+      "category": "public_service",
+      "safeguard_zh": "不以模型决定录用或福利",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-06",
+      "domain": "业",
+      "name_zh": "端侧模型公开验证",
+      "category": "testing_validation",
+      "safeguard_zh": "限定场地时段，人工急停",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-07",
+      "domain": "养",
+      "name_zh": "托育照护空位协同",
+      "category": "public_service",
+      "safeguard_zh": "人工确认，不降低线下服务",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-08",
+      "domain": "养",
+      "name_zh": "照护者喘息时间交换",
+      "category": "public_service",
+      "safeguard_zh": "互助记录最小化并可删除",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-09",
+      "domain": "医",
+      "name_zh": "基层健康导航",
+      "category": "public_service",
+      "safeguard_zh": "不诊断，转人工医护",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-10",
+      "domain": "医",
+      "name_zh": "康复设备公共安全验证",
+      "category": "testing_validation",
+      "safeguard_zh": "物理隔离、专业监督、可停机",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-11",
+      "domain": "游",
+      "name_zh": "热浪与雨雪韧性路线",
+      "category": "public_service",
+      "safeguard_zh": "离线标识与人工巡查并行",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-12",
+      "domain": "游",
+      "name_zh": "无障碍通行公开审计",
+      "category": "testing_validation",
+      "safeguard_zh": "残障使用者共同定义通过标准",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-13",
+      "domain": "文",
+      "name_zh": "京张口述史公共编辑室",
+      "category": "cultural_service",
+      "safeguard_zh": "授权、署名、撤回机制齐全",
+      "ai_optional": true,
+      "human_takeover": true
+    },
+    {
+      "id": "SC-14",
+      "domain": "文",
+      "name_zh": "中华文明多语内容工坊",
+      "category": "cultural_service",
+      "safeguard_zh": "专家与公众共同复核，企业只供能力",
+      "ai_optional": true,
+      "human_takeover": true
+    }
+  ]
+}
