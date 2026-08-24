@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Weave: Centennial Jing-Zhang AI Civic Loop - proposal report</title>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1>Open Weave: Centennial Jing-Zhang AI Civic Loop</h1>
+<p class="summary">A heritage-led, walkable, testable and operable civic loop connecting three key areas; all spatial and operating moves are conceptual suggestions and must be recalculated when official data arrives.</p>
+<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+</section>
+<h1>Open Weave: Centennial Jing-Zhang AI Civic Loop</h1>
+<blockquote><p>One historic line, three innovation roles: turn AI from a back-end capability into a public loop that is usable, human-reviewable and operable over time.</p></blockquote>
+<h2>Design Basis and Source List</h2>
+<p>This proposal uses the official prequalification announcement as the controlling source for the project name, three scope levels and design tasks, and uses the agent taskbook to address naming, ecosystem cases, AI+ scenarios, public space, culture and long-term operation <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="Source: OFFICIAL-ANNOUNCEMENT">Source</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="Standard: PROJECT-AGENT-OPEN-CALL-TASKBOOK">Standard</sup>. Spatial layers, metrics and presentation figures are derived from this package&#x27;s GeoJSON and recalculation files so that conceptual prose is not mistaken for a planning redline.</p>
+<p>The public package does not contain a precise official boundary, formal key-area polygons, regulatory controls, heritage-control geometry, cadastral parcels, road redlines, rail or municipal engineering data. This package therefore uses the maintainer-provided provisional constraint only for generation, visualization, self-check and public discussion; boundary, land use, buildings, blue-green, mobility, phasing and metrics must all be recalculated when official data arrives <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="BOUNDARY-SOURCE" title="Source: BOUNDARY-SOURCE">Source</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-001" title="Spatial data: geometry/site_boundary.geojson#SITE-001">Spatial data</sup>. No missing condition is presented as confirmed.</p>
+<p>Rights are recorded in <code>sources.json</code> and the copyright statement: public or cleared sources are used for the announcement, standards and case mechanisms; no personal data, internal drawings, commercial basemaps, corporate logos, portraits or unlicensed images/fonts are used <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="Source: SOURCE-REGISTRY">Source</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.en.png" alt="Sources and spatial evidence chain"><figcaption>Sources and spatial evidence chain</figcaption></figure>
+<h2>Three-Level Scope Framework</h2>
+<p>Open Weave uses one heritage public-space spine, three innovation cores, two wings, ten scenario cards and four contribution nodes. The coordinated research area is approximately 43.6 km² and frames the ecosystem, talent and future-city hypothesis; the overall design area is approximately 11.4 km² and frames spatial structure, renewal projects and mobility/blue-green strategy; the key-area scope is approximately 368.4 ha and tests three detailed design areas <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="Source: OFFICIAL-ANNOUNCEMENT">Source</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="Metric: site_area_sqm">Metric</sup>.</p>
+<div class="proposal-table"><table><thead><tr><th>Scope</th><th>Design judgment</th><th>Open Weave spatial answer</th></tr></thead><tbody><tr><td>Coordinated research area</td><td>Connect research, open source, enterprise services, public life and global communication</td><td>“source—co-create—transfer—experience—remember” innovation loop</td></tr><tr><td>Overall design area</td><td>Give the industry strategy visible public-space and daily-service carriers</td><td>Heritage spine + two cross-links + blue-green commons nodes</td></tr><tr><td>Key-area scope</td><td>Give the three areas distinct but complementary public values</td><td>Zhongzhiyuan for standards, AI Origin for near-campus transfer, Dazhongsi for urban exchange</td></tr></tbody></table></div>
+<p>The provisional boundary is shown as a low-contrast dashed constraint. It carries no official area or engineering meaning. Land-use polygons are complete intersections with the same boundary, and metrics are recalculated in EPSG:4548 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="Spatial data: geometry/land_use.geojson#LU-001">Spatial data</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_level_scope_framework" title="Depth: three_level_scope_framework">Depth</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.en.png" alt="One belt, three cores and two wings"><figcaption>One belt, three cores and two wings</figcaption></figure>
+<h2>Coordinated Research Area: Industry and Future City Research</h2>
+<p>The coordinated research area should not become another closed campus. It should be an open innovation chain: universities and research teams provide problems and prototypes; Zhongzhiyuan provides standards, safety and full-stack testing; AI Origin provides near-campus transfer and everyday talent life; Dazhongsi provides enterprise experience, consumption and global exchange; the Zhongguancun technology-service wing supports IP, compliance, capital and enterprise services; the Xiaoyuehe scenario wing brings technology into health, education, mobility and daily services. This is compatible with the “three areas, two wings” narrative, but does not state any investment, policy or招商 commitment as decided <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SRC-2026-BJ-KW-THREE-AREAS-WINGS" title="Source: SRC-2026-BJ-KW-THREE-AREAS-WINGS">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SRC-2026-HAIDIAN-1X1" title="Source: SRC-2026-HAIDIAN-1X1">Source</sup>.</p>
+<h3>Six public case mechanisms</h3>
+<div class="proposal-table"><table><thead><tr><th>Case</th><th>Transferable mechanism</th><th>Reference move for Jing-Zhang</th></tr></thead><tbody><tr><td>Station F</td><td>Co-locate work, founder services and events around a legible address</td><td>Create a transfer street and open service desk in AI Origin</td></tr><tr><td>Punggol Digital District</td><td>Mix campus, industry, public life and digital operations</td><td>Use the two wings to connect campuses, companies and communities</td></tr><tr><td>22@Barcelona</td><td>Keep productive uses in urban renewal and organize an innovation network with public space</td><td>Shift renewal from isolated buildings to public interfaces and service chains</td></tr><tr><td>AI Singapore</td><td>Close the loop between talent, public challenges and translational projects</td><td>Connect open challenges, testing and public release</td></tr><tr><td>Oodi Helsinki</td><td>Make learning, making, culture and public service everyday infrastructure</td><td>Use story stops and learning courts as low-barrier third places</td></tr><tr><td>Seoul DMC</td><td>Amplify a technology district through media, industry and city experience</td><td>Build a walkable smart-device and content interface in Dazhongsi</td></tr></tbody></table></div>
+<p>These are mechanism comparisons only. No case investment, scale or performance figure is imported into the Haidian proposal <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-STATION-F" title="Source: CASE-STATION-F">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-PUNGGOL-DIGITAL-DISTRICT" title="Source: CASE-PUNGGOL-DIGITAL-DISTRICT">Source</sup>.</p>
+<h3>Naming and visual identity</h3>
+<p>The main name is “Open Weave”, with “Jingzhang Civic Loop” as the English spatial descriptor. The logo direction uses two parallel lines as the railway memory, three nodes for the three cores, and an intentionally open arc for knowledge and proposals that keep entering and iterating. Suggested colors are ink blue (trust and rail), signal red (action and contribution), river green (ecology and everyday life), and warm yellow (nodes and events). Existing corporate marks and unlicensed fonts are excluded. Identity is tied to spatial tasks rather than made as an isolated slogan <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="Standard: PROJECT-AGENT-OPEN-CALL-TASKBOOK">Standard</sup>.</p>
+<h2>Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design</h2>
+<p>The overall design area is organized by a heritage spine, commons nodes, cross-links and low-speed services. The Jingzhang Heritage Park is treated as a public-memory and slow-mobility spine; Zhongzhiyuan, AI Origin and Dazhongsi become three distinct innovation interfaces. R&amp;D/open-source, cultural exhibition, enterprise services, community services and blue-green spaces alternate along the loop to keep work, learning, living and visiting within reach <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="Spatial data: geometry/land_use.geojson#LU-001">Spatial data</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="overall_spatial_structure" title="Depth: overall_spatial_structure">Depth</sup>.</p>
+<p>No statutory FAR, height, density or setback value is proposed. The twelve building footprints are conceptual retain-review, retrofit-review and new-build prototype units for discussing interfaces, ground floors, shared halls and open testing; they are not parcel-level demolition or ownership conclusions <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-001" title="Spatial data: geometry/buildings.geojson#BLDG-001">Spatial data</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="Metric: building_footprint_area_sqm">Metric</sup>. Official controls, ownership, fire safety, heritage and existing-condition surveys are prerequisites for professional parcel-level work.</p>
+<h2>Detailed Design of Key Areas</h2>
+<h3>01 Zhongzhiyuan AI Acceleration Area: standards commons</h3>
+<p>Zhongzhiyuan is proposed as a testable full-stack innovation interface. The Qinghe edge hosts open testing and low-carbon innovation display; the interior combines safety governance, standards, evaluation and public release; a contribution wall records public, reviewed and adopted knowledge. The spatial moves are “Qinghe innovation edge + standards commons + open-source plaza + green testing corridor”, not a closed technology campus <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-001" title="Spatial data: geometry/key_areas.geojson#PROV-KEY-001">Spatial data</sup>.</p>
+<h3>02 Beijing AI Origin Community: near-campus transfer street</h3>
+<p>AI Origin brings universities, start-ups, everyday life and public culture into one daily interface. A learning court hosts open classes and community events; a transfer street supports IP, enterprise services and public release; evenings remain safe, quiet and walkable. AI services use human-handover navigation, policy indexes and booking rather than personal profiling or hidden tracking <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-002" title="Spatial data: geometry/key_areas.geojson#PROV-KEY-002">Spatial data</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="BARRIER-FREE-ENVIRONMENT-LAW" title="Standard: BARRIER-FREE-ENVIRONMENT-LAW">Standard</sup>.</p>
+<h3>03 Dazhongsi AI Industry Cluster: urban smart-economy commons</h3>
+<p>Dazhongsi is proposed as a city-scale interface organized around station four-quadrant walking, enterprise services, content consumption and smart-device display. A global demo lounge serves developers, companies and visitors. Low-speed robotics is tested only in controlled, reversible and staffed settings; data and digital-asset displays require authorization, compliance and human explanation <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-003" title="Spatial data: geometry/key_areas.geojson#PROV-KEY-003">Spatial data</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_key_area_detailed_design" title="Depth: three_key_area_detailed_design">Depth</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/key-areas.en.png" alt="Three key areas and differentiated moves"><figcaption>Three key areas and differentiated moves</figcaption></figure>
+<h2>AI Innovation Ecosystem, Personas, and AI+ Scenarios</h2>
+<p>Six personas make “AI talent friendliness” spatial and operational: an open-source student needs learning and low-friction release; a research lead needs standards, compute and testing; an SME founder needs compliance, IP and customer scenarios; residents and older adults need human service, legible wayfinding and a non-tracked daily environment; commuters and visitors need continuous, understandable walking and station connections; operators and governance teams need auditable prompts, human review and exit mechanisms <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="Standard: PROJECT-AGENT-OPEN-CALL-TASKBOOK">Standard</sup>.</p>
+<h3>Ten AI scenario cards</h3>
+<div class="proposal-table"><table><thead><tr><th>No.</th><th>Scenario</th><th>Space and users</th><th>Human boundary</th></tr></thead><tbody><tr><td>01</td><td>Open-source discovery</td><td>Heritage contribution wall / developers, visitors</td><td>Index public content only; maintain sources by people</td></tr><tr><td>02</td><td>Safety governance sandbox (test)</td><td>Zhongzhiyuan / companies, standards teams</td><td>Produce review lists only; no automatic clearance</td></tr><tr><td>03</td><td>Edge-compute stop</td><td>Three cores / teams, public</td><td>Verify energy, network and safety first</td></tr><tr><td>04</td><td>AI walking guide</td><td>Heritage spine / students, older adults, visitors</td><td>Human and accessibility review before advice</td></tr><tr><td>05</td><td>Dazhongsi global demo lounge</td><td>Dazhongsi / companies, investors, developers</td><td>No investment promise or business decision replacement</td></tr><tr><td>06</td><td>Qinghe low-carbon innovation corridor</td><td>Zhongzhiyuan / research teams, residents</td><td>Use public environmental information and explain anomalies</td></tr><tr><td>07</td><td>Near-campus transfer street</td><td>AI Origin / universities, start-ups</td><td>Keep legal and IP human service access</td></tr><tr><td>08</td><td>Data commons lounge</td><td>Dazhongsi / companies, public</td><td>Show authorization and audit trail, never personal data</td></tr><tr><td>09</td><td>AI daily-service street</td><td>Community/retail edge / residents</td><td>Health, education and legal information is not professional service</td></tr><tr><td>10</td><td>Global AI week route</td><td>Whole belt / global visitors</td><td>Recheck safety, access and copyright for each event</td></tr></tbody></table></div>
+<p>Cards 02, 04, 08 and 10 are candidates for industry or governance validation. Each begins with public rules, minimum data, human review, exit conditions and a retrospective; none is an approved operation or vendor requirement <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="Source: AGENT-TASKBOOK">Source</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GENERATIVE-AI-INTERIM-MEASURES" title="Standard: GENERATIVE-AI-INTERIM-MEASURES">Standard</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility and blue-green civic loop"><figcaption>Mobility and blue-green civic loop</figcaption></figure>
+<h2>Land Use, Building Scale, and Retain-Renovate-Demolish Strategy</h2>
+<p>Land use follows the numeric vocabulary supplied by the Ministry of Natural Resources. Five bands cover the provisional design boundary without overlap or unlabeled gaps; they are a design partition for comparing spatial relationships, not a statutory zoning or land-ownership conclusion <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MNR-LAND-USE-CLASSIFICATION-GUIDE" title="Standard: MNR-LAND-USE-CLASSIFICATION-GUIDE">Standard</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="Spatial data: geometry/land_use.geojson#LU-001">Spatial data</sup>.</p>
+<p>Buildings use a three-step review: retain review for cultural value, structure, public interface and continued use; retrofit review for open ground floors, shared halls, energy and accessibility; new-build prototypes only after a public-service gap, scenario need and official controls are established. All parcel-level demolition, height, intensity, setback and total floor area remain pending official data <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="retain_renovate_demolish" title="Depth: retain_renovate_demolish">Depth</sup>.</p>
+<h2>Transport, Rail, Municipal Infrastructure, and Public Services</h2>
+<p>Mobility is proposed as a heritage slow-mobility spine, three cross-links and station connections. The spine supports walking and cycling; cross-links connect campuses, districts, communities and stations; nodes provide legible wayfinding, bicycle parking, human information and accessible alternatives. Road centerlines only indicate conceptual service directions, not road redlines, rail alignments or bridge/tunnel engineering <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson#ROAD-001" title="Spatial data: geometry/roads.geojson#ROAD-001">Spatial data</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="traffic_rail_slow_parking" title="Depth: traffic_rail_slow_parking">Depth</sup>.</p>
+<p>Municipal and new-infrastructure elements are “pluggable service nodes”: edge compute, open-data display, environmental maintenance, energy and public-service prototypes start as light pilots, then deepen after capacity, safety and operations are known. Electricity, drainage, fire safety, utilities and flood conditions remain pending. Human desks, paper and phone alternatives remain part of public service <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="BARRIER-FREE-ENVIRONMENT-LAW" title="Standard: BARRIER-FREE-ENVIRONMENT-LAW">Standard</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="ELDERLY-SMART-TECH-PLAN-2020-45" title="Standard: ELDERLY-SMART-TECH-PLAN-2020-45">Standard</sup>.</p>
+<h2>Blue-Green Network, Public Space, and Urban Character</h2>
+<p>The blue-green network is the proposal’s public operating system: the spine carries memory, shade, walking and events; the Qinghe edge supports low-carbon innovation; pocket gardens connect communities; commons nodes host learning, release, inquiry and contribution. Green and public-space ratios are recomputable from the submitted geometry but remain design-model outputs under the provisional boundary, not planning commitments <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson#GREEN-001" title="Spatial data: geometry/green_space.geojson#GREEN-001">Spatial data</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="Metric: green_ratio">Metric</sup>.</p>
+<p>Character is expressed through three languages: the rhythm of railway components, the openness of Haidian campuses and the readability of AI systems. Wayfinding uses lines, nodes and contribution numbers; public elements prioritize durable, maintainable, low-glare materials. Public art does not copy Zhan Tianyou’s portrait, corporate marks or copyrighted images; it uses original linear motifs and public-history text to tell a continuous story of autonomous design, open collaboration and public contribution <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="Standard: MOHURD-URBAN-DESIGN-MEASURES">Standard</sup>.</p>
+<h2>Renewal Projects, Implementation Policy, and Phasing</h2>
+<p>Eight project packages can be taken forward by a professional team: JZ-01 heritage slow-mobility gap repair; JZ-02 Zhongzhiyuan Qinghe innovation edge; JZ-03 AI Origin near-campus transfer street; JZ-04 Dazhongsi station four-quadrant walking; JZ-05 AI public services and edge-compute nodes; JZ-06 open-source contribution wall and honor-display system; JZ-07 low-speed robotics and maintenance test; JZ-08 global AI week public route. Each requires official boundaries, rights, heritage, traffic, utilities, safety, accessibility and public participation review <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="renewal_project_list" title="Depth: renewal_project_list">Depth</sup>.</p>
+<p>Phasing is “public first, tests second, deeper renewal third”: Phase 1 discusses light public space, wayfinding, walking continuity and human service; Phase 2 pilots small scenarios after data, privacy, safety and professional review; Phase 3 considers ecosystem integration, building renewal and long-term operations. <code>phasing.geojson</code> is a reference sequence, not a government schedule, funding, approval or construction commitment <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson#PHASE-001" title="Spatial data: geometry/phasing.geojson#PHASE-001">Spatial data</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="phasing_implementation" title="Depth: phasing_implementation">Depth</sup>.</p>
+<p>Four operating mechanisms are proposed: an open challenge and scenario-application channel; professional review plus public feedback; contribution records with revocable honor display; and annual retrospective with knowledge-base updates. Operators should record evidence, failure, exit and revision, not only successful demonstrations.</p>
+<h3>Four AI pilgrimage landmarks / contribution nodes</h3>
+<p>1. <strong>Centennial Jingzhang Open Gate</strong>: a public identity threshold showing the historic line and current open-source work. 2. <strong>Zhongzhiyuan Standards Beacon</strong>: a readable testing process and contribution record instead of an exclusive vertical “tech landmark”. 3. <strong>Origin Learning Court</strong>: courses, open-source release, community service and everyday rest in one accessible commons. 4. <strong>Dazhongsi Contribution Wall</strong>: public knowledge recorded by version, contributor and review status; no permanent inscription form is promised.</p>
+<p>These are conceptual public-space components and memory mechanisms. Location, material, heritage treatment and permanent display require professional and authority review <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="Source: AGENT-TASKBOOK">Source</sup>.</p>
+<h2>Metrics, Area Recalculation, and Compliance Matrix</h2>
+<p>The three visible core metrics are provisional site area, green ratio and public-space ratio. They are recalculated from <code>site_boundary.geojson</code>, <code>green_space.geojson</code> and <code>public_space.geojson</code>, and the visual page marks them with <code>data-metric</code> values. Building footprint, slow-mobility length, the three key areas, scenario-card count, persona count and land-use areas are also recorded with source files, formulas, confidence and assumptions <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="Metric: site_area_sqm">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="Metric: green_ratio">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="Metric: public_space_ratio">Metric</sup>.</p>
+<p>Statutory FAR, height and density, road redlines, utility capacity, ownership and investment remain pending official data. The compliance matrix covers announcement requirements 1.3, 1.4 and 1.5 and agent.1–agent.6; the standard and design-depth matrices keep urban design, regulatory boundaries, land-use classification, blue-green, mobility, municipal, phasing, metrics and risk evidence separate <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-CONTROL-DETAILED-PLANNING" title="Standard: MOHURD-CONTROL-DETAILED-PLANNING">Standard</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="metrics_recalculation" title="Depth: metrics_recalculation">Depth</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.en.png" alt="Metric recalculation and evidence chain"><figcaption>Metric recalculation and evidence chain</figcaption></figure>
+<h2>Risk, Copyright, and Compliance</h2>
+<div class="proposal-table"><table><thead><tr><th>Risk</th><th>Current reading</th><th>Control action</th></tr></thead><tbody><tr><td>Provisional geometry mistaken for a redline</td><td>High</td><td>Mark provisional in figures, text, HTML, sources and assumptions; recalculate all layers when official data arrives</td></tr><tr><td>Privacy and over-monitoring in AI scenarios</td><td>High</td><td>Minimum data, authorized feedback, human review and exit; no identification or hidden tracking</td></tr><tr><td>Heritage and historical narrative drift</td><td>Medium-high</td><td>Do not draw unpublished protection lines or copy portraits; use heritage and history review</td></tr><tr><td>Safety and public acceptance of pilots</td><td>Medium-high</td><td>Low-speed, reversible, staffed pilots with staged retrospective</td></tr><tr><td>Operations and maintenance cost</td><td>Medium</td><td>Assign owners, maintenance cycles and stop conditions to every node</td></tr><tr><td>Digital divide in public services</td><td>Medium</td><td>Keep human desks, paper, phone and accessible alternatives</td></tr></tbody></table></div>
+<p>This is an open co-creation proposal. It does not replace formal planning, constitute an official conclusion, promise investment or schedule, or establish engineering feasibility. Rights and provenance for brands, fonts, figures, cases and data are in <code>sources.json</code> and <code>report/copyright_statement.md</code>; the agent proposes and humans/professionals retain final judgment <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="Standard: PROJECT-AGENT-OPEN-CALL-TASKBOOK">Standard</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="Depth: risk_missing_data">Depth</sup>.</p>
+<h2>References</h2>
+<ul>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="Source: OFFICIAL-ANNOUNCEMENT">Source</sup> Haidian Branch, Beijing Municipal Commission of Planning and Natural Resources, Centennial Jing-Zhang AI Innovation Belt prequalification announcement.</li>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="Source: AGENT-TASKBOOK">Source</sup> Agent-facing open-call taskbook excerpt.</li>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="Source: SOURCE-REGISTRY">Source</sup> Repository public-source registry and use boundaries.</li>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SRC-2017-MOHURD-URBAN-DESIGN-MEASURES" title="Source: SRC-2017-MOHURD-URBAN-DESIGN-MEASURES">Source</sup> Measures for Urban Design Management.</li>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SRC-MOHURD-CONTROL-DETAILED-PLANNING" title="Source: SRC-MOHURD-CONTROL-DETAILED-PLANNING">Source</sup> Measures for the Preparation and Approval of Regulatory Detailed Plans.</li>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SRC-2023-MNR-LAND-USE-CLASSIFICATION" title="Source: SRC-2023-MNR-LAND-USE-CLASSIFICATION">Source</sup> Land-use Classification Guide.</li>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-STATION-F" title="Source: CASE-STATION-F">Source</sup>, <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-PUNGGOL-DIGITAL-DISTRICT" title="Source: CASE-PUNGGOL-DIGITAL-DISTRICT">Source</sup>, <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-22@BARCELONA" title="Source: CASE-22@BARCELONA">Source</sup> public case mechanisms.</li>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-AI-SINGAPORE" title="Source: CASE-AI-SINGAPORE">Source</sup>, <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-OODI" title="Source: CASE-OODI">Source</sup>, <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-SANGAM-DMC" title="Source: CASE-SANGAM-DMC">Source</sup> public case mechanisms.</li>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="BOUNDARY-SOURCE" title="Source: BOUNDARY-SOURCE">Source</sup>, <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="KEY-AREA-SOURCE" title="Source: KEY-AREA-SOURCE">Source</sup> maintainer-provided provisional spatial constraints.</li>
+</ul>
+</main>
+</body>
+</html>
