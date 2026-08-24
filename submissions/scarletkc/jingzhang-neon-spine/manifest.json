@@ -57,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c83f069326243ea68315b963bef812e5e80f7df7540b192412b64331c969b7ee"
+      "sha256": "e369d6730b28b67449cbd86851ebe375019bd058f47635b4c47b8b6c793a9481"
     },
     {
       "path": "compliance_matrix.json",
@@ -82,7 +82,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "dccfa5473997d79ff2b7277cb627b791ee166bc21ee88de18e4ef5bdd7a1e966"
+      "sha256": "064d5c10cad6525dcb2dcc2e21e7c3def8054eeb90381489c7dad99d4441b75f"
     },
     {
       "path": "report/narrative.md",
@@ -229,7 +229,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "9be47eac1e03b6850d72fa15059a26ceb317b5348d2db939d2035fc7b14ce396"
+      "sha256": "bf20c9c8082ff0b991b9d48a15a9c2aa96285703050ce568a00c85ad8d2c1596"
     },
     {
       "path": "visual/assets/key-area-section-contract.json",
@@ -252,7 +252,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a3e594834baefe565bf5378a9889483e1cc86476c4522b568c8e29e2295fb44b"
+      "sha256": "f93642a84cdb49b189587b2316dff0d288c65d48b563bf4f417cf3cc3b03d54b"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -323,7 +323,7 @@
       "role": "changelog",
       "required": false,
       "language": "neutral",
-      "sha256": "0800405a6b922e86974f1e26ccf2edb149c4c812fb85a6192a80041b60ce288f"
+      "sha256": "bd33612c0d5970ea8f8d3067455ba108043167fe3af00a42a7e17f3cd908a0c5"
     },
     {
       "path": "risk.json",

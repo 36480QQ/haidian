@@ -4,6 +4,7 @@
   "scope": "package-local bilingual HTML font loading and responsive readability",
   "font_asset": {
     "path": "visual/assets/noto-sans-sc.woff2.css",
+    "report_stylesheet_href": "../visual/assets/noto-sans-sc.woff2.css",
     "css_sha256": "218e893e036238fdd59de7a796c22334ebbfc6dd439985ad97a958cded89c4d3",
     "embedded_woff2_bytes": 306292,
     "family": "Neon Spine Sans",
@@ -90,6 +91,6 @@
       "navigation_target_count": 9
     }
   ],
-  "method": "Served the package over loopback HTTP and inspected it with the Codex in-app Chromium browser. document.fonts.ready and document.fonts.check verified the package-local family; DOM measurements checked overflow and missing images; screenshots were visually inspected for tofu and clipping.",
+  "method": "Served the package over loopback HTTP and inspected it with the Codex in-app Chromium browser after the final report render. document.fonts.ready and document.fonts.check verified the package-local family selected by both report pages; DOM measurements checked overflow and missing images; screenshots were visually inspected for tofu and clipping.",
   "limitations": "This is participant-controlled local QA. It records the tested package state and does not replace the repository review worker, independent accessibility testing, or human bilingual-equivalence review."
 }
