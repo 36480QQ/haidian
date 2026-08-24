@@ -90,6 +90,69 @@
       "source_type": "official_public",
       "usage": "Xiong'an New Area (Hebei). Public-reporting reference for CIM digital twin, blue-green network, underground utility tunnels, and green mobility. Used for method comparison only; this proposal is renewal, not a new town.",
       "note": "Public reporting / official project material; indicators to be verified (待核实)."
+    },
+    {
+      "id": "OSM-SUBWAY",
+      "url": "https://www.openstreetmap.org/copyright",
+      "source_type": "osm",
+      "license": "ODbL 1.0; © OpenStreetMap contributors",
+      "accessed_date": "2026-08-08",
+      "query_extent": "Provisional site boundary and surrounding Line 13 subway stations (Dazhongsi, Weigongcun); roads/parks/railways screened as background only.",
+      "usage": "Subway station coordinates (3 OSM nodes, osm_id 6617852356 / 12435287603 / 7861046853) used as measured anchors in visual/assets/demo_data.json. Background screening of OSM roads/parks/railways informed the Physarum network context. Not used as official boundary, road redline, or engineering geometry."
+    },
+    {
+      "id": "CASE-SHIBUYA",
+      "source_type": "official_public",
+      "usage": "Shibuya Station area redevelopment (Tokyo, 2012–): rail-station integration and four-quadrant walking network. Referenced in the case comparison table for TOD integration and four-quadrant connectivity; method reference only.",
+      "note": "Official project / public reporting; quantitative indicators to be verified against official sources (待核实)."
+    },
+    {
+      "id": "CASE-SUPERILLES",
+      "source_type": "official_public",
+      "usage": "Barcelona Superilles / superblocks (2016–): street pedestrianization, speed limits, street-as-public-space. Referenced for street pedestrianization; method reference only.",
+      "note": "Official project / public reporting; quantitative indicators to be verified (待核实)."
+    },
+    {
+      "id": "CASE-COPENHAGEN",
+      "source_type": "official_public",
+      "usage": "Copenhagen bicycle-priority network and dedicated bridges (2006–). Referenced for slow-mobility priority and dedicated facilities; method reference only.",
+      "note": "Official project / public reporting; quantitative indicators to be verified (待核实)."
+    },
+    {
+      "id": "CASE-PUNGGOL",
+      "source_type": "official_public",
+      "usage": "Punggol Digital District (Singapore, 2018–): district-wide digital twin and open digital platform. Referenced for the digital foundation of industry-university-research integration; method reference only.",
+      "note": "Official project / public reporting; quantitative indicators to be verified (待核实)."
+    },
+    {
+      "id": "CASE-CHEONGGYECHEON",
+      "source_type": "official_public",
+      "usage": "Cheonggyecheon restoration (Seoul, 2003–2005): elevated-highway removal and stream restoration into blue-green public space. Referenced for blue-green restoration and elevated-highway removal; method reference only.",
+      "note": "Official project / public reporting; quantitative indicators to be verified (待核实)."
+    },
+    {
+      "id": "STD-GB50763-2012",
+      "source_type": "official_public",
+      "usage": "GB 50763-2012《无障碍设计规范》(Code for accessibility design), mandatory national standard (MOHURD + AQSIQ, 2012). Used as the accessibility-threshold basis (无障碍阈值) throughout the proposal and the T-01/T-03 test scenarios.",
+      "note": "Official national standard; full text disclosed via 国家标准全文公开系统 (openstd.samr.gov.cn)."
+    },
+    {
+      "id": "STD-GBT51328-2018",
+      "source_type": "official_public",
+      "usage": "GB/T 51328-2018《城市综合交通体系规划标准》(Standard for urban comprehensive transport system planning), recommended national standard. Used as the basis for transport/rail/slow-travel planning in the test scenarios.",
+      "note": "Official national standard; full text disclosed via 国家标准全文公开系统 (openstd.samr.gov.cn)."
+    },
+    {
+      "id": "STD-GB50014",
+      "source_type": "official_public",
+      "usage": "GB 50014《室外排水设计标准》(Standard for design of outdoor wastewater engineering), national engineering-construction standard. Used as the basis for stormwater/drainage resilience in the T-02 Xiaoyue River sponge-city test scenario.",
+      "note": "Official national standard; current edition GB 50014-2021; full text disclosed via 国家标准全文公开系统 (openstd.samr.gov.cn)."
+    },
+    {
+      "id": "STD-SPONGE-GUIDE-2014",
+      "source_type": "official_public",
+      "usage": "《海绵城市建设技术指南——低影响开发雨水系统构建（试行）》(MOHURD, 2014). Used as the sponge-city technical-guide basis for permeable-paving and green-infiltration ratios in the T-02 test scenario.",
+      "note": "Official MOHURD technical guide (试行)."
     }
   ]
 }

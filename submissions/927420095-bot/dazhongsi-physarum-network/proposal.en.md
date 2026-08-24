@@ -27,7 +27,7 @@ The core thesis is one sentence: **roads grow like slime mold, not drawn once.**
 
 **Eight hard deliverables (unfolded section by section in the body)**: ① brand naming and Logo identity system (Zhìmài Gòngshēng / Bio-Pulse Symbiosis) ② 10 global benchmark cases ③ 10 AI+ scenario cards ④ 3 test-validation scenarios + 3 industry test fields + 2 public scenarios (8 total) ⑤ 5 user personas ⑥ 3 conceptual landmarks + an honor mechanism ⑦ a cultural narrative (bilingual wayfinding + international narrative) ⑧ long-term operations (annual activities + tripartite co-governance + conversion funnel).
 
-**Implementability**: municipal road-network cost 29.965 million CNY (with layered investment scope); a three-phase roadmap (near-term pilot → mid-term rollout → long-term governance, each phase with measurable milestones and acceptance metrics); clear division of labor among eight actor types; 12 recomputable metrics (site 1141.3 ha, green ratio 12.34%, public-space ratio 7.33%, building footprint 31.1 ha, 3 key areas).
+**Implementability**: municipal road-network cost ≈20–39 million CNY (conceptual estimate ±30%, with layered investment scope); a three-phase roadmap (near-term pilot → mid-term rollout → long-term governance, each phase with measurable milestones and acceptance metrics); clear division of labor among eight actor types; 12 recomputable metrics (site 1141.3 ha, green ratio 12.34%, public-space ratio 7.33%, building footprint 31.1 ha, 3 key areas).
 
 **Public value and honest boundary**: oriented toward "heritage-sensitive, human-machine coexistence, youth-friendly", implementing the GB 50763-2012 accessibility threshold and sponge-city stormwater resilience; this proposal is conceptual research, and all spatial suggestions must be coordinated with statutory planning and approved by the competent authority, never impersonating redlines or approval geometry.
 
@@ -64,7 +64,7 @@ This proposal distills transferable lessons from publicly reported global smart-
 | Transport renewal | Punggol Digital District | Singapore | District-wide digital twin + open digital platform (2018–) | Digital base for industry-academia-research integration |
 | Transport renewal | Cheonggyecheon restoration | Seoul | Remove elevated highway, restore stream as blue-green public space (2003–2005) | Blue-green restoration and highway removal |
 
-**Differentiated vision**: Masdar, Songdo, and Sidewalk Labs Quayside reveal the same lesson — the "one-shot blueprint + area-wide sensing" smart-city paradigm is hard to land and hard to iterate in real built-up districts (Quayside was terminated in 2020). This proposal therefore reshapes the Jing-Zhang railway heritage corridor into a **"computable, iterable, operable" existing-stock AI innovation belt**: growing progressively over existing urban fabric rather than clearing it away; making the proposal recomputable, reproducible, and iterable through "agent-native + open-source co-construction" (city-as-repo); and taking "heritage-sensitive, human-machine coexistence, youth-friendly" as the public-value orientation. This is a conceptual vision; specific targets follow the regulatory plan and competent-authority approval [depth:overall_spatial_structure].
+**Differentiated vision**: Masdar, Songdo, and Sidewalk Labs Quayside reveal the same lesson — the "one-shot blueprint + area-wide sensing" smart-city paradigm is hard to land and hard to iterate in real built-up districts (Quayside was terminated in 2020). This proposal therefore reshapes the Jing-Zhang railway heritage corridor into a **"computable, iterable, operable" existing-stock AI innovation belt**: growing progressively over existing urban fabric rather than clearing it away; making the proposal recomputable, reproducible, and iterable through "agent-native + recomputable-reproducible" (city-as-repo, as a review and recomputation mechanism, not an open-redistribution grant); and taking "heritage-sensitive, human-machine coexistence, youth-friendly" as the public-value orientation. This is a conceptual vision; specific targets follow the regulatory plan and competent-authority approval [depth:overall_spatial_structure].
 
 ![Global case ecosystem map (case ↔ proposal mapping, conceptual)](assets/figures/case_ecosystem.png)
 
@@ -82,7 +82,7 @@ The research scope amplifies the "nutrient anchor" logic to the regional scale: 
 
 The eight elements (land — space — industry — capital — talent — compute — data — scenario) form a **coordination loop** within the area in an "ordinary path first, AI only adds gains" manner [depth:overall_spatial_structure]: land and space host industry, industry brings in capital and talent, talent gathers compute and data, data feeds back into scenarios, and scenarios in turn optimize space — the eight dimensions are each other's inputs and outputs, and any AI scenario going live in any dimension must pass staged release G0-G3, guaranteeing reversibility, stoppability, and rollback. The five coordination lines and eight elements are conceptual deductions used to locate the area within the regional innovation network; the proposal does not fabricate collaborators or signed agreements.
 
-![Eight-element coordination mechanism](assets/figures/8d_mechanism.png)
+![Eight-element coordination mechanism](assets/figures/8d_mechanism.en.png)
 
 ## Three Positions, Five Functions, and the Three-Areas-Two-Wings Coordination
 
@@ -96,9 +96,9 @@ The taskbook anchors the **three positions** — "Century Jing-Zhang Cultural Be
 
 **AI innovation ecosystem map (conceptual)**: the area's innovation ecosystem is organized around six node types — university (source) → enterprise (conversion) → compute (base) → capital (catalyst) → carrier (space) → policy (boundary) — with the eight elements (land, space, industry, capital, talent, compute, data, scenario) coordinating along this map [depth:overall_spatial_structure].
 
-![Three-Areas-Two-Wings and regional-coordination structure](assets/figures/regional_synergy.png)
+![Three-Areas-Two-Wings and regional-coordination structure](assets/figures/regional_synergy.en.png)
 
-![Spatial-function coordination](assets/figures/spatial_function_synergy.png)
+![Spatial-function coordination](assets/figures/spatial_function_synergy.en.png)
 
 ## Overall-Design-Scope Urban Renewal and Regulatory-Detail Urban Design
 
@@ -116,7 +116,7 @@ The overall spatial structure is **one core · three areas · one interface · o
 
 ![Key-area index and design tasks](assets/figures/key-areas.en.png)
 
-**Pilot node N01 exit** (the Dazhongsi station TOD contact point, conceptual detail): ground gathering plaza ≈960 m², green belt ≈840 m², non-motorized parking ≈264 m², metro exit ≈168 m², with accessibility ramps, continuous tactile paving, smart wayfinding, and modular seating; the section links "metro concourse (−1F) → vertical elevator → ground plaza (canopy clear height 4.5 m) → city road". The node's ground-level conceptual cost is **≈2.187 million CNY** (reference municipal/landscape/accessibility public unit prices, not quota-based, excluding station-hall retrofit, utility relocation, and demolition); plan and section are at [data:geometry/key_areas.geojson#PROV-KEY-003], as schematic drawings (not construction drawings, not approvals).
+**Pilot node N01 exit** (the Dazhongsi station TOD contact point, conceptual detail): ground gathering plaza ≈960 m², green belt ≈840 m², non-motorized parking ≈264 m², metro exit ≈168 m², with accessibility ramps, continuous tactile paving, smart wayfinding, and modular seating; the section links "metro concourse (−1F) → vertical elevator → ground plaza (canopy clear height 4.5 m) → city road". The node's ground-level conceptual cost is **≈1.5–2.8 million CNY** (2026 Q2 price level, conceptual estimate ±30%, excluding station-hall retrofit, utility relocation, and demolition, 10% contingency; reference municipal/landscape/accessibility public unit prices, not quota-based); plan and section are at [data:geometry/key_areas.geojson#PROV-KEY-003], as schematic drawings (not construction drawings, not approvals).
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -178,7 +178,7 @@ Each test scenario is executed along the four elements "trigger condition → te
 | AI slow-travel navigation | Jing-Zhang heritage park vitality belt | In: slow-travel break points/crowding/accessibility needs; out: explainable wayfinding and route suggestions | Human verification of wayfinding + human confirmation of accessibility needs | Slow-travel break-point identification, explainable wayfinding, accessibility response |
 | Cultural wayfinding and heritage smart guide | Jing-Zhang heritage corridor | In: heritage points and guide content; out: bilingual/Braille/QR-code guide | Human content review + heritage-department review | Guide accuracy, accessible-guide coverage, copyright clearance |
 
-All test fields and public scenarios (8 in total) follow "no sensitive personal information collection, human review, appeal-and-correction" for data flows; the list is registered in the `test_scenarios` field of `simulation.json` (count `test_scenario_count`), and this section does not claim completed deployment or verification.
+All test fields and public scenarios (8 in total) follow a unified **visual-recognition privacy octet** for data flows: ① **No identification** — no face, license-plate, or other identifiable personal data is collected; only area-level occupancy and accessibility are inferred. ② **Minimal collection** — only the image and operational data necessary for inference are collected, with no over-collection or bypass. ③ **Edge processing** — images are processed at the edge only; raw images do not leave the campus, are not uploaded to the cloud, and are not archived. ④ **Retention and deletion** — retention periods are defined, expired data is auto-deleted, and only area-level statistics are kept. ⑤ **Permission audit** — data access follows least privilege, and all operations are logged and auditable. ⑥ **Human review** — occupancy/obstacle alerts are human-reviewed before dispatch; machine output is not the basis for final disposal. ⑦ **Appeal and correction** — the public may request deletion of erroneous records and correction of conclusions via an appeal channel. ⑧ **Deactivation condition** — a triggered privacy risk deactivates the scenario and reverts it to the G0 ordinary path. The list is registered in the `test_scenarios` field of `simulation.json` (count `test_scenario_count`), and this section does not claim completed deployment or verification.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Plan
 
@@ -206,7 +206,7 @@ Responding to 1.3.3 "build a high-quality urban district that global AI innovati
 
 **Accessibility shares one structure with blue-green and slow travel**: tactile paving and ramps are designed together with the blue-green slow-travel ring, and stormwater-resilient paving simultaneously satisfies slip resistance and wheelchair passage; the accessibility compliance rate (→100%) enters the operational KPIs, and JZ-01 slow-travel break-point stitching takes "accessibility compliance (GB 50763-2012)" as its acceptance metric and "under-bridge space ownership cannot be settled" as its stop condition. Specific thresholds are not preset and are set after official field survey and regulatory-plan targets are determined.
 
-![Accessibility and inclusive-design matrix](assets/figures/inclusive_matrix.png)
+![Accessibility and inclusive-design matrix](assets/figures/inclusive_matrix.en.png)
 
 ## Landmarks, Component System, and Honor Mechanism
 
@@ -230,7 +230,7 @@ Responding to 1.3.3 "build a high-quality urban district that global AI innovati
 
 **Long-term operations mechanism**: a tripartite co-governance model (government + enterprises + community), with decision-making by "consensus + expert advisors"; the funding-source framework is advisory (fiscal + renewal special fund + social capital + green bonds, to be confirmed). This proposal does not claim to have established a governance body or locked funding sources.
 
-**Developer-community operations mechanism (conceptual)**: built on "city-as-repo", open-source co-construction runs through the proposal's whole life cycle — design files, recomputation scripts, scenario cards, and acceptance checklists are open in the repository, and developers may file Issues to recompute, contribute scenarios, and audit data; the "Jing-Zhang Renewal Contributor" digital badge incentivizes open-source contribution and community co-building in a verifiable, no-sensitive-personal-data way; the annual developer conference, quarterly scenario open days, and monthly community workshops give developers release, roadshow, and collaboration nodes. Community operations are a conceptual mechanism; the proposal does not claim to have established a community or locked an operator.
+**Developer-community operations mechanism (conceptual)**: built on "city-as-repo", recomputability runs through the proposal's whole life cycle — design files, recomputation scripts, scenario cards, and acceptance checklists are readable and recomputable in the review repository (not an open-redistribution grant), and developers may file Issues to recompute, contribute scenarios, and audit data; the "Jing-Zhang Renewal Contributor" digital badge incentivizes collaborative contribution and community co-building in a verifiable, no-sensitive-personal-data way; the annual developer conference, quarterly scenario open days, and monthly community workshops give developers release, roadshow, and collaboration nodes. Community operations are a conceptual mechanism; the proposal does not claim to have established a community or locked an operator.
 
 **Operational KPIs (measurable definitions, quantitative baselines set after operation)**: slow-travel break-point connectivity rate (↑, %), accessibility compliance rate (→100%), scenario response time (↓, minutes), human fallback rate (↑, %), enterprise landing count (↑, companies), tax increment (↑, 100M CNY/year), activity participation rate (↑, %). These are measurable, reviewable metric definitions; specific targets are set only after operational baselines are established, and this proposal does not preset values.
 
@@ -251,19 +251,21 @@ Responding to 1.3.3 "build a high-quality urban district that global AI innovati
 | JZ-05 edge-compute node | Social capital + district science bureau | Energy, compute, safety, operator confirmation | Technical failure, safety compliance | Compute equipment removable, space restored to public use | Compute open + safety audit passed | Exit if operator is absent |
 | JZ-06 slime-mold network deepening recomputation | Government + university (designer) | Official boundary, road redline, real-coordinate alignment | Official data long missing | Not landed as engineering, kept as research | Full recomputation once official data arrives | Keep "to be confirmed" if official data long unpublished |
 
-[depth:phasing_implementation] **Phasing and implementation policy**: near-term **pilot** (0–2 years: JZ-01 break-point stitching + JZ-04 four-quadrant connectivity) → mid-term **rollout** (2–5 years: JZ-02 innovation interface + JZ-03 achievement-conversion street) → long-term **governance** (5–10 years: JZ-05 compute node + JZ-06 recomputation), each phase with **measurable** milestones and acceptance metrics.
+[depth:phasing_implementation] **Phasing and implementation policy (conceptual indicative phasing framework)**: near-term **pilot** (0–2 years: JZ-01 break-point stitching + JZ-04 four-quadrant connectivity) → mid-term **rollout** (2–5 years: JZ-02 innovation interface + JZ-03 achievement-conversion street) → long-term **governance** (5–10 years: JZ-05 compute node + JZ-06 recomputation), each phase with **measurable** milestones and acceptance metrics; the above periods are conceptual and indicative, with specific timing and investment subject to adjustment after official regulatory-plan approval and annual budget allocation.
 
 | Phase | Period (advisory) | Projects | Key milestone (measurable) | Acceptance metric (measurable) |
 | --- | --- | --- | --- | --- |
-| Near-term | 0–2 years | JZ-01 / JZ-04 | N01 node pilot + first break-point stitching + four-quadrant connectivity | Pilot ground works ≈2.187M CNY; accessibility met; four-quadrant connectivity |
+| Near-term | 0–2 years | JZ-01 / JZ-04 | N01 node pilot + first break-point stitching + four-quadrant connectivity | Pilot ground works ≈1.5–2.8M CNY (conceptual estimate ±30%); accessibility met; four-quadrant connectivity |
 | Mid-term | 2–5 years | JZ-02 / JZ-03 | Blue-green corridor connected + conversion street opened | Stormwater resilience met; conversion space opened + ground-floor cleared |
 | Long-term | 5–10 years | JZ-05 / JZ-06 | Compute node opened + full recomputation after official data | Compute open + safety audit passed; recomputation updates layers |
 
-The municipal road-network cost is 29.965 million CNY (with layered investment scope, explicitly excluding utility relocation, rail civil works, and demolition), with economic feasibility illustrated by land appreciation, tax increment, and employment driven. **Eight actor types**: district government and planning branch (planning conditions and regulatory-plan coordination), rail operator (JZ-04 coordination), nearby universities (JZ-03 ownership and ground-floor uses), area enterprises (JZ-05 co-built operation), nearby residents and communities (public-disclosure communication and cooperation), heritage and cultural-relic departments (impact assessment and minimal intervention), Jing-Zhang heritage park management (JZ-01 boundary coordination), and development-construction entities (project approval, financing, construction, and operation); division of labor and coordination are refined after field survey and project approval in the implementation stage, without fabricating interview conclusions or cooperation commitments.
+The municipal road-network cost is ≈20–39 million CNY (2026 Q2 price level, conceptual estimate ±30%, excluding land acquisition, utility relocation, and rail civil works, 10% contingency; with layered investment scope), with economic feasibility illustrated by land appreciation, tax increment, and employment driven. **Eight actor types**: district government and planning branch (planning conditions and regulatory-plan coordination), rail operator (JZ-04 coordination), nearby universities (JZ-03 ownership and ground-floor uses), area enterprises (JZ-05 co-built operation), nearby residents and communities (public-disclosure communication and cooperation), heritage and cultural-relic departments (impact assessment and minimal intervention), Jing-Zhang heritage park management (JZ-01 boundary coordination), and development-construction entities (project approval, financing, construction, and operation); division of labor and coordination are refined after field survey and project approval in the implementation stage, without fabricating interview conclusions or cooperation commitments.
 
 ## Metrics System, Area Recomputation, and Compliance Matrix
 
-[depth:metrics_recalculation] The following metrics are recomputable via `self_check_submission.py`, derived from submitted geometry and real method runs, and aligned item by item with the compliance matrix:
+[depth:metrics_recalculation] The following metrics fall into two non-mixed classes, both recomputable via `self_check_submission.py` and aligned with the compliance matrix: **on-site design metrics** (from submitted geometry, for design discussion, not approval geometry) and **off-site method-validation metrics** (from the real Physarum + NSGA-II run, coordinate-offset, method validation only, not formal site geometry).
+
+**On-site design metrics** (recomputed from submitted geometry):
 
 | Metric | Value | Evidence marker |
 | --- | --- | --- |
@@ -274,20 +276,30 @@ The municipal road-network cost is 29.965 million CNY (with layered investment s
 | Key-area count | 3 | [metric:key_area_count] |
 | Renewal project count | 6 (JZ-01..06) | renewal project list |
 | AI test-scenario count | 8 (3 validation + 3 industry + 2 public) | [metric:test_scenario_count] |
-| Slime-mold network edge count | 167 | [metric:physarum_network_edge_count] |
-| Optimal efficiency index | 19.20 | [metric:physarum_efficiency_index] |
 | Ordinary-path completeness | 1.0 | [metric:ai_off_path_completeness] |
 | Human-handoff designation rate | 1.0 | [metric:human_handoff_designation_rate] |
 
-**Method-run details**: baseline efficiency 1.143, Run7 frozen target 2.802, zero heritage hard-crossings, recommended plan UDS 80.34, skeleton total length 8813.0 m, 8 test scenarios. Site geometry is not treated as formal geometry due to coordinate offset; the area-class metrics above are recomputed from submitted geometry, not approval geometry.
+**Off-site method-validation metrics** (real run, coordinate offset ~2–3 km with only ~140 m overlap, not formal site geometry):
+
+| Metric | Value | Evidence marker |
+| --- | --- | --- |
+| Slime-mold network edge count | 167 | [metric:physarum_network_edge_count] |
+| Optimal efficiency index | 19.20 | [metric:physarum_efficiency_index] |
+| Baseline efficiency | 1.143 | [metric:physarum_baseline_efficiency] |
+| Run7 frozen target | 2.802 | [metric:physarum_run7_frozen_objective] |
+| Heritage hard-crossings | 0 | [metric:physarum_heritage_crossing_count] |
+| Recommended plan UDS | 80.34 | [metric:physarum_recommended_plan_uds] |
+| Skeleton total length | 8813.0 m | simulation.json |
+
+The off-site metrics above come from the author's real Physarum + NSGA-II run and serve only as method-validation evidence, not entering on-site design metrics or formal geometry; "0 hard-crossings" is the g1 hard-constraint behavior rather than an independent in-site heritage-compliance conclusion (the heritage objective f3 degenerates to f2, f3≡f2, under the locally digitized boundary). 8 test scenarios.
 
 ![Core-metrics recomputation and evidence chain](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance Statement
 
-[depth:risk_missing_data] This proposal honestly marks its **boundaries**: data gaps (the number of dead-end roads, slow-travel coverage, and FAR await official field survey) are not preset, and are entered into the R-01..06 **risk** matrix — data gap, heritage sensitivity, approval boundary, AI dependency, accessibility reach, and economic uncertainty, each listing mitigation measures and stop conditions; **constraints and redlines** [data:geometry/constraints.geojson#CONSTRAINTS] serve only as compliance reference, never impersonating approval geometry.
+[depth:risk_missing_data] This proposal honestly marks its **boundaries**; five data gaps are left unpreset: ① official boundary/key-area boundary/road redlines/ownership/municipal utilities/station CAD/waterway blue lines/flood-control conditions/formal heritage scope/FAR and building-height controls await the organizer; ② formal heritage geometry and heritage_factor are missing, so the method-validation heritage objective degenerates f3≡f2, and "0 heritage hard-crossings" is not an in-site heritage-compliance conclusion; ③ dead-end-road count, slow-travel coverage, passenger flow, accessibility barrier points, stormwater catchments, ownership conflicts, and operational data await official field survey; ④ all scenarios are in proposed status, and the AI-off service-equivalence gap [metric:ai_off_service_equivalence_gap] has not yet been verified through the G3 limited on-site window (marked unknown); ⑤ source registration follows the package's sources.json, with third-party licenses all registered. These gaps are entered into the R-01..06 **risk** matrix — data gap, heritage sensitivity, approval boundary, AI dependency, accessibility reach, and economic uncertainty, each listing mitigation measures and stop conditions; **constraints and redlines** [data:geometry/constraints.geojson#CONSTRAINTS] serve only as compliance reference, never impersonating approval geometry.
 
-**Copyright**: the proposal text and graphics are based on self-produced assets within the submission package; the methodological literature is cited only for method reference with DOI, without transferring external case performance. **Compliance and authorization**: all spatial suggestions must be coordinated with statutory planning and approved with competent-authority **authorization**; this proposal does not claim approval. **Public** data boundaries, **privacy**, and **review** procedures are all marked, and the ordinary path is never degraded by any AI scenario going live.
+**Copyright**: the proposal text and graphics are based on self-produced assets within the submission package; the methodological literature is cited only for method reference with DOI, without transferring external case performance; rights layering — self-produced text/graphics/fonts/brand are original, third-party materials (OSM ODbL, Leaflet BSD-2-Clause, Noto Sans SC SIL OFL 1.1) are embedded locally or cited without changing their license; the package overall is COMMUNITY-DISPLAY-ONLY (display and review only, no redistribution grant). **Compliance and authorization**: all spatial suggestions must be coordinated with statutory planning and approved with competent-authority **authorization**; this proposal does not claim approval. **Public** data boundaries, **privacy**, and **review** procedures are all marked, and the ordinary path is never degraded by any AI scenario going live.
 
 ## References
 

@@ -30,6 +30,12 @@
       "status": "pending_professional_confirmation",
       "statement": "The site boundary and three key areas are provisional (geometry_role=provisional_constraint, official_boundary=false), sourced from brief/site-package/geometry/provisional_boundaries.geojson.",
       "impact": "All areas, ratios, and metrics are design-discussion values, not statutory approval values. When official polygons are published, site boundary, key areas, land use, roads, green space, public space, buildings, phasing, and metrics must be recalculated."
+    },
+    {
+      "id": "A-COST-001",
+      "status": "pending_professional_confirmation",
+      "statement": "All cost figures are conceptual estimates at 2026 Q2 price level with a ±30% uncertainty band, a 10% contingency, and exclusions: the N01 node ground works (≈150–280 ten-thousand CNY) exclude metro station-hall renovation, utility relocation, and demolition; the municipal road-network cost (≈2000–3900 ten-thousand CNY) excludes land acquisition, utility relocation, and rail civil works. They are derived from public composite unit prices for municipal/landscape/accessibility works, not from quota-based bills of quantity or contract values.",
+      "impact": "Cost figures serve only to illustrate planning-level feasibility and comparative magnitude. They must be replaced by feasibility-study estimates after the official regulatory plan, investment plan, and land/utility conditions are confirmed, and are not a budget or funding commitment."
     }
   ]
 }
