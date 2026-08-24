@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v9.3"
+iteration: "v9.4"
 summary: "以京张铁路遗址公园慢行主轴为脊梁，由两台并列引擎驱动：空间引擎'共行断面语法（Co-Mobility Cross-Section Grammar）'——四种断面原型（专用段2.5m/共享段/行人优先段/测试步道2.0m）× 四级速度分区（5/8/10/15 km/h）× 冲突测试场，使低速机器人与行人的共存规则从几何约束中生成，5000次确定性抽样验证'专用脊柱+共享支线'组合优于替代方案；治理引擎'共行执照（Co-Mobility License，BASE→BOOST→BLACKOUT→BEQUEST 四阶段合同 + G0-G4 五门验收，合同形态受 jingzhang-168 启发）'——12份执照合同×7规则分支推演中60条被阻断，证明门槛真实存在。方案配套 15.4km 专用+3.4km 共享车道、六座智递驿站、两座充电维保基地、12张AI场景卡（含4张附完整协议的测试验证场景）、8类用户画像、3个AI朝圣地标、7个全球生态案例、Logo实际样张、荣誉展示系统与七组件库、三条转化路径、运营KPI体系，形成可体验、可验证、可推广的双引擎低速机器人共行网络概念方案。"
 tracks: ["robotics-autonomous-mobility", "ai-origin-community"]
 scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability"]
@@ -24,7 +24,7 @@ scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability"]
 
 **不声称声明。** 本方案未开展任何现场踏勘、入户访谈、配送 OD 调查或人流计数；所有内容均为基于公开公告、任务书与开放数据的概念设计建议，不构成政府审定结论、实施承诺或对任何供应商的指定 [source:official-announcement]。指标中标 `unknown` 者为方向性占位，待官方数据与专业团队深化后补全。
 
-**迭代说明。** 本方案迭代至 v9.3：v1（68/100）建立空间结构；v2（75/100）引入执照治理与证据制品；v3（68/100）将断面语法单独立为主概念、执照降格——结果表明两引擎需要并列而非取舍；v4 恢复双引擎并列，并补齐评审点名的可审成果：Logo 实际样张（`visual/assets/logo-specimen.svg`）、agent.4 荣誉展示系统与七组件库（`visual/assets/honor-display-system.json`）、agent.6 三条转化路径（`visual/assets/conversion-pathways.json`）、四个测试场景的完整协议与停止条件（`visual/assets/test-scenario-protocols.json`）；v5 增加动态控制层——共行信号系统（闭塞区间/信号联锁/调度集中），把静态契约升级为动态控制；v6 增加元层验证——自解释断面测试（81/100，历史最高）；v7 哲学元层试验（68/100，-13：抽象元层稀释了核心叙事，实证失败）；v8 回退恢复 v6 结构（79/100）；v9 增加时间控制层——共行信号时刻表（6 常规时段+5 事件场景×8 区间=88 案例，8 条安全断言全过），补全通用联锁全局化，并新增与同走廊四份方案的互锁衔接。
+**迭代说明。** 本方案迭代至 v9.4：v1（68/100）建立空间结构；v2（75/100）引入执照治理与证据制品；v3（68/100）将断面语法单独立为主概念、执照降格——结果表明两引擎需要并列而非取舍；v4 恢复双引擎并列，并补齐评审点名的可审成果：Logo 实际样张（`visual/assets/logo-specimen.svg`）、agent.4 荣誉展示系统与七组件库（`visual/assets/honor-display-system.json`）、agent.6 三条转化路径（`visual/assets/conversion-pathways.json`）、四个测试场景的完整协议与停止条件（`visual/assets/test-scenario-protocols.json`）；v5 增加动态控制层——共行信号系统（闭塞区间/信号联锁/调度集中），把静态契约升级为动态控制；v6 增加元层验证——自解释断面测试（81/100，历史最高）；v7 哲学元层试验（68/100，-13：抽象元层稀释了核心叙事，实证失败）；v8 回退恢复 v6 结构（79/100）；v9 增加时间控制层——共行信号时刻表（6 常规时段+5 事件场景×8 区间=88 案例，8 条安全断言全过），补全通用联锁全局化，并新增与同走廊四份方案的互锁衔接。
 
 ## 设计依据与资料清单
 
@@ -408,6 +408,7 @@ scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability"]
 | scenario_card_count | 12 | 场景卡数量（含4测试） | 不证明场景已运营 |
 | tabletop_case_count | 84/84 | 沙盘判例分类正确率 | 不替代实测与授权 |
 | license_contract_count | 0 | 已签共行执照合同数（待运营） | 不证明运营已启动 |
+| license_contract_template_count | 12 | 合成合同模板数（桌面推演用） | 不证明已签合同存在 |
 | field_delivery_volume | unknown | 末端配送单量（待 OD 调查） | 任何单量目标 |
 | field_conflict_rate | unknown | 人机冲突率（待实测） | 任何冲突率承诺 |
 | field_satisfaction | unknown | 公众满意度（待调查） | 任何满意度承诺 |
@@ -446,7 +447,7 @@ scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability"]
 
 **风险与断面验证门的对应。** 六维风险分别挂在断面语法的不同验证门上闭环：数据与隐私由 BOOST 阶段的允许/禁止数据清单约束；公众接受与安全由 G3 共行门与公开事故台账约束；技术成熟度由 G1/G2 测试门约束；政策法规不确定性由 BASE 阶段"仅概念建议"红线约束；运营成本由 KPI 退出阈值约束；空间权属由可迁移设施与联合确认约束。风险不被一次性"消除"，而是在每个断面验证门以对应证据复核，未过即不升阶 [depth:risk_missing_data]。
 
-**合规边界。** 本方案不构成任何政府审定结论或实施承诺，不代表官方对任何车道、断面参数、驿站、限速或运营安排的认可；全部空间落地内容为概念建议，供专业团队深化 [source:official-announcement]。机器人调度与 AI 交互的合规路径分两类处理：生成式内容服务（如导览问答）适用《生成式人工智能服务管理暂行办法》的相应要求；机器人导航与调度不属于该办法适用范围，其交通安全、产品安全、路权、保险与数据治理要求另列为实施前置条件，需主管部门及专业法律团队逐项确认 [source:generative-ai-interim-measures]；共行车道不侵占无障碍通行空间，符合无障碍环境建设法理念。方案不包含个人隐私、涉密或非公开空间数据，不伪造官方背书；共行执照沙盘使用的真实个人数据量为 0。
+**合规边界。** 本方案不构成任何政府审定结论或实施承诺，不代表官方对任何车道、断面参数、驿站、限速或运营安排的认可；全部空间落地内容为概念建议，供专业团队深化 [source:official-announcement]。机器人调度与 AI 交互的合规路径分两类处理：生成式内容服务（如导览问答）适用《生成式人工智能服务管理暂行办法》的相应要求；机器人导航与调度的法规适用按服务功能分类确认——生成式公众交互、非生成式调度、交通与产品安全、保险与数据治理分别列待主管部门及专业法律团队确认的实施前置条件，本方案不作排除性判断 [source:generative-ai-interim-measures]；共行车道不侵占无障碍通行空间，符合无障碍环境建设法理念。方案不包含个人隐私、涉密或非公开空间数据，不伪造官方背书；共行执照沙盘使用的真实个人数据量为 0。
 
 **版权台账。** 全部文本、几何、图件、PDF、HTML 由本 agent 原创生成或基于公开资料引用；字体使用免费商用中文字体，案例引用均标注来源与"背景参考"属性；共行执照合同框架注明灵感来自 jingzhang-168；逐项资产权利台账见 `report/copyright_statement.md`。HTML 页面不加载远程脚本、瓦片、字体或 API，不跟踪评审者行为。
 

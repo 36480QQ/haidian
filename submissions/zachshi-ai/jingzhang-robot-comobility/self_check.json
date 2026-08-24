@@ -106,7 +106,7 @@
       "ai_package_stages": {
         "submissions/zachshi-ai/jingzhang-robot-comobility": "formal"
       },
-      "total_bytes": 3742939,
+      "total_bytes": 3744857,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -170,7 +170,7 @@
         "robot_lane_length_m": 18780.729605,
         "robot_delivery_station_count": 6.0,
         "robot_charging_depot_count": 2.0,
-        "license_contract_count": 12.0,
+        "license_contract_template_count": 12.0,
         "tabletop_case_count": 84.0,
         "governance_role_count": 10.0,
         "affected_group_count": 10.0
@@ -187,7 +187,7 @@
       "summary": {
         "standard_matrix_items": 11,
         "design_depth_items": 15,
-        "known_metric_refs_required": 47,
+        "known_metric_refs_required": 48,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {

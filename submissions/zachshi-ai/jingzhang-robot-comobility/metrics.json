@@ -233,15 +233,17 @@
     },
     "license_contract_count": {
       "status": "known",
-      "value": 12,
+      "value": 0,
       "unit": "count",
       "source_files": [
         "visual/assets/co-mobility-contracts.json"
       ],
-      "formula": "count(contracts in co-mobility-contracts.json)",
+      "formula": "count(signed real-world license contracts)",
       "confidence": "high",
-      "assumptions": [],
-      "rationale": "12个共行执照合同覆盖配送/导览/巡检/测试四类机器人服务。"
+      "assumptions": [
+        "No operating authority yet; zero contracts signed by definition at concept stage."
+      ],
+      "rationale": "已签现实合同数=0（概念阶段，未运营）"
     },
     "tabletop_case_count": {
       "status": "known",
@@ -638,6 +640,18 @@
         "Sub-blocking scenario; requires signal system granularity upgrade."
       ],
       "rationale": "Sub-blocked spine capacity: 1440-2160 orders/day, making the 2000/day KPI reachable"
+    },
+    "license_contract_template_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/co-mobility-contracts.json"
+      ],
+      "formula": "count(synthetic license contract templates)",
+      "confidence": "high",
+      "assumptions": [],
+      "rationale": "合成合同模板数=12（桌面推演用，非已签合同）"
     }
   },
   "recalculation_notes": {

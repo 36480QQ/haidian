@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d03bc26e958eb9d1a84d579c6f66299f45f06b9bd66bb91e974daefbcd7e4280"
+      "sha256": "143fed6a29b6a22f723c9ebf94af546965cefefb6fed1676c0bbc0f660f26e22"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "311dc30254156f869f43a937541c251ba2e1ca514a933d4384999662589d62fd"
+      "sha256": "028ee3cb79b863b8e9d4ee699ab7454d0aa51b147145717da0640b9a588fefbd"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4e5b7cb3248bab885c206b5107ce6a6cd3fa1a8a7af9402bb564031f373829c5"
+      "sha256": "d5d7d851ae7cb20c4ed54cc0eea8acd439625aa79f53e1d528067b38812d611f"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a11a14c8438a5f86ec0f03aa2dacb0db36100b45718f7be612f405bb7b49e782"
+      "sha256": "a94180d4de6fcab937ccb23625c8ea47111a7540e5449ebd8a5bde28c7af3bf6"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "b583aad843ae5af289a479b5fc1e0c45e9fd4fe175df63a110a0a98b19322bb9"
+      "sha256": "fd70ba32d5139ddab6daea12ae6d755894ad40fb3a06a6f58a39b70b743fa6ea"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "ee2fe97a6c93c9656c1b4021ae4875c4d3ee479a583524a843f90fef56ff49f5"
+      "sha256": "71b222339942ac76db8ff1b5232bd6fdba387d6618bad44a4376e431344c469b"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "999963d924ba871d9a8b971e339ff01ce42c61765a6c13aad044ccfba30fba8e"
+      "sha256": "16f880174dbb49cc9818b26e8868c7ff8da1c70495b275dd4b6c3572725feb31"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -213,7 +213,7 @@
       "translation_of": "proposal.md",
       "title_zh": "京张AI低速机器人共行网（英文正式译文）",
       "title_en": "Jingzhang AI Low-Speed Robot Co-Mobility Network (English translation)",
-      "sha256": "70e8f6410b416d16512aa3e4d87ded801dd6c46e3525ee0ad0507fc0468bb303"
+      "sha256": "3f2d2305e513805f67a057936534973c133d0b09fea6f75ea68f9ba93b3cbfb2"
     },
     {
       "path": "risk.json",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "812ca1fdf8fc5b3b42d69a7af6c419dbad940ee2dbe57b8ad628bad24059959e"
+      "sha256": "5eb1ddb301407db9b6b8cba72a9d8d497cd4b1f0183dbb4bc2caca362ed0dc9d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "72a47599779e0487d8abc4c2cd7b5779a195369a662413648613ed24479808ff"
+      "sha256": "afba7355098f3418428f7c14f86db004e4899e52ac76cbc9f87bb91a31a5dcc6"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -245,7 +245,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "fbdaf993f889284bbe0cacec5f662fba86c841d43504e83f6078a8acb0f1dab3"
+      "sha256": "90d107aaba93014839606282150d34d79dcb9c754ca7fccc96ca8a91abd2d1ed"
     },
     {
       "path": "visual/index.en.html",
@@ -253,7 +253,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c529316ada04d7726162c4fcf2360e50a0c21f5f23c50105ce2e952b143c6519"
+      "sha256": "fb631d1ab7116e55a81473ac287f6a6813e8f57203ed12eec0fd02172436d564"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -353,7 +353,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "d4f0fa2375be18313b2b88f33a7b04dd654d276de99c46b685c384edf2568852"
+      "sha256": "88fa8e73c92e1701e6e8afb0c69148a1731cc0746999ce34b289fcd343394c1c"
     },
     {
       "path": "simulation.json",
