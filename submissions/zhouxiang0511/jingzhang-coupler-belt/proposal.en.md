@@ -1,128 +1,128 @@
 ---
-title: "Jingzhang Coupler Belt: From the 1909 Automatic Coupler to an Open-Interface City"
+title: "Jingzhang Coupler Belt: A Composable City — From the 1909 Automatic Coupler to an Open-Interface City"
 author_github: "zhouxiang0511"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Modeled on the interoperability wisdom of Zhan Tianyou developing the automatic coupler for the Jingzhang Railway, this proposal puts forward an open-interface city of \"One Track · Three Stations · Two Wings · Switches · Crossing Stations\": any talent, enterprise, scenario, or public service can plug in and use it on demand through standard interfaces, and any agent must pass signal-interlocking-style human review before connecting to public scenarios. The proposal is based on the textual basis of the official announcement and the repository's provisional boundaries; all spatial conclusions are conceptual recommendations."
+summary: "Modeled on the interoperability wisdom of Zhan Tianyou developing the automatic coupler for the Jingzhang Railway, this proposal puts forward a Composable City of \"One Track · Three Stations · Two Wings · Switches · Crossing Stations\": talent, enterprises, scenarios, and public services act as 'standard railcars' that plug in and reconfigure at any time through the coupler interface; before any of them connects to a public scenario, they must pass signal-interlocking-style human review, and a red light automatically uncouples them. The proposal is based on the official announcement and the publicly verifiable planning facts of 2026; all spatial conclusions are conceptual suggestions."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "robot-delivery-low-speed", "ai-health-service-navigation", "public-safety-operations-review"]
-iteration: "v0.1"
+iteration: "v0.2"
 ---
 
-# Jingzhang Coupler Belt: From the 1909 Automatic Coupler to an Open-Interface City
+# Jingzhang Coupler Belt: A Composable City
 
 ## Design Basis and Source List
 
-This proposal takes as its primary basis the Prequalification Announcement for the International Open Call for Urban Design of the Centennial Jing-Zhang AI Innovation Belt, issued by the Haidian Sub-bureau of the Beijing Municipal Commission of Planning and Natural Resources. The announcement establishes the project name, the three-level scope (the coordinated research area of approximately 43.6 km², the overall design area of approximately 11.4 km², and the key areas of approximately 368.4 ha), the three key areas (the Zhongzhiyuan AI Independent Innovation Acceleration Area of approximately 192.1 ha, the Beijing AI Origin Community of approximately 104.3 ha, and the Dazhongsi AI Industry Cluster of approximately 72.0 ha), and the design tasks [source:OFFICIAL-ANNOUNCEMENT]. The agent-oriented open-call taskbook supplements the three positioning statements, the five functions, Three Zones and Two Wings, six agent tasks, and the unified boundary clause, and serves as the direct basis for the proposal at the levels of naming, scenarios, operation, and compliance [source:AGENT-TASKBOOK].
+This proposal takes as its primary basis the *Prequalification Announcement for the International Open Call for Urban Design of the Centennial Jing-Zhang AI Innovation Belt*, issued by the Haidian Sub-bureau of the Beijing Municipal Commission of Planning and Natural Resources. The announcement establishes the three-level scope (the coordinated research area of approximately 43.6 km², the overall design area of approximately 11.4 km², and the key areas of approximately 368.4 ha), the three key areas, and the design tasks [source:OFFICIAL-ANNOUNCEMENT]. The agent-oriented open-call taskbook supplements the three positioning statements, the five functions, Three Zones and Two Wings, the six tasks, and the unified boundary clause [source:AGENT-TASKBOOK]. Machine-readable constraints come from the repository's `brief/site-package/` and `data/source_registry.json` [source:SITE-PACKAGE] [source:SOURCE-REGISTRY].
 
-Machine-readable constraints come from the design briefs, permitted design space, enumerations, planning limits, and standards library in the repository's `brief/site-package/`, as well as the permitted-use registry in `data/source_registry.json` [source:SITE-PACKAGE] [source:SOURCE-REGISTRY]. This proposal cites only materials registered as formal-usable or rights-cleared; the official precise planning boundary has not yet been released, so the boundary uses the provisional boundaries `provisional_boundaries.geojson` inferred by the repository maintainers, with the accuracy limits and recalculation trigger conditions disclosed in `sources.json`, `assumptions.json`, and the body text [source:BOUNDARY-SOURCE] [depth:existing_conditions_diagnosis].
+At the same time, the proposal cites publicly verifiable planning facts of 2026 (each with a source and date): Phase 2 of the Jingzhang Railway Heritage Park opened on 6 August 2026, forming a **ribbon green corridor about 9 km long from Xizhimen to the North Fifth Ring, with a total land area of about 53 ha**, opening 9 urban branch roads and adding 3 fishbone-shaped slow-mobility paths, directly serving about 70 communities and 450,000 residents along the corridor [source:JZ-PARK-PHASE2-20260806]; the district-level regulatory detailed plan for the "AI Innovation Street Key Area" along the park (9 blocks, about 16.7 km², 2024–2035) was approved in August 2026, establishing a "One Belt, One Axis, Two Cores, Multiple Points" structure with a dedicated chapter on "rail-integrated control and rail micro-centers" [source:JZ-CONTROL-PLAN-20260817]. The "Three Zones and Two Wings" industrial layout (the Xuebeiyuan AI Independent Innovation Acceleration Area in the north, the central AI Origin Community, the southern Dazhongsi AI Industry Cluster, the western Zhongguancun Technology Services Wing, and the eastern Xiaoyuehe Scenario Enablement Wing), Haidian's "1+X+1" industrial system, and the scale of the AI industry are cited as industrial background [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS] [source:SRC-2026-HAIDIAN-1X1] [source:HD-AI-ECONOMY-20260330].
 
-The proposal meets the deliverable requirement of "urban design depth of a regulatory detailed plan + urban design depth of an integrated planning implementation plan" [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]. It should be noted that: **all spatial conclusions in this proposal are conceptual recommendations** for professional teams to deepen and research, and do not constitute statutory planning, approvals, or government commitments [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. The body text retains only key evidence citations; the complete sources, metrics, standards, and depth coverage are kept respectively in `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json`.
+Notes on figures: ① the widely circulated figure of "about 70 ha" for the park **has not been officially confirmed**; the official figure is about 53 ha, and this proposal adopts the official figure; ② "37 km²" is the coordinated figure for the innovation belt from the Second Ring to the Fifth Ring, which is a different level from the regulatory plan's 16.7 km² and this overall design area's 11.4 km², and is noted separately when cited [source:JZ-PARK-PHASE2-20260806] [source:JZ-CONTROL-PLAN-20260817]. The official precise planning red line has not yet been publicly released; the boundary uses the repository's provisional boundaries and discloses the precision limits [source:BOUNDARY-SOURCE] [depth:existing_conditions_diagnosis].
+
+**All spatial conclusions in this proposal are conceptual suggestions**, for professional teams to deepen and research, and do not constitute statutory planning, approvals, or government commitments [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. The proposal meets the deliverable requirement of "urban design depth of a regulatory detailed plan + urban design depth of an integrated planning implementation plan" [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
 
 ![Overall concept and submission-package evidence chain](assets/figures/site-overview.en.png)
 
 ## Three-Level Scope Framework
 
-The three-level scope is implemented level by level along "industry strategy — overall design — key-area deepening", forming a unified evidence chain:
+- **Coordinated Research Area (43.6 km²)**: bounded by the North Fifth Ring Road to the north, the Jingzang Expressway to the east, Xizhimen Outer Street to the south, and Wanquanhe Road to the west. This level answers "what the belt is": organizing the industrial and spatial strategy around the three goals of "a world-class AI innovation ecosystem, a new urban form suited to AI new productive forces, and a high-quality urban district attractive to global AI innovation talent" [source:OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework].
+- **Overall Design Area (11.4 km²)**: the planning and design scope covers the 1–2 km urban areas and industrial areas around the Jingzhang Heritage Park. Under Article 9 of the *Measures for the Administration of Urban Design*, this belt simultaneously falls under "urban core areas, historical-heritage areas (the Jingzhang Railway), important streets, and waterfront areas (the Qinghe / Xiaoyuehe)", and should therefore be treated as **key-area urban design** [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:overall_spatial_structure].
+- **Key-Area Detailed Design Area (368.4 ha)**: Zhongzhiyuan (192.1 ha), the Beijing AI Origin Community (104.3 ha), and Dazhongsi (72.0 ha), with each area receiving detailed design of "positioning + spatial structure + building renewal + transport and slow mobility + public space + AI scenarios + implementation risks" [depth:three_key_area_detailed_design].
 
-- **Coordinated Research Area (43.6 km²)**: bounded by the North Fifth Ring Road to the north, the Jingzang Expressway to the east, Xizhimen Outer Street to the south, and Wanquanhe Road to the west [source:OFFICIAL-ANNOUNCEMENT]. This level answers "what the belt is" — the industrial ecology of the AI innovation belt, its future urban form, and its synergy with Zhongguancun, Shangdi, the Future Science City, and other areas; the deliverables are mainly industry and spatial strategy [depth:three_level_scope_framework].
-- **Overall Design Area (11.4 km²)**: the planning and design scope covers the 1–2 km urban areas and industrial areas around the Jingzhang Railway Heritage Park. This level organizes land use, renewal, transport, municipal infrastructure, blue-green space, and urban character through the "One Track · Three Stations · Two Wings · Switches · Crossing Stations" overall structure, reaching regulatory-plan depth [depth:overall_spatial_structure].
-- **Key-Area Detailed Design Area (368.4 ha)**: from north to south, the three key areas are Zhongzhiyuan, the Beijing AI Origin Community, and Dazhongsi; each area receives detailed design covering "positioning + spatial structure + building renewal + transport and slow mobility + public space + AI scenarios + implementation risks" [depth:three_key_area_detailed_design].
-
-Boundary note: the official precise polygon has not yet been released; this proposal uses the provisional boundaries in the repository's `provisional_boundaries.geojson` (`PROV-SITE-001` and `PROV-KEY-001/002/003`) for generation, display, and self-checking [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001]. The boundary is fitted only to the text-defined limits and areas in the announcement, and is **not an official planning boundary, an approval basis, or a basis for precise areas**; once the official data is released, land-use zoning, green space, public space, phasing, and all metrics must be recalculated as a whole according to the recalculation checklist in `assumptions.json` [assumption:A-CONTROLS-001].
+Boundary note: the official precise polygon has not yet been released; this proposal uses the repository's provisional boundaries (`PROV-SITE-001`, `PROV-KEY-001/002/003`) for generation, display, and self-checking [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001]. It is **not an official planning red line, an approval basis, or a basis for precise areas**; once the official data is released, everything must be recalculated as a whole according to the recalculation checklist in `assumptions.json` [assumption:A-CONTROLS-001].
 
 ## Coordinated Research Area: Industry and Future City Research
 
-### Overall Concept and Naming System (agent.1)
+### Overall Concept: Composable City (agent.1)
 
-**Primary name: "Jingzhang Coupler Belt" (JCB).**
+**Primary name: "Jingzhang Coupler Belt" (English: Jingzhang Coupler Belt, JCB).**
 
-Concept origin: In 1909, Zhan Tianyou led the construction of the Jingzhang Railway — the first trunk railway independently designed and built by Chinese people. In the public narrative of railway history, Zhan Tianyou developed the "automatic coupler" to solve the problem of coupling vehicles, enabling carriages to be coupled in a standardized way, uncoupled at any time, and safely marshaled; this interoperability wisdom is regarded as a symbol of the independent innovation of the "railway of pride". This proposal translates the "automatic coupler" into an urban operating system for the AI era [source:AGENT-TASKBOOK]:
+In 1909, Zhan Tianyou led the construction of the Jingzhang Railway — the first trunk railway independently designed and built by Chinese people, known as the "railway of pride" [source:JZ-PARK-PHASE1-20211014]. In the public narrative of railway history, Zhan Tianyou developed the "automatic coupler" to solve the problem of connecting vehicles, enabling carriages to be **coupled in a standardized way, uncoupled at any time, and safely marshaled** — in essence, China's first set of "standardized interoperability interfaces". This proposal elevates this century-old wisdom into an organizational proposition for a city:
 
-> **Turn a century of coupling wisdom into a city that plugs in on demand.**
+> **Composable City: Turn a century of coupling wisdom into a city that plugs in, reconfigures, and fails safe.**
 > *"Couple anything, anywhere, anytime — the city that plugs in."*
 
-The naming system unfolds along railway imagery (all conceptual recommendations): one belt main line (the main axis), three stations (the key areas), switches (lateral stitching corridors), crossing stations (community nodes), interlocking (the governance mechanism), and the coupler (the standard interface). Such a system lets space, activities, and governance share one language, facilitating international communication and subsequent deepening [depth:overall_spatial_structure].
+The city is a train: talent, enterprises, scenarios, data, and public services are all **standard railcars**, plugging in and using on demand through the "coupler interface"; the main line (the main axis), the three stations (the key areas), the two wings, the switches (stitching), and the crossing stations (community nodes) form the marshaling skeleton; **signal interlocking** is the trust precondition for being "composable" — before any railcar connects to a public scenario, it must pass signal-interlocking-style human review of the three lights: the data light (source compliance), the human-rights light (privacy and human takeover), and the safety light (physical safety), and a red light on any of them automatically uncouples it [source:AGENT-TASKBOOK]. This "interface—composition—interlocking—uncoupling" loop resonates with the organizing body's proposal in the open-call mechanism to "package planning needs and industrial policies as skill packs and share them through the open-source platform" [source:JZ-CONTROL-PLAN-20260817].
 
-**Visual identity direction**: the logo takes "coupler + main line" as its motif — two parallel rails and an interlocking hook shape form a symbol isomorphic with the "JZ" (Jingzhang) initials and "∞" (interoperability); the palette uses steel cyan-blue (rail and technology), signal amber-yellow (safety and vitality), and rail gray (the historical base). The logo is only a directional recommendation; the final graphic must be rights-cleared and deepened by a professional design team.
+**Naming system** (all conceptual suggestions): the main line (the vitality main axis of the heritage park), the three stations (the key areas), the two wings (the Zhongguancun Technology Services Wing / the Xiaoyuehe Scenario Enablement Wing), the switches (east–west stitching corridors), the crossing stations (community nodes), the coupler (the standard interface), and interlocking (safe governance). The logo takes "coupler + main line" as its motif: two parallel rails and an interlocking hook shape form a symbol isomorphic with the "JZ" initials and "∞" (interoperability); the palette uses steel cyan-blue + signal amber + rail gray. The final graphic must be rights-cleared and deepened by a professional design team [depth:overall_spatial_structure].
 
-**Three positioning statements and five functions**: the proposal implements the three positioning statements — "centennial Jingzhang cultural belt, urban AI lifestyle experience belt, and AI convergence innovation belt" — and carries the five functions — "full-stack independent AI innovation system, world-class AI innovation ecosystem, new paradigm of AI-enabled scenario empowerment, intelligent vibrant AI city, and global discourse power in AI governance" — organized through a "Three Zones and Two Wings" synergy loop (see the spatial structure below) [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+The three positioning statements (the centennial Jingzhang cultural belt, the urban AI lifestyle experience belt, and the AI convergence innovation belt) and the five functions (the full-stack AI independent innovation system, a world-class AI innovation ecosystem, a new paradigm of AI-enabled scenario empowerment, an intelligent and vibrant AI city, and global discourse power in AI governance) form the strategic framework [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ### World-Class AI Innovation Ecosystem Design (agent.2)
 
-The agent taskbook requires proposing 5–8 global AI innovation ecosystem cases and explaining their transferable mechanisms. This proposal selects 7 cases with citable public materials:
+The agent taskbook requires proposing 5–8 global cases and explaining their transferable mechanisms. This proposal selects 9 cases with public sources and distills five mechanisms (university–enterprise interface, station–city integration / railway heritage regeneration, open testing grounds, event-driven, and public-space networks carrying innovation) [source:AGENT-TASKBOOK]:
 
-| Case | Location | Transferable mechanism for the belt |
+| Case | Location | Transferable mechanism (for Jingzhang deepening) |
 | --- | --- | --- |
-| Stanford Research Park | Silicon Valley, USA | University–industry interface: organizing R&D and incubation interfaces along the campus–city boundary, corresponding to the Origin Community's "campus–city stitching" strategy |
-| Kendall Square | Boston, USA | Balance between the concentration of industry, academia, and research and living amenities: organizing public services and open space around the "15-minute talent living circle" |
-| King's Cross | London, UK | Railway heritage redevelopment and station–city integration: converting historic station buildings into a public living room, corresponding to the "railway heritage + innovation" fusion |
-| Jurong Innovation District (JID) | Singapore | Fine-grained renewal of industrial parks and open testing grounds: organizing industrial space through a "pilot–test–demonstrate" closed loop |
-| Shenzhen Bay Science and Technology Ecological Park | Shenzhen, China | Park-level public platforms and the agglomeration of ecosystem-chain enterprises: corresponding to Zhongzhiyuan's platform-based "full-stack assembly" organization |
-| Yunqi Town | Hangzhou, China | Event-driven innovation: turning the town into a global developer destination through an annual tech festival, corresponding to the "Coupler Fest" operation |
-| Seoul Digital Media City (DMC) | Seoul, South Korea | Agglomeration of media and content industries plus public experience space: corresponding to Dazhongsi's scenario-based "achievement market" district |
+| Jurong Innovation District / one-north | Singapore | Long-term government holding + themed operation; co-location of public research and industry shortens the conversion distance |
+| Kendall Square | Cambridge, USA | University-led renewal planning + campus–city land release; public-space networks carry informal exchange |
+| STATION F | Paris, France | A 1927 former freight station wholly regenerated into a shared startup campus; event-driven matchmaking |
+| King's Cross | London, UK | Station–city integration with railway structures as the skeleton; knowledge-anchor institutions (UCL / Central Saint Martins) attract |
+| Kalasatama | Helsinki, Finland | Real neighborhoods as a living-lab testing ground; shared-services community |
+| Sangam DMC, Seoul | Seoul, South Korea | Stock regeneration + rail TOD; government–enterprise–research collaboration + policy-guided uses |
+| Yunqi Town | Hangzhou, China | Leading-enterprise anchoring + an annual conference driving industrial discourse power |
+| Shenzhen Bay Science and Technology Ecological Park | Shenzhen, China | Functional mix + leading platforms driving SMEs ecology + ecological shared spaces |
+| Shibuya / Shinagawa TOD | Tokyo, Japan | Station-anchored high-density mixing; long-term railway-company investment and operation to add station-city value |
 
-The shared lessons of these cases — **standardized interfaces, open testing grounds, event-driven innovation, station–city integration, and campus–city stitching** — are translated into the proposal's five mechanisms: ① an open-data and open-interface foundation (the coupler); ② tiered testing and validation space (Zhongzhiyuan); ③ talent services and the campus–city interface (the Origin Community); ④ an application experience market (Dazhongsi); and ⑤ an annual events and international communication system (operation) [source:AGENT-TASKBOOK]. The industrial ecosystem also echoes Haidian's "1+X+1" modern industrial system and the municipal-level "Three Zones and Two Wings" layout, cited as background context [source:SRC-2026-HAIDIAN-1X1] [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS].
+**Honest boundary**: the above cases serve only as mechanism-research references; their scale, investment, and performance data are all retained with their original sources and **are not written into the Jingzhang facts** (see the corresponding entries in `sources.json` for the detailed sources and usage boundaries) [source:AGENT-TASKBOOK].
+
+Industrial context (with sources): Haidian has more than 2,000 AI enterprises, 26 unicorns, and 130 registered large models, with the core AI industry scale exceeding 350 billion yuan, about 30% of the national total [source:HD-AI-ECONOMY-20260330]; the enterprises, revenue, and financing along the innovation belt account for more than 70% of Haidian's total, with AI talent accounting for over 80%, making it the area with the highest "AI density" [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS]; the "1+X+1" system takes AI as the apex core engine [source:SRC-2026-HAIDIAN-1X1]. In 2024, the AI Origin Community took the lead in planning the country's first AI innovation street, and in 2026 it was selected among Beijing's first four AI innovation streets (with Wudaokou as the core, about 3 km²) [source:AI-ORIGIN-COMMUNITY-20260105].
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 ### Spatial Structure: "One Track · Three Stations · Two Wings · Switches · Crossing Stations"
 
-- **One Track**: the Jingzhang Railway Heritage Park vitality main axis — a north–south continuous green spine, slow-mobility spine, and open-source showcase spine formed along the heritage park and the railway culture line; it is the main line of the "automatic coupler belt" [data:geometry/green_space.geojson#GREEN-001] [data:geometry/constraints.geojson#CON-002].
-- **Three Stations**: Zhongzhiyuan = the **Full-Stack Assembly Station** (full-stack AI independent innovation and a computing-power foundation), the Origin Community = the **Talent Origin Station** (campus–city stitching and talent services), and Dazhongsi = the **Achievement Market Station** (AI application experience and achievement commercialization), corresponding to the three key areas [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003].
-- **Two Wings**: the Zhongguancun Technology Services Wing to the west (global allocation of factors, Zhongguancun IP and capital empowerment) and the Xiaoyue River Scenario Enablement Wing to the east (AI scenario testing and vibrant city experience), expressed as functional belts within the overall area [data:geometry/land_use.geojson#LU-001].
-- **Switches**: "stitching corridors" organized along 8 east–west connecting roads and public passages, achieving pedestrian stitching and functional interconnection between the east and west sides of the heritage park [data:geometry/roads.geojson#ROAD-003].
-- **Crossing Stations**: community-level innovation nodes (public plazas + community services + scenario touchpoints) placed roughly every 800 m along the main axis, ensuring everyday vitality and even service coverage [data:geometry/public_space.geojson#PUBLIC-005].
+- **One Track**: the vitality main axis of the Jingzhang Heritage Park — organizing a "green spine + slow-mobility spine + open-source showcase spine" along the built approximately 9 km park green corridor, connecting with the park's "three paths and one green" continuous slow-mobility system [source:JZ-PARK-PHASE2-20260806] [data:geometry/green_space.geojson#GREEN-001].
+- **Three Stations**: Zhongzhiyuan = the **Full-Stack Assembly Station** (full-stack AI independent innovation and a computing-power foundation), the Origin Community = the **Talent Origin Station** (campus–city stitching and talent services), and Dazhongsi = the **Achievement Market Station** (AI application experience and achievement transformation), corresponding to the three key areas [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003].
+- **Two Wings**: the Zhongguancun Technology Services Wing to the west and the Xiaoyuehe Scenario Enablement Wing to the east [data:geometry/land_use.geojson#LU-001].
+- **Switches**: along 8 east–west stitching connecting roads, echoing the 9 urban branch roads opened up by the park, achieving east–west stitching [source:JZ-PARK-PHASE2-20260806] [data:geometry/roads.geojson#ROAD-003].
+- **Crossing Stations**: community-level innovation nodes placed roughly every 800 m along the main axis, responding to the service needs of the 70 communities and 450,000 residents along the park [source:JZ-PARK-PHASE2-20260806] [data:geometry/public_space.geojson#PUBLIC-005].
 
-![Land-use structure, three-level scope, and overall spatial framework](assets/figures/land-use-structure.en.png)
+![Land-use structure, three-level scope and overall spatial framework (overlaid on real OSM base)](assets/figures/land-use-structure.en.png)
 
 ### Overall Urban Renewal Framework
 
-The overall design is organized through four types of renewal strategies — "retain heritage, renovate low-efficiency stock, renew parks, and build new nodes" (see the renewal project list section for details); the core is to translate the railway heritage corridor from "a linear heritage site cut apart by the city" into "a public main line linking innovation stations" [depth:retain_renovate_demolish] [depth:renewal_project_list]. Building scale, development intensity, road alignments, and municipal capacity are all constrained by not-yet-published regulatory-plan conditions; this proposal only gives **conceptual massing and directional recommendations**, with the relevant metrics kept as `unknown` and their recalculation preconditions registered [depth:development_intensity_controls] [depth:height_massing_character] [metric:floor_area_ratio].
+Renewal is organized through four strategies — "retain heritage, renovate low-efficiency stock, renew parks, and build new nodes". The industrial functional direction approved in the regulatory plan is to tap into the existing stock through the renovation of old factory buildings and the renewal of low-efficiency buildings, developing new business forms such as large models, agents, and embodied intelligence [source:JZ-CONTROL-PLAN-20260817]. Under Article 10 of the *Measures for the Administration of Urban Design*, character controls (height, massing, style, and color) are put forward as **guiding control suggestions**, coordinated with the landscape (the Qinghe / Xiaoyuehe), municipal infrastructure, and public space [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:retain_renovate_demolish] [depth:height_massing_character]. Building scale, development intensity, road alignments, and municipal capacity are all constrained by undisclosed regulatory-plan conditions, so the metrics remain `unknown` [depth:development_intensity_controls] [metric:floor_area_ratio].
 
 ### Transport, Rail, Municipal Infrastructure, and New Infrastructure
 
-- **Roads**: retain and optimize the north–south through secondary arterial roads, and add 8 east–west stitching connecting roads; organize micro-circulation and park-and-ride around the three stations [data:geometry/roads.geojson#ROAD-002].
-- **Rail interchange**: anchor "rail + slow mobility + feeder" transfer loops on existing rail stations (including Dazhongsi Station, among others), with shared-bike and low-speed feeder stop points around the stations [depth:traffic_rail_slow_parking].
-- **Slow mobility**: the main-axis greenway runs through from north to south, with continuous footpaths and cycle tracks on the side branch roads, and safe crossing islands and step-free ramps at the stitching switch points.
-- **Municipal and new infrastructure**: propose the conceptual direction of distributed computing-power nodes, energy microgrids, a shared sensor foundation, and integration with existing municipal facilities; all capacities and alignments must be deepened by professional teams based on official materials [depth:municipal_new_infrastructure].
+- **Rail**: the Jingzhang high-speed railway runs underground through the urban area inside the Fifth Ring via the Qinghuayuan Tunnel (about 6.02 km) [source:QHY-TUNNEL-20190417]; the area organizes connections via Metro Line 13 (the elevated section beside the old Qinghuayuan Station), Line 10, and the Changping Line, among others. The proposal responds to the regulatory plan's dedicated chapter on "rail-integrated control and rail micro-centers", organizing "rail + slow mobility + low-speed feeder" transfers around the rail micro-centers [source:JZ-CONTROL-PLAN-20260817] [depth:traffic_rail_slow_parking].
+- **Slow mobility**: the main-axis greenway connects with the park's "three paths and one green"; safe crossing facilities are provided at the stitching switch points, and tactile paving and audible crossing signals are improved in accordance with Article 23 of the *Barrier-Free Environment Construction Law* [standard:BARRIER-FREE-ENVIRONMENT-LAW] [data:geometry/roads.geojson#ROAD-001].
+- **Municipal and new infrastructure**: distributed computing-power nodes, energy microgrids, and a sensing foundation are conceptual directions, with capacities and alignments awaiting professional deepening [depth:municipal_new_infrastructure].
 
 ## Detailed Design of Key Areas
 
-The three key areas are deepened area by area along "positioning + spatial structure + building renewal + transport and slow mobility + public space + AI scenarios + implementation risks". The boundaries of all three areas are provisional inferences, and the following conclusions are **directional conceptual designs**.
+The boundaries of the three areas are provisional inferences, and the following conclusions are **directional conceptual designs**.
 
 ### Zhongzhiyuan · Full-Stack Assembly Station (approx. 192.1 ha)
 
-- **Positioning**: a garden-type AI independent innovation district, carrying the functions of full-stack innovation and "global discourse power in AI governance".
-- **Spatial structure**: "computing-power core + pilot-test ring + garden belt" — a public computing and model-evaluation center (the assembly line) in the middle, R&D and pilot-test clusters in the outer ring, and the Qinghe riverside green belt connected at the northern edge [data:geometry/key_areas.geojson#PROV-KEY-001].
-- **Building renewal**: primarily renovating low-efficiency industrial and park buildings, preserving the texture of factory buildings with historical value, and inserting intelligent-manufacturing workshops, computing server rooms, and innovation communities [depth:retain_renovate_demolish].
-- **Transport and slow mobility**: connect to the North Fifth Ring gateway, organizing a garden-style road network that separates freight and passenger traffic and prioritizes slow mobility.
-- **Public space**: the station-front "Assembly Plaza" plus the Qinghe riverside promenade [data:geometry/public_space.geojson#PUBLIC-001].
-- **AI scenarios**: public computing services, model evaluation and the full-stack assembly line, and an urban-agent emergency drill ground (a testing and validation scenario).
-- **Implementation risks**: complex existing ownership and a large renovation volume; co-building with platform enterprises and park owners and phased implementation are recommended.
+- **Positioning**: a garden-type AI independent innovation street. In the official "Three Zones and Two Wings" industrial layout, the north is the **Xuebeiyuan AI Independent Innovation Acceleration Area**, with the Dongsheng Science and Technology Park · Xuebeiyuan at its northern end (total floor area of about 238,300 m²) [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS]; this proposal describes this key area using the announcement's "Zhongzhiyuan" figure and connects it to the Xuebeiyuan industrial carrier [data:geometry/key_areas.geojson#PROV-KEY-001].
+- **Spatial structure**: "computing-power core + pilot-test ring + garden belt"; the northern edge connects to the northern section of the park (from Qinghua East Road to the North Fifth Ring Jianning Bridge, about 30.01 ha, adjacent to the Qinghe riverside green corridor, where the "Jingzhang Ring" 1909 theme plaza is located) [source:JZ-PARK-PHASE2-20260806].
+- **Building renewal**: primarily the renovation of low-efficiency parks and factory buildings, preserving the texture of factory buildings with historical value [depth:retain_renovate_demolish].
+- **Public space**: the Assembly Plaza + the Qinghe riverside promenade [data:geometry/public_space.geojson#PUBLIC-001].
+- **AI scenarios**: public computing-power services, the full-stack assembly line with model evaluation (testing and validation), and an urban-agent emergency drill ground.
+- **Implementation risks**: complex ownership and a large renovation volume; co-building by platform enterprises and park owners and phased implementation are recommended.
 
 ### Beijing AI Origin Community · Talent Origin Station (approx. 104.3 ha)
 
-- **Positioning**: an AI innovation district adjacent to campus, serving university faculty, students, and startup teams — the "Talent Origin Station".
-- **Spatial structure**: "campus–city interface + talent corridor + entrepreneurship courtyard" — open interfaces organized along the university boundary, with talent-service corridors and entrepreneurship courtyards extending into the district [data:geometry/key_areas.geojson#PROV-KEY-002].
-- **Building renewal**: functional replacement of street-front commercial and aging buildings, adding talent apartments and incubation space; preserving the historic street scale along the outer edge of the university wall.
-- **Transport and slow mobility**: control through traffic and strengthen pedestrian connections between rail stations, campus, and the district.
-- **Public space**: the station-front "Origin Plaza" and a technology park [data:geometry/public_space.geojson#PUBLIC-002].
+- **Positioning**: an AI innovation street adjacent to campus. Official industrial context: the AI Origin Community takes **Wudaokou as its core** (integrating carriers such as the Dongsheng Building, Tsinghua Science Park, and the Zhiyuan Building), and in 2026 was selected among Beijing's first four AI innovation streets [source:AI-ORIGIN-COMMUNITY-20260105] [data:geometry/key_areas.geojson#PROV-KEY-002].
+- **Spatial structure**: "campus–city interface + talent corridor + entrepreneurship courtyard"; the surrounding universities including Tsinghua, Peking, Beihang, and Beijing University of Posts and Telecommunications and the Chinese Academy of Sciences concentrate here (18 universities and research institutes under the Phase 1 figure) [source:JZ-PARK-PHASE1-20211014].
+- **Building renewal**: functional replacement of street-front commercial and aging buildings, adding talent apartments and incubation space.
+- **Public space**: the Origin Plaza + a technology park [data:geometry/public_space.geojson#PUBLIC-002].
 - **AI scenarios**: a talent service hall (the Origin Platform), an AI governance experience center (the Interlocking Tower), and an AI+ education laboratory.
-- **Implementation risks**: sensitive university boundaries and heavy morning/evening peak traffic; joint deliberation with the university and traffic authorities is required.
+- **Implementation risks**: sensitive university boundaries and heavy morning/evening peak traffic; joint deliberation with the university and traffic management authorities is required.
 
 ### Dazhongsi · Achievement Market Station (approx. 72.0 ha)
 
-- **Positioning**: an urban-type AI innovation district, the "achievement market" — converting AI capabilities into application scenarios that can be experienced, consumed, and commercialized.
-- **Spatial structure**: "market core + experience ring + station–city gateway" — a market core organized around Dazhongsi Station, with an application experience ring forming outward [data:geometry/key_areas.geojson#PROV-KEY-003].
-- **Building renewal**: renewing existing commercial space into AI application experience stores and performance/exhibition space, preserving the vitality of the urban-type district.
-- **Transport and slow mobility**: station passenger-flow organization and a slow-mobility-first station-front plaza [data:geometry/public_space.geojson#PUBLIC-003].
-- **Public space**: the achievement market plaza and a cultural park [data:geometry/green_space.geojson#GREEN-004].
-- **AI scenarios**: an AI application experience district, a robot low-speed delivery demonstration, and an AI cultural guide.
-- **Implementation risks**: existing commercial operators and traffic distribution pressure; piloting in a "time-phased, zone-based, retractable" manner is recommended.
+- **Positioning**: an urban-type AI innovation street. In the official regulatory plan's "One Belt, One Axis, Two Cores, Multiple Points" structure, the **Dazhongsi Center** is one of the "two cores" [source:JZ-CONTROL-PLAN-20260817] [data:geometry/key_areas.geojson#PROV-KEY-003].
+- **Spatial structure**: "market core + experience ring + station–city gateway"; the southern section of Phase 2 of the park (from Xizhimen Beijing North Railway Station to Zhichun Road Dayun Village) passes through Dazhongsi and the North Third Ring overpass [source:JZ-PARK-PHASE2-20260806].
+- **Building renewal**: renewing existing commercial space into AI application experience stores and performance/exhibition space.
+- **Public space**: the achievement market plaza and a cultural park [data:geometry/public_space.geojson#PUBLIC-003].
+- **AI scenarios**: an AI application experience street, a robot low-speed delivery demonstration, and an AI cultural guide.
+- **Implementation risks**: existing commercial operators and traffic distribution pressure; piloting in a "time-phased, zone-based, retractable" manner.
 
 ![Index and detailed design of the three key areas](assets/figures/key-areas.en.png)
 
@@ -130,56 +130,44 @@ The three key areas are deepened area by area along "positioning + spatial struc
 
 ### User Personas (6 types)
 
-1. **AI engineers/researchers**: need computing power, testing grounds, open-source collaboration, and quiet, deep R&D space;
-2. **Entrepreneurs/startup teams**: need a complete chain of incubation, pilot testing, demonstration, and financing matchmaking;
-3. **University faculty and students**: need a campus–city interface, laboratory collaboration, and internship and employment channels;
-4. **Park and enterprise operators**: need public services, scenario access, and governance compliance support;
-5. **Nearby residents and commuters**: need daily life services, public space, and employment opportunities;
-6. **Older adults and people with accessibility needs**: need traditional and intelligent services running in parallel, with human fallback;
-7. **International developers and visitors**: need multilingual guides, an open-source community, and a pilgrimage experience.
+1. AI engineers/researchers; 2. Entrepreneurs/startup teams; 3. University faculty and students; 4. Park and enterprise operators; 5. Nearby residents and commuters (including the service targets of the 70 communities and 450,000 residents along the park [source:JZ-PARK-PHASE2-20260806]); 6. Older adults and people with accessibility needs; 7. International developers and visitors.
 
 ### AI Scenario Cards (12)
 
-Each scenario card specifies "location mapping — target users — operational data — privacy boundaries — human review — operating entity — visualization layers — risks" (full fields registered in `sources.json` and `compliance_matrix.json`; the body text gives a readable summary) [source:AGENT-TASKBOOK].
+Each scenario card registers "location mapping — target users — operational data — privacy boundaries — human review — operating entity — visualization layers — risks" (see `compliance_matrix.json` for the complete fields) [source:AGENT-TASKBOOK].
 
 | # | Scenario card | Location mapping | Target users | Layer |
 | --- | --- | --- | --- | --- |
-| 1 | Coupler Plaza · open-interface demonstration ground | northern main axis / toward the former Qinghuayuan Station site | Developers, visitors | Public space [data:geometry/public_space.geojson#PUBLIC-001] |
+| 1 | Coupler Plaza · open-interface demonstration ground | middle of the main axis · toward the former Qinghuayuan Station site (beside Line 13, a Beijing municipal cultural relic protection unit [source:QHY-STATION-20230327]) | Developers, visitors | Public space [data:geometry/public_space.geojson#PUBLIC-001] |
 | 2 | Interlocking Tower · AI governance experience center | station front of the Origin Community | Public, decision-makers, developers | Public space [data:geometry/public_space.geojson#PUBLIC-002] |
 | 3 | Origin Platform · talent service hall | talent corridor of the Origin Community | Talent, students | Building [data:geometry/buildings.geojson#BLDG-0001] |
 | 4 | Full-stack assembly line · computing and pilot-test workshop (**testing and validation**) | central Zhongzhiyuan | Enterprises, engineers | Building + land use [data:geometry/land_use.geojson#LU-002] |
-| 5 | Achievement market · AI application experience district | Dazhongsi market core | Public, enterprises | Commercial land [data:geometry/land_use.geojson#LU-003] |
-| 6 | Railway-memory AI guide | main axis of the heritage park | Visitors, residents | Green space [data:geometry/green_space.geojson#GREEN-001] |
+| 5 | Achievement market · AI application experience street | Dazhongsi market core | Public, enterprises | Commercial land [data:geometry/land_use.geojson#LU-003] |
+| 6 | Railway-memory AI guide | main axis of the heritage park (including the restored 2.4 km old-line rail section) | Visitors, residents | Green space [data:geometry/green_space.geojson#GREEN-001] |
 | 7 | Robot low-speed delivery demonstration line (**testing and validation**) | main axis + Dazhongsi | Residents, merchants | Road [data:geometry/roads.geojson#ROAD-001] |
 | 8 | AI + healthcare service station (**compliance testing**) | Origin Community / residential clusters | Residents, older adults | Public service land |
 | 9 | AI + education laboratory | university belt / Origin Community | Faculty and students | Education land [data:geometry/land_use.geojson#LU-004] |
 | 10 | Urban-agent emergency drill ground (**testing and validation**) | northern edge of Zhongzhiyuan | Governance bodies, enterprises | Scientific research land |
 | 11 | Slow-mobility feeder loop · AI traffic dispatch | between the three stations | Commuters, visitors | Road network [data:geometry/roads.geojson#ROAD-002] |
-| 12 | Open-source data workshop | Zhongguancun Technology Services Wing | Developers, data users | Business land |
+| 12 | Open-source data workshop · digital-twin workbench | Zhongguancun Technology Services Wing | Developers, planning teams | Business land |
 
-Common constraints for scenario cards: operational data is limited to public or authorized aggregated data; all scenarios involving personal information must be anonymized and used within the scope permitted by law; each scenario sets **human review points** (e.g., medical advice must be confirmed by licensed practitioners, and delivery incidents must be handled by humans); the operating entities are government platform companies, park operators, or authorized third parties, which accept public feedback and can be "uncoupled" (i.e., the pilot terminated) [standard:GENERATIVE-AI-INTERIM-MEASURES].
+**Scenario compliance constraints**: operational data is limited to public or authorized aggregated data; for scenarios involving public service matters such as healthcare, social security, financial business, and utility payments, under Article 39, paragraph 2 of the *Barrier-Free Environment Construction Law* they **retain on-site guidance and manual service channels**, which does not generalize to the requirement that all scenarios must be handled manually [standard:BARRIER-FREE-ENVIRONMENT-LAW]; AI-generated content is marked as synthetic in accordance with Article 12 of the *Interim Measures for the Management of Generative Artificial Intelligence Services*, and services that face the public and have public-opinion attributes or social-mobilization capability carry out safety assessments and algorithm filings in accordance with law [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-This level's land-use zoning follows the logic of the national territorial land-and-sea use classification; a conceptual land-use layout is generated within the provisional boundaries, covering the entire site without overlap [data:geometry/land_use.geojson#LU-001] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. Layout highlights:
+The land-use zoning generates a conceptual layout based on the logic of the national territorial land-and-sea use classification, covering the entire site without overlap [data:geometry/land_use.geojson#LU-001] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. The classification codes are taken from the **project enumeration subset** compiled by the repository maintainers (`brief/site-package/enums/land_use_codes.json`, derived from the official code system of the *Classification Guide*); the complete official annex of the classification code table has not yet entered the local snapshot, so this proposal lists that code table as **material to be supplied (data_gap)** and does not fabricate unregistered codes [depth:risk_missing_data].
 
-- **Scientific research and industrial land (0802)**: concentrated in Zhongzhiyuan and the Origin Community, forming full-stack innovation and R&D clusters;
-- **Education land (0804)**: laid out along the university boundaries, serving campus–city stitching;
-- **Commercial and business land (0901/0902/0904)**: concentrated in Dazhongsi and the Zhongguancun wing, organizing the market and factor services;
-- **Residential land (0701)**: distributed in clusters west of the main axis, serving talent and residents nearby;
-- **Parks and green space (1401/1402)**: the main-axis green belt + the Qinghe riverside belt + community parks, forming the blue-green network [data:geometry/green_space.geojson#GREEN-001];
-- **Plaza land (1403)**: station-front plazas of the three stations and gateway plazas [data:geometry/public_space.geojson#PUBLIC-001];
-- **Reserved (blank) land (16)**: reserving flexibility for future functions.
+Layout highlights: scientific research and industrial land (0802) is concentrated in Zhongzhiyuan and the Origin Community; education land (0804) follows the university boundaries; commercial and business land (0901/0902/0904) is concentrated in Dazhongsi and the Zhongguancun wing; residential land (0701) is distributed west of the main axis; parks and green space (1401/1402) form the blue-green network [data:geometry/green_space.geojson#GREEN-001]; plaza land (1403) organizes the station-front plazas of the three stations [data:geometry/public_space.geojson#PUBLIC-001]; and reserved (blank) land (16) reserves flexibility.
 
-**Demolish–Renovate–Retain**: following the principle of "retain heritage, renovate low-efficiency stock, renew parks, and build new nodes", the plot-level demolish–renovate–retain scheme must be deepened by professional teams based on official existing-condition and ownership materials; this proposal does not give plot-level demolition conclusions [depth:retain_renovate_demolish]. Building footprints are **conceptual massing**, used only to express spatial organization and public-space relationships, and do not represent building height, floor area ratio, or statutory scale [metric:building_footprint_area_sqm]; control metrics such as floor area ratio and building height depend on undisclosed regulatory-plan conditions and remain `unknown` [metric:floor_area_ratio] [metric:building_height_m].
+**Demolish–Renovate–Retain**: following the principle of "retain heritage, renovate low-efficiency stock, renew parks, and build new nodes", the plot-level demolish–renovate–retain scheme must be deepened by professional teams based on official existing-condition and ownership materials; this proposal does not give plot-level demolition conclusions [depth:retain_renovate_demolish]. Building footprints are conceptual massing and do not represent building height, floor area ratio, or statutory scale [metric:building_footprint_area_sqm]; floor area ratio and building height depend on undisclosed regulatory-plan conditions and remain `unknown` [metric:floor_area_ratio] [metric:building_height_m].
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
-- **Road network structure**: north–south through secondary arterials + 8 east–west stitching connecting roads + branch-road micro-circulation [data:geometry/roads.geojson#ROAD-002] [data:geometry/roads.geojson#ROAD-003].
-- **Walking and cycling network**: the main-axis greenway + slow mobility on the side branch roads + slow-mobility-first zones at station fronts, with safe crossing facilities at stitching points [data:geometry/roads.geojson#ROAD-001].
-- **Rail interchange**: organize "rail + slow mobility + low-speed feeder" transfers around existing rail stations, with shared mobility and logistics service points within an 800 m radius of stations [depth:traffic_rail_slow_parking].
-- **Public services**: allocate innovation services (computing power, pilot testing, legal services, financing), living services (education, healthcare, culture and sports), and public governance services (scenario applications, compliance consultation) according to the "15-minute talent living circle".
-- **New infrastructure**: distributed computing-power nodes, energy microgrids, a sensing foundation, and integration with existing municipal facilities — all conceptual directions, with capacities and alignments pending professional deepening [depth:municipal_new_infrastructure].
+- **Road network**: north–south through secondary arterials + 8 east–west stitching connecting roads + branch-road micro-circulation [data:geometry/roads.geojson#ROAD-002] [data:geometry/roads.geojson#ROAD-003]; connecting with the conceptual direction of the park opening up 9 urban branch roads [source:JZ-PARK-PHASE2-20260806].
+- **Slow mobility**: the main-axis greenway + slow mobility on the side branch roads + slow-mobility-first zones at station fronts; crossing facilities implement accessibility requirements [data:geometry/roads.geojson#ROAD-001] [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+- **Rail interchange**: organize "rail + slow mobility + low-speed feeder" transfers around the rail micro-centers, with shared mobility and logistics service points within an 800 m radius of stations [source:JZ-CONTROL-PLAN-20260817] [depth:traffic_rail_slow_parking].
+- **Public services**: allocate innovation services (computing power, pilot testing, legal, financing), living services (education, healthcare, culture and sports), and public governance services (scenario applications, compliance consultation) according to the "15-minute talent living circle".
+- **New infrastructure**: distributed computing power, energy microgrids, and a sensing foundation are conceptual directions [depth:municipal_new_infrastructure].
 
 ![Integrated transport, slow-mobility, and blue-green public space system](assets/figures/mobility-bluegreen.en.png)
 
@@ -187,84 +175,95 @@ This level's land-use zoning follows the logic of the national territorial land-
 
 ### Blue-Green Network
 
-The blue-green space is organized as "one spine, two waterways, multiple nodes": the **one spine** is the vitality main-axis green belt of the Jingzhang Railway Heritage Park [data:geometry/green_space.geojson#GREEN-001]; the **two waterways** are the Qinghe riverside belt to the north and the Xiaoyue River ecological corridor to the east [data:geometry/constraints.geojson#CON-003] [data:geometry/constraints.geojson#CON-004]; the **multiple nodes** are community parks and corner green spaces. Green space and open space account for approximately 31% of the overall design area, and public space (station-front plazas, community plazas) accounts for approximately 5% [metric:green_ratio] [metric:public_space_ratio].
+Organized as "one spine, two waterways, multiple nodes": the **one spine** is the vitality main-axis green belt of the Jingzhang Heritage Park (connecting with the official 9 km green corridor) [source:JZ-PARK-PHASE2-20260806] [data:geometry/green_space.geojson#GREEN-001]; the **two waterways** are the Qinghe riverside belt and the Xiaoyuehe ecological corridor [data:geometry/constraints.geojson#CON-003] [data:geometry/constraints.geojson#CON-004]; the **multiple nodes** are community parks and corner green spaces. The green ratio is about 31.4% and the public space ratio about 5.0% [metric:green_ratio] [metric:public_space_ratio].
 
 ### AI Public Space, AI-Native New Business Forms, and Pilgrimage Landmarks (agent.4)
 
-**Three pilgrimage landmarks** (conceptual recommendations; all require professional deepening and rights clearance):
+**Three pilgrimage landmarks** (conceptual suggestions; all require professional deepening and rights clearance):
 
-1. **Coupler Plaza**: located in the northern section of the main axis (toward the former Qinghuayuan Station site), commemorating the interoperability wisdom of China's first independently built trunk railway with a physical "coupler + rail" installation, and serving as a long-term showcase for open interfaces and developer achievements — echoing the project's memorial system in which "outstanding contributions are preserved long-term through inscribed monuments";
-2. **Interlocking Tower**: located at the station-front plaza of the Origin Community, displaying the real-time review status of agents connecting to public scenarios through a readable "signal-light" interface (conceptual), becoming an urban living room for transparent AI governance;
-3. **Origin Platform**: located at the gateway plaza of Beijing North Railway Station, telling the narrative "from the railway of pride to the belt of intelligence" through a timeline installation of "1909 departure from here → 2026 AI departure from here" [data:geometry/public_space.geojson#PUBLIC-004].
+1. **Coupler Plaza**: placed at the middle of the main axis, toward the former Qinghuayuan Station site. The Qinghuayuan Station was built in 1910, with the station name inscribed by Zhan Tianyou, and is now a Beijing municipal cultural relic protection unit, located beside the elevated section of Metro Line 13 [source:QHY-STATION-20230327]; a "coupler + rail" installation commemorates the interoperability wisdom of China's first independently built trunk railway and serves as a long-term showcase for open interfaces and developer achievements — echoing the project's memorial system of "outstanding contributions are preserved long-term through inscribed monuments".
+2. **Interlocking Tower**: placed at the station-front plaza of the Origin Community, displaying the review status of agents connecting to public scenarios through a readable "signal-light" interface, becoming an urban living room for transparent AI governance.
+3. **Origin Platform**: placed at the gateway of Beijing North Railway Station (former Xizhimen Station). The Xizhimen Station was completed in 1906 and designed under the direction of Zhan Tianyou, the only first-class station on the Jingzhang Railway, and since 2019 has been the starting point of the Jingzhang high-speed railway [source:BJ-NORTH-STATION-20260406]; a timeline installation of "the train that departed from here in 1909 → the AI that departs from here in 2026" tells the narrative "from the railway of pride to the belt of intelligence" [data:geometry/public_space.geojson#PUBLIC-004].
 
-Supporting elements include an **agent contribution honor wall** (placed along the main axis, recording the names of agents and contributors, linked to the project's permanent memorial system) and a **public space component library** (standardized, reusable components such as coupler-shaped seating, signal-light posts, and open-source exhibition galleries) [metric:pilgrimage_landmark_count].
+Supporting elements include an **agent contribution honor wall** (placed along the main axis, connected to the project's permanent memorial system) and a **public space component library** (standardized components such as coupler-shaped seating, signal-light posts, and open-source exhibition galleries) [metric:pilgrimage_landmark_count].
 
 ### Urban Character
 
-The character tone is a fusion of the "steel cyan-blue + signal amber" railway cultural imagery with an AI-tech feel: buildings on both sides of the main axis form a continuous frontage dominated by mid- and low-rise massing; railway heritage elements (old station buildings, rails, and ballast paving) are retained and activated as public art; massing rhythm is controlled to form a differentiated skyline from north to south of "garden — campus — market"; and green and photovoltaic-integrated roofs and fifth façades are encouraged as a conceptual direction [depth:height_massing_character] [standard:MOHURD-URBAN-DESIGN-MEASURES].
+Under Article 10 of the *Measures for the Administration of Urban Design*, character control (height, massing, style, and color) is expressed as **guiding suggestions**: the railway cultural imagery of steel cyan-blue + signal amber fuses with an AI-tech feel; buildings on both sides of the main axis form a continuous frontage dominated by mid- and low-rise massing; railway historical elements (old station buildings, rails, and ballast paving) are retained and activated as public art; and green and photovoltaic-integrated roofs and fifth façades are encouraged as a conceptual direction [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:height_massing_character].
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
 ### Renewal Project List (21 items, conceptual list)
 
-Organized into four categories per "retain heritage, renovate low-efficiency stock, renew parks, and build new nodes": 3 heritage-activation items (main-axis revitalization of the heritage park, display of the former Qinghuayuan Station site, and the old-rail public art belt); 7 renovation items (functional replacement of aging commercial buildings, street-front interface renewal, talent apartment renovation, etc.); 6 park-renewal items (renovation of low-efficiency factory buildings in Zhongzhiyuan, incubation courtyards in the Origin Community, renewal of commercial space in Dazhongsi, etc.); and 5 new-node items (station-front plazas of the three stations, the Interlocking Tower, the Coupler Plaza, the Beijing North Railway Station gateway, and the open-source data workshop) [depth:renewal_project_list] [metric:renewal_project_count].
+Organized into four categories per "retain heritage, renovate low-efficiency stock, renew parks, and build new nodes", connecting with the actual elements of Phase 2 of the park:
+
+- **Heritage-activation category (5 items)**: revitalization of the main-axis green belt (connecting with the 9 km green corridor), display of the former Qinghuayuan Station site (beside the cultural relic protection unit), linkage with the **"Jingzhang Ring" 1909 theme plaza**, cultural display of the restored old-line rail section, and adaptive reuse of the old gantry crane of the Xiaozuta rail-welding factory [source:JZ-PARK-PHASE2-20260806] [depth:renewal_project_list]
+- **Slow-mobility stitching category (3 items)**: echoing the stitching of the 9 urban branch roads, extension of the 3 fishbone-shaped slow-mobility paths, and activation of the under-bridge space of Line 13
+- **Renovation category (6 items)**: functional replacement of aging commercial buildings, renewal of street-front interfaces, renovation of talent apartments, etc.
+- **Park-renewal category (4 items)**: renovation of low-efficiency factory buildings in Zhongzhiyuan, incubation courtyards in the Origin Community, renewal of commercial space in Dazhongsi, etc.
+- **New-node category (3 items)**: the station-front plazas of the three stations, the Interlocking Tower, and the Coupler Plaza
+
+The renewal projects total 21 items [metric:renewal_project_count]; all are conceptual suggestions, and the specific projects are subject to official existing-condition and ownership materials [source:JZ-CONTROL-PLAN-20260817].
 
 ### Phasing Plan
 
-- **Short term (0–2 years)**: pilot the Origin Community + the main-axis green belt + the Coupler Plaza, starting with low-cost, retractable lightweight projects [data:geometry/phasing.geojson#PHASE-001];
-- **Medium term (2–5 years)**: renewal of Zhongzhiyuan and the Zhongguancun wing, and the Dazhongsi market core [data:geometry/phasing.geojson#PHASE-002] [data:geometry/phasing.geojson#PHASE-003];
-- **Long term (5+ years)**: full stitching of the two wings and realization of functions on reserved plots [data:geometry/phasing.geojson#PHASE-004] [depth:phasing_implementation].
+- **Short term (0–2 years)**: pilot the Origin Community + the main-axis green belt + the Coupler Plaza [data:geometry/phasing.geojson#PHASE-001]
+- **Medium term (2–5 years)**: Zhongzhiyuan and the Zhongguancun wing, and the Dazhongsi market core [data:geometry/phasing.geojson#PHASE-002] [data:geometry/phasing.geojson#PHASE-003]
+- **Long term (5+ years)**: full stitching of the two wings and realization of the reserved plots [data:geometry/phasing.geojson#PHASE-004] [depth:phasing_implementation]
 
-Implementation policy recommendations (conceptual directions): a closed loop of "application — review — testing — exit" for scenario access, open public data and open-source licensing, co-building of the developer community, and public participation and human review systems. All policy and funding arrangements are directions for deepening and do not constitute confirmed government arrangements [source:AGENT-TASKBOOK].
+Implementation policy recommendations (conceptual directions): a "application—review—testing—exit" closed loop for scenario access, open public data and open-source licensing, co-building of the developer community, and public participation and human review systems. All policy and funding arrangements are directions for deepening [source:AGENT-TASKBOOK].
 
 ### Global AI Innovation Events System and Long-Term Operation (agent.6)
 
-- **Annual events system**: "Coupler Fest" every September (a global festival for developers and the public, echoing the project's September implementation start), "Jingzhang Interop Week" (an open-source and interoperability standards week), the "AI Origin Forum" (talent and academia), and the "Achievement Market Season" (application and consumption experiences).
-- **Event branding and communication**: a unified visual identity built on the "coupler symbol + main-line color palette", with multilingual content and international media outreach.
-- **Developer community operation**: operate a global developer community through the open-source repository, hackathons, crowdsourced mapping, and the contributor honor system.
-- **Scenario access operation**: a scenario access platform that centrally receives applications, evaluates compliance (interlocking), and organizes pilots and exits.
-- **Public experience and landmark operation**: include the Coupler Plaza, the Interlocking Tower, and the Origin Platform in public tour and study routes.
-- **International communication and attraction conversion**: digital-twin exhibition halls plus overseas developer events, forming a "testing → incubation → headquarters" attraction and conversion path.
+- **Annual events system**: "Coupler Fest" every September (echoing the September implementation start), "Jingzhang Interop Week" (an open-source and interoperability standards week), the "AI Origin Forum", and the "Achievement Market Season".
+- **Branding and communication**: a unified visual identity built on the "coupler symbol + main-line palette", with multilingual content and international communication.
+- **Developer community**: operate through the open-source repository, hackathons, crowdsourced mapping, and the contributor honor system.
+- **Scenario access operation**: an open platform that centrally receives applications, conducts compliance review (signal interlocking), and organizes pilots and exits.
+- **Toolchain and digital twin**: taking the "open-source urban design toolchain / digital-twin workbench" as a conceptual suggestion for the long-term operation mechanism, aligned with the organizing body's open-call mechanism of "open-source sharing of skill packs" [source:JZ-CONTROL-PLAN-20260817].
+- **International communication and attraction conversion**: digital-twin exhibition halls + overseas developer activities, forming a "testing → incubation → headquarters" path.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Core metrics are recalculated from the submitted geometry under EPSG:4548, with formulas, source files, and assumptions registered in `metrics.json` [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]. Key readings:
+Core metrics are recalculated from the submitted geometry under EPSG:4548 [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]. Key readings:
 
-- The overall design area is approximately 11.41 km² (recalculated from the provisional boundaries, consistent with the announcement's approximately 11.4 km²) [metric:site_area_sqm];
-- Green space and open space are approximately 3.58 km², with a green ratio of approximately 31.4% [metric:green_ratio];
-- Public space is approximately 0.57 km², with a public space ratio of approximately 5.0% [metric:public_space_ratio];
-- The conceptual building footprint is approximately 1.01 km² (illustrating spatial organization only) [metric:building_footprint_area_sqm];
-- The three key areas total approximately 3.69 km² [metric:key_area_total_sqm];
-- Proposal outputs: 12 AI scenario cards [metric:ai_scenario_card_count], 6 user persona types [metric:user_persona_count], 3 pilgrimage landmarks [metric:pilgrimage_landmark_count], 4 industry testing and validation scenarios [metric:industry_test_scenario_count], and 21 renewal projects [metric:renewal_project_count].
+- The overall design area is approximately 11.41 km² (recalculated from the provisional boundaries, consistent with the announcement's approximately 11.4 km²) [metric:site_area_sqm]
+- Green space and open space are approximately 3.58 km², with a green ratio of approximately 31.4% [metric:green_ratio]
+- Public space is approximately 0.57 km², with a public space ratio of approximately 5.0% [metric:public_space_ratio]
+- The conceptual building footprint is approximately 1.01 km² (illustrating spatial organization only) [metric:building_footprint_area_sqm]
+- The three key areas total approximately 3.69 km² [metric:key_area_total_sqm]
+- Proposal outputs: 12 AI scenario cards [metric:ai_scenario_card_count], 6 user persona types [metric:user_persona_count], 3 pilgrimage landmarks [metric:pilgrimage_landmark_count], 4 industry testing and validation scenarios [metric:industry_test_scenario_count], and 21 renewal projects [metric:renewal_project_count]
 
-Metrics that depend on undisclosed regulatory-plan conditions, such as floor area ratio and building height, remain `unknown`, with their recalculation preconditions registered [metric:floor_area_ratio] [metric:building_height_m].
-
-Task coverage matrix: all mandatory items of announcement tasks 1.3/1.4/1.5 and agent tasks agent.1–agent.6 are mapped one by one to sections, layers, metrics, drawings, HTML pages, sources, standards, and self-check items, registered in `compliance_matrix.json`; professional standards responses are registered in `standard_matrix.json`; deliverable depth coverage is registered in `design_depth_matrix.json` (all core depth items are `complete`) [depth:metrics_recalculation].
+Floor area ratio and building height depend on undisclosed regulatory-plan conditions, remain `unknown`, and their recalculation preconditions are registered [metric:floor_area_ratio] [metric:building_height_m]. All mandatory items of announcement tasks 1.3/1.4/1.5 and agent tasks agent.1–agent.6 are mapped one by one to sections, layers, metrics, drawings, HTML pages, sources, standards, and self-check items — see `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json` (all core depth items are `complete`) [depth:metrics_recalculation].
 
 ![Core metrics recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
 
-- **Material compliance**: only public or rights-cleared materials are used; the provisional boundary is explicitly marked as `provisional_constraint` and does not serve as an official planning boundary, a precise area, or a scoring basis [source:BOUNDARY-SOURCE].
+- **Material compliance**: only public or rights-cleared materials are used; the provisional boundary is explicitly marked as `provisional_constraint` [source:BOUNDARY-SOURCE].
 - **Boundary clause**: all spatial implementation, event operations, brand communication, and policy mechanisms are "conceptual suggestions / reference schemes / materials for professional teams to deepen", and do not constitute statutory planning, approval conclusions, or government commitments [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
-- **Privacy and ethics**: scenario operational data is limited to public or authorized aggregated data, and personal information must be anonymized; the author is responsible for the facts, citations, copyright, and expression of AI-generated content [standard:GENERATIVE-AI-INTERIM-MEASURES].
-- **Copyright**: the text and figures of this proposal are generated by AI agents, and the author is responsible for the content; the logo and landmark designs provide only directions and contain no unauthorized trademarks, typefaces, images, or portraits; see `report/copyright_statement.md` for the copyright statement [depth:risk_missing_data].
-- **Accessibility and inclusion**: following the spirit of Article 39 of the Barrier-Free Environment Construction Law, public service venues retain on-site guidance and manual service channels; intelligent and traditional services run in parallel [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+- **Regulatory-plan red line**: under Article 20 of the *Measures for the Formulation and Approval of Regulatory Detailed Plans*, an approved regulatory detailed plan has statutory effect and may not be arbitrarily modified; this proposal does not put forward conclusions on regulatory-plan adjustments or floor-area-ratio changes [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+- **Privacy and ethics**: scenario operational data is limited to public or authorized aggregated data; AI-generated content is marked in accordance with the *Interim Measures for Generative AI*, and the author is responsible for the facts, citations, copyright, and expression [standard:GENERATIVE-AI-INTERIM-MEASURES].
+- **Intellectual property**: under the announcement's intellectual-property clause, the intellectual property of the submitted works is jointly held by the organizer/co-organizer and the entrant, with the entrant holding the right of attribution; this proposal contains no unauthorized trademarks, typefaces, images, portraits, or paper figures; see `report/copyright_statement.md` for the copyright statement [source:OFFICIAL-ANNOUNCEMENT] [depth:risk_missing_data].
+- **Accessibility and inclusion**: the manual service requirement of Article 39, paragraph 2 of the *Barrier-Free Environment Construction Law* is implemented in AI+ healthcare/social-security/finance/payment scenarios; intelligent and traditional services run in parallel [standard:BARRIER-FREE-ENVIRONMENT-LAW].
 - **Materials to be supplemented**: official boundary, regulatory-plan conditions, road red lines, ownership, municipal, and engineering materials are to be recalculated as a whole once official/rights-cleared documents are available (see the checklists in `assumptions.json` and `risk.json`).
 
 ## References
 
-The following materials directly inform this proposal's judgments (complete machine-readable index in `sources.json` and the three matrix files) [source:OFFICIAL-ANNOUNCEMENT]:
-
-1. Haidian Sub-bureau, Beijing Municipal Commission of Planning and Natural Resources: *Prequalification Announcement for the International Open Call for Urban Design of the Centennial Jing-Zhang AI Innovation Belt* (2026-05-09), https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html
-2. Excerpt of the taskbook for the "Centennial Jing-Zhang AI Innovation Belt Urban Design Open Call" addressed to global agents (rights-cleared materials provided by the user, 2026-05-18)
-3. Ministry of Housing and Urban-Rural Development: *Measures for the Administration of Urban Design* (2017)
-4. Ministry of Housing and Urban-Rural Development: *Measures for the Formulation and Approval of Regulatory Detailed Plans for Cities and Towns*
-5. Ministry of Natural Resources: *Guidelines for the Classification of Land and Sea Use in Territorial Spatial Survey, Planning, and Use Control* (No. 234 [2023] of the Ministry of Natural Resources)
-6. Beijing Municipal Science & Technology Commission and the Administrative Commission of Zhongguancun Science Park: *"Three Zones and Two Wings" to Build a World-Class AI Agglomeration* (2026-04-03)
-7. People's Government of Haidian District, Beijing: *Haidian District Releases the "1+X+1" Modern Industrial System Construction and Layout* (2026-03-02)
-8. Cyberspace Administration of China and six other departments: *Interim Measures for the Management of Generative Artificial Intelligence Services* (2023)
-9. Standing Committee of the National People's Congress: *Barrier-Free Environment Construction Law of the People's Republic of China* (2023)
-10. General Office of the State Council: *Implementation Plan on Effectively Solving the Difficulties of the Elderly in Using Intelligent Technologies* (No. 45 [2020] of the General Office of the State Council)
-11. Public taskbook, provisional boundaries, source registry, and validation rules of the open-city-ai/haidian repository (https://github.com/open-city-ai/haidian)
-12. OpenStreetMap contributors (© OpenStreetMap, ODbL 1.0, background verification only)
+1. Haidian Sub-bureau, Beijing Municipal Commission of Planning and Natural Resources: *Prequalification Announcement for the International Open Call for Urban Design of the Centennial Jing-Zhang AI Innovation Belt* (2026-05-09)
+2. Haidian Sub-bureau, Beijing Municipal Commission of Planning and Natural Resources: *Approval Public Notice of the District-Level Regulatory Detailed Plan of the Area Along the Jingzhang Railway Heritage Park (AI Innovation Street Key Area)* (2026-08-17)
+3. CNR (China National Radio): *Phase 2 of the Jingzhang Railway Heritage Park Completed and Opened* (2026-08-06)
+4. People's Daily Online – Beijing Channel: *Phase 2 of the Jingzhang Railway Heritage Park Opens on 6 August* (2026-08-12)
+5. Beijing Municipal Science & Technology Commission / Zhongguancun Administrative Committee: *"Three Zones and Two Wings" to Build a World-Class AI Agglomeration* (2026-04-03)
+6. People's Government of Haidian District, Beijing: *Haidian District Releases the "1+X+1" Modern Industrial System Construction and Layout* (2026-03-02)
+7. Xinhua Daily Telegraph (reprinted by Yunnan Net): *The Construction of the "Centennial Jing-Zhang AI Innovation Belt" Kicks Off* (2026-03-30)
+8. Guangming Online – Beijing Youth Daily: *Qinghuayuan Station Has Been Listed as a Beijing Municipal Cultural Relic Protection Unit* (2023-03-27)
+9. Beijing Daily / Beijing Number: *The Past and Present of Xizhimen Railway Station* (2026-04-06)
+10. Qianlong Net / Beijing Municipal Commission of Housing and Urban-Rural Development: *The Qinghuayuan Tunnel of the Jingzhang High-Speed Railway* (2019-04-17)
+11. People's Daily Online – Beijing Channel: *Beijing Releases 4 AI Innovation Streets* (2026-01-05)
+12. Beijing Daily (reprinted by People's Daily Online): *Phase 1 of the Jingzhang Railway Heritage Park* (2021-10-14)
+13. Excerpt of the open-call taskbook addressed to global agents (rights-cleared material provided by the user, 2026-05-18)
+14. Ministry of Housing and Urban-Rural Development: *Measures for the Administration of Urban Design* (2017); *Measures for the Formulation and Approval of Regulatory Detailed Plans for Cities and Towns*
+15. Ministry of Natural Resources: *Guidelines for the Classification of Land and Sea Use in Territorial Spatial Survey, Planning, and Use Control* (No. 234 [2023] of the Ministry of Natural Resources)
+16. Standing Committee of the National People's Congress: *Barrier-Free Environment Construction Law of the People's Republic of China* (2023); Cyberspace Administration of China and six other departments: *Interim Measures for the Management of Generative Artificial Intelligence Services* (2023)
+17. Public taskbook, provisional boundaries, source registry, and validation rules of the open-city-ai/haidian repository
+18. OpenStreetMap contributors (© OpenStreetMap, ODbL 1.0, background verification only)
