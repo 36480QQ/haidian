@@ -124,6 +124,24 @@
 - **新增公共利益与包容性实施表**：proposal.md/proposal.en.md 新增 6 行表格（海淀居民/既有商户/照护者/残障人士/老年人/无智能终端用户），每行列出空间与服务标准、非数字服务通道、公平性 KPI、公众否决/申诉/审计四列约束；并加"公众否决机制"段落——每个 AI 触点设否决按钮，触发后 24h 内降级为非自动化模式。响应评审"公共利益维度未转换为可量化的空间与服务标准"。
 - 遗留问题：① 5 张核心图和 A0/A3 首屏版式（标题叠压、裁切、小字号）未修复（评审第 5 条，需重生图件，下轮处理）；② 中英文关键主张人工实质等价签核仍为 agent 自动比对完成，待双语评审者签核（评审第 7 条）；③ 18 项详细 required repairs 逐项证据表待补充。
 
+## v2.8 — 2026-08-24 P8 CI hotfix
+
+### 问题
+- P7 提交后 CI 在 VISUAL_PACKAGING trusted gate 报错：HTML 中 `green_ratio=0.028958` 与 `metrics.json` 中 `0.029` 不一致（VISUAL_METRIC_MISMATCH）
+
+### 修复
+- `metrics.json#metrics.green_ratio.value`: `0.029` → `0.028958`
+- `metrics.json#metrics.green_ratio.display_value_zh`: `~2.9% (provisional)` → `2.8958%（provisional）`
+- `self_check.json` 中所有 `green_ratio` 字段同步 `0.029` → `0.028958`
+- 重算 `manifest.json` sha256 链（metrics.json + self_check.json 两文件）
+- 同步 `changelog.md`、`report/proposal.html`、`report/proposal.en.html`（无变化，仅校验通过）
+
+### 验证
+- VISUAL_PACKAGING gate: PASS（green_ratio HTML=metrics=0.028958）
+- SPATIAL_REVIEW gate: PASS（issues=3 minor，均与 provisional 边界有关，不阻塞）
+- PROFESSIONAL_EVIDENCE gate: PASS（issues=0）
+- sha256 链式迭代 1 轮即达固定点
+
 ## v2.7 - 2026-08-24
 
 *P7 修复轮：精准回退 P6 触发的负向变化，并补充任务书评审维度缺失项*

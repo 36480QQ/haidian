@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "7c547105c4020a0ca1edcd0df91ea92d1cc666e191a63ece12e42823158a1912"
+      "sha256": "a9a4fac36d157617b02066335991096c16b9fc0dcc4ed6c685da8b27664404c8"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "445af6d1363126a12d62126f015603708e7d698668a5ccc2efdd43f8f4075005"
+      "sha256": "e4a491b8ae93f218dd62975706defab26f895a255de7d551e67ab9a652484556"
     },
     {
       "path": "compliance_matrix.json",
@@ -292,7 +292,7 @@
       "role": "narrative",
       "required": false,
       "language": "zh",
-      "sha256": "f9539f968e6f59d806b10b88f2d2aa01477c8d64edcd9a34a5f366d48d254151"
+      "sha256": "34065e72cb44ae463639d80f2e799b7d345abf63161a9cd3a813fc934cb75690"
     },
     {
       "path": "assets/media/cover.webp",
