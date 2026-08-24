@@ -639,4 +639,4 @@ AI 与公共价值指标同样按核验问题拆开：
 
 创新片区机制对照包括 [source:CASE-KENDALL]、[source:CASE-ONE-NORTH] 与 [source:CASE-22AT]。遗产更新和运营机制另参考 [source:CASE-KINGS-CROSS]、[source:CASE-STATION-F] 与 [source:CASE-MARS]。现状方向背景为 [source:OSM-CONTEXT]，其 ODbL 数据只用于道路、铁路和水系识别，不能作为官方边界或工程依据。
 
-生成方法：空间设计由公开临时边界、项目枚举、OSM 背景和确定性脚本派生；面积与长度在 EPSG:4548 中复算；场景护照、服务区、公共空间模式和阶段门以 GeoJSON 属性记录。PNG、A3/A0 与离线 HTML 是解释层，`geometry/*.geojson`、`metrics.json`、三类矩阵和 `self_check.json` 是证据层。本轮不使用模型生成图像、视频或音频；前台图件和图纸由包内自编 SVG/Python 构建源、Noto Sans SC OFL 字体与确定性导出形成。许可与例外见三个根目录许可/通知文件、`visual/assets/rights-clearance-ledger.json` 和 `report/copyright_statement.md`。
+生成方法：空间设计由公开临时边界、项目枚举、OSM 背景和确定性脚本派生；面积与长度在 EPSG:4548 中复算；场景护照、服务区、公共空间模式和阶段门以 GeoJSON 属性记录。PNG、A3/A0 与离线 HTML 是解释层，`geometry/*.geojson`、`metrics.json`、三类矩阵和 `self_check.json` 是证据层。本轮不使用模型生成图像、视频或音频；前台图件和图纸由投稿方原创 SVG、Noto Sans SC OFL 字体子集与本机确定性导出形成，构建器不进入最终投稿树。许可与例外统一见 `visual/assets/rights-clearance-ledger.json` 和 `report/copyright_statement.md`。

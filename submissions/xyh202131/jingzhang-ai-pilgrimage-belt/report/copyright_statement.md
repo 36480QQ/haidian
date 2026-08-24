@@ -1,27 +1,27 @@
 # Copyright, licence and authenticity / 版权、许可与真实性
 
-## 中文
+## 分层许可 / Component licences
 
-截至 2026-08-24，本包采用**分层许可**，不再以模糊的整体阻断状态代替逐类判断。
+截至 2026-08-24，投稿方 `xyh202131` 将本包中其原创的文字、表格、图解、SVG、PNG 导出、编辑版式、自编 JSON 与概念 GeoJSON 转化按 **CC BY 4.0** 许可。署名：`Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`。许可全文：<https://creativecommons.org/licenses/by/4.0/>。
 
-- 投稿方 `xyh202131` 原创的文字、表格、图解、SVG、PNG 导出、编辑版式、自编 JSON 与概念 GeoJSON 转化，按 `LICENSE-CONTENT-CC-BY-4.0.md` 采用 CC BY 4.0；署名为“Twin-Track Jing-Zhang / 双轨京张，xyh202131，CC BY 4.0”。
-- 投稿方自编的构建、回放与离线交互代码，按 `LICENSE-CODE-MIT.md` 采用 MIT。
-- `geometry/constraints.geojson` 中的 OpenStreetMap 数据库衍生内容不进入 CC BY 授权，继续按 ODbL 1.0 与 `NOTICE-DATA-ODBL.md` 单独署名、传播和相同方式共享。
-- 仓库提供的临时边界、外部政策网页、案例、标准、商标、名称和链接材料不被本包重新许可；它们只在 `sources.json` 规定的事实、背景或临时用途内使用。
-- 本轮清退全部可选模型生成图像、视频、音频、海报、字幕和文字稿。最终包不以模型生成媒体冒充现场、居民意见、批准方案、无障碍结果或运营证据。
-- 新版图件、HTML 与 PDF 仅使用投稿方原创矢量/版式及 Noto Sans SC 的 OFL 许可字体子集；字体许可与随包文件在最终 manifest 中单列。
+As of 2026-08-24, contributor `xyh202131` licenses contributor-owned text, tables, diagrams, SVG source, PNG exports, editorial layout, package-authored JSON and conceptual GeoJSON transformations under **CC BY 4.0**. Attribution: `Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`. Full terms: <https://creativecommons.org/licenses/by/4.0/>.
 
-这组许可允许在各自条件下复用文件，但不证明官方红线、现场踏勘、规划批准、工程可行性、无障碍达标、现实服务效果、责任主体接受、G1 或专业签署。独立法律意见和商标检索仍未提供；它们是后续生产部署事项，不再与当前投稿的公开评审许可混写。
+投稿方自编的回放与离线交互代码采用 **MIT License**：Copyright (c) 2026 xyh202131。任何获得本软件及相关文档副本的人，可不受限制地使用、复制、修改、合并、发布、分发、再许可和/或销售，但所有副本或实质部分须保留上述版权和许可声明。本软件按现状提供，不作任何明示或默示担保；作者或版权持有人不对因本软件或其使用产生的索赔、损害或其他责任负责。
 
-## English
+Contributor-authored replay and offline interaction code is under the **MIT License**. Copyright (c) 2026 xyh202131. Permission is granted, free of charge, to any person obtaining a copy of the Software and associated documentation to use, copy, modify, merge, publish, distribute, sublicense, and/or sell it, subject to including this copyright and permission notice in all copies or substantial portions. The Software is provided AS IS, without warranty; the authors or copyright holders shall not be liable for claims, damages or other liability arising from the Software or its use.
 
-As of 2026-08-24, this package uses **component-level licensing** rather than an ambiguous package-wide block.
+## 第三方与字体 / Third-party data and font
 
-- Original text, tables, diagrams, SVG source, PNG exports, editorial layout, package-authored JSON and contributor-authored conceptual GeoJSON transformations by `xyh202131` are licensed under CC BY 4.0 in `LICENSE-CONTENT-CC-BY-4.0.md`. Attribution: “Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0”.
-- Contributor-authored build, replay and offline interaction code is licensed under MIT in `LICENSE-CODE-MIT.md`.
-- OpenStreetMap-derived database content in `geometry/constraints.geojson` is excluded from CC BY and remains separately governed by ODbL 1.0 and `NOTICE-DATA-ODBL.md`.
-- Repository provisional inputs, external policy pages, cases, standards, trademarks, names and linked materials are not relicensed. They remain limited to the factual, background or provisional uses recorded in `sources.json`.
-- All optional model-generated imagery, video, audio, posters, captions and transcripts are removed in this round. The final package does not use generated media as field evidence, resident opinion, an approved design, an accessibility result or operational proof.
-- Rebuilt figures, HTML and PDFs use contributor-authored vectors/layout plus an OFL-licensed Noto Sans SC subset; the final manifest separately declares the font notice and files.
+- `geometry/constraints.geojson` 含 OpenStreetMap 方向性背景，署名 `© OpenStreetMap contributors`，数据库许可为 **ODbL 1.0**：<https://opendatacommons.org/licenses/odbl/1-0/>。该层不进入 CC BY 授权；任何符合衍生数据库定义的再分发须保留署名与相同方式共享。它不是官方道路红线、铁路保护边界、市政线位、测绘或批准依据。
+- 四份 PDF 嵌入本机 Noto Sans SC 字体子集。该字体声明采用 **SIL Open Font License 1.1**：<https://openfontlicense.org/>；源字体二进制未作为独立文件随包分发。
+- Repository-provided provisional inputs, cited policy pages, cases, standards, trademarks, names and links are not relicensed. Their uses remain bounded by `sources.json` and `visual/assets/source-governance-register.json`.
 
-These licences permit reuse under their respective conditions. They do not establish an official boundary, field survey, planning approval, engineering feasibility, accessibility compliance, real service result, accepted responsible party, G1 status or professional sign-off. Independent legal advice and trademark search remain outside this concept-package review and are not conflated with permission to review the submission publicly.
+## 真实性与排除 / Authenticity and exclusions
+
+- 本轮清退全部可选模型生成图像、视频、音频、海报、字幕和文字稿；最终包不以模型生成媒体冒充现场、居民意见、批准方案、无障碍结果或运营证据。
+- 许可不把临时几何升级为官方红线，也不证明现场踏勘、规划批准、工程可行性、无障碍达标、现实服务效果、责任接受、G1 或专业签署。
+- 独立法律意见、逐文件独立权利审计与商标检索仍未提供；许可声明不冒充上述专业结论。
+
+- All optional model-generated imagery, video, audio, posters, captions and transcripts are removed. No generated medium is presented as field evidence, resident opinion, approved design, accessibility result or operational proof.
+- These licences do not establish an official boundary, field survey, planning approval, engineering feasibility, accessibility compliance, real service result, accepted duty, G1 status or professional sign-off.
+- Independent legal advice, independent file-level rights audit and trademark search remain absent; this notice does not claim those professional conclusions.

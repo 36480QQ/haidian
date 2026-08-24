@@ -11,14 +11,14 @@
       "component_id": "RIGHTS-CONTENT",
       "scope": "Contributor-owned narrative, tables, diagrams, SVG, PNG exports, editorial layout, authored JSON and conceptual GeoJSON transformations",
       "license": "CC-BY-4.0",
-      "notice": "LICENSE-CONTENT-CC-BY-4.0.md",
+      "notice": "report/copyright_statement.md",
       "status": "licensed_by_contributor"
     },
     {
       "component_id": "RIGHTS-CODE",
       "scope": "Contributor-authored build, replay and offline interaction code",
       "license": "MIT",
-      "notice": "LICENSE-CODE-MIT.md",
+      "notice": "report/copyright_statement.md",
       "status": "licensed_by_contributor"
     },
     {
@@ -26,7 +26,7 @@
       "scope": "OSM-derived records in geometry/constraints.geojson",
       "license": "ODbL-1.0",
       "attribution": "© OpenStreetMap contributors",
-      "notice": "NOTICE-DATA-ODBL.md",
+      "notice": "report/copyright_statement.md",
       "status": "separately_licensed_database_content"
     },
     {
@@ -48,7 +48,7 @@
       "scope": "Noto Sans SC subset used by final HTML/PDF outputs",
       "license": "SIL-OFL-1.1",
       "status": "permitted_embedding_and_redistribution",
-      "notice": "visual/assets/OFL-Noto-Sans-SC.txt"
+      "notice": "report/copyright_statement.md"
     },
     {
       "component_id": "RIGHTS-GENERATED-MEDIA",
