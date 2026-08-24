@@ -73,6 +73,33 @@ The agent taskbook requires proposing 5–8 global cases and explaining their tr
 
 Industrial context (with sources): Haidian has more than 2,000 AI enterprises, 26 unicorns, and 130 registered large models, with the core AI industry scale exceeding 350 billion yuan, about 30% of the national total [source:HD-AI-ECONOMY-20260330]; the enterprises, revenue, and financing along the innovation belt account for more than 70% of Haidian's total, with AI talent accounting for over 80%, making it the area with the highest "AI density" [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS]; the "1+X+1" system takes AI as the apex core engine [source:SRC-2026-HAIDIAN-1X1]. In 2024, the AI Origin Community took the lead in planning the country's first AI innovation street, and in 2026 it was selected among Beijing's first four AI innovation streets (with Wudaokou as the core, about 3 km²) [source:AI-ORIGIN-COMMUNITY-20260105].
 
+### Full-Element Innovation Ecosystem Map (agent.2)
+
+Landing the eight factor categories required by agent.2 — land, space, industry, capital, talent, computing power, data, and scenarios — onto the three stations and two wings (conceptual placements; capital/policy do not constitute commitments) [source:AGENT-TASKBOOK]:
+
+| Factor | Zhongzhiyuan · Full-Stack Assembly Station | AI Origin Community · Talent Origin Station | Dazhongsi · Achievement Market Station | Zhongguancun Technology Services Wing | Xiaoyuehe Scenario Enablement Wing |
+| --- | --- | --- | --- | --- | --- |
+| Land/Space | Renewal of low-efficiency factory buildings into computing and pilot-test space | Campus-city interface and entrepreneurship courtyards | Renewal of commercial space into an experience street | Factor-services buildings | Park slow mobility and test space |
+| Industry | Full-stack independent innovation | Near-campus transformation and talent services | AI-native new business forms | IP and capital empowerment | Scenario and vitality industries |
+| Capital | Platform + park co-building (conceptual) | Talent/incubation investment (conceptual) | Commercial and consumption operation (conceptual) | Zhongguancun capital network (conceptual) | Pilot-scenario funds (conceptual) |
+| Talent | AI engineers/researchers | Faculty, students/entrepreneurs | Operations and consumption talent | Technology and finance talent | Experience and testing groups |
+| Computing power | Public computing power and model evaluation (core) | Education and research computing power | Application-side computing power | Computing-power services scheduling (conceptual) | Edge/on-device computing power (conceptual) |
+| Data | Model and evaluation data | Education and talent data | Application and consumption data | Open data-factor circulation (conceptual) | Scenario operation data (regulated) |
+| Scenarios | Assembly line/emergency drill | Interlocking Tower/talent hall | Achievement market/unmanned delivery | Open-source data workshop | Cultural guide/slow-mobility feeder |
+| Governance | Full-stack and evaluation governance | Human review and governance display | Application compliance | Factor compliance | Scenario-testing compliance |
+
+### Regional Synergy: Interfaces Beyond the Belt (conceptual suggestions)
+
+Supplementing the knowledge, computing-power, testing, capital, and talent collaboration interfaces beyond the belt (**all conceptual suggestions, not constituting existing agreements, approvals, or government commitments**) [source:AGENT-TASKBOOK]:
+
+| Collaboration target | Knowledge interface | Computing-power interface | Testing interface | Capital/talent interface |
+| --- | --- | --- | --- | --- |
+| Beiwei community | Talent residence and community-life collaboration (conceptual) | — | Community-scenario testing (conceptual) | Talent housing (conceptual) |
+| Future Science City | Basic research and achievement docking (conceptual) | Large-science-facility computing-power linkage (conceptual) | — | Pilot-testing and transformation collaboration (conceptual) |
+| Huairou Science City | Scientific-facility and laboratory collaboration (conceptual) | Supercomputing/intelligent-computing resource linkage (conceptual) | — | Scientist and young-talent mobility (conceptual) |
+| Beijing E-Town | Intelligent manufacturing and industry docking (conceptual) | Industrial computing-power collaboration (conceptual) | Embodied-intelligence/robot testing collaboration (conceptual) | Industrial chain and capital collaboration (conceptual) |
+| Beijing-Tianjin-Hebei | University and talent network (conceptual) | Computing-power infrastructure collaboration (conceptual) | Testing ground and scenario-openness collaboration (conceptual) | Capital and industrial-transfer collaboration (conceptual) |
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 ### Spatial Structure: "One Track · Three Stations · Two Wings · Switches · Crossing Stations"
@@ -81,9 +108,15 @@ Industrial context (with sources): Haidian has more than 2,000 AI enterprises, 2
 - **Three Stations**: Zhongzhiyuan = the **Full-Stack Assembly Station** (full-stack AI independent innovation and a computing-power foundation), the Origin Community = the **Talent Origin Station** (campus–city stitching and talent services), and Dazhongsi = the **Achievement Market Station** (AI application experience and achievement transformation), corresponding to the three key areas [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003].
 - **Two Wings**: the Zhongguancun Technology Services Wing to the west and the Xiaoyuehe Scenario Enablement Wing to the east [data:geometry/land_use.geojson#LU-001].
 - **Switches**: along 8 east–west stitching connecting roads, echoing the 9 urban branch roads opened up by the park, achieving east–west stitching [source:JZ-PARK-PHASE2-20260806] [data:geometry/roads.geojson#ROAD-003].
-- **Crossing Stations**: community-level innovation nodes placed roughly every 800 m along the main axis, responding to the service needs of the 70 communities and 450,000 residents along the park [source:JZ-PARK-PHASE2-20260806] [data:geometry/public_space.geojson#PUBLIC-005].
+- **Crossing Stations**: community-level innovation nodes placed roughly every 800 m along the main axis, responding to the service needs of the 70 communities and 450,000 residents along the park [source:JZ-PARK-PHASE2-20260806] [data:geometry/public_space.geojson#PUBLIC-005]. Spacing rationale: ~800 m corresponds to the common range of a 10-minute walking circle and rail-station interchange radius, set as a conceptual assumption (A-PHASING-NODE-001); final siting to be based on demand surveys and service-radius studies [depth:phasing_implementation].
 
 ![Land-use structure, three-level scope and overall spatial framework (overlaid on real OSM base)](assets/figures/land-use-structure.en.png)
+
+### Xiaoyuehe Scenario-Empowerment Wing: Experience Routes and Operational Interfaces
+
+- **Experience routes (conceptual)**: organizing a three-stage route along the Xiaoyuehe and the east side of the main axis — "cultural-guide segment (railway memory) → scenario-testing segment (robot delivery / slow-mobility feeder) → vitality-and-life segment (market and park)" [data:geometry/green_space.geojson#GREEN-001] [data:geometry/roads.geojson#ROAD-001];
+- **Continuous nodes**: setting "scenario touchpoints" (AI guide kiosks, delivery stations, feeder points, experience installations) every approximately 500–800 m along the route, staggered and complementary to the main-axis crossing stations [data:geometry/public_space.geojson#PUBLIC-005];
+- **Operational interface**: the Xiaoyuehe wing operates on a "scenario-open platform + regulated pilot" basis, forming mutual guidance of foot traffic and content with the park slow-mobility system, the Dazhongsi market, and the Origin Community talent corridor (conceptual suggestion) [source:AGENT-TASKBOOK].
 
 ### Overall Urban Renewal Framework
 
@@ -214,6 +247,23 @@ The renewal projects total 21 items [metric:renewal_project_count]; all are conc
 - **Long term (5+ years)**: full stitching of the two wings and realization of the reserved plots [data:geometry/phasing.geojson#PHASE-004] [depth:phasing_implementation]
 
 Implementation policy recommendations (conceptual directions): a "application—review—testing—exit" closed loop for scenario access, open public data and open-source licensing, co-building of the developer community, and public participation and human review systems. All policy and funding arrangements are directions for deepening [source:AGENT-TASKBOOK].
+
+### Operations Ledger and Three-Year Operating Model (agent.6)
+
+Landing the 21 conceptual renewal projects into a "near/medium/long term × operating-entity type / preconditions / KPIs / feedback / maintenance / stop-and-exit" ledger (**entities and funding are all conceptual suggestions and do not constitute confirmed arrangements**) [depth:renewal_project_list]:
+
+| Term | Representative projects | Operating-entity type (suggested) | Preconditions | Core KPIs (conceptual) | Public feedback | Maintenance responsibility | Risk-stop and exit |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Near term 0–2 years | Origin Community + main-axis green belt + Coupler Plaza | Government platform company + park operator | Ownership/heritage/fire-safety/accessibility checks passed | Number of pilots, complaint rate, accessibility-task success rate | Co-creation workshops + online appeals | Operator + maintenance fund | Any "interlocking red light" triggers uncoupling; exit after consecutive non-compliance |
+| Medium term 2–5 years | Zhongzhiyuan + Zhongguancun wing, Dazhongsi market core | Platform company + authorized third party + property holder | Regulatory-plan conditions realized, capital plan | Number of scenarios, occupancy rate, utilization rate, satisfaction | Quarterly public review | Professional operations team | Suspended and reviewed if annual evaluation is not passed |
+| Long term 5+ years | Two wings stitching + reserved plots | Multiple entities + public governance | Government approval, special planning | Innovation index, talent density, public-space use | Annual public report | Long-term operation mechanism | Dynamic adjustment per planning |
+
+### Public Participation and Human-Governance Mechanisms (agent.6)
+
+- **Community co-creation**: organizing co-creation workshops (residents/merchants/universities/developers) in the early stage of renewal projects, with results incorporated into scheme iteration (conceptual);
+- **Complaints and appeals**: AI scenarios set up public appeal channels (online + on-site manual handling), processed in a "receipt—verification—human review—feedback" closed loop; a correction process is established for algorithmic errors (conceptual) [standard:GENERATIVE-AI-INTERIM-MEASURES];
+- **Testing rounds with vulnerable groups**: before healthcare/finance/payment-category scenarios go live, testing rounds with elderly and disabled groups are carried out, retaining manual handling and on-site guidance (Barrier-Free Environment Law §39-2) [standard:BARRIER-FREE-ENVIRONMENT-LAW];
+- **Fairness indicators (conceptual)**: accessibility-task success rate, testing coverage of vulnerable groups, complaint response time limit and case-closure rate, and sampling of the diversity of people using public space, incorporated into the annual public evaluation.
 
 ### Global AI Innovation Events System and Long-Term Operation (agent.6)
 
