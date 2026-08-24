@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "62bff53cafb8edd8da39fd202a0177bc070bed4f90751eaee1752ef3e261fb17"
+      "sha256": "d4657dbb090821759947c54cc7304b8bf837aea33277227b701f1df74b4316ca"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "33ef4d8ff652525beed520380e53c7a0b0be3d2f1812cffc2c1a37dd80dcc8bf"
+      "sha256": "8f6683ead3c29081c9c49c494995dd98e5002a6fed732a4b7a5da1806220a6ce"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,19 +81,19 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c62a46687b10ab67037ed590045f0656de13c8f3fe81342f56ccef10509472cd"
+      "sha256": "1db42aa0f41416ec06f1e3148e91d9f38effdbe388c106e4796c620a9d99a2f4"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "11976be6e4549fffc5416110d1c4d529804e3c373a6d562b0188bc83f1a293bc"
+      "sha256": "6b31b732369731d4998895389ed8b727e26935d3572ee9133c0d567295dac4cb"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "47a157d3e3a623533f53747e1c2418c376097a60558efa661dfba384326c9740"
+      "sha256": "cc26b75b04a28aed32e4d38d9fcdaf60a0f4e50a205b9972e7c2018b5067f13c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a09d314ac3a840e112f682d9c182916e9cd5fb8509338172fd08d6396d5680e2"
+      "sha256": "3322cb466750e42ceeaf817b8e31acd5e7e2bfe7a91e010883c1cd70d5f29569"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -290,7 +290,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "0331f720e5db419ffa56a0029b19cb59dcb825187daf604627a38dec74513ce2"
+      "sha256": "712a8ff2fd870bddcd6621aca95ff0e9e4555ab10379915490702af767c27310"
     },
     {
       "path": "risk.json",
