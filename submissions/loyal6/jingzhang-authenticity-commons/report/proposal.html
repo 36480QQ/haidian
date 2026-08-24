@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-inline-cjk-font="embedded">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>京张验真公地 - proposal report</title>
+<link rel="stylesheet" href="../visual/assets/cjk-font.css">
 <style>
 :root {
   --ink: #172033;
@@ -16,7 +17,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: "JZAC Noto Sans SC", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
@@ -107,6 +108,20 @@ code {
   line-height: 1.35;
   vertical-align: super;
 }
+.font-smoke {
+  max-width: 980px;
+  margin: 0 auto 32px;
+  padding: 14px 24px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  background: #eef4f8;
+  color: var(--muted);
+  font-size: 13px;
+}
+.font-smoke strong, .font-smoke span, .font-smoke output { margin-right: 10px; }
+.font-smoke output { font-weight: 800; color: #8a5b00; }
+html[data-cjk-font-smoke="pass"] .font-smoke output { color: #116b59; }
+html[data-cjk-font-smoke="fail"] .font-smoke output { color: #a2392a; }
 @media (max-width: 720px) {
   main { padding: 26px 16px 52px; }
   h1 { font-size: 26px; }
@@ -202,5 +217,6 @@ code {
 <h2>参考资料</h2>
 <p>完整来源、权利与使用限制见 <code>sources.json</code>；全球案例的迁移边界见 <code>visual/assets/global-cases.json</code>；场景、人物、城市纠错权和90天试点分别见 <code>visual/assets/scenarios.json</code>、<code>persona-journeys.json</code>、<code>correction-protocol.json</code>与<code>pilot-playbook.json</code>。关键依据包括征集公告、智能体任务书、C2PA、NIST AI RMF/OpenMFC、赫尔辛基AI登记、阿姆斯特丹算法生命周期工具、AI Singapore 100E、芬兰媒介素养和UNESCO Zollverein <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-C04" title="来源：CASE-C04">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-C07" title="来源：CASE-C07">来源</sup>。</p>
 </main>
+<aside class="font-smoke" aria-label="离线中文字体自检"><strong>离线中文字体自检</strong><span>京张验真公地｜公众判据｜临时边界｜概念建议｜待授权实测</span><output id="cjk-font-smoke-status">构建检查通过 / BUILD PASS</output></aside>
 </body>
 </html>

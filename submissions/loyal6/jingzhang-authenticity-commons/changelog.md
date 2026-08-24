@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.4.1 expression-completeness repair - 2026-08-24
+
+- Bundled one local CSS file containing a 281 KB Noto Sans SC WOFF2 subset and linked both Chinese HTML entrypoints to it, so they render without system CJK fonts, CDN access or runtime network requests.
+- Added visible and machine-readable offline font smoke checks for `京张验真公地`, `公众判据`, `临时边界`, `概念建议` and `待授权实测`.
+- Recorded the upstream font source, full SIL Open Font License 1.1, 857-CJK-glyph scope and fallback strategy; no proposal claim, metric, geometry or PDF content changed.
+
 ## v1.4 candidate - 2026-08-24
 
 - Rebased the local candidate on official `upstream/main` commit `68f39f2883e1f593e9b1c1208dc70b8356d4ce86`; no commit, push or PR is part of this candidate pass.

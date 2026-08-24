@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "c009004bf134f383c8df58b14ea576c2c2c8c0d1bb642f79800d6c417cf3046d"
+      "sha256": "97f365dcea6cfe8badcade3f5e413fccb247a3d6061b2a9486f7d8c6b67c357e"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a44b477af9c07de019afe167b411934336608394ed329b60f818b62a42a8644f"
+      "sha256": "ad570685fe90b02aca9eb212545e91fc932a76a148fd8b4266e90b4a9a7b5bba"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "05206e638b09927a6167b93055da250d2b629a979a45045f5ca62ddfcaf4b3b3"
+      "sha256": "7f2b820d540038b4120dd83e0f477272570b1d38a95b0bf6eb33398031a88563"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b54de1c87344344e1eaead59b25298c4d3111fdc639425df233d5f9082e20a9a"
+      "sha256": "13bd196a379f9448af35702a070a9993098ddd5b60898c35282a13faa680eebe"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c8ce8b30b85c49c66bd54d6422ddfe3edc7ac6252c9fdc706149d34a8925ee11"
+      "sha256": "6539ea7d4fe3c59e371cf8569022b96576de5cafd84c2a1d24ecbf9c63339a6d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -253,7 +253,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "2fb9c41fe15812b46731967e6d3e6ff30387dd70c9ca56a5da99e005523c61ce"
+      "sha256": "46aa0e546f4a05b60884020c9ba7c8d1998784ea7e2f79fd12d9160c5c5539c1"
     },
     {
       "path": "visual/assets/scenarios.json",
@@ -302,6 +302,48 @@
       "role": "evidence_data",
       "required": true,
       "sha256": "07326fe02bb1a5bf88635e82b33cff1917e8bffc95f0bb29fa92f5f88af93928"
+    },
+    {
+      "path": "visual/assets/font-smoke-test.js",
+      "role": "verification_script",
+      "required": true,
+      "language": "neutral",
+      "sha256": "b84aa11a9e187c180ecea5647bbfd4263dcc28ca4e1d95573113dfa66c61c91c"
+    },
+    {
+      "path": "visual/assets/cjk-font.css",
+      "role": "asset",
+      "required": true,
+      "language": "neutral",
+      "sha256": "2e1efd0e8a75d001d825c27ff6efe704867d37bfacbb0f44a195b4cd2d3d6d9d"
+    },
+    {
+      "path": "visual/assets/font-smoke-test.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "683f717048c4c9824af05f77c287ad4447c6a2f8316f479558a8cbf0232b9ba5"
+    },
+    {
+      "path": "visual/assets/font-source-smoke-test.js",
+      "role": "verification_script",
+      "required": true,
+      "language": "neutral",
+      "sha256": "1be344b22c41794413941676e5fea2bb025375ff1cd24cf5554fe96793b48ff2"
+    },
+    {
+      "path": "assets/media/cjk-html-visual.jpg",
+      "role": "media_poster",
+      "required": false,
+      "language": "zh",
+      "sha256": "7cb04e1017fc87c51d967e2033a73d154fa82c4852b57a6dde94d2749be6e47c"
+    },
+    {
+      "path": "assets/media/cjk-html-proposal.jpg",
+      "role": "media_poster",
+      "required": false,
+      "language": "zh",
+      "sha256": "70c9d1bbb2f5084b3a8edb7de2016d9b6363338af90384c0785479e183fa6791"
     },
     {
       "path": "assets/media/cover.webp",
