@@ -50,19 +50,16 @@
     },
     {
       "component_id": "RIGHTS-FONT",
-      "scope": "Noto Sans SC Regular/Bold glyph output rasterized into the four final PDFs at build time, plus the WOFF2 subset shared by the four offline HTML outputs through visual/assets/offline-cjk-font.css",
+      "scope": "Noto Sans CJK SC Regular glyph output rasterized into the four final PDFs at build time, plus the WOFF2 subset shared by the four offline HTML outputs through visual/assets/offline-cjk-font.css",
       "license": "SIL-OFL-1.1",
       "status": "permitted_embedding_and_redistribution",
       "notice": "report/copyright_statement.md",
-      "pdf_regular_source_file_name": "Noto Sans SC (TrueType).otf",
-      "pdf_regular_source_sha256": "a2b93e6c2db05d6bbbf6f27d413ec73269735b7b679019c8a5aa9670ff0ffbf2",
-      "pdf_bold_source_file_name": "Noto Sans SC Bold (TrueType).otf",
-      "pdf_bold_source_sha256": "d1961be1161ea1be08496c920862d06ea5c23a757628f4fd69368de1d9f51bed",
-      "pdf_render_method": "Pillow 12.2.0 deterministic 2x transparent glyph layers inserted into PyMuPDF pages; font_programs_embedded=false",
-      "html_source_file_name": "NotoSansSC-VF.ttf",
-      "html_source_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
-      "html_subset_sha256": "3918f83d63b910d54ba57410c0351de7d1334931389181692ca0e1e10f008125",
-      "html_subset_method": "fontTools subset 4.62.1 over the complete character union of both final report and visual HTML counterparts plus declared review symbols; WOFF2; 1150 Unicode code points; font-display block"
+      "pdf_and_html_source_file_name": "NotoSansCJKsc-Regular.otf",
+      "pdf_and_html_source_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "pdf_render_method": "Pillow 12.2.0 deterministic 2x transparent glyph layers plus existing package-authored PNG figures inserted into PyMuPDF 1.27.2.3 pages; font_programs_embedded=false",
+      "pdf_accessibility_boundary": "fixed-page visual publication; searchable text and tagged-PDF conformance are not claimed; the paired offline HTML reports remain the machine-readable keyboard surface",
+      "html_subset_sha256": "9eaffa9b2f5786ec59e1beb8b98b67ecb428fd602dc20fba9d79921d3a6fb4c8",
+      "html_subset_method": "fontTools subset 4.62.1 over the literal character union of both final report and visual HTML counterparts; WOFF2; 1144 Unicode code points; font-display swap"
     },
     {
       "component_id": "RIGHTS-FILE-INVENTORY",
