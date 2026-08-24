@@ -62,8 +62,8 @@ const add = (id, claim, pass, actual) => checks.push({ id, claim, pass: !!pass, 
 /* A. metrics.json 的自陈与内部一致性 */
 const valued = Object.values(metrics).filter((m) => m.value !== null && m.value !== undefined).length;
 const pending = Object.keys(metrics).length - valued;
-add("M1", "77 项指标 ＝ 63 已赋值 ＋ 14 待测",
-    Object.keys(metrics).length === 77 && valued === 63 && pending === 14,
+add("M1", "86 项指标 ＝ 72 已赋值 ＋ 14 待测",
+    Object.keys(metrics).length === 86 && valued === 72 && pending === 14,
     `${Object.keys(metrics).length} ＝ ${valued} ＋ ${pending}`);
 
 const phaseSum = val("phase_1_area_sqm") + val("phase_2_area_sqm") + val("phase_3_area_sqm");
@@ -493,11 +493,11 @@ add("G3", "正文的 [depth:] 标记全部能在 design_depth_matrix.json 里解
       bad.length ? bad.slice(0, 4).join("；") : `155 个 CMap：技术内页 9 个恒等映射＋首页 146 个合法稀疏映射`);
 }
 
-/* G6/G7/G8/G9. 评分器暴露的表达层盲点必须进入总退出码：无系统中文字体时的
+/* G6/G7/G8/G9/G10. 评分器暴露的表达层盲点必须进入总退出码：无系统中文字体时的
    HTML 字形覆盖、等宽控件重置后的显式 CJK 回退、各可见载体的包版本一致性，
    七类用地在六个载体中的非颜色纹理冗余，以及公共服务等价合同中设计覆盖
-   与真实观察边界的硬分栏。四项各由独立小审计器负责，
-   本审计器只把其机器可读结论并入 68 项总清单；
+   与真实观察边界的硬分栏，以及 P0 的交付/公共利益/可操作原型。五项各由独立小审计器负责，
+   本审计器只把其机器可读结论并入 69 项总清单；
    覆盖层原样下传给阴性自测。 */
 function runNestedAudit(filename) {
   const env = Object.assign({}, process.env);
@@ -548,6 +548,16 @@ function runNestedAudit(filename) {
       result.status === 0 && result.parsed && result.parsed.ok === true,
       problems.length ? problems.slice(0, 4).join("；")
         : `${result.parsed.no_ai_base_routes_valid}/12 基础路线／${result.parsed.human_floor_channels_checked} 条人工渠道／${result.parsed.accessibility_requirement_fixtures_valid}/8 需求夹具／真实观察 ${result.parsed.real_user_observation_count}／通过 ${result.parsed.real_user_pass_count}`);
+}
+
+{
+  const result = runNestedAudit("p0-readiness-audit.js");
+  const problems = result.parsed && Array.isArray(result.parsed.errors)
+    ? result.parsed.errors : [result.stderr || "无法解析 p0-readiness-audit.js 输出"];
+  add("G10", "SCN-05 单场景 P0 同时具备八门、五阶段、十项 RACI、十二项构件、八项预注册验收、六类公共群体、十二场景公共利益硬门槛与可操作离线原型；真实观察仍为 0",
+      result.status === 0 && result.parsed && result.parsed.ok === true,
+      problems.length ? problems.slice(0, 4).join("；")
+        : `${result.parsed.entry_gates_valid} 门／${result.parsed.delivery_stages_valid} 阶段／${result.parsed.raci_work_packages_valid} RACI／${result.parsed.component_line_items_valid} 构件／${result.parsed.acceptance_criteria_valid} 验收／${result.parsed.public_benefit_groups_valid} 群体／${result.parsed.scenario_public_value_gates_valid} 场景公共门／原型 ${result.parsed.prototype_checks_valid}/${result.parsed.prototype_checks_expected}／真实观察 ${result.parsed.real_participant_observations}`);
 }
 
 /* H. sources.json 的字段深度——CLAUDE.md 记为与分数相关性最高的特征，缺一栏就是缺证据 */
@@ -962,7 +972,7 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
    连四张图件都逐一列出），**只有 `A-CONTRAST-001` 写了一个裸目录 `assets/figures/`**。字段名是
    affected_files，机器按它算复算范围时这一项解析不出来。已按 `figure-contrast-report.json` 自陈的
    范围（26 张栅格图件 ＝ 24 PNG ＋ 2 JPEG）展开成 26 个具体路径，与报告声明逐一对应。
-   规模 11 条假设／91 处文件引用写死参与退出码——某条引用被悄悄删掉时「逐条可解析」仍会成立。 */
+   规模 11 条假设／100 处文件引用写死参与退出码——某条引用被悄悄删掉时「逐条可解析」仍会成立。 */
 {
   const asms = readPkg("assumptions.json").assumptions || [];
   const problems = [];
@@ -978,11 +988,11 @@ add("J2", "compliance_matrix 自陈的 standard_ids 推导规则成立：规则�
       if (!a[k]) problems.push(`${a.id}: 缺 ${k}`);
     }
   }
-  add("A2", "assumptions.json 的 11 条假设各带复算触发器与责任角色，且 91 处 affected_files 逐条解析到包内实际文件（不接受目录）",
-      problems.length === 0 && asms.length === 11 && refs === 91,
+  add("A2", "assumptions.json 的 11 条假设各带复算触发器与责任角色，且 100 处 affected_files 逐条解析到包内实际文件（不接受目录）",
+      problems.length === 0 && asms.length === 11 && refs === 100,
       problems.length ? problems.join("；")
-        : (asms.length !== 11 || refs !== 91 ? `实为 ${asms.length} 条假设／${refs} 处引用，应为 11／91`
-           : `11 条假设、91 处引用逐条可解析`));
+        : (asms.length !== 11 || refs !== 100 ? `实为 ${asms.length} 条假设／${refs} 处引用，应为 11／100`
+           : `11 条假设、100 处引用逐条可解析`));
 }
 
 /* Z. 元检查：断言检查清单本身没有缺项。
@@ -1003,7 +1013,7 @@ const EXPECTED_IDS = [
   "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11",
   "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11",
   "F0", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10",
-  "G1", "G2", "G3", "G4", "G6", "G7", "G8", "G9", "H1", "I1",
+  "G1", "G2", "G3", "G4", "G6", "G7", "G8", "G9", "G10", "H1", "I1",
   "K1", "K2", "K3", "K4", "J1", "J2", "L1", "J3", "G5", "M9", "T1", "A2",
   "Z1",
 ];

@@ -107,9 +107,12 @@
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/noto-cjk-subset.coverage.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/noto-cjk-subset.css",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/noto-cjk-subset.rights.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/p0-delivery-contract.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/p0-readiness-audit.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/package-integrity-gates.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/pdf-version-report.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/protocol-check-runner.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/public-benefit-gate.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/public-service-equivalence-audit.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/public-service-equivalence-contract.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/rights-inventory.schema.json",
@@ -129,7 +132,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 21783664,
+      "total_bytes": 21907971,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -190,6 +193,9 @@
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.198434,
         "public_space_ratio": 0.09106,
+        "p0_entry_gate_count": 8.0,
+        "public_benefit_group_count": 6.0,
+        "planned_equity_cotest_session_min_count": 24.0,
         "accessibility_requirement_fixture_coverage_ratio": 1.0
       }
     },
@@ -204,7 +210,7 @@
       "summary": {
         "standard_matrix_items": 10,
         "design_depth_items": 15,
-        "known_metric_refs_required": 63,
+        "known_metric_refs_required": 72,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -212,7 +218,7 @@
           "standard": 7,
           "depth": 11,
           "data": 4,
-          "metric": 22
+          "metric": 31
         }
       }
     },

@@ -12,7 +12,7 @@
     "author_grant_en": "As rights holders in the contents of this package, the authors additionally grant that any use complying with CC BY-NC 4.0 (attribution, non-commercial, changes indicated) is licensed.",
     "required_attribution_line_zh": "本方案为开放共创建议，不代表任何政府决定或审批结论。",
     "required_attribution_line_en": "This proposal is open co-creation advice and represents no government decision or approval.",
-    "third_party_exclusion_zh": "本授权不覆盖第三方素材。**本条所称「未使用第三方图片」指包内不含任何他人既有作品**——未使用任何他人的图片、地图（含商业地图与 OSM）、商标或受保护版式。**它不等于「包内没有模型输出」，这一点必须分开说清**：包内唯一的非程序化图像素材是 assets/media/cover.png 的背景层，由参与者以**纯文字提示词**调用图像模型 gpt-image-2 生成，**未向模型提供任何图片、照片、地图或既有作品作为输入**；画面人物为无面部特征的剪影，不涉及肖像权。其生产方法、权利归属与不可复现性见 `manifest.json#rights_inventory` 的 generated_illustration 一条与 `sources.json#IMAGEGEN-COVER-ILLUSTRATION`。除该背景层外，**全部 26 张图件、四套图纸与四份离线 HTML 均由包内 geojson、metrics.json 与正文程序化渲染或排版**，不含任何外部图像素材。包内另在本地 CSS data URI 中分发一份 Noto Sans CJK SC WOFF2 字符子集；这是唯一的第三方字体负载，不属于作者的 CC BY-NC 4.0 授权范围，仅按随附的 SIL OFL 1.1 继续分发。字体权利链见 `manifest.json#rights_inventory` 中 `asset_class=web_font_assets` 的登记、`visual/assets/governance/noto-cjk-subset.rights.json#license.text` 与 `sources.json#FONT-NOTO-WEB`。",
+    "third_party_exclusion_zh": "本授权不覆盖第三方素材。**本条所称「未使用第三方图片」指包内不含任何他人既有作品**——未使用任何他人的图片、地图（含商业地图与 OSM）、商标或受保护版式。**它不等于「包内没有模型输出」，这一点必须分开说清**：包内唯一的非程序化图像素材是 assets/media/cover.png 的背景层，由参与者以**纯文字提示词**调用图像模型 gpt-image-2 生成，**未向模型提供任何图片、照片、地图或既有作品作为输入**；画面人物为无面部特征的剪影，不涉及肖像权。其生产方法、权利归属与不可复现性见 `manifest.json#rights_inventory` 的 generated_illustration 一条与 `sources.json#IMAGEGEN-COVER-ILLUSTRATION`。除该背景层外，**全部 26 张图件、四套图纸与四份离线 HTML 均由包内 geojson、metrics.json、正文与参与者编写的离线原型程序化渲染或排版**，不含任何外部图像素材。包内另在本地 CSS data URI 中分发一份 Noto Sans CJK SC WOFF2 字符子集；这是唯一的第三方字体负载，不属于作者的 CC BY-NC 4.0 授权范围，仅按随附的 SIL OFL 1.1 继续分发。字体权利链见 `manifest.json#rights_inventory` 中 `asset_class=web_font_assets` 的登记、`visual/assets/governance/noto-cjk-subset.rights.json#license.text` 与 `sources.json#FONT-NOTO-WEB`。",
     "government_endorsement_zh": "任何使用不得暗示政府背书、实施批准、已建成或已完成公众参与。",
     "precedence_zh": "三个许可信号冲突时的优先顺序，自高到低：(1) 第三方排除范围与政府不背书声明——禁止项，任何授权都不能突破；(2) 权利人的完整授权文本 author_grant_zh/en——权利人对自有权利的直接授予，不需外部文本支持即可执行；(3) 机器可读标识 identifier——条款未发布；若日后被定义得比 (2) 更严则以更严者为准，若被定义得更宽，本包仍只按 (2) 的范围授权。",
     "precedence_en": "Order of precedence when the three licence signals conflict, highest first: (1) the third-party exclusion and the no-government-endorsement statement, which are prohibitions no grant can override; (2) the rights holders' full grant text in author_grant_zh/en, a direct grant over rights they hold that is enforceable without external support; (3) the machine-readable identifier, whose terms are unpublished — if it is later defined more strictly than (2) the stricter governs, and if more loosely, this package still grants only within the scope of (2).",
@@ -75,25 +75,25 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8bf5dc7cc8a0c4b888e6c0a8dee3e538682d036118995b62e3a2806bc846a60b"
+      "sha256": "ded74b8869b78ffe1f087aa9e5f021633202e016dff275c140443404f786a3c5"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "2dfdffd22dc0840a143cb1010ecaf858bff5897e71d7a851ca5d2beb4888bf08"
+      "sha256": "1adf5e4595498d025f1daa402680a35636d44885a3485656a333605a47b40cd8"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "1e28be60d7c2bbd8b8c61bbd86591b7cda382fdd87738809680a5cb3b9b8f649"
+      "sha256": "5e37bcb70bcf031e037517022e2221bd7dc559e0238ce0e5c13114e6f1ef3c0f"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "20c44523699a7225ae967cd1daaa7d864b8bd57f8b481244cca1461aa7ee002b"
+      "sha256": "c5512c171259b1243f22de36ddeea1f49e2c9bff9d9e86a1f1f77524bab8a972"
     },
     {
       "path": "simulation.json",
@@ -105,50 +105,50 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "0ae41ccb39b3a12e72ec4d0e61700a1bf09fdefd793a1e74890de075468ef89b"
+      "sha256": "e269e030d858def78fd3fe7bc5633ce17e67e3838f8024bed3e552d09fb66343"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f16096f9df3f212ee03c3899141221e1108375ca87d8a0489c494d9727021eb2"
+      "sha256": "ef398cb812c6f5b556fed25fa8a3775c374845aabf2db3129bfa1eb81027e769"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "73eedeb524f2bd5728dd014386f847a9f398b50013776d038b770fdeaeb1e8a1"
+      "sha256": "ae0ea99ba54c4e97028adc5d81c7f40d84a4107a056866a810d0554ae8067e29"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "fee76c8f969e5b78a27931cd6a62d3ecf42974cb387722f78e7d0c07ac5fc665"
+      "sha256": "40d5d6e86d0a711c86237f97d2eda4922bcebe5b9090bc5799f6b18b84dc4fd7"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "47205e310046195cd086594f05d4c5309be4dfa9fb03546ffca4028378effed6"
+      "sha256": "a6506f5bd951c09738f741a6e9e20888d1ad1aa7765b8b0f0daf61e9e252a23e"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "3878a3b26ee4555e62c3efd10a3ab780d1c4a84fa4b97bf9cf2a7fe19deda7bd"
+      "sha256": "d52154056b2c272c3f78769712e9f9cb4054bcfe8f460e3f085e133e14eec4cf"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "dbfc59974ac542a4daa8b467ad889171238c52c280b92b09c4e604580b30df71"
+      "sha256": "74c696998be5323f6d034a89f1b228c92d1ab2014d0003159b2a06429804c782"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "4312b17e46eca45861645339be9f3a67d04fd0a5875b1c9b4c23b20738592571"
+      "sha256": "19dfcb9fa98408e42c8bde1405fed12e3f536544de329fa38fc0be0fa69635d5"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -169,7 +169,11 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a8d8a0f2be009679509db58b7845a70d0fe0b671ba3677d071f72a3dc91f04f1"
+      "title_zh": "京张交接线离线评审入口（含 SCN-05 P0 可操作原型）",
+      "title_en": "Jing-Zhang Handover Line offline review entry with operable SCN-05 P0",
+      "description_zh": "正式中文视觉入口内嵌纯离线 P0 原型：可关闭智能层、拒绝数据与算法、比较共享同一核心结果的智能／无 AI 路线、切换大字与高对比、打印纸本并生成投诉／停用／删除演示回执；真实观察、真实通过与场地授权均保持 0。",
+      "description_en": "The official Chinese visual entry embeds an offline P0 prototype: reviewers can switch off the smart layer, refuse data and algorithms, compare smart and no-AI routes sharing one core outcome, enable large text or high contrast, print a paper route and issue a complaint/stop/delete demo receipt. Real observations, observed passes and site authorisation remain zero.",
+      "sha256": "1eaa13fcab8ffcfdbf519a0b89e3c7563415a9b0bd70d69f14bf16f2bae4d424"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -266,7 +270,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "5526c305a547dfa30b34ff41bf7c71639c0ff0f90fcba112abfe1c8a5e7b8abf"
+      "sha256": "376c1d3702b087cd7b4cb2bf0583436e042bbad7de432e3ff0f6642da3904cc0"
     },
     {
       "path": "report/proposal.en.html",
@@ -274,7 +278,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a0338a9b323d8bebb4c8d3baedf50a3a16964f643cf3dc91c124a970500bf98b"
+      "sha256": "f7f168647858b391159a53ebd94edab65ffe7f45970888dd8278f10c16a47111"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -298,7 +302,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e0d083ad2b884cf4e9ca5412db25c339559310b7549340cc98099d55032de7cb"
+      "sha256": "9ab8c8c31ce112c8f16706566c93c9b4da526586b9ed8b5a380249fc9baeec7c"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -405,7 +409,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "3cb6f6af6c7fe3e120da09d4ca0da4645b95358e37403bfd799ad94730d699a6"
+      "sha256": "d1c64c6d568288b633c8d30ed8d61fa7c80ab741723acdde36aafb1a39bd9096"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -489,21 +493,31 @@
       "path": "visual/assets/governance/claims-audit.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "acd307ab35ebcc09d57d5febf2b6460d3c4574f8bd058b0e1dbb2bbed8416e59",
+      "sha256": "1190471d67d25db2071288eb12a37bb52a256809c6b8f683454a1ec9539ec7fb",
       "title_zh": "正文数值声明审计器",
       "title_en": "Prose claim auditor",
-      "description_zh": "只读、离线、零网络依赖的 68 项声明审计：复算指标、几何、二十单元、断面、布局对照、矩阵引用、来源深度、许可一致性、PDF 文字层、HTML 包内 CJK 字体、全载体 v2.0 可见版本、七类用地在六个载体中的非颜色纹理冗余，以及十二场景无 AI 等价路线与八类无障碍需求夹具。全部一致退出 0，任一回归退出 1。",
-      "description_en": "A read-only, offline claim auditor with 68 checks across metrics, geometry, the twenty cells, sections, layout comparison, matrix references, source depth, licence consistency, PDF text layers, local CJK webfonts, visible v2.0 identity, seven non-colour land-use patterns across six carriers, and the twelve-scenario no-AI equivalence routes with eight accessibility requirement fixtures. All matches exit 0; any regression exits 1."
+      "description_zh": "只读、离线、零网络依赖的 69 项声明审计：复算指标、几何、二十单元、断面、布局对照、矩阵引用、来源深度、许可一致性、PDF 文字层、四份 HTML 包内 CJK 字体、全载体 v2.0 可见版本、七类用地在六个载体中的非颜色纹理冗余、十二场景无 AI 等价路线与八类无障碍需求夹具，以及 P0 的 8 门／5 节点／10 RACI／12 构件／8 判据／6 群体／12 公共利益闸／14 项原型检查。全部一致退出 0，任一回归退出 1。",
+      "description_en": "A read-only, offline claim auditor with 69 checks across metrics, geometry, the twenty cells, sections, layout comparison, matrix references, source depth, licence consistency, PDF text layers, local CJK webfonts across four pages, visible v2.0 identity, seven non-colour land-use patterns across six carriers, twelve-scenario no-AI equivalence with eight accessibility fixtures, and the P0's 8 gates / 5 stages / 10 RACI packages / 12 components / 8 criteria / 6 groups / 12 public-value gates / 14 prototype checks. All matches exit 0; any regression exits 1."
     },
     {
       "path": "visual/assets/governance/audit-selftest.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "8bceeaa19bedfaceedd232cfe7b48b4549e1469254f8a8455b82a9219cb6df08",
+      "sha256": "08b3e80885ab8ef896cd0026f60a3cadc007e322dbef9bac14af937c342ee4de",
       "title_zh": "自检脚本的回归测试",
       "title_en": "Regression test for the self-check scripts",
-      "description_zh": "对五条审计链做 49 例回归测试：2 例正向锁定 68 项声明、A0 内嵌图 4/4 像素一致、12 账、96 规则、48 断言、12/12 无 AI 路线与 8/8 无障碍需求夹具；47 例阴性逐一注入已知缺陷并要求对应检查失败，最新一例删除拒绝算法／数据需求夹具。注入只写系统临时目录，不改投稿包。",
-      "description_en": "A 49-case regression test across five audit chains: two positive cases lock 68 claim checks, 4/4 pixel-identical embedded A0 figures, 12 ledgers, 96 rules, 48 assertions, 12/12 no-AI routes and 8/8 accessibility requirement fixtures; 47 negative cases inject known defects one by one, including removal of the algorithm/data-refusal fixture. Mutations stay in the system temporary directory."
+      "description_zh": "对六条审计链做 50 例回归测试：2 例正向锁定 69 项声明、A0 内嵌图 4/4 像素一致、12 账、96 规则、48 断言、12/12 无 AI 路线、8/8 无障碍需求夹具和 P0 准备度审计；48 例阴性逐一注入已知缺陷并要求对应检查失败，最新一例删除公共利益合同中的访客群体。注入只写系统临时目录，不改投稿包。",
+      "description_en": "A 50-case regression test across six audit chains: two positive cases lock 69 claim checks, 4/4 pixel-identical embedded A0 figures, 12 ledgers, 96 rules, 48 assertions, 12/12 no-AI routes, 8/8 accessibility fixtures and the P0 readiness audit; 48 negative cases inject known defects one by one, with the latest removing the visitor group from the public-benefit contract. Mutations stay in the system temporary directory."
+    },
+    {
+      "path": "visual/assets/governance/p0-readiness-audit.js",
+      "role": "governance_validation",
+      "required": false,
+      "title_zh": "P0 实施准备度与公共利益硬门审计器",
+      "title_en": "P0 implementation-readiness and public-benefit hard-gate auditor",
+      "description_zh": "只读、离线、零第三方依赖地交叉核验交付合同、公共利益合同、服务原型、指标与中英正文；要求 8 门、5 节点、10 项 RACI、12 项构件、8 项判据、6 类群体、12 个场景公共利益闸、8 条跨场景保护与原型 14/14 项结构检查同时闭合，并拒绝把空报价、未指派角色、零观察或未授权状态伪装为完成。",
+      "description_en": "A read-only offline auditor with no third-party dependency that cross-checks the delivery contract, public-benefit contract, operable prototype, metrics and bilingual proposals. It requires 8 gates, 5 stages, 10 RACI packages, 12 components, 8 criteria, 6 groups, 12 scenario public-value gates, 8 cross-cutting protections and 14/14 prototype checks, while rejecting any attempt to turn blank quotes, unassigned roles, zero observations or absent authorisation into completion.",
+      "sha256": "d55a85bd83e65e254590eb1c4a7140cbc2056f10fd77c6ceadf03db5d4578e37"
     },
     {
       "path": "visual/assets/governance/apply-land-use-patterns.js",
@@ -544,6 +558,26 @@
       "description_zh": "只读、离线、零第三方依赖的审计器：交叉核验合同、十二场景、交接账与 metrics.json，要求 12/12 无 AI 基础路线、24/24 人工渠道、8/8 无障碍需求夹具和八条公共服务规则同时闭合，并拒绝把设计夹具、零观察或零通过写成真实用户测试。",
       "description_en": "A read-only offline auditor with no third-party dependency. It cross-checks the contract, twelve scenarios, shift ledgers and metrics.json, requiring 12/12 no-AI base routes, 24/24 human channels, 8/8 accessibility requirement fixtures and eight public-service rules to close together, while rejecting any attempt to present design fixtures, zero observations or zero passes as real-user testing.",
       "sha256": "cca18b0ca127e2489b0c64f0b2744c5c2fa38653cee349cdb0a8fc7ef5f58fff"
+    },
+    {
+      "path": "visual/assets/governance/p0-delivery-contract.json",
+      "role": "governance_contract",
+      "required": false,
+      "title_zh": "SCN-05 P0 交付合同",
+      "title_en": "SCN-05 P0 delivery contract",
+      "description_zh": "把首个试点限定为 SCN-05，并预注册 8 道准入门、5 个 90 天证据节点、10 项 RACI 工作包、12 条带数量和退出处置的构件清单、3 个空白报价槽、8 项公平与服务验收判据及至少 24 场真实共测计划。真实授权、角色、报价、预算、保险、专业签认与观察均保持未开始、空值或 0。",
+      "description_en": "Limits the first pilot to SCN-05 and pre-registers 8 entry gates, 5 evidence-driven stages over 90 days, 10 RACI packages, 12 quantified components with exit treatment, 3 blank quote slots, 8 equity/service criteria and a minimum 24-session real co-test plan. Real authorisation, roles, quotes, budgets, insurance, professional sign-offs and observations remain not started, null or zero.",
+      "sha256": "1e4aa97c5ba8d35e1e6414852769ea853dec5fec3ca9bb017141d28d56936fe5"
+    },
+    {
+      "path": "visual/assets/governance/public-benefit-gate.json",
+      "role": "governance_contract",
+      "required": false,
+      "title_zh": "公共利益与包容性硬门合同",
+      "title_en": "Public-benefit and inclusion hard-gate contract",
+      "description_zh": "将公共利益设为智能场景的进入条件而非事后加分项：逐类锁定任务书六类群体的公共价值与无 AI 入口，为 12/12 场景登记预见伤害、至少三项保护、停止条件和非技术余留，并以不消费可使用、不强迫设备或人脸识别、人工责任与申诉、最少数据、儿童／老人／残障安全、遮荫休息及低光低噪声作为跨场景底线。当前真实观察与通过均为 0。",
+      "description_en": "Makes public benefit an entry condition for every smart scenario rather than a post-hoc bonus. It binds each of the six taskbook groups to public value and a no-AI entrance, and records foreseeable harm, at least three safeguards, a stop condition and a non-technical remainder for all 12 scenarios. Cross-cutting floors cover non-commercial access, no forced device or face recognition, human responsibility and appeal, data minimisation, child/older/disabled safety, shade/rest and low light/noise. Real observations and passes remain zero.",
+      "sha256": "229b46ceb77f5ba7f3d7476dc062f03dc6fc7ecf66e41ef9d617823c02ea5188"
     },
     {
       "path": "assets/figures/shift-ledger.png",
@@ -759,14 +793,14 @@
       "sha256": "de9d8c1d9a454592ee06f782371e58c872a5dfcfd00d9cfce881cd97760fc3d7",
       "title_zh": "离线网页 CJK 字体审计器",
       "title_en": "Offline CJK webfont auditor",
-      "description_zh": "解码四页共用的包内 WOFF2，核字体哈希、OFL、来源、可见字形覆盖、中文 body 首选字体，以及交互页 24 类等宽标签对 JZHandoverCJK 的显式回退；另拒绝无效 font shorthand inherit。",
-      "description_en": "Decodes the package-local WOFF2 shared by four pages and verifies its hash, OFL, source, visible glyph coverage, primary Chinese body stack, and explicit JZHandoverCJK fallback for 24 monospaced interactive-label selectors; invalid font-shorthand inherit is rejected."
+      "description_zh": "解码四页共用的包内 WOFF2，核字体哈希、OFL、来源、可见字形覆盖、中文 body 首选字体，以及交互总览页 24 类等宽标签对 JZHandoverCJK 的显式回退；另拒绝无效 font shorthand inherit。",
+      "description_en": "Decodes the package-local WOFF2 shared by four pages and verifies its hash, OFL, source, visible glyph coverage, primary Chinese body stack, and explicit JZHandoverCJK fallback for 24 monospaced interactive-label selectors on the interactive overview pages; invalid font-shorthand inherit is rejected."
     },
     {
       "path": "visual/assets/governance/version-audit.js",
       "role": "verification_script",
       "required": false,
-      "sha256": "86604486095fa74e4e5ff790d8c155cd017deb3f06405ebba85ea8b71d0ad436"
+      "sha256": "9d1755d625f444300c3823d90701980e9374dc876f4a3d174608c7503215840e"
     },
     {
       "path": "visual/assets/governance/version-stamp-report.json",
@@ -784,19 +818,19 @@
       "path": "visual/assets/governance/noto-cjk-subset.css",
       "role": "asset",
       "required": true,
-      "sha256": "29c15fda3380722c16ebe2de9834f3dc3f522ca76bee19f88d04da5d09e96ddd"
+      "sha256": "9b70b6f801d4501a14e02594cad59f4cd7edd634b54410f0cf83ebbdc3e52960"
     },
     {
       "path": "visual/assets/governance/noto-cjk-subset.coverage.json",
       "role": "asset",
       "required": true,
-      "sha256": "13639236fca39e3e07511065cc7aaf1b2dfd3a67879521ca513b474ebc843dd0"
+      "sha256": "9c2e392368389ab27c2a57043272ff39072055c53235eb5c679d696b930f48ed"
     },
     {
       "path": "visual/assets/governance/noto-cjk-subset.rights.json",
       "role": "asset",
       "required": true,
-      "sha256": "f77dc56a0818d73ee6be5cf779fbcf67fea0676c698ce6146f435279c4866611"
+      "sha256": "c7f1e43f09931d871414efda9e095767d72f2ebe374db6b988f225301b097a2c"
     },
     {
       "path": "visual/assets/public-handover-table-3d.json",
@@ -864,7 +898,7 @@
       {
         "asset_class": "structured",
         "label_zh": "结构化文件",
-        "count": 11,
+        "count": 14,
         "rights_holder": "package_participants",
         "production_method_zh": "人工编写，脚本校验",
         "licence_text_location": "manifest.json#license.author_grant_zh",
@@ -876,7 +910,7 @@
         "label_zh": "离线网页",
         "count": 2,
         "rights_holder": "package_participants",
-        "production_method_zh": "由 proposal.md 渲染加手写版式",
+        "production_method_zh": "由 proposal.md 渲染两份视觉总览，并把 P0 可操作离线原型内嵌进正式中文总览",
         "licence_text_location": "manifest.json#license.author_grant_zh",
         "third_party_content_zh": "仅引用包内 Noto CJK WOFF2 字符子集；无网络请求或其他外部资源",
         "verification_zh": "断网打开 + webfont-audit.js + sha256"
@@ -914,8 +948,8 @@
       }
     ],
     "hash_coverage": {
-      "files_declared": 95,
-      "files_with_sha256": 94,
+      "files_declared": 102,
+      "files_with_sha256": 101,
       "note_zh": "manifest.json 自身不自哈希，因此带 sha256 的条目数比声明条目数少 1。"
     }
   }

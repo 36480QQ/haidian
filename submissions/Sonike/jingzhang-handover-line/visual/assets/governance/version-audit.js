@@ -246,6 +246,6 @@ const result = {
 };
 
 if (process.argv.includes("--json")) process.stdout.write(`${JSON.stringify(result, null, 2)}\n`);
-else if (result.ok) process.stdout.write("PASS  26 张图件、4 套 38 页 PDF、6 份静态载体及 A0 首页 4 张内嵌图统一为 PACKAGE v2.0\n");
+else if (result.ok) process.stdout.write(`PASS  26 张图件、4 套 38 页 PDF、${STATIC.length} 份静态载体及 A0 首页 4 张内嵌图统一为 PACKAGE v2.0\n`);
 else for (const error of errors) process.stderr.write(`FAIL  ${error}\n`);
 process.exit(result.ok ? 0 : 1);

@@ -129,7 +129,7 @@
       "status": "offline_tabletop_complete_field_authorisation_pending",
       "statement": "十二个AI场景已完成不连接真实服务的离线接管桌面演练；尚未获得场地、采购、经营或正式部署授权，也未进行现场或公众测试。",
       "impact": "数字状态机、角色接口和回滚顺序已有 12/12 场景、48/48 断言的可复算记录；它只证明协议可被逐条执行，不证明现场安全、无障碍、服务绩效或获批状态。",
-      "recalculation_trigger": "场地授权、交出与接入角色分别指派，并完成隐私、安全、无障碍和公共利益复核后，先在公开交接桌做 1 个现场演练，再决定是否扩展。",
+      "recalculation_trigger": "p0-delivery-contract.json 的八道进入门全部取得真实证据且由独立角色复核后，启动 SCN-05 单场景 90 天程序；D0 先验证人工底盘，D31—60 才开展至少 24 个真实任务场次，D90 独立决定继续、修复或终止。未全过不得扩展第二场景。",
       "affected_files": [
         "geometry/public_space.geojson",
         "simulation.json",
@@ -140,7 +140,16 @@
         "visual/assets/governance/shift-ledger-suite.json",
         "visual/assets/governance/role-spec.json",
         "visual/assets/governance/measurement-protocol.json",
-        "proposal.md"
+        "visual/assets/governance/p0-delivery-contract.json",
+        "visual/assets/governance/public-benefit-gate.json",
+        "visual/assets/governance/p0-readiness-audit.js",
+        "visual/index.html",
+        "visual/index.html",
+        "visual/index.en.html",
+        "proposal.md",
+        "proposal.en.md",
+        "report/proposal.html",
+        "report/proposal.en.html"
       ],
       "responsible_role": "R-SERVICE-OPS",
       "participant_controlled_evidence": "simulation.json：十二个场景的智能层关闭、人工接管、合成记录清零与回滚四项断言；12/12 任务成功，48/48 断言通过，现场演练 0/12。",
@@ -153,10 +162,10 @@
         "数据与档案责任类型",
         "设施维护与现场安全类型"
       ],
-      "resolution_evidence": "场地权利、角色指派、专业复核、至少三方询价、持续预算、维护与数据删除责任的书面确认，以及一次现场断电/停用/人工接管演练记录。",
-      "recalculation_scope": "先把首个现场场景的 receiver_disposition 与 smart_layer_state 由合成状态替换为经授权记录；现场演练由 0/12 变为 1/12 后复核，再决定是否扩展。",
+      "resolution_evidence": "八门真实证据索引、十项 RACI 签认、十二项构件三方同口径询价、保险与 90 天持续预算、消防交通市政及安全无障碍复核、至少 24 个匿名真实任务场次、八项预注册判据复算、失败—修复—复测、投诉/停用/删除回执和同日撤场恢复记录。",
+      "recalculation_scope": "先把 SCN-05 的角色、报价、预算、授权和 observed_value 从 unassigned/null/not_observed 替换为经授权记录；现场演练由 0/12 变为 1/12、真实观察由 0 变为实数后，逐项重跑服务等价与 P0 就绪审计，再由 D90 独立结论决定是否扩展。",
       "risk_statement_zh": "场景试点长期化、无法退出。",
-      "statement_zh": "。六个行动包的规模区间由提交几何直接推演（主轴 9.50 公里、二十个更新单元合计基底 221,014.099 ㎡、十二个场景节点为点状），资金量级只给「小额／中额」这类估算类别——**两者都不是预算承诺，也不是询价结果**；具体金额取决于权属、许可与规模确定后的实际条件，须由至少三方询价确定。"
+      "statement_zh": "。六个行动包的规模区间由提交几何直接推演（主轴 9.50 公里、二十个更新单元合计基底 221,014.099 ㎡、十二个场景节点为点状），资金量级只给「小额／中额」这类估算类别——**两者都不是预算承诺，也不是询价结果**。P0 已把十二项构件、三个空白报价槽和 90 天预算边界列清，但单价、总价、保险、持续预算与真实主体仍全部为 null/unassigned；具体金额须在授权后由至少三方同口径询价确定。"
     },
     {
       "id": "A-CASES-001",

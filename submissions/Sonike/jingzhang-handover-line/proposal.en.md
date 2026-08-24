@@ -196,6 +196,10 @@ Conceptual green space is approximately 226.5 ha and the public handover surface
 
 Eight user groups—researchers, founders, campus workers, residents, older people, disabled people, children and international visitors—are not averaged into one persona. The strict counterexample is someone without a smartphone, with limited mobility, unable to read Chinese and unwilling to be recorded by an algorithm. They must still reach a staffed counter by fixed wayfinding, receive the same basic service and lodge an objection. If that route fails, the smart layer does not open.
 
+**Public benefit is now the third entry condition, not a bonus added after delivery.** The first pass asks whether a proposal is worth doing; the second asks whether it can be safely taken over; the third asks whether benefit actually reaches people, burdens are distributed fairly and service survives refusal. `visual/assets/governance/public-benefit-gate.json` binds the six groups named by the rubric—residents, youth talent, enterprises, universities, visitors and marginalized groups—to a public value, a no-AI entrance and evidence still to collect. It then gives every SCN-01—12 a hard gate covering public benefit, harm to avoid, safeguards, shutdown and what remains after the technology is removed [metric:public_benefit_group_count] [metric:scenario_public_benefit_gate_count].
+
+The first rule is that **public life precedes technology display**. Ordinary passage, free seating, shade, low-glare and low-noise space, safety for children, older and disabled people, device-free access, no mandatory face recognition, human responsibility, appeal and minimum data all outrank demonstration traffic. The safeguards are scenario-specific: care scheduling must not diagnose or automatically deny service; rights-related translation requires human checking; night lighting cannot trade faces or over-lighting for safety; oral history cannot invent facts or synthetic personal quotations; Global Handover Week cannot displace everyday public space with tickets, consumption, marketing barriers or leftover structures. A technically impressive service still fails when this public floor fails.
+
 **The public-service equivalence contract turns that floor into auditable tasks rather than leaving “inclusion” as an adjective.** `visual/assets/governance/public-service-equivalence-contract.json` binds SCN-01—12 to a no-AI base route and two human channels that must exist before the smart layer. All 12/12 require no personal device, and refusing the smart service must not lower the basic service level. The design targets the same core outcome, queue priority, zero price premium and the same basic safety information [metric:no_ai_equivalent_scenario_count] [metric:no_ai_equivalent_service_target_ratio] [metric:algorithm_refusal_no_penalty_scenario_count].
 
 | Eight requirement fixtures | Base route that must coexist | Failure action |
@@ -209,17 +213,21 @@ Eight user groups—researchers, founders, campus workers, residents, older peop
 | No smartphone / no app | Fixed wayfinding + staffed counter + paper, phone or shift log | Close the smart layer if any step mandates a phone, app, scan or personal account |
 | Algorithm / optional-data refusal | Human decision + minimal record + appeal, deletion or stop receipt | Close the smart layer if refusal causes delay, added price, less safety information or no core result |
 
-These are currently **8/8 design requirement fixtures, not eight user tests**. Real-participant observations are **0** and observed passes are **0**; every human channel remains `not_observed` [metric:accessibility_requirement_fixture_task_count] [metric:accessibility_requirement_fixture_coverage_ratio] [metric:real_user_accessibility_observation_count]. The contract freezes future tasks, required evidence and fail-closed actions. After site authorisation, accessibility professionals must lead real tasks and replace fixtures one by one with observations; a machine-audit PASS cannot be relabelled as real usability.
+These are currently **8/8 design requirement fixtures, not eight user tests**. Real-participant observations are **0** and observed passes are **0**; every human channel remains `not_observed` [metric:accessibility_requirement_fixture_task_count] [metric:accessibility_requirement_fixture_coverage_ratio] [metric:real_user_accessibility_observation_count]. Authorised co-testing is pre-registered for at least **24 task sessions**: all six rubric groups must leave task evidence and at least eight sessions must cover nonvisual/low-vision, mobility, cognitive-load, non-Chinese, device-free or algorithm-refusal needs. Fixed compensation, reasonable accommodation, no penalty for failure, withdrawal and anonymous records are recruitment floors [metric:planned_equity_cotest_session_min_count]. Twenty-four is a future minimum; **the completed count is still zero**. Accessibility professionals must lead the real tasks and replace fixtures one by one with observations; a machine-audit PASS cannot be relabelled as real usability.
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
 ### P0 Delivery | Assemble One Table Before Deciding to Build a Line
 
-The first field prototype is not a building. It is a **Public Handover Table** using an S-class cost basis and six movable component groups: staffed counter, no-AI material, visible stop point, objection/exit information, dual-control shift ledger and fixed accessible route. Components, responsibilities and acceptance chain appear in `assets/figures/metrics-evidence.en.png`.
+The first field prototype is not a building. It is a **Public Handover Table**. This iteration no longer merely draws it: `visual/index.html#p0-prototype` embeds an operable offline SCN-05 service prototype in the official review entry. A reviewer can switch off the smart layer, refuse algorithmic processing and data, enable large text or high contrast, compare smart and no-AI routes, issue a complaint/stop/delete receipt and print the paper route. Both routes share the `SCN-05-CORE-001` outcome; the page has no network, persistence or personal-data field [metric:offline_service_prototype_route_count]. It proves that service obligations are operable, not that a field route is safe or accessible.
 
-![P0 Public Handover Table: six component groups, six condition gates, offline evidence and an explicit field 0/12 boundary](assets/figures/metrics-evidence.en.png)
+The kit retains an S-class cost basis. F/05 shows the original six macro component and delivery families; `visual/assets/governance/p0-delivery-contract.json` now develops them into **12 quantified component lines, eight entry gates and ten RACI work packages** [metric:p0_component_line_item_count] [metric:p0_entry_gate_count] [metric:p0_raci_work_package_count].
 
-#### Six Gates Before Authorisation
+The same contract pre-registers **five 90-day stages and eight acceptance criteria** [metric:p0_delivery_stage_count] [metric:p0_preregistered_acceptance_criterion_count]. Roles resolve to `role-spec.json` but remain `unassigned`. Three quote slots, insurance, total and sustained budgets, site and professional sign-offs remain `null` or `not_started` until real evidence exists; completeness of the form is not presented as delivery.
+
+![P0 Public Handover Table: six original macro delivery groups, offline evidence and field 0/12, now developed through eight entry gates](assets/figures/metrics-evidence.en.png)
+
+#### Eight Gates Before Authorisation
 
 | Gate | Required evidence | If the gate fails |
 | --- | --- | --- |
@@ -229,6 +237,8 @@ The first field prototype is not a building. It is a **Public Handover Table** u
 | Insurance and maintenance | Coverage, maintenance role and continuing budget | Do not assemble, or remove the same day |
 | Data | Minimisation, synthetic fixtures, deletion and retention rule | Do not collect identifiable information |
 | Cost | Three quotations or equivalent evidence, itemised by component | Keep the S-class basis; do not extrapolate total investment |
+| Fire, movement and utilities | Egress/rescue, wheelchair and active-mobility continuity, power/communications/drainage and protected temporary cabling | Do not open to the public; use existing safe staffed facilities only |
+| Co-testing, consent and accommodation | Six-group recruitment, informed consent, fixed compensation, reasonable accommodation and failure–repair–retest record | Make no verified-inclusion claim; keep the smart layer off |
 
 #### Seven Work Steps for One P0
 
@@ -240,7 +250,9 @@ The first field prototype is not a building. It is a **Public Handover Table** u
 6. Switch off the smart layer and test whether the same task can be completed through the human route.
 7. Remove the prototype the same day; verify temporary-record deletion, continuation of basic service and restoration of the surface.
 
-This is a **reference workflow ready for professional development after authorisation**, not a record of completed field work. Only the 12/12 digital tabletop and participant-run rule injection have been completed. Field tasks remain 0/12 [assumption:A-OPERATIONS-001].
+This is a **reference workflow ready for signature and evidence entry after authorisation**, not a record of completed field work. P0 permits only SCN-05 and follows `PRE-D0 → D0 → D1–30 → D31–60 → D61–90`: the clock does not start until all eight gates pass; D0 proves the staffed floor alone; the first 30 days rehearse failures; days 31–60 allow at least 24 real task sessions only after authorisation, consent and accommodation; days 61–90 end in an independent continue / repair / terminate decision. A second scenario cannot open before all hard gates pass.
+
+The eight criteria do not hide inequity inside satisfaction averages. Core outcome and essential safety information must align 100%; queue difference and price premium after refusal must both be zero; the no-AI success rate may not trail the smart route by more than 10 percentage points; the median completion-time ratio must be at most 1.5 overall and 2.0 for every required group; every complaint/stop/delete request must receive a receipt; and all eight essential accessibility tasks require both real tasks and professional review. These are **pre-registered rules, not observed results**. Every `observed_value` remains `null`, and field tasks remain 0/12 [assumption:A-OPERATIONS-001].
 
 ### Phasing and Operations | Open Gates with Evidence, Not Calendar Promises
 
@@ -248,7 +260,7 @@ The three phases are not a government schedule. They are reversible condition ga
 
 | Stage | Spatial move | Conditions to proceed | Rollback after failure |
 | --- | --- | --- | --- |
-| PHASE-01 Return the baseline | Southern staffed-service base + one P0 Public Handover Table | Six field gates, basic layer works alone, safety and accessibility pass | Remove smart components; keep ordinary public service |
+| PHASE-01 Return the baseline | Southern staffed-service base + one P0 Public Handover Table | Eight entry gates, basic layer works alone, safety and accessibility pass | Remove smart components; keep ordinary public service |
 | PHASE-02 Open relay | Middle handover cross + Open Handover Yard | Cross-organisation reproduction, community agreement, maintenance budget and ownership boundary | Contract to one table or one scenario |
 | PHASE-03 Operate the line | Northern Build Yard + full-line coordination | Transport, utilities, fire, heritage, privacy and continuing operations pass professional review | Keep only verified segments; do not expand |
 
@@ -260,7 +272,7 @@ International communication uses one identity—**HANDOVER LINE**. A visitor enc
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-`metrics.json` contains **77 metrics, 63 of them valued, 14 pending**. The 63 valued metrics derive from GeoJSON, synthetic rehearsals, design contracts or machine checks. “8/8 requirement fixtures” and “zero real observations” separately record design coverage and the evidence boundary; they are never merged into a user-test pass. Pending items include statutory intensity, real handover time, rework rounds, public acceptance, field accessibility and operational effect; none is filled by inference [depth:metrics_recalculation].
+`metrics.json` contains **86 metrics, 72 of them valued, 14 pending**. The 72 valued metrics derive from GeoJSON, synthetic rehearsals, design contracts or machine checks. Nine new entries count only P0 gates, stages, RACI, components, acceptance criteria, groups, scenario public-benefit gates, offline routes and the planned co-test minimum; none claims real delivery. “8/8 requirement fixtures”, “24 planned sessions” and “zero real observations” remain distinct design-coverage, future-sampling and evidence-boundary values. Pending items include statutory intensity, real handover time, rework rounds, public acceptance, field accessibility and operational effect; none is filled by inference [depth:metrics_recalculation].
 
 | Observation layer | Current verifiable value | Correct reading |
 | --- | ---: | --- |
