@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v1.5 - 2026-08-24
+
+### Web-first brand placement
+
+- Added the existing cleared AI LINE 1 standard mark to the top of the Chinese and English HTML hero sections.
+- Used responsive sizing and package-local assets only; no image was regenerated and no new external resource was introduced.
+
 ## v1.4 - 2026-08-24
 
 ### Frozen evaluated scope
