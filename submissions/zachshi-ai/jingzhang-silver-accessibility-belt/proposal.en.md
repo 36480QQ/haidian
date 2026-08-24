@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Re-imagining the Jingzhang Railway Heritage Park as a 'silver-age service spine' for the elderly communities along the corridor: an AI-assisted public-service belt covering elderly medical visits, civic errands and barrier-free mobility. The proposal sets out the 'Jingzhang Silver-Age Accessibility Belt' concept, linking three key areas and沿线 communities, hospitals, civic-service points and metro entrances via a ~9 km continuous barrier-free slow-mobility spine, with 10 AI elderly-service scenario cards (incl. 3 test/validation scenarios), 5 elderly personas, 3 warmth landmarks, 8 elderly-use land types and 7 silver service nodes — an experienceable, replicable and iterable concept for elderly-friendly barrier-free smart services."
 tracks: ["ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v6.0"
+iteration: "v9.0"
 ---
 
 # Jingzhang Silver-Age Accessibility Belt: AI-Assisted Medical, Civic and Barrier-Free Mobility Services for the Elderly
@@ -71,6 +71,15 @@ The silver synergy loop: Zhongzhiyuan handles elderly-AI-tech verification and r
 ### External Regional Synergy
 
 The belt coordinates with Haidian's existing public-service system: northward toward Qinghe/Shangdi mixed industry-residential elderly medical demand; southward toward the Xizhimenwai medical/civic dense belt; eastward toward the Xueyuanlu university belt for volunteers, social workers and elderly-tech R&D; westward toward the Xiaoyuehe green belt to extend barrier-free recreational slow mobility. This synergy is a concept research lens only, not a cross-regional administrative arrangement or government commitment.
+
+### Interlock with Sibling Proposals on the Same Corridor (v9)
+
+The meaning of connection is "never leaving elders alone on any road." Four sibling proposals on the same Jingzhang heritage corridor (submitted by the same author) interlock with this proposal in space and mechanism; the following are design-coordination proposals, subject to each party's detailed design [E:SILVER-CROSS-INTERLOCK]:
+
+- **With robot-comobility (Cross-Section Grammar × Co-Mobility Signaling)**: the intergenerational connection stations are proposed to sit adjacent to or share sites with the delivery hubs — while an elder picks up medicine at a hub's staffed window, the connection station's face-to-face benches host intergenerational exchange during the wait; robots carry the loads, people carry the company.
+- **With heritage-spine (Ren-Track × three conservation principles)**: the stations' "cultural mutual-teaching counters" use heritage memory as material — elders tell Jingzhang stories while young people teach digital tools; heritage narrative turns "the taught" elders into "the teaching" elders, making elderly service a two-way connection.
+- **With civic-data-commons (Data Receipt × Data Timetable)**: health and mobility data involved in elderly services are proposed to follow the data-receipt rules — elders and their families have the right to know where their data went; the timetable stations' public screens come in large-print, elder-readable versions.
+- **With ai-civic-services (Three-Guarantees-One-Verification × accountability spaces)**: elderly civic services connect to the accountability stands — stands keep staffed windows and large-print paper accountability cards, so elders who do not use smartphones equally receive a receipt with a named human behind it.
 
 ### Global Elderly-City & AI-Elderly-Service Case Studies
 
