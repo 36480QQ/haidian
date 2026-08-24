@@ -7,7 +7,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "FTA GROUP proposes GLOBAL AI FRONTLINE: a Distributed Innovation Network connects the three areas and two wings; the Three Passes move AI innovation from origination through standards validation to urban application; the Five Highs decide project priority; and Super Innovation Elements host space and operation. Its three original contributions are to turn parallel districts into one innovation production chain, diagnosis into entry-and-exit decisions, and an abstract ecosystem into a phased and reviewable urban engine."
-iteration: "v0.6-champion-review-navigation"
+iteration: "v1.3-formal-review-closure"
 ---
 
 # GLOBAL AI FRONTLINE | AI LINE 1
@@ -46,6 +46,20 @@ A century ago, the Jing-Zhang Railway demonstrated engineering autonomy through 
 | agent.4 Public space and landmarks | Public innovation spine, Super Innovation Elements and three updatable landmarks | Public-space layer, developer route and contribution display |
 | agent.5 Cultural narrative | Railway autonomy, Zhongguancun innovation and new AI culture | Cultural route, public nodes and renewable content |
 | agent.6 Global events and operation | Annual Five Highs review and diagnosis–strategy–design–operation–investment feedback | Events, developer community, scenario opening and conversion |
+
+### Formal-review closure: current submission vs downstream implementation triggers
+
+All four trusted gates pass for this version. The table separates **participant-controlled duties that can be closed in the current submission** from **sign-offs triggered only by authoritative data or a real pilot**. The latter remain data gaps or implementation hard gates, not unrepaired submission content. Until a trigger is satisfied, the proposal does not present it as authorization, measured performance, or a government decision.
+
+| Review concern | Evidence closed in the current package | Current status | Downstream trigger |
+|---|---|---|---|
+| Provisional geometry and concept status | Narrative, HTML, A0/A3, captions, `assumptions.json`, and `risk.json` retain prominent limitations | **Disclosure complete; no current repair** | Once an authoritative polygon or control data is issued, replace dependent layers as a whole and recalculate every bilingual metric and drawing |
+| 90-day authorization and accountability | 施道红 is FTA's single internal lead/signatory; every pilot has a hard gate prohibiting start until authorization, budget, insurance, equipment/data inventories, and professional opinions are signed | **Internal accountability confirmed; no external authority claimed** | Site, road, and other competent parties complete project-level sign-off before real launch |
+| Asset, copyright, and source governance | All current images, fonts, marks, sources, and toolchain dependencies are registered in `manifest.json`, `sources.json`, and the copyright statement | **Current register complete** | Any future asset addition or replacement must add authorship, tool, licence, allowed/prohibited uses, and authorization evidence |
+| Preregistered thresholds vs measured results | All three 90-day protocols label samples, pass lines, and stop lines as preregistered; no T0, D30, D60, or D90 performance is claimed | **Concept protocol complete; no measured-result claim** | After an authorized launch, record baseline and retests without back-fitting thresholds to outcomes |
+| FTA delivery resources and authority | Four-person full-cycle participation, mobilized specialists, internal professional resources, and signable outputs are recorded; external costs and powers are excluded | **Participant commitment complete** | Construction, operations, procurement, insurance, and third-party cooperation require separate project authority |
+
+The current formal package therefore has no unresolved participant-controlled file, bilingual, visual, source, or professional-evidence repair. Formal geometry, real-pilot activation, and future asset changes are downstream trigger events; until they occur, their status remains “pending / do not start / do not convert into statutory metrics.”
 
 ### The Three Passes across the three areas and two wings
 

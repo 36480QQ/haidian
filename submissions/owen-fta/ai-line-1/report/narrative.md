@@ -4,6 +4,12 @@
 
 证据来源｜Evidence sources：`FTA-APPLICANT-TEAM-20260508`、`FTA-DELIVERY-COMMITMENT-20260824`。原始申请人介绍PPT为参与方提供的非公开参考文件，不进入公开成果包。
 
+## 当前正式评审闭环
+
+当前成果包的确定性、空间、视觉和专业证据四项可信门禁均已通过。临时几何的显著说明、正式数据发布后的全链复算、90天试点启动硬门、资产来源台账以及“预注册阈值不等于实测结果”的区分均已写入中英文正文和对应成果。它们在当前投稿阶段不存在待修复项；正式数据发布、真实试点启动或未来资产变更时才触发下一轮签认与复核。
+
+The deterministic, spatial, visual, and professional-evidence gates all pass. Provisional-geometry warnings, full-chain recalculation, pilot launch gates, asset provenance, and the separation of preregistered thresholds from measured results are already documented in both languages. They are closed for the current submission and reopen only when authoritative data, a real pilot, or a future asset change triggers project-level review.
+
 ## 参赛主体与拟派负责人
 
 | 字段 | 已确认内容 | 状态边界 |

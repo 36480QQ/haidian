@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v1.3 - 2026-08-24
+
+### Formal-review closure
+
+- Converted the five advisory lifecycle conditions into a bilingual current-stage-versus-trigger evidence table.
+- Confirmed that provisional-geometry warnings, full-chain recalculation, pilot hard gates, asset provenance, and preregistration/result separation are already closed for the present submission.
+- Preserved every external authorization exclusion; no site, road, government, operator, insurance, funding, or third-party commitment was invented.
+
 ## v1.2 - 2026-08-24
 
 ### Champion-board and governance pass
