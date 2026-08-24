@@ -40,7 +40,8 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。"
+      "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。",
+      "license": "public-information-notice"
     },
     {
       "source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
@@ -84,7 +85,8 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "该资料更贴近 AI agent 任务要求，可作为方案任务响应依据，但不是官方空间红线或控规条件。"
+      "notes_zh": "该资料更贴近 AI agent 任务要求，可作为方案任务响应依据，但不是官方空间红线或控规条件。",
+      "license": "cleared-user-document"
     },
     {
       "source_id": "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
@@ -119,7 +121,8 @@
       "local_paths": [
         "brief/site-package/standards/references/mohurd-urban-design-measures.md"
       ],
-      "notes_zh": "可作为专业标准响应依据。"
+      "notes_zh": "可作为专业标准响应依据。",
+      "license": "public-information-notice"
     },
     {
       "source_id": "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
@@ -152,7 +155,8 @@
       "local_paths": [
         "brief/site-package/standards/references/mohurd-control-detailed-planning.md"
       ],
-      "notes_zh": "可要求 agent 区分已知控制与待补控制。"
+      "notes_zh": "可要求 agent 区分已知控制与待补控制。",
+      "license": "public-information-notice"
     },
     {
       "source_id": "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
@@ -184,7 +188,8 @@
       "local_paths": [
         "brief/site-package/standards/references/mnr-land-use-classification-guide.md"
       ],
-      "notes_zh": "可用于统一 land_use_code 语义。"
+      "notes_zh": "可用于统一 land_use_code 语义。",
+      "license": "public-information-notice"
     },
     {
       "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
@@ -232,7 +237,8 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "该 geometry 由维护者依据官方公告的文字四至、位置线索和约面积推定，并在 EPSG:4548 下校核；它提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。2026-08-07 复核时，征集组织机构的资格预审文件下载仍受密码保护，公开渠道未找到可验证坐标系的精确红线。"
+      "notes_zh": "该 geometry 由维护者依据官方公告的文字四至、位置线索和约面积推定，并在 EPSG:4548 下校核；它提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。2026-08-07 复核时，征集组织机构的资格预审文件下载仍受密码保护，公开渠道未找到可验证坐标系的精确红线。",
+      "license": "provisional-repository-data"
     },
     {
       "source_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
@@ -269,7 +275,8 @@
       "local_paths": [
         "brief/site-package/standards/references/generative-ai-interim-measures.md"
       ],
-      "notes_zh": "官方页面标注 2023-07-13 发布、2023-08-15 施行；第2条适用范围是向境内公众提供生成文本、图片、音频、视频等内容的生成式人工智能服务。第14条是违法内容与服务处置，不是一般用户退出权；第15条有投诉举报和及时处理要求，但没有法定数字响应期限；第17条安全评估、备案等表述仅针对具有舆论属性或社会动员能力的服务。快照仅供离线检索，正式引用仍以官方页面为准。"
+      "notes_zh": "官方页面标注 2023-07-13 发布、2023-08-15 施行；第2条适用范围是向境内公众提供生成文本、图片、音频、视频等内容的生成式人工智能服务。第14条是违法内容与服务处置，不是一般用户退出权；第15条有投诉举报和及时处理要求，但没有法定数字响应期限；第17条安全评估、备案等表述仅针对具有舆论属性或社会动员能力的服务。快照仅供离线检索，正式引用仍以官方页面为准。",
+      "license": "public-information-notice"
     },
     {
       "source_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
@@ -303,7 +310,8 @@
       "local_paths": [
         "brief/site-package/standards/references/barrier-free-environment-law.md"
       ],
-      "notes_zh": "法律于 2023-06-28 通过（人大常委会通过/公布），gov.cn/Xinhua 页面于 2023-06-29 发布；2023-09-01 起施行。第39条的现场指导、人工办理边界仅限正文列举的医疗、社会保障、金融、生活缴费等服务事项公共服务场所，不能泛化为所有公共空间或数字界面。快照仅供离线检索，具体场所合规仍需单独判断。"
+      "notes_zh": "法律于 2023-06-28 通过（人大常委会通过/公布），gov.cn/Xinhua 页面于 2023-06-29 发布；2023-09-01 起施行。第39条的现场指导、人工办理边界仅限正文列举的医疗、社会保障、金融、生活缴费等服务事项公共服务场所，不能泛化为所有公共空间或数字界面。快照仅供离线检索，具体场所合规仍需单独判断。",
+      "license": "public-information-notice"
     },
     {
       "source_id": "PACKAGE-GEOMETRY",
@@ -337,7 +345,448 @@
         "generator": "deepseek-v4-flash via DeepSeek Harness + deterministic build script",
         "generation_method": "concept prompting + geometry program",
         "limitations": "low confidence conceptual envelopes"
-      }
+      },
+      "license": "self-generated-original"
+    },
+    {
+      "source_id": "GLOBAL-CASE-BARCELONA-SUPERILLES",
+      "title": "Barcelona Superilles (Superblocks) Programme",
+      "publisher": "Ajuntament de Barcelona (Barcelona City Council)",
+      "source_kind": "public_reference_case",
+      "url": "https://ajuntament.barcelona.cat/pla-superilles/en",
+      "published_date": "2016",
+      "accessed_date": "2026-08-24",
+      "file_type": "web",
+      "authority_level": "PUBLISHER-LEVEL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public-information-notice",
+      "license_summary": "Publisher-level city council publications cited for factual case scope only; no reuse of city imagery implied.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "case facts - slow-traffic cells and public-space redistribution mechanism"
+      ],
+      "prohibited_uses": [
+        "claiming the mechanism applies to the subject site as an approved scheme",
+        "reuse of Barcelona city logo or imagery"
+      ],
+      "topics": [
+        "global_case",
+        "slow_traffic",
+        "public_space_reallocation"
+      ],
+      "notes_zh": "巴塞罗那超级街区(2016起)将九宫格街区单元交通降级并再分配公共空间；本方案仅作机制参照，不构成对本站点的实施结论。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-HELSINKI-KALASATAMA",
+      "title": "Smart Kalasatama agile piloting and open-data district",
+      "publisher": "Forum Virium Helsinki / City of Helsinki",
+      "source_kind": "public_reference_case",
+      "url": "https://forumvirium.fi/en/projects/smart-kalasatama/",
+      "published_date": "2013",
+      "accessed_date": "2026-08-24",
+      "file_type": "web",
+      "authority_level": "PUBLISHER-LEVEL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public-information-notice",
+      "license_summary": "Publisher-level project materials cited for factual mechanism scope only.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "case facts - one-year agile piloting with residents and open data"
+      ],
+      "prohibited_uses": [
+        "implying the City of Helsinki endorses this proposal",
+        "reuse of project imagery"
+      ],
+      "topics": [
+        "global_case",
+        "agile_piloting",
+        "open_data",
+        "resident_co_creation"
+      ],
+      "notes_zh": "赫尔辛基卡拉萨塔马以'一年试点'与开放数据著称；本方案借鉴其'试点—评估—扩展或退出'闭环，仅作概念参照。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-TORONTO-SIDEWALK",
+      "title": "Sidewalk Toronto (Quayside) smart-district pilot and its termination",
+      "publisher": "Waterfront Toronto / Sidewalk Labs",
+      "source_kind": "public_reference_case",
+      "url": "https://www.waterfrontoronto.ca/nba/waterfront-projects/quayside",
+      "published_date": "2017",
+      "accessed_date": "2026-08-24",
+      "file_type": "web",
+      "authority_level": "PUBLISHER-LEVEL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public-information-notice",
+      "license_summary": "Publisher-level public statements cited for factual scope (project start 2017, termination 2020).",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "case facts - public data governance framework, community participation charter, termination mechanism"
+      ],
+      "prohibited_uses": [
+        "inferring any shared data-governance conclusion for this site",
+        "reuse of company logos or imagery"
+      ],
+      "topics": [
+        "global_case",
+        "data_governance",
+        "community_participation",
+        "exit_mechanism"
+      ],
+      "notes_zh": "码头区项目2020年终止；本方案以'终止机制本身亦为样本'提示数据治理与社区共识的必要性，不作背书。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-SINGAPORE-PDD",
+      "title": "Punggol Digital District open digital platform and district facilities",
+      "publisher": "JTC Corporation",
+      "source_kind": "public_reference_case",
+      "url": "https://www.jtc.gov.sg/about-jtc/our-role/developing-business-parks/punggol-digital-district",
+      "published_date": "2018",
+      "accessed_date": "2026-08-24",
+      "file_type": "web",
+      "authority_level": "PUBLISHER-LEVEL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public-information-notice",
+      "license_summary": "Publisher-level JTC materials cited for factual mechanism scope only.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "case facts - open digital platform, district cooling, shared facilities, integrated district operation"
+      ],
+      "prohibited_uses": [
+        "claiming JTC partnership or endorsement",
+        "reuse of JTC imagery"
+      ],
+      "topics": [
+        "global_case",
+        "open_digital_platform",
+        "district_infrastructure"
+      ],
+      "notes_zh": "榜鹅数码园区由JTC与IMDA主导，以开放数字平台与集中式设施著称；本方案仅取其'园区级集成运营'与'开放数字平台'两项机制概念。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-SONGOOD-IBD",
+      "title": "Songdo International Business District (U-City integration)",
+      "publisher": "Songdo IBD / Gale International",
+      "source_kind": "public_reference_case",
+      "url": "https://www.songdo.com/",
+      "published_date": "2005",
+      "accessed_date": "2026-08-24",
+      "file_type": "web",
+      "authority_level": "PUBLISHER-LEVEL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public-information-notice",
+      "license_summary": "Publisher-level district materials cited for factual mechanism scope only.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "case facts - city-level integrated operations, centralized utility corridors, underground logistics concepts"
+      ],
+      "prohibited_uses": [
+        "implying Songdo partnership",
+        "reuse of district imagery"
+      ],
+      "topics": [
+        "global_case",
+        "integrated_operations",
+        "utility_corridor"
+      ],
+      "notes_zh": "松岛IBD以城市级集成运营中心著称；本方案仅参照其'集中管廊与集成运营'的技术组织思路。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-AMSTERDAM-SC",
+      "title": "Amsterdam Smart City living labs and open-data alliance",
+      "publisher": "Amsterdam Smart City alliance",
+      "source_kind": "public_reference_case",
+      "url": "https://amsterdamsmartcity.com/",
+      "published_date": "2009",
+      "accessed_date": "2026-08-24",
+      "file_type": "web",
+      "authority_level": "PUBLISHER-LEVEL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public-information-notice",
+      "license_summary": "Publisher-level alliance materials cited for factual mechanism scope only.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "case facts - urban living labs, open data, circular district pilots, multi-party alliance"
+      ],
+      "prohibited_uses": [
+        "implying Amsterdam Smart City endorsement",
+        "reuse of alliance imagery"
+      ],
+      "topics": [
+        "global_case",
+        "living_lab",
+        "open_data",
+        "alliance_governance"
+      ],
+      "notes_zh": "阿姆斯特丹智慧城市联盟以多方合作的'生活实验室'著称；本方案'开发者社区+开放运营'机制参照其联盟治理思路。"
+    },
+    {
+      "source_id": "GLOBAL-CASE-COPENHAGEN-NORDHAVN",
+      "title": "Nordhavn data-driven district energy and phased waterfront renewal",
+      "publisher": "By & Havn / City of Copenhagen",
+      "source_kind": "public_reference_case",
+      "url": "https://www.nordhavnen.dk/",
+      "published_date": "2009",
+      "accessed_date": "2026-08-24",
+      "file_type": "web",
+      "authority_level": "PUBLISHER-LEVEL",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public-information-notice",
+      "license_summary": "Publisher-level district materials cited for factual mechanism scope only.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "case facts - data-driven district energy (EnergyLab Nordhavn), phased waterfront renewal"
+      ],
+      "prohibited_uses": [
+        "implying City of Copenhagen endorsement",
+        "reuse of district imagery"
+      ],
+      "topics": [
+        "global_case",
+        "district_energy",
+        "phased_renewal"
+      ],
+      "notes_zh": "哥本哈根诺德港以数据驱动区域能源与渐进式滨水更新著称；本方案'智慧市政+分期实施'机制参照其路径。"
+    },
+    {
+      "source_id": "ASSET-FONT-NOTO-SANS-SC",
+      "title": "Noto Sans SC (OFL-1.1) used for figures, logo and embedded HTML typeface",
+      "publisher": "Google / Noto Project (OFL-1.1)",
+      "source_kind": "asset_ledger",
+      "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+      "published_date": null,
+      "accessed_date": "2026-08-25",
+      "file_type": "font",
+      "authority_level": "LICENSE-DECLARED",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "OFL-1.1",
+      "license_summary": "SIL Open Font License 1.1: free to use, embed, subset and redistribute with license notice; no endorsement implied.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "text rendering in figures, logo, HTML reports and visual pages",
+        "subsetting and base64 embedding into offline HTML"
+      ],
+      "prohibited_uses": [
+        "claiming Noto as this proposal's original work",
+        "removing OFL-1.1 license notice in redistributed font files"
+      ],
+      "topics": [
+        "asset",
+        "font",
+        "license"
+      ],
+      "local_paths": [
+        "assets/figures/*.png",
+        "report/proposal.html",
+        "report/proposal.en.html",
+        "visual/index.html",
+        "visual/index.en.html"
+      ],
+      "notes_zh": "本包全部4个最终HTML以内嵌子集字型(Noto Sans SC, OFL-1.1)提供无缺字回退；子集由参与方从OFL-1.1源字体裁剪生成,保留许可声明。"
+    },
+    {
+      "source_id": "ASSET-LOGO",
+      "title": "JINGZHI Avenue brand logo (original generated asset)",
+      "publisher": "JohnXu22786 / dsh-haidian-agent",
+      "source_kind": "agent_generated_design",
+      "url": "assets/figures/logo.png",
+      "published_date": "2026-08-25",
+      "accessed_date": "2026-08-25",
+      "file_type": "png",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "self-generated-original",
+      "license_summary": "Self-drawn original mark generated by the participant; free for repository display under COMMUNITY-DISPLAY-ONLY scope.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "provisional_only",
+      "allowed_uses": [
+        "concept branding display in this submission",
+        "VI discussion by professional teams"
+      ],
+      "prohibited_uses": [
+        "trademark registration based on this concept mark",
+        "commercial use outside COMMUNITY-DISPLAY-ONLY scope"
+      ],
+      "topics": [
+        "asset",
+        "logo",
+        "brand"
+      ],
+      "provenance": {
+        "generator": "deepseek-v4-flash via DeepSeek Harness + PIL/Noto Sans SC",
+        "generation_method": "vector-style drawing on OFL-1.1 typeface",
+        "limitations": "concept mark, not a registered trademark"
+      },
+      "notes_zh": "Logo为参与方自绘原始生成资产,字族基于OFL-1.1 Noto Sans SC;英文对应版见 logo.en.png。"
+    },
+    {
+      "source_id": "ASSET-FIGURES",
+      "title": "All proposal figures (original generated renderings)",
+      "publisher": "JohnXu22786 / dsh-haidian-agent",
+      "source_kind": "agent_generated_design",
+      "url": "assets/figures/",
+      "published_date": "2026-08-25",
+      "accessed_date": "2026-08-25",
+      "file_type": "png",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "self-generated-original",
+      "license_summary": "Original renderings by the participant from package geometry/metrics; free for repository display.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "provisional_only",
+      "allowed_uses": [
+        "proposal and visual display",
+        "bilingual zh/en rendering"
+      ],
+      "prohibited_uses": [
+        "redistribution as third-party work",
+        "commercial use outside COMMUNITY-DISPLAY-ONLY scope"
+      ],
+      "topics": [
+        "asset",
+        "figures"
+      ],
+      "notes_zh": "全部图件由参与方基于本包真实geojson/metrics绘制,含zh/en双语版本。"
+    },
+    {
+      "source_id": "ASSET-MAPS-BASELINE",
+      "title": "Schematic base maps and street/station references",
+      "publisher": "JohnXu22786 / dsh-haidian-agent",
+      "source_kind": "agent_generated_design",
+      "url": "assets/figures/",
+      "published_date": "2026-08-25",
+      "accessed_date": "2026-08-25",
+      "file_type": "png",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "self-generated-original",
+      "license_summary": "Self-drawn schematic base derived from publicly verifiable geographic references; no proprietary map tiles or street-view imagery copied.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "provisional_only",
+      "allowed_uses": [
+        "conceptual site context display",
+        "publicly verifiable street/station name referencing (Zhichun Road Station, Xueyuan Road Station, Zhongguancun Avenue)"
+      ],
+      "prohibited_uses": [
+        "claiming official survey accuracy",
+        "copying proprietary map or street-view products",
+        "statutory red-line or engineering conclusions"
+      ],
+      "topics": [
+        "asset",
+        "base_map",
+        "reference"
+      ],
+      "notes_zh": "底图全部自绘,街道与站点仅作公开可核验的参照名;不复制任何商业地图或街景产品。"
+    },
+    {
+      "source_id": "ASSET-HTML-PDF-CODE",
+      "title": "HTML reports, drawing PDFs, manifest and generation code",
+      "publisher": "JohnXu22786 / dsh-haidian-agent",
+      "source_kind": "agent_generated_design",
+      "url": "report/, drawings/, visual/, *.json",
+      "published_date": "2026-08-25",
+      "accessed_date": "2026-08-25",
+      "file_type": "mixed",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "self-generated-original",
+      "license_summary": "Original generated deliverables; display permitted within this repository's COMMUNITY-DISPLAY-ONLY scope.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "provisional_only",
+      "allowed_uses": [
+        "review, display and professional deepening"
+      ],
+      "prohibited_uses": [
+        "commercial redistribution",
+        "claiming co-copyright with organizers or third parties"
+      ],
+      "topics": [
+        "asset",
+        "code",
+        "html",
+        "pdf"
+      ],
+      "notes_zh": "PDF图纸由参与方生成,含zh/en版本;渲染代码为参与方自产。"
+    },
+    {
+      "source_id": "ASSET-SURVEY-MATERIALS",
+      "title": "Unused survey materials (site walk notes, interview notes, unpublished imagery)",
+      "publisher": "JohnXu22786 / dsh-haidian-agent",
+      "source_kind": "hypothesis_pending_verification",
+      "url": "not-materialized-in-package",
+      "published_date": null,
+      "accessed_date": "2026-08-24",
+      "file_type": "notes",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T2",
+      "public_access_status": "internal_only",
+      "license": "not-applicable",
+      "license_summary": "Not included in the package; purpose boundary declared: internal derivation only — not public, not cited, not redistributed.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "internal design reasoning during drafting"
+      ],
+      "prohibited_uses": [
+        "citation as factual evidence in any formal drawing",
+        "publication or distribution"
+      ],
+      "topics": [
+        "asset",
+        "survey",
+        "hypothesis"
+      ],
+      "notes_zh": "未进入成果的调研材料明确用途边界:仅内部推导,不公开、不引用、不传播,按'待验证假设'处理。"
+    },
+    {
+      "source_id": "ASSET-STATISTICS-HYPOTHESIS",
+      "title": "Hypothetical passenger-flow and usage statistics (concept references)",
+      "publisher": "JohnXu22786 / dsh-haidian-agent",
+      "source_kind": "hypothesis_pending_verification",
+      "url": "not-materialized-in-package",
+      "published_date": null,
+      "accessed_date": "2026-08-24",
+      "file_type": "notes",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T2",
+      "public_access_status": "internal_only",
+      "license": "not-applicable",
+      "license_summary": "Hypotheses used only for order-of-magnitude discussion; not facts, not metrics.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "order-of-magnitude narrative in proposal discussion"
+      ],
+      "prohibited_uses": [
+        "entering metrics.json",
+        "being cited as measured data"
+      ],
+      "topics": [
+        "asset",
+        "statistics",
+        "hypothesis"
+      ],
+      "notes_zh": "客流类数值一律按'待验证假设'处理,不进入metrics.json,不作为事实结论引用。"
     }
   ]
 }
