@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Re-imagining the Jingzhang Railway Heritage Park as a 'silver-age service spine' for the elderly communities along the corridor: an AI-assisted public-service belt covering elderly medical visits, civic errands and barrier-free mobility. The proposal sets out the 'Jingzhang Silver-Age Accessibility Belt' concept, linking three key areas and沿线 communities, hospitals, civic-service points and metro entrances via a ~9 km continuous barrier-free slow-mobility spine, with 10 AI elderly-service scenario cards (incl. 3 test/validation scenarios), 5 elderly personas, 3 warmth landmarks, 9 elderly-use land types and 7 silver service nodes — an experienceable, replicable and iterable concept for elderly-friendly barrier-free smart services."
 tracks: ["ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v9.2"
+iteration: "v9.3"
 ---
 
 # Jingzhang Silver-Age Accessibility Belt: AI-Assisted Medical, Civic and Barrier-Free Mobility Services for the Elderly
@@ -71,6 +71,8 @@ The silver synergy loop: Zhongzhiyuan handles elderly-AI-tech verification and r
 ### External Regional Synergy
 
 The belt coordinates with Haidian's existing public-service system: northward toward Qinghe/Shangdi mixed industry-residential elderly medical demand; southward toward the Xizhimenwai medical/civic dense belt; eastward toward the Xueyuanlu university belt for volunteers, social workers and elderly-tech R&D; westward toward the Xiaoyuehe green belt to extend barrier-free recreational slow mobility. This synergy is a concept research lens only, not a cross-regional administrative arrangement or government commitment.
+
+**Three-areas-two-wings coordination (elderly lens).** The three areas: Zhongzhiyuan hosts elderly-AI technology validation (pilot building + connection-station tech prototypes), the AI-Origin Community hosts silver-life demonstration (connection stations + health stations + accountability windows), and Dazhongsi hosts elderly-service industry conversion (service fair + civic service hall). The two wings: the Zhongguancun tech-service wing channels volunteers, social workers and policy-consulting capacity in, while the Xiaoyuehe scenario wing extends waterfront barrier-free recreation and outdoor healing scenarios. The factor flow runs "technology (validated in Zhongzhiyuan) → daily life (demonstrated at Origin) → industry (converted at Dazhongsi)"; people flow in along the Zhongguancun wing, scenarios spill over along the Xiaoyuehe wing. Relations with the Beiwei Community (elderly-community experience exchange), the Future Science City (health-tech interface), the Huairou Science City (rehabilitation engineering research), the Economic-Technological Development Area (elderly-device manufacturing) and Beijing-Tianjin-Hebei (cross-city elderly-care coordination) are all concept coordination hypotheses with clear evidence boundaries — no signed cooperation, investment, funding or government arrangement is fabricated [source:agent-taskbook].
 
 ### Interlock with Sibling Proposals on the Same Corridor (v9)
 
@@ -304,6 +306,18 @@ The proposal claims "service success = connection strengthening". This claim is 
 
 **Relation to the Connection Points.** The Connection Points generate connections; connection measurability proves that connections actually occurred and are sustainable — without measurement, "connection strengthening" is only a wish; with L1–L3 measurement, "the elderly are not lonely" moves from vision to a verifiable engineering commitment that can be compared against the no-AI baseline [depth:metrics_recalculation].
 
+### Long-Term Operation System (agent.6, concept suggestion)
+
+The success criterion of long-term elderly-service operation is "connection never drops out", not event counts [source:agent-taskbook]:
+
+- **Annual activity system**: Spring — intergenerational heritage-park accessible walks (wheelchair-friendly); Summer — silver health night markets (extended health-station hours + evening cooling); Autumn — intergenerational mutual-teaching festival (connection-station cultural counters fully open); Winter — warm-companionship week (extra paired visits to elders living alone). All are non-committal concept suggestions to be held by the operating body per law.
+- **Activity brand and IP**: the "Silver+" brand extended — Silver Fair (elder craftspeople paired with young stallholders), Silver Classroom (elders teach crafts, youth teach digital tools); brand-asset ownership and licensing to be agreed by law once the operator is confirmed.
+- **Community operation**: the Silver Relay volunteer ledger (R1 handover / R2 sign-off / R3 revisit / R4 no-AI equivalent / R5 intergenerational channel) as standard operating actions; each connection station has a proposed "station master" role (named human, a concept role not a current authority) responsible for opening, receipts and complaints.
+- **Scenario opening process**: a new elderly scenario enters the formal service catalogue only after a connection-station trial run plus an elder-representative experience review (usability gate); review records enter the connection-receipt ledger.
+- **Public experience and landmark operation**: the three warmth landmarks (Silver Warmth Plaza / Generational Memory Plaza / Memory Wall) open year-round with staffed hours; memory-wall content is refreshed quarterly by community elders.
+- **Operating RACI and resource frame (proposed roles, not current authorities)**: operation coordinator (public-space operator), station masters (staffed hours), volunteer leads (Silver Relay dispatch), health advisors (community health centre counterparts), independent evaluator (quarterly connection-measurement review); resource assumptions are public-space operating income + digital-inclusion funds + volunteer time-banking, all concept estimates pending verification.
+- **International communication to conversion**: open-source bilingual release of the elderly design guide (cross-sections / connection stations / receipt templates); hosting elderly-city exchange delegations; moving from "display" to "standard export" — offering the L1-L3 connection-measurement scale as a public knowledge asset other cities can adopt.
+
 ### Conceptual Renewal Project List
 
 Conceptual renewal projects (all concept suggestions, requiring professional deepening after regulatory, ownership, medical-compliance and data-licensing confirmation): barrier-free main-corridor completion, community silver-service centre, AI triage-kiosk network, civic silver-service hall retrofit, barrier-free interchange, elderly-AI-tech pilot building, silver-health-kiosk network, intergenerational memory plaza & wall.
@@ -332,7 +346,7 @@ Core metrics are recalculated from the provisional boundary in EPSG:4548 [metric
 
 ### Known Data Gaps (honestly flagged, do not block content scoring)
 
-Per `brief/site-package/missing-data.md`, the following baseline data is incomplete in the public site-package and flagged as unknown, to be recalculated when official data is released: elderly population baseline (`elderly_population_baseline`), the list of沿线 hospitals and community health centres (`health_facility_baseline_count`), regulatory FAR and building height (`floor_area_ratio`, `building_height_m`) [metric:floor_area_ratio] [metric:building_height_m]. This data gap does not block content scoring, but all quantitative targets involving these data are written as "conceptual operational indicators" or "to be quantified once baseline is confirmed"; no baselines are fabricated [depth:metric_recalculation].
+Per `brief/site-package/missing-data.md`, the following baseline data is incomplete in the public site-package and flagged as unknown, to be recalculated when official data is released: elderly population baseline (`elderly_population_baseline`), the list of hospitals along the corridor and community health centres (`health_facility_baseline_count`), regulatory FAR and building height (`floor_area_ratio`, `building_height_m`) [metric:floor_area_ratio] [metric:building_height_m]. This data gap does not block content scoring, but all quantitative targets involving these data are written as "conceptual operational indicators" or "to be quantified once baseline is confirmed"; no baselines are fabricated [depth:metric_recalculation].
 
 ### Compliance Matrix
 
