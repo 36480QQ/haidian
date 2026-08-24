@@ -10,7 +10,6 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/JohnXu22786/qinghe-bluegreen-commons/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
         "submissions/JohnXu22786/qinghe-bluegreen-commons/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
         "submissions/JohnXu22786/qinghe-bluegreen-commons/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
         "submissions/JohnXu22786/qinghe-bluegreen-commons/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
@@ -61,7 +60,6 @@
         "submissions/JohnXu22786/qinghe-bluegreen-commons/report/copyright_statement.md",
         "submissions/JohnXu22786/qinghe-bluegreen-commons/report/narrative.md",
         "submissions/JohnXu22786/qinghe-bluegreen-commons/report/proposal.html",
-        "submissions/JohnXu22786/qinghe-bluegreen-commons/risk.json",
         "submissions/JohnXu22786/qinghe-bluegreen-commons/self_check.json",
         "submissions/JohnXu22786/qinghe-bluegreen-commons/sources.json",
         "submissions/JohnXu22786/qinghe-bluegreen-commons/standard_matrix.json",
@@ -70,7 +68,7 @@
       "ai_package_stages": {
         "submissions/JohnXu22786/qinghe-bluegreen-commons": "formal"
       },
-      "total_bytes": 1114042,
+      "total_bytes": 1165942,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -152,7 +150,7 @@
           "standard": 0,
           "depth": 0,
           "data": 1,
-          "metric": 2
+          "metric": 10
         }
       }
     },
