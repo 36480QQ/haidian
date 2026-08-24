@@ -1,11 +1,12 @@
 {
   "schema_version": "0.2.0",
   "rights_evidence_contract": {
-    "schema": "visual/assets/source-rights-evidence.schema.json",
-    "instance": "visual/assets/source-rights-evidence.json",
+    "instance": "visual/assets/source-governance-register.json",
     "asset_ledger": "visual/assets/rights-clearance-ledger.json",
-    "status": "audit_ready_not_cleared",
-    "completed_independent_file_level_clearance_audits": 0
+    "status": "component_licenses_declared",
+    "content_license": "CC-BY-4.0",
+    "code_license": "MIT",
+    "osm_database_license": "ODbL-1.0"
   },
   "sources": [
     {
@@ -918,7 +919,8 @@
         "Oral history consent template not yet distributed",
         "Independent historical review not yet conducted"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-CENTURY-TIMELINE-Figure",
@@ -944,7 +946,8 @@
         "Font embedding rights not separately audited",
         "Image quality depends on rendering engine"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-PORTABLE-TEMPORAL-EDUCATION-PEDAGOGY",
@@ -969,7 +972,8 @@
         "Educator review not completed",
         "Child comprehension testing pending"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-JZ-MISSION-ECONOMY-G0-V1",
@@ -994,7 +998,8 @@
         "Responsible roles to be confirmed",
         "No real tasks, retests or exit events"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-INDUSTRY-PUBLIC-VALUE-FIGURE",
@@ -1019,7 +1024,8 @@
         "Renderer-resolved fonts are not independently audited",
         "Independent professional review remains pending"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-MISSION-ECONOMY-PROPOSAL",
@@ -1044,7 +1050,8 @@
         "No institution written confirmations",
         "No field or controlled testing"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-JZ-CIVIC-OPERATIONS-G0-V1",
@@ -1071,7 +1078,8 @@
         "Field accessibility, staffing, budget, complaint and operating evidence remain unknown or 0",
         "Independent operations and rights review remains pending"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-YEAR-ROUND-CIVIC-OPERATIONS-FIGURE",
@@ -1097,7 +1105,8 @@
         "Renderer-resolved fonts are not independently audited",
         "Independent professional and rights review remains pending"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-CIVIC-OPERATIONS-PROPOSAL",
@@ -1122,7 +1131,8 @@
         "No confirmed operation, staffing, budget, events, partners or results",
         "No independent operations review"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-JZ-REVIEW-HANDOFF-V1",
@@ -1148,7 +1158,8 @@
         "Authoritative replacement materials remain 0",
         "Accepted professional duties and all 99 real-world closure artifacts remain 0"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-REVIEW-PROFESSIONAL-HANDOFF-FIGURE",
@@ -1174,7 +1185,8 @@
         "Renderer-resolved fonts are not independently audited",
         "Independent professional and rights review remains pending"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-REVIEW-HANDOFF-PROPOSAL",
@@ -1199,58 +1211,8 @@
         "No authoritative replacement material or professional acceptance",
         "No field test, approval or GO decision"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
-    },
-    {
-      "id": "SOURCE-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12",
-      "rights_evidence_id": "SRC-RIGHTS-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12",
-      "title": "普通生活空间场景结构化媒体登记：三原型、四态与零现实结果边界",
-      "publisher": "xyh202131",
-      "path": "visual/assets/ordinary-life-media-register.json",
-      "source_type": "in_package_concept_media_register",
-      "accessed_date": "2026-08-13",
-      "authority_level": "submission_author",
-      "collection_method": "Round 12 package-authored structured register derived from the existing three prototypes and public-rights contracts",
-      "allowable_uses": [
-        "Repository review",
-        "Peer assessment",
-        "Internal package consistency checks"
-      ],
-      "restrictions": [
-        "G0 conceptual interpretation only; not spatial, operational, accessibility, approval or field evidence",
-        "Cannot create a location, dimension, component, shift, operating result or maturity upgrade"
-      ],
-      "known_gaps": [
-        "Real photographs, confirmed viewpoints, field observations, approved components and operational interactions remain 0",
-        "Independent professional and rights review remains pending"
-      ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
-    },
-    {
-      "id": "SOURCE-ORDINARY-LIFE-MEDIA-R12",
-      "rights_evidence_id": "SRC-RIGHTS-ORDINARY-LIFE-MEDIA-R12",
-      "title": "普通生活空间场景册：无文字三联概念图与双语无障碍说明",
-      "publisher": "xyh202131",
-      "path": "assets/media/ordinary-life-scenes.webp",
-      "source_type": "generated_concept_visualization",
-      "accessed_date": "2026-08-14",
-      "authority_level": "submission_author",
-      "collection_method": "Stable SOURCE-ORDINARY-LIFE-MEDIA-R12 record refreshed in place for Round 19: OpenAI built-in image generation used package-authored text prompts with zero external image inputs. Three candidates were generated in total: the ordinary-life candidate was accepted, the first cover candidate was rejected for map-pin/site-truth risk, and the corrected cover base was accepted. The ordinary output was deterministically encoded by Pillow as a 1774 x 887 RGB WebP without crop, resize, retouching, object change, or other compositional editing.",
-      "allowable_uses": [
-        "Repository review",
-        "Peer assessment",
-        "Internal package consistency checks"
-      ],
-      "restrictions": [
-        "Synthetic concept visualization only; not a site photograph, confirmed viewpoint, approved design, built state, accessibility result, resident feedback, product selection or operating record",
-        "Public or professional reuse remains blocked pending complete model/output terms and independent rights audit"
-      ],
-      "known_gaps": [
-        "OpenAI built-in image generation is recorded, but the exact serving snapshot is not asserted and complete output terms are unavailable in the package",
-        "Round 19 inspection observed no EXIF, GPS, XMP or ICC data in the final ordinary-life WebP; this is a metadata observation, not a rights or site-evidence conclusion",
-        "No independent image-rights, accessibility, architectural or professional review; the refresh creates no public or professional reuse licence"
-      ],
-      "license": "No public or professional reuse licence is asserted; repository review only pending complete terms and independent audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-ORDINARY-LIFE-PROPOSAL-R12",
@@ -1274,7 +1236,8 @@
       "known_gaps": [
         "No field survey, confirmed viewpoint, approved component, operating result or restoration result"
       ],
-      "license": "No complete reusable license terms are retained in the package; repository review only pending maintainer terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-JZ-REVERSIBLE-REGISTER-R13",
@@ -1296,7 +1259,8 @@
       "known_gaps": [
         "All location, dimension, material, connection, specialist and real acceptance evidence remains unknown or 0"
       ],
-      "license": "Repository review only pending complete terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-JZ-REVERSIBLE-FIGURE-R13",
@@ -1318,29 +1282,8 @@
       "known_gaps": [
         "No professional or independent file-level rights audit"
       ],
-      "license": "Repository review only pending complete terms and independent rights audit"
-    },
-    {
-      "id": "SOURCE-JZ-REVIEW-WALK-R14",
-      "rights_evidence_id": "SRC-RIGHTS-JZ-REVIEW-WALK-R14",
-      "title": "第14轮双语可访问离线评审漫游与路由合同",
-      "publisher": "xyh202131",
-      "path": "visual/assets/review-walkthrough.json",
-      "source_type": "package_authored_review_route",
-      "accessed_date": "2026-08-13",
-      "authority_level": "submission_author",
-      "collection_method": "Package-authored synthesis of existing Round 1–13 evidence and boundaries into semantic HTML, CSS, dependency-free JavaScript and JSON",
-      "allowable_uses": [
-        "Repository review",
-        "Internal package consistency checks"
-      ],
-      "restrictions": [
-        "Presentation only; not evidence, accessibility certification, approval, operation or reuse licence"
-      ],
-      "known_gaps": [
-        "No independent accessibility audit or file-level rights clearance"
-      ],
-      "license": "Repository review only pending complete terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-JZ-FIELD-INTAKE-CONTRACT-R15",
@@ -1362,7 +1305,8 @@
       "known_gaps": [
         "All real issuers, collectors, custodians, reviewers, artifacts, values, approvals and results remain unknown or 0"
       ],
-      "license": "Repository review only pending complete terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-JZ-FIELD-INTAKE-FIGURE-R15",
@@ -1384,7 +1328,8 @@
       "known_gaps": [
         "No independent visual or file-level rights audit"
       ],
-      "license": "Repository review only pending complete terms and independent rights audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-JZ-COMMONS-LOOP-METHOD-R15",
