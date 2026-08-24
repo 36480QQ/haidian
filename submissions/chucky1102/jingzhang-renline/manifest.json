@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ee6485dac7382bceb676370030866eb10a6ffc6305ab326776555a05e4057fea"
+      "sha256": "e9c839442d545f354d14388d0a2b1aac6ea99b19ab78a4f07ef969b929eda9f1"
     },
     {
       "path": "agent.json",
@@ -56,13 +56,13 @@
       "path": "risk.json",
       "role": "risk_register",
       "required": true,
-      "sha256": "2bce2c4c7d4d51b2beed0b81c7899a0edce28b6f79d69bc95781e6a14da93fc1"
+      "sha256": "9d24451c8f0917504aefd02f13828bad112a3cb12384926495abe687c6016429"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8071c9641f93be3d9c364d0218e50546e06021cbafd2309c7069706bc8b08c81"
+      "sha256": "cfbed722d39e0b9d6eae2ef02025802e8a0ccb4129264d1650d70a6f6cf71a04"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d7c2c5320433bfbac848edb10ccf754e9fae256471003e1a3e33818c426145ed"
+      "sha256": "593ea4cca8e09256b7040ab43cbfa2f71a322d0970cf9470afa292d2172f1fcd"
     },
     {
       "path": "report/narrative.md",
@@ -217,7 +217,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "702110c202f4cffa6d75ea23561fabc118e51a8e84aa4cce6aae5c25d8bb100b"
+      "sha256": "699c54be8f36a6e88c4ec7e4cdcb00c4fcb842ebd6cccd1665e2a6ea43fa8b0b"
     },
     {
       "path": "report/proposal.en.html",
@@ -225,7 +225,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "63e75720b3f6e3c5999c93fa69957302643d56fb100179cd37f72b864871a37d"
+      "sha256": "f82dfa61ab0feef34cda07b8f8f8bc7a11602a1e4be2025e7969007c330a08fc"
     },
     {
       "path": "visual/index.en.html",
@@ -296,7 +296,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "6acb4b803e6c7dc817b437364b0300a1374cff780193a93d2eae7272ab78ebda"
+      "sha256": "8929ec46f012ada1a5f9a585ff6a8b074a8e107fbad6b785ec17b63bfb4c57ba"
     },
     {
       "path": "visual/assets/switchback-protocol.json",
@@ -638,7 +638,34 @@
       "language": "neutral",
       "title_zh": "实地踏勘逐张登记(2026-08-24)",
       "title_en": "Field-survey per-photo register (2026-08-24)",
-      "sha256": "a4a4a5a5511f0f16ce3eda39eadd6a716acf6e535cd3839495cc2b81823829ad"
+      "sha256": "a51252b4292f2bd0f2aa4b8d5c8cd436f943989d3fc187a9aca239975067bd08"
+    },
+    {
+      "path": "assets/site-photos/culture-1909-restaurant.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "一期沿线的\"清华园站\"门楼与\"1909火车餐厅\"招牌",
+      "title_en": "The 'Qinghuayuan Station' gateway and '1909 Train Restaurant' sign along Phase 1",
+      "sha256": "fdbb50055127235d6811c5ce2ac850b29373297c2e6fde9b332ffcbc8bdcd46e"
+    },
+    {
+      "path": "assets/site-photos/locomotive-display.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "一期公园内的退役机车展示",
+      "title_en": "A retired locomotive on display in the Phase-1 park",
+      "sha256": "8906ff6268d4aa4e8b946d28a1d813ee3dfbbfbf4b602c59f519a15ba8b6dc78"
+    },
+    {
+      "path": "assets/figures/survey-track.png",
+      "role": "figure",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "踏勘轨迹图(68张照片GPS)",
+      "title_en": "Field-survey track (GPS of all 68 photos)",
+      "sha256": "f8e18f1941c5d9df748ff674a11115e9ae2bc78121bfd103e5294685bd65275d"
     }
   ],
   "validation_claim": {
