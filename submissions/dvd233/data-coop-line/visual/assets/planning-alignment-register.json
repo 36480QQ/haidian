@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "submission_id": "dvd233/data-coop-line",
   "register_id": "DATA-COOP-PLAN-ALIGNMENT-01",
   "generated_at": "2026-08-22",
@@ -183,8 +183,28 @@
     "official_plan_drawings_or_maps_retrieved": false,
     "full_text_attachment_http_status_at_retrieval": 404
   },
+  "current_package_recertification": {
+    "recertified_at": "2026-08-23T02:58:25+08:00",
+    "reason": "The SCN-06 C-01/C-02/C-04 synthetic capacity admission round appends six non-spatial E2 governance metrics, so the complete metrics.json pin is deliberately renewed instead of bypassed or narrowed.",
+    "prior_metrics_sha256": "9c27a7ffbdb60768a9084ef7d41f5073fb0102b4f7f73629c1423a15748c8128",
+    "current_metrics_sha256": "d94a8b7bcad389bf26aad70d7ca4b02d4f02042b9a17288e990361f5167d2ba5",
+    "metric_change_scope": "non_spatial_e2_governance_metrics_only",
+    "added_metric_ids": [
+      "synthetic_capacity_resource_gate_total",
+      "synthetic_capacity_resource_gate_passed",
+      "synthetic_capacity_project_gate_passed",
+      "synthetic_capacity_negative_path_fail_closed_total",
+      "synthetic_capacity_minimum_headroom_requests",
+      "synthetic_capacity_no_data_to_data_capacity_ratio"
+    ],
+    "planning_alignment_claims_changed": false,
+    "spatial_metrics_or_geometry_changed": false,
+    "all_nine_geometry_hashes_reverified": true,
+    "evidence_signature_reverified": "c880c438924399d40267391551669d937dcfc5e144850eb511a45bbf024c4a52",
+    "boundary": "This recertification does not turn synthetic capacity metrics into planning, field, stakeholder, professional, approval, partnership or implementation evidence, and does not confirm people, hardware, engineering or operating capacity."
+  },
   "frozen_package_inputs": {
-    "metrics.json": "83c534bc099da4bbcc618967a876b7e12296459232c2a1c149fdde4f625b764c",
+    "metrics.json": "d94a8b7bcad389bf26aad70d7ca4b02d4f02042b9a17288e990361f5167d2ba5",
     "geometry/buildings.geojson": "2d95a1f77a6a609ebbfd909b1cde56b0757050ec6335262d95bd900343fc7c1f",
     "geometry/constraints.geojson": "0da1ca77d06424555dcc6bc2e1bba37a87c44988fd199d95f458c519003af8b7",
     "geometry/green_space.geojson": "e090b6fb2f3b78f705e8e23921085dd948555bb4377cc31f154ca5d576054d80",

@@ -1,5 +1,33 @@
 # 方案迭代记录
 
+## v2.3 - 2026-08-23
+
+C-01/C-02/C-04 synthetic capacity admission envelope / 合成容量准入包络
+
+- Baseline / 基线：从 `upstream/main` `d2fd993aff6f1afc1e21496581ae2de85779532a` 建立干净分支 `codex/data-coop-line-capacity-envelope-20260823`；启动时自己的旗舰与公共贡献开放 PR 均为 0。原工作树已有两份报告 HTML 改动，未读取为本轮成果、未覆盖、未暂存，本轮始终在隔离 worktree 内实施。
+- Gap & users / 缺口与使用者：既有 C-01 用途票、C-02 无数据等价服务与 C-04 受控计算站写清了原则和停机边界，但真实容量正确保持 `null / unknown` 时，运营交接与规划评审仍缺少可独立复算的需求—服务单元—无数据预留—停止预留准入模型。新增证据服务于运营团队、规划评审者及选择无数据正线的人，不把合成数字冒充工程量。
+- Canonical envelope / 单一事实源：在既有 `EXPIRING-DATA-TICKET-01` 内原位升级至 v1.1.0，并新增 `SCN06-C010204-SYNTHETIC-CAPACITY-01`；不新增近似载体。唯一 60 分钟投稿自有夹具含 12 个合成请求，全部资源使用“抽象并行服务单元”，明确排除实名或实数人员、硬件、供配电、散热、网络、场地、消防、成本、采购与审批推断。
+- Recalculation / 复算：C-01 以 4 单元、15 分钟/请求复算容量 16、需求 12、余量 4；C-02 数据线与无数据线各保留不可互借的 2 单元，分别容量 10、需求 6、余量 4，无数据/数据容量比 1.0；C-04 在 4 单元中保护 1 单元只用于拆卸与恢复，以 3 单元复算容量 9、需求 6、余量 3。审计从服务时长、可用单元与需求重算 available、capacity、headroom 与 utilization，不信任手填合计。
+- Fail-closed / 失败即停：4/4 资源闸门与 3/3 项目闸门通过；五个在内存执行的变体分别篡改计算、让需求超过 C-01、借走无数据单元、移除 C-04 停止预留及伪造现场确认，5/5 必须命中各自断言并失败。容量负例与既有 10 个数据票负例共同由同一只读运行器执行，不通过删减或跳过检查制造通过。
+- Traceability & carriers / 追踪与载体：新增六项 `synthetic_contract_test`、低置信度指标和假设 `A-SYNTHETIC-CAPACITY-001`，同步 compliance、design-depth、standard matrix、中英正文、脚本派生报告与离线 visual；GeoJSON、来源、许可、证据快照、核心方向和现场包不变。视觉只复用既有组件，不新增图件；A3/A0 页面内容不重排。报告经当前 renderer 更新后继续执行既有派生修复：保留单一 `<h1>` 并恢复长代码令牌断行；中英 390 px 与 1440 px 视口均无页面横向溢出。
+- Derived-chain recertification / 派生链重认证：完整 `metrics.json` 哈希变化使 planning-alignment 审计按预期 fail-closed；未缩窄校验，而是把 prior `9c27a7ff…` 更新为 current `d94a8b7b…`，登记六项非空间 E2 容量指标并重核九个 geometry 哈希与证据签名不变。规划 register 新 SHA-256 为 `daea14242a25926bebbe781d948571117e71c418304dc7a7c7951e49b37e2f7d`；双语 planning-alignment PNG 仅更新文本元数据且像素哈希不变，四份 PDF 仅等长替换证明令牌且 32 页低分辨率渲染哈希逐页不变。
+- Evidence boundary / 证据边界：合成包络把容量主张从 E0 叙述提升为可复算 E2 准入证据；真实运营主体、人员、设备、工程、场地、成本、许可、采购、审批、专业确认和实际需求仍为 `null / unknown / not_observed`，现场状态固定为 `not_ready_for_field_operation`。它不构成 E3 现场、E4 主体/专业确认、E5 采用或实施承诺；`SCN-06-E3E4` 继续 `DEFERRED / DO_NOT_CONTACT / DO_NOT_REASK`。
+- Verification / 验证：专项复核已取得 site evidence 18/18、field validation 215/215、drill 21/21 与 8/8 负向、review spine 94/94 与负向自测、planning alignment 131/131 与负向自测；ready-package 的 manifest refresh、完整 self-check、strict manifest、participant preflight 与 push dry-run 的最终状态只以本轮最终机器输出为准。
+
+## v2.2 - 2026-08-22
+
+P1-07 expiring data-ticket contract / 会到期、会撤回、会披露残余并回报公共价值的数据票
+
+- Baseline / 基线：从 `upstream/main` `a8f150d86480f8efc0716069ece406edf013502b` 建立干净分支 `codex/data-coop-line-expiring-ticket-20260822`。发布前最后观察官方 main 为 `34dbff3f8b074cf333fc0539daadf952987cc795`（`2026-08-22T19:19:22.893+08:00`）；冻结点后的 33 个提交、164 个唯一文件只修改 7 个其他投稿，未触及本投稿、Skill、brief、schema、validator、helper、source registry、Gallery、公开页面或 required check，故保留冻结基线并避免无关派生物 churn。
+- Gap & reason / 缺口与原因：既有方案阐明用途票、受控计算、撤回回执与无数据正线，却没有一份同时约束票生命周期、执行状态、唯一问责、到期/撤回 SLA、无数据等价容差、残余影响和公共回报的 canonical 契约；正文还把方案自拟“三定位/五功能”写成了任务书原项。该缺口直接影响 AI 规划创新、实施交接、公共利益与正式任务书对齐。
+- Canonical contract / 单一事实源：新增唯一载体 `visual/assets/expiring-data-ticket-protocol.json`（`EXPIRING-DATA-TICKET-01`，`SCN-06 / PROV-KEY-001`）。治理状态为 `draft → co_decided → active → expired|withdrawn → residual_disclosed → return_accepted → closed`；执行状态新增 `stopping`，到期或撤回同刻禁新 query/output、仅允许 teardown，并在 60 秒内进入 `stopped`。9 类未分配角色组成 8 项 RACI、每项恰好一个 A，4 类角色保留单方停机权；12 类条件审计产物、10 项停止触发器与 8 项 Gate 2 阻断条件全部机器可读。
+- Synthetic evidence / 合成证据：`CASE-NORMAL-EXPIRY-01` 与 `CASE-MIDSTREAM-WITHDRAWAL-01` 分别覆盖正常到期和存在不可彻底回滚残余的中途撤回。每线至少 30 次、时间差与比值双阈值、零价格溢价、失败率差、核心输出/安全、人工接管和 6 类任务 × 2 路线无障碍合成夹具均 fail-closed；观察用户数固定为 0，覆盖不等于可用性绩效。公共回报验收新增双语公共审计卡、独立复算价值、证据指针、验收范围和 `not_observed` 影响边界。`evidence-consistency.js` 实际复演票—执行耦合、单节点范围、两线任务、公共回报与条件证据。2/2 合成案例通过，10/10 独立负向变异被拒绝，证据等级严格保持 E2。
+- Spatial & official crosswalk / 空间与任务书对齐：机器核对 `SCN-06` 位于临时 `PROV-KEY-001`，但不在 `BLDG-002` polygon 内，后者只写作 `conceptual_host_candidate`。协议明确为单节点 E2：不向 AI 原点或独立的大钟寺包传票、传数、移交角色或停机权；未来扩围必须另建版本化 handoff 并补 E3/E4。中英正文与视觉逐项恢复正式三定位（百年京张文化带、都市AI生活体验带、AI融合创新带）和正式五功能（AI全栈自主创新体系、世界级AI创新生态、AI+场景赋能新范式、智能化AI活力城市、AI治理全球话语权）；方案自拟表达明确降为设计响应。
+- Carriers & scope / 载体与范围：唯一新增一个 canonical JSON；扩展既有审计脚本、metrics、assumptions、compliance matrix、双语正文与离线视觉；原位替换 `key-areas` 双语 2400×1500 技术图并由既有 A3/A0 版式复用，不新增近似图件。GeoJSON、来源、许可、媒体与既有证据签名不变；全部修改限于本投稿目录。
+- Derived-chain recertification / 派生链重认证：新增五项非空间 E2 治理指标使 planning-alignment 对完整 `metrics.json` 的固定输入哈希按预期 fail-closed；未缩窄或绕过检查，而是把 `DATA-COOP-PLAN-ALIGNMENT-01` 升级为 schema 1.2.0，记录旧/新完整哈希与五项新增指标，并重新核验九个 GeoJSON 哈希和既有证据签名不变。新 register SHA-256 为 `59d5a1bf4ab30e5b3fc7216d2191e378881ec4af80ee0e902af8da64fa3657c9`。
+- Offline accessibility repair / 离线无障碍修复：最终 Chromium `file://` 复核发现五项可复现缺口并原位修复：中英报告的长 SHA-256 可在 400 px 视口断行；双语 visual 增加 skip link、main 焦点目标、导航可访问名称和键盘焦点自动居中；`prefers-reduced-motion` 覆盖全页平滑滚动；canonical `experience.vtt` 的原始字节以 `data:text/vtt;base64` 精确内嵌到两份 visual，避免本地文件唯一源策略令 `<track>` 进入 error，同时继续保留独立 VTT 与文字稿供审计和下载；中英报告删除 renderer hero 后的同文重复 `<h1>`，恢复每页唯一一级标题。修复不改视频、字幕文本、核心协议、GeoJSON、metrics 或 PDF。
+- Evidence boundary / 证据边界：所有阈值都是待 E3 授权现场测试与 E4 专业/运营主体确认的 E2 合成准入线，不是实测 SLA。没有采集现场、用户或利益相关方证据，没有确认主体、法律角色、场地、容量、许可、资金、无障碍绩效、公共影响或实施；停止不等于彻底抹除，合成交付一致性不等于公共影响，公共回报不购买同意，GitHub 合并也不等于实施。
+
 ## v2.1 - 2026-08-22
 
 P2-04 offline experience and media / 离线体验与媒体：服务旅程短片、可键盘交互旅程与原创封面
