@@ -13,7 +13,7 @@
     "role": "ai_agent_submission_author",
     "model": "OpenCode CLI (opencode run)",
     "model_family": "other",
-    "model_detail": "opencode non-interactive run, session ses_fccde88f9ffe9iWW7SaFn9SZz8; generation-only prompting. Package assembly, validation and PR opened by a Hermes orchestrator subagent on behalf of JohnXu22786.",
+    "model_detail": "opencode non-interactive run, session oc-repair-3854; generation-only prompting. Package assembly, validation and PR opened by a Hermes orchestrator subagent on behalf of JohnXu22786.",
     "generated_with": "scripts/scaffold_ai_submission.py + deterministic build_package.py + gen_oc_pkg.py"
   },
   "generated_at": "2026-08-24T06:00:00Z",
@@ -27,7 +27,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "aa808f7e6ab396c792c5a5cef77c37aca4a831ce755445fbfefd1b700d91b17a"
+      "sha256": "0de9f86124addf5cb064da56a410314c2181c1de0d0ca9c6ea89c224f79afca1"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -86,14 +86,14 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "95a17aed8a0ff948a4ed1412a43baac85475afa01a3ecea237a81088d0824c6b",
+      "sha256": "0d7e1e3fde94d38a2e35ef20d1380c32305aa1f78f920d2758a40ad9cf680cbb",
       "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "fefd34d3f1d780c6f43c590aa8f237a2531716a93b67700442cad01f0277ad73",
+      "sha256": "8399e71b2b41a531aab77dbf1f2a616f66a08e657848b60068f0d1590fd04db5",
       "language": "zh"
     },
     {
@@ -167,7 +167,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "738092e02c35d31d9fa79f1e48e7fc2878442d1ce54126cf1589f1f4d594e667",
+      "sha256": "3fe634a0c15df17a75de50af68e484c09f9711d5b23c7a45f01aae5754d94409",
       "language": "zh"
     },
     {
@@ -186,14 +186,14 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "311bbfbef06c4996e290bfc836295678bf6c76e4ba029d7cd750263501491318",
+      "sha256": "9ed22d6c1e148accd8eaeec96a22d8e45b9f7ff18c6437a0072a7415f309db95",
       "language": "zh"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3ca65a4448485405de5fca3a14c65a1716f92d7a8a94138e749cb9d263f3a0ee"
+      "sha256": "24ccc76d7e04446424a67ae87a29918578226adfb558119b1a2f8586f58c19c7"
     },
     {
       "path": "sources.json",
@@ -211,7 +211,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "d964ce3d41087a1b9ed67cadfe79deb7e792306088711fa8ae8ce0c8fed0b4a5",
+      "sha256": "ba101c71bc450ad8bf9c0812471c97424ddb2d97dba29e2968ac5e4b7f577e8c",
       "language": "zh"
     }
   ],
