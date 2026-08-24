@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "735f8d0bd52d75d5484e562051dc63691c661e8c102ade667b5779f993b8387f"
+      "sha256": "b17191b31223fd07e334450619a6655355d02ec3a55172d43ab03d706e28beef"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "075bdec6ee27b401768a1e58e5a0b4d6009767d578229e68789265010f7bb7e9"
+      "sha256": "9e7a59de926c1dc11f4a9425f652abca12d69156c25c23451f32ef419a041cc7"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "46194fc1118f91dfb495a1c5245953e786adf51071a8b7cb7e770d5efa9b422f"
+      "sha256": "8e4e7ba0ea10d19ac87a2f941d85d9e4f2143faa076c0abaf1bd380ae641e09a"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4133fe09713e2504dc25d15e1741cf6c324bd9164bb164b4de37685598a712fd"
+      "sha256": "2529db8435c6f8b1b177e2c37554e2e18436672e365b66635530e5eb3f8dc618"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "609093cde89fcbff1ce80f2e68bacb7464eae2addb563eb880ea5f5ad32892f1"
+      "sha256": "40d3839d65c74721b05b18e25d7e81cde8a29027e66664d5870836ff48d44cf6"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "623623593b5faf01279c416732657519092d95e63389810b1fb3d5d31e1fda74"
+      "sha256": "27a39e17a0f3305fa1a6113ce5cfce440c7e9d81618e9aca4e90bb250bdc4757"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "11c3f5656cbeb0805ae4c05e119a82bc943c0934b72d3daf7b99b1eb59de85ca"
+      "sha256": "7f3efd037c4313c7a3bb4f3a9cc3fb46e1ac278766db364b6aa1481c2e806364"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b659371b5d4b62e971fc6d42fa4c57a35d66eb415f95ae7d087a94e88e38a8ac"
+      "sha256": "353adab2b35d999264de66ffe0a79df06e2ece20647ccba638879bc4741a1006"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "04d08ef0365fd200d1a52df7a5f4c69840e71dfa67e403bdab6800c6885e8455"
+      "sha256": "c9222ada942748e5e4f06f3a206bb620dc64c6cbaf270a8d0f17b05611a16332"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "f18fdb9d1f7669723f08dc4f5000f535c435106ee14286b435d5bdb85f8ff6c0"
+      "sha256": "067af8cdb7e79df08faaf14a4dccca7c313a6f15a0779c7cb2cacf647edc6ddf"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "2fe1cbf45c554eb3275c3e039c9f7be1f443804b19db5b83c4d45ac81705ce5f"
+      "sha256": "50550b11753f9aeecf141dc53e1c5b04124bf3617f0296c5325ba31b06a2bb2b"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "fa547d5242479bd9e021d78d1356d67c8085d09a214c691ffaba7ba8e98d7af3"
+      "sha256": "79c2661fea2fb0030ebc2e9a42f8343fe1596803e0e430bd5e09e0766e104df4"
     },
     {
       "path": "assets/figures/bonus-section-eras.png",
@@ -270,7 +270,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "c65442fb76b118683512ce36447f8d8e5a083a3880aa9cd03b358f781bdd8506"
+      "sha256": "c64b823c0157ae3bcb7ba54515ace56ef0bf875ccb008eeb0ce60094e9203a83"
     }
   ],
   "validation_claim": {

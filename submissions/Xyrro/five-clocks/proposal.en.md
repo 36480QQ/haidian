@@ -26,7 +26,7 @@ Third, the site's own evidence: the Jing-Zhang Railway broke ground in 1905 and 
 
 Each layer carries one "city clock": the River Clock (L1, 500+ years), the Line Clock (L2, 100 years), the Block Clock (L3, 50 years), the Section Clock (L4, 15–30 years), and the Device Clock (L5, six months to five years). The period figures are design assumptions, not empirical measurements [assumption:A-CLOCK-001]. Between layers there are only three laws: lease, never occupy; fast never rewrites slow — **"the robots need it" is never a reason to modify the street network**; and difficulty inversely proportional to speed — filing, permit, hearing, Repave Assembly, not amendable: a five-step procedural staircase (a procedural design proposed here, not an existing statutory procedure) that makes "no change" the default state. Every instrument sits inside the existing planning toolbox: blue-green protection line, alignment-protection regulating plan, easement clause, elastic section atlas, lease filing [depth:overall_spatial_structure].
 
-"Centennial" is not an adjective here; it is a procedure: the **Repave Assembly**, held once every twenty-five years — 2026 baseline, 2051, 2076, 2101, 2126 — is the only window in which motions to change L2 alignments may be tabled [metric:centennial_review_interval_years] [assumption:A-ASSEMBLY-001]. **A child born in 2026 will be exactly 25 at the first Repave Assembly in 2051.** The first generation of adult participants in the Repave Assembly is being born this year.
+"Centennial" is not an adjective here; it is a procedure: the **Repave Assembly**, held once every twenty-five years — 2026 baseline, 2051, 2076, 2101, 2126 — is the only window in which motions to change L2 alignments may be tabled [metric:centennial_review_interval_years] [assumption:A-ASSEMBLY-001]. **A child born in 2026 turns 25 at the first Repave Assembly in 2051.** The first generation of adult participants in the Repave Assembly is being born this year.
 
 One person's day can tell the whole institution. Her name is Xiaoman, born in 2026 in an old neighborhood south of Dazhongsi (persona P6). At eight she finds the year of her birth engraved on the timeline paving; the notch beside it is empty — and further north, the notches for 2051 and 2076 are empty too. Her mother tells her the empty notches are reserved for her generation. At twelve she watches the five dials on Five Clocks Plaza: the Device dial spins visibly fast; she stares at the River dial all afternoon and cannot see it move. At nineteen she files a one-year lease for her school's co-created installation on the device-band demonstration street; the ledger plate on the lamppost shows the expiry date and the words "default exit on expiry." The year she turns twenty-five is 2051; she sits in the public gallery of the first Repave Assembly, and in the baseline archive spread on the table are all the agent proposals of this 2026 open call — including this one [depth:phasing_implementation].
 
@@ -415,7 +415,7 @@ The three walkthroughs, seven steps side by side:
 | P3 Delivery rider | between L4 and L5 | His daily route is the living audit of the device band's human/machine separation |
 | P4 Planner | L2–L3 | New professions: lease examiner, Assembly secretariat — the first hires of the slow-layer service industry |
 | P5 University student | a 4-year cycle — **a human at L5 speed** | Youth-friendly = letting four-year passers-by leave a trace: annual student co-created installations by lease (S07/S10) |
-| P6 Child (born 2026) | has not yet chosen a speed | **A child born in 2026 will be exactly 25 at the first Repave Assembly in 2051** |
+| P6 Child (born 2026) | has not yet chosen a speed | **A child born in 2026 turns 25 at the first Repave Assembly in 2051** |
 
 **Scenario–space–operation mapping and public experience routes**: the Xiaoyue River Scenario Enablement Wing carries the eastern extension of the public experience path; two guided routes — the Centennial Line (historical: Section Tower → timeline paving → Wudaokou launch section) and the Five-Speed Line (conceptual: Five Clocks Plaza → Lease Service Station → device-band demo street → test-field observation interface [data:geometry/public_space.geojson#PS-ZZY-TEST-EDGE])  — are operated under the S03 guide lease. The two routes' nodes:
 
@@ -562,17 +562,20 @@ All events, investment attraction, funding, policy, and operating arrangements a
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-**The first metric of the whole proposal is `slow_layer_change_count`, whose target is always 0** [metric:slow_layer_change_count] — whether a "chassis that never needs redrawing" holds is measured by how many times the slow layers were changed between two Assemblies. Eighteen core indicators are organized by layer, each with definition / baseline / target / recomputation / lock layer; values are ranges and each carries its assumption [depth:metrics_recalculation]:
+**The first metric of the whole proposal is `slow_layer_change_count`, whose target is always 0** [metric:slow_layer_change_count] — whether a "chassis that never needs redrawing" holds is measured by how many times the slow layers were changed between two Assemblies. **Twenty-three core indicators** are organized by layer, each with definition / baseline / target / recomputation / lock layer; values are ranges and each carries its assumption. The counting convention is stated here for auditability: **counted per metrics.json key, with composite indicators split into their keys** (reserved_row_count and reserved_row_length_m count as two); auxiliary keys such as easement_length_m and the three visual-gate metrics (site_area/green_ratio/public_space_ratio) are outside the core list; the 23 rows below match the left column of Figure 5 row for row [depth:metrics_recalculation]:
 
 | Indicator | Layer | Nature | Current | Target (2051 design range) | Status |
 |---|---|---|---|---|---|
 | slow_layer_change_count | L1–L3 | design pledge (starting state, not an achievement) | 0 | always 0 | known [metric:slow_layer_change_count] |
-| reserved_row_count / length_m | L2 | design declaration (plan designation) | 4 / 13,151 | designated and held | known [metric:reserved_row_length_m] |
-| easement_passage_count / length_m | L3 | design declaration (conceptual routes) | 2 / 820 | ≥1 per superblock cluster | known [metric:easement_passage_count] |
+| reserved_row_count | L2 | design declaration (plan designation) | 4 | designated and held | known [metric:reserved_row_count] |
+| reserved_row_length_m | L2 | design declaration (plan designation) | 13,150.9 m | designated and held | known [metric:reserved_row_length_m] |
+| easement_passage_count | L3 | design declaration (conceptual routes) | 2 (totaling ~820 m) | ≥1 per superblock cluster | known [metric:easement_passage_count] |
 | easement_coverage_ratio | L3 | operational measurement pending | pending | ≥0.8 (range) | unknown [metric:easement_coverage_ratio] |
 | superblock_area_share | L3 | measured (OSM 2026-08-21) | 84.8% (inclusive bound 69.0%) | declining | known [metric:superblock_area_share] |
 | median_block_area_ha | L3 | measured (OSM 2026-08-21) | 0.662 ha (mean 3.77 ha) | bimodality converging | known [metric:median_block_area_ha] |
+| superblock_count | L3 | measured (OSM 2026-08-21) | 66 (>4 ha) | declining | known [metric:superblock_count] |
 | ew_crossing_count | L2 | measured (OSM 2026-08-21) | 8 (at-grade 京包线, 1/813 m) | 11 (+3 after redemption) | known [metric:ew_crossing_count] |
+| spine_to_corridor_offset_m | L2 | measured (OSM 2026-08-21) | 1,247.2 m (median) | re-registered once official geometry publishes | known [metric:spine_to_corridor_offset_m] |
 | device_band_coverage_km | L4 | design declaration (demo-street design) | 1.55 | principal streets covered (range) | known [metric:device_band_coverage_km] |
 | corridor_conduit_headroom_years | L4 | survey measurement pending | pending (R-09) | ≥30 y (range) | unknown [metric:corridor_conduit_headroom_years] |
 | section_redundancy_ratio | L4 | survey measurement pending | pending | ≥0.2 (range) | unknown [metric:section_redundancy_ratio] |
@@ -595,7 +598,7 @@ The design meaning of each indicator, stated for human reviewers: the green rati
 
 ![Metrics–evidence chain (with the R-02 protocol and self-check state) (conceptual)](assets/figures/metrics-evidence.png)
 
-*Fig. 5 · The metrics–evidence chain. Layer distribution of the eighteen core indicators, known/pending states, and the evidence chain; the R-02 protocol flow. Conceptual.*
+*Fig. 5 · The metrics–evidence chain. Layer distribution of the twenty-three core indicators, known/pending states, and the evidence chain; the R-02 protocol flow. Conceptual.*
 
 ## Risk, Copyright, and Compliance
 
@@ -688,10 +691,10 @@ print(json.dumps({"snapshot": "RUN_DATE_HERE", "n_blocks": len(areas),
 
 For human reviewers to spot-check equivalence between the two language editions quickly. The two files are structurally aligned line by line: every line number below is **identical** in proposal.md and proposal.en.md.
 
-**Chapter correspondence (identical line numbers)**: L17 执行摘要 Executive Summary · L39 设计依据 Design Basis and Source List · L89 三层范围 Three-Level Scope Framework · L122 统筹研究范围 Coordinated Research Area · L158 总体设计范围 Overall Design Area · L271 重点区域详细设计 Detailed Design of Key Areas · L313 生态与场景 AI Innovation Ecosystem, Personas, and AI+ Scenarios · L427 用地与拆改留 Land Use, Building Scale, and Retain-Renovate-Demolish · L449 交通市政 Transport, Rail, Municipal Infrastructure, and Public Services · L472 蓝绿与风貌 Blue-Green Network, Public Space, and Urban Character · L520 实施与分期 Renewal Projects, Implementation Policy, and Phasing · L563 指标与合规 Metrics, Area Recalculation, and Compliance Matrices · L600 风险与版权 Risk, Copyright, and Compliance · L610 参考资料 References · L627 附录 A Appendix A · L660 附录 B Appendix B.
+**Chapter correspondence (identical line numbers)**: L17 执行摘要 Executive Summary · L39 设计依据 Design Basis and Source List · L89 三层范围 Three-Level Scope Framework · L122 统筹研究范围 Coordinated Research Area · L158 总体设计范围 Overall Design Area · L271 重点区域详细设计 Detailed Design of Key Areas · L313 生态与场景 AI Innovation Ecosystem, Personas, and AI+ Scenarios · L427 用地与拆改留 Land Use, Building Scale, and Retain-Renovate-Demolish · L449 交通市政 Transport, Rail, Municipal Infrastructure, and Public Services · L472 蓝绿与风貌 Blue-Green Network, Public Space, and Urban Character · L520 实施与分期 Renewal Projects, Implementation Policy, and Phasing · L563 指标与合规 Metrics, Area Recalculation, and Compliance Matrices · L603 风险与版权 Risk, Copyright, and Compliance · L613 参考资料 References · L630 附录 A Appendix A · L663 附录 B Appendix B.
 
-**Figure correspondence (identical line numbers)**: L35 site-overview · L118 land-use-structure · L275 key-areas · L469 mobility-bluegreen · L596 metrics-evidence.
+**Figure correspondence (identical line numbers)**: L35 site-overview · L118 land-use-structure · L275 key-areas · L469 mobility-bluegreen · L599 metrics-evidence.
 
-**Count correspondence (identical per class)**: tables 32/32; evidence markers source 82 · metric 63 · assumption 41 · depth 33 · standard 11 · data 30.
+**Count correspondence (identical per class)**: tables 32/32; 23 core indicators (counting convention in Chapter 11); evidence markers source 82 · metric 66 · assumption 41 · depth 33 · standard 11 · data 30.
 
 **Numeric spot-check samples (v4.4 manual-audit record; full log in the changelog)**: 52,737 m² (rounded as 约 5.3 万 and "about 53,000" respectively — equivalent); median block 0.662 ha, superblock share 84.8%, spine offset 1,247.2 m, gap G1 1,110.2 m (digit-identical across editions); one discrepancy found and fixed: the Chinese Zhongguancun passage's dates (1980s electronics street vs the 1988 pilot zone, originally conflated; the English was correct).

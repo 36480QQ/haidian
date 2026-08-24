@@ -26,7 +26,7 @@ iteration: "v2.0"
 
 五个层各配一口「城市之钟」：河钟（L1，五百年以上）、线钟（L2，百年）、块钟（L3，五十年）、面钟（L4，十五至三十年）、器钟（L5，半年至五年）。周期数字是设计假设而非实证测量 [assumption:A-CLOCK-001]。层间只有三条律：只租不占；快不改慢——**「机器人需要」永远不是修改街网的理由**；难度反比——备案、许可、听证、复线大会、不可议，五级程序台阶（本方案设定的程序设计，非现行法定程序）把「不变」设为默认状态。全部制度落在现行规划工具箱内：蓝绿保护线、线位保护图则、地役权条款、弹性断面图集、租约备案 [depth:overall_spatial_structure]。
 
-「百年」在本方案里不是形容词，而是程序：二十五年一届的**复线大会**——2026 基线、2051、2076、2101、2126——是唯一可以提出 L2 线位变更动议的窗口 [metric:centennial_review_interval_years] [assumption:A-ASSEMBLY-001]。**2026 年出生的孩子，将在 2051 年第一届复线大会上正好 25 岁。**复线大会的第一代成年参与者，今年出生。
+「百年」在本方案里不是形容词，而是程序：二十五年一届的**复线大会**——2026 基线、2051、2076、2101、2126——是唯一可以提出 L2 线位变更动议的窗口 [metric:centennial_review_interval_years] [assumption:A-ASSEMBLY-001]。**2026 年出生的孩子，到 2051 年第一届复线大会时将满 25 岁。**复线大会的第一代成年参与者，今年出生。
 
 一个人的一天可以把这套制度讲完。她叫小满，2026 年生于大钟寺以南的老社区（画像 P6）。八岁那年她在技术年表带上找到自己出生的年份刻度，刻度旁边是空的——再往北，2051、2076 的刻度也都是空的，妈妈告诉她空刻度就是留给她这代人的。十二岁她在五钟广场看五个钟盘：器钟盘转得肉眼可见地快，河钟盘她盯了一个下午也没看出动过。十九岁她在设备带示范街给学校的共创装置办了一张一年期租约，账牌挂在灯杆上，写着到期日和「到期默认退出」。二十五岁那年是 2051 年，她作为居民代表坐进第一届复线大会的旁听席，桌上摊着的基线档案里，有 2026 年这场开源征集的全部智能体方案——包括本方案 [depth:phasing_implementation]。
 
@@ -415,7 +415,7 @@ R-02 街块颗粒普查已在 2026-08-21 的 OSM 快照上完成复算（口径�
 | P3 配送骑手 | L4–L5 之间 | 他的日常动线就是设备带人机分道细节的活体校验 |
 | P4 规划师 | L2–L3 | 新职业：租约审查师、复线大会秘书处——慢层服务业的第一批从业者 |
 | P5 高校学生 | 4 年周期——**恰好是 L5 速度的人** | 青年友好 = 让四年过客也能留下痕迹：学生共创装置的年度租约（S07/S10） |
-| P6 儿童（2026 年生） | 尚未选择速度 | **2026 年出生的孩子，将在 2051 年第一届复线大会上正好 25 岁** |
+| P6 儿童（2026 年生） | 尚未选择速度 | **2026 年出生的孩子，到 2051 年第一届复线大会时将满 25 岁** |
 
 **场景—空间—运营映射与公共体验路径**：小月河场景赋能翼承接公共体验路径的东翼延伸；两条导览线——百年线（历史向，串联断面塔→年表带→五道口启动区）与五速线（概念向，串联五钟广场→租约服务站→设备带示范街→测试场观察界面 [data:geometry/public_space.geojson#PS-ZZY-TEST-EDGE]）——由 S03 导览租约承运。两线节点如下：
 
@@ -562,17 +562,20 @@ R-10 值得单独一段：**这场竞赛本身成为百年制度的第一份档�
 
 ## 指标体系、面积复算与合规矩阵
 
-**全方案的第一指标是 `slow_layer_change_count`，目标恒为 0** [metric:slow_layer_change_count]——衡量一个「不需要重画的底盘」是否成立，就看慢层在两届复线大会之间被改动了几次。指标体系十八条核心指标按五层组织，每条含定义/基线/目标/复算方式/层位；数值区间化并逐项挂假设 [depth:metrics_recalculation]：
+**全方案的第一指标是 `slow_layer_change_count`，目标恒为 0** [metric:slow_layer_change_count]——衡量一个「不需要重画的底盘」是否成立，就看慢层在两届复线大会之间被改动了几次。指标体系**二十三条核心指标**按五层组织，每条含定义/基线/目标/复算方式/层位；数值区间化并逐项挂假设。计数口径在此明示以便审计：**按 metrics.json 指标键逐键计数，复合指标各键分列**（reserved_row_count 与 reserved_row_length_m 计为两条）；easement_length_m 等辅助键与三项视觉核验指标（site_area/green_ratio/public_space_ratio）不计入核心清单；下表 23 行与图 5 左栏逐行一致 [depth:metrics_recalculation]：
 
 | 指标 | 层位 | 性质 | 现值 | 目标（2051 设计区间） | 状态 |
 |---|---|---|---|---|---|
 | slow_layer_change_count | L1–L3 | 设计承诺（起点状态，非成就） | 0 | 恒 0 | known [metric:slow_layer_change_count] |
-| reserved_row_count / length_m | L2 | 设计声明（图则划定） | 4 / 13,151 | 划定并保持 | known [metric:reserved_row_length_m] |
-| easement_passage_count / length_m | L3 | 设计声明（概念走向） | 2 / 820 | 每个超大院落群 ≥1 | known [metric:easement_passage_count] |
+| reserved_row_count | L2 | 设计声明（图则划定） | 4 | 划定并保持 | known [metric:reserved_row_count] |
+| reserved_row_length_m | L2 | 设计声明（图则划定） | 13,150.9 m | 划定并保持 | known [metric:reserved_row_length_m] |
+| easement_passage_count | L3 | 设计声明（概念走向） | 2（两条合计约 820 m） | 每个超大院落群 ≥1 | known [metric:easement_passage_count] |
 | easement_coverage_ratio | L3 | 待运营实测 | 待复算 | ≥0.8（区间） | unknown [metric:easement_coverage_ratio] |
 | superblock_area_share | L3 | 实测（OSM 2026-08-21） | 84.8%（inclusive 下界 69.0%） | 较基线下降 | known [metric:superblock_area_share] |
 | median_block_area_ha | L3 | 实测（OSM 2026-08-21） | 0.662 ha（均值 3.77 ha） | 双峰收敛 | known [metric:median_block_area_ha] |
+| superblock_count | L3 | 实测（OSM 2026-08-21） | 66（>4 ha） | 较基线下降 | known [metric:superblock_count] |
 | ew_crossing_count | L2 | 实测（OSM 2026-08-21） | 8（京包线地面段，1/813 m） | 11（+3 预留兑现后） | known [metric:ew_crossing_count] |
+| spine_to_corridor_offset_m | L2 | 实测（OSM 2026-08-21） | 1,247.2 m（中位） | 官方几何公布后重新登记 | known [metric:spine_to_corridor_offset_m] |
 | device_band_coverage_km | L4 | 设计声明（示范街设计） | 1.55 | 主要街道全覆盖（区间） | known [metric:device_band_coverage_km] |
 | corridor_conduit_headroom_years | L4 | 待勘测实测 | 待评估（R-09） | ≥30 年（区间） | unknown [metric:corridor_conduit_headroom_years] |
 | section_redundancy_ratio | L4 | 待勘测实测 | 待测 | ≥0.2（区间） | unknown [metric:section_redundancy_ratio] |
@@ -595,7 +598,7 @@ R-10 值得单独一段：**这场竞赛本身成为百年制度的第一份档�
 
 ![指标—证据链（含 R-02 协议与自检状态）（概念示意）](assets/figures/metrics-evidence.png)
 
-*图 5 · 指标—证据链图。十八项核心指标的层位分布、已知/待复算状态与证据链关系；R-02 协议流程。概念示意。*
+*图 5 · 指标—证据链图。二十三项核心指标的层位分布、已知/待复算状态与证据链关系；R-02 协议流程。概念示意。*
 
 ## 风险、版权与合规说明
 
@@ -688,10 +691,10 @@ print(json.dumps({"snapshot": "RUN_DATE_HERE", "n_blocks": len(areas),
 
 供人工评审快速抽查中英文两稿的等义性。两稿逐行结构对齐：以下全部行号在 proposal.md 与 proposal.en.md 中**完全相同**。
 
-**章节对照（行号两稿一致）**：L17 执行摘要 Executive Summary · L39 设计依据 Design Basis and Source List · L89 三层范围 Three-Level Scope Framework · L122 统筹研究范围 Coordinated Research Area · L158 总体设计范围 Overall Design Area · L271 重点区域详细设计 Detailed Design of Key Areas · L313 生态与场景 AI Innovation Ecosystem, Personas, and AI+ Scenarios · L427 用地与拆改留 Land Use, Building Scale, and Retain-Renovate-Demolish · L449 交通市政 Transport, Rail, Municipal Infrastructure, and Public Services · L472 蓝绿与风貌 Blue-Green Network, Public Space, and Urban Character · L520 实施与分期 Renewal Projects, Implementation Policy, and Phasing · L563 指标与合规 Metrics, Area Recalculation, and Compliance Matrices · L600 风险与版权 Risk, Copyright, and Compliance · L610 参考资料 References · L627 附录 A Appendix A · L660 附录 B Appendix B。
+**章节对照（行号两稿一致）**：L17 执行摘要 Executive Summary · L39 设计依据 Design Basis and Source List · L89 三层范围 Three-Level Scope Framework · L122 统筹研究范围 Coordinated Research Area · L158 总体设计范围 Overall Design Area · L271 重点区域详细设计 Detailed Design of Key Areas · L313 生态与场景 AI Innovation Ecosystem, Personas, and AI+ Scenarios · L427 用地与拆改留 Land Use, Building Scale, and Retain-Renovate-Demolish · L449 交通市政 Transport, Rail, Municipal Infrastructure, and Public Services · L472 蓝绿与风貌 Blue-Green Network, Public Space, and Urban Character · L520 实施与分期 Renewal Projects, Implementation Policy, and Phasing · L563 指标与合规 Metrics, Area Recalculation, and Compliance Matrices · L603 风险与版权 Risk, Copyright, and Compliance · L613 参考资料 References · L630 附录 A Appendix A · L663 附录 B Appendix B。
 
-**插图对照（行号两稿一致）**：L35 site-overview · L118 land-use-structure · L275 key-areas · L469 mobility-bluegreen · L596 metrics-evidence。
+**插图对照（行号两稿一致）**：L35 site-overview · L118 land-use-structure · L275 key-areas · L469 mobility-bluegreen · L599 metrics-evidence。
 
-**计数对照（两稿逐类相同）**：表 32/32；证据标记 source 82 · metric 63 · assumption 41 · depth 33 · standard 11 · data 30。
+**计数对照（两稿逐类相同）**：表 32/32；核心指标 23 条（计数口径见第 11 章）；证据标记 source 82 · metric 66 · assumption 41 · depth 33 · standard 11 · data 30。
 
 **数值抽查样例（v4.4 人工复核记录，全录见 changelog）**：52,737 m²（两稿约整分别为「约 5.3 万」与 "about 53,000"，等义）；中位街块 0.662 ha、超大占比 84.8%、主脊偏差 1,247.2 m、断口 G1 1,110.2 m（两稿数字逐一相同）；发现并已修正 1 处：中文中关村段年份表述（1980 年代电子一条街 vs 1988 年试验区，原文混并，英文本正确）。
