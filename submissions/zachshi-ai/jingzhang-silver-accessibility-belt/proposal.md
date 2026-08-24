@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把京张铁路遗址公园重新定义为'适老服务脊梁'，针对京张沿线老龄社区，构建AI辅助老年人就医、办事与无障碍出行的公共服务带。方案提出'京张银龄无障碍服务带'总体概念，以南北约9公里连续无障碍慢行主轴串联三处重点区与沿线社区、医院、政务点、地铁口，布局10张AI适老场景卡（含3个测试验证场景）、5类适老用户画像、3个温暖地标、9类适老用地与7个银龄服务节点，形成可体验、可推广、可迭代的适老无障碍智能服务概念方案。"
 tracks: ["ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v9.1"
+iteration: "v9.2"
 ---
 
 # 京张银龄无障碍服务带：AI辅助老年人就医、办事与无障碍出行
