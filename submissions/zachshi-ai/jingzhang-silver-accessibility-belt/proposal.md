@@ -6,10 +6,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "把京张铁路遗址公园重新定义为'适老服务脊梁'，针对京张沿线老龄社区，构建AI辅助老年人就医、办事与无障碍出行的公共服务带。方案提出'京张银龄无障碍服务带'总体概念，以南北约9公里连续无障碍慢行主轴串联三处重点区与沿线社区、医院、政务点、地铁口，布局10张AI适老场景卡（含3个测试验证场景）、5类适老用户画像、3个温暖地标、8类适老用地与7个银龄服务节点，形成可体验、可推广、可迭代的适老无障碍智能服务概念方案。"
+summary: "把京张铁路遗址公园重新定义为'适老服务脊梁'，针对京张沿线老龄社区，构建AI辅助老年人就医、办事与无障碍出行的公共服务带。方案提出'京张银龄无障碍服务带'总体概念，以南北约9公里连续无障碍慢行主轴串联三处重点区与沿线社区、医院、政务点、地铁口，布局10张AI适老场景卡（含3个测试验证场景）、5类适老用户画像、3个温暖地标、9类适老用地与7个银龄服务节点，形成可体验、可推广、可迭代的适老无障碍智能服务概念方案。"
 tracks: ["ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v9.0"
+iteration: "v9.1"
 ---
 
 # 京张银龄无障碍服务带：AI辅助老年人就医、办事与无障碍出行
@@ -189,7 +189,7 @@ iteration: "v9.0"
 
 ### 建筑规模
 
-方案建议5栋概念性适老服务建筑：社区适老服务中心（约3800㎡）、AI导诊驿站（约600㎡）、无障碍换乘厅（约2200㎡）、适老AI技术中试楼（约5400㎡）、政务办事适老服务厅（约1600㎡），总基底面积约13600㎡ [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]。建筑规模为概念设计，不构成控规建筑规模结论；容积率、建筑高度须在控规条件确认后由专业团队深化 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
+方案建议5栋概念性适老服务建筑：社区适老服务中心（约3800㎡）、AI导诊驿站（约600㎡）、无障碍换乘厅（约2200㎡）、适老AI技术中试楼（约5400㎡）、政务办事适老服务厅（约1600㎡），5栋概念新增建筑基底合计约13,600㎡（概念新增量）；全域建筑基底（含现状保留建筑，union 复算）为82,902㎡ [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]。建筑规模为概念设计，不构成控规建筑规模结论；容积率、建筑高度须在控规条件确认后由专业团队深化 [standard:MOHURD-CONTROL-DETAILED-PLANNING]。
 
 ### 拆改留分类（概念建议）
 

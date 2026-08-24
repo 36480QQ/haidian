@@ -6,10 +6,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Re-imagining the Jingzhang Railway Heritage Park as a 'silver-age service spine' for the elderly communities along the corridor: an AI-assisted public-service belt covering elderly medical visits, civic errands and barrier-free mobility. The proposal sets out the 'Jingzhang Silver-Age Accessibility Belt' concept, linking three key areas and沿线 communities, hospitals, civic-service points and metro entrances via a ~9 km continuous barrier-free slow-mobility spine, with 10 AI elderly-service scenario cards (incl. 3 test/validation scenarios), 5 elderly personas, 3 warmth landmarks, 8 elderly-use land types and 7 silver service nodes — an experienceable, replicable and iterable concept for elderly-friendly barrier-free smart services."
+summary: "Re-imagining the Jingzhang Railway Heritage Park as a 'silver-age service spine' for the elderly communities along the corridor: an AI-assisted public-service belt covering elderly medical visits, civic errands and barrier-free mobility. The proposal sets out the 'Jingzhang Silver-Age Accessibility Belt' concept, linking three key areas and沿线 communities, hospitals, civic-service points and metro entrances via a ~9 km continuous barrier-free slow-mobility spine, with 10 AI elderly-service scenario cards (incl. 3 test/validation scenarios), 5 elderly personas, 3 warmth landmarks, 9 elderly-use land types and 7 silver service nodes — an experienceable, replicable and iterable concept for elderly-friendly barrier-free smart services."
 tracks: ["ai-public-services", "ai-traffic-walkability"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability"]
-iteration: "v9.0"
+iteration: "v9.1"
 ---
 
 # Jingzhang Silver-Age Accessibility Belt: AI-Assisted Medical, Civic and Barrier-Free Mobility Services for the Elderly
@@ -189,7 +189,7 @@ Land-use areas are recalculated from the provisional boundary in EPSG:4548; 8 el
 
 ### Building Scale
 
-Five conceptual elderly-service buildings are proposed: community silver-service centre (~3,800 m²), AI triage kiosk (~600 m²), barrier-free interchange (~2,200 m²), elderly-AI-tech pilot building (~5,400 m²), civic silver-service hall (~1,600 m²); total footprint ~13,600 m² [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. Building scale is concept design, not a regulatory-plan conclusion; FAR and height require professional deepening after regulatory confirmation [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+Five conceptual elderly-service buildings are proposed: community silver-service centre (~3,800 m²), AI triage kiosk (~600 m²), barrier-free interchange (~2,200 m²), elderly-AI-tech pilot building (~5,400 m²), civic silver-service hall (~1,600 m²); a combined footprint of ~13,600 m² (concept additions); the boundary-wide building footprint including existing retained buildings is 82,902 m² (union recompute) [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. Building scale is concept design, not a regulatory-plan conclusion; FAR and height require professional deepening after regulatory confirmation [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
 ### Retain-Renovate-Demolish (concept)
 
@@ -328,7 +328,7 @@ Phasing is concept suggestion, requiring professional deepening after regulatory
 
 ### Core Metrics
 
-Core metrics are recalculated from the provisional boundary in EPSG:4548 [metric:site_area_sqm]: site area ~11.41 million m²; green ratio ~13.7% (concept green, not statutory green ratio); public-space ratio ~2.0% (plaza/garden share, excluding the heritage-park green whole); building density ~0.7% (concept footprint share) [metric:green_ratio] [metric:public_space_ratio] [metric:building_density]. Barrier-free corridor total ~17.3 km; 7 silver service nodes [metric:barrier_free_route_length_m] [metric:elderly_service_node_count]. 3 key areas, 8 land-use types, 5 concept buildings, 5 roads and 3 phases all correspond to layers [metric:key_area_count] [metric:land_use_zone_count] [metric:building_count].
+Core metrics are recalculated from the provisional boundary in EPSG:4548 [metric:site_area_sqm]: site area ~11.41 million m²; green ratio ~13.7% (concept green, not statutory green ratio); public-space ratio ~2.0% (plaza/garden share, excluding the heritage-park green whole); building density ~0.7% (concept footprint share) [metric:green_ratio] [metric:public_space_ratio] [metric:building_density]. Barrier-free corridor total ~17.3 km; 7 silver service nodes [metric:barrier_free_route_length_m] [metric:elderly_service_node_count]. 3 key areas, 9 land-use parcels, 5 concept buildings, 5 roads and 3 phases all correspond to layers [metric:key_area_count] [metric:land_use_zone_count] [metric:building_count].
 
 ### Known Data Gaps (honestly flagged, do not block content scoring)
 
