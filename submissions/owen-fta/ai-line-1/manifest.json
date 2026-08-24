@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "ai-line-1",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -264,14 +264,16 @@
     },
     {
       "path": "assets/ai-line1-mark.svg",
-      "role": "brand_asset",
+      "role": "other",
+      "role_detail": "brand_asset",
       "required": false,
       "language": "neutral",
       "sha256": "b67f9a9cfc19e9e8d098afade661df3664f9c001c88bcd22a89facb82efaaece"
     },
     {
       "path": "assets/ai-line1-symbol.svg",
-      "role": "brand_asset",
+      "role": "other",
+      "role_detail": "brand_asset",
       "required": false,
       "language": "neutral",
       "sha256": "481cfd5e4f53571a782b182e333b19eba6e019843aa4967bfeca685ac27dd8c9"
@@ -285,7 +287,8 @@
     },
     {
       "path": "assets/figures/site-overview.svg",
-      "role": "source_vector",
+      "role": "other",
+      "role_detail": "source_vector",
       "required": false,
       "language": "neutral",
       "sha256": "04fe4761efa72b515cdb9cda28b76a87effa8eb08fe040baee68bae3a793ff13"
@@ -299,7 +302,8 @@
     },
     {
       "path": "assets/figures/land-use-structure.svg",
-      "role": "source_vector",
+      "role": "other",
+      "role_detail": "source_vector",
       "required": false,
       "language": "neutral",
       "sha256": "5439ccf886a07b8540014a88aff4bf5f17bc539fd0f814f397865866e6a37f37"
@@ -313,7 +317,8 @@
     },
     {
       "path": "assets/figures/key-areas.svg",
-      "role": "source_vector",
+      "role": "other",
+      "role_detail": "source_vector",
       "required": false,
       "language": "neutral",
       "sha256": "e07a00e780b33153c627c4d59e28e7830c328540f77380d734f22e2c273edd87"
@@ -327,7 +332,8 @@
     },
     {
       "path": "assets/figures/mobility-bluegreen.svg",
-      "role": "source_vector",
+      "role": "other",
+      "role_detail": "source_vector",
       "required": false,
       "language": "neutral",
       "sha256": "94b8f9fc506acf173f214329875cd862b58072a2c067122078c165b700bde6a3"
@@ -341,7 +347,8 @@
     },
     {
       "path": "assets/figures/metrics-evidence.svg",
-      "role": "source_vector",
+      "role": "other",
+      "role_detail": "source_vector",
       "required": false,
       "language": "neutral",
       "sha256": "77bbf0936c52e4a567cb2d8a0fa7e90d15352fc291fb3caa2c1a681362c947ca"
@@ -416,42 +423,48 @@
     },
     {
       "path": "assets/figures/five-highs-diagnosis.svg",
-      "role": "proposal_figure_source",
+      "role": "other",
+      "role_detail": "proposal_figure_source",
       "required": false,
       "language": "neutral",
       "sha256": "be19c8abc09c1975a150773a82fea9a05767f281bdbea5058a17b00f4af9efb1"
     },
     {
       "path": "assets/personas/persona-engineer-v2.png",
-      "role": "persona_portrait",
+      "role": "other",
+      "role_detail": "persona_portrait",
       "required": false,
       "language": "neutral",
       "sha256": "a7192fad173431ec55f41f5abb3f36ac90d9f488a6b95889091adc16bb9bb8df"
     },
     {
       "path": "assets/personas/persona-startup-v2.png",
-      "role": "persona_portrait",
+      "role": "other",
+      "role_detail": "persona_portrait",
       "required": false,
       "language": "neutral",
       "sha256": "bc26f4691c53e8778eb7cc4d6362ad33d541b83b8f7bf5a094510b86afedd44f"
     },
     {
       "path": "assets/personas/persona-student-v2.png",
-      "role": "persona_portrait",
+      "role": "other",
+      "role_detail": "persona_portrait",
       "required": false,
       "language": "neutral",
       "sha256": "619caef68a0a53a7cfb3da06507316c93f9bc168f81024e46f4aeb85d9e0172f"
     },
     {
       "path": "assets/personas/persona-family-v2.png",
-      "role": "persona_portrait",
+      "role": "other",
+      "role_detail": "persona_portrait",
       "required": false,
       "language": "neutral",
       "sha256": "63986ecb5a6c1867335bc53d4dcf1e5b3af04ce88aa84225d575da660862a618"
     },
     {
       "path": "assets/personas/persona-service-v2.png",
-      "role": "persona_portrait",
+      "role": "other",
+      "role_detail": "persona_portrait",
       "required": false,
       "language": "neutral",
       "sha256": "b4a1220be040c61707ee277f91e366af13afbf0610fa143dbf1066d5c53a4735"
@@ -486,7 +499,8 @@
     },
     {
       "path": "assets/figures/tech-origin-interface.svg",
-      "role": "proposal_figure_source",
+      "role": "other",
+      "role_detail": "proposal_figure_source",
       "required": false,
       "language": "neutral",
       "sha256": "cdace5fd49c4427dadaacda655be90a45809dc8f9d7ea498290b934fc5bbc837"
@@ -500,7 +514,8 @@
     },
     {
       "path": "assets/figures/tech-dazhongsi-crossing.svg",
-      "role": "proposal_figure_source",
+      "role": "other",
+      "role_detail": "proposal_figure_source",
       "required": false,
       "language": "neutral",
       "sha256": "54e2c0cbe668e0ddae16ce5f99bfa9443194090d1b3cb0d1ccb9c7b31b3bac01"
@@ -514,7 +529,8 @@
     },
     {
       "path": "assets/figures/tech-zhongzhiyuan-test-garden.svg",
-      "role": "proposal_figure_source",
+      "role": "other",
+      "role_detail": "proposal_figure_source",
       "required": false,
       "language": "neutral",
       "sha256": "a078bb0b33582ddfbf8657928e4369b188cd5ba0f250b99189e0b2fead901011"
@@ -528,7 +544,8 @@
     },
     {
       "path": "assets/figures/scope-node-technical-atlas.svg",
-      "role": "proposal_figure_source",
+      "role": "other",
+      "role_detail": "proposal_figure_source",
       "required": false,
       "language": "neutral",
       "sha256": "3e87b6e85044b6876b25e9e53d3d0b81f2b170fd07942c4a02f8556e87492cca"
