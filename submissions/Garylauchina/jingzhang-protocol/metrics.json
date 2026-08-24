@@ -1203,6 +1203,67 @@
       ],
       "scope_note": "Template-structure evidence only; not proof of execution, procurement, delivery or public benefit.",
       "formula": "count(required clauses C01 through C12 present in FP01-CONTRACT-001) / 12"
+    },
+    "fp01_concrete_service_problem_count": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/fp01-contract.json"
+      ],
+      "confidence": "high",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FP01-CONCRETE-PROTOTYPE-001"
+      ],
+      "scope_note": "Concept-structure evidence only; not observed performance, confirmed siting, procurement or delivery.",
+      "formula": "count(candidate service problems in visual/assets/fp01-contract.json with one primary user service)"
+    },
+    "fp01_receipt_event_type_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/fp01-contract.json"
+      ],
+      "confidence": "high",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FP01-CONCRETE-PROTOTYPE-001"
+      ],
+      "scope_note": "Concept-structure evidence only; not observed performance, confirmed siting, procurement or delivery.",
+      "formula": "count(distinct illustrative receipt event types success,refusal,human_takeover,exit_restoration) / 4"
+    },
+    "fp01_spatial_prototype_scale_count": {
+      "status": "known",
+      "value": 3.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/fp01-contract.json"
+      ],
+      "confidence": "high",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FP01-CONCRETE-PROTOTYPE-001"
+      ],
+      "scope_note": "Concept-structure evidence only; not observed performance, confirmed siting, procurement or delivery.",
+      "formula": "count(distinct concept spatial scales 1:500,1:100,1:50 in visual/assets/fp01-contract.json)"
+    },
+    "fp01_observed_human_baseline_task_completion_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/fp01-contract.json"
+      ],
+      "formula": "completed baseline referral tasks / attempted baseline referral tasks at D0",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-FLAGSHIP-FP01",
+        "A-FP01-CONCRETE-PROTOTYPE-001"
+      ],
+      "reason": "No field baseline has been measured; the staffed paper/phone service task must be observed and agreed at D0.",
+      "professional_follow_up_required": true
     }
   }
 }

@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v0.10 - 2026-08-24
+
+- Moved the first-screen argument from an abstract capability system to **one fictional composite user, one candidate service problem to be confirmed at D0, and one revocable, unexecuted first-use contract / 一个虚构复合使用者、一个 D0 待确认候选服务问题、一份可撤销且未执行的首用合同**.
+- Defined `FP01-S07-PROBLEM-001` as one bounded design question: whether an early-career user can obtain one human-confirmed learning or career referral—or a reasoned, appealable refusal—without depending on a smartphone or an AI-only path. The persona is explicitly fictional; wheelchair access and no-phone entry are synthetic accessibility and non-digital design-test conditions, not fieldwork findings.
+- Enforced a single service-role hierarchy across prose, geometry and machine evidence: **S07 is the only user-facing service problem, S03 performs independent evaluation only, and S04 provides interface support only**. AI may not decide admission, employment, hiring, benefits, credentials or ranking of people.
+- Added `visual/assets/fp01-contract.json` as a bilingual, machine-checkable evidence pack and `visual/assets/verify-fp01-contract.js` as its standard-library verifier. The pack holds the unexecuted contract structure, role separation, prohibited decisions, D0 measurement plan, spatial prototypes, receipt fixtures and restoration rules; it is not a signed contract, procurement instrument, authorization, field study, operating record or delivery evidence.
+- Kept every observed D0 baseline value `unknown` / `pending_measurement`, including task completion, elapsed time, human-takeover delay, appeal comprehension, exit restoration and service accessibility. No synthetic value is used to imply a real baseline or achieved performance; failure to establish the real problem and baseline at D0 stops the pilot.
+- Added three concept spatial prototypes—**1:500** provisional evidence window, **1:100** reversible 18×12 m service module, and **1:50** human-takeover interface/section. Every dimension remains pending survey, current-standard review and professional confirmation and is not a precise site, existing room, compliance proof, construction drawing or commitment to build.
+- Added four illustrative receipt event classes—`success`, `refusal`, `human_takeover`, and `exit_restoration`—with accountable authority, reason, appeal, deletion and baseline-restoration fields. Complete fixture coverage proves schema completeness only, not that a service operated, a receipt was issued or restoration occurred.
+- Rebuilt the paired lead figures, offline exhibit, rendered proposal and Chinese/English A3/A0 drawings around the person—task—contract chain, while retaining the SOURCE—STACK—PROVE—LIVE & MARKET—ENABLE—COMMONS network as supporting infrastructure and preserving the provisional SITE/KEY and implementation disclosures.
+- Retained the strategic alignment with China’s “AI Plus” direction while expressly rejecting claims of national-pilot designation, government authorization, approved planning status, adoption, procurement, deployment, measured public benefit or proven global leadership.
+
 ## v0.9 - 2026-08-24
 
 - Raised the public proposition to **从自主筑路到自主用智——面向国家“人工智能+”战略的城市级先行验证 / From Independent Railway Engineering to Trusted AI at City Scale — An Urban-Scale Demonstrator Aligned with China’s “AI Plus” Strategy**, while retaining **京张，再次开路 / JING-ZHANG BREAKS NEW GROUND** as the stable identity.

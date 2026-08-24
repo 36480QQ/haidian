@@ -22,6 +22,8 @@
         "submissions/Garylauchina/jingzhang-protocol/agent.json",
         "submissions/Garylauchina/jingzhang-protocol/assets/figures/fp01-first-use-100-days.en.png",
         "submissions/Garylauchina/jingzhang-protocol/assets/figures/fp01-first-use-100-days.png",
+        "submissions/Garylauchina/jingzhang-protocol/assets/figures/fp01-spatial-prototype.en.png",
+        "submissions/Garylauchina/jingzhang-protocol/assets/figures/fp01-spatial-prototype.png",
         "submissions/Garylauchina/jingzhang-protocol/assets/figures/key-areas.en.png",
         "submissions/Garylauchina/jingzhang-protocol/assets/figures/key-areas.png",
         "submissions/Garylauchina/jingzhang-protocol/assets/figures/land-use-structure.en.png",
@@ -64,13 +66,15 @@
         "submissions/Garylauchina/jingzhang-protocol/self_check.json",
         "submissions/Garylauchina/jingzhang-protocol/sources.json",
         "submissions/Garylauchina/jingzhang-protocol/standard_matrix.json",
+        "submissions/Garylauchina/jingzhang-protocol/visual/assets/fp01-contract.json",
+        "submissions/Garylauchina/jingzhang-protocol/visual/assets/verify-fp01-contract.js",
         "submissions/Garylauchina/jingzhang-protocol/visual/index.en.html",
         "submissions/Garylauchina/jingzhang-protocol/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/Garylauchina/jingzhang-protocol": "formal"
       },
-      "total_bytes": 28954279,
+      "total_bytes": 30356612,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -152,15 +156,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 70,
+        "known_metric_refs_required": 73,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 24,
+          "source": 23,
           "standard": 9,
           "depth": 15,
-          "data": 42,
-          "metric": 51
+          "data": 43,
+          "metric": 55
         }
       }
     },

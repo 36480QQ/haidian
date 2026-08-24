@@ -250,7 +250,7 @@
       "id": "A-NATIONAL-STRATEGIC-FRAMING-001",
       "status": "conceptual_governance",
       "statement": "Three national official sources establish an application-oriented AI strategy context, while the Haidian Jing-Zhang midterm direction connects national deployment to a proposed human-AI integrated test field, AI safety governance and perceivable public scenarios.",
-      "impact": "V0.9 may frame Jing-Zhang as a city-scale concept demonstrator aligned with national strategy, but must not call this submission a nationally designated pilot, approved plan, adopted proposal, implemented project, world first or proven world leader.",
+      "impact": "V0.10 may frame Jing-Zhang as a city-scale concept demonstrator aligned with national strategy, but must not call this submission a nationally designated pilot, approved plan, adopted proposal, implemented project, world first or proven world leader.",
       "affected_files": [
         "proposal.md",
         "proposal.en.md",
@@ -280,7 +280,7 @@
     {
       "id": "A-APPLICATION-CAPABILITY-REPLICATION-001",
       "status": "design_metric_only",
-      "statement": "The six application-capability stages are a V0.9 proposal taxonomy for organizing existing spatial, contractual and governance components; mapping every stage proves structural coverage only.",
+      "statement": "The six application-capability stages are a V0.10 proposal taxonomy for organizing existing spatial, contractual and governance components; mapping every stage proves structural coverage only.",
       "impact": "The stage count and mapping ratio do not prove procurement, deployment, external adoption, public benefit, published standards, national replication or global leadership. All related outcome metrics remain unknown until dated independent evidence exists.",
       "affected_files": [
         "proposal.md",
@@ -477,7 +477,7 @@
     {
       "id": "A-FLAGSHIP-FP01",
       "status": "conceptual_governance",
-      "statement": "FP01 AI Origin First-Use Station is a concept implementation brief that bundles S03, S04, S07 under the official spatial role SOURCE+ENABLE; it is not an approved project, site, operator or procurement.",
+      "statement": "FP01 AI Origin First-Use Station is a concept implementation brief for one candidate learning/career referral task. S07 is the sole user service; S03 evaluates it and S04 provides the interface. It is not an approved project, confirmed site, operator or procurement.",
       "impact": "The registry proves a complete proposed operator consortium, 90-day protocol, one-year indicator set, funding/space/data boundaries and five-gate conversion path. It does not prove authorization, budget, delivery, public benefit, market adoption or a published standard.",
       "affected_files": [
         "geometry/public_space.geojson",
@@ -487,7 +487,15 @@
         "compliance_matrix.json",
         "standard_matrix.json",
         "design_depth_matrix.json",
-        "self_check.json"
+        "self_check.json",
+        "visual/assets/fp01-contract.json",
+        "visual/assets/verify-fp01-contract.js",
+        "proposal.en.md",
+        "assets/figures/fp01-first-use-100-days.png",
+        "assets/figures/fp01-spatial-prototype.png",
+        "visual/index.html",
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
       ],
       "affected_metric_ids": [
         "flagship_first_use_procurement_count",
@@ -500,7 +508,11 @@
         "flagship_verified_public_benefit_count",
         "fp01_first_use_delivery_contract_template_count",
         "fp01_100_day_gate_coverage_ratio",
-        "fp01_contract_clause_coverage_ratio"
+        "fp01_contract_clause_coverage_ratio",
+        "fp01_concrete_service_problem_count",
+        "fp01_receipt_event_type_coverage_ratio",
+        "fp01_spatial_prototype_scale_count",
+        "fp01_observed_human_baseline_task_completion_rate"
       ],
       "resolution_trigger": "An accountable scene owner confirms the surveyed carrier, operator roles, legal and procurement route, budget, data access, baseline and go/no-go thresholds for this pilot.",
       "replacement_action": "Replace concept roles and targets with signed records; preserve failed and stopped tests; populate the four outcome metrics only from dated, auditable operating evidence.",
@@ -508,7 +520,7 @@
       "title_zh": "AI原点首用站",
       "title_en": "AI Origin First-Use Station",
       "planning_role": "SOURCE+ENABLE",
-      "portfolio_role_zh": "在AI原点社区把城市多模态评测、场景接入和学习就业协作组织成从原创成果到首张真实订单的可审计通道。",
+      "portfolio_role_zh": "在AI原点社区以一名虚构复合人物的一次学习/职业转介任务为主线；S07承载服务，S03负责多模态与无障碍评测，S04负责目录和回执接口，把源头创新收束为可审计、可人工接管、可退出的一份城市首用合同。",
       "scenario_ids": [
         "S03",
         "S04",
@@ -548,15 +560,15 @@
       "ninety_day_test": {
         "status": "concept_proposal",
         "days_0_30": {
-          "purpose": "Select one bounded service problem, name the scene owner and first-use buyer role, lock benchmark, data, IP, accessibility and procurement-review boundaries.",
+          "purpose": "Confirm or replace the candidate learning/career referral problem with the service owner and user/accessibility panel; measure the staffed paper/phone baseline; survey the carrier; lock prohibited automated decisions, data, IP and stop boundaries.",
           "gate": "baseline, roles, permissions, data boundary and stop route documented"
         },
         "days_31_60": {
-          "purpose": "Run S03 evaluation, S04 interface integration and S07 assisted user testing in sandbox or shadow mode; no live eligibility or employment decision is delegated.",
+          "purpose": "Run S07 as the one user service in supervised shadow mode, with S03 evaluating accessibility and failure modes and S04 exchanging catalogue and receipt fields; AI never decides admission, eligibility or employment.",
           "gate": "sandbox, shadow or supervised evidence is replayable and human-reviewed"
         },
         "days_61_90": {
-          "purpose": "Publish an independent evidence summary and a legally reviewed limited first-use specification, or stop and return the unresolved evidence to the source team.",
+          "purpose": "Replay success, refusal, human-takeover and exit-restoration receipts; publish passes, failures and uncertainty; obtain an independent go, revise or stop decision.",
           "gate": "independent review and accountable go, revise or stop record completed"
         },
         "go_no_go_gate": [
@@ -638,10 +650,10 @@
       ],
       "first_use_delivery_contract": {
         "contract_id": "FP01-CONTRACT-001",
-        "title_zh": "AI原点首用站100日交付合同模板",
-        "title_en": "AI Origin 100-Day First-Use Delivery Contract Template",
+        "title_zh": "AI原点可撤销城市首用合同模板",
+        "title_en": "AI Origin Revocable Urban First-Use Contract Template",
         "status": "concept_template_unexecuted",
-        "single_contract_rule": "One contract template governs S03, S04 and S07; no separate showcase, evaluation or training contract may bypass the shared acceptance and exit duties.",
+        "single_contract_rule": "S07 is the sole user-facing service task. S03 is evaluation support and S04 is interface support; neither may become a separate showcase or bypass the shared baseline, acceptance and exit duties.",
         "activation_rule": "A D90 independent go decision only opens a separate authorization discussion; a D91-D100 limited acceptance may be discussed only after lawful procurement, legal and professional authorization.",
         "milestones": [
           {
@@ -692,8 +704,30 @@
           "performance thresholds are locked at D30 from a real baseline rather than invented in advance",
           "failed acceptance cannot release payment or authorize diffusion"
         ],
-        "execution_boundary": "Template-structure evidence only; not a signed contract, procurement authorization, delivered service, market adoption or verified public benefit."
-      }
+        "execution_boundary": "Template-structure evidence only; not a signed contract, procurement authorization, delivered service, market adoption or verified public benefit.",
+        "problem_definition_ref": "visual/assets/fp01-contract.json#FP01-S07-PROBLEM-001",
+        "verification_script": "visual/assets/verify-fp01-contract.js",
+        "baseline_status": "unknown_pending_d0_measurement",
+        "receipt_event_types": [
+          "success",
+          "refusal",
+          "human_takeover",
+          "exit_restoration"
+        ],
+        "spatial_scale_ids": [
+          "SCALE-1-500",
+          "SCALE-1-100",
+          "SCALE-1-50"
+        ]
+      },
+      "primary_user_service_scenario_id": "S07",
+      "supporting_scenario_roles": {
+        "S03": "evaluation_support",
+        "S04": "interface_support"
+      },
+      "candidate_problem_id": "FP01-S07-PROBLEM-001",
+      "candidate_problem_status": "pending_d0_service_owner_and_user_panel_confirmation",
+      "baseline_status": "unknown_pending_d0_measurement"
     },
     {
       "id": "A-FLAGSHIP-FP02",
@@ -1348,7 +1382,7 @@
       "id": "A-GEOMETRY-CROSSCHECK-001",
       "status": "background_only_unresolved",
       "statement": "Independent community cross-checks report that the repository provisional SITE and Dazhongsi key-area polygons do not align with several namesake mapped features; these checks are reproducible background evidence, not official geometry corrections.",
-      "impact": "V0.9 retains V0.8's zero-coordinate-movement decision, separates the announced relational design tasks from the provisional placeholder polygons, and prohibits parcel, station-exit or engineering claims until official geometry is released.",
+      "impact": "V0.10 retains V0.8's zero-coordinate-movement decision, separates the announced relational design tasks from the provisional placeholder polygons, and prohibits parcel, station-exit or engineering claims until official geometry is released.",
       "affected_files": [
         "geometry/site_boundary.geojson",
         "geometry/key_areas.geojson",
@@ -1382,6 +1416,56 @@
       ],
       "resolution_trigger": "Trusted rights-cleared official SITE_BOUNDARY and all three KEY_AREA polygons are released.",
       "replacement_action": "Replace provisional geometry, relocate or verify every dependent feature, and regenerate all geometry-derived metrics, figures, HTML and PDFs; retire the background cross-check after official reconciliation."
+    },
+    {
+      "id": "A-FP01-CONCRETE-PROTOTYPE-001",
+      "status": "conceptual_prototype_pending_d0_confirmation",
+      "statement": "FP01 is deepened around one candidate service question: whether a fictional composite early-career wheelchair user without a smartphone can obtain one learning or career referral at a staffed, accessible window, with AI limited to catalogue access, explanation and routing and with immediate human fallback.",
+      "impact": "The package can prove one defined problem, one seven-step design journey, three concept spatial scales and four illustrative receipt event types. It cannot prove the persona represents an observed resident, that the site is confirmed, or that any baseline, threshold, service result or public benefit has been measured.",
+      "affected_files": [
+        "visual/assets/fp01-contract.json",
+        "visual/assets/verify-fp01-contract.js",
+        "geometry/public_space.geojson",
+        "metrics.json",
+        "proposal.md",
+        "proposal.en.md",
+        "assets/figures/fp01-first-use-100-days.png",
+        "assets/figures/fp01-spatial-prototype.png",
+        "visual/index.html",
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "affected_metric_ids": [
+        "fp01_concrete_service_problem_count",
+        "fp01_receipt_event_type_coverage_ratio",
+        "fp01_spatial_prototype_scale_count",
+        "fp01_observed_human_baseline_task_completion_rate"
+      ],
+      "problem_id": "FP01-S07-PROBLEM-001",
+      "design_persona_id": "FP01-PERSONA-COMPOSITE-001",
+      "design_persona_status": "fictional_composite_not_observed_person",
+      "primary_service_scenario_id": "S07",
+      "supporting_evaluation_scenario_id": "S03",
+      "supporting_interface_scenario_id": "S04",
+      "carrier_feature_ids": [
+        "PROV-KEY-002",
+        "PUBLIC-TEST-001",
+        "ROOM-TEST-001"
+      ],
+      "baseline_status": "unknown_pending_d0_measurement",
+      "spatial_scale_ids": [
+        "SCALE-1-500",
+        "SCALE-1-100",
+        "SCALE-1-50"
+      ],
+      "receipt_event_types": [
+        "success",
+        "refusal",
+        "human_takeover",
+        "exit_restoration"
+      ],
+      "resolution_trigger": "At D0, an accountable service owner and accessibility/user panel confirm or replace the candidate problem and persona, survey the carrier, and measure the same task through the staffed non-AI baseline.",
+      "replacement_action": "Replace the fictional persona and provisional dimensions with consented co-design and survey evidence; populate observed metrics only from dated records while retaining failed, refused, takeover and exit-restoration evidence."
     }
   ]
 }
