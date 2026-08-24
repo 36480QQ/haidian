@@ -45,18 +45,35 @@ The five functions translate as follows: the Full-Stack Independent AI Innovatio
 
 **Naming system and visual identity direction (agent.1)**: the main name follows the official "Centennial Jing-Zhang AI Innovation Belt (JZ-AI Belt)"; the spatial naming system is "Memory Spine — Source / Transform / Scenario Archive Station — Record Wings"; the Logo direction uses an "archive card × rail sleeper" motif—archive cards arranged along the rails, each bearing an "archiving line," with space above the line always awaiting new contributions; the identity language uses the three archive-status colors (in archive / pending review / corrected) across wayfinding, scenario cards, and public interfaces, homologous with railway signal culture. All logos, fonts, and graphics must be rights-cleared before use [source:AGENT-TASKBOOK].
 
-### Global cases: mechanisms only, no borrowed numbers
+### Global AI innovation ecosystem cases: mechanisms only, no borrowed numbers (agent.2)
 
-Six global cases fall into two families—**memory/archive institutions** and **open collaboration platforms**—and the proposal's core judgment is the convergence of the two (case information is taken from public sources as background material; no performance numbers are cited and no local analogy is made):
+The five cases below are **needs-review/background** public-page snapshots (accessed 2026-08-24). They are used only to frame mechanism questions: they are excluded from formal evidence mapping, approval grounds and local performance comparison. No images, logos, maps, passages or numbers are copied, and no endorsement, applicability, partnership or implementation commitment is inferred.
 
-| Case | Transferable mechanism | Archive Belt application |
-|:---|:---|:---|
-| International Council on Archives (ICA) | Openness, searchability, long-term preservation standards | Archive Charter principles 1–2 |
-| US National Archives Citizen Archivist program | Public participation in description and correction | Contribution Intake Desks and correction review |
-| Wikipedia contributor system | Version history, dispute arbitration, reputation | Commit stele and Honor Yearbook |
-| Open-source foundations (e.g., Linux Foundation) | Commit–review–merge contribution records | Open-Source Commit Stele |
-| City memory programs (oral-history archives) | Archives as public cultural assets | Memory era installations on the spine |
-| Open data portals | Tiered open data with provenance | Archive data platform (JZA-13) |
+| Global case | Ecosystem inputs covered | Mechanism abstraction only | Conceptual correspondence in this proposal |
+|:---|:---|:---|:---|
+| Mila (Montréal) [source:MILA-ECOSYSTEM] | Research, talent, commercialization | A continuous interface between a research community and lab-to-startup support | The Source Station places research, standards, talent and reviewable tests together |
+| Vector Institute (Toronto) [source:VECTOR-ECOSYSTEM] | Research, talent, industry adoption | A long-term organizational interface across research, talent and industry adoption | The Transform Station tier-archives talent, enterprise outcomes and public display |
+| Hub71+ AI (Abu Dhabi) [source:HUB71-AI-ECOSYSTEM] | Capital, firms, market, test environment | Venture building, capital/corporate connections and a guided testing path | The two wings hold a conceptual interface for capital and enterprise actors **to be confirmed**; no funding or access commitment |
+| AI Sweden Data Factory (Sweden) [source:AI-SWEDEN-DATA-FACTORY] | Data, compute, compliance, testing | Data, compute and test environments organized with legal and technical support | JZA-07/JZA-13 form a data–compute–evaluation interface through minimum-necessary, tiered-access and test records |
+| Forum Virium Helsinki Mobility Lab (Helsinki) [source:HELSINKI-MOBILITY-LAB] | Urban scenarios, digital twin, resident feedback | A real-city setting links government, research, firms and resident feedback | The Scenario Station and Xiaoyue wing bring staffed service, correction and de-identified feedback into stage reviews |
+
+| Information item | Source-use boundary in this revision |
+|:---|:---|
+| Grade and time | `needs-review/background`; public-page snapshot accessed 2026-08-24; future operating status requires renewed verification |
+| Licence and content boundary | Link plus short mechanism summary only; no visual, logo, map, long text, number or proprietary material reused |
+| Local-use boundary | It frames questions that may be discussed only; it does not establish redlines, area, finance, delivery actors, approvals, collaboration or performance claims |
+
+### AI innovation ecosystem mechanism loop (agent.2)
+
+The proposal does not transplant these cases to Haidian. Instead, it treats **land and space, industry, capital, talent, compute, data and test scenarios** as inputs to be verified, and organizes them through a conceptual loop of “three stations / two wings — 13 projects — stage review.” The Source Station combines research, talent, compute and standards; the Transform Station provides an interface for outcomes, firms and capital collaboration; the Scenario Station and Xiaoyue wing host real service, testing and correction; the Zhongguancun service wing records factor collaboration. Competent legal entities decide whether any later phase proceeds only after formal boundaries, ownership, data, finance and operating conditions are confirmed; this proposal makes no prior commitment.
+
+![AI innovation ecosystem mechanism matrix](assets/figures/ai-ecosystem.en.png)
+
+| Input | Three-station / two-wing carrier | Projects and phase | Feedback and role boundary |
+|:---|:---|:---|:---|
+| Land/space, research, talent, compute | Source Station · Zhongzhiyuan | JZA-07, JZA-10 (P2/P3) | Universities and research institutes are **conceptual roles**; standards, evaluation and spatial conditions are reviewed |
+| Industry, capital, IP, talent | Transform Station · AI Origin Community + Zhongguancun service wing | JZA-02, JZA-04, JZA-05 (P1) | Enterprise and investment actors are **to be confirmed**; no funding size, access or return commitment |
+| Data, testing, civic service, resident experience | Scenario Station · Dazhongsi + Xiaoyue scenario wing | JZA-01, JZA-03, JZA-06, JZA-08, JZA-09, JZA-11, JZA-12, JZA-13 (P1/P2/P3/ongoing) | City and community service windows are **conceptual roles**; de-identified feedback, human review and a stop mechanism come first |
 
 ### Conceptual differentiation from adjacent peer themes (originality argument)
 
