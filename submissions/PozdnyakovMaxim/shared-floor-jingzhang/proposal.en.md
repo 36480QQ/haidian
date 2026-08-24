@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Replace the model, not the city: one shared ground builds on the existing Jing-Zhang heritage public space; seven Switch Streets connect campuses, neighbourhoods, transit and industry; and three long-life frames—Proof Yard, Origin Cloister and Exchange Hall—host replaceable services, infill and AI equipment. Official polygons trigger whole-package rebinding and recalculation."
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.13-candidate"
+iteration: "v2.14-candidate"
 ---
 
 # 京张共地 / THE SHARED FLOOR
@@ -66,7 +66,7 @@ The atlas uses ODbL-attributed OSM rail, water, parks, stations and campuses, pl
 
 > **How to read.** Reading order: the OSM-derived locator at left, with its shared-floor spine, seven candidate lateral interfaces and three task anchors [metric:switch_count] [metric:key_area_count]; the middle column top to bottom — Proof Yard paired bays, Origin difference cloister, Exchange Hall one queue and three exits [metric:changeover_topology_count]; then the dark ACTUAL column with 29/36, 7 Δ and 12/12. [metric:semantic_witness_topology_agreement_count] [metric:semantic_witness_disagreement_count] [metric:semantic_witness_hardstop_hold_count] It proves one A/B/H relationship can become three unlike spaces while the green H band beneath each diagram stays continuous and non-removable in every topology. [assumption:A-OPERATIONS-001] The base orients only; it is not a legal boundary or evidence of title. Spine, interfaces and anchors are participant-set, the provisional boundary sits 412.5 m from the named park polygon, and an official polygon triggers a whole-package rebind and recompute. [source:OSM-CORRIDOR-CONTEXT-2026] [metric:binding_offset_m] [assumption:A-BND-001]
 
-This participant-authored hypothesis is not an existing-conditions map. It is auditable and wholly rebindable; official boundaries, ownership, utilities and approvals trigger recomputation of every position and quantity. [data:geometry/site_boundary.geojson#SITE-001] [metric:binding_offset_m]
+This participant-authored hypothesis is not an existing-conditions map. It is auditable and wholly rebindable, and the trigger is held by the organizer: once the organizer releases official boundaries, ownership, utilities and approvals, this package recomputes every position and quantity. The participant-side method, layering and recomputation scripts are already in place; what is awaited is organizer data, not participant action. [data:geometry/site_boundary.geojson#SITE-001] [metric:binding_offset_m]
 
 ![Open Building time layers: public ground, long-life support, service chassis, replaceable infill and AI equipment](assets/figures/land-use-structure.en.png)
 
@@ -513,7 +513,7 @@ The 68.0% winter-sun and 36.6% summer-shade values remain simplified noon proxie
 
 ## Risk, Copyright, and Compliance
 
-The primary risk is incomplete spatial evidence. Official boundaries, key areas, buildings, roads, station exits, ownership, heritage controls, utilities and regulatory controls are absent. The real contribution is a family of prototypes, relationships and a recalculation method—not a site approval. The 412.5-metre discrepancy between the provisional boundary and the named OSM park polygon remains visible. Release of official data triggers a whole-package rebuild rather than continued use under a disclaimer. [source:BOUNDARY-BASIS] [assumption:A-BND-001] [depth:risk_missing_data]
+The primary risk is incomplete spatial evidence, and that evidence is held by the organizer and the competent authorities. Official boundaries, key areas, buildings, roads, station exits, ownership, heritage controls, utilities and regulatory controls are absent. The real contribution is a family of prototypes, relationships and a recalculation method—not a site approval. The 412.5-metre discrepancy between the provisional boundary and the named OSM park polygon remains visible. Release of official data triggers a whole-package rebuild rather than continued use under a disclaimer. [source:BOUNDARY-BASIS] [assumption:A-BND-001] [depth:risk_missing_data]
 
 Public AI and model changeover create a second risk family: a robot may collide or obstruct a route; sensing may exceed purpose; A/B schema or tools may drift; and a candidate may route difficult users to H to manufacture an advantage. The generative-AI measures provide general governance context only. Human priority, same task and queue, two keys, data minimisation, no identity recognition, physical stop, paper/fixed information and H hot standby are participant-authored mitigations still requiring accountable and professional review. Medical, legal, public-safety and planning judgements are never issued by a model alone. [source:GENERATIVE-AI-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW]
 

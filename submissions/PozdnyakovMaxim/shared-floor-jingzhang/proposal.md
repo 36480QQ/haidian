@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "换模型，不换城市：以既有京张遗产公共空间为一层共地，用七条转换街缝合校园、社区、站点与产业，并以验证院、原点廊院、城市交汇厅三种长期框架承载可替换的服务、内装和 AI 设备；官方边界到位后整包重绑定、复算。"
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v2.13-candidate"
+iteration: "v2.14-candidate"
 ---
 
 # 京张共地 / THE SHARED FLOOR
@@ -66,7 +66,7 @@ v1.7 第一次把这一命题交给一个真实但严格受限的模型见证：
 
 > **怎么看。** 阅读顺序为：左幅 OSM 派生定位底图上的共地脊线、7 个候选横向接口与 3 处任务锚点 [metric:switch_count] [metric:key_area_count]；中列自上而下的验证院双跨同测、原点廊院差分回廊、交汇厅单队列三出口 [metric:changeover_topology_count]；右侧深色 ACTUAL 栏的 29/36、7 Δ 与 12/12。[metric:semantic_witness_topology_agreement_count] [metric:semantic_witness_disagreement_count] [metric:semantic_witness_hardstop_hold_count] 它证明同一 A/B/H 关系可落成三种互不相同的空间，而三张图解底部那条绿色 H 带在每种拓扑中都贯通、不可删减。[assumption:A-OPERATIONS-001] 底图只作定位，不是法定边界或权属证据；脊线、接口与锚点均为参赛者设定，临时边界与命名公园相差 412.5 米，官方 polygon 到位即全包重绑定复算。[source:OSM-CORRIDOR-CONTEXT-2026] [metric:binding_offset_m] [assumption:A-BND-001]
 
-上图是参赛者空间假设，不是现状底图；它可审计、可整包重绑定，正式边界、权属、管线及审批资料到位后全部位置与数量重算。[data:geometry/site_boundary.geojson#SITE-001] [metric:binding_offset_m]
+上图是参赛者空间假设，不是现状底图；它可审计、可整包重绑定；重绑定的触发方是组织方——组织方发布官方边界、权属、管线与审批资料后，本包即整包重算全部位置与数量。参赛者一侧的方法、层级与复算脚本已就位，等待的是组织方资料，不是参赛者动作。[data:geometry/site_boundary.geojson#SITE-001] [metric:binding_offset_m]
 
 ![开放建筑的时间层：公共地面、长期支撑、服务底盘、可换填充与 AI 设备](assets/figures/land-use-structure.png)
 
@@ -513,7 +513,7 @@ P0 交接由条件时序、角色责任、未计价数量、逐门交接四本�
 
 ## 风险、版权与合规说明
 
-首要风险是空间证据不足：范围、建筑、道路、站口、权属、文保、市政、控规未齐，贡献仅为原型、关系和重算方法，非选址审批。临时边界与 OSM 公园相差 412.5 米；官方数据到位须全包重建。[source:BOUNDARY-BASIS] [assumption:A-BND-001] [depth:risk_missing_data]
+首要风险是空间证据不足，且这些资料由组织方与主管部门持有：范围、建筑、道路、站口、权属、文保、市政、控规未齐，贡献仅为原型、关系和重算方法，非选址审批。临时边界与 OSM 公园相差 412.5 米；官方数据到位须全包重建。[source:BOUNDARY-BASIS] [assumption:A-BND-001] [depth:risk_missing_data]
 
 公共 AI 风险含碰撞占路、传感越界、schema/工具漂移及把困难用户推给 H。人优先、同任务同队列、两钥匙、数据最小化、无身份识别、物理停止、纸本/固定标识、H 热备均待责任人/专业审核；模型不得单独发布医疗、法律、安全或规划判断。[source:GENERATIVE-AI-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW]
 
