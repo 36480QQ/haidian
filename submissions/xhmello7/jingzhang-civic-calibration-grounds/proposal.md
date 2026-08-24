@@ -62,6 +62,18 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterpris
 
 总体空间结构是“一条京张遗产脊柱、三段城市节奏、三处创新接口、两条服务侧翼、一层公共校准”。北段以众智园、清河和北五环为研究与低干扰校准环境；中段以 AI 原点、高校和遗产公园为开放知识、人才和原型界面；南段以大钟寺为有限首用、城市生活、商业公共服务和反馈界面。中关村科技服务翼提供潜在标准、知识产权、企业和资本接口，小月河场景赋能翼提供青年、休闲、公共生活和未来场景反馈。[data:visual/assets/innovation_belt_program.json] [data:geometry/key_areas.geojson] [depth:overall_spatial_structure]
 
+### 赛题定位—功能—空间对齐矩阵
+
+下表把三大定位与五类工作功能直接映射到空间载体；它是设计 crosswalk，不把潜在网络写成既有机构协作。[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [data:visual/assets/innovation_belt_program.json]
+
+| 三大定位 | Research | Open Source | Translation / Incubation | Public Service | Cultural Experience |
+|---|---|---|---|---|---|
+| 百年京张文化带 | 铁路工程问题进入当代研究 brief | 中段公开来源与复现记录 | 工程经验转译为可核查公共问题 | 遗产解释保留人工与静态服务 | 工程问题档案—开源贡献场—发布退场公地 |
+| 都市 AI 生活体验带 | 北段低干扰测试提出生活问题证据 | 可复核的公共问题与版本说明 | 大钟寺有限首用，不作全域部署 | 导航、信息与无 AI 连续性 | 日常步行、休息、质询、申诉与退场记忆 |
+| AI 融合创新带 | 众智园与高校研究接口 | AI 原点开放知识和原型复现 | 孵化/专业服务接口均需合作 | 发布门把原型转成有边界的城市服务 | 贡献、纠错与退出共同构成 AI 新文化 |
+
+三区两翼承担上述功能的不同阶段：北段/众智园承载研究与受控校准，中段/AI 原点承载开源、人才与转化接口，南段/大钟寺承载有限首用、公共服务和公众复核；中关村翼是潜在专业服务接口，小月河翼是日常生活与反馈语境。外部区域协同仅提出待合作关系：北纬社区作为 POTENTIAL 公共问题与社区反馈接口；未来科学城、怀柔科学城作为 POTENTIAL 研究与评估交流接口；经开区作为 POTENTIAL 具身设备与产业首用经验接口；京津冀作为 PROPOSED 跨区域证据互认与经验交流框架。五项均为 REQUIRES PARTNERSHIP，不代表已签约、已授权或已有资源流。[data:visual/assets/innovation_belt_program.json] [assumption:A-INNOVATION-ECOSYSTEM-001]
+
 视觉识别不制造企业式科技 Logo。两条平行线代表铁路基础设施连续性，开放短横线代表发布门，节点旁的留白代表人工判断与退出；现状、provisional、生态流、公共门、开放知识和蓝绿空间使用六类稳定颜色。命名体系严格区分 Belt、Ground、Interface 和 Commons，避免把概念节点包装成建筑。[data:visual/assets/innovation_belt_program.json] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 用地继续采用“全域资料缺口 + 局部设计叠加”。provisional geometry 全域用代码 16 表示待正式底图深化，不虚构现状用途、FAR、建筑高度、拆改留或地下规模；设计只提出存量优先、首层公共性、可逆组件、院落共享和边界透化原则。[data:geometry/land_use.geojson#LU-RESIDUAL-DATA-GAP] [metric:floor_area_ratio] [depth:land_use_layout]
@@ -77,6 +89,8 @@ scenarios: ["ai-traffic-walkability", "ai-health-service-navigation", "enterpris
 **大钟寺：First Use + Release Gate。** 方案保留通过 Reality QA 的全部几何关系：约 8.7 ha 研究窗、约 0.52 ha 介入、三段约 625 m 连续步行线、六个生命周期节点、两处约 1,220 m² 公共空间、A–A'、B–B'及约 535 m² Retirement Memory 均不移动。新增的是其在完整生态中的角色：测试凭证在发布前场转成公众可读发布卡，有限服务在商业和公共界面首用，纠错沿步行序列返回研究端。[source:BJ-LINE12-OPEN-20241215] [data:geometry/constraints.geojson#DISTRICT-DZ-STUDY-001] [metric:road_centerline_length_m]
 
 大钟寺路线继续绕开已下载 OSM 窗口中的四个建筑候选，公共空间与节点均不落入这些建筑。正式站口、通行权、坡度、盲道、铺装和高峰人流仍待测绘及现场核验；“无冲突”只针对当前公共数据窗口，不代表工程批准。[data:geometry/roads.geojson#ROAD-DZ-003] [data:geometry/public_space.geojson#PUBLIC-RETIRE-001] [assumption:A-DAZHONGSI-REALITY-001]
+
+**大钟寺实施前验证清单。** 现有总平面保持不变，但任何深化或试点必须先完成七项 prerequisite：①由站区责任方核实站口位置与开放状态；②核实通行权、道路边界与临时占用条件；③实测坡度、横坡和高差；④完成 A–A'、B–B'及关键转折的现场断面测量；⑤由无障碍专业人员和代表性使用者进行同行审计；⑥观察工作日/周末高峰行人和停留行为；⑦完成过街、设备停靠和混行的交通安全评价。每项结果都可能触发路线标注、构件、运营时段或试点范围的调整；本方案未声称这些调查已经完成。[data:visual/assets/innovation_belt_program.json] [assumption:A-DAZHONGSI-REALITY-001]
 
 ![三个城市接口：意向—意向—冲突核查设计](assets/figures/key-areas.png)
 
@@ -143,6 +157,14 @@ TEST A 检查 Agent 安全与无障碍；TEST B 检查具身设备限定路线�
 年度运营形成五段循环：持续问题受理；春季开放知识与原型；夏季受控校准；秋季有限发布与公众复核；冬季续期、回滚和退场归档。每段都留下下一轮可用的产物：问题 brief、复现记录、测试凭证、发布卡、纠错与申诉日志、续期条件或退场档案，而不是只举办论坛。[data:visual/assets/innovation_belt_program.json] [metric:annual_operation_stage_count] [assumption:A-ANNUAL-OPERATION-001]
 
 责任只写角色：创新带统筹与公共空间管理角色维护问题库；高校/开源角色组织复现；场地运营者和注册服务运营者负责测试与服务；独立评估、无障碍代表和公众参与复核；档案角色维护贡献与退场记录。具体机构、场地权利、预算和活动日期均 REQUIRES PARTNERSHIP。[assumption:A-ANNUAL-OPERATION-001] [depth:renewal_project_list]
+
+### Proposed operational framework
+
+RACI 只分配角色，不指认现实机构：问题受理由创新带统筹角色 Responsible、公共空间管理角色 Accountable；协议与数据授权由注册服务运营者 Responsible、数据责任角色 Accountable，并咨询独立评估和代表性用户；受控校准由测试团队 Responsible、场地运营角色 Accountable；发布决定由服务运营者提交，公共发布门责任角色 Accountable，独立评估、无障碍代表与现场管理者 Consulted；运行维护和人工接管由服务运营者 Responsible、场地运营角色 Accountable；事故停止由现场值守 Responsible、服务责任角色 Accountable并立即通知公众；申诉复核由独立投诉处理角色 Responsible、公共治理责任角色 Accountable；退场归档由档案维护角色 Responsible、服务责任角色 Accountable。所有公众和受影响服务人员在相应环节 Informed。[data:visual/assets/innovation_belt_program.json] [assumption:A-ANNUAL-OPERATION-001]
+
+数据治理遵循目的限定和最小化：每个场景在发布前记录数据来源、授权基础、必要字段、保存期限、访问角色、删除/匿名化动作和退出后的处置；无法确认授权的数据不得进入服务。人工运行要求每班可识别的值守与接管角色、可测试的人工/静态/纸本 fallback、事件分级记录和维护责任。碰撞或近失、危险导航、来源丢失、重大有害信息、远停/人工接管失败、兜底不可用或重复未关闭申诉均触发暂停；恢复必须重新经过责任复核和发布门。[standard:PROJECT-GENERATIVE-AI-INTERIM-MEASURES] [assumption:A-AI-DATA-001]
+
+公众治理使用现场与非现场投诉入口：受理时给出可追踪记录，运营角色先纠正服务，独立投诉处理角色复核争议，公共治理责任角色决定维持、附条件运行、重新校准或停止；申诉结果、证据边界和替代服务以公众可读方式发布。该框架为 PROPOSED，具体机构、值班表、数据系统、法定时限和维护合同均 REQUIRES PARTNERSHIP。[data:visual/assets/innovation_belt_program.json] [assumption:A-ANNUAL-OPERATION-001]
 
 ## 指标体系、面积复算与合规矩阵
 

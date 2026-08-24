@@ -437,7 +437,8 @@
       "response_status": "partial",
       "report_sections": [
         "京张价值链与五类流",
-        "总体设计范围城市更新与控规深度城市设计"
+        "总体设计范围城市更新与控规深度城市设计",
+        "赛题定位—功能—空间对齐矩阵"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -455,7 +456,8 @@
         "assets/figures/land-use-structure.png"
       ],
       "visual_sections": [
-        "空间—创新—公共生活"
+        "空间—创新—公共生活",
+        "赛题对齐与区域协同"
       ],
       "structured_evidence": [
         "visual/assets/innovation_belt_program.json"
@@ -478,7 +480,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "形成研究、开源、校准、孵化支持、首用、服务与反馈的功能链，并把中关村和小月河作为潜在侧翼；缺少经核验机构清单、合作意愿与产业资源配置，故为部分响应。"
+      "evidence_summary_zh": "以三大定位×研究、开源、转化/孵化、公共服务、文化体验五功能矩阵落实到北中南、三重点区和两翼；北纬社区、未来/怀柔科学城、经开区与京津冀仅列为 POTENTIAL/PROPOSED 且 REQUIRES PARTNERSHIP，缺少经核验合作意愿和资源配置，故仍为部分响应。"
     },
     {
       "requirement_id": "1.5.2.2",
@@ -537,7 +539,8 @@
       "mandatory": true,
       "response_status": "data_gap",
       "report_sections": [
-        "交通、轨道、市政与公共服务设施"
+        "交通、轨道、市政与公共服务设施",
+        "重点区域详细设计"
       ],
       "geojson_layers": [
         "geometry/roads.geojson",
@@ -554,7 +557,8 @@
       ],
       "visual_sections": [
         "三个城市接口",
-        "03｜三个城市接口"
+        "03｜三个城市接口",
+        "大钟寺实施前验证清单"
       ],
       "structured_evidence": [
         "visual/assets/innovation_belt_program.json"
@@ -578,7 +582,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "大钟寺三段约 625 m 路线完成建筑冲突核查，北中段只表达联系需求；正式站口、道路红线、坡度、人流、停车、市政容量与接驳工程未获得，不能声称完成系统设计。"
+      "evidence_summary_zh": "大钟寺三段约 625 m 路线完成建筑冲突核查，并为站口、通行权、坡度、断面、无障碍、高峰人流和交通安全建立七项实施前验证清单；七项均未声称完成，停车、市政容量与接驳工程仍是数据缺口。"
     },
     {
       "requirement_id": "1.5.2.4",
@@ -836,7 +840,8 @@
       "response_status": "complete_conceptual",
       "report_sections": [
         "重点区域详细设计",
-        "Civic Calibration Layer"
+        "Civic Calibration Layer",
+        "大钟寺实施前验证清单"
       ],
       "geojson_layers": [
         "geometry/buildings.geojson",
@@ -860,7 +865,8 @@
       ],
       "visual_sections": [
         "03｜三个城市接口",
-        "Retirement Memory"
+        "Retirement Memory",
+        "大钟寺实施前验证清单"
       ],
       "structured_evidence": [
         "visual/assets/innovation_belt_program.json"
@@ -884,7 +890,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "约 8.7 ha 研究窗内以约 625 m 连续步行串联发布、复核、申诉、回滚与约 535 m² 退场记忆；路线、公共空间和生命周期节点对所选建筑冲突均为 0，但站口与通行工程仍需核验。"
+      "evidence_summary_zh": "约 8.7 ha 研究窗内以约 625 m 连续步行串联发布、复核、申诉、回滚与约 535 m² 退场记忆；三类建筑冲突均为 0。站口、通行权、坡度、断面、无障碍、高峰人流与交通安全被明确列为实施 prerequisite，尚未完成。"
     },
     {
       "requirement_id": "agent.1",
@@ -893,7 +899,8 @@
       "response_status": "complete",
       "report_sections": [
         "三层范围工作框架",
-        "总体设计范围城市更新与控规深度城市设计"
+        "总体设计范围城市更新与控规深度城市设计",
+        "赛题定位—功能—空间对齐矩阵"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -912,7 +919,8 @@
       ],
       "visual_sections": [
         "京张 AI 创新带",
-        "空间—创新—公共生活"
+        "空间—创新—公共生活",
+        "赛题对齐与区域协同"
       ],
       "structured_evidence": [
         "visual/assets/innovation_belt_program.json"
@@ -933,7 +941,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "以“京张 AI 创新带 × 城市校准层”组织 Belt、Ground、Interface、Commons 四级命名及铁路平行线、发布门和可退出留白的视觉语法，并落到北中南、三区两翼。"
+      "evidence_summary_zh": "以“京张 AI 创新带 × 城市校准层”组织 Belt、Ground、Interface、Commons 四级命名与视觉语法；三大定位和五类工作功能逐项落到北中南、三重点区、两翼，并把五个外部协同对象明确限定为待合作接口。"
     },
     {
       "requirement_id": "agent.2",
@@ -1124,7 +1132,7 @@
       ],
       "visual_sections": [
         "持续学习的工程文化",
-        "发布—退场公地"
+        "Retirement Memory"
       ],
       "structured_evidence": [
         "visual/assets/innovation_belt_program.json"
@@ -1155,7 +1163,8 @@
       "mandatory": true,
       "response_status": "requires_partnership",
       "report_sections": [
-        "更新项目清单、实施政策与分期计划"
+        "更新项目清单、实施政策与分期计划",
+        "Proposed operational framework"
       ],
       "geojson_layers": [
         "geometry/phasing.geojson",
@@ -1172,7 +1181,8 @@
       ],
       "visual_sections": [
         "年度运营闭环",
-        "05｜持续学习的工程文化"
+        "05｜持续学习的工程文化",
+        "运营责任与公共治理"
       ],
       "structured_evidence": [
         "visual/assets/innovation_belt_program.json"
@@ -1196,7 +1206,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "持续问题受理与春、夏、秋、冬五阶段分别留下问题说明、复现记录、评测凭证、发布/申诉记录和续期/退场档案，回到下一年度；机构、场地、预算与国际伙伴均需合作。"
+      "evidence_summary_zh": "五阶段年度循环之外，补充八环节 role-based RACI、数据授权/最小化/保存/删除、人工接管、事故停止、维护责任、投诉与申诉复核流程；它们均为 proposed operational framework，机构、值班表、数据系统、场地、预算与伙伴仍需合作。"
     }
   ]
 }

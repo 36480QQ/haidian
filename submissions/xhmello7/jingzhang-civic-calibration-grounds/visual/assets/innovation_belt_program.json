@@ -108,6 +108,65 @@
       "lifecycle": ["problem_intake", "calibration", "release", "civic_verification", "pass_scale", "conditional_recalibrate", "fail_rollback_retirement"]
     }
   },
+  "brief_alignment": {
+    "status_note": "A design crosswalk to the public brief. It does not establish institutional partnerships, statutory zones or committed resource flows.",
+    "three_positionings": [
+      {
+        "id": "POSITION-01",
+        "name_zh": "百年京张文化带",
+        "name_en": "Jingzhang Cultural Belt",
+        "function_response": {
+          "research": "railway engineering problems as contemporary research briefs",
+          "open_source": "public sources and reproduction records in the central segment",
+          "translation_incubation": "engineering experience translated into verifiable public problems",
+          "public_service": "heritage interpretation with human and static fallback",
+          "cultural_experience": "Engineering Problem Archive to Open-source Contribution Ground to Release-Retirement Commons"
+        },
+        "carrier_ids": ["NODE-INTAKE-001", "PUBLIC-MID-VERIFY-001", "PUBLIC-RETIRE-001"]
+      },
+      {
+        "id": "POSITION-02",
+        "name_zh": "都市 AI 生活体验带",
+        "name_en": "Urban AI Living Experience Belt",
+        "function_response": {
+          "research": "low-disturbance northern evaluation of everyday needs",
+          "open_source": "reviewable public problems and version explanations",
+          "translation_incubation": "bounded first use rather than corridor-wide deployment",
+          "public_service": "navigation, information and No-AI continuity",
+          "cultural_experience": "everyday walking, rest, challenge, appeal and retirement memory"
+        },
+        "carrier_ids": ["PUBLIC-ZZ-CAL-001", "DISTRICT-DZ-INTERVENTION-001", "PUBLIC-RETIRE-001"]
+      },
+      {
+        "id": "POSITION-03",
+        "name_zh": "AI 融合创新带",
+        "name_en": "AI Integrated Innovation Belt",
+        "function_response": {
+          "research": "Zhongzhiyuan and university research interfaces",
+          "open_source": "AI Origin open knowledge and prototype reproduction",
+          "translation_incubation": "potential incubation and professional-service interfaces",
+          "public_service": "release-gated bounded urban services",
+          "cultural_experience": "contribution, correction and retirement as accountable AI culture"
+        },
+        "carrier_ids": ["PROV-KEY-001", "PROV-KEY-002", "NODE-RELEASE-001", "PUBLIC-RETIRE-001"]
+      }
+    ],
+    "five_functions": ["research", "open_source", "translation_incubation", "public_service", "cultural_experience"],
+    "three_areas_two_wings": {
+      "north": "research and controlled calibration",
+      "central": "open source, talent and translation interface",
+      "south": "bounded first use, public service and civic verification",
+      "zhongguancun_wing": "potential professional-service interface_requires_partnership",
+      "xiaoyuehe_wing": "existing everyday-life context_with_proposed_feedback_relation"
+    },
+    "external_collaboration": [
+      {"id": "EXT-01", "name_zh": "北纬社区", "name_en": "Beiwei Community", "proposed_role": "public-problem intake and community feedback exchange", "status": "potential_requires_partnership"},
+      {"id": "EXT-02", "name_zh": "未来科学城", "name_en": "Future Science City", "proposed_role": "research and evaluation exchange", "status": "potential_requires_partnership"},
+      {"id": "EXT-03", "name_zh": "怀柔科学城", "name_en": "Huairou Science City", "proposed_role": "research and evaluation exchange", "status": "potential_requires_partnership"},
+      {"id": "EXT-04", "name_zh": "经开区", "name_en": "Beijing Economic-Technological Development Area", "proposed_role": "embodied-device and industrial first-use learning exchange", "status": "potential_requires_partnership"},
+      {"id": "EXT-05", "name_zh": "京津冀", "name_en": "Beijing-Tianjin-Hebei", "proposed_role": "cross-regional evidence-recognition and learning framework", "status": "proposed_requires_partnership"}
+    ]
+  },
   "global_precedents": [
     {
       "id": "PREC-01",
@@ -400,6 +459,40 @@
     {"id": "OP-04", "stage": "autumn", "name_zh": "有限发布与公众复核季", "name_en": "Limited Release and Civic Verification Season", "organizer_role": "Dazhongsi place-management, service-operation and public-review roles", "participants": ["commuters", "residents", "visitors", "local services", "developers"], "places": ["Dazhongsi demonstration district"], "output": ["public release card", "correction and appeal log", "bounded first-use record"], "next_cycle_input": "pass, conditional or failure evidence"},
     {"id": "OP-05", "stage": "winter", "name_zh": "续期、回滚与退场归档", "name_en": "Renewal, Rollback and Retirement Archive", "organizer_role": "public review, service accountability and archive roles", "participants": ["user representatives", "operators", "evaluators", "public-service staff"], "places": ["Release-Retirement Commons"], "output": ["renewal conditions", "rollback notice", "retirement record", "next-year problem list"], "next_cycle_input": "OP-01 public problem intake"}
   ],
+  "operation_framework": {
+    "status": "proposed_requires_partnership",
+    "status_note": "Roles are functional placeholders. No real institution, contract, data authorization, roster or statutory response time is claimed.",
+    "raci": [
+      {"process": "problem_intake", "responsible": "belt_stewardship_role", "accountable": "public_space_management_role", "consulted": ["residents", "service_staff", "researchers", "developers"], "informed": ["public", "candidate_service_operators"]},
+      {"process": "protocol_and_data_authorization", "responsible": "registered_service_operator_role", "accountable": "data_accountability_role", "consulted": ["independent_evaluator", "representative_users", "legal_and_security_review_roles"], "informed": ["site_operator", "public_governance_role"]},
+      {"process": "controlled_calibration", "responsible": "test_team_role", "accountable": "site_operations_role", "consulted": ["independent_evaluator", "accessibility_representatives", "field_staff"], "informed": ["release_gate_role"]},
+      {"process": "release_decision", "responsible": "registered_service_operator_role", "accountable": "public_release_gate_role", "consulted": ["independent_evaluator", "accessibility_representatives", "field_management_role"], "informed": ["public", "service_staff", "complaint_handler_role"]},
+      {"process": "operation_maintenance_and_takeover", "responsible": "registered_service_operator_role", "accountable": "site_operations_role", "consulted": ["maintenance_role", "public_service_staff"], "informed": ["users", "public_release_gate_role"]},
+      {"process": "incident_stop", "responsible": "field_duty_role", "accountable": "service_accountability_role", "consulted": ["site_operations_role", "independent_evaluator", "affected_user_representatives"], "informed": ["public", "complaint_handler_role", "archive_role"]},
+      {"process": "complaint_and_appeal_review", "responsible": "independent_complaint_handler_role", "accountable": "public_governance_role", "consulted": ["affected_users", "service_operator", "independent_evaluator"], "informed": ["public", "release_gate_role"]},
+      {"process": "retirement_and_archive", "responsible": "archive_role", "accountable": "service_accountability_role", "consulted": ["public_governance_role", "data_accountability_role", "affected_users"], "informed": ["public", "future_applicants"]}
+    ],
+    "data_governance": {
+      "authorization": "Record source, lawful or authorized basis and accountable data role before release; unconfirmed data cannot enter service.",
+      "minimization": "Use only fields necessary for the bounded public task; prohibit unrelated trajectories, profiles, health records, payments and case files.",
+      "retention": "Set a case-specific retention period before release and publish the category, purpose and review date.",
+      "deletion": "Define deletion or irreversible anonymization for raw, derived and incident data, including disposition after rollback or retirement.",
+      "access": "Role-based access and an auditable correction path are prerequisites, not existing capabilities."
+    },
+    "human_operation": {
+      "fallback": ["staffed assistance", "static and tactile signage", "paper information", "accessible non-digital route", "manual service procedure"],
+      "manual_takeover": "Every operating shift requires an identifiable duty and takeover role with tested stop control.",
+      "incident_flow": ["make safe and stop", "preserve necessary evidence", "notify affected users", "activate fallback", "independent review", "publish disposition", "recalibrate or retire"],
+      "stop_conditions": ["collision_or_near_miss", "unsafe_or_inaccessible_guidance", "lost_provenance_or_materially_harmful_information", "remote_stop_or_manual_takeover_failure", "fallback_unavailable", "repeated_unresolved_appeals"],
+      "maintenance": "The registered service operator is responsible for routine maintenance; the site-operations role is accountable for public-space availability and safe shutdown."
+    },
+    "public_governance": {
+      "complaint_channels": ["on_site_human_point", "non_digital_written_channel", "accessible_remote_channel_requires_partnership"],
+      "appeal_process": ["traceable_receipt", "operator_correction", "independent_review", "public_governance_decision", "public_result_and_alternative_service"],
+      "review_outcomes": ["pass_or_renew", "conditional_operation", "recalibrate", "suspend", "rollback", "retire"],
+      "public_record": "Publish scope, evidence boundary, responsible role, decision, correction, fallback and data disposition in accessible public language."
+    }
+  },
   "dazhongsi_verified_baseline": {
     "geometry_status": "building_conflict_checked_public_basemap_design",
     "audited_values": {
@@ -416,6 +509,19 @@
       "public_space_building_overlap": 0,
       "lifecycle_node_inside_building": 0
     },
-    "evidence_boundary": "Program relationships may expand; reality-checked coordinates and the Dazhongsi spatial sequence remain unchanged unless a new factual blocker is discovered."
+    "evidence_boundary": "Program relationships may expand; reality-checked coordinates and the Dazhongsi spatial sequence remain unchanged unless a new factual blocker is discovered.",
+    "implementation_verification": {
+      "status": "implementation_prerequisites_not_completed",
+      "geometry_change": "none",
+      "items": [
+        {"id": "DZ-VERIFY-01", "task": "station entrance verification", "status": "data_gap", "required_evidence": "confirmation by station-responsible party and field record", "design_consequence": "confirm or revise entrance annotation and operating interface"},
+        {"id": "DZ-VERIFY-02", "task": "right-of-way verification", "status": "data_gap", "required_evidence": "road boundary, access-right and temporary-occupation review", "design_consequence": "confirm public access and reversible-component permissions"},
+        {"id": "DZ-VERIFY-03", "task": "slope survey", "status": "data_gap", "required_evidence": "measured gradient, crossfall and level changes", "design_consequence": "confirm accessible route and rest requirements"},
+        {"id": "DZ-VERIFY-04", "task": "section survey", "status": "data_gap", "required_evidence": "field sections at A-A', B-B' and critical turns", "design_consequence": "confirm clear width, component placement and drainage interface"},
+        {"id": "DZ-VERIFY-05", "task": "accessibility peer audit", "status": "requires_partnership", "required_evidence": "audit by accessibility professionals and representative users", "design_consequence": "revise route, information, rest and fallback details"},
+        {"id": "DZ-VERIFY-06", "task": "peak pedestrian observation", "status": "data_gap", "required_evidence": "weekday and weekend peak movement and dwell observation", "design_consequence": "set pilot time, queue and clear-path conditions"},
+        {"id": "DZ-VERIFY-07", "task": "traffic safety evaluation", "status": "requires_partnership", "required_evidence": "crossing, device stopping and mixed-movement safety review", "design_consequence": "confirm or reduce pilot envelope and operating conditions"}
+      ]
+    }
   }
 }
