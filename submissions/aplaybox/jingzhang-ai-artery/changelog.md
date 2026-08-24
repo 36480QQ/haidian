@@ -123,3 +123,20 @@
 - **来源分级调整**：sources.json 中 10 条参与者新增来源的 authority_level 从 official_public 改为 participant_added_pending_registry，加 registry_note 字段说明"未经 source_registry_summary approved_formal 审定，审定前不得作为正式证据，仅作背景参考与现场事实陈述"——响应评审"参与者新增来源不能自动视为 approved formal evidence"。
 - **新增公共利益与包容性实施表**：proposal.md/proposal.en.md 新增 6 行表格（海淀居民/既有商户/照护者/残障人士/老年人/无智能终端用户），每行列出空间与服务标准、非数字服务通道、公平性 KPI、公众否决/申诉/审计四列约束；并加"公众否决机制"段落——每个 AI 触点设否决按钮，触发后 24h 内降级为非自动化模式。响应评审"公共利益维度未转换为可量化的空间与服务标准"。
 - 遗留问题：① 5 张核心图和 A0/A3 首屏版式（标题叠压、裁切、小字号）未修复（评审第 5 条，需重生图件，下轮处理）；② 中英文关键主张人工实质等价签核仍为 agent 自动比对完成，待双语评审者签核（评审第 7 条）；③ 18 项详细 required repairs 逐项证据表待补充。
+
+## v2.7 - 2026-08-24
+
+*P7 修复轮：精准回退 P6 触发的负向变化，并补充任务书评审维度缺失项*
+
+针对 CocoSgt b3f7f18 评审（71.0/100，request-changes）的 10 项必做与 22 项详细 required repairs 做精准修复，目标是把任务书相关性从 4/5 恢复到 5/5、风险合规从 3/5 提升到 4/5、表达完整度从 3/5 提升到 4/5，理论上限 75-79。
+
+- **concept_far=1.30 二次彻底清理**：P6 仅清理了 assumptions.json:18 impact_zh，但 assumptions.json:264 ASM-007.assumption_zh、design_depth_matrix.json:157 evidence_summary_zh、report/narrative.md:20 仍写「概念容积率 1.30」。三处全部改为「概念容积率 = unknown（原始公式 footprint × height ÷ site_area 量纲为长度而非容积率，已废弃；待 official 控规条件与建筑层数/层高数据补齐后按 GFA/site_area 复算）」。
+- **green_ratio 显示值统一**：proposal.md / proposal.en.md / report/narrative.md 中 2.94% 全部改为 2.8958%（与 self_check.json:119 的 actual_value 0.028958 一致）；visual/index.html 与 visual/index.en.html 的 data-value 从 0.029 改为 0.028958，显示文本从 2.90% 改为 2.8958%——消除「proposed 2.94% ≠ self_check 0.028958」的显示值不一致。
+- **"严格符合"自我认证表述清理**：proposal.md:191 注 3 与 assumptions.json:50 impact_zh 的「严格符合《个人信息保护法》第 26 条」改为「力求符合……；该合规判断尚需经数据合规专项复核与主管部门确认，非自我认证」。proposal.en.md 同步改 strictly complying with → striving to comply with …; this compliance judgment requires data-compliance review and competent-authority confirmation before implementation and is not self-certified。SC-04 保存期限依据同样改为「力求符合……，实施前需经数据合规专项复核」。
+- **场景卡"确定控制者"→"候选控制者"**：SC-01/02/04/07/08/09/10/11 共 8 张场景卡的政府部门与国家机构控制者，从「控制者：区文旅局」等改为「候选控制者：区文旅局（待主管部门确认）」；assumptions.json#ASM-006 内 scenario_data_governance 子对象同步改 controller 字段加「（候选控制者，待主管部门确认）」后缀。SC-03/05/06/12 的企业/高校联合体非政府部门保留不变。响应评审"若干场景把政府部门和国家机构写成已确定控制者"。
+- **SC-03/05 法律名称二次清理**：P6 修了 proposal.md 表格中的《合同法》《交通法》，但 assumptions.json#ASM-006 内 SC-03.legal_basis 与 SC-05.legal_basis 仍写《合同法》《交通法》。两处改为《民法典》合同编 / 《道路交通安全法》。
+- **来源分级声明（v2.7 新增章节）**：proposal.md / proposal.en.md 在「资料证据链与逐资产授权」段落新增「来源分级声明」子段落，明确两类来源等级——(a) formal 已审定来源可用作正式政策依据；(b) participant_added_pending_registry 来源仅作背景参考与现场事实陈述，不作正式政策依据、控规条件、已建成事实或政府实施安排。响应评审"协同政策来源为 participant_added_pending_registry，只能作为背景而非正式依据"导致的任务书相关性扣分。
+- **北京 AI 原点社区：北纬社区接口（v2.7 新增章节）**：proposal.md / proposal.en.md 在「公共利益与包容性实施表」之后新增「北京 AI 原点社区：北纬社区接口」章节，五项接口设计——(1) 地理坐标与边界（清华东路西口站—清华园站—五道口站三角地带）；(2) 节点组织（5 个 AI 触点节点对应 5 类用户画像）；(3) 北纬坐标参考（北京位于北纬 40° 区段的科技-人文双关）；(4) 接口协议（数据接口 + 治理接口）；(5) 与任务书的对接（1.5.2.2 与 agent.4）。响应评审"agent_taskbook_review_dimensions 特别关注的'北纬社区'未形成明确接口"。
+- **公众否决按钮升级为可操作治理流程**：proposal.md / proposal.en.md 中「公众否决机制」段落从 1 句话升级为 7 项流程——(1) 身份核验；(2) 重复/恶意请求防护；(3) 紧急例外；(4) 暂停阈值；(5) 独立审核组成（5 名委员，至少 4 票同意）；(6) 恢复标准（三项条件）；(7) 公开审计字段。响应评审"'任一利益相关方可否决、24小时内强制降级'的机制尚未定义身份核验、重复/恶意请求、紧急服务连续性、独立审核组成和恢复标准"。
+- **COMMUNITY-DISPLAY-ONLY 与复用承诺关系明确（v2.7 新增章节）**：report/copyright_statement.md 新增「COMMUNITY-DISPLAY-ONLY 与后续复用承诺的关系」章节，逐资产列许可边界——方案正文/结构化数据/几何/图件/字体/Logo/代码/AI 生成内容共 8 类资产，明确「正文与 manifest 中提及的知识资产可供后续智能体和专业团队继续使用」是方向性愿景而非现时许可授予，须先经维护者书面授权才能升级 license 字段。响应评审"manifest/proposal front matter使用COMMUNITY-DISPLAY-ONLY，而正文又称知识资产可供后续智能体和专业团队继续使用，其复用许可边界需要明确"。
+- 遗留问题：① 5 张核心图和 A0/A3 首屏版式（标题叠压、裁切、小字号）仍未修复（需 VLM 重生图件，工作量大）；② 中英文关键主张人工实质等价签核仍为 agent 自动比对完成，待双语评审者签核；③ 三处重点区典型节点/街道剖面/首层界面/慢行断点/服务半径/公共空间组件空间具体性待深化（评审第 6 条，需基于公开背景资料深化）；④ 现状基线/公告值/provisional 边界模型值/方案输出值/unknown 值的分栏管理待实施（评审第 1 条 P0）。

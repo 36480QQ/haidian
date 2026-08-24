@@ -154,7 +154,7 @@
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "概念容积率 1.30 为概念设计量，明确不等于法定容积率；待 official 控规条件补齐后重算。"
+      "evidence_summary_zh": "概念容积率 = unknown（原始公式 footprint × height ÷ site_area 量纲为长度而非容积率，已废弃；待 official 控规条件与建筑层数/层高数据补齐后按 GFA/site_area 复算）。明确不等于法定容积率。"
     },
     {
       "item_id": "height_massing_character",
