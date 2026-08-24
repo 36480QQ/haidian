@@ -77,7 +77,7 @@ The official announcement identifies an approximately 43.6 km² coordinated rese
 
 The repository does not yet provide verifiable official polygons, regulatory controls, road redlines, building surveys, or ownership data. This version therefore uses repository-maintained provisional rough boundaries only for concept generation, visualization, and content review. They are not official redlines and may not support precise area, approval, or engineering conclusions. All geometry and metrics must be recalculated once authoritative data is issued. [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] [data:geometry/site_boundary.geojson#SITE-PROV-001]
 
-![AI LINE 1 distributed innovation network](assets/media/scene-overall-network-v1.png)
+![AI LINE 1 distributed innovation network](assets/media/scene-overall-network-aerial-v2.png)
 
 *FTA scenario study · AI-generated concept image. It communicates the public innovation spine and distributed units; it is not a site survey or engineering proposal.*
 
@@ -118,6 +118,8 @@ The Five Highs test whether the innovation district behaves as a living ecosyste
 ### Overall site diagnosis through the Five Highs
 
 This diagnosis separates public facts, FTA professional judgment, and data still to be verified. It does not invent precise scores. The industrial base is strong but collaboration chains remain fragmented; talent is dense but long-term community attachment is weak; professional services are abundant but difficult for small teams to access as one network; real urban scenarios are diverse but lack consistent entry, human accountability, evaluation, and exit rules; and policy capacity is strong but needs a standing mission-led coordination mechanism. [source:FTA-METHOD-PUBLIC] [depth:existing_conditions_diagnosis]
+
+### Five design propositions derived from the diagnosis
 
 The conclusion is that Jing-Zhang's advantage is not a single parcel or landmark. It is the combined density of knowledge, talent, enterprises, public space, and services. The central design problem is that these resources do not yet operate as an accessible, collaborative, testable, and durable network. Five design propositions follow: shorten the origination-to-market chain; convert talent density into belonging; turn institutional services into shared infrastructure; replace technology display with governed validation; and replace fragmented management with mission-led collaboration.
 
@@ -165,13 +167,19 @@ The three aerials translate the regional network into distinct spatial missions.
 
 *Zhongzhiyuan: the shared enablement center, collaboration loops and governed test gardens form a standards and developer-ecosystem network.*
 
-The three areas and two wings divide responsibility. **Zhongzhiyuan is the AI Standards and Ecosystem Innovation District**, potentially enabled by platform enterprises, professional institutions, and developer networks. **AI Origin Community is the Original-AI Source District**, focused on 0–1 research, AI for Science, interdisciplinary work and translation. **Dazhongsi is the AI Application and Scenario Innovation District**, building on the area's platform economy, content industries, and market demand. Named companies are research examples of potential ecosystem participants, not confirmed partners, naming sponsors, or implementation commitments. The Zhongguancun Technology Service Wing amplifies value through finance, IP, law, standards, branding, and global market services. The Xiaoyue River Scenario Empowerment Wing is an open urban test field.
+### Differentiated responsibilities of the three areas and two wings
+
+The three areas and two wings divide responsibility. **Zhongzhiyuan is the AI Standards and Ecosystem Innovation District**, potentially enabled by platform enterprises, professional institutions, and developer networks. **AI Origin Community is the Original-AI Source District**, focused on 0–1 research, AI for Science, interdisciplinary work and translation. **Dazhongsi is the AI Application and Scenario Innovation District**, building on the area's platform economy, content industries, and market demand. Named companies are research examples of potential ecosystem participants, not confirmed partners, naming sponsors, or implementation commitments. The Zhongguancun Technology Service Wing amplifies value through finance, IP, law, standards, branding, and global market services. The Xiaoyue River Scenario Empowerment Wing is an open urban test field. [source:FTA-JINGZHANG-GLOBAL-AI-FRONTLINE-20260813]
+
+### Transferable lessons from global cases
 
 Seven global case types provide transferable mechanisms: university-enterprise proximity at Kendall Square; shared R&D infrastructure at Eindhoven High Tech Campus; a building-scale startup ecosystem at STATION F; research-capital-market links at Toronto MaRS; R&D-production integration at Jurong Innovation District; mixed brownfield renewal at Barcelona 22@; and content-industry urban experience at Seoul Digital Media City. No spatial form or unverified number is copied. [source:CASE-KENDALL] [source:CASE-STATION-F] [source:CASE-JID]
 
+### Brand and visual identity
+
 The public brand is “GLOBAL AI FRONTLINE | AI LINE 1.” Two open paths cross to form a network: bright cyan `#08B9E6` represents knowledge, technology, and urban connection; new-leaf green `#16B85C` represents ecology, community, and growth; the crossing generates a core red `#F2383D` numeral 1, expressing the Super Innovation Element as a catalytic engine. The italic wordmark, dual speed lines, and open endpoints create forward motion. Standard, symbol, reverse, and monochrome versions support formal documents, wayfinding, scenario certification, digital icons, and low-cost applications.
 
-![AI LINE 1 standard identity](assets/ai-line1-mark.svg)
+![AI LINE 1 standard identity](assets/ai-line1-mark.png)
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -333,9 +341,130 @@ AI LINE 1 does not present external coordination as confirmed partnerships. It p
 <article class="persona-card"><span class="persona-avatar persona-service" aria-hidden="true">PRO</span><div><strong>Investors, operators, and professional-service providers</strong><p>Need project discovery, evaluation, partnership organization, and long-term operating interfaces.</p></div></article>
 </div>
 
-Twelve scenario cards connect user, problem, space, data, operator, human review, and exit mechanism. Three industrial tests are the model-and-Agent evaluation field, embodied-intelligence safety garden, and AI compliance and global-market sandbox. Other scenarios are an open computing station, AI Origin living room, robot café and launch store, health navigation station, AI learning workshop, intelligent sports park, Jing-Zhang memory generative theatre, accessible mobility assistance point, and global developer living room. Their principal locations span Zhongzhiyuan, the Origin Community, Dazhongsi, both wings, transit nodes, and the heritage park.
+### Twelve scenario cards: spatializing the Five Highs
 
-Health navigation does not diagnose; learning services retain teacher review and protect minors; public mobility keeps human assistance; sports participation is voluntary and avoids mandatory face recognition; generated heritage content is separated from verified historical fact; embodied systems use time-and-space limits and physical emergency stops. AI scenarios are therefore service units rather than a technology shopping list. Any scenario involving health, minors, personal information, or public decisions retains a non-AI route, complaint channel, responsible human, and shutdown condition. [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW] [depth:risk_missing_data]
+![FTA AI LINE 1 overview of twelve scenarios](assets/figures/twelve-scenarios-overview.png)
+
+*AI-assisted scenario development based on FTA project experience and public references. References inform spatial relationships and visual language only; no third-party original drawing, logo, or watermark is copied.*
+
+| Scenario | Primary Five Highs role | Main location | Spatial and operating action | Human / exit boundary |
+|---|---|---|---|---|
+| Model and Agent evaluation field | Industrial ecology | Zhongzhiyuan | Shared evaluation desks, auditable data room, bookable expert seats | Isolated data, human review, traceable results |
+| Embodied-AI safety test garden | Innovation scenarios | Zhongzhiyuan | Enclosable test loop, observation platform, charging points | Limited time and area, physical emergency stop, named responsible person |
+| AI compliance and global-market sandbox | Policy governance | Service wing | Joint clinics for law, standards, IP and overseas markets | Professional review; no claim of regulatory approval |
+| Open computing service station | Service network | Zhongzhiyuan / Origin | Bookable edge-cloud workstations and quota dashboard | Transparent quotas, sensitive tasks prohibited, stop on anomaly |
+| AI Origin open living room | Cultural community | Origin | Shared launch, learning, exhibition and community-discussion hall | Public agenda, accessibility, protected non-commercial time |
+| Young innovator life station | Cultural community | Origin | Affordable food, short-stay support, sport, childcare advice and night learning | Basic services not tied to recruitment or data consent |
+| AI content launch and co-creation street | Industrial ecology | Dazhongsi | Ground-floor studios, launch shops, live-stream and experience nodes | Generated-content labels, copyright review, human service available |
+| Robot service coexistence shop | Innovation scenarios | Dazhongsi | Rotating tests in real dining, retail and repair businesses | Parallel human service, graceful degradation, transparent pricing |
+| AI health navigation station | Service network | Xiaoyue River wing | Process explanation, booking assistance and human referral | No diagnosis, minimum data, human fallback |
+| AI learning workshop | Cultural community | Community nodes | Teachers, students and families define problems and show process | Child protection, teacher review, recorded content history |
+| Jing-Zhang memory generative theatre | Cultural community | Heritage park | Oral history, railway archives and generative media in a renewable program | Verified history separated from generation; sources and withdrawal visible |
+| Accessible mobility assistance point | Policy governance | Transit / walking nodes | Navigation, wheelchair support and volunteers in one visible window | Non-digital route, data minimization, complaint channel |
+
+Scenarios are complete service units—real problem, target user, spatial interface, service process, data boundary, human review, operator, and exit mechanism—not a technology list. Each starts as a small prototype and is fixed, expanded, reorganized, or withdrawn only after Five Highs review. Health, minors, personal information, and public decisions always retain a human service and complaint route. [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW] [depth:risk_missing_data]
+
+### Twelve individual scenarios: from overview to implementable units
+
+#### 01 | Model and Agent evaluation field
+
+![Model and Agent evaluation field](assets/media/scenario-cards/01-ai-agent-evaluation-field-v1.png)
+
+**Value / location / role:** Turn closed evaluation into bookable, auditable public validation capacity in Zhongzhiyuan; primary role: industrial ecology. **Users and space:** model teams, Agent developers, evaluators and scenario owners share evaluation desks, an isolated data room, expert seats and a review wall. **Operation and boundary:** park, professional tester and scenario owner operate jointly; data is compartmentalized, decisions retain human review, and results remain traceable without replacing statutory certification. **Prototype / exit:** start with one bookable evaluation week; reduce it to a mobile service if genuine tasks and repeat use do not emerge.
+
+#### 02 | Embodied-AI safety test garden
+
+![Embodied-AI safety test garden](assets/media/scenario-cards/02-embodied-ai-safety-test-garden-v1.png)
+
+**Value / location / role:** Test embodied systems at low risk before city deployment in Zhongzhiyuan; primary role: innovation scenarios. **Users and space:** robot teams, safety evaluators and public observers use an enclosable loop, soft and hard boundaries, observation platform, charging and maintenance points. **Operation and boundary:** a named on-site person, physical emergency stop, bypass route and public notice are mandatory; unrelated pedestrian data is not collected. **Prototype / exit:** begin off-peak with one device; pause after boundary breach, repeated failure, or unresolved complaint.
+
+#### 03 | AI compliance and global-market sandbox
+
+![AI compliance and global-market sandbox](assets/media/scenario-cards/03-ai-compliance-global-sandbox-v1.png)
+
+**Value / location / role:** Reduce the cost of identifying legal, standards, IP and overseas-market requirements through the service wing; primary role: policy governance. **Users and space:** startups, growth firms and professional institutions share clinics, rule maps, material-check desks and remote consultation rooms. **Operation and boundary:** professionals review every output; advice is not regulatory permission, and sensitive materials use minimum authorization. **Prototype / exit:** begin with monthly clinics; merge into the common service window if referrals and issue closure cannot be demonstrated.
+
+#### 04 | Open computing service station
+
+![Open computing service station](assets/media/scenario-cards/04-open-compute-service-station-v1.png)
+
+**Value / location / role:** Offer small teams a transparent, affordable, human-supported edge-cloud entry in Zhongzhiyuan and Origin; primary role: service network. **Users and space:** students, researchers and early teams use bookable desks, edge devices, quota and energy dashboards, and technical-support seats. **Operation and boundary:** access is authorized without exposing task content; sensitive, high-risk or over-quota tasks are rejected, and anomalies stop automatically for human handling. **Prototype / exit:** start with limited hours and standard task packs; switch to roaming support rather than fixing idle equipment if utilization stays low.
+
+#### 05 | AI Origin open living room
+
+![AI Origin open living room](assets/media/scenario-cards/05-ai-origin-open-living-room-v1.jpg)
+
+**Value / location / role:** Bring original research, youth entrepreneurship, international exchange and community discussion together at the Origin City Living Room; primary role: cultural community. **Users and space:** researchers, founders, residents, students and investors use a launch hall, proof-of-concept tables, learning zone, exhibition wall and service window. **Operation and boundary:** a community operating team curates an open agenda, accessibility and non-commercial time; activity data is aggregated only. **Prototype / exit:** test repeat visits through ground-floor pop-ups and a fixed weekly program; if it becomes one-way display, reduce exhibition and expand co-creation and service. [source:FTA-AI-ORIGIN-IMAGE-20260813]
+
+#### 06 | Young innovator life station
+
+![Young innovator life station](assets/media/scenario-cards/06-young-innovator-life-station-v1.png)
+
+**Value / location / role:** Close gaps in food, short stays, sport, learning and life advice along Origin Avenue and the talent-life axis; primary role: cultural community. **Users and space:** young researchers, startup teams and newly arrived international talent use affordable food, shared living rooms, night learning, sport and advice points. **Operation and boundary:** basic services are never tied to recruitment, investment or data consent, and unnecessary life traces are not collected. **Prototype / exit:** coordinate existing merchants and community facilities; convert to a service alliance instead of building a dedicated facility if affordability and frequent use cannot be maintained.
+
+#### 07 | AI content launch and co-creation street
+
+![AI content launch and co-creation street](assets/media/scenario-cards/07-ai-content-launch-cocreation-street-v1.png)
+
+**Value / location / role:** Convert online AIGC production into a visible launch, feedback and iteration interface in Dazhongsi; primary role: industrial ecology. **Users and space:** content teams, creators, brands, merchants and the public use ground-floor studios, temporary pavilions, launch nodes and feedback walls. **Operation and boundary:** generated content is labeled; copyright and likeness receive human review; people may choose a non-AI experience and request withdrawal. **Prototype / exit:** rotate short themes; stop a theme if it generates traffic without product iteration or community benefit.
+
+#### 08 | Robot service coexistence shop
+
+![Robot service coexistence shop](assets/media/scenario-cards/08-robot-service-coexistence-shop-v1.png)
+
+**Value / location / role:** Test human-robot collaboration in real commerce rather than an isolated showroom in Dazhongsi; primary role: innovation scenarios. **Users and space:** merchants, robot teams, customers and frontline staff share a rotating test bay, human counter, charging and maintenance zone, and legible circulation. **Operation and boundary:** human service always runs in parallel, pricing is transparent, and faults trigger immediate degradation; face recognition cannot be a condition of basic consumption. **Prototype / exit:** test one task in one shop off peak; remove the device if agreed safety, efficiency or acceptance thresholds are not met.
+
+#### 09 | AI health navigation station
+
+![AI health navigation station](assets/media/scenario-cards/09-ai-health-navigation-station-v2.png)
+
+**Value / location / role:** Help residents understand procedures, book services and reach a human without diagnosing, at community and health-service entries in the Xiaoyue River wing; primary role: service network. **Users and space:** residents, older people, caregivers and staff use a visible window, accessible terminal, waiting seats and human referral. **Operation and boundary:** collect the minimum, retain no irrelevant health data, and label all advice as non-diagnostic with a human route. **Prototype / exit:** start with process explanation and booking; disable AI after misleading output, privacy risk or inadequate human capacity.
+
+#### 10 | AI learning workshop
+
+![AI learning workshop](assets/media/scenario-cards/10-ai-learning-workshop-v1.png)
+
+**Value / location / role:** Enable teachers, students and families to understand AI through real problems in schools, communities and public innovation spaces; primary role: cultural community. **Users and space:** small-group tables, process walls, equipment cabinets and teacher-review seats. **Operation and boundary:** child protection comes first; teachers approve content and tasks, and automated scoring never replaces educational judgment. **Prototype / exit:** start with short courses and community challenges; cancel if it becomes product promotion or teacher review cannot be guaranteed.
+
+#### 11 | Jing-Zhang memory generative theatre
+
+![Jing-Zhang memory generative theatre](assets/media/scenario-cards/11-jingzhang-memory-generative-theater-v1.png)
+
+**Value / location / role:** Sustain a public narrative connecting railway heritage, oral history and contemporary AI culture in the heritage park; primary role: cultural community. **Users and space:** residents, historians, visitors and creators use archive search, oral-history recording, generation demonstrations and small performances. **Operation and boundary:** verified history and generated content are labeled separately, sources remain traceable, and contributors may withdraw authorization; personal histories are not invented. **Prototype / exit:** begin with one verified theme and community co-creation evening; do not publish material whose sources cannot be verified.
+
+#### 12 | Accessible mobility assistance point
+
+![Accessible mobility assistance point](assets/media/scenario-cards/12-accessible-mobility-assistance-point-v1.png)
+
+**Value / location / role:** Place digital navigation, physical accessibility and human volunteers in one visible window at transit and walking breaks; primary role: policy governance. **Users and space:** wheelchair users, people with visual or hearing impairments, older people and temporarily mobility-limited users access a low counter, tactile or voice information, wheelchair loans and human accompaniment. **Operation and boundary:** a non-digital route always remains, location and need data are minimized, and an on-site responsible person and public complaint route are visible. **Prototype / exit:** begin with human assistance plus lightweight navigation at key stations; if the digital function is unreliable, turn off the algorithm and retain the human service.
+
+### Four flagship scenarios: from strategy to operable space
+
+![Model and Agent evaluation field](assets/media/scenario-cards/01-ai-agent-evaluation-field-v1.png)
+
+*Zhongzhiyuan's shared evaluation facility organizes models, Agents, urban-service tasks and human review in one auditable process open to the full line.*
+
+![AI Origin open living room](assets/media/scenario-cards/05-ai-origin-open-living-room-v1.jpg)
+
+*The living room is a public interface for repeated exchange, shared learning and collaboration among researchers, founders, residents, students and professional services—not a display hall.*
+
+![AI content launch and co-creation street](assets/media/scenario-cards/07-ai-content-launch-cocreation-street-v1.png)
+
+*Dazhongsi uses ground-floor studios, temporary pavilions, launch nodes and community feedback to connect content production, release, experience and iteration.*
+
+![Jing-Zhang memory generative theatre](assets/media/scenario-cards/11-jingzhang-memory-generative-theater-v1.png)
+
+*Railway heritage, oral history and generative media form a renewable public theatre in which verified facts and generated content are separated and sourced.*
+
+### Five Highs × Twelve Scenarios matrix
+
+| Five Highs dimension | Primary scenarios | Cross-scenario result |
+|---|---|---|
+| Industrial ecology | 01 evaluation field, 07 co-creation street | A short chain from technical validation to launch, user feedback and market translation |
+| Cultural community | 05 living room, 06 life station, 10 learning workshop, 11 memory theatre | Everyday infrastructure for talent life, intergenerational learning, public culture and durable communities |
+| Service network | 04 computing station, 09 health navigation | Accessible, bookable shared capacity with human fallback |
+| Innovation scenarios | 02 test garden, 08 coexistence shop | Enclosable, rotating and degradable real-world settings for embodied AI and robots |
+| Policy governance | 03 compliance sandbox, 12 mobility assistance | Compliance, accessibility, human review, data minimization and exit embedded in space and operation |
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -421,7 +550,7 @@ The Origin and Dazhongsi briefs draw on confirmed FTA project practice; Zhongzhi
 
 ### Three concept technical sections: turn spatial claims into checkable interfaces
 
-All dimensions are **concept inquiry values**, not surveys, construction drawings, or approvals. They must be checked against official redlines, ownership, traffic, fire, accessibility, and equipment-risk evidence. The Dazhongsi drawing uses current Beijing walking/cycling requirements for crossings, tactile guidance, curb ramps, bicycle crossing bands, and refuge islands. Railway and expressway main carriageways remain grade separated; a local approach prototype is not represented as a Third Ring engineering conclusion. [source:BEIJING-WALK-BIKE-DB11-1761-2020] [source:GB55019-2021-ACCESSIBILITY] [metric:technical_section_count]
+All dimensions are **concept inquiry values**, not surveys, construction drawings, or approvals. They must be checked against official redlines, ownership, traffic, fire, accessibility, and equipment-risk evidence. The Dazhongsi drawing treats DB11/1761-2020 and GB 55019-2021, both still pending source-registry review, only as concept-interface references and not as evidence that this project already satisfies formal controls. Applicable provisions for crossings, tactile guidance, curb ramps, bicycle crossing bands, and refuge islands require review by transport and accessibility professionals. Railway and expressway main carriageways remain grade separated; a local approach prototype is not represented as a Third Ring engineering conclusion. [metric:technical_section_count]
 
 ![AI Origin campus-street-open-living-room concept section](assets/figures/tech-origin-interface.png)
 

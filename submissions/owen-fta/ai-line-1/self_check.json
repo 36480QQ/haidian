@@ -15,9 +15,12 @@
       "proposal_files": [
         "submissions/owen-fta/ai-line-1/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/owen-fta/ai-line-1/changelog.md"
+      ],
       "changed_files": [
         "submissions/owen-fta/ai-line-1/agent.json",
+        "submissions/owen-fta/ai-line-1/assets/ai-line1-mark.png",
         "submissions/owen-fta/ai-line-1/assets/ai-line1-mark.svg",
         "submissions/owen-fta/ai-line-1/assets/ai-line1-symbol.svg",
         "submissions/owen-fta/ai-line-1/assets/figures/five-highs-diagnosis.png",
@@ -76,6 +79,7 @@
         "submissions/owen-fta/ai-line-1/assets/personas/persona-startup-v2.png",
         "submissions/owen-fta/ai-line-1/assets/personas/persona-student-v2.png",
         "submissions/owen-fta/ai-line-1/assumptions.json",
+        "submissions/owen-fta/ai-line-1/changelog.md",
         "submissions/owen-fta/ai-line-1/compliance_matrix.json",
         "submissions/owen-fta/ai-line-1/design_depth_matrix.json",
         "submissions/owen-fta/ai-line-1/drawings/a0-boards.en.pdf",
@@ -109,7 +113,7 @@
       "ai_package_stages": {
         "submissions/owen-fta/ai-line-1": "formal"
       },
-      "total_bytes": 36770277,
+      "total_bytes": 38755221,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -187,7 +191,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 14,
+          "source": 12,
           "standard": 4,
           "depth": 8,
           "data": 8,
