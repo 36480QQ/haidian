@@ -46,10 +46,14 @@ The raw generated files are not published because they lack the mandatory disclo
 | Lifecycle, topology, station-contract and tabletop scripts/results | Participant-generated deterministic validators and synthetic fixtures | Package evidence only; not field validation, certification, railway operation or implementation approval. |
 | `proposal.md`, `proposal.en.md`, HTML, PDF and narrative | Participant submission assembled from registered sources and assets | Submission text/layout under CC BY-SA 4.0 where the participant may license it; third-party source rights and the limitations above remain in force. |
 
+## Current-version asset audit
+
+**Status: `CLOSED` for the current submission package.** The PR #3928 change set introduces no new third-party source image, map tile, logo or font. The updated `mobility-bluegreen.png` and `.en.png` are local derivatives of the registered concept images, submission text and concept geometry; the updated HTML and A3/A0 pages are layout derivatives of assets already covered above. Current file integrity is recorded in `manifest.json`. Registration of any later asset remains a continuing publication rule, not an outstanding provenance item in this version.
+
 All realistic concept images visibly state, in the relevant language, that they are AI/generative concept images, not site photographs and not planning or implementation approval. Captions carry the same evidentiary boundary. No enterprise logo, personal data, non-public spatial data, commercial map imagery, third-party photograph or unlicensed icon is intentionally included.
 
 ## QA and external blockers
 
 Human bilingual and full-page visual checks are persisted in `visual/assets/bilingual-qa.json` and `visual/assets/visual-qa.json`. The PR #3828 repair closure is persisted in `visual/assets/review-3828-repair-matrix.json`; JSON is used because the submission validator permits only the fixed report filenames in `report/`.
 
-Real deployment remains blocked until a legal operator, site permission, insurance, safety responsibility, data controller, accessibility reviewer and restoration funding are evidenced. Those missing external commitments do not weaken the asset-rights disclosure above and are not represented as completed partnerships.
+Real deployment remains blocked until a legal operator, site permission, insurance, safety responsibility, data controller, accessibility reviewer and restoration funding are evidenced. Those future field-launch conditions do not weaken the asset-rights disclosure above, are not represented as completed partnerships and are not current asset repairs.

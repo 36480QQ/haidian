@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-08-24T14:52:00+08:00",
+  "reviewed_at": "2026-08-24T16:40:23+08:00",
   "baseline_git_sha": "b65f7f4ad12cd8a50d5854e8846b0de7b9e8bed4",
   "method": "Manual substantive section-by-section comparison by the declared AI agent under participant direction; not an automatic file mapping.",
   "status_vocabulary": [
@@ -13,6 +13,51 @@
     "pass": 8,
     "fixed": 7,
     "open": 0
+  },
+  "current_version_change_set": {
+    "pull_request": 3928,
+    "source_head": "1266ab4805b6718ebd0cd5daed9b10346d6ed72f",
+    "status": "CLOSED",
+    "open_items": 0,
+    "changes": [
+      {
+        "item": "hero_sentence",
+        "zh": "让一座城参与AI的完成",
+        "en": "Let a city take part in making AI",
+        "status": "PASS"
+      },
+      {
+        "item": "first_screen_structure",
+        "zh": "为什么是京张 + 三站人的动作",
+        "en": "why Jing-Zhang + human actions at three stations",
+        "status": "PASS"
+      },
+      {
+        "item": "mobility_bluegreen_figure",
+        "zh": "六类城市知识接口与三处共同开发场",
+        "en": "six urban-knowledge interfaces and three co-development fields",
+        "status": "PASS"
+      },
+      {
+        "item": "a3_first_four_pages",
+        "zh": "封面、为何京张、三站、一个城市问题",
+        "en": "cover, why Jing-Zhang, three stations, one city question",
+        "status": "PASS"
+      },
+      {
+        "item": "a0_board_1",
+        "zh": "核心主句与总体共同开发图",
+        "en": "core claim and overall co-development figure",
+        "status": "PASS"
+      },
+      {
+        "item": "html_first_layer",
+        "zh": "首层主句、京张条件与三站动作",
+        "en": "hero claim, Jing-Zhang conditions and station actions",
+        "status": "PASS"
+      }
+    ],
+    "verification": "Manual paired review plus deterministic, spatial, visual-packaging and professional-evidence trusted gates. Later bilingual synchronisation is a continuing rule, not an outstanding item in this version."
   },
   "items": [
     {

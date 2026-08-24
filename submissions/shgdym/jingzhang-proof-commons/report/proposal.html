@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>X京张 X JINGZHANG：让一座城参与AI的完成 - proposal report</title>
-<link rel="stylesheet" href="../visual/assets/cjk-font.css">
 <style>
 :root {
   --ink: #172033;
@@ -17,7 +16,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: "XJZ CJK", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
@@ -271,7 +270,7 @@ code {
 <figure class="proposal-figure"><img src="../assets/figures/implementation-roadmap.png" alt="实施项目、资源级别、年度运营与三道准备门"><figcaption>实施项目、资源级别、年度运营与三道准备门</figcaption></figure>
 <h3>专业移交包：从概念成果进入下一道门</h3>
 <p>每个项目进入受控试点前必须形成十项可签注移交件：正式资料差异报告、重点区现状底图、候选运营主体责任书、场景登记卡、安全论证、数据与权利影响检查、无障碍现场审计、全生命周期资源简报、失败复原方案、继续/修改/停止的门槛决定。缺少责任法人、专业批准、公众告知、人工接管、非数字服务、数据到期或复原资源中的任何一项，项目只能保留在研究状态。</p>
-<p>移交件不虚构授权：当前包只给出字段、责任角色、验收证据和失败动作，组织名称、签字、预算、保险、现场测量和批准状态保持待补。专业团队接手后可按 JZ-01—JZ-12 逐项签注，而不必从叙事文本重新拆解任务。<sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="phasing_implementation" title="深度：phasing_implementation">深度</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="renewal_project_count" title="指标：renewal_project_count">指标</sup></p>
+<p>移交件不虚构授权：当前包只给出字段、责任角色、验收证据和失败动作。组织名称、签字、预算、保险、现场测量和批准属于真实项目启动后的外部输入，不是本概念包尚未完成的交付；专业团队接手后可按 JZ-01—JZ-12 逐项签注，而不必从叙事文本重新拆解任务。<sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="phasing_implementation" title="深度：phasing_implementation">深度</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="renewal_project_count" title="指标：renewal_project_count">指标</sup></p>
 <figure class="proposal-figure"><img src="../assets/figures/delivery-dashboard.png" alt="十二项目责任、资源、验收、停用与复原仪表板"><figcaption>十二项目责任、资源、验收、停用与复原仪表板</figcaption></figure>
 <h2>指标体系、面积复算与合规矩阵</h2>
 <p>风险最高的不是技术失败，而是责任不清、精确感误导和退出资源不足。<code>risk.json</code> 登记数据隐私、实施复杂度、公众接受、运维成本、政策不确定、空间争议、技术成熟度和公平包容八类风险；每类均包含缓解措施和人工复核。场景上线前必须完成数据期限、人工接管、投诉、事故、删除和场地复原演练。</p>
@@ -280,6 +279,9 @@ code {
 <h2>风险、版权与合规说明</h2>
 <blockquote><p><strong>质量保障层：</strong> 共同开发不是无规则开放。TEST、RELEASE、USE、RETURN，三张票据以及现有生命周期、拓扑和合同检查全部保留，用来约束安全、权利、人工责任、公众反馈和退出；字段、哈希与PASS结果统一放入专业附录。</p></blockquote>
 <blockquote><p><strong>证据边界：</strong> 当前总体边界和三处重点区为临时约束，只支撑概念关系、公开地图切片与包内复算。正式边界、控规、权属、现场尺寸、工程条件和运营主体到位后必须重建；本方案不把概念空间写成审批或实施承诺。</p></blockquote>
+<h3>当前包评审准备状态</h3>
+<div class="proposal-table"><table><thead><tr><th>事项</th><th>当前状态</th><th>责任与触发</th><th>对本次概念方案评审的含义</th></tr></thead><tbody><tr><td>中英文正文、图件、HTML、A3/A0、指标与证据锚点</td><td><strong>CLOSED</strong></td><td>本版本已完成人工逐项等价审校并通过四项 trusted gates；后续双语同步是持续维护规则</td><td>当前无待同步项 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/bilingual-qa.json" title="空间数据：visual/assets/bilingual-qa.json">空间数据</sup></td></tr><tr><td>当前资产来源与再分发依据</td><td><strong>CLOSED</strong></td><td>本版本新增或替换的图件、HTML与PDF派生物已纳入资产台账和manifest哈希</td><td>当前无待登记资产 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="COPYRIGHT-LEDGER" title="来源：COPYRIGHT-LEDGER">来源</sup></td></tr><tr><td>仓库检查、概念空间与现场事实</td><td><strong>CLOSED（已分栏）</strong></td><td><code>PACKAGE / SYNTHETIC</code>仅证明规则与合成测试输入一致；<code>CONCEPT / PROVISIONAL</code>仅表达概念关系；<code>FIELD / REAL-WORLD</code>未发生、未获授权</td><td>24/24、29/29、37/37与8/8均不是产品安全、现场合规、认证、公众接受或批准</td></tr><tr><td>正式边界多边形</td><td><strong>EXTERNAL</strong></td><td>Trigger：组织方发布official polygon；Owner：组织方提供输入，参与者随后执行GeoJSON、指标、图件、双语HTML、A3/A0全链重算和差异报告</td><td>当前没有可由参与者执行的替代动作，不以其他边界替代正式输入 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="BOUNDARY-SOURCE" title="来源：BOUNDARY-SOURCE">来源</sup></td></tr><tr><td>七项PRE-PILOT授权条件</td><td><strong>FUTURE-TRIGGERED</strong></td><td>仅在真实现场试点启动前触发；运营法人、场地许可、保险、安全责任、数据控制者、无障碍复核主体和复原资金继续为<code>TBD / BLOCKED</code></td><td>阻断现场启动，不阻断当前概念设计包的正式专业评审 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="pre_pilot_readiness_review_window_days" title="指标：pre_pilot_readiness_review_window_days">指标</sup></td></tr></tbody></table></div>
+<p>当前参与者可控制的包内阻断项为<strong>无</strong>。详细分类与证据索引见 <code>visual/assets/formal-review-readiness-closure.json</code>；该结论只描述当前提交包状态，不构成现场授权、工程结论或审批声明。</p>
 <p>正文、图形、设计图层、HTML与PDF由声明的AI agent和本地工具针对本项目生成。四张写实概念图于2026-08-24通过Codex内置OpenAI图像生成工具以纯文本输入重新生成；工具未暴露具体模型标识，因此模型字段如实记录为<code>unknown</code>，服务、日期、输入、官方输出条款、后期编辑、原始/成品哈希和再分发状态均已逐项登记。历史来源不明图已完全移除。所有写实图均内嵌“生成式概念图、非现场照片、非规划或实施批准”标识。图纸不加载商业地图、第三方照片、企业Logo或个人数据；离线CJK字体按SIL OFL 1.1嵌入。逐项记录见 <code>report/copyright_statement.md</code>。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="COPYRIGHT-LEDGER" title="来源：COPYRIGHT-LEDGER">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OPENAI-TERMS-20260101" title="来源：OPENAI-TERMS-20260101">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OPENAI-SHARING-POLICY-20221114" title="来源：OPENAI-SHARING-POLICY-20221114">来源</sup></p>
 <p>本成果是开源概念建议，不能替代规划、建筑、交通、市政、文保、法律、安全、运营和审批专业工作；入库、自检或评审通过均不代表政府背书、实施批准、采购、认证或获奖。</p>
 <p>合规流程从“来源登记”开始，以“退出复原”结束：场景运营方对合法性和日常运行负责，规划、交通、安全、法律和无障碍专业人员批准对应门槛，社区和目标用户参与问题定义，公众获得用途、数据期限、申诉和替代服务信息，AI不成为责任主体。<code>risk.json</code> 对八类风险记录触发器、缓解措施、人工复核和停止条件；高风险场景必须演练急停、人工接管、数据冻结、删除和空间恢复。三张体验图保留原始生成文件，双语合成图只做裁切、标题和声明，具体工具与未暴露的模型子版本均如实披露，不猜测权利或模型信息。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="COPYRIGHT-LEDGER" title="来源：COPYRIGHT-LEDGER">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="scenario_card_count" title="指标：scenario_card_count">指标</sup></p>

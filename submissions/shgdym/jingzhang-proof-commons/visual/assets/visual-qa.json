@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-08-24T14:52:00+08:00",
+  "reviewed_at": "2026-08-24T16:40:23+08:00",
   "baseline_git_sha": "b65f7f4ad12cd8a50d5854e8846b0de7b9e8bed4",
   "scope": {
     "a3_pages": 44,
@@ -15,9 +15,19 @@
   ],
   "font_audit": {
     "embedded_fonts_decoded": 2,
-    "required_cjk_codepoints": 978,
+    "required_cjk_codepoints": 979,
     "missing_cjk_codepoints": 0,
     "replacement_characters": 0
+  },
+  "current_closure_check": {
+    "status": "PASS",
+    "scope": "PR #3928 review-readiness closure added to the paired proposal reports only; A3/A0 and visual landing pages are unchanged.",
+    "checks": [
+      "Chinese and English closure tables contain the same five status classes and evidence limits.",
+      "Rendered Chinese report page 43 and English report page 57 were inspected at 1.5x raster scale.",
+      "Offline CJK subset covers all 979 required Chinese codepoints with zero missing glyphs.",
+      "No replacement characters, missing resources or new external font dependencies were introduced."
+    ]
   },
   "pdf_checks": [
     {

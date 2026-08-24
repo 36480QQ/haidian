@@ -412,25 +412,25 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "9d3ac76380e78dbd7e2e186bc90407475f9e9c9f32ba2821c5ea1897a70d19b0"
+      "sha256": "d79c4f94ae6db956f69bce99ce927d2875ad0eb8a9d63705fbbcfb68035ccff7"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "a05a4e3e142992cb3caa79f2139097ee6ef9bd46f5994a1d46b714510aa0ef6e"
+      "sha256": "d6dc8ebec36f7b6a72704c5c08101ee566f8cd500c21dc4a42387b1573659687"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "944e639bbbb2d40aa3ead602520da7475b5629c479667e9b89c54b3155dfb532"
+      "sha256": "6f06afea044cba4d50607b57d33f5d7c30893f55ac0a3e1cd979f46682e96ab7"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "bb996cbb1bfe56ddca98f8bb6c7fdfdd06b6b7bfc205fa8cdd6ad2ccca342dc6"
+      "sha256": "0c1c6ad481b50b8485e81a581df17372212d5a6321cf30907d68c21253f65cca"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -531,7 +531,7 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "796c79aac40a14750a929e2dd1fafdedb398a584044ccca9179bd0254b6c04be",
+      "sha256": "29ceeb811e6be03e4619cdce075284095df73ee786e88e989a27b3645865bff0",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -539,26 +539,26 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "93ed63453e3fe8c25c726fa657c29a5bb7a9cbd5aed072f9b565197d662e0a39",
+      "sha256": "91c3c821178edcc8d35de36822a0256df471d3395ca17143f373fefc6a46c528",
       "language": "zh"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "rights_ledger",
       "required": true,
-      "sha256": "4a131896a9c41eddc834bd8f5b0a7b900bddfc36d9e6cf21c8e82b67e419831d"
+      "sha256": "1e6a935bb0d30fec2d72c7b317eae113d7dc9632173b7c66ac037bb5feaf088a"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative_report",
       "required": true,
-      "sha256": "20f9f90ec7bba48505fd40b6634df374f6e55b9e0ee14255801e34425c618996"
+      "sha256": "529aaddef924e2beeb2557d79908e36ae1ada2e7723f1ec341aa95b04307b14f"
     },
     {
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "3e4b88e5d1cd8edd02d478a3f34be9346ba5048f3e228bb69905ae44fccdc408",
+      "sha256": "3a517dd3683c76a0f45be7dfc99eb6cb54b2ca979236c51c4bc709216ae34819",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -566,7 +566,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "c87e9dc76f30085a6ee2487491e6e18ad0e744698979d84297426002dc1a0b7e",
+      "sha256": "cc811863825c6e73b9cc2ed3565bbe0c8791f75d659850f9a0bececbb8ee27d7",
       "language": "zh"
     },
     {
@@ -579,7 +579,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8bef4e5446953fdca2546cfcbf08889ecfefb971631c5e2ce41eb2cdd5e67f64"
+      "sha256": "1c4ba993fd372e7fb5362266d5d786dbbb40fe5f5c3d34716b7ca47ca482170a"
     },
     {
       "path": "sources.json",
@@ -603,7 +603,7 @@
       "path": "visual/assets/bilingual-qa.json",
       "role": "visualization",
       "required": true,
-      "sha256": "0ac7abcaf12eabc31bf1531419bac71ebffba0d8745bc051a28f246cf477bd5f"
+      "sha256": "f96476cfc9a2030dd66a10a1e5987b122890d4e6b318048ba89d59852a5efabf"
     },
     {
       "path": "visual/assets/cjk-font.css",
@@ -616,6 +616,12 @@
       "role": "visualization",
       "required": true,
       "sha256": "48c5e44d82b613f2acf7fad5119112a718d80bc5069657eee724a8232aedda03"
+    },
+    {
+      "path": "visual/assets/formal-review-readiness-closure.json",
+      "role": "visualization",
+      "required": true,
+      "sha256": "34412a325b7b0e276f3fdad86989baded7ba61e971a3a499c20892c6f96dcb52"
     },
     {
       "path": "visual/assets/review-3828-repair-matrix.json",
@@ -765,7 +771,7 @@
       "path": "visual/assets/visual-qa.json",
       "role": "visualization",
       "required": true,
-      "sha256": "7bc3dd4d3d8ce50e5c229dcc5e8555fc3279288773bd3b5447a3a5a5a2d30ce1"
+      "sha256": "8b6ec38b05d50ca0cb96a628e229ea4b5248ecf4e6debd0f77a0449c0de4f203"
     },
     {
       "path": "visual/assets/x-cultural-route.json",
