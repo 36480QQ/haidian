@@ -61,9 +61,37 @@ The coordinated research area should not become another closed campus. It should
 
 These are mechanism comparisons only. No case investment, scale or performance figure is imported into the Haidian proposal [source:CASE-STATION-F] [source:CASE-PUNGGOL-DIGITAL-DISTRICT].
 
+### Regional collaboration interface matrix: from the Haidian loop to a Jing-Jin-Ji task flow
+
+Regional collaboration is a conceptual interface, not a signed partnership. The five interfaces below are triggered by the taskbook's regional-coordination criterion [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. Each row names a proposed role, observable verification and stop condition; names, contacts, venues and funding remain subject to confirmation by authorities and partners.
+
+| Interface | Concept task flow / spatial connection | Proposed accountable role | Observable verification | Dependency and stop condition |
+| --- | --- | --- | --- | --- |
+| Beiwei Community | Connect AI walking guidance, paper wayfinding, community inquiry and older-adult walks to the heritage spine | Community liaison + accessibility team | One public walk per quarter; retain route issues, human handling and opt-out records | Without community authorization or route-safety review, return to desk maps and human inquiry |
+| Future Science City | Turn public test questions from the safety sandbox into research-validation tasks and write rule versions back | Standards team + research liaison | Every round has a problem card, version, human conclusion and downloadable abstract | Without data authorization, test capacity or human review, create no data link |
+| Huairou Science City | Connect long-cycle research, open challenges and public explanation; translate research outcomes into legible civic services | Research-transfer + public-explanation team | One cross-region translation record and one public explanation event per year | If results cannot be public or explained, keep an anonymous method retrospective and publish no outcome promise |
+| Beijing E-Town | Use enterprise services, low-speed-robot safety checklists and supplier-neutral APIs as a transfer interface | Enterprise services + safety/compliance team | Every transfer scenario has RACI, interface list, failure drill and human-handover record | If vendor lock-in, insurance/safety conditions or rollback are unclear, stop field testing |
+| Jing-Jin-Ji | Use the annual AI civic route, open contribution records and cross-city retrospectives as a regional outreach and attraction entry | Regional operations coordinator + event-safety team | Publish annual capacity, accessibility, safety and copyright checklist; issue a versioned retrospective | Without partner confirmation, capacity or copyright checklist, publish no cross-city route |
+
+The verification items are design targets, not existing facts. Regional collaboration starts with public tasks, anonymized evidence, human review and reversible pilots; it does not assume investment, procurement, administrative agreements or venue commitments.
+
 ### Naming and visual identity
 
 The main name is “Open Weave”, with “Jingzhang Civic Loop” as the English spatial descriptor. The logo direction uses two parallel lines as the railway memory, three nodes for the three cores, and an intentionally open arc for knowledge and proposals that keep entering and iterating. Suggested colors are ink blue (trust and rail), signal red (action and contribution), river green (ecology and everyday life), and warm yellow (nodes and events). Existing corporate marks and unlicensed fonts are excluded. Identity is tied to spatial tasks rather than made as an isolated slogan [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+#### Minimum visual standard and activity sub-brands
+
+To turn the identity from a verbal direction into a reusable spatial grammar, this package fixes the following minimum standard. The twin-track mark uses one module between the lines; three circular nodes are numbered 01 / 02 / 03; the mark may not be stretched, rotated or replaced by a corporate symbol. The open arc is only a tail expressing continued contribution and iteration, never a closed badge.
+
+| Visual token | Specification | Use |
+| --- | --- | --- |
+| Ink blue `#17283B` | Main background, rail line and high-contrast text | Thresholds, evidence sheets, formal titles |
+| Signal red `#C95542` | Action, warning and contribution state | Pilot gates, stop conditions, activity actions |
+| River green `#4E9B7B` | Blue-green space, pass state and public service | Slow mobility, rain gardens, accepted evidence |
+| Warm yellow `#E8C35E` | Nodes, events and human-service prompts | Contribution nodes, activity routes, staffed desks |
+| Twin tracks + 01/02/03 | Stroke 2, node diameter 8, one-module spacing | Wayfinding, drawing corner marks, activity badges |
+
+Activity sub-brands use the locked form “Open Weave / [function] / [year]”: `Open Weave / Field Notes / 2026` for regional public lessons, `Open Weave / Test Commons / 2026` for testing and audit week, and `Open Weave / Civic Route Week / 2026` for the global AI week. Sub-brands reuse only the twin tracks, node numbers and four colors; every release carries provenance, copyright, accessibility and capacity checklists.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -155,6 +183,19 @@ AI does not replace planning, public services or professional judgment. It enter
 
 The first acceptance loop for four priority pilots is explicit: the safety governance sandbox must publish its rules, data scope, human conclusions and withdrawal record; the AI walking guide must field-check accessible, older-adult and night routes and go offline when it misleads; the data commons lounge may show only authorization-chain summaries, blocking personal fields or untraceable sources; the global AI week route needs a capacity, accessibility, safety and copyright checklist before opening. These are design targets; professional teams and authorities set the final thresholds.
 
+### Annual operating calendar, developer community and international transfer path
+
+Agent.6's “global events” are translated into a verifiable annual operating cycle. This is a conceptual calendar, not a government event schedule; every quarter first completes capacity, accessibility, safety, copyright and data-boundary checklists.
+
+| Quarter / sub-brand | Public action | Accountable role | Observable indicators and evidence |
+| --- | --- | --- | --- |
+| Q1 / Field Notes | Open problem call, heritage walk audit and community human-inquiry days | Community liaison + history/accessibility advisers | At least 3 walk routes, 6 persona feedback sets, problem cards and offline alternatives |
+| Q2 / Test Commons | Safety-sandbox open day, developer maintainer office hour and model-evaluation explanation class | Standards + developer-community operations | Four priority pilots each have rules, version, human conclusion and withdrawal record |
+| Q3 / Regional Exchange | Task-translation week with Beiwei Community, Future Science City, Huairou Science City, Beijing E-Town and Jing-Jin-Ji interfaces | Regional-coordination lead + enterprise-services team | Five interface records, one cross-region retrospective, an owner and verification method per item |
+| Q4 / Civic Route Week | Global AI week civic route, release event and annual failure/exit retrospective | Event operations + public safety + public review group | Publish capacity, accessibility, safety and copyright checklist; issue a versioned annual retrospective |
+
+The developer-community mechanism is “monthly maintainer office hour + quarterly public challenge + versioned evidence registry”: newcomers read contribution and data boundaries before submitting a public problem card; maintainers own provenance, version and withdrawal status; the public sees only human-explained results. The international transfer path is “public-route experience → open-challenge signup → human evaluation/demo → regional task translation → professionally reviewed conceptual pilot”; it promises no investment, procurement, delivery or signed partnership.
+
 ![Mobility and blue-green civic loop](assets/figures/mobility-bluegreen.en.png)
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
@@ -197,6 +238,23 @@ The matrix below moves the project list toward a first deliverable and a stop co
 | JZ-06 Contribution wall / honor system | Public contribution fields and withdrawal prototype | Cultural narrative + knowledge-governance team | Attribution consent, copyright and history review | If consent is unclear or withdrawal impossible, use anonymous version records |
 | JZ-07 Low-speed robotics test | Controlled test area and safety checklist | Mobility safety + operations team | Site, insurance, staffing and incident response | Any boundary breach or incident stops the test and returns to desk review |
 | JZ-08 AI week public route | Capacity, accessibility, safety and copyright checklist | Event operations + public-safety team | Venue, emergency, copyright and public notice | If the checklist is incomplete, publish no public route or event promise |
+
+### Package acceptance, RACI and maintenance resources
+
+The table below moves every package from a proposed action to a minimum observable evidence set. R means responsible for execution, A accountable, C consulted and I informed; these are proposed professional roles, not institutional appointments. Maintenance resources are logged in five categories: people, place, equipment/energy, data/copyright and emergency response.
+
+| Package | R / A | C / I | First observable acceptance | Archive and stop trigger |
+| --- | --- | --- | --- | --- |
+| JZ-01 | R mobility team / A urban-design lead | C accessibility, community / I public | Three routes pass day/night/rain/barrier walk audits | Route map, issue log and human alternative; stop on misdirection or safety conflict |
+| JZ-02 | R public-space team / A river-edge lead | C water, flood, maintenance / I residents | One movable display sample passes maintenance and flood checks | Maintenance log and flood/lighting check; return to movable display if conditions fail |
+| JZ-03 | R retrofit team / A campus-community operations lead | C fire, ownership, community / I schools and enterprises | One staffed ground-floor node passes opening-hours and exit test | Roster, fire opinion and complaint log; no fixed retrofit if ownership/fire is unclear |
+| JZ-04 | R mobility team / A station-area lead | C rail, roads, safety / I commuters | Four quadrants pass pedestrian-conflict and accessible-alternative checks | Conflict map, time plan and incident record; do not expand while conflicts remain |
+| JZ-05 | R municipal/AI-infrastructure team / A operations lead | C network, energy, privacy / I public | One edge node passes energy, outage and human-handover drill | Equipment list, energy sheet and rollback script; no pilot without staffing/rollback |
+| JZ-06 | R knowledge-governance team / A cultural-narrative lead | C copyright, heritage, contributors / I public | Contribution can be attributed, anonymized, withdrawn and versioned | Authorization and version log; anonymize when provenance/withdrawal is unclear |
+| JZ-07 | R operations-safety team / A low-speed-service lead | C insurance, mobility, equipment / I neighbors | Controlled area passes staffing, emergency-stop and incident drill | Roster, emergency-stop record and insurance conditions; stop on boundary breach/incident |
+| JZ-08 | R event operations / A public-safety lead | C copyright, accessibility, regional interfaces / I visitors | One route passes capacity, accessibility, safety and copyright checks | Checklist, site retrospective and exit record; no route if any item is missing |
+
+Every node needs at least one on-site owner, one replacement duty person, maintenance and energy records, a public complaint/exit route, and a paper or phone alternative. Exact headcount, budget, contract, equipment model and thresholds remain for professional confirmation; this proposal does not replace procurement or approval.
 
 The sequence is not a simultaneous start of all eight packages. JZ-01, JZ-06 and human-service nodes establish public evidence first; later pilots are selected by the gates. Any package can pause, narrow or roll back because of missing data, public feedback or professional review.
 
