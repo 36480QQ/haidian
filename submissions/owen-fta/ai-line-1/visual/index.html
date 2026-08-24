@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全球AI第一线｜AI LINE 1：三区两翼、多点协同的分布式创新网络 - proposal report</title>
+<style>
+:root {
+  --navy: #063844;
+  --ink: #064B5B;
+  --muted: #607782;
+  --line: #d5e0e3;
+  --paper: #ffffff;
+  --bg: #f4f9fa;
+  --accent: #08B9E6;
+  --green: #16B85C;
+  --red: #F2383D;
+  --gold: #ff8a34;
+  --pink: #e94f57;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 1180px;
+  margin: 28px auto;
+  padding: 0 72px 88px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 18px 60px rgba(8, 28, 44, 0.10);
+}
+.hero {
+  margin: 0 -72px 44px;
+  padding: 54px 72px 48px;
+  color: white;
+  background: linear-gradient(120deg, #053844, #076176);
+  border-bottom: 8px solid var(--red);
+}
+.hero img { width: min(460px, 75vw); display: block; margin-bottom: 34px; }
+.hero h1 { color: white; max-width: 980px; margin-bottom: 12px; }
+.hero .hero-subtitle {
+  margin: 0 0 22px;
+  max-width: 980px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.35;
+  font-weight: 520;
+  letter-spacing: 0.01em;
+}
+.hero .summary { color: #dbe7ec; max-width: 840px; }
+h1 { font-size: 42px; line-height: 1.18; margin: 0 0 12px; letter-spacing: -0.02em; }
+h2 { font-size: 28px; line-height: 1.25; margin: 58px 0 18px; border-top: 1px solid var(--line); padding-top: 30px; color: var(--navy); }
+h2::before { content: ""; display: block; width: 72px; height: 7px; margin: -34px 0 24px; background: linear-gradient(90deg,var(--accent) 0 52%,var(--green) 52% 78%,var(--red) 78%); }
+h3 { font-size: 21px; margin: 32px 0 12px; color: #087E9A; }
+p, li { font-size: 16px; }
+ul { padding-left: 1.3em; }
+li { margin: 0.35em 0; }
+ol { padding: 0; margin: 22px 0; list-style: none; counter-reset: ordered-item; display: grid; gap: 10px; }
+ol li { counter-increment: ordered-item; position: relative; padding: 14px 18px 14px 58px; margin: 0; background: #f2fafb; border-left: 5px solid var(--accent); border-radius: 8px; }
+ol li::before { content: counter(ordered-item); position: absolute; left: 16px; top: 13px; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--navy); color: white; font-weight: 800; line-height: 28px; text-align: center; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.summary { color: var(--muted); font-size: 18px; }
+.translation-link a { color: var(--navy); background: var(--gold); padding: 8px 14px; border-radius: 18px; text-decoration: none; font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: var(--navy); color: white; font-weight: 700; border-color: #214455; }
+.proposal-table tbody tr:nth-child(even) { background: #eef9fb; }
+.proposal-table tbody td:first-child { color: var(--navy); font-weight: 750; background: #eaf8fb; min-width: 112px; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 30px -26px 38px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f2f7f7;
+  box-shadow: 0 14px 34px rgba(8, 28, 44, 0.08);
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.persona-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 20px 0 34px; }
+.persona-card { display: flex; align-items: center; gap: 16px; min-height: 112px; padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: #fff; box-shadow: 0 8px 20px rgba(6,75,91,.07); }
+.persona-card:last-child { grid-column: 1 / -1; }
+.persona-card p { margin: 5px 0 0; color: var(--muted); line-height: 1.5; font-size: 14px; }
+.persona-avatar { position: relative; flex: 0 0 76px; width: 76px; height: 76px; border-radius: 50%; display: block; overflow: hidden; color: white; font-size: 0; border: 4px solid rgba(255,255,255,.92); box-shadow: 0 0 0 2px currentColor, 0 8px 22px rgba(6,56,68,.16); background-position:center; background-size:cover; }
+.persona-engineer { background-image:url('../assets/personas/persona-engineer-v2.png'); }
+.persona-startup { background-image:url('../assets/personas/persona-startup-v2.png'); }
+.persona-student { background-image:url('../assets/personas/persona-student-v2.png'); }
+.persona-family { background-image:url('../assets/personas/persona-family-v2.png'); }
+.persona-service { background-image:url('../assets/personas/persona-service-v2.png'); }
+.persona-engineer { background-color: var(--accent); color: #08B9E6; }
+.persona-startup { background-color: var(--red); color: #F2383D; }
+.persona-student { background-color: var(--green); color: #16B85C; }
+.persona-family { background-color: #ff8a34; color: #ff8a34; }
+.persona-service { background-color: var(--navy); color: var(--navy); }
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { margin: 0; padding: 0 18px 52px; }
+  .hero { margin: 0 -18px 36px; padding: 34px 22px 32px; }
+  .hero .hero-subtitle { font-size: 18px; }
+  .proposal-figure { margin-left: 0; margin-right: 0; }
+  .persona-grid { grid-template-columns: 1fr; }
+  .persona-card:last-child { grid-column: auto; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<img src="../assets/ai-line1-mark.svg" alt="AI LINE 1">
+<h1>全球AI第一线｜AI LINE 1</h1>
+<p class="hero-subtitle">三区两翼、多点协同的分布式创新网络</p>
+<p class="summary">FTA GROUP提出全球AI第一线：以分布式创新网络连接三区两翼，以“三次过线”组织AI创新从原创策源、标准验证到城市应用，以五高法则决定项目优先级，以超级创新元承载空间与运营。三项原创贡献是：把三个重点区由并列园区转化为完整创新生产链，把五高诊断转化为项目准入与退出工具，把创新生态转化为可分期启动、可复盘调整的城市空间引擎。</p>
+<p class="translation-link"><a href="index.en.html">Read in English</a></p>
+</section>
+<blockquote><p><strong>一句话判准：一项 AI 创新必须完成三次过线——在 AI 原点社区证明“值得做”，在众智园证明“做得稳”，在大钟寺证明“有人用”；任何一关不过线，就回到上一环节，不进入城市规模化应用。</strong></p></blockquote>
+<h2>一页执行摘要</h2>
+<p>百年前，京张铁路以中国自主设计与建造证明工程自主；百年后，全球AI第一线把海淀的原创技术、验证能力、城市场景、资本服务和公共生活组织成一套可持续运转的自主创新网络。方案不把三区两翼理解为五个并列板块，而把它们组织为一条完整生产链：AI原点社区负责原创策源与概念验证，众智园负责标准、可靠性和生态验证，小月河场景赋能翼提供受控城市测试，大钟寺负责应用首发、市场与公众反馈，中关村科技服务翼提供资本、知识产权、合规、品牌和国际化服务；反馈再回到原点，进入下一轮创新。</p>
+<p><strong>本方案的三项原创贡献：</strong></p>
+<ol>
+<li><strong>从并列园区到完整创新生产链。</strong> 以“三次过线”明确三区两翼缺一不可的项目流转关系，而不是沿铁路简单排列功能和场景。</li>
+<li><strong>从生态诊断到项目决策。</strong> 五高法则不仅描述产业、社群、服务、场景与治理，还决定项目立即启动、条件启动、暂缓或不建议，并保留年度复盘与退出机制。</li>
+<li><strong>从抽象生态到城市空间引擎。</strong> 每个创新区以一个超级创新元集中承载共享服务、公共交往、关键场景和运营入口，再由分布式网络连接为可分期启动的城市系统。</li>
+</ol>
+<p><strong>成果导航：</strong></p>
+<div class="proposal-table"><table><thead><tr><th>核心判断</th><th>本方案回答</th><th>可核验成果</th></tr></thead><tbody><tr><td>是否紧扣任务书</td><td>三层范围、三区两翼与六项智能体任务逐项响应</td><td>正文、<code>compliance_matrix.json</code>、A3/A0与HTML</td></tr><tr><td>原创性在哪里</td><td>分布式创新网络、三次过线、五高决策、超级创新元</td><td>本页、总体结构图、五高项目决策矩阵</td></tr><tr><td>AI如何进入城市规划</td><td>AI项目在策源、验证、场景、应用和反馈之间跨区流动</td><td>三次过线流程、12张场景卡、10套空间图层</td></tr><tr><td>如何实施</td><td>以0—6、6—18、18—36个月推进，先运营原型、再固化空间</td><td>三处重点区行动表、分期图层、项目决策矩阵</td></tr><tr><td>如何体现公共利益</td><td>同时服务居民、青年、企业、高校、游客与行动不便者</td><td>五类画像、公共服务与非AI通道、投诉和人工兜底</td></tr><tr><td>如何控制风险</td><td>临时边界显著披露；场景有责任人、停止条件和专业复核触发</td><td>assumptions、sources、自检、场景卡与风险章节</td></tr><tr><td>是否便于继续深化</td><td>双语正文、图纸、HTML、指标、几何和专业矩阵闭环</td><td>manifest与四门自检全部通过</td></tr></tbody></table></div>
+<p><strong>六项智能体任务响应：</strong></p>
+<div class="proposal-table"><table><thead><tr><th>任务</th><th>FTA回应</th><th>关键成果</th></tr></thead><tbody><tr><td>agent.1 总体概念与功能统筹</td><td>全球AI第一线、分布式创新网络、三次过线</td><td>品牌、Logo、总体结构与三区两翼分工</td></tr><tr><td>agent.2 世界级AI创新生态</td><td>策源—验证—场景—应用—反馈的完整链条</td><td>7类全球案例、五类流动与服务网络</td></tr><tr><td>agent.3 AI+场景赋能</td><td>12个可控原型，其中3个产业测试验证场景</td><td>场景卡、空间落点、人工责任与退出条件</td></tr><tr><td>agent.4 公共空间与朝圣地标</td><td>公共创新脊、超级创新元和3处可更新地标</td><td>公共空间图层、开发者路线与荣誉展示</td></tr><tr><td>agent.5 三重文化叙事</td><td>铁路自主工程精神—中关村创新文化—AI新文化</td><td>文化路线、公共节点和可持续内容机制</td></tr><tr><td>agent.6 全球活动与长期运营</td><td>五高年度复盘与诊断—战略—设计—运营—投资反馈</td><td>年度活动、开发者社区、场景开放和招引转化</td></tr></tbody></table></div>
+<h3>三次过线：一项AI创新如何穿越三区两翼</h3>
+<p>一项AI创新首先在<strong>AI原点社区</strong>完成问题定义、原创性判断和概念验证，回答“是否值得做”；随后进入<strong>众智园AI标准与生态创新区</strong>，完成模型、硬件、安全、可靠性和生态接口验证，回答“是否做得稳”；通过后由<strong>小月河场景赋能翼</strong>提供限定时间、限定空间、人工负责的城市测试，再进入<strong>大钟寺AI应用与场景创新区</strong>接受真实用户、市场和公共价值反馈，回答“是否有人用”。<strong>中关村科技服务翼</strong>贯穿全过程，提供资本、知识产权、法律合规、品牌和国际市场服务。任一环节未通过，项目退回上一环节修正或退出；通过后的反馈重新进入原点，形成下一轮创新。</p>
+<p>“过线”同时对应两层京张语义：铁路通过一条线路把分散节点组织成共同系统，评测通过一条门槛才允许创新进入下一阶段。它不是复刻铁路符号，而是把京张的工程精神转化为AI时代的城市责任——<strong>先验证，再放行；能复核，才扩展。</strong>三次过线也不要求团队或设备在三区间反复搬迁。实施载体是一套统一项目编号和三份可追溯记录：原点形成概念验证记录，众智园形成标准与安全评测记录，大钟寺形成真实使用与公共价值记录；团队可在原址远程调用分布式服务，只有需要现场测试时才进入相应节点。</p>
+<p><strong>冠军记忆线｜同一个项目 <code>JZ-AI-001</code> 的完整旅程：</strong>原点不是“参观第一站”，而是形成问题定义、概念验证记录和公开责任人的策源门；众智园不是另一座园区，而是形成标准、安全、急停和人工接管记录的保障门；小月河只承接受控测试；大钟寺以真实用户、公共首层和连续到达检验使用价值。中关村服务翼贯穿资本、知识产权与合规。任何一份记录缺失，项目即退回、降级为非AI服务或退出，不以展示效果替代过线证据。</p>
+<div class="proposal-table"><table><thead><tr><th>项目阶段</th><th>空间接口</th><th>必交证据</th><th>放行条件</th><th>失败动作</th></tr></thead><tbody><tr><td><code>JZ-AI-001 / P1 值得做</code></td><td>AI原点开放客厅＋概念验证服务台</td><td>问题定义、概念验证记录、责任人与数据清单</td><td>真实需求成立；责任与数据边界可审计</td><td>退回问题定义或停止</td></tr><tr><td><code>P2 做得稳</code></td><td>众智园评测场＋可围合测试花园</td><td>标准、安全、急停、人工接管记录</td><td>急停、越界、责任签认全部过线</td><td>降级为离线／非AI模式或退出</td></tr><tr><td><code>P3 有人用</code></td><td>大钟寺公共首层＋连续步行到达</td><td>重复使用、公共价值、投诉与人工服务记录</td><td>真实重复使用且重大风险为零</td><td>撤回设备／主题，反馈回原点</td></tr></tbody></table></div>
+<div class="proposal-table"><table><thead><tr><th>对比项</th><th>常规产业走廊</th><th>全球AI第一线</th></tr></thead><tbody><tr><td>空间关系</td><td>企业和设施沿轴线并列布置</td><td>同一创新按三次过线在三区流动</td></tr><tr><td>项目选择</td><td>建设清单导向，项目越多越完整</td><td>五高决策门决定启动、暂缓、降级或退出</td></tr><tr><td>AI角色</td><td>展示技术或提供单点功能</td><td>进入需求、评测、真实使用与治理全过程</td></tr><tr><td>公共价值</td><td>公共空间作为产业配套</td><td>居民反馈、非AI通道和公共共益是过线条件</td></tr><tr><td>成功标准</td><td>建成面积、活动数量、传播流量</td><td>可复核证据、跨区转化、重复使用与风险闭环</td></tr></tbody></table></div>
+<h2>设计依据与资料清单</h2>
+<p>本方案由FTA GROUP以公司名义提交。FTA GROUP于2003年进入中国，总部位于上海，围绕城市创新区与科创社区形成TOP创新区研究院、FTA产服与FTA设计三类能力，累计完成1000余项科创项目实践。方案不是一份通用的“AI走廊”规划，而是FTA长期研究与实践在百年京张的专项转译：<strong>以钻石模型为总纲，以分布式创新网络为区域组织方式，以五高法则为营造路径，以超级创新元为创新区核心引擎</strong>。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-METHOD-PUBLIC" title="来源：FTA-METHOD-PUBLIC">来源</sup></p>
+<p>官方公告确认统筹研究范围约43.6平方公里、总体设计范围约11.4平方公里、三处重点区域合计约368.4公顷，并明确众智园、北京AI原点社区与大钟寺三处重点区的任务方向。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509" title="来源：DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509">来源</sup> 面向智能体的任务书进一步提出三大定位、五大功能、三区两翼、六项专项任务和公开合规边界。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-AGENT-TASKBOOK-20260518" title="来源：DATA-SRC-AGENT-TASKBOOK-20260518">来源</sup></p>
+<p>当前仓库尚未提供可验证的官方精确红线、控规条件、道路红线、现状建筑及权属数据。本版空间图层采用主办方维护的临时粗略边界，仅用于概念生成、可视化和内容评审；不得作为官方红线、精确面积、审批或工程依据。官方资料补齐后，边界、用地、建筑、道路、公共空间、分期和全部面积指标须统一复算。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARIES-20260605" title="来源：DATA-SRC-PROVISIONAL-BOUNDARIES-20260605">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-PROV-001" title="空间数据：geometry/site_boundary.geojson#SITE-PROV-001">空间数据</sup></p>
+<figure class="proposal-figure"><img src="../assets/media/scene-overall-network-aerial-v2.png" alt="全球AI第一线分布式创新网络鸟瞰概念图"><figcaption>全球AI第一线分布式创新网络鸟瞰概念图</figcaption></figure>
+<p><em>FTA方案场景推演·AI生成概念效果图：京张遗址公共创新脊连接多个完整而差异化的创新单元；图像不代表现状测绘或工程方案。</em></p>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="三层范围与证据边界机器核验图"><figcaption>三层范围与证据边界机器核验图</figcaption></figure>
+<p><em>提交包机器核验图：仅用于对应临时边界、三层范围与数据锚点，不作为核心创意表达。</em></p>
+<h2>三层范围工作框架</h2>
+<p>方案采用“城市使命—区域网络—创新区—核心引擎”四级工作框架。43.6平方公里统筹研究范围回答海淀如何服务北京建设全球AI第一城；11.4平方公里总体设计范围回答京张遗址如何成为贯通技术、人才、资本、场景与文化的公共创新基础设施；三处重点区域分别作为具有完整创新环节和差异化分工的创新区；每个创新区再识别一个承担资源汇聚、项目孵化与公共交往的超级创新元。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509" title="来源：DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509">来源</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_level_scope_framework" title="深度：three_level_scope_framework">深度</sup></p>
+<p>四个层级不是彼此替代的名词，而是一条FTA式推演链：<strong>城市使命与品牌定义方向，钻石模型寻找决策优势，分布式创新网络组织创新区珠链，五高法则校准每个创新区，超级创新元汇聚最关键的空间与运营资源，运营反馈再反向修正设计。</strong>所有临时边界均以低对比虚线表达，设计重点落在可转移的网络、节点、界面和运营机制上。</p>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.png" alt="三层范围与分布式创新网络"><figcaption>三层范围与分布式创新网络</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/scope-node-technical-atlas.png" alt="三层范围、三区分工与证据边界技术图谱"><figcaption>三层范围、三区分工与证据边界技术图谱</figcaption></figure>
+<p><em>技术图谱把公告约数、临时几何、三区实施接口、90日验证动作和正式资料复核串成一条证据链。图中的北箭头、比例尺与边界仅服务于概念拓扑阅读，不构成测绘、法定规划或工程依据。</em></p>
+<h2>统筹研究范围产业与未来城市研究</h2>
+<h3>钻石模型：从城市使命到空间决策</h3>
+<p>FTA的钻石模型把“城市品牌—创新中心—城市决策”放在同一条价值链上。对百年京张而言，顶端品牌是“全球AI第一线”，区域载体是沿轨道与交通走廊组织的创新区珠链，核心抓手是各创新区内部的超级创新元，底部决策则是把有限的空间、政策和运营资源聚焦于北京最有可能率先形成全球影响力的AI优势。设计由此从“把功能装进地块”转向“为城市优势建立可持续的创新生命体”。</p>
+<p>战略空间采用<strong>“两区一带”统领、“三区两翼”实施、六个片区协同</strong>的嵌套结构：AI原点社区承担中国AI策源点，北纬社区面向世界AI自由协作，百年京张AI创新带将两者组织为全球AI第一线；在本次11.4平方公里总体设计范围内，以众智园、AI原点社区、大钟寺三区和中关村科技服务翼、小月河场景赋能翼落实近期任务；沿TOD珠链继续培育不同主导者、不同专长的创新片区。两套表述不是冲突的口号，而是品牌疆域与实施结构的上下位关系。</p>
+<h3>核心判断：从“单轴串点”转向“分布式创新网络”</h3>
+<p>全球AI第一线不是沿铁路排列办公楼的传统产业走廊，也不是“一个轴线加几个节点”的造型。FTA把它定义为一套<strong>分布式创新网络</strong>：基于真实创新需求形成若干分工不同、但具备相对完整创新环节的创新区，再由轨道交通、交通走廊和公共创新空间串联成珠链。创新活动因此去中心化分布，不同专业与人群能够在区际流动中发生交叉创新；每个创新区内部则保持必要的集聚度与完整链条。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-AGENT-TASKBOOK-20260518" title="来源：DATA-SRC-AGENT-TASKBOOK-20260518">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-METHOD-PUBLIC" title="来源：FTA-METHOD-PUBLIC">来源</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="overall_spatial_structure" title="深度：overall_spatial_structure">深度</sup></p>
+<p>五类网络分别是：知识与技术流连接高校、研究机构和企业研发；人才流连接工作、居住、学习和社群；资本与专业服务流连接投资、知识产权、法律和国际化服务；场景与数据流连接测试、评估、人工复核和城市应用；文化与公共生活流连接铁路遗产、中关村创新精神和面向公众的AI新文化。它们共同构成AI LINE 1的城市运行逻辑，但不替代任何法定规划或政府决策。</p>
+<p>三者关系必须清晰：<strong>分布式创新网络</strong>是由多个创新区连接形成的去中心化格局；<strong>创新区</strong>是网络中的一颗“珠子”，一般控制在约1—6平方公里、项目本轮重点以约500—1000米服务半径和约1—3平方公里作为工作尺度，并以五高法则进行诊断与营造；<strong>超级创新元</strong>只是创新区最核心的创新引擎，类似社区中的社区中心，集中承载最强牵引者、共享设施、公共交往和运营入口，但不等于创新区全部。生态结构建议以“1家具有牵引力的平台或龙头、10家高成长企业、100个创新团队与服务伙伴”为培育目标；这是FTA的运营诊断假设，不是现状统计或招商承诺。</p>
+<h3>三区两翼的差异化分工</h3>
+<ul>
+<li><strong>众智园AI标准与生态创新区</strong>：定位“AI＋标准与生态”，由平台型企业、专业机构与开发者网络等潜在链主共同牵引，面向全球标准、开放生态、出海服务与公共验证，形成“标准与生态”驱动的全球赋能创新区；具体参与主体待授权确认。</li>
+<li><strong>原点社区（AI原点社区）</strong>：定位“AI原创策源”，依托高校院所组织0—1原创创新、AI for Science、交叉创新和成果转化，建设定义未来AI的“思想市场”与核心策源地。</li>
+<li><strong>大钟寺AI应用与场景创新区</strong>：定位“AI＋应用与场景”，依托现有平台经济、内容产业与市场需求基础，聚焦AIGC、智能硬件、城市智能体和本地生活，形成应用和市场反馈驱动的AI创新区；企业名称仅作为产业生态研究线索，不构成合作或命名建议。</li>
+<li><strong>中关村科技服务翼</strong>：创新价值放大器，为三区提供资本、知识产权、法律合规、标准、品牌和国际市场服务。</li>
+<li><strong>小月河场景赋能翼</strong>：开放城市测试场，把医疗、教育、运动、交通、生活和公共空间转化为可观察、可暂停、可人工复核的场景网络。</li>
+</ul>
+<h3>五高法则：判断创新区是否真正“活起来”</h3>
+<p>空间结构只是骨架，五高法则负责判断创新生命体能否运行：</p>
+<ol>
+<li><strong>产业生态</strong>：不以企业数量为目标，而看策源、转化、验证、市场与专业服务能否形成短链协作。</li>
+<li><strong>文化社群</strong>：让研究者、创业者、居民、青年与国际人才形成持续交往，而不是只在活动日出现。</li>
+<li><strong>服务网络</strong>：把算力、数据、资本、知识产权、合规、品牌和出海服务做成可进入、可预约的公共底座。</li>
+<li><strong>创新场景</strong>：空间和设施能够随团队成长、技术迭代与测试风险快速拆分、组合、降级或退出。</li>
+<li><strong>政策治理</strong>：从普惠政策清单转向任务导向的场景开放、跨区协同、风险分级和长期评估。</li>
+</ol>
+<p>五高不是五个并列章节，而是每个创新区、每张场景卡和每项分期投资共同使用的一把尺。五项本体同等重要；图表中的百分比只表示本轮诊断完成后形成的<strong>当期行动资源建议</strong>，会随年度复盘动态调整，不是预设权重，也不是对创新区质量的打分。</p>
+<h3>基于五高法则的基地整体诊断</h3>
+<p>本轮诊断采用“公开事实—FTA专业判断—待补数据”三层证据，不使用缺乏统计基础的精确分数。结论表达为“已有基础、关键短板、行动方向”，用于决定空间与运营优先级，而不是替代正式产业、人口、交通或权属调查。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-METHOD-PUBLIC" title="来源：FTA-METHOD-PUBLIC">来源</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="existing_conditions_diagnosis" title="深度：existing_conditions_diagnosis">深度</sup></p>
+<div class="proposal-table"><table><thead><tr><th>五高维度</th><th>已有基础</th><th>关键短板</th><th>本轮行动方向</th></tr></thead><tbody><tr><td>产业生态</td><td>海淀具备高校、科研机构、平台企业与AI企业集聚基础，沿线可串联策源、验证与市场转化</td><td>资源仍以机构和园区为单位分布，中小团队获得验证、客户与资本的链路不够短</td><td>以三个创新区形成“策源—标准生态—应用场景”差异化分工，并保留各自完整创新环节</td></tr><tr><td>文化社群</td><td>青年人才密度高，京张铁路遗产、中关村创新文化与沿线社区提供共同叙事</td><td>工作、生活、学习与公共交往仍易分离，居民和国际人才缺少稳定参与接口</td><td>建立创新客厅、青年生活站、公共文化活动和可持续的社区共同治理机制</td></tr><tr><td>服务网络</td><td>中关村拥有资本、知识产权、法律、标准、品牌与国际化服务资源</td><td>服务入口分散，共享算力、评测、数据合规和一站式转化服务尚未网络化</td><td>建设可预约、可追踪的公共服务底座，由科技服务翼组织跨区调用</td></tr><tr><td>创新场景</td><td>遗址公园、轨道站点、园区、社区及医疗教育资源形成多样真实场景</td><td>场景多为单点展示，缺少统一准入、责任人、人工兜底、评价和退出规则</td><td>由小月河翼组织场景清单，以十二个可控原型建立“开放—验证—复盘—退出”闭环</td></tr><tr><td>政策治理</td><td>北京和海淀具备AI政策与产业组织基础，任务书已提出跨区协同方向</td><td>尚缺面向三区两翼的常态协调、数据边界、年度诊断和资源动态配置机制</td><td>建立任务导向的协作平台、分级治理规则和年度五高复盘，不替代行政审批</td></tr></tbody></table></div>
+<p>整体诊断说明：本项目最突出的优势不是单一地块，而是沿线已有的知识、人才、企业、公共空间和服务资源；最核心的问题也不是“缺一个地标”，而是这些资源尚未形成可进入、可协作、可验证、可持续的创新网络。因此方案把设计重点从新增建筑量转向<strong>缩短转化链、增强人才黏性、共享专业服务、开放真实场景和建立长期治理</strong>。</p>
+<figure class="proposal-figure"><img src="../assets/figures/five-highs-diagnosis.png" alt="五高诊断的成熟度、紧迫度与当期行动资源建议"><figcaption>五高诊断的成熟度、紧迫度与当期行动资源建议</figcaption></figure>
+<p><em>图表先比较基础成熟度与问题紧迫度，再形成当期行动资源建议：服务网络26%、政策治理24%、创新场景21%、文化社群17%、产业生态12%。比例不表示五项本体的重要性，也不是预设参数或绩效得分；它只反映本轮诊断中“入口分散与跨区调用”最具网络瓶颈性，因此资源优先向服务网络、治理接口和场景规则倾斜，年度复盘后可重新分配。</em></p>
+<h3>五高项目决策：从诊断进入资源配置</h3>
+<p>本轮项目决策采用四态，而不是把所有设想同时列为建设清单。<strong>近期项目原则上须同时改善至少三个五高维度，明确建议运营主体、0—6个月原型、人工责任和退出条件；否则不进入近期项目池。</strong>下表是基于现有公开资料的概念建议，正式立项仍须由有权主体依据官方数据和专业论证决定。</p>
+<div class="proposal-table"><table><thead><tr><th>项目</th><th>五高贡献</th><th>本轮决策</th><th>决策理由与进入下一阶段条件</th></tr></thead><tbody><tr><td>原点城市客厅轻量原型</td><td>产业、社群、服务、治理</td><td><strong>立即启动建议</strong></td><td>可先利用既有首层或临时空间验证概念验证、路演、公共活动和服务转介需求；低复访或服务转介不成链时缩减</td></tr><tr><td>众智园评测场与可围合测试花园</td><td>产业、服务、场景、治理</td><td><strong>条件启动建议</strong></td><td>须先明确场地授权、数据隔离、人工责任、物理急停和投诉渠道；条件不全不得开放测试</td></tr><tr><td>大钟寺公共首层与应用首发原型</td><td>产业、社群、场景</td><td><strong>立即启动建议</strong></td><td>以可撤回的展测、路演和社区共益活动验证真实使用；不得以企业冠名替代公共运营目标</td></tr><tr><td>跨三环大型连桥或站城结构</td><td>社群、服务、场景</td><td><strong>暂缓</strong></td><td>等待交通、轨道、权属、消防、造价与无障碍专项论证；近期先做地面过街、导视和公共首层改善</td></tr><tr><td>独立建设纯展示型巨型AI雕塑</td><td>文化社群贡献单一</td><td><strong>不建议单独建设</strong></td><td>缺少持续服务和运营闭环；只有与公共学习、贡献记录和日常服务结合时才可转化为可更新地标</td></tr></tbody></table></div>
+<h3>从诊断推导五个设计命题</h3>
+<ol>
+<li><strong>产业命题：从资源密度走向短链协作。</strong> 三个重点区分别承担验证、策源和市场转化，但都保留完整创新链，避免再次形成单功能孤岛。</li>
+<li><strong>社群命题：从人才集聚走向长期归属。</strong> 把学习、创业、居住、文化和日常服务嵌入步行网络，使青年、居民与国际人才持续相遇。</li>
+<li><strong>服务命题：从机构清单走向公共底座。</strong> 将算力、评测、资本、知识产权、合规和出海服务转化为可预约、可追踪的跨区服务。</li>
+<li><strong>场景命题：从技术展示走向受控验证。</strong> 所有AI场景明确数据边界、人工责任、非AI通道、投诉渠道与停止条件。</li>
+<li><strong>治理命题：从分散管理走向使命协同。</strong> 以“全球AI第一线”为共同任务，通过年度五高诊断和项目流转动态调整资源。</li>
+</ol>
+<h3>区域发展愿景、目标与总体定位</h3>
+<p><strong>城市使命</strong>：把海淀最强的AI知识与产业优势转化为北京可被全球识别、被公众日常使用、能够持续自我迭代的城市创新能力。</p>
+<p><strong>总体愿景</strong>：全球AI第一线｜AI LINE 1——不是一条展示科技的景观轴，而是一条让原创技术、青年人才、企业需求、公共场景和专业服务持续相遇的公共创新主线。</p>
+<p><strong>核心定位</strong>：面向全球AI创新的公共创新基础设施与分布式创新区。它同时是原创策源与验证网络、青年创新与生活共同体、AI原生业态首发地、城市真实场景试验场，以及负责任AI治理的开放接口。</p>
+<p>五维发展目标与五高法则对应：形成从策源到市场的短链产业生态；建立可负担、可参与、有归属感的人才与居民社群；构建跨区共享的一站式服务网络；形成可控、可复盘、可退出的真实场景组合；建立任务导向、跨主体协同、年度复盘的治理机制。空间上以一条公共创新脊组织三区两翼、多点协同；运营上以“诊断—战略—设计—运营—投资反馈”形成持续迭代；实施上以近期原型、中期成网、远期品牌输出控制节奏。</p>
+<figure class="proposal-figure"><img src="../assets/media/scene-overall-network-aerial-v2.png" alt="全球AI第一线分布式创新网络鸟瞰概念图"><figcaption>全球AI第一线分布式创新网络鸟瞰概念图</figcaption></figure>
+<p><em>FTA方案场景推演·AI生成概念效果图：京张遗址公共创新脊连接多个完整而差异化的创新单元；图像不代表现状测绘或工程方案。</em></p>
+<h4>三区重点区鸟瞰：同一网络，三种空间任务</h4>
+<p>总鸟瞰之后，三张重点区鸟瞰把分布式网络落实到不同空间任务：大钟寺突出轨道枢纽、跨三环联系与应用首发界面；AI原点社区突出校园、城市道路与原点城市客厅之间的连续创新界面；众智园突出“一核两环、多测试花园”的到达与协作网络。三图采用统一的夜景语言便于横向比较，其中交通光带为概念性流线表达，不代表现状流量、道路工程或已批准建设内容。</p>
+<figure class="proposal-figure"><img src="../assets/media/scene-dazhongsi-aerial-v2-transit-warm-focus.png" alt="大钟寺轨道枢纽与应用场景创新区鸟瞰"><figcaption>大钟寺轨道枢纽与应用场景创新区鸟瞰</figcaption></figure>
+<p><em>大钟寺：以轨道站点和跨三环联系为骨架，强化公共首层、应用首发与真实场景反馈。</em></p>
+<figure class="proposal-figure"><img src="../assets/media/scene-origin-community-aerial-v2-enhanced-balanced.png" alt="AI原点社区原创策源创新区鸟瞰"><figcaption>AI原点社区原创策源创新区鸟瞰</figcaption></figure>
+<p><em>AI原点社区：以校园—街区—城市客厅的连续界面承接原创技术、青年人才与概念验证。</em></p>
+<figure class="proposal-figure"><img src="../assets/media/scene-zhongzhiyuan-aerial-v2-enhanced.png" alt="众智园标准与生态创新区鸟瞰"><figcaption>众智园标准与生态创新区鸟瞰</figcaption></figure>
+<p><em>众智园：以共享赋能中心、协作环和受控测试花园构成标准共创与开发者生态网络。</em></p>
+<h3>全球案例的可转化经验</h3>
+<p>七类全球创新生态只作为FTA判断的反证与校准：Kendall Square提示大学—企业的近距离协作，Eindhoven提示共享研发设施，Station F提示高密度创业服务，Toronto MaRS提示研究—资本—市场连接，Jurong提示研发制造融合，Barcelona 22@提示存量城区混合更新，Seoul DMC提示内容产业与城市体验。方案不复制任何案例的空间形式；最终结构、命名、场景与图像均来自百年京张条件和FTA方法论推演。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-KENDALL" title="来源：CASE-KENDALL">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-STATION-F" title="来源：CASE-STATION-F">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="CASE-JID" title="来源：CASE-JID">来源</sup></p>
+<h3>品牌与视觉识别</h3>
+<p>主品牌为“全球AI第一线｜AI LINE 1”，副标题为“三区两翼、多点协同的分布式创新网络”。标识采用两条开放曲线交叉成网：青蓝路径代表知识、技术与城市连接，新叶绿路径代表生态、社群与持续生长；交叉处生成红色核心和向下延伸的数字“1”，象征每个创新区以超级创新元汇聚资源、产生新价值。倾斜字标、双层速度线和开放端点强化“第一线持续向前”的动势。</p>
+<p>标准色为明亮青蓝<code>#08B9E6</code>、新叶绿<code>#16B85C</code>和核心红<code>#F2383D</code>，深青<code>#064B5B</code>仅用于正文与字标。标准版用于封面、门户和正式文件；独立符号用于导视、场景认证和数字图标；反白与单色版用于深色背景、工程标识和低成本应用。AI LINE 1是方案提出的公共品牌方向，与FTA GROUP作者署名分列呈现，不冒充主办方官方标识，也不使用未授权企业商标、人物或字体。</p>
+<figure class="proposal-figure"><img src="../assets/ai-line1-mark.svg" alt="AI LINE 1标准标识"><figcaption>AI LINE 1标准标识</figcaption></figure>
+<h2>总体设计范围城市更新与控规深度城市设计</h2>
+<p>总体设计形成“一条公共创新脊、三个差异化创新区、两翼服务网络、六个协同片区、多点超级创新元与社区单元”的空间结构。京张遗址公园不是景观背景，而是沿线共享的文化、慢行、生态、展示、测试和社群基础设施；东西向缝合界面连接社区、高校、企业和轨道站点；每个创新区内部以步行可达的产业社区与生活社区组织完整创新链。<sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-NETWORK-001" title="空间数据：geometry/land_use.geojson#LU-NETWORK-001">空间数据</sup></p>
+<p><strong>超级创新元</strong>不是一栋孤立的地标，也不是创新区的别称，而是创新区内部最具牵引力的复合核心：它集成创新中心、共享服务、公共交往、关键场景与运营入口，功能类似社区中心。众智园、原点社区和大钟寺均是创新区；三者分别由标准生态平台、原创策源网络和应用场景平台牵引，并各自识别一个或一组超级创新元作为核心引擎，同时在全区保留研发、验证、服务、交往与生活的相对完整链条。</p>
+<p>更新策略坚持低扰动和可逆性优先：近期先使用现有公共空间、首层、闲置或低效空间植入服务节点和活动；中期在权属、控规、消防与交通条件核实后推进建筑改造和站城界面优化；长期再依据正式规划研究新增载体。由于现状建筑、权属和控规资料缺失，本方案不作具体地块拆除、法定容积率、建筑高度或工程可行性结论。[assumption:A-CONTROLS-001] <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="development_intensity_controls" title="深度：development_intensity_controls">深度</sup></p>
+<p>空间供给不以单一办公为主，而是形成四类可适配载体：共享研发与测试空间、可拆分孵化与加速空间、公共创新与交往空间、人才生活与基础服务空间。它们通过公共首层、院落、小广场、步行界面和预约共享系统连接，使创新活动从封闭楼宇进入城市公共生活。每个新建或改造项目都要回答五个问题：是否补强产业链、是否形成社群、是否共享服务、是否适配变化、是否具备治理与退出机制；答不全的项目不进入优先清单。</p>
+<h2>重点区域详细设计</h2>
+<h3>AI原点社区：AI原创策源创新区</h3>
+<p><strong>FTA真实项目经验底座。</strong> 本区不是仅凭公开资料生成的假想案例。FTA已在AI原点社区开展整体诊断、产业主理与运营策略、核心空间场景营造、展厅实施及后续规划服务；本方案把其中已经形成的诊断—策略—空间—运营协同经验，转译为百年京张全线的原创策源节点。为保护客户与项目数据，公开成果只呈现可迁移的方法和空间原则，不披露合同、内部图件、诊断权重或未经授权的实施信息。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-AI-ORIGIN-INTERNAL-20260812" title="来源：FTA-AI-ORIGIN-INTERNAL-20260812">来源</sup></p>
+<p><strong>创新区定位与分工。</strong> AI原点社区对应总体方案中的“原点社区”，定位为<strong>AI原创策源</strong>：依托高校、科研院所和青年创业者，聚焦0—1原创创新、AI for Science、交叉创新和成果转化，建设定义未来AI的“思想市场”与核心策源地。核心使命是同时成为AI原创技术全球首发地、全球AI青年创业首选地和全要素精准对接的生态服务站。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-JINGZHANG-GLOBAL-AI-FRONTLINE-20260813" title="来源：FTA-JINGZHANG-GLOBAL-AI-FRONTLINE-20260813">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-AI-ORIGIN-INTERNAL-20260812" title="来源：FTA-AI-ORIGIN-INTERNAL-20260812">来源</sup></p>
+<p><strong>五项诊断。</strong> 诊断围绕原创策源、青年创业与成果转化的关键断点展开。</p>
+<div class="proposal-table"><table><thead><tr><th>维度</th><th>现有基础</th><th>关键问题</th><th>针对性提升</th></tr></thead><tbody><tr><td>产业生态</td><td>顶尖高校院所、原创技术与人才密度突出</td><td>成果、团队、早期资本和企业需求分散，校园到市场支持不连续</td><td>实体化概念验证与转化中心，建设早期基金与耐心资本联盟，组织技术评估、原型开发和首发</td></tr><tr><td>文化社群</td><td>师生、研究者、创业者与国际人才具有高频交往潜力</td><td>缺少稳定的垂直社群、共同品牌和青年创业生活支持</td><td>构建“原点社群”，开展垂直社群、学术创业人试点、共学路演和公共文化活动</td></tr><tr><td>服务网络</td><td>孵化、投资、专业服务和政策资源基础丰富</td><td>服务入口分散，针对0—1技术与青年团队的精准性不足</td><td>建设共享赋能中心和一站式窗口，提供技术可行性评估、原型支持、种子资金、知识产权与合规服务</td></tr><tr><td>创新场景</td><td>成府路、京张创新带、站点及校园园区界面可形成连续场景</td><td>步行界面、枢纽活力和成果展示仍呈点状，要素未向交往场景集聚</td><td>以TOD修复空间结构，构建“一带一轴、双心一区”五大场景网络并选择节点预热</td></tr><tr><td>政策治理</td><td>具备形成高规格协同机制与模式输出的条件</td><td>多主体长期协作、成果输送和规则沉淀机制尚未实体化</td><td>建议成立原点创新共同体理事会，形成“原点原则”、常态成果输送机制和可复盘的模式白皮书</td></tr></tbody></table></div>
+<p><strong>空间场景与核心超级创新元</strong> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#KEY-PROV-002" title="空间数据：geometry/key_areas.geojson#KEY-PROV-002">空间数据</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_key_area_detailed_design" title="深度：three_key_area_detailed_design">深度</sup></p>
+<div class="proposal-table"><table><thead><tr><th>空间层级</th><th>主要构成</th><th>核心作用</th></tr></thead><tbody><tr><td>一带</td><td>百年京张AI创新带</td><td>承载技术应用、公共活动与跨区连接</td></tr><tr><td>一轴</td><td>原点大道（成府路）交往轴</td><td>营造步行友好界面，集聚小企业、服务与高频交流</td></tr><tr><td>双心之一</td><td><strong>原点城市客厅｜核心超级创新元</strong></td><td>集成发布路演、概念验证、世界会客、共同治理与一站式服务</td></tr><tr><td>双心之二</td><td>原点活力枢纽</td><td>连接轨道、人才服务、城市生活和高频交往</td></tr><tr><td>一区</td><td>原点科创集聚区</td><td>网络化布局孵化、加速、初创企业与金融风投功能</td></tr></tbody></table></div>
+<p><strong>实施路径建议</strong></p>
+<div class="proposal-table"><table><thead><tr><th>阶段</th><th>行动主题</th><th>重点任务</th><th>阶段成果</th></tr></thead><tbody><tr><td>近期｜0—6个月</td><td>立机制、塑品牌、热场景</td><td>建立共同体联席机制；启动原点开放日、城市客厅快闪、成府路步行改善与首批概念验证</td><td>形成可见的原点品牌和首批真实用户</td></tr><tr><td>中期｜6—18个月</td><td>聚生态、创价值、成网络</td><td>实体化概念验证与转化中心；链接早期资本、孵化服务、人才生活和沿线成果输送</td><td>形成校园—概念验证—资本—企业的连续支持链</td></tr><tr><td>远期｜18—36个月</td><td>成范式、强辐射、可输出</td><td>稳定原创首发、青年创业和全球合作机制</td><td>输出经实践检验的原点模式</td></tr></tbody></table></div>
+<p>建筑改造、跨路连接、基金与投资安排须由相应主体核实和审批。</p>
+<figure class="proposal-figure"><img src="../assets/media/scene-origin-community-aerial-v2-enhanced-balanced.png" alt="AI原点社区创新区鸟瞰"><figcaption>AI原点社区创新区鸟瞰</figcaption></figure>
+<p><em>FTA方案场景推演·AI生成概念效果图：铁路工业遗产、开放首层、孵化团队与社区日常共同构成文化社群。</em></p>
+<h3>大钟寺：AI应用与场景创新区</h3>
+<p><strong>FTA真实项目经验底座。</strong> 大钟寺同样来自FTA已经开展的节点诊断、营造与运营研究，而不是为参赛临时拼接的通用TOD案例。本方案沿用真实项目中形成的“五高诊断—站城缝合—公共首层—应用首发—运营复盘”工作链，再针对本次三区两翼任务重新组织。公开版不披露客户资料、内部图件、企业合作细节或尚未确认的工程条件。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-DAZHONGSI-INTERNAL-20260812" title="来源：FTA-DAZHONGSI-INTERNAL-20260812">来源</sup></p>
+<p><strong>创新区定位与分工。</strong> 大钟寺定位为<strong>AI＋应用与场景</strong>：依托现有平台经济、内容产业和市场需求基础，聚焦AIGC、智能硬件与线下体验、城市智能体和本地生活，形成应用创新与城市智能体构建区。具体平台企业仅作为潜在生态参与者示例，未经授权不构成合作、冠名或实施承诺。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-JINGZHANG-GLOBAL-AI-FRONTLINE-20260813" title="来源：FTA-JINGZHANG-GLOBAL-AI-FRONTLINE-20260813">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-DAZHONGSI-INTERNAL-20260812" title="来源：FTA-DAZHONGSI-INTERNAL-20260812">来源</sup></p>
+<p><strong>五项诊断。</strong> 诊断聚焦平台业务、应用创新与城市空间之间的协同效率。</p>
+<div class="proposal-table"><table><thead><tr><th>维度</th><th>现有基础</th><th>关键问题</th><th>针对性提升</th></tr></thead><tbody><tr><td>产业生态</td><td>头部内容平台、内容业务和AIGC应用基础强，市场反馈快</td><td>对单一平台依赖较高，初创—加速—链主—资本梯度仍不完整</td><td>强化多主体生态，同时培育或引进互补主体，组织专业孵化器、加速器和创新基金建议</td></tr><tr><td>文化社群</td><td>企业创新活动、周边高校、居住社区与文化资源多元</td><td>企业内部活动与城市公共生活分离，区域共同品牌和居民共益不足</td><td>发起创新开放日、创新者节和社区共益计划，形成可持续公共品牌</td></tr><tr><td>服务网络</td><td>轨道、金融风投、价值评估和专业服务基础较好</td><td>中小团队共享设施、跨界实验和生活服务入口不足</td><td>建设跨界实验室、共享赋能中心、一站式服务站和创新者生活包</td></tr><tr><td>创新场景</td><td>内容生产、产品展示、商业消费和城市智能体具备真实市场</td><td>北三环、铁路和消极空间造成割裂，场景缺少连续步行网络与统一规则</td><td>以TOD和京张创新带重构场景网络，激活消极空间并建设15分钟创新生活圈</td></tr><tr><td>政策治理</td><td>具备链主参与、多方共建和场景沙盒条件</td><td>跨主体治理、试验责任和区域成效跟踪机制尚未建立</td><td>建议成立创新区共建委员会，试点创新沙盒规则并建立区域活力仪表盘</td></tr></tbody></table></div>
+<p><strong>空间场景与核心超级创新元</strong> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#KEY-PROV-003" title="空间数据：geometry/key_areas.geojson#KEY-PROV-003">空间数据</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_key_area_detailed_design" title="深度：three_key_area_detailed_design">深度</sup></p>
+<div class="proposal-table"><table><thead><tr><th>空间层级</th><th>主要构成</th><th>核心作用</th></tr></thead><tbody><tr><td>核心超级创新元</td><td><strong>灵境世界＋枢纽活力中心</strong></td><td>集成城市地标、站城连接、产品展示、虚实体验和城市智能体场景</td></tr><tr><td>链主企业集群</td><td>平台业务、AIGC与互补型链主企业</td><td>提供应用需求、技术平台和快速市场反馈</td></tr><tr><td>企业成长梯度</td><td>孵化器、加速器、初创与加速企业集群</td><td>形成从团队到规模化企业的连续成长空间</td></tr><tr><td>专业服务网络</td><td>金融风投、价值评估、共享赋能和高校创新源头</td><td>支撑资本、评估、跨界实验和成果转化</td></tr><tr><td>公共场景带</td><td>京张创新带、公共站厅、发布厅、路演中心和公共首层</td><td>修复三环界面，连接城市生活与应用首发</td></tr></tbody></table></div>
+<p>核心超级创新元是整个创新区的引擎，不替代周边完整生态。近期优先采用地面安全过街、导视、公共首层和临时场景；跨路结构与站城一体化须另做工程论证。</p>
+<p><strong>实施路径建议</strong></p>
+<div class="proposal-table"><table><thead><tr><th>阶段</th><th>行动主题</th><th>重点任务</th><th>阶段成果</th></tr></thead><tbody><tr><td>近期｜0—6个月</td><td>场景激活与社群培育</td><td>建立共建联席机制；启动开放日、公共首层、过街优化及AIGC／机器人商业原型</td><td>形成首批真实应用与公众反馈闭环</td></tr><tr><td>中期｜6—18个月</td><td>生态构建与服务升级</td><td>形成孵化器、加速器、共享赋能中心、跨界实验室和场景环</td><td>补齐企业成长梯度和共享服务</td></tr><tr><td>远期｜18—36个月</td><td>品牌塑造与模式输出</td><td>稳定链主与中小团队协作、城市智能体场景和区域品牌</td><td>形成可复制的应用创新区协议</td></tr></tbody></table></div>
+<p>基金、委员会、沙盒和仪表盘均为实施建议，不作为既有机构、已批政策或投资承诺。</p>
+<figure class="proposal-figure"><img src="../assets/media/scene-dazhongsi-aerial-v2-transit-warm-focus.png" alt="大钟寺AI应用创新区鸟瞰"><figcaption>大钟寺AI应用创新区鸟瞰</figcaption></figure>
+<p><em>FTA方案场景推演·AI生成概念效果图：文化记忆、内容生产、机器人服务、社区商业和夜间公共生活共同构成AI应用创新区；枢纽活力中心是其中的核心超级创新元。</em></p>
+<h3>众智园：AI标准与生态创新区</h3>
+<p><strong>创新区定位与分工。</strong> 众智园定位为<strong>AI＋标准与生态</strong>：发挥平台型企业、专业机构和开发者网络等潜在链主的技术与全球化能力，组织技术标准、开放生态、出海服务、公共验证与成果展示，形成“标准与生态”驱动的全球赋能创新区。具体企业参与待授权确认；本区不是单一评测园，而是在标准生态主线下保留研发、孵化、验证、服务、社群与生活的完整环节。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-JINGZHANG-GLOBAL-AI-FRONTLINE-20260813" title="来源：FTA-JINGZHANG-GLOBAL-AI-FRONTLINE-20260813">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#KEY-PROV-001" title="空间数据：geometry/key_areas.geojson#KEY-PROV-001">空间数据</sup></p>
+<p><strong>五项诊断。</strong> 诊断用于找到建设次序，不把任何单项写成固定分数。</p>
+<div class="proposal-table"><table><thead><tr><th>维度</th><th>现有基础</th><th>关键问题</th><th>营造回应</th></tr></thead><tbody><tr><td>产业生态</td><td>平台、技术验证及开发者生态基础强，可连接模型、智能终端和具身智能</td><td>标准、验证、孵化和市场服务仍可能停留在机构内部，中小团队接入成本高</td><td>建立面向全线开放的标准与生态中心，形成“验证—认证—生态接入—市场反馈”短链</td></tr><tr><td>文化社群</td><td>工程师与技术团队集中，清河及京张遗产提供公共叙事</td><td>青年工程师生活、跨机构交流和公众理解技术的界面不足</td><td>建设工程师客厅、开放日、标准共创营和沿河日常社群空间</td></tr><tr><td>服务网络</td><td>算力、开发工具、平台接口和产业服务资源具备集聚条件</td><td>预约入口、服务等级、跨区转介和结果追踪尚未统一</td><td>设置共享赋能中心、开放算力站和一站式生态服务窗口</td></tr><tr><td>创新场景</td><td>园区、绿地和河道界面适合多类可控测试</td><td>测试与公共生活边界、准入、急停和退出规则仍需固化</td><td>建立室内评测场、可围合测试花园、公众观察台与分级测试协议</td></tr><tr><td>政策治理</td><td>具备参与技术标准和安全治理的机构基础</td><td>跨主体数据边界、责任分配、结果互认和年度复盘机制不足</td><td>组建标准与场景联合工作台，建立审计、投诉、停止和跨区互认机制</td></tr></tbody></table></div>
+<p><strong>空间场景与核心超级创新元</strong> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_key_area_detailed_design" title="深度：three_key_area_detailed_design">深度</sup></p>
+<div class="proposal-table"><table><thead><tr><th>空间层级</th><th>主要构成</th><th>核心作用</th></tr></thead><tbody><tr><td>核心超级创新元</td><td><strong>标准与生态共享赋能中心</strong></td><td>集成标准共创、评测认证、开发者服务、成果发布和跨区调度</td></tr><tr><td>科研转化环</td><td>模型、硬件、具身智能、孵化加速与专业服务</td><td>串联技术验证、生态接入与市场反馈</td></tr><tr><td>生态慢行环</td><td>清河文化、人才生活和开放空间</td><td>形成日常交往、展示与青年工程师社群界面</td></tr><tr><td>分布式测试花园</td><td>评测场、安全测试花园、算力服务站</td><td>承载可围合、可观察、可急停和可退出的实验</td></tr></tbody></table></div>
+<p><strong>实施路径建议</strong></p>
+<div class="proposal-table"><table><thead><tr><th>阶段</th><th>建设重点</th><th>阶段成果</th><th>校核条件</th></tr></thead><tbody><tr><td>近期｜0—6个月</td><td>建立运营联席机制和服务目录；启动首个评测场与可围合测试花园</td><td>形成可预约、可追踪的验证入口</td><td>明确人工责任、数据隔离、急停与公众提示</td></tr><tr><td>中期｜6—18个月</td><td>建设共享赋能中心、标准共创机制、跨区场景调用和工程师社区</td><td>标准、验证、孵化与社群初步成网</td><td>校核消防、市政、噪声、权属和设备安全</td></tr><tr><td>远期｜18—36个月</td><td>推动结果互认、全球开发者合作和标准生态服务协议</td><td>输出可复制的标准与生态服务模式</td><td>以服务响应、项目闭环、社群复访和规则迭代复盘</td></tr></tbody></table></div>
+<figure class="proposal-figure"><img src="../assets/media/scene-zhongzhiyuan-aerial-v2-enhanced.png" alt="众智园一核两环多测试花园鸟瞰"><figcaption>众智园一核两环多测试花园鸟瞰</figcaption></figure>
+<p><em>FTA方案场景推演·AI生成概念效果图：共享验证实验室、机器人安全测试与日常公园共存，测试边界清晰且由人负责。</em></p>
+<figure class="proposal-figure"><img src="../assets/figures/key-areas.png" alt="三处重点区的差异化创新引擎"><figcaption>三处重点区的差异化创新引擎</figcaption></figure>
+<h3>中关村科技服务翼：跨区价值放大器</h3>
+<p>科技服务翼不是第四个封闭园区，而是一套贯穿三区的专业服务网络。五高诊断中，它在服务网络和政策治理方面拥有最强资源基础，但服务入口分散、团队识别成本高、跨区项目流转缺少统一接口。其核心使命是把资本、知识产权、法律合规、标准、品牌、国际市场和成果转化能力做成AI LINE 1可预约、可追踪的公共底座。</p>
+<p>空间上采用“分布式服务站＋专业机构联盟＋跨区项目台账”，在三个重点区设置轻量服务窗口，不虚构独立建设边界。近期发布统一服务目录和转介机制；中期形成跨区尽调、合规、品牌及出海联合门诊；远期建立面向全球合作节点的标准化服务接口。建议以服务响应时间、项目转介完成率和使用者反馈检验成效，具体机构、预算和政策权限须由相关主体确认。</p>
+<h3>小月河场景赋能翼：城市开放测试场</h3>
+<p>小月河场景赋能翼把医疗、教育、运动、交通、社区生活与公共空间转化为可观察、可暂停、可人工复核的创新场景网络。五高诊断显示其真实用户与公共空间资源丰富，但当前开放规则、数据边界、责任主体和效果评价仍需建立。其核心使命是成为AI LINE 1的<strong>负责任场景验证接口</strong>，让技术在进入城市服务前先经历小规模、限时、限域和可退出的验证。</p>
+<p>空间上采用“场景清单＋责任节点＋公众反馈界面”，不追求连续建设形态。近期启动健康导航、学习工坊和无障碍出行协助三个低风险原型；中期形成跨领域场景预约、伦理审查和投诉处理机制；远期输出城市开放场景协议。所有场景必须保留非AI服务通道、最小化数据采集、明确人工责任人并设置故障降级及停止条件。</p>
+<h3>区域协同：输出接口而不是复制园区</h3>
+<p>AI LINE 1不把外部协同写成未经确认的合作关系，而是提出可由相关主体选择接入的四类标准接口。<strong>北纬社区</strong>承接国际人才与自由协作活动；<strong>未来科学城、怀柔科学城</strong>可通过联合课题、科学装置需求和技术验证接口连接原创策源；<strong>北京经开区</strong>可通过中试、智能制造和供应链接口承接工程化；<strong>京津冀节点</strong>可通过场景互认、专业服务转介和成果路演形成区域扩散。所有具体机构、项目和协议均待有权主体确认。</p>
+<div class="proposal-table"><table><thead><tr><th>协同对象</th><th>AI LINE 1可输出</th><th>可接收反馈</th><th>建议验证方式</th></tr></thead><tbody><tr><td>北纬社区与全球合作节点</td><td>双语项目册、开放议题、AI LINE 1场景协议</td><td>国际团队需求与规则差异</td><td>年度公开征集＋双语Demo Day</td></tr><tr><td>未来科学城、怀柔科学城</td><td>概念验证、标准评测和城市应用入口</td><td>原创成果、科学装置与测试需求</td><td>联合课题清单＋跨区项目编号</td></tr><tr><td>北京经开区及制造节点</td><td>经验证的场景需求和产品反馈</td><td>工程化、中试和供应链能力</td><td>中试转介单＋回流评估记录</td></tr><tr><td>京津冀城市与园区</td><td>可复制的场景卡、风险模板和五高诊断</td><td>跨城市使用反馈和治理差异</td><td>场景互认试点＋年度复盘</td></tr></tbody></table></div>
+<h2>AI 创新生态、人才画像与 AI+ 场景</h2>
+<h3>五类核心用户</h3>
+<div class="persona-grid"><article class="persona-card"><span class="persona-avatar persona-engineer" aria-hidden="true">研</span><div><strong>算法研究者与工程师</strong><p>需要算力、数据、同行协作、安静工作和快速验证。</p></div></article><article class="persona-card"><span class="persona-avatar persona-startup" aria-hidden="true">创</span><div><strong>初创团队与成长型企业</strong><p>需要低门槛空间、客户场景、资本和专业服务。</p></div></article><article class="persona-card"><span class="persona-avatar persona-student" aria-hidden="true">学</span><div><strong>高校师生与青年人才</strong><p>需要成果转化、学习社群、可负担生活和国际交流。</p></div></article><article class="persona-card"><span class="persona-avatar persona-family" aria-hidden="true">家</span><div><strong>社区居民与家庭</strong><p>需要可理解、可选择、有人兜底的AI公共服务。</p></div></article><article class="persona-card"><span class="persona-avatar persona-service" aria-hidden="true">服</span><div><strong>投资、运营与专业服务者</strong><p>需要发现项目、评估价值、组织合作和长期运营接口。</p></div></article></div>
+<h3>十二张场景卡：五高法则的空间化</h3>
+<figure class="proposal-figure"><img src="../assets/figures/twelve-scenarios-overview.png" alt="FTA AI LINE 1十二场景总览"><figcaption>FTA AI LINE 1十二场景总览</figcaption></figure>
+<p><em>基于FTA内部案例资料与公开参考进行AI辅助场景深化；参考资料仅用于空间关系与视觉语言研究，成果未直接复制第三方原图、标识或水印。</em></p>
+<div class="proposal-table"><table><thead><tr><th>场景</th><th>五高主责</th><th>主要位置</th><th>空间与运营动作</th><th>人工／退出边界</th></tr></thead><tbody><tr><td>AI模型与智能体评测场</td><td>产业生态</td><td>众智园</td><td>共享评测工位、可审计数据间、预约制专家席</td><td>隔离数据、人工评审、结果可追溯</td></tr><tr><td>具身智能安全测试花园</td><td>创新场景</td><td>众智园</td><td>公园内嵌可围合测试环、观察台与设备补能点</td><td>限时限域、物理急停、责任人值守</td></tr><tr><td>AI合规与出海沙盒</td><td>政策治理</td><td>中关村服务翼</td><td>法律、标准、知识产权和国际市场联合门诊</td><td>专业人员复核，不构成监管批准</td></tr><tr><td>开放算力服务站</td><td>服务网络</td><td>众智园／原点</td><td>小团队可预约的端云协同工位与能耗看板</td><td>配额透明、禁做敏感任务、异常即停</td></tr><tr><td>AI原点开放客厅</td><td>文化社群</td><td>原点社区</td><td>发布、路演、共学、展览与社区议事共用一厅</td><td>公开议程、无障碍、非商业时段保留</td></tr><tr><td>青年创新者生活站</td><td>文化社群</td><td>原点社区</td><td>平价餐饮、短租支持、运动、托育咨询和夜间学习</td><td>基础服务不与企业录用或数据授权绑定</td></tr><tr><td>AI内容首发与共创街</td><td>产业生态</td><td>大钟寺</td><td>内容工作室、首发店、直播与线下体验共用首层</td><td>生成内容标识、版权审核、随时转人工</td></tr><tr><td>机器人服务共生店</td><td>创新场景</td><td>大钟寺</td><td>餐饮、零售、修理等真实商业中的小规模轮换测试</td><td>人工服务并行、故障降级、价格透明</td></tr><tr><td>AI健康导航站</td><td>服务网络</td><td>小月河翼</td><td>社区入口提供流程解释、预约协助和人工转接</td><td>不作诊断、最小化采集、人工兜底</td></tr><tr><td>AI学习工坊</td><td>文化社群</td><td>社区节点</td><td>教师、学生和家庭共同设定问题并展示过程</td><td>未成年人保护、教师复核、内容留痕</td></tr><tr><td>京张记忆生成剧场</td><td>文化社群</td><td>遗址公园</td><td>口述史、铁路档案与生成媒介形成可更新公共展演</td><td>史实／生成分层标注、来源可查、可撤回</td></tr><tr><td>无障碍出行协助点</td><td>政策治理</td><td>轨道／慢行节点</td><td>导航、轮椅与人工志愿服务共用可见窗口</td><td>保留非数字通道、隐私最小化、公众投诉</td></tr></tbody></table></div>
+<p>场景不是技术清单，而是“真实问题—目标用户—空间接口—服务流程—数据边界—人工复核—运营主体—退出机制”的完整服务单元。每个场景先做小规模原型，通过五高诊断后再决定固化、放大、重组或退出；任何涉及健康、未成年人、个人信息和公共决策的场景都必须保留人工服务与投诉渠道。<sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GENERATIVE-AI-INTERIM-MEASURES" title="标准：GENERATIVE-AI-INTERIM-MEASURES">标准</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="BARRIER-FREE-ENVIRONMENT-LAW" title="标准：BARRIER-FREE-ENVIRONMENT-LAW">标准</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup></p>
+<h3>十二个独立场景：从总览进入可实施单元</h3>
+<h4>01｜AI模型与智能体评测场</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/01-ai-agent-evaluation-field-v1.png" alt="AI模型与智能体评测场"><figcaption>AI模型与智能体评测场</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 把封闭评测转化为可预约、可审计的公共验证能力；位于众智园标准与生态创新区；主责产业生态。<strong>用户与空间：</strong> 模型团队、智能体开发者、评测机构和场景业主共同使用共享评测工位、隔离数据间、专家席和结果复盘墙。<strong>运营与边界：</strong> 由园区、专业测试方和场景责任单位联合运营；数据分区、人工评审、结果可追溯，不以测试报告替代法定认证。<strong>原型／退出：</strong> 先用一个可预约评测周验证需求；若缺少真实任务或复用率低，则缩减为移动评测服务。</p>
+<h4>02｜具身智能安全测试花园</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/02-embodied-ai-safety-test-garden-v1.png" alt="具身智能安全测试花园"><figcaption>具身智能安全测试花园</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 在进入真实城市前完成低风险、限时限域的具身系统测试；位于众智园测试花园；主责创新场景。<strong>用户与空间：</strong> 机器人团队、安全评测者和公众观察者使用可围合测试环、软硬边界、观察台、补能点和维护舱。<strong>运营与边界：</strong> 明确现场责任人、物理急停、非测试绕行线和公众告知，不采集无关行人数据。<strong>原型／退出：</strong> 从离峰时段和单一设备开始；发生越界、连续故障或投诉未闭环即暂停。</p>
+<h4>03｜AI合规与出海沙盒</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/03-ai-compliance-global-sandbox-v1.png" alt="AI合规与出海沙盒"><figcaption>AI合规与出海沙盒</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 降低团队识别法律、标准、知识产权和海外市场要求的成本；由中关村科技服务翼跨区提供；主责政策治理。<strong>用户与空间：</strong> 初创团队、成长企业与专业机构使用联合门诊、规则地图、材料检查台和远程会诊间。<strong>运营与边界：</strong> 专业人员复核所有输出，结论是咨询建议而非监管许可；敏感材料按最小范围授权。<strong>原型／退出：</strong> 先组织月度主题门诊；若不能形成明确转介和问题闭环，则并入统一服务窗口。</p>
+<h4>04｜开放算力服务站</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/04-open-compute-service-station-v1.png" alt="开放算力服务站"><figcaption>开放算力服务站</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 为小团队提供透明、可负担、有人支持的端云协同入口；优先布置在众智园与原点社区；主责服务网络。<strong>用户与空间：</strong> 学生、研究者和早期团队使用预约工位、边缘设备、能耗与配额看板、技术支持席。<strong>运营与边界：</strong> 实名授权但不公开任务内容；敏感、高风险或超额任务禁止运行，异常自动停止并转人工。<strong>原型／退出：</strong> 从有限时段与标准任务包开始；低利用率时转为巡回技术支持，不固化闲置设备。</p>
+<h4>05｜AI原点开放客厅</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/05-ai-origin-open-living-room-v1.jpg" alt="AI原点开放客厅"><figcaption>AI原点开放客厅</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 让原创成果、青年创业、世界会客与社区议事持续相遇；位于原点城市客厅这一核心超级创新元；主责文化社群。<strong>用户与空间：</strong> 研究者、创业者、居民、学生、投资者使用发布厅、概念验证桌、共学区、展墙与服务窗口。<strong>运营与边界：</strong> 由共同体运营团队编排公开议程，保留无障碍和非商业时段，活动数据只做聚合统计。<strong>原型／退出：</strong> 先以现有首层快闪和固定周活动验证复访；若只剩单向展示，则缩小展陈、增加共创与服务功能。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-AI-ORIGIN-IMAGE-20260813" title="来源：FTA-AI-ORIGIN-IMAGE-20260813">来源</sup></p>
+<h4>06｜青年创新者生活站</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/06-young-innovator-life-station-v1.png" alt="青年创新者生活站"><figcaption>青年创新者生活站</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 补齐青年创业者在餐饮、短住、运动、共学和生活咨询上的断点；位于原点大道与人才生活轴；主责文化社群。<strong>用户与空间：</strong> 青年研究者、创业团队和新到访国际人才使用平价餐食、共享客厅、夜间学习、运动与服务咨询点。<strong>运营与边界：</strong> 基础生活服务不与招聘、投资或数据授权绑定；不采集不必要的生活轨迹。<strong>原型／退出：</strong> 联合既有商户与社区设施试运行；不能维持平价与高频使用时转为服务联盟，不另建专用建筑。</p>
+<h4>07｜AI内容首发与共创街</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/07-ai-content-launch-cocreation-street-v1.png" alt="AI内容首发与共创街"><figcaption>AI内容首发与共创街</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 把AIGC从线上生产转化为可体验、可反馈、可迭代的城市首发界面；位于大钟寺链主企业与京张创新带交汇处；主责产业生态。<strong>用户与空间：</strong> 内容团队、创作者、品牌、商户和公众使用首层工作室、临时展亭、直播／发布节点与反馈墙。<strong>运营与边界：</strong> 生成内容明确标识，版权和肖像经人工审核，公众可选择非AI体验并投诉撤回。<strong>原型／退出：</strong> 以短周期主题街区轮换；只形成流量而无产品迭代或社区收益时停止该主题。</p>
+<h4>08｜机器人服务共生店</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/08-robot-service-coexistence-shop-v1.png" alt="机器人服务共生店"><figcaption>机器人服务共生店</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 在真实商业中检验机器人与人协作，而非制作孤立展厅；位于大钟寺商业与生活界面；主责创新场景。<strong>用户与空间：</strong> 商户、机器人团队、顾客和一线员工共享可轮换测试位、人工服务台、补能维护区和清晰动线。<strong>运营与边界：</strong> 人工服务始终并行，价格透明，故障立即降级；不得将面部识别作为基本消费条件。<strong>原型／退出：</strong> 单店、单任务、离峰试验；安全、效率或接受度未达约定门槛即撤回设备。</p>
+<h4>09｜AI健康导航站</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/09-ai-health-navigation-station-v2.png" alt="AI健康导航站"><figcaption>AI健康导航站</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 帮助居民理解流程、预约和找到人工服务，不进行诊断；位于小月河翼社区与健康服务入口；主责服务网络。<strong>用户与空间：</strong> 居民、老年人、照护者和工作人员使用可见咨询窗、无障碍终端、等候位和人工转接席。<strong>运营与边界：</strong> 最小化采集，不保存无关健康信息，所有建议可转人工并明确“非医疗诊断”。<strong>原型／退出：</strong> 从流程解释和预约协助开始；出现误导、隐私风险或人工承接不足即停用AI功能。</p>
+<h4>10｜AI学习工坊</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/10-ai-learning-workshop-v1.png" alt="AI学习工坊"><figcaption>AI学习工坊</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 让学生、家庭与教师共同理解并使用AI解决真实问题；分布于学校、社区和创新区公共空间；主责文化社群。<strong>用户与空间：</strong> 教师、学生、家庭和开发者使用小组桌、过程展示墙、设备柜和教师复核席。<strong>运营与边界：</strong> 未成年人保护优先，教师审核内容与任务，不以自动评分替代教育判断。<strong>原型／退出：</strong> 以短课和社区问题挑战启动；若课程变成工具推销或无法保证教师复核则取消。</p>
+<h4>11｜京张记忆生成剧场</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/11-jingzhang-memory-generative-theater-v1.png" alt="京张记忆生成剧场"><figcaption>京张记忆生成剧场</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 让铁路遗产、口述史与当代AI文化形成可持续更新的公共叙事；位于京张遗址公园；主责文化社群。<strong>用户与空间：</strong> 居民、历史研究者、游客、创作者使用档案查询、口述史录制、生成演示和小型展演空间。<strong>运营与边界：</strong> 史实与生成内容分层标注，来源可查，贡献者可撤回授权；不虚构人物经历。<strong>原型／退出：</strong> 先从一个经核验主题和社区共创夜开始；无法完成来源核验的内容不公开。</p>
+<h4>12｜无障碍出行协助点</h4>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/12-accessible-mobility-assistance-point-v1.png" alt="无障碍出行协助点"><figcaption>无障碍出行协助点</figcaption></figure>
+<p><strong>价值／位置／主责：</strong> 把数字导航、实体无障碍设施和人工志愿服务放在同一可见窗口；位于轨道站点与慢行断点；主责政策治理。<strong>用户与空间：</strong> 轮椅使用者、视听障碍者、老年人和临时行动不便者使用低位服务台、触觉／语音信息、轮椅借用与人工陪同行动点。<strong>运营与边界：</strong> 始终保留非数字通道，定位与需求数据最小化，设置公众投诉和现场人工责任人。<strong>原型／退出：</strong> 从关键站点的人工协助＋轻量导航开始；若数字功能不可靠则关闭算法、保留人工服务。</p>
+<h3>四个主场景：从战略概念到可运营空间</h3>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/01-ai-agent-evaluation-field-v1.png" alt="AI模型与智能体评测场"><figcaption>AI模型与智能体评测场</figcaption></figure>
+<p><em>众智园的共享评测设施把模型、智能体、城市服务任务与人工评审组织在同一条可审计流程中，形成面向全线开放的验证能力。</em></p>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/05-ai-origin-open-living-room-v1.jpg" alt="AI原点开放客厅"><figcaption>AI原点开放客厅</figcaption></figure>
+<p><em>开放客厅不是展示大厅，而是研究者、创业者、居民、学生和专业服务者持续交往、共学与发起合作的公共界面。</em></p>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/07-ai-content-launch-cocreation-street-v1.png" alt="AI内容首发与共创街"><figcaption>AI内容首发与共创街</figcaption></figure>
+<p><em>大钟寺以首层工作室、临时展亭、发布节点和社区反馈界面组织内容生产、首发、体验与再迭代。</em></p>
+<figure class="proposal-figure"><img src="../assets/media/scenario-cards/11-jingzhang-memory-generative-theater-v1.png" alt="京张记忆生成剧场"><figcaption>京张记忆生成剧场</figcaption></figure>
+<p><em>铁路遗产、口述史与生成媒介共同构成可更新的公共文化剧场，史实与生成内容分层标注、来源可查。</em></p>
+<h3>五高法则 × 十二场景矩阵</h3>
+<div class="proposal-table"><table><thead><tr><th>五高法则</th><th>主责场景</th><th>跨场景协同结果</th></tr></thead><tbody><tr><td>产业生态</td><td>01评测场、07共创街</td><td>形成“技术验证—产品首发—用户反馈—市场转化”的短链协作</td></tr><tr><td>文化社群</td><td>05开放客厅、06生活站、10学习工坊、11记忆剧场</td><td>将人才生活、跨代学习、公共文化和持续社群组织为日常创新基础设施</td></tr><tr><td>服务网络</td><td>04算力站、09健康导航站</td><td>让算力、技术支持和公共服务成为可进入、可预约、有人兜底的共享底座</td></tr><tr><td>创新场景</td><td>02测试花园、08共生店</td><td>通过可围合、可轮换、可降级的真实场景支持具身智能和机器人持续迭代</td></tr><tr><td>政策治理</td><td>03合规沙盒、12出行协助点</td><td>把合规、无障碍、人工复核、数据最小化和退出机制嵌入空间与运营流程</td></tr></tbody></table></div>
+<h2>用地、建筑规模与拆改留方案</h2>
+<p>用地策略以混合、适配和公共性为原则。临时边界内的概念用地划分覆盖创新研发、混合服务、人才生活、公共服务、绿地与公共空间、道路交通等类型，并由同一组共享边界生成，避免重叠与空隙。<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-NETWORK-001" title="空间数据：geometry/land_use.geojson#LU-NETWORK-001">空间数据</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="announced_overall_design_area_sqm" title="指标：announced_overall_design_area_sqm">指标</sup></p>
+<p>现阶段只提出四类更新动作：完整保留、低扰动适配、界面激活、待专业论证的新建可能。由于缺少现状建筑轮廓、用途、年代、结构安全、权属与控规资料，具体建筑拆改留、开发强度和高度均标记为待正式数据补齐；图中建筑只表达概念性空间供给和节点关系，不构成地块结论。[assumption:A-BUILDING-001] <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-CONTROL-DETAILED-PLANNING" title="标准：MOHURD-CONTROL-DETAILED-PLANNING">标准</sup></p>
+<h2>交通、轨道、市政与公共服务设施</h2>
+<p>交通策略采用“轨道优先、慢行成网、道路微循环、物流分时、停车共享”的五层体系。京张遗址公园形成连续步行和骑行主脊；横向城市道路与社区街巷形成东西缝合；轨道站点组织换乘、步行导向与共享服务；研发物流避开主要公共活动时段；停车设施优先共享和动态引导。<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson#ROAD-SPINE-001" title="空间数据：geometry/roads.geojson#ROAD-SPINE-001">空间数据</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="traffic_rail_slow_parking" title="深度：traffic_rail_slow_parking">深度</sup></p>
+<p>市政和新型基础设施采用“公共底座、按需接入”策略，包括端侧算力接口、公共网络、充电与机器人补能、数据合规服务、雨洪与能源监测。所有容量、管线路径、消防和能源结论待专项资料与专业团队核定，本方案只确定服务需求、空间接口和分期优先级。[assumption:A-MUNICIPAL-001]</p>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行、蓝绿空间与创新服务复合网络"><figcaption>交通慢行、蓝绿空间与创新服务复合网络</figcaption></figure>
+<h2>蓝绿空间、公共空间与城市风貌</h2>
+<p>京张遗址公园被定义为“可进入的公共创新基础设施”：日常首先是生态、慢行、休憩和社区空间，其次才是AI展示与测试。所有技术装置必须可关闭、可维护、不侵占基本公共服务，并通过低照度、低噪声、无障碍和儿童安全设计保持公共性。<sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson#PS-SPINE-001" title="空间数据：geometry/public_space.geojson#PS-SPINE-001">空间数据</sup></p>
+<p>三个AI朝圣地标构成从源头到应用的公共叙事：<strong>AI原点大厅</strong>展示研究者、创业者与开放问题；<strong>全球AI调度厅</strong>可视化技术、场景和公共责任的运行状态；<strong>创新者星轨</strong>沿遗址公园记录可核验的技术贡献、失败经验和城市共创者。地标不是大型造型物，而是可学习、可交流、可持续更新的公共制度与空间载体。</p>
+<p>城市风貌以“工业遗产的克制底色、AI节点的精准高亮、日常生活的温暖界面”为原则。保留铁路材料、尺度和线性秩序，新增设施采用可逆、模块化、低碳构造；夜间不追求泛光照明和赛博奇观，而以必要节点和活动界面形成可识别的AI LINE 1。</p>
+<h2>更新项目清单、实施政策与分期计划</h2>
+<p>实施采用FTA“诊断—战略—设计—运营—投资反馈”的全生命周期闭环，并坚持“先运营验证、再空间固化”。诊断识别五高短板，战略选择应当被放大的城市优势，设计提供可逆空间接口，运营用真实用户和项目检验假设，投资再聚焦已经形成生态效应的节点。<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson#PHASE-001" title="空间数据：geometry/phasing.geojson#PHASE-001">空间数据</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="phasing_implementation" title="深度：phasing_implementation">深度</sup></p>
+<ul>
+<li><strong>第一阶段：原型季｜场景激活与社群培育</strong>。分别在众智园、原点社区和大钟寺启动一个可逆原型，建立真实运营主体、首批用户、风险规则和五高基线，不以大拆大建作为启动信号。</li>
+<li><strong>第二阶段：网络季｜生态构建与服务升级</strong>。把验证、孵化、专业服务、公共客厅和场景开放连成跨区服务网络；通过项目在三区间的真实流转判断哪些设施值得固化。</li>
+<li><strong>第三阶段：品牌季｜创新区成网与模式输出</strong>。形成具有牵引力的超级创新元、稳定的企业与团队梯度、常态社群和国际合作节点，公开年度五高进展与当期行动资源调整依据。</li>
+</ul>
+<p>年度活动体系包括AI LINE 1全球创新周、三地轮值Demo Day、开放测试季、京张AI文化节和青年开发者驻留计划。活动不是一次性传播，而是进入“发现问题—招募团队—开放场景—验证评估—资本与服务对接—规模化或退出”的转化路径。所有主办主体、预算、政策和投资安排均为概念建议，须经相关机构另行确认。</p>
+<p>长期运营建议设立多方参与的AI LINE 1协作平台，连接政府部门、园区和企业、高校研究机构、专业服务、社区与公众。平台不替代行政管理，主要负责场景清单、活动策划、共享设施预约、五高年度诊断、品牌维护和跨区项目调度。收入与资源机制可研究公共服务采购、会员服务、活动合作、共享设施服务和成果转化等多元路径，但不构成投资承诺。</p>
+<h3>阶段决策门：没有证据就不扩建</h3>
+<p>以下是供实施主体确认的<strong>建议门槛</strong>，不是现状成绩或政府承诺。每个原型启动前先登记基线、责任人、服务对象、数据字段和停止条件；实际阈值由运营、专业审查和公众代表在启动会上确认，并写入公开台账。</p>
+<div class="proposal-table"><table><thead><tr><th>决策时点</th><th>建议牵头角色</th><th>必须形成的证据</th><th>进入下一阶段的最低条件</th><th>未通过处理</th></tr></thead><tbody><tr><td>启动前</td><td>场景业主＋园区／社区＋专业审查人</td><td>责任矩阵、数据清单、无障碍检查、人工通道、投诉与急停流程</td><td>五项文件齐备且现场责任人签认</td><td>不启动</td></tr><tr><td>原型运行4—8周</td><td>现场运营人＋用户代表</td><td>使用日志、重复使用、故障、人工接管、投诉及公共反馈</td><td>出现真实重复使用；重大安全问题为零；一般问题均有责任人与关闭期限</td><td>修正后复测或关闭AI功能</td></tr><tr><td>跨区过线</td><td>AI LINE 1协作平台建议机制</td><td>原点概念验证记录、众智园评测记录、大钟寺使用反馈</td><td>三份记录可追溯，且不存在未关闭的重大风险</td><td>退回上一环节，不进入扩展</td></tr><tr><td>空间固化前</td><td>规划、建筑、交通、消防、运营等专业团队</td><td>权属、控规、造价、运维、消防、交通和公众参与意见</td><td>专业条件明确、运营主体和资金来源经有权主体确认</td><td>保持可逆原型，不建设永久设施</td></tr><tr><td>年度复盘</td><td>多方协作平台＋公众观察</td><td>五高仪表盘、项目流转、公共共益、投诉闭环与退出清单</td><td>只对证据持续改善的项目追加资源</td><td>降级、合并、暂停或退出</td></tr></tbody></table></div>
+<p>五高仪表盘不以访问量代替成效：产业生态看“完成三次过线的项目数与转化断点”；文化社群看“居民、青年和专业人员的重复参与及可负担性”；服务网络看“响应时间、转介完成率和小团队可达性”；创新场景看“安全运行、人工接管、复用和真实问题改善”；政策治理看“审计完成、投诉闭环、无障碍复核和按规则退出”。所有基线值在原型启动后实测建立，报告中不预填虚假成绩。</p>
+<h3>三个90天预注册试点：先写判定规则，再看结果</h3>
+<p>以下门槛在启动前登记，是<strong>未来判定线而非现状成绩</strong>。三个试点均在第0周锁定T0基线，在D30、D60、D90复测；原始记录、责任签认、异常与退出决定进入可审计台账。完整字段见<code>simulation.json</code>。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="pilot_protocol_count" title="指标：pilot_protocol_count">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="pilot_duration_days" title="指标：pilot_duration_days">指标</sup></p>
+<div class="proposal-table"><table><thead><tr><th>试点</th><th>最小样本</th><th>D90通过线</th><th>暂缓／停止线</th></tr></thead><tbody><tr><td>AI原点开放客厅＋概念验证服务</td><td>≥120名去重参与者、≥8场公开活动、≥6支概念验证团队</td><td>重复参与≥30%；≥2支团队形成可追溯验证或转介；体验中位数≥4/5；重大隐私／安全事件=0</td><td>样本不足只延长不外推；重大事件未关闭或人工公共服务无法维持即停</td></tr><tr><td>大钟寺公共首层＋连续步行原型</td><td>≥240次过街观察、≥120份拦截访谈、≥18个观测时段</td><td>无障碍检查100%；绕行／到达时间中位数较T0改善≥20%；冲突率不恶化且目标改善≥20%；重大交通事件=0</td><td>冲突率恶化、重大事件或专业复核不通过即停；仅覆盖辅助路／支路／到达段</td></tr><tr><td>众智园可围合安全测试花园</td><td>≥30次受监管测试、≥5支团队、≥10次急停演练</td><td>登记与责任签认100%；急停成功100%；未受控越界=0；人工接管中位数≤30秒；事件按期关闭100%</td><td>急停失败、越界、重大人身风险或责任主体退出即停</td></tr></tbody></table></div>
+<h3>三区最小实施任务书：把概念落到责任、成本级与停线</h3>
+<p>成本级仅用于前期决策：<strong>S</strong>为服务、流程和轻量设备配置，<strong>M</strong>为可逆空间改造，<strong>L</strong>为永久工程；在正式红线、权属、造价和专业审查完成前，本方案不启动L级建设。</p>
+<div class="proposal-table"><table><thead><tr><th>节点</th><th>90天最小空间包</th><th>建议牵头角色</th><th>成本级</th><th>启动前置条件</th><th>D90过线／停线</th></tr></thead><tbody><tr><td>AI原点社区</td><td>开放客厅、概念验证服务台、公开项目台账</td><td>社区／园区运营＋高校转化＋中关村服务翼</td><td>S—M</td><td>场地许可、运营人、数据告知、无障碍与人工服务</td><td>按预注册试点过线；重大事件未关闭或人工公共服务失效即停</td></tr><tr><td>众智园</td><td>可围合测试花园、责任签认台、急停区与观察界面</td><td>园区运营＋技术评测＋安全审查</td><td>M</td><td>围合、消防、应急、设备保险、责任主体与退出路径</td><td>急停100%、越界0；任一急停失败或责任主体退出即停</td></tr><tr><td>大钟寺</td><td>辅助路／到达段连续步行、公共首层、人工交接点</td><td>街道／片区运营＋交通与无障碍专业团队</td><td>M</td><td>道路与场地授权、交通T0基线、专业复核、活动预案</td><td>到达改善且冲突不恶化；冲突恶化、重大事件或复核不通过即停</td></tr></tbody></table></div>
+<p>AI原点社区与大钟寺的任务书以FTA真实项目实践为经验底座；众智园为本次征集提出的设计性原型。三者均不是已批准的工程承诺，正式实施仍以有权主体、专业审查和补充数据为准。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-AI-ORIGIN-INTERNAL-20260812" title="来源：FTA-AI-ORIGIN-INTERNAL-20260812">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="FTA-DAZHONGSI-INTERNAL-20260812" title="来源：FTA-DAZHONGSI-INTERNAL-20260812">来源</sup></p>
+<h3>三张概念技术剖面：把空间主张变成可校核接口</h3>
+<p>三图中的尺寸均为<strong>概念询值</strong>，不是现状测绘、施工图或审批结论；正式红线、权属、交通、消防、无障碍和设备风险资料补齐后必须复核。大钟寺图引用北京市现行慢行标准中的过街、盲道、缘石坡道、自行车过街带与安全岛底线；铁路和快速路主车道仍按立体分离原则，不把辅助路原型误写成跨三环工程结论。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="BEIJING-WALK-BIKE-DB11-1761-2020" title="来源：BEIJING-WALK-BIKE-DB11-1761-2020">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="GB55019-2021-ACCESSIBILITY" title="来源：GB55019-2021-ACCESSIBILITY">来源</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="technical_section_count" title="指标：technical_section_count">指标</sup></p>
+<figure class="proposal-figure"><img src="../assets/figures/tech-origin-interface.png" alt="AI原点校园—街道—开放客厅概念剖面"><figcaption>AI原点校园—街道—开放客厅概念剖面</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/tech-dazhongsi-crossing.png" alt="大钟寺辅助路与站点到达段安全过街概念图"><figcaption>大钟寺辅助路与站点到达段安全过街概念图</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/figures/tech-zhongzhiyuan-test-garden.png" alt="众智园具身智能可围合安全测试花园概念图"><figcaption>众智园具身智能可围合安全测试花园概念图</figcaption></figure>
+<h3>可审计的选项否决：概念初筛最高分也必须通过硬约束门</h3>
+<p>本方案以大钟寺近期干预演示一套可复算的<strong>内部概念比选方法</strong>。这里的86、82和74分只用于说明“软性加权排序不能越过硬约束”，<strong>不是比赛评分、官方结论，也不声称来自某个已经运行的AI模型</strong>。按公开权重计算，A“标志性跨三环桥站一体结构”得到最高概念分86，B“辅助路／到达段连续步行＋公共首层＋导视原型”为82；但城市设计负责人执行硬约束门后否决A，因为正式道路／铁路红线、权属、结构、消防、无障碍、造价、运营与审批资料均缺失，且方案不可逆。最终选择可逆的B进入90天概念验证，C地下连廊保留待补数。<strong>工具可以协助扩展选项；人对权重、资料边界、公共安全和最终决定负责。</strong>完整权重、计算、否决理由和重开条件见<code>simulation.json</code>。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="ai_hard_gate_override_count" title="指标：ai_hard_gate_override_count">指标</sup> [assumption:A-CONTROLS-001]</p>
+<h2>指标体系、面积复算与合规矩阵</h2>
+<p>指标分为三类：由GeoJSON直接复算的空间指标、由公开资料确认的任务指标、待正式资料补齐的规划与运营指标。空间指标包括临时边界面积、各类用地面积、绿地与公共空间比例、道路与慢行长度、重点区数量和分期范围；任务指标包括12张场景卡、3个产业测试场景、5类用户画像、3个朝圣地标和6项智能体任务覆盖；容积率、高度、建筑密度、精确绿地率、投资额、产值和实施主体承诺保持未知或概念状态。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_count" title="指标：key_area_count">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="scenario_count" title="指标：scenario_count">指标</sup> [assumption:A-CONTROLS-001]</p>
+<p>当前临时图层经EPSG:4548投影复算并按发布精度取整：提交边界面积约11,412,825平方米，概念绿地面积约2,204,265平方米、比例19.3139%。原始几何可由评审脚本复算，正文不以小数位制造虚假精度。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_space_area_sqm" title="指标：green_space_area_sqm">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="指标：green_ratio">指标</sup></p>
+<p>概念公共空间面积约2,023,722平方米、比例17.7320%，概念建筑基底面积约241,863平方米。以上数值只检验本次图层之间是否一致，不是法定指标；官方边界和控规发布后必须整体替换与复算。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_area_sqm" title="指标：public_space_area_sqm">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="指标：public_space_ratio">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="指标：building_footprint_area_sqm">指标</sup></p>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="核心指标、任务覆盖与证据链"><figcaption>核心指标、任务覆盖与证据链</figcaption></figure>
+<p>机器核验层由<code>metrics.json</code>、<code>compliance_matrix.json</code>、<code>standard_matrix.json</code>和<code>design_depth_matrix.json</code>完整承载。正文只解释指标的设计意义：创新网络是否完整、公共空间是否支持交往、场景是否可验证、实施是否可分期、风险是否有人负责，而不是用未经证实的宏大数字制造确定性。</p>
+<h2>风险、版权与合规说明</h2>
+<p>本方案是开放共创建议，不替代正式规划，不构成政府审定、投资承诺、工程可行性或具体地块拆改留结论。所有空间落地建议均为概念建议、参考方案或可供专业团队深化研究的材料。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-AGENT-TASKBOOK-20260518" title="来源：DATA-SRC-AGENT-TASKBOOK-20260518">来源</sup></p>
+<p>参赛文字与图件均针对百年京张组织表达。原点社区与大钟寺的诊断、策略和实施框架具有FTA真实项目经验底座；为本次征集重新制作的四张鸟瞰仍是概念性空间转译，不是项目实景、竣工证明或工程承诺。场景05采用FTA提供的AI原点社区项目图片。生成方式、来源与权利限制详见<code>report/copyright_statement.md</code>。</p>
+<p>主要风险包括：临时边界精度不足；控规、权属、建筑、市政、交通和文保资料缺失；AI公共服务的隐私、偏差、故障与人工兜底；共享设施和长期运营主体尚未确认。每项风险均设置补数、专业复核、试点、人工接管或停止条件，避免把愿景写成事实。</p>
+<h2>参考资料</h2>
+<p>参考资料按“项目主控—专业标准—案例背景”三级使用。项目主控资料决定三层范围、三区两翼与任务边界；专业标准用于校正城市设计、控规表述、用地分类、AI治理和无障碍底线；全球案例只用于比较协作机制，不向本项目移植未经验证的规模、投资或绩效数字。所有来源的可用范围、不可用范围、访问时间和权威等级均在<code>sources.json</code>登记，正文中的判断通过<code>[source:*]</code>锚点追溯。当前最大资料缺口仍是官方精确边界、控规、权属、建筑、市政、交通和文保条件，因此参考资料不能被反向解释为本项目已经获得相应审批或实施承诺。正式资料发布后，应先替换空间约束，再统一复算图层、指标、图纸与矩阵，而不是局部修改文字。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509" title="来源：DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARIES-20260605" title="来源：DATA-SRC-PROVISIONAL-BOUNDARIES-20260605">来源</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup></p>
+<ol>
+<li>北京市规划和自然资源委员会海淀分局：《百年京张AI创新带城市设计国际方案征集资格预审公告》，2026年。</li>
+<li>《面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录》，2026年。</li>
+<li>住房和城乡建设部：《城市设计管理办法》。</li>
+<li>住房和城乡建设部：《城市、镇控制性详细规划编制审批办法》。</li>
+<li>自然资源部：《国土空间调查、规划、用途管制用地用海分类指南》。</li>
+<li>国家互联网信息办公室等：《生成式人工智能服务管理暂行办法》。</li>
+<li>全国人大常委会：《中华人民共和国无障碍环境建设法》。</li>
+<li>七个全球创新生态案例的公开来源，详见<code>sources.json</code>。</li>
+</ol>
+</main>
+<section aria-label="visual audit index" style="max-width:1120px;margin:40px auto;padding:24px;background:#063844;color:white;border-radius:18px">
+<h2 style="margin-top:0;color:white">机器核验导航</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px"><span>总览地图</span><span>三层范围</span><span>重点区域</span><span>用地分区</span><span>交通慢行</span><span>蓝绿公共空间</span><span>建筑</span><span>更新项目</span><span>AI 场景</span><span>核心指标</span><span>任务覆盖</span><span>自检状态</span><span>来源</span><span>假设</span></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px">
+<div data-metric="site_area_sqm" data-value="11412825"><b>11.4 km²</b><br>总体设计范围</div>
+<div data-metric="green_ratio" data-value="0.193139"><b>19.3%</b><br>临时几何绿地比例</div>
+<div data-metric="public_space_ratio" data-value="0.17732"><b>17.7%</b><br>临时几何公共空间比例</div>
+</div></section></body>
+</html>
