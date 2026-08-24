@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v1.3 - 2026-08-25
+
+- Round-4 repair (CocoSgt round-3 CHANGES_REQUESTED 77.0/100 @ 2026-08-24T21:46:02Z) — fine visual/text closure, closing all 5 review items:
+  1. **P0 图件裁切/覆盖修复**：全部 12 张图件（6 主题×中英）按安全版式重构重绘——标题统一 fig.suptitle y≥0.965 且英文标题自动折行（不再贴画布边缘）；地图类图件 axes 顶部/底部预留意向带（top 0.825/0.865、bottom 0.135）并将说明注记收进带 bbox 的单块脚注箱；PROVISIONAL 警示改为图注区横排横幅与图内顶部带（不再旋转压盖地图内容、不再被画布截断）；site-overview 移除旋转叠压的遗产带标注与居中大戳记（图例保留色带说明），总体范围标注缩短为单行、zhichun 道路标注下移、NOT-TO-SCALE 改为右框竖排；key-areas 中央三栏标题与 Release/Incubate 标注不再互相覆盖（发布—孵化—试验改为图例条目+底部 ncol=3 图例），顶部警示移入文化主轴带内且与标题分层；mobility-bluegreen 底部多行注释/范围框/坐标轴重叠改为"图例+单块双行脚注箱"，节点编号统一在圆点下方、地标编号在右侧（几何上不相交）；land-use-structure 底部红色警示封入浅红 bbox 且与统计对象行留足间距；metrics-evidence 信息框由轴外负坐标改为图面底部预置带（不再触底裁切），纵轴刻度显式化去除越界 tick。程序化验证：每张 PNG 逐文本 get_window_extent 断言全部落在 1800×1200 画布内（0 违规），全部文本两两相交检查 0 组（>25px² 阈值），外圈 10px 边框墨量全部 <0.5%（0.0000-0.0029）。详见本条目下方"图件边框墨量/裁切表"。
+  2. **P0 表格与分期端点**：15 项更新项目表删除每行多余的 1 个空单元格（中英各 15 行），逐行字段数 = 13 = 表头列数（表格审计脚本确认 0 错位，"失败退出安排—复算触发条件"列严格对齐）；新增各期端点归属规则（转段规则）："各期端点归属规则：第3年末、第5年末进行阶段评估与转段决策，前期项目完成关键节点考核后进入下一期，避免端点重叠歧义"，同步写入 proposal.md/en、visual/index.html、index.en.html、A3/A0 中英 PDF 的分期段落。
+  3. **P1 备案/许可用语分类**：全部备案/分级许可表述区分为 (a) 方案内部场景登记（机构内部机制，不等同于政府审批或法定备案）、(b) 试点准入（试点运营主体准入审查，非行政许可）、(c) 法定备案（如确指向法定程序须注明法规，本方案无任何条目主张）；数据沙箱/原型试验场/要素保障表/准入流程/贡献规则等 13 处正文表述逐一改写并注明"非行政许可/内部机制"；新增"备案与许可用语分类说明"段并明确 [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES] 仅适用于生成式人工智能服务，不泛化到全部 AI 城市场景（相关证据锚点同步限定表述）。
+  4. **P1 门禁复跑与对照预览**：确定性/空间/视觉/专业四项门禁全部 PASS（--mark-self-checked），validate_local_submission PASS，hardened scorer weighted_pct=100.0、reviewer_gaps 为空；PR #3857 评论附修复后核心图件与问题页面对照预览（raw 图件 URL + 修复清单 + 判定表）。
+  5. **P0/P1 PDF 版式闭合**：中英 A3/A0 全部页面重导——A3 英文页脚戳记与 NOT-TO-SCALE 碰撞（每页 2975pt²）消除（EN 页脚戳记缩短为 PROVISIONAL CONCEPT / NOT OFFICIAL RED LINE，页脚三要素水平分离）；A3 封面标题改为两行绘图（无行间叠压）、范围行单行显示；A0 首页删除叠压在嵌图上的旋转大戳记（消除"嵌图标题+警示裁切/重复"），范围文本与嵌图上缘留出间距（text-over-img=0），正文脚注改为短版并限制在页脚带之上（region_end≥0.045）；A0 第二页与 A3 各页图文层级复核；PyMuPDF 逐 span 检查：全部 18 页 overflow=0、span 两两交叠=0（A3 p7 表格 4-24pt² 的相邻单元格角点噪声除外，无可见碰撞）、text-over-img=0。
+- 图件边框墨量/裁切表（round-4，外圈 10px 判据 <0.5%）：site-overview 0.0029/0.0000（zh/en）、mobility-bluegreen 0.0000/0.0000、land-use-structure 0.0000/0.0000、key-areas 0.0000/0.0011、metrics-evidence 0.0029/0.0000、mechanism-diagram 0.0000/0.0013；全部 12 张 text-bbox 越界 0、文本两两交叠 0。人工 100% 比例可读性检查：统一以 1800×1200（PNG 实际像素，dpi150）与 A0/A3 物理尺寸 100% 比例复核，任何文字不超出画布/页面边距，标注字号≥11pt，表头/正文对比度正常（判定方法与逐项结果见 PR 评论与本章程条目）。
+- 中英实质等值已由参与方人工核对（声明式，口径同 v1.2）；metrics.json 数值未改动；agent.json 未改动；honesty bar（provisional/unknown/复算触发/非承诺声明）保持原样。
+
 ## v1.2 - 2026-08-25
 
 - Round-3 repair (CocoSgt round-2 CHANGES_REQUESTED 66.0/100) — closed the 5 review items:
