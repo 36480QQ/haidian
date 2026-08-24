@@ -543,10 +543,10 @@ function innovationLineFigure(lang) {
   const extent = [116.337, 39.937, 116.359, 40.029];
   const rect = { x: 58, y: 160, w: 1192, h: 930 };
   let body = header(1,
-    '九公里城市，就是九公里AI研发环境',
-    'THE CITY IS THE AI DEVELOPMENT ENVIRONMENT',
-    '六类城市知识接口 × 三处深度共同开发场',
-    'SIX URBAN KNOWLEDGE INTERFACES × THREE CO-DEVELOPMENT GROUNDS', lang);
+    '让一座城参与AI的完成',
+    'LET A CITY TAKE PART IN MAKING AI',
+    '一条城市正线 × 六类城市接口 × 三处共同开发场',
+    'ONE CIVIC MAIN LINE × SIX URBAN INTERFACES × THREE CO-DEVELOPMENT GROUNDS', lang);
   body += `<rect x="58" y="160" width="1192" height="930" rx="5" fill="white" stroke="${C.line}"/>`;
   body += mapLayer(extent, rect, `innovation-${lang}`, { lightBuildings: true });
   body += drawDesignNetwork(extent, rect);
@@ -576,7 +576,7 @@ function innovationLineFigure(lang) {
     const center = ring.reduce((acc, point) => [acc[0] + point[0] / ring.length, acc[1] + point[1] / ring.length], [0, 0]);
     return project(center, extent, rect);
   });
-  const stationRole = zh ? ['把公众知识变成工程材料', '让任何团队都能接着做', '让日常生活继续改产品'] : ['TURN PUBLIC KNOWLEDGE INTO ENGINEERING', 'LET ANY TEAM CONTINUE THE WORK', 'LET DAILY LIFE KEEP CHANGING IT'];
+  const stationRole = zh ? ['和城市一起做', '让别人接着做', '让生活继续改'] : ['MAKE WITH THE CITY', 'LET OTHERS CONTINUE', 'LET LIFE KEEP CHANGING IT'];
   centers.forEach((point, index) => {
     const cardW = zh ? 270 : 310;
     const cardX = index === 2 ? point[0] - cardW - 34 : point[0] + 34;
@@ -587,8 +587,8 @@ function innovationLineFigure(lang) {
       ${text(cardX+16, point[1]+20, stationRole[index], zh ? 13 : 10, stationColors[index], 700)}`;
   });
   body += `<rect x="1280" y="160" width="662" height="930" rx="5" fill="white" stroke="${C.line}"/>
-    ${text(1316, 216, zh ? 'AI由城市共同做成' : 'AI IS MADE WITH THE CITY', zh ? 28 : 24, C.ink, 700)}
-    ${lines(1316, 254, zh ? ['不是把生活变成测试场，而是让生活经验、', '研究方法和工程能力共享同一张研发桌。'] : ['Urban life is not a testing ground.', 'Experience, research and engineering', 'share the same development table.'], zh ? 16 : 14, C.muted, 500, 1.45)}`;
+    ${text(1316, 216, zh ? '城市生活走正线，创新走侧线' : 'CITY LIFE ON THE MAIN LINE, INNOVATION ON SIDINGS', zh ? 26 : 19, C.ink, 700)}
+    ${lines(1316, 254, zh ? ['侧线允许试错，正线保持连续；', '道岔让两者相遇，经验再返回研发。'] : ['Sidings allow trial and error while city life continues.', 'Switches bring them together; experience travels back.'], zh ? 16 : 13, C.muted, 500, 1.45)}`;
   const photos = ['experience-zhongzhi.png', 'experience-ai-origin.png', 'experience-dazhongsi.png'];
   const photoLabels = zh ? ['公共实验花园', '公共共研大厅', '城市生活客厅'] : ['PUBLIC EXPERIMENT GARDEN', 'PUBLIC CO-DEVELOPMENT HALL', 'CITY LIFE ROOM'];
   photos.forEach((photo, index) => {
@@ -599,7 +599,7 @@ function innovationLineFigure(lang) {
     body += text(1334, y+171, `${stationNames[lang][index]} · ${photoLabels[index]}`, zh ? 15 : 12, C.white, 700);
   });
   body += `<rect x="1316" y="1028" width="590" height="38" rx="3" fill="${C.ink}"/>`;
-  body += text(1611, 1054, zh ? 'X = 不同城市知识共享一张研发桌' : 'X = URBAN KNOWLEDGE SHARES ONE DEVELOPMENT TABLE', zh ? 15 : 12, C.white, 700, 'middle');
+  body += text(1611, 1054, zh ? '问题 → 共创 → 开放 → 生活 → 再出题' : 'QUESTION → CO-MAKE → OPEN → LIVE → ASK AGAIN', zh ? 15 : 11, C.white, 700, 'middle');
   return svgWrap(body + footer(lang));
 }
 

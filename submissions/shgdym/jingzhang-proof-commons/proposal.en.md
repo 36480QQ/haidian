@@ -1,27 +1,27 @@
 ---
-title: "X JINGZHANG: AI Made Together with the City"
+title: "X JINGZHANG: Let a City Take Part in Making AI"
 author_github: "shgdym"
 language: "en"
 translation_file: "proposal.md"
 translation_of: "proposal.md"
 license: "CC-BY-SA-4.0"
-summary: "X Jingzhang turns the centennial railway corridor into a nine-kilometre urban AI co-development environment where residents, developers, universities, enterprises and public space define, make, open and continuously change public AI capabilities together."
+summary: "X Jingzhang lets a whole city take part in making AI: residents, developers, universities, enterprises and public space frame questions, make answers, open them to continuation and keep changing them through daily life."
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["public-safety-operations-review", "robot-delivery-low-speed", "ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v7.0"
+iteration: "v7.2"
 ---
 
 # X JINGZHANG
 
-> **AI is not a finished product deployed to the city. It is a public capability made together with the city.**
+> **Let a city take part in making AI.**
 
-## Urban life is the AI development environment
+## Jing-Zhang brings city life into AI development
 
 The first phase of the Jing-Zhang Railway Heritage Park has already converted roughly nine kilometres of railway corridor into open public space. Universities, research campuses, neighbourhoods, transit stations, commerce, Xiaoyue River and everyday park life continue along it. Together they offer something a conventional technology park cannot: one AI capability can repeatedly encounter different people, spaces and urban questions. [source:BEIJING-JZ-PARK-PHASE1] [source:BEIJING-JZ-PARK-9KM] [source:OFFICIAL-ANNOUNCEMENT]
 
-Yet much of that urban knowledge still sits outside development. Residents are often asked only after a product is complete; public space is treated as deployment context; transport and ecology arrive late as constraints. X Jingzhang proposes a **co-development city**: lived experience becomes engineering input, public space becomes research infrastructure, and university methods and enterprise capability change products together around daily life. Open tools, better services and reusable knowledge then build the city in return.
+Yet much of that urban knowledge still sits outside development. Residents are often asked only after a product is complete; public space is treated as deployment context; transport and ecology arrive late as constraints. X Jingzhang starts development with city questions: lived experience enters engineering, university methods and enterprise capability make answers together, those answers remain open for others to continue, and daily life sends the next question back into development.
 
 | Participant | No longer only | What they make together | What the city gains |
 | --- | --- | --- | --- |
@@ -31,11 +31,11 @@ Yet much of that urban knowledge still sits outside development. Residents are o
 | Enterprises and operators | Vendors or procurers | Add engineering, manufacturing, maintenance and service knowledge | Products meet life earlier; the city gains maintainable capability |
 | Public space and city operations | Deployment context or final approval point | Supply transport, ecology, service and operating conditions | Parks, streets and stations become lasting learning infrastructure |
 
-Here `X` is not primarily a risk symbol. It is where different forms of urban knowledge actually meet: resident experience x engineering capability, public question x AI model, university research x daily life, enterprise product x lived use, railway heritage x future technology. Every X is a co-development interface that people can enter, work in and continue to change.
+Here `X` is where different forms of urban knowledge meet: resident experience x engineering capability, public question x AI model, university research x daily life, enterprise product x lived use, railway heritage x future technology. City life runs on the main line while reversible innovation works on sidings; sidings can try and fail, the main line remains continuous, switches bring them together under the right conditions, and lived knowledge travels back into development.
 
 ![A nine-kilometre urban AI co-development environment with six city-knowledge interfaces and three deep co-development grounds; realistic panels are AI/generative concept images, not site photographs and not planning or implementation approval](assets/figures/mobility-bluegreen.en.png)
 
-## Why Jing-Zhang can turn an entire urban belt into a development environment
+## Why Jing-Zhang
 
 The railway's essential urban ability is connection rather than control: different places become one continuous system, and the same object is handed over, inspected, changed and kept running under different conditions. X Jingzhang translates that culture into AI co-development. The heritage line connects urban knowledge; stations provide durable places to stay and collaborate; turnouts bring lateral city systems in; sections hold different development conditions; return carries new lived knowledge upstream. [source:NRA-TECHNICAL-RULES] [source:BEIJING-JZ-PARK-PHASE1] [data:visual/assets/railway-operating-translation.json]
 
@@ -52,7 +52,7 @@ Not every interface needs a new building. Community X contributes care and every
 
 A sealed technology park cannot place community life, transit arrival, campus research, commerce and river ecology on one public sequence. A conventional park cannot sustain development, manufacturing, open tools and translation. Jing-Zhang is irreplaceable because it holds this nine-kilometre mixed urban section. [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-003]
 
-## Three co-development grounds, not three process nodes
+## Three stations, three co-development actions
 
 Their roles come from actual urban conditions. Northern Zhongzhi meets full-stack innovation and Qinghe ecology, making it suited to turn public knowledge into engineering material. Near-campus AI Origin links universities, translation, open source and talent life, making one team's result a public capability that others can continue. Southern Dazhongsi combines transit, commerce, terminals and high-frequency daily life, allowing technology to keep changing in use. [source:OFFICIAL-ANNOUNCEMENT] [source:HAIDIAN-2025-STATISTICAL-BULLETIN] [source:HAIDIAN-AI-ORIGIN-PLAN]
 
@@ -70,13 +70,9 @@ The brief asks for station integration and four-quadrant walking connections at 
 
 At Zhongzhi, Ms Zhou, a wheelchair-user representative, service staff and developers use movable kerbs, a parking sample strip and crowd markers to lay out conditions together. Users define turning space, waiting positions and what counts as improvement; engineers then choose navigation, a robot or facility changes as candidate tools. After the first failure, participants do not simply file feedback: they move the stopping position, rewrite the crowd condition and join the second test.
 
-At AI Origin, method, interface and limitations sit on a public prototype table. Another team can reproduce and change the work; university researchers explain model boundaries; community participants check whether translation has distorted the original question. In Dazhongsi, Ms Zhou finds that the device does not collide, yet its stopping pattern and spectators still reduce wheelchair turning space. Staffed service continues while that finding becomes the next task. Success is not product passage: it is a more accurate question, an open method and a group able to keep changing it. [data:visual/assets/lived-lifecycle.json] [data:visual/assets/x-lifecycle-valid-example.json]
+At AI Origin, method, interface and limitations sit on a public prototype table. Another team can reproduce and change the work; university researchers explain model boundaries; community participants check whether translation has distorted the original question. In Dazhongsi, Ms Zhou finds that the device does not collide, yet its stopping pattern and spectators still reduce wheelchair turning space. Staffed service continues while that finding becomes the next task. Success is not product passage: it is a more accurate question, an open method and a group able to keep changing it. **She is not trying a finished product; she is taking part in finishing it.** [data:visual/assets/lived-lifecycle.json] [data:visual/assets/x-lifecycle-valid-example.json]
 
 ![Ms Zhou and developers define, make, open and continue changing an accessible-arrival capability together; realistic panels are AI/generative concept images, not site photographs and not planning or implementation approval](assets/figures/x-operating-proof.en.png)
-
-> **Quality foundation:** co-development is not rule-free opening. TEST, RELEASE, USE and RETURN, the three records, and the existing lifecycle, topology and contract checks remain to govern safety, rights, human responsibility, public feedback and exit. Fields, hashes and PASS results sit in the professional appendix.
-
-> **Evidence boundary:** overall and key-area geometries remain provisional constraints, supporting concept relationships, public map slices and package recomputation only. Official boundaries, controls, ownership, field dimensions, engineering conditions and operators require a rebuild; no concept space is presented as approval or delivery commitment.
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -413,6 +409,10 @@ Recomputable measures include provisional area, concept green and public space, 
 ![Metrics, evidence status, risk and recalculation triggers](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
+
+> **Quality foundation:** co-development is not rule-free opening. TEST, RELEASE, USE and RETURN, the three records, and the existing lifecycle, topology and contract checks remain to govern safety, rights, human responsibility, public feedback and exit. Fields, hashes and PASS results sit in the professional appendix.
+
+> **Evidence boundary:** overall and key-area geometries remain provisional constraints, supporting concept relationships, public map slices and package recomputation only. Official boundaries, controls, ownership, field dimensions, engineering conditions and operators require a rebuild; no concept space is presented as approval or delivery commitment.
 
 Text, graphics, design layers, HTML and PDFs were produced by the declared AI agent and local tools. Four realistic concept images were regenerated on 2026-08-24 from text-only inputs with the OpenAI built-in image-generation tool in Codex. The tool did not expose its model identifier, so the model is accurately recorded as `unknown`; service, date, inputs, official output terms, post-processing, raw/final hashes and redistribution status are recorded asset by asset. The earlier unverified images were removed in full. Every realistic image embeds a notice that it is generative concept material, not a site photograph and not planning or implementation approval. No commercial map, third-party photo, enterprise logo or personal data is loaded; the offline CJK font is embedded under SIL OFL 1.1. See `report/copyright_statement.md`. [source:COPYRIGHT-LEDGER] [source:OPENAI-TERMS-20260101] [source:OPENAI-SHARING-POLICY-20221114]
 

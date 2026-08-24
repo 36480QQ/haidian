@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-08-24T10:10:53+08:00",
-  "baseline_git_sha": "a0169bfa22370e65b65b4fb9c0988b31333bb65f",
+  "reviewed_at": "2026-08-24T14:52:00+08:00",
+  "baseline_git_sha": "b65f7f4ad12cd8a50d5854e8846b0de7b9e8bed4",
   "scope": {
     "a3_pages": 44,
     "a0_boards": 10,
@@ -15,7 +15,7 @@
   ],
   "font_audit": {
     "embedded_fonts_decoded": 2,
-    "required_cjk_codepoints": 979,
+    "required_cjk_codepoints": 978,
     "missing_cjk_codepoints": 0,
     "replacement_characters": 0
   },
@@ -24,25 +24,25 @@
       "deliverable": "A3-ZH",
       "page": "p01",
       "status": "FIXED",
-      "notes": "Visible concept-image notice/time-model correction checked after rebuild."
+      "notes": "Hero line, concept-image notice, offline CJK glyphs and minimal loop checked after rebuild."
     },
     {
       "deliverable": "A3-ZH",
       "page": "p02",
-      "status": "PASS",
-      "notes": "Checked for missing glyphs, clipping, overflow, blank content, captions and image presence."
+      "status": "FIXED",
+      "notes": "Core Jing-Zhang figure and selected hero line checked for missing glyphs, clipping, overflow and image presence."
     },
     {
       "deliverable": "A3-ZH",
       "page": "p03",
-      "status": "PASS",
-      "notes": "Checked for missing glyphs, clipping, overflow, blank content, captions and image presence."
+      "status": "FIXED",
+      "notes": "Three-station comparison moved ahead of the story; checked for missing glyphs, clipping, overflow and image presence."
     },
     {
       "deliverable": "A3-ZH",
       "page": "p04",
-      "status": "PASS",
-      "notes": "Checked for missing glyphs, clipping, overflow, blank content, captions and image presence."
+      "status": "FIXED",
+      "notes": "City-question story moved to the fourth reading position; checked for missing glyphs, clipping, overflow and image presence."
     },
     {
       "deliverable": "A3-ZH",
@@ -156,7 +156,7 @@
       "deliverable": "A0-ZH",
       "page": "p01",
       "status": "FIXED",
-      "notes": "Concept-image notice or 14/90-day distinction corrected and rechecked."
+      "notes": "Selected hero line and rebuilt overall figure checked at full board scale."
     },
     {
       "deliverable": "A0-ZH",
@@ -186,25 +186,25 @@
       "deliverable": "A3-EN",
       "page": "p01",
       "status": "FIXED",
-      "notes": "Visible concept-image notice/time-model correction checked after rebuild."
+      "notes": "Hero line, concept-image notice and minimal loop checked after rebuild."
     },
     {
       "deliverable": "A3-EN",
       "page": "p02",
-      "status": "PASS",
-      "notes": "Checked for missing glyphs, clipping, overflow, blank content, captions and image presence."
+      "status": "FIXED",
+      "notes": "Core Jing-Zhang figure and selected hero line checked for clipping, overflow and image presence."
     },
     {
       "deliverable": "A3-EN",
       "page": "p03",
-      "status": "PASS",
-      "notes": "Checked for missing glyphs, clipping, overflow, blank content, captions and image presence."
+      "status": "FIXED",
+      "notes": "Three-station comparison moved ahead of the story; checked for clipping, overflow and image presence."
     },
     {
       "deliverable": "A3-EN",
       "page": "p04",
-      "status": "PASS",
-      "notes": "Checked for missing glyphs, clipping, overflow, blank content, captions and image presence."
+      "status": "FIXED",
+      "notes": "City-question story moved to the fourth reading position; checked for clipping, overflow and image presence."
     },
     {
       "deliverable": "A3-EN",
@@ -318,7 +318,7 @@
       "deliverable": "A0-EN",
       "page": "p01",
       "status": "FIXED",
-      "notes": "Concept-image notice or 14/90-day distinction corrected and rechecked."
+      "notes": "Selected hero line and rebuilt overall figure checked at full board scale."
     },
     {
       "deliverable": "A0-EN",
@@ -349,7 +349,7 @@
     {
       "deliverable": "proposal-zh-html",
       "status": "FIXED",
-      "notes": "Offline CJK subset linked; 25/25 images resolve and have meaningful alt; no heading jumps, missing resources or replacement characters."
+      "notes": "Offline CJK subset linked; opening hierarchy simplified; 25/25 images resolve and have meaningful alt; no heading jumps, missing resources or replacement characters."
     },
     {
       "deliverable": "proposal-en-html",
@@ -359,12 +359,12 @@
     {
       "deliverable": "visual-zh-html",
       "status": "FIXED",
-      "notes": "Offline CJK subset linked; four visible concept notices; 21/21 images resolve and have meaningful alt."
+      "notes": "Hero language and three station actions checked; offline CJK subset linked; four visible concept notices; 21/21 images resolve and have meaningful alt."
     },
     {
       "deliverable": "visual-en-html",
       "status": "FIXED",
-      "notes": "Missing aerial hero path corrected; four visible English concept notices; 21/21 images resolve."
+      "notes": "English hero and station actions are substantively equivalent; four visible English concept notices; 21/21 images resolve."
     }
   ],
   "accessibility": [

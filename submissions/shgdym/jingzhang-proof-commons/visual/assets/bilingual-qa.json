@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-08-24T10:10:53+08:00",
-  "baseline_git_sha": "a0169bfa22370e65b65b4fb9c0988b31333bb65f",
+  "reviewed_at": "2026-08-24T14:52:00+08:00",
+  "baseline_git_sha": "b65f7f4ad12cd8a50d5854e8846b0de7b9e8bed4",
   "method": "Manual substantive section-by-section comparison by the declared AI agent under participant direction; not an automatic file mapping.",
   "status_vocabulary": [
     "PASS",
@@ -10,8 +10,8 @@
   ],
   "summary": {
     "items": 15,
-    "pass": 10,
-    "fixed": 5,
+    "pass": 8,
+    "fixed": 7,
     "open": 0
   },
   "items": [
@@ -19,15 +19,15 @@
       "id": "title",
       "zh_section": "标题与副标题",
       "en_section": "Title and subtitle",
-      "status": "PASS",
-      "notes": "X京张 / X JINGZHANG and the co-development claim are equivalent."
+      "status": "FIXED",
+      "notes": "The selected hero line '让一座城参与AI的完成' and 'Let a city take part in making AI' retain the same active city-scale claim."
     },
     {
       "id": "summary",
       "zh_section": "首层摘要与城市价值",
       "en_section": "Opening summary and urban value",
-      "status": "PASS",
-      "notes": "Both versions lead with the city as an AI development environment."
+      "status": "FIXED",
+      "notes": "Both versions now lead with why Jing-Zhang is necessary, followed by the same three human-action station roles."
     },
     {
       "id": "core_claim",
