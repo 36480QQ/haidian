@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>京张信任线｜Jing-Zhang Trust Line — 城市设计展板</title>
+<style>
+  :root { --ink: #1c2b2b; --accent: #145a5a; --accent2: #c0392b; --paper: #f7f5f0; --card: #ffffff; --muted: #6b7474; --line: #d8dedc; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Helvetica Neue", Arial, sans-serif;
+         background: var(--paper); color: var(--ink); line-height: 1.65; }
+  header { background: var(--accent); color: #fff; padding: 2.2rem 1.5rem 1.8rem; text-align: center; }
+  header h1 { font-size: 2rem; letter-spacing: 0.06em; }
+  header .sub { margin-top: 0.4rem; font-size: 0.95rem; color: #cfe8e2; }
+  header .mainline { margin-top: 0.8rem; font-size: 1.05rem; color: #ffd9a0; }
+  main { max-width: 1080px; margin: 0 auto; padding: 1.2rem; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+             margin: 1.2rem 0; padding: 1.2rem 1.2rem 1.5rem; }
+  h2 { font-size: 1.25rem; color: var(--accent); border-left: 4px solid var(--accent); padding-left: 0.6rem; margin-bottom: 1rem; }
+  img.full { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+  figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.45rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.8rem; }
+  .metric-card { border: 1px solid var(--line); border-radius: 8px; padding: 0.9rem; text-align: center; background: #f4f8f4; }
+  .metric-card .val { font-size: 1.7rem; font-weight: 700; color: var(--accent); }
+  .metric-card .name { font-family: monospace; font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+  .metric-card .desc { font-size: 0.78rem; color: #555; margin-top: 0.3rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .chip { background: #eef3f8; border: 1px solid #bcd0e8; color: #33507a; border-radius: 999px;
+           padding: 0.28rem 0.8rem; font-size: 0.85rem; }
+  ul { padding-left: 1.3rem; } li { margin: 0.3rem 0; font-size: 0.92rem; }
+  .note { background: #fdf6ec; border: 1px solid #ecd9b4; border-radius: 8px; padding: 0.9rem 1rem; font-size: 0.88rem; color: #7a5b22; }
+  .check { display: inline-block; background: #eaf7ea; color: #2e7d32; border: 1px solid #b5dcb5; border-radius: 999px; padding: 0.25rem 0.9rem; font-size: 0.85rem; }
+  footer { text-align: center; padding: 1.6rem; font-size: 0.8rem; color: var(--muted); }
+  @media (max-width: 640px) { header h1 { font-size: 1.5rem; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>京张信任线｜Jing-Zhang Trust Line</h1>
+  <div class="sub">百年京张AI创新带城市设计开源征集 · AI治理与可信度量主线</div>
+  <div class="mainline">一轴·三场·两翼·十二站</div>
+</header>
+<main>
+  <div class="note">⚠ 本方案全部边界为 provisional 临时约束（官方精确红线未公开）；不可作官方红线、审批依据或精确面积依据。官方 polygon 发布后全量复算。</div>
+
+  <section id="overview">
+    <h2>总览地图</h2>
+    <img class="full" src="../assets/figures/site-overview.png" alt="总体概念：信任主轴串联三场">
+    <figcaption>总体概念：信任主轴串联三场 — 信任市场场(南)→信任生活场(中)→信任技术场(北)；两翼：中关村科技服务翼/小月河场景赋能翼</figcaption>
+  </section>
+
+  <section id="scope">
+    <h2>三层范围</h2>
+    <ul>
+      <li>统筹研究范围：约 43.6 km²（北五环—京藏高速—西直门外大街—万泉河路，公告文字四至）</li>
+      <li>总体设计范围：约 11.4 km²（公告面积），提交几何复算 11.41 km²（provisional）</li>
+      <li>重点区域范围：约 368.4 ha —— 众智园 192.1 ha / AI原点社区 104.3 ha / 大钟寺 72.0 ha</li>
+    </ul>
+  </section>
+
+  <section id="keyareas">
+    <h2>重点区域</h2>
+    <img class="full" src="../assets/figures/key-areas.png" alt="三处重点区信任职能分工">
+    <figcaption>三处重点区信任职能分工 — 众智园=信任的生产 · AI原点社区=信任的生活化 · 大钟寺=信任的交易</figcaption>
+  </section>
+
+  <section id="landuse">
+    <h2>用地分区</h2>
+    <img class="full" src="../assets/figures/land-use-structure.png" alt="用地结构与三层传导">
+    <figcaption>用地结构与三层传导 — 66 个用地分区无缝满铺临时边界（EPSG:4548 复算）</figcaption>
+  </section>
+
+  <section id="mobility">
+    <h2>交通慢行与蓝绿公共空间</h2>
+    <img class="full" src="../assets/figures/mobility-bluegreen.png" alt="慢行与蓝绿公共空间系统">
+    <figcaption>慢行与蓝绿公共空间系统</figcaption>
+  </section>
+
+  <section id="buildings">
+    <h2>建筑（概念体量，非现状）</h2>
+    <ul>
+      <li>80 处概念建筑基底集中在三处重点区（confidence=low，非现状测绘，待现状建筑数据）</li>
+      <li>建筑基底面积 0.137 km²（设计模型值）</li>
+      <li>容积率 / 建筑高度 / 建筑密度：待正式控规条件（unknown，不伪造确定性）</li>
+    </ul>
+  </section>
+
+  <section id="renewal">
+    <h2>更新项目与分期</h2>
+    <ul>
+      <li>近期（2026-2028）：大钟寺信任市场场 — 检测认证窗口 + 可信消费街区</li>
+      <li>中期（2028-2031）：AI原点社区信任生活场 — 可信服务街区 + 人工接管站体系</li>
+      <li>远期（2031-2035）：众智园信任技术场 — 开源安全实验室 + 全球AI治理对话中心</li>
+      <li>政策机制（概念建议）：信任凭证机制 · 测试场开放 · 运行证据季度公开</li>
+    </ul>
+  </section>
+
+  <section id="scenes">
+    <h2>AI 场景</h2>
+    <div class="chips"><span class="chip">S1 京张信任起源站</span><span class="chip">S2 信任市场广场</span><span class="chip">S3 智能消费可信站</span><span class="chip">S4 生成式AI合规体验站</span><span class="chip">S5 人工接管站</span><span class="chip">S6 AI法律咨询舱</span><span class="chip">S7 适老适障信任站</span><span class="chip">S8 可信数据信托站</span><span class="chip">S9 算法审计开放站</span><span class="chip">S10 全球AI治理对话中心</span><span class="chip">S11 开发者誓约广场</span><span class="chip">S12 智能体贡献荣誉墙</span></div>
+    <p style="font-size:0.88rem;color:#555;margin-top:0.8rem;">
+      12 张场景卡（含 3 张产业测试验证场景）+ 5 类用户画像，每卡绑定空间位置、服务对象、运行数据、隐私边界、人工复核、运营主体与风险。
+    </p>
+  </section>
+
+  <section id="metrics">
+    <h2>核心指标</h2>
+    <div class="grid">
+      <div class="metric-card">
+        <div class="val"><span data-metric="site_area_sqm" data-value="11412825">11.41 km²</span></div>
+        <div class="name">site_area_sqm</div>
+        <div class="desc">总体设计范围（provisional 复算）</div>
+      </div>
+      <div class="metric-card">
+        <div class="val"><span data-metric="green_ratio" data-value="0.194948">19.5%</span></div>
+        <div class="name">green_ratio</div>
+        <div class="desc">绿地率 = green_space / site_area</div>
+      </div>
+      <div class="metric-card">
+        <div class="val"><span data-metric="public_space_ratio" data-value="0.114132">11.4%</span></div>
+        <div class="name">public_space_ratio</div>
+        <div class="desc">公共空间率 = public_space / site_area</div>
+      </div>
+    </div>
+    <img class="full" style="margin-top:1rem;" src="../assets/figures/metrics-evidence.png" alt="指标复算与证据链">
+  </section>
+
+  <section id="tasks">
+    <h2>任务覆盖</h2>
+    <ul><li><strong>agent.1</strong> — 总体概念与命名/Logo</li><li><strong>agent.2</strong> — 创新生态与5-8案例</li><li><strong>agent.3</strong> — 场景卡/画像/测试场景</li><li><strong>agent.4</strong> — 公共空间与朝圣地标</li><li><strong>agent.5</strong> — 文化叙事</li><li><strong>agent.6</strong> — 活动体系与长期运营</li><li><strong>1.3/1.4</strong> — 公告目标与三层范围</li><li><strong>1.5</strong> — 公告设计任务</li></ul>
+    <p style="font-size:0.86rem;color:#555;">22 项合规任务（公告 1.3/1.4/1.5 + agent.1–agent.6）全部在 compliance_matrix.json 中逐项映射证据。</p>
+  </section>
+
+  <section id="selfcheck">
+    <h2>自检状态</h2>
+    <p><span class="check">● self_check.json：四门校验待终审运行（确定性格式 / 空间复核 / 可视化 / 专业证据链）</span></p>
+  </section>
+
+  <section id="sources">
+    <h2>来源</h2>
+    <ul>
+      <li>官方公告（北京市规划和自然资源委员会海淀分局，2026-05-09）</li>
+      <li>面向智能体开源征集任务书摘录（用户提供清权）</li>
+      <li>provisional_boundaries.geojson（维护者按公告文字四至推定，2026-08-07 复核）</li>
+      <li>完整来源、许可与限制见 sources.json 与 data/source_registry.json</li>
+    </ul>
+  </section>
+
+  <section id="assumptions">
+    <h2>假设与限制</h2>
+    <ul>
+      <li>官方精确红线未公开：全部边界为 provisional（official_boundary=false），官方 polygon 发布后全量复算</li>
+      <li>控规条件缺失：容积率/限高/密度 unknown，写入复算触发条件</li>
+      <li>概念体量与分期为设计模型值，非现状测绘、非法定结论</li>
+      <li>信任站/地标/活动均为概念建议，供专业团队深化研究</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  Agent: infinite · GitHub: spechenxin · 2026-08 · 本页面为离线静态展示页，不加载任何远程资源
+</footer>
+</body>
+</html>

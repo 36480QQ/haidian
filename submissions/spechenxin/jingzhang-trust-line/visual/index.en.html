@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jing-Zhang Trust Line — Urban Design Board</title>
+<style>
+  :root { --ink: #1c2b2b; --accent: #145a5a; --accent2: #c0392b; --paper: #f7f5f0; --card: #ffffff; --muted: #6b7474; --line: #d8dedc; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Helvetica Neue", Arial, sans-serif;
+         background: var(--paper); color: var(--ink); line-height: 1.65; }
+  header { background: var(--accent); color: #fff; padding: 2.2rem 1.5rem 1.8rem; text-align: center; }
+  header h1 { font-size: 2rem; letter-spacing: 0.06em; }
+  header .sub { margin-top: 0.4rem; font-size: 0.95rem; color: #cfe8e2; }
+  header .mainline { margin-top: 0.8rem; font-size: 1.05rem; color: #ffd9a0; }
+  main { max-width: 1080px; margin: 0 auto; padding: 1.2rem; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+             margin: 1.2rem 0; padding: 1.2rem 1.2rem 1.5rem; }
+  h2 { font-size: 1.25rem; color: var(--accent); border-left: 4px solid var(--accent); padding-left: 0.6rem; margin-bottom: 1rem; }
+  img.full { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+  figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.45rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.8rem; }
+  .metric-card { border: 1px solid var(--line); border-radius: 8px; padding: 0.9rem; text-align: center; background: #f4f8f4; }
+  .metric-card .val { font-size: 1.7rem; font-weight: 700; color: var(--accent); }
+  .metric-card .name { font-family: monospace; font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+  .metric-card .desc { font-size: 0.78rem; color: #555; margin-top: 0.3rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .chip { background: #eef3f8; border: 1px solid #bcd0e8; color: #33507a; border-radius: 999px;
+           padding: 0.28rem 0.8rem; font-size: 0.85rem; }
+  ul { padding-left: 1.3rem; } li { margin: 0.3rem 0; font-size: 0.92rem; }
+  .note { background: #fdf6ec; border: 1px solid #ecd9b4; border-radius: 8px; padding: 0.9rem 1rem; font-size: 0.88rem; color: #7a5b22; }
+  .check { display: inline-block; background: #eaf7ea; color: #2e7d32; border: 1px solid #b5dcb5; border-radius: 999px; padding: 0.25rem 0.9rem; font-size: 0.85rem; }
+  footer { text-align: center; padding: 1.6rem; font-size: 0.8rem; color: var(--muted); }
+  @media (max-width: 640px) { header h1 { font-size: 1.5rem; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Jing-Zhang Trust Line</h1>
+  <div class="sub">Centennial Jing-Zhang AI Innovation Belt Open Call · AI Governance & Trusted Measurement</div>
+  <div class="mainline">One Mainline · Three Trust Fields · Two Wings · Twelve Stations</div>
+</header>
+<main>
+  <div class="note">⚠ All boundaries are provisional constraints (no official precise redline is public); not an official redline, approval basis or precise-area basis. Full recalculation once official polygons are released.</div>
+
+  <section id="overview">
+    <h2>Overview Map</h2>
+    <img class="full" src="../assets/figures/site-overview.en.png" alt="Overall concept: Trust Mainline linking three fields">
+    <figcaption>Overall concept: Trust Mainline linking three fields — Trust Market (south) → Trust Living (middle) → Trust Tech (north); wings: ZGC tech-service wing / Xiaoyuehe scenario wing</figcaption>
+  </section>
+
+  <section id="scope">
+    <h2>Three-Level Scope</h2>
+    <ul>
+      <li>Coordinated research area: ~43.6 km² (text four-boundaries per official announcement)</li>
+      <li>Overall design area: ~11.4 km² (announced), submitted geometry recomputes 11.41 km² (provisional)</li>
+      <li>Key areas: ~368.4 ha — Zhongzhiyuan 192.1 / Origin Community 104.3 / Dazhongsi 72.0 ha</li>
+    </ul>
+  </section>
+
+  <section id="keyareas">
+    <h2>Key Areas</h2>
+    <img class="full" src="../assets/figures/key-areas.en.png" alt="Three key areas: differentiated trust functions">
+    <figcaption>Three key areas: differentiated trust functions — Zhongzhiyuan = production of trust · Origin Community = daily trust · Dazhongsi = trade in trust</figcaption>
+  </section>
+
+  <section id="landuse">
+    <h2>Land Use</h2>
+    <img class="full" src="../assets/figures/land-use-structure.en.png" alt="Land-use structure and three-level conduction">
+    <figcaption>Land-use structure and three-level conduction — 66 land-use parcels fully covering the provisional boundary (EPSG:4548)</figcaption>
+  </section>
+
+  <section id="mobility">
+    <h2>Mobility & Blue-Green</h2>
+    <img class="full" src="../assets/figures/mobility-bluegreen.en.png" alt="Slow mobility and blue-green public space">
+    <figcaption>Slow mobility and blue-green public space</figcaption>
+  </section>
+
+  <section id="buildings">
+    <h2>Buildings (concept volumes, not existing conditions)</h2>
+    <ul>
+      <li>80 concept footprints concentrated in the three key areas (confidence=low; not surveyed conditions)</li>
+      <li>Footprint area 0.137 km² (design-model value)</li>
+      <li>FAR / height / density: pending official controls (unknown; no fabricated certainty)</li>
+    </ul>
+  </section>
+
+  <section id="renewal">
+    <h2>Renewal projects and phasing</h2>
+    <ul>
+      <li>Near (2026-2028): Dazhongsi Trust Market Field</li>
+      <li>Mid (2028-2031): Origin Community Trust Living Field</li>
+      <li>Long (2031-2035): Zhongzhiyuan Trust Tech Field</li>
+      <li>Policy (conceptual): trust credentials · open testfields · quarterly evidence disclosure</li>
+    </ul>
+  </section>
+
+  <section id="scenes">
+    <h2>AI Scenarios</h2>
+    <div class="chips"><span class="chip">S1 Origin Station</span><span class="chip">S2 Trust Market Plaza</span><span class="chip">S3 Fair Consumption Station</span><span class="chip">S4 GenAI Compliance Experience</span><span class="chip">S5 Human-Takeover Station</span><span class="chip">S6 AI Legal Advisory Cabin</span><span class="chip">S7 Accessible Trust Station</span><span class="chip">S8 Data Trust Station</span><span class="chip">S9 Algorithm Audit Open Lab</span><span class="chip">S10 Global AI Governance Dialogue</span><span class="chip">S11 Developer Oath Plaza</span><span class="chip">S12 Agent Honor Wall</span></div>
+    <p style="font-size:0.88rem;color:#555;margin-top:0.8rem;">
+      12 scenario cards (3 industry test scenarios) + 5 personas; each card binds location, users, runtime data, privacy boundary, human review, operator and risk.
+    </p>
+  </section>
+
+  <section id="metrics">
+    <h2>Core Metrics</h2>
+    <div class="grid">
+      <div class="metric-card">
+        <div class="val"><span data-metric="site_area_sqm" data-value="11412825">11.41 km²</span></div>
+        <div class="name">site_area_sqm</div>
+        <div class="desc">Overall design area (provisional recompute)</div>
+      </div>
+      <div class="metric-card">
+        <div class="val"><span data-metric="green_ratio" data-value="0.194948">19.5%</span></div>
+        <div class="name">green_ratio</div>
+        <div class="desc">Green ratio = green_space / site_area</div>
+      </div>
+      <div class="metric-card">
+        <div class="val"><span data-metric="public_space_ratio" data-value="0.114132">11.4%</span></div>
+        <div class="name">public_space_ratio</div>
+        <div class="desc">Public-space ratio = public_space / site_area</div>
+      </div>
+    </div>
+    <img class="full" style="margin-top:1rem;" src="../assets/figures/metrics-evidence.en.png" alt="Metrics recalculation and evidence chain">
+  </section>
+
+  <section id="tasks">
+    <h2>Task Coverage</h2>
+    <ul><li><strong>agent.1</strong> — Concept & naming/Logo</li><li><strong>agent.2</strong> — Ecosystem & 5-8 cases</li><li><strong>agent.3</strong> — Scenario cards/personas/tests</li><li><strong>agent.4</strong> — Public space & landmarks</li><li><strong>agent.5</strong> — Cultural narrative</li><li><strong>agent.6</strong> — Events & long-term operation</li><li><strong>1.3/1.4</strong> — Announcement goals & scopes</li><li><strong>1.5</strong> — Announcement design tasks</li></ul>
+    <p style="font-size:0.86rem;color:#555;">All 22 compliance items (announcement 1.3/1.4/1.5 + agent.1–agent.6) mapped with evidence in compliance_matrix.json.</p>
+  </section>
+
+  <section id="selfcheck">
+    <h2>Self-Check Status</h2>
+    <p><span class="check">● self_check.json: four-gate validation to be finalized (format / spatial / visual / evidence)</span></p>
+  </section>
+
+  <section id="sources">
+    <h2>Sources</h2>
+    <ul>
+      <li>Official announcement (Haidian Branch, BCPNR, 2026-05-09)</li>
+      <li>Agent open-call taskbook excerpt (user-provided cleared)</li>
+      <li>provisional_boundaries.geojson (maintainer-derived from announcement text)</li>
+      <li>Full provenance in sources.json and data/source_registry.json</li>
+    </ul>
+  </section>
+
+  <section id="assumptions">
+    <h2>Assumptions & Limits</h2>
+    <ul>
+      <li>No official precise redline public: all boundaries provisional; full recalculation when released</li>
+      <li>Regulatory controls missing: FAR/height/density unknown with recalculation triggers</li>
+      <li>Concept volumes and phasing are design-model values, not surveyed or statutory</li>
+      <li>Stations, landmarks and events are conceptual proposals for professional deepening</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  Agent: infinite · GitHub: spechenxin · 2026-08 · Offline static page, no remote resources
+</footer>
+</body>
+</html>
