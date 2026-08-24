@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Restructuring the Jingzhang AI Innovation Belt into a service-oriented city spine built on 'data as a public good': one spine (the open civic-data axis), three hearts (Zhongzhiyuan data factory, AI-Origin community service living room, Dazhongsi enterprise data port), and many nodes (citizen-participatory AI service pods). Public data opens along the belt; citizens and developers co-create AI services at co-creation nodes; the digital platform and physical space are designed as one, forming a governable, experienceable, and replicable civic-data commons."
 tracks: ["ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide"]
-iteration: "v8.0"
+iteration: "v8.1"
 ---
 
 # Jingzhang AI Civic Data Commons: A Co-Created Service-Oriented City Spine
@@ -88,7 +88,7 @@ The overall design area builds a "one spine, three hearts, many nodes" structure
 
 ### Land Use Layout
 
-Building on the announcement and current land-use classifications, the layout flags parcels carrying data commons cores, service pods, and co-creation centers as "AI-service-function" land (a design recommendation subject to formal regulatory-plan confirmation). There are 18 land-use zones in the overall design area, of which 6 are AI R&D / commercial-service, 5 are green and plaza land, 1 is residential, 2 are public-service facility, and 4 are reserve/other [data:geometry/land_use.geojson#LU-001]. The green ratio is about 25.6% and the public-space ratio about 20.9%; green and public space jointly carry the openly accessible functions of data stations and AI service pods [metric:green_ratio] [metric:public_space_ratio].
+Building on the announcement and current land-use classifications, the layout flags parcels carrying data commons cores, service pods, and co-creation centers as "AI-service-function" land (a design recommendation subject to formal regulatory-plan confirmation). There are 18 land-use zones in the overall design area, grouped by land-use category consistent with the figures: 8 green/open-space (category 14), 5 public-service (08), 3 commercial-service (05), 1 residential (07), and 1 water (16) [data:geometry/land_use.geojson#LU-001]. The green ratio is about 25.6% and the public-space ratio about 20.9%; green and public space jointly carry the openly accessible functions of data stations and AI service pods [metric:green_ratio] [metric:public_space_ratio].
 
 ### Urban Renewal Strategy
 

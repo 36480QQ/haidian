@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把京张AI创新带重构为'数据即公共产品'的服务型城市脊梁：一脊（开放数据公共主轴）、三心（众智园数据工厂、AI原点社区服务客厅、大钟寺企业数据港）、多点（市民可参与的AI服务舱）。公共数据沿带开放，市民与开发者在共创节点上开发AI服务，数字平台与物理空间一体设计，形成可治理、可体验、可推广的数据公共带。"
 tracks: ["ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "ai-cultural-guide"]
-iteration: "v8.0"
+iteration: "v8.1"
 ---
 
 # 京张AI数据公共带：人人共创的AI服务型城市脊梁
@@ -88,7 +88,7 @@ iteration: "v8.0"
 
 ### 用地布局
 
-用地布局在公告和现状用地分类基础上，把承载数据共用心、服务舱和共创中心的地块标注为"AI服务功能"用地（设计建议，须以正式控规确认为前提）。总体设计范围内用地共18个分区，其中AI研发创新与商业服务类6个、绿地与广场用地5个、居住用地1个、公共服务设施用地2个、留白及其他4个 [data:geometry/land_use.geojson#LU-001]。绿地率约25.6%，公共空间率约20.9%，绿地与公共空间共同承载数据驿站和AI服务舱的开放可达功能 [metric:green_ratio] [metric:public_space_ratio]。
+用地布局在公告和现状用地分类基础上，把承载数据共用心、服务舱和共创中心的地块标注为"AI服务功能"用地（设计建议，须以正式控规确认为前提）。总体设计范围内用地共18个分区，按用地大类口径（与图件一致）：绿地与开敞空间（14类）8个、公共服务设施（08类）5个、商业服务（05类）3个、居住（07类）1个、水域（16类）1个 [data:geometry/land_use.geojson#LU-001]。绿地率约25.6%，公共空间率约20.9%，绿地与公共空间共同承载数据驿站和AI服务舱的开放可达功能 [metric:green_ratio] [metric:public_space_ratio]。
 
 ### 城市更新策略
 
