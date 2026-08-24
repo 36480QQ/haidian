@@ -277,7 +277,7 @@ def main() -> int:
         rel = item.get("path")
         if rel and rel != "manifest.json" and str(rel) in hashes:
             item["sha256"] = hashes[str(rel)]
-    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"Review-ready package: {root}")
     print(
         "Run self_check_submission.py --mark-self-checked --json now; "
