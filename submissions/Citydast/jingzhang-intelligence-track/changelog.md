@@ -78,3 +78,36 @@
   - 公共利益可测试化：矩阵新增可测试指标列 + 四承诺（无障碍指标/传统渠道保留/参与式设计/投诉补救 48h）
   - 公共空间组件库目录化（agent.4）：5 类组件×规格×应用节点 + Logo 三型定稿候选（A展线标/B智轨环/C百年钢印）
 - proposal.en.md 大模型翻译同步；validate/self_check PASS
+
+## v0.6 - 2026-08-24
+
+- 针对 v0.5 评审（81 分，request-changes）五项硬骨头整改：
+  - 中文字体栈：visual/index.html 的 4 处 svg font-family 由 ui-sans-serif 改为
+    PingFang SC/Microsoft YaHei/Noto Sans CJK SC 全栈；CSS 兜底 svg text 字体
+  - 图片排版：land-use-structure 底部"用地分区"信息并入 figure_shell note 参数（消除重叠）；
+    key-areas 警示文字拆两行（消除右侧截断）；A0 板 1 标题拆两行（消除右侧裁切），
+    命名/Logo 文字下移避开大钟寺色块；A0 板 2 同步拆两行、卡片下移
+  - 视觉页来源状态：visual/index.html 与 en.html 9 KM CORRIDOR 区域顶部新增 notebox，
+    显式标注 3500 亿/2000 家/30+ 平台/具体企业/9 公里最高 AI 浓度等数据为
+    review_status=needs_review、Issue #3905 申请中央登记
+  - 全球案例证据表：proposal.md/EN 新增 7 案逐案表（来源等级/许可边界/可迁移机制/
+    场地适配/不可类推），附使用规则（概念参考、不可独立核验为正式事实）
+  - Logo 定稿级原型：PIL 生成 assets/figures/logo-prototypes.png（3×3 网格，
+    A 展线标/B 智轨环/C 百年钢印 × 主版本含跨语言/小尺寸 16-72 px/浅中深背景适配），
+    proposal.md/EN 补"原型测试证据+建议规范+禁用场景"段落；visual/index.html 与
+    EN 末尾新增 LOGO PROTOTYPES 区块引用 PNG 证据图
+- KPI 量化+责任主体真实化：KPI 表后补量化目标+真实授权对应表（贯通率/服务点/
+  转化项目/无障碍覆盖率/PUE/活动场次/开发者数/国际触达国数等均给量化值）
+- 同步修复 build_jzit_visuals.py 的 SUBMISSION 路径（workbuddy-agent → Citydast）
+  与三处布局 bug
+- proposal.en.md 大模型翻译同步
+- validate/self_check PASS（formal-review-ready）
+- 不提交、不推送；待与用户沟通后定夺
+
+### v0.6 增项 (sprint 2) - 2026-08-24
+- 9 公里数据措辞微调：proposal/EN 中"AI 浓度最高的 9 公里"改"约 9 公里（公开报道口径，待官方数据校准）"
+- Logo 原型图重画（H=1300 增大画布）：建议规范文字移出第三行 panel 之外
+- A0 板 2 逐字段排版复核：AI 场景行 30px→26px + 缩短文字，消除右侧裁切；A3/A0 重生成
+- 新增「智能体沙盒安全测试机制」段落（proposal/EN）：5 项机制（分级/安全评估/人工复核/退出条件/表述边界）
+- risk.json 扩展第 9 维「AI 治理全球话语权」(score 3)：proposal 风险章节 + visual 雷达色块同步
+- 9 项 detailed required repairs checklist 比对报告：F:\workbuddy\城市设计竞赛\workspace\checklist_v06.md

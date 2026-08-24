@@ -6,7 +6,7 @@
 <title>京张智轨 Jing-Zhang Intelligence Track · 可视化总览</title>
 <style>
 :root{--ink:#172033;--muted:#5b6779;--paper:#ffffff;--soft:#f6f8fb;--line:#d7dee8;--navy:#0a1226;--gold:#c79838;--ai:#4f46e5;--park:#15803d;--work:#b45309;--civic:#b42318;--blue:#0f7490;--shadow:0 14px 34px rgba(22,32,51,.09);--r:10px}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",Arial,sans-serif;background:#eef2f6;color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}svg text{font-family:PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",Arial,sans-serif;background:#eef2f6;color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1280px;margin:auto}
 header.hero{position:relative;background:radial-gradient(ellipse at 30% 30%,#1b2748 0%,#0a1226 60%,#060a16 100%);color:#fff;overflow:hidden;border-bottom:5px solid var(--gold)}
 .hero-svg{position:absolute;inset:0;width:100%;height:100%;opacity:.85}
@@ -129,7 +129,7 @@ footer.foot{text-align:center;color:var(--muted);font-size:12px;padding:20px 0 3
 <rect width="1440" height="480" fill="url(#bglow2)"/>
 <!-- 9 公里廊道标尺 -->
 <line x1="80" y1="420" x2="1360" y2="420" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 4" opacity=".5"/>
-<g font-family="ui-sans-serif" font-size="10" fill="#94a3b8">
+<g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="10" fill="#94a3b8">
 <text x="80" y="440">9 km 创新廊道 · 西</text>
 <text x="1280" y="440" text-anchor="end">东 · 9 km</text>
 </g>
@@ -143,13 +143,13 @@ footer.foot{text-align:center;color:var(--muted);font-size:12px;padding:20px 0 3
 <g>
 <circle cx="320" cy="240" r="6" fill="#a78bfa"/>
 <circle cx="320" cy="240" r="14" fill="none" stroke="#a78bfa" stroke-width="1" opacity=".4"/>
-<text x="320" y="218" text-anchor="middle" font-family="ui-sans-serif" font-size="11" fill="#c8b8ff" font-weight="600">众智园</text>
+<text x="320" y="218" text-anchor="middle" font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="11" fill="#c8b8ff" font-weight="600">众智园</text>
 <circle cx="720" cy="330" r="6" fill="#fcd34d"/>
 <circle cx="720" cy="330" r="14" fill="none" stroke="#fcd34d" stroke-width="1" opacity=".4"/>
-<text x="720" y="308" text-anchor="middle" font-family="ui-sans-serif" font-size="11" fill="#fde68a" font-weight="600">AI 原点</text>
+<text x="720" y="308" text-anchor="middle" font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="11" fill="#fde68a" font-weight="600">AI 原点</text>
 <circle cx="1120" cy="265" r="6" fill="#5eead4"/>
 <circle cx="1120" cy="265" r="14" fill="none" stroke="#5eead4" stroke-width="1" opacity=".4"/>
-<text x="1120" y="243" text-anchor="middle" font-family="ui-sans-serif" font-size="11" fill="#99f6e4" font-weight="600">大钟寺</text>
+<text x="1120" y="243" text-anchor="middle" font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="11" fill="#99f6e4" font-weight="600">大钟寺</text>
 </g>
 <!-- 城市剪影（简化天际线） -->
 <g opacity=".18" fill="#94a3b8">
@@ -251,6 +251,7 @@ footer.foot{text-align:center;color:var(--muted);font-size:12px;padding:20px 0 3
 </div>
 <div>
 <div class="section-eyebrow">9 KM CORRIDOR · 廊道能级</div>
+<div class="notebox"><strong>数据状态提示：</strong>本页 9 公里廊道所列 AI 核心产业规模 3500 亿、AI 企业约 2000 家、30+ 高能级平台/校院所、具身智能产业园企业清单、抖音/智谱/月之暗面/腾讯等具体企业名称，以及「AI 浓度最高的 9 公里廊道」叙事，所引来源（ZGC-FORUM-2026 等）在 <code>sources.json</code> 中标注为 <code>review_status: needs_review</code>，仅作背景与概念支撑，<strong>不作正式事实依据</strong>；已通过 <code>[source-registry] Issue #3905</code> 申请中央正式登记（维护者复核前保持 needs_review 边界）。</div>
 <div class="metric"><div class="metric-row"><span class="lbl">AI 核心产业规模</span><span class="val">3500<small style="font-size:12px;color:var(--muted);font-weight:400"> 亿</small></span></div><div class="bar"><i style="width:30%"></i></div><div class="meta">占全国约 30% · 2026 中关村论坛官方口径</div></div>
 <div class="metric" style="margin-top:10px"><div class="metric-row"><span class="lbl">AI 企业（沿线）</span><span class="val">≈ 2000<small style="font-size:12px;color:var(--muted);font-weight:400"> 家</small></span></div><div class="bar"><i style="width:24%"></i></div><div class="meta">含抖音、智谱、月之暗面、腾讯等</div></div>
 <div class="metric" style="margin-top:10px"><div class="metric-row"><span class="lbl">高能级平台 / 校院所</span><span class="val">30+</span></div><div class="bar"><i style="width:35%"></i></div><div class="meta">清华 / 北大 / 中科院等</div></div>
@@ -518,11 +519,11 @@ footer.foot{text-align:center;color:var(--muted);font-size:12px;padding:20px 0 3
 <span><i class="sw" style="background:#4f46e5"></i>运维成本 · 3（政企协同）</span>
 <span><i class="sw" style="background:#4f46e5"></i>政策不确定 · 3（来源登记）</span>
 <span><i class="sw" style="background:#4f46e5"></i>空间争议 · 2（official 后复算）</span>
-<span><i class="sw" style="background:#4f46e5"></i>技术成熟度 · 3（测试验证）</span>
+<span><i class="sw" style="background:#4f46e5"></i>技术成熟度 · 3（测试验证；含 AI 治理话语权 additional_focus，v0.6 增项）</span>
 <span><i class="sw" style="background:#4f46e5"></i>公平包容 · 2（公共利益矩阵）</span>
 </div>
 </div>
-<div class="notebox"><strong>分数解读：</strong>1=极低 2=较低 3=中等 4=较高 5=极高。本方案风险整体落在 2–3 区间，多数维度已具备明确缓解路径；公平包容与公众接受为 2（优势项），靠公共利益矩阵 + 遗址公园二期实践支撑。</div>
+<div class="notebox"><strong>分数解读：</strong>1=极低 2=较低 3=中等 4=较高 5=极高。本方案风险整体落在 2–3 区间，多数维度已具备明确缓解路径；公平包容与公众接受为 2（优势项），靠公共利益矩阵 + 遗址公园二期实践支撑。v0.6 在 technology_maturity 维度下增加 AI 治理全球话语权 additional_focus（score 3），落实为安全治理沙盒、标准制定工作坊与模型评测公开赛等可复核节点（v0.5 原计划为独立第 9 维，因 schema 上限 8 维，合并入 technology_maturity）。</div>
 </div>
 </section>
 <!-- 任务覆盖 -->
@@ -540,6 +541,12 @@ footer.foot{text-align:center;color:var(--muted);font-size:12px;padding:20px 0 3
 <div class="card"><h3><span class="ic">律</span>假设</h3><p>待补控规、道路红线、权属、市政、文保与工程条件列于 assumptions.json；风险矩阵见 risk.json（v0.3）。</p><div class="meta-line">assumptions.json + risk.json</div></div>
 <div class="card"><h3><span class="ic">奖</span>可转化性</h3><p>命名、Logo、场景卡与年度活动体系可被专业团队、运营团队、传播团队继续深化；KPI 提供可量化的监测起点。</p><div class="meta-line">v0.3 实施路径 KPI · 6 项目</div></div>
 </div>
+</div>
+</section>
+<section class="sheet">
+<div class="sheet-head"><div><div class="section-eyebrow">LOGO PROTOTYPES · 品牌定稿原型</div><h2>三型 Logo（A 展线标 / B 智轨环 / C 百年钢印）× 小尺寸识别 / 跨语言一致性 / 复杂背景适配</h2><p>评审要求"可比较的定稿级标志原型"——下方 PNG 证据图以 3×3 网格呈现三型在三种测试条件下的可比较原型：主版本含中英双语及 JZIT 缩写（跨语言一致）、小尺寸 16/24/48/72 px 同屏对比（最小尺寸可辨识）、浅底/中灰/深底三态（反白与单色版在深色底上可读）。规范要点：最小尺寸 16 px；安全距离 ≥ 字号 1/4；色板限定轨道钢青灰/创新靛蓝/百年铜金；禁用变形/低对比/未授权色。正式定稿前须完成字体、图形与商标清权。</p></div><span class="tag">logo-prototypes.png</span></div>
+<div class="sheet-body">
+<img src="assets/figures/logo-prototypes.png" alt="京张智轨 Logo 定稿候选原型测试 — A 展线标 / B 智轨环 / C 百年钢印" style="width:100%;height:auto;border-radius:8px;background:#f7f9fc" loading="lazy">
 </div>
 </section>
 </main>
