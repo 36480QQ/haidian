@@ -5,6 +5,7 @@
 - 按最新版国土空间用途代码表，将智能体产业与服务用地从旧代码 `05` 勘误为商业服务业用地 `09`，同步中英文正文与 GeoJSON。
 - 用最新版仓库渲染器重建中英文报告，英文证据标签改用 `Source`、`Standard`、`Depth`、`Spatial data` 与 `Metric`。
 - 将已有赛博朋克未来主义 hero 登记为 gallery 自定义封面，沿用原始生成来源、权利说明与概念表达边界。
+- 为双语 HTML 嵌入自包含 Noto Sans SC WOFF2 CSS 与 OFL 1.1 文本，中文报告和 visual 在无系统 CJK 字体的离线环境中保持可读。
 
 ## v1.2 visible-evidence update - 2026-08-11
 
