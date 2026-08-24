@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "PRE-G1-JZ05-SCENE011-T02",
+  "status": "g0_no_go_professional_review_candidate",
+  "selection_reason_zh": "唯一同时具有来源边界、拒答、停止、人工交接、恢复和无 PII 合成回放的既有对象组合；选择不代表成熟度更高。",
+  "selection_reason_en": "The sole existing combination with source boundaries, refusal, stop, staffed handoff, recovery and PII-free synthetic replay; selection does not imply greater maturity.",
+  "existing_objects": {
+    "renewal_project": "JZ-05",
+    "scenario": "SCENE-011",
+    "protocol": "T-02",
+    "key_area": "PROV-KEY-003"
+  },
+  "current_evidence": {
+    "fixed_questions": 5,
+    "synthetic_replay_cases": 10,
+    "exact_decision_matches": 10,
+    "stop_recovery_branches": 4,
+    "network_calls": 0,
+    "model_calls": 0,
+    "real_service_interactions": 0,
+    "field_tests": 0
+  },
+  "blocking_handoff_items": [
+    "H01 accountable-party acceptance",
+    "H02 approved site, scope and time",
+    "H03 field ordinary-task and non-AI baseline",
+    "H04 data-security and prohibited-data review",
+    "H05 stop, staffed takeover and recovery acceptance",
+    "H06 accessibility and community parity co-test",
+    "H07 independent retest and signed GO/NO-GO decision"
+  ],
+  "decision_rule": "Any missing, rejected or expired H01-H07 item keeps the candidate at G0 / NO-GO.",
+  "non_equivalence": "Professional review candidate is not a pilot application, approval, procurement, deployment, field result, recovery duration or G1."
+}

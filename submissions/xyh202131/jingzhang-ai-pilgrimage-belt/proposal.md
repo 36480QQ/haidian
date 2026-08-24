@@ -5,10 +5,10 @@ language: "zh"
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-version: "56.0"
-iteration: "56.0"
-license: "COMMUNITY-DISPLAY-ONLY"
-summary: "海淀的创新密度，只有在普通人无需账户、设备或专业身份也能使用、质疑和退出时，才会成为公共能力。双轨京张以连续日常轨保障普通任务，以间歇、可停止的 G0 验证轨承载概念测试；三种不可互换原型连接证据、风险与专业交接。边界仍为临时约束，现实结果、批准和独立清权仍为 0。"
+version: "58.0"
+iteration: "58.0"
+license: "CC-BY-4.0"
+summary: "海淀的创新密度，只有在普通人无需账户、设备或专业身份也能使用、质疑和退出时，才会成为公共能力。双轨京张以连续日常轨保障普通任务，以间歇、可停止的 G0 验证轨承载概念测试；三种不可互换原型连接证据、风险与专业交接。边界仍为临时约束，现实结果、批准、现场执行和专业接责仍为 0。"
 tracks:
   - ai-traffic-walkability
   - jingzhang-heritage-narrative
@@ -26,8 +26,6 @@ scenarios:
 
 - 英文名称：TWIN-TRACK JING-ZHANG
 - 后台核验系统：JZ-AIOS（Jing-Zhang Auditable Innovation Operating System，京张可验证场景操作系统）
-
-![双轨京张终稿封面：连续日常轨、旁侧间歇验证轨与三座换轨场；合成概念展示，不是现场证据、确认视点、已建状态、批准方案、无障碍结果或居民反馈](assets/media/twin-track-cover.webp)
 
 ### 为什么是海淀：创新密度要成为公共能力
 
@@ -47,9 +45,9 @@ scenarios:
 
 ![一次空间裁决：众智园以平行绕行和旁置证明园拒绝验证穿路，原点社区以一街两院四撤回节点拒绝节点占街，大钟寺以四向通勤和路外人工服务拒绝服务占中；G0、临时关系、不按比例](assets/figures/key-areas.png)
 
-> **四态只改变验证叠层，不改变普通生活。** 普通状态先成立；验证仅在全部前置条件满足后出现；故障只停止并隔离验证对象，完整非 AI 路径、人工交接、撤回与申诉继续；恢复先还普通地面和同一基本任务，再复核，**不等于授权、批准、重启或 G1**。既有 48 秒动态只是展示节奏，不是现实恢复时长。
+> **四态只改变验证叠层，不改变普通生活。** 普通状态先成立；验证仅在全部前置条件满足后出现；故障只停止并隔离验证对象，完整非 AI 路径、人工交接、撤回与申诉继续；恢复先还普通地面和同一基本任务，再复核，**不等于授权、批准、重启或 G1**。本轮以静态四态图替代既有 48 秒动态；任何图示顺序都不是现实恢复时长。
 
-> **真实性边界。** 三处图面是基于临时几何的 G0 概念关系，不是现状测绘、精确总平、获批方案、无障碍结果或居民意见。官方红线、准确锚点、现实阈值、责任主体、现场服务、批准与独立复测仍为 0 或 `unknown`；权利状态仍为 `not_fully_cleared`，独立逐文件清权仍为 0。本轮无新媒体。
+> **真实性边界。** 三处图面是基于临时几何的 G0 概念关系，不是现状测绘、精确总平、获批方案、无障碍结果或居民意见。官方红线、准确锚点、现实阈值、责任主体、现场服务、批准与独立复测仍为 0 或 `unknown`。投稿方自有内容现按 CC BY 4.0、代码按 MIT 授权；OSM 数据库衍生层继续单独适用 ODbL，第三方引用和仓库临时输入不被重新许可。本轮没有新增媒体，并清退全部旧可选模型生成媒体。
 
 ![双轨京张公共地面结构：连续日常骨架与六处横向联系串联三种不可互换原型；旁置验证、人工交接和失败对象均退出普通路径；G0、临时几何、不按比例](assets/figures/site-overview.png)
 
@@ -335,13 +333,13 @@ Logo 方向采用两条不闭合轨线构成字母 **JZ**，中间的开放缺�
 
 ### 普通生活空间场景册：先看人怎样使用，再看系统怎样叠加
 
-这张三联图不是给既有高密度系统图再加一层气氛，而是把同一条公共权利翻译成人尺度：**一个人先能走、能停、能问、能退出、能完成基本任务；AI 只在旁侧、可选、可停的叠层中出现。** 左幅众智园把普通旁路与平行验证庭分开；中幅原点社区让一条无屏居民街串联两院；右幅大钟寺把通勤主轴与安静人工服务放在活动旁侧。三幅均不要求账户、扫码、屏幕、网络或 AI，也不把验证、桌椅、平台、排队或线缆放进连续日常路径 [data:visual/assets/ordinary-life-media-register.json] [source:SOURCE-JZ-ORDINARY-LIFE-MEDIA-REGISTER-R12] [data:visual/assets/non-ai-parity-contract.json]。
+这张人尺度图不是给既有高密度系统图再加一层气氛，而是把同一条公共权利翻译为可复核旅程：**一个人先能走、能停、能问、能退出、能完成基本任务；AI 只在旁侧、可选、可停的叠层中出现。** 众智园把普通旁路与平行验证庭分开；原点社区让一条无屏居民街串联两院；大钟寺把通勤主轴与安静人工服务放在活动旁侧。三处均不要求账户、扫码、屏幕、网络或 AI，也不把验证、桌椅、平台、排队或线缆放进连续日常路径 [data:visual/assets/non-ai-parity-contract.json] [data:visual/assets/key-area-evidence-matrix.json]。
 
-![普通生活空间场景册：众智园平行验证庭、原点社区无屏日常街与大钟寺通勤旁侧人工服务；合成概念可视化，不是现场证据、确认视点、真实参与、无障碍结果或居民反馈](assets/media/ordinary-life-scenes.webp)
+![普通生活旅程：三处均以进入、理解、完成人工任务、纠错或退出为完整非 AI 主路径，验证对象始终退到旁侧；G0 概念图，不是现场证据或无障碍结果](assets/figures/ordinary-life-journey.png)
 
-[阅读中英文长描述、生成方法与权利限制](assets/media/ordinary-life-scenes.md)。图像由 OpenAI 图像生成工具于 2026-08-13 依据本包自编提示生成，未输入现场照片、地图截图、私人图像、可识别人物、Logo 或第三方视觉。选定输出只转换为 WebP，检查时不含 EXIF/GPS；人物均为不可识别的合成角色。该披露不构成模型输出条款审计或再利用许可，权利状态继续为 `not_fully_cleared` [source:SOURCE-ORDINARY-LIFE-MEDIA-R12]。
+这张可编辑矢量图由包内确定性构建脚本生成，不使用现场照片、地图截图、私人图像、可识别人像、Logo、第三方视觉或模型生成像素。它只把已有的三处空间合同转换成人尺度阅读顺序，不证明真实人流、服务能力、无障碍达标或居民意见 [data:visual/assets/non-ai-parity-contract.json]。
 
-**普通—验证—故障—恢复。** 普通态先保持实体导向、连续无障碍意图、无屏停留和人工说明；验证态只允许未来经公布、获准、限时且有人负责的路径外可拆叠层，图中并不证明这些条件已经成立；故障态立即停止叠层、隔离设备、人工解释并保留绕行；恢复态先撤除叠层并恢复地面、绿化、静音与通行，独立复核未确认恢复合格时就保持 G0、继续停止或退役。三处共用这一顺序，但分别通过设备隔离、同意撤回和来源纠错实现，不能机械复制 [data:visual/assets/ordinary-life-media-register.json#four_state_reading] [source:SOURCE-ORDINARY-LIFE-PROPOSAL-R12] [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening]。
+**普通—验证—故障—恢复。** 普通态先保持实体导向、连续无障碍意图、无屏停留和人工说明；验证态只允许未来经公布、获准、限时且有人负责的路径外可拆叠层，图中并不证明这些条件已经成立；故障态立即停止叠层、隔离设备、人工解释并保留绕行；恢复态先撤除叠层并恢复地面、绿化、静音与通行，独立复核未确认恢复合格时就保持 G0、继续停止或退役。三处共用这一顺序，但分别通过设备隔离、同意撤回和来源纠错实现，不能机械复制 [source:SOURCE-ORDINARY-LIFE-PROPOSAL-R12] [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening]。
 
 **图中能看见的权利，不等于现场已经具备。** 轮椅、老人、儿童、照护者和通勤者的出现只用于检验空间关系是否易懂，不代表真实参与、同意或调研样本；触觉导向、无台阶连续、净宽、坡度、转弯、休息、消防、铁路保护、市政和人工服务能力仍需测绘、共测和专业责任确认。当前真实照片、确认视点、现场观察、获批构件、运营交互、无障碍结果和恢复结果均为 0；图像不能推出位置、比例、尺寸、材料、班次、建设、运行或审批结论 [assumption:A-KEY-AREA-SPATIAL-011] [data:visual/assets/implementation-handoff-matrix.json]。
 
@@ -577,7 +575,7 @@ AI 与公共价值指标同样按核验问题拆开：
 - AI 与数据风险：偏差、幻觉、隐私泄露、越权自动化和供应商锁定通过最小数据、源端保留、日志、人工责任、复测、到期和退役控制；不得自动执法、诊断或替代正式审批。
 - 安全与韧性风险：机器人、车辆和设备测试只在授权范围；实体急停、现场安全员、离线人工和 L0/L1/L2 降级必须可用。能源和恢复指标未实测时保持未知。
 - 文化与历史风险：史实、人物、文物和工程资料需由官方/馆藏/清权来源复核；AI 生成内容显式与元数据标识，争议内容可纠错、下架和追溯 [assumption:A-CULTURE-CONTENT-006]。
-- 版权与品牌风险：本次提交的最终文件集合为 manifest/package 中 156 个路径（其中 155 个为非 manifest 内容文件）；权利台账含 156 条逐文件资产记录，即 156 条逐文件权利记录；它们与 51 条来源证据记录只证明披露和链接闭合，覆盖完整性只在 manifest 与权利状态台账从最终 Git blobs 刷新并通过校验后成立。当前独立逐文件清权审计完成数为 0，总体状态为 `not_fully_cleared`。`submission-use-rights-matrix.json` 已逐条记录公告 8.1、仓库评审、主办方项目内使用、投稿人对外展示、跨项目复用和第三方组件的当前决策，但本包未证明正式公告条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系；`COMMUNITY-DISPLAY-ONLY` 完整条款、书面同意、OSM ODbL 义务、PDF 字体、Node.js 运行时与生成工具条款以及 Logo/地标商标仍待复核，不能声称已经全部清权 [data:visual/assets/rights-clearance-ledger.json#RIGHTS-01] [data:visual/assets/submission-use-rights-matrix.json#JZ-SUBMISSION-USE-RIGHTS-V1]。
+- 版权与品牌风险：本轮由投稿方明确授权其自有内容采用 CC BY 4.0、自有代码采用 MIT；OSM 数据库衍生层单独适用 ODbL 并保留“© OpenStreetMap contributors”，外部网页、标准、案例、商标与仓库临时输入不被重新许可。全部可选模型生成媒体已从包中清退；图件、HTML 与 PDF 改由包内可编辑源和 OFL 字体确定性构建。公开许可解决的是审阅和复用权限，不证明官方红线、批准、现场结果、专业接责、G1 或商标可注册性 [data:visual/assets/rights-clearance-ledger.json] [data:visual/assets/submission-use-rights-matrix.json]。
 - 外部协同风险：未来科学城、怀柔科学城、经开区、其他创新街区和京津冀只作为可选复测角色，未经书面确认不得写成合作方、投资方或落地承诺 [assumption:A-EXTERNAL-COLLAB-005]。
 - 运营与公平风险：活动热度不能替代居民满意、可达、公平与投诉闭环；贡献荣誉不得用于流量排名、就业筛选或行政评价。
 - 工具与证据风险：机器检查只验证结构、拓扑、引用和一致性，不替代规划、建筑、交通、市政、景观、生态、消防、铁路、数据安全、无障碍、社区与法律专业判断 [depth:risk_missing_data]。
@@ -599,7 +597,7 @@ AI 与公共价值指标同样按核验问题拆开：
 
 > **扩展证据 · E1—E7（E0 为文首阅读入口）。** 以下七个 H3 深读单元展开核验、专业交接、可逆构件、可访问追证和现场资料替换；它们是证据补充，不是新增必答章，也不另立方案或升级成熟度。
 
-**扩展单元共用边界。** E1—E7 继续使用既有 geometry、SCENE/JZ/T 编号、8 个项目与 3 个重点区；全部对象保持 G0、临时边界、NO-GO 与 `not_fully_cleared`。D01—D08、H01—H07 和 P01—P07 仍分别是待替换资料、尚未提交的交接包与建议专业类型，不是现实材料、人员或责任接受。官方馆藏、现实任务、小团队、独立复测、退出事件、书面确认、批准、运行结果和专业责任接受均为 0；各单元只在对应主张附近补充其专有失败条件与回退合同。
+**扩展单元共用边界。** E1—E7 继续使用既有 geometry、SCENE/JZ/T 编号、8 个项目与 3 个重点区；全部对象保持 G0、临时边界与 NO-GO。D01—D08、H01—H07 和 P01—P07 仍分别是待替换资料、尚未提交的交接包与建议专业类型，不是现实材料、人员或责任接受。官方馆藏、现实任务、小团队、独立复测、退出事件、书面确认、批准、运行结果和专业责任接受均为 0；各单元只在对应主张附近补充其专有失败条件与回退合同。
 
 ### 后台证据与专业交接：一个入口，五步追证
 
@@ -615,9 +613,13 @@ AI 与公共价值指标同样按核验问题拆开：
 
 ![评审与专业交接：一概念、三原型、一内核、六项任务、八类真实输入、七类建议专业和 NO-GO 停止线；现实资料与责任接受均为 0](assets/figures/review-professional-handoff.png)
 
+### 唯一 pre-G1 专业交接候选：JZ-05 × SCENE-011 × T-02
+
+本轮只把大钟寺的 JZ-05 企业服务站、SCENE-011 企业服务协同助手与 T-02 来源化企业服务协议组合成一个**下一步核验对象**。选择理由不是它更成熟，而是它已有五问来源边界、10 条无 PII 合成回放、停止/拒答/人工转接和恢复分支，可在不接入模型、不调用 API、不提供实体办事答案的条件下由专业团队先审查。它仍为 G0 / NO-GO；现实责任主体、服务人员、正式程序入口、数据安全、现场普通任务基线、无障碍共测、批准范围、恢复验收与独立复测均为 0。任何 H01—H07 未被真实责任方接受，候选就不得进入 G1 [data:visual/assets/g0-offline-enterprise-service-baseline.json] [data:visual/assets/t02-g0-g1-replay-result.json] [data:visual/assets/implementation-handoff-matrix.json]。
+
 三处可逆构件继续保持类型化未知：类型、尺寸、材料、连接、专项结论、精确位置、安装方法和恢复时长均为 `unknown`；未来资料冲突时，普通公共权利优先，验证叠层停止，官方资料不得为保住图面而被修改 [data:visual/assets/reversible-component-restoration-register.json]。八类现场资料包均为 `not_collected`，可进入复算不等于批准；模板完整不等于证据存在 [data:visual/assets/field-evidence-intake-contract.json]。
 
-权利状态保持 `not_fully_cleared`，独立逐文件清权为 0。文件检查、机器 PASS、PR 评审或合并均不产生规划判断、专业接责、场地批准、现实结果或跨项目复用许可。
+投稿方自有内容和代码已有明确开源许可；OSM、第三方引用与仓库输入仍按各自条款分层。文件检查、机器 PASS、PR 评审、许可声明或合并均不产生规划判断、专业接责、场地批准、现实结果或 G1。
 
 > **正式提案 · 第 13 章（共 13 章）。** 后台索引至此结束；以下“参考资料”续接正式提案。
 
@@ -637,4 +639,4 @@ AI 与公共价值指标同样按核验问题拆开：
 
 创新片区机制对照包括 [source:CASE-KENDALL]、[source:CASE-ONE-NORTH] 与 [source:CASE-22AT]。遗产更新和运营机制另参考 [source:CASE-KINGS-CROSS]、[source:CASE-STATION-F] 与 [source:CASE-MARS]。现状方向背景为 [source:OSM-CONTEXT]，其 ODbL 数据只用于道路、铁路和水系识别，不能作为官方边界或工程依据。
 
-生成方法：空间设计由公开临时边界、项目枚举、OSM 背景和确定性脚本派生；面积与长度在 EPSG:4548 中复算；场景护照、服务区、公共空间模式和阶段门以 GeoJSON 属性记录；PNG、A3/A0、离线 HTML 与用户启动的四态动态旅程是解释层，`geometry/*.geojson`、`metrics.json`、三类矩阵和 `self_check.json` 是证据层。四态动态由一次 MiniMax H3 概念母版、既有包内图件和确定性双语叠层重制，保留 43.344 秒中文旁白、中英 WebVTT 与独立海报；48 秒只表示普通—验证—故障—恢复的展示节奏，不表示现实恢复时长，全部媒体需用户手动启动，生成与权利记录登记为 ASSET-150..155。`COMMUNITY-DISPLAY-ONLY` 仅作为当前许可标签记录，其完整条款未随包提供；逐文件状态、未完成事项与使用限制见 `visual/assets/rights-clearance-ledger.json` 和 `report/copyright_statement.md`。
+生成方法：空间设计由公开临时边界、项目枚举、OSM 背景和确定性脚本派生；面积与长度在 EPSG:4548 中复算；场景护照、服务区、公共空间模式和阶段门以 GeoJSON 属性记录。PNG、A3/A0 与离线 HTML 是解释层，`geometry/*.geojson`、`metrics.json`、三类矩阵和 `self_check.json` 是证据层。本轮不使用模型生成图像、视频或音频；前台图件和图纸由包内自编 SVG/Python 构建源、Noto Sans SC OFL 字体与确定性导出形成。许可与例外见三个根目录许可/通知文件、`visual/assets/rights-clearance-ledger.json` 和 `report/copyright_statement.md`。
