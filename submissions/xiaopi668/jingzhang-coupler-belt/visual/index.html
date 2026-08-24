@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>京张车钩带:标准接口、可连可解,一列城市列车</title>
+<style>
+:root{--bg:#14161A;--panel:#1E2229;--panel2:#262C35;--line:#2E343D;--text:#E8E6E3;--muted:#9AA0A6;
+--cyan:#4FA3C4;--amber:#F2A541;--green:#3FA34D;--red:#E4572E;--steel:#7A8B99;--gold:#C8A96A}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+background:var(--bg);color:var(--text);line-height:1.6}
+.wrap{max-width:1200px;margin:auto;padding:0 20px}
+header{background:linear-gradient(180deg,#1A1E24,#14161A);border-bottom:4px solid var(--cyan);padding:34px 0 26px}
+.eyebrow{color:var(--cyan);letter-spacing:.22em;text-transform:uppercase;font-size:12px;margin-bottom:10px;font-weight:600}
+h1{font-size:30px;line-height:1.22;margin:0 0 10px;letter-spacing:.02em}
+.hero-copy{color:#C7CDD4;max-width:880px;font-size:15px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pill{border:1px solid #3A414C;border-radius:999px;padding:5px 12px;font-size:12px;color:#D5DAE0;background:#20262E}
+.status{display:inline-block;margin-top:14px;border:1px solid var(--cyan);color:var(--cyan);border-radius:6px;padding:6px 12px;font-size:12px;background:rgba(79,163,196,.08)}
+main{padding:26px 0 60px}
+.sheet{background:var(--panel);border:1px solid var(--line);border-radius:10px;margin:0 auto 22px;overflow:hidden}
+.sheet-head{padding:18px 22px 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+.sheet-head h2{margin:0;font-size:19px;color:#fff}
+.sheet-head p{margin:6px 0 0;color:var(--muted);font-size:13px;max-width:780px}
+.tag{white-space:nowrap;border:1px solid var(--line);color:var(--muted);font-size:11px;border-radius:4px;padding:3px 8px}
+.body{padding:20px 22px}
+img.map{width:100%;border-radius:8px;border:1px solid var(--line);display:block}
+.grid2{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(300px,.7fr);gap:18px;align-items:start}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.card{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h3{margin:0 0 6px;font-size:15px}
+.card p{margin:0;color:var(--muted);font-size:12.5px}
+.card b.k{display:block;font-size:20px;margin:2px 0 2px;color:#fff}
+.card span.u{color:var(--muted);font-size:11px}
+.metric{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.metric span{color:var(--muted);font-size:11px;display:block}
+.metric strong{font-size:20px;color:#fff;font-variant-numeric:tabular-nums}
+.coupler{border-left:4px solid}
+.coupler.c{--lc:var(--cyan);border-left-color:var(--cyan)}
+.coupler.a{--lc:var(--amber);border-left-color:var(--amber)}
+.coupler.r{--lc:var(--red);border-left-color:var(--red)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;font-size:12px;color:var(--muted)}
+.legend i{width:12px;height:12px;border-radius:3px;display:inline-block;margin-right:5px;vertical-align:-1px}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);color:#D5DAE0}
+th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.scenario{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:12px}
+.scenario b{font-size:13px;display:block;margin-bottom:4px}
+.scenario p{font-size:11.5px;color:var(--muted);margin:0}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
+.dot-c{background:var(--cyan)}.dot-a{background:var(--amber)}.dot-r{background:var(--red)}
+.warn{border-left:4px solid var(--amber);background:rgba(242,165,65,.06);padding:10px 14px;border-radius:0 8px 8px 0;font-size:12.5px;color:#D5DAE0}
+.ok{border-left:4px solid var(--green);background:rgba(63,163,77,.07);padding:10px 14px;border-radius:0 8px 8px 0;font-size:12.5px}
+.src{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:var(--muted);background:#20262E;border-radius:6px;padding:8px 10px;margin-top:8px;overflow-wrap:anywhere}
+footer{padding:20px 0 40px;color:var(--muted);font-size:11.5px;text-align:center;border-top:1px solid var(--line)}
+@media(max-width:900px){.grid2,.grid3,.grid4{grid-template-columns:1fr}h1{font-size:23px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">方案可视化总览 · 百年京张AI创新带城市设计开源征集</div>
+    <h1>京张车钩带:标准接口、可连可解,一列城市列车</h1>
+    <p class="hero-copy">以百年京张的自动车钩智慧为原型——标准接口、可靠连挂、缓冲降级、随时解挂——提出城市连挂协议:每个 AI 场景像一节车厢,经具名人工确认后才能并入公共正线。空间结构为一列三车两翼六钩。本页为离线电子展示,权威数据以 GeoJSON、metrics.json 与矩阵为准。</p>
+    <div class="pills"><span class="pill">一列三车两翼六钩</span><span class="pill">标准接口</span><span class="pill">可连可解</span><span class="pill">缓冲降级</span><span class="pill">12 场景卡</span><span class="pill">4 朝圣地标</span></div>
+    <span class="status">provisional 边界 intake 展示 · 正式多边形发布后需整体复算</span>
+  </div>
+</header>
+<nav class="wrap" style="display:flex;flex-wrap:wrap;gap:6px;padding:12px 0"><a href="#overview">总览地图</a><a href="#scope">三层范围</a><a href="#areas">重点区域</a><a href="#landuse">用地分区</a><a href="#mobility">交通慢行</a><a href="#bluegreen">蓝绿公共空间</a><a href="#building">建筑</a><a href="#projects">更新项目</a><a href="#scenarios">AI 场景</a><a href="#metrics">核心指标</a><a href="#coverage">任务覆盖</a><a href="#selfcheck">自检状态</a><a href="#sources">来源</a><a href="#assumptions">假设</a></nav>
+<main class="wrap">
+<section id="overview">
+  <h2>总览地图 · 一列三车两翼六钩</h2>
+  <p>把自动车钩的百年工程智慧转译为 AI 创新带的城市连接协议:每个 AI 场景像一节车厢,携带标准化接口并经具名人工确认连挂后,方能并入城市列车。全线组织为一条连挂正线、三节车厢、两翼与六处连挂钩位。</p>
+  <div class="kpis">
+    <div class="kpi"><div class="v" data-metric="coupler_node_count" data-value="6">6</div><div class="l">连挂钩位 / Coupler nodes</div></div>
+    <div class="kpi"><div class="v" data-metric="scenario_card_count" data-value="12">12</div><div class="l">场景卡 / Scenario cards</div></div>
+    <div class="kpi"><div class="v" data-metric="industry_test_scenario_count" data-value="4">4</div><div class="l">产业测试验证 / Industry tests</div></div>
+    <div class="kpi"><div class="v" data-metric="site_area_sqm" data-value="11412842.258">11412842.258</div><div class="l">总体面积 m² (EPSG:4548)</div></div>
+</div>
+  <div class="figwrap">
+    <img class="map" src="../assets/figures/site-overview.png" alt="总览:一列三车两翼六钩">
+    <div class="figcap">图1 总览:连挂正线、三节车厢、两翼与六处连挂钩位(临时边界,虚线)</div>
+  </div>
+  <div class="note">几何基于仓库临时粗略边界(PROV-SITE-001),官方 polygon 发布后整链重算;本页面积不构成官方红线或精确面积依据。</div>
+</section><section id="scope">
+  <h2>三层范围工作框架</h2>
+  <table>
+    <tr><th>层级</th><th>核心问题</th><th>本版交付</th><th>边界</th></tr>
+    <tr><td>统筹研究范围 (43.6 km²)</td><td>AI 产业、人才与区域伙伴如何通过标准接口互连</td><td>车钩生态、7 案例、5 类画像、年度活动体系</td><td>不虚构伙伴、企业、资金</td></tr>
+    <tr><td>总体设计范围 (11.4 km²)</td><td>走廊如何在技术更替中保持「可连、可解、可重编」</td><td>一列三车两翼六钩、24 用地单元</td><td>临时 PROV-SITE-001 非官方红线</td></tr>
+    <tr><td>三处重点区域 (368.4 ha)</td><td>一次 AI 试验如何安全连挂、缓冲降级、干净解挂</td><td>12 场景路单、三种车厢剖面、10 项目包</td><td>临时矩形非地块/权属/工程范围</td></tr>
+  </table>
+  <div class="note">每层验收句:接口是否公开可见;连挂是否具名确认;断连后普通服务是否照常;解挂后数据与设备是否干净撤离。</div>
+</section><section id="areas">
+  <h2>重点区域</h2>
+  <div class="grid3">
+    <div class="card"><h3>众智园 = 机车 LOCOMOTIVE</h3><p>全栈测试与牵引:封闭钩位验证具身智能/端侧算力,公众观察花园为安全库。</p><p><b class="k" data-metric="industry_test_scenario_count" data-value="4">4</b><span class="u">产业测试验证场景 / industry tests</span></p></div>
+    <div class="card"><h3>AI 原点 = 头车 HEAD CAR</h3><p>开源驾驶舱:公共长桌、开放零件墙、青年共治论坛与接口门诊。</p><p><b class="k" data-metric="persona_count" data-value="5">5</b><span class="u">用户画像 / personas</span></p></div>
+    <div class="card"><h3>大钟寺 = 客货车 FREIGHT &amp; PASSENGER</h3><p>产业落地与日常生活:有人柜台、触觉地图、京张记忆步道与拔线沙盒。</p><p><b class="k" data-metric="landmark_count" data-value="4">4</b><span class="u">朝圣地标 / landmarks</span></p></div>
+  </div>
+  <div class="figwrap"><img class="map" src="../assets/figures/key-areas.png" alt="三处重点区域详细设计索引"></div>
+</section><section id="landuse">
+  <h2>用地分区</h2>
+  <p>24 个概念用地单元完整覆盖临时总体范围,科研与产业贴近三车,居住与社区服务分居两翼,正线以公园绿地与广场保持公共连续。</p>
+  <div class="kpis">
+    <div class="kpi"><div class="v" data-metric="land_use_parcel_count" data-value="24">24</div><div class="l">用地单元 / Land-use units</div></div>
+    <div class="kpi"><div class="v" data-metric="green_ratio" data-value="0.210712">0.210712</div><div class="l">概念绿地率 / Green ratio</div></div>
+    <div class="kpi"><div class="v" data-metric="public_space_ratio" data-value="0.058168">0.058168</div><div class="l">公共空间比例 / Public-space ratio</div></div>
+    <div class="kpi"><div class="v" data-metric="building_footprint_area_sqm" data-value="953303.936">953303.936</div><div class="l">概念建筑基底 m² (低置信度)</div></div>
+  </div>
+  <div class="figwrap"><img class="map" src="../assets/figures/land-use-structure.png" alt="用地结构与三车功能布局"></div>
+</section><section id="mobility">
+  <h2>交通慢行</h2>
+  <p>沿正线保持一条普通公共慢行脊,优先修补六处东西横缝;两翼服务通道为概念连接,不计工程线位,交通组织由专业团队另行判断。</p>
+  <div class="kpis">
+    <div class="kpi"><div class="v" data-metric="spine_length_m" data-value="19446">19446</div><div class="l">正线绿道 m / Main-line greenway</div></div>
+    <div class="kpi"><div class="v" data-metric="flank_road_length_m" data-value="11006.8">11006.8</div><div class="l">缝合通道 m / Stitching corridors</div></div>
+  </div>
+  <div class="figwrap"><img class="map" src="../assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿公共网络"></div>
+</section><section id="bluegreen">
+  <h2>蓝绿公共空间</h2>
+  <p>蓝绿系统是「无钩公共红利」的载体:连续树荫与休息、雨洪可读、安静边界与可维修材料全部不依赖 AI;六处连挂钩位是公共空间网络的空间骨架。</p>
+  <div class="kpis">
+    <div class="kpi"><div class="v" data-metric="green_space_area_sqm" data-value="2404818.148">2404818.148</div><div class="l">概念绿地 m²</div></div>
+    <div class="kpi"><div class="v" data-metric="public_space_area_sqm" data-value="663865.779">663865.779</div><div class="l">概念公共空间 m²</div></div>
+  </div>
+</section><section id="building">
+  <h2>建筑</h2>
+  <p>建筑图层只含概念占位体量,用于内部关系诊断;任何真实建筑进入方案前需完成现状、年代、结构、权属、消防、文保、首层可达与维护调查,决策树默认保留,不产生拆除清单。</p>
+  <div class="note">容积率、建筑高度、建筑密度、拆改留规模等依赖官方控制条件的指标保持 unknown(value null),不以估值代替。</div>
+</section><section id="projects">
+  <h2>更新项目</h2>
+  <p>十个可独立暂停的项目包:车钩制度沙盒、正线公共脊审计、众智园试验钩位、大钟寺开放钩位、钩位横缝修补、AI 原点影子门诊、可逆构件库、四座朝圣地标、连挂发放监测、解挂节。</p>
+  <div class="kpis">
+    <div class="kpi"><div class="v" data-metric="renewal_project_count" data-value="10">10</div><div class="l">更新项目包 / Renewal packages</div></div>
+    <div class="kpi"><div class="v" data-metric="phasing_stage_count" data-value="3">3</div><div class="l">实施分期 / Phasing stages</div></div>
+    <div class="kpi"><div class="v" data-metric="fallback_drill_count" data-value="12">12</div><div class="l">年度解挂演练 / Annual drills</div></div>
+  </div>
+  <div class="legend">近期:南段编组场与钩位激活(2026-2028) · 中期:原点头车与中段缝合(2028-2031) · 远期:北段机车库与全链贯通(2031-2035)</div>
+</section><section id="scenarios">
+  <h2>AI 场景</h2>
+  <p>12 张场景卡,其中 4 张为产业测试验证场景;每张绑定连挂路单(允许/禁止任务、数据边界、人工复核、缓冲触发、解挂流程),缺失即不发连挂。</p>
+  <div class="grid3">
+<article class="scenario"><b><span class="dot dot-c"></span>SC-01 自动连挂耐久试验</b><p>众智园封闭钩位多主体连挂/解挂循环演练,具名安全员放行(产业测试验证)</p></article>
+<article class="scenario"><b><span class="dot dot-a"></span>SC-02 缓冲器标定试验</b><p>冲击/满载/断连缓冲标定,运维员复核包络(产业测试验证)</p></article>
+<article class="scenario"><b><span class="dot dot-a"></span>SC-03 解挂与急停演练</b><p>断电断网下的应急解挂,失败卡归档(产业测试验证)</p></article>
+<article class="scenario"><b><span class="dot dot-a"></span>SC-04 端侧算力断网韧性</b><p>离线/降级/能耗比较,人工运行表兜底(产业测试验证)</p></article>
+<article class="scenario"><b><span class="dot dot-c"></span>SC-05 开源车钩库维护门诊</b><p>issue 归类、接口依赖检查,仅公开代码库</p></article>
+<article class="scenario"><b><span class="dot dot-c"></span>SC-06 双语模型说明工坊</b><p>草拟通俗说明与差异,专业复核后发布</p></article>
+<article class="scenario"><b><span class="dot dot-c"></span>SC-07 城市服务互操作沙盒</b><p>合成工单检查转接,服务台复核</p></article>
+<article class="scenario"><b><span class="dot dot-c"></span>SC-08 青年反向导师课</b><p>自愿学习伙伴匹配,监护人知情(未成年人)</p></article>
+<article class="scenario"><b><span class="dot dot-c"></span>SC-09 无障碍慢行双轨导航</b><p>临时障碍与路线辅助,现场核验普通路线</p></article>
+<article class="scenario"><b><span class="dot dot-a"></span>SC-10 公共服务分诊柜台</b><p>公开目录检索与材料提示,有人柜台复核</p></article>
+<article class="scenario"><b><span class="dot dot-c"></span>SC-11 京张记忆共读</b><p>清权史料检索与多语解释,史实复核</p></article>
+<article class="scenario"><b><span class="dot dot-a"></span>SC-12 消费智能体拔线沙盒</b><p>合成预算与逐步确认,无真实支付接入</p></article>
+
+  </div>
+</section><section id="metrics">
+  <h2>核心指标</h2>
+  <p>由 geometry/*.geojson 在 EPSG:4548 复算;provisional 边界下为概念设计量,非法定控制值。现场效果指标在许可基线建立前保持 null。</p>
+  <div class="grid4">
+    <div class="metric"><span>总体范围面积 m²</span><strong data-metric="site_area_sqm" data-value="11412842.258">11412842.258</strong></div>
+    <div class="metric"><span>概念绿地率</span><strong data-metric="green_ratio" data-value="0.210712">0.210712</strong></div>
+    <div class="metric"><span>公共空间比例</span><strong data-metric="public_space_ratio" data-value="0.058168">0.058168</strong></div>
+    <div class="metric"><span>连挂钩位</span><strong data-metric="coupler_node_count" data-value="6">6</strong></div>
+    <div class="metric"><span>正线绿道 m</span><strong data-metric="spine_length_m" data-value="19446">19446</strong></div>
+    <div class="metric"><span>场景卡</span><strong data-metric="scenario_card_count" data-value="12">12</strong></div>
+    <div class="metric"><span>生态案例</span><strong data-metric="ai_ecosystem_case_count" data-value="7">7</strong></div>
+    <div class="metric"><span>路单覆盖率</span><strong data-metric="coupling_route_table_coverage_ratio" data-value="1">1</strong></div>
+  </div>
+  <div class="figwrap"><img class="map" src="../assets/figures/metrics-evidence.png" alt="核心指标复算与证据链"></div>
+</section><section id="coverage">
+  <h2>任务覆盖</h2>
+  <p>compliance_matrix.json 覆盖公告 1.3/1.4/1.5 全部任务与 agent.1—agent.6;standard_matrix.json 覆盖 9 项标准;design_depth_matrix.json 15 项设计深度全部 complete;三张矩阵与正文、图纸、GeoJSON、metrics 闭环对应。</p>
+</section><section id="selfcheck">
+  <h2>自检状态</h2>
+  <div class="ok">确定性校验、空间审查、视觉包装与专业证据审查四道闸门;当前 provisional 边界仅支持 intake 展示,正式评分前需替换官方多边形并整体复算。</div>
+</section><section id="sources">
+  <h2>来源</h2>
+  <p>正式判断仅使用 formal-ready 来源(公告、任务书、标准文本);背景与 provisional 资料标注用途边界;完整索引见 sources.json 与 data/source_registry.json。</p>
+  <div class="src">source_registry.json usable_for_formal=yes:公告(2026-05-09)、智能体任务书、城市设计管理办法、控规编制审批办法、用地用海分类指南、生成式AI服务管理暂行办法、无障碍环境建设法;background_only:国办发〔2020〕45号。</div>
+</section><section id="assumptions">
+  <h2>假设</h2>
+  <p>全部假设与缺口见 assumptions.json:临时边界需官方 polygon 复算;控制条件缺失保持 unknown;车钩机制为概念建议;AI 终局决定保留人工;隐私与版权边界由具名人工复核。</p>
+</section>
+<footer>京张车钩带 THE JING-ZHANG COUPLER BELT · xiaopi668 · 2026-08-23 · 离线展示,无外部资源</footer>
+</main>
+</body>
+</html>
