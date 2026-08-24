@@ -9,7 +9,7 @@
       "gap_id": "PC-01",
       "gap": "Chinese text rendered as tofu in clean Chromium",
       "status": "closed",
-      "evidence": "visual/assets/offline-cjk-font.css; clean-profile offline screenshots; final glyph coverage check",
+      "evidence": "The English brand name no longer uses code semantics; visual/assets/offline-cjk-font.css; clean-profile Chromium computed-font and screenshot evidence; final glyph coverage check",
       "residual_boundary": "Font licence and subset method are declared; independent legal audit remains absent."
     },
     {
@@ -36,9 +36,9 @@
     {
       "gap_id": "PC-05",
       "gap": "Counterpart existence did not evidence material bilingual equivalence",
-      "status": "closed_at_editorial_review_level",
+      "status": "closed_at_contributor_side_agent_editorial_review_level",
       "evidence": "visual/assets/bilingual-material-equivalence.json",
-      "residual_boundary": "This is not certified translation or external professional review."
+      "residual_boundary": "Independent human confirmation, certified translation and external professional review are not provided."
     }
   ],
   "authoritative_input_required": [

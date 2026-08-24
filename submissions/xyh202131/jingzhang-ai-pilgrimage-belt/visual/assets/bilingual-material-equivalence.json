@@ -3,7 +3,14 @@
   "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R58",
   "as_of": "2026-08-24",
   "audit_type": "contributor_editorial_review",
-  "status": "material_equivalence_checked",
+  "status": "contributor_side_material_equivalence_checked_human_confirmation_open",
+  "review_method": {
+    "mode": "side_by_side_claim_status_figure_and_page_pair_review",
+    "performed_by": "submission_agent_contributor_side_editorial_qa",
+    "independent_human_reviewer": false,
+    "independent_human_confirmation_status": "not_provided",
+    "method_note": "The two Markdown sources were compared by formal chapter, claim, number, evidence qualifier and figure order; generated HTML was checked against its Markdown source; paired figures and fixed-page PDFs were compared by language pair and page position. Deterministic structure checks support this record but do not replace editorial judgement or independent human review."
+  },
   "scope": [
     "proposal.md <-> proposal.en.md",
     "report/proposal.html <-> report/proposal.en.html",
@@ -60,7 +67,84 @@
       "topic": "publication_pairing",
       "result": "pass",
       "evidence": "The rebuilt A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages; page counts, warnings and backlink positions are checked again in final PDF QA."
+    },
+    {
+      "check_id": "BME-09",
+      "topic": "regional_relay_boundary",
+      "result": "pass_with_unconfirmed_external_roles",
+      "evidence": "Both Chapter 3 counterparts now carry the same six-row conditional relay matrix. Beiwei Community is only a community-context comparator beside, not interchangeable with, Origin Community; every external node remains unconfirmed, accepts only a minimum G0 protocol/evidence package, returns proposed discrepancy or retest questions, transfers no raw sensitive data and does not start without written role acceptance, a lawful data boundary, an ordinary-task baseline and applicable H01-H07 materials."
     }
   ],
-  "non_certification": "This is a contributor editorial equivalence record. It is not certified translation, public feedback, professional approval, field evidence or an independent rights audit. Exact-head automated and visual QA remains authoritative for the PR artifact set."
+  "critical_claim_map": [
+    {
+      "claim_id": "EQ-01",
+      "topic": "single_public_thesis",
+      "zh_location": "proposal.md opening and 一次空间裁决",
+      "en_location": "proposal.en.md opening and One Spatial Decision",
+      "paired_statement": "Twin-Track Jing-Zhang is the sole public thesis; verification may not occupy ground needed for an ordinary task.",
+      "result": "equivalent"
+    },
+    {
+      "claim_id": "EQ-02",
+      "topic": "three_non_interchangeable_prototypes",
+      "zh_location": "proposal.md opening prototype table; assets/figures/key-areas.png",
+      "en_location": "proposal.en.md opening prototype table; assets/figures/key-areas.en.png",
+      "paired_statement": "Zhongzhiyuan uses a parallel bypass and side verification garden; Origin Community uses one street, two courts and four withdrawal nodes; Dazhongsi keeps a clear four-way commute with off-route service.",
+      "result": "equivalent"
+    },
+    {
+      "claim_id": "EQ-03",
+      "topic": "ordinary_verification_fault_recovery",
+      "zh_location": "proposal.md opening four-state block; assets/figures/four-state-journey.png",
+      "en_location": "proposal.en.md opening four-state block; assets/figures/four-state-journey.en.png",
+      "paired_statement": "The four states govern only the verification overlay; fault preserves ordinary life and the complete non-AI route; recovery is not authorization, approval, restart or G1.",
+      "result": "equivalent"
+    },
+    {
+      "claim_id": "EQ-04",
+      "topic": "frozen_counts_and_geometry_status",
+      "zh_location": "proposal.md opening truth boundary and Chapter 11",
+      "en_location": "proposal.en.md opening truth boundary and Chapter 11",
+      "paired_statement": "12 scenarios, 8 projects, 3 key areas and 36 conceptual land-use units are preserved; geometry remains provisional, low-confidence and not to scale.",
+      "result": "equivalent"
+    },
+    {
+      "claim_id": "EQ-05",
+      "topic": "maturity_and_zero_results",
+      "zh_location": "proposal.md opening truth boundary, Chapters 10-12",
+      "en_location": "proposal.en.md opening truth boundary, Chapters 10-12",
+      "paired_statement": "All scenarios remain G0 / NO-GO; field execution, approval, real service results, accepted professional duty and independent real-world retest remain zero or unknown.",
+      "result": "equivalent"
+    },
+    {
+      "claim_id": "EQ-06",
+      "topic": "regional_relay",
+      "zh_location": "proposal.md Chapter 3 conditional relay matrix",
+      "en_location": "proposal.en.md Chapter 3 conditional relay matrix",
+      "paired_statement": "Beiwei and five wider coordination node types are optional, unconfirmed retest roles with minimum-data transfer and explicit no-start gates; no partnership or rollout is claimed.",
+      "result": "equivalent"
+    },
+    {
+      "claim_id": "EQ-07",
+      "topic": "rights_and_sources",
+      "zh_location": "proposal.md Chapter 12; report/copyright_statement.md",
+      "en_location": "proposal.en.md Chapter 12; report/copyright_statement.md bilingual clauses",
+      "paired_statement": "Contributor content, code, OSM-derived data and OFL fonts retain separate licence classes; citations and provisional repository inputs are not relicensed; licence never proves authority, approval or professional acceptance.",
+      "result": "equivalent_with_independent_audit_open"
+    },
+    {
+      "claim_id": "EQ-08",
+      "topic": "publication_pair_positions",
+      "zh_location": "A3 14 pages, A0 8 pages, 22 text-bearing figure files",
+      "en_location": "A3.en 14 pages, A0.en 8 pages, 22 .en figure files",
+      "paired_statement": "Paired publication surfaces retain the same page/figure order, warning prominence and evidence status; the Chapter 3 relay clarification does not alter the fixed-page PDF scope.",
+      "result": "equivalent"
+    }
+  ],
+  "open_boundary": {
+    "independent_human_translation_review": "not_provided",
+    "certified_translation": "not_provided",
+    "effect": "This record supports contributor-side editorial QA only. It must not be presented as independent human confirmation or certified translation."
+  },
+  "non_certification": "This is a contributor-side editorial equivalence record produced by the submission agent. It is not independent human confirmation, certified translation, public feedback, professional approval, field evidence or an independent rights audit. Exact-head deterministic and visual QA verifies artifact consistency but cannot certify translation quality."
 }

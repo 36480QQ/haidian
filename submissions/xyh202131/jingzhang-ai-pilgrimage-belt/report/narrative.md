@@ -34,6 +34,16 @@ The current package closes defects under contributor control: offline CJK render
 
 当前包只关闭投稿方可控缺口：离线 CJK 渲染、英文图件边界、两条到期背景链接、逐路径投稿方权利清单和双语实质审校。官方几何与控制条件、现场基线、责任接收、预算、批准、真实故障/恢复和独立清权继续为 unknown 或 0。`visual/assets/data-gap-closure-register.json` 为每项记录责任来源、重算触发器和禁止替代物；任何推断替代都不得升级 G0。
 
+## Conditional regional relay / 条件式区域接力
+
+Beiwei Community is now stated as an optional community-context comparator beside, but not interchangeable with, Origin Community. Future Science City, Huairou Science City, the Beijing Economic-Technological Development Area, other innovation districts and Beijing-Tianjin-Hebei retain one optional retest role each. Every node is unconfirmed. No relay starts without written role acceptance, a lawful data boundary, an ordinary-task baseline and applicable H01-H07 materials; only a minimum versioned task/protocol and anonymized or synthetic evidence package may move.
+
+北纬社区现被明确为与原点社区并列但不可互换的可选社区语境对照点；未来科学城、怀柔科学城、经开区、其他创新街区和京津冀各保留一项可选复测角色。所有节点均未确认。没有书面责任接受、合法数据边界、普通任务基线及适用 H01—H07 材料，接力不启动；节点间只可传递最小、带版本的任务/协议及匿名或合成证据包。
+
+The bilingual equivalence record now maps eight critical claims across Markdown, rendered HTML, figures and fixed-page PDFs. It remains contributor-side agent QA: independent human confirmation and certified translation are not provided and are not claimed.
+
+双语等价记录现把八项关键主张逐项映射到 Markdown、渲染 HTML、图件和定页 PDF；它仍是投稿方侧 Agent 审校，独立人工确认与认证翻译尚未提供，也不作此类宣称。
+
 ## Frozen facts / 冻结事实
 
 - 9 geometry files and `metrics.json` unchanged.

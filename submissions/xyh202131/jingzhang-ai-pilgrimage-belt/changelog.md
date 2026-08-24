@@ -1,5 +1,19 @@
 # 方案迭代记录 / Changelog
 
+## v58.2 - 2026-08-24
+
+**93 分 exact-head 评审定向修复 / Exact-Head 93-Point Review Repair**
+
+- 将英文主稿中的中文品牌名从代码语义改为正文强调，消除 Linux/打包预览对等宽字体回退的依赖；本地离线 CJK 子集仍明确覆盖“`双轨京张`”全部字形。
+- 把区域协同从一段角色枚举改为六行条件式接力矩阵。北纬社区只作为与原点社区并列但不可互换的社区语境对照点；所有外部节点继续为未确认可选角色，只接收最小 G0 任务/协议与匿名或合成证据包，没有书面接责、合法数据边界、普通任务基线及适用 H01—H07 时不启动。
+- 将双语实质等价记录扩展为八项关键主张的逐项位置映射，覆盖总纲、三原型、四态、冻结计数、G0/NO-GO、区域接力、权利来源和定页出版。明确标注这是投稿方侧 Agent 审校；独立人工确认与认证翻译尚未提供，不作虚假闭合。
+- 本次不改变 geometry、`metrics.json`、12/8/3/36 计数、四份 PDF 页数或既有媒体状态；区域接力为正文澄清，不制造伙伴、现场、批准、预算、现实结果或成熟度升级。
+
+- Changed the Chinese brand name in the English source from code semantics to ordinary emphasized text, removing dependence on platform monospace fallback while retaining explicit glyph coverage in the local offline CJK subset.
+- Replaced the regional-coordination role list with a six-row conditional relay matrix. Beiwei Community is only an optional community-context comparator beside, not interchangeable with, Origin Community. Every external node remains unconfirmed and accepts only a minimum G0 task/protocol plus anonymized or synthetic evidence; no relay starts without written role acceptance, a lawful data boundary, an ordinary-task baseline and applicable H01-H07 materials.
+- Expanded the bilingual material-equivalence record into an eight-claim location map covering the thesis, prototypes, four states, frozen counts, G0/NO-GO, regional relay, rights/sources and fixed-page publication. It explicitly remains contributor-side agent QA; independent human confirmation and certified translation are not provided.
+- This repair changes no geometry, `metrics.json`, 12/8/3/36 count, PDF page count or media status, and creates no partnership, field result, approval, budget or maturity advancement.
+
 ## v58.1 - 2026-08-24
 
 **评审可读性与权利证据定向修复 / Targeted Readability and Rights-Evidence Repair**

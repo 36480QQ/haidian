@@ -5,8 +5,8 @@ language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-version: "58.0"
-iteration: "58.0"
+version: "58.2"
+iteration: "58.2"
 license: "CC-BY-4.0"
 summary: "Haidian's innovation density becomes public capability only when people can use, question and exit without accounts, devices or professional identity. Twin-Track Jing-Zhang keeps ordinary tasks continuous and G0 verification intermittent and stoppable; three distinct prototypes connect evidence, risk and professional handoff. Boundaries remain provisional; outcomes, approvals, field execution and accepted professional duties remain zero."
 tracks:
@@ -24,7 +24,7 @@ scenarios:
 
 # Twin-Track Jing-Zhang
 
-- Chinese name: `双轨京张`
+- Chinese name: **双轨京张**
 - Back-stage audit system: JZ-AIOS (Jing-Zhang Auditable Innovation Operating System)
 
 ### Why Haidian: innovation density must become public capability
@@ -213,7 +213,18 @@ Eight resource types follow a “public foundation + conditional access” model
 | STATION F | Physical space operated through programs, mentors, and partner networks | Four-season operating protocol and a problem-to-Proof funnel | Cycle time from problem to bounded prototype | A single large campus and private operating conditions [source:CASE-STATION-F] |
 | MaRS | Coupling laboratories, offices, events, and community services | Co-locate publication, compliance advice, and staffed service at Dazhongsi | Success rate of human handoff and follow-up services | Healthcare, investment, and institutional systems [source:CASE-MARS] |
 
-Regional coordination uses a “testing relay,” not a vague alliance. The Future Science City is proposed for retesting in basic science or frontier equipment; Huairou Science City for verification related to major scientific facilities; the Beijing Economic-Technological Development Area for engineering retests in manufacturing and embodied systems; other first-batch innovation districts for cultural or industrial scenarios in which they specialize; and Beijing–Tianjin–Hebei nodes for cross-regional replicability checks. Each relay transmits only tasks, protocols, anonymized results, and failure records; it does not require the transfer of raw sensitive data. The publicly stated “one core, multiple points” pattern only shows that this division of work has a basis for discussion; it does not mean that any node has agreed to participate [source:BEIJING-AI-DISTRICTS-2026].
+Regional coordination uses a “testing relay,” not a vague alliance. The following matrix states one conditional role for each optional node. Every status remains **unconfirmed**; the matrix records proposed responsibilities and retest questions, not partnership, authorization, G1 readiness, or an operating arrangement [source:BEIJING-AI-DISTRICTS-2026].
+
+| Optional node (all unconfirmed) | Conditional role | Input permitted for a proposed retest | Proposed output |
+| --- | --- | --- | --- |
+| **Beiwei Community** | Community-context comparator alongside, but not interchangeable with, Origin Community | The same G0 community-service task passport and a PII-free synthetic or lawfully anonymized script | A versioned difference/failure list asking whether same-task non-AI access, staffed handoff, withdrawal and appeal remain intact in another community context |
+| Future Science City | Basic-science or frontier-equipment retest | Bounded task, protocol, evidence version and failure conditions | Reproducibility questions and failed conditions, not a scientific-facility commitment |
+| Huairou Science City | Retest related to major scientific facilities | The minimum protocol and non-sensitive result package required for the stated question | Facility-interface and reproducibility questions, not access approval |
+| Beijing Economic-Technological Development Area | Manufacturing or embodied-system engineering retest | Safety envelope, interface specification and anonymized/synthetic result package | Engineering discrepancy and stop-condition list, not production or procurement approval |
+| Other first-batch innovation districts | Retest of a cultural or industrial scenario within each district's stated competence | Task, protocol and minimum non-sensitive evidence package | Context-transfer differences and failed assumptions, not a district partnership |
+| Beijing–Tianjin–Hebei nodes | Cross-regional replicability check | Versioned task, protocol, anonymized result and failure record | Replicability differences and conditions requiring local professional review, not a regional rollout commitment |
+
+The common gate is stricter than the table: a relay does not start without written role acceptance, a lawful data boundary, an ordinary-task baseline and the applicable H01–H07 materials. Only the task, protocol, versioned anonymized or synthetic result, and failure record may move; raw personal, location-trace, complaint or other sensitive data does not. Missing, rejected or expired conditions keep the node outside the relay and the package at G0 / NO-GO.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -576,7 +587,7 @@ All area ratios using the provisional boundary as their denominator have `low` c
 - Safety and resilience risk: Robot, vehicle, and equipment testing occurs only within authorized areas. Physical emergency stops, on-site safety officers, offline human operation, and L0/L1/L2 degradation must remain available. Energy and recovery indicators remain unknown until measured.
 - Cultural and historical risk: Historical facts, people, artifacts, and engineering materials require verification through official, archival, or rights-cleared sources. AI-generated content receives explicit and metadata labels; disputed content can be corrected, removed, and traced [assumption:A-CULTURE-CONTENT-006].
 - Copyright and branding risk: the contributor now licenses original content under CC BY 4.0 and original code under MIT. The OSM-derived database remains separately ODbL with “© OpenStreetMap contributors”; external pages, standards, cases, trademarks and repository provisional inputs are not relicensed. All optional model-generated media is removed, while figures, HTML and PDFs are rebuilt from package-editable sources with an OFL font. Open licensing resolves review and reuse permission only; it proves no official boundary, approval, field result, accepted professional duty, G1 status or trademark registrability [data:visual/assets/rights-clearance-ledger.json] [data:visual/assets/submission-use-rights-matrix.json].
-- External-coordination risk: Future Science City, Huairou Science City, the Beijing Economic-Technological Development Area, other innovation districts, and Beijing–Tianjin–Hebei are only optional retest roles. Without written confirmation, none may be described as a partner, investor, or committed implementation party [assumption:A-EXTERNAL-COLLAB-005].
+- External-coordination risk: Beiwei Community, Future Science City, Huairou Science City, the Beijing Economic-Technological Development Area, other innovation districts, and Beijing–Tianjin–Hebei are only optional retest roles. Without written confirmation, none may be described as a partner, investor, or committed implementation party [assumption:A-EXTERNAL-COLLAB-005].
 - Operations and equity risk: Event popularity cannot replace resident satisfaction, accessibility, fairness, or complaint closure. Recognition for contributions must not be used for traffic rankings, employment screening, or administrative evaluation.
 - Tool and evidence risk: Machine checks verify only structure, topology, references, and consistency. They do not replace professional judgment in planning, architecture, transport, municipal engineering, landscape, ecology, fire safety, railway safety, data security, accessibility, community engagement, or law [depth:risk_missing_data].
 - Public-reporting versus field-condition risk: The Firecrawl desk-research record preserves public-page sources, dates, summaries, and content digests for citation and design judgment only. It does not include a site visit, as-built drawing review, or facility-operations audit. Every claim involving exact location, built condition, intensity of use, or accessibility performance requires field verification before G1 [data:visual/assets/site-grounding-register.json#SG-001].
