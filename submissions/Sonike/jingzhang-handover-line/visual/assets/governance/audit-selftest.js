@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * 京张交接线 · 两个自检脚本的回归测试（离线、只读包内文件）
+ * 京张交接线 · 三个自检脚本的回归测试（离线、只读包内文件）
  *
  * 为什么需要它：同目录的 claims-audit.js 与 protocol-check-runner.js 都会自报「全部一致」，
  * 而一个只会通过的自检和没有自检是等价的。本包已经两次栽在这件事上：
@@ -28,6 +28,7 @@ const HERE = __dirname;
 const PKG = path.resolve(HERE, "../../..");
 const AUDITOR = "claims-audit.js";
 const RUNNER = "protocol-check-runner.js";
+const VERSION_AUDITOR = "version-audit.js";
 const EVIDENCE = "assets/media/technical-evidence-book.md";
 
 /* 这份 66 项 ID 全集是**刻意重复**的第二份来源。
@@ -206,6 +207,17 @@ negInput("Web 字体覆盖记录删掉「京」字 —— 字体文件仍在、C
 negInput("图件版本报告把 package_version 改回 v1.15 —— 二进制哈希仍全部相符也必须拒绝",
   { "visual/assets/governance/version-stamp-report.json": jsonMutated(
       "visual/assets/governance/version-stamp-report.json", (d) => { d.package_version = "v1.15"; }) }, ["G7"]);
+
+negative("A0 首页内嵌图的预期顺序调换 —— 可搜索页脚全为 v2.0 也必须被像素绑定拦住", () => {
+  const script = scriptMutated(VERSION_AUDITOR, (text) => text.replace(
+    'figures: ["assets/figures/site-overview.png", "assets/figures/key-areas.png"]',
+    'figures: ["assets/figures/key-areas.png", "assets/figures/site-overview.png"]'));
+  const result = run(script, { JZ_AUDIT_HOME: HERE });
+  if (result.code === 0) return "调换两张内嵌图的预期来源后仍通过";
+  const errors = (result.json && result.json.errors) || [];
+  if (!errors.some((item) => item.includes("像素不一致"))) return `未报像素不一致，实报：${errors.slice(0, 3).join("；")}`;
+  return null;
+});
 
 negInput("触觉 SVG 的可见页脚退回 PACKAGE v1.15 —— PDF 与栅格图件全对也必须拒绝",
   { "assets/tactile/tactile-corridor-map.svg": textOf("assets/tactile/tactile-corridor-map.svg")
@@ -422,8 +434,8 @@ const results = cases.map((c) => {
 const bad = results.filter((r) => !r.pass);
 const out = {
   selftest: "audit-selftest.js",
-  targets: [AUDITOR, RUNNER],
-  scope_zh: "只检验两个自检脚本会不会漏检：正向须通过，注入已知缺陷须退出 1 并报出指定检查项。不评价设计内容。",
+  targets: [AUDITOR, RUNNER, VERSION_AUDITOR],
+  scope_zh: "只检验三个自检脚本会不会漏检：正向须通过，注入已知缺陷须退出 1 并报出指定检查项。不评价设计内容。",
   cases_run: results.length,
   cases_passed: results.length - bad.length,
   all_pass: bad.length === 0,
@@ -438,6 +450,6 @@ if (process.argv.includes("--json")) {
     if (!r.pass) console.log(`            ${r.why}`);
   }
   console.log(`\n${out.cases_passed}/${out.cases_run} 例通过（${cases.filter((c) => c.kind === "正向").length} 正向 ＋ ${cases.filter((c) => c.kind === "阴性").length} 阴性）`);
-  console.log(out.all_pass ? "两个自检脚本都仍拦得住已知缺陷" : "有用例未通过：自检脚本存在漏检");
+  console.log(out.all_pass ? "三个自检脚本都仍拦得住已知缺陷" : "有用例未通过：自检脚本存在漏检");
 }
 process.exit(out.all_pass ? 0 : 1);

@@ -22,7 +22,7 @@
 
 `COMMUNITY-DISPLAY-ONLY` 是 `schema/proposal.schema.json` 的 `license` 枚举值之一，仓库未发布其规范条款文本。**本包不再对这个留空标识作解释，而是由权利人另行给出一项自足、可直接执行的授权（与 `proposal.md` 风险与合规一节完全同文）：对本包内容的任何使用，只要符合 CC BY-NC 4.0（署名、非商业、标明修改），即已获得作者许可**；署名时须一并保留「本方案为开放共创建议，不代表任何政府决定或审批结论」。组织方标识若日后被定义，以其为准。第三方素材不在此授权范围内：包内不含任何他人既有作品（无他人图片、无商业地图或 OSM、无商标或受保护版式）；唯一的非程序化图像素材是封面背景层，由纯文字提示词调用 gpt-image-2 生成、未向模型提供任何图片输入，见 manifest.json#rights_inventory 的 generated_illustration 与 sources.json#IMAGEGEN-COVER-ILLUSTRATION。包内唯一随包分发的第三方字体负载是四份 HTML 共用、嵌入本地 CSS data URI 的 Noto Sans CJK SC WOFF2 字符子集；作者授权不覆盖该字体，字体仅按 `visual/assets/governance/noto-cjk-subset.rights.json#license.text` 的 SIL OFL 1.1 分发，见 manifest.json#rights_inventory 的 web_font_assets 与 sources.json#FONT-NOTO-WEB。第三方进一步使用时仍须自行核验其中每条外部来源的原始权利状态。
 
-构建溯源：当前投稿包、四份 HTML、全部 26 张栅格图件、两份触觉 SVG 与四套共 38 页 PDF 均使用 `JING-ZHANG HANDOVER LINE / PACKAGE v2.0`（图纸另附页码）。PDF 第 2 页至末页的技术图面内容沿用既有技术基线，但其**图件内容修订来源**不再冒充投稿包版本；所有可见载体的投稿包身份统一为 v2.0。逐页核验见 `visual/assets/governance/pdf-version-report.json` 与 `version-stamp-report.json`，成果时效仍以 manifest 的 sha256 与 changelog 为准。
+构建溯源：当前投稿包、四份 HTML、全部 26 张栅格图件、两份触觉 SVG 与四套共 38 页 PDF 均使用 `JING-ZHANG HANDOVER LINE / PACKAGE v2.0`（图纸另附页码）。PDF 第 2 页至末页的技术图面内容沿用既有技术基线，但其**图件内容修订来源**不再冒充投稿包版本；所有可见载体的投稿包身份统一为 v2.0。除逐页可检索印记外，`version-audit.js` 还从 A0 中英首页抽取 4 张嵌入栅格并与当前 v2.0 源图逐像素比对，结果 4/4 完全一致。逐页核验见 `visual/assets/governance/pdf-version-report.json` 与 `version-stamp-report.json`，成果时效仍以 manifest 的 sha256 与 changelog 为准。
 
 v1.6 新增的 `visual/assets/governance/shift-ledger.schema.json` 为本方案原创的 JSON Schema Draft 2020-12 机器契约；`example-scn05-shift-ledger.json` 是合成、未执行且角色未授权的沙盒结构样例，不含个人数据，也不连接真实导航、政务、维护或告警服务。`validation-report.json` 仅记录 Schema 元模式与样例结构校验，不能据此声称路线、性能、安全、无障碍质量、法律合规、公众接受度或现场运行已经验证。
 

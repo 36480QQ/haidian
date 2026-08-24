@@ -521,10 +521,10 @@ function runNestedAudit(filename) {
   const result = runNestedAudit("version-audit.js");
   const problems = result.parsed && Array.isArray(result.parsed.errors)
     ? result.parsed.errors : [result.stderr || "无法解析 version-audit.js 输出"];
-  add("G7", "26 张图件、四套 38 页 PDF、四份 HTML 与两份触觉 SVG 的可见投稿包标识统一为 PACKAGE v2.0",
+  add("G7", "26 张图件、四套 38 页 PDF、A0 首页四张内嵌图、四份 HTML 与两份触觉 SVG 的可见投稿包标识统一为 PACKAGE v2.0",
       result.status === 0 && result.parsed && result.parsed.ok === true,
       problems.length ? problems.slice(0, 4).join("；")
-        : `${result.parsed.figure_count} 图件／${result.parsed.pdf_count} 套 ${result.parsed.pdf_page_count} 页 PDF／${result.parsed.static_deliverables_checked} 静态载体`);
+        : `${result.parsed.figure_count} 图件／${result.parsed.pdf_count} 套 ${result.parsed.pdf_page_count} 页 PDF／A0 内嵌图 ${result.parsed.a0_embedded_figure_pixel_matches}/4 像素一致／${result.parsed.static_deliverables_checked} 静态载体`);
 }
 
 /* H. sources.json 的字段深度——CLAUDE.md 记为与分数相关性最高的特征，缺一栏就是缺证据 */

@@ -93,7 +93,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "a30722654c5d309785af3fb7cde77c5357dffd8048264c04c806bac01e041621"
+      "sha256": "1ea359c6027dc5d50e768b8be8f55cfcc587d36b2c11ba73155e85864e0826cc"
     },
     {
       "path": "simulation.json",
@@ -111,13 +111,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "50d34bf524505dfafb76a1743b4e4b3bad5bd35b3be7ee27a6d50894470e874c"
+      "sha256": "d8b2a7de596593fbe638317a173e293d4ca576672d136e29e72bb6df49ec2532"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "051196ace390fc86bd7dc89a34d60d7f5e5ee25ff1460d8bbc11aa1c57613bb9"
+      "sha256": "97ad5104c3b9d829527b64fdd5fc827695ef772b15eb0e41f5e202b810509409"
     },
     {
       "path": "standard_matrix.json",
@@ -148,21 +148,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "d77a049e8dfcbf22075106848fb226c8d3d11b3622ca05048d03ee73fdfc1dc0"
+      "sha256": "aa288edd47d975fa0567afbd33f0bbc4ac2ae9b5cbd6710ee936605776d9a5cd"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "bf0e14cfe6506197bfb832d7bb17322a0852bb97e4c5554b5e0344436cf15c38"
+      "sha256": "106c7ea9444f21325c4f509a55d66ce95d59200bb251c0249586202a298ff730"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "c4fc4256d5b98eab590b07e1d6dd8f62b7a6d5ceff16af811875b289c9c9305f"
+      "sha256": "8662bb5632bef2118662962e28bc505e28a6748753431f52faf00eed4c8463cb"
     },
     {
       "path": "visual/index.html",
@@ -282,7 +282,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "b24d421814db14abc0c3d9d4bab38d510c331c7ce8d46f170f93416918f833c2"
+      "sha256": "7bffe4fc0e2ef1a9b002e56b3d8d6bec09117a393d6c8a0f8c5d6cf386e38c1b"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -290,7 +290,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "6bbc55c66c5c87015d3acb09f658326e4899805f42e84076a5c32eae8a5d682d"
+      "sha256": "0bedbb99e814053e98921c6f44e88e2f6610c4804d1f3254af56d3bc10917b15"
     },
     {
       "path": "visual/index.en.html",
@@ -405,7 +405,7 @@
       "role": "narrative",
       "required": false,
       "language": "neutral",
-      "sha256": "06271916736065e33dd837f4fc263b8167a8c0a359dd73a392451e29c385601e"
+      "sha256": "6e4057cd753580a40658a20abbaec31d96c793b79c7802580d5ef31acbe2f056"
     },
     {
       "path": "assets/figures/spatial-prototype.png",
@@ -489,21 +489,21 @@
       "path": "visual/assets/governance/claims-audit.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "efcf98d83b6c44d39f3862a89a46517518b46390bee31bb34d64fc798a224f50",
+      "sha256": "133b9c531773dca511eb8b2ede4b83ba86ce110dbd956a6de59cee5e65e8f62d",
       "title_zh": "正文数值声明审计器",
       "title_en": "Prose claim auditor",
       "description_zh": "只读、离线、零网络依赖的 66 项声明审计：复算指标、几何、二十单元、断面、布局对照、矩阵引用、来源深度、许可一致性、PDF 文字层、HTML 包内 CJK 字体与全载体 v2.0 可见版本。全部一致退出 0，任一回归退出 1。",
-      "description_en": "A read-only, offline, zero-third-party-dependency auditor with 64 checks across metrics, geometry, the twenty cells, sections, layout comparison, matrix references, source depth, licence consistency and PDF text layers. It locks identity ToUnicode on technical pages and the scale and valid destinations of the OFL Noto sparse ToUnicode maps on the v2.0 covers. All matches exit 0; any regression exits 1."
+      "description_en": "A read-only, offline, zero-third-party-dependency auditor with 66 checks across metrics, geometry, the twenty cells, sections, layout comparison, matrix references, source depth, licence consistency, PDF text layers, local CJK webfonts and visible v2.0 identity. It locks identity ToUnicode on technical pages and the scale and valid destinations of the OFL Noto sparse ToUnicode maps on the v2.0 covers. All matches exit 0; any regression exits 1."
     },
     {
       "path": "visual/assets/governance/audit-selftest.js",
       "role": "governance_validation",
       "required": false,
-      "sha256": "d979a650b6b2ec3cc5cc1dff7a7474775f825850609483035a4b3934c430984f",
+      "sha256": "aeceed542ee83b7480733e68e4d9d102a5332ba03b0a17dee22ba652c7588c3e",
       "title_zh": "自检脚本的回归测试",
       "title_en": "Regression test for the self-check scripts",
-      "description_zh": "对声明审计器与协议重跑器做 45 例回归测试：2 例正向锁定 66 项声明、12 账、96 规则与 48 断言；43 例阴性逐一注入已知缺陷并要求对应检查失败，其中新增无本地字体、缺字形、版本报告倒退与触觉页脚倒退四例。注入只写系统临时目录，不改投稿包。",
-      "description_en": "A 45-case regression test for the claim auditor and protocol re-runner: two positive cases lock 66 claim checks, 12 ledgers, 96 rules and 48 assertions; 43 negative cases inject known defects one by one, including missing local font CSS, a missing glyph, a reverted version report and a reverted tactile footer. Mutations stay in the system temporary directory and never alter the package."
+      "description_zh": "对声明审计器、版本审计器与协议重跑器做 46 例回归测试：2 例正向锁定 66 项声明、A0 内嵌图 4/4 像素一致、12 账、96 规则与 48 断言；44 例阴性逐一注入已知缺陷并要求对应检查失败，其中包括交换 A0 首页预期源图以验证栅格版本绑定。注入只写系统临时目录，不改投稿包。",
+      "description_en": "A 46-case regression test for the claim auditor, version auditor and protocol re-runner: two positive cases lock 66 claim checks, 4/4 pixel-identical embedded A0 figures, 12 ledgers, 96 rules and 48 assertions; 44 negative cases inject known defects one by one, including swapping the expected A0 source figures to test raster-version binding. Mutations stay in the system temporary directory and never alter the package."
     },
     {
       "path": "assets/figures/shift-ledger.png",
@@ -722,7 +722,7 @@
       "path": "visual/assets/governance/version-audit.js",
       "role": "verification_script",
       "required": false,
-      "sha256": "fd0d4230243954172fb1729a8f9df0e007cbcf1aeba11029bbccb532e78c3e3a"
+      "sha256": "86604486095fa74e4e5ff790d8c155cd017deb3f06405ebba85ea8b71d0ad436"
     },
     {
       "path": "visual/assets/governance/version-stamp-report.json",
@@ -734,7 +734,7 @@
       "path": "visual/assets/governance/pdf-version-report.json",
       "role": "asset",
       "required": false,
-      "sha256": "69af88bf0245529c3f2d6c86592e311f4dacc61951c91b97962ac3b30e7da355"
+      "sha256": "2908adbd3397455971ffb8aad126783fff081c592df02acf169ab9abe5991e3e"
     },
     {
       "path": "visual/assets/governance/noto-cjk-subset.css",
