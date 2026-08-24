@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v1.10 - 2026-08-24
+
+- Rebuilt the five bilingual primary figures and all bilingual A0/A3 review pages as distinct language-specific assets; removed blank-title/placeholder graphic treatment and added visible concept, boundary and specialist-review notes.
+- Embedded a local offline Chinese-glyph stylesheet in the static reports and Chinese visual index, so review does not depend on a reviewer machine's CJK font availability.
+- Repaired the English R04 atlas, added an explicit Chinese/English five-scale counterpart, and added a responsibility/handoff matrix covering G0–G3, decision ownership, retained records and the non-survey/non-construction status of all relationship dimensions.
+- Added the "three zones, two wings and regional interfaces" matrix: the Zhongguancun technology-service wing, Xiaoyue River scenario wing and regional observation window are explicitly framed as suggested research interfaces rather than existing partnerships, governmental commitments or delivery claims.
+
 ## v1.9 - 2026-08-23
 
 - Reframed R04 Open Knowledge Front Desk as the first readable review conclusion: a 120m conceptual public route, four decision points, one accessible service bay and a bounded 100-day sequence, all explicitly pending survey, rights and specialist review.
