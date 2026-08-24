@@ -24,5 +24,5 @@ The video is a **conceptual ambience piece, not spatial evidence**. Every frame 
 ## 权利 / Rights
 
 - 视频及海报帧按包级 `COMMUNITY-DISPLAY-ONLY` 许可提交本次征集展示与评审。
-- 字体为操作系统自带微软雅黑与 matplotlib 内置 DejaVu Sans，仅本地渲染使用，不再分发字体文件。
+- HTML 交付物按 SIL OFL 1.1 分发 Noto Sans SC 子集字体（assets/fonts/，仅覆盖实际用字），保证无 CJK 字体环境离线正确渲染；PDF 与视频由 matplotlib 本地渲染，使用系统自带微软雅黑与内置 DejaVu Sans，不再分发其字体文件。
 - 详细生成链与工具链版本见 `report/copyright_statement.md` 与 `sources.json` 条目 `SRC-MEDIA-RENDER-V11`。
