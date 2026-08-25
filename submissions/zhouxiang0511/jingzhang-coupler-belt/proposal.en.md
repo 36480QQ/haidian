@@ -64,6 +64,10 @@ The plain-language translation of the "coupler": **the automatic coupler is the 
 
 **Naming system** (all conceptual suggestions): the main line (the vitality main axis of the heritage park), the three stations (the key areas), the two wings (the Zhongguancun Technology Services Wing / the Xiaoyuehe Scenario Enablement Wing), the switches (east–west stitching corridors), the crossing stations (community nodes), the coupler (the standard interface), and interlocking (safe governance). The logo takes "coupler + main line" as its motif: two parallel rails and an interlocking hook shape form a symbol isomorphic with the "JZ" initials and "∞" (interoperability); the palette uses steel cyan-blue + signal amber + rail gray. The final graphic must be rights-cleared and deepened by a professional design team [depth:overall_spatial_structure].
 
+**Brand Standards (v0.9, Logo direction)**: the primary lockup is the "coupler + main line" isomorphic graphic (JZ/∞), in three variants — primary lockup / horizontal version / icon; the standard palette is steel cyan-blue #16324F (track and technology), signal amber #E8A13D (safety and vitality), rail gray #8A94A0 (historical base), and paper white #F4F7FA (interface); for Chinese, Source Han Sans / DengXian is suggested, and Inter for English; the clear space is no smaller than the coupler-ring diameter, with a minimum size of 24 px; applications cover station signage, wayfinding, digital interfaces, and event visuals. **The final graphic and typefaces must be finalized and rights-cleared by a professional design team** (see `report/copyright_statement.md`) [depth:overall_spatial_structure].
+
+![Brand standards: Logo finalization direction · standard colors · typefaces · variants](assets/figures/brand-standards.en.png)
+
 ![A century on the timeline: from rail to intelligent rail (1909–2026)](assets/figures/timeline.en.png)
 
 The three positioning statements (the centennial Jingzhang cultural belt, the urban AI lifestyle experience belt, and the AI convergence innovation belt) and the five functions (the full-stack AI independent innovation system, a world-class AI innovation ecosystem, a new paradigm of AI-enabled scenario empowerment, an intelligent and vibrant AI city, and global discourse power in AI governance) form the strategic framework [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
@@ -211,6 +215,15 @@ Each scenario card registers "location mapping — target users — operational 
 
 **Scenario compliance constraints**: operational data is limited to public or authorized aggregated data; for scenarios involving public service matters such as healthcare, social security, financial business, and utility payments, under Article 39, paragraph 2 of the *Barrier-Free Environment Construction Law* they **retain on-site guidance and manual service channels**, which does not generalize to the requirement that all scenarios must be handled manually [standard:BARRIER-FREE-ENVIRONMENT-LAW]; AI-generated content is marked as synthetic in accordance with Article 12 of the *Interim Measures for the Management of Generative Artificial Intelligence Services*, and services that face the public and have public-opinion attributes or social-mobilization capability carry out safety assessments and algorithm filings in accordance with law [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
+### Pre-Pilot Baseline Research and Trial Design
+
+The proposal is currently at the conceptual mechanism level; before entering on-site pilots, the following **professional review and baseline calibration** must be completed (trigger condition 4; responsibility: shared):
+
+- **Professional review checklist**: data protection (authorization and minimization, retention period), accessibility (baseline of accessibility-task success rate), traffic safety (safety audit of low-speed delivery / feeder services), cultural relic protection (railway heritage sites and heritage-protection nodes), algorithm compliance (generative-AI labeling and filing boundaries), operation authorization (entities and permits), and emergency stop (interlocking three lights and human-takeover drills);
+- **Baseline research method (conceptual)**: taking the ~70 communities / ~450,000 residents along the park and the passenger flows of the three stations as the population, conduct a stratified-sample demand-and-use baseline survey (residents / commuters / students / merchants / older adults / people with disabilities / visitors), collecting service radius, visit frequency, expected functions, and concerns;
+- **KPI calibration**: use the baseline data to calibrate the fairness goals (accessibility-task success rate ≥ 95%, etc.) and the "500–800 m node" assumption (A-PHASING-NODE-001), and during the pilot period evaluate per "baseline — intervention — re-test" and publish the results;
+- **Trial design**: each test scenario (SC-04/07/08/10) runs in a "pass/stop criteria + controlled environment + human takeover" manner, with results and data-governance records written back into `visual/assets/scenario-cards.json`.
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 The land-use zoning generates a conceptual layout based on the logic of the national territorial land-and-sea use classification, covering the entire site without overlap [data:geometry/land_use.geojson#LU-001] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]. The classification codes are taken from the **project enumeration subset** compiled by the repository maintainers (`brief/site-package/enums/land_use_codes.json`, derived from the official code system of the *Classification Guide*); the complete official annex of the classification code table has not yet entered the local snapshot, so this proposal lists that code table as **material to be supplied (data_gap)** and does not fabricate unregistered codes [depth:risk_missing_data].
@@ -322,6 +335,15 @@ Floor area ratio and building height depend on undisclosed regulatory-plan condi
 - **Intellectual property**: under the announcement's intellectual-property clause, the intellectual property of the submitted works is jointly held by the organizer/co-organizer and the entrant, with the entrant holding the right of attribution; this proposal contains no unauthorized trademarks, typefaces, images, portraits, or paper figures; see `report/copyright_statement.md` for the copyright statement [source:OFFICIAL-ANNOUNCEMENT] [depth:risk_missing_data].
 - **Accessibility and inclusion**: the manual service requirement of Article 39, paragraph 2 of the *Barrier-Free Environment Construction Law* is implemented in AI+ healthcare/social-security/finance/payment scenarios; intelligent and traditional services run in parallel [standard:BARRIER-FREE-ENVIRONMENT-LAW].
 - **Materials to be supplemented**: official boundary, regulatory-plan conditions, road red lines, ownership, municipal, and engineering materials are to be recalculated as a whole once official/rights-cleared documents are available (see the checklists in `assumptions.json` and `risk.json`).
+
+### Conditional-Trigger Response (Data gaps · Responsibility · Action)
+
+| Trigger condition | Responsibility | Action |
+| --- | --- | --- |
+| The organizer publishes the official three-level scope / key-area polygon | participant | Replace the provisional boundaries per the recalculation trigger in `assumptions.json`; recalculate the area / green ratio / public-space ratio / key-area areas, redraw all figures, and record version differences |
+| Official regulatory-plan / red-line / ownership / municipal / fire-safety / heritage-protection / existing-building materials are obtained | shared | Professional teams review land use, demolish–renovate–retain, transport, municipal works, capacity, phasing, and engineering feasibility; related metrics remain unknown until then |
+| The 2026 fact and case sources pass central source_registry review | organizer | Upgrade the corresponding entries from background / pending-review to formal evidence and sync the status in the main text (application channel: Issue #3963) |
+| Any AI scenario enters an on-site pilot | shared | Complete the professional reviews of data protection / accessibility / traffic safety / heritage protection / algorithm compliance / operation authorization / emergency stop, and calibrate KPIs and node assumptions against a real-user baseline (see "Pre-Pilot Baseline Research and Trial Design") |
 
 ## References
 
