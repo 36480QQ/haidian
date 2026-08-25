@@ -60,6 +60,7 @@
         "submissions/Sonike/jingzhang-handover-line/assets/media/guided-tour.md",
         "submissions/Sonike/jingzhang-handover-line/assets/media/guided-tour.mp4",
         "submissions/Sonike/jingzhang-handover-line/assets/media/guided-tour.vtt",
+        "submissions/Sonike/jingzhang-handover-line/assets/media/technical-evidence-book.md",
         "submissions/Sonike/jingzhang-handover-line/assets/tactile/tactile-corridor-map.en.svg",
         "submissions/Sonike/jingzhang-handover-line/assets/tactile/tactile-corridor-map.svg",
         "submissions/Sonike/jingzhang-handover-line/assumptions.json",
@@ -91,15 +92,30 @@
         "submissions/Sonike/jingzhang-handover-line/simulation.json",
         "submissions/Sonike/jingzhang-handover-line/sources.json",
         "submissions/Sonike/jingzhang-handover-line/standard_matrix.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/apply-land-use-patterns.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/audit-selftest.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/build-champion-figures.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/build-champion-pdfs.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/build-webfont.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/claims-audit.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/example-scn05-shift-ledger.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/figure-contrast-report.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/land-use-pattern-audit.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/measurement-protocol.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/measurement-protocol.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/model-shadow-run.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/noto-cjk-subset.coverage.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/noto-cjk-subset.css",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/noto-cjk-subset.rights.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/p0-delivery-contract.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/p0-readiness-audit.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/package-integrity-gates.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/pdf-version-report.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/protocol-check-runner.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/public-benefit-gate.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/public-service-equivalence-audit.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/public-service-equivalence-contract.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/review-3825-readiness-matrix.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/rights-inventory.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/role-spec.schema.json",
@@ -107,6 +123,9 @@
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/shift-ledger-suite.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/shift-ledger.schema.json",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/validation-report.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/version-audit.js",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/version-stamp-report.json",
+        "submissions/Sonike/jingzhang-handover-line/visual/assets/governance/webfont-audit.js",
         "submissions/Sonike/jingzhang-handover-line/visual/assets/public-handover-table-3d.json",
         "submissions/Sonike/jingzhang-handover-line/visual/index.en.html",
         "submissions/Sonike/jingzhang-handover-line/visual/index.html"
@@ -114,7 +133,7 @@
       "ai_package_stages": {
         "submissions/Sonike/jingzhang-handover-line": "formal"
       },
-      "total_bytes": 20115821,
+      "total_bytes": 21951424,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -174,7 +193,11 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.198434,
-        "public_space_ratio": 0.09106
+        "public_space_ratio": 0.09106,
+        "p0_entry_gate_count": 8.0,
+        "public_benefit_group_count": 6.0,
+        "planned_equity_cotest_session_min_count": 24.0,
+        "accessibility_requirement_fixture_coverage_ratio": 1.0
       }
     },
     "stderr": ""
@@ -188,15 +211,15 @@
       "summary": {
         "standard_matrix_items": 10,
         "design_depth_items": 15,
-        "known_metric_refs_required": 56,
+        "known_metric_refs_required": 72,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 36,
-          "standard": 10,
-          "depth": 15,
-          "data": 15,
-          "metric": 27
+          "source": 7,
+          "standard": 7,
+          "depth": 11,
+          "data": 4,
+          "metric": 31
         }
       }
     },
