@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4b0bd987c5e0ac7a1d2cb2e394c98deea85eba913903447d0e71f566e468aff7"
+      "sha256": "6b0c945ee83f4d1f44c63bd6543f86f85dfd4a45e781208b7063ea292b4a6dfd"
     },
     {
       "path": "agent.json",
@@ -44,7 +44,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "5f30c4483c603208393a31fd271e73599409dd599ddea3466b687cd39e4a6e1a"
+      "sha256": "a9e2abd7e1670ce9a69cd23d91f2ad9b92a8f49a76b85a94c620b47ef0acc8c6"
     },
     {
       "path": "sources.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "592e63c312b6f8318bc8c47628045b584a9812eb36d8062d255b6e5cfe28bbe6"
+      "sha256": "5a4811e188000b87ae86241923ef0249cbd851bc4ae45b350c55bb51393a4fbb"
     },
     {
       "path": "compliance_matrix.json",
@@ -74,14 +74,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "a8572dbfc8373929622c6e07986bf0903bee3a6025fd4c2fba071e11acd41aeb"
+      "sha256": "757df04925caf170f9ed3b32ecd54ed7e076ddd40dbe8e3b47d33d8960489cec"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e0dc50b32a5eacd643fc8412d4f29ee4a001ec4cc0ddf4e8d9c4755228d406fb"
+      "sha256": "420c00a45afec91fe63031f0fcbe5d05bfcf09f18c289478c911750c75ff90fc"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "6364d1c351f877ba3c75d7a24977fd30b1092b6e23bafef09b89d2ac05e99cb8"
+      "sha256": "14a8327c9b1128df925338fb339460c3e311666f6a62474f8077a5fb7984bed9"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d2282e63f195b03e2b78bb472bf9cd8545acf4eff915f89577d2bc100f582f56"
+      "sha256": "666b085c80766770632acb60efd78f9e6258db32eeb817e2081210a9998e0077"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "baa6497f76e47f0104a65075788fdc08f1bbc89bfe54a2bc46b00abada895c47"
+      "sha256": "7839d1a2a4bbdd0dbc1d92efb4dfcde7cd1e4a39c372f8d85e567c2b01864d29"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "2f762a8e669b44c0f9553565a443c5efb91b672c532bcf7226631265c2419d2f"
+      "sha256": "fa4d15289007c769963fcb871cd975cbe40a477c62b7565ad7ac13e0f8d40525"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "875f282d5a41095d695d2bfebacfe36a9c19e53fce3b959de7e17969ce7f33ab",
+      "sha256": "c17016f15431a384e4157d0e0855c1e62a5035108940c2e09f3b9c2085ebd1ed",
       "language": "neutral"
     },
     {
@@ -521,7 +521,7 @@
       "path": "visual/assets/fonts.css",
       "role": "asset",
       "required": false,
-      "sha256": "05c494cb440542977d1013871459babf13f90b4eff348cea89cc49facfb6eb64",
+      "sha256": "273b06998057b6e147e13d961bf8b9f20e0c15cd352b1e6fed60269c14107fbb",
       "title_zh": "嵌入式 Noto Sans SC 子集样式（评审渲染用）",
       "title_en": "Embedded Noto Sans SC subset stylesheet for reviewer-side rendering",
       "description_zh": "按 SIL OFL 1.1 分发（许可全文见文件头注释）；base64 嵌入字符子集，供无 CJK 字体环境离线正确渲染中文。",
@@ -547,7 +547,7 @@
       "title_en": "Qi-as-Data Protocol v0.1",
       "description_zh": "四步治理协议 + 七条规则 + 156 项离线演练记录（解析双语场景卡表逐项检查，全通过，可复算）。",
       "description_en": "Four-step governance protocol, seven rules, and a 156-check offline drill record parsed from the bilingual scenario tables (all passing, recomputable).",
-      "sha256": "312d45bdaad98e6fd83f0e38e2f3ae2c4f7aa33ccc0b5370d98b81446dfe8f92"
+      "sha256": "ce6f734cf9e1ae726f7201eeb2ae48cff270d4d4dd1d1e3d9514b61cec339a80"
     },
     {
       "path": "visual/assets/a11y-color-check.json",

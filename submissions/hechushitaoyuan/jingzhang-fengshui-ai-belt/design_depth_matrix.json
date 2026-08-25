@@ -652,6 +652,152 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "五大风险责任化+缺资料清单挂 A-GEOM-001"
+    },
+    {
+      "item_id": "pilot_phase_1_taskbook",
+      "title_zh": "一期试点任务书",
+      "title_en": "Phase-1 pilot taskbook",
+      "professional_dimension": "实施",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "一期最小试点任务书（可直接启动的概念稿）"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/phasing.geojson"
+      ],
+      "metric_refs": [
+        "greenway_length_m",
+        "phase_1_green_ratio",
+        "phase_1_public_space_ratio"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "BOUNDARY-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-IMPL-001",
+        "A-BUDGET-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "若一期进入门通过，则按南段绿道与罗盘广场的最小任务书启动，并保留暂停与退出状态。",
+      "evidence_summary_en": "If the Phase-1 entry gate passes, the pilot starts from the minimum south-greenway and Compass Plaza taskbook with suspended and exit states."
+    },
+    {
+      "item_id": "o_and_m_tiers",
+      "title_zh": "年度运维成本级",
+      "title_en": "Annual O&M cost tiers",
+      "professional_dimension": "实施",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "一期最小试点任务书（可直接启动的概念稿）"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/phasing.geojson"
+      ],
+      "metric_refs": [
+        "work_package_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK"
+      ],
+      "assumption_ids": [
+        "A-BUDGET-001",
+        "A-FUNDING-SOURCE-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "若相应试点启动并进入运营，则以 S/M/L 成本级登记运维责任，深化阶段转为可审计清单。",
+      "evidence_summary_en": "If corresponding pilots launch and enter operation, O&M responsibility is recorded by S/M/L tiers and converted to auditable lists at deepening."
+    },
+    {
+      "item_id": "qi_protocol_evolution",
+      "title_zh": "气数协议演进",
+      "title_en": "Qi-as-Data protocol evolution",
+      "professional_dimension": "AI 治理",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "气数协议 v0.1 版本演进与社区修订"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson"
+      ],
+      "metric_refs": [
+        "qi_protocol_rule_count",
+        "qi_protocol_check_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "A-GOV-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "若协议进入试点应用，则由独立复核者主持会审并绑定 QP-3/QP-5 的模型卡与数据卡字段。",
+      "evidence_summary_en": "If the protocol enters pilot application, the independent reviewer chairs joint review and binds QP-3/QP-5 to model-card and data-card fields.",
+      "governance_ref": "visual/assets/governance/qi-protocol.json"
+    },
+    {
+      "item_id": "palette_remediation",
+      "title_zh": "色板整改",
+      "title_en": "Palette remediation",
+      "professional_dimension": "视觉无障碍",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "无障碍核验与色板整改说明"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson"
+      ],
+      "metric_refs": [
+        "a11y_color_pair_count",
+        "a11y_color_pair_fail_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "SOURCE-REGISTRY",
+        "PROCESSED-FACT-PACK"
+      ],
+      "assumption_ids": [
+        "A-INCLUSION-001"
+      ],
+      "self_check_ids": [
+        "VISUAL_STATIC"
+      ],
+      "evidence_summary_zh": "已按承诺方法完成整改并登记残差例外，文字冗余编码继续兜底。",
+      "evidence_summary_en": "Remediation has been completed by the committed method with residual exceptions logged and textual redundant coding retained.",
+      "a11y_ref": "visual/assets/a11y-color-check.json"
     }
   ]
 }
