@@ -10,7 +10,10 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/Cyrus580529/moontrack-ai-innovation-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/spatial.json: items[6]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/spatial.json: items[7]: provisional spatial concept needs maintainer review before being treated as public-facing context",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/spatial.json: items[8]: provisional spatial concept needs maintainer review before being treated as public-facing context"
       ],
       "proposal_files": [
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/proposal.md"
@@ -32,6 +35,8 @@
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/key-areas.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/land-use-structure.en.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/land-use-structure.png",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/machine-accessibility.en.png",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/machine-accessibility.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/metrics-evidence.en.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/metrics-evidence.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/mobility-bluegreen.en.png",
@@ -73,6 +78,7 @@
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/self_check.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/simulation.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/sources.json",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/spatial.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/standard_matrix.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/visual/assets/network-analysis.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/visual/assets/verify-geometry.js",
@@ -83,7 +89,7 @@
       "ai_package_stages": {
         "submissions/Cyrus580529/moontrack-ai-innovation-belt": "formal"
       },
-      "total_bytes": 22384868,
+      "total_bytes": 23625116,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -162,15 +168,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 50,
+        "known_metric_refs_required": 53,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 33,
+          "source": 34,
           "standard": 4,
           "depth": 15,
           "data": 19,
-          "metric": 51
+          "metric": 54
         }
       }
     },

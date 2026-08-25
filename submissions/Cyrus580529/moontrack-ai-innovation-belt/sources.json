@@ -366,6 +366,19 @@
       "citation": "OpenStreetMap contributors, nodes tagged railway=station and ways tagged railway=rail/subway within 39.955-40.045N, 116.290-116.400E, Overpass 'out geom' query, 2026-08-25, ODbL 1.0",
       "usage_note": "用于区域协同一节的空间底盘测算:带内与近带轨道站点计数、带内轨道里程、门户站到范围边界的距离,以及旗舰驿站到最近站点的距离。复算脚本为 analysis_region.py。",
       "risk_note": "OSM 站点为社区测绘,站名与出入口位置可能与官方资料存在出入;站点是否'落在带内'取决于临时粗略边界,官方边界发布后须重算。本数据不进提交图层。"
+    },
+    {
+      "id": "moontrack-machine-accessibility",
+      "title": "机器可达率测算(本方案自算)",
+      "type": "dataset",
+      "path": "proposal.md",
+      "url": "https://github.com/open-city-ai/haidian",
+      "publisher": "本方案 analysis_index.py",
+      "published_at": "computed 2026-08-25",
+      "public_status": "confirmed-public",
+      "citation": "MoonTrack, analysis_index.py, pair-based machine accessibility over 1,619 destinations, inputs: package GeoJSON + OSM footways, 2026-08-25",
+      "usage_note": "用于核心主张一节的与驿站无关口径:接入率、机器可达率及其步行网对照。输入全部为本包图层与公开 OSM 数据,任何团队可重算。",
+      "risk_note": "结果继承 OSM 测绘完整性与 8 m 吸附容差的限制(A-NET-001 至 A-NET-004、A-IDX-001 至 A-IDX-003);两两口径下碎裂按平方进入结果,须与接入率并读,不得单独引用。"
     }
   ]
 }

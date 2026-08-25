@@ -702,6 +702,54 @@
       "assumptions": [
         "A-SIM-004: a task record is audit-complete only if every metre travelled is already legal right-of-way and, where a terminal gap remains, this proposal names the human handover party. Proposed links, footway permission, and destinations with no named handover party are counted as incomplete."
       ]
+    },
+    "machine_accessibility_rate": {
+      "status": "known",
+      "value": 0.006905,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "sum(C(n_i,2) for components i) / C(N,2), N=1619, terminal cap 150 m, legal cycleway network",
+      "confidence": "medium",
+      "assumptions": [
+        "A-IDX-001: pair-based rate over 1,619 real destinations; a pair counts as reachable only if both terminal gaps are within the cap and both sit in the same connected component. No origin is assumed, so the figure does not move with depot siting.",
+        "A-IDX-002: cycleway geometry is OSM-derived; completeness limits apply as registered in A-NET-001 to A-NET-004."
+      ]
+    },
+    "machine_accessibility_attach_rate": {
+      "status": "known",
+      "value": 0.231624,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(terminal_gap <= 150 m) / N, N=1619, legal cycleway network",
+      "confidence": "medium",
+      "assumptions": [
+        "A-IDX-001: pair-based rate over 1,619 real destinations; a pair counts as reachable only if both terminal gaps are within the cap and both sit in the same connected component. No origin is assumed, so the figure does not move with depot siting.",
+        "A-IDX-003: attachment measures only the local terminal condition and says nothing about whether attached destinations connect to one another."
+      ]
+    },
+    "machine_accessibility_rate_if_footways": {
+      "status": "known",
+      "value": 0.08607,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/buildings.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "same pair-based rate computed on the cycleway network merged with OSM footways, steps excluded",
+      "confidence": "low",
+      "assumptions": [
+        "A-IDX-001: pair-based rate over 1,619 real destinations; a pair counts as reachable only if both terminal gaps are within the cap and both sit in the same connected component. No origin is assumed, so the figure does not move with depot siting.",
+        "A-SIM-005: OSM footway mapping here is fragmented, so this is a lower bound and its component structure is a data-quality artefact."
+      ]
     }
   }
 }

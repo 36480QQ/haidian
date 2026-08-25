@@ -210,6 +210,24 @@
       "status": "measured_and_disclosed",
       "statement": "Round C merges OSM footway geometry into the cycle-lane graph with steps excluded, because steps are impassable to both delivery robots and wheelchairs.",
       "impact": "OSM footway mapping in this area is fragmented into many stub side-segments, so round C's connectivity is a lower bound and its success count must not be read as 'permitting footways makes delivery work'. Round C is evidence about terminal distance only; its component structure is a data-quality artefact."
+    },
+    {
+      "id": "A-IDX-001",
+      "status": "measured_and_disclosed",
+      "statement": "Machine accessibility is a pair-based rate over 1,619 real destinations (1,562 OSM building footprints, 50 universities, 5 elderly-care facilities, 2 industry anchors). A pair counts as reachable only if both terminal gaps fall within the cap and both destinations attach to the same connected component.",
+      "impact": "The measure assumes no origin, so unlike every other figure in this proposal it does not move when the depot moves. It is deliberately harsh: fragmentation enters quadratically, which is arithmetically correct for pairwise service but means the rate falls much faster than the attachment rate. Both are reported together for that reason."
+    },
+    {
+      "id": "A-IDX-002",
+      "status": "assumed_and_flagged",
+      "statement": "The 150 m terminal cap used for the headline rate is this proposal's own service standard, matching the dispatch ledger, not a regulatory threshold.",
+      "impact": "At a 100 m cap the rate falls to 0.17%; at 250 m it rises to 3.34%. The ordering of the comparison against the footway counterfactual holds at every cap tested, so the conclusion does not depend on the choice, but the absolute figure does."
+    },
+    {
+      "id": "A-IDX-003",
+      "status": "measured_and_disclosed",
+      "statement": "Attachment rate and accessibility rate measure different things: attachment is local (can this door reach the network at all), accessibility is global (can two doors reach each other).",
+      "impact": "Reporting only the accessibility rate would overstate the severity, and reporting only attachment would hide it. At a 150 m cap 23.2% of destinations attach, yet only 0.69% of pairs are mutually reachable - the gap between the two numbers is the fragmentation itself."
     }
   ]
 }

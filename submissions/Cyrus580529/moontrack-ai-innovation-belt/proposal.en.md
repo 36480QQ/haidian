@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "MoonTrack: pricing the right-of-way rule as an object. Measured connectivity across 421 cycleway segments finds the network broken into 62 components, with zero of five elderly-care facilities reachable along legal right-of-way. Measuring the same 1,619 doors again gives a median terminal distance of 82.8 m on foot against 249.6 m for a robot - that gap is what the 'cycle lanes only' rule costs. Hence a comparable policy sequence: change the rule first (no construction, 6.5x reachable network), then close 596 m of links, then do the terminals. A 30-task dispatch ledger recomputes it all on the measured graph."
+summary: "MoonTrack: embodied AI runs on permission, not on compute. Across 1,619 real destinations in the belt, a compliant low-speed device can travel between only 0.69% of door pairs - 23.2% of doors reach the legal network, but those that do are scattered across disconnected clusters. On the walking network the same doors give 8.61%, a factor of 12.5: that gap is what the 'cycle lanes only' rule costs. Hence the claim: the first AI infrastructure this belt needs is a machine-readable, revocable layer of right-of-way data, not another sandbox. Every conclusion recomputes inside the package."
 tracks: ["robotics-autonomous-mobility", "ai-traffic-walkability", "ai-public-services"]
 scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation"]
 ---
@@ -665,6 +665,64 @@ The ledger as a whole belongs to the standard scenario `robot-delivery-low-speed
 Not one engineering record for pipes, energy, drainage, flood control or fire has been published, so facility standards, service radii and capacity checks are not attempted in this round; any figure would be invented. Three things hold nonetheless without engineering data.
 
 First, edge-compute nodes and elderly-service points should share existing public service facilities rather than occupy new standalone buildings — the same reversibility principle as the scenario cards, where all six robot cards use existing facilities and none requires a purpose-built structure. Second, `geometry/constraints.geojson` still holds a single placeholder feature and no control conditions; it is the thinnest layer in this package and must be replaced wholesale by authority-supplied pipe, blue-line, green-line and heritage boundaries [data:geometry/constraints.geojson#CONSTRAINTS]. Third, utility conditions are a hard precondition for JZ-04 and JZ-05, so both are flagged as dependency-unresolved on the project list [depth:municipal_new_infrastructure].
+
+## The core claim: what this belt actually lacks is a machine-readable layer of right-of-way
+
+The preceding sections computed one scenario to the end. This one states what it points to in general - **this is the thing this proposal argues for.**
+
+### First, one figure that does not depend on the depot
+
+Every conclusion so far rests on a depot location, and a reviewer is entitled to ask what happens if the depot moves. So here is a measure that **assumes no origin at all**.
+
+Take the 1,619 real destinations inside the belt (1,562 building footprints, 50 universities and research institutes, 5 elderly-care facilities, 2 industry anchors). Two destinations are mutually reachable only if both terminal gaps fall within the cap and both attach to the same connected component.
+
+**Machine accessibility rate = mutually reachable pairs / all pairs of destinations.** Pick any two doors: can a compliant low-speed device get from one to the other?
+
+| Terminal cap | Attachment rate (doors that reach the network) | Machine accessibility (any two doors) | With footways permitted | Ratio |
+| --- | --- | --- | --- | --- |
+| 100 m | 11.4% | 0.17% | 4.25% | 24.7x |
+| **150 m (this proposal's standard)** | **23.2%** [metric:machine_accessibility_attach_rate] | **0.69%** [metric:machine_accessibility_rate] | **8.61%** [metric:machine_accessibility_rate_if_footways] | **12.5x** |
+| 250 m | 50.5% | 3.34% | 13.95% | 4.2x |
+
+**23.2% and 0.69% have to be read together.** 23.2% of doors do reach the legal network, which on its own is not catastrophic. But the doors that attach are scattered across clusters that do not connect to each other - the largest holds 107 doors - so only 0.69% of pairs are mutually reachable. **The gap between those two numbers is the fragmentation itself.**
+
+The measure is deliberately severe: fragmentation enters a pairwise rate quadratically. That is why both numbers are given side by side - reporting only the second overstates, reporting only the first conceals (A-IDX-003).
+
+![Machine accessibility: how connected this belt is to compliant devices](assets/figures/machine-accessibility.en.png)
+
+### The finding is not "robots do not work", it is "permission cannot be queried"
+
+0.69% is low enough to need explaining. It is not low **because the technology is weak** - for the same doors, the attachment rate on foot is 77.5%. It is low because:
+
+**Embodied AI runs on permission, not on compute.** A low-speed delivery vehicle has had sufficient compute for years. It cannot move because **the ground it is permitted to cross is broken into pieces.** For this class of device the scarce resource is not chips, models or data; it is continuous legally traversable space.
+
+And that permission exists today only as prose. The Beijing interim measures require these vehicles to travel within cycleways at no more than 15 km/h [source:beijing-delivery-robot-management-measures], with pilot segments designated separately by the district. Those sentences are clear to a person and **unqueryable by a machine**: no interface answers "this segment, this device class, right now - permitted or not?". The consequence is that every operator guesses and surveys again, and every pilot re-derives the same map. The work behind this proposal is one sample of that cost.
+
+### Therefore: a machine-readable right-of-way layer
+
+**This proposal argues that the first piece of AI infrastructure this belt needs is not another sandbox or compute node, but a machine-readable layer of right-of-way data.**
+
+Its content is four answers, segment by segment: **which segment, which device class, what speed limit, what hours** - plus one more: **revocable.** In form it is an open dataset and a permission query interface, not a building and not a parcel.
+
+That connects three things this proposal has already argued:
+
+**One, it turns scenario access from signing into licensing.** Opening a scenario stops being a memorandum and becomes **the grant of a queryable, time-bounded, revocable right of way.** The earlier suggestion - overlay a scenario use-right rather than create a new land-use class - is exactly this, and the readable layer is its technical carrier.
+
+**Two, it makes rule changes measurable.** Machine accessibility is an indicator that can be published monthly: open a footway segment, close 596 m of links, adjust a time window, and the figure moves by a computable amount. The policy-lever table - speed does nothing, footway permission 6.5x, new links 1.79x - is that indicator's first use. **For the first time a rule and a capital work sit on the same comparison sheet.**
+
+**Three, it makes reversibility genuinely executable.** Withdrawing a failed pilot means withdrawing a data record, not demolishing a route. That is more complete than any written exit clause.
+
+### This is not only useful to robots
+
+The same layer serves wheelchairs, walking frames, prams and wheeled luggage, which are bound by the same gradient, clear-width and continuity constraints. The terminal distances measured here are a median of 420 m for elderly-care facilities and 249.6 m across all 1,562 buildings; those figures do not distinguish whether the user is a person or a machine. **Make right-of-way readable and the first beneficiaries are people with limited mobility. The robot is simply what exposed the problem first.**
+
+That is also why accessibility and elderly care sit in the flagship position here rather than in a paragraph under public interest: they are not an accompaniment, they are the same problem.
+
+### What this proposal does not claim
+
+It does not claim any specific segment is passable - that needs field verification. It does not claim who should build or maintain this layer - that is for the competent authorities. It does not claim machine accessibility should reach any particular target - this proposal supplies the current baseline and the method, and the target belongs to public discussion. **What this section offers is an object that deserves discussion, not a fully argued implementation plan.**
+
+The computation is `analysis_index.py` [source:moontrack-machine-accessibility], taking this package's GeoJSON and the public OSM footway network [source:osm-footways-walking-network] as input; any team can recompute it on its own corridor.
 
 ## Blue-Green Space, public space and Urban Character
 
