@@ -1021,7 +1021,19 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "proposal.md 的对应章节、五张核心图、A3/A0 图册、结构化图层与状态清单共同回应 agent.2；官方数据缺口在 assumptions.json 中保留。"
+      "evidence_summary_zh": "proposal.md 的对应章节、五张核心图、A3/A0 图册、结构化图层与状态清单共同回应 agent.2；官方数据缺口在 assumptions.json 中保留。",
+      "ai_review_claim": "现有材料形成概念级创新生态与协作框架，但区域协作仍是角色假设。",
+      "ai_review_evidence": [
+        "visual/assets/ai-review-layer.json"
+      ],
+      "current_reality_state": "concept_complete_external_evidence_pending",
+      "institution_status": "role_types_only_unconfirmed",
+      "ai_review_structured_summary": {
+        "suggested_relationship_names": ["Beiwei Community", "Future Science City", "Huairou Science City", "Beijing E-Town", "Beijing-Tianjin-Hebei innovation network"],
+        "institution_status": "unconfirmed",
+        "detail_rows_complete": true
+      },
+      "claim_boundary": "不得将案例研究或角色框架表述为机构合作、认可、承诺或落地。"
     },
     {
       "requirement_id": "agent.3",
@@ -1078,7 +1090,21 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "proposal.md 的对应章节、五张核心图、A3/A0 图册、结构化图层与状态清单共同回应 agent.3；官方数据缺口在 assumptions.json 中保留。"
+      "evidence_summary_zh": "proposal.md 的对应章节、五张核心图、A3/A0 图册、结构化图层与状态清单共同回应 agent.3；官方数据缺口在 assumptions.json 中保留。",
+      "ai_review_claim": "AI+ 场景已形成概念清单；T-01、T-04、T-10 的参与者方法记录已完成，现场、许可和实测证据仍待外部角色确认。",
+      "ai_review_evidence": [
+        "visual/assets/ai-review-layer.json",
+        "visual/assets/t04-ai-test-sample.json"
+      ],
+      "current_reality_state": "concept_complete_external_evidence_pending",
+      "institution_status": "role_types_only_unconfirmed",
+      "ai_review_structured_summary": {
+        "priority_scenario_ids": ["T-01", "T-04", "T-10"],
+        "baseline_status": "unknown_pending_field_measurement",
+        "measured_values": null,
+        "institution_status": "unconfirmed"
+      },
+      "claim_boundary": "不得声称场景已经部署、验证、获批、采购或由任何机构运营。"
     },
     {
       "requirement_id": "agent.4",
@@ -1135,7 +1161,22 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "proposal.md 的对应章节、五张核心图、A3/A0 图册、结构化图层与状态清单共同回应 agent.4；官方数据缺口在 assumptions.json 中保留。"
+      "evidence_summary_zh": "proposal.md 的对应章节、五张核心图、A3/A0 图册、结构化图层与状态清单共同回应 agent.4；官方数据缺口在 assumptions.json 中保留。",
+      "ai_review_claim": "公共空间与地标内容达到概念表达层，低扰动空间样本和现场条件复核仍开放。",
+      "ai_review_evidence": [
+        "visual/assets/ai-review-layer.json",
+        "visual/assets/low-disturbance-spatial-sample.json",
+        "visual/assets/t04-ai-test-sample.json"
+      ],
+      "current_reality_state": "concept_complete_external_evidence_pending",
+      "institution_status": "role_types_only_unconfirmed",
+      "ai_review_structured_summary": {
+        "deepened_sample_ids": ["S-LOW-DISTURBANCE-SPATIAL", "S-T04-AI-TEST"],
+        "sample_status": "method_complete_external_evidence_pending",
+        "participant_complete": true,
+        "cost_amount": null
+      },
+      "claim_boundary": "概念节点、生成图和研究点位不得作为施工图、现状、权属或审批证明。"
     },
     {
       "requirement_id": "agent.5",
@@ -1249,7 +1290,21 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "proposal.md 的对应章节、五张核心图、A3/A0 图册、结构化图层与状态清单共同回应 agent.6；官方数据缺口在 assumptions.json 中保留。"
+      "evidence_summary_zh": "proposal.md 的对应章节、五张核心图、A3/A0 图册、结构化图层与状态清单共同回应 agent.6；官方数据缺口在 assumptions.json 中保留。",
+      "ai_review_claim": "长期运营与活动内容目前是参与者提出的机制框架，未形成机构承诺或可执行运营协议。",
+      "ai_review_evidence": [
+        "visual/assets/ai-review-layer.json"
+      ],
+      "current_reality_state": "concept_complete_external_evidence_pending",
+      "institution_status": "role_types_only_unconfirmed",
+      "ai_review_structured_summary": {
+        "gate": "request_changes",
+        "score_total": 77,
+        "repair_counts": {"complete": 11, "in_progress": 0, "external_dependency": 2, "not_started": 0},
+        "open_feedback_ids": ["F-20260824-01"],
+        "manifest_registration_state": "finalized_with_r13_records_listed"
+      },
+      "claim_boundary": "不得将分期建议或活动框架表述为已批准计划、合作协议或运营承诺。"
     }
   ]
 }

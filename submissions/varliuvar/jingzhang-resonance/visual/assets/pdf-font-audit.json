@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "generated_on": "2026-08-24",
+  "font_source": {
+    "name": "Noto Sans SC",
+    "local_font_internal_version": "Version 2.04;241114210130;non-release",
+    "local_source_path_at_build_time": "C:\\Windows\\Fonts\\NotoSansSC-VF.ttf",
+    "upstream_project_url": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+    "upstream_file_match_status": "not_verified_against_current_upstream_bytes",
+    "license": "SIL Open Font License 1.1",
+    "source_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+    "html_subset_sha256": "a271e953505f3cbbb304c4135d0f5bb7f499ff7508d83c30fdab5bd6eefc530f",
+    "subset_tool": "fontTools 4.63.0",
+    "local_intermediate_build_script": ".maintainer-review/jingzhang-resonance/build_bilingual_pdfs.py",
+    "local_intermediate_build_script_sha256": "c98f5c82802d9056527eb463542154702a9378e87c1d4f39469884431374a828",
+    "build_script_scope": "Local font subsetting and intermediate PDF generation only; it does not generate the shipped review-font.css wrapper or reproduce the final compressed four-PDF byte set by itself.",
+    "finalization_provenance_status": "final artifact hashes and deterministic properties audited; byte-for-byte rebuild recipe not shipped",
+    "license_text_bundled_in": "visual/assets/review-font.css",
+    "license_verification": "complete_ofl_1_1_core_text_normalized_match_local_build_copy",
+    "redistribution_note": "The local subset is bundled for HTML only; all four final PDFs are image-only and carry no font resource."
+  },
+  "html_artifacts": [
+    "visual/index.html",
+    "visual/index.en.html",
+    "report/proposal.html",
+    "report/proposal.en.html"
+  ],
+  "pdf_strategy": {
+    "implementation": "font_independent_image_only",
+    "scope": "four Chinese and English A3/A0 PDFs",
+    "font_resource_count_total": 0,
+    "tradeoff": "PDF text is not searchable or selectable by design."
+  },
+  "artifacts": [
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "sha256": "2a9bc8d2c9031420353e5bcc967d6691503e806bdab2c6e8ce1038e254a08aba",
+      "page_count": 21,
+      "font_resource_count": 0,
+      "fonts": {},
+      "portable_rendering": "font_independent_image_only",
+      "text_layer": "absent_not_searchable_or_selectable"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "sha256": "fd6f3f1d141c23c8ff3083c921b808b1ff0c44fce3080fd596460f6546c779c6",
+      "page_count": 3,
+      "font_resource_count": 0,
+      "fonts": {},
+      "portable_rendering": "font_independent_image_only",
+      "text_layer": "absent_not_searchable_or_selectable"
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "sha256": "9d7b08d63278a18ea1c942356e74b25ffd050c12310b7bc2611ac75bd96594ab",
+      "page_count": 21,
+      "font_resource_count": 0,
+      "fonts": {},
+      "portable_rendering": "font_independent_image_only",
+      "text_layer": "absent_not_searchable_or_selectable"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "sha256": "52d4f4d48ae229020ea94ea4629029949e46bdc1fa155168d2417c37d7e32b0f",
+      "page_count": 3,
+      "font_resource_count": 0,
+      "fonts": {},
+      "portable_rendering": "font_independent_image_only",
+      "text_layer": "absent_not_searchable_or_selectable"
+    }
+  ],
+  "claim_boundary": "This deterministic audit proves zero PDF font resources and records local font-subset provenance. It does not claim byte-for-byte rebuild reproducibility, that the local source font bytes match the current upstream download, or completion of visual, semantic, accessibility, and independent bilingual review."
+}

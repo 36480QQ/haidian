@@ -1,5 +1,6 @@
 ---
 proposal_format_version: "2"
+bilingual_contract_version: "1"
 title: "京张和鸣｜百年京张AI创新带公共空间复调方案"
 author_github: "varliuvar"
 language: "zh"

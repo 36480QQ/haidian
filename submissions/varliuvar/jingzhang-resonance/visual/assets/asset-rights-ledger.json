@@ -1,0 +1,772 @@
+{
+  "schema_version": "1.0.0",
+  "recorded_at": "2026-08-24T21:19:42+08:00",
+  "audience": "maintainer_ai_review",
+  "review_basis": {
+    "reviewed_package_sha256": "f578f2abbcc951ddad2d1f64014d0df5af8bc110eea0917f974d70476651fe51",
+    "review_decision": "request_changes",
+    "required_repair_ids": [
+      "R06",
+      "R07",
+      "R12"
+    ],
+    "review_requirement": "Inventory satellite, map, street-view, case imagery, fonts, trademarks and logos, code dependencies, and generated visuals; replace, remove, or isolate anything without demonstrable publication rights."
+  },
+  "package_publication_state": "do_not_publish",
+  "coverage_contract": {
+    "granularity": "asset_or_asset_group",
+    "inventory_snapshot_file_count": 74,
+    "primary_file_group_counts": {
+      "AR-001": 37,
+      "AR-002": 18,
+      "AR-003": 5,
+      "AR-004": 5,
+      "AR-005": 2,
+      "AR-006": 4,
+      "AR-007": 1,
+      "AR-008": 1,
+      "AR-009": 1
+    },
+    "asset_ledger_complete": true,
+    "clearance_complete": false,
+    "meaning": "Every shipped asset is covered directly or by an explicit group selector. Ledger completion records unknowns; it does not convert unknown rights into clearance.",
+    "self_reference_note": "The ledger and its companion review records are covered by AR-001 but do not contain self-hashes. Final manifest registration and package hashes belong to the finalization batch."
+  },
+  "allowed_public_dispositions": [
+    "cleared_with_evidence",
+    "replaced_with_cleared_asset",
+    "excluded_from_public_package"
+  ],
+  "asset_groups": [
+    {
+      "id": "AR-001",
+      "category": "participant_authored_text_data_and_review_records",
+      "current_package_presence": true,
+      "path_selectors": [
+        "*.json",
+        "*.md",
+        "geometry/*.geojson",
+        "report/*.md",
+        "report/*.html",
+        "visual/index*.html",
+        "visual/assets/*.json"
+      ],
+      "excluded_from_this_group": [
+        "assets/**/*",
+        "drawings/*.pdf",
+        "visual/assets/*.ttf",
+        "visual/assets/*.txt",
+        "visual/assets/*.js"
+      ],
+      "origin": "Participant-authored proposal, package data, rendered text, and AI-review records.",
+      "creator_role": "human collaborator plus declared workflow and planning agents",
+      "source_evidence": [
+        "manifest.json",
+        "agent.json",
+        "report/copyright_statement.md"
+      ],
+      "license_or_permission": {
+        "status": "scope_limited_declaration_present",
+        "scope": "COMMUNITY-DISPLAY-ONLY for material the participant is entitled to license",
+        "evidence": [
+          "manifest.json",
+          "proposal.md",
+          "proposal.en.md"
+        ]
+      },
+      "model_or_tool": "See visual/assets/brand-model-provenance.json; no exact run mapping is inferred.",
+      "transformations": [
+        "writing",
+        "translation",
+        "structured-data compilation",
+        "HTML rendering",
+        "review indexing"
+      ],
+      "source_sha256": null,
+      "output_hash_policy": "Final file hashes are maintained by manifest finalization; self-referential review records are not self-hashed here.",
+      "clearance_state": "cleared_for_declared_limited_scope_with_evidence",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "This clearance applies only to participant-controlled expression and the declared limited display/review scope; it does not cover third-party components embedded in images or PDFs."
+    },
+    {
+      "id": "AR-002",
+      "category": "v13_analysis_raster_sheets",
+      "current_package_presence": true,
+      "members": [
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_01_context.png",
+          "sha256": "4cbe9f0778ad4fbc69ef6d4b72656500bdcce907bc1d829026fdc7ac407998da"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_02_three_voices.png",
+          "sha256": "755db811df2f3e924864c6c6809e1ee4d8f85cef89d90e89ff48d3f6009e18ee"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_03_users.png",
+          "sha256": "87e88c6724fa736555305f3a35a8a6d1eaea97d8a80fd34c9fd296e6f831caa8"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_04_city_fractures.png",
+          "sha256": "de1d6b8947edba1bf873df03730d4e8d6acccba9efc609ec7e4fd1181dc78b9b"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_05_actions.png",
+          "sha256": "c2ce664684629b89c4833ad2ed8d01abd1fee6709c042fd93619d7fd40de9f05"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_06a_concept_origins.png",
+          "sha256": "0a995c2f4a5d89e52c3522eea4f0a853debe0e25e43c7aeadedff38656f67fe2"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_06b_resonance.png",
+          "sha256": "09da1c96d9a1d45ce852530aa7dc1d45b24ad89530797a07c9f91118dc2ecb2f"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_07_polyphonic_score.png",
+          "sha256": "469251b81c7e343ba7ccda9d416715b46c7a02b0bffc2c325e45d54c5561259c"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_08_spatial_actions.png",
+          "sha256": "3c08add8444ab6d4fdc074cf5210904bb30135bf7aa95751e2519b4786929a43"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_09_overall_structure.png",
+          "sha256": "bd57ce5580c74cdea34491e1dd7cb424ef075ff55b103731aa8546178f39db38"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_10_bluegreen_network.png",
+          "sha256": "68af70380225f292bd68ac849dc72ff0680f0a67596b0025aab792e49c3bd347"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_11_segments_actions.png",
+          "sha256": "c8edda1abefd50a892f2049ad5706fb459dc5dd2c1b58de86fac6efdd66eec3a"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_12_segments_sections.png",
+          "sha256": "56d0529b734a48edf413a2011855edde5c704f1c90e9d2f07411e8eb1e1559f8"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_13_dazhongsi.png",
+          "sha256": "37c01491862a8ec655ae836cdd087f23da6658c1620770a7616702e25ada41ca"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png",
+          "sha256": "dacc13e686cf7d81e9ea6d99f1c0e495455ec418dd94c62222eaa91f5d129a2e"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_15_zhongzhi.png",
+          "sha256": "a405f47b4b6a0b31598326366c046c631356df8cba25fb60a6ce04098af426b1"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_16_scene_rules.png",
+          "sha256": "9f66bc628753b222ae3bfb4de838f3b7fd056dd330d2433120ae75d285befaec"
+        },
+        {
+          "path": "assets/analysis-18/jingzhang_analysis_v13_pilot_17_implementation.png",
+          "sha256": "d58f812c0ed3dda177658f88bcfb98f817e8671d8fc81213e42def9e41fb9271"
+        }
+      ],
+      "origin": "Participant-composed V13 sheets containing authored layout plus embedded base-raster and generated-image components.",
+      "creator_role": "human collaborator plus declared concept and detailed-design model groups",
+      "source_evidence": [
+        "report/copyright_statement.md",
+        "visual/assets/brand-model-provenance.json"
+      ],
+      "license_or_permission": {
+        "status": "mixed_and_unresolved",
+        "evidence": "The prior V13 audit found 36 generated-image candidate blocks and 0/36 with explicit per-block provider provenance; base-raster redistribution evidence was also absent."
+      },
+      "model_or_tool": "Tokai is a narrative label only; exact provider, model, batch, source hash, and per-sheet mapping remain unknown.",
+      "transformations": [
+        "layout composition",
+        "annotation",
+        "raster export"
+      ],
+      "source_sha256": null,
+      "clearance_state": "uncleared_third_party_and_generation_components_present",
+      "public_disposition": "excluded_from_public_package",
+      "public_release_eligible": false,
+      "claim_boundary": "Files remain physically present in this review package, so the package remains do_not_publish until cleared replacements are made or the files are removed from a public build."
+    },
+    {
+      "id": "AR-003",
+      "category": "chinese_core_figures",
+      "current_package_presence": true,
+      "members": [
+        {
+          "path": "assets/figures/site-overview.png",
+          "sha256": "5846fdef066908496a90aff36384650de92180002943a11363bec2acd479a2a7"
+        },
+        {
+          "path": "assets/figures/land-use-structure.png",
+          "sha256": "c81585dead4ea35b4deefcf029dd2ab91ce5df0298d64ff6489d6f2055eaaed3"
+        },
+        {
+          "path": "assets/figures/key-areas.png",
+          "sha256": "256c9143869a0baf232ec3df84d2dcc2d25387e26bfea08d47c32777facdb035"
+        },
+        {
+          "path": "assets/figures/mobility-bluegreen.png",
+          "sha256": "2978b5ecc64ddf3b253cba386a8d97a87505d9a0326e0bacc6f27dbcfda33fa1"
+        },
+        {
+          "path": "assets/figures/metrics-evidence.png",
+          "sha256": "ae5b5421f13fbcec263b5c1203de5088f5012ac5c5a8bdacd23ba794cd62d1bc"
+        }
+      ],
+      "origin": "Participant-made crops/composites derived from V13 sheets.",
+      "creator_role": "participant layout and editorial compilation",
+      "source_evidence": [
+        "assets/analysis-18/",
+        "visual/assets/bilingual-equivalence.json"
+      ],
+      "license_or_permission": {
+        "status": "inherits_unresolved_components_from_AR-002"
+      },
+      "model_or_tool": "No new generative provider is claimed for the crop/composite step.",
+      "transformations": [
+        "selection",
+        "crop",
+        "layout",
+        "labeling"
+      ],
+      "source_sha256": null,
+      "clearance_state": "derivative_clearance_blocked_by_AR-002",
+      "public_disposition": "excluded_from_public_package",
+      "public_release_eligible": false,
+      "claim_boundary": "Participant layout ownership does not clear underlying imagery."
+    },
+    {
+      "id": "AR-004",
+      "category": "english_core_figure_counterparts",
+      "current_package_presence": true,
+      "members": [
+        {
+          "path": "assets/figures/site-overview.en.png",
+          "sha256": "019af1ac6c398b355edd212da5630485e128791209196f6101cac919302f3bd9",
+          "translation_of": "assets/figures/site-overview.png"
+        },
+        {
+          "path": "assets/figures/land-use-structure.en.png",
+          "sha256": "a46d04fd061e676005382d8fec9b1bdfc2ceeefb61490d638570b0d483c6a258",
+          "translation_of": "assets/figures/land-use-structure.png"
+        },
+        {
+          "path": "assets/figures/key-areas.en.png",
+          "sha256": "d6cf48d619112bf81fcce5ac3d5d6b033007cbba66b3b824538038d795d9a6e3",
+          "translation_of": "assets/figures/key-areas.png"
+        },
+        {
+          "path": "assets/figures/mobility-bluegreen.en.png",
+          "sha256": "3b42cb7124ddf4a3db8a98d30dcc2473e036d081ab79c40b50318ff423e338df",
+          "translation_of": "assets/figures/mobility-bluegreen.png"
+        },
+        {
+          "path": "assets/figures/metrics-evidence.en.png",
+          "sha256": "3f4bfb985ab5fd8b5dbf3be4e18823f6609ea12e88a5fa3a65ff8d6b6c3dbcfe",
+          "translation_of": "assets/figures/metrics-evidence.png"
+        }
+      ],
+      "origin": "Participant-made English overlays on the five Chinese core figures.",
+      "creator_role": "participant bilingual editorial and layout compilation",
+      "source_evidence": [
+        "visual/assets/bilingual-equivalence.json"
+      ],
+      "license_or_permission": {
+        "status": "inherits_unresolved_components_from_AR-003"
+      },
+      "model_or_tool": "No new generative provider is claimed for translation overlays.",
+      "transformations": [
+        "English title, legend, warning, and claim overlays"
+      ],
+      "source_sha256": null,
+      "clearance_state": "derivative_clearance_blocked_by_AR-003",
+      "public_disposition": "excluded_from_public_package",
+      "public_release_eligible": false,
+      "claim_boundary": "Translation and overlay work do not clear underlying imagery."
+    },
+    {
+      "id": "AR-005",
+      "category": "project_name_and_logo_direction",
+      "current_package_presence": true,
+      "members": [
+        {
+          "path": "assets/figures/logo-direction.png",
+          "sha256": "c65aa73c3794b39b809e104b623cccaf7cc255674ec5f492ca1cd555d01ba17a"
+        },
+        {
+          "path": "assets/figures/logo-direction.en.png",
+          "sha256": "e9946c430d6e239ea872e58719233db5d7d4bae1305c49f2841e6f3ce86a9f73",
+          "translation_of": "assets/figures/logo-direction.png"
+        }
+      ],
+      "origin": "Participant-created working name and logo direction.",
+      "creator_role": "human collaborator plus declared concept-generation group",
+      "source_evidence": [
+        "proposal.md",
+        "proposal.en.md",
+        "report/copyright_statement.md",
+        "visual/assets/brand-model-provenance.json"
+      ],
+      "license_or_permission": {
+        "status": "creator_declaration_present_preliminary_search_attempted_official_register_and_legal_clearance_absent"
+      },
+      "model_or_tool": "Concept-generation group declared; exact model/run mapping unknown.",
+      "transformations": [
+        "naming",
+        "symbol and color-system direction",
+        "English counterpart"
+      ],
+      "source_sha256": null,
+      "clearance_state": "plain_language_review_complete_preliminary_search_attempted_trademark_availability_unverified",
+      "public_disposition": "excluded_from_public_package",
+      "public_release_eligible": false,
+      "claim_boundary": "Public exact-name searching and plain-language review were attempted on 2026-08-24. WIPO was blocked by a mandatory ALTCHA challenge and CNIPA by login/access control, so no official-register result was obtained. A working design direction and absence of a public web match are not evidence of trademark availability, registration, endorsement, or freedom to operate."
+    },
+    {
+      "id": "AR-006",
+      "category": "a3_a0_pdf_deliverables",
+      "current_package_presence": true,
+      "members": [
+        {
+          "path": "drawings/a3-booklet.pdf",
+          "sha256": "2a9bc8d2c9031420353e5bcc967d6691503e806bdab2c6e8ce1038e254a08aba",
+          "language": "zh"
+        },
+        {
+          "path": "drawings/a0-boards.pdf",
+          "sha256": "fd6f3f1d141c23c8ff3083c921b808b1ff0c44fce3080fd596460f6546c779c6",
+          "language": "zh"
+        },
+        {
+          "path": "drawings/a3-booklet.en.pdf",
+          "sha256": "9d7b08d63278a18ea1c942356e74b25ffd050c12310b7bc2611ac75bd96594ab",
+          "language": "en",
+          "translation_of": "drawings/a3-booklet.pdf"
+        },
+        {
+          "path": "drawings/a0-boards.en.pdf",
+          "sha256": "52d4f4d48ae229020ea94ea4629029949e46bdc1fa155168d2417c37d7e32b0f",
+          "language": "en",
+          "translation_of": "drawings/a0-boards.pdf"
+        }
+      ],
+      "origin": "Participant-compiled PDF deliverables derived from V13 and core figures.",
+      "creator_role": "participant document compilation",
+      "source_evidence": [
+        "visual/assets/pdf-font-audit.json",
+        "visual/assets/bilingual-equivalence.json"
+      ],
+      "license_or_permission": {
+        "status": "font_cleared_but_image_components_unresolved"
+      },
+      "model_or_tool": "PDF export toolchain; no additional generative model claimed.",
+      "transformations": [
+        "page assembly",
+        "font-independent image-only page flattening",
+        "English overlay/export"
+      ],
+      "source_sha256": null,
+      "clearance_state": "derivative_clearance_blocked_by_AR-002_to_AR-005",
+      "public_disposition": "excluded_from_public_package",
+      "public_release_eligible": false,
+      "claim_boundary": "Font-independent image-only rendering does not clear image, map, satellite, generation, or trademark rights; PDF text is not searchable or selectable."
+    },
+    {
+      "id": "AR-007",
+      "category": "homepage_cover",
+      "current_package_presence": true,
+      "members": [
+        {
+          "path": "assets/media/jingzhang-origin-cover.webp",
+          "sha256": "c80cc829d1357d420523a336c8a28fbaee9d0a54bd64380a7f86192e36eef487",
+          "derived_from": "assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png"
+        }
+      ],
+      "origin": "Participant crop/composite from the right-side AI Origin concept visual on V13 sheet 14.",
+      "creator_role": "participant visual editorial",
+      "source_evidence": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png"
+      ],
+      "license_or_permission": {
+        "status": "inherits_unresolved_generation_provenance_from_AR-002"
+      },
+      "model_or_tool": "No new image-generation call; source generation model/provider remains unknown.",
+      "transformations": [
+        "crop",
+        "16:9 composition",
+        "title and evidence-boundary overlay",
+        "WebP export"
+      ],
+      "source_sha256": "dacc13e686cf7d81e9ea6d99f1c0e495455ec418dd94c62222eaa91f5d129a2e",
+      "clearance_state": "derivative_clearance_blocked_by_AR-002",
+      "public_disposition": "excluded_from_public_package",
+      "public_release_eligible": false,
+      "claim_boundary": "The cover is a concept visual and is physically present only in this do_not_publish review package."
+    },
+    {
+      "id": "AR-008",
+      "category": "font_software_and_license",
+      "current_package_presence": true,
+      "members": [
+        {
+          "path": "visual/assets/review-font.css",
+          "sha256": "c1523832d33ea5f35593c7e15118313f0f78afc4e7d4e7b543f8adda7fb4bcaf",
+          "bytes": 564648,
+          "embedded_subset_sha256": "a271e953505f3cbbb304c4135d0f5bb7f499ff7508d83c30fdab5bd6eefc530f",
+          "bundles_full_ofl_1_1_text": true
+        }
+      ],
+      "origin": "Local subset of Noto Sans SC, internal version Version 2.04;241114210130;non-release.",
+      "creator_role": "upstream font authors; participant subset packaging",
+      "source_evidence": [
+        "visual/assets/review-font.css",
+        "visual/assets/pdf-font-audit.json"
+      ],
+      "license_or_permission": {
+        "status": "verified",
+        "license": "SIL Open Font License 1.1",
+        "upstream_project_url": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+        "local_font_internal_version": "Version 2.04;241114210130;non-release",
+        "source_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+        "upstream_file_match_status": "not_verified_against_current_upstream_bytes",
+        "bundled_license_verification": "complete_ofl_1_1_core_text_normalized_match_local_build_copy"
+      },
+      "model_or_tool": "fontTools 4.63.0 via local intermediate build script .maintainer-review/jingzhang-resonance/build_bilingual_pdfs.py",
+      "transformations": [
+        "glyph subsetting for offline review",
+        "separate CSS wrapper and OFL text packaging"
+      ],
+      "build_reproducibility": "The local script identifies the subset operation but does not reproduce the shipped CSS wrapper or final compressed PDF bytes by itself; final hashes and properties are audited separately.",
+      "source_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "clearance_state": "cleared_with_local_license_evidence",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "Redistribution remains subject to the bundled OFL 1.1 terms; the font is not sold by itself. The recorded local source hash is not claimed to match the current upstream download, and byte-for-byte build reproducibility is not claimed."
+    },
+    {
+      "id": "AR-009",
+      "category": "review_code_and_dependencies",
+      "current_package_presence": true,
+      "members": [
+        {
+          "path": "visual/assets/check-ai-review-layer.js",
+          "sha256": "2cefcf10060c84b61ed958359da9a91492962ea2e4e3c9b76ab1bdde081b3396"
+        }
+      ],
+      "origin": "Participant-authored deterministic review script.",
+      "creator_role": "workflow agent under participant direction",
+      "source_evidence": [
+        "visual/assets/check-ai-review-layer.js"
+      ],
+      "license_or_permission": {
+        "status": "participant_controlled_code"
+      },
+      "model_or_tool": "Node.js built-in modules only: fs, path, crypto; no third-party package is imported or bundled.",
+      "transformations": [
+        "source-code authoring"
+      ],
+      "source_sha256": null,
+      "clearance_state": "cleared_no_third_party_dependency_bundled",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "This record covers the shipped script only, not Node.js binaries or development tools that are not included in the package."
+    },
+    {
+      "id": "AR-010",
+      "category": "embedded_map_and_satellite_components",
+      "current_package_presence": true,
+      "standalone_file_shipped": false,
+      "container_paths": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_01_context.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_09_overall_structure.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_10_bluegreen_network.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_11_segments_actions.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_12_segments_sections.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_13_dazhongsi.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_15_zhongzhi.png",
+        "assets/figures/*.png",
+        "drawings/*.pdf"
+      ],
+      "origin": "Forensic feature matching maps most identified shipped satellite blocks to archived Esri World Imagery captures. The V13-14 satellite screenshot provider remains unverified, and no identified Esri block has public-redistribution permission or final-artwork attribution evidence.",
+      "creator_role": "Esri World Imagery for verified mapped blocks; unknown third-party geospatial provider for the V13-14 satellite screenshot",
+      "source_evidence": [
+        "visual/assets/brand-model-provenance.json",
+        "participant_archive:N04_hengzhikou/site/source_manifest.json",
+        "participant_archive:N01_zhongminglu/site/source_manifest.json"
+      ],
+      "license_or_permission": {
+        "status": "provider_partially_mapped_redistribution_and_attribution_not_cleared"
+      },
+      "model_or_tool": null,
+      "transformations": [
+        "embedded raster",
+        "annotation",
+        "crop",
+        "PDF composition"
+      ],
+      "source_sha256": [
+        "fd85b8724bdce618ed64f2571d1cf13b6f15db7d7267dd8eefa2e40cc019f985",
+        "3b357d5d4489b7ca5ac750657789d399bd4a9d98016a19d32b3501fe29d5b31d",
+        "bac77b3c724f6649d2b3e32c09e6184b62c955511455c1025b3a5bfe5c2977c0",
+        "ef9c50ab67269577169961f8ce0bdf75c74753df021455e2164bee3dded9ed60"
+      ],
+      "verified_component_mappings": [
+        {
+          "source_svg_pages": [
+            "01",
+            "09",
+            "10",
+            "11",
+            "12"
+          ],
+          "embedded_raster_sha256": "11ec674018f43da591e1ef063a662c982e0c55d076c69a09440fde4a10547f9f",
+          "provider": "Esri World Imagery",
+          "matched_archive_source_sha256": [
+            "fd85b8724bdce618ed64f2571d1cf13b6f15db7d7267dd8eefa2e40cc019f985",
+            "3b357d5d4489b7ca5ac750657789d399bd4a9d98016a19d32b3501fe29d5b31d",
+            "bac77b3c724f6649d2b3e32c09e6184b62c955511455c1025b3a5bfe5c2977c0"
+          ],
+          "evidence": "SIFT plus RANSAC, 331-539 inliers"
+        },
+        {
+          "source_svg_pages": [
+            "02"
+          ],
+          "embedded_raster_sha256": "9c1e3cbb7a8a3fdf2fc50ffcafb2e21565195829fb935ad0a59a74d4d24821a2",
+          "provider": "Esri World Imagery",
+          "matched_archive_source_sha256": [
+            "fd85b8724bdce618ed64f2571d1cf13b6f15db7d7267dd8eefa2e40cc019f985",
+            "3b357d5d4489b7ca5ac750657789d399bd4a9d98016a19d32b3501fe29d5b31d"
+          ],
+          "evidence": "SIFT plus RANSAC, 207-296 inliers"
+        },
+        {
+          "source_svg_pages": [
+            "04"
+          ],
+          "embedded_raster_sha256": "ccef3eb7811b06f4337f5c8a496e3d14b395e0aa7b90afc9706abf40bc57d8f7",
+          "provider": "Esri World Imagery",
+          "matched_archive_source_sha256": [
+            "fd85b8724bdce618ed64f2571d1cf13b6f15db7d7267dd8eefa2e40cc019f985",
+            "3b357d5d4489b7ca5ac750657789d399bd4a9d98016a19d32b3501fe29d5b31d"
+          ],
+          "evidence": "SIFT plus RANSAC, 83-94 inliers"
+        },
+        {
+          "source_svg_pages": [
+            "13"
+          ],
+          "embedded_raster_sha256": "b80d5952832d6699804af2c26da2de08c65b0f73296753b50f0971b1624eb992",
+          "provider": "Esri World Imagery tiled service",
+          "matched_archive_source_sha256": [
+            "ef9c50ab67269577169961f8ce0bdf75c74753df021455e2164bee3dded9ed60"
+          ],
+          "evidence": "SIFT plus RANSAC, 647/653 inliers"
+        },
+        {
+          "source_svg_pages": [
+            "15"
+          ],
+          "embedded_raster_sha256": "2ad05c4c96e6aa15571e09e22179abd190ab05581e2cbe46a6578700e3a71e6b",
+          "provider": "Esri World Imagery",
+          "matched_archive_source_sha256": [
+            "bac77b3c724f6649d2b3e32c09e6184b62c955511455c1025b3a5bfe5c2977c0"
+          ],
+          "evidence": "SIFT plus RANSAC, 208/215 inliers"
+        },
+        {
+          "source_svg_pages": [
+            "17"
+          ],
+          "embedded_raster_sha256": "6d3c82176188feba81855996ba269dc6168c251702279e6c4cecde71398fccc0",
+          "provider": "Esri World Imagery",
+          "matched_archive_source_sha256": [
+            "fd85b8724bdce618ed64f2571d1cf13b6f15db7d7267dd8eefa2e40cc019f985",
+            "3b357d5d4489b7ca5ac750657789d399bd4a9d98016a19d32b3501fe29d5b31d",
+            "bac77b3c724f6649d2b3e32c09e6184b62c955511455c1025b3a5bfe5c2977c0"
+          ],
+          "evidence": "SIFT plus RANSAC, 313-531 inliers"
+        }
+      ],
+      "unresolved_component_mappings": [
+        {
+          "source_svg_pages": [
+            "14"
+          ],
+          "embedded_raster_sha256": "9b66d51255e9ede7ae1e5f0f373ef416c7c0a982bd1bf8eb6af27fad1c706185",
+          "matched_local_screenshot_sha256": "9bf8eea81a3ea4e0986922675f023a902f02e18ec88214907e5ec292148a53c7",
+          "provider": "unknown",
+          "claim_boundary": "The Amap POI record does not identify the screenshot imagery provider."
+        }
+      ],
+      "clearance_state": "partially_mapped_not_cleared",
+      "public_disposition": "excluded_from_public_package",
+      "public_release_eligible": false,
+      "claim_boundary": "Feature matching identifies providers for listed pixel components only. It does not establish public redistribution permission, required attribution compliance, imagery capture date, ownership, endorsement, or clearance for the unmatched V13-14 screenshot."
+    },
+    {
+      "id": "AR-011",
+      "category": "street_view_or_site_photography",
+      "current_package_presence": false,
+      "standalone_file_shipped": false,
+      "container_paths": [],
+      "origin": "No standalone street-view or site-photography asset was identified in the current package inventory.",
+      "creator_role": "unknown if any unidentified embedded component exists",
+      "source_evidence": [
+        "manifest.json",
+        "visual/assets/asset-rights-ledger.json"
+      ],
+      "license_or_permission": {
+        "status": "not_applicable_to_identified_standalone_assets"
+      },
+      "model_or_tool": null,
+      "transformations": [],
+      "source_sha256": null,
+      "clearance_state": "no_standalone_asset_identified_unknown_embedded_components_remain_excluded",
+      "public_disposition": "excluded_from_public_package",
+      "public_release_eligible": false,
+      "claim_boundary": "This absence finding is not a claim that every pixel in composite images has been forensically attributed."
+    },
+    {
+      "id": "AR-012",
+      "category": "third_party_case_images",
+      "current_package_presence": false,
+      "standalone_file_shipped": false,
+      "container_paths": [],
+      "origin": "Six case-study websites are cited textually in sources.json; no standalone case-study image file was identified in the shipped package.",
+      "creator_role": "case-site operators for linked web content; participant for descriptive citations",
+      "source_evidence": [
+        "sources.json"
+      ],
+      "license_or_permission": {
+        "status": "no_image_redistribution_permission_claimed"
+      },
+      "model_or_tool": null,
+      "transformations": [
+        "textual background citation only"
+      ],
+      "source_sha256": null,
+      "clearance_state": "no_case_image_shipped_linked_content_not_republished",
+      "public_disposition": "excluded_from_public_package",
+      "public_release_eligible": false,
+      "claim_boundary": "A URL citation is not a license to republish case imagery, logos, screenshots, or text."
+    },
+    {
+      "id": "AR-013",
+      "category": "embedded_ai_generated_or_edited_visual_components",
+      "current_package_presence": true,
+      "standalone_file_shipped": false,
+      "container_paths": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_02_three_voices.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_03_users.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_04_city_fractures.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_05_actions.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_06a_concept_origins.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_06b_resonance.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_07_polyphonic_score.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_08_spatial_actions.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_13_dazhongsi.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_15_zhongzhi.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_16_scene_rules.png",
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_17_implementation.png",
+        "assets/figures/*.png",
+        "assets/media/jingzhang-origin-cover.webp",
+        "drawings/*.pdf"
+      ],
+      "origin": "One shipped generation family is forensically mapped to an archived Oskyi gpt-image-2 image-edit run; all remaining generated candidates retain incomplete per-component provenance.",
+      "creator_role": "AI image provider plus participant direction and editing",
+      "source_evidence": [
+        "visual/assets/brand-model-provenance.json",
+        "report/copyright_statement.md"
+      ],
+      "license_or_permission": {
+        "status": "provider_run_and_output_mapped_for_one_family_input_redistribution_and_remainder_unknown"
+      },
+      "model_or_tool": "Oskyi/gpt-image-2 is verified only for the mapped V13-14 family. Tokai/GPT-image and all other provider/model labels remain limited to their existing evidence strength.",
+      "transformations": [
+        "generation or image editing",
+        "layout",
+        "crop",
+        "annotation",
+        "translation overlay",
+        "PDF composition"
+      ],
+      "source_sha256": "7d9f7b9234957d2ce3389ea24b78fadf564d8ad345ed35b33213079685c788b9",
+      "verified_component_mappings": [
+        {
+          "source_svg_page": "14",
+          "embedded_raster_sha256": "e57df3248dad55245bf4da850f9e1173aff080737be93f4f422c47673ab0becd",
+          "role": "design_action_crop",
+          "provider": "Oskyi",
+          "model": "gpt-image-2",
+          "operation": "image_to_image",
+          "input_sha256": "7d9f7b9234957d2ce3389ea24b78fadf564d8ad345ed35b33213079685c788b9",
+          "prompt_sha256": "f56ddb061a275d93a1cdc92008fd5a6690392226af4e1eaba8b2ca0ebdb019a9",
+          "output_sha256": "f5011716d8d2a3ca3322ff75bd7f8deb8294a231afcc4c6efeea1f7bc320a32e",
+          "evidence": "ORB plus RANSAC, 277/305 inliers"
+        },
+        {
+          "source_svg_page": "14",
+          "embedded_raster_sha256": "f92a1f1ae5daf8363356f1e86c5a650e98a9ce20e6e83526eb546c0d15d31b74",
+          "role": "spatial_result_crop",
+          "provider": "Oskyi",
+          "model": "gpt-image-2",
+          "operation": "image_to_image",
+          "input_sha256": "7d9f7b9234957d2ce3389ea24b78fadf564d8ad345ed35b33213079685c788b9",
+          "prompt_sha256": "f56ddb061a275d93a1cdc92008fd5a6690392226af4e1eaba8b2ca0ebdb019a9",
+          "output_sha256": "f5011716d8d2a3ca3322ff75bd7f8deb8294a231afcc4c6efeea1f7bc320a32e",
+          "evidence": "ORB plus RANSAC, 126/140 inliers"
+        },
+        {
+          "shipped_path": "assets/media/jingzhang-origin-cover.webp",
+          "shipped_sha256": "c80cc829d1357d420523a336c8a28fbaee9d0a54bd64380a7f86192e36eef487",
+          "role": "cover_derivative",
+          "provider": "Oskyi",
+          "model": "gpt-image-2",
+          "output_sha256": "f5011716d8d2a3ca3322ff75bd7f8deb8294a231afcc4c6efeea1f7bc320a32e",
+          "evidence": "SIFT plus RANSAC, 163 inliers against the spatial-result crop and 56 against the design-action crop"
+        }
+      ],
+      "run_evidence": {
+        "api_url": "https://api.oskyi.com/v1/chat/completions",
+        "response_id": "chatcmpl-12882c9f-08c0-485f-99f7-6d6cb974bc09",
+        "preflight_sha256": "3a621d43d731aec70136a31f3f521ed4656017e3b1d4b6b916174906e17e4dae",
+        "response_sha256": "8b3a80853dec472f61d94d64d6f04191bd60bad7bc87e7194706df9939aca2f7",
+        "metadata_sha256": "720dcb34e7e1f8b141321ce7854a6c715fe22307e40a55c348153197ddca7e72",
+        "selection": "approved_and_locked"
+      },
+      "unresolved_candidate_summary": {
+        "prior_candidate_block_count": 36,
+        "mapped_block_count": 2,
+        "remaining_blocks_not_mapped_to_provider_model_prompt_input_output": 34
+      },
+      "clearance_state": "one_shipped_generation_family_mapped_remainder_unknown",
+      "public_disposition": "excluded_from_public_package",
+      "public_release_eligible": false,
+      "claim_boundary": "All such visuals remain concept imagery and may not be represented as site photography, surveying, built work, statutory design, or approved work."
+    }
+  ],
+  "summary": {
+    "asset_group_count": 13,
+    "cleared_with_evidence_group_count": 3,
+    "replaced_with_cleared_asset_group_count": 0,
+    "excluded_from_public_package_group_count": 10,
+    "unresolved_current_package_group_count": 8,
+    "unresolved_current_package_group_ids": [
+      "AR-002",
+      "AR-003",
+      "AR-004",
+      "AR-005",
+      "AR-006",
+      "AR-007",
+      "AR-010",
+      "AR-013"
+    ],
+    "publication_clearance": false,
+    "claim_boundary": "The count is by asset group, not by pixel, embedded image block, or legal claim. A complete inventory is not complete rights clearance."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "recorded_on": "2026-08-24",
+  "scope": "Participant-controlled finalization gates for the AI review remediation batch.",
+  "gate_authorities": [
+    {
+      "gate_id": "AI_REVIEW_LAYER_CONSISTENCY",
+      "command": "node visual/assets/check-ai-review-layer.js --check",
+      "result_authority": "command exit status at final verification",
+      "participant_status": "pass_2026-08-24"
+    },
+    {
+      "gate_id": "REPOSITORY_SELF_CHECK",
+      "command": "python scripts/self_check_submission.py <submission> --pr-author varliuvar --mark-self-checked --json",
+      "result_authority": "self_check.json",
+      "participant_status": "pass_can_enter_formal_review_true_2026-08-24"
+    },
+    {
+      "gate_id": "MANIFEST_INTEGRITY",
+      "command": "python scripts/refresh_submission_manifest.py <submission> --json",
+      "result_authority": "manifest.json",
+      "participant_status": "pass_74_manifest_entries_2026-08-24"
+    },
+    {
+      "gate_id": "BILINGUAL_AND_FONT_QA",
+      "result_authority": "visual/assets/bilingual-equivalence.json and visual/assets/pdf-font-audit.json",
+      "participant_status": "independent_ai_review_complete_10_pass_0_needs_work_machine_review_addendum_present_human_certification_not_claimed"
+    },
+    {
+      "gate_id": "RIGHTS_AND_PUBLICATION",
+      "result_authority": "visual/assets/asset-rights-ledger.json and visual/assets/asset-clearance-disposition.json",
+      "participant_status": "external_evidence_pending_do_not_publish"
+    },
+    {
+      "gate_id": "PACKAGE_SIZE",
+      "result_authority": "self_check.json deterministic_validation.stdout.total_bytes",
+      "participant_status": "pass_under_40_mib_repository_limit_2026-08-24"
+    },
+    {
+      "gate_id": "ADVISORY_PROPOSAL_SCORE",
+      "command": "python scripts/score_submission.py <submission>/proposal.md --repo-root . --json",
+      "result_authority": "command output; advisory only",
+      "participant_status": "ready_true_7_pass_1_needs_work_0_missing_2026-08-24"
+    }
+  ],
+  "remaining_external_decisions": [
+    "human or certified bilingual review only if later required for publication or legal reliance",
+    "rights-holder evidence or cleared replacement assets for unresolved groups",
+    "trademark and per-asset model-record review",
+    "maintainer admission to professional review and publication decision"
+  ],
+  "claim_boundary": "This record defines participant gate evidence and authorities. It does not assert a maintainer decision, professional approval, rights clearance, publication authorization, or score increase."
+}

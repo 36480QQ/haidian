@@ -8,11 +8,17 @@
 
 附件含 Tokai、Oskyi、GPT-image 等生成或编辑图。它们统一按“视觉意向 / 研究表达 / 非现状 / 非测绘 / 非法定方案”使用，不得描述为现场摄影、测绘成果、已建方案或政府批准方案。
 
-当前生成 provenance 并非逐图完整：部分节点有 provider、model、prompt、run manifest、hash 和 approval；V13 局部 Tokai 视觉尚缺逐图供应商、模型、批次与源图哈希总表。公开前应补齐或在相应图件旁继续披露限制。
+逐资产或资产组盘点已经写入 `visual/assets/asset-rights-ledger.json`。盘点确认：部分节点档案有 provider、model、prompt、run manifest、hash 和 approval，但这些记录尚不能逐一映射到本包图像；对应 V13 源集审计识别的 36 个生成图候选块中，逐块明确 provider provenance 为 0。Tokai、Oskyi、GPT-image 只按现有证据强度记录，缺失的 provider、model、batch、run、源图哈希或成品映射均保留为 `unknown` 或 `null`。
 
 ## 第三方与公开资料
 
-任务书、公告、规范和国际案例仅按 `sources.json` 引用。卫星、地图、街景、新闻、案例图片、企业标识、人物肖像和字体的权利状态必须逐项复核；没有明确再分发许可的材料只能作为内部研究证据，不进入公开主图或仓库发布包。
+任务书、公告、规范和国际案例仅按 `sources.json` 引用。当前包没有识别到独立的街景或案例图片文件，但 V13、核心图、PDF 和封面仍含来源未闭环的卫星/地图与生成视觉组件；工作名称和 Logo 方向也未完成商标与国际语义审查。字体单列使用 Noto Sans SC 子集，并随包保留 SIL OFL 1.1 许可文本。代码依赖审计只发现 Node.js 内置模块，没有打包第三方代码库。
+
+## AI Review Layer 权利台账
+
+机器评审专用记录分为三份：`asset-rights-ledger.json` 负责来源、创作者角色、许可、工具、变换和哈希；`asset-clearance-disposition.json` 负责公开处置；`brand-model-provenance.json` 负责品牌、模型与现有 run 证据。公开处置只使用 `cleared_with_evidence`、`replaced_with_cleared_asset`、`excluded_from_public_package` 三种值，未知项不会写成已清权。
+
+当前按资产组统计仍有 8 组未清权内容物理存在于评审包，包括 V13、核心图、英文核心图、Logo 方向、四份 PDF、封面，以及其中的地图/卫星和生成视觉组件。它们统一标为 `excluded_from_public_package`；这里的“排除”是包级发布禁令，并不谎称文件已从本次评审包删除。因此当前总包仍为 `do_not_publish`，只能用于受限评审，不能据此制作公开发布包。
 
 ## 提交许可
 

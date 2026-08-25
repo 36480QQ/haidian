@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "recorded_on": "2026-08-24",
+  "reviewed_baseline_sha256": "f578f2abbcc951ddad2d1f64014d0df5af8bc110eea0917f974d70476651fe51",
+  "human_content_guard": {
+    "proposal_md_baseline_sha256": "d474eab08ab1f3cfa5512b338e879676627ee8e5ef38348159cbf10f542f5659",
+    "proposal_en_md_baseline_sha256": "a122eb9c7a0f13fcf9c0849428e1ee2ee8a0d51fb295fd35e6a34f59eab7afa4",
+    "allowed_primary_delta": "front matter only: bilingual_contract_version",
+    "allowed_translation_delta": "five Markdown image destinations only, from Chinese core figures to their .en.png counterparts",
+    "frozen_v13_sheet_count": 18,
+    "frozen_chinese_core_figure_count": 5,
+    "frozen_raster_hashes_verified_against_baseline": true
+  },
+  "current_hash_authorities": {
+    "all_manifest_listed_files": "manifest.json files[].sha256",
+    "rights_asset_members": "visual/assets/asset-rights-ledger.json asset_groups[].members[].sha256",
+    "pdf_font_artifacts": "visual/assets/pdf-font-audit.json artifacts[].sha256"
+  },
+  "self_reference_policy": "manifest.json has no self-hash; final-hashes.json does not duplicate its own hash or the package hash.",
+  "claim_boundary": "Hash verification proves byte identity and declared deltas only; it does not prove semantic equivalence, rights clearance, professional approval, or publication readiness."
+}

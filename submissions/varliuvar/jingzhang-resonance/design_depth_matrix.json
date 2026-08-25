@@ -499,7 +499,25 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "提出可撤、可检修、不阻路原则；管线、负荷、能源和设施容量未作专业测算。",
-      "evidence_status": "data_gap_disclosed"
+      "evidence_status": "data_gap_disclosed",
+      "ai_review_evidence": [
+        "visual/assets/ai-review-layer.json",
+        "visual/assets/t04-ai-test-sample.json"
+      ],
+      "current_reality_state": "AI 测试样本、负荷、管线、数据与运维条件未完成专业验证。",
+      "participant_complete": false,
+      "completeness_limited_by": ["verified test environment", "data permission", "municipal capacity", "privacy, safety, and operations review"],
+      "ai_review_structured_summary": {
+        "sample_id": "S-T04-AI-TEST",
+        "scenario_id": "T-04",
+        "status": "method_complete_external_evidence_pending",
+        "cost_amount": null,
+        "institution_status": "unconfirmed"
+      },
+      "external_dependencies": [
+        "可控测试环境与数据权限",
+        "市政、隐私、安全和运维评审角色"
+      ]
     },
     {
       "item_id": "blue_green_public_space",
@@ -553,7 +571,25 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "V13 终检图、五张核心图、proposal.md 与结构化研究图层共同表达概念结构；不升级为法定或工程结论。"
+      "evidence_summary_zh": "V13 终检图、五张核心图、proposal.md 与结构化研究图层共同表达概念结构；不升级为法定或工程结论。",
+      "ai_review_evidence": [
+        "visual/assets/ai-review-layer.json",
+        "visual/assets/low-disturbance-spatial-sample.json"
+      ],
+      "current_reality_state": "低扰动空间样本和 T-01 现场安全、无障碍、生态及运维复核尚未完成。",
+      "participant_complete": false,
+      "completeness_limited_by": ["verified site conditions", "accessibility review", "ecology and safety review", "maintenance responsibility"],
+      "ai_review_structured_summary": {
+        "sample_id": "S-LOW-DISTURBANCE-SPATIAL",
+        "sample_type": "low_disturbance_spatial",
+        "status": "method_complete_external_evidence_pending",
+        "cost_amount": null,
+        "institution_status": "unconfirmed"
+      },
+      "external_dependencies": [
+        "核实后的水岸、绿地和慢行现状",
+        "无障碍、生态、安全和维护评审角色"
+      ]
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -609,7 +645,18 @@
         "VISUAL_STATIC"
       ],
       "evidence_summary_zh": "V13-13至15为研究点位图；真实建筑、道路、水岸、园区和站点边界补齐后需重新落位。",
-      "evidence_status": "data_gap_disclosed"
+      "evidence_status": "data_gap_disclosed",
+      "ai_review_evidence": [
+        "visual/assets/ai-review-layer.json",
+        "visual/assets/low-disturbance-spatial-sample.json"
+      ],
+      "current_reality_state": "三处点位仍是研究表达；优先场景治理矩阵与参与者空间样本方法已完成，官方重点区边界、现场尺寸、许可和专业复核仍未完成。",
+      "participant_complete": false,
+      "completeness_limited_by": ["official key-area polygons", "field survey", "site access", "safety, accessibility, and operator review"],
+      "external_dependencies": [
+        "官方重点区 polygon 和真实场地条件",
+        "场地、安全、无障碍和运营评审角色"
+      ]
     },
     {
       "item_id": "renewal_project_list",
@@ -663,7 +710,17 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。",
+      "ai_review_evidence": [
+        "visual/assets/ai-review-layer.json"
+      ],
+      "current_reality_state": "更新项目清单是概念级参与者建议，牵头角色、预算、许可、场地和运营责任未落实。",
+      "participant_complete": false,
+      "completeness_limited_by": ["authorized lead role", "budget", "permit", "site access", "operations responsibility"],
+      "external_dependencies": [
+        "授权参与者和维护运营角色",
+        "预算、许可、场地与实施条件"
+      ]
     },
     {
       "item_id": "phasing_implementation",
@@ -717,7 +774,17 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。",
+      "ai_review_evidence": [
+        "visual/assets/ai-review-layer.json"
+      ],
+      "current_reality_state": "分期是概念级参与者建议，决策角色、先决修复、预算、许可和验收责任未落实。",
+      "participant_complete": false,
+      "completeness_limited_by": ["R01-R12 evidence", "authorized decision role", "budget and permits", "implementation acceptance responsibility"],
+      "external_dependencies": [
+        "R01-R12 的前置修复证据",
+        "授权决策、实施和维护评审角色"
+      ]
     },
     {
       "item_id": "metrics_recalculation",
@@ -827,7 +894,24 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "proposal.md、assumptions.json、sources.json、版权说明和总包审计清单明确列出身份、官方数据、权利与生成 provenance 缺口。"
+      "evidence_summary_zh": "proposal.md、assumptions.json、sources.json、版权说明和总包审计清单明确列出身份、官方数据、权利与生成 provenance 缺口。",
+      "ai_review_evidence": [
+        "visual/assets/ai-review-layer.json",
+        "visual/assets/asset-rights-ledger.json"
+      ],
+      "current_reality_state": "权利台账、参与者双语等价检查与参与者模型声明已完成；未清素材的权利证据、独立双语复核、商标/逐图模型记录与最终维护者 QA 仍开放。",
+      "participant_complete": false,
+      "completeness_limited_by": ["seven disclosed bilingual-equivalence deltas in the frozen human-facing artifacts", "rights-holder evidence or cleared replacement assets", "official-register trademark result and per-asset model-record review", "final maintainer QA"],
+      "ai_review_structured_summary": {
+        "repair_counts": {"complete": 11, "in_progress": 0, "external_dependency": 2, "not_started": 0},
+        "open_feedback_ids": ["F-20260824-01"],
+        "rights_ledger_path": "visual/assets/asset-rights-ledger.json",
+        "manifest_registration_state": "finalized_with_r13_records_listed"
+      },
+      "external_dependencies": [
+        "权利人证据或已清替代素材",
+        "双语、商标、渲染和维护者评审角色"
+      ]
     }
   ]
 }

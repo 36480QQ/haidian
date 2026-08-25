@@ -39,21 +39,23 @@ The proposal responds to the official open-call announcement, the agent taskbook
 The evidence system has three layers: nine GeoJSON files and metrics for machine review; the 21-page A3 booklet (including 18 V13 analysis pages), plus 3 A0 boards and five core figures for design communication; and lock, approval, evaluation, and source records for version control.
 
 ![AI Origin public-space visual intention and action framework](assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png)
-![Overall structure and research boundary](assets/figures/site-overview.png)
+![Overall structure and research boundary](assets/figures/site-overview.en.png)
 
 ## Three-Level Scope Framework
 
-The coordinated research area addresses the taskbook's approximately 43.6 square kilometres of innovation ecosystem and regional collaboration. The overall design area addresses approximately 11.4 square kilometres around the Jing-Zhang heritage park. The three key areas address approximately 368.4 hectares in total. These taskbook figures are not exact measurements of the provisional polygons [source:PROCESSED-FACT-PACK].
+The coordinated research area addresses the taskbook's approximately 43.6 square kilometres of innovation ecosystem and regional collaboration. The overall design area addresses approximately 11.4 square kilometres and the surrounding 1-2 km of urban renewal, industrial space, public space, transport, and municipal conditions around the Jing-Zhang heritage park. The three key areas address approximately 368.4 hectares in total. These taskbook figures are not exact measurements of the provisional polygons [source:PROCESSED-FACT-PACK].
 
 The ecological, everyday, and knowledge voices are independent and none is subordinate. Every action follows the weakest-link (wooden-bucket) principle: judge the weakest voice first. If any voice falls below its baseline, a pilot may neither enter nor expand; gains in the other two cannot compensate [depth:overall_spatial_structure] [depth:blue_green_public_space]. AI is not a fourth voice. It enters only within a publicly announced permission domain of space, time, weather, and responsibility. Three veto lines precede efficiency: never occupy tactile paving; never enter residential interiors; and stop mobile devices on campuses and school routes during 16:30-19:00. A triggered veto pauses operation immediately [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-![Three voices, functions, and action framework](assets/figures/land-use-structure.png)
+![Three voices, functions, and action framework](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
 The proposed ecosystem loop is: publish a problem, run a controlled test, conduct human review, communicate results, support enterprise translation, and collect public feedback. Land, space, funding, talent, compute, data, and scenarios are interfaces for further negotiation rather than confirmed commitments.
 
 Six international references provide transferable mechanisms without importing their scale, firms, or policy conditions: Kendall Square for short-distance university-lab-enterprise collaboration [source:CASE-KENDALL]; London's Knowledge Quarter for a network of research, culture, mobility, and public communication [source:CASE-KQ]; STATION F for legible shared startup services [source:CASE-STATIONF]; Vector Institute for research, talent, responsible AI, and enterprise application [source:CASE-VECTOR]; one-north for mixed research, work, living, and public space [source:CASE-ONENORTH]; and Pittsburgh Robotics Network for regional university, robotics, and manufacturing collaboration [source:CASE-PITTSBURGH].
+
+These cases provide mechanisms only; they do not prove that the Jing-Zhang area has comparable institutions, funding, or policy conditions. Suggested, unconfirmed regional collaboration could use open research topics, cross-park scenario lists, developer mutual recognition, travelling results exhibitions, and safety-evaluation interfaces to connect Beiwei Community, Future Science City, Huairou Science City, Beijing E-Town, and the Beijing-Tianjin-Hebei innovation network. No participation, commitment, partnership, authorization, or endorsement is claimed.
 
 ### Naming system and logo direction
 
@@ -71,9 +73,9 @@ The land-use, building, road, green-space, public-space, and phasing GeoJSON fil
 
 AI receives only time-limited, site-specific, and revocable permission to use public space.
 
-![Three key areas: research locations and actions](assets/figures/key-areas.png)
+![Three key areas: research locations and actions](assets/figures/key-areas.en.png)
 
-The Dazhongsi area is proposed as an urban district for AI-native services and international exchange. Heritage quiet zones, open ground floors, station links, and four-quadrant walking connections must be relocated on verified building, station, property, and fire-safety boundaries. V13-13 is a research location diagram, not a measured node plan.
+The Dazhongsi area is proposed as an urban district for AI-native services and international exchange. Heritage quiet zones, open ground floors, station links, and four-quadrant walking connections must be relocated on verified building, station, property, and fire-safety boundaries. V13-13 is a research location diagram, not a measured node plan. N01 Bell-Ringing Road may serve as a public-space prototype that compares the current view with a 2045 same-view evolution scenario.
 
 The Beijing AI Origin Community is proposed as a near-university district for open-source collaboration, translation, and talent life. School crossings, everyday forecourts, and park openings require verified road, campus, and property boundaries. V13-14 communicates relationships, not survey facts. N02 Origin Field is a concept-locked landmark sequence, with ownership, utilities, fire, and structural feasibility unresolved.
 
@@ -145,7 +147,7 @@ New infrastructure follows three rules: removable, inspectable, and outside the 
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-![Blue-green mobility and segment actions](assets/figures/mobility-bluegreen.png)
+![Blue-green mobility and segment actions](assets/figures/mobility-bluegreen.en.png)
 
 The Jing-Zhang heritage park, Xiaoyue River, Qinghe River, and existing tree canopy form the public ecological skeleton. Actions are ordered as: preserve continuity, repair gaps, add places to pause, and control disturbance. Public-space character uses low-saturation materials, clear ink-like lines, limited green-blue-orange identity colours, and restrained night lighting.
 
@@ -161,7 +163,7 @@ The suggested annual rhythm is spring open-source co-creation, summer urban scen
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-![Rules, implementation, and verifiable indicators](assets/figures/metrics-evidence.png)
+![Rules, implementation, and verifiable indicators](assets/figures/metrics-evidence.en.png)
 
 Indicators cover spatial continuity, ecological public value, innovation operations, and governance credibility. Values in `metrics.json` are calculated from provisional geometry and cannot replace taskbook scope figures or statutory indicators [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:key_area_count].
 
@@ -170,6 +172,8 @@ The compliance matrix maps announcement requirements and agent.1-agent.6. The st
 ## Risk, Copyright, and Compliance
 
 Open gaps include the final GitHub identity and contributor names; official redlines and key-area polygons; survey, property, control-plan, water, road, and engineering conditions; redistribution rights for some basemaps and references; and complete per-image generation provenance. These gaps must not be filled by inference.
+
+Text, structured data, and self-created figures are declared in the manifest for this community display and review. Satellite imagery, maps, street views, third-party cases, and external images may enter public material only with an explicit licence or citation boundary. Uncleared material is for internal review only and is excluded from public principal figures and any publishable release. AI-generated visuals must not be represented as site photography, survey evidence, or an official proposal. The current package remains `do_not_publish` while uncleared bytes are physically present.
 
 V13-13 to V13-15 are research location diagrams. N04 Langxingdao failed site-relationship verification. Superseded assumed sections and fictional present-day imagery must not be used as factual evidence. The full node archive retains locked, unlocked, rejected, and historical versions with an explicit status register.
 

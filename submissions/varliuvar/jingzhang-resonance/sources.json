@@ -62,6 +62,78 @@
       "usage": "Submission package inventory, language declarations, hashes, and review-state record."
     },
     {
+      "id": "AI-REVIEW-LAYER",
+      "path": "visual/assets/ai-review-layer.json",
+      "source_type": "participant_generated_review_navigation",
+      "ownership": "participant_generated",
+      "provisional_manifest_registration": false,
+      "manifest_listed": true,
+      "usage": "Participant-authored reviewer navigation and remediation register only; not maintainer endorsement, design prose, source authority, institutional commitment, approval, or publication authorization.",
+      "ai_review_input_summary": {
+        "reviewed_baseline_sha256_prefix": "f578f2ab",
+        "gate": "request_changes",
+        "formal_review": false,
+        "score_total": 77,
+        "dimension_ids": ["brief_alignment", "originality", "ai_planning_innovation", "implementation_feasibility", "public_interest_inclusion", "risk_compliance", "expression_completeness"],
+        "repair_ids": ["R01", "R02", "R03", "R04", "R05", "R06", "R07", "R08", "R09", "R10", "R11", "R12", "R13"],
+        "repair_counts": {"complete": 11, "in_progress": 0, "external_dependency": 2, "not_started": 0},
+        "open_feedback_ids": ["F-20260824-01"],
+        "priority_scenario_ids": ["T-01", "T-04", "T-10"],
+        "deepened_sample_ids": ["S-LOW-DISTURBANCE-SPATIAL", "S-T04-AI-TEST"]
+      }
+    },
+    {
+      "id": "ASSET-RIGHTS-LEDGER",
+      "path": "visual/assets/asset-rights-ledger.json",
+      "source_type": "participant_generated_rights_inventory",
+      "ownership": "participant_generated",
+      "usage": "Asset-or-group inventory for R06 covering shipped text/data, V13 sheets, core and English figures, PDFs, cover, fonts, code dependencies, map/satellite components, street-view/category checks, case imagery, logo/trademark status, and generated visuals.",
+      "clearance_summary": {
+        "asset_ledger_complete": true,
+        "clearance_complete": false,
+        "unresolved_current_package_group_count": 8,
+        "publication_clearance": false
+      },
+      "claim_boundary": "Ledger completion records unknowns and dispositions; it is not legal advice or blanket rights clearance."
+    },
+    {
+      "id": "ASSET-CLEARANCE-DISPOSITION",
+      "path": "visual/assets/asset-clearance-disposition.json",
+      "source_type": "participant_generated_release_boundary",
+      "ownership": "participant_generated",
+      "usage": "R07 public-release disposition using only cleared_with_evidence, replaced_with_cleared_asset, or excluded_from_public_package.",
+      "publication_state": "do_not_publish",
+      "claim_boundary": "Eight unresolved groups remain physically present for review while excluded from any publishable build."
+    },
+    {
+      "id": "BRAND-MODEL-PROVENANCE",
+      "path": "visual/assets/brand-model-provenance.json",
+      "source_type": "participant_generated_provenance_register",
+      "ownership": "participant_generated",
+      "usage": "R12 register for the working brand, declared agent/model role groups, and existing Tokai/Oskyi/GPT-image/OSM/Esri evidence at its actual verification strength.",
+      "claim_boundary": "Unknown provider, model, batch, source hash, run, rights, or asset mapping fields remain null or unknown; names do not imply sponsorship or endorsement."
+    },
+    {
+      "id": "NOTO-SANS-SC-OFL",
+      "path": "visual/assets/review-font.css",
+      "source_type": "bundled_upstream_license",
+      "ownership": "upstream_font_authors",
+      "usage": "SIL Open Font License 1.1, local font-subset provenance, and an explicit reproducibility boundary for the bundled Noto Sans SC review subset used by four HTML artifacts.",
+      "font_name": "Noto Sans SC",
+      "local_font_internal_version": "Version 2.04;241114210130;non-release",
+      "upstream_project_url": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+      "source_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "subset_path": "visual/assets/review-font.css",
+      "subset_sha256": "a271e953505f3cbbb304c4135d0f5bb7f499ff7508d83c30fdab5bd6eefc530f",
+      "subset_tool": "fontTools 4.63.0",
+      "local_intermediate_build_script": ".maintainer-review/jingzhang-resonance/build_bilingual_pdfs.py",
+      "local_intermediate_build_script_sha256": "c98f5c82802d9056527eb463542154702a9378e87c1d4f39469884431374a828",
+      "build_script_scope": "Local font subsetting and intermediate PDF generation only; not a shipped byte-for-byte final artifact rebuilder.",
+      "finalization_provenance_status": "final artifact hashes and deterministic properties audited; byte-for-byte rebuild recipe not shipped",
+      "upstream_file_match_status": "not_verified_against_current_upstream_bytes",
+      "claim_boundary": "The recorded SHA-256 identifies the local source used for the subset; it is not asserted to equal the current upstream download, and the local intermediate script is not claimed to reproduce the shipped CSS/PDF bytes by itself."
+    },
+    {
       "id": "CASE-KENDALL",
       "url": "https://www.kendallsquare.org/",
       "source_type": "background_only_official_operator",

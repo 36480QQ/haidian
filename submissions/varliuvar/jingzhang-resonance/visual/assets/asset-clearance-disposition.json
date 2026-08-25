@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "recorded_at": "2026-08-24T21:19:42+08:00",
+  "audience": "maintainer_ai_review",
+  "source_ledger": "visual/assets/asset-rights-ledger.json",
+  "package_publication_state": "do_not_publish",
+  "disposition_semantics": {
+    "cleared_with_evidence": "Retain only within the scope stated by the corresponding ledger evidence.",
+    "replaced_with_cleared_asset": "The shipped output must point to a documented replacement and its source/output hashes.",
+    "excluded_from_public_package": "Do not include in a publishable build. A file may still be physically present in this review package only because the entire package is explicitly do_not_publish."
+  },
+  "decisions": [
+    {"asset_group_id": "AR-001", "current_package_presence": true, "public_disposition": "cleared_with_evidence", "implementation_status": "retained_for_limited_review_scope", "blocking_dependency": null},
+    {"asset_group_id": "AR-002", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "per-component provider, source, and redistribution evidence or cleared replacement"},
+    {"asset_group_id": "AR-003", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "AR-002 clearance or cleared replacement"},
+    {"asset_group_id": "AR-004", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "AR-003 clearance or cleared replacement"},
+    {"asset_group_id": "AR-005", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "official-register trademark result and qualified legal review; preliminary public search and plain-language review are recorded but are not clearance"},
+    {"asset_group_id": "AR-006", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "AR-002 through AR-005 clearance or cleared replacement"},
+    {"asset_group_id": "AR-007", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "verified source-generation provenance and rights or cleared replacement"},
+    {"asset_group_id": "AR-008", "current_package_presence": true, "public_disposition": "cleared_with_evidence", "implementation_status": "retained_with_OFL_1_1_notice", "blocking_dependency": null},
+    {"asset_group_id": "AR-009", "current_package_presence": true, "public_disposition": "cleared_with_evidence", "implementation_status": "retained_no_third_party_code_bundled", "blocking_dependency": null},
+    {"asset_group_id": "AR-010", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_embedded_pixels_not_yet_replaced", "blocking_dependency": "verified per-raster provider/license mapping or cleared basemap replacement"},
+    {"asset_group_id": "AR-011", "current_package_presence": false, "public_disposition": "excluded_from_public_package", "implementation_status": "no_standalone_asset_identified", "blocking_dependency": "attribute any newly identified embedded photography before release"},
+    {"asset_group_id": "AR-012", "current_package_presence": false, "public_disposition": "excluded_from_public_package", "implementation_status": "text_links_only_no_case_image_shipped", "blocking_dependency": "permission required before adding any case image, logo, or screenshot"},
+    {"asset_group_id": "AR-013", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_embedded_pixels_not_yet_replaced", "blocking_dependency": "per-component provider/model/batch/input-rights/output mapping or cleared replacement"}
+  ],
+  "release_actions": [
+    {
+      "priority": 1,
+      "action": "Keep the current package marked do_not_publish while excluded files and embedded components remain physically present.",
+      "acceptance": "No publishable manifest or release archive contains an asset group with excluded_from_public_package disposition."
+    },
+    {
+      "priority": 2,
+      "action": "Replace base-map and satellite pixels with a redistribution-safe source, recording provider, license, capture/version, source hash, transformation, and output hash.",
+      "acceptance": "AR-010 is changed only after evidence exists; downstream AR-002/003/004/006/007 hashes are regenerated."
+    },
+    {
+      "priority": 3,
+      "action": "Map every retained generated component to provider, model, batch/run, source/input rights, source hash, and output hash, or replace/remove it.",
+      "acceptance": "No retained generated component remains at unknown provenance strength."
+    },
+    {
+      "priority": 4,
+      "action": "Complete trademark and international-semantics review before treating the working name or logo direction as a public brand asset.",
+      "acceptance": "The reviewer role and decision evidence are recorded without implying registration or endorsement."
+    }
+  ],
+  "summary": {
+    "decision_count": 13,
+    "cleared_with_evidence_group_count": 3,
+    "replaced_with_cleared_asset_group_count": 0,
+    "excluded_from_public_package_group_count": 10,
+    "unresolved_current_package_group_count": 8,
+    "current_package_excluded_but_physically_present_group_ids": ["AR-002", "AR-003", "AR-004", "AR-005", "AR-006", "AR-007", "AR-010", "AR-013"],
+    "publishable_now": false,
+    "claim_boundary": "The package-level exclusion is an explicit review boundary, not proof that excluded bytes have already been removed."
+  }
+}
