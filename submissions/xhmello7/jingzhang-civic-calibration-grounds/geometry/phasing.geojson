@@ -18,7 +18,9 @@
         "trigger": "official base data, site survey, operator mandate and implementation agreement",
         "limitation_zh": "离散项目包意向范围；不代表征拆、投资或审批承诺。",
         "area_sqm_declared": 86652.324,
-        "implementation_trigger": "station/public-space survey, access-right confirmation, accessibility audit, operator registration and public-space management agreement"
+        "implementation_trigger": "station/public-space survey, access-right confirmation, accessibility audit, operator registration and public-space management agreement",
+        "v6_ecosystem_stage": "bounded_first_use_public_verification_and_retirement_memory",
+        "v6_operation_stages": ["autumn_limited_release", "winter_review_and_archive"]
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -65,7 +67,9 @@
         "data_status": "indicative_project_package",
         "trigger": "official base data, site survey, operator mandate and implementation agreement",
         "limitation_zh": "离散项目包意向范围；不代表征拆、投资或审批承诺。",
-        "area_sqm_declared": 32544.827
+        "area_sqm_declared": 32544.827,
+        "v6_ecosystem_stage": "research_open_source_prototype_and_controlled_calibration",
+        "v6_operation_stages": ["spring_open_knowledge", "summer_controlled_calibration"]
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -616,7 +620,9 @@
         "data_status": "indicative_project_package",
         "trigger": "official base data, site survey, operator mandate and implementation agreement",
         "limitation_zh": "离散项目包意向范围；不代表征拆、投资或审批承诺。",
-        "area_sqm_declared": 32421.724
+        "area_sqm_declared": 32421.724,
+        "v6_ecosystem_stage": "ecological_commuting_and_low_disturbance_research_interface",
+        "v6_operation_stages": ["continuous_problem_intake", "summer_controlled_calibration"]
       },
       "geometry": {
         "type": "MultiPolygon",
