@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
-  "index_id": "JZ-REVIEW-HANDOFF-R58.5",
-  "publication_revision": "58.5",
-  "as_of": "2026-08-24",
+  "index_id": "JZ-REVIEW-HANDOFF-R59.0",
+  "publication_revision": "59.0",
+  "as_of": "2026-08-25",
   "reading_routes": [
     {
       "time": "30_seconds",
@@ -13,8 +13,13 @@
     {
       "time": "3_minutes",
       "question": "What continues in ordinary, verification, fault and recovery states?",
-      "primary_answer": "assets/figures/four-state-journey.png",
-      "contract": "visual/assets/non-ai-parity-contract.json"
+      "primary_answer": "visual/index.html#s3",
+      "contract": "visual/assets/non-ai-parity-contract.json",
+      "motion": "assets/media/four-state-experience.mp4",
+      "static_fallback": "assets/figures/four-state-journey.png",
+      "caption": "assets/media/four-state-experience.vtt",
+      "transcript": "assets/media/four-state-experience.md",
+      "experience_contract": "visual/assets/four-state-experience-contract.json"
     },
     {
       "time": "15_minutes",
@@ -47,7 +52,7 @@
         "label_zh": "四种状态",
         "label_en": "Four states",
         "answer": "Ordinary continues; verification is bounded; fault stops only the overlay; recovery restores the ordinary task and is not authorization or G1.",
-        "surface": "assets/figures/four-state-journey.png"
+        "surface": "visual/index.html#s3; assets/figures/four-state-journey.png; assets/media/four-state-experience.mp4"
       },
       {
         "order": 4,
@@ -64,7 +69,15 @@
       "visual/assets/bilingual-material-equivalence.json",
       "visual/assets/data-gap-closure-register.json"
     ],
-    "presentation_warning": "Keep G0, provisional, not-to-scale, not-approved and real-results-zero visible; a concise route changes reading order, not evidence status."
+    "presentation_warning": "Keep G0, provisional, not-to-scale, not-approved and real-results-zero visible; a concise route changes reading order, not evidence status.",
+    "media_accessibility_route": {
+      "video": "assets/media/four-state-experience.mp4",
+      "poster": "assets/media/four-state-cover.webp",
+      "caption": "assets/media/four-state-experience.vtt",
+      "transcript": "assets/media/four-state-experience.md",
+      "static_fallback": "assets/figures/four-state-journey.png",
+      "truth_boundary": "54 seconds is editorial pacing; conceptual only; G0 / NO-GO / provisional / real results 0."
+    }
   },
   "single_handoff_candidate": {
     "candidate_id": "PRE-G1-JZ05-SCENE011-T02",

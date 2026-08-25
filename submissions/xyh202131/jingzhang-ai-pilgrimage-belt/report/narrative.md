@@ -16,6 +16,16 @@ The proposal makes one spatial decision: verification may not occupy the ground 
 - 3 分钟：解释普通—验证—故障—恢复，不把运行状态误写为成熟度。
 - 15 分钟：把主张追到 geometry、metrics、来源、权利和专业否决。
 
+## Four-state spatial experience / 四态空间体验
+
+The 54-second silent bilingual motion diagram is an editorial reading sequence, not a real recovery duration. It keeps ordinary ground continuous, places voluntary verification beside it, stops only the verification object in fault, and restores the ordinary task, staffed service, physical information and traceable evidence state without implying model restart, authorization, approval or G1. The shared bilingual VTT and transcript carry the same eight-shot order. The static storyboard beside the player is the complete no-motion, print and decoding-failure answer, and all media returns to `visual/assets/four-state-experience-contract.json` and the professional handoff packet.
+
+54 秒无声双语动态图解只是编辑阅读序列，不代表现实恢复时长。它让普通地面始终连续，把自愿验证放在旁侧，故障时只停止验证对象，并恢复普通任务、人工服务、实体信息和可追证状态，不暗示模型重启、授权、批准或 G1。共享双语 VTT 与文字稿保持同一八镜头顺序；播放器旁的静态故事板是无动态、打印和解码失败时的完整答案，全部媒体均回链到 `visual/assets/four-state-experience-contract.json` 与专业交接包。
+
+The cover, video, captions, transcript and contract are contributor-authored conceptual presentation generated locally and deterministically without a network or model API. They are not site condition, public opinion, accessibility compliance, approval, performance, official geometry, service result or maturity evidence. Package-wide reuse remains blocked pending component terms and independent audit.
+
+封面、视频、字幕、文字稿和合同是投稿方在本地无网络、无模型 API 条件下确定性生成的概念展示，不是现场、公众意见、无障碍达标、批准、绩效、官方几何、服务结果或成熟度证据；整包复用仍受组件条款与独立审计阻断。
+
 ## Single professional handoff candidate / 唯一专业交接候选
 
 `JZ-05 × SCENE-011 × T-02` is the only pre-G1 professional review candidate. Its version-2.1 packet fixes source-maintenance duties, procedure boundaries, staffed-window fields, the same-task baseline, accessibility/public-parity co-testing, one primary metric and denominator, four stop hard gates, approval scope and independent retest. It also fixes the future lock order for a dated walkthrough, peak/quiet observation, exact denominators and thresholds, and four restoration objects; none can be populated before lawful access and accepted responsibility. Its five bounded questions, ten PII-free synthetic decisions and four stop/recovery branches remain reviewable without a model or API. Seven H01-H07 conditions and eight D01-D08 records are prepared, but real acceptance, attachments, field execution, approval and independent retest remain zero; the decision stays G0 / NO-GO.
@@ -24,9 +34,9 @@ The proposal makes one spatial decision: verification may not occupy the ground 
 
 ## Rights and authenticity / 权利与真实性
 
-Contributor-owned content is CC BY 4.0; contributor-owned code is MIT; OSM-derived database content remains ODbL; rasterized Noto Sans CJK SC glyph output in PDF and the offline-HTML subset remain OFL 1.1; third-party citations and repository provisional inputs are not relicensed. Every current distribution path has a contributor rights-inventory decision, while independent legal and trademark review remain absent. All optional model-generated media has been removed. Licensing does not establish field truth, approval, accessibility compliance, professional acceptance or G1.
+Contributor-owned content and the deterministic R59 concept media are CC BY 4.0; contributor-owned code is MIT; OSM-derived database content remains ODbL; rasterized Noto Sans CJK SC glyph output in PDF and the offline-HTML subset remain OFL 1.1; third-party citations and repository provisional inputs are not relicensed. Every current distribution path has a contributor rights-inventory decision, while independent legal and trademark review remain absent. Model-generated media paths remain zero; the R59 cover and silent video are contributor-authored deterministic presentation. Licensing does not establish field truth, approval, accessibility compliance, professional acceptance or G1.
 
-投稿方自有内容采用 CC BY 4.0，自有代码采用 MIT；OSM 数据库衍生内容继续适用 ODbL；PDF 中栅格化的 Noto Sans CJK SC 字形输出和离线 HTML 子集继续适用 OFL 1.1；第三方引用与仓库临时输入不被重新许可。当前分发树每个路径均有投稿方权利自查决定，独立法律和商标审查仍未提供。全部可选模型生成媒体已清退。许可不证明现场、批准、无障碍达标、专业接责或 G1。
+投稿方自有内容与第59轮确定性概念媒体采用 CC BY 4.0，自有代码采用 MIT；OSM 数据库衍生内容继续适用 ODbL；PDF 中栅格化的 Noto Sans CJK SC 字形输出和离线 HTML 子集继续适用 OFL 1.1；第三方引用与仓库临时输入不被重新许可。当前分发树每个路径均有投稿方权利自查决定，独立法律和商标审查仍未提供。模型生成媒体路径继续为 0；第59轮封面和无声视频是投稿方原创确定性展示。许可不证明现场、批准、无障碍达标、专业接责或 G1。
 
 ## Data-gap decision / 数据缺口裁决
 
@@ -40,9 +50,9 @@ Beiwei Community is now stated as an optional community-context comparator besid
 
 北纬社区现被明确为与原点社区并列但不可互换的可选社区语境对照点；未来科学城、怀柔科学城、经开区、其他创新街区和京津冀各保留一项可选复测角色。所有节点均未确认。没有书面责任接受、合法数据边界、普通任务基线及适用 H01—H07 材料，接力不启动；节点间只可传递最小、带版本的任务/协议及匿名或合成证据包。
 
-The bilingual equivalence record now maps eight critical claims across Markdown, rendered HTML, figures and fixed-page PDFs. It remains contributor-side agent QA: independent human confirmation and certified translation are not provided and are not claimed.
+The bilingual equivalence record now maps nine critical claims across Markdown, rendered HTML, figures, fixed-page PDFs and the shared accessible media route. It remains contributor-side agent QA: independent human confirmation and certified translation are not provided and are not claimed.
 
-双语等价记录现把八项关键主张逐项映射到 Markdown、渲染 HTML、图件和定页 PDF；它仍是投稿方侧 Agent 审校，独立人工确认与认证翻译尚未提供，也不作此类宣称。
+双语等价记录现把九项关键主张逐项映射到 Markdown、渲染 HTML、图件、定页 PDF 和共享可访问媒体路径；它仍是投稿方侧 Agent 审校，独立人工确认与认证翻译尚未提供，也不作此类宣称。
 
 ## Frozen facts / 冻结事实
 

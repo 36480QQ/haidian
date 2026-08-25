@@ -1,5 +1,21 @@
 # 方案迭代记录 / Changelog
 
+## v59.0 - 2026-08-25
+
+**四态空间体验化 / Four-state Spatial Experience**
+
+- 将既有“普通—验证—故障—恢复”关系重绘为一条连续普通地面、旁侧验证、只停验证对象的故障点和回到普通任务的恢复序列；三处原型继续以平行带/旁侧庭、一街两院四撤回点、四向十字/路外厅区分。
+- 新增投稿方原创概念封面、54 秒无声双语动态图解、双语 VTT、双语文字稿和镜头合同；54 秒仅为编辑节奏。visual 保持六项导航、零 JavaScript、无远程依赖、无自动播放，并始终显示静态回退。
+- 从同一确定性源重建中英文 A3 各 14 页、A0 各 8 页；两次新进程四份 PDF 字节一致，四态新图已进入指定页，44 页机器与人工 QA 通过。
+- 媒体由 Python/Pillow/Chrome/FFmpeg 与登记字体本地确定性生成，不访问网络、不调用模型 API、不含外部媒体、音乐、配音或音轨。逐路径权利、自编来源、双语等价和专业交接记录已同步。
+- 本轮不新增事实、场景、项目、重点区、治理合同或成熟度；geometry、`metrics.json`、12/8/3/36、G0 / NO-GO、provisional、现实结果 0、H01—H07 未接受、`not_fully_cleared`、独立清权 0 与商标审查 0 均不变。
+
+- Rebuilt Ordinary—Verification—Fault—Recovery as continuous ordinary ground, side verification, a fault point that stops only proof objects, and recovery back to the ordinary task. The three prototypes remain distinct as parallel bands/side court, one street/two courts/four withdrawals, and four-way cross/off-route hall.
+- Added a contributor-authored conceptual cover, a silent 54-second bilingual motion diagram, bilingual VTT, bilingual transcript and shot contract; 54 seconds is editorial pacing only. The visual retains six navigation items, zero JavaScript, no remote dependency, no autoplay, and an always-visible static fallback.
+- Rebuilt the 14+14 A3 pages and 8+8 A0 boards from one deterministic source. Two fresh processes produced byte-identical PDFs; the R59 storyboard is embedded in the designated pages and all 44 pages passed machine and human-view QA.
+- Media was produced locally and deterministically with Python/Pillow/Chrome/FFmpeg and the registered font, with no network, model API, external media, music, voice or audio stream. Path-level rights, the package-authored source, bilingual equivalence and professional handoff records are synchronized.
+- This revision adds no fact, scenario, project, key area, governance contract or maturity claim. Geometry, `metrics.json`, 12/8/3/36, G0 / NO-GO, provisional, real results 0, unaccepted H01—H07, `not_fully_cleared`, independent clearance 0 and trademark review 0 remain unchanged.
+
 ## v58.5 - 2026-08-24
 
 **下一评审缺口预防与出版去重 / Anticipatory Review-Gap and Publication De-duplication**
@@ -120,4 +136,4 @@ To keep the log human-readable and below the 256 KiB Markdown gate, repeated bil
 - 2026-08-11—10: v4.0—v2.5 — 早期方案与正式包结构演进。
 - 2026-08-09: v2.4 — 初始正式化记录。
 
-所有历史轮次均受当时仓库规则与其记录的 provisional/G0/rights 边界约束；较早的“就绪”表述不得覆盖 v58 当前分层许可、来源治理、现实结果 0 与 H01—H07 未接受状态。
+所有历史轮次均受当时仓库规则与其记录的 provisional/G0/rights 边界约束；较早的“就绪”表述不得覆盖 v59 当前分层许可、来源治理、现实结果 0 与 H01—H07 未接受状态。
