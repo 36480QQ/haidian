@@ -624,6 +624,11 @@ That yields a concrete planning conclusion: **the diagnosis holds inside the Ove
 
 ![Walking and cycling and blue-green public space composite system](assets/figures/mobility-bluegreen.en.png)
 
+**Lift the network to see it.** In plan, 62 components are just 62 colours and the reader still has to take our word for it. The axonometric below lifts each component onto its own plane: **two segments of different colour do not share a plane, and why a robot cannot cross stops needing explanation.** The largest piece, 27,557 m, is only 19.4% of the network; the other 53 together come to 24.9%. It must be stated that height here is expression, not data - the z value follows a component's rank and has no relation to terrain, elevation, storeys or gradient, while plan position and alignment remain the measured EPSG:4548 projection.
+
+![Exploded axonometric: the network is in 62 pieces](assets/figures/network-axon.en.png)
+
+
 ### Running the scenario cards as a dispatch ledger: 30 tasks, 3 successes
 
 The preceding sections measured the network. This one measures **tasks**. Ten scenario cards that stop at description give a panel no way to judge whether they can run, so this proposal turns the flagship scenario into a recomputable dispatch ledger, `simulation.json`, submitted under the contract set out in the repository's `docs/simulations.md`.

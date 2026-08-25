@@ -368,6 +368,8 @@ code {
 <p>这不是取数取错了，是问题本身的性质决定的。连通性是整张网的属性，不是某一段的属性；把网按边界裁开再算连通分量，裁出来的断点是边界造成的，不是现实中的。为了验证这一点，本方案把网裁到范围内重算了一遍：范围内 24.68 公里车道仍然碎成 28 个分量，最大分量只占 15.4% 的节点 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="cycleway_components_within_scope_only" title="指标：cycleway_components_within_scope_only">指标</sup>。<strong>碎裂的诊断在范围内独立成立，不是把视野放宽才看出来的。</strong>但补缺口的三个位置确实在范围外。</p>
 <p>由此得到一个具体的规划结论：<strong>诊断在总体设计范围内成立，解药在统筹研究范围里。</strong>JZ-07 不是一个总体设计范围的项目，它需要在更大的范围里协调。这恰好是公告设置三层范围的用处——如果只在 11.4 平方公里内做交通方案，这条结论根本不会出现，而旗舰场景会带着一个未被发现的前置条件往下走。需要补充的是，边界本身是临时粗略边界，&quot;范围外&quot;这个判断会随官方边界发布而变化。</p>
 <figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿公共空间复合系统图"><figcaption>交通慢行与蓝绿公共空间复合系统图</figcaption></figure>
+<p><strong>把这张网抬起来看。</strong>平面图上，62 个分量只是 62 种颜色，读者仍得相信我们的说法。下面这张轴测把每个分量抬到各自的高度：<strong>颜色不同的两段不在同一个平面上，&quot;机器人过不去&quot;这件事不再需要解释。</strong>最大的一片 27,557 米也只占全网 19.4%，其余 53 片加起来占 24.9%。需要标明的是，图中的高度是表达手段而非数据——z 值由分量排名决定，与地形、标高、层数、坡度都没有关系，平面位置与线形仍是 EPSG:4548 实测投影。</p>
+<figure class="proposal-figure"><img src="../assets/figures/network-axon.png" alt="轴测分层：这张网碎成了 62 片"><figcaption>轴测分层：这张网碎成了 62 片</figcaption></figure>
 <h3>把场景卡跑成一本调度台账：30 条任务，3 条成功</h3>
 <p>前面几节算的是网络，这一节算的是<strong>任务</strong>。十张场景卡如果只停在描述上，评审无从判断它们能不能跑；所以本方案把旗舰场景做成了一本可复算的调度台账 <code>simulation.json</code>，用仓库 <code>docs/simulations.md</code> 规定的口径提交。</p>
 <p>需要先说明一件事：仓库给的模板用的是“固定 seed 的离线<strong>合成</strong>轨迹”。<strong>本方案没有用合成轨迹</strong>，因为合成轨迹只能证明我们会写 JSON，证明不了这座城市。台账里每一条任务的成败，都是在实测路权图（571 节点／586 边／62 连通分量）上跑 Dijkstra 判出来的：能不能连通、末端多少米没有路权、法定路径比直线远多少。没有随机数，没有在线模型调用，没有个人数据，<code>python3 analysis_simulation.py</code> 重跑逐字节一致。</p>
