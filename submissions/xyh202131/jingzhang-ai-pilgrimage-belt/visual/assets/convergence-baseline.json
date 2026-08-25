@@ -52,7 +52,7 @@
   },
   "current_resolution_summary": {
     "RED-01": "resolved_by_scope_separated_component_licenses_and_fail_closed_package_reuse_boundary",
-    "RED-02": "resolved_by_removing_optional_generated_media_from_the_current_distribution_tree",
+    "RED-02": "superseded_in_R59_by_four_bounded_deterministic_contributor_media_paths_with_static_fallback_and_explicit_non_evidence_rights_boundary",
     "RED-03": "resolved_by_one_ruling_three_prototypes_four_states_one_candidate_reading_route",
     "RED-04": "resolved_by_single_pre_g1_candidate_with_all_real_h01_h07_acceptance_remaining_zero"
   },
@@ -68,7 +68,7 @@
     {
       "id": "RED-02",
       "status": "red",
-      "current_status": "resolved_optional_generated_media_removed",
+      "current_status": "superseded_in_R59_by_bounded_deterministic_contributor_media_with_static_fallback_model_generated_media_count_still_zero",
       "finding_zh": "9 个可选生成媒体路径增加真实性与许可负担，却不是理解双轨空间裁决、三处原型或 G0 交接所必需。",
       "finding_en": "Nine optional generated-media paths add authenticity and licensing burden without being necessary to understand the spatial ruling, the three prototypes or the G0 handoff.",
       "target": "清退非必要生成媒体，以可复现的原创图解、静态回退和默认封面替代。"
