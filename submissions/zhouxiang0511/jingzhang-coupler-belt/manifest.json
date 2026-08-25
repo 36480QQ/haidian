@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5799fd667394425207b1b84103a2191dc889f97b58ff8d7dca29aa7542d9281e"
+      "sha256": "296021bac4bd3ee4aff311cede405118c53efff229b36d379a4a5d4c61ac3ce7"
     },
     {
       "path": "compliance_matrix.json",
@@ -324,7 +324,7 @@
       "role": "asset",
       "required": false,
       "language": "neutral",
-      "sha256": "0d003e0e2e57176fe4665daeda8c16e47d2449586319187f943f7688218c3c36"
+      "sha256": "cb8dcb7a737e1876d1a2ef143809993160a3e5026d018f4c98d93712a5334c24"
     },
     {
       "path": "assets/figures/brand-standards.png",
@@ -367,7 +367,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
