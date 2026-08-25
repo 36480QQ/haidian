@@ -10,21 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/JohnXu22786/barrierfree-agefriendly/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
-        "submissions/JohnXu22786/barrierfree-agefriendly/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/JohnXu22786/barrierfree-agefriendly/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/barrierfree-agefriendly/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
+        "submissions/JohnXu22786/barrierfree-agefriendly/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/JohnXu22786/barrierfree-agefriendly/proposal.md"
@@ -34,16 +20,27 @@
       ],
       "changed_files": [
         "submissions/JohnXu22786/barrierfree-agefriendly/agent.json",
+        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/ecosystem-map.en.png",
+        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/ecosystem-map.png",
+        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/key-areas.en.png",
         "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/key-areas.png",
+        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/land-use-structure.en.png",
         "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/land-use-structure.png",
+        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/logo-carejz.en.png",
+        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/logo-carejz.png",
+        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/metrics-evidence.en.png",
         "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/metrics-evidence.png",
+        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/mobility-bluegreen.en.png",
         "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/mobility-bluegreen.png",
+        "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/site-overview.en.png",
         "submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/site-overview.png",
         "submissions/JohnXu22786/barrierfree-agefriendly/assumptions.json",
         "submissions/JohnXu22786/barrierfree-agefriendly/changelog.md",
         "submissions/JohnXu22786/barrierfree-agefriendly/compliance_matrix.json",
         "submissions/JohnXu22786/barrierfree-agefriendly/design_depth_matrix.json",
+        "submissions/JohnXu22786/barrierfree-agefriendly/drawings/a0-boards.en.pdf",
         "submissions/JohnXu22786/barrierfree-agefriendly/drawings/a0-boards.pdf",
+        "submissions/JohnXu22786/barrierfree-agefriendly/drawings/a3-booklet.en.pdf",
         "submissions/JohnXu22786/barrierfree-agefriendly/drawings/a3-booklet.pdf",
         "submissions/JohnXu22786/barrierfree-agefriendly/geometry/buildings.geojson",
         "submissions/JohnXu22786/barrierfree-agefriendly/geometry/constraints.geojson",
@@ -60,17 +57,19 @@
         "submissions/JohnXu22786/barrierfree-agefriendly/proposal.md",
         "submissions/JohnXu22786/barrierfree-agefriendly/report/copyright_statement.md",
         "submissions/JohnXu22786/barrierfree-agefriendly/report/narrative.md",
+        "submissions/JohnXu22786/barrierfree-agefriendly/report/proposal.en.html",
         "submissions/JohnXu22786/barrierfree-agefriendly/report/proposal.html",
         "submissions/JohnXu22786/barrierfree-agefriendly/risk.json",
         "submissions/JohnXu22786/barrierfree-agefriendly/self_check.json",
         "submissions/JohnXu22786/barrierfree-agefriendly/sources.json",
         "submissions/JohnXu22786/barrierfree-agefriendly/standard_matrix.json",
+        "submissions/JohnXu22786/barrierfree-agefriendly/visual/index.en.html",
         "submissions/JohnXu22786/barrierfree-agefriendly/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/JohnXu22786/barrierfree-agefriendly": "formal"
       },
-      "total_bytes": 1030949,
+      "total_bytes": 15857901,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -130,7 +129,14 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.110044,
-        "public_space_ratio": 0.003167
+        "public_space_ratio": 0.003167,
+        "scenario_card_count": 10.0,
+        "global_case_count": 6.0,
+        "persona_count": 5.0,
+        "industry_test_scenario_count": 3.0,
+        "annual_program_count": 3.0,
+        "phase_count": 3.0,
+        "key_area_count": 3.0
       }
     },
     "stderr": ""
@@ -144,15 +150,15 @@
       "summary": {
         "standard_matrix_items": 5,
         "design_depth_items": 15,
-        "known_metric_refs_required": 17,
+        "known_metric_refs_required": 18,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 8,
-          "standard": 0,
+          "source": 7,
+          "standard": 2,
           "depth": 0,
           "data": 1,
-          "metric": 2
+          "metric": 6
         }
       }
     },
@@ -169,21 +175,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/barrierfree-agefriendly/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
-  ],
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
@@ -214,5 +206,70 @@
       "target": "professional_review.py",
       "message": "professional_review: PASS"
     }
-  ]
+  ],
+  "figure_qc": {
+    "ok": true,
+    "ink_ok": true,
+    "clip_clear": true,
+    "overlap_clear": "not_verified",
+    "summary": "ink+edge-clip machine check only; text-overlap not machine-verified post-hoc (figure generation text-bbox checks recorded in changelog)",
+    "figures": {
+      "ecosystem-map.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.3223,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true
+      },
+      "key-areas.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1196,
+        "edge_clip_ratio": 0.0069,
+        "edge_clip_clear": true
+      },
+      "land-use-structure.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1977,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true
+      },
+      "logo-carejz.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1282,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true
+      },
+      "metrics-evidence.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1499,
+        "edge_clip_ratio": 0.0092,
+        "edge_clip_clear": true
+      },
+      "mobility-bluegreen.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.084,
+        "edge_clip_ratio": 0.0061,
+        "edge_clip_clear": true
+      },
+      "probe1.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.208,
+        "edge_clip_ratio": 0.0107,
+        "edge_clip_clear": true
+      },
+      "site-overview.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.0985,
+        "edge_clip_ratio": 0.0063,
+        "edge_clip_clear": true
+      }
+    }
+  }
 }
