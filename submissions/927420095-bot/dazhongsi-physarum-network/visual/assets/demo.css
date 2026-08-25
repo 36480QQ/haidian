@@ -55,8 +55,8 @@ html, body {
   font-weight: 700;
   font-size: 18px;
 }
-.app-header h1 { font-size: 16px; margin: 0; font-weight: 700; letter-spacing: 0.5px; }
-.app-header .subtitle { font-size: 12px; opacity: 0.9; margin: 0; }
+.app-header h1 { font-size: 16px; margin: 0; font-weight: 700; letter-spacing: 0.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.app-header .subtitle { font-size: 12px; opacity: 0.9; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 /* ---------- 语言切换 ---------- */
 #lang-switch {
@@ -79,7 +79,7 @@ html, body {
 /* ---------- 控制面板 ---------- */
 #control-panel {
   position: absolute;
-  top: 76px;
+  top: 84px;
   left: 14px;
   z-index: 1000;
   width: 230px;
@@ -116,7 +116,7 @@ html, body {
 /* ---------- 状态提示 ---------- */
 #status-bar {
   position: absolute;
-  top: 76px;
+  top: 84px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -155,7 +155,7 @@ html, body {
 /* ---------- 路径信息 ---------- */
 #route-info {
   position: absolute;
-  top: 76px;
+  top: 84px;
   right: 14px;
   z-index: 1000;
   width: 240px;
@@ -216,7 +216,9 @@ html, body {
   border-radius: 10px;
   box-shadow: var(--shadow);
   font-size: 12px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(100vh - 210px);
 }
 #docs-panel summary {
   cursor: pointer;
@@ -234,6 +236,14 @@ html, body {
 #docs-panel .docs-metrics li { padding: 2px 0; }
 #docs-panel .docs-metrics b { color: var(--ink); font-weight: 600; }
 #docs-panel .docs-meta { font-size: 11px; color: var(--muted); }
+
+/* ---------- R25-3 1.2：英文长文本不裁切 ---------- */
+#route-info .route-row { flex-wrap: wrap; }
+#route-info .route-row span,
+#route-info .route-row b { flex-shrink: 0; }
+#route-info .route-row b { overflow-wrap: anywhere; }
+.legend-item > span:last-child { flex-shrink: 0; overflow-wrap: anywhere; }
+#docs-panel .docs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
 
 /* ---------- 响应式 ---------- */
 @media (max-width: 720px) {
