@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v0.4 - 2026-08-25
+
+- 修正 provisional site boundary 的指标语义：`site_area_sqm` 改为 medium-confidence design-model output，删除“official boundary present”假设，并同步 manifest 数据置信度与复算触发条件。
+- 将七个全球 AI 案例拆分为逐项背景来源登记（MaRS、Station F、Alan Turing Institute、Pittsburgh Robotics Network、Punggol Digital District、Shibuya QWS、Brainport Eindhoven），明确不支撑本地事实或实施承诺。
+- 为中文离线报告嵌入本地 Noto Sans SC 字体资产，避免浏览器无中文字体时出现方框字；同步保留双语图件与 PDF 的离线交付。
+
 ## v0.3 - 2026-08-25
 
 - 将方案名称更新为 `京张协作廊：铁路遗产与AI公共创新` / `Jing-Zhang Civic Spine: Heritage, Public Life, and AI Innovation`，同步收敛品牌识别语法。

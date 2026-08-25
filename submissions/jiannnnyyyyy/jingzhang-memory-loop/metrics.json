@@ -13,9 +13,10 @@
         "geometry/site_boundary.geojson"
       ],
       "formula": "polygon_area(submitted_site_boundary)",
-      "confidence": "high",
+      "confidence": "medium",
       "assumptions": [
-        "Trusted official boundary is present in the site package."
+        "Submitted polygon is a provisional rough constraint derived from the repository provisional geometry; it is a design-model output, not an official boundary or precise-area basis.",
+        "Recalculate after the organizer publishes the official overall-design polygon."
       ]
     },
     "building_footprint_area_sqm": {

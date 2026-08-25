@@ -33,7 +33,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 研究提出“一带三核、多点场景、蓝绿慢行复合环”：一带对应百年京张文化带、都市 AI 生活体验带和 AI 融合创新带；三核对应三个重点区；多点场景承载研发、服务、展示和生活。五大功能落为 AI 全栈自主创新、世界级创新生态、AI+ 场景赋能、智能化活力城市、AI 治理全球话语权 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
-生态参考案例只用于方法对照，不代表本地已落地：加拿大多伦多 MaRS（开放式研发服务）、法国 Station F（创业社区运营）、英国 Alan Turing Institute（公共研究）、美国 Pittsburgh Robotics Network（测试场景）、新加坡 Punggol Digital District（产城协同）、日本东京涩谷 QWS（跨界共创）、荷兰 Brainport Eindhoven（产业链协同）。方案将其转译为“空间、算力、数据、场景、资本、人才、治理”七要素清单，不编造企业名单、投资额或政策承诺 [source:GLOBAL-AI-CASE-METHODS]。
+生态参考案例只用于方法对照，不代表本地已落地：加拿大多伦多 MaRS（开放式研发服务）[source:CASE-MARS]、法国 Station F（创业社区运营）[source:CASE-STATION-F]、英国 Alan Turing Institute（公共研究）[source:CASE-TURING]、美国 Pittsburgh Robotics Network（测试场景）[source:CASE-PITTSBURGH-ROBOTICS]、新加坡 Punggol Digital District（产城协同）[source:CASE-PUNGGOL]、日本东京涩谷 QWS（跨界共创）[source:CASE-QWS]、荷兰 Brainport Eindhoven（产业链协同）[source:CASE-BRAINPORT]。这些来源均为公开背景方法参考，不能支撑本地现状、投资额、企业名单或政策承诺；方案将其转译为“空间、算力、数据、场景、资本、人才、治理”七要素清单。
 
 七要素的协同回路是“高校/研究者提出问题—众智园做安全与标准验证—AI 原点社区完成近校转化—大钟寺完成产品与内容展示—中关村科技服务翼连接知识产权、资本和国际合作—小月河场景赋能翼收集公共体验反馈”。每个环节只提出概念性接口：公共机构负责规则与复核，企业/高校可自愿参与，开发者通过公开 API 和开源协议接入，居民通过非数字渠道反馈。该回路把研究成果、产业服务和公共利益放在同一张生态图上，但不预设供应商、投资人或政府采购。
 
