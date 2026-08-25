@@ -1,7 +1,7 @@
 # 资产权利、生成链与再分发台账 · 京张气脉 · 风水AI
 
 > Asset rights, provenance, attribution, redistribution, and replacement ledger
-> 台账日期：2026-08-25｜适用对象：`submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/` v1.5
+> 台账日期：2026-08-25｜适用对象：`submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/` v1.7
 
 ## 0. 台账效力与状态口径
 
@@ -93,6 +93,8 @@
 - 所有引用的国家标准（GB/T、CJJ、JGJ 等）、法律法规（《无障碍环境建设法》等）及政策文件均属于公开法律法规与国家标准文献，仅作为规划设计参考依据（background_only），不构成对标准文本本身的再分发。
 - 历史文献（京张铁路史料、清华园车站旧址）均来自公开权威记载，仅支撑文化叙事，不作为法定测绘依据。
 - 全部来源均已在 `sources.json` 中明确登记其 `source_type`（official_public / background_only / provisional_only / user_provided_cleared / repository_public_registry / repository_processed_reference / agent_inferred_from_public_data），并按来源等级执行使用纪律。
+- 关键来源登记访问日期与版本指针；若未保留离线快照，则该限制如实标注。
+- Key sources register their access date and version pointer; where no offline snapshot is retained, that limitation is stated explicitly.
 
 ## 9. 权利声明结论
 

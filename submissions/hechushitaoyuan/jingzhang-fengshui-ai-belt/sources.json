@@ -35,18 +35,27 @@
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",
+      "accessed_date": "2026-08-25",
+      "source_version": "page content as accessed on the recorded access date; publisher revision identifier not displayed",
+      "snapshot": "no offline copy redistributed; citation metadata only",
       "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
     },
     {
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
+      "accessed_date": "2026-08-25",
+      "source_version": "repository Git blob 5a9774fc4b339f788841304f2ac4133bf57bf04c; SHA-256 40465ac99823c78cd197f331a7729e4c5dbe6764278bdd534598f8275d5a8b7d",
+      "snapshot": "brief/site-package/agent_taskbook.json in the submission repository",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
     },
     {
       "id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
       "path": "data/source_registry.json",
       "source_type": "provisional_only",
+      "accessed_date": "2026-08-25",
+      "source_version": "registry Git blob c5e2243c85f1a62edb295911439e1847b9e634fb; SHA-256 4784e80d2d3662be2f4d8c46451ddb9b11e06058150786a784a870cd92a91c66",
+      "snapshot": "geometry/site_boundary.geojson (SHA-256 66b8ab3db46dca00224c0662890a69c1bc0244902aa3390574f1ec20bc4348ff); geometry/key_areas.geojson (SHA-256 566926817504a2938e081390879095fdc300a0df9328ddcbc6131b1e861718d3)",
       "usage": "中央登记中的临时粗略边界条目；本方案 site/key-area 几何的来源登记 ID（provisional，仅用于生成、可视化与临时自检）。"
     },
     {
@@ -85,12 +94,18 @@
     {
       "id": "SRC-A11Y-CHECK-V12",
       "source_type": "background_only",
+      "accessed_date": "2026-08-25",
+      "source_version": "method registration v12; implementation details as registered in this entry",
+      "snapshot": "visual/assets/a11y-color-check.json (SHA-256 5b2cdae45e22935272fca16abd66df3275fa48bd56caff8b63688591fe277918)",
       "usage": "v1.2 无障碍色觉量化核验方法登记：对图件 11 色语义色板做四类色觉模拟下的 CIEDE2000 两两色差核验，阈值 ΔE00≥20；逐对结果登记于 visual/assets/a11y-color-check.json。",
       "limitations": "核验方法、矩阵来源、阈值与实现自检向量在正文与本条完整披露，可由第三方按同方法复算；例外色对整改建议以文字冗余编码兜底。"
     },
     {
       "id": "SRC-OSM-CONTEXT-SNAPSHOT",
       "source_type": "background_only",
+      "accessed_date": "2026-08-25",
+      "source_version": "Overpass API snapshot window beginning 2026-08-22T18:47Z for bbox 39.92,116.31,40.06,116.39",
+      "snapshot": "rendered background-reference figures only; raw database contents are not redistributed",
       "usage": "OpenStreetMap 本地背景快照，经 Overpass API 获取；bbox 39.92,116.31,40.06,116.39，快照时间窗自 2026-08-22T18:47Z 起。数据版权归 © OpenStreetMap contributors，采用 ODbL 1.0。",
       "limitations": "仅用于背景辨识；不参与边界、用地、道路与指标计算；不作测绘成果或审批底图。"
     },
@@ -105,6 +120,9 @@
       "id": "SRC-ZHONGGUANCUN-POLICY",
       "url": "http://zgcgw.beijing.gov.cn/zgc/zwgk/zcfg/bjs/543169824/index.html",
       "source_type": "background_only",
+      "accessed_date": "2026-08-25",
+      "source_version": "policy page as accessed on the recorded access date; publisher document number not captured",
+      "snapshot": "no offline copy redistributed; citation metadata only",
       "usage": "中关村科学城先行先试改革与人工智能创新高地建设相关公开政策导向；支撑产业测试验证场景的政策必要性论述。",
       "limitations": "政策导向文献，不构成具体资金安排或财政承诺。"
     },
@@ -112,6 +130,9 @@
       "id": "SRC-MACHADO-2009-CVD",
       "url": "https://doi.org/10.1109/TVCG.2009.113",
       "source_type": "background_only",
+      "accessed_date": "2026-08-25",
+      "source_version": "DOI landing record as accessed; article version not asserted",
+      "snapshot": "no offline copy redistributed",
       "usage": "Machado et al. (2009) 'A Physiologically-based Model for Simulation of Color Vision Deficiency'；提供二色觉严重度模拟的转换矩阵标准算法。",
       "limitations": "学术模型文献；用于色彩无障碍自检的方法学支撑。"
     },
@@ -119,6 +140,9 @@
       "id": "SRC-SHARMA-2005-CIEDE2000",
       "url": "https://doi.org/10.1002/col.20070",
       "source_type": "background_only",
+      "accessed_date": "2026-08-25",
+      "source_version": "DOI landing record as accessed; article version not asserted",
+      "snapshot": "no offline copy redistributed",
       "usage": "Sharma, Wu, Dalal (2005) 'The CIEDE2000 Color-Difference Formula: Implementation Notes, Supplementary White Points, and High-Precision Test Analytics'；提供色差计算标准实现与自检向量。",
       "limitations": "学术计算文献；用于色差度量算法精度验证。"
     }
