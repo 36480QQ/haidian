@@ -1,5 +1,20 @@
 # 方案迭代记录
 
+## v1.2 - 2026-08-26
+
+Round-3 repair per reviewer (CocoSgt CHANGES_REQUESTED 77.0, blocking dimension: 表达完整度 — figure/visual HTML readability). Per-file summary:
+
+- assets/figures/site-overview.png / site-overview.en.png: regenerated with a collision-free layout — callout-gutter labels (3 key-area callouts + 3 crossing callouts + station/loop/spine/water labels, each with white bbox and thin leaders), legend moved to its own dedicated bottom band below the map (never over map content), PROVISIONAL stamp separated from title and placed in a reserved bottom-right zone, en title kept clear of the warning banner, scale bar replaced by an honest "纵向示意放大、非等比例、不设比例尺" note (north arrow retained). Generation-time QC: 0 text-bbox overlaps, 0 canvas-edge escapes, glyph coverage 0 missing, ink 0.5965 / 0.5831, edge clips all < 0.02 (was 0.0784 ink, overlapping labels near lower node).
+- assets/figures/key-areas.png / key-areas.en.png: regenerated — title moved to top center, stamp moved to a bottom band (no title/warning overlap), panels re-spaced with explicit tick clearing, unit-box labels reflowed to short two-line fit-inside-box labels (zh/en), section panels redesigned: single "净空待核" clearance banner instead of per-pier labels that collided with the reversible-unit box, ramp annotation re-anchored and arrow re-routed, bottom note left-aligned in its own zone. Generation-time QC: 0 overlaps, 0 outside, ink 0.5483 / 0.5455, edge clips 0.
+- assets/figures/metrics-evidence.png / metrics-evidence.en.png: regenerated — en variant now 100% English axes/labels/captions (计数→Count, 比率→Ratio, km²→km2; verified by generation-time CJK-leak assert), ratio y-tick labels shortened (绿地率/公共空间率) so they no longer collide with the counts panel's bar-value texts, bottom caption moved into its own left footer band with explicit line breaks, stamp placed in a separate right footer zone (no bottom-caption collisions), en count-category tick labels rotated 55° with smaller font. Generation-time QC: 0 overlaps, 0 outside, ink 0.3831 / 0.3820, edge clips 0.
+- visual/index.html + visual/index.en.html: responsive image sizing fixed — generic `figure img{max-width:100%;height:auto}` rule added so the overview map scales inside its card (verified at the supplied 1400x1000 viewport: rendered width 1018px <= section width 1064px, no right-side cropping); all 14 required zh markers and metric data-* declarations preserved; en page remains 0 CJK.
+- visual/assets/previews/*: all 16 previews regenerated from the new figures/HTML/PDFs (render_previews.py, real headless-Chromium screenshots + PyMuPDF first-page rasters + pixel copies).
+- drawings/*.pdf (a0-boards, a0-boards.en, a3-booklet, a3-booklet.en): regenerated with round-3 revision stamp (三轮回修 / Round-3 revision) and identical provisional/scope wording.
+- self_check.json: four-gate report re-persisted via self_check_submission.py --mark-self-checked (deterministic/spatial/visual/professional all PASS); figure_qc re-measured by gen_figure_qc.py on the regenerated figures (ink 0.161-0.840, edge clips <= 0.0033, near-blank none; overlap_clear=not_verified post-hoc per honest policy).
+- manifest.json: sha256 hashes refreshed for all declared files; validation_claim.self_checked=true + readiness_contract=persisted-self-check-v1 restored after refresh (refresh tool flips the claim; the persisted four-gate evidence and figure_qc were written after the final hash refresh and re-verified by validate_local_submission.py PASS).
+- Fonts: Noto Sans SC subsets re-embedded in all 4 HTML surfaces after the visual HTML regeneration (check_font_coverage 0 missing CJK everywhere).
+- Manual checks (round 3): 中英实质等值已人工核对（图件配对版面、数值、provisional 警示与位置逐项对应：site-overview/key-areas/metrics-evidence 的 zh-en 成对图、A0/A3 双语图纸、HTML 双页面）；品牌在先权利检索未完成前按内部工作代号处理；图表 ink 值与剪裁检查结果见本条目图件段（round-3 生成时逐图文本 bbox 重叠=0、边溢=0；QC ink 0.161-0.840，edge_clip 全部 <0.02）。
+
 ## v1.1 - 2026-08-26
 
 Round-2 repair per reviewer (CocoSgt CHANGES_REQUESTED). Per-file summary:
