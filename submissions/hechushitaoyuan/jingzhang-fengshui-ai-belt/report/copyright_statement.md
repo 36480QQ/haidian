@@ -1,7 +1,7 @@
 # 资产权利、生成链与再分发台账 · 京张气脉 · 风水AI
 
 > Asset rights, provenance, attribution, redistribution, and replacement ledger
-> 台账日期：2026-08-25｜适用对象：`submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/` v1.4
+> 台账日期：2026-08-25｜适用对象：`submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/` v1.5
 
 ## 0. 台账效力与状态口径
 
@@ -16,7 +16,7 @@
 | --- | --- | --- |
 | 提交责任主体 | GitHub 账号 `hechushitaoyuan`；本提交在该账号分支与 PR 下发布 | 参与者对提交、来源声明和后续异议处理负责 |
 | 团队与署名 | 同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）[Tongji Design AI Cloud: DeepSeek Harness + ox-alpha, with subagent CLIs Codex (GPT-5.6-Sol) and Claude Code (Claude Opus 5)] | 见 `agent.json` 中的完整署名与工具链披露 |
-| 早期生成链 | 初稿由 opencode (kimi-k3) 辅助完成，迭代由 zcode (GLM-5.3) 深化，v1.3~v1.4 由 DSH/ox-alpha 协调 | 人类参与者全程参与并审定设计判断、空间结构与合规红线 |
+| 早期生成链 | 初稿由 opencode (kimi-k3) 辅助完成，迭代由 zcode (GLM-5.3) 深化，v1.3~v1.5 由 DSH/ox-alpha 协调 | 人类参与者全程参与并审定设计判断、空间结构与合规红线 |
 | 图像生成方式 | 最终 11 对中英 PNG 全部由本地 Python/Matplotlib 脚本从提交包 GeoJSON 确定性绘制；未使用扩散模型、第三方照片拼贴、商业截图或未授权效果图 | 本批 PNG 的可审计输入限于本地 GeoJSON 和 OSM 开放数据低对比背景 |
 | 音频生成方式 | 中英双语音频导览由 Windows 内置语音合成引擎（System.Speech，Huihui/Zira 音色）从本地台本逐句离线生成后经 ffmpeg 转码为 mp3；配套 WebVTT 字幕 | 合成语音，非真人录音，零第三方音效，零商业配乐，不含可识别个人生物信息 |
 | 视频生成方式 | 概念视频由 Matplotlib 逐帧从 GeoJSON 几何确定性渲染后经本地 ffmpeg 离线编码为 H.264 mp4；配套中英 WebVTT 字幕 | 零网络请求，零第三方视频片段，分镜脚本见 `assets/media/experience.md` |
@@ -47,8 +47,8 @@
 
 | 路径 | 页数 / 生成链 | 字体与第三方内容 | 再分发与限制 |
 | --- | --- | --- | --- |
-| `drawings/a3-booklet.pdf` | 12 页；ReportLab / Matplotlib 编译；中英图件、重点区细化、场景卡表与指标排版 | 系统字体本地渲染（Noto Sans SC / 微软雅黑子集）；包含 OSM 静态语境，无外部商业图片 | 可随投稿分发/打印；保留 OSM 署名与 provisional 提示 |
-| `drawings/a3-booklet.en.pdf` | 12 页；英文版 A3 册子，与中文册同源 | 同上 | 同上 |
+| `drawings/a3-booklet.pdf` | 6 页；ReportLab / Matplotlib 编译；中英图件、重点区细化、场景卡表与指标排版 | 中文图件 PDF 本地渲染并嵌入 Noto Sans SC 子集；包含 OSM 静态语境，无外部商业图片 | 可随投稿分发/打印；保留 OSM 署名与 provisional 提示 |
+| `drawings/a3-booklet.en.pdf` | 6 页；英文版 A3 册子，与中文册同源 | 英文图件 PDF 本地渲染并使用内置 DejaVu Sans | 可随投稿分发/打印；保留 OSM 署名与 provisional 提示 |
 | `drawings/a0-boards.pdf` | 2 页；矢量排版输出；设计总图与系统展开 | 系统字体本地渲染；无外部照片 | 可随投稿分发/打印；provisional 警示保留 |
 | `drawings/a0-boards.en.pdf` | 2 页；英文版 A0 展板 | 同上 | 同上 |
 
@@ -59,7 +59,7 @@
 | `assets/media/audio-guide-zh.mp3` | 约 3 分钟；Windows 离线语音合成（Huihui 音色）转码 mp3 | 参与者原创文本 + 本地合成语音；无商业配乐 | 概念导览音频，非真人播音；可随包公开分发 |
 | `assets/media/audio-guide-en.mp3` | 约 3 分钟；Windows 离线语音合成（Zira 音色）转码 mp3 | 同上 | 同上 |
 | `assets/media/audio-guide-zh.vtt` / `en.vtt` | WebVTT 格式双语逐句时间轴字幕 | 参与者原创文本；CC-BY-4.0 | 无限制 |
-| `assets/media/experience.mp4` | 约 1 分钟；Matplotlib 逐帧渲染 + 本地 ffmpeg H.264/AAC 编码 | 参与者原创概念动画；无第三方视频 | 概念氛围视频，非工程三维渲染；可随包分发 |
+| `assets/media/experience.mp4` | 24 秒；Matplotlib 逐帧渲染 + 本地 ffmpeg H.264 (yuv420p) 无声编码 | 参与者原创概念动画；无第三方视频 | 概念氛围视频，非工程三维渲染；可随包分发 |
 | `assets/media/experience.vtt` / `en.vtt` | 体验视频双语字幕 | 参与者原创文本；CC-BY-4.0 | 无限制 |
 | `assets/media/cover.png` | 方案封面图；Matplotlib 从提交几何渲染 | 参与者原创声明 | 可作项目展示封面 |
 | `assets/media/experience-poster.png` | 体验海报；从体验视频关键帧抽取 | 参与者原创声明 | 可作视频占位海报 |
@@ -86,7 +86,7 @@
 ## 7. 字体许可合规说明
 
 - **Web 界面**：使用开源字体 **Noto Sans SC**，遵循 **SIL Open Font License 1.1**。字体以字符子集方式嵌入 `visual/assets/fonts.css`，保留了完整的 OFL-1.1 版权声明。根据 OFL 第 1 条与第 5 条，字体子集的打包与随 Web 页面分发完全符合许可条款。
-- **PDF 与静态图件**：图件与 PDF 在本地由系统已安装字体（如 Microsoft YaHei / DejaVu Sans）离线栅格化或子集嵌入。根据常见字体最终用户许可协议（EULA），用于生成静态不可编辑的文档（Print/Preview）属于正当使用范畴；本提交未分发任何独立字体安装文件（.ttf/.ttc）。
+- **PDF 与静态图件**：中文图件 PDF 在本地渲染并嵌入 Noto Sans SC 子集；英文图件 PDF 在本地渲染并使用内置 DejaVu Sans。微软雅黑仅作为 v1.0–v1.4 历史渲染链备注保留，其许可适用性待专业法律确认；本提交未分发任何独立字体安装文件（.ttf/.ttc/.woff2 的可安装字体原件）。
 
 ## 8. 第三方资料与标准规范引用纪律
 

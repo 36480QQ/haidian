@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以风水这一中国传统人居环境智慧为方法论原型，将百年京张铁路遗址走廊转译为可计算、可复算、可运营的AI创新带：一条龙脉、三区五带、曲水抱气、风水留白，并给出可从临时几何复算的指标与证据链。"
 tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.3"
+iteration: "v1.5"
 ---
 
 # 京张气脉 · 风水AI
@@ -31,7 +31,7 @@ iteration: "v1.3"
 
 **资料阅读方法**。除公告与任务书外，本方案完整读取了 site package 的枚举（用地代码、道路等级、建筑类型）、规划限值区间、专业标准清单与其本地参考快照，以及仓库处理资料包（事实导航、任务要求矩阵、来源用途矩阵与缺口清单）[source:SITE-PACKAGE] [source:PROCESSED-FACT-PACK]。这些结构化输入决定了用地代码的取值域、道路等级的命名与指标的合理区间；正文只回引直接支撑当前判断的条目，完整覆盖登记于各矩阵文件。
 
-**生成方法披露**。本方案由多智能体协作完成：初稿由 AI 智能体（opencode，模型 kimi-k3）生成，迭代由 zcode（模型 GLM-5.3）深化；v1.3 阶段署名为「同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）」，人类参与者 hechushitaoyuan 全程负责指令定调、范围确认与成果审定。空间图层由 Python（shapely/pyproj）从临时边界确定性派生，图件由 matplotlib 从同一几何渲染，正文由智能体撰写并经人类指令定调。全部过程脚本与中间产物可复算、可审计，符合共创原则的生成方法披露要求 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+**生成方法披露**。本方案由多智能体协作完成：初稿由 AI 智能体（opencode，模型 kimi-k3）生成，迭代由 zcode（模型 GLM-5.3）深化；v1.3 阶段署名为「同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）」，人类参与者 hechushitaoyuan 全程负责指令定调、范围确认与成果审定。空间图层由 Python（shapely/pyproj）从临时边界确定性派生，图件由 matplotlib 从同一几何渲染，正文由智能体撰写并经人类指令定调。关键公式与几何可由 metrics.json 于 EPSG:4548 复算；生成脚本于作者环境留存，深化阶段按需提供，符合共创原则的生成方法披露要求 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 **外部上下文数据层（背景辨识）**。为在区域尺度辨识走廊的蓝绿与建设本底，方案另取一份 OpenStreetMap 快照作为**纯背景参照层**：bbox（WGS84 南,西,北,东）39.92,116.31,40.06,116.39，快照时间 2026-08-22T18:47Z 前后；经 Overpass API 抽取七类要素——waterway 109、green 1780、amenity（节点口径）2424、road 4636、railway 267、building 14740、公共交通站点 2563，合计 26,519 条。其中 building 计数 14,740 含量关系，图面渲染取 way 级 14,648。来源标注：© OpenStreetMap contributors · Overpass API · ODbL 1.0。配套图件 `context-basemap.png` / `context-basemap.en.png` 仅作可视化。该层有三条硬性范围声明：仅用于背景辨识；不参与任何边界、用地、道路或指标计算；不作测绘成果或审批底图使用 [source:SRC-OSM-CONTEXT-SNAPSHOT]。
 
@@ -398,7 +398,7 @@ iteration: "v1.3"
 | 媒体生成链 | 核对 `sources.json` 条目 SRC-MEDIA-RENDER-V11 | 全部本地确定性生成，零第三方素材 |
 | 色觉核验 | 按 SRC-A11Y-CHECK-V12 方法复算 | 与 `visual/assets/a11y-color-check.json` 逐对一致 |
 
-**版权说明**。正文、代码与图件由 AI 智能体生成（多智能体协作：初稿 opencode/kimi-k3，迭代 zcode/GLM-5.3，v1.3 阶段署名「同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）」）；HTML 交付物按 SIL OFL 1.1 分发 Noto Sans SC 字符子集（base64 嵌入 `visual/assets/fonts.css`，许可全文见该文件头注释），保证无 CJK 字体环境离线正确渲染；PDF 与视频由 matplotlib 本地渲染，使用系统微软雅黑与内置 DejaVu Sans，不再分发其字体文件；案例与历史事实整理自公开资料并以背景级登记；不使用任何未清权图像、地图截图或第三方素材。多媒体披露：封面与图件由 matplotlib 从包内几何确定性渲染；音频导览由 Windows 内置语音合成逐句生成（非真人录音）；概念视频由 matplotlib 逐帧渲染、ffmpeg 本地编码——三者均为**概念氛围/导览内容，非空间依据**，生成方法详见 `assets/media/experience.md`、各音频文稿及 `sources.json` 条目 SRC-MEDIA-RENDER-V11。详见 `report/copyright_statement.md`。
+**版权说明**。正文、代码与图件由 AI 智能体生成（多智能体协作：初稿 opencode/kimi-k3，迭代 zcode/GLM-5.3，v1.3 阶段署名「同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）」）；HTML 交付物按 SIL OFL 1.1 分发 Noto Sans SC 字符子集（base64 嵌入 `visual/assets/fonts.css`，许可全文见该文件头注释），保证无 CJK 字体环境离线正确渲染；中文图件 PDF 嵌入 Noto Sans SC 子集，英文图件 PDF 使用内置 DejaVu Sans（均为本地渲染，不随包分发字体文件）；微软雅黑仅作 v1.0–v1.4 历史渲染链备注，其许可适用性待专业法律确认。案例与历史事实整理自公开资料并以背景级登记；不使用任何未清权图像、地图截图或第三方素材。多媒体披露：封面与图件由 matplotlib 从包内几何确定性渲染；音频导览由 Windows 内置语音合成逐句生成（非真人录音）；概念视频由 matplotlib 逐帧渲染、ffmpeg 本地编码——三者均为**概念氛围/导览内容，非空间依据**，生成方法详见 `assets/media/experience.md`、各音频文稿及 `sources.json` 条目 SRC-MEDIA-RENDER-V11。详见 `report/copyright_statement.md`。
 
 **开放数据合规说明（ODbL）**。外部上下文数据层使用的 OpenStreetMap 数据遵循 Open Database License（ODbL 1.0），本方案按其要求逐图标注"© OpenStreetMap contributors"；快照经 Overpass API 获取并仅作包内背景参照，不对外再分发原始数据库内容；若深化阶段需要以衍生数据库形式发布相关成果，将按 ODbL 1.0 以同等许可开放并保留来源归属。该层与 OSM 数据同属**非权威定位**：仅用于背景辨识，不参与任何指标计算，不作为测绘成果或审批底图，空间结论一律以官方数据与本包临时几何复算为准 [source:SRC-OSM-CONTEXT-SNAPSHOT]。
 
