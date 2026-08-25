@@ -138,7 +138,7 @@ The nursery is not an isolated park but a **seed node** on Beijing's northern in
 | **Huairou Science City** | Major research facilities (high-energy synchrotron etc.) | Upstream supplement to university seed providers; basic research “dripped” into cultivation |
 | **Beiwu Community** | Youth talent community (near Future Science City) | Shared youth-friendly mechanisms; Night School linked with community hubs |
 | **Economic Development Zone** | Smart manufacturing + industrialization | Receives commercialization routing from the Orchard (Dazhongsi); “harvest transport” links to industrial landing |
-| **Jing-Jin-Ji** | Regional collaborative innovation network | Open-source mechanism docs (CC-BY-4.0) + replication toolkit to Xiong'an/Tianjin/Shijiazhuang |
+| **Jing-Jin-Ji** | Regional collaborative innovation network | Open-source mechanism docs (original text CC-BY-4.0, rights holder climashscape) + replication toolkit to Xiong'an/Tianjin/Shijiazhuang |
 
 **Synergy logic**: with the canal network as the “nutrient channel,” the nursery connects upstream basic research in the science cities with downstream industrialization in the Economic Development Zone, avoiding duplicative “small-but-complete” AI parks; the six mechanisms act as a replicable governance protocol, making the nursery an institutional interface for belt-wide synergy rather than an isolated node [2][3].
 
@@ -149,6 +149,26 @@ The nursery is not an isolated park but a **seed node** on Beijing's northern in
 ### Spatial Structure: Spine–Beds–Wings–Ring
 
 One spine (rail main axis; measured spine green belt in green_space.geojson: a ~400 m typical-width conceptual corridor on the inter-district stretch, ~578 ha total incl. embedded green wedges) connects three beds (Seedbed/Greenhouse/Orchard); two wings (**Zhongguancun Technology Service Wing** = IP/capital/university-germplasm empowerment; **Xiaoyuehe Scenario Empowerment Wing** = AI scenario deployment) supply nutrients; one ring (annual-ring plaza) is the governance hub. **The irrigation canal network forms a cross**: a north-south main line linking the three beds and an east-west transverse connecting the wings (roads.geojson, dual segments, doubling as slow-traffic corridors) [3].
+
+### Grounding and Gap-Stitching (site-level)
+
+[depth:overall_spatial_structure] [data:geometry/roads.geojson] [data:geometry/buildings.geojson] To verify how the six mechanisms adapt to real street fabric, breaks, and existing facilities, the proposal anchors mechanisms onto the real GeoJSON base map (site_boundary / key_areas / land_use / green_space / roads / buildings) with conceptual anchor points:
+
+![Grounding and gap-stitching map](assets/figures/grounding-map.png)
+
+**Gap-stitching list (conceptual anchors along the rail spine × urban-road crossings)**:
+
+| ID | Location (real-coordinate domain) | Existing condition / boundary | Stitching strategy | Responsible mechanism |
+|---|---|---|---|---|
+| S1 | Qinghuayuan old-station direction (north spine) | Heritage-park north segment crosses urban road; old station/signal heritage elements | Grade-separated crossing + slow bridge stitching spine to station area; AR tour access | Shading · human review point |
+| S2 | Wudaokou direction (mid-spine) | Existing urban road crosses the spine; gap = canal break | Canal-break repair = slow-traffic continuity (crossing + canal rest stop) | Irrigation · open irrigation records |
+| S3 | Annual-ring plaza (spine × canal hub) | Intersection of east-west canal and the spine | Governance hub + public audit node: ring engravings, retirement gallery, query terminals | Pruning/Rotation · annual rings public |
+| S4 | 500 m shade point east of AI Origin station | Station pedestrian interface | Red-event → manual-takeover drill point; shade signage + accessible route | Shading · takeover logs |
+| S5 | Dazhongsi station city integration | Discontinuous four-quadrant walkability | Four-quadrant pedestrian loop = irrigation loop; “harvest-logistics” static transit | Nitrogen Fixing · contribution ledger |
+
+**Pilot anchors (conceptual, in the real-coordinate domain)**: P-A shade-drill pilot = S4 (500 m shade point at AI Origin station); P-B adoption demo strip = Heritage Park spine segment (~2 km conceptual line); P-C irrigation-equity pilot = Zhongzhiyuan data pump station (north spine). **Heritage nodes**: Qinghuayuan old-station direction, Wudaokou, signal-lamp/rail translation (real local heritage of this segment; not Qinglongqiao relocation).
+
+**Grounding note**: anchors are conceptual (provisional); road redlines/cross-sections, ownership and heritage-control data are pending, so no engineering conclusions are made; positions and distances are recalculated per SOP once the official redline is supplied [2][3].
 
 ### Urban Renewal Framework (conceptual)
 
@@ -352,7 +372,7 @@ All conditions above are **conceptual proposals**: funding, institutions and aut
 - Developer community: gardener community + contribution credits (exchange for bed priority/compute quota) + gardener CV + four-level night school + mentorship
 - **Event-brand and dissemination visual system (agent.6 supplementary deliverable)**: a four-tier brand system anchored on the unified “annual-ring + sprout” visual anchor—①primary identity (Iron-Rail Tree / annual-ring Logo, per the Naming & Logo chapter); ②icon family (six mechanisms standardized: seedbed/canal/pruner/umbrella/ring/leaf, reused across all scenario cards); ③event visual templates (unified poster/wayfinding/digital-screen templates for the five event types—Nursery Open Day, AI Horticulture Festival, Gardeners' Assembly, Shade Drill Open Competition, Fixation hackathon—with bilingual CN/EN layouts); ④dissemination rules (palette = nursery green + warm wood brown; type = CJK hei + Latin sans bilingual pairing; no AI-slop aesthetics, no unauthorized fonts/images/trademarks [2]). The brand system also serves wayfinding (tree tags, canal markers and ring columns reuse the same icons), ensuring “recognized once, consistent across the belt”.
 - **Operation review and exit**: annual audit results tied to contract renewal; two consecutive years below target trigger re-tendering (conceptual)
-- International dissemination: **mechanism documents open-sourced (CC-BY-4.0) + replication toolkit** (factual statement, not "world-first"); "spatialized governance" concept communicated through academic dialogue [4][5]; concrete paths: ① bilingual public mechanism docs + GitHub mirror (lower overseas adoption barrier); ② "spatialized governance" concept in international urban-governance/digital-government academic dialogue (e.g., AI & SOCIETY, Urban AI directions); ③ annual Gardeners' Assembly hosts an international session (overseas scholars/open-source community online); ④ replication toolkit supports English use-cases, output under a Belt-and-Road smart-city cooperation framework (as an open protocol, not a government commitment)
+- International dissemination: **mechanism documents open-sourced + replication toolkit** (license note: only the submitter's original mechanism docs and toolkit text are licensed CC-BY-4.0, rights holder Ch'iVerve Agent × climashscape; official materials, third-party references, fonts, images and trademarks cited therein are excluded; the package as a whole remains COMMUNITY-DISPLAY-ONLY for display purposes), “spatialized governance” concept communicated through academic dialogue [4][5]; concrete paths: ① bilingual public mechanism docs + GitHub mirror (lower overseas adoption barrier); ② "spatialized governance" concept in international urban-governance/digital-government academic dialogue (e.g., AI & SOCIETY, Urban AI directions); ③ annual Gardeners' Assembly hosts an international session (overseas scholars/open-source community online); ④ replication toolkit supports English use-cases, output under a Belt-and-Road smart-city cooperation framework (as an open protocol, not a government commitment)
 - Attraction-conversion: attract (incubation recruitment/night school) → cultivate (greenhouse) → transplant (graduation placement) → harvest (commercialization) → cycle (fixation)
 - **Funding and implementation path (conceptual)**: operating model = government-led + platform-company operation (adoption fees/seedbed leases/scenario revenue, three income streams); funding matrix = fiscal guidance + platform capital + social capital + scenario revenue; no precise estimates, only the logical framework (official data pending)
 - **All events/investment/policy are conceptual proposals, not confirmed government arrangements** [2]
@@ -426,7 +446,8 @@ To meet the reviewers' "verifiable/machine-checkable" preference, each mechanism
 
 ## Appendix C: Literature-Support Index (74 unique, six pillars)
 
-> In-package verifiable index: the 74 cross-verified works below complement the directly cited references [1]-[28]; DOIs/sources recorded item-by-item, verified before citation, no ghost references. Pillar mapping: P1 gardening-metaphor governance / P2 AI lifecycle governance / P3 AI x planning innovation / P4 youth-friendly vitality / P5 industrial-heritage place-making / P6 digital twins & multimodal expression.
+> In-package verifiable index: the 74 cross-verified works below complement the directly cited references [1]-[28]; pillar mapping: P1 gardening-metaphor governance / P2 AI lifecycle governance / P3 AI x planning innovation / P4 youth-friendly vitality / P5 industrial-heritage place-making / P6 digital twins & multimodal expression.
+> **Verification-grade statement**: 61 works are fully verified (DOI/volume/pages confirmed); 13 works carry field-level pending marks (labeled per item as "DOI pending / pages pending / volume pending / year pending / full author list pending / institution pending" — retrieval records not fully closed; **must be re-checked before citation**, not counted as verified citations); all entries come from real retrieval, none fabricated. Directly cited works are [1]-[28].
 
 
 
