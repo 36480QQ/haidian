@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1d049ab6e586eb8e61278ab73f5281f07fbe73594ef690d077f4befe9d29146e"
+      "sha256": "ac449ec1c43a6e2cf41d30364c612fce1c954d7e987c2294129508e8c99718f9"
     },
     {
       "path": "compliance_matrix.json",
@@ -107,14 +107,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3da06e2e9246a691b00c8368022f2c77835c8a115828ed4b441f1be98abe31a8"
+      "sha256": "164ca180ef5ce3ea30afa75cd6ae280fae8a02c299e7d67d2a3c4d68bca82a27"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3284e9796f40a3e9de45d1c062a73a4304336fca14df26c68041e58b3c72e9eb"
+      "sha256": "575e77217074ae736a0c6820be0ac0d62b7aa1663d4dde6496c51b9556195ec8"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "495b150bba6d0fcc393ea5f2ad62bc09a60f860150ba744db797a4637e432cf4"
+      "sha256": "abdfad13130f36f809eb7334bf4e51e9c242c9f73e863ff44bd1d264c1a6dcc4"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "267feb5b94aa1523c70f57cfecb47cacffeeb4edbd2d424326a781ca78c95e34"
+      "sha256": "e9e3b0c85554feda7efd092933324038097973d17c27462c8a22b07449803579"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "741bc84c1e73d6558e7b661b82d1707bfb1f6a9a0725568bd492d030112502bf"
+      "sha256": "196b77c82c2c778ebcaa391b68f241389f6996cf77047c7b03a1c003072186a4"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -283,7 +283,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "521016b0c5efa08ece0861ea41fb87cb447a7f2ed24b2b8d9e068373a8e58df4"
+      "sha256": "dcfa98854cb1dd0b6952a99c350e7f512e2d5052c5db3c81b739f84dfa38cf45"
     }
   ],
   "validation_claim": {
