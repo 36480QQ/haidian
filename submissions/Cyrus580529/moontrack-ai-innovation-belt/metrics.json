@@ -588,6 +588,65 @@
       "assumptions": [
         "A-SVC-004: terminal distance is measured straight-line; a compliant path would be longer, which lowers this ratio further."
       ]
+    },
+    "components_range_over_snap_tolerance": {
+      "status": "known",
+      "value": 63,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "max over snap tolerance in {4,6,8,10,12,15,20} m of count(connected_components); the minimum over the same sweep is 47",
+      "confidence": "high",
+      "assumptions": [
+        "A-NET-001: the count depends on the snapping tolerance, which is a method choice.",
+        "A-POL-001: across the whole 4-20 m sweep the fragmentation finding and the zero elderly reachability never reverse; only the magnitudes move."
+      ]
+    },
+    "building_terminal_distance_median_m": {
+      "status": "known",
+      "value": 250.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "formula": "median over 1,562 building centroids of the straight-line distance to the nearest ROAD_CENTERLINE network node",
+      "confidence": "medium",
+      "assumptions": [
+        "A-SVC-004: terminal distance is measured straight-line; a compliant path would be longer.",
+        "A-POL-002: the terminal gap is a structural property of the corridor, measured across 1,619 destinations, not an artefact of the five-facility sample."
+      ]
+    },
+    "building_terminal_to_walk_network_m": {
+      "status": "known",
+      "value": 83.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "formula": "median over 1,562 building centroids of the straight-line distance to the nearest node of the walking network (OSM footway/path/pedestrian/living_street, steps excluded)",
+      "confidence": "low",
+      "assumptions": [
+        "A-POL-003: OSM footway coverage is markedly less complete than the carriageway and cycleway data, so walking-network results are lower bounds."
+      ]
+    },
+    "network_15min_if_footways_allowed_m": {
+      "status": "known",
+      "value": 132098.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "length(edges within 15 min of the fixed depot) on the combined cycleway + walking network, steps excluded, 15 km/h",
+      "confidence": "low",
+      "assumptions": [
+        "A-POL-003: OSM footway coverage is markedly less complete than the carriageway and cycleway data, so walking-network results are lower bounds.",
+        "A-POL-004: the depot is held fixed across all policy scenarios so that the comparison isolates the policy change rather than the siting change."
+      ]
     }
   }
 }

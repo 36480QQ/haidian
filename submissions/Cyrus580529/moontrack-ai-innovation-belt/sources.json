@@ -327,6 +327,19 @@
       "citation": "OpenStreetMap contributors, ways and relations tagged landuse=*, amenity=university/college/school/kindergarten/hospital/clinic and leisure=park/garden/pitch/stadium/sports_centre, Overpass 'out geom' query, 2026-08-24, ODbL 1.0",
       "usage_note": "映射到 brief/site-package/enums/land_use_codes.json 的项目代码子集后,用于描述现状用地构成,支撑'教育用地占设计范围20.34%'与低效地块识别两项结论。覆盖设计范围的53.6%。",
       "risk_note": "OSM 标签不是地籍资料,类别与边界均为志愿者标注,confidence 标为 low。未被标注的46.4%如实记为16留白用地,不从周边推测。项目代码子集缺工业用地类目,走廊内实测存在的工业用地只能暂记留白。任何情况下不得作为法定用地依据或面积基准。"
+    },
+    {
+      "id": "osm-footways-walking-network",
+      "title": "场地周边步行网(人行道/步道/步行街/台阶,OpenStreetMap)",
+      "type": "map",
+      "path": "geometry/roads.geojson",
+      "url": "https://overpass-api.de/",
+      "publisher": "OpenStreetMap contributors",
+      "published_at": "accessed 2026-08-25",
+      "public_status": "confirmed-public",
+      "citation": "OpenStreetMap contributors, ways tagged highway=footway/path/pedestrian/living_street/steps, Overpass 'out geom' query, 2026-08-25, ODbL 1.0",
+      "usage_note": "仅用于路权规则的反事实测算:同一批目的地到法定路权网与到步行网的末端距离对比,以及允许人行道通行后的可达网络里程。共 4,980 段可通行 + 465 段台阶,台阶已排除——机器人与轮椅都过不去。",
+      "risk_note": "OSM 人行道测绘完整性明显低于机动车与非机动车道,并入后连通分量反而增加(大量断头的路侧短段),因此该情景的可达结果是下界而非上界。本数据不进提交图层,只作反事实测算输入,不得据以主张任何具体路段可通行。"
     }
   ]
 }

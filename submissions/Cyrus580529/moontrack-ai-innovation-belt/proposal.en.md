@@ -449,6 +449,74 @@ This yields the single most important correction this proposal makes to its own 
 
 Every figure above can be recomputed by the method in `analysis_service.py`, taking `roads.geojson` and `public_space.geojson` from this package, with all parameters stated (15 km/h, 8 m snapping, 150 m walking threshold). The three link coordinates are the same set as the JZ-07 field-verification list, not a second version of it.
 
+### Three challenges: does the method hold, and which lever should government pull?
+
+Everything above rests on two things that can be challenged: the snapping tolerance is a human parameter, and five facilities is a very small sample. And even if both hold, one question remains — **whose decision do these numbers change?** Each in turn.
+
+**Challenge one: change the snapping tolerance and does the conclusion flip?**
+
+Eight metres is a method choice. Sweeping it from 4 m to 20 m and rerunning the whole computation:
+
+| Snap tolerance | Graph nodes | Components | Largest component share | Elderly reachable |
+| --- | --- | --- | --- | --- |
+| 4 m | 602 | 63 | 14.8% | 0 |
+| 6 m | 593 | 62 | 14.3% | 0 |
+| 8 m | 571 | 62 | 14.9% | 0 |
+| 10 m | 554 | 61 | 28.3% | 0 |
+| 12 m | 518 | 61 | 26.6% | 0 |
+| 15 m | 489 | 51 | 28.4% | 0 |
+| 20 m | 455 | 47 | 30.3% | 0 |
+
+Component counts move between 47 and 63 and the largest share between 14.8 and 30.3 per cent — **the magnitudes do follow the parameter, but "the network is fragmented" and "reachability is zero" never reverse anywhere in the range** [metric:components_range_over_snap_tolerance]. That is this proposal's direct answer on its own method boundary: what is parameter-sensitive is the number, not the finding.
+
+**Challenge two: is the terminal gap peculiar to those five points?**
+
+Terminal distance was recomputed across every destination in the corridor, taking the sample from 5 to 1,619:
+
+| Destination class | Count | Median terminal distance | ≤100 m | ≤150 m | ≤250 m |
+| --- | --- | --- | --- | --- | --- |
+| Elderly-care facilities | 5 | 420 m | 0% | 20% | 40% |
+| Universities and institutes | 50 | 221 m | 12% | 22% | 60% |
+| Industry anchors | 2 | 220 m | 0% | 0% | 100% |
+| Building footprints (all) | 1,562 | **250 m** [metric:building_terminal_distance_median_m] | 11% | **23%** | 50% |
+
+**Seventy-seven per cent of buildings in the corridor sit more than 150 m from the nearest legal robot right of way.** The terminal gap is not a coincidence of five points; it is a structural property of this corridor. The judgement drawn from five facilities holds at the scale of 1,619 destinations.
+
+**Challenge three: what is the rule itself worth?**
+
+The Beijing measures for delivery-robot road testing require these vehicles to travel within cycle lanes [source:beijing-delivery-robot-management-measures]. Measuring the same set of doors against two networks — the legal right-of-way network, and the walking network with steps excluded, since neither a robot nor a wheelchair can climb them:
+
+| Destination class | To cycle lanes | To walking network | Reduction |
+| --- | --- | --- | --- |
+| Elderly-care facilities | 420 m | **98 m** | 77% |
+| Universities and institutes | 221 m | **50 m** | 77% |
+| Industry anchors | 220 m | 71 m | 68% |
+| Building footprints (all) | 250 m | **83 m** [metric:building_terminal_to_walk_network_m] | 67% |
+
+**For the same doors, the median terminal distance is tens of metres against the walking network and two to three hundred metres against legal right of way. The rule multiplies terminal distance by three to four.** That is not a figure of speech: this column is the service cost of that rule, recomputable point by point.
+
+**So, finally: of the levers government holds, which one works?**
+
+Four possible interventions, with the depot held fixed (otherwise the comparison measures a change of depot rather than of policy) and a single test throughout — terminal ≤150 m and within 15 minutes of legal travel:
+
+| Scenario | Elderly facilities servable | Network within 15 min |
+| --- | --- | --- |
+| Present: 15 km/h, cycle lanes only | 0 | 20,341 m |
+| **A** Raise the limit to 25 km/h | 0 | 27,557 m (1.35×) |
+| **B** Permit footways (steps excluded) | **2** | **132,098 m (6.5×)** [metric:network_15min_if_footways_allowed_m] |
+| **C** Build 596 m of connection (this proposal) | 1 | 36,328 m (1.79×) |
+| **C + terminal works** | **5** | 36,328 m |
+
+Three conclusions, each directly actionable:
+
+**First, raising the speed limit does nothing.** Going from 15 to 25 km/h adds not one servable facility and lifts reachable network by only 35 per cent. Speed was never the constraint in this corridor; the shape of the network is. Any policy proposal built around relaxing the speed limit is answered by this row.
+
+**Second, the strongest single lever is the right-of-way rule, and it costs nothing to build.** Permitting low-speed devices on footways (steps excluded) lifts the 15-minute reachable network from 20,341 m to 132,098 m — **6.5 times** — and servable facilities from zero to two. This figure is a **lower bound**: OSM footway mapping is patchy, and merging it actually raises the component count from 62 to 877, mostly short dead-end kerbside stubs, so a complete sidewalk network would only do better. Reading this row as "opening footways helps only modestly" is therefore wrong; its real value is in the terminal-distance table above, where the 77 per cent reduction is solid.
+
+**Third, construction is still necessary, but it ranks behind the rule.** Only "596 m of connection plus terminal works" makes all five facilities servable. The order is therefore: **change the rule first (no construction, 6.5×), then build the connections (596 m, 1.79×), then do the terminal works (1,841 m, bringing in the last four facilities)**. That sequence is computed, not asserted.
+
+On this basis the proposal offers one concrete suggestion for the competent authority to study: within the Xiaoyue River scenario-validation stretch, explore a **time-limited footway permit** for low-speed devices — cycle lanes only at peak, designated footway segments permitted off-peak, issued as a revocable pilot authorisation. This is the same instrument as the time-sliced "scenario use right" proposed under agent.1; what is added here is its quantitative basis, namely that the rule is worth 6.5 times the reachable network. Method and parameters are recorded in `analysis_policy.py`, with all inputs drawn from this package's layers and public OSM walking-network data [source:osm-footways-walking-network].
+
 **One further boundary has to be stated before anyone else finds it: most of this analysis lies outside the Overall Design Area.** Measured, only 18.0 per cent of the 141.7 km of lanes falls inside the Overall Design Area [metric:cycleway_in_design_scope_share], and the three critical gaps sit 409 m, 891 m and 1,178 m beyond the boundary.
 
 This is not a sampling error; it follows from the nature of the question. Connectivity is a property of a whole network, not of any one stretch. Cut the network at a boundary and recompute components, and the breaks you find are made by the boundary, not by the ground. To test that, the network was clipped to the area and rerun: the 24.68 km inside still breaks into 28 components, the largest holding only 15.4 per cent of nodes [metric:cycleway_components_within_scope_only]. **The fragmentation diagnosis stands on its own inside the area; it is not an artefact of looking more widely.** But the three places where the gaps can be closed are genuinely outside it.

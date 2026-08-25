@@ -156,6 +156,30 @@
       "status": "measured_and_disclosed",
       "statement": "The 150 m threshold for an acceptable staff walk to a collection point is a judgement, not a measurement.",
       "impact": "It decides how many facilities phase one can serve, so the proposal publishes the full sensitivity curve from 100 m to 700 m instead of a single figure. At 250 m two facilities qualify, at 450 m three."
+    },
+    {
+      "id": "A-POL-001",
+      "status": "measured_and_disclosed",
+      "statement": "The whole connectivity computation was rerun at snapping tolerances of 4, 6, 8, 10, 12, 15 and 20 m. Component counts range from 47 to 63 and the largest component's node share from 14.8 to 30.3 per cent; the count of network-reachable elderly facilities is zero at every setting.",
+      "impact": "The magnitudes are parameter-dependent and are always quoted with the 8 m setting stated. The two conclusions the proposal actually rests on — that the network is fragmented and that no facility is reachable — do not reverse anywhere in the swept range."
+    },
+    {
+      "id": "A-POL-002",
+      "status": "measured_and_disclosed",
+      "statement": "Terminal distance was measured for 1,619 destinations (5 elderly-care facilities, 50 universities and institutes, 2 industry anchors, 1,562 building centroids), not only for the five facilities that carry the flagship scenario.",
+      "impact": "Median terminal distance is 250 m for buildings and 77 per cent of buildings lie more than 150 m from any legal robot right of way. The terminal-gap finding is therefore a structural property of the corridor rather than a feature of a five-point sample."
+    },
+    {
+      "id": "A-POL-003",
+      "status": "measured_and_disclosed",
+      "statement": "The walking network is OSM footway, path, pedestrian and living_street ways with steps excluded. Its mapping completeness is visibly lower than that of the cycleway data: merging it raises the component count from 62 to 877, mostly short dead-end kerbside stubs.",
+      "impact": "Every figure for the footway scenario is a lower bound. The 6.5-fold reachable-network result and the 67-77 per cent terminal reduction would only improve with complete sidewalk data, so the policy conclusion is conservative. These lines are not submitted as a package layer and must not be used to claim that any particular segment is passable."
+    },
+    {
+      "id": "A-POL-004",
+      "status": "measured_and_disclosed",
+      "statement": "Across all policy scenarios the depot is held fixed at the minimax-optimal point (116.34627, 39.99979), with only the nearest node in each network selected.",
+      "impact": "Without this the comparison would measure a change of depot rather than a change of policy. It also means each scenario's absolute figures are not the best achievable under that policy; the comparison between rows is what carries the argument."
     }
   ]
 }
