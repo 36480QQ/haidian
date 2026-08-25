@@ -93,6 +93,10 @@ To turn the identity from a verbal direction into a reusable spatial grammar, th
 
 Activity sub-brands use the locked form “Open Weave / [function] / [year]”: `Open Weave / Field Notes / 2026` for regional public lessons, `Open Weave / Test Commons / 2026` for testing and audit week, and `Open Weave / Civic Route Week / 2026` for the global AI week. Sub-brands reuse only the twin tracks, node numbers and four colors; every release carries provenance, copyright, accessibility and capacity checklists.
 
+![Open Weave scalable logo lockup](assets/brand/open-weave-lockup.svg)
+
+![Open Weave wayfinding application mockup](assets/brand/wayfinding-application.svg)
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The overall design area is organized by a heritage spine, commons nodes, cross-links and low-speed services. The Jingzhang Heritage Park is treated as a public-memory and slow-mobility spine; Zhongzhiyuan, AI Origin and Dazhongsi become three distinct innovation interfaces. R&D/open-source, cultural exhibition, enterprise services, community services and blue-green spaces alternate along the loop to keep work, learning, living and visiting within reach [data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure].
@@ -206,6 +210,10 @@ The interface uses conceptual vendor-neutral fields and legible evidence, not a 
 
 These interfaces and baselines are a handoff protocol for professional deepening: start with a paper/human comparison, then run a small reversible validation. Do not convert model accuracy, concurrency, energy consumption or cross-system interoperability into confirmed facts at this stage.
 
+### First-round professional handoff crosswalk
+
+The “AI pilot—project-package handoff crosswalk” in `report/copyright_statement.md` places spatial node, `scenario_id`, JZ package, proposed RACI, minimum data, manual baseline, stop trigger and archive evidence in one bilingual worksheet covering JZ-01, JZ-06, the staffed service node and all four priority pilots. It is a conceptual handoff document, not formal authorization, procurement, engineering or operating appointment.
+
 ### Annual operating calendar, developer community and international transfer path
 
 Agent.6's “global events” are translated into a verifiable annual operating cycle. This is a conceptual calendar, not a government event schedule; every quarter first completes capacity, accessibility, safety, copyright and data-boundary checklists.
@@ -299,6 +307,8 @@ Statutory FAR, height and density, road redlines, utility capacity, ownership an
 ![Metric recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
+
+The scope of `license: COMMUNITY-DISPLAY-ONLY`—review display, professional refinement, editorial reuse, secondary publication, attribution and third-party-material limits—is itemized in `report/copyright_statement.md`; `manifest.json` `validation_claim.extensions.x-license-scope` points to the same table. The same file also contains the bilingual authoring QA checklist.
 
 | Risk | Current reading | Control action |
 | --- | --- | --- |

@@ -93,6 +93,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 活动子品牌采用“Open Weave / [功能] / [年份]”锁定式命名：`Open Weave / Field Notes / 2026`（区域公开课）、`Open Weave / Test Commons / 2026`（测试与审计周）、`Open Weave / Civic Route Week / 2026`（全球 AI 活动周）。子品牌只复用双轨、节点号和四种颜色，不复制第三方 Logo；每次发布均附来源、版权、无障碍和容量清单。
 
+![Open Weave 可缩放 Logo 锁定式](assets/brand/open-weave-lockup.svg)
+
+![Open Weave 导视应用样机](assets/brand/wayfinding-application.svg)
+
 ## 总体设计范围城市更新与控规深度城市设计
 
 总体设计以“历史主轴 + 共享节点 + 横向缝合 + 低速服务”的城市回路为结构。建议把京张遗址公园作为公共记忆和慢行主轴，把众智园、AI 原点社区、大钟寺作为三个不同的创新接口；研发与开源用地、文化展示、企业服务、社区服务和蓝绿空间沿回路交替出现，形成工作、学习、生活和访问之间的可达关系 [data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure]。
@@ -219,6 +223,10 @@ AI 不直接替代规划、公共服务或专业判断，而是进入一条可�
 
 上述接口和基线是专业深化的交接协议：先做人工/纸面对照，再做小范围、可撤回验证；不把模型准确率、并发量、能源消耗或跨系统互操作写成当前已确认事实。
 
+### 首轮专业交接交叉表
+
+`report/copyright_statement.md` 的“AI pilot—项目包首轮交接交叉表”将空间节点、`scenario_id`、JZ 项目包、拟定 RACI、最小数据、人工基线、停止条件和归档证据放入同一张中英对照底稿，覆盖 JZ-01、JZ-06、人工服务节点及四个优先 pilot。它是概念性交接材料，不替代正式授权、采购、工程或运营任命。
+
 ![慢行与蓝绿公共空间复合回路](assets/figures/mobility-bluegreen.png)
 
 ## 用地、建筑规模与拆改留方案
@@ -299,6 +307,8 @@ AI 不直接替代规划、公共服务或专业判断，而是进入一条可�
 ![指标复算与证据链](assets/figures/metrics-evidence.png)
 
 ## 风险、版权与合规说明
+
+本包的 `license: COMMUNITY-DISPLAY-ONLY` 范围、评审展示、专业深化、编辑复用、二次发布、署名和第三方素材限制，逐项记录在 `report/copyright_statement.md`；`manifest.json` 的 `validation_claim.extensions.x-license-scope` 与该表保持一致。该文件同时包含双语人工等值核对清单。
 
 | 风险 | 当前判断 | 控制动作 |
 | --- | --- | --- |

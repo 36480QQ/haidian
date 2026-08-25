@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "dd00f86dff62e195de420fa10aaaffbad2cd594b160ad60822eed9e8f65fb5e7"
+      "sha256": "bfe115527671e98cce8453e2a7784ba0037cf83f06b06054e2b9ff72aefef2c8"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "bfb3ccda8d69fe2feb99987a2da5412f9c06843323cb7423bb41d2111e532e7c"
+      "sha256": "8d6b81817cb6d667e7b02e28139a87ec0a0c9730087d2526488164585f7e7c62"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "55118115f54961b19738911a09335153146d8cdc809904b0944459f1cdbb4814"
+      "sha256": "d3236a31847679392d471354f2b880248d6ece4bc96ae350a81c2ffa2bfca4fb"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "79cfbffbe1ca977fbac6c8be790d1ad71d4d76f50f8f9c7261a07be5bb1e314d"
+      "sha256": "64cbff7d6568a18cc4616ce34f5055fdfa71ac764321a5e40fd108edb1de7643"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b29b6576221c9c2262202a38967f4597a4951b76cb66af9b6d061803e4e6defc"
+      "sha256": "cba1f23771d6c4e8a4b874bee63bd6f3201eac49a022abeae549c359dfc5f14c"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -150,6 +150,18 @@
       "required": true,
       "language": "zh",
       "sha256": "2e73e85caa5e261a26dbfd64a4ac3f3e9d2fe5007b241d5d96502a050674faf3"
+    },
+    {
+      "path": "assets/brand/open-weave-lockup.svg",
+      "role": "asset",
+      "required": true,
+      "sha256": "6a7b613d637f2135ef0d45b43a1b0f1a0f10d891eb7f2aee361edde1658780f1"
+    },
+    {
+      "path": "assets/brand/wayfinding-application.svg",
+      "role": "asset",
+      "required": true,
+      "sha256": "599eda1c1d201de58d06ce53173801f6b22ed5bae5b378a30c059ed0dc113051"
     },
     {
       "path": "assets/renders/heritage-spine-perspective.png",
@@ -235,7 +247,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0eedced49047f7e8cc5e3d2db5c8091675e6a6357688d2031edf5854fb80b876"
+      "sha256": "f848c96a2b2c31770367c7e01252686d08bbf8ce35bbf95b08d30f20a89999a1"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +255,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "38192d53c090c55c84920e882bde455246d9b72810e87c4c48d64fc4619bd766"
+      "sha256": "0b3bd692b52147e5f563a66e2c64a89fa04542eeb3bfc9f04e60d4995f78d853"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -267,7 +279,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "de4147cdda460885b73f83d4cd52f995b201d115d0ad3c780a4b3a11e0fc4688"
+      "sha256": "8cfce0941bed3b3f905ba575f799b3ea4ba8953fe80e0a270c1acde65909be4d"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -314,6 +326,20 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "high",
-    "readiness_contract": "persisted-self-check-v1"
+    "readiness_contract": "persisted-self-check-v1",
+    "extensions": {
+      "x-license-scope": {
+        "schema_version": "1.0",
+        "data": {
+          "license": "COMMUNITY-DISPLAY-ONLY",
+          "scope_reference": "report/copyright_statement.md#community-display-only-license-scope",
+          "review_display": "allowed",
+          "professional_refinement": "non_commercial_reference_only",
+          "editorial_reuse": "attribution_and_context_required",
+          "secondary_publication": "written_permission_required",
+          "commercial_or_construction_use": "not_granted"
+        }
+      }
+    }
   }
 }

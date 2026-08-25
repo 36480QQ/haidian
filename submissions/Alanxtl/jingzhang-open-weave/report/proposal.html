@@ -113,6 +113,115 @@ code {
   h2 { font-size: 21px; }
 }
 </style>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "OpenWeaveSans", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
 <style media="print">
 @media print{html{-webkit-print-color-adjust:exact;print-color-adjust:exact}body{background:#fff!important;color:#172033!important}.proposal-figure,.proposal-table,figure,table,blockquote{break-inside:avoid;page-break-inside:avoid}img{max-width:100%;break-inside:avoid}a{color:inherit;text-decoration:none}}
 </style>
@@ -153,6 +262,8 @@ code {
 <p>为使品牌从文字方向进入可复用的空间语法，本包固定以下最小规范。双轨标记的两条线间距为 1 个模块，三枚圆节点分别使用 01 / 02 / 03，不允许拉伸、旋转或替换为企业标识；开放弧线只作为“可贡献、可继续”的尾部，不闭合成封闭徽章。</p>
 <div class="proposal-table"><table><thead><tr><th>视觉 token</th><th>规格</th><th>使用场景</th></tr></thead><tbody><tr><td>墨蓝 <code>#17283B</code></td><td>主背景、轨道线、正文高对比色</td><td>入口、证据页、正式标题</td></tr><tr><td>信号红 <code>#C95542</code></td><td>行动、警示、贡献状态</td><td>试点闸门、停止条件、活动行动按钮</td></tr><tr><td>河岸绿 <code>#4E9B7B</code></td><td>蓝绿空间、通过状态、公共服务</td><td>慢行、雨水花园、通过证据</td></tr><tr><td>暖黄 <code>#E8C35E</code></td><td>节点、活动、人工服务提示</td><td>贡献节点、活动路线、值守台</td></tr><tr><td>双轨 + 01/02/03</td><td>线宽 2、节点直径 8、间距 1 模块</td><td>导视、图纸角标、活动签到牌</td></tr></tbody></table></div>
 <p>活动子品牌采用“Open Weave / [功能] / [年份]”锁定式命名：<code>Open Weave / Field Notes / 2026</code>（区域公开课）、<code>Open Weave / Test Commons / 2026</code>（测试与审计周）、<code>Open Weave / Civic Route Week / 2026</code>（全球 AI 活动周）。子品牌只复用双轨、节点号和四种颜色，不复制第三方 Logo；每次发布均附来源、版权、无障碍和容量清单。</p>
+<figure class="proposal-figure"><img src="../assets/brand/open-weave-lockup.svg" alt="Open Weave 可缩放 Logo 锁定式"><figcaption>Open Weave 可缩放 Logo 锁定式</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/brand/wayfinding-application.svg" alt="Open Weave 导视应用样机"><figcaption>Open Weave 导视应用样机</figcaption></figure>
 <h2>总体设计范围城市更新与控规深度城市设计</h2>
 <p>总体设计以“历史主轴 + 共享节点 + 横向缝合 + 低速服务”的城市回路为结构。建议把京张遗址公园作为公共记忆和慢行主轴，把众智园、AI 原点社区、大钟寺作为三个不同的创新接口；研发与开源用地、文化展示、企业服务、社区服务和蓝绿空间沿回路交替出现，形成工作、学习、生活和访问之间的可达关系 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="空间数据：geometry/land_use.geojson#LU-001">空间数据</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="overall_spatial_structure" title="深度：overall_spatial_structure">深度</sup>。</p>
 <p>建筑层面不提出法定容积率、建筑高度、建筑密度或退线数值。提交的 12 个建筑基底是“保留评估、更新评估、新建原型”的概念单元，用来讨论界面、首层功能、共享大厅和开放测试，不代表具体地块拆改留结论 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-001" title="空间数据：geometry/buildings.geojson#BLDG-001">空间数据</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="指标：building_footprint_area_sqm">指标</sup>。正式控规条件、权属、消防、文保和现状调查完成后，专业团队可将“保留—改造—新建”的审查方法转化为地块级方案。</p>
@@ -196,6 +307,8 @@ code {
 <p>接口只采用概念性的供应商中立字段和可读证据，不指定模型、云厂商或采购方案。四个优先 pilot 的验收基线如下；“100%”表示设计上必须完整的证据项，不代表现实系统已经达标，其他阈值由专业团队在现场基线调查后确认 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GENERATIVE-AI-INTERIM-MEASURES" title="标准：GENERATIVE-AI-INTERIM-MEASURES">标准</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="priority_ai_pilot_count" title="指标：priority_ai_pilot_count">指标</sup>。</p>
 <div class="proposal-table"><table><thead><tr><th>Pilot</th><th>可观察验收项</th><th>比较基线</th><th>必须归档</th><th>停止/回滚</th></tr></thead><tbody><tr><td>02 安全治理沙盒</td><td>规则、数据范围、人工结论、版本和撤回记录 100% 齐全</td><td>人工规则审查 + 纸面流程</td><td>规则卡、版本 diff、人工签名/意见、退出记录</td><td>未授权字段、无法解释的偏差或审计缺口：退回桌面推演</td></tr><tr><td>04 AI 慢行导航</td><td>无障碍、老年、夜间和雨天路线走查；错误建议可人工接管</td><td>纸面地图 + 人工问询路线</td><td>走查表、路线版本、问题照片/文字、投诉与回滚记录</td><td>误导、障碍遗漏或人工接管失败：下线并回到人工引导</td></tr><tr><td>08 数据要素会客厅</td><td>展示字段均有授权链摘要；个人字段和不可追溯来源为 0</td><td>人工授权清单 + 脱敏展示</td><td>字段白名单、授权摘要、脱敏检查、删除证明</td><td>来源断裂、越权访问或无法删除：清空展示并停止</td></tr><tr><td>10 全球 AI 活动周路线</td><td>容量、无障碍、安全、版权清单 100% 完成；活动复盘可下载</td><td>人工活动路线与现场清单</td><td>清单、值守表、应急演练、公众反馈、年度复盘</td><td>清单缺项、容量/安全未知或授权不足：不开放公众路线</td></tr></tbody></table></div>
 <p>上述接口和基线是专业深化的交接协议：先做人工/纸面对照，再做小范围、可撤回验证；不把模型准确率、并发量、能源消耗或跨系统互操作写成当前已确认事实。</p>
+<h3>首轮专业交接交叉表</h3>
+<p><code>report/ai-pilot-handoff-matrix.md</code> 将空间节点、<code>scenario_id</code>、JZ 项目包、拟定 RACI、最小数据、人工基线、停止条件和归档证据放入同一张中英对照底稿，覆盖 JZ-01、JZ-06、人工服务节点及四个优先 pilot。它是概念性交接材料，不替代正式授权、采购、工程或运营任命。</p>
 <figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.png" alt="慢行与蓝绿公共空间复合回路"><figcaption>慢行与蓝绿公共空间复合回路</figcaption></figure>
 <h2>用地、建筑规模与拆改留方案</h2>
 <p>用地分类采用仓库提供的自然资源部数字分类词汇，提交的五个用地条带覆盖临时设计边界，无重叠、无未命名空白；这是一套用于比较空间关系的设计分区，不是法定用地或土地权属判断 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MNR-LAND-USE-CLASSIFICATION-GUIDE" title="标准：MNR-LAND-USE-CLASSIFICATION-GUIDE">标准</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="空间数据：geometry/land_use.geojson#LU-001">空间数据</sup>。</p>
@@ -226,6 +339,7 @@ code {
 <p>容积率、建筑高度、建筑密度的法定控制值、道路红线、管线容量、权属和投资测算均保持“待正式数据补齐”。合规矩阵逐条覆盖公告 1.3、1.4、1.5 与 agent.1—agent.6；专业标准矩阵和设计深度矩阵将城市设计、控规边界、用地分类、蓝绿空间、交通、市政、分期、指标和风险证据分开保存，避免用一个口号代替专业深度 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-CONTROL-DETAILED-PLANNING" title="标准：MOHURD-CONTROL-DETAILED-PLANNING">标准</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="metrics_recalculation" title="深度：metrics_recalculation">深度</sup>。</p>
 <figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="指标复算与证据链"><figcaption>指标复算与证据链</figcaption></figure>
 <h2>风险、版权与合规说明</h2>
+<p>本包的 <code>license: COMMUNITY-DISPLAY-ONLY</code> 范围、评审展示、专业深化、编辑复用、二次发布、署名和第三方素材限制，逐项记录在 <code>report/copyright_statement.md</code>；<code>manifest.json</code> 的 <code>validation_claim.extensions.x-license-scope</code> 与该表保持一致。双语人工等值核对记录在 <code>report/bilingual-equivalence-checklist.md</code>。</p>
 <div class="proposal-table"><table><thead><tr><th>风险</th><th>当前判断</th><th>控制动作</th></tr></thead><tbody><tr><td>临时边界误读为红线</td><td>高</td><td>所有图面、正文、HTML、来源和假设醒目标注 provisional；正式数据到位后整体复算</td></tr><tr><td>AI 场景隐私与过度监控</td><td>高</td><td>最小数据、授权反馈、人工复核、退出机制；不做个人识别和隐藏跟踪</td></tr><tr><td>文保与历史叙事偏差</td><td>中高</td><td>不绘制未公开保护线，不复制肖像；由文保与历史专业团队复核</td></tr><tr><td>场景测试安全与公众接受度</td><td>中高</td><td>低速、可撤回、有人值守、分阶段复盘，先做小范围公开测试</td></tr><tr><td>运营和维护成本</td><td>中</td><td>为每个节点建立责任人、维护周期和停止条件，避免只建不管</td></tr><tr><td>公共服务数字鸿沟</td><td>中</td><td>保留人工柜台、纸面、电话和无障碍替代路径</td></tr></tbody></table></div>
 <p>本方案是开放共创建议，不替代正式规划，不构成政府审定结论、投资承诺、活动安排或工程可行性结论。所有品牌、字体、图示、案例和数据权利说明见 <code>sources.json</code> 与 <code>report/copyright_statement.md</code>；智能体提供建议，人类与专业团队保留最终判断 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="标准：PROJECT-AGENT-OPEN-CALL-TASKBOOK">标准</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup>。</p>
 <h2>参考资料</h2>

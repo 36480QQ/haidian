@@ -113,6 +113,115 @@ code {
   h2 { font-size: 21px; }
 }
 </style>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "OpenWeaveSans", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
 <style media="print">
 @media print{html{-webkit-print-color-adjust:exact;print-color-adjust:exact}body{background:#fff!important;color:#172033!important}.proposal-figure,.proposal-table,figure,table,blockquote{break-inside:avoid;page-break-inside:avoid}img{max-width:100%;break-inside:avoid}a{color:inherit;text-decoration:none}}
 </style>
@@ -153,6 +262,8 @@ code {
 <p>To turn the identity from a verbal direction into a reusable spatial grammar, this package fixes the following minimum standard. The twin-track mark uses one module between the lines; three circular nodes are numbered 01 / 02 / 03; the mark may not be stretched, rotated or replaced by a corporate symbol. The open arc is only a tail expressing continued contribution and iteration, never a closed badge.</p>
 <div class="proposal-table"><table><thead><tr><th>Visual token</th><th>Specification</th><th>Use</th></tr></thead><tbody><tr><td>Ink blue <code>#17283B</code></td><td>Main background, rail line and high-contrast text</td><td>Thresholds, evidence sheets, formal titles</td></tr><tr><td>Signal red <code>#C95542</code></td><td>Action, warning and contribution state</td><td>Pilot gates, stop conditions, activity actions</td></tr><tr><td>River green <code>#4E9B7B</code></td><td>Blue-green space, pass state and public service</td><td>Slow mobility, rain gardens, accepted evidence</td></tr><tr><td>Warm yellow <code>#E8C35E</code></td><td>Nodes, events and human-service prompts</td><td>Contribution nodes, activity routes, staffed desks</td></tr><tr><td>Twin tracks + 01/02/03</td><td>Stroke 2, node diameter 8, one-module spacing</td><td>Wayfinding, drawing corner marks, activity badges</td></tr></tbody></table></div>
 <p>Activity sub-brands use the locked form “Open Weave / [function] / [year]”: <code>Open Weave / Field Notes / 2026</code> for regional public lessons, <code>Open Weave / Test Commons / 2026</code> for testing and audit week, and <code>Open Weave / Civic Route Week / 2026</code> for the global AI week. Sub-brands reuse only the twin tracks, node numbers and four colors; every release carries provenance, copyright, accessibility and capacity checklists.</p>
+<figure class="proposal-figure"><img src="../assets/brand/open-weave-lockup.svg" alt="Open Weave scalable logo lockup"><figcaption>Open Weave scalable logo lockup</figcaption></figure>
+<figure class="proposal-figure"><img src="../assets/brand/wayfinding-application.svg" alt="Open Weave wayfinding application mockup"><figcaption>Open Weave wayfinding application mockup</figcaption></figure>
 <h2>Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design</h2>
 <p>The overall design area is organized by a heritage spine, commons nodes, cross-links and low-speed services. The Jingzhang Heritage Park is treated as a public-memory and slow-mobility spine; Zhongzhiyuan, AI Origin and Dazhongsi become three distinct innovation interfaces. R&amp;D/open-source, cultural exhibition, enterprise services, community services and blue-green spaces alternate along the loop to keep work, learning, living and visiting within reach <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="Spatial data: geometry/land_use.geojson#LU-001">Spatial data</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="overall_spatial_structure" title="Depth: overall_spatial_structure">Depth</sup>.</p>
 <p>No statutory FAR, height, density or setback value is proposed. The twelve building footprints are conceptual retain-review, retrofit-review and new-build prototype units for discussing interfaces, ground floors, shared halls and open testing; they are not parcel-level demolition or ownership conclusions <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-001" title="Spatial data: geometry/buildings.geojson#BLDG-001">Spatial data</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="Metric: building_footprint_area_sqm">Metric</sup>. Official controls, ownership, fire safety, heritage and existing-condition surveys are prerequisites for professional parcel-level work.</p>
@@ -192,6 +303,8 @@ code {
 <p>The interface uses conceptual vendor-neutral fields and legible evidence, not a specified model, cloud supplier or procurement route. The four priority pilots use the following acceptance baselines; “100%” describes a design-completeness requirement, not a claim that a real system has already met it. Professional teams set all remaining thresholds after field baselines <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GENERATIVE-AI-INTERIM-MEASURES" title="Standard: GENERATIVE-AI-INTERIM-MEASURES">Standard</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="priority_ai_pilot_count" title="Metric: priority_ai_pilot_count">Metric</sup>.</p>
 <div class="proposal-table"><table><thead><tr><th>Pilot</th><th>Observable acceptance</th><th>Comparison baseline</th><th>Archive required</th><th>Stop/rollback</th></tr></thead><tbody><tr><td>02 Safety governance sandbox</td><td>Rules, data scope, human conclusion, version and withdrawal record are 100% complete</td><td>Human rule review + paper process</td><td>Rule card, version diff, human opinion, exit record</td><td>Unauthorized field, unexplained bias or audit gap: return to desk exercise</td></tr><tr><td>04 AI walking guide</td><td>Accessible, older-adult, night and rain routes are field-checked; wrong advice has human takeover</td><td>Paper map + human inquiry route</td><td>Walk audit, route version, issue log, complaint and rollback record</td><td>Misdirection, missed barrier or takeover failure: take offline and return to human guidance</td></tr><tr><td>08 Data commons lounge</td><td>Every displayed field has an authorization summary; personal fields and untraceable sources are zero</td><td>Human authorization list + redacted display</td><td>Field allow-list, authorization summary, redaction check, deletion proof</td><td>Broken provenance, overreach or failed deletion: clear display and stop</td></tr><tr><td>10 Global AI week route</td><td>Capacity, accessibility, safety and copyright checklist is 100% complete; retrospective is downloadable</td><td>Manual event route and site checklist</td><td>Checklist, duty roster, emergency exercise, public feedback, annual retrospective</td><td>Missing item, unknown capacity/safety or insufficient authorization: do not open public route</td></tr></tbody></table></div>
 <p>These interfaces and baselines are a handoff protocol for professional deepening: start with a paper/human comparison, then run a small reversible validation. Do not convert model accuracy, concurrency, energy consumption or cross-system interoperability into confirmed facts at this stage.</p>
+<h3>First-round professional handoff crosswalk</h3>
+<p><code>report/ai-pilot-handoff-matrix.md</code> places spatial node, <code>scenario_id</code>, JZ package, proposed RACI, minimum data, manual baseline, stop trigger and archive evidence in one bilingual worksheet covering JZ-01, JZ-06, the staffed service node and all four priority pilots. It is a conceptual handoff document, not formal authorization, procurement, engineering or operating appointment.</p>
 <h3>Annual operating calendar, developer community and international transfer path</h3>
 <p>Agent.6&#x27;s “global events” are translated into a verifiable annual operating cycle. This is a conceptual calendar, not a government event schedule; every quarter first completes capacity, accessibility, safety, copyright and data-boundary checklists.</p>
 <div class="proposal-table"><table><thead><tr><th>Quarter / sub-brand</th><th>Public action</th><th>Accountable role</th><th>Observable indicators and evidence</th></tr></thead><tbody><tr><td>Q1 / Field Notes</td><td>Open problem call, heritage walk audit and community human-inquiry days</td><td>Community liaison + history/accessibility advisers</td><td>At least 3 walk routes, 6 persona feedback sets, problem cards and offline alternatives</td></tr><tr><td>Q2 / Test Commons</td><td>Safety-sandbox open day, developer maintainer office hour and model-evaluation explanation class</td><td>Standards + developer-community operations</td><td>Four priority pilots each have rules, version, human conclusion and withdrawal record</td></tr><tr><td>Q3 / Regional Exchange</td><td>Task-translation week with Beiwei Community, Future Science City, Huairou Science City, Beijing E-Town and Jing-Jin-Ji interfaces</td><td>Regional-coordination lead + enterprise-services team</td><td>Five interface records, one cross-region retrospective, an owner and verification method per item</td></tr><tr><td>Q4 / Civic Route Week</td><td>Global AI week civic route, release event and annual failure/exit retrospective</td><td>Event operations + public safety + public review group</td><td>Publish capacity, accessibility, safety and copyright checklist; issue a versioned annual retrospective</td></tr></tbody></table></div>
@@ -226,6 +339,7 @@ code {
 <p>Statutory FAR, height and density, road redlines, utility capacity, ownership and investment remain pending official data. The compliance matrix covers announcement requirements 1.3, 1.4 and 1.5 and agent.1–agent.6; the standard and design-depth matrices keep urban design, regulatory boundaries, land-use classification, blue-green, mobility, municipal, phasing, metrics and risk evidence separate <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-CONTROL-DETAILED-PLANNING" title="Standard: MOHURD-CONTROL-DETAILED-PLANNING">Standard</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="metrics_recalculation" title="Depth: metrics_recalculation">Depth</sup>.</p>
 <figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.en.png" alt="Metric recalculation and evidence chain"><figcaption>Metric recalculation and evidence chain</figcaption></figure>
 <h2>Risk, Copyright, and Compliance</h2>
+<p>The scope of <code>license: COMMUNITY-DISPLAY-ONLY</code>—review display, professional refinement, editorial reuse, secondary publication, attribution and third-party-material limits—is itemized in <code>report/copyright_statement.md</code>; <code>manifest.json</code> <code>validation_claim.extensions.x-license-scope</code> points to the same table. The bilingual authoring QA is recorded in <code>report/bilingual-equivalence-checklist.md</code>.</p>
 <div class="proposal-table"><table><thead><tr><th>Risk</th><th>Current reading</th><th>Control action</th></tr></thead><tbody><tr><td>Provisional geometry mistaken for a redline</td><td>High</td><td>Mark provisional in figures, text, HTML, sources and assumptions; recalculate all layers when official data arrives</td></tr><tr><td>Privacy and over-monitoring in AI scenarios</td><td>High</td><td>Minimum data, authorized feedback, human review and exit; no identification or hidden tracking</td></tr><tr><td>Heritage and historical narrative drift</td><td>Medium-high</td><td>Do not draw unpublished protection lines or copy portraits; use heritage and history review</td></tr><tr><td>Safety and public acceptance of pilots</td><td>Medium-high</td><td>Low-speed, reversible, staffed pilots with staged retrospective</td></tr><tr><td>Operations and maintenance cost</td><td>Medium</td><td>Assign owners, maintenance cycles and stop conditions to every node</td></tr><tr><td>Digital divide in public services</td><td>Medium</td><td>Keep human desks, paper, phone and accessible alternatives</td></tr></tbody></table></div>
 <p>This is an open co-creation proposal. It does not replace formal planning, constitute an official conclusion, promise investment or schedule, or establish engineering feasibility. Rights and provenance for brands, fonts, figures, cases and data are in <code>sources.json</code> and <code>report/copyright_statement.md</code>; the agent proposes and humans/professionals retain final judgment <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="Standard: PROJECT-AGENT-OPEN-CALL-TASKBOOK">Standard</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="Depth: risk_missing_data">Depth</sup>.</p>
 <h2>References</h2>
