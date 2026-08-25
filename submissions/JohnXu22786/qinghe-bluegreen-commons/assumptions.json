@@ -37,6 +37,20 @@
       "status": "concept"
     },
     {
+      "assumption_id": "A-MINOR-DATA-001",
+      "statement_zh": "未成年人仅在监护人书面同意且支持随时撤回的前提下参与环境与集体声景采集：不采集可识别个人的语音、肖像及未成年人个人信息；上传内容脱敏并经人工审核后发布（第6.4节 S02 卡、第5.4节回声廊）。",
+      "statement_en": "Minors may only contribute environmental/collective soundscape recordings under written guardian consent that is revocable at any time: no identifiable voices, portraits or minors' personal information are collected; uploads are de-identified and human-reviewed before release (S02 card, Section 5.4 Echo Gallery).",
+      "category": "minors_data",
+      "status": "concept"
+    },
+    {
+      "assumption_id": "A-FACILITY-DERIVE-001",
+      "statement_zh": "新增小型公共设施总量（约40–70处、单体150–400平方米、合计约1万–2万平方米）为概念推导区间，推导链（需求—容量—三期）见第7.2节校验表，正式数值以立项与图纸阶段核算为准，不作开发量承诺。",
+      "statement_en": "New small public facility quantities (approx. 40-70 units, 150-400 m2 each, approx. 10,000-20,000 m2 in total) are a conceptual derivation range whose checkable chain (demand-capacity-phasing) is in Section 7.2; official figures are finalized at project initiation and drawing stage; no development-volume commitment.",
+      "category": "facility_scale",
+      "status": "concept"
+    },
+    {
       "assumption_id": "A-EVENT-001",
       "statement_zh": "年度活动体系与运营机制均为建议性设计，不代表已确定的政府安排或投资承诺。",
       "statement_en": "The annual event system is a design suggestion, not a confirmed government arrangement.",

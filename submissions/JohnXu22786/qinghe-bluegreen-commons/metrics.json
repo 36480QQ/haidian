@@ -104,9 +104,11 @@
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "count(land_use.geojson features)",
+      "formula": "count(land_use.geojson features excluding the 3 mandated key-area land parcels)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "19 = 22 features minus LU-ZHON/LU-BEIJ/LU-DAZH (mandated key-area parcels, not segment zones)"
+      ]
     },
     "building_unit_count": {
       "status": "known",
