@@ -1,5 +1,21 @@
 # 方案迭代记录 / Changelog
 
+## v58.5 - 2026-08-24
+
+**下一评审缺口预防与出版去重 / Anticipatory Review-Gap and Publication De-duplication**
+
+- 反向审计实际评审可见入口，识别并修复 A3 中五组“页题不同、正文画面相同”的出版缺陷；从同一确定性源完整重建中英文 A3 各 14 页与 A0 各 8 页，不增加页数，并对全部页面执行正文指纹去重与逐页渲染检查。
+- 以投稿方原创图解在原路径重制“普通生活旅程”：众智园是连续旁路与旁置验证庭，原点社区是一街两院四个撤回节点，大钟寺是四向通勤与路外人工服务；人物仅为通用比例符号，不是现场人员、公众反馈、无障碍结果或建成证据。
+- 压缩 visual 首屏高度，30 秒入口先展示概念和空间图；补充跳转主内容、键盘焦点和五张首要图件的双语描述性替代文本。许可提示改为按组件陈述，继续明确整包公共或专业复用受条款和独立审计阻断。
+- 将正文、visual、交接索引和 Agent 溯源版本统一为 58.5；历史 RED 基线增加机器可读的“修复前记录”语义和当前处理摘要，避免把历史缺口误读为当前失败。
+- 本轮没有新增生成媒体，不改变 geometry、`metrics.json`、12/8/3/36、G0 / NO-GO、provisional、现实结果 0、审批 0、专业接责 0 或权利未完全清结边界。
+
+- Reverse-audited the surfaces actually exposed to review and repaired five A3 pairs whose page titles differed while their body images were identical. Rebuilt the 14-page Chinese and English A3 books and the 8-board Chinese and English A0 sets from one deterministic source, without adding pages, then checked body-image fingerprints and rendered every page.
+- Rebuilt the contributor-authored ordinary-life journey in place: Zhongzhiyuan uses a continuous bypass and side verification court; Origin Community uses one street, two courts and four withdrawal nodes; Dazhongsi uses a four-way commute and off-route staffed service. Human figures are generic scale symbols, not site participants, public feedback, accessibility results or built evidence.
+- Reduced the visual hero height so the first 30-second view reaches spatial content; added a main-content skip target, keyboard focus and bilingual descriptive alt text for the five primary figures. Licence language is now component-scoped while package-wide public or professional reuse remains blocked pending terms and independent audit.
+- Aligned proposal, visual, handoff-index and agent-provenance revisions at 58.5. The historical RED baseline now declares its before-state role and current disposition so old findings cannot be mistaken for current failures.
+- This revision adds no generated media and changes no geometry, `metrics.json`, 12/8/3/36 count, G0 / NO-GO, provisional, zero-real-result, zero-approval, zero-professional-acceptance or not-fully-cleared boundary.
+
 ## v58.4 - 2026-08-24
 
 **96 分 exact-head 评审的预注册与发布硬门 / Preregistration and Release Gates for the Exact-Head 96-Point Review**

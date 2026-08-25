@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R58",
+  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R58.5",
   "as_of": "2026-08-24",
   "audit_type": "contributor_editorial_review",
   "status": "contributor_side_material_equivalence_checked_human_confirmation_open",
@@ -66,13 +66,19 @@
       "check_id": "BME-08",
       "topic": "publication_pairing",
       "result": "pass",
-      "evidence": "The rebuilt A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages; page counts, warnings and backlink positions are checked again in final PDF QA."
+      "evidence": "The rebuilt A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages. Two fresh-process builds are byte-identical, all 44 pages are rendered, and body-image fingerprints contain no duplicate page pair within any PDF."
     },
     {
       "check_id": "BME-09",
       "topic": "regional_relay_boundary",
       "result": "pass_with_unconfirmed_external_roles",
       "evidence": "Both Chapter 3 counterparts now carry the same six-row conditional relay matrix. Beiwei Community is only a community-context comparator beside, not interchangeable with, Origin Community; every external node remains unconfirmed, accepts only a minimum G0 protocol/evidence package, returns proposed discrepancy or retest questions, transfers no raw sensitive data and does not start without written role acceptance, a lawful data boundary, an ordinary-task baseline and applicable H01-H07 materials."
+    },
+    {
+      "check_id": "BME-10",
+      "topic": "first_view_and_accessible_descriptions",
+      "result": "pass_with_html_as_accessible_counterpart",
+      "evidence": "Both visual counterparts expose the same compact first-view ruling, 12/8/3/36 labels, component-scoped rights boundary, skip target, keyboard focus and descriptive alt text for the five primary figures. Fixed-page PDFs remain visual publications and do not claim tagged-PDF conformance; paired offline HTML remains the keyboard and machine-readable route."
     }
   ],
   "critical_claim_map": [

@@ -24,9 +24,9 @@ The proposal makes one spatial decision: verification may not occupy the ground 
 
 ## Rights and authenticity / 权利与真实性
 
-Contributor-owned content is CC BY 4.0; contributor-owned code is MIT; OSM-derived database content remains ODbL; Noto Sans SC subsets used by PDF and offline HTML remain OFL 1.1; third-party citations and repository provisional inputs are not relicensed. Every current distribution path has a contributor rights-inventory decision, while independent legal and trademark review remain absent. All optional model-generated media has been removed. Licensing does not establish field truth, approval, accessibility compliance, professional acceptance or G1.
+Contributor-owned content is CC BY 4.0; contributor-owned code is MIT; OSM-derived database content remains ODbL; rasterized Noto Sans CJK SC glyph output in PDF and the offline-HTML subset remain OFL 1.1; third-party citations and repository provisional inputs are not relicensed. Every current distribution path has a contributor rights-inventory decision, while independent legal and trademark review remain absent. All optional model-generated media has been removed. Licensing does not establish field truth, approval, accessibility compliance, professional acceptance or G1.
 
-投稿方自有内容采用 CC BY 4.0，自有代码采用 MIT；OSM 数据库衍生内容继续适用 ODbL；PDF 与离线 HTML 使用的 Noto Sans SC 子集继续适用 OFL 1.1；第三方引用与仓库临时输入不被重新许可。当前分发树每个路径均有投稿方权利自查决定，独立法律和商标审查仍未提供。全部可选模型生成媒体已清退。许可不证明现场、批准、无障碍达标、专业接责或 G1。
+投稿方自有内容采用 CC BY 4.0，自有代码采用 MIT；OSM 数据库衍生内容继续适用 ODbL；PDF 中栅格化的 Noto Sans CJK SC 字形输出和离线 HTML 子集继续适用 OFL 1.1；第三方引用与仓库临时输入不被重新许可。当前分发树每个路径均有投稿方权利自查决定，独立法律和商标审查仍未提供。全部可选模型生成媒体已清退。许可不证明现场、批准、无障碍达标、专业接责或 G1。
 
 ## Data-gap decision / 数据缺口裁决
 
