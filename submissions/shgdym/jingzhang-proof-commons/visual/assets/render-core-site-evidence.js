@@ -543,10 +543,10 @@ function innovationLineFigure(lang) {
   const extent = [116.337, 39.937, 116.359, 40.029];
   const rect = { x: 58, y: 160, w: 1192, h: 930 };
   let body = header(1,
-    '九公里城市，就是九公里AI研发环境',
-    'THE CITY IS THE AI DEVELOPMENT ENVIRONMENT',
-    '六类城市知识接口 × 三处深度共同开发场',
-    'SIX URBAN KNOWLEDGE INTERFACES × THREE CO-DEVELOPMENT GROUNDS', lang);
+    '让一座城参与AI的完成',
+    'LET A CITY TAKE PART IN MAKING AI',
+    '一条城市正线 × 六类城市接口 × 三处共同开发场',
+    'ONE CIVIC MAIN LINE × SIX URBAN INTERFACES × THREE CO-DEVELOPMENT GROUNDS', lang);
   body += `<rect x="58" y="160" width="1192" height="930" rx="5" fill="white" stroke="${C.line}"/>`;
   body += mapLayer(extent, rect, `innovation-${lang}`, { lightBuildings: true });
   body += drawDesignNetwork(extent, rect);
@@ -576,7 +576,7 @@ function innovationLineFigure(lang) {
     const center = ring.reduce((acc, point) => [acc[0] + point[0] / ring.length, acc[1] + point[1] / ring.length], [0, 0]);
     return project(center, extent, rect);
   });
-  const stationRole = zh ? ['把公众知识变成工程材料', '让任何团队都能接着做', '让日常生活继续改产品'] : ['TURN PUBLIC KNOWLEDGE INTO ENGINEERING', 'LET ANY TEAM CONTINUE THE WORK', 'LET DAILY LIFE KEEP CHANGING IT'];
+  const stationRole = zh ? ['和城市一起做', '让别人接着做', '让生活继续改'] : ['MAKE WITH THE CITY', 'LET OTHERS CONTINUE', 'LET LIFE KEEP CHANGING IT'];
   centers.forEach((point, index) => {
     const cardW = zh ? 270 : 310;
     const cardX = index === 2 ? point[0] - cardW - 34 : point[0] + 34;
@@ -587,8 +587,8 @@ function innovationLineFigure(lang) {
       ${text(cardX+16, point[1]+20, stationRole[index], zh ? 13 : 10, stationColors[index], 700)}`;
   });
   body += `<rect x="1280" y="160" width="662" height="930" rx="5" fill="white" stroke="${C.line}"/>
-    ${text(1316, 216, zh ? 'AI由城市共同做成' : 'AI IS MADE WITH THE CITY', zh ? 28 : 24, C.ink, 700)}
-    ${lines(1316, 254, zh ? ['不是把生活变成测试场，而是让生活经验、', '研究方法和工程能力共享同一张研发桌。'] : ['Urban life is not a testing ground.', 'Experience, research and engineering', 'share the same development table.'], zh ? 16 : 14, C.muted, 500, 1.45)}`;
+    ${text(1316, 216, zh ? '城市生活走正线，创新走侧线' : 'CITY LIFE ON THE MAIN LINE, INNOVATION ON SIDINGS', zh ? 26 : 19, C.ink, 700)}
+    ${lines(1316, 254, zh ? ['侧线允许试错，正线保持连续；', '道岔让两者相遇，经验再返回研发。'] : ['Sidings allow trial and error while city life continues.', 'Switches bring them together; experience travels back.'], zh ? 16 : 13, C.muted, 500, 1.45)}`;
   const photos = ['experience-zhongzhi.png', 'experience-ai-origin.png', 'experience-dazhongsi.png'];
   const photoLabels = zh ? ['公共实验花园', '公共共研大厅', '城市生活客厅'] : ['PUBLIC EXPERIMENT GARDEN', 'PUBLIC CO-DEVELOPMENT HALL', 'CITY LIFE ROOM'];
   photos.forEach((photo, index) => {
@@ -599,7 +599,7 @@ function innovationLineFigure(lang) {
     body += text(1334, y+171, `${stationNames[lang][index]} · ${photoLabels[index]}`, zh ? 15 : 12, C.white, 700);
   });
   body += `<rect x="1316" y="1028" width="590" height="38" rx="3" fill="${C.ink}"/>`;
-  body += text(1611, 1054, zh ? 'X = 不同城市知识共享一张研发桌' : 'X = URBAN KNOWLEDGE SHARES ONE DEVELOPMENT TABLE', zh ? 15 : 12, C.white, 700, 'middle');
+  body += text(1611, 1054, zh ? '问题 → 共创 → 开放 → 生活 → 再出题' : 'QUESTION → CO-MAKE → OPEN → LIVE → ASK AGAIN', zh ? 15 : 11, C.white, 700, 'middle');
   return svgWrap(body + footer(lang));
 }
 
@@ -669,18 +669,18 @@ function cityQuestionJourneyFigure(lang) {
     '周阿姨的无障碍到达 × 城市共同开发',
     'MS ZHOU\'S ACCESSIBLE ARRIVAL × URBAN CO-DEVELOPMENT', lang);
   const panels = [
-    { photo: 'experience-dazhongsi.png', align: 'xMinYMid', color: C.amber },
+    { photo: 'experience-dazhongsi.png', align: 'xMaxYMid', color: C.amber },
     { photo: 'experience-zhongzhi.png', align: 'xMidYMid', color: C.blue },
     { photo: 'experience-ai-origin.png', align: 'xMidYMid', color: C.green },
-    { photo: 'experience-dazhongsi.png', align: 'xMaxYMid', color: C.coral },
+    { photo: 'experience-dazhongsi.png', align: 'xMinYMid', color: C.coral },
   ];
   const stages = zh ? [
-    ['大钟寺｜共同定义', '周阿姨、轮椅使用者与服务人员把“连续到达”写成城市任务，不假定未经核验的现场断点。', '使用者决定什么算改善'],
+    ['城市问题｜共同定义', '大钟寺的周阿姨、轮椅使用者与服务人员把“连续到达”写成城市任务，不假定未经核验的现场断点。', '使用者决定什么算改善'],
     ['众智园｜共同制作', '公众与开发者一起移动路缘、停靠位和人群标记，把身体经验变成可重复工况。', '使用者直接改路线和原型'],
     ['AI原点｜共同接续', '方法、接口和限制留在公共原型长桌；另一团队复现、拆解并继续修改。', '成果成为别人能继续做的能力'],
     ['大钟寺｜生活继续改', '设备没有碰撞，停靠与围观却影响转弯；人工服务继续，新问题回到研发桌。', '终点立刻成为下一题起点'],
   ] : [
-    ['DAZHONGSI | DEFINE TOGETHER', 'Ms Zhou, wheelchair users and staff frame continuous arrival without inventing an unsurveyed defect.', 'USERS DECIDE WHAT COUNTS AS IMPROVEMENT'],
+    ['CITY QUESTION | DEFINE TOGETHER', 'At Dazhongsi, Ms Zhou, wheelchair users and staff frame continuous arrival without inventing an unsurveyed defect.', 'USERS DECIDE WHAT COUNTS AS IMPROVEMENT'],
     ['ZHONGZHI | MAKE TOGETHER', 'Participants and developers move kerbs, parking and crowd markers, turning body knowledge into repeatable conditions.', 'USERS CHANGE THE ROUTE AND PROTOTYPE'],
     ['AI ORIGIN | CONTINUE TOGETHER', 'Method, interfaces and limits remain on a public table for another team to reproduce, dismantle and change.', 'WORK BECOMES A CAPABILITY OTHERS CAN CONTINUE'],
     ['DAZHONGSI | LIFE KEEPS CHANGING IT', 'No collision occurs, yet parking and spectators restrict turning. Staff remain and the new issue returns.', 'THE END BECOMES THE NEXT QUESTION'],
@@ -807,8 +807,10 @@ function aerialDesignKeyFigure(lang) {
   const zh = lang === 'zh';
   let body = header(4, '总体鸟瞰如何对应可检查的空间动作', 'HOW THE AERIAL MAPS TO CHECKABLE SPATIAL MOVES', '鸟瞰表达意向；GeoJSON与相对拓扑承担证据', 'THE AERIAL SHOWS INTENT; GEOJSON + TOPOLOGY CARRY EVIDENCE', lang);
   body += `<rect x="58" y="160" width="1260" height="930" rx="5" fill="white" stroke="${C.line}"/>`;
-  body += placedImage('site-overview.png', 76, 178, 1224, 894, `aerial-${lang}`, 'xMidYMid');
-  body += conceptNotice(lang, 76, 178, 1224);
+  body += placedImage('site-overview.png', 76, 178, 1224, 689, `aerial-${lang}`, 'xMidYMid');
+  body += `<rect x="76" y="887" width="1224" height="165" rx="4" fill="${C.ink}"/>`;
+  body += text(108, 937, zh ? '一条公共创新主线 · 六类城市接口 · 三处共同开发场' : 'ONE PUBLIC INNOVATION SPINE · SIX CITY INTERFACES · THREE CO-DEVELOPMENT GROUNDS', zh ? 23 : 17, C.white, 700);
+  body += lines(108, 978, zh ? ['写实鸟瞰只表达概念空间与活动关系；临时几何、正式边界与工程条件仍按证据状态读取。'] : ['THE REALISTIC AERIAL SHOWS CONCEPT SPACE AND ACTIVITY ONLY.', 'READ PROVISIONAL GEOMETRY, OFFICIAL BOUNDARIES AND ENGINEERING CONDITIONS BY EVIDENCE STATUS.'], zh ? 15 : 11, '#c9d5e6', 500, 1.5);
   body += `<rect x="1348" y="160" width="594" height="930" rx="5" fill="white" stroke="${C.line}"/>`;
   const actions = zh ? [
     ['01 公共创新主线', '连续公园、铁路遗产与日常通行'], ['02 六类X接口', '社区、校园、轨道、生态、产业、文化'],
