@@ -25,9 +25,42 @@ No other entrant's work was copied.
 
 ## 字体与资产 / Fonts and assets
 
-图件与 PDF 使用 macOS 系统自带字体 Hiragino Sans GB 与 Arial Unicode MS 进行**本地渲染**，
-字体文件本身未被再分发。HTML 只声明字体族名称，不打包、不加载任何字体文件，
-在缺少该字体的环境中回退到系统 sans-serif。
+**图件与 PDF。** `assets/figures/*.png` 与 `drawings/*.pdf` 使用 macOS 系统自带字体
+Hiragino Sans GB 与 Arial Unicode MS 进行**本地光栅化/内嵌渲染**，字体文件本身未作为独立文件再分发。
+
+**HTML 的中文字形。** `report/proposal.html`、`report/proposal.en.html`、`visual/index.html`
+与 `visual/index.en.html` 内嵌了一份**按本包实际用字裁剪的 Noto Sans SC 子集**，
+以 `data:` URI 形式写在各文件的 `@font-face` 中：
+
+| 项 | 值 |
+|---|---|
+| 原始字体 | Noto Sans SC，Version 2.004（`hotconv 1.0.118`） |
+| 版权 | Copyright 2014-2021 Adobe (http://www.adobe.com/)，Reserved Font Name `Source` |
+| 许可 | SIL Open Font License, Version 1.1（全文见本文件末尾） |
+| 取得方式 | Google Fonts 开源字体库 `ofl/notosanssc/NotoSansSC[wght].ttf` |
+| 本包的修改 | 以 `fontTools.varLib.instancer` 固化 `wght=400` 与 `wght=700` 两个字重，再以 `pyftsubset` 裁剪至本包实际出现的字符，输出 WOFF2 |
+| 再分发形式 | base64 编码内嵌于上述四个 HTML 文件，不作为独立字体文件提交 |
+| CSS 字体族名 | `JZSansSC` |
+
+**为什么内嵌而不是外链。** 评审环境以 headless Chromium 从 `file://` 打开 HTML。
+Chromium 对 `file://` 使用不透明来源，字体是 CORS-enabled 请求，因此相对路径的字体文件会被拦截；
+仓库同时禁止任何远程字体。`data:` URI 是唯一在该环境下必然生效、且不产生任何网络请求的方式。
+本包实测：内嵌后与系统苹方渲染的同一串汉字存在 31522 像素差异，证明浏览器采用的是内嵌字形而非系统回退。
+
+**OFL 合规说明。** 本包对该字体只做了实例化与子集化，属 OFL 允许的 Modified Version；
+按 OFL 第 3 条不得使用 Reserved Font Name，故 CSS 字体族命名为 `JZSansSC`，
+既不含保留名 `Source`，也不使用 `Noto` 名义发布；字体未被单独出售，
+版权声明与许可全文随本包提供。
+
+**Fonts (English).** The four HTML deliverables embed a subset of **Noto Sans SC v2.004**
+(Copyright 2014-2021 Adobe, Reserved Font Name `Source`, SIL Open Font License 1.1) as a
+base64 `data:` URI inside `@font-face`. The font was instanced to weights 400 and 700 with
+`fontTools.varLib.instancer` and subset to the characters this package actually uses with
+`pyftsubset`, then encoded as WOFF2. It is embedded because the review environment opens the
+HTML from a `file://` URI in headless Chromium, where relative font files are CORS-blocked and
+remote fonts are forbidden by this repository; a `data:` URI is the only reliably offline path.
+As a Modified Version under OFL clause 3 it is not published under the Reserved Font Name: the
+CSS family is `JZSansSC`. The full licence text is reproduced at the end of this file.
 
 未使用任何未授权的图片、商标、人物肖像、论文图像或第三方素材库内容。
 No unlicensed images, trademarks, portraits, paper figures, or third-party stock assets are used.
@@ -69,3 +102,106 @@ arrangement. The author is responsible for facts, citations, copyright, and fina
 ## 许可 / Licence
 
 `COMMUNITY-DISPLAY-ONLY` —— 允许本仓库及其公开展示页展示本方案；其他用途请联系作者。
+
+---
+
+## 内嵌字体许可全文 / Full licence text for the embedded font
+
+以下为 `report/*.html` 与 `visual/*.html` 内嵌的 Noto Sans SC 子集所适用的许可全文，
+随本包提供以满足 SIL Open Font License 1.1 的随附要求。
+
+```text
+Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+```

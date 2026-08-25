@@ -7,6 +7,7 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
+        "三大定位、五大功能与三区两翼对照闭环",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计"
@@ -60,6 +61,7 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
+        "三大定位、五大功能与三区两翼对照闭环",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计"
@@ -113,6 +115,7 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
+        "三大定位、五大功能与三区两翼对照闭环",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计"
@@ -325,6 +328,7 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
+        "三大定位、五大功能与三区两翼对照闭环",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计"
@@ -431,6 +435,7 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
+        "三大定位、五大功能与三区两翼对照闭环",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
         "重点区域详细设计"
@@ -908,9 +913,11 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
+        "三大定位、五大功能与三区两翼对照闭环",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -943,10 +950,21 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "CASE-BJ-AV-REGULATION",
+        "CASE-BJ-AV-TEST-MEASURES",
+        "CASE-BJ-ADZ-ETDZ",
+        "CASE-CA-ADM-DIRECTIVE",
+        "CASE-NASA-ASRS",
+        "CASE-NL-ALGORITHM-REGISTER",
+        "CASE-HEL-AI-REGISTER",
+        "CASE-BCN-SUPERBLOCKS",
+        "CASE-CN-GBF-2020-45",
+        "UPSTREAM-ISSUE-1029"
       ],
       "assumption_ids": [
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-REGION-006"
       ],
       "self_check_ids": [
         "BOUNDARY_TRUST",
@@ -963,7 +981,8 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "AI 创新生态、人才画像与 AI+ 场景"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -996,7 +1015,17 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "CASE-BJ-AV-REGULATION",
+        "CASE-BJ-AV-TEST-MEASURES",
+        "CASE-BJ-ADZ-ETDZ",
+        "CASE-CA-ADM-DIRECTIVE",
+        "CASE-NASA-ASRS",
+        "CASE-NL-ALGORITHM-REGISTER",
+        "CASE-HEL-AI-REGISTER",
+        "CASE-BCN-SUPERBLOCKS",
+        "CASE-CN-GBF-2020-45",
+        "UPSTREAM-ISSUE-1029"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
