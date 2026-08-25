@@ -90,6 +90,94 @@
       "license": "official-public-document",
       "usage": "standard_matrix.json 中全部标准响应均以本地快照为准（source_url 仅作溯源）。",
       "limitations": "快照为项目子集摘录；法定适用以官方发布全文为准。"
+    },
+    {
+      "id": "CASE-KENDALL",
+      "url": "https://www.cambridgeredevelopment.org/",
+      "source_type": "agent_inferred_from_public_data",
+      "title_zh": "肯戴尔广场创新区（美国剑桥）：剑桥再开发局公开资料",
+      "title_en": "Kendall Square innovation district (Cambridge, USA): Cambridge Redevelopment Authority public materials",
+      "retrieved": "2026-08-24",
+      "license": "public-webpage-facts-only",
+      "usage": "案例对照表第1行：实验室与街道零距离加速成果转化的经验综述。",
+      "limitations": "公开介绍网页的事实性综述，未复制受版权保护图文；仅作经验参考，不作规范依据，细节以其官方规划文件为准。"
+    },
+    {
+      "id": "CASE-KINGS-CROSS",
+      "url": "https://www.kingscross.co.uk/",
+      "source_type": "agent_inferred_from_public_data",
+      "title_zh": "国王十字再开发区（英国伦敦）：King's Cross Central 官方网站",
+      "title_en": "King's Cross redevelopment (London, UK): King's Cross Central official site",
+      "retrieved": "2026-08-24",
+      "license": "public-webpage-facts-only",
+      "usage": "案例对照表第2行：遗产场所作为科技区身份锚点的经验综述。",
+      "limitations": "开发主体官方宣传网页，含营销口径；仅作经验参考，不作规范依据。"
+    },
+    {
+      "id": "CASE-ONE-NORTH",
+      "url": "https://www.jtc.gov.sg/find-space/one-north",
+      "source_type": "agent_inferred_from_public_data",
+      "title_zh": "纬壹科技城（新加坡）：JTC 裕廊集团官方园区页",
+      "title_en": "one-north (Singapore): JTC Corporation official estate page",
+      "retrieved": "2026-08-24",
+      "license": "public-webpage-facts-only",
+      "usage": "案例对照表第3行：工作—居住—学习—游憩混合留住人才的经验综述。",
+      "limitations": "政府法定机构公开页面；园区规划细节以新加坡官方规划文件为准，仅作经验参考。"
+    },
+    {
+      "id": "CASE-NANSHAN",
+      "url": "https://www.szns.gov.cn/",
+      "source_type": "agent_inferred_from_public_data",
+      "title_zh": "深圳南山区科技创新集群：南山区人民政府门户网站",
+      "title_en": "Shenzhen Nanshan innovation cluster: Nanshan District People's Government portal",
+      "retrieved": "2026-08-24",
+      "license": "public-webpage-facts-only",
+      "usage": "案例对照表第4行：硬件供应链邻近性价值的经验综述。",
+      "limitations": "政府门户公开信息的事实性综述；仅作经验参考，不作规范依据。"
+    },
+    {
+      "id": "CASE-STATION-F",
+      "url": "https://stationf.co/",
+      "source_type": "agent_inferred_from_public_data",
+      "title_zh": "Station F 超级孵化器（法国巴黎）：官方网站",
+      "title_en": "Station F super-incubator (Paris, France): official site",
+      "retrieved": "2026-08-24",
+      "license": "public-webpage-facts-only",
+      "usage": "案例对照表第5行：超级孵化器旗舰效应的经验综述。",
+      "limitations": "运营主体官方宣传网页，含营销口径；仅作经验参考，不作规范依据。"
+    },
+    {
+      "id": "CASE-CORNELL-TECH",
+      "url": "https://tech.cornell.edu/",
+      "source_type": "agent_inferred_from_public_data",
+      "title_zh": "康奈尔科技校区（美国纽约罗斯福岛）：官方网站",
+      "title_en": "Cornell Tech campus (Roosevelt Island, New York, USA): official site",
+      "retrieved": "2026-08-24",
+      "license": "public-webpage-facts-only",
+      "usage": "案例对照表第6行：校企共址模式的经验综述。",
+      "limitations": "高校官方网页的事实性综述；仅作经验参考，不作规范依据。"
+    },
+    {
+      "id": "CASE-SHIBUYA",
+      "url": "https://shibuya-startup-support.jp/",
+      "source_type": "agent_inferred_from_public_data",
+      "title_zh": "涩谷创业生态（日本东京）：涩谷区官方创业支持平台",
+      "title_en": "Shibuya startup ecosystem (Tokyo, Japan): Shibuya City official startup support platform",
+      "retrieved": "2026-08-24",
+      "license": "public-webpage-facts-only",
+      "usage": "案例对照表第7行：轨道枢纽上盖创业生态的经验综述。",
+      "limitations": "区政府公开平台的事实性综述；仅作经验参考，不作规范依据。"
+    },
+    {
+      "id": "CASE-MISSION-BAY",
+      "url": "https://sfocii.org/projects/mission-bay",
+      "source_type": "agent_inferred_from_public_data",
+      "title_zh": "Mission Bay 再开发区（美国旧金山）：OCII 官方项目页",
+      "title_en": "Mission Bay redevelopment (San Francisco, USA): OCII official project page",
+      "retrieved": "2026-08-24",
+      "license": "public-webpage-facts-only",
+      "usage": "案例对照表第8行：单一功能园区生活配套滞后导致空心化的警示性经验综述。",
+      "limitations": "再开发管理机构公开项目页；仅作警示性经验参考，不作规范依据。"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "submission_dir": "submissions\\Azurewind8\\azurewind-jingzhang-ai-belt-continuum",
+  "submission_dir": "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum",
   "pr_author": "Azurewind8",
   "stage": "formal",
   "deterministic_validation": {
@@ -20,10 +20,12 @@
       ],
       "changed_files": [
         "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum/agent.json",
+        "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum/assets/figures/brand-identity.png",
         "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum/assets/figures/key-areas.png",
         "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum/assets/figures/land-use-structure.png",
         "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum/assets/figures/metrics-evidence.png",
         "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum/assets/figures/mobility-bluegreen.png",
+        "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum/assets/figures/regional-synergy.png",
         "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum/assets/figures/site-overview.png",
         "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum/assumptions.json",
         "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum/changelog.md",
@@ -59,7 +61,7 @@
       "ai_package_stages": {
         "submissions/Azurewind8/azurewind-jingzhang-ai-belt-continuum": "formal"
       },
-      "total_bytes": 12597292,
+      "total_bytes": 17730832,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -139,11 +141,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 7,
+          "source": 15,
           "standard": 7,
           "depth": 10,
-          "data": 9,
-          "metric": 13
+          "data": 10,
+          "metric": 17
         }
       }
     },

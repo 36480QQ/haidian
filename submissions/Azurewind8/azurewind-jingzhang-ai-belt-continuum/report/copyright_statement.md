@@ -10,7 +10,7 @@ All content in this package — the Chinese and English proposals, nine GeoJSON 
 
 事实性内容仅来自 sources.json 登记的公开或清权来源：官方公告、智能体任务书摘录、仓库资料包、公开来源登记表与标准本地快照。临时边界多边形按其使用限制标注为 provisional，不作为官方红线或精确面积依据。全球创新街区案例仅引用公开报道与规划文件中的公开事实。
 
-命名「连续体 CONTINUUM」、标志方向、三处AI朝圣地标与全部图件均为本包原创的方向性描述，不使用未经授权的商标、字体成品、人物肖像、论文图像或其他版权材料。字体使用操作系统内置中日韩字体仅用于本地渲染输出。
+命名「连续体 CONTINUUM」、标志方向、三处AI朝圣地标与全部图件均为本包原创的方向性描述，不使用未经授权的商标、字体成品、人物肖像、论文图像或其他版权材料。网页与图纸PDF按 SIL Open Font License 1.1 嵌入 Noto Sans SC 子集字体（版权 Google LLC / Adobe；许可说明随各 HTML 文件内嵌标注，许可全文见 openfontlicense.org），仅用于本包离线渲染输出。
 
 ## 边界声明 Claim boundaries
 

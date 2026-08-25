@@ -521,6 +521,62 @@
       "assumptions": [
         "A-BOUNDARY-001"
       ]
+    },
+    "ai_innovation_density": {
+      "status": "unknown",
+      "value": null,
+      "unit": "entities_per_sqkm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "count(AI-related registered entities + lab facilities within belt) / site_area_sqkm; baseline=launch-year census; phase-1 acceptance threshold = baseline * 1.20",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-INNOVATION-METRICS-001"
+      ],
+      "reason": "基线依赖启动年AI主体与实验设施普查，运营前无法取值；公式与验收阈值（基线+20%）已锁定，见 A-INNOVATION-METRICS-001。"
+    },
+    "scenario_openness_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "annual open operating days across scenarios / (ai_scenario_node_count * 365); baseline=first operating year; acceptance threshold >= 0.4",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-INNOVATION-METRICS-001"
+      ],
+      "reason": "基线依赖首年场景运行开放日记录，运营前无法取值；公式与验收阈值（≥0.4）已锁定，见 A-INNOVATION-METRICS-001。"
+    },
+    "slow_mobility_connectivity": {
+      "status": "unknown",
+      "value": null,
+      "unit": "crossings_per_km",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(east-west crossings without grade break) / belt_length_km; provisional design value 12/9.7≈1.24; acceptance by post-construction field measurement",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-INNOVATION-METRICS-001"
+      ],
+      "reason": "临时几何下设计值约1.24处/公里（12处÷9.7km），法定取值须待道路红线与建成后实测确认；公式已锁定，见 A-INNOVATION-METRICS-001。"
+    },
+    "talent_affordability_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "affordable housing units (incl. talent apartments) / estimated jobs within belt; baseline pending ownership & employment surveys; phase-1 acceptance threshold >= 0.15",
+      "confidence": "unknown",
+      "assumptions": [
+        "A-INNOVATION-METRICS-001"
+      ],
+      "reason": "基线依赖权属与就业普查数据，运营前无法取值；公式与一期验收阈值（≥0.15）已锁定，见 A-INNOVATION-METRICS-001。"
     }
   }
 }
