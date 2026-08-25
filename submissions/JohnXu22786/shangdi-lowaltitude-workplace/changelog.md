@@ -17,3 +17,12 @@
 - 表达完整度：图件全部重绘（12×8 @150dpi，ink 覆盖：地图/图表分别 ≥0.08/≥0.10：site-overview≈0.22、key-areas≈0.45、mobility≈0.21、land-use≈0.57、metrics≈0.27），每图含双语 provisional 戳与图例；A0 首页标题 60pt、第二版式密集填充；A3 封面加色带；精度降水：正文以 11.41 平方公里/1141 万平方米/≈0.329/≈0.007 展示。
 - 一致性：sources/assumptions/compliance_matrix/standard_matrix/design_depth_matrix 全文更新（source_id 去年份后缀、evidence_summary 逐条改写为指向具体正文内容）；metrics.json 修正 land_use_zone_count=21；manifest data_confidence 改为 mixed_provisional_and_conceptual。
 - Valroot 门禁 2026-08-25 重新运行（结果持久化于 self_check.json）。
+
+## v0.3.0 - 2026-08-25 (repair round-4, CocoSgt PR #3854 74.0/100)
+
+- P0 图面质量（表达完整度 2/5 → 修复）：5 对图件全部重绘并程序化质检。布局改为显式分栏（地图 + 独立文本面板），以 PIL 实测字形宽度换行、以 vstep/px 数据坐标排布，生成后逐图校验：①6px 边缘带 ink=0（无裁切/越界）；②文字 AABB 两两无重叠（0 重叠）；③无文本出画布；④中部无大段空白带（主图不空）；⑤ink 覆盖 site-overview≈0.131 / land-use≈0.193 / key-areas≈0.132 / mobility≈0.124 / metrics≈0.210（地图≥0.08、图表≥0.10）；规格 12×8in @150dpi，标题 20pt、标签/图例 ≥13pt、注释 ≥11pt。修复点对照：site-overview 图例与指标不再共区（独立图例列 + 三层范围 + 复算指标），右侧无越界；land-use 左右轴标签不再裁切（barh 纵向标签 + 图例按列换行）；key-areas 主图填满左栏（三重点区 + 净空走廊 + 图例条），任务卡右侧不再截断（缩短文案 + 收缩行距）；mobility 说明与图例换行不出界；metrics-evidence 无空白带，三类指标分轴（计数/面积/比率不共轴），三项 formal 指标口径表 + 数据来源注脚。
+- P0 双语实质等效：5 对图件全部重绘 EN 版本，生成时断言 100% ASCII（零中文残留：图例/节点说明/底部警示/指标标签均已英文，含原“计数指标”残留）；A0/A3 英文板全部重排且全页文本抽取校验：除强制双语 PROVISIONAL 戳外无任一中文行（0 条非戳中文）；中英数值、图位、图例条目一一对应（同一 labels.py 词表驱动）。
+- P1 A0/A3 板册重导出：a0-boards 2 页（首页总览 64pt 标题 + 二层节点任务板）、a3-booklet 6 页（封面 + 5 内容页），均复用质检通过的图件布局（FS 字体缩放）；PDF 逐页栅格化校验：4 份 PDF 全部页面边缘带 ink=0、首页含双语戳、EN 页无中文（除强制戳）；A0 首页标题 64pt≥60pt，A3 首页标题 40pt 未裁切。
+- P1 数字与口径一致性：图件全部数值与 metrics.json/proposal.md 逐项核对（site≈1141万 m²、green≈0.329、public≈0.007、计数 3/21/12/13/7/5 等）；全套 doc 链（figures→HTML→manifest）保持同径。
+- 机器一致性：render_proposal_html.py 重出 report HTML（13 个规范 ## 标题保持）；4 个 HTML 表面重嵌 OFL Noto Sans SC 子集（family NotoSansSC-Static、font-family-first override、单份 data URI）；manifest 40 项 hash 刷新；新增文档集未变（figures 10 + logo 1 + PDF 4 + HTML 4 + md 2）。
+- Valroot 门禁 2026-08-25 四门重新运行（self_check.json 持久化）。
