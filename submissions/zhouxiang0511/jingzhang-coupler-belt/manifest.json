@@ -324,14 +324,14 @@
       "role": "asset",
       "required": false,
       "language": "neutral",
-      "sha256": "e6f45cafc67f6cbaecde6e8f8730e467ce6db8b34534aa2c998544dcc5263122"
+      "sha256": "0d003e0e2e57176fe4665daeda8c16e47d2449586319187f943f7688218c3c36"
     },
     {
       "path": "assets/figures/brand-standards.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "24fc88c21dcc32a9e848b4a0474b28d018bf5c9ae361691998176243b0711c48"
+      "sha256": "18f7da22634dd032e453e42515f528db09d1620a676ed7052d3d4d5a462f3c45"
     },
     {
       "path": "assets/figures/brand-standards.en.png",
@@ -339,7 +339,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/brand-standards.png",
-      "sha256": "c88e301997b7c31789dde93da51082ff5e01c17b2b35e9372ebf230312db975c"
+      "sha256": "4798ebece9b65324ccfe04000f6591ba5ae36ef173c79716e822ebb5d6e850af"
     },
     {
       "path": "assets/media/seedance-plaza.png",
@@ -367,7 +367,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
