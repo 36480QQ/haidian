@@ -98,7 +98,7 @@
     "building_footprint_area_sqm": {
       "metric_id": "building_footprint_area_sqm",
       "status": "known",
-      "value": 654587,
+      "value": 653876.031,
       "unit": "sqm",
       "formula": "sum of organic perimeter-block building footprints in 3 cores, clipped to key area bounds, de-overlapped",
       "source_files": [
@@ -108,7 +108,7 @@
       "assumption_ids": [
         "A-BUILD-001"
       ],
-      "note": "概念体量示意，三核内建筑密度约18%（≤35%导则要求），采用圆角C形/U形围合式街坊布局，建筑沿街道周边布置、内部留庭院，含3栋保留工业遗产，非审批建筑面积。"
+      "note": "概念体量示意，三核内建筑密度约18%（≤35%导则要求），采用圆角C形/U形围合式街坊布局，建筑沿街道周边布置、内部留庭院，含3栋保留工业遗产，非审批建筑面积。空间复算值653876.031㎡（约65.4ha），与几何union面积一致。"
     },
     "ai_scenario_nodes": {
       "metric_id": "ai_scenario_nodes",
