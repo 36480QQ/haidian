@@ -27,13 +27,13 @@ The diagram is silent: it contains no audio track, music, voice, or ambient soun
 
 ## 确定性生成方法 / Deterministic generation method
 
-本 Task 6 的字幕与文字稿仅从本地已批准合同及列出的投稿方原创静态资产确定性整理：无网络请求、无下载、无模型 API、无生成模型调用。若后续按合同合成画面或编码媒体，只能使用同一份本地合同和资产；本 Task 6 没有生成、播放或验证任何 MP4。
+字幕、文字稿、画面帧与视频仅从本地冻结的投稿方四态合同及列出的投稿方原创静态资产确定性生成：无网络请求、无下载、无模型 API、无生成模型调用。这里的“冻结”只表示本轮编辑输入保持一致，不表示外部批准、专业接责或成熟度提升。
 
-The Task 6 captions and transcript were deterministically prepared only from the local approved contract and listed contributor-authored static assets: no network request, no download, no model API, and no generative-model call. If frames or media are later composed under the contract, they must use the same local contract and assets; Task 6 did not generate, play, or verify any MP4.
+The captions, transcript, frames, and video were generated deterministically only from the locally frozen contributor-authored four-state contract and listed contributor-authored static assets: no network request, download, model API, or generative-model call. “Frozen” means only that the editorial inputs stayed fixed for this round; it does not mean external approval, accepted professional responsibility, or maturity advancement.
 
 ## 源资产与工具记录 / Source assets and tool record
 
-- 已批准合同 / approved contract: `visual/assets/four-state-experience-contract.json`, SHA-256 `fa7d618e42d249cb11a9d5600872d7117b2490e166a2ec7590c84e4b993cdc25`。
+- 冻结的投稿方合同 / frozen contributor-authored contract: `visual/assets/four-state-experience-contract.json`, SHA-256 `fa7d618e42d249cb11a9d5600872d7117b2490e166a2ec7590c84e4b993cdc25`。
 - Task 4 静态故事板 / Task 4 static storyboard: `assets/figures/four-state-journey.svg`, SHA-256 `bdd9cce5538760bfe4a349e75f3d149d78b1f9f7aa8803e0f323549aa23e7248`; `assets/figures/four-state-journey.en.svg`, SHA-256 `94ba040ab26c729d017aff7a52e1654b8015a0d65fb60c679fdf8d072a688635`。
 - Task 5 概念封面 / Task 5 conceptual cover: `assets/media/four-state-cover.webp`, SHA-256 `d04bbbd14931142cc2b3cbb1377414f053d0b23fcc1825c79a9d84d2e170e12f`。
 - 已登记 Noto 字体源 / registered Noto source: `NotoSansCJKsc-Regular.otf`, SHA-256 `2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b`; 现有记录为 Noto Sans CJK SC Regular、SIL Open Font License 1.1。该 OTF 不随本 sidecar 或媒体目录分发。
