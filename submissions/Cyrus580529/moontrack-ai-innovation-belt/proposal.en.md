@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "MoonTrack: an overall concept proposal whose flagship depth sits in the Xiaoyue River Scenario Enablement Wing. A connectivity measurement over 421 cycleway segments found the Walking and Cycling Network broken into 62 components, with zero of five elderly-care facilities reachable along legally permitted right of way — the flagship scenario cannot run as things stand. Conversely the three shortest gaps total just 56 m, and closing them would grow the main network from 27,560 m to 57,770 m. Phasing therefore begins with verifying the breaks, not with buying robots."
+summary: "MoonTrack: pricing the right-of-way rule as an object. Measured connectivity across 421 cycleway segments finds the network broken into 62 components, with zero of five elderly-care facilities reachable along legal right-of-way. Measuring the same 1,619 doors again gives a median terminal distance of 82.8 m on foot against 249.6 m for a robot - that gap is what the 'cycle lanes only' rule costs. Hence a comparable policy sequence: change the rule first (no construction, 6.5x reachable network), then close 596 m of links, then do the terminals. A 30-task dispatch ledger recomputes it all on the measured graph."
 tracks: ["robotics-autonomous-mobility", "ai-traffic-walkability", "ai-public-services"]
 scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation"]
 ---
@@ -54,6 +54,38 @@ MoonTrack does not replace the official project name, the Centennial Jing-Zhang 
 | Overall Design Area | How industrial space, urban renewal, mobility, utilities and character are drawn | Expressed jointly through the land-use, building, road, green-space, public-space and phasing layers | [data:geometry/land_use.geojson#lu-osm-277989175], [data:geometry/roads.geojson#ROAD-001] |
 | Key-Area Detailed Design Area | How the three districts reach detailed-design depth | Each given a role, spatial action, AI scenario and implementation dependency | [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003] |
 
+### Requirement, answer, evidence, boundary: one table to check against
+
+Every mandatory requirement in announcement sections 1.3/1.4/1.5 and in agent.1-agent.6 of the agent-facing taskbook, mapped to what this proposal answers, the section that carries it, and the evidence file behind it. `compliance_matrix.json` is the machine-readable form of the same content; this is the version for a human reader.
+
+The last column is the line this proposal draws around itself: **what may not be claimed for each requirement until field verification or official data arrives.** It is not a disclaimer. It decides what the narrative is allowed to say - 1.5.2.2 carries no retain-renovate-demolish classification precisely because tenure and construction-date data are unpublished, and writing one would be invention.
+
+| Requirement | What this proposal answers | Section | Evidence | What may not be claimed before verification |
+| --- | --- | --- | --- | --- |
+| `1.3.1` | A five-stage innovation chain from university origination to international communication, with seven resource-guarantee mechanisms tabulated | 三层范围工作框架 | metrics.json, site_boundary.geojson | No company, institution or funding may be claimed as committed |
+| `1.3.2` | Urban form defined by measured right-of-way: a network in 62 components is a form problem, not an equipment problem | 三层范围工作框架 | metrics.json, site_boundary.geojson | No development intensity, building height or road alignment may be claimed as settled |
+| `1.3.3` | The flagship scenario targets Haidian's real structure of 671,000 residents aged 60+, starting at the least well-served end | 三层范围工作框架 | metrics.json, site_boundary.geojson | No talent policy or housing arrangement may be claimed as approved |
+| `1.4.1` | At 43.6 km2: ecosystem and regional synergy; 5 rail stations inside the scope, Qinghe Station 3,256 m out | 三层范围工作框架 | metrics.json, site_boundary.geojson | Coordinated-research findings must not be read as implementable conclusions |
+| `1.4.2` | At 11.4 km2: renewal framework and mobility; 378 measured land parcels, 1,562 measured building footprints | 三层范围工作框架 | metrics.json, site_boundary.geojson | The boundary is provisional and coarse; not a redline or precise-area basis |
+| `1.4.3` | At 368.4 ha: positioning, spatial moves, AI scenarios and implementation dependencies for each of three areas | 三层范围工作框架 | metrics.json, site_boundary.geojson | Key-area boundaries are the organiser's provisional polygons; not for formal scoring or approval |
+| `1.5.1.1` | Five global cases, an AI innovation ecosystem map, and the division of labour across three areas and two wings | 三层范围工作框架 | metrics.json, site_boundary.geojson | Cases are public reporting; local replicability may not be asserted from them |
+| `1.5.1.2` | Future urban form stated as accessibility rather than imagery, so the conclusion is recomputable | 三层范围工作框架 | metrics.json, site_boundary.geojson | Morphology is a conceptual direction, not a regulatory conclusion |
+| `1.5.2.1` | Industrial space lands on the land-use and building layers; ratios recomputed by metrics.json | 三层范围工作框架 | metrics.json, site_boundary.geojson | Programme is advisory; no industrial recruitment may be claimed as settled |
+| `1.5.2.2` | No classification this round; a recomputable screening rule set is delivered instead | 三层范围工作框架 | metrics.json, site_boundary.geojson | No retain-renovate-demolish classification this round; tenure and construction-date data are unpublished |
+| `1.5.2.3` | 141.7 km of cycleway measured across 62 components; utilities state boundaries only | 三层范围工作框架 | metrics.json, site_boundary.geojson | Utility, energy and flood data are unpublished; no facility standard or capacity check this round |
+| `1.5.2.4` | The heritage-park spine and the Xiaoyue River blue-green corridor overlap; east-west stitching and north-south continuity | 三层范围工作框架 | metrics.json, site_boundary.geojson | No facility within the heritage perimeter may be claimed as approved by heritage authorities |
+| `1.5.2.5` | Character returns to the professional standards matrix; direction without control metrics | 三层范围工作框架 | metrics.json, site_boundary.geojson | Character guidance is directional, not a building control metric |
+| `1.5.3.required` | Programme, public-space connectivity and traffic organisation given for each of the three areas | 三层范围工作框架 | metrics.json, site_boundary.geojson | All three areas are conceptual; no regulatory plan may be claimed as amended |
+| `1.5.3.1` | Zhongzhiyuan as embodied-AI sandbox and full-stack self-reliance host | 三层范围工作框架 | metrics.json, site_boundary.geojson | The sandbox's opening scope and siting are unconfirmed |
+| `1.5.3.2` | AI Origin Community as open-source launch and campus-adjacent translation | 三层范围工作框架 | metrics.json, site_boundary.geojson | The launch hall's operator and venue are unconfirmed |
+| `1.5.3.3` | Dazhongsi as AI-native consumption and international roadshow | 三层范围工作框架 | metrics.json, site_boundary.geojson | Commercial programme and public-space share require separate agreement |
+| `agent.1` | The MoonTrack name and mark (its curve taken from the measured Xiaoyue River centreline) plus a regional synergy division of labour | 三层范围工作框架 | metrics.json, site_boundary.geojson | MoonTrack is a concept-level sub-brand, does not replace the official project name, and is not a registered trademark |
+| `agent.2` | An AI innovation ecosystem map plus seven-element mechanisms for land, space, industry, capital, talent, compute, data and scenarios | 统筹研究范围产业与未来城市研究 | metrics.json, public_space.geojson | The ecosystem map is a division-of-labour judgement, not an institutional, funding or policy arrangement |
+| `agent.3` | Ten scenario cards, five personas, a scenario-space-operations matrix, and a 30-task dispatch ledger | AI 创新生态、人才画像与 AI+ 场景 | metrics.json, roads.geojson | All ten cards are test-scope; card 02 does not run under current right-of-way and may not be written as operational |
+| `agent.4` | Three pilgrimage landmarks, an honours display system, and a public-space component library (three component plates) | 蓝绿空间、公共空间与城市风貌 | metrics.json, public_space.geojson | No bridge, tunnel, underground or engineering-feasibility conclusion may be claimed |
+| `agent.5` | A three-part narrative spine, a spatial cultural system, and a wayfinding and symbol direction | 百年京张文化、中关村文化与AI新文化融合叙事 | metrics.json, green_space.geojson | Historical narrative is limited to public record; no uncleared likeness, trademark or image may be used |
+| `agent.6` | An annual event system, developer community, scenario-access operations, and international communication and conversion | 一带全球AI创新活动体系与长期运营设计 | metrics.json, public_space.geojson | Events and operations are proposals, not settled arrangements or government commitments |
+
 ### Regional innovation synergy: the belt is itself a stretch of regional corridor
 
 Regional synergy is the easiest thing in a proposal to reduce to "strengthen collaboration with neighbouring parks." This section measures what can be measured first, then discusses mechanism.
@@ -89,6 +121,22 @@ Completing the ten scenario cards of agent.3 exposed a specific planning-techniq
 **Approach three: vertical organisation of spatial-industrial fusion.** The "upstairs and downstairs is upstream and downstream" arrangement at Shanghai's Zhangjiang AI Island [source:case-zhangjiang-ai-island] shows that an industrial chain on a dense site can stack vertically rather than spread horizontally. This has direct reference value for land-constrained key areas such as Zhongzhiyuan, and points the same way as the integrated-planning requirement to coordinate multiple functions within a single spatial unit.
 
 All of the above are conceptual suggestions at the level of planning method, offered for study by professional teams and the natural-resources authority. They constitute no judgement on the use, indicators or approval status of any parcel. Land-use terminology follows the guidelines cited above; the actual land-use category of any parcel still rests with the official regulatory conditions.
+
+### Two methods this proposal contributes: right-of-way pricing and terminal-first
+
+The three points above are suggestions about land-use classification. This section sets out separately **what this proposal contributes at the level of method**, because neither depends on this particular site: another corridor, or another city, can use both.
+
+**Method one: right-of-way pricing.** A rule is normally treated as background - "robots may only use cycle lanes" is given, and the design happens inside it. This proposal inverts that and **treats the rule as an object that can be priced.** The procedure is to measure the same set of destinations twice under different right-of-way rules; the difference is what the rule costs.
+
+Measured here, the price of "cycle lanes only" is: across 1,619 destinations the median terminal distance rises from 82.8 m to 249.6 m (3.0x), and the 15-minute reachable network falls from 132,098 m to 20,341 m (6.5x). **That is not an abstract compliance cost; it is a number that can be taken into a meeting.** Its use is to put rule change and capital works on one comparison sheet - the policy-lever conclusion that speed does nothing, footway permission is strongest, and new links come second is read directly off that sheet.
+
+That claim needs its scope stated: this proposal searched the **public summaries** of the 950 entries in this open call (`submissions-data.js`) and found three that take right-of-way as their central proposition, with no counterfactual pricing of the rule visible at summary level. The search covers summaries, not full texts, so it shows the proposition is uncommon in this call - it cannot be read as "nobody else has done this".
+
+**Method two: terminal-first.** Network analysis gravitates to the network - connectivity, accessibility, centrality. The measurements here show that when the network and the terminal both bind, **it is the terminal that decides whether service happens, not the network**: 596 m of new link raises network reachability from 2 to 6 while deliveries rise only from 0 to 1, because the median terminal gap does not move.
+
+That yields a transferable sequencing rule: **phase by terminal distance, not by construction difficulty.** This is the reverse of normal practice, which starts with the easy, contiguous items that already have an owner and pushes scattered terminal works to the end. But the terminal is where service actually happens, so leaving it until last means none of the earlier investment produces service. The project list applies this by bringing JZ-07 and JZ-08 to the front.
+
+Neither method needs non-public data: the inputs are a public road network, public POIs and one public regulation, so any team can repeat the exercise on its own corridor. The implementations are `analysis_policy.py` and `analysis_service.py`, with an independent recomputation in `visual/assets/verify-network.js`.
 
 ## Coordinated Research Area: industry and future-city research
 
@@ -283,6 +331,21 @@ The four cards below cover the spatial breadth required by the taskbook. They ar
 | 06 Community elderly AI call post | `geometry/public_space.geojson` | Community with emergency call centre | Call response still handled by human operators |
 
 **Privacy and human-review boundary**: all scenarios observe three rules — no facial or personal movement data is collected; robots do not enter private homes or rooms inside elderly-care facilities; and every call or exception response is finally handled by a human operator or member of staff, with robots and terminals only assisting, reminding and relaying information rather than making automated decisions. Both the intersection coordination testing in card 05 and the riverside delivery in card 01 require remote human supervision throughout the pilot and must not be written up as commercial operation.
+
+**A fourth boundary: with the AI switched off, the service must not stop.** The first three rules govern what the AI does and does not do. This one governs what happens **when it is not there**. Every scenario card must have an equivalent path that depends on no AI component, and that path must already exist today rather than being a contingency plan.
+
+| Scenario card | AI-off equivalent | Already exists today |
+| --- | --- | --- |
+| 01 riverside delivery, 02 elderly meals and medicine, 04 community goods shuttle | A human courier or community volunteer on the same route | Yes - this is the present arrangement |
+| 03 tactile-paving inspection | Municipal maintenance patrols and resident-reported faults | Yes |
+| 05 multi-robot intersection trial | Not applicable: the card is itself a trial; cancelling it returns to the status quo | - |
+| 06 community elderly AI call post | The community duty telephone and home visits | Yes |
+| 07-09 sandbox, launch hall, roadshow salon | Booking by phone, staffed reception and in-person briefing | Yes |
+| 10 heritage-park AI guided walk | Printed guides and human interpretation, with breaks reported by residents | Yes |
+
+**This rule is backed by measurement, not asserted as a principle.** The dispatch ledger carries a separate human-fallback baseline: for the same doors, a person on foot faces a median terminal gap of 82.8 m against the robot's 249.6 m. Under today's right-of-way rules the human path is **physically the shorter one**. Writing this in as a hard boundary has a direct consequence: any card that works only along its AI path should not enter a pilot, because equipment failure, a network outage or the end of the pilot would make the service disappear - and the people who would bear that are exactly the ones who depend on it most.
+
+
 
 The AI governance suggestions in this proposal observe four rules throughout: data minimisation, public sourcing, explainable results, and human review at decisive points. The capability boundary that follows is this — an urban agent may help identify walking and cycling breaks, public-space usage intensity, maintenance needs and event safety risks, but it does not substitute for planning approval, does not output unauthorised personal profiles, and claims no official implementation commitment. Every spatial node behind the ten scenario cards is already in the structured layers and the compliance matrix, so reviewers can check each scenario against industry, space and public interest directly.
 
@@ -686,7 +749,9 @@ The symbolic motif is a geometric translation of the switchback, which together 
 
 Typefaces, graphics and all visual assets must be individually rights-cleared before implementation; this proposal specifies no commercial typeface or copyrighted image.
 
-### International communication narrative
+### Urban character and international communication narrative
+
+**Urban character: what this belt should feel like.** Three phrases - **you can see what is happening, you can ask, you can object.** These are not adjectives; they grow out of the design decisions already made. The observation point's sign must answer what the device is doing, how data is handled and who supervises it. The platform unit opens only to the street, so the handover happens in public view. The dispatch ledger publishes its failures and audit gaps alongside its successes. A corridor's character comes from how much it allows to be seen - **this belt's character should be visible process, not dazzling outcome.** That also sets the register for international communication: describe the work under way and the figures already measured, not the renderings of what will be built.
 
 The core sentence for outward communication is the three-part summary. A suggested English rendering follows, offered as reference for the communication team rather than as final copy:
 
@@ -709,6 +774,8 @@ Event branding uses the Platform X naming grammar, consistent with the overall c
 | **Platform Archive** | Continuous | Continuous updating of contributor and proposal records, online and on site | Honours display system |
 
 High-frequency low-cost events (Developer Night) carry community cohesion; low-frequency high-profile events (the Forum) carry international influence. All four are conceptual suggestions; timing, organisers and funding must be settled separately by the operating body, and this proposal constitutes no event commitment.
+
+**Communication visual system.** Event graphics reuse the identity assets rather than starting a second system: the moon disc and river carry the primary visual, the chevron serves as the secondary motif on event material and site wayfinding, and the palette stays ink / moon-white / river-blue / chevron-red (construction, variants and misuse rules are on the identity sheet). All four event tiers share one layout, changing only the year and theme word. The reasoning matches the component library: **a system that can be updated incrementally outlasts a one-off commission**, and it lets the "Platform X" naming grammar be recognised visually. Typefaces, images and marks used on any event material require item-by-item clearance before implementation.
 
 ### Developer community operating mechanism
 
@@ -738,16 +805,18 @@ The specific policy instruments, incentives and settlement procedures at each st
 
 Project list and phasing depth are governed by [depth:renewal_project_list] and [depth:phasing_implementation], with phasing spatial evidence at [data:geometry/phasing.geojson#phase1-gap-1]. Every item on the list is missing at least one of ownership, funding, delivery body or approval route, so all are registered as implementation risks and none is written as a delivery commitment.
 
-| Project ID | Project | Type | Main dependencies | Evidence |
-| --- | --- | --- | --- | --- |
-| JZ-01 | Stitching walking and cycling breaks in the Jing-Zhang Railway Heritage Park | Public space / mobility | Road redlines, under-bridge space, traffic organisation review | [data:geometry/roads.geojson#ROAD-001] |
-| JZ-02 | Zhongzhiyuan Qinghe innovation frontage | Blue-green space / industrial display | River blue line, ecological and flood-control conditions | [data:geometry/green_space.geojson#GREEN-001] |
-| JZ-03 | AI Origin Community campus-adjacent translation street | Urban renewal / industrial services | Campus boundaries, ownership, ground-floor programme | [data:geometry/buildings.geojson#bldg-osm-109497827] |
-| JZ-04 | Dazhongsi station four-quadrant pedestrian connectivity | Rail integration / walking and cycling | Rail station, road junctions, utility corridors | [data:geometry/public_space.geojson#PUBLIC-001] |
-| JZ-05 | AI public service and edge compute nodes | New infrastructure / public services | Energy, compute, security and operating body | [data:geometry/constraints.geojson#CONSTRAINTS] |
-| JZ-06 | Global AI week public route | Operations / brand | Public-space permits, event safety, rights clearance | [data:geometry/phasing.geojson#phase1-gap-1] |
-| JZ-07 | Field verification and closure of three key network gaps | Mobility / walking and cycling | Verifying whether the breaks are real, road ownership, kerb and clear-width conditions | [data:geometry/roads.geojson#cycleway-22771899] |
-| JZ-08 | Terminal accessible access to elderly-care facilities (1,841 m across four sites) | Walking / accessibility | Field survey of walking routes, kerb gradients, ownership at facility entrances | [data:geometry/public_space.geojson#elderly-poi-00] |
+| Project ID | Project | Type | Suggested lead | Must coordinate with | Main dependencies | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| JZ-07 | Field verification and closure of three key network gaps | Mobility | District transport authority | Local sub-district office, road tenure holders, accessibility specialists | Whether the breaks are real, road tenure, kerb and clear-width conditions | [data:geometry/roads.geojson#cycleway-22771899] |
+| JZ-08 | Accessible terminal links to elderly-care facilities (1,841 m, four sites) | Mobility / accessibility | Local sub-district office | The five facility operators, district disabled persons' federation, transport authority | On-site measurement of walking routes, kerb gradient, entrance tenure | [data:geometry/public_space.geojson#elderly-poi-00] |
+| JZ-01 | Stitching walking and cycling breaks in the heritage park | Public space / mobility | Park management body | District transport authority, heritage authority | Road redline, under-bridge space, traffic organisation review | [data:geometry/roads.geojson#ROAD-001] |
+| JZ-02 | Zhongzhiyuan Qinghe innovation interface | Blue-green / industry display | Park operator | Water authority, district landscaping department | River blue line, ecological and flood conditions | [data:geometry/green_space.geojson#GREEN-001] |
+| JZ-03 | Campus-adjacent translation street in the AI Origin Community | Renewal / industrial services | Local sub-district office | University asset managers, ground-floor tenure holders | Campus boundaries, tenure, ground-floor programme | [data:geometry/buildings.geojson#bldg-osm-109497827] |
+| JZ-04 | Four-quadrant pedestrian links at Dazhongsi station | Transit integration / mobility | District transport authority | Rail operator, utility tenure holders | Station, intersections, utilities | [data:geometry/public_space.geojson#PUBLIC-001] |
+| JZ-05 | AI public services and edge-compute nodes | Infrastructure / public services | Undetermined - this proposal cannot assign one | Energy, compute, data-security and public-service operators | Energy, compute, security and operating entity | [data:geometry/constraints.geojson#CONSTRAINTS] |
+| JZ-06 | Global AI Week public route | Operations / brand | Belt operating body | Public-space managers, event safety and rights-clearance parties | Public-space permits, event safety, rights clearance | [data:geometry/phasing.geojson#phase1-gap-1] |
+
+**On the "suggested lead" column.** It is this proposal's suggestion, not an existing authorisation or agreement, and no cell constitutes a commission of the named body. The reason for listing it at all is that the first thing that stalls implementation is rarely money - it is that **nobody owns the item**. JZ-05 reads "undetermined" rather than naming a department at random: an edge-compute node touches energy, compute, data security and public services at once, and this proposal is not in a position to judge who should lead. Filling that cell would mislead rather than help. The list is ordered by suggested sequence, with JZ-07 and JZ-08 brought to the front for the reasons below.
 
 JZ-07 is the smallest item on the list and the first. Measurement shows that 56 m of connection across three points could grow the usable low-speed robot network from 27.56 km to 57.77 km (see "Measured cycleway network connectivity"), a ratio of input to return that no other item on the list approaches. But it must begin with field verification: whether the three breaks are mapping artefacts, whether railings or grade changes intervene, and whether kerb gradient and clear width permit passage can only be judged on site. It proceeds to implementation only if verification confirms the breaks and conditions allow, and is struck from the list otherwise. Almost all of its cost is verification, not construction. The service-level solution set out under "from diagnosis to remedy" splits it into two executions: **the first 47 m, two links returning 186 and 108 metres of network per metre built, proceed unconditionally**; the remaining links and the terminal works each need their own case.
 
