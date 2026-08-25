@@ -480,7 +480,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 | 案例4 OPEA | https://opea.dev/ | 公开项目 | 公开来源，待独立交叉核验 |
 | 案例5 IETF·Agentic AI |
 | 多智能体城市/城市智能体 | GENERATIVE-AGENTS-2023 | 学术论文（Smallville 25 智能体社区），学术依据 | 已核实（arXiv:2304.03442）|
-| 东西向流量 | NOKIA-MBIT-INDEX | 移动流量指数报告，数据依据 | 出处待补充 |
+| 东西向流量 | NOKIA-MBIT-INDEX | Nokia 全球网络流量报告，数据依据 | 已核实（nokia.com/asset/213660）|
 | 为 Agent 造 X | MIT-BUILD-X-FOR-AGENT | MIT Media Lab 研究线索，学术依据 | 出处待补充 |
 | 800V 直流母线 | E800V-DC-DISTRIBUTION | 直流配电技术文献，技术依据 | 出处待补充 |
 | 绿色城区/蓝绿系统 | GREEN-DISTRICT-DESIGN | 奥兰多 Green District 智慧城市案例（飞行出租车+EV+绿色设计），空间设计参考 | 已核实（interestingengineering.com）|
