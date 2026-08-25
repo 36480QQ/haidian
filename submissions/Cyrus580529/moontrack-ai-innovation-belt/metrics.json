@@ -20,14 +20,16 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 310807.184,
+      "value": 1918254.342,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(polygon_area(building_footprints))",
+      "formula": "area(unary_union(BUILDING_FOOTPRINT polygons)) in EPSG:4548",
       "confidence": "medium",
-      "assumptions": []
+      "assumptions": [
+        "A-BLD-001: footprints are OSM-derived; completeness is not guaranteed."
+      ]
     },
     "green_ratio": {
       "status": "known",
@@ -309,6 +311,159 @@
       "assumptions": [
         "A-NET-004: depot-dependent.",
         "The binding constraint is network fragmentation, not the speed limit; a connected network would raise this figure substantially at the same 15 km/h."
+      ]
+    },
+    "building_count_design_scope": {
+      "status": "known",
+      "value": 1562,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(BUILDING_FOOTPRINT features fully contained in SITE_BOUNDARY)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-BLD-001: footprints are OSM-derived; completeness is not guaranteed.",
+        "A-BLD-002: footprints crossing the provisional boundary are excluded, so the count is a lower bound."
+      ]
+    },
+    "building_coverage_ratio": {
+      "status": "known",
+      "value": 0.168076,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "building_footprint_area_sqm / site_area_sqm",
+      "confidence": "medium",
+      "assumptions": [
+        "A-BLD-001: footprints are OSM-derived; completeness is not guaranteed.",
+        "A-GEO-001: site area rests on a provisional boundary."
+      ]
+    },
+    "buildings_with_levels_attribute_share": {
+      "status": "known",
+      "value": 0.096,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(features with osm_levels) / building_count_design_scope",
+      "confidence": "high",
+      "assumptions": [
+        "A-BLD-003: this is a measure of data availability, not of the built stock."
+      ]
+    },
+    "key_area_building_coverage_zhongzhiyuan": {
+      "status": "known",
+      "value": 0.1089,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/buildings.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "area(building_union ∩ PROV-KEY-001) / area(PROV-KEY-001)",
+      "confidence": "low",
+      "assumptions": [
+        "A-BLD-001: footprints are OSM-derived; completeness is not guaranteed.",
+        "A-GEO-002: key-area polygons are provisional, so the denominator is provisional."
+      ]
+    },
+    "education_land_area_sqm": {
+      "status": "known",
+      "value": 2321816.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area of LAND_USE features with land_use_code 0804)",
+      "confidence": "low",
+      "assumptions": [
+        "A-LU-001: land use is mapped from OSM tags, not from cadastral records."
+      ]
+    },
+    "education_land_share": {
+      "status": "known",
+      "value": 0.20344,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "education_land_area_sqm / site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "A-LU-001: land use is mapped from OSM tags, not from cadastral records."
+      ]
+    },
+    "land_use_osm_mapped_share": {
+      "status": "known",
+      "value": 0.536,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area of LAND_USE features with source_type=osm) / site_area_sqm",
+      "confidence": "high",
+      "assumptions": [
+        "A-LU-002: the remainder carries no OSM land-use tag and is recorded as code 16 reserved land rather than inferred."
+      ]
+    },
+    "blank_reserve_land_sqm": {
+      "status": "known",
+      "value": 5838043.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum(area of LAND_USE features with land_use_code 16)",
+      "confidence": "low",
+      "assumptions": [
+        "A-LU-002: the remainder carries no OSM land-use tag and is recorded as code 16 reserved land rather than inferred.",
+        "A-LU-003: code 16 here means 'undetermined on present evidence', not a planning decision to reserve land."
+      ]
+    },
+    "cycleway_in_design_scope_share": {
+      "status": "known",
+      "value": 0.18,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "length(ROAD_CENTERLINE ∩ SITE_BOUNDARY) / cycleway_total_length_m",
+      "confidence": "medium",
+      "assumptions": [
+        "A-NET-005: network connectivity is a property of the whole network; the analysis therefore extends beyond the design scope by necessity."
+      ]
+    },
+    "cycleway_components_within_scope_only": {
+      "status": "known",
+      "value": 28,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "count(connected_components) after clipping ROAD_CENTERLINE to SITE_BOUNDARY, same 8 m snapping",
+      "confidence": "medium",
+      "assumptions": [
+        "A-NET-005: network connectivity is a property of the whole network; the analysis therefore extends beyond the design scope by necessity.",
+        "A-NET-006: clipping to a boundary creates boundary-induced breaks; this figure is reported to show the diagnosis survives the clip, not as the operative number."
+      ]
+    },
+    "phase1_gap_verification_area_sqm": {
+      "status": "known",
+      "value": 211716.9,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson"
+      ],
+      "formula": "sum(area of PHASE features with phase=phase_1)",
+      "confidence": "low",
+      "assumptions": [
+        "A-PH-001: the 150 m radius is a survey working area, not an engineering redline."
       ]
     }
   }

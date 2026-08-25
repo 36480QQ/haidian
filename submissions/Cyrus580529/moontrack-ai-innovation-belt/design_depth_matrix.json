@@ -208,10 +208,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 本项仅达到方法层:用地分类术语依据自然资源部指南,并提出'场景使用权叠加而非新划用地'的规划方法建议;**具体用地布局方案待官方控规条件发布后方可编制**,当前 land_use.geojson 为脚手架示意图层,不构成用地方案。",
-      "completeness_limited_by": [
-        "official control-plan (控规) conditions not published"
-      ]
+      "evidence_summary_zh": "本轮由方法层升级为现状实测层。用地图层已从4块虚构示意地块换为378个真实要素，覆盖设计范围100%、地块无重叠：53.6%有OSM现状用地依据，其余46.4%无可查标注，如实记为16留白用地而非推测。实测结论包括教育用地232.2万m²占20.34%（走廊内最大的已识别用地类别）、低效标注地块33块54.2万m²、其中40.3%落在三处重点区域之外。⚠️ **法定用地布局方案仍待官方控规条件与地籍资料，本层是现状描述，不是用地规划。**"
     },
     {
       "item_id": "development_intensity_controls",
@@ -262,7 +259,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 本项仅达到方法层:容积率、建筑密度等强度指标缺少官方控规条件,按要求列为 pending_control,**本方案未提出任何强度数值**,避免以推测值冒充审定指标。",
+      "evidence_summary_zh": "⚠️ 本项仍不提出任何强度数值，但本轮把'为什么不提'从声明变成了实测：范围内1,562栋建筑中层数标签覆盖率9.6%、高度标签不足1%、建成年代与产权为零，因此任何容积率或高度推算都不成立。metrics.json 中 floor_area_ratio 保持 unknown。可实测的部分已给出：建筑基底191.8万m²、建筑密度16.81%、三处重点区域密度分别为10.89%/20.83%/18.22%。",
       "completeness_limited_by": [
         "official control-plan FAR/density conditions not published"
       ]
@@ -318,7 +315,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 风貌与视觉方向有实质内容(水系-轨道叠印、人字展线母题、导视三原则);**建筑高度与体量控制无官方条件,未提出具体数值**。",
+      "evidence_summary_zh": "⚠️ 风貌与视觉方向有实质内容（水系-轨道叠印、人字展线母题、导视三原则）；**建筑高度与体量控制无官方条件，未提出具体数值**，理由已由建筑高度标签覆盖率不足1%的实测支撑，不再只是原则性回避。",
       "completeness_limited_by": [
         "official height and massing control conditions not published"
       ]
@@ -373,7 +370,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 本项仅达到方法层:提出遗产建筑做生产性再利用的原则(参照Station F、国王十字),清华园车站按'忠于现状'原则不做本体改造;**缺少现状建筑、权属与控规条件,未提出任何具体地块的拆改留结论**。",
+      "evidence_summary_zh": "⚠️ **仍未提出任何具体地块的拆改留结论**，但本轮明确了缺口性质并交付了可复算的替代物。对1,562栋建筑逐项核查数据可得性：基底轮廓100%、名称29.6%、层数9.6%、高度不足1%、年代与产权为零，四项判断依据缺三项。本方案据此指出拆改留等的是现场建筑调查、用地强度等的是官方控规条件，两者不该被同一句'待条件确认'打包；并交付三条只依赖本包图层的前置筛查规则，输出为现场调查任务单而非拆改留清单。",
       "completeness_limited_by": [
         "existing-building survey and ownership data not published",
         "official control-plan conditions not published"
@@ -482,7 +479,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "⚠️ 本项仅达到方法层:提出端侧与分布式算力节点与公共服务设施复合利用的方向;**管线、能源、排水、防洪、消防等工程资料缺失,规模与布局待正式条件确认**。",
+      "evidence_summary_zh": "⚠️ 工程资料仍全部缺失，规模与布局未提出。本轮把该项从指导语改写为边界交代：明确不做设施标准与服务半径校核，只保留三条在无工程资料下仍成立的判断——算力与适老服务点复合利用既有设施、constraints.geojson 为本包最薄图层须整体替换、JZ-04与JZ-05标注为依赖未决。",
       "completeness_limited_by": [
         "municipal engineering data (pipelines, energy, drainage, flood control, fire protection) not published"
       ]
@@ -593,7 +590,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "三处重点区按'策源—转化—验证—服务'四段生态各自定位并说明分工;⚠️ **详细设计深度受限于 provisional 边界与缺失的控规条件**,建筑、地块与工程内容未展开。"
+      "evidence_summary_zh": "三处重点区按'策源—转化—验证—服务'四段生态定位，本轮补入实测密度差作为定位依据：众智园10.89%、原点社区20.83%、大钟寺18.22%，要扩容的众智园恰是现状最空的一处。并逐处说明实施依赖差异（清河蓝线／校区权属／轨道市政）。⚠️ **建筑、地块与工程内容仍未展开**，受限于临时边界与缺失的控规条件。"
     },
     {
       "item_id": "renewal_project_list",
@@ -646,7 +643,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "更新项目清单 JZ-01至JZ-06 为方法层分类示例;JZ-07(慢行网三处关键缺口现场核验与连接)为本方案基于网络连通性实测新增的自有内容,并排在清单首位——56 米缺口打通可使可用主网从 27.56 公里扩到 57.77 公里,投入产出比在清单中最高。⚠️ **仍缺少基于正式权属与现状调查的完整更新项目清单**,进入实施前需现场核验。",
+      "evidence_summary_zh": "更新项目清单 JZ-01至JZ-07；JZ-07（慢行网三处关键缺口现场核验与连接）为基于网络连通性实测的自有内容，排在首位——56米缺口打通可使可用主网从27.56公里扩到57.77公里。本轮新增两项实测支撑：三处缺口的实际坐标已导出并落成一期分期范围；低效用地识别发现最大一块（明光村棚户区改造16.1万m²）不在任何重点区域内，已列为清单观察项。",
       "completeness_limited_by": [
         "parcel ownership and cadastral survey data not published"
       ]
@@ -702,7 +699,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "分期以场景开放三阶段(试点—扩展—常态)组织,参照Kampong AI先试点后建成节奏,进入条件以可核查安全指标为准而非时间表;⚠️ **工程建设分期缺少权属、资金与审批路径,未提出**。"
+      "evidence_summary_zh": "本轮由叙述层升级为图层层。phasing.geojson 从1个虚构'一期可讨论范围'换为7个由真实几何派生的要素：一期为三处实测缺口中点150m核验范围合计21.2万m²，二期直接引用key_areas临时几何，三期为河道缓冲300m与设计范围求交。三期中只有一期不依赖官方控规、市政与权属条件即可启动。⚠️ **工程建设分期仍缺权属、资金与审批路径。**"
     },
     {
       "item_id": "metrics_recalculation",
@@ -754,7 +751,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "metrics.json 已按实测填入 23 项指标,22 项 known(含 8-12 网络分析实测:62 个连通分量、最大分量占全网 14.9%、五家适老机构法定路权可达数为 0、最短三处空隙合计 56 米等)、1 项(容积率 floor_area_ratio)因官方控规条件未发布列为 unknown 并写明原因;全部 23 项指标均在正文被引用,脚本核验未引用 0 项、引用不存在 0 项。"
+      "evidence_summary_zh": "metrics.json 共34项、33项 known。本轮新增12项实测指标并订正1项：building_footprint_area_sqm 原取自一栋虚构的310,807m²示意建筑，现由1,562栋真实基底并集复算为1,918,254m²。新增指标覆盖建筑密度、重点区域密度对比、教育用地占比、留白用地、慢行网范围内外分布与一期核验面积，全部可由本包几何复算，且逐项在正文被引用。"
     },
     {
       "item_id": "risk_missing_data",

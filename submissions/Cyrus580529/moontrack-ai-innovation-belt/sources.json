@@ -301,6 +301,32 @@
       "citation": "自然资源部关于印发《国土空间调查、规划、用途管制用地用海分类指南》的通知,2023-11-22;复用仓库中央登记表同一 source_id",
       "usage_note": "用于 agent.1 国土空间规划创新思路一节的用地分类术语依据,以及结构化 GeoJSON 与指标中的用地代码参照。",
       "risk_note": "中央登记表限定用途:仅可用于用地分类术语与代码参照,**不得用于具体地块的用途审批判断,也不得替代官方控规条件**;本方案关于'场景使用权叠加'的讨论为规划方法建议,不是对该指南的解释或适用结论。"
+    },
+    {
+      "id": "osm-buildings-footprints",
+      "title": "总体设计范围内建筑基底轮廓(OpenStreetMap)",
+      "type": "map",
+      "path": "geometry/buildings.geojson",
+      "url": "https://overpass-api.de/",
+      "publisher": "OpenStreetMap contributors",
+      "published_at": "accessed 2026-08-24",
+      "public_status": "confirmed-public",
+      "citation": "OpenStreetMap contributors, ways and relations tagged building=*, Overpass 'out geom' query over the provisional overall design area bounding box, 2026-08-24, ODbL 1.0",
+      "usage_note": "用于复算现状建筑基底面积、建筑密度与三处重点区域的密度对比。仅收完整落在临时设计范围内的要素共1,562栋,跨界要素不收,因此结果为下限。",
+      "risk_note": "OSM 众包数据,完整性无保证,新建与已拆除建筑可能缺失或过时。层数标签覆盖率仅9.6%、高度标签不足1%、建成年代与产权为零,因此不能用于推算建筑面积、容积率、建筑高度,也不能用于拆改留判断——本方案据此明确不给出这几类结论。"
+    },
+    {
+      "id": "osm-landuse-polygons",
+      "title": "总体设计范围内现状用地与设施多边形(OpenStreetMap)",
+      "type": "map",
+      "path": "geometry/land_use.geojson",
+      "url": "https://overpass-api.de/",
+      "publisher": "OpenStreetMap contributors",
+      "published_at": "accessed 2026-08-24",
+      "public_status": "confirmed-public",
+      "citation": "OpenStreetMap contributors, ways and relations tagged landuse=*, amenity=university/college/school/kindergarten/hospital/clinic and leisure=park/garden/pitch/stadium/sports_centre, Overpass 'out geom' query, 2026-08-24, ODbL 1.0",
+      "usage_note": "映射到 brief/site-package/enums/land_use_codes.json 的项目代码子集后,用于描述现状用地构成,支撑'教育用地占设计范围20.34%'与低效地块识别两项结论。覆盖设计范围的53.6%。",
+      "risk_note": "OSM 标签不是地籍资料,类别与边界均为志愿者标注,confidence 标为 low。未被标注的46.4%如实记为16留白用地,不从周边推测。项目代码子集缺工业用地类目,走廊内实测存在的工业用地只能暂记留白。任何情况下不得作为法定用地依据或面积基准。"
     }
   ]
 }

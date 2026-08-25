@@ -72,6 +72,60 @@
       "status": "measured_and_disclosed",
       "statement": "Robot reachability to elderly-care facilities was computed from a single candidate depot: the node inside the largest connected component lying closest to the watercourse, 22 m from the river. Measured from that depot, network-reachable facilities number 0 of 5.",
       "impact": "The result is depot-dependent. A different depot inside another component would produce a different reachable set, though no component contains more than one facility with under 100 m of terminal access. The 0-of-5 finding is used to establish that the flagship scenario has an unmet precondition, not to rank candidate depot sites."
+    },
+    {
+      "id": "A-BLD-001",
+      "status": "measured_and_disclosed",
+      "statement": "Building footprints come from OpenStreetMap, not from a municipal building register. Coverage in this corridor is uneven and newly built or demolished structures may be missing or stale.",
+      "impact": "All building-derived figures (footprint area, coverage ratio, key-area density) are lower bounds of unknown tightness. They support relative comparison between key areas, which is what the proposal uses them for, and must be recomputed against official survey data before any regulatory use."
+    },
+    {
+      "id": "A-BLD-002",
+      "status": "measured_and_disclosed",
+      "statement": "Footprints that cross the provisional site boundary are excluded rather than clipped, because clipping a building produces a shape that is not a building.",
+      "impact": "The building count and footprint area are therefore slightly understated along the corridor edge. Clipping would have produced a marginally larger area at the cost of geometric meaning; the exclusion is the more conservative choice."
+    },
+    {
+      "id": "A-BLD-003",
+      "status": "measured_and_disclosed",
+      "statement": "Only 9.6 per cent of footprints in scope carry a storey count and almost none carry a height. This is a statement about data availability, not about the built stock.",
+      "impact": "No floor-area, plot-ratio or height conclusion can be derived from this layer. The proposal therefore leaves floor_area_ratio unknown and gives no height figures, and says so with this measurement rather than as a generic caveat."
+    },
+    {
+      "id": "A-LU-001",
+      "status": "measured_and_disclosed",
+      "statement": "Land use is mapped from OSM landuse/amenity/leisure tags onto the project code subset in brief/site-package/enums/land_use_codes.json. It is an observation of present conditions, not a statutory land-use plan.",
+      "impact": "Category areas are indicative and rest on volunteer tagging. They are used to describe the corridor's present composition, never as a zoning proposal or an area basis for control indicators."
+    },
+    {
+      "id": "A-LU-002",
+      "status": "measured_and_disclosed",
+      "statement": "46.4 per cent of the design scope carries no OSM land-use tag. That remainder is recorded as code 16 reserved land rather than being inferred from surrounding parcels.",
+      "impact": "The layer satisfies the full-coverage requirement without fabricating uses. Readers should treat code 16 areas as 'not established on present evidence'; official cadastral data will replace them wholesale."
+    },
+    {
+      "id": "A-LU-003",
+      "status": "measured_and_disclosed",
+      "statement": "Code 16 is used here in two distinct senses: parcels OSM tags as brownfield, greenfield, construction, military, farmyard, industrial or railway, for which the project code subset has no matching category; and the untagged remainder.",
+      "impact": "Neither sense is a proposal to reserve land. The project code table is an acknowledged subset and lacks an industrial category altogether, which is itself a finding reported in the land-use section."
+    },
+    {
+      "id": "A-NET-005",
+      "status": "measured_and_disclosed",
+      "statement": "Only 18 per cent of the analysed cycleway length lies inside the provisional design scope. Connectivity is a property of a whole network and cannot be assessed on a clipped fragment without inventing boundary breaks.",
+      "impact": "The network analysis necessarily extends into the coordinated research area. The three highest-leverage gaps lie 409 to 1,178 m outside the provisional design boundary, so gap closure is a coordinated-research-scope action, not a design-scope one. Since the boundary is itself provisional, this placement may change when official geometry is issued."
+    },
+    {
+      "id": "A-NET-006",
+      "status": "measured_and_disclosed",
+      "statement": "Clipping the network to the design scope and re-running the analysis yields 24.68 km in 28 components with the largest holding 15.4 per cent of nodes.",
+      "impact": "This is reported to show that the fragmentation diagnosis survives the clip rather than being an artefact of looking too widely. The clipped figures are not used as the operative numbers, because boundary-induced breaks are not real breaks."
+    },
+    {
+      "id": "A-PH-001",
+      "status": "measured_and_disclosed",
+      "statement": "Phase 1 polygons are 150 m radius circles centred on the midpoint of each measured gap. The radius is a survey working area, chosen to be legible at drawing scale.",
+      "impact": "It is not an engineering redline, a works boundary or a land requirement. If site verification shows a gap is an OSM artefact, the corresponding phase 1 item is struck from the programme rather than redrawn."
     }
   ]
 }
