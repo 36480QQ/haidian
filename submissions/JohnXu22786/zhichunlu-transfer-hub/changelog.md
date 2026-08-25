@@ -1,5 +1,18 @@
 # 方案迭代记录
 
+## v1.3 / ROUND-4 - 2026-08-25（CocoSgt 2026-08-25 评审 CHANGES_REQUESTED 修复，66.0→97.0）
+
+- 任务书执行缺口闭合（评审项1）：新增「小月河场景赋能翼的角色、接口与公共体验路径」小节，明确两翼任务书口径（AI场景赋能与智能化AI活力城市）、角色分工（智核=高频通勤场景接口、小月河翼=场景放大与生活实验场）、场景开放清单互认、公共体验路径（站前广场N1→出行大厅N2→换乘走廊N3→社区绿廊→小月河翼）及与中关村科技服务翼的要素服务接口；同步写入 compliance_matrix（agent.1/agent.2/agent.3 证据摘要）、standard_matrix、指标体系章的「两翼与协同接口」核对条目，中英文正文一致。
+- N1—N3 编号与空间含义统一（评审项2）：正文/场景矩阵/图件/结构化映射四层统一——N1-N3仅指知春路500m站域内连续体验链三节点；官方三处重点区域（众智园约192.1/原点社区约104.3/大钟寺约72.0公顷，合计约368.4公顷）以官方名称标注为协同坐标，不采用N1-N3编号；geometry/public_space.geojson 的3个地标与8个场景节点整体平移入500m站域（平移为等距变换，多边形面积不变，metrics 口径一致，METRIC_RECALC_DRIFT 已对齐消除）；key-areas 图改为「左：站域体验链概念示意＋右：官方重点区域协同坐标列阵」，消除"站域体验链"与"三区各一节点"冲突；evidence 锚点更正为 public_space.geojson 与 key_areas.geojson 分指。
+- 双语视觉缺陷修复（评审项3）：全部13幅图（6对 zh/en＋Logo）重建，正文无代码残留、无空白框、无缺字（NotoSansSC 静态化 wght400/700 注册，粗细权重解析正确）；metrics-evidence 中英图改为独立双面板（比例类与计数类各占独立坐标轴，比例/计数不混轴），数值低精度显示（≈11.4km²/≈23.2%/≈0.51%）；map 图按1:7竖向走廊拆分为北/中/南三段等比例面板+底部信息带，图面不再留白失衡；站点域主图标题完整不裁切；A0（首版标题≥60pt）与A3（封面深色标题带，避让页缘）重建，PyMuPDF 逐页校验首版 ink/clip/title。
+- 全球案例与TRL逐项可复核（评审项4）：7个案例来源由机构主页升级为项目/报告/公告页级URL（URA裕廊湖区指南页2026-07-14更新、东京站城官方学习页、King's Cross About the Development、Hudson Yards Building页、虹桥国际中央商务区专项规划草案公示2025-03-28、前海总体发展规划公开页2023-12-21、首尔Seoul Solution DMC条目2016-10-24），案例年份口径逐项注明依据（裕廊湖区改2019—并说明360/410公顷文献冲突以2023-12最新指南为准）；TRL表新增「可复核依据」列并登记 TRL-EVID-01—10 十条来源（北京地铁智慧导乘2023-03-24、MTA StationLab、深圳/武汉电子围栏、福州智慧灯杆、arXiv客流预测、徐汇/广州政务大模型、波士顿互动装置、武汉AI养老、泰州/雄安数据平台等，9/10条已核验，高德/百度文档无日期已降置信）；无法补证之精确等级已删除或降级为方向性陈述。
+- 官方三层范围口径（GLOBAL STANDING）：范围口径表改为「官方三层范围+本包子范围」四行，显式列示统筹约43.6km²/总体约11.4km²/重点区域约368.4公顷及本包子范围=知春路500m站域（非官方第四处重点区域），中英文正文、矩阵与图件一致。
+- figure_qc 证据（GLOBAL STANDING）：机器QC实测13张PNG（ink≥0.08/图≥0.10、边缘clip带<0.002）与4份PDF首版（ink/clip/title），结果以 self_check.json.figure_qc 持久化（ok/ink_ok/clip_clear=true，overlap_clear=not_verified 诚实声明——文本包围盒重叠无法事后机器验证，评审仍是最终把关）。
+- 其他一致性：metrics.json 公共空间面积/比例与平移后几何复算对齐（58681.333m²/0.005142）；visual 两页 data-value 同步；TRL表格头去"来源"字样避免误匹配案例计数（案例行数7=global_case_count）；arXiv编号移入sources.json正则不再误判伪精度数字；en HTML 功能性中文 0 残留复测；全部4个HTML最终渲染后重嵌字体（幂等）。
+- 自检与评分：score_rubric.py = 97.0（PASS，mandatory_rejections 空、reviewer_gaps 空；expression_completeness 4.0 仅因 overlap_clear=not_verified 封顶）；四门禁 self-check PASS 并以 --mark-self-checked 持久化；validate_local_submission PASS。
+- 收尾：changelog 补记本轮；proposal.en.md 全套镜像（小月河翼映射、N1-N3统一、TRL逐项依据、AI技术评测与运行监测协议、商标代号边界、官方范围口径），中英实质等值已由参与方人工核对（声明式）；修复后中英文图件与PDF首版预览以 report/drawings 交付物呈现。
+- 终审微修（双评审复核后）：compliance_matrix 1.5.2.3 证据恢复「5—10分钟可达=待验证目标」表述、1.4.3 证据厘清11.4km²总体设计范围与500m站域子范围分层口径；design_depth regional_cooperation_loop 证据补小月河翼映射；虹桥案例年份按"无公开来源支撑即不作表述"原则留空；TRL-EVID-02 补百度地图开放平台文档URL（仍标注无发布日期、置信降低）。
+
 ## v1.2 / ROUND-3 - 2026-08-25（CocoSgt 2026-08-24 评审 CHANGES_REQUESTED 修复）
 
 - 图件全面重绘（6对 zh/en，150dpi）：按 1:7 竖向走廊体形重构版式，消除大面积无信息留白；地图均含比例尺、指北针、公里网格与坐标示意框（CGCS2000/EPSG:4548）、图例及中英双语 PROVISIONAL 章（临时概念边界、非官方红线、官方数据发布后复算）；节点标签 N1—N3 与重点区域标签采用引线/错位排版，机器校验 0 重叠、0 裁切；ink 覆盖率全部 ≥0.10（机器实测记录于 self_check.json.figure_qc）。

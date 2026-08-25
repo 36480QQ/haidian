@@ -336,7 +336,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "总体设计以知春路站为锚的500米半径站域（概念口径），以控规深度方法校核用地配比、强度梯度与地下连通。"
+   "evidence_summary_zh": "总体设计范围（约11.4km²，provisional）以知春路站为锚开展控规深度方法研究；500米站域为本包重点区域子范围（N1-N3体验链），与11.4km²总体设计范围分层表述、口径不混用。"
   },
   {
    "requirement_id": "1.5.1.1",
@@ -613,7 +613,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "轨道为核心、慢行为先：放射状慢行接驳网络5-10分钟全覆盖，公交港湾、共享单车电子围栏与P+R引导。"
+   "evidence_summary_zh": "轨道为核心、慢行为先：放射状慢行接驳网络支撑「5—10分钟可达」目标（待验证目标——官方路网与客流数据发布前不赋数值，发布后按公开方法复算），公交港湾、共享单车电子围栏与P+R引导（概念建议）。"
   },
   {
    "requirement_id": "1.5.2.4",
@@ -949,7 +949,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "合规矩阵覆盖公告、任务书与法规参照（轨道标准、无障碍法、完整居住社区标准）；标准矩阵与设计深度矩阵见对应 JSON。"
+   "evidence_summary_zh": "合规矩阵覆盖公告、任务书与法规参照（轨道标准、无障碍法、完整居住社区标准），并设「两翼与协同接口」核对条目（小月河场景赋能翼公共体验路径、中关村科技服务翼要素服务接口与场景开放清单互认）；标准矩阵与设计深度矩阵见对应 JSON。"
   },
   {
    "requirement_id": "agent.1",
@@ -1012,7 +1012,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "一带总体概念：知春路智核（英文主名 Zhichun Road Smart-Core，命名体系与原创Logo）；三层范围口径表澄清约11.4km²总体设计范围与500米重点区域关系；三区两翼协同回路+五类区域创新节点关系图（region-loop.png）。"
+   "evidence_summary_zh": "一带总体概念：知春路智核（英文主名 Zhichun Road Smart-Core，命名体系与原创Logo）；三层范围口径表按官方文本口径列示统筹研究约43.6km²、总体设计约11.4km²、重点区域约368.4公顷（众智园约192.1/原点社区约104.3/大钟寺约72.0公顷），并定位本包子范围=知春路500米站域（N1-N3体验链，非官方第四处重点区域）；三区两翼协同回路含小月河场景赋能翼的角色/场景接口/公共体验路径及与中关村科技服务翼的接口映射（region-loop.png）。"
   },
   {
    "requirement_id": "agent.2",
@@ -1075,7 +1075,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "五类人才画像表+残障人士旅程与共创验证；7行有来源全球案例表（URA/JR东日本/国王十字/Hudson Yards/虹桥/前海/首尔DMC）；AI创新生态三圈层图谱；众智园/AI原点社区/中关村科技服务翼机制；土地/空间/产业/资金/人才/算力/数据/场景八要素矩阵（责任主体/准入条件/机制）。"
+   "evidence_summary_zh": "五类人才画像表+残障人士旅程与共创验证；7行有来源全球案例表（URA/JR东日本/国王十字/Hudson Yards/虹桥/前海/首尔DMC，逐案例项目页级来源见sources.json）；AI创新生态三圈层图谱；众智园/AI原点社区/中关村科技服务翼支撑机制与小月河场景赋能翼接口（场景开放清单互认+测试验证协议互认）；土地/空间/产业/资金/人才/算力/数据/场景八要素矩阵（责任主体/准入条件/机制）。"
   },
   {
    "requirement_id": "agent.3",
@@ -1138,7 +1138,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "10张完整场景卡（落位空间/运营主体建议/数据边界/人工复核/离线替代/KPI/退出条件）；场景—空间—运营矩阵；TRL估计表（10项）；3项产业测试验证协议（测试条件/指标/准入/退出机制）。"
+   "evidence_summary_zh": "10张完整场景卡（落位空间/运营主体建议/数据边界/人工复核/离线替代/KPI/退出条件）；场景—空间—运营矩阵；TRL估计表（10项，逐项登记公开可复核依据TRL-EVID-01—10，无法补证者不做分级）；AI技术评测与运行监测协议（模型评测/数据质量/误差分群/运行监测四项）；3项产业测试验证协议（测试条件/指标/准入/退出机制）。"
   },
   {
    "requirement_id": "agent.4",
@@ -1201,7 +1201,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "三节点N1-N3索引图（500米半径重点区域，含比例尺/指北针/图例/PROVISIONAL章）；京张遗址公园公共空间分段策略；东西缝合（三条横向缝合联系）与南北贯通（慢行主轴）；大钟寺业态建议；三地标目录（对应landmark_count=3）；荣誉展示体系与模块化组件库（概念）。"
+   "evidence_summary_zh": "N1-N3站域体验链索引图（知春路500米站域内连续三节点，含比例尺/指北针/图例/PROVISIONAL章；官方三处重点区域以官方名称标注为协同坐标，不采用N1-N3编号）；京张遗址公园公共空间分段策略；东西缝合（三条横向缝合联系）与南北贯通（慢行主轴）；大钟寺业态建议；三地标目录（对应landmark_count=3）；荣誉展示体系与模块化组件库（概念）。"
   },
   {
    "requirement_id": "agent.5",
