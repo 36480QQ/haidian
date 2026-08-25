@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI GPT-5 family via Codex; human-directed research, fact checking, urban-design synthesis and artifact generation"
   },
-  "generated_at": "2026-08-11T00:21:00Z",
+  "generated_at": "2026-08-24T14:14:42Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "810a53ff1cc022b9ad8384983c0b82670ff60bf1209283e373fd4d32b0b29d92"
+      "sha256": "f6fcc87cfa850e00648cc8b7e56e767b397a299acf3fc4e78c4e497033d5edfd"
     },
     {
       "path": "agent.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "45881e0de07bc0e7fe0c0ff77a3a04c4fd609c8917b1dbcea88a97bd51193879"
+      "sha256": "595680e4df2caaa57b53282e78cf9c2e85f9c08f8e7e32982a61c6fdd13ffe22"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3408a9f28202f861235ef545067173285da51dfd1b7e27b7473329847b4ca493"
+      "sha256": "f41f22c8e3029b4dc5b5c09476a7f3e791e7deeecce4f6f041294dae9ac3406e"
     },
     {
       "path": "standard_matrix.json",
@@ -81,26 +81,26 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4c1b9830956e8b91a17a3086f66a103af161ffdc274b3a45a870a1008a70560a"
+      "sha256": "99fc0bfc04cf441cc3d1bd92195aed71aa656ffce40206625ed000ca15e803ba"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "676ac18fb1f7e0abb46bc1ce62b4c45c557644cae4b47f4dfbd397b257141129"
+      "sha256": "328fca4b00dec3586de419885293bd3f79a3cd78efd5552240ca7495fb387e12"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "9332b81c8d62ccca5eb217c381075bd45fadf4e954f213eabf83c5477e6754c3"
+      "sha256": "2c17916405f183fd261f941757c408161308e21cd079d3fb67b88ed8bcb638ba"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f36bba3eb03cc0d3cf44ec7119decc48f60900212f2746ca3807db1d2d05551a"
+      "sha256": "f77d788fed374837accfb7a8764171724e3b73e5471de66b4f518e7b5d7e1a83"
     },
     {
       "path": "drawings/a0-boards.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "e9a016ad48394665db9a319b5fa0660424887afda40c7992a2fc584e1e25e695"
+      "sha256": "153797e44ef549d5a898780d7948db35b2a10a38212ea5e70e4bfb2547709a3d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f97a1f158f40defcf3ef0c6e4a35a5b3a6ec980b27b1a603cbf7805dba97b267"
+      "sha256": "fe5331e28f0d2c9551d233268601c7c87449ad643f040a4052b1423012af3c9b"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1bc973d46f0851b87d6f49311ffbc9cea7301b44b53f8740e8c6578fc5b823d6"
+      "sha256": "71b536daca728a99d27497dea30b3e6f39173a3d5f9815df0c2156b4a5c93bb9"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "0cee772bfbf1e11490a282b688b8404ddf88227327384cd968d9e74b39652b0d"
+      "sha256": "a0abb051baf1922b99dcb053257f650291bb1c346e199ed4b7cb0a8c674809e1"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "11d05823e5cacf5012bc295debcf872d73c818bed17abc3cb154f14443158210"
+      "sha256": "36d40a5a60643f4ab5d4bf77d61d84935ed6f352766359b872284f81ed9b6497"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "71417c2e9d101e10c70829a41429431a83d7e9bba0e207d6b448bcdba1f1f74a"
+      "sha256": "4f8421772871434595f5ea68a383978ae03cf371174dd05a77d38e868aeb1882"
     },
     {
       "path": "assets/figures/key-areas.en.png",

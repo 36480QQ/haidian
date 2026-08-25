@@ -14,7 +14,9 @@
 
 ## 字体与工具链
 
-- 屏幕图使用本机 Microsoft YaHei / Arial；PDF 使用本机 SimHei / Arial。字体仅嵌入生成的展示文件，不在投稿包中再分发字体文件。
+- 屏幕图使用本机 Microsoft YaHei / Arial；PDF 使用本机 SimHei / Arial。上述系统字体仅嵌入生成的图像或 PDF，不在投稿包中再分发字体文件。
+- 为修复离线评审环境的中文缺字，中文 `visual/index.html` 与 `report/proposal.html` 各自嵌入只覆盖本包所用字符的 Noto Sans SC 回退子集。它由系统安装的 Noto Sans SC Variable Font 机械子集化而来，原始版权标记为 `© 2014-2021 Adobe`，字体名表保留 SIL Open Font License 1.1 声明及许可链接 `http://scripts.sil.org/OFL`；子集不作为本方案原创字体主张。
+- 回退子集以 HTML 内联 data URL 存在，不作为独立投稿文件，也不请求远程字体、脚本、接口或跟踪器。正文始终使用该离线子集保证可读；标题在有华文宋体/宋体的系统中保留原设计字体，否则回退到同一子集。
 - 图件使用 Pillow 生成；PDF 使用 ReportLab 生成；PDF 复核使用 pypdf/pdfplumber 与 Poppler 渲染工具。投稿包不再分发这些依赖。
 - `report/proposal.html` 由仓库 `scripts/render_proposal_html.py` 生成；`manifest.json` 与哈希由 `scripts/finalize_submission.py` 更新。
 
@@ -24,4 +26,4 @@ AI 参与不替代作者对事实、版权、空间主张和提交权限的责�
 
 ## English summary
 
-The participant-directed package was researched and generated with OpenAI GPT-5 family via Codex. The identity, JZ-PATCH protocol, five core figures, offline HTML and PDF layouts are original to this submission. External sources enter only as text citations and URLs; no external basemap, photograph, portrait or company mark is embedded. System fonts are embedded in outputs but not redistributed. AI assistance does not transfer responsibility for facts, rights, spatial claims or submission authority.
+The participant-directed package was researched and generated with OpenAI GPT-5 family via Codex. The identity, JZ-PATCH protocol, five core figures, offline HTML and PDF layouts are original to this submission. External sources enter only as text citations and URLs; no external basemap, photograph, portrait or company mark is embedded. System fonts are embedded in outputs but not redistributed. A package-local Noto Sans SC glyph subset is included solely as an offline CJK fallback under SIL Open Font License 1.1; its embedded name table retains the upstream copyright and licence notice. AI assistance does not transfer responsibility for facts, rights, spatial claims or submission authority.
