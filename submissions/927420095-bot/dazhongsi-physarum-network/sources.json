@@ -70,9 +70,11 @@
     {
       "id": "COST-UNIT-BEIJING-001",
       "source_type": "official_public",
-      "usage": "Beijing municipal road-engineering unit-price reference basis: 《北京市建设工程计价依据——预算消耗量标准（市政工程）》第二册道路工程 (Beijing Municipal Housing & Urban-Rural Development Commission, issued 2021-09); monthly 工程指导价 (project guidance prices) published by the Beijing construction-cost authority. Used only as the reference basis for the concept estimate's 公开综合单价 unit prices.",
-      "note": "Standard quota basis is official; however the specific unit prices (8000/5000/3000/1500 元/m) are public Beijing reference levels (公开综合单价, 非定额), 2026 Q2 price level, concept estimate ±30%, NOT tender results or priced bills of quantities. A clean official download URL was not located (only third-party mirrors); official release is via the Beijing Municipal Housing & Urban-Rural Development Commission (zjw.beijing.gov.cn).",
-      "known_limitations": "Standard quota, not actual tender result; no clean official URL located."
+      "url": "https://zjw.beijing.gov.cn/bjjs/gcjs/zczjxx/jjyjxt/de/index.shtml",
+      "accessed_date": "2026-08-25",
+      "usage": "《北京市建设工程计价依据——预算消耗量标准（市政工程）》第二册道路工程 (北京市住建委, 京建发〔2021〕201号, issued 2021-09, effective 2022-01-01). Official 计价依据 (pricing basis) for municipal road engineering. This is a CONSUMPTION standard (人工/材料/机械消耗量) — it defines consumption quantities only and contains NO unit prices (无人材机基价与费用标准). Cited only as the methodological pricing basis.",
+      "note": "The four unit prices (8000/5000/3000/1500 元/m) used in COST-ESTIMATE-PLAN03 are NOT from this standard (which has no prices). They are the AUTHOR'S CONCEPTUAL ASSUMPTIONS based on public Beijing composite price reference levels (公开综合单价/《北京工程造价信息》信息价), 2026 Q2 price level, ±30% sensitivity interval — not tender results, not priced bills of quantities.",
+      "known_limitations": "Consumption standard with no unit prices; the unit prices cited are author conceptual assumptions, not verifiable official unit-price schedules."
     },
     {
       "id": "CASE-QUAYSIDE",
