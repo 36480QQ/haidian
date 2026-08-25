@@ -68,8 +68,17 @@
       "note": "Skeleton length 8813.0 m from the real Physarum+NSGA-II run (see PHYSARUM-RUN-RESULTS); unit prices are public Beijing municipal reference levels (公开综合单价, 非定额), 2026 Q2 price level, concept estimate ±30%, pre-allowance 10%. Not a priced bill of quantities or tender/budget figure. Source: output/phase4/plan_03_fusion_round2/10_cost_estimate.md."
     },
     {
+      "id": "COST-UNIT-BEIJING-001",
+      "source_type": "official_public",
+      "usage": "Beijing municipal road-engineering unit-price reference basis: 《北京市建设工程计价依据——预算消耗量标准（市政工程）》第二册道路工程 (Beijing Municipal Housing & Urban-Rural Development Commission, issued 2021-09); monthly 工程指导价 (project guidance prices) published by the Beijing construction-cost authority. Used only as the reference basis for the concept estimate's 公开综合单价 unit prices.",
+      "note": "Standard quota basis is official; however the specific unit prices (8000/5000/3000/1500 元/m) are public Beijing reference levels (公开综合单价, 非定额), 2026 Q2 price level, concept estimate ±30%, NOT tender results or priced bills of quantities. A clean official download URL was not located (only third-party mirrors); official release is via the Beijing Municipal Housing & Urban-Rural Development Commission (zjw.beijing.gov.cn).",
+      "known_limitations": "Standard quota, not actual tender result; no clean official URL located."
+    },
+    {
       "id": "CASE-QUAYSIDE",
       "source_type": "official_public",
+      "url": "https://www.waterfrontoronto.ca/",
+      "accessed_date": "2026-08-25",
       "usage": "Sidewalk Labs Quayside (Toronto). Public-reporting reference for data-governance commitment mechanisms (sensor network, adaptive building, data trust; launched 2017, cancelled 2020). Used for method comparison only, not replicated.",
       "note": "Public reporting / official project material; quantitative indicators to be verified against official sources (待核实).",
       "location": "Toronto, Canada",
@@ -78,6 +87,8 @@
     {
       "id": "CASE-MASDAR",
       "source_type": "official_public",
+      "url": "https://masdarcity.ae/",
+      "accessed_date": "2026-08-25",
       "usage": "Masdar City (Abu Dhabi). Public-reporting reference for low-carbon block and new feeder mobility (passive cooling, early PRT pilot). Used for method comparison only.",
       "note": "Public reporting / official project material; some zero-carbon targets were later adjusted; indicators to be verified (待核实).",
       "location": "Abu Dhabi, UAE",
@@ -86,6 +97,8 @@
     {
       "id": "CASE-SONGDO",
       "source_type": "official_public",
+      "url": "https://www.ifez.go.kr/",
+      "accessed_date": "2026-08-25",
       "usage": "Songdo International Business District (Incheon). Public-reporting reference for new-infrastructure and urban-sensing integration (U-City, central pneumatic waste collection). Used for method comparison only.",
       "note": "Public reporting / official project material; indicators to be verified (待核实).",
       "location": "Incheon, South Korea",
@@ -94,6 +107,8 @@
     {
       "id": "CASE-AMSTERDAM",
       "source_type": "official_public",
+      "url": "https://amsterdamsmartcity.com/",
+      "accessed_date": "2026-08-25",
       "usage": "Amsterdam Smart City (Netherlands). Public-reporting reference for incremental renewal and multi-party governance (living-lab pilots on energy/water/mobility). Used for method comparison only.",
       "note": "Public reporting / official project material; indicators to be verified (待核实).",
       "location": "Amsterdam, Netherlands",
@@ -102,6 +117,8 @@
     {
       "id": "CASE-XIONGAN",
       "source_type": "official_public",
+      "url": "http://www.xiongan.gov.cn/",
+      "accessed_date": "2026-08-25",
       "usage": "Xiong'an New Area (Hebei). Public-reporting reference for CIM digital twin, blue-green network, underground utility tunnels, and green mobility. Used for method comparison only; this proposal is renewal, not a new town.",
       "note": "Public reporting / official project material; indicators to be verified (待核实).",
       "location": "Hebei, China",
@@ -119,6 +136,8 @@
     {
       "id": "CASE-SHIBUYA",
       "source_type": "official_public",
+      "url": "https://www.toshiseibi.metro.tokyo.lg.jp/",
+      "accessed_date": "2026-08-25",
       "usage": "Shibuya Station area redevelopment (Tokyo, 2012–): rail-station integration and four-quadrant walking network. Referenced in the case comparison table for TOD integration and four-quadrant connectivity; method reference only.",
       "note": "Official project / public reporting; quantitative indicators to be verified against official sources (待核实).",
       "location": "Tokyo, Japan",
@@ -127,6 +146,8 @@
     {
       "id": "CASE-SUPERILLES",
       "source_type": "official_public",
+      "url": "https://ajuntament.barcelona.cat/superilles/en",
+      "accessed_date": "2026-08-25",
       "usage": "Barcelona Superilles / superblocks (2016–): street pedestrianization, speed limits, street-as-public-space. Referenced for street pedestrianization; method reference only.",
       "note": "Official project / public reporting; quantitative indicators to be verified (待核实).",
       "location": "Barcelona, Spain",
@@ -135,6 +156,8 @@
     {
       "id": "CASE-COPENHAGEN",
       "source_type": "official_public",
+      "url": "https://urbandevelopmentcph.kk.dk/mobility-cycling/copenhagen-the-best-cycling-city-in-the-world",
+      "accessed_date": "2026-08-25",
       "usage": "Copenhagen bicycle-priority network and dedicated bridges (2006–). Referenced for slow-mobility priority and dedicated facilities; method reference only.",
       "note": "Official project / public reporting; quantitative indicators to be verified (待核实).",
       "location": "Copenhagen, Denmark",
@@ -143,6 +166,8 @@
     {
       "id": "CASE-PUNGGOL",
       "source_type": "official_public",
+      "url": "https://www.ura.gov.sg/news/articles/punggol-digital-district/",
+      "accessed_date": "2026-08-25",
       "usage": "Punggol Digital District (Singapore, 2018–): district-wide digital twin and open digital platform. Referenced for the digital foundation of industry-university-research integration; method reference only.",
       "note": "Official project / public reporting; quantitative indicators to be verified (待核实).",
       "location": "Singapore",
@@ -151,6 +176,8 @@
     {
       "id": "CASE-CHEONGGYECHEON",
       "source_type": "official_public",
+      "url": "https://english.seoul.go.kr/20-year-milestone-of-the-cheonggyecheon-stream-sets-the-stage-for-water-seoul-2025-international-conference/",
+      "accessed_date": "2026-08-25",
       "usage": "Cheonggyecheon restoration (Seoul, 2003–2005): elevated-highway removal and stream restoration into blue-green public space. Referenced for blue-green restoration and elevated-highway removal; method reference only.",
       "note": "Official project / public reporting; quantitative indicators to be verified (待核实).",
       "location": "Seoul, South Korea",

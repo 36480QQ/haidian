@@ -1,5 +1,30 @@
 # 方案迭代记录
 
+## v0.7 - 2026-08-25
+
+R25-5 最终评审冲刺：原创性 4→5（真实参数转译）、风险合规 4→5（来源审计补全）、表达完整度 4→5（无回归验证）。目标 85+。
+
+### 原创性（参数转译说明）
+- proposal.md / proposal.en.md 新增「从算法验证到空间设计：参数转译说明」章节：8 行表格逐项列明场外 Physarum+NSGA-II 仿真参数（真实运行）→ 场内概念设计决策的转译规则，两类数值不混用。
+- 8 维度真实值（全部取自 simulation.json / metrics.json 冻结值）：18 关键终端（骨架覆盖 17/18）、class_I=1.5 / class_IV=3.0 硬阻断、top-10% 传导度 167 边、四级网络（主静脉—支脉—慢行环—绿廊）、抗毁强、8813.1 m、19.20（基线 1.143 / Run7 2.802）、0 硬穿越（f3≡f2）。
+- metrics.json 扩展已有 `physarum_translation.dimension_table`（8 行，未新增顶层字段）。
+- 三段关键声明：场外参数为方法验证证据（provisional 场地西侧 2–3 km）；场内为人工校准概念设计；正式数据发布后须重跑仿真链并产出「旧值—新值—变化原因」对照表。
+
+### 风险合规（来源审计）
+- sources.json 10 个全球标杆案例全部补 `url` + `accessed_date`（官方源：Waterfront Toronto / masdarcity.ae / IFEZ / amsterdamsmartcity.com / 中国雄安官网 / 東京都都市整備局 / barcelona.cat / kk.dk / URA / seoul.go.kr）。
+- 新增 `COST-UNIT-BEIJING-001`：北京市政道路计价依据《北京市建设工程计价依据——预算消耗量标准（市政工程）》第二册道路工程（北京市住建委 2021-09）+ 月度工程指导价；诚实标注单价为公开综合单价参考级 ±30%、非中标结果、无干净官方下载 URL（仅第三方镜像）。
+- proposal.md / proposal.en.md 成本章节引用 [source:COST-UNIT-BEIJING-001]。
+
+### 表达完整度（无回归验证）
+- C1 EN 空间图尺寸一致（3280×1840）；C2 中文字体子集覆盖未改动（保持 R25-3 已验证 0 缺口）；C3 A0 PDF 存在（08-25 12:51 最新）。本轮为文本/JSON 改动，未触碰图件、HTML 或字体子集，故无表达回归。
+
+### 硬天花板（保持）
+- AI-off 服务等价差 [metric:ai_off_service_equivalence_gap] 保持 unknown，待 G3 有限现场窗口首读数（中英 L333 一致）。
+
+### 诚实边界
+- 未编造任何数字（所有数值取自 simulation.json / metrics.json 真实冻结值）；模板示例「400m 服务半径」「29 节点」等在数据中不存在，未采用。
+- 案例 URL 均真实（抽查 Masdar / IFEZ 可访问；Barcelona 返回 403 为机器人拦截、非死链）；成本定额无官方 URL，已标 known_limitations。
+
 ## v0.6 - 2026-08-25
 
 R25-4 补遗：治理 RACI 上浮至正文 + 三张英文图折行 + A0 首页重排之后，本轮做两处收尾——G3 问责单 A 化（RACI 结构修正）+ 双语实质等价核对记录。
