@@ -2,6 +2,12 @@
 
 Jing-Zhang Breathing Commons / Changelog
 
+## v0.17 - 2026-08-25
+
+- 根据 PR #3910 的确定性 CI 反馈，将新提交的 manifest 从兼容线 `schema_version=0.1.0` 迁移到当前前向契约 `0.2.0`。
+- 将 `visual/assets/review-evidence.json` 的自定义角色 `review_evidence` 映射为规范角色 `evidence_data`，保持文件内容与公共价值验收语义不变。
+- 本次不改变正文、图纸、geometry、空间指标或精度声明；迁移后重新刷新全部声明哈希并运行四道自检与 push preflight。
+
 ## v0.16 - 2026-08-20
 
 - 修正封面与双语 A3/A0 的状态用语：将可能被误解为“已完成人工评审”的 `HUMAN-REVIEWED` / `人工复核` 改为 `HUMAN REVIEW REQUIRED` / `需人工复核`，并在封面深色信息区内分行排布，避免超出背景导致低对比度。
@@ -59,4 +65,4 @@ Jing-Zhang Breathing Commons / Changelog
 
 ---
 
-v0.16 corrects the cover and drawing status from a potentially completed-review claim to "human review required," verifies every bilingual PNG against the new integrity gate, and retains the proposal's distinct pauseable public-value contract without inventing field targets. Geometry and all provisional/statutory limitations remain unchanged.
+v0.17 adopts manifest schema 0.2.0 and maps the review-evidence JSON to the canonical `evidence_data` role. The proposal, drawings, geometry, metrics, and provisional/statutory limitations remain unchanged.
