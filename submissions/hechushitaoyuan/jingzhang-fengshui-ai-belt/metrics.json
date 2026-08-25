@@ -255,6 +255,96 @@
         "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
       ]
     },
+    "phase_1_green_ratio": {
+      "status": "known",
+      "value": 0.269,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(area(intersection(green_space_i, PHASE-001))) / polygon_area(PHASE-001) @EPSG:4548; provisional geometry",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方绿地分类或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
+    "phase_1_public_space_ratio": {
+      "status": "known",
+      "value": 0.190,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(area(intersection(public_space_i, PHASE-001))) / polygon_area(PHASE-001) @EPSG:4548; provisional geometry",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方公共空间边界或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
+    "phase_2_green_ratio": {
+      "status": "known",
+      "value": 0.300,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(area(intersection(green_space_i, PHASE-002))) / polygon_area(PHASE-002) @EPSG:4548; provisional geometry",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方绿地分类或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
+    "phase_2_public_space_ratio": {
+      "status": "known",
+      "value": 0.210,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(area(intersection(public_space_i, PHASE-002))) / polygon_area(PHASE-002) @EPSG:4548; provisional geometry",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方公共空间边界或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
+    "phase_3_green_ratio": {
+      "status": "known",
+      "value": 0.322,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(area(intersection(green_space_i, PHASE-003))) / polygon_area(PHASE-003) @EPSG:4548; provisional geometry",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方绿地分类或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
+    "phase_3_public_space_ratio": {
+      "status": "known",
+      "value": 0.226,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(area(intersection(public_space_i, PHASE-003))) / polygon_area(PHASE-003) @EPSG:4548; provisional geometry",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方公共空间边界或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
     "land_use_area_0802_research_sqm": {
       "status": "known",
       "value": 1505919.239,
@@ -467,7 +557,7 @@
     },
     "persona_count": {
       "status": "known",
-      "value": 6,
+      "value": 7,
       "unit": "count",
       "source_files": [
         "proposal.md",

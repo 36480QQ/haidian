@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "05bd6bb9c0247c29a37487cbb20fd3719f7c8be2b49083c020bc11d2f4a206fb"
+      "sha256": "235bba5ceaf360456a7d1c628ba52fc43b730e54859e97dfe24ba7c949516b10"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "74b6c23ebbaae31c9b1d0eb110f4b1e108e63b1a05dc65286b8ff4135ecf9e07"
+      "sha256": "5f9d621af063463490fe2a7d57fdabc575269f20539a04682acb1a8e6006b9e8"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3364fc9ddaf3650f659888a5cc67613251e6b1ae29924e75ee2f9b055aafad70"
+      "sha256": "22254d4c50bc0c31cce68a4dd36d8be20ae161abab4b5ce92ec17d975d99efae"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b6e4a089bb709610e18cddaff1cf136ca8ddbf76da593b563fd33c732c1a1a75"
+      "sha256": "3f34eabcba25ada93ec55c642cda915bf6ba0bf1dd6939f2b9a80bb2a46d658a"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "21e60e89551683b48cf20f549d91ffc40c5faba87328bdac67369780da7c0e22"
+      "sha256": "a481fb3294b58a408a023d531411c6242c115b7aa7fb1b44946bfc79a05e3b97"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "1f976bca2d4426b8a8cdf9e6bb2651e2f2cf640a557cbe7a76073c6dcdfc0cc4"
+      "sha256": "ebc5f84323aa0e001db8a35560e952a9e9d7da4b560fb8c1bcd7a212282848fb"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "eed094f66741ed10cf03c9881b23fa989cf026c56039ec3ab6de6b9566b8a9f3"
+      "sha256": "abc4365c620b93207a4741b002b27262d88c5ecc82e80ee945d7483cd591cd1a"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "ebd391e17302e3c88a57ab4e04b667f33dade71884ffee1f05a1fdfa2539207c"
+      "sha256": "7b162db3649bd945f2532d982bcbcea0bf595d33f6c21aea9a73342da1650541"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "fe2415295fb51a7c78f49096ab68bac2a867458a2e761ee6ab2683dbceccad29",
+      "sha256": "043d3344e87198a5f0c245386ea5e7b3520120a361f51cef2f52030ee702dce8",
       "language": "neutral"
     },
     {
@@ -521,7 +521,7 @@
       "path": "visual/assets/fonts.css",
       "role": "asset",
       "required": false,
-      "sha256": "dd112dfae020509b44d161779aaf8fe900071ed3d837def711068f0227dbef0e",
+      "sha256": "65dfa175adf649b987941f62279f1295d918f055ca5016e035c8f346098feabf",
       "title_zh": "嵌入式 Noto Sans SC 子集样式（评审渲染用）",
       "title_en": "Embedded Noto Sans SC subset stylesheet for reviewer-side rendering",
       "description_zh": "按 SIL OFL 1.1 分发（许可全文见文件头注释）；base64 嵌入字符子集，供无 CJK 字体环境离线正确渲染中文。",
