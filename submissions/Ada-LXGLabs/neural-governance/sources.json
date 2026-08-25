@@ -42,6 +42,30 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "PALANTIR-ONTOLOGY",
+      "path": "https://www.palantir.com/platforms/ontology/",
+      "source_type": "official_public",
+      "usage": "Public platform concept referenced for analogical argument ('ontology of governance'); not an engineering fact asserted by this proposal."
+    },
+    {
+      "id": "HARARI-NEXUS",
+      "path": "Harari, Y. N. (2024). Nexus: A Brief History of Information Networks.",
+      "source_type": "official_public",
+      "usage": "Public book referenced for analogical argument (goodness constraint / information networks); not a technical basis."
+    },
+    {
+      "id": "CONNECTOME-CONCEPT",
+      "path": "Public neuroscience concept (connectome).",
+      "source_type": "official_public",
+      "usage": "Public scientific concept referenced for the 'connection as relation' analogy; not an engineering claim."
+    },
+    {
+      "id": "ENGINEERING-PARAMS-UNVERIFIED",
+      "path": "Author-proposed parameters from public material (to be verified).",
+      "source_type": "agent_generated_design",
+      "usage": "800V DC bus, liquid cooling, compute-power-electricity coordination, and east-west-traffic deterministic latency are author-proposed concepts to be verified; NOT reviewable engineering conclusions. Must be reviewed by planning/municipal/energy/fire-safety professionals before deepening."
     }
   ]
 }

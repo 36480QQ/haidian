@@ -424,6 +424,34 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 - Naming: 源脉 Source Vein (Zhongzhiyuan·innovation), 人脉 People Vein (Origin Community·talent/open source), 数脉 Data Vein (Dazhongsi·data factors).
 - Tone: governing connections as the narrative spine, emphasizing recomputable / refutable / participatory, aiming at global AI-governance discourse without mystifying technology.
 
+### Three Industry Test-Verification Scenarios (agent.3)
+
+**Scenario 1: SparkLink short-range connection verification** (Zhongzhiyuan safety sandbox)
+- Object: deterministic latency, precision synchronization, and anti-interference of SparkLink SLB/SLE short-range connections
+- Data fields: test logs (device ID, latency, packet loss, sync accuracy); no personal data collected
+- Human review: anomaly intervention and re-test
+- Operator (suggested): SparkLink Alliance test group
+- Maturity: conceptual (pending pilot confirmation)
+- Acceptance metric: latency pass rate, sync accuracy, anti-interference bit-error rate
+
+**Scenario 2: AI-governance decision recomputability verification** (verification wall)
+- Object: recomputability of governance decisions (geometry → recompute → compare → disclose)
+- Data fields: decision records + recomputation results (de-identified)
+- Human review: pre-disclosure review
+- Operator (suggested): park operator
+- Maturity: conceptual
+- Acceptance metric: recomputation consistency rate, disclosure coverage
+
+**Scenario 3: edge-computing coordination verification** (compute-power-electricity coordination, concept to verify)
+- Object: compute-power-electricity coordination of edge-computing nodes (DC bus + liquid cooling, both concepts to verify)
+- Data fields: energy consumption, compute scheduling logs; no personal data collected
+- Human review: over-limit approval
+- Operator (suggested): compute service provider
+- Maturity: to be verified (engineering parameters not yet reviewed)
+- Acceptance metric: power usage effectiveness (PUE)
+
+**Scenario-level privacy and accessibility supplementary fields** (covering all 10 cards): data retention period (shortest necessary, deleted on expiry), complaint channel (staffed window + suggestion box + online appeal), child-consent process (under-14 requires guardian consent), accessibility acceptance (wheelchair reach, voice guide, large print, staffed assistance). These fields require a scenario-level privacy-impact and accessibility assessment before any scenario enters field testing, with operator and human-review responsibility confirmed.
+
 ## Deepening and Translation Path: From Conceptual Proposal to Implementation
 
 This proposal honestly distinguishes "AI-generated conceptual output" from "content requiring professional deepening," providing a clear translation path for downstream teams:
