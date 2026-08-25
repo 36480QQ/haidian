@@ -460,6 +460,47 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
     <p>这不是造型选择，是 <span class="mono">L = H / i</span> 算出来的。折为并排两段各 62 米，端头一处折返平台，单侧占地 66×9 米。<b>不做塔、不做拱、不做门架</b>，结构全在桥面以下——在环路视野里是一条安静的横线。</p>
   </div>
 </section>
+<style>
+#ovx .b3d{min-height:100vh;display:grid;grid-template-rows:auto 1fr auto;background:var(--ov-card);
+  padding:clamp(60px,9vh,104px) clamp(24px,5vw,86px) clamp(30px,5vh,54px);gap:clamp(18px,3vh,32px)}
+#ovx .b3d .kick{font-size:11px;letter-spacing:.24em;font-weight:700;color:var(--ov-copper)}
+#ovx .b3d h2{margin:10px 0 0;font-size:clamp(25px,3.2vw,42px);font-weight:800;letter-spacing:-.025em;line-height:1.22;text-wrap:balance}
+#ovx .b3d h2+p{margin:12px 0 0;font-size:15px;line-height:1.8;color:var(--ov-dim);max-width:46em}
+#ovx .b3d .stage{position:relative;border:1px solid var(--ov-hair);background:#EDEAE1;min-height:360px;overflow:hidden}
+#ovx .b3d .stage canvas{display:block}
+#ovx .b3d .hint3d{position:absolute;right:12px;bottom:10px;font-size:11px;letter-spacing:.12em;color:#7A7F76;
+  background:rgba(237,234,225,.82);padding:4px 10px;border:1px solid var(--ov-hair)}
+#ovx .b3d .dims3{display:flex;flex-wrap:wrap;gap:0 30px;font-size:12px;color:var(--ov-dim)}
+#ovx .b3d .dims3 b{color:var(--ov-copper);font-weight:800;font-size:16px;margin-right:5px}
+#ovx .b3d .lic{font-size:11px;color:var(--ov-dim)}
+</style>
+<section class="b3d" data-nav="三维">
+  <div>
+    <div class="kick mono">三维场景 · 本地离线 Three.js</div>
+    <h2>把这座桥转起来看：为什么「人」字在坡道上</h2>
+    <p>拖拽旋转、滚轮缩放。桥面是一条平直的横线、之上只有栏板；「人」字要从空中俯视两端并排折返的坡道才能读出来。几何按断面 ZZY-1/ZZY-2 的设计目标值搭建，属概念示意、未经坐标配准。</p>
+  </div>
+  <div class="stage" id="b3d-stage"><div class="hint3d mono">拖拽旋转 · 滚轮缩放</div></div>
+  <div>
+    <div class="dims3 mono"><span><b>6.0</b>m 抬升</span><span><b>9</b>m 桥面净宽</span><span><b>1.4</b>m 栏板</span><span><b>62</b>m×2 并排坡道</span><span><b>66×9</b>m 单侧占地</span></div>
+    <p class="lic">Three.js r160（MIT 许可）随包离线提供于 assets/three.min.js，无任何网络请求。</p>
+  </div>
+</section>
+<script>
+(function(){
+  var st=document.getElementById('b3d-stage'); if(!st) return;
+  var loaded=false;
+  function boot(){
+    if(loaded) return; loaded=true;
+    var s1=document.createElement('script'); s1.src='assets/three.min.js';
+    s1.onload=function(){ var s2=document.createElement('script'); s2.src='assets/bridge3d.js';
+      s2.onload=function(){ window.initBridge3D && window.initBridge3D(st); }; document.body.appendChild(s2); };
+    document.body.appendChild(s1);
+  }
+  new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) boot(); }); },{rootMargin:'400px'}).observe(st);
+})();
+</script>
+
 
 <!-- D · AI 场景三图组 -->
 <section class="trio" data-nav="AI 场景">
@@ -588,7 +629,7 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
  <div>
   <div class="eyebrow">百年京张 AI 创新带城市设计国际方案征集 · 概念方案汇报</div>
   <h1 class="serif">一条铁路，<br>问了两次<em>同样的问题</em></h1>
-  <div class="hlead">1909年，詹天佑用京张铁路回答了一个百年之问：中国人能不能自己修铁路。今天，同一条铁路腾出的约9公里遗址公园旁，海淀2000余家AI企业正在回答一个新问题：中国能不能自己做AI。本方案把京张遗址公园做成一份摊开在大地上的百年答卷——每一款海淀自主备案的大模型，就在步道边缘钉下一颗铜道钉；带内企业完成备案或IPO，到大钟寺旁新铸的应答钟敲一响；每年3月25日，清华园车站只办公益性纪念开放日。市民不是来看展板的，他们蹲下来数道钉：中国自主创新，钉到第几颗了。</div>
+  <div class="hlead">1909年，詹天佑用京张铁路回答了一个百年之问：中国人能不能自己修铁路。今天，同一条铁路腾出的约9公里遗址公园旁，海淀2000余家AI企业正在回答一个新问题：中国能不能自己做AI。本方案把京张遗址公园做成一份摊开在大地上的百年答卷——每一款海淀自主备案的大模型，就在步道边缘钉下一颗阴刻模型名称、备案单位、备案编号、备案时间的铜道钉，逐颗可对国家公告核验；带内企业完成备案或IPO，到大钟寺旁新铸的应答钟敲一响；每年3月25日，清华园车站只办公益性纪念开放日。应答的主语不是城市也不是算法，是可核对的物证和年年具名认领它的人。市民不是来看展板的，他们蹲下来数道钉：中国自主创新，钉到第几颗了。</div>
   <div class="hnote">全部空间与开发内容均为概念建议、参考方案，供专业团队深化研究，不构成政府审定结论；本方案不提出容积率、建筑高度、道路红线、拆改留分类等任何结论性判断。</div>
  </div>
  <div><div class="hsum"><div class="hh">这条带将来是什么样</div><div class="hl">一条 9 公里应答长卷主脊，南问—中答—北跃三段，东西 46 座应答门向近 70 个社区打开（出入口数以实际建成为准）。</div><ol><li><b>南问 · 鸣钟之门</b><span>大钟寺段</span><p>把被高架挤掉的出站流线从辅路边挪进桥下通廊，落到一方无台阶的钟声广场；带内企业完成备案或首次公开发行，到这里敲一响。</p></li><li><b>中答 · 应答原点</b><span>清华园车站段</span><p>站前只做纪念性的素广场与零公里桩（待文物部门协商的概念选点），校园围墙改成透而不破的界面——把一道封闭边界变成可走的公共界面。</p></li><li><b>北跃 · 人字之跃</b><span>众智园段</span><p>一座只跨环路、不跨清河的慢行桥，两端落在环路两侧绿地里，把被快速路切断的南北慢行接上清河蓝绿。</p></li></ol><div class="hf">往下读：总体结构 → 三处重点区域 → 四项机制 → AI 场景 → 交通蓝绿用地 → 分期与运营 → 图纸；指标、矩阵、来源、假设、自检与核验工具在页尾附录。</div></div></div>
@@ -798,7 +839,7 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
 <h3 class="sub3"><span class="ix">D·2</span>四门自检</h3>
 <div class="gates"><div class="gate"><div class="gn">确定性校验<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">deterministic_validation · returncode 0</div><pre>错误 0
 警告 24
-总字节 37,207,284
+总字节 37,219,444
 · submissions/wanghao198822/jingzhang-century-answer/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied
 · submissions/wanghao198822/jingzhang-century-answer/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context</pre></div><div class="gate"><div class="gn">空间审查<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">spatial_review · returncode 0</div><pre>阶段 formal
 问题 3 (minor:3)
@@ -815,7 +856,7 @@ known_metric_refs_required = 77
 proposal_format_version = 2
 evidence_contract = section-anchors-plus-structured-audit
 proposal_reference_counts = source:23, standard:8, depth:15, data:25, metric:5</pre></div></div>
-<div class="note">self_check.json 记录：stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>总字节口径：上表为自检写入时点的记录值。self_check.json 自身计入总字节，而工具先写入尚未附四门结果的中间文件再测量，故独立重跑会比表中大 695 字节（37,207,979）——差值即 self_check.json 附上四门结果后的增量，属工具固有的两阶段写入，不影响任何一门的结论。</div>
+<div class="note">self_check.json 记录：stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>总字节口径：上表为自检写入时点的记录值。self_check.json 自身计入总字节，而工具先写入尚未附四门结果的中间文件再测量，故独立重跑会比表中大 715 字节（37,220,159）——差值即 self_check.json 附上四门结果后的增量，属工具固有的两阶段写入，不影响任何一门的结论。</div>
 <div class="tw"><table class="dt"><thead><tr><th>自检项</th><th>结果</th><th>级别</th><th>对象</th><th>说明</th></tr></thead><tbody><tr><td><code class="mid2">DETERMINISTIC_VALIDATION</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">validate_local_submission.py</code></td><td>deterministic_validation: PASS</td></tr><tr><td><code class="mid2">SPATIAL_REVIEW</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">spatial_review.py</code></td><td>spatial_review: PASS</td></tr><tr><td><code class="mid2">VISUAL_PACKAGING</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">visual_review.py</code></td><td>visual_review: PASS</td></tr><tr><td><code class="mid2">PROFESSIONAL_EVIDENCE</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">professional_review.py</code></td><td>professional_review: PASS</td></tr></tbody></table></div>
 </div></section>
 <section class="sec apx" id="s12"><div class="wrap"><div class="sh rv"><span class="no">E</span><h2 class="serif">附录 E · 可当场核验工具</h2><span class="sub">三个脚本在你自己的浏览器里当场复算</span><span class="en">Appendix E · Verify it yourself, on the spot</span></div>

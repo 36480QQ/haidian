@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "8578701b890a4034152bb82a86d3a05a84db2de88b7e19c9bb05f60e45e3536f"
+      "sha256": "74c9939f19ef900cced665a1b6d8cc3ed6e2a8bff25918037b1598d171a36c13"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a27b62813f16b9144928d905d38ff8cc03eba5f375bd6d2f70ca0381d96cc7f2"
+      "sha256": "e13c544fe88fac7807c69d410e72375455d39a11eb78be7793a40aff44498dc2"
     },
     {
       "path": "compliance_matrix.json",
@@ -105,28 +105,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "0acbf0242742e01f130c80295cc9a164643e5dca9882b5bb359c4efc05efe1ca"
+      "sha256": "6c43d31d6f61ce210ac439e391af82b6ebd1bd8ec2966cf7ddf0602cd8660618"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "05d1f3ed87c2020b7c04ae5e95663e95ff6bf46c379b22bd309b2d5b5d1def39"
+      "sha256": "0b3a2d130c95ff577d96dded9163125072fabaddd30af3b98fb745a56a437e9f"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "383ae3df1c9201f4eccab010e5fa2ccfde0a639c87decb62413c8c0a7afdd09f"
+      "sha256": "d03a83837a6a4cde83b6493c809e0c44373420397fbb25a131cd8076ed64f67e"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "81b2c823cc1c6071a793c818384f949eb421314f9a651d99fd9c1085e01416a4"
+      "sha256": "cef554c0e1b0646a8a2372d4e625bcf2f93cde4a55bacd92c76b95cd8a8fd8a1"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -223,7 +223,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d435f818194b0b62373d53455673ba0ae7a0cb3d82ac22e4df6b688905575cfe"
+      "sha256": "6ae527c721bafab0e399414b1e412f44ed2adb276ec898e9ceb215d004b7ab5b"
     },
     {
       "path": "report/proposal.en.html",
@@ -239,7 +239,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "e25056cb9c9ca685e48e85e288a4a1afeacac686cd6b907d2e07b039b3996e18"
+      "sha256": "38da2e378ea0965c8334394e5ada805edbf0c7db2a21fb058fbfe2462623e41e"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -247,7 +247,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e07073bc15dfbc4b408da082fe303bfa96bb4be5e6e56a12102c3437c5a80e61"
+      "sha256": "e5e9d60ee7ce8eafcf21fa99d59fb546ce0887cf36d7d6a544a2b7826491af4c"
     },
     {
       "path": "visual/index.en.html",
@@ -255,7 +255,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a57ed2fef17a689ec6831838ff0d53d6e8cc2b631d783ad389b80cd5e265bb21"
+      "sha256": "18c8639db4e85303737def4c4aa96ce9f65c94b4703ab21904467367b8a42f16"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -684,6 +684,26 @@
       "title_en": "Answer Origin forecourt",
       "description_zh": "清华园车站站前素广场鸟瞰：老站房本体不动，0.6 公顷留白广场上只有零公里桩与应答簿两件小体量物件，校园围墙改为通透格栅界面。AI 生成概念意象，未经坐标配准，不表达用地与尺寸。",
       "description_en": "An aerial of the plain forecourt at Tsinghuayuan Station: the 1910 station house untouched, only the Kilometre-Zero Post and the Answer Book on 0.6 ha of deliberate emptiness, the campus wall rebuilt as a permeable lattice. AI-generated concept imagery, not coordinate-registered; it expresses no land use or dimensions."
+    },
+    {
+      "path": "visual/assets/three.min.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+      "title_zh": "Three.js r160 运行库（MIT，离线随包）",
+      "title_en": "Three.js r160 runtime (MIT, bundled offline)",
+      "description_zh": "第三方开源三维引擎 three.js r160 压缩版，MIT 许可，随包离线提供；仅供人字之跃三维示意在本地渲染使用，无网络请求。",
+      "description_en": "The minified third-party 3D engine three.js r160, MIT-licensed and bundled offline; used only to render the Ren-Shaped Leap 3D sketch locally, with no network request."
+    },
+    {
+      "path": "visual/assets/bridge3d.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "b8e080a4c2a5195d9b5d2c7004b11f851f087d5011c7a3a8ddb4ee9450c5c1b2",
+      "title_zh": "人字之跃 · 三维示意场景脚本",
+      "title_en": "Ren-Shaped Leap — 3D sketch scene",
+      "description_zh": "以断面 ZZY-1/ZZY-2 设计目标值搭建的本地三维示意（抬升6.0m、桥面9m、栏板1.4m、并排坡道62m×2、单侧占地66×9m）；概念示意，未经坐标配准。",
+      "description_en": "A local 3D sketch built to the target values of sections ZZY-1/ZZY-2 (6.0 m rise, 9 m deck, 1.4 m parapet, twin 62 m runs, 66×9 m footprint per side); conceptual, not coordinate-registered."
     }
   ],
   "validation_claim": {

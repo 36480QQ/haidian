@@ -49,3 +49,5 @@
 2. `assets/media/narrative.mp4` 概念短片及其海报帧 `narrative-poster.jpg`——静帧由 Lib Image 与 GPT image 2.0 生成；道钉带、鸣钟之门、应答门三段经 Seedance 2.5 图生视频，各 10 秒；应答原点与人字之跃两段为静帧缓慢推镜、未经视频模型；另有 Python 绘制的片头片尾与字幕条，全片 55 秒。
 
 全部提示词由本方案自行撰写，依据为本包 `proposal.md` 正文口径；除上述已注明的 CC 许可参考图外，未使用任何第三方图像、影像、音频或受版权保护的素材作为输入。AI 生成画面仅用于表达空间意象，**不作为形式、尺寸、材料、树种或工程做法的设计依据**；凡与正文口径不一致之处，一律以断面图与正文为准，已知差异已在 `narrative.vtt` 与 `narrative-transcript.md` 中逐条声明。
+
+**第三方开源组件声明**：本包随附 three.js r160 压缩运行库（`visual/assets/three.min.js`，MIT 许可，版权归 three.js 作者），仅用于「人字之跃」三维示意的本地离线渲染，无网络请求、无数据上传；其 MIT 许可允许随包分发，原始许可文本见 https://github.com/mrdoob/three.js/blob/dev/LICENSE 。除此之外本包不含任何其他第三方代码库。
