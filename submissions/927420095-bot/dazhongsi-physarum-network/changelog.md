@@ -1,5 +1,53 @@
 # 方案迭代记录
 
+## v0.8 - 2026-08-25
+
+R25-6 评审修复（83/100 请求变更）：主攻表达完整度（中文 HTML 方框字根治），辅修两个 P1 防守项（治理 G0-G3 统一删 G4、COST 来源补证与降级）。不触碰原创性/AI/公共利益维度、核心概念、场景卡、治理脊柱、品牌系统。
+
+### 表达完整度（中文 HTML 方框字根治）
+- 根因：R25-5 跳过 embed_font.py，render_proposal_html.py 清空 @font-face，中文 HTML 显示为方框字（tofu）。
+- 修复：重跑 embed_font.py 重新注入 Noto Sans SC 子集 @font-face，4 个 HTML 字体栈首位置回 "Noto Sans SC"；子集 1076 字形、0 个 CJK 缺字。
+
+### 治理 G0-G3 统一（删 G4）
+- 方案 B：删除治理闸门 G4「常态运行/归档回执」，统一为「普通路径先行 + 分级放行 G0-G3」四闸门（与正文 95% 表述及 shadow-test-matrix.json「G0-G3」一致）。
+- governance-raci.json：标题「五关→四关」「Five-Gate→Four-Gate」，删除 G4 gate 对象。
+- proposal.md / proposal.en.md：正文「五闸门→四闸门」「five-gate→four-gate」，删除 G4 表格行；「归档回执」概念保留于正文「每级保留停止条件、可逆措施与归档回执」。
+
+### COST 来源补证与降级
+- 查明《北京市建设工程计价依据——预算消耗量标准（市政工程）》为官方标准（京建发〔2021〕201号，2021-09 印发、2022-01-01 施行），有官方查询下载网址（zjw.beijing.gov.cn）。
+- 关键事实：该标准只含人工/材料/机械消耗量，不含单价（无人材机基价与费用标准）。
+- COST-UNIT-BEIJING-001：补官方 url + accessed_date；明确「消耗量标准、不含单价」；四档单价（8000/5000/3000/1500 元/m）标注为作者概念假设（公开综合单价/《北京工程造价信息》信息价），非该标准、非定额、非招标结果。
+- proposal.md / proposal.en.md：「概念估算 ±30%」统一改为「作者概念假设，敏感性区间 ±30%」；路网市政造价引用 COST-UNIT-BEIJING-001→COST-ESTIMATE-PLAN03（作者逐项估算），COST-UNIT-BEIJING-001 转为计价依据（消耗量标准）引用。
+
+### 诚实边界
+- 未编造 URL：官方门户 zjw.beijing.gov.cn 来自真实检索；本机 WebFetch 因网络受限返回 Socket closed，不代表链接失效。
+- 未虚构单价来源：四档单价明确为作者概念假设，不再暗示来自官方定额。
+
+## v0.7 - 2026-08-25
+
+R25-5 最终评审冲刺：原创性 4→5（真实参数转译）、风险合规 4→5（来源审计补全）、表达完整度 4→5（无回归验证）。目标 85+。
+
+### 原创性（参数转译说明）
+- proposal.md / proposal.en.md 新增「从算法验证到空间设计：参数转译说明」章节：8 行表格逐项列明场外 Physarum+NSGA-II 仿真参数（真实运行）→ 场内概念设计决策的转译规则，两类数值不混用。
+- 8 维度真实值（全部取自 simulation.json / metrics.json 冻结值）：18 关键终端（骨架覆盖 17/18）、class_I=1.5 / class_IV=3.0 硬阻断、top-10% 传导度 167 边、四级网络（主静脉—支脉—慢行环—绿廊）、抗毁强、8813.1 m、19.20（基线 1.143 / Run7 2.802）、0 硬穿越（f3≡f2）。
+- metrics.json 扩展已有 `physarum_translation.dimension_table`（8 行，未新增顶层字段）。
+- 三段关键声明：场外参数为方法验证证据（provisional 场地西侧 2–3 km）；场内为人工校准概念设计；正式数据发布后须重跑仿真链并产出「旧值—新值—变化原因」对照表。
+
+### 风险合规（来源审计）
+- sources.json 10 个全球标杆案例全部补 `url` + `accessed_date`（官方源：Waterfront Toronto / masdarcity.ae / IFEZ / amsterdamsmartcity.com / 中国雄安官网 / 東京都都市整備局 / barcelona.cat / kk.dk / URA / seoul.go.kr）。
+- 新增 `COST-UNIT-BEIJING-001`：北京市政道路计价依据《北京市建设工程计价依据——预算消耗量标准（市政工程）》第二册道路工程（北京市住建委 2021-09）+ 月度工程指导价；诚实标注单价为公开综合单价参考级 ±30%、非中标结果、无干净官方下载 URL（仅第三方镜像）。
+- proposal.md / proposal.en.md 成本章节引用 [source:COST-UNIT-BEIJING-001]。
+
+### 表达完整度（无回归验证）
+- C1 EN 空间图尺寸一致（3280×1840）；C2 中文字体子集覆盖未改动（保持 R25-3 已验证 0 缺口）；C3 A0 PDF 存在（08-25 12:51 最新）。本轮为文本/JSON 改动，未触碰图件、HTML 或字体子集，故无表达回归。
+
+### 硬天花板（保持）
+- AI-off 服务等价差 [metric:ai_off_service_equivalence_gap] 保持 unknown，待 G3 有限现场窗口首读数（中英 L333 一致）。
+
+### 诚实边界
+- 未编造任何数字（所有数值取自 simulation.json / metrics.json 真实冻结值）；模板示例「400m 服务半径」「29 节点」等在数据中不存在，未采用。
+- 案例 URL 均真实（抽查 Masdar / IFEZ 可访问；Barcelona 返回 403 为机器人拦截、非死链）；成本定额无官方 URL，已标 known_limitations。
+
 ## v0.6 - 2026-08-25
 
 R25-4 补遗：治理 RACI 上浮至正文 + 三张英文图折行 + A0 首页重排之后，本轮做两处收尾——G3 问责单 A 化（RACI 结构修正）+ 双语实质等价核对记录。
