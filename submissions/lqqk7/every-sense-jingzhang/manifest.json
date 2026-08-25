@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a4429abfdceadec8b4ec3fcdf456543019fbe24408eeb6543e8c53b433a12935"
+      "sha256": "6f188268de631a30564c1946c92621ec2a64824f41d212bd3c402938edde53eb"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "3991cf7510ad9fdf43ba01e3f51e3db398ca38b4d31f8fc32b9d74630b7bd3a9"
+      "sha256": "e99b863bd0da4acdb4dbce84b1e54fb4113a4313a5190b829b70227ace43289c"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1e2b9a9e1df9489e1c7fc6e60f13bce8f714d8f16e60ff350f4d1cc9ac05eab5"
+      "sha256": "ede62215df5c48f56b71c4f0e489b16bcc43a4d459694113beef556c621b362c"
     },
     {
       "path": "compliance_matrix.json",
@@ -84,11 +84,18 @@
       "role_detail": "risk_register"
     },
     {
+      "path": "simulation.json",
+      "role": "other",
+      "required": false,
+      "role_detail": "simulation_ledger",
+      "sha256": "c9921d8d02621c864fa410f0aa9ebdc6a1a58de5741004acad4475cef5bdf135"
+    },
+    {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "5a6fbb43bdfce27355963f6de63e1e88e303e2a6b1ed5b23c9f17a8d2dd09134"
+      "sha256": "2650a5260f30497b0627024d963723c18410144e41dc682498f6df06c8a369fd"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +107,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "186ea7d3b0e3893b3b1749c5195247ce026e9c3c02573caa28a91cf7f7bc61e5"
+      "sha256": "d1b6de6383db248df6127d7dfddf14afc4373d3198f11f4c3a34a574cae9df48"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -235,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "c5f6d0999f41b2ab283068c047699e000dd8f4c86d325b2272016a080a7deb3a"
+      "sha256": "8cc153ceabdebe326598103b76a00de7d0114a689d6c2e41c3dc80ddf7d66982"
     },
     {
       "path": "report/proposal.en.html",
@@ -243,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "949daf19254398337676d52aa7311dcbf9624fb3e5ee44bb249fbbfa1e11df47"
+      "sha256": "885c9bfc33097f041c8e8fe126220236ea92c48a818523ec9594ecd2db9e8b4e"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -590,7 +597,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "0cf1b2e0afc3e89ead1c6ed8782ec47ed5aeeb7966b8272b9424a5fe9a5d36c1"
+      "sha256": "9534cb5c5b56ab497a2cbbe22c6b3e170b4491d893aea880feb0e172ab0ba0c8"
     },
     {
       "path": "visual/assets/changelog-archive.json",
@@ -784,7 +791,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "82b603d524c47dc0ff36b4d77cd0669552f72bab50e123f5c3eb611988aa56b5"
+      "sha256": "fabbe0e98a8713595d6a50fa9b2eefb0f12e87392df7b62fdd6a06de9240aa18"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -793,7 +800,7 @@
       "language": "neutral",
       "title_zh": "随包自检闸门台账（十一道闸门，逐道登记口径、当前读数与历史查获缺陷共 30 条）",
       "title_en": "Package self-check gate register (eleven gates, each with its criterion, current reading and the 30 defects the gates actually caught)",
-      "sha256": "dd3ffddfbbbe18e155762e3e4c3ea542f99a091b511d60050f911443f3065816"
+      "sha256": "a40de04c1af6edd21980bc0e98aa12f8c3710897006be2570c3f700690511479"
     },
     {
       "path": "visual/assets/service-desk-gonogo.json",
@@ -919,7 +926,7 @@
       "language": "neutral",
       "title_zh": "OP-04 配对试点全过程链路数据档案(桌面复演)",
       "title_en": "OP-04 paired-pilot full-process chain archive (tabletop replay)",
-      "sha256": "8e60e7e257556356d28df57ca47008533fb34827dda02cb0805e3c3ebe4c6ff4"
+      "sha256": "abcda227946681b0ba4e57cbddc33db521f81967552e885da3867094e4ca1549"
     },
     {
       "path": "visual/assets/seb-op04-90day-pack.json",
@@ -964,7 +971,7 @@
       "language": "neutral",
       "title_zh": "OP-04 全过程证据链自含复演器",
       "title_en": "OP-04 full-process evidence-chain self-contained replayer",
-      "sha256": "b45ef978bad82b8e358fab3b5c59e5f326ff9e9997fec479f7920fd954e96f43"
+      "sha256": "df491bc5cf1026731ab1057eb3ba2b11691073baf21d066769acb730a389a125"
     },
     {
       "path": "visual/assets/seb-crosscheck-run.js",

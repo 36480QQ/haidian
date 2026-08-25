@@ -115,6 +115,7 @@
         "submissions/lqqk7/every-sense-jingzhang/report/proposal.html",
         "submissions/lqqk7/every-sense-jingzhang/risk.json",
         "submissions/lqqk7/every-sense-jingzhang/self_check.json",
+        "submissions/lqqk7/every-sense-jingzhang/simulation.json",
         "submissions/lqqk7/every-sense-jingzhang/sources.json",
         "submissions/lqqk7/every-sense-jingzhang/standard_matrix.json",
         "submissions/lqqk7/every-sense-jingzhang/visual/assets/alignment-reference.json",
@@ -176,7 +177,7 @@
       "ai_package_stages": {
         "submissions/lqqk7/every-sense-jingzhang": "formal"
       },
-      "total_bytes": 41796859,
+      "total_bytes": 41895188,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -258,7 +259,7 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 35,
+        "known_metric_refs_required": 39,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
