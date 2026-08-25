@@ -40,12 +40,32 @@
   <div><span class="sw" style="background:#B86B3A"></span>铁轨之树（入口地标）</div>
   <div><span class="sw" style="background:#2B6CB0"></span>灌溉渠廊（十字管网）</div>
 </div>
-<div id="hint">🖱 拖动旋转 · 滚轮缩放 · 双击聚焦</div>
+<div id="hint">🖱 拖动旋转 · 滚轮缩放 · 双击聚焦 · 自动缓慢旋转</div>
+<div id="poster" style="position:fixed;inset:0;z-index:5;background:#0E1508;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+  <img src="../assets/figures/site-overview.png" alt="THE NURSERY 静态总览（概念示意·非官方边界）" style="max-width:92vw;max-height:80vh;object-fit:contain;border-radius:10px;border:1px solid #2D5016;">
+  <div style="margin-top:12px;text-align:center;color:#8FA888;font-size:11px;letter-spacing:.3px;">轴—床—翼—轮 总体框架（静态示意）｜ 支持 WebGL 的浏览器将自动切换为 3D 交互场景｜ 概念建议，非官方边界，官方红线公布后复算</div>
+</div>
 
 <script src="assets/three.min.js"></script>
 <script src="assets/OrbitControls.min.js"></script>
 <script>
 (function(){
+  /* WebGL 检测：不支持则保留静态 poster，不初始化 3D（保证无 GL 环境首屏可见设计内容） */
+  var _tc = document.createElement('canvas');
+  var _glOK = !!(window.WebGLRenderingContext && (_tc.getContext('webgl') || _tc.getContext('experimental-webgl')));
+  var _frame = 0;
+  if (!_glOK) {
+    var _p = document.getElementById('poster');
+    if (_p) { _p.style.opacity = '1'; _p.style.display = 'flex'; }
+    return;
+  }
+  function _fadePoster() {
+    var p = document.getElementById('poster');
+    if (!p) return;
+    p.style.transition = 'opacity .6s';
+    p.style.opacity = '0';
+    setTimeout(function(){ p.style.display = 'none'; }, 700);
+  }
   /* ── Taste 色板 ── */
   const PAL = {
     bg: 0x0E1508, fog: 0x0E1508,
@@ -63,6 +83,7 @@
 
   const camera = new THREE.PerspectiveCamera(48, innerWidth/innerHeight, 0.1, 500);
   camera.position.set(48, 38, 58);
+  camera.lookAt(0, 0, 0);
 
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
   renderer.setSize(innerWidth, innerHeight);
@@ -282,6 +303,7 @@
     tree.rotation.y = Math.sin(t * 0.4) * 0.12;
     controls.update();
     renderer.render(scene, camera);
+    if (++_frame === 3) _fadePoster();
   }
   animate();
 
@@ -298,7 +320,7 @@
 </div>
 <!-- Visual review: required data metrics -->
 <div data-metric="site_area_sqm" data-value="3692893"></div>
-<div data-metric="green_ratio" data-value="0.5838"></div>
+<div data-metric="green_ratio" data-value="0.5742"></div>
 <div data-metric="public_space_ratio" data-value="0.09"></div>
 </body>
 </html>

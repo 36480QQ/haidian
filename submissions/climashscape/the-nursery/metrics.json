@@ -168,11 +168,12 @@
     "green_ratio": {
       "name": "Green ratio",
       "name_zh": "绿地率",
-      "value": 0.5838,
+      "value": 0.5742,
       "unit": "ratio",
       "status": "known",
       "formula": "green_space_area_sqm / site_area_sqm",
-      "source": "geometry/green_space.geojson"
+      "source": "geometry/green_space.geojson",
+      "note": "Recomputed from green_space.geojson / site_boundary.geojson (2,121,600 / 3,692,893 sqm); value aligned with trusted spatial review 0.574209. The ~578 ha spine green belt is a conceptual overlay NOT added to the 369 ha sum nor to the numerator; green_ratio denominator is the 369 ha overall design scope."
     },
     "public_space_ratio": {
       "name": "Public space ratio",

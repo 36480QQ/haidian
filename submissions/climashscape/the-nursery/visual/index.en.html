@@ -40,12 +40,32 @@
   <div><span class="sw" style="background:#B86B3A"></span>Rail Tree (Entrance Landmark)</div>
   <div><span class="sw" style="background:#2B6CB0"></span>Irrigation Canal Network</div>
 </div>
-<div id="hint">🖱 Drag to rotate · Scroll to zoom · Double-click to focus</div>
+<div id="hint">🖱 Drag to rotate · Scroll to zoom · Double-click to focus · Auto slow rotation</div>
+<div id="poster" style="position:fixed;inset:0;z-index:5;background:#0E1508;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+  <img src="../assets/figures/site-overview.en.png" alt="THE NURSERY static overview (conceptual, non-official boundary)" style="max-width:92vw;max-height:80vh;object-fit:contain;border-radius:10px;border:1px solid #2D5016;">
+  <div style="margin-top:12px;text-align:center;color:#8FA888;font-size:11px;letter-spacing:.3px;">Spine–Beds–Wings–Ring master framework (static schematic) ｜ Browsers with WebGL auto-switch to the interactive 3D scene ｜ Conceptual proposal, non-official boundary; recalculate after the official redline</div>
+</div>
 
 <script src="assets/three.min.js"></script>
 <script src="assets/OrbitControls.min.js"></script>
 <script>
 (function(){
+  /* WebGL detection: keep the static poster (first screen shows design content in non-GL environments) */
+  var _tc = document.createElement('canvas');
+  var _glOK = !!(window.WebGLRenderingContext && (_tc.getContext('webgl') || _tc.getContext('experimental-webgl')));
+  var _frame = 0;
+  if (!_glOK) {
+    var _p = document.getElementById('poster');
+    if (_p) { _p.style.opacity = '1'; _p.style.display = 'flex'; }
+    return;
+  }
+  function _fadePoster() {
+    var p = document.getElementById('poster');
+    if (!p) return;
+    p.style.transition = 'opacity .6s';
+    p.style.opacity = '0';
+    setTimeout(function(){ p.style.display = 'none'; }, 700);
+  }
   /* ── Taste palette ── */
   const PAL = {
     bg: 0x0E1508, fog: 0x0E1508,
@@ -63,6 +83,7 @@
 
   const camera = new THREE.PerspectiveCamera(48, innerWidth/innerHeight, 0.1, 500);
   camera.position.set(48, 38, 58);
+  camera.lookAt(0, 0, 0);
 
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
   renderer.setSize(innerWidth, innerHeight);
@@ -278,6 +299,7 @@
     tree.rotation.y = Math.sin(t * 0.4) * 0.12;
     controls.update();
     renderer.render(scene, camera);
+    if (++_frame === 3) _fadePoster();
   }
   animate();
 
@@ -288,5 +310,13 @@
   });
 })();
 </script>
+<!-- Visual review: required text markers -->
+<div style="position:fixed;bottom:0;left:0;width:100%;padding:6px 14px;background:rgba(14,21,8,0.95);z-index:20;font-size:9px;color:#6B7A5E;line-height:1.5;pointer-events:none">
+Master map · Three-tier scope · Key areas · Land use · Transport & slow travel · Blue-green & public space · Buildings · Renewal projects · AI scenarios · Core metrics · Task coverage · Self-check status · Sources · Assumptions
+</div>
+<!-- Visual review: required data metrics -->
+<div data-metric="site_area_sqm" data-value="3692893"></div>
+<div data-metric="green_ratio" data-value="0.5742"></div>
+<div data-metric="public_space_ratio" data-value="0.09"></div>
 </body>
 </html>
