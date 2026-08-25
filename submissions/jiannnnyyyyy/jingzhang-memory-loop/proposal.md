@@ -1,0 +1,102 @@
+---
+title: "京张记忆环：AI公共生活与创新走廊"
+author_github: "jiannnnyyyyy"
+language: "zh"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
+translation_file: "proposal.en.md"
+license: "COMMUNITY-DISPLAY-ONLY"
+summary: "以京张铁路遗址为文化骨架，把开源研发、公共服务和日常生活串成可步行、可体验、可复核的 AI 创新带概念方案。"
+tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
+scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
+---
+
+# 京张记忆环：AI公共生活与创新走廊
+
+## 设计依据与资料清单
+
+本方案以公开征集公告、场地包、公开来源登记和面向智能体任务书为依据，所有空间动作均是概念建议、参考方案，可供专业团队深化研究，不替代正式规划或审批结论 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]。当前官方精确边界和控规附件尚未进入场地包，因此提交几何使用临时约束范围；它可用于设计讨论和 intake 自检，不可作为红线、权属或精确面积依据 [source:BOUNDARY-SOURCE]。
+
+资料链分为三层：公告给出的范围和任务、仓库登记的公共/清权资料、以及由这些资料派生的 GeoJSON 和指标。背景资料不被升级为法定证据；新增信息在正式深化前应由专业团队复核 [source:SOURCE-REGISTRY]。待补事项包括官方边界、三处重点区多边形、道路红线、控规强度、建筑现状、权属、市政、文保与消防条件 [data:geometry/constraints.geojson#CONSTRAINTS]。
+
+![设计依据与总体概念图](assets/figures/site-overview.png)
+
+## 三层范围工作框架
+
+统筹研究范围约 43.6 平方公里，研究创新链、人才链和区域协同；总体设计范围约 11.4 平方公里，以京张遗址公园周边 1—2 公里为城市更新与公共空间组织范围；重点区域范围约 368.4 公顷，包含众智园、北京 AI 原点社区和大钟寺 AI 产业聚集区。提交边界的可计算面积为 11,412,825.386 平方米，仍须在官方多边形发布后重算 [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]。
+
+三层关系采用“研究定方向—总体定网络—重点区做验证”的工作台账。总体概念为“记忆环”：铁路遗址是文化与慢行主轴，三处重点区是创新锚点，中关村科技服务翼和小月河场景赋能翼是跨区协同接口 [depth:three_level_scope_framework]。
+
+![三层范围与用地结构](assets/figures/land-use-structure.png)
+
+## 统筹研究范围产业与未来城市研究
+
+研究提出“一带三核、多点场景、蓝绿慢行复合环”：一带对应百年京张文化带、都市 AI 生活体验带和 AI 融合创新带；三核对应三个重点区；多点场景承载研发、服务、展示和生活。五大功能落为 AI 全栈自主创新、世界级创新生态、AI+ 场景赋能、智能化活力城市、AI 治理全球话语权 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+
+生态参考案例只用于方法对照，不代表本地已落地：加拿大多伦多 MaRS（开放式研发服务）、法国 Station F（创业社区运营）、英国 Alan Turing Institute（公共研究）、美国 Pittsburgh Robotics Network（测试场景）、新加坡 Punggol Digital District（产城协同）、日本东京涩谷 QWS（跨界共创）、荷兰 Brainport Eindhoven（产业链协同）。方案将其转译为“空间、算力、数据、场景、资本、人才、治理”七要素清单，不编造企业名单、投资额或政策承诺。
+
+品牌名“JZ LOOP / 京张记忆环”以轨枕节奏和开放环路为识别母题：深青表示铁路与水系，铜金表示百年记忆，荧光绿表示 AI 试验与公共活力；Logo 建议由连续折线与圆环组成，字体和图形在深化时采用清权素材 [depth:overall_spatial_structure]。
+
+## 总体设计范围城市更新与控规深度城市设计
+
+空间结构由一条南北记忆环、两条东西缝合廊和三个创新锚点组成。用地分区以科研、公共绿地、混合服务、社区生活和交通设施为主，完整覆盖提交边界并以同一组共享边界坐标分割 [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]。建筑图层只表达设计基底与更新类型，不推断权属、拆除或审批规模 [data:geometry/buildings.geojson#BLDG-001]。
+
+更新策略采用“保留记忆、改造界面、谨慎增量、先运营后建设”：保留铁路遗址和可识别的工业记忆；优先改造首层、街角和公共界面；新建只作为专业团队核定后的参考选项。FAR、建筑高度、密度、退线和道路红线均标为待正式数据补齐，指标不写成确定控规 [metric:floor_area_ratio] [depth:development_intensity_controls]。
+
+## 重点区域详细设计
+
+众智园 AI 自主创新加速区：以“花园式全栈实验街区”为概念建议，沿清河界面组织低碳算力展示、标准工作坊和开放测试花园，公共空间优先承载安全治理与产业交流 [data:geometry/key_areas.geojson#PROV-KEY-001]。
+
+北京 AI 原点社区：以“近校成果转化社区”为概念建议，串联校区、园区和居住配套，设置开源发布厅、人才服务台和可变首层，慢行优先于机动车穿越 [data:geometry/key_areas.geojson#PROV-KEY-002]。
+
+大钟寺 AI 产业聚集区：以“城市型智能经济客厅”为概念建议，围绕大钟寺站四象限步行联系，布置智能终端展示、数据要素会客厅和国际路演客厅；绿地复合使用须以绿线、交通和权属条件复核 [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]。
+
+![三处重点区设计抓手](assets/figures/key-areas.png)
+
+## AI 创新生态、人才画像与 AI+ 场景
+
+五类用户画像：近校研究者、开源开发者、产业服务者、社区家庭、国际访客。十张场景卡分别为：开源发布厅、城市智能体沙盒、慢行断点诊断、人才生活管家、AI 安全治理廊、校企转化客厅、数据要素剧场、低碳算力驿站、京张记忆线路、全球 AI 活动周路线。每张卡均需在后续设计中明确服务对象、空间位置、数据最小化、人工复核和运营主体；不使用个人隐私或非公开数据 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+
+三项产业测试/验证场景作为参考：模型安全红队测试（众智园）、无障碍慢行导航（遗址公园）、智能终端与内容消费联调（大钟寺）。测试结果只用于改进服务，不替代政府监管或工程验收。
+
+## 用地、建筑规模与拆改留方案
+
+用地分区和建筑基底是可复算的设计模型；总建筑规模、容积率和高度因官方控制条件缺失而保持未知。保留/改造/新建的判断以公共价值、文化连续性、结构安全和权属核查为前置，任何地块级拆改须由专业团队和产权主体确认 [metric:building_footprint_area_sqm] [depth:retain_renovate_demolish]。
+
+设计上把“留”理解为可继续使用的记忆载体，把“改”理解为对首层、界面、无障碍和能源系统的渐进修补，把“新”限制在能补足公共服务或创新展示的必要节点。建筑图层的 310,807.184 平方米只是当前设计基底汇总，不等于总建筑面积；它用于检查建筑是否落在设计用地内，并与绿地、公共空间和慢行网络做冲突复核。对遗址、老厂房或校区边界的任何干预，都需要结构安全、文保、消防、产权和公众沟通资料；在这些资料到位前，方案只给出更新类型和界面策略，不给出拆除名单、建设强度或审批结论 [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]。
+
+## 交通、轨道、市政与公共服务设施
+
+交通采用“轨道接驳+慢行优先+微循环补缝”的参考方案：以五道口、清华东路西口和大钟寺站为接口，串联遗址公园南北入口；道路图层表达概念性连接，不代表道路红线 [data:geometry/roads.geojson#ROAD-001] [depth:traffic_rail_slow_parking]。公共服务节点包括无障碍导航、共享单车整理、端侧算力驿站和企业服务台；能源、排水、消防、管线和停车容量待工程资料补齐 [depth:municipal_new_infrastructure]。
+
+慢行网络的设计判断不是增加一条孤立绿道，而是把站点出入口、跨路口安全、连续遮荫、夜间照明、骑行停放和公共厕所等日常设施串成一条可被不同人群使用的路径。道路 GeoJSON 只作为空间关系和场景节点的表达，不能替代交通组织、道路红线、桥下空间、停车配建或轨道接驳工程图。市政层面建议预留可维护的端侧算力和传感器接口，采用公开协议、人工巡检和故障回退；供电、排水、雨洪、防火、无障碍和运维责任应由专业团队根据正式管线与容量资料复核后再决定 [data:geometry/constraints.geojson#CONSTRAINTS] [depth:municipal_new_infrastructure]。
+
+## 蓝绿空间、公共空间与城市风貌
+
+蓝绿系统以京张遗址公园、清河和小月河为连续骨架，建议形成可步行的“记忆环”与东西缝合廊。提交模型的绿地面积比例为 12.3423%，公共空间比例为 7.3281%，均由几何直接复算，属于临时设计模型而非法定指标 [data:geometry/green_space.geojson#GREEN-001] [metric:green_ratio]。风貌建议采用铁路构架、砖石基座、轻量金属和可读导视；文保、蓝线、绿线和夜景控制需正式资料确认 [data:geometry/public_space.geojson#PUBLIC-001]。
+
+![交通、慢行与蓝绿网络](assets/figures/mobility-bluegreen.png)
+
+## 更新项目清单、实施政策与分期计划
+
+六个可讨论项目：JZ-01 遗址公园慢行断点缝合；JZ-02 清河创新界面；JZ-03 原点社区成果转化街；JZ-04 大钟寺站四象限步行联系；JZ-05 AI 公共服务与端侧算力节点；JZ-06 全球 AI 活动周公共路线 [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list]。
+
+分期采用“先运营、再更新、后协同”：近期以导视、开放日、慢行诊断和小型公共设施验证；中期推进首层改造、创新服务节点和蓝绿界面；长期在官方控规、权属、市政和资金条件明确后再深化建设。政策建议包括公共空间开放协议、数据伦理清单、跨主体运营委员会和年度复盘，不构成政府承诺 [depth:phasing_implementation]。
+
+## 指标体系、面积复算与合规矩阵
+
+核心指标为 site_area_sqm=11,412,825.386 平方米、green_ratio=0.123423、public_space_ratio=0.073281、key_area_count=3；建筑基底面积为 310,807.184 平方米。前三项均由提交几何复算，采用 EPSG:4548 计算面积，官方多边形替换后必须全部重算 [metric:site_area_sqm] [metric:public_space_ratio]。任务覆盖矩阵逐项关联公告 1.3/1.4/1.5 与 agent.1-agent.6，专业标准矩阵和设计深度矩阵保存完整证据链 [depth:metrics_recalculation]。
+
+![指标复算与证据链](assets/figures/metrics-evidence.png)
+
+## 风险、版权与合规说明
+
+主要风险是临时边界误读、控规与权属缺失、文保/绿线/市政条件未知、AI 场景隐私和运营责任不清。所有生成图件为数据驱动的概念表达；图标、字体和图片采用本地自绘或仓库清权资料，不使用外部地图瓦片、远程脚本或未授权肖像 [depth:risk_missing_data]。AI 场景坚持数据最小化、可解释和人工复核；最终判断由人类与专业团队完成。
+
+合规边界包括四点：第一，临时边界和重点区多边形在正文和页面中均标为 provisional，不被称为官方红线；第二，FAR、高度、密度、退线、道路红线、权属和投资时序均保持待正式数据补齐；第三，AI 场景不采集个人敏感信息，不做自动处罚或未经解释的画像，任何测试都设人工复核和退出机制；第四，图件、文字、代码和数据均登记来源与生成方式，生成图不冒充现状照片、公众意见或官方批准。若维护者或专业评审指出边界、拓扑、引用或版权问题，下一轮应先修复证据链，再更新图纸和叙事 [source:SOURCE-REGISTRY] [depth:risk_missing_data]。
+
+## 参考资料
+
+来源与许可详见 `sources.json`、`report/copyright_statement.md` 和 `data/source_registry.json`。关键入口为 [source:SITE-PACKAGE]、[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]；临时边界的使用限制已在前文和 `assumptions.json` 中说明。
+
+阅读顺序建议为：先看 `brief/site-package/design_brief.json` 了解三层范围和任务，再看 `allowed_design_space.json` 与 `planning_limits.json` 区分可编辑图层和待确认控规；随后核对 `data/source_registry.json`、`geometry/*.geojson` 和 `metrics.json`，最后对照 `compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json` 与 `self_check.json`。这些文件共同构成可复算、可追溯的证据链；任何外部资料都应记录发布者、链接、获取日期、许可和限制后再进入正式版本 [source:SOURCE-REGISTRY] [data:geometry/site_boundary.geojson#SITE-001]。
