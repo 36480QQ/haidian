@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Rehearsal Belt · Exhibit</title>
+<style>
+:root{--ink:#12161c;--muted:#6b7480;--faint:#e6e9ee;--paper:#fbfaf8;--card:#ffffff;
+--accent:#c2410c;--green:#2f7a5a;--blue:#1e5f9e;--gold:#b8860b;--purple:#7c3aed;--red:#b91c1c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Hiragino Sans GB","PingFang SC","Microsoft YaHei",-apple-system,"Segoe UI",sans-serif;
+line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px 72px}
+header{border-bottom:1px solid var(--faint);padding:44px 0 26px;margin-bottom:34px}
+h1{font-size:30px;margin:0 0 8px;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:15px;margin:0 0 18px}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge{font-size:12px;padding:4px 11px;border-radius:999px;border:1px solid var(--faint);background:#fff;color:var(--muted)}
+.badge.ok{border-color:#cfe0d6;background:#eef4f0;color:var(--green)}
+.badge.warn{border-color:#f0d9c8;background:#fdf3ec;color:var(--accent)}
+section{margin:0 0 42px;scroll-margin-top:20px}
+h2{font-size:21px;margin:0 0 6px;padding-top:8px}
+h2 .n{color:var(--muted);font-weight:400;font-size:14px;margin-right:10px}
+.lede{color:var(--muted);font-size:14px;margin:0 0 16px}
+figure{margin:0 0 12px}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--faint);border-radius:8px;background:#fff}
+figcaption{font-size:12.5px;color:var(--muted);margin-top:8px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--faint);border-radius:10px;padding:16px 18px}
+.card h3{margin:0 0 6px;font-size:15px}
+.card p{margin:0;font-size:13.2px;color:#48525f}
+.metric{background:var(--card);border:1px solid var(--faint);border-radius:10px;padding:15px 17px}
+.metric .k{font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.metric .v{font-size:23px;font-weight:700;letter-spacing:-.01em}
+.metric .u{font-size:12px;color:var(--muted);margin-top:4px}
+.metric.unk .v{color:var(--muted);font-size:18px}
+table{width:100%;border-collapse:collapse;font-size:13.2px;background:#fff;
+border:1px solid var(--faint);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--faint);vertical-align:top}
+th{background:#f5f6f8;font-weight:600;font-size:12.5px;color:#48525f}
+tr:last-child td{border-bottom:none}
+.pass{color:var(--green);font-weight:600}.fail{color:var(--red);font-weight:600}
+.note{border-radius:10px;padding:15px 18px;font-size:13.2px;margin-top:14px}
+.note.amber{background:#fdf3ec;border:1px solid #f0d9c8;color:#7a5340}
+.note.mint{background:#eef4f0;border:1px solid #cfe0d6;color:#33604b}
+.note.rose{background:#fbeeee;border:1px solid #eccfcf;color:#8a3b3b}
+.note b{color:inherit}
+ul{margin:8px 0 0;padding-left:20px;font-size:13.2px;color:#48525f}
+li{margin-bottom:5px}
+.bar{height:7px;background:var(--faint);border-radius:4px;overflow:hidden;margin-top:7px}
+.bar i{display:block;height:100%;border-radius:4px}
+footer{border-top:1px solid var(--faint);padding-top:20px;color:var(--muted);font-size:12px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.4px;
+background:#f2f3f5;padding:1px 5px;border-radius:4px}
+@media(max-width:880px){.g3,.g4{grid-template-columns:repeat(2,1fr)}.g2{grid-template-columns:1fr}}
+@media(max-width:560px){.g3,.g4{grid-template-columns:1fr}h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>The Rehearsal Belt: rehearse before you deploy</h1>
+<p class="sub">Centennial Jing-Zhang AI Innovation Belt open call · formal submission exhibit · BinHPdev</p>
+<div class="badges">
+<span class="badge ok">Four gates PASS</span>
+<span class="badge warn">provisional boundary</span>
+<span class="badge">2 of 5 acceptance targets met</span>
+<span class="badge">Offline, no external dependencies</span>
+</div>
+</header>
+
+<section id="overview">
+<h2><span class="n">01</span>Overview map</h2>
+<p class="lede">One spine runs south-north, seven seams stitch east-west, three grades control the release pace.</p>
+<figure><img src="../assets/figures/site-overview.en.png" alt="Overall concept: a nine-kilometre rehearsal belt, three grades, seven east-west seams"><figcaption>Overall concept: a nine-kilometre rehearsal belt, three grades, seven east-west seams</figcaption></figure>
+<div class="note amber"><b>The admission rule</b>：
+Before any AI scenario enters public space it must supply (1) a replayable rehearsal ledger, (2) an AI-off equivalent service baseline, and (3) a named human reviewer. A scenario must clear every grade in order.</div>
+</section>
+
+<section id="scope">
+<h2><span class="n">02</span>Three-level scope</h2>
+<p class="lede">The three levels are three different burdens of proof, not three drawing scales.</p>
+<div class="grid g3">
+<div class="card"><h3>Coordinated research area · ~43.6 km²</h3>
+<p>Trend judgements and coordination proposals only; no parcel-level conclusions.</p></div>
+<div class="card"><h3>Overall design area · ~11.4 km²</h3>
+<p>Land-use structure, slow-mobility frame, blue-green system, public space network, phasing.</p></div>
+<div class="card"><h3>Key detailed design · 3 areas, ~3.69 km²</h3>
+<p>Scenario-space-operation mapping and per-task rehearsal readings.</p></div>
+</div>
+<div class="note mint">Proof tightens as scale narrows: the closer to people, the less “reportedly effective” is accepted.</div>
+</section>
+
+<section id="keyareas">
+<h2><span class="n">03</span>Key areas</h2>
+<p class="lede">The grades differ by admission conditions, public exposure and the cost of failure — not by function.</p>
+<figure><img src="../assets/figures/key-areas.en.png" alt="Three key areas and three rehearsal grades"><figcaption>Three key areas and three rehearsal grades</figcaption></figure>
+<div class="grid g3">
+<div class="card"><h3>Grade 1 · Zhongzhiyuan 1.93 km²</h3>
+<p>Closed grounds. The Ledger Tower publishes today’s live readings and failures. Failure is expected here.</p></div>
+<div class="card"><h3>Grade 2 · AI Origin Community 1.04 km²</h3>
+<p>Living rehearsal. The Switchback Colonnade hosts public notices and the resident jury.</p></div>
+<div class="card"><h3>Grade 3 · South Gateway 0.72 km²</h3>
+<p>Open concourse. The AI-off Plaza switches AI off weekly and publishes readings on the spot.</p></div>
+</div>
+<div class="note amber">South gateway notice: the interim polygon’s centroid sits near Beijing North Station, inconsistent with its label (upstream Issue #1029, ~2.26 km). We call it the South Gateway and recompute once official data lands.</div>
+</section>
+
+<section id="landuse">
+<h2><span class="n">04</span>Land-use zoning</h2>
+<p class="lede">A gap-free, non-overlapping partition; coverage gap 0 m².</p>
+<figure><img src="../assets/figures/land-use-structure.en.png" alt="Land use: the spine runs through, functions organise along the rehearsal interface"><figcaption>Land use: the spine runs through, functions organise along the rehearsal interface</figcaption></figure>
+<div class="note rose"><b>Conclusions withheld</b>：
+FAR, building height, parcel-level retain-renovate-demolish, road lines, rail alignment, utility capacity, investment and sequencing are all left open. Publishing them before official data would manufacture false precision.</div>
+</section>
+
+<section id="mobility">
+<h2><span class="n">05</span>Mobility and blue-green public space</h2>
+<p class="lede">Reconnect what is severed rather than widen what already flows.</p>
+<figure><img src="../assets/figures/mobility-bluegreen.en.png" alt="One spine, seven seams"><figcaption>One spine, seven seams</figcaption></figure>
+<div class="grid g2">
+<div class="card"><h3>South-north continuity</h3><p>Continuous, green, slow. The spine is the main walk/cycle route and the default surface for low-speed robots.</p></div>
+<div class="card"><h3>East-west stitching</h3><p>Nodal, hard, reversible. Seven seams piloted with reversible lightweight installations.</p></div>
+</div>
+</section>
+
+<section id="buildings">
+<h2><span class="n">06</span>Buildings, scale and retain-renovate-demolish</h2>
+<p class="lede">Six indicative footprints totalling ~14.5 ha, shown only to convey cluster relationships and scale.</p>
+<ul>
+<li>Existing housing is retained; rehearsal facilities must not displace it under the banner of renewal.</li>
+<li>Existing sheds and warehouses along the spine are converted to rehearsal grounds and community services.</li>
+<li>Demolition is discussed only for clear safety hazards, and only with rehousing and alternatives in place.</li>
+</ul>
+<div class="note mint">No storeys, heights, area indicators, or intensity judgements. Parcel-level decisions are statutory and left to professional teams.</div>
+</section>
+
+<section id="renewal">
+<h2><span class="n">07</span>Renewal projects and phasing</h2>
+<table><thead><tr><th>Phase</th><th>Content</th><th>Acceptance test</th></tr></thead><tbody>
+<tr><td>1</td><td>South spine, AI-off Plaza, fallback concourse</td><td>8 consecutive compliant AI-off drills</td></tr>
+<tr><td>2</td><td>Living rehearsal, Colonnade, seam pilots</td><td>30-day complaint response rate</td></tr>
+<tr><td>3</td><td>Grade-1 grounds, Ledger Tower, northern reserve</td><td>Auditable failure-reporting rate</td></tr>
+</tbody></table>
+<div class="note amber">Phasing is a suggested order of discussion, not a development schedule or investment decision.</div>
+</section>
+
+<section id="scenarios">
+<h2><span class="n">08</span>AI scenarios</h2>
+<p class="lede">Every card states its rehearsal grade and its human fallback. A scenario without a fallback is not included.</p>
+<table><thead><tr><th>#</th><th>Scenario</th><th>Grade</th><th>Human fallback</th></tr></thead><tbody><tr><td>1</td><td>Walking navigation and crowd easing</td><td>G2</td><td>Fixed signage + marshals</td></tr><tr><td>2</td><td>Low-speed robot delivery</td><td>G1→G2</td><td>Human delivery and pickup points</td></tr><tr><td>3</td><td>Enterprise service copilot</td><td>G2→G3</td><td>Staffed counter kept at all times</td></tr><tr><td>4</td><td>Cultural guiding and history</td><td>G3</td><td>Paper guide + volunteer docents</td></tr><tr><td>5</td><td>Health service navigation</td><td>G2</td><td>Community nurse and phone triage</td></tr><tr><td>6</td><td>Public safety operations review</td><td>G1</td><td>Staffed watch and review meeting</td></tr><tr><td>7</td><td>Step-free route checking</td><td>G2</td><td>Human patrol and repair</td></tr><tr><td>8</td><td>Night lighting and safety</td><td>G2</td><td>Fixed lighting floor</td></tr><tr><td>9</td><td>Seam crossing negotiation</td><td>G2</td><td>On-site steward</td></tr><tr><td>10</td><td>Open data and readings</td><td>G3</td><td>Regular paper and web notices</td></tr><tr><td>11</td><td>Community feedback</td><td>G2</td><td>Offline forum and letterbox</td></tr><tr><td>12</td><td>AI-off fallback drill</td><td>G3</td><td>Fully staffed process</td></tr></tbody></table>
+</section>
+
+<section id="metrics">
+<h2><span class="n">09</span>Core metrics</h2>
+<p class="lede">Spatial metrics recomputed from submitted geometry in EPSG:4548; process metrics from the 20-task ledger.</p>
+<div class="grid g3">
+<div class="metric" data-metric="site_area_sqm" data-value="11412825.386"><div class="k">Site area</div><div class="v">11,412,825</div><div class="u">m² | provisional boundary, low confidence</div></div>
+<div class="metric" data-metric="green_ratio" data-value="0.245384"><div class="k">Green ratio</div><div class="v">0.2454</div><div class="u">green area / site area</div></div>
+<div class="metric" data-metric="public_space_ratio" data-value="0.07885"><div class="k">Public space ratio</div><div class="v">0.0789</div><div class="u">public space / site area</div></div>
+</div>
+<div class="grid g4" style="margin-top:14px">
+<div class="metric" data-metric="green_space_area_sqm" data-value="2800524.399"><div class="k">Green space</div><div class="v">2,800,524</div><div class="u">m²</div></div>
+<div class="metric" data-metric="public_space_area_sqm" data-value="899900.958"><div class="k">Public space</div><div class="v">899,901</div><div class="u">m²</div></div>
+<div class="metric" data-metric="building_footprint_area_sqm" data-value="144950.0"><div class="k">Footprints</div><div class="v">144,950</div><div class="u">m²</div></div>
+<div class="metric" data-metric="east_west_seam_count" data-value="7"><div class="k">East-west seams</div><div class="v">7</div><div class="u">count</div></div>
+</div>
+<div class="grid g4" style="margin-top:14px">
+<div class="metric" data-metric="simulation_task_count" data-value="20"><div class="k">Ledger tasks</div><div class="v">20</div><div class="u">tasks</div></div>
+<div class="metric" data-metric="simulation_success_rate" data-value="0.85"><div class="k">Success rate</div><div class="v">0.85</div><div class="u">success / total</div></div>
+<div class="metric" data-metric="audit_completeness" data-value="0.9"><div class="k">Audit completeness</div><div class="v">0.90</div><div class="u">closed / total</div></div>
+<div class="metric" data-metric="energy_budget_violations" data-value="2"><div class="k">Energy overruns</div><div class="v">2</div><div class="u">count</div></div>
+</div>
+<div class="grid g2" style="margin-top:14px">
+<div class="metric unk"><div class="k">Floor area ratio</div><div class="v">unknown</div><div class="u">法定容积率控制条件和 official boundary 均未公开，按规则保持 unknown，不用占位值替代。</div></div>
+<div class="metric unk"><div class="k">Building height</div><div class="v">unknown</div><div class="u">建筑限高属于法定管控内容，未公开，本方案不作结论。</div></div>
+</div>
+<div class="note amber">Recalculation triggers: (1) official boundary released (2) official key-area polygons released (3) south gateway location clarified. On any of these, all spatial metrics are recomputed and the figures, boards and this page regenerated.</div>
+</section>
+
+<section id="acceptance">
+<h2><span class="n">10</span>Rehearsal acceptance</h2>
+<p class="lede">Two of five acceptance targets were met — the most important output of this round.</p>
+<table><thead><tr><th>Metric</th><th>Target</th><th>Actual</th><th>Result</th></tr></thead><tbody><tr><td>Success rate</td><td>0.85</td><td class="pass">0.85</td><td class="pass">Met</td></tr><tr><td>High-risk intercept</td><td>1.00</td><td class="pass">1.00</td><td class="pass">Met</td></tr><tr><td>Tool schema pass rate</td><td>1.00</td><td class="fail">0.95</td><td class="fail">Not met</td></tr><tr><td>Audit completeness</td><td>1.00</td><td class="fail">0.90</td><td class="fail">Not met</td></tr><tr><td>Energy overruns</td><td>0</td><td class="fail">2</td><td class="fail">Not met</td></tr></tbody></table>
+<div class="note rose">The three unmet targets enter the next manifest. Targets are not lowered, and the affected scenarios cannot be promoted before repair.</div>
+</section>
+
+<section id="coverage">
+<h2><span class="n">11</span>Task coverage</h2>
+<table><thead><tr><th>Task</th><th>Response</th><th>Status</th></tr></thead><tbody><tr><td><code>agent.1</code></td><td>Concept, naming/logo, areas and wings</td><td class="pass">Covered</td></tr><tr><td><code>agent.2</code></td><td>Full-stack system and 6 ecosystem cases</td><td class="pass">Covered</td></tr><tr><td><code>agent.3</code></td><td>12 scenario cards, 5 personas, 3 test scenarios</td><td class="pass">Covered</td></tr><tr><td><code>agent.4</code></td><td>Public space, 3 landmarks, honour display</td><td class="pass">Covered</td></tr><tr><td><code>agent.5</code></td><td>Heritage and new AI culture narrative</td><td class="pass">Covered</td></tr><tr><td><code>agent.6</code></td><td>Annual events and long-term operations</td><td class="pass">Covered</td></tr><tr><td><code>1.3 / 1.4 / 1.5</code></td><td>Announcement tasks, see compliance_matrix.json</td><td class="pass">Covered</td></tr></tbody></table>
+</section>
+
+<section id="risk">
+<h2><span class="n">12</span>Risk matrix</h2>
+<p class="lede">High risk does not mean a bad proposal; unexplained risk does. Every dimension scored 4 or above names its human review.</p>
+<table><thead><tr><th>Dimension</th><th>Score</th><th>Note</th><th>Human review</th></tr></thead><tbody><tr><td>政策不确定性</td><td>5/5</td><td>官方边界、控规指标、场景准入规则和数据治理规则均未公开；本方案的分级准入机制没有现成法定依据。</td><td>由主管部门与法律合规专业人员复核准入分级是否需要单独制度授权。</td></tr><tr><td>实施复杂度</td><td>4/5</td><td>三级演练分级需要场地、运营主体、审计机制和退出机制同时到位，跨部门协同链条长。</td><td>由规划、交通、数据治理、社区运营和法律合规团队联合复核分级标准与退出条件。</td></tr><tr><td>公众接受度</td><td>4/5</td><td>断电广场式的定期关闭 AI、居民陪审等机制可能被理解为服务不稳定或形式主义。</td><td>由社区居民代表、无障碍与老年服务机构参与复核体验设计与告知方式。</td></tr><tr><td>技术成熟度</td><td>4/5</td><td>本轮 20 项演练中工具协议合规率 0.95、审计完整率 0.90、能耗超预算 2 次，三项验收目标未达成。</td><td>由具备机器人、具身智能与公共安全背景的专业人员复核未达标项的整改方案。</td></tr><tr><td>公平与包容性</td><td>4/5</td><td>演练台账本身对老年人、无障碍需求者和非数字用户不可见；AI 服务扩张可能挤压人工窗口。</td><td>由无障碍、老龄服务与社会工作专业人员复核兜底通道的可达性与告知方式。</td></tr><tr><td>数据隐私</td><td>3/5</td><td>演练涉及人流、排队、服务请求等行为数据；开放场景一旦转入真实环境，存在个人可识别与过度采集风险。</td><td>—</td></tr><tr><td>运维成本</td><td>3/5</td><td>持续维护任务清单、复算脚本、审计闭环和人工兜底通道会产生长期人力与算力成本。</td><td>—</td></tr><tr><td>空间争议</td><td>3/5</td><td>东西缝合口与广场占用既有通行与经营界面，可能与沿线居民、商户和交通组织冲突。</td><td>—</td></tr></tbody></table>
+</section>
+
+<section id="selfcheck">
+<h2><span class="n">13</span>Self-check status</h2>
+<table><thead><tr><th>Local gate</th><th>Result</th></tr></thead><tbody><tr><td><code>DETERMINISTIC_VALIDATION</code></td><td class="pass">PASS</td></tr><tr><td><code>SPATIAL_REVIEW</code></td><td class="pass">PASS</td></tr><tr><td><code>VISUAL_PACKAGING</code></td><td class="pass">PASS</td></tr><tr><td><code>PROFESSIONAL_EVIDENCE</code></td><td class="pass">PASS</td></tr></tbody></table>
+<div class="note mint">All four local gates passing means the participant-controlled completeness checks passed. It is not a review verdict, an exhibition decision, or government approval.</div>
+</section>
+
+<section id="sources">
+<h2><span class="n">14</span>Sources and assumptions</h2>
+<div class="grid g2">
+<div class="card"><h3>Sources</h3><ul>
+<li>Official pre-qualification announcement for the open call</li>
+<li><code>brief/site-package/agent_taskbook.json</code></li>
+<li><code>data/source_registry.json</code>、<code>data/processed/agent_fact_pack.md</code></li>
+<li><code>brief/site-package/geometry/provisional_boundaries.geojson</code></li>
+<li>Upstream Issue #2549, Service Equivalence Baseline v0.5.0 (CC BY-SA 4.0)</li>
+<li>Upstream Issue #1029, south gateway geometry discrepancy</li>
+</ul></div>
+<div class="card"><h3>Assumptions</h3><ul>
+<li>All spatial metrics rest on provisional interim geometry, low confidence.</li>
+<li>Readings come from fixed-seed offline synthetic traces, not field measurement.</li>
+<li>No personal data is collected, stored, or inferred during rehearsal.</li>
+<li>The graded admission mechanism has no existing statutory basis and needs separate authorisation.</li>
+</ul></div>
+</div>
+</section>
+
+<footer>
+<p>This page is an offline exhibit with no CDN, remote tiles, external scripts, external fonts, API calls, or iframes. The authoritative data remains geometry/*.geojson, metrics.json, simulation.json, risk.json, and the three matrix files.</p>
+<p>All spatial, operational, branding, and policy content is a conceptual suggestion or reference scheme for professional teams to develop further. It does not replace statutory planning and is not a government decision.</p>
+</footer>
+</div>
+</body>
+</html>

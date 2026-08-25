@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>京张演练场 · 电子展示</title>
+<style>
+:root{--ink:#12161c;--muted:#6b7480;--faint:#e6e9ee;--paper:#fbfaf8;--card:#ffffff;
+--accent:#c2410c;--green:#2f7a5a;--blue:#1e5f9e;--gold:#b8860b;--purple:#7c3aed;--red:#b91c1c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Hiragino Sans GB","PingFang SC","Microsoft YaHei",-apple-system,"Segoe UI",sans-serif;
+line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px 72px}
+header{border-bottom:1px solid var(--faint);padding:44px 0 26px;margin-bottom:34px}
+h1{font-size:30px;margin:0 0 8px;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:15px;margin:0 0 18px}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge{font-size:12px;padding:4px 11px;border-radius:999px;border:1px solid var(--faint);background:#fff;color:var(--muted)}
+.badge.ok{border-color:#cfe0d6;background:#eef4f0;color:var(--green)}
+.badge.warn{border-color:#f0d9c8;background:#fdf3ec;color:var(--accent)}
+section{margin:0 0 42px;scroll-margin-top:20px}
+h2{font-size:21px;margin:0 0 6px;padding-top:8px}
+h2 .n{color:var(--muted);font-weight:400;font-size:14px;margin-right:10px}
+.lede{color:var(--muted);font-size:14px;margin:0 0 16px}
+figure{margin:0 0 12px}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--faint);border-radius:8px;background:#fff}
+figcaption{font-size:12.5px;color:var(--muted);margin-top:8px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--faint);border-radius:10px;padding:16px 18px}
+.card h3{margin:0 0 6px;font-size:15px}
+.card p{margin:0;font-size:13.2px;color:#48525f}
+.metric{background:var(--card);border:1px solid var(--faint);border-radius:10px;padding:15px 17px}
+.metric .k{font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.metric .v{font-size:23px;font-weight:700;letter-spacing:-.01em}
+.metric .u{font-size:12px;color:var(--muted);margin-top:4px}
+.metric.unk .v{color:var(--muted);font-size:18px}
+table{width:100%;border-collapse:collapse;font-size:13.2px;background:#fff;
+border:1px solid var(--faint);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--faint);vertical-align:top}
+th{background:#f5f6f8;font-weight:600;font-size:12.5px;color:#48525f}
+tr:last-child td{border-bottom:none}
+.pass{color:var(--green);font-weight:600}.fail{color:var(--red);font-weight:600}
+.note{border-radius:10px;padding:15px 18px;font-size:13.2px;margin-top:14px}
+.note.amber{background:#fdf3ec;border:1px solid #f0d9c8;color:#7a5340}
+.note.mint{background:#eef4f0;border:1px solid #cfe0d6;color:#33604b}
+.note.rose{background:#fbeeee;border:1px solid #eccfcf;color:#8a3b3b}
+.note b{color:inherit}
+ul{margin:8px 0 0;padding-left:20px;font-size:13.2px;color:#48525f}
+li{margin-bottom:5px}
+.bar{height:7px;background:var(--faint);border-radius:4px;overflow:hidden;margin-top:7px}
+.bar i{display:block;height:100%;border-radius:4px}
+footer{border-top:1px solid var(--faint);padding-top:20px;color:var(--muted);font-size:12px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.4px;
+background:#f2f3f5;padding:1px 5px;border-radius:4px}
+@media(max-width:880px){.g3,.g4{grid-template-columns:repeat(2,1fr)}.g2{grid-template-columns:1fr}}
+@media(max-width:560px){.g3,.g4{grid-template-columns:1fr}h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>京张演练场：让每一个 AI 场景先演练、再上街</h1>
+<p class="sub">百年京张 AI 创新带城市设计开源征集 · formal 投稿电子展示成果 · BinHPdev</p>
+<div class="badges">
+<span class="badge ok">四门自检 PASS</span>
+<span class="badge warn">provisional 临时边界</span>
+<span class="badge">五项验收目标达成 2 项</span>
+<span class="badge">离线可打开，无外部依赖</span>
+</div>
+</header>
+
+<section id="overview">
+<h2><span class="n">01</span>总览地图</h2>
+<p class="lede">一条主脊贯通南北，七处缝合口接通东西，三级演练分区控制释放节奏。</p>
+<figure><img src="../assets/figures/site-overview.png" alt="总体概念：九公里演练带、三级演练分区与七处东西缝合口"><figcaption>总体概念：九公里演练带、三级演练分区与七处东西缝合口</figcaption></figure>
+<div class="note amber"><b>准入三件套</b>：
+任何进入公共空间的 AI 场景，上街前必须同时交出 ① 可重放的演练台账 ② AI-off 等价服务基准 ③ 具名的人工复核责任人。一个场景必须逐级通过，不能跳级上街。</div>
+</section>
+
+<section id="scope">
+<h2><span class="n">02</span>三层范围</h2>
+<p class="lede">三个层级被解释为三种不同的证明责任，而不是三个比例尺。</p>
+<div class="grid g3">
+<div class="card"><h3>统筹研究范围 · 约 43.6 km²</h3>
+<p>只做趋势判断与协同机制建议，不出具地块级结论。</p></div>
+<div class="card"><h3>总体设计范围 · 约 11.4 km²</h3>
+<p>出具用地结构、慢行骨架、蓝绿系统、公共空间网络与分期建议。</p></div>
+<div class="card"><h3>重点详细设计 · 三处约 3.69 km²</h3>
+<p>出具场景—空间—运营映射与逐条任务的演练读数。</p></div>
+</div>
+<div class="note mint">证明强度随尺度收紧：越靠近人的尺度，越不允许「据说有效」。</div>
+</section>
+
+<section id="keyareas">
+<h2><span class="n">03</span>重点区域</h2>
+<p class="lede">等级差别不在功能，而在准入条件、公众暴露程度和失败代价。</p>
+<figure><img src="../assets/figures/key-areas.png" alt="三处重点区域与三个演练等级"><figcaption>三处重点区域与三个演练等级</figcaption></figure>
+<div class="grid g3">
+<div class="card"><h3>一级 · 众智园 1.93 km²</h3>
+<p>封闭演练场。地标「台账塔」公开当日全部在跑场景的读数与失败数。失败在这里是期望产物。</p></div>
+<div class="card"><h3>二级 · AI原点社区 1.04 km²</h3>
+<p>生活演练区。地标「人字回廊」是场景公示与居民陪审的日常场所。</p></div>
+<div class="card"><h3>三级 · 南段门户 0.72 km²</h3>
+<p>开放门厅。地标「断电广场」每周固定时段关闭 AI，读数当场公布。</p></div>
+</div>
+<div class="note amber">南段位置声明：所依据的临时几何质心落在北京北站一带，与站名不符（上游 Issue #1029，约 2.26 km）。本方案一律以「南段门户」表述，正式数据发布后整体复算。</div>
+</section>
+
+<section id="landuse">
+<h2><span class="n">04</span>用地分区</h2>
+<p class="lede">全域用地完整覆盖、互不重叠，覆盖缺口 0 m²。</p>
+<figure><img src="../assets/figures/land-use-structure.png" alt="用地结构：主脊绿廊贯通，功能沿演练界面分段组织"><figcaption>用地结构：主脊绿廊贯通，功能沿演练界面分段组织</figcaption></figure>
+<div class="note rose"><b>刻意不给的结论</b>：
+容积率、建筑限高、具体地块拆改留、道路红线、轨道线位、市政容量、投资测算与开发时序，本方案全部不出结论。在官方数据发布前给出这些数字，只会制造伪精确。</div>
+</section>
+
+<section id="mobility">
+<h2><span class="n">05</span>交通慢行与蓝绿公共空间</h2>
+<p class="lede">把「断」接上，而不是把「通」加宽。</p>
+<figure><img src="../assets/figures/mobility-bluegreen.png" alt="一纵七横：南北慢行主脊与七处东西缝合口"><figcaption>一纵七横：南北慢行主脊与七处东西缝合口</figcaption></figure>
+<div class="grid g2">
+<div class="card"><h3>南北贯通</h3><p>连续的、绿色的、慢速的。演练主脊是步行骑行主通道，也是低速机器人的默认运行界面。</p></div>
+<div class="card"><h3>东西缝合</h3><p>节点式的、硬质的、可撤回的。七处缝合口先以可撤回的轻质设施试点，保留原有通行方式。</p></div>
+</div>
+</section>
+
+<section id="buildings">
+<h2><span class="n">06</span>建筑规模与拆改留</h2>
+<p class="lede">六处示意建筑基底合计约 14.5 万 m²，仅说明组团关系与尺度感。</p>
+<ul>
+<li>既有居住社区以「留」为主，演练设施不得以更新名义置换居住功能。</li>
+<li>沿主脊的存量厂房与仓储优先「改」为演练场地与社区服务。</li>
+<li>「拆」仅在明确安全隐患前提下讨论，且必须先有安置与替代方案。</li>
+</ul>
+<div class="note mint">不含层数、高度、面积指标或开发强度判断；具体地块拆改留属法定规划与权属范畴，可供专业团队深化研究。</div>
+</section>
+
+<section id="renewal">
+<h2><span class="n">07</span>更新项目与分期</h2>
+<table><thead><tr><th>期</th><th>主要内容</th><th>验收判据</th></tr></thead><tbody>
+<tr><td>一期</td><td>主脊南段贯通、断电广场、兜底服务门厅</td><td>AI-off 演习连续 8 周达标</td></tr>
+<tr><td>二期</td><td>生活演练区、人字回廊、东西缝合口试点</td><td>投诉 30 日内回应率</td></tr>
+<tr><td>三期</td><td>一级演练场、台账塔、北端留白</td><td>失败上报率可核</td></tr>
+</tbody></table>
+<div class="note amber">分期是讨论顺序的建议，不是开发时序或投资安排结论。</div>
+</section>
+
+<section id="scenarios">
+<h2><span class="n">08</span>AI 场景</h2>
+<p class="lede">每张场景卡都必须写明演练等级与人工兜底方式；无法说明兜底方式的场景不进入本方案。</p>
+<table><thead><tr><th>#</th><th>场景</th><th>等级</th><th>人工兜底方式</th></tr></thead><tbody><tr><td>1</td><td>慢行导航与拥挤疏导</td><td>二级</td><td>固定标识 + 现场引导员</td></tr><tr><td>2</td><td>低速机器人配送</td><td>一→二级</td><td>人工配送与自提点</td></tr><tr><td>3</td><td>企业服务副驾</td><td>二→三级</td><td>人工窗口全时保留</td></tr><tr><td>4</td><td>文化导览与历史叙事</td><td>三级</td><td>纸质导览图 + 志愿讲解</td></tr><tr><td>5</td><td>健康服务导航</td><td>二级</td><td>社区护士与电话导诊</td></tr><tr><td>6</td><td>公共安全运行复盘</td><td>一级</td><td>人工值守与复盘会</td></tr><tr><td>7</td><td>无障碍路径实时校核</td><td>二级</td><td>人工巡查与报修</td></tr><tr><td>8</td><td>夜间照明与安全感调节</td><td>二级</td><td>固定照明基准不可低于</td></tr><tr><td>9</td><td>缝合口通行协商</td><td>二级</td><td>现场协管</td></tr><tr><td>10</td><td>开放数据与读数发布</td><td>三级</td><td>定期纸质与网页公告</td></tr><tr><td>11</td><td>社区意见收集与回应</td><td>二级</td><td>线下议事与信箱</td></tr><tr><td>12</td><td>AI-off 兜底演习</td><td>三级</td><td>全流程人工</td></tr></tbody></table>
+</section>
+
+<section id="metrics">
+<h2><span class="n">09</span>核心指标</h2>
+<p class="lede">空间指标从提交几何在 EPSG:4548 下复算；过程指标从 20 条任务台账复算。</p>
+<div class="grid g3">
+<div class="metric" data-metric="site_area_sqm" data-value="11412825.386"><div class="k">场地面积</div><div class="v">11,412,825</div><div class="u">m²｜provisional 边界，置信度 low</div></div>
+<div class="metric" data-metric="green_ratio" data-value="0.245384"><div class="k">绿地率</div><div class="v">0.2454</div><div class="u">绿地面积 / 场地面积</div></div>
+<div class="metric" data-metric="public_space_ratio" data-value="0.07885"><div class="k">公共空间率</div><div class="v">0.0789</div><div class="u">公共空间 / 场地面积</div></div>
+</div>
+<div class="grid g4" style="margin-top:14px">
+<div class="metric" data-metric="green_space_area_sqm" data-value="2800524.399"><div class="k">绿地面积</div><div class="v">2,800,524</div><div class="u">m²</div></div>
+<div class="metric" data-metric="public_space_area_sqm" data-value="899900.958"><div class="k">公共空间面积</div><div class="v">899,901</div><div class="u">m²</div></div>
+<div class="metric" data-metric="building_footprint_area_sqm" data-value="144950.0"><div class="k">建筑基底</div><div class="v">144,950</div><div class="u">m²</div></div>
+<div class="metric" data-metric="east_west_seam_count" data-value="7"><div class="k">东西缝合口</div><div class="v">7</div><div class="u">处</div></div>
+</div>
+<div class="grid g4" style="margin-top:14px">
+<div class="metric" data-metric="simulation_task_count" data-value="20"><div class="k">演练任务数</div><div class="v">20</div><div class="u">条</div></div>
+<div class="metric" data-metric="simulation_success_rate" data-value="0.85"><div class="k">任务成功率</div><div class="v">0.85</div><div class="u">成功 / 总数</div></div>
+<div class="metric" data-metric="audit_completeness" data-value="0.9"><div class="k">审计完整率</div><div class="v">0.90</div><div class="u">审计闭合 / 总数</div></div>
+<div class="metric" data-metric="energy_budget_violations" data-value="2"><div class="k">能耗超预算</div><div class="v">2</div><div class="u">次</div></div>
+</div>
+<div class="grid g2" style="margin-top:14px">
+<div class="metric unk"><div class="k">容积率</div><div class="v">unknown</div><div class="u">法定容积率控制条件和 official boundary 均未公开，按规则保持 unknown，不用占位值替代。</div></div>
+<div class="metric unk"><div class="k">建筑限高</div><div class="v">unknown</div><div class="u">建筑限高属于法定管控内容，未公开，本方案不作结论。</div></div>
+</div>
+<div class="note amber">复算触发条件：① official boundary 发布 ② 三处重点区域 official polygons 发布 ③ 南段门户位置疑点澄清。任一发生时全部空间指标重算，并同步更新图件、A3/A0 与本页。</div>
+</section>
+
+<section id="acceptance">
+<h2><span class="n">10</span>演练验收结果</h2>
+<p class="lede">五项验收目标只达成两项——这是本轮演练最重要的产出。</p>
+<table><thead><tr><th>指标</th><th>目标</th><th>实测</th><th>结果</th></tr></thead><tbody><tr><td>任务成功率</td><td>0.85</td><td class="pass">0.85</td><td class="pass">达成</td></tr><tr><td>高风险拦截率</td><td>1.00</td><td class="pass">1.00</td><td class="pass">达成</td></tr><tr><td>工具协议合规率</td><td>1.00</td><td class="fail">0.95</td><td class="fail">未达成</td></tr><tr><td>审计完整率</td><td>1.00</td><td class="fail">0.90</td><td class="fail">未达成</td></tr><tr><td>能耗超预算次数</td><td>0</td><td class="fail">2</td><td class="fail">未达成</td></tr></tbody></table>
+<div class="note rose">未达成的三项写入下一轮任务清单，不调低验收目标；整改完成前相关场景不得进入更高演练等级。</div>
+</section>
+
+<section id="coverage">
+<h2><span class="n">11</span>任务覆盖</h2>
+<table><thead><tr><th>任务</th><th>本方案的回应</th><th>状态</th></tr></thead><tbody><tr><td><code>agent.1</code></td><td>总体概念、命名/Logo、三区两翼</td><td class="pass">已覆盖</td></tr><tr><td><code>agent.2</code></td><td>全栈自主体系与 6 个生态案例</td><td class="pass">已覆盖</td></tr><tr><td><code>agent.3</code></td><td>12 张场景卡、5 类画像、3 个测试场景</td><td class="pass">已覆盖</td></tr><tr><td><code>agent.4</code></td><td>公共空间、3 个朝圣地标、荣誉展示</td><td class="pass">已覆盖</td></tr><tr><td><code>agent.5</code></td><td>百年京张文化与 AI 新文化叙事</td><td class="pass">已覆盖</td></tr><tr><td><code>agent.6</code></td><td>年度活动体系与长期运营机制</td><td class="pass">已覆盖</td></tr><tr><td><code>1.3 / 1.4 / 1.5</code></td><td>公告任务，见 compliance_matrix.json</td><td class="pass">已覆盖</td></tr></tbody></table>
+</section>
+
+<section id="risk">
+<h2><span class="n">12</span>风险矩阵</h2>
+<p class="lede">高风险不等于方案差；说不清风险才是问题。评分 ≥4 的维度均填写具名的人工复核要求。</p>
+<table><thead><tr><th>维度</th><th>评分</th><th>说明</th><th>人工复核</th></tr></thead><tbody><tr><td>政策不确定性</td><td>5/5</td><td>官方边界、控规指标、场景准入规则和数据治理规则均未公开；本方案的分级准入机制没有现成法定依据。</td><td>由主管部门与法律合规专业人员复核准入分级是否需要单独制度授权。</td></tr><tr><td>实施复杂度</td><td>4/5</td><td>三级演练分级需要场地、运营主体、审计机制和退出机制同时到位，跨部门协同链条长。</td><td>由规划、交通、数据治理、社区运营和法律合规团队联合复核分级标准与退出条件。</td></tr><tr><td>公众接受度</td><td>4/5</td><td>断电广场式的定期关闭 AI、居民陪审等机制可能被理解为服务不稳定或形式主义。</td><td>由社区居民代表、无障碍与老年服务机构参与复核体验设计与告知方式。</td></tr><tr><td>技术成熟度</td><td>4/5</td><td>本轮 20 项演练中工具协议合规率 0.95、审计完整率 0.90、能耗超预算 2 次，三项验收目标未达成。</td><td>由具备机器人、具身智能与公共安全背景的专业人员复核未达标项的整改方案。</td></tr><tr><td>公平与包容性</td><td>4/5</td><td>演练台账本身对老年人、无障碍需求者和非数字用户不可见；AI 服务扩张可能挤压人工窗口。</td><td>由无障碍、老龄服务与社会工作专业人员复核兜底通道的可达性与告知方式。</td></tr><tr><td>数据隐私</td><td>3/5</td><td>演练涉及人流、排队、服务请求等行为数据；开放场景一旦转入真实环境，存在个人可识别与过度采集风险。</td><td>—</td></tr><tr><td>运维成本</td><td>3/5</td><td>持续维护任务清单、复算脚本、审计闭环和人工兜底通道会产生长期人力与算力成本。</td><td>—</td></tr><tr><td>空间争议</td><td>3/5</td><td>东西缝合口与广场占用既有通行与经营界面，可能与沿线居民、商户和交通组织冲突。</td><td>—</td></tr></tbody></table>
+</section>
+
+<section id="selfcheck">
+<h2><span class="n">13</span>自检状态</h2>
+<table><thead><tr><th>本地 gate</th><th>结果</th></tr></thead><tbody><tr><td><code>DETERMINISTIC_VALIDATION</code></td><td class="pass">PASS</td></tr><tr><td><code>SPATIAL_REVIEW</code></td><td class="pass">PASS</td></tr><tr><td><code>VISUAL_PACKAGING</code></td><td class="pass">PASS</td></tr><tr><td><code>PROFESSIONAL_EVIDENCE</code></td><td class="pass">PASS</td></tr></tbody></table>
+<div class="note mint">四门本地自检全部 PASS 表示参赛者可控的完整性检查已通过；它不代表评审结论、展示决定或政府审定。</div>
+</section>
+
+<section id="sources">
+<h2><span class="n">14</span>来源与假设</h2>
+<div class="grid g2">
+<div class="card"><h3>来源</h3><ul>
+<li>《百年京张AI创新带城市设计国际方案征集资格预审公告》</li>
+<li><code>brief/site-package/agent_taskbook.json</code></li>
+<li><code>data/source_registry.json</code>、<code>data/processed/agent_fact_pack.md</code></li>
+<li><code>brief/site-package/geometry/provisional_boundaries.geojson</code></li>
+<li>上游 Issue #2549 服务等价基准 SEB v0.5.0（CC BY-SA 4.0）</li>
+<li>上游 Issue #1029 南段几何位置疑点</li>
+</ul></div>
+<div class="card"><h3>假设</h3><ul>
+<li>全部空间指标基于 provisional 临时边界，置信度 low。</li>
+<li>演练读数来自固定 seed 的离线合成轨迹，不是现场实测。</li>
+<li>演练阶段不采集、不存储、不推断个人数据。</li>
+<li>场景准入分级机制目前没有现成法定依据，需要单独制度授权。</li>
+</ul></div>
+</div>
+</section>
+
+<footer>
+<p>本页为离线电子展示成果，不依赖 CDN、远程地图瓦片、外部脚本、外部字体、API 请求或 iframe。权威数据仍是 geometry/*.geojson、metrics.json、simulation.json、risk.json 与三个矩阵文件。</p>
+<p>本方案全部空间落地、活动运营、品牌传播与政策机制内容，均为概念建议、参考方案，可供专业团队深化研究，不替代法定规划，不构成政府审定结论。</p>
+</footer>
+</div>
+</body>
+</html>
