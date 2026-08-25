@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R58.5",
-  "as_of": "2026-08-24",
+  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R59.0",
+  "as_of": "2026-08-25",
   "audit_type": "contributor_editorial_review",
   "status": "contributor_side_material_equivalence_checked_human_confirmation_open",
   "review_method": {
@@ -17,7 +17,9 @@
     "visual/index.html <-> visual/index.en.html",
     "22 Chinese/English PNG figure pairs",
     "A3 Chinese/English 14-page pair",
-    "A0 Chinese/English 8-page pair"
+    "A0 Chinese/English 8-page pair",
+    "one silent bilingual 54-second MP4 with shared bilingual VTT and Markdown transcript",
+    "one shared conceptual poster and one shared four-state experience contract"
   ],
   "checks": [
     {
@@ -36,7 +38,7 @@
       "check_id": "BME-03",
       "topic": "state_logic",
       "result": "pass",
-      "evidence": "Ordinary, verification, failure and recovery are paired as service states, not maturity levels; failure stops the verification overlay while ordinary life and the same-task non-AI route continue."
+      "evidence": "Ordinary, verification, fault and recovery are paired as service states across Markdown, HTML, the static storyboard, video, VTT and transcript; fault stops only the verification overlay, ordinary life and same-task non-AI continue, and recovery is not restart, authorization, approval or G1."
     },
     {
       "check_id": "BME-04",
@@ -66,7 +68,7 @@
       "check_id": "BME-08",
       "topic": "publication_pairing",
       "result": "pass",
-      "evidence": "The rebuilt A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages. Two fresh-process builds are byte-identical, all 44 pages are rendered, and body-image fingerprints contain no duplicate page pair within any PDF."
+      "evidence": "The R59 A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages. Two fresh-process builds are byte-identical; all 44 pages render without blank, clipping, replacement or duplicate-body findings, and the bilingual R59 storyboard occupies the paired designated positions."
     },
     {
       "check_id": "BME-09",
@@ -79,6 +81,17 @@
       "topic": "first_view_and_accessible_descriptions",
       "result": "pass_with_html_as_accessible_counterpart",
       "evidence": "Both visual counterparts expose the same compact first-view ruling, 12/8/3/36 labels, component-scoped rights boundary, skip target, keyboard focus and descriptive alt text for the five primary figures. Fixed-page PDFs remain visual publications and do not claim tagged-PDF conformance; paired offline HTML remains the keyboard and machine-readable route."
+    },
+    {
+      "check_id": "BME-11",
+      "topic": "motion_caption_transcript_and_fallback_equivalence",
+      "result": "pass_with_contributor_side_qa_only",
+      "evidence": "The silent MP4 uses bilingual on-frame titles; one shared VTT contains eight contiguous cues with Chinese first and English second; the Markdown transcript maps the same eight shots, method, silence, editorial-duration and truth boundaries; visual #s3 keeps the paired static storyboards visible beside native controls. Independent human confirmation remains open."
+    },
+    {
+      "check_id": "R59-RIGHTS-EXACT-PACKAGE",
+      "status": "pass_contributor_audit",
+      "evidence": "Both languages state that the current exact package may be reviewed, displayed and redistributed under component-specific terms, while independent legal/trademark review and future installation/professional authorization remain absent."
     }
   ],
   "critical_claim_map": [
@@ -101,8 +114,8 @@
     {
       "claim_id": "EQ-03",
       "topic": "ordinary_verification_fault_recovery",
-      "zh_location": "proposal.md opening four-state block; assets/figures/four-state-journey.png",
-      "en_location": "proposal.en.md opening four-state block; assets/figures/four-state-journey.en.png",
+      "zh_location": "proposal.md opening four-state block; visual/index.html#s3; assets/figures/four-state-journey.png; shared video/VTT/transcript",
+      "en_location": "proposal.en.md opening four-state block; visual/index.en.html#s3; assets/figures/four-state-journey.en.png; shared video/VTT/transcript",
       "paired_statement": "The four states govern only the verification overlay; fault preserves ordinary life and the complete non-AI route; recovery is not authorization, approval, restart or G1.",
       "result": "equivalent"
     },
@@ -143,8 +156,16 @@
       "topic": "publication_pair_positions",
       "zh_location": "A3 14 pages, A0 8 pages, 22 text-bearing figure files",
       "en_location": "A3.en 14 pages, A0.en 8 pages, 22 .en figure files",
-      "paired_statement": "Paired publication surfaces retain the same page/figure order, warning prominence and evidence status; the Chapter 3 relay and Chapter 10 professional-handoff clarifications deepen existing contracts and do not alter the fixed-page PDF scope.",
+      "paired_statement": "Paired publication surfaces retain the same page/figure order, warning prominence and evidence status; R59 replaces the paired four-state slots without changing 14+14 A3 or 8+8 A0 page counts.",
       "result": "equivalent"
+    },
+    {
+      "claim_id": "EQ-09",
+      "topic": "motion_accessibility_and_truth_boundary",
+      "zh_location": "visual/index.html#s3; assets/media/four-state-experience.vtt; assets/media/four-state-experience.md",
+      "en_location": "visual/index.en.html#s3; the same shared bilingual VTT and Markdown transcript",
+      "paired_statement": "The same silent conceptual sequence, native controls, poster, eight bilingual cues, transcript, always-visible static fallback, 54-second editorial-only warning and G0/NO-GO/provisional/real-results-zero boundary are available in both languages.",
+      "result": "equivalent_contributor_side_independent_human_review_open"
     }
   ],
   "formal_human_review_packet": {
@@ -168,7 +189,12 @@
       "a3_page_count_zh": 14,
       "a3_page_count_en": 14,
       "a0_page_count_zh": 8,
-      "a0_page_count_en": 8
+      "a0_page_count_en": 8,
+      "shared_video_count": 1,
+      "video_audio_stream_count": 0,
+      "shared_bilingual_vtt_cue_count": 8,
+      "shared_transcript_count": 1,
+      "static_fallback_pair_count": 1
     },
     "required_sample_items": [
       {
@@ -218,10 +244,10 @@
       },
       {
         "sample_id": "HUMAN-EQ-06",
-        "scope": "figure numbering, captions and page positions",
-        "zh_location": "8 embedded Chinese figures, A3 14 pages and A0 8 pages",
-        "en_location": "8 embedded English figures, A3 14 pages and A0 8 pages",
-        "review_question": "Are paired figures/pages in the same order with equivalent captions, legends, warnings and backlink positions?",
+        "scope": "figure numbering, captions, media accessibility and page positions",
+        "zh_location": "8 embedded Chinese figures, visual/index.html#s3, shared video/VTT/transcript, A3 14 pages and A0 8 pages",
+        "en_location": "8 embedded English figures, visual/index.en.html#s3, shared video/VTT/transcript, A3 14 pages and A0 8 pages",
+        "review_question": "Are paired figures/pages in the same order, and do both visual surfaces expose equivalent video titles, captions, transcript, static fallback, warnings and backlink positions?",
         "human_result": null,
         "reviewer_initials": null
       },
@@ -242,7 +268,8 @@
         "the final exact-head rendered HTML counterparts",
         "paired key figures and their captions/legends/warnings",
         "A3 14-page and A0 8-page Chinese/English pairs",
-        "metrics.json, sources.json and the professional handoff packet for authority checks"
+        "metrics.json, sources.json and the professional handoff packet for authority checks",
+        "the shared silent MP4, bilingual VTT, bilingual transcript, conceptual poster and paired always-visible static fallback"
       ],
       "review_order": [
         "record exact head and artifact hashes before reading",
@@ -268,7 +295,7 @@
       "material_discrepancy_detected_count": 0,
       "non_material_difference_detected_count": 0,
       "human_result_fields_populated_count": 0,
-      "evidence": "BME-01 through BME-09 and EQ-01 through EQ-08 record contributor-side structural, claim, number, status and position comparisons.",
+      "evidence": "BME-01 through BME-11 and EQ-01 through EQ-09 record contributor-side structural, claim, number, status, position and media-accessibility comparisons.",
       "limit": "This precheck helps a human reviewer sample efficiently but cannot populate human_result, reviewer identity, independence or signoff fields."
     },
     "discrepancy_register": [],

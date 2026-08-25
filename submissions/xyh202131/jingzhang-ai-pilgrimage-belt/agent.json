@@ -8,12 +8,25 @@
   "model_detail": "OpenAI Codex agent based on GPT-5; exact serving snapshot is not asserted by the package.",
   "provider": "OpenAI",
   "authoring_mode": "human-authorized agent-maintained submission package",
-  "generated_with": "Latest canonical main and the repository urban-design submission skill; package-local deterministic Python/SVG/Chrome/PyMuPDF build; repository validators.",
-  "round_58_provenance": {
-    "initial_convergence_base_sha": "37f5541dfab74d7f89aa0f57bf1c64ab542b036b",
-    "latest_synced_canonical_main_sha": "a6517684e03d8f1005b8d34297410014ab183cbe",
-    "publication_revision": "58.5",
-    "scope": "Final convergence rebuild for 30-second concept recognition, 3-minute four-state understanding and 15-minute evidence, rights and professional-handoff tracing.",
+  "generated_with": "Latest canonical main and repository urban-design submission skill; deterministic Python/Pillow/SVG/Chrome/PyMuPDF frame and publication build; FFmpeg encoding; repository validators; no network or model API in media generation.",
+  "tools_used": [
+    "OpenAI Codex (GPT-5 family; exact serving snapshot not asserted)",
+    "Python 3.14.7",
+    "Pillow 12.2.0",
+    "PyMuPDF 1.27.2.3",
+    "Google Chrome 151.0.7922.174",
+    "FFmpeg 6.1.1-essentials_build-www.gyan.dev",
+    "FFprobe 6.1.1-essentials_build-www.gyan.dev",
+    "Noto Sans CJK SC Regular under SIL OFL 1.1",
+    "Node.js zero-dependency T-02 replay",
+    "repository score, spatial, visual, professional, self-check and participant-preflight scripts"
+  ],
+  "tool_boundary": "Tool disclosure and deterministic output do not establish field truth, legal advice, planning approval, accessibility compliance, professional acceptance or G1.",
+  "round_59_provenance": {
+    "canonical_main_base_sha": "078a7dba09176ddb431b1dfec63d0ce8606489c4",
+    "prior_publication_revision": "58.5",
+    "publication_revision": "59.0",
+    "scope": "Four-state spatial experience: one deterministic conceptual cover, one silent bilingual 54-second editorial sequence, one always-visible static fallback, and synchronized fixed-page publications.",
     "spatial_and_metric_freeze": {
       "geometry_files": 9,
       "metrics_json_frozen": true,
@@ -23,8 +36,12 @@
       "master_concept": "Twin-Track Jing-Zhang / 双轨京张",
       "key_area_prototypes": 3,
       "navigation_items": 6,
-      "optional_generated_media_paths": 0,
-      "new_model_generated_media": false
+      "optional_media_paths": 4,
+      "deterministic_contributor_media_paths": 4,
+      "model_generated_media_paths": 0,
+      "new_model_generated_media": false,
+      "video_audio_streams": 0,
+      "video_editorial_duration_seconds": 54
     },
     "professional_handoff": {
       "candidate_id": "PRE-G1-JZ05-SCENE011-T02",
@@ -33,11 +50,16 @@
       "accepted_H01_H07_items": 0
     },
     "rights": {
-      "contributor_content": "CC-BY-4.0",
+      "contributor_content_and_r59_concept_media": "CC-BY-4.0",
       "contributor_code": "MIT",
       "osm_database_derivatives": "ODbL-1.0",
+      "noto_font_software": "SIL-OFL-1.1",
       "third_party_citations": "not_relicensed",
-      "generated_media": "removed"
+      "package_clearance": "current_exact_package_cleared_for_repository_review_display_and_redistribution_under_component_specific_terms",
+      "independent_file_level_audit_completed": false,
+      "trademark_search_completed": false,
+      "current_exact_package_redistribution": "allowed_under_component_specific_terms_and_notices_no_single_package_license",
+      "future_installation_branding_and_professional_implementation": "not_authorized_requires_separate_review_and_acceptance"
     },
     "cannot_prove": [
       "official boundary or exact site registration",
@@ -45,18 +67,33 @@
       "dimension, material, utility, fire or railway-protection conclusion",
       "field or accessibility result",
       "resident feedback, staffing, schedule, partner, budget or recovery duration",
-      "approval, authorization, GO, G1 or professional acceptance"
+      "approval, authorization, GO, G1 or professional acceptance",
+      "real recovery duration; the 54-second sequence is editorial pacing only",
+      "public response or accessibility compliance from conceptual media"
     ]
   },
-  "tools_used": [
-    "OpenAI Codex (GPT-5 family; exact serving snapshot not asserted)",
-    "Python 3",
-    "PyMuPDF",
-    "Pillow",
-    "Google Chrome headless",
-    "Noto Sans SC under SIL OFL 1.1",
-    "Node.js zero-dependency T-02 replay",
-    "repository score, spatial, visual, professional, self-check and participant-preflight scripts"
-  ],
-  "tool_boundary": "Tool disclosure and deterministic output do not establish field truth, legal advice, planning approval, accessibility compliance, professional acceptance or G1."
+  "media_generation_toolchain": {
+    "method": "Local deterministic vector and Pillow frame synthesis from package-authored diagrams and the four-state contract; Chrome raster export; FFmpeg H.264 encoding; no network, download, model API, site image, voice, music or audio.",
+    "python": "3.14.7",
+    "pillow": "12.2.0",
+    "chrome": {
+      "version": "151.0.7922.174",
+      "sha256": "b6d40f55e48e61760335d18f46abcec929e1a11b8330e7f2b501037584af4aa4"
+    },
+    "ffmpeg": {
+      "version": "6.1.1-essentials_build-www.gyan.dev",
+      "sha256": "0c4760db80d73a6ddc05c828a20c1b51c84bf61f4fcecff17f759c3edab800fb"
+    },
+    "ffprobe": {
+      "version": "6.1.1-essentials_build-www.gyan.dev",
+      "sha256": "01b99c76134e5c7a6b3f40f1d6c1e50f1084d5d5d763dfec1fde66bb1b575346"
+    },
+    "font_source": {
+      "name": "NotoSansCJKsc-Regular.otf",
+      "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "source_git_blob": "dc15562470b4f842321894787a0d066879ccff8b",
+      "license": "SIL-OFL-1.1"
+    },
+    "redistribution_boundary": "Chrome, FFmpeg, FFprobe and the source OTF are build tools and are not redistributed in this package; their licenses remain independent of contributor media licensing."
+  }
 }
