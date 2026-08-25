@@ -269,10 +269,10 @@ The municipal road-network cost is ≈20–39 million CNY (2026 Q2 price level, 
 | G0 Ordinary Path Always Available | R | I | I | A | I |
 | G1 Local Reproduction | R | A | I | C | C |
 | G2 Professional Review | R | C | C | C | A |
-| G3 Bounded Field Pilot | R | C | A | A | C |
+| G3 Bounded Field Pilot | R | C | C | A | C |
 | G4 Steady Operation / Archive Receipt | R | C | I | A | I |
 
-> R (Responsible) executes, A (Accountable) is accountable, C (Consulted) advises, I (Informed) is notified. G3 bounded field pilot uses dual accountability — Public & Accessibility Representatives plus Public Value Committee — with the public representative holding veto power. This matrix is a conceptual-phase governance framework; formal signature awaits project approval.
+> R (Responsible) executes, A (Accountable) is accountable, C (Consulted) advises, I (Informed) is notified. G3 bounded field pilot is single-accountable to the Public Value Committee / Operations Secretariat (A); Public & Accessibility Representatives hold a consulting role (C) and retain a factual veto. This matrix is a conceptual-phase governance framework; formal signature awaits project approval.
 
 ## Metrics System, Area Recomputation, and Compliance Matrix
 

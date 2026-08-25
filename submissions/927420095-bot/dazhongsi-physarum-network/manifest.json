@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1815f325363526421e68949223f4c5c3ab8cb3c655da6555ae78a63a34a54ae6"
+      "sha256": "736f09f56ca2d574e20bae3d4b40d92a3b704ed323b12a7b5b8db8e9a3b2f94f"
     },
     {
       "path": "agent.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7026589fd3170a52cd250753fdf9b3a3bb9546488dd2b0b916ab3b7be7207225"
+      "sha256": "d03ae2051dfccad7541453eadbffe6e654342dd0ebdf9b5b7aeabba617df8862"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "22c18fe185c96ac4c51753feba2331565a1b077e716221c460a864aff9692606"
+      "sha256": "2333e7de7b1ba74d1cd598b0a05c09fc62a0ae69818ac51df4b5acf82780bd70"
     },
     {
       "path": "report/narrative.md",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "09ec159c35232ccda09e803d380b886570c16abdf32d0cc55b8854ff0ea08c8b"
+      "sha256": "c9ab9a724aa8bb4f17072629779d787510b63f82d8d4988bf376197165e4dd2d"
     },
     {
       "path": "report/proposal.en.html",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6452bc18af9fade4a7fa163a8e3b0a41d39da8b8225cdc17a5e2a6c9642b2e2e"
+      "sha256": "1f34a6f016607218ac8d6f8c45050d3f6355a9b1da8aaf5d67ffed7290c6f894"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -398,7 +398,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "0c828390fa3aa3687eddb08dd00aedbdc18ad51af4950f11294bf730230684ad"
+      "sha256": "9d03f735ac97a493dbfdeada8a05ada67e7ba0885b5f9d0b70376f3937fc98c9"
     },
     {
       "path": "assets/figures/effects/effect_01_aerial.png",
@@ -593,7 +593,7 @@
       "path": "visual/assets/governance-raci.json",
       "role": "evidence_data",
       "required": false,
-      "sha256": "1061782a65dfb73fa5fe629dd62a2ec1ae394e2fe839c93e0b73a81c7d1cbe4b"
+      "sha256": "b0825677a59ee185ead0a6918dfab3d71ebc72c9b5998cc86b0da04a88070c6e"
     },
     {
       "path": "visual/assets/delivery-workpackages.json",
