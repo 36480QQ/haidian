@@ -36,11 +36,44 @@ The provisional-boundary limits must be stated plainly: PROV-SITE-001 was derive
 
 ## Coordinated Research Area: Industry and Future City Research
 
-**Naming and brand direction (agent.1):** the belt is named "Jing-Zhang Trust Line". Logic: the Jing-Zhang Railway is the trust origin of Chinese self-engineered construction; the Trust Line is the public trust infrastructure of the AI era - one line threading a century of engineering trust into AI governance's future. The three positionings align as "engineering-trust history (Centennial Jing-Zhang Culture Belt) → trust living (Urban AI Life Experience Belt) → trust technology (AI Convergence Innovation Belt)". Visual identity direction: a linear symbol system superimposing a railway lineform with a trust-handshake texture, in the brick red of old Jing-Zhang stations and the deep blue of Zhongguancun - no decorative logo stacks; the logo direction is conceptual, to be deepened by professional teams with font licensing cleared.[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+**Naming and brand direction (agent.1):** the belt is named "Jing-Zhang Trust Line". Logic: the Jing-Zhang Railway is the trust origin of Chinese self-engineered construction; the Trust Line is the public trust infrastructure of the AI era - one line threading a century of engineering trust into AI governance's future. The three positionings align as "engineering-trust history (Centennial Jing-Zhang Culture Belt) → trust living (Urban AI Life Experience Belt) → trust technology (AI Convergence Innovation Belt)". Visual identity direction: a linear symbol system superimposing a railway lineform with a trust-handshake texture, in the brick red of old Jing-Zhang stations and the deep blue of Zhongguancun - no decorative logo stacks; the logo direction is conceptual, to be deepened by professional teams; all fonts actually rendered in this package are cleared: Noto Sans SC 2.004 (SIL OFL 1.1, embedding and redistribution permitted - subset embedded in HTML, PDF and figures), license and version in [source:FONT-NOTO-SANS-SC].[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 **Five functions mapped to space (agent.2):** the full-stack autonomous innovation system lands in Zhongzhiyuan (the verification side); the world-class AI ecosystem in the Origin Community (the translation side); AI+ scenario empowerment in the Xiaoyuehe wing (the feedback side); the smart vibrant city on the Trust Mainline (the experience side); and **the global AI governance voice in the dialogue center, the open audit lab and the certification-station system (the trust-infrastructure side)**. The two wings form the synergy loop: the Zhongguancun wing delivers capital, IP and standards (trust-capital loop); the Xiaoyuehe wing returns usage feedback and runtime evidence (trust-scenario loop) - making trust a verifiable cycle rather than one-way messaging.[source:AGENT-TASKBOOK]
 
 **Global ecosystem cases (6, per-case sources registered in sources.json, all conceptual background, not implemented facts):** San Francisco Bay Area open-source ecosystem (how open standards build industrial trust; background reference to Linux Foundation public research) [source:CASE-SF-OSS]; Zurich municipal algorithm registry and audit practice (public-sector algorithm transparency direction) [source:CASE-ZURICH-AUDIT]; Singapore AI Verify toolkit (governance tools cutting corporate compliance costs) [source:CASE-SG-AIVERIFY]; data-trust research practice (directional research on trusted data-flow institutions) [source:CASE-TORONTO-DATATRUST]; Paris municipal AI ethics charter and public deliberation (city-level AI ethics deliberation formats) [source:CASE-PARIS-ETHICS]; Shenzhen smart-device certification systems (certification as trust credential for going global) [source:CASE-SZ-CERT]. None of the six constitutes an implemented fact, technology choice or institutional-transplant commitment - only transferable mechanisms are extracted; no spatial indicators are transplanted.[depth:overall_spatial_structure]
+
+**Regional innovation synergy matrix (agent.1 supplement, conceptual):** the Trust Line does not stand alone; the roles, factor flows, interfaces and trigger conditions below are conceptual proposals, not confirmed inter-government arrangements.
+
+| Partner | Synergy role (conceptual) | Factor flow | Interface | Trigger |
+|---|---|---|---|---|
+| Beiwei community | AI industry-community operations feedback | operations and community-governance experience to Origin Community | Origin Community operation responsibility matrix | after annual pilot review |
+| Future Science City / Huairou | big-science validation scenarios for Zhongzhiyuan | validation needs and evaluation methods to Zhongzhiyuan | OSS model safety evaluation public lab | after test protocols open for public comment |
+| E-Town (Beijing ETDZ) | smart-manufacturing industry customers | certification demand and industry scenarios to Dazhongsi | AI product certification public window | after first enterprise test intents are pooled |
+| Jing-Jin-Ji | mutual recognition of standards and certification results | governance toolkit pilot, mutual-recognition channel | governance dialogue center + certification stations | after competent authorities launch recognition |
+| International | global AI governance topics and reviewable Beijing practice | international topics in exchange with dialogue-center agenda | Global AI Governance Dialogue Center | after annual summit agenda is published |
+
+[source:AGENT-TASKBOOK]
+
+**Twelve-station operation responsibility matrix (agent.6, conceptual):** operator types, funding-source tiers, maintenance duties and budget tiers are all conceptual proposals, not investment estimates or government arrangements.
+
+| Station | Location | Operator type (conceptual) | Funding tier (conceptual) | Maintenance duty | Budget tier |
+|---|---|---|---|---|---|
+| Certification public window | Dazhongsi | certification body + industry platform | self-operated + government purchase | window facilities and protocols | conceptual |
+| Trusted smart-consumption station | Dazhongsi | commercial operator + third-party verification | commercial rent and service fees | experience facilities | conceptual |
+| Algorithm-transparent consumption | Dazhongsi | commercial operator + third-party verification | commercial revenue | explanation display system | conceptual |
+| Generative-AI compliance experience station | Origin | public science outreach operator | public outreach budget | experience-course facilities | conceptual |
+| Human-takeover response test station | Origin | public test operator | test special fund | takeover window and dispatch | conceptual |
+| AI legal-consulting compliance cabin | Origin | legal-service institution + platform | legal-service revenue | cabin facilities | conceptual |
+| Elderly- and accessibility-friendly trust station | Origin | community service operator | community service budget | traditional parallel windows | conceptual |
+| Data-trust service station | Zhongzhiyuan | data-service institution | data-service revenue | privacy-computing demo cabin | conceptual |
+| OSS model safety evaluation test field | Zhongzhiyuan | evaluation body + OSS community | evaluation fees + research grants | protocols and venue | conceptual |
+| Oath plaza and honor wall | Heritage park | public culture operator | culture budget + donation registry | annual inscription-module renewal | conceptual |
+| Governance dialogue center | Zhongzhiyuan | public institution + universities + industry orgs | summit topic co-building | venue and open agenda | conceptual |
+| Algorithm audit open station | Zhongzhiyuan | evaluation body + regulatory guidance | audit-service revenue | audit trace system | conceptual |
+
+[source:AGENT-TASKBOOK]
+
+**Reviewable logo/wordmark prototype (agent.4, conceptual direction prototype):** the primary symbol is a linear "twin rails + handshake arc" mark (black-and-white line prototype on A3 booklet page 12.5): twin rails = century of engineering trust and AI public trust; handshake arc = reviewable human-AI cooperation. Minimum size: 12 mm print / 48 px screen. Three application samples: station signage (station code + trust-function icon), event key visual (governance dialogue week, landscape), digital icon (monochrome simplified). Wordmark typeface direction: Alimama FangYuanTi VF (free license from Alimama, commercial and embedded use permitted, used unmodified, see [source:FONT-ALIMAMA-FANGYUANTI]); rendering typeface Noto Sans SC (SIL OFL 1.1, see [source:FONT-NOTO-SANS-SC]). The prototype is a conceptual direction with no trademark registration claimed; the final logo is to be deepened and separately cleared by a professional team.[source:AGENT-TASKBOOK]
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 

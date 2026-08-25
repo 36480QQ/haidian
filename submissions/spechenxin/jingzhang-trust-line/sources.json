@@ -124,6 +124,32 @@
    "publisher": "深圳市政府公开信息",
    "retrieved": "2026-08-24",
    "usage": "背景参照：检测认证基础设施作为产业出海信任凭证的方向。概念背景，不构成本方案检测认证能力建设承诺。"
+  },
+  {
+   "id": "FONT-NOTO-SANS-SC",
+   "title_zh": "渲染字体 Noto Sans SC 2.004（SIL OFL 1.1，子集嵌入）",
+   "source_type": "open_license_asset",
+   "publisher": "Adobe / Google Fonts (Noto project)",
+   "version": "2.004; variable wght 100-900; PDF/figures use static instances 400/700",
+   "license": "SIL Open Font License 1.1",
+   "license_url": "http://scripts.sil.org/OFL",
+   "redistribution": "permitted - OFL 1.1 allows use, embedding, redistribution and modification incl. subsetting; copyright notice (c) 2014-2021 Adobe retained in font name table",
+   "embedding": "HTML: 809-glyph subset woff2 embedded as base64 data URI (offline); PDF: matplotlib-embedded NotoSansSC-Regular/Bold subsets; PNG figures: same embedded subsets",
+   "retrieved": "2026-08-25",
+   "usage": "本包全部中英文文本（HTML/PDF/图件）统一渲染字体，替代系统字体 Microsoft YaHei（其许可不允许再分发嵌入）；HTML 以 809 字形子集 woff2 base64 内嵌（离线），PDF/图件内嵌 NotoSansSC-Regular/Bold 子集；最终 Logo/字标字体由专业团队深化阶段另行清权。",
+   "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC"
+  },
+  {
+   "id": "FONT-ALIMAMA-FANGYUANTI",
+   "title_zh": "字标方向字体 阿里妈妈方圆体 VF（免费授权，原样使用）",
+   "url": "https://fonts.alimama.com/",
+   "source_type": "open_license_asset",
+   "publisher": "淘宝（中国）软件有限公司（阿里妈妈）",
+   "version": "VF wght 200-700 / BEVL 1-100",
+   "license": "阿里妈妈方圆体法律声明（免费普通许可，商用/非商用/嵌入式使用允许）",
+   "redistribution": "许可允许下载、安装、使用与嵌入式使用；禁止拆分、修改、二次创作与有偿转让——本包仅原样用于 Logo/字标方向稿，未修改",
+   "usage": "Logo/字标方向稿字标字体（原样使用，不子集化、不修改）；渲染字体另用 Noto Sans SC（SIL OFL 1.1）。最终 Logo 字体由专业团队深化阶段另行清权。",
+   "retrieved": "2026-08-25"
   }
  ]
 }

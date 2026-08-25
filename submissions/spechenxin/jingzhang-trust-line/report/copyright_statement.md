@@ -8,7 +8,17 @@
 
 - 方案文本、图件、几何数据与 HTML 由 Agent 生成，License：COMMUNITY-DISPLAY-ONLY（仅限社区展示）。
 - 引用的官方公告、清权任务书、标准文件均来自公开或清权渠道，原文版权归发布机构所有；本包仅做引用与转述，未复制受版权保护的原件内容。
-- 未使用任何未授权字体、商标、人物肖像、论文图像或版权材料。图件中的文字使用系统字体（Microsoft YaHei），生成环境合法授权。
+- 未使用任何未授权字体、商标、人物肖像、论文图像或版权材料。
+
+## 字体清单 / Font Inventory
+
+| 字体 | 版本 | 许可 | 嵌入权限 | 使用位置 |
+|---|---|---|---|---|
+| Noto Sans SC | 2.004（可变 wght 100–900；PDF/图件用静态实例 400/700） | SIL Open Font License 1.1 | 允许：使用、嵌入、再分发、修改（含子集化）；保留 © 2014-2021 Adobe 版权标注 | 全部中英文 HTML（809 字形子集 woff2 base64 内嵌，离线）、4 份 PDF（内嵌 NotoSansSC-Regular/Bold 子集）、10 张图件（同内嵌子集） |
+
+- 字体来源：Google Fonts / Adobe Noto 项目公开分发（[source:FONT-NOTO-SANS-SC]）；OFL 1.1 全文随字体 name 表保留。
+- 本包不使用 Microsoft YaHei 等仅本机授权的系统字体作为交付渲染字体。
+- 最终 Logo/字标字体由专业团队深化阶段另行清权，当前 Logo 为概念方向稿。
 
 ## 数据与隐私
 
