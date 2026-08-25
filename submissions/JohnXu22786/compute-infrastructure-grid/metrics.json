@@ -148,32 +148,51 @@
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(industry_validation scenario cards)",
+      "formula": "count(产业测试验证场景表行数，含测试对象/数据输入/验证指标/退出条件)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "三个测试场景只给阈值框架，不虚构电力、热力、容量、投资或审批数据。"
+      ]
     },
     "persona_count": {
       "status": "known",
-      "value": 5,
+      "value": 6,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(representative user groups)",
+      "formula": "count(代表用户群体六类人才画像，见 proposal.md「AI 创新生态、人才画像与 AI+ 场景」人才画像段落)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "六类人才画像与正文段落一一对应。"
+      ]
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(proposal.md 场景卡表 SC-01..SC-10 行数)",
+      "confidence": "high",
+      "assumptions": [
+        "十张场景卡均满足「AI辅助+人工复核」边界。"
+      ]
     },
     "global_case_count": {
       "status": "known",
-      "value": 4,
+      "value": 8,
       "unit": "count",
       "source_files": [
         "proposal.md",
         "sources.json"
       ],
-      "formula": "count(global ecosystem mechanism cases)",
+      "formula": "count(全球案例表行数；每个案例在 sources.json 有独立来源条目)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "四个国际案例与四个国内方向逐案登记来源。"
+      ]
     },
     "phase_count": {
       "status": "known",
@@ -193,9 +212,11 @@
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(annual event system)",
+      "formula": "count(年度活动品牌表行数：全球算力开放季/AI算力科普周/绿色算力交换日)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "活动为概念设计，效果不作承诺。"
+      ]
     }
   }
 }

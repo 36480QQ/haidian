@@ -10,20 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/JohnXu22786/compute-infrastructure-grid/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/JohnXu22786/compute-infrastructure-grid/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/compute-infrastructure-grid/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
+        "submissions/JohnXu22786/compute-infrastructure-grid/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/JohnXu22786/compute-infrastructure-grid/proposal.md"
@@ -33,16 +20,24 @@
       ],
       "changed_files": [
         "submissions/JohnXu22786/compute-infrastructure-grid/agent.json",
+        "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/key-areas.en.png",
         "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/key-areas.png",
+        "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/land-use-structure.en.png",
         "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/land-use-structure.png",
+        "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/logo-cmpjz.png",
+        "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/metrics-evidence.en.png",
         "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/metrics-evidence.png",
+        "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/mobility-bluegreen.en.png",
         "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/mobility-bluegreen.png",
+        "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/site-overview.en.png",
         "submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/site-overview.png",
         "submissions/JohnXu22786/compute-infrastructure-grid/assumptions.json",
         "submissions/JohnXu22786/compute-infrastructure-grid/changelog.md",
         "submissions/JohnXu22786/compute-infrastructure-grid/compliance_matrix.json",
         "submissions/JohnXu22786/compute-infrastructure-grid/design_depth_matrix.json",
+        "submissions/JohnXu22786/compute-infrastructure-grid/drawings/a0-boards.en.pdf",
         "submissions/JohnXu22786/compute-infrastructure-grid/drawings/a0-boards.pdf",
+        "submissions/JohnXu22786/compute-infrastructure-grid/drawings/a3-booklet.en.pdf",
         "submissions/JohnXu22786/compute-infrastructure-grid/drawings/a3-booklet.pdf",
         "submissions/JohnXu22786/compute-infrastructure-grid/geometry/buildings.geojson",
         "submissions/JohnXu22786/compute-infrastructure-grid/geometry/constraints.geojson",
@@ -59,16 +54,18 @@
         "submissions/JohnXu22786/compute-infrastructure-grid/proposal.md",
         "submissions/JohnXu22786/compute-infrastructure-grid/report/copyright_statement.md",
         "submissions/JohnXu22786/compute-infrastructure-grid/report/narrative.md",
+        "submissions/JohnXu22786/compute-infrastructure-grid/report/proposal.en.html",
         "submissions/JohnXu22786/compute-infrastructure-grid/report/proposal.html",
         "submissions/JohnXu22786/compute-infrastructure-grid/self_check.json",
         "submissions/JohnXu22786/compute-infrastructure-grid/sources.json",
         "submissions/JohnXu22786/compute-infrastructure-grid/standard_matrix.json",
+        "submissions/JohnXu22786/compute-infrastructure-grid/visual/index.en.html",
         "submissions/JohnXu22786/compute-infrastructure-grid/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/JohnXu22786/compute-infrastructure-grid": "formal"
       },
-      "total_bytes": 1040578,
+      "total_bytes": 5475108,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -128,7 +125,13 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.122122,
-        "public_space_ratio": 0.003588
+        "public_space_ratio": 0.003588,
+        "persona_count": 6.0,
+        "scenario_card_count": 10.0,
+        "industry_test_scenario_count": 3.0,
+        "annual_program_count": 3.0,
+        "global_case_count": 8.0,
+        "key_area_count": 3.0
       }
     },
     "stderr": ""
@@ -142,11 +145,11 @@
       "summary": {
         "standard_matrix_items": 5,
         "design_depth_items": 15,
-        "known_metric_refs_required": 17,
+        "known_metric_refs_required": 18,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 8,
+          "source": 16,
           "standard": 0,
           "depth": 0,
           "data": 1,
@@ -167,21 +170,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/compute-infrastructure-grid/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
-  ],
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {

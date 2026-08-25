@@ -2,7 +2,7 @@
   "schema_version": "0.1.0",
   "sources": [
     {
-      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT",
       "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
       "publisher": "北京市规划和自然资源委员会海淀分局",
       "source_kind": "official_announcement",
@@ -43,7 +43,7 @@
       "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。"
     },
     {
-      "source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
+      "source_id": "DATA-SRC-AGENT-TASKBOOK",
       "title": "面向全球智能体开展“百年京张AI创新带城市设计开源征集”的任务书摘录",
       "publisher": "User-provided cleared document",
       "source_kind": "cleared_user_document",
@@ -187,7 +187,7 @@
       "notes_zh": "可用于统一 land_use_code 语义。"
     },
     {
-      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES",
       "title": "百年京张AI创新带三层范围与三处重点区临时粗略 polygon",
       "publisher": "Repository maintainers",
       "source_kind": "provisional_repository_data",
@@ -270,6 +270,279 @@
         "brief/site-package/standards/references/generative-ai-interim-measures.md"
       ],
       "notes_zh": "官方页面标注 2023-07-13 发布、2023-08-15 施行；第2条适用范围是向境内公众提供生成文本、图片、音频、视频等内容的生成式人工智能服务。第14条是违法内容与服务处置，不是一般用户退出权；第15条有投诉举报和及时处理要求，但没有法定数字响应期限；第17条安全评估、备案等表述仅针对具有舆论属性或社会动员能力的服务。快照仅供离线检索，正式引用仍以官方页面为准。"
+    },
+    {
+      "source_id": "CASE-LUMI",
+      "title": "LUMI — one of the greenest supercomputers in the world",
+      "publisher": "CSC – IT Center for Science (Finland, LUMI consortium host)",
+      "source_kind": "official_project_page",
+      "url": "https://csc.fi/en/news/lumi-one-of-the-greenest-supercomputers-in-the-world/",
+      "published_date": "2022-05-31",
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "official_project",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public webpage; facts cited with attribution; no reuse of page media",
+      "license_summary": "官方项目页仅作事实引用与机制比较，不复制页面图片或版式。",
+      "review_status": "approved",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "事实性概述：LUMI 采用 100% 无碳水电运行、余热用于卡亚尼城镇供热",
+        "机制借鉴：绿电驱动+余热入网"
+      ],
+      "prohibited_uses": [
+        "引用页面数值细节（如余热占卡亚尼供热比例）作为本项目工程依据",
+        "复制页面图片、标识与版式"
+      ],
+      "topics": [
+        "international_case",
+        "green_power",
+        "waste_heat"
+      ],
+      "notes_zh": "2026-08-25 经 websearch 复核：页面存在，发布日期 2022-05-31。仅按公开渠道信息概述，不引入数值细节。"
+    },
+    {
+      "source_id": "CASE-FUGAKU-RIKEN",
+      "title": "RIKEN R-CCS — Supercomputer Fugaku (official portal)",
+      "publisher": "RIKEN Center for Computational Science (R-CCS), Japan",
+      "source_kind": "official_project_page",
+      "url": "https://www.r-ccs.riken.jp/en/fugaku/",
+      "published_date": null,
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "official_project",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public webpage; facts cited with attribution; no reuse of page media",
+      "license_summary": "官方门户页（常青页，无明确发布日期），仅作事实引用；Fugaku 依法作为公共共用设施向国内外研究者开放。",
+      "review_status": "approved",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "事实性概述：国家级公共科研算力平台，依法向国内外研究者开放共用",
+        "机制借鉴：公共算力开放体制"
+      ],
+      "prohibited_uses": [
+        "引用具体算力规格作为本项目容量依据",
+        "复制页面图片、标识与版式"
+      ],
+      "topics": [
+        "international_case",
+        "public_compute"
+      ],
+      "notes_zh": "2026-08-25 经 websearch 复核：页面存在（常青官方门户，无明确发布日期，登记为已访问日期）。仅按公开渠道信息概述。"
+    },
+    {
+      "source_id": "CASE-STOCKHOLM-EXERGI",
+      "title": "Stockholm Exergi — Heat recovery from data centers (official page)",
+      "publisher": "Stockholm Exergi AB",
+      "source_kind": "official_project_page",
+      "url": "https://www.stockholmexergi.se/en/heat-recovery/",
+      "published_date": null,
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "official_operator",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public webpage; facts cited with attribution; no reuse of page media",
+      "license_summary": "运营商官方页（常青页），介绍数据中心余热回收并入区域供热网络的机制。",
+      "review_status": "approved",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "事实性概述：区域供热系统公开引入数据中心余热",
+        "机制借鉴：热力接口与计量机制"
+      ],
+      "prohibited_uses": [
+        "引用页面中的采购计价表述（如每 MW 年支付额）作为本项目成本依据",
+        "复制页面图片、标识与版式"
+      ],
+      "topics": [
+        "international_case",
+        "waste_heat",
+        "district_heating"
+      ],
+      "notes_zh": "2026-08-25 经 websearch 复核：页面存在（常青官方页）。仅按公开渠道信息概述机制方向，不引用计价细节。"
+    },
+    {
+      "source_id": "CASE-ICELAND-ENERGY",
+      "title": "Government of Iceland — Energy (official topic page)",
+      "publisher": "Government of Iceland, Ministry of the Environment, Energy and Climate",
+      "source_kind": "official_government_page",
+      "url": "https://www.government.is/topics/business-and-industry/energy/",
+      "published_date": null,
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "official_government",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public webpage; facts cited with attribution; no reuse of page media",
+      "license_summary": "冰岛政府能源专题页（常青页，统计口径为 2015—2016），支持『可再生电力禀赋』这一公开概况。",
+      "review_status": "approved",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "事实性概述：冰岛电力生产几乎 100% 来自可再生能源（水电与地热公开比例）",
+        "机制借鉴：能源禀赋选址协同"
+      ],
+      "prohibited_uses": [
+        "把国家禀赋直接推断为本地绿电可得性结论",
+        "复制页面图片、图表与版式"
+      ],
+      "topics": [
+        "international_case",
+        "renewable_energy",
+        "geothermal"
+      ],
+      "notes_zh": "2026-08-25 经 websearch 复核：页面存在；该页不直接讨论数据中心，仅支撑『可再生能源禀赋』概况，故主张严格限定于此。"
+    },
+    {
+      "source_id": "CASE-GUIAN",
+      "title": "贵安新区：数据中心集群与算力产业发展情况（贵阳日报报道）",
+      "publisher": "贵安新区管委会官网（贵州贵安新区办公室），来源：贵阳日报",
+      "source_kind": "official_media",
+      "url": "https://www.gaxq.gov.cn/xwdt/gayw/202505/t20250527_87927608.html",
+      "published_date": "2025-05-27",
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "official_media",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public webpage; facts cited with attribution; no reuse of page media",
+      "license_summary": "官方管委会官网转载贵阳日报报道，仅作公开方向概述，不复制页面图片或数据表格。",
+      "review_status": "approved",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "事实性概述：贵安已集聚大型及以上数据中心集群，为全国性数据中心集群公开布局方向",
+        "机制借鉴：集群化规模效应"
+      ],
+      "prohibited_uses": [
+        "引用具体机架数与算力规模数值作为本项目容量依据",
+        "复制页面图片或数据表格"
+      ],
+      "topics": [
+        "domestic_case",
+        "data_center_cluster"
+      ],
+      "notes_zh": "2026-08-25 经 websearch 复核：页面存在，发表时间 2025-05-27。本包只概述『集群化布局方向』，不引用机架数、算力 EFLOPS、PUE 等数值。"
+    },
+    {
+      "source_id": "CASE-NDRC-SUANLI",
+      "title": "国家发展改革委等部门关于深入实施「东数西算」工程 加快构建全国一体化算力网的实施意见（发改数据〔2023〕1779号）",
+      "publisher": "国家发展和改革委员会（会同国家数据局、中央网信办、工业和信息化部、国家能源局）",
+      "source_kind": "official_policy",
+      "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202312/t20231229_1363000.html",
+      "published_date": "2023-12-29",
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "A0",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "official public policy text; facts cited with attribution; no reuse of page media",
+      "license_summary": "国家部委公开政策文件，仅作国家算力调度框架的政策方向参照。",
+      "review_status": "approved",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "事实性概述：国家推进东数西算工程与全国一体化算力网（枢纽节点新增算力占比、绿电占比等目标为公开政策文本口径）",
+        "机制借鉴：全国算力调度框架"
+      ],
+      "prohibited_uses": [
+        "把政策目标解读为本项目已获批的安排",
+        "引用具体目标数值作为本项目承诺"
+      ],
+      "topics": [
+        "domestic_case",
+        "policy_direction",
+        "national_compute_network"
+      ],
+      "notes_zh": "2026-08-25 经 websearch 复核：页面存在，发布时间 2023-12-29。仅按公开政策方向概述，不把政策目标写成已定安排。"
+    },
+    {
+      "source_id": "CASE-BEIJING-COMPUTE",
+      "title": "北京人工智能公共算力平台（上庄）发布上线（首都之窗转北京日报）",
+      "publisher": "首都之窗·北京市人民政府门户网站（来源：北京日报）",
+      "source_kind": "official_media",
+      "url": "https://www.beijing.gov.cn/ywdt/gzdt/202401/t20240110_3531132.html",
+      "published_date": "2024-01-10",
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "official_media",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public webpage; facts cited with attribution; no reuse of page media",
+      "license_summary": "北京市政府门户转载北京日报报道，仅作公开方向概述，不引用算力规模数值。",
+      "review_status": "approved",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "事实性概述：北京推进人工智能公共算力平台建设并上线",
+        "机制借鉴：城市算力服务化"
+      ],
+      "prohibited_uses": [
+        "引用一期算力规模（P 数）作为本项目容量依据",
+        "复制页面图片或标识"
+      ],
+      "topics": [
+        "domestic_case",
+        "public_compute_platform"
+      ],
+      "notes_zh": "2026-08-25 经 websearch 复核：页面存在，日期 2024-01-10。本包仅作『城市算力服务化』方向概述。"
+    },
+    {
+      "source_id": "CASE-LINGANG",
+      "title": "上海临港首个国产单池万卡液冷算力集群投入运营（临港新片区管委会媒体聚焦）",
+      "publisher": "中国（上海）自由贸易试验区临港新片区管理委员会",
+      "source_kind": "official_media",
+      "url": "https://www.lingang.gov.cn/html/website/lg/index/news/Mediafocus/1772102764574277634.html",
+      "published_date": "2024-03-23",
+      "accessed_date": "2026-08-25",
+      "file_type": "html",
+      "authority_level": "official_media",
+      "timeliness_level": "T2",
+      "public_access_status": "public_web",
+      "license": "public webpage; facts cited with attribution; no reuse of page media",
+      "license_summary": "临港新片区管委会官网媒体聚焦文章，仅作公开方向概述，不引用集群规模与卡数。",
+      "review_status": "approved",
+      "usable_for_formal": "no",
+      "allowed_uses": [
+        "事实性概述：临港推进公共智能算力中心建设",
+        "机制借鉴：开放智算基础设施"
+      ],
+      "prohibited_uses": [
+        "引用单池卡数与训练规模表述作为本项目容量依据",
+        "复制页面图片或标识"
+      ],
+      "topics": [
+        "domestic_case",
+        "smart_compute_center"
+      ],
+      "notes_zh": "2026-08-25 经 websearch 复核：页面存在，发表时间 2024-03-23。本包仅作『开放智算基础设施』方向概述。"
+    },
+    {
+      "source_id": "ASSET-FONT-NOTO-SANS-SC",
+      "title": "Noto Sans SC (思源黑体) — SIL Open Font License 1.1",
+      "publisher": "Google / Adobe (Source Han Sans project)",
+      "source_kind": "open_source_asset",
+      "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+      "published_date": null,
+      "accessed_date": "2026-08-25",
+      "file_type": "font",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T2",
+      "public_access_status": "open_license",
+      "license": "SIL Open Font License 1.1 (OFL-1.1), free to use, subset and embed with attribution",
+      "license_summary": "OFL-1.1 许可：允许使用、子集化与嵌入，可随展示资产分发；本包 HTML 以静态子集嵌入。",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "HTML 页面嵌入静态字体子集（font-family-first）",
+        "图件、图纸与演示文本使用"
+      ],
+      "prohibited_uses": [
+        "以 OFL 之外的条款单独转售字体文件"
+      ],
+      "topics": [
+        "font",
+        "asset_rights"
+      ],
+      "notes_zh": "本机存在 NotoSansSC-VF.ttf（Windows 自带 Noto 可变字体），OFL-1.1 许可可随包分发子集；详细登记见 report/copyright_statement.md。"
     },
     {
       "source_id": "PACKAGE-GEOMETRY",

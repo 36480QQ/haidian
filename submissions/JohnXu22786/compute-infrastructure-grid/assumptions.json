@@ -42,6 +42,13 @@
       "statement_en": "Green-power supply and heat reuse are concept-level interface suggestions only.",
       "category": "energy",
       "status": "accepted_limitation"
+    },
+    {
+      "assumption_id": "A-ACCESS-001",
+      "statement_zh": "无障碍与可达性水平以人工审核和现场实测为准，机器验证（含本包四门禁）不能替代无障碍人工审核；具体参数以专项设计与实测为准。",
+      "statement_en": "Accessibility is certified by human review and on-site measurement; machine validation cannot substitute for accessibility human review.",
+      "category": "accessibility",
+      "status": "accepted_limitation"
     }
   ]
 }
