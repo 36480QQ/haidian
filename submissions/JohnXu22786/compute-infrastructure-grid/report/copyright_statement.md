@@ -8,7 +8,7 @@ All submitted text, geometry, diagrams, figures, logo, PDF drawings, and static 
 
 | 资产 | 作者/发布者 | 来源链接 | 许可 | 署名要求 | 使用限制 |
 | --- | --- | --- | --- | --- | --- |
-| Noto Sans CJK SC（思源黑体，Regular/Bold，用于图件/图纸/HTML） | Google / Adobe（Source Han Sans 项目）；本机 Windows 自带 Noto 家族同源，另从 googlefonts/noto-cjk 官方仓库下载静态 OTF 用于构建 | https://fonts.google.com/noto/specimen/Noto+Sans+SC ；https://github.com/googlefonts/noto-cjk | SIL Open Font License 1.1（OFL-1.1）：允许使用、修改、子集化、嵌入与随文档分发 | 分发字体子集时保留 OFL 版权声明（本表即为署名登记） | 不得以 OFL 之外的条款单独转售字体文件；本包仅以静态子集（woff2）嵌入 HTML，不改变字体名称表语义 |
+| Noto Sans CJK SC（思源黑体，Regular/Bold，用于图件/图纸/HTML） | Google / Adobe（Source Han Sans 项目）；本机 Windows 自带 Noto 家族同源，另从 googlefonts/noto-cjk 官方仓库下载静态 OTF 用于构建 | https://fonts.google.com/noto/specimen/Noto+Sans+SC ；https://github.com/googlefonts/noto-cjk | SIL Open Font License 1.1（OFL-1.1）：允许使用、修改、子集化、嵌入与随文档分发 | 分发字体子集时保留 OFL 版权声明（本表即为署名登记） | 不得以 OFL 之外的条款单独转售字体文件；本包仅以经子集化的静态字形（WOFF1）嵌入 HTML，不改变字体名称表语义；图件与图纸以该字体光栅化输出 |
 
 HTML 实现方式：`font-family-first` 静态字体子集 —— 每个 HTML 页面按实际使用的字符集（含 ASCII 与中文标点）以 fontTools.subset 生成 woff2 子集并以 base64 data-URI 内嵌（无远程字体请求），随后将本地子集字体置于字体栈首位，再回退到系统字体。
 
