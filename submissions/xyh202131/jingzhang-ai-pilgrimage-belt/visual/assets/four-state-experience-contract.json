@@ -1,0 +1,265 @@
+{
+  "schema_version": "1.0.0",
+  "experience_id": "JZ-R59-FOUR-STATE-EXPERIENCE",
+  "revision": "R59",
+  "duration_seconds": 54,
+  "editorial_duration_only": true,
+  "audio_track_count": 0,
+  "language_mode": "language_neutral",
+  "concept_status": "concept_only_g0",
+  "frozen_counts": {
+    "scenario_count": 12,
+    "project_count": 8,
+    "key_area_count": 3,
+    "conceptual_land_use_unit_count": 36
+  },
+  "prototype_grammar": [
+    {
+      "prototype_id": "VERIFY",
+      "key_area_id": "KAE-001",
+      "ordinary_rule": "continuous_observation_bypass",
+      "verification_rule": "isolated_side_verification_edge",
+      "stop_rule": "physically_isolate_equipment_while_ordinary_path_remains",
+      "recovery_rule": "remove_reversible_elements_then_independently_recheck_place"
+    },
+    {
+      "prototype_id": "CO-CREATE",
+      "key_area_id": "KAE-002",
+      "ordinary_rule": "continuous_daily_street_with_paper_or_oral_entry",
+      "verification_rule": "voluntary_withdrawable_side_collearning",
+      "stop_rule": "stop_collection_and_matching_while_daily_service_remains",
+      "recovery_rule": "remove_reversible_elements_then_restore_resident_daily_use"
+    },
+    {
+      "prototype_id": "PUBLISH",
+      "key_area_id": "KAE-003",
+      "ordinary_rule": "continuous_four_way_commute_with_staffed_service",
+      "verification_rule": "source_bounded_off_route_navigation",
+      "stop_rule": "take_automated_output_offline_while_staffed_service_remains",
+      "recovery_rule": "correct_source_and_clear_reversible_elements_then_recheck_movement_arms"
+    }
+  ],
+  "state_grammar": [
+    {
+      "state_id": "S0",
+      "state_name": "ordinary",
+      "ordinary_layer": "open_first",
+      "verification_layer": "closed",
+      "failure_layer": "inactive",
+      "recovery_layer": "not_applicable"
+    },
+    {
+      "state_id": "S1",
+      "state_name": "proof_optional_aid",
+      "ordinary_layer": "continuous",
+      "verification_layer": "bounded_voluntary_announced_window_only",
+      "failure_layer": "inactive",
+      "recovery_layer": "not_applicable"
+    },
+    {
+      "state_id": "S2",
+      "state_name": "failure_stop",
+      "ordinary_layer": "continuous",
+      "verification_layer": "stopped_and_isolated",
+      "failure_layer": "staffed_handoff_non_ai_path_and_exit_visible",
+      "recovery_layer": "ordinary_ground_first"
+    },
+    {
+      "state_id": "S3",
+      "state_name": "recovery",
+      "ordinary_layer": "restored_first",
+      "verification_layer": "not_implied",
+      "failure_layer": "resolved_only_by_future_evidence",
+      "recovery_layer": "same_task_then_future_independent_recheck"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "S01",
+      "start_seconds": 0,
+      "end_seconds": 6,
+      "title_zh": "众智园：普通绕行先成立",
+      "title_en": "Zhongzhiyuan: ordinary bypass first",
+      "prototype_ids": ["VERIFY"],
+      "state_id": "S0",
+      "ordinary_object": "continuous_observation_bypass",
+      "verification_object": "closed_side_verification_edge",
+      "stop_object": "visible_physical_stop_boundary",
+      "handoff_object": "staffed_takeover_point",
+      "recovery_object": "ordinary_bypass_shown_as_continuous",
+      "caption_zh": "先走、休息、读取实体状态或找人工；旁侧验证未开启。",
+      "caption_en": "Walk, rest, read physical status, or find staff first; the side verification layer is closed.",
+      "evidence_refs": [
+        "proposal.md#双轨典型剖面与四态",
+        "visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract"
+      ],
+      "must_not_imply": ["existing_service", "field_result", "site_approval", "maturity_change"]
+    },
+    {
+      "shot_id": "S02",
+      "start_seconds": 6,
+      "end_seconds": 18,
+      "title_zh": "原点社区：居民街先成立",
+      "title_en": "Origin Community: daily street first",
+      "prototype_ids": ["CO-CREATE"],
+      "state_id": "S0",
+      "ordinary_object": "continuous_daily_street_with_paper_or_oral_entry",
+      "verification_object": "closed_set_back_courts_and_withdrawable_nodes",
+      "stop_object": "visible_withdrawal_boundary",
+      "handoff_object": "staffed_explanation_and_withdrawal",
+      "recovery_object": "resident_daily_use_shown_as_continuous",
+      "caption_zh": "通行、无屏等候、纸面或口头问题和离开不依赖验证。",
+      "caption_en": "Passage, screen-free waiting, paper or oral questions, and exit do not depend on verification.",
+      "evidence_refs": [
+        "proposal.md#双轨典型剖面与四态",
+        "visual/assets/non-ai-parity-contract.json#JZ-NON-AI-PARITY-V2"
+      ],
+      "must_not_imply": ["existing_service", "resident_confirmation", "field_result", "maturity_change"]
+    },
+    {
+      "shot_id": "S03",
+      "start_seconds": 18,
+      "end_seconds": 24,
+      "title_zh": "众智园：自愿进入旁侧验证",
+      "title_en": "Zhongzhiyuan: voluntary side verification",
+      "prototype_ids": ["VERIFY"],
+      "state_id": "S1",
+      "ordinary_object": "continuous_observation_bypass",
+      "verification_object": "bounded_optional_proof_edge",
+      "stop_object": "physical_isolation_line",
+      "handoff_object": "staffed_takeover_point",
+      "recovery_object": "ordinary_bypass_remains_visible",
+      "caption_zh": "仅在自愿、公告且前置条件满足的未来窗口，验证叠层才可旁置出现。",
+      "caption_en": "The verification overlay may appear beside the route only in a future voluntary, announced window with preconditions met.",
+      "evidence_refs": [
+        "proposal.md#双轨典型剖面与四态",
+        "visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract"
+      ],
+      "must_not_imply": ["current_window", "current_operator", "field_result", "maturity_change"]
+    },
+    {
+      "shot_id": "S04",
+      "start_seconds": 24,
+      "end_seconds": 30,
+      "title_zh": "大钟寺：路外可选验证",
+      "title_en": "Dazhongsi: off-route optional verification",
+      "prototype_ids": ["PUBLISH"],
+      "state_id": "S1",
+      "ordinary_object": "continuous_four_way_commute",
+      "verification_object": "source_bounded_off_route_navigation",
+      "stop_object": "off_route_output_stop_line",
+      "handoff_object": "dual_entry_staffed_desk",
+      "recovery_object": "four_way_commute_remains_clear",
+      "caption_zh": "四向通勤与路外人工服务保持优先；可选验证不得进入中心通行空间。",
+      "caption_en": "Four-way commuting and off-route staffed service remain first; optional verification may not enter the central passage.",
+      "evidence_refs": [
+        "proposal.md#双轨典型剖面与四态",
+        "visual/assets/non-ai-parity-contract.json#JZ-NON-AI-PARITY-V2"
+      ],
+      "must_not_imply": ["current_service", "queue_result", "field_result", "maturity_change"]
+    },
+    {
+      "shot_id": "S05",
+      "start_seconds": 30,
+      "end_seconds": 36,
+      "title_zh": "原点社区：停止采集与匹配",
+      "title_en": "Origin Community: stop collection and matching",
+      "prototype_ids": ["CO-CREATE"],
+      "state_id": "S2",
+      "ordinary_object": "continuous_daily_street_with_paper_or_oral_entry",
+      "verification_object": "stopped_collection_and_matching",
+      "stop_object": "withdrawable_node_stop_boundary",
+      "handoff_object": "paper_or_oral_staffed_handoff",
+      "recovery_object": "restore_resident_daily_use_before_future_recheck",
+      "caption_zh": "停止只隔离采集和匹配；居民街、纸面或口头路径、人工交接与退出继续可见。",
+      "caption_en": "The stop isolates collection and matching only; the daily street, paper or oral path, staffed handoff, and exit remain visible.",
+      "evidence_refs": [
+        "proposal.md#双轨典型剖面与四态",
+        "visual/assets/non-ai-parity-contract.json#JZ-NON-AI-PARITY-V2"
+      ],
+      "must_not_imply": ["ordinary_path_blocked", "resolved_incident", "field_result", "maturity_change"]
+    },
+    {
+      "shot_id": "S06",
+      "start_seconds": 36,
+      "end_seconds": 42,
+      "title_zh": "大钟寺：输出离线、人工仍在",
+      "title_en": "Dazhongsi: output offline, staff remain",
+      "prototype_ids": ["PUBLISH"],
+      "state_id": "S2",
+      "ordinary_object": "continuous_four_way_commute",
+      "verification_object": "automated_output_taken_offline",
+      "stop_object": "off_route_output_stop_line",
+      "handoff_object": "dual_entry_staffed_desk_and_source_list",
+      "recovery_object": "clear_reversible_elements_and_recheck_movement_arms",
+      "caption_zh": "自动化输出离线，四向通勤、实体来源状态和人工服务不以故障为代价。",
+      "caption_en": "Automated output goes offline without taking away four-way commuting, physical source status, or staffed service.",
+      "evidence_refs": [
+        "proposal.md#双轨典型剖面与四态",
+        "visual/assets/non-ai-parity-contract.json#JZ-NON-AI-PARITY-V2"
+      ],
+      "must_not_imply": ["ordinary_path_blocked", "resolved_incident", "field_result", "maturity_change"]
+    },
+    {
+      "shot_id": "S07",
+      "start_seconds": 42,
+      "end_seconds": 50,
+      "title_zh": "众智园：先还原普通地面",
+      "title_en": "Zhongzhiyuan: restore ordinary ground first",
+      "prototype_ids": ["VERIFY"],
+      "state_id": "S3",
+      "ordinary_object": "continuous_observation_bypass",
+      "verification_object": "not_implied",
+      "stop_object": "reversible_elements_removed_from_ordinary_path",
+      "handoff_object": "staffed_takeover_remains_available",
+      "recovery_object": "ordinary_ground_and_same_task_first_then_future_independent_recheck",
+      "caption_zh": "先还原普通地面与同一基本任务；独立复核仍是未来条件，缺失时保持 G0 或退出。",
+      "caption_en": "Restore ordinary ground and the same basic task first; independent recheck remains a future condition, otherwise G0 or exit remains.",
+      "evidence_refs": [
+        "proposal.md#双轨典型剖面与四态",
+        "visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract"
+      ],
+      "must_not_imply": ["field_recovery", "site_acceptance", "maturity_change", "authorization"]
+    },
+    {
+      "shot_id": "S08",
+      "start_seconds": 50,
+      "end_seconds": 54,
+      "title_zh": "三处原型：保持 G0 或退出",
+      "title_en": "Three prototypes: remain G0 or exit",
+      "prototype_ids": ["VERIFY", "CO-CREATE", "PUBLISH"],
+      "state_id": "S3",
+      "ordinary_object": "ordinary_paths_and_same_basic_task_first",
+      "verification_object": "not_implied",
+      "stop_object": "stopped_overlay_remains_separate_from_ordinary_use",
+      "handoff_object": "staffed_handoff_and_non_ai_path_remain_visible",
+      "recovery_object": "future_evidence_may_recheck_after_ordinary_place_and_same_task_are_shown",
+      "caption_zh": "四态只改变可选验证叠层；它不证明现实恢复、现场结果、成熟度变化或任何授权。",
+      "caption_en": "The four states change only the optional verification overlay; they do not prove real recovery, field results, maturity change, or authorization.",
+      "evidence_refs": [
+        "proposal.md#双轨典型剖面与四态",
+        "visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract",
+        "visual/assets/non-ai-parity-contract.json#JZ-NON-AI-PARITY-V2"
+      ],
+      "must_not_imply": ["field_recovery", "site_acceptance", "maturity_change", "authorization"]
+    }
+  ],
+  "evidence_links": [
+    "proposal.md#双轨典型剖面与四态",
+    "visual/assets/key-area-evidence-matrix.json#twin_track_frontend_contract",
+    "visual/assets/non-ai-parity-contract.json#JZ-NON-AI-PARITY-V2"
+  ],
+  "forbidden_inferences": [
+    "editorial_duration_is_not_real_duration",
+    "no_media_is_added",
+    "no_current_service_or_field_result",
+    "no_site_or_professional_approval",
+    "no_maturity_change",
+    "no_authorization"
+  ],
+  "rights": {
+    "owner": "submission_contributor",
+    "license": "CC-BY-4.0",
+    "code_license_not_applicable": true
+  }
+}
