@@ -521,6 +521,9 @@ Borrowing the core insight of the Orlando Green District — placing **Smart Hub
 
 A Smart Hub is an "interaction interface + infrastructure carrier": not just a parking lot or charging station, but a low-barrier interaction node between AI agents and "non-agent people, vehicles, and objects" — low-altitude vehicles, EVs, and data flows join the belt's "nerve" here (echoing "boundary openness": being connectable does not mean being forced to connect, but whatever connects enters here). Specific siting, capacity, and investment remain pending official regulatory-plan and energy-capacity confirmation; this proposal only offers the conceptual layout and functional anchors, without presuming scale.
 
+
+
+**On the basis of deterministic latency**: deterministic latency is not an engineering parameter to be verified, but the author's design judgment from years of communications research — if a connection is to be offered as a service to the public, it must have predictable quality of service (QoS); especially in factory environments, robots must synchronize for high-precision work, which becomes impossible if latency is uncertain and jittering. This judgment aligns with the industrial-automation consensus on deterministic networking (Time-Sensitive Networking, TSN).
 ## Deepening and Translation Path: From Conceptual Proposal to Implementation
 
 This proposal honestly distinguishes "AI-generated conceptual output" from "content requiring professional deepening," providing a clear translation path for downstream teams:
