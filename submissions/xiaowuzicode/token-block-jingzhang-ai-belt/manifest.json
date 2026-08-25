@@ -26,7 +26,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "6c6c5492071d487e7dac2ba82028dea9d13a7654bb9fe7590a23a825df2fc004",
+      "sha256": "529fc589ddccfed91881147716a42668de9de635ed30eef8e0a1bd66c3d104cc",
       "language": "en"
     },
     {
@@ -41,7 +41,7 @@
       "path": "proposal.zh.md",
       "role": "narrative",
       "required": false,
-      "sha256": "86ee8c9db8d27b8000f0a8b4ae7e9f8764d7dcbf7bcf4827a7865856b4089d08",
+      "sha256": "722619c1912f53634b7e1bbf772ff5be237bd9056e16fb6e4d3dce07fb75bf19",
       "language": "zh",
       "translation_of": "proposal.md"
     },
@@ -49,7 +49,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "28df674f7e2b17e08e1fb5bb7642be455b106cdf9448007165359a03b1e454b2"
+      "sha256": "9d7aa08ff024c0ec86255a7fe2c91149028ac23e8285f6e5e89ef1ba505685da"
     },
     {
       "path": "agent.json",
@@ -79,7 +79,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c4479bfe7373a8aea1375cc249243076d630f1d8407418fcaa08f4e00d01a0ca"
+      "sha256": "41dc1e92a41f0835997c162937341f4fa529de22ecff7ddcecc90b2db63f32c3"
     },
     {
       "path": "compliance_matrix.json",
@@ -136,7 +136,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "ddd3f4f9077c56a31454cc38809837b89380b6b2ab3e797ea5dd13dd3ede93fa",
+      "sha256": "8997b92a75d5b796132df6fb5b9385eefcf92663e96b1f4768de7de1add11742",
       "language": "en"
     },
     {
@@ -435,7 +435,7 @@
       "path": "visual/index.zh.html",
       "role": "visualization",
       "required": false,
-      "sha256": "6a532d934d76bd3deb4f4c573fdaeb03d5bf4d4c9ecea30ad5de58a9f0017c67",
+      "sha256": "6297f62bb811ab0bbdc302a34c440fe13c79978271b34d044889fc96e883dff0",
       "language": "zh",
       "title_zh": "离线展示页中文对照版（与 visual/index.html 同内容，中文主导）",
       "title_en": "Chinese display counterpart of the offline visual page (same content as visual/index.html, zh-primary)",
