@@ -119,6 +119,12 @@ Dazhongsi is proposed as a city-scale interface organized around station four-qu
 
 ![Three key areas and differentiated moves](assets/figures/key-areas.en.png)
 
+### Place-specific nodes, interfaces and section evidence
+
+The three key areas are further translated into professional handoff tasks through “node—interface—section—acceptance evidence”: Zhongzhiyuan addresses the Qinghe edge and green testing corridor; AI Origin addresses the learning court and staffed service node; Dazhongsi addresses station quadrants and a staffed AI service desk. The board below is conceptual place-specific evidence, not an existing survey, statutory redline, engineering section or accessibility certification. Once formal boundary, ownership, heritage, road, river and municipal conditions are available, it must be rechecked, repositioned and recalculated.
+
+![Three key areas: place-specific node, interface and section evidence](assets/figures/key-area-place-evidence.en.png)
+
 ## Perspective Renderings: From Structure to Everyday Space
 
 The following four images are concept renderings generated for this proposal. They communicate public-space scale, material language, operating atmosphere, user relationships and how AI is actually encountered in public life. AI appears as explainable, staffed and opt-out-capable civic service carriers; these are not existing photographs, official renderings or final architectural designs. They correspond to the provisional boundary, key areas and project packages. Once official boundaries, ownership, heritage, fire, municipal and accessibility conditions are available, professional teams must reposition, verify and deepen them.
@@ -209,6 +215,19 @@ The interface uses conceptual vendor-neutral fields and legible evidence, not a 
 | 10 Global AI week route | Capacity, accessibility, safety and copyright checklist is 100% complete; retrospective is downloadable | Manual event route and site checklist | Checklist, duty roster, emergency exercise, public feedback, annual retrospective | Missing item, unknown capacity/safety or insufficient authorization: do not open public route |
 
 These interfaces and baselines are a handoff protocol for professional deepening: start with a paper/human comparison, then run a small reversible validation. Do not convert model accuracy, concurrency, energy consumption or cross-system interoperability into confirmed facts at this stage.
+
+### Joint field walk-through and stop gate before any pilot
+
+Before any pilot faces the public on site, the relevant professional and operating roles must complete the checklist below. It is a conceptual start gate and evidence list, not a certification of current compliance. If any item is missing, unknown or cannot be handed over to a human, retain desk testing/mobile exhibition, pause field opening and keep the rollback path.
+
+| Joint review topic | Required field evidence | Proposed participants | Missing or failed response |
+| --- | --- | --- | --- |
+| Accessibility and older-adult use | Day/night/rain routes; ramp, tactile cue, seating, lighting, rest and paper fallback walk-through | Accessibility adviser + older-adult representatives + mobility/operations | Log barriers and human alternatives; no guide/event opening if it fails |
+| Community and public acceptance | Inquiry, complaint, refusal and opt-out exercises with residents, students, visitors and no-phone users | Community liaison + public review group | Stop and return to staffed desk if complaint or opt-out fails |
+| Mobility and station safety | Conflict points, station quadrants, route continuity, staffed boundary, evacuation and night visibility | Mobility adviser + public-safety lead | Keep paper wayfinding/temporary organization; no fixed or automatic service |
+| Heritage and spatial interface | Heritage boundary, control zone, materials, wayfinding, display content and attribution/copyright review | Heritage adviser + design/copyright lead | Remove unreviewed content; no fixed installation or public release |
+| Privacy and data governance | Minimum data, authorization summary, deletion owner, logs, human handover and vendor-neutral interface | Privacy/security reviewer + data-governance owner | Clear data and stop the pilot if identifying data or deletion failure appears |
+| Operations, fire and capacity | Duty roster, device/power/network/fire conditions, insurance, complaint response, incident drill and rollback script | Operations + fire/safety + venue authorizer | No public operation while any capacity, insurance or authorization is unknown |
 
 ### First-round professional handoff crosswalk
 

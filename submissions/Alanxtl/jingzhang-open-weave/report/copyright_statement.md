@@ -54,6 +54,7 @@ This is a conceptual professional handoff worksheet, not a site authorization, p
 | 八个项目包与区域接口 / packages and regional interfaces | JZ-01—JZ-08、五类区域接口 | JZ-01—JZ-08 and five regional interfaces | PASS |
 | 人工边界、停止条件与 provisional 警示 / human boundary, stops and provisional warnings | 纸面、电话、人工、投诉、退出、回滚 | paper, phone, staffed desk, complaint, opt-out and rollback | PASS |
 | 图件、图位、版权与授权 / figure slots, rights and license | 中英配对图、`COMMUNITY-DISPLAY-ONLY` 矩阵 | paired figures and same rights matrix | PASS |
+| 现场试点启动条件 / field-pilot start conditions | 无障碍、老年、社区、交通、安全、文保、隐私、运维联合走查表 | accessibility, older-adult, community, mobility, safety, heritage, privacy and operations walk-through table | PASS |
 
 未发现影响含义的中英文主张、指标、限制条件、证据引用或图位差异。正式边界、现场阈值、合作授权和实际无障碍仍须由主管部门、专业团队与真实用户复核。
 
