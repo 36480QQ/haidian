@@ -74,24 +74,6 @@
    ]
   },
   {
-   "id": "SRC-CASES-GLOBAL-2026",
-   "title": "全球AI创新生态案例公开资料汇编（King's Cross / Kendall Square / one-north / Station F / MaRS / 杭州城西科创大走廊 / 深圳南山）",
-   "publisher": "Various public websites and press (compiled)",
-   "published_date": "2026-08-24",
-   "url": "https://www.kingscross.co.uk",
-   "authority_level": "background_only",
-   "retrieved_date": "2026-08-24",
-   "usable_for": [
-    "narrative reference",
-    "transferable lessons"
-   ],
-   "not_usable_for": [
-    "boundary claims",
-    "statutory controls",
-    "formal scoring evidence"
-   ]
-  },
-  {
    "id": "SRC-STANDARDS-SNAPSHOT-2026",
    "title": "仓库标准库本地快照（城市设计管理办法/控规办法/用地分类指南/生成式AI办法/无障碍环境建设法/适老化方案）",
    "publisher": "open-city-ai/haidian maintainers (from official sources)",
@@ -104,6 +86,139 @@
    "not_usable_for": [
     "replacing official text URLs",
     "case-specific legal opinions"
+   ]
+  },
+  {
+   "id": "SRC-CASE-KINGS-CROSS",
+   "title": "King's Cross, London - railway heritage regeneration official site",
+   "publisher": "King's Cross Central Limited Partnership",
+   "published_date": "2026-08-24",
+   "url": "https://www.kingscross.co.uk",
+   "retrieved_date": "2026-08-24",
+   "authority_level": "background_only",
+   "cited_fact": "Public-realm and slow-network-first regeneration of a railway heritage site.",
+   "usable_for": [
+    "narrative reference only"
+   ],
+   "not_usable_for": [
+    "boundary claims",
+    "statutory controls",
+    "performance claims",
+    "formal scoring evidence"
+   ]
+  },
+  {
+   "id": "SRC-CASE-KENDALL",
+   "title": "Kendall Square, Cambridge MA - innovation district public materials",
+   "publisher": "Kendall Square Association / City of Cambridge public pages",
+   "published_date": "2026-08-24",
+   "url": "https://kendallsq.org",
+   "retrieved_date": "2026-08-24",
+   "authority_level": "background_only",
+   "cited_fact": "Walking-scale coupling of research institutions and industry sustains district vitality.",
+   "usable_for": [
+    "narrative reference only"
+   ],
+   "not_usable_for": [
+    "boundary claims",
+    "statutory controls",
+    "performance claims",
+    "formal scoring evidence"
+   ]
+  },
+  {
+   "id": "SRC-CASE-ONE-NORTH",
+   "title": "one-north, Singapore - mixed-use innovation district by JTC",
+   "publisher": "JTC Corporation (Singapore)",
+   "published_date": "2026-08-24",
+   "url": "https://www.onenorth.sg",
+   "retrieved_date": "2026-08-24",
+   "authority_level": "background_only",
+   "cited_fact": "Work-live-learn-play mixed units with an embedded testbed mechanism.",
+   "usable_for": [
+    "narrative reference only"
+   ],
+   "not_usable_for": [
+    "boundary claims",
+    "statutory controls",
+    "performance claims",
+    "formal scoring evidence"
+   ]
+  },
+  {
+   "id": "SRC-CASE-STATION-F",
+   "title": "Station F, Paris - startup campus in a converted railway depot",
+   "publisher": "Station F",
+   "published_date": "2026-08-24",
+   "url": "https://stationf.co",
+   "retrieved_date": "2026-08-24",
+   "authority_level": "background_only",
+   "cited_fact": "Adaptive reuse of a heritage rail building as a startup gathering symbol.",
+   "usable_for": [
+    "narrative reference only"
+   ],
+   "not_usable_for": [
+    "boundary claims",
+    "statutory controls",
+    "performance claims",
+    "formal scoring evidence"
+   ]
+  },
+  {
+   "id": "SRC-CASE-MARS",
+   "title": "MaRS Discovery District, Toronto - innovation service platform",
+   "publisher": "MaRS Discovery District",
+   "published_date": "2026-08-24",
+   "url": "https://marsdd.com",
+   "retrieved_date": "2026-08-24",
+   "authority_level": "background_only",
+   "cited_fact": "Centralized innovation services lower institutional costs for science ventures.",
+   "usable_for": [
+    "narrative reference only"
+   ],
+   "not_usable_for": [
+    "boundary claims",
+    "statutory controls",
+    "performance claims",
+    "formal scoring evidence"
+   ]
+  },
+  {
+   "id": "SRC-CASE-HZ-CORRIDOR",
+   "title": "杭州城西科创大走廊 - 官方公开介绍",
+   "publisher": "杭州市人民政府门户网站",
+   "published_date": "2026-08-24",
+   "url": "https://www.hangzhou.gov.cn",
+   "retrieved_date": "2026-08-24",
+   "authority_level": "background_only",
+   "cited_fact": "R&D corridor growing along transit axes with university-city coordination.",
+   "usable_for": [
+    "narrative reference only"
+   ],
+   "not_usable_for": [
+    "boundary claims",
+    "statutory controls",
+    "performance claims",
+    "formal scoring evidence"
+   ]
+  },
+  {
+   "id": "SRC-CASE-SZ-NANSHAN",
+   "title": "深圳市南山区 - 高新区园区街区化公开介绍",
+   "publisher": "深圳市南山区人民政府门户网站",
+   "published_date": "2026-08-24",
+   "url": "http://www.szns.gov.cn",
+   "retrieved_date": "2026-08-24",
+   "authority_level": "background_only",
+   "cited_fact": "Park-street integration with street-economy vitality supporting innovation crowds.",
+   "usable_for": [
+    "narrative reference only"
+   ],
+   "not_usable_for": [
+    "boundary claims",
+    "statutory controls",
+    "performance claims",
+    "formal scoring evidence"
    ]
   }
  ]

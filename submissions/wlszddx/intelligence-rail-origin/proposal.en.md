@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Intelligence Rail Origin - Urban Design of the Centennial Jingzhang AI Innovation Belt"
 author_github: "wlszddx"
 language: "en"
@@ -18,7 +18,7 @@ iteration: "v1.0"
 
 The controlling basis of this proposal is the pre-qualification announcement issued by the Haidian Branch of the Beijing Municipal Planning and Natural Resources Commission, which defines the three-level scope, official area values and the design task framework; the open call taskbook for AI agents further defines the three positions, five functions, three districts and two wings, and six mandatory tasks. Together they form the compliance baseline of this entry [source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT] [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]. The professional logic follows the Urban Design Measures on public space and character control, the Control Detailed Planning Measures on separating known controls from design suggestions, and the national land-use classification guide on verifiable use codes [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE].
 
-A critical data boundary must be stated: the official precise SITE_BOUNDARY and KEY_AREA polygons have not yet been published. This proposal uses the repository's provisional rough boundary for generation and self-check throughout; it is suitable for design generation, visualization and intake self-check only, and must not be used as an official redline, approval basis or precise-area claim [source:SRC-PROVISIONAL-BOUNDARIES-2026]. All area metrics will be fully recalculated in EPSG:4548 once the official boundary arrives, and this trigger is recorded in the assumptions and sources. Global AI ecosystem cases are cited from public reporting as narrative references only - background-level material that supports no boundary or control claim [source:SRC-CASES-GLOBAL-2026]. The proposal uses no commercial map tiles, no non-public data and no uncleared imagery.
+A critical data boundary must be stated: the official precise SITE_BOUNDARY and KEY_AREA polygons have not yet been published. This proposal uses the repository's provisional rough boundary for generation and self-check throughout; it is suitable for design generation, visualization and intake self-check only, and must not be used as an official redline, approval basis or precise-area claim [source:SRC-PROVISIONAL-BOUNDARIES-2026]. All area metrics will be fully recalculated in EPSG:4548 once the official boundary arrives, and this trigger is recorded in the assumptions and sources. Global AI ecosystem cases are cited from public reporting as narrative references only - background-level material that supports no boundary or control claim [source:SRC-CASE-KINGS-CROSS] [source:SRC-CASE-KENDALL] [source:SRC-CASE-ONE-NORTH]. The proposal uses no commercial map tiles, no non-public data and no uncleared imagery.
 
 ![Three-level scope nesting and overall spatial structure](assets/figures/site-overview.en.png)
 
@@ -34,11 +34,24 @@ All level area values come from the official announcement text, while the submit
 
 On industry, the proposal reads the belt as a second departure of the "AI origin": the Jingzhang Railway was the first mainline railway independently surveyed, designed and built by Chinese engineers, and today's original AI strength in Haidian is the autonomous-innovation origin of the intelligent era; the two share the same spirit of moving from introduction to autonomy [source:SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT]. Beijing's "three districts and two wings" deployment supplies the collaborative loop of the Zhongguancun technology-service wing and the Xiaoyue-river scenario wing, which this proposal treats as two-way supplies of services and scenarios rather than a simple functional zoning [source:SRC-2026-BJ-KW-THREE-AREAS-WINGS].
 
-Seven global cases yield transferable lessons: King's Cross in London shows that railway-hub regeneration should start with public realm and slow networks; Kendall Square in Boston reveals the vitality formula of research-industry coupling at walking scale; Singapore's one-north mixed units and testbed mechanism, Paris Station F's adaptive reuse of a rail depot, Toronto MaRS's innovation service platform, Hangzhou West Sci-Tech Corridor's transit coordination and Shenzhen Nanshan's park-street integration together point to four operable principles: public realm first, mixed use, testbed mechanisms and service platforms [source:SRC-CASES-GLOBAL-2026]. The future-city hypothesis: the competitiveness of an AI-native district lies not in building density but in scenario density - a network of testable, visible and participatory AI scenarios becomes new infrastructure.
+Seven global cases yield transferable lessons: King's Cross in London shows that railway-hub regeneration should start with public realm and slow networks; Kendall Square in Boston reveals the vitality formula of research-industry coupling at walking scale; Singapore's one-north mixed units and testbed mechanism, Paris Station F's adaptive reuse of a rail depot, Toronto MaRS's innovation service platform, Hangzhou West Sci-Tech Corridor's transit coordination and Shenzhen Nanshan's park-street integration together point to four operable principles: public realm first, mixed use, testbed mechanisms and service platforms [source:SRC-CASE-KINGS-CROSS] [source:SRC-CASE-KENDALL] [source:SRC-CASE-ONE-NORTH]. The future-city hypothesis: the competitiveness of an AI-native district lies not in building density but in scenario density - a network of testable, visible and participatory AI scenarios becomes new infrastructure.
+
+**Case study table (seven cases; background_only narrative references - they support no boundary, control or performance claims)**:
+
+| Case | Key mechanism lesson | Translation to the belt | Source |
+|---|---|---|---|
+| King's Cross, London | Public realm and slow networks first | Heritage spine delivered first | [source:SRC-CASE-KINGS-CROSS] |
+| Kendall Square, Boston | Walking-scale research-industry coupling | R&D clusters at walking scale | [source:SRC-CASE-KENDALL] |
+| one-north, Singapore | Mixed units + testbed mechanism | White reserve + robot test loop | [source:SRC-CASE-ONE-NORTH] |
+| Station F, Paris | Rail depot reuse as startup landmark | Origin Hall & Wall of Codes retrofit | [source:SRC-CASE-STATION-F] |
+| MaRS, Toronto | Centralized innovation service platform | Zhongguancun service wing | [source:SRC-CASE-MARS] |
+| Hangzhou West Corridor | Transit-oriented R&D corridor | Slow spine linking three districts | [source:SRC-CASE-HZ-CORRIDOR] |
+| Shenzhen Nanshan | Park-street integration | Origin community mixed frontages | [source:SRC-CASE-SZ-NANSHAN] |
+
 
 The naming system follows: the belt is named "智轨原点" (Zhi Gui Yuan Dian), in English "The Intelligence Rail Origin". "Intelligence rail" denotes the innovation track carried by the railway heritage; "origin" marks the spatial coordinate of two centennial origins of Chinese engineering and AI self-innovation. The system derives place names such as Origin Plaza, Origin Hall and the Origin Pillar. The logo direction is a "Ren-shaped glyph" fusing the Qinglongqiao zigzag alignment with a neural-graph structure into an upward origin mark, in deep teal with an amber accent; typefaces are limited to commercially licensed open fonts, avoiding any unauthorized font or corporate mark. The spatial structure is "one axis, one loop, two wings, three districts and many nodes", where the axis is the Jingzhang heritage park spine [depth:overall_spatial_structure] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-Brand identity is organized in four levels with a reviewable direction sheet: L1 master brand (bilingual wordmark + Ren glyph), L2 culture signage (bilingual heritage-park wayfinding), L3 landmark marks (Origin Pillar, Ren-Shaped Zigzag Gallery, Wall of Codes), L4 event sub-brands (Developers Conference, Open Source Open Day, Hackathon 48h). The glyph uses the Qinglongqiao alignment as its skeleton, neural nodes as endpoints and a coordinate-origin crosshair as datum; standard, reversed and mono lockups are provided. The palette is deep teal #12332B, rail green #1F7A5C, origin amber #D96C2C and cloud white #F4F6F4; typefaces are Source Han Sans (SIL OFL) and Inter (SIL OFL), all open-licensed and registered in the copyright record; the artwork is original and contains no third-party marks [source:SRC-CASES-GLOBAL-2026].
+Brand identity is organized in four levels with a reviewable direction sheet: L1 master brand (bilingual wordmark + Ren glyph), L2 culture signage (bilingual heritage-park wayfinding), L3 landmark marks (Origin Pillar, Ren-Shaped Zigzag Gallery, Wall of Codes), L4 event sub-brands (Developers Conference, Open Source Open Day, Hackathon 48h). The glyph uses the Qinglongqiao alignment as its skeleton, neural nodes as endpoints and a coordinate-origin crosshair as datum; standard, reversed and mono lockups are provided. The palette is deep teal #12332B, rail green #1F7A5C, origin amber #D96C2C and cloud white #F4F6F4; typefaces are Source Han Sans (SIL OFL) and Inter (SIL OFL), all open-licensed and registered in the copyright record; the artwork is original and contains no third-party marks [source:SRC-CASE-KINGS-CROSS] [source:SRC-CASE-KENDALL] [source:SRC-CASE-ONE-NORTH].
 
 ![Brand identity direction sheet: Ren glyph, bilingual lockup, palette and four levels](assets/figures/brand-identity.en.png)
 
@@ -69,6 +82,24 @@ The renewal framework follows "spine-led, node-breaking, wing-coordinated" logic
 The ecosystem design answers the taskbook's dual demand for a full-stack autonomous system and a world-class ecology: Zhongzhiyuan hosts the full-stack testbed from compute and frameworks to model services; the origin community hosts the developer community and cultural identity; Dazhongsi hosts industrialization and smart-native consumption. The Zhongguancun service wing supplies policy, capital, IP and translation services; the Xiaoyue wing supplies open scenarios and data trials. Seven mechanisms - land, space, capital, talent, compute, data and scenarios - organize around the loop of "open scenario application, community co-creation, honor incentives and translation to implementation" [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK].
 
 The proposal offers twelve AI scenario cards, four of which are industry test-and-validation scenarios. The walkability assessment platform outputs aggregated indicators from public road data and anonymized flows, with results open to public review; the enterprise Copilot pilot answers from publicly released policy and event information with cited sources and human-confirmation prompts; the safety operations review assistant requires human review before any disposition and performs no identity tracking; the low-speed robot delivery testbed runs on published campus routes with speed limits and pedestrian priority. The other eight cards cover cultural guiding, health navigation, the open-source window, community workshops, senior-friendly desks, campus AI-literacy classes, multilingual event reception and green-space ecology monitoring; every card binds users, location, data and privacy boundaries [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [metric:scenario_node_count].
+
+
+**Scenario handover matrix (12 cards; operator type = suggested category; all conceptual)**:
+
+| Card | Suggested operator | Data category (minimized) | Human review | Fallback / exit |
+|---|---|---|---|---|
+| SC-01 Cultural guide | Public-culture platform | Aggregated check-in counts | Content traceability sampling | Falls back to static signage |
+| SC-02 Health navigation | Community health center | Public service info | Human confirmation of referrals | Permanent human counter |
+| SC-03 Walkability | Transport coordination platform | Anonymized aggregate flows | Public review of indicators | Indicators off = facilities remain |
+| SC-04 Enterprise Copilot | Service-wing operator | Public policy/event info | Human confirm on key items | Reject answers without citations |
+| SC-05 Safety review | Public-space operator | Duty logs (no imaging) | Review before disposition | Suspended if review absent |
+| SC-06 Robot delivery | Campus operator | Published campus routes | Human handling of incidents | One-switch pause + speed recall |
+| SC-07 Open-source window | Wall of Codes operator | Public repo aggregates | Display content review | Static honor wall fallback |
+| SC-08 Co-creation workshop | Community center | Public agendas/minutes | Confirmation before publishing | Human-moderated workshop |
+| SC-09 Senior-friendly desk | Community service center | Public service guides | Full human parallel service | Human window is the fallback |
+| SC-10 Campus AI classes | Schools & science outlets | Public course materials | Teacher content review | Regular teaching aids |
+| SC-11 Event reception | Event organizer | Public schedules | Editable scheduling results | Manual event desk |
+| SC-12 Ecology monitoring | Green-space maintainer | Fixed-sensor aggregates | Human judgment on anomalies | Manual inspection rounds |
 
 Five personas are defined: returnee AI researchers needing compliant compute and an international academic community; young developers needing affordable desks, testbeds and open-source belonging; senior residents needing parallel human counters and barrier-free streets; international visitors needing multilingual reception and a one-day pilgrimage route; students needing safe science paths and hands-on practice. All scenarios follow the principles of explainability, traceability and recallability; generative content services are designed strictly within the boundaries of the interim generative-AI measures, public services keep human counters, and accessibility law and senior-inclusion policy are respected [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45].
 
@@ -103,6 +134,22 @@ Character guidance sets deep teal and warm grey as base tones along the spine, w
 ## Renewal Projects, Implementation Policy, and Phasing
 
 The renewal list holds ten conceptual projects. Near-term five: the southern heritage-park connection, Origin Plaza with a conceptual underground interface reservation, Origin Hall adaptive reuse, the community digital service desk network, and slow-network gap closures. Mid-term three: the Ren-Shaped Zigzag Gallery, the Zhongzhiyuan robot test loop, and rooftop PV with edge-compute micro nodes. Long-term two: the Wall of Codes frontage retrofit and the pocket-park program. Phasing geometry shows about 453.9 hectares near-term, 416.2 hectares mid-term and 271.2 hectares long-term; the three phases together cover the whole submitted boundary and match the metrics.json recalculation [data:geometry/phasing.geojson#P1-ZONE] [metric:phase1_area_sqm] [metric:phase2_area_sqm] [metric:phase3_area_sqm] [depth:renewal_project_list].
+
+
+**Renewal project handover matrix (10 items; prerequisites, operators and acceptance are conceptual)**:
+
+| Project | Prerequisite materials | Operator type | Phase acceptance (concept) |
+|---|---|---|---|
+| PR-01 Southern park connection | Official redline (pending), rail safety zones | Public-space platform | Segment open + slow-flow spot checks |
+| PR-02 Origin Plaza | Site ownership & utility records | Public-space platform | Plaza open + scenario interface check |
+| PR-03 Origin Hall retrofit | Building safety & ownership review | Culture facility operator | Works done + event program |
+| PR-04 Service desks x3 | Service list & venues | Community service centers | 100% human-parallel pilot |
+| PR-05 Slow-network gaps x3 | Road redlines & rail-crossing terms | Transport coordination platform | Connectivity + safety assessment |
+| PR-06 Zigzag Gallery | Siting & height verification | Culture facility operator | Open + accessibility acceptance |
+| PR-07 Robot test loop | Campus right-of-way & insurance | Campus operator | Speed-compliance pilot passed |
+| PR-08 PV + edge-compute | Roof ownership & grid connection | Campus operator | Generation & compute metrics |
+| PR-09 Wall of Codes retrofit | Frontage ownership & merchant talks | Cluster operator | Honor system online |
+| PR-10 Pocket park program | Green-space ownership & budget | Public-space platform | Open area & canopy rate |
 
 Policy suggestions follow three lines: an open scenario list to lower trial thresholds for AI enterprises; joint public-realm operation inviting social actors to maintain the spine; and honor plus event systems accumulating community assets. The annual event system comprises the Jingzhang AI Developers Conference, the Open Source Open Day, the Jingzhang AI Hackathon 48h, Origin Nights and the International AI City Biennale - all conceptual suggestions rather than confirmed arrangements [depth:phasing_implementation]. The developer-community mechanism proposes the loop of "contributions accumulate, honors display, scenarios open for application"; international communication tells the story of two origins, inviting global developers into the work; the conversion pathway follows events, community, incubation and implementation, with conversion data to be measured in operation [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK].
 
