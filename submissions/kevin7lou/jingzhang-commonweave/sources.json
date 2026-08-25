@@ -9,8 +9,17 @@
       "accessed_date": "2026-08-24",
       "authority_level": "repository_contract",
       "source_type": "official_public",
-      "usable_for": ["project contract", "enums", "standards", "schemas", "planning-limit gaps"],
-      "not_usable_for": ["official polygon unless separately verified", "project approval"]
+      "usable_for": [
+        "project contract",
+        "enums",
+        "standards",
+        "schemas",
+        "planning-limit gaps"
+      ],
+      "not_usable_for": [
+        "official polygon unless separately verified",
+        "project approval"
+      ]
     },
     {
       "id": "SOURCE-REGISTRY",
@@ -20,8 +29,13 @@
       "accessed_date": "2026-08-24",
       "authority_level": "repository_registry",
       "source_type": "repository_public_registry",
-      "usable_for": ["source-role classification", "formal/background/provisional checks"],
-      "not_usable_for": ["upgrading a provisional source to official"]
+      "usable_for": [
+        "source-role classification",
+        "formal/background/provisional checks"
+      ],
+      "not_usable_for": [
+        "upgrading a provisional source to official"
+      ]
     },
     {
       "id": "PROCESSED-FACT-PACK",
@@ -31,8 +45,14 @@
       "accessed_date": "2026-08-24",
       "authority_level": "navigation_only",
       "source_type": "repository_processed_reference",
-      "usable_for": ["task navigation", "missing-data checklist"],
-      "not_usable_for": ["new factual authority", "spatial control"]
+      "usable_for": [
+        "task navigation",
+        "missing-data checklist"
+      ],
+      "not_usable_for": [
+        "new factual authority",
+        "spatial control"
+      ]
     },
     {
       "id": "BOUNDARY-SOURCE",
@@ -42,8 +62,17 @@
       "accessed_date": "2026-08-24",
       "authority_level": "provisional_only",
       "source_type": "agent_inferred_from_public_data",
-      "usable_for": ["intake generation", "offline visualization", "topology self-check"],
-      "not_usable_for": ["official redline", "precise area", "statutory control", "implementation"]
+      "usable_for": [
+        "intake generation",
+        "offline visualization",
+        "topology self-check"
+      ],
+      "not_usable_for": [
+        "official redline",
+        "precise area",
+        "statutory control",
+        "implementation"
+      ]
     },
     {
       "id": "KEY-AREA-SOURCE",
@@ -53,8 +82,15 @@
       "accessed_date": "2026-08-24",
       "authority_level": "provisional_only",
       "source_type": "agent_inferred_from_public_data",
-      "usable_for": ["intake detailed-design discussion", "offline visualization"],
-      "not_usable_for": ["official key-area boundary", "precise area", "parcel decision"]
+      "usable_for": [
+        "intake detailed-design discussion",
+        "offline visualization"
+      ],
+      "not_usable_for": [
+        "official key-area boundary",
+        "precise area",
+        "parcel decision"
+      ]
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
@@ -64,8 +100,16 @@
       "accessed_date": "2026-08-24",
       "authority_level": "A0",
       "source_type": "official_public",
-      "usable_for": ["project name", "task scope", "approximate area values", "design tasks"],
-      "not_usable_for": ["precise official polygon", "project-specific statutory controls"]
+      "usable_for": [
+        "project name",
+        "task scope",
+        "approximate area values",
+        "design tasks"
+      ],
+      "not_usable_for": [
+        "precise official polygon",
+        "project-specific statutory controls"
+      ]
     },
     {
       "id": "AGENT-TASKBOOK",
@@ -75,8 +119,16 @@
       "accessed_date": "2026-08-24",
       "authority_level": "user_provided_cleared",
       "source_type": "user_provided_cleared",
-      "usable_for": ["agent tasks", "scenario and branding requirements", "public-compliance wording"],
-      "not_usable_for": ["official redline", "engineering feasibility", "implementation commitment"]
+      "usable_for": [
+        "agent tasks",
+        "scenario and branding requirements",
+        "public-compliance wording"
+      ],
+      "not_usable_for": [
+        "official redline",
+        "engineering feasibility",
+        "implementation commitment"
+      ]
     },
     {
       "id": "USER-DESIGN-CHARTER",
@@ -86,8 +138,18 @@
       "accessed_date": "2026-08-24",
       "authority_level": "participant_design_direction",
       "source_type": "user_provided_cleared",
-      "usable_for": ["design values", "trade-offs", "whole-life framing", "public AI rights", "red lines"],
-      "not_usable_for": ["existing-condition fact", "official policy", "statutory control"]
+      "usable_for": [
+        "design values",
+        "trade-offs",
+        "whole-life framing",
+        "public AI rights",
+        "red lines"
+      ],
+      "not_usable_for": [
+        "existing-condition fact",
+        "official policy",
+        "statutory control"
+      ]
     },
     {
       "id": "BYTEDANCE-HQ-PROJECT",
@@ -97,8 +159,16 @@
       "accessed_date": "2026-08-24",
       "authority_level": "background_official",
       "source_type": "official_public",
-      "usable_for": ["background: ByteDance headquarters industrial-park project in Beixiaguan", "background: listed connection to Metro Lines 12 and 13"],
-      "not_usable_for": ["current construction status", "exact proposal-site boundary", "corporate endorsement", "public-space control"]
+      "usable_for": [
+        "background: ByteDance headquarters industrial-park project in Beixiaguan",
+        "background: listed connection to Metro Lines 12 and 13"
+      ],
+      "not_usable_for": [
+        "current construction status",
+        "exact proposal-site boundary",
+        "corporate endorsement",
+        "public-space control"
+      ]
     },
     {
       "id": "DAZHONGSI-AI-NIGHT-SCHOOL",
@@ -108,8 +178,15 @@
       "accessed_date": "2026-08-24",
       "authority_level": "background_official_portal",
       "source_type": "official_public",
-      "usable_for": ["background: Dazhongsi AI pilot district", "background: community-university-ByteDance volunteer teaching"],
-      "not_usable_for": ["permanent operator commitment", "future event commitment", "corporate endorsement"]
+      "usable_for": [
+        "background: Dazhongsi AI pilot district",
+        "background: community-university-ByteDance volunteer teaching"
+      ],
+      "not_usable_for": [
+        "permanent operator commitment",
+        "future event commitment",
+        "corporate endorsement"
+      ]
     },
     {
       "id": "CASE-PARIS-15M",
@@ -119,8 +196,15 @@
       "accessed_date": "2026-08-24",
       "authority_level": "background_official",
       "source_type": "official_public",
-      "usable_for": ["background mechanism: proximity to essential functions", "reuse and time-sharing of existing facilities", "resident consent and pilot evaluation"],
-      "not_usable_for": ["Haidian service radius proof", "Haidian control indicator"]
+      "usable_for": [
+        "background mechanism: proximity to essential functions",
+        "reuse and time-sharing of existing facilities",
+        "resident consent and pilot evaluation"
+      ],
+      "not_usable_for": [
+        "Haidian service radius proof",
+        "Haidian control indicator"
+      ]
     },
     {
       "id": "CASE-KAMPUNG-ADMIRALTY",
@@ -130,8 +214,16 @@
       "accessed_date": "2026-08-24",
       "authority_level": "background_official",
       "source_type": "official_public",
-      "usable_for": ["background mechanism: intergenerational co-location", "senior housing, childcare, health, wellness and green space integration", "inter-agency delivery"],
-      "not_usable_for": ["copying scale", "Haidian engineering feasibility", "Haidian operator commitment"]
+      "usable_for": [
+        "background mechanism: intergenerational co-location",
+        "senior housing, childcare, health, wellness and green space integration",
+        "inter-agency delivery"
+      ],
+      "not_usable_for": [
+        "copying scale",
+        "Haidian engineering feasibility",
+        "Haidian operator commitment"
+      ]
     },
     {
       "id": "CASE-VIENNA-LIFE-STAGE-HOUSING",
@@ -141,8 +233,15 @@
       "accessed_date": "2026-08-24",
       "authority_level": "background_official",
       "source_type": "official_public",
-      "usable_for": ["background mechanism: housing allocation responsive to life circumstances", "learning, growing families, separation and accessible aging"],
-      "not_usable_for": ["Chinese housing policy", "Haidian eligibility rules", "Haidian supply commitment"]
+      "usable_for": [
+        "background mechanism: housing allocation responsive to life circumstances",
+        "learning, growing families, separation and accessible aging"
+      ],
+      "not_usable_for": [
+        "Chinese housing policy",
+        "Haidian eligibility rules",
+        "Haidian supply commitment"
+      ]
     },
     {
       "id": "CASE-BARCELONA-CLIMATE-SHELTERS",
@@ -152,8 +251,16 @@
       "accessed_date": "2026-08-24",
       "authority_level": "background_official",
       "source_type": "official_public",
-      "usable_for": ["background mechanism: distributed heat resilience", "reuse of libraries, schools, parks and civic centres", "priority for vulnerable residents"],
-      "not_usable_for": ["Beijing heat threshold", "Haidian facility inventory", "exact shelter count target"]
+      "usable_for": [
+        "background mechanism: distributed heat resilience",
+        "reuse of libraries, schools, parks and civic centres",
+        "priority for vulnerable residents"
+      ],
+      "not_usable_for": [
+        "Beijing heat threshold",
+        "Haidian facility inventory",
+        "exact shelter count target"
+      ]
     },
     {
       "id": "CASE-KALASATAMA",
@@ -163,8 +270,16 @@
       "accessed_date": "2026-08-24",
       "authority_level": "background_official",
       "source_type": "official_public",
-      "usable_for": ["background mechanism: long-term phased regeneration", "public transport, routes, services and public art"],
-      "not_usable_for": ["Haidian density", "height", "population", "financing"]
+      "usable_for": [
+        "background mechanism: long-term phased regeneration",
+        "public transport, routes, services and public art"
+      ],
+      "not_usable_for": [
+        "Haidian density",
+        "height",
+        "population",
+        "financing"
+      ]
     },
     {
       "id": "CASE-PUNGGOL",
@@ -174,8 +289,14 @@
       "accessed_date": "2026-08-24",
       "authority_level": "background_official",
       "source_type": "official_public",
-      "usable_for": ["background mechanism: university-industry-community convergence", "living lab and open platform"],
-      "not_usable_for": ["Haidian spatial control", "copied investment or governance commitment"]
+      "usable_for": [
+        "background mechanism: university-industry-community convergence",
+        "living lab and open platform"
+      ],
+      "not_usable_for": [
+        "Haidian spatial control",
+        "copied investment or governance commitment"
+      ]
     },
     {
       "id": "CASE-BROOKLYN-NAVY-YARD",
@@ -185,8 +306,16 @@
       "accessed_date": "2026-08-24",
       "authority_level": "background_official",
       "source_type": "official_public",
-      "usable_for": ["background mechanism: productive heritage reuse", "supporting uses, traffic management and public interface"],
-      "not_usable_for": ["Haidian ownership", "zoning", "employment", "construction conclusion"]
+      "usable_for": [
+        "background mechanism: productive heritage reuse",
+        "supporting uses, traffic management and public interface"
+      ],
+      "not_usable_for": [
+        "Haidian ownership",
+        "zoning",
+        "employment",
+        "construction conclusion"
+      ]
     },
     {
       "id": "ASSET-GENERATION-METHOD",
@@ -196,8 +325,34 @@
       "accessed_date": "2026-08-24",
       "authority_level": "agent_disclosure",
       "source_type": "agent_generated_design",
-      "usable_for": ["figure, concept image, HTML and PDF generation disclosure", "copyright and limitations"],
-      "not_usable_for": ["planning fact", "official approval"]
+      "usable_for": [
+        "figure, concept image, HTML and PDF generation disclosure",
+        "copyright and limitations"
+      ],
+      "not_usable_for": [
+        "planning fact",
+        "official approval"
+      ]
+    },
+    {
+      "id": "FONT-NOTO-SANS-SC",
+      "title": "Noto Sans Simplified Chinese variable font",
+      "publisher": "Google Fonts / Noto Project",
+      "url": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+      "download_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+      "license": "SIL Open Font License 1.1",
+      "accessed_date": "2026-08-25",
+      "authority_level": "primary_upstream_repository",
+      "source_type": "official_public",
+      "usable_for": [
+        "offline HTML typography",
+        "subset embedding"
+      ],
+      "not_usable_for": [
+        "planning evidence",
+        "official endorsement"
+      ],
+      "processing_note": "Subset to characters used in the bilingual package and embedded as WOFF2 data URI; no remote font request at review time."
     }
   ]
 }

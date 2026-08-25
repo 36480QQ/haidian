@@ -16,7 +16,9 @@
 
 ## 字体与工具
 
-核心图和 PDF 使用本机合法安装的 MiSans 与系统中文字体进行离线渲染，未把字体文件打包进投稿。HTML 使用系统字体栈，不加载外部字体、脚本、地图、iframe、表单、API 或跟踪器。演示稿的页面结构依据本地 `guizang-ppt-skill` 的森林墨主题与版式规范重新制作；不复制第三方演示内容。
+核心图和 PDF 使用本机合法安装的 MiSans 与系统中文字体进行离线渲染。为修复 Linux/Chromium 审阅环境的中文缺字，`report/proposal.html`、`visual/index.html` 及其双语对应页内嵌 Noto Sans SC 的 WOFF2 字符子集；原字体来自 Google Fonts / Noto Project 的上游仓库，采用 SIL Open Font License 1.1。子集只包含本包使用字符，以 `data:` URI 写入 HTML，打开页面时不请求网络，也不把它作为规划证据或官方背书。
+
+HTML 不加载远程字体、脚本、地图、iframe、表单、API 或跟踪器。演示稿的页面结构依据本地 `guizang-ppt-skill` 的森林墨主题与版式规范重新制作；不复制第三方演示内容。原创“京张一生”标志以 SVG 几何路径绘制，不使用外部字体、企业 Logo 或现成商标素材。
 
 ## 外部事实与案例
 

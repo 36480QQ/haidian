@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1.0",
+  "font_family": "Noto Sans SC",
+  "embedded_family_name": "JZReview",
+  "source": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+  "license": "SIL Open Font License 1.1",
+  "subset_unique_character_count": 970,
+  "woff2_subset_count": 6,
+  "woff2_bytes": 136588,
+  "woff2_combined_sha256": "5c89977e6fbf8d787b8d0ea28133e32dfc8f42f4c81d9704d423cd60dd82b7bd",
+  "targets": [
+    "report/proposal.html",
+    "report/proposal.en.html",
+    "visual/index.html",
+    "visual/index.en.html"
+  ],
+  "offline_rule": "embedded data URI; no runtime network request",
+  "browser_verification": "PASS in Google Chrome headless at 1440x1600: document.fonts.status=loaded, JZReview CJK check=true, all images loaded, zero failed or remote requests, and zero page errors in both 18-slide decks"
+}

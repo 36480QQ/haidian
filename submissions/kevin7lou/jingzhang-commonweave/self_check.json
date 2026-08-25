@@ -31,6 +31,7 @@
         "submissions/kevin7lou/jingzhang-commonweave/assets/figures/site-overview.en.png",
         "submissions/kevin7lou/jingzhang-commonweave/assets/figures/site-overview.png",
         "submissions/kevin7lou/jingzhang-commonweave/assets/media/cover.jpg",
+        "submissions/kevin7lou/jingzhang-commonweave/assets/media/jz-for-life-mark.png",
         "submissions/kevin7lou/jingzhang-commonweave/assumptions.json",
         "submissions/kevin7lou/jingzhang-commonweave/changelog.md",
         "submissions/kevin7lou/jingzhang-commonweave/compliance_matrix.json",
@@ -59,18 +60,27 @@
         "submissions/kevin7lou/jingzhang-commonweave/self_check.json",
         "submissions/kevin7lou/jingzhang-commonweave/sources.json",
         "submissions/kevin7lou/jingzhang-commonweave/standard_matrix.json",
+        "submissions/kevin7lou/jingzhang-commonweave/visual/assets/ai_ecosystem_and_conversion.json",
+        "submissions/kevin7lou/jingzhang-commonweave/visual/assets/bilingual_equivalence_audit.json",
+        "submissions/kevin7lou/jingzhang-commonweave/visual/assets/brand_and_public_realm_system.json",
+        "submissions/kevin7lou/jingzhang-commonweave/visual/assets/font_embedding_audit.json",
+        "submissions/kevin7lou/jingzhang-commonweave/visual/assets/implementation_matrix.json",
+        "submissions/kevin7lou/jingzhang-commonweave/visual/assets/jz-for-life-mark.svg",
         "submissions/kevin7lou/jingzhang-commonweave/visual/assets/landmark_operating_contracts.json",
         "submissions/kevin7lou/jingzhang-commonweave/visual/assets/life_support_matrix.json",
         "submissions/kevin7lou/jingzhang-commonweave/visual/assets/motion.min.js",
         "submissions/kevin7lou/jingzhang-commonweave/visual/assets/public_ai_rights.json",
+        "submissions/kevin7lou/jingzhang-commonweave/visual/assets/regional_collaboration.json",
+        "submissions/kevin7lou/jingzhang-commonweave/visual/assets/reviewer_evidence_index.json",
         "submissions/kevin7lou/jingzhang-commonweave/visual/assets/scenario_cards.json",
+        "submissions/kevin7lou/jingzhang-commonweave/visual/assets/taskbook_evidence_crosswalk.json",
         "submissions/kevin7lou/jingzhang-commonweave/visual/index.en.html",
         "submissions/kevin7lou/jingzhang-commonweave/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/kevin7lou/jingzhang-commonweave": "formal"
       },
-      "total_bytes": 6097489,
+      "total_bytes": 7932864,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -148,11 +158,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 17,
-          "standard": 2,
-          "depth": 10,
-          "data": 16,
-          "metric": 15
+          "source": 19,
+          "standard": 6,
+          "depth": 15,
+          "data": 32,
+          "metric": 26
         }
       }
     },
