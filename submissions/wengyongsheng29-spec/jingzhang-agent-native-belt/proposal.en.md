@@ -392,11 +392,11 @@ Taking the middle core AI Origin Community (104.3 ha) as an example, this propos
 | Commercial/cultural/display | 10-15% | Along spine + landmark nodes | AI cultural guide, unmanned retail test, open-source display |
 | Green/public space | ≥15% | Green corridor + pocket parks + plazas | Neural green corridor sensor nodes, Zhimai heartbeat light river |
 
-**Development intensity suggestions** (conceptual, pending regulatory plan):
-- Spine first interface: suggested FAR 3.0-4.5, building height 45-60m (landmark up to 80m, subject to view corridor analysis)
-- Block interior: suggested FAR 1.5-2.5, building height 18-30m
-- Waterfront/green corridor interface: suggested FAR ≤1.5, building height ≤18m, ensuring green corridor permeability
-- Within key areas: building density ≤35% (conceptual massing ~18%), green ratio ≥30% (including corridor); site-wide green ratio ~31.0% (including Jingzhang corridor and central green spines), permeable paving rate ≥40%
+**Development intensity suggestions** (conceptual direction, pending regulatory plan — no specific FAR or height values are given at this stage):
+- Spine first interface: higher-intensity mixed-use direction, with potential for a conceptual landmark subject to view corridor analysis
+- Block interior: lower-intensity R&D and residential direction
+- Waterfront/green corridor interface: lowest-intensity direction, ensuring green corridor permeability
+- Within key areas: building density conceptually ~18% (well within typical ≤35% guidelines), green ratio ≥30% (including corridor); site-wide green ratio ~31.0%, permeable paving rate ≥40%
 
 **Streets and public space guidelines**:
 - Spine green corridor width ≥80m, with slow path ≥6m, jogging path ≥3m, vegetation buffer ≥20m
@@ -484,7 +484,7 @@ The following suggests candidate partner types and directions for the four test 
 | M3 Full operation | Y2 Q3 | Utilization >=70%; zero sandbox escapes; satisfaction >=4.0 |
 | M4 First incubation | Y2 Q4 | >=10 startup teams incubated; >=3 receive funding |
 
-**SC-08 Low-Speed Robot Delivery (East Wing 1.2km test segment)**:
+**SC-08 Low-Speed Robot Delivery (East Wing conceptual test segment)**:
 
 | Candidate Direction | Suggested Partner Type | First-Year Input (conceptual) | Cooperation Model |
 |--------------------|----------------------|------------------------------|-------------------|
@@ -494,12 +494,12 @@ The following suggests candidate partner types and directions for the four test 
 
 | Milestone | Timing | Pass Criteria |
 |-----------|--------|---------------|
-| M1 Test segment acceptance | Y1 Q3 | 1.2km dedicated lane + flexible barriers + signage verified; insurance in place |
+| M1 Test segment acceptance | Y1 Q3 | Dedicated lane + flexible barriers + signage verified; insurance in place |
 | M2 First tests | Y1 Q4 | <=3 enterprises, <=3 robots each; >=95% on-time; zero collisions |
 | M3 Expansion evaluation | Y2 Q2 | 90 consecutive days zero incidents; pedestrian interference <=0.5/100km; satisfaction >=70% |
-| M4 Expansion decision | Y2 Q3 | Pass -> expand to 2.4km/20 robots; fail -> suspend and remediate |
+| M4 Expansion decision | Y2 Q3 | Pass -> apply for expansion; fail -> suspend and remediate |
 
-**SC-09 Autonomous Shuttle (3.5km inter-core test segment)**:
+**SC-09 Autonomous Shuttle (inter-core conceptual test segment)**:
 
 | Candidate Direction | Suggested Partner Type | First-Year Input (conceptual) | Cooperation Model |
 |--------------------|----------------------|------------------------------|-------------------|
@@ -524,7 +524,7 @@ The following suggests candidate partner types and directions for the four test 
 | SC-08 Robot delivery | Meituan/JD/Neolix bring own devices | Invite other Haidian test firms (e.g., White Rhino, UDTA), or reduce first-year fleet to <=3 robots | If no firm in Y1, test segment opens as slow-mobility improvement only; M1 physical facilities (barriers/signage) not wasted; testing starts when firms ready |
 | SC-09 Auto shuttle | Baidu Apollo/Pony.ai bring own vehicles | Invite other Haidian T4-licensed firms, or start with fixed-route low-speed L4 shuttles | If no firm in Y1, 3.5km segment launches as V2X smart road demo (transit signal priority/arrival prediction); L4 shuttle deferred to Y2; roadside investment serves bus priority immediately |
 
-**Contingency principles**: (1) Physical facilities (roads, barriers, V2X, stops) are built as urban renewal works regardless of enterprise participation, so no sunk cost; (2) Testing can be delayed but gates cannot be skipped -- any enterprise entering must still pass G1/G2/G3 and V1-V5; (3) First-year budget reserves 20% (~50-100M RMB) as self-operated startup capital, ensuring a minimum verification environment runs even without enterprise participation.
+**Contingency principles**: (1) Physical facilities (roads, barriers, V2X, stops) are built as urban renewal works regardless of enterprise participation, so no sunk cost; (2) Testing can be delayed but gates cannot be skipped -- any enterprise entering must still pass G1/G2/G3 and V1-V5; (3) First-year budget reserves a proportion as self-operated startup capital (specific amount pending feasibility), ensuring a minimum verification environment runs even without enterprise participation.
 
 > The above candidate organizations are suggested directions based on public information and do not represent established partnerships. Actual cooperation requires government procurement, enterprise selection, and safety assessment through statutory procedures. All test data will be made public for community and media oversight.
 
@@ -557,7 +557,7 @@ The following suggests candidate partner types and directions for the four test 
 
 ![Transportation and Blue-Green System: Road Network and Public Space](assets/figures/mobility-bluegreen.png)
 
-## Land Use, Building Scale, and Demolition/Retention Plan
+## Land Use, Building Scale, and Demolition/Retention Framework
 
 Land use zoning strictly follows geometry/land_use.geojson six zones, no overlap covering the ~11.4 km² design scope. Conceptual building massing expressed in geometry/buildings.geojson 441 rounded C/U-shaped perimeter-block segments arranged along street edges with internal courtyards, including 3 retained industrial heritage buildings (old workshop, fan-shaped roundhouse, warehouse) marked with dashed lines; building footprint ~655,000 m² (~18% density within key areas, under the 35% guideline), massing indication only, not approved building area.
 
@@ -684,126 +684,43 @@ All project types, implementing entities, and funding are conceptual suggestions
 
 | Phase | Timeline | Main Content | Investment (conceptual) | Funding Source Suggestion |
 |-------|----------|-------------|------------------------|--------------------------|
-| Near-term | 1-3 years | See near-term breakdown below | ~1.5-2.5 billion yuan | Government infrastructure + special bonds + SOE platforms |
-| Mid-term | 3-5 years | Zhongzhiyuan pilot layer + compute sandbox + showcase + corridor full connection + talent apartments | ~4-6 billion yuan | Government guidance + social capital + industry funds |
-| Long-term | 5-10 years | Dazhongsi industry gateway + wings mature operations + Urban OS iteration + global brand | ~6-10 billion yuan | Social capital primarily + operating revenue reinvestment |
-| **Total** | 10 years | Full corridor built and operated | **~11.5-18.5 billion yuan** | Public investment ~30-40%, social ~60-70% |
+| Near-term | 1-3 years | See near-term breakdown below | Billions RMB | Government infrastructure + special bonds + SOE platforms |
+| Mid-term | 3-5 years | Zhongzhiyuan pilot layer + compute sandbox + showcase + corridor full connection + talent apartments | Billions RMB | Government guidance + social capital + industry funds |
+| Long-term | 5-10 years | Dazhongsi industry gateway + wings mature operations + Urban OS iteration + global brand | Billions to tens of billions RMB | Social capital primarily + operating revenue reinvestment |
+| **Total** | 10 years | Full corridor built and operated | **Tens of billions RMB (pending feasibility)** | Public/private capital phased progressively |
 
-**Near-term (1-3 years) investment breakdown** (conceptual order of magnitude, not investment commitment):
+**Near-term (1-3 years) project breakdown** (conceptual order of magnitude, not investment commitment):
 
-| No. | Project | Spatial Carrier | Main Content | Estimate (100M yuan) | Implementing Entity Suggestion |
-|-----|---------|----------------|-------------|----------------------|-------------------------------|
-| N-01 | Zhimai Origin Plaza & corridor demonstration segment | AI Origin center + ~1km corridor | Plaza paving, origin stele, "heartbeat" light installation, seating/shade/WiFi/sensors, forest theater renovation | 3-5 | District SOE + Parks Bureau |
-| N-02 | Urban OS infrastructure (Phase I) | Full corridor + demonstration segment | Fiber backbone, edge compute nodes, environmental/foot traffic/noise sensors, digital twin base, data governance platform | 2-3 | District Tech Bureau + operators |
-| N-03 | AI Origin mixed renewal demonstration | Wudaokou/Zhichunlu renewable parcels ~5-8 ha | Talent apartments ~20,000 m², co-working ~30,000 m², community facilities, street interface renovation (including acquisition/compensation) | 5-8 | Urban renewal platform + social capital |
-| N-04 | AI scenario testing environment | East Wing slow path + inter-core connector roads | Robot delivery dedicated lane signage/signals, autonomous shuttle test road (~3km), V2X roadside units | 2-4 | District Tech Bureau + traffic police + enterprises |
-| N-05 | Open Source Showcase Gallery | Zhongzhiyuan old factory ~5,000-10,000 m² | Factory renovation, exhibition installations, multi-purpose hall, cafe/bookstore | 2-3 | District SOE + operator |
-| N-06 | Pre-design + contingencies | Full corridor | Urban design deepening, regulatory plan adjustment, feasibility, schematic design, community participation, 10% contingency | 1-2 | District Planning Branch |
-| | **Near-term total** | | | **15-25** | |
+| No. | Project | Spatial Carrier | Main Content | Investment Scale (conceptual) | Implementing Entity Suggestion |
+|-----|---------|----------------|-------------|-------------------------------|-------------------------------|
+| N-01 | Zhimai Origin Plaza & corridor demonstration segment | AI Origin center + ~1km corridor | Plaza paving, origin stele, "heartbeat" light installation, seating/shade/WiFi/sensors, forest theater renovation | 100M RMB level | District SOE + Parks Bureau |
+| N-02 | Urban OS infrastructure (Phase I) | Full corridor + demonstration segment | Fiber backbone, edge compute nodes, sensors, digital twin base, data governance platform | 100M RMB level | District Tech Bureau + operators |
+| N-03 | AI Origin mixed renewal demonstration | Wudaokou/Zhichunlu renewable parcels (area pending title verification) | Talent apartments, co-working, community facilities, street interface renovation | Hundreds of millions to billions RMB | Urban renewal platform + social capital |
+| N-04 | AI scenario testing environment | East Wing slow path + inter-core connector roads | Robot delivery dedicated lane signage/signals, autonomous shuttle test road conceptual segment, V2X roadside units | 100M RMB level | District Tech Bureau + traffic police + enterprises |
+| N-05 | Open Source Showcase Gallery | Zhongzhiyuan old factory (area pending title verification) | Factory renovation, exhibition installations, multi-purpose hall, cafe/bookstore | 100M RMB level | District SOE + operator |
+| N-06 | Pre-design + contingencies | Full corridor | Urban design deepening, regulatory plan study, feasibility, schematic design, community participation, contingencies | 100M RMB level | District Planning Branch |
+| | **Near-term total** | | | **Billions RMB (pending feasibility)** | |
 
-> Breakdown based on Beijing comparable urban renewal project experience (green corridor renovation ~3,000-5,000 yuan/m², urban renewal comprehensive ~10,000-15,000 yuan/m², new infrastructure ~20-30 million yuan/km) conceptually extrapolated, not engineering feasibility or financial assessment, not constituting investment commitment. Actual projects require individual project initiation, feasibility, and budget estimates.
+> The above investment scales are conceptual judgments based on comparable project experience, not engineering feasibility or financial assessment, and do not constitute investment commitments. Specific investment amounts require title verification, schematic design, and engineering cost estimates.
 
-**Comparable project unit cost benchmarks** (for order-of-magnitude validation):
+**Investment leverage expectation**: Referencing High Line and King's Cross, public space investment has significant catalytic effects on surrounding private development (case leverage ratios ~1:5-1:13). This proposal expects near-term public investment to catalyze several times its value in social investment, but the specific leverage ratio depends on land supply pace, industry attraction progress, and policy environment, to be quantified during feasibility study.
 
-| Case | Type | Scale | Total investment | Unit cost (converted) | Relevance to this proposal |
-|------|------|-------|-----------------|----------------------|---------------------------|
-| High Line, New York | Elevated linear park | 2.33 km, ~53 ha | ~$153M (~1.1B yuan) | ~470M yuan/km; ~210 yuan/m² (by green area) | Elevated parks cost more than ground-level; Jingzhang corridor is an existing ground-level park, so renovation unit cost should be significantly lower; High Line catalyzed >$2B surrounding private investment (leverage ~1:13) |
-| King's Cross, London | Railway heritage district renewal | 27 ha, 557,000 m² development | ~£3B (~28B yuan) | Infrastructure ~£500M (~4.7B yuan, 170M yuan/ha); comprehensive ~1B yuan/ha | Also railway heritage + tech anchor (Google/DeepMind); this proposal's 368.6 ha at 15B yuan (~40M yuan/ha) is reasonable given existing green corridor and retained buildings |
-| Station F, Paris | Freight hall → innovation campus | 34,000 m² | ~€250M (~1.95B yuan) | ~58,000 yuan/m² | Benchmark for Model Roundhouse adaptive reuse; N-05 gallery at 2-3B yuan / 5,000-10,000 m² ≈ 20,000-60,000 yuan/m², consistent |
-| Shougang Park, Beijing | Industrial heritage renewal | ~71 ha (phase 1) | ~20B yuan (comprehensive) | ~280M yuan/ha (incl. new build) | Domestic industrial heritage benchmark; this proposal emphasizes retention/renovation, so unit cost should be lower |
-| Yangpu Riverside, Shanghai | Industrial waterfront public space | ~15.5 km | ~18B yuan (comprehensive incl. development) | Public space ~3,000-5,000 yuan/m² | Consistent with this proposal's green corridor renovation unit cost (3,000-5,000 yuan/m²) |
+**Financial Deepening Interface (conceptual direction, not investment commitment)**:
 
-**Investment leverage expectation**: Referencing High Line (public investment 1:13 private investment) and King's Cross (£500M infrastructure leveraging £2.5B private development, ~1:5), this proposal's near-term public investment of 1.5-2.5B yuan is expected to catalyze 8-15B yuan in social investment (leverage ~1:5-8); of the 10-year 11.5-18.5B yuan total, public investment is expected to account for 30-40%.
+This proposal does not provide project-level IRR, ten-year cash flow, tax contribution, or break-even estimates at the current stage — the precision of such figures would significantly exceed the current provisional boundary, title verification, and feasibility basis, creating misleading precision. Formal financial modeling should proceed after the following prerequisites are met:
 
+1. **Title verification**: Parcel-by-parcel confirmation of property rights, land use classification, and existing building status across the three cores and two wings;
+2. **Regulatory planning**: Determination of FAR, building height, setback, and facility requirements for each parcel;
+3. **Engineering feasibility**: Professional assessment of municipal capacity, traffic impact, environmental review, and quantity takeoff;
+4. **Financial model**: Project-level cash flow model based on the above, including public and private IRR, payback periods, sensitivity analysis, and financing structure.
 
-**Reviewable Financial Model Framework (conceptual order of magnitude, pending feasibility study)**:
+Conceptual order-of-magnitude references this proposal can provide:
+- Ten-year total investment is at the **tens-of-billions RMB conceptual level** (specific range pending feasibility), with public-to-private capital ratio recommended to shift progressively (public-led near-term, private-led long-term);
+- Funding source directions include: local government special bonds, central/municipal infrastructure subsidies, district SOE capital, urban renewal industrial funds, social capital, industry investment, and operating revenue reinvestment;
+- Risk-sharing principle: near-term public capital bears boundary and title risk; mid-term industrial funds with performance targets; long-term pay-by-results;
+- International case references (High Line, King's Cross, Station F, Shougang Park, Yangpu Riverside) with unit cost ranges are provided in the main text for order-of-magnitude validation during feasibility.
 
-The following breaks down the 11.5-18.5 billion yuan total investment into a reviewable revenue-cost-cash-flow framework. All unit prices are based on public data from comparable Beijing projects, for item-by-item verification during the feasibility stage.
-
-**Revenue Model (Six Cash-Flow Streams)**:
-
-| Revenue Stream | Basis | Unit Price/Rate Reference | Mature Annual Revenue (conceptual) | Start Year |
-|----------------|-------|--------------------------|----------------------------------|------------|
-| Talent apartment rent | ~150-200k sqm at 60-70% market rate | Haidian talent apartments ~80-120 RMB/sqm/month (market ~150-200) | 140-200M RMB | Y3 |
-| Industry office/R&D rent | ~400-600k sqm (mainly Zhongzhiyuan) | Zhongguancun R&D office ~4-6 RMB/sqm/day | 580-1,310M RMB | Y3-Y5 |
-| Commercial/retail rent | ~80-120k sqm | Dazhongsi/Wudaokou retail ~8-15 RMB/sqm/day | 230-660M RMB | Y4-Y6 |
-| Compute service revenue | Sandbox ~100P scaling to 500P | GPU cloud ~15-25 RMB/GPU-hour (A100 equiv), 70% utilization | 90-440M RMB | Y2-Y5 |
-| Scenario testing fees | SC-08/09 test tracks | ICV test tracks ~5,000-15,000 RMB/vehicle-day | 30-80M RMB | Y2-Y3 |
-| OS platform/events/brand | Subscriptions + Open Week sponsorship + advertising | City brain platform services + tech event sponsorship | 50-150M RMB | Y3-Y5 |
-| **Total (mature)** | | | **1.12-2.84 billion RMB/year** | Y5-Y6 |
-
-**Ten-Year Cash Flow Summary (Base Case, conceptual)**:
-
-| Year | Public Investment | Private Investment | Operating Revenue | Net Cash Flow (cumulative) | Key Milestone |
-|------|------------------|-------------------|------------------|--------------------------|---------------|
-| Y1 | 300-500M | 0 | 0 | -300~-500M | Demo segment construction starts; OS Phase 1; first Open Week |
-| Y2 | 500-800M | 200-500M | 10-30M | -1.0~-1.7B | First tests begin; showcase gallery renovation |
-| Y3 | 400-600M | 800M-1.5B | 80-150M | -1.5~-2.7B | Demo segment opens; first talent apartments occupied |
-| Y4 | 200-400M | 1.0-2.0B | 250-400M | -1.5~-2.8B | Zhongzhiyuan pilot layer opens; compute expansion |
-| Y5 | 100-200M | 1.0-1.5B | 500-800M | -1.0~-2.0B | Three cores connected; tax increment materializes |
-| Y6-Y7 | 100-200M/yr | 800M-1.2B/yr | 1.0-1.6B/yr | Break-even window | REITs issuance window; private exit begins |
-| Y8-Y10 | 50-100M/yr | 500-800M/yr | 1.5-2.5B/yr | Cumulative recovery | Brand matures; platform revenue share grows |
-
-**Project-Level IRR Ranges (Base Case)**:
-
-| Project | Total Investment (conceptual) | Revenue Source | IRR Range (private capital perspective) | Payback |
-|---------|------------------------------|----------------|----------------------------------------|---------|
-| N-01 Origin Plaza & green corridor demo | 300-500M RMB | Commercial rent + advertising + events | 3-5% (public-good oriented) | 12-15 yr |
-| N-02 Urban OS Phase 1 | 200-300M RMB | Platform service fees + data services | 6-9% (scales after Phase 2) | 8-10 yr |
-| N-03 AI Origin mixed renewal | 500-800M RMB | Apartment + office + retail rent | 8-12% (rent spread + asset appreciation) | 8-10 yr |
-| N-04 AI scenario test environment | 200-400M RMB | Testing fees + enterprise occupancy | 7-10% (after subsidies) | 6-9 yr |
-| N-05 Open-source showcase gallery | 200-300M RMB | Tickets + cafe/bookstore + events | 4-6% (cultural/public-good) | 10-12 yr |
-| Zhongzhiyuan compute sandbox (mid-term) | 1.5-2.5B RMB | Compute fees + incubation equity | 10-15% (high risk, high return) | 5-8 yr |
-| Dazhongsi commercial renewal (long-term) | 2.0-3.5B RMB | Retail rent + AI experience consumption | 8-12% | 6-9 yr |
-
-**Financing Structure Recommendations (Phased)**:
-
-| Phase | Public Capital | Private Capital | Recommended Instruments |
-|-------|---------------|-----------------|------------------------|
-| Near-term (Y1-Y3) | 60-70% | 30-40% | Local government special bonds (smart city/urban renewal), central infrastructure subsidies, district SOE capital, urban renewal industrial fund (LP: government 40% + insurance 30% + private 30%) |
-| Mid-term (Y3-Y5) | 35-45% | 55-65% | Industrial fund Phase 2, PPP/concession (OS operations), infrastructure REITs (post-Y5, securitization of stabilized assets), bank project loans |
-| Long-term (Y5-Y10) | 15-25% | 75-85% | REITs follow-on offerings, pay-by-results, equity exit (industry M&A/secondary market), green bonds |
-
-**Break-Even and Sensitivity**:
-
-- **Public capital break-even**: When industrial tax increment reaches ~800M-1.2B RMB/year (expected Y5-Y7), debt service is covered; when tax increment exceeds 1.5B RMB/year for 3 consecutive years, cumulative public investment is recovered
-- **Private capital break-even**: Demo segment occupancy >=75% + compute sandbox utilization >=65% + commercial occupancy >=80% simultaneously yields positive operating net cash flow (expected Y4-Y5)
-- **Key sensitivity variables** (ranked by impact): 1 industrial office rent (+/-20% -> IRR +/-3-4pp); 2 compute utilization (+/-20% -> IRR +/-2-3pp); 3 land supply pace (1-year delay -> payback extends 1.5-2 years); 4 approval timeline (6-month delay -> near-term IRR drops 1-2pp)
-- **Downside protection**: Public investment primarily via special bonds and infrastructure spend, not reliant on land finance; private capital has put options and buyback clauses; talent apartment rents have policy floor
-
-
-**Revenue Downside Scenarios and Zero Conditions**:
-
-| Revenue Stream | Base Mature | Downside Scenario (Trigger) | Downside Value | Zero Condition |
-|----------------|------------|----------------------------|----------------|----------------|
-| Talent apartment rent | 140-200M/yr | Occupancy 70-80% (base 90%): 90-140M; <70% triggers rent subsidy | 90-140M | Policy change cancels talent apartment program |
-| Industry office rent | 580-1,310M/yr | Occupancy 60-75% (base 85%): 350-900M; rent -20%: 460-1,050M | 350-1,050M | Leasing <50% for 3 consecutive years -> repurpose |
-| Commercial rent | 230-660M/yr | Occupancy 70-80% (base 90%): 160-530M; convert to community service at low rent | 100-200M | Commercial converted entirely to public service |
-| Compute service | 90-440M/yr | Utilization 40-55% (base 70%): 50-280M; domestic compute cost -30% offsets | 50-280M | Sandbox closed or converted to pure public good |
-| Scenario testing fees | 30-80M/yr | <5 testing firms (base 10): 10-40M | 10-40M | Test track closed or road testing policy tightened |
-| OS/events/brand | 50-150M/yr | Open Week cancelled: 20-50M; subscription <20%: 10-30M | 10-50M | OS platform ceases operation |
-
-Revenue elasticity mapped to sensitivity variables: (1) land supply delay -> office/retail rent start pushed 1-2 years; (2) compute utilization <60% -> compute revenue -50% + triggers mid-term financial restructuring; (3) apartment occupancy <70% -> rent revenue -35% + policy floor; (4) industrial tax growth <5% -> platform/brand revenue growth slows. Conservative case mature annual revenue ~670M-1.76B (60-62% of base 1.12-2.84B); public payback extends 2-3 years but debt service is unaffected (special bond tenor 15-20 years).
-
-> The above is a reviewable conceptual framework with sourced unit prices and rates, for item-by-item verification by professional consultants during feasibility study. No figure constitutes an investment commitment or government decision.
-
-
-**Three-core economic summary** (conceptual order-of-magnitude, not investment commitments, pending feasibility study):
-
-| Metric | Zhongzhiyuan (North) | AI Origin (Center) | Dazhongsi (South) | Total |
-|--------|---------------------|-------------------|-------------------|-------|
-| Site area | 191.9 ha | 104.3 ha | 72.4 ha | 368.6 ha |
-| Demolition/rebuild | ~173,000 m² (24 sites) | ~50,000 m² (Lanjinglijia etc.) | ~80,000 m² (low-efficiency retail) | ~303,000 m² |
-| Renovation | ~54,000 m² (6 old factories) | ~54,000 m² (6 old buildings) | ~20,000 m² (street retail) | ~128,000 m² |
-| Retained | ~238,000 m² (Xuebei Park built) | ~800,000 m² (residential retained) | ~150,000 m² (Fangheng/Zhongkun) | ~1,188,000 m² |
-| New construction (concept) | ~400-600k m² | ~150-250k m² | ~200-300k m² | ~750-1,150k m² |
-| Construction + acquisition estimate | ~5-7B yuan | ~6-8B yuan (incl. Lanjinglijia 4.88B) | ~3-5B yuan | ~14-20B yuan |
-| Expected annual output | ~20-30B yuan (AI R&D) | ~10-15B yuan (mixed economy) | ~8-12B yuan (retail + AI services) | ~38-57B yuan |
-| Expected annual tax | ~1.5-2.5B yuan | ~0.8-1.2B yuan | ~0.5-0.8B yuan | ~2.8-4.5B yuan |
-| Jobs (concept) | ~30-50k | ~20-30k | ~15-25k | ~65-105k |
-| Payback period (concept) | 8-12 years | 10-15 years | 6-10 years | ~10 years blended |
-
-> Estimation basis: ① demolition/rebuild at ~12,000-18,000 yuan/m² comprehensive Beijing urban renewal cost (incl. acquisition); ② renovation at 3,000-5,000 yuan/m²; ③ new construction at 8,000-12,000 yuan/m² (incl. underground); ④ output based on Haidian AI industry per-capita output of ~800,000-1,200,000 yuan/year; ⑤ tax estimated at 8-10% of output. The Lanjinglijia 4.88B yuan figure is the officially announced social investment amount. All figures are conceptual order-of-magnitude and do not constitute investment commitments.
+> The above are conceptual directional suggestions and do not constitute investment commitments, financing arrangements, government debt arrangements, or any form of financial guarantee. Specific investment scale, capital structure, return expectations, and risk sharing require professional financial advisory after title verification, regulatory planning, and engineering feasibility are completed.
 
 ![Three-Core Site Readiness: Institutional Anchors, Renewable Land Concept Classification, Stakeholders](assets/figures/site-readiness.png)
 
@@ -1015,12 +932,12 @@ The three gates (G1/G2/G3) and five field validation stages (V1-V5) are not a st
 
 | Timeline | Gate/Stage | SC-03 Red Team | SC-04 Compute Sandbox | SC-08 Robot Delivery | SC-09 Auto Shuttle |
 |----------|-----------|----------------|----------------------|---------------------|-------------------|
-| Y1 Q3 | G1 token + V2 closed site | M1 Testbed complete: isolation verified, >=20P | — | M1 Segment accepted: 1.2km lane+barriers+insurance | M1 Roadside complete: 8 V2X+3 stops+signal integration |
+| Y1 Q3 | G1 token + V2 closed site | M1 Testbed complete: isolation verified, >=20P | — | M1 Segment accepted: lane+barriers+insurance | M1 Roadside complete: V2X units+stops+signal integration |
 | Y1 Q4 | G2 interlock + V1 synthetic | M2 First models enter: >=3 orgs, >=10 models | M1 Sandbox live: >=200 users, zero escapes | M2 First tests: <=3 firms, <=3 robots, >=95% on-time | M2 First tests: <=4 buses, <=0.2 takeovers/100km |
 | Y2 Q1 | G3 block + V3 limited field | — | M2 Universities onboard: >=5 schools, >=500 students | — | M3 Limited passenger: >=200 riders/day |
 | Y2 Q2 | V3 ongoing | M3 Vulnerability sharing: >=20 high-risk disclosed | — | M3 Expansion eval: 90 days zero incidents, >=70% satisfaction | — |
-| Y2 Q3 | V4 expansion | — | M3 Full operation: >=70% utilization, >=4.0 satisfaction | M4 Expansion decision: pass->2.4km/20 robots | — |
-| Y2 Q4 | V5 continuous | M4 Standards: >=1 group standard/white paper | M4 First incubation: >=10 teams, >=3 funded | — | M4 Expansion eval: pass->apply for full 9km |
+| Y2 Q3 | V4 expansion | — | M3 Full operation: >=70% utilization, >=4.0 satisfaction | M4 Expansion decision: pass->apply for expansion | — |
+| Y2 Q4 | V5 continuous | M4 Standards: >=1 group standard/white paper | M4 First incubation: >=10 teams, >=3 funded | — | M4 Expansion eval: pass->apply for full corridor |
 
 **Integration logic**:
 - **G1 Token Gate** maps to each scenario's M1 (facility acceptance): token contains scenario ID, permission scope, responsible party; M1 pass required before token issuance
@@ -1046,7 +963,7 @@ Core metrics all recomputed from GeoJSON under EPSG:4548 projection:
 | AI scenario nodes | 15 (including 4 test/verification) | high |
 | AI pilgrimage landmarks | 4 | high |
 | Talent apartment ratio (suggested) | ≥20% | low (policy suggestion) |
-| Phased investment magnitude (conceptual) | 11.5-18.5 billion yuan | low (not commitment) |
+| Phased investment magnitude (conceptual) | Tens of billions RMB (pending feasibility) | low (not commitment) |
 | Suggested construction period | 10 years | low (conceptual phasing) |
 | Public benefit categories | 6 | high |
 
@@ -1064,10 +981,11 @@ Compliance matrix in `compliance_matrix.json`, covering notice 1.3/1.4/1.5 and a
 - All spatial suggestions phrased as "conceptual suggestions/reference schemes/for professional teams to develop further."
 
 **Materials and copyright compliance**:
-- Base maps all self-drawn (matplotlib), no Amap/Baidu third-party commercial map tiles;
-- Fonts use system fonts (Microsoft YaHei/SimHei/DengXian);
-- Images all self-drawn or public sources;
-- Data only uses open-city.ai public task package and planning commission notice.
+- All base maps are programmatically drawn (matplotlib); no aerial/satellite imagery, no Amap/Baidu third-party commercial map tiles are used;
+- Chinese HTML embeds a subset of Noto Sans SC (SIL Open Font License 1.1); PDFs use embedded fonts;
+- AI perspective renderings (rendering-key-001/002/003) are AI-generated conceptual visualizations, not photographs of built or approved structures;
+- Data only uses open-city.ai public task package and planning commission notice;
+- See `report/copyright_statement.md` for full copyright and licensing declaration.
 
 **AI generation responsibility**: Proposal generated by Hermes Agent (FTARCH); facts, citations, and expression are the contributor's responsibility; Logo/images are directional concepts.
 
