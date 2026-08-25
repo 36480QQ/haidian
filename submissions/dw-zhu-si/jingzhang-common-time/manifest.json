@@ -321,7 +321,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "4b2ff2d4a4834973b16cd8afaa95771036a79abd56c000f0a9d54933bfe1bf1b"
+      "sha256": "3ea5e853226c634492aa97e787c7c52236b2172714e6138b04128468d9be2894"
     },
     {
       "path": "report/narrative.md",
@@ -333,7 +333,7 @@
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "f9478037c4ee13d9169f2d466141bf722f8586f8b420d3a403be33faa9cbcb37",
+      "sha256": "905a7c03ea6af5b553d0df151b566e37266953a0d85b9071d9102918db752c2c",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -341,14 +341,14 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "ddd201de93a64b25f6f1bbdd9cbc1516cc339a9fcc043cffee0cb444f7ef29d2",
+      "sha256": "fc7bd09f8b9c586abb0dcc289b680241d6218936f3fb486eea6575625db1b52a",
       "language": "zh"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c2afaf8a2718b087fa3403902dd4900f42cf74ccc91ad1f1013e6757f2628ce3"
+      "sha256": "16cdac5f8231c78afc1116011aee53540671bc56f428f9fd8488b68912db384f"
     },
     {
       "path": "sources.json",
@@ -363,6 +363,12 @@
       "sha256": "7a4c9df2ab7032b9804c08abbf32c85854da8d379fd6a942e7872d7b4a1841c0"
     },
     {
+      "path": "visual/assets/common-time-font.css",
+      "role": "asset",
+      "required": true,
+      "sha256": "d52c279211e43c469021c199b4e25b58754b9c199fde96618853bcf7a19ea6c0"
+    },
+    {
       "path": "visual/assets/photo-register.json",
       "role": "visualization",
       "required": false,
@@ -372,7 +378,7 @@
       "path": "visual/index.en.html",
       "role": "visualization",
       "required": true,
-      "sha256": "efe8e6af5faa4fb4411f2393029a5ce60e2517fb41eb09e2428b77524035c703",
+      "sha256": "e0fad7b99087ead12916613b5b6d4eac385dec8d947c1f36f897bc0a4afae408",
       "language": "en",
       "translation_of": "visual/index.html"
     },
@@ -380,7 +386,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "18e15c4d8d88dbe4847b3dc36e8d00f85ed79d4c0440954f2ffc4b3e63e09f4e",
+      "sha256": "39ff709447d0d9f866f0d6a646a67b076d5f2ec01bf2ec03eacf9da9c693ca94",
       "language": "zh"
     }
   ],
