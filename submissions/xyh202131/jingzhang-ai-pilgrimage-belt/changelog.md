@@ -1,5 +1,17 @@
 # 方案迭代记录 / Changelog
 
+## v59.1 - 2026-08-25
+
+**当前精确投稿包权利闭合 / Current Exact-package Rights Closure**
+
+- 关闭评审指出的状态矛盾：当前精确投稿包 157/157 个路径均补齐作者/权利人、来源、许可或处理、署名、变更、再分发和例外列，并明确可按组件条款用于仓库评审、展示与再分发；不存在单一整包许可。
+- CC BY 4.0、MIT、ODbL、OFL、citation-only 与仓库临时输入边界保持分立；独立法律意见、独立逐文件法律审计和商标审查仍未提供，未来公共装置、品牌发布和专业实施仍未授权。
+- 同步中英文 proposal、visual、报告、来源、图件、A3/A0、权利台账、发布矩阵、Agent、双语等价、self-check 与 manifest；geometry、metrics、12/8/3/36、G0/NO-GO、provisional、现实结果 0 和 H01—H07 未接受均未改变。
+
+- Closed the review-identified state contradiction. All 157/157 paths in the current exact package now record author/rightsholder, source, licence or handling, attribution, transformation, redistribution and exceptions. The package may be reviewed, displayed and redistributed under component-specific terms; no single package-wide licence exists.
+- CC BY 4.0, MIT, ODbL, OFL, citation-only and repository provisional-input boundaries remain separate. Independent legal advice, independent file-level legal audit and trademark review remain absent; future public installation, brand release and professional implementation remain unauthorized.
+- Synchronized bilingual proposals, visual, reports, sources, figures, A3/A0, rights ledger, release matrix, Agent, bilingual equivalence, self-check and manifest. Geometry, metrics, 12/8/3/36, G0/NO-GO, provisional, zero real results and unaccepted H01—H07 are unchanged.
+
 ## v59.0 - 2026-08-25
 
 **四态空间体验化 / Four-state Spatial Experience**

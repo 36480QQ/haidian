@@ -2,7 +2,7 @@
 
 ## 分层许可 / Component licences
 
-截至 2026-08-24，投稿方 `xyh202131` 将本包中其原创的文字、表格、图解、SVG、PNG 导出、编辑版式、自编 JSON 与概念 GeoJSON 转化按 **CC BY 4.0** 许可。署名：`Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`。许可全文：<https://creativecommons.org/licenses/by/4.0/>。
+截至 2026-08-25，投稿方 `xyh202131` 将本包中其原创的文字、表格、图解、SVG、PNG 导出、编辑版式、自编 JSON 与概念 GeoJSON 转化按 **CC BY 4.0** 许可。署名：`Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`。许可全文：<https://creativecommons.org/licenses/by/4.0/>。
 
 As of 2026-08-25, contributor `xyh202131` licenses contributor-owned text, tables, diagrams, SVG source, PNG exports, editorial layout, package-authored JSON and conceptual GeoJSON transformations under **CC BY 4.0**. Attribution: `Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`. Full terms: <https://creativecommons.org/licenses/by/4.0/>.
 
@@ -13,7 +13,7 @@ Contributor-authored replay and offline interaction code is under the **MIT Lice
 ## 第三方与字体 / Third-party data and font
 
 - `geometry/constraints.geojson` 含 OpenStreetMap 方向性背景，署名 `© OpenStreetMap contributors`，数据库许可为 **ODbL 1.0**：<https://opendatacommons.org/licenses/odbl/1-0/>。该层不进入 CC BY 授权；任何符合衍生数据库定义的再分发须保留署名与相同方式共享。它不是官方道路红线、铁路保护边界、市政线位、测绘或批准依据。
-- 四份 PDF 的页眉、页题、说明和页脚在本地构建时使用 `NotoSansCJKsc-Regular.otf`（SHA-256 `2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b`）与 Pillow 12.2.0 确定性栅格化，既有投稿方 PNG 图件同样以像素嵌入；PDF 不嵌入字体程序。四份离线 HTML 通过 `visual/assets/offline-cjk-font.css` 共用由同一源字体生成的 WOFF2 子集，避免干净浏览器缺少 CJK 系统字体时出现方框；子集由 fontTools 4.62.1 对四份最终 HTML 的字面字符并集生成，覆盖 1144 个 Unicode 码点，WOFF2 SHA-256 为 `9eaffa9b2f5786ec59e1beb8b98b67ecb428fd602dc20fba9d79921d3a6fb4c8`。字体采用 **SIL Open Font License 1.1**：<https://openfontlicense.org/>；源字体不作为独立文件分发。四份 PDF 是定页视觉出版物，不声明可搜索文本或 tagged-PDF 合规；配套离线 HTML 承担机器可读与键盘阅读入口。
+- 四份 PDF 的页眉、页题、说明和页脚在本地构建时使用 `NotoSansCJKsc-Regular.otf`（SHA-256 `2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b`）与 Pillow 12.2.0 确定性栅格化，既有投稿方 PNG 图件同样以像素嵌入；PDF 不嵌入字体程序。四份离线 HTML 通过 `visual/assets/offline-cjk-font.css` 共用由同一源字体生成的 WOFF2 子集，避免干净浏览器缺少 CJK 系统字体时出现方框；子集由 fontTools 4.62.1 对四份最终 HTML 的字面字符并集生成，覆盖 1148 个 Unicode 码点，WOFF2 SHA-256 为 `30656aa6450d8676d3d7fe1f7ca4de135bc2bcf7e33667121c045a235779fdff`。字体采用 **SIL Open Font License 1.1**：<https://openfontlicense.org/>；源字体不作为独立文件分发。四份 PDF 是定页视觉出版物，不声明可搜索文本或 tagged-PDF 合规；配套离线 HTML 承担机器可读与键盘阅读入口。
 - Repository-provided provisional inputs, cited policy pages, cases, standards, trademarks, names and links are not relicensed. Their uses remain bounded by `sources.json` and `visual/assets/source-governance-register.json`.
 
 ## 逐路径自查 / File-by-file contributor inventory
@@ -21,6 +21,10 @@ Contributor-authored replay and offline interaction code is under the **MIT Lice
 `visual/assets/file-rights-inventory.json` 覆盖本次分发树的每个路径，并分别记录投稿方原创内容、投稿方代码、OSM 衍生数据库、仓库 provisional 输入、嵌入字体与仅引用外部来源的许可路径。该清单可以证明“每个文件都有明确处理决定”，但它仍是投稿方自查，不等同于独立法律意见、独立逐文件权利审计或商标检索。
 
 `visual/assets/file-rights-inventory.json` covers every path in the current distribution tree and distinguishes contributor-authored content, contributor code, OSM-derived database content, repository provisional inputs, embedded font software and citation-only external sources. It proves that every file has an explicit handling decision, but remains a contributor inventory rather than independent legal advice, an independent file-level rights audit or a trademark search.
+
+**当前精确投稿包决定。** 当前精确投稿包 157/157 个路径均已记录作者/权利人、来源、适用许可或处理、署名、变更、再分发和例外。该精确版本可按组件条款用于仓库评审、展示与再分发；不存在单一整包许可。独立法律意见、独立逐文件法律审计和商标审查仍未提供，但不反转投稿方对当前精确包作出的分组件分发授权。未来公共装置、外部品牌发布和专业实施仍须另行审查、批准与签约。
+
+**Current exact-package decision.** All 157/157 paths record author/rightsholder, source, applicable licence or handling, attribution, transformation, redistribution and exceptions. This exact version may be reviewed, displayed and redistributed under component-specific terms; no single package-wide licence exists. Independent legal advice, independent file-level legal audit and trademark review remain absent, but do not reverse the contributor's component-specific distribution grant for the current exact package. Future public installation, external brand release and professional implementation still require separate review, approval and contracts.
 
 ## 第59轮概念媒体方法 / Round 59 concept-media method
 

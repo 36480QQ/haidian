@@ -87,6 +87,11 @@
       "topic": "motion_caption_transcript_and_fallback_equivalence",
       "result": "pass_with_contributor_side_qa_only",
       "evidence": "The silent MP4 uses bilingual on-frame titles; one shared VTT contains eight contiguous cues with Chinese first and English second; the Markdown transcript maps the same eight shots, method, silence, editorial-duration and truth boundaries; visual #s3 keeps the paired static storyboards visible beside native controls. Independent human confirmation remains open."
+    },
+    {
+      "check_id": "R59-RIGHTS-EXACT-PACKAGE",
+      "status": "pass_contributor_audit",
+      "evidence": "Both languages state that the current exact package may be reviewed, displayed and redistributed under component-specific terms, while independent legal/trademark review and future installation/professional authorization remain absent."
     }
   ],
   "critical_claim_map": [

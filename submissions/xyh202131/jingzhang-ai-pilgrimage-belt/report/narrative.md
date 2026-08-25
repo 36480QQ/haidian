@@ -22,9 +22,9 @@ The 54-second silent bilingual motion diagram is an editorial reading sequence, 
 
 54 秒无声双语动态图解只是编辑阅读序列，不代表现实恢复时长。它让普通地面始终连续，把自愿验证放在旁侧，故障时只停止验证对象，并恢复普通任务、人工服务、实体信息和可追证状态，不暗示模型重启、授权、批准或 G1。共享双语 VTT 与文字稿保持同一八镜头顺序；播放器旁的静态故事板是无动态、打印和解码失败时的完整答案，全部媒体均回链到 `visual/assets/four-state-experience-contract.json` 与专业交接包。
 
-The cover, video, captions, transcript and contract are contributor-authored conceptual presentation generated locally and deterministically without a network or model API. They are not site condition, public opinion, accessibility compliance, approval, performance, official geometry, service result or maturity evidence. Package-wide reuse remains blocked pending component terms and independent audit.
+The cover, video, captions, transcript and contract are contributor-authored conceptual presentation generated locally and deterministically without a network or model API. They are not site condition, public opinion, accessibility compliance, approval, performance, official geometry, service result or maturity evidence. The current exact package may be reviewed, displayed and redistributed under component-specific terms and notices; future installation, branding and professional implementation remain separately gated.
 
-封面、视频、字幕、文字稿和合同是投稿方在本地无网络、无模型 API 条件下确定性生成的概念展示，不是现场、公众意见、无障碍达标、批准、绩效、官方几何、服务结果或成熟度证据；整包复用仍受组件条款与独立审计阻断。
+封面、视频、字幕、文字稿和合同是投稿方在本地无网络、无模型 API 条件下确定性生成的概念展示，不是现场、公众意见、无障碍达标、批准、绩效、官方几何、服务结果或成熟度证据；当前精确投稿包可按组件条款及告知用于仓库评审、展示与再分发；未来装置、品牌发布和专业实施继续单列设门。
 
 ## Single professional handoff candidate / 唯一专业交接候选
 
@@ -42,7 +42,7 @@ Contributor-owned content and the deterministic R59 concept media are CC BY 4.0;
 
 The current package closes defects under contributor control: offline CJK rendering, English figure bounds, two review-due background links, file-by-file contributor inventory and material bilingual review. Official geometry and controls, field baselines, accepted duties, budgets, approvals, real failures/recovery and independent clearance remain unknown or zero. `visual/assets/data-gap-closure-register.json` names the responsible source, recalculation trigger and invalid substitute for each; no inferred replacement may upgrade G0.
 
-当前包只关闭投稿方可控缺口：离线 CJK 渲染、英文图件边界、两条到期背景链接、逐路径投稿方权利清单和双语实质审校。官方几何与控制条件、现场基线、责任接收、预算、批准、真实故障/恢复和独立清权继续为 unknown 或 0。`visual/assets/data-gap-closure-register.json` 为每项记录责任来源、重算触发器和禁止替代物；任何推断替代都不得升级 G0。
+当前包只关闭投稿方可控缺口：离线 CJK 渲染、英文图件边界、两条到期背景链接、逐路径投稿方权利清单和双语实质审校。官方几何与控制条件、现场基线、责任接收、预算、批准、真实故障/恢复和独立法律/商标审查继续为 unknown 或 0。`visual/assets/data-gap-closure-register.json` 为每项记录责任来源、重算触发器和禁止替代物；任何推断替代都不得升级 G0。
 
 ## Conditional regional relay / 条件式区域接力
 

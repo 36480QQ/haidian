@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "as_of": "2026-08-25",
-  "status": "not_fully_cleared_component_licenses_declared_with_complete_contributor_file_inventory",
+  "status": "current_exact_package_cleared_for_repository_review_display_and_redistribution_under_component_specific_terms",
   "file_inventory": "visual/assets/file-rights-inventory.json",
   "file_inventory_path_count": 157,
   "file_inventory_coverage_ratio": 1.0,
@@ -69,12 +69,13 @@
     },
     {
       "use_id": "USE-07",
-      "use": "Reuse or redistribution of the complete package as one cleared bundle",
-      "decision": "blocked_pending_component_terms_and_independent_audit",
+      "use": "Review, display or redistribution of the current exact package as one manifest-bound distribution",
+      "decision": "allowed_with_component_specific_terms_and_notices_no_single_package_license",
       "conditions": [
-        "verify every component term against the exact manifest",
-        "complete independent file-level clearance",
-        "complete applicable trademark review"
+        "use the path-level inventory for all current manifest paths",
+        "apply CC BY 4.0, MIT, ODbL and OFL by component",
+        "retain citation-only and repository provisional-input limits",
+        "do not infer authorization for a future installation, brand deployment or professional implementation"
       ]
     },
     {
@@ -89,5 +90,6 @@
       ]
     }
   ],
-  "non_equivalence": "An open licence is permission to reuse an artifact, not evidence that its spatial claims are official, its service works, or its proposal is approved."
+  "non_equivalence": "An open licence is permission to reuse an artifact, not evidence that its spatial claims are official, its service works, or its proposal is approved.",
+  "independent_review_boundary": "Independent legal advice, file-level legal audit and trademark review remain absent. Their absence does not reverse the contributor's current exact-package distribution grant, but remains a gate for any use context that requires those professional findings."
 }
