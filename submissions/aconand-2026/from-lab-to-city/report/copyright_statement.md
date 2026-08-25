@@ -36,11 +36,13 @@ Agent 选择候选 3，因为三类任务的差异、铁路遗产连续性和公
 
 ## 3. 外部事实与资料
 
-外部事实只用于研究、引用和校核，逐项登记在 `sources.json`。投稿包不再分发官方 PDF 原件，不嵌入第三方现场照片、人物肖像、企业 Logo、论文图片、商业地图瓦片、卫星影像、远程字体或其他第三方媒体。工作区中的官方资料归档不属于本投稿包。
+外部事实只用于研究、引用和校核，逐项登记在 `sources.json`。投稿包不再分发官方 PDF 原件，不嵌入第三方现场照片、人物肖像、企业 Logo、论文图片、商业地图瓦片、卫星影像、远程字体或未获许可的第三方媒体。唯一的第三方显示资产是下一节登记的 Noto Sans SC 离线字体子集。工作区中的官方资料归档不属于本投稿包。
 
 ## 4. 工具、字体与再分发
 
-静态 HTML 和 PDF 由本地 Python、Node.js、Playwright/Chromium 及项目脚本生成；这些工具仅参与构建，未作为软件依赖随包再分发。页面使用本机系统字体回退（Microsoft YaHei、Bahnschrift、Arial、Consolas 等）；字体文件未以独立资产提交，PDF 可能包含浏览器为打印生成的字体子集，仅供本文档显示与打印，不授权提取或另行再分发字体。
+静态 HTML 和 PDF 由本地 Python、Node.js、Playwright/Chromium 及项目脚本生成；这些工具仅参与构建，未作为软件依赖随包再分发。为修复无中文系统字体的离线评审环境中出现的方框字形，四个 HTML 统一读取本地 `visual/assets/offline-font.css`。该 CSS 内嵌一个只包含四页所需字形的 Noto Sans SC 可变字体子集，CSS 家族名为 `FTLC Offline Sans`；页面不再依赖 Microsoft YaHei、PingFang、Source Han 等系统字体是否安装。
+
+源字体版权为 © 2014–2021 Adobe，保留字体名 `Source`，许可为 SIL Open Font License 1.1；该许可允许使用、修改、嵌入与再分发，完整版权声明和许可证正文保存在 CSS 文件开头。源文件 `NotoSansSC-VF.ttf` 的 SHA-256 为 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`；精简由 FontTools 4.63.0 与 Brotli 1.2.0 在本地完成，最终子集 SHA-256 为 `4f44545e367dcaceb3a55697bc2de4fe104ba16e11a02a058308e136bcbdabd9`，内嵌 CSS SHA-256 为 `8e0514f3afa705aa7cebac53b1c64a918710447450165dc8064ed61510d57dec`。同一 CSS 文件的清单哈希也登记在 `manifest.json`。PDF 仍只包含浏览器为打印生成的字体子集，其权利边界不因本次 HTML 修复而改变。
 
 ## 5. 离线与隐私
 

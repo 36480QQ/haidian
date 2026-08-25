@@ -27,13 +27,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4be596815642b42db2712bd75d0173c33c08fd47680a06bfc4d4d67a4327f0af"
+      "sha256": "e041d1768bac2729dc2474f99c09519fb971517ae13ea0f6024c078c75f11464"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "52a104cd3ae940025b900795a16d7a09b8d8398bd1be22a2650d46032ce495e4"
+      "sha256": "19afd5740072f5c85142dccc134d9a59d630d3b8622451b373e3be2a55f60d73"
     },
     {
       "path": "agent.json",
@@ -51,19 +51,19 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "5f241b9c6f9becaf99c0a458d5e57e287a1b455c094469b5da41cce74e50f084"
+      "sha256": "21e9e5f2cb4d699c504530fc76405ea70dd6ca690b005c39e99e6efd6639c797"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "2011802805a7168673e425fb85fd90da13f88cbace02ddb8a50c008959f5e338"
+      "sha256": "026a73bb289d21e00206a70db906d3ffd6cfca33cf9fac260f015eaad890123b"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ac6d56ad39cd03eb10f158a56f70859e2455291e25a5030143566635df0c9cb1"
+      "sha256": "5227a6f51090c555a2a759b6be4bdda09a732abe07e510e70822dd9efbb8bd46"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "27438f494802a0b24884427bb23dd1d57ff51e2f2fdbdbe52e2f2134099bde00"
+      "sha256": "485b4810a00bb8ca4182c464cc676ad51bf34af8b3043de1d4ded9c9d7873274"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "73d302d34066b03ca210d28dd31955594c5db3bb3db9ab60aac6b3c49426c442"
+      "sha256": "9d9d60a0c55364fb8479a5c474ea12e5086e80a1e6da0116f6edf1e771efb85a"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -121,7 +121,18 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "4d682b6f787d0a11d20c8a344e4ada7e9a83cd4222d4493b66368ab97663107d"
+      "sha256": "ea99b4567a1109a20584a35d502a35469bd5cdda15f99469baa23c9ccf978e6a"
+    },
+    {
+      "path": "visual/assets/offline-font.css",
+      "role": "asset",
+      "required": true,
+      "language": "neutral",
+      "title_zh": "四个离线 HTML 共用的中文字体子集与 OFL 许可证",
+      "title_en": "Shared Offline Chinese Font Subset and OFL Licence for Four HTML Files",
+      "description_zh": "内嵌按 SIL Open Font License 1.1 再分发的 Noto Sans SC 精简子集，用于保证正文、导航、图注、语言切换与双语辅助文字在无中文系统字体时仍可读。",
+      "description_en": "Embeds a reduced Noto Sans SC subset redistributed under SIL Open Font License 1.1 so body text, navigation, captions, language switching, and bilingual auxiliary labels remain readable without Chinese system fonts.",
+      "sha256": "8e0514f3afa705aa7cebac53b1c64a918710447450165dc8064ed61510d57dec"
     },
     {
       "path": "assets/media/overall-aerial.webp",
@@ -251,7 +262,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9bee53988842a79c4ad54350cbcdbd477e3cd88bbddf3af51c0e7aafcbd90b95"
+      "sha256": "3b0f772ea9feb8cf38d245bf8e1f35b690b8087e550f6c00cde4e2c63b6dea1b"
     },
     {
       "path": "report/proposal.en.html",
@@ -259,7 +270,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f7dfe3359e4d35470e43d183e14b1b754933029962ce23f3674cfbc2c0e670b0"
+      "sha256": "6fd93cc174c120192ad9c2bf4751046aaadba8d03a7cbc6b145046b5891c340e"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -283,7 +294,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f5036848b02e0cb0e8413728b3241106a884492dd0bb853a5159963f8cafd282"
+      "sha256": "b7df2c27519f9745cb836c0a049d105a80cd912d7a94fe5e2679410718e1c750"
     },
     {
       "path": "assets/figures/key-areas.en.png",

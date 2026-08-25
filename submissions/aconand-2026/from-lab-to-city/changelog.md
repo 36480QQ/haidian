@@ -2,6 +2,15 @@
 
 本文件记录方案如何回应反馈、修订表达，并保留仍需专业深化的事项。它不是政府审定记录或实施承诺。
 
+## v0.7 - 2026-08-26
+
+### 修复七维评审的离线中文缺字
+
+- 针对 PR #4000 七维评审中“中文报告与可视化大量汉字显示为方框”的唯一视觉门阻断，检查了四个 HTML 的实际字体链路，确认原页面只依赖 Windows/macOS 中文系统字体。
+- 从 SIL Open Font License 1.1 许可的 Noto Sans SC 中提取四个 HTML 实际使用的字形，生成约 288 KB 的可变字体子集；考虑仓库不允许直接提交 `.woff2`，将子集和完整 OFL 许可证内嵌到允许提交的本地 CSS，并以 `FTLC Offline Sans` 作为页面专用家族名。
+- `report/proposal.html`、`report/proposal.en.html`、`visual/index.html`、`visual/index.en.html` 统一使用同一离线字体，覆盖正文、导航、图注、语言切换和双语辅助文字；字体来源、许可、嵌入/再分发权利及校验值同步登记到 `sources.json`、版权声明和 `manifest.json`。
+- 重新渲染并人工核查四页关键状态，再运行视觉包装、完整 self-check 和 participant preflight；本轮不改总体概念、空间策略、指标或临时边界声明。
+
 ## v0.6 - 2026-08-24
 
 ### 从“概念术语”改为“一眼能懂”

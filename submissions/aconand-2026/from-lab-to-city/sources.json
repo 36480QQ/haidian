@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.0",
   "accessed_date": "2026-08-24",
-  "rights_summary": "No third-party photographs, map tiles, fonts, logos, or case-study images are embedded. Official and institutional materials are cited as factual references only. Proposal text, diagrams, design geometry, offline visual assets, and three explicitly synthetic concept images are agent-generated for this submission. The local interface image used text only; the overall aerial and three-key-area triptych used only project-generated submission assets as references. None is factual site evidence. The account holder has explicitly authorised public release of outputs generated through the enterprise commercial account for this open call; source rights remain with their publishers and applicable service terms continue to apply.",
+  "rights_summary": "No third-party photographs, map tiles, logos, or case-study images are embedded. The only third-party display asset is a reduced Noto Sans SC subset embedded in local CSS solely to guarantee offline Chinese rendering; it is redistributed under SIL Open Font License 1.1 with its copyright notice, full licence, source hash, derivative hash, and CSS hash recorded below. No remote font is loaded. Official and institutional materials are cited as factual references only. Proposal text, diagrams, design geometry, offline visual assets, and three explicitly synthetic concept images are agent-generated for this submission. The local interface image used text only; the overall aerial and three-key-area triptych used only project-generated submission assets as references. None is factual site evidence. The account holder has explicitly authorised public release of outputs generated through the enterprise commercial account for this open call; source rights remain with their publishers and applicable service terms continue to apply.",
   "sources": [
     {
       "id": "SITE-PACKAGE",
@@ -99,6 +99,33 @@
         "Conceptual and provisional; professional teams must deepen and verify it before statutory or engineering use",
         "The local interface image used no input image; the overall aerial and three-key-area triptych used only project-generated diagrams and concept images as references",
         "All three synthetic images may contain invented people, signs, activities, buildings, vegetation, and spatial detail; they do not document an exact site condition, identifiable participant, public consent, approved design, construction feasibility, or implementation commitment"
+      ]
+    },
+    {
+      "id": "FONT-NOTO-SANS-SC",
+      "title_zh": "Noto Sans SC 离线中文显示字体子集",
+      "title_en": "Noto Sans SC Offline Chinese Display Font Subset",
+      "publisher": "Google Fonts / Noto CJK project",
+      "published_date": null,
+      "accessed_date": "2026-08-26",
+      "url": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+      "license_url": "https://scripts.sil.org/OFL",
+      "path": "visual/assets/offline-font.css",
+      "source_type": "open_licensed_font",
+      "authority_level": "primary_project_source",
+      "formal_use": "yes_for_offline_display",
+      "rights_status": "SIL_Open_Font_License_1.1",
+      "source_font_filename": "NotoSansSC-VF.ttf",
+      "source_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+      "embedded_subset_sha256": "4f44545e367dcaceb3a55697bc2de4fe104ba16e11a02a058308e136bcbdabd9",
+      "css_asset_sha256": "8e0514f3afa705aa7cebac53b1c64a918710447450165dc8064ed61510d57dec",
+      "usage": [
+        "Offline rendering of Chinese body text, navigation, captions, language switching, and bilingual auxiliary labels in report/proposal.html, report/proposal.en.html, visual/index.html, and visual/index.en.html"
+      ],
+      "limitations": [
+        "The subset contains only glyphs used by the four submitted HTML files and is not a general-purpose font distribution",
+        "The CSS family name FTLC Offline Sans is local to this submission; the embedded font remains under SIL Open Font License 1.1",
+        "The complete copyright notice and OFL 1.1 text are preserved at the beginning of visual/assets/offline-font.css"
       ]
     },
     {

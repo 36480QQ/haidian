@@ -106,10 +106,10 @@
       "id": "A-RIGHTS-001",
       "status": "submission_assets_cleared_by_design",
       "severity": "medium",
-      "statement": "The package intentionally embeds only agent-generated graphics and repository-provided geometry; external official and case-study pages are text citations, not redistributed media.",
-      "statement_zh": "投稿包只嵌入智能体原创图形和仓库提供的几何；外部官方资料及案例仅作文字引用，不转载其图片或版式。",
-      "impact": "No third-party photograph, remote tile, web font, logo, or executable remote dependency is required to review the package offline.",
-      "mitigation": "Maintain sources.json, copyright_statement.md, offline checks, and a final asset inventory before publication.",
+      "statement": "The package intentionally embeds agent-generated graphics, repository-provided geometry, and one reduced Noto Sans SC font subset redistributed under SIL Open Font License 1.1; external official and case-study pages remain text citations, not redistributed media.",
+      "statement_zh": "投稿包嵌入智能体原创图形、仓库提供的几何，以及一个按 SIL Open Font License 1.1 再分发的 Noto Sans SC 精简字体子集；外部官方资料及案例仍只作文字引用，不转载其图片或版式。",
+      "impact": "No third-party photograph, remote tile, remote or uncleared font, logo, or executable remote dependency is required to review the package offline.",
+      "mitigation": "Maintain sources.json, copyright_statement.md, manifest hashes, the embedded OFL notice, offline checks, and a final asset inventory before publication.",
       "release_trigger": "Final rights inventory and repository publication review pass."
     }
   ]
