@@ -917,6 +917,9 @@
       ],
       "metrics": [
         "announced_key_detailed_design_area_sqm",
+        "key_area_interface_prototype_count",
+        "fp01_d0_measurement_method_coverage_ratio",
+        "fp01_hold_point_raci_coverage_ratio",
         "key_area_count",
         "key_area_zhongzhiyuan_geometry_sqm",
         "key_area_ai_origin_geometry_sqm",
@@ -961,6 +964,7 @@
         "KEY-AREA-SOURCE"
       ],
       "assumption_ids": [
+        "A-FP01-DELIVERY-CONTROL-001",
         "A-KEYAREA-001",
         "A-EXISTING-001",
         "A-OPERATIONS-001",
@@ -979,7 +983,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "三处重点区均有定位、功能包络、场景节点、公共空间与分期证据；具体地块、拆改留和工程尺度仍待官方资料深化；三片区详细设计各含街室、人物旅程和能力返还节点，全部保留临时边界、概念选址和非运营状态；五项均给出角色联合体、90日三门、1年指标和五门转化，但不声称运营主体、场地、预算或成果已经成立。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。 V0.10将FP01收束为一项学习/职业转介服务：S07是唯一用户服务，S03负责评测，S04负责接口；虚构复合人物、三尺度概念空间和四类示例回执可机读核查，实际人物确认、场址、基线、阈值和绩效仍待D0实测。",
+      "evidence_summary_zh": "三处重点区均有定位、功能包络、场景节点、公共空间与分期证据；具体地块、拆改留和工程尺度仍待官方资料深化；三片区详细设计各含街室、人物旅程和能力返还节点，全部保留临时边界、概念选址和非运营状态；五项均给出角色联合体、90日三门、1年指标和五门转化，但不声称运营主体、场地、预算或成果已经成立。V0.12将三片区各补为一张概念界面原型，并把六项D0方法和H0-H4角色级RACI接入同一交付页；概念尺寸不替代测绘，实名责任、签署和结果仍待外部材料。",
       "geojson_feature_ids": [
         "PROV-KEY-001",
         "PROV-KEY-002",
@@ -1038,7 +1042,10 @@
       "evidence_files": [
         "visual/assets/fp01-contract.json",
         "visual/assets/verify-fp01-contract.js",
-        "assets/figures/fp01-spatial-prototype.png"
+        "assets/figures/fp01-spatial-prototype.png",
+        "visual/assets/fp01-delivery-control.json",
+        "visual/assets/verify-fp01-delivery-control.js",
+        "assets/figures/technical-delivery-sheet.png"
       ]
     },
     {
@@ -1374,7 +1381,11 @@
         "reversible_public_space_component_count",
         "landmark_component_mapping_coverage_ratio",
         "honor_contribution_class_count",
-        "delivery_hold_point_coverage_ratio"
+        "delivery_hold_point_coverage_ratio",
+        "fp01_evidence_gate_count",
+        "fp01_evidence_gate_definition_coverage_ratio",
+        "fp01_evidence_verified_gate_count",
+        "fp01_external_evidence_artifact_verified_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1573,6 +1584,9 @@
       "metrics": [
         "scenario_node_count",
         "industry_validation_scenario_count",
+        "key_area_interface_prototype_count",
+        "fp01_d0_measurement_method_coverage_ratio",
+        "fp01_hold_point_raci_coverage_ratio",
         "persona_count",
         "scenario_human_review_coverage_ratio",
         "scenario_spatial_assignment_coverage_ratio",
@@ -1636,7 +1650,8 @@
         "A-FLAGSHIP-FP04",
         "A-NATIONAL-STRATEGIC-FRAMING-001",
         "A-APPLICATION-CAPABILITY-REPLICATION-001",
-        "A-FP01-CONCRETE-PROTOTYPE-001"
+        "A-FP01-CONCRETE-PROTOTYPE-001",
+        "A-FP01-DELIVERY-CONTROL-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1644,7 +1659,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "12个场景点、3个产业验证场景、25个去重测试角色和I1—I7最低公共接口提供场景—空间—治理闭环；可信运行层将12个应用场景与街室、接口、三条人物旅程及Return Ticket形成双向可解析关系，辅助节点不计入应用场景总数；FP01至FP04逐一覆盖S01-S08及S10-S12，S09由公共证据层承接，12场景无遗漏且无重复。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。V0.9以六项转化能力说明从创新到可信应用的方案结构，可信运行层横贯其间而不新增空间节点；结构覆盖不等于真实应用绩效。 V0.10将FP01收束为一项学习/职业转介服务：S07是唯一用户服务，S03负责评测，S04负责接口；虚构复合人物、三尺度概念空间和四类示例回执可机读核查，实际人物确认、场址、基线、阈值和绩效仍待D0实测。",
+      "evidence_summary_zh": "12个场景点、3个产业验证场景、25个去重测试角色和I1—I7最低公共接口提供场景—空间—治理闭环；可信运行层将12个应用场景与街室、接口、三条人物旅程及Return Ticket形成双向可解析关系，辅助节点不计入应用场景总数；FP01至FP04逐一覆盖S01-S08及S10-S12，S09由公共证据层承接，12场景无遗漏且无重复。V0.12把三片区界面、六项D0事件边界与公式、H0-H4角色级RACI接入可核验交付模型；这些字段只证明方法定义完整，不替代真实用户、现场基线或应用绩效。",
       "geojson_feature_ids": [
         "SCENARIO-S01",
         "SCENARIO-S02",
@@ -1699,7 +1714,10 @@
       "evidence_files": [
         "visual/assets/fp01-contract.json",
         "visual/assets/verify-fp01-contract.js",
-        "assets/figures/fp01-spatial-prototype.png"
+        "assets/figures/fp01-spatial-prototype.png",
+        "visual/assets/fp01-delivery-control.json",
+        "visual/assets/verify-fp01-delivery-control.js",
+        "assets/figures/technical-delivery-sheet.png"
       ]
     },
     {
@@ -1734,7 +1752,9 @@
         "reversible_public_space_component_count",
         "landmark_component_mapping_coverage_ratio",
         "honor_contribution_class_count",
-        "delivery_hold_point_coverage_ratio"
+        "delivery_hold_point_coverage_ratio",
+        "key_area_interface_prototype_count",
+        "fp01_design_test_boq_item_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1757,7 +1777,9 @@
         "A-PROTOCOL-PROTOTYPE-001",
         "A-FP01-CONCRETE-PROTOTYPE-001",
         "A-BRAND-COMPONENT-001",
-        "A-DELIVERY-READINESS-001"
+        "A-DELIVERY-READINESS-001",
+        "A-FP01-EVIDENCE-READINESS-001",
+        "A-FP01-DELIVERY-CONTROL-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1765,7 +1787,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "六处公共空间原型与三处地标连接协议解释、测试展示和贡献记忆；建筑方式、位置和文保关系仍待深化；协议制票室、验票室和回程室作为既有公共空间的非加总子空间，并由三条概念人物旅程检验公共权利界面。 V0.10将FP01收束为一项学习/职业转介服务：S07是唯一用户服务，S03负责评测，S04负责接口；虚构复合人物、三尺度概念空间和四类示例回执可机读核查，实际人物确认、场址、基线、阈值和绩效仍待D0实测。V0.10.1把三地标与M01-M06六类可逆组件逐项映射，以人工接管、非数字路径、回执申诉、公开观察、版本贡献等可拆卸界面形成同一公共空间语法；H0-H4未有实证即保持概念或停止，不表示选址、建设和运营获批。",
+      "evidence_summary_zh": "六处公共空间原型与三处地标连接协议解释、测试展示和贡献记忆；建筑方式、位置和文保关系仍待深化；协议制票室、验票室和回程室作为既有公共空间的非加总子空间，并由三条概念人物旅程检验公共权利界面。V0.12以三片区概念界面和M01-M06单套设计测试清单说明可逆组件如何落位；实际尺寸、数量、单价、金额、选址和建设运营批准均为空。",
       "geojson_feature_ids": [
         "PUBLIC-BUILD-001",
         "PUBLIC-TEST-001",
@@ -1793,7 +1815,10 @@
         "assets/figures/fp01-spatial-prototype.png",
         "visual/assets/brand-component-architecture.json",
         "visual/assets/verify-brand-component-architecture.js",
-        "assets/figures/brand-component-architecture.png"
+        "assets/figures/brand-component-architecture.png",
+        "visual/assets/fp01-delivery-control.json",
+        "visual/assets/verify-fp01-delivery-control.js",
+        "assets/figures/technical-delivery-sheet.png"
       ]
     },
     {
@@ -1929,7 +1954,16 @@
         "reversible_public_space_component_count",
         "landmark_component_mapping_coverage_ratio",
         "honor_contribution_class_count",
-        "delivery_hold_point_coverage_ratio"
+        "delivery_hold_point_coverage_ratio",
+        "fp01_evidence_gate_count",
+        "fp01_evidence_gate_definition_coverage_ratio",
+        "fp01_evidence_verified_gate_count",
+        "fp01_external_evidence_artifact_verified_count",
+        "key_area_interface_prototype_count",
+        "fp01_d0_measurement_method_coverage_ratio",
+        "fp01_hold_point_raci_coverage_ratio",
+        "fp01_design_test_boq_item_count",
+        "fp01_critical_dependency_step_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1965,7 +1999,9 @@
         "A-APPLICATION-CAPABILITY-REPLICATION-001",
         "A-FP01-CONCRETE-PROTOTYPE-001",
         "A-BRAND-COMPONENT-001",
-        "A-DELIVERY-READINESS-001"
+        "A-DELIVERY-READINESS-001",
+        "A-FP01-EVIDENCE-READINESS-001",
+        "A-FP01-DELIVERY-CONTROL-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1973,7 +2009,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制；三条旅程和三处能力返还台把长期运营的暂停、补救、退役及公共能力返还写成引用完整的概念登记，不声称已经兑现；每项试点以90日go/revise/stop记录进入一年评估，未验证采购、扩散、标准和公共收益继续保持unknown。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。V0.9所称复制是方法、合同、接口、运行手册和失败记录的建议包，不证明已有外部采用。 V0.10将FP01收束为一项学习/职业转介服务：S07是唯一用户服务，S03负责评测，S04负责接口；虚构复合人物、三尺度概念空间和四类示例回执可机读核查，实际人物确认、场址、基线、阈值和绩效仍待D0实测。V0.10.1把四项运营节律、五类贡献记录、五旗舰和六组件纳入单一品牌背书语法，并以H0-H4覆盖公共问题、载体与责任、数据安全、独立补救、授权退出五类停止门；所有主体、预算、采购、D0、市政消防交通和结果仍须另行确认。",
+      "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制；三条旅程和三处能力返还台把长期运营的暂停、补救、退役及公共能力返还写成引用完整的概念登记，不声称已经兑现；每项试点以90日go/revise/stop记录进入一年评估，未验证采购、扩散、标准和公共收益继续保持unknown。V0.12把三片区概念界面、六项D0方法、H0-H4角色级RACI、M01-M06单套测试清单和K01-K10关键依赖转为独立机器可核验交付模型；五道外部证据门仍为0，场址、实名主体、预算采购、专业审查、演练、授权、日期与结果须由外部材料填入。",
       "geojson_feature_ids": [
         "PHASE-001",
         "PHASE-002",
@@ -2026,7 +2062,14 @@
         "assets/figures/fp01-spatial-prototype.png",
         "visual/assets/brand-component-architecture.json",
         "visual/assets/verify-brand-component-architecture.js",
-        "assets/figures/brand-component-architecture.png"
+        "assets/figures/brand-component-architecture.png",
+        "visual/assets/fp01-evidence-readiness.json",
+        "visual/assets/verify-fp01-evidence-readiness.js",
+        "report/narrative.md",
+        "assets/figures/evidence-readiness.png",
+        "visual/assets/fp01-delivery-control.json",
+        "visual/assets/verify-fp01-delivery-control.js",
+        "assets/figures/technical-delivery-sheet.png"
       ]
     }
   ]

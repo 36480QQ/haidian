@@ -1561,6 +1561,91 @@
       "missing_evidence_rule": "If a required record is absent, contradictory or expired, the related proposal remains concept-only or stops at the current hold point.",
       "resolution_trigger": "Each accountable authority or operator supplies dated, attributable and independently reviewable evidence for its hold point, with a named human go, revise or stop decision.",
       "replacement_action": "Replace role-class placeholders with authorized accountable entities, populate observed baselines and approvals, and publish the resulting go, revise or stop record without converting proposal metrics into performance claims."
+    },
+    {
+      "id": "A-FP01-EVIDENCE-READINESS-001",
+      "status": "pending_external_evidence",
+      "statement": "V0.12 retains an evidence-acquisition and verification register for FP01 gates H0 through H4. It defines required artifacts, role classes, independent review, stop actions and transitions, but it contains no fieldwork result, named operator commitment, approved budget, professional approval, operating test result or implementation authorization.",
+      "impact": "The package can prove five gate definitions and a complete machine-checkable anti-fabrication structure. The verified gate count and verified external-artifact count correctly remain zero until dated, attributable, rights-cleared and independently reviewable external records are supplied.",
+      "affected_files": [
+        "visual/assets/fp01-evidence-readiness.json",
+        "visual/assets/verify-fp01-evidence-readiness.js",
+        "report/narrative.md",
+        "metrics.json",
+        "compliance_matrix.json",
+        "standard_matrix.json",
+        "design_depth_matrix.json",
+        "proposal.md",
+        "proposal.en.md",
+        "assets/figures/evidence-readiness.png",
+        "assets/figures/evidence-readiness.en.png",
+        "visual/index.html",
+        "visual/index.en.html",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf",
+        "manifest.json",
+        "self_check.json"
+      ],
+      "affected_metric_ids": [
+        "fp01_evidence_gate_count",
+        "fp01_evidence_gate_definition_coverage_ratio",
+        "fp01_evidence_verified_gate_count",
+        "fp01_external_evidence_artifact_verified_count"
+      ],
+      "gate_ids": [
+        "H0",
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "current_evidence_status": "pending_external_evidence",
+      "verified_gate_count": 0,
+      "verified_external_artifact_count": 0,
+      "anti_fabrication_rule": "No gate or artifact may be marked verified without a date, accountable signatory or authority, source reference, rights status, review record and an explicit go, revise or stop disposition where applicable.",
+      "resolution_trigger": "Authorized external contributors populate the register with genuine records; the accountable gate owner and independent reviewer confirm completeness, currency, rights and the resulting go, revise or stop decision.",
+      "replacement_action": "Replace null placeholders only with attributable external records, preserve failed and contradictory evidence, rerun the verifier, refresh metrics and matrices, and never infer approval from silence or from proposal-internal completeness."
+    },
+    {
+      "id": "A-FP01-DELIVERY-CONTROL-001",
+      "status": "concept_delivery_control_model_unexecuted",
+      "statement": "V0.12 adds a concept delivery-control book for FP01: three key-area interface prototypes, six fully defined D0 measurement methods, a role-class RACI for H0 through H4, one cross-flagship design-test kit with six component quantities, and a ten-step critical dependency path. These are design controls, not external delivery evidence.",
+      "impact": "The package can demonstrate how a professional and operating team would measure, assign, quantify, sequence and stop the pilot without inventing a site, actual quantity, unit price, budget, named entity, sign-off, authorization or field result. All such actuals remain null and continue to hold FP01 at the applicable evidence gate.",
+      "affected_files": [
+        "visual/assets/fp01-delivery-control.json",
+        "visual/assets/verify-fp01-delivery-control.js",
+        "metrics.json",
+        "compliance_matrix.json",
+        "standard_matrix.json",
+        "design_depth_matrix.json",
+        "proposal.md",
+        "proposal.en.md",
+        "assets/figures/technical-delivery-sheet.png",
+        "assets/figures/technical-delivery-sheet.en.png",
+        "visual/index.html",
+        "visual/index.en.html",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf",
+        "manifest.json",
+        "self_check.json"
+      ],
+      "affected_metric_ids": [
+        "key_area_interface_prototype_count",
+        "fp01_d0_measurement_method_coverage_ratio",
+        "fp01_hold_point_raci_coverage_ratio",
+        "fp01_design_test_boq_item_count",
+        "fp01_critical_dependency_step_count"
+      ],
+      "design_test_quantity_rule": "Design-test quantities express the smallest reviewable kit only. They must be replaced by surveyed actual quantities and rights-cleared cost evidence before any budget, procurement or construction decision.",
+      "formative_observation_rule": "The planned 30 task sessions across at least three service days are a proposal-defined formative floor, not statistical power, a real sample, public consent or a performance claim; responsible parties and applicable ethics or data review may raise or reject it.",
+      "current_actual_boq_verified_item_count": 0,
+      "current_verified_external_signoff_count": 0,
+      "resolution_trigger": "H0 and H1 supply a real problem, service owner, candidate carrier, responsibility acceptance and cost/procurement basis; H2 supplies applicable professional conditions; H3 and H4 supply rehearsal, authorization and handover evidence.",
+      "replacement_action": "Populate only dated and attributable actual fields, retain the design-test baseline for comparison, rerun both delivery-control and evidence-readiness verifiers, and publish the resulting go, revise or stop record."
     }
   ]
 }
