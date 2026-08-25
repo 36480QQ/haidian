@@ -669,18 +669,18 @@ function cityQuestionJourneyFigure(lang) {
     '周阿姨的无障碍到达 × 城市共同开发',
     'MS ZHOU\'S ACCESSIBLE ARRIVAL × URBAN CO-DEVELOPMENT', lang);
   const panels = [
-    { photo: 'experience-dazhongsi.png', align: 'xMinYMid', color: C.amber },
+    { photo: 'experience-dazhongsi.png', align: 'xMaxYMid', color: C.amber },
     { photo: 'experience-zhongzhi.png', align: 'xMidYMid', color: C.blue },
     { photo: 'experience-ai-origin.png', align: 'xMidYMid', color: C.green },
-    { photo: 'experience-dazhongsi.png', align: 'xMaxYMid', color: C.coral },
+    { photo: 'experience-dazhongsi.png', align: 'xMinYMid', color: C.coral },
   ];
   const stages = zh ? [
-    ['大钟寺｜共同定义', '周阿姨、轮椅使用者与服务人员把“连续到达”写成城市任务，不假定未经核验的现场断点。', '使用者决定什么算改善'],
+    ['城市问题｜共同定义', '大钟寺的周阿姨、轮椅使用者与服务人员把“连续到达”写成城市任务，不假定未经核验的现场断点。', '使用者决定什么算改善'],
     ['众智园｜共同制作', '公众与开发者一起移动路缘、停靠位和人群标记，把身体经验变成可重复工况。', '使用者直接改路线和原型'],
     ['AI原点｜共同接续', '方法、接口和限制留在公共原型长桌；另一团队复现、拆解并继续修改。', '成果成为别人能继续做的能力'],
     ['大钟寺｜生活继续改', '设备没有碰撞，停靠与围观却影响转弯；人工服务继续，新问题回到研发桌。', '终点立刻成为下一题起点'],
   ] : [
-    ['DAZHONGSI | DEFINE TOGETHER', 'Ms Zhou, wheelchair users and staff frame continuous arrival without inventing an unsurveyed defect.', 'USERS DECIDE WHAT COUNTS AS IMPROVEMENT'],
+    ['CITY QUESTION | DEFINE TOGETHER', 'At Dazhongsi, Ms Zhou, wheelchair users and staff frame continuous arrival without inventing an unsurveyed defect.', 'USERS DECIDE WHAT COUNTS AS IMPROVEMENT'],
     ['ZHONGZHI | MAKE TOGETHER', 'Participants and developers move kerbs, parking and crowd markers, turning body knowledge into repeatable conditions.', 'USERS CHANGE THE ROUTE AND PROTOTYPE'],
     ['AI ORIGIN | CONTINUE TOGETHER', 'Method, interfaces and limits remain on a public table for another team to reproduce, dismantle and change.', 'WORK BECOMES A CAPABILITY OTHERS CAN CONTINUE'],
     ['DAZHONGSI | LIFE KEEPS CHANGING IT', 'No collision occurs, yet parking and spectators restrict turning. Staff remain and the new issue returns.', 'THE END BECOMES THE NEXT QUESTION'],
@@ -807,8 +807,10 @@ function aerialDesignKeyFigure(lang) {
   const zh = lang === 'zh';
   let body = header(4, '总体鸟瞰如何对应可检查的空间动作', 'HOW THE AERIAL MAPS TO CHECKABLE SPATIAL MOVES', '鸟瞰表达意向；GeoJSON与相对拓扑承担证据', 'THE AERIAL SHOWS INTENT; GEOJSON + TOPOLOGY CARRY EVIDENCE', lang);
   body += `<rect x="58" y="160" width="1260" height="930" rx="5" fill="white" stroke="${C.line}"/>`;
-  body += placedImage('site-overview.png', 76, 178, 1224, 894, `aerial-${lang}`, 'xMidYMid');
-  body += conceptNotice(lang, 76, 178, 1224);
+  body += placedImage('site-overview.png', 76, 178, 1224, 689, `aerial-${lang}`, 'xMidYMid');
+  body += `<rect x="76" y="887" width="1224" height="165" rx="4" fill="${C.ink}"/>`;
+  body += text(108, 937, zh ? '一条公共创新主线 · 六类城市接口 · 三处共同开发场' : 'ONE PUBLIC INNOVATION SPINE · SIX CITY INTERFACES · THREE CO-DEVELOPMENT GROUNDS', zh ? 23 : 17, C.white, 700);
+  body += lines(108, 978, zh ? ['写实鸟瞰只表达概念空间与活动关系；临时几何、正式边界与工程条件仍按证据状态读取。'] : ['THE REALISTIC AERIAL SHOWS CONCEPT SPACE AND ACTIVITY ONLY.', 'READ PROVISIONAL GEOMETRY, OFFICIAL BOUNDARIES AND ENGINEERING CONDITIONS BY EVIDENCE STATUS.'], zh ? 15 : 11, '#c9d5e6', 500, 1.5);
   body += `<rect x="1348" y="160" width="594" height="930" rx="5" fill="white" stroke="${C.line}"/>`;
   const actions = zh ? [
     ['01 公共创新主线', '连续公园、铁路遗产与日常通行'], ['02 六类X接口', '社区、校园、轨道、生态、产业、文化'],
