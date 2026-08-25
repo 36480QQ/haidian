@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e2d17cdc78e60411c3e612bc4cefe115513f0fc9a33d2f7e050972195c872879"
+      "sha256": "85f323f46a0eb39f332ff8447d3ccd67b81cdd503b0e004d3421736c2bdc9ddf"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b1026300e3acbde840cf553cd11089282b3987b182a7d6659d2db0e58aa67d94"
+      "sha256": "c6f30ec6e3622bea517d45b5a9b39b004fbaec921a3d1d59ff088557fafadf10"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "75e79ac04674978205b716a2106e759e50fa448f63aa8ca9027d0be9510a12f3"
+      "sha256": "fb6b79d8cba516411b3c3ce7f3de05f3359462f090cfe91905d441e39222020a"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a60213f919098fbbb1134c4aca90aa5e2109c9663bee30c6501458dc18cac48d"
+      "sha256": "1f82ef70137cb22816e7053f3ce70155adfcd296bd4b87e4d7ce6a744dccb364"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -317,28 +317,7 @@
       "role": "media_poster",
       "required": false,
       "language": "neutral",
-      "sha256": "c05355e0a4ff6fb7d7c59708a783fa8f057b6d013085b1a0399eaed1a7268fb2"
-    },
-    {
-      "path": "assets/media/render-plaza.png",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "sha256": "726b43770c2ea842c3be893d21716ce0c9210ab1db866441152967e1b997c740"
-    },
-    {
-      "path": "assets/media/render-tower.png",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "sha256": "6fac3c9375b6e8603ef4532007956e3df44bfb16d054bd27ec0e234f285517e4"
-    },
-    {
-      "path": "assets/media/render-platform.png",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "sha256": "bb53612609fbc166bd6821513189e3d5fbd10465a9d6bace440c7ce684dfeb20"
+      "sha256": "86d7585de1046869e26a25edc8571799a9edf332ff1022e3c52afaacfdcbbcc9"
     },
     {
       "path": "visual/assets/logo-mark.svg",
@@ -361,6 +340,30 @@
       "language": "en",
       "translation_of": "assets/figures/brand-standards.png",
       "sha256": "1bb30113d524391f34d53374e77a44414904ace8e8d79d7e5e0a7447a5f3dca5"
+    },
+    {
+      "path": "assets/media/seedance-plaza.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "description_zh": "AI 生成概念渲染（豆包 Seedream 5.0，火山方舟 API，带平台水印）",
+      "sha256": "a0ae9316b9360d6c68f87adc11147e3d9deb8bcf603583eec325c3bd5cc7c2b9"
+    },
+    {
+      "path": "assets/media/seedance-tower.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "description_zh": "AI 生成概念渲染（豆包 Seedream 5.0，火山方舟 API，带平台水印）",
+      "sha256": "19423d74999c1d39c6d13d3c4fd68481a643e09d2a4c7e494a881f1ac43cfd12"
+    },
+    {
+      "path": "assets/media/seedance-platform.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "description_zh": "AI 生成概念渲染（豆包 Seedream 5.0，火山方舟 API，带平台水印）",
+      "sha256": "be1524c3b557a11c68da1d40a633e8303f5d57eeb15b449b45ab1e12dd938d78"
     }
   ],
   "validation_claim": {
