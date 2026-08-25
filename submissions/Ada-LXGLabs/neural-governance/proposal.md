@@ -566,4 +566,5 @@ Smart Hub 的定位是"**交互界面 + 基础设施载体**"：它不只是一�
 - data/processed/source_use_matrix.csv
 - data/processed/missing_data_checklist.csv
 - 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`
+- **投稿者原创思考笔记（可作参考资料）**：梁欣刚与其数字分身小元《Agent 时代的电力与算力——Agent 如何与算力共享电力、与人类供电网络的区别、转型方向与未来趋势》讨论总结 v3（2026-08-19，吸收 Ada 五点补充 + IET 2026 论文学术锚点）。分级阶梯直流供电、集中转换、软件定义电力（算电协同深层逻辑）、建筑级直流母线 + PoE 的原创论述 [source:AGENT-AGE-POWER-ALGORITHM]。
 - 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]
