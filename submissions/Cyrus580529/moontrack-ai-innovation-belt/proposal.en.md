@@ -211,6 +211,21 @@ First, what depth this section can honestly reach. The core of regulatory depth 
 | Beijing AI Origin Community | 1.043 M m² | 0.217 M m² | 20.83% |
 | Dazhongsi AI Industry Cluster | 0.720 M m² | 0.131 M m² | 18.22% |
 
+Each of the three areas has a scene plate. The plates carry only two kinds of content: figures this proposal has measured, and rules its text already states. No engineering specification appears on any of them. All three illustrations are AI-generated conceptual expressions, not site photographs, and depict no existing place.
+
+![Zhongzhiyuan - a sandbox you can watch](assets/figures/scene-zhongzhiyuan.en.png)
+
+Zhongzhiyuan's spatial strategy follows directly from that 10.89%: the ground is there, so a test yard need not be pushed inside a shed. It can sit beside a public walkway behind a single see-through railing - **watching requires no booking, only entering does.** That is where the scenario-access mechanism lands in space.
+
+![AI Origin Community - campus-adjacent translation street](assets/figures/scene-origin-street.en.png)
+
+The Origin Community's 20.83% means the opportunity is not vacant land but the ground floor. Opening frontage that already exists is faster than building anything new, and launches use folding furniture rather than an auditorium because the problem being solved is that student teams with no channel lack a low-threshold venue - while an auditorium needs approval, scheduling and budget.
+
+![Dazhongsi - stitching four quadrants](assets/figures/scene-dazhongsi-deck.en.png)
+
+Dazhongsi station lies 81.7 m from the overall design scope boundary, the closest of any station near the belt, so the spatial move here concentrates on joining four corners at one level. The lane on the deck is set apart by a change of paving colour, not by a fence: a fence separates people and machines completely, at the cost of turning every route change into construction, while paving can be re-marked at any time, which matches the reversibility principle.
+
+
 Zhongzhiyuan's existing coverage is roughly half that of the other two, and its official role is the AI independent-innovation acceleration area — the only one of the three explicitly required to carry growth. **The place that needs to expand is exactly the place that is currently emptiest.** That is not a design coincidence; the numbers were checked before the claim was written.
 
 Read the other way: the Origin Community's 20.83 per cent means its spatial strategy can only be stock renewal and functional replacement, not new construction. That is also why the Kendall Square approach — converting university land assets into mixed-use blocks — applies there and does not apply to Zhongzhiyuan. The two are short of different things: one is short of content, the other of buildings.
@@ -473,6 +488,8 @@ It shares no code with the Python implementation that produced the figures (shap
 The land-use, building and area findings have a companion, `visual/assets/verify-geometry.js`, used the same way; it additionally checks the three commitments this land-use layer makes — full coverage, zero overlap, and declared areas consistent with the geometry.
 
 ### From diagnosis to remedy: what it actually takes to make the flagship work
+
+![The Xiaoyue River co-mobility corridor - phase one](assets/figures/scene-xiaoyuehe-corridor.en.png)
 
 Stopping at "it does not work" is not enough. If reachability is a graph problem, then making it reachable is a solvable optimisation, not an exhortation to "close the breaks". Four questions, four answers, all computed from the same graph, with parameters and scripts shipped in this package.
 
@@ -779,6 +796,10 @@ Three of the components carry a component plate. The illustrations are AI-genera
 Dimensions, materials, gradients and detailing for all five components must be developed by professional teams against current codes; this proposal defines only component type and function. Anything involving accessible gradients must comply with the Law on the Construction of a Barrier-Free Environment and related design codes [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW], and specific values are not given here.
 
 ### East–west stitching and north–south continuity
+
+![The heritage park spine - north-south continuity](assets/figures/scene-heritage-spine.en.png)
+
+The spine matters because it is one of the few naturally continuous alignments available. Across the belt, 141.7 km of cycleway breaks into 62 components with the largest holding only 19.4%, and **a line uninterrupted by junctions is the same good thing for a wheelchair, a pram and a low-speed device.** It should be said that protected heritage structures do stand along this corridor; no figure in this package depicts any existing place, so the drawing shows only a generic weathered platform edge and no station building.
 
 The official phrasing of east–west stitching and north–south connection has a definite division of labour here. North–south is carried by the Jing-Zhang Railway Heritage Park spine, a skeleton that already exists. The difficulty east–west is crossing the breaks created by the rail corridor and arterial roads, and this proposal's handle is the Xiaoyue River corridor and its cycleway network: 42 cycleway segments [metric:cycleway_near_river_300m_segments] are measured within 300 m of the watercourse, totalling 23.04 km [data:geometry/roads.geojson#cycleway-22771899], and these form the existing basis for east–west low-speed connection. But those 23 km are not currently a connected network; see "Measured cycleway network connectivity". Specific break locations, crossing methods and engineering feasibility require site verification by traffic and municipal professionals, and this proposal offers no engineering scheme for crossing structures.
 

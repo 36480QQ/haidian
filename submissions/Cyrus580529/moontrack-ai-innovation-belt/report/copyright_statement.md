@@ -43,6 +43,14 @@ Policy, statistical and case-study material is cited from public documents regis
 
 This package names no private individual and reproduces no personal likeness. Historical figures (Zhan Tianyou, Chen Chunxian) are referred to only in relation to documented public historical events. Company and institution names appear solely as factual references to published cases; no corporate logo, wordmark or brand asset is reproduced. The honours display system and wayfinding proposals explicitly require item-by-item rights clearance before any implementation, and this proposal designates no specific name, likeness, typeface or corporate mark in advance.
 
+The heritage corridor deserves a specific note. Protected heritage structures stand along the
+Jing-Zhang alignment, including a listed early twentieth-century station. `scene-heritage-spine*.png`
+depicts none of them: the illustration was generated under an explicit instruction to show no station
+building, no historic railway architecture, no heritage plaque and no restored period structure, and
+the drawing carries only a generic weathered platform edge. No image in this package is a depiction of
+any protected property, and the proposal states that facilities within a heritage perimeter require
+approval from the heritage authority.
+
 ## Identity assets
 
 The MoonTrack mark (`assets/media/moontrack-mark.png`, `moontrack-mark-light.png`), the gallery covers
@@ -63,8 +71,11 @@ typeface is specified.
 
 ## AI-generated illustrations
 
-Three component plates (`assets/figures/component-chevron-ramp*.png`, `component-platform-unit*.png`,
-`component-observation-point*.png`) embed illustrations produced with a generative image model. They are
+Eight plates embed illustrations produced with a generative image model: three component plates
+(`assets/figures/component-chevron-ramp*.png`, `component-platform-unit*.png`,
+`component-observation-point*.png`) and five scene plates (`scene-zhongzhiyuan*.png`,
+`scene-origin-street*.png`, `scene-dazhongsi-deck*.png`, `scene-heritage-spine*.png`,
+`scene-xiaoyuehe-corridor*.png`). They are
 conceptual expressions only. They are not photographs, are not renderings of any surveyed design, and depict
 no existing place, building or person. Every plate carries that statement on its face. The figures in them are
 stylised without facial detail and represent no identifiable individual; no signage copy, brand mark or
