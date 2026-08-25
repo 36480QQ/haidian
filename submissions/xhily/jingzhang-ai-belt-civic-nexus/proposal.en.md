@@ -82,6 +82,38 @@ The proposal draws on 6 publicly verifiable global AI innovation ecosystem cases
 
 All cases come from public sources; no official cooperation with Jing-Zhang is claimed. Their lessons are conceptual suggestions for professional teams to deepen [depth:three_level_scope_framework] [source:AGENT-TASKBOOK].
 
+#### Case Sources, Fact Scope, and Reuse Boundaries (Item-by-Item Verification)
+
+To ensure case facts are verifiable and reuse boundaries are clear, the table below lists public sources, fact scope, acquisition time, and reuse boundaries for C-01–C-06; the source ID is noted in the last column. All cases are drawn from public materials; no official cooperation, affiliation, or data exchange with Jing-Zhang is claimed. Institution names are used only to illustrate mechanisms and do not constitute recruitment or implementation commitments.
+
+| ID | Source (publicly verifiable) | Fact scope (verifiable content) | Acquired | Reuse boundary | Source ID |
+| --- | --- | --- | --- | --- | --- |
+| C-01 | Vector Institute (vectorinstitute.ai), Mila (mila.quebec), MaRS Discovery District (marsdd.com) public sites and annual reports | Vector Institute is an independent non-profit AI institute founded in Toronto in 2017; Mila is a Montreal ML research institute; MaRS is a Toronto innovation hub — all publicly documented | 2026-08 | Mechanism analogy of "university—institute—incubation" only; no claimed official cooperation | [source:CASE-C01] |
+| C-02 | Shenzhen Nanshan District government public materials, Pengcheng Lab (pcnicl.ac.cn), Tencent and DJI public materials | Nanshan clusters leading private enterprises; Pengcheng Lab is a national lab with compute facilities — public industry-geography facts | 2026-08 | Mechanism analogy of "shared compute + hardware chain" only | [source:CASE-C02] |
+| C-03 | Zhejiang Lab, Alibaba DAMO, Hangzhou Future Sci-Tech City public materials | National lab + private research institutes + talent-community integration is a public planning fact | 2026-08 | Mechanism analogy of "lab—talent zone—amenities" only | [source:CASE-C03] |
+| C-04 | AI Singapore (ai.gov.sg), Punggol Digital District public materials | Singapore's national AI program, smart district, and open datasets are public policy facts | 2026-08 | Mechanism analogy of "open datasets drive scenario operations" only | [source:CASE-C04] |
+| C-05 | Station F (stationf.co), Île-de-France Region public materials | Station F is a large Paris startup incubator (public fact); international talent visa is French public policy | 2026-08 | Mechanism analogy of "international exchange and attraction" only | [source:CASE-C05] |
+| C-06 | Brainport Eindhoven (brainport.nl), High Tech Campus Eindhoven public materials | Tight industry–academia coupling, hardware innovation cluster, and pilot lines are public regional-innovation facts | 2026-08 | Mechanism analogy of "pilot and hardware validation" only | [source:CASE-C06] |
+
+#### Regional Innovation Synergy (Three Cores / Two Wings × Regional Innovation Network)
+
+Building on the "one belt, three cores, two wings" structure, this section clarifies the differentiated roles, factor flows, and collaboration interfaces with surrounding regional-innovation nodes. Except for the internal relationships among the three cores and two wings, all cross-node collaborations listed below are conceptual suggestions and have not been formally confirmed [source:AGENT-TASKBOOK].
+
+| Node | Differentiated role | Factor flow (in / out) | Collaboration interface | Cooperation status |
+| --- | --- | --- | --- | --- |
+| Zhongzhiyuan · Origin Valley (one of the three cores) | Full-stack autonomous origination and acceleration | In: university outputs, open-source models; Out: autonomous tech, standards | Own key area | Internal to proposal |
+| Beijing AI Origin Community · The Origin (one of the three cores) | Result translation and talent community | In: research outputs, talent; Out: incubated firms, community contributions | Own key area | Internal to proposal |
+| Dazhongsi · Confluence (one of the three cores) | Intelligent-economy international exchange | In: international resources, capital; Out: roadshows, brand | Own key area | Internal to proposal |
+| Zhongguancun Tech-Service Wing · Hub | Global factor allocation | In/Out: capital, services, global network | Zhongguancun innovation network | Conceptual |
+| Xiaoyue River Scenario-Empowerment Wing · Ripple | AI scenario empowerment and vitality city | In/Out: scenarios, data, public experience | Xiaoyue River public space | Conceptual |
+| North-Latitude Community (northern community belt of the corridor, incl. Qinghe–Beishatan–Xisanqi talent communities; conceptual node) | Talent residency and near-campus living amenities | In: residency and living services; Out: talent retention, near-campus translation | Community–campus slow-traffic stitching | Conceptual |
+| Future Science City (Changping) | Major science facilities; energy and advanced-manufacturing research | In: application scenarios; Out: facilities, research infrastructure | Scenario-demand matching | Conceptual |
+| Huairou Science City | Comprehensive national science center and basic research | In: AI methods; Out: basic-research outputs | Basic-research collaboration | Conceptual |
+| Economic-Technological Development Area (Yizhuang) | Intelligent manufacturing and industry-translation capacity | In: AI technology; Out: manufacturing capacity, products | Pilot-to-mass-production interface | Conceptual |
+| Beijing–Tianjin–Hebei (regional synergy) | Regional industry chain and scenario market | In/Out: industry chain, scenarios, market | Regional-synergy interface | Conceptual |
+
+> Note: Except for the internal relationships among the three cores and two wings, all "cooperation status" entries above are conceptual suggestions and do not represent signed agreements or official confirmation; concrete collaboration requires separate validation at the formal planning and investment-promotion stages [source:AGENT-TASKBOOK].
+
 Future-city-form research answers how AI changes work, life, socializing, learning, transport, and public services. The proposal grounds AI transport systems, continuous green space, innovation-service facilities, and an international living-working atmosphere into locatable functional zones, nodes, corridors, and scenarios, rather than vaguely describing a technology vision [depth:overall_spatial_structure].
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
