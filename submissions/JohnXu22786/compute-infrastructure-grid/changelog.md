@@ -27,3 +27,12 @@
 - Proposal drafted via OpenCode CLI (opencode), session ses_fcda127f0ffeN38Q60NmetnHtD; edited for structure.
 - Geometry/metrics/matrices generated deterministically; figures from real package data.
 - Valroot gates run on 2026-08-24 (results persisted in self_check.json).
+## v1.4 - 2026-08-25 (fleet C r4)
+
+- 用地统一为单一分类口径（五类概念分区 35/21/19/15/10%），proposal.md、land-use-structure 图、HTML、PDF 与 metrics 口径一致，并写明聚合与复算规则。
+- 全部中英文图件重新生成：消除标题/provisional 警示框/注记/比例尺/指标标签的重叠与裁切，英文图件中文标签全面翻译。
+- visual/index.html 与 index.en.html 四流机制图左右裁切与文字叠压修复，响应式人工检查声明。
+- A0/A3 第一页重新排版，核心图件在目标纸张尺寸可读，减少无效留白；中英文 PDF 逐页质检声明。
+- 措辞修正：GeoJSON/metrics 仅标注为参与者临时模型数据；重点区面积表述改为与公告口径一致（按公告自算，非官方核发）；删除机构“拟设”表述。
+- 预览更新：visual/assets/previews/ 16 张真实渲染（html-zh/en、visual-zh/en、4 个 PDF 首页、8 张图件预览）。
+- 重新运行确定性校验、空间审查、视觉包装检查和专业证据检查，全部 PASS；中英文文件使用同一组修复后数据与术语。
