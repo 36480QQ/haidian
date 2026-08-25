@@ -764,6 +764,15 @@ def authoritative_pr_comment(
     lines.extend(["", "## 七维评分"])
     for item in review["rubric_scores"]:
         lines.append(f"- **{item['dimension_zh']} {item['score']}/5**：{item['comment_zh']}")
+    rubric_repairs = [item for item in review["rubric_scores"] if item["required_repairs_zh"]]
+    if rubric_repairs:
+        lines.extend(["", "## 当前阻断性逐维修复"])
+        for item in rubric_repairs:
+            lines.extend(["", f"### {item['dimension_zh']}"])
+            lines.extend(
+                f"{index}. {repair}"
+                for index, repair in enumerate(item["required_repairs_zh"], 1)
+            )
     if review["mandatory_rejection"]["hits"]:
         lines.extend(["", "## 强制拒绝命中"])
         lines.extend(f"- {item}" for item in review["mandatory_rejection"]["hits"])

@@ -225,6 +225,11 @@ class AIReviewSubmissionTests(unittest.TestCase):
             blocking_now = followup_properties["blocking_now"]
             self.assertEqual("boolean", blocking_now["type"])
             self.assertIs(False, blocking_now["const"])
+            repair_schema = api_schema["properties"]["rubric_scores"]["items"]["properties"][
+                "required_repairs_zh"
+            ]
+            self.assertEqual(5, repair_schema["maxItems"])
+            self.assertEqual(500, repair_schema["items"]["maxLength"])
             self.assertFalse(client.payload["store"])
             content = client.payload["input"][0]["content"]
             self.assertTrue(any(item["type"] == "input_image" for item in content))
@@ -264,6 +269,47 @@ class AIReviewSubmissionTests(unittest.TestCase):
             self.assertEqual("request-changes", result["review"]["recommendation"])
             self.assertTrue(any("1 项详细 required repairs" in item for item in result["review"]["required_next_actions_zh"]))
             self.assertEqual("do-not-publish", result["decision"]["publication_recommendation"])
+
+    def test_pr_comment_lists_required_repairs_by_dimension(self) -> None:
+        review = valid_review()
+        review["rubric_scores"][0]["required_repairs_zh"] = ["补充任务书条款逐项对应表。"]
+        review["rubric_scores"][1]["required_repairs_zh"] = ["说明两项独立设计决策。"]
+        review["conditional_followups"] = [
+            {
+                "action_zh": "正式边界发布后重算。",
+                "blocking_now": False,
+                "trigger": "official-data-available",
+                "owner": "participant",
+            }
+        ]
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            result = run_ai_review(
+                ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+            )
+        comment = result["review"]["pr_comment_markdown"]
+        self.assertIn("## 当前阻断性逐维修复", comment)
+        self.assertIn("### 任务书相关性\n1. 补充任务书条款逐项对应表。", comment)
+        self.assertIn("### 原创性\n1. 说明两项独立设计决策。", comment)
+        self.assertIn("## 条件触发的后续事项（不阻断本轮）", comment)
+        repair_section = comment.split("## 当前阻断性逐维修复", 1)[1].split(
+            "## 条件触发的后续事项（不阻断本轮）", 1
+        )[0]
+        self.assertNotIn("正式边界发布后重算。", repair_section)
+
+    def test_pr_comment_omits_empty_required_repairs_section(self) -> None:
+        client = FakeClient()
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            result = run_ai_review(
+                ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+            )
+        self.assertNotIn("当前阻断性逐维修复", result["review"]["pr_comment_markdown"])
 
     def test_mandatory_hits_force_rejection_even_if_model_marks_pass(self) -> None:
         review = valid_review()
