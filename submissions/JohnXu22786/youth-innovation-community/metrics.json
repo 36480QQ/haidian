@@ -99,12 +99,12 @@
     },
     "land_use_zone_count": {
       "status": "known",
-      "value": 24,
+      "value": 30,
       "unit": "count",
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "count(land_use.geojson features)",
+      "formula": "count(land_use.geojson features) (30 features after round-2 9-category implementation)",
       "confidence": "high",
       "assumptions": []
     },

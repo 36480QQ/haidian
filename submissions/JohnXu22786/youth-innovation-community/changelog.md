@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v0.3.0 - 2026-08-25（Round 2 修复）
+
+- P0 修复「15 分钟公共生活圈 = 2 km 步程圆」无依据对应：mobility-bluegreen（中英）删除「十五分钟公共生活圈」表述，将 2 km 圆改标为「等距示意圆、非路网等时圈」，图上注明步速假设（1.2–1.4 m/s 时单向约 24–28 分钟）、未计入交叉口/屏障、检索日（2026-08-25）无公开路网级数据、等时圈须待官方路网数据发布后重算；proposal.md / proposal.en.md 同步补概念命名与非等时圈声明；A3/A0 图册（中英）随图件重生成。
+- P0 修复五项案例来源为主张级可核验链接：CASE-SHENZHEN-SHUIWEI（深圳新闻网 2017-12-15、深圳商报 2018-03-28、DOFFICE 项目页，2026-08-25 全部抓取核验；「全国首个」降级为「深圳首个」口径并附学术佐证）、CASE-SEOUL-YOUTH-HOUSING（english.seoul.go.kr 三个主张级页面）、CASE-SINGAPORE-HDB-COMMONS（HDB 官网设计特征页、NHB Void Decks 电子书 2013、DP Architects GoodLife! Makan）、CASE-HK-YOUTH-HOSTEL（hyab.gov.hk 官方页面 + 2025-10-15 立法会书面答复；主管域名由 hab.gov.hk 更正为 hyab.gov.hk）、CASE-YOUTH-DEVELOPMENT-CITIES（中国共青团网官方全文 中青联发〔2022〕1号 + 新华网 2022-06-02 试点名单稿）；逐项补准确元数据、所支持主张与引用边界，正文案例表与参考资料表同步更新并加 [source:CASE-…] 锚点（正文表格内 URL 数字串过长会误触规则，完整主张级链接全部落在 sources.json）。
+- P1 修复图件可读性：根因修复 plot_geoms 对 fc=None 的多边形默认填充（此前整个场地被默认蓝覆盖，即「九类用地大面积统一蓝色」来源）；用地结构图（中英）重绘为九类概念分区实际图斑可区分配色 + 图例一一对应（含商务金融用地 0902 实际图斑），占比为几何复算口径并注明与正文概念口径的差异；geometry/land_use.geojson 确定性重建并以内嵌（interior re-cut）方式实现 0804、1207、16 三类目（union 保持精确、投影后无重叠、无自相交），metrics.json 的 land_use_zone_count 更新为 30；site-overview 环线说明移到无碰撞区；key-areas 英文副标改为两行换行+加大间距（消除「honorsLive」式粘连）；A0 展板改为真实 A0 幅面并以更大图幅铺排（首页核心图件 65%→70% 宽度、全高 93%）。
+- 校验复跑：四门禁全部 PASS（validate_local_submission / spatial_review / visual_review / professional_review，exit=0；spatial 仅保留 3 条既有 minor KEY_AREA_PROVISIONAL 提示）；score_rubric 100.0/100（无 mandatory_rejections、无 reviewer_gaps）；embed_fonts + check_font_coverage → ALL_FONTS_OK；manifest 哈希与 self_check.json（formal-review-ready）持久化。
+
 ## v0.2.0 - 2026-08-25
 
 - 修复 v2 双语合同：proposal.md 声明 bilingual_contract_version=1 与 translation_file=proposal.en.md；proposal.en.md 声明 language=en、translation_of=proposal.md，并提供完整英文译文。

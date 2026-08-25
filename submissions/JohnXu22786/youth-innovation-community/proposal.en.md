@@ -63,14 +63,14 @@ The three zones correspond to the three nodes: the Youth Maker Hub by Zhongzhiyu
 
 The six cases are summarized for their public mechanisms only (see table), borrowing the directions of "stock renewal into public products", "shared public-space provision", "open ground-floor public living rooms", "policy interface with small-unit shared orientation", "government-organization collaboration for affordable housing", and "youth-friendly city service interfaces", without copying any case's ownership arrangements, subsidy standards, rent levels or management models; all figures are labeled as public-scope figures and never rewritten as commitments of this proposal; the publisher, link, access date, specific claims and permission boundary of each case are registered item by item in sources.json.
 
-| Case | Public mechanism summary | Points borrowed | Source (public channel) |
+| Case | Public mechanism summary | Points borrowed | Source (claim-level links, retrieved 2026-08-25) |
 | --- | --- | --- | --- |
-| Shenzhen Shuiwei Ningmeng talent apartments | Public reports describe it as the first national pilot of a talent-guaranteed-housing community converted from village handshake buildings: original fabric and structure retained, elevator corridors and shared public spaces added (youth home, roof garden, etc.), government coordination, enterprise renovation and operation, village collective housing cooperation, rent below market level with government subsidy targeted at enterprise young talent (figures are public-scope) | Stock renewal into public products, shared public space, color wayfinding | Shenzhen Talent Housing Group website and public media reporting (2018-2022) |
+| Shenzhen Shuiwei Ningmeng talent apartments | Public reporting describes it as the first pilot in Shenzhen of a talent-guaranteed-housing community converted from village handshake buildings (Shenzhen News, 2017-12-15 scope; an academic article calls it the first project in China combining talent housing with urban-village renewal): original fabric and structure retained, elevator corridors and shared public spaces added (youth home, roof garden, etc.), government funding, SOE renovation and operation, village collective housing cooperation, and rent at about half of market with government subsidy targeted at enterprise young talent (public-scope figures) | Stock renewal into public products, shared public space, color wayfinding | Shenzhen News 2017-12-15 (link in [source:CASE-SHENZHEN-SHUIWEI]); Shenzhen Business Daily 2018-03-28 (szsb.sznews.com/PC/content/201803/28/content_330869.html); architect DOFFICE project page (gooood.cn/lm-youth-community-china-by-doffice.htm) |
 | Beijing published implementation scheme for government-subsidized rental housing | The published scheme targets people without housing including young people and focuses on new graduates; the public "14th Five-Year" target is provision of about 400,000 units (public scope); small units preferred, shared space and mixed use encouraged | Policy interface, small-unit and shared orientation | Beijing Municipal Government portal (published 2022) |
-| Seoul youth housing policy | The Seoul Metropolitan Government's public material shows monthly rent subsidies for young people without housing, low-threshold youth housing and lease services, with community exchange spaces attached | Affordability and community space together | English public pages of the Seoul Metropolitan Government (sections since 2019) |
-| Singapore HDB community vitality spaces | Public material shows the tradition of open, unfenced void-deck community space under HDB blocks, and recent practice of community-facing public space centered on shared kitchens | Open ground-floor public living room, shared kitchen | HDB public pages and public media reporting (2015-2023) |
-| Hong Kong Youth Hostel Scheme | The public government scheme mobilizes non-governmental organizations to provide hostel beds to employed young people at below-market rent, with community activities and career mentoring attached (public scope) | Government-organization collaboration, affordable housing with community | Home and Youth Affairs Bureau public pages (sections since 2011) |
-| Youth-development city pilot policy | A public policy direction under the medium- and long-term youth development plan, promoting youth-friendly cities systematically across policy, space and services, with multiple cities participating (public scope; this proposal infers no list) | Youth-friendly city service interfaces, cross-city cooperation background | Public policy search on the central government portal (public documents, 2022) |
+| Seoul youth housing policy | Official Seoul Metropolitan Government pages show monthly rent support for young people without housing (up to about KRW 200,000/month, once per lifetime at most 12 months), Youth Safe Housing at about 75-85% of market price and single-person shared housing at about 50-70% with community shared spaces, youth housing located near public-transit hubs | Affordability and community space together | Official English pages of the Seoul Metropolitan Government: seoul-policy-archive/youth-housing-support/, seoul-policy-archive/tailored-rental-housing-for-vulnerable-households/, policy/urban-planning/housing-construction/ (english.seoul.go.kr) |
+| Singapore HDB community vitality spaces | Official and design sources show the tradition of open, unfenced, sheltered void-deck community space under HDB blocks (built since the 1970s), and recent practice of community-facing void-deck public space centered on a shared kitchen (GoodLife! Makan, completed 2016) | Open ground-floor public living room, shared kitchen | HDB design-features page (hdb.gov.sg/residential/buying-a-flat/finding-a-flat/design-features-for-new-flats); National Heritage Board Void Decks e-book (2013, nhb.gov.sg); DP Architects GoodLife! Makan project page (dpa.com.sg/projects/goodlife-makan/) |
+| Hong Kong Youth Hostel Scheme | The official page shows the Government fully funds NGOs to build youth hostels which the NGOs then operate on a self-financing basis, with rent capped at no more than 60% of market rent for nearby comparable units, for employed permanent residents aged 18-30; a 2025 LegCo written reply shows tenants must contribute at least 200 hours of community/volunteer service per year, with supporting activities such as start-up training, personal development and workplace culture | Government-organization collaboration, affordable housing with community | Home and Youth Affairs Bureau official page (hyab.gov.hk/tc/policy_responsibilities/Social_Harmony_and_Civic_Education/youth_hostel_scheme.htm); LegCo written reply 2025-10-15 (link in [source:CASE-HK-YOUTH-HOSTEL]) |
+| Youth-development city pilot policy | Public document Zhongqinglianfa [2022] No.1: a national pilot policy direction under the medium- and long-term youth development plan, reviewed by the inter-ministerial joint conference, requiring youth elements across urban planning, construction and management and exploring youth-friendly public-service space and facility standards; the first pilot list was published 2022-06-02 (45 pilot cities and 99 pilot counties, Xinhua scope; this proposal infers no list) | Youth-friendly city service interfaces, cross-city cooperation background | Official full text (link in [source:CASE-YOUTH-DEVELOPMENT-CITIES]); Xinhua 2022-06-02 pilot-list report (same source entry) |
 
 ### Regional cooperation and factor interfaces (concept)
 
@@ -97,9 +97,9 @@ Regulatory-plan depth is expressed as "problem - spatial object - metric - data 
 | Network | Secondary service points (shared study, information, night-return duty) | Conceptual points, movable as a whole |
 | Metrics | Area and ratio types | Provisional recompute; intensity types await official control conditions |
 
-![Overall design overview (provisional geometry)](assets/figures/site-overview.png)
+![Overall design overview (provisional geometry)](assets/figures/site-overview.en.png)
 
-![Conceptual land-use structure](assets/figures/land-use-structure.png)
+![Conceptual land-use structure](assets/figures/land-use-structure.en.png)
 
 > **Evidence anchor**: [source:DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING], [source:DATA-SRC-PROVISIONAL-BOUNDARIES].
 
@@ -127,7 +127,7 @@ Three pilgrimage landmarks are agreed as numbered objects: LM-01 the Youth Innov
 | Youth Co-living Commons | Flexible rental, flatmate matching, shared kitchen-living, community operation | Rental units, shared kitchen-living, community study, childcare corner | Open ground-floor living room, bulletin wall, zoned management |
 | Youth Vitality Plaza | Open stage, sports and social exchange, night vitality | Stage, sports courts, flexible market, night-lit resting areas | Free entry, bookable timeslots, public review, duty staffing |
 
-![Three-node index and node composition](assets/figures/key-areas.png)
+![Three-node index and node composition](assets/figures/key-areas.en.png)
 
 > **Evidence anchor**: [data:PACKAGE-GEOMETRY] (the three node polygons come from geometry/key_areas.geojson in this package).
 
@@ -171,9 +171,9 @@ Three industry test-verification scenario cards (the numbered objects correspond
 
 Scenario-to-space mapping: Job-coach AI corresponds to the employment desk at the Maker Hub; Rent-commute AI to the rental desk at the Co-living Commons; Meetup AI to the events desk at the Vitality Plaza and the bulletin walls of the three nodes; Startup-mentor AI to the mentor room at the Maker Hub; Feedback AI to the suggestion boxes of the three nodes and the Youth Council; Night-return AI to the night-return duty points; Desk-share AI to the shared-desk counter at the Maker Hub; Childcare AI to the childcare corner at the Co-living Commons; Accessible-wayfinding AI to the information desks of the three nodes; Community-events AI to the events desk at the Vitality Plaza. Privacy and human-review boundary: data is anonymized and aggregated only for operation review, with no individual-identifying tracking, no personal-profiling ranking, and a login-free equivalent ordinary-service path throughout; governance interfaces span transport, industry, space, public service, culture and deliberation culture (concept).
 
-![AI innovation ecosystem atlas and scenario-opening path](assets/figures/innovation-ecosystem.png)
+![AI innovation ecosystem atlas and scenario-opening path](assets/figures/innovation-ecosystem.en.png)
 
-![Scenario card inventory and industry test cards](assets/figures/scenario-cards.png)
+![Scenario card inventory and industry test cards](assets/figures/scenario-cards.en.png)
 
 > **Evidence anchor**: [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES] (reference basis for generative-AI content governance wording).
 
@@ -199,13 +199,13 @@ For transport organization, the three nodes conceptually connect to existing rai
 
 The blue-green network is organized as "three courts, one garden, one belt": the Maker Hub green court, the Co-living Commons community garden, the Vitality Plaza tree-lined square, plus greenway strips along both sides of the loop and pocket nodes; roofs and shared spaces may carry light activities such as community planting (concept). The conceptual green-space ratio and public-space ratio are both recomputed from provisional geometry and marked low-confidence, to be recomputed and replaced after official data is published.
 
-Public space builds the "youth 15-minute public life circle": centered on the three nodes, continuous walking paths connect shade seats, drinking-water information, accessible signage, event bulletins and shared components; public components follow durable-repairable, reversible-replaceable principles and remain fully usable without screens or networks, with wayfinding using the original palette in high-contrast accessible design. Accessibility and inclusion paths: the three nodes and main public paths keep login-free human-service equivalent paths; dedicated accessible routes for wheelchair users and persons with disabilities, tactile and auditory wayfinding for people with sensory impairments (concept), paper equivalent information for people with low digital skills, all-age friendly public space for non-youth and elderly residents, shared public reading seats for students and fresh graduates, night-return paths for night workers and commuters, and a childcare corner for caregivers; the use paths of persons with disabilities, children, the elderly, caregivers and night-returners are verified separately in the operation manual (concept).
+Public space builds the "youth 15-minute public life circle" (a conceptual name, not a verified isochrone): centered on the three nodes, continuous walking paths connect shade seats, drinking-water information, accessible signage, event bulletins and shared components; "15-minute" is this proposal's conceptual name for the service circle, not a verified time isochrone - this proposal does not equate the 2 km example radius with a 15-minute walk, and network isochrones must be recomputed with actual road networks and crossing data when official road-network data is published (no public network-level data as of retrieval 2026-08-25). Public components follow durable-repairable, reversible-replaceable principles and remain fully usable without screens or networks, with wayfinding using the original palette in high-contrast accessible design. Accessibility and inclusion paths: the three nodes and main public paths keep login-free human-service equivalent paths; dedicated accessible routes for wheelchair users and persons with disabilities, tactile and auditory wayfinding for people with sensory impairments (concept), paper equivalent information for people with low digital skills, all-age friendly public space for non-youth and elderly residents, shared public reading seats for students and fresh graduates, night-return paths for night workers and commuters, and a childcare corner for caregivers; the use paths of persons with disabilities, children, the elderly, caregivers and night-returners are verified separately in the operation manual (concept).
 
 Urban character is grounded in the plain industrial scale of the Jing-Zhang railway heritage, with youth vitality presented through restrained color and clear interfaces: low-glare night scenes, durable materials, continuous eaves space and clear public entrances, never aiming at "AI styling" or neon skins. Color wayfinding borrows the color-identification mechanism of the cases, not their imagery, using this proposal's original palette. The cultural narrative runs on "the youth engineering spirit of the centennial Jing-Zhang railway - Zhongguancun innovation culture - contemporary young maker culture": the self-built Jing-Zhang railway by a youth-led engineering team is a public historical fact; this draft expresses spiritual inheritance rather than shape replication, never distorts history and never treats culture as tech decoration or a slogan.
 
-![Slow-traffic and blue-green analysis (with scale bar and north arrow)](assets/figures/mobility-bluegreen.png)
+![Slow-traffic and blue-green analysis (with scale bar and north arrow)](assets/figures/mobility-bluegreen.en.png)
 
-![Landmarks, component library and node spatial sequence](assets/figures/node-components.png)
+![Landmarks, component library and node spatial sequence](assets/figures/node-components.en.png)
 
 > **Evidence anchor**: [source:DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES] (method reference for blue-green organization).
 
@@ -213,7 +213,7 @@ Urban character is grounded in the plain industrial scale of the Jing-Zhang rail
 
 The brand system takes the "one ring, three dots" as its master: an original logo mark of three dots arranged along a ring as abstract youth figures, used in combination with the Chinese name "Youth Co-Creation Loop" and the English name YOUTH.JZ; primary colors are Jing-Zhang brick red (the centennial railway memory), deep ink blue (technology and night vision) and bright orange (youth vitality and night safety recognition), used in a 6:3:1 combination rule, low-glare, high-contrast and accessibility-friendly. The application rules cover the logo master, minimum size, safe distance, positive/negative versions and prohibition examples; the wayfinding system generates samples in four categories - direction, facility, events and safety (concept); cross-media extension covers walls, floors, light boxes, bulletin boards and digital screens (readable without networks). International communication uses "Work. Live. Shine. - Youth Co-Creation Loop on the Centennial Jing-Zhang AI Belt" as the conceptual tagline, with the short name YOUTH.JZ used alongside the Chinese master name; international content is human-reviewed before release (concept). All brand assets are original concepts of this proposal and copy no existing city, park or enterprise identity; a prior-right search must be completed before official use.
 
-![Brand identity and wayfinding system sample](assets/figures/brand-identity.png)
+![Brand identity and wayfinding system sample](assets/figures/brand-identity.en.png)
 
 > **Evidence anchor**: [source:DATA-SRC-AGENT-TASKBOOK] (naming and brand direction responds to agent.1/agent.5 of the task book).
 
@@ -245,7 +245,7 @@ Pilot execution table (concept, executable starting point): every pilot must fir
 
 Implementation policy is mechanism suggestions only: Beijing's published government-subsidized rental housing policy direction and stock-renewal orientation serve as background interfaces (no specific support or units committed); spatial and mechanism adjustments are suggested by the Youth Council and decided by competent authorities under statutory procedures; no policy, funding or attraction arrangements are written as confirmed commitments.
 
-![Operation flow and annual event brands](assets/figures/operation-flow.png)
+![Operation flow and annual event brands](assets/figures/operation-flow.en.png)
 
 > **Evidence anchor**: [source:DATA-SRC-AGENT-TASKBOOK] (phasing and implementation items respond to task-book requirements).
 
@@ -263,7 +263,7 @@ Metrics fall into three types: conceptual metrics recomputable from submitted ge
 
 Compliance matrix: the three positioning statements, five major functions, three-zone two-wing layout and the six agent.1-agent.6 tasks are mapped item by item - agent.1 to naming and identity, overall structure and the three-zone two-wing loop; agent.2 to the six case studies, the factor ecosystem atlas and factor mechanisms (all concept); agent.3 to the six personas, ten scenario cards, three industry test cards, scenario-space-operation mapping and privacy boundaries; agent.4 to the three-node public spaces, the three landmarks, honor display and component library concepts; agent.5 to the Jing-Zhang-Zhongguancun-AI cultural narrative, brand identity system and international communication concept; agent.6 to the three project categories, phasing, annual event brands and the council, meetup and other operation mechanism concepts. All entries declare "concept suggestion / reference proposal" attributes, comply with the task book's prohibited boundaries, and contain no over-monitoring, individual-identifying tracking, fabricated data or confirmed-arrangement phrasing.
 
-![Key metric evidence (ratios and counts on separate axes)](assets/figures/metrics-evidence.png)
+![Key metric evidence (ratios and counts on separate axes)](assets/figures/metrics-evidence.en.png)
 
 > **Evidence anchor**: [metric:green_ratio], [metric:public_space_ratio], [source:PACKAGE-GEOMETRY].
 
@@ -287,11 +287,11 @@ The readable index of machine-registered sources follows; URLs, publishers, acce
 | Skill | Submission skill reference (proposal structure, evidence layering, metric contract) |
 | Example | Reference example (chapter style and honest disclosure) |
 | Policy | Beijing implementation scheme and official interpretation for government-subsidized rental housing (published on the Beijing Municipal Government portal, 2022), youth housing policy background |
-| Case | Shenzhen Shuiwei Ningmeng talent apartments, public reporting and design-firm material (public channels 2018-2022), mechanism summary |
-| Case | Seoul Metropolitan Government public youth-housing pages (English), mechanism summary |
-| Case | Singapore HDB community-space public material (void decks and community space reporting), mechanism summary |
-| Case | Hong Kong Youth Hostel Scheme public government pages (Home and Youth Affairs Bureau), mechanism summary |
-| Case | Youth-development city pilot public policy (central government portal), concept interface |
+| Case | Shenzhen Shuiwei Ningmeng talent apartments, public reporting and design-firm material (Shenzhen News 2017-12-15, Shenzhen Business Daily 2018-03-28, DOFFICE project page; claim-level links in sources.json and the benchmark table), mechanism summary |
+| Case | Seoul Metropolitan Government official English youth-housing policy pages (Youth Housing Support, Tailored Rental Housing, Housing Construction; claim-level links in sources.json), mechanism summary |
+| Case | Singapore HDB community-space public material (HDB design-features page, NHB Void Decks e-book 2013, DP Architects GoodLife! Makan project page), mechanism summary |
+| Case | Hong Kong Youth Hostel Scheme official government pages (hyab.gov.hk) and the 2025-10-15 LegCo written reply, mechanism summary |
+| Case | Youth-development city pilot public policy (official full text Zhongqinglianfa [2022] No.1 on gqt.org.cn; Xinhua 2022-06-02), concept interface |
 | Map | Map context (credited background, directional only if used) |
 | Data | Official overall boundary and key-area geometry (missing for now; provisional conceptual geometry replaces it) |
 
