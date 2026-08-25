@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A civic-agent-governance proposal centered on the proposition that 'connection is the interaction between agents, and governance is governing these interactions.' It translates the official six-step collaboration mechanism (public-data reading, proposal reasoning, public feedback, human review, risk flagging, and the urban governance knowledge base) into a recomputable, traceable, and feedback-looping governance framework, treating connection as the ontology and the object of governance of a multi-agent city."
+summary: "A civic-agent-governance proposal centered on the proposition that 'connection is the interaction between agents, and governance is governing these interactions.' It translates the official six-step collaboration mechanism (public-data reading, proposal reasoning, public feedback, human review, risk flagging, and the urban governance knowledge base) into a recomputable, traceable, and feedback-looping governance framework, treating connection as the ontology and the object of governance of a multi-agent [source:GENERATIVE-AGENTS-2023] city."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -83,12 +83,12 @@ Therefore, governing the city cannot be governing only the "nodes" (individual a
 
 **Energy nerve** — the "blood vessels" of the city of agents:
 
-- **Building-level DC busbar**: the energy backbone of AI buildings, using an 800V DC distribution architecture to replace conventional AC, together with liquid cooling, to supply stable energy to high-density computing (following the design rule of "high voltage for distance, progressive step-down near the load, liquid cooling for density");
+- **Building-level DC busbar**: the energy backbone of AI buildings, using an 800V DC [source:E800V-DC-DISTRIBUTION] distribution architecture to replace conventional AC, together with liquid cooling, to supply stable energy to high-density computing (following the design rule of "high voltage for distance, progressive step-down near the load, liquid cooling for density");
 - **Compute-power-electricity coordination**: the coordination of computing scheduling and power scheduling — wherever computing tasks queue or migrate, power follows on demand; AI racks become part of a "controlled DC microgrid," enabling programmable scheduling of the full "grid-to-compute" path. **Honest boundary of engineering claims**: the 800V DC bus, liquid cooling, compute-power-electricity coordination, and deterministic latency are directional technical propositions (from public industry discussion and practice, not original to this proposal); without formal regulatory-plan, energy-capacity, load-boundary, and engineering-geology data, this proposal marks them all as "concepts to be publicly cited, pending independent cross-check" — not deterministic technical conclusions — and requires professional energy and municipal review before implementation [source:AGENT-TASKBOOK][depth:overall_spatial_structure].
 
 **Information nerve** — the "synapses" of the city of agents:
 
-- **East-west traffic**: the lateral traffic generated when an agent, to accomplish a north-south business goal, itself calls other data and other agents laterally through APIs/MCP. Unlike conventional communication networks, which are dominated by the north-south "human-accesses-service" traffic, east-west traffic in the agent era is not only larger in volume but also requires guaranteed latency determinism — it is the core load of agent collaboration and the real problem that "connection" must solve;
+- **East-west traffic**: the lateral traffic generated when an agent, to accomplish a north-south business goal, itself calls other data and other agents laterally through APIs/MCP. Unlike conventional communication networks, which are dominated by the north-south "human-accesses-service" traffic, east-west traffic [source:NOKIA-MBIT-INDEX] in the agent era is not only larger in volume but also requires guaranteed latency determinism — it is the core load of agent collaboration and the real problem that "connection" must solve;
 - **Wireless short-range connection**: the "nerve endings" of sensing and interaction, connecting the city's devices, scenarios, and people in real time. Technology selection remains open — SparkLink, Bluetooth, WiFi, UWB, cellular, etc., combined per scenario, without binding to any single standard; what this proposal cares about is not a brand or protocol but the capability profile of "determinism, low latency, high concurrency" that connection must possess in the agent era (SparkLink is currently one of the preferred options close to this profile, but other technologies are not excluded).
 
 Governing the city of agents is governing these two nerves: **how energy is allocated (compute-power-electricity coordination), how energy is transmitted (DC busbar), how information flows (east-west traffic), and how the periphery senses (short-range connection)**. The six-step governance framework below is precisely the mechanism operating on top of these two nerves.
@@ -467,7 +467,13 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 | Case 2 Linux Foundation·Glasswing | https://www.linuxfoundation.org/blog/project-glasswing-… | public project | publicly cited, pending independent cross-check |
 | Case 3 Agentic AI Foundation | https://www.linuxfoundation.org/press/agentic-ai-foundation-… | public project | publicly cited, pending independent cross-check |
 | Case 4 OPEA | https://opea.dev/ | public project | publicly cited, pending independent cross-check |
-| Case 5 IETF·Agentic AI | https://www.ietf.org/blog/agentic-ai-standards/ | public standard | publicly cited, pending independent cross-check |
+| Case 5 IETF·Agentic AI |
+| Multi-agent city / civic agents | GENERATIVE-AGENTS-2023 | academic paper (Smallville 25-agent community), academic basis | verified (arXiv:2304.03442) |
+| East-west traffic | NOKIA-MBIT-INDEX | mobile traffic index report, data basis | source URL pending |
+| Build X for agents | MIT-BUILD-X-FOR-AGENT | MIT Media Lab research line, academic basis | source URL pending |
+| 800V DC bus | E800V-DC-DISTRIBUTION | DC distribution technical literature, technical basis | source URL pending |
+| Green district / blue-green | GREEN-DISTRICT-DESIGN | U.S. green-district design case, spatial reference | source URL pending |
+ https://www.ietf.org/blog/agentic-ai-standards/ | public standard | publicly cited, pending independent cross-check |
 
 **Downgrade principle**: for "unpublicly cited, pending independent cross-check assumption" engineering claims, specific numbers or performance implications do not constitute technical commitments of this proposal; if not verifiable, they are deleted or kept as "to be publicly cited, pending independent cross-check".
 
