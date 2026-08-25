@@ -80,27 +80,42 @@
     "area-site": {
       "status": "known",
       "value": 1141,
-      "unit": "ha"
+      "unit": "ha",
+      "evidence_level": "provisional_computed",
+      "confidence": "concept",
+      "note": "Derived from provisional boundary geometries (PROV-*); recalculated per SOP when official redline is supplied. known = machine-recomputable from provisional geometry, NOT official evidence."
     },
     "area-key-scope": {
       "status": "known",
       "value": 369,
-      "unit": "ha"
+      "unit": "ha",
+      "evidence_level": "provisional_computed",
+      "confidence": "concept",
+      "note": "Derived from provisional boundary geometries (PROV-*); recalculated per SOP when official redline is supplied. known = machine-recomputable from provisional geometry, NOT official evidence."
     },
     "area-key-001": {
       "status": "known",
       "value": 193,
-      "unit": "ha"
+      "unit": "ha",
+      "evidence_level": "provisional_computed",
+      "confidence": "concept",
+      "note": "Derived from provisional boundary geometries (PROV-*); recalculated per SOP when official redline is supplied. known = machine-recomputable from provisional geometry, NOT official evidence."
     },
     "area-key-002": {
       "status": "known",
       "value": 104,
-      "unit": "ha"
+      "unit": "ha",
+      "evidence_level": "provisional_computed",
+      "confidence": "concept",
+      "note": "Derived from provisional boundary geometries (PROV-*); recalculated per SOP when official redline is supplied. known = machine-recomputable from provisional geometry, NOT official evidence."
     },
     "area-key-003": {
       "status": "known",
       "value": 72,
-      "unit": "ha"
+      "unit": "ha",
+      "evidence_level": "provisional_computed",
+      "confidence": "concept",
+      "note": "Derived from provisional boundary geometries (PROV-*); recalculated per SOP when official redline is supplied. known = machine-recomputable from provisional geometry, NOT official evidence."
     },
     "m-cultivation-record": {
       "status": "unknown",
@@ -163,16 +178,22 @@
       "unit": "sqm",
       "status": "known",
       "formula": "union of three key areas",
-      "source": "geometry/site_boundary.geojson"
+      "source": "geometry/site_boundary.geojson",
+      "evidence_level": "provisional_computed",
+      "confidence": "concept",
+      "note": "Derived from provisional boundary geometries (PROV-*); recalculated per SOP when official redline is supplied. known = machine-recomputable from provisional geometry, NOT official evidence."
     },
     "green_ratio": {
       "name": "Green ratio",
       "name_zh": "绿地率",
-      "value": 0.5838,
+      "value": 0.5742,
       "unit": "ratio",
       "status": "known",
       "formula": "green_space_area_sqm / site_area_sqm",
-      "source": "geometry/green_space.geojson"
+      "source": "geometry/green_space.geojson",
+      "note": "Recomputed from green_space.geojson / site_boundary.geojson (2,121,600 / 3,692,893 sqm); value aligned with trusted spatial review 0.574209. The ~578 ha spine green belt is a conceptual overlay NOT added to the 369 ha sum nor to the numerator; green_ratio denominator is the 369 ha overall design scope. | Derived from provisional boundary geometries (PROV-*); recalculated per SOP when official redline is supplied. known = machine-recomputable from provisional geometry, NOT official evidence.",
+      "evidence_level": "provisional_computed",
+      "confidence": "concept"
     },
     "public_space_ratio": {
       "name": "Public space ratio",
@@ -181,7 +202,10 @@
       "unit": "ratio",
       "status": "known",
       "formula": "public_space_area_sqm / site_area_sqm",
-      "source": "geometry/public_space.geojson"
+      "source": "geometry/public_space.geojson",
+      "evidence_level": "provisional_computed",
+      "confidence": "concept",
+      "note": "Derived from provisional boundary geometries (PROV-*); recalculated per SOP when official redline is supplied. known = machine-recomputable from provisional geometry, NOT official evidence."
     }
   }
 }
