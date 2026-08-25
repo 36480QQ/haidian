@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "57deb91003991e54d4e2b58ad9f45698fcdde78d62972053bfef64393ecd16ba"
+      "sha256": "4b0bd987c5e0ac7a1d2cb2e394c98deea85eba913903447d0e71f566e468aff7"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "360f8b7793659447279f18806bb180e2c6d7fe0892f557b55c79d0bdb5503ff5"
+      "sha256": "592e63c312b6f8318bc8c47628045b584a9812eb36d8062d255b6e5cfe28bbe6"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "3bf8e9e4539a2b1e5bbaf90e8da3ba7325e56c21b1406ec17fb2c027d4e606d2"
+      "sha256": "6c676e0b483ae13cada2948836ea5d92dbc22e1980fc24a239229aaffeee1f23"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d502af7aa4f3aa5d1bdd14d921333f801cf1ae402155066572913601a28e1dde"
+      "sha256": "d2282e63f195b03e2b78bb472bf9cd8545acf4eff915f89577d2bc100f582f56"
     },
     {
       "path": "report/proposal.en.html",
@@ -375,7 +375,7 @@
       "title_zh": "京张气脉 · 风水AI · 画廊封面",
       "title_en": "Jing-Zhang Qi-Pulse · Fengshui AI · gallery cover",
       "description_zh": "宣纸+金脉体系的确定性导出：金脊曲线取自 roads.geojson 真实绿脊中心线，罗盘×人字形标志与品牌图件同源；由 matplotlib 渲染，中文使用 Noto Sans SC（OFL-1.1 子集嵌入）、英文使用 DejaVu Sans，无生成式图像素材。概念表达，非空间依据。",
-      "description_en": "A deterministic export of the rice-paper-and-gold system: the gold spine is the real greenway centreline from roads.geojson; the compass-and-herringbone mark shares construction with the brand figure. Rendered by matplotlib with system fonts only (Microsoft YaHei, DejaVu Sans); no generative image material. Conceptual expression, not spatial evidence."
+      "description_en": "A deterministic export of the rice-paper-and-gold system: the gold spine is the real greenway centreline from roads.geojson; the compass-and-herringbone mark shares construction with the brand figure. Rendered by matplotlib with system fonts only (Noto Sans SC (embedded subset), DejaVu Sans); no generative image material. Conceptual expression, not spatial evidence."
     },
     {
       "path": "assets/media/audio-guide-zh.md",
@@ -511,11 +511,11 @@
       "path": "assets/screenshots/cjk-control-tofu-without-font.png",
       "role": "asset",
       "required": false,
-      "sha256": "b89e8c450f05ff4d099c7cab28b9edb5f0db8bf8baf11203afb605ce6a2f4d4c",
+      "sha256": "65a3fac381c679de2375d71c52cfc6e05eee5bab1daf2f47dd1ea84ce3b4cf87",
       "title_zh": "对照：剥离嵌入字体后的方框渲染",
       "title_en": "Control: tofu rendering with embedded font stripped",
-      "description_zh": "Chromium headless 实渲截图，证明包内 HTML 在无系统 CJK 字体环境下经嵌入字体正确渲染中文。",
-      "description_en": "Chromium headless screenshot proving package HTML renders Chinese correctly via embedded fonts on systems without CJK fonts."
+      "description_zh": "对照样张：v1.4 版 report/proposal.html（无内联字体）在无 CJK 字体环境下的渲染，中文呈方框——证明 v1.5 内联字体子集的必要性；当前版渲染对照见 visual 页。",
+      "description_en": "Control capture: v1.4 report/proposal.html (no inline font) rendered in a CJK-font-less environment shows tofu boxes — demonstrating why the v1.5 inline subset is required."
     },
     {
       "path": "visual/assets/fonts.css",
@@ -557,7 +557,7 @@
       "title_zh": "无障碍色觉核验结果（四类色觉 × 55 色对）",
       "title_en": "Accessibility colour-check results",
       "description_zh": "11 色语义色板在正常/绿盲/红盲/蓝盲条件下的 CIEDE2000 两两核验逐对结果；36 对例外与整改说明见正文。",
-      "description_en": "Pairwise CIEDE2000 results of the 11-colour palette under four vision conditions; 38 exceptions with remediation notes in the proposal.",
+      "description_en": "Pairwise CIEDE2000 results of the 11-colour palette under four vision conditions; 36 exceptions with remediation notes in the proposal.",
       "sha256": "5b2cdae45e22935272fca16abd66df3275fa48bd56caff8b63688591fe277918"
     }
   ],

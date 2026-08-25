@@ -56,8 +56,8 @@
 
 | 路径 | 规格 / 生成链 | 许可与来源 | 限制及使用边界 |
 | --- | --- | --- | --- |
-| `assets/media/audio-guide-zh.mp3` | 约 3 分钟；Windows 离线语音合成（Huihui 音色）转码 mp3 | 参与者原创文本 + 本地合成语音；无商业配乐 | 概念导览音频，非真人播音；可随包公开分发 |
-| `assets/media/audio-guide-en.mp3` | 约 3 分钟；Windows 离线语音合成（Zira 音色）转码 mp3 | 同上 | 同上 |
+| `assets/media/audio-guide-zh.mp3` | 约 2.2 分钟；Windows 离线语音合成（Huihui 音色）转码 mp3 | 参与者原创文本 + 本地合成语音；无商业配乐 | 概念导览音频，非真人播音；可随包公开分发 |
+| `assets/media/audio-guide-en.mp3` | 约 2.2 分钟；Windows 离线语音合成（Zira 音色）转码 mp3 | 同上 | 同上 |
 | `assets/media/audio-guide-zh.vtt` / `en.vtt` | WebVTT 格式双语逐句时间轴字幕 | 参与者原创文本；CC-BY-4.0 | 无限制 |
 | `assets/media/experience.mp4` | 24 秒；Matplotlib 逐帧渲染 + 本地 ffmpeg H.264 (yuv420p) 无声编码 | 参与者原创概念动画；无第三方视频 | 概念氛围视频，非工程三维渲染；可随包分发 |
 | `assets/media/experience.vtt` / `en.vtt` | 体验视频双语字幕 | 参与者原创文本；CC-BY-4.0 | 无限制 |
