@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
-  "as_of": "2026-08-24",
+  "as_of": "2026-08-25",
   "status": "not_fully_cleared_component_licenses_declared_with_complete_contributor_file_inventory",
   "file_inventory": "visual/assets/file-rights-inventory.json",
-  "file_inventory_path_count": 152,
+  "file_inventory_path_count": 157,
   "file_inventory_coverage_ratio": 1.0,
   "independent_file_level_audit_completed": false,
   "purpose_zh": "把公开评审、内容复用、代码复用、OSM 数据库衍生、第三方引用和专业实施分开判断。",
@@ -13,43 +13,80 @@
       "use_id": "USE-01",
       "use": "Repository validation, review, archive and display",
       "decision": "allowed",
-      "conditions": ["retain attribution", "retain provisional and G0 notices", "preserve component licence notices"]
+      "conditions": [
+        "retain attribution",
+        "retain provisional and G0 notices",
+        "preserve component licence notices"
+      ]
     },
     {
       "use_id": "USE-02",
       "use": "Reuse or adaptation of contributor-owned content",
       "decision": "allowed_under_CC-BY-4.0",
-      "conditions": ["attribute xyh202131", "indicate changes", "do not imply approval or field evidence"]
+      "conditions": [
+        "attribute xyh202131",
+        "indicate changes",
+        "do not imply approval or field evidence"
+      ]
     },
     {
       "use_id": "USE-03",
       "use": "Reuse of contributor-owned code",
       "decision": "allowed_under_MIT",
-      "conditions": ["retain MIT notice"]
+      "conditions": [
+        "retain MIT notice"
+      ]
     },
     {
       "use_id": "USE-04",
       "use": "Reuse of OSM-derived database content",
       "decision": "allowed_under_ODbL-1.0",
-      "conditions": ["attribute OpenStreetMap contributors", "apply ODbL share-alike where triggered", "do not call the layer official"]
+      "conditions": [
+        "attribute OpenStreetMap contributors",
+        "apply ODbL share-alike where triggered",
+        "do not call the layer official"
+      ]
     },
     {
       "use_id": "USE-05",
       "use": "Reproduction of cited third-party pages, images, logos or document layouts",
       "decision": "not_granted",
-      "conditions": ["obtain permission from the original rightsholder"]
+      "conditions": [
+        "obtain permission from the original rightsholder"
+      ]
     },
     {
       "use_id": "USE-06",
       "use": "Professional deepening, field pilot or construction",
       "decision": "content_may_be_reused_but_execution_not_authorized",
-      "conditions": ["obtain official geometry and controls", "complete H01-H07", "professional sign-off", "site and community verification", "separate contracts and approvals"]
+      "conditions": [
+        "obtain official geometry and controls",
+        "complete H01-H07",
+        "professional sign-off",
+        "site and community verification",
+        "separate contracts and approvals"
+      ]
     },
     {
       "use_id": "USE-07",
       "use": "Reuse or redistribution of the complete package as one cleared bundle",
       "decision": "blocked_pending_component_terms_and_independent_audit",
-      "conditions": ["verify every component term against the exact manifest", "complete independent file-level clearance", "complete applicable trademark review"]
+      "conditions": [
+        "verify every component term against the exact manifest",
+        "complete independent file-level clearance",
+        "complete applicable trademark review"
+      ]
+    },
+    {
+      "use_id": "USE-08",
+      "use": "Reuse or adaptation of the R59 deterministic concept cover, silent video, captions, transcript and four-state contract",
+      "decision": "allowed_under_CC-BY-4.0_for_contributor_owned_components_only",
+      "conditions": [
+        "attribute xyh202131",
+        "indicate changes",
+        "retain conceptual and editorial-duration disclosures",
+        "do not imply site evidence, public opinion, accessibility compliance, approval, performance, official geometry, service result or maturity"
+      ]
     }
   ],
   "non_equivalence": "An open licence is permission to reuse an artifact, not evidence that its spatial claims are official, its service works, or its proposal is approved."

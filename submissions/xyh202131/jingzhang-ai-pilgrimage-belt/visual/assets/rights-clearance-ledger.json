@@ -1,16 +1,16 @@
 {
   "schema_version": "2.0",
-  "as_of": "2026-08-24",
+  "as_of": "2026-08-25",
   "status": "not_fully_cleared_component_licenses_and_contributor_file_inventory_complete",
   "legal_opinion_provided": false,
   "independent_file_level_audit_completed": false,
   "independent_trademark_review_completed": false,
   "contributor_file_inventory_complete": true,
   "contributor_file_inventory": "visual/assets/file-rights-inventory.json",
-  "contributor_file_inventory_path_count": 152,
+  "contributor_file_inventory_path_count": 157,
   "contributor_file_inventory_coverage_ratio": 1.0,
-  "summary_zh": "投稿方已逐路径自查当前分发包：自有内容 CC BY 4.0、自有代码 MIT；OSM 衍生数据库单独 ODbL；Noto Sans SC 子集按 OFL 1.1 嵌入 PDF 与离线 HTML；第三方引用与仓库临时输入不被重新许可；模型生成媒体已清退。该清单是投稿方自查，不冒充独立法律审计。",
-  "summary_en": "The contributor has inventoried every current distribution path: contributor-owned content is CC BY 4.0, contributor-owned code is MIT, the OSM-derived database remains separately ODbL, Noto Sans SC subsets are embedded in PDF and offline HTML under OFL 1.1, third-party citations and repository provisional inputs are not relicensed, and generated media has been removed. This is a contributor inventory, not an independent legal audit.",
+  "summary_zh": "投稿方已逐路径自查当前分发包：自有内容及第59轮确定性概念媒体采用 CC BY 4.0，自有代码 MIT；OSM 衍生数据库单独 ODbL；Noto Sans SC 按 OFL 1.1 使用；第三方引用与仓库临时输入不被重新许可。新增媒体未调用模型 API，不含音频，也不把概念表达写成现场证据。该清单仍不是独立法律审计。",
+  "summary_en": "The contributor has inventoried every current distribution path. Contributor-owned content and the deterministic R59 concept media are CC BY 4.0; contributor code is MIT; OSM-derived database content remains ODbL; Noto Sans CJK SC remains OFL 1.1; citations and provisional repository inputs are not relicensed. The new media used no model API, contains no audio, and is not field evidence. This remains a contributor inventory, not an independent legal audit.",
   "components": [
     {
       "component_id": "RIGHTS-CONTENT",
@@ -63,17 +63,19 @@
     },
     {
       "component_id": "RIGHTS-FILE-INVENTORY",
-      "scope": "Every path in the current submission distribution tree",
+      "scope": "Every one of the 157 paths in the current submission distribution tree",
       "license": "component_specific",
       "status": "contributor_self_inventory_complete",
       "notice": "visual/assets/file-rights-inventory.json",
       "limit": "The inventory records provenance and licence decisions but is not an independent legal opinion, trademark search or professional rights audit."
     },
     {
-      "component_id": "RIGHTS-GENERATED-MEDIA",
-      "scope": "Prior optional generated image, video and audio paths",
-      "license": "not_applicable_after_removal",
-      "status": "removed_from_final_package"
+      "component_id": "RIGHTS-R59-CONCEPT-MEDIA",
+      "scope": "assets/media/four-state-cover.webp, four-state-experience.mp4, its bilingual VTT and transcript, plus the explanatory four-state contract",
+      "license": "CC-BY-4.0 for contributor-authored content",
+      "status": "component_licence_declared_not_independently_cleared",
+      "method": "Deterministic local vector/Pillow/Chrome/FFmpeg production; no network, external media, model API, voice, music or audio.",
+      "limit": "Conceptual explanatory presentation only; not site, public-opinion, accessibility, approval, performance, location, duration, official-geometry, service-result or maturity evidence."
     }
   ],
   "release_decisions": {
@@ -129,7 +131,7 @@
       {
         "gate_id": "PUB-RIGHT-07-GENERATED-CONTENT",
         "required_evidence": "tool/model, prompt or production method, output terms, edit history, disclosure label and non-evidence statement for each generated public asset",
-        "current_state": "not_applicable_current_generated_media_removed_future_asset_gate_open",
+        "current_state": "current_R59_deterministic_contributor_media_disclosed_no_model_API_future_public_asset_gate_open",
         "accepted_count": 0
       },
       {
@@ -147,5 +149,14 @@
     ],
     "release_rule": "A repository review, PR merge, current component licence declaration or contributor inventory does not authorize a public installation, permanent landmark, merchandise, external campaign or professional implementation. All applicable items must be accepted for the exact version and use context."
   },
-  "truth_boundary": "Rights clearance does not establish field truth, planning approval, accessibility compliance, service performance, G1 maturity or professional acceptance."
+  "truth_boundary": "Rights clearance does not establish field truth, planning approval, accessibility compliance, service performance, G1 maturity or professional acceptance.",
+  "media_toolchain_disclosure": {
+    "python": "3.14.7",
+    "pillow": "12.2.0",
+    "chrome_version_and_sha256": "151.0.7922.174 / b6d40f55e48e61760335d18f46abcec929e1a11b8330e7f2b501037584af4aa4",
+    "ffmpeg_version_and_sha256": "6.1.1-essentials_build-www.gyan.dev / 0c4760db80d73a6ddc05c828a20c1b51c84bf61f4fcecff17f759c3edab800fb",
+    "ffprobe_version_and_sha256": "6.1.1-essentials_build-www.gyan.dev / 01b99c76134e5c7a6b3f40f1d6c1e50f1084d5d5d763dfec1fde66bb1b575346",
+    "noto_source_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+    "redistribution": "Tool binaries and the source OTF are not redistributed; their licences remain independent."
+  }
 }

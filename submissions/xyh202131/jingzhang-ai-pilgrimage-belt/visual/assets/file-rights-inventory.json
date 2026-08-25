@@ -1,19 +1,23 @@
 {
   "schema_version": "1.0.0",
-  "inventory_id": "JZ-FILE-RIGHTS-INVENTORY-R58",
-  "as_of": "2026-08-24",
+  "inventory_id": "JZ-FILE-RIGHTS-INVENTORY-R59",
+  "as_of": "2026-08-25",
   "status": "contributor_inventory_complete_independent_audit_open",
   "scope": "Every file in the current distribution tree, including this inventory; path coverage is recalculated before final manifest refresh.",
-  "path_count": 152,
-  "covered_path_count": 152,
+  "path_count": 157,
+  "covered_path_count": 157,
   "coverage_ratio": 1.0,
   "artifact_class_counts": {
     "citation_metadata": 2,
     "composite_publication": 4,
+    "contributor_caption_track": 1,
     "contributor_code": 1,
     "contributor_concept_geometry": 6,
-    "contributor_document_or_structured_evidence": 46,
+    "contributor_document_or_structured_evidence": 47,
+    "contributor_media_poster": 1,
     "contributor_rights_metadata": 1,
+    "contributor_silent_concept_video": 1,
+    "contributor_transcript_and_rights_note": 1,
     "contributor_vector_figure": 40,
     "deterministic_raster_figure": 44,
     "embedded_font_subset_and_wrapper": 1,
@@ -27,7 +31,8 @@
     "trademark_search": false,
     "public_or_professional_reuse": "blocked_pending_terms_and_independent_audit",
     "new_model_generated_media_count": 0,
-    "rule": "A contributor inventory and component licence declaration are not independent clearance and do not prove official data, approval, field performance or third-party consent."
+    "rule": "A contributor inventory and component licence declaration are not independent clearance and do not prove official data, approval, field performance, public response, accessibility compliance or third-party consent.",
+    "contributor_authored_deterministic_media_path_count": 4
   },
   "entries": [
     {
@@ -187,36 +192,36 @@
       "path": "assets/figures/four-state-journey.en.png",
       "distribution_decision": "include_with_declared_boundary",
       "artifact_class": "deterministic_raster_figure",
-      "authorship_or_source": "Contributor-authored SVG/concept content rasterized locally; no model-generated media retained",
+      "authorship_or_source": "Contributor-authored SVG rasterized locally with Chrome 151.0.7922.174 and registered Noto Sans CJK SC; no model-generated media",
       "license_or_handling": "CC BY 4.0 for contributor-authored visual content",
-      "third_party_obligation": "Keep conceptual, G0, provisional and not-to-scale labels where applicable",
+      "third_party_obligation": "Keep conceptual, G0, provisional, not-to-scale and recovery-not-authorization boundaries; source OTF is not redistributed",
       "rights_status": "contributor_declared"
     },
     {
       "path": "assets/figures/four-state-journey.en.svg",
       "distribution_decision": "include_with_declared_boundary",
       "artifact_class": "contributor_vector_figure",
-      "authorship_or_source": "Submission author with AI-assisted deterministic SVG drafting",
+      "authorship_or_source": "Submission-author deterministic SVG concept drawing; no external image, site geometry or model API",
       "license_or_handling": "CC BY 4.0 for contributor-authored visual content",
-      "third_party_obligation": "Keep conceptual, G0, provisional and not-to-scale labels where applicable",
+      "third_party_obligation": "Keep conceptual, G0, provisional, not-to-scale and recovery-not-authorization boundaries",
       "rights_status": "contributor_declared"
     },
     {
       "path": "assets/figures/four-state-journey.png",
       "distribution_decision": "include_with_declared_boundary",
       "artifact_class": "deterministic_raster_figure",
-      "authorship_or_source": "Contributor-authored SVG/concept content rasterized locally; no model-generated media retained",
+      "authorship_or_source": "Contributor-authored SVG rasterized locally with Chrome 151.0.7922.174 and registered Noto Sans CJK SC; no model-generated media",
       "license_or_handling": "CC BY 4.0 for contributor-authored visual content",
-      "third_party_obligation": "Keep conceptual, G0, provisional and not-to-scale labels where applicable",
+      "third_party_obligation": "Keep conceptual, G0, provisional, not-to-scale and recovery-not-authorization boundaries; source OTF is not redistributed",
       "rights_status": "contributor_declared"
     },
     {
       "path": "assets/figures/four-state-journey.svg",
       "distribution_decision": "include_with_declared_boundary",
       "artifact_class": "contributor_vector_figure",
-      "authorship_or_source": "Submission author with AI-assisted deterministic SVG drafting",
+      "authorship_or_source": "Submission-author deterministic SVG concept drawing; no external image, site geometry or model API",
       "license_or_handling": "CC BY 4.0 for contributor-authored visual content",
-      "third_party_obligation": "Keep conceptual, G0, provisional and not-to-scale labels where applicable",
+      "third_party_obligation": "Keep conceptual, G0, provisional, not-to-scale and recovery-not-authorization boundaries",
       "rights_status": "contributor_declared"
     },
     {
@@ -796,6 +801,42 @@
       "rights_status": "contributor_declared"
     },
     {
+      "path": "assets/media/four-state-cover.webp",
+      "distribution_decision": "include_with_declared_boundary",
+      "license_or_handling": "CC BY 4.0 for contributor-authored conceptual media",
+      "rights_status": "contributor_declared",
+      "artifact_class": "contributor_media_poster",
+      "authorship_or_source": "Submission-author conceptual vector composition rasterized locally with Pillow and Noto Sans CJK SC; no external image or model API",
+      "third_party_obligation": "Retain conceptual, G0, provisional and not-to-scale labels; source font and build tools are not redistributed and retain separate licences"
+    },
+    {
+      "path": "assets/media/four-state-experience.md",
+      "distribution_decision": "include_with_declared_boundary",
+      "license_or_handling": "CC BY 4.0 for contributor-authored conceptual media",
+      "rights_status": "contributor_declared",
+      "artifact_class": "contributor_transcript_and_rights_note",
+      "authorship_or_source": "Submission-author bilingual shot transcript, method, source, accessibility, rights and limitation record",
+      "third_party_obligation": "Do not detach the method and non-evidence limitations when presenting or adapting the media"
+    },
+    {
+      "path": "assets/media/four-state-experience.mp4",
+      "distribution_decision": "include_with_declared_boundary",
+      "license_or_handling": "CC BY 4.0 for contributor-authored conceptual media",
+      "rights_status": "contributor_declared",
+      "artifact_class": "contributor_silent_concept_video",
+      "authorship_or_source": "Submission-author deterministic Pillow frames encoded locally with FFmpeg; no external media, model API, voice, music or audio",
+      "third_party_obligation": "Use with the declared poster, bilingual VTT and transcript; retain conceptual and 54-second-editorial-only boundary; FFmpeg binary is not redistributed"
+    },
+    {
+      "path": "assets/media/four-state-experience.vtt",
+      "distribution_decision": "include_with_declared_boundary",
+      "license_or_handling": "CC BY 4.0 for contributor-authored conceptual media",
+      "rights_status": "contributor_declared",
+      "artifact_class": "contributor_caption_track",
+      "authorship_or_source": "Submission-author bilingual caption text aligned to the package-authored shot contract",
+      "third_party_obligation": "Keep all eight bilingual cues and the final G0/NO-GO/provisional/real-results-zero boundary with the video"
+    },
+    {
       "path": "assumptions.json",
       "distribution_decision": "include_with_declared_boundary",
       "artifact_class": "contributor_document_or_structured_evidence",
@@ -835,36 +876,36 @@
       "path": "drawings/a0-boards.en.pdf",
       "distribution_decision": "include_with_declared_boundary",
       "artifact_class": "composite_publication",
-      "authorship_or_source": "Submission author with AI-assisted deterministic layout and contributor-authored diagrams",
+      "authorship_or_source": "Submission author with AI-assisted deterministic layout, contributor-authored diagrams and retained R59 four-state storyboard",
       "license_or_handling": "CC BY 4.0 for contributor-authored publication content; Noto Sans SC glyph output rasterized at build time under SIL OFL 1.1; no font program embedded",
-      "third_party_obligation": "Retain source, rights, G0 and provisional warnings; independent reuse clearance remains absent",
+      "third_party_obligation": "Retain source, rights, G0, provisional, editorial-duration and recovery-not-authorization warnings; independent reuse clearance remains absent",
       "rights_status": "component_licences_declared"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "distribution_decision": "include_with_declared_boundary",
       "artifact_class": "composite_publication",
-      "authorship_or_source": "Submission author with AI-assisted deterministic layout and contributor-authored diagrams",
+      "authorship_or_source": "Submission author with AI-assisted deterministic layout, contributor-authored diagrams and retained R59 four-state storyboard",
       "license_or_handling": "CC BY 4.0 for contributor-authored publication content; Noto Sans SC glyph output rasterized at build time under SIL OFL 1.1; no font program embedded",
-      "third_party_obligation": "Retain source, rights, G0 and provisional warnings; independent reuse clearance remains absent",
+      "third_party_obligation": "Retain source, rights, G0, provisional, editorial-duration and recovery-not-authorization warnings; independent reuse clearance remains absent",
       "rights_status": "component_licences_declared"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
       "distribution_decision": "include_with_declared_boundary",
       "artifact_class": "composite_publication",
-      "authorship_or_source": "Submission author with AI-assisted deterministic layout and contributor-authored diagrams",
+      "authorship_or_source": "Submission author with AI-assisted deterministic layout, contributor-authored diagrams and retained R59 four-state storyboard",
       "license_or_handling": "CC BY 4.0 for contributor-authored publication content; Noto Sans SC glyph output rasterized at build time under SIL OFL 1.1; no font program embedded",
-      "third_party_obligation": "Retain source, rights, G0 and provisional warnings; independent reuse clearance remains absent",
+      "third_party_obligation": "Retain source, rights, G0, provisional, editorial-duration and recovery-not-authorization warnings; independent reuse clearance remains absent",
       "rights_status": "component_licences_declared"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "distribution_decision": "include_with_declared_boundary",
       "artifact_class": "composite_publication",
-      "authorship_or_source": "Submission author with AI-assisted deterministic layout and contributor-authored diagrams",
+      "authorship_or_source": "Submission author with AI-assisted deterministic layout, contributor-authored diagrams and retained R59 four-state storyboard",
       "license_or_handling": "CC BY 4.0 for contributor-authored publication content; Noto Sans SC glyph output rasterized at build time under SIL OFL 1.1; no font program embedded",
-      "third_party_obligation": "Retain source, rights, G0 and provisional warnings; independent reuse clearance remains absent",
+      "third_party_obligation": "Retain source, rights, G0, provisional, editorial-duration and recovery-not-authorization warnings; independent reuse clearance remains absent",
       "rights_status": "component_licences_declared"
     },
     {
@@ -1145,6 +1186,15 @@
       "license_or_handling": "CC BY 4.0",
       "third_party_obligation": "Self-inclusion records handling but is not an independent legal audit",
       "rights_status": "contributor_declared"
+    },
+    {
+      "path": "visual/assets/four-state-experience-contract.json",
+      "distribution_decision": "include_with_declared_boundary",
+      "license_or_handling": "CC BY 4.0 for contributor-authored conceptual media",
+      "rights_status": "contributor_declared",
+      "artifact_class": "contributor_document_or_structured_evidence",
+      "authorship_or_source": "Submission-author explanatory shot and QA contract; concept relations only",
+      "third_party_obligation": "Not a field record, timing model, approval, performance result or maturity gate; preserve forbidden-inference rules"
     },
     {
       "path": "visual/assets/g0-offline-enterprise-service-baseline.json",

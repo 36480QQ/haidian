@@ -1386,6 +1386,46 @@
         "engineering design or project authorization",
         "field or operating result"
       ]
+    },
+    {
+      "id": "SOURCE-JZ-FOUR-STATE-EXPERIENCE-R59",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-FOUR-STATE-EXPERIENCE-R59",
+      "title": "第59轮四态空间体验概念媒体与静态回退",
+      "publisher": "xyh202131",
+      "path": "assets/media/four-state-experience.md",
+      "source_type": "submission_authored",
+      "accessed_date": "2026-08-25",
+      "authority_level": "submission_author",
+      "collection_method": "Local deterministic vector and Pillow frame synthesis from package-authored diagrams and visual/assets/four-state-experience-contract.json; Chrome raster export and FFmpeg H.264 encoding; no network, model API, external media, audio or field data.",
+      "temporal_scope": "The 54 seconds are editorial pacing only and do not represent a real recovery or service duration.",
+      "spatial_scope": "Conceptual relation diagrams for three non-interchangeable prototypes; no coordinates, official boundary, site condition, surveyed dimension or approved design.",
+      "rights_or_reuse": "contributor_owned_concept_media_CC_BY_4_0; build tools and font remain separately licensed and are not redistributed; package-wide reuse remains blocked pending terms and independent audit",
+      "transformations": [
+        "Recomposed retained contributor-authored four-state and prototype relations into a cover, silent bilingual sequence, captions, transcript and static fallback.",
+        "Encoded 1350 deterministic 1920x1080 frames as a 54-second silent H.264 MP4 and retained the static storyboard for no-motion, print and decoding-failure access."
+      ],
+      "known_limitations": [
+        "Conceptual presentation only; not site condition, public opinion, accessibility compliance, approval, performance, location, real duration, official geometry, service result or maturity evidence.",
+        "Not a central-registry or approved-formal fact source; independent legal/file-level clearance and trademark review remain absent."
+      ],
+      "usable_for": [
+        "explanatory presentation",
+        "repository review",
+        "internal package consistency checks"
+      ],
+      "not_usable_for": [
+        "site condition",
+        "public opinion",
+        "accessibility compliance",
+        "approval",
+        "performance",
+        "location",
+        "real duration",
+        "official geometry",
+        "service result",
+        "maturity evidence"
+      ],
+      "license": "CC-BY-4.0"
     }
   ]
 }

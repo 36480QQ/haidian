@@ -1,12 +1,12 @@
 {
   "schema_version": "2.0",
-  "as_of": "2026-08-24",
-  "source_record_count": 48,
+  "as_of": "2026-08-25",
+  "source_record_count": 49,
   "third_party_media_redistributed": 0,
   "generated_media_paths": 0,
   "file_rights_inventory": "visual/assets/file-rights-inventory.json",
   "contributor_file_inventory_complete": true,
-  "contributor_file_inventory_path_count": 152,
+  "contributor_file_inventory_path_count": 157,
   "contributor_file_inventory_coverage_ratio": 1.0,
   "independent_file_level_audit_completed": false,
   "component_notices": [
@@ -300,6 +300,13 @@
       "governance_status": "participant_collected_citation",
       "claim_capacity": "bounded_background_or_case_comparison_only",
       "rights_use": "citation_only"
+    },
+    {
+      "source_id": "SOURCE-JZ-FOUR-STATE-EXPERIENCE-R59",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "conceptual_explanatory_presentation_only",
+      "rights_use": "see_component_notice"
     }
-  ]
+  ],
+  "contributor_authored_deterministic_media_paths": 4
 }
