@@ -51,13 +51,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "6308faa049e0d79744a7ddc126e57eddedf74f6ae5faade6ed27a9bc5fca00c5"
+      "sha256": "5c80cee92e21bca7dc7294156a3c4e2ae54a5b07f1e1dceae6d880d844f8a805"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "814814c6290e8216b9cb5e4f96d51aa9436309d679ba4e119dd2aafb9ad9e018"
+      "sha256": "e6176e70cbcb3dac18e47d022285f5c54408d778ac27a7f3516ae246f7a8926e"
     },
     {
       "path": "metrics.json",
@@ -81,7 +81,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e0c8f4118eeea1ccab40b5e0554aa32853504275c5ea57dec25247ed68666d81"
+      "sha256": "6ac18d1587a8a15424c12465a2385790bb667ebf3a059c59820939f727a1644f"
     },
     {
       "path": "risk.json",
@@ -98,7 +98,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "069cb217c47c0722ff63e43f7623d4d97347d5e9019639955fffcc832b033f4c"
+      "sha256": "b9898a06977bc0bff92609424c218f85f92bd1d5ccf1db6852bd83740fe1ed89"
     },
     {
       "path": "compliance_matrix.json",
@@ -144,7 +144,7 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "3bba3433f4c7548a9e45ec14c2e8e70e1b7453768a61dc37515707bc77e24d74"
+      "sha256": "3f50d9bef2f3318f45edab9c90fb3089556028275913268e9f47b3e01a36d63d"
     },
     {
       "path": "visual/assets/data-gap-closure-register.json",
@@ -227,7 +227,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "408e87ff937584e790cb6b85377d7377a38a5bae0b69e54c1a697744293a37f2"
+      "sha256": "a00aac2068b45503b3301346757b7417a00dcbe4e1b5179c7948a2dfc7431fc0"
     },
     {
       "path": "visual/assets/file-rights-inventory.json",
@@ -255,40 +255,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f7b252553ddb678cbc10e4d5a2970f7e328a91bae53bfa0824e791142645c8ac"
+      "sha256": "402daec08c1b41d0ef4d24ccc7975f37393131c65e526eaaf96e75d2033f5c53"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "ba187c22a6e2a6c88fccc4e5968174f49c32ac861ed0027c63693c709aaa8025"
+      "sha256": "ee2292cbcfca5d215117a32b12a0d5dff18a3750a47f9ba0d50bd2fe06ceb67d"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f994bf236d8a344049fb99868cff94fd0f4ebd8dd37d4ef4f441efa1e0a4bb02"
+      "sha256": "910db1ed55a4e8ca998c89f80111446ef3b2cd7320d8aebe95db79799d6d438c"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "8f25771d6b943458805cf4bfc7db8038c5c5ea281d546352538da0f6076c93a5"
+      "sha256": "3f02956a3f4446753372023659f4a94bb8a4534ebb64e3218c7e06f3a2dc2a7b"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "5fbc7f86c920cff1f3064fa81f4285ac2d9e5f2c343d0c3d32b3d9b2461ba0b8"
+      "sha256": "4e416e6a477f92ca4ad25436e86296c48636837118e13784e25dd9b0551b5a13"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "cf0b052c53e27f1de4d4c5745a53b74c9a2366e4127611cf06253f009d4759f2"
+      "sha256": "ff7bdfe056d418b6ae1b4843e120e9e694e3f53bbd84102463110a3b27f80aea"
     },
     {
       "path": "visual/assets/offline-cjk-font.css",
@@ -296,7 +296,7 @@
       "required": true,
       "language": "neutral",
       "role_detail": "offline_cjk_font_stylesheet_and_woff2_subset",
-      "sha256": "ced32ed62f9d8a9007d52378c019fc511687a3663c60028f99174e6c7babd9ae"
+      "sha256": "b7059328773c681a66cac05c39900ed58a98d14ae2c8ad80b9b0759585139835"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -436,7 +436,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b5c4b3265e76e0f0e0cd6e9ffd07795e3a950dec7fad4a593c5c63473174fdfc"
+      "sha256": "0d3cad65ea7b24862517e9643480790ca11c500234db0b186044159de2a3f850"
     },
     {
       "path": "report/proposal.en.html",
@@ -444,7 +444,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c33609249e68973a68c9f9a8ec1ed93543dae7aae26f346e0af7c339a273cf63"
+      "sha256": "a9f19b988ab5a4746fd9a337d493157ca5d16298ab1566c8b3aa439535c04829"
     },
     {
       "path": "visual/index.en.html",
@@ -452,7 +452,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "24a771f80e9d19004abfae05bacfa8b8e60f9cf9e88a07221d43cd73e26e2651"
+      "sha256": "fa14b3cfa5690d9b73bec7f7b38e75c43fd48bf488536974c7661aad24db2a63"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -460,7 +460,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "4c0f273492f21c398904f7ff904c7354c996ce5a8cbaabed6bb28b19e6f3fee4"
+      "sha256": "a210e67d65b4cb930a97baee2ce4dee19014935351e7af7a252cded3e919b539"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -468,7 +468,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "4472306577021d01b80a34ba2a0efb4a94db4b4d7adbd73912c851b43444ca61"
+      "sha256": "0459e69bc50e55d9d4d6ef25b5ea40ef6d2d315d60d9438f0132e4041bb8c8ec"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -956,7 +956,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "评审交接导航：三条时间阅读路线、唯一专业交接候选、证据权威顺序与固定事实边界；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review handoff navigation: three timed reading routes, one professional handoff candidate, evidence authority order and fixed fact boundaries; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "8fb77eda62d27d769e9cec4a660cca1f46af2b46b66c5d4331bbcbde8a451f42"
+      "sha256": "ca1815673a3d1bbf158bdd9c17971adcbebd311758e5a7957b171e41d33fc585"
     },
     {
       "path": "assets/figures/land-use-structure.svg",
@@ -1142,7 +1142,7 @@
       "path": "visual/assets/convergence-baseline.json",
       "role": "evidence_data",
       "required": false,
-      "sha256": "fc95515ff1c626b3c55d451ea004a03a188c65ab2362b26e4ddac7f709a9fc97"
+      "sha256": "d456c2162072dddd9044aabd1a769077361069c6f1048503443e806e97553686"
     },
     {
       "path": "assets/figures/ordinary-life-journey.svg",
@@ -1150,14 +1150,14 @@
       "required": false,
       "language": "zh",
       "role_detail": "editable_figure_source",
-      "sha256": "21b617b54fe1e96591e7cb05d5620bfb622d19500cb2e6cb90e4cea477445111"
+      "sha256": "ff8d3892df4dbb3865a14784b8cd906b54dcbc464332bc444d9b3dfa20784c85"
     },
     {
       "path": "assets/figures/ordinary-life-journey.png",
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "1837863edc71ac1be0b9d60bab4a62a2385f8daea16e02932a47fc43ef61d5f5"
+      "sha256": "baa05057656f191664f52910c34c547c2659f1a64e5d81b0ea344a79975ed349"
     },
     {
       "path": "assets/figures/ordinary-life-journey.en.svg",
@@ -1166,7 +1166,7 @@
       "language": "en",
       "translation_of": "assets/figures/ordinary-life-journey.svg",
       "role_detail": "editable_figure_source",
-      "sha256": "ab271aca49b1ba63ecd79995f3580ab4f434ac64250eaf638077d94746b0ede5"
+      "sha256": "b27dab2416f836e16bc2e3c82a19351c94c6cf0aefa340bf1e76530198f55641"
     },
     {
       "path": "assets/figures/ordinary-life-journey.en.png",
@@ -1174,7 +1174,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/ordinary-life-journey.png",
-      "sha256": "942bf58dc7a4f11631c26010cd91ad29856abc1fb818b75a94a81830531356a7"
+      "sha256": "5666baeb23850e10156a69b10d7b79a5ec1a62dac622be23aad546282cb9b1a1"
     },
     {
       "path": "assets/figures/four-state-journey.svg",
