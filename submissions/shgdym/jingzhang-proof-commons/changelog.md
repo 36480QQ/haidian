@@ -1,5 +1,9 @@
 # 方案迭代记录
 
+## v7.6 - 2026-08-25
+
+- 同步双语`iteration`元数据，首次明确周阿姨为合成人物，并使当前四张生成式核心图的ChatGPT来源记录与版权台账一致；设计方案和图片像素均未修改。
+
 ## v7.5 - 2026-08-25
 
 - 仅修正四张核心生成式概念图的来源登记：补录 OpenAI image generation in ChatGPT、生成日期与各自 generation record ID，并继续将未暴露的具体模型标识保留为 `unknown`。

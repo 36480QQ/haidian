@@ -9,7 +9,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 tracks: ["civic-agent-governance", "jingzhang-heritage-narrative", "ai-origin-community"]
 scenarios: ["public-safety-operations-review", "robot-delivery-low-speed", "ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide"]
-iteration: "v7.2"
+iteration: "v7.5"
 ---
 
 # X京张 X JINGZHANG
@@ -67,7 +67,7 @@ iteration: "v7.2"
 
 任务书要求研究大钟寺轨道站一体化与四象限步行联系。方案不把未经现场核验的断点写成事实，而提出一个可共同开发的问题：**72岁的非数字用户，怎样在复杂到达环境中获得连续、可理解、有人支持的无障碍服务？** 这不是交给技术团队的一张需求单，而是一项由使用者持续参与定义的城市任务。[source:OFFICIAL-ANNOUNCEMENT] [data:visual/assets/lived-lifecycle.json]
 
-在众智园，周阿姨、轮椅使用者代表、服务人员和开发者先用可移动路缘、停靠样带和人群标记共同布置工况；使用者决定转弯空间、等待位置和“改善”的判断，工程师再选择导航、机器人或设施调整等候选工具。第一次原型失败后，公众不只提交意见，而是移动停靠位、改写围观条件并参加第二轮测试。
+在众智园，合成人物周阿姨、轮椅使用者代表、服务人员和开发者先用可移动路缘、停靠样带和人群标记共同布置工况；使用者决定转弯空间、等待位置和“改善”的判断，工程师再选择导航、机器人或设施调整等候选工具。第一次原型失败后，公众不只提交意见，而是移动停靠位、改写围观条件并参加第二轮测试。
 
 到AI原点，方法、接口和限制被放到公共原型长桌。另一支团队可以复现并修改，高校人员解释算法边界，社区成员核对问题有没有在转译中走样。进入大钟寺后，周阿姨发现设备虽未碰撞，停靠与围观仍影响轮椅转弯；现场维持人工服务，这项发现随即成为下一轮共同开发任务。终点不是产品通过，而是城市获得了更准确的问题、开放的方法和一群能继续修改它的人。**她不是在试用一个已经完成的产品，而是参与了它的完成。**[data:visual/assets/lived-lifecycle.json] [data:visual/assets/x-lifecycle-valid-example.json]
 
@@ -425,7 +425,7 @@ VI执行规范固定了标志构造、最小净空、最小数字尺寸、五种
 
 当前参与者可控制的包内阻断项为**无**。详细分类与证据索引见 `visual/assets/formal-review-readiness-closure.json`；该结论只描述当前提交包状态，不构成现场授权、工程结论或审批声明。
 
-正文、图形、设计图层、HTML与PDF由声明的AI agent和本地工具针对本项目生成。四张写实概念图于2026-08-24通过Codex内置OpenAI图像生成工具以纯文本输入重新生成；工具未暴露具体模型标识，因此模型字段如实记录为`unknown`，服务、日期、输入、官方输出条款、后期编辑、原始/成品哈希和再分发状态均已逐项登记。历史来源不明图已完全移除。所有写实图均内嵌“生成式概念图、非现场照片、非规划或实施批准”标识。图纸不加载商业地图、第三方照片、企业Logo或个人数据；离线CJK字体按SIL OFL 1.1嵌入。逐项记录见 `report/copyright_statement.md`。[source:COPYRIGHT-LEDGER] [source:OPENAI-TERMS-20260101] [source:OPENAI-SHARING-POLICY-20221114]
+正文、图形、设计图层、HTML与PDF由声明的AI agent和本地工具针对本项目生成。当前四张写实概念图于2026-08-25在ChatGPT中通过OpenAI image generation生成或转换；会话中使用了参与者提供的概念视觉参考和定向指令。工具未暴露具体图像模型标识，因此该字段如实记录为`unknown`；生成服务、日期、四个generation record ID、输入参考、官方输出条款、后期编辑、成品哈希和再分发状态均已逐项登记。generation record ID只用于会话来源追踪，不是版权、许可、真实性或法律权属证明。所有写实图均内嵌“生成式概念图、非现场照片、非规划或实施批准”标识；总体鸟瞰也不是测绘底图、官方红线、实施方案或必然连续的真实视域。图纸不加载商业地图、第三方照片、企业Logo或个人数据；离线CJK字体按SIL OFL 1.1嵌入。逐项记录见 `report/copyright_statement.md`。[source:COPYRIGHT-LEDGER] [source:OPENAI-TERMS-20260101] [source:OPENAI-SHARING-POLICY-20221114]
 
 本成果是开源概念建议，不能替代规划、建筑、交通、市政、文保、法律、安全、运营和审批专业工作；入库、自检或评审通过均不代表政府背书、实施批准、采购、认证或获奖。
 
