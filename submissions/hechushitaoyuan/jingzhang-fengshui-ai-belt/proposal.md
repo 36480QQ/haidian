@@ -61,7 +61,7 @@ iteration: "v1.5"
 
 ## 统筹研究范围产业与未来城市研究
 
-**总体概念：第二次堪舆**。我们把风水重新定义为"前工业时代的场地性能算法"——藏风聚气是微气候，山环水抱是蓝绿安全格局，龙脉是线性基础设施走廊，阴阳是动静与昼夜的节律。结合中关村科学城人工智能创新高地政策导向 [source:SRC-ZHONGGUANCUN-POLICY]，AI 的任务不是复刻口诀，而是把这些经验法则转译为可计算、可验证、可运营的当代指标：风环境代理模型、步行舒适度、绿视率、人流热度与文化叙事的统一数据层。我们称之为**"气数"（Qi-as-Data）**——让不可见的"气"第一次变得可测量 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+**总体概念：第二次堪舆**。我们把风水重新定义为"前工业时代的场地性能算法"——藏风聚气是微气候，山环水抱是蓝绿安全格局，龙脉是线性基础设施走廊，阴阳是动静与昼夜的节律。结合中关村科学城人工智能创新高地政策导向 [source:SRC-ZHONGGUANCUN-POLICY]，AI 的任务不是复刻口诀，而是把这些经验法则转译为可计算、可验证、可运营的当代指标：风环境代理模型、步行舒适度、绿视率、人流热度与文化叙事的统一数据层。我们称之为**"气数"（Qi-as-Data）**——本方案提出的一套把不可见"气"转为可复算指标的概念转译框架（可测量性以包内登记的方法与临时几何为口径，供专业团队深化验证）[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
 四次转译构成"气数"的工作定义，每一次都指向一个已在城市科学中成熟的量测对象：
 
@@ -165,10 +165,10 @@ iteration: "v1.5"
 
 | 色觉条件 | 色对数 | 中位 ΔE00 | 最小 ΔE00 | 低于阈值 |
 | --- | --- | --- | --- | --- |
-| 正常 | 55 | 38.4 | 15.4 | 6 对 |
-| 绿盲（deuteranopia） | 55 | 33.7 | 4.3 | 10 对 |
-| 红盲（protanopia） | 55 | 33.3 | 7.5 | 11 对 |
-| 蓝盲（tritanopia） | 55 | 36.5 | 9.8 | 11 对 |
+| 正常 | 55 | 37.4 | 15.5 | 6 对 |
+| 绿盲（deuteranopia） | 55 | 35.5 | 4.3 | 10 对 |
+| 红盲（protanopia） | 55 | 32.6 | 7.5 | 9 对 |
+| 蓝盲（tritanopia） | 55 | 37.7 | 9.8 | 11 对 |
 
 残差集中在同族近邻与特定色觉下的跨族近邻（如朱砂↔古铜金、鎏金↔古铜金/琥珀、双黛蓝），属色觉模拟的物理难点；本节不宣称零残差或真人无障碍测试。**图件仍不单靠颜色传义**：每条用地带标注带名与用地代码、场景卡带编号、分期带"一期/二期/三期"文字标注——文字冗余编码覆盖全部类别区分，逐对残差不造成信息丢失。完整例外清单与逐对数值登记于 `visual/assets/a11y-color-check.json`，核验方法与复算路径在 `sources.json` 条目 SRC-A11Y-CHECK-V12 披露。风险章第 ⑤ 条（弱势群体等价通道）与本节互为呼应。
 
@@ -366,7 +366,7 @@ iteration: "v1.5"
 
 三期分期面积同样可从 `phasing.geojson` 复算：一期约 470 公顷（南部，`phasing_phase_1_area_sqm` = 4697245.548）、二期约 345 公顷（中部，`phasing_phase_2_area_sqm` = 3449335.858）、三期约 327 公顷（北部，`phasing_phase_3_area_sqm` = 3266243.98），合计与总体设计范围一致——分期只做任务划分，不新增范围 [metric:phasing_phase_1_area_sqm] [metric:phasing_phase_2_area_sqm] [metric:phasing_phase_3_area_sqm]。
 
-分期核心公共性同样按 EPSG:4548 与临时几何复算：一期绿地率约 26.9%、公共空间率约 19.0% [metric:phase_1_green_ratio] [metric:phase_1_public_space_ratio]。二期对应证据为约 30.0% / 21.0% [metric:phase_2_green_ratio] [metric:phase_2_public_space_ratio]；三期约 32.2% / 22.6% [metric:phase_3_green_ratio] [metric:phase_3_public_space_ratio]。公共性随分期递增，先手南部不以牺牲公共性为代价。
+分期核心公共性同样按 EPSG:4548 与临时几何复算：一期绿地率约 26.9%、公共空间率约 18.7% [metric:phase_1_green_ratio] [metric:phase_1_public_space_ratio]。二期对应证据为约 30.0% / 20.9% [metric:phase_2_green_ratio] [metric:phase_2_public_space_ratio]；三期约 32.2% / 22.4% [metric:phase_3_green_ratio] [metric:phase_3_public_space_ratio]。公共性随分期递增，先手南部不以牺牲公共性为代价。
 
 **公共利益相关指标的证据指针**。下表逐行括注 `metrics.json` 的精确键名，评审者可按键名直接回查公式、来源文件与置信度，无需先读正文；其中绿地率、公共空间率、绿道长度、公共空间要素数、重点区域与三期规模六组与公共利益直接相关，全部属几何可复算类，正式边界发布后按同一公式复算 [metric:green_ratio] [metric:public_space_ratio] [metric:greenway_length_m]（公共空间要素数、重点区域两组键名见下表逐行指针）。
 
@@ -379,7 +379,7 @@ iteration: "v1.5"
 | 公共空间要素数 | 5 处 | `public_space_feature_count` = 5 | 高 |
 | 重点区域数量与分项规模 | 3 处 | `key_area_count` = 3；`key_area_zhongzhiyuan_sqm` = 1929201.877、`key_area_origin_community_sqm` = 1043236.909、`key_area_dazhongsi_sqm` = 720454.219 | 中 |
 | 三期分期规模 | 一期约 470 / 二期约 345 / 三期约 327 公顷 | `phasing_phase_1_area_sqm` = 4697245.548、`phasing_phase_2_area_sqm` = 3449335.858、`phasing_phase_3_area_sqm` = 3266243.98 | 低 |
-| 分期绿地率 / 公共空间率 | 一期约 26.9% / 19.0%；二期约 30.0% / 21.0%；三期约 32.2% / 22.6%（provisional 复算） | `phase_{1,2,3}_green_ratio`、`phase_{1,2,3}_public_space_ratio`（公式为分期与绿地/公共空间交集除以分期面积 @EPSG:4548） | 低 |
+| 分期绿地率 / 公共空间率 | 一期约 26.9% / 18.7%；二期约 30.0% / 20.9%；三期约 32.2% / 22.4%（provisional 复算） | `phase_{1,2,3}_green_ratio`、`phase_{1,2,3}_public_space_ratio`（union 后与分期求交除以分期面积 @EPSG:4548） | 低 |
 | 建筑基底密度 | 约 6.4%（示意体量） | `building_density` = 0.06406 | 低 |
 | 容积率 / 建筑高度 | 待正式数据补齐 | `floor_area_ratio`、`building_height_m`（`status=unknown`，已附测量协议） | — |
 

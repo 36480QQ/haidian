@@ -264,7 +264,7 @@
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(area(intersection(green_space_i, PHASE-001))) / polygon_area(PHASE-001) @EPSG:4548; provisional geometry",
+      "formula": "sum(area(intersection(green_space_i, PHASE-001))) / polygon_area(PHASE-001) @EPSG:4548; provisional geometry（green 要素互不重叠，逐要素求和与 union 等价）",
       "confidence": "low",
       "assumptions": [
         "临时几何复算口径（provisional）；非官方绿地分类或分期红线，正式数据发布后需同流程复算。"
@@ -272,14 +272,14 @@
     },
     "phase_1_public_space_ratio": {
       "status": "known",
-      "value": 0.19,
+      "value": 0.1872,
       "unit": "ratio",
       "source_files": [
         "geometry/phasing.geojson",
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(area(intersection(public_space_i, PHASE-001))) / polygon_area(PHASE-001) @EPSG:4548; provisional geometry",
+      "formula": "sum over union(public_space) ∩ phase(polygon_area) @EPSG:4548 / phase area（union 后求交，避免要素重叠重复计数）",
       "confidence": "low",
       "assumptions": [
         "临时几何复算口径（provisional）；非官方公共空间边界或分期红线，正式数据发布后需同流程复算。"
@@ -294,7 +294,7 @@
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(area(intersection(green_space_i, PHASE-002))) / polygon_area(PHASE-002) @EPSG:4548; provisional geometry",
+      "formula": "sum(area(intersection(green_space_i, PHASE-002))) / polygon_area(PHASE-002) @EPSG:4548; provisional geometry（green 要素互不重叠，逐要素求和与 union 等价）",
       "confidence": "low",
       "assumptions": [
         "临时几何复算口径（provisional）；非官方绿地分类或分期红线，正式数据发布后需同流程复算。"
@@ -302,14 +302,14 @@
     },
     "phase_2_public_space_ratio": {
       "status": "known",
-      "value": 0.21,
+      "value": 0.2086,
       "unit": "ratio",
       "source_files": [
         "geometry/phasing.geojson",
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(area(intersection(public_space_i, PHASE-002))) / polygon_area(PHASE-002) @EPSG:4548; provisional geometry",
+      "formula": "sum over union(public_space) ∩ phase(polygon_area) @EPSG:4548 / phase area（union 后求交，避免要素重叠重复计数）",
       "confidence": "low",
       "assumptions": [
         "临时几何复算口径（provisional）；非官方公共空间边界或分期红线，正式数据发布后需同流程复算。"
@@ -324,7 +324,7 @@
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(area(intersection(green_space_i, PHASE-003))) / polygon_area(PHASE-003) @EPSG:4548; provisional geometry",
+      "formula": "sum(area(intersection(green_space_i, PHASE-003))) / polygon_area(PHASE-003) @EPSG:4548; provisional geometry（green 要素互不重叠，逐要素求和与 union 等价）",
       "confidence": "low",
       "assumptions": [
         "临时几何复算口径（provisional）；非官方绿地分类或分期红线，正式数据发布后需同流程复算。"
@@ -332,14 +332,14 @@
     },
     "phase_3_public_space_ratio": {
       "status": "known",
-      "value": 0.226,
+      "value": 0.2244,
       "unit": "ratio",
       "source_files": [
         "geometry/phasing.geojson",
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(area(intersection(public_space_i, PHASE-003))) / polygon_area(PHASE-003) @EPSG:4548; provisional geometry",
+      "formula": "sum over union(public_space) ∩ phase(polygon_area) @EPSG:4548 / phase area（union 后求交，避免要素重叠重复计数）",
       "confidence": "low",
       "assumptions": [
         "临时几何复算口径（provisional）；非官方公共空间边界或分期红线，正式数据发布后需同流程复算。"

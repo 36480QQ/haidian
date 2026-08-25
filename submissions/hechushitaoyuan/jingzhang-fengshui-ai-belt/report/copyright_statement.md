@@ -70,7 +70,7 @@
 | --- | --- | --- |
 | `visual/index.html` / `index.en.html` | 双语独立交互面板；纯原生 HTML/CSS/JS（零外部 CDN 依赖，完全离线可用） | 参与者原创编排；MIT 兼容 |
 | `visual/assets/fonts.css` | Noto Sans SC 字符子集 WOFF2 内嵌（Base64） | Google Fonts / notofonts；开源许可 **SIL Open Font License 1.1 (OFL-1.1)**；文件头部完整保留版权声明与许可证文本 |
-| `visual/assets/a11y-color-check.json` | 11 色色板在 4 类色觉下的 CIEDE2000 色差核验结果与 38 对例外清单 | 参与者量化核验结果；方法参考 Machado (2009) 与 Sharma (2005) |
+| `visual/assets/a11y-color-check.json` | 11 色色板在 4 类色觉下的 CIEDE2000 色差核验结果与 36 对例外清单 | 参与者量化核验结果；方法参考 Machado (2009) 与 Sharma (2005) |
 | `visual/assets/governance/qi-protocol.json` | 气数协议 v0.1 规则集与 156 项离线确定性演练自检记录 | 参与者概念治理框架设计 |
 | `visual/assets/governance/role-spec.json` | 八类运营岗位规格（全部 assignment_status=unassigned） | 参与者概念岗位设计 |
 
@@ -96,6 +96,6 @@
 
 ## 9. 权利声明结论
 
-1. 本提交包的所有文件均具有清晰、可审计的权利来源与生成链条。
-2. 零未授权商业素材、零未清权网络图片、零不可复现黑箱资产。
+1. 本提交包就其登记于本台账与 sources.json 的资产，声明可审计的权利来源与生成链条；未登记的第三方系统字体（本地渲染用途）按其 EULA 的 Print/Preview 正当使用口径处理，该解释待专业法律确认。
+2. 未使用未授权商业素材与未清权网络图片；包内登记资产的生成方法均可按台账复核，生成脚本于作者环境留存（深化阶段按需提供），不随包分发。
 3. 参与者 `hechushitaoyuan` 对全包原创内容的版权声明与合规性承担提交责任。
