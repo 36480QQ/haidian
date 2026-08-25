@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "428ed960b71ed84c183c5771411f9c2b75d7879d49776b9eff8f2b3cebd057f6"
+      "sha256": "3f5e288db73b911c018d52b57b81a4ca3a8fb54d532269b07c124840d9e249e9"
     },
     {
       "path": "compliance_matrix.json",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "d9c62270f5cd05d88753f1a0d1a4e42af92f14b56f3e3709d58401a21aab0c54"
+      "sha256": "75e79ac04674978205b716a2106e759e50fa448f63aa8ca9027d0be9510a12f3"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "4a541aaac2eb7f1857b79890fc82ba98345fefafe37d1ba7b66f26fa3c14f09c"
+      "sha256": "a60213f919098fbbb1134c4aca90aa5e2109c9663bee30c6501458dc18cac48d"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -311,6 +311,34 @@
       "language": "en",
       "translation_of": "assets/figures/timeline.png",
       "sha256": "28906ccbc3cf965876a5a86e34bb86268c882e5e0edadef7db2aec49ff0c27a4"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "c05355e0a4ff6fb7d7c59708a783fa8f057b6d013085b1a0399eaed1a7268fb2"
+    },
+    {
+      "path": "assets/media/render-plaza.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "726b43770c2ea842c3be893d21716ce0c9210ab1db866441152967e1b997c740"
+    },
+    {
+      "path": "assets/media/render-tower.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "6fac3c9375b6e8603ef4532007956e3df44bfb16d054bd27ec0e234f285517e4"
+    },
+    {
+      "path": "assets/media/render-platform.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "bb53612609fbc166bd6821513189e3d5fbd10465a9d6bace440c7ce684dfeb20"
     }
   ],
   "validation_claim": {
@@ -318,5 +346,6 @@
     "known_blockers": [],
     "data_confidence": "high",
     "readiness_contract": "persisted-self-check-v1"
-  }
+  },
+  "cover_image": "assets/media/cover.webp"
 }
