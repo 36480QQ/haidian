@@ -171,6 +171,19 @@ Three industry test-verification scenario cards (the numbered objects correspond
 
 Scenario-to-space mapping: Job-coach AI corresponds to the employment desk at the Maker Hub; Rent-commute AI to the rental desk at the Co-living Commons; Meetup AI to the events desk at the Vitality Plaza and the bulletin walls of the three nodes; Startup-mentor AI to the mentor room at the Maker Hub; Feedback AI to the suggestion boxes of the three nodes and the Youth Council; Night-return AI to the night-return duty points; Desk-share AI to the shared-desk counter at the Maker Hub; Childcare AI to the childcare corner at the Co-living Commons; Accessible-wayfinding AI to the information desks of the three nodes; Community-events AI to the events desk at the Vitality Plaza. Privacy and human-review boundary: data is anonymized and aggregated only for operation review, with no individual-identifying tracking, no personal-profiling ranking, and a login-free equivalent ordinary-service path throughout; governance interfaces span transport, industry, space, public service, culture and deliberation culture (concept).
 
+#### AI Technical Protocols (concept stage: model evaluation / data quality / error stratification / runtime monitoring)
+
+Most AI-assisted functions are aggregation, drafting and candidate suggestions with no unified technical protocol yet; to avoid treating algorithmic behaviour as a black box, this proposal introduces a four-part technical-protocol framework at concept stage (a framework for professional teams to deepen, not a commitment to an already-built system):
+
+| Item | Concept-stage requirement | Data boundary and trigger |
+| --- | --- | --- |
+| Model evaluation | Every AI-assisted function is evaluated on a baseline task set assembled from de-identified samples of ordinary-service records (no new collection); indicators include accuracy, completion rate, false-positive rate and false-negative rate; results are filed per function in the operation archive | Three evaluation tiers: concept baseline, co-test point, official interface; below-threshold functions never enter the official interface; thresholds are set jointly with the named reviewer during co-testing |
+| Data quality | Data comes only from public information and anonymized user-provided input; quality items: source traceability (aggregation results carry source pages), update date, de-identification level, minimum sample size | Sub-standard data never enters candidate generation; expired sources are removed from candidate lists |
+| Error stratification | Weekly stratification of review findings along two axes - source type (dead URL / stale data / parsing error / semantic bias / reviewer misjudgement) x scenario function - with an error list issued | Stratification feeds candidate-generation rule fixes only; never used for individual profiling or ranking |
+| Runtime monitoring | Anonymous aggregate run indicators: call volume, review rate, removal count, anomalous periods; for operation review only | Accuracy regression or anomalies trigger the human-review channel, with removal under the immediate-removal clause when needed; monitoring data is unrelated to individuals |
+
+The four protocols follow the same template as "ordinary service first - AI drafts candidates - named human review - removable at once": tests and pilots are never presented as approved operations, and any unmet protocol item exits through the removal condition.
+
 ![AI innovation ecosystem atlas and scenario-opening path](assets/figures/innovation-ecosystem.en.png)
 
 ![Scenario card inventory and industry test cards](assets/figures/scenario-cards.en.png)

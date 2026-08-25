@@ -90,7 +90,7 @@
    "ai_package_stages": {
     "submissions/JohnXu22786/youth-innovation-community": "formal"
    },
-   "total_bytes": 14345621,
+   "total_bytes": 13273815,
    "maintainer_bypass": false
   },
   "stderr": ""
@@ -225,41 +225,81 @@
   }
  ],
  "figure_qc": {
-  "ok": true,
+  "ok": false,
   "ink_ok": true,
-  "clip_clear": true,
+  "clip_clear": false,
   "overlap_clear": "not_verified",
   "summary": "ink+edge-clip machine check only; text-overlap not machine-verified post-hoc (figure generation text-bbox checks recorded in changelog)",
   "figures": {
    "brand-identity.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1128"
+    "width": 1560,
+    "height": 1118,
+    "ink": 0.1962,
+    "edge_clip_ratio": 0.3903,
+    "edge_clip_clear": false
    },
    "innovation-ecosystem.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1050"
+    "width": 1560,
+    "height": 1040,
+    "ink": 0.1412,
+    "edge_clip_ratio": 0.4878,
+    "edge_clip_clear": false
    },
    "key-areas.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1102"
+    "width": 1560,
+    "height": 1092,
+    "ink": 0.1397,
+    "edge_clip_ratio": 0.9756,
+    "edge_clip_clear": false
    },
    "land-use-structure.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1209"
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.1711,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "metrics-evidence.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 816"
+    "width": 2106,
+    "height": 871,
+    "ink": 0.2178,
+    "edge_clip_ratio": 0.9763,
+    "edge_clip_clear": false
    },
    "mobility-bluegreen.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1270"
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.1176,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "node-components.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 998"
+    "width": 1612,
+    "height": 988,
+    "ink": 0.1522,
+    "edge_clip_ratio": 0.4882,
+    "edge_clip_clear": false
    },
    "operation-flow.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 894"
+    "width": 1612,
+    "height": 884,
+    "ink": 0.1405,
+    "edge_clip_ratio": 0.5859,
+    "edge_clip_clear": false
    },
    "scenario-cards.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1128"
+    "width": 1612,
+    "height": 1118,
+    "ink": 0.1412,
+    "edge_clip_ratio": 0.3906,
+    "edge_clip_clear": false
    },
    "site-overview.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1270"
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.1102,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    }
   }
  }
