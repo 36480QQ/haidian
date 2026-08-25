@@ -33,7 +33,7 @@
 .j3-card{background:var(--paper);border-top:5px solid var(--teal);padding:18px;min-width:0}
 .j3-card[hidden]{display:none}
 .j3-card small{display:block;color:var(--teal);font-weight:800;font-size:12px;letter-spacing:.04em}
-.j3-card h3{margin:6px 0 12px;font-family:Georgia,"Source Han Sans SC",serif;font-weight:400;font-size:21px;line-height:1.2}
+.j3-card h3{margin:6px 0 12px;font-family:"ESJZ Sans Subset",Georgia,"Source Han Sans SC",serif;font-weight:400;font-size:21px;line-height:1.2}
 .j3-card dl{margin:0}
 .j3-card dt{font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted)}
 .j3-card dd{margin:3px 0 0;font-size:14px}
@@ -43,7 +43,7 @@
 .j3-rail h3{margin:0 0 10px;font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--muted)}
 .j3-rail ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
 .j3-rail button{appearance:none;width:100%;text-align:left;border:1px solid var(--line);border-top:4px solid var(--teal);background:#fff;color:var(--ink);font:inherit;padding:10px 12px;cursor:pointer;min-width:0}
-.j3-rail button b{display:block;font-family:Georgia,serif;font-weight:400;font-size:15px}
+.j3-rail button b{display:block;font-family:"ESJZ Sans Subset",Georgia,serif;font-weight:400;font-size:15px}
 .j3-rail button span{display:block;color:var(--muted);font-size:11px;margin-top:3px;overflow-wrap:anywhere}
 .j3-rail button[aria-pressed="true"]{background:var(--deep);color:#fff;border-color:var(--deep)}
 .j3-rail button[aria-pressed="true"] span{color:#a8cbc5}
