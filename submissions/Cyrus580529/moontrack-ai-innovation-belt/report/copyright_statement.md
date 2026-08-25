@@ -53,23 +53,32 @@ approval from the heritage authority.
 
 ## Identity assets
 
-The MoonTrack mark (`assets/media/moontrack-mark.png`, `moontrack-mark-light.png`), the gallery covers
-(`cover.png`, `cover-en.png`) and the identity system sheet (`assets/figures/identity-system*.png`) were
-drawn programmatically by `make_identity.py`. No generative image model was used for any of them.
+The MoonTrack wordmark (`assets/media/moontrack-wordmark*.png`) and the identity system sheet
+(`assets/figures/identity-system*.png`) are typographic and geometric layouts drawn programmatically by
+`make_identity.py`. No generative image model was used for them, and they incorporate no third-party
+illustration, icon set, logo, template or stock asset. The two red rules beneath the wordmark are plain
+rectangles.
 
-The curve in the mark is not a designed arc: it is the measured Xiaoyue River centreline taken from
-`geometry/green_space.geojson`, with the eight reaches chained end to end into one 10,051 m polyline and
-scaled without distortion of its true aspect. The remaining elements are a plain circle and, on the system
-sheet only, a two-segment chevron. Every graphic in these assets is therefore either a projection of geometry
-submitted in this package or an elementary shape, and no third-party illustration, icon set, logo, template
-or stock asset is incorporated.
+The MoonTrack emblem (`assets/media/moontrack-emblem.png`) and the gallery covers (`cover.png`,
+`cover-en.png`, which composite the emblem with the wordmark) embed an illustration produced with a
+generative image model, and are covered by the AI-generated illustrations section below. The emblem shows
+a moon gate - a generic Chinese garden aperture - with water, track, a chevron switchback and a moon
+inside it. It is a conceptual expression, not a photograph, and depicts no existing place, no protected
+structure and no identifiable person.
 
-The mark is offered as a concept-level sub-brand for this proposal. It is not a registered trademark, claims
-no priority over any existing mark, and does not replace or sit as a peer to the official project name. Any
-implementation requires item-by-item rights clearance, and the identity sheet states that no commercial
-typeface is specified.
+An earlier version of this package used a pictorial mark drawn from the measured Xiaoyue River centreline.
+That mark has been withdrawn on design grounds and no longer appears in the package; the statement that it
+was script-drawn applied to that version only and is superseded by this section.
+
+The identity is offered as a concept-level sub-brand for this proposal. It is not a registered trademark,
+claims no priority over any existing mark, and does not replace or sit as a peer to the official project
+name. Any implementation requires item-by-item rights clearance, and the identity sheet states that no
+commercial typeface is specified.
 
 ## AI-generated illustrations
+
+The MoonTrack emblem (`assets/media/moontrack-emblem.png`, also composited into `cover.png` and
+`cover-en.png`) is an AI-generated brand image, as set out above.
 
 Eight plates embed illustrations produced with a generative image model: three component plates
 (`assets/figures/component-chevron-ramp*.png`, `component-platform-unit*.png`,

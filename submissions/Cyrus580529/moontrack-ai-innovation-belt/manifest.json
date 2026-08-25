@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "32857a3fd88eec26c305d9e54f10a4c12150aaa4170eb5cd4352f30a44212051"
+      "sha256": "5366fcd35b27777f074eb8378c22e8aac5dc4774f5f302a0b4a599b1405434bb"
     },
     {
       "path": "agent.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "10f6260c6937129b5c8e4541b8dc4c05d92c3332886d8f8613283a1d1edfef3a"
+      "sha256": "3b90749688e4e8b636b0fe25dfdca93b5dbfd402deedda488002ffd9210e38f1"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f1ee69149f6c319863980cfafc6ee9c339bfb6615f60e0df2871424244bbc5d7"
+      "sha256": "00f41dae8a5369ebfcdaded81b28dcaf96a9c221db13e6e7f25e78ba016a2c09"
     },
     {
       "path": "report/narrative.md",
@@ -99,21 +99,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "4822fee07fa8517e06dde3b952e87858f02b6acd24c79e922964ec7b34d4f83e"
+      "sha256": "4de4edf917b6e94e577e4f6d87add9df1f3c1c90c38e36081ecbd028678371ec"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "60e3d0ba07e79624ac7a36ab4c2608140c83530c4dee30fcfe87c2119b989be5"
+      "sha256": "0a9e68219ea7b39a89ce6cb8379942c643a26f3fdac06b9a19967840c05523db"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "ea04fba3e611ec848e1e5a05949e9e3cb1ef98a933b8e1ddad23a4a3a6ef5840"
+      "sha256": "859f332ec3ef6986e48e0407c7c3d4d732d31a213518f2607175df7acfa7b835"
     },
     {
       "path": "visual/index.html",
@@ -238,7 +238,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "1ee29970123e3ede444387d39418627520c9a37844833c00147d7cfefe0184ed"
+      "sha256": "e4a12e7213b61552509a80a267d9773f7afe16afff33fc383ddee53f88ebc5b0"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "da70fe9062d7fc3583a05749efdca5c7a59c42ec85d0754e32331840e8468645"
+      "sha256": "45bfa5f9f69748041139363a0ee31cf10785f3fefb946beeecf2dac122dc1882"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -254,7 +254,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "7098f92a175f4eb08ee2fa41977ddc177d00247e08e9d0cf3f2b6844248ac829"
+      "sha256": "5715d5d888471a935f176778e9aa5e405e6484e6d25a7d228c989b3bd593f079"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -262,7 +262,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "51d945ad0ef2040ee02efef71bfb110c9b112424f30866be59ab7c181fc8922f"
+      "sha256": "dc2dff2989547c3d81cf7302bf253c5acf73cfc4bfb6651579fc9a8179b68c61"
     },
     {
       "path": "visual/index.en.html",
@@ -377,7 +377,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "2baccf0863c631e8469d8ddf9b19654b398c7804cbeb9ee480796108e837deb6"
+      "sha256": "3a4f55f71d7a360c028e1449b5a5eee866c1cf5ea62f5565c2ea912c15eec111"
     },
     {
       "path": "risk.json",
@@ -398,7 +398,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "zh",
-      "sha256": "71388d72d9ba349dafa3383c28b0184405c1441817396ecb0065e99663473bef"
+      "sha256": "c9af5add73ec2b4469690683b5058502875d08e70d4c13ff15627e60f0c95f29"
     },
     {
       "path": "assets/figures/identity-system.en.png",
@@ -406,35 +406,21 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/identity-system.png",
-      "sha256": "9ab871f70e0c6eee2fc758823bba5644e1080e2ddeb6e80e1a2d5dbc8d6b1374"
-    },
-    {
-      "path": "assets/media/moontrack-mark.png",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "sha256": "c1cd854955177a47b4b64ebc64dece77be5806417ee313795fa556f01095a606"
-    },
-    {
-      "path": "assets/media/moontrack-mark-light.png",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "sha256": "d62d11e1f12f94c4020a0044364870faeeca57a6116f4ac36cd930123a333a27"
+      "sha256": "11360642d661d4faba444aadeb6d9b9476a01d590a4a8c28be89e54e754c2604"
     },
     {
       "path": "assets/media/cover.png",
       "role": "media_poster",
       "required": false,
       "language": "neutral",
-      "sha256": "4a5670f9be07433743f1ba0cccbebe70d0cff727febb9cfcf27c1e7a28409a1f"
+      "sha256": "9582b7068c9b2f53b83d1bb001634f237cd1467d044c63317957a35ada610357"
     },
     {
       "path": "assets/media/cover-en.png",
       "role": "media_poster",
       "required": false,
       "language": "neutral",
-      "sha256": "639ed1e57def80ce5a30a563786dd2c96f453ad950441d51136badab46821b08"
+      "sha256": "c240d48fce19b54f590901e0bea26b10e86e237a41da52bc662144e78bc65460"
     },
     {
       "path": "assets/figures/machine-accessibility.png",
@@ -540,6 +526,43 @@
       "language": "en",
       "translation_of": "assets/figures/scene-xiaoyuehe-corridor.png",
       "sha256": "adab93fc17e97ce468d6c1b1ebeb8bd60ba5822c83a9bc0e3d532d59278deff2"
+    },
+    {
+      "path": "assets/media/moontrack-emblem.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "bca62a55c428eb77e737e253f9a2e2681a12998f1f1509f45c4fa9d642f6c6ef"
+    },
+    {
+      "path": "assets/media/moontrack-wordmark.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "zh",
+      "sha256": "4b58aa562a81698dfe224868e0780fae7bfddd9a78f9260e4fe3993c8e90721f"
+    },
+    {
+      "path": "assets/media/moontrack-wordmark-light.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "zh",
+      "sha256": "167e5b69ebd805ead2bc6a20c07861507cd0134f3642b8a0d39c8b1c1d8e011d"
+    },
+    {
+      "path": "assets/media/moontrack-wordmark-en.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/media/moontrack-wordmark.png",
+      "sha256": "2d794d4ea590303edafec7e4d3959e384002bd19bcf7a39035fc55af4735d701"
+    },
+    {
+      "path": "assets/media/moontrack-wordmark-light-en.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/media/moontrack-wordmark-light.png",
+      "sha256": "d8510baea8ce4795073878774c8828fd3699b3275f063abe74e1006878690184"
     }
   ],
   "validation_claim": {
