@@ -1,8 +1,18 @@
 # 方案迭代记录
 
+## v0.13 - 2026-08-25
+
+- Kept the stable title **京张，再次开路 / JING-ZHANG BREAKS NEW GROUND** while replacing the first-screen “national demonstrator” tone with a two-level evidence test: co-creation underway with partial public records and urban practice still awaiting external evidence.
+- Made the open call itself visible as a project-level institutional prototype: structured brief, Agent and contributor creation, provenance and assumptions, deterministic checks, the V0.12 predecessor's Issue/PR intake record, and rules reserving final human/professional judgment and future public version retention. The current V0.13 is this PR submission edition, with live intake status recorded only in the PR.
+- Added a machine-checkable `agent-participation-ledger.json` and verifier. The ledger separates documented public-process records from unobserved formal selection, adoption, implementation, government endorsement, national designation, public benefit and independently verified global primacy.
+- Added the paired **double-demonstration** figure and integrated it into both proposals, both offline exhibits, a 13-page bilingual A3 booklet sequence and a four-board bilingual A0 sequence. The overall spatial framework remains first; the two evidence levels follow immediately.
+- Proposed the **Jing-Zhang Co-Creation Archive, Volume 0 / 京张共创档案·第 0 卷** as the first real COMMONS content, subject to rights clearance: public task and proposal versions, provenance, corrections, dissent, failures, withdrawals, and disclosed adoption/non-adoption reasons—not an honour wall or retrospective implementation claim.
+- Preserved all GeoJSON, provisional SITE/KEY geometry, the twelve scenarios, five flagships, FP01 contract, unknown statutory/engineering values, and the honest `0/5` externally verified H0-H4 state. The V0.12 predecessor's repository intake evidence never populates the current V0.13 intake outcome or any urban implementation field; submission itself does not imply intake acceptance.
+- Updated the manifest to the strict forward `0.2.0` contract, added the new paired evidence assets and verifier, and retained human/professional final authority throughout.
+
 ## v0.12 - 2026-08-25
 
-- Targeted the only credible remaining 96-to-100 review gap—implementation feasibility—without changing the stable title **京张，再次开路 / JING-ZHANG BREAKS NEW GROUND** or inventing external endorsement.
+- Deepened implementation feasibility without changing the stable title **京张，再次开路 / JING-ZHANG BREAKS NEW GROUND** or inventing external endorsement.
 - Added `fp01-delivery-control.json` and a standard-library verifier to connect three key-area concept interfaces, six D0 measurement methods, H0-H4 role-class RACI, one-kit M01-M06 design-test quantities and a K01-K10 critical-dependency path.
 - Added five structure-only metrics: three key-area interface prototypes, complete D0-method coverage, complete hold-point RACI coverage, six design-test BoQ items and ten dependency steps. These values measure register completeness, not site readiness, budget approval, implementation progress or achieved outcomes.
 - Reframed the readiness statement as **5/5 evidence gates defined and 0/5 externally verified**, so a reviewer can distinguish a complete verification method from evidence that has not yet been obtained.
