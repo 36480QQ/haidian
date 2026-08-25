@@ -485,6 +485,45 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
 </section>
 
 <!-- 尾 -->
+<style>
+#ovx .day{min-height:100vh;display:grid;grid-template-rows:auto 1fr auto;background:var(--ov-paper);
+  padding:clamp(60px,9vh,104px) clamp(24px,5vw,86px) clamp(36px,6vh,64px);gap:clamp(24px,3.5vh,40px)}
+#ovx .day .kick{font-size:11px;letter-spacing:.24em;font-weight:700;color:var(--ov-copper)}
+#ovx .day h2{margin:10px 0 0;font-size:clamp(25px,3.2vw,42px);font-weight:800;letter-spacing:-.025em;line-height:1.22;text-wrap:balance}
+#ovx .day h2+p{margin:12px 0 0;font-size:15px;line-height:1.8;color:var(--ov-dim);max-width:46em}
+#ovx .vign{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,1.2vw,18px);min-height:0}
+#ovx .vign figure{margin:0;display:grid;grid-template-rows:auto 1fr auto;background:var(--ov-card);
+  border:1px solid var(--ov-hair);overflow:hidden;transition:transform .5s var(--ov-ease)}
+#ovx .vign figure:hover{transform:translateY(-6px)}
+#ovx .vign .tm{font-family:ui-monospace,Consolas,monospace;font-size:20px;font-weight:800;color:var(--ov-copper);padding:12px 14px 8px}
+#ovx .vign img{width:100%;height:100%;min-height:0;object-fit:cover;display:block}
+#ovx .vign figcaption{padding:10px 14px 14px;font-size:12.5px;line-height:1.65;color:var(--ov-dim)}
+#ovx .vign figcaption b{display:block;color:var(--ov-ink);font-size:13.5px;margin-bottom:3px}
+#ovx .day .ph2{font-size:12.5px;line-height:1.8;color:var(--ov-dim);border-top:1px solid var(--ov-hair);padding-top:14px;max-width:none}
+#ovx .day .ph2 b{color:var(--ov-ink)}
+@media(max-width:900px){#ovx .vign{grid-template-columns:1fr 1fr}#ovx .day{min-height:auto}#ovx .vign img{height:26vh}}
+</style>
+<section class="day" data-nav="一天">
+  <div>
+    <div class="kick mono">一天中的使用体验</div>
+    <h2>这条带的一天，人和 AI 各就各位</h2>
+    <p>空间关系讲完了，再看时间：同一条 9 公里长卷，从清晨到夜里被不同的人以不同方式使用——每一幕里的人机协作都有明确的规则与边界。</p>
+  </div>
+  <div class="vign">
+    <figure><div class="tm">07:20</div><img src="assets/renders/render-spike-belt.jpg" alt="清晨步道上晨跑者经过道钉带">
+      <figcaption><b>晨跑经过道钉带</b>晨光里第一批经过的人，顺脚数一眼新钉</figcaption></figure>
+    <figure><div class="tm">10:00</div><img src="assets/renders/render-robot-knocks.jpg" alt="配送机器人在应答门外等待授权">
+      <figcaption><b>机器人敲门</b>配送机器人在门槛外等，居民按下同意——人机协作的第一课是谁说了算</figcaption></figure>
+    <figure><div class="tm">14:00</div><img src="assets/renders/render-lesson-gate.jpg" alt="课门旁听席上老人与学生同堂">
+      <figcaption><b>课门开讲</b>旁听席坐下，AI 助教按你选的档位解释同一句话</figcaption></figure>
+    <figure><div class="tm">17:30</div><img src="assets/renders/render-bell-plaza.jpg" alt="傍晚钟声广场">
+      <figcaption><b>钟声一响</b>今天有一家企业完成备案——不发通稿，只敲一响</figcaption></figure>
+    <figure><div class="tm">21:00</div><img src="assets/renders/render-spike-belt-night.jpg" alt="夜晚道钉带光点">
+      <figcaption><b>夜里数灯</b>散步的人和巡线的机器人各走各的，光点疏密就是产业时间轴</figcaption></figure>
+  </div>
+  <p class="ph2"><b>阶段变化</b>：这一天不是终态，按「先通后留」滚动生长——一期已开放段先行试点（慢速街、机器人测试场），二期段随实际建成逐段接入，46 座应答门以建成一座、认领一座的节奏打开。</p>
+</section>
+
 <section class="fin" data-nav="收尾">
   <div>
     <h2>市民不是来看展板的。他们蹲下来数道钉：中国自主创新，钉到第几颗了。</h2>
@@ -759,7 +798,7 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
 <h3 class="sub3"><span class="ix">D·2</span>四门自检</h3>
 <div class="gates"><div class="gate"><div class="gn">确定性校验<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">deterministic_validation · returncode 0</div><pre>错误 0
 警告 24
-总字节 36,521,590
+总字节 37,207,284
 · submissions/wanghao198822/jingzhang-century-answer/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied
 · submissions/wanghao198822/jingzhang-century-answer/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context</pre></div><div class="gate"><div class="gn">空间审查<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">spatial_review · returncode 0</div><pre>阶段 formal
 问题 3 (minor:3)
@@ -776,7 +815,7 @@ known_metric_refs_required = 77
 proposal_format_version = 2
 evidence_contract = section-anchors-plus-structured-audit
 proposal_reference_counts = source:23, standard:8, depth:15, data:25, metric:5</pre></div></div>
-<div class="note">self_check.json 记录：stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>总字节口径：上表为自检写入时点的记录值。self_check.json 自身计入总字节，而工具先写入尚未附四门结果的中间文件再测量，故独立重跑会比表中大 695 字节（36,522,285）——差值即 self_check.json 附上四门结果后的增量，属工具固有的两阶段写入，不影响任何一门的结论。</div>
+<div class="note">self_check.json 记录：stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>总字节口径：上表为自检写入时点的记录值。self_check.json 自身计入总字节，而工具先写入尚未附四门结果的中间文件再测量，故独立重跑会比表中大 695 字节（37,207,979）——差值即 self_check.json 附上四门结果后的增量，属工具固有的两阶段写入，不影响任何一门的结论。</div>
 <div class="tw"><table class="dt"><thead><tr><th>自检项</th><th>结果</th><th>级别</th><th>对象</th><th>说明</th></tr></thead><tbody><tr><td><code class="mid2">DETERMINISTIC_VALIDATION</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">validate_local_submission.py</code></td><td>deterministic_validation: PASS</td></tr><tr><td><code class="mid2">SPATIAL_REVIEW</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">spatial_review.py</code></td><td>spatial_review: PASS</td></tr><tr><td><code class="mid2">VISUAL_PACKAGING</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">visual_review.py</code></td><td>visual_review: PASS</td></tr><tr><td><code class="mid2">PROFESSIONAL_EVIDENCE</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">professional_review.py</code></td><td>professional_review: PASS</td></tr></tbody></table></div>
 </div></section>
 <section class="sec apx" id="s12"><div class="wrap"><div class="sh rv"><span class="no">E</span><h2 class="serif">附录 E · 可当场核验工具</h2><span class="sub">三个脚本在你自己的浏览器里当场复算</span><span class="en">Appendix E · Verify it yourself, on the spot</span></div>
