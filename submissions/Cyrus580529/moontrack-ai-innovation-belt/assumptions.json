@@ -180,6 +180,36 @@
       "status": "measured_and_disclosed",
       "statement": "Across all policy scenarios the depot is held fixed at the minimax-optimal point (116.34627, 39.99979), with only the nearest node in each network selected.",
       "impact": "Without this the comparison would measure a change of depot rather than a change of policy. It also means each scenario's absolute figures are not the best achievable under that policy; the comparison between rows is what carries the argument."
+    },
+    {
+      "id": "A-SIM-001",
+      "status": "measured_and_disclosed",
+      "statement": "The dispatch ledger uses ten destinations already present in geometry/public_space.geojson (five elderly-care facilities, two industry anchors, and the three university features nearest the depot), each dispatched under three right-of-way states. No destination was invented for the ledger.",
+      "impact": "The ledger measures this specific set of doors, not the whole belt. The three nearest universities are a deterministic selection rule, not a representative sample; the 1,619-destination distribution in the policy analysis carries the scale claim instead."
+    },
+    {
+      "id": "A-SIM-002",
+      "status": "assumed_and_flagged",
+      "statement": "A nominal energy rate of 0.00006 kWh/m is used to express both the per-task budget and the per-task consumption. The budget is straight-line distance x 1.5 x rate; consumption is route length x rate.",
+      "impact": "The rate appears on both sides and cancels, so energy_budget_violations is exactly the count of tasks whose legal route exceeds 1.5x the straight-line distance. This is deliberate: it keeps the metric a pure geometric measurement of how circuitous the legal network is, and it means the ledger makes no claim about any vehicle's battery, payload, or drivetrain."
+    },
+    {
+      "id": "A-SIM-003",
+      "status": "assumed_and_flagged",
+      "statement": "A task succeeds only if a Dijkstra path exists on the applicable right-of-way graph, travel time at the 15 km/h regulatory cap is within 15 minutes, and the terminal gap without right-of-way is at most 150 m (handled as a staffed handover, per scenario card 02).",
+      "impact": "The 150 m terminal cap and the 15-minute budget are design choices of this proposal, not regulatory thresholds. Loosening the terminal cap to 700 m raises servable facilities from 1 to 5 (see the policy-lever table); the ledger's low success rate is therefore a statement about the terminal condition under this proposal's own service standard, not a claim that delivery is impossible."
+    },
+    {
+      "id": "A-SIM-004",
+      "status": "measured_and_disclosed",
+      "statement": "audit_complete is false when a route depends on right-of-way that does not exist today (the proposed 596 m links in round B; footway permission in round C) or when a terminal gap remains at a destination for which this proposal names no human handover party.",
+      "impact": "audit_completeness measures traceability of the record, not task success, so a task that was never dispatched is not marked incomplete. The 0.3 reading is driven mainly by rounds B and C being conditional on rules that have not been granted, and by universities and industry anchors having no named handover party - a real operational gap this proposal does not close."
+    },
+    {
+      "id": "A-SIM-005",
+      "status": "measured_and_disclosed",
+      "statement": "Round C merges OSM footway geometry into the cycle-lane graph with steps excluded, because steps are impassable to both delivery robots and wheelchairs.",
+      "impact": "OSM footway mapping in this area is fragmented into many stub side-segments, so round C's connectivity is a lower bound and its success count must not be read as 'permitting footways makes delivery work'. Round C is evidence about terminal distance only; its component structure is a data-quality artefact."
     }
   ]
 }

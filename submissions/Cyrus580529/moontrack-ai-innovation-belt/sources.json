@@ -340,6 +340,32 @@
       "citation": "OpenStreetMap contributors, ways tagged highway=footway/path/pedestrian/living_street/steps, Overpass 'out geom' query, 2026-08-25, ODbL 1.0",
       "usage_note": "仅用于路权规则的反事实测算:同一批目的地到法定路权网与到步行网的末端距离对比,以及允许人行道通行后的可达网络里程。共 4,980 段可通行 + 465 段台阶,台阶已排除——机器人与轮椅都过不去。",
       "risk_note": "OSM 人行道测绘完整性明显低于机动车与非机动车道,并入后连通分量反而增加(大量断头的路侧短段),因此该情景的可达结果是下界而非上界。本数据不进提交图层,只作反事实测算输入,不得据以主张任何具体路段可通行。"
+    },
+    {
+      "id": "open-call-standard-scenarios",
+      "title": "开源征集标准场景库(scenarios/*.json)",
+      "type": "document",
+      "path": "simulation.json",
+      "url": "https://github.com/open-city-ai/haidian/tree/main/scenarios",
+      "publisher": "百年京张AI创新带面向智能体的开源征集",
+      "published_at": "accessed 2026-08-25",
+      "public_status": "confirmed-public",
+      "citation": "open-city-ai/haidian, scenarios/robot-delivery-low-speed.json 等 6 个标准场景定义, 2026-08-25",
+      "usage_note": "本方案的十张场景卡逐张对应到标准场景 id;simulation.json 的调度台账整体归入 robot-delivery-low-speed。",
+      "risk_note": "标准场景库描述的是征集方设定的场景类型与人工复核要求,不是已批准的实施计划,不得据以主张任何试点已获授权。"
+    },
+    {
+      "id": "osm-rail-stations-lines",
+      "title": "场地及周边轨道站点与线路(OpenStreetMap)",
+      "type": "map",
+      "path": "proposal.md",
+      "url": "https://overpass-api.de/",
+      "publisher": "OpenStreetMap contributors",
+      "published_at": "accessed 2026-08-25",
+      "public_status": "confirmed-public",
+      "citation": "OpenStreetMap contributors, nodes tagged railway=station and ways tagged railway=rail/subway within 39.955-40.045N, 116.290-116.400E, Overpass 'out geom' query, 2026-08-25, ODbL 1.0",
+      "usage_note": "用于区域协同一节的空间底盘测算:带内与近带轨道站点计数、带内轨道里程、门户站到范围边界的距离,以及旗舰驿站到最近站点的距离。复算脚本为 analysis_region.py。",
+      "risk_note": "OSM 站点为社区测绘,站名与出入口位置可能与官方资料存在出入;站点是否'落在带内'取决于临时粗略边界,官方边界发布后须重算。本数据不进提交图层。"
     }
   ]
 }

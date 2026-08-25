@@ -4,7 +4,7 @@ All submitted text, geometry, diagrams, PDFs and static HTML assets are generate
 
 ## Generated figures and drawings
 
-The five core figures in `assets/figures/` and their `.en` counterparts, and the A3 booklet and A0 boards in `drawings/`, were produced programmatically from this package's own `geometry/*.geojson` and `metrics.json`. They contain no photographs, no map screenshots, no commercial base map and no third-party illustration. Every line drawn is a projection of a geometry feature submitted in this package.
+The core figures in `assets/figures/` and their `.en` counterparts, and the A3 booklet and A0 boards in `drawings/`, were produced programmatically from this package's own `geometry/*.geojson` and `metrics.json`. They contain no photographs, no map screenshots, no commercial base map and no third-party illustration. Every line drawn is a projection of a geometry feature submitted in this package.
 
 Generated and conceptual material is an explanatory layer. No figure in this package is presented as an observed site photograph, a resident consultation record, an official boundary, survey data or an approval conclusion.
 
@@ -42,6 +42,24 @@ Policy, statistical and case-study material is cited from public documents regis
 ## Names, likenesses and marks
 
 This package names no private individual and reproduces no personal likeness. Historical figures (Zhan Tianyou, Chen Chunxian) are referred to only in relation to documented public historical events. Company and institution names appear solely as factual references to published cases; no corporate logo, wordmark or brand asset is reproduced. The honours display system and wayfinding proposals explicitly require item-by-item rights clearance before any implementation, and this proposal designates no specific name, likeness, typeface or corporate mark in advance.
+
+## Identity assets
+
+The MoonTrack mark (`assets/media/moontrack-mark.png`, `moontrack-mark-light.png`), the gallery covers
+(`cover.png`, `cover-en.png`) and the identity system sheet (`assets/figures/identity-system*.png`) were
+drawn programmatically by `make_identity.py`. No generative image model was used for any of them.
+
+The curve in the mark is not a designed arc: it is the measured Xiaoyue River centreline taken from
+`geometry/green_space.geojson`, with the eight reaches chained end to end into one 10,051 m polyline and
+scaled without distortion of its true aspect. The remaining elements are a plain circle and, on the system
+sheet only, a two-segment chevron. Every graphic in these assets is therefore either a projection of geometry
+submitted in this package or an elementary shape, and no third-party illustration, icon set, logo, template
+or stock asset is incorporated.
+
+The mark is offered as a concept-level sub-brand for this proposal. It is not a registered trademark, claims
+no priority over any existing mark, and does not replace or sit as a peer to the official project name. Any
+implementation requires item-by-item rights clearance, and the identity sheet states that no commercial
+typeface is specified.
 
 ## AI-generated illustrations
 

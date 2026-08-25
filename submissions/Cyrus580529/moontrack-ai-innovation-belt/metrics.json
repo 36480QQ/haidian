@@ -647,6 +647,61 @@
         "A-POL-003: OSM footway coverage is markedly less complete than the carriageway and cycleway data, so walking-network results are lower bounds.",
         "A-POL-004: the depot is held fixed across all policy scenarios so that the comparison isolates the policy change rather than the siting change."
       ]
+    },
+    "simulation_task_count": {
+      "status": "known",
+      "value": 30,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "len(simulation.tasks)",
+      "confidence": "high",
+      "assumptions": [
+        "A-SIM-001: ten real destinations drawn from public_space.geojson, dispatched under three right-of-way states (as-measured, with proposed links, footway-permitted counterfactual)."
+      ]
+    },
+    "simulation_success_rate": {
+      "status": "known",
+      "value": 0.1,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json",
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(outcome == 'success' or outcome endswith '_success') / len(tasks)",
+      "confidence": "high",
+      "assumptions": [
+        "A-SIM-001: destinations and network states as above.",
+        "A-SIM-003: a task counts as reachable only if a Dijkstra path exists on the legal right-of-way graph, travel time is within 15 min at the 15 km/h regulatory cap, and the terminal gap without right-of-way is at most 150 m."
+      ]
+    },
+    "energy_budget_violations": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(energy_used_kwh > energy_budget_kwh); budget = straight_line_m * 1.5 * rate, used = route_m * rate, so the rate cancels and this equals count(route_m > 1.5 * straight_line_m)",
+      "confidence": "high",
+      "assumptions": [
+        "A-SIM-002: the nominal energy rate appears on both sides of the comparison and cancels; this metric is a pure geometric detour count and carries no battery or vehicle claim."
+      ]
+    },
+    "audit_completeness": {
+      "status": "known",
+      "value": 0.3,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(audit_complete) / len(tasks)",
+      "confidence": "high",
+      "assumptions": [
+        "A-SIM-004: a task record is audit-complete only if every metre travelled is already legal right-of-way and, where a terminal gap remains, this proposal names the human handover party. Proposed links, footway permission, and destinations with no named handover party are counted as incomplete."
+      ]
     }
   }
 }

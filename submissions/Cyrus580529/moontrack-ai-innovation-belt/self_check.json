@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/changelog.md"
+      ],
       "changed_files": [
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/agent.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/component-chevron-ramp.en.png",
@@ -24,6 +26,8 @@
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/component-observation-point.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/component-platform-unit.en.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/component-platform-unit.png",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/identity-system.en.png",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/identity-system.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/key-areas.en.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/key-areas.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/land-use-structure.en.png",
@@ -36,7 +40,12 @@
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/policy-levers.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/site-overview.en.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/figures/site-overview.png",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/media/cover-en.png",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/media/cover.png",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/media/moontrack-mark-light.png",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/assets/media/moontrack-mark.png",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/assumptions.json",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/changelog.md",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/compliance_matrix.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/design_depth_matrix.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/drawings/a0-boards.en.pdf",
@@ -60,7 +69,9 @@
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/report/narrative.md",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/report/proposal.en.html",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/report/proposal.html",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/risk.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/self_check.json",
+        "submissions/Cyrus580529/moontrack-ai-innovation-belt/simulation.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/sources.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/standard_matrix.json",
         "submissions/Cyrus580529/moontrack-ai-innovation-belt/visual/assets/network-analysis.json",
@@ -72,7 +83,7 @@
       "ai_package_stages": {
         "submissions/Cyrus580529/moontrack-ai-innovation-belt": "formal"
       },
-      "total_bytes": 17987047,
+      "total_bytes": 22322745,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -151,15 +162,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 46,
+        "known_metric_refs_required": 50,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 31,
+          "source": 33,
           "standard": 4,
           "depth": 15,
           "data": 19,
-          "metric": 47
+          "metric": 51
         }
       }
     },

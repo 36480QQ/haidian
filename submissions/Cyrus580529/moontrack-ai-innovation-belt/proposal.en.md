@@ -54,6 +54,28 @@ MoonTrack does not replace the official project name, the Centennial Jing-Zhang 
 | Overall Design Area | How industrial space, urban renewal, mobility, utilities and character are drawn | Expressed jointly through the land-use, building, road, green-space, public-space and phasing layers | [data:geometry/land_use.geojson#lu-osm-277989175], [data:geometry/roads.geojson#ROAD-001] |
 | Key-Area Detailed Design Area | How the three districts reach detailed-design depth | Each given a role, spatial action, AI scenario and implementation dependency | [data:geometry/key_areas.geojson#PROV-KEY-001], [data:geometry/key_areas.geojson#PROV-KEY-002], [data:geometry/key_areas.geojson#PROV-KEY-003] |
 
+### Regional innovation synergy: the belt is itself a stretch of regional corridor
+
+Regional synergy is the easiest thing in a proposal to reduce to "strengthen collaboration with neighbouring parks." This section measures what can be measured first, then discusses mechanism.
+
+**The spatial substrate is measured.** Of the 38 rail stations in the query window, **5 fall inside the overall design scope** (Liudaokou, Xueyuanqiao, Xuezhiyuan, Xitucheng, Jimenqiao), and **a further 7 lie within 800 m of its boundary** (Dazhongsi at just 82 m, plus Zhichun Lu, Qinghua Donglu Xikou, Beishatan, Mudanyuan, Beitaipingzhuang and Wudaokou). Rail alignments inside the scope total **30,014 m** [source:osm-rail-stations-lines]. **The belt does not need a new regional connection built for it; it already sits on one** - the regional question here is not how to reach out, but how to use the gateways that exist.
+
+One result worth recording was not designed. The flagship depot located earlier by minimax optimisation sits **34 m from Liudaokou station**. The siting took only the cycle-lane network and the five elderly-care facilities as input; the algorithm had no knowledge of where any station was. It landed at a station mouth because the shape of the network pushed it there - the service centre of gravity of this corridor and its rail interchange already coincide.
+
+**The cross-regional gateway is Qinghe Railway Station**, 3,256 m from the overall design scope boundary: the origin station of the Beijing-Zhangjiakou high-speed railway, running north to Yanqing and Zhangjiakou. That is not merely a transport fact in this proposal. The narrative spine - a century of Jing-Zhang - is about this very line: a hundred years ago it connected Beijing to Zhangjiakou, and it still connects the same direction today, with the 2022 Winter Olympics corridor added in between. **Regional synergy and cultural narrative are the same object along this line and do not need separate arguments.** Shangdi station lies 2,512 m from the boundary, and the Line 13 / Changping Line interchange at Qinghe runs north towards Shangdi, Xi'erqi and Changping.
+
+On that substrate, this proposal offers a **division of labour** for five partners. It proposes no new corridor and makes no commitment on anyone's behalf:
+
+| Partner | Relation to the belt | Division of labour proposed here | Basis and boundary |
+| --- | --- | --- | --- |
+| **BDA (Yizhuang)** | Home of Beijing's high-level autonomous driving demonstration zone, governed by the same Beijing Measures for Road Testing and Commercial Demonstration of Unmanned Delivery Vehicles (Trial) as this belt's flagship scenario [source:beijing-delivery-robot-management-measures] | **Split by scenario tier, not duplicated.** Yizhuang runs vehicle-grade testing from closed to open roads; this belt runs low-speed, mixed-traffic, elderly and accessibility **service-grade** testing, which Yizhuang's road conditions cannot host. The 62 components and 220 m median terminal gap measured here are precisely the problems that do not arise on a network of Yizhuang's grain | The shared regulation means test protocols and failure cases can be mutually recognised; pilot segments still require designation by each authority, and this proposal claims no cross-district authorisation |
+| **Future Science City** | Existing rail relationship northward via Line 13 / Changping Line | Host the **pilot-to-market translation demand** from its energy and life-science tracks on this belt's public-facing surfaces (the AI Origin Community launch hall, the Dazhongsi roadshow salon) | A complementarity judgement about space and function; it implies no institutional or funding arrangement |
+| **Huairou Science City** | Large scientific facility cluster, no direct rail relationship to this belt | **No spatial linkage claimed, only open data and outputs.** Open data from its facilities can be one source for this belt's public-experience and science-communication content | Distance and the strength of the link mean this can only be a content-level synergy; presenting it as spatial synergy would be dishonest |
+| **Beijing-Tianjin-Hebei** | Qinghe Station on the Jing-Zhang high-speed line, 3,256 m from the boundary | Use the existing Jing-Zhang line as the carrier for narrative and events, extending international communication and the annual programme towards Zhangjiakou (see the events section) | The rail relationship is an existing fact; any cross-province programme requires separate agreement, which this proposal does not presume |
+| **Beiwei Community** | **This proposal could not verify its official definition or spatial boundary** | To be assessed once the organiser supplies material | The review dimension names this partner, but neither the site package nor public channels yielded a citable definition. Under this proposal's rule that what cannot be computed does not enter conclusions, the cell is left open rather than filled with an invented linkage |
+
+**A boundary that has to be stated**: apart from the station counts, rail length and distances, which are measured, the table above is a set of judgements about division of labour. It constitutes no institutional, funding or policy arrangement. The overall design scope boundary is provisional and coarse, so every distance here will change when the official boundary is published.
+
 ### Integrated planning, spatial-industrial fusion and territorial planning innovation
 
 Completing the ten scenario cards of agent.3 exposed a specific planning-technique problem worth stating on its own.
@@ -71,6 +93,15 @@ All of the above are conceptual suggestions at the level of planning method, off
 ## Coordinated Research Area: industry and future-city research
 
 The MoonTrack naming and visual-identity direction is what carries overall recognisability across the three official positionings — the Centennial Jing-Zhang Cultural Belt, the Urban AI Life Experience Belt and the AI Convergence Innovation Belt. The Urban AI Life Experience Belt carries the greatest weight here, because the flagship scenario (Xiaoyue River robotics plus accessibility and elderly-care services) is its concrete landing, matched to Haidian's real demographic structure of 671,000 residents aged 60 and over, 21.47% of the permanent population [source:haidian-2024-statistical-bulletin]. The other two positionings support rather than sit alongside it: the Centennial Jing-Zhang Cultural Belt rests on the specific engineering fact of the Guangou switchback, while the AI Convergence Innovation Belt shares its logical structure with the railway's self-reliant construction history. The visual direction is a water-and-track overprint — the organic curve of the Xiaoyue River laid over the straight grid of rails and AI networks, with a blue-green gradient resolving to moon-white — combined with an abstracted switchback motif. The naming grammar uses "Platform X" (月台X) as a second-level brand prefix, as in Platform Forum and Platform Developer Night, and does not rename the official Three Zones and Two Wings. It should be noted that the requirement to address the five functions and the coordination of the Three Zones and Two Wings comes from the agent-facing open call [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK], not from statutory planning control.
+
+**The mark is measured from site geometry, not drawn.** This version turns the direction above into actual graphic assets. The mark has only two elements: a **moon disc** (moon-white, for the moon and the platform) and the **river** (the measured Xiaoyue River centreline). Inside the disc the river is knocked out, which makes the water-and-track overprint directly visible rather than merely described.
+
+What matters is where that curve comes from: it is the eight reaches in `geometry/green_space.geojson` chained end to end into one continuous 10,051 m polyline. **It is not a decorative arc.** The mark therefore shares its source with everything else in this package and is recomputable - re-running `make_identity.py` reproduces the same graphic. It also settles a practical question: authorship of every visual asset in the package is unambiguous and depends on no third-party material.
+
+The chevron is a **secondary motif**, used on components, wayfinding and event graphics but never inside the primary mark: three elements in one square read as none. The mark stays legible down to 24 px; below that the disc is used alone. Colour, variants, lockups and misuse rules are set out below.
+
+![Identity system: construction, variants and usage](assets/figures/identity-system.en.png)
+
 
 Coordinated research adds no falsely precise redlines. Through the coordination of Urban Character, public space and building layout required by [standard:MOHURD-URBAN-DESIGN-MEASURES], it returns to [data:geometry/land_use.geojson#lu-osm-277989175], [data:geometry/public_space.geojson#PUBLIC-001] and [depth:overall_spatial_structure], showing that industrial strategy must eventually land in a visible, checkable spatial structure.
 
@@ -527,6 +558,44 @@ This is not a sampling error; it follows from the nature of the question. Connec
 That yields a concrete planning conclusion: **the diagnosis holds inside the Overall Design Area, and the remedy lies in the Coordinated Research Area.** JZ-07 is not an Overall Design Area project; it needs coordination across a wider frame. This is exactly what the announcement's three-tier scope is for — had the mobility work stayed inside 11.4 km², this conclusion would never have surfaced, and the flagship scenario would have carried an undiscovered precondition forward. It should be added that the boundary is itself provisional and rough, so this "outside" finding may change when official geometry is issued.
 
 ![Walking and cycling and blue-green public space composite system](assets/figures/mobility-bluegreen.en.png)
+
+### Running the scenario cards as a dispatch ledger: 30 tasks, 3 successes
+
+The preceding sections measured the network. This one measures **tasks**. Ten scenario cards that stop at description give a panel no way to judge whether they can run, so this proposal turns the flagship scenario into a recomputable dispatch ledger, `simulation.json`, submitted under the contract set out in the repository's `docs/simulations.md`.
+
+One thing has to be said first: the supplied template uses "offline **synthetic** trajectories at a fixed seed." **This proposal does not use synthetic trajectories**, because synthetic trajectories only prove we can write JSON — they prove nothing about this city. Every task outcome in the ledger is decided by running Dijkstra on the measured right-of-way graph (571 nodes / 586 edges / 62 components): whether a path exists, how many terminal metres carry no right of way, and how much longer the legal route is than the straight line. No random numbers, no online model calls, no personal data; `python3 analysis_simulation.py` reproduces it byte for byte.
+
+All ten destinations are taken from layers already in the package — five elderly-care facilities, two industry anchors, and the three university features nearest the depot — dispatched under three right-of-way states, for 30 tasks in total [metric:simulation_task_count].
+
+| Round | Right-of-way state | Network-reachable | Delivered | Median terminal gap | Worst terminal gap |
+| --- | --- | --- | --- | --- | --- |
+| **A** | Cycle lanes as measured | 2/10 | **0/10** | 230 m | 652 m |
+| **B** | Plus the proposed 596 m of links | 6/10 | 1/10 | 230 m | 652 m |
+| **C** | Counterfactual: footways permitted | 2/10 | 2/10 | **76 m** | **188 m** |
+
+Overall success rate 10% [metric:simulation_success_rate]. **That number looks bad, and it is precisely the finding of this section.**
+
+**Round A: 0/10.** Under today's right-of-way rules not one of these ten destinations can be served — only 2 of the ten sit in the same component as the depot. Scenario card 02 states that the card "does not run under current right-of-way"; the ledger turns that sentence into ten numbered records with distances and failure reasons attached.
+
+**Round B raises network reachability from 2 to 6 but deliveries only from 0 to 1.** This is the single most useful line in the ledger. The 596 m of new links genuinely joins the network, yet the median terminal gap does not move — still 230 m, with the worst facility still at 652 m. **The construction lands, and most tasks are still blocked at the door rather than on the network** — the same conclusion the previous section reached by an entirely independent route.
+
+**Round C compresses the median terminal gap to 76 m and the worst case to 188 m**, pointing once more at the right-of-way rule itself. But **round C's 2/10 must not be read as "permitting footways makes delivery work"**: OSM footway mapping here is fragmented, connectivity cannot be demonstrated on this data, and round C is evidence about terminal distance only. That limitation is registered as A-SIM-005.
+
+**5 tasks over budget [metric:energy_budget_violations].** The energy budget is deliberately constructed to carry no battery parameter: budget = straight-line distance x 1.5 x unit rate, consumption = legal route length x the same unit rate. The rate cancels, so this count **is exactly the number of tasks whose legal route exceeds 1.5x the straight line** — a purely geometric quantity. This proposal makes no claim about any vehicle's range; the basis is registered as A-SIM-002. The extreme case is SIM-A-08: 648 m as the crow flies, 4,242 m by legal route, a detour factor of **6.55**.
+
+**Audit completeness is only 30% [metric:audit_completeness], and it is the ugliest number this package records about itself.** Two things drive it: rounds B and C depend on right-of-way that does not exist today (the proposed links, and footway permission), and — **for universities and industry anchors this proposal names no human handover party at all**. The five elderly-care facilities have one, written into scenario card 02: facility staff take receipt. The other five destinations do not. That is a real operational gap this proposal cannot close, and it is recorded in the ledger rather than left to hide behind the phrase "the scenario is deliverable." The rule is registered as A-SIM-004.
+
+**What happens with the AI switched off.** The ledger carries a separate human-fallback baseline: for the same doors, a person on foot faces a median terminal gap of 82.8 m, against 249.6 m for the robot. **The robot fails not because the AI is not capable enough, but because it is only permitted on cycle lanes.** Because this is a different evaluation scope from the harness, `docs/simulations.md` requires it to be registered under its own baseline name rather than folded into a reserved metric, and it is.
+
+The ledger as a whole belongs to the standard scenario `robot-delivery-low-speed` [source:open-call-standard-scenarios]. The ten scenario cards map onto the organiser's standard scenario library as follows:
+
+| Scenario card | Standard scenario id |
+| --- | --- |
+| 01 Xiaoyue River patrol delivery, 02 Elderly meal and medicine last 100 m, 04 Community goods shuttle | `robot-delivery-low-speed` |
+| 03 Accessible tactile-paving inspection, 10 Jing-Zhang Heritage Park AI guided walk | `ai-traffic-walkability` |
+| 06 Community elderly AI call post | `ai-health-service-navigation` |
+| 07 Zhongzhi Park embodied-AI sandbox, 08 AI Origin Community open-source launch hall, 09 Dazhongsi international roadshow salon | `enterprise-service-copilot` |
+| 05 Multi-robot intersection trial | `robot-delivery-low-speed` (test scope; remote human supervision online throughout) |
 
 ### Utilities and public services: this round states the boundary only
 
