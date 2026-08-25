@@ -83,7 +83,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **能量神经**——城市智能体的"血管"：
 
-- **建筑级直流母线**：AI 建筑的能量主干，采用 800V 直流配电架构替代传统交流，配合液冷，为高密度算力供给稳定能量（遵循"高压用于距离、负载附近渐进降压、液体冷却实现密度"的设计规则）；
+- **建筑级直流母线**：AI 建筑的能量主干，采用 800V 直流配电架构替代传统交流，配合液冷 [source:E800V-DC-DISTRIBUTION]，为高密度算力供给稳定能量（遵循"高压用于距离、负载附近渐进降压、液体冷却实现密度"的设计规则）；
 - **算电协同 [source:IET-MICROGRID-MAS]**：算力调度与电力调度的协同——算力任务在哪里排队、哪里迁移，电力就按需跟进；AI 机架成为"受控直流微电网"的一环，实现从"电网到计算"全路径的可编程调度。**工程命题的诚实边界**：800V 直流母线、液冷、算电协同与确定性时延等均为方向性技术主张（来自行业公开讨论与产业实践，非本次方案首创），在缺乏正式控规、能源容量、负荷边界与工程地质资料的条件下，本方案一律将其标注为"待验证概念"，不作为确定性技术结论，须经专业能源与市政团队复核后方可进入实施 [source:AGENT-TASKBOOK][depth:overall_spatial_structure]。
 
 **信息神经**——城市智能体的"神经元突触"：
@@ -471,7 +471,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 | 赫拉利《智人之上》向善约束 | HARARI-NEXUS | 仅作思想引用，非技术依据 | 公开书籍引用 |
 | connectome 连接组类比（连接即关系）| CONNECTOME-CONCEPT | 仅作类比，非工程主张 | 公开科学概念 |
 | 800V 直流母线 | ENGINEERING-PARAMS-UNVERIFIED | 待验证工程概念，须专业复核后方可深化 | 未核实假设 |
-| 液冷 | ENGINEERING-PARAMS-UNVERIFIED | 同上 | 未核实假设 |
+| 液冷（AI 机架液体冷却）| E800V-DC-DISTRIBUTION | NVIDIA 800V DC 供电架构文（含液冷配套），技术依据 | 已核实（blogs.nvidia.com）|
 | 算电协同 | IET-MICROGRID-MAS | IET Smart Grid 2026 多智能体分布式控制微电网论文，技术依据 | 已核实（IET Smart Grid）|
 | 东西向流量确定性时延 | ENGINEERING-PARAMS-UNVERIFIED | 同上 | 未核实假设 |
 | 案例1 CNCF·K8sGPT | https://www.cncf.io/projects/k8sgpt/ | 公开项目，引用性质 | 公开来源，待独立交叉核验 |
