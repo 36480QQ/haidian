@@ -107,7 +107,7 @@ Governing a city that thinks cannot rely on slogans but on a mechanism that can 
 
 **Gate five · Risk-transparent (risk flagging).** Every conclusion carries its confidence, its assumptions, and where it might go wrong — nothing hidden. An honest agent's first duty is to state where it might be wrong. Spatial anchor: the Risk Disclosure Screen (one in each of the three key areas).
 
-**Gate six · Knowledge accumulation (governance knowledge base).** Judgments, feedback, reviews, and risks settle into the "urban governance knowledge base," an inheritable public asset. The moat is not any single proposal but a knowledge base that "gets smarter with use." (Industrial evidence: a Japanese Osaka manufacturer's AI QC — veteran tacit knowledge → LLM-structured knowledge base → RAG-assisted new inspectors 96%→99.2%, knowledge base reused across production debugging [source:AI-QC-KNOWLEDGE-BASE-CASE]) Spatial anchor: the Governance Library (Dazhongsi).
+**Gate six · Knowledge accumulation (governance knowledge base).** Judgments, feedback, reviews, and risks settle into the "urban governance knowledge base," an inheritable public asset. The moat is not any single proposal but a knowledge base that "gets smarter with use." (Illustrative case (not independently verified): a Japanese Osaka manufacturer's AI QC — veteran tacit knowledge → LLM-structured knowledge base → RAG-assisted new inspectors, knowledge base reused across production debugging (specific figures not independently verified) [source:AI-QC-KNOWLEDGE-BASE-CASE]) Spatial anchor: the Governance Library (Dazhongsi).
 
 ### Boundary Openness: Letting Non-Agents Share the Same Rules
 
@@ -467,13 +467,13 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 | Case 2 Linux Foundation·Glasswing | https://www.linuxfoundation.org/blog/project-glasswing-… | public project | publicly cited, pending independent cross-check |
 | Case 3 Agentic AI Foundation | https://www.linuxfoundation.org/press/agentic-ai-foundation-… | public project | publicly cited, pending independent cross-check |
 | Case 4 OPEA | https://opea.dev/ | public project | publicly cited, pending independent cross-check |
-| Case 5 IETF·Agentic AI |
-| Connection is nerve / governance is governing connections | MARK-TURNER-BLENDING | Mark Turner conceptual blending, intellectual source | verified (Ten Lectures on Mind and Language, 2009) |
-| Multi-agent city / civic agents | GENERATIVE-AGENTS-2023 | academic paper (Smallville 25-agent community), academic basis | verified (arXiv:2304.03442) |
-| East-west traffic | NOKIA-MBIT-INDEX | Nokia Global network traffic report, data basis | verified (nokia.com/asset/213660) |
-| Build X for agents | MIT-BUILD-X-FOR-AGENT | MIT Sloan 'Who will own the AI agent economy?', academic basis | verified (mitsloan.mit.edu) |
-| 800V DC bus | E800V-DC-DISTRIBUTION | NVIDIA blog (800V DC power architecture for AI factory), technical basis | verified (blogs.nvidia.com) |
-| Green district / blue-green | GREEN-DISTRICT-DESIGN | Orlando Green District smart-city case (flying taxis + EVs + green design), spatial reference | verified (interestingengineering.com) |
+| Case 5 IETF·Agentic AI | https://www.ietf.org/blog/agentic-ai-standards/ | public standard | publicly cited, pending independent cross-check |
+| Connection is nerve / governance is governing connections | MARK-TURNER-BLENDING | Mark Turner conceptual blending, intellectual source | publicly cited (Ten Lectures on Mind and Language, 2009), pending independent cross-check |
+| Multi-agent city / civic agents | GENERATIVE-AGENTS-2023 | academic paper (Smallville 25-agent community), reference citation | publicly cited (arXiv:2304.03442), pending independent cross-check |
+| East-west traffic | NOKIA-MBIT-INDEX | Nokia Global network traffic report, reference citation | publicly cited (nokia.com/asset/213660), pending independent cross-check |
+| Build X for agents | MIT-BUILD-X-FOR-AGENT | MIT Sloan 'Who will own the AI agent economy?', reference citation | publicly cited (mitsloan.mit.edu), pending independent cross-check |
+| 800V DC bus | E800V-DC-DISTRIBUTION | NVIDIA blog (800V DC power architecture for AI factory), reference citation | publicly cited (blogs.nvidia.com), pending independent cross-check |
+| Green district / blue-green | GREEN-DISTRICT-DESIGN | Orlando Green District smart-city case (flying taxis + EVs + green design), spatial reference | publicly cited (interestingengineering.com), pending independent cross-check |
  https://www.ietf.org/blog/agentic-ai-standards/ | public standard | publicly cited, pending independent cross-check |
 
 **Downgrade principle**: for "unpublicly cited, pending independent cross-check assumption" engineering claims, specific numbers or performance implications do not constitute technical commitments of this proposal; if not verifiable, they are deleted or kept as "to be publicly cited, pending independent cross-check".

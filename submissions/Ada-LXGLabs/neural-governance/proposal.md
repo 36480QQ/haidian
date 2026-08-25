@@ -109,7 +109,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 **第五关 · 明说自己会错（风险透明）。** 每个结论都标上"把握多大、假设是什么、可能错在哪"，不藏着掖着。诚实的智能体，最该明说自己可能错在哪。空间落点：风险公示屏（三片区各一）。
 
-**第六关 · 越用越懂（知识沉淀）。** 判断、反馈、复核、风险，统统沉淀进"城市治理知识库"，是可继承的公共资产。护城河不是某一次方案，是"越用越懂"的知识库。（产业实证：日本大阪制造企业 AI 质检——老师傅隐性知识经 LLM 结构化为知识库，RAG 检索辅助新人，准确率 96%→99.2%，知识库被产线调试跨环节复用 [source:AI-QC-KNOWLEDGE-BASE-CASE]）空间落点：治理图书馆（大钟寺）。
+**第六关 · 越用越懂（知识沉淀）。** 判断、反馈、复核、风险，统统沉淀进"城市治理知识库"，是可继承的公共资产。护城河不是某一次方案，是"越用越懂"的知识库。（启发性案例（未经独立核验）：日本大阪制造企业 AI 质检——老师傅隐性知识经 LLM 结构化为知识库，RAG 检索辅助新人，知识库被产线调试跨环节复用（具体数据未经独立核验） [source:AI-QC-KNOWLEDGE-BASE-CASE]）空间落点：治理图书馆（大钟寺）。
 
 ### 边界的开放性：让非智能体共享同一规则
 
@@ -473,20 +473,20 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 | 赫拉利《智人之上》向善约束 | HARARI-NEXUS | 仅作思想引用，非技术依据 | 公开书籍引用 |
 | connectome 连接组类比（连接即关系）| CONNECTOME-CONCEPT | 仅作类比，非工程主张 | 公开科学概念 |
 | 800V 直流母线 | ENGINEERING-PARAMS-UNVERIFIED | 待验证工程概念，须专业复核后方可深化 | 未核实假设 |
-| 液冷（AI 机架液体冷却）| E800V-DC-DISTRIBUTION | NVIDIA 800V DC 供电架构文（含液冷配套），技术依据 | 已核实（blogs.nvidia.com）|
-| 算电协同 | IET-MICROGRID-MAS | IET Smart Grid 2026 多智能体分布式控制微电网论文，技术依据 | 已核实（IET Smart Grid）|
+| 液冷（AI 机架液体冷却）| E800V-DC-DISTRIBUTION | NVIDIA 800V DC 供电架构文（含液冷配套），参考引用 | 公开来源（blogs.nvidia.com），待独立交叉核验|
+| 算电协同 | IET-MICROGRID-MAS | IET Smart Grid 2026 多智能体分布式控制微电网论文，参考引用 | 公开来源（IET Smart Grid），待独立交叉核验|
 | 东西向流量确定性时延 | 投稿者专业判断 | 连接作为服务须有可预期 QoS；工厂机器人同步/高精度作业要求确定性时延（投稿者多年通信研究判断 + 工业自动化共识）| 投稿者专业判断 |
 | 案例1 CNCF·K8sGPT | https://www.cncf.io/projects/k8sgpt/ | 公开项目，引用性质 | 公开来源，待独立交叉核验 |
 | 案例2 Linux基金会·Glasswing | https://www.linuxfoundation.org/blog/project-glasswing-… | 公开项目 | 公开来源，待独立交叉核验 |
 | 案例3 Agentic AI Foundation | https://www.linuxfoundation.org/press/agentic-ai-foundation-… | 公开项目 | 公开来源，待独立交叉核验 |
 | 案例4 OPEA | https://opea.dev/ | 公开项目 | 公开来源，待独立交叉核验 |
-| 案例5 IETF·Agentic AI |
-| 连接即神经 / 治理即治理连接 | MARK-TURNER-BLENDING | Mark Turner 概念整合理论（blending），思想源头 | 已核实（《心智与语言十讲》2009）|
-| 多智能体城市/城市智能体 | GENERATIVE-AGENTS-2023 | 学术论文（Smallville 25 智能体社区），学术依据 | 已核实（arXiv:2304.03442）|
-| 东西向流量 | NOKIA-MBIT-INDEX | Nokia 全球网络流量报告，数据依据 | 已核实（nokia.com/asset/213660）|
-| 为 Agent 造 X | MIT-BUILD-X-FOR-AGENT | MIT Sloan《谁将拥有 AI Agent 经济》，学术/分析依据 | 已核实（mitsloan.mit.edu）|
-| 800V 直流母线 | E800V-DC-DISTRIBUTION | NVIDIA 官方博客（800V DC 供电架构/AI 工厂），技术依据 | 已核实（blogs.nvidia.com）|
-| 绿色城区/蓝绿系统 | GREEN-DISTRICT-DESIGN | 奥兰多 Green District 智慧城市案例（飞行出租车+EV+绿色设计），空间设计参考 | 已核实（interestingengineering.com）|
+| 案例5 IETF·Agentic AI | https://www.ietf.org/blog/agentic-ai-standards/ | 公开标准 | 公开来源，待独立交叉核验 |
+| 连接即神经 / 治理即治理连接 | MARK-TURNER-BLENDING | Mark Turner 概念整合理论（blending），思想源头 | 公开来源（《心智与语言十讲》2009），待独立交叉核验|
+| 多智能体城市/城市智能体 | GENERATIVE-AGENTS-2023 | 学术论文（Smallville 25 智能体社区），参考引用 | 公开来源（arXiv:2304.03442），待独立交叉核验|
+| 东西向流量 | NOKIA-MBIT-INDEX | Nokia 全球网络流量报告，参考引用 | 公开来源（nokia.com/asset/213660），待独立交叉核验|
+| 为 Agent 造 X | MIT-BUILD-X-FOR-AGENT | MIT Sloan《谁将拥有 AI Agent 经济》，参考引用 | 公开来源（mitsloan.mit.edu），待独立交叉核验|
+| 800V 直流母线 | E800V-DC-DISTRIBUTION | NVIDIA 官方博客（800V DC 供电架构/AI 工厂），参考引用 | 公开来源（blogs.nvidia.com），待独立交叉核验|
+| 绿色城区/蓝绿系统 | GREEN-DISTRICT-DESIGN | 奥兰多 Green District 智慧城市案例（飞行出租车+EV+绿色设计），空间设计参考 | 公开来源（interestingengineering.com），待独立交叉核验|
  https://www.ietf.org/blog/agentic-ai-standards/ | 公开标准 | 公开来源，待独立交叉核验 |
 
 **降级原则**：凡"未核实假设"的工程主张，其具体数字或性能暗示不作为本方案的技术承诺；若无法补证，将删除或维持"待验证"标注。

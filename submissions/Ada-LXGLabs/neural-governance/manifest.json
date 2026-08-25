@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "deepseek-v4-pro"
   },
-  "generated_at": "2026-08-24T07:05:24Z",
+  "generated_at": "2026-08-25T04:30:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a7f2e563bfab4d6217b811c6656a2c6aacd138b0813bf9005419a318d721a0a6"
+      "sha256": "ab7ac31ccd795b0c8ba63eda870a44c8bc2c19b2c74e950c9fbb70ec750811c0"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "962744085d0c75faf7f7fec0a5dd8e469d94b4c46b7dbb5fe99fb4db79a6773f"
+      "sha256": "08059d7fde844cb89259ad3afd39d4c96fb7f2f7fe9bdc26c969b2d7afe8681a"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8187c70f22f1ab446723b14a8881723bf8a8157e7d3e3f0dc540bb03dbe483bb"
+      "sha256": "1ac6b080e4401064d26b99a05bffe800198a0fd1741b6c67eeb5f38bdd8c3592"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "341d33a41df80632de552a2775cf02a772c64efe188e23611874a653c6e8528d"
+      "sha256": "18f12012e53fe0fe7f6bf206b352a5da6230271ea6e5a300b566af5d52ab2ee6"
     },
     {
       "path": "report/narrative.md",
@@ -107,14 +107,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "164ca180ef5ce3ea30afa75cd6ae280fae8a02c299e7d67d2a3c4d68bca82a27"
+      "sha256": "1f2ae05d9ac83157e2074a4b669cd5bcd22295d0dff088475c1c65803f20fc9b"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "575e77217074ae736a0c6820be0ac0d62b7aa1663d4dde6496c51b9556195ec8"
+      "sha256": "4f439ae5562c8cb0850ed1b4bed0e73ee5bb30b529bdd8ea760c6ec01d1e9735"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "abdfad13130f36f809eb7334bf4e51e9c242c9f73e863ff44bd1d264c1a6dcc4"
+      "sha256": "05013a61227f49be962e38c15876bcda23cc25108b3305a632c68cd6c9fc9419"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2c422c884957c9b784c66a93c45a26bbc14ee94fd6606f2b87d9bc20c0f55817"
+      "sha256": "be79a2737f2e57c9aae48c49cccc7e49e0bc782cbeceece4726035ec3c97b828"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6f5c036d33f4086596b5dc3b89674bf5cf455269426b504df18161c370e0a23e"
+      "sha256": "70dc2a12d91c05792076e22af9e767fadfbbdbbe4c037a12b061010a10d982ae"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e9e3b0c85554feda7efd092933324038097973d17c27462c8a22b07449803579"
+      "sha256": "64099682b5881f6c34a384487c2f9512b6fc56410ee01076cb670ff6ff5b3c05"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "196b77c82c2c778ebcaa391b68f241389f6996cf77047c7b03a1c003072186a4"
+      "sha256": "9ebc3547e001f39215de7d3498182a9ac4ceaf3346421c88ce5e2b07b1870793"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -283,7 +283,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "dcfa98854cb1dd0b6952a99c350e7f512e2d5052c5db3c81b739f84dfa38cf45"
+      "sha256": "ac6611947211ccabe6695c4ea4008e41103e6c716b8746e9e79b771ea5e47945"
     }
   ],
   "validation_claim": {
