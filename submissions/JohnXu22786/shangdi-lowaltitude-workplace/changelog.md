@@ -26,3 +26,19 @@
 - P1 数字与口径一致性：图件全部数值与 metrics.json/proposal.md 逐项核对（site≈1141万 m²、green≈0.329、public≈0.007、计数 3/21/12/13/7/5 等）；全套 doc 链（figures→HTML→manifest）保持同径。
 - 机器一致性：render_proposal_html.py 重出 report HTML（13 个规范 ## 标题保持）；4 个 HTML 表面重嵌 OFL Noto Sans SC 子集（family NotoSansSC-Static、font-family-first override、单份 data URI）；manifest 40 项 hash 刷新；新增文档集未变（figures 10 + logo 1 + PDF 4 + HTML 4 + md 2）。
 - Valroot 门禁 2026-08-25 四门重新运行（self_check.json 持久化）。
+
+## v0.4.0 - 2026-08-25 (repair round-5, CocoSgt PR #3854 78.0/100)
+
+- P0 单位与数量级修正（英文核心指标图）：全部面积表述改为 km²/ha 双单位且中英一致——site ≈11.41 km²（≈1141 ha）、green ≈3.76 km²（≈376 ha）、public ≈0.076 km²（≈7.6 ha）、footprint ≈0.112 km²（≈11.2 ha）；删除旧版 "1141.3 M m²" 式错误换算；中文「约 1141 万平方米」与英文 "≈11.41 million m²" 逐项核对实质等价；green_ratio≈0.329、public_space_ratio≈0.007 中英一致。
+- P0 图件重排（site-overview / land-use-structure / key-areas / mobility-bluegreen / metrics-evidence 中英 10 张全部重绘为 12×8in @150dpi）：画布分区化（主图+图例列+口径面板），标题 20pt、图例与标签 ≥11.5pt、注释 ≥12pt；每图含双语 PROVISIONAL 戳（临时概念边界·非官方红线·官方数据发布后复算）、比例尺与指北针；底部戳不再贴边裁切（机器校验边缘 10px 带 ink=0）。
+- P0 地图底图修正：识别并修复全部图层 EPSG:4326（度）与投影混合问题，图件统一投影至 CGCS2000/3°GK 117E（米），沿走廊主轴旋转展开呈现（等比例+概念周边语境底图，标注「概念周边语境（示意）」），消除旧版 31 倍纵向压扁导致的标签叠压与类别丢失；land-use 图表纵向标签不再左缘裁切（左侧留白 0.205）；metrics-evidence 面积/比率/计数三面板分轴且刻度不越界（A 面板 0–1550ha、B 0–50%、C 0–26 计数显式刻度）。
+- P0 A0/A3 中英文板册重出：A0 2 页（首页标题 60pt≥60pt、副题/警示分层排布、面板无文字叠压、底栏单行来源注、去冗余图注）、A3 6 页（封面+5 图件页，imshow 轴关闭幽灵刻度）；4 份 PDF 逐页栅格化校验通过（ink 阈值与边缘带 0 墨）。
+- P0 载人属性统一时点：场景卡①、节点三、试点C、分期计划与图面口径完全一致——近中期（0—4 年）仅非载人勤务（巡检、物资、应急投放）+地面接驳协同，任何一期不承诺载人运营；载人 eVTOL 通勤仅远期研究方向，须取得适航审定/运营人运行合格审定/空域航线批准/起降场设施审定四类前置批准；figures key-areas 与 A0/A3 均按此口径表述。
+- P1 机器证据闭环：10 张图件+4 份 PDF 生成时执行 matplotlib renderer 文本 AABB 两两重叠/出画布检查（0 违规，逐图记录）；生成后 PIL/PyMuPDF 实测 ink（地图 ≥0.08、图表 ≥0.10：site≈0.28、key-areas≈0.27、mobility≈0.16、land-use≈0.12、metrics≈0.13；A0 页 0.06—0.15、A3 页 0.10—0.22）与 10px 边缘带裁切检查（全部 0.0）；结果写入 self_check.json[figure_qc]（ok/ink_ok/clip_clear/overlap_clear=true，方法说明见该字段），同时删除 assets/ 下非白名单文件（figure_qc.json、probe_test.txt）。
+- P1 数字一致性：AI 技术协议表表头改为「技术条目/内容要点」，与产业测试验证场景表（T1—T3 共 3 行）不再混淆计数；proposal.md 与 metrics.json 的 industry_test_scenario_count=3 严格对应；source/case/scenario/persona/program 计数中英一致。
+- Valroot 四门 + validate_local_submission 于最终文件态重新运行并持久化（self_check.json review_status=formal-review-ready；manifest validation_claim.self_checked=true，self_check.json 的 figure_qc 注入后同步刷新 hash）。
+## v0.4.1 - 2026-08-25 (repair round-5 finalization, PR #3854)
+
+- 终态复现与机器证据闭环：以 sd_fig_r5/gen_figures_r5.py 对全部 10 张中英图件与 4 份 A0/A3 板册做确定性复现（PNG 与既有文件逐字节一致，证明图面即该生成器输出的精确产物；PDF 因内嵌时间戳重新导出）；生成时 matplotlib renderer AABB 文本重叠/出画布检查复跑通过（TEXT_QC_OK，0 违规）；生成后 PIL/PyMuPDF 实测：10 张 PNG ink 0.1188—0.2822（地图 ≥0.08、图表 ≥0.10 全过）、16 个 PDF 页 ink 全部达阈、10px 边缘带墨占比全为 0.0。
+- figure_qc 持久化位置确认：assets/figure_qc.json 会被确定性门禁按「assets 仅允许图片扩展名」拒绝，故机器 QC 证据只写入 self_check.json[figure_qc]（ok/ink_ok/clip_clear/overlap_clear=true、summary/method/checks 逐图逐页记录），并在四门自检后最后一次注入，随后刷新 manifest 中 self_check.json 的 sha256；终态 re-run：score_rubric 100.0（reviewer_gaps 空、无强制拒收）、self_check 四门 PASS（formal-review-ready）、validate_local_submission PASS。
+- 终态文件集与哈希：10 图（zh/en 各 5）+logo+4 PDF+4 HTML+2 md+9 GeoJSON+7 矩阵/元数据文件共 41 项声明全部 hash 一致；无 stray 文件；agent.json 未触碰；proposal.md/proposal.en.md/metrics.json/HTML/图面数值口径一致（site ≈11.41 km²≈1141 ha、green_ratio≈0.329、public_space_ratio≈0.007、载人属性统一口径）。
