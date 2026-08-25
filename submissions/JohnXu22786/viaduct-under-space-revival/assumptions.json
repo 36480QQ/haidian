@@ -42,6 +42,20 @@
       "statement_en": "AI-generated activity copy requires human review; no overstated claims.",
       "category": "content_governance",
       "status": "accepted_limitation"
+    },
+    {
+      "assumption_id": "A-TRADEMARK-001",
+      "statement_zh": "截至提交，未完成官方商标检索与在先权利核查；「桥下智环」「UNDER·JZ」及全部标识图样按内部工作代号处理，限制外部注册与商用，直至完成在先权利检索与合法化核查。",
+      "statement_en": "No official trademark search completed at submission; all names and marks are internal working codenames restricted from external registration/use until clearance.",
+      "category": "brand_rights",
+      "status": "accepted_limitation"
+    },
+    {
+      "assumption_id": "A-LANDUSE-001",
+      "statement_zh": "用地单一口径（8 类占比）仅按本包 provisional 几何在 EPSG:4548 聚合复算，置信等级低；官方几何发布后按同一公式复算并替换所有展示数值。",
+      "statement_en": "The single land-use caliber (8 classes) is aggregated from provisional package geometry in EPSG:4548 (low confidence); recomputed by the same formula on official geometry release.",
+      "category": "data_boundary",
+      "status": "accepted_limitation"
     }
   ]
 }
