@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "One Jing-Zhang Life Corridor, seven 15-minute life-support circles and three public-institution landmarks repair transitions across a complete life; ecology becomes daily infrastructure, AI stays quiet in daily life, visible at decision nodes and optional end to end, while contemporary space connects railway spirit, Chinese civilization and global content technology."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v3.0-review-response"
+iteration: "v3.2-evidence-alignment"
 ---
 
 # JING-ZHANG FOR LIFE / 京张一生
@@ -93,6 +93,8 @@ Six public AI rights are the rights to know, to explanation, to choose, to an of
 ### Full-Stack AI Ecosystem and Two-Wing Transmission
 
 The full stack is not a technology procurement list. It is a spatial conversion chain with public gates: **land and reversible space → compute and edge infrastructure → data and public rights → funds and patient capital → talent and complete life → R&D and open briefs → bounded validation → enterprise services and translation → public adoption and annual review**. Zhongzhiyuan hosts controlled validation, AI Origin embeds talent and R&D within complete-life support, and Dazhongsi hosts content-native business and international expression. The Zhongguancun wing provides IP, capital, compliance and enterprise services; the Xiaoyuehe wing provides public experience, blue-green space and scenario testing. Failure at a rights, safety, ecological or operating gate stops the flow.[data:visual/assets/ai_ecosystem_and_conversion.json#layers]
+
+![Full-stack AI ecosystem and two-wing transmission](assets/figures/ai-ecosystem.en.png)
 
 Scenario access follows seven steps: an open problem can also be submitted offline; the operator screens completeness; specialists review safety, privacy, accessibility and ecology; residents judge public value; a time- and place-bounded reversible pilot runs; a public summary and appeal channel open; then the pilot stops, changes or scales. This prevents both technology in search of a use and scenario review hidden inside a company.[data:visual/assets/ai_ecosystem_and_conversion.json#scenario_application_review]
 

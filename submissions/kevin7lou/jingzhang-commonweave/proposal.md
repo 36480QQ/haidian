@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以一条京张人生长廊、七个15分钟人生支持圈和三座公共制度地标，修复从童年到生命终章的人生转折；让生态成为日常基础设施，让AI日常隐身、节点可见、全程可选择，并以当代空间语言连接京张铁路精神、中华文明与全球内容科技。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v3.0-review-response"
+iteration: "v3.2-evidence-alignment"
 ---
 
 # 京张一生 / JING-ZHANG FOR LIFE
@@ -93,6 +93,8 @@ iteration: "v3.0-review-response"
 ### AI 全栈生态与两翼传导
 
 全栈不是一张技术采购清单，而是一条带公共门槛的空间转化链：**土地与可逆空间 → 算力与端侧设施 → 数据与公共权利 → 基金与耐心资本 → 人才与完整生活 → 研发与开放课题 → 受控验证 → 企业服务与转化 → 公共采用与年度复盘**。众智园承担可控验证，AI 原点把人才支持和研发嵌入完整生活，大钟寺承担内容新业态与国际表达；中关村翼提供知识产权、资本、合规和企业服务，小月河翼提供公众体验、蓝绿空间和场景测试。任何权利、安全、生态或运营门未通过即停止。[data:visual/assets/ai_ecosystem_and_conversion.json#layers]
+
+![AI全栈生态与两翼传导](assets/figures/ai-ecosystem.png)
 
 场景开放采用七步流程：非技术问题也可线下提交；运营者做完整性筛查；安全、隐私、无障碍和生态专业审查；居民判断公共价值；限时限地可逆试点；公开摘要并受理申诉；最终停止、修订或扩展。由此避免“有技术就找场景”，也避免场景评审只在企业内部完成。[data:visual/assets/ai_ecosystem_and_conversion.json#scenario_application_review]
 

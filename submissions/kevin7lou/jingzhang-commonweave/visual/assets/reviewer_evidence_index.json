@@ -2,7 +2,8 @@
   "schema_version": "0.2.0",
   "source_reviews": [
     "https://github.com/open-city-ai/haidian/pull/3968#pullrequestreview-5007754386",
-    "https://github.com/open-city-ai/haidian/pull/3968#pullrequestreview-5015266497"
+    "https://github.com/open-city-ai/haidian/pull/3968#pullrequestreview-5015266497",
+    "https://github.com/open-city-ai/haidian/pull/3968#pullrequestreview-5015420579"
   ],
   "actions": [
     {
@@ -37,7 +38,7 @@
       "issue_zh": "AI全栈产业空间",
       "evidence": [
         "visual/assets/ai_ecosystem_and_conversion.json",
-        "assets/figures/land-use-structure.png"
+        "assets/figures/ai-ecosystem.png"
       ],
       "completion_test_zh": "九层全栈与两翼传导"
     },
@@ -98,6 +99,27 @@
         "drawings/a3-booklet.en.pdf"
       ],
       "completion_test_zh": "code/等宽元素/语言切换均路由到JZReview；中英网页首屏和A3封面高对比声明AI生成、非现场、非官方结果与临时边界"
+    },
+    {
+      "id": "R-11",
+      "issue_zh": "用地结构图与AI全栈图错位，指标卡来源角色混写",
+      "evidence": [
+        "assets/figures/land-use-structure.png",
+        "assets/figures/land-use-structure.en.png",
+        "assets/figures/ai-ecosystem.png",
+        "assets/figures/ai-ecosystem.en.png",
+        "assets/figures/metrics-evidence.png",
+        "assets/figures/metrics-evidence.en.png",
+        "proposal.md",
+        "proposal.en.md",
+        "visual/index.html",
+        "visual/index.en.html",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
+      ],
+      "completion_test_zh": "FIG.02只呈现四类概念功能区、七类支持与14个载体；AI九层全栈移至FIG.02A；FIG.05每张卡分别标明设计构成、登记指标或混合证据及精确JSON路径"
     }
   ]
 }
