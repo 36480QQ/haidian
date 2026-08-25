@@ -34,6 +34,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -158,18 +159,28 @@ def script_path(repo_root: Path, name: str) -> Path:
 
 
 def run_json_command(command: list[str]) -> dict:
-    completed = subprocess.run(command, capture_output=True, text=True, check=False)
-    if completed.stdout.strip():
+    completed = subprocess.run(
+        command,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        env={**os.environ, "PYTHONUTF8": "1", "PYTHONIOENCODING": "utf-8"},
+        check=False,
+    )
+    stdout = completed.stdout or ""
+    stderr = completed.stderr or ""
+    if stdout.strip():
         try:
-            parsed = json.loads(completed.stdout)
+            parsed = json.loads(stdout)
         except json.JSONDecodeError:
-            parsed = {"raw_stdout": completed.stdout}
+            parsed = {"raw_stdout": stdout}
     else:
         parsed = {}
     return {
         "returncode": completed.returncode,
         "stdout": parsed,
-        "stderr": completed.stderr.strip(),
+        "stderr": stderr.strip(),
     }
 
 
@@ -328,14 +339,14 @@ def build_prompt(review_input: dict) -> str:
             "- Whether the package can enter formal professional review",
             "- Seven-dimension rubric scores and comments using the supplied `rubric_dimensions[].dimension_id` values",
             "- Agent taskbook comments inside the relevant rubric comments when agent_taskbook_review_dimensions is present",
-            "- Data gaps and repair actions",
+            "- Data gaps, current blocking repair actions, and structured non-blocking conditional follow-ups",
             "- `pr_comment_markdown`: concise Markdown for a PR comment",
             "",
             "Important: deterministic validation and spatial review results are evidence. Treat blocking self-checks, known blockers, and missing official geometry as serious readiness limits.",
             "Treat background_only, provisional_only, and needs_review registry entries as non-formal evidence unless the submitted package separately provides reviewed official/cleared evidence.",
             "Version 2 bilingual deliverables are mandatory. A missing, incomplete, malformed, or incorrectly mapped Chinese/English counterpart is a blocking package-readiness failure. Historical version 1 packages remain compatible; review their available language without inventing missing content. Human reviewers must still compare translated claims, metrics, evidence, and figure positions for substantive equivalence.",
             "When English counterparts are present, the multimodal packet includes language-paired figure, PDF first-page, and HTML screenshot evidence. Do not reduce expression_completeness merely because a counterpart is absent from the multimodal packet; the deterministic bilingual gate and human package review own that mapping check.",
-            "Organizer-owned missing geometry or official data is a data gap, not a participant repair. If you include an organizer-owned follow-up in required_next_actions_zh, prefix it with exactly `组织方：` or `主办方：`; official/正式 wording alone does not establish ownership. Any action asking the participant to correct, remove, clarify, or replace a claim remains participant-controlled even when it mentions official boundaries or geometry. Record organizer-owned items in data_gaps_zh; required_next_actions_zh must contain participant-controlled repairs and must not block featured-candidate solely because organizer data still needs recalculation.",
+            "Organizer-owned missing geometry or official data is a data gap, not a participant repair. Record the missing input itself in data_gaps_zh. Put work that becomes due only after a future trigger in conditional_followups with blocking_now=false, a concrete trigger, and owner=participant|organizer|external|shared. For example, a participant-side full recalculation after official data arrives is a conditional follow-up owned by the participant, not a current blocker. required_next_actions_zh and every rubric required_repairs_zh entry must contain only participant-controlled defects that can be repaired in the current package before intake. Any current action asking the participant to correct, remove, clarify, or replace an unsupported claim remains blocking even when it mentions official boundaries or geometry. Ambiguous ownership or timing stays fail-closed as a current repair; do not infer it from keywords or substrings. The legacy exact prefixes `组织方：` and `主办方：` remain a fallback only for an organizer-owned item mistakenly placed in required_next_actions_zh.",
             "If pre-submit self-check, spatial review, machine visual-packaging checks, or professional evidence review is FAIL, the package cannot enter formal professional scoring.",
             "",
             "Submission path:",
@@ -374,8 +385,14 @@ def build_template(review_input: dict) -> str:
     for dimension in RUBRIC_DIMENSIONS:
         lines.append(f"- `{dimension['dimension_id']}` {dimension['title_zh']}: TODO")
     lines.append("")
-    lines.append("## Data Gaps And Repairs")
+    lines.append("## Data Gaps")
     lines.append("- TODO")
+    lines.append("")
+    lines.append("## Current Blocking Repairs")
+    lines.append("- TODO")
+    lines.append("")
+    lines.append("## Conditional Follow-ups (Non-Blocking)")
+    lines.append("- Action / trigger / owner: TODO")
     lines.append("")
     lines.append("## Recommendation")
     lines.append("TODO")
