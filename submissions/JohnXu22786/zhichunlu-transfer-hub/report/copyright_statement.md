@@ -5,3 +5,15 @@ All submitted text, geometry, diagrams, figures, logos, PDFs, and static HTML as
 Scope notice: this package is published for community display and review only (COMMUNITY-DISPLAY-ONLY). The Logo, figures and geometry are original self-generated assets of the participants; no co-copyright is asserted over any third-party material. The Noto Sans SC font is embedded as OFL-1.1 subsets. No remote assets are required by any HTML deliverable.
 
 中英实质等值已由参与方人工核对（声明式）。
+
+## 品牌在先权利与使用边界（Trademark / prior-rights note）
+
+At this concept stage no official trademark or prior-rights search has been completed for the
+proposed names and marks (e.g. "知春路智核 / Zhichun Road Smart-Core", "ZRC", "Smart-Core Plaza",
+"AI Mobility Service Hall", "Smart Transit Link", slogans and logo). Until clearance is obtained,
+all such names and marks are treated as internal working codenames (内部工作代号) used only within
+this proposal package; they are restricted from external use, external promotion and any
+registration, filing or commercial application. Any commercial or external use requires a formal
+trade-mark/prior-rights search and, where applicable, a clearance opinion before use. The logo and
+brand assets remain self-generated original assets of the participants (COMMUNITY-DISPLAY-ONLY),
+consistent with sources.json entries ASSET-LOGO / ASSET-FIGURES and the manifest role notes.

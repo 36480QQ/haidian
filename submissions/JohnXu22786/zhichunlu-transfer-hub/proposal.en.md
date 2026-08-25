@@ -6,7 +6,7 @@ translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Anchored on the Zhichun Road rail hub (Lines 10/13 interchange), this concept organizes a 500 m-radius station-city integration 'Smart-Core': a Smart-Core Plaza (station-front distribution + urban living room), an AI Mobility Service Hall (commute assistant, barrier-free guidance, real-time crowd visualization, human-service fallback), and a Smart Transit Link (weather-protected corridor + multi-modal transfer). A slow-traffic-first radial transfer network covers 5-10 minute access, AI scenarios are embedded in daily commuting, data is anonymously aggregated with human review, and facilities are modular and reversible. Everything is a concept suggestion on a provisional boundary; values are recomputed when official data is published."
+summary: "Anchored on the Zhichun Road rail hub (Lines 10/13 interchange), this concept organizes a 500 m-radius station-city integration 'Smart-Core': a Smart-Core Plaza (station-front distribution + urban living room), an AI Mobility Service Hall (commute assistant, barrier-free guidance, real-time crowd visualization, human-service fallback), and a Smart Transit Link (weather-protected corridor + multi-modal transfer). A slow-traffic-first radial transfer network supports the 5-10 minute accessibility goal (to be verified against official network data), AI scenarios are embedded in daily commuting, data is anonymously aggregated with human review, and facilities are modular and reversible. Everything is a concept suggestion on a provisional boundary; values are recomputed when official data is published."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 iteration: "v1.1"
@@ -16,9 +16,15 @@ OPEN CITY · HAIDIAN — Concept Proposal for the Centennial Jing-Zhang AI Innov
 
 ## Design Basis and Source List
 
-This proposal takes the "OPEN CITY · HAIDIAN Centennial Jing-Zhang AI Innovation Belt Urban Design Call Taskbook" as its overall basis and references the following materials. First, statutory plans: the Beijing Master Plan (2016-2035), the Haidian District Plan (Territorial Spatial Plan, 2017-2035) and the regulatory detailed plans under preparation. Second, special and sector basis: Beijing rail transit network planning, public materials on Zhichun Road station interchange and passenger flows, the Code for Urban Rail Transit Network Planning, the Barrier-Free Environment Law of the People's Republic of China, and Beijing urban renewal policies. Third, district research: industry research on the Zhongguancun-Xueyuan Road innovation corridor and site survey records of the electronics information districts. Fourth, data-method hypotheses: the idea of anonymously aggregated public anonymized data (bus smart-card, bike-sharing, mobile signaling) as a methodology. All boundaries in this proposal are provisional initial calibers to be unified after official geometry recalculation by the organizer; all area, scale and investment figures are concept calibers for direction-setting and option comparison only, not statutory planning commitments, and are not used for accounting or approval. Site photographs, survey sketches, survey records and passenger-flow style data cannot currently be verified from public channels; this proposal treats all of them strictly as "hypotheses pending verification," never as established facts.
+This proposal takes the "OPEN CITY · HAIDIAN Centennial Jing-Zhang AI Innovation Belt Urban Design Call Taskbook" as its overall basis ([source:DATA-SRC-AGENT-TASKBOOK-2026-05-18]) and references the following materials. First, statutory plans: the Beijing Master Plan (2016-2035) ([source:DATA-SRC-BEIJING-MASTER-PLAN-2035]) and the Haidian District Plan (Territorial Spatial Plan, 2017-2035) ([source:DATA-SRC-HAIDIAN-DISTRICT-PLAN-2019]).
 
-> **Evidence anchors**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509], [source:DATA-SRC-AGENT-TASKBOOK-20260518] (organizer announcement and taskbook are the textual basis).
+Second, special and sector basis: Beijing rail transit network planning ([source:DATA-SRC-RAIL-NETWORK-PLAN-2022]), public materials on Zhichun Road station facilities ([source:DATA-SRC-BJSUBWAY-ZHICHUNLU-STATION]), the Code for Urban Rail Transit Network Planning GB/T 50546-2018 ([source:DATA-SRC-RAIL-NETWORK-STD-GBT50546]), the Barrier-Free Environment Law ([source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW]), the Design Code for Accessibility GB 50763-2012 ([source:DATA-SRC-ACCESSIBILITY-DESIGN-STD-50763]), the Beijing Urban Renewal Regulation ([source:DATA-SRC-BEIJING-URBAN-RENEWAL-REG-2022]) and the Complete Residential Community Construction Standard ([source:DATA-SRC-COMPLETE-COMMUNITY-STD-2020]).
+
+Third, district research: the Zhongguancun Science City plan and core-area scope ([source:DATA-SRC-ZHONGGUANCUN-SCIENCE-CITY]) and site survey records of the electronics information districts. Fourth, data-method hypotheses: anonymously aggregated public anonymized data (bus smart-card, bike-sharing, mobile signaling) as a methodology ([source:DATA-SRC-ZHICHUNLU-TRAFFIC-HYPOTHESIS-2026]).
+
+Special notes: (1) as of the submission date no publicly verifiable full text of any regulatory detailed plan under preparation exists for this district; this proposal does not use any unpublished detailed plan as a design basis and treats such content as "to be checked after official publication"; (2) all boundaries in this proposal are provisional initial calibers to be unified after official geometry recalculation by the organizer; all area, scale and investment figures are concept calibers for direction-setting and option comparison only, not statutory planning commitments, and are not used for accounting or approval. Site photographs, survey sketches, survey records and passenger-flow style data cannot currently be verified from public channels; this proposal treats all of them strictly as "hypotheses pending verification," never as established facts.
+
+> **Evidence anchors**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-2026-05-09], [source:DATA-SRC-AGENT-TASKBOOK-2026-05-18] (organizer announcement and taskbook are the textual basis).
 
 ## Three-Level Scope Framework
 
@@ -34,7 +40,7 @@ Following the taskbook, this proposal adopts a three-level framework: coordinate
 
 Caliber note: the 500 m radius is used only as the concept caliber of pedestrian accessibility in the key area (5-10 minute walk); it is never a denominator of any area indicator. The overall design scope corresponds to the ~11.4 km² area constraint in the official announcement; precise area values always follow metrics.site_area_sqm and the official recalculation, and the text shows rounded figures only.
 
-> **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK-20260518], [metric:site_area_sqm] (three-level framework follows the taskbook text and provisional geometry).
+> **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK-2026-05-18], [metric:site_area_sqm] (three-level framework follows the taskbook text and provisional geometry).
 
 Under the taskbook's three positionings (Centennial Jing-Zhang Culture Belt, Urban AI Life Experience Belt, AI-Integrated Innovation Belt) and five functions (AI full-stack independent innovation system; world-class AI innovation ecosystem; new paradigm of AI+ scenario enablement; intelligent vibrant AI city; global voice in AI governance), this proposal develops the rail-transit and station-city directions as a functional carrier of the "new paradigm of AI+ scenario enablement" and "intelligent vibrant AI city" (concept mapping).
 
@@ -42,7 +48,19 @@ Under the taskbook's three positionings (Centennial Jing-Zhang Culture Belt, Urb
 
 The industrial base of the coordinated research area is "research institutes + electronics information + innovation and entrepreneurship." Dense research institutes, national laboratories and universities, together with technology enterprises along the Zhongguancun core and Xueyuan Road, form a complete chain of "basic research — technology development — industry landing." The electronics-component and information-service districts form an important hinterland of Beijing's electronics information industry. Looking ahead, the study offers three judgments: first, AI and software-defined industries make work-live space more mixed, so station domains should host flexible offices, incubators and shared laboratories; second, commuting shows a bimodal structure of "short-distance walking + long-distance rail," so transfer quality decides hub competitiveness; third, renewal of existing communities will release many "home-front AI scenarios." The resulting future-city form is "rail hub + innovation core + liveable community": with Zhichun Road station as the Smart-Core, mixed innovative businesses and living services within 500 m, transitioning outward to research blocks and mature communities — a balanced, all-day-vibrant future-city unit that turns the hub from a "pass-through" into a "destination."
 
-> **Evidence anchors**: [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] (boundary is provisional; research scope is conceptual only).
+> **Evidence anchors**: [source:DATA-SRC-PROVISIONAL-BOUNDARIES-2026-06-05] (boundary is provisional; research scope is conceptual only).
+
+### Zhichun Road Problem Diagnosis and Site-Specific Causal Chain (concept)
+
+The core scenarios are not a simple stack of generic smart-city modules but derive from three concrete site contradictions (concept judgments; public calibers, see [source:DATA-SRC-ZHONGGUANCUN-SCIENCE-CITY] and [source:DATA-SRC-PROVISIONAL-BOUNDARIES-2026-06-05]):
+
+First, "the wall of institutes" vs daily community life: research institutes and universities along Zhichun Road-Xueyuan Road are mostly enclosed campuses with little street-front service or night-time vitality — "visible but inaccessible" for walkers and residents; this drives the AI community service station, frontage opening, shared-lab booking and "award-announcement" transformation mechanisms responding to innovation flowing "from lab to street."
+
+Second, the east-west severance of the Jing-Zhang heritage linear space: the heritage park belt and rail facilities form a north-south linear barrier splitting research blocks from residential communities; this drives the three conceptual east-west stitch links (RD-CROSS-00/01/02) with level crossings and shared space, and the "one axis, one core" public-space skeleton along the heritage belt — turning a linear heritage asset into a stitching resource rather than a dividing line.
+
+Third, the bimodal "short walking + long rail" commute structure: the Zhongguancun Science City core (Zhichun Road and Xueyuan Road are core-area boundary elements per the 2011 decision) shows clear job-housing separation; this drives the priority ordering of commute assistant, crowd visualization and dispatch disclosure, and dynamic bike-sharing dispatch — solving the "punctuality" pain first, experience second.
+
+This causal chain is the unified conceptual logic between scenario cards, spatial placement and operation mechanisms, and the originality base of the Smart-Core: AI scenarios grow out of site contradictions rather than being pasted onto the hub. Quantitative evidence for these judgments (enclosure ratios, actual crossing demand, tidal crowding) is not publicly verifiable today and is registered as a pending hypothesis ([source:DATA-SRC-ZHICHUNLU-TRAFFIC-HYPOTHESIS-2026]), to be confirmed by on-site survey before pilots.
 
 ## Three Districts, Two Wings: Cooperation Loops and Regional Innovation Nodes (Concept)
 
@@ -50,7 +68,7 @@ This proposal places the "Smart-Core" in the "three districts, two wings" coordi
 
 ![Zhichun Smart-Core and Regional Innovation Nodes (concept)](assets/figures/region-loop.en.png)
 
-> **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK-20260518] (coordination and branding-operation items follow the taskbook).
+> **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK-2026-05-18] (coordination and branding-operation items follow the taskbook).
 
 ## Global AI Innovation Ecosystem Cases and Mechanism Transfer (Sourced)
 
@@ -78,7 +96,7 @@ The overall design scope (~11.4 km², provisional), anchored on Zhichun Road sta
 
 ![Land Use Structure (concept)](assets/figures/land-use-structure.en.png)
 
-> **Evidence anchors**: [source:DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING], [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] (regulatory-plan method reference and provisional-boundary warning).
+> **Evidence anchors**: [source:DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING], [source:DATA-SRC-PROVISIONAL-BOUNDARIES-2026-06-05] (regulatory-plan method reference and provisional-boundary warning).
 
 ## Detailed Design of Key Areas
 
@@ -120,7 +138,7 @@ The station population is summarized into five persona profiles: researchers and
 | Commuters | Hot peak transfers | Real-time traffic push; transit link | Peak human guidance posts |
 | Elderly, children and community groups | Safe slow travel, human care | AI community service booth; aged-care errands | Human fallback window; child-friendly routes |
 
-**Journey of persons with disabilities and co-creation verification (concept)**: the end-to-end journey covers "leave home — enter station — transfer — arrive." Leaving home: the AI community service booth provides route rehearsal and appointment guidance. Entering the station: multimodal guidance (voice, tactile, sign-language video) works with on-duty staff. Transfer: level corridors and continuous tactile paving. Arrival: destination announcements and help buttons. Co-creation verification includes: (1) during pilots, an experience panel of persons with disabilities, elderly representatives and community residents tests guidance terminals, corridor gradients and the human-service window with monthly feedback; (2) complaint channels are public (online channel + in-station service desk) with response times published; (3) service-failure compensation follows a "human termination first" principle — any failed AI service switches to human handling with one touch, with fare compensation or rebooking assistance for missed travel caused by failure. Legal-scope note: under Article 39 of the Barrier-Free Environment Law, on-site guidance and human-operated service apply only to the specifically listed statutory public service matters (medical, social security, financial and living-payment services); the human-fallback design here is a voluntary public commitment of this proposal and is not generalized into a statutory interpretation for all public spaces or digital interfaces — venue-specific compliance requires a professional determination.
+**Journey of persons with disabilities and co-creation verification (concept)**: the end-to-end journey covers "leave home — enter station — transfer — arrive." Leaving home: the AI community service booth provides route rehearsal and appointment guidance. Entering the station: multimodal guidance (voice, tactile, sign-language video) works with on-duty staff. Transfer: level corridors and continuous tactile paving. Arrival: destination announcements and help buttons. Co-creation verification includes: (1) during pilots, an experience panel of persons with disabilities, elderly representatives and community residents tests guidance terminals, corridor gradients and the human-service window with monthly feedback; (2) complaint channels are public (online channel + in-station service desk) with response times published; (3) service-failure compensation follows a "human termination first" principle — any failed AI service switches to human handling with one touch, with fare compensation or rebooking assistance for missed travel caused by failure. Legal-scope note: under Article 39 of the Barrier-Free Environment Law, on-site guidance and human-operated service apply only to the specifically listed statutory public service matters (medical, social security, financial and living-payment services); the human-fallback design here is a voluntary public commitment of this proposal and is not generalized into a statutory interpretation for all public spaces or digital interfaces — venue-specific compliance requires a professional determination. **Validation plan (concept)**: the compensation scheme, monthly co-creation frequency and accessibility technical parameters above are proposals that have not yet been validated by representative users or an operating entity; the plan is to validate after pilot kickoff on a "3-month initial experience-panel test (persons with disabilities, elderly representatives, community residents, 8-12 people per panel) → parameter and process revision → re-test before the pilot ends" rhythm, with guidance-terminal and gradient parameters checked against the current Design Code for Accessibility (GB 50763, [source:DATA-SRC-ACCESSIBILITY-DESIGN-STD-50763]) and validation conclusions published with the pilot evaluation; no statutory or operational standard is claimed before validation.
 
 AI scenarios are organized into six domains: AI mobility services (commute assistant, bike-sharing dispatch), AI public space (smart light poles, environmental sensing), AI accessibility services (multimodal guidance with public-service fallback), AI community services (government errands, aged-care), AI governance transparency (crowd visualization and dispatch transparency), and AI industry services (digital matching demonstration for research institutes and tech enterprises), linked with station-domain cultural experiences (soundscape and art-installation tours). Each domain's scenario cards declare spatial siting, operator suggestions and compliance boundaries; pilots are evaluated first and then scaled. All scenarios hold the "anonymous aggregation + human review" double guarantee: personal data stays in-station and is never profiled or traced, key decisions keep a human confirmation step, facilities are modular and reversible, and AI is embedded in daily commuting without replacing human service — building resident trust through "technology transparency and human-machine collaboration."
 
@@ -143,7 +161,7 @@ Ten scenario cards cover the six scenario domains plus station-domain cultural e
 | Aged-care errands & face guidance | Dedicated seat in community booth | Community + professional agency | No biometric collection | Whole-process human accompaniment | Phone & home-visit errands | Elderly coverage | Privacy review fails |
 | Soundscape & art tour | Installation nodes in plaza & greenway | Culture operator | Visit aggregation only | Quarterly human content review | Paper tour booklet | Participation count | Installation damage rate above limit |
 
-> **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK-20260518] (scenario card requirements correspond to the taskbook).
+> **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK-2026-05-18] (scenario card requirements correspond to the taskbook).
 
 ## Scenario-Space-Operator Matrix and TRL (Concept)
 
@@ -162,7 +180,7 @@ Ten scenario cards cover the six scenario domains plus station-domain cultural e
 | Aged-care errands | Booth dedicated seat | Community + professional agency | No face capture + accompanied service |
 | Soundscape tour | Plaza & greenway installations | Culture operator | Visit aggregation + quarterly review |
 
-**Technology readiness level (TRL) estimate table** (inference caliber: estimated from public knowledge of technology maturity; all are concept estimates, not technology commitments):
+**Technology readiness level (TRL) estimate table** (inference caliber: estimated from public knowledge of technology maturity; all are concept estimates, not technology commitments; per-row evidence classes and the re-evaluation trigger registered in [source:DATA-SRC-TRL-BASIS-2026-08-25], to be re-assessed at pilot kickoff):
 
 | Scenario/technology | TRL estimate | Basis (caliber) | Note |
 |---|---|---|---|
@@ -187,9 +205,9 @@ Within the ~11.4 km² provisional overall design scope, land use is dominated by
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
-The transport system is rail-centric: improving the smoothness of the Line 10/13 interchange at Zhichun Road station, optimizing entrance-exit and concourse connections, and reserving engineering conditions for future lines and density increases. Transfer organization follows "slow traffic first": a radial slow-traffic network centered on the station with walking and cycling priority, covering rail, bus, bike-sharing and walking within 5-10 minutes; reforming bus bays and access corridors, regulating bike-sharing parking with geofences; managing car traffic with flow control and P+R guidance, giving ground space back to pedestrians. Municipal facilities are implemented together with renewal: utilities undergrounding and utility-corridor reservations, sponge-city rain gardens, smart manhole covers with IoT sensing, clean energy and charging facilities. Public services are configured in two rings, "hub services + community services": in-station lost-and-found, mother-and-baby rooms and emergency medical points; off-station community canteens, childcare and eldercare stations on renewed plots — the hub and daily life nourishing each other.
+The transport system is rail-centric: improving the smoothness of the Line 10/13 interchange at Zhichun Road station, optimizing entrance-exit and concourse connections, and reserving engineering conditions for future lines and density increases. Transfer organization follows "slow traffic first": a radial slow-traffic network centered on the station with walking and cycling priority, integrating rail, bus, bike-sharing and walking. The "5-10 minute full accessibility coverage" is a **to-be-verified goal**, not a quantified conclusion: the package contains only concept network lines (geometry/roads.geojson), and no coverage value is given until official network and ridership data are available. Verification method, assumptions, results and limits will be published with the recompute — method: official network as base, walking 4.5 km/h and cycling 12 km/h equivalent-time grids for 5/10-minute isochrones and covered area; assumptions: actual crossing paths, no straight-line jumps over obstacles; results and limits: isochrone maps and coverage lists published, transfer facility layouts adjusted if the target is not met (concept, not an operator commitment). Reforming bus bays and access corridors, regulating bike-sharing parking with geofences; managing car traffic with flow control and P+R guidance, giving ground space back to pedestrians. Municipal facilities are implemented together with renewal: utilities undergrounding and utility-corridor reservations, sponge-city rain gardens, smart manhole covers with IoT sensing, clean energy and charging facilities. Public services are configured in two rings, "hub services + community services": in-station lost-and-found, mother-and-baby rooms and emergency medical points; off-station community canteens, childcare and eldercare stations on renewed plots — the hub and daily life nourishing each other.
 
-> **Evidence anchors**: [source:DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES] (method reference for municipal and slow-traffic wording).
+> **Evidence anchors**: [source:DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES], [source:DATA-SRC-ZHICHUNLU-TRAFFIC-HYPOTHESIS-2026] (method reference; accessibility is a to-be-verified goal with hypothesis-registered ridership data).
 
 ## Blue-Green Network, Public Space, and Urban Character
 
@@ -203,7 +221,7 @@ The blue-green network weaves station-domain green space like "beads on a green 
 
 The project list follows "low-threshold start, quick wins, iterable." Near term (1-3 years): plaza micro-renewal, corridor phase I, AI Mobility Service Hall pilot, bus-bay and bike-sharing optimization, accessibility completion, pocket parks and the first green-corridor segment. Mid term (3-5 years): corridor network, public renovation of old communities, opening research-institute street frontages, concept underground connection works. Long term (5-10 years): concept study of over-track integrated development, full greenway connection and overall street-quality upgrading. Policy suggestions: under the urban renewal regulation, "government coordination + market entities + resident participation," with study pilots for mixed land use and FAR transfer, façade-exemption lists and approval fast tracks (all subject to statutory procedures); AI facilities may trial a "build-operate-iterate" concession model with clear data-governance and security responsibilities, with volunteers and professional teams supporting daily maintenance and evaluation. Each phase has evaluation nodes to roll the project list forward with passenger-flow and operations data.
 
-> **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK-20260518] (phasing and implementation items follow the taskbook).
+> **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK-2026-05-18] (phasing and implementation items follow the taskbook).
 
 ## Annual Event Brands and Long-Term Operations (Concept)
 
@@ -219,17 +237,19 @@ An annual event brand system for the "Zhichun Road Smart-Core" (5 programs, all 
 
 Supporting long-term operations (concept): a developer community with quarterly scenario-interface briefings, an anonymous-aggregation data sandbox and documentation; scenario opening on a "pilot first, then scale" rhythm with published pilot data and findings; public experience through annual events plus a standing "experience officer" recruitment; landmark operations with quarterly content rotation and maintenance responsibility lists for the three nodes and soundscape installations; and a talent-enterprise conversion mechanism via the AI industry-service scenario — "demand publication — open challenge — outcome landing" — linked with the Zhongzhiyuan, AI Origin Community and other nodes (all mechanisms are concept suggestions).
 
-> **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK-20260518] (event and operation items as concept mapping).
+> **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK-2026-05-18] (event and operation items as concept mapping).
 
 ## Brand, Visual Identity and Logo (Concept)
 
-Main name: 知春路智核 — English master name: Zhichun Road Smart-Core (short: ZRC / Smart-Core). Naming system (concept): (1) the Chinese name combines "Zhichun Road" with "Smart-Core," meaning both "intelligent core" and "rail-hub core," echoing the station-city integration thesis; (2) the English master name uses a plain "place + function" structure for international searchability; (3) series naming: the three nodes are N1 Smart-Core Plaza, N2 AI Mobility Service Hall and N3 Smart Transit Link, and annual event brands share the "Zhichun + topic" prefix.
+Main name (Chinese): “知春路智核” — English master name: Zhichun Road Smart-Core (short: ZRC / Smart-Core). Naming system (concept): (1) the Chinese name combines "Zhichun Road" with "Smart-Core," meaning both "intelligent core" and "rail-hub core," echoing the station-city integration thesis; (2) the English master name uses a plain "place + function" structure for international searchability; (3) series naming: the three nodes are N1 Smart-Core Plaza, N2 AI Mobility Service Hall and N3 Smart Transit Link, and annual event brands share the "Zhichun + topic" prefix.
 
 Logo direction (original asset, generated for this proposal; see the figure): a "rail ring + smart-core dot" motif, with three progressive rings symbolizing the three-districts/two-wings cooperation loops and a stylized Chinese "智" at the center. Standard colors: the "Jing-Zhang blue (deep blue) + Smart-Core gold (amber)" dual system; auxiliary graphics are radial slow-traffic line bundles. Visual identity (VI) rules (concept): (1) standards — light-ground and dark-ground versions, minimum sizes and clear-space specifications; (2) type — Noto Sans SC (OFL-1.1 open-source font, subset-embedded in the HTML deliverables) with Latin companion; (3) color — primary, supporting and prohibited palettes; (4) application — signage, information screens, fare media, event materials and digital interfaces; (5) usage rights — the logo is an original asset of this proposal's participants, for display and exchange in this proposal only; any commercial use requires separate authorization. International communication slogan (concept): "Smart-Core, Better Commute"; Chinese: "一站知春路，智汇中关村."
 
 ![Zhichun Road Smart-Core Logo (original, concept)](assets/figures/logo.png)
 
-> **Evidence anchors**: [source:PACKAGE-GEOMETRY] (logo and brand assets are self-produced originals; rights ledger in sources.json and the copyright statement).
+**Trademark / prior-rights boundary**: no official trademark or prior-rights search has been completed at this concept stage; all proposed names and marks (e.g. "Zhichun Road Smart-Core", "ZRC", node names, slogans and the logo) are treated as **internal working codenames**, restricted from external use, promotion or registration until clearance is obtained.
+
+> **Evidence anchors**: [source:ASSET-LOGO] (logo and brand assets are self-produced originals; rights ledger in sources.json and the copyright statement).
 
 ## Spatial Narrative, Wayfinding, and International Communication (Concept)
 
@@ -237,7 +257,7 @@ Narrative line (concept): Jing-Zhang history — Zhongguancun innovation — AI 
 
 Wayfinding and symbol system (concept): three levels — regional (entering the scope), station-domain (node directions), facility (scenario and function); symbols include node numbers N1-N3, accessibility symbols, AI-service symbols and event symbols, unified palette and type; with contrast-ratio and Braille-point requirements aligned to accessibility norms (concept suggestion; verify against accessibility codes). International communication copy (ready for review, bilingual): English master: "Where the Century-Old Jing-Zhang Spirit Meets AI: Zhichun Road Smart-Core turns a daily transit hub into a walkable, inclusive, AI-augmented urban living room." Chinese master: "百年京张精神遇上人工智能：知春路智核把日常通勤枢纽，变成步行友好、包容无障碍、AI增强的城市客厅。" Short copy: "Smart-Core, Better Commute / 智核驱动，出行更优." All copy is concept copy subject to operator and communications review before use.
 
-> **Evidence anchors**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] (the call's theme is the basis of the narrative wording).
+> **Evidence anchors**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-2026-05-09] (the call's theme is the basis of the narrative wording).
 
 ## Industry Test Protocols and Pilot Responsibility Matrix (Concept)
 
@@ -259,15 +279,25 @@ Wayfinding and symbol system (concept): three levels — regional (entering the 
 | Bus bays & bike zones | Transport authority + sub-district | Traffic-diversion scheme review | Public bay aggregation data | Police/sub-district diversion | Hotline transfer | Voice+visual dual guidance | 6 months | Success when transfer time and complaints both decrease | Roll back on diversion incident |
 | Accessibility completion | Disabled persons' federation + sub-district + community | Dedicated accessibility budget | Public renovation ledger | Community human errands | Federation complaint channel | Persons with disabilities join acceptance | 12 months | Success ≥80% revisit satisfaction | Rectify and re-accept if failed |
 
-**Implementation responsibility matrix (feasibility detail, concept)**:
+**Implementation responsibility matrix (feasibility detail, concept)** (costs are qualitative tiers only, no amounts; tier meaning, estimation method and recompute triggers per column):
 
-| Item | Rail operator interface | Construction diversion | Cost band (concept) | Maintenance | Procurement | Data responsibility |
-|---|---|---|---|---|---|---|
-| Corridor & over-track study | Operator interface confirmation + protection-zone check | Night window diversion | Low (concept estimate, no commitment) | Market maintenance | Open tender suggestion | Public construction-monitoring data |
-| AI Hall equipment | Concourse interface protocol | No major civil works | Low-mid | Supplier maintenance | Concession model | Anonymous aggregation + human review |
-| Smart light poles | Power & pole interface | With municipal renewal | Mid | District platform unified O&M | Centralized procurement suggestion | Anonymous environment data |
-| Bike geofence | No rail interface | Off-station zones | Low | Operator self-operated | Competitive entry | Vehicle-position aggregation |
-| Crowd visualization | Rail data interface (authorized) | None | Low | Operator IT | Existing-system upgrade | Aggregated flows; no over-monitoring |
+| Item | Rail operator interface | Construction diversion | Cost tier (concept) | Estimation method | Base period | Cost scope | Confidence | Recompute trigger |
+|---|---|---|---|---|---|---|---|---|
+| Corridor & over-track study | Operator interface confirmation + protection-zone check | Night window diversion | Low | Unit-cost range analogy vs similar city covered links | 2026 concept base (no commitment) | Structure+foundations+lighting; excl. land and rail works | Low (concept) | Pilot feasibility study |
+| AI Hall equipment | Concourse interface protocol | No major civil works | Low-mid | Public commercial equipment price range analogy | 2026 concept base | Guidance terminals/screens/edge nodes; excl. software customization | Low (concept) | Supplier quotation |
+| Smart light poles | Power & pole interface | With municipal renewal | Mid | Public smart-pole project unit-price range analogy | 2026 concept base | Poles+sensors+edge computing; excl. utility ducts | Low (concept) | Municipal budget estimate |
+| Bike geofence | No rail interface | Off-station zones | Low | Public bike-share pricing model estimate | 2026 concept base | Bay markings+geofence; operations extra | Low (concept) | Operator commercial proposal |
+| Crowd visualization | Rail data interface (authorized) | None | Low | Existing-system upgrade effort estimate | 2026 concept base | Existing-system upgrade+screens; excl. new sensing | Low (concept) | Data interface authorization |
+
+**Near-term pilot RACI matrix (concept; R=Responsible, A=Accountable, C=Consulted, I=Informed)**:
+
+| Pilot | Sub-district/district government | Rail operator | District platform company | Third-party provider | Residents & experience panel |
+|---|---|---|---|---|---|
+| Plaza micro-renewal | A/R | C | R | I | C |
+| AI Mobility Service Hall pilot | I | A/R | C | R | C |
+| Covered link phase 1 | I | C | A/R | R | C |
+| Bus bay & bike-share optimization | A | C | I | R | C |
+| Accessibility completion | A | C | I | R | R (full acceptance participation) |
 
 > **Evidence anchors**: [depth:industry_test_protocol], [depth:pilot_responsibility_matrix] (see design_depth_matrix.json).
 
@@ -302,7 +332,7 @@ All mechanisms above are concept suggestions and reference schemes; statutory ma
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-The proposal builds a "goal-indicator-check" three-level indicator system, all concept caliber. Scope level: coordinated research, overall design and key-area areas (provisional, pending official geometry recalculation). Land-use level: functional land-use shares, renewal/extension scale shares. Space level: green ratio (concept ~23.2%), per-capita public space (concept), slow-network connectivity, 5-10 minute coverage. Operation level: peak transfer time, accessibility coverage, AI scenario count and human-fallback response time. Core indicator values, formulas, confidence and sources are given in metrics.json and the metrics evidence chart; the denominator of area-based indicators is uniformly the overall design scope (provisional). The compliance matrix maps every indicator to higher-level plans, district plans, regulatory plans and special codes (including rail network planning standards, the Barrier-Free Environment Law, complete-residential-community standards), marking "compliant / to be optimized / pending" and responsible actors. All area-recalculation indicators are updated after official geometry publication to keep a consistent, traceable, accountable caliber from concept to implementation.
+The proposal builds a "goal-indicator-check" three-level indicator system, all concept caliber. Scope level: coordinated research, overall design and key-area areas (provisional, pending official geometry recalculation). Land-use level: functional land-use shares, renewal/extension scale shares. Space level: green ratio (concept ~23.2%), per-capita public space (concept), slow-network connectivity, 5-10 minute coverage (to-be-verified goal: no value assigned until official network and ridership data are released; method/assumptions/limits in the transport section). Operation level: peak transfer time, accessibility coverage, AI scenario count and human-fallback response time. Core indicator values, formulas, confidence and sources are given in metrics.json and the metrics evidence chart; the denominator of area-based indicators is uniformly the overall design scope (provisional). The compliance matrix maps every indicator to higher-level plans, district plans, regulatory plans and special codes (including rail network planning standards, the Barrier-Free Environment Law, complete-residential-community standards), marking "compliant / to be optimized / pending" and responsible actors. All area-recalculation indicators are updated after official geometry publication to keep a consistent, traceable, accountable caliber from concept to implementation.
 
 ![Key Metrics Evidence Chart](assets/figures/metrics-evidence.en.png)
 
@@ -312,22 +342,23 @@ The proposal builds a "goal-indicator-check" three-level indicator system, all c
 
 Main risks and responses: (1) boundary and data risk — provisional scope and concept indicators pending official recalculation, with a flexible recalibration mechanism; (2) AI and data risk — anonymous aggregation and human review, no individual-identification tracing, no over-monitoring, no profiling or source reconstruction, human fallback for algorithmic decisions, guarding against bias and misjudgment; (3) implementation risk — phased progress and modular reversible facilities to avoid one-off mass demolition and reduce impact on rail operations and residents; (4) character and construction risk — concept traffic-diversion and noise-control plans protecting heritage and research environments; (5) rights risk — licenses, attribution, transformation and restrictions of all assets used (Noto Sans SC font, OFL-1.1; graphics; map baselines; statistics; code) are registered item by item in the sources.json asset-rights ledger, under the COMMUNITY-DISPLAY-ONLY scope, with no co-copyright claim. Copyright and compliance: this proposal is an original submission not infringing third-party IP; cited public materials are credited in the references and sources.json; per the call rules the organizer may use the submission within the competition scope, while the designer retains attribution and academic-use rights; no unauthorized data is used; AI-related content complies with data-security and personal-information requirements; success-failure thresholds, exit mechanisms and statutory prerequisites (rail-protection-zone checks, special safety assessments, regulatory and approval procedures) of all pilots must be confirmed in project documents — this proposal is concept-level only.
 
-> **Evidence anchors**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] (the call rules are the basis of ownership and compliance wording).
+> **Evidence anchors**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-2026-05-09] (the call rules are the basis of ownership and compliance wording).
 
 ## References
 
-[1] Open call taskbook: "OPEN CITY · HAIDIAN Centennial Jing-Zhang AI Innovation Belt Urban Design Call Taskbook."
-[2] Beijing Master Plan (2016-2035), Beijing Municipal People's Government.
-[3] Haidian District Plan (Territorial Spatial Plan, 2017-2035) and regulatory detailed plans under preparation.
-[4] Beijing rail transit network planning and public materials on Zhichun Road station interchange and passenger flows.
-[5] Barrier-Free Environment Law of the People's Republic of China and Design Code for Accessibility (GB 50763).
-[6] Code for Urban Rail Transit Network Planning (GB/T 50546) and related rail standards.
-[7] Beijing urban renewal regulation and old-community renovation, mixed-use policies.
-[8] Complete Residential Community Construction Standard and 15-minute living-circle guidelines.
-[9] Public research on the Zhongguancun-Xueyuan Road innovation corridor and electronics information districts.
+[1] Open call taskbook: "OPEN CITY · HAIDIAN Centennial Jing-Zhang AI Innovation Belt Urban Design Call Taskbook" ([source:DATA-SRC-AGENT-TASKBOOK-2026-05-18]).
+[2] Beijing Master Plan (2016-2035), Beijing Municipal People's Government ([source:DATA-SRC-BEIJING-MASTER-PLAN-2035]).
+[3] Haidian District Plan (Territorial Spatial Plan, 2017-2035) ([source:DATA-SRC-HAIDIAN-DISTRICT-PLAN-2019]). Note: no publicly verifiable in-preparation detailed plan exists as of submission; it is not used as a design basis.
+[4] Beijing rail transit network planning (2020-2035) ([source:DATA-SRC-RAIL-NETWORK-PLAN-2022]) and public station information for Zhichun Road (Lines 10/13) ([source:DATA-SRC-BJSUBWAY-ZHICHUNLU-STATION]).
+[5] Barrier-Free Environment Law ([source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW]) and Design Code for Accessibility GB 50763 ([source:DATA-SRC-ACCESSIBILITY-DESIGN-STD-50763]).
+[6] Code for Urban Rail Transit Network Planning GB/T 50546-2018 ([source:DATA-SRC-RAIL-NETWORK-STD-GBT50546]) and related rail standards.
+[7] Beijing Urban Renewal Regulation ([source:DATA-SRC-BEIJING-URBAN-RENEWAL-REG-2022]).
+[8] Complete Residential Community Construction Standard ([source:DATA-SRC-COMPLETE-COMMUNITY-STD-2020]).
+[9] Zhongguancun Science City plan and core-area scope ([source:DATA-SRC-ZHONGGUANCUN-SCIENCE-CITY]) and public materials on the electronics information districts.
 [10] Publishers' public documents of the seven global cases (listed in sources.json).
 [11] Site survey records and site photographs: no verifiable public originals; treated as "hypotheses pending verification," not cited as facts.
+[12] Zhichun Road ridership, bus smart-card, bike-sharing and mobile-signaling data: no verifiable public source; registered as a pending hypothesis ([source:DATA-SRC-ZHICHUNLU-TRAFFIC-HYPOTHESIS-2026]), not used as an indicator basis.
 
-> **Evidence anchors**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] (first entry is the organizer's public material package).
+> **Evidence anchors**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-2026-05-09] (first entry is the organizer's public material package).
 
 **Declarative statement on zh/en substantive equivalence**: the Chinese and English versions of this proposal (proposal.md / proposal.en.md, HTML reports, the five figures and their English counterparts, A0/A3 drawings and their English counterparts, and the visual pages and their English counterparts) were produced by the participants from the same data and claim system; substantive equivalence was manually checked by the participants (declaratory). In case of any wording difference, the Chinese version prevails.
