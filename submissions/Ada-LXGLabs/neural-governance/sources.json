@@ -138,6 +138,12 @@
    "path": "Fernandes, D.L., Soares, G.M., & de Oliveira, J.G. (2026). Co-Simulation Microgrid With Distributed Control Based on a Multi-Agent System and Communication With Adaptive Update Rate. IET Smart Grid (open access).",
    "source_type": "official_public",
    "usage": "Multi-agent-system (MAS) distributed-control microgrid co-simulation — referenced as the technical basis for the 'compute-power-electricity coordination' (算电协同) claim: distributed agent-based control coordinating energy flow across a microgrid. (accessed 2026-08-25; fair-use citation, not redistributed). The compute-power-electricity coordination remains an author-proposed concept to be verified in this project's context."
+  },
+  {
+   "id": "AGENT-AGE-POWER-ALGORITHM",
+   "path": "梁欣刚与其数字分身小元（2026-08-19）《Agent 时代的电力与算力——Agent 如何与算力共享电力、与人类供电网络的区别、转型方向与未来趋势》讨论总结 v3",
+   "source_type": "agent_generated_design",
+   "usage": "Author's original technical discussion (Liang Xingang with digital twin Xiao Yuan, absorbing Ada's five supplements + IET 2026 academic anchor): multi-stage DC power architecture (10kV→48V DC bus→12V/5V→0.8-1.2V chip), centralized vs distributed conversion, software-defined power (the deep logic of compute-power-electricity coordination), building-level DC bus + PoE. The intellectual source of this proposal's power-related claims (800V DC bus / stepped DC supply / liquid cooling / compute-power coordination)."
   }
  ]
 }
