@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以风水这一中国传统人居环境智慧为方法论原型，将百年京张铁路遗址走廊转译为可计算、可复算、可运营的AI创新带：一条龙脉、三区五带、曲水抱气、风水留白，并给出可从临时几何复算的指标与证据链。"
 tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.5"
+iteration: "v1.6"
 ---
 
 # 京张气脉 · 风水AI
