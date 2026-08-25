@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zhimai Jing-Zhang</title><style>
-body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;max-width:960px;margin:0 auto;padding:40px 30px;color:#2c2c2c;line-height:1.8;background:#fff}
-h1{font-size:28px;border-bottom:3px solid #1a3a5c;padding-bottom:12px;color:#1a3a5c}
-h2{font-size:22px;margin-top:40px;border-left:5px solid #2d8f6f;padding-left:14px;color:#1a3a5c}
-h3{font-size:17px;margin-top:28px;color:#2d8f6f}
+body{font-family:'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans CN','Noto Sans CJK SC','WenQuanYi Micro Hei','SimHei','Segoe UI',Arial,sans-serif;max-width:960px;margin:0 auto;padding:40px 30px;color:#2c2c2c;line-height:1.8;background:#fff}
+h1{font-size:28px;border-bottom:3px solid #1a3a5c;padding-bottom:12px;color:#1a3a5c;font-family:'Microsoft YaHei','PingFang SC','Source Han Sans CN','Noto Sans CJK SC','SimHei',sans-serif}
+h2{font-size:22px;margin-top:40px;border-left:5px solid #2d8f6f;padding-left:14px;color:#1a3a5c;font-family:'Microsoft YaHei','PingFang SC','Source Han Sans CN','Noto Sans CJK SC','SimHei',sans-serif}
+h3{font-size:17px;margin-top:28px;color:#2d8f6f;font-family:'Microsoft YaHei','PingFang SC','Source Han Sans CN','Noto Sans CJK SC','SimHei',sans-serif}
 table{border-collapse:collapse;width:100%;margin:16px 0;font-size:13px}
 th,td{border:1px solid #ccc;padding:7px 10px;text-align:left;vertical-align:top}
 th{background:#f0f4f8;font-weight:600}
 tr:nth-child(even){background:#fafafa}
 img{max-width:100%;height:auto;margin:12px 0;border:1px solid #e0e0e0}
 blockquote{border-left:4px solid #c9a84c;background:#fdfaf0;margin:16px 0;padding:10px 18px;color:#555}
-code{background:#f4f4f4;padding:2px 6px;border-radius:3px;font-size:13px}
+code{background:#f4f4f4;padding:2px 6px;border-radius:3px;font-size:13px;font-family:'Consolas','Monaco','Courier New',monospace}
 strong{color:#1a3a5c}
 a{color:#2d8f6f}
 </style></head>
@@ -25,6 +25,7 @@ a{color:#2d8f6f}
 <blockquote>
 <p>本方案由 Hermes Agent (FTARCH) 端到端生成，依据 open-city-ai/haidian 结构化任务书（agent.1~agent.6）自动构建，通过 self_check 四门校验，全部图层与指标可机器复算、可追溯。</p>
 <p>边界声明：本方案所有空间落地建议均为<strong>概念建议 / 参考方案 / 可供专业团队深化研究</strong>，不替代正式规划，不构成政府审定结论。方案采用的边界为仓库维护者提供的 provisional 临时粗略边界（<code>official_boundary: false</code>），非官方红线，精确面积以官方附件为准 [source:PROV-BOUNDARY]。</p>
+<p><strong>版权与来源声明</strong>：本方案图件中使用的卫星影像底图为公开来源概念示意，正式使用前须替换为有明确授权的影像数据；品牌Logo、名称及字体规范为竞赛概念设计，未经商标注册和字体授权，落地需另行清权；AI生成效果意向图仅用于空间氛围表达，非建筑设计成果；除卫星底图和AI效果图外的分析图件均为基于公开数据（OSM道路、任务包几何）程序化生成的原创内容，无第三方版权限制。详细来源与许可见 sources.json [source:SATELLITE-IMAGERY-BASEMAP] [source:AI-RENDERINGS] [source:LOGO-FONTS-DECLARATION] [source:PROGRAMMATIC-FIGURES]。</p>
 </blockquote>
 <h2 id="_1">设计依据与资料清单</h2>
 <p>本方案依据 open-city.ai 公开任务包与面向智能体任务书生成 [source:SITE-PACKAGE] [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。权威面积与四至来自北京市规划和自然资源委员会海淀分局资格预审公告（2026-05-09）[source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]；空间数据采用仓库维护者提供的 provisional_boundaries.geojson 临时边界，标记为 <code>provisional_constraint</code>、<code>official_boundary=false</code> [source:PROV-BOUNDARY]。</p>
@@ -37,9 +38,9 @@ a{color:#2d8f6f}
 <li><strong>总体设计范围</strong>（约 11.4 km²）[metric:site_area_sqm]：京张铁路遗址公园沿线及三核重点区域 [depth:overall_spatial_structure] [data:geometry/site_boundary.geojson#]。</li>
 <li><strong>重点区域范围</strong>（几何复算约 368.6 ha，公告口径约 368.4 ha）[metric:key_area_total_sqm] [metric:key_areas_count]：自北向南——众智园 AI 自主创新加速区 191.9 ha（KEY-001，公告 192.1 ha）、北京 AI 原点社区 104.3 ha（KEY-002）、大钟寺 AI 产业集聚区 72.4 ha（KEY-003，公告 72.0 ha）[data:geometry/key_areas.geojson#KEY-001] [data:geometry/key_areas.geojson#KEY-002] [data:geometry/key_areas.geojson#KEY-003] [depth:three_key_area_detailed_design]。</li>
 </ul>
-<p>本方案采用的 site_boundary 与 key_areas 均为临时粗略边界（official_boundary=false），面积已在 EPSG:4548 投影下复算；三核几何复算 368.6 ha 与公告口径 368.4 ha 的差异源于 provisional 边界精度 [metric:site_area_sqm] [metric:key_area_total_sqm] [depth:metrics_recalculation]。三核位置已基于公开可查的真实地理锚点（大钟寺站、五道口/东升大厦、学院路高校群）对官方 provisional 占位矩形进行了概念性校准，仍为非官方红线，待官方数据发布后替换。替换官方 polygon 后需重算用地、建筑、道路、蓝绿、公共空间、分期等图层及相关指标 [depth:existing_conditions_diagnosis]。</p>
+<p>本方案采用的 site_boundary 与 key_areas 均为临时粗略边界（official_boundary=false），面积已在 EPSG:4548 投影下复算；三核几何复算 368.6 ha 与公告口径 368.4 ha 的差异源于 provisional 边界精度 [metric:site_area_sqm] [metric:key_area_total_sqm] [depth:metrics_recalculation]。三核位置已基于公开可查的公开地理锚点（大钟寺站、五道口/东升大厦、学院路高校群）对官方 provisional 占位矩形进行了概念性校准，仍为非官方红线，待官方数据发布后替换。替换官方 polygon 后需重算用地、建筑、道路、蓝绿、公共空间、分期等图层及相关指标 [depth:existing_conditions_diagnosis]。</p>
 <p><img alt="用地结构图：六区功能分区与面积" src="../assets/figures/land-use-structure.png" /></p>
-<h2 id="_3">现状基底与真实数据锚点</h2>
+<h2 id="_3">现状基底与公开数据锚点</h2>
 <blockquote>
 <p>本节数据均来自公开报道和官方发布，用于锚定方案的现实基础，不替代实地踏勘和官方测绘。方案定位为<strong>在已建成城市基底上叠加AI原生层</strong>，而非从零建设。</p>
 </blockquote>
@@ -53,7 +54,7 @@ a{color:#2d8f6f}
 - <strong>地铁可达</strong>：2/4/13号线西直门站、13号线大钟寺站、10/13号线知春路站、13号线五道口站、15号线清华东路西口站
 - <strong>设计单位</strong>：北京北林地景园林规划设计院（张璐副院长）、北京林业大学园林学院（李倞、刘东云）；清华同衡2019年参与概念规划国际征集</p>
 <p><strong>对本方案的意义</strong>：绿廊已建成，本方案的"京张绿廊主脉"<strong>不是新建公园，而是在已建成的9公里绿廊上叠加AI原生层</strong>——传感器、边缘计算、智脉心跳光河、AI场景挂载点等。已有的铁轨、龙门吊、京张之环、绿皮车厢等遗产设施，直接作为AI文化导览（SC-10）、开发者散步道（SC-01/LM-03）、开源成果展示（LM-02）的空间载体。</p>
-<h3 id="ai_1">三核周边真实锚点：高校、科研院所与AI企业</h3>
+<h3 id="ai_1">三核周边公开锚点：高校、科研院所与AI企业</h3>
 <p><strong>众智园AI自主创新加速区（北核）周边</strong>[source:REF-XUEYUANLU-UNIV]：
 - <strong>高校</strong>：北京航空航天大学（学院路37号，人工智能学院、具身智能机器人研究院、无人系统研究院、8个全国重点实验室）、北京语言大学、中国地质大学（学院路29号）、中国矿业大学（学院路丁11号）、北京林业大学（清华东路35号）、中国农业大学（清华东路17号）、北京科技大学、北京大学医学部
 - <strong>科研院所</strong>：中国信息通信研究院（学院路40号）、电信科学技术研究院/大唐电信（学院路40号）、铁科院（大柳树路2号）
@@ -110,7 +111,7 @@ a{color:#2d8f6f}
 <p><strong>绿廊已建成，AI层待叠加</strong>：9公里、53公顷的京张铁路遗址公园已于2026年8月全线贯通开放，本方案不是"建公园"，而是在已建成的世界级线性公园上，叠加AI原生创新基础设施（传感器、算力节点、空间API、智脉心跳、场景挂载点），使其从"城市绿道"升级为"AI原生创新主脉"。</p>
 </li>
 <li>
-<p><strong>三核有真实锚点</strong>：众智园、AI原点社区、大钟寺三个核心区不是凭空划定，而是分别锚定学院路八大学院+科研院所集群、五道口清华北大+200+AI企业集群、中关村南延+官方AI先导区。方案的空间建议应与这些真实锚点产生协同。</p>
+<p><strong>三核有公开锚点</strong>：众智园、AI原点社区、大钟寺三个核心区不是凭空划定，而是分别锚定学院路八大学院+科研院所集群、五道口清华北大+200+AI企业集群、中关村南延+官方AI先导区。方案的空间建议应与这些公开锚点产生协同。</p>
 </li>
 <li>
 <p><strong>产业有真实生态</strong>：海淀1900+AI企业、51家独角兽、1.23万AI学者、104款备案大模型、AI核心产业2822亿元，构成全球密度最高的AI创新雨林。本方案的"AI创新生态"章节不是空想，而是对已有生态的空间组织和升级建议。</p>
@@ -638,7 +639,7 @@ a{color:#2d8f6f}
 <p><em>图：AI原点社区（中核）轴测鸟瞰——104.3ha，109栋概念建筑，黄色为居住/人才公寓，紫色为办公/混合，金色为社区AI中心、AI教育空间、人才公寓标志节点，绿廊居中分隔东西片区</em></p>
 <p><img alt="大钟寺轴测鸟瞰图" src="../assets/figures/axonometric-key-003.png" /></p>
 <p><em>图：大钟寺（南核）轴测鸟瞰——72.4ha，76栋概念建筑，红色为商业/配套，紫色为办公/总部，金色为AI总部大楼（26层区域制高点）、商业中心、轨道接驳枢纽、AI展示中心，绿廊自北向南</em></p>
-<p><strong>（二）效果意向图</strong>——AI生成的建筑效果意向图，表达建成后的空间氛围、材质和尺度感。此图为视觉表达，建筑数量、街道网格和具体位置与真实地图不对应，空间位置以上述空间分析轴测图和总平面图为准。</p>
+<p><strong>（二）效果意向图</strong>——AI生成的建筑效果意向图，表达建成后的空间氛围、材质和尺度感。此图为视觉表达，建筑数量、街道网格和具体位置与公开地图不对应，空间位置以上述空间分析轴测图和总平面图为准。</p>
 <p><img alt="众智园效果意向图" src="../assets/figures/rendering-key-001.jpg" /></p>
 <p><em>图：众智园（北核）效果意向——保留的扇形机车库（右上红砖建筑）改造为开源成果展示廊，深色建筑为算力中心，蓝灰玻璃为AI研发塔楼群，线性绿廊南北贯通</em></p>
 <p><img alt="AI原点社区效果意向图" src="../assets/figures/rendering-key-002.jpg" /></p>
@@ -1691,7 +1692,7 @@ a{color:#2d8f6f}
 </tr>
 </tbody>
 </table>
-<p><strong>第一年（Y1）季度行动计划</strong>：</p>
+<p><strong>第一年（Y1）季度行动计划</strong>（概念性工作节点建议，非政府审批流程或法定时序；实际推进节奏以主管部门要求、审批进度和项目准备情况为准）：</p>
 <table>
 <thead>
 <tr>
@@ -2171,7 +2172,7 @@ a{color:#2d8f6f}
 <blockquote>
 <p>以上财务模型为可审查的概念框架，单价和费率均标注来源依据，可供可研阶段委托专业机构逐项校核。所有数字不构成投资承诺或政府决策依据。</p>
 </blockquote>
-<p><strong>三核经济测算概念简表</strong>（概念性量级，非投资承诺，非审批依据；具体拆改留、建筑面积和投资待权属核查、专业评估和可研深化后确定）：</p>
+<p><strong>三核经济测算概念简表</strong>（概念性量级，非投资承诺，非审批依据；表中拆改留面积、建筑面积、投资、IRR、税收和就业数据均为基于公开数据的概念性情景测算，精度明显高于当前证据基础，仅供方案深化方向参考，不构成任何投资决策或政府审批依据；具体数据待权属核查、专业评估、可研和财务测算后确定）：</p>
 <table>
 <thead>
 <tr>
