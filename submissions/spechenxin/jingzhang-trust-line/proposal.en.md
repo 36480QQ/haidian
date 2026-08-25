@@ -142,6 +142,59 @@ Privacy boundaries and human-review channels are mandatory on every card: no per
 
 All twelve cards carry the double safeguard of human review plus stop conditions - the discipline that separates this proposal from "AI-scenario stacking": scenarios come to be tested, not displayed.[source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
+**Scenario KPI and stop-rule dictionary (concept stage):** numeric KPI targets are to be set after pilot authorization and baseline measurement, and are inactive before authorization; event-rule KPIs (=100% type) are rigid constraints active before authorization. No field baseline currently exists (declared as reviewer data gap); all numeric targets are marked "baseline pending".
+
+| Scenario card | KPI (formula / event rule) | Measurement window | Provisional target method |
+|---|---|---|---|
+| AI legal-consulting compliance cabin | human-review rate = reviewed / AI answers x100% (event rule: must =100%) | monthly | set after first-month sampling; baseline pending |
+| Trusted medical triage | diagnostic answers forced to human =100% (event rule) | monthly | rigid constraint, no baseline needed |
+| AI education companion | parent-visibility coverage = viewable sessions / all x100% | quarterly | set after first-quarter sampling; baseline pending |
+| Algorithm-transparent consumption | explanation-failure rate = upheld complaints / explanations x100% | monthly | set after 3 months of complaint data; baseline pending |
+| Elderly-friendly smart living | elderly usability pass = unassisted tasks / test tasks x100% (on-site sampling) | quarterly | set after first-quarter usability sampling; baseline pending |
+| Smart guide | content-traceability success = traceable items / sampled x100% | quarterly | set after first-quarter sampling; baseline pending |
+| Robot delivery | incident rate = incidents per 1000 km delivered | monthly | set after 3 months of low-speed pilot; baseline pending |
+| GenAI compliance experience | compliance-record completeness = complete records / sessions x100% (event rule: =100%) | quarterly | rigid constraint |
+| Data-trust service | authorization-chain integrity = intact chains / sampled flows x100% (event rule: =100%) | semi-annual | rigid constraint |
+| OSS model safety test field | protocol execution completeness = executed steps / protocol steps x100% (event rule: =100%) | per batch | rigid constraint |
+| Human-takeover response test | takeover response time = measured median (seconds) | monthly | set after 3 months of measurement; baseline pending |
+| Algorithm transparency test | report reviewability = reviewable / issued reports x100% (event rule: =100%) | semi-annual | rigid constraint |
+
+| Scenario card | Data-minimization boundary | Sign-off role | Stop / restart owner |
+|---|---|---|---|
+| AI legal-consulting compliance cabin | no consultation content stored; only review and complaint logs | head of legal-service institution | stop = platform operator; restart = legal institution sign-off |
+| Trusted medical triage | no health data stored; only human-referral logs | head of medical institution | stop = medical institution; restart = health authority |
+| AI education companion | minor data not collected by default; parent exit right | head of education institution | stop = education institution; restart = parent-representative joint sign-off |
+| Algorithm-transparent consumption | no personal consumption data; complaint statistics only | third-party verifier | stop = third-party verifier; restart = re-test sign-off |
+| Elderly-friendly smart living | no personal data of elderly; usability sampling statistics only | community service head | stop = community service council; restart = post-remediation review |
+| Smart guide | no location traces; guide content logs only | public culture operator | stop = public culture operator; restart = traceability remediation sign-off |
+| Robot delivery | delivery data anonymized; incident and mileage statistics only | delivery enterprise + regulator | stop = regulator; restart = safety re-assessment |
+| GenAI compliance experience | visit statistics only, no personal data | outreach head | stop = outreach operator; restart = content compliance review |
+| Data-trust service | non-personal data flow demo; authorization-chain logs | data-service institution | stop = data institution; restart = chain-repair sign-off |
+| OSS model safety test field | evaluation data limited to the model itself | evaluation body + OSS community | stop = evaluation body; restart = protocol-revision sign-off |
+| Human-takeover response test | response-time logs only, no personal data | public test operator | stop = public test operator; restart = dispatch remediation re-test |
+| Algorithm transparency test | anonymized test data | certification body | stop = certification body; restart = protocol committee sign-off |
+
+[source:AGENT-TASKBOOK]
+
+**Ecosystem mechanism map and global case comparison table (agent.2):** six-factor feedback loops of land-capital-talent-compute-data-scenario (conceptual mechanisms, not implemented arrangements): validation output (Zhongzhiyuan OSS model safety evaluation) -> trust-credential registration -> financing-credit conversion (capital) -> industrial space and talent supply (land/talent) -> scenario opening and testing (data/scenario) -> public runtime-evidence feedback -> validation input update; compute carried by edge + distributed node concept (capacity to be deepened). Interfaces per link: trust credential = data-trust station; financing credit = conceptual, no financial commitment; scenario opening = twelve-station operation matrix.
+
+| Case | Mechanism extracted | Scope | License / source | Local transfer validation |
+|---|---|---|---|---|
+| SF Bay Area OSS ecosystem | open standards build industrial trust | OSS community governance | Linux Foundation public research | conceptual background, not validated |
+| Zurich algorithm registry | public-sector algorithm transparency | municipal algorithm registry | Zurich city public information | conceptual background, not validated |
+| Singapore AI Verify | governance toolkit cuts compliance cost | corporate compliance self-check | AI Verify Foundation | conceptual background, not validated |
+| Data-trust research (Toronto) | trusted data-flow institution direction | non-personal data flow | Mozilla Foundation research | conceptual background, not validated |
+| Paris AI ethics charter | city-level AI ethics public deliberation | public participation formats | Paris city public information | conceptual background, not validated |
+| Shenzhen device certification | certification as going-global trust credential | product certification | Shenzhen government public information | conceptual background, not validated |
+
+The six cases extract transferable mechanisms only; no spatial indicators transplanted.[source:CASE-SF-OSS] [source:CASE-ZURICH-AUDIT] Per-case sources registered in sources.json.[source:CASE-SG-AIVERIFY] [source:CASE-TORONTO-DATATRUST]
+
+**Public-space component library (agent.4):** six component families and their twelve-station interfaces - Trust Kiosk (modular booth: service promise / response time / complaint channel; interface = all twelve stations); Audit Board (public evaluation process and conclusions, scannable original; interface = algorithm audit open station / certification window); Takeover Booth (human window + waiting area + published response time; interface = human-takeover response test station); Oath & Honor modules (annually updatable inscriptions; interface = oath plaza / honor wall); Mainline slow-mobility components (barrier-free ramps, rest nodes, signage, night lighting, continuous accessible path first; interface = the whole Trust Mainline); Blue-green components (sponge facilities, rain gardens, bioretention; conceptual, engineering to be deepened; interface = blue-green chapter). Components are a conceptual list; final selection by professional teams.[source:AGENT-TASKBOOK]
+
+**Heritage resources, signage and international communication system (agent.5):** three heritage nodes - 1909 Jing-Zhang Railway (foundation of engineering trust, heritage-park direction, heritage boundaries pending official data) / 1980s Zhongguancun (market trust) / now AI public trust (governance trust); the three nodes are threaded by the "three foundations of trust" narrative, not written as approved construction. Signage - twelve-station signage = station code + trust-function icon (see logo prototype page samples), bilingual Chinese/English + tactile/Braille nodes, continuous accessible wayfinding first; signage typefaces and graphics follow final logo clearance. International communication - English naming system (Jing-Zhang Trust Line and English names of three fields and twelve stations), paired bilingual deliverables (narrative/HTML/A3/A0/figures), annual public agenda of the Global AI Governance Dialogue Center, international-visitor information architecture (multilingual guides + reviewable trust narrative).[source:AGENT-TASKBOOK]
+
+**Event brand, conversion and measurement framework (agent.6):** four annual event brands - Global AI Governance Dialogue Week (public institution + universities + industry orgs) / Trusted AI Marathon (developer community) / Algorithm Audit Open Contest (evaluation body + regulatory guidance) / Public AI Trust Experience Days (quarterly, three fields rotating). Brand application: event key visuals share primary-symbol variants (see logo prototype page). Conversion framework (conceptual): participation -> trust-credential registration -> compliance performance as credit reference -> investment attraction / procurement reference - no financial commitment, not written as implemented institution. Measurement framework: event-level KPIs = agenda-publicity rate / conclusion-publicity rate / next-year revisit rate / complaint-closure rate (event-rule type, =100% rigid); annual review + exit rule (events failing public acceptance metrics stop with published reasons); threshold approver = each event's host council (conceptual).[source:AGENT-TASKBOOK]
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Land-use layout (provisional design model, not statutory) [data:geometry/land_use.geojson#LU-001]: research ~3.22 km² (Zhongzhiyuan and the eastern Xueyuan-Road corridor), residential ~1.78 km² (western renewal area and Origin Community), education ~1.76 km² (eastern university belt), park ~2.22 km² (mainline corridor and 5th-Ring green belt), plaza ~1.30 km² (twelve station plazas), business ~0.73 km² (Xizhimen gateway and market field), commercial ~0.19 km², medical ~0.17 km², reserved ~0.04 km². Every area is recomputed from geometry and checkable parcel by parcel.[metric:land_use_area_1401_sqm] [depth:land_use_layout]
