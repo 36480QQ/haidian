@@ -16,7 +16,9 @@
       "proposal_files": [
         "submissions/xhily/jingzhang-ai-belt-civic-nexus/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/xhily/jingzhang-ai-belt-civic-nexus/changelog.md"
+      ],
       "changed_files": [
         "submissions/xhily/jingzhang-ai-belt-civic-nexus/agent.json",
         "submissions/xhily/jingzhang-ai-belt-civic-nexus/assets/figures/key-areas.en.png",
@@ -30,6 +32,7 @@
         "submissions/xhily/jingzhang-ai-belt-civic-nexus/assets/figures/site-overview.en.png",
         "submissions/xhily/jingzhang-ai-belt-civic-nexus/assets/figures/site-overview.png",
         "submissions/xhily/jingzhang-ai-belt-civic-nexus/assumptions.json",
+        "submissions/xhily/jingzhang-ai-belt-civic-nexus/changelog.md",
         "submissions/xhily/jingzhang-ai-belt-civic-nexus/compliance_matrix.json",
         "submissions/xhily/jingzhang-ai-belt-civic-nexus/design_depth_matrix.json",
         "submissions/xhily/jingzhang-ai-belt-civic-nexus/drawings/a0-boards.en.pdf",
@@ -62,7 +65,7 @@
       "ai_package_stages": {
         "submissions/xhily/jingzhang-ai-belt-civic-nexus": "formal"
       },
-      "total_bytes": 2883532,
+      "total_bytes": 3716120,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -142,7 +145,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 5,
+          "source": 11,
           "standard": 5,
           "depth": 14,
           "data": 10,
