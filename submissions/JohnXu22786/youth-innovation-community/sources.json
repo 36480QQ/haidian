@@ -2,7 +2,7 @@
   "schema_version": "0.1.0",
   "sources": [
     {
-      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT",
       "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
       "publisher": "北京市规划和自然资源委员会海淀分局",
       "source_kind": "official_announcement",
@@ -40,10 +40,13 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。"
+      "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。",
+      "alias_ids": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+      ]
     },
     {
-      "source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
+      "source_id": "DATA-SRC-AGENT-TASKBOOK",
       "title": "面向全球智能体开展“百年京张AI创新带城市设计开源征集”的任务书摘录",
       "publisher": "User-provided cleared document",
       "source_kind": "cleared_user_document",
@@ -84,7 +87,10 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "该资料更贴近 AI agent 任务要求，可作为方案任务响应依据，但不是官方空间红线或控规条件。"
+      "notes_zh": "该资料更贴近 AI agent 任务要求，可作为方案任务响应依据，但不是官方空间红线或控规条件。",
+      "alias_ids": [
+        "DATA-SRC-AGENT-TASKBOOK-20260518"
+      ]
     },
     {
       "source_id": "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
@@ -187,7 +193,7 @@
       "notes_zh": "可用于统一 land_use_code 语义。"
     },
     {
-      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES",
       "title": "百年京张AI创新带三层范围与三处重点区临时粗略 polygon",
       "publisher": "Repository maintainers",
       "source_kind": "provisional_repository_data",
@@ -232,7 +238,10 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "该 geometry 由维护者依据官方公告的文字四至、位置线索和约面积推定，并在 EPSG:4548 下校核；它提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。2026-08-07 复核时，征集组织机构的资格预审文件下载仍受密码保护，公开渠道未找到可验证坐标系的精确红线。"
+      "notes_zh": "该 geometry 由维护者依据官方公告的文字四至、位置线索和约面积推定，并在 EPSG:4548 下校核；它提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。2026-08-07 复核时，征集组织机构的资格预审文件下载仍受密码保护，公开渠道未找到可验证坐标系的精确红线。",
+      "alias_ids": [
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+      ]
     },
     {
       "source_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
@@ -304,6 +313,202 @@
         "generation_method": "concept prompting + geometry program",
         "limitations": "low confidence conceptual envelopes"
       }
+    },
+    {
+      "source_id": "CASE-SHENZHEN-SHUIWEI",
+      "title": "深圳水围柠盟人才公寓公开报道与设计机构资料",
+      "publisher": "深圳市人才安居集团及公开媒体（南方都市报等）/ 设计机构公开资料",
+      "source_kind": "public_media_report",
+      "url": "https://www.szrcaj.com/（深圳人才安居集团官网）及公开媒体报道页面",
+      "published_date": "2018-03-01",
+      "accessed_date": "2026-08-07",
+      "file_type": "webpage",
+      "authority_level": "B2",
+      "timeliness_level": "T2",
+      "public_access_status": "public",
+      "license": "public_information_fair_use",
+      "license_summary": "仅按公开报道概述机制与公开口径数字，不复制图片、版式或长段落；以官方发布版本为准。",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "mechanism summary",
+        "公开口径数字引用（注明口径）"
+      ],
+      "prohibited_uses": [
+        "复制受版权保护的图片、版式与长段落",
+        "转写为对本方案或深圳项目的承诺"
+      ],
+      "topics": [
+        "youth_housing",
+        "urban_renewal",
+        "case_study"
+      ],
+      "notes_zh": "全国首个城中村握手楼改造人才保障房试点（公开报道口径）；数字一律标注公开口径。",
+      "claimed_claims_zh": "城中村握手楼改造为青年人才公寓试点、政府统筹+企业改造运营+村社筹房协作、补贴后低于市场租金定向配租（均为公开口径）",
+      "permission_boundary_zh": "仅概述机制，不复制图片与长段落；租金等数字以官方发布为准。"
+    },
+    {
+      "source_id": "CASE-BEIJING-RENTAL-HOUSING",
+      "title": "北京市关于加快发展保障性租赁住房的实施方案及官方解读",
+      "publisher": "北京市人民政府门户网站",
+      "source_kind": "official_policy",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/202207/t20220715_2768902.html（官方网站公布页）",
+      "published_date": "2022-07-15",
+      "accessed_date": "2026-08-07",
+      "file_type": "webpage",
+      "authority_level": "A1",
+      "timeliness_level": "T1",
+      "public_access_status": "public",
+      "license": "official_government_text",
+      "license_summary": "官方公开政策文本，仅作背景与概念接口引用，不推断具体房源与配租承诺。",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "政策方向背景",
+        "概念接口（不承诺具体支持与房源）"
+      ],
+      "prohibited_uses": [
+        "编造房源数量、租金水平或配租承诺",
+        "替代法定资格审核"
+      ],
+      "topics": [
+        "rental_housing_policy",
+        "youth_housing",
+        "case_study"
+      ],
+      "notes_zh": "面向新市民与青年群体；「十四五」公开目标为筹集建设约四十万套（间）（公开口径）。",
+      "claimed_claims_zh": "保租房面向无房新市民与青年、重点保障新毕业大学生等；小户型为主、鼓励共享空间（公开口径）",
+      "permission_boundary_zh": "仅作机制背景引用，不复制官方页面版式。"
+    },
+    {
+      "source_id": "CASE-SEOUL-YOUTH-HOUSING",
+      "title": "Seoul Youth Housing Policy (English public page)",
+      "publisher": "Seoul Metropolitan Government (english.seoul.go.kr)",
+      "source_kind": "official_policy",
+      "url": "https://english.seoul.go.kr/（首尔市政府英文公开页面，青年住房政策栏目）",
+      "published_date": "2019-06-01",
+      "accessed_date": "2026-08-07",
+      "file_type": "webpage",
+      "authority_level": "B1",
+      "timeliness_level": "T2",
+      "public_access_status": "public",
+      "license": "public_information_fair_use",
+      "license_summary": "官方公开页面，仅概述机制，不复制图片与版式。",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "机制概述",
+        "国际对标"
+      ],
+      "prohibited_uses": [
+        "推断对北京或本方案的补贴或标准承诺"
+      ],
+      "topics": [
+        "youth_housing",
+        "international_benchmark",
+        "case_study"
+      ],
+      "notes_zh": "面向无房青年的月度租金补贴、低门槛青年住房与租赁服务、配套社区交流空间（公开口径）。",
+      "claimed_claims_zh": "面向无房青年提供租金补贴、青年住房与租赁服务、社区交流空间（公开页面口径）",
+      "permission_boundary_zh": "仅概述机制，不复制图片与长段落。"
+    },
+    {
+      "source_id": "CASE-SINGAPORE-HDB-COMMONS",
+      "title": "HDB 组屋底层架空空间与社区公共空间公开资料",
+      "publisher": "Housing & Development Board, Singapore / 公开媒体报道",
+      "source_kind": "public_media_report",
+      "url": "https://www.hdb.gov.sg/（建屋发展局公开页面）及公开媒体报道",
+      "published_date": "2015-06-01",
+      "accessed_date": "2026-08-07",
+      "file_type": "webpage",
+      "authority_level": "B1",
+      "timeliness_level": "T2",
+      "public_access_status": "public",
+      "license": "public_information_fair_use",
+      "license_summary": "公开资料，仅概述机制。",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "机制概述",
+        "国际对标"
+      ],
+      "prohibited_uses": [
+        "复制项目图片与版式",
+        "推断新加坡对北京的适配结论"
+      ],
+      "topics": [
+        "public_space",
+        "community_commons",
+        "case_study"
+      ],
+      "notes_zh": "组屋底层架空开放空间传统与共享厨房为核心的社区公共空间实践（公开口径）。",
+      "claimed_claims_zh": "底层架空开放无围栏、共享厨房社区公共空间实践（公开资料口径）",
+      "permission_boundary_zh": "仅概述机制，不复制受版权保护的图片与长段落。"
+    },
+    {
+      "source_id": "CASE-HK-YOUTH-HOSTEL",
+      "title": "香港青年宿舍计划（Youth Hostel Scheme）公开资料",
+      "publisher": "香港特别行政区政府民政及青年事务局",
+      "source_kind": "official_policy",
+      "url": "https://www.hab.gov.hk/（民政及青年事务局公开页面，青年宿舍计划栏目）",
+      "published_date": "2011-10-01",
+      "accessed_date": "2026-08-07",
+      "file_type": "webpage",
+      "authority_level": "B1",
+      "timeliness_level": "T2",
+      "public_access_status": "public",
+      "license": "official_government_text",
+      "license_summary": "官方公开计划页面，仅概述机制。",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "机制概述",
+        "国际对标"
+      ],
+      "prohibited_uses": [
+        "推断对北京或本方案的房租标准承诺"
+      ],
+      "topics": [
+        "youth_housing",
+        "international_benchmark",
+        "case_study"
+      ],
+      "notes_zh": "动员非政府机构提供住宿，以低于市价租金面向在职青年的公开计划（公开口径）。",
+      "claimed_claims_zh": "低于市价租金、面向在职青年、非政府机构参与运营（公开口径）",
+      "permission_boundary_zh": "仅概述机制，不复制官方版式。"
+    },
+    {
+      "source_id": "CASE-YOUTH-DEVELOPMENT-CITIES",
+      "title": "关于开展青年发展型城市建设试点的意见（公开政策）",
+      "publisher": "中长期青年发展规划实施工作部际联席会议办公室（公开文件）",
+      "source_kind": "official_policy",
+      "url": "https://www.gov.cn/（中国政府网公开政策文件检索页）",
+      "published_date": "2022-04-01",
+      "accessed_date": "2026-08-07",
+      "file_type": "webpage",
+      "authority_level": "A1",
+      "timeliness_level": "T1",
+      "public_access_status": "public",
+      "license": "official_government_text",
+      "license_summary": "官方公开政策文本，仅作概念接口引用。",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "青年发展型城市概念接口",
+        "城市间协同背景"
+      ],
+      "prohibited_uses": [
+        "编造试点城市名单或承诺",
+        "推断北京为试点城市"
+      ],
+      "topics": [
+        "youth_development",
+        "national_policy",
+        "case_study"
+      ],
+      "notes_zh": "中长期青年发展规划框架下的全国性试点政策方向（公开口径），本方案仅作青年友好方向的概念接口。",
+      "claimed_claims_zh": "青年发展型城市建设试点为公开政策方向（不以本方案推断具体城市名单）",
+      "permission_boundary_zh": "仅作政策方向引用，不推断试点名单与承诺。"
     }
   ]
 }
