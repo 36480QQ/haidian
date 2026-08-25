@@ -1,5 +1,19 @@
 # 方案迭代记录
 
+## v1.0 - 2026-08-25
+
+R25-8 最终轮（88 → 90+）：全面审计 R25-8 各模块，确认前序轮次已闭环全部内容缺口，本轮为零内容改动的诚实收尾。未盲改核心概念、场景卡、治理脊柱、品牌系统（铁律）。
+
+### 模块审计结论
+- **A3 双语证据标记等价**：`proposal.md` ↔ `proposal.en.md` 证据标记（source/standard/depth/data/metric）逐一 diff，NO DIFF（100% 等价）。
+- **B1 来源审计**：`sources.json` 10 个全球标杆案例（QUAYSIDE / MASDAR / SONGDO / AMSTERDAM / XIONGAN / SHIBUYA / SUPERILLES / COPENHAGEN / PUNGGOL / CHEONGGYECHEON）全部具备 `url` + `accessed_date` + `location` + `period`，`source_type=official_public`（R25-6 已完成，本轮复验无缺口）。
+- **B2 版权许可矩阵**：`report/copyright_statement.md` 已列明每类资产（文本/HTML/几何/图件/品牌/JS 库/字体/仿真数据/方法引用/软件库）来源与许可；`proposal.md`「风险、版权与合规说明」节 + `[source:SITE-PACKAGE]` 书目入口齐全，无需新增。
+- **A1/A2/A4 视觉交付物**：A0 双语 PDF（`a0-boards.pdf`/`.en.pdf` 08-25 12:51）、A3 双语 booklet、4 HTML（`report/proposal.html`/`.en.html` + `visual/index.html`/`.en.html`）、双语图件（`site-overview`/`key-areas`/`land-use-structure`/`mobility-bluegreen` 等 `.en` 变体）全部存在且为最新。
+
+### 诚实边界
+- 88 分评审为一行「Accepted for repository intake only」，**未给出七维分项评分**；「表达 4/5、风险合规 4/5」的分项判断源自 83 分 request-changes 评审，本轮无法据此定向修复。
+- 未编造任何新内容、新数字、新 URL；未虚构合作主体/机构/协议；未新增或改动正文内容。
+
 ## v0.9 - 2026-08-25
 
 R25-7 最终抛光：确认 R25-6 已闭环 P0/P1，新增原创性「独立设计决策」声明（双语同步）。
