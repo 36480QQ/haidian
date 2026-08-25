@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="280" height="184" viewBox="-96 -60 192 120">
-  <!-- 双环交错 = ∞（纯双环，无附加元素，最轻盈） -->
-  <circle cx="-32" cy="0" r="46" fill="none" stroke="#16324F" stroke-width="7.2"/>
-  <circle cx="32" cy="0" r="46" fill="none" stroke="#16324F" stroke-width="7.2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="196" viewBox="-92 -56 184 112">
+  <!-- 左环：双线轨道 -->
+  <circle cx="-32" cy="0" r="46" fill="none" stroke="#16324F" stroke-width="4.5"/>
+  <circle cx="-32" cy="0" r="38" fill="none" stroke="#16324F" stroke-width="4.5"/>
+  <!-- 右环：双线轨道 -->
+  <circle cx="32" cy="0" r="46" fill="none" stroke="#16324F" stroke-width="4.5"/>
+  <circle cx="32" cy="0" r="38" fill="none" stroke="#16324F" stroke-width="4.5"/>
 </svg>
