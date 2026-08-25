@@ -6,9 +6,20 @@
 
 **修复阻断项（表达完整度）**
 
-- `report/proposal.html`、`visual/index.html` 内嵌按正文字符子集化的 Noto Sans SC（SIL OFL 1.1），不再依赖评审环境的系统中文字体；
-  字体来源与许可登记于 `sources.json`（`FONT-NOTO-SANS-SC`）与 `report/copyright_statement.md`。
-- 重新生成中英文 HTML 与截图，人工检查无方框缺字后重跑视觉门槛。
+- `report/proposal.html`、`report/proposal.en.html`、`visual/index.html`、`visual/index.en.html` **四个 HTML 全部**内嵌
+  按本包实际用字（1025 字符）子集化的 Noto Sans SC v2.004（SIL OFL 1.1），固化 400/700 两个字重，
+  WOFF2 + base64 写入 `@font-face`，不再依赖评审环境的系统中文字体。采用 `data:` URI 而非外链本地字体文件，
+  是因为评审以 `file://` 打开页面，Chromium 对 `file://` 使用不透明来源、字体属 CORS-enabled 请求，
+  相对路径字体会被拦截，而仓库禁止远程字体。
+- 字体来源、版本、Adobe 版权与保留名、实例化与子集化做法、再分发形式及 **OFL 1.1 全文**
+  登记于 `sources.json`（`FONT-NOTO-SANS-SC`）与 `report/copyright_statement.md`；
+  按 OFL 第 3 条，CSS 族名取 `JZSansSC`，不使用保留名 `Source`，也不以 `Noto` 名义发布。
+- 验证不依赖肉眼判断：对四个 HTML 的全部非 ASCII 字符做 cmap 覆盖检查（缺失 0）；
+  在 headless Chromium 中做像素比对——内嵌字形与系统苹方渲染同一串汉字差异 31522 px，
+  而苹方与系统默认差异 0 px，证明浏览器采用的是内嵌字形而非系统回退；
+  再按评审原参数 `--window-size=1440,1600` 逐页渲染复看，无方框、无乱码、无裁切。
+- base64 载荷已用仓库自身的 `FORBIDDEN_HTML_PATTERNS` / `FORBIDDEN_VISUAL_HTML_PATTERNS` 正则回扫，四个文件均干净。
+- 原 `report/copyright_statement.md` 中"HTML 只声明字体族名称，不打包、不加载任何字体文件"一句正是本缺陷成因，已改写。
 
 **回应任务书相关性意见（4/5 → 补齐对照闭环）**
 
