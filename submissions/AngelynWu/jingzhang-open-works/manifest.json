@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI GPT-5 family via Codex; human-directed research, fact checking, urban-design synthesis and artifact generation"
   },
-  "generated_at": "2026-08-24T14:14:42Z",
+  "generated_at": "2026-08-25T01:32:27Z",
   "files": [
     {
       "path": "manifest.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "595680e4df2caaa57b53282e78cf9c2e85f9c08f8e7e32982a61c6fdd13ffe22"
+      "sha256": "a7eaa2b5720c4b1bb026bf587fa66e12a82c906dda446b778d59c3ee08e19e2e"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,13 +81,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "99fc0bfc04cf441cc3d1bd92195aed71aa656ffce40206625ed000ca15e803ba"
+      "sha256": "61eac48310070ebc22e47eef619a04099c2a84750321ec79b51a7215cf0cdeaa"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "328fca4b00dec3586de419885293bd3f79a3cd78efd5552240ca7495fb387e12"
+      "sha256": "0770254ad5dd978a0e4b852f2f1050fb16dbee8d8e74baa61d0a6546662e43fd"
     },
     {
       "path": "report/copyright_statement.md",
@@ -100,7 +100,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f77d788fed374837accfb7a8764171724e3b73e5471de66b4f518e7b5d7e1a83"
+      "sha256": "a86b37986a60a2725f315ecd1d75ec05551ce4e0e093cd752a184d24dfb0b56b"
     },
     {
       "path": "drawings/a0-boards.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "153797e44ef549d5a898780d7948db35b2a10a38212ea5e70e4bfb2547709a3d"
+      "sha256": "ea9a83fc987331943c088161983792b4fc3f4e6c42ebaebd7fe5e0f2659e265b"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -128,7 +128,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "0b38e00a7cf363d2632741ba2c4ca2cb9e110a5719e0535be6da65ce7791265c"
+      "sha256": "8deee410f19fd1ad3b8798bbfe5c2220525bb380426b7e56621a8f5d2ad0056c"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "71b536daca728a99d27497dea30b3e6f39173a3d5f9815df0c2156b4a5c93bb9"
+      "sha256": "77b0e7113ed29c5855b95f51cc62799c69c8b1ed4c303d17af46cfe72a85a61d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "a0abb051baf1922b99dcb053257f650291bb1c346e199ed4b7cb0a8c674809e1"
+      "sha256": "df33a1f7db55c8c83271e9869d56489eae409a7040e9a31cea8fec4bd3e3468b"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "36d40a5a60643f4ab5d4bf77d61d84935ed6f352766359b872284f81ed9b6497"
+      "sha256": "eb835e495cd8046e31461f78232705aced1c87ed7b8a794f65061be2cddd94aa"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "4f8421772871434595f5ea68a383978ae03cf371174dd05a77d38e868aeb1882"
+      "sha256": "d675071f21b06abdd85eb4fa3505c3d792a54ee5cad75c1ae9184a55806550f8"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "a90447a24696e72c219863e1a7ea38ceebc6243b0628aed3ec063e4dc59b9880"
+      "sha256": "8942294a2eced7b2d673aa8e930170c46d5681365f951f60a46a1c5f1a1b5eb2"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",

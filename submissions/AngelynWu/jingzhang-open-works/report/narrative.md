@@ -1,8 +1,8 @@
 # 中英文成果等价核对清单 / Bilingual Equivalence Checklist
 
-> 状态：机器预检已完成；提交人已于 2026-08-25 完成最终人工签认。该清单不把 AI 检查冒充人工审阅。
+> 状态：本轮修订后的机器预检已完成；提交人最终人工签认待更新。该清单不把 AI 检查冒充人工审阅。
 >
-> Status: machine pre-check complete; final participant sign-off completed on 2026-08-25. This checklist does not represent AI checking as human review.
+> Status: machine pre-check complete; participant renewed the final bilingual sign-off for this revision on 2026-08-25. This checklist records participant confirmation and does not represent AI checking as human review.
 
 ## 核对范围 / Review Scope
 
