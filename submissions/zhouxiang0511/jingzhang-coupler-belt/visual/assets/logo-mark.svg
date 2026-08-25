@@ -1,12 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="280" height="207" viewBox="-95 -72 190 144">
-  <!-- 双环互锁 = ∞ -->
-  <circle cx="-32" cy="0" r="46" fill="none" stroke="#16324F" stroke-width="13"/>
-  <circle cx="32" cy="0" r="46" fill="none" stroke="#16324F" stroke-width="13"/>
-  <!-- 竖向钢轨穿过 -->
-  <line x1="0" y1="-58" x2="0" y2="58" stroke="#16324F" stroke-width="13" stroke-linecap="round"/>
-  <!-- 两端车钩点 -->
-  <circle cx="-78" cy="0" r="8" fill="#E8A13D"/>
-  <circle cx="78" cy="0" r="8" fill="#E8A13D"/>
-  <circle cx="-78" cy="0" r="4" fill="#ffffff"/>
-  <circle cx="78" cy="0" r="4" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="184" viewBox="-96 -60 192 120">
+  <!-- 双环交错 = ∞（纯双环，无附加元素，最轻盈） -->
+  <circle cx="-32" cy="0" r="46" fill="none" stroke="#16324F" stroke-width="7.2"/>
+  <circle cx="32" cy="0" r="46" fill="none" stroke="#16324F" stroke-width="7.2"/>
 </svg>
