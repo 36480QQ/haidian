@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-25
+
+- 将方案名称更新为 `京张协作廊：铁路遗产与AI公共创新` / `Jing-Zhang Civic Spine: Heritage, Public Life, and AI Innovation`，同步收敛品牌识别语法。
+- 重做五张核心图，改为编辑型城市设计图板：几何底图、铁路中轴、三处节点、图例、编号标注与临时边界说明形成稳定视觉层级。
+- 重新渲染双语离线报告和 A3/A0 图纸，并保留全部 GeoJSON、指标与自检证据链。
+
 ## v0.2 - 2026-08-25
 
 - 将投稿归属改为 `jiannnnyyyyy/jingzhang-memory-loop`，并在个人 fork 分支完成四道 Gate 自检。

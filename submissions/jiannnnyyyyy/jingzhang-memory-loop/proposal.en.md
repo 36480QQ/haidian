@@ -1,5 +1,5 @@
 ---
-title: "Jing-Zhang Memory Loop: AI Public Life and Innovation Corridor"
+title: "Jing-Zhang Civic Spine: Heritage, Public Life, and AI Innovation"
 author_github: "jiannnnyyyyy"
 language: "en"
 proposal_format_version: "2"
@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A concept plan that uses the Jing-Zhang railway heritage as a cultural spine and connects open research, public services, and daily life through a walkable, testable AI corridor."
 ---
 
-# Jing-Zhang Memory Loop: AI Public Life and Innovation Corridor
+# Jing-Zhang Civic Spine: Heritage, Public Life, and AI Innovation
 
 ## Design Basis and Source List
 
@@ -33,9 +33,9 @@ The seven-element ecosystem loop is “researchers frame questions; Zhongzhiyuan
 
 Regional collaboration is proposed as interfaces rather than administrative commitments: Beiliwei Community for community services and young talent exchange, Future Science City for frontier research, Huairou Science City for long-horizon science facilities, E-Town for intelligent manufacturing and scale-up, and the Beijing-Tianjin-Hebei region for transfer and talent mobility. Each interface is tested through public annual questions, reciprocal visits, reusable data standards, and outcome reviews [source:AGENT-TASKBOOK].
 
-The identity “JZ LOOP / Jing-Zhang Memory Loop” uses sleeper rhythm and an open ring. Deep teal, copper, and signal green form a proposed palette; the mark is a continuous line and ring, to be redrawn with cleared fonts and assets [depth:overall_spatial_structure].
+The identity “JZ CIVIC SPINE / Jing-Zhang Civic Spine” uses a rail spine, branching links, and three civic nodes. Deep teal, copper, and signal green form a proposed palette; the mark is a continuous axis with three nodes, to be redrawn with cleared fonts and assets [depth:overall_spatial_structure].
 
-The minimum visual guide uses a 2:1 horizontal ring for the master mark and a circular seal for nodes; stretching and unauthorized corporate marks are prohibited. Deep teal `#0F2433`, copper `#B88A3B`, signal green `#2D8A55`, and river cyan `#4D9EB0` are the four functional colors. “JZ LOOP” is the mark, “Jing-Zhang Memory Loop” is the name, and “Open Test / Civic Life / Memory Rail” are replaceable sublabels. Activity subbrands remain text locks beside the master mark. Fonts, graphics, printing, and accessibility require clearance before use.
+The minimum visual guide uses a 2:1 horizontal spine-and-three-node mark and a circular seal for nodes; stretching and unauthorized corporate marks are prohibited. Deep teal `#0F2433`, copper `#B88A3B`, signal green `#2D8A55`, and river cyan `#4D9EB0` are the four functional colors. “JZ CIVIC SPINE” is the mark, “Jing-Zhang Civic Spine” is the name, and “Open Test / Civic Life / Heritage Rail” are replaceable sublabels. Activity subbrands remain text locks beside the master mark. Fonts, graphics, printing, and accessibility require clearance before use.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -57,7 +57,7 @@ Three reference validation scenes are model red-team testing at Zhongzhiyuan, ac
 
 Four priority validation scenes use one “scenario-space-operation-evidence” card: model red-team testing records stop reasons and human sign-off; accessible navigation records broken links, alternatives, and paper feedback; smart-device/content integration records failures, permissions, and visitor feedback; and the talent-life desk records human handoff and voluntary withdrawal. Initial acceptance is a three-part Boolean gate: a record exists, a human can review it, and an exit path exists. Professional teams must set any numeric thresholds; pilots are not approved operations.
 
-Three AI pilgrimage landmarks are the Jing-Zhang Memory Loop Gate, the Zhongzhiyuan Safety Dome, and the Dazhongsi Open Terminal Walk. They are low-intensity, reversible concept nodes and do not require altering heritage fabric or private buildings. The honor system uses verifiable contribution IDs, optional attribution, and withdrawal. The public-space component kit includes movable seats, accessible wayfinding, low-glare night markers, switchable sensor boxes, and paper feedback boxes [depth:blue_green_public_space].
+Three AI pilgrimage landmarks are the Jing-Zhang Civic Spine Hall, the Zhongzhiyuan Safety Dome, and the Dazhongsi Open Terminal Walk. They are low-intensity, reversible concept nodes and do not require altering heritage fabric or private buildings. The honor system uses verifiable contribution IDs, optional attribution, and withdrawal. The public-space component kit includes movable seats, accessible wayfinding, low-glare night markers, switchable sensor boxes, and paper feedback boxes [depth:blue_green_public_space].
 
 The cultural narrative has three acts: railway engineering and public infrastructure; Zhongguancun open knowledge and near-campus innovation; and accountable agents, public contribution, and human governance. A bilingual “milepost + codeplate” guide separates historical facts from contemporary concepts. The international line is “From railway memory to accountable intelligence / 从铁路记忆到可问责的智能”.
 
