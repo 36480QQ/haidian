@@ -482,7 +482,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 | 多智能体城市/城市智能体 | GENERATIVE-AGENTS-2023 | 学术论文（Smallville 25 智能体社区），学术依据 | 已核实（arXiv:2304.03442）|
 | 东西向流量 | NOKIA-MBIT-INDEX | Nokia 全球网络流量报告，数据依据 | 已核实（nokia.com/asset/213660）|
 | 为 Agent 造 X | MIT-BUILD-X-FOR-AGENT | MIT Media Lab 研究线索，学术依据 | 出处待补充 |
-| 800V 直流母线 | E800V-DC-DISTRIBUTION | 直流配电技术文献，技术依据 | 出处待补充 |
+| 800V 直流母线 | E800V-DC-DISTRIBUTION | NVIDIA 官方博客（800V DC 供电架构/AI 工厂），技术依据 | 已核实（blogs.nvidia.com）|
 | 绿色城区/蓝绿系统 | GREEN-DISTRICT-DESIGN | 奥兰多 Green District 智慧城市案例（飞行出租车+EV+绿色设计），空间设计参考 | 已核实（interestingengineering.com）|
  https://www.ietf.org/blog/agentic-ai-standards/ | 公开标准 | 公开来源，待独立交叉核验 |
 

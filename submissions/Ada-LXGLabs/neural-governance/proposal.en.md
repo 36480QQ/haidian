@@ -471,7 +471,7 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 | Multi-agent city / civic agents | GENERATIVE-AGENTS-2023 | academic paper (Smallville 25-agent community), academic basis | verified (arXiv:2304.03442) |
 | East-west traffic | NOKIA-MBIT-INDEX | Nokia Global network traffic report, data basis | verified (nokia.com/asset/213660) |
 | Build X for agents | MIT-BUILD-X-FOR-AGENT | MIT Media Lab research line, academic basis | source URL pending |
-| 800V DC bus | E800V-DC-DISTRIBUTION | DC distribution technical literature, technical basis | source URL pending |
+| 800V DC bus | E800V-DC-DISTRIBUTION | NVIDIA blog (800V DC power architecture for AI factory), technical basis | verified (blogs.nvidia.com) |
 | Green district / blue-green | GREEN-DISTRICT-DESIGN | Orlando Green District smart-city case (flying taxis + EVs + green design), spatial reference | verified (interestingengineering.com) |
  https://www.ietf.org/blog/agentic-ai-standards/ | public standard | publicly cited, pending independent cross-check |
 
