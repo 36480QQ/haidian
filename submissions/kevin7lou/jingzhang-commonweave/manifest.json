@@ -65,7 +65,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "51d6a4fbf931136b293a7c0d607e2d861a61dc3a85b6a6d3feafc9a0cfbed7e7"
+      "sha256": "88686ed918d2e40b2900e471ddaac70151b102887755d419c95532cb336f5697"
     },
     {
       "path": "compliance_matrix.json",
@@ -89,7 +89,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "4feea832c9db7ed3670d4c8937045cc4b9768ca455c37c3fdea0c25c322ab3b2"
+      "sha256": "45ab13e1d4217ba4765f7053ae782dbd005ff81a477b85a3da801e4d5deeb869"
     },
     {
       "path": "visual/assets/life_support_matrix.json",
@@ -149,26 +149,26 @@
       "path": "visual/assets/bilingual_equivalence_audit.json",
       "role": "evidence_data",
       "required": true,
-      "sha256": "96fff2b6bef6822c113daa05fe987b377b380f3c4a4bdb450c0b0aaaa0146891"
+      "sha256": "314bb673e9aac25c15e17c8ef5db20eab0a5aa6078a00a7327764aae304c447b"
     },
     {
       "path": "visual/assets/reviewer_evidence_index.json",
       "role": "evidence_data",
       "required": true,
-      "sha256": "ee1b20b86ecd3b0e37598b946d2ab01b826646dd4f6a968543a05e2acc442773"
+      "sha256": "c78216e62dbd7558b0f18e847a31f598500fc6715d6d6c2bf5fb05fce744fbeb"
     },
     {
       "path": "visual/assets/font_embedding_audit.json",
       "role": "evidence_data",
       "required": true,
-      "sha256": "eec76192d129823b8499473d34366bff0c7a784f7680095c21e938770711928d"
+      "sha256": "1a57b55a376a6ec76862b5512c669bb683bffdbdf0f5fcb84f328ae0513a75a4"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "b84e7bbb7145e8326482f3b3bce4f267c004f2f88f43f30d8c30035bd2a4b72b"
+      "sha256": "acba4fc5564c358f83378b587761c37e827042185e39d0a5483f25b59f343f14"
     },
     {
       "path": "report/proposal.en.html",
@@ -176,7 +176,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "073c3a4133da7dd312c05e96914f19e8ccb6669286beadb32704ff542d3bf6f3"
+      "sha256": "af40e60ad2c31970085ca9ad922e4b5705b7d6458e121318a550fac5b72d5317"
     },
     {
       "path": "report/narrative.md",
@@ -195,7 +195,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "efd17ac57dfa6f48c97eb1a68ead067ebd81db8cfa9da01e06ea6df66085c353"
+      "sha256": "65ccf835b55752874c3d0e048428265647b60b1524e992e30151517a2125ea9c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -203,14 +203,14 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "29639747cc7648ec38007d98ff13a7964686c9a5cebea7e7358720614458ddab"
+      "sha256": "942c114f69249d1c8c5d4bfd4f6a0b404def0c17594ea56b6084a2195a87881f"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "aa95fb5e2493821dd04b7d1479e1ec15f57a8cef1405685d17165819fa5c837d"
+      "sha256": "65f49b0a34c53e356c37568368ae5a7a5bfd071de4e2fcd9ae81a02929445df5"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -218,14 +218,14 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e144992a14962df4e9aed6f6fa06cd7928da130ebe842578334bf549a2c69084"
+      "sha256": "d016404d391372795119b924464b198ec458292622e8792d74bda8d99f195651"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "77af4dbeed7e171d0a7fb1a7ff92dc2348f7daa40caf308b6688bb0ceb554673"
+      "sha256": "9d1ee953296296e2205e75381c38d0b0d328fee247e02cf53d2205d965bee4df"
     },
     {
       "path": "visual/index.en.html",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "b5f67d1d2e15b93de82ba7c1d1901ac74a8bde1f2c54916088c91c49b7092d96"
+      "sha256": "06121c40c69c9fbc0ac1547463aa7594a461727adff12bcb74d21f480833c66d"
     },
     {
       "path": "visual/assets/motion.min.js",

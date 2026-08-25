@@ -1,6 +1,9 @@
 {
   "schema_version": "0.2.0",
-  "source_review": "https://github.com/open-city-ai/haidian/pull/3968#pullrequestreview-5007754386",
+  "source_reviews": [
+    "https://github.com/open-city-ai/haidian/pull/3968#pullrequestreview-5007754386",
+    "https://github.com/open-city-ai/haidian/pull/3968#pullrequestreview-5015266497"
+  ],
   "actions": [
     {
       "id": "R-01",
@@ -81,6 +84,20 @@
         "proposal.md#开发者社区年度活动与国际转化"
       ],
       "completion_test_zh": "月季年节律与90天转化漏斗"
+    },
+    {
+      "id": "R-10",
+      "issue_zh": "HTML指定位置绕过内嵌字体，以及AI写实概念图限制说明层级过弱",
+      "evidence": [
+        "visual/assets/font_embedding_audit.json",
+        "report/proposal.html",
+        "report/proposal.en.html",
+        "visual/index.html",
+        "visual/index.en.html",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf"
+      ],
+      "completion_test_zh": "code/等宽元素/语言切换均路由到JZReview；中英网页首屏和A3封面高对比声明AI生成、非现场、非官方结果与临时边界"
     }
   ]
 }
