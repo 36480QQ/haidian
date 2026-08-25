@@ -384,7 +384,9 @@
     "geometry/phasing.geojson",
     "geometry/buildings.geojson"
    ],
-   "metrics": [],
+   "metrics": [
+    "site_area_sqm"
+   ],
    "drawings": [
     "drawings/a3-booklet.pdf",
     "drawings/a0-boards.pdf"
@@ -423,7 +425,9 @@
    "geojson_layers": [
     "geometry/roads.geojson"
    ],
-   "metrics": [],
+   "metrics": [
+    "site_area_sqm"
+   ],
    "drawings": [
     "drawings/a3-booklet.pdf",
     "drawings/a0-boards.pdf"
@@ -495,8 +499,12 @@
     "历史文化资源系统",
     "品牌识别"
    ],
-   "geojson_layers": [],
-   "metrics": [],
+   "geojson_layers": [
+    "geometry/site_boundary.geojson"
+   ],
+   "metrics": [
+    "site_area_sqm"
+   ],
    "drawings": [
     "drawings/a3-booklet.pdf",
     "drawings/a0-boards.pdf"
@@ -691,8 +699,12 @@
     "品牌识别",
     "国际传播文案"
    ],
-   "geojson_layers": [],
-   "metrics": [],
+   "geojson_layers": [
+    "geometry/site_boundary.geojson"
+   ],
+   "metrics": [
+    "site_area_sqm"
+   ],
    "drawings": [
     "drawings/a3-booklet.pdf",
     "drawings/a0-boards.pdf"
@@ -761,7 +773,9 @@
    "geojson_layers": [
     "geometry/public_space.geojson"
    ],
-   "metrics": [],
+   "metrics": [
+    "site_area_sqm"
+   ],
    "drawings": [
     "drawings/a3-booklet.pdf",
     "drawings/a0-boards.pdf"
@@ -796,7 +810,9 @@
    "geojson_layers": [
     "geometry/public_space.geojson"
    ],
-   "metrics": [],
+   "metrics": [
+    "site_area_sqm"
+   ],
    "drawings": [
     "drawings/a3-booklet.pdf",
     "drawings/a0-boards.pdf"
@@ -831,7 +847,9 @@
    "geojson_layers": [
     "geometry/green_space.geojson"
    ],
-   "metrics": [],
+   "metrics": [
+    "site_area_sqm"
+   ],
    "drawings": [
     "drawings/a3-booklet.pdf",
     "drawings/a0-boards.pdf"
@@ -861,8 +879,12 @@
     "年度运营",
     "深化与转化路径"
    ],
-   "geojson_layers": [],
-   "metrics": [],
+   "geojson_layers": [
+    "geometry/site_boundary.geojson"
+   ],
+   "metrics": [
+    "site_area_sqm"
+   ],
    "drawings": [
     "drawings/a3-booklet.pdf",
     "drawings/a0-boards.pdf"
