@@ -5,9 +5,27 @@
   "post_remediation_recheck": {
     "completed": true,
     "renderer": "PyMuPDF fitz 1.x local render",
-    "representative_pages": ["drawings/a3-booklet.en.pdf#19", "drawings/a3-booklet.en.pdf#20", "drawings/a0-boards.en.pdf#1", "drawings/a0-boards.en.pdf#2", "drawings/a0-boards.en.pdf#3"],
-    "checks": ["all selected pages nonblank", "English time windows and phasing notes visible", "A0 English note type enlarged", "rights warning visible in footer", "no observed clipping or overlap"],
-    "full_page_counts": {"a3_booklet_en": 21, "a0_boards_en": 3},
+    "representative_pages": [
+      "drawings/a3-booklet.pdf#13",
+      "drawings/a3-booklet.pdf#20",
+      "drawings/a3-booklet.en.pdf#13",
+      "drawings/a3-booklet.en.pdf#20",
+      "drawings/a0-boards.pdf#2",
+      "drawings/a0-boards.pdf#3",
+      "drawings/a0-boards.en.pdf#2",
+      "drawings/a0-boards.en.pdf#3"
+    ],
+    "checks": [
+      "all selected pages nonblank",
+      "dependency-stage wording visible with no fixed-year claim",
+      "mobility interfaces described as proposed rather than verified",
+      "rights warning visible in footer",
+      "no observed clipping or overlap"
+    ],
+    "full_page_counts": {
+      "a3_booklet_en": 21,
+      "a0_boards_en": 3
+    },
     "claim_boundary": "Representative render QA does not replace human or certified translation review, accessibility certification, professional approval, rights clearance, or publication authorization."
   },
   "html": {
@@ -17,28 +35,78 @@
       "report/proposal.html",
       "report/proposal.en.html"
     ],
-    "viewport": {"width": 1440, "height": 1600},
+    "viewport": {
+      "width": 1440,
+      "height": 1600
+    },
     "renderer": "Microsoft Edge headless local-file render",
     "font_source": "visual/assets/review-font.css",
-    "font_codepoint_coverage": "pass_zero_missing_codepoints",
-    "visual_checks": ["no missing-glyph boxes", "no incoherent overlap", "no first-viewport clipping", "AI review layer remains visually separated from human content"],
+    "font_codepoint_coverage": "local_subset_linked_in_both_indexes_and_both_proposal_html_files; browser_recheck_pending",
+    "visual_checks": [
+      "no missing-glyph boxes",
+      "no incoherent overlap",
+      "no first-viewport clipping",
+      "AI review layer remains visually separated from human content"
+    ],
     "preview_contact_sheet": "local QA evidence only; not shipped in the submission"
   },
   "pdf": {
     "artifacts": [
-      {"path": "drawings/a3-booklet.pdf", "pages": 21, "rendering": "font_independent_image_only"},
-      {"path": "drawings/a3-booklet.en.pdf", "pages": 21, "rendering": "font_independent_image_only"},
-      {"path": "drawings/a0-boards.pdf", "pages": 3, "rendering": "font_independent_image_only"},
-      {"path": "drawings/a0-boards.en.pdf", "pages": 3, "rendering": "font_independent_image_only"}
+      {
+        "path": "drawings/a3-booklet.pdf",
+        "pages": 21,
+        "rendering": "font_independent_image_only"
+      },
+      {
+        "path": "drawings/a3-booklet.en.pdf",
+        "pages": 21,
+        "rendering": "font_independent_image_only"
+      },
+      {
+        "path": "drawings/a0-boards.pdf",
+        "pages": 3,
+        "rendering": "font_independent_image_only"
+      },
+      {
+        "path": "drawings/a0-boards.en.pdf",
+        "pages": 3,
+        "rendering": "font_independent_image_only"
+      }
     ],
     "font_audit": "visual/assets/pdf-font-audit.json",
     "rendering_tradeoff": "Image-only PDF export removes runtime font dependency, but text is not searchable or selectable.",
-    "visual_checks": ["all 48 pages nonblank", "paper dimensions preserved", "no observed text overlap", "no observed clipping", "English counterparts retain source page order"],
+    "visual_checks": [
+      "all 48 pages nonblank",
+      "paper dimensions preserved",
+      "no observed text overlap",
+      "no observed clipping",
+      "English counterparts retain source page order"
+    ],
     "compression_qa": {
-      "a3_zh": {"pages": 21, "dpi": 110, "jpeg_quality": 75, "min_preview_psnr_db": 27.97},
-      "a0_zh": {"pages": 3, "dpi": 72, "jpeg_quality": 75, "min_preview_psnr_db": 28.63},
-      "a3_en": {"pages": 21, "dpi": 110, "jpeg_quality": 75, "min_preview_psnr_db": 34.74},
-      "a0_en": {"pages": 3, "dpi": 72, "jpeg_quality": 75, "min_preview_psnr_db": 33.38},
+      "a3_zh": {
+        "pages": 21,
+        "dpi": 110,
+        "jpeg_quality": 75,
+        "min_preview_psnr_db": 27.97
+      },
+      "a0_zh": {
+        "pages": 3,
+        "dpi": 72,
+        "jpeg_quality": 75,
+        "min_preview_psnr_db": 28.63
+      },
+      "a3_en": {
+        "pages": 21,
+        "dpi": 110,
+        "jpeg_quality": 75,
+        "min_preview_psnr_db": 34.74
+      },
+      "a0_en": {
+        "pages": 3,
+        "dpi": 72,
+        "jpeg_quality": 75,
+        "min_preview_psnr_db": 33.38
+      },
       "manual_detail_check": "participant_checked_small_text_exit_rules_final_warning_and_no_blank_pages"
     }
   },

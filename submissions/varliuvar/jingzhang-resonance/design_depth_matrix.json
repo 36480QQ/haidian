@@ -899,9 +899,9 @@
         "visual/assets/ai-review-layer.json",
         "visual/assets/asset-rights-ledger.json"
       ],
-      "current_reality_state": "权利台账、参与者双语等价检查与参与者模型声明已完成；未清素材的权利证据、独立双语复核、商标/逐图模型记录与最终维护者 QA 仍开放。",
+      "current_reality_state": "权利台账、10/10 独立 AI 双语机器复核与参与者模型声明已完成；未清素材的权利证据、人类或持证审校、商标/逐图模型记录与最终维护者 QA 仍开放。",
       "participant_complete": false,
-      "completeness_limited_by": ["seven disclosed bilingual-equivalence deltas in the frozen human-facing artifacts", "rights-holder evidence or cleared replacement assets", "official-register trademark result and per-asset model-record review", "final maintainer QA"],
+      "completeness_limited_by": ["10/10 bilingual-equivalence mappings pass independent AI machine review; the machine addendum remains an audit trail and human/certified review is not claimed", "rights-holder evidence or cleared replacement assets", "official-register trademark result and per-asset model-record review", "final maintainer QA"],
       "ai_review_structured_summary": {
         "repair_counts": {"complete": 11, "in_progress": 0, "external_dependency": 2, "not_started": 0},
         "open_feedback_ids": ["F-20260824-01"],
