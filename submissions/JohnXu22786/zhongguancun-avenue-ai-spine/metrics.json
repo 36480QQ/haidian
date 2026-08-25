@@ -99,14 +99,16 @@
     },
     "land_use_zone_count": {
       "status": "known",
-      "value": 21,
+      "value": 24,
       "unit": "count",
       "source_files": [
         "geometry/land_use.geojson"
       ],
       "formula": "count(land_use.geojson features)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "Count matches the 24 features of geometry/land_use.geojson; consistent with figures (\"24 zones\") and proposal text."
+      ]
     },
     "building_unit_count": {
       "status": "known",

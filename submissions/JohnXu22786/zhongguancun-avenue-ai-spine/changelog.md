@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v2.0 - 2026-08-25
+
+ROUND-3 REPAIR:
+
+- 图件全面重绘（zh/en 各 7 张 PNG + A0×2 页/A3×8 页双语 PDF）：site-overview（消除红色遮蔽，重排图例与说明区，加入用地分区底图、三重点区域虚线轮廓、京智长街概念轴线、南北贯通主轴、3条东西缝合、三地标★、非官方红线声明）；key-areas（三个放大内页不再是空白，逐页填充展场/断面/微单元示意）；mobility-bluegreen（图例与说明从挤在左端改为右侧信息栏+图例网格）；land-use-structure（24个分区地图与占比分栏、图例全英文）；metrics-evidence（比例与计数分栏、英文标签无重叠）；cooperation-mechanism（密度与图例补齐）。全部图件 figsize≈(12,8)@150dpi、标题≥17-19pt、图例≥11.5pt、标注≥9.5-13pt、绘制期文本包围盒重叠/裁剪检查全部 clear、ink≥0.09、PROVISIONAL 双语水印+指北针+比例尺，含每图机器QC记录（见 self_check.json[figure_qc]）。
+- 用地分区口径统一：land_use.geojson 实录24个分区 → metrics.json land_use_zone_count 21→24；中英文正文（用地章、指标展示精度表）与图件（"24 concept zones"）、视觉页同步为24。
+- 中英双语实质等值修复：英文图及A0/A3英文版残留中文标签清除（图例、说明、水印外全部英文）；en 指标图标签重叠修复；A0英文首屏中文说明移除；proposal.en.md 中文夹注全部改为引号内对照（渲染后无功能性中文）；land-use-structure.en 分类标签中文化修复。
+- agent.4 可评审空间表达：正文新增"AGENT-4空间关系表达"段（遗址公园AI公共空间/南北贯通/东西缝合/大钟寺业态场景/3概念地标与三重点片区关系），site-overview 与 key-areas 图按此呈现，compliance_matrix agent.4 evidence_summary_zh 同步更新。
+- 数据与一致性：source ID 日期令牌 YYYYMMDD→YYYY-MM-DD（消除精确式长数字观感），source 引用面全部同步；proposal.md 新增停止条件与退出机制表述；品牌在先权利与使用边界诚实声明（未做商标检索→内部工作代号、不注册不对外，sources.json 新增 ASSET-BRAND-NAMES）；manifest validation_claim.data_confidence high→medium（与低-中置信度指标一致）。
+- 门禁：valroot 四门禁全部通过后由 self_check 按要求标记；评分脚本 reviewer_gaps 清零。
+
 ## v1.1 - 2026-08-25
 
 - 针对评审 CHANGES_REQUESTED 逐项修复（详见 compliance_matrix.json 与 proposal.md 新章节）：
