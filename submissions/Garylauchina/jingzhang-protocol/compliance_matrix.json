@@ -77,7 +77,8 @@
         "A-FLAGSHIP-FP03",
         "A-FLAGSHIP-FP04",
         "A-FLAGSHIP-FP05",
-        "A-FP01-CONCRETE-PROTOTYPE-001"
+        "A-FP01-CONCRETE-PROTOTYPE-001",
+        "A-AGENT-PARTICIPATION-METHOD-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -85,7 +86,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "以六组国际机制比较、研发与产业服务用地、12个场景节点和七类公共接口共同证明生态体系；不把企业、投资或政策设想写成既成事实；V0.7将12场景收束为五个概念旗舰试点，以技术突破、实景试验、首用采购、市场扩散和标准输出形成可停可审的转化链。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。V0.9把国家应用导向和海淀中期要求转译为六项转化能力与横贯式可信运行层；两个新增指标只证明内部映射完整，不证明国家试点、获批、实施、外部采用、绩效或全球领先。 V0.10将FP01收束为一项学习/职业转介服务：S07是唯一用户服务，S03负责评测，S04负责接口；虚构复合人物、三尺度概念空间和四类示例回执可机读核查，实际人物确认、场址、基线、阈值和绩效仍待D0实测。",
+    "evidence_summary_zh": "以六组国际机制比较、研发与产业服务用地、12个场景节点和七类公共接口共同证明生态体系；不把企业、投资或政策设想写成既成事实；V0.7将12场景收束为五个概念旗舰试点，以技术突破、实景试验、首用采购、市场扩散和标准输出形成可停可审的转化链。V0.8以FP01-CONTRACT-001把S03/S04/S07收束为一份未签署的百日首用合同模板。V0.9把国家应用导向和海淀中期要求转译为六项转化能力与横贯式可信运行层。V0.10将FP01收束为一项学习/职业转介服务。V0.13进一步登记公开任务、Agent生成、来源/假设、机器校验、Issue/PR纠错、人类终判与公共知识归档的方法链；它展示可追溯的AI应用与治理能力，不证明本投稿被采纳或城市实践已实施。",
       "geojson_feature_ids": [
         "SCENARIO-S01",
         "SCENARIO-S02",
@@ -123,8 +124,10 @@
         "SCENARIO-S12",
         "ROOM-TEST-001"
       ],
-      "evidence_files": [
-        "visual/assets/fp01-contract.json",
+    "evidence_files": [
+      "visual/assets/agent-participation-ledger.json",
+      "assets/figures/double-demonstration.png",
+      "visual/assets/fp01-contract.json",
         "visual/assets/verify-fp01-contract.js",
         "assets/figures/fp01-spatial-prototype.png"
       ]
@@ -463,9 +466,10 @@
         "A-SCENARIO-LOCATION-001",
         "A-INDUSTRY-DATA-001",
         "A-OPERATIONS-001",
-        "A-METRICS-001",
-        "A-NATIONAL-STRATEGIC-FRAMING-001",
-        "A-APPLICATION-CAPABILITY-REPLICATION-001"
+      "A-METRICS-001",
+      "A-NATIONAL-STRATEGIC-FRAMING-001",
+      "A-APPLICATION-CAPABILITY-REPLICATION-001",
+      "A-AGENT-PARTICIPATION-METHOD-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -473,7 +477,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "以SOURCE—STACK—PROVE—LIVE & MARKET—ENABLE—COMMONS六节点网络连接创新资源，五旗舰提供实施入口，七接口仅作为次级可信运行层。北纬社区、未来科学城、怀柔科学城、经开区与京津冀仅登记为概念协作接口，不表示已确认合作或空间边界；network_role_count与network_role_anchor_count均从最终几何复算为6，支撑六节点生态关系而非合作或绩效宣称。",
+    "evidence_summary_zh": "以SOURCE—STACK—PROVE—LIVE & MARKET—ENABLE—COMMONS六节点网络连接创新资源，五旗舰提供实施入口，七接口仅作为次级可信运行层。北纬社区、未来科学城、怀柔科学城、经开区与京津冀仅登记为概念协作接口，不表示已确认合作或空间边界；network_role_count与network_role_anchor_count均从最终几何复算为6，支撑六节点生态关系而非合作或绩效宣称。V0.13把本次开源征集作为项目级方法原型：AI参与专业成果生产，人类和专业机构保留最终判断；这一过程证据不能替代城市试点H0-H4外部实证。",
       "geojson_feature_ids": [
         "PUBLIC-BUILD-002",
         "PUBLIC-LIVE-002",
@@ -1400,6 +1404,8 @@
       "source_ids": [
         "AGENT-TASKBOOK",
         "OFFICIAL-ANNOUNCEMENT",
+        "OPEN-CALL-PROJECT-STATEMENT",
+        "SUBMISSION-INTAKE-PR-4007",
         "COMMUNITY-GEOMETRY-CROSSCHECK-1029",
         "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
         "STATE-COUNCIL-AI-PLUS-2025",
@@ -1421,7 +1427,8 @@
         "A-NATIONAL-STRATEGIC-FRAMING-001",
         "A-APPLICATION-CAPABILITY-REPLICATION-001",
         "A-BRAND-COMPONENT-001",
-        "A-DELIVERY-READINESS-001"
+        "A-DELIVERY-READINESS-001",
+        "A-AGENT-PARTICIPATION-METHOD-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1429,9 +1436,12 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "‘京张，再次开路’以六节点网络和五旗舰试点统筹三区两翼，AI City API、城市公约、人工接管与七接口仅构成次级可信运行层；北纬社区、未来科学城、怀柔科学城、经开区和京津冀均为概念协作接口，不表示已确认合作、项目或空间边界；三间街室和I1-I7实体节点作为次级可信运行证据，为六节点网络和五旗舰提供可核验但非官方的责任接口；SOURCE、STACK、PROVE、LIVE_MARKET、ENABLE、COMMONS六节点由六个唯一几何锚点组织，五旗舰负责实施转化，可信运行层保持次级支撑；六角色各有且仅有一个临时几何锚点；北纬社区、未来科学城、怀柔科学城、经开区和京津冀只作为概念协作接口。 V0.8 登记社区可复算定位差异为 background-only 警示，不移动临时坐标，也不把同名地物关系写成已确认工程位置。V0.9以四条官方战略和项目直连来源校准六项转化能力与横贯式可信运行层；运行稳不是第七空间节点，整套框架也不构成国家试点、获批、采纳、实施或领先证明。V0.10.1以单一主品牌、五旗舰、四项运营节律、五类贡献记录、三地标和六类可逆组件形成统一架构，并用H0-H4责任/证据停止门约束转化；这只证明提案内部结构完整，不证明Logo批准、活动实施、获奖、选址、运营、预算、采购、施工或绩效。",
-      "evidence_files": [
-        "visual/assets/brand-component-architecture.json",
+    "evidence_summary_zh": "‘京张，再次开路’以六节点网络和五旗舰试点统筹三区两翼，AI City API、城市公约、人工接管与七接口仅构成次级可信运行层；北纬社区、未来科学城、怀柔科学城、经开区和京津冀均为概念协作接口，不表示已确认合作、项目或空间边界；三间街室和I1-I7实体节点作为次级可信运行证据，为六节点网络和五旗舰提供可核验但非官方的责任接口；SOURCE、STACK、PROVE、LIVE_MARKET、ENABLE、COMMONS六节点由六个唯一几何锚点组织，五旗舰负责实施转化，可信运行层保持次级支撑；六角色各有且仅有一个临时几何锚点。V0.9以官方战略和项目直连来源校准六项转化能力与横贯式可信运行层；整套框架不构成国家试点、获批、采纳、实施或领先证明。V0.13增加双层验证：公开任务—Agent生成—来源/假设—机器校验及V0.12前序版的Issue/PR intake记录是已观察环节；人类终判和知识返还尚未观察但权限已保留。当前V0.13是本次PR投稿版，实时intake状态只以PR记录为准，提交本身不等于接收；城市服务仍须H0-H4外部实证。两层证据不得相互替代。",
+    "evidence_files": [
+      "visual/assets/agent-participation-ledger.json",
+      "visual/assets/verify-agent-participation-ledger.js",
+      "assets/figures/double-demonstration.png",
+      "visual/assets/brand-component-architecture.json",
         "visual/assets/verify-brand-component-architecture.js",
         "assets/figures/brand-component-architecture.png"
       ],
@@ -1870,6 +1880,8 @@
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
+        "OPEN-CALL-PROJECT-STATEMENT",
+        "SUBMISSION-INTAKE-PR-4007",
         "HIST-JINGZHANG-RAILWAY",
         "HIST-JINGZHANG-PARK",
         "HIST-JINGZHANG-AI-BELT"
@@ -1879,7 +1891,8 @@
         "A-KEYAREA-001",
         "A-FLAGSHIP-FP05",
         "A-BRAND-COMPONENT-001",
-        "A-DELIVERY-READINESS-001"
+        "A-DELIVERY-READINESS-001",
+        "A-AGENT-PARTICIPATION-METHOD-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1887,9 +1900,11 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "铁路自主工程史、遗址公园公共性、协议版本记忆与三处地标形成文化叙事；设计命题与史料原句保持区分；FP05用权利清晰、可纠错、可无手机访问的证据路线连接京张遗产叙事与当代AI试验。V0.10.1以道岔、开放括号和回程箭头作为未获批的Logo方向，以公共问题、开放构建、独立验证、权利守护、失败纠错与能力返还五类可核查贡献替代个人排位式荣誉；三地标和六类可逆组件共用同一叙事语法，不声称已有官方标识、获奖者、活动或建成地标。",
-      "evidence_files": [
-        "visual/assets/brand-component-architecture.json",
+    "evidence_summary_zh": "铁路自主工程史、遗址公园公共性、协议版本记忆与三处地标形成文化叙事；设计命题与史料原句保持区分；FP05用权利清晰、可纠错、可无手机访问的证据路线连接京张遗产叙事与当代AI试验。V0.13把1909自主勘测、设计、施工与管理复杂系统的能力，映射到2026年开放Agent共创与城市审查、接管、纠错、停止AI的双重能力；这是有公开过程记录支撑的设计判断，不是政府授予的历史定位或世界首创结论。",
+    "evidence_files": [
+      "visual/assets/agent-participation-ledger.json",
+      "assets/figures/double-demonstration.png",
+      "visual/assets/brand-component-architecture.json",
         "visual/assets/verify-brand-component-architecture.js",
         "assets/figures/brand-component-architecture.png"
       ],
@@ -1977,6 +1992,8 @@
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
+        "OPEN-CALL-PROJECT-STATEMENT",
+        "SUBMISSION-INTAKE-PR-4007",
         "NATIONAL-AI-APPLICATION-ORIENTATION-2025",
         "STATE-COUNCIL-AI-PLUS-2025",
         "NATIONAL-FIFTEENTH-FIVE-YEAR-AI-APPLICATION-2025",
@@ -2001,7 +2018,8 @@
         "A-BRAND-COMPONENT-001",
         "A-DELIVERY-READINESS-001",
         "A-FP01-EVIDENCE-READINESS-001",
-        "A-FP01-DELIVERY-CONTROL-001"
+        "A-FP01-DELIVERY-CONTROL-001",
+        "A-AGENT-PARTICIPATION-METHOD-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -2009,7 +2027,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制；三条旅程和三处能力返还台把长期运营的暂停、补救、退役及公共能力返还写成引用完整的概念登记，不声称已经兑现；每项试点以90日go/revise/stop记录进入一年评估，未验证采购、扩散、标准和公共收益继续保持unknown。V0.12把三片区概念界面、六项D0方法、H0-H4角色级RACI、M01-M06单套测试清单和K01-K10关键依赖转为独立机器可核验交付模型；五道外部证据门仍为0，场址、实名主体、预算采购、专业审查、演练、授权、日期与结果须由外部材料填入。",
+    "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制；三条旅程和三处能力返还台把长期运营的暂停、补救、退役及公共能力返还写成引用完整的概念登记，不声称已经兑现；每项试点以90日go/revise/stop记录进入一年评估，未验证采购、扩散、标准和公共收益继续保持unknown。V0.13将brief—Agent—结构化证据—机器校验—Issue/PR—人类专业判断—深化—公共知识登记为长期方法链，并提出京张共创档案第0卷同时保存失败、异议、撤回和未采用理由；正式评选、采纳与实施仍保持未证实。",
       "geojson_feature_ids": [
         "PHASE-001",
         "PHASE-002",
@@ -2056,8 +2074,11 @@
         "SCENARIO-S11",
         "ROOM-TEST-001"
       ],
-      "evidence_files": [
-        "visual/assets/fp01-contract.json",
+    "evidence_files": [
+      "visual/assets/agent-participation-ledger.json",
+      "visual/assets/verify-agent-participation-ledger.js",
+      "assets/figures/double-demonstration.png",
+      "visual/assets/fp01-contract.json",
         "visual/assets/verify-fp01-contract.js",
         "assets/figures/fp01-spatial-prototype.png",
         "visual/assets/brand-component-architecture.json",
