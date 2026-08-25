@@ -65,7 +65,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7b579fd00ac60071219b43e2390d99c0c91e0f7568701e54c83818d6c41fb651"
+      "sha256": "50df1402b398485ce26eb1494e792040abc63dd5f46d499b1d536bd910010df7"
     },
     {
       "path": "compliance_matrix.json",
@@ -89,7 +89,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "a1830fcc10ebfd7c9944463d9c40b1cadb468e5498264f67915fb31626df15fb"
+      "sha256": "e70bc04b058f7b794b203905c9b58dd551ffe088d2e0ccc9c69a61120167311a"
     },
     {
       "path": "visual/assets/life_support_matrix.json",
@@ -161,14 +161,14 @@
       "path": "visual/assets/font_embedding_audit.json",
       "role": "evidence_data",
       "required": true,
-      "sha256": "ba335b5d1f3804ab2ca4500d0e684285769700c08b0fa68c62ce6e04ff73482b"
+      "sha256": "268aae1a213a4b7047ce64d7f9460c7b364ef0c56d2d44cb7b1feb07548f9509"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f82440ac49fd61b36413a10b2a85f5aab8c236ac03e22da6ecef5e89613b3590"
+      "sha256": "530ae486c9cbb273340b54b5a2026665507acaf5ac66b40b336a987074df8dcb"
     },
     {
       "path": "report/proposal.en.html",
@@ -176,7 +176,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d527350ca0e0f124c0c9a9e3545c1c36be85400be1a445ce2d9ae5f9a735aadf"
+      "sha256": "13c92248125e8b1f6d0195bb72f32b4e908b4b5d2ff065da9502d24ccb65d5b4"
     },
     {
       "path": "report/narrative.md",
@@ -225,7 +225,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "983cdc9cbbd409c0a7558ccde06277912ab632858675a0e449e6b017bb76d640"
+      "sha256": "204fd4a3dca039c54cf5255876c15add73472424937e90152329ae6b3d73db2b"
     },
     {
       "path": "visual/index.en.html",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "d041853825c4cc1f129377d11d317bdf911bfc098c055796b1d830d5286810be"
+      "sha256": "a0d4ef6314179ea7d55df75d20ecce07a0dfc94a138d79a3adc19ff9bd10048d"
     },
     {
       "path": "visual/assets/motion.min.js",
