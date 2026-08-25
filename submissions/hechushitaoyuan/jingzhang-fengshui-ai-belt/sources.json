@@ -87,6 +87,12 @@
       "source_type": "background_only",
       "usage": "v1.2 无障碍色觉量化核验方法登记：对图件 11 色语义色板做四类色觉（正常/绿盲/红盲/蓝盲，Machado et al. 2009 二色觉矩阵 severity 1.0）模拟下的 CIEDE2000（Sharma et al. 2005 实现，经论文官方测试向量 5/5 自检）两两色差核验，阈值 ΔE00≥20；逐对结果登记于 visual/assets/a11y-color-check.json。",
       "limitations": "核验脚本位于作者本地 .local-build/（不随包分发），但方法、矩阵来源、阈值与实现自检向量在正文与本条完整披露，可由第三方按同方法复算；例外色对的整改（拉开金色族明度、分离两个黛蓝）为对专业团队的深化建议，本包以文字冗余编码兜底。"
+    },
+    {
+      "id": "SRC-OSM-CONTEXT-SNAPSHOT",
+      "source_type": "background_only",
+      "usage": "OpenStreetMap 本地背景快照，经 Overpass API 获取；bbox（WGS84 南,西,北,东）为 39.92,116.31,40.06,116.39，快照时间窗自 2026-08-22T18:47Z 起（计数先行、几何随后同小时段）。官方登记口径：waterway 109、green 1780、amenity 节点 2424、road 4636、railway 267、building 14740（含量关系；图面渲染为 way 级 14648）、public_transport+station 2563，合计 26519。数据版权归 © OpenStreetMap contributors，采用 ODbL 1.0。",
+      "limitations": "仅用于背景辨识；不参与边界、用地、道路与指标计算；不作测绘成果或审批底图。"
     }
   ]
 }

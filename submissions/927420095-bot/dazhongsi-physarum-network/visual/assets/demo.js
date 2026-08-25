@@ -17,7 +17,7 @@
   var translations = {
     zh: {
       panelTitle: '百年京张 AI 创新带 · 交互演示',
-      panelSubtitle: '生物黏菌路网更新概念方案（Bio-Physarum）',
+      panelSubtitle: '生物黏菌路网更新概念方案（Bio-Physarum）· 概念建议 / 非审批成果',
       btnStart: '设置起点',
       btnEnd: '设置终点',
       btnObstacle: '放置障碍',
@@ -62,7 +62,7 @@
     },
     en: {
       panelTitle: 'Centenary Jingzhang AI Belt · Interactive Demo',
-      panelSubtitle: 'Bio-Physarum road network renewal (concept proposal)',
+      panelSubtitle: 'Bio-Physarum road network renewal (concept proposal) · conceptual suggestion / non-approval',
       btnStart: 'Set start',
       btnEnd: 'Set end',
       btnObstacle: 'Place obstacle',

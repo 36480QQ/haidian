@@ -29,6 +29,8 @@ def git_blob_sha256(paths: Iterable[Path], *, cwd: Path) -> dict[Path, str] | No
         cwd=cwd,
         capture_output=True,
         text=True,
+        encoding="utf-8",
+        errors="replace",
         check=False,
     )
     if completed.returncode:

@@ -9,12 +9,12 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "hechushitaoyuan",
-    "agent_name": "GuoOpencode",
-    "model": "kimi-k3",
-    "model_family": "kimi",
-    "model_detail": "初稿 accounts/fireworks/models/kimi-k3 via opencode (fireworks provider)；本轮迭代 zcode (model GLM-5.3) —— 多智能体协作"
+    "agent_name": "同济设计AI云",
+    "model": "ox-alpha（编排）+ Codex CLI 与 Claude Code 子智能体",
+    "model_family": "deepseek",
+    "model_detail": "初稿 accounts/fireworks/models/kimi-k3 via opencode (fireworks provider)；迭代 zcode (model GLM-5.3)；v1.3 阶段署名：同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）（Tongji Design AI Cloud: DeepSeek Harness + ox-alpha, with subagent CLIs Codex (GPT-5.6-Sol) and Claude Code (Claude Opus 5)）"
   },
-  "generated_at": "2026-08-18T07:20:56Z",
+  "generated_at": "2026-08-24T04:00:30Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "20ae40a36945e503b0a9eabdefd45858aa9b81446672855aa1878b79cfa89bd6"
+      "sha256": "843ab30d7d377e15ebd0484e75c2bdae2dc33c7abf35892e6c2e66c659b97dfc"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "6d8ba57cdc6571dd859ef98efdc01e1000529e338e68e6f941b2a7a08294095d"
+      "sha256": "c4ba0dcf8461195af6f1a15c59522f797b1cf1510077a7af395c1019b2512d16"
     },
     {
       "path": "metrics.json",
@@ -50,19 +50,19 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "4e315cbabdc41784d009113fbc8141ec8882f260a9b51e02c65909b0fec690bf"
+      "sha256": "2aa6181e322bc87c0d968b52811db9c38d08b0d84989f6b5ebe1959e1dd9eb94"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a346b5a7d6dfacecd7e1a017ed30152c7f0ab693b90d8e8bac4f0bb928d78c78"
+      "sha256": "48414f86bc32ab3f4fd601f50c63360347dfa2101c2cb7ee285a2df2f8434e2d"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "7889faacf16b150c3e9430aeadd9d0c456fe9c46a3687a15eb33f797c5330e81"
+      "sha256": "a41a4e17c979b6ba2b18ed56088f1a7b7dadb4ed329e7e6a63510df9380d7c40"
     },
     {
       "path": "standard_matrix.json",
@@ -74,14 +74,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "ccf74e7b285508aa1cffdd19486d86d16f434c1877ecbfde69bdf19b74c56cde"
+      "sha256": "a8572dbfc8373929622c6e07986bf0903bee3a6025fd4c2fba071e11acd41aeb"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ec1e8f7c7c2366256f22aaf8c52eb2ec8a0b5bc67399afd33c871a93aa5bdd91"
+      "sha256": "cd0d1fc7c32ce9d3bed14e8434900657680eaa555fc138c31dce5c098d7252a9"
     },
     {
       "path": "report/narrative.md",
@@ -93,28 +93,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f292a405e80bd707e197fac7c61d43bc46868c61555d6c5cc4fe54a03640e8cb"
+      "sha256": "0a295a4e4582350289ea9c6c517f962128a54dab622c3d7da13fb0a1e3b0b7c4"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d02acb9bb6e0b83e2e5c9b0ea748f5e72875d12ed0c26936cb7ef6795507e601"
+      "sha256": "977002741a4cd215c4ac53720fcef674d3ca2ecd34b548e3b9c0b12c17de517e"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "be00622223be001b200c81cb9a07b3d6dff2c28137095c14778dfa0d94dd1824"
+      "sha256": "9a1554d433d23f59674a63e862634fdb7ef3f0db205f0bf972032f9d3d57e802"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "ee99233de1ff551b063a60dd79cff36be7a1dd3e32eba589a28a529604568fe8"
+      "sha256": "cbfe7fdc2b63bef6cfb6b70345c59c33c32dc6d469a06faf24b97f10c61d8340"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "003ce3e45649d0d4f6cee78edb6eab8364d2dae2bf11a3b27fa2f61e5403356e"
+      "sha256": "ec3dbfa390845fb3df7da19e315acbae88a787b1438e5fb1fc65ef91adad41c1"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0c5e15d06022954091a695dd7c37aecabff14b05703040669a5417d2142fe59d"
+      "sha256": "806725488ec3b1ac846714625ba02c40829ffe38b84b61a62b49f0c4ad7aea7a"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "43cd9f5f94acaec0a8f62a028166f942e80bb1f74d49a1e85609f359f2aa420f"
+      "sha256": "b15a55f2702a78192177179f6d78b4bdfc5d2d391ab3dc71a65cb6b0d9ccc19f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "8ac0542507317a0d457f65f58e9bfc0cfdfd87f82ddf480ff21ab2b48df4cc96"
+      "sha256": "de82ad9805df963722ed19865240b1cea4930bbd27c6d77bcd6a194d97117da2"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "10516e6263557410922c2410990d97ce9f908324019bebed7497b20583f5519e"
+      "sha256": "914e990482b7fbff4d50390e4bf02fa03ca6f2925522a78d29c54935c971bdd5"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "1a6a80977b7f0c6bbbb6e03ccc0863c84e3643956de007a5ecd673b6392673f1",
+      "sha256": "8b7785243dffe66d48c7baea532b9548eb311ade3a9498b2266b9a7f199b9f9d",
       "language": "neutral"
     },
     {
@@ -351,6 +351,21 @@
       "sha256": "d1637423b7dd8260630a010601d2b3ee55a7c55dbf787077965097468b294791",
       "language": "en",
       "translation_of": "assets/figures/cultural-narrative.png"
+    },
+    {
+      "path": "assets/figures/context-basemap.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "3e0c18e56c255e103da9bbb065192d723587e1ce1767a6f66e2af3aa5c05269f"
+    },
+    {
+      "path": "assets/figures/context-basemap.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "sha256": "14c91ddbd01d485fd9a78df32c3830a1cccf483080e0717a79f538b91eaa0818",
+      "translation_of": "assets/figures/context-basemap.png"
     },
     {
       "path": "assets/media/cover.png",
@@ -420,7 +435,7 @@
       "path": "assets/media/experience.md",
       "role": "transcript",
       "required": false,
-      "sha256": "3c3fc6c631f810aa5e325b985d678085f8fc28a16430e85fc06a96020b9b9316",
+      "sha256": "6ba5c088f8fb8481de9cb959d364af122898759c0282e30dab537a088e786496",
       "language": "neutral"
     },
     {
@@ -461,6 +476,56 @@
       "transcript": "assets/media/experience.md",
       "poster": "assets/media/experience-poster.png",
       "caption": "assets/media/experience.vtt"
+    },
+    {
+      "path": "assets/screenshots/cjk-proof-visual-zh.png",
+      "role": "asset",
+      "required": false,
+      "sha256": "caf45d9e5328975781446833666df0a0dd70dd81616c4dc2cd04d53c8af045e2",
+      "title_zh": "视觉工作台 CJK 渲染证明（嵌入字体后）",
+      "title_en": "Visual workbench CJK render proof (embedded fonts)",
+      "description_zh": "Chromium headless 实渲截图，证明包内 HTML 在无系统 CJK 字体环境下经嵌入字体正确渲染中文。",
+      "description_en": "Chromium headless screenshot proving package HTML renders Chinese correctly via embedded fonts on systems without CJK fonts."
+    },
+    {
+      "path": "assets/screenshots/cjk-proof-proposal-zh.png",
+      "role": "asset",
+      "required": false,
+      "sha256": "d8824325afb63c96fc7e12acd9346d23ae71bb552ed5b418362f4738b4a74d6a",
+      "title_zh": "报告 HTML CJK 渲染证明（中文版）",
+      "title_en": "Report HTML CJK render proof (zh)",
+      "description_zh": "Chromium headless 实渲截图，证明包内 HTML 在无系统 CJK 字体环境下经嵌入字体正确渲染中文。",
+      "description_en": "Chromium headless screenshot proving package HTML renders Chinese correctly via embedded fonts on systems without CJK fonts."
+    },
+    {
+      "path": "assets/screenshots/cjk-proof-proposal-en.png",
+      "role": "asset",
+      "required": false,
+      "sha256": "f62af31512cf69d123dc166066d9f010a1e15eb6f23fec79067d5631f2797e5c",
+      "title_zh": "报告 HTML CJK 渲染证明（英文版）",
+      "title_en": "Report HTML CJK render proof (en)",
+      "description_zh": "Chromium headless 实渲截图，证明包内 HTML 在无系统 CJK 字体环境下经嵌入字体正确渲染中文。",
+      "description_en": "Chromium headless screenshot proving package HTML renders Chinese correctly via embedded fonts on systems without CJK fonts."
+    },
+    {
+      "path": "assets/screenshots/cjk-control-tofu-without-font.png",
+      "role": "asset",
+      "required": false,
+      "sha256": "b89e8c450f05ff4d099c7cab28b9edb5f0db8bf8baf11203afb605ce6a2f4d4c",
+      "title_zh": "对照：剥离嵌入字体后的方框渲染",
+      "title_en": "Control: tofu rendering with embedded font stripped",
+      "description_zh": "Chromium headless 实渲截图，证明包内 HTML 在无系统 CJK 字体环境下经嵌入字体正确渲染中文。",
+      "description_en": "Chromium headless screenshot proving package HTML renders Chinese correctly via embedded fonts on systems without CJK fonts."
+    },
+    {
+      "path": "visual/assets/fonts.css",
+      "role": "asset",
+      "required": false,
+      "sha256": "170bff36334c26cd27ee00af991015a5bd2747cc8fd5a86930d8ba7daf05ec56",
+      "title_zh": "嵌入式 Noto Sans SC 子集样式（评审渲染用）",
+      "title_en": "Embedded Noto Sans SC subset stylesheet for reviewer-side rendering",
+      "description_zh": "按 SIL OFL 1.1 分发（许可全文见文件头注释）；base64 嵌入字符子集，供无 CJK 字体环境离线正确渲染中文。",
+      "description_en": "Redistributed under SIL OFL 1.1 (full license in file header); base64-embedded glyph subset enables correct offline Chinese rendering on font-less systems."
     },
     {
       "path": "visual/assets/governance/role-spec.json",

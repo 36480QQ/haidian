@@ -9,14 +9,18 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "换模型，不换城市：以既有京张遗产公共空间为一层共地，用七条转换街缝合校园、社区、站点与产业，并以验证院、原点廊院、城市交汇厅三种长期框架承载可替换的服务、内装和 AI 设备；官方边界到位后整包重绑定、复算。"
 tracks: ["ai-traffic-walkability", "youth-friendly-public-space", "robotics-autonomous-mobility"]
 scenarios: ["ai-traffic-walkability", "robot-delivery-low-speed", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v1.9-candidate"
+iteration: "v2.14-candidate"
 ---
 
 # 京张共地 / THE SHARED FLOOR
 
 > **换模型，不换城市 / REPLACE THE MODEL, NOT THE CITY.** A 是现役模型，B 是候选，H 是有最终接管权的人工路径。A/B 以同任务、同数据边界、同人群负担比较；服务与权利/安全责任人双签后 B 才可替换 A。换模期间公共地面、普通服务与 H 不断线。
 
+> **名称层级。** 投稿名称是「京张共地 / THE SHARED FLOOR」，全部文件、图纸与页面统一使用；「A/B/H 换模面 / the A/B/H Changeover Floor」只是该投稿内空间机制的名称，不是第二个投稿名或第二个品牌。
+
 ![三处 A/B/H 空间把同一任务、真实 shadow 分歧、人工权力与交付 HOLD 放在一张可核查图上](assets/figures/three-areas-delivery.png)
+
+**一句话说清这份方案。** 沿着京张铁路遗址公园，做一层连续的公共地面，上面立三种房子：一种把两个 AI 模型放在同一任务上当众对比，一种把两者的分歧并排展示给人看，一种让所有人排同一条队、再分三个出口。三种房子的形状不同，但都留着同一条不会中断的人工服务路线——需要人的时候，总有人在柜台后面。这样，模型可以每几个月换一次，而地面、路线和窗口不动。城市不必跟着模型的节奏重建。
 
 ## 一块地面为什么比一代模型活得久
 
@@ -60,9 +64,13 @@ v1.7 第一次把这一命题交给一个真实但严格受限的模型见证：
 
 ![从开放城市背景切换到可整体重绑定的参赛者空间模型：共地脊线、三座长期框架与七处横向接口](assets/figures/site-overview.png)
 
-上图是参赛者空间假设，不是现状底图；它可审计、可整包重绑定，正式边界、权属、管线及审批资料到位后全部位置与数量重算。[data:geometry/site_boundary.geojson#SITE-001] [metric:binding_offset_m]
+> **怎么看。** 阅读顺序为：左幅 OSM 派生定位底图上的共地脊线、7 个候选横向接口与 3 处任务锚点 [metric:switch_count] [metric:key_area_count]；中列自上而下的验证院双跨同测、原点廊院差分回廊、交汇厅单队列三出口 [metric:changeover_topology_count]；右侧深色 ACTUAL 栏的 29/36、7 Δ 与 12/12。[metric:semantic_witness_topology_agreement_count] [metric:semantic_witness_disagreement_count] [metric:semantic_witness_hardstop_hold_count] 它证明同一 A/B/H 关系可落成三种互不相同的空间，而三张图解底部那条绿色 H 带在每种拓扑中都贯通、不可删减。[assumption:A-OPERATIONS-001] 底图只作定位，不是法定边界或权属证据；脊线、接口与锚点均为参赛者设定，临时边界与命名公园相差 412.5 米，官方 polygon 到位即全包重绑定复算。[source:OSM-CORRIDOR-CONTEXT-2026] [metric:binding_offset_m] [assumption:A-BND-001]
+
+上图是参赛者空间假设，不是现状底图；它可审计、可整包重绑定；重绑定的触发方是组织方——组织方发布官方边界、权属、管线与审批资料后，本包即整包重算全部位置与数量。参赛者一侧的方法、层级与复算脚本已就位，等待的是组织方资料，不是参赛者动作。[data:geometry/site_boundary.geojson#SITE-001] [metric:binding_offset_m]
 
 ![开放建筑的时间层：公共地面、长期支撑、服务底盘、可换填充与 AI 设备](assets/figures/land-use-structure.png)
+
+> **怎么看。** 先读左幅（为版面顺时针旋转 65°，N 箭头在左上）的四条功能带填色——制造/验证、转译/学习、社区生活、公共相遇，以及叠在其上的 K1–K3 重点区框、金线公共房间与 7 条红线横向接口；再读右栏「功能 × 使用年限」、大钟寺 2F/G/B1/B2 鼓励共享层与五层更新速度 100+、100、25–40、5–20、≤5 年。[metric:key_area_count] [metric:switch_count] [assumption:A-OPEN-BUILDING-001] 它证明功能可更换而公共地面与长期支撑留下：更新速度按层分离，填充与场景设备的替换不必动到共地。[depth:overall_spatial_structure] [data:geometry/land_use.geojson#LU-RESEARCH] 这是概念用地结构，不是法定分区；「鼓励共享层」只是规划导向，不等于已建成、已开放、通行权或 24 小时使用，地铁、业主、消防、结构与运营协议均为前置条件；年限是设计目标不是质保，正式控规到位后复核并重绑定。[source:DAZHONGSI-LANJINGLIJIA-INTEGRATION-2026] [assumption:A-CONTROLS-001]
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -102,6 +110,8 @@ v1.7 第一次把这一命题交给一个真实但严格受限的模型见证：
 | 京津冀走廊 | 可携带的城市任务契约、H 连续服务规则与三种空间拓扑 | 跨地点同任务差值、人工接管负担与恢复时间，用于判断机制能否迁移 | 待协商 |
 
 每个接口须对方确认；此前只是空间/运营预留，不代表协作已达成。
+
+经开区（北京经济技术开发区）接口的边界须单列：走廊只输出删节票据格式、版本牌与换模停止规则，回流只接收运行事件 schema 与供应商换代约束，不接收个人或商业敏感原始数据，也不承接用地、招商、产能或产业政策安排。[assumption:A-REGIONAL-001] [source:AGENT-TASKBOOK] 该接口未经对方书面确认，属参赛者预留的接口位，不表示已有合作、意向或联合机制。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -160,6 +170,8 @@ v1.7 第一次把这一命题交给一个真实但严格受限的模型见证：
 
 ![三处重点区域：验证院、原点廊院与城市交汇厅](assets/figures/key-areas.png)
 
+> **怎么看。** 三栏读法相同：标题与类型定义 → A/B/H 三枚位号（A 现行模型位、B 候选模型位、H 常开公众/人工路）→ 带 30 米比例尺的 N 向平面 → 「公共地面—气候边缘—长期支撑—可换填充」剖面条与低角度冬日太阳箭头 → 拆改留、第一步、拟议责任、停止规则四行。[metric:key_area_count] [metric:prototype_count] [assumption:A-SECTION-001] 它证明同一 A/B/H 机制在院、廊、厅三种类型中生成不同的建造顺序与公众交接空间，且每处都先写停止规则、再写第一步。[metric:changeover_topology_count] [depth:three_key_area_detailed_design] 平面是候选落位而非实测地块，30 米比例尺属参赛者几何；「拟议责任」只是角色类别，具名运营者与专业签署仍为 0；正式边界到位后三栏统一复核重绑定，大钟寺一栏另需官方文保保护图则核定。[assumption:A-BND-001] [metric:delivery_named_operator_count] [metric:delivery_professional_signoff_count] [source:JUESHENG-TEMPLE-NATIONAL-HERITAGE]
+
 ![验证院：平面、轴测、剖面与类型护照](assets/figures/proof-yard.png)
 
 ![验证院冬至正午：概念体验图；空间权威仍为平面、剖面和 GeoJSON](assets/media/proof-yard-winter.jpg)
@@ -174,6 +186,8 @@ v1.7 第一次把这一命题交给一个真实但严格受限的模型见证：
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
+
+任务书要求生态图谱。[source:AGENT-TASKBOOK] 本章即该图谱的参赛者版本：节点是 7 类人物、12 张场景卡与 12 份换模契约，边是算力、资金与数据的进入—退出规则；图谱只记录依赖、排斥风险与退出条件，不是机构名录、企业关系图或招商清单。[metric:persona_count] [metric:scenario_card_count] [metric:changeover_contract_count] [assumption:A-OPERATIONS-001]
 设计面向 P01–P07 七类人物。海淀 2020 普查中 60+/65+ 分别占 18.5%/13.1%，故触觉导向、座椅、厕所、人工问询和无手机路径是基本性能。各类登记需求、排斥风险和场景卡：[source:HAIDIAN-CENSUS-2020] [standard:BARRIER-FREE-ENVIRONMENT-LAW] [metric:scenario_card_count]
 
 | 编号 | 人物 | 首要需求 | 排斥风险 | 挂钩场景卡 |
@@ -185,6 +199,10 @@ v1.7 第一次把这一命题交给一个真实但严格受限的模型见证：
 | P05 | 现场服务与维护人员 | 纸本巡检路线与直接安全上报 | 工单黑箱、责任下移、无停机权 | ⑥⑨⑪ |
 | P06 | 照护者、祖辈与儿童 | 慢速通行、看护视线与气候庇护 | 机器人混行、夜间盲区、无处等候 | ②⑤⑩ |
 | P07 | 夜间使用者与非智能终端访客 | 无手机路径、人工窗口与多语种帮助 | 仅二维码服务、夜间无人受理 | ③④⑦⑧⑩⑫ |
+
+人物登记表未单列游客类；本方案将游客需求按 P07 处理：外地与境外游客常无本地 App、无实名支付、无中文读写，故 AI04 可溯源京张导览与 AI12 多语种帮助台构成同一入口的两端，纸本铭牌、固定标识、人工讲解与人工译员为常设配置，不是降级方案。[metric:scenario_card_count] [source:AGENT-TASKBOOK] [assumption:A-OPERATIONS-001]
+
+弱势群体不作统称处理，而拆为四条可检验路径：P01 老年居民、P02 轮椅使用者与同行者、P06 照护者与儿童、P07 非智能终端与夜间使用者。承载它们的是连续无高差 H 路（编码检查 1 个连通分量、0 处公共空间断点）[metric:shared_floor_public_route_component_count] [metric:shared_floor_public_room_route_gap_count]、无手机同任务完成，以及交付台账中设有无障碍与工程复核责任类（R06）。[metric:delivery_raci_role_class_count] [standard:BARRIER-FREE-ENVIRONMENT-LAW] [assumption:A-SOCIAL-BASELINE-001]
 
 十二份契约把场景绑定到三种拓扑，以 normal / ambiguous / hard-stop 同任务夹具检查 A/B/H。H 从入口可选并有最终决定权，不是失败补丁：[data:geometry/public_space.geojson#ROOM-PROOF] [metric:scenario_card_count] [metric:test_scenario_count]
 
@@ -278,6 +296,8 @@ Delta Receipt 记录 contract/site/topology/fixture 哈希、A/B/H 版本、data
 
 ![共同地面：横向接口、蓝绿网络与全年气候剖面](assets/figures/mobility-bluegreen.png)
 
+> **怎么看。** 先读左上「大钟寺·官方规划关系（非 GIS）」的四段链条：京张遗址公园—蓝景丽家 5.03 ha 规划研究 [source:DAZHONGSI-LANJINGLIJIA-INTEGRATION-2026]—地上/地下慢行联系—规划 M12E+M13A 四象限核查 [source:DAZHONGSI-LANJINGLIJIA-POSITION-2026]，并附约 0.14 ha 两处公共非机动车停车 [source:DAZHONGSI-LANJINGLIJIA-BIKE-2025]；再读下方 12.0 米参考断面自左至右的 3.0 m 共享檐、3.0 m 无障碍步行、2.5 m 自行车、1.5 m 受控服务、2.0 m 雨水花园；最后读右栏 12 张 AI 场景卡中的 4 张示例与 S01–S15 情景推演。[metric:scenario_card_count] [metric:test_scenario_count] 它证明宽度先分给步行与无障碍：受控服务只占 1.5 米、让行且失联即停，夏荫、下凹绿地、冬日低角度太阳与雨水花园在同一个断面尺寸决定里解决。[source:BEIJING-ROBOT-DELIVERY-RULES-2024] [assumption:A-DRAINAGE-001] 官方关系是文本关系而非落线 GIS，300 米只是站城协同范围，不是红线、地块或通行权；12.0 米是参赛者参考断面目标，不是法定道路红线；场景卡齐备不等于本地需求或成效已被证实，七处城市房间各需七天现场基线，现有基线为 0。[source:BEIJING-STATION-CITY-INTEGRATION-2024] [assumption:A-MOBILITY-001] [metric:delivery_field_baseline_count]
+
 ## 蓝绿空间、公共空间与城市风貌
 
 NASA POWER 116.347E,39.982N 的 1991–2020 聚合为年均 11.52°C、1 月 −5.34°C、7 月 26.49°C；冬春西北风、夏季南—东南风，7–8 月湿度 65–68%。粗网格仅用于朝向/敏感性，不用于暖通、风或海绵验收。[source:NASA-POWER-1991-2020] [assumption:A-CLIMATE-001]
@@ -289,6 +309,8 @@ NASA POWER 116.347E,39.982N 的 1991–2020 聚合为年均 11.52°C、1 月 −
 气候剖面以树冠/共享檐/饮水点迎夏风，以西北挡风/南向坐凳形成冬阳口袋，以树池/下凹地/临时滞蓄缓雨，并为春秋保留可开廊檐。下凹深度、蓄水、溢流和管径待地形、土壤、地下水与市政模型。[data:geometry/green_space.geojson#GREEN-SPINE] [depth:blue_green_public_space] [assumption:A-DRAINAGE-001]
 
 待专业校核的雨水链为 `屋面→生态沟→沉砂→树池/花园→密闭回用→灌溉清洁→安全溢流`。下一阶段登记 catchment、调蓄、溢流、维护，并校核冬季排空、积雪触觉路、冻融、扬尘和西北风。因缺地形、渗透和排水资料，图上只留空间/维护通道，不虚报容量。[metric:green_space_area_sqm] [assumption:A-DRAINAGE-001]
+
+七类横向接口中的河流接口，参赛者候选对象是小月河。清华东路南侧已批公共空间工程把遗产公园、小月河、校园、社区与站点登记为相邻节点；本方案只把它读作可衔接的滨水界面，不冒领该工程的任何节点、范围或交付成果。[source:QINGHUA-EAST-PUBLIC-SPACE-2026] [assumption:A-MOBILITY-001] 参赛者提议在小月河一侧收口 1 条蓝绿脊线与 1 个气候庇护环（具体编号待官方河道位置确认后指定），形成夏荫—冬阳、无手机可完成的连续步行段；河道权属、防洪、水质、岸线控制与管理主体均未确认，接入点位待官方确认后整包重算，现阶段只是空间关系假设，不是已批项目。[data:geometry/green_space.geojson#GREEN-SPINE] [depth:blue_green_public_space] [assumption:A-DRAINAGE-001]
 
 风貌拒绝赛博霓虹：遗产层用氧化铁红、再生砖石触感和真实里程，气候层用树土水/浅色遮荫，AI 层只用可拆低亮青色薄件。三处以双跨/H 带、差分回廊/H 桌、单队列三出口直接表达换模，保持可读、可绕、可申诉。[data:geometry/public_space.geojson#ROOM-ORIGIN]
 
@@ -324,6 +346,8 @@ A/B/H 空间不变量为：同入口/任务，同尺度可拆 A/B 位，无手�
 任务书要求长期运营。[source:AGENT-TASKBOOK] 每次模型/供应商/工具变更为一单元：H 柜台/路径属公共底盘，A/B 位短租；窗口结束后票据按期归档，算力/临时数据释放删除。任何方不得购买排他入口、个人数据或晋升权。[assumption:A-OPERATIONS-001]
 
 任务书要求年度活动/开发者转化。[source:AGENT-TASKBOOK] 未排期的 **京张换模公开周** 仅在具名运营者、许可、双责任人、现场基线齐备后举行：共同冻结任务/失败夹具，提交 B，在三处按同契约做 shadow/opt-in 与回退，发布双语票据。未通过即删数据退出；通过也只获有期可退合同。传播只用 A/B/H、Δ、拓扑和可核票据。这是 participant-authored `annual_event_system / developer_community_operation / conversion_pathway`，非政府承诺、既定活动或现场成果。[assumption:A-OPERATIONS-001]
+
+任务书要求国际传播。[source:AGENT-TASKBOOK] 本方案提出的可传播对象不是效果图，而是可核查工件：12 份城市任务契约、3 种换模空间拓扑、36 份双语删节票据，以及可在任何地点用同一夹具复演、比对同一哈希的见证流程。[metric:changeover_contract_count] [metric:changeover_topology_count] [metric:changeover_delta_receipt_count] 这是参赛者提出的传播能力，不是已开展的国际项目：现场试点 0、具名运营者 0，对外合作、展陈与发布邀约均为空；对外公开的只有失败、Δ 与 H 决定，不做模型排名或城市宣传。[metric:changeover_field_trial_count] [metric:delivery_named_operator_count] [assumption:A-OPERATIONS-001]
 
 ### 三处见证换模
 
@@ -368,6 +392,95 @@ P0 站前共享檐保留 36×36 米筛查、16×16 米可逆地面、8×8 米可
 
 这是一份可机器核查、默认拒绝放行的实施交接，不是法定实施方案、正式概算、采购批准或机构承诺；任一缺失凭证都保持 `HOLD`。[assumption:A-PROJECTS-001] [data:geometry/phasing.geojson#PHASE-3] [depth:renewal_project_list]
 
+### P0 交接链：条件时序、责任分离与可判定验收
+
+P0 交接由条件时序、角色责任、未计价数量、逐门交接四本台账构成，终点是 12 项验收指标；判据与方向现在已写死，任一失败即 HOLD、修改、撤除或恢复原状。[data:visual/assets/delivery-p0-implementation-contract.json] [metric:delivery_acceptance_indicator_count] [assumption:A-DELIVERY-001]
+
+| 编号 | 判据 | 阈值 | 现在是否可判定 |
+|---|---|---|---|
+| I01 | 连续 H 路关键阻断计数 | ≤ 0 | 是；参赛者设计停止规则 [metric:p0_immediately_judgeable_acceptance_indicator_count] |
+| I02 | 无手机同任务完成率 | ≥ 1.0 | 是；同等服务停止规则 [metric:p0_immediately_judgeable_acceptance_indicator_count] |
+| I03 | 强制参与事件计数 | ≤ 0 | 是；知情同意停止规则 [metric:p0_immediately_judgeable_acceptance_indicator_count] |
+| I04 | 关键无障碍失败计数 | ≤ 0 | 是；无障碍停止规则 [metric:p0_immediately_judgeable_acceptance_indicator_count] |
+| I05 | 回退关键步骤完成率 | ≥ 1.0 | 是；两钥匙回退停止规则 [metric:p0_immediately_judgeable_acceptance_indicator_count] |
+| I06 | 恢复原状闭环率 | ≥ 1.0 | 是；可逆性停止规则 [metric:p0_immediately_judgeable_acceptance_indicator_count] |
+| I07 | 共同队列挑客事件计数 | ≤ 0 | 是；单队列停止规则 [metric:p0_immediately_judgeable_acceptance_indicator_count] |
+| I08 | 数据、工具或权限越界事件计数 | ≤ 0 | 是；治理边界停止规则 [metric:p0_immediately_judgeable_acceptance_indicator_count] |
+| I09 | 投诉与申诉闭环率 | null；待批准基线下限 | 否；须先有获授权现场基线 [metric:p0_field_dependent_acceptance_indicator_count] |
+| I10 | 热与光负担（对基线差值） | null；待批准基线上限 | 否；须先有获授权现场基线 [metric:p0_field_dependent_acceptance_indicator_count] |
+| I11 | 服务等待负担（对基线差值） | null；待批准基线上限 | 否；须先有获授权现场基线 [metric:p0_field_dependent_acceptance_indicator_count] |
+| I12 | A/B/H 非劣效性余量（对基线差值） | null；待批准基线下限 | 否；须先有获授权现场基线 [metric:p0_field_dependent_acceptance_indicator_count] |
+
+12 项现场值全为 null、样本 0、状态 `HOLD_UNMEASURED`：阈值可判定不等于已测量，获授权现场基线仍为 0。[metric:delivery_field_baseline_count] 每项指标绑定唯一责任类（R03、R06、R09、R10、R11、R12），均为复核、管家或使用者代表类，不含设计牵头 R05 与实施主体 R02。[data:visual/assets/delivery-p0-implementation-contract.json]
+
+**T00 是文件前提，不是第 1 周。** 未来责任方须先接受适用程序、统筹与实施主体、官方范围、场地进入与恢复权，未达成即整链 HOLD；其后 T01–T11 共 11 项计时活动占 15 个参考周，绝对起始日期为 null，时钟状态 `not_started_external_hold`，是条件参考时序，非批准工期。[metric:delivery_conditional_program_timed_activity_count] [metric:delivery_conditional_program_reference_week_count]
+
+| 任务 | 参考周 | 单一责任类 | 前置凭证门 | 现场动作与状态 |
+|---|---|---|---|---|
+| T00 校验文件前提并宣告 T0 | 第 1 周前的前提 | R01 | G01–G03 | 无现场动作；未达成即整链 HOLD [assumption:A-DELIVERY-001] |
+| T01 官方重绑定与场地权利测量 | W1–2 | R02 | G01–G03 | 未来授权现场测量；当前 HOLD，授权回执 0、现场测量 0 [data:visual/assets/delivery-p0-implementation-contract.json] |
+| T02 授权进入、服务与权利基线 | W3–4 | R11 | G02、G11 | 授权现场基线；现为 0 [metric:delivery_field_baseline_count] |
+| T03 冻结实测后的 P0 设计基准 | W5 | R05 | G01–G05 | 无现场动作 [assumption:A-DELIVERY-001] |
+| T04 完成专业协同复核 | W6 | R05 | G06–G08 | 无现场动作；专业签署 0 [metric:delivery_professional_signoff_count] |
+| T05 计量并编制成本计划 | W7 | R07 | G08 | 无现场动作；报价 0、正式概算 null [metric:delivery_vendor_quote_count] |
+| T06 关闭资金、采购与运营者交接 | W8 | R02 | G09、G10 | 无现场动作；具名运营者 0 [metric:delivery_named_operator_count] |
+| T07 场外加工与出厂验收 | W9–10 | R05 | G08–G10 | 无现场动作 [assumption:A-DELIVERY-001] |
+| T08 保护场地并装配可逆 P0 | W11 | R02 | G01、G02、G06–G10、G12 | 现场施工；须 G02+G12 放行 [metric:delivery_external_gate_hold_count] |
+| T09 运营调试与回退演练 | W12 | R09 | G02、G06、G08、G10、G12 | 现场调试；错误放行 0 [metric:delivery_unsafe_site_release_count] |
+| T10 有限 opt-in A/B/H 影子窗口 | W13–14 | R09 | G02、G10、G11、G12 | 未来授权公共运行；当前 HOLD，授权回执 0 [data:visual/assets/delivery-p0-implementation-contract.json] |
+| T11 决定续、改或撤并恢复原状 | W15 | R02 | G02、G10、G11、G12 | 拆除与恢复原状 [assumption:A-DELIVERY-001] |
+
+**12 类角色，单一责任比 1.0。** R01 统筹、R02 实施主体（委托方）、R03 场地权利人、R04 责任规划师、R05 协同设计牵头、R06 消防·无障碍·工程复核、R07 工程量·成本·采购、R08 交通与地铁接口、R09 首层运营维护、R10 服务数据管家、R11 权利安全管家、R12 授权使用者与权利人代表；12 类全部 `unappointed`、具名方为 null、均无场地放行权。两钥匙把 R10（服务/数据钥匙与授权回退）同 R11（独立权利/安全钥匙与叫停不安全活动）分离，现状 `HOLD_UNAPPOINTED`。[metric:delivery_raci_role_class_count] [metric:delivery_raci_single_accountability_ratio] [metric:delivery_named_operator_count]
+
+16 行数量为参赛者未计价设计参考（非正式工程量清单；Q10 管线与 Q14 家具数量本身为 TBC）[metric:delivery_quantity_line_count]，单价、金额、正式概算与计价基准日全为 null 且未委托正式工程量测量 [metric:delivery_vendor_quote_count]；12 份逐门交接模板的文件号、SHA256、签发方与生效/失效日期同样全为 null、适用性未确认 [metric:delivery_gate_handoff_template_count]，因此 12/12 外部门保持 `HOLD`、错误放行 0。[metric:delivery_external_gate_hold_count] [metric:delivery_unsafe_site_release_count]
+
+**可判定性。** 12 项验收指标中 8 项现在即可判定，4 项在获授权现场基线批准前保持 TBC——需要尚不存在的读数才能判定的退出机制不是退出机制。[metric:p0_immediately_judgeable_acceptance_indicator_count] [metric:p0_field_dependent_acceptance_indicator_count]
+
+本节全部内容为未签署、未批准的参赛者交接模板：不是许可、不是任命、不是报价，也不是法定实施方案、正式概算、采购批准或机构承诺。[assumption:A-DELIVERY-001] [depth:phasing_implementation]
+
+### P0 工程预可行性包络：容量、疏散、人员、预算与维护
+
+可实施性在此拆成两类，二者不得互相替代。参赛者现在可算：面积—人数包络、出口数与至露天步行距离、柜台服务率与人力、量级造价份额与维护周期；依据是参赛者自设的 36×36 m 筛查、16×16 m 可逆地面、8×8 m 可拆一跨几何，加服务时长与参赛者自设单价区间（正式单价回执 0，未委托计价）。[data:visual/assets/delivery-p0-station-porch.json] [assumption:A-DAZHONGSI-FIRST-BAY-001] 参赛者现在不可定：法定人员密度与疏散计算、消防与地铁保护审查、权属与控规、正式概算与投标价、授权现场基线与专业签署。因此本节剩余的空白不是参赛者的遗漏，而是提交时参赛者无法获得的官方资料所对应的项，须在官方资料到位后由主管方确定。[assumption:A-DELIVERY-001] 下列全部为参赛者自算/参赛者设定，须专业复核，不构成合规结论。[assumption:A-LIFE-SAFETY-001]
+
+| 包络项 | 参赛者取值与算式 | 空间与运行后果 | 只能由官方/授权资料判定的部分 |
+|---|---|---|---|
+| 人均面积 | 4 ㎡/人，露天站立公共地面的参赛者舒适取值 [metric:p0_design_area_per_person_sqm] | 决定下两行全部上限 | 法定人员密度与荷载取值 [assumption:A-LIFE-SAFETY-001] |
+| 可逆地面容量 | 256 ㎡ ÷ 4 = 64 人 [metric:p0_reversible_ground_occupancy_cap_person] [data:visual/assets/delivery-p0-station-porch.json] | 超限先关队列，不扩地面 | 消防与现场核定容量 |
+| 可拆一跨容量 | 64 ㎡ ÷ 4 = 16 人 [metric:p0_covered_bay_occupancy_cap_person] | 遮蔽等候上限；A/B 位不得占用该 16 人 | 结构、风雪荷载与遮蔽物审查 |
+| 出口 | 3 个；单出口净宽 1.5 m（轮椅错身）；合计 4.5 m [metric:p0_exit_count] [metric:p0_minimum_exit_clear_width_m] [metric:p0_total_exit_clear_width_m] | 与单队列三出口同构；净宽不得被家具或排队占用 | 法定疏散净宽与百人指标 [assumption:A-LIFE-SAFETY-001] |
+| 至露天步行距离 | 11.314 m = √(8²+8²)，16×16 m 地面半对角线 [metric:p0_max_travel_distance_to_open_air_m] | 檐下四面露天，任一点一步到露天 | 防火分区、疏散时间与烟控结论；本值只是步行距离，不是该结论 |
+| H 柜台服务率 | 60 ÷ 4 分钟 = 15 人/小时·柜台 [metric:p0_h_desk_service_rate_person_per_hour] | 决定柜台数与等候面积 | 真实到达率须授权现场基线 [assumption:A-OPERATIONS-001] |
+| 人力 | 18 h/日 × 365 ÷ 1680 h/FTE × 1.20 = 4.693 → 5 FTE 排班，未覆盖 0 小时 [metric:p0_calculated_minimum_fte] [data:visual/assets/delivery-operator-commissioning-plan.json] | 无排班即无 H 路，模型位空置 | 具名运营者、用工与保险 [assumption:A-OPERATIONS-001] |
+
+容量由柜台而非地面决定：到达超过 15 人/小时，要么增开第二个有人柜台，要么队列上限生效、P0 不开放；这是尺寸与排班互为约束处，不是软件参数。[assumption:A-OPERATIONS-001] 造价按份额分级而非金额承诺；份额基于参赛者 ROM 敏感性区间约 ¥1.9M–¥3.8M（64 ㎡×¥5,000–9,000/㎡ 支撑与屋面、256 ㎡×¥1,200–2,500/㎡ 地面、接口、家具、调查设计，×1.35 系数），非正式概算、投标价或报价。[source:BEIJING-COST-BASIS-2026] [data:visual/assets/delivery-procurement-cost-plan.json]
+
+| 类别 | 范围与采购包 | 份额 / 周期 | 验收或触发 |
+|---|---|---|---|
+| BC-1 前期文件与调查 | L01 调查、权属与基线证据 | ROM 的 10% [metric:p0_budget_class_count] | 放行关键票据全部入册 [data:visual/assets/delivery-procurement-cost-plan.json] |
+| BC-2 装配与可逆地面 | L02 可拆支撑与屋面 ＋ L03 可逆地面与蓝绿边 | 60% | 装配、结构、消防与拆除试验；路线、排水与恢复试验 |
+| BC-3 服务设施与接口 | L04 H 柜台、家具、导视与服务接口 | 12% | 无手机同任务完成与无障碍 |
+| BC-4 首年运行准备 | L05 运行维护保险与独立安全 ＋ L06 有期 A/B/H 换模服务 | 18%（四类合计 100%） | 试运行与班次覆盖；两钥匙、回退、票据与删除 |
+| 恢复储备 | 拆除、地面复原与复测，专款置于 ROM 之外 | 另计 10%，仅退役时释放 [metric:p0_restoration_reserve_ratio] | 储备未落实即不开工；这是退出资金 [assumption:A-DELIVERY-001] |
+| M1 维护 | H 路连续、无台阶面、物理停止可及、票据归档 | 每日 [metric:p0_maintenance_cycle_count] | 任一项失败即当日空置模型位 |
+| M2 维护 | 连接件、排水点、导视 | 每周 | 缺陷未闭合即不进入下一窗口 |
+| M3 维护 | 全构件检查 ＋ 回退演练 | 每季 | `rollback_drill` 失败即回到普通服务 [data:visual/assets/delivery-operator-commissioning-plan.json] |
+| M4 维护 | 完整退役演练 ＋ 独立安全复核 | 每年 | `decommissioning_rehearsal` 失败即不续期 |
+
+证据边界：以上包络、份额与周期均为参赛者自算/参赛者设定，须专业复核，不是法定实施方案、正式概算、采购批准或机构承诺；L01–L06 全部 `unpriced_hold`，具名运营者、报价、授权现场基线与专业签署仍为 0；不得烹饪、不得为电动自行车动力电池充电、须保持连续无台阶 H 绕行与物理停止，任一缺失即保持 `HOLD`，P0 不开放并可拆回原状。[data:visual/assets/delivery-p0-station-porch.json] [assumption:A-DELIVERY-001] [assumption:A-LIFE-SAFETY-001]
+
+### 备选方案对照登记：被否定的方案在哪一项上更好
+
+四组备选按同一条规则登记：备选 B 必须在至少一项具名维度上真正优于本案 A，否则不入册；每个 B 同时被接成某一道具名门未放行时的自动回退分支。因此该表既是判断记录，也是去风险装置。[metric:p0_alternative_pair_count] [data:visual/assets/delivery-alternatives-register.json] [assumption:A-DELIVERY-001]
+
+| 编号 | 本案 A | 备选 B | B 在哪一项更好 | 仍选 A 的理由 | 触发回退的门 |
+|---|---|---|---|---|---|
+| ALT-01 大钟寺 P0 | 8×8 m 可拆有檐一跨 + 16×16 m 可逆地面 [metric:dazhongsi_p0_covered_bay_sqm] [metric:dazhongsi_p0_treated_ground_sqm] | 只做地面标记与可移动家具，不设檐 [assumption:A-DAZHONGSI-FIRST-BAY-001] | 造价、上线速度、可逆性：无结构可拆，退场即复原；参赛者 ROM 中 64 m² 结构/屋面一项整条消失 [metric:dazhongsi_p0_rom_cost_low_million_cny] | 檐决定冬阳、夏荫与雨雪下的等候条件；一跨把 H 柜台物理停在公共地面上，家具做不到 [assumption:A-CLIMATE-001] [assumption:A-LIFE-SAFETY-001] | G09 资金与采购门未放行即自动执行 B（G08 结构/机电协同签署未过则整跨 HOLD）[data:visual/assets/delivery-p0-implementation-contract.json] |
+| ALT-02 验证院 | 双跨同测：A/B 两跨在同一时刻跑同一夹具，H 中带常开 [metric:changeover_fixture_count] | 单跨分时：一跨轮换两个模型 [assumption:A-PROTOTYPE-001] | 占地与造价：只建一跨，场地包络缩小仍能成立 | 可比性只在同一时刻成立——同夹具、同观察距离、同一 H 急停；分时把时段、人流与天气差混进 Δ [assumption:A-SEMANTIC-WITNESS-001] | G01 官方边界/权属重绑定使场地包络缩小即回退 B [assumption:A-BND-001] |
+| ALT-03 原点廊院 | 实体建造版差分廊院（拟建、尚未建成）＋ 常设人工 H 桌与可步行的无手机路线 | 只做数字差分展示，不施工 | 上线速度与许可负担：不动土，参赛者判断其许可负担显著更低；是否免于占用与施工许可须由主管部门认定（G03、G12 未确认） | 常设人工桌与无手机路线才是空间保证；屏幕在断网、断电与不识字三种场景下同时失效 [assumption:A-SOCIAL-BASELINE-001] [assumption:A-OPERATIONS-001] | G02 校门通行与恢复协议未签即保持普通公共巷、执行 B [assumption:A-CAMPUS-GATES-001] |
+| ALT-04 交汇厅 | 单队列三出口厅：共同入口与队列之后才分 A/B/H [metric:p0_exit_count] | 在既有站厅内加设一处 H 柜台 | 地铁保护风险与资本开支：不新建结构、不进入保护范围，风险面最小 | 共同队列是阻止 B 挑选容易用户的唯一机制；站厅内加柜台会让容易与困难请求重新分流 [assumption:A-MOBILITY-001] | G04 地铁/交通接口意见未放行即自动执行 B（权属 G01 未清则整体 HOLD）[assumption:A-LIFE-SAFETY-001] |
+
+四个 B 都不是稻草人：三项在造价上、两项在许可负担或保护风险上确实优于 A（参赛者判断，须专业复核）。选 A 是用更高成本换四件 B 给不了的空间效果：气候庇护、同一时刻的可比性、常设人工在场、队列公平。回退不需要重新设计——具名门保持 HOLD 即直接执行 B，且分支在装配之前决定，不留沉没结构。四组比较均为参赛者设计判断，不是法定实施方案、正式概算、采购批准或机构承诺；A、B 双方都没有任何许可、报价或具名运营者。[assumption:A-DELIVERY-001] [assumption:A-PROJECTS-001]
+
 ## 指标体系、面积复算与合规矩阵
 
 `known` 仅描述提交：临时面积、三重点区、建筑基底、绿地/公共空间比、三原型、七接口、十二场景卡、四测试场景、七人物。`site_area_sqm` 在 EPSG:4548 复算；两项比例同用临时分母，可重复但低置信，均非官方统计。[metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
@@ -376,7 +489,9 @@ P0 站前共享檐保留 36×36 米筛查、16×16 米可逆地面、8×8 米可
 
 评审对象仅京张共地。护照检查地面连续、类型差异、支撑/填充、冬阳夏荫、无手机无障碍服务链、机器人停车和重绑定；生命安全、无障碍或重绑定失败即淘汰，不被总分抵消。[metric:prototype_count] [metric:building_mass_count] [metric:winter_noon_sun_altitude_deg]
 
-![核心指标、气候计算、未知项与证据链](assets/figures/metrics-evidence.png)
+![让失败可见：本地 BGE-M3 shadow 的 29/36 一致与 7 项分歧、12/12 hard-stop 由确定性 H 拦截，以及 P0 从设计到决定的交接链](assets/figures/metrics-evidence.png)
+
+> **怎么看。** 先读顶部四张卡：本地 shadow 29/36、可见分歧 7 Δ、确定性 H 12/12、空间结果 H TABLE [metric:semantic_witness_topology_agreement_ratio] [metric:semantic_witness_disagreement_count] [metric:semantic_witness_hardstop_hold_count]；再读左下 3×3 见证矩阵——行是 A/参考标签，列是 B/候选归类，对角 10/7/12 为一致，其余格即分歧；最后读右侧 P0 条件接力 T00 → T01–11 → 12 类未来角色 → 16 条数量行 → 12 项验收指标。[metric:delivery_raci_role_class_count] [metric:delivery_acceptance_indicator_count] 它证明一次真实本地 BGE-M3 推理（1 批调用、39 输入、1024 维、带 tag/manifest/blob 哈希）如何变成空间决定：4 个原点非 hard-stop 分歧使永久人工 H 桌与公开差分显示不可删减，B 继续 shadow，晋升为 0。[source:BGE-M3-OFFICIAL] [metric:semantic_witness_origin_nonhardstop_disagreement_count] [metric:semantic_witness_promotion_count] A/参考只是参赛者标签而非独立真值，29/36 不得读作准确率；矩阵内没有真实公众请求、H 接管或现场回退演练；右侧模板未签署、未批准，外部证据回执为 0，12 道外部门保持 `HOLD`。[assumption:A-SEMANTIC-WITNESS-001] [assumption:A-DELIVERY-001]
 
 `compliance_matrix.json` 将 23 项要求连到章节、图层、指标、来源、假设与自检；`standard_matrix.json` 覆盖六项依据；`design_depth_matrix.json` 以“已知—未知—建议—触发”解释 15 项深度。图层共用 ID，HTML、A3/A0、正文共用指标。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:metrics_recalculation]
 
@@ -398,7 +513,7 @@ P0 站前共享檐保留 36×36 米筛查、16×16 米可逆地面、8×8 米可
 
 ## 风险、版权与合规说明
 
-首要风险是空间证据不足：范围、建筑、道路、站口、权属、文保、市政、控规未齐，贡献仅为原型、关系和重算方法，非选址审批。临时边界与 OSM 公园相差 412.5 米；官方数据到位须全包重建。[source:BOUNDARY-BASIS] [assumption:A-BND-001] [depth:risk_missing_data]
+首要风险是空间证据不足，且这些资料由组织方与主管部门持有：范围、建筑、道路、站口、权属、文保、市政、控规未齐，贡献仅为原型、关系和重算方法，非选址审批。临时边界与 OSM 公园相差 412.5 米；官方数据到位须全包重建。[source:BOUNDARY-BASIS] [assumption:A-BND-001] [depth:risk_missing_data]
 
 公共 AI 风险含碰撞占路、传感越界、schema/工具漂移及把困难用户推给 H。人优先、同任务同队列、两钥匙、数据最小化、无身份识别、物理停止、纸本/固定标识、H 热备均待责任人/专业审核；模型不得单独发布医疗、法律、安全或规划判断。[source:GENERATIVE-AI-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW]
 
@@ -408,9 +523,26 @@ P0 站前共享檐保留 36×36 米筛查、16×16 米可逆地面、8×8 米可
 
 四幅档案图登记来源、IIIF URL、哈希与署名；因 LOC 仅称不知存在限制并附条件说明再用，本包不简标为 `public domain`。[source:LOC-JINGZHANG-ALBUM-1909]
 
-图纸内嵌 Noto Sans SC 2.004 子集，其哈希、commit、方法和 OFL 见复现文件；NASA POWER 按政策署名，未嵌其他投稿。因 agent-track 与公告知识产权关系未书面澄清，暂用 `COMMUNITY-DISPLAY-ONLY`；详见版权声明。[source:NASA-DATA-POLICY] [source:OFFICIAL-ANNOUNCEMENT]
+图纸内嵌 Noto Sans SC 2.004 子集，其哈希、commit、方法和 OFL 见复现文件；NASA POWER 按政策署名，未嵌其他投稿。本包许可确定为 `COMMUNITY-DISPLAY-ONLY`，不再是待澄清的临时状态：该取值是征集方投稿校验器自身列明的可选许可之一，即其可接受性由征集方规则本身确认。作者据此授予征集方在本次征集内的评审、PR 预览、仓库存档与公开展示，并要求保留署名；其余任何再利用、改作或实施须另行取得作者书面许可。详见版权声明与权利矩阵。[source:NASA-DATA-POLICY] [source:OFFICIAL-ANNOUNCEMENT]
 
-模型披露：初版概念、参数几何、图纸和三张体验图由 OpenAI Codex 工作流生成；图像工具未返回模型 ID。v1.2–v1.5b 的文字、表格、打包、校验和 PR 修订由 Claude Code 辅助；仅部分记录明确 Claude Fable 5，故不扩大归因。v1.6–v1.9 的审计、A/B/H 验证器、北京交付/P0 参赛者实施控制模板和评审面由 Codex 完成。v1.7 的本地 `bge-m3:latest` 单次 Ollama `/api/embed` 批量见证原样沿用至 v1.9；tag、两类 digest、Ollama 版本及回执固化，权重不再分发。工具均未踏勘、获授权访谈、提供公共服务、现场动作或专业签署；公开身份、提交和实施仍由用户及未来责任人决定。
+
+### 整包权利矩阵
+
+八类资产的来源、权利依据、署名与对征集的授权在此一次列全；本表是参赛者声明，不是法律意见，也不额外授予任何许可。[data:visual/assets/rights-matrix.json]
+
+| 编号 | 资产 | 来源与工具 | 权利依据 | 署名/回执与限制 |
+|---|---|---|---|---|
+| R-01 | 正文、参赛者几何、图表、离线 HTML 与 PDF | 本投稿工作流创作 | 参赛者原创 | 署名投稿作者；以 `COMMUNITY-DISPLAY-ONLY` 供征集方评审与展示 |
+| R-02 | 三张概念体验图 | 2026-08-11 Codex 内 OpenAI 图像工具；工具未返回模型标识 | 受适用 OpenAI 服务条款约束；提示词源自参赛者类型化档案，未嵌外部参考图 | 逐张 SHA-256 见版权声明；仅表现层，不是证据、测绘或现场照片 |
+| R-03 | Noto Sans SC 2.004 子集 | 由官方可变字体以 fontTools 实例化 | SIL Open Font License 1.1 | 哈希、commit、方法与 OFL 链接见复现文件 |
+| R-04 | OSM 派生定位几何 | 重绘自公开 OpenStreetMap 事实几何 | ODbL，署名保留 | 不复制瓦片或页面版式；不作法定地图、地块、测绘或审批依据 |
+| R-05 | 1909 京张影集四幅低清图 | 国家图书馆原件；WDL / Library of Congress，LCCN 2021668851 | LOC 仅称不知存在限制并附条件说明再用 | 条目/IIIF URL、署名与字节哈希保留；本包不简化为 public domain |
+| R-06 | NASA POWER 气候数值 | NASA POWER 1991–2020 | 按 NASA 数据政策署名 | 仅作粗略概念种子，不是法定日照或热舒适模拟 |
+| R-07 | 本地 BGE-M3 语义见证 | 一次本地 Ollama `/api/embed` 批量调用 | tag、两类 digest、版本与回执固化；权重不随包分发 | 仅处理参赛者自撰假设文本，未提供公共服务 |
+| R-08 | 官方与公开资料引用 | 公开政府页面与官方来源 | 仅引用可署名的事实主张与链接 | 不复制其照片、插图、地图、标识、版式或字体 |
+
+关于 R-02 的精确模型标识：该图像工具在生成时未向本工作流返回模型 ID，此标识现已不可恢复；因此本包不主张任何未经证实的模型名称，改以生成日期、工具入口、提示词来源与逐张字节哈希作为可核查依据，使用仍受平台服务条款与 `COMMUNITY-DISPLAY-ONLY` 双重约束。[source:OFFICIAL-ANNOUNCEMENT]
+模型披露：初版概念、参数几何、图纸和三张体验图由 OpenAI Codex 工作流生成；图像工具未返回模型 ID。v1.2–v1.5b 的文字、表格、打包、校验和 PR 修订由 Claude Code 辅助；仅部分记录明确 Claude Fable 5，故不扩大归因。v1.6–v1.9 的审计、A/B/H 验证器、北京交付/P0 参赛者实施控制模板和评审面由 Codex 完成；v2.0–v2.11 的评审面收敛、工程预可行性包络、备选方案对照登记、整包权利矩阵、体验附页与参考剖面、以及临时总图重绘由 Claude Code (Claude Fable 5) 完成。v1.7 的本地 `bge-m3:latest` 单次 Ollama `/api/embed` 批量见证原样沿用至 v2.11；tag、两类 digest、Ollama 版本及回执固化，权重不再分发。工具均未踏勘、获授权访谈、提供公共服务、现场动作或专业签署；公开身份、提交和实施仍由用户及未来责任人决定。
 
 ## 参考资料
 

@@ -911,6 +911,8 @@ def render_pdf(html_path: Path, pdf_path: Path, engine: str = "auto") -> None:
                 [binary, "--quiet", "--print-media-type", html_path.as_posix(), pdf_path.as_posix()],
                 capture_output=True,
                 text=True,
+                encoding="utf-8",
+                errors="replace",
                 check=False,
             )
         elif candidate == "chromium":
@@ -939,6 +941,8 @@ def render_pdf(html_path: Path, pdf_path: Path, engine: str = "auto") -> None:
                 ],
                 capture_output=True,
                 text=True,
+                encoding="utf-8",
+                errors="replace",
                 check=False,
             )
         else:
