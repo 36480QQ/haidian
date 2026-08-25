@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "8db92a6470bcbba9f50145c8f62d207f62bc5a985ad88489ba0420b42643d64d"
+      "sha256": "a14b2895d6ed9479b95e6c7fe10e725c14a7b7da2a1a791ce9f2c6735408710c"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ea017d200bc8cfa191d339433ec09fc27f28d10dab5a26f829d6b25e3475b88d"
+      "sha256": "4923bd71c12d5bfe938a80da0ff52572399df7ffac3b411e49c42d6e4f6f2fce"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "40392136960619ec518b047b4f2c42a4cfb5f270d83e9d50bfdd64237862698d"
+      "sha256": "5f55f7aa17eb2a7314c0148f9edd9e2fbfb8b248af75adc1fae1110a891894bd"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f242953a584d7f7457f3ba846ab77a2a72b7f2e5e0d65831a3c8f585567d6c5b"
+      "sha256": "48a47058849e7b8df2489a7c7e5c6035129eacd04aa51e5224456aca440a4f5b"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "8fecf76ed3cdb427d462dc777cf4ac0d02a1b3d00b9cb92e846295dd286bcdfe"
+      "sha256": "5c7852bea5cc9fd49f9e82a4a854303a04dcd09544dc440c6eee7fb9a63fe068"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -209,7 +209,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "197f99ff1e568f3fe92b67f1ac2a55fba5b7ce52c0eecfeabb33d6b7362f08b9"
+      "sha256": "ab60c0081c51f1f44db19a1e1c39108e8ed911498c3bc88c6b042151165ae1ff"
     },
     {
       "path": "risk.json",
@@ -273,7 +273,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e84802bcc8cf001bf568b5e4f567bf475c3c1099d78ae7617039c211387e5c95"
+      "sha256": "ec698e5cff3cf39ea53f148ae846132202e03e1ef6daa073cde766be2366dec9"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -297,7 +297,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "455720b9f4feee5aa5f9d58f9e9b0be4c2f06c172ffa20314168ba42b5c0157b"
+      "sha256": "9eae040dbcb52c68e35c7d1918b6f80447f80f4ca69162956ee4a247ec414619"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -346,6 +346,12 @@
       "sha256": "340b93101a09a7e844f19528b4f861a3464091b8a005910e742cfab272877f86"
     },
     {
+      "path": "visual/assets/steady-field-noto-sans-sc.css",
+      "role": "asset",
+      "required": false,
+      "sha256": "61a161d3ffd8d26951bf07a33f4d3fd1ca1a140da4cfd663a14ba3b9db878345"
+    },
+    {
       "path": "assets/media/cover-concept.png",
       "role": "media_poster",
       "required": false,
@@ -355,7 +361,7 @@
       "path": "assets/media/rights-and-font-license.md",
       "role": "transcript",
       "required": false,
-      "sha256": "76e23cce89ab607b1cfdf88b1ff82aa9237f5a11f3a732971533bbe60bfddcf0"
+      "sha256": "9080a7e0daa7ee85689f70b5e96d1ef1049444bc156058befd48414df4f83c5b"
     }
   ],
   "validation_claim": {

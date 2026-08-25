@@ -259,8 +259,8 @@
       "publisher": "The Noto Project Authors",
       "source_type": "open_license_public",
       "retrieved": "2026-08-20",
-      "usage": "SIL Open Font License 1.1 basis for local rasterisation and PDF font subsetting.",
-      "limitations": "The submission does not redistribute the font program; asset-level use is recorded in the rights sidecar."
+      "usage": "SIL Open Font License 1.1 basis for local rasterisation plus PDF and offline HTML font subsetting.",
+      "limitations": "The full font program is not redistributed; the four HTML pages share a page-character WOFF2 subset embedded in a local CSS asset, and asset-level use is recorded in the rights sidecar."
     },
     {
       "id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",

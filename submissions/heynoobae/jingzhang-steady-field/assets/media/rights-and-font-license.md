@@ -9,7 +9,7 @@
 
 ## Noto Sans SC
 
-Build dependency: local `NotoSansSC-VF.ttf`. The font program is not committed; figures contain rasterised glyphs and PDFs contain embedded subsets.
+Build dependency: local `NotoSansSC-VF.ttf`. The full font program is not committed; figures contain rasterised glyphs, PDFs contain embedded subsets, and the four offline HTML pages share a page-character WOFF2 subset embedded as a data URI in `visual/assets/steady-field-noto-sans-sc.css`.
 
 Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'. Noto Sans CJK is licensed under the SIL Open Font License, Version 1.1. Official licence source: https://github.com/googlefonts/noto-cjk/blob/main/Sans/LICENSE
 
