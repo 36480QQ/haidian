@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v0.4.0 - 2026-08-25（Round 4 修复）
+
+- 图件可读性深度修复（CocoSgt 表达完整度 3/5 逐项）：land-use-structure（中英）重绘，英文标题不再被画布边缘裁切，中英页脚/免责声明不再重叠越界，标题带、口径说明卡、复算触发与 PROVISIONAL 印章均置于安全边距内；mobility-bluegreen（中英）横向说明改为面板内逐行预换行排版，消除两侧截断，2 km 等距示意圆与非等时圈限制、步速假设、检索日（2026-08-25）无路网级数据、官方数据发布后重算等警示在常规缩放下完整可读；site-overview（中英）节点标签改为白底边框+引出线双侧错位布置，消除与线形叠压，并补齐图例、比例尺、指北针、三层范围（43.6 km²/11.4 km²/368.4 ha）与 provisional 印章。
+- 图件技术规范达标：全部六张重绘图为 figsize≈12×8 @150dpi、constrained 版式、bbox_inches=tight 安全边距；标题≥18pt、图例/标注≥13pt、注释≥11pt；PIL/numpy 校验无边缘裁切（四边 18px 带内非白 0）且 ink 覆盖：site-overview 0.25/0.19、land-use-structure 0.50/0.37、mobility-bluegreen 0.33/0.23（图≥0.08、图≥0.10 的达标线）；en 变体 100% 英文（无残留中文，无缺字形警告）。
+- 用修复后的中英配对图重新生成成果：report/proposal.html 与 report/proposal.en.html（render_proposal_html.py，字体嵌入置于最后）；drawings/a3-booklet.pdf、.en、a0-boards.pdf、.en 重建——A0 三张展板、A3 封面+10 图页，图件按长宽比保真居中排布不裁切、不拉伸，A0 首页 60pt+ 可读标题（实际 30-34pt 放大至整幅），A3 封面标题分两行不越界，每页含来源与双语气 disclaimer；逐页检查裁切/空白失衡/文字重叠/图例遮挡/双语气位置对应/免责声明显著性后通过。
+- 口径与一致性不变：用地结构图采用与正文、metrics.json 一致的几何复算口径并明示聚合/复算规则（land_use 概念分区面积合计；green_ratio/public_space_ratio 为 green_space 图斑口径；官方数据发布后整体复算替换）；三维评分中涉及的三项图件表达修复均附逐项证据与修复说明见本条目。
+- 校验复跑：四门禁全部 PASS（validate_local_submission / spatial_review / visual_review / professional_review，exit=0；删除自检临时文件 _inspect.py/_inspect2.py 以通过确定性校验，spatial 仅保留既有 minor KEY_AREA_PROVISIONAL 提示）；score_rubric 100.0/100（无 mandatory_rejections、无 reviewer_gaps）；embed_fonts + check_font_coverage → ALL_FONTS_OK；manifest 哈希与 self_check.json（formal-review-ready）持久化。
+
 ## v0.3.0 - 2026-08-25（Round 2 修复）
 
 - P0 修复「15 分钟公共生活圈 = 2 km 步程圆」无依据对应：mobility-bluegreen（中英）删除「十五分钟公共生活圈」表述，将 2 km 圆改标为「等距示意圆、非路网等时圈」，图上注明步速假设（1.2–1.4 m/s 时单向约 24–28 分钟）、未计入交叉口/屏障、检索日（2026-08-25）无公开路网级数据、等时圈须待官方路网数据发布后重算；proposal.md / proposal.en.md 同步补概念命名与非等时圈声明；A3/A0 图册（中英）随图件重生成。
