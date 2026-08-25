@@ -152,6 +152,17 @@
       "confidence": "high",
       "assumptions": []
     },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(rows in proposal.md scenario-card table)",
+      "confidence": "high",
+      "assumptions": []
+    },
     "persona_count": {
       "status": "known",
       "value": 5,
