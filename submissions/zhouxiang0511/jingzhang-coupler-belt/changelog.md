@@ -20,7 +20,17 @@
   - **原创性 4→5**：新增 Logo 定稿方向与系统化品牌规范——`visual/assets/logo-mark.svg`（车钩+正线 JZ/∞ 主标）、`assets/figures/brand-standards.png/.en.png`（标准色#16324F/#E8A13D/#8A94A0/字体/变体/安全区/最小尺寸/应用），正文品牌规范节，终版清权声明；
   - **AI创新/包容 4→5 方法学**：新增「试点前基线调查与试验设计」——专业审查清单（数据保护/无障碍/交通安全/文保/算法合规/运营授权/应急停止）+ 基线调查方法 + KPI校准 + 试验设计，回应"无现场需求基线/试验结果"；
   - **条件触发响应**：新增「条件触发响应（数据缺口·责任·行动）」表，逐条确认 4 项触发条件的责任与行动（正式polygon复算/控规资料/来源复核 Issue #3963/现场试点审查）；
-  - 登记新资产（logo SVG=asset、brand 图=proposal_figure 中英）。
+  - 登记新资产（logo SVG=asset、brand 图=proposal_figure 中英）。## v0.11 - 2026-08-24
+- 品牌规范重绘（矢量精细版 · 极简白底）：
+  - `visual/assets/logo-mark.svg` 重绘为规范矢量（车钩+正线 JZ/∞，统一几何，含主标/深底变体）；
+  - `assets/figures/brand-standards.png/.en.png` 重做为极简白底品牌规范页：栅格化版面（LOGO 主标大图+深底变体 / 三变体 / 四标准色带色值与色调 / 中英字体样张与层级 / 安全区与最小尺寸）、大留白、单强调色（信号琥珀）、字号阶梯（20/16/11/8），与 Seedream 概念图质感对齐。
+
+## v0.10 - 2026-08-24
+- 多模态渲染重做（专业模型版）：
+  - 3 张概念渲染 + 封面改用**豆包 Seedream 5.0（doubao-seedream-5-0-pro，火山方舟 API）**生成（2K、带平台水印），Prompt 严格还原方案设计要素（车钩+钢轨 JZ/∞ 雕塑/三灯联锁塔/1909 船型站房+AI 出发叙事/JZ/∞ 封面符号），语言中性（无内嵌文字，展示页双语配文）；
+  - 替换并删除旧 matplotlib 渲染（render-*.png → seedance-*.png），`assets/media/cover.webp` 同步替换；
+  - manifest 更新（media_poster × 3，language=neutral）；copyright_statement 增补第 11 项生成溯源（工具/模型/平台水印/使用条款）；
+  - visual 展示页引用更新并重新注入离线字体。
 
 ## v0.8 - 2026-08-24
 - 多模态补强：
