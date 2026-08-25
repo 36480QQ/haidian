@@ -395,7 +395,7 @@ Core phased public-interest ratios likewise recompute under EPSG:4548 on provisi
 
 *How to read: core metric cards on the left, recomputation chain and sources on the right; "pending" cells are control-class indicators, never placeholder numbers.*
 
-Task coverage: announcement items 1.3/1.4/1.5 and agent tasks agent.1–agent.6 are registered item by item with sections, layers, metrics, drawings, and HTML evidence in `compliance_matrix.json`; professional-standard responses live in `standard_matrix.json`; design-depth self-evidence in `design_depth_matrix.json`; the four-gate self-check report is authoritative in `self_check.json`.
+Task coverage: announcement items 1.3/1.4/1.5 and agent tasks agent.1–agent.6 are registered item by item with sections, layers, metrics, drawings, and HTML evidence in `compliance_matrix.json`; professional-standard responses live in `standard_matrix.json`; design-depth self-evidence in `design_depth_matrix.json`; the four-gate self-check report is authoritative in `self_check.json`. In addition, a package-internal deterministic verifier runs seven groups / 30 checks — the 156-drill recount across all scenario cards, protocol binding, role loop, phase gates, and cross-file metrics consistency — all passing, with per-check results registered in `visual/assets/governance/qi-pulse-verification.json`.
 
 ## Multimodal Expression: Cover, Audio Guides, and Concept Video
 

@@ -397,7 +397,7 @@ iteration: "v1.5"
 
 *读图：左列为核心指标卡，右列为复算链与来源；"待补齐"格是控规类指标，不以占位数字替代。*
 
-任务覆盖方面：公告 1.3、1.4、1.5 各条与智能体任务 agent.1–agent.6 的章节、图层、指标、图纸与 HTML 证据逐项登记于 `compliance_matrix.json`；专业标准响应见 `standard_matrix.json`，成果深度自证见 `design_depth_matrix.json`；四门自检报告以 `self_check.json` 为准。
+任务覆盖方面：公告 1.3、1.4、1.5 各条与智能体任务 agent.1–agent.6 的章节、图层、指标、图纸与 HTML 证据逐项登记于 `compliance_matrix.json`；专业标准响应见 `standard_matrix.json`，成果深度自证见 `design_depth_matrix.json`；四门自检报告以 `self_check.json` 为准；此外，包内确定性验证器对场景卡 156 项演练复算、气数协议绑定、岗位闭环、分期条件门与指标跨文件一致性执行七组 30 项检查，全部通过，逐项结果登记于 `visual/assets/governance/qi-pulse-verification.json`。
 
 ## 多模态表达：封面、音频导览与概念视频
 

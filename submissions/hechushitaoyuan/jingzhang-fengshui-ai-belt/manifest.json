@@ -14,7 +14,7 @@
     "model_family": "deepseek",
     "model_detail": "初稿 accounts/fireworks/models/kimi-k3 via opencode (fireworks provider)；迭代 zcode (model GLM-5.3)；v1.3 阶段署名：同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）（Tongji Design AI Cloud: DeepSeek Harness + ox-alpha, with subagent CLIs Codex (GPT-5.6-Sol) and Claude Code (Claude Opus 5)）"
   },
-  "generated_at": "2026-08-25T21:21:54Z",
+  "generated_at": "2026-08-25T22:39:33Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "6b0c945ee83f4d1f44c63bd6543f86f85dfd4a45e781208b7063ea292b4a6dfd"
+      "sha256": "8326fa36498ac1d89db720f08f7e3387b0f6433ba0cbf7200ee8b8f8bc3828ad"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5a4811e188000b87ae86241923ef0249cbd851bc4ae45b350c55bb51393a4fbb"
+      "sha256": "ff68d6f5bf391d4e1ae04e670c1658e83298e3bb9b39405fd8d5df12edb1b36b"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "420c00a45afec91fe63031f0fcbe5d05bfcf09f18c289478c911750c75ff90fc"
+      "sha256": "d6ddf29974cab2a81638d35c5f53d0ee3f950920f9ba2fd77194675feca81f39"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "666b085c80766770632acb60efd78f9e6258db32eeb817e2081210a9998e0077"
+      "sha256": "222ddd02a6c5bd5f0873f37ef55d5dab5efb5dc420bf03e148f03c0188eac748"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7839d1a2a4bbdd0dbc1d92efb4dfcde7cd1e4a39c372f8d85e567c2b01864d29"
+      "sha256": "cbdcb3f4e3da80684f3630920f1f34bf591731467680704c08b869f98b48aa27"
     },
     {
       "path": "visual/index.en.html",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "c17016f15431a384e4157d0e0855c1e62a5035108940c2e09f3b9c2085ebd1ed",
+      "sha256": "a99a2720b9a954573dbc893efe6254af1a0f9c81df8a14389fd2e9e9e67f59a0",
       "language": "neutral"
     },
     {
@@ -559,6 +559,17 @@
       "description_zh": "11 色语义色板在正常/绿盲/红盲/蓝盲条件下的 CIEDE2000 两两核验逐对结果；36 对例外与整改说明见正文。",
       "description_en": "Pairwise CIEDE2000 results of the 11-colour palette under four vision conditions; 36 exceptions with remediation notes in the proposal.",
       "sha256": "5b2cdae45e22935272fca16abd66df3275fa48bd56caff8b63688591fe277918"
+    },
+    {
+      "path": "visual/assets/governance/qi-pulse-verification.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "Qi-Pulse 确定性自证验证结果",
+      "title_en": "Qi-Pulse deterministic self-verification results",
+      "description_zh": "七组 30 项确定性检查全部 PASS：场景卡 156 演练复算、气数协议绑定、岗位闭环、分期条件门、指标跨文件一致性、双语标签对齐、CJK 字体覆盖。",
+      "description_en": "Seven groups / 30 deterministic checks all PASS: scenario-card 156-drill recount, protocol binding, role loop, phase gates, metrics cross-file consistency, bilingual tag parity, CJK font coverage.",
+      "sha256": "50ab7fd3ef1b76046f9a0264bf2ba61a6d107c5ede468dc5f02c43132a6f6c36"
     }
   ],
   "validation_claim": {
