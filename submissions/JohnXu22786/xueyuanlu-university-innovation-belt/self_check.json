@@ -10,20 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/proposal.md"
@@ -33,16 +20,27 @@
       ],
       "changed_files": [
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/agent.json",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/key-areas.en.png",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/key-areas.png",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/land-use-structure.en.png",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/land-use-structure.png",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/logo-knowring.en.png",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/logo-knowring.png",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/metrics-evidence.en.png",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/metrics-evidence.png",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/mobility-bluegreen.en.png",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/mobility-bluegreen.png",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/regional-coordination.en.png",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/regional-coordination.png",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/site-overview.en.png",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/site-overview.png",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assumptions.json",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/changelog.md",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/compliance_matrix.json",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/design_depth_matrix.json",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/drawings/a0-boards.en.pdf",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/drawings/a0-boards.pdf",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/drawings/a3-booklet.en.pdf",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/drawings/a3-booklet.pdf",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/geometry/buildings.geojson",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/geometry/constraints.geojson",
@@ -59,17 +57,19 @@
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/proposal.md",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/report/copyright_statement.md",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/report/narrative.md",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/report/proposal.en.html",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/report/proposal.html",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/risk.json",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/self_check.json",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/sources.json",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/standard_matrix.json",
+        "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/visual/index.en.html",
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/JohnXu22786/xueyuanlu-university-innovation-belt": "formal"
       },
-      "total_bytes": 1022825,
+      "total_bytes": 9050763,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -107,6 +107,24 @@
           "target_feature_id": "KEY-DAZH",
           "expected": null,
           "actual": null
+        },
+        {
+          "check_id": "METRIC_RECALC_DRIFT",
+          "severity": "minor",
+          "target_file": "metrics.json",
+          "message": "site_area_sqm is within the legacy tolerance but drifts beyond ordinary reporting precision; reconcile before publication.",
+          "target_feature_id": null,
+          "expected": 11412825.385554,
+          "actual": 11413000.0
+        },
+        {
+          "check_id": "METRIC_RECALC_DRIFT",
+          "severity": "minor",
+          "target_file": "metrics.json",
+          "message": "green_space_area_sqm is within the legacy tolerance but drifts beyond ordinary reporting precision; reconcile before publication.",
+          "target_feature_id": null,
+          "expected": 2227303.500625,
+          "actual": 2227000.0
         }
       ],
       "metrics": {
@@ -127,9 +145,9 @@
       "ok": true,
       "issues": [],
       "metrics_seen": {
-        "site_area_sqm": 11412825.386,
-        "green_ratio": 0.195158,
-        "public_space_ratio": 0.003167
+        "site_area_sqm": 11413000.0,
+        "green_ratio": 0.2,
+        "public_space_ratio": 0.003
       }
     },
     "stderr": ""
@@ -147,11 +165,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 8,
-          "standard": 0,
-          "depth": 0,
-          "data": 1,
-          "metric": 2
+          "source": 18,
+          "standard": 4,
+          "depth": 11,
+          "data": 3,
+          "metric": 17
         }
       }
     },
@@ -160,7 +178,9 @@
   "spatial_issue_ids": [
     "KEY_AREA_PROVISIONAL",
     "KEY_AREA_PROVISIONAL",
-    "KEY_AREA_PROVISIONAL"
+    "KEY_AREA_PROVISIONAL",
+    "METRIC_RECALC_DRIFT",
+    "METRIC_RECALC_DRIFT"
   ],
   "visual_issue_ids": [],
   "professional_issue_ids": [],
@@ -168,21 +188,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/xueyuanlu-university-innovation-belt/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
-  ],
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
