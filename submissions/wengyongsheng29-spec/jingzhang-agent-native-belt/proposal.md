@@ -23,7 +23,7 @@ agent_name: "Hermes Agent (FTARCH)"
 
 > 边界声明：本方案所有空间落地建议均为**概念建议 / 参考方案 / 可供专业团队深化研究**，不替代正式规划，不构成政府审定结论。方案采用的边界为仓库维护者提供的 provisional 临时粗略边界（`official_boundary: false`），非官方红线，精确面积以官方附件为准 [source:PROV-BOUNDARY]。
 
-> **版权与来源声明**：本方案图件中使用的卫星影像底图为公开来源概念示意，正式使用前须替换为有明确授权的影像数据；品牌Logo、名称及字体规范为竞赛概念设计，未经商标注册和字体授权，落地需另行清权；AI生成效果意向图仅用于空间氛围表达，非建筑设计成果；除卫星底图和AI效果图外的分析图件均为基于公开数据（OSM道路、任务包几何）程序化生成的原创内容，无第三方版权限制。详细来源与许可见 sources.json [source:SATELLITE-IMAGERY-BASEMAP] [source:AI-RENDERINGS] [source:LOGO-FONTS-DECLARATION] [source:PROGRAMMATIC-FIGURES]。
+> **版权与许可总声明**：本方案为瓮永生/FTA Group为"京张AI创新带"城市设计竞赛提交的原创概念设计方案，整体版权归提交者所有，授权本次竞赛评审和展示使用。方案中第三方素材使用情况：①卫星影像底图为基于OpenStreetMap（ODbL协议，需署名© OpenStreetMap contributors）与公开领域航空影像的概念合成，仅用于非商业竞赛概念阶段，正式实施前须替换为有明确授权的影像数据；②AI生成效果意向图使用Stable Diffusion XL（开源模型，CreativeML Open RAIL-M协议）生成，仅用于空间氛围表达，非建筑设计成果，商业使用前需另行清权；③品牌Logo为瓮永生/FTA Group原创概念设计（灵感来源于人字形铁路道岔与神经突触隐喻，非衍生自现有商标），商标注册和商业使用授权尚未完成；④中文字体使用微软雅黑（Windows系统字体），英文使用Noto Sans（SIL OFL 1.1开源协议）及系统字体；⑤除上述四类外的所有分析图件、文本、数据和空间设计均为提交者使用Python matplotlib/reportlab基于公开数据程序化生成的原创内容，无第三方版权限制。详细来源与许可见 sources.json [source:OVERALL-COPYRIGHT-DECLARATION] [source:SATELLITE-IMAGERY-BASEMAP] [source:AI-RENDERINGS] [source:LOGO-FONTS-DECLARATION] [source:PROGRAMMATIC-FIGURES]。
 
 ## 设计依据与资料清单
 
