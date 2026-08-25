@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e9c839442d545f354d14388d0a2b1aac6ea99b19ab78a4f07ef969b929eda9f1"
+      "sha256": "587e9e975e84c3481736fea2542cdc8ccaada2c31ad4bfeec367d1b02fafe549"
     },
     {
       "path": "agent.json",
@@ -50,7 +50,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "1a085247049a89535398dc0539a7b0849023547612fedf0f0dab550b90686978"
+      "sha256": "6093654a34923632aaad45e002819ca37907174faba7372745f0aeb3c37f635a"
     },
     {
       "path": "risk.json",
@@ -62,13 +62,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "cfbed722d39e0b9d6eae2ef02025802e8a0ccb4129264d1650d70a6f6cf71a04"
+      "sha256": "e3656a1b82134acf8f41a3b4bd11945c7a12852be1b01e7cdefe834c4a4e8832"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "5db31eb7e694aeb3f7c60bb804645b7d4075b7839887f31084baf1a21d0db90e"
+      "sha256": "bece106229b8b9d3eb4788ff2f71370682d9eed65fd61c3196e257c7c04c5372"
     },
     {
       "path": "standard_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "593ea4cca8e09256b7040ab43cbfa2f71a322d0970cf9470afa292d2172f1fcd"
+      "sha256": "d2865703c6d96defd7ef23a63bc0f985fabe26bff9c62859fd37039c4fd823e5"
     },
     {
       "path": "report/narrative.md",
@@ -99,28 +99,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f6df74d0b9618451c5baae65d257f5598a6e1a62566247cada52e4d5647a786d"
+      "sha256": "63f8e0b0e5d227e9ea3c3319d5d31b5f7a2d86d34274dcc02b16bf9899cc6c90"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "b41720ee746cf34cc5014646b7de1e1e0d3588c29300296b7cadb5e9af7f8a24"
+      "sha256": "c79954d297f367b71b9a102849bf81aeae2b81ef4061145944f1aec339b9b8a2"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3d36b31ba7c208c6fb528ee81baeb105edaa17b6e5571160d5f0857002624e34"
+      "sha256": "83fc17a22b9fbc2c3b66770e5cb7cddbbd5ff14a6ec26bebe3a6d021471121ee"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "38669f64f2e592e7c8972a1613711049679598120e92a62f3a14b689bbeaf254"
+      "sha256": "be054d3502b630e8aeac3681a0179c70b5e51094dbf7fa2ce4832be3e73f7b68"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -217,7 +217,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "699c54be8f36a6e88c4ec7e4cdcb00c4fcb842ebd6cccd1665e2a6ea43fa8b0b"
+      "sha256": "f96b47887e6fa746dcbd824ecbdc3eb445bbf5557281484f6e1b2af48b18f3d9"
     },
     {
       "path": "report/proposal.en.html",
@@ -225,7 +225,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f82dfa61ab0feef34cda07b8f8f8bc7a11602a1e4be2025e7969007c330a08fc"
+      "sha256": "0e092e11b7970f68b6e3fa5e6fec7699847ce09d70579188746b68313d22bcd5"
     },
     {
       "path": "visual/index.en.html",
@@ -233,7 +233,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "017c3842385863044f3e9b9ba09d1b61492c58b22b9054d22cc6e9831f602261"
+      "sha256": "dbe0f7602906733ac703785c5cd9496b67f80aefe79cc9beb7459e1f0ef8e139"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -241,7 +241,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "dbb6f47f4276144fbb5de3f734b7f123c7d88e51f18a6ccb986619e88a085bfa"
+      "sha256": "d4c9d8a759fd15f403fa8c61ff01264a644ff61ccbe4d0de2a06d013d7f10d6d"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -249,7 +249,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "886221ba47834a874f1853293929750e84f7d5696347931047540d873063d9d8"
+      "sha256": "8479aeaafb4076a13d6f42a5315a68f8488b3785374d6b87262644b2b3061e68"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -296,7 +296,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "8929ec46f012ada1a5f9a585ff6a8b074a8e107fbad6b785ec17b63bfb4c57ba"
+      "sha256": "0e06a08ac227dc4d7a19e1c3330f0045787f3016eb8f4e8fec7b3ae2a7f3f6e0"
     },
     {
       "path": "visual/assets/switchback-protocol.json",
@@ -332,7 +332,7 @@
       "title_en": "RENLINE Explorer interactive script (embedded in both visual pages)",
       "description_zh": "十驿折返爬升交互示意:点选/键盘浏览各驿与场景卡,零外部依赖,含静态兜底与 reduced-motion。",
       "description_en": "Interactive switchback-climb schematic of the ten waypoints; zero external dependencies, static fallback and reduced-motion support.",
-      "sha256": "0bfe6a6009f8e6bb902b0e5e74d17fa09bd279cf4ebd71610b3e531de94afc84"
+      "sha256": "b04de4c99cd642aab95f1720ad98be00dd6b2d7eec6a01e4e627ec8ebe261f4a"
     },
     {
       "path": "visual/assets/renline-explorer-fallback.png",
