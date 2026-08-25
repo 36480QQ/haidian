@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v0.3.0 - 2026-08-25
+
+Round-4 repair (CocoSgt CHANGES_REQUESTED 84.0 -> pending re-review):
+
+- 品牌权利处置（P0-1）：执行并登记日期化初步公开网络检索（NAME-SEARCH-01，2026-08-25，列明检索对象/地域类别/渠道/执行者/结果/风险处置），覆盖 智脉京张、京张脉动/京张智脉、Jingzhang Pulse、JZ-PULSE、四座地标名称、「0∞」图形及 轨道驿站等基线称名；未发现完全一致在先使用，但记录成分词近似（智脉/BrainCog、曙光/Sugon、脉动/达能）、行业近邻（轨道物流驿站/地铁驿站）与同征集生态近似命名（Qi-Pulse、zhimai-jingzhang）——全部如实入档，明确不等于官方登记机构检索；同步修订 proposal.md/proposal.en.md 品牌在先权利与使用边界段（明确本包展示=评审用内部工作代号，官方清权前不对外采用/注册/传播/商用）、Logo方向段、风险提示①、引用登记表；sources.json 更新 NAME-CLEAR-01/LOGO-ASSET-01 并新增 NAME-SEARCH-01；assumptions.json 更新 A-BRAND-001；report/copyright_statement.md 增补品牌在先权利记录段；manifest 徽标描述同步更新；logo 图补「内部工作代号·NAME-CLEAR-01·NAME-SEARCH-01」双语脚注。
+- 图件修复（P0-2）：13 张 PNG 全部重绘（figsize 12×8 @150dpi；标题≥18pt、图例/轴标≥13pt、注记≥11pt；constrained 安全版式；全部四边安全边距≥1%画幅，程序化校验 ink 均达标：地图/示意图≥0.08、图表≥0.10）；site-overview.en 底部说明越界、land-use-structure 中英文标签拥挤（改横向堆叠条+独立注释带）、key-areas 中英文警示与文本叠压（警示横幅独立布局+英文折行+三区图内注）、mobility-bluegreen 中英文图例/底部说明截断（右侧图例区+单语注释带）、metrics-evidence 中英文左轴裁切（边距+比率/计数分轴）全部消除；key-areas 增绘四座地标「形态—体验」概念面板与图标（原创性视觉深化）；英文图为纯英文标签（双语 provisional 戳记按规范保留）；A3 封面标题折行不再左右裁切，A0 首页改为大标题(68pt)+满幅三图版式（ink≈0.65，2 页），A0/A3 中英成对同构。
+- 精度修复（P1-3）：人类可见输出全部按置信度取整并紧邻标注「provisional 概念模型值/非测绘或法定面积」：visual/index.html（面积显示改为「约1141万平方米（约11.4km²）」，data-value 保留可复算精确值与 metrics.json 一致）、metrics-evidence 图（%与计数分轴、取整显示）、key-areas 面积注记取整；proposal.md/proposal.en.md 增加「显示精度承诺」段（机器文件保留可复算有限值，人类可见输出取整+标注），消除「未声称精确数值」与六位小数展示的矛盾；visual/index.html 修正四地标 SVG（原第4框与第3框坐标完全重叠）与「三节点」口径为四地标，三层官方范围（43.6 km²/11.4 km²/368.4 ha）明文落图。
+- 一致性：visual/index.html/en 假设数改为 6（与 assumptions.json 一致）；manifest 42 项哈希刷新；HTML 重新渲染（render_proposal_html.py）后最后一步重嵌 NotoSansSC-Static 子集字体（4 页全通过 check_font_coverage：0 missing CJK）。
+- 评分与门禁：score_rubric 100.0/100（reviewer_gaps 空、无拒绝）；四门禁（deterministic/spatial/visual/professional）全部 PASS（KEY_AREA_PROVISIONAL 为已知 minor 提示）；validate_local_submission PASS。
+- 人工核对声明：中英实质等值已人工核对（proposal.en.md 为提案全文实质翻译）；品牌在先权利官方检索未完成前按内部工作代号处理（NAME-CLEAR-01/NAME-SEARCH-01）；图表 ink 值与剪裁检查结果已按程序化校验，全部边距安全、无裁切。
+
 ## v0.2.0 - 2026-08-25
 
 Round-2 repair (CocoSgt CHANGES_REQUESTED 75.0 -> 100.0):

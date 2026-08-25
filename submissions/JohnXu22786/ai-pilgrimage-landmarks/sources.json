@@ -669,18 +669,20 @@
       "authority_level": "SELF-DECLARED",
       "timeliness_level": "T0",
       "public_access_status": "cleared_for_repo",
-      "license_summary": "Internal registry record: states that NO official trademark/copyright prior-rights search has been completed at concept stage.",
+      "license_summary": "Internal registry record: states that NO official trademark/copyright prior-rights search has been completed at concept stage; a dated preliminary internet scan (NAME-SEARCH-01, 2026-08-25) has been recorded with results and risk disposition.",
       "license": "internal_registry_record",
       "review_status": "self_reviewed",
       "usable_for_formal": "informational_only",
       "allowed_uses": [
-        "honest disclosure that prior-rights clearance is pending",
-        "internal working codenames for proposal expression and professional discussion"
+        "honest disclosure that official prior-rights clearance is still pending",
+        "recording dated preliminary internet search results (NAME-SEARCH-01)",
+        "internal working codenames for proposal expression and professional discussion inside this evaluation package"
       ],
       "prohibited_uses": [
         "external adoption of names/marks",
-        "trademark or design registration before clearance",
-        "external communications or commercial use of the marks"
+        "trademark or design registration before official clearance",
+        "external communications, marketing or commercial use of the marks before clearance",
+        "claiming that the preliminary web scan equals an official registry search"
       ],
       "topics": [
         "brand",
@@ -688,7 +690,88 @@
         "prior_rights"
       ],
       "local_paths": [],
-      "notes_zh": "如实登记：概念阶段未完成官方商标/著作权在先权利检索；名称与图形按内部工作代号处理；检索结果不支持时立即更换或降级。"
+      "notes_zh": "如实登记：概念阶段未完成官方商标/著作权在先权利检索（CNIPA 等登记机构交互检索待办）；已完成 2026-08-25 日期化初步公开网络检索（NAME-SEARCH-01，列明检索对象、地域/类别、渠道、执行者、结果与风险处置），结果未发现完全相同的在先商标/品牌使用，但发现多项近似在先使用与同征集生态内近似命名（详见 NAME-SEARCH-01）；本包内名称与图形仅按内部工作代号用于评审展示，检索结果不支持时立即更换或降级。"
+    },
+    {
+      "source_id": "NAME-SEARCH-01",
+      "title": "品牌在先权利初步公开网络检索记录（日期化，2026-08-25）",
+      "publisher": "JohnXu22786 / dsh-haidian-agent（websearch 子代理执行并记录）",
+      "source_kind": "dated_search_record",
+      "url": "https://github.com/open-city-ai/haidian",
+      "published_date": "2026-08-25",
+      "accessed_date": "2026-08-25",
+      "file_type": "text",
+      "authority_level": "SELF-DECLARED_PRELIMINARY_SCAN",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license_summary": "Dated preliminary internet scan of publicly accessible web content; NOT an official trademark/copyright registry search; results recorded verbatim with channels, executor, dates and risk disposition.",
+      "license": "internal_registry_record",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "informational_only",
+      "allowed_uses": [
+        "informing the risk disposition of the internal working codenames",
+        "supporting the honest disclosure in the brand section and matrices"
+      ],
+      "prohibited_uses": [
+        "claiming clearance or registration status",
+        "replacing an official CNIPA/WIPO/registry search (still mandatory before any external use)"
+      ],
+      "topics": [
+        "brand",
+        "trademark_scan",
+        "prior_rights"
+      ],
+      "search_records": [
+        {
+          "mark": "智脉京张（中文主名）",
+          "region_or_class_scope": "中国大陆及全球公开网络；商标类别未限定（初步扫描）",
+          "channel": "公开网络语义检索（exa_web_search_exa）：\"智脉京张\"、\"智脉京张 商标\"、\"Zhimai Jingzhang\" 等 3 组查询；tavily 通道当日不可用（status 432），已如实记录",
+          "executor": "websearch 子代理（deepseek-v4-flash 研究代理），日期2026-08-25",
+          "result": "公开网页未见完全相同的「智脉京张」企业/品牌/商标使用；「智脉」为既有成分词（中科院自动化所 BrainCog 智脉平台 2023 开源；北京智脉识别科技等公司名）；同一开源征集仓库出现近似命名使用：提交 zhimai-jingzhang-youth-ai-belt（2026-08-19，github.com/open-city-ai/haidian commit 49eaf4f）",
+          "risk_disposition": "生态内撞名风险高；保持内部工作代号，不对外采用；正式采用前须 CNIPA 交互式检索"
+        },
+        {
+          "mark": "京张脉动 / 京张智脉（近似变体核查）",
+          "region_or_class_scope": "中国大陆及全球公开网络",
+          "channel": "公开网络语义检索：\"京张脉动 商标 企业\"、\"京张智脉\" 等 4 组查询",
+          "executor": "websearch 子代理（deepseek-v4-flash 研究代理），日期2026-08-25",
+          "result": "未发现独立品牌「京张脉动/京张智脉」；「脉动」为达能（Danone）中国注册商标（注册号50713728，第43类，专用权至2031）；同仓库另有 jingzhang-zhimai-belt、jingzhang-ai-zhimai-belt 两个近似提交",
+          "risk_disposition": "成分词（京/智/脉/动）在商标领域高度拥挤；保持内部代号；若注册需逐类核验"
+        },
+        {
+          "mark": "Jingzhang Pulse / JZ-PULSE（英文主名/简称）",
+          "region_or_class_scope": "全球公开网络（英文为主）",
+          "channel": "公开网络语义检索：\"Jingzhang Pulse\"、\"JZ-PULSE\" 等 3 组查询",
+          "executor": "websearch 子代理（deepseek-v4-flash 研究代理），日期2026-08-25",
+          "result": "未发现外部企业/品牌使用「Jingzhang Pulse」；近似项：同仓库提交 \"Jing-Zhang Qi-Pulse · Fengshui AI\"（2026-08-18，commit 1a492e3）；外部近邻有 Z-PULSE Ltd（英国自供电传感器）、JAZPULSE PTE. LTD.（新加坡 2026-04 注册软件公司）、JPULSE（美国半导体ATE）等",
+          "risk_disposition": "外部无完全一致使用，但 JZ 前缀与 -PULSE 后缀均拥挤；保留内部代号，对外使用前检索与避让"
+        },
+        {
+          "mark": "四座地标名称：京张零公里坐标碑 / 算力曙光塔 / 算法钟楼 / 轨道日晷",
+          "region_or_class_scope": "中国及全球公开网络；建筑/装置/商标类别未限定",
+          "channel": "公开网络语义检索共 8 组中英文查询（每组名称1—2条查询）",
+          "executor": "websearch 子代理（deepseek-v4-flash 研究代理），日期2026-08-25",
+          "result": "四个名称均未发现相同的既有地标/装置/品牌使用；相关注记：京张铁路真实零公里点位于柳村（既有文保叙事，本方案坐标碑为文化坐标、不宣称官方原点）；「曙光」为中科曙光（Sugon）既有计算行业品牌成分；「算法钟楼/轨道日晷」概念类作品全球有先例（如 Clock House No.2、利物浦路车站日晷等），均非同名",
+          "risk_disposition": "名称可作内部设计代号；「曙光」成分对外使用需注意行业品牌近邻；地标名称不与文物本体/官方名称混同"
+        },
+        {
+          "mark": "0∞（核心图形符号概念）",
+          "region_or_class_scope": "全球公开网络；图形/商标类别未限定",
+          "channel": "公开网络语义检索：\"0∞ symbol logo\"、\"zero and infinity combined logo\" 等 3 组查询",
+          "executor": "websearch 子代理（deepseek-v4-flash 研究代理），日期2026-08-25",
+          "result": "「0+∞」组合图形概念存在大量在先公开/商业使用先例：Zero2infinity（西班牙航天公司标志，2015 年即有公开文件）、InfiniteZero（欧盟铁路软件公司，字标含零+无限）、商标素材市场有 \"Zero Or O Infinity Logo\" 模板等；未发现与「钢轨断面+圆点+无穷上半弧」完全一致的组合",
+          "risk_disposition": "不宣称该图形符号概念具有新颖性或可注册性；仅作为内部视觉语言使用；图形显著性不足时改用以轨道语汇为主的原创组合"
+        },
+        {
+          "mark": "基线核查：轨道驿站 / 众智台 / 原点场 / 钟声里（驿站与外延称名）",
+          "region_or_class_scope": "中国大陆公开网络",
+          "channel": "公开网络语义检索：\"轨道驿站\"、\"众智台\"、\"原点场\"、\"钟声里\" 共 4 组查询",
+          "executor": "websearch 子代理（deepseek-v4-flash 研究代理），日期2026-08-25",
+          "result": "「轨道驿站」类称谓在轨交服务行业已实际使用（深圳顺丰+深铁「福田轨道物流驿站」2024-10、成都轨道集团「地铁驿站」2025-05 等），属行业通用命名风格；「众智台/原点场/钟声里」未发现相同机构/品牌，但与官方重点片区名称（众智园AI自主创新加速区、北京AI原点社区）属同一称谓家族",
+          "risk_disposition": "「轨道驿站」对外使用高度易混，仅作内部工作称谓；其余保持内部代号并按官方片区口径表述"
+        }
+      ],
+      "notes_zh": "初步公开网络检索（日期 2026-08-25，执行者：websearch 子代理）：未发现与被检索名称完全一致的在先商标/品牌使用，但存在多项成分词近似、行业近邻与同征集生态内近似命名；该扫描不等同于官方登记机构（CNIPA/WIPO/中国商标网等）检索，正式采用或注册前必须完成官方交互式检索并复算风险。检索渠道限制：tavily 通道当日状态 432 不可用，改用 exa 语义检索通道；微信/抖音/百度独家收录页可能未覆盖。"
     },
     {
       "source_id": "LOGO-ASSET-01",
@@ -723,7 +806,7 @@
       "local_paths": [
         "assets/figures/logo-jz-pulse.png"
       ],
-      "notes_zh": "原创概念图形，标注为内部工作代号；在先权利检索完成后更新。"
+      "notes_zh": "原创概念图形，标注为内部工作代号；2026-08-25 初步网络检索（NAME-SEARCH-01）确认「0+∞」组合图形概念存在多项在先公开使用先例，本图形不宣称新颖性或可注册性；官方在先权利检索完成后更新。"
     }
   ]
 }
