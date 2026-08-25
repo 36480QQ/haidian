@@ -1,6 +1,6 @@
 ---
 title: "Jing-Zhang Memory Loop: AI Public Life and Innovation Corridor"
-author_github: "codex-agent"
+author_github: "jiannnnyyyyy"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
@@ -27,9 +27,15 @@ The coordinated research area is about 43.6 km2, the overall design area about 1
 
 ## Coordinated Research Area: Industry and Future City Research
 
-The concept is one belt, three innovation anchors, multiple scenarios, and a blue-green slow-mobility loop. It translates the three call positions into AI full-stack innovation, world-class ecosystem, AI+ scenarios, intelligent public life, and AI governance [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. Seven benchmark cases are used only as methods: MaRS Toronto, Station F, the Alan Turing Institute, Pittsburgh Robotics Network, Punggol Digital District, Shibuya QWS, and Brainport Eindhoven. Their lessons become a checklist for space, compute, data, scenarios, capital, talent, and governance; no local company, investment, or policy promise is invented.
+The concept is one belt, three innovation anchors, multiple scenarios, and a blue-green slow-mobility loop. It translates the three call positions into AI full-stack innovation, world-class ecosystem, AI+ scenarios, intelligent public life, and AI governance [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]. Seven benchmark cases are used only as methods: MaRS Toronto, Station F, the Alan Turing Institute, Pittsburgh Robotics Network, Punggol Digital District, Shibuya QWS, and Brainport Eindhoven. Their lessons become a checklist for space, compute, data, scenarios, capital, talent, and governance; no local company, investment, or policy promise is invented [source:GLOBAL-AI-CASE-METHODS].
+
+The seven-element ecosystem loop is “researchers frame questions; Zhongzhiyuan tests safety and standards; AI Origin Community supports near-campus transfer; Dazhongsi demonstrates products and content; the Zhongguancun service wing connects IP, capital, and international exchange; the Xiaoyuehe scenario wing collects public experience feedback.” These are conceptual interfaces only: public actors set rules and review, enterprises and universities opt in, developers use open APIs and open-source licenses, and residents can respond through non-digital channels. No vendor, investor, or procurement commitment is assumed.
+
+Regional collaboration is proposed as interfaces rather than administrative commitments: Beiliwei Community for community services and young talent exchange, Future Science City for frontier research, Huairou Science City for long-horizon science facilities, E-Town for intelligent manufacturing and scale-up, and the Beijing-Tianjin-Hebei region for transfer and talent mobility. Each interface is tested through public annual questions, reciprocal visits, reusable data standards, and outcome reviews [source:AGENT-TASKBOOK].
 
 The identity “JZ LOOP / Jing-Zhang Memory Loop” uses sleeper rhythm and an open ring. Deep teal, copper, and signal green form a proposed palette; the mark is a continuous line and ring, to be redrawn with cleared fonts and assets [depth:overall_spatial_structure].
+
+The minimum visual guide uses a 2:1 horizontal ring for the master mark and a circular seal for nodes; stretching and unauthorized corporate marks are prohibited. Deep teal `#0F2433`, copper `#B88A3B`, signal green `#2D8A55`, and river cyan `#4D9EB0` are the four functional colors. “JZ LOOP” is the mark, “Jing-Zhang Memory Loop” is the name, and “Open Test / Civic Life / Memory Rail” are replaceable sublabels. Activity subbrands remain text locks beside the master mark. Fonts, graphics, printing, and accessibility require clearance before use.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -49,6 +55,12 @@ Five personas are a near-campus researcher, open-source developer, industry serv
 
 Three reference validation scenes are model red-team testing at Zhongzhiyuan, accessible walk navigation at the heritage park, and smart-device/content integration at Dazhongsi. They improve services but do not replace regulation or engineering acceptance.
 
+Four priority validation scenes use one “scenario-space-operation-evidence” card: model red-team testing records stop reasons and human sign-off; accessible navigation records broken links, alternatives, and paper feedback; smart-device/content integration records failures, permissions, and visitor feedback; and the talent-life desk records human handoff and voluntary withdrawal. Initial acceptance is a three-part Boolean gate: a record exists, a human can review it, and an exit path exists. Professional teams must set any numeric thresholds; pilots are not approved operations.
+
+Three AI pilgrimage landmarks are the Jing-Zhang Memory Loop Gate, the Zhongzhiyuan Safety Dome, and the Dazhongsi Open Terminal Walk. They are low-intensity, reversible concept nodes and do not require altering heritage fabric or private buildings. The honor system uses verifiable contribution IDs, optional attribution, and withdrawal. The public-space component kit includes movable seats, accessible wayfinding, low-glare night markers, switchable sensor boxes, and paper feedback boxes [depth:blue_green_public_space].
+
+The cultural narrative has three acts: railway engineering and public infrastructure; Zhongguancun open knowledge and near-campus innovation; and accountable agents, public contribution, and human governance. A bilingual “milepost + codeplate” guide separates historical facts from contemporary concepts. The international line is “From railway memory to accountable intelligence / 从铁路记忆到可问责的智能”.
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 Land-use and footprint areas are reproducible design-model outputs. Total floor area, FAR, and height stay unknown until official controls arrive. Retain, renovate, or new-build decisions require public-value, heritage, structural, and ownership checks by professionals [metric:building_footprint_area_sqm] [depth:retain_renovate_demolish].
@@ -65,7 +77,9 @@ The heritage park, Qinghe, and Xiaoyuehe form a continuous blue-green frame. The
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
-Six reference projects are JZ-01 heritage-park walkability repair, JZ-02 Qinghe innovation edge, JZ-03 Origin Community conversion street, JZ-04 Dazhongsi four-quadrant walking link, JZ-05 public AI service and edge-compute nodes, and JZ-06 global AI week route [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list]. The sequence is operate first, renew second, coordinate later: pilot wayfinding and open days, then retrofit interfaces and service nodes, then deepen construction after controls, ownership, utilities, and finance are confirmed [depth:phasing_implementation].
+Eight reference projects are JZ-01 heritage-park walkability repair, JZ-02 Qinghe innovation edge, JZ-03 Origin Community conversion street, JZ-04 Dazhongsi four-quadrant walking link, JZ-05 public AI service and edge-compute nodes, JZ-06 global AI week route, JZ-07 three pilgrimage landmarks and contribution wall, and JZ-08 cross-region developer exchange and data-ethics workshops [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list]. The sequence is operate first, renew second, coordinate later: pilot wayfinding and open days, then retrofit interfaces and service nodes, then deepen construction after controls, ownership, utilities, and finance are confirmed [depth:phasing_implementation].
+
+The reference annual calendar is memory/open-source season in spring, scenario open week in summer, global responsible-AI innovation week in autumn, and public review season in winter. The developer community maintains public issues monthly, publishes scenario packs quarterly, and selects reversible contribution cases annually. The conversion path is public question, short visit, compliant pilot, professional review, and voluntary collaboration. A conceptual RACI assigns public-space and safety review to local/professional teams, scenario design to participants and operators, data and rights to a governance lead, and public feedback to community desks. Any unreviewable, unauthorized, or unsafe output pauses and rolls back to paper/manual service.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 

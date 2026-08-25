@@ -18,6 +18,18 @@
       "status": "design_guardrail",
       "statement": "AI scene concepts use public or consented data, data minimization, explainability, and human review.",
       "impact": "No individual profiling, biometric inference, or autonomous enforcement is proposed."
+    },
+    {
+      "id": "A-COLLAB-001",
+      "status": "conceptual_interface",
+      "statement": "Connections to Beiliwei Community, Future Science City, Huairou Science City, E-Town, and Beijing-Tianjin-Hebei are proposed collaboration interfaces, not confirmed partnerships or resource commitments.",
+      "impact": "Any cross-region activity requires named participants, rights clearance, a public agenda, and professional/administrative confirmation before operation."
+    },
+    {
+      "id": "A-OPS-001",
+      "status": "pending_operational_confirmation",
+      "statement": "Annual events, RACI roles, acceptance gates, and rollback paths are reference operating models; numeric thresholds, budgets, staffing, and liability remain unknown.",
+      "impact": "The package can define a testable concept but cannot claim approved operations, funding, or performance outcomes."
     }
   ]
 }
