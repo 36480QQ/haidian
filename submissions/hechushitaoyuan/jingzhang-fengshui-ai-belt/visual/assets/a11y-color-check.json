@@ -1,42 +1,49 @@
 {
   "schema_version": "0.1.0",
-  "updated_at": "2026-08-20",
+  "updated_at": "2026-08-25",
   "threshold_delta_e00": 20.0,
   "method": "Machado et al. 2009 CVD matrices (severity 1.0) + CIEDE2000 (Sharma et al. 2005, self-tested against official vectors). 11-color semantic palette of this package's figures; pairs judged distinguishable when simulated dE00 >= 20.",
   "conditions": {
     "normal": {
       "pairs": 55,
-      "median_dE00": 37.7,
-      "min_dE00": 7.5,
-      "fail_count": 5,
+      "median_dE00": 37.4,
+      "min_dE00": 15.5,
+      "fail_count": 6,
       "fail_pairs": [
+        {
+          "pair": [
+            "墨 INK",
+            "黛蓝深(用地)"
+          ],
+          "dE00": 18.9
+        },
         {
           "pair": [
             "鎏金 GOLD",
             "古铜金 BRONZE"
           ],
-          "dE00": 15.1
+          "dE00": 17.2
         },
         {
           "pair": [
             "鎏金 GOLD",
             "琥珀(用地)"
           ],
-          "dE00": 13.7
+          "dE00": 15.5
         },
         {
           "pair": [
-            "古铜金 BRONZE",
-            "琥珀(用地)"
+            "黛蓝 AZURE",
+            "玉绿浅(用地)"
           ],
-          "dE00": 15.2
+          "dE00": 19.2
         },
         {
           "pair": [
             "黛蓝 AZURE",
             "黛蓝深(用地)"
           ],
-          "dE00": 7.5
+          "dE00": 18.2
         },
         {
           "pair": [
@@ -50,7 +57,7 @@
     "deuteranopia": {
       "pairs": 55,
       "median_dE00": 35.5,
-      "min_dE00": 3.8,
+      "min_dE00": 4.3,
       "fail_count": 10,
       "fail_pairs": [
         {
@@ -58,56 +65,63 @@
             "朱砂 CINNABAR",
             "鎏金 GOLD"
           ],
-          "dE00": 17.0
+          "dE00": 16.0
         },
         {
           "pair": [
             "朱砂 CINNABAR",
             "古铜金 BRONZE"
           ],
-          "dE00": 14.2
+          "dE00": 4.3
         },
         {
           "pair": [
             "朱砂 CINNABAR",
             "玉绿 JADE"
           ],
-          "dE00": 8.9
+          "dE00": 16.8
         },
         {
           "pair": [
             "鎏金 GOLD",
             "古铜金 BRONZE"
           ],
-          "dE00": 14.7
+          "dE00": 17.2
         },
         {
           "pair": [
             "鎏金 GOLD",
             "琥珀(用地)"
           ],
-          "dE00": 7.6
+          "dE00": 13.5
         },
         {
           "pair": [
             "古铜金 BRONZE",
             "玉绿 JADE"
           ],
-          "dE00": 12.2
+          "dE00": 13.7
         },
         {
           "pair": [
-            "古铜金 BRONZE",
-            "琥珀(用地)"
+            "黛蓝 AZURE",
+            "灰 GRAY"
           ],
-          "dE00": 12.8
+          "dE00": 18.1
+        },
+        {
+          "pair": [
+            "黛蓝 AZURE",
+            "玉绿浅(用地)"
+          ],
+          "dE00": 16.5
         },
         {
           "pair": [
             "黛蓝 AZURE",
             "黛蓝深(用地)"
           ],
-          "dE00": 3.8
+          "dE00": 8.6
         },
         {
           "pair": [
@@ -115,98 +129,70 @@
             "玉绿浅(用地)"
           ],
           "dE00": 8.8
-        },
-        {
-          "pair": [
-            "玉绿浅(用地)",
-            "黛蓝深(用地)"
-          ],
-          "dE00": 19.6
         }
       ]
     },
     "protanopia": {
       "pairs": 55,
-      "median_dE00": 33.7,
-      "min_dE00": 4.3,
-      "fail_count": 13,
+      "median_dE00": 32.6,
+      "min_dE00": 7.5,
+      "fail_count": 9,
       "fail_pairs": [
         {
           "pair": [
             "朱砂 CINNABAR",
             "古铜金 BRONZE"
           ],
-          "dE00": 19.5
+          "dE00": 8.2
         },
         {
           "pair": [
             "朱砂 CINNABAR",
             "玉绿 JADE"
           ],
-          "dE00": 12.0
+          "dE00": 9.1
         },
         {
           "pair": [
             "鎏金 GOLD",
             "古铜金 BRONZE"
           ],
-          "dE00": 14.6
-        },
-        {
-          "pair": [
-            "鎏金 GOLD",
-            "玉绿 JADE"
-          ],
-          "dE00": 14.8
+          "dE00": 16.0
         },
         {
           "pair": [
             "鎏金 GOLD",
             "琥珀(用地)"
           ],
-          "dE00": 8.0
+          "dE00": 14.3
         },
         {
           "pair": [
             "古铜金 BRONZE",
             "玉绿 JADE"
           ],
-          "dE00": 7.4
-        },
-        {
-          "pair": [
-            "古铜金 BRONZE",
-            "玉绿浅(用地)"
-          ],
-          "dE00": 16.7
-        },
-        {
-          "pair": [
-            "古铜金 BRONZE",
-            "琥珀(用地)"
-          ],
-          "dE00": 10.1
+          "dE00": 7.5
         },
         {
           "pair": [
             "黛蓝 AZURE",
             "灰 GRAY"
           ],
-          "dE00": 19.5
+          "dE00": 14.1
+        },
+        {
+          "pair": [
+            "黛蓝 AZURE",
+            "玉绿浅(用地)"
+          ],
+          "dE00": 16.8
         },
         {
           "pair": [
             "黛蓝 AZURE",
             "黛蓝深(用地)"
           ],
-          "dE00": 4.3
-        },
-        {
-          "pair": [
-            "玉绿 JADE",
-            "琥珀(用地)"
-          ],
-          "dE00": 14.0
+          "dE00": 10.9
         },
         {
           "pair": [
@@ -214,84 +200,84 @@
             "玉绿浅(用地)"
           ],
           "dE00": 10.3
-        },
-        {
-          "pair": [
-            "灰 GRAY",
-            "黛蓝深(用地)"
-          ],
-          "dE00": 18.7
         }
       ]
     },
     "tritanopia": {
       "pairs": 55,
-      "median_dE00": 37.8,
-      "min_dE00": 3.4,
+      "median_dE00": 37.7,
+      "min_dE00": 9.8,
       "fail_count": 11,
       "fail_pairs": [
+        {
+          "pair": [
+            "墨 INK",
+            "黛蓝深(用地)"
+          ],
+          "dE00": 16.3
+        },
         {
           "pair": [
             "朱砂 CINNABAR",
             "鎏金 GOLD"
           ],
-          "dE00": 18.3
+          "dE00": 18.0
+        },
+        {
+          "pair": [
+            "朱砂 CINNABAR",
+            "古铜金 BRONZE"
+          ],
+          "dE00": 18.5
         },
         {
           "pair": [
             "鎏金 GOLD",
             "古铜金 BRONZE"
           ],
-          "dE00": 9.9
+          "dE00": 15.3
         },
         {
           "pair": [
             "鎏金 GOLD",
             "琥珀(用地)"
           ],
-          "dE00": 7.3
-        },
-        {
-          "pair": [
-            "古铜金 BRONZE",
-            "琥珀(用地)"
-          ],
-          "dE00": 15.6
+          "dE00": 12.6
         },
         {
           "pair": [
             "黛蓝 AZURE",
             "玉绿 JADE"
           ],
-          "dE00": 10.7
+          "dE00": 9.8
         },
         {
           "pair": [
             "黛蓝 AZURE",
-            "玉绿浅(用地)"
-          ],
-          "dE00": 19.0
-        },
-        {
-          "pair": [
-            "黛蓝 AZURE",
-            "黛蓝深(用地)"
-          ],
-          "dE00": 3.4
-        },
-        {
-          "pair": [
-            "玉绿 JADE",
             "玉绿浅(用地)"
           ],
           "dE00": 13.3
         },
         {
           "pair": [
+            "黛蓝 AZURE",
+            "黛蓝深(用地)"
+          ],
+          "dE00": 12.8
+        },
+        {
+          "pair": [
+            "玉绿 JADE",
+            "玉绿浅(用地)"
+          ],
+          "dE00": 19.6
+        },
+        {
+          "pair": [
             "玉绿 JADE",
             "黛蓝深(用地)"
           ],
-          "dE00": 13.2
+          "dE00": 14.7
         },
         {
           "pair": [
@@ -299,13 +285,6 @@
             "玉绿浅(用地)"
           ],
           "dE00": 15.1
-        },
-        {
-          "pair": [
-            "玉绿浅(用地)",
-            "黛蓝深(用地)"
-          ],
-          "dE00": 19.3
         }
       ]
     }
@@ -314,10 +293,18 @@
     {
       "condition": "normal",
       "pair": [
+        "墨 INK",
+        "黛蓝深(用地)"
+      ],
+      "dE00": 18.9
+    },
+    {
+      "condition": "normal",
+      "pair": [
         "鎏金 GOLD",
         "古铜金 BRONZE"
       ],
-      "dE00": 15.1
+      "dE00": 17.2
     },
     {
       "condition": "normal",
@@ -325,15 +312,15 @@
         "鎏金 GOLD",
         "琥珀(用地)"
       ],
-      "dE00": 13.7
+      "dE00": 15.5
     },
     {
       "condition": "normal",
       "pair": [
-        "古铜金 BRONZE",
-        "琥珀(用地)"
+        "黛蓝 AZURE",
+        "玉绿浅(用地)"
       ],
-      "dE00": 15.2
+      "dE00": 19.2
     },
     {
       "condition": "normal",
@@ -341,7 +328,7 @@
         "黛蓝 AZURE",
         "黛蓝深(用地)"
       ],
-      "dE00": 7.5
+      "dE00": 18.2
     },
     {
       "condition": "normal",
@@ -357,7 +344,7 @@
         "朱砂 CINNABAR",
         "鎏金 GOLD"
       ],
-      "dE00": 17.0
+      "dE00": 16.0
     },
     {
       "condition": "deuteranopia",
@@ -365,7 +352,7 @@
         "朱砂 CINNABAR",
         "古铜金 BRONZE"
       ],
-      "dE00": 14.2
+      "dE00": 4.3
     },
     {
       "condition": "deuteranopia",
@@ -373,7 +360,7 @@
         "朱砂 CINNABAR",
         "玉绿 JADE"
       ],
-      "dE00": 8.9
+      "dE00": 16.8
     },
     {
       "condition": "deuteranopia",
@@ -381,7 +368,7 @@
         "鎏金 GOLD",
         "古铜金 BRONZE"
       ],
-      "dE00": 14.7
+      "dE00": 17.2
     },
     {
       "condition": "deuteranopia",
@@ -389,7 +376,7 @@
         "鎏金 GOLD",
         "琥珀(用地)"
       ],
-      "dE00": 7.6
+      "dE00": 13.5
     },
     {
       "condition": "deuteranopia",
@@ -397,15 +384,23 @@
         "古铜金 BRONZE",
         "玉绿 JADE"
       ],
-      "dE00": 12.2
+      "dE00": 13.7
     },
     {
       "condition": "deuteranopia",
       "pair": [
-        "古铜金 BRONZE",
-        "琥珀(用地)"
+        "黛蓝 AZURE",
+        "灰 GRAY"
       ],
-      "dE00": 12.8
+      "dE00": 18.1
+    },
+    {
+      "condition": "deuteranopia",
+      "pair": [
+        "黛蓝 AZURE",
+        "玉绿浅(用地)"
+      ],
+      "dE00": 16.5
     },
     {
       "condition": "deuteranopia",
@@ -413,7 +408,7 @@
         "黛蓝 AZURE",
         "黛蓝深(用地)"
       ],
-      "dE00": 3.8
+      "dE00": 8.6
     },
     {
       "condition": "deuteranopia",
@@ -424,20 +419,12 @@
       "dE00": 8.8
     },
     {
-      "condition": "deuteranopia",
-      "pair": [
-        "玉绿浅(用地)",
-        "黛蓝深(用地)"
-      ],
-      "dE00": 19.6
-    },
-    {
       "condition": "protanopia",
       "pair": [
         "朱砂 CINNABAR",
         "古铜金 BRONZE"
       ],
-      "dE00": 19.5
+      "dE00": 8.2
     },
     {
       "condition": "protanopia",
@@ -445,7 +432,7 @@
         "朱砂 CINNABAR",
         "玉绿 JADE"
       ],
-      "dE00": 12.0
+      "dE00": 9.1
     },
     {
       "condition": "protanopia",
@@ -453,15 +440,7 @@
         "鎏金 GOLD",
         "古铜金 BRONZE"
       ],
-      "dE00": 14.6
-    },
-    {
-      "condition": "protanopia",
-      "pair": [
-        "鎏金 GOLD",
-        "玉绿 JADE"
-      ],
-      "dE00": 14.8
+      "dE00": 16.0
     },
     {
       "condition": "protanopia",
@@ -469,7 +448,7 @@
         "鎏金 GOLD",
         "琥珀(用地)"
       ],
-      "dE00": 8.0
+      "dE00": 14.3
     },
     {
       "condition": "protanopia",
@@ -477,23 +456,7 @@
         "古铜金 BRONZE",
         "玉绿 JADE"
       ],
-      "dE00": 7.4
-    },
-    {
-      "condition": "protanopia",
-      "pair": [
-        "古铜金 BRONZE",
-        "玉绿浅(用地)"
-      ],
-      "dE00": 16.7
-    },
-    {
-      "condition": "protanopia",
-      "pair": [
-        "古铜金 BRONZE",
-        "琥珀(用地)"
-      ],
-      "dE00": 10.1
+      "dE00": 7.5
     },
     {
       "condition": "protanopia",
@@ -501,7 +464,15 @@
         "黛蓝 AZURE",
         "灰 GRAY"
       ],
-      "dE00": 19.5
+      "dE00": 14.1
+    },
+    {
+      "condition": "protanopia",
+      "pair": [
+        "黛蓝 AZURE",
+        "玉绿浅(用地)"
+      ],
+      "dE00": 16.8
     },
     {
       "condition": "protanopia",
@@ -509,15 +480,7 @@
         "黛蓝 AZURE",
         "黛蓝深(用地)"
       ],
-      "dE00": 4.3
-    },
-    {
-      "condition": "protanopia",
-      "pair": [
-        "玉绿 JADE",
-        "琥珀(用地)"
-      ],
-      "dE00": 14.0
+      "dE00": 10.9
     },
     {
       "condition": "protanopia",
@@ -528,12 +491,12 @@
       "dE00": 10.3
     },
     {
-      "condition": "protanopia",
+      "condition": "tritanopia",
       "pair": [
-        "灰 GRAY",
+        "墨 INK",
         "黛蓝深(用地)"
       ],
-      "dE00": 18.7
+      "dE00": 16.3
     },
     {
       "condition": "tritanopia",
@@ -541,7 +504,15 @@
         "朱砂 CINNABAR",
         "鎏金 GOLD"
       ],
-      "dE00": 18.3
+      "dE00": 18.0
+    },
+    {
+      "condition": "tritanopia",
+      "pair": [
+        "朱砂 CINNABAR",
+        "古铜金 BRONZE"
+      ],
+      "dE00": 18.5
     },
     {
       "condition": "tritanopia",
@@ -549,7 +520,7 @@
         "鎏金 GOLD",
         "古铜金 BRONZE"
       ],
-      "dE00": 9.9
+      "dE00": 15.3
     },
     {
       "condition": "tritanopia",
@@ -557,15 +528,7 @@
         "鎏金 GOLD",
         "琥珀(用地)"
       ],
-      "dE00": 7.3
-    },
-    {
-      "condition": "tritanopia",
-      "pair": [
-        "古铜金 BRONZE",
-        "琥珀(用地)"
-      ],
-      "dE00": 15.6
+      "dE00": 12.6
     },
     {
       "condition": "tritanopia",
@@ -573,28 +536,12 @@
         "黛蓝 AZURE",
         "玉绿 JADE"
       ],
-      "dE00": 10.7
+      "dE00": 9.8
     },
     {
       "condition": "tritanopia",
       "pair": [
         "黛蓝 AZURE",
-        "玉绿浅(用地)"
-      ],
-      "dE00": 19.0
-    },
-    {
-      "condition": "tritanopia",
-      "pair": [
-        "黛蓝 AZURE",
-        "黛蓝深(用地)"
-      ],
-      "dE00": 3.4
-    },
-    {
-      "condition": "tritanopia",
-      "pair": [
-        "玉绿 JADE",
         "玉绿浅(用地)"
       ],
       "dE00": 13.3
@@ -602,10 +549,26 @@
     {
       "condition": "tritanopia",
       "pair": [
+        "黛蓝 AZURE",
+        "黛蓝深(用地)"
+      ],
+      "dE00": 12.8
+    },
+    {
+      "condition": "tritanopia",
+      "pair": [
+        "玉绿 JADE",
+        "玉绿浅(用地)"
+      ],
+      "dE00": 19.6
+    },
+    {
+      "condition": "tritanopia",
+      "pair": [
         "玉绿 JADE",
         "黛蓝深(用地)"
       ],
-      "dE00": 13.2
+      "dE00": 14.7
     },
     {
       "condition": "tritanopia",
@@ -614,14 +577,6 @@
         "玉绿浅(用地)"
       ],
       "dE00": 15.1
-    },
-    {
-      "condition": "tritanopia",
-      "pair": [
-        "玉绿浅(用地)",
-        "黛蓝深(用地)"
-      ],
-      "dE00": 19.3
     }
   ],
   "summary": {
@@ -634,6 +589,6 @@
       "tritanopia"
     ],
     "total_checks": 220,
-    "total_fails": 39
+    "total_fails": 36
   }
 }

@@ -24,6 +24,54 @@
       "status": "design_model",
       "statement": "buildings.geojson 为概念体量示意（点式/条式网格生成），不代表建筑高度、容积率、地块拆分或权属结论。",
       "impact": "建筑基底面积与密度仅为设计意图量级参考；法定指标待官方控规条件公开后由专业团队确定。"
+    },
+    {
+      "id": "A-IMPL-001",
+      "status": "conditional_followup",
+      "statement": "分期推进节奏取决于各期进入门与验收门通过情况（blocking_now=false），不设固定年份时间表。",
+      "impact": "实施时序为条件门机制，避免在概念阶段做出不可控的时间承诺。"
+    },
+    {
+      "id": "A-IMPL-002",
+      "status": "conditional_followup",
+      "statement": "RACI 工作包矩阵中的责任主体（R/A/C/I）使用组织类型泛称，具体执行主体在深化阶段由项目协调机制议定。",
+      "impact": "工作包界定权责分工结构，不预设具体企业或单位的法定授权。"
+    },
+    {
+      "id": "A-BUDGET-001",
+      "status": "conceptual_estimate",
+      "statement": "更新项目行动包的成本级（S/M/L）为概念估算类别（S<500万/M 500-2000万/L>2000万），非投资测算或财政承诺。",
+      "impact": "供深化阶段投资策划参考，不构成法定预算分配。"
+    },
+    {
+      "id": "A-AUTH-001",
+      "status": "statutory_boundary",
+      "statement": "本方案全部内容为概念建议与设计构想，未获任何行政审批、规划许可或法定授权。",
+      "impact": "所有空间设计与治理协议在落地前须按法定程序报批。"
+    },
+    {
+      "id": "A-AI-VAL-001",
+      "status": "concept_acceptance_framework",
+      "statement": "AI+ 场景与三个产业测试验证场景的验收条件为概念指引区间，本方案未开展任何现场实测或模型标定。",
+      "impact": "实际验收阈值与测试协议须由实施主体会同专业机构在试点启动前标定公示。"
+    },
+    {
+      "id": "A-INCLUSION-001",
+      "status": "voluntary_standard",
+      "statement": "全场景保留等价非 AI 通道（no-AI-equivalent route）与人工服务界面，智能层失效或停用时服务品质不低于基线。",
+      "impact": "弱势群体权益与公共客厅属性得到结构性制度兜底。"
+    },
+    {
+      "id": "A-GOV-001",
+      "status": "governance_model",
+      "statement": "气数协议（QP-1~QP-7）与八类岗位规格为概念治理建议（v0.1），独立复核者与运营岗互斥以保证复核公信力。",
+      "impact": "提供可复算的治理演练范式，实际运营体制依主管部门决定设立。"
+    },
+    {
+      "id": "A-FAR-HEIGHT-001",
+      "status": "pending_statutory_data",
+      "statement": "容积率（floor_area_ratio）与建筑控制高度（building_height_m）因官方控规指标未公开，保持待补齐状态，不用占位数字替代。",
+      "impact": "避免误导法定审批；控规参数公开后可按标准地块划分复算。"
     }
   ]
 }
