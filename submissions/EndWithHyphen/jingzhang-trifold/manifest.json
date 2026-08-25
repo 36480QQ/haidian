@@ -58,13 +58,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "c951d5d394c1610f10f2a0649b633b2de363fd39064477cb599ba844031b5c30"
+      "sha256": "1576080721a4e203ed3293f9ed84c6785cd58ec62dcee138bbf00b4a41316bba"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "15a476cd00ad90eebfba685d58cbf325b52c68a4d5416730bd25ed7a894cbab5"
+      "sha256": "e299184e8ceda36d207061c203e19b9423cdf5cbc4774b2426b666e0b14e0638"
     },
     {
       "path": "compliance_matrix.json",
@@ -89,7 +89,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8ed6cb677d339477f7b9505f42c73a57a5a80d4f3ab736eb3bf163270767185f"
+      "sha256": "7d32d6815370d5f61a2935c05fa1947e0b7b41f7b16c8de3bd7f74917ead2a23"
     },
     {
       "path": "report/narrative.md",
@@ -101,7 +101,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "1b9da2b22672d01ff6058dce9d99d3a753483cebff69bf649392dcdb13b260cb"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -122,7 +122,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "bc3fe3928b2f1a0a3a3e24b716bd926054e92b1bc66a46e9d1e53382f37ee8df"
+      "sha256": "3e074e8d538a3af77607c43a4a905692b519aa8674e10abcda98176609ac0b54"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2fbb1e12a73d13398ba4be7c39039c9cc5fc19c1175814fd353b507c34764a20"
+      "sha256": "87ab8df3456578fc96b6485752aad6bae587397468c6c97d3826338a51de6649"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "3efe72201ffa5464061b189496c1d0caf33422b2f7d5b72a5da5546512a9ece0"
+      "sha256": "f94cf2071e1d87870feb14474cb1da6cf202cbe3e91b3ef23e8791f9bbc0a73c"
     },
     {
       "path": "assets/figures/key-areas.en.png",

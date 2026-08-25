@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.2.2 - 2026-08-25
+
+- 修复评审阻断项：CI 预览环境无 CJK 字体导致中文 HTML 缺字。四个 HTML（report 中英、visual 中英）内嵌 Noto Sans SC 子集字体（SIL OFL 1.1，2017 字形子集 357KB，base64 data URI，无远程资源）；字体来源与许可登记于 sources.json（NOTO-SANS-SC-FONT）与 report/copyright_statement.md。
+- 内嵌脚本 build/embed_font.py 可复现；gen_visual.py 生成流程已接入。
+
+
 ## v1.2.1 - 2026-08-25
 
 - 修复 visual 首屏回退问题：首屏导语与智脉卡恢复"三次国家基础能力跃迁"与"AI 浓度最高地区之一"表述（中英），并在生成脚本源头修正，避免再生成的回退。
