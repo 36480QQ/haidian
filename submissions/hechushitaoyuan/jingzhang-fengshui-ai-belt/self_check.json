@@ -94,7 +94,7 @@
       "ai_package_stages": {
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt": "formal"
       },
-      "total_bytes": 21867510,
+      "total_bytes": 20576194,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -171,15 +171,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 45,
+        "known_metric_refs_required": 48,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 13,
+          "source": 17,
           "standard": 6,
-          "depth": 6,
+          "depth": 21,
           "data": 10,
-          "metric": 19
+          "metric": 22
         }
       }
     },

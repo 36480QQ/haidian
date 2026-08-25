@@ -630,6 +630,48 @@
       "assumptions": [
         "例外不造成信息丢失：图件全部类别带文字冗余编码；整改说明见正文无障碍专节。"
       ]
+    },
+    "work_package_count": {
+      "status": "known",
+      "value": 15,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(conditional RACI work packages WP-01..WP-15)",
+      "confidence": "high",
+      "assumptions": [
+        "工作包为概念深化框架建议（blocking_now=false），责任主体采用组织类型泛称。"
+      ]
+    },
+    "no_ai_equivalent_route_count": {
+      "status": "known",
+      "value": 13,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(scenario cards with explicit no-AI equivalent route) = 13",
+      "confidence": "high",
+      "assumptions": [
+        "全部 13 张场景卡均包含人工接管与无 AI 通道。"
+      ]
+    },
+    "degradation_recovery_hours": {
+      "status": "known",
+      "value": 24,
+      "unit": "hours",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "concept SLA: max hours to restore full base public space functionality after AI subsystem offline",
+      "confidence": "medium",
+      "assumptions": [
+        "降级恢复时限为概念运营承诺指标，深化阶段由运营主体细化。"
+      ]
     }
   }
 }

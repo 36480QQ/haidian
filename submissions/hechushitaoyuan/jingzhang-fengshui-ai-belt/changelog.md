@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v1.4 - 2026-08-25
+
+96 档深度证据闭环与冲分增强轮（S0-S5 全量应用）。
+
+- **S0 upstream main 同步**：快进合并 upstream/main（`c196d5c57`），同步上游 473 提交，本地自检/评审脚本获得最新 Schema 0.2.1 与 UTF-8/LF 加固。
+- **S1 AI 量化验收框架与机器可查标签织入**：AI 创新生态章新增「验收条件量化框架（概念口径）」表格，覆盖三个产业测试场景的 7 个量化验收维度（冲突率、净宽保持率、MAE 相对误差、复现性、推理能耗、端侧时延、断网可用度），全文 `[depth:*]` 机器可查标签从 6 处大幅提升至 21 处，`[standard:*]` 标签 6 处，`[metric:*]` 标签 22 处；双语提案标签 100% 精确对齐。
+- **S2 条件式 RACI 实施工作包矩阵**：分期计划章新增「条件式实施工作包矩阵（概念建议 · Schema 0.2.1 conditional_followups）」，包含 WP-01 至 WP-15 共 15 项工作包（RACI 角色、trigger_condition、90 天里程碑、S/M/L 预算级）；`assumptions.json` 扩充至 12 条结构化假设（涵盖分期条件门、工作包组织类型、概念预算级、AI 验收框架与控规待补齐说明）；`metrics.json` 新增 `work_package_count=15`。
+- **S3 资产权利台账与来源三态使用纪律**：`report/copyright_statement.md` 全面重构为 8.8KB 结构化资产权利台账，逐路径说明 11 对 PNG、4 份 PDF、多媒体（mp3/mp4/vtt）、Web 交互、Noto Sans SC (OFL-1.1) 字体与 OpenStreetMap (ODbL-1.0) 数据合规；`sources.json` 扩充至 19 项来源条目并与正文 `[source:*]` 引用精确对齐。
+- **S4 设计叙事深度扩写**：`report/narrative.md` 从 462B 扩写至 4.5KB，包含概念源起、四大关键设计决策、六步 AI 协作流程、五项设计局限与诚实声明。
+- **S5 包容性硬指标声明**：正文显式承诺等价非 AI 路径（no-AI-equivalent route，`no_ai_equivalent_route_count=13`）与降级不劣化机制（refuse-not-to-degrade，`degradation_recovery_hours=24`），并在场景卡、气数协议、条件门与岗位规格中四重闭环。
+
 ## v1.3 - 2026-08-23
 
 外部上下文与证据指针轮（A+B+C+E），并按几何实证统一重点区面积口径。
