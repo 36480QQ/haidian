@@ -179,16 +179,46 @@ Responding to review attention on "verification results of AI-based diagnosis of
 | Comparison dimension | Scheme A (continue current) | Scheme B (this proposal · balanced) | Scheme C (high-density clustering) | Note |
 | --- | --- | --- | --- | --- |
 | Land-use structure | Continue existing residential/commercial | Seven functions organized north-south (research/park/commercial/culture/road/plaza/community) | Research and commercial clustered at the three cores | Concept comparison; pending official regulatory calibration |
-| Development capacity (FAR concept range) | Maintain current intensity (low) | Zhongzhiyuan 1.5-2.5 / Origin 2.0-3.0 / Dazhongsi 4.0-6.0 | +0.5-1.0 at each core | Non-verified values; see "Indicator System" chapter |
+| Development capacity (sensitivity test values) | Maintain current intensity (low) | Zhongzhiyuan 1.5-2.5 / Origin 2.0-3.0 / Dazhongsi 4.0-6.0 | +0.5-1.0 at each core | Test-only values; see "Sensitivity Testing and Parameter Study" chapter, not recommendations |
 | Green ratio (green_ratio) | Current green ratio (baseline to be measured) | 28.2% (recomputed from green_space.geojson) | Green yields to high-intensity development (<25%) | green_ratio as constraint; Scheme C triggers an ecological-constraint warning |
 | Public-space ratio (public_space_ratio) | Current caliber (baseline to be measured) | 14.9% (recomputed from public_space.geojson) | 12-14% (plazas and living rooms compressed) | public_space_ratio as constraint |
 | Decision basis | Preserve status quo | Ecological constraints + industry clustering balance | Economic intensity first | This proposal adopts B, balancing ecology and clustering |
 
-**Third, micro-simulation method (concept demonstration).** Taking Dazhongsi station four-quadrant pedestrian connectivity as an example: using "crossing facilities count, station exit distribution, road class, slow-traffic network density" as inputs, it outputs a four-quadrant connectivity score and improvement priority — the concept demonstration outputs "current score 2.4/5 → post-scheme 4.1/5 (new east-west crossing + station integration)", and supports the JZ-04 renewal-project KPI [data:geometry/roads.geojson#ROAD-001][depth:traffic_rail_slow_parking]. This demonstration is methodological; formal conclusions await field data and engineering conditions.
+**Third, micro-simulation method (verifiable demonstration).** Taking Dazhongsi station four-quadrant pedestrian connectivity as an example, a **transparent scoring model** is used (not field-measured simulation; all inputs carry caliber and source):
+
+| Scoring factor | Weight | Current input (caliber) | Post-scheme input |
+| --- | --- | --- | --- |
+| Crossing-facility completeness | 0.30 | 2/4 quadrants have crossings (1 point/quadrant) | 4/4 (new east-west crossing) |
+| Station-exit coverage | 0.25 | 2 exits (each covering 1 quadrant) | 4 (station integration) |
+| Slow-traffic network density | 0.25 | Low (1.2 km/km², concept caliber) | Medium (3.0 km/km², scheme intent) |
+| Road-class interference | 0.20 | High (arterial crossing constrained) | Medium (signal priority + raised crossing) |
+
+Scoring formula: `Connectivity = Σ(weight_i × score_i)`, each factor 1-5; example: current = 0.30×2 + 0.25×2 + 0.25×2 + 0.20×3 = **2.4/5**; post-scheme = 0.30×4 + 0.25×4 + 0.25×4 + 0.20×5 = **4.1/5**. Weights and inputs are **review-verifiable concept calibers**, not field measurements; formal conclusions await station engineering conditions and measured data (sample period and error range to be defined) [data:geometry/roads.geojson#ROAD-001][depth:traffic_rail_slow_parking]. This demonstration only supports the JZ-04 renewal-project KPI methodologically and **does not constitute a validated simulation or optimization result**.
 
 All evidence and method demonstrations above are labeled as concept-level and do not change the compliance boundaries of "FAR/height unknown, provisional boundaries, needs_review sources" [depth:risk_missing_data].
 
 **Rail-to-intelligence-track spatial prototypes (v0.9 addition, responding to "the metaphor must land in measurable prototypes")**: beyond naming and Logo geometry, the proposal converts the "steel rail → intelligence track" motif into two measurable spatial prototypes. **First, the rail-rhythm street section**: the sleeper spacing of the Jing-Zhang Railway (about 0.6 m) is used as a modular base so that street-furniture spacing (slow-traffic lighting 15-20 m, seating 30 m, tree pits 15-20 m) are integer multiples of the sleeper rhythm, making "rail rhythm" a measuring grid for street furniture rather than decoration [depth:height_massing_character][metric:landmark_count]. **Second, sleeper-to-intelligent-node unit**: "sleepers carry the rail" is translated into "nodes carry data" — each intelligent-node unit (Safety-Governance Sandbox, Edge-Compute Station, City Agent Sandbox) is defined by the three states "sense-decide-feedback", corresponding to the sleeper's three states "carry-buffer-transfer", forming an isomorphic metaphor from physical structure to data structure [depth:municipal_new_infrastructure][metric:scenario_card_count]. Both prototypes are concept design language, labeled as concept suggestions, for professional teams to adopt or reject during deepening [source:AGENT-TASKBOOK].
+
+## Sensitivity Testing and Parameter Study (v0.11 restructure; NOT planning recommendations)
+
+Review noted that control values conflict with the boundary of "no floor-area-ratio / building-height control conclusions without official conditions". To respond, this proposal moves all control-parameter ranges that previously appeared in the main body into this standalone chapter, clarifying their nature:
+
+> **Everything in this chapter is research parameter testing — not planning recommendations, control conditions or approval conclusions. Once official regulatory plans, road redlines and aviation/landscape/heritage conditions are released, this table is entirely superseded by verified values.** [standard:MOHURD-CONTROL-DETAILED-PLANNING][depth:development_intensity_controls]
+
+**Purpose**: only to test how land/green/public-space ratios respond if the three key areas adopt different intensity strategies, supporting scheme-selection discussion; it has no control effect.
+
+| Parameter (test-only) | Zhongzhiyuan | AI Origin | Dazhongsi | Note |
+| --- | --- | --- | --- | --- |
+| FAR (test value) | 1.5-2.5 | 2.0-3.0 | 4.0-6.0 | Test only; not a recommendation |
+| Building height cap (test) | ≤ 45 m | ≤ 60 m | ≤ 80 m | Aviation/landscape height unverified |
+| Building density (test) | 30-40% | 35-45% | 45-55% | Pending current buildings/ownership calibration |
+| Green-ratio floor (test) | ≥ 30% | ≥ 25% | ≥ 20% | Echoes 28.2% whole-site green_ratio |
+| Setback (road/river) | 5-10 m; Qinghe blue line per flood control | 5-10 m | 5-10 m | Pending redlines and flood conditions |
+| Street-wall ratio | 40-60% | 30-50% | 50-70% | Frontage control testing |
+| Population capacity | to calibrate | to calibrate | to calibrate | No official population data; no estimate |
+| Intensity zoning | Low - garden | Mid - near-campus | High - urban | Echoes the three-core differentiated positioning |
+
+**Sensitivity conclusion (concept caliber)**: when Dazhongsi is tested at high intensity (FAR 4.0-6.0), its squeeze on green/public-space ratios can be compensated by "mixed use + vertical greening" (test-model response); this is a parameter-research response and constitutes no parcel-level control basis [depth:metrics_recalculation].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -242,20 +272,7 @@ For the global AI activity system and long-term operation, the proposal outlines
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-The indicator system covers spatial, control and performance metrics; every known metric is recomputable from GeoJSON or trusted sources, and unknown metrics state reasons and preconditions [depth:metrics_recalculation][metric:site_area_sqm]. The granularity of the indicators echoes the trend of "city-intelligence evaluation descending to parcel and block level, moving from seeing space to understanding space" [source:WU-ZHIQIANG-2026]; every known metric can be recomputed to a concrete layer feature, supporting a verifiable and traceable evidence chain. Spatial metrics include site_area_sqm (EPSG:4548 projected area of the submitted boundary, medium confidence), green_ratio (green area / boundary area), public_space_ratio (public-space area / boundary area), building_footprint_area_sqm (concept building footprint, low confidence) and road_network_length_m (total concept corridor length) [metric:green_ratio][metric:public_space_ratio][metric:building_footprint_area_sqm][metric:road_network_length_m]. Control metrics floor_area_ratio and building_height_m are listed as unknown because official regulatory conditions are absent, to be recomputed after formal data release [metric:floor_area_ratio]. To support professional deepening, the proposal provides **concept ranges for the eight regulatory-plan indicators** (non-verified values, serving only as design-depth demonstration for Scheme B; this does not conflict with the unknown status in the indicator system, and official regulatory values replace them entirely once released):
-
-| Regulatory indicator | Zhongzhiyuan (concept) | AI Origin (concept) | Dazhongsi (concept) | Caliber note |
-| --- | --- | --- | --- | --- |
-| FAR | 1.5-2.5 | 2.0-3.0 | 4.0-6.0 | Garden innovation low intensity / near-campus mid intensity / urban intelligent economy high intensity |
-| Building height cap | ≤ 45 m | ≤ 60 m | ≤ 80 m | Echoes Fifth Ring gateway skyline and aviation height (unverified) |
-| Building density | 30-40% | 35-45% | 45-55% | Concept range; pending current-building and ownership calibration |
-| Green ratio | ≥ 30% | ≥ 25% | ≥ 20% | Echoes the 28.2% whole-site green_ratio |
-| Setback (road/river) | Road 5-10 m; Qinghe blue-line setback per flood control | Road 5-10 m | Road 5-10 m | Pending road redlines and flood-control conditions |
-| Street wall ratio | 40-60% | 30-50% | 50-70% | Zhongzhiyuan/Origin control frontage; Dazhongsi strong frontage |
-| Population capacity | to calibrate | to calibrate | to calibrate | No official population data; no estimate |
-| Intensity zoning | Low - garden | Mid - near-campus | High - urban | Echoes the differentiated positioning of the three cores |
-
-These concept ranges are also reflected in the development-capacity row of Scheme B in the "AI-Assisted Evidence and Scheme Comparison" chapter as a comparable input for scheme selection [depth:development_intensity_controls][metric:floor_area_ratio]. Performance metrics include key_area_count=3, scenario_card_count=10, persona_count=5, landmark_count=3 and renewal_project_count=6 [metric:key_area_count][metric:scenario_card_count][metric:persona_count][metric:landmark_count][metric:renewal_project_count], all supported by the package body and layers.
+The indicator system covers spatial, control and performance metrics; every known metric is recomputable from GeoJSON or trusted sources, and unknown metrics state reasons and preconditions [depth:metrics_recalculation][metric:site_area_sqm]. The granularity of the indicators echoes the trend of "city-intelligence evaluation descending to parcel and block level, moving from seeing space to understanding space" [source:WU-ZHIQIANG-2026]; every known metric can be recomputed to a concrete layer feature, supporting a verifiable and traceable evidence chain. Spatial metrics include site_area_sqm (EPSG:4548 projected area of the submitted boundary, medium confidence), green_ratio (green area / boundary area), public_space_ratio (public-space area / boundary area), building_footprint_area_sqm (concept building footprint, low confidence) and road_network_length_m (total concept corridor length) [metric:green_ratio][metric:public_space_ratio][metric:building_footprint_area_sqm][metric:road_network_length_m]. Control metrics floor_area_ratio and building_height_m are listed as unknown because official regulatory conditions are absent, to be recomputed after formal data release [metric:floor_area_ratio]. To support professional deepening, the proposal provides  Performance metrics include key_area_count=3, scenario_card_count=10, persona_count=5, landmark_count=3 and renewal_project_count=6 [metric:key_area_count][metric:scenario_card_count][metric:persona_count][metric:landmark_count][metric:renewal_project_count], all supported by the package body and layers.
 
 ![Core metric recalculation and evidence chain diagram](assets/figures/metrics-evidence.png)
 

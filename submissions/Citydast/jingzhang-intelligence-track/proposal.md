@@ -181,16 +181,46 @@ iteration: "v0.1"
 | 比较维度 | 方案 A（现状延续） | 方案 B（本方案·均衡） | 方案 C（高密度集聚） | 说明 |
 | --- | --- | --- | --- | --- |
 | 用地结构 | 以既有住宅/商业延续为主 | 七类功能南北分段（科研/公园/商业/文化/道路/广场/社区） | 科研与商业高度集聚于三核 | 概念方案比较，待官方控规校核 |
-| 开发容量（FAR 概念区间） | 维持现状强度（低） | 众智园 1.5-2.5 / 原点 2.0-3.0 / 大钟寺 4.0-6.0 | 三核各提升 0.5-1.0 | 非审定值，见「指标体系」章 |
+| 开发容量（敏感性测试值） | 维持现状强度（低） | 众智园 1.5-2.5 / 原点 2.0-3.0 / 大钟寺 4.0-6.0 | 三核各提升 0.5-1.0 | 仅测试用，见「敏感性测试与参数研究」章，非建议值 |
 | 绿地比例（green_ratio） | 现状绿地率（基线待测） | 28.2%（green_space.geojson 复算） | 绿地让位于高强度开发（<25%） | 以 green_ratio 为约束，方案 C 触发生态约束警告 |
 | 公共空间比例（public_space_ratio） | 现状口径（基线待测） | 14.9%（public_space.geojson 复算） | 12-14%（压缩广场与客厅） | 以 public_space_ratio 为约束 |
 | 决策依据 | 保现状 | 生态约束 + 产业集聚平衡 | 经济强度优先 | 本方案取 B，兼顾生态与集聚 |
 
-**第三，微仿真方法（概念演示）**。以大钟寺站四象限步行连通性为例：以「人行过街设施数、站点出入口分布、道路等级、慢行网络密度」为输入，输出四象限连通度评分与改善优先级——概念演示输出「现状评分 2.4/5 → 方案后 4.1/5（新增东西向过街 + 站点一体化）」，并作为 JZ-04 更新项目 KPI 的仿真支撑 [data:geometry/roads.geojson#ROAD-001][depth:traffic_rail_slow_parking]。该演示为方法性示意，正式结论待现场数据与工程条件。
+**第三，微仿真方法（可复核演示）**。以大钟寺站四象限步行连通性为例，采用**透明评分模型**（非实测仿真，输入均标注口径与来源）：
+
+| 评分因子 | 权重 | 现状输入（口径） | 方案后输入 |
+| --- | --- | --- | --- |
+| 过街设施完备度 | 0.30 | 2/4 象限有过街（1 分/象限） | 4/4（新增东西向过街） |
+| 站点出入口覆盖 | 0.25 | 2 出入口（各覆盖 1 象限） | 4（站点一体化改造） |
+| 慢行网络密度 | 0.25 | 低（1.2 km/km²，概念口径） | 中（3.0 km/km²，方案意图） |
+| 道路等级干扰 | 0.20 | 高干扰（主干路过街受限） | 中（信号优先+抬升过街） |
+
+评分公式：`Connectivity = Σ(weight_i × score_i)`，每因子 1–5 分；示例：现状 = 0.30×2 + 0.25×2 + 0.25×2 + 0.20×3 = **2.4/5**；方案后 = 0.30×4 + 0.25×4 + 0.25×4 + 0.20×5 = **4.1/5**。权重与输入为**评审可复核的概念口径**，非现场实测；正式结论待站点工程条件与实测数据（样本周期、误差范围待定）[data:geometry/roads.geojson#ROAD-001][depth:traffic_rail_slow_parking]。该演示仅作为 JZ-04 更新项目 KPI 的方法支撑，**不构成已核验仿真或优化结果**。
 
 上述实证与方法演示均标注为概念口径，不改变「FAR/高度 unknown、边界 provisional、来源 needs_review」的合规边界 [depth:risk_missing_data]。
 
 **钢轨→智能轨迹的空间原型（v0.9 新增，回应「隐喻需落到可量度原型」）**：在命名与 Logo 几何之外，方案把「钢轨→智能轨迹」母题转化为两个可量度的空间原型——**其一，钢轨节律街道剖面**：以京张铁路轨枕间距（约 0.6 m）的倍率关系生成街道设施模数（慢行带照明 15–20 m、座椅 30 m、树池 15–20 m 均取轨枕节律的整数倍），使「钢轨节律」成为街区家具的度量网格而非装饰语汇 [depth:height_massing_character][metric:landmark_count]；**其二，轨枕→智能节点单元**：把「轨枕承轨」转译为「节点承数据」——每个智能节点单元（安全治理沙盒、端侧算力驿站、城市智能体沙盒）按「感知—决策—反馈」三态定义，与轨枕的「承载—缓冲—传力」三态对应，形成从物理结构到数据结构的同构隐喻 [depth:municipal_new_infrastructure][metric:scenario_card_count]。两原型均为概念设计语言，标注为概念建议，供专业团队在深化中采用或否决 [source:AGENT-TASKBOOK]。
+
+## 敏感性测试与参数研究（v0.11 重构；非规划建议）
+
+评审指出控制性数值在缺少官方条件时与「禁止给出容积率/建筑高度等项目控制结论」的边界存在张力。为回应此问题，本方案将此前出现在正文的**控制性参数区间全部移入本独立章节**，明确其性质：
+
+> **本章节全部内容为研究性参数测试，不是规划建议、控制条件或审批结论；官方控规、道路红线、航空/景观/文保条件发布后，本表全部废弃并以审定值替代。** [standard:MOHURD-CONTROL-DETAILED-PLANNING][depth:development_intensity_controls]
+
+**目的**：仅为测试「若三处重点区采用不同强度策略，用地/绿地/公共空间比例如何响应」的敏感性，服务方案选择讨论，不产生任何控制效力。
+
+| 参数（测试用） | 众智园 | AI 原点 | 大钟寺 | 说明 |
+| --- | --- | --- | --- | --- |
+| 容积率 FAR（测试值） | 1.5–2.5 | 2.0–3.0 | 4.0–6.0 | 仅测试用，非建议值 |
+| 建筑限高（测试值） | ≤ 45 m | ≤ 60 m | ≤ 80 m | 未核验航空/景观限高 |
+| 建筑密度（测试值） | 30–40% | 35–45% | 45–55% | 待现状建筑与权属校核 |
+| 绿地率下限（测试值） | ≥ 30% | ≥ 25% | ≥ 20% | 与 green_ratio 28.2% 全域口径呼应 |
+| 退线（道路/河道） | 5–10 m；清河蓝线按防洪 | 5–10 m | 5–10 m | 待红线与防洪条件 |
+| 贴线率（沿街） | 40–60% | 30–50% | 50–70% | 界面控制测试 |
+| 人口容量 | 待校核 | 待校核 | 待校核 | 无官方人口数据，不做估算 |
+| 强度分区 | 低·花园型 | 中·近校型 | 高·城市型 | 呼应「三核」差异化定位 |
+
+**敏感性结论（概念口径）**：当大钟寺按高强度（FAR 4.0–6.0）测试时，其对绿地/公共空间比例的挤压可通过「复合利用 + 立体绿化」补偿（测试模型响应），该结论为参数研究响应，不构成任何地块控制依据 [depth:metrics_recalculation]。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -244,20 +274,7 @@ iteration: "v0.1"
 
 ## 指标体系、面积复算与合规矩阵
 
-指标体系覆盖空间指标、管控指标与绩效指标三类，全部 known 指标均可从 GeoJSON 或可信来源复算，unknown 指标注明原因与前置条件 [depth:metrics_recalculation][metric:site_area_sqm]。指标颗粒度呼应「城市智能评估下沉至地块街坊、从看见空间到理解空间」的评价趋势 [source:WU-ZHIQIANG-2026]，所有 known 指标均可复算到具体图层要素，支撑可验证、可追溯的证据链。空间指标包括：site_area_sqm（EPSG:4548 投影复算的提交边界面积，medium 置信度）、green_ratio（绿地面积/边界面积）、public_space_ratio（公共空间面积/边界面积）、building_footprint_area_sqm（概念建筑基底面积，low 置信度）、road_network_length_m（概念廊道总长）[metric:green_ratio][metric:public_space_ratio][metric:building_footprint_area_sqm][metric:road_network_length_m]。管控指标 floor_area_ratio 与 building_height_m 因官方控规条件缺失列为 unknown，待正式资料发布后补算 [metric:floor_area_ratio]。为支撑专业团队深化，方案提供**控规八项指标的概念区间**（非审定值，仅作为方案 B 的设计深度演示，与「指标体系」章节的 unknown 状态不冲突；官方控规发布后全部以审定值替代）：
-
-| 控规指标 | 众智园（概念区间） | AI 原点（概念区间） | 大钟寺（概念区间） | 口径说明 |
-| --- | --- | --- | --- | --- |
-| 容积率 FAR | 1.5–2.5 | 2.0–3.0 | 4.0–6.0 | 花园型创新街区低强度 / 近校转化中强度 / 城市型智能经济高强度 |
-| 建筑限高 | ≤ 45 m | ≤ 60 m | ≤ 80 m | 呼应五环门户天际线控制与航空限高（未核验） |
-| 建筑密度 | 30–40% | 35–45% | 45–55% | 概念区间，待现状建筑与权属校核 |
-| 绿地率 | ≥ 30% | ≥ 25% | ≥ 20% | 与 green_ratio 28.2% 全域口径呼应 |
-| 退线（道路/河道） | 道路退线 5–10 m、清河蓝线退线按防洪 | 道路退线 5–10 m | 道路退线 5–10 m | 待道路红线与防洪条件确认 |
-| 贴线率（沿街） | 40–60% | 30–50% | 50–70% | 众智园/原点控临街界面，大钟寺强界面 |
-| 人口容量 | 待校核 | 待校核 | 待校核 | 无官方人口/床位数据，不做估算 |
-| 强度分区 | 低强度·花园型 | 中强度·近校型 | 高强度·城市型 | 呼应「三核」差异化定位 |
-
-该概念区间已同步进「AI 辅助实证与方案比较」章节的方案 B 开发容量行，作为方案选择的可比较输入 [depth:development_intensity_controls][metric:floor_area_ratio]。绩效指标包括 key_area_count=3、scenario_card_count=10、persona_count=5、landmark_count=3、renewal_project_count=6 [metric:key_area_count][metric:scenario_card_count][metric:persona_count][metric:landmark_count][metric:renewal_project_count]，全部由提交包正文与图层支撑。
+指标体系覆盖空间指标、管控指标与绩效指标三类，全部 known 指标均可从 GeoJSON 或可信来源复算，unknown 指标注明原因与前置条件 [depth:metrics_recalculation][metric:site_area_sqm]。指标颗粒度呼应「城市智能评估下沉至地块街坊、从看见空间到理解空间」的评价趋势 [source:WU-ZHIQIANG-2026]，所有 known 指标均可复算到具体图层要素，支撑可验证、可追溯的证据链。空间指标包括：site_area_sqm（EPSG:4548 投影复算的提交边界面积，medium 置信度）、green_ratio（绿地面积/边界面积）、public_space_ratio（公共空间面积/边界面积）、building_footprint_area_sqm（概念建筑基底面积，low 置信度）、road_network_length_m（概念廊道总长）[metric:green_ratio][metric:public_space_ratio][metric:building_footprint_area_sqm][metric:road_network_length_m]。管控指标 floor_area_ratio 与 building_height_m 因官方控规条件缺失列为 unknown，待正式资料发布后补算 [metric:floor_area_ratio]。绩效指标包括 key_area_count=3、scenario_card_count=10、persona_count=5、landmark_count=3、renewal_project_count=6 [metric:key_area_count][metric:scenario_card_count][metric:persona_count][metric:landmark_count][metric:renewal_project_count]，全部由提交包正文与图层支撑。
 
 ![核心指标复算与证据链图](assets/figures/metrics-evidence.png)
 
