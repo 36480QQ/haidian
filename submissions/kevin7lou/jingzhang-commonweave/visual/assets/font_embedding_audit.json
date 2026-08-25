@@ -5,9 +5,9 @@
   "source": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
   "license": "SIL Open Font License 1.1",
   "subset_unique_character_count": 970,
-  "woff2_subset_count": 6,
-  "woff2_bytes": 137548,
-  "woff2_combined_sha256": "909737c91efebcdbc38a29decbafa3b8dd839553796e7f7d0851e33106818173",
+  "woff2_subset_count": 1,
+  "woff2_bytes": 239836,
+  "woff2_combined_sha256": "1f513840009ea10911f9cda0dfc4f0fa987e4f04eca7a401bdc6158247f3107e",
   "targets": [
     "report/proposal.html",
     "report/proposal.en.html",
@@ -15,8 +15,9 @@
     "visual/index.en.html"
   ],
   "offline_rule": "embedded data URI; no runtime network request",
-  "visible_non_ascii_codepoints": 875,
-  "visible_non_ascii_codepoints_missing_from_embedded_cmap": 0,
-  "glyph_coverage_verification": "PASS: fontTools cmap union covers every non-ASCII codepoint rendered as visible text across all four HTML files, including superscript, middle dot, multiplication sign, dashes, quotation marks and arrows",
-  "browser_verification": "PASS in Google Chrome headless at 1440x1600: fonts loaded, all images loaded, zero failed or remote requests, and zero page errors across both reports and both 18-slide decks"
+  "visible_codepoints": 949,
+  "visible_codepoints_missing_from_embedded_cmap": 0,
+  "glyph_coverage_verification": "PASS: the single embedded variable WOFF2 cmap covers every visible codepoint across all four HTML files",
+  "screenshot_race_control": "one WOFF2 face with no unicode-range split replaces six independently loaded faces because the organizer renderer invokes chromium --screenshot without waiting for document.fonts.ready",
+  "browser_verification": "PASS with the organizer's exact direct Chrome flags at 1440x1600: --headless --disable-gpu --no-sandbox --hide-scrollbars --window-size=1440,1600 --screenshot; both reports and both 18-slide decks rendered without square missing-glyph boxes or crop"
 }
