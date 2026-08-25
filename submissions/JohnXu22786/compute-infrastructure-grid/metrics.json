@@ -104,9 +104,24 @@
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "count(land_use.geojson features)",
+      "formula": "count(land_use.geojson features) — GeoJSON 分区要素数，与聚合类别数（land_use_class_count=5）含义不同、不互替",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "27 为分区要素计数（含 5 个国标代码类别 0802/1401/0902/0901/0701）；图形/正文/HTML 中只作“分区要素数”使用，不与类别占比混用。"
+      ]
+    },
+    "land_use_class_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "count(distinct land_use_code in land_use.geojson) — 用地聚合类别数（国标 0802/1401/0902/0901/0701）",
+      "confidence": "high",
+      "assumptions": [
+        "全包用地统计单一口径：科研(0802)/公园绿地(1401)/商务金融(0902)/商业(0901)/城镇住宅(0701) 五类；占比见 land_use_*_share。"
+      ]
     },
     "building_unit_count": {
       "status": "known",
