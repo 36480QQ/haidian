@@ -41,7 +41,7 @@ DIMENSIONS = [
 
 def valid_review() -> dict:
     return {
-        "schema_version": "0.2.0",
+        "schema_version": "0.2.1",
         "submission_dir": SUBMISSION_REL,
         "recommendation": "formal-review-ready",
         "can_enter_formal_review": True,
@@ -225,6 +225,11 @@ class AIReviewSubmissionTests(unittest.TestCase):
             blocking_now = followup_properties["blocking_now"]
             self.assertEqual("boolean", blocking_now["type"])
             self.assertIs(False, blocking_now["const"])
+            repairs_schema = api_schema["properties"]["rubric_scores"]["items"][
+                "properties"
+            ]["required_repairs_zh"]
+            self.assertEqual(4, repairs_schema["maxItems"])
+            self.assertEqual(600, repairs_schema["items"]["maxLength"])
             self.assertFalse(client.payload["store"])
             content = client.payload["input"][0]["content"]
             self.assertTrue(any(item["type"] == "input_image" for item in content))
@@ -264,6 +269,83 @@ class AIReviewSubmissionTests(unittest.TestCase):
             self.assertEqual("request-changes", result["review"]["recommendation"])
             self.assertTrue(any("1 项详细 required repairs" in item for item in result["review"]["required_next_actions_zh"]))
             self.assertEqual("do-not-publish", result["decision"]["publication_recommendation"])
+            comment = result["review"]["pr_comment_markdown"]
+            self.assertIn("## 当前版本逐维修复项（阻断本轮）", comment)
+            self.assertIn("### 任务书相关性", comment)
+            self.assertIn("1. 补充任务书条款逐项对应表。", comment)
+
+    def test_required_repair_budget_fails_closed(self) -> None:
+        review = valid_review()
+        review["rubric_scores"][0]["required_repairs_zh"] = [
+            f"当前版本修复项 {index}。" for index in range(5)
+        ]
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            with self.assertRaisesRegex(ReviewError, "does not match advisory schema"):
+                run_ai_review(
+                    ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                    "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+                )
+
+    def test_required_repair_length_budget_fails_closed(self) -> None:
+        review = valid_review()
+        review["rubric_scores"][0]["required_repairs_zh"] = ["修" * 601]
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            with self.assertRaisesRegex(ReviewError, "does not match advisory schema"):
+                run_ai_review(
+                    ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                    "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+                )
+
+    def test_comment_publishes_every_repair_without_mixing_followups_or_gaps(self) -> None:
+        review = valid_review()
+        review["rubric_scores"][0]["required_repairs_zh"] = [
+            "补充任务书条款逐项对应表。",
+            "说明目标与任务书约束的取舍。",
+        ]
+        review["rubric_scores"][1]["required_repairs_zh"] = ["补充同类方案差异证据。"]
+        review["rubric_scores"][0]["risks_zh"] = ["任务书映射仍可能存在解释风险。"]
+        review["conditional_followups"] = [
+            {
+                "action_zh": "官方边界发布后复算空间指标。",
+                "blocking_now": False,
+                "trigger": "official-data-available",
+                "owner": "participant",
+            }
+        ]
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            result = run_ai_review(
+                ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+            )
+
+        comment = result["review"]["pr_comment_markdown"]
+        repair_section = comment.split("## 当前版本逐维修复项（阻断本轮）", 1)[1].split(
+            "## 数据缺口", 1
+        )[0]
+        self.assertIn("### 任务书相关性", repair_section)
+        self.assertIn("1. 补充任务书条款逐项对应表。", repair_section)
+        self.assertIn("2. 说明目标与任务书约束的取舍。", repair_section)
+        self.assertIn("### 原创性", repair_section)
+        self.assertIn("1. 补充同类方案差异证据。", repair_section)
+        self.assertNotIn("官方边界仍未提供", repair_section)
+        self.assertNotIn("任务书映射仍可能存在解释风险", repair_section)
+        self.assertNotIn("官方边界发布后复算空间指标", repair_section)
+        self.assertIn("## 条件触发的后续事项（不阻断本轮）", comment)
+        self.assertTrue(
+            any(
+                "3 项详细 required repairs" in item
+                for item in result["review"]["required_next_actions_zh"]
+            )
+        )
 
     def test_mandatory_hits_force_rejection_even_if_model_marks_pass(self) -> None:
         review = valid_review()
@@ -502,6 +584,7 @@ class AIReviewSubmissionTests(unittest.TestCase):
             result["review"]["pr_comment_markdown"],
         )
         self.assertIn("当前阻断：否", result["review"]["pr_comment_markdown"])
+        self.assertNotIn("## 当前版本逐维修复项（阻断本轮）", result["review"]["pr_comment_markdown"])
 
     def test_conditional_followup_cannot_set_blocking_now_true(self) -> None:
         review = valid_review()
