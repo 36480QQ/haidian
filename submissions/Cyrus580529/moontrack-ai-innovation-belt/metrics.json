@@ -465,6 +465,129 @@
       "assumptions": [
         "A-PH-001: the 150 m radius is a survey working area, not an engineering redline."
       ]
+    },
+    "min_connection_to_link_all_facilities_m": {
+      "status": "known",
+      "value": 596.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "sum(edge lengths of the minimum connection tree over the five components that contain the elderly-care facilities; Steiner approximation via metric closure + MST on the component graph, EPSG:4548)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-SVC-001: the tree is a 2-approximation of the Steiner optimum, so 596 m is an upper bound on the true minimum."
+      ]
+    },
+    "facilities_on_network_after_connection": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(elderly-care facilities whose nearest node is within 15 min of the depot after adding the connection tree)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-SVC-002: 'on the network' here ignores the terminal gap; under a 100 m terminal test the count is still 0."
+      ]
+    },
+    "depot_worst_case_minutes": {
+      "status": "known",
+      "value": 14.0,
+      "unit": "min",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "min over candidate nodes of max over facilities of network_distance / (15 km/h); minimax depot siting",
+      "confidence": "medium",
+      "assumptions": [
+        "A-NET-004: the result depends on the candidate depot set.",
+        "A-SVC-003: travel time uses the 15 km/h legal ceiling as a constant, ignoring stops, signals and queueing."
+      ]
+    },
+    "reachable_network_15min_before_m": {
+      "status": "known",
+      "value": 20341.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "length(edges with both endpoints within 15 min of the depot) before the connection tree",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "reachable_network_15min_after_m": {
+      "status": "known",
+      "value": 35733.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "length(edges with both endpoints within 15 min of the depot) after the connection tree",
+      "confidence": "medium",
+      "assumptions": []
+    },
+    "first_two_links_length_m": {
+      "status": "known",
+      "value": 47.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "sum of the two shortest links in the connection tree (12 m + 35 m)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-NET-002: gaps of under ~15 m may be OSM mapping artefacts rather than physical breaks."
+      ]
+    },
+    "terminal_access_total_m": {
+      "status": "known",
+      "value": 1950.0,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "sum over the five elderly-care facilities of the straight-line distance from the facility to its nearest network node",
+      "confidence": "medium",
+      "assumptions": [
+        "A-SVC-004: terminal distance is measured straight-line; a compliant path would be longer."
+      ]
+    },
+    "facilities_servable_at_150m_walk": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "count(facilities with terminal distance <= 150 m)",
+      "confidence": "low",
+      "assumptions": [
+        "A-SVC-005: 150 m is a judgement about acceptable staff walking distance, not a measurement; the proposal reports the full sensitivity curve."
+      ]
+    },
+    "network_gap_share_of_terminal_access": {
+      "status": "known",
+      "value": 0.3056,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "formula": "min_connection_to_link_all_facilities_m / terminal_access_total_m",
+      "confidence": "medium",
+      "assumptions": [
+        "A-SVC-004: terminal distance is measured straight-line; a compliant path would be longer, which lowers this ratio further."
+      ]
     }
   }
 }

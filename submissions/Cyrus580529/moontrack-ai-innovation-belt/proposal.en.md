@@ -375,6 +375,80 @@ It shares no code with the Python implementation that produced the figures (shap
 
 The land-use, building and area findings have a companion, `visual/assets/verify-geometry.js`, used the same way; it additionally checks the three commitments this land-use layer makes — full coverage, zero overlap, and declared areas consistent with the geometry.
 
+### From diagnosis to remedy: what it actually takes to make the flagship work
+
+Stopping at "it does not work" is not enough. If reachability is a graph problem, then making it reachable is a solvable optimisation, not an exhortation to "close the breaks". Four questions, four answers, all computed from the same graph, with parameters and scripts shipped in this package.
+
+**One: what is the minimum new construction that puts all five facilities on one network?**
+
+The nearest nodes of the five facilities fall in components #10, #0, #7, #4 and #3 — five mutually disconnected fragments, so at least four connections are required. Solved as a minimum connection tree at component level (metric closure over the component graph, then a minimum spanning tree — the classical Steiner approximation), the answer is four links totalling **596 m** [metric:min_connection_to_link_all_facilities_m]:
+
+| Link | Length | Location (WGS84, both ends) |
+| --- | --- | --- |
+| #0–#7 | 12 m | (116.33715, 40.00957) → (116.33701, 40.00955) |
+| #0–#4 | 35 m | (116.33095, 39.99917) → (116.33067, 39.99894) |
+| #4–#10 | 82 m | (116.32493, 39.99863) → (116.32406, 39.99894) |
+| #0–#3 | 467 m | (116.35858, 40.00014) → (116.36404, 40.00023) |
+
+**Two: where should the depot go, and how long is the worst run?**
+
+Testing every node in the merged component and minimising the worst case, the best site is **(116.34627, 39.99979)**. Network travel times to the five facilities are 4.2, 11.0, 13.3, 14.0 and 14.0 minutes at the 15 km/h legal ceiling: **worst case 14.0 minutes, mean 11.3** [metric:depot_worst_case_minutes]. A second solution minimises the mean instead, bringing it to 10.4 minutes but pushing the worst case to 18.2. Choosing between them is a service-promise question rather than a technical one: a public "within fifteen minutes" commitment requires the first.
+
+**Three: what do those 596 m buy?**
+
+Counted directly, rather than as an improvement in some coverage ratio:
+
+| Within 15 minutes of legal-right-of-way travel | Before | After |
+| --- | --- | --- |
+| Elderly-care facilities | 1 | **5** [metric:facilities_on_network_after_connection] |
+| Universities and research institutes | 1 | 2 |
+| Reachable network length | 20,341 m [metric:reachable_network_15min_before_m] | **35,733 m (1.76×)** [metric:reachable_network_15min_after_m] |
+
+Each metre of new connection buys 25.8 m of reachable network.
+
+**Four: on a smaller budget, which links come first?**
+
+Ranked by marginal return, the decay is strikingly uneven:
+
+| Cumulative | This link | Facilities on network | Reachable network | Marginal (m network per m built) |
+| --- | --- | --- | --- | --- |
+| 0 m | — | 1 | 20,341 m | — |
+| 12 m | +12 m | 2 | 22,618 m | **186.3** |
+| 47 m | +35 m | 3 | 26,371 m | **108.4** |
+| 129 m | +82 m | 4 | 26,889 m | 6.3 |
+| 596 m | +467 m | 5 | 35,733 m | 18.9 |
+
+**The first 47 m — two links of 12 m and 35 m [metric:first_two_links_length_m] — take the number of facilities on the network from one to three**, at marginal returns of 186 and 108 metres of network per metre built. The third link, 82 m, falls to 6.3; the fourth, 467 m, recovers to 18.9 because it merges a whole block of network. This curve hands over the phasing split directly: the first two links are near-costless and extremely high-return and should proceed unconditionally; the other two each need their own case.
+
+### But the real bottleneck is not on the network — it is at the door
+
+Answered that way, the four questions produce a tidy conclusion: spend 596 m, connect all five. That conclusion is wrong, or rather incomplete, because it only gets the robot **along the network** and not **to the door**.
+
+Put the two classes of distance side by side:
+
+| | Total | Instances |
+| --- | --- | --- |
+| Inter-component links (merging the fragments) | 596 m | 4 |
+| Terminal access with no legal right-of-way (door to nearest legal node) | **1,950 m** [metric:terminal_access_total_m] | 5 |
+
+**The terminal problem is 3.3 times the network problem** — put the other way round, the network links amount to just 0.31 of the terminal access [metric:network_gap_share_of_terminal_access]**.** The five terminal distances are 109, 218, 420, 551 and 652 m — every one of them over 100 m. Even with all 596 m built, under a strict "terminal within 100 m" test the number of reachable facilities is still zero. The fragments have been joined; the doors have not.
+
+That threshold is a judgement, not a measurement, so here is how sensitive it is:
+
+| Acceptable staff walk to a collection point | Facilities servable with a stop alone |
+| --- | --- |
+| 100 m | 0 |
+| 150 m | 1 [metric:facilities_servable_at_150m_walk] |
+| 250 m | 2 |
+| 450 m | 3 |
+| 700 m | 5 |
+
+At 150 m — generally taken as the distance at which a round trip to collect a delivery does not become a burden — only the Tsinghua Garden University for the Elderly qualifies, and its component #10 needs a single 82 m link to join the network. **What phase one can actually deliver is therefore: 82 m of connection, one stop, one facility.** That is a far less impressive number than "all five connected", and it is the one that can actually be built.
+
+This yields the single most important correction this proposal makes to its own flagship scenario: **the binding constraint is neither the robots nor the cycleway network, but the walking environment in the last hundred metres.** The remaining four facilities, 1,841 m of terminal access in total, belong to walking and accessibility works, not to a robotics project. They should be scoped and scheduled separately — and, crucially, **even if the robot scheme is never delivered, those 1,841 m of terminal improvement serve wheelchair, walker and pram users just as well, so nothing is wasted.** This is exactly where the reversibility principle set out under agent.1 lands in a concrete project: do first the parts that are not wasted whichever way the technology goes.
+
+Every figure above can be recomputed by the method in `analysis_service.py`, taking `roads.geojson` and `public_space.geojson` from this package, with all parameters stated (15 km/h, 8 m snapping, 150 m walking threshold). The three link coordinates are the same set as the JZ-07 field-verification list, not a second version of it.
+
 **One further boundary has to be stated before anyone else finds it: most of this analysis lies outside the Overall Design Area.** Measured, only 18.0 per cent of the 141.7 km of lanes falls inside the Overall Design Area [metric:cycleway_in_design_scope_share], and the three critical gaps sit 409 m, 891 m and 1,178 m beyond the boundary.
 
 This is not a sampling error; it follows from the nature of the question. Connectivity is a property of a whole network, not of any one stretch. Cut the network at a boundary and recompute components, and the breaks you find are made by the boundary, not by the ground. To test that, the network was clipped to the area and rerun: the 24.68 km inside still breaks into 28 components, the largest holding only 15.4 per cent of nodes [metric:cycleway_components_within_scope_only]. **The fragmentation diagnosis stands on its own inside the area; it is not an artefact of looking more widely.** But the three places where the gaps can be closed are genuinely outside it.
@@ -525,8 +599,9 @@ Project list and phasing depth are governed by [depth:renewal_project_list] and 
 | JZ-05 | AI public service and edge compute nodes | New infrastructure / public services | Energy, compute, security and operating body | [data:geometry/constraints.geojson#CONSTRAINTS] |
 | JZ-06 | Global AI week public route | Operations / brand | Public-space permits, event safety, rights clearance | [data:geometry/phasing.geojson#phase1-gap-1] |
 | JZ-07 | Field verification and closure of three key network gaps | Mobility / walking and cycling | Verifying whether the breaks are real, road ownership, kerb and clear-width conditions | [data:geometry/roads.geojson#cycleway-22771899] |
+| JZ-08 | Terminal accessible access to elderly-care facilities (1,841 m across four sites) | Walking / accessibility | Field survey of walking routes, kerb gradients, ownership at facility entrances | [data:geometry/public_space.geojson#elderly-poi-00] |
 
-JZ-07 is the smallest item on the list and the first. Measurement shows that 56 m of connection across three points could grow the usable low-speed robot network from 27.56 km to 57.77 km (see "Measured cycleway network connectivity"), a ratio of input to return that no other item on the list approaches. But it must begin with field verification: whether the three breaks are mapping artefacts, whether railings or grade changes intervene, and whether kerb gradient and clear width permit passage can only be judged on site. It proceeds to implementation only if verification confirms the breaks and conditions allow, and is struck from the list otherwise. Almost all of its cost is verification, not construction.
+JZ-07 is the smallest item on the list and the first. Measurement shows that 56 m of connection across three points could grow the usable low-speed robot network from 27.56 km to 57.77 km (see "Measured cycleway network connectivity"), a ratio of input to return that no other item on the list approaches. But it must begin with field verification: whether the three breaks are mapping artefacts, whether railings or grade changes intervene, and whether kerb gradient and clear width permit passage can only be judged on site. It proceeds to implementation only if verification confirms the breaks and conditions allow, and is struck from the list otherwise. Almost all of its cost is verification, not construction. The service-level solution set out under "from diagnosis to remedy" splits it into two executions: **the first 47 m, two links returning 186 and 108 metres of network per metre built, proceed unconditionally**; the remaining links and the terminal works each need their own case.
 
 ### How the three phases are drawn, and on what geometry
 

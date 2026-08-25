@@ -126,6 +126,36 @@
       "status": "measured_and_disclosed",
       "statement": "Phase 1 polygons are 150 m radius circles centred on the midpoint of each measured gap. The radius is a survey working area, chosen to be legible at drawing scale.",
       "impact": "It is not an engineering redline, a works boundary or a land requirement. If site verification shows a gap is an OSM artefact, the corresponding phase 1 item is struck from the programme rather than redrawn."
+    },
+    {
+      "id": "A-SVC-001",
+      "status": "measured_and_disclosed",
+      "statement": "The 596 m connection tree is built by taking the metric closure over the component graph and then a minimum spanning tree — the classical 2-approximation for the Steiner tree problem — over the eighteen largest components plus the five that contain facilities.",
+      "impact": "596 m is an upper bound on the true minimum, not the proven optimum, and the candidate pool excludes small components that could in principle serve as cheaper stepping stones. A tighter solution would only lower the figure, so the phasing conclusions built on it are conservative."
+    },
+    {
+      "id": "A-SVC-002",
+      "status": "measured_and_disclosed",
+      "statement": "'Facilities on the network' counts a facility once its nearest network node is within the time budget. It deliberately ignores the terminal distance from that node to the facility door.",
+      "impact": "Reported alone it would overstate the result: under a 100 m terminal test the count remains 0 even after all 596 m is built. The proposal reports both measures side by side precisely because the difference between them is the finding."
+    },
+    {
+      "id": "A-SVC-003",
+      "status": "measured_and_disclosed",
+      "statement": "Travel time converts network distance at a constant 15 km/h, the legal ceiling for delivery robots. Stops, signals, queueing, gradients and mixed-traffic slowdowns are not modelled.",
+      "impact": "All quoted minutes are lower bounds. They are used to compare depot sites and to rank links against each other, where the constant cancels, and not as a service-level promise."
+    },
+    {
+      "id": "A-SVC-004",
+      "status": "measured_and_disclosed",
+      "statement": "Terminal distance is the straight-line distance from the facility point to its nearest network node. A compliant walking route would be longer, and no such route has been surveyed.",
+      "impact": "The 1,950 m terminal total is therefore a lower bound, which strengthens rather than weakens the conclusion that terminal access dominates the network gaps."
+    },
+    {
+      "id": "A-SVC-005",
+      "status": "measured_and_disclosed",
+      "statement": "The 150 m threshold for an acceptable staff walk to a collection point is a judgement, not a measurement.",
+      "impact": "It decides how many facilities phase one can serve, so the proposal publishes the full sensitivity curve from 100 m to 700 m instead of a single figure. At 250 m two facilities qualify, at 450 m three."
     }
   ]
 }
