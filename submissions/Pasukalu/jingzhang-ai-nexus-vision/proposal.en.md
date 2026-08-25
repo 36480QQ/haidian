@@ -14,7 +14,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # Jing-Zhang AI Commons
 
-> **京张智脉 · 开放智能共同体**<br>
+> **京张智脉 · 开放智能共同体**
+>
 > A century of rail. Open intelligence. A city for all.
 
 This proposal does not add an AI label to a conventional technology district. It spatially and institutionally designs how experiments enter the city, how people participate, and how risk is stopped. The Jing-Zhang Heritage Park becomes a **public track** open to everyone. Research, validation, and application form a reversible **innovation track**. Zhongzhiyuan, the AI Origin Community, and Dazhongsi are three “switch stations.” An AI scenario may leave the sandbox only after passing six gates—Need, Data, Space, Human, Safety, and Exit—and must restore the site if it fails.
@@ -270,7 +271,7 @@ The compliance matrix covers announcement items 1.3, 1.4, 1.5 and Agent tasks 1�
 
 Generative-AI obligations are assessed scenario by scenario against the actual public-service boundary; content-disposition provisions are not inflated into a generic “right to exit,” and no filing or security-assessment conclusion is presumed [standard:GENERATIVE-AI-INTERIM-MEASURES]. Human service follows the Accessibility Law’s specific service context while parallel traditional and smart services remain an older-person inclusion policy reference [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45].
 
-Three key-area atmospheres were generated for this submission with OpenAI image generation. They contain no real-person identity, third-party mark, or reused external media and are labelled as conceptual, not site evidence [source:MEDIA-OPENAI-IMAGEGEN-2026-08-23]. Figures and PDFs were rendered with Noto Sans CJK under SIL OFL 1.1 and then flattened into images/pages; the offline HTML uses a local system-font stack with no network font dependency [source:FONT-NOTO-SANS-CJK]. Prompts, derivation, font, and rights details are in report/copyright_statement.md.
+Three key-area atmospheres were generated for this submission with OpenAI image generation. They contain no real-person identity, third-party mark, or reused external media and are labelled as conceptual, not site evidence [source:MEDIA-OPENAI-IMAGEGEN-2026-08-23]. Figures and PDFs were rendered with Noto Sans CJK under SIL OFL 1.1 and then flattened into images/pages; all four offline HTML deliverables embed a licensed Noto Sans CJK SC 2.004 WOFF character subset and require neither an installed CJK font nor a network request [source:FONT-NOTO-SANS-CJK]. Prompts, derivation, font, and rights details are in report/copyright_statement.md.
 
 This is an open co-creation proposal, not statutory planning, engineering design, government approval, or professional advice. Repository intake does not imply gallery publication, award selection, implementation approval, or government endorsement.
 

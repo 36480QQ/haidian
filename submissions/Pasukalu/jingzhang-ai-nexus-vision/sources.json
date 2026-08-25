@@ -83,8 +83,8 @@
     },
     {
       "id": "FONT-NOTO-SANS-CJK", "path": "https://github.com/notofonts/noto-cjk/blob/main/LICENSE", "source_type": "public_reference", "publisher": "Google / Adobe Noto CJK project", "accessed_date": "2026-08-23",
-      "usage": "以 Noto Sans CJK 开源字体渲染投稿图件与 PDF；离线 HTML 使用系统字体栈。", "authority_level": "open_font_asset",
-      "usable_for": ["图件与 PDF 排版"], "not_usable_for": ["商标背书"], "limitations": "SIL Open Font License 1.1；包内不再分发字体二进制。"
+      "usage": "以 Noto Sans CJK SC Regular 2.004 渲染图件与 PDF，并在四份离线 HTML 内以内联 Base64 分发仅覆盖所需字符的 WOFF 子集。", "authority_level": "open_font_asset",
+      "usable_for": ["图件、PDF 与离线 HTML 排版"], "not_usable_for": ["商标背书"], "limitations": "SIL Open Font License 1.1；子集仅作 WOFF 转换和字符裁剪；许可全文与转换说明见 report/copyright_statement.md。"
     }
   ]
 }

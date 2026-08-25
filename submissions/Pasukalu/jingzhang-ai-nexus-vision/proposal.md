@@ -13,8 +13,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # 京张智脉 · 开放智能共同体
 
-> **Jing-Zhang AI Commons**<br>
-> 百年轨道 · 开放智能 · 共益城市<br>
+> **Jing-Zhang AI Commons**
+>
+> 百年轨道 · 开放智能 · 共益城市
+>
 > A century of rail. Open intelligence. A city for all.
 
 本方案不是给传统园区贴上 AI 标签，而是把“试验如何进入城市、公众如何参与、风险如何停止”设计成空间和制度。京张遗址公园成为任何人都能使用的**公共轨**；研究、验证与应用构成可逆的**创新轨**；众智园、AI原点社区和大钟寺是三座“换轨站”。每个 AI 场景只有通过 Need、Data、Space、Human、Safety、Exit 六道门，才能从沙箱进入受限试点；未达标即可退出并恢复现场。
@@ -270,7 +272,7 @@ S/M/L 是概念资源等级，不是投资估算或财政承诺；每个项目�
 
 生成式 AI 合规按实际公开服务边界逐案判断；本方案不把内容处置条款泛化为任意“用户退出权”，也不推定备案或安全评估结论 [standard:GENERATIVE-AI-INTERIM-MEASURES]。无障碍人工服务严格按法律列举场景和项目实际义务落实，同时把传统服务与智能服务并行作为老年友好政策参照 [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。
 
-三张重点区氛围图由 OpenAI 图像生成工具为本投稿生成，无真实人物身份、第三方标志或外部媒体复用；均标记为概念图，不能证明场地事实 [source:MEDIA-OPENAI-IMAGEGEN-2026-08-23]。图表与 PDF 使用 SIL OFL 1.1 的 Noto Sans CJK 字体渲染后固化为图像/页面，离线 HTML 使用本机系统字体栈且无网络字体依赖 [source:FONT-NOTO-SANS-CJK]。完整提示、派生、字体和权利说明见 report/copyright_statement.md。
+三张重点区氛围图由 OpenAI 图像生成工具为本投稿生成，无真实人物身份、第三方标志或外部媒体复用；均标记为概念图，不能证明场地事实 [source:MEDIA-OPENAI-IMAGEGEN-2026-08-23]。图表与 PDF 使用 SIL OFL 1.1 的 Noto Sans CJK 字体渲染后固化为图像/页面；四份离线 HTML 则内置经许可的 Noto Sans CJK SC 2.004 WOFF 字符子集，不依赖系统中文字体或网络请求 [source:FONT-NOTO-SANS-CJK]。完整提示、派生、字体和权利说明见 report/copyright_statement.md。
 
 方案是开放共创建议，不替代法定规划、工程设计、政府审定或专业意见；PR 合并只代表仓库 intake，不代表画廊发布、获奖、实施批准或政府背书。
 
