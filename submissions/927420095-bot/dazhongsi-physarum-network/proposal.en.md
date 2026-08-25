@@ -260,7 +260,19 @@ Responding to 1.3.3 "build a high-quality urban district that global AI innovati
 | Mid-term | 2–5 years | JZ-02 / JZ-03 | Blue-green corridor connected + conversion street opened | Stormwater resilience met; conversion space opened + ground-floor cleared |
 | Long-term | 5–10 years | JZ-05 / JZ-06 | Compute node opened + full recomputation after official data | Compute open + safety audit passed; recomputation updates layers |
 
-The municipal road-network cost is ≈20–39 million CNY (2026 Q2 price level, conceptual estimate ±30%, excluding land acquisition, utility relocation, and rail civil works, 10% contingency; with layered investment scope), with economic feasibility illustrated by land appreciation, tax increment, and employment driven. **Eight actor types**: district government and planning branch (planning conditions and regulatory-plan coordination), rail operator (JZ-04 coordination), nearby universities (JZ-03 ownership and ground-floor uses), area enterprises (JZ-05 co-built operation), nearby residents and communities (public-disclosure communication and cooperation), heritage and cultural-relic departments (impact assessment and minimal intervention), Jing-Zhang heritage park management (JZ-01 boundary coordination), and development-construction entities (project approval, financing, construction, and operation); division of labor and coordination are refined after field survey and project approval in the implementation stage, without fabricating interview conclusions or cooperation commitments.
+The municipal road-network cost is ≈20–39 million CNY (2026 Q2 price level, conceptual estimate ±30%, excluding land acquisition, utility relocation, and rail civil works, 10% contingency; with layered investment scope), with economic feasibility illustrated by land appreciation, tax increment, and employment driven. **Eight actor types**: district government and planning branch (planning conditions and regulatory-plan coordination), rail operator (JZ-04 coordination), nearby universities (JZ-03 ownership and ground-floor uses), area enterprises (JZ-05 co-built operation), nearby residents and communities (public-disclosure communication and cooperation), heritage and cultural-relic departments (impact assessment and minimal intervention), Jing-Zhang heritage park management (JZ-01 boundary coordination), and development-construction entities (project approval, financing, construction, and operation); implementation-layer responsibility designation (named A/R/C/I) awaits joint confirmation by the competent authority, operating entity, and public representatives after project approval, without fabricating interview conclusions or cooperation commitments.
+
+**Actors and governance responsibility (two layers)**: renewal-project layer — the six renewal projects (JZ-01..06) each carry an explicit responsible-actor type (see the renewal-project list table); AI-scenario governance layer — a "five-role × five-gate" RACI responsibility matrix is established (see the table below), with at least one Accountable (A) per gate.
+
+| Governance gate | Scenario Owner / Developer | Independent Technical & Safety Review Group | Public & Accessibility Representatives (Veto Power) | Public Value Committee / Operations Secretariat | Spatial / Heritage / Traffic Planning Specialists |
+| --- | --- | --- | --- | --- | --- |
+| G0 Ordinary Path Always Available | R | I | I | A | I |
+| G1 Local Reproduction | R | A | I | C | C |
+| G2 Professional Review | R | C | C | C | A |
+| G3 Bounded Field Pilot | R | C | A | A | C |
+| G4 Steady Operation / Archive Receipt | R | C | I | A | I |
+
+> R (Responsible) executes, A (Accountable) is accountable, C (Consulted) advises, I (Informed) is notified. G3 bounded field pilot uses dual accountability — Public & Accessibility Representatives plus Public Value Committee — with the public representative holding veto power. This matrix is a conceptual-phase governance framework; formal signature awaits project approval.
 
 ## Metrics System, Area Recomputation, and Compliance Matrix
 
