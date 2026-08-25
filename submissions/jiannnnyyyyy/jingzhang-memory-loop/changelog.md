@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v0.5 - 2026-08-25
+
+- 修复中文离线视觉主页的 CJK 字体加载：将 Noto Sans SC 子集以内嵌 WOFF2 方式写入 `visual/index.html`，并在版权记录中补充字体名称、版本、SIL OFL 1.1 许可和本地打包方式。
+- 重绘 `site-overview.en.png` 的英文文字层，移除节点说明、设计判断、临时边界警示和页脚中的中文残留；英文 HTML/PDF 继续引用该英文图件。
+- 重新核对双语图位、指标、来源、临时边界警示和 PDF 图纸生成链。
+
 ## v0.4 - 2026-08-25
 
 - 修正 provisional site boundary 的指标语义：`site_area_sqm` 改为 medium-confidence design-model output，删除“official boundary present”假设，并同步 manifest 数据置信度与复算触发条件。

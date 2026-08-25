@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d8a8b281bb5cbc5c4b8d61e2fee227ef15593bdba820921939ad0561e065fb7c"
+      "sha256": "ccc449ce41a16a5f8ea9990685bb4dcece6ed69ea12ab7cb992aad046a474e4a"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "97ea638055a123a762a5266469b6cfba072846b7dabaa1b8bab27d0ca727d281"
+      "sha256": "af06a3f9c6dc01482427840f2d0fe6b2220e09a77579c1c3a7e65b89ea42d6bd"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "cfa4d4a082825fc7dfa397004a9f465c2a9d565f6b300ea91e7b4ec34a023364"
+      "sha256": "f2c21deaa6c9e78a4475ba21eeef45d80be7fcc28e7d2aab1a4fc49cd21ae0e6"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "9de489de2c142e00563f0623988db1eb220f2f683b2964cb9fd92c433da72de4"
+      "sha256": "b1e8d66ddccef04cad200b43442a84174c13601784fbbe9277b925ca09555c29"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "2472ea0af270dc00a5488b23d88df3848d2eac4cd841f864a22857792f05b416"
+      "sha256": "6762d4d04721996b98389dad33989939f576f04b55ad7824c87de7703e9ed077"
     },
     {
       "path": "visual/index.en.html",
@@ -283,14 +283,14 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "55a00b953e190880472a95928ed4184b27b9a76d69c302e2a93cddf188983ebf"
+      "sha256": "c6f02de946bc46f5110f8e2c0dc12886a3d7162659b5598bc53da075f4313f26"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
       "language": "zh",
-      "sha256": "6324406f8c7ab544c6c444e4a2dadc29a3127d3713e31178f3af5bd26f0fda66"
+      "sha256": "8395e5d117bb039ff7f8d5c0e7073ba04f450ac55ecae839a8ffe2596d741e31"
     }
   ],
   "validation_claim": {
