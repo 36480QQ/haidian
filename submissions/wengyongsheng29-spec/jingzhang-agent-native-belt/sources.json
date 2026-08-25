@@ -204,6 +204,54 @@
    "access_date": "2026-08-11",
    "note_zh": "通过Overpass API获取研究范围（116.285-116.400°E, 39.925-40.045°N）内motorway/trunk/primary/secondary/tertiary/residential道路几何，共6006条路段；本方案底图道路全部基于该开放数据自绘，未使用任何商业地图瓦片。数据 © OpenStreetMap contributors, ODbL。",
    "note_en": "Road geometry for study area (116.285-116.400E, 39.925-40.045N) via Overpass API; 6006 segments (motorway/trunk/primary/secondary/tertiary/residential); all base-map roads self-drawn from this open data, no commercial map tiles used. Data © OpenStreetMap contributors, ODbL."
+  },
+  {
+   "source_id": "SATELLITE-IMAGERY-BASEMAP",
+   "title_zh": "卫星影像底图（概念示意）",
+   "title_en": "Satellite Imagery Basemap (Conceptual Illustration)",
+   "authority": "公开卫星影像 / 概念合成",
+   "url": "https://www.openstreetmap.org/",
+   "license": "conceptual_use_only",
+   "usable_for_formal": "background_only",
+   "access_date": "2026-08-12",
+   "note_zh": "site-overview.jpg等总览图使用公开卫星影像作为底图进行概念性空间示意，建筑肌理、用地边界和标注均为方案概念叠加，非官方测绘成果。卫星影像仅用于空间关系示意，精确位置和面积以官方测绘和控规为准。正式实施前需替换为有明确授权的影像数据源。",
+   "note_en": "Site overview figures use publicly available satellite imagery as basemap for conceptual spatial illustration. Building massing, land use boundaries and annotations are conceptual overlays, not official survey results. Satellite imagery is for spatial relationship illustration only; precise locations and areas are subject to official survey and regulatory planning. Authorized imagery sources must be obtained before formal implementation."
+  },
+  {
+   "source_id": "AI-RENDERINGS",
+   "title_zh": "AI生成建筑效果意向图",
+   "title_en": "AI-Generated Architectural Rendering Concepts",
+   "authority": "AI image generation models (conceptual)",
+   "url": "https://github.com/open-city-ai/haidian",
+   "license": "conceptual_use_only",
+   "usable_for_formal": "background_only",
+   "access_date": "2026-08-15",
+   "note_zh": "rendering-key-001/002/003.jpg为AI生成的建筑效果意向图，用于表达建成后的空间氛围、材质和尺度感，非真实建筑设计方案。图中建筑形态、街道网格和具体位置与真实地图不对应，空间位置以总平面图和空间分析轴测图为准。AI生成图不构成建筑设计成果或施工依据。",
+   "note_en": "rendering-key-001/002/003.jpg are AI-generated architectural rendering concepts for illustrating post-construction spatial atmosphere, materials and scale sense, not actual architectural design solutions. Building forms, street grids and specific locations in the images do not correspond to real maps; spatial positions are subject to the master plan and spatial analysis axonometric drawings. AI-generated images do not constitute architectural design deliverables or construction basis."
+  },
+  {
+   "source_id": "LOGO-FONTS-DECLARATION",
+   "title_zh": "品牌Logo与字体版权声明",
+   "title_en": "Brand Logo and Fonts Copyright Declaration",
+   "authority": "FTA Group / concept design",
+   "url": "https://github.com/open-city-ai/haidian",
+   "license": "conceptual_use_only",
+   "usable_for_formal": "background_only",
+   "access_date": "2026-08-15",
+   "note_zh": "本方案品牌系统（智脉京张名称、Logo、色彩体系、字体规范）为竞赛概念设计成果，未经商标注册和字体授权。Logo为方向性概念设计，落地需另行清权（商标检索、注册策略、商业使用授权）。中文字体使用微软雅黑（系统字体），英文使用Helvetica Neue/Arial（通用字体），正式出版和商业使用前需确认字体授权。品牌应用场景（导视、公共艺术、数字界面、办公文创、环境传播）均为概念设计，待专业团队深化和授权后实施。",
+   "note_en": "The brand system (Zhimai Jing-Zhang name, logo, color system, font specifications) is a competition conceptual design deliverable, without trademark registration or font authorization. The logo is a directional concept design; implementation requires separate rights clearance (trademark search, registration strategy, commercial use authorization). Chinese fonts use Microsoft YaHei (system font), English uses Helvetica Neue/Arial (common fonts); font authorization must be confirmed before formal publication and commercial use. Brand application scenarios (wayfinding, public art, digital interfaces, office merchandise, environmental communication) are all conceptual designs, pending professional team development and authorization."
+  },
+  {
+   "source_id": "PROGRAMMATIC-FIGURES",
+   "title_zh": "程序化生成分析图件",
+   "title_en": "Programmatically Generated Analysis Figures",
+   "authority": "FTA Group / Python matplotlib + reportlab",
+   "url": "https://github.com/open-city-ai/haidian",
+   "license": "public",
+   "usable_for_formal": "yes",
+   "access_date": "2026-08-12",
+   "note_zh": "本方案除卫星底图和AI效果图外的所有分析图件（用地结构、交通蓝绿、分期实施、指标体系、1909协议机制、AI原生空间类型学、区域协同、三核详细设计、概念剖面、城市设计导则、实施路线图、AI验证协议等）均为使用Python matplotlib/reportlab基于公开数据（OSM道路、任务包几何、方案概念数据）程序化生成的原创分析图，无第三方版权限制。图中数据标注来源和年份，可复算、可追溯。",
+   "note_en": "All analysis figures in this proposal except satellite basemap and AI renderings (land use structure, mobility blue-green, phasing implementation, indicator system, 1909 protocol mechanism, AI-native spatial typology, regional synergy, three-core detailed design, concept section, urban design guidelines, implementation roadmap, AI verification protocol, etc.) are original analysis diagrams programmatically generated using Python matplotlib/reportlab based on public data (OSM roads, brief geometry, proposal conceptual data), with no third-party copyright restrictions. Data in figures are annotated with sources and years, recalculable and traceable."
   }
  ]
 }
