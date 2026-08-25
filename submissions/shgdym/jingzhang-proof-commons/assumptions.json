@@ -52,7 +52,7 @@
     {
       "id": "A-GENERATIVE-ASSET-001",
       "status": "disclosed_tool_metadata_limit",
-      "statement": "The OpenAI built-in image-generation tool in Codex did not surface its model identifier for the four concept images generated on 2026-08-24; the service, date, text-only inputs, terms, post-processing and hashes are recorded while model remains unknown.",
+      "statement": "OpenAI image generation in ChatGPT did not surface a specific image-model identifier for the four current concept images generated or transformed on 2026-08-25; the service, date, generation record IDs, participant-provided concept visual references, conversation instructions, terms, post-processing and final hashes are recorded while the model identifier remains unknown.",
       "impact": "The images may be used and redistributed under the recorded service terms and disclosure conditions, but no claim is made about copyrightability, uniqueness, non-infringement, factual accuracy, site conditions or approval."
     }
   ]
