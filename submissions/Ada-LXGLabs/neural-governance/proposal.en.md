@@ -510,6 +510,16 @@ Beyond the four foundations of computing, energy, data, and scenarios, industria
 
 **Loop and red line**: all amounts, counts, and scales are marked unknown, to be set after operator and policy confirmation; this proposal only offers mechanism frameworks and spatial anchors, presumes no funding scale or talent count, and does not substitute for formal investment-financing or planning approval.
 
+### Smart Hub: the interface between the AI district and the outside (Green District insight · Cognitive City)
+
+Borrowing the core insight of the Orlando Green District — placing **Smart Hubs** at the city's edge as the interface between the AI district and the outside, while carrying new infrastructure such as low-altitude (flying taxis / drones) and EV charging, the typical **Cognitive City** idea [source:GREEN-DISTRICT-DESIGN]. The Smart Hub layout for the Jing-Zhang Intelligence Vein Belt:
+
+- **North Smart Hub (Zhongzhiyuan·Source Vein, along Qinghe)**: low-altitude landing points (flying taxis/drones) + edge-compute/data exchange nodes + EV charging stations — the interface toward Future Science City and the Changping direction;
+- **South Smart Hub (Dazhongsi·Data Vein, rail station)**: rail transfer + data-factor exchange + EV charging — the interface toward the city center and the E-Town direction;
+- **Mid Smart Hub (Origin Community·People Vein)**: community-scale micro-hub (slow-traffic transfer + micro-charging + shared micro-mobility) serving daily interaction.
+
+A Smart Hub is an "interaction interface + infrastructure carrier": not just a parking lot or charging station, but a low-barrier interaction node between AI agents and "non-agent people, vehicles, and objects" — low-altitude vehicles, EVs, and data flows join the belt's "nerve" here (echoing "boundary openness": being connectable does not mean being forced to connect, but whatever connects enters here). Specific siting, capacity, and investment remain pending official regulatory-plan and energy-capacity confirmation; this proposal only offers the conceptual layout and functional anchors, without presuming scale.
+
 ## Deepening and Translation Path: From Conceptual Proposal to Implementation
 
 This proposal honestly distinguishes "AI-generated conceptual output" from "content requiring professional deepening," providing a clear translation path for downstream teams:
