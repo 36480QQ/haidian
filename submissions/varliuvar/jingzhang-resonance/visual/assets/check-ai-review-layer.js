@@ -68,9 +68,9 @@ if (layer) {
   requireFields("root", layer, ["schema_version", "audience", "purpose", "reviewed_baseline_sha256", "human_layer_policy", "manifest_registration", "formal_review_gate", "rubric_dimensions", "repair_register", "future_feedback_register", "regional_collaboration", "priority_scenarios", "deepened_samples", "bilingual_artifact_status", "rights_summary", "claim_boundary"]);
   if (layer.schema_version !== "1.0.0") fail("schema_version must be 1.0.0");
   if (layer.audience !== "maintainer_ai_review") fail("audience must be maintainer_ai_review");
-  if (layer.reviewed_baseline_sha256 !== "f578f2abbcc951ddad2d1f64014d0df5af8bc110eea0917f974d70476651fe51") fail("reviewed_baseline_sha256 must match the reviewed package");
+  if (layer.reviewed_baseline_sha256 !== "5f758676bc008b103fb7729fdd83dfdbbbcf299f67bff1017d8b007535a1d19b") fail("reviewed_baseline_sha256 must match PR #3847 reviewed package");
   if (layer.human_layer_policy?.proposal_body_rewrite_allowed !== false || layer.human_layer_policy?.ai_review_terms_stay_in_ai_layer !== true || !Array.isArray(layer.human_layer_policy?.allowed_human_changes)) fail("human_layer_policy must match the frozen-narrative contract");
-  if (layer.formal_review_gate?.review_state !== "request_changes" || layer.formal_review_gate?.formal_review !== false || layer.formal_review_gate?.score_total !== 77 || layer.formal_review_gate?.publication_state !== "do_not_publish") fail("formal_review_gate must retain request_changes, formal_review false, score 77, and do_not_publish");
+  if (layer.formal_review_gate?.review_state !== "request_changes" || layer.formal_review_gate?.formal_review !== false || layer.formal_review_gate?.score_total !== 80 || layer.formal_review_gate?.publication_state !== "do_not_publish") fail("formal_review_gate must retain the latest request_changes, formal_review false, score 80, and do_not_publish baseline");
 
   if (!Array.isArray(layer.rubric_dimensions)) fail("rubric_dimensions must be an array");
   else {
@@ -163,7 +163,7 @@ if (layer) {
   const layerSource = sourceRegistry?.sources?.find((item) => item.id === "AI-REVIEW-LAYER");
   if (!layerSource || !/^participant_generated/.test(layerSource.source_type || "") || layerSource.ownership !== "participant_generated") fail("AI-REVIEW-LAYER source must be explicitly participant-generated");
   if (layerSource?.manifest_listed !== layer.manifest_registration?.manifest_listed || layerSource?.provisional_manifest_registration !== layer.manifest_registration?.provisional_manifest_registration) fail("AI-REVIEW-LAYER source registration state must match the AI review layer");
-  if (layerSource?.ai_review_input_summary?.open_feedback_ids?.[0] !== "F-20260824-01") fail("sources.json must carry the open feedback summary into review input");
+  if (layerSource?.ai_review_input_summary?.open_feedback_ids?.[0] !== "F-20260825-01") fail("sources.json must carry the latest open feedback summary into review input");
   if (!countsMatch(layerSource?.ai_review_input_summary?.repair_counts)) fail("sources.json repair counts must match the AI review layer");
 
   const compliance = readJson(path.join(packageDir, "compliance_matrix.json"));
@@ -187,7 +187,7 @@ if (layer) {
   }
   const depthSummaries = (designDepth?.items || []).map((item) => item.ai_review_structured_summary).filter(Boolean);
   if (!depthSummaries.some((summary) => summary.sample_id === "S-LOW-DISTURBANCE-SPATIAL" && summary.status === participantMethodCompleteStatus) || !depthSummaries.some((summary) => summary.sample_id === "S-T04-AI-TEST" && summary.status === participantMethodCompleteStatus)) fail("design_depth_matrix must carry both participant-complete, external-evidence-pending sample summaries");
-  if (!depthSummaries.some((summary) => summary.open_feedback_ids?.includes("F-20260824-01"))) fail("design_depth_matrix must carry the open feedback summary");
+  if (!depthSummaries.some((summary) => summary.open_feedback_ids?.includes("F-20260825-01"))) fail("design_depth_matrix must carry the latest open feedback summary");
   if (!depthSummaries.some((summary) => countsMatch(summary.repair_counts))) fail("design_depth_matrix repair counts must match the AI review layer");
 
   const registration = layer.manifest_registration || {};
@@ -214,7 +214,8 @@ if (layer) {
     try { html = fs.readFileSync(absolute, "utf8"); } catch (error) { fail(`${file}: ${error.message}`); continue; }
     const section = html.match(/<section id=["']ai-review-layer["'][\s\S]*?<\/section>/)?.[0] || "";
     if (!section) { fail(`${file} must contain the AI review section`); continue; }
-    if (!/data-audience=["']maintainer-ai-review["']/.test(section)) fail(`${file} AI section must declare its audience`);
+    if (!/data-audience=["']participant-self-check["']/.test(section)) fail(`${file} AI section must declare participant self-check audience`);
+    if (/MAINTAINER REVIEW INDEX|机器评审专用索引|request-changes|80\/100|维护者复评/.test(section)) fail(`${file} participant self-check section must not present maintainer-style scores or decisions`);
     for (const dimension of layer.rubric_dimensions || []) {
       if (!section.includes(dimension.id)) fail(`${file} evidence map must contain ${dimension.id}`);
       for (const evidence of dimension.evidence || []) if (!section.includes(evidence)) fail(`${file} evidence map must contain ${evidence}`);

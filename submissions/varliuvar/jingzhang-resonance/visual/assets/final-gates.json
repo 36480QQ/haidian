@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "recorded_on": "2026-08-24",
+  "recorded_on": "2026-08-25",
   "scope": "Participant-controlled finalization gates for the AI review remediation batch.",
   "gate_authorities": [
     {
@@ -29,7 +29,7 @@
     {
       "gate_id": "RIGHTS_AND_PUBLICATION",
       "result_authority": "visual/assets/asset-rights-ledger.json and visual/assets/asset-clearance-disposition.json",
-      "participant_status": "external_evidence_pending_do_not_publish"
+      "participant_status": "participant_audit_complete_two_root_publication_evidence_gaps_do_not_publish"
     },
     {
       "gate_id": "PACKAGE_SIZE",
@@ -44,10 +44,10 @@
     }
   ],
   "remaining_external_decisions": [
-    "human or certified bilingual review only if later required for publication or legal reliance",
-    "rights-holder evidence or cleared replacement assets for unresolved groups",
-    "trademark and per-asset model-record review",
+    "maintainer human semantic spot-check and final maintainer QA under the repository workflow",
+    "publication-only rights evidence, removal, or cleared replacements for AR-010 and AR-013 root components",
+    "official-register trademark review before formal public-brand use",
     "maintainer admission to professional review and publication decision"
   ],
-  "claim_boundary": "This record defines participant gate evidence and authorities. It does not assert a maintainer decision, professional approval, rights clearance, publication authorization, or score increase."
+  "claim_boundary": "All 13 participant-controlled repairs are recorded complete for maintainer re-review. Remaining items are maintainer-process decisions or publication-triggered conditions; this record does not assert a maintainer decision, professional approval, rights clearance, publication authorization, or score increase."
 }

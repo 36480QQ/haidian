@@ -70,14 +70,14 @@
       "manifest_listed": true,
       "usage": "Participant-authored reviewer navigation and remediation register only; not maintainer endorsement, design prose, source authority, institutional commitment, approval, or publication authorization.",
       "ai_review_input_summary": {
-        "reviewed_baseline_sha256_prefix": "f578f2ab",
+        "reviewed_baseline_sha256_prefix": "5f758676bc00",
         "gate": "request_changes",
         "formal_review": false,
-        "score_total": 77,
+        "score_total": 80,
         "dimension_ids": ["brief_alignment", "originality", "ai_planning_innovation", "implementation_feasibility", "public_interest_inclusion", "risk_compliance", "expression_completeness"],
         "repair_ids": ["R01", "R02", "R03", "R04", "R05", "R06", "R07", "R08", "R09", "R10", "R11", "R12", "R13"],
-        "repair_counts": {"complete": 11, "in_progress": 0, "external_dependency": 2, "not_started": 0},
-        "open_feedback_ids": ["F-20260824-01"],
+        "repair_counts": {"complete": 13, "in_progress": 0, "external_dependency": 0, "not_started": 0},
+        "open_feedback_ids": ["F-20260825-01"],
         "priority_scenario_ids": ["T-01", "T-04", "T-10"],
         "deepened_sample_ids": ["S-LOW-DISTURBANCE-SPATIAL", "S-T04-AI-TEST"]
       }
@@ -92,9 +92,13 @@
         "asset_ledger_complete": true,
         "clearance_complete": false,
         "unresolved_current_package_group_count": 8,
+        "root_publication_evidence_gap_count": 2,
+        "root_publication_evidence_gap_ids": ["AR-010", "AR-013"],
+        "inherited_delivery_group_count": 5,
+        "conditional_public_brand_review_count": 1,
         "publication_clearance": false
       },
-      "claim_boundary": "Ledger completion records unknowns and dispositions; it is not legal advice or blanket rights clearance."
+      "claim_boundary": "Eight affected groups normalize to two root publication-evidence gaps, five inherited delivery groups, and one conditional public-brand item. The causal audit prevents duplicate counting but is not legal advice or blanket rights clearance."
     },
     {
       "id": "ASSET-CLEARANCE-DISPOSITION",
@@ -103,7 +107,7 @@
       "ownership": "participant_generated",
       "usage": "R07 public-release disposition using only cleared_with_evidence, replaced_with_cleared_asset, or excluded_from_public_package.",
       "publication_state": "do_not_publish",
-      "claim_boundary": "Eight unresolved groups remain physically present for review while excluded from any publishable build."
+      "claim_boundary": "Affected files remain physically present for review while excluded from any publishable build. The independent blockers are AR-010 map/satellite redistribution evidence and AR-013 generated-component lineage; downstream delivery groups inherit those same gaps, while AR-005 formal trademark review is conditional on public-brand use."
     },
     {
       "id": "BRAND-MODEL-PROVENANCE",
@@ -111,7 +115,7 @@
       "source_type": "participant_generated_provenance_register",
       "ownership": "participant_generated",
       "usage": "R12 register for the working brand, declared agent/model role groups, and existing Tokai/Oskyi/GPT-image/OSM/Esri evidence at its actual verification strength.",
-      "claim_boundary": "Unknown provider, model, batch, source hash, run, rights, or asset mapping fields remain null or unknown; names do not imply sponsorship or endorsement."
+      "claim_boundary": "Group-level workflow declarations and the verified Oskyi/gpt-image-2 family are recorded at their actual evidence strength. Remaining exact component lineage is a publication condition under AR-013; model names do not imply sponsorship or endorsement, and formal trademark review is conditional on public-brand use."
     },
     {
       "id": "NOTO-SANS-SC-OFL",

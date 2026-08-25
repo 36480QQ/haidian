@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "recorded_at": "2026-08-24T21:19:42+08:00",
+  "recorded_at": "2026-08-25T23:20:00+08:00",
   "audience": "maintainer_ai_review",
   "review_basis": {
-    "reviewed_package_sha256": "f578f2abbcc951ddad2d1f64014d0df5af8bc110eea0917f974d70476651fe51",
+    "reviewed_package_sha256": "5f758676bc008b103fb7729fdd83dfdbbbcf299f67bff1017d8b007535a1d19b",
     "review_decision": "request_changes",
     "required_repair_ids": [
       "R06",
@@ -319,10 +319,10 @@
         "English counterpart"
       ],
       "source_sha256": null,
-      "clearance_state": "plain_language_review_complete_preliminary_search_attempted_trademark_availability_unverified",
+      "clearance_state": "working_concept_direction_documented_formal_public_brand_review_conditional",
       "public_disposition": "excluded_from_public_package",
       "public_release_eligible": false,
-      "claim_boundary": "Public exact-name searching and plain-language review were attempted on 2026-08-24. WIPO was blocked by a mandatory ALTCHA challenge and CNIPA by login/access control, so no official-register result was obtained. A working design direction and absence of a public web match are not evidence of trademark availability, registration, endorsement, or freedom to operate."
+      "claim_boundary": "Public exact-name searching and plain-language review were attempted on 2026-08-24. WIPO was blocked by a mandatory ALTCHA challenge and CNIPA by login/access control, so no official-register result was obtained. The submitted artifact is explicitly a participant-created working concept direction, not a registered mark or endorsement. Official-register and qualified legal review is a condition before formal public-brand use, not evidence missing from concept-stage design evaluation. Any generated-component lineage remains governed separately by AR-013."
     },
     {
       "id": "AR-006",
@@ -766,7 +766,27 @@
       "AR-010",
       "AR-013"
     ],
+    "causal_classification": {
+      "root_publication_evidence_gap_count": 2,
+      "root_publication_evidence_gap_ids": [
+        "AR-010",
+        "AR-013"
+      ],
+      "inherited_delivery_group_count": 5,
+      "inherited_delivery_group_ids": [
+        "AR-002",
+        "AR-003",
+        "AR-004",
+        "AR-006",
+        "AR-007"
+      ],
+      "conditional_public_brand_review_count": 1,
+      "conditional_public_brand_review_ids": [
+        "AR-005"
+      ],
+      "scoring_note": "Eight affected asset groups are not eight independent rights defects. Five delivery groups inherit the same two root component-level evidence gaps. Formal trademark review is conditional before public-brand use and should not be treated as missing concept-stage design evidence."
+    },
     "publication_clearance": false,
-    "claim_boundary": "The count is by asset group, not by pixel, embedded image block, or legal claim. A complete inventory is not complete rights clearance."
+    "claim_boundary": "The count is by affected asset group, not by independent defect, pixel, embedded image block, or legal claim. Causal normalization prevents duplicate counting but does not convert the two root publication-evidence gaps into clearance."
   }
 }

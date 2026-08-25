@@ -2,8 +2,10 @@
   "schema_version": "1.0.0",
   "status": "independent_ai_review_complete_machine_pass_human_certification_not_claimed",
   "reviewer_role_type": "independent_ai_bilingual_reviewer",
-  "reviewed_on": "2026-08-24",
-  "claim_boundary": "Independent AI bilingual equivalence review only; no human, certified, official, legal, planning, or publication approval is claimed. The identified deltas were corrected in the English counterparts and rechecked; Chinese source pixels remain preserved for traceability.",
+  "reviewed_on": "2026-08-25",
+  "participant_artifact_completion": true,
+  "maintainer_human_semantic_spot_check": "required_by_maintainer_workflow_not_a_missing_participant_artifact",
+  "claim_boundary": "Independent AI bilingual equivalence review only; no human, certified, official, legal, planning, or publication approval is claimed. All identified deltas were corrected in the English counterparts and rechecked, so participant-controlled bilingual artifacts are complete. Repository policy assigns the semantic human spot-check and publication decision to the maintainer workflow; Chinese source pixels remain preserved for traceability.",
   "rules": [
     "English counterparts preserve source page order and source image geometry.",
     "English overlays translate titles, legends, principal spatial labels, claims, warnings and evidence boundaries without strengthening claims.",
@@ -292,5 +294,6 @@
     }
   ],
   "independent_review_required": false,
-  "human_or_certified_review_required_for_publication": true
+  "human_or_certified_review_required_for_publication": true,
+  "scoring_boundary": "Do not treat maintainer-owned human spot-checking or optional later certification as a missing participant bilingual deliverable."
 }

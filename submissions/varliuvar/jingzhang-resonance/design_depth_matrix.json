@@ -899,18 +899,21 @@
         "visual/assets/ai-review-layer.json",
         "visual/assets/asset-rights-ledger.json"
       ],
-      "current_reality_state": "权利台账、10/10 独立 AI 双语机器复核与参与者模型声明已完成；未清素材的权利证据、人类或持证审校、商标/逐图模型记录与最终维护者 QA 仍开放。",
+      "current_reality_state": "权利台账、10/10 独立 AI 双语机器复核、两处图文冲突修正与参与者模型声明已完成；维护者工作流负责人工语义抽查。发布层仍有 AR-010 地图/卫星再分发证据和 AR-013 生成组件逐图谱系两个根缺口；正式商标审查仅在品牌公开使用前触发。",
       "participant_complete": false,
-      "completeness_limited_by": ["10/10 bilingual-equivalence mappings pass independent AI machine review; the machine addendum remains an audit trail and human/certified review is not claimed", "rights-holder evidence or cleared replacement assets", "official-register trademark result and per-asset model-record review", "final maintainer QA"],
+      "completeness_limited_by": ["maintainer human semantic spot-check and final maintainer QA are external review-process responsibilities, not missing participant artifacts", "publication-only rights evidence, removal, or cleared replacements for AR-010 and AR-013 root components", "official-register trademark review only before formal public-brand use"],
       "ai_review_structured_summary": {
-        "repair_counts": {"complete": 11, "in_progress": 0, "external_dependency": 2, "not_started": 0},
-        "open_feedback_ids": ["F-20260824-01"],
+        "repair_counts": {"complete": 13, "in_progress": 0, "external_dependency": 0, "not_started": 0},
+        "open_feedback_ids": ["F-20260825-01"],
+        "rights_root_gap_ids": ["AR-010", "AR-013"],
+        "rights_inherited_delivery_group_ids": ["AR-002", "AR-003", "AR-004", "AR-006", "AR-007"],
+        "conditional_public_brand_review_ids": ["AR-005"],
         "rights_ledger_path": "visual/assets/asset-rights-ledger.json",
         "manifest_registration_state": "finalized_with_r13_records_listed"
       },
       "external_dependencies": [
-        "权利人证据或已清替代素材",
-        "双语、商标、渲染和维护者评审角色"
+        "发布前补齐 AR-010、AR-013 权利证据或采用已清替代素材",
+        "维护者人工语义抽查与最终 QA；正式品牌使用前的商标审查"
       ]
     }
   ]

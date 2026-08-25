@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "recorded_at": "2026-08-24T21:19:42+08:00",
+  "recorded_at": "2026-08-25T23:20:00+08:00",
   "audience": "maintainer_ai_review",
   "source_ledger": "visual/assets/asset-rights-ledger.json",
   "package_publication_state": "do_not_publish",
@@ -14,7 +14,7 @@
     {"asset_group_id": "AR-002", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "per-component provider, source, and redistribution evidence or cleared replacement"},
     {"asset_group_id": "AR-003", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "AR-002 clearance or cleared replacement"},
     {"asset_group_id": "AR-004", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "AR-003 clearance or cleared replacement"},
-    {"asset_group_id": "AR-005", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "official-register trademark result and qualified legal review; preliminary public search and plain-language review are recorded but are not clearance"},
+    {"asset_group_id": "AR-005", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "working_concept_direction_documented_public_brand_use_conditional", "blocking_dependency": null, "conditional_dependency": "official-register and qualified legal review before formal public-brand use; not a blocker for concept-stage design evaluation"},
     {"asset_group_id": "AR-006", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "AR-002 through AR-005 clearance or cleared replacement"},
     {"asset_group_id": "AR-007", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "verified source-generation provenance and rights or cleared replacement"},
     {"asset_group_id": "AR-008", "current_package_presence": true, "public_disposition": "cleared_with_evidence", "implementation_status": "retained_with_OFL_1_1_notice", "blocking_dependency": null},
@@ -42,8 +42,8 @@
     },
     {
       "priority": 4,
-      "action": "Complete trademark and international-semantics review before treating the working name or logo direction as a public brand asset.",
-      "acceptance": "The reviewer role and decision evidence are recorded without implying registration or endorsement."
+      "action": "Before formal public-brand use, complete trademark and international-semantics review; retain the submitted name and logo only as an expressly labelled working concept direction until then.",
+      "acceptance": "The condition is triggered by formal public-brand use and is not represented as a concept-review blocker; no registration or endorsement is implied."
     }
   ],
   "summary": {
@@ -53,7 +53,10 @@
     "excluded_from_public_package_group_count": 10,
     "unresolved_current_package_group_count": 8,
     "current_package_excluded_but_physically_present_group_ids": ["AR-002", "AR-003", "AR-004", "AR-005", "AR-006", "AR-007", "AR-010", "AR-013"],
+    "root_publication_evidence_gap_ids": ["AR-010", "AR-013"],
+    "inherited_delivery_group_ids": ["AR-002", "AR-003", "AR-004", "AR-006", "AR-007"],
+    "conditional_public_brand_review_ids": ["AR-005"],
     "publishable_now": false,
-    "claim_boundary": "The package-level exclusion is an explicit review boundary, not proof that excluded bytes have already been removed."
+    "claim_boundary": "The package-level exclusion is an explicit review boundary, not proof that excluded bytes have already been removed. Eight affected groups normalize to two root publication-evidence gaps, five inherited delivery groups, and one conditional public-brand item; they must not be scored as eight independent defects."
   }
 }

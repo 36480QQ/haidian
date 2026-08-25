@@ -67,19 +67,19 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "77aa8cef46a887227b3b329fc309ff014d6fbef2b5424eada7842c03b6e16047"
+      "sha256": "172bfa5ceaf0f9f77e6b9503a451a1b5284f56695cc7693449118dae33eaffd9"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "05c98c53f2ca68e9927343e3d967d6c4935fb441deccc21abc10c369b9179071"
+      "sha256": "604c113f1d34c2c27785bd97cf2926ba0244c17fcfa94cd4c0ec747fc24fee2a"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3017dfa8c89c4401c976616fc0507f2ad02caf109133d69d66cd6720788d31d4"
+      "sha256": "94acf19e550cb5474072b7da93fcbb6af2cb84a82e4e1f3a3de393b368eea502"
     },
     {
       "path": "standard_matrix.json",
@@ -91,7 +91,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "838e1ef482ea04a48e54b270b38723ed4f9ac17539c9f4b010ee53b39f68911f"
+      "sha256": "84c1f46c62375d41e7c44f6cd0bd15ede6ba2ace157a8e06f7cc457527078851"
     },
     {
       "path": "report/proposal.html",
@@ -110,7 +110,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "e532ee0f5af9e6db6fbde51069164728622a3dc30d32e622c3dd13db4277b4bf"
+      "sha256": "f82c8006724671f5e4e4f0b71b206bd72d4f96594b96347b983913c24f5c527e"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -131,14 +131,14 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "81fd1477ddb55aa8ee538a97116d6d2b42ecca0c1f5dbf39c42135279682c2ca"
+      "sha256": "a86d088bb2f83e9ef141bef4fd33029cf1df839864d13b0877e8861a881c94fe"
     },
     {
       "path": "visual/index.en.html",
       "role": "visualization",
       "required": true,
       "language": "en",
-      "sha256": "b941c1043d081902cde2f748ffa0a8559435a7c4a61855260718f6e2f9ce7fcc",
+      "sha256": "f5fa8c70ae13db876d9e5f0054f25137444ac38e5856bb2b2ce391ee2320a416",
       "translation_of": "visual/index.html"
     },
     {
@@ -455,21 +455,21 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "65d9eefca9cf367f5fe6afe1d56567c9bb2171cbad3ffff8be3478243b45de69"
+      "sha256": "9abffe99789a546c6bef2153931a04030f50052fa04d45625215a6ffad23cbe0"
     },
     {
       "path": "visual/assets/asset-rights-ledger.json",
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "5bdf15ac50104721f2afdbb1d86d5cc42c7db852155d1cd638cdbc52890d6e25"
+      "sha256": "81bf9e2d685bc46f20c1c2651b553836bf40e4cfcb3b9b40ba4cffd01ce69dfc"
     },
     {
       "path": "visual/assets/asset-clearance-disposition.json",
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "743293371ab737e836f9a18e543503d79307b84fe53f436b71b4d29a8c2d04ea"
+      "sha256": "37a2f221d4bcbc9728df1af091f57b0fe69c73ea2e2b2e8085f29640064de18b"
     },
     {
       "path": "visual/assets/brand-model-provenance.json",
@@ -483,14 +483,14 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "c92b0ab6873c2637295fea4321595279202a2f1dd0f6bdee7b42a2e3e29e107a"
+      "sha256": "352b1bc17dee0da776d407f39e8d5592fb0e5f7c14f456bb3f738b6bc5da6ab0"
     },
     {
       "path": "visual/assets/check-ai-review-layer.js",
       "role": "verification_script",
       "required": true,
       "language": "neutral",
-      "sha256": "2cefcf10060c84b61ed958359da9a91492962ea2e4e3c9b76ab1bdde081b3396"
+      "sha256": "d9980bcdc019fa816de5ac0416c02b237de0ce77e1c2f24b9618edc08978db60"
     },
     {
       "path": "visual/assets/low-disturbance-spatial-sample.json",
@@ -525,7 +525,7 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "9ce51e531253f89bc53291990af2f811d2e7f155b1427b5f2b13779695f9527b"
+      "sha256": "3c1b7bce03154aebdd87cdf837e0788585b308fd0a1bc7cef12b2870fea803b7"
     },
     {
       "path": "visual/assets/final-render-qa.json",
@@ -539,7 +539,7 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "d48cbf37f736bf5c0423ccaf3137966e5fea74c374aab161441f32abe24bb174"
+      "sha256": "96baabe3061c056784bf78f4f6276379396c7a94830881c6a1bc75ff74734923"
     }
   ],
   "validation_claim": {
@@ -578,12 +578,12 @@
           ],
           "human_narrative_frozen": true,
           "repair_counts": {
-            "complete": 11,
+            "complete": 13,
             "in_progress": 0,
-            "external_dependency": 2,
+            "external_dependency": 0,
             "not_started": 0
           },
-          "external_dependency_count": 2,
+          "external_dependency_count": 0,
           "publication_state": "do_not_publish"
         }
       }

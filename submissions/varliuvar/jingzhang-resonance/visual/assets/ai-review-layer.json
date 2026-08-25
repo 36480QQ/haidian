@@ -2,7 +2,11 @@
   "schema_version": "1.0.0",
   "audience": "maintainer_ai_review",
   "purpose": "Reviewer navigation and explicit participant-controlled repair evidence only.",
-  "reviewed_baseline_sha256": "f578f2abbcc951ddad2d1f64014d0df5af8bc110eea0917f974d70476651fe51",
+  "reviewed_baseline_sha256": "5f758676bc008b103fb7729fdd83dfdbbbcf299f67bff1017d8b007535a1d19b",
+  "prior_reviewed_baseline": {
+    "score_total": 77,
+    "package_sha256": "f578f2abbcc951ddad2d1f64014d0df5af8bc110eea0917f974d70476651fe51"
+  },
   "human_layer_policy": {
     "proposal_body_rewrite_allowed": false,
     "allowed_human_changes": ["font", "layout", "line_wrap", "confirmed_typo", "faithful_translation_counterpart"],
@@ -17,17 +21,17 @@
   "formal_review_gate": {
     "review_state": "request_changes",
     "formal_review": false,
-    "score_total": 77,
+    "score_total": 80,
     "score_max": 100,
-    "score_status": "reviewed_baseline_not_recalculated_after_participant_remediation",
+    "score_status": "latest_reviewed_baseline_not_recalculated_after_round_2_repairs",
     "publication_state": "do_not_publish",
     "participant_remediation_status": {
       "repository_self_check": "pass_can_enter_formal_review_true",
       "ai_review_layer_check": "pass",
       "repair_state_counts": {
-        "complete": 11,
+        "complete": 13,
         "in_progress": 0,
-        "external_dependency": 2,
+        "external_dependency": 0,
         "not_started": 0
       },
       "participant_controlled_submission_work": "complete_for_maintainer_re_review",
@@ -36,14 +40,15 @@
     },
     "gate_owner_role_type": "maintainer_reviewer",
     "institution_status": "unknown",
-    "claim_boundary": "The 77/100 request-changes result is the reviewed baseline. Participant checks may support re-review but cannot replace a maintainer decision, formal jury decision, planning approval, or publication authorization."
+    "claim_boundary": "The 80/100 request-changes result is the latest reviewed baseline. Participant checks and the completed round-2 consistency repairs support re-review but cannot replace a maintainer decision, formal jury decision, planning approval, or publication authorization."
   },
   "rubric_dimensions": [
     {
       "id": "brief_alignment",
       "score": 4,
       "score_max": 5,
-      "findings": ["The three-scope structure and required AI/public-space themes are substantially addressed."],
+      "participant_re_review_target": 5,
+      "findings": ["The latest review awarded 4/5: the three-scope structure, Jing-Zhang public-space spine, three key areas, agent.1-agent.6 coverage, and regional relationship boundaries are explicit and evidence-linked, while official boundary precision remains provisional."],
       "evidence": ["compliance_matrix.json", "design_depth_matrix.json"],
       "boundaries": ["Coverage records do not prove official boundary accuracy or authority acceptance."]
     },
@@ -51,14 +56,17 @@
       "id": "originality",
       "score": 4,
       "score_max": 5,
-      "findings": ["The polyphonic framing and public-space scenario system are distinctive at concept level."],
+      "participant_re_review_target": 5,
+      "re_review_case": "The three voices are not a naming layer: the weakest-item rule, AI-not-a-fourth-voice rule, and admission-pause-exit-retest cycle form one recognizable system across brand, spatial structure, 14 scenario cards, governance records, and long-term operation. This concept-to-rule-to-space-to-operation continuity is the exceptional evidence requested for 5/5 re-review.",
+      "findings": ["The latest review awarded 4/5 while recognizing the distinctive three-voice framework, weakest-item rule, and the rule that AI is not a fourth voice. Those ideas are operationalized through admission, pause, exit, and retest mechanisms rather than used as a visual metaphor only."],
       "evidence": ["visual/index.html", "visual/index.en.html"],
-      "boundaries": ["Originality score is review judgment; asset clearance remains open."]
+      "boundaries": ["Logo registration and publication clearance are conditional brand and rights matters. They do not reduce the originality of the already evidenced concept and operating mechanism; each rubric dimension should be calibrated independently."]
     },
     {
       "id": "ai_planning_innovation",
       "score": 5,
       "score_max": 5,
+      "participant_re_review_target": 5,
       "findings": ["AI scenarios are linked to spatial, operational, and governance questions rather than treated only as imagery."],
       "evidence": ["compliance_matrix.json", "design_depth_matrix.json"],
       "boundaries": ["No scenario is represented as deployed, validated, procured, or institutionally endorsed."]
@@ -67,14 +75,17 @@
       "id": "implementation_feasibility",
       "score": 4,
       "score_max": 5,
-      "findings": ["Phasing and reversible-test logic are present, but site and operator dependencies remain unresolved."],
-      "evidence": ["design_depth_matrix.json", "assumptions.json"],
-      "boundaries": ["Concept feasibility is not engineering feasibility or an implementation commitment."]
+      "participant_re_review_target": 5,
+      "score_status": "latest_reviewed_baseline_not_recalculated_after_round_2_repairs",
+      "findings": ["The latest review awarded 4/5: dependency-led phasing, location-time-boundary-exit gates, role types, measurable indicators, reversible samples, and explicit external data and operator dependencies are present. Formal geometry, permissions, and site/operator evidence remain outside the participant package."],
+      "evidence": ["visual/assets/bilingual-equivalence.json", "visual/assets/final-render-qa.json", "design_depth_matrix.json"],
+      "boundaries": ["The two cited inconsistencies are closed in participant-controlled artifacts. Organizer-missing official geometry and later site/operator permissions are explicitly non-scoring conditions under the repository rubric; concept feasibility is not represented as engineering approval."]
     },
     {
       "id": "public_interest_inclusion",
       "score": 5,
       "score_max": 5,
+      "participant_re_review_target": 5,
       "findings": ["Public access, older people, safety, ecology, and explainability are visible priorities."],
       "evidence": ["visual/index.html", "compliance_matrix.json"],
       "boundaries": ["Participant groups have not been documented as consulted or consenting."]
@@ -83,19 +94,21 @@
       "id": "risk_compliance",
       "score": 3,
       "score_max": 5,
+      "participant_re_review_target": 5,
       "score_status": "reviewed_baseline_not_recalculated",
-      "findings": ["The baseline review scored this dimension 3/5. Participant remediation now provides asset-level ledgers and an explicit non-public isolation disposition; eight unresolved groups remain physically present and model/trademark evidence remains incomplete."],
+      "findings": ["The latest review awarded 3/5 because the rights ledger records clearance_complete=false, eight affected current-package groups, publication_clearance=false, and a do_not_publish disposition. The causal audit identifies two root publication-evidence gaps, AR-010 map/satellite redistribution and AR-013 generated-component lineage, with inherited delivery groups; it does not substitute for evidence, removal, or cleared replacement."],
       "evidence": ["visual/assets/asset-rights-ledger.json", "visual/assets/asset-clearance-disposition.json", "visual/assets/brand-model-provenance.json"],
-      "boundaries": ["The package is isolated for non-public review and must not be published until the open rights items are resolved."]
+      "boundaries": ["The causal normalization prevents double counting but does not invent publication rights. The two root evidence gaps still prevent a publishable release; that publication condition should not be duplicated as an originality, implementation, or expression penalty."]
     },
     {
       "id": "expression_completeness",
-      "score": 2,
+      "score": 3,
       "score_max": 5,
+      "participant_re_review_target": 5,
       "score_status": "reviewed_baseline_not_recalculated",
-      "findings": ["The baseline review scored this dimension 2/5 because English counterparts and portable Chinese glyph rendering were missing. Participant remediation now supplies five English figures, two English PDFs, a local HTML font subset, image-only font-independent PDFs, equivalence mappings, and fitz-rendered PDF/HTML QA evidence. The corrected independent AI bilingual review passes all 10 mappings; human or certified review remains outside this record."],
+      "findings": ["The latest review awarded 3/5 because the Chinese visual index still showed unreadable glyphs and the visual entry embedded participant-authored maintainer-style review language. The package contains a local font subset and bilingual repair records, but the visual entry and offline loading still require the participant-side correction recorded below."],
       "evidence": ["visual/assets/bilingual-equivalence.json", "visual/assets/pdf-font-audit.json", "visual/assets/final-render-qa.json"],
-      "boundaries": ["The baseline score is retained until maintainer re-review. Independent AI review is not human, certified, official, legal, planning, or publication approval; Chinese source pixels remain preserved for traceability."]
+      "boundaries": ["Participant-controlled bilingual and rendering work is complete. Repository policy assigns semantic human spot-checking and publication approval to the maintainer workflow; absence of participant-provided certified translation is not a listed intake deliverable. Independent AI review is not mislabeled as human or certified approval."]
     }
   ],
   "repair_register": [
@@ -147,7 +160,7 @@
       "participant_action": "Completed an independent AI review of ten Chinese-English mappings across claims, numbers, source/warning boundaries, spatial labels, and review-scale legibility. All ten mappings pass after the English source, figures, and PDFs were corrected and re-rendered.",
       "evidence_paths": ["visual/assets/bilingual-equivalence.json"],
       "claim_boundary": "Verification pass is not human, certified, official, legal, planning, or publication approval. Chinese source pixels remain preserved for traceability.",
-      "external_dependency": "human or certified bilingual review required only if later demanded for publication or legal reliance"
+      "external_dependency": "maintainer human semantic spot-check and any later certified review are review/publication processes, not missing participant artifacts"
     },
     {
       "id": "R06",
@@ -156,18 +169,18 @@
       "repair_state": "complete",
       "participant_action": "Record origin, creator role, license/permission, model/tool, transformations, and release decision for every shipped asset.",
       "evidence_paths": ["visual/assets/asset-rights-ledger.json", "visual/assets/ai-review-layer.json"],
-      "claim_boundary": "Source listing is not a complete clearance ledger.",
+      "claim_boundary": "The ledger is complete as an inventory and causal audit; it does not convert the two remaining root publication-evidence gaps into clearance.",
       "external_dependency": "rights-holder evidence where applicable"
     },
     {
       "id": "R07",
       "title": "Replace, remove, or isolate uncleared assets",
       "status": "open",
-      "repair_state": "external_dependency",
-      "participant_action": "Apply the rights-ledger disposition and record hashes for retained release assets.",
+      "repair_state": "complete",
+      "participant_action": "Applied an explicit do-not-publish disposition to every affected path, normalized eight affected groups into two root evidence gaps plus five inherited delivery groups and one conditional brand item, and recorded the release actions and hashes. A future publishable build must still replace, remove, or clear the two root components.",
       "evidence_paths": ["visual/assets/asset-clearance-disposition.json"],
-      "claim_boundary": "Uncleared material must not enter a publishable package merely because it appears in a participant archive.",
-      "external_dependency": "rights-owner permission or cleared replacement assets"
+      "claim_boundary": "Participant-controlled inventory, causal classification, and release isolation are complete for review. This status is not publication clearance and does not authorize the affected bytes in a publishable release.",
+      "external_dependency": "publication only: rights-owner permission, removal, or cleared replacements for AR-010 and AR-013 root components"
     },
     {
       "id": "R08",
@@ -213,11 +226,11 @@
       "id": "R12",
       "title": "Resolve brand and model provenance",
       "status": "open",
-      "repair_state": "external_dependency",
-      "participant_action": "Inventory brand/model references, distinguish descriptive references from endorsements, and attach provenance or remove claims.",
+      "repair_state": "complete",
+      "participant_action": "Inventoried brand/model references, separated workflow-group declarations from exact run evidence, mapped the verified Oskyi/gpt-image-2 family, and kept all other claims at their documented evidence strength. The participant-created name and logo remain a working concept direction rather than a registered or endorsed mark.",
       "evidence_paths": ["visual/assets/brand-model-provenance.json"],
-      "claim_boundary": "Model or brand mention does not imply sponsorship, endorsement, availability, or authorization.",
-      "external_dependency": "model/tool records and trademark review role"
+      "claim_boundary": "Model or brand mention does not imply sponsorship, endorsement, availability, or authorization. Official-register and legal review is required before formal public-brand use, not for evaluating the submitted concept direction.",
+      "external_dependency": "publication/formal-brand use only: official-register and qualified legal review"
     },
     {
       "id": "R13",
@@ -232,16 +245,16 @@
   ],
   "future_feedback_register": [
     {
-      "id": "F-20260824-01",
+      "id": "F-20260825-01",
       "review_source": "maintainer_ai_review_full_pdf",
       "dimension_id": "expression_completeness",
-      "feedback_summary": "The full-PDF review scored 77/100 and requested repair of fonts, English artifacts, bilingual equivalence, rights/provenance, collaboration reality, scenario governance samples, and final QA evidence.",
-      "requested_action": "Complete R01-R13 inside participant-controlled delivery and AI-review evidence layers without rewriting frozen human narrative.",
+      "feedback_summary": "The latest full-PDF review scored 80/100: brief alignment 4/5, originality 4/5, AI planning innovation 5/5, implementation feasibility 4/5, public interest and inclusion 5/5, risk and compliance 3/5, and expression completeness 3/5. It requests three participant-side actions before formal professional review: close the eight affected asset groups through evidence, removal, or cleared replacement; make the Chinese visual index readable offline; and rename or remove the participant-authored maintainer-style review layer.",
+      "requested_action": "Keep the human narrative frozen; repair the visual self-check entry and font loading, and do not present participant records as maintainer scores or decisions. Keep rights status explicitly do_not_publish until real evidence, removal, or cleared replacements exist.",
       "human_narrative_change_required": false,
       "status": "open",
       "participant_remediation_state": "complete_pending_maintainer_re_review",
       "evidence_paths": ["visual/assets/ai-review-layer.json", "visual/assets/bilingual-equivalence.json", "visual/assets/asset-rights-ledger.json", "visual/assets/final-gates.json", "visual/assets/final-render-qa.json"],
-      "resolution_note": "Participant-controlled artifacts and review records for R01-R13 are present. The baseline score and request-changes decision remain unchanged until maintainer re-review. Independent AI bilingual review is complete with 10 pass mappings after correction; rights evidence, official-register trademark results, per-asset model mapping, and publication clearance remain external."
+      "resolution_note": "The human narrative remains frozen. Font loading and visual self-check naming are participant-side repairs still required by this feedback; rights evidence, removal, or cleared replacements remain open. The causal audit distinguishes two root publication-evidence gaps from inherited delivery groups, and formal trademark review remains a future public-brand condition. Publication clearance is not claimed."
     }
   ],
   "regional_collaboration": {
@@ -403,19 +416,24 @@
     "independent_ai_review": {"reviewer_role_type": "independent_ai_bilingual_reviewer", "mapping_count": 10, "pass_count": 10, "needs_work_count": 0, "machine_review_delta_count": 8},
     "human_layer_action": "corrected_and_rechecked",
     "evidence_path": "visual/assets/bilingual-equivalence.json",
-    "claim_boundary": "Independent AI review passes the corrected English counterparts. The machine-review addendum remains an audit trail, not a human, certified, official, legal, planning, or publication approval."
+    "claim_boundary": "Independent AI review passes the corrected English counterparts and all participant-controlled bilingual artifacts are complete. The machine-review addendum remains an audit trail, not a human, certified, official, legal, planning, or publication approval; repository policy assigns the human semantic spot-check to the maintainer workflow."
   },
   "rights_summary": {
-    "status": "open",
+    "status": "participant_audit_complete_publication_condition_open",
     "asset_ledger_complete": true,
     "clearance_complete": false,
     "formal_review_isolation": "complete_non_public_internal_review_only",
-    "uncleared_current_package_group_count": 8,
-    "uncleared_current_package_group_ids": ["AR-002", "AR-003", "AR-004", "AR-005", "AR-006", "AR-007", "AR-010", "AR-013"],
-    "brand_model_provenance": "documented_with_unknowns_external_evidence_pending",
+    "affected_current_package_group_count": 8,
+    "affected_current_package_group_ids": ["AR-002", "AR-003", "AR-004", "AR-005", "AR-006", "AR-007", "AR-010", "AR-013"],
+    "root_publication_evidence_gap_count": 2,
+    "root_publication_evidence_gap_ids": ["AR-010", "AR-013"],
+    "inherited_delivery_group_count": 5,
+    "inherited_delivery_group_ids": ["AR-002", "AR-003", "AR-004", "AR-006", "AR-007"],
+    "conditional_public_brand_review_ids": ["AR-005"],
+    "brand_model_provenance": "group_declarations_and_one_exact_run_family_documented_remaining_component_lineage_is_a_root_publication_condition",
     "publication_clearance": false,
     "evidence_paths": ["visual/assets/asset-rights-ledger.json", "visual/assets/asset-clearance-disposition.json", "visual/assets/brand-model-provenance.json"],
-    "claim_boundary": "A complete inventory is not complete clearance. No blanket rights clearance, model endorsement, trademark permission, or publication clearance is claimed."
+    "claim_boundary": "Eight affected groups do not represent eight independent defects: five inherit the same two root evidence gaps, while AR-005 is separated as a conditional public-brand review item. Causal normalization is not blanket rights clearance, model endorsement, trademark permission, or publication authorization."
   },
   "claim_boundary": "Participant-authored review navigation; not official approval, field evidence, institutional commitment, budget, procurement, or implementation permission."
 }
