@@ -14,7 +14,7 @@
     "model_family": "deepseek",
     "model_detail": "初稿 accounts/fireworks/models/kimi-k3 via opencode (fireworks provider)；迭代 zcode (model GLM-5.3)；v1.3 阶段署名：同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）（Tongji Design AI Cloud: DeepSeek Harness + ox-alpha, with subagent CLIs Codex (GPT-5.6-Sol) and Claude Code (Claude Opus 5)）"
   },
-  "generated_at": "2026-08-24T04:00:30Z",
+  "generated_at": "2026-08-25T21:21:54Z",
   "files": [
     {
       "path": "manifest.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a38d2f828c5bc934b81473632a705c466f6466bad28c57d28fd0f62efc0de7ee"
+      "sha256": "360f8b7793659447279f18806bb180e2c6d7fe0892f557b55c79d0bdb5503ff5"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "893c38779dc3d4410e63d91028293b44fbdab010aa8b2f242445029a1545bf26"
+      "sha256": "a657f8f88c99e2ec7e1b6d7162ef26ab337521ed57626cc4adb9743c374dc14f"
     },
     {
       "path": "standard_matrix.json",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "7a78ffeb92c49291b19a8ece66b979efa09d8c0a9f7e439e66c702e8bf737d65"
+      "sha256": "3bf8e9e4539a2b1e5bbaf90e8da3ba7325e56c21b1406ec17fb2c027d4e606d2"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -374,7 +374,7 @@
       "sha256": "5b206f45f93886ebc3af556ce33be444bca0502e5d228ddcea09a3853bcd4945",
       "title_zh": "京张气脉 · 风水AI · 画廊封面",
       "title_en": "Jing-Zhang Qi-Pulse · Fengshui AI · gallery cover",
-      "description_zh": "宣纸+金脉体系的确定性导出：金脊曲线取自 roads.geojson 真实绿脊中心线，罗盘×人字形标志与品牌图件同源；由 matplotlib 渲染，仅用系统自带微软雅黑与 DejaVu 字体，无生成式图像素材。概念表达，非空间依据。",
+      "description_zh": "宣纸+金脉体系的确定性导出：金脊曲线取自 roads.geojson 真实绿脊中心线，罗盘×人字形标志与品牌图件同源；由 matplotlib 渲染，中文使用 Noto Sans SC（OFL-1.1 子集嵌入）、英文使用 DejaVu Sans，无生成式图像素材。概念表达，非空间依据。",
       "description_en": "A deterministic export of the rice-paper-and-gold system: the gold spine is the real greenway centreline from roads.geojson; the compass-and-herringbone mark shares construction with the brand figure. Rendered by matplotlib with system fonts only (Microsoft YaHei, DejaVu Sans); no generative image material. Conceptual expression, not spatial evidence."
     },
     {
@@ -556,7 +556,7 @@
       "language": "neutral",
       "title_zh": "无障碍色觉核验结果（四类色觉 × 55 色对）",
       "title_en": "Accessibility colour-check results",
-      "description_zh": "11 色语义色板在正常/绿盲/红盲/蓝盲条件下的 CIEDE2000 两两核验逐对结果；38 对例外与整改说明见正文。",
+      "description_zh": "11 色语义色板在正常/绿盲/红盲/蓝盲条件下的 CIEDE2000 两两核验逐对结果；36 对例外与整改说明见正文。",
       "description_en": "Pairwise CIEDE2000 results of the 11-colour palette under four vision conditions; 38 exceptions with remediation notes in the proposal.",
       "sha256": "5b2cdae45e22935272fca16abd66df3275fa48bd56caff8b63688591fe277918"
     }

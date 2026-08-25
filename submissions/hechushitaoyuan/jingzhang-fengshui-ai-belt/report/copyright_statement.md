@@ -92,7 +92,7 @@
 
 - 所有引用的国家标准（GB/T、CJJ、JGJ 等）、法律法规（《无障碍环境建设法》等）及政策文件均属于公开法律法规与国家标准文献，仅作为规划设计参考依据（background_only），不构成对标准文本本身的再分发。
 - 历史文献（京张铁路史料、清华园车站旧址）均来自公开权威记载，仅支撑文化叙事，不作为法定测绘依据。
-- 全部来源均已在 `sources.json` 中明确登记其 `source_type`（approved_formal / background_only / provisional_only / user_provided_cleared），严格执行三态使用纪律。
+- 全部来源均已在 `sources.json` 中明确登记其 `source_type`（official_public / background_only / provisional_only / user_provided_cleared / repository_public_registry / repository_processed_reference / agent_inferred_from_public_data），并按来源等级执行使用纪律。
 
 ## 9. 权利声明结论
 
