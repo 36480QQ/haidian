@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a101d8091482f8fd0c536debb7a74e4c584fceba417f00f950b9e395298fd048"
+      "sha256": "48414f86bc32ab3f4fd601f50c63360347dfa2101c2cb7ee285a2df2f8434e2d"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2ae90922dc3daca557a08a14cc5d3c414d9c171de4d99f62a923449aa6a18168"
+      "sha256": "cd0d1fc7c32ce9d3bed14e8434900657680eaa555fc138c31dce5c098d7252a9"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "df671ff091093c71163c582e122b587cc7fc05cd8ef81b97f8a5a458f9b06f7e"
+      "sha256": "cbfe7fdc2b63bef6cfb6b70345c59c33c32dc6d469a06faf24b97f10c61d8340"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a161b18fb7eacbdeb4e95c2d7528263059040419d26269df4c528ef10963d42e"
+      "sha256": "806725488ec3b1ac846714625ba02c40829ffe38b84b61a62b49f0c4ad7aea7a"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f65dc01446bc280569a1dbaa1803643f16dc316aa7ed8b687e751503409fd36d"
+      "sha256": "b15a55f2702a78192177179f6d78b4bdfc5d2d391ab3dc71a65cb6b0d9ccc19f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -521,7 +521,7 @@
       "path": "visual/assets/fonts.css",
       "role": "asset",
       "required": false,
-      "sha256": "f22fc5377317b5f926ab0c97d3a30fa7ca7667f0fa486f74315da4e4669d2740",
+      "sha256": "170bff36334c26cd27ee00af991015a5bd2747cc8fd5a86930d8ba7daf05ec56",
       "title_zh": "嵌入式 Noto Sans SC 子集样式（评审渲染用）",
       "title_en": "Embedded Noto Sans SC subset stylesheet for reviewer-side rendering",
       "description_zh": "按 SIL OFL 1.1 分发（许可全文见文件头注释）；base64 嵌入字符子集，供无 CJK 字体环境离线正确渲染中文。",
