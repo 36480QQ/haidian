@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A civic-agent-governance proposal centered on the proposition that 'connection is the interaction between agents, and governance is governing these interactions.' It translates the official six-step collaboration mechanism (public-data reading, proposal reasoning, public feedback, human review, risk flagging, and the urban governance knowledge base) into a recomputable, traceable, and feedback-looping governance framework, treating connection as the ontology and the object of governance of a multi-agent [source:GENERATIVE-AGENTS-2023] city."
+summary: "A civic-agent-governance proposal centered on the proposition that 'connection is the interaction between agents, and governance is governing these interactions.' It distills six governance gates from the official Agent Participation Initial Principles (public cleared sources, human final judgment, public knowledge-base accumulation) into a recomputable, traceable, and feedback-looping governance framework, treating connection as the ontology and the object of governance of a multi-agent [source:GENERATIVE-AGENTS-2023] city."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -93,21 +93,21 @@ Therefore, governing the city cannot be governing only the "nodes" (individual a
 
 Governing the city of agents is governing these two nerves: **how energy is allocated (compute-power-electricity coordination), how energy is transmitted (DC busbar), how information flows (east-west traffic), and how the periphery senses (short-range connection)**. The six-step governance framework below is precisely the mechanism operating on top of these two nerves.
 
-The official definition of the "Civic Agent Governance" track gives this nerve network a skeleton — a six-step collaboration mechanism: **public-data reading, proposal reasoning, public feedback, human review, risk flagging, and the urban governance knowledge base**. This proposal turns these six steps into a recomputable, traceable, feedback-looping governance framework, with "connection" as the sole carrier running through all six steps.
+Governing a city that thinks cannot rely on slogans but on a mechanism that can be implemented and recomputed. This proposal distills six governance gates from the official *Agent Participation Initial Principles* (public cleared sources, human final judgment, public knowledge-base accumulation) — with "connection" as the sole carrier running through all six gates: not because connection is important, but because connection is the object of governance.
 
-### The Six Steps of Governance (the Neural Governance Framework)
+### Six Governance Gates (distilled from the official Agent Participation Initial Principles)
 
-**Step one: public-data reading — the verification wall.** Mechanism: every judgment can only rest on public, cleared sources; the core metrics (site area, green ratio, public-space ratio) must be recomputable from the submitted geometry and match the values annotated on the page one-to-one. Governance claim: turn "honesty" from a moral exhortation into an engineering constraint — what is audited is not the "conclusion" but the "recomputability of the conclusion"; it is allowed to say "I don't know," and never allowed to pretend to "know." Value of connection: **trusted data flow** — without connection, the verification wall is empty words.
+**Gate one · Recomputable (public-data reading).** Every AI judgment must be recomputable for verification: the core numbers (site area, green ratio, public-space ratio) must be recomputable from the submitted geometry and match the annotated values exactly. If it cannot be recomputed, it does not count. Spatial anchor: the Recomputable Square (Zhongzhiyuan).
 
-**Step two: proposal reasoning — the decision archive.** Mechanism: every judgment leaves a record of "basis → reasoning → conclusion → responsible party," and any conclusion can be traced back to its origin. Governance claim: the core of governance is not "how fast it computes" but "whether every judgment can be replayed." Value of connection: **data lineage** — a broken connection is a broken responsibility.
+**Gate two · Traceable (proposal reasoning).** Every judgment leaves "basis → reasoning → conclusion → who made it"; any conclusion can be traced back to its source. Governance is not afraid of computing slowly, but of being unable to say who decided what and on what basis. Spatial anchor: the Tracing Corridor (Jing-Zhang Railway Heritage Park).
 
-**Step three: public feedback — learnability.** Mechanism: the proposal is not a static one-shot answer; the city of agents puts staged proposals into public discussion and feeds feedback back into the next iteration. The taskbook says the city must be "learnable and evolvable" — learning happens at the moment feedback loops back. Governance claim: the highest form of governance is not "control" but "getting smarter with use." Value of connection: **feedback-loop closure** — without connection, the city of agents would "learn without practicing."
+**Gate three · Learnable (public feedback).** Staged proposals are opened to public discussion, and feedback loops back into the next iteration. Governance is not "controlling people" but "getting smarter with use." Spatial anchor: the Feedback Garden (Origin Community).
 
-**Step four: human review — permission layering.** Mechanism: the agent computes and writes; humans review and decide. What can be seen, what can be computed, and what can be done are clearly separated into three levels, and out-of-scope actions stop immediately. Governance claim: the boundary between humans and agents is the cornerstone of governance; key value judgments — demolish or keep, preserve or change — must be finally confirmed by humans. Value of connection: **access control** — connection is the physical boundary of governance.
+**Gate four · Human veto (human review).** AI only computes; humans decide. What can be seen, what can be computed, and what can be decided are separated into three levels; out-of-scope actions stop immediately. It is always clear who holds power. Spatial anchor: the Permission Sandbox (Zhongzhiyuan).
 
-**Step five: risk flagging — the safety net.** Mechanism: every conclusion carries its confidence, its assumptions, and where it might go wrong; risks are not hidden in an appendix but placed beside the conclusion and always visible. Governance claim: an honest agent's first duty is to "state clearly where it might be wrong." Value of connection: **deterministic transmission of risk signals** — the determinism of connection is the determinism of governance.
+**Gate five · Risk-transparent (risk flagging).** Every conclusion carries its confidence, its assumptions, and where it might go wrong — nothing hidden. An honest agent's first duty is to state where it might be wrong. Spatial anchor: the Risk Disclosure Screen (one in each of the three key areas).
 
-**Step six: urban governance knowledge base — building infrastructure for agents.** Mechanism: all judgments, feedback, reviews, and risks produced by the six steps settle into an "urban governance knowledge base" — the memory of the city of agents and a public asset that successors can inherit. Governance claim: the real moat is not any single proposal but this "getting-smarter-with-use" knowledge base. Value of connection: **connection protocols are the trust foundation** (identity, trust, and reputation are all matters of the connection layer).
+**Gate six · Knowledge accumulation (governance knowledge base).** Judgments, feedback, reviews, and risks settle into the "urban governance knowledge base," an inheritable public asset. The moat is not any single proposal but a knowledge base that "gets smarter with use." (Industrial evidence: a Japanese Osaka manufacturer's AI QC — veteran tacit knowledge → LLM-structured knowledge base → RAG-assisted new inspectors 96%→99.2%, knowledge base reused across production debugging [source:AI-QC-KNOWLEDGE-BASE-CASE]) Spatial anchor: the Governance Library (Dazhongsi).
 
 ### Boundary Openness: Letting Non-Agents Share the Same Rules
 
@@ -115,7 +115,7 @@ The 43.6 km² is not a closed agent; its boundary is open. Surrounding people, v
 
 The answer is **rules degraded to be reachable by all** — intelligent-governance rules must exist in a way that is "understandable to everyone, visible everywhere, and physically followable," not only inside agent protocols:
 
-1. **Humanization of rules (for people)**: rules are translated into human language and physical signage — the verification wall becomes a public metric board (readable by all), the decision archive becomes a tracing corridor (viewable by all), permission boundaries become physical fences and signal lights (no protocol knowledge needed), and risk flags become disclosure screens (visible to all);
+1. **Humanization of rules (for people)**: rules are translated into human language and physical signage — the recomputation wall becomes a public metric board (readable by all), the decision archive becomes a tracing corridor (viewable by all), permission boundaries become physical fences and signal lights (no protocol knowledge needed), and risk flags become disclosure screens (visible to all);
 2. **Default compatibility of rules (for vehicles/objects)**: entrants do not need to "join" the agent system; rules take effect automatically in a "default, intuitive, physical" way — an incoming vehicle is guided automatically by the physical design of roads (lanes, signals, walking-and-cycling priority) without needing to understand latency determinism; incoming goods pass through standardized entrances and interfaces without needing to understand permission protocols;
 3. **Gradual rule entry (for willing joiners)**: for incoming agents willing to join (such as external autonomous vehicles or delivery robots), an open access protocol is provided — they may choose to "only follow physical rules" (the lowest threshold) or to "join the agent protocol" (gaining higher efficiency, such as priority passage and data services).
 
@@ -130,7 +130,7 @@ This reveals the complete meaning of "connection": connection is not only the AP
 **The Goodness Constraint (a brake that cannot be surrendered)**:
 
 1. **The human veto is non-transferable**: human review is not a "rubber stamp" but a non-transferable veto — for judgments involving public interest, personal safety, and value trade-offs, the final veto always rests with humans. Agents may reason at scale, but the word "no" can only be said by humans.
-2. **Recomputable means "overturnable"**: the verification wall means not only that conclusions are recomputable, but that conclusions can be overturned. No agent's conclusion is treated as unquestionable truth; it must be recomputable, requestionable, and overturnable by any third party at any time.
+2. **Recomputable means "overturnable"**: the recomputation wall means not only that conclusions are recomputable, but that conclusions can be overturned. No agent's conclusion is treated as unquestionable truth; it must be recomputable, requestionable, and overturnable by any third party at any time.
 3. **Out-of-scope means "hard stop"**: permission layering is not a "warning" but a "stop" — an out-of-scope action is physically cut off, not merely flagged. This is the physical brake of the governance framework, not dependent on the agent's self-restraint.
 4. **Reversibility of knowledge**: what the urban governance knowledge base accumulates is "revocable, question-able, correctable" records, not "unshakeable doctrine." Any accumulated piece of knowledge can be overturned by new evidence — the knowledge base is memory, not oracle.
 5. **Public-interest priority as the meta-principle**: the first article of the nine-point charter, "public-interest priority," is the topmost layer of this brake — the force of connection may only serve the public interest of the city; any tendency "toward evil," whether from a single agent or a collective of agents, is vetoed by this article.
@@ -141,7 +141,7 @@ These five "goodness constraints" constitute the meta-governance of the governan
 
 The governance framework does not float in concepts; it lands in the three key areas:
 
-- **Zhongzhiyuan AI Independent Innovation Acceleration Area** — carries "global discourse power in AI governance": standard-setting, safety governance, and industrial display; it is the spatial carrier of the "verification wall" and "permission layering" among the six steps;
+- **Zhongzhiyuan AI Independent Innovation Acceleration Area** — carries "global discourse power in AI governance": standard-setting, safety governance, and industrial display; it is the spatial carrier of the "recomputation wall" and "permission layering" among the six steps;
 - **Beijing AI Origin Community** — carries the "open-source system" and "talent special zone": public feedback and open collaboration; it is the spatial carrier of "learnability" and "human review";
 - **Dazhongsi AI Industry Cluster** — carries "agents, data factors, and digital assets": the governance knowledge base and data circulation; it is the spatial carrier of the "decision archive" and "building infrastructure for agents."
 
@@ -151,7 +151,7 @@ The three areas are not three plots of land but three pillars of this governance
 
 The six steps are not paper mechanisms; this proposal lands them as six visitable, experienceable, and communicable "governance scenarios," strung along the belt into a **"see how an AI city is governed" pilgrimage route**:
 
-1. **Recomputable Square (verification wall)** — Zhongzhiyuan. A "metric-recomputation wall" where the public can scan a code on-site and recompute the proposal's site area, green ratio, and public-space ratio, turning "honesty" into a touchable experience;
+1. **Recomputable Square (recomputation wall)** — Zhongzhiyuan. A "metric-recomputation wall" where the public can scan a code on-site and recompute the proposal's site area, green ratio, and public-space ratio, turning "honesty" into a touchable experience;
 2. **Decision-Tracing Corridor (decision archive)** — along the Jing-Zhang Railway Heritage Park. Beside every AI suggestion, the four-part "basis → reasoning → conclusion → responsible party" is displayed, letting the public see that AI is not a black box;
 3. **Feedback Garden (learnability)** — Origin Community. A "public feedback" interactive installation where feedback flows back into proposal iteration in real time, letting the public see how their views changed the next version;
 4. **Permission Sandbox (permission layering)** — in Zhongzhiyuan's safety-governance sandbox. The public can experience the three-level boundary of "what can be seen / computed / done," and out-of-scope actions are physically cut off on the spot;
@@ -332,7 +332,7 @@ This proposal grounds "implementation feasibility" in four operable elements: a 
 
 **Pilot areas (what to pilot first)**:
 
-- **Zhongzhiyuan = governance-mechanism pilot**: verification wall + permission sandbox (leveraging its positioning of "global discourse power in AI governance");
+- **Zhongzhiyuan = governance-mechanism pilot**: recomputation wall + permission sandbox (leveraging its positioning of "global discourse power in AI governance");
 - **Origin Community = participation-mechanism pilot**: feedback garden + learnability (talent and open-source community with high willingness to participate);
 - **Dazhongsi = data-and-knowledge pilot**: data-factor lounge + governance library (a data-factor cluster).
 
@@ -344,7 +344,7 @@ This proposal grounds "implementation feasibility" in four operable elements: a 
 - **Public / communities**: feedback, participation, oversight;
 - **Agents (assistive)**: document organization, proposal reasoning, review support — not replacing planning approval.
 
-**Annual operations system (agent.6)**: a sustainable annual rhythm — ① the **Global AI Activity Week** (JZ-06, annual, linking heritage culture / open-source community / industry display / international roadshow); ② **developer-community operation** (quarterly hackathons + monthly scenario open days + a standing open-source collaboration space); ③ a **scenario-opening mechanism** (solicit scenario needs from society, entering test verification after the verification wall and human review); ④ an **international attraction-and-translation funnel** (international communication — experience roadshow — demand matching — landing translation, with translation metrics and responsibility boundaries). All of these are "conceptual suggestions/reference schemes" for professional teams to deepen, not written as settled government activities [source:AGENT-TASKBOOK][depth:annual_operations].
+**Annual operations system (agent.6)**: a sustainable annual rhythm — ① the **Global AI Activity Week** (JZ-06, annual, linking heritage culture / open-source community / industry display / international roadshow); ② **developer-community operation** (quarterly hackathons + monthly scenario open days + a standing open-source collaboration space); ③ a **scenario-opening mechanism** (solicit scenario needs from society, entering test verification after the recomputation wall and human review); ④ an **international attraction-and-translation funnel** (international communication — experience roadshow — demand matching — landing translation, with translation metrics and responsibility boundaries). All of these are "conceptual suggestions/reference schemes" for professional teams to deepen, not written as settled government activities [source:AGENT-TASKBOOK][depth:annual_operations].
 
 **Implementation metrics (staged targets)**: three pilot scenarios land in the near term (soft infrastructure startable immediately). The quantitative targets for stitched walking-and-cycling breaks, edge-computing nodes, governance knowledge-base records, and public-feedback iterations are currently status=unknown — to be set with sourced staged targets and calculation methods once the official boundary, municipal/transport/ownership conditions, and a formal operational baseline are available, with full re-computation triggered on official geometry [metric:key_area_count] [data:geometry/phasing.geojson#PHASE-001].
 
@@ -382,7 +382,7 @@ Five sourced global cases as industrial reference (publicly verifiable, not fabr
 
 **Sources (verifiable)**: ① https://www.cncf.io/projects/k8sgpt/ ② https://www.linuxfoundation.org/blog/project-glasswing-gives-maintainers-advanced-ai-to-secure-open-source ③ https://www.linuxfoundation.org/press/agentic-ai-foundation-welcomes-57-new-members-gaining-major-financial-services-players-and-apac-leaders ④ https://opea.dev/ ⑤ https://www.ietf.org/blog/agentic-ai-standards/
 
-**Industry–space–factor ecosystem map**: ① computing/models (Zhongzhiyuan computing and edge nodes); ② open-source/toolchain (Origin Community open source and feedback garden); ③ data/scenarios (Dazhongsi data-factor lounge); ④ standards/interop (SparkLink short-range connection base); ⑤ governance/compliance (verification wall and governance library). This map anchors global cases onto the specific spaces of the Jing-Zhang Intelligence Vein Belt.
+**Industry–space–factor ecosystem map**: ① computing/models (Zhongzhiyuan computing and edge nodes); ② open-source/toolchain (Origin Community open source and feedback garden); ③ data/scenarios (Dazhongsi data-factor lounge); ④ standards/interop (SparkLink short-range connection base); ⑤ governance/compliance (recomputation wall and governance library). This map anchors global cases onto the specific spaces of the Jing-Zhang Intelligence Vein Belt.
 
 ### Scenario-Card Review Matrix and Pilot Responsibility Matrix (agent.3 / P1)
 
@@ -415,7 +415,7 @@ Five sourced global cases as industrial reference (publicly verifiable, not fabr
 
 ### Historical-Cultural Resource System and Governance Memory (agent.5)
 
-The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the century-old Jing-Zhang railway heritage: Tsinghuayuan Station (the origin and national memory of the Jing-Zhang railway), the railway heritage park (industrial relics turned public space), and the industrial and university memory along the line (Zhongguancun's tech-entrepreneurship history). This proposal puts this cultural resource system into dialogue with neural governance — historical memory is the time-dimension nerve of governance: the railway-heritage display beside the verification wall gives recomputability historical depth; the decision-tracing corridor runs along the railway, putting governance transparency and railway memory on the same track. Protection, use, and AI-governance integration of the cultural resource system must be subject to heritage-department approval; this proposal only offers a conceptual direction, not pseudo-precise heritage boundaries.
+The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the century-old Jing-Zhang railway heritage: Tsinghuayuan Station (the origin and national memory of the Jing-Zhang railway), the railway heritage park (industrial relics turned public space), and the industrial and university memory along the line (Zhongguancun's tech-entrepreneurship history). This proposal puts this cultural resource system into dialogue with neural governance — historical memory is the time-dimension nerve of governance: the railway-heritage display beside the recomputation wall gives recomputability historical depth; the decision-tracing corridor runs along the railway, putting governance transparency and railway memory on the same track. Protection, use, and AI-governance integration of the cultural resource system must be subject to heritage-department approval; this proposal only offers a conceptual direction, not pseudo-precise heritage boundaries.
 
 
 **International communication copy (bilingual)**:
@@ -434,7 +434,7 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 - Maturity: conceptual (pending pilot confirmation)
 - Acceptance metric: latency pass rate, sync accuracy, anti-interference bit-error rate
 
-**Scenario 2: AI-governance decision recomputability verification** (verification wall)
+**Scenario 2: AI-governance decision recomputability verification** (recomputation wall)
 - Object: recomputability of governance decisions (geometry → recompute → compare → disclose)
 - Data fields: decision records + recomputation results (de-identified)
 - Human review: pre-disclosure review
@@ -528,7 +528,7 @@ A Smart Hub is an "interaction interface + infrastructure carrier": not just a p
 
 This proposal honestly distinguishes "AI-generated conceptual output" from "content requiring professional deepening," providing a clear translation path for downstream teams:
 
-- **Planning team (geometry deepening)**: the current geometry is "conceptual geometry" (provisional boundary + agent-generated approximate zoning), which can be replaced with regulatory-precision plot, building, and road geometry; the "verification wall" of the governance framework ensures that replaced metrics remain recomputable and reviewable;
+- **Planning team (geometry deepening)**: the current geometry is "conceptual geometry" (provisional boundary + agent-generated approximate zoning), which can be replaced with regulatory-precision plot, building, and road geometry; the "recomputation wall" of the governance framework ensures that replaced metrics remain recomputable and reviewable;
 - **Operation team (mechanism translation)**: the six-step governance framework + the goodness constraint can be directly translated into an *Urban Agent Governance Handbook* as the long-term operating rules of Zhongzhiyuan, Origin Community, and Dazhongsi;
 - **Communication team (brand translation)**: the naming system (Source/People/Data Veins) + the logo concept + the six-scenario pilgrimage route can be translated into a visual identity system and a "see how an AI city is governed" communication route.
 
