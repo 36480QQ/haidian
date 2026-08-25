@@ -1,6 +1,6 @@
 ---
 title: "智脉京张 · AI 原生创新带概念方案"
-author_github: "Wengyongsheng"
+author_github: "wengyongsheng29-spec"
 language: "zh"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
