@@ -483,7 +483,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 | 东西向流量 | NOKIA-MBIT-INDEX | 移动流量指数报告，数据依据 | 出处待补充 |
 | 为 Agent 造 X | MIT-BUILD-X-FOR-AGENT | MIT Media Lab 研究线索，学术依据 | 出处待补充 |
 | 800V 直流母线 | E800V-DC-DISTRIBUTION | 直流配电技术文献，技术依据 | 出处待补充 |
-| 绿色城区/蓝绿系统 | GREEN-DISTRICT-DESIGN | 美国绿色城区设计案例，空间设计参考 | 出处待补充 |
+| 绿色城区/蓝绿系统 | GREEN-DISTRICT-DESIGN | 奥兰多 Green District 智慧城市案例（飞行出租车+EV+绿色设计），空间设计参考 | 已核实（interestingengineering.com）|
  https://www.ietf.org/blog/agentic-ai-standards/ | 公开标准 | 公开来源，待独立交叉核验 |
 
 **降级原则**：凡"未核实假设"的工程主张，其具体数字或性能暗示不作为本方案的技术承诺；若无法补证，将删除或维持"待验证"标注。

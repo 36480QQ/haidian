@@ -472,7 +472,7 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 | East-west traffic | NOKIA-MBIT-INDEX | mobile traffic index report, data basis | source URL pending |
 | Build X for agents | MIT-BUILD-X-FOR-AGENT | MIT Media Lab research line, academic basis | source URL pending |
 | 800V DC bus | E800V-DC-DISTRIBUTION | DC distribution technical literature, technical basis | source URL pending |
-| Green district / blue-green | GREEN-DISTRICT-DESIGN | U.S. green-district design case, spatial reference | source URL pending |
+| Green district / blue-green | GREEN-DISTRICT-DESIGN | Orlando Green District smart-city case (flying taxis + EVs + green design), spatial reference | verified (interestingengineering.com) |
  https://www.ietf.org/blog/agentic-ai-standards/ | public standard | publicly cited, pending independent cross-check |
 
 **Downgrade principle**: for "unpublicly cited, pending independent cross-check assumption" engineering claims, specific numbers or performance implications do not constitute technical commitments of this proposal; if not verifiable, they are deleted or kept as "to be publicly cited, pending independent cross-check".
