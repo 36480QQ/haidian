@@ -146,7 +146,23 @@ V0.10 沿用 V0.6 登记的七个可解析原型实体，每个实体关联一�
 | I6 互操作与可迁移站 | 互操作 / 可迁移 | 交换导出格式、移交状态和服务连续性字段 | 迁出必要记录、切换运营者并避免服务锁定 [data:geometry/public_space.geojson#INTERFACE-I6] |
 | I7 版本、暂停、退出与公共记忆站 | 版本 / 暂停 / 退出 / 公共记忆 | 交换当前版本、暂停、退役、变更和返还状态 | 查阅失败、修改、退役及能力返还的持久记录 [data:geometry/public_space.geojson#INTERFACE-I7] |
 
-视觉识别将铁路道岔、版本控制分支与城市公共协议括号结合；应保持中英双语、几何化、非企业化，并使用权利已清理的字体实现可复现表达。
+### 一个主品牌：把试点、活动、贡献记录与公共空间连成一套城市语言
+
+**京张，再次开路 / JING-ZHANG BREAKS NEW GROUND** 是唯一总体品牌。开路符 / `JZ SWITCH MARK` 把京张铁路主干、面向 AI 应用的前进分支、表示撤回与能力返还的回程折线、限定公共试验边界的开放括号，以及保留人工最终判断的节点圆点组合成同一标识方向。当前只锁定概念语法，不冒充最终官方 Logo、政府徽记或铁路企业标识；所有应用必须同时显示中英名称、版本、日期和 `概念提案 / 未授权 / 非政府背书` 状态，颜色不得成为状态的唯一表达 [metric:brand_architecture_layer_count] [source:AGENT-TASKBOOK]。
+
+| 层级 | 固定内容 | 统一使用规则 |
+| --- | --- | --- |
+| **L0 主品牌** | 京张，再次开路 / JING-ZHANG BREAKS NEW GROUND | 只使用一个开路符；横式、竖式和单色锁定组合均保留安全空间、双语名称、版本与文字状态 |
+| **L1 五旗舰** | FP01—FP05 的固定双语名称 | 采用“主品牌 + FP 编号 + 名称 + 当前 Gate/状态”，不得另设五套独立 Logo [metric:brand_flagship_mapping_coverage_ratio] |
+| **L2 开放系列** | 季度旗舰开放日、半年证据审查、年度京张开路大会、持续公开版本日志 | 都是建议节律，不表示主办方、日程、场地或预算已经确定 |
+| **L3 京张贡献谱** | 公共问题、开放构建、独立验证、权利守护、失败纠错与能力返还五类可修订记录 | 不排名人物或企业，不登记当前获奖者；记录必须能追溯来源、版本、责任角色、独立复核、异议和撤回 [metric:honor_contribution_class_count] |
+| **L4 三地标与六组件** | 协议零号站、城市智能试验场、京张贡献档案馆；M01—M06 可逆组件 | 地标不另设 Logo；组件须可拆、可迁移、可停用 AI 后继续支持普通公共活动 [metric:reversible_public_space_component_count] [metric:landmark_component_mapping_coverage_ratio] |
+
+![统一品牌、贡献记录与可逆公共空间组件架构](assets/figures/brand-component-architecture.png)
+
+六件组件把视觉识别变成可进入、可使用、可退出的公共空间语言，而非只做一套平面形象：**M01 选择门**并列 AI 与纯人工入口；**M02 来源牌**显示版本、出处、能力边界与责任角色；**M03 有人台**承接人工确认、无手机与无账号路径；**M04 回执坞**提供拒绝理由、申诉、删除与退出；**M05 急停界面**暂停 AI 并恢复普通服务；**M06 贡献轨**公开版本、纠错、失败、退役与能力返还。每件组件均绑定 I1—I7 接口、适用旗舰和地标，但材料、尺寸、固定方式、供电、数据连接、正式位置、无障碍、消防、文保与工程可行性仍待测绘和专业审查；当前状态一律为 `concept_only` [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:blue_green_public_space]。
+
+AI City API、京张 AI 可信应用公约、七接口、公共回执与能力返还只构成横贯运行层，不是第二主品牌。品牌层级、旗舰映射、贡献类别和组件覆盖率只证明提案内部的表达与引用闭合，不证明标识获批、活动举办、荣誉授予、地标选址、组件安装、运营采用或公共效益。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -294,6 +310,16 @@ V0.10 不把 12 个场景当作平行展项，而是按官方空间角色组织�
 
 五项试点共用一条不可跳级的五门路径：**G1 技术准备**核验来源、能力边界、基线和责任主体；**G2 有界试验**限定时间、空间、用户与数据，并演练人工接管；**G3 首用采购**以可读证据、服务基线、退出条款和专业复核为进入合同的前提；**G4 扩散**验证跨运营者互操作、可迁移和供应多样性；**G5 标准与共同能力输出**把经清权、去标识的方法、失败证据和接口沉淀到 COMMONS。任何一门不通过都只能修改或停止，不能用展示活动替代。共用 90 日三门为：**D30 定责定界**（联合体、基线、场地/资金/数据边界和停止条件形成书面草案）；**D60 有界共测**（完成受控试验、事件记录、人工接管与非数字替代演练）；**D90 证据决策**（公开可读结果经专业复核后形成继续、修改或停止决定，只有通过者才可讨论首用采购或扩大）。各项一年指标的口径、基线和目标值须在 D30 由责任联合体确认；下表列的是应披露字段，不是预设政绩值或实施承诺 [depth:phasing_implementation]。
 
+为避免把概念模板写成“已经可实施”，五项旗舰与六件组件还共用五个交付停止点。它们只规定**谁必须补什么证据以及缺证时怎样停**，不虚构实名主体、预算或采购事实 [metric:delivery_hold_point_coverage_ratio]：
+
+| 停止点 | 进入下一步前必须取得 | 当前边界 / 缺证动作 |
+| --- | --- | --- |
+| **H0 公共问题与普通服务基线** | 使用者代表与责任服务角色共同确认问题、人工/非数字流程、D0 测量法和禁止自动决定事项 | 当前未实测；不能确认则停止该任务 |
+| **H1 载体与交付责任** | 测绘、权属/许可、可问责运营与维护角色、资金边界和合法采购路径 | 正式场地、主体、预算和采购均未确认；保持 `concept_only` |
+| **H2 专业与权利条件** | 数据授权、安全、无障碍、非数字路径，以及交通、市政、能源、消防、文保等适用专业核验 | 任一关键条件缺失，不进入真实用户或安装环节 |
+| **H3 独立证据与补救** | 采购/运营/评测/申诉职责分离，失败记录、独立复核、申诉时钟与恢复演练 | 不允许供应商自证；无可复演证据则 revise / stop |
+| **H4 另行授权与退出交接** | 法定审批、采购、法律与专业授权，及数据处置、组件拆除、人工基线恢复和公共记录 | 通过前门不等于获准实施；授权不全则关闭并返还 |
+
 #### FP01：一份 100 天首用合同，不是三个展项
 
 V0.10 选择 FP01 作为整套能力链的首个可讨论实施原型：**S07 是唯一面向使用者的服务问题，S03 只做独立评测，S04 只做接口与回执支撑**。它们不是三个并列展项，也不证明现实中已有一项获得服务方确认的需求。当前只登记 `FP01-S07-PROBLEM-001` 这一个 **D0 待由责任服务方与使用者代表共同确认的候选问题**，并且保留同等的纯人工服务、拒绝、接管与退出路径。`FP01-CONTRACT-001` 把一项服务、原点社区的临时概念载体、责任角色、证据门和退出动作绑定为一份**未执行的合同模板**；其固定状态为 `concept_template_unexecuted`，不代表政府立项、场地确认、需求实证、采购公告、中标或签约 [data:geometry/public_space.geojson#SCENARIO-S07] [metric:fp01_concrete_service_problem_count]。
@@ -345,6 +371,10 @@ V0.10 把指标分为三类：可由 GeoJSON 在 EPSG:4548 复算的设计指标
 
 六项转化能力的阶段数登记为 6，能力与稳定节点、五个旗舰试点及可信运行层的结构映射覆盖率登记为 1.0 [metric:application_capability_stage_count] [metric:application_capability_mapping_coverage_ratio]。这只证明提案内部映射完整，不证明采购、部署、外部采用、标准产出、公共效益或全球领先。
 
+统一品牌证据登记五层品牌架构、五旗舰映射和五类贡献记录 [metric:brand_architecture_layer_count] [metric:brand_flagship_mapping_coverage_ratio] [metric:honor_contribution_class_count]。
+
+公共空间组件证据另行登记六件可逆组件、三地标组件覆盖和 H0—H4 停止点 [metric:reversible_public_space_component_count] [metric:landmark_component_mapping_coverage_ratio] [metric:delivery_hold_point_coverage_ratio]。这些值只证明概念系统完整，不证明 Logo 获批、活动实施、荣誉授予、组件安装或交付就绪。
+
 旗舰试点的结构状态已经机器登记：概念试点为 5 个，12 个场景恰好归入一个试点，覆盖率为 1.0 [metric:flagship_pilot_count] [metric:flagship_scenario_bundle_coverage_ratio]；五项均登记运营联合体、90 日门、年度披露字段、资金/空间/数据边界及五门路径，结构覆盖率均为 1.0 [metric:flagship_implementation_plan_coverage_ratio] [metric:flagship_lifecycle_gate_coverage_ratio]。这只证明方案记录完整，不证明实施结果。
 
 首用采购与市场扩散的实际数量仍为 `unknown` [metric:flagship_first_use_procurement_count] [metric:flagship_market_diffusion_adoption_count]；正式标准输出与经独立验证的公共收益数量也仍为 `unknown` [metric:flagship_published_standard_output_count] [metric:flagship_verified_public_benefit_count]。一年指标须在 D30 锁定口径、基线和目标，并在运行后据实更新。
@@ -369,11 +399,13 @@ V0.10 把指标分为三类：可由 GeoJSON 在 EPSG:4548 复算的设计指标
 
 本包已提供中文/英文 proposal、HTML、A3 文册、A0 展板及含文字图件的对应版本，并采用赛事术语表保持译名一致。图片、图纸、图标、数据和代码资产的来源、许可与授权状态记录在 `sources.json` 和 `report/copyright_statement.md`；离线 HTML 不加载远程脚本、地图瓦片、远程字体、iframe、表单或外部 API，也不跟踪评审者行为。为避免评审环境缺少中文系统字体，四份 HTML 共用一个本地 CSS，其中仅内嵌当前页面所需的 Noto Sans SC WOFF2 字形子集；字体取自固定的 Google Fonts 版本并遵循 SIL Open Font License 1.1，该资源只解决离线排版可移植性，不构成规划事实或方案证据 [source:FONT-NOTO-SANS-SC]。
 
+开路符 / `JZ SWITCH MARK` 是本包为结构表达自行生成的概念标志方向，不复制或使用国徽、政府徽记、铁路企业标识、参赛机构商标或第三方官方视觉身份；它没有被授权为政府或项目正式 Logo。贡献谱不登记当前获奖者，也不构成官方荣誉、技术认证或商业排名。
+
 风险和缺资料清单由风险深度项、空的约束图层和场地包共同校核 [depth:risk_missing_data] [data:geometry/constraints.geojson] [source:SITE-PACKAGE]。`missing_data_checklist.csv` 中列出的 official boundary、key area、控规、道路、地块、建筑、市政、文保和公共服务缺口均进入 `assumptions.json`、自检和正文风险章节。任何缺少官方控规、道路红线、权属、市政、消防或文保条件的结论，都降级为待确认事项；完整专业核对保存在标准矩阵中。
 
 生成式 AI 服务只有在实际功能落入相应适用范围时，才进入生成内容标识、投诉处置等后续合规审查 [standard:GENERATIVE-AI-INTERIM-MEASURES]。无障碍信息、有人服务与非数字替代以无障碍法律和老年人智能技术政策作为深化参照，但本方案不把政策参照误写成已完成的逐项法定验收 [standard:BARRIER-FREE-ENVIRONMENT-LAW] [standard:ELDERLY-SMART-TECH-PLAN-2020-45]。
 
-本方案不声称国家级试点认定、政府授权、本投稿已被采纳、官方批准、审定控规、最终土地权属、最终建设规模、已经证明世界领先或保证实施。V0.10 在不改动 V0.3 空间证据底盘的前提下，以六项转化能力、稳定六节点网络和可信运行层重构总体叙事，并把 12 个场景编组为 5 个概念性旗舰试点；V0.6 已登记的 3 个嵌套街室、7 个接口实体、3 条人物旅程、3 个能力返还节点及相应指标继续作为可信运行证据。这些实体和试点均为 `agent_generated_design`、`conceptual_not_statutory`、`official_siting=false` 的概念成果。嵌套房间没有增加公共空间 union 面积，接口、旅程和返还点只是空间责任索引；试点名称、联合体、90 日门槛、一年指标和资金安排不是政府许可、确认场址、法定程序、采购决定、签署合同或已部署服务。官方/专业资料缺口继续作为深化前提，不被伪装成已知条件 [depth:risk_missing_data] [source:SITE-PACKAGE] [data:geometry/constraints.geojson]。
+本方案不声称国家级试点认定、政府授权、本投稿已被采纳、官方批准、审定控规、最终土地权属、最终建设规模、已经证明世界领先或保证实施。V0.10 在不改动 V0.3 空间证据底盘的前提下，以六项转化能力、稳定六节点网络和可信运行层重构总体叙事，并把 12 个场景编组为 5 个概念性旗舰试点；V0.6 已登记的 3 个嵌套街室、7 个接口实体、3 条人物旅程、3 个能力返还节点及相应指标继续作为可信运行证据。这些实体、试点、品牌层级、贡献类别、地标、可逆组件和 H0—H4 均为 `agent_generated_design`、`conceptual_not_statutory`、`official_siting=false` 的概念成果。嵌套房间没有增加公共空间 union 面积，接口、旅程和返还点只是空间责任索引；试点名称、联合体、90 日门槛、一年指标和资金安排不是政府许可、确认场址、法定程序、采购决定、签署合同或已部署服务。官方/专业资料缺口继续作为深化前提，不被伪装成已知条件 [depth:risk_missing_data] [source:SITE-PACKAGE] [data:geometry/constraints.geojson]。
 
 ## 参考资料
 

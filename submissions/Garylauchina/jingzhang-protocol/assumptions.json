@@ -1466,6 +1466,101 @@
       ],
       "resolution_trigger": "At D0, an accountable service owner and accessibility/user panel confirm or replace the candidate problem and persona, survey the carrier, and measure the same task through the staffed non-AI baseline.",
       "replacement_action": "Replace the fictional persona and provisional dimensions with consented co-design and survey evidence; populate observed metrics only from dated records while retaining failed, refused, takeover and exit-restoration evidence."
+    },
+    {
+      "id": "A-BRAND-COMPONENT-001",
+      "status": "concept_system_unapproved_unimplemented",
+      "statement": "The single master brand, five flagship descriptors, four operating rhythms, five evidence-based contribution classes, three landmark concepts and six reversible public-space components form one proposal-internal architecture. They are not separate official brands, an approved logo system, implemented events, awarded honors, confirmed sites or delivered installations.",
+      "impact": "The package can verify a coherent five-layer naming and endorsement grammar plus complete internal mappings from the master brand to FP01-FP05 and from all three landmarks to the component family. It cannot prove public adoption, logo or emblem approval, event delivery, award recipients, confirmed siting, operation, budget, procurement, construction or performance.",
+      "affected_files": [
+        "visual/assets/brand-component-architecture.json",
+        "visual/assets/verify-brand-component-architecture.js",
+        "metrics.json",
+        "compliance_matrix.json",
+        "standard_matrix.json",
+        "design_depth_matrix.json",
+        "proposal.md",
+        "proposal.en.md",
+        "assets/figures/brand-component-architecture.png",
+        "visual/index.html",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
+      ],
+      "affected_metric_ids": [
+        "brand_architecture_layer_count",
+        "brand_flagship_mapping_coverage_ratio",
+        "reversible_public_space_component_count",
+        "landmark_component_mapping_coverage_ratio",
+        "honor_contribution_class_count"
+      ],
+      "master_brand_count": 1,
+      "flagship_descriptor_count": 5,
+      "operating_rhythm_count": 4,
+      "contribution_class_count": 5,
+      "landmark_concept_count": 3,
+      "reversible_component_count": 6,
+      "contribution_classes": [
+        "public_problem",
+        "open_build",
+        "independent_verification",
+        "rights_stewardship",
+        "failure_correction_and_capability_return"
+      ],
+      "formal_logo_status": "concept_direction_only_not_approved",
+      "official_emblem_status": "not_claimed",
+      "award_recipient_status": "none_selected_or_claimed",
+      "resolution_trigger": "An authorized brand owner, public-space and heritage reviewers, accountable operators and affected-user representatives separately approve or replace the identity, naming, contribution and component system.",
+      "replacement_action": "Version the concept architecture, record approvals and objections, replace unapproved marks or mappings, and keep each component temporary and removable until site-specific authorization is complete."
+    },
+    {
+      "id": "A-DELIVERY-READINESS-001",
+      "status": "conceptual_stop_gates_pending_named_evidence",
+      "statement": "H0 through H4 are proposal-internal responsibility, evidence and stop gates: public problem and ordinary human baseline; surveyed carrier plus accountable operator, budget and procurement route; data, safety, accessibility and non-digital path; independent evidence, appeal and redress; and separate authorization, opening, exit and handover. They do not establish that any gate has been passed.",
+      "impact": "The package can verify that all five hold points name responsible role classes, evidence requirements and a stop action. Surveyed carriers, named accountable operators, budgets, procurement, D0 baselines, utilities, fire, transport, authorization and observed outcomes remain unknown; missing evidence keeps the relevant element concept-only or stops progression.",
+      "affected_files": [
+        "visual/assets/brand-component-architecture.json",
+        "visual/assets/verify-brand-component-architecture.js",
+        "metrics.json",
+        "compliance_matrix.json",
+        "standard_matrix.json",
+        "design_depth_matrix.json",
+        "proposal.md",
+        "proposal.en.md",
+        "assets/figures/brand-component-architecture.png",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
+      ],
+      "affected_metric_ids": [
+        "reversible_public_space_component_count",
+        "landmark_component_mapping_coverage_ratio",
+        "delivery_hold_point_coverage_ratio"
+      ],
+      "hold_point_ids": [
+        "H0",
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "unknown_delivery_evidence": [
+        "surveyed_carriers",
+        "named_accountable_operators",
+        "approved_budgets",
+        "lawful_procurement_routes",
+        "dated_D0_baselines",
+        "utilities_review",
+        "fire_review",
+        "transport_review",
+        "opening_authorization",
+        "observed_outcomes"
+      ],
+      "missing_evidence_rule": "If a required record is absent, contradictory or expired, the related proposal remains concept-only or stops at the current hold point.",
+      "resolution_trigger": "Each accountable authority or operator supplies dated, attributable and independently reviewable evidence for its hold point, with a named human go, revise or stop decision.",
+      "replacement_action": "Replace role-class placeholders with authorized accountable entities, populate observed baselines and approvals, and publish the resulting go, revise or stop record without converting proposal metrics into performance claims."
     }
   ]
 }

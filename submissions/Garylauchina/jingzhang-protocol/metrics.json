@@ -1264,6 +1264,92 @@
       ],
       "reason": "No field baseline has been measured; the staffed paper/phone service task must be observed and agreed at D0.",
       "professional_follow_up_required": true
+    },
+    "brand_architecture_layer_count": {
+      "status": "known",
+      "value": 5.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/brand-component-architecture.json"
+      ],
+      "formula": "count(distinct proposal architecture layers: master brand, flagship family, operating/event series, contribution/honor system, landmark and reversible-component family)",
+      "confidence": "high",
+      "assumptions": [
+        "A-BRAND-COMPONENT-001"
+      ],
+      "scope_note": "Proposal-structure evidence only; not proof of official adoption, logo approval, event implementation, awards, confirmed siting, operation, budget, procurement, construction or performance."
+    },
+    "brand_flagship_mapping_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/brand-component-architecture.json"
+      ],
+      "formula": "count(FP01 through FP05 with a non-empty master-brand endorsement and program-family mapping) / 5",
+      "confidence": "high",
+      "assumptions": [
+        "A-BRAND-COMPONENT-001"
+      ],
+      "scope_note": "Proposal-structure evidence only; not proof of official adoption, logo approval, event implementation, awards, confirmed siting, operation, budget, procurement, construction or performance."
+    },
+    "reversible_public_space_component_count": {
+      "status": "known",
+      "value": 6.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/brand-component-architecture.json"
+      ],
+      "formula": "count(distinct concept reversible public-space component records M01 through M06)",
+      "confidence": "high",
+      "assumptions": [
+        "A-BRAND-COMPONENT-001",
+        "A-DELIVERY-READINESS-001"
+      ],
+      "scope_note": "Proposal-structure evidence only; not proof of official adoption, logo approval, event implementation, awards, confirmed siting, operation, budget, procurement, construction or performance."
+    },
+    "landmark_component_mapping_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/brand-component-architecture.json"
+      ],
+      "formula": "count(LM01 through LM03 with one or more mapped reversible component records) / 3",
+      "confidence": "high",
+      "assumptions": [
+        "A-BRAND-COMPONENT-001",
+        "A-DELIVERY-READINESS-001"
+      ],
+      "scope_note": "Proposal-structure evidence only; not proof of official adoption, logo approval, event implementation, awards, confirmed siting, operation, budget, procurement, construction or performance."
+    },
+    "honor_contribution_class_count": {
+      "status": "known",
+      "value": 5.0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/brand-component-architecture.json"
+      ],
+      "formula": "count(distinct proposal contribution classes: public_problem, open_build, independent_verification, rights_stewardship and failure_correction_and_capability_return)",
+      "confidence": "high",
+      "assumptions": [
+        "A-BRAND-COMPONENT-001"
+      ],
+      "scope_note": "Proposal-structure evidence only; not proof of official adoption, logo approval, event implementation, awards, confirmed siting, operation, budget, procurement, construction or performance."
+    },
+    "delivery_hold_point_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/brand-component-architecture.json"
+      ],
+      "formula": "count(required delivery hold points H0,H1,H2,H3,H4 with accountable role classes, required evidence and a stop action) / 5",
+      "confidence": "high",
+      "assumptions": [
+        "A-DELIVERY-READINESS-001"
+      ],
+      "scope_note": "Proposal-structure evidence only; not proof of official adoption, logo approval, event implementation, awards, confirmed siting, operation, budget, procurement, construction or performance."
     }
   }
 }

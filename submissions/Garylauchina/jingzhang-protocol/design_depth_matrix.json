@@ -134,7 +134,13 @@
         "network_role_anchor_count",
         "network_role_count",
         "application_capability_stage_count",
-        "application_capability_mapping_coverage_ratio"
+        "application_capability_mapping_coverage_ratio",
+        "brand_architecture_layer_count",
+        "brand_flagship_mapping_coverage_ratio",
+        "reversible_public_space_component_count",
+        "landmark_component_mapping_coverage_ratio",
+        "honor_contribution_class_count",
+        "delivery_hold_point_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -159,7 +165,9 @@
         "A-FLAGSHIP-FP05",
         "A-METRICS-001",
         "A-NATIONAL-STRATEGIC-FRAMING-001",
-        "A-APPLICATION-CAPABILITY-REPLICATION-001"
+        "A-APPLICATION-CAPABILITY-REPLICATION-001",
+        "A-BRAND-COMPONENT-001",
+        "A-DELIVERY-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -167,7 +175,12 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "总体结构以六个唯一角色锚点组织SOURCE—STACK—PROVE—LIVE & MARKET—ENABLE—COMMONS网络，并由五旗舰、双纵向联系、四横链与西—中—东依赖包承载；既有三段仅为稳定底盘索引，不是总体品牌或工期；总体结构新增三处街室和七接口实体的可解析空间关系，仍依附原梯形网络和临时范围；五项旗舰按三区两翼和公园公共层组织，形成从研发与首用到实景证明、日常市场和公开反馈的空间分工；六角色、六唯一锚点与五旗舰共同构成V0.7总体结构的可复算机器证据。V0.9把六项转化能力逐一映射到六节点，并以横贯式可信运行层支撑全部阶段；它不是第七空间节点，也不构成实施绩效。"
+      "evidence_summary_zh": "总体结构以六个唯一角色锚点组织SOURCE—STACK—PROVE—LIVE & MARKET—ENABLE—COMMONS网络，并由五旗舰、双纵向联系、四横链与西—中—东依赖包承载；既有三段仅为稳定底盘索引，不是总体品牌或工期；总体结构新增三处街室和七接口实体的可解析空间关系，仍依附原梯形网络和临时范围；五项旗舰按三区两翼和公园公共层组织，形成从研发与首用到实景证明、日常市场和公开反馈的空间分工；六角色、六唯一锚点与五旗舰共同构成V0.7总体结构的可复算机器证据。V0.9把六项转化能力逐一映射到六节点，并以横贯式可信运行层支撑全部阶段；它不是第七空间节点，也不构成实施绩效。V0.10.1以单一主品牌把五旗舰、四运营节律、五贡献类、三地标和M01-M06六组件纳入同一结构，并用H0-H4停止门阻止未测绘、无责任或无审批的概念进入实施。",
+      "evidence_files": [
+        "visual/assets/brand-component-architecture.json",
+        "visual/assets/verify-brand-component-architecture.js",
+        "assets/figures/brand-component-architecture.png"
+      ]
     },
     {
       "item_id": "land_use_layout",
@@ -487,7 +500,13 @@
         "flagship_pilot_count",
         "flagship_published_standard_output_count",
         "flagship_scenario_bundle_coverage_ratio",
-        "flagship_verified_public_benefit_count"
+        "flagship_verified_public_benefit_count",
+        "brand_architecture_layer_count",
+        "brand_flagship_mapping_coverage_ratio",
+        "reversible_public_space_component_count",
+        "landmark_component_mapping_coverage_ratio",
+        "honor_contribution_class_count",
+        "delivery_hold_point_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -499,7 +518,9 @@
         "A-TRANSPORT-001",
         "A-PROTOCOL-PROTOTYPE-001",
         "A-FLAGSHIP-FP03",
-        "A-FLAGSHIP-FP05"
+        "A-FLAGSHIP-FP05",
+        "A-BRAND-COMPONENT-001",
+        "A-DELIVERY-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -507,7 +528,12 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "三段绿地、六处公共空间、慢行服务链和三处地标形成连续公共系统；比例是临时边界下的设计指标，不是法定绿地率；嵌套街室不重复计入公共空间面积，三条旅程仅作为公共空间权利的概念审计序列；小月河场景共测网和京张证据公园只允许测绘后临时、可逆、有人值守的节点或联系，不由概念线位产生建设权。"
+      "evidence_summary_zh": "三段绿地、六处公共空间、慢行服务链和三处地标形成连续公共系统；比例是临时边界下的设计指标，不是法定绿地率；嵌套街室不重复计入公共空间面积，三条旅程仅作为公共空间权利的概念审计序列；小月河场景共测网和京张证据公园只允许测绘后临时、可逆、有人值守的节点或联系，不由概念线位产生建设权。V0.10.1将三地标与M01-M06六类可逆组件逐项对应，并以五类证据贡献记录连接公共空间、年度运营和能力返还；没有测绘、责任、无障碍/非数字路径、申诉补救或授权退出证据时，H0-H4要求保持概念或停止。",
+      "evidence_files": [
+        "visual/assets/brand-component-architecture.json",
+        "visual/assets/verify-brand-component-architecture.js",
+        "assets/figures/brand-component-architecture.png"
+      ]
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -717,7 +743,13 @@
         "fp01_contract_clause_coverage_ratio",
         "fp01_concrete_service_problem_count",
         "fp01_receipt_event_type_coverage_ratio",
-        "fp01_spatial_prototype_scale_count"
+        "fp01_spatial_prototype_scale_count",
+        "brand_architecture_layer_count",
+        "brand_flagship_mapping_coverage_ratio",
+        "reversible_public_space_component_count",
+        "landmark_component_mapping_coverage_ratio",
+        "honor_contribution_class_count",
+        "delivery_hold_point_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -735,7 +767,9 @@
         "A-FLAGSHIP-FP03",
         "A-FLAGSHIP-FP04",
         "A-FLAGSHIP-FP05",
-        "A-FP01-CONCRETE-PROTOTYPE-001"
+        "A-FP01-CONCRETE-PROTOTYPE-001",
+        "A-BRAND-COMPONENT-001",
+        "A-DELIVERY-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -743,10 +777,13 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "三期依赖包在拓扑和面积上齐套，且每个场景唯一落入一期；西侧知识、中部绿脊接口、东侧日常服务的名称与几何顺序一致；Return Ticket与依赖包关系可追溯，但三期继续表达证据门槛而非政府工期或投资承诺；旗舰试点以90日证据门和一年指标接入PHASE-001至003依赖序列，任何失败、暂停或退出记录均须保留。 V0.10补充FP01一项明确服务任务、1:500/1:100/1:50概念原型及成功、拒绝、人工接管、退出恢复四类回执；三尺度均待测绘，基线和结果保持未知。",
+      "evidence_summary_zh": "三期依赖包在拓扑和面积上齐套，且每个场景唯一落入一期；西侧知识、中部绿脊接口、东侧日常服务的名称与几何顺序一致；Return Ticket与依赖包关系可追溯，但三期继续表达证据门槛而非政府工期或投资承诺；旗舰试点以90日证据门和一年指标接入PHASE-001至003依赖序列，任何失败、暂停或退出记录均须保留。 V0.10补充FP01一项明确服务任务、1:500/1:100/1:50概念原型及成功、拒绝、人工接管、退出恢复四类回执；三尺度均待测绘，基线和结果保持未知。V0.10.1以H0-H4补齐从问题基线、载体责任、数据安全、独立补救到授权退出的责任与证据停止门；测绘、实名主体、预算采购、D0、市政消防交通及结果未知时不得把品牌、地标或组件结构写成实施进度。",
       "evidence_files": [
         "visual/assets/fp01-contract.json",
-        "assets/figures/fp01-spatial-prototype.png"
+        "assets/figures/fp01-spatial-prototype.png",
+        "visual/assets/brand-component-architecture.json",
+        "visual/assets/verify-brand-component-architecture.js",
+        "assets/figures/brand-component-architecture.png"
       ]
     },
     {

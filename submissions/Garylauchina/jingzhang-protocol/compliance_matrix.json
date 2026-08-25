@@ -1368,7 +1368,13 @@
         "network_role_anchor_count",
         "network_role_count",
         "application_capability_stage_count",
-        "application_capability_mapping_coverage_ratio"
+        "application_capability_mapping_coverage_ratio",
+        "brand_architecture_layer_count",
+        "brand_flagship_mapping_coverage_ratio",
+        "reversible_public_space_component_count",
+        "landmark_component_mapping_coverage_ratio",
+        "honor_contribution_class_count",
+        "delivery_hold_point_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1377,7 +1383,8 @@
       "visual_sections": [
         "总览地图",
         "三层范围",
-        "任务覆盖"
+        "任务覆盖",
+        "品牌与组件架构"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -1401,7 +1408,9 @@
         "A-SCENARIO-LOCATION-001",
         "A-GEOMETRY-CROSSCHECK-001",
         "A-NATIONAL-STRATEGIC-FRAMING-001",
-        "A-APPLICATION-CAPABILITY-REPLICATION-001"
+        "A-APPLICATION-CAPABILITY-REPLICATION-001",
+        "A-BRAND-COMPONENT-001",
+        "A-DELIVERY-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1409,7 +1418,12 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "‘京张，再次开路’以六节点网络和五旗舰试点统筹三区两翼，AI City API、城市公约、人工接管与七接口仅构成次级可信运行层；北纬社区、未来科学城、怀柔科学城、经开区和京津冀均为概念协作接口，不表示已确认合作、项目或空间边界；三间街室和I1-I7实体节点作为次级可信运行证据，为六节点网络和五旗舰提供可核验但非官方的责任接口；SOURCE、STACK、PROVE、LIVE_MARKET、ENABLE、COMMONS六节点由六个唯一几何锚点组织，五旗舰负责实施转化，可信运行层保持次级支撑；六角色各有且仅有一个临时几何锚点；北纬社区、未来科学城、怀柔科学城、经开区和京津冀只作为概念协作接口。 V0.8 登记社区可复算定位差异为 background-only 警示，不移动临时坐标，也不把同名地物关系写成已确认工程位置。V0.9以四条官方战略和项目直连来源校准六项转化能力与横贯式可信运行层；运行稳不是第七空间节点，整套框架也不构成国家试点、获批、采纳、实施或领先证明。",
+      "evidence_summary_zh": "‘京张，再次开路’以六节点网络和五旗舰试点统筹三区两翼，AI City API、城市公约、人工接管与七接口仅构成次级可信运行层；北纬社区、未来科学城、怀柔科学城、经开区和京津冀均为概念协作接口，不表示已确认合作、项目或空间边界；三间街室和I1-I7实体节点作为次级可信运行证据，为六节点网络和五旗舰提供可核验但非官方的责任接口；SOURCE、STACK、PROVE、LIVE_MARKET、ENABLE、COMMONS六节点由六个唯一几何锚点组织，五旗舰负责实施转化，可信运行层保持次级支撑；六角色各有且仅有一个临时几何锚点；北纬社区、未来科学城、怀柔科学城、经开区和京津冀只作为概念协作接口。 V0.8 登记社区可复算定位差异为 background-only 警示，不移动临时坐标，也不把同名地物关系写成已确认工程位置。V0.9以四条官方战略和项目直连来源校准六项转化能力与横贯式可信运行层；运行稳不是第七空间节点，整套框架也不构成国家试点、获批、采纳、实施或领先证明。V0.10.1以单一主品牌、五旗舰、四项运营节律、五类贡献记录、三地标和六类可逆组件形成统一架构，并用H0-H4责任/证据停止门约束转化；这只证明提案内部结构完整，不证明Logo批准、活动实施、获奖、选址、运营、预算、采购、施工或绩效。",
+      "evidence_files": [
+        "visual/assets/brand-component-architecture.json",
+        "visual/assets/verify-brand-component-architecture.js",
+        "assets/figures/brand-component-architecture.png"
+      ],
       "geojson_feature_ids": [
         "INTERFACE-I1",
         "INTERFACE-I2",
@@ -1714,7 +1728,13 @@
         "protocol_street_room_count",
         "fp01_concrete_service_problem_count",
         "fp01_receipt_event_type_coverage_ratio",
-        "fp01_spatial_prototype_scale_count"
+        "fp01_spatial_prototype_scale_count",
+        "brand_architecture_layer_count",
+        "brand_flagship_mapping_coverage_ratio",
+        "reversible_public_space_component_count",
+        "landmark_component_mapping_coverage_ratio",
+        "honor_contribution_class_count",
+        "delivery_hold_point_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1723,7 +1743,8 @@
       "visual_sections": [
         "重点区域",
         "AI 场景",
-        "核心指标"
+        "核心指标",
+        "品牌与组件架构"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -1734,7 +1755,9 @@
         "A-HERITAGE-001",
         "A-EXISTING-001",
         "A-PROTOCOL-PROTOTYPE-001",
-        "A-FP01-CONCRETE-PROTOTYPE-001"
+        "A-FP01-CONCRETE-PROTOTYPE-001",
+        "A-BRAND-COMPONENT-001",
+        "A-DELIVERY-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1742,7 +1765,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "六处公共空间原型与三处地标连接协议解释、测试展示和贡献记忆；建筑方式、位置和文保关系仍待深化；协议制票室、验票室和回程室作为既有公共空间的非加总子空间，并由三条概念人物旅程检验公共权利界面。 V0.10将FP01收束为一项学习/职业转介服务：S07是唯一用户服务，S03负责评测，S04负责接口；虚构复合人物、三尺度概念空间和四类示例回执可机读核查，实际人物确认、场址、基线、阈值和绩效仍待D0实测。",
+      "evidence_summary_zh": "六处公共空间原型与三处地标连接协议解释、测试展示和贡献记忆；建筑方式、位置和文保关系仍待深化；协议制票室、验票室和回程室作为既有公共空间的非加总子空间，并由三条概念人物旅程检验公共权利界面。 V0.10将FP01收束为一项学习/职业转介服务：S07是唯一用户服务，S03负责评测，S04负责接口；虚构复合人物、三尺度概念空间和四类示例回执可机读核查，实际人物确认、场址、基线、阈值和绩效仍待D0实测。V0.10.1把三地标与M01-M06六类可逆组件逐项映射，以人工接管、非数字路径、回执申诉、公开观察、版本贡献等可拆卸界面形成同一公共空间语法；H0-H4未有实证即保持概念或停止，不表示选址、建设和运营获批。",
       "geojson_feature_ids": [
         "PUBLIC-BUILD-001",
         "PUBLIC-TEST-001",
@@ -1767,7 +1790,10 @@
       "evidence_files": [
         "visual/assets/fp01-contract.json",
         "visual/assets/verify-fp01-contract.js",
-        "assets/figures/fp01-spatial-prototype.png"
+        "assets/figures/fp01-spatial-prototype.png",
+        "visual/assets/brand-component-architecture.json",
+        "visual/assets/verify-brand-component-architecture.js",
+        "assets/figures/brand-component-architecture.png"
       ]
     },
     {
@@ -1799,7 +1825,13 @@
         "flagship_pilot_count",
         "flagship_published_standard_output_count",
         "flagship_scenario_bundle_coverage_ratio",
-        "flagship_verified_public_benefit_count"
+        "flagship_verified_public_benefit_count",
+        "brand_architecture_layer_count",
+        "brand_flagship_mapping_coverage_ratio",
+        "reversible_public_space_component_count",
+        "landmark_component_mapping_coverage_ratio",
+        "honor_contribution_class_count",
+        "delivery_hold_point_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1808,7 +1840,8 @@
       "visual_sections": [
         "重点区域",
         "AI 场景",
-        "来源"
+        "来源",
+        "品牌与组件架构"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -1819,7 +1852,9 @@
       "assumption_ids": [
         "A-HERITAGE-001",
         "A-KEYAREA-001",
-        "A-FLAGSHIP-FP05"
+        "A-FLAGSHIP-FP05",
+        "A-BRAND-COMPONENT-001",
+        "A-DELIVERY-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1827,7 +1862,12 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "铁路自主工程史、遗址公园公共性、协议版本记忆与三处地标形成文化叙事；设计命题与史料原句保持区分；FP05用权利清晰、可纠错、可无手机访问的证据路线连接京张遗产叙事与当代AI试验。",
+      "evidence_summary_zh": "铁路自主工程史、遗址公园公共性、协议版本记忆与三处地标形成文化叙事；设计命题与史料原句保持区分；FP05用权利清晰、可纠错、可无手机访问的证据路线连接京张遗产叙事与当代AI试验。V0.10.1以道岔、开放括号和回程箭头作为未获批的Logo方向，以公共问题、开放构建、独立验证、权利守护、失败纠错与能力返还五类可核查贡献替代个人排位式荣誉；三地标和六类可逆组件共用同一叙事语法，不声称已有官方标识、获奖者、活动或建成地标。",
+      "evidence_files": [
+        "visual/assets/brand-component-architecture.json",
+        "visual/assets/verify-brand-component-architecture.js",
+        "assets/figures/brand-component-architecture.png"
+      ],
       "geojson_feature_ids": [
         "SCENARIO-S09",
         "SCENARIO-S12",
@@ -1883,7 +1923,13 @@
         "fp01_contract_clause_coverage_ratio",
         "fp01_concrete_service_problem_count",
         "fp01_receipt_event_type_coverage_ratio",
-        "fp01_spatial_prototype_scale_count"
+        "fp01_spatial_prototype_scale_count",
+        "brand_architecture_layer_count",
+        "brand_flagship_mapping_coverage_ratio",
+        "reversible_public_space_component_count",
+        "landmark_component_mapping_coverage_ratio",
+        "honor_contribution_class_count",
+        "delivery_hold_point_coverage_ratio"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1892,7 +1938,8 @@
       "visual_sections": [
         "AI 场景",
         "任务覆盖",
-        "核心指标"
+        "核心指标",
+        "品牌与组件架构"
       ],
       "source_ids": [
         "AGENT-TASKBOOK",
@@ -1916,7 +1963,9 @@
         "A-FLAGSHIP-FP05",
         "A-NATIONAL-STRATEGIC-FRAMING-001",
         "A-APPLICATION-CAPABILITY-REPLICATION-001",
-        "A-FP01-CONCRETE-PROTOTYPE-001"
+        "A-FP01-CONCRETE-PROTOTYPE-001",
+        "A-BRAND-COMPONENT-001",
+        "A-DELIVERY-READINESS-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1924,7 +1973,7 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制；三条旅程和三处能力返还台把长期运营的暂停、补救、退役及公共能力返还写成引用完整的概念登记，不声称已经兑现；每项试点以90日go/revise/stop记录进入一年评估，未验证采购、扩散、标准和公共收益继续保持unknown。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。V0.9所称复制是方法、合同、接口、运行手册和失败记录的建议包，不证明已有外部采用。 V0.10将FP01收束为一项学习/职业转介服务：S07是唯一用户服务，S03负责评测，S04负责接口；虚构复合人物、三尺度概念空间和四类示例回执可机读核查，实际人物确认、场址、基线、阈值和绩效仍待D0实测。",
+      "evidence_summary_zh": "季度开放、半年审查、年度大会和持续版本日志通过场景及分期空间承载；活动、预算、主体和时序均为概念机制；三条旅程和三处能力返还台把长期运营的暂停、补救、退役及公共能力返还写成引用完整的概念登记，不声称已经兑现；每项试点以90日go/revise/stop记录进入一年评估，未验证采购、扩散、标准和公共收益继续保持unknown。 V0.8 以 FP01-CONTRACT-001 把 S03/S04/S07 收束为一份未签署的百日首用交付合同模板，并用五个时间门和十二条合同条款形成可验收、可停止、可返还的结构证据。V0.9所称复制是方法、合同、接口、运行手册和失败记录的建议包，不证明已有外部采用。 V0.10将FP01收束为一项学习/职业转介服务：S07是唯一用户服务，S03负责评测，S04负责接口；虚构复合人物、三尺度概念空间和四类示例回执可机读核查，实际人物确认、场址、基线、阈值和绩效仍待D0实测。V0.10.1把四项运营节律、五类贡献记录、五旗舰和六组件纳入单一品牌背书语法，并以H0-H4覆盖公共问题、载体与责任、数据安全、独立补救、授权退出五类停止门；所有主体、预算、采购、D0、市政消防交通和结果仍须另行确认。",
       "geojson_feature_ids": [
         "PHASE-001",
         "PHASE-002",
@@ -1974,7 +2023,10 @@
       "evidence_files": [
         "visual/assets/fp01-contract.json",
         "visual/assets/verify-fp01-contract.js",
-        "assets/figures/fp01-spatial-prototype.png"
+        "assets/figures/fp01-spatial-prototype.png",
+        "visual/assets/brand-component-architecture.json",
+        "visual/assets/verify-brand-component-architecture.js",
+        "assets/figures/brand-component-architecture.png"
       ]
     }
   ]
