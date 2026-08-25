@@ -79,14 +79,48 @@
     {
       "id": "SRC-MEDIA-RENDER-V11",
       "source_type": "background_only",
-      "usage": "v1.1 多媒体资产的确定性生成方法登记：画廊封面与图件由 matplotlib 从投稿包 GeoJSON（绿脊中心线、分期、重点区）确定性渲染；中英音频导览由 Windows 内置语音合成（System.Speech，Huihui/Zira 音色）逐句生成并以 ffmpeg 转 mp3；概念视频由 matplotlib 逐帧渲染（底图一次渲染自包内几何）后 ffmpeg H.264 本地编码。",
-      "limitations": "全部媒体为概念氛围/导览内容，非空间依据，不构成面积、边界或指标证据；音频为合成语音、非真人录音；生成过程零网络请求、零第三方素材、零生成式图像模型；正式空间结论以 GeoJSON/metrics.json 为准。"
+      "usage": "v1.1 多媒体资产的确定性生成方法登记：画廊封面与图件由 matplotlib 从投稿包 GeoJSON 确定性渲染；中英音频导览由 Windows 内置语音合成逐句生成并以 ffmpeg 转 mp3；概念视频由 matplotlib 逐帧渲染后 ffmpeg 本地编码。",
+      "limitations": "全部媒体为概念氛围/导览内容，非空间依据，不构成面积、边界或指标证据；音频为合成语音、非真人录音；生成过程零网络请求、零第三方素材、零生成式图像模型。"
     },
     {
       "id": "SRC-A11Y-CHECK-V12",
       "source_type": "background_only",
-      "usage": "v1.2 无障碍色觉量化核验方法登记：对图件 11 色语义色板做四类色觉（正常/绿盲/红盲/蓝盲，Machado et al. 2009 二色觉矩阵 severity 1.0）模拟下的 CIEDE2000（Sharma et al. 2005 实现，经论文官方测试向量 5/5 自检）两两色差核验，阈值 ΔE00≥20；逐对结果登记于 visual/assets/a11y-color-check.json。",
-      "limitations": "核验脚本位于作者本地 .local-build/（不随包分发），但方法、矩阵来源、阈值与实现自检向量在正文与本条完整披露，可由第三方按同方法复算；例外色对的整改（拉开金色族明度、分离两个黛蓝）为对专业团队的深化建议，本包以文字冗余编码兜底。"
+      "usage": "v1.2 无障碍色觉量化核验方法登记：对图件 11 色语义色板做四类色觉模拟下的 CIEDE2000 两两色差核验，阈值 ΔE00≥20；逐对结果登记于 visual/assets/a11y-color-check.json。",
+      "limitations": "核验方法、矩阵来源、阈值与实现自检向量在正文与本条完整披露，可由第三方按同方法复算；例外色对整改建议以文字冗余编码兜底。"
+    },
+    {
+      "id": "SRC-OSM-CONTEXT-SNAPSHOT",
+      "source_type": "background_only",
+      "usage": "OpenStreetMap 本地背景快照，经 Overpass API 获取；bbox 39.92,116.31,40.06,116.39，快照时间窗自 2026-08-22T18:47Z 起。数据版权归 © OpenStreetMap contributors，采用 ODbL 1.0。",
+      "limitations": "仅用于背景辨识；不参与边界、用地、道路与指标计算；不作测绘成果或审批底图。"
+    },
+    {
+      "id": "SRC-HAIDIAN-DISTRICT-PLAN",
+      "url": "http://zyk.beijing.gov.cn/xxgk/ghcg/bjscsgtztgh/201912/t20191211_1113098.html",
+      "source_type": "provisional_only",
+      "usage": "《海淀分区规划（国土空间规划）（2017年—2035年）》公开要点；作为区域绿道网络与创新走廊定位的背景对照。",
+      "limitations": "宏观分区规划纲要，非控规红线；实际控制指标以深化阶段法定成果为准。"
+    },
+    {
+      "id": "SRC-ZHONGGUANCUN-POLICY",
+      "url": "http://zgcgw.beijing.gov.cn/zgc/zwgk/zcfg/bjs/543169824/index.html",
+      "source_type": "background_only",
+      "usage": "中关村科学城先行先试改革与人工智能创新高地建设相关公开政策导向；支撑产业测试验证场景的政策必要性论述。",
+      "limitations": "政策导向文献，不构成具体资金安排或财政承诺。"
+    },
+    {
+      "id": "SRC-MACHADO-2009-CVD",
+      "url": "https://doi.org/10.1109/TVCG.2009.113",
+      "source_type": "background_only",
+      "usage": "Machado et al. (2009) 'A Physiologically-based Model for Simulation of Color Vision Deficiency'；提供二色觉严重度模拟的转换矩阵标准算法。",
+      "limitations": "学术模型文献；用于色彩无障碍自检的方法学支撑。"
+    },
+    {
+      "id": "SRC-SHARMA-2005-CIEDE2000",
+      "url": "https://doi.org/10.1002/col.20070",
+      "source_type": "background_only",
+      "usage": "Sharma, Wu, Dalal (2005) 'The CIEDE2000 Color-Difference Formula: Implementation Notes, Supplementary White Points, and High-Precision Test Analytics'；提供色差计算标准实现与自检向量。",
+      "limitations": "学术计算文献；用于色差度量算法精度验证。"
     }
   ]
 }

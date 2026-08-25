@@ -1,5 +1,78 @@
 # 方案迭代记录
 
+## v1.6 - 2026-08-25
+
+### Wave-7 深度补强（评审反馈导向）
+
+- **气数协议结构化绑定**：`qi-protocol.json` 增设 revision_mechanism 与 model_card/data_card 引用字段，并与 QP-3/QP-5 会签要求一一对应。
+- **设计深度矩阵扩容**：新增 pilot_phase_1_taskbook、o_and_m_tiers、qi_protocol_evolution、palette_remediation 四个深度条目。
+- **一期试点启动前核验清单**：权属核实、运营主体到岗、回滚责任触发三查写入实施章；S/M/L 成本级补估算假设口径。
+- **资金来源类型假设**：assumptions.json 新增条件式假设（财政投资/社会资本/场景运营自平衡，不预设比例）。
+- **visual 分期公共性卡片**：双语指标卡新增"26.9/18.7 → 32.2/22.4（union∩ · provisional）"。
+- **原创性定位句**：总体概念段明确本框架相对既有城市性能模型/数字孪生方法的增量口径。
+
+### Wave-8 确定性自证验证器
+
+- 新增 `visual/assets/governance/qi-pulse-verification.json`：七组 30 项确定性检查全部 PASS——场景卡 156 项演练逐项复算（双语 13 卡 × 五结构字段 + 测试星标位）、气数协议规则范围声明与测试行绑定、八类岗位闭环、三期条件门结构与分期面积复算、a11y 计数与六项分期比率跨文件一致、双语证据标签多重集全等、四 HTML CJK 字符全覆盖。验证器只读包内文件、确定性可复算。
+
+
+## v1.5 - 2026-08-25
+
+字体内联回归修复与一致性机械修复轮。
+
+### Wave-2 内容补强（2026-08-25）
+
+- **一期最小试点任务书**：实施章新增「一期最小试点任务书（可直接启动的概念稿）」，条件式整合南段约 3 公里气脉绿道示范段 + 罗盘广场节点、启动责任方类型、既有三期进入门、既有验收矩阵七列闭环与 WP-01 至 WP-05 行，以及暂停/退出后的公共空间状态。
+- **分期核心公共性指标**：`metrics.json` 新增 `phase_{1,2,3}_green_ratio` 与 `phase_{1,2,3}_public_space_ratio` 六键，登记 EPSG:4548 交集复算公式和 provisional 口径；指标章新增证据行并声明“公共性随分期递增，先手南部不以牺牲公共性为代价”。
+- **年度运维成本级**：行动包表后新增条件式运维段，绿道、照明、服务亭与物流驿站分别给出 S/M/L 年度成本级与承担主体类型；全部采用“若试点启动则…”口径，不构成财务承诺。
+- **第七类画像与可负担性概念条款**：用户画像由六类扩为七类，新增「租户与非京籍青年」行并引用既有场景卡编号与自检边界；人才公寓段补可负担居住概念接口，不预设租金数字。
+- **治理补强**：AI 治理章节新增气数协议 v0.1 版本演进与社区修订机制，明确提案主体、独立复核岗会审和历史版本留存；附模型卡/数据卡最小字段模板。
+
+### Wave-3 图件色板整改（2026-08-25）
+
+- **八色映射落地**：按 v1.5 执行简报定稿映射替换鎏金、古铜金、琥珀、黛蓝、黛蓝深、灰、浅玉绿与玉绿；`build_figures.py` 中文渲染链改为 `.local-build/fonts/NotoSansSC-Regular.otf`，中英 10 张核心 PNG 重出；总览图与大钟寺重点区图在 PROV-KEY-003 附近新增约 2.26km 质心偏移争议的双语 provisional 警示。
+- **visual 外科手术更新**：仅对现包 `visual/index.html` 与 `index.en.html` 原位替换 SVG 内联色值并补充官方色觉计数说明，未运行陈旧 `build_visual.py` 重生成，保留手工多媒体区、治理卡与条件门内容。
+- **官方无障碍复检**：11 色 × 四类色觉 × CIEDE2000 共 220 对检查，官方输出 36 对例外（正常 6 / 绿盲 10 / 红盲 9 / 蓝盲 11；基线 39），正文、metrics、a11y JSON 与权利台账同步。整改成效：古铜金↔琥珀由四类全败转四类全过；鎏金↔琥珀、鎏金↔古铜金逐条件全面收敛；双黛蓝最劣值 3.4→8.6；红盲例外 13→9。灰色与浅玉绿两色经网格复扫确认基线值为局部最优、维持不变；残差按跨族近邻物理极限逐对登记，文字冗余编码兜底不变。
+- **图纸重出**：根目录图纸脚本版本串升至 v1.5 后重出中英 A3 册子与 A0 展板共 4 份 PDF；版权台账维持 Noto Sans SC（中文静态图件/PDF）与 DejaVu Sans（英文 PDF）的实际渲染链披露。
+
+### Wave-4 工程一致性修复与字体收口（2026-08-25）
+
+- **Fix-A CJK 字体内联**：重渲染主报告 HTML 后重新注入覆盖当前内容的 Noto Sans SC WOFF2 子集，并同步视觉页面字体资产；字体审计通过，避免无 CJK 字体环境下出现缺字形。
+- **版本链统一**：双语提案 front matter 当前版本改为 v1.5，权利台账同步至 v1.5；历史阶段署名中的 v1.3 口径保持不变。
+- **资产事实校准**：按 `pdfinfo` 将中英 A3 册子页数记录为各 6 页；按 `assets/media/experience.md` 将视频规格统一为 24 秒、H.264 (yuv420p)、无声。
+- **字体与复算口径修正**：中英版权说明改为中文图件 PDF 嵌入 Noto Sans SC 子集、英文图件 PDF 使用 DejaVu Sans；微软雅黑降为 v1.0–v1.4 历史渲染链备注，并标注待专业法律确认。将“全部过程脚本与中间产物”的表述降级为关键公式与几何可复算、生成脚本留存于作者环境并按需提供。
+
+## v1.4 - 2026-08-25
+
+96 档深度证据闭环与冲分增强轮（S0-S5 全量应用）。
+
+- **S0 upstream main 同步**：快进合并 upstream/main（`c196d5c57`），同步上游 473 提交，本地自检/评审脚本获得最新 Schema 0.2.1 与 UTF-8/LF 加固。
+- **S1 AI 量化验收框架与机器可查标签织入**：AI 创新生态章新增「验收条件量化框架（概念口径）」表格，覆盖三个产业测试场景的 7 个量化验收维度（冲突率、净宽保持率、MAE 相对误差、复现性、推理能耗、端侧时延、断网可用度），全文 `[depth:*]` 机器可查标签从 6 处大幅提升至 21 处，`[standard:*]` 标签 6 处，`[metric:*]` 标签 22 处；双语提案标签 100% 精确对齐。
+- **S2 条件式 RACI 实施工作包矩阵**：分期计划章新增「条件式实施工作包矩阵（概念建议 · Schema 0.2.1 conditional_followups）」，包含 WP-01 至 WP-15 共 15 项工作包（RACI 角色、trigger_condition、90 天里程碑、S/M/L 预算级）；`assumptions.json` 扩充至 12 条结构化假设（涵盖分期条件门、工作包组织类型、概念预算级、AI 验收框架与控规待补齐说明）；`metrics.json` 新增 `work_package_count=15`。
+- **S3 资产权利台账与来源三态使用纪律**：`report/copyright_statement.md` 全面重构为 8.8KB 结构化资产权利台账，逐路径说明 11 对 PNG、4 份 PDF、多媒体（mp3/mp4/vtt）、Web 交互、Noto Sans SC (OFL-1.1) 字体与 OpenStreetMap (ODbL-1.0) 数据合规；`sources.json` 扩充至 19 项来源条目并与正文 `[source:*]` 引用精确对齐。
+- **S4 设计叙事深度扩写**：`report/narrative.md` 从 462B 扩写至 4.5KB，包含概念源起、四大关键设计决策、六步 AI 协作流程、五项设计局限与诚实声明。
+- **S5 包容性硬指标声明**：正文显式承诺等价非 AI 路径（no-AI-equivalent route，`no_ai_equivalent_route_count=13`）与降级不劣化机制（refuse-not-to-degrade，`degradation_recovery_hours=24`），并在场景卡、气数协议、条件门与岗位规格中四重闭环。
+
+## v1.3 - 2026-08-23
+
+外部上下文与证据指针轮（A+B+C+E），并按几何实证统一重点区面积口径。
+
+- **A 外部上下文数据层**：新增"外部上下文数据层（背景辨识）"小节（中英各一处），登记 OpenStreetMap 快照 bbox（WGS84 南,西,北,东）39.92,116.31,40.06,116.39、快照时间 2026-08-22T18:47Z±、七类要素计数（waterway 109 / green 1780 / amenity 节点 2424 / road 4636 / railway 267 / building 14740 / 公共交通站点 2563，合计 26,519），配套图件 `context-basemap.png` / `context-basemap.en.png`；来源标注 © OpenStreetMap contributors · Overpass API · ODbL 1.0，方法与限制登记 `sources.json` 条目 SRC-OSM-CONTEXT-SNAPSHOT。该层三条硬性声明：仅背景辨识、不参与边界/用地/道路/指标计算、不作测绘成果或审批底图；building 双口径已注明（14,740 含量关系，图面渲染取 way 级 14,648）。风险章另补 ODbL 合规与非权威定位专段（中英各一处）。
+- **B 引用规范核查**：核查正文官方文件引用的书名号全称，四处（《百年京张AI创新带城市设计国际方案征集资格预审公告》《生成式人工智能服务管理暂行办法》《无障碍环境建设法》《城市设计管理办法》）均为官方全称，无缩写错误，无需修正；`sources.json` 不在本轮内容面改动范围。
+- **C KPI 证据指针挂接**：指标章 KPI 表增列"证据指针（`metrics.json` 键名）"，公共利益相关指标逐行括注精确键名与复算值——`green_ratio`=0.293695、`public_space_ratio`=0.204309、`greenway_length_m`=9721.9、`public_space_feature_count`=5、`key_area_count`=3 及三处 `key_area_*_sqm`、三期 `phasing_phase_1/2/3_area_sqm`，另补 `site_area_sqm`、`building_density` 与两项 `status=unknown` 控规指标；新增公共空间要素数、重点区域分项规模两行，三期分期句内联三键并补全 `[metric:]` 标记。评审者可按键名直查公式、来源文件与置信度，数值口径与 `metrics.json` 逐项一致。
+- **E 署名更新**：v1.3 阶段署名定为"同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）"（EN: Tongji Design AI Cloud: DeepSeek Harness + ox-alpha, with subagent CLIs Codex (GPT-5.6-Sol) and Claude Code (Claude Opus 5)），proposal×2 / copyright_statement / agent.json / manifest 五处双语一致；历史链（初稿 opencode/kimi-k3 · 迭代 zcode/GLM-5.3）与人类参与者 hechushitaoyuan 署名与职责表述完整保留。agent 卡 `agent_name` 取短形"同济设计AI云"供画廊展示，全貌文本只落正文、条款与 `model_detail`；`model_family` 由 kimi 改为 deepseek（编排主体 ox-alpha 属 DeepSeek 系）。
+- **重点区面积口径统一**：按 `geometry/key_areas.geojson` 重投影 EPSG:4548 复算，三处重点区分项和=并集=3,692,893 ㎡=369.29 ha（零重叠），与 `metrics.json` 三键完全一致；正文陈旧值"约 368.4 公顷"订正为"约 369.3 公顷"，共六处（proposal×2、report/proposal(.en).html、visual/index(.en).html）。
+
+### 补强轮（2026-08-24）
+
+按官方 auto-review（86 分 / request-changes）必须项 5、6 执行的内容面补强，本轮仅改 `proposal.md` / `proposal.en.md` / `changelog.md` 三文件。
+
+- **必须项 5 · 产业测试验证场景最小验收矩阵**：AI 创新生态章场景卡表之后新增小节「产业测试验证场景 · 最小验收矩阵」（EN: Industry Test-and-Validation Scenarios · Minimum Acceptance Matrix），为 #4 机器人低速配送港 / #8 风环境仿真测试场 / #13 藏风算力亭 各建一行，逐行覆盖七个验收维度：基线口径、目标阈值、失败停止条件、人工接管点、数据保留策略、独立复核方式、退出复盘机制（表结构为「场景 + 七维度」共 8 列 × 3 场景行）。合规口径：三场景明示"均未启动、未获任何官方授权、未开展任何现场实测/标定/委托测试"，全部单元格为条件式表述（「若试点启动则…」）或"应标定维度"，具体数值一律留给实施主体会同相关主管部门与专业机构在深化阶段标定并公示，本方案不预设数值、不替代审批；涉及范围与路段的表述保留 provisional 临时几何口径与复算声明 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]。矩阵与场景卡表、气数协议 v0.1（察气—演气—验气—养气）、三期条件门三者互为约束——三期验收门要求的"完成首轮测试并发布退出复盘"即以本矩阵为最小验收口径。中英双语小节逐格对应，新增证据标记（`[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]`、`[metric:testbed_count]`、`[metric:phase_condition_gate_count]`）两文件完全一致，均为既有 sources/metrics 条目，无新增指标。
+- **必须项 6 · 双语实质等价复核留痕**：通读双语全文抽查数字、口径、章节覆盖与范围声明三连。**结论：结构层全等，内容层查出 7 处不一致，已全部修正。** 结构层核验（机器可复算）：`##` 章节 14 : 14 全等；表格 15 : 15，逐表行数与列数全等；证据标记多重集 84 : 84 逐条全等；场景卡引用 `#N` 逐编号计数全等（#1 4:4、#2 2:2、#3 1:1、#4 9:9、#5 3:3、#8 10:10、#9 1:1、#10 2:2、#11 3:3、#13 11:11）；关键数值 369.3 / 43.6 / 11.4 / 11.41 / 335 / 233 / 9.7 / 9721.9 / 73.1 / 6.4 / 470 / 345 / 327 / 26,519 / 14,740 / 14,648 / bbox 四值 / 156 / 220 出现次数全等；范围声明三连（方案性质声明、OSM 层三条硬性声明、合规边界复述）双语齐备。已修正的 7 处：①EN 标志段漏「1908 年青龙桥展线」年份与"中环轨道同心圆"层，已补；②EN 同段色谱只列四色，与本段读图说明自称"six-colour palette"自相矛盾，且漏 ZH 的辅色黛蓝/玉绿及各色用途，已补齐六色与用途；③EN 交通章漏 ZH 的"站点—气口—绿脊"三级接驳导视与轨道出口方向指引，已补；④EN 公共服务段漏 ZH 的"一处多能"兜底句（无智能层时构筑物仍为照明/座椅/问询设施，场景退出服务不退场），已补——该句属公共性兜底口径，缺失会使 EN 读者少一条合规承诺；⑤ZH 版权段字体披露窄于 EN（EN 已披露 matplotlib 内置 DejaVu），已按较充分口径对齐为「微软雅黑 + DejaVu，仅本地渲染、不随包分发字体文件」；⑥ZH 气数四次转译表"阴阳"行缺场景卡编号（EN 已有 #11），已补 #10 / #11，EN 同步补 #10；⑦ZH 两处文字订正——"沿線活力"繁简混用订正为"沿线活力"，长期运营段"把城市数据读法开源自留地化"语义含混、与 EN "open-sources the reading of urban data" 不符，订正为"把城市数据的公共读法开源化"。均为表述层订正，未触动任何指标数值、几何口径或合规声明。
+- **（预留）工程面另行登记**：CJK 字体嵌入（`drawings/a3-booklet.pdf` 等 PDF 交付物的中文字形嵌入）与交付物重导出（`render_proposal_html` → `refresh_submission_manifest` → 四门自检 → `participant_preflight`，含 `report/proposal(.en).html`、`visual/index(.en).html` 与 manifest 哈希重算）不在本轮内容面边界内，由工程面另行执行并在其条目下登记。本轮新增小节尚未反映到 HTML 交付物与 manifest 哈希，须以工程面重导出为准。
+
+**管线**：待跑 render_proposal_html → refresh_submission_manifest → 四门自检 → participant_preflight（manifest 哈希与文件清单由 refresh 脚本统一重算）。
+
 ## v1.2 - 2026-08-20
 
 精瘦收尾轮（A+B+E+F，经评审纪律裁定为最后一轮内容迭代）。

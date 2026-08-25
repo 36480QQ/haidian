@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以多感官通用设计为产业赛道与城市底线，让不同身体、感官和认知方式的人都能独立理解、选择、完成并退出同一项 AI 城市服务。"
 tracks: ["ai-traffic-walkability", "ai-public-services", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "robot-delivery-low-speed"]
-iteration: "v9.6"
+iteration: "v9.8"
 ---
 
 # 万感京张：每一种身体都能独立使用的 AI 城市 / EVERY SENSE JING-ZHANG
@@ -945,11 +945,11 @@ L1 可逆试验阶段，构件安装前须在现场与线上同时公告可撤�
 
 **隐私保护与人工复核。** 共同设计和任务测试遵循自愿参加、知情同意、目的限定、最少必要、分级访问、可撤回和到期处置原则；不以人脸、持续定位、健康状况、障碍类别或行为轨迹作为获得基本服务的前提。任何跨模态翻译、机器人、身份核验、活动疏散或自动推荐结果，都须保留可见状态、人工接管、申诉、纠错和退出路径。高影响判断由具备相应责任的人员复核，AI 不替代规划审批、专业审查、公共决策或真实参与者表达 [source:ACCESSIBILITY-LAW-CN]。若后续出现向境内公众提供生成内容的服务，则其内容与投诉处理须按生成式人工智能服务管理暂行办法的适用范围另行判断；本方案不提供也不主张提供此类服务，不据该办法声称已完成任何备案或安全评估，也不从中推导法定响应期限 [standard:GENERATIVE-AI-INTERIM-MEASURES] [source:GENERATIVE-AI-INTERIM-MEASURES-CN]。
 
-**版权与授权。** 文字、图示与离线展示为本方案生成；临时几何与项目材料按登记用途使用，外部案例只作释义与机制比较，不复制网页图像、版式、长段文字、企业标识或未授权字体；来源或授权不清的资产不进入公开成果 [source:SOURCE-REGISTRY]。全部交付资产的逐条权利登记——文件路径、作者与生成方式、工具、字体名称与来源及许可、地图数据许可与坐标系、代码来源与依赖许可、署名方式与复用限制——汇编于 `report/copyright_statement.md` 的「逐资产权利台账」，覆盖 `manifest.json` 登记的全部 153 个文件条目；每一行标明其信息取自本包哪一个既有登记文件，可逐字复核，包内未登记的字段照实写为未登记，不以常见值补齐。台账另收录提交方签署的作者权利保证与限制声明、两份生成服务条款（OpenAI 图像生成与 MiniMax 语音合成）的 Wayback 存档快照指针与原始快照内容指纹、字体许可正本（`visual/assets/font-license-ofl.json`），以及六件场景概念图的完整生成档案 [data:visual/assets/scene-provenance.json]。台账的类别级结论如下，可在本表直接核验：
+**版权与授权。** 文字、图示与离线展示为本方案生成；临时几何与项目材料按登记用途使用，外部案例只作释义与机制比较，不复制网页图像、版式、长段文字、企业标识或未授权字体；来源或授权不清的资产不进入公开成果 [source:SOURCE-REGISTRY]。全部交付资产的逐条权利登记——文件路径、作者与生成方式、工具、字体名称与来源及许可、地图数据许可与坐标系、代码来源与依赖许可、署名方式与复用限制——汇编于 `report/copyright_statement.md` 的「逐资产权利台账」，覆盖 `manifest.json` 登记的全部 156 个文件条目；每一行标明其信息取自本包哪一个既有登记文件，可逐字复核，包内未登记的字段照实写为未登记，不以常见值补齐。台账另收录提交方签署的作者权利保证与限制声明、两份生成服务条款（OpenAI 图像生成与 MiniMax 语音合成）的 Wayback 存档快照指针与原始快照内容指纹、字体许可正本（`visual/assets/font-license-ofl.json`），以及六件场景概念图的完整生成档案 [data:visual/assets/scene-provenance.json]。台账的类别级结论如下，可在本表直接核验：
 
 |资产类别 | 作者/生成方式 | 关键工具 | 许可与署名 | 复用限制|
 |---|---|---|---|---|
-|正文与结构化文件（17） | 本方案生成 | 文本与 JSON 手工/脚本生成 | 随包提交，无第三方文字 | 概念建议，非法定文本|
+|正文与结构化文件（18） | 本方案生成 | 文本与 JSON 手工/脚本生成 | 随包提交，无第三方文字 | 概念建议，非法定文本|
 |图版与标志（23） | 本方案自制矢量/脚本制图 | Python、SVG、rsvg-convert/Cairo | 无第三方图像；OSM 背景按 ODbL 署名 | 底图 background_only，不得作规划依据|
 |图纸 PDF（4） | 本方案排版渲染 | Chromium 渲染 + pypdf 装配 + fontTools 子集合并 | 仅嵌入思源黑体三字重子集（SIL OFL 1.1），每字重整册共用一份，全册字体审计零非 OFL 条目 | 同图版|
 |几何数据（9） | 临时工作几何，本方案绘制 | EPSG:4548 复算（shapely/pyproj） | 非官方红线；来源见 SOURCE-REGISTRY | 不得作权属/工程/审批依据|

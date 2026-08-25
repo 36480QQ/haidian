@@ -1199,6 +1199,139 @@
     "recalculation_trigger": "replacement of the bounded OpenStreetMap snapshot or revision of the site boundary",
     "reproduction_command": "compute_fabric.py (parameters and determinism statement registered in visual/assets/osm-fabric/osm-fabric-readings.json)"
    }
+  },
+  "simulation_task_count": {
+   "status": "known",
+   "value": 16,
+   "unit": "count",
+   "source_files": [
+    "simulation.json",
+    "geometry/constraints.geojson",
+    "risk.json",
+    "visual/assets/seb-spec.json",
+    "visual/assets/seb-tabletop-fixtures.json"
+   ],
+   "formula": "count(simulation.json#tasks); one task per in-package scenario card S01-S16",
+   "confidence": "high",
+   "assumptions": [
+    "One rehearsal task is registered per scenario card, so this count equals scenario_card_count by construction; it registers rehearsal records, not approved pilots or completed user research.",
+    "The sixteen cards are drafted test scripts whose establishment is decided card by card at the G2 closed paired test; the count constitutes no requirement coverage."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+    "verified_on": "2026-08-25",
+    "responsible_role": "design-evidence author and independent reviewer",
+    "rounding": "integer count",
+    "recalculation_trigger": "addition, merger, or withdrawal of a rehearsal task in simulation.json"
+   },
+   "metric_class": "offline_replayable_rehearsal_reading",
+   "claim_scope_zh": "离线合成演练读数，非现场绩效：本项由 simulation.json 的任务台账逐条复算得出，任何人按该文件 method 与 decision_rules 在同一份包上重算可得同一数值。它衡量的是包内既有结构化登记之间是否自洽，衡量不了任何服务在真实场地上的表现。",
+   "claim_scope_en": "An offline synthetic rehearsal reading, not field performance: the value recomputes item by item from the task ledger in simulation.json, and anyone applying that file's method and decision_rules to the same package obtains the same number. It measures whether the structured registrations already in the package are mutually consistent; it measures nothing about how any service performs on a real site.",
+   "notes_zh": "十六条任务与十六张场景卡一一对应。本项属本包指标体系的第四类——离线可复算演练读数。既有三类为：按临时几何复算的几何类读数、待官方资料确认的读数、以及待现场实测的绩效读数（后者一律保持 unknown）。第四类既不依赖临时几何，也不等待官方资料，更不冒充现场绩效；status 为 known 描述的是复算本身成立，不是任何场景已经成立。",
+   "notes_en": "The sixteen tasks correspond one to one with the sixteen scenario cards. A fourth-class metric in this package: an offline recomputable rehearsal reading. The three existing classes are geometry readings recomputed on provisional geometry, readings awaiting official material, and field performance readings which stay unknown until measured. The fourth class rests on no provisional geometry, waits for no official material and impersonates no field performance; where the status reads known, what is known is the recomputation, not the establishment of any scenario."
+  },
+  "simulation_success_rate": {
+   "status": "known",
+   "value": 0.1875,
+   "unit": "ratio",
+   "source_files": [
+    "simulation.json",
+    "geometry/constraints.geojson",
+    "risk.json",
+    "visual/assets/seb-spec.json",
+    "visual/assets/seb-tabletop-fixtures.json",
+    "geometry/public_space.geojson",
+    "visual/assets/service-desk-gonogo.json",
+    "visual/assets/seb-op04-chain-data.json"
+   ],
+   "formula": "count(simulation.json#tasks[] where outcome == \"success\" or outcome ends with \"_success\") / count(simulation.json#tasks)",
+   "confidence": "high",
+   "numerator_definition": "rehearsal tasks whose outcome is `success` under decision rule DR-3 of simulation.json: dispatch schema valid, audit chain complete, and no premise disproved or carrier no-go registered against the card (S01, S05, S08)",
+   "denominator_definition": "all sixteen rehearsal tasks registered in simulation.json",
+   "assumptions": [
+    "Success means the card's dispatch chain recomputes in full offline, not that the scenario is approved, built, staffed, or measured on site.",
+    "Twelve tasks are registered blocked because stop-condition binding in risk.json currently reaches only S01, S05 and S08, and one task (S04) is registered as a failure because the AI-off continuity premise of OP-04 was returned to unproven by the package's own evidence chain.",
+    "The rate sits far below tool_schema_pass_rate=1.0 on purpose: the field-level criteria are met while the institutional layer is not. Closing that gap requires supplying institutional evidence, never adjusting the criteria."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+    "verified_on": "2026-08-25",
+    "responsible_role": "design-evidence author and independent reviewer",
+    "rounding": "0.000001 ratio",
+    "recalculation_trigger": "any change to an outcome value, a decision rule, or the task set in simulation.json"
+   },
+   "metric_class": "offline_replayable_rehearsal_reading",
+   "claim_scope_zh": "离线合成演练读数，非现场绩效：本项由 simulation.json 的任务台账逐条复算得出，任何人按该文件 method 与 decision_rules 在同一份包上重算可得同一数值。它衡量的是包内既有结构化登记之间是否自洽，衡量不了任何服务在真实场地上的表现。",
+   "claim_scope_en": "An offline synthetic rehearsal reading, not field performance: the value recomputes item by item from the task ledger in simulation.json, and anyone applying that file's method and decision_rules to the same package obtains the same number. It measures whether the structured registrations already in the package are mutually consistent; it measures nothing about how any service performs on a real site.",
+   "notes_zh": "三条成功、一条失败、十二条阻塞。失败与阻塞如实登记，不作平滑。本项属本包指标体系的第四类——离线可复算演练读数。既有三类为：按临时几何复算的几何类读数、待官方资料确认的读数、以及待现场实测的绩效读数（后者一律保持 unknown）。第四类既不依赖临时几何，也不等待官方资料，更不冒充现场绩效；status 为 known 描述的是复算本身成立，不是任何场景已经成立。",
+   "notes_en": "Three successes, one failure and twelve blocked. Failures and blocks are registered as they stand and are not smoothed. A fourth-class metric in this package: an offline recomputable rehearsal reading. The three existing classes are geometry readings recomputed on provisional geometry, readings awaiting official material, and field performance readings which stay unknown until measured. The fourth class rests on no provisional geometry, waits for no official material and impersonates no field performance; where the status reads known, what is known is the recomputation, not the establishment of any scenario."
+  },
+  "tool_schema_pass_rate": {
+   "status": "known",
+   "value": 1.0,
+   "unit": "ratio",
+   "source_files": [
+    "simulation.json",
+    "geometry/constraints.geojson",
+    "risk.json",
+    "visual/assets/seb-spec.json",
+    "visual/assets/seb-tabletop-fixtures.json"
+   ],
+   "formula": "count(simulation.json#tasks[] where dispatch_schema_valid == true) / count(simulation.json#tasks)",
+   "confidence": "high",
+   "numerator_definition": "rehearsal tasks whose carrying SCENARIO_NODE features all clear the five required fields and two constraint_machine_rule entries of the node_schema component in visual/assets/seb-spec.json (decision rule DR-1)",
+   "denominator_definition": "all sixteen rehearsal tasks registered in simulation.json",
+   "assumptions": [
+    "This is a field-criteria measure over the ten SCENARIO_NODE features: every node declares an AI-off route that does not fall back on the same system and names a findable human role. It says nothing about those fields being executable on a real site.",
+    "Cards S11-S16 hold no node of their own and inherit the verdict by conjunction over the nodes they reuse, so their pass is not an independent verification.",
+    "The value 1.0 is the reading of a criterion the package itself publishes and can be re-run offline: `node seb-tabletop-run.js` inside visual/assets replays sixty-two fixtures against the same criteria and exits zero."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+    "verified_on": "2026-08-25",
+    "responsible_role": "design-evidence author and independent reviewer",
+    "rounding": "0.000001 ratio",
+    "recalculation_trigger": "revision of the node_schema component, of any SCENARIO_NODE dispatch field, or of the task set in simulation.json"
+   },
+   "metric_class": "offline_replayable_rehearsal_reading",
+   "claim_scope_zh": "离线合成演练读数，非现场绩效：本项由 simulation.json 的任务台账逐条复算得出，任何人按该文件 method 与 decision_rules 在同一份包上重算可得同一数值。它衡量的是包内既有结构化登记之间是否自洽，衡量不了任何服务在真实场地上的表现。",
+   "claim_scope_en": "An offline synthetic rehearsal reading, not field performance: the value recomputes item by item from the task ledger in simulation.json, and anyone applying that file's method and decision_rules to the same package obtains the same number. It measures whether the structured registrations already in the package are mutually consistent; it measures nothing about how any service performs on a real site.",
+   "notes_zh": "十六条全部通过。通过的是字段判据，不是场景本身；该读数与 simulation_success_rate 之间 0.8125 的差距是本台账最主要的结论。本项属本包指标体系的第四类——离线可复算演练读数。既有三类为：按临时几何复算的几何类读数、待官方资料确认的读数、以及待现场实测的绩效读数（后者一律保持 unknown）。第四类既不依赖临时几何，也不等待官方资料，更不冒充现场绩效；status 为 known 描述的是复算本身成立，不是任何场景已经成立。",
+   "notes_en": "All sixteen pass. What passes is the field criteria, not the scenarios themselves; the gap of 0.8125 between this reading and simulation_success_rate is the ledger's principal conclusion. A fourth-class metric in this package: an offline recomputable rehearsal reading. The three existing classes are geometry readings recomputed on provisional geometry, readings awaiting official material, and field performance readings which stay unknown until measured. The fourth class rests on no provisional geometry, waits for no official material and impersonates no field performance; where the status reads known, what is known is the recomputation, not the establishment of any scenario."
+  },
+  "audit_completeness": {
+   "status": "known",
+   "value": 0.1875,
+   "unit": "ratio",
+   "source_files": [
+    "simulation.json",
+    "geometry/constraints.geojson",
+    "risk.json",
+    "visual/assets/seb-spec.json",
+    "visual/assets/seb-tabletop-fixtures.json",
+    "visual/assets/seb-tabletop-run.js"
+   ],
+   "formula": "count(simulation.json#tasks[] where audit_complete == true) / count(simulation.json#tasks)",
+   "confidence": "high",
+   "numerator_definition": "rehearsal tasks holding all three audit-chain elements under decision rule DR-2 of simulation.json: a non-empty responsible_role and human_handoff on every carrying node, an accepted two-part handover positive for every carrying node, and a stop condition bound directly to the card in risk.json#dimensions[].scenario_links (S01, S05, S08)",
+   "denominator_definition": "all sixteen rehearsal tasks registered in simulation.json",
+   "assumptions": [
+    "The binding element counts only direct binding in risk.json; a relation reached indirectly through a node, a work package or a spatial feature is not accepted, so the reading registers the gap rather than filling it by inference.",
+    "Thirteen cards, S04 among them, hold no directly bound stop condition. This agrees with the prose, which binds risk, accountability and recovery evidence to the three representative cards only.",
+    "Completeness here is document completeness: it confirms that the elements are registered, never that a role is staffed, a handover rehearsed, or a stop decision ever taken."
+   ],
+   "calculation_metadata": {
+    "method_source": "PACKAGE-STRUCTURED-EVIDENCE-INDEX",
+    "verified_on": "2026-08-25",
+    "responsible_role": "design-evidence author and independent reviewer",
+    "rounding": "0.000001 ratio",
+    "recalculation_trigger": "registration or withdrawal of a scenario_links binding in risk.json, of a handover positive in the fixtures, or of a task in simulation.json"
+   },
+   "metric_class": "offline_replayable_rehearsal_reading",
+   "claim_scope_zh": "离线合成演练读数，非现场绩效：本项由 simulation.json 的任务台账逐条复算得出，任何人按该文件 method 与 decision_rules 在同一份包上重算可得同一数值。它衡量的是包内既有结构化登记之间是否自洽，衡量不了任何服务在真实场地上的表现。",
+   "claim_scope_en": "An offline synthetic rehearsal reading, not field performance: the value recomputes item by item from the task ledger in simulation.json, and anyone applying that file's method and decision_rules to the same package obtains the same number. It measures whether the structured registrations already in the package are mutually consistent; it measures nothing about how any service performs on a real site.",
+   "notes_zh": "十三处审计链缺口如实登记。补齐 scenario_links 后本项会上升，上升的是证据而不是演练表现，须随附复算说明。本项属本包指标体系的第四类——离线可复算演练读数。既有三类为：按临时几何复算的几何类读数、待官方资料确认的读数、以及待现场实测的绩效读数（后者一律保持 unknown）。第四类既不依赖临时几何，也不等待官方资料，更不冒充现场绩效；status 为 known 描述的是复算本身成立，不是任何场景已经成立。",
+   "notes_en": "Thirteen audit-chain gaps are registered as they stand. Registering the missing scenario_links would raise this reading, but what rises is the evidence rather than the rehearsal performance, and a recalculation note must accompany the change. A fourth-class metric in this package: an offline recomputable rehearsal reading. The three existing classes are geometry readings recomputed on provisional geometry, readings awaiting official material, and field performance readings which stay unknown until measured. The fourth class rests on no provisional geometry, waits for no official material and impersonates no field performance; where the status reads known, what is known is the recomputation, not the establishment of any scenario."
   }
  }
 }

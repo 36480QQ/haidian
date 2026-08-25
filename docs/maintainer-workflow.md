@@ -44,12 +44,17 @@ python3 scripts/maintainer_review.py \
 精选、正式专业评分或现实实施批准。CI 禁止参赛者创建或修改该文件；维护者应在
 合并投稿后通过独立 PR 添加或更新，并注明对应 PR 与 commit SHA。
 
-AI advisory schema `0.2.0` 将两类事项明确分开：`required_next_actions_zh` 只保存
+AI advisory schema `0.2.1` 延续 `0.2.0` 的两类事项分离：`required_next_actions_zh` 只保存
 当前版本中参与者可关闭、阻断 intake 的修复；`conditional_followups` 保存官方资料
 到位、获得外部授权、进入现场试点或以后实质修改时才触发的事项。后者每项必须显式
 记录 `blocking_now=false`、`trigger` 和 `owner`，保留在 PR 评论和后续 `FEEDBACK.md`
 中，但不阻断当前 intake。归属和触发条件不得通过关键词或子串推断；含混项继续按
 当前修复 fail closed。
+
+`0.2.1` 同时把逐维 `required_repairs_zh` 限为每维最多 4 条、每条最多 600 个字符；
+`pr-comment.md` 必须按维度完整公开所有通过 schema 的当前 repair，不得只给计数或静默
+截断。风险、数据缺口和本地中间材料不进入该 repair 区，条件触发项继续使用独立的
+“不阻断本轮”区块。schema 版本提升会让旧缓存评审失效。
 
 ## 4. 复制 PR 评论
 

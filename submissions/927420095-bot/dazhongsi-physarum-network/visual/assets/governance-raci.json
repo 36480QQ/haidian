@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "matrix_name_zh": "普通路径先行五关 RACI 责任分配矩阵",
-  "matrix_name_en": "Ordinary-Path-First Five-Gate RACI Responsibility Matrix",
+  "matrix_name_zh": "普通路径先行四关 RACI 责任分配矩阵",
+  "matrix_name_en": "Ordinary-Path-First Four-Gate RACI Responsibility Matrix",
   "legend": {
     "R": "Responsible (执行责任人)",
     "A": "Accountable (最终核准与否决责任人)",
@@ -62,24 +62,11 @@
       "raci_assignments": {
         "ROLE-OWNER": "R",
         "ROLE-TECH-REVIEW": "C",
-        "ROLE-CIVIC-REP": "A",
+        "ROLE-CIVIC-REP": "C",
         "ROLE-PUBLIC-STEWARD": "A",
         "ROLE-SPECIALIST": "C"
       },
       "deliverable": "限定时段运行数据、现场工单、公众反馈与停用表决记录"
-    },
-    {
-      "gate_id": "G4",
-      "gate_name_zh": "常态运行/归档回执",
-      "gate_name_en": "Steady Operation / Archive Receipt",
-      "raci_assignments": {
-        "ROLE-OWNER": "R",
-        "ROLE-TECH-REVIEW": "C",
-        "ROLE-CIVIC-REP": "I",
-        "ROLE-PUBLIC-STEWARD": "A",
-        "ROLE-SPECIALIST": "I"
-      },
-      "deliverable": "K 标版本更新回执、长期运营与退出审计日志（governance-receipts.json）"
     }
   ]
 }

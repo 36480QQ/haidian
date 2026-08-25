@@ -455,7 +455,7 @@ Rules:
 5. Copyright and source review is evidence-based. If supplied package evidence shows that authorship, licenses, fonts, images, maps, datasets, or code are unresolved, do not claim they are cleared; use request-changes and list the exact proof needed. A manifest artifact whose raw content is explicitly marked unsupplied in `review_input_access_boundary` is a review-packet access limitation, not proof that the participant omitted evidence. Do not penalize that limitation by itself, claim to have inspected the artifact, or execute participant verification scripts; rely on the supplied trusted gate reports unless visible evidence establishes a contradiction.
 6. Inspect visual evidence for legibility, consistency, meaningful design information, obvious placeholders, clipping, blank pages, misleading precision, and prominence of provisional-boundary warnings. Machine visual review cannot certify accessibility or legal rights.
 7. Missing organizer-owned official geometry must create precision and recalculation warnings, but must not reduce rubric scores or block content scoring by itself.
-8. Scores: 0 absent/invalid, 1 seriously deficient, 2 weak, 3 adequate, 4 strong, 5 exceptional. Required repairs must be specific, prioritized, participant-controlled, and actionable on the current package.
+8. Scores: 0 absent/invalid, 1 seriously deficient, 2 weak, 3 adequate, 4 strong, 5 exceptional. Required repairs must be specific, prioritized, participant-controlled, and actionable on the current package. Each dimension may contain at most four required repairs, each no longer than 600 characters; every accepted repair is published in the PR comment, so do not include local-only review material there.
    Calibrate each dimension independently and do not repeatedly punish one defect in every dimension. A gate failure may block readiness without forcing unrelated rubric scores to zero or one.
 9. formal-review-ready requires all participant-controlled gates to pass, no mandatory rejection, adequate rights/source evidence, readable deliverables, and no unresolved current content risk. `required_next_actions_zh` is exclusively for current participant-controlled blockers and must be empty when none exist. Put future-stage or condition-triggered work in `conditional_followups`, with `blocking_now=false`, an explicit trigger, and an explicit owner. A future field trial, official-data refresh, external authorization, professional sign-off, or later material revision must not block current intake merely because its trigger has not occurred. If the current package overclaims such evidence, require the participant to correct that claim now instead of requiring unavailable evidence.
 10. pr_comment_markdown must be a standalone Chinese PR review: decision, gate results, weighted strengths, material risks, current blocking repairs, and separately labeled non-blocking conditional follow-ups. Do not mention hidden chain-of-thought.
@@ -684,7 +684,9 @@ def normalize_model_review(review: dict[str, Any], expected_submission_dir: str)
             break
     repair_count = 0
     for item in review["rubric_scores"]:
-        repair_count += len(item["required_repairs_zh"])
+        repairs = [" ".join(repair.split()) for repair in item["required_repairs_zh"]]
+        item["required_repairs_zh"] = repairs
+        repair_count += len(repairs)
     if repair_count:
         summary = f"完成七维评分中列出的 {repair_count} 项详细 required repairs；逐项证据和修复要求见各维度。"
         if summary not in actions:
@@ -764,6 +766,22 @@ def authoritative_pr_comment(
     lines.extend(["", "## 七维评分"])
     for item in review["rubric_scores"]:
         lines.append(f"- **{item['dimension_zh']} {item['score']}/5**：{item['comment_zh']}")
+    repair_groups = [item for item in review["rubric_scores"] if item["required_repairs_zh"]]
+    if repair_groups:
+        lines.extend(
+            [
+                "",
+                "## 当前版本逐维修复项（阻断本轮）",
+                "",
+                "> 仅列出当前版本中参与者可立即关闭的阻断项；所有通过 schema 的条目均完整公开。未来条件不会列在此处。",
+            ]
+        )
+        for item in repair_groups:
+            lines.extend(["", f"### {item['dimension_zh']}"])
+            lines.extend(
+                f"{index}. {repair}"
+                for index, repair in enumerate(item["required_repairs_zh"], 1)
+            )
     if review["mandatory_rejection"]["hits"]:
         lines.extend(["", "## 强制拒绝命中"])
         lines.extend(f"- {item}" for item in review["mandatory_rejection"]["hits"])

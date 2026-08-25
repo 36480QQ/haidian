@@ -5,7 +5,7 @@ author_github: "xiaowuzicode"
 language: "zh"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v1.11"
+iteration: "v1.15"
 summary: "单线铁路上，司机必须持有区间令牌才能进入，令牌未归还前发不出第二枚。本方案把这条百年行车安全规则用于城市AI治理：把京张遗址公园全线做成一条持续运营、公众可预约的AI测试轨道——一枚令牌，一个区间，归还之后才发下一枚——三站两岔、一线到底，并附可被专业团队逐项复算的证据链。全部空间建议均为概念建议，不替代法定规划。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
@@ -43,9 +43,9 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 
 本成果包建立在本仓库的机器可读任务包之上，而不是任何非公开资料。设计依据为官方公告的任务结构与三层范围界定 [source:OFFICIAL-ANNOUNCEMENT]、面向智能体的开源征集任务书及其十条共创原则与六项必答任务 [source:AGENT-TASKBOOK]、以及已登记的场地包枚举、区间、schema 与允许设计空间 [source:SITE-PACKAGE]。所有证据在引用前先经公开资料登记表筛查可用性 [source:SOURCE-REGISTRY]，处理资料层仅用于把范围、任务与缺口组织成工作清单，不作为新的权威来源 [source:PROCESSED-FACT-PACK]。
 
-在仓库资料之外，本方案还依托八份公开文件，且均在其登记许可范围内使用；其中六份构成规制与包容框架：《城市设计管理办法》与《城市、镇控制性详细规划编制审批办法》界定了“控规深度”的义务边界，也是未知控制指标保持 unknown 的制度原因 [source:MOHURD-URBAN-DESIGN-MEASURES] [source:MOHURD-CONTROL-PLANNING-MEASURES]；《国土空间用地用海分类指南》提供用地方案的分类词汇 [source:MNR-LAND-USE-GUIDE]；《生成式人工智能服务管理暂行办法》支撑场景准入审查 [source:GENAI-INTERIM-MEASURES]；《无障碍环境建设法》与《关于切实解决老年人运用智能技术困难实施方案》共同构成步行无障碍连续性与非数字等效两项指标的法定底线 [source:BARRIER-FREE-LAW] [source:ELDERLY-SMART-TECH-PLAN]。
+在仓库资料之外，本方案还依托八份公开文件，且均在其登记许可范围内使用；其中六份构成规制与包容框架：《城市设计管理办法》与《城市、镇控制性详细规划编制审批办法》界定了“控规深度”的义务边界，也是未知控制指标保持 unknown 的制度原因 [source:MOHURD-URBAN-DESIGN-MEASURES] [source:MOHURD-CONTROL-PLANNING-MEASURES]；《国土空间用地用海分类指南》提供用地方案的分类词汇 [source:MNR-LAND-USE-GUIDE]；《生成式人工智能服务管理暂行办法》支撑场景准入审查 [source:GENAI-INTERIM-MEASURES]；《无障碍环境建设法》在其适用范围内为步行无障碍连续性指标设定法定义务 [source:BARRIER-FREE-LAW]；《关于切实解决老年人运用智能技术困难实施方案》仅作背景性政策参照使用，非数字等效指标背后的全场景「无数字前提／人工与实体同等替代」规则是本方案的主动承诺、而非法定要求 [source:ELDERLY-SMART-TECH-PLAN]。
 
-《建筑工程设计文件编制深度规定（2016年版）》界定重点区成果最终需要达到的文件深度 [source:ARCH-DESIGN-DEPTH-2016]。令牌闭塞规则本身按广泛记载的铁路运营史引用，不构成对京张线自身信号器具的文献断言 [source:RAILWAY-TOKEN-HISTORY]；六个申报场景取自仓库场景登记表 [source:SCENARIO-REGISTRY]。
+《建筑工程设计文件编制深度规定（2016年版）》界定重点区成果最终需要达到的文件深度——作为登记表之外的背景性参照引用，其获取记录与使用边界已登记于 `sources.json` [source:ARCH-DESIGN-DEPTH-2016]。令牌闭塞规则本身按广泛记载的铁路运营史引用——属背景性定性参照，不构成对京张线自身信号器具的文献断言 [source:RAILWAY-TOKEN-HISTORY]；六个申报场景取自仓库场景登记表 [source:SCENARIO-REGISTRY]。
 
 本包最重要的一条披露关于几何：**公开资料包中不存在官方红线。** 提交的总体设计边界 [data:geometry/site_boundary.geojson#SITE-001] 与三处重点区域 [data:geometry/key_areas.geojson#PROV-KEY-001] 均为仓库提供的临时粗略边界 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]，标记为 `official_boundary=false`、`geometry_role="provisional_constraint"`、`boundary_precision="provisional_rough"`。它们可用于生成、可视化、讨论与入口自检，**不是**官方红线、不是审批依据、不是精确面积依据。官方 polygon 发布后，边界、重点区、用地、道路、绿地、公共空间、建筑、分期与全部派生指标必须整体复算，而不是逐个文件打补丁。
 
@@ -90,7 +90,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 | 涩谷 QWS | 站城一体的开放会员制创新客厅 | 三站站台广场作为开放接口 |
 | 特拉维夫 | 学术到创业通道有效因为距离短 | 整条带就是缩短距离的器具 |
 
-以上均为公开国际实践中的**定性设计参照**；**本包不对其中任何一个作出定量陈述**，不将其作为权威数据引用，也不用其论证任何数值目标。八者可转化的机制是同一条：**缩短知识生产地与知识使用地之间的距离，并让这个距离被公众看见。** 生态图谱即上文的闭合回路——策源（S4）→固化（S6）→公开验证（全线）→转化（S1）→反馈（S2/S5）——其几何落位见下方空间结构图。
+以上均为公开国际实践中的**背景性定性参照**——非登记表审核的正式证据；**本包不对其中任何一个作出定量陈述**，不将其作为权威数据引用，也不用其论证任何数值目标。八者可转化的机制是同一条：**缩短知识生产地与知识使用地之间的距离，并让这个距离被公众看见。** 生态图谱即上文的闭合回路——策源（S4）→固化（S6）→公开验证（全线）→转化（S1）→反馈（S2/S5）——其几何落位见下方空间结构图。
 
 **命名与识别：标志即平面。** 本带命名为 **京张令牌｜Token Block**，其识别系统只有一个母题——**一条被三处断口打断的实线**。这个母题不是为了盖在方案之上而画的图形，它**就是方案本身被压缩成一条线**：三处断口是三个重点区域沿线的真实相对位置，线上方的两枚菱形是两翼。因此构成规则里有一条任何视觉改版都不得放松的硬约束——**改变断口的数量或位置，改的不是 Logo，是方案。** 命名体系把同一套铁路语汇延伸进导视：主脊上的里程标、站点处的站台边、两翼的道岔标，以及公示本线产出（发布、测试、结果）的到达板。导视被明确规定为实体、高对比、多模态，而不是一个App。本识别系统为供专业团队深化的方向建议，不是注册商标；未使用任何第三方字体、图像或标识 [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [data:geometry/key_areas.geojson#PROV-KEY-001]。
 
@@ -106,7 +106,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 | 北纬社区 | 海淀本地的人才与社区服务 | 为近旁产出的能力提供公共、可预约的门面 | 让场景保持诚实的日常需求与真实居民 |
 | 京津冀 | 区域级场景开放网络 | 一套可复制的运行协议，而不是一个一次性片区 | 规模、语境多样性，以及成熟场景的去处 |
 
-机制刻意不是「集聚」而是**联运**：一项在怀柔策源、在未来科学城完成工程验证、在亦庄量产的能力，可以在这条线上预约一个窗口，在真实人群面前被试用；一个在这里被验证过的场景，可以交出去做规模化部署。本带的比较优势既不是最大的楼板面积，也不是最低的租金——而是**它是这张网络里唯一一个能让一项能力在公开规则下遇见一条普通街道的地方**。上述集群之间的具体合作安排均为概念建议，需由相关主管部门与运营主体确认，本包不构成任何已达成的协作安排 [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]。
+机制刻意不是「集聚」而是**联运**：一项在怀柔策源、在未来科学城完成工程验证、在亦庄量产的能力，可以在这条线上预约一个窗口，在真实人群面前被试用；一个在这里被验证过的场景，可以交出去做规模化部署。本带的比较优势既不是最大的楼板面积，也不是最低的租金——而是**成为这张网络里一处能让一项能力在公开规则下遇见一条普通街道的地方**——这是本方案提出的目标定位，不是已确立或排他的地位。上述集群之间的具体合作安排均为概念建议，需由相关主管部门与运营主体确认，本包不构成任何已达成的协作安排 [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]。
 
 **未来城市形态。** 本带对"AI如何改变城市"的回答不是一块智慧城市大屏，而是：**城市变得可预约。** 测试轨道协议意味着一段公共空间可以被预订、被布设、在公开规则下运行一个限定窗口，然后归还为普通公共空间——如同铁路分配运行图。这让产业获得真实环境，让居民获得可预期且可撤销的安排，让政府获得可审计的记录。土地、空间、产业、资金、人才、算力、数据与场景供给，都围绕这一个机制组织 [depth:overall_spatial_structure]。
 
@@ -233,7 +233,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 
 **分开本身就是设计。** 线路运营方有把日历填满的动机；道岔联席会有把它清空的资格；准入委员会依据前两者都无法控制的标准作判断。每一次准入都须连同其数据边界、人工复核点与到期日一并公示。以上为供专业与运营团队深化的治理建议，不是已获批准的机构设计。
 
-**前九十天，具体到可验收。** 试点选在零公里站台广场（S4）加相邻的区间首段（S3）——理由是它不依赖任何工程条件、位于最公共的地址、且近校界面已经自然产生需求 [data:geometry/constraints.geojson#TRACK-S4]。第 90 天应当能在现场看到：零公里碑以临时构筑物形式落位；一份已公示的预约日历，且已完成不少于三个窗口（取自场景卡 02、03、05）；广场上举办过一次开源发布活动；试点段无高差连续性已完成实地踏勘并记录全部断点；以及一份已公示的复盘，写明哪里做砸了。**这份清单上没有一项需要控规条件、土地交易或施工许可——这正是它被排为第一期的原因。**
+**前九十天，具体到可验收。** 试点选在零公里站台广场（S4）加相邻的区间首段（S3）——理由是它可在公共空间授权与可逆轻量设施条件下启动——安全、消防、无障碍连续、轨道邻接与文保条件仍须经 G0–G2 各门逐项核验——同时位于最公共的地址、且近校界面已经自然产生需求 [data:geometry/constraints.geojson#TRACK-S4]。第 90 天应当能在现场看到：零公里碑以临时构筑物形式落位；一份已公示的预约日历，且已完成不少于三个窗口（取自场景卡 02、03、05）；广场上举办过一次开源发布活动；试点段无高差连续性已完成实地踏勘并记录全部断点；以及一份已公示的复盘，写明哪里做砸了。**这份清单上没有一项依赖控规条件或土地交易；每一项仍以公共空间授权与交付框架登记的安全、消防、无障碍、轨道及文保核验为前置，任一核验不过即经 G0–G2 暂停或回退——这正是它、且只有它被排为第一期的原因。**
 
 **指标，以及它们怎么测。** 以下为供运营团队使用的建议监测指标。基线尚不存在，本包不予编造；每一项均已在 `metrics.json` 中记为 `unknown` 并写明原因。
 
@@ -266,7 +266,7 @@ scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "ai-health-service-na
 
 **运营与年度体系。** 建议本带运行一个以线本身为场地的年度全球AI活动周；一张滚动的场景开放日历，公示哪些区段当前可预约；一个锚定在零公里发布厅的开发者社区；以及一条把团队从开源贡献者→轨道预约用户→入驻主体的转化通道。品牌资产沉淀在**带**里而不是任何单场活动里：线、站名、里程碑、到达板。以上全部是**供专业与运营团队深化的运营建议**，不是已确定的政府项目、资金承诺、投资安排或已批准活动排期。
 
-**国际传播文案（建议稿，双语）。** 本带的对外主句只有一句：「一枚令牌，一个区间，归还之后才发下一枚——百年京张，向世界开放为第一条可公开预约的城市AI测试轨道。」*"One token, one section, returned before the next is issued — Beijing's century-old railway opens as the world's first publicly bookable urban AI test track."* 文案的每次使用都携带本带的状态词汇——**已提交／已评审／已入选／已实施**——让国际受众始终看得见每句主张所处的阶段；它服务的招引转化路径即上文"开源贡献者→轨道预约用户→入驻主体"通道。
+**国际传播文案（建议稿，双语）。** 本带的对外主句只有一句：「一枚令牌，一个区间，归还之后才发下一枚——让百年京张向世界开放为一条可公开预约的城市AI测试轨道，是本方案提出的愿景。」*"One token, one section, returned before the next is issued — a vision of opening Beijing's century-old railway to the world as a publicly bookable urban AI test track."* 文案的每次使用都携带本带的状态词汇——**已提交／已评审／已入选／已实施**——让国际受众始终看得见每句主张所处的阶段；它服务的招引转化路径即上文"开源贡献者→轨道预约用户→入驻主体"通道。
 
 **离线协议复演——规则是可执行的，不是修辞。** 令牌协议不只写在正文里：`simulation.json`
 记录了由确定性脚本对本包自身数据实际执行的 [metric:simulation_task_count] 项合成复演任务，并给出

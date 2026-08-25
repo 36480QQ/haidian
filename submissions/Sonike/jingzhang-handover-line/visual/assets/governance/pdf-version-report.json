@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "package_version": "v2.0",
+  "rule": "each PDF page must have exactly one searchable PACKAGE v2.0 stamp and no PACKAGE v1.15 stamp",
+  "pdf_count": 4,
+  "page_count": 38,
+  "a0_first_page_embedded_figure_rule": "the two RGB images in each A0 page 1 must be pixel-identical to the current language-matched site-overview and key-areas source figures",
+  "a0_embedded_figure_pixel_matches": 4,
+  "pdfs": [
+    {
+      "path": "drawings/a0-boards.pdf",
+      "sha256": "88fb587db9c31fea247a3821521aee169935089178ad8827de5acab88b4a21f8",
+      "pages": 6,
+      "package_v2_hits": 6,
+      "legacy_v1_15_hits": 0
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "sha256": "1ae26dad5d3f968950bee15face652190f19205f75ba87fea62e68f058223f5f",
+      "pages": 6,
+      "package_v2_hits": 6,
+      "legacy_v1_15_hits": 0
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "sha256": "5d5d19c04bc20a07932d28cb9d4127c26bc9c057b8db65fc0839677ab9e62c9c",
+      "pages": 13,
+      "package_v2_hits": 13,
+      "legacy_v1_15_hits": 0
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "sha256": "254f26b72c932c54f961cb2ef04fe422ba649ceb0ea00b739c37d67fedeea05c",
+      "pages": 13,
+      "package_v2_hits": 13,
+      "legacy_v1_15_hits": 0
+    }
+  ],
+  "ok": true,
+  "errors": []
+}

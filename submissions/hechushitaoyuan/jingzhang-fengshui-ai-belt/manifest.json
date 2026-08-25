@@ -9,12 +9,12 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "hechushitaoyuan",
-    "agent_name": "GuoOpencode",
-    "model": "kimi-k3",
-    "model_family": "kimi",
-    "model_detail": "初稿 accounts/fireworks/models/kimi-k3 via opencode (fireworks provider)；本轮迭代 zcode (model GLM-5.3) —— 多智能体协作"
+    "agent_name": "同济设计AI云",
+    "model": "ox-alpha（编排）+ Codex CLI 与 Claude Code 子智能体",
+    "model_family": "deepseek",
+    "model_detail": "初稿 accounts/fireworks/models/kimi-k3 via opencode (fireworks provider)；迭代 zcode (model GLM-5.3)；v1.3 阶段署名：同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）（Tongji Design AI Cloud: DeepSeek Harness + ox-alpha, with subagent CLIs Codex (GPT-5.6-Sol) and Claude Code (Claude Opus 5)）"
   },
-  "generated_at": "2026-08-18T07:20:56Z",
+  "generated_at": "2026-08-25T22:39:33Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,43 +26,43 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "20ae40a36945e503b0a9eabdefd45858aa9b81446672855aa1878b79cfa89bd6"
+      "sha256": "73b65073dc2115eebf9cdd0de8a6d7cb8d2737a101b140d2c1b2b870356ee500"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "6d8ba57cdc6571dd859ef98efdc01e1000529e338e68e6f941b2a7a08294095d"
+      "sha256": "c4ba0dcf8461195af6f1a15c59522f797b1cf1510077a7af395c1019b2512d16"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "bcfa54669b1e147196bc115316c2d794680146bb929aee9ed6cd08b66c884876"
+      "sha256": "3277ecc9c4f83dd49335ed512053157532f0687ab8595456100c8e53e1027e19"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "46ed353e2120844e263c9b6827439a711ef3bbe17a5eb422c52e428e5e3b3019"
+      "sha256": "a9e2abd7e1670ce9a69cd23d91f2ad9b92a8f49a76b85a94c620b47ef0acc8c6"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "4e315cbabdc41784d009113fbc8141ec8882f260a9b51e02c65909b0fec690bf"
+      "sha256": "8dab3f77469dccb0992386568f5f9427a399928039b731081e280cb8cc5fcb73"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a346b5a7d6dfacecd7e1a017ed30152c7f0ab693b90d8e8bac4f0bb928d78c78"
+      "sha256": "04be39ea0c591d70e204d7b0dbebe0afada1c71b3fe2cf3b17c163caca221140"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "7889faacf16b150c3e9430aeadd9d0c456fe9c46a3687a15eb33f797c5330e81"
+      "sha256": "a657f8f88c99e2ec7e1b6d7162ef26ab337521ed57626cc4adb9743c374dc14f"
     },
     {
       "path": "standard_matrix.json",
@@ -74,82 +74,82 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "ccf74e7b285508aa1cffdd19486d86d16f434c1877ecbfde69bdf19b74c56cde"
+      "sha256": "757df04925caf170f9ed3b32ecd54ed7e076ddd40dbe8e3b47d33d8960489cec"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ec1e8f7c7c2366256f22aaf8c52eb2ec8a0b5bc67399afd33c871a93aa5bdd91"
+      "sha256": "6ca6a883bcfac5c35bebd92f055db114510905debc11ff33de6a15b5499559dc"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "8a9c844c534d98a114698208457b51b4b0caffcdf6c746ead51cdcabbfa59a15"
+      "sha256": "980639694c70fc21a454775af6b879ac6877835f27294d6cf17a485896d7bf3f"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "f292a405e80bd707e197fac7c61d43bc46868c61555d6c5cc4fe54a03640e8cb"
+      "sha256": "6c676e0b483ae13cada2948836ea5d92dbc22e1980fc24a239229aaffeee1f23"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d02acb9bb6e0b83e2e5c9b0ea748f5e72875d12ed0c26936cb7ef6795507e601"
+      "sha256": "dcedf7cf6a6c944a8100e94e1ed56bd281888bab04d0d9d431bbbdf1f774277d"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "be00622223be001b200c81cb9a07b3d6dff2c28137095c14778dfa0d94dd1824"
+      "sha256": "b796733f06cd94656d2c00984dba6aa350717e42ec69903bc6bd46995697ee48"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "ee99233de1ff551b063a60dd79cff36be7a1dd3e32eba589a28a529604568fe8"
+      "sha256": "14a8327c9b1128df925338fb339460c3e311666f6a62474f8077a5fb7984bed9"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "4b905187d5187a9c8a1b4e5ff1379124a4e042976b6a9df1d2c033d251855193"
+      "sha256": "d96a3d0df4dac72afc6f0ebce603577bce519e2aa5356403768645284713f47c"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "323047ecd772a89538ef8283a6bc8f8a89a8d7a6619c024e34b5323448d60a7d"
+      "sha256": "1f6a07b82e85fdd2f37288eff49c57ba49b96883626876ae3e71cf82782a7511"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "37b9c82d1c8ff7e515205c50b44be1baef17af94289d65af4dfe75ccd4e458b6"
+      "sha256": "53881e8517e9ad72373da7d6b02e073397a3eedfe3a8844fb2b5fe508ad5d877"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "421521ba23edd0ed383bf9f8b7464ba9a3cc5d8d90bacac9df0b1e26ddb0c6bb"
+      "sha256": "60d5c0abdfdd8cecb0d0c354bf0702b38f3aeb633e1215f6a83f2aa53fbc24f8"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "29672da5f81b7455aa20fb861c28b8f0535be84c41227ea80866371e2bb4587b"
+      "sha256": "14fba1b10022e79262a6f42f74c0b193993ed60d5aa5f9ffefdb84db2dfac297"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "003ce3e45649d0d4f6cee78edb6eab8364d2dae2bf11a3b27fa2f61e5403356e"
+      "sha256": "323fddfe4c43fb2bc80d85f370ff719342264dd064ef06e629e0f1a60d3a9fec"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0c5e15d06022954091a695dd7c37aecabff14b05703040669a5417d2142fe59d"
+      "sha256": "5775cd980799f08ac8787237848197f3f550d2f5651062c81fbc131e12a2a844"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "43cd9f5f94acaec0a8f62a028166f942e80bb1f74d49a1e85609f359f2aa420f"
+      "sha256": "fa4d15289007c769963fcb871cd975cbe40a477c62b7565ad7ac13e0f8d40525"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "8ac0542507317a0d457f65f58e9bfc0cfdfd87f82ddf480ff21ab2b48df4cc96"
+      "sha256": "50cb7a42ece411f28777ab3ebaf09d6488d92fcc42ab0fbfabcbb6e9eb8c4ec8"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "10516e6263557410922c2410990d97ce9f908324019bebed7497b20583f5519e"
+      "sha256": "f5df008988d53a26d1af9e56e23b6fb596acfc0be91dc3dbd8b2c72e1686807a"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "f43687d23156e6a92f0668f8ae7f02d1c60c048de5b487ff73e1f2a4c81d9988"
+      "sha256": "03b7b10d956ccd261751bd7ca671110078e505c295b735e9f5d8c7070c04ce2b"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "34cc0540a202ebf8e6bd08d7fc39ce1d5a6edb7e12ed5029c7b99810c93a4dc6"
+      "sha256": "24146fe6d866d5e52f6fa79519970f3aad634e9e9813865f9cd946d866d7b0df"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "7821bf9c5b1f4b0347af6438366825792040f9d97d4d0eaafdcb911c39afb9dc"
+      "sha256": "5a0938ed12883c24de6e700999481352fbf4a284e4b643fd55140383e571e49d"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -275,7 +275,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "c46a45026770307de7fff1faf5f214271aea051cbb96410eb37ac80797d5794e"
+      "sha256": "41a46994c1a8294a9b398b3afbf5ef94856f516e9b3ef79baadeca85279a92e9"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -283,13 +283,13 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "8e9532fca84bc082055d1eab7ff0e58a02fa08aeea7894cea80bc450fba155fd"
+      "sha256": "c3b1310bad6f64a1d70cd26a3da1d99fc5645f2b2bcfdc63dc4cf70b4f7cca10"
     },
     {
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "1a6a80977b7f0c6bbbb6e03ccc0863c84e3643956de007a5ecd673b6392673f1",
+      "sha256": "a99a2720b9a954573dbc893efe6254af1a0f9c81df8a14389fd2e9e9e67f59a0",
       "language": "neutral"
     },
     {
@@ -353,14 +353,29 @@
       "translation_of": "assets/figures/cultural-narrative.png"
     },
     {
+      "path": "assets/figures/context-basemap.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "3e0c18e56c255e103da9bbb065192d723587e1ce1767a6f66e2af3aa5c05269f"
+    },
+    {
+      "path": "assets/figures/context-basemap.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "sha256": "14c91ddbd01d485fd9a78df32c3830a1cccf483080e0717a79f538b91eaa0818",
+      "translation_of": "assets/figures/context-basemap.png"
+    },
+    {
       "path": "assets/media/cover.png",
       "role": "media_poster",
       "required": false,
       "sha256": "5b206f45f93886ebc3af556ce33be444bca0502e5d228ddcea09a3853bcd4945",
       "title_zh": "京张气脉 · 风水AI · 画廊封面",
       "title_en": "Jing-Zhang Qi-Pulse · Fengshui AI · gallery cover",
-      "description_zh": "宣纸+金脉体系的确定性导出：金脊曲线取自 roads.geojson 真实绿脊中心线，罗盘×人字形标志与品牌图件同源；由 matplotlib 渲染，仅用系统自带微软雅黑与 DejaVu 字体，无生成式图像素材。概念表达，非空间依据。",
-      "description_en": "A deterministic export of the rice-paper-and-gold system: the gold spine is the real greenway centreline from roads.geojson; the compass-and-herringbone mark shares construction with the brand figure. Rendered by matplotlib with system fonts only (Microsoft YaHei, DejaVu Sans); no generative image material. Conceptual expression, not spatial evidence."
+      "description_zh": "宣纸+金脉体系的确定性导出：金脊曲线取自 roads.geojson 真实绿脊中心线，罗盘×人字形标志与品牌图件同源；由 matplotlib 渲染，中文使用 Noto Sans SC（OFL-1.1 子集嵌入）、英文使用 DejaVu Sans，无生成式图像素材。概念表达，非空间依据。",
+      "description_en": "A deterministic export of the rice-paper-and-gold system: the gold spine is the real greenway centreline from roads.geojson; the compass-and-herringbone mark shares construction with the brand figure. Rendered by matplotlib with system fonts only (Noto Sans SC (embedded subset), DejaVu Sans); no generative image material. Conceptual expression, not spatial evidence."
     },
     {
       "path": "assets/media/audio-guide-zh.md",
@@ -420,7 +435,7 @@
       "path": "assets/media/experience.md",
       "role": "transcript",
       "required": false,
-      "sha256": "3c3fc6c631f810aa5e325b985d678085f8fc28a16430e85fc06a96020b9b9316",
+      "sha256": "9367047e60e158fa903f901da38fff05e8bfb87f9f07797c42f946b20feebfd6",
       "language": "neutral"
     },
     {
@@ -463,6 +478,56 @@
       "caption": "assets/media/experience.vtt"
     },
     {
+      "path": "assets/screenshots/cjk-proof-visual-zh.png",
+      "role": "asset",
+      "required": false,
+      "sha256": "caf45d9e5328975781446833666df0a0dd70dd81616c4dc2cd04d53c8af045e2",
+      "title_zh": "视觉工作台 CJK 渲染证明（嵌入字体后）",
+      "title_en": "Visual workbench CJK render proof (embedded fonts)",
+      "description_zh": "Chromium headless 实渲截图，证明包内 HTML 在无系统 CJK 字体环境下经嵌入字体正确渲染中文。",
+      "description_en": "Chromium headless screenshot proving package HTML renders Chinese correctly via embedded fonts on systems without CJK fonts."
+    },
+    {
+      "path": "assets/screenshots/cjk-proof-proposal-zh.png",
+      "role": "asset",
+      "required": false,
+      "sha256": "d8824325afb63c96fc7e12acd9346d23ae71bb552ed5b418362f4738b4a74d6a",
+      "title_zh": "报告 HTML CJK 渲染证明（中文版）",
+      "title_en": "Report HTML CJK render proof (zh)",
+      "description_zh": "Chromium headless 实渲截图，证明包内 HTML 在无系统 CJK 字体环境下经嵌入字体正确渲染中文。",
+      "description_en": "Chromium headless screenshot proving package HTML renders Chinese correctly via embedded fonts on systems without CJK fonts."
+    },
+    {
+      "path": "assets/screenshots/cjk-proof-proposal-en.png",
+      "role": "asset",
+      "required": false,
+      "sha256": "f62af31512cf69d123dc166066d9f010a1e15eb6f23fec79067d5631f2797e5c",
+      "title_zh": "报告 HTML CJK 渲染证明（英文版）",
+      "title_en": "Report HTML CJK render proof (en)",
+      "description_zh": "Chromium headless 实渲截图，证明包内 HTML 在无系统 CJK 字体环境下经嵌入字体正确渲染中文。",
+      "description_en": "Chromium headless screenshot proving package HTML renders Chinese correctly via embedded fonts on systems without CJK fonts."
+    },
+    {
+      "path": "assets/screenshots/cjk-control-tofu-without-font.png",
+      "role": "asset",
+      "required": false,
+      "sha256": "65a3fac381c679de2375d71c52cfc6e05eee5bab1daf2f47dd1ea84ce3b4cf87",
+      "title_zh": "对照：剥离嵌入字体后的方框渲染",
+      "title_en": "Control: tofu rendering with embedded font stripped",
+      "description_zh": "对照样张：v1.4 版 report/proposal.html（无内联字体）在无 CJK 字体环境下的渲染，中文呈方框——证明 v1.5 内联字体子集的必要性；当前版渲染对照见 visual 页。",
+      "description_en": "Control capture: v1.4 report/proposal.html (no inline font) rendered in a CJK-font-less environment shows tofu boxes — demonstrating why the v1.5 inline subset is required."
+    },
+    {
+      "path": "visual/assets/fonts.css",
+      "role": "asset",
+      "required": false,
+      "sha256": "273b06998057b6e147e13d961bf8b9f20e0c15cd352b1e6fed60269c14107fbb",
+      "title_zh": "嵌入式 Noto Sans SC 子集样式（评审渲染用）",
+      "title_en": "Embedded Noto Sans SC subset stylesheet for reviewer-side rendering",
+      "description_zh": "按 SIL OFL 1.1 分发（许可全文见文件头注释）；base64 嵌入字符子集，供无 CJK 字体环境离线正确渲染中文。",
+      "description_en": "Redistributed under SIL OFL 1.1 (full license in file header); base64-embedded glyph subset enables correct offline Chinese rendering on font-less systems."
+    },
+    {
       "path": "visual/assets/governance/role-spec.json",
       "role": "evidence_data",
       "required": false,
@@ -482,7 +547,7 @@
       "title_en": "Qi-as-Data Protocol v0.1",
       "description_zh": "四步治理协议 + 七条规则 + 156 项离线演练记录（解析双语场景卡表逐项检查，全通过，可复算）。",
       "description_en": "Four-step governance protocol, seven rules, and a 156-check offline drill record parsed from the bilingual scenario tables (all passing, recomputable).",
-      "sha256": "312d45bdaad98e6fd83f0e38e2f3ae2c4f7aa33ccc0b5370d98b81446dfe8f92"
+      "sha256": "ce6f734cf9e1ae726f7201eeb2ae48cff270d4d4dd1d1e3d9514b61cec339a80"
     },
     {
       "path": "visual/assets/a11y-color-check.json",
@@ -491,9 +556,20 @@
       "language": "neutral",
       "title_zh": "无障碍色觉核验结果（四类色觉 × 55 色对）",
       "title_en": "Accessibility colour-check results",
-      "description_zh": "11 色语义色板在正常/绿盲/红盲/蓝盲条件下的 CIEDE2000 两两核验逐对结果；39 对例外与整改说明见正文。",
-      "description_en": "Pairwise CIEDE2000 results of the 11-colour palette under four vision conditions; 39 exceptions with remediation notes in the proposal.",
-      "sha256": "16ba0b27b94d4ca717751f4a0f954dcab67527e03b1343ca3ea3be310987a4d4"
+      "description_zh": "11 色语义色板在正常/绿盲/红盲/蓝盲条件下的 CIEDE2000 两两核验逐对结果；36 对例外与整改说明见正文。",
+      "description_en": "Pairwise CIEDE2000 results of the 11-colour palette under four vision conditions; 36 exceptions with remediation notes in the proposal.",
+      "sha256": "5b2cdae45e22935272fca16abd66df3275fa48bd56caff8b63688591fe277918"
+    },
+    {
+      "path": "visual/assets/governance/qi-pulse-verification.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "Qi-Pulse 确定性自证验证结果",
+      "title_en": "Qi-Pulse deterministic self-verification results",
+      "description_zh": "七组 30 项确定性检查全部 PASS：场景卡 156 演练复算、气数协议绑定、岗位闭环、分期条件门、指标跨文件一致性、双语标签对齐、CJK 字体覆盖。",
+      "description_en": "Seven groups / 30 deterministic checks all PASS: scenario-card 156-drill recount, protocol binding, role loop, phase gates, metrics cross-file consistency, bilingual tag parity, CJK font coverage.",
+      "sha256": "210c7f5549780ce839a9f6d574bbb4bdae9a1463f14d3675b2c1f9d1d1c6b19b"
     }
   ],
   "validation_claim": {

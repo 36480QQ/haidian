@@ -413,7 +413,7 @@ class AutoReviewQueueTests(unittest.TestCase):
             )
             schema_path.parent.mkdir(parents=True)
             schema_path.write_text(
-                json.dumps({"properties": {"schema_version": {"const": "0.2.0"}}}),
+                json.dumps({"properties": {"schema_version": {"const": "0.2.1"}}}),
                 encoding="utf-8",
             )
             (submission / "proposal.md").write_text("proposal", encoding="utf-8")
@@ -422,7 +422,7 @@ class AutoReviewQueueTests(unittest.TestCase):
             audit = Path(temp_dir) / "audit"
             audit.mkdir()
             review = {
-                "schema_version": "0.2.0",
+                "schema_version": "0.2.1",
                 "submission_dir": "submissions/alice/plan",
                 "mandatory_rejection": {"result": "pass"},
                 "gate_checks": {
@@ -455,11 +455,11 @@ class AutoReviewQueueTests(unittest.TestCase):
             assert cached is not None
             self.assertEqual("accept", cached[2].action)
 
-            review["schema_version"] = "0.1.0"
+            review["schema_version"] = "0.2.0"
             (audit / "ai-review.json").write_text(json.dumps(review), encoding="utf-8")
             self.assertIsNone(load_cached_review(audit, "submissions/alice/plan", checkout, 60))
 
-            review["schema_version"] = "0.2.0"
+            review["schema_version"] = "0.2.1"
             (audit / "ai-review.json").write_text(json.dumps(review), encoding="utf-8")
 
             (submission / "proposal.md").write_text("updated", encoding="utf-8")
