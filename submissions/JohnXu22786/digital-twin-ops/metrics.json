@@ -165,13 +165,13 @@
     },
     "global_case_count": {
       "status": "known",
-      "value": 4,
+      "value": 6,
       "unit": "count",
       "source_files": [
         "proposal.md",
         "sources.json"
       ],
-      "formula": "count(global ecosystem mechanism cases)",
+      "formula": "count(global ecosystem mechanism cases in the case table and sources.json)",
       "confidence": "high",
       "assumptions": []
     },

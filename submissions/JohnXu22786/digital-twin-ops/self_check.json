@@ -10,20 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/JohnXu22786/digital-twin-ops/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/JohnXu22786/digital-twin-ops/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
-        "submissions/JohnXu22786/digital-twin-ops/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
+        "submissions/JohnXu22786/digital-twin-ops/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/JohnXu22786/digital-twin-ops/proposal.md"
@@ -33,16 +20,29 @@
       ],
       "changed_files": [
         "submissions/JohnXu22786/digital-twin-ops/agent.json",
+        "submissions/JohnXu22786/digital-twin-ops/assets/figures/ai-ecosystem.en.png",
+        "submissions/JohnXu22786/digital-twin-ops/assets/figures/ai-ecosystem.png",
+        "submissions/JohnXu22786/digital-twin-ops/assets/figures/belt-structure.en.png",
+        "submissions/JohnXu22786/digital-twin-ops/assets/figures/belt-structure.png",
+        "submissions/JohnXu22786/digital-twin-ops/assets/figures/key-areas.en.png",
         "submissions/JohnXu22786/digital-twin-ops/assets/figures/key-areas.png",
+        "submissions/JohnXu22786/digital-twin-ops/assets/figures/land-use-structure.en.png",
         "submissions/JohnXu22786/digital-twin-ops/assets/figures/land-use-structure.png",
+        "submissions/JohnXu22786/digital-twin-ops/assets/figures/logo-concept.en.png",
+        "submissions/JohnXu22786/digital-twin-ops/assets/figures/logo-concept.png",
+        "submissions/JohnXu22786/digital-twin-ops/assets/figures/metrics-evidence.en.png",
         "submissions/JohnXu22786/digital-twin-ops/assets/figures/metrics-evidence.png",
+        "submissions/JohnXu22786/digital-twin-ops/assets/figures/mobility-bluegreen.en.png",
         "submissions/JohnXu22786/digital-twin-ops/assets/figures/mobility-bluegreen.png",
+        "submissions/JohnXu22786/digital-twin-ops/assets/figures/site-overview.en.png",
         "submissions/JohnXu22786/digital-twin-ops/assets/figures/site-overview.png",
         "submissions/JohnXu22786/digital-twin-ops/assumptions.json",
         "submissions/JohnXu22786/digital-twin-ops/changelog.md",
         "submissions/JohnXu22786/digital-twin-ops/compliance_matrix.json",
         "submissions/JohnXu22786/digital-twin-ops/design_depth_matrix.json",
+        "submissions/JohnXu22786/digital-twin-ops/drawings/a0-boards.en.pdf",
         "submissions/JohnXu22786/digital-twin-ops/drawings/a0-boards.pdf",
+        "submissions/JohnXu22786/digital-twin-ops/drawings/a3-booklet.en.pdf",
         "submissions/JohnXu22786/digital-twin-ops/drawings/a3-booklet.pdf",
         "submissions/JohnXu22786/digital-twin-ops/geometry/buildings.geojson",
         "submissions/JohnXu22786/digital-twin-ops/geometry/constraints.geojson",
@@ -59,17 +59,19 @@
         "submissions/JohnXu22786/digital-twin-ops/proposal.md",
         "submissions/JohnXu22786/digital-twin-ops/report/copyright_statement.md",
         "submissions/JohnXu22786/digital-twin-ops/report/narrative.md",
+        "submissions/JohnXu22786/digital-twin-ops/report/proposal.en.html",
         "submissions/JohnXu22786/digital-twin-ops/report/proposal.html",
         "submissions/JohnXu22786/digital-twin-ops/risk.json",
         "submissions/JohnXu22786/digital-twin-ops/self_check.json",
         "submissions/JohnXu22786/digital-twin-ops/sources.json",
         "submissions/JohnXu22786/digital-twin-ops/standard_matrix.json",
+        "submissions/JohnXu22786/digital-twin-ops/visual/index.en.html",
         "submissions/JohnXu22786/digital-twin-ops/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/JohnXu22786/digital-twin-ops": "formal"
       },
-      "total_bytes": 1026694,
+      "total_bytes": 12127352,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -147,7 +149,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 8,
+          "source": 15,
           "standard": 0,
           "depth": 0,
           "data": 1,
@@ -168,21 +170,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/proposal.md: bilingual contract requires translation_file=proposal.en.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/assets/figures/key-areas.png: bilingual contract requires en display counterpart `assets/figures/key-areas.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/assets/figures/land-use-structure.png: bilingual contract requires en display counterpart `assets/figures/land-use-structure.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/assets/figures/metrics-evidence.png: bilingual contract requires en display counterpart `assets/figures/metrics-evidence.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/assets/figures/mobility-bluegreen.png: bilingual contract requires en display counterpart `assets/figures/mobility-bluegreen.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/assets/figures/site-overview.png: bilingual contract requires en display counterpart `assets/figures/site-overview.en.png`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/manifest.json: `proposal.en.md` should declare translation_of=proposal.md; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/report/proposal.html: bilingual contract requires en display counterpart `report/proposal.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/proposal.en.md: front matter should set language=en; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/JohnXu22786/digital-twin-ops/proposal.en.md: front matter should set translation_of=proposal.md; legacy v1 package remains compatible"
-  ],
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {
@@ -213,5 +201,70 @@
       "target": "professional_review.py",
       "message": "professional_review: PASS"
     }
-  ]
+  ],
+  "figure_qc": {
+    "ok": true,
+    "ink_ok": true,
+    "clip_clear": true,
+    "overlap_clear": "not_verified",
+    "summary": "ink+edge-clip machine check only; text-overlap not machine-verified post-hoc (figure generation text-bbox checks recorded in changelog)",
+    "figures": {
+      "ai-ecosystem.png": {
+        "width": 1823,
+        "height": 1223,
+        "ink": 0.2106,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true
+      },
+      "belt-structure.png": {
+        "width": 1823,
+        "height": 1223,
+        "ink": 0.3089,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true
+      },
+      "key-areas.png": {
+        "width": 1823,
+        "height": 1223,
+        "ink": 0.3141,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true
+      },
+      "land-use-structure.png": {
+        "width": 1823,
+        "height": 1223,
+        "ink": 0.2286,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true
+      },
+      "logo-concept.png": {
+        "width": 1823,
+        "height": 1223,
+        "ink": 0.116,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true
+      },
+      "metrics-evidence.png": {
+        "width": 1823,
+        "height": 1223,
+        "ink": 0.192,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true
+      },
+      "mobility-bluegreen.png": {
+        "width": 1823,
+        "height": 1223,
+        "ink": 0.1304,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true
+      },
+      "site-overview.png": {
+        "width": 1823,
+        "height": 1223,
+        "ink": 0.5061,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true
+      }
+    }
+  }
 }
