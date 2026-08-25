@@ -31,7 +31,7 @@ All figure, drawing and page generation ran locally in a project-scoped virtual 
 | pyproj | 3.7.2 | MIT | EPSG:4326 to EPSG:4548 projection |
 | jsonschema | 4.26.0 | MIT | Local schema validation |
 
-The generation scripts are not included in the package because the submission file whitelist does not admit `.py` files. The connectivity analysis they produce is reproducible without them: `visual/assets/network-analysis.json` records the method, every parameter (8 m snapping tolerance, 15 km/h speed ceiling, planarisation at intersections, depot selection rule), the input layers and the intermediate results, so any GIS toolchain can repeat the computation from the submitted geometry alone.
+The Python generation scripts are not included because the submission file whitelist does not admit `.py` files. Reproducibility does not depend on them. `visual/assets/verify-network.js` and `visual/assets/verify-geometry.js` are independent reimplementations that use only the Node standard library, read only this package's geometry, and recompute the published findings before comparing them item by item against `metrics.json`; both exit non-zero on any mismatch. `visual/assets/network-analysis.json` additionally records the method, every parameter (8 m snapping tolerance, 15 km/h speed ceiling, planarisation at intersections, depot selection rule), the input layers and the intermediate results, so any GIS toolchain can repeat the computation from the submitted geometry alone.
 
 ## Data sources
 
@@ -42,3 +42,16 @@ Policy, statistical and case-study material is cited from public documents regis
 ## Names, likenesses and marks
 
 This package names no private individual and reproduces no personal likeness. Historical figures (Zhan Tianyou, Chen Chunxian) are referred to only in relation to documented public historical events. Company and institution names appear solely as factual references to published cases; no corporate logo, wordmark or brand asset is reproduced. The honours display system and wayfinding proposals explicitly require item-by-item rights clearance before any implementation, and this proposal designates no specific name, likeness, typeface or corporate mark in advance.
+
+## AI-generated illustrations
+
+Three component plates (`assets/figures/component-chevron-ramp*.png`, `component-platform-unit*.png`,
+`component-observation-point*.png`) embed illustrations produced with a generative image model. They are
+conceptual expressions only. They are not photographs, are not renderings of any surveyed design, and depict
+no existing place, building or person. Every plate carries that statement on its face. The figures in them are
+stylised without facial detail and represent no identifiable individual; no signage copy, brand mark or
+wordmark appears in any of them. Annotations on the plates are restricted to two kinds of content: figures
+this proposal has measured and can recompute from the submitted geometry, and rules it has already stated in
+the narrative. No gradient, clear width, dimension or other engineering specification is given on any plate,
+consistent with the text's statement that such values are for a professional team to develop against current
+codes.

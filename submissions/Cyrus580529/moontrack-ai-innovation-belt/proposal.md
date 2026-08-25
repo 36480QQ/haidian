@@ -571,6 +571,14 @@ node visual/assets/verify-network.js
 | **贡献墙模块** | 可增量替换的荣誉展示单元 | 对应荣誉展示体系的可追加要求 |
 | **适老休憩单元** | 座椅、遮阴、紧急呼叫一体化单元 | 对应海淀60岁以上人口67.1万、占21.47%的真实结构 [source:haidian-2024-statistical-bulletin] |
 
+三种主要构件各出一张构件图版，插图为 AI 生成的概念表达，图版上只标注本方案实测算出的数与已明文写下的规则，不标任何工程规格：
+
+![人字坡道构件图版](assets/figures/component-chevron-ramp.png)
+
+![月台单元一期交付图版](assets/figures/component-platform-unit.png)
+
+![观察点可解释性图版](assets/figures/component-observation-point.png)
+
 五种构件的具体尺寸、材料、坡度与做法均需由专业团队按现行规范深化，本方案只提出构件类型与功能定义。涉及无障碍坡度的部分须符合《无障碍环境建设法》及相关设计规范 [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW]，具体取值不在本方案给定。
 
 ### 东西缝合与南北贯通

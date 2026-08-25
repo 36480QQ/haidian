@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e2135d39e3413e53bf7bf25089ca668b99a093932649691ed33f716814087c78"
+      "sha256": "c18ff399eca2ff5d10883e44bd6a62892b6972eb7a0070a7035b002448193e6f"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e3e13d6b7fd905368d7aa3b69dc3b3bf066ba044bb8d23b1ed7a041a66f66ea0"
+      "sha256": "bcae46bf8668d78ea191e3109891bf7816be8a8dc6cda47fe00f700095b43aea"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,21 +93,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "0b42e1667d78d7b425def8f6acc010bce99f9fa83ce84bbb4bdabd5518d98f7f"
+      "sha256": "8b0c87eb14ea49b052468d7b176629457bddc427d4d8a3e810260f395f5d0993"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "09882f1f249e9d56ce6501bc7df9d6f10a4b9f01c18ec6f40b654c1f67280132"
+      "sha256": "a745b2c2ae9a76cead253d6996f72389bebb5e33cf933b92fd3974f6cc169a73"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "eb265159e0548a12ed623564231fd3b8a27994941ec51873a50e530dda5262ff"
+      "sha256": "10db5f961400286f73a383fb4ac57226fc553184114cacfb8eb9d057f144c3e9"
     },
     {
       "path": "visual/index.html",
@@ -232,7 +232,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "481180e120594dde323426f7d60bdcca1057f32dbdb36e74037706c58b21de36"
+      "sha256": "60a5d4b09da98c6f3d6899a4653c7dca09d2bb855ff135812499b5eaf8853361"
     },
     {
       "path": "report/proposal.en.html",
@@ -248,7 +248,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "90b5e70a035d0d5b7c53c1f699a149e1561171a6728792c35e11700bda713809"
+      "sha256": "25c08f789ff92ed33890df535536287e6b2c6bb1b062f3cbcf42bb2d4c663341"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -256,7 +256,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "9f3be44dbf7a8464c00dc396fa6baf2b429740a2762f57b93d9ccf20a0778286"
+      "sha256": "747b3ce0aeb02abddf8fcdd5ef9fc7a294b5233960eaf1558381cde374804e4a"
     },
     {
       "path": "visual/index.en.html",
@@ -320,6 +320,51 @@
       "language": "en",
       "sha256": "5849c6d33f55be830f2e522a1ec7a923b56f2ad38892547f9ece4445f4d76005",
       "translation_of": "assets/figures/policy-levers.png"
+    },
+    {
+      "path": "assets/figures/component-chevron-ramp.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "6bc0db25b47164af06f061892834029c99c3021bc7c3136b183d4a7834cf631d"
+    },
+    {
+      "path": "assets/figures/component-chevron-ramp.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "56bd8452ea20c2aa45000f76929c1999410c6be228e1527a4ca203857ac2419e",
+      "translation_of": "assets/figures/component-chevron-ramp.png"
+    },
+    {
+      "path": "assets/figures/component-platform-unit.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "f9d8c8d99a90951850c23affa065bc38e5c0e8460bda943a5a5d94657a1aab26"
+    },
+    {
+      "path": "assets/figures/component-platform-unit.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "a67452acf670411d8f8ae1f39ca3d15f6eea599ab7dca67c207f79d7f73c2e39",
+      "translation_of": "assets/figures/component-platform-unit.png"
+    },
+    {
+      "path": "assets/figures/component-observation-point.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "c30c5a0bdbc590fd008dcd72424763bfab803de484a2b8726df6e27c52784442"
+    },
+    {
+      "path": "assets/figures/component-observation-point.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "304bbcb637b15c7201b61f13332bc2dbee4b7cb10c41136c8cd247dffb815aa3",
+      "translation_of": "assets/figures/component-observation-point.png"
     }
   ],
   "validation_claim": {

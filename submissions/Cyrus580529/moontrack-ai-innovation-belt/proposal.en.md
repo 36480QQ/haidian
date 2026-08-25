@@ -571,6 +571,14 @@ The component library is a set of spatial components reusable across the belt, s
 | **Contribution wall module** | An incrementally replaceable honours display unit | Answers the extensibility requirement of the honours display system |
 | **Elderly rest unit** | Integrated seating, shade and emergency call | Answers the real structure of 671,000 Haidian residents aged 60+, 21.47% [source:haidian-2024-statistical-bulletin] |
 
+Three of the components carry a component plate. The illustrations are AI-generated conceptual expressions; each plate annotates only figures this proposal has measured and rules it has already stated in writing, and gives no engineering specification.
+
+![Chevron ramp component plate](assets/figures/component-chevron-ramp.en.png)
+
+![Platform unit phase-one plate](assets/figures/component-platform-unit.en.png)
+
+![Observation point explainability plate](assets/figures/component-observation-point.en.png)
+
 Dimensions, materials, gradients and detailing for all five components must be developed by professional teams against current codes; this proposal defines only component type and function. Anything involving accessible gradients must comply with the Law on the Construction of a Barrier-Free Environment and related design codes [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW], and specific values are not given here.
 
 ### East–west stitching and north–south continuity
