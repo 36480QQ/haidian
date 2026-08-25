@@ -963,7 +963,7 @@ M2 社区提出 → M4 测试场验证（sandbox）→ 达标转 S2/S8/S10 试�
 | CTX-OSM-STATION | 轨道站点节点（railway=station） | OpenStreetMap（同上） | ODbL 1.0 | 2026-08-11 | 节点坐标 + name 标签绘制 | high | 仅 context；站点名与线位关系示意 | context only |
 | CTX-OSM-WATER | 水系线（waterway=river/canal/stream） | OpenStreetMap（同上） | ODbL 1.0 | 2026-08-11 | API 查询 → 绘制 | medium | 仅 context 蓝显 | context only |
 | CTX-OSM-PARK | 公园绿地（leisure=park） | OpenStreetMap（同上） | ODbL 1.0 | 2026-08-11 | API 查询 → 面要素浅绿显示 | medium（OSM 绿地覆盖不完全） | 仅 context 浅绿显示 | context only |
-| CTX-JZ-PARK | 京张铁路遗址公园全线贯通事实（9 km / 53 ha / 45 万居民） | 北京市园林绿化局官网；科技日报 2026-08-06；北京市规自委规划解读 | 政府公开信息；媒体公开报道 | 2026-08-11 | 三源交叉核验后引用 | high（政府官网 + 主流媒体一致） | 方案「一带」现实锚点陈述；不据此声称任何红线 | factual anchor |
+| CTX-JZ-PARK | 京张铁路遗址公园公开报道背景（9 km / 53 ha / 45 万居民） | 北京市园林绿化局官网；科技日报 2026-08-06；北京市规自委规划解读 | 政府公开信息；媒体公开报道 | 2026-08-11 | 作为公开背景锚点引用，不把媒体报道写成官方确认 | medium（官方源与媒体源混合） | 方案「一带」现实锚点陈述；不据此声称任何红线、审批、签约合作或当期实施条件 | factual anchor |
 | CTX-TASKBOOK-AREAS | 三处重点区域名称与官方定位 | brief/site-package/agent_taskbook.json（组织方提供） | 任务书许可 | 2026-08-11 | 直接引用 | high（组织方一手） | 方案核心结构依据 | organizer source |
 
 **图层语法（C3）**：所有空间图统一三层——
