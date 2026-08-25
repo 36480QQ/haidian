@@ -42,6 +42,27 @@
       "statement_en": "15-minute reachability is concept-level; recalculation required before implementation.",
       "category": "service_design",
       "status": "accepted_limitation"
+    },
+    {
+      "assumption_id": "A-BRAND-001",
+      "statement_zh": "「生活智圈」「LIVE·JZ」及地标名称为内部工作代号；品牌在先权利检索未完成前不用于外部注册或商业使用，不主张任何商标在先权利。",
+      "statement_en": "Brand names are internal working codenames; no trademark prior-right claim before clearance.",
+      "category": "brand_prior_rights",
+      "status": "accepted_limitation"
+    },
+    {
+      "assumption_id": "A-DATA-LIFECYCLE-001",
+      "statement_zh": "全部AI场景的数据生命周期控制（收集、使用、留存、共享、删除、公平性审查、投诉与事件响应）按场景卡明示保存期执行；试点结束30日内删除并公示删除记录，本假设不构成法律合规批准。",
+      "statement_en": "Data lifecycle controls follow per-card retention periods; deletion within 30 days after trials with published records; not a legal compliance approval.",
+      "category": "data_lifecycle",
+      "status": "accepted_limitation"
+    },
+    {
+      "assumption_id": "A-CASES-001",
+      "statement_zh": "全球AI生态案例与对标案例仅作机制比较，按公开渠道逐项登记来源与引用边界；成效数据一律不引用，个别项目争议与终止事实如实保留。",
+      "statement_en": "Global ecosystem and benchmark cases are mechanism comparisons with per-item source registration; no effect statistics cited; disputes and discontinuations kept honestly.",
+      "category": "case_sourcing",
+      "status": "accepted_limitation"
     }
   ]
 }

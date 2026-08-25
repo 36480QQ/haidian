@@ -99,7 +99,7 @@
     },
     "land_use_zone_count": {
       "status": "known",
-      "value": 24,
+      "value": 27,
       "unit": "count",
       "source_files": [
         "geometry/land_use.geojson"
@@ -148,30 +148,41 @@
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(industry_validation scenario cards)",
+      "formula": "count(rows in the 产业测试验证场景 test-protocol table, T1-T3)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(rows in the AI场景卡 table, C01-C12)",
       "confidence": "high",
       "assumptions": []
     },
     "persona_count": {
       "status": "known",
-      "value": 5,
+      "value": 6,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(representative user groups)",
+      "formula": "count(rows in the 六类人才画像 table)",
       "confidence": "high",
       "assumptions": []
     },
     "global_case_count": {
       "status": "known",
-      "value": 4,
+      "value": 8,
       "unit": "count",
       "source_files": [
         "proposal.md",
         "sources.json"
       ],
-      "formula": "count(global ecosystem mechanism cases)",
+      "formula": "count(rows in the 全球AI生态案例 table; each row has a traceable sources.json entry)",
       "confidence": "high",
       "assumptions": []
     },
@@ -188,12 +199,12 @@
     },
     "annual_program_count": {
       "status": "known",
-      "value": 3,
+      "value": 4,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(annual event system)",
+      "formula": "count(rows in the 年度活动品牌 table: 社区服务日、邻里市集季、代际运动周、生活节)",
       "confidence": "high",
       "assumptions": []
     }
