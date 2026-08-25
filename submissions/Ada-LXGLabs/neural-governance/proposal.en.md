@@ -484,6 +484,26 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 - **Traffic baseline**: east-west traffic (compute/data/talent flows from Haidian origination to Future Science City amplification) — currently unknown, to be set after an operational baseline is confirmed.
 - **Service baseline**: joint activity frequency, transfer volume, enterprise-service count — currently unknown, not used to presume implementation effect.
 
+### Operable Mechanisms for Land, Capital, and Talent (agent.2 enrichment)
+
+Beyond the four foundations of computing, energy, data, and scenarios, industrial support also requires operable mechanisms for land, capital, and talent — each anchored to a key area, forming "spatial carrier + operator + mechanism loop":
+
+**Capital mechanism (anchored to Dazhongsi·Data Vein; suggested operators: park operator + industrial fund; amounts unknown)**:
+- **Industrial guidance fund**: government guidance + social capital, investing in early AI projects and scenario verification (fund size unknown, pending fund scheme confirmation);
+- **Scenario procurement and "reveal-the-list"**: public-scenario procurement (transport, municipal, energy) and reveal-the-list project funding as the "first order" for startups;
+- **Investment matching**: an investment-matching space inside the data-factor lounge, with monthly/quarterly roadshows linking capital to scenario-verified teams.
+
+**Talent mechanism (anchored to Origin Community·People Vein; suggested operators: park operator + universities)**:
+- **Talent attraction**: housing, subsidy, and visa facilitation service packages (subsidy amounts unknown, pending policy confirmation);
+- **Incubation**: incubators + accelerators in the Origin Community, offering an "entry–verification–transfer" full chain;
+- **University joint training**: build training bases and joint labs with BUPT, Tsinghua and others, feeding "AI-native" talent directly into the three key areas.
+
+**Land mechanism (anchored to Zhongzhiyuan·Source Vein; suggested operators: planning/natural-resources department + park operator)**:
+- **New industrial land**: M0 new industrial land and mixed-use land (R&D + pilot + small-scale production);
+- **Stock revitalization**: revitalize existing industrial and office space along the Jing-Zhang railway as low-cost supply for AI innovation carriers.
+
+**Loop and red line**: all amounts, counts, and scales are marked unknown, to be set after operator and policy confirmation; this proposal only offers mechanism frameworks and spatial anchors, presumes no funding scale or talent count, and does not substitute for formal investment-financing or planning approval.
+
 ## Deepening and Translation Path: From Conceptual Proposal to Implementation
 
 This proposal honestly distinguishes "AI-generated conceptual output" from "content requiring professional deepening," providing a clear translation path for downstream teams:
