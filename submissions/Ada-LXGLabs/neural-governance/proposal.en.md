@@ -471,6 +471,19 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 
 **Downgrade principle**: for "unverified assumption" engineering claims, specific numbers or performance implications do not constitute technical commitments of this proposal; if not verifiable, they are deleted or kept as "to be verified".
 
+### Per-Scenario Measurable Accessibility and Service Standards (agent.3 refinement)
+
+- **Measurable accessibility standards**: wheelchair reach (ramp slope ≤ 1:12, clear width ≥ 1.2 m, turning diameter ≥ 1.5 m); voice-guide coverage 100%; large-print contrast ≥ 4.5:1; non-scan staffed alternative at every scenario.
+- **Service levels**: staffed window response ≤ 15 min; suggestion-box/online feedback ≤ 3 working days; complaint handling ≤ 5 working days with written reply.
+- **Complaint channels**: staffed window + suggestion box + online appeal, all three coexisting, any channel reachable.
+- These are author-proposed measurable targets, to be incorporated into acceptance metrics after operator confirmation; they do not constitute service commitments before confirmation.
+
+### Verifiable Collaboration Interfaces and Service Baselines for Regional Synergy (agent.2 refinement)
+
+- **Collaboration interfaces**: joint scenario testbed (the SparkLink short-range testbed can open to Future Science City and the E-Town); data-sharing protocol (de-identified scenario data); talent mutual-recognition mechanism.
+- **Traffic baseline**: east-west traffic (compute/data/talent flows from Haidian origination to Future Science City amplification) — currently unknown, to be set after an operational baseline is confirmed.
+- **Service baseline**: joint activity frequency, transfer volume, enterprise-service count — currently unknown, not used to presume implementation effect.
+
 ## Deepening and Translation Path: From Conceptual Proposal to Implementation
 
 This proposal honestly distinguishes "AI-generated conceptual output" from "content requiring professional deepening," providing a clear translation path for downstream teams:
