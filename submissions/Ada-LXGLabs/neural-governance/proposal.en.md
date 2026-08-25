@@ -188,7 +188,7 @@ The Jing-Zhang Intelligence Vein Belt is not an island. Its true value lies in b
 **Four-level division of the innovation chain**:
 
 - **Haidian · Jing-Zhang Intelligence Vein Belt (origination)**: "from 0 to 1" originality — university-driven innovation, open-source communities, and model and algorithm breakthroughs; the "brain" and "nerve center" of the whole chain;
-- **Future Science City (research amplification)**: "from 1 to N" — engineering, pilot testing, and national major platforms; the "amplification station" that scales origination results;
+- **Beiwei Community (residential community along the belt, community-level nerve endings) → Future Science City (research amplification)**: "from 1 to N" — engineering, pilot testing, and national major platforms; the "amplification station" that scales origination results;
 - **Huairou Science City (foundational support)**: large scientific facilities and basic research, providing computing, data, and underlying scientific discovery; the "source water";
 - **Beijing E-Town (manufacturing landing)**: the scaled manufacturing of intelligent terminals, robotics, and chip packaging; the "from N to product" landing field;
 - **Beijing-Tianjin-Hebei (ecosystem network)**: cross-regional allocation of data factors, computing scheduling, talent flow, and markets, forming a "Beijing originates — Tianjin-Hebei undertakes" collaborative ecology.
@@ -361,6 +361,68 @@ Metric recalculation follows the unified design-depth requirement [depth:metrics
 The compliance matrix is the master file for task responsiveness. Every announcement task and agent_taskbook task must map to a report chapter, layer, metric, drawing, HTML page, source, assumption, and self-check item. If any mandatory task of announcement 1.3, 1.4, 1.5 or agent.1–agent.6 is not covered, the proposal may not enter formal professional scoring.
 
 During formal deepening, the agent should further divide each metric into three categories: the first is spatial metrics directly recomputable from the submitted geometry, such as boundary area, green ratio, public-space ratio, building-footprint area, and phasing area; the second is control metrics that require official regulatory-plan or taskbook-annex support, such as floor-area ratio, building height, building density, setbacks, road redlines, and facility standards; the third is performance metrics that require continuous calibration with operational or industrial data, such as the AI innovation index, talent density, industrial-service satisfaction, walking-and-cycling accessibility, activity participation, and scenario-use frequency. The three categories should enter `metrics.json`, `assumptions.json`, and `compliance_matrix.json` respectively, avoiding writing operational visions as approved planning conditions.
+
+### External References and Assumption Boundary
+
+- **Conceptual references (analogical argument, not engineering fact)**: Palantir Ontology, the connectome concept, and Harari's *Nexus* are public concepts used by the author to analogize "governing connections"; they do not constitute engineering facts or technical grounds asserted by this proposal, and their sources remain to be registered;
+- **Technical parameters (concepts to be verified)**: the 800V DC bus, liquid cooling, compute-power-electricity coordination, and east-west-traffic deterministic latency are **concepts to be verified** proposed by the author from public material — not reviewable engineering conclusions — and must be reviewed by planning, municipal, energy, and fire-safety professional teams before deepening; until then they are not formal technical grounds;
+- **Downgrade principle**: any claim without a reviewable source is treated as an **author assumption to be verified**, not as a settled implementation arrangement or engineering conclusion.
+
+### Global AI Innovation Ecosystem Cases and Map (agent.2)
+
+Five sourced global cases as industrial reference (publicly verifiable, not fabricated):
+
+| # | Organization | Case | Lesson for this proposal |
+|---|--------------|------|--------------------------|
+| 1 | CNCF (Linux Foundation) | **K8sGPT**: AI agent scans/diagnoses Kubernetes cluster faults and gives root causes and fixes; accepted by CNCF as Sandbox in 2023-12 | A "protocol/RF/interop troubleshooting AI agent" for members' testing and compliance self-check |
+| 2 | Linux Foundation | **Project Glasswing**: gives maintainers advanced AI to find vulnerabilities and do security review | An "AI security/compliance employee" auditing standard text, reference implementations, and certification cases |
+| 3 | Linux Foundation | **Agentic AI Foundation**: builds an open Agentic AI stack around MCP; 247 members (Visa/Wells Fargo/Alibaba) | Essentially an "AI-agent industrial alliance" — neutral alliance + tiered membership + open protocol stack |
+| 4 | Linux Foundation | **OPEA**: open enterprise AI platform; RAG/Agent digital-employee scenarios (daily tasks / chatbot / doc summarization) | A shared "digital-employee" component platform for the alliance |
+| 5 | IETF | **Agentic AI standards**: human-to-agent / agent-to-tools / agent-to-agent communication | Seize the standard-setting position for digital-twin interop / identity / security |
+
+**Sources (verifiable)**: ① https://www.cncf.io/projects/k8sgpt/ ② https://www.linuxfoundation.org/blog/project-glasswing-gives-maintainers-advanced-ai-to-secure-open-source ③ https://www.linuxfoundation.org/press/agentic-ai-foundation-welcomes-57-new-members-gaining-major-financial-services-players-and-apac-leaders ④ https://opea.dev/ ⑤ https://www.ietf.org/blog/agentic-ai-standards/
+
+**Industry–space–factor ecosystem map**: ① computing/models (Zhongzhiyuan computing and edge nodes); ② open-source/toolchain (Origin Community open source and feedback garden); ③ data/scenarios (Dazhongsi data-factor lounge); ④ standards/interop (SparkLink short-range connection base); ⑤ governance/compliance (verification wall and governance library). This map anchors global cases onto the specific spaces of the Jing-Zhang Intelligence Vein Belt.
+
+### Scenario-Card Review Matrix and Pilot Responsibility Matrix (agent.3 / P1)
+
+**Reviewable fields for the 10 scenario cards** (data source, minimal fields, privacy boundary, human review point, operator, failure handling, effect metric — all to be refined after operator confirmation; currently candidate suggestions):
+
+| Card | Data source | Minimal fields | Human review | Operator (suggested) | Failure handling | Effect metric |
+|------|-------------|----------------|--------------|----------------------|------------------|---------------|
+| Open-source release | Public open-source data | project/repo/license | pre-release review | Park operator | takedown+notice | release count |
+| Safety sandbox | Test cases/logs | device id/test type | anomaly intervention | Park operator | isolate+rollback | pass rate |
+| Edge computing | Scheduling logs | task id/duration | over-limit approval | Compute provider | throttle+degrade | utilization |
+| Slow-traffic nav | Anonymous counts | no individual track | none | Park operator | stop+backup | volume |
+| Intl roadshow | Public signup | name/org/email | signup review | Expo operator | cancel+refund | sessions |
+| Low-carbon | Public energy data | building-level energy | none | Park operator | stop collection | energy drop |
+| Transfer | Supply-demand records | project/contact | contract review | Transfer agency | revoke+appeal | transfer rate |
+| Data factor | Authorized catalog | field-level grant | trade approval | Data exchange | circuit-break+audit | volume |
+| Life service | Booking info | time/type | none | Community operator | close+migrate | usage |
+| Activity route | Signup info | name/contact | signup review | Park operator | cancel+notify | participants |
+
+**JZ-01..JZ-06 and three candidate pilots — responsibility matrix** (start condition, phase deliverable, acceptance, responsibility status, maintenance, rollback, stop condition; all bodies are "suggested participants", unconfirmed):
+
+| Project | Start condition | Deliverable | Acceptance | Responsibility | Rollback | Stop condition |
+|---------|-----------------|-------------|------------|----------------|----------|----------------|
+| JZ-01 slow-traffic stitching | redline/ownership confirmed | break list + plan | on-site check | suggested district transport | restore | ownership change |
+| JZ-02 Qinghe interface | river blue-line confirmed | interface design | expert review | suggested municipal/water | pause+review | blue-line conflict |
+| JZ-03 transfer street | plot ownership confirmed | retrofit plan | on-site acceptance | suggested park operator | return+restore | operator exit |
+| JZ-04 Dazhongsi connectivity | station condition confirmed | connection plan | transport assessment | suggested rail/transport | downgrade to slow traffic | approval rejected |
+| JZ-05 edge-computing station | energy capacity confirmed | siting+capacity | power acceptance | suggested energy/compute | shut+remove | capacity insufficient |
+| JZ-06 global AI week | operator+funding confirmed | program+budget | performance review | suggested expo operator | cancel+refund | funding not secured |
+| 3 candidate pilots (soft infra) | ownership/operator confirmed | pilot plan+metrics | on-site review | suggested park operator | stop+recycle | operator unconfirmed |
+
+### Historical-Cultural Resource System and Governance Memory (agent.5)
+
+The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the century-old Jing-Zhang railway heritage: Tsinghuayuan Station (the origin and national memory of the Jing-Zhang railway), the railway heritage park (industrial relics turned public space), and the industrial and university memory along the line (Zhongguancun's tech-entrepreneurship history). This proposal puts this cultural resource system into dialogue with neural governance — historical memory is the time-dimension nerve of governance: the railway-heritage display beside the verification wall gives recomputability historical depth; the decision-tracing corridor runs along the railway, putting governance transparency and railway memory on the same track. Protection, use, and AI-governance integration of the cultural resource system must be subject to heritage-department approval; this proposal only offers a conceptual direction, not pseudo-precise heritage boundaries.
+
+
+**International communication copy (bilingual)**:
+- Chinese: 京张智脉带：以连接，治理一座会思考的城。
+- English: **The Jing-Zhang Intelligence Vein Belt — governing a city that thinks, through connection.**
+- Naming: 源脉 Source Vein (Zhongzhiyuan·innovation), 人脉 People Vein (Origin Community·talent/open source), 数脉 Data Vein (Dazhongsi·data factors).
+- Tone: governing connections as the narrative spine, emphasizing recomputable / refutable / participatory, aiming at global AI-governance discourse without mystifying technology.
 
 ## Deepening and Translation Path: From Conceptual Proposal to Implementation
 
