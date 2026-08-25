@@ -111,7 +111,7 @@ The overall spatial structure is **one core · three areas · one interface · o
 
 "Roads grow like slime mold" in this proposal is not a rhetorical metaphor but an interpretable parameter translation. The table below lists, dimension by dimension, how the off-site Physarum + NSGA-II simulation parameters (method-validation evidence) translate into on-site conceptual design decisions; the two value sets are not conflated [depth:metrics_recalculation]:
 
-| Algorithm dimension | Off-site simulation parameter (real run) | Translation rule | On-site conceptual design | Status |
+| Algorithm dimension | Off-site simulation parameter (real run) | Translation rule | On-site conceptual design | On-site decision basis (independent of algorithm output) |
 | --- | --- | --- | --- | --- |
 | Nutrient anchors | 18 key terminals (metro stations, parks, railway corridor, industry anchors); skeleton covers 17/18 | Transformed into metro-station + university + industry node density | Three key areas (PROV-KEY-001/002/003) + six renewal projects (JZ-01..06) anchor placement | Manually calibrated on the provisional boundary |
 | Obstacle constraint | class_I=1.5 / class_IV=3.0, protection_scope=hard block (manually digitized heritage boundary, MODEL credibility trust B) | Transformed into road redlines, river blue-lines, heritage buffer zones | Dashed forbidden-zone layer [data:geometry/constraints.geojson#CONSTRAINTS] (compliance reference, not approval geometry) | Provisional geometry |
@@ -122,10 +122,11 @@ The overall spatial structure is **one core · three areas · one interface · o
 | Efficiency index | 19.20 (baseline 1.143, Run7 frozen 2.802) | Not applied directly; used as a multi-objective reference baseline | On-site multi-objective trade-off to be recomputed | Off-site method validation |
 | Heritage avoidance | 0 hard crossings (f3≡f2; optimal skeleton edges fall outside class_I/class_IV penalty zones) | Transformed into the "detour around heritage buffer zones" design principle | Dashed heritage buffer zone | Provisional geometry |
 
-**Key declarations**:
+**Key declarations (on-site design independent of algorithm output)**:
 1. The "off-site simulation parameter" column is the algorithm output of the real Physarum + NSGA-II run on the test grid, located ~2–3 km west of the provisional boundary (~140 m overlap), and is not formal site geometry.
-2. The on-site "main vein — branch — slow-travel ring — green corridor" is a conceptual design manually calibrated from the same algorithm logic plus the site's provisional boundary, population density, metro stations, and existing road skeleton — not a direct copy of the algorithm output.
+2. The on-site "main vein — branch — slow-travel ring — green corridor" is a human design decision based on site conditions, grounded in: the provisional boundary, Dazhongsi Station (Line 13) and surrounding metro stations, the existing road skeleton and slow-travel gaps, population and industry-anchor density, and the built/planned extent of the Jing-Zhang Railway Heritage Park. The algorithm only provides network-morphology inspiration and method validation; on-site alignment, width, and node scale are determined independently by the design team — not a direct copy of the algorithm output.
 3. Once official site data is released, the full simulation chain must be re-run to replace the above conceptual values with real parameters and produce an "old value — new value — reason" comparison table.
+4. Honest boundary: because the organizer has not yet released the formal boundary, heritage-protection scope, and as-built survey, this proposal cannot yet form an independent quantitative proof of real on-site optimization; the independence above is at the level of methodology and spatial logic, to be completed with re-computed results once official data is available.
 
 ## Key-Area Detailed Design
 
