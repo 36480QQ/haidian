@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0c3bd759ba49a04736340cb00498532c2c7a292e6b51d532630a68aa6396a133"
+      "sha256": "d50aefce2f0d599c8bf0a96ef32418c84a934470b8b4c56df9bfd8f0b75a7e1d"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "463cbb3e1dcd784703ff34bdfc95f1413b23c00ad96dfa5c0f6eae28a82d2f62"
+      "sha256": "3d7cb74169da195370658a22178f77a1ac18346715a2c0876edd6e9ad3073cfc"
     },
     {
       "path": "standard_matrix.json",
@@ -105,7 +105,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "062f42175a3d9b2166b281ba841bc41d31607e4b77f84a6381a7418fad82096a"
+      "sha256": "0acbf0242742e01f130c80295cc9a164643e5dca9882b5bb359c4efc05efe1ca"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -126,7 +126,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "34ad6677d06f649758594d081df0077838242a88aa63584ba8fad7943185c0dd"
+      "sha256": "aca819ea1ffb61fd57ba65ac7f9c49ff92573f260921969e537b3b0ffe9cc46e"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -255,7 +255,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "4e2681509713b43667099ad2036f18fca9e45dcff845f6ef7fc1f2dd0c1142f2"
+      "sha256": "ab13a37d12c1e1d35899155265688638ba57be55f7cad8518b96ba62ccd59dd1"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -625,11 +625,11 @@
       "path": "assets/media/narrative.mp4",
       "role": "video",
       "required": false,
-      "sha256": "9602e74bc99c2b80f1e5047a7736a9a58d55bc1546c90973fd5e4159ee057633",
+      "sha256": "5bf84f4bb90c888df54e50ad374d5957c9baa146be4d750c29b1475876657ec8",
       "title_zh": "《百年应答》概念方案短片",
       "title_en": "The Century Answer — Concept Film",
-      "description_zh": "55 秒静音概念短片：片头提出 1909 年之问，随后依次走过道钉带、南问·鸣钟之门、中答·应答原点、北跃·人字之跃、东西向穿越·应答门五个片段，片尾落回“市民蹲下来数道钉”。画面由 AI 生成（图生视频），为概念意象示意——非实景照片、非工程效果图、非官方审定成果；两处已知形式差异（人字之跃桥型、铜道钉位置）在字幕轨与文字稿中据实声明，形式与尺寸一律以断面图与正文为准。",
-      "description_en": "A 55-second silent concept film. The opening card poses the 1909 question; five segments then walk the belt in turn — the Rail-Spike Band, Bell Chime Plaza in the southern Question segment, the Answer Origin in the central Answer segment, the Ren-Shaped Leap in the northern Leap segment, and the east-west Answer Gates — before the closing card returns to citizens crouching to count the spikes. The imagery is AI-generated (image-to-video) and conceptual in intent: not photographs, not engineering renderings, not an officially approved result. Two known divergences from the body text (the bridge form of the Ren-Shaped Leap and the position of the bronze spikes) are declared in the caption track and the transcript; the section drawings and body text govern form and dimensions.",
+      "description_zh": "55 秒静音概念短片：片头提出 1909 年之问，随后依次走过道钉带、南问·鸣钟之门、中答·应答原点、北跃·人字之跃、东西向穿越·应答门五个片段，片尾落回“市民蹲下来数道钉”。画面由 AI 生成（图生视频与静帧推镜），为概念意象示意——非实景照片、非工程效果图、非官方审定成果。人字之跃段已按断面 ZZY-1/ZZY-2 口径绘制（桥面平直、无上部构筑物、两端并排折返坡道）；仅存一处已声明差异：道钉带段铜道钉位于步道中部，正文口径为步道边缘。",
+      "description_en": "A 55-second silent concept film. The opening card poses the 1909 question; five segments walk the belt — the Rail-Spike Band, the Ringing Bell in the south, the Answer Origin at the centre, the Ren-Shaped Leap in the north, and the east-west Answer Gates — before the closing card returns to citizens crouching to count the spikes. The imagery is AI-generated (image-to-video and still push-ins), conceptual in intent: not photographs, not engineering renderings, not an officially approved result. The Ren-Shaped Leap segment now follows sections ZZY-1/ZZY-2 (flat deck, nothing above it, paired switchback ramps); the single declared divergence that remains is the spike position — mid-path in the film, at the walkway edge in the body text.",
       "poster": "assets/media/narrative-poster.jpg",
       "caption": "assets/media/narrative.vtt",
       "transcript": "assets/media/narrative-transcript.md"
@@ -638,7 +638,7 @@
       "path": "assets/media/narrative.vtt",
       "role": "caption_track",
       "required": false,
-      "sha256": "a7507c7a72b3ba28c9b4e1384b958fea71e9e7a7cc522e31251f903c00a7b5a8",
+      "sha256": "6fdc749189db2c1f6f2ed4783dc49622bef86165e3ce6ea9a01ff800c6ccd591",
       "title_zh": "短片字幕（WebVTT）",
       "title_en": "Concept Film Captions (WebVTT)",
       "description_zh": "与画面烧录字幕逐字一致的中文字幕轨，含 AI 生成声明与两处已知形式差异声明。",
@@ -648,7 +648,7 @@
       "path": "assets/media/narrative-transcript.md",
       "role": "transcript",
       "required": false,
-      "sha256": "2dfe82cf4d1b45f7b981094ba4292c9c3b839583bd5924e83eedb3dbbb6a4e66",
+      "sha256": "6a019b2f883c7fec9ba762eef9dd417d8f8669b824e856d09c1a9e7b5c1262c8",
       "title_zh": "短片完整文字稿",
       "title_en": "Concept Film Full Transcript",
       "description_zh": "短片全部叙述内容的文字稿，供无法播放视频时完整获取。",
