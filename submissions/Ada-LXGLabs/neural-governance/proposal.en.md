@@ -452,6 +452,25 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 
 **Scenario-level privacy and accessibility supplementary fields** (covering all 10 cards): data retention period (shortest necessary, deleted on expiry), complaint channel (staffed window + suggestion box + online appeal), child-consent process (under-14 requires guardian consent), accessibility acceptance (wheelchair reach, voice guide, large print, staffed assistance). These fields require a scenario-level privacy-impact and accessibility assessment before any scenario enters field testing, with operator and human-review responsibility confirmed.
 
+**Claim-by-claim mapping (external reference → source → license/citation boundary)**:
+
+| Claim | Source (sources.json) | License/citation boundary | Status |
+|-------|----------------------|---------------------------|--------|
+| Palantir Ontology analogy (ontology of governance) | PALANTIR-ONTOLOGY | analogical argument only, not engineering fact | public concept |
+| Harari's *Nexus* goodness constraint | HARARI-NEXUS | conceptual citation only, not technical basis | public book |
+| connectome analogy (connection as relation) | CONNECTOME-CONCEPT | analogy only, not engineering claim | public concept |
+| 800V DC bus | ENGINEERING-PARAMS-UNVERIFIED | concept to verify; needs professional review before deepening | unverified assumption |
+| liquid cooling | ENGINEERING-PARAMS-UNVERIFIED | same | unverified assumption |
+| compute-power-electricity coordination | ENGINEERING-PARAMS-UNVERIFIED | same | unverified assumption |
+| east-west-traffic deterministic latency | ENGINEERING-PARAMS-UNVERIFIED | same | unverified assumption |
+| Case 1 CNCF·K8sGPT | https://www.cncf.io/projects/k8sgpt/ | public project, cited | verified |
+| Case 2 Linux Foundation·Glasswing | https://www.linuxfoundation.org/blog/project-glasswing-… | public project | verified |
+| Case 3 Agentic AI Foundation | https://www.linuxfoundation.org/press/agentic-ai-foundation-… | public project | verified |
+| Case 4 OPEA | https://opea.dev/ | public project | verified |
+| Case 5 IETF·Agentic AI | https://www.ietf.org/blog/agentic-ai-standards/ | public standard | verified |
+
+**Downgrade principle**: for "unverified assumption" engineering claims, specific numbers or performance implications do not constitute technical commitments of this proposal; if not verifiable, they are deleted or kept as "to be verified".
+
 ## Deepening and Translation Path: From Conceptual Proposal to Implementation
 
 This proposal honestly distinguishes "AI-generated conceptual output" from "content requiring professional deepening," providing a clear translation path for downstream teams:

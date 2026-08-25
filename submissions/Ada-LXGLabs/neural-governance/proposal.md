@@ -463,6 +463,25 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 **场景级隐私与无障碍补充字段**（覆盖 10 张场景卡）：数据保存期限（默认最短必要期，到期删除）、投诉渠道（人工窗口 + 意见箱 + 线上申诉）、儿童同意流程（14 岁以下须监护人同意）、无障碍验收方法（轮椅可达、语音导览、大字版、人工代办）。上述字段在场景进入现场测试前须完成场景级隐私影响与无障碍评估，并确认运营主体与人工复核责任。
 
+**逐项主张映射（外部引用 → 来源 → 许可/引用边界）**：
+
+| 主张 | 来源（sources.json）| 许可/引用边界 | 状态 |
+|------|-------------------|--------------|------|
+| Palantir Ontology 类比（治理的本体）| PALANTIR-ONTOLOGY | 仅作类比论证，非工程事实或技术依据 | 公开概念引用 |
+| 赫拉利《智人之上》向善约束 | HARARI-NEXUS | 仅作思想引用，非技术依据 | 公开书籍引用 |
+| connectome 连接组类比（连接即关系）| CONNECTOME-CONCEPT | 仅作类比，非工程主张 | 公开科学概念 |
+| 800V 直流母线 | ENGINEERING-PARAMS-UNVERIFIED | 待验证工程概念，须专业复核后方可深化 | 未核实假设 |
+| 液冷 | ENGINEERING-PARAMS-UNVERIFIED | 同上 | 未核实假设 |
+| 算电协同 | ENGINEERING-PARAMS-UNVERIFIED | 同上 | 未核实假设 |
+| 东西向流量确定性时延 | ENGINEERING-PARAMS-UNVERIFIED | 同上 | 未核实假设 |
+| 案例1 CNCF·K8sGPT | https://www.cncf.io/projects/k8sgpt/ | 公开项目，引用性质 | 已核实 |
+| 案例2 Linux基金会·Glasswing | https://www.linuxfoundation.org/blog/project-glasswing-… | 公开项目 | 已核实 |
+| 案例3 Agentic AI Foundation | https://www.linuxfoundation.org/press/agentic-ai-foundation-… | 公开项目 | 已核实 |
+| 案例4 OPEA | https://opea.dev/ | 公开项目 | 已核实 |
+| 案例5 IETF·Agentic AI | https://www.ietf.org/blog/agentic-ai-standards/ | 公开标准 | 已核实 |
+
+**降级原则**：凡"未核实假设"的工程主张，其具体数字或性能暗示不作为本方案的技术承诺；若无法补证，将删除或维持"待验证"标注。
+
 ## 深化与转化路径：从概念方案到可落地
 
 本方案诚实区分"AI 生成的概念成果"与"需专业团队深化的内容"，为下游团队提供清晰的转化路径：
