@@ -14,7 +14,7 @@
     "model_family": "deepseek",
     "model_detail": "初稿 accounts/fireworks/models/kimi-k3 via opencode (fireworks provider)；迭代 zcode (model GLM-5.3)；v1.3 阶段署名：同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）（Tongji Design AI Cloud: DeepSeek Harness + ox-alpha, with subagent CLIs Codex (GPT-5.6-Sol) and Claude Code (Claude Opus 5)）"
   },
-  "generated_at": "2026-08-25T21:21:54Z",
+  "generated_at": "2026-08-25T22:39:33Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4b0bd987c5e0ac7a1d2cb2e394c98deea85eba913903447d0e71f566e468aff7"
+      "sha256": "73b65073dc2115eebf9cdd0de8a6d7cb8d2737a101b140d2c1b2b870356ee500"
     },
     {
       "path": "agent.json",
@@ -44,7 +44,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "5f30c4483c603208393a31fd271e73599409dd599ddea3466b687cd39e4a6e1a"
+      "sha256": "a9e2abd7e1670ce9a69cd23d91f2ad9b92a8f49a76b85a94c620b47ef0acc8c6"
     },
     {
       "path": "sources.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "592e63c312b6f8318bc8c47628045b584a9812eb36d8062d255b6e5cfe28bbe6"
+      "sha256": "04be39ea0c591d70e204d7b0dbebe0afada1c71b3fe2cf3b17c163caca221140"
     },
     {
       "path": "compliance_matrix.json",
@@ -74,14 +74,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "a8572dbfc8373929622c6e07986bf0903bee3a6025fd4c2fba071e11acd41aeb"
+      "sha256": "757df04925caf170f9ed3b32ecd54ed7e076ddd40dbe8e3b47d33d8960489cec"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e0dc50b32a5eacd643fc8412d4f29ee4a001ec4cc0ddf4e8d9c4755228d406fb"
+      "sha256": "6ca6a883bcfac5c35bebd92f055db114510905debc11ff33de6a15b5499559dc"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "6364d1c351f877ba3c75d7a24977fd30b1092b6e23bafef09b89d2ac05e99cb8"
+      "sha256": "14a8327c9b1128df925338fb339460c3e311666f6a62474f8077a5fb7984bed9"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d2282e63f195b03e2b78bb472bf9cd8545acf4eff915f89577d2bc100f582f56"
+      "sha256": "323fddfe4c43fb2bc80d85f370ff719342264dd064ef06e629e0f1a60d3a9fec"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "baa6497f76e47f0104a65075788fdc08f1bbc89bfe54a2bc46b00abada895c47"
+      "sha256": "5775cd980799f08ac8787237848197f3f550d2f5651062c81fbc131e12a2a844"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "2f762a8e669b44c0f9553565a443c5efb91b672c532bcf7226631265c2419d2f"
+      "sha256": "fa4d15289007c769963fcb871cd975cbe40a477c62b7565ad7ac13e0f8d40525"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "875f282d5a41095d695d2bfebacfe36a9c19e53fce3b959de7e17969ce7f33ab",
+      "sha256": "a99a2720b9a954573dbc893efe6254af1a0f9c81df8a14389fd2e9e9e67f59a0",
       "language": "neutral"
     },
     {
@@ -521,7 +521,7 @@
       "path": "visual/assets/fonts.css",
       "role": "asset",
       "required": false,
-      "sha256": "05c494cb440542977d1013871459babf13f90b4eff348cea89cc49facfb6eb64",
+      "sha256": "273b06998057b6e147e13d961bf8b9f20e0c15cd352b1e6fed60269c14107fbb",
       "title_zh": "嵌入式 Noto Sans SC 子集样式（评审渲染用）",
       "title_en": "Embedded Noto Sans SC subset stylesheet for reviewer-side rendering",
       "description_zh": "按 SIL OFL 1.1 分发（许可全文见文件头注释）；base64 嵌入字符子集，供无 CJK 字体环境离线正确渲染中文。",
@@ -547,7 +547,7 @@
       "title_en": "Qi-as-Data Protocol v0.1",
       "description_zh": "四步治理协议 + 七条规则 + 156 项离线演练记录（解析双语场景卡表逐项检查，全通过，可复算）。",
       "description_en": "Four-step governance protocol, seven rules, and a 156-check offline drill record parsed from the bilingual scenario tables (all passing, recomputable).",
-      "sha256": "312d45bdaad98e6fd83f0e38e2f3ae2c4f7aa33ccc0b5370d98b81446dfe8f92"
+      "sha256": "ce6f734cf9e1ae726f7201eeb2ae48cff270d4d4dd1d1e3d9514b61cec339a80"
     },
     {
       "path": "visual/assets/a11y-color-check.json",
@@ -559,6 +559,17 @@
       "description_zh": "11 色语义色板在正常/绿盲/红盲/蓝盲条件下的 CIEDE2000 两两核验逐对结果；36 对例外与整改说明见正文。",
       "description_en": "Pairwise CIEDE2000 results of the 11-colour palette under four vision conditions; 36 exceptions with remediation notes in the proposal.",
       "sha256": "5b2cdae45e22935272fca16abd66df3275fa48bd56caff8b63688591fe277918"
+    },
+    {
+      "path": "visual/assets/governance/qi-pulse-verification.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "Qi-Pulse 确定性自证验证结果",
+      "title_en": "Qi-Pulse deterministic self-verification results",
+      "description_zh": "七组 30 项确定性检查全部 PASS：场景卡 156 演练复算、气数协议绑定、岗位闭环、分期条件门、指标跨文件一致性、双语标签对齐、CJK 字体覆盖。",
+      "description_en": "Seven groups / 30 deterministic checks all PASS: scenario-card 156-drill recount, protocol binding, role loop, phase gates, metrics cross-file consistency, bilingual tag parity, CJK font coverage.",
+      "sha256": "210c7f5549780ce839a9f6d574bbb4bdae9a1463f14d3675b2c1f9d1d1c6b19b"
     }
   ],
   "validation_claim": {
