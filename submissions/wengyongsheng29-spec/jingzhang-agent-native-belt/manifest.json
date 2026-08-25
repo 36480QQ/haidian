@@ -114,14 +114,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9dbecd2a92f92b6fa50306ccb475d5e40b74b6d5cd832d7854a7792b9a9b10fb"
+      "sha256": "eccdd870271aff540b8b668f144311de5de8f5471db59f79d021edfec3017465"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "bd0fdccefa8c44efa393b971138fd40947a13f1dd238bc8f438e460271de6801"
+      "sha256": "4a34a8729bfa71d5c40a6b60509f0da5f4def38b9d71acc659f55eaa7030f911"
     },
     {
       "path": "visual/index.html",
@@ -142,7 +142,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "4d34ee1f99ab5e1d9613b128acb1488a4c74cc1bf8d3ad87b250c1f277586341"
+      "sha256": "a0d1d7b58f3e52d2e06f980a7463f15edc4c135e84680502d0f7f5b19ba760f6"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -229,31 +229,31 @@
     {
       "path": "assets/logo.png",
       "role": "asset",
-      "sha256": "77ff1141a3ddd5b0b82752b14900f6c2d90afba7169ffebbc173279362ac84f4",
+      "sha256": "5ccad7d6b1542ba2400ce0de0991c1ee929b1a215215df3d30bad97b85efe1c8",
       "required": true
     },
     {
       "path": "assets/figures/concept-section.png",
       "role": "figure",
-      "sha256": "6cfb6b5af921ca64adc68d1efcca770c598798a95458a2a0e7a0d4a519f472ea",
+      "sha256": "f4a9d07bf609adc96786c4b8a1a093a3dc74ca79e89d4ea3840ed39d3e42dd7c",
       "required": true
     },
     {
       "path": "assets/figures/implementation-roadmap.png",
       "role": "figure",
-      "sha256": "13d1f4782deefcd9dc1be2117d38cb7892267fd0ada0c9984fe474f1f4ed36e2",
+      "sha256": "1731204515e7dc11e5f8fbac8324554811d73cb4a9f69ea47fab923a448c4756",
       "required": true
     },
     {
       "path": "assets/figures/ai-typologies.png",
       "role": "figure",
-      "sha256": "8a276802cd044628724792427a87c3a84b810334036329460f783b0c8364bcad",
+      "sha256": "4ebb754357214267420ff6438c29753b428e4ce4d3b79d57d5861a3e89995918",
       "required": true
     },
     {
       "path": "assets/figures/regional-synergy.png",
       "role": "figure",
-      "sha256": "abdb4f025bc7d3935fe99044d3ad28ddff58bd1582a875f0592609d24fe4dedc",
+      "sha256": "0395d39f4154cc36ab3cd919e0de5d32e1c5e83f0ce701f5c50c4ce40c357535",
       "required": true
     },
     {
@@ -264,7 +264,7 @@
     },
     {
       "path": "assets/logo-transparent.png",
-      "sha256": "851ee17be1a1d910283f25887fe451d4be180195e6f53f51bc00fcda9a965a8a",
+      "sha256": "ee43e01a58921dbf0ce55582f6bba43d121beb4850c58274e3a3e00733c5a320",
       "required": true,
       "role": "asset"
     },
@@ -330,7 +330,7 @@
       "role": "figure",
       "required": false,
       "language": "neutral",
-      "sha256": "b944b1e444a80ad732450dc6a04220a2a799b6af4a2cfdf71b0fe51286fab9d9"
+      "sha256": "4c6b3bf0cc8dc15793fd98ca2a19a9e70b52a300a4515a3768228baf1c6f5470"
     },
     {
       "path": "assets/figures/site-overview-satellite.jpg",
@@ -344,14 +344,14 @@
       "role": "figure",
       "required": false,
       "language": "neutral",
-      "sha256": "a8a2db86e3ffeb0da283679db984dfdc91364fa9c57a7cae3cbbbc5b4d9e92f3"
+      "sha256": "52fde16e917bb3b16797f24b8577025b5cc27b5ae1d8e262b1a14925e708143f"
     },
     {
       "path": "assets/figures/ai-verification-protocol.png",
       "role": "figure",
       "required": false,
       "language": "neutral",
-      "sha256": "78f9ee165bc1f7ef175c6dba742ad44c53a8c493a707a766cf3d392ab678ec8a"
+      "sha256": "a9d7b0f2de5e18aa8449be3a5b59bee3a2a01d48f632ad0d40bb08675044ebe4"
     },
     {
       "path": "assets/figures/ai-verification-protocol.jpg",
@@ -372,7 +372,7 @@
       "role": "figure",
       "required": false,
       "language": "neutral",
-      "sha256": "ce08029b7c04d046ae0ea892f886745781469ac7802e5a546c99ce9387f2f19a"
+      "sha256": "7abb872b1567c9a20530e2a43aa0d7ab08e407b885f1e31033d5f748f0af3194"
     },
     {
       "path": "visual/assets/logo-icon.png",
@@ -418,7 +418,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/concept-section.png",
-      "sha256": "59b8ad1c633e8716ab63d3a673ff17a05db75d7cfb586529ac0c87ed573c6eba"
+      "sha256": "bbb46663efa37a1c9b6bda3ba0f6a8f468e2b68a01164f72e0e8ad9c9c56160a"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -426,7 +426,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/implementation-roadmap.png",
-      "sha256": "695df4e2098e15a041d8bafffcb60ee38c113cc442429ef088d84a9ed5317790"
+      "sha256": "de143bb0cd1e2001edec8f00f199da001bf1150d168fa5734e0724565ad4a811"
     },
     {
       "path": "assets/figures/ai-typologies.en.png",
@@ -434,7 +434,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/ai-typologies.png",
-      "sha256": "90b7d7dfcc2fa9755ad023e1a67715460679b59b978a4a31b80e33ce9fa9ed5f"
+      "sha256": "e1b7a04e228d8eca97be0dc6179bd5ef4098aaa8e82125d238143d2e08dde24a"
     },
     {
       "path": "assets/figures/regional-synergy.en.png",
@@ -450,7 +450,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/protocol-1909.png",
-      "sha256": "d8d042f3f7e71e3685b1a0563ca933515c1a754e2526c792c5e1618d2d4e98a6"
+      "sha256": "735db7072fe69f50dd32fca376bdae9cd1eed03abbea0bd58823603fda1fdf16"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -458,7 +458,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "4126d248c4a06fe3100e1121b37d2e8c9ad22b1ef68256efd81f2a021c95ace9"
+      "sha256": "4b310682ff039cd41cf36a798b65b6147d13c32497a2f20c7d3093212b67c9f6"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -466,7 +466,7 @@
       "required": false,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "99b1ab3366ac6cf8038c13bbbc73b5f0fdce01b112f733a684637a6fa023b38a"
+      "sha256": "332aaf74fbc34720d1fc8e5748ccd2b380ff1c0204acfe7c359076ffd38c2236"
     },
     {
       "path": "assets/figures/site-overview-wide.jpg",
