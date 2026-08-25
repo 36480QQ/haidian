@@ -379,7 +379,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 
 ### 全球 AI 创新生态案例与图谱（agent.2）
 
-本方案提供 5 个有来源的全球 AI 创新生态案例，作为"城市智能体治理"的产业参照（均为公开可查来源，非本方案虚构）：
+本方案提供 5 个有来源的全球 AI 创新生态案例，作为"城市智能体治理"的产业参照（均为公开可查来源；本方案未做独立交叉核验）：
 
 **五个全球案例**：
 
@@ -387,7 +387,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 |---|------|------|---------------|
 | 1 | CNCF（Linux 基金会） | **K8sGPT**：AI Agent 自动扫描/诊断 Kubernetes 集群故障、给出根因与修复建议，2023-12 被 CNCF 以 Sandbox 级接纳 | 星闪可做"协议/射频/互操作排障 AI Agent"，替成员工程师扛测试、排障、合规自检 |
 | 2 | Linux 基金会 | **Project Glasswing**：把 AI 交给开源维护者自动挖漏洞、做安全审查 | 星闪可做"AI 安全/合规员工"，对标准文本、参考实现、认证用例做自动审计 |
-| 3 | Linux 基金会 | **Agentic AI Foundation**：围绕 MCP 建开放 Agentic AI 技术栈，247 家成员（Visa/富国/阿里） | 本质是"AI Agent 版产业联盟"，中立联盟+分层会员+开放协议栈可直接对标 |
+| 3 | Linux 基金会 | **Agentic AI Foundation**：围绕 MCP 建开放 Agentic AI 技术栈，247 家成员（Visa/富国/阿里） | 本质是"AI Agent 版产业联盟"，中立联盟+分层会员+开放协议栈可参考对标 |
 | 4 | Linux 基金会 | **OPEA**：开放企业 AI 平台，RAG/Agent 三大数字员工场景（日常任务/聊天机器人/文档摘要） | 星闪可建联盟共享的"数字员工"组件平台 |
 | 5 | IETF | **Agentic AI 标准**：明确 human-to-agent / agent-to-tools / agent-to-agent 三类智能体通信 | 星闪可抢占数字分身互操作/身份/安全的标准话语权 |
 
@@ -474,11 +474,11 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 | 液冷 | ENGINEERING-PARAMS-UNVERIFIED | 同上 | 未核实假设 |
 | 算电协同 | ENGINEERING-PARAMS-UNVERIFIED | 同上 | 未核实假设 |
 | 东西向流量确定性时延 | ENGINEERING-PARAMS-UNVERIFIED | 同上 | 未核实假设 |
-| 案例1 CNCF·K8sGPT | https://www.cncf.io/projects/k8sgpt/ | 公开项目，引用性质 | 已核实 |
-| 案例2 Linux基金会·Glasswing | https://www.linuxfoundation.org/blog/project-glasswing-… | 公开项目 | 已核实 |
-| 案例3 Agentic AI Foundation | https://www.linuxfoundation.org/press/agentic-ai-foundation-… | 公开项目 | 已核实 |
-| 案例4 OPEA | https://opea.dev/ | 公开项目 | 已核实 |
-| 案例5 IETF·Agentic AI | https://www.ietf.org/blog/agentic-ai-standards/ | 公开标准 | 已核实 |
+| 案例1 CNCF·K8sGPT | https://www.cncf.io/projects/k8sgpt/ | 公开项目，引用性质 | 公开来源，待独立交叉核验 |
+| 案例2 Linux基金会·Glasswing | https://www.linuxfoundation.org/blog/project-glasswing-… | 公开项目 | 公开来源，待独立交叉核验 |
+| 案例3 Agentic AI Foundation | https://www.linuxfoundation.org/press/agentic-ai-foundation-… | 公开项目 | 公开来源，待独立交叉核验 |
+| 案例4 OPEA | https://opea.dev/ | 公开项目 | 公开来源，待独立交叉核验 |
+| 案例5 IETF·Agentic AI | https://www.ietf.org/blog/agentic-ai-standards/ | 公开标准 | 公开来源，待独立交叉核验 |
 
 **降级原则**：凡"未核实假设"的工程主张，其具体数字或性能暗示不作为本方案的技术承诺；若无法补证，将删除或维持"待验证"标注。
 

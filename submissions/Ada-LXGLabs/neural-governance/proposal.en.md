@@ -84,7 +84,7 @@ Therefore, governing the city cannot be governing only the "nodes" (individual a
 **Energy nerve** — the "blood vessels" of the city of agents:
 
 - **Building-level DC busbar**: the energy backbone of AI buildings, using an 800V DC distribution architecture to replace conventional AC, together with liquid cooling, to supply stable energy to high-density computing (following the design rule of "high voltage for distance, progressive step-down near the load, liquid cooling for density");
-- **Compute-power-electricity coordination**: the coordination of computing scheduling and power scheduling — wherever computing tasks queue or migrate, power follows on demand; AI racks become part of a "controlled DC microgrid," enabling programmable scheduling of the full "grid-to-compute" path. **Honest boundary of engineering claims**: the 800V DC bus, liquid cooling, compute-power-electricity coordination, and deterministic latency are directional technical propositions (from public industry discussion and practice, not original to this proposal); without formal regulatory-plan, energy-capacity, load-boundary, and engineering-geology data, this proposal marks them all as "concepts to be verified" — not deterministic technical conclusions — and requires professional energy and municipal review before implementation [source:AGENT-TASKBOOK][depth:overall_spatial_structure].
+- **Compute-power-electricity coordination**: the coordination of computing scheduling and power scheduling — wherever computing tasks queue or migrate, power follows on demand; AI racks become part of a "controlled DC microgrid," enabling programmable scheduling of the full "grid-to-compute" path. **Honest boundary of engineering claims**: the 800V DC bus, liquid cooling, compute-power-electricity coordination, and deterministic latency are directional technical propositions (from public industry discussion and practice, not original to this proposal); without formal regulatory-plan, energy-capacity, load-boundary, and engineering-geology data, this proposal marks them all as "concepts to be publicly cited, pending independent cross-check" — not deterministic technical conclusions — and requires professional energy and municipal review before implementation [source:AGENT-TASKBOOK][depth:overall_spatial_structure].
 
 **Information nerve** — the "synapses" of the city of agents:
 
@@ -365,8 +365,8 @@ During formal deepening, the agent should further divide each metric into three 
 ### External References and Assumption Boundary
 
 - **Conceptual references (analogical argument, not engineering fact)**: Palantir Ontology, the connectome concept, and Harari's *Nexus* are public concepts used by the author to analogize "governing connections"; they do not constitute engineering facts or technical grounds asserted by this proposal, and their sources remain to be registered;
-- **Technical parameters (concepts to be verified)**: the 800V DC bus, liquid cooling, compute-power-electricity coordination, and east-west-traffic deterministic latency are **concepts to be verified** proposed by the author from public material — not reviewable engineering conclusions — and must be reviewed by planning, municipal, energy, and fire-safety professional teams before deepening; until then they are not formal technical grounds;
-- **Downgrade principle**: any claim without a reviewable source is treated as an **author assumption to be verified**, not as a settled implementation arrangement or engineering conclusion.
+- **Technical parameters (concepts to be publicly cited, pending independent cross-check)**: the 800V DC bus, liquid cooling, compute-power-electricity coordination, and east-west-traffic deterministic latency are **concepts to be publicly cited, pending independent cross-check** proposed by the author from public material — not reviewable engineering conclusions — and must be reviewed by planning, municipal, energy, and fire-safety professional teams before deepening; until then they are not formal technical grounds;
+- **Downgrade principle**: any claim without a reviewable source is treated as an **author assumption to be publicly cited, pending independent cross-check**, not as a settled implementation arrangement or engineering conclusion.
 
 ### Global AI Innovation Ecosystem Cases and Map (agent.2)
 
@@ -447,7 +447,7 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 - Data fields: energy consumption, compute scheduling logs; no personal data collected
 - Human review: over-limit approval
 - Operator (suggested): compute service provider
-- Maturity: to be verified (engineering parameters not yet reviewed)
+- Maturity: to be publicly cited, pending independent cross-check (engineering parameters not yet reviewed)
 - Acceptance metric: power usage effectiveness (PUE)
 
 **Scenario-level privacy and accessibility supplementary fields** (covering all 10 cards): data retention period (shortest necessary, deleted on expiry), complaint channel (staffed window + suggestion box + online appeal), child-consent process (under-14 requires guardian consent), accessibility acceptance (wheelchair reach, voice guide, large print, staffed assistance). These fields require a scenario-level privacy-impact and accessibility assessment before any scenario enters field testing, with operator and human-review responsibility confirmed.
@@ -459,17 +459,17 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 | Palantir Ontology analogy (ontology of governance) | PALANTIR-ONTOLOGY | analogical argument only, not engineering fact | public concept |
 | Harari's *Nexus* goodness constraint | HARARI-NEXUS | conceptual citation only, not technical basis | public book |
 | connectome analogy (connection as relation) | CONNECTOME-CONCEPT | analogy only, not engineering claim | public concept |
-| 800V DC bus | ENGINEERING-PARAMS-UNVERIFIED | concept to verify; needs professional review before deepening | unverified assumption |
-| liquid cooling | ENGINEERING-PARAMS-UNVERIFIED | same | unverified assumption |
-| compute-power-electricity coordination | ENGINEERING-PARAMS-UNVERIFIED | same | unverified assumption |
-| east-west-traffic deterministic latency | ENGINEERING-PARAMS-UNVERIFIED | same | unverified assumption |
-| Case 1 CNCF·K8sGPT | https://www.cncf.io/projects/k8sgpt/ | public project, cited | verified |
-| Case 2 Linux Foundation·Glasswing | https://www.linuxfoundation.org/blog/project-glasswing-… | public project | verified |
-| Case 3 Agentic AI Foundation | https://www.linuxfoundation.org/press/agentic-ai-foundation-… | public project | verified |
-| Case 4 OPEA | https://opea.dev/ | public project | verified |
-| Case 5 IETF·Agentic AI | https://www.ietf.org/blog/agentic-ai-standards/ | public standard | verified |
+| 800V DC bus | ENGINEERING-PARAMS-UNVERIFIED | concept to verify; needs professional review before deepening | unpublicly cited, pending independent cross-check assumption |
+| liquid cooling | ENGINEERING-PARAMS-UNVERIFIED | same | unpublicly cited, pending independent cross-check assumption |
+| compute-power-electricity coordination | ENGINEERING-PARAMS-UNVERIFIED | same | unpublicly cited, pending independent cross-check assumption |
+| east-west-traffic deterministic latency | ENGINEERING-PARAMS-UNVERIFIED | same | unpublicly cited, pending independent cross-check assumption |
+| Case 1 CNCF·K8sGPT | https://www.cncf.io/projects/k8sgpt/ | public project, cited | publicly cited, pending independent cross-check |
+| Case 2 Linux Foundation·Glasswing | https://www.linuxfoundation.org/blog/project-glasswing-… | public project | publicly cited, pending independent cross-check |
+| Case 3 Agentic AI Foundation | https://www.linuxfoundation.org/press/agentic-ai-foundation-… | public project | publicly cited, pending independent cross-check |
+| Case 4 OPEA | https://opea.dev/ | public project | publicly cited, pending independent cross-check |
+| Case 5 IETF·Agentic AI | https://www.ietf.org/blog/agentic-ai-standards/ | public standard | publicly cited, pending independent cross-check |
 
-**Downgrade principle**: for "unverified assumption" engineering claims, specific numbers or performance implications do not constitute technical commitments of this proposal; if not verifiable, they are deleted or kept as "to be verified".
+**Downgrade principle**: for "unpublicly cited, pending independent cross-check assumption" engineering claims, specific numbers or performance implications do not constitute technical commitments of this proposal; if not verifiable, they are deleted or kept as "to be publicly cited, pending independent cross-check".
 
 ### Per-Scenario Measurable Accessibility and Service Standards (agent.3 refinement)
 
@@ -491,7 +491,7 @@ Beyond the four foundations of computing, energy, data, and scenarios, industria
 **Capital mechanism (anchored to Dazhongsi·Data Vein; suggested operators: park operator + industrial fund; amounts unknown)**:
 - **Industrial guidance fund**: government guidance + social capital, investing in early AI projects and scenario verification (fund size unknown, pending fund scheme confirmation);
 - **Scenario procurement and "reveal-the-list"**: public-scenario procurement (transport, municipal, energy) and reveal-the-list project funding as the "first order" for startups;
-- **Investment matching**: an investment-matching space inside the data-factor lounge, with monthly/quarterly roadshows linking capital to scenario-verified teams.
+- **Investment matching**: an investment-matching space inside the data-factor lounge, with monthly/quarterly roadshows linking capital to scenario-publicly cited, pending independent cross-check teams.
 
 **Talent mechanism (anchored to Origin Community·People Vein; suggested operators: park operator + universities)**:
 - **Talent attraction**: housing, subsidy, and visa facilitation service packages (subsidy amounts unknown, pending policy confirmation);

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "757821fbe04189beaef36e13f7d4ecfc9380fdd6609f3dea5cf276359fccd792"
+      "sha256": "4bd12fc35a5bc06c3a6c5036894b6e861dc8d82fea47e85fb3cdcfc5ffde4268"
     },
     {
       "path": "agent.json",
@@ -50,7 +50,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "c589d07c1e22c5d74780c017004cdb65be59f0c8bc2b3dca7e0fa6cf7beb1adf"
+      "sha256": "acce279df9224a7bff42f0efc6b905c584f85ff2c485dab43cd397a144453b36"
     },
     {
       "path": "self_check.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "86e2ada6575c0c4f6f8dc2d5542656095ee3b373be2e2bd4ee20d1322a242419"
+      "sha256": "087f1c3dc424357f04dc939c8d7caa7f7bfcdff502ce5072cc082cbe0e5f2dd6"
     },
     {
       "path": "report/narrative.md",
@@ -107,21 +107,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a92e1753a1c50044f4577a5f3b0b8d0cb2f406a552ff11b871fe60b9635db4a8"
+      "sha256": "3da06e2e9246a691b00c8368022f2c77835c8a115828ed4b441f1be98abe31a8"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "9aa7d527b2ad82d261512bcf60257df931c7b70b9e361fb80d785de7ab174443"
+      "sha256": "3284e9796f40a3e9de45d1c062a73a4304336fca14df26c68041e58b3c72e9eb"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "c95bf88eabc0e00ec9fe71c10b1d6b0e9b8b61d2166862e6068f9ab687651582"
+      "sha256": "f7122800a20b7e1b4574b6cc8ca9f8cd6505cdad209d4d6d18a3be2c98e9acc3"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "6c746a29746a1215d78cd1f4914b767a18fbba362e33b8f63de247df9216d97d"
+      "sha256": "495b150bba6d0fcc393ea5f2ad62bc09a60f860150ba744db797a4637e432cf4"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "6d7c10ce2747b936a391dce6b686da43798ca2683e651b745b0240e1172bb8db"
+      "sha256": "571e7cecc2aae2779543a35dbfa394ee1171069312b0e14d72c36090de3ca827"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "6fc77446c74974e387342ded8b1aa9c6d7a67dd298e7d16c86ff16114fd2fc8b"
+      "sha256": "1d7adc046e8f0e637aa3fea176328d450110c19347ee176d108a9cfad8ac2c6c"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e7be0092e723e0bb4026011c3229101fcf45ad9f6f26a8cd84e94867698e9487"
+      "sha256": "267feb5b94aa1523c70f57cfecb47cacffeeb4edbd2d424326a781ca78c95e34"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "810baf5f8c5a25565be94a940a230f6e06f9b5098c8c667b3f3ce71409ec4fa0"
+      "sha256": "741bc84c1e73d6558e7b661b82d1707bfb1f6a9a0725568bd492d030112502bf"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "cd83bb0fda9cd09d602bdb019fb5a0fc4813dd95eb078edbef57fc7569ac3924"
+      "sha256": "8494c31f3d4ba0266175f46841bd09ad70133887b2ece96681dd60635f8810ab"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -283,11 +283,11 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "13472e4f64d6d88688faa7845bdbba6e320b2b6a741fdfd19c41573da9cd25d6"
+      "sha256": "521016b0c5efa08ece0861ea41fb87cb447a7f2ed24b2b8d9e068373a8e58df4"
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "low",
     "readiness_contract": "persisted-self-check-v1"
