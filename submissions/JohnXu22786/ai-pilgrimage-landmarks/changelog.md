@@ -1,5 +1,20 @@
 # 方案迭代记录
 
+## v0.4.0 - 2026-08-25
+
+Round-5 repair (CocoSgt CHANGES_REQUESTED 86.0 -> pending re-review):
+
+- 图件修复（P0 表达完整度）：基于 round-4 生成器重画全部 13 张 PNG 与 8 份 A3/A0 PDF，逐一消除叠字与裁切（程序化文本包围盒 QC：全部 6 类图件中英文 0 叠压、0 出边）。
+  - assets/figures/key-areas.png(.en)：标题改为独立行、provisional 严格执行全幅横条（zh+en 两行不叠压）、警示条独立置于片名之上；三区子图按各自范围缩放取景并隐藏坐标刻度/网格；片区标题折行减小宽度置于图内顶部；地标改为「单星 + L1–L4 编号徽标」（两座同坐标地标 L1/L4 合并徽标，不再原地叠字）；比例尺按视窗宽缩放并置于左上、与底部面积注记错开；地标面板改为 2×2（字号按 150dpi 折算，中文≤26 字/行、英文≤40 字/行折行，无面板内叠字）。英文版除双语文案戳记外为纯英文标签。
+  - assets/figures/metrics-evidence.png(.en)：底部警告条下移至轴标签之下（不再遮挡横轴标签）；计数子图改为横向条形图（类别名置于 y 轴，彻底消除相邻 x 轴标签互叠与横轴裁切）；率与计数仍分轴独立刻度；低置信度徽标保持在柱内、provisional 警示邻近数据且不覆盖数据。
+  - assets/figures/site-overview.png(.en)：修正两座同坐标地标（京张零公里坐标碑与轨道日晷）标签叠字，合并为同一气泡双行标注。
+  - drawings/a3-booklet.pdf(.en)：封面重排，主标题（en 3 行/zh 2 行，字号与位置拉开）与副标题清晰分离（实测无 z 向叠压、无顶部裁切）；内容页为对应中英 PNG 逐页嵌入。
+  - drawings/a0-boards.pdf(.en)：首版大标题降字号并下移、副标题/戳记同步调整，A0 首页标题不再顶边裁切，标题/副标题/戳记/三图区互不重叠；内容页嵌入修复后的中英图件。
+- HTML 与字体：visual/index.en.html 全部 14 个章节小标题汉译英（总览地图→Overview map、三层范围→Three-level scope…），proposal.en.md 摘要中「中英实质等值已人工核对」改为英文表述，四座地标中文俗名与「三区两翼」等二维码改为引号内双语注记（符合 en 纯度规则）；render_proposal_html.py 重新渲染 proposal.html/.en.html 后，embed_fonts.py 重嵌 4 页 NotoSansSC-Static 子集字体并 check_font_coverage 全过（0 missing CJK）。
+- 一致性：manifest.json 42 项哈希刷新并保持 language/translation_of 双语登记不变；未改动 metrics.json/agent.json。
+- 评分与门禁：score_rubric 100.0/100（reviewer_gaps 空、无拒绝）；四门禁（deterministic/spatial/visual/professional）全部 PASS（KEY_AREA_PROVISIONAL 为已知 minor 提示）；validate_local_submission PASS。
+- 人工核对声明：中英实质等值已人工核对（key-areas/metrics-evidence/site-overview 中英图件由同一代码、同一几何与指标、成对中英文案生成，实质等值）；品牌在先权利官方检索未完成前仍按内部工作代号处理（NAME-CLEAR-01/NAME-SEARCH-01；可实施性/风险维度证据文字已复核：成本定性分级、容量/装备寿命/声光限值为低置信度待实测或待校核候选值、带置信等级与复算触发）；图表 ink 与剪裁检查：全部 6 类图件中英文 ink 均达标（图≥0.08、表≥0.10），文本包围盒 QC 0 叠压、0 出边（edge-strip ink≈0），A3 封面与 A0 版式经文字包围盒与栅格校验无叠字无裁切。
+
 ## v0.3.0 - 2026-08-25
 
 Round-4 repair (CocoSgt CHANGES_REQUESTED 84.0 -> pending re-review):
