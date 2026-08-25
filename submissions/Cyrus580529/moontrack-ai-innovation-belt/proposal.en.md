@@ -14,7 +14,7 @@ scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-ser
 
 # MoonTrack — Overall Concept and Scenario Enablement Proposal for the Centennial Jing-Zhang AI Innovation Belt
 
-## Design basis and source inventory
+## Design Basis and Source List
 
 This formal proposal takes as its primary basis the Prequalification Announcement for the International Open Call for Urban Design of the Centennial Jing-Zhang AI Innovation Belt, issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources. Its machine-readable basis is the maintainer-registered provisional coarse boundary, key areas, enumerations, metrics and source inventory in `brief/site-package/`. This proposal was prepared from those machine-readable files: scope and tasks from `design_brief.json` and `agent_task_requirements.csv`, permitted use of material from `source_use_matrix.csv`, and the gap list from `missing_data_checklist.csv`. Every design judgement is broken into four things — a traceable source, a recomputable metric, a checkable layer and a human-reviewable assumption — so each figure in the text can be followed back to its original material. The announcement requires urban-design depth equivalent to Regulatory Detailed Planning and to an Integrated Planning Implementation Plan, so narrative text cannot substitute for GeoJSON, metric tables, the A3 booklet, the A0 boards and the HTML presentation.
 
@@ -34,7 +34,7 @@ Where the official `SITE_BOUNDARY` [source:BOUNDARY-SOURCE] or the three `KEY_AR
 
 Boundary interpretation returns to the overall scope layer and its area recomputation [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm]. The three key areas are cross-checked against an independent layer and a count metric [data:geometry/key_areas.geojson#PROV-KEY-001] [metric:key_area_count]. A reader can therefore enter the evidence from the narrative without first reading a string of machine identifiers.
 
-## Three-tier working framework
+## Three-Level Scope Framework
 
 The proposal organises its work along the three tiers set by the announcement. The Coordinated Research Area covers 43.6 sq km and addresses the AI industrial ecosystem, strategic positioning, the innovation chain and future urban form. The Overall Design Area covers 11.4 sq km of urban districts and industrial areas within one to two kilometres of the Jing-Zhang Railway Heritage Park, and calls for an urban-renewal framework, industrial spatial layout, mobility and municipal support, and Urban Character control. The Key-Area Detailed Design Area covers 368.4 ha across three detailed-design districts, and calls for defined programme, building scale, Demolish–Renovate–Retain classification, public-space connectivity and traffic organisation. All three tiers are mapped item by item in `compliance_matrix.json` so that announcement clauses 1.3, 1.4 and 1.5 and each mandatory agent.1–agent.6 task carry section, layer, metric, drawing and HTML evidence.
 
@@ -138,7 +138,7 @@ That yields a transferable sequencing rule: **phase by terminal distance, not by
 
 Neither method needs non-public data: the inputs are a public road network, public POIs and one public regulation, so any team can repeat the exercise on its own corridor. The implementations are `analysis_policy.py` and `analysis_service.py`, with an independent recomputation in `visual/assets/verify-network.js`.
 
-## Coordinated Research Area: industry and future-city research
+## Coordinated Research Area: Industry and Future City Research
 
 The MoonTrack naming and visual-identity direction is what carries overall recognisability across the three official positionings — the Centennial Jing-Zhang Cultural Belt, the Urban AI Life Experience Belt and the AI Convergence Innovation Belt. The Urban AI Life Experience Belt carries the greatest weight here, because the flagship scenario (Xiaoyue River robotics plus accessibility and elderly-care services) is its concrete landing, matched to Haidian's real demographic structure of 671,000 residents aged 60 and over, 21.47% of the permanent population [source:haidian-2024-statistical-bulletin]. The other two positionings support rather than sit alongside it: the Centennial Jing-Zhang Cultural Belt rests on the specific engineering fact of the Guangou switchback, while the AI Convergence Innovation Belt shares its logical structure with the railway's self-reliant construction history. The visual direction is a water-and-track overprint — the organic curve of the Xiaoyue River laid over the straight grid of rails and AI networks, with a blue-green gradient resolving to moon-white — combined with an abstracted switchback motif. The naming grammar uses "Platform X" (月台X) as a second-level brand prefix, as in Platform Forum and Platform Developer Night, and does not rename the official Three Zones and Two Wings. It should be noted that the requirement to address the five functions and the coordination of the Three Zones and Two Wings comes from the agent-facing open call [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK], not from statutory planning control.
 
@@ -195,7 +195,9 @@ All of the following are conceptual suggestions for further study by professiona
 
 The full mapping of these mechanisms to spatial landings and industrial roles is held in `compliance_matrix.json`; this section keeps only the most direct basis [source:AGENT-TASKBOOK] [source:case-station-f] [depth:overall_spatial_structure].
 
-## Overall Design Area: urban renewal and urban design at regulatory depth
+## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
+
+**The mechanism this section applies.** Without official regulatory conditions, this proposal gives no land-use class or intensity figures and delivers instead a **recomputable screening rule set**: whatever can be computed from measured geometry (built density, land-use composition, the density differences between key areas) is given straight, and whatever depends on unpublished data (retain-renovate-demolish classification, development intensity, building height) is explicitly not attempted, with the reason stated. That rule - compute what is computable, mark what is not - shares its source with the two methods set out earlier, right-of-way pricing and terminal-first: draw the computable boundary first, then give conclusions inside it.
 
 First, what depth this section can honestly reach. The core of regulatory depth — land-use designation, Development Intensity, building height — depends on official regulatory conditions and cadastral records, and neither has been released. But "no official conditions" is not the same as "nothing can be measured". Present built conditions can be measured, and the measurements themselves confirm or overturn several key judgements. What follows is the measured part; what cannot be done is stated separately at the end of the section rather than blended in.
 
@@ -230,7 +232,7 @@ It should also be said that "low-efficiency" here is a data-tagging category, no
 
 **What this section cannot do.** Integrated carrying-capacity assessment, total building scale and Development Intensity zoning cannot be prepared in this round. The reason is not time but data, and the measured coverage rates behind that statement are given in the next section. The corresponding depth items are disclosed machine-readably through the `completeness_limited_by` field in `design_depth_matrix.json`, rather than being glossed over in prose as "to be developed" [depth:land_use_layout] [depth:development_intensity_controls].
 
-## Key-area detailed design
+## Detailed Design of Key Areas
 
 The three key areas are not weighted equally, and the basis for that is the measured density gap reported in the previous section. Zhongzhiyuan's present building coverage is 10.89 per cent, roughly half that of the other two, so its spatial strategy is led by added capacity. The Origin Community is at 20.83 per cent, which leaves only stock renewal and functional replacement. Dazhongsi is at 18.22 per cent, and a substantial share of it is taken by Beijing North railway station, an operating rail facility of 106,598 m², so the spatial actions there concentrate on station integration and ground-level connectivity rather than land reorganisation.
 
@@ -244,7 +246,7 @@ The three also differ in what their delivery depends on, and that matters more t
 | Beijing AI Origin Community | Campus-adjacent translation and talent community | Stitch campus, park and district walking and cycling links; fill gaps in results publication, talent services, housing and open-source collaboration space | Open-source community, results publication, talent-zone services, campus-adjacent incubation | [data:geometry/key_areas.geojson#PROV-KEY-002], [source:AGENT-TASKBOOK] |
 | Dazhongsi AI Industry Cluster | Urban intelligent-economy and international exchange district | Organise around Dazhongsi station integration, four-quadrant pedestrian links, commercial services and public-realm renewal near key enterprises | Agent and smart-terminal display, content consumption, data factors and international roadshows | [data:geometry/key_areas.geojson#PROV-KEY-003], [metric:key_area_count] |
 
-## AI innovation ecosystem, user personas and AI-Enabled Scenarios
+## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 The flagship depth of this section is the Xiaoyue River Scenario Enablement Wing: low-speed delivery and inspection robots combined with accessibility and elderly-care services, with the remaining nodes covering the breadth of the belt. The spatial evidence for the first group of six cards rests on verified layers — the Xiaoyue River watercourse [data:geometry/green_space.geojson#xiaoyuehe-seg-00], the 42 cycleway segments within 300 m of the river [data:geometry/roads.geojson#cycleway-22771899] and elderly-care facility POIs [data:geometry/public_space.geojson#elderly-poi-00] — not indicative layers drawn from nothing. The agent taskbook requires at least ten AI scenario cards, at least three industrial Testing and Validation Scenarios and at least five user personas; the content below answers each in turn.
 
@@ -365,7 +367,7 @@ This section maps each of the six agent tasks to its figure, drawing and HTML ev
 
 The five figures share this package's `geometry/*.geojson` as their base, with colour following the MoonTrack visual direction (water-and-track overprint: a blue-green gradient resolving to moon-white, overlaid with the switchback motif). Every provisional boundary in a figure must be explicitly marked as a provisional constraint and must never appear as a solid red line, to avoid being read as an official redline [data:geometry/constraints.geojson#CONSTRAINTS].
 
-## Land use, building scale and Demolish–Renovate–Retain
+## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 This section has three parts: measured existing land use, why Demolish–Renovate–Retain cannot be settled in this round, and what can still be delivered given that it cannot.
 
@@ -421,7 +423,7 @@ A conclusion is out of reach; a method is not. The pre-screening proposed here r
 
 The output of these three rules is a field survey task list, not a Demolish–Renovate–Retain list. The rules are stated here so that a professional team holding official data can recompute them directly rather than redesigning the screening logic. Heritage-listed and historic buildings are excluded from this screening entirely and handled under separate conservation procedure [depth:retain_renovate_demolish] [depth:height_massing_character].
 
-## Mobility, rail, utilities and public service facilities
+## Transport, Rail, Municipal Infrastructure, and Public Services
 
 Mobility and municipal depth are governed by [depth:traffic_rail_slow_parking] and [depth:municipal_new_infrastructure] respectively; layer evidence cites [data:geometry/roads.geojson#ROAD-001], [data:geometry/public_space.geojson#PUBLIC-001] and [data:geometry/constraints.geojson#CONSTRAINTS]. Where road redlines, utilities, fire and municipal conditions are missing, the gap should be recorded through assumptions rather than by writing strategy as approved conditions.
 
@@ -724,7 +726,7 @@ It does not claim any specific segment is passable - that needs field verificati
 
 The computation is `analysis_index.py` [source:moontrack-machine-accessibility], taking this package's GeoJSON and the public OSM footway network [source:osm-footways-walking-network] as input; any team can recompute it on its own corridor.
 
-## Blue-Green Space, public space and Urban Character
+## Blue-Green Network, Public Space, and Urban Character
 
 Blue-green public space is cross-checked by the design depth item together with the green-space and public-space layers [depth:blue_green_public_space] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]. The narrative explains the design meaning of the green-space and public-space ratios while the full recomputation lives in `metrics.json`; the coordination of Urban Character, public space and building control returns to the professional standard matrix [standard:MOHURD-URBAN-DESIGN-MEASURES].
 
@@ -859,7 +861,7 @@ The conversion path is designed in four ascending stages: **observe → particip
 
 The specific policy instruments, incentives and settlement procedures at each stage fall within government authority. This proposal offers only the structure of the path and makes no policy commitment or funding recommendation.
 
-## Renewal project list, implementation policy and phasing
+## Renewal Projects, Implementation Policy, and Phasing
 
 Project list and phasing depth are governed by [depth:renewal_project_list] and [depth:phasing_implementation], with phasing spatial evidence at [data:geometry/phasing.geojson#phase1-gap-1]. Every item on the list is missing at least one of ownership, funding, delivery body or approval route, so all are registered as implementation risks and none is written as a delivery commitment.
 
@@ -890,7 +892,19 @@ Phase boundaries are not drawn freehand; each is derived from geometry already i
 
 This must be kept apart from the open-call period: the 100 days are a deadline for submitting work, while the three phases above are a delivery path for urban renewal. Only phase 1 can start without waiting on official regulatory, utility and ownership conditions; the other two must wait.
 
-## Metric system, area recomputation and compliance matrix
+**What each phase is accepted against.** The three phases above say what to do but not how anyone would know a phase succeeded. Without an acceptance basis, progress later gets judged by the wording of reports. This proposal gives each phase an **acceptance indicator and a current baseline** - note that it gives baselines and definitions only, and **no target values**: a target is a commitment, and the targets for this belt belong to public discussion, not to one submission.
+
+| Phase | Horizon | Start condition | Acceptance indicator | Baseline (measured in this package) | Who decides |
+| --- | --- | --- | --- | --- | --- |
+| **Phase 1** field verification of three gaps | **Near term** | Waits on no official regulatory, utility or tenure data - the only phase that can begin immediately | (1) whether each break is real; (2) component count; (3) machine accessibility | 62 components [metric:cycleway_components_count]; machine accessibility 0.69% [metric:machine_accessibility_rate]; elderly reachable 0 of 5 [metric:elderly_facilities_network_reachable] | District transport authority with accessibility specialists on site; a break found unreal is struck from the list |
+| **Phase 2** renewal of three key areas | **Medium term** | Official regulatory conditions and tenure data in place (an administrative timing, not one this proposal schedules) | (1) land-use and building-scale recomputation; (2) public space and green ratios | Green ratio 12.3% [metric:green_ratio]; public space 7.3% [metric:public_space_ratio] | Planning authority, recomputed against the official boundary |
+| **Phase 3** Xiaoyue River influence band | **Long term** | Phases 1 and 2 hold, and utility data is published | (1) median terminal distance; (2) servable elderly facilities; (3) 15-minute reachable network | Median terminal 249.6 m; 0 facilities servable; 20,341 m [metric:network_15min_if_footways_allowed_m] | Local sub-district office with the operator, with resident feedback sought publicly |
+
+All three bases recompute from scripts in this package: `analysis_network.py` for component count, `analysis_index.py` for machine accessibility, `analysis_policy.py` for terminal distance and reachable network. **That means after every field check, every closed link and every rule change, acceptance does not need a new definition - it needs one re-run.**
+
+Phase 1 is the only one with the character of a pilot: it verifies first and decides on construction second, and a break found unreal is simply struck out. That matches the reversibility principle - a pilot's cost should sit in the judgement, not in something already built.
+
+## Metrics, Area Recalculation, and Compliance Matrix
 
 The metric system should cover at least the Overall Design Area area, key-area areas, green-space and public-space ratios, building footprint, renewal project count, AI scenario nodes, walking and cycling connectivity indicators, industrial space indicators, talent service indicators and self-check status. Every known metric must be recomputable from GeoJSON or a trusted source; every unknown metric must state a reason and the precondition for formal submission. The outputs of `scripts/spatial_review.py` and `scripts/visual_review.py` are important evidence for the formal self-check.
 
@@ -908,7 +922,7 @@ The gap metrics [metric:gap_closure_length_m] and [metric:gap_closure_unlocked_n
 
 The compliance matrix is the master file for task responsiveness. Every announcement task and agent taskbook task must map to a report section, layer, metric, drawing, HTML page, source, assumption and self-check item. A proposal that fails to cover announcement clauses 1.3, 1.4 or 1.5, or any mandatory agent.1–agent.6 task, must not enter formal professional scoring.
 
-## Risk, copyright and compliance statement
+## Risk, Copyright, and Compliance
 
 **Bilingual delivery is required.** The main proposal file may be in Chinese or English, but a complete parallel translation must be provided through `proposal.en.md` or `proposal.zh.md`; the A3/A0 sheets, HTML and any text-bearing figures must also have corresponding language copies, and the recommended renderings in `docs/terminology-glossary.md` take priority. A v2 package missing any required translation, language mapping or valid file will be blocked by finalize and CI. Every image, drawing, icon, dataset and code asset must have its source, licence and authorisation status stated in `sources.json` or `report/copyright_statement.md`. HTML pages must not load remote scripts, remote map tiles, remote fonts, iframes, forms or external APIs, and must not track reviewer behaviour.
 

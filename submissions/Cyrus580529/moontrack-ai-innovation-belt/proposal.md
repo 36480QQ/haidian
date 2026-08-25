@@ -197,6 +197,8 @@ scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-ser
 
 ## 总体设计范围城市更新与控规深度城市设计
 
+**这一节应用的机制。**在缺官方控规条件的前提下，本方案不给用地性质与强度数字，改为交付一套**可复算的筛查规则**：凡是能从实测几何算出来的（建成密度、用地构成、重点区域密度差）如实给出，凡是依赖未公开资料的（拆改留分类、开发强度、建筑高度）明确不做并说明原因。这套「能算的算、算不出的标明」的规则，与前面「路权定价」和「末端优先」两个方法同源：都是先把可计算的边界划清楚，再在边界内给结论。
+
 先说清这一节能做到什么深度。控规深度的核心内容——用地性质、开发强度、建筑高度——依赖官方控规条件与地籍资料，两者都未发布。但"没有官方条件"不等于"什么都算不出来"。现状建成情况是可以实测的，而实测结果本身就能推翻或支持几个关键判断。以下是实测部分；做不到的部分放在本节末尾单独交代，不混在一起。
 
 **建成密度实测。**建筑基底轮廓取自 OpenStreetMap [source:osm-buildings-footprints]，总体设计范围内完整落地的共 1,562 栋 [metric:building_count_design_scope]，基底总面积 191.8 万平方米 [metric:building_footprint_area_sqm]，建筑密度 16.81% [metric:building_coverage_ratio]。跨边界的建筑一律不收——把一栋建筑按边界切开，得到的形状不再是建筑，宁可让数字偏小。
@@ -890,6 +892,18 @@ JZ-07 是清单里最小也最靠前的一项。实测显示合计 56 米的三�
 
 需要与征集周期区分开：100 天是提交成果的时间要求，上面三期是城市更新的推进路径，两者不是同一条时间线。三期之中只有一期可以在不等待官方控规、市政与权属条件的情况下启动，另外两期都必须等条件到位。
 
+**每一期靠什么验收。**上面三期说清了做什么，但没说"怎么算做成了"。分期如果没有验收口径，推进到后面就只能靠汇报措辞判断。本方案给出每期的**验收指标与现状基线**——注意只给基线和口径，**不给目标值**：目标值意味着承诺，而这条带的目标应当由公共讨论决定，不由一份投稿设定。
+
+| 期 | 时序 | 启动条件 | 验收指标 | 现状基线（本包实测） | 由谁判定 |
+| --- | --- | --- | --- | --- | --- |
+| **一期** 三处缺口现场核验 | **近期** | 无须等待官方控规、市政或权属资料，是三期中唯一可立即启动的 | ① 三处断点真伪的现场判定结论；② 连通分量数；③ 机器可达率 | 62 个分量 [metric:cycleway_components_count]；机器可达率 0.69% [metric:machine_accessibility_rate]；适老网络可达 0/5 [metric:elderly_facilities_network_reachable] | 区交通主管部门会同无障碍专业团队现场判定；核验为假即销项 |
+| **二期** 三处重点区域更新 | **中期** | 官方控规条件与权属资料到位（行政流程决定时点，不由本方案排期） | ① 用地与建筑规模复算；② 公共空间与绿地比例 | 绿地率 12.3% [metric:green_ratio]；公共空间比例 7.3% [metric:public_space_ratio] | 规划主管部门按官方边界重算后判定 |
+| **三期** 小月河影响带 | **远期** | 前两期结论成立 + 市政资料公开 | ① 末端距离中位数；② 可服务适老机构数；③ 15 分钟可达网络里程 | 末端中位 249.6 米；可服务 0 家；20,341 米 [metric:network_15min_if_footways_allowed_m] | 属地街道会同运营方判定，并公开征询居民反馈 |
+
+三条口径都可以用包内脚本重算：`analysis_network.py` 出分量数，`analysis_index.py` 出机器可达率，`analysis_policy.py` 出末端与可达网络。**这意味着每一次现场核验、每一段补建、每一次规则调整之后，验收不必重新设计口径，重跑一次即可。**
+
+一期是唯一带试点性质的一期：它先做核验、再决定要不要做工程，核验为假直接销项。这与"可撤回"原则一致——试点的成本应当集中在"判断"上，而不是集中在"已经建好的东西"上。
+
 ## 指标体系、面积复算与合规矩阵
 
 指标体系至少应包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标必须给出原因和正式提交前置条件。`scripts/spatial_review.py` 和 `scripts/visual_review.py` 的结果是 formal 自检的重要证据。
@@ -924,9 +938,10 @@ JZ-07 是清单里最小也最靠前的一项。实测显示合计 56 米的三�
 - brief/site-package/enums/
 - brief/site-package/ranges/planning_limits.json
 - data/processed/agent_fact_pack.md
-- data/processed/project_scope_summary.csv
-- data/processed/agent_task_requirements.csv
-- data/processed/source_use_matrix.csv
-- data/processed/missing_data_checklist.csv
+- data/processed/project_scope_summary.csv（仓库公开处理资料，用于范围结构导航）
+- data/processed/agent_task_requirements.csv（仓库公开处理资料，用于任务清单核对）
+- data/processed/source_use_matrix.csv（仓库公开处理资料，用于来源用途分层）
+- data/processed/missing_data_checklist.csv（仓库公开处理资料，用于资料缺口登记）
+- 以上处理资料由仓库维护者公开发布，不替代原始来源；本方案实际使用的每一项来源完整登记在 `sources.json` [source:PROCESSED-FACT-PACK]
 - 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`
 - 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]
