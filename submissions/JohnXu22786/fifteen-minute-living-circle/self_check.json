@@ -82,7 +82,7 @@
    "ai_package_stages": {
     "submissions/JohnXu22786/fifteen-minute-living-circle": "formal"
    },
-   "total_bytes": 13267429,
+   "total_bytes": 15216529,
    "maintainer_bypass": false
   },
   "stderr": ""
@@ -232,22 +232,46 @@
   "summary": "ink+edge-clip machine check only; text-overlap not machine-verified post-hoc (figure generation text-bbox checks recorded in changelog)",
   "figures": {
    "key-areas.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1360"
+    "width": 2100,
+    "height": 1350,
+    "ink": 0.4233,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "land-use-structure.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1210"
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.1441,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "logo-live-jz.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1210"
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.1804,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "metrics-evidence.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1210"
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.1275,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "mobility-bluegreen.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1360"
+    "width": 2100,
+    "height": 1350,
+    "ink": 0.0848,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "site-overview.png": {
-    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 20 and the array at index 1 has size 1360"
+    "width": 2100,
+    "height": 1350,
+    "ink": 0.0884,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    }
   }
  }

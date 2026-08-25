@@ -7,7 +7,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "LIVE·JZ (Fifteen-Minute Living Loop) is a concept proposal for a fifteen-minute convenience life circle along the Centennial Jing-Zhang AI Innovation Belt: one hub (community service hub), one station (neighborhood micro-service station) and one hall (community living room) organise a three-node service network; six resident personas, 12 AI scenario cards and 3 industry test-and-validate scenarios all sit on anonymised aggregation, human review and non-AI equivalent channels; eight global AI-ecosystem cases are used for mechanism comparison only; cross-regional interfaces cover Beiwai Community, Future Science City, Huairou Science City, the Economic-Technological Development Area and the Beijing-Tianjin-Hebei region as concepts only. All content is conceptual advice, not a substitute for formal planning; the three formal core metrics are recomputed from provisional geometry and must be recalculated when official data is published."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.0"
+iteration: "v3.0"
 ---
 
 > **LIVE·JZ: make the AI Innovation Belt a living lab for a better everyday life.**
@@ -250,6 +250,17 @@ Three industry test-and-validate scenarios (concept) all start as shadow trials 
 
 The fairness review checklist (concept): differential-service check, minority-coverage check, non-AI-equivalent-channel availability check, human-review reachability check. Findings are not legal compliance certification; formal implementation still requires professional review.
 
+### AI technical protocols (concept thresholds, to be calibrated by pilots)
+
+To keep AI assistance measurable and removable, this proposal pre-registers four technical-protocol directions. All thresholds below are concept baselines; they are formally fixed only after pilot measurement and annual evaluation, and do not constitute a technical specification:
+
+1. **Model evaluation**: candidate models must first pass offline evaluation on public benchmark test sets and small task-scenario samples, and the results are published together with human-review consistency. A high offline-evaluation score does not waive pre-publication human review, avoiding any impression that "a high score means automatic go-live".
+2. **Data quality**: training and evaluation data must meet minimum data-quality baselines (concept thresholds: field-completeness rate no lower than 90%, annotation-consistency rate no lower than 90%, de-identification re-check pass rate 100%). Data failing any baseline may not enter a pilot; data-quality check results are published with the annual evaluation.
+3. **Error stratification**: before launch and during operation, error rates and false-positive rates are stratified by user group, time period, location and device type, with specific attention to older residents, deaf/hard-of-hearing and low-vision users and non-smart-device users. Systematic bias triggers the fairness review and a stop-use evaluation; overall accuracy is never the sole acceptance criterion.
+4. **Runtime monitoring**: during pilots, runtime indicators such as false-positive rate, rejection rate, human-correction rate and complaint rate are continuously monitored against concept baselines. If any runtime indicator continuously exceeds its threshold, or any individual-identification event occurs, the process immediately escalates to human review, suspension or removal (stop and removal conditions follow the stop/exit mechanism in the "Renewal Projects, Implementation Policy, and Phasing" chapter).
+
+Together with the T1-T3 acceptance indicators, exit thresholds and the fairness review, these protocols form the "measurable and removable" technical loop. All of it is conceptual; formal thresholds must be jointly reviewed by the sub-district office, the operator, an independent evaluator and resident representatives.
+
 ### Developer community and open scenario operation
 
 Developer community (concept): a "LIVE·JZ Co-creation Programme" organises developers from local firms and universities around the 12 cards — quarterly hackathons, plug-in tool co-building and shared open-source components; developer outputs enter the scenario pilot candidate library after human review. Open scenario operation (concept): pilots run the five-step loop "apply - review - pilot - evaluate - keep/modify/remove"; the review committee includes sub-district staff, the operator, an independent evaluator and resident representatives. Pilot status is visible throughout (physical markers plus an online list): residents can always see whether a scenario is in trial, who supplies it, how to give feedback and how it exits.
@@ -360,7 +371,7 @@ Every project and scenario has stop and exit conditions (concept): pilots stop i
 
 ### Three formal core metrics and recalculation
 
-The three formal core visual metrics required by the taskbook — site_area_sqm, green_ratio, public_space_ratio — must be finite known values recomputable from the submitted geometry. This package states honestly: official overall boundaries are not published, so the package uses traceable provisional geometry in EPSG:4548 and publishes low-confidence concept values (site_area_sqm approx. 11412825, green_ratio approx. 0.129, public_space_ratio approx. 0.0045), marked provisional, with source and formula published alongside the geometry files. These values are not statutory areas; **recalculation and replacement are mandatory when official geometry and data are published**, and visual/index.html declares data-values consistent with the geometry recomputation. Indicators that depend on unpublished official control conditions (FAR, height, etc.) remain "unknown pending official data" with reasons, never placeholder values for the three core metrics.
+The three formal core visual metrics required by the taskbook — site_area_sqm, green_ratio, public_space_ratio — must be finite known values recomputable from the submitted geometry. This package states honestly: official overall boundaries are not published, so the package uses traceable provisional geometry in EPSG:4548 and publishes low-confidence concept values (site_area_sqm approx. 11.4 km2, green_ratio approx. 12.9%, public_space_ratio approx. 0.5%; exact values in metrics.json and visual/index.html), marked provisional, with source and formula published alongside the geometry files. These values are not statutory areas; **recalculation and replacement are mandatory when official geometry and data are published**, and visual/index.html declares data-values consistent with the geometry recomputation. Indicators that depend on unpublished official control conditions (FAR, height, etc.) remain "unknown pending official data" with reasons, never placeholder values for the three core metrics.
 
 ![Core metrics evidence](assets/figures/metrics-evidence.en.png)
 
