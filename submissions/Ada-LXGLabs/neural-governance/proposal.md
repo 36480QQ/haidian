@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以「连接即神经、治理即治理神经」为核心命题的城市智能体治理方案：将官方六环节协作机制（公开资料读取、方案推演、公众反馈、人工复核、风险提示、城市治理知识库）落成一套可复算、可追溯、可回流的治理框架，以连接为城市智能体的本体与治理对象。"
+summary: "以「连接即神经 [source:MARK-TURNER-BLENDING]、治理即治理神经」为核心命题的城市智能体治理方案：将官方六环节协作机制（公开资料读取、方案推演、公众反馈、人工复核、风险提示、城市治理知识库）落成一套可复算、可追溯、可回流的治理框架，以连接为城市智能体的本体与治理对象。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -479,6 +479,7 @@ agent 生成的AI治理建议必须遵守数据最小化、公开来源、可解
 | 案例3 Agentic AI Foundation | https://www.linuxfoundation.org/press/agentic-ai-foundation-… | 公开项目 | 公开来源，待独立交叉核验 |
 | 案例4 OPEA | https://opea.dev/ | 公开项目 | 公开来源，待独立交叉核验 |
 | 案例5 IETF·Agentic AI |
+| 连接即神经 / 治理即治理连接 | MARK-TURNER-BLENDING | Mark Turner 概念整合理论（blending），思想源头 | 已核实（《心智与语言十讲》2009）|
 | 多智能体城市/城市智能体 | GENERATIVE-AGENTS-2023 | 学术论文（Smallville 25 智能体社区），学术依据 | 已核实（arXiv:2304.03442）|
 | 东西向流量 | NOKIA-MBIT-INDEX | Nokia 全球网络流量报告，数据依据 | 已核实（nokia.com/asset/213660）|
 | 为 Agent 造 X | MIT-BUILD-X-FOR-AGENT | MIT Sloan《谁将拥有 AI Agent 经济》，学术/分析依据 | 已核实（mitsloan.mit.edu）|

@@ -468,6 +468,7 @@ The core cultural resource of the Jing-Zhang Intelligence Vein Belt is the centu
 | Case 3 Agentic AI Foundation | https://www.linuxfoundation.org/press/agentic-ai-foundation-… | public project | publicly cited, pending independent cross-check |
 | Case 4 OPEA | https://opea.dev/ | public project | publicly cited, pending independent cross-check |
 | Case 5 IETF·Agentic AI |
+| Connection is nerve / governance is governing connections | MARK-TURNER-BLENDING | Mark Turner conceptual blending, intellectual source | verified (Ten Lectures on Mind and Language, 2009) |
 | Multi-agent city / civic agents | GENERATIVE-AGENTS-2023 | academic paper (Smallville 25-agent community), academic basis | verified (arXiv:2304.03442) |
 | East-west traffic | NOKIA-MBIT-INDEX | Nokia Global network traffic report, data basis | verified (nokia.com/asset/213660) |
 | Build X for agents | MIT-BUILD-X-FOR-AGENT | MIT Sloan 'Who will own the AI agent economy?', academic basis | verified (mitsloan.mit.edu) |
