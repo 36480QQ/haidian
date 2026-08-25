@@ -487,6 +487,32 @@ It shares no code with the Python implementation that produced the figures (shap
 
 The land-use, building and area findings have a companion, `visual/assets/verify-geometry.js`, used the same way; it additionally checks the three commitments this land-use layer makes — full coverage, zero overlap, and declared areas consistent with the geometry.
 
+### A test that cuts against us: are these pieces real?
+
+The most reasonable challenge to "broken into 62 components" is that OpenStreetMap is incomplete - omit a few segments and components appear out of nothing. How do we know the fragmentation is real?
+
+That challenge cannot be answered with care; it can only be answered with a number: **how many metres would it take to merge all 62 pieces into one network.** A minimum spanning tree over the 62-component complete graph gives 61 connections totalling **6,669 m** [metric:network_wholeness_connection_m], which is **4.69%** of the measured cycleway length [metric:network_wholeness_share_of_length].
+
+The distribution says more than the total:
+
+| Connection length | Count | Total |
+| --- | --- | --- |
+| **Under 20 m** | **18** [metric:component_gaps_under_20m] | **253 m** |
+| 20-50 m | 12 | 394 m |
+| 50-100 m | 11 | 827 m |
+| 100-300 m | 13 | 2,221 m |
+| **300 m and over** | **7** [metric:component_gaps_over_300m] | **2,974 m** |
+
+**Half of that helps our case and half of it does not, and both halves have to be said.**
+
+**The half that does not: 18 gaps are under 20 m and total only 253 m.** A break of under twenty metres is the characteristic signature of mapping omission - one unmapped stretch, one junction link not drawn, and a component splits off out of nothing. **The figure of 62 must therefore be read as an upper bound on real fragmentation**, and every conclusion derived from it inherits that bound, including the 0.69% machine accessibility rate. This is registered as A-WHL-002, not buried in a footnote.
+
+**The half that helps: 7 gaps exceed 300 m and total 2,974 m.** A break of over three hundred metres cannot be mapping noise; that is genuine separation. The skeleton of the fragmentation is real, and only its edges are ragged.
+
+**What is worth taking into a meeting is the two figures side by side: making this network geometrically whole takes 4.69% of its length, while its current usability is a machine accessibility rate of 0.69%.** Geometrically it is close to whole; functionally it is nowhere near usable. That gap is where this proposal's whole argument comes from, and it explains the sequence it recommends - rule first, links second: **the 30 gaps under 50 m total 647 m and are cheaper than any works on the list, but they only produce value once the rule permits a device to travel at all.**
+
+It has to be said that 6,669 m is a **lower bound**: it measures straight-line nearest-point distance between components, avoiding no building, watercourse or title, and following no usable alignment. Closing any gap in reality costs more than its straight-line figure, and some will be judged infeasible on site (A-WHL-001). Equally, the 596 m given earlier is a 2-approximation of a Steiner tree whose candidate pool was the five facility components plus the eighteen largest rather than all 62, so it is an upper bound twice over (A-SVC-006). The argument rests on its order of magnitude against the 1,841 m of terminal gap, not on its being exactly optimal.
+
 ### From diagnosis to remedy: what it actually takes to make the flagship work
 
 ![The Xiaoyue River co-mobility corridor - phase one](assets/figures/scene-xiaoyuehe-corridor.en.png)

@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "1d12e5f581ec5e75e77ddd827610181c60ea701c307a7c8d435d7ab8057f2528"
+      "sha256": "32857a3fd88eec26c305d9e54f10a4c12150aaa4170eb5cd4352f30a44212051"
     },
     {
       "path": "agent.json",
@@ -38,7 +38,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "e410d13704bce66865c88f40f70c1a1a6d9ff3db4d49a0d0243541a0e302885f"
+      "sha256": "65da2fa0a9d2aabf37e7190f12470dd761be9908e4871baf2a55263d89d35a3b"
     },
     {
       "path": "simulation.json",
@@ -50,7 +50,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "2ccd30663154e6803e300d7c77bf742cb317dc52e2631e4b26802a039b10d00f"
+      "sha256": "1aa057890d9b1f4bd031a76048ad47fed572ab6d05f9237910c6d4f142d4513a"
     },
     {
       "path": "sources.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "17a4f3ad1073d55c51a5b2deba0bc9cb3b523c058e6e9b7b5057a3bfed13d422"
+      "sha256": "10f6260c6937129b5c8e4541b8dc4c05d92c3332886d8f8613283a1d1edfef3a"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e5420c840218b94f92d6303e33e7ae19329755cfe76bc7f9c1ba41216bc3fc04"
+      "sha256": "f1ee69149f6c319863980cfafc6ee9c339bfb6615f60e0df2871424244bbc5d7"
     },
     {
       "path": "report/narrative.md",
@@ -238,7 +238,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4b0a4013a8cbe00669540ad80f88660c920fb33f17762d4910b7be45e10219a7"
+      "sha256": "1ee29970123e3ede444387d39418627520c9a37844833c00147d7cfefe0184ed"
     },
     {
       "path": "report/proposal.en.html",
@@ -246,7 +246,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2d20a6131f2329c2c940344478d33e6360d5db657ca09d2de6e1994e5d026d82"
+      "sha256": "da70fe9062d7fc3583a05749efdca5c7a59c42ec85d0754e32331840e8468645"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",

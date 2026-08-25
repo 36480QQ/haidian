@@ -228,6 +228,24 @@
       "status": "measured_and_disclosed",
       "statement": "Attachment rate and accessibility rate measure different things: attachment is local (can this door reach the network at all), accessibility is global (can two doors reach each other).",
       "impact": "Reporting only the accessibility rate would overstate the severity, and reporting only attachment would hide it. At a 150 m cap 23.2% of destinations attach, yet only 0.69% of pairs are mutually reachable - the gap between the two numbers is the fragmentation itself."
+    },
+    {
+      "id": "A-WHL-001",
+      "status": "measured_and_disclosed",
+      "statement": "The cost of making the whole network connected is a minimum spanning tree over all 62 components, with edge weight the nearest-point distance between two components' node sets.",
+      "impact": "It is a lower bound on real construction: it ignores buildings, watercourses, tenure and the requirement to follow a usable alignment. Real closure of any single gap will cost more than the straight-line figure, and some gaps will prove impossible."
+    },
+    {
+      "id": "A-WHL-002",
+      "status": "measured_and_disclosed",
+      "statement": "Eighteen of the 61 connections are shorter than 20 m and total only 253 m.",
+      "impact": "Gaps that short are the characteristic signature of OpenStreetMap omission rather than physical separation. The component count of 62 must therefore be read as an upper bound on real fragmentation, and every conclusion derived from it inherits that bound. Seven connections of 300 m or more, totalling 2,974 m, are by contrast too long to be mapping artefacts."
+    },
+    {
+      "id": "A-SVC-006",
+      "status": "assumed_and_flagged",
+      "statement": "The 596 m minimum connection set is a 2-approximation (metric closure plus MST over the component graph), and the candidate pool was restricted to the five facility components plus the eighteen largest components rather than all 62.",
+      "impact": "596 m is therefore an upper bound on the optimal connection cost twice over - once from the approximation ratio and once from the restricted search. The true optimum is at most 596 m and may be less; no conclusion in this proposal depends on it being exact, since the argument is about order of magnitude against the terminal cost of 1,841 m."
     }
   ]
 }

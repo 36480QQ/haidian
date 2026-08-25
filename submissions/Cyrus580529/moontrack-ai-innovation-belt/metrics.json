@@ -750,6 +750,59 @@
         "A-IDX-001: pair-based rate over 1,619 real destinations; a pair counts as reachable only if both terminal gaps are within the cap and both sit in the same connected component. No origin is assumed, so the figure does not move with depot siting.",
         "A-SIM-005: OSM footway mapping here is fragmented, so this is a lower bound and its component structure is a data-quality artefact."
       ]
+    },
+    "network_wholeness_connection_m": {
+      "status": "known",
+      "value": 6668.7,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum of MST edge weights over the 62-component complete graph, edge weight = nearest-point distance between components",
+      "confidence": "medium",
+      "assumptions": [
+        "A-WHL-001: minimum spanning connection over all 62 components, using each component's node set and nearest-point distance between components. It is a lower bound on real construction: it ignores buildings, watercourses, tenure and any requirement to follow an alignment."
+      ]
+    },
+    "network_wholeness_share_of_length": {
+      "status": "known",
+      "value": 0.046915,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "network_wholeness_connection_m / total measured cycleway length",
+      "confidence": "medium",
+      "assumptions": [
+        "A-WHL-001: minimum spanning connection over all 62 components, using each component's node set and nearest-point distance between components. It is a lower bound on real construction: it ignores buildings, watercourses, tenure and any requirement to follow an alignment."
+      ]
+    },
+    "component_gaps_under_20m": {
+      "status": "known",
+      "value": 18,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count of MST connections shorter than 20 m",
+      "confidence": "medium",
+      "assumptions": [
+        "A-WHL-001: minimum spanning connection over all 62 components, using each component's node set and nearest-point distance between components. It is a lower bound on real construction: it ignores buildings, watercourses, tenure and any requirement to follow an alignment.",
+        "A-WHL-002: gaps this short are the characteristic signature of mapping omission rather than physical separation, and are the main reason the component count must be treated as an upper bound."
+      ]
+    },
+    "component_gaps_over_300m": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count of MST connections of 300 m or more",
+      "confidence": "medium",
+      "assumptions": [
+        "A-WHL-001: minimum spanning connection over all 62 components, using each component's node set and nearest-point distance between components. It is a lower bound on real construction: it ignores buildings, watercourses, tenure and any requirement to follow an alignment."
+      ]
     }
   }
 }
