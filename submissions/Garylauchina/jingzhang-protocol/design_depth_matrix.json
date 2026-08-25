@@ -594,7 +594,10 @@
         "fp01_contract_clause_coverage_ratio",
         "fp01_concrete_service_problem_count",
         "fp01_receipt_event_type_coverage_ratio",
-        "fp01_spatial_prototype_scale_count"
+        "fp01_spatial_prototype_scale_count",
+        "key_area_interface_prototype_count",
+        "fp01_d0_measurement_method_coverage_ratio",
+        "fp01_hold_point_raci_coverage_ratio"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -617,7 +620,8 @@
         "A-SCENARIO-LOCATION-001",
         "A-OPERATIONS-001",
         "A-GEOMETRY-CROSSCHECK-001",
-        "A-FP01-CONCRETE-PROTOTYPE-001"
+        "A-FP01-CONCRETE-PROTOTYPE-001",
+        "A-FP01-DELIVERY-CONTROL-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -625,10 +629,13 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "众智园、原点社区和大钟寺分别承载STACK/PROVE、SOURCE/ENABLE/PROVE、LIVE & MARKET并共同接入COMMONS；五旗舰落实场景与空间证据，可信运行层提供次级责任接口。complete只指概念深化齐套；三片区分别落入制票、验票、回程街室及对应旅程和返还节点，机器引用完整但选址仍为概念建议；五个旗舰将三区角色细化为12场景的一次性分组、90日试验和一年评估，不把规划建议冒充已批准项目；三片区以六角色网络协同，既有三段仅作为稳定底盘索引，锚点均为临时概念点而非分区边界。 V0.10补充FP01一项明确服务任务、1:500/1:100/1:50概念原型及成功、拒绝、人工接管、退出恢复四类回执；三尺度均待测绘，基线和结果保持未知。",
+      "evidence_summary_zh": "众智园、原点社区和大钟寺分别承载STACK/PROVE、SOURCE/ENABLE/PROVE、LIVE & MARKET并共同接入COMMONS；五旗舰落实场景与空间证据，可信运行层提供次级责任接口。complete只指概念深化齐套；三片区分别落入制票、验票、回程街室及对应旅程和返还节点，机器引用完整但选址仍为概念建议；五个旗舰将三区角色细化为12场景的一次性分组、90日试验和一年评估，不把规划建议冒充已批准项目；三片区以六角色网络协同，既有三段仅作为稳定底盘索引，锚点均为临时概念点而非分区边界。V0.12新增三片区概念界面原型、六项D0测量方法及H0-H4角色级RACI；尺寸只用于设计测试，实际测绘、实名主体、签署与结果继续为空。",
       "evidence_files": [
         "visual/assets/fp01-contract.json",
-        "assets/figures/fp01-spatial-prototype.png"
+        "assets/figures/fp01-spatial-prototype.png",
+        "visual/assets/fp01-delivery-control.json",
+        "visual/assets/verify-fp01-delivery-control.js",
+        "assets/figures/technical-delivery-sheet.png"
       ]
     },
     {
@@ -670,7 +677,8 @@
         "flagship_pilot_count",
         "flagship_published_standard_output_count",
         "flagship_scenario_bundle_coverage_ratio",
-        "flagship_verified_public_benefit_count"
+        "flagship_verified_public_benefit_count",
+        "fp01_design_test_boq_item_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -686,7 +694,8 @@
         "A-FLAGSHIP-FP02",
         "A-FLAGSHIP-FP03",
         "A-FLAGSHIP-FP04",
-        "A-FLAGSHIP-FP05"
+        "A-FLAGSHIP-FP05",
+        "A-FP01-DELIVERY-CONTROL-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -694,7 +703,12 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "正文六项更新包分别挂接建筑、公共空间、慢行、绿色或场景图层；实施主体、投资和审批依赖仍由假设清单约束；更新项目运营门槛新增三处能力返还台和Return Ticket引用，不将其写成已批准项目或已交付结果；FP01至FP05分别引用JZ-01至JZ-06的相应更新包，引用表示协同入口而非立项、资金或采购承诺。"
+      "evidence_summary_zh": "正文六项更新包分别挂接建筑、公共空间、慢行、绿色或场景图层；实施主体、投资和审批依赖仍由假设清单约束；更新项目运营门槛新增三处能力返还台和Return Ticket引用，不将其写成已批准项目或已交付结果；FP01至FP05分别引用JZ-01至JZ-06的相应更新包，引用表示协同入口而非立项、资金或采购承诺。V0.12给出M01-M06单套设计测试数量与成本计算结构；实际数量、单价、金额、资金来源和采购批准全部保持为空。",
+      "evidence_files": [
+        "visual/assets/fp01-delivery-control.json",
+        "visual/assets/verify-fp01-delivery-control.js",
+        "assets/figures/technical-delivery-sheet.png"
+      ]
     },
     {
       "item_id": "phasing_implementation",
@@ -749,7 +763,11 @@
         "reversible_public_space_component_count",
         "landmark_component_mapping_coverage_ratio",
         "honor_contribution_class_count",
-        "delivery_hold_point_coverage_ratio"
+        "delivery_hold_point_coverage_ratio",
+        "fp01_d0_measurement_method_coverage_ratio",
+        "fp01_hold_point_raci_coverage_ratio",
+        "fp01_design_test_boq_item_count",
+        "fp01_critical_dependency_step_count"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -769,7 +787,9 @@
         "A-FLAGSHIP-FP05",
         "A-FP01-CONCRETE-PROTOTYPE-001",
         "A-BRAND-COMPONENT-001",
-        "A-DELIVERY-READINESS-001"
+        "A-DELIVERY-READINESS-001",
+        "A-FP01-EVIDENCE-READINESS-001",
+        "A-FP01-DELIVERY-CONTROL-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -777,13 +797,18 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "三期依赖包在拓扑和面积上齐套，且每个场景唯一落入一期；西侧知识、中部绿脊接口、东侧日常服务的名称与几何顺序一致；Return Ticket与依赖包关系可追溯，但三期继续表达证据门槛而非政府工期或投资承诺；旗舰试点以90日证据门和一年指标接入PHASE-001至003依赖序列，任何失败、暂停或退出记录均须保留。 V0.10补充FP01一项明确服务任务、1:500/1:100/1:50概念原型及成功、拒绝、人工接管、退出恢复四类回执；三尺度均待测绘，基线和结果保持未知。V0.10.1以H0-H4补齐从问题基线、载体责任、数据安全、独立补救到授权退出的责任与证据停止门；测绘、实名主体、预算采购、D0、市政消防交通及结果未知时不得把品牌、地标或组件结构写成实施进度。",
+      "evidence_summary_zh": "三期依赖包在拓扑和面积上齐套，且每个场景唯一落入一期；西侧知识、中部绿脊接口、东侧日常服务的名称与几何顺序一致；Return Ticket与依赖包关系可追溯，但三期继续表达证据门槛而非政府工期或投资承诺；旗舰试点以90日证据门和一年指标接入PHASE-001至003依赖序列，任何失败、暂停或退出记录均须保留。V0.12把六项D0测量方法、H0-H4角色级RACI、M01-M06单套设计测试清单和K01-K10关键依赖接入同一交付控制链；日期、实名主体、预算采购、专业审查和授权结果均为空，不得写成实施进度。",
       "evidence_files": [
         "visual/assets/fp01-contract.json",
         "assets/figures/fp01-spatial-prototype.png",
         "visual/assets/brand-component-architecture.json",
         "visual/assets/verify-brand-component-architecture.js",
-        "assets/figures/brand-component-architecture.png"
+        "assets/figures/brand-component-architecture.png",
+        "visual/assets/fp01-evidence-readiness.json",
+        "visual/assets/verify-fp01-evidence-readiness.js",
+        "visual/assets/fp01-delivery-control.json",
+        "visual/assets/verify-fp01-delivery-control.js",
+        "assets/figures/technical-delivery-sheet.png"
       ]
     },
     {
@@ -843,7 +868,12 @@
         "network_role_count",
         "fp01_first_use_delivery_contract_template_count",
         "fp01_100_day_gate_coverage_ratio",
-        "fp01_contract_clause_coverage_ratio"
+        "fp01_contract_clause_coverage_ratio",
+        "key_area_interface_prototype_count",
+        "fp01_d0_measurement_method_coverage_ratio",
+        "fp01_hold_point_raci_coverage_ratio",
+        "fp01_design_test_boq_item_count",
+        "fp01_critical_dependency_step_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -865,7 +895,8 @@
         "A-SCENARIO-LOCATION-001",
         "A-OPERATIONS-001",
         "A-NATIONAL-STRATEGIC-FRAMING-001",
-        "A-APPLICATION-CAPABILITY-REPLICATION-001"
+        "A-APPLICATION-CAPABILITY-REPLICATION-001",
+        "A-FP01-DELIVERY-CONTROL-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -873,7 +904,12 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "所有可由GeoJSON计算的核心指标已在EPSG:4548复算并逐项比对；公告约值与临时几何值保持不同字段；可信运行层的六项注册表指标从feature_kind和双向引用复算，12个应用场景与嵌套公共空间口径保持稳定且不取代六节点主结构；四项known指标只证明五试点、12场景、完整实施字段和五门登记齐全，四项结果指标保持unknown；network_role_count=6与network_role_anchor_count=6均直接由network_role_anchor=true的最终几何唯一锚点复算。application_capability_stage_count=6与mapping_coverage_ratio=1.0只从假设登记的六项转化能力及非空映射复算；横贯式可信运行层不计作第七阶段或第七空间节点。"
+      "evidence_summary_zh": "所有可由GeoJSON计算的核心指标已在EPSG:4548复算并逐项比对；公告约值与临时几何值保持不同字段；可信运行层的六项注册表指标从feature_kind和双向引用复算，12个应用场景与嵌套公共空间口径保持稳定且不取代六节点主结构；四项known指标只证明五试点、12场景、完整实施字段和五门登记齐全，四项结果指标保持unknown；network_role_count=6与network_role_anchor_count=6均直接由network_role_anchor=true的最终几何唯一锚点复算。application_capability_stage_count=6与mapping_coverage_ratio=1.0只从假设登记的六项转化能力及非空映射复算；横贯式可信运行层不计作第七阶段或第七空间节点。V0.12新增五项交付控制结构指标，只计算三片区界面、D0方法、RACI、单套设计测试清单与关键依赖的登记完整性，不代表现场、预算或实施证据。",
+      "evidence_files": [
+        "visual/assets/fp01-delivery-control.json",
+        "visual/assets/verify-fp01-delivery-control.js",
+        "assets/figures/technical-delivery-sheet.png"
+      ]
     },
     {
       "item_id": "risk_missing_data",
@@ -925,10 +961,19 @@
         "flagship_scenario_bundle_coverage_ratio",
         "flagship_verified_public_benefit_count",
         "application_capability_stage_count",
-        "application_capability_mapping_coverage_ratio",
-        "fp01_concrete_service_problem_count",
-        "fp01_receipt_event_type_coverage_ratio",
-        "fp01_spatial_prototype_scale_count"
+      "application_capability_mapping_coverage_ratio",
+      "fp01_concrete_service_problem_count",
+      "fp01_receipt_event_type_coverage_ratio",
+      "fp01_spatial_prototype_scale_count",
+      "fp01_evidence_gate_count",
+      "fp01_evidence_gate_definition_coverage_ratio",
+      "fp01_evidence_verified_gate_count",
+      "fp01_external_evidence_artifact_verified_count",
+      "key_area_interface_prototype_count",
+      "fp01_d0_measurement_method_coverage_ratio",
+      "fp01_hold_point_raci_coverage_ratio",
+      "fp01_design_test_boq_item_count",
+      "fp01_critical_dependency_step_count"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -963,9 +1008,11 @@
         "A-SCENARIO-LOCATION-001",
         "A-TRANSPORT-001",
         "A-GEOMETRY-CROSSCHECK-001",
-        "A-NATIONAL-STRATEGIC-FRAMING-001",
-        "A-APPLICATION-CAPABILITY-REPLICATION-001",
-        "A-FP01-CONCRETE-PROTOTYPE-001"
+      "A-NATIONAL-STRATEGIC-FRAMING-001",
+      "A-APPLICATION-CAPABILITY-REPLICATION-001",
+      "A-FP01-CONCRETE-PROTOTYPE-001",
+      "A-FP01-EVIDENCE-READINESS-001",
+      "A-FP01-DELIVERY-CONTROL-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -973,10 +1020,17 @@
         "SPATIAL_REVIEW",
         "VISUAL_PACKAGING"
       ],
-      "evidence_summary_zh": "边界、重点区、控规、现状建筑、交通、文保、运营和设计指标八类假设均有影响说明；图纸、双语与正式包状态均纳入阻断级自检；新增协议原型假设明确区分引用完整性与真实运营成效，后者仍需测绘、运营协议、参与式测试和个案记录；五份A-FLAGSHIP假设逐项声明角色、资金、采购、空间、数据和成果未确认，并列出替换概念记录的触发条件。V0.9新增战略立意和复制边界假设，明确政策对齐不等于国家试点或采纳，结构完整不等于采购、外部采用、标准发布、公共收益或全球领先。 V0.10补充FP01一项明确服务任务、1:500/1:100/1:50概念原型及成功、拒绝、人工接管、退出恢复四类回执；三尺度均待测绘，基线和结果保持未知。",
-      "evidence_files": [
-        "visual/assets/fp01-contract.json",
-        "assets/figures/fp01-spatial-prototype.png"
+    "evidence_summary_zh": "边界、重点区、控规、现状建筑、交通、文保、运营和设计指标八类假设均有影响说明；图纸、双语与正式包状态均纳入阻断级自检；协议原型假设明确区分引用完整性与真实运营成效，后者仍需测绘、运营协议、参与式测试和个案记录；五份A-FLAGSHIP假设逐项声明角色、资金、采购、空间、数据和成果未确认，并列出替换概念记录的触发条件。V0.12补充三片区概念界面、六项D0方法、H0-H4角色级RACI、M01-M06单套测试清单和K01-K10关键依赖；结构登记可核验，但外部核验门和附件仍为0。现场、主体、预算、单价金额、专业审查、演练、授权和结果仍待真实外部材料。",
+    "evidence_files": [
+      "visual/assets/fp01-contract.json",
+      "assets/figures/fp01-spatial-prototype.png",
+      "visual/assets/fp01-evidence-readiness.json",
+      "visual/assets/verify-fp01-evidence-readiness.js",
+      "report/narrative.md",
+      "assets/figures/evidence-readiness.png",
+      "visual/assets/fp01-delivery-control.json",
+      "visual/assets/verify-fp01-delivery-control.js",
+      "assets/figures/technical-delivery-sheet.png"
       ]
     }
   ]

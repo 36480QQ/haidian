@@ -1,5 +1,24 @@
 # 方案迭代记录
 
+## v0.12 - 2026-08-25
+
+- Targeted the only credible remaining 96-to-100 review gap—implementation feasibility—without changing the stable title **京张，再次开路 / JING-ZHANG BREAKS NEW GROUND** or inventing external endorsement.
+- Added `fp01-delivery-control.json` and a standard-library verifier to connect three key-area concept interfaces, six D0 measurement methods, H0-H4 role-class RACI, one-kit M01-M06 design-test quantities and a K01-K10 critical-dependency path.
+- Added five structure-only metrics: three key-area interface prototypes, complete D0-method coverage, complete hold-point RACI coverage, six design-test BoQ items and ten dependency steps. These values measure register completeness, not site readiness, budget approval, implementation progress or achieved outcomes.
+- Reframed the readiness statement as **5/5 evidence gates defined and 0/5 externally verified**, so a reviewer can distinguish a complete verification method from evidence that has not yet been obtained.
+- Added a paired technical-delivery sheet and rebuilt the bilingual A3/A0 package around site interface, measurement, responsibility, cost structure and dependency controls; all visible analytical-figure version marks now read V0.12 while preserving the provisional spatial-base lineage.
+- Kept actual surveyed dimensions, quantities, unit costs, amounts, funding source, procurement route, named parties, signatures, dates, sample records, professional reviews, controlled rehearsals, authorizations and operating results explicitly null or pending until genuine attributable evidence exists.
+
+## v0.11 - 2026-08-25
+
+- Recast the package as an **Evidence Edition / 实证版** without changing the stable title **京张，再次开路 / JING-ZHANG BREAKS NEW GROUND**.
+- Reordered the human-review path to overall Jing-Zhang spatial framework first, then the three key areas and five flagships, followed by FP01's one-person/one-task/one-contract prototype and the H0-H4 evidence gates.
+- Replaced the former person-task lead graphic named `site-overview` with a genuine overall spatial overview of the provisional SITE/KEY framework, the official textual Three Areas and Two Wings basis, the Jing-Zhang public-evidence spine, three key areas, five concept flagships and six conversion capabilities. No coordinate or statutory claim is upgraded.
+- Added `fp01-evidence-readiness.json`, a standard-library verifier and a human-fillable annex. The register defines required artifacts, accountable roles, independent review, stop actions and transitions for H0-H4 while keeping every external-evidence field null or pending.
+- Added four honest register metrics: five gate definitions, complete definition coverage, zero externally verified gates and zero verified external evidence artifacts. The two zeros describe current evidence availability, not performance or failure rates.
+- Added a paired H0-H4 readiness figure and rebuilt the bilingual A3/A0 sequence so board 1 explains overall spatial structure, board 2 explains the key areas and landmarks, and board 3 explains the FP01 contract, spatial prototype and evidence readiness.
+- Kept field baseline, surveyed carrier, named operators, budget, procurement route, professional checks, controlled rehearsal, authorization, operating outcomes and public benefit explicitly unresolved until genuine dated and attributable external evidence exists.
+
 ## v0.10 - 2026-08-24 to 2026-08-25
 
 - Added one bilingual, machine-checkable **master-brand and reversible public-space component architecture** in direct response to the post-repair review: one `JZ SWITCH MARK`, five endorsed flagship names, four proposed operating rhythms, five non-ranked and amendable contribution classes, three landmarks and six reusable components. None is represented as an adopted logo, confirmed event, awarded honour, selected site or installed work.
