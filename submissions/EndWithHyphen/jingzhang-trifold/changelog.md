@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v1.2.3 - 2026-08-25
+
+- 修复复审阻断项：英文 A0/A3 展板残留 "departed from here" 与 "densest AI cluster" 旧表述，改为与中文一致的"贯穿这条走廊"和"AI 浓度最高地区之一"；删除 "republic's first systematic" 表述。
+- 修复英文图件右缘裁切：gen_figures 新增文本实测防裁切护栏（自动缩字/折行/右对齐），缩短过长英文 callout；key-areas.en.png、land-use-structure.en.png 等 12 张图全部像素级右缘扫描通过。
+- A3/A0 四个 PDF 重出，metrics 交叉断言通过。
+
+
 ## v1.2.2 - 2026-08-25
 
 - 修复评审阻断项：CI 预览环境无 CJK 字体导致中文 HTML 缺字。四个 HTML（report 中英、visual 中英）内嵌 Noto Sans SC 子集字体（SIL OFL 1.1，2017 字形子集 357KB，base64 data URI，无远程资源）；字体来源与许可登记于 sources.json（NOTO-SANS-SC-FONT）与 report/copyright_statement.md。
