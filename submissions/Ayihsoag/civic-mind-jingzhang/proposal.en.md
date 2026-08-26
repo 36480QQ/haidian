@@ -63,11 +63,31 @@ The spatial framework is a governance spine, three functional layers, two feedba
 
 Zhongzhiyuan is the decision layer, with conceptual knowledge, simulation, compliance-support, and multi-agent spaces [data:geometry/key_areas.geojson#PROV-KEY-001]. Beijing AI Origin is the sensing/interaction layer with public review, accessible navigation, and co-creation [data:geometry/key_areas.geojson#PROV-KEY-002]. Dazhongsi is the industry-support layer with trusted data, scenario access, and legal-service referral [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design]. Buildings, bridges, and transport moves require professional development.
 
+Each key area is organised as a walkable service sequence rather than an isolated exhibition venue. A1 connects rule disclosure, controlled simulation, expert review, result explanation, appeal and exit. A2 connects the ordinary-service entrance, explanation and choice, AI-assisted service, Human Review, recovery space, challenge and exit. A3 connects demand catalogues, admission rules, purpose authorisation, isolated testing, compliance review, and safe exit or conditional transfer. These sequences use visible thresholds, status signs, staffed counters and non-digital routes so that responsibility can be read in the physical environment.
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 ![Six personas and six service journeys; bilingual visual summary](assets/figures/visual-six-personas.en.png)
 
 *Figure: service journeys for older residents, visually impaired people, founders, enterprise staff, researchers and visitors. The people shown are design personas, not real personal profiles.*
 Six design personas cover an older resident, young founder, enterprise data lead, university researcher, visitor, and visually impaired resident. They are design tools, not personal profiles [standard:BARRIER-FREE-ENVIRONMENT-LAW] [depth:blue_green_and_public_space]. Eleven readable cards cover sensing, policy simulation, multi-agent collaboration, governance knowledge, public review, scenario access, trusted data exchange, compliance support, civic navigation, community health, and legal-aid referral. Every scenario states data limits, accountable operations, Human Review, and exit conditions [data:geometry/scenario_nodes.geojson#SCN-01] [source:GENERATIVE-AI-MEASURES].
+
+### Common Scenario Operating Protocol
+
+All eleven scenarios follow one minimum public-responsibility protocol: **issue intake → triage → controlled test → Human Review → public release → correction or exit → knowledge update**. At each step the operator must identify the source and civic need, minimum necessary data, permitted agent action, accountable role, Human Review trigger, equivalent non-digital service, stop condition, and evidence receipt. A scenario with any missing item remains at concept or desktop-replay stage and cannot enter a live public-service pathway.
+
+| Stage | Continue only when | Stop, fallback and receipt |
+|---|---|---|
+| Issue intake | Source, affected users and civic necessity can be explained | Reject unclear or unnecessary uses and record the reason |
+| Triage | Purpose, retention, prohibited uses, risk tier and accountable role are confirmed | Route to existing human service when authority or purpose is unclear |
+| Controlled test | Isolation, evaluation, failure injection and exit resources are ready | Stop on unauthorised access, material bias or unexplainable output; revoke access |
+| Human Review | An authorised person independently examines the evidence version | Return to the existing workflow and record why an output was changed or rejected |
+| Public release | AI involvement, scope, owner and appeal route are accessible and legible | Do not scale when explanation or remedy is inaccessible |
+| Correction or exit | Remediation, deletion, revocation and recovery conditions are verified | Provide progress and a checkable receipt to affected users |
+| Knowledge update | Sources, editor, version, validity period and review date are complete | Retire disputed or expired content from future automated use |
+
+### Negative Tests and Corrective Drills
+
+Pilot acceptance should demonstrate safe failure, not only successful operation. Four proposed test families use public, synthetic or authorised de-identified data: unauthorised-access rejection; deliberate misclassification followed by human override; cross-agency responsibility conflict that must pause automation; and accessibility failure that must switch immediately to paper, telephone, staffed or other equivalent service. Each run records input, expected refusal or pause, accountable owner, human fallback, recovery condition and public-facing receipt. These are proposed methods, not field results.
 
 ![Eleven AI-plus-governance scenarios and track mapping; bilingual visual summary](assets/figures/visual-eleven-scenarios.en.png)
 
@@ -89,6 +109,8 @@ The conceptual Walking and Cycling Network links the three layers with transit i
 The Jing-Zhang Railway Heritage Park is the governance spine; Qinghe and Xiaoyue River links remain conceptual because official blue lines are unavailable [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:blue_green_and_public_space]. Three conceptual pilgrimage landmarks—Governance Loop, Sensing Eye, and Trust Bridge—explain accountability, sensing limits, and data permissions. The narrative moves “from connecting cities to connecting governance,” without fictional history or unlicensed portraits.
 
 ## Renewal Projects, Implementation Policy, and Phasing
+Within the initial 0–6 month phase, a reversible 12-week validation is proposed: weeks 1–2 lock the issue list, data boundary, accountable roles and ordinary-service baseline; weeks 3–4 run reproducible desktop replay; weeks 5–6 conduct isolated testing and failure injection; weeks 7–8 conduct limited public and accessibility walkthroughs; weeks 9–10 rehearse cross-agency coordination, appeal and recovery; and weeks 11–12 complete an independent stage review. Each window produces evidence and has a stop rule. Missing accountable ownership, failed access control, inaccessible non-digital service or an unresolved responsibility conflict prevents progression. Timing, participants, thresholds and public disclosure require formal authorisation and are not claimed as completed fieldwork.
+
 Conceptual phases are 0–6 month reversible pilots, 6–18 month controlled validation, and 18–36 month conditional scaling only after evidence, formal planning, and accountable owners are in place [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list] [depth:phasing_plan]. Proposed activities include a governance summit, compliance camp, scenario open day, public review assembly, multi-agent challenge, and open-source week. None is a confirmed government schedule.
 
 Implementation accountability should identify the lead, operator, approver, supervisor and exit authority for scenario admission, controlled testing, public service, stage evaluation and conditional scaling. Pilot metrics may cover audit-log completeness, Human Review, public-response closure and corrective-action completion; final definitions require approval by accountable bodies before a pilot starts.
@@ -97,6 +119,8 @@ Implementation accountability should identify the lead, operator, approver, supe
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 Geometry-derived design quantities are calculated in EPSG:4548; announced areas remain separate references. Statutory green and public-space controls remain unknown [metric:site_area_sqm] [metric:key_area_total_sqm] [depth:metrics_recomputation]. Eleven scenarios, six personas, and three landmarks describe proposal content, not implementation scale.
+
+The supervision interface is backed conceptually by three auditable ledgers rather than undefined “big data”: a **spatial ledger** for boundary versions, sources, recalculated areas, service nodes and provisional/official status; a **scenario ledger** for intake, minimum data, risk tier, accountable roles, human takeover, non-digital alternatives, pauses and correction receipts; and a **version ledger** for rule or knowledge versions, scope, change reasons, public challenges and retirement. Every dashboard value should resolve to a responsibility record; an untraceable value cannot justify pilot expansion.
 
 ![Metrics and evidence chain](assets/figures/metrics-evidence.en.png)
 
