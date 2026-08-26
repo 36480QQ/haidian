@@ -83,6 +83,18 @@
       "url": "https://fgw.beijing.gov.cn/fgwzwgk/ysqzzdgk/202409/t20240923_3902988.htm",
       "source_type": "official_public",
       "usage": "北京市发展和改革委员会《关于京张铁路遗址公共空间改造提升工程（二期）实施方案的批复》（京发改（审）〔2024〕609号，2024-09-23，受文单位海淀区发展和改革委员会，建设单位北京市海淀区园林绿化局，西直门至知春路段用地约23.08公顷）。用于佐证本方案更新项目①开源主线贯通工程南段与⑦滨水绿带连通已有市级立项批复与明确实施主体。批复不构成对本方案的认可，不提供红线或控制指标。"
+    },
+    {
+      "id": "SWITCHBACK-PROTOCOL",
+      "url": "https://github.com/open-city-ai/haidian/issues/1119",
+      "source_type": "community_open_spec",
+      "usage": "折返协议 Switchback Protocol v1.0（chucky1102/人字线 RENLINE，CC-BY-4.0，规范文本许可）。组件级采纳：为场景卡 6/11/12/13 建立机器可读运营合约（三色状态、数字化时限、90 天复审、折返留痕）；采用声明见 visual/assets/switchback-adoption.json。它是社区开放贡献的治理合约模板，不是官方标准，不代表任何机构背书。"
+    },
+    {
+      "id": "SEB-SPEC",
+      "url": "https://github.com/open-city-ai/haidian/issues/2549",
+      "source_type": "community_open_spec",
+      "usage": "服务等价基准 SEB v0.5.0（lqqk7/万感京张，CC BY-SA 4.0，条文与 schema 许可）。组件级采纳：仅节点 schema 组件（五项必填字段），为六座站厅服务节点声明 AI 关闭后等价路径；采用声明见 visual/assets/seb-adoption.json。它是社区开放贡献的判据集，不是官方标准，本包不认领任何 SEB 开放等级。"
     }
   ]
 }

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以百年京张铁路遗址廊道为城市主板，构建“一廊·六站·三区·两翼”的开源AI共同体：把9.7公里铁轨转化为开源步道主线，串联六个站厅级公共节点与三处重点区域，形成可复算、可验证、可供专业团队深化的概念性城市设计方案。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.2"
+iteration: "v1.3"
 ---
 
 # 开源轨道 OPEN RAIL：京张AI共同体城市设计方案
@@ -155,6 +155,15 @@ iteration: "v1.2"
 
 其中第 6、11、12 为 AI 产业测试验证场景（不少于 3 个），均须取得主管部门许可后方可实施，本方案不将其表述为已批准运营。场景—空间—运营映射：每张场景卡对应站厅或廊道节点（见 `geometry/public_space.geojson`）、明确的数据边界与运营主体，场景开放机制接入第六节长期运营体系 [source:AGENT-TASKBOOK]。
 
+### 场景治理合约与社区开放标准（概念建议）
+
+本方案组件级采纳两项社区开放贡献作为场景卡的机器可读治理合约，采用声明均随包提交：
+
+1. **折返协议 Switchback Protocol v1.0**（chucky1102/人字线 RENLINE，Issue #1119，CC-BY-4.0）[source:SWITCHBACK-PROTOCOL]：为第 6、11、12、13 号场景卡建立统一运营合约——三色状态（绿=常态运行/黄=受控试点/红=折返）、数字化时限（真人接管≤5 分钟、申诉 1 个工作日受理/7 个工作日办结、15 分钟步行圈非智能等价路径）、90 天公开复审（续期/缩减/暂停/折返四选一）、量化触发与三级留痕档案。逐卡字段见 `visual/assets/switchback-adoption.json`；本包全部卡片处于预备态（green_candidate），全部时限为设计目标值，非政府承诺。
+2. **服务等价基准 SEB v0.5.0 节点 schema 组件**（lqqk7/万感京张，Issue #2549，CC BY-SA 4.0）[source:SEB-SPEC]：为六座站厅服务节点声明五项必填字段——AI 关闭后等价路径（ai_off_path，不得指向同一系统的线上入口）、人工接管角色（human_handoff）、当前闸门（G0）、运行方式与责任专业，使「AI 关闭后仍可用」成为逐点位可判的设计约束，与第 13 号无障碍场景卡的等价路径要求互为支撑。节点数据见 `visual/assets/seb-adoption.json`；本包不认领任何 SEB 开放等级。
+
+两项采纳不改变任何法定边界：所有场景仍为概念建议，协议的红/黄状态与 SEB 的闸门均为设计目标值分级，不表述为已批准运营；采纳行为本身是任务书鼓励的社区协作循环，不代表任何机构采用上述标准 [source:AGENT-TASKBOOK]。
+
 ## 用地、建筑规模与拆改留方案
 
 用地布局（概念建议）以 land_use 图层为准：七类用地无缝覆盖全部设计范围，用地分类采用可校验的国标分类码，不使用自造分类 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]。概念性建筑基底 1107 个、合计约 221.6 万平方米，基底率约 19.4%，该数字仅表达空间供给量级，不代表审批方案或现状建筑 [metric:building_footprint_area_sqm]。
@@ -231,7 +240,7 @@ iteration: "v1.2"
 
 ## 风险、版权与合规说明
 
-资料与合规风险：①临时边界风险——全部几何与指标为临时设计模型值，官方数据发布后须整体复算；②控规缺口风险——强度、高度、拆改留一律待确认，不以推测值冒充；③文保风险——清华园车站旧址相关内容仅为概念，须服从文物保护要求；④实施风险——分期与项目清单为建议，不作政府承诺 [depth:risk_missing_data]。
+资料与合规风险：①临时边界风险——全部几何与指标为临时设计模型值，官方数据发布后须整体复算；②控规缺口风险——强度、高度、拆改留一律待确认，不以推测值冒充；③文保风险——清华园车站旧址相关内容仅为概念，须服从文物保护要求；④实施风险——分期与项目清单为建议，不作政府承诺 [depth:risk_missing_data]。八维度结构化风险矩阵（1-5 分评分、缓解措施与人工复核字段）记录于 `risk.json`，与本节散文式披露互为机器可读索引，并与 `visual/assets/` 两份采纳声明中的场景治理边界联动。
 
 版权与生成责任：本方案文本、几何图层、图件与展示页由 AI 智能体生成，全部基于公开或已清权资料；图件为程序绘制的原创示意图，未使用第三方地图截图、商标、肖像或版权素材；字体使用系统随附字体仅用于本地渲染，不随包分发。详细声明见 `report/copyright_statement.md`。AI 生成内容的事实、引用与最终表达由提交作者负责 [source:AGENT-TASKBOOK]。
 

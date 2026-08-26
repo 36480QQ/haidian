@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the century-old Jing-Zhang railway heritage corridor as a civic mainboard, this proposal builds an open-source AI commons of one spine, six stations, three areas and two wings: a 9.7 km rail-to-trail mainline linking six station-hall public nodes and three key areas, forming a recomputable, verifiable, concept-level urban design ready for professional deepening."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.2"
+iteration: "v1.3"
 ---
 
 # OPEN RAIL: Jing-Zhang AI Commons Urban Design Proposal
@@ -155,6 +155,15 @@ All scenario cards are concept proposals; operating data is limited to public or
 
 Cards 6, 11 and 12 are AI-industry test-and-validation scenarios (no fewer than three); all require competent-authority permission before implementation and are not represented here as approved operations. Scenario-space-operation mapping: each card maps to a station hall or corridor node (see `geometry/public_space.geojson`), an explicit data boundary and an operating body, and plugs into the long-term operation system of section ten [source:AGENT-TASKBOOK].
 
+### Scenario governance contracts and community open standards (concept proposals)
+
+This proposal adopts two community open contributions at component level as the machine-readable governance contracts of its scenario cards; both adoption declarations ship with the package:
+
+1. **Switchback Protocol v1.0** (chucky1102 / RENLINE, Issue #1119, CC-BY-4.0) [source:SWITCHBACK-PROTOCOL]: a unified operating contract for scenario cards 6, 11, 12 and 13 — three-colour status (green = normal operation / yellow = controlled pilot / red = switchback), digital time limits (human takeover ≤ 5 minutes; appeals acknowledged within 1 working day and resolved within 7; a non-smart equivalent service path within the 15-minute walking circle), 90-day public review (renew / reduce / pause / switch back), quantified triggers and a three-level ledger. Per-card fields live in `visual/assets/switchback-adoption.json`; every card in this package sits at pre-operational candidate status, and all time limits are design targets, not government commitments.
+2. **Service Equivalence Baseline (SEB) v0.5.0 node_schema component** (lqqk7 / EVERY SENSE JING-ZHANG, Issue #2549, CC BY-SA 4.0) [source:SEB-SPEC]: five mandatory fields declared for the six station-hall service nodes — the equivalent route once AI is off (ai_off_path, which must not depend on the same system), the human hand-off role, the current gate (G0), the operating mode and the accountable discipline — making "still usable once AI is switched off" a per-node verifiable design constraint that reinforces card 13's equivalent-path requirement. Node data lives in `visual/assets/seb-adoption.json`; this package claims no SEB open level.
+
+Neither adoption changes any statutory boundary: all scenarios remain concept proposals; the protocol's colours and SEB's gates are design-target classifications, never described as approved operations. The adoptions themselves are the community-collaboration loop the taskbook encourages and represent adoption by no institution [source:AGENT-TASKBOOK].
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 The land-use layout (concept proposal) follows the land_use layer: seven land-use classes seamlessly cover the entire design area using verifiable national classification codes, with no self-invented categories [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. Conceptual building footprints number 1,107 and total about 2.216 million sqm, a footprint ratio of about 19.4% — a figure expressing the magnitude of space supply only, not an approval scheme or the existing building stock [metric:building_footprint_area_sqm].
@@ -231,7 +240,7 @@ Compliance coverage: the response relationships for announcement items 1.3, 1.4,
 
 ## Risk, Copyright, and Compliance
 
-Material and compliance risks: ① provisional-boundary risk — all geometry and metrics are interim design-model values requiring full recalculation upon official data release; ② regulatory-gap risk — intensity, height and demolition classification are uniformly pending and no inferred values are passed off as controls; ③ heritage risk — all Qinghuayuan Station content is conceptual and subordinate to relics-protection requirements; ④ implementation risk — phasing and the project list are recommendations, not government commitments [depth:risk_missing_data].
+Material and compliance risks: ① provisional-boundary risk — all geometry and metrics are interim design-model values requiring full recalculation upon official data release; ② regulatory-gap risk — intensity, height and demolition classification are uniformly pending and no inferred values are passed off as controls; ③ heritage risk — all Qinghuayuan Station content is conceptual and subordinate to relics-protection requirements; ④ implementation risk — phasing and the project list are recommendations, not government commitments [depth:risk_missing_data]. An eight-dimension structured risk matrix (1-5 scores, mitigations and human-review fields) is recorded in `risk.json`, forming the machine-readable index of this section and linking to the scenario-governance boundaries in the two adoption declarations under `visual/assets/`.
 
 Copyright and generation responsibility: the text, geometry layers, figures and exhibit pages of this proposal are generated by an AI agent entirely from public or cleared materials; the figures are original programmatic drawings using no third-party map screenshots, trademarks, portraits or copyrighted material; system-bundled fonts are used only for local rendering and are not redistributed. See `report/copyright_statement.md` for the full statement. The submitting author is responsible for the facts, citations and final expression of AI-generated content [source:AGENT-TASKBOOK].
 
