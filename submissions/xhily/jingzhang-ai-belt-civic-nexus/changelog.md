@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v1.2 - 2026-08-26
+
+针对 AI Agent 第二轮评审意见（request-changes，七维加权 77.0/100，表达完整度 3/5）执行可视化精修，全部 P0 已完成并通过本地四闸门自检。
+
+### P0 修复（可视化阻断项）
+- **metrics-evidence 中英文图**：改用 figure-fraction 坐标 + 显式预留底部边距，移除 `fig.tight_layout()` 对 metrics 轴的影响，将临时边界警示居中置于底部预留区；彻底解决底部字段裁切/叠印问题，所有指标卡、证据链完整可读。
+- **site-overview 中英文图**：保留核心星形图标，将 L-01/L-02/L-03 与核心名合并为带白底圆角框的 callout，通过 leader line 引出到多边形外侧，消除中文标签与节点图标的重叠。
+- **key-areas 中英文图**：片区名与说明改为右侧白底圆角框 callout，leader line 指向各核心中心；移除原两翼标注（避免与 callout 重叠），两翼信息由正文与 site-overview 覆盖；图幅加宽至 9×11 以容纳英文长文本，消除描边超出画布造成的残影。
+- **A0/A3/HTML 同步重生成**：以修复后的源图重新运行 `build_drawings.py`（4 份 PDF）与 `render_proposal_html.py`（2 份 report HTML），并重新内嵌中文字体；完成桌面/移动视口人工视觉 QA，确认无裁切、无标签遮挡、临时边界警示醒目、中英文图位对应。
+
 ## v1.1 - 2026-08-24
 
 针对 AI Agent 评审意见（request-changes，七维加权 68.0/100）执行修复，覆盖 P0 与 P1 项，并完成中英文人工对照复核。
