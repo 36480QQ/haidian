@@ -360,6 +360,36 @@
       "purpose_en": "background case mechanism: research-industry-healthcare convening",
       "limitations_zh": "local statutory control",
       "limitations_en": "local statutory control"
+    },
+    {
+      "id": "FONT-NOTO-SANS-SC",
+      "title": "Noto Sans SC",
+      "publisher": "Google Fonts / notofonts",
+      "url": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+      "upstream_repository": "https://github.com/notofonts/noto-cjk",
+      "upstream_commit": "523d033d6cb47f4a80c58a35753646f5c3608a78",
+      "accessed_date": "2026-08-26",
+      "last_verified_date": "2026-08-26",
+      "authority_level": "official_font_repository",
+      "evidence_level": "primary_license_and_metadata",
+      "use_class": "cleared_asset",
+      "usable_for": [
+        "offline Simplified Chinese webfont subset",
+        "trusted Chromium screenshot readability"
+      ],
+      "not_usable_for": [
+        "endorsement by Google, Adobe, or notofonts",
+        "claim of original font authorship"
+      ],
+      "purpose_zh": "四份 HTML 的离线简体中文字符子集和受信任 Chromium 截图可读性",
+      "purpose_en": "Offline Simplified Chinese glyph subsets and readable trusted Chromium screenshots for four HTML files",
+      "limitations_zh": "仅按 OFL-1.1 使用和再分发，不表示 Google、Adobe 或 notofonts 背书；不声称字体原创",
+      "limitations_en": "Use and redistribution only under OFL-1.1; no Google, Adobe, or notofonts endorsement and no claim of font authorship",
+      "rights_status": "cleared_under_sil_ofl_1_1",
+      "license": "SIL Open Font License 1.1",
+      "copyright": "Copyright 2014-2021 Adobe, with Reserved Font Name 'Source'",
+      "material_reused": "glyph-subset Modified Font Software embedded as inline WOFF2 under non-reserved family name TG CJK",
+      "license_or_reuse_note": "Full copyright notice and OFL-1.1 text are included in report/copyright_statement.md; original/subset hashes and coverage are in visual/assets/webfont-coverage-evidence.json."
     }
   ],
   "last_rights_review_date": "2026-08-26",

@@ -260,7 +260,7 @@ T-07 将责任进一步拆开：场地责任人掌握场地与普通用途，普
 | 外部区域合作 | 五个概念输入/输出接口 | 机构提供可公开书面授权 | external | 才可转为合作、共享、采购或互认安排 |
 | 建筑专业正式文件 | 资料缺口 + 概念断面 | 仓库补入清权文件或进入专业设计 | shared | 更新标准矩阵并取得专业签署 |
 
-来源与版权采用“资产—来源—权利—是否再分发”闭环。全部图件、封面、PDF 页面、Logo、回执、动画画面和正文为本方案独立生成；六案例只转述机制，不复制其图像或版式。Microsoft YaHei 与 Arial 仅作为本机 Windows 字体栅格化，字体文件不入包；PDF 为栅格页面，不嵌入字体程序；HTML 只声明系统字体回退，不下载字体。Pillow（HPND）、Shapely（BSD-3-Clause）、pyproj（MIT）和 imageio-ffmpeg 0.6.0 / FFmpeg 仅用于本地生成，库和二进制均未再分发。包内没有商业地图瓦片、第三方照片、商标、人物肖像、外部音频/视频/代码；MP4 无声、无自动播放，并有中英字幕与权利文字稿。逐源访问日期、用途、evidence level、reuse scope 和限制见 `sources.json`，逐资产说明见 `report/copyright_statement.md`。
+来源与版权采用“资产—来源—权利—是否再分发”闭环。全部图件、封面、PDF 页面、Logo、回执、动画画面和正文为本方案独立生成；六案例只转述机制，不复制其图像或版式。Microsoft YaHei 与 Arial 仅用于本机栅格化，字体文件不入包，PDF 也不嵌入字体程序。为保证受信任 Linux/Chromium 离线截图可读，四份 HTML 内联嵌入仅覆盖本包实际字符的 Noto Sans SC Regular/Bold WOFF2 子集，使用非保留族名 `TG CJK`；来源、原字体与子集 SHA、字符覆盖证据及 SIL Open Font License 1.1 全文均随包公开，不发起远程字体请求。Pillow（HPND）、Shapely（BSD-3-Clause）、pyproj（MIT）、fontTools、Brotli 和 imageio-ffmpeg 0.6.0 / FFmpeg 仅用于本地生成，除上述 OFL 字体子集外，库和二进制均未再分发。包内没有商业地图瓦片、第三方照片、商标、人物肖像、外部音频/视频/代码；MP4 无声、无自动播放，并有中英字幕与权利文字稿。逐源访问日期、用途、evidence level、reuse scope 和限制见 `sources.json`，逐资产说明见 `report/copyright_statement.md`。
 
 ## 参考资料
 
