@@ -284,7 +284,7 @@ The phasing plan corresponds to the three-phase strategy in `geometry/phasing.ge
 
 - **Near-term (1-3 years)**: Priority repair of Commercial Suture Node, Memory Anchor Node, Health Suture Node, and Data Suture Node—4 nodes (southern segment, Dazhongsi area; PUBLIC-006/007/008/009)
 - **Mid-term (3-5 years)**: Advancing Knowledge Permeation Node and Tidal Interlace Node—2 nodes (northern segment, Zhongzhi Park area; PUBLIC-001/002)
-- **Long-term (5-8 years)**: Completing Entrepreneurship Incubation Node, Intergenerational Weave Node, and Natural Permeation Node—3 nodes (central segment, AI Origin Community; PUBLIC-003/004/005)
+- **Long-term (5-10 years)**: Completing Entrepreneurship Incubation Node, Intergenerational Weave Node, and Natural Permeation Node—3 nodes (central segment, AI Origin Community; PUBLIC-003/004/005)
 
 The near-term selection of the southern segment first is because the Dazhongsi area has high commercial vitality, strong public perception, and rapid visible outcomes; the long-term deferral of the central segment's intergenerational and health nodes reflects their involvement of sensitive facilities (schools, elderly care) requiring more thorough community consultation.
 
@@ -546,9 +546,9 @@ The following is the sole authoritative mapping; narrative text, drawings, imple
 | --- | --- | --- | --- | --- | --- |
 | N-01 | Knowledge Permeation Node | PUBLIC-001 | Zhongzhi Park AI Acceleration Zone | SC-03 Midday Knowledge Sharing | Phase 2 (mid-term, 3-5 years) |
 | N-02 | Tidal Interlace Node | PUBLIC-002 | Zhongzhi Park AI Acceleration Zone | SC-01 Smart Morning Exercise, SC-02 Commute Micro-Circulation | Phase 2 (mid-term, 3-5 years) |
-| N-03 | Entrepreneurship Incubation Node | PUBLIC-003 | AI Origin Community | SC-10 Entrepreneurship Pop-Up Space | Phase 3 (long-term, 5-8 years) |
-| N-04 | Intergenerational Weave Node | PUBLIC-004 | AI Origin Community | SC-04 After-School Safety Corridor, SC-11 Age-Friendly Route | Phase 3 (long-term, 5-8 years) |
-| N-05 | Natural Permeation Node | PUBLIC-005 | AI Origin Community | SC-06 Seasonal Functional Switching, SC-12 Real-Time Carbon Sink | Phase 3 (long-term, 5-8 years) |
+| N-03 | Entrepreneurship Incubation Node | PUBLIC-003 | AI Origin Community | SC-10 Entrepreneurship Pop-Up Space | Phase 3 (long-term, 5-10 years) |
+| N-04 | Intergenerational Weave Node | PUBLIC-004 | AI Origin Community | SC-04 After-School Safety Corridor, SC-11 Age-Friendly Route | Phase 3 (long-term, 5-10 years) |
+| N-05 | Natural Permeation Node | PUBLIC-005 | AI Origin Community | SC-06 Seasonal Functional Switching, SC-12 Real-Time Carbon Sink | Phase 3 (long-term, 5-10 years) |
 | N-06 | Commercial Suture Node | PUBLIC-006 | Dazhongsi AI Industry Cluster | SC-07 Holiday Market Orchestration | Phase 1 (near-term, 1-3 years) |
 | N-07 | Memory Anchor Node | PUBLIC-007 | Dazhongsi AI Industry Cluster | SC-09 Heritage Immersive Interpretation | Phase 1 (near-term, 1-3 years) |
 | N-08 | Health Suture Node | PUBLIC-008 | Dazhongsi AI Industry Cluster | SC-05 Night Running Safety Lighting, SC-11 Age-Friendly Route | Phase 1 (near-term, 1-3 years) |
