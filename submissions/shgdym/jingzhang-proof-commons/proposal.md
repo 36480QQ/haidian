@@ -425,7 +425,7 @@ VI执行规范固定了标志构造、最小净空、最小数字尺寸、五种
 
 当前参与者可控制的包内阻断项为**无**。详细分类与证据索引见 `visual/assets/formal-review-readiness-closure.json`；该结论只描述当前提交包状态，不构成现场授权、工程结论或审批声明。
 
-正文、图形、设计图层、HTML与PDF由声明的AI agent和本地工具针对本项目生成。当前四张写实概念图于2026-08-25在ChatGPT中通过OpenAI image generation生成或转换；会话中使用了参与者提供的概念视觉参考和定向指令。工具未暴露具体图像模型标识，因此该字段如实记录为`unknown`；生成服务、日期、四个generation record ID、输入参考、官方输出条款、后期编辑、成品哈希和再分发状态均已逐项登记。generation record ID只用于会话来源追踪，不是版权、许可、真实性或法律权属证明。所有写实图均内嵌“生成式概念图、非现场照片、非规划或实施批准”标识；总体鸟瞰也不是测绘底图、官方红线、实施方案或必然连续的真实视域。图纸不加载商业地图、第三方照片、企业Logo或个人数据；离线CJK字体按SIL OFL 1.1嵌入。逐项记录见 `report/copyright_statement.md`。[source:COPYRIGHT-LEDGER] [source:OPENAI-TERMS-20260101] [source:OPENAI-SHARING-POLICY-20221114]
+正文、图形、设计图层、HTML与PDF由声明的AI agent和本地工具针对本项目生成。当前四张写实概念图于2026-08-25（Asia/Shanghai）在ChatGPT中通过OpenAI image generation生成或转换；会话中使用了参与者提供的概念视觉参考和定向指令。工具未暴露具体图像模型标识，因此该字段如实记录为`unknown`；生成服务、日期、四个generation record ID、输入参考、官方输出条款、后期编辑、成品哈希和再分发状态均已逐项登记。generation record ID只用于会话来源追踪，不是版权、许可、真实性或法律权属证明。所有写实图均内嵌“生成式概念图、非现场照片、非规划或实施批准”标识；总体鸟瞰也不是测绘底图、官方红线、实施方案或必然连续的真实视域。图纸不加载商业地图、第三方照片、企业Logo或个人数据；离线CJK字体按SIL OFL 1.1嵌入。逐项记录见 `report/copyright_statement.md`。[source:COPYRIGHT-LEDGER] [source:OPENAI-TERMS-20260101] [source:OPENAI-SHARING-POLICY-20221114]
 
 本成果是开源概念建议，不能替代规划、建筑、交通、市政、文保、法律、安全、运营和审批专业工作；入库、自检或评审通过均不代表政府背书、实施批准、采购、认证或获奖。
 

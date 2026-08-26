@@ -2,11 +2,19 @@
 
 ## Rights status
 
-The four realistic concept images registered on 2026-08-24 were replaced on 2026-08-25 by outputs created through OpenAI image generation in ChatGPT. The participant supplied the generation record IDs below and explicitly requested inclusion of the outputs in this submission. The service and generation date are therefore known. The specific image-model identifier was not surfaced by the tool and remains `unknown` rather than being guessed.
+The four text-only concept images generated through the OpenAI built-in image-generation tool in Codex on **2026-08-24, Asia/Shanghai** were superseded by four distinct current assets generated or transformed through OpenAI image generation in ChatGPT on **2026-08-25, Asia/Shanghai**. These are two separate asset-version events, not timezone representations of one event; exact clock times were not retained. The participant supplied the four current generation record IDs below and explicitly requested inclusion of those outputs in this submission. The current service, calendar date and timezone are therefore known. The specific image-model identifier was not surfaced by the tool and remains `unknown` rather than being guessed.
 
 All four generation records include participant-provided concept visual references in the conversation context plus conversation-directed instructions. The register does not claim to know how the underlying tool encoded those references. All four final files received deterministic embedded bilingual disclosure; the aerial additionally received deterministic bilingual station labels. A generation record ID is session provenance only, not a copyright certificate, licence certificate, authenticity certificate, legal-ownership proof or public verification ID.
 
 The rights basis is the [OpenAI Terms of Use effective 2026-01-01](https://openai.com/policies/terms-of-use/): as between the user and OpenAI, the user retains rights in Input and owns Output to the extent permitted by applicable law. The [OpenAI Sharing & Publication Policy](https://openai.com/policies/sharing-publication-policy/) is also recorded because it requires clear disclosure of AI involvement and human review. These terms support submission display and repository redistribution, but they do not guarantee copyrightability, uniqueness, non-infringement, factual accuracy or planning approval. The participant remains responsible for the published use.
+
+### Timeline semantics
+
+| Timestamp / date | Event represented | Current-file status |
+| --- | --- | --- |
+| `2026-08-24, Asia/Shanghai` | Historical generation of four text-only concept images through the OpenAI built-in image-generation tool in Codex; exact clock time was not retained | Superseded; none of their final file hashes identifies a current core image |
+| `2026-08-25, Asia/Shanghai` | Generation or transformation of the four current final concept-image sources through OpenAI image generation in ChatGPT; exact clock time was not retained | Current; each asset is tied below to its retained generation record ID, inputs, post-processing and final SHA-256 |
+| `2026-08-26T05:17:54Z` (`2026-08-26 13:17:54+08:00`) | Generation of the current submission-package manifest metadata during this provenance repair | Package event only; not an image-generation timestamp |
 
 ## Generative asset register
 
@@ -48,7 +56,7 @@ The undisclosed source and intermediate files are not published. Only the final,
 
 ## Current-version asset audit
 
-**Status: OpenAI ChatGPT generation service, generation date and record IDs are recorded; the specific image-model identifier remains unavailable.** The 2026-08-25 replacement introduces no package-known third-party map tile, logo or font. The updated figure sets, HTML and A3/A0 pages are local derivatives of the registered concept images, submission text and concept geometry. Current file integrity is recorded in `manifest.json`. Registration of any later asset remains a continuing publication rule.
+**Status: OpenAI ChatGPT generation service, generation date and record IDs are recorded; the specific image-model identifier remains unavailable.** The 2026-08-25 replacement introduces no package-known third-party map tile, logo or font. The updated figure sets, HTML and A3/A0 pages are local derivatives of the registered concept images, submission text and concept geometry. Current file integrity is recorded in `manifest.json`; its `generated_at` field records package-manifest generation, not image generation. Registration of any later asset remains a continuing publication rule.
 
 All realistic concept images visibly state, in the relevant language, that they are AI/generative concept images, not site photographs and not planning or implementation approval. Captions carry the same evidentiary boundary. No enterprise logo, personal data, non-public spatial data, commercial map imagery, third-party photograph or unlicensed icon is intentionally included.
 
