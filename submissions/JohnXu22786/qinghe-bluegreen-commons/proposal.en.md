@@ -10,13 +10,19 @@ bilingual_contract_version: "1"
 summary: "A concept proposal for the Qinghe riverfront demonstration segment of the Centennial Jing-Zhang AI Innovation Belt: three segment nodes (cultural, innovation, community) plus ten AI daily-scenario cards embed AI-driven ecological restoration and a waterfront innovation commons into everyday public life. All content is conceptual and based on provisional boundaries; this English version is the substantively equivalent counterpart of proposal.md (manually cross-checked)."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.3"
+iteration: "v2.6"
 ---
 
 # Qinghe Smart Shore - AI Innovation Commons (QSS-AIC)
 
 **Primary name (EN lock-up): QSS-AIC / Qinghe Smart Shore — AI Innovation Commons**
 **Chinese counterpart: "清河智岸 · AI创新公地"**
+
+**Brand naming hierarchy (locked; single caliber of this package; applied consistently to document metadata, A0/A3 covers, HTML and all figures)**:
+- **Master brand**: Qinghe Smart Shore (“清河智岸”);
+- **Long title**: Qinghe Smart Shore — AI Innovation Commons, acronym “QSS-AIC” (Chinese: “清河智岸 · AI创新公地”);
+- **Segment subtitle**: Centennial Jing-Zhang AI Innovation Belt (Haidian) · Qinghe Waterfront Demonstration Segment;
+- **Use rule**: the lock-up above is the single brand caliber of the whole package; all marks are used as **internal working codenames** until trademark clearance (Section 12.5).
 
 **Positioning**: This submission is a **concept design** for the open call of the Centennial Jing-Zhang AI Innovation Belt (Haidian section). It is the belt's **sub-system and demonstration segment — the "Qinghe Riverfront Demonstration Segment"**: a real water system node (Qinghe River) adjacent to the northern section of the Jing-Zhang Railway Heritage Park and local innovation clusters. Its trinity is "riverfront AI ecological restoration + waterfront innovation living room + dual-use (peacetime/emergency) public space", serving the "Urban AI Life Experience Belt" and "AI+ scenario empowerment" at the **scenario-side experience and validation** level. Everything here is a **conceptual suggestion** that does not replace statutory planning: no FAR, height, road redline, engineering feasibility or investment conclusions are made. All areas/ratios are **schematic values pending recomputation with official data**. Every AI scenario has **human review / human fallback**; water-environment display data is for display and research only and does not replace official water-quality monitoring.
 
@@ -242,6 +248,24 @@ Every scenario follows "AI-native generation, human-reviewed release, tiered dat
 | Content & knowledge governance | Public KB + de-identified data contracts | 100% human pre-release review; public correction deadlines | Unreviewed release discovered -> suspend scenario and review |
 | Data & privacy governance | Anonymous logs, deletion ledger | 100% anonymous aggregation; deletion deadlines met; quarterly governance report public | Individual-identification event -> take data interface offline and announce |
 | Model & operation governance | Scenario filing list, quarterly evaluations | Availability, feedback closure rate, complaint handling times | Any of safety/satisfaction/cost below threshold -> suspend, take offline or transform (10.5) |
+
+### 6.8 Pilot-level data dictionary, model performance baseline and multi-agent collaboration flow (conceptual)
+
+To reach pilot-stage implementation depth, this proposal pre-configures three pilot tools as concept frameworks - "data dictionary, performance baseline, collaboration flow". All are directional frameworks with no preset numeric conclusions; after a pilot starts, the operator community together with research institutions measures and publishes them on a joint benchmark set:
+
+**Pilot-level data dictionary (concept)**: data items of pilot scenarios (S01, S03, S04, S07, T01-T03) are registered uniformly under three columns - "caliber & source; de-identification & retention; use tier & recompute trigger". The data contract is published per this dictionary when a pilot launches; no personal data is collected:
+
+| Data item (pilot) | Caliber & source | De-identification & retention | Use tier & recompute trigger |
+| --- | --- | --- | --- |
+| Water-environment sensing values (S01/T01) | Self-owned sensors; parallel comparison with official monitoring | Anonymous aggregation; limited retention, deleted after pilot evaluation | Display/research only; switch calibration after official data release |
+| Slow-mobility path & obstacle events (S03) | Aggregated statistics of authorized location data | Minimized, disable-able, time-limited deletion | Accessibility assistance suggestions only; no individual-identifying tracking |
+| Eco-imagery recognition records (S04) | Near-bank self-captured imagery | Natural-environment imagery only; public scope per license | Science-communication use; professional double-check labelling |
+| API sandbox call logs (S07) | De-identified datasets and purpose registration | Logs retained for a limited time; anonymous aggregation | Developer trials; contribution points honour-only |
+| Drill & conversion metrics (S05/T03) | Official public info and de-identified plans | No personal data processed | Demonstration only; does not replace official warnings |
+
+**Model performance baseline (concept)**: before launch, each pilot model must complete an initial baseline measurement on the joint benchmark set; the measurement method, sample caliber, data timestamp and recompute trigger are published together, then re-measured quarterly. Baseline thresholds are expressed as "range + recompute trigger"; no specific values are preset at this concept stage to avoid false precision. Any quarterly result below baseline triggers human review and re-evaluation.
+
+**Multi-agent collaboration flow (concept)**: pilot AI capabilities run as a four-step flow - "sense, aggregate, review, publish": the sensing agent reads de-identified data streams (anonymous aggregation only), the aggregation agent performs statistics and tiering, the review agent runs rule checks and queues human review (key decisions require human review), and the publishing agent outputs labelled interfaces. Any step with insufficient confidence falls back to human handling; the whole flow never collects personally identifiable information, does no individual-identifying tracking and performs no over-surveillance.
 
 > **Evidence anchor**: [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES].
 
