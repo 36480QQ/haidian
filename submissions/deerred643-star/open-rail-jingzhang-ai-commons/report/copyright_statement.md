@@ -21,3 +21,7 @@ All submitted text, geometry layers, figures, HTML pages, drawings and structure
 ## 离线中英文字体回退（v1.4 新增）
 
 本包四份 HTML（visual/index.html、visual/index.en.html、report/proposal.html、report/proposal.en.html）与 A3/A0 PDF 构建页内联 Noto Sans SC 可变字体的字符子集（SIL Open Font License 1.1，来源 google/fonts），作为离线中英文字体回退，消除无 CJK 字体环境下的汉字方框。子集以 base64 woff2 内联，不请求任何远程字体；未修改字形。子集字符数、woff2 SHA-256 与覆盖文件清单见 visual/assets/webfont-coverage-evidence.json。OFL-1.1 允许再分发与子集化，本包按许可要求保留此版权与许可声明。
+
+## Logo 概念图形（v1.5 新增）
+
+`assets/media/logo.png` 为本方案 Logo 概念图形：由程序（Python/Pillow）绘制的原创矢量式图形——人字形折返双轨、commit 节点、电路迹线与过孔节点。图形不含任何第三方商标、人物肖像或版权素材；颜色值为自定义。允许在署名本方案的前提下作为概念图形引用。

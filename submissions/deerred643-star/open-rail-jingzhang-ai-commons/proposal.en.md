@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the century-old Jing-Zhang railway heritage corridor as a civic mainboard, this proposal builds an open-source AI commons of one spine, six stations, three areas and two wings: a 9.7 km rail-to-trail mainline linking six station-hall public nodes and three key areas, forming a recomputable, verifiable, concept-level urban design ready for professional deepening."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.4"
+iteration: "v1.5"
 ---
 
 # OPEN RAIL: Jing-Zhang AI Commons Urban Design Proposal
@@ -48,6 +48,10 @@ A century ago, Zhan Tianyou solved the Badaling climb with a herringbone alignme
 
 **Visual identity and logo direction** (concept proposal): the logo builds on the isomorphism between the railway herringbone switch and a circuit trace — two rail lines merge at the switch into a single circuit line, signifying "engineering wisdom merging into open-source intelligence". The primary palette is heritage rust and circuit teal, with basalt grey as support. Typefaces should use open-licensed fonts (e.g. Source Han Sans class); all visual elements must be originally drawn and cleared, with no third-party trademarks, portraits or copyrighted material [source:AGENT-TASKBOOK].
 
+![OPEN RAIL logo concept mark](assets/media/logo.png)
+
+**Logo concept mark** (original programmatic drawing, `assets/media/logo.png`): the two rails of the Jing-Zhang "herringbone" switchback (heritage rust, with sleeper texture) converge at a junction translated into a circuit commit node (teal ring); a single circuit trace (circuit teal) with via nodes rises from the junction, a branch line (the PR metaphor) leaves at the junction, and the top ends in a square pad (the merged state). The mark turns "a century of engineering wisdom merging into open-source intelligence" into an extensible identity symbol ready to derive wayfinding, inlays and event key visuals.
+
 ### Three positionings, five functions and the three-areas-two-wings synergy loop
 
 The three positionings (Centennial Jing-Zhang Culture Belt, Urban AI Life Experience Belt, AI Integrated Innovation Belt) are organised as a "trio on a timeline": the culture belt answers "where we come from", carried by the heritage corridor and the Qinghuayuan Station narrative; the experience belt answers "how it is perceived", carried by the six station halls and the AI+ scenario network; the innovation belt answers "where we are going", carried by the industrial ecosystem of the three areas and two wings. The five functions are each anchored: the AI full-stack independent innovation system lands in Zhongzhiyuan; the world-class AI innovation ecosystem lands in the AI Origin Community; the AI+ scenario empowerment paradigm unfolds along the spine and the Xiaoyuehe wing; the intelligent AI vitality city is embodied in the slow-mobility and public-space network; and the global voice on AI governance rests on the Zhongzhiyuan governance testbed and open-source governance mechanisms [source:AGENT-TASKBOOK].
@@ -58,12 +62,12 @@ The synergy loop (concept proposal): Zhongzhiyuan (mainboard chip) produces tech
 
 The following cases distill transferable ecosystem mechanisms; all are public general-knowledge studies and specific figures should be verified against official releases [source:GLOBAL-AI-ECOSYSTEM-CASES]:
 
-1. **Silicon Valley Menlo Park — Palo Alto corridor (USA)**: a rail corridor linking universities, laboratories and venture capital, proving that "a corridor is an ecosystem" — the Jing-Zhang corridor can likewise serve as the backbone of factor flows. Transferable mechanism: showcase, investment-matching and talent-exchange interfaces along the spine.
-2. **Kendall Square (Cambridge, USA)**: deep fusion of the MIT campus with urban renewal plots, forming a "university — enterprise — public space" sandwich. Transferable mechanism: campus interfaces and courtyard-style R&D space in the AI Origin Community.
-3. **Station F (Paris, France)**: the world's largest startup campus converted from a historic rail depot, proving the narrative power of "transport heritage + startup ecosystem". Transferable mechanism: the Qinghuayuan station-hall open-source achievement gallery concept.
-4. **TU Munich Garching — city-centre innovation corridor (Germany)**: a metro line linking campus, research institutes and corporate headquarters, defining the innovation collaboration radius by transit time. Transferable mechanism: station-integrated innovation services at the six halls.
-5. **Nanshan Yuehai Sub-district (Shenzhen, China)**: a high-density mixed district embedding test scenarios and engineering capacity, enabling "test downstairs, research upstairs" rapid iteration. Transferable mechanism: the Dazhongsi AI-native commercial blocks and test scenarios.
-6. **Zhangjiang Science City (Shanghai, China)**: an innovation ecosystem and urban services organised around major science facilities, emphasising the "science — industry — city" triad. Transferable mechanism: Zhongzhiyuan's full-stack system with an open central green valley.
+1. **Silicon Valley Menlo Park — Palo Alto corridor (USA)**: a rail corridor linking universities, laboratories and venture capital, proving that "a corridor is an ecosystem" — the Jing-Zhang corridor can likewise serve as the backbone of factor flows. Transferable mechanism: showcase, investment-matching and talent-exchange interfaces along the spine. **Landing (proposal)**: an investor-resident interface at Wudaokou hall (concept); a Demo Day and investment-matching track at the annual OPEN RAIL Conference, with open registration and public outcomes throughout.
+2. **Kendall Square (Cambridge, USA)**: deep fusion of the MIT campus with urban renewal plots, forming a "university — enterprise — public space" sandwich. Transferable mechanism: campus interfaces and courtyard-style R&D space in the AI Origin Community. **Landing (proposal)**: "sandwich" conversion modules along Chengfu Road — campus frontage at grade + R&D in the middle + public platform on top — composed of courtyard modules for varying team sizes.
+3. **Station F (Paris, France)**: the world's largest startup campus converted from a historic rail depot, proving the narrative power of "transport heritage + startup ecosystem". Transferable mechanism: the Qinghuayuan station-hall open-source achievement gallery concept. **Landing (proposal)**: an annual curation system — open curator recruitment, global achievement calls, free public exhibition — balanced by mixed sponsorship (concept).
+4. **TU Munich Garching — city-centre innovation corridor (Germany)**: a metro line linking campus, research institutes and corporate headquarters, defining the innovation collaboration radius by transit time. Transferable mechanism: station-integrated innovation services at the six halls. **Landing (proposal)**: shuttle timetables linked to nearby institutions' meeting calendars (timetabled connection, concept), organising collaboration by transit-time radius.
+5. **Nanshan Yuehai Sub-district (Shenzhen, China)**: a high-density mixed district embedding test scenarios and engineering capacity, enabling "test downstairs, research upstairs" rapid iteration. Transferable mechanism: the Dazhongsi AI-native commercial blocks and test scenarios. **Landing (proposal)**: "test downstairs, research upstairs" vertical mixed-use plots (concept ratios) with street-facing, viewable, bookable test frontages.
+6. **Zhangjiang Science City (Shanghai, China)**: an innovation ecosystem and urban services organised around major science facilities, emphasising the "science — industry — city" triad. Transferable mechanism: Zhongzhiyuan's full-stack system with an open central green valley. **Landing (proposal)**: an open shared interface in the central green valley — edge-compute nodes + public lab benches + hackathon lawn (concept) — run on shared-reservation terms like major-science facilities.
 
 ### AI innovation ecosystem map (concept proposal)
 
@@ -178,6 +182,19 @@ This proposal adopts two community open contributions at component level as the 
 
 Neither adoption changes any statutory boundary: all scenarios remain concept proposals; the protocol's colours and SEB's gates are design-target classifications, never described as approved operations. The adoptions themselves are the community-collaboration loop the taskbook encourages and represent adoption by no institution [source:AGENT-TASKBOOK].
 
+### Operator accountability chains and process linkage (concept proposals)
+
+To address operators appearing as category names, every operator type is bound to a four-link accountability chain tied to the adopted governance contracts:
+
+| Link | Governance-contract clause | Process linkage (concept) | Public artifact |
+|------|---------------------------|---------------------------|-----------------|
+| Admission | Switchback green_candidate approval | Qualification and permit checks; pilot-scheme publication | Operator list and permit-status ledger |
+| Operation oversight | Three-colour status + digital time limits | Quarterly reports; takeover and appeal records | Quarterly public review report |
+| Review accountability | 90-day public review (four options) | Independent opinions with closed-loop rectification | Review conclusions and rectification ledger |
+| Exit | Switchback ledger + dual-signature handover | Open items transferred with the handover; assets and data archived | Switchback archive (near-miss / switchback / decommission) |
+
+Linkage to real departmental processes (concept): pilot permits, registration, operation oversight and exit handover correspond respectively to competent-authority approval, public-ledger registration, local supervision and asset-transfer procedures; this proposal names no specific department — responsibility follows statutory local duties. Accountability of category-name operators (e.g. a "park service platform") is secured jointly by the four-link chain and the Switchback Protocol's named-role mechanism (accountable_operator named at pilot approval), closing the loop from category to named responsibility [source:SWITCHBACK-PROTOCOL].
+
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 The land-use layout (concept proposal) follows the land_use layer: seven land-use classes seamlessly cover the entire design area using verifiable national classification codes, with no self-invented categories [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. Conceptual building footprints number 1,107 and total about 2.216 million sqm, a footprint ratio of about 19.4% — a figure expressing the magnitude of space supply only, not an approval scheme or the existing building stock [metric:building_footprint_area_sqm].
@@ -237,6 +254,31 @@ Configuration rules (concept proposal): components follow a three-tier setup —
 Renewal project list (concept proposals, all reference schemes): ① Open Rail spine connection (walkway, cycling, signage); ② six station-hall node upgrades; ③ Qinghuayuan gallery concept conversion; ④ central green valley open interface; ⑤ Dazhongsi AI-native block renewal; ⑥ gradual renewal of central residential areas with pocket parks; ⑦ Qing River–Xiaoyue River green-belt connection; ⑧ edge-compute nodes and new-infrastructure demonstration [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list]. Delivery background: public reporting indicates the Xizhimen–Zhichun Road (southern) segment of project ① holds a municipal approval — Jing-Fa-Gai (Shen) [2024] No. 609, about 23.08 ha, with the Beijing Haidian Bureau of Landscape and Forestry as construction unit; the fish-bone slow-traffic links added in phase 2 of the park connect the Qing River riverside green corridor with the Dongsheng Bajia Country Park, possibly realising part of project ⑦'s Qing River connection. That approval document is not yet in approved_formal_sources and is cited as public background information pending registry review, not as formal delivery evidence [source:JINGZHANG-PARK-PHASE2-APPROVAL].
 
 Phasing (concept proposal): near term (2026–2029) completes the southern spine, the AI Origin Community and the Dazhongsi gateway as the most legible demonstration segment; medium term (2029–2032) advances the northern corridor and southern Zhongzhiyuan; long term (2032–2035) completes northern Zhongzhiyuan and the Qing River waterfront gateway. The sequence is advisory only; implementing bodies, funding arrangements and approval procedures follow formal decisions [depth:phasing_implementation].
+
+### Implementation cards: five-element framework (concept proposals)
+
+To give all eight renewal projects the full implementation granularity of current-baseline—entry-conditions—responsible-roles—acceptance-metrics—exit-mechanism, each project carries an implementation card; the machine-readable set lives in `visual/assets/implementation-cards.json`:
+
+| Project | Current baseline | Entry conditions | Responsible roles (pending) | Acceptance metrics (proposed) | Exit mechanism |
+|---------|------------------|------------------|------------------------------|-------------------------------|----------------|
+| 1 Spine link | Concept; southern segment per public reporting (pending review) | Right-of-way & safety; phased permits | Local authority + implementer TBD | Continuity / coverage / accessibility | Segment-wise reversible via switchback |
+| 2 Six halls | Concept | Site & connection agreements | Hall operator + locality | Interchange distance / accessibility / response time | Furniture reversible |
+| 3 Qinghuayuan gallery | Conceptual (heritage first) | Relics-authority opinion + curation charter | Operator + heritage consultation | Annual exhibitions / outcomes / reversibility | Fully reversible to original state |
+| 4 Green valley | Concept | Green-space use approval | Zhongzhiyuan operator | Open days / event capacity / recovery cycle | Site restorable |
+| 5 Dazhongsi blocks | Concept (complex rights) | Rights negotiation + merchant consent | Commercial operator + merchant alliance | Tenancy / test scenarios / retention | Formats swappable |
+| 6 Housing renewal | Concept | Resident consent rate met | Locality + community + residents | Retrofits / pocket parks / stitch nodes | Light-touch, inherently reversible |
+| 7 Riverside link | Concept (Qinghe side per reporting) | Water & flood assessment | Water authority + landscape | Continuous length / eco banks / flood check | Vegetation restorable |
+| 8 Edge compute | Concept | Power & data-compliance review | Infrastructure operator TBD | Availability / open hours / on-device share | Equipment removable, data erasable |
+
+Baseline note: no project yet has a measured baseline (organiser data unpublished); baselines are unmeasured design starting points, and acceptance metrics are suggested targets pending specialised deepening [depth:phasing_implementation].
+
+### Public participation, conflict negotiation and service equity (concept framework)
+
+Answering the three inclusion gaps raised in review, an operable framework (concept proposals, landed during pilots):
+
+- **Participation ladder**: information disclosure (proposals, metrics and self-check status fully public) → consultation (design stage: Issues/PRs and community workshops) → co-design (pilot stage: resident participatory-design workshops) → co-decision (public representatives seated at the 90-day review) [source:AGENT-TASKBOOK].
+- **Three-tier conflict negotiation**: tier 1 on-site hall mediation (operator responds same day) → tier 2 community council (organised locally, within 7 working days) → tier 3 professional assessment and arbitration (third-party opinion within 15 working days); conclusions are written back to scenario and implementation cards under the write-back discipline.
+- **Service-equity baseline**: three proposed indicators — barrier-free node coverage, non-digital equivalent-path accessibility, and median complaint-response time; no measured data yet (kept pending baseline), to be measured per node via the SEB node schema during pilots, with failed samples never dropped [source:SEB-SPEC].
 
 ### Global AI innovation event system and long-term operation (concept proposal)
 
