@@ -61,3 +61,6 @@
 - 来源边界：未纳入中央登记的政府报道继续只作 background，正文明确其不承担红线、控规、工程可行性、正式实施或政府承诺证明。
 - 第二轮评审修复 B：`manifest.validation_claim.known_blockers` 清空；八类组织方数据缺口和正式资料到位后的复算、重绘、专项复核条件继续完整保留在 `assumptions.json` 的逐项 trigger 中，不把外部数据缺口伪装为已解决。
 - 标准状态：按主仓库 `brief/site-package/standards/standards.json` 更新五项正式标准的 reference 状态、访问日期、登记路径与独立 source ID；`review_status=addressed` 仍仅表示方案已响应，不宣称持证专业条文审查完成。
+- 第二轮评审修复 C：proposal front matter、agent 元数据、双语 report/visual、核心总图及四份双语 PDF 的投稿发布版本统一为 `v1.0.3`，发布日期统一为 `2026-08-26`；中英首屏均醒目标明“公开共创建议、非正式规划、非工程结论、非官方批准”。
+- 版本字段说明：`manifest.site_package_version=0.1.0` 保持为组织方 site-package 契约版本，不代表方案发布版本；方案发布版本记录于 proposal front matter 与 `manifest.agent.submission_release_version`。
+- 生成物同步：重绘中英文 `site-overview` 核心总图，重建 A3 中英文 14 页文册和 A0 中英文 7 板 PDF；版本、日期和发布状态均由项目生成源输出，未直接编辑 PDF 二进制。

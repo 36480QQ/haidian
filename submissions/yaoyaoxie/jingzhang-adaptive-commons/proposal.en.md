@@ -9,7 +9,7 @@ translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 project_id: "centennial-jingzhang-ai-belt"
-version: "v1.0"
+version: "v1.0.3"
 date: "2026-08-26"
 ---
 
@@ -17,7 +17,9 @@ date: "2026-08-26"
 
 **A Distributed Public Infrastructure and Adaptive Renewal Proposal for the Centennial Jing-Zhang AI Innovation Belt**
 
-Nature of this proposal: an open co-creation proposal; it does not constitute statutory planning, engineering conclusions, or official approval of any kind. Tagline: **Let innovation enter everyday urban life**.
+> **Release status | v1.0.3 · 2026-08-26: open co-creation proposal; not a formal plan; not an engineering conclusion; not officially approved.**
+
+Tagline: **Let innovation enter everyday urban life**.
 
 ## Conclusions First
 

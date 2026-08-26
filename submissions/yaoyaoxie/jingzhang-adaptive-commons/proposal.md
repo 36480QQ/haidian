@@ -9,7 +9,7 @@ translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 project_id: "centennial-jingzhang-ai-belt"
-version: "v1.0"
+version: "v1.0.3"
 date: "2026-08-26"
 ---
 
@@ -17,7 +17,9 @@ date: "2026-08-26"
 
 **百年京张 AI 创新带的分布式公共基础设施与适应性更新方案**
 
-方案属性：公开共创建议，不构成法定规划、工程结论或任何形式的官方批准。传播语：**让创新进入城市日常**。
+> **发布状态｜v1.0.3 · 2026-08-26：公开共创建议；非正式规划；非工程结论；非官方批准。**
+
+传播语：**让创新进入城市日常**。
 
 ## 结论先行
 

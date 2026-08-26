@@ -2,7 +2,8 @@
 
 方案：京张生长网络 JINGZHANG ADAPTIVE COMMONS
 投稿包：`yaoyaoxie/jingzhang-adaptive-commons`
-日期：2026-08-25
+发布版本：v1.0.3  
+发布日期：2026-08-26
 
 ## 1. AI 生成说明
 
