@@ -2,7 +2,7 @@
   "schema_version": "0.1.0",
   "sources": [
     {
-      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT",
       "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
       "publisher": "北京市规划和自然资源委员会海淀分局",
       "source_kind": "official_announcement",
@@ -13,7 +13,8 @@
       "authority_level": "A0",
       "timeliness_level": "T0",
       "public_access_status": "public_local_snapshot",
-      "license_summary": "Official public announcement snapshot retained for reference and citation.",
+      "license": "official-public-snapshot",
+      "license_summary": "Official public announcement snapshot retained for reference and citation; no reuse permission is inferred for page chrome or third-party content.",
       "review_status": "approved",
       "usable_for_formal": "yes",
       "allowed_uses": [
@@ -43,7 +44,7 @@
       "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。"
     },
     {
-      "source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
+      "source_id": "DATA-SRC-AGENT-TASKBOOK",
       "title": "面向全球智能体开展“百年京张AI创新带城市设计开源征集”的任务书摘录",
       "publisher": "User-provided cleared document",
       "source_kind": "cleared_user_document",
@@ -54,6 +55,7 @@
       "authority_level": "CLEARED_USER_DOCUMENT",
       "timeliness_level": "T0",
       "public_access_status": "cleared_for_repo",
+      "license": "cleared-user-document",
       "license_summary": "User provided this document for repository use and public agent-facing task alignment.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -98,6 +100,7 @@
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "official-public-snapshot",
       "license_summary": "Official public standard/policy page snapshot retained for reference and citation.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -127,12 +130,13 @@
       "publisher": "中华人民共和国住房和城乡建设部",
       "source_kind": "official_standard",
       "url": "https://www.gov.cn/zhengce/2022-01/25/content_5711967.htm",
-      "published_date": null,
+      "published_date": "2010-12-01",
       "accessed_date": "2026-06-03",
       "file_type": "markdown",
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "official-public-snapshot",
       "license_summary": "Official public government page snapshot retained for reference and citation.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -166,6 +170,7 @@
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "official-public-snapshot",
       "license_summary": "Official public government page snapshot retained for reference and citation.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -187,7 +192,7 @@
       "notes_zh": "可用于统一 land_use_code 语义。"
     },
     {
-      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES",
       "title": "百年京张AI创新带三层范围与三处重点区临时粗略 polygon",
       "publisher": "Repository maintainers",
       "source_kind": "provisional_repository_data",
@@ -198,6 +203,7 @@
       "authority_level": "PROVISIONAL_REPOSITORY",
       "timeliness_level": "T0",
       "public_access_status": "provisional_repository",
+      "license": "repository-provisional",
       "license_summary": "Repository-maintained provisional geometry for intake testing and visualization only.",
       "review_status": "provisional",
       "usable_for_formal": "provisional_only",
@@ -246,6 +252,7 @@
       "authority_level": "A0",
       "timeliness_level": "T1",
       "public_access_status": "public_local_snapshot",
+      "license": "official-public-snapshot",
       "license_summary": "Official public government text; attributed Markdown snapshot retained for reference. No reuse permission is inferred for page chrome, images or third-party editorial content; any reuse remains subject to official terms.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -283,6 +290,7 @@
       "authority_level": "A0",
       "timeliness_level": "T1",
       "public_access_status": "public_local_snapshot",
+      "license": "official-public-snapshot",
       "license_summary": "Official public government text; attributed Markdown snapshot retained for reference. No reuse permission is inferred for page chrome, images or third-party editorial content; any reuse remains subject to official terms.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -306,6 +314,192 @@
       "notes_zh": "法律于 2023-06-28 通过（人大常委会通过/公布），gov.cn/Xinhua 页面于 2023-06-29 发布；2023-09-01 起施行。第39条的现场指导、人工办理边界仅限正文列举的医疗、社会保障、金融、生活缴费等服务事项公共服务场所，不能泛化为所有公共空间或数字界面。快照仅供离线检索，具体场所合规仍需单独判断。"
     },
     {
+      "source_id": "DATA-SRC-CASE-SXSW",
+      "title": "SXSW (South by Southwest) - annual conference & festival official site",
+      "publisher": "South by Southwest, LLC",
+      "source_kind": "public_case_reference",
+      "url": "https://www.sxsw.com/",
+      "published_date": "2026-08-12",
+      "accessed_date": "2026-08-20",
+      "file_type": "webpage",
+      "authority_level": "CASE_OFFICIAL_WEBSITE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_webpage",
+      "license": "site-terms-apply",
+      "license_summary": "Official event homepage snapshot; reference only for qualitative mechanism (annual festival + city brand linkage). No reuse permission inferred for page content, images or third-party material; homepage is a living page, snapshot date used as retrieval date.",
+      "review_status": "approved",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "qualitative mechanism comparison in the case table (Section 13)"
+      ],
+      "prohibited_uses": [
+        "data extraction",
+        "attendance or economic figures as facts",
+        "claiming affiliation or endorsement"
+      ],
+      "topics": [
+        "annual_event",
+        "city_brand",
+        "case_reference"
+      ],
+      "notes_zh": "仅作机制级定性参考（年度节事与城市品牌联动）；不引用其数据或断言其效果；反向验证结论：活动体系需城市传播联动与长周期培育。"
+    },
+    {
+      "source_id": "DATA-SRC-CASE-CES",
+      "title": "CES - official site of the Consumer Electronics Show",
+      "publisher": "Consumer Technology Association (CTA)",
+      "source_kind": "public_case_reference",
+      "url": "https://www.ces.tech/",
+      "published_date": "2026-01-06",
+      "accessed_date": "2026-08-20",
+      "file_type": "webpage",
+      "authority_level": "CASE_OFFICIAL_WEBSITE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_webpage",
+      "license": "site-terms-apply",
+      "license_summary": "Official event homepage snapshot; reference only for qualitative mechanism (expo aggregates industry factors). No reuse permission inferred for page content, images or third-party material; homepage is a living page, snapshot date used as retrieval date.",
+      "review_status": "approved",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "qualitative mechanism comparison in the case table (Section 13)"
+      ],
+      "prohibited_uses": [
+        "data extraction",
+        "attendance or economic figures as facts",
+        "claiming affiliation or endorsement"
+      ],
+      "topics": [
+        "expo",
+        "industry_attraction",
+        "case_reference"
+      ],
+      "notes_zh": "仅作机制级定性参考（展会集聚产业要素与招引转化）；不引用其数据；反向验证结论：招引转化闭环需长周期验证，本方案因此将招引转化列为过程性指标。"
+    },
+    {
+      "source_id": "DATA-SRC-CASE-WEBSUMMIT",
+      "title": "Web Summit - official site (Lisbon, November 9-12, 2026)",
+      "publisher": "Web Summit",
+      "source_kind": "public_case_reference",
+      "url": "https://websummit.com/",
+      "published_date": "2026-08-15",
+      "accessed_date": "2026-08-20",
+      "file_type": "webpage",
+      "authority_level": "CASE_OFFICIAL_WEBSITE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_webpage",
+      "license": "site-terms-apply",
+      "license_summary": "Official event homepage snapshot; reference only for qualitative mechanism (conference international communication tied to host city). No reuse permission inferred for page content, images or third-party material; homepage is a living page, snapshot date used as retrieval date.",
+      "review_status": "approved",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "qualitative mechanism comparison in the case table (Section 13)"
+      ],
+      "prohibited_uses": [
+        "data extraction",
+        "attendance or economic figures as facts",
+        "claiming affiliation or endorsement"
+      ],
+      "topics": [
+        "conference",
+        "international_communication",
+        "case_reference"
+      ],
+      "notes_zh": "仅作机制级定性参考（会议与国际传播、主办城市绑定）；不引用其数据；反向验证结论：城市承载需配套设施支撑，本方案因此配置多语导视与接待服务。"
+    },
+    {
+      "source_id": "DATA-SRC-CASE-SETOUCHI",
+      "title": "Setouchi Triennale official site (launched 2010, triennial art festival)",
+      "publisher": "Setouchi Triennale Executive Committee",
+      "source_kind": "public_case_reference",
+      "url": "https://setouchi-artfest.jp/en/",
+      "published_date": "2026-08-10",
+      "accessed_date": "2026-08-20",
+      "file_type": "webpage",
+      "authority_level": "CASE_OFFICIAL_WEBSITE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_webpage",
+      "license": "site-terms-apply",
+      "license_summary": "Official festival homepage snapshot; reference only for qualitative mechanism (long-term local community operation of an art festival). No reuse permission inferred for page content, images or third-party material; homepage is a living page, snapshot date used as retrieval date.",
+      "review_status": "approved",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "qualitative mechanism comparison in the case table (Section 13)"
+      ],
+      "prohibited_uses": [
+        "data extraction",
+        "attendance or economic figures as facts",
+        "claiming affiliation or endorsement"
+      ],
+      "topics": [
+        "art_festival",
+        "local_community_operation",
+        "case_reference"
+      ],
+      "notes_zh": "仅作机制级定性参考（在地社区长期参与）；不引用其数据；反向验证结论：社区意愿决定可持续性，本方案因此设计「社区运营公约」与议事机制。"
+    },
+    {
+      "source_id": "DATA-SRC-CASE-ZGCFORUM",
+      "title": "中关村论坛官方网站（创办于2007年）",
+      "publisher": "中关村论坛组委会",
+      "source_kind": "public_case_reference",
+      "url": "https://www.zgcforum.com/",
+      "published_date": "2026-08-18",
+      "accessed_date": "2026-08-20",
+      "file_type": "webpage",
+      "authority_level": "CASE_OFFICIAL_WEBSITE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_webpage",
+      "license": "site-terms-apply",
+      "license_summary": "Official forum homepage snapshot; reference only for qualitative mechanism (domestic flagship innovation forum with year-round regular activities). No reuse permission inferred for page content, images or third-party material; homepage is a living page, snapshot date used as retrieval date.",
+      "review_status": "approved",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "qualitative mechanism comparison in the case table (Section 13)"
+      ],
+      "prohibited_uses": [
+        "data extraction",
+        "attendance or economic figures as facts",
+        "claiming affiliation or endorsement"
+      ],
+      "topics": [
+        "innovation_forum",
+        "annual_event",
+        "case_reference"
+      ],
+      "notes_zh": "仅作机制级定性参考（国家级创新论坛平台、月月有活动季季有亮点）；不引用其数据；本方案年度活动日历与之错位协同。"
+    },
+    {
+      "source_id": "DATA-SRC-CASE-WAIC",
+      "title": "世界人工智能大会（WAIC）官方网站",
+      "publisher": "WAIC 组织方（东浩兰生等承办执行）",
+      "source_kind": "public_case_reference",
+      "url": "https://www.worldaic.com.cn/",
+      "published_date": "2026-08-16",
+      "accessed_date": "2026-08-20",
+      "file_type": "webpage",
+      "authority_level": "CASE_OFFICIAL_WEBSITE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_webpage",
+      "license": "site-terms-apply",
+      "license_summary": "Official conference homepage snapshot; reference only for qualitative mechanism (AI expo for industry showcase and talent aggregation). No reuse permission inferred for page content, images or third-party material; homepage is a living page, snapshot date used as retrieval date.",
+      "review_status": "approved",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "qualitative mechanism comparison in the case table (Section 13)"
+      ],
+      "prohibited_uses": [
+        "data extraction",
+        "attendance or economic figures as facts",
+        "claiming affiliation or endorsement"
+      ],
+      "topics": [
+        "ai_expo",
+        "talent_aggregation",
+        "case_reference"
+      ],
+      "notes_zh": "仅作机制级定性参考（AI展会展示与人才集聚、安全合规治理表达）；不引用其数据；本方案关注治理三句式与人工复核的公开表达。"
+    },
+    {
       "source_id": "PACKAGE-GEOMETRY",
       "title": "本方案 geometry 层(provisional 概念设计)",
       "publisher": "JohnXu22786 / dsh-haidian-agent",
@@ -317,7 +511,8 @@
       "authority_level": "SELF-DECLARED",
       "timeliness_level": "T0",
       "public_access_status": "cleared_for_repo",
-      "license_summary": "Original AI-generated design geometry, free for repository display.",
+      "license": "community-display-only",
+      "license_summary": "Original AI-generated design geometry, free for repository display; no commercial use or derivative redistribution outside the community display context.",
       "review_status": "self_reviewed",
       "usable_for_formal": "provisional_only",
       "allowed_uses": [
