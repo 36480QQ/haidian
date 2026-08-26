@@ -68,7 +68,7 @@
       "ai_package_stages": {
         "submissions/JohnXu22786/zhichunlu-transfer-hub": "formal"
       },
-      "total_bytes": 11398479,
+      "total_bytes": 7584688,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -203,5 +203,154 @@
       "target": "professional_review.py",
       "message": "professional_review: PASS"
     }
-  ]
+  ],
+  "figure_qc": {
+    "ok": true,
+    "ink_ok": true,
+    "clip_clear": true,
+    "overlap_clear": "not_verified",
+    "summary": "Machine QC 2026-08-26 (round-5): all 13 PNGs pass ink targets (maps>=0.08, charts/logo>=0.10) and edge-clip bands; all 4 PDFs pass first-page ink/clip/title checks. Text-bbox overlap is not machine-verifiable post-hoc, so overlap_clear is declared not_verified and the human reviewer remains the pass authority.",
+    "checks": {
+      "key-areas.en.png": {
+        "ink": 0.2414,
+        "ink_ok": true,
+        "ink_target": 0.08,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "key-areas.png": {
+        "ink": 0.245,
+        "ink_ok": true,
+        "ink_target": 0.08,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "land-use-structure.en.png": {
+        "ink": 0.2374,
+        "ink_ok": true,
+        "ink_target": 0.08,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "land-use-structure.png": {
+        "ink": 0.2379,
+        "ink_ok": true,
+        "ink_target": 0.08,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "logo.png": {
+        "ink": 0.3731,
+        "ink_ok": true,
+        "ink_target": 0.1,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "metrics-evidence.en.png": {
+        "ink": 0.2247,
+        "ink_ok": true,
+        "ink_target": 0.1,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "metrics-evidence.png": {
+        "ink": 0.2251,
+        "ink_ok": true,
+        "ink_target": 0.1,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "mobility-bluegreen.en.png": {
+        "ink": 0.168,
+        "ink_ok": true,
+        "ink_target": 0.08,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "mobility-bluegreen.png": {
+        "ink": 0.1685,
+        "ink_ok": true,
+        "ink_target": 0.08,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "region-loop.en.png": {
+        "ink": 0.3309,
+        "ink_ok": true,
+        "ink_target": 0.08,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "region-loop.png": {
+        "ink": 0.3334,
+        "ink_ok": true,
+        "ink_target": 0.08,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "site-overview.en.png": {
+        "ink": 0.1816,
+        "ink_ok": true,
+        "ink_target": 0.08,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "site-overview.png": {
+        "ink": 0.1826,
+        "ink_ok": true,
+        "ink_target": 0.08,
+        "edge_dark_frac": 0.0,
+        "clip_clear": true,
+        "overlap_clear": "not_verified"
+      },
+      "a0-boards.en.pdf": {
+        "page1_ink": 0.1719,
+        "page1_ink_ok": true,
+        "page1_edge_dark_frac": 0.0,
+        "page1_clip_clear": true,
+        "page1_title_ink": 0.61785,
+        "page1_title_present": true,
+        "overlap_clear": "not_verified"
+      },
+      "a0-boards.pdf": {
+        "page1_ink": 0.176,
+        "page1_ink_ok": true,
+        "page1_edge_dark_frac": 0.0,
+        "page1_clip_clear": true,
+        "page1_title_ink": 0.64889,
+        "page1_title_present": true,
+        "overlap_clear": "not_verified"
+      },
+      "a3-booklet.en.pdf": {
+        "page1_ink": 0.096,
+        "page1_ink_ok": true,
+        "page1_edge_dark_frac": 0.00086,
+        "page1_clip_clear": true,
+        "page1_title_ink": 0.07279,
+        "page1_title_present": true,
+        "overlap_clear": "not_verified"
+      },
+      "a3-booklet.pdf": {
+        "page1_ink": 0.0984,
+        "page1_ink_ok": true,
+        "page1_edge_dark_frac": 0.0,
+        "page1_clip_clear": true,
+        "page1_title_ink": 0.07279,
+        "page1_title_present": true,
+        "overlap_clear": "not_verified"
+      }
+    }
+  }
 }

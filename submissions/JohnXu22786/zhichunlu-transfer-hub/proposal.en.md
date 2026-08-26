@@ -165,7 +165,7 @@ Ten scenario cards cover the six scenario domains plus station-domain cultural e
 | AI community service booth | Community service corner | Residents' committee + volunteers | Human review; one-key shutdown | Double human review for errands | Physical counter | Completion & satisfaction | Pilot evaluation fails |
 | Non-motorized parking guidance | Both sides of the transit link | Sub-district + parking manager | Bay occupancy aggregated | Overflow alerts routed to humans | Physical induction & supervisors | Parking compliance rate | Bay turnover below target |
 | Station public-event broadcast | Hub information screens | Rail operator | Read-only public info | Content approved before publishing | Static bulletin board | Information accuracy rate | Approval chain fails |
-| Aged-care errands & face guidance | Dedicated seat in community booth | Community + professional agency | No biometric collection | Whole-process human accompaniment | Phone & home-visit errands | Elderly coverage | Privacy review fails |
+| Aged-care assisted errands & voice guidance | Dedicated seat in community booth | Community + professional agency | No biometric collection | Whole-process human accompaniment | Phone & home-visit errands | Elderly coverage | Privacy review fails |
 | Soundscape & art tour | Installation nodes in plaza & greenway | Culture operator | Visit aggregation only | Quarterly human content review | Paper tour booklet | Participation count | Installation damage rate above limit |
 
 > **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK-2026-05-18] (scenario card requirements correspond to the taskbook).
@@ -184,7 +184,7 @@ Ten scenario cards cover the six scenario domains plus station-domain cultural e
 | Community booth | Community corner | Community + volunteers | Discussion solicitation + monthly rotation |
 | Parking guidance | Both corridor sides | Sub-district + parking manager | Bay aggregation + supervisor diversion |
 | Event broadcast | Hub screens | Rail operator | Read-only + human approval |
-| Aged-care errands | Booth dedicated seat | Community + professional agency | No face capture + accompanied service |
+| Aged-care assisted errands | Booth dedicated seat | Community + professional agency | No biometric capture + fully human-accompanied service |
 | Soundscape tour | Plaza & greenway installations | Culture operator | Visit aggregation + quarterly review |
 
 **Technology readiness level (TRL) estimate table** (inference caliber: TRL ranges are estimated from public evidence of technology maturity; all are concept estimates, not technology commitments; the "verifiable basis" column gives public-source classes whose itemized URLs, published and accessed dates are registered in [source:DATA-SRC-TRL-BASIS-2026-08-25] entries TRL-EVID-01 to 10; TRL shall be re-assessed at pilot kickoff. Technologies without publicly verifiable evidence are deliberately NOT TRL-graded in this table):
@@ -292,7 +292,8 @@ Wayfinding and symbol system (concept): three levels — regional (entering the 
 
 | Item | Rail operator interface | Construction diversion | Cost tier (concept) | Estimation method | Base period | Cost scope | Confidence | Recompute trigger |
 |---|---|---|---|---|---|---|---|---|
-| Corridor & over-track study | Operator interface confirmation + protection-zone check | Night window diversion | Low | Unit-cost range analogy vs similar city covered links | 2026 concept base (no commitment) | Structure+foundations+lighting; excl. land and rail works | Low (concept) | Pilot feasibility study |
+| Covered corridor (transfer link) | Operator interface confirmation + protection-zone check | Night window diversion | Low | Unit-cost range analogy vs similar city covered links | 2026 concept base (no commitment) | Structure+foundations+lighting; excl. land and rail works | Low (concept) | Pilot feasibility study |
+| Over-track development study | Structural & protection-zone interface review with rail operator required | To be argued with rail operation windows | Tier not yet set | Pending feasibility study and rail-interface conditions; NOT estimable by covered-corridor analogy | 2026 concept base (no commitment) | Concept research stage only; excl. works, land and rail works | N/A (concept) | Recompute once the feasibility study and rail-interface conditions are established |
 | AI Hall equipment | Concourse interface protocol | No major civil works | Low-mid | Public commercial equipment price range analogy | 2026 concept base | Guidance terminals/screens/edge nodes; excl. software customization | Low (concept) | Supplier quotation |
 | Smart light poles | Power & pole interface | With municipal renewal | Mid | Public smart-pole project unit-price range analogy | 2026 concept base | Poles+sensors+edge computing; excl. utility ducts | Low (concept) | Municipal budget estimate |
 | Bike geofence | No rail interface | Off-station zones | Low | Public bike-share pricing model estimate | 2026 concept base | Bay markings+geofence; operations extra | Low (concept) | Operator commercial proposal |

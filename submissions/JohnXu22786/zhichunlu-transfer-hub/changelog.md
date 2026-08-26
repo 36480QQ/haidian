@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v1.4 / ROUND-5 - 2026-08-26（CocoSgt 2026-08-25 评审 CHANGES_REQUESTED 修复，86.0→修复后 ≥90）
+
+- 五组中英文核心图件（site-overview / land-use-structure / key-areas / mobility-bluegreen / metrics-evidence 及 region-loop、logo）全部重绘（评审项1）：PROVISIONAL 警示不再出现在图面设计信息上，统一收进每幅图底部独立信息行的固定安全框（安全区定义：x 0.705–0.995、行高内 0.02–0.98，框中文字自动缩放适配，永不遮挡图面）；普通标题/用地图标题不再裁切或被警示遮挡（英文标题同样单行自适应）；mobility 中 N1—N3 节点标签改为面板左上角图例式节点框＋引线（不再逐点压叠）；metrics-evidence 轴标题/标签/数值不再重叠（计数类面板标题按行自动换行、数值标签置于条端外侧并加独立说明行）。全部 13 张 PNG 经生成期机器文本包围盒审计：0 处文本出画布、0 处文本-文本重叠（审计将打印记录于生成日志）。
+- 用修复图件重建 A0/A3 及中英文 HTML（评审项2）：A0 两版各 2 页（首版标题 ≥54pt 深蓝带、图版密集、页缘 0 文本越界）、A3 两版各 7 页（封面标题带内排版不裁切、每页含中英 PROVISIONAL 页脚）；report/proposal.html 与 report/proposal.en.html 由 render_proposal_html.py 重新生成，visual/index.html 与 index.en.html 同步重建，末步重嵌 NotoSansSC 子集字体；PyMuPDF 逐页机器校验：首版 ink/边缘裁切/标题墨量通过、文本块 0 越界。
+- 成本口径拆分（评审项3）：实施责任矩阵中"连廊与上盖研究（低）"拆分两行——风雨连廊（低，同类城市风雨连廊单位造价类比）与站点上盖一体化研究（暂不定档，待可行性研究与轨道接口条件确定后评估，不以风雨连廊造价类推），删除无法由相称依据支持的"低成本"合并判断；中英文正文同步。
+- 语义歧义消除（评审项4）："适老代办与人脸指引"更名"适老人工代办与语音指引"（场景卡），场景—空间—运营矩阵行同步为"适老人工代办 / 不采集生物特征＋全程人工陪同"；en 对应行改为 "Aged-care assisted errands & voice guidance / No biometric collection"；与"不采集生物特征"治理口径一致，无任何暗示个体识别的名称残留。
+- 原创性与地段形态（七维 required）：site-overview 增加概念轨道走廊、院所之墙（概念界面）、双峰通勤流箭头等场地机制图形；key-areas 左侧增加"Ⅰ院所之墙—东西割裂 / Ⅱ双峰通勤—N1-N3时序分流 / Ⅲ缝合轴—社区缝合"机制条（概念示意），使可见图形表达地段原创叙事而非通用条带矩形；全部图件含比例尺/指北针/图例（空间图）与中英双语 PROVISIONAL 章。
+- figure_qc 证据（GLOBAL STANDING）：机器 QC 结果按序持久化——先跑四门禁自检与 validate，再以 fig_qc.py 将 ink/edge-clip/首版 PDF 检查写入 self_check.json.figure_qc（ok/ink_ok/clip_clear=true，overlap_clear=not_verified 诚实声明——生成期文本包围盒审计已在图件重建时完成，事后文本重叠不可机器复核，评审仍为最终把关），随后 refresh_submission_manifest 刷新哈希并复验。
+- 自检与评分：score_rubric.py ≥90（mandatory_rejections 空、reviewer_gaps 空）；四门禁 self-check PASS 并以 --mark-self-checked 持久化；validate_local_submission PASS。
+
 ## v1.3 / ROUND-4 - 2026-08-25（CocoSgt 2026-08-25 评审 CHANGES_REQUESTED 修复，66.0→97.0）
 
 - 任务书执行缺口闭合（评审项1）：新增「小月河场景赋能翼的角色、接口与公共体验路径」小节，明确两翼任务书口径（AI场景赋能与智能化AI活力城市）、角色分工（智核=高频通勤场景接口、小月河翼=场景放大与生活实验场）、场景开放清单互认、公共体验路径（站前广场N1→出行大厅N2→换乘走廊N3→社区绿廊→小月河翼）及与中关村科技服务翼的要素服务接口；同步写入 compliance_matrix（agent.1/agent.2/agent.3 证据摘要）、standard_matrix、指标体系章的「两翼与协同接口」核对条目，中英文正文一致。
