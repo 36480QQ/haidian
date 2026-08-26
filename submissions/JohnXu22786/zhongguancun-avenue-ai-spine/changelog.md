@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v4.0 - 2026-08-27
+
+ROUND-5 REPAIR（CocoSgt 80.0/100 CHANGES_REQUESTED 2026-08-26T13:37，逐项落实）：
+
+- metrics-evidence.png/.en.png 重绘：消除顶部多组标题/说明互相叠压（此前 fig.suptitle 与双侧面板标题、底部说明在 tight 裁剪下叠压，英文版尤重）。现为单一图级标题（安全边距内）+ 左右面板各自单行短标题 + 图底部统一口径说明（figure 坐标系内，不与轴标签冲突）；不再使用 bbox_inches="tight"；英文版比例标签改为两行（metric 代码名独立成行）并加宽左缘，杜绝裁切。生成期逐对文本包围盒检查 0 重叠、全部文本在画布内。
+- key-areas.en.png（及全部竖版制图板）标题修复：警示横幅（PROVISIONAL BOUNDARY）保持在顶部 y=0.976，标题改为自动换行多行文本（英文 3 行 @17pt）置于 y=0.902，与警示条留出安全净空；标题行宽逐一测量不越出左右边界。图例下移至 (0.5,0.032)、制图区底边升至 0.15，消除英文图例与比例尺"0"刻度标签的重叠。
+- 全部 14 张图（zh/en 各 7）+ A0×2 页/A3×8 页双语 PDF 重新生成：figsize ~12×8（图表）或 10×14 竖版（地图）@150dpi，标题 17–21pt、图例 13pt、标注 11–13.5pt；PROVISIONAL 警示（临时概念边界·非官方红线·官方数据发布后复算 / PROVISIONAL BOUNDARY·NOT AN OFFICIAL RED LINE·RECOMPUTE AFTER OFFICIAL DATA）每图顶部横幅，不被遮挡；en 图 100% 英文标签（生成期断言无 CJK）；ink（lum<200）与 10px 边缘色距探针逐项测量通过。
+- 机器 QC 升级为生成期验证：matplotlib 渲染器逐对文本包围盒重叠扫描（tick 标签精确排除——轴布局定位、窗口范围可能过期）+ 画布内边界检查，全部 14 图 text_overlap_pairs_at_generation=0、in_canvas_clear=true、edge_clip=0.0；PDF 页 ink/边缘裁剪按页记录（背景为画布 #bec7d2 检出后按页测量）；结果持久化于 self_check.json[figure_qc]（ok=true、ink_ok=true、clip_clear=true、overlap_clear=true，附逐图测量值），不再以 not_verified 封顶表达完整度。
+- visual/index.html + visual/index.en.html 修复"重点区域说明框文字向右溢出"：三处重点区域色带标签按 PIL 实测宽度换行（主名/副口径两行，字号自适应至框内），右下说明框改为 3 行 tspans 并在生成期做全量 SVG 文本宽度审计（1120 视口内无越界）；用地 24 分区、provisional 警示横幅、metrics 数值口径保持不变。
+- report/proposal.html 与 report/proposal.en.html 由 render_proposal_html.py 从 proposal.md/.en.md 重新渲染，4 页 HTML 最后重新内嵌 Noto Sans SC 子集字型（zh 页 278KB woff、en 页 0 残留功能性中文）；manifest.json 全部 43 项 hash 刷新，self_check.json[figure_qc] 合并后同步更新自身 hash。
+- 门禁：valroot 四门禁全部通过并持久化 self_check（formal-review-ready）；validate_local_submission PASS；score_rubric ≥90、reviewer_gaps 清零、无强制拒收项。
+
 ## v3.0 - 2026-08-26
 
 ROUND-4 REPAIR（CocoSgt 83.0→修复，逐项落实）：
