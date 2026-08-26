@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "2931a6f8ed37f6b032f7603d5a3c5f9ae3b545938def8abd20b44c52cc1bc2d1"
+      "sha256": "46e8d9cbf89b2f89452c95206afd8966e83e462c23b640743ff0100a07dcd57e"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b88b95828de6df021c27f0216dc7503aaeff020ac07e02ff981566ef7f960cbe"
+      "sha256": "1436225ef53eb7682f934d0c0c4590a68f91135064263a81885e7ba80be30ac9"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bfd36b0fa39d3071df9758b4c415ad95fc05bba34bc54ac9b62aa84b706ef3f1"
+      "sha256": "2c7add2307f9785e39bbeba688c5e2c959ab91637a084f9465533926edab3999"
     },
     {
       "path": "report/narrative.md",
@@ -93,28 +93,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "6a426ca1b14d403106168049bc9d7c1b02335270ebeb6c89d3d507c141eee35f"
+      "sha256": "a73cf645410eb05783f27b069acd6d1e5a881973bb2461f55bd7140ba0c30f28"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d2ce6849b807ba9849f36f9cf66d1db79d27fc302d94af2af4bd128a47a57f05"
+      "sha256": "19535ea4d40f3a761de4945e32c78a76fdcd60a9669b3322ab4894e9fa003177"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "dacf303c60461f444d572e41c8bbc384403765247e49a2205bdb3d92fb5a837e"
+      "sha256": "a84acdc0aa7fa63f0dae4b6b60be40b89e3b5d051d617c2c27a3ab20f1e257a4"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c0b5857abe4aeda99bb23be79d93d88ce15694eece8598498bac5d34f59ac07c"
+      "sha256": "ce329f929bd69b6306175fd673f9842e6c4e5733d18269bbf5024c253098529f"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "97dff6f4a23ac472e617f55f50f157a55fb29bd0d14b8927ab8f628c5d5b5c7a"
+      "sha256": "1422d366fefb55ff6cdb876cb0527c360b68a946d97e9530e732e86abde6f519"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1d4e6b1cc601e8bf6b15248052f65fe9b6dc52ad7f3fa2264f3d08fe05205932"
+      "sha256": "7461ebb0f3aa1ccbb7f7a71e7fdcffdad4af53f30fb504256c7b623c0c94648c"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c210e23c336e8ba2ae41050867a611cbe03fbbf39050c8c4c42f308069d6ad17"
+      "sha256": "1f5334206866ba0292c9d4343ce79f0e2647b999318c78da8798673e17757127"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "e43f7fa56cc2b15397d5c4b9dfeada82224c2bd406ba343b5ac5c5a3dab788f5"
+      "sha256": "d78d28c31368fc0837549dacacce32506a3f4ff481622d1ac3c6ffa6480ed565"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "8370a3110257c5a276f1b659b7a79f9a097492b9aa388c25b6a473724b0744e7"
+      "sha256": "8fb273157878a71aef231102a99cb2f33984f20c285eca6015f63e844d14fa41"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "9ff547934fdd4456151ab9309c7fa4a1f39358e19f84ce86160b2bfa4112c6bc",
+      "sha256": "177e7323d7a62efb4f0ba32193569f268e768de18c26475017e9d7963a2a8f9b",
       "language": "neutral"
     },
     {
@@ -521,7 +521,7 @@
       "path": "visual/assets/fonts.css",
       "role": "asset",
       "required": false,
-      "sha256": "9dae37b9047fa98133538033bb86c7a12ab025f453b7a9afa908ad4b69faf714",
+      "sha256": "3c5b50b011c306d5441132f1db83120d3b0090848b9010cc2cf1d43935b4069f",
       "title_zh": "嵌入式 Noto Sans SC 子集样式（评审渲染用）",
       "title_en": "Embedded Noto Sans SC subset stylesheet for reviewer-side rendering",
       "description_zh": "按 SIL OFL 1.1 分发（许可全文见文件头注释）；base64 嵌入字符子集，供无 CJK 字体环境离线正确渲染中文。",
@@ -591,7 +591,7 @@
       "title_en": "Qi-Pulse deterministic self-verification results",
       "description_zh": "七组 30 项确定性检查全部 PASS：场景卡 156 演练复算、气数协议绑定、岗位闭环、分期条件门、指标跨文件一致性、双语标签对齐、CJK 字体覆盖。",
       "description_en": "Seven groups / 30 deterministic checks all PASS: scenario-card 156-drill recount, protocol binding, role loop, phase gates, metrics cross-file consistency, bilingual tag parity, CJK font coverage.",
-      "sha256": "a28d022964e1ba16ed058e8107ffe926ab02e06273185f5a1def6f47de4c2e3d"
+      "sha256": "4841d9d91b836ec39ee97d822c17de90e291be71650820929860157e14dba419"
     },
     {
       "path": "assets/screenshots/a3-booklet-contact-sheet.png",
@@ -629,6 +629,25 @@
       "language": "en",
       "translation_of": "assets/figures/key-area-detail.png",
       "sha256": "2b25dd98eaf055e01bda5f6ff3fcea3fd489be1e2b5b883c4cbbfd8c1e6d500c"
+    },
+    {
+      "path": "assets/figures/dazhongsi-block-concept.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "title_zh": "大钟寺街区尺度概念板",
+      "title_en": "Dazhongsi block-scale concept board",
+      "description_zh": "以 PROV-KEY-003 质心为中心约400m半径的概念组织图：建筑足迹底、16留白类约束、金色虚线概念体量、步行流线、铺装分区、街道家具与节气活动；全部新增元素标注概念示意。",
+      "description_en": "A c. 400 m concept-organisation board centred on the PROV-KEY-003 centroid: building-footprint base, code-16 reserve constraint, dashed-gold conceptual massing, pedestrian flows, paving zones, street furniture, and solar-term events; all new elements are labelled conceptual.",
+      "sha256": "3bb2ba98af2501c617a4aba2f64684687239effef57c0de890522d466d59a2d9"
+    },
+    {
+      "path": "assets/figures/dazhongsi-block-concept.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/dazhongsi-block-concept.png",
+      "sha256": "42b9f780432cf1a57ab5db81740c7a255e65c9ce6165fe6ba96c8a45059d3954"
     }
   ],
   "validation_claim": {

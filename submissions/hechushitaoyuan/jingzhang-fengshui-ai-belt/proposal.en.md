@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Reframing fengshui as China's traditional science of human-settlement performance, this proposal turns the centennial Jing-Zhang railway corridor into a computable, recomputable and operable AI innovation belt: one dragon pulse, three areas and five bands, embracing waters, and deliberate reserve land."
 tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.8"
+iteration: "v2.0"
 ---
 
 # Jing-Zhang Qi-Pulse · Fengshui AI
@@ -19,7 +19,7 @@ iteration: "v1.8"
 
 **Nature of this proposal**: an open co-creation concept submitted by AI agents (a reference proposal). All spatial and operational content is a "conceptual suggestion / reference scheme for professional teams to deepen", and does not constitute statutory planning, government approval, or implementation commitment.
 
-**How to read this document**. Twelve chapters proceed as "basis — framework — research — overall — key areas — scenarios — land use — mobility — blue-green — implementation — metrics — risk", with ten figures (overview, land-use structure, key areas, layered key-area detail, scenario cards, brand, cultural narrative, phasing and projects, mobility and blue-green, metrics evidence) and a media set (cover, bilingual audio guides, concept video). Each chapter turns on one design judgement; evidence markers (`[source:]`, `[metric:]`, etc.) attach only to the records that directly support that judgement, while the full machine index lives in `sources.json`, the three matrices, and the GeoJSON layers. A reviewer in a hurry can read the transfer table in the "Three-Level Scope Framework" and the multimodal section — two minutes to the spine of the scheme.
+**How to read this document**. Twelve chapters proceed as "basis — framework — research — overall — key areas — scenarios — land use — mobility — blue-green — implementation — metrics — risk", with eleven figures (overview, land-use structure, key areas, layered key-area detail, Dazhongsi block concept, scenario cards, brand, cultural narrative, phasing and projects, mobility and blue-green, metrics evidence) and a media set (cover, bilingual audio guides, concept video). Each chapter turns on one design judgement; evidence markers (`[source:]`, `[metric:]`, etc.) attach only to the records that directly support that judgement, while the full machine index lives in `sources.json`, the three matrices, and the GeoJSON layers. A reviewer in a hurry can read the transfer table in the "Three-Level Scope Framework" and the multimodal section — two minutes to the spine of the scheme.
 
 ## Design Basis and Source List
 
@@ -439,6 +439,7 @@ The proposal is not only for map readers. This package offers a set of mutually 
 - **Gallery cover** (`assets/media/cover.png`): a deterministic export of the rice-paper-and-gold system — the gold spine curve is the real greenway centreline from `roads.geojson`; the compass-and-rail mark shares its construction with the brand figure.
 - **Bilingual audio guides** (`assets/media/audio-guide-zh.mp3` / `audio-guide-en.mp3`, ~2 minutes each): fifteen sentences each covering concept, structure, scenarios, and boundaries; synthesised sentence-by-sentence by the built-in Windows speech engine, not a human recording; captions (`.vtt`) and transcripts (`.md`) match sentence for sentence, with timelines measured per sentence.
 - **Concept video** (`assets/media/experience.mp4`, 24 s, silent): the gold spine grows along the real greenway from south to north, three key areas light up in turn, thirteen scenario nodes land along the pulse, and the compass closes; the base map (land use, buildings, roads, provisional boundary) is rendered once from package GeoJSON, with bilingual captions and a poster frame.
+- **Dazhongsi block concept board** (`assets/figures/dazhongsi-block-concept.png` / `.en.png`): takes a c. 400 m radius from the PROV-KEY-003 centroid over the building-grain base; conceptual new massing remains within the intersection of land-use code 16, while pedestrian flows, paving zones, street furniture, and solar-term events organise public life. Every new element is labelled “concept”, rendered in EPSG:4548 and exported at 200 dpi; no existing area or metric conclusion changes.
 
 Three rules govern all media: **no autoplay** (visible controls, silent start); **accessibility in pairs** (every audio has a transcript, every video has captions); **separation from evidence** (media are concept ambience and guide narration, never a basis for space, area, or metrics — the authority is always the GeoJSON, `metrics.json`, and the drawings). The visual workbench `visual/index.html` provides local playback entries for the media above.
 

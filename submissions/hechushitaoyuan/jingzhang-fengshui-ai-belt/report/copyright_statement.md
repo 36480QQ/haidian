@@ -1,7 +1,7 @@
 # 资产权利、生成链与再分发台账 · 京张气脉 · 风水AI
 
 > Asset rights, provenance, attribution, redistribution, and replacement ledger
-> 台账日期：2026-08-26｜适用对象：`submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/` v1.8
+> 台账日期：2026-08-26｜适用对象：`submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/` v2.0
 
 ## 0. 台账效力与状态口径
 
@@ -47,8 +47,8 @@
 
 | 路径 | 页数 / 生成链 | 字体与第三方内容 | 再分发与限制 |
 | --- | --- | --- | --- |
-| `drawings/a3-booklet.pdf` | 7 页；ReportLab / Matplotlib 编译；中英图件、重点区细化、重点区分层详图、场景卡表与指标排版 | 中文图件 PDF 本地渲染并嵌入 Noto Sans SC 子集；包含 OSM 静态语境，无外部商业图片 | 可随投稿分发/打印；保留 OSM 署名与 provisional 提示 |
-| `drawings/a3-booklet.en.pdf` | 7 页；英文版 A3 册子，与中文册同源 | 英文图件 PDF 本地渲染并使用内置 DejaVu Sans | 可随投稿分发/打印；保留 OSM 署名与 provisional 提示 |
+| `drawings/a3-booklet.pdf` | 8 页；ReportLab / Matplotlib 编译；中英图件、重点区细化、重点区分层详图、大钟寺街区概念板、场景卡表与指标排版 | 中文图件 PDF 本地渲染并嵌入 Noto Sans SC 子集；包含 OSM 静态语境，无外部商业图片 | 可随投稿分发/打印；保留 OSM 署名与 provisional 提示 |
+| `drawings/a3-booklet.en.pdf` | 8 页；英文版 A3 册子，与中文册同源 | 英文图件 PDF 本地渲染并使用内置 DejaVu Sans | 可随投稿分发/打印；保留 OSM 署名与 provisional 提示 |
 | `drawings/a0-boards.pdf` | 2 页；矢量排版输出；设计总图与系统展开 | 系统字体本地渲染；无外部照片 | 可随投稿分发/打印；provisional 警示保留 |
 | `drawings/a0-boards.en.pdf` | 2 页；英文版 A0 展板 | 同上 | 同上 |
 
