@@ -13,7 +13,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # Jingzhang New Era · Creative AI Time-Track — Official Proposal for the Centennial Jing-Zhang AI Innovation Belt Urban Design Open Call
 
-> Nature: a conceptual urban design proposal. All spatial suggestions are open, co-created reference schemes and do not constitute an approved planning conclusion, government approval, implementation commitment, or engineering feasibility conclusion. This proposal was written by an AI agent based on public and cleared materials; formal citation must be verified against the source list and registry.
+> Nature: a conceptual urban design proposal. All spatial suggestions are open, co-created reference schemes and do not constitute an approved planning conclusion, government approval, implementation commitment, or engineering feasibility conclusion. This proposal was written by an AI agent based on public materials and cleared user materials (task book excerpt, 2026-05-18); the asset rights registry is in `sources.json` and `report/copyright_statement.md`; formal citation must be verified against the source list and registry.
 
 > **Exclusivity claim (the first judgment of this proposal).** The Jingzhang New Era · Creative AI Time-Track is China's first city-scale testbed that runs autonomous vehicles and robots on the retained original rails along a real railway-heritage park; more fundamentally, it treats **time as the primary planning variable** — a 'Time-Track' framework (timeline × tracks) that lets industry, population, economy, and experience evolve over time instead of freezing into a static blueprint. This is the methodological separation from most static spatial masterplans [source:AGENT-TASKBOOK] [depth:overall_spatial_structure].
 
@@ -172,6 +172,18 @@ Based on existing POI data, the proposal lays out the vertical "base–technolog
 
 **Three local industry closed loops (already started, not drawn from scratch)** [source:AGENT-TASKBOOK]: (i) **embodied-intelligence "real-scenario data flywheel"** — real-scenario deployment collects embodied data (Lightwheel Intelligence, "the world's first embodied-data unicorn", is already on the belt) → annotation/synthesis → training → pilot → back to real scenarios; the 9 km linear real scenario is a natural scaled data-collection field and the global differentiator; (ii) **agent economy "OPC one-person-company cluster"** — the OPC order platform (78 ordering enterprises, 1,230 registered users) dispatches orders → one-person companies develop (nearly 180, mostly aged 25–30) → shared workstations + elastic compute → delivery and monetization; no "one-person-company city" form exists nationally, making it a differentiator; (iii) **AI4S "research–transfer–accelerate–industry"** — university basic research → Qingzhiyuan transfer (150 projects, 60 landed) → Zhongzhiyuan AI4S acceleration → AI+medicine/materials/life-science landing.
 
+### Regional synergy matrix (suggested mechanisms)
+
+The proposal identifies factor flows (R&D, test/pilot, mass production, talent, compute, data, capital) with five regional partners. **All entries are suggested mechanisms, not settled cooperation or government arrangements**; formal agreements are required for implementation:
+
+| Partner | R&D | Test/pilot | Mass production | Talent | Compute | Data | Capital | Interface suggestion |
+|---|---|---|---|---|---|---|---|---|
+| Beiyuan Community | co-development of human-centric apps | community-level AI service pilots | — | elderly/child care jobs | edge compute | authorized community service data | public service procurement | spread belt pilots to communities |
+| Future Science City | basic-research source | frontier tech piloting | frontier equipment production | senior R&D talent | large compute cluster | authorized research data | Science City fund | "frontier R&D transfers on the belt" mechanism |
+| Huairou Science City | large-science-facility support | materials/process piloting | — | scientist mobility | big-science compute sharing | open research data | national funds | compute and data sharing channel |
+| Yizhuang (EDA) | applied R&D | vehicle/robot integrated testing | vehicle & robot mass production | engineering talent | in-vehicle compute | production test data | Yizhuang industry fund | "R&D in Haidian, mass production in Yizhuang" two-way corridor |
+| Beijing-Tianjin-Hebei | university synergy | multi-city scenario pilots | supply-chain production | university talent circle | regional compute network | authorized regional government data | regional synergy fund | scenario-opening and industry-migration corridor |
+
 ### Urban renewal framework
 
 Four renewal object types: rail heritage and corridor public space (retain and activate), existing industry buildings (re-functionalize), old residential surroundings (livelihood improvement), and inefficient land (rectification) [depth:retain_renovate_demolish].
@@ -238,6 +250,46 @@ Positioning to build distinctive clusters for embodied intelligence, AI+ healthc
 
 **S1 Jingzhang Time-Track co-track test line (industrial test)** on the retained rails [data:geometry/roads.geojson#ROAD-001]. **S2 Affordable compute station (industrial test)** [source:AGENT-TASKBOOK]. **S3 Urban governance sandbox (industrial test)**. **S4 AI+ traffic green-wave corridor**. **S5 AI+ education developer night school**. **S6 AI+ legal compliance service window**. **S7 AI+ healthcare community assistant** [data:geometry/medical.geojson#medical]. **S8 AI+ unmanned retail and robot delivery**. **S9 AI+ public space environmental sensing** [source:AGENT-TASKBOOK]. **S10 AI+ heritage digital tour**. **S11 AI+ smart parking hub**.
 
+### Unified scenario-card specification (11 scenarios × 10 fields)
+
+> For direct deepening by operations and professional teams, S1–S11 follow the unified fields below. All are concept-level designs; operators and prerequisites are suggested directions only.
+
+| ID | Target users | Concrete space | Input data & lawful source | Minimization | Operator | Human review/takeover | Appeals & decommissioning | Maturity | KPIs & prerequisites |
+|---|---|---|---|---|---|---|---|---|---|
+| S1 co-track line | AV/robot firms, test engineers, residents (observers) | retained rails (Zhongzhiyuan–Origin section priority, graded segments) | vehicle/robot telemetry, environmental sensing, safety logs; from test firms + public sensors | no pedestrian biometrics; crowd counts only | testbed operating company + industry alliance | safety officers on site, remote takeover, emergency brake; supervisor final call | public complaint channel; stop on major incident; period-end review | pilot (concept) | KPIs: co-track km / incident rate / pass rate; prereq: heritage approval, safety assessment, insurance |
+| S2 compute station | AI firms, developers, students | Zhongzhiyuan shared compute building | usage, queue time; from operator system | statistics only, no task content | district platform + cloud provider | quota manual approval; abnormal usage halt | appeal channel; quota disputes reviewable | pilot (concept) | KPIs: subsidized hours / utilization / queue; prereq: power capacity |
+| S3 governance sandbox | agent developers, government departments | transport/environment/urban-mgmt API sandbox | de-identified governance data; authorized government interfaces | minimum fields; no personal data out of sandbox | government data platform + third-party audit | manual release and review of test results | stop on violation; public complaints | experiment (concept) | KPIs: interfaces / tests / fix rate; prereq: data governance review |
+| S4 green-wave corridor | commuters, transit riders | signal nodes along corridor | rail/bus operation data; from transit authority | vehicle-level aggregation, no personal trajectories | traffic authority + platform | signal changes confirmed manually | authority may disable anytime | experiment (concept) | KPIs: avg speed / on-time rate; prereq: data interface authorization |
+| S5 developer night school | developers, career switchers, students | Origin community classrooms / online | enrollment, course progress; user-submitted | minimum course data | district platform + university/community operators | instructors review manually | drop-out and appeal possible | mature | KPIs: enrollment / job conversion; prereq: venue and faculty |
+| S6 legal compliance window | startups, developers | Origin service window / online | user-uploaded contracts (explicit consent); user-submitted | only documents needed; no over-retention | law firm + platform | licensed lawyers review AI conclusions | user may withdraw consent | mature | KPIs: service volume / satisfaction; prereq: lawyer pool |
+| S7 community health assistant | residents, elderly/children | community health terminals / online | self-reported health, vitals (explicit consent); user-submitted | health data separately tiered; minimum fields | medical institution + platform | medical professionals review; AI not a diagnosis | withdraw consent, delete data | pilot (concept) | KPIs: reach / follow-up rate; prereq: medical partnership, compliance |
+| S8 retail & robot delivery | park employees, residents, visitors | pilot routes in key areas | pickup codes, delivery location (consent); user-submitted | minimum delivery data | operating firm + merchants | on-site staff handle exceptions | refuse delivery, complaints | pilot (concept) | KPIs: delivery time / satisfaction; prereq: low-speed right-of-way, safety |
+| S9 environmental sensing | all citizens | park belt, key-area green space | environmental telemetry (temp/humidity/noise/insects); public sensors | no personal data, environment only | park authority + vendor | environment decisions confirmed manually | public feedback | pilot (concept) | KPIs: mosquito complaints / comfort; prereq: deployment & maintenance |
+| S10 heritage digital guide | visitors, students, residents | AR nodes along heritage park | location (consent), browsing preference; user-submitted | location tiered; shortest retention | culture authority + content operator | history content curated/reviewed by humans | can disable location, complaints | pilot (concept) | KPIs: usage / satisfaction; prereq: history & copyright review |
+| S11 smart parking | visitors, residents | eco parking (Tianheng xueyuan-li east etc.) | plate (consent), reservation; user-submitted | scheduling-only, delete after use | parking operator + district platform | abnormal billing handled manually | appeal and delete data | pilot (concept) | KPIs: utilization / search time; prereq: resident consultation, plan publication |
+
+### Permit-sandbox rule architecture (concept-level)
+
+> The "machine-verifiable permit sandbox" is specified as a reviewable rule architecture. **Code verification and automated audit are supporting tools; they do not replace statutory licensing, administrative approval, or professional judgment.**
+
+1. **Admission**: legal entities with qualifications, safety plans, test plans, and liability insurance may apply; individuals and entities without responsible ownership are excluded.
+2. **Test tiers**: closed (internal) → semi-open (time/area-limited with safety officers) → open (daily) — progressive release by assessment.
+3. **Logs and audit**: full telemetry logs retained, auditable, reviewable; key events (collision, hard stop, boundary breach) mandatory reporting.
+4. **Human discretion**: safety officers/supervisors hold final discretion over operations; AI is advisory only; no automated decision replaces human judgment on safety and compliance.
+5. **Incident halt**: automatic halt on safety events plus human review; testing does not resume until review passes.
+6. **Public appeals**: open complaint channel, time-bound response, test suspension possible; public veto/adjustment rights on safety and environmental-impact matters (see 10.6).
+7. **Exit**: period-end assessment; exit on failure, major incident, or public veto; test data returned or deleted per rules.
+
+### Data and privacy tiers (concept-level)
+
+> Data across S1–S11 is managed in three tiers. **Health, location, and urban-governance data are separately tiered**; "no biometrics collection" is not a blanket privacy answer.
+
+- **Tier 1 (ordinary)**: environmental telemetry, statistical crowd counts, compute usage — minimize, aggregate/desensitize, public by default.
+- **Tier 2 (location/behavior)**: trajectories, dwell time, reservations — separate consent, shortest retention, access logging.
+- **Tier 3 (health/governance)**: health self-reports and vitals, governance API data — separate management, explicit legal basis (consent/statutory duty), strict audit, independent deletion/exit channels.
+
+Per-scenario notes: S1 no pedestrian biometrics (crowd counts only); S7 health data Tier 3 (explicit consent + medical professional review + deletable); S9 environment only (Tier 1, no personal data); S10 location Tier 2 (shortest retention + can disable); S11 plate Tier 2 (scheduling-minimized, deleted after use); S3/S4 governance data Tier 3 (authorized interface + manual release + no personal data out of sandbox). All scenarios include human review/takeover, appeal, deletion, and exit channels, registered in the asset rights & privacy registry of `sources.json`.
+
 ### Anchor-enterprise map and cooperation models
 
 **Core judgment: the anchors are not "to be attracted" but "already growing on the belt".** Verified: Moonshot AI's HQ is at 27 Zhichun Road, Cambricon's at Zhi Zhen Tower, 7 Zhichun Road, Galbot is registered at 3 Haidian Street, Ninebot's domestic HQ is in Zhongguancun Dongsheng Tech Park, ByteDance is building a super-HQ at Dazhongsi, and Lightwheel, Zhipu, and Shengshu are all rooted in Haidian — "anchor recruitment" is really about plugging the leading firms already circling the 9 km linear space into one "real-scenario operating system" [source:CHAIN-ENTERPRISES]. Wang Huiwen's investment-reward retrospection drew a startup "golden circle" — "south of Tsinghua, east of Peking University, west of Xueyuan Road, north of Dazhongsi" — which is exactly the three-cores-two-wings core area, a spatial proof that the anchors are already on the belt [source:CHAIN-ENTERPRISES].
@@ -247,6 +299,34 @@ Positioning to build distinctive clusters for embodied intelligence, AI+ healthc
 **6 cooperation models** (who contributes, who gains, what mechanism makes it work): ① **test validation** — firms contribute robots/unmanned vehicles to real 9 km scenarios in exchange for the scarcest real physical-world data; the belt gains "the world's first real-scenario AI data infrastructure" brand premium; ② **compute & data supply** — Moore Threads, Cambricon, Kunlunxin supply domestic compute and Lightwheel supplies the simulation-data engine in exchange for scaled real orders; ③ **scenario opening & orders** — ByteDance's Dazhongsi HQ, the OPC order platform, and Haidian's "ten application demonstration projects" release billable benchmark orders; ④ **industry-academia-research** — Tsinghua/Peking/CAS joint labs feed results directly into co-track validation; ⑤ **investment & incubation** — Zhongguancun Science City Company led investments in Zhipu, Shengshu, ModelBest, LinkerBot, and Lightwheel in 2024–2026, binding "investment + scenario" [source:CHAIN-ENTERPRISES]; ⑥ **data-factor circulation** — Lightwheel's data factory plus the National Blockchain Center's "data stays in domain, usable but not visible".
 
 **Three most persuasive models**: first, "test validation + data-factor circulation" (scenario for data, data for industry) hits the industry's two hardest pain points — scarce real data and hard road permits; second, "investment & incubation" — the state-fund list is already drawn, only "investment" needs binding to "co-track scenario landing"; third, "scenario opening & orders" — ByteDance Dazhongsi, OPC, and the ten application projects are ready-to-run levers that upgrade the 9 km space from a "test field" into a "cash-flow-generating operating field" [source:CHAIN-ENTERPRISES].
+
+### agent.1–agent.6 itemized depth review
+
+| Task | Delivery location | Depth note |
+|---|---|---|
+| agent.1 three-level scope | 3.2–3.5 | coordinated/overall/key areas with layered boundaries, tasks, and metrics |
+| agent.2 key-area detailed design | 5.1–5.3 | Zhongzhiyuan/Origin/Dazhongsi: positioning, structure, AI scenarios, risks |
+| agent.3 scenario–space–operation matrix | 6.2b | 11 scenario cards, unified 10 fields (users/space/data/minimization/operator/review/decommission/maturity/KPI/prereq) |
+| agent.4 public-space component library | 6.5 | six components (see 6.5) |
+| agent.5 wayfinding & international outreach | 6.6 | three-tier signage + international interface and conversion path (see 6.6) |
+| agent.6 long-term operation & conversion | 10.1/10.3/6.3 | U1–U8 implementation matrix, global AI activity system, "visit → connect → settle" conversion |
+
+### Public-space component library (concept-level)
+
+1. **Slow-mobility green belt**: corridor-wide pedestrian + cycling system (all corridor; U2 park belt).
+2. **Station plaza**: multi-purpose gathering square (Dazhongsi; U4 station-city).
+3. **Pocket park**: 10-minute-walk neighborhood green space (Origin community / corridor housing; U6 green compromise).
+4. **Cultural nodes**: Dual-Origin Plaza, Developer Honor Wall, Open-Source Gallery (three nodes; U7 landmark system).
+5. **Smart furniture**: smart benches, environment screens, emergency-help terminals (key areas & scenario nodes; U8 smart municipal).
+6. **Co-track observation deck**: safe viewing of test operations with science narration (semi-open segment; U1 co-track line).
+
+Components are concept-level design requirements; dimensions and selection require professional and accessibility review before implementation.
+
+### Wayfinding and international outreach (concept-level)
+
+**Three-tier signage**: regional (metro stations, block entries), street (intersections, nodes), and scenario (facilities, test-zone markers); bilingual plus multimodal (text/voice/tactile), meeting accessible-information requirements (per 10.5 baseline).
+
+**International interface**: the co-track test line, Developer Honor Wall, and Open-Source Gallery serve as external communication interfaces, converting visits into settlement ("visit → connect → settle"). Content is human-curated; historical facts and copyright materials are reviewed before publication; concept renderings are never presented as field photos, measured data, or approval conclusions.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -311,6 +391,19 @@ Segmented character with the three-color palette [standard:MOHURD-URBAN-DESIGN-M
 
 Phasing is expressed in `geometry/phasing.geojson` [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation] [depth:renewal_project_list].
 
+**U1–U8 concept-level implementation matrix.** Roles, funding, decision gates, O&M, monitoring, and exit are suggested directions, not settled government arrangements or budget commitments.
+
+| ID | Lead | Co-leads | Funding category | Key decision gate | O&M responsibility | Monitoring | Suspend/exit |
+|---|---|---|---|---|---|---|---|
+| U1 | testbed operating company | industry alliance, rail heritage owner | concession + industry fund | heritage approval, safety assessment | operator + alliance | co-track km, incidents, complaints | stop on safety failure or major incident; period-end review |
+| U2 | district park authority | subdistrict, designers | district budget + private capital | plan publication, resident consultation | park authority + property | slow-mobility usage, green view, complaints | defer if publication fails |
+| U3 | district platform | owners, property, universities | retrofit fund + rent income | ownership coordination, owner vote | platform + property | shared-space utilization, tenants | defer if owner vote fails |
+| U4 | municipal rail enterprise | district, developers | rail construction fund + air-rights income | hub schedule, plan adjustment | rail enterprise + mall mgmt | hub ridership, vitality, schedule | re-phase on delay |
+| U5 | district platform | cloud provider, grid | public compute subsidy + market fees | power capacity review | cloud provider | utilization, subsidized hours, queue | defer if power fails |
+| U6 | subdistrict | park authority, resident reps | district budget + parking income | resident consultation, plan publication | subdistrict + parking operator | green area, utilization, satisfaction | redesign if publication fails |
+| U7 | district government | developer community, culture bodies | culture fund + corporate sponsorship | clearance & approval | operator + community | visits, reach, maintenance | defer if clearance unresolved |
+| U8 | district platform | governance bodies, data bureau | municipal budget + data-service income | data governance compliance review | platform + governance bodies | interface count, incident response | defer if compliance fails |
+
 ### Implementation policy
 
 All policy suggestions are conceptual: FAR incentives and use-conversion facilitation, scenario-open interfaces and data-return mechanisms, compute subsidy and financing, transparent public notification, and developer-community tax and talent policies.
@@ -322,6 +415,32 @@ Annual brand "Jingzhang Time-Track Open-Source Week" (each May); monthly "co-tra
 ### Public participation and maintenance
 
 "Transparent notification + compromise design" as the base process [source:OFFICIAL-ANNOUNCEMENT]; a "government-led, enterprise-operated, community-participated, developer-co-built" maintenance model.
+
+### Inclusive-service baseline (accessibility & digital inclusion)
+
+Seven baselines apply to all public spaces and AI scenarios, mapped to medical, legal, transport, parking, and event contexts:
+
+1. **Continuous accessible paths**: corridor-wide barrier-free continuity for slow lanes, metro connections, and public-space nodes (S1/S4/S11, U2/U6).
+2. **Readable/hearable/touchable information**: signage and screens in text, voice, and Braille/tactile modes (S10, U7).
+3. **Non-digital booking & payment**: manual windows, phone, and on-site queues coexist; smart booking is not the only entry (S5/S6/S11).
+4. **On-site human service**: human desks and assistance retained at key nodes (S6; S8 keeps on-site staff).
+5. **Guardian/proxy assistance**: minors, seniors, and persons with disabilities may be assisted by guardians or proxies (S5/S7/S11).
+6. **Low-digital-literacy support**: digital-literacy classes and one-on-one assistance; no requirement to master smart devices first (beyond S5 night school).
+7. **Emergency help**: one-touch help and emergency response at public spaces and scenario nodes (S1/S8/S9).
+
+The baseline is a concept-level design requirement; implementation follows barrier-free regulations and professional accessibility review, with testing involving seniors and persons with disabilities.
+
+### Public-participation mechanism (concept process)
+
+To avoid unfulfillable blanket terms, participation is specified as a reviewable process:
+
+- **Participants**: corridor residents, merchants, developers, university students, visitors, and minority-group representatives (dedicated channels for seniors/persons with disabilities/low-digital-literacy groups).
+- **Veto scope**: the public holds veto/adjustment rights over **major safety and environmental-impact matters** (e.g., co-track segment opening, green-space redevelopment, noise-source placement); daily operations, industry tenancy, and commercial arrangements are outside the veto scope.
+- **Information disclosure**: plans, test schedules, data uses, and monitoring results are published; period and form vary by matter tier.
+- **Opinion recording**: a unified opinion register (online + offline), each item numbered and traceable.
+- **Dispute handling**: tiered response — general opinions within 7 working days; major objections trigger hearings or negotiation.
+- **Feedback-time principle**: time limits are publicly committed; exceeding them defaults toward adopting the opinion direction.
+- **Minority representation**: participation samples cover seniors, persons with disabilities, and low-digital-literacy groups to avoid digital-divide distortion.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
@@ -356,7 +475,7 @@ The **human-centric indicator group** — employment transition rate, skill upli
 
 **Copyright and clearance.** Logo direction, landmarks, portraits, historical images, and enterprise identities require clearance; sources are attributed; AI-generated content is attributed.
 
-**Boundary and area limits.** All boundaries are provisional polygons and must not be treated as official redlines or precise areas [source:BOUNDARY-SOURCE] [depth:risk_missing_data].
+**Boundary and area limits.** All boundaries are provisional polygons used for design discussion only and do not constitute official redlines; the content is reviewable, and metrics will be recomputed after the official geometry is released [source:BOUNDARY-SOURCE] [depth:risk_missing_data].
 
 **No approval or commitment.** The proposal contains no approved construction, government arrangement, investment commitment, or parcel-level demolition conclusion [source:AGENT-TASKBOOK].
 
