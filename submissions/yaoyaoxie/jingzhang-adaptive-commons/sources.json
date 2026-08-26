@@ -1,31 +1,37 @@
 {
-  "sources_note_zh": "本清单覆盖正文与补充文档实际使用的全部来源：征集公告与智能体任务书（任务事实）、官方报道（三区两翼口径）、仓库 provisional 几何、8 个全球案例公开来源、真菌城市主义研究文献。正文引用风格为 [source:DATA-SRC-...]。中央 source_registry.json 在本地参考副本中不可得，use_tier 为本包自评口径，正式提交前应与官方登记核对。",
+  "sources_note_zh": "本清单覆盖正文与补充文档实际使用的全部来源。2026-08-26 已通过 GitHub API 对照主仓库 data/source_registry.json：征集公告与智能体任务书为 approved 且 usable_for_formal=yes；仓库临时几何为 provisional 且 usable_for_formal=provisional_only；未在中央登记中的政府报道和案例仅作 background，不承担红线、控规、工程可行性、正式实施或政府承诺证明。正文引用风格为 [source:DATA-SRC-...]。",
   "sources": [
     {
       "id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
       "title_zh": "百年京张 AI 创新带城市设计国际方案征集公告",
-      "publisher": "征集组织机构（海淀区主导；资格预审文件经北京科技园拍卖招标有限公司发放，需邮件申请下载密码）",
-      "url": null,
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "published_date": "2026-05-09",
-      "accessed_date": "2026-08-25",
-      "retrieval_method": "经征集方发布的技能文档与正式提交指南（open-city-ai/haidian 仓库公开资料）转述与摘录；未取得公告原文 URL 与资格预审文件包",
+      "accessed_date": "2026-08-26",
+      "retrieval_method": "主仓库中央来源登记与官方公告本地快照（data/source_registry.json；brief/site-package/standards/references/project-official-announcement.md）",
       "coverage": "项目名称、三层范围面积口径（43.6 km² / 11.4 km² / 368.4 ha）、三处重点区域名称与公告面积与设计任务、三区两翼结构、征集时间线（2026-08-07 开放、08-31 截止）",
       "license_or_terms": "官方公开发布；资格预审文件包需申请获取",
       "use_tier": "formal_task_facts",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "authority_level": "A0",
       "limitations": "未含精确红线 polygon、控规指标与正式图纸；片区名称与面积以公告为准，几何一律 provisional"
     },
     {
-      "id": "DATA-SRC-AGENT-TASKBOOK-0518",
+      "id": "DATA-SRC-AGENT-TASKBOOK-20260518",
       "title_zh": "面向智能体的开源征集任务书（agent_taskbook）",
-      "publisher": "征集组织机构（仓库整理为 brief/site-package/agent_taskbook.json）",
+      "publisher": "User-provided cleared document",
       "url": "https://github.com/open-city-ai/haidian/blob/main/brief/site-package/agent_taskbook.json",
       "published_date": "2026-05-18",
-      "accessed_date": "2026-08-25",
-      "retrieval_method": "经 open-city-ai/haidian 仓库正式提交指南所附任务书摘录（agent-open-call-taskbook-0518）",
+      "accessed_date": "2026-08-26",
+      "retrieval_method": "主仓库中央来源登记与清权任务书摘录（data/source_registry.json；brief/site-package/agent_taskbook.json；standards/references/agent-open-call-taskbook-0518.md）",
       "coverage": "十条智能体共创原则、三大定位、五大功能、三区两翼、六项智能体任务（agent.1–agent.6）、统一评审维度与统一边界条款",
       "license_or_terms": "仓库公开资料",
       "use_tier": "formal_task_facts",
-      "limitations": "本地仅有文档摘录，未读取 agent_taskbook.json 原文"
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "authority_level": "CLEARED_USER_DOCUMENT",
+      "limitations": "可作为 agent 任务响应依据；不得用于官方红线、法定控规、工程可行性或政府批准与实施承诺"
     },
     {
       "id": "DATA-SRC-BEIJING-GOV-20260403",
@@ -38,19 +44,24 @@
       "coverage": "两翼方位与功能定位：西侧中关村科技服务翼、东侧小月河场景赋能翼；主轴南北贯通、东西链接的耦合式创新网络表述",
       "license_or_terms": "政府公开信息",
       "use_tier": "background_only",
-      "limitations": "新闻报道层级，非任务书原文；用于校核两翼方位口径"
+      "usable_for_formal": "background_only",
+      "registry_status": "not_listed_in_central_source_registry_as_of_2026-08-26",
+      "limitations": "新闻报道层级且未纳入中央来源登记；仅用于两翼方位的背景语境，不支撑红线、控规、工程或实施结论"
     },
     {
-      "id": "DATA-SRC-REPO-PROVISIONAL-BOUNDARIES",
+      "id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
       "title_zh": "open-city-ai/haidian 仓库 provisional_boundaries.geojson（临时粗略边界）",
       "publisher": "open-city-ai/haidian 仓库维护者",
       "url": "https://github.com/open-city-ai/haidian/blob/main/brief/site-package/geometry/provisional_boundaries.geojson",
-      "published_date": null,
-      "accessed_date": "2026-08-25",
-      "retrieval_method": "仓库文件（本包 site_boundary.geojson 与 key_areas.geojson 由其拆分；本次未改动该两份既有文件）",
-      "coverage": "总体设计范围与三处重点区域的临时粗略几何（EPSG:4326）",
+      "published_date": "2026-06-05",
+      "accessed_date": "2026-08-26",
+      "retrieval_method": "主仓库中央来源登记与仓库临时边界文件（data/source_registry.json；brief/site-package/geometry/provisional_boundaries.geojson）",
+      "coverage": "三层范围与三处重点区域的临时粗略几何；本包派生图层保持 provisional",
       "license_or_terms": "仓库公开资料",
       "use_tier": "provisional_only",
+      "review_status": "provisional",
+      "usable_for_formal": "provisional_only",
+      "authority_level": "PROVISIONAL_REPOSITORY",
       "limitations": "provisional_rough；不得作为官方红线、审批依据或精确面积依据；正式 polygon 发布后全部派生图层与指标须重算"
     },
     {
