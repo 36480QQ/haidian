@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "项目任务书结构化场地包：范围层级、枚举、允许设计空间、指标口径、校验 schema。formal 设计依据。"
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "公开/清权/临时资料可用性登记表；区分 formal-ready、background_only、provisional_only。用于判断每份资料可支撑的结论级别。"
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "面向智能体的资料导航层：范围结构、任务要求、资料用途边界与缺口清单；不替代原始来源。"
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "提交的总体设计范围边界几何来源（provisional_constraint，boundary_precision=provisional_rough）。仅用于临时生成、展示与自检，不作官方红线。"
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "三处重点区域边界几何来源（provisional_constraint）。公告口径面积：众智园约192.1ha、AI原点社区约104.3ha、大钟寺约72.0ha。"
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "北京市规划和自然资源委员会海淀分局《百年京张AI创新带城市设计国际方案征集资格预审公告》：任务、范围层级、面积口径与成果要求的第一权威依据。"
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "面向智能体任务书摘录：十条共创原则、三大定位、五大功能、三区两翼、六项必答任务、评审维度与边界条款。"
+    },
+    {
+      "id": "JINGZHANG-HERITAGE-PARK",
+      "url": "https://www.beijing.gov.cn/",
+      "source_type": "official_public",
+      "usage": "京张铁路遗址公园公开报道与建设信息（北京市/海淀区公开发布）。仅作背景与文化叙事依据（background_only），不作空间控制依据。"
+    },
+    {
+      "id": "QINGHUAYUAN-STATION-HERITAGE",
+      "url": "https://wwj.beijing.gov.cn/",
+      "source_type": "official_public",
+      "usage": "北京市文物局公开的清华园车站旧址文物保护信息。仅作文化资源背景依据（background_only），具体保护范围与建控地带以文物部门正式公布为准。"
+    },
+    {
+      "id": "BEIJING-OPEN-DATA",
+      "url": "https://data.beijing.gov.cn/",
+      "source_type": "official_public",
+      "usage": "北京市公共数据开放平台（人口、交通、公共设施等公开统计口径）。仅作背景参照（background_only），本版未将其用于任何 formal 空间结论。"
+    },
+    {
+      "id": "GLOBAL-AI-ECOSYSTEM-CASES",
+      "source_type": "public_background_knowledge",
+      "usage": "全球AI创新生态公开案例（硅谷/肯德尔广场/Station F/慕尼黑工业大学创新廊道/深圳南山/上海张江等）的公开通识研究。仅作生态机制类比的背景依据，具体数据以各案例官方发布为准。"
+    },
+    {
+      "id": "TERMINOLOGY-GLOSSARY",
+      "path": "docs/terminology-glossary.md",
+      "source_type": "repository_processed_reference",
+      "usage": "赛事中英术语表：双语译稿术语一致性依据。"
+    }
+  ]
+}
