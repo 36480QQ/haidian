@@ -73,6 +73,7 @@
 | `visual/assets/a11y-color-check.json` | 11 色色板在 4 类色觉下的 CIEDE2000 色差核验结果与 36 对例外清单 | 参与者量化核验结果；方法参考 Machado (2009) 与 Sharma (2005) |
 | `visual/assets/governance/qi-protocol.json` | 气数协议 v0.1 规则集与 156 项离线确定性演练自检记录 | 参与者概念治理框架设计 |
 | `visual/assets/governance/role-spec.json` | 八类运营岗位规格（全部 assignment_status=unassigned） | 参与者概念岗位设计 |
+| `visual/assets/governance/evidence-readiness-register.json`、`measurement-registry.json`、`verify-governance.js` | 作者自研治理证据三件套：前两者分别登记 H0-H4 就绪口径与 M01-M06 测量口径且执行值留白；验证器为 Node.js 标准库程序，运行 `node visual/assets/governance/verify-governance.js <packageDir> --json` 可复算14项结构检查，用于拒绝虚构“已达成/已实测”状态 | 参与者原创声明；随包分发仅供包内治理证据复算，不构成任何授权、实测或运营承诺 |
 
 ## 6. OpenStreetMap 数据合规声明
 
@@ -86,7 +87,7 @@
 ## 7. 字体许可合规说明
 
 - **Web 界面**：使用开源字体 **Noto Sans SC**，遵循 **SIL Open Font License 1.1**。字体以字符子集方式嵌入 `visual/assets/fonts.css`，保留了完整的 OFL-1.1 版权声明。根据 OFL 第 1 条与第 5 条，字体子集的打包与随 Web 页面分发完全符合许可条款。
-- **PDF 与静态图件**：中文图件 PDF 在本地渲染并嵌入 Noto Sans SC 子集；英文图件 PDF 在本地渲染并使用内置 DejaVu Sans。微软雅黑仅作为 v1.0–v1.4 历史渲染链备注保留，其许可适用性待专业法律确认；本提交未分发任何独立字体安装文件（.ttf/.ttc/.woff2 的可安装字体原件）。
+- **PDF 与静态图件**：中文图件 PDF 在本地渲染并嵌入 Noto Sans SC 子集；英文图件 PDF 在本地渲染并使用内置 DejaVu Sans。微软雅黑仅存在于 v1.0–v1.4 历史渲染链备注中：现行 v2.x 全部资产（PDF/图件/HTML/媒体）经 pdffonts 与资产清单核验，不含微软雅黑字形，该字体文件亦不随包分发、不再用于任何新资产渲染；其历史许可适用性仍标注为待专业法律确认。本提交未分发任何独立字体安装文件（.ttf/.ttc/.woff2 的可安装字体原件）。
 
 ## 8. 第三方资料与标准规范引用纪律
 

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以风水这一中国传统人居环境智慧为方法论原型，将百年京张铁路遗址走廊转译为可计算、可复算、可运营的AI创新带：一条龙脉、三区五带、曲水抱气、风水留白，并给出可从临时几何复算的指标与证据链。"
 tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.1"
+iteration: "v3.0"
 ---
 
 # 京张气脉 · 风水AI
@@ -460,7 +460,7 @@ iteration: "v2.1"
 
 *读图：左列为核心指标卡，右列为复算链与来源；"待补齐"格是控规类指标，不以占位数字替代。*
 
-任务覆盖方面：公告 1.3、1.4、1.5 各条与智能体任务 agent.1–agent.6 的章节、图层、指标、图纸与 HTML 证据逐项登记于 `compliance_matrix.json`；专业标准响应见 `standard_matrix.json`，成果深度自证见 `design_depth_matrix.json`；四门自检报告以 `self_check.json` 为准；此外，包内确定性验证器对场景卡 156 项演练复算、气数协议绑定、岗位闭环、分期条件门与指标跨文件一致性执行七组 30 项检查，全部通过，逐项结果登记于 `visual/assets/governance/qi-pulse-verification.json`。
+任务覆盖方面：公告 1.3、1.4、1.5 各条与智能体任务 agent.1–agent.6 的章节、图层、指标、图纸与 HTML 证据逐项登记于 `compliance_matrix.json`；专业标准响应见 `standard_matrix.json`，成果深度自证见 `design_depth_matrix.json`；四门自检报告以 `self_check.json` 为准；`assumptions.json` 以 25 条结构化假设显式登记包的认知边界（provisional 几何、未启动测试场景、待专业核实项与背景级语料），其中 12 条来自九轮评审数据缺口的逐条沉淀；此外，包内确定性验证器对场景卡 156 项演练复算、气数协议绑定、岗位闭环、分期条件门与指标跨文件一致性执行七组 30 项检查，全部通过，逐项结果登记于 `visual/assets/governance/qi-pulse-verification.json`。
 
 ## 多模态表达：封面、音频导览与概念视频
 

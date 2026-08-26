@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "216db5e31b49438be6d3a5531d7a0461f6e1d04a348379b3c1c3ecfe7a9fc809"
+      "sha256": "9004af571f8f9412e093c1891c72c85879a5a340e75679dd89cbe22db1439395"
     },
     {
       "path": "agent.json",
@@ -38,50 +38,50 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "01a4a5888045408ea2237c6cb25e13eca8d63b99c90cba480667621f427306bb"
+      "sha256": "32a4d920c5866420699ac8be9c43606e493f93a3aac5af8792807d56c56b42a9"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "a9e2abd7e1670ce9a69cd23d91f2ad9b92a8f49a76b85a94c620b47ef0acc8c6"
+      "sha256": "36dc6bf39cbbf3f3fedb19a15de98e6cc70d225a027adda2c73bd1f6c4beb925"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "ab922a8bcb41dc8f663b70c833bdf25e858f53c653e5859c420749cdd6a7dc60"
+      "sha256": "49ada680a1684fc48bbe110493f25a11ba4b8c8dcd8b39b33d6e163d65edc5fc"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f5ab0e9b280c920ce7331faa383ae62032a86454b4f146d1febccf2448c74541"
+      "sha256": "364e7fa6929ec71bdd26ac6ae77fd1700f700c9e7b4c4a6c86886447f8a13ed1"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "a657f8f88c99e2ec7e1b6d7162ef26ab337521ed57626cc4adb9743c374dc14f"
+      "sha256": "0226ce6a1c497dd28705a84604fbcdc65c49041b2143ce93ab41a77ac9e1ad0d"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "794d0ad687fd8393c2e454a95f5f12fedd3d804117ac9f15fdf1c79c27fa8ce2"
+      "sha256": "55f1668b00bcb63e691bd050c5333b72a41165b627802d1fccc6394839a62b68"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "757df04925caf170f9ed3b32ecd54ed7e076ddd40dbe8e3b47d33d8960489cec"
+      "sha256": "c7ee69a3d489d36839befab8206366c8d737a2f99f5f5e4229a4ec2b9a692e63"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4cdfe5dae8581dbbe5f82b1eac6d657c31a2fa45d88f79b7ef6cafa3eb89ae86"
+      "sha256": "169239b4dc3e71385ec637340fd078baddacfe31a949f9ae472466c5704629a5"
     },
     {
       "path": "report/narrative.md",
@@ -93,21 +93,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "a73cf645410eb05783f27b069acd6d1e5a881973bb2461f55bd7140ba0c30f28"
+      "sha256": "352131dfeb4ea5ca94470fed1fc343bc96d29179575cb04f8ecef2e675b2a70d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "19535ea4d40f3a761de4945e32c78a76fdcd60a9669b3322ab4894e9fa003177"
+      "sha256": "e5cda787fc0d2d9469561bbd70b254e382590f9f67a1a9e512484452fd246666"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a84acdc0aa7fa63f0dae4b6b60be40b89e3b5d051d617c2c27a3ab20f1e257a4"
+      "sha256": "0d2041f2d0a54763eccbeb791881f67c00eed602fd0877d9285cac6148c3a9b6"
     },
     {
       "path": "visual/index.html",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e032c1b6fad8e8d8fc228b8ce608ca1a0b3da03ceb3e72ec10d11703b17fc6d8"
+      "sha256": "d51a6816acf869203fecb11e96ab8fe3d0a35a2ff9982844ff8bbfd5f8e166c8"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e076411c66aad8eb42ae13b42805439e3ba2211ac2d692a41d38340fb66763c5"
+      "sha256": "a549156b79bc686392b9f2c1768c7eb941a7d72baef19bb5437bdd26efa03a58"
     },
     {
       "path": "visual/index.en.html",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "d78d28c31368fc0837549dacacce32506a3f4ff481622d1ac3c6ffa6480ed565"
+      "sha256": "2ae6374e7a49f217e45d1a202234b4af66d9678a04a5d2ca9ef768e4bb2b1687"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "8fb273157878a71aef231102a99cb2f33984f20c285eca6015f63e844d14fa41"
+      "sha256": "d630197a953a3f41ffe619d1bf884d0cee5693356ec7d15fc97edba0c0d269e0"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "2469a50527a9783e2fc7238f3fb81a7c54e4b6bd33320465d6463fd1d4e26564",
+      "sha256": "3ab699662f3e761a2680ddc65cfc627b1b3e805e3588e36653e7953941303b86",
       "language": "neutral"
     },
     {
@@ -539,6 +539,39 @@
       "sha256": "406754d410de195a445fe7e5189ed0f814a0b6c7f7568db40a79b204b8585a70"
     },
     {
+      "path": "visual/assets/governance/evidence-readiness-register.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "实证就绪等级登记（H0-H4）",
+      "title_en": "Evidence-readiness register (H0-H4)",
+      "description_zh": "三个产业测试场景如实登记为 H0；升级门材料、责任岗与复核要求结构化留痕，执行值保持空缺。",
+      "description_en": "Three industry test scenarios are honestly registered at H0; gate materials, responsible roles, and review requirements are structured while execution values remain blank.",
+      "sha256": "cfdc11e1dfe1e3be0c213aa61273170155640c85e4f6e2ddc89ddf8925a373ef"
+    },
+    {
+      "path": "visual/assets/governance/measurement-registry.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "M01-M06 测量口径登记",
+      "title_en": "M01-M06 measurement registry",
+      "description_zh": "标定前测量口径草案，定义、复核岗与留痕位置齐备；全部实测数值刻意留白。",
+      "description_en": "Pre-calibration measurement protocol drafts with definitions, reviewers, and ledger locations; all measured values are deliberately blank.",
+      "sha256": "173363ed20f0b58860b5c62564858e3b209fdf1ecf56f51ec54ada7bb7ab33ba"
+    },
+    {
+      "path": "visual/assets/governance/verify-governance.js",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "治理登记复算验证器",
+      "title_en": "Governance register verifier",
+      "description_zh": "作者自研 Node.js 标准库脚本，随包分发供复算就绪登记、测量口径和跨文件一致性共14项结构检查。",
+      "description_en": "Author-written Node.js standard-library script distributed for recomputation of 14 structural checks across readiness, measurement, and cross-file governance consistency.",
+      "sha256": "d98f917a3d786d6c62bb0e6be5127ac00b453e6d3c17d38cb606aa17c4f846e7"
+    },
+    {
       "path": "visual/assets/governance/model-card.schema.json",
       "role": "evidence_data",
       "required": false,
@@ -591,7 +624,7 @@
       "title_en": "Qi-Pulse deterministic self-verification results",
       "description_zh": "七组 30 项确定性检查全部 PASS：场景卡 156 演练复算、气数协议绑定、岗位闭环、分期条件门、指标跨文件一致性、双语标签对齐、CJK 字体覆盖。",
       "description_en": "Seven groups / 30 deterministic checks all PASS: scenario-card 156-drill recount, protocol binding, role loop, phase gates, metrics cross-file consistency, bilingual tag parity, CJK font coverage.",
-      "sha256": "45a5f7b44e756b9d2209bded6cd756ead8910b1fd72f7777ac93d87d89b4d8b8"
+      "sha256": "b92c8f8b62e0eee449e28441129beb4d65710ec1971c4923889f7fae8a7bcec2"
     },
     {
       "path": "assets/screenshots/a3-booklet-contact-sheet.png",
@@ -602,7 +635,7 @@
       "title_en": "A3 booklet contact sheet",
       "description_zh": "六页一图总览（封面+设计依据+结构+重点区+分期+退出），供评审无需翻页即可核对全部版面；确定性自 PDF 导出。 回应评审\"PDF 证据仅限第一页预览\"的取证限制。",
       "description_en": "All six pages on one sheet for review without page-through; deterministic export from the booklet PDF. Answers the reviewer-noted first-page-only evidence limitation.",
-      "sha256": "d1a6bf7bd624e501264d6b11ad65d4a4d284fa9be2e239841d69bbd5ad3d7a15"
+      "sha256": "913406d01b2bf6f397dc65b0aef86f9191ef9b94f22631fd7e7591e1cfab9ddd"
     },
     {
       "path": "assets/screenshots/a0-boards-contact-sheet.png",
@@ -613,7 +646,7 @@
       "title_en": "A0 boards contact sheet",
       "description_zh": "两板一图总览（总体结构板真实语境版+重点区与指标证据板）；确定性自 PDF 导出。 回应评审\"PDF 证据仅限第一页预览\"的取证限制。",
       "description_en": "Both boards on one sheet; deterministic export from the boards PDF. Answers the reviewer-noted first-page-only evidence limitation.",
-      "sha256": "d37ac0f147c3ba509974ea2ef10c5db1b36c04acebdba00d812d7bb3a6d0b8d4"
+      "sha256": "177ecbd73ab1d8354b817437fac84d8f8193cce104623515ac0217449ab56bf3"
     },
     {
       "path": "assets/figures/key-area-detail.png",
