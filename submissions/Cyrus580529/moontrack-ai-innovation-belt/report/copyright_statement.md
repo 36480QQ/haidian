@@ -53,22 +53,31 @@ approval from the heritage authority.
 
 ## Identity assets
 
-The MoonTrack wordmark (`assets/media/moontrack-wordmark*.png`) and the identity system sheet
-(`assets/figures/identity-system*.png`) are typographic and geometric layouts drawn programmatically by
-`make_identity.py`. No generative image model was used for them, and they incorporate no third-party
-illustration, icon set, logo, template or stock asset. The two red rules beneath the wordmark are plain
-rectangles.
+Two identity assets embed images produced with a generative image model, and are covered by the
+AI-generated illustrations section below.
 
-The MoonTrack emblem (`assets/media/moontrack-emblem.png`) and the gallery covers (`cover.png`,
-`cover-en.png`, which composite the emblem with the wordmark) embed an illustration produced with a
-generative image model, and are covered by the AI-generated illustrations section below. The emblem shows
-a moon gate - a generic Chinese garden aperture - with water, track, a chevron switchback and a moon
-inside it. It is a conceptual expression, not a photograph, and depicts no existing place, no protected
-structure and no identifiable person.
+The **Latin logotype** in `assets/media/moontrack-wordmark*.png` and on the covers is custom lettering
+generated with an image model to a written brief: geometric sans, low stroke contrast, circular bowls,
+horizontal terminals, and a capital T whose crossbar is split lengthwise by a narrow slot in reference to
+a pair of rails. It is used exactly as generated - not traced, recoloured, re-cut or otherwise altered -
+and the panels it sits on take their background colour from the generated image itself so no seam appears.
 
-An earlier version of this package used a pictorial mark drawn from the measured Xiaoyue River centreline.
-That mark has been withdrawn on design grounds and no longer appears in the package; the statement that it
-was script-drawn applied to that version only and is superseded by this section.
+The **emblem** in `assets/media/moontrack-emblem.png` is a moon gate, a generic Chinese garden aperture,
+holding water, track, a chevron switchback and a moon. It is a conceptual expression, not a photograph,
+and depicts no existing place, no protected structure and no identifiable person.
+
+The Chinese characters, the rules, the subtitle and the page layout around these assets are set
+programmatically by `make_identity.py`, as is the identity system sheet
+(`assets/figures/identity-system*.png`). Those parts use no generative model and incorporate no
+third-party illustration, icon set, template or stock asset.
+
+Only a dark-ground lockup is provided. The generated logotype is dark-ground, and a light-ground variant
+cannot be derived from it without altering its pixels, which this package does not do.
+
+Earlier versions of this package used a pictorial mark drawn from the measured Xiaoyue River centreline,
+and later a wordmark set in a system typeface. Both have been withdrawn on design grounds and appear
+nowhere in the package; any earlier statement that the mark was script-drawn applied to those versions and
+is superseded by this section.
 
 The identity is offered as a concept-level sub-brand for this proposal. It is not a registered trademark,
 claims no priority over any existing mark, and does not replace or sit as a peer to the official project
@@ -77,8 +86,9 @@ commercial typeface is specified.
 
 ## AI-generated illustrations
 
-The MoonTrack emblem (`assets/media/moontrack-emblem.png`, also composited into `cover.png` and
-`cover-en.png`) is an AI-generated brand image, as set out above.
+The MoonTrack Latin logotype and the emblem (`assets/media/moontrack-wordmark*.png`,
+`moontrack-emblem.png`, both composited into `cover.png` and `cover-en.png`) are AI-generated
+brand assets, as set out above.
 
 Eight plates embed illustrations produced with a generative image model: three component plates
 (`assets/figures/component-chevron-ramp*.png`, `component-platform-unit*.png`,
