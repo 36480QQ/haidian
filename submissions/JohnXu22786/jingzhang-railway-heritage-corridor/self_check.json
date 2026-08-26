@@ -71,7 +71,7 @@
       "ai_package_stages": {
         "submissions/JohnXu22786/jingzhang-railway-heritage-corridor": "formal"
       },
-      "total_bytes": 21366252,
+      "total_bytes": 9037275,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -216,63 +216,135 @@
     "ink_ok": true,
     "clip_clear": true,
     "overlap_clear": "not_verified",
-    "summary": "ink+edge-clip machine check only; text-overlap not machine-verified post-hoc (figure generation text-bbox checks recorded in changelog)",
+    "summary": "REPAIR ROUND-4 2026-08-27: all 16 zh+en PNGs regenerated with fixed scaffolds; machine text-bbox containment + pairwise overlap checked at generation time (generator aborts on any violation; zero violations on final run); ink and edge-clip measured with PIL/numpy per figure; text-bbox overlap on saved PNGs is post-hoc not machine-verifiable -> overlap_clear: not_verified.",
     "figures": {
-      "ai-ecosystem-map.png": {
-        "width": 1657,
-        "height": 1060,
-        "ink": 0.2066,
-        "edge_clip_ratio": 0.0126,
-        "edge_clip_clear": true
-      },
-      "key-areas.png": {
-        "width": 2060,
-        "height": 1274,
-        "ink": 0.1143,
+      "site-overview.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.0929,
         "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
+        "edge_clip_clear": true,
+        "ink_ok": true
       },
       "land-use-structure.png": {
-        "width": 1833,
-        "height": 1086,
-        "ink": 0.1711,
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1353,
         "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
+        "edge_clip_clear": true,
+        "ink_ok": true
       },
-      "logo-weaveline.png": {
-        "width": 2718,
-        "height": 1236,
-        "ink": 0.1203,
+      "key-areas.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1081,
         "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
-      },
-      "metrics-evidence.png": {
-        "width": 2333,
-        "height": 1333,
-        "ink": 0.1343,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
+        "edge_clip_clear": true,
+        "ink_ok": true
       },
       "mobility-bluegreen.png": {
-        "width": 2118,
-        "height": 1190,
-        "ink": 0.0924,
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1072,
         "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
+        "edge_clip_clear": true,
+        "ink_ok": true
+      },
+      "metrics-evidence.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1097,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_ok": true
+      },
+      "ai-ecosystem-map.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1132,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_ok": true
+      },
+      "logo-weaveline.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.0933,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_ok": true
       },
       "regional-synergy.png": {
-        "width": 1542,
-        "height": 1058,
-        "ink": 0.1327,
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.2048,
         "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
+        "edge_clip_clear": true,
+        "ink_ok": true
       },
-      "site-overview.png": {
-        "width": 1825,
-        "height": 1190,
-        "ink": 0.0891,
+      "site-overview.en.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.0973,
         "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
+        "edge_clip_clear": true,
+        "ink_ok": true
+      },
+      "land-use-structure.en.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1404,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_ok": true
+      },
+      "key-areas.en.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.11,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_ok": true
+      },
+      "mobility-bluegreen.en.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1096,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_ok": true
+      },
+      "metrics-evidence.en.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1148,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_ok": true
+      },
+      "ai-ecosystem-map.en.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.1195,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_ok": true
+      },
+      "logo-weaveline.en.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.0971,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_ok": true
+      },
+      "regional-synergy.en.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.2078,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_ok": true
       }
     }
   }
