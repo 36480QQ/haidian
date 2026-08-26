@@ -132,7 +132,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "b8798349a775d386aa33a23ed7fd124abcb538ff288f11b331ac33e24a068ebd",
+      "sha256": "a95124a489a6ff96b200dcc8361c15c18f43c8437f26e1242fc66a9a7bd66be2",
       "language": "zh",
       "title_zh": "京张生命线：可降级城市韧性与公共照护公地",
       "title_en": "Jingzhang Life-Line: Graceful-Degradation Urban Resilience and Public Care Commons"
@@ -141,7 +141,7 @@
       "path": "visual/index.en.html",
       "role": "visualization",
       "required": true,
-      "sha256": "831db6618740197a8628d1e5e4aec2b909c148bd2b0d0204901b466ecb51e426",
+      "sha256": "39fda030f6067d01d122dd1a3265638db1f38fa0b379de09c16ed319cdc263cc",
       "language": "en",
       "translation_of": "visual/index.html",
       "title_zh": "京张生命线：可降级城市韧性与公共照护公地",
@@ -365,8 +365,8 @@
       "x-local-preflight": {
         "schema_version": "1.0",
         "data": {
-          "status": "pdf-redesign-v1.2-complete",
-          "official_four_gate_status": "pending_account_owner_run"
+          "status": "review-repair-v1.3-complete",
+          "official_four_gate_status": "persisted-pass"
         }
       }
     }
