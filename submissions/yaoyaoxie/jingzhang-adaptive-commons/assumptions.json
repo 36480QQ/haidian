@@ -6,14 +6,16 @@
       "title_zh": "三层范围官方 polygon 缺失",
       "category": "official_data_gap",
       "status": "open",
-      "description_zh": "统筹研究范围（约 43.6 平方公里）、总体设计范围（约 11.4 平方公里）的官方精确红线未取得；总体设计范围当前使用仓库 provisional 粗略边界（PROV-SITE-001，official_boundary=false、geometry_role=provisional_constraint、boundary_precision=provisional_rough），统筹研究范围无任何几何。",
-      "impact_zh": "site_area_sqm、green_ratio、public_space_ratio 及全部用地分类面积均为 provisional 复算值；43.6 平方公里层只能在正文与图件中作结构性表达，无法做面积复算与空间拓扑校验。",
-      "recalculation_trigger_zh": "官方红线 polygon（经资格预审文件包或维护者入库的官方 GeoJSON）发布后：重建全部 9 个几何图层、重算 metrics.json 全部 known 指标、重绘五张图件与 visual/index.html、刷新 manifest 哈希并产出差异报告。",
+      "description_zh": "统筹研究范围（公告约 43.6 平方公里）与总体设计范围（公告约 11.4 平方公里）的官方精确 polygon 均未取得。统筹研究范围已有仓库 provisional 粗略轮廓 PROV-RESEARCH-001，存于 constraints.geojson，source_id=DATA-SRC-PROVISIONAL-BOUNDARIES-20260605、official_boundary=false、geometry_role=provisional_constraint、boundary_precision=provisional_rough；总体设计范围使用同层级的 PROV-SITE-001。",
+      "impact_zh": "PROV-RESEARCH-001 已按 polygon_area(constraints#PROV-RESEARCH-001) 在 EPSG:4548 下完成低置信度概念复算，research_area_sqm=43,609,232.558 平方米，与公告约 43.6 平方公里同量级，但不是官方面积、红线或控制依据。site_area_sqm、green_ratio、public_space_ratio 及全部用地分类面积同为 provisional 复算值。",
+      "recalculation_trigger_zh": "组织方发布带版本、坐标系、精度和适用范围说明的官方统筹研究范围/总体设计范围 polygon 后：分别替换 PROV-RESEARCH-001/PROV-SITE-001，重建受影响的 9 个几何图层，在正式坐标基准下重算 metrics.json 全部 known 指标，重绘五组中英图件与 visual/index*.html，刷新 manifest 哈希并产出差异报告。",
       "related_files": [
+        "geometry/constraints.geojson",
         "geometry/site_boundary.geojson",
         "geometry/land_use.geojson"
       ],
       "related_metrics": [
+        "research_area_sqm",
         "site_area_sqm",
         "green_ratio",
         "public_space_ratio"

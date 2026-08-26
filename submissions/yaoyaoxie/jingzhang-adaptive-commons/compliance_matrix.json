@@ -80,7 +80,8 @@
         "京张生长断面：每个界面都是一次交换"
       ],
       "source_ids": [
-        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_ids": [
         "MOHURD-URBAN-DESIGN-MEASURES"
@@ -159,7 +160,8 @@
         "一轴 · 三片区 · 五层复合网络"
       ],
       "source_ids": [
-        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       ],
       "standard_ids": [
         "PROJECT-OFFICIAL-ANNOUNCEMENT"
@@ -173,7 +175,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "gap_note_zh": "统筹研究范围无官方几何，仅在正文与图面作结构性表达，未做面积复算。"
+      "gap_note_zh": "官方统筹研究范围 polygon 缺失；现有 PROV-RESEARCH-001 为 provisional_only 粗略轮廓，已按 polygon_area(constraints#PROV-RESEARCH-001) 在 EPSG:4548 下完成低置信度概念复算（43,609,232.558 平方米）。该值仅用于结构研究与展示，不是官方面积、红线或控制依据；官方 polygon 到位后按 A-BOUNDARY-001 触发替换、复算、重绘和差异报告。"
     },
     {
       "requirement_id": "1.4.2",

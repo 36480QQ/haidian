@@ -43,7 +43,7 @@ date: "2026-08-26"
 
 **任务事实**（方案必须回应的正式口径）：征集公告给出项目名称、三层范围面积口径（约 43.6 平方公里统筹研究范围、约 11.4 平方公里总体设计范围、三处合计约 368.4 公顷重点区域）、三处重点区域名称与设计任务、"三区两翼"结构 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]；智能体任务书给出十条共创原则、三大定位、五大功能与六项智能体任务（agent.1–agent.6）[source:DATA-SRC-AGENT-TASKBOOK-20260518]。两翼方位采用背景报道所述语境：西侧为中关村科技服务翼、东侧为小月河场景赋能翼；该报道不作为正式空间控制或实施依据 [source:DATA-SRC-BEIJING-GOV-20260403]。
 
-**临时几何**：总体设计范围与三处重点片区的边界当前仅有仓库发布的临时粗略边界。本包 `site_boundary.geojson` 仅承载总体设计范围（PROV-SITE-001），`key_areas.geojson` 承载三处重点片区（PROV-KEY-001/002/003）；统筹研究范围与重点区域汇总范围的临时轮廓以规划控制图层存入 `constraints.geojson`（PROV-RESEARCH-001 / PROV-KEY-SCOPE-001）。以上全部标注为临时约束范围（provisional constraint），不作为官方红线或精确面积依据 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] [data:geometry/site_boundary.geojson#PROV-SITE-001]。
+**临时几何**：总体设计范围与三处重点片区的边界当前仅有仓库发布的临时粗略边界。本包 `site_boundary.geojson` 仅承载总体设计范围（PROV-SITE-001），`key_areas.geojson` 承载三处重点片区（PROV-KEY-001/002/003）；统筹研究范围与重点区域汇总范围的临时轮廓以规划控制图层存入 `constraints.geojson`（PROV-RESEARCH-001 / PROV-KEY-SCOPE-001）。以上全部标注为临时约束范围（provisional constraint），不作为官方红线或精确面积依据。PROV-RESEARCH-001 已按 `polygon_area(constraints#PROV-RESEARCH-001)` 在 EPSG:4548 下完成低置信度概念复算，结果为 43,609,232.558 平方米，仅与公告约 43.6 平方公里作量级校核；组织方发布带版本、坐标系、精度和适用范围说明的官方 polygon 后，必须替换、复算并重绘 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] [metric:research_area_sqm] [data:geometry/constraints.geojson#PROV-RESEARCH-001]。
 
 **背景资料**：八个全球创新区案例与投稿包编制规范文档用于机制参照与流程校核，仅作背景，不支撑法定结论 [source:DATA-SRC-SITE-PACKAGE-DOCS]。
 
@@ -59,7 +59,7 @@ date: "2026-08-26"
 
 **判断**：三层范围是嵌套而非并列关系——统筹研究范围管产业与廊道结构，总体设计范围管城市更新与控规深度城市设计，重点区域范围管详细设计与首期项目；面积口径以公告为准，几何以临时边界复算值辅助表达。
 
-- **统筹研究范围（约 43.6 平方公里）**：战略研究层。承载产业定位、区域协同、"三区两翼"结构与东西向廊道关系，不做地块级设计 [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509]。
+- **统筹研究范围（公告约 43.6 平方公里）**：战略研究层。官方 polygon 未取得；现以 provisional_only 粗略轮廓 PROV-RESEARCH-001 表达，并在 EPSG:4548 下低置信度复算为 43,609,232.558 平方米（约 43.6092 平方公里），仅用于产业定位、区域协同、“三区两翼”结构与东西向廊道研究，不做地块级设计，不作为官方面积、红线或控制依据。公告依据见第 1 章任务事实；公式、临时轮廓来源与正式 polygon 到位后的替换/复算/重绘触发器见 `metrics.json` 和 A-BOUNDARY-001 [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] [metric:research_area_sqm] [data:geometry/constraints.geojson#PROV-RESEARCH-001]。
 - **总体设计范围（约 11.4 平方公里）**：城市更新与总体城市设计工作层。当前以临时粗略边界表达，复算面积约 1,141.28 公顷，与公告口径约 11.4 平方公里量级一致；该数值为概念设计模型值、低置信度，不是官方规划指标 [metric:site_area_sqm] [data:geometry/site_boundary.geojson#PROV-SITE-001]。
 - **重点区域范围（三处合计约 368.4 公顷）**：详细设计层。自北向南为众智园 AI 自主创新加速区（公告约 192.1 公顷）、北京 AI 原点社区（公告约 104.3 公顷）、大钟寺 AI 产业聚集区（公告约 72.0 公顷）；三处片区在临时几何中互不重叠且位于总体边界内 [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:three_level_scope_framework]。
 
@@ -69,7 +69,7 @@ date: "2026-08-26"
 
 **为什么适合这里**：京张走廊的创新资源（高校、院所、园区）沿线密集但彼此封闭，三层嵌套让战略判断、更新设计与项目落地各归其位，避免"研究尺度过大落不了地、设计尺度过小看不见结构"的双重失真。
 
-**如何验证**：三层面积与空间关系可由本包 GeoJSON 在约定投影下复算（见第 11 章）；临时边界与公告面积的差异、以及官方 polygon 到位后的复算触发器，均在假设清单中登记。
+**如何验证**：三层面积与空间关系可由本包 GeoJSON 在约定投影下复算（见第 11 章）；统筹研究范围的公式为 `polygon_area(constraints#PROV-RESEARCH-001)`，面积计算坐标系为 EPSG:4548。临时边界与公告面积的差异、以及官方 polygon 到位后的替换、复算、重绘和差异报告触发器，均在 A-BOUNDARY-001 中登记。
 
 **还缺什么**：三层范围的官方精确红线 polygon；取得后全部几何、指标、图件须重算重绘。
 

@@ -35,8 +35,9 @@
       "formula": "polygon_area(constraints#PROV-RESEARCH-001)",
       "confidence": "low",
       "assumptions": [
-        "统筹研究范围临时轮廓（PROV-RESEARCH-001，2026-08-26 起存于 constraints.geojson）在 EPSG:4548 下复算；与公告约 43.6 平方公里口径量级一致。",
-        "概念设计模型值，非官方规划指标；官方红线发布后必须复算。"
+        "官方统筹研究范围 polygon 尚未取得；复算对象为 constraints.geojson 中的 provisional_only 粗略轮廓 PROV-RESEARCH-001（source_id=DATA-SRC-PROVISIONAL-BOUNDARIES-20260605，official_boundary=false，boundary_precision=provisional_rough）。",
+        "按 polygon_area(constraints#PROV-RESEARCH-001) 在 EPSG:4548 下得到 43,609,232.558 平方米，与公告约 43.6 平方公里同量级；这是低置信度概念设计模型值，不是官方面积、红线或控制指标。",
+        "组织方发布带版本、坐标系、精度和适用范围说明的官方 polygon 后，替换临时轮廓、在正式坐标基准下复算本指标并重绘中英图件，差异进入报告。"
       ]
     },
     "green_space_area_sqm": {
