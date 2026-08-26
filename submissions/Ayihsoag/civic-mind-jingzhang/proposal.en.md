@@ -48,7 +48,7 @@ The 43.6 km² Coordinated Research Area frames regional and industry collaborati
 
 Seven precedents remain distinct from proposed mechanisms: Singapore AI Verify, the EU AI Act, Shenzhen Data Exchange, OECD AI Principles, Estonia e-Governance, Hangzhou City Brain, and Barcelona DECODE. They inform testing, risk tiers, trusted exchange, accountability, cross-agency coordination, and citizen data control; they do not prove local implementation [source:CASE-AI-VERIFY] [source:CASE-EU-AI-ACT] [source:CASE-OECD-AI].
 
-![CivicMind Jing-Zhang visual-identity candidate V1 (pending contributor approval)](assets/figures/brand-identity-v1.en.png)
+![CivicMind Jing-Zhang confirmed visual-identity direction V1](assets/figures/brand-identity-v1.en.png)
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 ![Adaptive reuse and civic-service interface (AI-generated conceptual rendering)](assets/figures/adaptive-reuse-public-interface.en.png)

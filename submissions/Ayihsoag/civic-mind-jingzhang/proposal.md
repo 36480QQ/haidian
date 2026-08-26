@@ -65,7 +65,7 @@ iteration: "v2.0"
 
 品牌名称“智理京张”同时表达智能与治理；CivicMind强调公共心智与城市智能体。Logo概念取京张轨道双线与人机协同的闭环节点：深靛表示可信治理，青绿表示开放场景，暖金表示人工最终判断。标志、字体和图形均由本方案原创，不使用企业商标。
 
-![智理京张视觉识别候选V1（待投稿人确认）](assets/figures/brand-identity-v1.png)
+![智理京张正式视觉识别方向V1](assets/figures/brand-identity-v1.png)
 
 ### 1. 全球案例借鉴
 
