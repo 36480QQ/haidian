@@ -163,6 +163,18 @@
       "usage": "Gallery cover and conceptual experience layer only.",
       "license": "Generated for this submission; no external visual asset supplied as input.",
       "limitations": "Synthetic conceptual scene. Not a site photograph, resident view, official rendering, approved plan or evidence of buildability."
+    },
+    {
+      "id": "NOTO-SANS-CJK-SC-SUBSET",
+      "path": "visual/assets/cjk-font.css",
+      "url": "https://github.com/notofonts/noto-cjk",
+      "title": "Noto Sans CJK Simplified Chinese, submission character subset",
+      "publisher": "The Noto Project Authors",
+      "accessed_date": "2026-08-26",
+      "source_type": "open_font_asset",
+      "usage": "Offline Chinese glyph coverage for report/proposal.html and visual/index.html in Linux and other renderers without a system CJK font.",
+      "license": "SIL Open Font License 1.1; full text at visual/assets/font_license.json",
+      "limitations": "Subset contains only characters used by the two submitted Chinese HTML files; it is not intended as a general-purpose font distribution."
     }
   ]
 }

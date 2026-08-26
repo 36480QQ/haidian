@@ -38,7 +38,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "e751e48d1fbdbdb4b400b5fc72ce76b2f38493697c60bb322e2a70f8d70f0011"
+      "sha256": "f88f6e10f8e200a57897f93a9eb4b95e98269fdb442231634b49db45e16d1e48"
     },
     {
       "path": "assets/media/cover.webp",
@@ -75,13 +75,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "b888ea965d0645d77914ff16ddb9ec33cb999838f138d0b5eac920df2f6a7709"
+      "sha256": "060a58cbd9adbd57de580e0386c00daa4f71075ff522972e21e1d3f463a59367"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4f70430afe1ae4b1d98d38b83940db4e6d42fd2a55ca9e9994d3a67b2e1eb453"
+      "sha256": "43c4ceec4544100f3195804922f439b90113e4f196ad88b5a908d8b9616fe7c1"
     },
     {
       "path": "compliance_matrix.json",
@@ -106,7 +106,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bb5c1723ee552aa781051ca99d318d2af221d9b9c04b567df116a3f0f37a3c8e"
+      "sha256": "9b335fdf6c168d1d5b3d3248bcb1336e8085309d0bbd74b23ddc83d539a1f236"
     },
     {
       "path": "report/narrative.md",
@@ -118,7 +118,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "6e95f434844cdf08b24040f7fceadc1809adfc492c275a7703b8b336706d0381"
+      "sha256": "2e8ca91c6d920af11fce20c60752c54476c72818b9489ece43ee49676406a8f2"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -139,7 +139,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "399b2fc6e3eebca8f36dff575e5234f2d3622c45ae29ed8ec0b604bcbe327b9a"
+      "sha256": "967d74cd56553e42473a114d621a8505d4bd3dfb42971227ae4cdad4572ab6f4"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -339,6 +339,18 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "19492875ee6a0a29daeb84e129aa0d533f9fe77b331863aedfe6c027632452f3"
+    },
+    {
+      "path": "visual/assets/cjk-font.css",
+      "role": "asset",
+      "required": false,
+      "sha256": "8639911db8a36023ea443fc4281abe8bdc023728169459e1cd804c4f89a5949d"
+    },
+    {
+      "path": "visual/assets/font_license.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "bf8ed1ed6d440a7d8accbf06560747586d90f711c8729032821e35e99a7cf796"
     }
   ],
   "validation_claim": {
