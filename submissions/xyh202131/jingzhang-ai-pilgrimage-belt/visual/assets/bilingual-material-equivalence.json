@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R61.1",
+  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R62.0",
   "as_of": "2026-08-26",
   "audit_type": "contributor_editorial_review",
   "status": "contributor_side_material_equivalence_checked_human_confirmation_open",
@@ -68,7 +68,7 @@
       "check_id": "BME-08",
       "topic": "publication_pairing",
       "result": "pass",
-      "evidence": "The R60 A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages. Two fresh-process builds are byte-identical; all 44 pages render without blank, clipping or replacement findings, expose paired searchable semantic text, and retain the bilingual R59 storyboard in paired designated positions."
+      "evidence": "The A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages. The semantic text layer first added in R60 is retained by the R62 stable-label rebuild. Two fresh-process builds are byte-identical; all 44 pages render without blank, clipping or replacement findings, expose paired searchable semantic text, and retain the bilingual R59 storyboard in paired designated positions."
     },
     {
       "check_id": "BME-09",
@@ -99,6 +99,12 @@
       "topic": "offline_cjk_report_rendering",
       "result": "pass_contributor_clean_browser_and_cmap_check",
       "evidence": "Both report counterparts load the same package-local OFL WOFF2 stylesheet as both visual counterparts. The subset cmap covers every visible non-ASCII character across all four final HTML files; fresh in-memory Chromium selects JZ Noto CJK Offline and bilingual report screenshot inspection finds no tofu. This is contributor rendering QA, not independent accessibility certification."
+    },
+    {
+      "check_id": "BME-14",
+      "topic": "stable_publication_identity_and_heading_hierarchy",
+      "result": "pass_contributor_red_green_contract",
+      "evidence": "Both visual counterparts use paired stable review-edition labels and two semantic hero lines; both report counterparts expose exactly one document H1. All 44 fixed pages use the same stable review-edition label, while R59-R61 remain historical provenance rather than current identity. Five bilingual viewports plus no-JavaScript and reduced-motion routes report zero final issues."
     },
     {
       "check_id": "R59-RIGHTS-EXACT-PACKAGE",
@@ -168,7 +174,7 @@
       "topic": "publication_pair_positions",
       "zh_location": "A3 14 pages, A0 8 pages, 22 text-bearing figure files",
       "en_location": "A3.en 14 pages, A0.en 8 pages, 22 .en figure files",
-      "paired_statement": "Paired publication surfaces retain the same page/figure order, warning prominence and evidence status; R60 adds paired searchable semantic text and dedicated A0 distance-read hierarchy without changing 14+14 A3 or 8+8 A0 page counts.",
+      "paired_statement": "Paired publication surfaces retain the same page/figure order, warning prominence and evidence status. The searchable semantic text first added in R60 remains in the R62 rebuild, which replaces volatile current-round labels with paired stable review-edition labels without changing 14+14 A3 or 8+8 A0 page counts.",
       "result": "equivalent"
     },
     {
@@ -181,7 +187,7 @@
     }
   ],
   "formal_human_review_packet": {
-    "packet_id": "JZ-BILINGUAL-HUMAN-SAMPLE-R61-0",
+    "packet_id": "JZ-BILINGUAL-HUMAN-SAMPLE-R62-0",
     "status": "ready_for_independent_human_sampling_not_signed",
     "machine_supported_surface_facts": {
       "proposal_line_count_zh": 586,

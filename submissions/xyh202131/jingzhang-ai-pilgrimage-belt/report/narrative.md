@@ -6,6 +6,16 @@ The proposal makes one spatial decision: verification may not occupy the ground 
 
 方案只作一项空间裁决：验证不得接管普通任务所需地面。众智园以平行绕行和旁置验证庭回答；原点社区以一街两院四个可撤回节点回答；大钟寺以净空四向通勤和路外信息厅/人工台回答。
 
+## Publication coherence and first-screen closure / 出版一致性与首屏收口
+
+R62 removes a reviewer-facing identity conflict rather than adding design content. Before repair, proposal and changelog revisions had advanced while both visual pages and all 44 fixed pages still presented R60 as current; each report also exposed two document H1 headings, and the Chinese desktop hero ended with an orphaned final character pair. The frontstage now uses the stable labels `G0 CONCEPT · REVIEW EDITION / G0 概念稿 · 评审版`, while revision 62.0 remains in backstage provenance. Reports retain one H1 each, hero line breaks are semantic, and all fixed pages carry the stable label.
+
+第62轮不新增设计内容，只消除评审可见的身份冲突。修复前，正文与 changelog 版本已推进，但两份 visual 和全部 44 个定页成果仍把 R60 当作当前标签；两份报告各有两个文档级 H1，中文桌面首屏末字也孤立成行。前台现统一使用稳定标签 `G0 概念稿 · 评审版 / G0 CONCEPT · REVIEW EDITION`，62.0 仅留在后台溯源；报告各保留一个 H1，首屏按语义分行，全部定页成果使用同一稳定标签。
+
+Contributor QA covered both languages at five viewports, no-JavaScript and reduced-motion routes, and all 44 PDF pages. It found no final browser issue, no clipped or blank fixed page, and two fresh-process PDF builds were byte-identical. This remains contributor publication QA, not an independent cold read, accessibility certification, public response, professional acceptance or maturity upgrade.
+
+投稿方 QA 覆盖双语五档视口、无 JavaScript、减少动态和全部 44 个 PDF 页面；最终浏览器问题为 0，定页成果未见裁切或空白，两次新进程构建字节一致。本结论仍是投稿方出版审查，不是独立冷读、无障碍认证、公众反馈、专业接责或成熟度升级。
+
 ## Reading contract / 阅读合同
 
 - 30 seconds: identify Twin-Track and the three non-interchangeable prototypes.
@@ -52,9 +62,9 @@ The cover, video, captions, transcript and contract are contributor-authored con
 
 ## Rights and authenticity / 权利与真实性
 
-Contributor-owned content and the deterministic R59 concept media are CC BY 4.0; contributor-owned code is MIT; OSM-derived database content remains ODbL; rasterized visible Noto Sans CJK SC glyphs, the embedded R60 PDF semantic subset and the offline-HTML subset remain OFL 1.1; third-party citations and repository provisional inputs are not relicensed. Every current distribution path has a contributor rights-inventory decision, while independent legal and trademark review remain absent. Model-generated media paths remain zero; the R59 cover and silent video are contributor-authored deterministic presentation. Licensing does not establish field truth, approval, accessibility compliance, professional acceptance or G1.
+Contributor-owned content and the deterministic R59 concept media are CC BY 4.0; contributor-owned code is MIT; OSM-derived database content remains ODbL; rasterized visible Noto Sans CJK SC glyphs, the PDF semantic subset first embedded in R60 and retained by the R62 rebuild, and the offline-HTML subset remain OFL 1.1; third-party citations and repository provisional inputs are not relicensed. Every current distribution path has a contributor rights-inventory decision, while independent legal and trademark review remain absent. Model-generated media paths remain zero; the R59 cover and silent video are contributor-authored deterministic presentation. Licensing does not establish field truth, approval, accessibility compliance, professional acceptance or G1.
 
-投稿方自有内容与第59轮确定性概念媒体采用 CC BY 4.0，自有代码采用 MIT；OSM 数据库衍生内容继续适用 ODbL；PDF 中栅格化的可见 Noto Sans CJK SC 字形、R60 嵌入语义子集和离线 HTML 子集继续适用 OFL 1.1；第三方引用与仓库临时输入不被重新许可。当前分发树每个路径均有投稿方权利自查决定，独立法律和商标审查仍未提供。模型生成媒体路径继续为 0；第59轮封面和无声视频是投稿方原创确定性展示。许可不证明现场、批准、无障碍达标、专业接责或 G1。
+投稿方自有内容与第59轮确定性概念媒体采用 CC BY 4.0，自有代码采用 MIT；OSM 数据库衍生内容继续适用 ODbL；PDF 中栅格化的可见 Noto Sans CJK SC 字形、第60轮首次嵌入并由第62轮重建继续保留的语义子集，以及离线 HTML 子集继续适用 OFL 1.1；第三方引用与仓库临时输入不被重新许可。当前分发树每个路径均有投稿方权利自查决定，独立法律和商标审查仍未提供。模型生成媒体路径继续为 0；第59轮封面和无声视频是投稿方原创确定性展示。许可不证明现场、批准、无障碍达标、专业接责或 G1。
 
 ## Data-gap decision / 数据缺口裁决
 
