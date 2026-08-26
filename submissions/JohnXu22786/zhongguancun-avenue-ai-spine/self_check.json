@@ -69,7 +69,7 @@
       "ai_package_stages": {
         "submissions/JohnXu22786/zhongguancun-avenue-ai-spine": "formal"
       },
-      "total_bytes": 6783319,
+      "total_bytes": 9549737,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -199,5 +199,336 @@
       "target": "professional_review.py",
       "message": "professional_review: PASS"
     }
-  ]
+  ],
+  "figure_qc": {
+    "ok": true,
+    "ink_ok": true,
+    "clip_clear": true,
+    "overlap_clear": "not_verified",
+    "summary": "machine ink+edge-clip QC over all zh+en PNGs and A0/A3 PDF pages (RGB color-distance edge probe, canvas #bec7d2); text-bbox overlap is not machine-verifiable post-hoc -> overlap_clear=not_verified",
+    "checks": {
+      "assets/figures/cooperation-mechanism.en.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.6545,
+        "edge_clip_ratio": 0.0074,
+        "edge_clip_clear": true,
+        "ink_min": 0.1,
+        "ink_ok": true
+      },
+      "assets/figures/cooperation-mechanism.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 0.6547,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.1,
+        "ink_ok": true
+      },
+      "assets/figures/key-areas.en.png": {
+        "width": 1500,
+        "height": 2100,
+        "ink": 0.8452,
+        "edge_clip_ratio": 0.0052,
+        "edge_clip_clear": true,
+        "ink_min": 0.08,
+        "ink_ok": true
+      },
+      "assets/figures/key-areas.png": {
+        "width": 1500,
+        "height": 2100,
+        "ink": 0.8761,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.08,
+        "ink_ok": true
+      },
+      "assets/figures/land-use-structure.en.png": {
+        "width": 1830,
+        "height": 1232,
+        "ink": 0.5307,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.1,
+        "ink_ok": true
+      },
+      "assets/figures/land-use-structure.png": {
+        "width": 1830,
+        "height": 1232,
+        "ink": 0.5044,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.1,
+        "ink_ok": true
+      },
+      "assets/figures/logo.en.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 1.0,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.1,
+        "ink_ok": true
+      },
+      "assets/figures/logo.png": {
+        "width": 1800,
+        "height": 1200,
+        "ink": 1.0,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.1,
+        "ink_ok": true
+      },
+      "assets/figures/metrics-evidence.en.png": {
+        "width": 2018,
+        "height": 1232,
+        "ink": 0.8265,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.1,
+        "ink_ok": true
+      },
+      "assets/figures/metrics-evidence.png": {
+        "width": 1837,
+        "height": 1232,
+        "ink": 0.6314,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.1,
+        "ink_ok": true
+      },
+      "assets/figures/mobility-bluegreen.en.png": {
+        "width": 1500,
+        "height": 2100,
+        "ink": 0.9131,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.08,
+        "ink_ok": true
+      },
+      "assets/figures/mobility-bluegreen.png": {
+        "width": 1500,
+        "height": 2100,
+        "ink": 0.941,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.08,
+        "ink_ok": true
+      },
+      "assets/figures/site-overview.en.png": {
+        "width": 1500,
+        "height": 2100,
+        "ink": 0.9184,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.08,
+        "ink_ok": true
+      },
+      "assets/figures/site-overview.png": {
+        "width": 1500,
+        "height": 2100,
+        "ink": 0.9389,
+        "edge_clip_ratio": 0.0,
+        "edge_clip_clear": true,
+        "ink_min": 0.08,
+        "ink_ok": true
+      },
+      "drawings/a0-boards.en.pdf": {
+        "pages": 2,
+        "ok": true,
+        "cover_title_clear": true,
+        "page1_dense": true,
+        "page1_max_fontsize": 62.0,
+        "pages_detail": [
+          {
+            "width": 2384,
+            "height": 1685,
+            "ink": 0.8655,
+            "edge_clip_ratio": 0.0004,
+            "edge_clip_clear": true,
+            "max_fontsize": 62.0
+          },
+          {
+            "width": 2384,
+            "height": 1685,
+            "ink": 0.9144,
+            "edge_clip_ratio": 0.0004,
+            "edge_clip_clear": true,
+            "max_fontsize": 62.0
+          }
+        ]
+      },
+      "drawings/a0-boards.pdf": {
+        "pages": 2,
+        "ok": true,
+        "cover_title_clear": true,
+        "page1_dense": true,
+        "page1_max_fontsize": 62.0,
+        "pages_detail": [
+          {
+            "width": 2384,
+            "height": 1685,
+            "ink": 0.8695,
+            "edge_clip_ratio": 0.0004,
+            "edge_clip_clear": true,
+            "max_fontsize": 62.0
+          },
+          {
+            "width": 2384,
+            "height": 1685,
+            "ink": 0.845,
+            "edge_clip_ratio": 0.0004,
+            "edge_clip_clear": true,
+            "max_fontsize": 62.0
+          }
+        ]
+      },
+      "drawings/a3-booklet.en.pdf": {
+        "pages": 8,
+        "ok": true,
+        "cover_title_clear": true,
+        "page1_dense": true,
+        "page1_max_fontsize": 46.0,
+        "pages_detail": [
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.9752,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 46.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.9745,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.6988,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.9526,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.9731,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.8753,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.7789,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.998,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          }
+        ]
+      },
+      "drawings/a3-booklet.pdf": {
+        "pages": 8,
+        "ok": true,
+        "cover_title_clear": true,
+        "page1_dense": true,
+        "page1_max_fontsize": 46.0,
+        "pages_detail": [
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.9864,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 46.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.9804,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.6819,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.9619,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.9814,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.7617,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.7782,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          },
+          {
+            "width": 1191,
+            "height": 842,
+            "ink": 0.998,
+            "edge_clip_ratio": 0.0,
+            "edge_clip_clear": true,
+            "max_fontsize": 13.0
+          }
+        ]
+      }
+    }
+  }
 }

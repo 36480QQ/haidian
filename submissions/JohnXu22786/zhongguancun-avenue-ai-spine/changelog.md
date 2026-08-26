@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v3.0 - 2026-08-26
+
+ROUND-4 REPAIR（CocoSgt 83.0→修复，逐项落实）：
+
+- 用地分区计数统一为 24：metrics-evidence.png/.en.png 计数面板全部改为 24 个概念用地分区（此前错显 21），与 metrics.json land_use_zone_count=24、正文、用地图件及视觉页完全一致；图内明示"统一口径：land_use_zone_count=24"。
+- 全部图件重排（zh/en 各 7 张 PNG + A0×2 页/A3×8 页双语 PDF，figsize 12×8 或 10×14 竖版长廊版式 @150dpi）：site-overview/key-areas/mobility-bluegreen 按南北向长廊走廊重新排版为竖版制图板（中轴大道+三重点区域色带+东西缝合虚线+节点★标签右列+图例底部两列+指北针+比例尺），彻底消除标签互相重叠与文本被图例/面板遮挡；metrics-evidence 比例与计数分栏（两轴互不混用）；land-use-structure 柱图+24 分区口径文字框。
+- "Key areas (official)" 措辞修正（中英图件、HTML、PDF 全量）：改为"官方文本名称与面积口径；临时概念几何（非官方红线）" / "official text names & area calibers; provisional concept geometry (NOT official red lines)"，不再呈现为官方几何。
+- PROVISIONAL 警示强化：每张图顶部横幅式双语警示（临时概念边界·非官方红线·官方数据发布后复算 / PROVISIONAL BOUNDARY·NOT AN OFFICIAL RED LINE·RECOMPUTE AFTER OFFICIAL DATA），不被图例或面板遮挡；A0 标题≥62pt、A3 封面标题完整不裁切。
+- visual/index.html + visual/index.en.html 重排：总览 SVG 消除 L2 标签与横向虚线重叠（缝合线仅绘左半幅、节点标签右列独占区域），用地分区 24、重点区域诚实措辞、provisional 警示横幅置顶；report/proposal.html 与 proposal.en.html 由 render_proposal_html.py 从 md 重新渲染，4 页 HTML 最后重新内嵌 Noto Sans SC 子集字型（en 页 0 残留功能性中文）。
+- 机器 QC 记录：assets 与 drawings 全部 zh/en PNG 与 PDF 页 ink/边缘裁剪逐项测量（RGB 色距探针，浅钢灰画布 #bec7d2），结果持久化于 self_check.json[figure_qc]（ok=true、ink_ok=true、clip_clear=true、overlap_clear=not_verified——文本包围盒重叠为事后不可机器验证项，如实标注）；生成期版式按无重叠/无裁剪设计并在 changelog 记录。
+- 门禁：valroot 四门禁全部通过并持久化 self_check（formal-review-ready）；validate_local_submission PASS；score_rubric 97.0/100、reviewer_gaps 清零、无强制拒收项。
+
 ## v2.0 - 2026-08-25
 
 ROUND-3 REPAIR:
