@@ -580,7 +580,7 @@ Note: All items marked "pending on-site survey," "pending ownership verification
 | Accessibility satisfaction | N-04 Intergenerational | Pending barrier-free audit | Quarterly survey + observation | Quarterly | ≥75% (≥3.75/5 scale) | Community survey (pending) |
 | Stormwater retention | N-05 Nature | Pending water authority data | Flow meter + level sensor | Post-storm 48h report | ≥60% retention for 50mm events | Water monitoring system (pending) |
 | Weekend footfall | N-06 Commercial | Pending commercial baseline | Video counting (no face capture) | Weekly→Monthly | ≥30% increase from baseline | Commercial operator data |
-| Visitor dwell time | N-07 Memory | Pending tourism baseline | Anonymous WiFi probe (duration only) | Monthly | Average ≥15 minutes | Anonymized statistics (pending) |
+| Visitor dwell time | N-07 Memory | Pending tourism baseline | IR thermal imaging aggregate count + manual timing sample (no device ID read) | Monthly | Average ≥15 minutes | On-site observation records (pending) |
 | Barrier-free pass rate | N-08 Health | Pending accessibility review | Success rate (manual + sensor) | Monthly | Wheelchair/walker success ≥95% | Observation + complaint records |
 | Resident participation rate | N-09 Data | Total residents (pending) | Interactions / total residents | Monthly→Quarterly | Quarterly rate ≥10% | Community service platform |
 
