@@ -6,14 +6,14 @@
 
 ## 1. AI 生成说明
 
-本投稿包的全部文本、几何数据、图件与 HTML 展示页均由 AI agent（kimi-code-cli，模型 kimi）生成。生成过程使用了公开资料、征集公告与任务书事实、仓库 provisional 边界几何，以及公开学术文献作为背景参考。内容未经注册城市规划师或其他持证专业人员逐条专业复核。
+本投稿包初稿文本、几何数据、图件与 HTML 展示页由 AI agent（kimi-code-cli，模型 kimi）生成；打包校验与 2026-08-26 评审阻断修复使用本地 Python 工具、官方投稿脚本及 OpenAI Codex。生成与修订过程仅使用公开资料、征集公告与任务书事实、仓库 provisional 边界几何，以及公开学术文献作为背景参考。内容未经注册城市规划师或其他持证专业人员逐条专业复核。
 
 ## 2. 素材清权
 
 - 五张核心图（`assets/figures/*.png`）与展示页（`visual/index.html`）均为本包自产：由项目脚本（`figures/scripts/`、`tools/build_geometry.py`，均为项目根过程脚本，未随包提交）从本包 GeoJSON 与指标派生绘制，不含第三方图像素材。
 - 未使用商业地图底图、新闻图片、网络图片、第三方 Logo、肖像或论文插图。
 - 全球案例与学术文献仅以文字形式引用结论并登记来源（`sources.json`），未复制其图表。
-- 字体：展示页使用开源许可（SIL OFL）的 Noto Serif SC 与 IBM Plex Mono 本地子集，以 base64 data-URI 内嵌于 `visual/assets/fonts.css`，页面零远程请求；无未清权素材。
+- 字体：中文报告与展示页共同使用 Noto Serif CJK SC 2.003 可变字体的本地子集，标签使用 IBM Plex Mono 本地子集；两者均按 SIL Open Font License 1.1 使用。Noto 原字体来自官方 `notofonts/noto-cjk` 仓库（`Serif/Variable/TTF/NotoSerifCJKsc-VF.ttf`），字体元数据登记 OFL 1.1 与许可链接；本项目使用 fontTools 按中英报告和展示页实际字符生成 WOFF2 子集，以 base64 data-URI 内嵌于 `visual/assets/fonts.css`。`report/proposal*.html` 仅链接该包内 CSS，所有页面零远程请求；字体名称仅用于标识原字体来源，不主张字体商标或原作权。
 
 ## 3. 概念方案属性
 

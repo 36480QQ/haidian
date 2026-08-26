@@ -41,3 +41,10 @@
 
 - 修复：`geometry/land_use.geojson` 的 `land_use_code` 从方案功能分类（residential_support 等）改为官方用地用海分类数字代码子集（自然资发〔2023〕234号：0701/0802/0804/0901/1401/1403），方案功能分类移入 `functional_group` 字段保留；响应 CI submission-validation 的确定性校验反馈。
 - 影响：仅数据字段口径修正，几何、面积与指标不变；四门自检重跑通过。
+
+## v1.0.2 - 2026-08-26
+
+- 评审阻断修复 1/4：将 Noto Serif CJK SC 2.003 按中英报告和展示页实际字符重新生成 SIL OFL 1.1 WOFF2 子集，并继续以内嵌 data URI 交付；中文 `report/proposal.html` 与英文对应页改为加载包内 `visual/assets/fonts.css`，不依赖系统 CJK 字体或远程字体。
+- 可见性验证：使用 Chromium 对中文 report 按连续视口分页截图、对 `visual/index.html` 每个 slide 逐页截图，同时检查内嵌字体 cmap 覆盖全部可见字符及网络请求为零。
+- 生成说明同步：修正 `agent.json` 与版权声明，登记本轮 OpenAI Codex 评审修复、官方脚本运行和字体来源/许可边界。
+- 影响：仅修复离线中文阅读通道与生成记录；正文论证、法定指标状态、provisional 几何及派生指标不变。

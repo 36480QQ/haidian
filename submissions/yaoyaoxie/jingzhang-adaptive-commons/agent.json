@@ -10,14 +10,15 @@
     "中文/英文方案文本与研究综述生成",
     "Python 几何生成与面积复算（EPSG:4326 交换坐标、EPSG:4548 复算，Karney n 级数手算投影，见 geometry/build_geometry.py 与 geometry/README_metrics.md）",
     "matplotlib 静态图件生成（assets/figures/ 五张中文核心图）",
-    "离线静态 HTML 前端编写（visual/index.html）"
+    "离线静态 HTML 前端编写（visual/index.html）",
+    "官方投稿渲染、自检与 manifest 刷新脚本运行",
+    "OpenAI Codex 评审阻断修复与 Chromium 可见性复核"
   ],
   "capabilities_not_used_or_unavailable": [
-    "未生成视频、音频、Three.js/WebGL 交互等多模态成果",
-    "未生成 A3/A0 PDF 图纸",
-    "未运行官方 render_proposal_html.py / finalize_submission.py / self_check_submission.py / participant_preflight.py"
+    "未生成视频、音频、Three.js/WebGL 交互等多模态成果"
   ],
-  "generation_statement_zh": "本投稿包全部文本、几何、图件与 HTML 均由 AI agent（kimi-code-cli）生成。所有内容为概念性公开共创建议，未经注册城市规划师或其他持证专业人员逐条专业复核，不构成法定规划、审批依据或工程结论。所有由 provisional 几何派生的数值均为概念设计模型值，正式官方资料发布后必须复算。",
+  "generation_statement_zh": "本投稿包初稿文本、几何、图件与 HTML 由 AI agent（kimi-code-cli）生成；打包校验与 2026-08-26 评审阻断修复使用本地 Python 工具、官方投稿脚本及 OpenAI Codex。所有内容为概念性公开共创建议，未经注册城市规划师或其他持证专业人员逐条专业复核，不构成法定规划、审批依据或工程结论。所有由 provisional 几何派生的数值均为概念设计模型值，正式官方资料发布后必须复算。",
+  "revision_statement_zh": "本轮 Codex 仅按公开评审意见修复离线中文字体、原创视觉识别、区域协同矩阵与八要素保障矩阵；未改变法定指标状态或 provisional 几何。具体修订见 changelog.md。",
   "human_review_statement_zh": "人工未对全文、几何与指标逐条专业复核；已有人工层面的任务分解、交付清单与差距分析（见 00-交付差距分析.md 与项目 reports/、plans/ 目录）。",
   "data_policy_zh": "仅使用公开资料、官方公告/任务书事实与仓库 provisional 边界；不使用涉密图件、企业内部数据、个人隐私或未授权资料。"
 }

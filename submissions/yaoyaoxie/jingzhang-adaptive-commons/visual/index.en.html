@@ -363,6 +363,14 @@ td b{color:var(--ink)}
 }
 .edit-toggle.show,.edit-toggle.active{opacity:1;pointer-events:auto}
 .edit-toggle.active{background:var(--copper);color:#fff;border-color:var(--copper)}
+.edit-toggle::before{
+  content:"";width:15px;height:5px;border:2px solid currentColor;border-radius:1px;
+  transform:rotate(-45deg);box-sizing:border-box;
+}
+.edit-toggle::after{
+  content:"";width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;
+  border-left:6px solid currentColor;transform:rotate(-45deg);margin-left:-4px;
+}
 .edit-banner{
   position:fixed;top:0;left:0;right:0;z-index:9999;background:var(--ink);color:#fff;
   text-align:center;font-family:var(--font-mono);font-size:.72rem;padding:.45em 1em;
@@ -408,7 +416,7 @@ body.edit-active .slide{scroll-snap-align:none}
 
 <!-- Inline editing UI -->
 <div class="edit-hotzone" id="editHotzone" title="Edit mode"></div>
-<button class="edit-toggle" id="editToggle" title="Edit mode (E)">✎</button>
+<button class="edit-toggle" id="editToggle" title="Edit mode (E)" aria-label="Edit mode"></button>
 <div class="edit-banner" id="editBanner">EDIT MODE — click any text to edit · autosaved locally · <b>Ctrl/⌘+S to export HTML</b> · press E to exit</div>
 
 <!-- ==========================================
