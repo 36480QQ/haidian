@@ -358,6 +358,75 @@
         "A-PILOT-001"
       ]
     },
+    "simulation_task_count": {
+      "status": "known",
+      "value": 13,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(simulation.json tasks)",
+      "confidence": "high",
+      "assumptions": [
+        "A-TEST-001"
+      ]
+    },
+    "simulation_success_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(outcome == success or outcome ends with _success) / count(tasks); this measures expected checker behaviour, not service or field success",
+      "confidence": "high",
+      "assumptions": [
+        "A-TEST-001"
+      ]
+    },
+    "synthetic_assertions_passed": {
+      "status": "known",
+      "value": 18,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "visual/assets/encounter-ticket.validation.json"
+      ],
+      "formula": "baselines.encounter_ticket_contract_replay.assertions_passed",
+      "confidence": "high",
+      "assumptions": [
+        "A-TEST-001"
+      ]
+    },
+    "spatial_boolean_combinations_checked": {
+      "status": "known",
+      "value": 64,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "visual/assets/encounter-ticket.validation.json"
+      ],
+      "formula": "2^6 combinations of public_path, separation, duty_holder, physical_stop, ai_off_bypass, and restoration",
+      "confidence": "high",
+      "assumptions": [
+        "A-TEST-001",
+        "A-SITE-VERIFY-001"
+      ]
+    },
+    "expected_rejection_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "simulation.json",
+        "visual/assets/encounter-ticket.validation.json"
+      ],
+      "formula": "5 expected-invalid Encounter Tickets + 4 expected-reject spatial cases",
+      "confidence": "high",
+      "assumptions": [
+        "A-TEST-001"
+      ]
+    },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,
