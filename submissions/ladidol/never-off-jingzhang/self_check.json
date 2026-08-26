@@ -10,14 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/ladidol/never-off-jingzhang/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/ladidol/never-off-jingzhang/assets/figures/key-areas.en.png: byte-identical to `assets/figures/key-areas.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
-        "submissions/ladidol/never-off-jingzhang/assets/figures/land-use-structure.en.png: byte-identical to `assets/figures/land-use-structure.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
-        "submissions/ladidol/never-off-jingzhang/assets/figures/metrics-evidence.en.png: byte-identical to `assets/figures/metrics-evidence.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
-        "submissions/ladidol/never-off-jingzhang/assets/figures/mobility-bluegreen.en.png: byte-identical to `assets/figures/mobility-bluegreen.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
-        "submissions/ladidol/never-off-jingzhang/assets/figures/site-overview.en.png: byte-identical to `assets/figures/site-overview.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
-        "submissions/ladidol/never-off-jingzhang/drawings/a0-boards.en.pdf: byte-identical to `drawings/a0-boards.pdf`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
-        "submissions/ladidol/never-off-jingzhang/drawings/a3-booklet.en.pdf: byte-identical to `drawings/a3-booklet.pdf`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review"
+        "submissions/ladidol/never-off-jingzhang/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/ladidol/never-off-jingzhang/proposal.md"
@@ -71,7 +64,7 @@
       "ai_package_stages": {
         "submissions/ladidol/never-off-jingzhang": "formal"
       },
-      "total_bytes": 958972,
+      "total_bytes": 2635184,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -144,16 +137,16 @@
       "issues": [],
       "summary": {
         "standard_matrix_items": 6,
-        "design_depth_items": 15,
+        "design_depth_items": 23,
         "known_metric_refs_required": 6,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 11,
-          "standard": 0,
-          "depth": 17,
-          "data": 0,
-          "metric": 0
+          "source": 14,
+          "standard": 1,
+          "depth": 22,
+          "data": 5,
+          "metric": 3
         }
       }
     },

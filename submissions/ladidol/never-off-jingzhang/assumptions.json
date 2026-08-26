@@ -20,9 +20,9 @@
     {
       "id": "A-RIGHTS",
       "status": "active",
-      "statement": "External pages and peer proposals are cited as references; external images, logos, fonts, maps and screenshots are not copied into the draft.",
-      "impact": "Formal visual assets must be original, public-domain, or separately cleared.",
-      "trigger_to_recalculate": "Before any public display or PR, audit every visual asset and license record.",
+      "statement": "External pages and peer proposals are cited as references; all submitted diagrams, charts, HTML and raster figures are generated for this proposal. No external image, logo, map tile, screenshot or third-party font file is redistributed.",
+      "impact": "Formal display remains rights-pending until the asset ledger is checked; system fonts used only to rasterize local figures are not submitted as font files.",
+      "trigger_to_recalculate": "Before any public display or PR, audit every visual asset, font rendering dependency, source URL, license and attribution record; unresolved rows remain marked A-RIGHTS.",
       "owner": "participant"
     },
     {

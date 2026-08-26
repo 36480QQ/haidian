@@ -1,7 +1,97 @@
 {
   "schema_version": "draft-v1",
   "retrieved_at": "2026-08-26",
+  "source_registry_alignment": {
+    "formal_task_evidence": {
+      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "registry_path": "data/source_registry.json#DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_for": ["project name", "scope descriptions", "official task requirements", "submission depth"],
+      "not_allowed_for": ["official polygon", "road redline", "statutory control", "implementation commitment"]
+    },
+    "taskbook_evidence": {
+      "source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
+      "registry_path": "data/source_registry.json#DATA-SRC-AGENT-TASKBOOK-20260518",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_for": ["agent task coverage", "scenario and operation requirements"],
+      "not_allowed_for": ["official boundary", "engineering conclusion", "government approval"]
+    },
+    "spatial_context": {
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "registry_path": "data/source_registry.json#DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "review_status": "provisional",
+      "usable_for_formal": "provisional_only",
+      "allowed_for": ["temporary visualization", "design discussion", "intake self-check"],
+      "not_allowed_for": ["official boundary", "precise area", "statutory planning", "formal spatial scoring"]
+    },
+    "participant_context_sources": {
+      "review_status_legend": {
+        "background_only": "Context or method support; not a project-specific formal control or boundary.",
+        "peer_method_only": "Method comparison; no copied text, image, brand, policy or asset.",
+        "rights_pending": "External asset or future display use requires a separate rights check under A-RIGHTS."
+      },
+      "background_only": ["OFFICIAL-CALL", "OFFICIAL-SKILL", "BEIJING-STAT-2025", "BEIJING-MASTER-PLAN", "BEIJING-AI-2025", "HAIDIAN-AI-2025", "BEIJING-TRANSPORT-2026", "OFFICIAL-RESILIENCE", "JZ-PLANNING-NOTICE"],
+      "peer_method_only": ["PEER-CIVIC-LOOP", "PEER-REN-AXIS"]
+    }
+  },
   "sources": [
+    {
+      "id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "title": "百年京张AI创新带城市设计国际方案征集资格预审公告",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "retrieved_at": "2026-08-26",
+      "coverage": "formal task, scope descriptions and required design depth",
+      "use": "approved formal task evidence via central source registry",
+      "license_or_reuse": "cite official public announcement; do not copy unlicensed media",
+      "limitation": "cannot establish an official polygon, statutory control or implementation commitment",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "source_registry_ref": "data/source_registry.json#DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+    },
+    {
+      "id": "DATA-SRC-AGENT-TASKBOOK-20260518",
+      "publisher": "User-provided cleared document",
+      "title": "面向全球智能体开展百年京张AI创新带城市设计开源征集任务书摘录",
+      "url": "brief/site-package/agent_taskbook.json",
+      "retrieved_at": "2026-08-26",
+      "coverage": "agent.1-agent.6 tasks, scenario, branding and operation requirements",
+      "use": "approved taskbook evidence",
+      "license_or_reuse": "cleared for repository use and public task alignment",
+      "limitation": "not an official boundary, statutory control or engineering conclusion",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "source_registry_ref": "data/source_registry.json#DATA-SRC-AGENT-TASKBOOK-20260518"
+    },
+    {
+      "id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "publisher": "Repository maintainers",
+      "title": "百年京张AI创新带三层范围与三处重点区临时粗略 polygon",
+      "url": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "retrieved_at": "2026-08-26",
+      "coverage": "temporary spatial context for visualization and intake checks",
+      "use": "provisional design model only",
+      "license_or_reuse": "repository-maintained provisional geometry; retain limitation notice",
+      "limitation": "not an official boundary, precise area basis, statutory control or formal scoring evidence",
+      "review_status": "provisional",
+      "usable_for_formal": "provisional_only",
+      "source_registry_ref": "data/source_registry.json#DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "publisher": "open-city.ai / Haidian repository",
+      "title": "Central public source registry and processed source-use guidance",
+      "url": "data/source_registry.json",
+      "retrieved_at": "2026-08-26",
+      "coverage": "source authority, review status, formal usability and restrictions",
+      "use": "source-status mapping and citation workflow",
+      "license_or_reuse": "repository metadata; retain source IDs and limitations",
+      "limitation": "registry status does not make provisional geometry official and does not clear third-party assets",
+      "review_status": "approved",
+      "usable_for_formal": "yes"
+    },
     {
       "id": "OFFICIAL-CALL",
       "publisher": "open-city.ai / Haidian",

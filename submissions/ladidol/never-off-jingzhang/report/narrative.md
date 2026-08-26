@@ -19,3 +19,7 @@ OPEN → ALERT → HUMAN → RESTORE → RETIRE。AI 增加选择，不替代普
 ## 实施
 
 先审计与补足基础服务，再接入可暂停 AI，最后在可控测试节点中验证机器人、公共服务助手和事件回放。正式规划、文保、道路、市政、权属与实施条件由专业团队确认。
+
+## 本轮复核补充
+
+六项 agent 任务现在分别对应总体概念/三区两翼、全栈生态、十类场景与用户画像、公共空间/地标/组件、京张—中关村—AI 文化叙事、年度活动/开发者社区/国际转化。每类场景均列出最小数据、人工责任、暂停/退出条件和证据留存规则；所有面积与图件仍基于 provisional geometry，正式任务依据使用中央登记的 `DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509`。[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [assumption:A-PROVISIONAL-GEOMETRY]
