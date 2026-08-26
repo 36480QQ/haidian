@@ -130,7 +130,7 @@ This proposal constructs the 9 suture nodes as different functional segments alo
 
 ### Zhongzhi Park Full-Stack Indigenous System
 
-Zhongzhi Park, as the northern anchor (192.1 ha), carries the spatial platform function of the AI full-stack indigenous innovation system. The suture nodes "Knowledge Permeation Node" and "Nature Permeation Node" are located at Zhongzhi Park's boundary, achieving: ecological restoration and knowledge spillover at the Qinghe cultural interface, tidal commuting optimization at the North Fifth Ring Road transport interface, and day-night functional switching between the industrial park and surrounding residential communities [data:geometry/key_areas.geojson#PROV-KEY-001].
+Zhongzhi Park, as the northern anchor (192.1 ha), carries the spatial platform function of the AI full-stack indigenous innovation system. The suture nodes "Knowledge Permeation Node" (PUBLIC-001) and "Tidal Interlace Node" (PUBLIC-002) are located within the Zhongzhi Park area, achieving: east-boundary knowledge spillover and community sharing, tidal commuting optimization at the southern transport hub, and day-night functional switching between the industrial park and surrounding residential communities [data:geometry/key_areas.geojson#PROV-KEY-001].
 
 ### Industrial Space and Land, Computing Power, and Data Mechanisms
 
@@ -280,9 +280,9 @@ Core storyline: "The city that stitches time" — a city that has stitched toget
 
 The phasing plan corresponds to the three-phase strategy in `geometry/phasing.geojson` [data:geometry/phasing.geojson#PHASE-001] [source:AGENT-TASKBOOK]:
 
-- **Near-term (1-3 years)**: Priority repair of Memory Anchor Node, Commercial Suture Node, and Data Suture Node—3 nodes (southern segment, Dazhongsi area)
-- **Mid-term (3-5 years)**: Advancing Knowledge Permeation Node, Tidal Interlace Node, and Entrepreneurship Incubation Node—3 nodes (northern segment, Zhongzhi Park area)
-- **Long-term (5-10 years)**: Completing Intergenerational Weave Node, Nature Permeation Node, and Health Suture Node—3 nodes (central segment, AI Origin Community)
+- **Near-term (1-3 years)**: Priority repair of Commercial Suture Node, Memory Anchor Node, Health Suture Node, and Data Suture Node—4 nodes (southern segment, Dazhongsi area; PUBLIC-006/007/008/009)
+- **Mid-term (3-5 years)**: Advancing Knowledge Permeation Node and Tidal Interlace Node—2 nodes (northern segment, Zhongzhi Park area; PUBLIC-001/002)
+- **Long-term (5-10 years)**: Completing Entrepreneurship Incubation Node, Intergenerational Weave Node, and Natural Permeation Node—3 nodes (central segment, AI Origin Community; PUBLIC-003/004/005)
 
 The near-term selection of the southern segment first is because the Dazhongsi area has high commercial vitality, strong public perception, and rapid visible outcomes; the long-term deferral of the central segment's intergenerational and health nodes reflects their involvement of sensitive facilities (schools, elderly care) requiring more thorough community consultation.
 
@@ -358,7 +358,7 @@ Floor area ratio, building height, development intensity, and other regulatory c
 
 ### Industrial Space Supply
 
-The 9 suture nodes do not add large-scale industrial buildings; instead, they release collaborative value from existing stock through interface repair. Zhongzhi Park's wall repair opens the park's ground-floor spaces to the community (approximately adding 2km of usable public interface length); AI Origin Community's campus-park suture reduces walking distances (estimated 15% commute time savings); Dazhongsi's four-quadrant pedestrian connectivity raises commercial service accessibility to full coverage around the station (conceptual proposal).
+The 9 suture nodes do not add large-scale industrial buildings; instead, they release collaborative value from existing stock through interface repair. Zhongzhi Park's wall repair opens the park's ground-floor spaces to the community (conceptual estimate: usable public interface increment estimated at km-scale based on wall length × ground-floor depth; precise value pending on-site survey); AI Origin Community's campus-park suture reduces walking distances (conceptual estimate: based on network topology shortening ratio; precise value pending network analysis); Dazhongsi's four-quadrant pedestrian connectivity raises commercial service accessibility (conceptual proposal; improvement magnitude pending transport modeling validation).
 
 Data gaps: Precise building footprints, property ownership information, regulatory control conditions, and structural safety assessments are all pending items. The above renewal strategies represent directional design recommendations only [source:OFFICIAL-ANNOUNCEMENT].
 
@@ -381,13 +381,15 @@ The spatial structure of the overall design area (11.4 km²) follows the pattern
 
 This proposal's building renewal strategy adopts "interface-layer micro-renewal" as its core principle (conceptual proposal, for professional teams to further develop). Within the 300m influence radius of the 9 suture nodes, buildings facing the interface receive categorized treatment [data:geometry/buildings.geojson#BLDG-001]:
 
-**Retain category** (approximately 60% of interface buildings): Structurally sound and functionally appropriate buildings are retained as-is, with only improvements to ground-floor street frontage transparency and public accessibility — removing unnecessary walls, creating ground-level setbacks or outdoor seating areas.
+**Retain category** (conceptual suggested proportion: majority): Structurally sound and functionally appropriate buildings are retained as-is, with only improvements to ground-floor street frontage transparency and public accessibility — removing unnecessary walls, creating ground-level setbacks or outdoor seating areas.
 
-**Renovate category** (approximately 30%): Structurally sound but functionally mismatched buildings undergo internal functional adjustment — converting ground-floor enclosed office/warehouse spaces to semi-public service spaces (exhibition corridors, community services, co-working), achieving functional suturing. Renovation does not involve structural reinforcement or major facade modifications, keeping investment intensity low.
+**Renovate category** (conceptual suggested proportion: minority): Structurally sound but functionally mismatched buildings undergo internal functional adjustment — converting ground-floor enclosed office/warehouse spaces to semi-public service spaces (exhibition corridors, community services, co-working), achieving functional suturing. Renovation does not involve structural reinforcement or major facade modifications, keeping investment intensity low.
 
-**Pending assessment category** (approximately 10%): Buildings with questionable structural safety or direct conflicts with suture corridors are marked as "pending professional structural assessment and property ownership negotiation"; this proposal does not make demolition determinations.
+**Pending assessment category** (conceptual suggested proportion: very few): Buildings with questionable structural safety or direct conflicts with suture corridors are marked as "pending professional structural assessment and property ownership negotiation"; this proposal does not make demolition determinations.
 
-Total building volume control follows the "no total increase, optimize interfaces" principle (conceptual proposal) — suture repair is not incremental development but stock optimization. Specific FAR and building heights cannot be provided due to lack of official regulatory conditions, maintained in unknown status in metrics.json with explanations [metric:building_footprint_area_sqm]. The 9 suture nodes are expected to add approximately 200,000 m² of new public space area, primarily from linear space released through wall demolition and publicized area from ground-floor functional conversion, without involving new large-volume buildings.
+Note: The retain/renovate/pending-assessment category ratios are directional conceptual suggestions; precise proportions require determination through as-built surveys and professional assessment.
+
+Total building volume control follows the "no total increase, optimize interfaces" principle (conceptual proposal) — suture repair is not incremental development but stock optimization. Specific FAR and building heights cannot be provided due to lack of official regulatory conditions, maintained in unknown status in metrics.json with explanations [metric:building_footprint_area_sqm]. The 9 suture nodes' new public space area is a conceptual order-of-magnitude estimate (based on average node influence radius 300m × 9 nodes × interface linear length extrapolation; precise area pending detailed design determination), primarily from linear space released through wall demolition and publicized area from ground-floor functional conversion, without involving new large-volume buildings.
 
 ### Transportation and Slow Mobility System
 
@@ -412,7 +414,7 @@ Natural Infiltration Needle nodes combine stormwater management with interface s
 
 **Design positioning**: East-west interface opening of a garden-type full-stack independent innovation district [data:geometry/key_areas.geojson#PROV-KEY-001]
 
-**Suture nodes**: Knowledge Infiltration Needle + Natural Infiltration Needle
+**Suture nodes**: Knowledge Permeation Node (PUBLIC-001) + Tidal Interlace Node (PUBLIC-002)
 
 **Spatial actions** (conceptual proposal):
 - East boundary: Remove non-security wall segments; install "Knowledge Exhibition Corridor" — operable display spaces serving as academic poster/achievement release venues during daytime and community cultural activity venues at night
@@ -426,7 +428,7 @@ Natural Infiltration Needle nodes combine stormwater management with interface s
 
 **Design positioning**: Full-time opening of a campus-adjacent incubation and talent community [data:geometry/key_areas.geojson#PROV-KEY-002]
 
-**Suture nodes**: Entrepreneurship Incubation Needle + Intergenerational Weave Needle + Tidal Weave Needle
+**Suture nodes**: Entrepreneurship Incubation Node (PUBLIC-003) + Intergenerational Weave Node (PUBLIC-004) + Natural Permeation Node (PUBLIC-005)
 
 **Spatial actions** (conceptual proposal):
 - Campus-park interface: Add slow-mobility connections allowing faculty and students to reach incubation spaces within 5 minutes
@@ -440,7 +442,7 @@ Natural Infiltration Needle nodes combine stormwater management with interface s
 
 **Design positioning**: Interface activation of an urban-type intelligent economy and international exchange district [data:geometry/key_areas.geojson#PROV-KEY-003]
 
-**Suture nodes**: Commercial Suture Needle + Memory Anchor Needle + Data Suture Needle
+**Suture nodes**: Commercial Suture Node (PUBLIC-006) + Memory Anchor Node (PUBLIC-007) + Health Suture Node (PUBLIC-008) + Data Suture Node (PUBLIC-009)
 
 **Spatial actions** (conceptual proposal):
 - Dazhongsi Station integration: Optimize four-quadrant pedestrian connectivity, eliminating ground-level crossing barriers
@@ -522,18 +524,36 @@ The system follows the "physical improvements remain effective when AI is shut d
 
 Note: All elements marked "pending recruitment," "pending negotiation," or "pending discussion" are intentional design recommendations and are not presented as secured resources. Actual implementation requires investment attraction, agreement signing, and administrative approval processes.
 
+## Nine-Node Spatial Master Table
+
+The following is the sole authoritative mapping; narrative text, drawings, implementation cards, compliance matrix, and GeoJSON all defer to this table:
+
+| Node ID | Node Name | PUBLIC ID | Key Area Assignment | Associated Scenarios | Implementation Phase |
+| --- | --- | --- | --- | --- | --- |
+| N-01 | Knowledge Permeation Node | PUBLIC-001 | Zhongzhi Park AI Acceleration Zone | SC-03 Midday Knowledge Sharing | Phase 2 (mid-term, 3-5 years) |
+| N-02 | Tidal Interlace Node | PUBLIC-002 | Zhongzhi Park AI Acceleration Zone | SC-01 Smart Morning Exercise, SC-02 Commute Micro-Circulation | Phase 2 (mid-term, 3-5 years) |
+| N-03 | Entrepreneurship Incubation Node | PUBLIC-003 | AI Origin Community | SC-10 Entrepreneurship Pop-Up Space | Phase 3 (long-term, 5-10 years) |
+| N-04 | Intergenerational Weave Node | PUBLIC-004 | AI Origin Community | SC-04 After-School Safety Corridor, SC-11 Age-Friendly Route | Phase 3 (long-term, 5-10 years) |
+| N-05 | Natural Permeation Node | PUBLIC-005 | AI Origin Community | SC-06 Seasonal Functional Switching, SC-12 Real-Time Carbon Sink | Phase 3 (long-term, 5-10 years) |
+| N-06 | Commercial Suture Node | PUBLIC-006 | Dazhongsi AI Industry Cluster | SC-07 Holiday Market Orchestration | Phase 1 (near-term, 1-3 years) |
+| N-07 | Memory Anchor Node | PUBLIC-007 | Dazhongsi AI Industry Cluster | SC-09 Heritage Immersive Interpretation | Phase 1 (near-term, 1-3 years) |
+| N-08 | Health Suture Node | PUBLIC-008 | Dazhongsi AI Industry Cluster | SC-05 Night Running Safety Lighting, SC-11 Age-Friendly Route | Phase 1 (near-term, 1-3 years) |
+| N-09 | Data Suture Node | PUBLIC-009 | Dazhongsi AI Industry Cluster | SC-08 Community Co-Creation Diagnosis | Phase 1 (near-term, 1-3 years) |
+
+Note: Nodes are numbered north-to-south along the corridor (PUBLIC-001 highest latitude, PUBLIC-009 lowest). Zhongzhi Park has 2 nodes, AI Origin 3, and Dazhongsi 4—the asymmetric distribution reflects Dazhongsi's higher commercial density and diverse interface types, as well as near-term priority for the high-visibility southern segment.
+
 ## Nine-Node Point-by-Point Implementation Cards
 
 | Node | Provisional Location/Layer ID | Current Barrier Evidence | Beneficiary Population | Physical Action | AI Action | Ownership & Professional Dependencies | No-AI Fallback | Near-term Verifiable KPI |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Knowledge Infiltration Needle | PUBLIC-001, Zhongzhi Park east boundary | Walls + management fencing (pending on-site survey to confirm type) | University faculty/students, surrounding residents | Operable exhibition corridor, supplemental lighting | Topic matching → space reservation | Park property ownership confirmation | Exhibition corridor remains open, fixed display boards | Daily pedestrian throughput increase |
-| Tidal Weave Needle | PUBLIC-003, metro station vicinity | Wide road cross-section (pending traffic engineering measurement) | Commuters, surrounding residents | Safety islands, widened sidewalks | Real-time flow → route recommendations | Traffic management authority approval | Fixed safety islands + traffic signals | Morning peak crossing time reduction |
-| Entrepreneurship Incubation Needle | PUBLIC-004, industrial park boundary | Access control + walls (pending ownership verification) | Entrepreneurs, community residents | Ground-floor street-facing open renovation | Demand matching → space allocation | Industrial park operator agreement | Ground floor permanently open | Resident startup teams count |
-| Intergenerational Weave Needle | PUBLIC-005, between school and elderly care facility | Railings + elevation difference (pending accessibility assessment) | Students, elderly residents, parents | Shared ramped garden | Path safety assessment → lighting | School/elderly care facility management | Ramps + fixed lighting | Accessible passage satisfaction |
-| Natural Infiltration Needle | PUBLIC-002, ecological corridor interface | Drainage facility barrier (pending municipal documentation) | All residents, ecosystem | Rain garden + ecological bridge | Weather forecast → facility configuration | Water authority, parks and greening bureau | Natural infiltration, permanent vegetation | Stormwater retention volume, biodiversity |
+| Tidal Interlace Node | PUBLIC-002, Zhongzhi Park southern transport hub | Wide road cross-section (pending traffic engineering measurement) | Commuters, surrounding residents | Safety islands, widened sidewalks | Real-time flow → route recommendations | Traffic management authority approval | Fixed safety islands + traffic signals | Morning peak crossing time reduction |
+| Entrepreneurship Incubation Node | PUBLIC-003, AI Origin industrial park boundary | Access control + walls (pending ownership verification) | Entrepreneurs, community residents | Ground-floor street-facing open renovation | Demand matching → space allocation | Industrial park operator agreement | Ground floor permanently open | Resident startup teams count |
+| Intergenerational Weave Node | PUBLIC-004, AI Origin school-elderly care facility interface | Railings + elevation difference (pending accessibility assessment) | Students, elderly residents, parents | Shared ramped garden | Path safety assessment → lighting | School/elderly care facility management | Ramps + fixed lighting | Accessible passage satisfaction |
+| Natural Permeation Node | PUBLIC-005, AI Origin southern ecological corridor interface | Drainage facility barrier (pending municipal documentation) | All residents, ecosystem | Rain garden + ecological bridge | Weather forecast → facility configuration | Water authority, parks and greening bureau | Natural infiltration, permanent vegetation | Stormwater retention volume, biodiversity |
 | Commercial Suture Needle | PUBLIC-006, Dazhongsi commercial street | Parking lot barrier (pending ownership confirmation) | Consumers, merchants, tourists | Market square + outdoor seating area | Footfall prediction → stall allocation | Commercial property owner, urban management | Fixed outdoor seating zones | Weekend footfall, merchant revenue |
 | Memory Anchor Needle | PUBLIC-007, railway heritage points | Heritage protection fencing (pending heritage authority confirmation) | Tourists, citizens, researchers | Transparent display installation | Spatial recognition → content delivery | Heritage protection authority approval | Fixed display boards + QR codes | Visitor dwell time |
-| Health Suture Needle | PUBLIC-008, adjacent to hospital/rehabilitation facility | Elevation difference + blind spots (pending accessibility audit) | Elderly residents, rehabilitation patients | Rehabilitation trail + accessible corridor | Motion detection → light following | Health commission, hospital management | Fixed accessible corridor + constant lighting | Accessible passage rate |
+| Health Suture Node | PUBLIC-008, Dazhongsi area adjacent to hospital/rehabilitation facility | Elevation difference + blind spots (pending accessibility audit) | Elderly residents, rehabilitation patients | Rehabilitation trail + accessible corridor | Motion detection → light following | Health commission, hospital management | Fixed accessible corridor + constant lighting | Accessible passage rate |
 | Data Suture Needle | PUBLIC-009, community service center | Information disconnect (pending community research) | All community residents | Digital interactive device | Satisfaction analysis → improvement recommendations | Sub-district office | Fixed information screen + suggestion box | Resident participation rate, feedback loop time |
 
 Note: All items marked "pending on-site survey," "pending ownership verification," or "pending professional assessment" are prerequisite confirmation items for the design proposal; items pending survey are not presented as established facts.
