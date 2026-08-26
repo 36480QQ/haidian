@@ -6,10 +6,10 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以午间压力测试组织京张 AI 创新带的研究、公共解释与日常使用：AI 提升服务，但无手机、无屏幕或 AI 关闭时，实体公共空间与人工兜底仍然可用。"
+summary: "以午间压力测试组织京张 AI 创新带的研究、公共解释与日常使用：AI 提升服务，但无手机、无屏幕或 AI 关闭时，实体公共空间与人工兜底仍然可用；六个工作包以启用、验收、停用和移交的交付门控制试点。"
 tracks: ["ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability"]
-iteration: "v4.2"
+iteration: "v4.3"
 ---
 
 # 京张午间服务线 / Jing-Zhang Noonline SLA
@@ -25,6 +25,8 @@ iteration: "v4.2"
 AI 城市常把“会被算法看见”误当成“可以被人使用”。午间是最小却最诚实的检验窗口：短时间步行、热暴露、等待、问路、喝水、休息、过街和临时失效同时发生。若一条公共路径只能在手机、预测、预约或测试系统正常时才能成立，它不是可靠的城市服务。
 
 本方案提出 **Noonline SLA**：先建立可读、可走、可停、可人工接力的实体公共空间，再让 AI 做预测、解释、提醒、维护辅助与动态调整。AI 不是公共服务的前置条件 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
+
+方案的最小交付单元不是整片 11.4 km² 范围，而是六个可逆工作包。每个工作包只有在公共性、清晰带、无障碍替代、实体信息、人工停止权、维护、可选 AI 边界和证据移交等适用记录齐备后，才可从概念进入下一阶段；缺一项即保持 HOLD、改线、降级或撤回，不以模型判断补齐现实条件 [data:visual/assets/v4_3-delivery-readiness-contract.json#release_checks]。
 
 ## 2. 午间为何是城市压力测试 / Noon as an Urban Stress Test
 
@@ -295,8 +297,31 @@ Noonline SLA 的 Logo 概念为“断开屏幕仍不断开的公共线”：两�
 
 EVENT-01“午间压力测试周”只在已获许可的公开窗口演练 AI-OFF；EVENT-02“证据公开日”由人工讲解 Target/Verified 与申诉路径；EVENT-03“京张维护对话”发布可公开的维护问题。DEV-01 开发者社区采用“问题登记 → 最小测试协议 → 人工/公共评议 → 停止或复盘 → 可公开方法”的五步流程；不得上传个人数据、不得绕过审批、不得把演示变为常态运营。CONV-01 招引与长期转化只提供概念漏斗：公开议题 → 合规试点申请 → 独立复核 → 具名主体/资金/产权/运维文件 → 可持续运营；未取得后一阶段证据时即 HOLD，AI 不可自动推进。
 
-### 13.7 实施证据总表与双语审校
+### 13.7 从概念到试点的交付就绪合同
 
-`visual/assets/v4_2-implementation_verification_matrix.json` 将 WP-01—06、45 项 FV 任务及 18 项 SLA-A mandatory evidence 逐项连接至 PHASE、ROLE、格式、有效期、门槛、停止权限与 HOLD/DOWNGRADE。所有任务初始仍为 `unknown`；只有授权的人类核验者提交可审计证据后才可变更，AI 不得写入 promotion。`visual/assets/v4_2-bilingual_equivalence_checklist.json` 逐项比对数字、metrics、ID、证据等级、Target/Verified、warning、图号与 taskbook 输出，并记录中英文相同的可定位章节。
+为让专业团队能够接续而不把概念误写为实施，本方案把“可以开始”定义为一套可复核的释放条件，而不是一句计划口号。`visual/assets/v4_3-delivery-readiness-contract.json` 为六个 WP 分别给出适用的启用记录、AI-OFF 验收演练、停止决定与结项规则；它不指定真实责任单位，也不声称预算、产权、许可或现场条件已经具备。所有激活状态从 `unknown / HOLD` 开始，只有授权主体提供带日期的证据包后才可改变。
+
+| 任务书功能 | 可交付承载体 | 公众可见验收 | 条件不足时 |
+|---|---|---|---|
+| AI全栈自主创新体系 | WP-02 测试门廊、WP-06 核验闭环、数据与结项门 | 测试关闭后，公共绕行、人工解释和可审计记录仍存在 | 停止测试层，不把演示写成部署 |
+| 世界级AI创新生态 | WP-03、EVENT-02、DEV-01、实体信息与人工交接门 | 不用手机、屏幕或 AI 账号也能理解、提问和离开 | HOLD 互动层，仅保留获授权实体信息 |
+| AI+场景赋能新范式 | SC-01—10、IV-01—03、WP-01/WP-05 | 每张场景卡都能对应物理兜底、证据门和停止响应 | 降级至固定导向或撤回场景声明 |
+| 智能化AI活力城市 | WP-01、WP-04、WP-05、清晰带/过街/维护门 | 先验证通行、无障碍替代与维护，再声称停留或服务 | 改线或暂停连续服务主张 |
+| AI治理全球话语权 | WP-06、EVENT-01/03、DEV-01、AI 边界与移交门 | AI-OFF、申诉、证据上限和停止决定可被复核和复用 | 关闭 AI 层，保留物理与人工服务 |
+
+| 工作包 | 首次启用所需的最小证据包 | 必做验收演练 | 结项 / 失败响应 |
+|---|---|---|---|
+| WP-01 固定导向与支持点 | 界面公共性、清晰带、实体导向、人工停止与维护记录 | AI 与手机关闭后的决策点步行检查 | 标识不可维护、违法或妨碍通行即移除/改址，不计入服务支持 |
+| WP-02 众智园测试门廊 | 许可界面、公共绕行、安全缓冲、AI 边界和停止联系人 | 关闭测试层，检验公共绕行与人工解释是否继续 | 暂停测试界面，仅保留获授权导向或改线 |
+| WP-03 AI 原点知识客厅 | 入口、内容权利、实体信息、人工问询与维护路径 | 无手机、无屏幕进入—理解—提问—离开演练 | 撤回互动层，保留可维护的实体信息 |
+| WP-04 大钟寺到达转换 | 合法公共界面、过街、无障碍替代、实体导向和责任接口 | 以可达替代完成到达—过街—短停—求助的记录化走查 | 改至已核验公共边界或暂停连续转换主张 |
+| WP-05 固定导向与人工兜底 | 服务时段、具名交接、停用牌、维护和结项记录 | AI-OFF 情况下由实体信息与人工解决一次已声明故障 | 降级服务声明、公布授权替代或停止节点 |
+| WP-06 核验、重算与迭代 | 授权核验者、任务范围、数据边界、证据引用与下一位审阅者 | 核查每项提升均含人类核验者、时间、有效期和重算记录 | 维持或降低 Verified SLA，纠正概念记录，绝不自动升级 |
+
+三项交付绩效量度均刻意保持 `unknown`：已激活工作包的释放包完整率、AI-OFF 验收通过率、移交证据有效率。它们只在未来具名主体、合法界面和人类核验出现后计算；这让可实施性来自可验证的推进条件，而不是虚构的“已实施”结论 [data:visual/assets/v4_3-delivery-readiness-contract.json#readiness_measures]。
+
+### 13.8 实施证据总表与双语审校
+
+`visual/assets/v4_2-implementation_verification_matrix.json` 将 WP-01—06、45 项 FV 任务及 18 项 SLA-A mandatory evidence 逐项连接至 PHASE、ROLE、格式、有效期、门槛、停止权限与 HOLD/DOWNGRADE；`visual/assets/v4_3-delivery-readiness-contract.json` 将它们进一步组织为实际交接时可逐张使用的释放与结项卡。所有任务初始仍为 `unknown`；只有授权的人类核验者提交可审计证据后才可变更，AI 不得写入 promotion。`visual/assets/v4_2-bilingual_equivalence_checklist.json` 逐项比对数字、metrics、ID、证据等级、Target/Verified、warning、图号与 taskbook 输出，并记录中英文相同的可定位章节。
 
 主要公开资料包括：北京市规划和自然资源委员会海淀分局发布的征集公告和任务书尺度说明；北京市人民政府网站关于京张铁路遗址公园一期及约 9 km 线性走廊的公开信息；北京地铁关于大钟寺站 A/B 口和站内无障碍服务的公开页面；北京市文物局关于清华园车站旧址保护的公开页面；以及仓库内已登记的标准、数据与来源注册表。每一项引用均以 `sources.json` 中的 source_id、日期、许可用途和限制为准。公开资料只能支持其明确陈述的背景，不能替代官方 GIS、现场测绘、设施调查、许可或审批结论 [source:EXT-SRC-JINGZHANG-PARK-20230630] [source:EXT-SRC-DAZHONGSI-STATION-202605] [source:EXT-SRC-QINGHUAYUAN-STATION-20260214]。

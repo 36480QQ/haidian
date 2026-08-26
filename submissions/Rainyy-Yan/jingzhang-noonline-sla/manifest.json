@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "448c27ee024a55c47876497de0b9d4c43eb3967270ff72d94547765e83e2a35c"
+      "sha256": "331774761b7d891fbf02be06dc7564b9bdacd96848231e52ddc583b07055668a"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "25d4ccac67140eeaa8b53f2d815d04591b3dbe9e6abdb0732d3e30ab868e6135"
+      "sha256": "6d7d54d5db30266e6577b13323055f3f012814f4f0558398773f09b0dafc976a"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ddd3255fc2ef70e29dd15ec723c6b7d7bbfd08f9ecfb5df0191c8991d43ada1e"
+      "sha256": "907f85653f5960f5fc6c0e46171ded575c0d3cfd49178a3897bb36b903d3c32e"
     },
     {
       "path": "report/narrative.md",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0f2915c9e2b70cee8ced454e657821cbe1416d6e3a589293ea7a87dd082d79ec"
+      "sha256": "1494f86561e2d33820e8f6ff41c91dc9dbe6b883b65344af3670ad2ed71209e7"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1f6f22ecf94635a625a8c18dd9cedc5bb83e55d0d600524176d63cc536191c00"
+      "sha256": "b0e35c1ef90646ecd227666c62f5e36594673aa14b62a3b3617943a915824ff3"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -332,7 +332,7 @@
       "role": "changelog",
       "required": true,
       "language": "neutral",
-      "sha256": "59b0e1383db6968ca674ecf53b4082966cce924b57f0e77a5814226afb6cec91"
+      "sha256": "541459f7ec073e15e463c32a0a7a3bf79bcfe7bb4c39da786b545df1b64c9190"
     },
     {
       "path": "visual/assets/sla-engine-diagram.svg",
@@ -714,7 +714,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "2f2bcee642b8618d54868339c9b877e130b1587f05e3bba7187837fbb5ef175d"
+      "sha256": "79d83e021e05b98e0a45d2c645884d85562ead4a711b4fbacc6dc21c24511d3a"
     },
     {
       "path": "visual/assets/v4_2-agent2-eight-element-mechanism-matrix.json",
@@ -736,6 +736,13 @@
       "required": false,
       "language": "neutral",
       "sha256": "b9c4397f6abf4b767dc7cf76995ea6902f0b56fca178dfd036d8cca641e4abd9"
+    },
+    {
+      "path": "visual/assets/v4_3-delivery-readiness-contract.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "97cf4c83ad37b4b44328b83da998b51856b81f3a3522939a108949699263fe4b"
     }
   ],
   "validation_claim": {

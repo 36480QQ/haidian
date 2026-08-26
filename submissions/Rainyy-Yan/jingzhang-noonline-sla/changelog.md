@@ -1,5 +1,13 @@
 # 方案迭代记录 / Iteration Changelog
 
+## v4.3 delivery-readiness and report-font repair - 2026-08-26
+
+**Delivery-readiness pass.** V4.3 converts the six existing reversible work packages into a bilingual delivery-readiness contract: eight release checks, six activation cards, five taskbook-function delivery carriers, three future-only readiness measures and an explicit close-out rule for every activated component. The contract makes the evidence package, AI-OFF acceptance exercise, human stop authority, maintenance condition and handover record inspectable before a concept can advance.
+
+**Evidence boundary unchanged.** The contract appoints no real body and provides no budget, land right, procurement route, permit, construction programme, operating commitment or approval. All release measures remain `unknown` at baseline. Missing evidence continues to HOLD, reroute, downgrade or remove the affected claim; AI cannot write field evidence or promote an SLA.
+
+**Report readability repair.** Both required report HTML files now load the registered OFL-licensed local CJK subset used by the offline visual, so the report does not depend on a system Chinese font or network access.
+
 ## v4.2 blocking repair - 2026-08-26
 
 **Review-blocker repair only.** This pass does not change design logic, metrics, geometry, SLA, nodes, scenarios, implementation commitments or evidence levels. It embeds an OFL-licensed, text-specific Noto Sans SC subset for reliable offline CJK rendering; maps `CASE-01` to `CASE-06` to auditable public or project-institution sources with explicit reuse limits; and exposes the taskbook's Land / Space / Industry / Funding / Talent / Compute / Data / Scenario interfaces as one bilingual, machine-readable mechanism matrix.

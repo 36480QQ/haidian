@@ -1,7 +1,7 @@
 ---
 translation_of: "proposal.md"
 language: "en"
-iteration: "v4.2"
+iteration: "v4.3"
 ---
 
 # Jing-Zhang Noonline SLA
@@ -17,6 +17,8 @@ iteration: "v4.2"
 An AI city can mistake being visible to an algorithm for being usable by a person. Noon is a small but candid test window: short walks, heat exposure, waiting, wayfinding, water, rest, crossings and temporary failure occur together. A public route that works only when phones, prediction, booking or test systems work is not reliable urban service.
 
 **Noonline SLA** establishes readable, walkable, stayable and human-handover public space first. AI then adds prediction, explanation, alerts, maintenance support and dynamic adjustment. AI is never a prerequisite for public service [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+
+The minimum delivery unit is not the whole 11.4 km² area but six reversible work packages. A package may move from concept to its next phase only when its applicable records for publicness, clearway, accessible alternative, physical information, human stop authority, maintenance, optional-AI boundary and evidence handover are complete. One missing record means HOLD, reroute, downgrade or withdrawal; a model judgment cannot fill a real-world condition [data:visual/assets/v4_3-delivery-readiness-contract.json#release_checks].
 
 ## 2. Noon as an Urban Stress Test
 
@@ -287,8 +289,31 @@ The Noonline SLA logo is “a public line that does not break when the screen di
 
 EVENT-01 Noon Stress-Test Week rehearses AI-OFF only in permitted public windows; EVENT-02 Evidence Open Day explains Target/Verified and the appeal path with a human host; EVENT-03 Jing-Zhang Maintenance Dialogue publishes public maintenance questions. DEV-01 developer community follows: question registration → minimal test protocol → human/public review → stop or review → publishable method. It may not upload personal data, bypass approval or turn a demonstration into routine operation. CONV-01 is a conceptual conversion funnel: public issue → compliant pilot application → independent review → named-body/finance/property/O&M documents → sustainable operation. Missing next-stage evidence means HOLD; AI cannot advance it.
 
-### 13.7 Implementation evidence and bilingual audit
+### 13.7 Delivery-readiness contract: concept to pilot
 
-`visual/assets/v4_2-implementation_verification_matrix.json` connects WP-01–06, all 45 FV tasks and the 18 mandatory SLA-A items to PHASE, ROLE, format, validity, threshold, stop authority and HOLD/DOWNGRADE response. Every task remains `unknown` at baseline; only an authorised human verifier with auditable evidence may change it, and AI cannot write promotion. `visual/assets/v4_2-bilingual_equivalence_checklist.json` compares every number, metric, ID, evidence level, Target/Verified state, warning, figure and taskbook output with the same locatable section in both languages.
+To make the proposal handoff-ready without describing a concept as an implementation, “ready to begin” is defined as reviewable release conditions rather than a planning slogan. `visual/assets/v4_3-delivery-readiness-contract.json` gives every WP its applicable release record, AI-OFF acceptance exercise, stop decision and close-out rule. It appoints no real entity and does not claim that budget, property, permit or field conditions already exist. Every activation starts `unknown / HOLD`; only an authorised party can change it with a dated evidence package.
+
+| Taskbook function | Delivery carrier | Public acceptance test | If the condition is missing |
+|---|---|---|---|
+| Full-stack independent AI innovation system | WP-02 test porch, WP-06 verification loop, data and close-out gates | After testing stops, public bypass, human explanation and auditable record remain | Stop the test layer; never describe a demonstration as deployment |
+| World-class AI innovation ecosystem | WP-03, EVENT-02, DEV-01, physical-information and human-handover gates | A person can understand, ask and leave without a phone, screen or AI account | HOLD the interactive layer and retain authorised physical information only |
+| AI-enabled scenario paradigm | SC-01–10, IV-01–03, WP-01/WP-05 | Every scenario maps to physical fallback, evidence gate and stop response | Downgrade to fixed wayfinding or withdraw the scenario claim |
+| Intelligent AI-vital city | WP-01, WP-04, WP-05, clearway/crossing/maintenance gates | Passage, accessible alternative and maintenance are verified before staying or service is claimed | Reroute or suspend the continuity claim |
+| Global AI-governance discourse | WP-06, EVENT-01/03, DEV-01, AI-boundary and handover gates | AI-OFF, appeal, evidence ceiling and stop decisions are reviewable and reusable | Switch off AI and retain physical and human service |
+
+| Work package | Minimum first-activation evidence package | Required acceptance exercise | Close-out / failure response |
+|---|---|---|---|
+| WP-01 fixed wayfinding and supports | interface publicness, clearway, physical wayfinding, human stop and maintenance record | walk all decision points with AI and phones off | remove or relocate an unlawful, unreadable or unmaintainable marker; it no longer counts as service support |
+| WP-02 Zhongzhiyuan test porch | permission interface, public bypass, safety buffer, AI boundary and stop contact | close the test layer and confirm bypass plus human explanation remain | suspend the test-facing interface; retain authorised wayfinding only or reroute |
+| WP-03 AI Origin knowledge room | entry, content rights, physical information, human enquiry and maintenance path | enter, understand, ask and leave without phone or screen | withdraw the interactive layer and retain maintainable physical information |
+| WP-04 Dazhongsi arrival transition | lawful public interface, crossing, accessible alternative, physical wayfinding and responsibility interface | document arrival, crossing, short stay and enquiry using the accessible alternative | reroute to a verified public edge or suspend the continuity claim |
+| WP-05 fixed wayfinding and human fallback | service window, named handover, stop notice, maintenance and close-out record | resolve one declared failure with physical information and a person while AI is off | downgrade the service statement, show an authorised alternative or stop the point |
+| WP-06 verification, recalculation and iteration | authorised verifier, task scope, data boundary, evidence reference and next reviewer | confirm every claimed improvement has human verifier, time, validity and recomputation record | retain or lower Verified SLA, correct the concept record and never auto-promote |
+
+Three delivery-performance measures deliberately remain `unknown`: release-packet completeness for activated packages, AI-OFF acceptance pass rate and handover-evidence freshness. They are calculated only after a named party, lawful interface and human verification exist. This makes feasibility a verifiable progression condition, not a fabricated “already implemented” result [data:visual/assets/v4_3-delivery-readiness-contract.json#readiness_measures].
+
+### 13.8 Implementation evidence and bilingual audit
+
+`visual/assets/v4_2-implementation_verification_matrix.json` connects WP-01–06, all 45 FV tasks and the 18 mandatory SLA-A items to PHASE, ROLE, format, validity, threshold, stop authority and HOLD/DOWNGRADE response. `visual/assets/v4_3-delivery-readiness-contract.json` further organizes them into release and close-out cards that can be used one by one at handover. Every task remains `unknown` at baseline; only an authorised human verifier with auditable evidence may change it, and AI cannot write promotion. `visual/assets/v4_2-bilingual_equivalence_checklist.json` compares every number, metric, ID, evidence level, Target/Verified state, warning, figure and taskbook output with the same locatable section in both languages.
 
 Primary public material includes the Haidian planning authority’s call and taskbook scale statement; the Beijing Municipal Government’s public information on the Jing-Zhang Railway Heritage Park first phase and c. 9 km corridor; Beijing Subway’s public page for Dazhongsi Station A/B exits and in-station accessibility service; the Beijing Cultural Heritage Bureau’s protection information for the former Tsinghuayuan station; and the repository’s registered standards, data and source registry. Each citation is governed by the source ID, date, allowed use and limitation recorded in `sources.json`. Public material supports only the context it expressly states; it never replaces official GIS, field survey, facility audit, permission or approval [source:EXT-SRC-JINGZHANG-PARK-20230630] [source:EXT-SRC-DAZHONGSI-STATION-202605] [source:EXT-SRC-QINGHUAYUAN-STATION-20260214].
