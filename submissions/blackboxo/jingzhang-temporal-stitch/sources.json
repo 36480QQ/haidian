@@ -93,6 +93,150 @@
       "scope": "廊道沿线街道常住人口统计",
       "status": "background_only",
       "notes": "用于社区和人口规模推算，具体数值待社区普查确认"
+    },
+    {
+      "id": "CASE-HIGH-LINE",
+      "title": "The High Line Effect",
+      "publisher": "Friends of the High Line / various academic sources",
+      "date": "2019",
+      "license": "published_research",
+      "scope": "线性公园对周边创新集聚和经济溢出的催化效应",
+      "status": "background_only",
+      "notes": "案例参考：纽约High Line对周边地产和创新区的影响。用于类比论证，不作为本方案定量依据。具体机制判断以多篇同行评审文献综合结论为准。"
+    },
+    {
+      "id": "CASE-BARCELONA-SUPERBLOCKS",
+      "title": "Barcelona Superblocks Programme",
+      "publisher": "Ajuntament de Barcelona / BCNecologia",
+      "date": "2016-2024",
+      "license": "government_public",
+      "scope": "街区单元时间分配与慢行优先空间重构",
+      "status": "background_only",
+      "notes": "案例参考：巴塞罗那超级街区的时间编排先例。用于设计概念论证，不直接转用其参数。"
+    },
+    {
+      "id": "CASE-KALASATAMA",
+      "title": "Smart Kalasatama — One More Hour a Day",
+      "publisher": "Forum Virium Helsinki",
+      "date": "2018-2023",
+      "license": "public_report",
+      "scope": "AI时间优化作为智慧城市KPI",
+      "status": "background_only",
+      "notes": "案例参考：赫尔辛基智慧城市项目。'节省一小时'为其宣传表述，具体验证方法须参考原始报告。"
+    },
+    {
+      "id": "CASE-CHEONGGYECHEON",
+      "title": "Seoul Cheonggyecheon Stream Restoration",
+      "publisher": "Seoul Metropolitan Government",
+      "date": "2005",
+      "license": "government_public",
+      "scope": "高架拆除后的东西向城市缝合与公共空间恢复",
+      "status": "background_only",
+      "notes": "案例参考：首尔清溪川复原工程。基础设施移除后界面修复的经典案例。"
+    },
+    {
+      "id": "CASE-SINGAPORE-ONENORTH",
+      "title": "one-north Master Plan",
+      "publisher": "JTC Corporation / Urban Redevelopment Authority Singapore",
+      "date": "2001-2023",
+      "license": "government_public",
+      "scope": "产学研混合全时段街区规划",
+      "status": "background_only",
+      "notes": "案例参考：新加坡one-north的功能混合与时间编排。"
+    },
+    {
+      "id": "CASE-SIDEWALK-QUAYSIDE",
+      "title": "Sidewalk Labs Toronto Quayside Plan",
+      "publisher": "Sidewalk Labs (Alphabet)",
+      "date": "2019",
+      "license": "public_report",
+      "scope": "动态路缘石、可变功能街道和实时空间管理",
+      "status": "background_only",
+      "notes": "案例参考：已终止项目的技术概念，用于可变功能空间的技术路径参考。项目未实施，仅提取概念方法论。"
+    },
+    {
+      "id": "CASE-SHENZHEN-QIANHAI",
+      "title": "深圳前海合作区AI治理与开放平台",
+      "publisher": "前海管理局/公开报道",
+      "date": "2020-2024",
+      "license": "government_public",
+      "scope": "中国语境下AI创新带的治理经验",
+      "status": "background_only",
+      "notes": "案例参考：中国城市AI治理实践。具体治理架构以官方发布的管理办法为准。"
+    },
+    {
+      "id": "CASE-MIT-LIVING-LAB",
+      "title": "MIT Media Lab City Science / Living Lab Model",
+      "publisher": "MIT Media Lab",
+      "date": "2015-2024",
+      "license": "academic_public",
+      "scope": "大学周边社区作为持续实验场的运营模式",
+      "status": "background_only",
+      "notes": "案例参考：学术机构带动社区创新的活体实验室模式。用于概念类比，不直接引用其研究结论。"
+    },
+    {
+      "id": "CASE-HIGH-LINE",
+      "source_type": "background_only",
+      "publisher": "Friends of the High Line / academic literature",
+      "usage": "Background inspiration for linear park catalytic effects. Specific economic claims are widely reported but not independently verified for this proposal; used as design inspiration only, not as evidence for this project's outcomes.",
+      "allowed_use": "background_reference_only",
+      "access_date": "2026-08"
+    },
+    {
+      "id": "CASE-BARCELONA-SUPERBLOCKS",
+      "source_type": "background_only",
+      "publisher": "Barcelona City Council / academic papers (Mueller et al. 2020)",
+      "usage": "Background reference for temporal allocation in street design. No quantitative claims from this case are transferred to this proposal.",
+      "allowed_use": "background_reference_only",
+      "access_date": "2026-08"
+    },
+    {
+      "id": "CASE-HELSINKI-KALASATAMA",
+      "source_type": "background_only",
+      "publisher": "Forum Virium Helsinki / Smart Kalasatama project documentation",
+      "usage": "Background reference for time-saving as smart city KPI. The '1 hour saved' claim is the project's own stated goal (not verified outcome); cited here as design inspiration for temporal optimization framing, not as evidence.",
+      "allowed_use": "background_reference_only",
+      "access_date": "2026-08"
+    },
+    {
+      "id": "CASE-SEOUL-CHEONGGYECHEON",
+      "source_type": "background_only",
+      "publisher": "Seoul Metropolitan Government / Hwang (2007) academic study",
+      "usage": "Background reference for infrastructure removal and urban suture precedent. No quantitative claims transferred.",
+      "allowed_use": "background_reference_only",
+      "access_date": "2026-08"
+    },
+    {
+      "id": "CASE-SINGAPORE-ONENORTH",
+      "source_type": "background_only",
+      "publisher": "JTC Corporation Singapore",
+      "usage": "Background reference for mixed-use innovation district with temporal programming.",
+      "allowed_use": "background_reference_only",
+      "access_date": "2026-08"
+    },
+    {
+      "id": "CASE-SIDEWALK-QUAYSIDE",
+      "source_type": "background_only",
+      "publisher": "Sidewalk Labs (Alphabet subsidiary, project cancelled 2020)",
+      "usage": "Background reference for dynamic curb and flexible street concepts. Project was cancelled; cited for technical concept inspiration only, not as evidence of successful implementation.",
+      "allowed_use": "background_reference_only",
+      "access_date": "2026-08"
+    },
+    {
+      "id": "CASE-SHENZHEN-QIANHAI",
+      "source_type": "background_only",
+      "publisher": "Shenzhen Qianhai Authority / public governance documents",
+      "usage": "Background reference for Chinese AI governance and open platform model in innovation zones.",
+      "allowed_use": "background_reference_only",
+      "access_date": "2026-08"
+    },
+    {
+      "id": "CASE-MIT-LIVING-LAB",
+      "source_type": "background_only",
+      "publisher": "MIT Media Lab / City Science group publications",
+      "usage": "Background reference for university-adjacent living laboratory operational model.",
+      "allowed_use": "background_reference_only",
+      "access_date": "2026-08"
     }
   ]
 }

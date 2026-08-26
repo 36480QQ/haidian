@@ -107,16 +107,18 @@ The spatial structure does not create new redlines but identifies repairable int
 
 ### Global AI Innovation Ecosystem Case Studies
 
-| No. | Case | City | Core Mechanism | Inspiration for This Proposal |
-| --- | --- | --- | --- | --- |
-| 1 | High Line Effect | New York | Linear park catalyzing surrounding real estate and innovation agglomeration | Proves linear corridors can restructure surrounding economic geography |
-| 2 | Barcelona Superblocks | Barcelona | Block-unit temporal allocation (commuting vs. leisure periods) | Precedent for temporal orchestration changing spatial use efficiency |
-| 3 | Helsinki Smart Kalasatama | Helsinki | AI predicting residents save 1 hour per day | Time optimization as a core smart city KPI |
-| 4 | Seoul Cheonggyecheon | Seoul | East-west urban stitching after elevated highway removal | Interface repair methodology after infrastructure removal |
-| 5 | Singapore One-North | Singapore | Industry-academia-residential mixed full-cycle blocks | Comprehensive model of functional mixing + temporal orchestration |
-| 6 | Sidewalk Labs Quayside | Toronto | Dynamic curbs/variable-function streets | Technical pathways for multi-period functional switching in the same space |
-| 7 | Shenzhen Qianhai | Shenzhen | AI governance + open platform + industrial agglomeration | Governance experience for AI innovation belts in the Chinese context |
-| 8 | MIT Media Lab Living Lab | Boston | University-adjacent community as continuous experiment field | Operating model for suture nodes as living laboratories |
+| No. | Case | City | Core Mechanism | Inspiration for This Proposal | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 | High Line Effect | New York | Linear park catalyzing innovation agglomeration (background inspiration) | Conceptual reference for linear corridor restructuring | [source:CASE-HIGH-LINE] |
+| 2 | Barcelona Superblocks | Barcelona | Block-unit temporal allocation (commuting vs. leisure) | Conceptual precedent for temporal orchestration | [source:CASE-BARCELONA-SUPERBLOCKS] |
+| 3 | Helsinki Smart Kalasatama | Helsinki | Project's own stated goal: "save residents 1 hour/day" (project vision, not verified outcome) | Reference for time optimization as smart city goal-setting | [source:CASE-HELSINKI-KALASATAMA] |
+| 4 | Seoul Cheonggyecheon | Seoul | E-W urban stitching after elevated highway removal | Conceptual reference for post-infrastructure interface repair | [source:CASE-SEOUL-CHEONGGYECHEON] |
+| 5 | Singapore One-North | Singapore | Industry-academia-residential mixed full-cycle blocks | Reference for functional mixing + temporal orchestration | [source:CASE-SINGAPORE-ONENORTH] |
+| 6 | Sidewalk Labs Quayside | Toronto | Dynamic curbs/variable-function streets (project cancelled) | Technical concept for multi-period switching | [source:CASE-SIDEWALK-QUAYSIDE] |
+| 7 | Shenzhen Qianhai | Shenzhen | AI governance + open platform + industrial agglomeration | Background reference for AI belt governance in Chinese context | [source:CASE-SHENZHEN-QIANHAI] |
+| 8 | MIT Media Lab Living Lab | Boston | University-adjacent community as continuous experiment field | Conceptual reference for living laboratory operations | [source:CASE-MIT-LIVING-LAB] |
+
+Note: All cases above are background inspiration only (background_only). They do not serve as direct evidence or commitment basis for this proposal's outcomes. Any quantitative claims from these cases are the original projects' own statements, not independently verified by this proposal, and cannot be transferred as expected outcomes for this project.
 
 ### AI Innovation Ecosystem Map
 
@@ -282,7 +284,7 @@ The phasing plan corresponds to the three-phase strategy in `geometry/phasing.ge
 
 - **Near-term (1-3 years)**: Priority repair of Commercial Suture Node, Memory Anchor Node, Health Suture Node, and Data Suture Node—4 nodes (southern segment, Dazhongsi area; PUBLIC-006/007/008/009)
 - **Mid-term (3-5 years)**: Advancing Knowledge Permeation Node and Tidal Interlace Node—2 nodes (northern segment, Zhongzhi Park area; PUBLIC-001/002)
-- **Long-term (5-10 years)**: Completing Entrepreneurship Incubation Node, Intergenerational Weave Node, and Natural Permeation Node—3 nodes (central segment, AI Origin Community; PUBLIC-003/004/005)
+- **Long-term (5-8 years)**: Completing Entrepreneurship Incubation Node, Intergenerational Weave Node, and Natural Permeation Node—3 nodes (central segment, AI Origin Community; PUBLIC-003/004/005)
 
 The near-term selection of the southern segment first is because the Dazhongsi area has high commercial vitality, strong public perception, and rapid visible outcomes; the long-term deferral of the central segment's intergenerational and health nodes reflects their involvement of sensitive facilities (schools, elderly care) requiring more thorough community consultation.
 
@@ -544,9 +546,9 @@ The following is the sole authoritative mapping; narrative text, drawings, imple
 | --- | --- | --- | --- | --- | --- |
 | N-01 | Knowledge Permeation Node | PUBLIC-001 | Zhongzhi Park AI Acceleration Zone | SC-03 Midday Knowledge Sharing | Phase 2 (mid-term, 3-5 years) |
 | N-02 | Tidal Interlace Node | PUBLIC-002 | Zhongzhi Park AI Acceleration Zone | SC-01 Smart Morning Exercise, SC-02 Commute Micro-Circulation | Phase 2 (mid-term, 3-5 years) |
-| N-03 | Entrepreneurship Incubation Node | PUBLIC-003 | AI Origin Community | SC-10 Entrepreneurship Pop-Up Space | Phase 3 (long-term, 5-10 years) |
-| N-04 | Intergenerational Weave Node | PUBLIC-004 | AI Origin Community | SC-04 After-School Safety Corridor, SC-11 Age-Friendly Route | Phase 3 (long-term, 5-10 years) |
-| N-05 | Natural Permeation Node | PUBLIC-005 | AI Origin Community | SC-06 Seasonal Functional Switching, SC-12 Real-Time Carbon Sink | Phase 3 (long-term, 5-10 years) |
+| N-03 | Entrepreneurship Incubation Node | PUBLIC-003 | AI Origin Community | SC-10 Entrepreneurship Pop-Up Space | Phase 3 (long-term, 5-8 years) |
+| N-04 | Intergenerational Weave Node | PUBLIC-004 | AI Origin Community | SC-04 After-School Safety Corridor, SC-11 Age-Friendly Route | Phase 3 (long-term, 5-8 years) |
+| N-05 | Natural Permeation Node | PUBLIC-005 | AI Origin Community | SC-06 Seasonal Functional Switching, SC-12 Real-Time Carbon Sink | Phase 3 (long-term, 5-8 years) |
 | N-06 | Commercial Suture Node | PUBLIC-006 | Dazhongsi AI Industry Cluster | SC-07 Holiday Market Orchestration | Phase 1 (near-term, 1-3 years) |
 | N-07 | Memory Anchor Node | PUBLIC-007 | Dazhongsi AI Industry Cluster | SC-09 Heritage Immersive Interpretation | Phase 1 (near-term, 1-3 years) |
 | N-08 | Health Suture Node | PUBLIC-008 | Dazhongsi AI Industry Cluster | SC-05 Night Running Safety Lighting, SC-11 Age-Friendly Route | Phase 1 (near-term, 1-3 years) |

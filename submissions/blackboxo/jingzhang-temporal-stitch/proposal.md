@@ -107,16 +107,18 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ### 全球AI创新生态案例研究
 
-| 序号 | 案例 | 城市 | 核心机制 | 对本方案启发 |
-| --- | --- | --- | --- | --- |
-| 1 | High Line Effect | 纽约 | 线性公园催化周边地产与创新集聚 | 证明线性廊道可重构周边经济地理 |
-| 2 | Barcelona Superblocks | 巴塞罗那 | 街区单元时间分配（通勤时段vs休闲时段） | 时间编排改变空间使用效率的先例 |
-| 3 | Helsinki Smart Kalasatama | 赫尔辛基 | AI预测居民一天节省1小时 | 时间优化作为智慧城市核心KPI |
-| 4 | Seoul Cheonggyecheon | 首尔 | 高架拆除后的东西向城市缝合 | 基础设施移除后的界面修复方法 |
-| 5 | Singapore One-North | 新加坡 | 产学研生活混合的全时段街区 | 功能混合+时间编排的综合模式 |
-| 6 | Sidewalk Labs Quayside | 多伦多 | 动态路缘石/可变功能街道 | 同一空间多时段功能切换的技术路径 |
-| 7 | Shenzhen Qianhai | 深圳前海 | AI治理+开放平台+产业聚集 | 中国语境下AI创新带的治理经验 |
-| 8 | MIT Media Lab Living Lab | 波士顿 | 大学周边社区作为持续实验场 | 缝合节点作为活体实验室的运营模式 |
+| 序号 | 案例 | 城市 | 核心机制 | 对本方案启发 | 来源 |
+| --- | --- | --- | --- | --- | --- |
+| 1 | High Line Effect | 纽约 | 线性公园催化周边创新集聚（背景性启发） | 线性廊道重构周边经济地理的概念参考 | [source:CASE-HIGH-LINE] |
+| 2 | Barcelona Superblocks | 巴塞罗那 | 街区单元时间分配（通勤vs休闲） | 时间编排改变空间使用效率的概念先例 | [source:CASE-BARCELONA-SUPERBLOCKS] |
+| 3 | Helsinki Smart Kalasatama | 赫尔辛基 | 项目自设目标："居民一天节省1小时"（项目愿景，非验证结论） | 时间优化作为智慧城市目标设定的参考 | [source:CASE-HELSINKI-KALASATAMA] |
+| 4 | Seoul Cheonggyecheon | 首尔 | 高架拆除后的东西向城市缝合 | 基础设施移除后界面修复的概念参考 | [source:CASE-SEOUL-CHEONGGYECHEON] |
+| 5 | Singapore One-North | 新加坡 | 产学研生活混合的全时段街区 | 功能混合+时间编排综合模式的参考 | [source:CASE-SINGAPORE-ONENORTH] |
+| 6 | Sidewalk Labs Quayside | 多伦多 | 动态路缘石/可变功能街道（项目已终止） | 同一空间多时段功能切换的技术概念 | [source:CASE-SIDEWALK-QUAYSIDE] |
+| 7 | Shenzhen Qianhai | 深圳前海 | AI治理+开放平台+产业聚集 | 中国语境下AI创新带治理的背景参考 | [source:CASE-SHENZHEN-QIANHAI] |
+| 8 | MIT Media Lab Living Lab | 波士顿 | 大学周边社区作为持续实验场 | 缝合节点作为活体实验室的概念参考 | [source:CASE-MIT-LIVING-LAB] |
+
+注：以上案例均为背景性启发（background_only），不作为本方案效果的直接证据或承诺依据。各案例的量化结论（如有）为原项目自身表述，未经本方案独立核实，不可迁移为本项目的预期成果。
 
 ### AI创新生态图谱
 
@@ -282,7 +284,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 - **近期（1-3年）**：优先修复商业缝合针、记忆锚固针、健康缝合针、数据缝合针4个节点（南段，大钟寺片区；PUBLIC-006/007/008/009）
 - **中期（3-5年）**：推进知识渗透针、潮汐交织针2个节点（北段，众智园片区；PUBLIC-001/002）
-- **远期（5-10年）**：完成创业孵化针、代际编织针、自然渗透针3个节点（中段，AI原点社区；PUBLIC-003/004/005）
+- **远期（5-8年）**：完成创业孵化针、代际编织针、自然渗透针3个节点（中段，AI原点社区；PUBLIC-003/004/005）
 
 近期选择南段优先（4个节点），因为大钟寺区域商业活力高、公众感知强、界面类型多样（商业/遗产/康养/数据）、实施见效快；远期留给中段的代际和生态类节点，因其涉及学校、养老、排水等敏感设施，需更充分的社区协商和专业论证。
 
@@ -545,9 +547,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | --- | --- | --- | --- | --- | --- |
 | N-01 | 知识渗透针 | PUBLIC-001 | 众智园AI自主创新加速区 | SC-03 知识午间分享 | Phase 2（中期3-5年） |
 | N-02 | 潮汐交织针 | PUBLIC-002 | 众智园AI自主创新加速区 | SC-01 智能晨练开闸, SC-02 通勤微循环 | Phase 2（中期3-5年） |
-| N-03 | 创业孵化针 | PUBLIC-003 | 北京AI原点社区 | SC-10 创业快闪空间 | Phase 3（远期5-10年） |
-| N-04 | 代际编织针 | PUBLIC-004 | 北京AI原点社区 | SC-04 放学安全走廊, SC-11 适老路径规划 | Phase 3（远期5-10年） |
-| N-05 | 自然渗透针 | PUBLIC-005 | 北京AI原点社区 | SC-06 季节功能切换, SC-12 碳汇实时核算 | Phase 3（远期5-10年） |
+| N-03 | 创业孵化针 | PUBLIC-003 | 北京AI原点社区 | SC-10 创业快闪空间 | Phase 3（远期5-8年） |
+| N-04 | 代际编织针 | PUBLIC-004 | 北京AI原点社区 | SC-04 放学安全走廊, SC-11 适老路径规划 | Phase 3（远期5-8年） |
+| N-05 | 自然渗透针 | PUBLIC-005 | 北京AI原点社区 | SC-06 季节功能切换, SC-12 碳汇实时核算 | Phase 3（远期5-8年） |
 | N-06 | 商业缝合针 | PUBLIC-006 | 大钟寺AI产业聚集区 | SC-07 假日市集编排 | Phase 1（近期1-3年） |
 | N-07 | 记忆锚固针 | PUBLIC-007 | 大钟寺AI产业聚集区 | SC-09 遗产沉浸式讲解 | Phase 1（近期1-3年） |
 | N-08 | 健康缝合针 | PUBLIC-008 | 大钟寺AI产业聚集区 | SC-05 夜跑安全照明, SC-11 适老路径规划 | Phase 1（近期1-3年） |
