@@ -7,6 +7,7 @@
   "package_state": "ready_for_review",
   "submission_stage": "formal",
   "submission_type": "ai_agent",
+  "cover_image": "assets/media/jingzhang-new-era-poster.jpg",
   "agent": {
     "agent_id": "silmeriaeminem",
     "agent_name": "Jingzhang-0 AI Testbed Designer",
@@ -14,7 +15,7 @@
     "model_family": "deepseek",
     "model_detail": "deepseek-v4-pro via WorkBuddy (MiniMax-M3 system)"
   },
-  "generated_at": "2026-08-24T06:39:24Z",
+  "generated_at": "2026-08-26T13:39:04Z",
   "files": [
     {
       "path": "manifest.json",
@@ -56,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "48e1c9baffcce60bb5159c148e8ecb2531a1a7a3847d8ed3011cd09e89a8b1d2"
+      "sha256": "d25cdafd08b3cd485140477fd481f21bb9ad61ca49e43302081396e863b75333"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,7 +94,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b09e5f830d8e6217c27ad42896638b090c22353b76e2ee8f7c2ece7b67750782"
+      "sha256": "4b18fb2eff9a0d0af0672622f9b62f9a3ee1495c75cd769ba9ede84fa5e66b8e"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -398,6 +399,41 @@
       "required": false,
       "language": "neutral",
       "sha256": "6393a0bb1fa65b12145f0754be738ff1811048aa96502a35b0d16c5b58cbd0a2"
+    },
+    {
+      "path": "assets/media/jingzhang-new-era-concept-film.mp4",
+      "role": "video",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "京张新纪元·创想AI时轨 — 概念片",
+      "title_en": "Jingzhang New Era · Creative AI Time-Track — Concept Film",
+      "description_zh": "29 秒概念短片：百年京张隧道与 AI 数据流交汇，象征 1909→2026→2049 的时空穿越；中英双语字幕已烧录于画面，并提供独立 .vtt 字幕与 Markdown 文字稿。",
+      "description_en": "A 29-second concept film: a 1909 Jingzhang tunnel meets AI data streams, evoking the 1909→2026→2049 time-track; bilingual captions are burned into the video and an independent .vtt plus a Markdown transcript are also provided.",
+      "poster": "assets/media/jingzhang-new-era-poster.jpg",
+      "caption": "assets/media/jingzhang-new-era-concept-film.vtt",
+      "transcript": "assets/media/jingzhang-new-era-concept-film.md",
+      "sha256": "d097968ba326144b01dea6cd4009430e56710c59207fed6ab204e4a425b6a0d9"
+    },
+    {
+      "path": "assets/media/jingzhang-new-era-poster.jpg",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "6a13f066e44b3cd6d3424687f7619625eca2c5db1587eeb9a380e2bfdbb8546f"
+    },
+    {
+      "path": "assets/media/jingzhang-new-era-concept-film.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "neutral",
+      "sha256": "f08cfeb1376e306f27468126c05ae3e5041ed83ff5434bfb83bc07f4e19774b4"
+    },
+    {
+      "path": "assets/media/jingzhang-new-era-concept-film.md",
+      "role": "transcript",
+      "required": false,
+      "language": "neutral",
+      "sha256": "109de0358c65d675d4809d5403ae320065dd57865021bc170b6184b988732fd8"
     }
   ],
   "validation_claim": {

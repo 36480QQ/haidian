@@ -1,39 +1,54 @@
-# Copyright Statement
+# 版权声明 / Copyright Statement
 
-本提交包（百年京张 AI 创新带城市设计开源征集 — 提案「京张新纪元·创想AI时轨」，`submissions/silmeriaeminem/jingzhang-zero-ai-testbed/`）的资产权利状态说明：
+## 总体声明
 
-## 1. 文本与代码
-- 中英文主提案（`proposal.md` / `proposal.en.md`）、配置文件（`manifest.json` / `metrics.json` / `assumptions.json` / `sources.json` / `self_check.json` / `compliance_matrix.json` / `standard_matrix.json` / `design_depth_matrix.json` / `agent.json`）由声明的 AI 智能体依据官方公开任务包（`SITE-PACKAGE`、`OFFICIAL-ANNOUNCEMENT`、`AGENT-TASKBOOK`）与已清权用户材料（`AGENT-TASKBOOK`，2026-05-18）撰写；
-- 不含商业秘密、内部资料、个人隐私或非公开空间数据。
+本方案"京张新纪元·创想AI时轨 / Jingzhang New Era · Creative AI Time-Track"为开放共创的概念建议，所有可视化材料（图片、视频、交互页面）均为方案表达层材料，不构成官方规划背书、不替代专业规划、不构成已实施项目的证据。所有材料按 CC BY 4.0（署名：刘德成 / silmeriaeminem）开放；引用第三方资料的部分按原始许可保留署名。
 
-## 2. 几何（`geometry/*.geojson`，9 个图层）
-- `site_boundary.geojson` 与 `key_areas.geojson` 为**临时多边形**（基于公告文字四至与约 11.4 km² 面积约束），**不构成官方红线或精确面积依据**；
-- `land_use` / `buildings` / `roads` / `green_space` / `public_space` / `phasing` 为**概念设计提案**（建筑基底由 POI 点按约 36m 方形生成、道路按中心线约 16m 缓冲），**概念模型估计**，不得作为现状测绘或法定控制条件；
-- `constraints.geojson` 保持空集合（无官方约束几何可用）；
-- 正式几何与控规发布后，全部指标需重算。
+## 文本与数据
 
-## 3. 图像（`assets/figures/*.jpg` 共 21 张）
-- 16 张概念图（`01_cotrack_testline_people_machines.jpg` 至 `16_masterplan_timetrack_v4.jpg`）由**用户本人即梦 AI 账号生成**，用户确认具有在本开源征集范围内使用的权利；
-- 5 张数据图（`site-overview.png` / `land-use-structure.png` / `key-areas.png` / `mobility-bluegreen.png` / `metrics-evidence.png`）由 `matplotlib` 基于提交包内 GeoJSON 自动生成；
-- **不含第三方 Logo、企业标识、商标、可识别人物肖像**。提案 §3.1 与 §9.2 中的"Logo 设计方向"与"双原点广场"仅为**概念描述**，未使用任何第三方标识或历史人物/企业 Logo；任何官方出版/落地使用前必须重新清权。
+- `proposal.md` / `proposal.en.md` / `report/narrative.md`：方案文本，由 AI 起草并经方案参与者审核，采用 CC BY 4.0。
+- `metrics.json` / `sources.json` / `assumptions.json` / `self_check.json`：从公开资料清洗出的结构化数据，按 `sources.json` 中登记的来源 ID 与许可使用。
+- `standard_matrix.json` / `compliance_matrix.json` / `design_depth_matrix.json`：合规与设计深度映射表。
+- `geometry/*.geojson`：空间几何，按各 GeoJSON 内 `properties.provenance` 字段记录来源；官方规划边界缺失部分使用 `brief/site-package/geometry/provisional_boundaries.geojson` 并明确标注为 `provisional_constraint`。
+- 5 张基础图纸（`assets/figures/site-overview.png` 等）：由方案参与者基于公开数据与示意渲染生成。
 
-## 4. 字体（嵌入 HTML 的 Noto Sans SC woff2）
-- 替代微软黑体（SimHei）；
-- 许可：**SIL Open Font License 1.1**（允许自由分发、嵌入、商业使用）；
-- 来源：https://fonts.google.com/noto/specimen/Noto+Sans+SC。
+## 概念图与效果图
 
-## 5. PDF（`drawings/*.pdf`）与 HTML（`report/*.html` / `visual/*.html`）
-- 基于上述文本、几何、图像与字体自动生成；
-- 渲染版 HTML 嵌入 Noto Sans SC 字体，离线打开不再依赖系统 CJK 字体；
-- 视觉页（`visual/index.html`）无远程 CDN、瓦片、外部脚本、API、iframe 或表单提交。
+`assets/figures/*.jpg` 下的 22 张概念效果图（共轨试验线、众智园、原点社区、品牌标识、Masterplan、AI 时代人民美好生活系列 6 张等）均由 AI 图像生成工具创作（生成工具与提示词记录见本目录下的过程记录），属于概念示意，不反映现场真实场景、不构成已建成项目的证据；采用 CC BY 4.0（署名：刘德成 / silmeriaeminem）。
 
-## 6. 政策与企业引用（来源合规）
-- `POLICY-01-HD-CONTROL-PLAN` / `POLICY-02-AGENT-MEASURES` / `POLICY-03-AUTONOMOUS-DRIVING` 三条政策声明当前为 **待核实状态**（`pending_verification`）：政策文号、发布日期、条款编号需对照北京/海淀官方原文核验；在核验前，正文相关表述已统一改写为"建议/参考机制"措辞；
-- `CHAIN-ENTERPRISES-INDICATIVE` 链主企业清单为**指示性集合**（`indicative`）：8 类图谱与 6 类合作模式为框架性建议；具体企业总部地址、融资轮次、具体合作项目需对照企业官网/年报/权威新闻核验；在核验前，正文相关表述已统一改写为"已检索样本中可观察到的"等有限措辞。
+## 视频与海报
 
-## 7. 状态声明
-- 本提交包**不**包含、**不**声称、**不**暗示已通过官方正式审批、控规批复或实施许可；
-- 所有空间建议为开放共创的概念参考方案；
-- 评审过程中可使用，正式落地/发布前**必须**重新核验政策原文、企业信息与资产权利。
+视频文件 `assets/media/jingzhang-new-era-concept-film.mp4`：
 
-—— 提交者：silmeriaeminem
+- 源文件：`C:/Users/Administrator/Videos/8月26日(1)/8月26日(1).mp4`（46.6 MB，1920×1080，50 fps，29.49 秒），由方案参与者使用 AI 视频生成工具创作。
+- 字幕：视频内的中英双语字幕由方案参与者使用剪映烧录于画面，本仓库不修改也不重新烧录；字幕文本与 `assets/media/jingzhang-new-era-concept-film.vtt` 及 `assets/media/jingzhang-new-era-concept-film.md` 逐句一致。
+- 后期处理：本仓库以 ffmpeg（N-87130，2017 年构建）压缩至 1920×1080、30 fps、H.264（libx264, crf 28, preset slow）、AAC 128 kbps，输出 11.6 MB；仅做格式与码率调整，不改变画面内容、不改变字幕。
+- 公开权利：视频内容与字幕采用 CC BY 4.0（署名：刘德成 / silmeriaeminem）。
+- 自动播放：本仓库内嵌入视频时使用 `preload="metadata"` 与可见控件，不设置 `autoplay`。
+
+封面海报 `assets/media/jingzhang-new-era-poster.jpg`：
+
+- 源文件：`8月26日(1)-封面.jpg`（2.0 MB，1918×1080），由方案参与者生成。
+- 后期处理：ffmpeg 缩放至 1600 宽、JPEG q=4（229 KB）。
+- 公开权利：CC BY 4.0（署名：刘德成 / silmeriaeminem）。
+- 用途：视频 poster 与可选 `cover_image`。
+
+## 渲染 HTML 与交互
+
+- `report/proposal.html` / `report/proposal.en.html`：由 `scripts/render_proposal_html.py` 渲染的离线阅读版，仅引用本地资源，不加载远程脚本或样式。
+- `visual/index.html` / `visual/index.en.html`：可视化仪表盘，离线确定性；仅引用本地资源；提供静态图片降级与无障碍控制。
+
+## 第三方与公开资料
+
+- 引用海淀官方公开材料按原始许可与署名要求使用，详见 `sources.json` 与对应 `proposal.md` 中的 `[source:...]` 标注。
+- 公开资料仓库 `data/source_registry.json` 登记所有 `usable_for_formal="yes"` 的资料；其余资料仅作背景叙述或可视化讨论使用。
+
+## AI 生成内容标识
+
+所有概念图、效果图、视频画面与封面海报均由 AI 工具生成；本方案在文本与可视化材料中明确标注其为概念示意，不冒充现场照片或官方渲染；不替代专业规划与法定审批。
+
+## 权利与限制
+
+- 所有材料允许在保留署名的情况下被引用、修改、再传播。
+- 方案中提到的"AI 全栈自主创新""三区两翼""时轨"等概念，对应 `proposal.md` / `proposal.en.md` 中的相应章节；具体实施层面仍表述为"概念建议""参考方案""可供专业团队深化研究"，不构成对官方规划结论、土地权属或工程实施的判断。
+- 未经授权，请勿将本材料用于商业推广或冒充已获官方批准的项目。
