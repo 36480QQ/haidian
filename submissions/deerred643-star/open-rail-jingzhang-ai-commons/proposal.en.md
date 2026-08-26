@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the century-old Jing-Zhang railway heritage corridor as a civic mainboard, this proposal builds an open-source AI commons of one spine, six stations, three areas and two wings: a 9.7 km rail-to-trail mainline linking six station-hall public nodes and three key areas, forming a recomputable, verifiable, concept-level urban design ready for professional deepening."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.7"
+iteration: "v1.8"
 ---
 
 # OPEN RAIL: Jing-Zhang AI Commons Urban Design Proposal
@@ -132,6 +132,10 @@ Brand experience extends into an application system of logo, paving, street furn
 
 ![OPEN RAIL brand application system](assets/figures/brand-system.en.png)
 
+Streetfront interfaces are given concept sections for three typical street types (proposals): S1, the spine-corridor standard segment, organises "arcaded R&D courtyard — green buffer — heritage rail — shared street — lab/exhibit frontage", with the heritage rail physically fenced along both sides; S2, the hall forecourt, is a fully pedestrian shared street where kerbless herringbone paving runs from the canopy frontage to the shuttle bay (shuttle service permit-gated, held in readiness until licensed); S3, the stitching lane, links garden walls and pocket parks along a 15 km/h slow lane. The ground-floor frontage keeps a continuous, recognisable rhythm through an arcade module of about 6 m, a unified 0.9 m sign band, rail railings, tree rows and circuit-branch lights; porosity and the sign band are concept guidance only, while heights and setbacks remain unknown pending the statutory plan [depth:overall_spatial_structure].
+
+![Streetfront interfaces and typical sections](assets/figures/street-interface.en.png)
+
 ## Detailed Design of Key Areas
 
 ### Zhongzhiyuan AI Acceleration Area (~192.1 ha) — "Mainboard Chip"
@@ -141,6 +145,10 @@ Positioning: the core carrier of the AI full-stack independent innovation system
 Commit Plaza, the core public node of Zhongzhiyuan, is enlarged as a concept plan: the heritage rail as axis, a circular herringbone plaza as core, and the merge pad beacon as the physical lighthouse for annually merged honour-wall entries; a ring walkway secures barrier-free circulation with non-digital equivalent paths; the surrounding shared lab, agent kiosk, developer teahouse and exhibit gallery are placeholder massing subject to regulatory, heritage and engineering checks.
 
 ![Zhongzhiyuan Commit Plaza node enlargement](assets/figures/node-detail.en.png)
+
+Node construction is demonstrated by four concept details (proposals): the herringbone paving build-up (permeable pavers — bedding sand — graded aggregate — compacted earth); the commit-node bench (curved timber seat, anchored steel post, central node beacon); the circuit-branch light (~4.5 m, warm low-glare, twin circuit arms); and the merge medallion (anti-slip brass inlay, fully flush, wheelchair and vision friendly). All are construction intent, not construction drawings; materials, craft and structural dimensions follow professional detailing and dedicated accessibility review, and constitute no workmanship commitment [depth:overall_spatial_structure].
+
+![Node construction details](assets/figures/construction-details.en.png)
 
 ### Beijing AI Origin Community (~104.3 ha) — "Bootloader"
 
@@ -283,6 +291,20 @@ To give all eight renewal projects the full implementation granularity of curren
 | 8 Edge compute | Concept | Power & data-compliance review | Infrastructure operator TBD | Availability / open hours / on-device share | Equipment removable, data erasable |
 
 Baseline note: no project yet has a measured baseline (organiser data unpublished); baselines are unmeasured design starting points, and acceptance metrics are suggested targets pending specialised deepening [depth:phasing_implementation].
+
+### Project sequencing and cost-benefit methodology (concept proposal)
+
+Responding to the implementability review note that sequencing and cost-benefit cannot be verified at concept stage, this version outputs no ranking conclusions or benefit figures while existing buildings, ownership, utility capacity, measured flows and statutory controls remain unknown; instead it provides an evaluation framework executable once data arrives (machine-readable: `visual/assets/sequencing-methodology.json`):
+
+| Step | Input (current state) | Method (proposal) | Trigger |
+|---|---|---|---|
+| 1 Data baseline | buildings/ownership/utility/flows unknown | Recompute per A-BOUNDARY-002 + authority data hookup | Official geometry & statutory plan released |
+| 2 Priority scoring | 8 renewal projects | Public benefit / reversibility / funding-path maturity / heritage constraint, weighted (weights negotiable) | Step 1 done |
+| 3 Cost lines | concept line-items, no estimates | Land / construction / utilities / operations listed separately | Entering design development |
+| 4 Benefit lines | P1–P5 pending baseline | Public benefit (accessibility / equivalent paths / complaints) separated from economic proxies | Pilot baseline measured |
+| 5 Sensitivity | boundary / FAR / flow parameters | Single-parameter perturbation of ranking stability; robust intervals, not point conclusions | Steps 2 & 4 done |
+
+Method discipline: every step is a concept proposal with no numeric commitments; sequencing and cost-benefit conclusions are published only after all triggers are met, jointly reviewed by the district authority and the named operator, and rolled forward with the 90-day public review [depth:phasing_implementation].
 
 ### Funding typology and entity paths (concept proposals)
 
