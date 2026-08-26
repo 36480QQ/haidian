@@ -400,8 +400,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 | 指标 | 数值 | 状态 | 来源 | 备注 |
 | --- | --- | --- | --- | --- |
 | 场地面积 | 11,412,825 m² | provisional | PROV-SITE-001 EPSG:4548复算 | 待官方边界替换 |
-| 绿化覆盖率 | 23.2% | provisional | geometry/green_space.geojson | 基于设计模型复算 |
-| 公共空间比例 | 17.6% | provisional | geometry/public_space.geojson | 基于设计模型复算 |
+| 绿化覆盖率 | 24.2% | provisional | geometry/green_space.geojson | 基于设计模型复算 |
+| 公共空间比例 | 10.4% | provisional | geometry/public_space.geojson | 基于设计模型复算 |
 | 缝合节点数 | 9 | known | 设计方案 | 可调整 |
 | 东西向新增通道 | ≥18条 | 概念建议 | 每节点≥2条 | 待现场踏勘验证 |
 
