@@ -5,7 +5,7 @@
     "proposal_slug": "jingzhang-origin-belt",
     "coordinate_reference_system": "EPSG:4326",
     "generated_date": "2026-08-14",
-    "note": "Conceptual building massing. NOT official building plans. All features are conceptual suggestions."
+    "note": "Conceptual building massing / footprints."
   },
   "features": [
     {
@@ -21,16 +21,36 @@
         "name_zh": "源·塔（Origin Tower）",
         "name_en": "Origin Tower",
         "concept_height_m": 100,
-        "concept_floors": 25,
         "primary_function_zh": "AI展览、观景、会议",
-        "primary_function_en": "AI exhibition, observation, conference",
-        "parent_area_id": "beijing_ai_origin_community"
+        "parent_area_id": "beijing_ai_origin_community",
+        "footprint_area_sqm": 47419.336,
+        "concept_floors": 25
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          116.3475,
-          39.9885
+          [
+            [
+              116.3475,
+              39.9905
+            ],
+            [
+              116.3495,
+              39.9905
+            ],
+            [
+              116.3495,
+              39.988
+            ],
+            [
+              116.3475,
+              39.988
+            ],
+            [
+              116.3475,
+              39.9905
+            ]
+          ]
         ]
       }
     },
@@ -47,16 +67,36 @@
         "name_zh": "源·门（Origin Gate）",
         "name_en": "Origin Gate",
         "concept_height_m": 45,
-        "concept_floors": 10,
         "primary_function_zh": "门户空间、商业、文化展示",
-        "primary_function_en": "Gateway space, commercial, cultural exhibition",
-        "parent_area_id": "dazhongsi_ai_industry_cluster"
+        "parent_area_id": "dazhongsi_ai_industry_cluster",
+        "footprint_area_sqm": 37958.556,
+        "concept_floors": 10
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          116.3485,
-          39.9469
+          [
+            [
+              116.3475,
+              39.948
+            ],
+            [
+              116.3495,
+              39.948
+            ],
+            [
+              116.3495,
+              39.946
+            ],
+            [
+              116.3475,
+              39.946
+            ],
+            [
+              116.3475,
+              39.948
+            ]
+          ]
         ]
       }
     },
@@ -74,14 +114,34 @@
         "name_en": "Origin Monument",
         "concept_height_m": 15,
         "primary_function_zh": "纪念碑、公共艺术",
-        "primary_function_en": "Memorial, public art",
-        "parent_area_id": "zhongzhiyuan_ai_acceleration_area"
+        "parent_area_id": "zhongzhiyuan_ai_acceleration_area",
+        "footprint_area_sqm": 9480.073
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          116.3485,
-          40.0167
+          [
+            [
+              116.348,
+              40.0175
+            ],
+            [
+              116.349,
+              40.0175
+            ],
+            [
+              116.349,
+              40.0165
+            ],
+            [
+              116.348,
+              40.0165
+            ],
+            [
+              116.348,
+              40.0175
+            ]
+          ]
         ]
       }
     },
@@ -98,10 +158,10 @@
         "name_zh": "源·创综合体",
         "name_en": "Origin Innovation Complex",
         "concept_height_m": 60,
-        "concept_floors": 15,
         "primary_function_zh": "研发办公、众创空间、路演中心",
-        "primary_function_en": "R&D office, maker space, demo center",
-        "parent_area_id": "zhongzhiyuan_ai_acceleration_area"
+        "parent_area_id": "zhongzhiyuan_ai_acceleration_area",
+        "footprint_area_sqm": 189599.99,
+        "concept_floors": 15
       },
       "geometry": {
         "type": "Polygon",
@@ -109,23 +169,23 @@
           [
             [
               116.349,
-              40.015
-            ],
-            [
-              116.353,
-              40.015
+              40.02
             ],
             [
               116.353,
               40.02
             ],
             [
-              116.349,
-              40.02
+              116.353,
+              40.015
             ],
             [
               116.349,
               40.015
+            ],
+            [
+              116.349,
+              40.02
             ]
           ]
         ]

@@ -5,7 +5,7 @@
     "proposal_slug": "jingzhang-origin-belt",
     "coordinate_reference_system": "EPSG:4326",
     "generated_date": "2026-08-14",
-    "note": "Conceptual public space nodes. All features are conceptual suggestions."
+    "note": "Conceptual public-space nodes."
   },
   "features": [
     {
@@ -20,14 +20,33 @@
         "space_type": "honor_display",
         "name_zh": "智能体贡献荣誉墙",
         "name_en": "Agent Contribution Honor Wall",
-        "description_zh": "展示AI Agent和人类贡献者的数字+实体荣誉墙",
-        "description_en": "Digital + physical honor wall displaying AI Agent and human contributors"
+        "area_sqm": 85377.863
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          116.348,
-          39.97
+          [
+            [
+              116.347,
+              39.972
+            ],
+            [
+              116.35,
+              39.972
+            ],
+            [
+              116.35,
+              39.969
+            ],
+            [
+              116.347,
+              39.969
+            ],
+            [
+              116.347,
+              39.972
+            ]
+          ]
         ]
       }
     },
@@ -43,14 +62,33 @@
         "space_type": "milestone_plaza",
         "name_zh": "AI里程碑广场",
         "name_en": "AI Milestone Plaza",
-        "description_zh": "时间轴形式展示AI发展史重要里程碑",
-        "description_en": "Timeline display of major AI milestones"
+        "area_sqm": 85396.304
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          116.348,
-          39.955
+          [
+            [
+              116.347,
+              39.957
+            ],
+            [
+              116.35,
+              39.957
+            ],
+            [
+              116.35,
+              39.954
+            ],
+            [
+              116.347,
+              39.954
+            ],
+            [
+              116.347,
+              39.957
+            ]
+          ]
         ]
       }
     },
@@ -66,14 +104,33 @@
         "space_type": "immersive_experience",
         "name_zh": "源·光隧道",
         "name_en": "Origin Light Tunnel",
-        "description_zh": "利用铁路隧道空间打造沉浸式AI艺术体验",
-        "description_en": "Immersive AI art experience in railway tunnel space"
+        "area_sqm": 85371.715
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          116.348,
-          39.975
+          [
+            [
+              116.347,
+              39.977
+            ],
+            [
+              116.35,
+              39.977
+            ],
+            [
+              116.35,
+              39.974
+            ],
+            [
+              116.347,
+              39.974
+            ],
+            [
+              116.347,
+              39.977
+            ]
+          ]
         ]
       }
     }
