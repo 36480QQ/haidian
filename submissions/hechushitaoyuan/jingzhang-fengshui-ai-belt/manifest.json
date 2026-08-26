@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "73b65073dc2115eebf9cdd0de8a6d7cb8d2737a101b140d2c1b2b870356ee500"
+      "sha256": "5e876322def363129e2b8712459dd50641927d45c5ca20a3e02871b4200f01dd"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "8dab3f77469dccb0992386568f5f9427a399928039b731081e280cb8cc5fcb73"
+      "sha256": "58c78e7734594d027e8355697ff08dbcb671a5cfc90c1529758258c7af3afb92"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "04be39ea0c591d70e204d7b0dbebe0afada1c71b3fe2cf3b17c163caca221140"
+      "sha256": "01b69917b33550e13d682c71aa7e7745fba120cf98e5da54bd3e86f37e21e5ec"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6ca6a883bcfac5c35bebd92f055db114510905debc11ff33de6a15b5499559dc"
+      "sha256": "a42aed4739b3605fe9775bc94d76a3ae96cb48ca09cb6ee092b5bf8b8fbe6f74"
     },
     {
       "path": "report/narrative.md",
@@ -93,28 +93,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "6c676e0b483ae13cada2948836ea5d92dbc22e1980fc24a239229aaffeee1f23"
+      "sha256": "1c54517cdb171acc0916c6f2619220744225370e4bac4a5f0535a0352e951703"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "dcedf7cf6a6c944a8100e94e1ed56bd281888bab04d0d9d431bbbdf1f774277d"
+      "sha256": "520523f963de9f18e5b6dc28c097051e37b7bc613730b0e103588c28e8688770"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "b796733f06cd94656d2c00984dba6aa350717e42ec69903bc6bd46995697ee48"
+      "sha256": "88d1d6ae27ca3e6a1b092fcab69dd5364ba961a305e3803d52874bcc4a4682a6"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "14a8327c9b1128df925338fb339460c3e311666f6a62474f8077a5fb7984bed9"
+      "sha256": "8ed117dd879c566df216ce1d664efe1ada82ae9a1d53e67687af4ac386cd2add"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "14fba1b10022e79262a6f42f74c0b193993ed60d5aa5f9ffefdb84db2dfac297"
+      "sha256": "f0fc7f59832fdaa933ad0b2b742d12d48482bf10914287ab155703795e802a36"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "323fddfe4c43fb2bc80d85f370ff719342264dd064ef06e629e0f1a60d3a9fec"
+      "sha256": "7f18891b1f98c0305c62bb5432873165c915736374d20139d71c7247e058703d"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5775cd980799f08ac8787237848197f3f550d2f5651062c81fbc131e12a2a844"
+      "sha256": "a4f298dede5c7d360d87c03868ed117a8672d0561af4ab8ece75ba4161f11924"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "fa4d15289007c769963fcb871cd975cbe40a477c62b7565ad7ac13e0f8d40525"
+      "sha256": "121f32d788deadaae03db63a748b7b33a5d8c310b812abb63378fcd6564f6a56"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "50cb7a42ece411f28777ab3ebaf09d6488d92fcc42ab0fbfabcbb6e9eb8c4ec8"
+      "sha256": "f280778284773f9a407f9b681161f611a6943acc47637358a03d27cb91e3cf95"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "f5df008988d53a26d1af9e56e23b6fb596acfc0be91dc3dbd8b2c72e1686807a"
+      "sha256": "ad1caf4e82fff49a158ba20f864d84f9cf2132f66c160a1e5ff41c5395912fcc"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "03b7b10d956ccd261751bd7ca671110078e505c295b735e9f5d8c7070c04ce2b"
+      "sha256": "433dd8cac1a8bcd6b8834a47bd4f8d67ee898b0fed400de252e9014b79ec9be1"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "a99a2720b9a954573dbc893efe6254af1a0f9c81df8a14389fd2e9e9e67f59a0",
+      "sha256": "11211013a93ac394330496b9d76c4c403729afdca3d1ebe556b30e817abf4a09",
       "language": "neutral"
     },
     {
@@ -521,7 +521,7 @@
       "path": "visual/assets/fonts.css",
       "role": "asset",
       "required": false,
-      "sha256": "273b06998057b6e147e13d961bf8b9f20e0c15cd352b1e6fed60269c14107fbb",
+      "sha256": "cc8b51f406a0566d1616321714c3ec273e48f11e6a0bc0446c9174b30ba71e2c",
       "title_zh": "嵌入式 Noto Sans SC 子集样式（评审渲染用）",
       "title_en": "Embedded Noto Sans SC subset stylesheet for reviewer-side rendering",
       "description_zh": "按 SIL OFL 1.1 分发（许可全文见文件头注释）；base64 嵌入字符子集，供无 CJK 字体环境离线正确渲染中文。",
@@ -569,7 +569,7 @@
       "title_en": "Qi-Pulse deterministic self-verification results",
       "description_zh": "七组 30 项确定性检查全部 PASS：场景卡 156 演练复算、气数协议绑定、岗位闭环、分期条件门、指标跨文件一致性、双语标签对齐、CJK 字体覆盖。",
       "description_en": "Seven groups / 30 deterministic checks all PASS: scenario-card 156-drill recount, protocol binding, role loop, phase gates, metrics cross-file consistency, bilingual tag parity, CJK font coverage.",
-      "sha256": "210c7f5549780ce839a9f6d574bbb4bdae9a1463f14d3675b2c1f9d1d1c6b19b"
+      "sha256": "4d4cbd270e29bf99ed9ff26a1a6c3b9b583b9d76080fc939a3637d2abaceb219"
     }
   ],
   "validation_claim": {
