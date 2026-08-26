@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the century-old Jing-Zhang railway heritage corridor as a civic mainboard, this proposal builds an open-source AI commons of one spine, six stations, three areas and two wings: a 9.7 km rail-to-trail mainline linking six station-hall public nodes and three key areas, forming a recomputable, verifiable, concept-level urban design ready for professional deepening."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.5"
+iteration: "v1.6"
 ---
 
 # OPEN RAIL: Jing-Zhang AI Commons Urban Design Proposal

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以百年京张铁路遗址廊道为城市主板，构建“一廊·六站·三区·两翼”的开源AI共同体：把9.7公里铁轨转化为开源步道主线，串联六个站厅级公共节点与三处重点区域，形成可复算、可验证、可供专业团队深化的概念性城市设计方案。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.5"
+iteration: "v1.6"
 ---
 
 # 开源轨道 OPEN RAIL：京张AI共同体城市设计方案
