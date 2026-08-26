@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "587e9e975e84c3481736fea2542cdc8ccaada2c31ad4bfeec367d1b02fafe549"
+      "sha256": "d64d5377b7493430833d10161becc24dd69d14682fbafea0f205a81588034aae"
     },
     {
       "path": "agent.json",
@@ -50,7 +50,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "6093654a34923632aaad45e002819ca37907174faba7372745f0aeb3c37f635a"
+      "sha256": "ba608d983f9f98f899a8c2cd56419fc71c69ba195305a5da1442d3eeff9101d6"
     },
     {
       "path": "risk.json",
@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e3656a1b82134acf8f41a3b4bd11945c7a12852be1b01e7cdefe834c4a4e8832"
+      "sha256": "6ee9be0d9e9e674cfae4eca963a80653a4bfbc3db3d8fc2584ce361089e9e2a5"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d2865703c6d96defd7ef23a63bc0f985fabe26bff9c62859fd37039c4fd823e5"
+      "sha256": "30686bb51f5f7eea7da4370345945119f0b21233cd49d2ff1e5df469f1caec52"
     },
     {
       "path": "report/narrative.md",
@@ -99,7 +99,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "63f8e0b0e5d227e9ea3c3319d5d31b5f7a2d86d34274dcc02b16bf9899cc6c90"
+      "sha256": "383661d4497d2c8a0e8c9a60b7e422ef61fab0e43826ae7d8eb754dc94dd8cdb"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -120,7 +120,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "be054d3502b630e8aeac3681a0179c70b5e51094dbf7fa2ce4832be3e73f7b68"
+      "sha256": "81e8d322435be5e2bbcf0c2c48b7bf784c1afbc2889b2734242e1c537820a4ae"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -217,7 +217,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f96b47887e6fa746dcbd824ecbdc3eb445bbf5557281484f6e1b2af48b18f3d9"
+      "sha256": "2dfd6a975c7e044ecbbbf55c7bd9a3641ba59565ff72ef376f0456568af7d413"
     },
     {
       "path": "report/proposal.en.html",
@@ -225,7 +225,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "0e092e11b7970f68b6e3fa5e6fec7699847ce09d70579188746b68313d22bcd5"
+      "sha256": "26ad6f089a25347974428abb3236b984ae9c1a44cf78cc224696c4c86a30f8ed"
     },
     {
       "path": "visual/index.en.html",
@@ -233,7 +233,7 @@
       "required": false,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "dbe0f7602906733ac703785c5cd9496b67f80aefe79cc9beb7459e1f0ef8e139"
+      "sha256": "eee8a4b9a76f8dd008327178460dac7dc2233c04e1e9ce7a01f62a275c28bdaa"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -296,7 +296,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "0e06a08ac227dc4d7a19e1c3330f0045787f3016eb8f4e8fec7b3ae2a7f3f6e0"
+      "sha256": "70d9f341cd10ec3897cb2ac2bd89bbf29e91fce383fb78bee00158d423469696"
     },
     {
       "path": "visual/assets/switchback-protocol.json",
@@ -666,6 +666,24 @@
       "title_zh": "踏勘轨迹图(68张照片GPS)",
       "title_en": "Field-survey track (GPS of all 68 photos)",
       "sha256": "f8e18f1941c5d9df748ff674a11115e9ae2bc78121bfd103e5294685bd65275d"
+    },
+    {
+      "path": "assets/reference-photos/qinghuayuan-station-1908-building-2023.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "清华园车站旧址一代站房(2023,公开来源 CC BY-SA 4.0)",
+      "title_en": "Qinghuayuan Station first-generation building (2023, public source CC BY-SA 4.0)",
+      "sha256": "9cdef4a11078e840f55d97fbea7b17437200e646195057a40b23e13a45ef18fd"
+    },
+    {
+      "path": "assets/reference-photos/wudaokou-night-2008.jpg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "五道口夜景(2008,历史影像,公开来源 CC BY-SA 3.0)",
+      "title_en": "Wudaokou at night (2008, historical, public source CC BY-SA 3.0)",
+      "sha256": "05d3eda195a46a936a28f0162bf0ec52d9ea73c3f68d2a3fe7c6d6e32efed7ca"
     }
   ],
   "validation_claim": {
