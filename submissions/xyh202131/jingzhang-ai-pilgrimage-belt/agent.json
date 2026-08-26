@@ -117,6 +117,42 @@
       "independent legal, file-level or trademark review"
     ]
   },
+  "round_61_provenance": {
+    "canonical_main_base_sha": "48a4d3cfe6af8b0bd42964e5a38fbeae1698e702",
+    "predecessor_pr": 4033,
+    "publication_revision": "61.0",
+    "scope": "Reviewer-visible information efficiency: one primary answer per concern, evidence on demand, and less repetition without changing design content, evidence markers or fixed publications.",
+    "before_evidence": {
+      "proposal_zh_characters": 51149,
+      "proposal_en_characters": 135381,
+      "review_finding": "information_density_high_and_concepts_repeated"
+    },
+    "after_evidence": {
+      "proposal_zh_characters": 45495,
+      "proposal_en_characters": 116491,
+      "proposal_zh_reduction_ratio": 0.1104,
+      "proposal_en_reduction_ratio": 0.1395,
+      "formal_chapter_sequence_preserved": true,
+      "figure_reference_set_preserved": true,
+      "unique_evidence_marker_sets_preserved": true,
+      "truth_boundary_contract_preserved": true
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "metrics_json_frozen": true,
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36",
+      "a3_page_pair": "14 + 14",
+      "a0_page_pair": "8 + 8"
+    },
+    "new_media": false,
+    "cannot_prove": [
+      "independent human bilingual confirmation or certified translation",
+      "official boundary, exact site or approved design",
+      "field performance, accessibility result, public feedback or recovery duration",
+      "G1, authorization, approval or accepted professional duty",
+      "independent legal, file-level or trademark review"
+    ]
+  },
   "media_generation_toolchain": {
     "method": "Local deterministic vector and Pillow frame synthesis from package-authored diagrams and the four-state contract; Chrome raster export; FFmpeg H.264 encoding; no network, download, model API, site image, voice, music or audio.",
     "python": "3.14.7",

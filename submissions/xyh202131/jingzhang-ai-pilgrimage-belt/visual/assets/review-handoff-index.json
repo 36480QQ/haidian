@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
-  "index_id": "JZ-REVIEW-HANDOFF-R60.0",
-  "publication_revision": "60.0",
+  "index_id": "JZ-REVIEW-HANDOFF-R61.0",
+  "publication_revision": "61.0",
   "as_of": "2026-08-26",
   "reading_routes": [
     {
@@ -91,6 +91,32 @@
     "professional_packet": "visual/assets/professional-handoff-candidate.json",
     "field_intake": "visual/assets/field-evidence-intake-contract.json",
     "bilingual_human_sample_packet": "visual/assets/bilingual-material-equivalence.json#/formal_human_review_packet"
+  },
+  "information_efficiency": {
+    "audit_type": "contributor_editorial_red_green_contract",
+    "baseline": "merged_predecessor_pr_4033",
+    "before_characters": {
+      "proposal_zh": 51149,
+      "proposal_en": 135381
+    },
+    "current_characters": {
+      "proposal_zh": 45495,
+      "proposal_en": 116491
+    },
+    "reduction_ratio": {
+      "proposal_zh": 0.1104,
+      "proposal_en": 0.1395
+    },
+    "preserved_contract": [
+      "13 formal chapters in the same order",
+      "all proposal figure references",
+      "all unique source, standard, depth, data, metric and assumption markers",
+      "Twin-Track and three non-interchangeable prototypes",
+      "ordinary-verification-fault-recovery truth boundary",
+      "G0, NO-GO, provisional, zero-result, rights and professional-veto boundaries"
+    ],
+    "new_facts_media_or_pages": false,
+    "boundary": "This is contributor editorial QA, not an independent cold read, public feedback, jury result, maturity upgrade or evidence of field performance."
   },
   "publication_accessibility": {
     "audit_type": "contributor_editorial_and_deterministic_qa",

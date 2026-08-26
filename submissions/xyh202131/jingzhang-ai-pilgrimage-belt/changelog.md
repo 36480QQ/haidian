@@ -1,5 +1,35 @@
 # 方案迭代记录 / Changelog
 
+## v61.1 - 2026-08-26
+
+**离线报告 CJK 阻断修复 / Offline Report CJK Blocker Repair**
+
+- 复核 PR #4036 当前评审的唯一参与者可控阻断项，建立修复前 RED：`report/proposal.html` 与 `report/proposal.en.html` 均未接入包内 `visual/assets/offline-cjk-font.css`，而两份 visual 已接入；问题是报告导出链丢失字体链接，不是缺少字体子集。
+- 在两份报告原路径接入同一 OFL WOFF2 子集，不改正文、图件、PDF、visual 信息结构或事实。字体 cmap 对四个最终 HTML 可见非 ASCII 字符的覆盖为 1015/1015、19/19、249/249、3/3，缺失 0。
+- 使用全新 Chromium 内存配置经 `127.0.0.1` 本地静态服务打开中英文报告；`document.fonts.status=loaded`、计算字体为 `JZ Noto CJK Offline`、核心中文串字体检查为真，人工截图未见方框。唯一控制台错误为未提供非必需 `favicon.ico`，不影响报告内容或字体。
+- 本修复不增加媒体、页面、主张或成熟度，不改变 geometry、`metrics.json`、12/8/3/36、G0/NO-GO、provisional、现实结果 0、批准 0、专业接责 0、独立现实复测 0 或权利边界。
+
+- Reproduced the sole contributor-controlled blocker in the current PR #4036 review. Before repair, both `report/proposal.html` and `report/proposal.en.html` omitted the package-local `visual/assets/offline-cjk-font.css`, while both visual pages already loaded it. The fault was a dropped report-font link, not a missing subset.
+- Connected both reports to the same OFL WOFF2 subset in place, without changing proposal text, figures, PDFs, visual information architecture or facts. The font cmap covers 1015/1015, 19/19, 249/249 and 3/3 visible non-ASCII characters across the four final HTML surfaces, with zero missing glyphs.
+- Opened both reports in a fresh in-memory Chromium profile through a `127.0.0.1` local static server. `document.fonts.status=loaded`, the computed family is `JZ Noto CJK Offline`, the core Chinese-string font check is true, and screenshot inspection finds no tofu. The only console error is the non-required missing `favicon.ico`, unrelated to report content or fonts.
+- This repair adds no media, page, claim or maturity upgrade and changes no geometry, `metrics.json`, 12/8/3/36 count, G0/NO-GO, provisional status, zero real outcomes, zero approvals, zero accepted professional duties, zero independent real-world retests or rights boundary.
+
+## v61.0 - 2026-08-26
+
+**评审可见信息效率 / Reviewer-visible Information Efficiency**
+
+- 在 canonical `main` `48a4d3cfe6af8b0bd42964e5a38fbeae1698e702` 上确认前序 PR #4033 已合并、进入祖先链且同包开放 PR 为 0。前序 AI 评审为 93/100，唯一投稿方可控的持续弱项是“信息密度偏高、概念重复”，因此本轮只修复人类阅读层，不新增方案方向。
+- 先建立可复现 RED 合同：中文/英文正文分别为 51,149 / 135,381 字符；高频重复为“连续日常轨”12/9、“非 AI”45/60、`G0` 50/50、`NO-GO` 22/23、“专业交接”9/9。合同同时锁定 13 章顺序、全部图件位置、全部唯一 source/standard/depth/data/metric/assumption 标记和核心真实性句。
+- 将开篇、三层框架、指标、风险和后台追证改成“一处主答案 + 按需证据”，删除轮次说明和同义重复；正文降至 45,495 / 116,491 字符，分别缩短 11.0% / 14.0%。高频边界词全部低于预设上限，而来源、假设、指标、图件和 13 章结构零丢失。
+- 保持“双轨京张”、三种不可互换原型、普通—验证—故障—恢复、JZ-AIOS、12/8/3/36、G0/NO-GO、临时边界、现实结果 0、公共同权、权利边界和专业否决的实质等价；未改变 geometry、`metrics.json`、visual、图件、媒体或 A3/A0 页数。
+- 本轮无新媒体。后续独立人工双语确认、官方几何、现场基线、审批、现实责任接受、独立现实复测、法律/商标审查继续为外部开放条件，不以更短正文换取状态升级。
+
+- Confirmed on canonical `main` `48a4d3cfe6af8b0bd42964e5a38fbeae1698e702` that predecessor PR #4033 was merged and in the ancestry with zero same-package open PRs. Its 93/100 AI review left one contributor-controllable weakness: dense information and repeated concepts. This round therefore repairs only the human reading layer and adds no design direction.
+- Established a reproducible RED contract first. Chinese/English proposals measured 51,149 / 135,381 characters, with repeated key terms counted before editing. The contract simultaneously froze the 13-chapter order, every figure position, every unique source/standard/depth/data/metric/assumption marker, and the core truth-boundary sentences.
+- Re-edited the opening, scope framework, metrics, risk and back-stage trace as “one primary answer plus evidence on demand,” removing round meta-copy and synonymous restatement. The texts now measure 45,495 / 116,491 characters, 11.0% / 14.0% shorter. Repeated boundary terms stay below their preset ceilings while evidence markers, figures and formal structure remain complete.
+- Preserved Twin-Track Jing-Zhang, three non-interchangeable prototypes, Ordinary—Verification—Fault—Recovery, JZ-AIOS, 12/8/3/36, G0/NO-GO, provisional geometry, zero real outcomes, public parity, rights boundaries and professional veto with material bilingual equivalence. Geometry, `metrics.json`, visual, figures, media and A3/A0 page counts are unchanged.
+- No new media was added. Independent human bilingual confirmation, official geometry, field baselines, approvals, accepted real responsibility, independent real-world retesting and legal/trademark review remain external open conditions; shorter prose does not upgrade status.
+
 ## v60.0 - 2026-08-26
 
 **出版可访问性与 A0 远读重构 / Publication Accessibility and A0 Distance-read Recomposition**
