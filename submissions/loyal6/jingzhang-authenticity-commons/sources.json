@@ -126,6 +126,12 @@
       "path": "assets/media/cover.webp",
       "source_type": "agent_generated_design",
       "usage": "Conceptual cover illustration generated with OpenAI image generation; not spatial evidence."
+    },
+    {
+      "id": "FONT-NOTO-SANS-SC",
+      "url": "https://github.com/google/fonts/blob/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+      "source_type": "official_public_open_font",
+      "usage": "Noto Sans SC variable font subsetted to four offline HTML entries including embedded execution annexes and interactive text; static instances embedded in revised PDF pages. SIL OFL 1.1 complete licence and fallback documentation are in report/copyright_statement.md; source and subset hashes are in visual/assets/font-coverage.json."
     }
   ]
 }
