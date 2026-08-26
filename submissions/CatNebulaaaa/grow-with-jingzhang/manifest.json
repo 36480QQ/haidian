@@ -88,7 +88,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "25daea2db2697055c94acc5e08538f5b029ddecb35ec2b834e669c62fe766efe",
+      "sha256": "69f6a92f68db168d1ca900279c478dde0d3c905d4d57a33e9af7948406b13b6c",
       "language": "zh"
     },
     {
@@ -115,14 +115,14 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "c33c17f91f230419d0aa3c106e06e58840cbe016f080f68fc204200551942a64",
+      "sha256": "01c594440279f9651932dbe2639e5c89830986f17d0335b160371e62e79a2f17",
       "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "873b1e25e4a45dd1f47b519b425cf0a97d55d5fb38cc6550544fb1c31cb07198",
+      "sha256": "0ac3618483e37e3fa476188fc45f7e93fe3162bd8659a8d6c9fd2a7bf75ab102",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -130,14 +130,14 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "136b003c3a8c24d4fd7909f99a1cf992d707eb69706180160ad8caf2c5f16ed1",
+      "sha256": "4ff3851d97055b59fbc2e80bd3b6b8d7d3decaed1bfc26a71e8ffb69cbf1be5d",
       "language": "zh"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "757fd225935c658e05b422765590a6633aa85ee66feb4e97086f66126095acf5",
+      "sha256": "82108f0a3dc487d330f1c139b8c297c7e6d7f756d7ba850311411a74380a533a",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -145,7 +145,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "9320336877b15e507ce6f345457ae1462c465e20c9b8763c5e85dafede125d59",
+      "sha256": "50df8590d8c8b2f4c4eb2e99dace9622044af9a8c8ce935f10c452f88365d6db",
       "language": "zh"
     },
     {
@@ -160,14 +160,14 @@
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "0a282e4476d0560067ecacf0d2e831c6bfec228bfb3999a5318b7c0a41a54feb",
+      "sha256": "bfef325a3f4af05446068c6ca7a59d8904801f60bb5ca4d5c9b90c4aeaa888d1",
       "language": "zh"
     },
     {
       "path": "assets/figures/site-overview.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "69c7c7ffdebde3a48800e673dd953293c9f30deafaae20ca35b09b5c3f11cb57",
+      "sha256": "40284743c181b49b6466e81f89214ff32be33d78b06fd1169e231bad87138a20",
       "language": "en",
       "translation_of": "assets/figures/site-overview.png"
     },
@@ -197,7 +197,7 @@
       "path": "assets/figures/key-areas.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "57941497167ae1fa9d19ba4ac2a6f889f3bf023d925cf554e2c77cd1ce497c2e",
+      "sha256": "7a0bad4e9fef4eddadb8ac1a6dc1dd78e645c404b8088e0a972d76a593fda4d8",
       "language": "en",
       "translation_of": "assets/figures/key-areas.png"
     },
@@ -205,14 +205,14 @@
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "17d6a751ca0740e8ad9093f45735a6dbf74e5a67939733b072d293e3954cfdf7",
+      "sha256": "2fcc37938825045e0d254ac73ea90af8fabf36706760eee1f26812c65da791b2",
       "language": "zh"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "695d0df9670b9b5264b482a4d243ebcba2db6563cc94325c1c55fe9fa311d269",
+      "sha256": "82467e21d1b19037da424e5e626656fb369fc77a5bba0524f9b0ac2eac6c339d",
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png"
     },
@@ -453,7 +453,7 @@
       "path": "visual/assets/bilingual-equivalence-audit.json",
       "role": "visualization",
       "required": false,
-      "sha256": "686d58f97e84818ad39bd5c0383e8f236ca906617e421054a7f5225dba92a674",
+      "sha256": "09479246533c2d4cbd359e54d80dc0076b238b1971ae3b2fbf9b8154ff36b635",
       "language": "neutral"
     },
     {
@@ -685,7 +685,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "medium",
     "readiness_contract": "persisted-self-check-v1"
