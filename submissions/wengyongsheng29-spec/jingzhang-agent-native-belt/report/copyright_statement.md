@@ -6,7 +6,7 @@ All basemaps, overview maps, and analysis figures are programmatically drawn usi
 
 The project logo (assets/logo.png, logo-icon.png, logo-transparent.png) is an AI-generated original design created for this submission. The contributor is responsible for its originality, trademark clearance, and final expression per the competition rules (README §"AI 生成内容").
 
-AI-generated architectural renderings (assets/figures/rendering-key-001/002/003.jpg and wide versions) were generated using Stable Diffusion XL (CreativeML Open RAIL-M license) for spatial atmosphere expression only; they are not architectural design outputs and require separate clearance before commercial use.
+AI-generated architectural renderings (assets/figures/rendering-key-001/002/003.jpg) were generated using Stable Diffusion XL (CreativeML Open RAIL-M license) for spatial atmosphere expression only; they are not architectural design outputs and require separate clearance before commercial use.
 
 The figures assets/figures/block-detail-01.png, block-detail-02.png, and block-detail-03.png are code-generated technical drawings (matplotlib, 2026-08) based on actual building footprints from buildings.geojson using equirectangular projection. They are conceptual urban design illustrations, not architectural designs; building massing, floors, and interfaces are typological indications only.
 
