@@ -44,7 +44,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "ddb246655f4fc10481291a436b6cda8c63897aa81f9912e1b44eb6a57b5fb84e"
+      "sha256": "36dc6bf39cbbf3f3fedb19a15de98e6cc70d225a027adda2c73bd1f6c4beb925"
     },
     {
       "path": "sources.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "265a58f6a4c4b0c4a26771639d9e6f33934bc37de06468b3257fc1615d96e768"
+      "sha256": "6840d18ea121dacb035327417f8837f1b755dfe149e0451928bcb0e801d1feaf"
     },
     {
       "path": "compliance_matrix.json",
@@ -93,21 +93,21 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "96632f29b20662df87462243a6a676deff0cfd1e9d25cf3ca9134c8fd0fdfcdb"
+      "sha256": "352131dfeb4ea5ca94470fed1fc343bc96d29179575cb04f8ecef2e675b2a70d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "19535ea4d40f3a761de4945e32c78a76fdcd60a9669b3322ab4894e9fa003177"
+      "sha256": "e5cda787fc0d2d9469561bbd70b254e382590f9f67a1a9e512484452fd246666"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a84acdc0aa7fa63f0dae4b6b60be40b89e3b5d051d617c2c27a3ab20f1e257a4"
+      "sha256": "0d2041f2d0a54763eccbeb791881f67c00eed602fd0877d9285cac6148c3a9b6"
     },
     {
       "path": "visual/index.html",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "d78d28c31368fc0837549dacacce32506a3f4ff481622d1ac3c6ffa6480ed565"
+      "sha256": "2ae6374e7a49f217e45d1a202234b4af66d9678a04a5d2ca9ef768e4bb2b1687"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "8fb273157878a71aef231102a99cb2f33984f20c285eca6015f63e844d14fa41"
+      "sha256": "d630197a953a3f41ffe619d1bf884d0cee5693356ec7d15fc97edba0c0d269e0"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "52cb94b15588f310fc877e3ab951aeb85d0bd6738fc3f4a9ccc17311f0e9ee10",
+      "sha256": "3ab699662f3e761a2680ddc65cfc627b1b3e805e3588e36653e7953941303b86",
       "language": "neutral"
     },
     {
@@ -635,7 +635,7 @@
       "title_en": "A3 booklet contact sheet",
       "description_zh": "六页一图总览（封面+设计依据+结构+重点区+分期+退出），供评审无需翻页即可核对全部版面；确定性自 PDF 导出。 回应评审\"PDF 证据仅限第一页预览\"的取证限制。",
       "description_en": "All six pages on one sheet for review without page-through; deterministic export from the booklet PDF. Answers the reviewer-noted first-page-only evidence limitation.",
-      "sha256": "d1a6bf7bd624e501264d6b11ad65d4a4d284fa9be2e239841d69bbd5ad3d7a15"
+      "sha256": "913406d01b2bf6f397dc65b0aef86f9191ef9b94f22631fd7e7591e1cfab9ddd"
     },
     {
       "path": "assets/screenshots/a0-boards-contact-sheet.png",
@@ -646,7 +646,7 @@
       "title_en": "A0 boards contact sheet",
       "description_zh": "两板一图总览（总体结构板真实语境版+重点区与指标证据板）；确定性自 PDF 导出。 回应评审\"PDF 证据仅限第一页预览\"的取证限制。",
       "description_en": "Both boards on one sheet; deterministic export from the boards PDF. Answers the reviewer-noted first-page-only evidence limitation.",
-      "sha256": "d37ac0f147c3ba509974ea2ef10c5db1b36c04acebdba00d812d7bb3a6d0b8d4"
+      "sha256": "177ecbd73ab1d8354b817437fac84d8f8193cce104623515ac0217449ab56bf3"
     },
     {
       "path": "assets/figures/key-area-detail.png",
