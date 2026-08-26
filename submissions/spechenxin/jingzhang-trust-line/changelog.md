@@ -19,6 +19,13 @@
 - 顺带修复：metrics-evidence 图自检状态文本与事实不一致（改动态读取 self_check.json）、复算流程框右缘裁切。
 - 四门自检重跑 PASS（formal-review-ready）。
 
+## v1.4 - 2026-08-25
+
+- 回应第四轮 AI 评审（90 分）唯一阻断项：site-overview.en.png 英文主标题右缘截断（"Twel…"）。
+- 修复：英文主标题改两行+字号 14→12（窄竖版画布安全边距），中英标题完整可读。
+- 重生成全部图件与 PDF，同步更新受影响的 a0-boards.en.pdf 首板 / proposal.en.html / visual/index.en.html 所引用图件。
+- manifest 哈希刷新 + 四门自检重跑 PASS（formal-review-ready）。
+
 ## v1.3 - 2026-08-25
 
 - 回应第三轮 AI 评审（75 分）三项必修：
