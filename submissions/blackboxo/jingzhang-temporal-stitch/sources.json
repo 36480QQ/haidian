@@ -1,0 +1,62 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "publication_date": "2026-05-09",
+      "usage": "Official announcement defining project scope, three levels, three key areas, deliverable requirements, and design depth standards."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks (agent.1-agent.6), scenario requirements, branding and identity requirements, and boundary clause."
+    },
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, schemas, coordinate policy, and visual style recommendations."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "usage": "Provisional site boundary and key area geometry derived from official announcement text descriptions and area constraints. Not official redline."
+    },
+    {
+      "id": "TEMPORAL-STITCH-CONCEPT",
+      "source_type": "agent_design_reasoning",
+      "usage": "Design concept 'Temporal Stitch' developed through analysis of railway-as-barrier urban condition, community feedback in Issue #2955, and gap analysis of 700+ existing submissions showing lack of interface-focused and time-dimension approaches."
+    },
+    {
+      "id": "ZHAN-TIANYOU-HISTORY",
+      "source_type": "official_public",
+      "url": "https://www.gov.cn/guoqing/2019-07/09/content_5407614.htm",
+      "publisher": "中国政府网",
+      "usage": "Historical reference for Zhan Tianyou and Beijing-Zhangjiakou Railway cultural narrative; timetable scheduling as cultural anchor for temporal programming concept."
+    },
+    {
+      "id": "HAIDIAN-POPULATION-DATA",
+      "source_type": "official_public",
+      "publisher": "北京市海淀区统计局",
+      "usage": "Background demographic data for estimating corridor-adjacent population (~450,000 residents in ~70 communities). Used for persona development and temporal demand modeling."
+    }
+  ]
+}

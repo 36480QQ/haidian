@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+    },
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "pending_official_data",
+      "statement": "Site boundary uses provisional polygon derived from announcement text. Official CAD/GIS boundary not yet publicly available.",
+      "impact": "All area calculations, ratios, and spatial claims are provisional and must be recalculated when official boundary is released."
+    },
+    {
+      "id": "A-TEMPORAL-001",
+      "status": "design_assumption",
+      "statement": "Temporal programming (multiple uses of same space at different times) is technically feasible with current IoT, sensor, and scheduling technology.",
+      "impact": "Core design concept depends on AI scheduling system; implementation requires validation through pilot testing at priority nodes."
+    },
+    {
+      "id": "A-TEMPORAL-002",
+      "status": "design_assumption",
+      "statement": "Community acceptance of time-shared public spaces can be achieved through phased introduction and participatory design.",
+      "impact": "Phase 1 focuses on low-friction temporal programs (markets, fitness) before introducing more complex scheduling in later phases."
+    },
+    {
+      "id": "A-CROSSING-001",
+      "status": "pending_professional_confirmation",
+      "statement": "9 east-west suture crossings are placed at locations where existing or planned road connections cross the railway park corridor. Exact positions require survey confirmation.",
+      "impact": "Node positions are conceptual; actual crossing feasibility depends on traffic engineering, utility conflicts, and land ownership."
+    },
+    {
+      "id": "A-POPULATION-001",
+      "status": "design_assumption",
+      "statement": "Approximately 450,000 residents in ~70 communities adjacent to the corridor would benefit from improved east-west connectivity.",
+      "impact": "Population estimate used for demand modeling and persona development; requires census verification."
+    },
+    {
+      "id": "A-HERITAGE-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Heritage protection zones along the railway corridor allow for interface improvements (ramps, lighting, signage) without violating conservation requirements.",
+      "impact": "Physical interventions at heritage-sensitive nodes (especially Node 07) require heritage impact assessment."
+    }
+  ]
+}
