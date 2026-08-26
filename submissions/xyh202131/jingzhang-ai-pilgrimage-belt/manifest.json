@@ -39,13 +39,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "491dcddd75196390e4cf2231739efbc88df04d21c6d42e25c2049c055af7f35e"
+      "sha256": "a7fee9055bc97d896d7858f9f299cfa4d63f2283e1b0cef80e2bc2044363035d"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "14c1f35a3b99bcf3e7c9d2f98f14590b4e5f980dd5745cc995723e2c76cdf0fc"
+      "sha256": "bab5253cf282962d0f80c862c1d382f69aa8fc0f7e3f2a46f89d56a53bd8e895"
     },
     {
       "path": "metrics.json",
@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "08ba4cb8d9282e6b73bd66970955021d121af236d3488f32c9eb329d6b8bdc69"
+      "sha256": "d1bb9315d4ee411c8ca34fb3366c6b963016ac3487baa3b8a1143e233b8af2e8"
     },
     {
       "path": "risk.json",
@@ -86,7 +86,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "0fce279d02a6e97d07e77f5ac669e4f1fe7cdc4c9df0fa196595c68b5fd3aafe"
+      "sha256": "dcf79eeaa14c4dce83b1532b4d62a40b1d6e398b70c3c1366c110cc1ec5bbbb5"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,7 +132,7 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "5f002a65473c6946f0290bfff429cabd4c791f75794c94257ffefe012f1ae3c2"
+      "sha256": "cd325808fe9b5c8027364f9bf55f21d4417db055bd7cf152e65d3ca8dcd2fde6"
     },
     {
       "path": "visual/assets/data-gap-closure-register.json",
@@ -243,13 +243,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "45795b2a1e49bcfa377085164daaa0b94ddce11430289d9343b0caf2d1fff8ca"
+      "sha256": "fad4dd172c10f9df2891971b3cab7101ba4fa18f46340e396ee585f866959252"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "2555146395c281ac97761255787c4189ebfe2848e0fb2f5cb48b77888bfeb6f8"
+      "sha256": "fd0667a54dc61ab98edcf96d2ae789f9e851838b6d3fa660e718c6c4fbc1926d"
     },
     {
       "path": "report/copyright_statement.md",
@@ -424,7 +424,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "90e803c39bb9ca88e949b296a03350d8da4f6767c9d6920fe18214887427068d"
+      "sha256": "ee913cdcafc39a2a28f833c9145c5bc51e949a5c2b60f367353a62c78a7362b8"
     },
     {
       "path": "report/proposal.en.html",
@@ -432,7 +432,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "04949da57798f9ab2babf5ef7c016fcce743e11ad1cac7725653db604e76c659"
+      "sha256": "4172081d50e0ac504b4094a05213de8c05af48e0702f5218d5db58fe6c2d9cec"
     },
     {
       "path": "visual/index.en.html",
@@ -944,7 +944,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "评审交接导航：三条时间阅读路线、唯一专业交接候选、证据权威顺序与固定事实边界；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review handoff navigation: three timed reading routes, one professional handoff candidate, evidence authority order and fixed fact boundaries; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "42d701857d0f5a1d59da3b6a71ed51e3e8dca434c20c254fe1a9bd16f01d9ae1"
+      "sha256": "fbd67e1ab42f237e69ec23e0f5b53d0e11dda566a1157bed23280fc92ea370b6"
     },
     {
       "path": "assets/figures/land-use-structure.svg",

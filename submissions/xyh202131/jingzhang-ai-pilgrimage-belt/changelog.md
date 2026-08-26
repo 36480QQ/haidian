@@ -1,5 +1,21 @@
 # 方案迭代记录 / Changelog
 
+## v61.0 - 2026-08-26
+
+**评审可见信息效率 / Reviewer-visible Information Efficiency**
+
+- 在 canonical `main` `48a4d3cfe6af8b0bd42964e5a38fbeae1698e702` 上确认前序 PR #4033 已合并、进入祖先链且同包开放 PR 为 0。前序 AI 评审为 93/100，唯一投稿方可控的持续弱项是“信息密度偏高、概念重复”，因此本轮只修复人类阅读层，不新增方案方向。
+- 先建立可复现 RED 合同：中文/英文正文分别为 51,149 / 135,381 字符；高频重复为“连续日常轨”12/9、“非 AI”45/60、`G0` 50/50、`NO-GO` 22/23、“专业交接”9/9。合同同时锁定 13 章顺序、全部图件位置、全部唯一 source/standard/depth/data/metric/assumption 标记和核心真实性句。
+- 将开篇、三层框架、指标、风险和后台追证改成“一处主答案 + 按需证据”，删除轮次说明和同义重复；正文降至 45,495 / 116,491 字符，分别缩短 11.0% / 14.0%。高频边界词全部低于预设上限，而来源、假设、指标、图件和 13 章结构零丢失。
+- 保持“双轨京张”、三种不可互换原型、普通—验证—故障—恢复、JZ-AIOS、12/8/3/36、G0/NO-GO、临时边界、现实结果 0、公共同权、权利边界和专业否决的实质等价；未改变 geometry、`metrics.json`、visual、图件、媒体或 A3/A0 页数。
+- 本轮无新媒体。后续独立人工双语确认、官方几何、现场基线、审批、现实责任接受、独立现实复测、法律/商标审查继续为外部开放条件，不以更短正文换取状态升级。
+
+- Confirmed on canonical `main` `48a4d3cfe6af8b0bd42964e5a38fbeae1698e702` that predecessor PR #4033 was merged and in the ancestry with zero same-package open PRs. Its 93/100 AI review left one contributor-controllable weakness: dense information and repeated concepts. This round therefore repairs only the human reading layer and adds no design direction.
+- Established a reproducible RED contract first. Chinese/English proposals measured 51,149 / 135,381 characters, with repeated key terms counted before editing. The contract simultaneously froze the 13-chapter order, every figure position, every unique source/standard/depth/data/metric/assumption marker, and the core truth-boundary sentences.
+- Re-edited the opening, scope framework, metrics, risk and back-stage trace as “one primary answer plus evidence on demand,” removing round meta-copy and synonymous restatement. The texts now measure 45,495 / 116,491 characters, 11.0% / 14.0% shorter. Repeated boundary terms stay below their preset ceilings while evidence markers, figures and formal structure remain complete.
+- Preserved Twin-Track Jing-Zhang, three non-interchangeable prototypes, Ordinary—Verification—Fault—Recovery, JZ-AIOS, 12/8/3/36, G0/NO-GO, provisional geometry, zero real outcomes, public parity, rights boundaries and professional veto with material bilingual equivalence. Geometry, `metrics.json`, visual, figures, media and A3/A0 page counts are unchanged.
+- No new media was added. Independent human bilingual confirmation, official geometry, field baselines, approvals, accepted real responsibility, independent real-world retesting and legal/trademark review remain external open conditions; shorter prose does not upgrade status.
+
 ## v60.0 - 2026-08-26
 
 **出版可访问性与 A0 远读重构 / Publication Accessibility and A0 Distance-read Recomposition**

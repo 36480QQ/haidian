@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R60.0",
+  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R61.0",
   "as_of": "2026-08-26",
   "audit_type": "contributor_editorial_review",
   "status": "contributor_side_material_equivalence_checked_human_confirmation_open",
@@ -89,6 +89,12 @@
       "evidence": "The silent MP4 uses bilingual on-frame titles; one shared VTT contains eight contiguous cues with Chinese first and English second; the Markdown transcript maps the same eight shots, method, silence, editorial-duration and truth boundaries; visual #s3 keeps the paired static storyboards visible beside native controls. Independent human confirmation remains open."
     },
     {
+      "check_id": "BME-12",
+      "topic": "information_efficiency_and_evidence_preservation",
+      "result": "pass_contributor_red_green_contract",
+      "evidence": "The Chinese/English human-reading layers are 11.0% / 14.0% shorter than the merged predecessor. Both retain the same 13 formal chapters, eight embedded figures, unique source/standard/depth/data/metric/assumption marker sets, frozen counts, state logic, public rights, status boundaries and professional veto. This is contributor editorial QA, not independent human confirmation."
+    },
+    {
       "check_id": "R59-RIGHTS-EXACT-PACKAGE",
       "status": "pass_contributor_audit",
       "evidence": "Both languages state that the current exact package may be reviewed, displayed and redistributed under component-specific terms, while independent legal/trademark review and future installation/professional authorization remain absent."
@@ -169,11 +175,11 @@
     }
   ],
   "formal_human_review_packet": {
-    "packet_id": "JZ-BILINGUAL-HUMAN-SAMPLE-R58-3",
+    "packet_id": "JZ-BILINGUAL-HUMAN-SAMPLE-R61-0",
     "status": "ready_for_independent_human_sampling_not_signed",
     "machine_supported_surface_facts": {
-      "proposal_line_count_zh": 653,
-      "proposal_line_count_en": 653,
+      "proposal_line_count_zh": 586,
+      "proposal_line_count_en": 586,
       "h2_count_zh": 14,
       "h2_count_en": 14,
       "h3_count_zh": 24,

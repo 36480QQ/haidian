@@ -16,6 +16,12 @@ The proposal makes one spatial decision: verification may not occupy the ground 
 - 3 分钟：解释普通—验证—故障—恢复，不把运行状态误写为成熟度。
 - 15 分钟：把主张追到 geometry、metrics、来源、权利和专业否决。
 
+## Information-efficiency repair / 信息效率修复
+
+R61 responds to the predecessor review's remaining contributor-controllable weakness: dense information and repeated concepts. The bilingual proposals now use one primary answer per concern and move evidence detail behind local backlinks. Their human-reading layers are 11.0% / 14.0% shorter than the merged baseline, while the 13 formal chapters, figure sequence, every unique evidence marker and all truth-boundary statements remain intact. This is contributor editorial QA, not a jury result or independent cold read.
+
+R61 只修复前序评审仍指出的投稿方可控弱项：信息密度和概念重复。双语正文现按“一项问题一个主答案、证据按需回链”组织，人类阅读层较合并基线缩短 11.0% / 14.0%；13 个正式章节、图件顺序、全部唯一证据标记和真实性边界均保留。本结论是投稿方编辑审查，不是评审结果或独立冷读。
+
 ## Publication access and distance reading / 出版访问与远读
 
 R60 repairs two reproducible reading failures without adding facts or pages. At 390px, all six destinations now appear as a complete 3-by-2 navigation grid in both visual counterparts, so no destination depends on discovering a horizontal scroll gesture. The four fixed-page PDFs retain 14+14 A3 pages and 8+8 A0 boards, but every page now exposes embedded Noto CJK semantic text for search and copying while preserving the deterministic visible raster labels. A0 boards 6-8 use a stronger distance-read hierarchy for implementation gates, evidence/rights boundaries and the single concluding ruling. The PDFs remain fixed-page visual publications and do not claim tagged PDF/UA or accessibility conformance; the paired offline HTML remains the complete keyboard and machine-readable route.
