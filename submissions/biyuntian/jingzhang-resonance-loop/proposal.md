@@ -23,7 +23,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 “京张共振环”以遗址公园公共验证线串联众智园、AI 原点与大钟寺；但本轮不把三处都当作同时启动的工程。首期深化只选择 **AI 原点 R04 开源知识前台**：在一条约120米的概念公共路线内，先核验场地与权利，再建立不登录、不断开的普通公共服务，最后才讨论边侧、可撤回的信息层。R04-A中央展示岛因压缩公共通行被否决，R04-B分散服务点因责任不可读退回修改，R04-C边侧知识前台进入概念深化 [metric:r04_spatial_alternative_count] [metric:r04_pilot_corridor_length_m]。
 
-![R04 开源知识前台五级尺度与100天限定样板](assets/figures/r04-pilot-atlas.svg)
+![R04 开源知识前台五级尺度与100天限定样板](assets/figures/r04-pilot-atlas.zh.png)
 
 首期样板的结论只在四道门全部由有权主体核验后才能进入下一阶段：G0场地/权利/无障碍，G1普通公共基线，G2有限试用责任，G3人类复核。任何一门未满足，方案不扩容，转回普通服务、修订或停止。现阶段为概念设计与合成规则验证，**0项现场结果**，不主张已取得许可、造价、建设或运营成效 [metric:r04_readiness_gate_count] [metric:r04_pilot_duration_days] [metric:r04_field_result_count]。
 
@@ -287,7 +287,7 @@ AI 原点的“开源知识前台”不以增加更多屏幕或服务点为目�
 
 ![R04 开源知识前台四联节点图：概念平面、公共基线与可拆信息层剖面、普通开放到暂停回归的四态规则，以及四条设计关系核验](assets/figures/r04-node-detail.svg)
 
-![R04 五级尺度与100天限定样板：从城市关系到1:50可逆节点，以120米概念公共路线、四个决策点、四道准入门和三份测量契约组织首期深化](assets/figures/r04-pilot-atlas.svg)
+![R04 五级尺度与100天限定样板：从城市关系到1:50可逆节点，以120米概念公共路线、四个决策点、四道准入门和三份测量契约组织首期深化](assets/figures/r04-pilot-atlas.zh.png)
 
 #### R04 首期样板：用一个可停止的试点证明空间是否值得深化
 

@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v1.13 - 2026-08-26
+
+- Rebuilt the Chinese review entry points as two locally rasterised, font-independent boards so critical Chinese titles, spatial decisions, R04 gates and AI+ scene commitments stay readable in an offline review environment.
+- Replaced the Chinese R04 atlas reference with a raster-safe counterpart and retained the complete Chinese narrative as the authoritative source text; no remote font or network asset is needed for the review boards.
+
 ## v1.12 - 2026-08-26
 
 - Added a bilingual Jingzhang Resonance Loop identity mark that translates the two-line / three-point concept into three visibly different spatial kits: Compute Garden, Knowledge Front Desk and Station-City Gate.
