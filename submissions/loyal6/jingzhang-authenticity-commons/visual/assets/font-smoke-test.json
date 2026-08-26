@@ -1,4 +1,6 @@
 {
+  "superseded_by": "font-coverage.json",
+  "note": "Historical two-entry probe configuration; current coverage checks four main HTML entries and two annexes.",
   "schema_version": "0.1.0",
   "font_family": "JZAC Noto Sans SC",
   "font_delivery": "one local visual/assets/cjk-font.css with an inline WOFF2 data URI shared by both Chinese entrypoints",

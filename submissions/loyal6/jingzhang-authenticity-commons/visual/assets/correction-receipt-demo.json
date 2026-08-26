@@ -10,6 +10,7 @@
     "test_material": "clearly marked synthetic AI reconstruction",
     "controlled_mislabel": "presented as an original Jing-Zhang historical record",
     "live_public_release": false,
+    "original_channel_ids": ["CHANNEL-SIGN-01", "CHANNEL-WEB-01"],
     "paper_case_id": "CASE-DEMO-001"
   },
   "verification_layers": {
@@ -78,11 +79,12 @@
     "disposition": "modify_and_retest_before_any_live_use"
   },
   "fail_closed_tests": [
-    {"removed_field": "accountable_role", "expected_state": "pause", "result": "pass"},
-    {"removed_field": "original_channels", "expected_state": "pause", "result": "pass"},
-    {"removed_field": "independent_reviewer", "expected_state": "pause", "result": "pass"},
-    {"removed_field": "asset_data_recovery_record", "expected_state": "retire", "result": "pass"}
+    {"removed_field": "accountable_role", "expected_state": "pause"},
+    {"removed_field": "original_channels", "expected_state": "pause"},
+    {"removed_field": "independent_reviewer", "expected_state": "pause"},
+    {"removed_field": "asset_data_recovery_record", "expected_state": "retire"}
   ],
+  "test_results_ref": "visual/assets/correction-engine-results.json",
   "limits": [
     "This is a controlled synthetic drill, not a real incident or measured service performance.",
     "No universal truth score or automated adverse decision is produced.",
