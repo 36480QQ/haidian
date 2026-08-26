@@ -584,7 +584,7 @@ Note: All items marked "pending on-site survey," "pending ownership verification
 | Barrier-free pass rate | N-08 Health | Pending accessibility review | Success rate (manual + sensor) | Monthly | Wheelchair/walker success ≥95% | Observation + complaint records |
 | Resident participation rate | N-09 Data | Total residents (pending) | Interactions / total residents | Monthly→Quarterly | Quarterly rate ≥10% | Community service platform |
 
-Note: All baselines marked "pending" must be surveyed within 3 months of project launch. Thresholds shown are recommendations; formal thresholds require tripartite confirmation (owner, operator, community representatives). Measurement methods follow data minimization principles — no personal identity data collected.
+Note: All baselines marked "pending" must be surveyed within 3 months of project launch. Thresholds shown are recommendations; formal thresholds require tripartite confirmation (owner, operator, community representatives). Measurement methods follow data minimization principles: no WiFi probes, Bluetooth beacons, or any device-identifier-reading methods (MAC address, IMEI, etc.) are used; no cross-temporal or cross-node individual correlation is performed. All pedestrian flow and dwell-time measurements use non-individual-traceable methods only (IR thermal imaging aggregate counting, video counting outputting headcount only without storing footage, manual sampling).
 
 ## Public Service Inclusivity and Failure Fallback Table
 
