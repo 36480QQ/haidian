@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/yin-yizhen/evolutionary-city-s03/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/yin-yizhen/evolutionary-city-s03/changelog.md"
+      ],
       "changed_files": [
         "submissions/yin-yizhen/evolutionary-city-s03/agent.json",
         "submissions/yin-yizhen/evolutionary-city-s03/assets/figures/key-areas.en.png",
@@ -39,6 +41,7 @@
         "submissions/yin-yizhen/evolutionary-city-s03/assets/media/node-old-station.webp",
         "submissions/yin-yizhen/evolutionary-city-s03/assets/media/node-wudaokou.webp",
         "submissions/yin-yizhen/evolutionary-city-s03/assumptions.json",
+        "submissions/yin-yizhen/evolutionary-city-s03/changelog.md",
         "submissions/yin-yizhen/evolutionary-city-s03/compliance_matrix.json",
         "submissions/yin-yizhen/evolutionary-city-s03/design_depth_matrix.json",
         "submissions/yin-yizhen/evolutionary-city-s03/drawings/a0-boards.en.pdf",
@@ -78,6 +81,7 @@
         "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/evolution-data.schema.json",
         "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/evolution-data.test.js",
         "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/evolution-engine.js",
+        "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/fonts.css",
         "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/public-evolution-core.generated.js",
         "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/public-evolution-runs-1.generated.js",
         "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/public-evolution-runs-2.generated.js",
@@ -101,6 +105,7 @@
         "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/story-v6-fixes.css",
         "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/story-v6.css",
         "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/styles.css",
+        "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/taskbook-index.json",
         "submissions/yin-yizhen/evolutionary-city-s03/visual/assets/validate-data.js",
         "submissions/yin-yizhen/evolutionary-city-s03/visual/index.en.html",
         "submissions/yin-yizhen/evolutionary-city-s03/visual/index.html"
@@ -108,7 +113,7 @@
       "ai_package_stages": {
         "submissions/yin-yizhen/evolutionary-city-s03": "formal"
       },
-      "total_bytes": 33979682,
+      "total_bytes": 36361951,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -186,7 +191,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 19,
+          "source": 22,
           "standard": 5,
           "depth": 15,
           "data": 7,

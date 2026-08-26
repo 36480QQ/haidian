@@ -15,7 +15,7 @@
     "model_family": "other",
     "model_detail": "Codex agent in the OpenAI GPT-5 family; exact runtime snapshot is environment-managed."
   },
-  "generated_at": "2026-08-12T13:42:32Z",
+  "generated_at": "2026-08-26T11:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a9dcc8d506476ef693803c77e4b67b966555ea8f3d6d55d33ae79ebcc7228114"
+      "sha256": "57f933a054161984d13b17214138a9451f48f40ca50dff0cd27d3ff3e228fc36"
     },
     {
       "path": "agent.json",
@@ -51,19 +51,19 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "3b5aa620fe4249a1abb055ef7caeeadb6a17af4a9b5b74fa49b8151e8fe4b10d"
+      "sha256": "b3153a0ee36043a68cd82fa3c667b671ed044ac3d838236fb3354777f20ca927"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2f30647aa943cf8b1c62493c80a2738127766ce7204fa6ed11bd30e95ccfeaed"
+      "sha256": "4773a82edc095f5d76e7fed057ce07d34fac432776f9114f98356de2964170f8"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3408a9f28202f861235ef545067173285da51dfd1b7e27b7473329847b4ca493"
+      "sha256": "c2876254496b0551285c47f3af2c04addcc69b2f412a551a1da0d9b82dabe468"
     },
     {
       "path": "standard_matrix.json",
@@ -82,7 +82,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "cd2c9876ab6fad4b7301a13999e065b16d37d966e142a25220e007256e6d6331"
+      "sha256": "b392555cf3d379900dd1c43592335e215a6568a2b8655465e3be208568beb845"
     },
     {
       "path": "report/narrative.md",
@@ -94,28 +94,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b2596cbb22e3daa346b524ecb5abce2c754ebe80959c833aa83017e2e05c41ba"
+      "sha256": "1bf222fcb01de4d061dac7b988cd3ed09b5ba0599f5d2fbd14f09386a6e1262b"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "44151feb72264ac7b767737915e7ddaf1a8cf918f9c92e21f419c5f660e358f2"
+      "sha256": "37d744d75f046ec707c95457b982b112f0ba5cb89abea6871bbac1604b893dc0"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4e8e2bbb420f9008ec320b739ffdc7ed27127f1b1a7588a1bd4d4c6bd4b1d6ca"
+      "sha256": "c5f40f9e70fff0b8c689f911c8d0d7230fc6c8b87068169444ddfc79f5e4ab87"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "05a021a9465453e0677ddcc7c779da740b14c263e3abf558cc1967f4f944bddc"
+      "sha256": "56d87b7191bee6fd54135a9e19ddccf47585ee27e9d2541e94ade9cff40b55ef"
     },
     {
       "path": "assets/media/cover.webp",
@@ -256,7 +256,7 @@
       "path": "visual/assets/story-app.js",
       "role": "asset",
       "required": false,
-      "sha256": "96fa3fe291026bc17624a8fefbea0ff9db459de8c785e7365b48219d7c35a732"
+      "sha256": "14b4418d017399db65dd64d3474daff59d1d84956ac65103da095205c0d92f26"
     },
     {
       "path": "visual/assets/story-styles.css",
@@ -468,12 +468,43 @@
       "sha256": "66b8ab3db46dca00224c0662890a69c1bc0244902aa3390574f1ec20bc4348ff"
     },
     {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": false,
+      "language": "zh",
+      "title_zh": "第 2 轮评审修订记录",
+      "title_en": "Round-two review repair log",
+      "sha256": "cf16be2df51ee02bec1e4470dbb86cab0b1a28ec68fc2bb7685801a0eecf43fc"
+    },
+    {
+      "path": "visual/assets/taskbook-index.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "agent.1—agent.6 任务书集中索引",
+      "title_en": "Central evidence index for agent.1-agent.6",
+      "description_zh": "集中映射三大定位、五大功能、三区两翼、区域协同、全球案例、场景画像、文化组件和现实实施门槛。",
+      "description_en": "Central mapping of positionings, functions, areas and wings, regional synergy, global cases, scenarios, cultural components and real-world gates.",
+      "sha256": "1381eb66806e29bf9c3e5fe50dc319e94c5461d71c24f8a4fb03843246b42d5c"
+    },
+    {
+      "path": "visual/assets/fonts.css",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "离线中文字体子集与开放字体许可",
+      "title_en": "Offline CJK glyph subsets and open font licence",
+      "description_zh": "Noto Sans SC 400/700 本方案字符子集，按 SIL 开放字体许可 1.1 离线嵌入，供无中文字体的评审环境正确渲染。",
+      "description_en": "Proposal-specific Noto Sans SC 400/700 glyph subsets embedded offline under SIL OFL 1.1 for reviewer environments without CJK fonts.",
+      "sha256": "1dcbaadeb796324811033114741ad48c51278294608a3b46e2a809e225d0daba"
+    },
+    {
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "24b55aa1640de5310b40dcd8a7a3f978e7fc2ab70dc5e500673f6b5cf4da6c94"
+      "sha256": "14ef842fd4797cad290ed323b36d02c38bf0b686d5bb4b469b1566a9b7edb5b5"
     },
     {
       "path": "report/proposal.en.html",
@@ -481,7 +512,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1a1485137a312747f2ab46a8907d8dbdab2bf860739f1e90f829295af3c7de30"
+      "sha256": "aa6718a236b7ea5b135fd07f4836f494cb7563cc4947e286b0d658f9cc5f47d9"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -489,7 +520,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "b985c6cfe5003f1784fe2bbc1d90c10cec8d35f812df3e58c473fa7402a28aea"
+      "sha256": "c0a11f46e891abed4d29f26c1863440ff4d4c2ea56cd38a8a13a1435a9d84570"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -497,7 +528,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "85d2aa32fa242a91970a64e6d213238663b50e06f876b5c5c77ec05d2e6908b6"
+      "sha256": "1e15bdf9164cbb7590bbfabc007769e6708052a15a6371d37e5159c93f2b0660"
     },
     {
       "path": "visual/index.en.html",
@@ -505,7 +536,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "902aaa3b3b6a4b3db6a1c242c2fbb5f2907c74c294383b91356f1b97f7fd2938"
+      "sha256": "a156daf739a5f89f1feb8bea365e77854ed52d7c92a244f24d6999072475fea7"
     },
     {
       "path": "assets/figures/key-areas.en.png",
