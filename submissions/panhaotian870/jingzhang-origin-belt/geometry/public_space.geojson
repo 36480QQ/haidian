@@ -13,10 +13,10 @@
       "id": "PS-HONOR-WALL-001",
       "properties": {
         "id": "PS-HONOR-WALL-001",
-        "layer": "public_space",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "space_type": "honor_display",
         "name_zh": "智能体贡献荣誉墙",
         "name_en": "Agent Contribution Honor Wall",
@@ -25,7 +25,10 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [116.348, 39.97]
+        "coordinates": [
+          116.348,
+          39.97
+        ]
       }
     },
     {
@@ -33,10 +36,10 @@
       "id": "PS-MILESTONE-001",
       "properties": {
         "id": "PS-MILESTONE-001",
-        "layer": "public_space",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "space_type": "milestone_plaza",
         "name_zh": "AI里程碑广场",
         "name_en": "AI Milestone Plaza",
@@ -45,7 +48,10 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [116.348, 39.955]
+        "coordinates": [
+          116.348,
+          39.955
+        ]
       }
     },
     {
@@ -53,10 +59,10 @@
       "id": "PS-LIGHT-TUNNEL-001",
       "properties": {
         "id": "PS-LIGHT-TUNNEL-001",
-        "layer": "public_space",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "PUBLIC_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "space_type": "immersive_experience",
         "name_zh": "源·光隧道",
         "name_en": "Origin Light Tunnel",
@@ -65,7 +71,10 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [116.348, 39.975]
+        "coordinates": [
+          116.348,
+          39.975
+        ]
       }
     }
   ]

@@ -13,10 +13,10 @@
       "id": "PHASE-001",
       "properties": {
         "id": "PHASE-001",
-        "layer": "phasing",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "phase_id": "phase_1_launch",
         "phase_name_zh": "一期：启动",
         "phase_name_en": "Phase 1: Launch",
@@ -28,11 +28,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.342, 39.9835],
-            [116.353, 39.9835],
-            [116.353, 39.9935],
-            [116.342, 39.9935],
-            [116.342, 39.9835]
+            [
+              116.342,
+              39.9835
+            ],
+            [
+              116.353,
+              39.9835
+            ],
+            [
+              116.353,
+              39.9935
+            ],
+            [
+              116.342,
+              39.9935
+            ],
+            [
+              116.342,
+              39.9835
+            ]
           ]
         ]
       }
@@ -42,10 +57,10 @@
       "id": "PHASE-002",
       "properties": {
         "id": "PHASE-002",
-        "layer": "phasing",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "phase_id": "phase_2_growth",
         "phase_name_zh": "二期：发展",
         "phase_name_en": "Phase 2: Growth",
@@ -57,11 +72,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.343, 40.0075],
-            [116.354, 40.0075],
-            [116.354, 40.026],
-            [116.343, 40.026],
-            [116.343, 40.0075]
+            [
+              116.343,
+              40.0075
+            ],
+            [
+              116.354,
+              40.0075
+            ],
+            [
+              116.354,
+              40.026
+            ],
+            [
+              116.343,
+              40.026
+            ],
+            [
+              116.343,
+              40.0075
+            ]
           ]
         ]
       }
@@ -71,10 +101,10 @@
       "id": "PHASE-003",
       "properties": {
         "id": "PHASE-003",
-        "layer": "phasing",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "PHASE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "phase_id": "phase_3_maturity",
         "phase_name_zh": "三期：成熟",
         "phase_name_en": "Phase 3: Maturity",
@@ -86,11 +116,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.342, 39.944],
-            [116.355, 39.944],
-            [116.355, 39.94984],
-            [116.342, 39.94984],
-            [116.342, 39.944]
+            [
+              116.342,
+              39.944
+            ],
+            [
+              116.355,
+              39.944
+            ],
+            [
+              116.355,
+              39.94984
+            ],
+            [
+              116.342,
+              39.94984
+            ],
+            [
+              116.342,
+              39.944
+            ]
           ]
         ]
       }

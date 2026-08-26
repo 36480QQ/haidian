@@ -13,10 +13,10 @@
       "id": "GS-HERITAGE-PARK-001",
       "properties": {
         "id": "GS-HERITAGE-PARK-001",
-        "layer": "green_space",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "green_type": "park",
         "name_zh": "京张铁路遗址公园",
         "name_en": "Jing-Zhang Railway Heritage Park",
@@ -26,11 +26,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.346, 39.939],
-            [116.350, 39.939],
-            [116.350, 40.0265],
-            [116.346, 40.0265],
-            [116.346, 39.939]
+            [
+              116.346,
+              39.939
+            ],
+            [
+              116.35,
+              39.939
+            ],
+            [
+              116.35,
+              40.0265
+            ],
+            [
+              116.346,
+              40.0265
+            ],
+            [
+              116.346,
+              39.939
+            ]
           ]
         ]
       }
@@ -40,10 +55,10 @@
       "id": "GS-PLAZA-001",
       "properties": {
         "id": "GS-PLAZA-001",
-        "layer": "green_space",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "green_type": "plaza",
         "name_zh": "源·智创新广场",
         "name_en": "Origin Intelligence Plaza",
@@ -53,11 +68,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.345, 39.987],
-            [116.350, 39.987],
-            [116.350, 39.990],
-            [116.345, 39.990],
-            [116.345, 39.987]
+            [
+              116.345,
+              39.987
+            ],
+            [
+              116.35,
+              39.987
+            ],
+            [
+              116.35,
+              39.99
+            ],
+            [
+              116.345,
+              39.99
+            ],
+            [
+              116.345,
+              39.987
+            ]
           ]
         ]
       }
@@ -67,10 +97,10 @@
       "id": "GS-THEME-ROBOT",
       "properties": {
         "id": "GS-THEME-ROBOT",
-        "layer": "green_space",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "green_type": "ai_theme_park",
         "name_zh": "源·机器人乐园",
         "name_en": "Origin·Robot Park",
@@ -85,11 +115,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.345, 40.005],
-            [116.352, 40.005],
-            [116.352, 40.008],
-            [116.345, 40.008],
-            [116.345, 40.005]
+            [
+              116.345,
+              40.005
+            ],
+            [
+              116.352,
+              40.005
+            ],
+            [
+              116.352,
+              40.008
+            ],
+            [
+              116.345,
+              40.008
+            ],
+            [
+              116.345,
+              40.005
+            ]
           ]
         ]
       }
@@ -99,10 +144,10 @@
       "id": "GS-THEME-ALGORITHM",
       "properties": {
         "id": "GS-THEME-ALGORITHM",
-        "layer": "green_space",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "green_type": "ai_theme_park",
         "name_zh": "源·算法花园",
         "name_en": "Origin·Algorithm Garden",
@@ -117,11 +162,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.346, 39.984],
-            [116.350, 39.984],
-            [116.350, 39.987],
-            [116.346, 39.987],
-            [116.346, 39.984]
+            [
+              116.346,
+              39.984
+            ],
+            [
+              116.35,
+              39.984
+            ],
+            [
+              116.35,
+              39.987
+            ],
+            [
+              116.346,
+              39.987
+            ],
+            [
+              116.346,
+              39.984
+            ]
           ]
         ]
       }
@@ -131,10 +191,10 @@
       "id": "GS-THEME-LLM",
       "properties": {
         "id": "GS-THEME-LLM",
-        "layer": "green_space",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "green_type": "ai_theme_park",
         "name_zh": "源·大模型广场",
         "name_en": "Origin·LLM Plaza",
@@ -149,11 +209,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.344, 39.950],
-            [116.350, 39.950],
-            [116.350, 39.953],
-            [116.344, 39.953],
-            [116.344, 39.950]
+            [
+              116.344,
+              39.95
+            ],
+            [
+              116.35,
+              39.95
+            ],
+            [
+              116.35,
+              39.953
+            ],
+            [
+              116.344,
+              39.953
+            ],
+            [
+              116.344,
+              39.95
+            ]
           ]
         ]
       }
@@ -163,10 +238,10 @@
       "id": "GS-THEME-OPENSOURCE",
       "properties": {
         "id": "GS-THEME-OPENSOURCE",
-        "layer": "green_space",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "GREEN_SPACE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "green_type": "ai_theme_park",
         "name_zh": "源·开源森林",
         "name_en": "Origin·Open Source Forest",
@@ -181,11 +256,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.335, 39.970],
-            [116.340, 39.970],
-            [116.340, 39.978],
-            [116.335, 39.978],
-            [116.335, 39.970]
+            [
+              116.335,
+              39.97
+            ],
+            [
+              116.34,
+              39.97
+            ],
+            [
+              116.34,
+              39.978
+            ],
+            [
+              116.335,
+              39.978
+            ],
+            [
+              116.335,
+              39.97
+            ]
           ]
         ]
       }

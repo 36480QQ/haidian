@@ -13,11 +13,11 @@
       "id": "BLD-TOWER-001",
       "properties": {
         "id": "BLD-TOWER-001",
-        "layer": "buildings",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
-        "building_type": "landmark",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
         "name_zh": "源·塔（Origin Tower）",
         "name_en": "Origin Tower",
         "concept_height_m": 100,
@@ -28,7 +28,10 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [116.3475, 39.9885]
+        "coordinates": [
+          116.3475,
+          39.9885
+        ]
       }
     },
     {
@@ -36,11 +39,11 @@
       "id": "BLD-GATE-001",
       "properties": {
         "id": "BLD-GATE-001",
-        "layer": "buildings",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
-        "building_type": "landmark",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
         "name_zh": "源·门（Origin Gate）",
         "name_en": "Origin Gate",
         "concept_height_m": 45,
@@ -51,7 +54,10 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [116.3485, 39.9469]
+        "coordinates": [
+          116.3485,
+          39.9469
+        ]
       }
     },
     {
@@ -59,11 +65,11 @@
       "id": "BLD-MONUMENT-001",
       "properties": {
         "id": "BLD-MONUMENT-001",
-        "layer": "buildings",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
-        "building_type": "landmark",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "cultural",
         "name_zh": "源·碑（Origin Monument）",
         "name_en": "Origin Monument",
         "concept_height_m": 15,
@@ -73,7 +79,10 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [116.3485, 40.0167]
+        "coordinates": [
+          116.3485,
+          40.0167
+        ]
       }
     },
     {
@@ -81,11 +90,11 @@
       "id": "BLD-INNOVATION-001",
       "properties": {
         "id": "BLD-INNOVATION-001",
-        "layer": "buildings",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
-        "building_type": "innovation_complex",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
+        "building_type": "mixed_use",
         "name_zh": "源·创综合体",
         "name_en": "Origin Innovation Complex",
         "concept_height_m": 60,
@@ -98,11 +107,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.349, 40.015],
-            [116.353, 40.015],
-            [116.353, 40.02],
-            [116.349, 40.02],
-            [116.349, 40.015]
+            [
+              116.349,
+              40.015
+            ],
+            [
+              116.353,
+              40.015
+            ],
+            [
+              116.353,
+              40.02
+            ],
+            [
+              116.349,
+              40.02
+            ],
+            [
+              116.349,
+              40.015
+            ]
           ]
         ]
       }

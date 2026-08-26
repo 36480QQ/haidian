@@ -13,8 +13,8 @@
       "id": "CONST-RAIL-001",
       "properties": {
         "id": "CONST-RAIL-001",
-        "layer": "constraints",
-        "source_type": "public_data",
+        "layer": "REGULATORY_CONTROL",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "high",
         "geometry_role": "provisional_constraint",
         "constraint_type": "railway_heritage",
@@ -27,11 +27,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.345, 39.939],
-            [116.351, 39.939],
-            [116.351, 40.0265],
-            [116.345, 40.0265],
-            [116.345, 39.939]
+            [
+              116.345,
+              39.939
+            ],
+            [
+              116.351,
+              39.939
+            ],
+            [
+              116.351,
+              40.0265
+            ],
+            [
+              116.345,
+              40.0265
+            ],
+            [
+              116.345,
+              39.939
+            ]
           ]
         ]
       }

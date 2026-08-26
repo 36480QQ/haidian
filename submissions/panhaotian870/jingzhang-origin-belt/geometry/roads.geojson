@@ -13,10 +13,10 @@
       "id": "RD-HERITAGE-PATH-001",
       "properties": {
         "id": "RD-HERITAGE-PATH-001",
-        "layer": "roads",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "road_type": "pedestrian_cycling",
         "name_zh": "开发者散步道",
         "name_en": "Developer Walk",
@@ -26,13 +26,34 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.348, 39.939],
-          [116.348, 39.94984],
-          [116.347, 39.965],
-          [116.347, 39.9835],
-          [116.347, 39.9935],
-          [116.348, 40.0075],
-          [116.348, 40.0265]
+          [
+            116.348,
+            39.939
+          ],
+          [
+            116.348,
+            39.94984
+          ],
+          [
+            116.347,
+            39.965
+          ],
+          [
+            116.347,
+            39.9835
+          ],
+          [
+            116.347,
+            39.9935
+          ],
+          [
+            116.348,
+            40.0075
+          ],
+          [
+            116.348,
+            40.0265
+          ]
         ]
       }
     },
@@ -41,10 +62,10 @@
       "id": "RD-STITCH-EW-001",
       "properties": {
         "id": "RD-STITCH-EW-001",
-        "layer": "roads",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "road_type": "pedestrian_cycling",
         "name_zh": "东西缝合通道1号",
         "name_en": "East-West Stitch 1",
@@ -53,8 +74,14 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.342, 39.9885],
-          [116.353, 39.9885]
+          [
+            116.342,
+            39.9885
+          ],
+          [
+            116.353,
+            39.9885
+          ]
         ]
       }
     },
@@ -63,10 +90,10 @@
       "id": "RD-STITCH-EW-002",
       "properties": {
         "id": "RD-STITCH-EW-002",
-        "layer": "roads",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "road_type": "pedestrian_cycling",
         "name_zh": "东西缝合通道2号",
         "name_en": "East-West Stitch 2",
@@ -75,8 +102,14 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.342, 39.9469],
-          [116.355, 39.9469]
+          [
+            116.342,
+            39.9469
+          ],
+          [
+            116.355,
+            39.9469
+          ]
         ]
       }
     },
@@ -85,10 +118,10 @@
       "id": "RD-MAIN-001",
       "properties": {
         "id": "RD-MAIN-001",
-        "layer": "roads",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "road_type": "urban_arterial",
         "name_zh": "创新大道",
         "name_en": "Innovation Boulevard",
@@ -97,8 +130,14 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.350, 39.939],
-          [116.350, 40.0265]
+          [
+            116.35,
+            39.939
+          ],
+          [
+            116.35,
+            40.0265
+          ]
         ]
       }
     },
@@ -107,10 +146,10 @@
       "id": "RD-APM-001",
       "properties": {
         "id": "RD-APM-001",
-        "layer": "roads",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "road_type": "automated_people_mover",
         "name_zh": "京张APM无人驾驶旅客捷运线",
         "name_en": "Jing-Zhang APM (Automated People Mover)",
@@ -124,22 +163,58 @@
         "operation_level": "GoA4_fully_autonomous",
         "train_config": "2-3 car EMU",
         "single_trip_time_min": 12,
-        "interchange_line13": ["dazhongsi_station", "wudaokou_station"]
+        "interchange_line13": [
+          "dazhongsi_station",
+          "wudaokou_station"
+        ]
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [116.349, 39.947],
-          [116.347, 39.955],
-          [116.345, 39.965],
-          [116.344, 39.975],
-          [116.345, 39.9835],
-          [116.344, 39.990],
-          [116.346, 39.9935],
-          [116.345, 40.000],
-          [116.346, 40.010],
-          [116.347, 40.020],
-          [116.348, 40.026]
+          [
+            116.349,
+            39.947
+          ],
+          [
+            116.347,
+            39.955
+          ],
+          [
+            116.345,
+            39.965
+          ],
+          [
+            116.344,
+            39.975
+          ],
+          [
+            116.345,
+            39.9835
+          ],
+          [
+            116.344,
+            39.99
+          ],
+          [
+            116.346,
+            39.9935
+          ],
+          [
+            116.345,
+            40.0
+          ],
+          [
+            116.346,
+            40.01
+          ],
+          [
+            116.347,
+            40.02
+          ],
+          [
+            116.348,
+            40.026
+          ]
         ]
       }
     }

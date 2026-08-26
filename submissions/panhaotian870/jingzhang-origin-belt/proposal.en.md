@@ -2,7 +2,7 @@
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 language: "en"
-translation_file: "proposal.en.md"
+translation_of: "proposal.md"
 package_type: "professional_design_package"
 package_state: "ready_for_review"
 submission_stage: "formal"

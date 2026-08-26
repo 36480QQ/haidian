@@ -13,10 +13,10 @@
       "id": "LU-RESEARCH-001",
       "properties": {
         "id": "LU-RESEARCH-001",
-        "layer": "land_use",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "land_use_code": "A35",
         "land_use_zh": "科研用地",
         "land_use_en": "Research Land",
@@ -28,11 +28,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.343, 40.015],
-            [116.3485, 40.015],
-            [116.3485, 40.026],
-            [116.343, 40.026],
-            [116.343, 40.015]
+            [
+              116.343,
+              40.015
+            ],
+            [
+              116.3485,
+              40.015
+            ],
+            [
+              116.3485,
+              40.026
+            ],
+            [
+              116.343,
+              40.026
+            ],
+            [
+              116.343,
+              40.015
+            ]
           ]
         ]
       }
@@ -42,10 +57,10 @@
       "id": "LU-INNOVATION-001",
       "properties": {
         "id": "LU-INNOVATION-001",
-        "layer": "land_use",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "land_use_code": "B29",
         "land_use_zh": "科研设计用地",
         "land_use_en": "R&D Design Land",
@@ -57,11 +72,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.342, 39.9835],
-            [116.3475, 39.9835],
-            [116.3475, 39.9935],
-            [116.342, 39.9935],
-            [116.342, 39.9835]
+            [
+              116.342,
+              39.9835
+            ],
+            [
+              116.3475,
+              39.9835
+            ],
+            [
+              116.3475,
+              39.9935
+            ],
+            [
+              116.342,
+              39.9935
+            ],
+            [
+              116.342,
+              39.9835
+            ]
           ]
         ]
       }
@@ -71,10 +101,10 @@
       "id": "LU-COMMERCIAL-001",
       "properties": {
         "id": "LU-COMMERCIAL-001",
-        "layer": "land_use",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "land_use_code": "B1",
         "land_use_zh": "商业用地",
         "land_use_en": "Commercial Land",
@@ -86,11 +116,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.342, 39.944],
-            [116.3485, 39.944],
-            [116.3485, 39.94984],
-            [116.342, 39.94984],
-            [116.342, 39.944]
+            [
+              116.342,
+              39.944
+            ],
+            [
+              116.3485,
+              39.944
+            ],
+            [
+              116.3485,
+              39.94984
+            ],
+            [
+              116.342,
+              39.94984
+            ],
+            [
+              116.342,
+              39.944
+            ]
           ]
         ]
       }
@@ -100,10 +145,10 @@
       "id": "LU-GREEN-001",
       "properties": {
         "id": "LU-GREEN-001",
-        "layer": "land_use",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "land_use_code": "G1",
         "land_use_zh": "公园绿地",
         "land_use_en": "Park Green Space",
@@ -114,11 +159,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.347, 39.939],
-            [116.349, 39.939],
-            [116.349, 40.0265],
-            [116.347, 40.0265],
-            [116.347, 39.939]
+            [
+              116.347,
+              39.939
+            ],
+            [
+              116.349,
+              39.939
+            ],
+            [
+              116.349,
+              40.0265
+            ],
+            [
+              116.347,
+              40.0265
+            ],
+            [
+              116.347,
+              39.939
+            ]
           ]
         ]
       }
@@ -128,10 +188,10 @@
       "id": "LU-RESIDENTIAL-001",
       "properties": {
         "id": "LU-RESIDENTIAL-001",
-        "layer": "land_use",
-        "source_type": "agent_design",
-        "confidence": "conceptual",
-        "geometry_role": "design_layer",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "low",
+        "geometry_role": "design_proposal",
         "land_use_code": "R2",
         "land_use_zh": "二类居住用地",
         "land_use_en": "Class II Residential Land",
@@ -142,11 +202,26 @@
         "type": "Polygon",
         "coordinates": [
           [
-            [116.349, 40.0075],
-            [116.354, 40.0075],
-            [116.354, 40.015],
-            [116.349, 40.015],
-            [116.349, 40.0075]
+            [
+              116.349,
+              40.0075
+            ],
+            [
+              116.354,
+              40.0075
+            ],
+            [
+              116.354,
+              40.015
+            ],
+            [
+              116.349,
+              40.015
+            ],
+            [
+              116.349,
+              40.0075
+            ]
           ]
         ]
       }

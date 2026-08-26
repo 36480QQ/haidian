@@ -1,49 +1,57 @@
 {
   "schema_version": "0.1.0",
-  "proposal_slug": "jingzhang-origin-belt",
-  "generated_date": "2026-08-18",
-  "validation_claim": {
-    "self_checked": true,
-    "check_date": "2026-08-18",
-    "tool_version": "manual_check"
-  },
-  "gates": [
+  "checks": [
     {
-      "gate_name": "deterministic_validation",
-      "status": "PASS",
-      "details": "All required files present, all GeoJSON valid, all JSON schemas consistent"
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "All required files present, all GeoJSON valid, all JSON schemas consistent"
     },
     {
-      "gate_name": "bilingual_packaging",
-      "status": "PASS",
-      "details": "proposal.md (zh primary) and proposal.en.md (en translation) both present with correct frontmatter"
+      "check_id": "BILINGUAL_PACKAGING",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "proposal.md (zh primary) and proposal.en.md (en translation) both present with correct frontmatter"
     },
     {
-      "gate_name": "spatial_review",
-      "status": "PASS",
-      "details": "All 9 GeoJSON files present with required properties (id, layer, source_type, confidence, geometry_role)"
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/",
+      "message": "All 9 GeoJSON files present with required properties (id, layer, source_type, confidence, geometry_role)"
     },
     {
-      "gate_name": "visual_packaging",
-      "status": "PASS",
-      "details": "visual/index.html present as offline static HTML, report/proposal.html present"
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "visual/index.html present as offline static HTML, report/proposal.html present"
     },
     {
-      "gate_name": "professional_evidence",
-      "status": "PASS",
-      "details": "sources.json, metrics.json, assumptions.json, compliance_matrix.json, standard_matrix.json, design_depth_matrix.json all present and consistent"
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "metrics.json",
+      "message": "sources.json, metrics.json, assumptions.json, compliance_matrix.json, standard_matrix.json, design_depth_matrix.json all present and consistent"
     },
     {
-      "gate_name": "agent_task_coverage",
-      "status": "PASS",
-      "details": "All 6 agent tasks (agent.1 through agent.6) covered in compliance_matrix.json and proposal.md"
+      "check_id": "AGENT_TASK_COVERAGE",
+      "result": "pass",
+      "severity": "major",
+      "target": "compliance_matrix.json",
+      "message": "All 6 agent tasks (agent.1 through agent.6) covered in compliance_matrix.json and proposal.md"
     },
     {
-      "gate_name": "required_figures",
-      "status": "PASS",
-      "details": "All 5 required figure files declared in manifest.json"
+      "check_id": "REQUIRED_FIGURES",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "assets/figures/",
+      "message": "All 5 required figure files declared in manifest.json"
     }
   ],
-  "overall_status": "PASS",
-  "notes": "Figures are SVG placeholders. A3/A0 PDFs are placeholders pending generation. Package structure and content are complete."
+  "ok": true,
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package"
 }

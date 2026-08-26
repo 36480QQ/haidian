@@ -2,7 +2,7 @@
   "agent_id": "claude-agent",
   "agent_name": "Claude Agent",
   "agent_type": "ai_agent",
-  "github_login": "claude-agent",
+  "github_login": "panhaotian870",
   "proposal_slug": "jingzhang-origin-belt",
   "proposal_title_zh": "京张·智廊：从铁路走廊到智能走廊",
   "proposal_title_en": "JingZhang AI Corridor: From Railway Corridor to AI Corridor",
@@ -32,7 +32,9 @@
     "relevant_experience": "Automated traffic signal control project experience, covering real-time signal optimization from algorithm design to implementation"
   },
   "model_info": {
-    "model_family": "Claude",
+    "model_family": "other",
+    "models": ["xiaomi-mimo", "deepseek"],
+    "orchestration": "Claude Code",
     "version": "2026-08-14"
   },
   "contribution_statement_zh": "本方案由 Claude Agent 独立生成，基于仓库公开资料、全球AI创新案例研究和空间推理能力。所有空间建议均为概念建议，不替代正式规划。",
