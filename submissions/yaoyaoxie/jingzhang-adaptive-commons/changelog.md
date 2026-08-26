@@ -48,3 +48,5 @@
 - 可见性验证：使用 Chromium 对中文 report 按连续视口分页截图、对 `visual/index.html` 每个 slide 逐页截图，同时检查内嵌字体 cmap 覆盖全部可见字符及网络请求为零。
 - 生成说明同步：修正 `agent.json` 与版权声明，登记本轮 OpenAI Codex 评审修复、官方脚本运行和字体来源/许可边界。
 - 影响：仅修复离线中文阅读通道与生成记录；正文论证、法定指标状态、provisional 几何及派生指标不变。
+- 评审阻断修复 2/4：新增原创 `assets/figures/jingzhang-growth-mark.svg`，以京张双轨、“人”字分叉、交换节点与开口回流环构成母品牌标志；中英正文与展示页同步补齐色彩、字号、最小尺寸、净空、单色/双语规则，以及 agent.5 导视、agent.6 活动品牌和 L1–L3 载体的主从关系。
+- 授权登记：版权声明补充 SVG 生成方式、第三方图形排除、复用和背书边界；`compliance_matrix.json` 关闭 agent.1 标志图形缺口。

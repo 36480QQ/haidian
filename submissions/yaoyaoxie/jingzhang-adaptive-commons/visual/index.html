@@ -257,6 +257,14 @@ td b{color:var(--ink)}
 .loop .box.decision{border-color:var(--copper);color:var(--copper);font-family:var(--font-mono)}
 .loop .arrow{color:var(--celadon)}
 
+.brand-system{display:grid;grid-template-columns:minmax(210px,.72fr) minmax(0,1.55fr);gap:var(--content-gap);align-items:center}
+.brand-mark{display:flex;align-items:center;justify-content:center;min-height:280px;border-right:1px solid var(--border);padding-right:var(--content-gap)}
+.brand-mark img{width:min(30vh,250px);height:auto}
+.brand-rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--element-gap)}
+.brand-rule{border-top:2px solid var(--copper);padding-top:.5em}
+.brand-rule p{font-size:var(--small-size);margin:.2em 0}
+@media(max-width:760px){.brand-system{grid-template-columns:1fr}.brand-mark{min-height:150px;border-right:0;border-bottom:1px solid var(--border);padding:0 0 var(--element-gap)}.brand-mark img{width:min(18vh,140px)}}
+
 /* 评审权重条 */
 .wbar{display:flex;flex-direction:column;gap:.4em}
 .wbar .row{display:flex;align-items:center;gap:.8em;font-size:var(--small-size)}
@@ -796,25 +804,19 @@ body.edit-active .slide{scroll-snap-align:none}
 <section class="slide">
   <div class="slide-content">
     <div class="kicker reveal" data-edit>13 · 品牌载体</div>
-    <h2 class="reveal" data-edit>从哪里来 · 如何认识当下 · 共同走向哪里</h2>
-    <div class="cards reveal">
-      <div class="card" style="border-top:3px solid var(--copper)">
-        <p class="role" data-edit>L1 · 大钟寺</p>
-        <h3 data-edit>京张记忆站台</h3>
-        <p data-edit>以铁路站台原型组织遗产展览、城市档案与公共活动——全线历史叙事的起点。</p>
-      </div>
-      <div class="card" style="border-top:3px solid var(--celadon)">
-        <p class="role" data-edit>L2 · 大钟寺</p>
-        <h3 data-edit>城市智能观测厅</h3>
-        <p data-edit>全线基线、试点成效与失败记录在此向市民公开——市民监督与城市研究的共同界面。</p>
-      </div>
-      <div class="card" style="border-top:3px solid var(--signal)">
-        <p class="role" data-edit>L3 · 大钟寺</p>
-        <h3 data-edit>未来公共生活厅</h3>
-        <p data-edit>国际论坛、成果发布、公众课程与社区活动——展示北京 AI 创新如何服务真实生活。</p>
+    <h2 class="reveal" data-edit>母品牌标志与视觉识别规则</h2>
+    <div class="brand-system reveal">
+      <div class="brand-mark"><img src="../assets/figures/jingzhang-growth-mark.svg" alt="京张生长网络原创标志：人字形双轨、交换节点与开口回流环"></div>
+      <div class="brand-rules">
+        <div class="brand-rule"><h3 data-edit>构成</h3><p data-edit>京张双轨 + “人”字分叉 + 育传用还节点回路；原创纯矢量几何。</p></div>
+        <div class="brand-rule"><h3 data-edit>色彩</h3><p data-edit>墨蓝主轴、铜金交换、青瓷回流、信号蓝生长接口；单色统一黑或白。</p></div>
+        <div class="brand-rule"><h3 data-edit>尺寸与留白</h3><p data-edit>印刷 ≥18 mm，屏幕 ≥72 px；净空 ≥ 中心节点直径；禁止拉伸、旋转、阴影。</p></div>
+        <div class="brand-rule"><h3 data-edit>双语字阶</h3><p data-edit>主标题 Noto Serif CJK SC 700；副标题 IBM Plex Mono 500；约 3:1。</p></div>
+        <div class="brand-rule"><h3 data-edit>agent.5 导视</h3><p data-edit>只继承轨道线、节点与色彩层级作为导向语法，服从母标。</p></div>
+        <div class="brand-rule"><h3 data-edit>agent.6 活动</h3><p data-edit>母标 + 活动名称 + 年份；L1–L3 仅以名称与节点色区分，不另造主标。</p></div>
       </div>
     </div>
-    <p class="small muted reveal" data-edit style="margin-top:var(--element-gap)">品牌性来自独特的城市公共功能，不依赖超尺度造型。</p>
+    <p class="small muted reveal" data-edit style="margin-top:var(--element-gap)">从哪里来 · 如何认识当下 · 共同走向哪里：L1 京张记忆站台、L2 城市智能观测厅、L3 未来公共生活厅共同承载母品牌，不各自建立竞争性标识。</p>
   </div>
 </section>
 

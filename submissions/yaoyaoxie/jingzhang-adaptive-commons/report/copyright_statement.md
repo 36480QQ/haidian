@@ -10,8 +10,9 @@
 
 ## 2. 素材清权
 
-- 五张核心图（`assets/figures/*.png`）与展示页（`visual/index.html`）均为本包自产：由项目脚本（`figures/scripts/`、`tools/build_geometry.py`，均为项目根过程脚本，未随包提交）从本包 GeoJSON 与指标派生绘制，不含第三方图像素材。
+- 五张核心图（`assets/figures/*.png`）、原创标志（`assets/figures/jingzhang-growth-mark.svg`）与展示页（`visual/index.html`）均为本包自产。图件由项目脚本（`figures/scripts/`、`tools/build_geometry.py`，均为项目根过程脚本，未随包提交）从本包 GeoJSON 与指标派生绘制；标志由 OpenAI Codex 以基础 SVG path/circle 原创绘制，将京张双轨、“人”字分叉、交换节点与开口回流环组合为纯几何图形，不含脚本、外链、嵌入资源或第三方图形。
 - 未使用商业地图底图、新闻图片、网络图片、第三方 Logo、肖像或论文插图。
+- 原创标志随本投稿文本与图件供征集评审和公开讨论使用；不得暗示主办方、铁路机构或其他组织背书，不得将字体名称或第三方商标并入标志。第三方复用须保留本声明，并自行核对名称与商标冲突。
 - 全球案例与学术文献仅以文字形式引用结论并登记来源（`sources.json`），未复制其图表。
 - 字体：中文报告与展示页共同使用 Noto Serif CJK SC 2.003 可变字体的本地子集，标签使用 IBM Plex Mono 本地子集；两者均按 SIL Open Font License 1.1 使用。Noto 原字体来自官方 `notofonts/noto-cjk` 仓库（`Serif/Variable/TTF/NotoSerifCJKsc-VF.ttf`），字体元数据登记 OFL 1.1 与许可链接；本项目使用 fontTools 按中英报告和展示页实际字符生成 WOFF2 子集，以 base64 data-URI 内嵌于 `visual/assets/fonts.css`。`report/proposal*.html` 仅链接该包内 CSS，所有页面零远程请求；字体名称仅用于标识原字体来源，不主张字体商标或原作权。
 

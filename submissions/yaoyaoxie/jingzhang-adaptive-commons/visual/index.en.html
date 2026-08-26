@@ -257,6 +257,14 @@ td b{color:var(--ink)}
 .loop .box.decision{border-color:var(--copper);color:var(--copper);font-family:var(--font-mono)}
 .loop .arrow{color:var(--celadon)}
 
+.brand-system{display:grid;grid-template-columns:minmax(210px,.72fr) minmax(0,1.55fr);gap:var(--content-gap);align-items:center}
+.brand-mark{display:flex;align-items:center;justify-content:center;min-height:280px;border-right:1px solid var(--border);padding-right:var(--content-gap)}
+.brand-mark img{width:min(30vh,250px);height:auto}
+.brand-rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--element-gap)}
+.brand-rule{border-top:2px solid var(--copper);padding-top:.5em}
+.brand-rule p{font-size:var(--small-size);margin:.2em 0}
+@media(max-width:760px){.brand-system{grid-template-columns:1fr}.brand-mark{min-height:150px;border-right:0;border-bottom:1px solid var(--border);padding:0 0 var(--element-gap)}.brand-mark img{width:min(18vh,140px)}}
+
 /* review weight bars */
 .wbar{display:flex;flex-direction:column;gap:.4em}
 .wbar .row{display:flex;align-items:center;gap:.8em;font-size:var(--small-size)}
@@ -796,25 +804,19 @@ body.edit-active .slide{scroll-snap-align:none}
 <section class="slide">
   <div class="slide-content">
     <div class="kicker reveal" data-edit>13 · Brand Anchors</div>
-    <h2 class="reveal" data-edit>Where we come from · how we read the present · where we go together</h2>
-    <div class="cards reveal">
-      <div class="card" style="border-top:3px solid var(--copper)">
-        <p class="role" data-edit>L1 · Dazhongsi</p>
-        <h3 data-edit>Jing-Zhang memory platform</h3>
-        <p data-edit>Heritage exhibitions, urban archives, and public events organized around the railway platform prototype — the starting point of the corridor-wide historical narrative.</p>
-      </div>
-      <div class="card" style="border-top:3px solid var(--celadon)">
-        <p class="role" data-edit>L2 · Dazhongsi</p>
-        <h3 data-edit>Urban intelligence observatory</h3>
-        <p data-edit>Corridor-wide baselines, pilot outcomes, and failure records made public here — a shared interface for civic oversight and urban research.</p>
-      </div>
-      <div class="card" style="border-top:3px solid var(--signal)">
-        <p class="role" data-edit>L3 · Dazhongsi</p>
-        <h3 data-edit>Future public life hall</h3>
-        <p data-edit>International forums, results releases, public courses, and community events — showing how Beijing's AI innovation serves real life.</p>
+    <h2 class="reveal" data-edit>Master mark and visual identity rules</h2>
+    <div class="brand-system reveal">
+      <div class="brand-mark"><img src="../assets/figures/jingzhang-growth-mark.svg" alt="Original Jingzhang Growth Network mark: branching double rails, exchange nodes, and an open return loop"></div>
+      <div class="brand-rules">
+        <div class="brand-rule"><h3 data-edit>Construction</h3><p data-edit>Jing-Zhang double rails + 人 branching form + Nurture–Transfer–Use–Return node loop; original vector geometry.</p></div>
+        <div class="brand-rule"><h3 data-edit>Color</h3><p data-edit>Ink axis, copper exchange, celadon return, signal-blue growth interface; monochrome is all black or all white.</p></div>
+        <div class="brand-rule"><h3 data-edit>Size &amp; clear space</h3><p data-edit>Print ≥18 mm; screen ≥72 px; clear space ≥ central node diameter; no stretch, rotation, or shadow.</p></div>
+        <div class="brand-rule"><h3 data-edit>Bilingual hierarchy</h3><p data-edit>Primary: Noto Serif CJK SC 700; secondary: IBM Plex Mono 500; about 3:1.</p></div>
+        <div class="brand-rule"><h3 data-edit>agent.5 wayfinding</h3><p data-edit>Inherits rail lines, nodes, and color hierarchy only as directional syntax; subordinate to the master mark.</p></div>
+        <div class="brand-rule"><h3 data-edit>agent.6 events</h3><p data-edit>Master mark + event name + year; L1–L3 use names and node colors, never separate master logos.</p></div>
       </div>
     </div>
-    <p class="small muted reveal" data-edit style="margin-top:var(--element-gap)">The brand comes from unique civic functions, not oversized forms.</p>
+    <p class="small muted reveal" data-edit style="margin-top:var(--element-gap)">Where we come from · how we read the present · where we go together: L1 Memory Platform, L2 Urban Intelligence Observatory, and L3 Future Public Life Hall carry one master identity, not competing marks.</p>
   </div>
 </section>
 
