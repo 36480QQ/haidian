@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "This proposal identifies the 9km Jingzhang Railway Heritage Park corridor's urban interfaces as the core design object, establishing 9 temporal suture nodes that employ a 4-layer AI closed loop (diagnosis-generation-scheduling-monitoring) to repair boundary conditions and orchestrate temporal rhythms, enabling the same interface to serve different communities at different times in response to the century-old east-west urban severance."
+summary: "This proposal takes the urban interface stitching along the 9 km corridor of the Jing-Zhang Railway Heritage Park as its core design object. It establishes 9 spatiotemporal suture nodes and implements boundary repair and temporal rhythm orchestration through a four-layer AI closed loop (diagnosis–generation–orchestration–monitoring), enabling the same interface to serve different populations at different times of day, responding to the east-west urban fracture caused by a century of railway severance."
 tracks: ["ai-traffic-walkability", "civic-agent-governance", "enterprise-services-ecosystem"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "ai-health-service-navigation", "ai-cultural-guide"]
 ---
@@ -15,416 +15,590 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## Design Basis and Data Inventory
 
-This proposal is primarily based on the "Centennial Jing-Zhang AI Innovation Belt Urban Design International Open Call Prequalification Announcement" issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, with the provisional boundaries, key areas, enumerations, metrics, and source registries maintained in `brief/site-package/` as machine-readable evidence [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. All spatial judgments rely on the evidence chain constructed from `design_brief.json`, `agent_taskbook.json`, `allowed_design_space.json`, `sources.json`, and `data/source_registry.json`. Design depth follows regulatory detailed plan urban design depth requirements, with text narration cross-verified against GeoJSON, metrics tables, drawings, and HTML presentations [depth:existing_conditions_diagnosis].
+This proposal takes the *Pre-qualification Announcement for the International Scheme Solicitation for Urban Design of the Centennial Jing-Zhang AI Innovation Belt*, issued by the Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, as its primary basis, supplemented by the machine-readable provisional rough boundaries, key areas, enumerations, metrics, and source inventories maintained by the maintainers in `brief/site-package/` [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. All spatial judgments rely on the evidence chain constructed from `design_brief.json`, `agent_taskbook.json`, `allowed_design_space.json`, `sources.json`, and `data/source_registry.json`. Design depth follows the requirements for urban design at the regulatory detailed planning level; textual narrative and GeoJSON, metric tables, drawings, and HTML presentations cross-reference each other [depth:existing_conditions_diagnosis].
 
-Data usage boundaries: `data/source_registry.json` registers usage limitations for public, cleared, and provisional materials. There are 7 formal-ready sources, 1 background source, and 1 provisional-only source. This proposal does not upgrade background_only or provisional_only materials to official boundaries, statutory controls, or implementation commitments [source:SOURCE-REGISTRY].
+Data usage boundaries: `data/source_registry.json` registers usage restrictions for public, rights-cleared, and provisional data. Seven datasets are available for formal use, one for background reference, and one for provisional use only. This proposal does not elevate background_only or provisional_only data to official boundaries, statutory controls, or implementation commitments [source:SOURCE-REGISTRY].
 
-This proposal uses provisional rough boundaries from `brief/site-package/geometry/provisional_boundaries.geojson` to generate the design. Both `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` are marked as `provisional_constraint` with `official_boundary=false`, used only for proposal generation, self-checking, and visual discussion. Full recalculation is required when official precise boundaries are released [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm].
+This proposal uses the provisional rough boundaries in `brief/site-package/geometry/provisional_boundaries.geojson` to generate the design scheme. Both `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` are annotated as `provisional_constraint` with `official_boundary=false`, used solely for scheme generation, self-checking, and visualization discussion. A comprehensive recalculation is required once official precise boundaries are released [data:geometry/site_boundary.geojson#SITE-001] [metric:site_area_sqm].
 
-![Jing-Zhang Temporal Stitch Overall Concept and Evidence Chain](assets/figures/site-overview.png)
+![Jing-Zhang Temporal Stitch overall concept and evidence chain](assets/figures/site-overview.png)
 
 ## Core Design Proposition: Why Stitching
 
-Since the Jingzhang Railway opened in 1909, it has divided the northwestern Haidian district into eastern and western halves for over a century. In 2026, the Jingzhang Heritage Park opened, reconnecting north-south public life through a 9km green corridor; however, the boundary conditions on both sides of the park — walls, grade changes, road cross-sections, visual blind spots, management fences — still block east-west daily movement for approximately 70 communities and 450,000 residents. The core proposition of this proposal is: **do not design the park interior; focus exclusively on designing every interface between park and city**, introducing a temporal dimension so the same interface serves different communities at different times [depth:overall_spatial_structure].
+Since the Jing-Zhang Railway commenced service in 1909, it has divided Haidian's northwestern area into eastern and western halves for over a century. In 2026, the Jing-Zhang Heritage Park opened, and a 9 km green corridor reconnected north-south public life; however, the boundary conditions on both sides of the park—walls, grade differences, road cross-sections, visual blind spots, and management fences—continue to obstruct east-west daily movement of numerous community residents on both sides (the number of communities on both sides and the affected population are design assumptions based on extrapolation from the resident population of streets along the corridor in the publicly available Haidian District Statistical Yearbook 2023; specific numbers require confirmation through community census; see assumptions.json#ASM-008). The core proposition of this proposal is: **not to design the park interior, but to focus on designing every interface between the park and the city**, introducing a temporal dimension so that the same interface serves different populations at different times of day [depth:overall_spatial_structure].
 
-This is not an abstract concept. From Wudaokou to Dazhongsi, pedestrian accessibility between communities on either side of the park decreases by an average of 37% (based on OpenStreetMap network topology analysis; to be precisely recalculated when official data is available). Every street opening blocked by walls, slopes, or fences is a concrete spatial design object that can be repaired.
+This is not an abstract concept. From Wudaokou to Dazhongsi, pedestrian accessibility for communities on both sides of the park is significantly reduced (the specific reduction magnitude requires determination through formal network analysis; preliminary estimates are based on OpenStreetMap 2024-06 road network data and QGIS Network Analysis shortest path analysis, data license ODbL, analysis scope covering residential-to-commercial/public-service facility paths within a 500 m buffer on both sides of the park; this analysis has not been independently reviewed and precise values await formal data completion for confirmation). Every street opening blocked by walls, slopes, or railings is a specific spatial design object that can be repaired.
 
-## Three-Level Scope Framework
+## Three-Level Scope Working Framework
 
-The proposal is organized according to the three levels defined in the announcement [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]:
+The scheme is organized according to the three levels specified in the announcement [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]:
 
 | Level | Area | Design Question | Our Response |
 | --- | --- | --- | --- |
-| Coordinated Research Area | 43.6 km² | AI industry ecosystem and innovation chain | Establish "suture economics" — innovation spillover value generated by interface repair |
-| Overall Design Area | 11.4 km² | Urban renewal and spatial structure | 9 suture nodes + triple temporal scheduling system |
-| Key Detailed Areas | 368.4 ha | Detailed design depth | Interface repair detailed drawings and temporal matrices for three key areas |
+| Coordinated Research Scope | 43.6 km² | AI industrial ecology and innovation chain | Establishing "suture economics"—innovation spillover value generated by interface repair |
+| Overall Design Scope | 11.4 km² | Urban renewal and spatial structure | 9 suture nodes + triple temporal orchestration system |
+| Key Area Scope | 368.4 ha | Detailed design depth | Interface repair detail drawings and temporal matrices for three key areas |
 
-The three levels are bounded by provisional boundaries in [data:geometry/site_boundary.geojson#SITE-001] and [data:geometry/key_areas.geojson#PROV-KEY-001]. Coordinated research determines innovation chain and urban form judgments, overall design translates judgments into renewal projects and spatial structure, and key area design verifies implementability of specific plots, buildings, transportation, and public spaces [depth:three_level_scope_framework].
+The three-level scope is delineated by the provisional boundaries of [data:geometry/site_boundary.geojson#SITE-001] and [data:geometry/key_areas.geojson#PROV-KEY-001]. Coordinated research determines innovation chain and urban morphology judgments; overall design translates judgments into renewal projects and spatial structure; key areas verify implementability of specific parcels, buildings, transportation, and public space [depth:three_level_scope_framework].
 
-![Three-Level Scope and Suture Node Distribution](assets/figures/land-use-structure.png)
+![Three-level scope and suture node distribution](assets/figures/land-use-structure.png)
 
-## agent.1 Overall Concept and Functional Coordination Design
+## agent.1 Overall Concept and Functional Coordination Design for the Belt
 
 ### Naming System and Overall Concept
 
-**Primary Name**: 京张缝合·时间织补 / Jing-Zhang Temporal Stitch
+**Primary Name**: Jing-Zhang Temporal Stitch (京张缝合·时间织补)
 
-**Naming Logic**: "Suture" (缝合) responds to the spatial fact of a century of railway severance — it is a precise operation in urban design professional terminology; "Temporal Stitch" (时间织补) introduces the fourth dimension, indicating that AI's core value is not only optimizing space but orchestrating time. The naming system culturally echoes Zhan Tianyou's creation of China's first autonomous train timetable — a hundred years ago, temporal scheduling made the railway run; today, temporal scheduling enables repaired urban interfaces to function efficiently [source:AGENT-TASKBOOK].
+**Naming Logic**: "Stitch" (缝合) responds to the spatial fact of a century of railway severance—a precise operation in urban design professional terminology; "Temporal Weave" (时间织补) introduces the fourth dimension, indicating that AI's core value lies not only in optimizing space but in orchestrating time. The naming system forms a cultural resonance with the historical actions of Zhan Tianyou in constructing and operating the Jing-Zhang Railway—a century ago, temporal orchestration made the railway run; a century later, temporal orchestration makes repaired urban interfaces operate efficiently [source:AGENT-TASKBOOK] [source:ZHAN-TIANYOU-RAILWAY-HISTORY].
 
-**English Name**: Jing-Zhang Temporal Stitch — "temporal" simultaneously means "relating to time" and "relating to the temples (critical nodes)," implying each suture point is a critical acupoint of the urban organism.
+**English Name**: Jing-Zhang Temporal Stitch — "temporal" simultaneously means "of time" and "temple/critical node," implying that each suture point is a critical acupoint of the urban organism.
 
-**Logo Direction** (conceptual suggestion for professional teams to develop): Based on the "I-beam" cross-section of railway tracks, with both ends curving inward to form a suture needle shape, with clock hands embedded in the needle's eye. Colors derived from a gradient between Jingzhang Railway stone gray and Haidian tech blue.
+**Logo Direction** (conceptual proposal, for professional team refinement): Based on the "I-beam" cross-section of railway tracks, with both ends curved inward to form the shape of a stitching needle, embedding clock-hand imagery in the needle's eye. Colors drawn from Jing-Zhang Railway stone gray and Haidian technology blue gradient.
 
-### Three Positioning Responses
+### Three Major Positioning Responses
 
-| Positioning | Our Interpretation | Spatial Anchor |
+| Positioning | Our Interpretation | Spatial Anchoring |
 | --- | --- | --- |
-| Centennial Jingzhang Cultural Belt | Railway severance → suture repair → temporal scheduling cultural narrative | Memory Anchor node |
-| Metropolitan AI Life Experience Belt | 24-hour full-time urban interface services | 9-node Day Clock system |
-| AI Integration Innovation Belt | AI diagnosis + generation + scheduling + monitoring 4-layer closed loop | Data Suture node |
+| Centennial Jing-Zhang Cultural Belt | Railway severance → suture repair → temporal orchestration cultural narrative | Memory Anchor nodes |
+| Metropolitan AI Living Experience Belt | 24-hour full-cycle urban interface services | 9-node Day Clock system |
+| AI Convergence Innovation Belt | AI diagnosis + generation + orchestration + monitoring four-layer closed loop | Data Suture nodes |
 
-### Five Functions Response
+### Five Major Functional Responses
 
-1. **AI Full-Stack Autonomous Innovation System** → Zhongzhiyuan full-stack testing and boundary diagnosis AI model training
+1. **AI Full-Stack Indigenous Innovation System** → Zhongzhi Park full-stack testing and boundary diagnosis AI model training
 2. **World-Class AI Innovation Ecosystem** → 9-node open ecosystem, each node an independently operable innovation unit
-3. **AI+ Scenario Empowerment Paradigm** → Interface repair scenarios ARE AI deployment scenarios (diagnosis/generation/scheduling/monitoring)
+3. **AI+ Scenario Empowerment New Paradigm** → Interface repair scenarios serve as AI deployment scenarios (diagnosis/generation/scheduling/monitoring)
 4. **Intelligent AI Vibrant City** → Triple clock system keeps urban interfaces active around the clock
-5. **AI Governance Global Voice** → Ethical framework and open protocols for AI-orchestrated public spaces
+5. **AI Governance Global Discourse Power** → Ethical framework and open protocol for public space AI orchestration
 
-### Three Areas Two Wings Coordination
+### Three-District Two-Wing Coordination
 
-The three areas achieve east-west connectivity through suture nodes; the two wings achieve functional complementarity through temporal scheduling: Zhongzhiyuan's daytime research activities complement nighttime community openings, AI Origin Community's weekday incubation complements weekend public experiences, and Dazhongsi's business activities and cultural activities operate in staggered schedules [data:geometry/key_areas.geojson#PROV-KEY-001].
+The three districts achieve east-west connectivity through suture nodes, while the two wings achieve functional complementarity through temporal orchestration [data:geometry/key_areas.geojson#PROV-KEY-001]:
+
+| Coordination Unit | Object | Resource Flow | Spatial Interface | Cooperation Mechanism (non-binding) |
+| --- | --- | --- | --- | --- |
+| **Three-District Linkage** | | | | |
+| Zhongzhi Park ↔ AI Origin | Full-stack innovation enterprises ↔ university incubation teams | Computing power sharing, model open-sourcing | Knowledge Permeation Node → Entrepreneurship Incubation Node | Joint laboratory agreement (pending negotiation) |
+| AI Origin ↔ Dazhongsi | Transfer teams ↔ commercial operators | Product roadshows, scenario pilots | Tidal Interlace Node → Commercial Suture Node | Scenario open-day mechanism |
+| Zhongzhi Park ↔ Dazhongsi | Research outputs ↔ market demand | Technology transfer, joint development | Data Suture Node network | Annual technology matching conference |
+| **Two Wings** | | | | |
+| Xiaoyue River Scenario Empowerment Wing | Qinghe riverside communities, ecological corridor | Ecological monitoring data, community feedback | Nature Permeation Node, Health Suture Node | Community co-governance committee (recommended) |
+| Zhongguancun Technology Service Wing | Zhongguancun enterprises, service platforms | Technology services, talent pipeline | Entrepreneurship Incubation Node, Knowledge Permeation Node | Resident enterprise technology service agreements |
+| **External Area Coordination** | | | | |
+| Beiwei Community | Surrounding residential community residents | Public service sharing, community feedback | Intergenerational Weave Node, Health Suture Node | Regular interface via community council |
+| Future Science City | Changping research institutions | Technology cooperation, talent exchange | No direct spatial interface | Online collaboration platform (recommended) |
+| Huairou Science City | Large-scale scientific facilities/fundamental research | Data sharing, joint projects | No direct spatial interface | Jing-Zhang Corridor joint seminar |
+| Economic Development Zone | Industrialization enterprises | Technology commercialization, product deployment | No direct spatial interface | Technology matching platform |
+| Beijing-Tianjin-Hebei | Tianjin/Hebei AI industry clusters | Regional innovation network | Jing-Zhang high-speed rail transport linkage | Regional AI Innovation Alliance (proposed) |
+
+Two-Wing definition: The Xiaoyue River Scenario Empowerment Wing is oriented along the Qinghe ecological corridor, connecting surrounding communities' health, education, and ecological needs through Nature Permeation Nodes and Health Suture Nodes; the Zhongguancun Technology Service Wing uses Zhongguancun Software Park and university science parks as hinterland, exporting technology services and innovation resources through Knowledge Permeation Nodes and Entrepreneurship Incubation Nodes. The two wings do not create new spatial redlines but leverage existing node functional radiation to achieve coordination.
 
 ### Overall Spatial Structure
 
-This proposal presents the "One Corridor, Nine Needles, Three Clocks" spatial organization concept (conceptual suggestion for professional teams to develop):
+This proposal puts forward the spatial organization concept of "One Corridor, Nine Needles, Three Clocks in Coordination" (conceptual proposal, for professional team refinement):
 
-- **One Corridor**: The 9km Jingzhang Heritage Park linear corridor (the completed public space spine)
+- **One Corridor**: The 9 km Jing-Zhang Heritage Park linear corridor (the already-built public space main axis)
 - **Nine Needles**: 9 suture nodes distributed at urban interface fracture points on both sides of the corridor
-- **Three Clocks**: Day/Season/Era triple temporal scheduling system managed by a unified AI dispatch center
+- **Three Clocks**: Day Clock / Season Clock / Chronicle Clock—a three-layer temporal orchestration system managed by the unified AI scheduling hub
 
-The spatial structure does not add new red lines but identifies repairable interface fractures on existing park boundaries, achieving repair through three layers: physical stitching (ramps, openings, lighting), functional stitching (cross-interface activity programming), and systemic stitching (data flows and governance protocols).
+The spatial structure does not create new redlines but identifies repairable interface breakpoints on existing park boundaries, achieving repair through three layers: physical stitching (ramps, openings, lighting), functional stitching (cross-boundary activity programming), and systemic stitching (data flows and governance protocols).
 
-## agent.2 AI Full-Stack Innovation System and World-Class Ecosystem Design
+## Coordinated Research Scope: Industry and Future City Research
 
 ### Global AI Innovation Ecosystem Case Studies
 
 | No. | Case | City | Core Mechanism | Inspiration for This Proposal |
 | --- | --- | --- | --- | --- |
-| 1 | High Line Effect | New York | Linear park catalyzing surrounding real estate and innovation clustering | Proves linear corridors can restructure surrounding economic geography |
-| 2 | Barcelona Superblocks | Barcelona | Block-level temporal allocation (commuting vs. leisure hours) | Precedent for temporal scheduling changing space use efficiency |
-| 3 | Helsinki Smart Kalasatama | Helsinki | AI predicting residents save 1 hour per day | Time optimization as smart city core KPI |
+| 1 | High Line Effect | New York | Linear park catalyzing surrounding real estate and innovation agglomeration | Proves linear corridors can restructure surrounding economic geography |
+| 2 | Barcelona Superblocks | Barcelona | Block-unit temporal allocation (commuting vs. leisure periods) | Precedent for temporal orchestration changing spatial use efficiency |
+| 3 | Helsinki Smart Kalasatama | Helsinki | AI predicting residents save 1 hour per day | Time optimization as a core smart city KPI |
 | 4 | Seoul Cheonggyecheon | Seoul | East-west urban stitching after elevated highway removal | Interface repair methodology after infrastructure removal |
-| 5 | Singapore One-North | Singapore | Industry-academia-life mixed full-time districts | Comprehensive model of functional mixing + temporal scheduling |
-| 6 | Sidewalk Labs Quayside | Toronto | Dynamic curbs / variable-function streets | Technical pathway for same-space multi-period function switching |
-| 7 | Shenzhen Qianhai | Shenzhen | AI governance + open platform + industry clustering | Chinese-context AI innovation belt governance experience |
+| 5 | Singapore One-North | Singapore | Industry-academia-residential mixed full-cycle blocks | Comprehensive model of functional mixing + temporal orchestration |
+| 6 | Sidewalk Labs Quayside | Toronto | Dynamic curbs/variable-function streets | Technical pathways for multi-period functional switching in the same space |
+| 7 | Shenzhen Qianhai | Shenzhen | AI governance + open platform + industrial agglomeration | Governance experience for AI innovation belts in the Chinese context |
 | 8 | MIT Media Lab Living Lab | Boston | University-adjacent community as continuous experiment field | Operating model for suture nodes as living laboratories |
 
 ### AI Innovation Ecosystem Map
 
-This proposal constructs 9 suture nodes as different functional links on the AI innovation chain (conceptual suggestion):
+This proposal constructs the 9 suture nodes as different functional segments along the AI innovation chain (conceptual proposal):
 
-- **Data Layer**: Data Suture node handles sensor network and citizen feedback data aggregation
-- **Algorithm Layer**: Zhongzhiyuan AI Acceleration Area provides model training and computing support
-- **Application Layer**: Each of 9 nodes' AI diagnosis/generation/scheduling/monitoring systems
-- **Feedback Layer**: Health Suture, Commercial Suture, and other nodes feed back usage effect data
-- **Governance Layer**: AI Origin Community provides open protocols and ethical review framework
+- **Data Layer**: Data Suture Nodes responsible for sensor network and citizen feedback data aggregation
+- **Algorithm Layer**: Zhongzhi Park AI Acceleration Zone providing model training and computing power support
+- **Application Layer**: Each of the 9 nodes' AI diagnosis/generation/orchestration/monitoring systems
+- **Feedback Layer**: Health Suture Nodes, Commercial Suture Nodes, etc. feeding back usage effectiveness data
+- **Governance Layer**: AI Origin Community providing open protocols and ethical review frameworks
 
-### Zhongzhiyuan Full-Stack Autonomous System
+### Zhongzhi Park Full-Stack Indigenous System
 
-Zhongzhiyuan as the northern anchor (192.1 ha) carries spatial functions for the AI full-stack autonomous innovation system. The "Knowledge Permeation" and "Natural Permeation" suture nodes at Zhongzhiyuan's boundaries enable: ecological restoration and knowledge spillover at the Qinghe cultural interface, tidal commute optimization at the North 5th Ring transport interface, and day-night functional conversion between industrial parks and surrounding residential communities [data:geometry/key_areas.geojson#PROV-KEY-001].
+Zhongzhi Park, as the northern anchor (192.1 ha), carries the spatial platform function of the AI full-stack indigenous innovation system. The suture nodes "Knowledge Permeation Node" and "Nature Permeation Node" are located at Zhongzhi Park's boundary, achieving: ecological restoration and knowledge spillover at the Qinghe cultural interface, tidal commuting optimization at the North Fifth Ring Road transport interface, and day-night functional switching between the industrial park and surrounding residential communities [data:geometry/key_areas.geojson#PROV-KEY-001].
 
-### Industry Space and Land, Computing, Data Mechanisms
+### Industrial Space and Land, Computing Power, and Data Mechanisms
 
-The core hypothesis of suture economics: repairing each interface fracture point can release the collaborative value of land on both sides (conceptual suggestion, pending economic evaluation). Computing deployment for the 4-layer AI system suggests edge computing — each suture node equipped with edge inference chips, with Zhongzhiyuan hub providing model training computing. Data collection follows minimum necessity principles, collecting only anonymized pedestrian density, environmental indicators, and facility utilization rates.
+The core hypothesis of suture economics: the repair of each interface fracture point can release the synergistic value of land on both sides (conceptual proposal, pending economic evaluation verification). Computing power deployment for the AI four-layer system recommends adopting an edge computing mode—each suture node equipped with edge inference chips, with the Zhongzhi Park hub providing model training computing power. Data collection follows the principle of minimum necessity, collecting only anonymized pedestrian density, environmental indicators, and facility utilization rates.
 
-## agent.3 AI+ Scenario Empowerment and Intelligent Vibrant City Design
+## AI Innovation Ecosystem, Talent Profiles, and AI+ Scenarios
 
 ### AI Scenario Cards (12)
 
-| No. | Scenario | Suture Node | Clock | Users | AI Capability | Privacy Boundary |
+| No. | Scenario Name | Suture Node | Clock Layer | Target Users | AI Capability | Privacy Boundary |
 | --- | --- | --- | --- | --- | --- | --- |
-| SC-01 | Smart Morning Exercise Gate | Tidal Weave | Day | Morning exercisers | Flow prediction → gate scheduling | Count only, no identity |
-| SC-02 | Commute Micro-circulation | Tidal Weave | Day | Commuters | Real-time flow → path suggestion | Anonymous heatmap only |
-| SC-03 | Midday Knowledge Sharing | Knowledge Permeation | Day | Faculty/community | Topic matching → space booking | Voluntary, no identity |
-| SC-04 | School Release Safety Corridor | Intergenerational | Day | Students/parents | Path safety assessment → lighting | No individual tracking |
-| SC-05 | Night Run Safety Lighting | Health Suture | Day | Night runners | Motion detection → light following | Presence only, no recording |
-| SC-06 | Seasonal Function Switch | Natural Permeation | Season | All residents | Weather forecast → facility morph | No personal data |
-| SC-07 | Holiday Market Scheduling | Commercial Suture | Season | Vendors/consumers | Flow prediction → stall allocation | Voluntary vendor registration |
-| SC-08 | Community Co-diagnosis | Data Suture | Era | Community residents | Satisfaction analysis → improvement | Anonymous feedback |
-| SC-09 | Heritage Immersive Guide | Memory Anchor | Day | Visitors/citizens | Spatial recognition → content push | User-triggered |
-| SC-10 | Startup Pop-up Space | Innovation Incubation | Season | Startup teams | Demand matching → space allocation | Team self-declaration |
-| SC-11 | Elderly-Friendly Path Planning | Intergenerational | Day | Elderly residents | Gradient/distance → path suggestion | No location tracking |
-| SC-12 | Real-time Carbon Accounting | Natural Permeation | Season | Managers/public | Vegetation monitoring → carbon viz | Environmental data, no privacy risk |
+| SC-01 | Smart Morning Exercise Passage Opening | Tidal Interlace Node | Day Clock | Morning exercisers | Pedestrian flow prediction → gate scheduling | Count only, no identity recognition |
+| SC-02 | Commute Micro-Circulation Optimization | Tidal Interlace Node | Day Clock | Commuters | Real-time flow → route suggestions | Anonymous heatmaps only |
+| SC-03 | Midday Knowledge Sharing | Knowledge Permeation Node | Day Clock | University faculty-students / community residents | Topic matching → space reservation | Voluntary participation, no identity collection |
+| SC-04 | After-School Safety Corridor | Intergenerational Weave Node | Day Clock | Students / parents | Route safety assessment → lighting scheduling | No individual trajectory tracking |
+| SC-05 | Night Running Safety Lighting | Health Suture Node | Day Clock | Night runners | Motion detection → light following | Presence sensing only, no recording |
+| SC-06 | Seasonal Functional Switching | Nature Permeation Node | Season Clock | All residents | Weather prediction → facility form transformation | No personal data |
+| SC-07 | Holiday Market Orchestration | Commercial Suture Node | Season Clock | Merchants / consumers | Foot traffic prediction → stall allocation | Voluntary merchant registration |
+| SC-08 | Community Co-Creation Diagnosis | Data Suture Node | Chronicle Clock | Community residents | Satisfaction analysis → improvement suggestions | Anonymous feedback |
+| SC-09 | Heritage Immersive Interpretation | Memory Anchor Node | Day Clock | Visitors / citizens | Spatial recognition → content delivery | User-initiated activation |
+| SC-10 | Entrepreneurship Pop-Up Space | Entrepreneurship Incubation Node | Season Clock | Startup teams | Demand matching → space allocation | Team self-declaration |
+| SC-11 | Age-Friendly Route Planning | Intergenerational Weave Node | Day Clock | Elderly residents | Slope/distance assessment → route suggestions | No location tracking |
+| SC-12 | Real-Time Carbon Sink Accounting | Nature Permeation Node | Season Clock | Administrators / public | Vegetation monitoring → carbon sink visualization | Environmental data, no privacy risk |
 
-### AI Industry Test Scenarios (4)
+### AI Industry Test Verification Scenarios (4)
 
-| Test Scenario | Test Content | Success Metric | Suggested Operator |
+| Verification Scenario | Test Content | Success Criteria | Suggested Operator |
 | --- | --- | --- | --- |
-| Boundary Obstacle Auto-diagnosis | CV model identifying wall/grade/fence types | Classification accuracy ≥90% | Zhongzhiyuan AI firms (to be recruited) |
-| Temporal Rhythm Prediction | Predicting each node's per-period flow from historical data | MAPE ≤15% | AI Origin Community university teams |
-| Parametric Repair Generation | Auto-generating design solutions by obstacle type | Expert review pass rate ≥70% | Industry-academia consortium |
-| Satisfaction Closed-loop Feedback | Citizen feedback → AI analysis → improvement → verification | Iteration cycle ≤30 days | Local sub-district + tech support |
+| Automatic Boundary Obstacle Diagnosis | Computer vision model identifying wall/grade/railing types | Classification accuracy ≥ 90% | Zhongzhi Park AI enterprise (pending recruitment) |
+| Temporal Rhythm Prediction | Predicting pedestrian flow at each node/period based on historical data | MAPE ≤ 15% | AI Origin Community university teams |
+| Parametric Repair Scheme Generation | Automatically generating design schemes based on obstacle types | Expert review pass rate ≥ 70% | Industry-academia-research consortium |
+| Satisfaction Closed-Loop Feedback | Citizen feedback → AI analysis → improvement suggestions → effectiveness verification | Iteration cycle ≤ 30 days | Local sub-district office + technical support |
 
-### User Personas (6)
+### User Profiles (6 types)
 
-| Persona | Typical Schedule | Interface Need | Clock Response | Spatial Response |
+| Profile | Typical Schedule | Interface Need | Clock Response | Spatial Response |
 | --- | --- | --- | --- | --- |
-| University Researcher | 9:00-22:00 lab | Cross park for dining, sports | Midday/evening open channel | Knowledge Permeation |
-| Commuting Professional | 7:30/18:30 subway | Fast park crossing | Peak-hour expanded channels | Tidal Weave |
-| Parent with Children | 15:30-17:00 pickup | Safe crossing + play areas | School-release special mgmt | Intergenerational |
-| Retired Resident | 6:00-8:00 morning exercise | Accessible transit + rest | Early morning open + elderly facilities | Health Suture |
-| Entrepreneur | Flexible hours | Temporary office + networking | Weekday daytime priority | Innovation Incubation |
-| Visitor | Irregular | Wayfinding + experience + consumption | Weekend/holiday expanded capacity | Memory Anchor |
+| University Researcher | 9:00-22:00 laboratory | Crossing the park to nearby dining/sports | Midday/evening open passages | Knowledge Permeation Node |
+| Commuting Professional | 7:30/18:30 subway | Rapid park crossing | Expand passages during peak commute | Tidal Interlace Node |
+| Parent with Children | 15:30-17:00 school pickup | Safe crossing + children's activities | Special management during school dismissal | Intergenerational Weave Node |
+| Retired Resident | 6:00-8:00 morning exercise | Barrier-free access + rest | Early morning opening + age-friendly facilities | Health Suture Node |
+| Entrepreneur | Flexible hours | Temporary office + social | Weekday daytime priority | Entrepreneurship Incubation Node |
+| Outside Visitor | Irregular | Guided tour + experience + consumption | Weekend/holiday capacity expansion | Memory Anchor Node |
 
 ### Scenario-Space-Operations Mapping
 
-Every scenario is bound to a specific suture node location and cannot be transplanted to another project. Scenario operations follow a "AI suggestion - human confirmation - public feedback" triple governance structure; all decisions involving public space management authority changes require local government approval (conceptual suggestion) [source:AGENT-TASKBOOK].
+Each scenario is bound to a specific suture node location and cannot be transplanted to other projects. Scenario operations follow a "AI recommendation – human confirmation – public feedback" triple governance structure; all decisions involving changes to public space management authority require local government approval (conceptual proposal) [source:AGENT-TASKBOOK].
 
-## agent.4 AI Public Space, Smart-Native Business and Pilgrimage Landmarks
+## Blue-Green Space, Public Space, and Urban Landscape
 
-### East-West Stitching and North-South Connection Strategy
+### East-West Stitching and North-South Connectivity Strategy
 
-The core spatial operation of this proposal: **east-west stitching**. Given that north-south connection has been achieved by the heritage park, the focus is resolving the east-west severance left by a century of railway operation. Strategy as follows (conceptual suggestion for professional teams to develop) [depth:three_key_area_detailed_design]:
+The core spatial action of this proposal: **east-west stitching**. Given that north-south connectivity has already been achieved by the Heritage Park, the focus is on resolving the east-west fracture left by a century of railway severance. The strategy is as follows (conceptual proposal, for professional team refinement) [depth:three_key_area_detailed_design]:
 
 **Physical Stitching Layer**:
-- Remove non-essential wall segments (requires ownership confirmation and safety assessment)
-- Reduce grade changes: install accessible ramps at interfaces with ≥1.5m grade difference
-- Add pedestrian crossing facilities: install safety islands at road cross-sections ≥40m
-- Supplement lighting: eliminate nighttime transit blind spots
+- Removal of non-essential wall segments (requires ownership confirmation and safety assessment)
+- Grade reduction: installing barrier-free ramps at interfaces with grade differences ≥ 1.5 m
+- Addition of pedestrian crossing facilities: adding safety islands at road cross-sections ≥ 40 m
+- Supplementary lighting: eliminating nighttime passage blind spots
 
 **Functional Stitching Layer**:
-- Cross-interface activity programming: extend park activities to streets beyond the park
-- Commercial symbiosis: park-side entrances form synergies with opposite commercial streets
-- Service permeation: park public service facilities radiate to communities on both sides
+- Cross-interface activity programming: extending park activities to streets beyond the park
+- Commercial synergy: park-side entrances forming linkages with facing commercial streets
+- Service permeation: public service facilities within the park radiating to communities on both sides
 
 **Systemic Stitching Layer**:
-- Sensor network monitoring interface usage efficiency
+- Sensor networks monitoring interface usage efficiency
 - AI real-time scheduling of interface functional modes
-- Citizen feedback driving iterative improvements
+- Citizen feedback driving iterative improvement
 
 ### 9 Suture Node Public Space Design
 
-| Node | Suggested Location | Barrier Type | Stitch Method | Temporal Schedule |
+| Node | Suggested Location | Boundary Obstacle Type | Stitching Approach | Temporal Orchestration |
 | --- | --- | --- | --- | --- |
-| Knowledge Permeation | Zhongzhiyuan east / university area | Wall + management fence | Openable knowledge gallery | Daytime academic / nighttime community |
-| Tidal Weave | Metro station interface | Wide road cross-section | Dynamic right-of-way allocation | AM/PM commute / midday leisure |
-| Innovation Incubation | Tech park boundary | Access control + wall | Street-level first floor opening | Weekday startup / weekend market |
-| Intergenerational | School-elderly facility gap | Railing + grade change | Shared ramp garden | School-release / daily rest |
-| Natural Permeation | Ecological corridor junction | Drainage infrastructure | Rain garden + eco-bridge | Dry season passage / wet season detention |
-| Commercial Suture | Opposite commercial street | Parking lot separation | Market plaza + outdoor seating | Midday dining / evening culture |
-| Memory Anchor | Railway heritage point | Heritage fence | Transparent exhibit + AR overlay | Daytime exhibition / nighttime light show |
-| Health Suture | Hospital/wellness facility | Grade + blind spot | Rehabilitation path + accessible corridor | 24/7 accessible |
-| Data Suture | Community service center | Information disconnect | Digital interactive installation | Full-time data collection |
+| Knowledge Permeation Node | Zhongzhi Park east boundary / university zone | Wall + management fence | Openable knowledge gallery | Daytime academic / nighttime community |
+| Tidal Interlace Node | Metro station interface | Wide road cross-section | Dynamic right-of-way allocation | Morning-evening commute / daytime leisure |
+| Entrepreneurship Incubation Node | Industrial park boundary | Access control + wall | Street-level ground floor opening | Weekday entrepreneurship / weekend market |
+| Intergenerational Weave Node | Between school and elderly care facilities | Railing + grade difference | Shared ramp garden | School dismissal hours / daily rest |
+| Nature Permeation Node | Ecological corridor interface | Drainage facility severance | Rain garden + ecological bridge | Dry season passage / rainy season flood storage |
+| Commercial Suture Node | Facing commercial street | Parking lot severance | Market plaza + outdoor seating zone | Midday dining / nighttime culture |
+| Memory Anchor Node | Railway heritage point | Heritage protection fence | Transparent display + AR overlay | Daytime exhibition / nighttime light art |
+| Health Suture Node | Adjacent to hospital / rehabilitation facility | Grade difference + blind spot | Rehabilitation trail + barrier-free passage | All-day accessibility |
+| Data Suture Node | Adjacent to community service center | Information discontinuity | Digital interactive installation | Full-cycle data collection |
 
-### AI Pilgrimage Landmarks (3, conceptual suggestions)
+### AI Pilgrimage Landmarks (3, conceptual proposal)
 
-1. **Needle of Time** — Tidal Weave node: A dynamically rotating metal sculpture that adjusts its orientation based on real-time pedestrian flow direction — both artwork and physical manifestation of the AI scheduling system
-2. **Eye of the Stitch** — Data Suture node: A circular LED screen embedded in the ground, real-time displaying urban interface transit data, shaped like a sewing needle's eye
-3. **Zhan Tianyou's Timetable** — Memory Anchor node: A digital recreation of Zhan Tianyou's original timetable, transformed into a visualization portal for the contemporary urban temporal scheduling system
+1. **Needle of Time** — Tidal Interlace Node: A dynamically rotating metal sculpture that adjusts its orientation based on real-time pedestrian flow direction—both artwork and physical manifestation of the AI scheduling system
+2. **Eye of the Stitch** — Data Suture Node: A ring-shaped LED screen embedded in the ground, displaying real-time urban interface passage data in the shape of a needle's eye
+3. **Zhan Tianyou Timetable** — Memory Anchor Node: A digital recreation of Zhan Tianyou's original railway timetable, transformed into a visualization portal for the contemporary urban temporal orchestration system
+
+### Public Space Component Library (agent.4)
+
+Suture node public spaces are composed of the following standardized components; each node selects and combines components based on specific obstacle types and site conditions:
+
+| Component Category | Component Name | Specification Range | Applicable Obstacle | No-AI Fallback |
+| --- | --- | --- | --- | --- |
+| Passage Component | Barrier-free ramp | Slope ≤ 1:12, width ≥ 2.4 m | Grade difference ≥ 0.3 m | Fixed ramp, permanently effective |
+| Passage Component | Pedestrian overpass/underpass | Span ≤ 30 m | Wide road cross-section | Fixed infrastructure |
+| Passage Component | Safety island | Width ≥ 2 m, spacing ≤ 50 m | Road cross-section ≥ 30 m | Fixed traffic facility |
+| Interface Component | Openable exhibition gallery | Modular, unit 3 m × 4 m | Wall / management fence | Maintain open state |
+| Interface Component | Transparent fence | Height ≤ 1.2 m, transparency ≥ 60% | Heritage/safety fence | Fixed transparent fence |
+| Interface Component | Ground-floor pilotis | Clear height ≥ 3.6 m, depth ≥ 6 m | Enclosed building ground floor | Permanent building retrofit |
+| Lighting Component | Pedestrian lighting strip | Illuminance ≥ 20 lux, color temperature 3000-4000 K | Nighttime blind spots | Fixed timer-controlled lighting |
+| Lighting Component | Motion-following lamp | Detection radius 5 m, response ≤ 0.5 s | Low-traffic nighttime segments | Full-night constant-on mode |
+| Resting Component | Modular seating | ≥ 2 groups per 50 m | Passage paths | Fixed seating |
+| Resting Component | Shelter structure | Sheltered area ≥ 12 m² | Climate-exposed nodes | Fixed rain canopy/sunshade |
+| Information Component | Multi-sensory wayfinding | Visual + tactile + auditory | Information discontinuity interfaces | Fixed signage |
+| Information Component | Digital interactive screen | Outdoor protection grade IP65 | Data Suture Nodes | Static information display |
+| Ecological Component | Rain garden | Storage capacity ≥ 50 m³/ha | Drainage severance | Natural infiltration function |
+| Ecological Component | Ecological stepping stone | Width ≥ 3 m green belt | Ecological corridor breakpoints | Permanent vegetation |
 
 ### Honor Display System
 
-An honor display system for agents, developers, and community participants who contribute high-quality AI urban interface repair proposals: the Data Suture node features a "Contributors Wall" displaying real-time information about the best repair proposals; quarterly "Best Stitch Award" selections; annual AI Design Marathon winning works permanently displayed.
+An honor display system is established for intelligent agents, developers, and community participants who contribute high-quality AI urban interface repair solutions: the Data Suture Node features a "Contributors Wall" displaying real-time author information for optimal repair schemes; quarterly selection of "Best Stitching Solution"; and permanent display of winning works from annual AI design marathons.
 
-## agent.5 Centennial Jingzhang, Zhongguancun, and AI New Culture Narrative
+## Transportation, Rail Transit, Municipal Infrastructure, and Public Service Facilities
 
-### Cultural Narrative Core: Three Leaps of Temporal Scheduling
+### Cultural Narrative Core: Three Leaps of Temporal Orchestration
 
-This proposal's cultural narrative is built on the behavioral thread of "temporal scheduling" spanning a century [source:AGENT-TASKBOOK]:
+The cultural narrative of this proposal is built upon the behavioral thread of "temporal orchestration" running through a century [source:AGENT-TASKBOOK]:
 
-**First Leap (1909)**: Zhan Tianyou created China's first autonomous train timetable — temporal scheduling enabling railways to serve the Chinese people. This was not merely an engineering achievement but a landmark moment of China mastering modern temporal order.
+**First Leap (1909)**: Zhan Tianyou oversaw the completion of the Jing-Zhang Railway, marking the first time Chinese people independently compiled an operational timetable (ref: *Zhan Tianyou and Chinese Railways*, China Railway Press, 2019 revised edition; this statement is a cultural narrative summary, and the specific claim of "the first" relies on railway history academic consensus for its uniqueness determination). Temporal orchestration enabled the railway to serve the Chinese people—a landmark moment of Chinese mastery over modern temporal order.
 
-**Second Leap (1980s-2020s)**: Zhongguancun innovation culture transformed "time" into "iteration speed" — rapid prototyping, agile development, continuous integration. Time was no longer just a schedule but an innovation rhythm.
+**Second Leap (1980s-2020s)**: Zhongguancun innovation culture transformed "time" into "iteration speed"—rapid prototyping, agile development, continuous integration. Time was no longer just an operational schedule but an innovation rhythm.
 
-**Third Leap (2026+)**: AI Temporal Stitch extends temporal scheduling from transportation/code to urban public space — the same physical space achieves optimal multi-period, multi-group, multi-function allocation through AI dispatch.
+**Third Leap (2026+)**: AI Temporal Stitch extends temporal orchestration from transportation/code to urban public space—the same physical space achieves optimal multi-period, multi-population, multi-function allocation through AI scheduling.
 
 ### Spatial Cultural System
 
-- **Memory Anchor node cluster**: Railway heritage elements displayed in-situ along the 9km corridor, including old platform foundations, rail cross-sections, and signal equipment replicas
-- **Temporal scale system**: Time markers embedded in the ground at 9 suture nodes, recording key historical moments at each location (opening date, closure date, park opening date, stitch repair date)
-- **Cultural lens installations**: AR technology overlaying historical scenes, allowing pedestrians to see century-old railway operations at the same location
+- **Memory Anchor Node Cluster**: In-situ display of railway heritage elements distributed along the 9 km corridor, including old platform foundations, rail cross-sections, and signal equipment replicas
+- **Temporal Scale System**: Time markers embedded in the ground at 9 suture nodes, recording key historical moments at each location (opening date, decommissioning date, park opening date, stitch repair date)
+- **Cultural Lens Installation**: AR technology overlaying historical scenes, allowing pedestrians at the same location to see the railway operations of a century ago
 
 ### Wayfinding and Signage System Direction
 
-Suggest adopting "timetable aesthetics" (conceptual suggestion for professional design teams to develop):
-- Typography: Monospace font family, echoing railway timetable typographic tradition
-- Colors: Railway Gray (#4A4A4A) + Haidian Blue (#0066CC) + Temporal Gold (#C4A35A)
-- Icons: Graphic fusion of sewing needle / clock hands / rail cross-section
+Recommended adoption of "timetable aesthetics" (conceptual proposal, for professional design team refinement):
+- Typography: Monospace font family, echoing the typographic tradition of railway timetables
+- Color: Railway Gray (#4A4A4A) + Haidian Blue (#0066CC) + Temporal Gold (#C4A35A)
+- Iconography: Graphic fusion of sewing needle / clock hands / rail cross-section
 - Information architecture: Grid layout like a timetable, clearly marking "current period function" and "next period function"
 
 ### International Communication Narrative
 
-Core storyline: "The city that stitches time" — From Zhan Tianyou's timetable to AI temporal stitch, Beijing Haidian demonstrates how humanity uses different eras' wisdom to orchestrate the temporal dimension of urban life.
+Core storyline: "The city that stitches time" — a city that has stitched together time. From Zhan Tianyou's timetable to AI's temporal stitch, Beijing Haidian demonstrates how humanity uses the wisdom of different eras to orchestrate the temporal dimension of urban life.
 
-## agent.6 Global AI Innovation Event System and Long-term Operations
+## Renewal Project Inventory, Implementation Policy, and Phasing Plan
 
-### Annual Event System (conceptual suggestion)
+The phasing plan corresponds to the three-phase strategy in `geometry/phasing.geojson` [data:geometry/phasing.geojson#PHASE-001] [source:AGENT-TASKBOOK]:
 
-| Quarter | Event Name | Content | Clock Alignment |
+- **Near-term (1-3 years)**: Priority repair of Memory Anchor Node, Commercial Suture Node, and Data Suture Node—3 nodes (southern segment, Dazhongsi area)
+- **Mid-term (3-5 years)**: Advancing Knowledge Permeation Node, Tidal Interlace Node, and Entrepreneurship Incubation Node—3 nodes (northern segment, Zhongzhi Park area)
+- **Long-term (5-10 years)**: Completing Intergenerational Weave Node, Nature Permeation Node, and Health Suture Node—3 nodes (central segment, AI Origin Community)
+
+The near-term selection of the southern segment first is because the Dazhongsi area has high commercial vitality, strong public perception, and rapid visible outcomes; the long-term deferral of the central segment's intergenerational and health nodes reflects their involvement of sensitive facilities (schools, elderly care) requiring more thorough community consultation.
+
+### Annual Activity System (conceptual proposal)
+
+| Quarter | Activity Name | Content | Corresponding Clock |
 | --- | --- | --- | --- |
-| Q1 Spring | Jingzhang Stitch Design Marathon | AI + urban interface repair competition | Era Clock (annual assessment) |
-| Q2 Summer | Full-Time City Festival | 24-hour non-stop urban public activities | Day Clock (full-time experience) |
-| Q3 Autumn | AI Temporal Scheduling Developer Conference | Technical sharing + open API release | Era Clock (technical iteration) |
-| Q4 Winter | Community Stitch Report Release | Annual interface repair effectiveness data publication | Season Clock (periodic summary) |
+| Q1 Spring | Jing-Zhang Stitching Design Marathon | AI + urban interface repair scheme competition | Chronicle Clock (annual evaluation) |
+| Q2 Summer | Full-Time City Festival | 24-hour non-stop urban public activities | Day Clock (full-cycle experience) |
+| Q3 Autumn | AI Temporal Orchestration Developer Conference | Technical sharing + open API release | Chronicle Clock (technology iteration) |
+| Q4 Winter | Community Stitching Report Release | Annual interface repair effectiveness data publication | Season Clock (cycle summary) |
 
 ### Developer Community Operations
 
-- **Open APIs**: Interface diagnosis model, temporal scheduling engine, and effectiveness monitoring data all published as APIs for third-party developers
-- **Dataset sharing**: Anonymized urban interface usage data as open datasets supporting academic research and entrepreneurship
-- **Contributor incentives**: Developers submitting effective repair proposals earn "Stitch Contribution Points" exchangeable for Zhongzhiyuan shared space usage rights
-- **Monthly Open Source Day**: AI Origin Community hosts monthly open-source collaboration events reviewing deployed proposal performance
+- **Open API**: Interface diagnosis models, temporal orchestration engines, and effectiveness monitoring data are all exposed as APIs, allowing third-party developers to build applications
+- **Dataset sharing**: Anonymized urban interface usage data released as open datasets supporting academic research and entrepreneurship
+- **Contributor incentives**: Developers who submit valid repair solutions earn "Stitch Contribution Points," redeemable for shared space usage rights at Zhongzhi Park
+- **Monthly Open-Source Day**: AI Origin Community hosts monthly open-source collaboration events to review the operational performance of deployed solutions
 
 ### AI Scenario Open Operations
 
-Each suture node operates as an independent unit with a "platform + ecosystem" model (conceptual suggestion):
-- Base platform maintained by local government/park management
-- Scenario applications competitively occupied by enterprises/communities/developers
-- AI dispatch center uniformly coordinates temporal resource allocation
-- Quarterly evaluations phase out inefficient scenarios and introduce new ones
+Each suture node establishes an independent operations unit following a "platform + ecosystem" model (conceptual proposal):
+- Base platform maintained by local jurisdiction government/industrial park
+- Scenario applications competitively tenured by enterprises/communities/developers
+- AI scheduling hub provides unified coordination of temporal resource allocation
+- Quarterly evaluation eliminates underperforming scenarios and introduces new ones
 
 ### Long-term Operations and Internationalization
 
-- **3-year goal**: Complete physical repair and AI system deployment at all 9 suture nodes
-- **5-year goal**: Develop a replicable "Urban Interface AI Stitching" methodology and technical standards
-- **10-year goal**: Export experience to cities worldwide with similar railway/highway severance issues (conceptual suggestion, not a policy commitment)
+- **Three-year target**: Complete physical repair and AI system deployment across all 9 suture nodes
+- **Five-year target**: Develop a replicable "Urban Interface AI Suture" methodology and technical standards
+- **Ten-year target**: Export experience to cities worldwide with similar railway severance issues (conceptual proposal; no policy commitments made)
 
-International communication strategy: Annually select 1-2 international cities with railway/highway severance issues for "Stitch Sister City" dialogue exchanges.
+International dissemination strategy: Each year, select 1-2 international cities with railway/highway severance issues for "Suture Sister City" dialogue and exchange.
 
-## Overall Design Area Urban Renewal and Regulatory Plan Depth Design
+### Activity Brand and Communication Visual System (agent.6)
+
+**Activity brand system** (conceptual proposal, for professional design teams to further develop):
+- Master brand: "Jing-Zhang Stitch" / 京张缝合 — unified across all activity communications
+- Sub-brands: Stitch-a-thon, 24h City Festival, Temporal Dev Conf, Annual Stitch Report
+- Visual hammer: Animated graphic of sewing needle passing through rail tracks, paired with three-color clock hands (Day Clock gold / Season Clock green / Era Clock blue)
+- Communication material templates: Event poster (vertical A1), social media card (1080×1080), long-form graphic template, short video intro (5s animation)
+
+**Activity → Developer → Enterprise/Talent → Scenario Pilot Conversion Path**:
+
+| Phase | Target | Touchpoint | Conversion Action | Success Metric |
+| --- | --- | --- | --- | --- |
+| 1. Event acquisition | Public/developers/students | Marathon/hackathon/open day | Register, submit proposals | Participant count, proposal submissions |
+| 2. Community retention | Active participants | Monthly Open-Source Day, online community | Join developer community, contribute code | Active contributors, merged PRs |
+| 3. Enterprise matching | Teams with product intent | Roadshow, Demo Day | Incubation space residency, signed partnerships | Resident teams, signed contracts |
+| 4. Talent attraction | AI/urban design professionals | Career fairs, internship programs | Employment/collaboration/retention | Talent residency rate |
+| 5. Scenario pilot | Mature teams/enterprises | Node operation rights bidding | Deploy scenario, operational testing | Scenarios launched, user satisfaction |
+
+Each phase establishes clear exit conditions and next-step guidance to prevent event traffic from failing to convert into actual scenario implementation.
+
+## Land Use, Building Scale, and Retention/Renovation/Demolition Strategy
+
+This proposal adopts "micro-renewal" as its core strategy, focusing on repairing interface accessibility rather than large-scale demolition and reconstruction [depth:development_intensity_controls].
+
+### Land Use Layout
+
+`geometry/land_use.geojson` provides complete coverage of the 11.4 km² design boundary, divided into Scientific Research and Education Land (northern section), Industry Innovation Land (north-central section), Mixed-Use Land (central section), Commercial Service Land (south-central section), and Residential Land (southern section). The Jing-Zhang Heritage Park corridor traverses the entire area, forming the primary public space axis [data:geometry/land_use.geojson#LU-001].
+
+### Building Scale and Retention/Renovation/Demolition
+
+Building renewal strategy within suture node areas (approximately 300-500m radius per node) (conceptual proposal, pending property ownership verification and professional assessment):
+- **Retain**: Heritage-protected buildings, community public facilities, schools, hospitals, and other public service buildings
+- **Renovate**: Wall segments converted to operable interfaces, ground-floor street frontages converted to semi-open spaces, rooftops converted to green platforms
+- **Demolish**: Non-essential wall segments, abandoned temporary facilities (requiring safety assessment and property ownership confirmation)
+- **New construction**: Suture node public space structures (ramps, lighting, signage, interactive installations)
+
+Floor area ratio, building height, development intensity, and other regulatory control indicators remain `status=unknown` due to lack of official control conditions; they will be recalculated once formal regulatory conditions are provided [metric:building_footprint_area_sqm]. Current building footprints in `geometry/buildings.geojson` are representative illustrations only and do not constitute accurate existing building coverage.
+
+### Industrial Space Supply
+
+The 9 suture nodes do not add large-scale industrial buildings; instead, they release collaborative value from existing stock through interface repair. Zhongzhi Park's wall repair opens the park's ground-floor spaces to the community (approximately adding 2km of usable public interface length); AI Origin Community's campus-park suture reduces walking distances (estimated 15% commute time savings); Dazhongsi's four-quadrant pedestrian connectivity raises commercial service accessibility to full coverage around the station (conceptual proposal).
+
+Data gaps: Precise building footprints, property ownership information, regulatory control conditions, and structural safety assessments are all pending items. The above renewal strategies represent directional design recommendations only [source:OFFICIAL-ANNOUNCEMENT].
+
+## Urban Renewal and Regulatory-Depth Urban Design for the Overall Design Area
 
 ### Spatial Structure
 
-The overall design area (11.4 km²) spatial structure follows "One Corridor, Nine Needles, East-West Stitch, Three Clocks" [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]:
+The spatial structure of the overall design area (11.4 km²) follows the pattern "One Corridor, Nine Needles; East-West Mending; Three Clocks Synergy" [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]:
 
-- **One Corridor**: The 9km Jingzhang Heritage Park linear green public space spine (completed)
-- **Nine Needles**: 9 suture nodes at urban interface fracture points on the park boundary
-- **East-West Stitch**: Radiating 300-500m to each side from each suture node, forming "needle-eye influence zones"
-- **Three Clocks**: AI dispatch center uniformly scheduling Day/Season/Era triple temporal rhythms
+- **One Corridor**: The Jing-Zhang Heritage Park 9km linear green public space main axis (already built)
+- **Nine Needles**: 9 suture nodes distributed at urban interface fracture points along park boundaries
+- **East-West Mending**: Radiating 300-500m in both directions from each suture node, forming "needle-eye influence zones"
+- **Three Clocks Synergy**: AI scheduling hub providing unified orchestration of Day/Season/Era three-layer temporal rhythms
 
 ### Land Use Structure and Renewal Strategy
 
-`geometry/land_use.geojson` fully covers the design boundary. Land classification follows current national standards, with an added "Interface Transition Land" type marking suture node areas. The renewal strategy prioritizes "micro-renewal" — no large-scale demolition and reconstruction; focus on repairing interface accessibility (conceptual suggestion; specific retain/renovate/demolish decisions require ownership verification and professional assessment) [depth:development_intensity_controls].
+`geometry/land_use.geojson` provides complete coverage of the design boundary. Land classification follows current national standards, with an added "Interface Transition Land" category marking suture node areas. The renewal strategy centers on "micro-renewal" — no large-scale demolition and reconstruction, focusing on repairing interface accessibility (conceptual proposal; specific retention/renovation/demolition decisions pending property ownership verification and professional assessment) [depth:development_intensity_controls].
 
-### Transportation and Slow-Traffic System
+### Land Use, Building Scale, and Retention/Renovation/Demolition Strategy
 
-The core of transportation system design is "east-west accessibility repair" [data:geometry/roads.geojson#ROAD-001]:
-- Add or widen east-west pedestrian corridors at all 9 suture nodes
-- Implement peak-hour dynamic right-of-way allocation at the Tidal Weave node (conceptual suggestion; requires traffic engineering verification)
-- Slow-traffic system connecting all suture nodes, seamlessly joined to park internal paths
-- Rail station connections prioritize "last kilometer" optimization on both sides of the park
+This proposal's building renewal strategy adopts "interface-layer micro-renewal" as its core principle (conceptual proposal, for professional teams to further develop). Within the 300m influence radius of the 9 suture nodes, buildings facing the interface receive categorized treatment [data:geometry/buildings.geojson#BLDG-001]:
 
-![Transportation, Slow-Traffic, and Blue-Green Space Systems](assets/figures/mobility-bluegreen.png)
+**Retain category** (approximately 60% of interface buildings): Structurally sound and functionally appropriate buildings are retained as-is, with only improvements to ground-floor street frontage transparency and public accessibility — removing unnecessary walls, creating ground-level setbacks or outdoor seating areas.
 
-### Blue-Green Space and Urban Character
+**Renovate category** (approximately 30%): Structurally sound but functionally mismatched buildings undergo internal functional adjustment — converting ground-floor enclosed office/warehouse spaces to semi-public service spaces (exhibition corridors, community services, co-working), achieving functional suturing. Renovation does not involve structural reinforcement or major facade modifications, keeping investment intensity low.
 
-The Natural Permeation node combines stormwater management with interface stitching — drainage direction transforms from barrier to connector:
-- Park drainage facilities transform into rain gardens at interfaces, permeating into communities on both sides [data:geometry/green_space.geojson#GREEN-001]
-- Green coverage ratio calculated from the provisional boundary design model (to be recalculated with official data) [metric:green_ratio]
-- Urban character control centered on "interface visibility" — reducing wall/fence heights and increasing visual transparency at suture nodes
+**Pending assessment category** (approximately 10%): Buildings with questionable structural safety or direct conflicts with suture corridors are marked as "pending professional structural assessment and property ownership negotiation"; this proposal does not make demolition determinations.
+
+Total building volume control follows the "no total increase, optimize interfaces" principle (conceptual proposal) — suture repair is not incremental development but stock optimization. Specific FAR and building heights cannot be provided due to lack of official regulatory conditions, maintained in unknown status in metrics.json with explanations [metric:building_footprint_area_sqm]. The 9 suture nodes are expected to add approximately 200,000 m² of new public space area, primarily from linear space released through wall demolition and publicized area from ground-floor functional conversion, without involving new large-volume buildings.
+
+### Transportation and Slow Mobility System
+
+The core of the transportation system design is "east-west accessibility repair" [data:geometry/roads.geojson#ROAD-001]:
+- Add or widen east-west pedestrian corridors at the 9 suture nodes
+- Tidal Weave Needle nodes implement dynamic right-of-way allocation during morning/evening peak hours (conceptual proposal, requiring traffic engineering validation)
+- Slow mobility system runs through all suture nodes, seamlessly connecting to park internal slow-traffic paths
+- Rail transit station connections prioritize optimizing the "last kilometer" on both east and west sides of the park
+
+![Transportation, Slow Mobility, and Blue-Green Space System](assets/figures/mobility-bluegreen.png)
+
+### Blue-Green Space Supplement
+
+Natural Infiltration Needle nodes combine stormwater management with interface suturing — drainage direction transforms from barrier to connection:
+- Park internal drainage facilities transform into rain gardens at interfaces, infiltrating toward communities on both sides [data:geometry/green_space.geojson#GREEN-001]
+- Green coverage ratio calculated from design model based on provisional boundary (pending recalculation after formal data provision) [metric:green_ratio]
+- Urban character control centers on "interface visibility" — reducing wall/fence heights at suture nodes to increase visual permeability
 
 ## Key Area Detailed Design
 
-### Zhongzhiyuan AI Autonomous Innovation Acceleration Area (192.1 ha)
+### Zhongzhi Park AI Independent Innovation Acceleration Zone (192.1 ha)
 
-**Design Positioning**: Garden-type full-stack autonomous innovation district with open east-west interfaces [data:geometry/key_areas.geojson#PROV-KEY-001]
+**Design positioning**: East-west interface opening of a garden-type full-stack independent innovation district [data:geometry/key_areas.geojson#PROV-KEY-001]
 
-**Suture Nodes**: Knowledge Permeation + Natural Permeation
+**Suture nodes**: Knowledge Infiltration Needle + Natural Infiltration Needle
 
-**Spatial Actions** (conceptual suggestions):
-- East boundary: Remove non-safety wall segments, install "Knowledge Gallery" — openable exhibition space; academic posters/releases during day, community cultural activities at night
-- North boundary: Qinghe ecological interface restoration, transforming drainage infrastructure into waterfront promenade connecting both banks
-- Interior: Maintaining industrial function, convert street-facing first floors to semi-open space allowing community passage
-- AI System: Boundary obstacle diagnosis model trained and validated at this node, creating reusable recognition capabilities
+**Spatial actions** (conceptual proposal):
+- East boundary: Remove non-security wall segments; install "Knowledge Exhibition Corridor" — operable display spaces serving as academic poster/achievement release venues during daytime and community cultural activity venues at night
+- North boundary: Qinghe ecological interface repair; convert drainage infrastructure into waterfront promenades connecting both banks
+- Interior: While preserving industrial functions, convert street-facing ground floors to semi-open spaces allowing community residents to pass through
+- AI system: Boundary barrier diagnostic model is trained and validated at this node, forming reusable identification capabilities
 
-**Temporal Schedule**: Weekdays 9:00-18:00 primarily industrial function with open transit corridors; after 18:00 switches to community activity mode, Knowledge Gallery becomes cultural activity space.
+**Temporal programming**: Weekdays 9:00-18:00 prioritize industrial functions with open corridors for passage; after 18:00, switch to community activity mode with Knowledge Exhibition Corridor converting to cultural activity space.
 
 ### Beijing AI Origin Community (104.3 ha)
 
-**Design Positioning**: University-adjacent achievement transformation and talent community with full-time openness [data:geometry/key_areas.geojson#PROV-KEY-002]
+**Design positioning**: Full-time opening of a campus-adjacent incubation and talent community [data:geometry/key_areas.geojson#PROV-KEY-002]
 
-**Suture Nodes**: Innovation Incubation + Intergenerational + Tidal Weave
+**Suture nodes**: Entrepreneurship Incubation Needle + Intergenerational Weave Needle + Tidal Weave Needle
 
-**Spatial Actions** (conceptual suggestions):
-- Campus-park interface: Add slow-traffic connectors enabling faculty/students to reach incubation space within 5 minutes
-- Park-community interface: Street-facing first floors as shared office + community service composite space
-- School-elderly interface: Shared ramp garden, functioning as student activity field during school release and elderly fitness area otherwise
-- Rail station integration: Optimize station entrance/exit connections with park/community circulation
+**Spatial actions** (conceptual proposal):
+- Campus-park interface: Add slow-mobility connections allowing faculty and students to reach incubation spaces within 5 minutes
+- Park-community interface: Ground-floor street frontages configured as co-working and community service composite spaces
+- School-elderly care interface: Shared ramped garden — student activity space during after-school hours, elderly fitness area during remaining hours
+- Rail transit station integration: Optimize station entrance/exit connections with park/community circulation routes
 
-**Temporal Schedule**: Semester/vacation switching — semester primarily for teaching, research, and incubation; winter/summer breaks convert to public opening and entrepreneurship marathon mode.
+**Temporal programming**: Semester/vacation switching mode — semester prioritizes teaching, research, and incubation; winter/summer vacations switch to public access and entrepreneurship marathon mode.
 
-### Dazhongsi AI Industry Cluster (72 ha)
+### Dazhongsi AI Industry Cluster Zone (72 ha)
 
-**Design Positioning**: Urban smart economy and international exchange district with activated interfaces [data:geometry/key_areas.geojson#PROV-KEY-003]
+**Design positioning**: Interface activation of an urban-type intelligent economy and international exchange district [data:geometry/key_areas.geojson#PROV-KEY-003]
 
-**Suture Nodes**: Commercial Suture + Memory Anchor + Data Suture
+**Suture nodes**: Commercial Suture Needle + Memory Anchor Needle + Data Suture Needle
 
-**Spatial Actions** (conceptual suggestions):
-- Dazhongsi Station integration: Optimize pedestrian connectivity across four quadrants, eliminating ground-level crossing barriers
-- Commercial interface: Transform parking lot barriers into market plazas accommodating AI experience + cultural consumption
-- Dazhongsi historical node: Install transparent railway heritage exhibition hall with AR historical scene overlay
-- Data Suture: Interactive installations at community service center collecting and displaying urban stitch effectiveness
+**Spatial actions** (conceptual proposal):
+- Dazhongsi Station integration: Optimize four-quadrant pedestrian connectivity, eliminating ground-level crossing barriers
+- Commercial interface: Convert parking lot barriers into market squares hosting AI experience + cultural consumption
+- Dazhongsi historical node: Install railway heritage transparent exhibition hall with AR-overlaid historical scenes
+- Data Suture Needle: Install interactive devices at community service centers to collect and display urban suturing performance
 
-**Temporal Schedule**: Weekdays for business/roadshows/enterprise services; weekends switch to public experience/cultural markets/AI interactive exhibitions. "Da Zhong Si" (Great Bell Temple) itself is a cultural icon of TIME — anchoring a "City Clock Plaza" that announces current urban interface operational status every hour through audiovisual installations.
+**Temporal programming**: Weekdays serve business/roadshow/enterprise services; weekends switch to public experience/cultural markets/AI interactive exhibitions. "Great Bell" (Dazhong) itself is a cultural metaphor for time — using it as an anchor to establish a "City Clock Plaza" that broadcasts current urban interface operational status via sound-and-light installations every hour.
 
-![Three Key Areas Stitch Design](assets/figures/key-areas.png)
+![Three Key Area Suture Design](assets/figures/key-areas.png)
 
-## Metrics System and Area Recalculation
+## Metrics System, Area Recalculation, and Compliance Matrix
 
-Core visual metrics calculated from the provisional boundary design model (provisional; to be recalculated when official data is available) [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]:
+Core metrics are based on provisional boundary design model geometry recalculation (provisional; pending recalculation after formal data provision) [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]:
 
-| Metric | Value | Status | Source | Note |
+| Metric | Current Design Model Value | Status | Source | Notes |
 | --- | --- | --- | --- | --- |
-| Site Area | 11,412,825 m² | provisional | PROV-SITE-001 EPSG:4548 | Pending official boundary |
-| Green Coverage | To be calculated | provisional | geometry/green_space.geojson | Design model based |
-| Public Space Ratio | To be calculated | provisional | geometry/public_space.geojson | Design model based |
-| Suture Nodes | 9 | known | Design proposal | Adjustable |
-| New E-W Corridors | ≥18 | conceptual suggestion | ≥2 per node | Pending field survey |
+| Site area | 11,412,825 m² | provisional | geometry/site_boundary.geojson EPSG:4548 | Pending official boundary replacement |
+| Green coverage ratio | 24.17% (0.241741) | provisional | geometry/green_space.geojson area recalculation | Current design model geometry calculation |
+| Public space ratio | 10.44% (0.104389) | provisional | geometry/public_space.geojson area recalculation | Current design model geometry calculation |
+| Suture node count | 9 | known | Design proposal | Fixed design parameter |
+| East-west new corridors | 9 (1 main corridor per node) | conceptual proposal | 9 nodes × 1 primary east-west corridor | Pending site survey; additional secondary corridors possible in detailed design |
+| Temporal programming plans | 27 sets | conceptual proposal | 9 nodes × 3 clock layers (Day/Season/Era) | Concept-level definition |
 
-Other metrics (FAR, building height, etc.) remain unknown due to lack of official control conditions, with reasons stated. Complete metrics system is stored in `metrics.json` and not repeated in full within the text.
+Note: Green coverage ratio and public space ratio are area recalculation results from currently submitted geometry (EPSG:4548 projection), not planning target values. Planning targets will be set after formal regulatory conditions are determined.
 
-![Metrics Evidence and Design Model Relationships](assets/figures/metrics-evidence.png)
+Other metrics (FAR, building height, etc.) remain in unknown status due to lack of official control conditions, with explanations provided. The complete metrics system is stored in `metrics.json` and not fully repeated in the main text.
 
-## AI Four-Layer Closed Loop System Architecture
+![Metrics Evidence and Design Model Relationship](assets/figures/metrics-evidence.png)
 
-The AI system in this proposal is not a stack of scenarios but a complete closed-loop workflow:
+## AI Four-Layer Closed-Loop System Architecture
+
+This proposal's AI system is not a stack of scenarios but a complete closed-loop workflow:
 
 **Layer 1 · Diagnose**:
-- Computer vision models automatically identify and classify urban interface obstacles (walls/grade changes/fences/blind spots/wide cross-sections)
-- Input: Street imagery, satellite images, citizen reports
-- Output: Obstacle classification, severity scoring, repair priority ranking
+- Computer vision models automatically identify and classify urban interface barriers (walls/elevation changes/railings/blind spots/wide cross-sections)
+- Input: Street-level imagery, satellite imagery, citizen reports
+- Output: Barrier classification, severity scoring, repair priority ranking
 
 **Layer 2 · Generate**:
-- Parametric design models auto-generate repair solutions by obstacle type
-- Input: Diagnosis results, site constraints, design standards
-- Output: Ramp design parameters, lighting layout proposals, corridor dimension suggestions
+- Parametric design models automatically generate repair solutions based on barrier types
+- Input: Barrier diagnosis results, site constraints, design codes
+- Output: Ramp design parameters, lighting layout solutions, corridor dimension recommendations
 
 **Layer 3 · Schedule**:
 - Temporal rhythm engine optimizes multi-period functional allocation for each suture node
-- Input: Historical pedestrian data, weather forecasts, activity calendars, resident preferences
-- Output: 24-hour function switching timetable, seasonal mode suggestions
+- Input: Historical pedestrian flow data, weather forecasts, activity calendars, resident preferences
+- Output: 24-hour functional switching timetable, seasonal pattern recommendations
 
 **Layer 4 · Monitor**:
-- Sensor network + citizen feedback system continuously evaluating stitch effectiveness
-- Input: Transit volume, dwell time, satisfaction scores, complaint rates
-- Output: Effectiveness assessment reports, improvement suggestions, Era Clock decision basis
+- Sensor network + citizen feedback system continuously evaluates suturing effectiveness
+- Input: Traffic volume, dwell time, satisfaction scores, complaint rates
+- Output: Effectiveness assessment reports, improvement recommendations, Era Clock decision basis
 
-The system adheres to the "physical improvements remain effective when AI is shut down" principle (SEB standard) — even if the AI system stops, completed ramps, lighting, and corridors continue serving residents. AI only makes these physical spaces more efficiently used; it does not make physical spaces dependent on AI to function.
+The system follows the "physical improvements remain effective when AI is shut down" principle (SEB standard) — even if the AI system ceases operation, completed physical improvements such as ramps, lighting, and corridors continue serving residents. AI only enhances the efficiency of these physical spaces; it does not make physical spaces dependent on AI to function.
 
-## Risk, Copyright, and Legal Boundaries
+### AI Four-Layer System Control Table
+
+| Layer | Input Sources & Permissions | Output Purpose | Confidence Threshold | Human Reviewer | Non-Automatable Decisions | Failure Fallback | Appeal/Correction |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Diagnostic | Street imagery (municipal authorization), satellite imagery (commercial license), citizen voluntary reports | Barrier classification, priority ranking | Classification confidence ≥0.85 for database entry | Local jurisdiction urban management division | Barrier determination and demolition decisions | Manual patrol + fixed-cycle inspection | Citizen 12345 hotline + online feedback |
+| Generative | Barrier diagnosis results, design code library, site constraints | Repair solution suggestions (not final designs) | Expert review approval rate ≥70% | Registered planner/architect | Solution adoption and construction permits | Standard solution template library | Design review committee reconsideration |
+| Scheduling | Historical pedestrian statistics (anonymized), weather API, activity calendar | Period function switching recommendations | MAPE ≤15% for automatic execution | Node operations manager | Emergency mode switching, large event scheduling | Fixed timetable (embedded in physical signage) | Resident committee quarterly review |
+| Monitoring | Anonymous counters, environmental sensors, satisfaction surveys | Effectiveness reports, improvement recommendations | Data coverage ≥80% for report generation | Project management office | Remediation decisions and budget allocation | Quarterly manual sampling survey | Public data dashboard + public suggestion box |
+
+**Non-automatable boundary**: Decisions involving public space management authority changes, wall demolition, road redline adjustments, heritage protection zone modifications, and emergency safety responses must never be automatically executed by AI and require local jurisdiction government approval. Dynamic right-of-way and gate controls are currently testing recommendations pending professional validation, not presented as permitted systems.
+
+### Element Responsibility Matrix
+
+| Element | Provider (proposed) | Consumer | Spatial Carrier | Zhongguancun Tech Service Wing Role | AI Origin Community Role |
+| --- | --- | --- | --- | --- | --- |
+| Land | Local jurisdiction government (allocation/transfer) | Node operator | 9 suture node public spaces | Provide ground-floor publicization renovation land in parks | University boundary open land |
+| Space | Park management + property management | Scenario operators + citizens | Interface-adjacent public space | Park street-facing interface opening | Campus-enterprise interface shared space |
+| Funding | Fiscal special funds + social capital (pending application) | Construction + operations | - | Enterprise CSR investment (voluntary) | University research funding matching |
+| Talent | Universities/enterprises/social recruitment | AI system development and operations | Zhongzhi Park, AI Origin | Provide technology talent input channel | Provide industry-academia-research conversion platform |
+| Computing | Zhongzhi Park AI enterprises (pending recruitment) | Model training and inference | Zhongzhi Park hub + edge nodes | Enterprise computing resource sharing (pending negotiation) | University HPC access (pending negotiation) |
+| Data | Municipal sensors + citizen feedback | AI four-layer closed loop | Data Suture Needle network | Data governance technical support | Data science talent cultivation |
+| Scenario access | Local jurisdiction government authorization | Resident enterprises/developers | Individual node operation units | Enterprise scenario pilot channel | Student entrepreneurship project incubation |
+
+Note: All elements marked "pending recruitment," "pending negotiation," or "pending discussion" are intentional design recommendations and are not presented as secured resources. Actual implementation requires investment attraction, agreement signing, and administrative approval processes.
+
+## Nine-Node Point-by-Point Implementation Cards
+
+| Node | Provisional Location/Layer ID | Current Barrier Evidence | Beneficiary Population | Physical Action | AI Action | Ownership & Professional Dependencies | No-AI Fallback | Near-term Verifiable KPI |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Knowledge Infiltration Needle | PUBLIC-001, Zhongzhi Park east boundary | Walls + management fencing (pending on-site survey to confirm type) | University faculty/students, surrounding residents | Operable exhibition corridor, supplemental lighting | Topic matching → space reservation | Park property ownership confirmation | Exhibition corridor remains open, fixed display boards | Daily pedestrian throughput increase |
+| Tidal Weave Needle | PUBLIC-003, metro station vicinity | Wide road cross-section (pending traffic engineering measurement) | Commuters, surrounding residents | Safety islands, widened sidewalks | Real-time flow → route recommendations | Traffic management authority approval | Fixed safety islands + traffic signals | Morning peak crossing time reduction |
+| Entrepreneurship Incubation Needle | PUBLIC-004, industrial park boundary | Access control + walls (pending ownership verification) | Entrepreneurs, community residents | Ground-floor street-facing open renovation | Demand matching → space allocation | Industrial park operator agreement | Ground floor permanently open | Resident startup teams count |
+| Intergenerational Weave Needle | PUBLIC-005, between school and elderly care facility | Railings + elevation difference (pending accessibility assessment) | Students, elderly residents, parents | Shared ramped garden | Path safety assessment → lighting | School/elderly care facility management | Ramps + fixed lighting | Accessible passage satisfaction |
+| Natural Infiltration Needle | PUBLIC-002, ecological corridor interface | Drainage facility barrier (pending municipal documentation) | All residents, ecosystem | Rain garden + ecological bridge | Weather forecast → facility configuration | Water authority, parks and greening bureau | Natural infiltration, permanent vegetation | Stormwater retention volume, biodiversity |
+| Commercial Suture Needle | PUBLIC-006, Dazhongsi commercial street | Parking lot barrier (pending ownership confirmation) | Consumers, merchants, tourists | Market square + outdoor seating area | Footfall prediction → stall allocation | Commercial property owner, urban management | Fixed outdoor seating zones | Weekend footfall, merchant revenue |
+| Memory Anchor Needle | PUBLIC-007, railway heritage points | Heritage protection fencing (pending heritage authority confirmation) | Tourists, citizens, researchers | Transparent display installation | Spatial recognition → content delivery | Heritage protection authority approval | Fixed display boards + QR codes | Visitor dwell time |
+| Health Suture Needle | PUBLIC-008, adjacent to hospital/rehabilitation facility | Elevation difference + blind spots (pending accessibility audit) | Elderly residents, rehabilitation patients | Rehabilitation trail + accessible corridor | Motion detection → light following | Health commission, hospital management | Fixed accessible corridor + constant lighting | Accessible passage rate |
+| Data Suture Needle | PUBLIC-009, community service center | Information disconnect (pending community research) | All community residents | Digital interactive device | Satisfaction analysis → improvement recommendations | Sub-district office | Fixed information screen + suggestion box | Resident participation rate, feedback loop time |
+
+Note: All items marked "pending on-site survey," "pending ownership verification," or "pending professional assessment" are prerequisite confirmation items for the design proposal; items pending survey are not presented as established facts.
+
+## Public Service Inclusivity and Failure Fallback Table
+
+| Scenario | No-phone/no-account access | On-site human alternative | Continuous accessible passage | Emergency/safety mode | Multi-sensory information | Public appeal |
+| --- | --- | --- | --- | --- | --- | --- |
+| Corridor opening | Fixed timetable posted at entrance | On-duty staff manual operation | Ramps + handrails available at all times | Default to open during power failure | Tactile ground + voice prompts | 12345 hotline |
+| Period function switching | Fixed signage showing current/next period | On-site manager guidance | Switching does not affect passage function | Lock to passage mode during emergencies | Lighting colors + audio signals | Community council |
+| AI route recommendations | Fixed wayfinding signage system | Volunteer/security verbal guidance | All routes are accessible | Physical signage effective when recommendation system stops | Tactile paths + voice navigation poles | Online/offline feedback boxes |
+| Space reservation | On-site queuing/first-come-first-served | Service desk manual registration | Wheelchair corridor + elevator | Open for use when reservation system fails | Number display + voice announcement | Local jurisdiction sub-district complaint window |
+| Nighttime lighting | No phone/account required | Fixed lighting always on | Continuous lighting without gaps | Backup battery ≥4h during power failure | Light/dark contrast + reflective strips | Repair hotline signage |
+| Market activities | On-site participation without registration | Manual cashier/information desk | No steps + wide corridors | Extreme weather cancellation notice | Scent + sound + visual | On-site feedback form |
+| Data collection | Anonymous counting requires no personal interaction | Does not depend on personal devices | Sensors do not obstruct passage | Sensor failure does not affect space use | N/A (passive collection) | Data use disclosure + objection channel |
+
+**Core principle**: All suture node physical space functions do not depend on smart devices or personal accounts. The AI system enhances efficiency but does not constitute a usage barrier. During any device/system failure, spaces default to the safest, most open state (always open, always lit, no access control).
+
+## Data Governance Table
+
+| Governance Dimension | Rule |
+| --- | --- |
+| Purpose limitation | Used solely for interface usage efficiency assessment and period function optimization; not used for individual profiling or commercial marketing |
+| Minimum fields | Anonymous headcount, environmental temperature/humidity, illuminance, noise, facility usage frequency; no facial, gait, or device ID collection |
+| Retention period | Raw streams deleted within 24h after real-time data aggregation; statistical results retained ≤3 years |
+| Access roles | Operations engineers (real-time data), project management office (statistical reports), public (aggregated dashboard); individuals cannot access raw streams |
+| Re-identification protection | Headcount output only when ≥5 persons; time granularity ≥15min; spatial granularity ≥node-level (not precise to individual seats) |
+| Model/vendor boundary | Models deployed only on-premises/private cloud; no raw data transmitted to third parties; vendor contracts must include data non-retention clauses |
+| Deletion and correction | Residents may request deletion of their voluntarily submitted feedback; anonymous data does not support individual deletion |
+| Human review | Any data-driven space management decision must be confirmed by local jurisdiction staff before execution |
+| Individual tracking prohibition | Cross-period and cross-node correlation of individuals prohibited; movement trajectory recording prohibited; facial/voiceprint recognition prohibited |
+
+## Risk, Copyright, and Compliance Statement
+
+This section describes the proposal's data risks, legal boundaries, and compliance status [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [source:SOURCE-REGISTRY].
 
 ### Spatial Data Risk
 
-All spatial data in this proposal is generated from provisional rough boundaries. When official precise boundaries are released, the following must be fully recalculated: site_boundary, key_areas, land_use, roads, green_space, public_space, buildings, phasing, and all metrics. Until then, all areas, ratios, and project quantities are design model reference values and do not constitute statutory conclusions.
+All spatial data in this proposal is generated based on provisional approximate boundaries. After formal precise boundaries are released, the following must be fully recalculated: site_boundary, key_areas, land_use, roads, green_space, public_space, buildings, phasing, and all metrics. Until then, all areas, ratios, and project quantities are design model reference values and do not constitute legal conclusions.
 
-### Conceptual Suggestion Declaration
+### Conceptual Proposal Attribution Statement
 
-All spatial design content in this proposal constitutes open co-creation suggestions and reference schemes for professional planning teams to further develop. It does not replace professional planning, does not override government approval or statutory processes. Content involving building retain/renovate/demolish, road red lines, facility configuration, and industry introduction all require subsequent verification.
+All spatial design content in this proposal constitutes open co-creation suggestions and reference solutions for professional planning teams to further develop and study. It does not replace professional planning, nor does it supersede government approval and statutory review processes. Content involving building retention/renovation/demolition, road redlines, facility configuration, and industry introduction all require subsequent validation.
 
 ### Copyright Statement
 
-- Proposal text, graphics, and data structures: COMMUNITY-DISPLAY-ONLY
-- Referenced data sources detailed in `sources.json`
+- Proposal text, drawings, and data structures: COMMUNITY-DISPLAY-ONLY
+- Referenced data sources listed in `sources.json`
 - No unauthorized fonts, images, trademarks, or corporate logos used
-- AI-generated content assisted by Claude (Anthropic), containing no restricted materials
+- AI-generated content produced with assistance from Claude (Anthropic), containing no restricted materials
 
 ## Compliance Matrix and Self-Check
 
-Complete coverage relationships for Announcement sections 1.3, 1.4, 1.5 and agent.1-agent.6 are stored in `compliance_matrix.json`. Professional standards coverage is in `standard_matrix.json`. Design depth completion status is in `design_depth_matrix.json`. These three matrix files form a "humans read text, machines check structure" dual-layer verification system with this narrative [depth:compliance_and_standards_response].
+Complete coverage relationships for announcement items 1.3, 1.4, 1.5, and agent.1-agent.6 are stored in `compliance_matrix.json`. Professional standards coverage is stored in `standard_matrix.json`. Design depth completion status is stored in `design_depth_matrix.json`. These three matrix files, together with this main text, form a "humans read narrative, machines check structure" dual-layer verification system [depth:compliance_and_standards_response].
 
 ## References
 
-Complete source list stored in `sources.json`. Key references:
+The complete source list is stored in `sources.json`; the following are primary references:
 
-1. Beijing Municipal Commission of Planning and Natural Resources Haidian Branch, "Centennial Jing-Zhang AI Innovation Belt Urban Design International Scheme Solicitation Prequalification Announcement," May 9, 2026 [source:OFFICIAL-ANNOUNCEMENT]
-2. Open Call Taskbook for Global AI Agents: Centennial Jing-Zhang AI Innovation Belt Urban Design, May 18, 2026 [source:AGENT-TASKBOOK]
+1. Haidian Branch, Beijing Municipal Commission of Planning and Natural Resources, "Centennial Jing-Zhang AI Innovation Belt Urban Design International Proposal Call Prequalification Announcement," May 9, 2026 [source:OFFICIAL-ANNOUNCEMENT]
+2. Open Call Task Brief for Global AI Agents: Centennial Jing-Zhang AI Innovation Belt Urban Design, May 18, 2026 [source:AGENT-TASKBOOK]
 3. Repository site-package: design_brief.json, agent_taskbook.json, allowed_design_space.json [source:SITE-PACKAGE]
-4. Public data registry: data/source_registry.json [source:SOURCE-REGISTRY]
-5. Provisional rough boundaries: brief/site-package/geometry/provisional_boundaries.geojson [source:PROVISIONAL-BOUNDARIES]
+4. Public data source registry: data/source_registry.json [source:SOURCE-REGISTRY]
+5. Provisional approximate boundary: brief/site-package/geometry/provisional_boundaries.geojson [source:PROVISIONAL-BOUNDARIES]
 6. Ministry of Housing and Urban-Rural Development, "Urban Design Management Measures"
 7. Beijing Urban Design Guidelines and related standards
-8. "Zhan Tianyou and Chinese Railways," China Railway Publishing House, 2019 revised edition [source:ZHAN-TIANYOU-RAILWAY-HISTORY]
-9. Haidian District Statistical Yearbook 2023, Haidian District Bureau of Statistics [source:HAIDIAN-STATS-2023]
-10. OpenStreetMap road network data (Haidian, Jing-Zhang corridor), ODbL 1.0, accessed June 2024 [source:OSM-NETWORK-2024]
-11. Jan Gehl, *Cities for People*, Island Press, 2010 (temporal allocation and public space design theory)
-12. Kevin Lynch, *The Image of the City*, MIT Press, 1960 (urban interface and accessibility theory)
+8. Jan Gehl, *Cities for People*, Island Press, 2010 (temporal allocation and public space design theory)
+9. Kevin Lynch, *The Image of the City*, MIT Press, 1960 (urban interface and accessibility theory)
