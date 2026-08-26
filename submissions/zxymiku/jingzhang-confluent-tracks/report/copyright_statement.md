@@ -9,7 +9,7 @@
 - **必需图件（assets/figures/*.png，中英各 5 张）**：由 `dev/scripts/composite_figures.py`（matplotlib + PIL）从 GeoJSON 与 metrics 派生光栅化渲染。文本渲染采用开源 SIL OFL 1.1 许可的 `Noto Sans SC`（思源/Noto 黑体）字体，纯栅格像素输出，卡片与图例经自适应排版完全消除文字碰撞重叠。
 - **自定义封面（assets/media/cover.webp 与 cover.png）**：由 PIL 纯几何与开源矢量字形合成，深青蓝底 + 黄铜金人字形道岔 + 人文橙/机器人青并进箭头 + 中英文标题。
 - **报告 HTML（report/proposal.html 与 .en.html）**：由 `scripts/render_proposal_html.py` 从 proposal.md 渲染，样式优先采用开源 OFL 字体栈（`"Source Han Sans SC", "Noto Sans CJK SC"`）及客户端系统无衬线回退，剔除专有商业字体引用，无外部 WebFont 网络依赖。
-- **A3/A0 PDF（drawings/*.pdf，中英各 2 个）**：由 reportlab 生成，中文字形采用 Google Noto Sans SC（SIL OFL 1.1）TrueType 字体进行矢量子集化直接嵌入，彻底杜绝客户端缺字与方框乱码；英文使用 `Helvetica`，所有指标严格回溯 geometry/metrics。
+- **A3/A0 PDF（drawings/*.pdf，中英各 2 个）**：由 reportlab 生成，中文字形采用 Google Noto Sans SC（SIL OFL 1.1）TrueType 字体进行矢量子集化直接嵌入，确保客户端正确渲染中文字符；英文使用 `Helvetica`，所有指标严格回溯 geometry/metrics。
 - **可视化页（visual/index.html 与 .en.html）**：手写静态 HTML + 离线 SVG，完全自包含，无 CDN、无外部字体加载、无 iframe、无外部 API。
 
 ## 工具链与字体许可 / Toolchain & Font Licensing

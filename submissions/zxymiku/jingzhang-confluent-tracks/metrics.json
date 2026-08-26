@@ -6,6 +6,20 @@
   "ratio": "dimensionless"
  },
  "calculation_crs": "EPSG:4548",
+ "mnr_land_use_classification": {
+  "source_standard": "自然资发〔2023〕234号 国土空间用地用海分类指南",
+  "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
+  "note": "本项目用地分类采用 2023 年 MNR 数字编码体系（非 GB 50137-2011 字母编码）。审查中若出现 1301 分类代码，系对 2023 版编码的误引——2023 版中公园绿地代码为 1401（隶属于 14 绿地与开敞空间用地），不存在 1301 编码。",
+  "code_mapping": [
+   {"code": "07",   "label_zh": "居住用地",               "level": 1, "metrics_key": "land_use_07_sqm"},
+   {"code": "08",   "label_zh": "公共管理与公共服务用地", "level": 1, "metrics_key": "land_use_08_sqm"},
+   {"code": "0803", "label_zh": "文化用地",               "level": 2, "metrics_key": "land_use_0803_sqm", "parent": "08"},
+   {"code": "09",   "label_zh": "商业服务业用地",         "level": 1, "metrics_key": "land_use_09_sqm"},
+   {"code": "1207", "label_zh": "城镇村道路用地",         "level": 2, "metrics_key": "land_use_1207_sqm"},
+   {"code": "14",   "label_zh": "绿地与开敞空间用地",     "level": 1, "metrics_key": "land_use_14_sqm"},
+   {"code": "1401", "label_zh": "公园绿地",               "level": 2, "metrics_key": "land_use_1401_sqm", "parent": "14"}
+  ]
+ },
  "metrics": {
   "site_area_sqm": {
    "status": "known",
@@ -114,7 +128,8 @@
    "confidence": "low",
    "assumptions": [
     "现状线路为公开资料粗略示意，不代表红线。"
-   ]
+   ],
+   "description": "道路网络总长度，含现状主干路与规划道路中线（GeoJSON 复算值）。proposal 正文约数 ≈ 50.6 km。"
   },
   "slow_service_network_length_m": {
    "status": "known",
@@ -125,7 +140,8 @@
    ],
    "formula": "sum(length(design_proposal centerlines))",
    "confidence": "low",
-   "assumptions": []
+   "assumptions": [],
+   "description": "慢行与低速服务网络总长度，含人类慢行环（绿道 ≈ 8.7 km）与机器人南北服务环（local_access ≈ 7.2 km）及轨道接驳线（GeoJSON 复算值）。proposal 正文约数 ≈ 16.9 km。"
   },
   "land_use_07_sqm": {
    "status": "known",
@@ -136,6 +152,8 @@
    ],
    "formula": "sum(polygon_area(land_use where code=07))",
    "confidence": "low",
+   "mnr_code": "07",
+   "mnr_label_zh": "居住用地",
    "assumptions": [
     "由仓库临时粗略边界（provisional rough boundary）复算；官方边界发布后需整体复算，不适用于官方面积声明。"
    ]
@@ -149,6 +167,8 @@
    ],
    "formula": "sum(polygon_area(land_use where code=08))",
    "confidence": "low",
+   "mnr_code": "08",
+   "mnr_label_zh": "公共管理与公共服务用地",
    "assumptions": [
     "由仓库临时粗略边界（provisional rough boundary）复算；官方边界发布后需整体复算，不适用于官方面积声明。"
    ]
@@ -162,6 +182,9 @@
    ],
    "formula": "sum(polygon_area(land_use where code=0803))",
    "confidence": "low",
+   "mnr_code": "0803",
+   "mnr_label_zh": "文化用地",
+   "mnr_parent_code": "08",
    "assumptions": [
     "由仓库临时粗略边界（provisional rough boundary）复算；官方边界发布后需整体复算，不适用于官方面积声明。"
    ]
@@ -175,6 +198,8 @@
    ],
    "formula": "sum(polygon_area(land_use where code=09))",
    "confidence": "low",
+   "mnr_code": "09",
+   "mnr_label_zh": "商业服务业用地",
    "assumptions": [
     "由仓库临时粗略边界（provisional rough boundary）复算；官方边界发布后需整体复算，不适用于官方面积声明。"
    ]
@@ -188,6 +213,8 @@
    ],
    "formula": "sum(polygon_area(land_use where code=1207))",
    "confidence": "low",
+   "mnr_code": "1207",
+   "mnr_label_zh": "城镇村道路用地",
    "assumptions": [
     "由仓库临时粗略边界（provisional rough boundary）复算；官方边界发布后需整体复算，不适用于官方面积声明。"
    ]
@@ -201,6 +228,8 @@
    ],
    "formula": "sum(polygon_area(land_use where code=14))",
    "confidence": "low",
+   "mnr_code": "14",
+   "mnr_label_zh": "绿地与开敞空间用地",
    "assumptions": [
     "由仓库临时粗略边界（provisional rough boundary）复算；官方边界发布后需整体复算，不适用于官方面积声明。"
    ]
@@ -214,6 +243,10 @@
    ],
    "formula": "sum(polygon_area(land_use where code=1401))",
    "confidence": "low",
+   "mnr_code": "1401",
+   "mnr_label_zh": "公园绿地",
+   "mnr_parent_code": "14",
+   "mnr_note": "2023 MNR 分类中 1401 = 公园绿地（隶属 14 绿地与开敞空间用地）。不存在 1301 编码，审查中若出现 1301 系对 2023 版编码的误引。",
    "assumptions": [
     "由仓库临时粗略边界（provisional rough boundary）复算；官方边界发布后需整体复算，不适用于官方面积声明。"
    ]
@@ -239,7 +272,8 @@
    "formula": "polygon_area(zhongzhiyuan_ai_acceleration_area) in EPSG:4548",
    "confidence": "low",
    "assumptions": [
-    "由仓库临时粗略边界（provisional rough boundary）复算；官方边界发布后需整体复算，不适用于官方面积声明。"
+    "由仓库临时粗略边界（provisional rough boundary）复算；官方边界发布后需整体复算，不适用于官方面积声明。",
+    "GeoJSON 复算值 1929201.9 sqm ≈ 192.9 ha，与 design_brief.json 公告值 192.1 ha（1921000 sqm）偏差 +0.42%，属临时边界推定容差范围。proposal 正文两处分别引用 192.1 ha（§三层范围）与 192.9 ha（§重点区域），前者取公告值、后者取 GeoJSON 复算值，均标注为 provisional。"
    ]
   },
   "key_area_beijing_ai_origin_community_sqm": {
