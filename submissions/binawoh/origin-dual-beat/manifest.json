@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "origin-dual-beat",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "0.1.0",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5bac7c9282b78521685a4f7fdb116fee2d34b1aadaedcc633e32edbe7db2c18f"
+      "sha256": "6ac4f07d1652bf23b3143c68992b7cf2ad7b11ff13af61bc720da10585009e27"
     },
     {
       "path": "compliance_matrix.json",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "002b7df08da771c8ce705644a678a5bbbda99fa076afbda82948ad3796cf44ce"
+      "sha256": "8e583da5c9b78911e8c5784d704fb446f529f7ce9c8ec6cd9739bc997b82c3ac"
     }
   ],
   "validation_claim": {
