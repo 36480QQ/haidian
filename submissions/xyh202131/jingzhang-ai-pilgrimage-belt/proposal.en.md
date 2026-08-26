@@ -5,8 +5,8 @@ language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-version: "61.0"
-iteration: "61.0"
+version: "62.0"
+iteration: "62.0"
 license: "CC-BY-4.0"
 summary: "Haidian's innovation density becomes public capability only when people can use, question and exit without accounts, devices or professional identity. Twin-Track Jing-Zhang keeps ordinary tasks continuous and G0 verification intermittent and stoppable; three distinct prototypes connect evidence, risk and professional handoff. Boundaries remain provisional; outcomes, approvals, field execution and accepted professional duties remain zero."
 tracks:
@@ -22,7 +22,7 @@ scenarios:
   - robot-delivery-low-speed
 ---
 
-# Twin-Track Jing-Zhang
+## Proposal ruling
 
 - Chinese name: **双轨京张**
 - Back-stage audit system: JZ-AIOS (Jing-Zhang Auditable Innovation Operating System)

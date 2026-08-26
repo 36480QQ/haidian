@@ -5,8 +5,8 @@ language: "zh"
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-version: "61.0"
-iteration: "61.0"
+version: "62.0"
+iteration: "62.0"
 license: "CC-BY-4.0"
 summary: "海淀的创新密度，只有在普通人无需账户、设备或专业身份也能使用、质疑和退出时，才会成为公共能力。双轨京张以连续日常轨保障普通任务，以间歇、可停止的 G0 验证轨承载概念测试；三种不可互换原型连接证据、风险与专业交接。边界仍为临时约束，现实结果、批准、现场执行和专业接责仍为 0。"
 tracks:
@@ -22,7 +22,7 @@ scenarios:
   - robot-delivery-low-speed
 ---
 
-# 双轨京张
+## 方案总纲
 
 - 英文名称：TWIN-TRACK JING-ZHANG
 - 后台核验系统：JZ-AIOS（Jing-Zhang Auditable Innovation Operating System，京张可验证场景操作系统）
