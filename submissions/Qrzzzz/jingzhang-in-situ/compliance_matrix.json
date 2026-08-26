@@ -233,7 +233,14 @@
       "visual_sections": ["F01 三层范围三区两翼", "F06 命名与Logo方向", "T01 三定位五功能"],
       "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518", "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],
       "assumption_ids": ["A-GEOM-001", "A-REGION-001", "A-RIGHTS-001"],
-      "self_check_ids": ["VISUAL_PACKAGING", "PROFESSIONAL_EVIDENCE"]
+      "self_check_ids": ["VISUAL_PACKAGING", "PROFESSIONAL_EVIDENCE"],
+      "required_output_anchors": {
+        "proposal_narrative": {"proposal_section": "三层范围工作框架 / 三大定位、五大功能与三区两翼", "table_refs": ["T01"], "figure_refs": ["F01"], "drawing_pages": ["A3 p2", "A0 Board 1"]},
+        "logo_or_visual_identity_direction": {"proposal_section": "三层范围工作框架 / 总体概念、命名与品牌识别", "figure_refs": ["F06"], "drawing_pages": ["A3 p1", "A3 p7", "A0 Board 2"], "visual_ids": ["identity-system"]},
+        "overall_structure_diagram": {"proposal_section": "三层范围工作框架 / 十二个生活横断面", "figure_refs": ["F01"], "drawing_pages": ["A3 p2", "A0 Board 1"], "visual_ids": ["site-overview"]},
+        "compliance_matrix_entry": {"structured_path": "compliance_matrix.json#requirements[requirement_id=agent.1]"},
+        "visual_index_section": {"figure_refs": ["F01", "F06"], "visual_ids": ["site-overview", "identity-system"]}
+      }
     },
     {
       "requirement_id": "agent.2",
@@ -246,7 +253,14 @@
       "visual_sections": ["T02 七项背景案例", "F07 AI生态与八要素回路", "产业空间映射"],
       "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518", "CASE-SEOUL-AI-HUB-20250710", "CASE-SINGAPORE-ONE-NORTH-20230703", "CASE-STATION-F-FAI-20260211", "CASE-HELSINKI-MARIA-AREA", "CASE-MILA-IMPACT-20211118", "CASE-DUBAI-FUTURE-ACCELERATORS", "CASE-AMSTERDAM-MARINETERREIN"],
       "assumption_ids": ["A-OPS-001", "A-REGION-001", "A-CONTROLS-001"],
-      "self_check_ids": ["PROFESSIONAL_EVIDENCE"]
+      "self_check_ids": ["PROFESSIONAL_EVIDENCE"],
+      "required_output_anchors": {
+        "case_study_table": {"proposal_section": "统筹研究范围产业与未来城市研究 / 全球案例机制比较", "table_refs": ["T02"], "figure_refs": ["F07"], "drawing_pages": ["A3 p8", "A0 Board 2"]},
+        "ecosystem_map": {"proposal_section": "统筹研究范围产业与未来城市研究 / 生态图与八要素机制", "figure_refs": ["F07"], "drawing_pages": ["A3 p8", "A0 Board 2"], "visual_ids": ["ai-ecosystem"]},
+        "industry_space_mapping": {"proposal_section": "三层范围工作框架 / 三大定位、五大功能与三区两翼", "table_refs": ["T01"], "figure_refs": ["F01", "F07"]},
+        "metrics_and_sources": {"proposal_section": "设计依据与资料清单；指标体系、面积复算与合规矩阵", "structured_paths": ["sources.json", "metrics.json"], "figure_refs": ["F05"], "drawing_pages": ["A3 p6", "A0 Board 1"]},
+        "visual_index_section": {"figure_refs": ["F07"], "visual_ids": ["ai-ecosystem"]}
+      }
     },
     {
       "requirement_id": "agent.3",
@@ -259,7 +273,14 @@
       "visual_sections": ["T03 七类用户", "SC01-SC12", "F08 十二场景图谱", "T04 场景空间运营矩阵"],
       "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"],
       "assumption_ids": ["A-SURVEY-001", "A-OPS-001", "A-CONTROLS-001"],
-      "self_check_ids": ["PROFESSIONAL_EVIDENCE", "VISUAL_PACKAGING"]
+      "self_check_ids": ["PROFESSIONAL_EVIDENCE", "VISUAL_PACKAGING"],
+      "required_output_anchors": {
+        "scenario_cards": {"proposal_section": "AI 创新生态、人才画像与 AI+ 场景 / 十二张场景卡", "id_refs": ["SC01", "SC02", "SC03", "SC04", "SC05", "SC06", "SC07", "SC08", "SC09", "SC10", "SC11", "SC12"], "table_refs": ["T04"], "figure_refs": ["F08"]},
+        "persona_table": {"proposal_section": "AI 创新生态、人才画像与 AI+ 场景 / 七类用户画像", "id_refs": ["U1", "U2", "U3", "U4", "U5", "U6", "U7"], "table_refs": ["T03"], "figure_refs": ["F08"]},
+        "scenario_space_operation_matrix": {"proposal_section": "AI 创新生态、人才画像与 AI+ 场景 / 十二张场景卡", "table_refs": ["T04"], "figure_refs": ["F08"], "drawing_pages": ["A3 p9", "A0 Board 2"]},
+        "privacy_and_human_review_boundary": {"proposal_section": "AI 创新生态、人才画像与 AI+ 场景 / 七类用户画像；风险、版权与合规说明", "table_refs": ["T04"], "figure_refs": ["F08"]},
+        "visual_index_section": {"figure_refs": ["F08"], "visual_ids": ["scenario-matrix"]}
+      }
     },
     {
       "requirement_id": "agent.4",
@@ -272,7 +293,14 @@
       "visual_sections": ["F03 三地标", "F09 开放贡献谱与C01-C09组件库", "SC10 产品试用室"],
       "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518", "CASE-HELSINKI-MARIA-AREA", "CASE-AMSTERDAM-MARINETERREIN"],
       "assumption_ids": ["A-CONTROLS-001", "A-RIGHTS-001", "A-OPS-001"],
-      "self_check_ids": ["VISUAL_PACKAGING", "PROFESSIONAL_EVIDENCE"]
+      "self_check_ids": ["VISUAL_PACKAGING", "PROFESSIONAL_EVIDENCE"],
+      "required_output_anchors": {
+        "public_space_design": {"proposal_section": "蓝绿空间、公共空间与城市风貌", "figure_refs": ["F04", "F09"], "drawing_pages": ["A3 p5", "A3 p10", "A0 Board 1", "A0 Board 2"]},
+        "landmark_catalog": {"proposal_section": "重点区域详细设计；蓝绿空间、公共空间与城市风貌 / 三地标、开放贡献谱与组件库", "figure_refs": ["F03", "F09"]},
+        "honor_display_system": {"proposal_section": "蓝绿空间、公共空间与城市风貌 / 三地标、开放贡献谱与组件库", "figure_refs": ["F09"], "visual_ids": ["landmarks-components"]},
+        "component_library": {"proposal_section": "蓝绿空间、公共空间与城市风貌 / 三地标、开放贡献谱与组件库", "id_refs": ["C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "C09"], "figure_refs": ["F09"]},
+        "visual_index_section": {"figure_refs": ["F03", "F09"], "visual_ids": ["key-areas", "landmarks-components"]}
+      }
     },
     {
       "requirement_id": "agent.5",
@@ -285,7 +313,14 @@
       "visual_sections": ["F06 总体识别与文化导视分层", "F10 来路在场共创", "国际传播文案"],
       "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518", "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"],
       "assumption_ids": ["A-RIGHTS-001", "A-BILINGUAL-001", "A-SURVEY-001"],
-      "self_check_ids": ["VISUAL_PACKAGING", "PROFESSIONAL_EVIDENCE"]
+      "self_check_ids": ["VISUAL_PACKAGING", "PROFESSIONAL_EVIDENCE"],
+      "required_output_anchors": {
+        "culture_narrative": {"proposal_section": "蓝绿空间、公共空间与城市风貌 / 文化、导视与国际传播", "figure_refs": ["F10"], "drawing_pages": ["A3 p11", "A0 Board 2"]},
+        "signage_system_direction": {"proposal_section": "蓝绿空间、公共空间与城市风貌 / 文化、导视与国际传播", "figure_refs": ["F10"], "visual_ids": ["culture-wayfinding"]},
+        "spatial_storyline": {"proposal_section": "蓝绿空间、公共空间与城市风貌 / 文化、导视与国际传播", "story_refs": ["来路—在场—共创", "轨迹—接口—回声"], "figure_refs": ["F01", "F10"]},
+        "international_communication_copy": {"proposal_section": "蓝绿空间、公共空间与城市风貌 / 文化、导视与国际传播", "figure_refs": ["F10"]},
+        "visual_index_section": {"figure_refs": ["F10"], "visual_ids": ["culture-wayfinding"]}
+      }
     },
     {
       "requirement_id": "agent.6",
@@ -298,7 +333,108 @@
       "visual_sections": ["T05 建议性年历", "F11 开发者社区与转化路径", "T06 IM01-IM13实施表"],
       "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518", "CASE-SEOUL-AI-HUB-20250710", "CASE-STATION-F-FAI-20260211", "CASE-DUBAI-FUTURE-ACCELERATORS"],
       "assumption_ids": ["A-OPS-001", "A-REGION-001", "A-RIGHTS-001"],
-      "self_check_ids": ["PROFESSIONAL_EVIDENCE", "VISUAL_PACKAGING"]
+      "self_check_ids": ["PROFESSIONAL_EVIDENCE", "VISUAL_PACKAGING"],
+      "required_output_anchors": {
+        "annual_event_system": {"proposal_section": "更新项目清单、实施政策与分期计划 / 年度运营与转化路径", "table_refs": ["T05"], "figure_refs": ["F11"], "drawing_pages": ["A3 p12", "A0 Board 2"]},
+        "brand_ip_system": {"proposal_section": "更新项目清单、实施政策与分期计划 / 年度运营与转化路径", "brand_refs": ["京张在场周", "全球城市 AI 接口论坛"], "table_refs": ["T05"], "figure_refs": ["F06", "F11"]},
+        "developer_community_operation": {"proposal_section": "更新项目清单、实施政策与分期计划 / 年度运营与转化路径", "table_refs": ["T05"], "figure_refs": ["F11"]},
+        "scenario_open_operation": {"proposal_section": "更新项目清单、实施政策与分期计划 / 年度运营与转化路径", "figure_refs": ["F11"]},
+        "conversion_pathway": {"proposal_section": "更新项目清单、实施政策与分期计划 / 年度运营与转化路径", "figure_refs": ["F11"]},
+        "visual_index_section": {"figure_refs": ["F11"], "visual_ids": ["operations-pathway"]}
+      }
     }
-  ]
+  ],
+  "review_navigation": {
+    "phase": "phase1_current_rule_sync_competitive_thesis_review_navigation",
+    "target_score": 96,
+    "thesis_zh": "京张在场把 AI 从隐藏能力变成三处公众可见、可人工接管、可验证、可撤回的城市界面。",
+    "thesis_en": "Jing-Zhang In Situ turns AI from a hidden capability into three urban interfaces that the public can see, take over, verify, and withdraw.",
+    "evaluation_criteria": [
+      {"id": "people_present", "zh": "人在场：可进入、可理解、可申诉、可获得人工帮助", "en": "People present: entry, intelligibility, appeal, and human help"},
+      {"id": "evidence_present", "zh": "证据在场：来源、状态、失败与重算链可追溯", "en": "Evidence present: traceable sources, status, failures, and recalculation"},
+      {"id": "responsibility_present", "zh": "责任在场：责任角色、人工接管、停止与撤回不被界面隐藏", "en": "Responsibility present: accountable roles, human takeover, stop, and withdrawal remain visible"}
+    ],
+    "primary_messages": [
+      {"id": "M1", "zh": "三重在场是统一评价准则", "en": "Threefold presence is the shared evaluation test"},
+      {"id": "M2", "zh": "一条在场脊柱＋三处在场原型＋十二条候选责任横断面是固定空间语法", "en": "One in-situ spine + three prototypes + twelve candidate responsibility cross-sections is the fixed spatial grammar"},
+      {"id": "M3", "zh": "十二场景以前台三旗舰＋九支持组织，后台编号不变", "en": "Twelve scenarios are presented as three flagships + nine supports while backend IDs remain unchanged"},
+      {"id": "M4", "zh": "七个行动包和一个有期限、可逆的既有项目首用试验说明如何开始与撤回", "en": "Seven action packages and one time-bounded reversible first-use trial show how work starts and withdraws"}
+    ],
+    "reading_paths": {
+      "30_seconds": {"route": ["F01", "F03", "F08", "F11"], "question": "主命题、空间语法、3+9 场景和首用退出能否同屏读到？"},
+      "3_minutes": {"route": ["F01", "F03", "F08", "F11"], "question": "每页能否读到一个判断、一个证据状态、一个人工 Gate 和一个限制？"},
+      "15_minutes": {"route": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "T01-T07", "core_claims", "agent_output_anchors"], "question": "能否逐项回溯空间、运行、来源、限制和撤回？"}
+    },
+    "core_claims": [
+      {"id": "CL01", "claim_zh": "三处界面共同接受人在场、证据在场、责任在场的评价。", "claim_en": "The three interfaces share the people/evidence/responsibility-present test.", "proposal_sections": ["三层范围工作框架"], "figure_refs": ["F01", "F06"], "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"], "limitation_zh": "概念建议，不暗示实施。"},
+      {"id": "CL02", "claim_zh": "临时范围只支持生成与比较，正式资料触发整包重算。", "claim_en": "Provisional scope supports generation and comparison only; official inputs trigger package-wide recalculation.", "proposal_sections": ["设计依据与资料清单", "指标体系、面积复算与合规矩阵", "风险、版权与合规说明"], "figure_refs": ["F01", "F05"], "geometry_refs": ["geometry/site_boundary.geojson#SITE-001"], "metric_refs": ["site_area_sqm"], "source_ids": ["DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"], "limitation_zh": "不支持红线、权属、FAR、高度或工程判断。"},
+      {"id": "CL03", "claim_zh": "遗址公园在场脊柱与 CX01—CX12 责任横断面共同发现日常断点。", "claim_en": "The heritage-park spine and CX01–CX12 responsibility cross-sections jointly find everyday breaks.", "proposal_sections": ["三层范围工作框架", "交通、轨道、市政与公共服务设施"], "figure_refs": ["F01", "F04"], "geometry_refs": ["geometry/roads.geojson#ROAD-001", "geometry/public_space.geojson#PUBLIC-001"], "limitation_zh": "横断面是候选调查单元，不是工程线位。"},
+      {"id": "CL04", "claim_zh": "众智园验证、AI 原点转译、大钟寺公共试用形成三处差异化在场原型。", "claim_en": "Zhongzhiyuan validates, AI Origin translates, and Dazhongsi hosts public trials as differentiated prototypes.", "proposal_sections": ["重点区域详细设计"], "figure_refs": ["F03", "F09"], "geometry_refs": ["geometry/key_areas.geojson#PROV-KEY-001", "geometry/key_areas.geojson#PROV-KEY-002", "geometry/key_areas.geojson#PROV-KEY-003"], "metric_refs": ["key_area_count"], "limitation_zh": "三块边界均为 provisional。"},
+      {"id": "CL05", "claim_zh": "SC01、SC05、SC10 是三旗舰，其余九项作为支持场景完整覆盖。", "claim_en": "SC01, SC05, and SC10 are flagships; the other nine remain fully covered supporting scenarios.", "proposal_sections": ["AI 创新生态、人才画像与 AI+ 场景"], "table_refs": ["T04"], "figure_refs": ["F08"], "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"], "limitation_zh": "分组只改变前台层级，不改变 SC01—SC12。"},
+      {"id": "CL06", "claim_zh": "十二场景共用最小数据、运营角色、人工、低技术、申诉、进入、评价和退出责任合同。", "claim_en": "All twelve scenarios share minimum-data, operator, human, low-tech, appeal, entry, evaluation, and exit fields.", "proposal_sections": ["AI 创新生态、人才画像与 AI+ 场景", "风险、版权与合规说明"], "table_refs": ["T03", "T04"], "figure_refs": ["F08"], "limitation_zh": "没有责任人或高风险问题不能闭环即不进入或停止。"},
+      {"id": "CL07", "claim_zh": "八要素经研究、匹配、受控测试、公共共测和反馈形成有 Gate 的循环。", "claim_en": "Eight elements form a gated research, matching, controlled-test, public-co-test, and feedback loop.", "proposal_sections": ["统筹研究范围产业与未来城市研究"], "table_refs": ["T02"], "figure_refs": ["F07"], "source_ids": ["CASE-SEOUL-AI-HUB-20250710", "CASE-SINGAPORE-ONE-NORTH-20230703", "CASE-AMSTERDAM-MARINETERREIN"], "limitation_zh": "案例仅支持背景机制，不支持本地数字或合作。"},
+      {"id": "CL08", "claim_zh": "KEEP、OPEN、INTENSIFY 与公共首层、慢行、蓝绿情景构成可逆更新。", "claim_en": "KEEP, OPEN, INTENSIFY and public-ground-floor, mobility, and blue-green scenarios form reversible renewal.", "proposal_sections": ["总体设计范围城市更新与控规深度城市设计", "用地、建筑规模与拆改留方案", "交通、轨道、市政与公共服务设施", "蓝绿空间、公共空间与城市风貌"], "figure_refs": ["F02", "F04", "F05"], "geometry_refs": ["geometry/land_use.geojson#LU-001", "geometry/land_use.geojson#LU-002", "geometry/land_use.geojson#LU-003", "geometry/land_use.geojson#LU-004", "geometry/buildings.geojson#BLDG-001", "geometry/green_space.geojson#GREEN-001"], "metric_refs": ["building_footprint_area_sqm", "green_ratio", "public_space_ratio"], "limitation_zh": "不补造 FAR、高度、密度、拆改留或红线。"},
+      {"id": "CL09", "claim_zh": "唯一首用试验绑定既有 SC10＋IM06，在书面期限内运行，届满或失败即撤。", "claim_en": "The single first-use trial binds existing SC10 + IM06 within a written period and withdraws on expiry or failure.", "proposal_sections": ["AI 创新生态、人才画像与 AI+ 场景", "更新项目清单、实施政策与分期计划"], "table_refs": ["T04", "T06"], "figure_refs": ["F08", "F11"], "geometry_refs": ["geometry/phasing.geojson#PHASE-001"], "limitation_zh": "不新增 SC13 或 IM14，不宣称实测绩效。"},
+      {"id": "CL10", "claim_zh": "AP1—AP7 覆盖 IM01—IM13，并把 6 个 agent 的 31 项输出逐项锚定。", "claim_en": "AP1–AP7 cover IM01–IM13 and individually anchor all 31 outputs from six agents.", "proposal_sections": ["更新项目清单、实施政策与分期计划", "指标体系、面积复算与合规矩阵"], "table_refs": ["T05", "T06", "T07"], "figure_refs": ["F05", "F11"], "geometry_refs": ["geometry/phasing.geojson#PHASE-001"], "limitation_zh": "完成仅指提交证据齐备，不代表现实审批或实施。"}
+    ],
+    "scenario_portfolio": {
+      "flagships": [
+        {"scenario_id": "SC01", "prototype": "众智园河岸验证界面", "role": "验证在场", "package": "AP3"},
+        {"scenario_id": "SC05", "prototype": "AI 原点开放首层校园", "role": "人工匹配与转译在场", "package": "AP4"},
+        {"scenario_id": "SC10", "prototype": "大钟寺站城四象限客厅", "role": "公共试用与撤场在场", "package": "AP5"}
+      ],
+      "supports": [
+        {"scenario_id": "SC02", "supports": "SC01", "role": "能源与热安全"},
+        {"scenario_id": "SC03", "supports": "SC01", "role": "无障碍与现场安全"},
+        {"scenario_id": "SC04", "supports": "SC01/SC05", "role": "公开标准共创"},
+        {"scenario_id": "SC06", "supports": "SC05", "role": "共享设施排程"},
+        {"scenario_id": "SC07", "supports": "SC05", "role": "人才生活服务"},
+        {"scenario_id": "SC08", "supports": "in_situ_spine", "role": "无障碍连续"},
+        {"scenario_id": "SC09", "supports": "SC10", "role": "站城到达"},
+        {"scenario_id": "SC11", "supports": "SC10", "role": "文化记忆"},
+        {"scenario_id": "SC12", "supports": "all_prototypes", "role": "公共服务与人工转接"}
+      ]
+    },
+    "action_packages": [
+      {"package_id": "AP1", "title_zh": "证据基线与重算", "implementation_ids": ["IM01", "IM13"], "gate": "权威版本、差异和哈希可追溯", "withdrawal": "来源冲突即冻结派生指标"},
+      {"package_id": "AP2", "title_zh": "横断面与责任协议", "implementation_ids": ["IM02", "IM03"], "gate": "调查许可、责任角色、申诉和停止协议齐备", "withdrawal": "无许可或责任人即不进入"},
+      {"package_id": "AP3", "title_zh": "众智园原型", "implementation_ids": ["IM04"], "gate": "权属、消防、能源和测试协议齐备", "withdrawal": "专业条件或安全失败即停"},
+      {"package_id": "AP4", "title_zh": "AI 原点原型", "implementation_ids": ["IM05"], "gate": "数据许可、设施和人工顾问齐备", "withdrawal": "泄露、持续误配或设施不明即人工回退"},
+      {"package_id": "AP5", "title_zh": "大钟寺原型", "implementation_ids": ["IM06"], "gate": "场地、产品、人员、消费者权益、投诉和撤场许可齐备", "withdrawal": "权利、安全、误导或投诉闭环失败即撤场"},
+      {"package_id": "AP6", "title_zh": "公共界面与身份", "implementation_ids": ["IM07", "IM08", "IM09", "IM10"], "gate": "权属、维护、无障碍、史实和展示同意齐备", "withdrawal": "任一关键条件失败即移除、下架或撤回"},
+      {"package_id": "AP7", "title_zh": "运营与协同", "implementation_ids": ["IM11", "IM12"], "gate": "逐项活动许可、资源、责任与机构授权齐备", "withdrawal": "无许可或授权即取消，不称既有合作"}
+    ],
+    "first_use_trial": {
+      "scenario_id": "SC10",
+      "implementation_id": "IM06",
+      "status": "conceptual_recommendation",
+      "time_limit": "set_in_writing_by_authorized_site_and_operating_roles; expiry_defaults_to_removal",
+      "entry_gates": ["product_rights", "site_permission", "accountable_staff", "consumer_rights", "accessibility", "complaint_channel", "removal_plan"],
+      "human_takeover": "host_can_switch_to_human_or_paper_feedback_at_any_time",
+      "stop_conditions": ["safety_issue", "rights_dispute", "misleading_marketing", "complaint_loop_failure", "written_period_expiry"],
+      "non_expansion": "Uses existing SC10 and IM06; creates neither SC13 nor IM14."
+    },
+    "id_register": {
+      "cross_sections": ["CX01", "CX02", "CX03", "CX04", "CX05", "CX06", "CX07", "CX08", "CX09", "CX10", "CX11", "CX12"],
+      "personas": ["U1", "U2", "U3", "U4", "U5", "U6", "U7"],
+      "components": ["C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "C09"],
+      "industrial_validation": ["TVS-1", "TVS-2", "TVS-3"],
+      "implementation_items": [
+        {"id": "IM01", "package_id": "AP1", "title_zh": "正式边界与资料基线"},
+        {"id": "IM02", "package_id": "AP2", "title_zh": "十二横断面现场审计"},
+        {"id": "IM03", "package_id": "AP2", "title_zh": "状态、人工接管与申诉协议"},
+        {"id": "IM04", "package_id": "AP3", "title_zh": "众智园三类产业验证场景"},
+        {"id": "IM05", "package_id": "AP4", "title_zh": "AI 原点成果匹配与共享中试"},
+        {"id": "IM06", "package_id": "AP5", "title_zh": "大钟寺产品试用与城市窗口"},
+        {"id": "IM07", "package_id": "AP6", "title_zh": "三处公共地标原型"},
+        {"id": "IM08", "package_id": "AP6", "title_zh": "公共空间组件库"},
+        {"id": "IM09", "package_id": "AP6", "title_zh": "文化导视与国际传播"},
+        {"id": "IM10", "package_id": "AP6", "title_zh": "京张开放贡献谱"},
+        {"id": "IM11", "package_id": "AP7", "title_zh": "年度活动与开发者社区"},
+        {"id": "IM12", "package_id": "AP7", "title_zh": "外部区域候选协同接口"},
+        {"id": "IM13", "package_id": "AP1", "title_zh": "正式资料到位后的全量重算"}
+      ]
+    },
+    "coverage_summary": {"core_claims": "10/10", "agents": "6/6", "required_outputs": "31/31", "scenarios": "3_flagships+9_supports", "implementation_mapping": "13/13_into_7_packages"}
+  }
 }

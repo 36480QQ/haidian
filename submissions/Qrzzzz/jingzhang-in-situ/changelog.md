@@ -1,5 +1,18 @@
 # 方案迭代记录
 
+## v0.3 - 2026-08-27
+
+### Phase 1 current-rule sync, thesis compression, and review navigation
+
+- Reset the front-stage narrative to one thesis and four primary messages without changing the project name or F/T/SC/CX/IM/C numbering.
+- Made people present, evidence present, and responsibility present the shared evaluation test; fixed the spatial grammar as one in-situ spine, three prototypes, twelve candidate responsibility cross-sections, and one time-bounded reversible first-use trial.
+- Reorganized SC01–SC12 as flagships SC01/SC05/SC10 plus nine supports, while retaining TVS-1–3 and every original scenario ID and control boundary.
+- Compressed IM01–IM13 into seven front-stage action packages; bound the only first-use trial to existing SC10 + IM06, with its period set in writing and expiry/failure defaulting to removal.
+- Added ten traceable core claims, 30-second/3-minute/15-minute review routes, real T03/T04/T05/T07 tables, and exact anchors for all 31 required outputs across agent.1–agent.6.
+- Added missing metric families as reproducible existing-layer values or explicit `unknown` entries; no site data, statutory control, ownership, FAR, height, redline, project, component, or geometry was invented.
+- Rebuilt only F08, F10, and F11 plus the existing A3/A0 and visual navigation surfaces; all other board pixels remain unchanged.
+- Reopened and completed the 2026-08-27 bilingual and path-level rights reviews after regenerating the paired Markdown, HTML, PNG, and PDF artifacts.
+
 ## v0.2 - 2026-08-13
 
 ### CocoSgt review response and professional-delivery rebuild

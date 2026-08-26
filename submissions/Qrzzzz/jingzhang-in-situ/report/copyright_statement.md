@@ -16,8 +16,8 @@
 
 | 精确路径 | 作者/生成方式 | 来源与许可基础 | 嵌入/再分发 | 限制 | 状态 |
 |---|---|---|---|---|---|
-| `proposal.md`; `proposal.en.md`; `report/narrative.md` | 投稿者在 Codex 辅助下编写和修订 | 投稿者原创表达；事实和案例仅按 `sources.json` 的逐项边界引用；投稿标签 `COMMUNITY-DISPLAY-ONLY` | 随投稿包再分发 | AI 辅助不构成不侵权保证；英文版本已于 2026-08-13 对照专名、数字、ID、来源标记和限制完成终稿复核 | `cleared`；最终 SHA-256 由 manifest 逐路径记录 |
-| `agent.json`; `manifest.json`; `self_check.json`; `metrics.json`; `assumptions.json`; `sources.json`; `compliance_matrix.json`; `standard_matrix.json`; `design_depth_matrix.json` | 投稿者与仓库脚本生成/维护的结构化元数据 | 仓库 schema、任务书与已登记来源；不复制其他投稿的表达、图件或专有资产 | 随投稿包再分发 | schema 兼容不代表现实数据获专业确认；权威状态由字段与限制单独表达 | `cleared`；2026-08-13 与最终 manifest 对账 |
+| `proposal.md`; `proposal.en.md`; `report/narrative.md` | 投稿者在 Codex 辅助下编写和修订 | 投稿者原创表达；事实和案例仅按 `sources.json` 的逐项边界引用；投稿标签 `COMMUNITY-DISPLAY-ONLY` | 随投稿包再分发 | AI 辅助不构成不侵权保证；英文版本已于 2026-08-27 对照专名、主张强度、编号、来源标记和限制完成终稿复核 | `cleared`；最终 SHA-256 由 manifest 逐路径记录 |
+| `agent.json`; `manifest.json`; `self_check.json`; `metrics.json`; `assumptions.json`; `sources.json`; `compliance_matrix.json`; `standard_matrix.json`; `design_depth_matrix.json` | 投稿者与仓库脚本生成/维护的结构化元数据 | 仓库 schema、任务书与已登记来源；不复制其他投稿的表达、图件或专有资产 | 随投稿包再分发 | schema 兼容不代表现实数据获专业确认；权威状态由字段与限制单独表达 | `cleared`；2026-08-27 与最终 manifest 对账 |
 
 `sources.json` 中的全球案例仅允许短篇事实转述、署名和链接，不复制网页图片、Logo、地图、长段文字或版式，也不在本地镜像页面。案例机制属于 `background_only`，不得替代本地现状、法定控制、合作承诺或绩效证据。
 
@@ -46,7 +46,7 @@ GeoJSON 中的数值小数位只服务机器复算，不提高来源权威；对
 | F07 | `assets/figures/ai-ecosystem.png` | `assets/figures/ai-ecosystem.en.png` | 已生成；全球案例机制仅作有来源的背景转述，不复制案例视觉资产 |
 | F08 | `assets/figures/scenario-matrix.png` | `assets/figures/scenario-matrix.en.png` | 已生成；场景、角色、数据流和界面符号均为原创示意 |
 | F09 | `assets/figures/landmarks-components.png` | `assets/figures/landmarks-components.en.png` | 已生成；地标、组件库和贡献展示为概念设计，不使用第三方人物肖像、Logo 或荣誉标志 |
-| F10 | `assets/figures/culture-wayfinding.png` | `assets/figures/culture-wayfinding.en.png` | 已生成；导视符号为原创，专名与双语文本仍须人工复核 |
+| F10 | `assets/figures/culture-wayfinding.png` | `assets/figures/culture-wayfinding.en.png` | 已生成；六级导视符号为原创，专名、固定状态词与双语文本于 2026-08-27 完成人工复核 |
 | F11 | `assets/figures/operations-pathway.png` | `assets/figures/operations-pathway.en.png` | 已生成；运营主体、资金、审批和服务能力均明确为建议，不写成既定承诺 |
 
 F01—F11 均已由同一可复现流程重建；最终文件哈希由 `manifest.json` 逐路径记录，任何再次重渲染都会使既有哈希作废并触发重新核验。
@@ -80,7 +80,7 @@ Noto Sans SC 以 SIL OFL 1.1 许可使用、修改、嵌入和再分发；本节
 | 路径/工具 | 用途 | 许可证/权利边界 | 状态 |
 |---|---|---|---|
 | `scripts/render_proposal_html.py`; `scripts/scaffold_ai_submission.py` | 仓库 HTML/投稿脚手架与渲染流程 | 仓库提交基线 `65714fd5665c172dc92409fe17bbbc4fd9a62320`；脚本 SHA-256 分别为 `e8ef134357b8b0b9068629117661d76b19aa248210083bfb34ba15547c82460c`、`f0d98e7d76d90ca94db8e54e4baa6874b462eb9fab5857502ba21df07fd55432`；不把工具权利误写成输出内容许可 | `cleared` 作为生成证据；脚本本身不随投稿包重复分发 |
-| `visual/assets/rebuild-visuals-source.json` | 当前 F01—F11、PDF、visual HTML 与字体子集生成器的可审阅 Python 源码快照 | 因投稿白名单不接受 `.py`，以 JSON 的 `source` 字段随包分发并纳入 manifest；还原后的 Python 源 SHA-256 为 `23856b69524768c341aabb587feadc88b33fff7a7d7137c29360a05194b9300e`，还原说明、依赖与输入均在 JSON/源码常量中固定 | `cleared`；审阅者可直接提取、复核并运行 |
+| `visual/assets/rebuild-visuals-source.json` | 当前 F01—F11、PDF、visual HTML 与字体子集生成器的可审阅 Python 源码快照 | 因投稿白名单不接受 `.py`，以 JSON 的 `source` 字段随包分发并纳入 manifest；还原后的 Python 源 SHA-256 为 `3b3573652fafb73600497b0685cae8540c788600b50fa8399f1a9202075067d4`，还原说明、依赖与输入均在 JSON/源码常量中固定 | `cleared`；2026-08-27 重建后已复核，审阅者可直接提取并运行 |
 | Pillow 12.2.0 | PNG 绘制 | MIT-CMU 类许可；工具许可不改变输入数据或输出内容权利 | `cleared` |
 | ReportLab 5.0.0 | PDF 生成 | BSD 类许可；工具许可不替代嵌入字体权利，本包字体权利单列核验 | `cleared` |
 | fontTools 4.63.0 | 字体固定化与 WOFF2 子集 | MIT 类许可；输出继续受 Noto Sans SC 的 OFL 1.1 约束 | `cleared` |
@@ -94,5 +94,5 @@ Noto Sans SC 以 SIL OFL 1.1 许可使用、修改、嵌入和再分发；本节
 3. 核对 `visual/assets/font-subset.css` 的 data-URI 子集、OFL 来源记录，并保持 HTML 网络请求为零。
 4. 用 PDF 字体检查工具确认四份 PDF 仅嵌入 Noto 子集，且许可证记录一致。
 5. 保留 Pillow、ReportLab、fontTools 与随包渲染脚本证据；未完成权利核验的可选封面已移除。
-6. 人工双语等价审查于 2026-08-13 完成，覆盖专名、数字、SC/CX/IM/C 编号、图号、来源标记和临时状态措辞。
+6. 人工双语等价审查于 2026-08-27 完成，覆盖 13 章顺序、主命题、四个一级消息、十项 claim、专名、指标、SC/CX/IM/AP/U/C/TVS 与 F/T 编号、来源标记、图位和临时状态措辞。
 7. 对照最终 SHA-256 更新本台账；任何文件重渲染后原有清权状态自动退回 `needs_evidence`，直至重新复核。

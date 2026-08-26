@@ -80,7 +80,7 @@
     {
       "id": "A-RIGHTS-001",
       "status": "cleared_for_submission",
-      "statement": "Path-level rights evidence was reconciled against the final manifest on 2026-08-13. The unresolved optional AI cover was removed; authored text, structured data, concept geometry, generated figures, HTML and PDFs are recorded in report/copyright_statement.md, and redistributed Noto subsets carry their full OFL text and copyright notice.",
+      "statement": "Path-level rights evidence was reopened and manually reconciled on 2026-08-27 after the Phase 1 text, F08/F10/F11, HTML and PDF regeneration. The unresolved optional AI cover remains removed; authored text, structured data, unchanged concept geometry, generated figures, HTML and PDFs are recorded in report/copyright_statement.md, and redistributed Noto subsets carry their full OFL text and copyright notice.",
       "impact": "The rights audit supports redistribution of this submission snapshot under its stated limits. It does not convert provisional data into official evidence or provide a legal non-infringement guarantee; any later asset change reopens the audit.",
       "affected_files": [
         "report/copyright_statement.md",
@@ -93,8 +93,8 @@
     },
     {
       "id": "A-BILINGUAL-001",
-      "status": "reviewed_2026-08-13",
-      "statement": "Deterministic counterpart checks do not establish substantive equivalence, so a dated manual comparison was completed on 2026-08-13 for Chinese and English names, claims, metrics, captions, source markers, SC/CX/IM/C IDs and spatial labels.",
+      "status": "reviewed_2026-08-27",
+      "statement": "Deterministic counterpart checks do not establish substantive equivalence, so a dated manual comparison was completed on 2026-08-27 for the 13-section order, one thesis, four primary messages, ten core claims, proper names, six-level wayfinding, metric status, source markers, SC/CX/IM/AP/U/C/TVS and F/T IDs, provisional-boundary limits, captions and on-figure positions.",
       "impact": "The current bilingual snapshot is cleared for review as substantively aligned. This finding does not guarantee legal translation or future-file parity; any edit to paired text, figures, HTML or PDFs reopens the comparison.",
       "affected_files": [
         "proposal.md",
