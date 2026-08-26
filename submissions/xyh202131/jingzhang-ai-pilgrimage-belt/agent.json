@@ -8,12 +8,13 @@
   "model_detail": "OpenAI Codex agent based on GPT-5; exact serving snapshot is not asserted by the package.",
   "provider": "OpenAI",
   "authoring_mode": "human-authorized agent-maintained submission package",
-  "generated_with": "Latest canonical main and repository urban-design submission skill; deterministic Python/Pillow/SVG/Chrome/PyMuPDF frame and publication build; FFmpeg encoding; repository validators; no network or model API in media generation.",
+  "generated_with": "Latest canonical main and repository urban-design submission skill; deterministic Python/Pillow/SVG/Chrome/PyMuPDF publication build with a fontTools semantic PDF subset; FFmpeg encoding for retained R59 media; repository validators; no network or model API in media generation.",
   "tools_used": [
     "OpenAI Codex (GPT-5 family; exact serving snapshot not asserted)",
     "Python 3.14.7",
     "Pillow 12.2.0",
     "PyMuPDF 1.27.2.3",
+    "fontTools 4.62.1",
     "Google Chrome 151.0.7922.174",
     "FFmpeg 6.1.1-essentials_build-www.gyan.dev",
     "FFprobe 6.1.1-essentials_build-www.gyan.dev",
@@ -70,6 +71,50 @@
       "approval, authorization, GO, G1 or professional acceptance",
       "real recovery duration; the 54-second sequence is editorial pacing only",
       "public response or accessibility compliance from conceptual media"
+    ]
+  },
+  "round_60_provenance": {
+    "canonical_main_base_sha": "eab8b0c0f6c653992b46f764f4fe435fb4758524",
+    "predecessor_pr": 3998,
+    "publication_revision": "60.0",
+    "scope": "Publication accessibility and A0 distance-read repair: complete 390px bilingual navigation, searchable fixed-page text, and dedicated A0 hierarchy without new facts, media or pages.",
+    "before_evidence": {
+      "mobile_viewport_width_px": 390,
+      "visual_nav_scroll_width_zh_px": 631,
+      "visual_nav_scroll_width_en_px": 706,
+      "pdf_page_count": 44,
+      "pdf_pages_with_extractable_body_text": 0
+    },
+    "after_evidence": {
+      "mobile_navigation_layout": "3_by_2_all_six_destinations_no_horizontal_overflow",
+      "pdf_pages_with_extractable_body_text": 44,
+      "pdf_embedded_font": "Noto Sans CJK SC Regular minimal semantic OTF subset under SIL-OFL-1.1",
+      "pdf_accessibility_boundary": "searchable_and_copyable_fixed_page_text_not_tagged_pdf_ua_or_accessibility_conformance",
+      "a0_distance_read_recomposed_pages": [
+        6,
+        7,
+        8
+      ],
+      "fresh_process_byte_identical_builds": 2
+    },
+    "final_pdf_sha256": {
+      "drawings/a3-booklet.pdf": "8d9958e516a3e73882e71b9472fcc3829aa4b4cb8580b18e42a75682835626c4",
+      "drawings/a3-booklet.en.pdf": "66361087a18951e3ef5fb35bb575dd1f41c02d342729f5d9b88126a77ef11e5e",
+      "drawings/a0-boards.pdf": "a1fd334fca8112e362a9a90e05e590b8c6927a82f4fa9ed8df28d4b35e398291",
+      "drawings/a0-boards.en.pdf": "b1daad98af2123b2944a35f4e4dd53e276b8605577078a0a0f1b4d372073238e"
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "metrics_json_frozen": true,
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36"
+    },
+    "new_media": false,
+    "cannot_prove": [
+      "tagged PDF/UA or accessibility compliance",
+      "official boundary, exact anchor or approved design",
+      "field result, public feedback, staffing, budget or recovery duration",
+      "G1, authorization, approval or accepted professional duty",
+      "independent legal, file-level or trademark review"
     ]
   },
   "media_generation_toolchain": {

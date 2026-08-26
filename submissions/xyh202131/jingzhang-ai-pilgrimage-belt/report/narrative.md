@@ -16,6 +16,12 @@ The proposal makes one spatial decision: verification may not occupy the ground 
 - 3 分钟：解释普通—验证—故障—恢复，不把运行状态误写为成熟度。
 - 15 分钟：把主张追到 geometry、metrics、来源、权利和专业否决。
 
+## Publication access and distance reading / 出版访问与远读
+
+R60 repairs two reproducible reading failures without adding facts or pages. At 390px, all six destinations now appear as a complete 3-by-2 navigation grid in both visual counterparts, so no destination depends on discovering a horizontal scroll gesture. The four fixed-page PDFs retain 14+14 A3 pages and 8+8 A0 boards, but every page now exposes embedded Noto CJK semantic text for search and copying while preserving the deterministic visible raster labels. A0 boards 6-8 use a stronger distance-read hierarchy for implementation gates, evidence/rights boundaries and the single concluding ruling. The PDFs remain fixed-page visual publications and do not claim tagged PDF/UA or accessibility conformance; the paired offline HTML remains the complete keyboard and machine-readable route.
+
+R60 不增加事实或页数，只修复两个可复现阅读失败。390px 下，中英文 visual 的六项入口均以完整 3×2 网格出现，不再要求读者先发现横向滚动手势。四份定页 PDF 继续保持 A3 14+14 页、A0 8+8 页，但每页现均嵌入可搜索、可复制的 Noto CJK 语义文本，同时保留确定性可见栅格标签；A0 第 6—8 板分别强化实施门、证据/权利边界和唯一结论的远读层级。PDF 仍是定页视觉出版物，不声明 tagged PDF/UA 或无障碍合规；成对离线 HTML 继续承担完整键盘与机器可读入口。
+
 ## Four-state spatial experience / 四态空间体验
 
 The 54-second silent bilingual motion diagram is an editorial reading sequence, not a real recovery duration. It keeps ordinary ground continuous, places voluntary verification beside it, stops only the verification object in fault, and restores the ordinary task, staffed service, physical information and traceable evidence state without implying model restart, authorization, approval or G1. The shared bilingual VTT and transcript carry the same eight-shot order. The static storyboard beside the player is the complete no-motion, print and decoding-failure answer, and all media returns to `visual/assets/four-state-experience-contract.json` and the professional handoff packet.
@@ -34,9 +40,9 @@ The cover, video, captions, transcript and contract are contributor-authored con
 
 ## Rights and authenticity / 权利与真实性
 
-Contributor-owned content and the deterministic R59 concept media are CC BY 4.0; contributor-owned code is MIT; OSM-derived database content remains ODbL; rasterized Noto Sans CJK SC glyph output in PDF and the offline-HTML subset remain OFL 1.1; third-party citations and repository provisional inputs are not relicensed. Every current distribution path has a contributor rights-inventory decision, while independent legal and trademark review remain absent. Model-generated media paths remain zero; the R59 cover and silent video are contributor-authored deterministic presentation. Licensing does not establish field truth, approval, accessibility compliance, professional acceptance or G1.
+Contributor-owned content and the deterministic R59 concept media are CC BY 4.0; contributor-owned code is MIT; OSM-derived database content remains ODbL; rasterized visible Noto Sans CJK SC glyphs, the embedded R60 PDF semantic subset and the offline-HTML subset remain OFL 1.1; third-party citations and repository provisional inputs are not relicensed. Every current distribution path has a contributor rights-inventory decision, while independent legal and trademark review remain absent. Model-generated media paths remain zero; the R59 cover and silent video are contributor-authored deterministic presentation. Licensing does not establish field truth, approval, accessibility compliance, professional acceptance or G1.
 
-投稿方自有内容与第59轮确定性概念媒体采用 CC BY 4.0，自有代码采用 MIT；OSM 数据库衍生内容继续适用 ODbL；PDF 中栅格化的 Noto Sans CJK SC 字形输出和离线 HTML 子集继续适用 OFL 1.1；第三方引用与仓库临时输入不被重新许可。当前分发树每个路径均有投稿方权利自查决定，独立法律和商标审查仍未提供。模型生成媒体路径继续为 0；第59轮封面和无声视频是投稿方原创确定性展示。许可不证明现场、批准、无障碍达标、专业接责或 G1。
+投稿方自有内容与第59轮确定性概念媒体采用 CC BY 4.0，自有代码采用 MIT；OSM 数据库衍生内容继续适用 ODbL；PDF 中栅格化的可见 Noto Sans CJK SC 字形、R60 嵌入语义子集和离线 HTML 子集继续适用 OFL 1.1；第三方引用与仓库临时输入不被重新许可。当前分发树每个路径均有投稿方权利自查决定，独立法律和商标审查仍未提供。模型生成媒体路径继续为 0；第59轮封面和无声视频是投稿方原创确定性展示。许可不证明现场、批准、无障碍达标、专业接责或 G1。
 
 ## Data-gap decision / 数据缺口裁决
 
