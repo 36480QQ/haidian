@@ -1,6 +1,9 @@
 # 方案迭代记录
 
-## v1.2 - 2026-08-26
+## v1.3 - 2026-08-26
+
+- Replace rectangle-template figures and HTML with station–street–seam–courtyard sequence drawings, logo specimen, and three-area morphologies.
+
 
 - Repair CocoSgt review P0/P1: provisional-boundary honesty, real bilingual figures, embedded CJK font, unique agent.1–6 evidence, personas, industry tests, JZ gates, logo and site sequence.
 
