@@ -14,7 +14,7 @@
     "model_family": "deepseek",
     "model_detail": "初稿 accounts/fireworks/models/kimi-k3 via opencode (fireworks provider)；迭代 zcode (model GLM-5.3)；v1.3 阶段署名：同济设计AI云：DeepSeek Harness + ox-alpha 以及子智能体 Codex（GPT-5.6-Sol）+ Claude Code（Claude Opus 5）（Tongji Design AI Cloud: DeepSeek Harness + ox-alpha, with subagent CLIs Codex (GPT-5.6-Sol) and Claude Code (Claude Opus 5)）"
   },
-  "generated_at": "2026-08-25T22:39:33Z",
+  "generated_at": "2026-08-26T01:41:58Z",
   "files": [
     {
       "path": "manifest.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7ce9852f98ce122dd691f11cbb18aef04c05276317eda72967129170f89d71ac"
+      "sha256": "2f94b6bb56f9f8076b68019be5ab247dec8798d4dc427df4f93cffbb5b81d9df"
     },
     {
       "path": "compliance_matrix.json",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a0475c0c77054945698e7a44bd6b70519aa3ca81b7e115144225de4927ab26e9"
+      "sha256": "1e02ca7603f764dd5c6c4f99168d218a9149cb6b1c21d01519e488a8748a1517"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "04dcbfa26c8ea384dde7088bfa0d182b642fceebb98d47f274be15c72d72dd21"
+      "sha256": "86cdfb5bfa3b3de36e6c779457a2e9dcef7000e7b8e9ebc2ffdad8165b11f30f"
     },
     {
       "path": "visual/index.html",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "8507ef0f02b59de6460837849ee967ec9ef5b5e3df8126b456bb672258affeff"
+      "sha256": "33083695ac9982f09e930cb565dd7e6e1b83f9ce77eab37b4a5a3d40964da6ca"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "8666b25a0808f7d1dd710e35407018fdffa52042b45eab09db99cd621f9bb714"
+      "sha256": "4698cef6654660a5c564724cb18a40f32b64dac98d86e25daabdb813026adbdf"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "9189da57d7374efe0b86248777b45a34e264da99b6e61a1fb529e5cf7ea0dbe3",
+      "sha256": "7abf3b117d584253657e148f3f09c4cceeeecf1eecd5d8b25862836b3c01350e",
       "language": "neutral"
     },
     {
@@ -591,7 +591,29 @@
       "title_en": "Qi-Pulse deterministic self-verification results",
       "description_zh": "七组 30 项确定性检查全部 PASS：场景卡 156 演练复算、气数协议绑定、岗位闭环、分期条件门、指标跨文件一致性、双语标签对齐、CJK 字体覆盖。",
       "description_en": "Seven groups / 30 deterministic checks all PASS: scenario-card 156-drill recount, protocol binding, role loop, phase gates, metrics cross-file consistency, bilingual tag parity, CJK font coverage.",
-      "sha256": "05b312b3aed5cb0a14736035f54219c0cc8535ab45dc7c36bf881230d280aeb4"
+      "sha256": "21ec5f64a6ec854b973b206d9d85ac7d678535bfc4e38ecde3c3d748a8570867"
+    },
+    {
+      "path": "assets/screenshots/a3-booklet-contact-sheet.png",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "A3 文册全页接触表",
+      "title_en": "A3 booklet contact sheet",
+      "description_zh": "六页一图总览（封面+设计依据+结构+重点区+分期+退出），供评审无需翻页即可核对全部版面；确定性自 PDF 导出。 回应评审\"PDF 证据仅限第一页预览\"的取证限制。",
+      "description_en": "All six pages on one sheet for review without page-through; deterministic export from the booklet PDF. Answers the reviewer-noted first-page-only evidence limitation.",
+      "sha256": "00d37cb39426d63743c33cb50551e6e901bb4e568dacbaee98b11f7bc20c271d"
+    },
+    {
+      "path": "assets/screenshots/a0-boards-contact-sheet.png",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "A0 展板全页接触表",
+      "title_en": "A0 boards contact sheet",
+      "description_zh": "两板一图总览（总体结构板真实语境版+重点区与指标证据板）；确定性自 PDF 导出。 回应评审\"PDF 证据仅限第一页预览\"的取证限制。",
+      "description_en": "Both boards on one sheet; deterministic export from the boards PDF. Answers the reviewer-noted first-page-only evidence limitation.",
+      "sha256": "43330244079f66b9c24c5b1ee8e2ad1564217685907f6c0f623021e0a612e5db"
     }
   ],
   "validation_claim": {
