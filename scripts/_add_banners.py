@@ -60,16 +60,21 @@ def add_banner(img_path, text_zh, text_en, position="top", bg_color=(220, 50, 50
         with PILImage.open(p) as im:
             im = im.convert("RGBA")
             w, h = im.size
-            # Idempotency guard: if the edge already carries a banner of the
-            # same color, skip (prevents duplicate banners on re-run).
-            edge = im.crop((0, 0, w, max(2, int(h*0.04)))) if position == "top" \
-                   else im.crop((0, h - max(2, int(h*0.04)), w, h))
+            # Idempotency guard: detect an already-applied banner by sampling the
+            # very top/bottom 5px edge row. We sample a THIN strip (not the full
+            # banner height) because white text inside the banner would otherwise
+            # inflate the color spread and fool the guard into re-applying.
+            edge_y = 5
+            if position == "top":
+                edge = im.crop((0, 0, w, edge_y))
+            else:
+                edge = im.crop((0, h - edge_y, w, h))
             ext = edge.getextrema()
-            # extrema per channel: if the edge strip is ~uniform solid color
-            # (low spread) and matches the banner color, it's already bannered.
             r_spread = ext[0][1] - ext[0][0]
             g_spread = ext[1][1] - ext[1][0]
             b_spread = ext[2][1] - ext[2][0]
+            # A fresh banner's top/bottom 5px is pure (semi-transparent) background,
+            # so all channel spreads are ~0. If so, a banner is already present.
             if r_spread < 25 and g_spread < 25 and b_spread < 25:
                 print(f"  {img_path}: edge already solid (banner present), skip")
                 return False
