@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0.0",
   "audit_status": "completed",
-  "audit_date": "2026-08-25",
+  "audit_date": "2026-08-26",
   "scope": "human_facing_primary_deliverables",
-  "review_method": "逐项人工比对中文与英文的标题、正文主张、数字、单位、时序、图位、证据状态和实施条件，并完成 PDF 逐页渲染检查。",
+  "review_method": "逐项人工比对中文与英文的标题、正文主张、数字、单位、时序、图位、证据状态和实施条件，并完成 PDF 逐页渲染检查；针对本轮评审意见额外复核重点区图位、英文残留、中文字体嵌入和廊道长度表述。",
   "pair_count": 23,
   "missing_count": 0,
   "pairs": [
@@ -12,10 +12,10 @@
     {"zh":"visual/index.html","en":"visual/index.en.html","status":"equivalent"},
     {"zh":"drawings/a3-booklet.pdf","en":"drawings/a3-booklet.en.pdf","status":"equivalent","page_count":18},
     {"zh":"drawings/a0-boards.pdf","en":"drawings/a0-boards.en.pdf","status":"equivalent","page_count":4},
-    {"zh":"assets/figures/site-overview.png","en":"assets/figures/site-overview.en.png","status":"equivalent","checks":["11.41 km²","3","6","0–24 mo"]},
+    {"zh":"assets/figures/site-overview.png","en":"assets/figures/site-overview.en.png","status":"equivalent","checks":["11.41 km²","3","6","0–24 mo","exact 9.7 km claim removed; conceptual-spine wording aligned"]},
     {"zh":"assets/figures/land-use-structure.png","en":"assets/figures/land-use-structure.en.png","status":"equivalent"},
-    {"zh":"assets/figures/key-areas.png","en":"assets/figures/key-areas.en.png","status":"equivalent"},
-    {"zh":"assets/figures/mobility-bluegreen.png","en":"assets/figures/mobility-bluegreen.en.png","status":"equivalent"},
+    {"zh":"assets/figures/key-areas.png","en":"assets/figures/key-areas.en.png","status":"equivalent","checks":["panel order: Zhongzhiyuan / AI Origin Community / Dazhongsi","English figure contains English-only annotations","first-stage action themes aligned by panel"]},
+    {"zh":"assets/figures/mobility-bluegreen.png","en":"assets/figures/mobility-bluegreen.en.png","status":"equivalent","checks":["CORRIDOR-04 remains the 1.0 km first-phase window","full-axis wording is conceptual","unsupported exact 9.7 km terminal claim removed"]},
     {"zh":"assets/figures/metrics-evidence.png","en":"assets/figures/metrics-evidence.en.png","status":"equivalent"},
     {"zh":"assets/figures/implementation-protocol.png","en":"assets/figures/implementation-protocol.en.png","status":"equivalent"},
     {"zh":"assets/figures/inclusion-incidence.png","en":"assets/figures/inclusion-incidence.en.png","status":"equivalent"},
@@ -33,10 +33,22 @@
   ],
   "substantive_checks": {
     "numbers_and_units": "pass",
-    "qualifiers_and_policy_status": "pass",
+    "qualifiers_and_policy_status": "pass; the unregistered exact 9.7 km whole-axis claim was replaced by explicit conceptual/full-axis wording while the registered 1.0 km CORRIDOR-04 pilot remains unchanged",
     "evidence_markers": "pass",
     "figure_order_and_page_count": "pass",
-    "translation_residue": "pass; English site overview uses 0–24 mo",
-    "rendering": "pass; V2 QA rendered all 18 Chinese + 18 English A3 pages and all 4 Chinese + 4 English A0 boards without blank pages, out-of-bounds text or high-risk clipping"
+    "translation_residue": "pass; key-areas.en.png was rebuilt with correct Zhongzhiyuan / AI Origin Community / Dazhongsi panel order and English-only embedded annotations",
+    "rendering": "pass; regenerated 18 Chinese + 18 English A3 pages and 4 Chinese + 4 English A0 boards; Chinese PDF text now uses an embedded Noto Sans SC subset and Chinese HTML embeds an offline Noto Sans SC WOFF2 subset"
+  },
+  "font_embedding": {
+    "family": "Noto Sans SC",
+    "license": "SIL Open Font License 1.1",
+    "html": "subset WOFF2 embedded as a data URI in Chinese report/proposal.html and visual/index.html; no remote font dependency",
+    "pdf": "TrueType/OpenType subset embedded in Chinese A3 and A0 PDFs",
+    "verification": "PDF font descriptors contain embedded font streams; HTML contains embedded data:font/woff2 source"
+  },
+  "publication_blocker_repairs": {
+    "chinese_font_rendering": "closed",
+    "english_key_area_panel_mapping_and_translation": "closed",
+    "unsupported_exact_9_7_km_claim": "closed"
   }
 }
