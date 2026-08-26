@@ -10,7 +10,6 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/yaoyaoxie/jingzhang-adaptive-commons/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved",
         "submissions/yaoyaoxie/jingzhang-adaptive-commons/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
@@ -66,7 +65,7 @@
       "ai_package_stages": {
         "submissions/yaoyaoxie/jingzhang-adaptive-commons": "formal"
       },
-      "total_bytes": 16875725,
+      "total_bytes": 16878079,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -146,7 +145,7 @@
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 13,
-          "standard": 4,
+          "standard": 3,
           "depth": 15,
           "data": 8,
           "metric": 10
@@ -166,9 +165,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Resolve formal-readiness warning: submissions/yaoyaoxie/jingzhang-adaptive-commons/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved"
-  ],
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {

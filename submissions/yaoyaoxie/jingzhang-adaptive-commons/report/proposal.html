@@ -138,8 +138,8 @@ code {
 <p><strong>临时几何</strong>：总体设计范围与三处重点片区的边界当前仅有仓库发布的临时粗略边界。本包 <code>site_boundary.geojson</code> 仅承载总体设计范围（PROV-SITE-001），<code>key_areas.geojson</code> 承载三处重点片区（PROV-KEY-001/002/003）；统筹研究范围与重点区域汇总范围的临时轮廓以规划控制图层存入 <code>constraints.geojson</code>（PROV-RESEARCH-001 / PROV-KEY-SCOPE-001）。以上全部标注为临时约束范围（provisional constraint），不作为官方红线或精确面积依据 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARIES-20260605" title="来源：DATA-SRC-PROVISIONAL-BOUNDARIES-20260605">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#PROV-SITE-001" title="空间数据：geometry/site_boundary.geojson#PROV-SITE-001">空间数据</sup>。</p>
 <p><strong>背景资料</strong>：八个全球创新区案例与投稿包编制规范文档用于机制参照与流程校核，仅作背景，不支撑法定结论 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-SITE-PACKAGE-DOCS" title="来源：DATA-SRC-SITE-PACKAGE-DOCS">来源</sup>。</p>
 <p><strong>缺口与处理规则</strong>：下列正式资料均未取得，已在假设清单中逐项登记影响与复算触发器——三层范围官方红线 polygon、三处重点区官方 polygon、控规条件（容积率、建筑高度、建筑密度、退线）、道路红线与交通流量底数、宗地权属与现状建筑测绘、文物保护范围与建设控制地带、市政管线与容量资料、公共服务设施底数。处理规则为：涉及上述资料的指标一律保持待确认，不作数值结论；全部派生几何与指标在正式资料发布后触发复算重建 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="existing_conditions_diagnosis" title="深度：existing_conditions_diagnosis">深度</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup>。</p>
-<p><strong>专业标准响应状态</strong>：城市设计、控规编制、用地分类、无障碍、文物保护、数据安全六类强制专业标准已按方向响应，但本地参考副本不含官方标准快照，登记状态均为&quot;需取得官方文件&quot;（needs_official_file），不写成已满足；正式提交前须对照标准登记库补齐本地快照（详见第 12 章与本包 <code>standard_matrix.json</code>）。</p>
-<p><strong>还缺什么</strong>：公告原文 URL 与资格预审文件包（需邮件申请）、任务书机读原文、官方标准快照，均列入正式提交前的资料补齐清单。</p>
+<p><strong>专业标准响应状态</strong>：主仓库登记的公告、智能体任务书、城市设计、控规编制和用地分类五项 formal 强制标准均已有登记快照、访问日期和来源路径，本方案已按方向响应；无障碍、文物保护和数据安全作为包内补充标准继续保留。<code>review_status=addressed</code> 只表示证据链已应答，不表示已完成项目级条文审查、现场核查或签章（详见第 12 章与本包 <code>standard_matrix.json</code>）。</p>
+<p><strong>还缺什么</strong>：需密码申请的资格预审完整文件包，以及官方 polygon、控规、道路、权属、文保、市政等项目专项资料；登记快照不能替代这些场地资料或持证专业审查。</p>
 <p>---</p>
 <h2>2. 三层范围工作框架</h2>
 <p><strong>判断</strong>：三层范围是嵌套而非并列关系——统筹研究范围管产业与廊道结构，总体设计范围管城市更新与控规深度城市设计，重点区域范围管详细设计与首期项目；面积口径以公告为准，几何以临时边界复算值辅助表达。</p>
@@ -198,7 +198,7 @@ code {
 <p><em>图 2 总体结构与功能组织图：表达一轴、三处重点片区（育—传—用—还）、东西两翼接口、六类节点与五层网络；两翼为统筹研究范围层面的功能廊道，图中为概念示意；不绘制未经依据的法定用地调整，用项目类型和开放强度替代虚构控制指标。</em></p>
 <p><strong>用地与更新框架</strong>：总体设计范围内的用地布局以创新研发、教育科研、蓝绿空间、公共服务、居住配套与商业服务的混合组织为目标，概念用地模型见本包用地图层与第 7 章 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="空间数据：geometry/land_use.geojson">空间数据</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="land_use_layout" title="深度：land_use_layout">深度</sup>。更新策略七原则：存量优先、连续基底、分布式配置、功能互惠、渐进实施、循环建造、反馈校正。</p>
 <p><strong>如何验证</strong>：结构与用地关系可由用地图层复算；每项空间动作须经判准三问检查。</p>
-<p><strong>还缺什么</strong>：正式控规条件、用地分类标准本地快照（<sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MNR-LAND-USE-CLASSIFICATION-GUIDE" title="标准：MNR-LAND-USE-CLASSIFICATION-GUIDE">标准</sup> 等标准当前为&quot;需取得官方文件&quot;状态）、权属与现状测绘；用地比例与强度指标在资料到位前不作法定结论。</p>
+<p><strong>还缺什么</strong>：正式控规条件、项目正式用地批准、权属与现状测绘；用地分类指南登记快照已取得，但不能替代场地专属规划条件，用地比例与强度指标在资料到位前不作法定结论。</p>
 <p>---</p>
 <h2>5. 重点区域详细设计</h2>
 <p><strong>判断</strong>：三处重点片区共用建筑原型（第 7 章）与&quot;京张生长断面&quot;（第 4 章），但各自回答公告赋予的不同任务，并在&quot;育—传—用—还&quot;交换链中承担不同环节；三处片区边界当前均为临时几何，正式红线发布后须复算修正 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-001" title="空间数据：geometry/key_areas.geojson#PROV-KEY-001">空间数据</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_key_area_detailed_design" title="深度：three_key_area_detailed_design">深度</sup>。</p>
@@ -335,17 +335,17 @@ code {
 <p><strong>运营评估指标框架</strong>：</p>
 <div class="proposal-table"><table><thead><tr><th>目标</th><th>核心指标示例</th><th>证据来源</th></tr></thead><tbody><tr><td>空间连通</td><td>横向连接数量、15 分钟步行覆盖、无障碍连续率</td><td>GIS、现场审计、用户测试</td></tr><tr><td>公共开放</td><td>开放首层面积、公共时段、免费活动占比</td><td>运营台账、空间测绘</td></tr><tr><td>创新协同</td><td>跨机构项目数、共享设备时长、试点转化率</td><td>项目合同、平台记录</td></tr><tr><td>社区受益</td><td>服务完成率、弱势群体使用率、居民满意度</td><td>匿名服务记录、第三方调查</td></tr><tr><td>生态改善</td><td>土壤、生境、树冠、雨洪和维护变化</td><td>对照监测、检测报告</td></tr><tr><td>循环建造</td><td>保留建筑比例、再利用构件量、可拆卸率</td><td>材料护照、竣工记录</td></tr><tr><td>长期运营</td><td>空间使用率、维护响应、项目续退比例</td><td>年度运营报告</td></tr><tr><td>国际传播</td><td>双语成果、合作机构、可复制工具包使用</td><td>发布记录、合作协议</td></tr></tbody></table></div>
 <p><strong>合规矩阵</strong>：任务覆盖矩阵逐条登记公告任务 1.3.1–1.3.3、三层范围 1.4.1–1.4.3、总体及重点区任务 1.5.1.<em>–1.5.3.</em> 与智能体任务 agent.1–agent.6 的响应位置，每项关联正文章节、空间或数据证据与检查项，完整索引保存在 <code>compliance_matrix.json</code>；专业标准矩阵登记六类强制标准的响应状态（当前均为&quot;需取得官方文件&quot;）；设计深度矩阵登记十五项深度项的真实完成状态，受组织方未公开数据限制的项如实标注，不写成已完成。</p>
-<p><strong>还缺什么</strong>：三项核心指标待官方 polygon 到位后复算确认；官方标准文本快照待补齐。</p>
+<p><strong>还缺什么</strong>：三项核心指标待官方 polygon 到位后复算确认；登记标准的项目级条文适用性待专业团队复核。</p>
 <p>---</p>
 <h2>12. 风险、版权与合规说明</h2>
 <p><strong>判断</strong>：本方案是公开共创建议，不宣称获得官方批准、政府背书或实施承诺；所有范围、指标、分期和投资均为概念属性，风险对策以设计红线的形式内置于方案 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup>。</p>
 <p><strong>风险与设计红线</strong>：</p>
 <div class="proposal-table"><table><thead><tr><th>风险</th><th>设计红线</th></tr></thead><tbody><tr><td>概念大于场地</td><td>每个核心判断必须落到具体位置、断面、使用者或项目主体</td></tr><tr><td>AI 表演化</td><td>不以机器人数量、屏幕数量或算法名称代替公共价值</td></tr><tr><td>公园商业化</td><td>保留连续免费开放、安静生境和非消费性停留空间</td></tr><tr><td>遗产布景化</td><td>新功能需支持持续使用，并保持新旧材料和结构可辨识</td></tr><tr><td>数据侵扰</td><td>数据最小化、人工兜底、可申诉、可退出</td></tr><tr><td>生态过度承诺</td><td>无基线不宣称改善，无检测不宣称污染修复</td></tr><tr><td>新材料冒进</td><td>新型材料先检测，只进入适用的非结构场景</td></tr><tr><td>一次性建设</td><td>所有新节点说明维护、替换、退出和再利用方式</td></tr><tr><td>行政边界误读</td><td>所有范围、指标、分期和投资均标注概念属性</td></tr></tbody></table></div>
-<p><strong>数据治理边界</strong>：数据采集必须与明确公共目的对应；优先使用匿名、聚合和非识别性数据；不以算法评分替代公共服务资格判断；场景上线前明确责任主体、保留期限、申诉和退出机制；观测厅公开展示指标定义、数据时间和不确定性。数据合规方向响应个人信息保护与数据安全法律要求，正式依据待取得官方文本 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="DATA-SECURITY-PIPL" title="标准：DATA-SECURITY-PIPL">标准</sup>。</p>
+<p><strong>数据治理边界</strong>：数据采集必须与明确公共目的对应；优先使用匿名、聚合和非识别性数据；不以算法评分替代公共服务资格判断；场景上线前明确责任主体、保留期限、申诉和退出机制；观测厅公开展示指标定义、数据时间和不确定性。数据合规方向响应个人信息保护与数据安全法律要求，部署前须由法律与数据合规专业人员完成项目级核查 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="DATA-SECURITY-PIPL" title="标准：DATA-SECURITY-PIPL">标准</sup>。</p>
 <p><strong>版权说明</strong>：五张核心图为本方案基于临时几何与概念推演自生成的概念表达图，非现场照片、非批准方案、非工程图纸；引用案例均来自公开网页或开放获取出版物并逐项登记发布者、URL、许可与限制（第 13 章及 <code>sources.json</code>），仅提取机制、不复制图面；不使用未清权的商业地图、图片、字体、Logo、肖像或论文插图；不使用秘密地图、企业私有数据、个人隐私或未授权资料。</p>
 <p><strong>必须披露的缺失资料</strong>（与假设清单一致）：三层范围官方 polygon、三处重点区官方 polygon、控规条件、道路红线与交通停车底数、宗地权属与现状建筑测绘、文保范围与建设控制地带、市政管线与容量资料、公共服务设施底数。组织方数据缺口本身不阻断内容评审，但所有精度敏感指标须在官方资料到位后复算。</p>
 <p><strong>机器自检边界</strong>：本包后续的结构化校验结果只表示投稿包具备进入检查和内容评审的基础条件，不代表专业质量认定、正式入选、政府批准或工程可实施。</p>
-<p><strong>还缺什么</strong>：官方标准文本快照、正式来源登记库核对、第三方专业复核。</p>
+<p><strong>还缺什么</strong>：场地专项正式资料、标准的项目级条文适用性核查与第三方专业复核；中央来源和标准登记已于 2026-08-26 完成核对。</p>
 <p>---</p>
 <h2>13. 参考资料</h2>
 <p>以下为本正文实际引用的全部来源，完整元数据（发布者、URL、日期、获取方法、覆盖范围、许可、限制与允许用途层级）同步登记于 <code>sources.json</code>。</p>

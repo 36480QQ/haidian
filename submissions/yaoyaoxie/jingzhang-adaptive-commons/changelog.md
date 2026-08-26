@@ -59,3 +59,5 @@
 
 - 第二轮评审修复 A：按主仓库 `data/source_registry.json` 统一来源登记；任务书改用 `DATA-SRC-AGENT-TASKBOOK-20260518`（approved、usable_for_formal=yes），临时边界改用 `DATA-SRC-PROVISIONAL-BOUNDARIES-20260605`（provisional、usable_for_formal=provisional_only），同步正文、来源表、合规矩阵、标准矩阵和设计深度矩阵。
 - 来源边界：未纳入中央登记的政府报道继续只作 background，正文明确其不承担红线、控规、工程可行性、正式实施或政府承诺证明。
+- 第二轮评审修复 B：`manifest.validation_claim.known_blockers` 清空；八类组织方数据缺口和正式资料到位后的复算、重绘、专项复核条件继续完整保留在 `assumptions.json` 的逐项 trigger 中，不把外部数据缺口伪装为已解决。
+- 标准状态：按主仓库 `brief/site-package/standards/standards.json` 更新五项正式标准的 reference 状态、访问日期、登记路径与独立 source ID；`review_status=addressed` 仍仅表示方案已响应，不宣称持证专业条文审查完成。

@@ -455,7 +455,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "gap_note_zh": "roads.geojson 为概念线位（geometry_role=concept，待官方枚举确认）；道路红线、断面、流量与停车底数缺失。"
+      "gap_note_zh": "roads.geojson 为概念线位（geometry_role=design_proposal，alignment_status=concept_only_not_engineering_alignment，当前枚举与官方检查均通过）；道路红线、断面、流量与停车底数仍缺失。"
     },
     {
       "requirement_id": "1.5.2.4",

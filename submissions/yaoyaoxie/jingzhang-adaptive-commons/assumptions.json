@@ -1,5 +1,5 @@
 {
-  "assumptions_note_zh": "本清单对应交付检查清单 §13.2 必须披露的缺失资料八项，另加临时边界使用条件与图层枚举待确认项。每项给出影响与复算/复核触发器。所有 provisional 几何与派生指标不得作为官方红线、精确面积或法定控制指标使用；组织方数据缺口本身不阻断内容评分。",
+  "assumptions_note_zh": "本清单对应交付检查清单 §13.2 必须披露的缺失资料八项，另加临时边界使用条件与已完成的图层枚举核对记录。每项给出影响与复算/复核触发器。所有 provisional 几何与派生指标不得作为官方红线、精确面积或法定控制指标使用；组织方数据缺口属于条件跟进，不作为参与者 known_blocker，也不阻断本轮内容评分。",
   "assumptions": [
     {
       "id": "A-BOUNDARY-001",
@@ -150,12 +150,12 @@
     },
     {
       "id": "A-ENUM-010",
-      "title_zh": "图层枚举与 geometry_role 取值待官方确认",
-      "category": "schema_pending",
-      "status": "open",
-      "description_zh": "规范引用的 brief/site-package/enums/layers.json 不在本地参考副本中。LAND_USE、BUILDING_FOOTPRINT、SITE_BOUNDARY、KEY_AREA 有官方文档例据；ROAD、GREEN_SPACE、PUBLIC_SPACE、CONSTRAINT、PHASING 为按同一命名风格推断。roads 图层的 geometry_role=\"concept\" 亦未见于官方文档已见的枚举（design_proposal / provisional_constraint / official_constraint）。",
-      "impact_zh": "若校验器不接受推断枚举或 concept 取值，空间审查将报错；届时需按官方枚举批量修正 9 个 GeoJSON 的 layer 与 geometry_role 字段。",
-      "recalculation_trigger_zh": "克隆官方仓库并取得 enums/layers.json 后：逐图层核对修正，roads 图层如不被接受则改回 design_proposal 并保留 alignment_status=\"concept_only_not_engineering_alignment\" 字段，随后刷新 manifest 哈希。",
+      "title_zh": "图层枚举与 geometry_role 取值核对完成",
+      "category": "schema_verification",
+      "status": "resolved",
+      "description_zh": "2026-08-26 已通过 GitHub API 读取主仓库 brief/site-package/enums/layers.json，并逐一核对本包 9 个 GeoJSON：使用的 SITE_BOUNDARY、KEY_AREA、LAND_USE、BUILDING_FOOTPRINT、ROAD_CENTERLINE、GREEN_SPACE、PUBLIC_SPACE、HERITAGE_PROTECTION、REGULATORY_CONTROL、PHASE 均在当前枚举内；geometry_role 仅使用已通过官方校验的 design_proposal 与 provisional_constraint。",
+      "impact_zh": "当前无 schema 枚举阻断；官方确定性校验与空间复核均通过。该核对不改变任何几何的 provisional 属性。",
+      "recalculation_trigger_zh": "仅在 site_package_version 或 enums/layers.json 更新时重新逐图层核对；如枚举变化，按新版修正后使用官方刷新脚本更新 manifest 并重跑四门检查。",
       "related_files": [
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",

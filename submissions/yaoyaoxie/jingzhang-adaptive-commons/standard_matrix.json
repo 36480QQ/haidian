@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "standard_matrix_note_zh": "标准 ID 已对齐仓库政策文件 brief/site-package/standards/standards.json 登记库：五项 formal 强制标准（PROJECT-OFFICIAL-ANNOUNCEMENT、PROJECT-AGENT-OPEN-CALL-TASKBOOK、MOHURD-URBAN-DESIGN-MEASURES、MOHURD-CONTROL-DETAILED-PLANNING、MNR-LAND-USE-CLASSIFICATION-GUIDE）全部应答，另保留三项包内补充标准（GB-55019-ACCESSIBILITY、CULTURAL-RELICS-PROTECTION-LAW、DATA-SECURITY-PIPL，非登记库强制项，mandatory=false）。review_status=addressed 表示方案已在设计方向与证据链上作答；登记库引用的官方文本快照（standards/references/）不在本地副本中，条文级符合性核验待取得官方文本，已在各条 evidence_summary_zh 如实注明，不以 addressed 宣称条文级合规。",
+  "standard_matrix_note_zh": "2026-08-26 已通过 GitHub API 对照主仓库 brief/site-package/standards/standards.json 与 standards/references/：五项 formal 强制标准均有登记状态、访问日期和参考路径，方案均已应答；另保留三项包内补充标准（GB-55019-ACCESSIBILITY、CULTURAL-RELICS-PROTECTION-LAW、DATA-SECURITY-PIPL，非登记库强制项，mandatory=false）。review_status=addressed 仅表示设计方向与证据链已响应；登记快照可得不等于持证专业人员已完成项目级条文审查、现场核查或签章。",
   "standards": [
     {
       "standard_id": "PROJECT-OFFICIAL-ANNOUNCEMENT",
@@ -8,9 +8,9 @@
       "requirement_zh": "本项目三层范围、三处重点区域、设计任务、语言、设计深度与成果语境的主控依据。",
       "professional_dimension": "征集任务主控依据",
       "mandatory": true,
-      "reference_fetch_status": "needs_official_file",
-      "reference_accessed_date": null,
-      "local_reference_path": null,
+      "reference_fetch_status": "fetched",
+      "reference_accessed_date": "2026-06-05",
+      "local_reference_path": "brief/site-package/standards/references/project-official-announcement.md",
       "review_status": "addressed",
       "proposal_sections": [
         "第1章 设计依据与资料清单",
@@ -45,7 +45,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "方案三层范围面积口径（约43.6/11.4平方公里、368.4公顷）、三处重点区域名称与任务、双语成果与交付清单全部按公告口径组织并在第1、2章逐项引用；公告原文快照未随包保存，条文级核对以官方发布页为准。"
+      "evidence_summary_zh": "方案三层范围面积口径（约43.6/11.4平方公里、368.4公顷）、三处重点区域名称与任务、双语成果与交付清单全部按公告口径组织并在第1、2章逐项引用；主仓库已登记官方公告快照与发布页，但公告不提供精确 polygon 或项目控规条件。"
     },
     {
       "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
@@ -54,8 +54,8 @@
       "professional_dimension": "智能体任务书响应",
       "mandatory": true,
       "reference_fetch_status": "user_provided_summary",
-      "reference_accessed_date": null,
-      "local_reference_path": null,
+      "reference_accessed_date": "2026-06-05",
+      "local_reference_path": "brief/site-package/standards/references/agent-open-call-taskbook-0518.md",
       "review_status": "addressed",
       "proposal_sections": [
         "第3章 统筹研究范围产业与未来城市研究",
@@ -85,7 +85,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "六项 agent 任务（命名体系、生态案例、场景卡、朝圣地标、文化叙事、运营体系）在第3/6/10章与 compliance_matrix.json 逐项应答；任务书为用户提供清权摘录，机读原文不在本包。"
+      "evidence_summary_zh": "六项 agent 任务（命名体系、生态案例、场景卡、朝圣地标、文化叙事、运营体系）在第3/6/10章与 compliance_matrix.json 逐项应答；主仓库保存用户清权任务书的结构化文件与 Markdown 摘录，该资料不承担红线、控规或政府实施承诺证明。"
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
@@ -93,9 +93,9 @@
       "requirement_zh": "城市设计应落实规划、指导建筑设计、塑造特色风貌，统筹平面与立体空间、公共空间、建筑高度体量风格色彩等控制要求。",
       "professional_dimension": "城市设计",
       "mandatory": true,
-      "reference_fetch_status": "needs_official_file",
-      "reference_accessed_date": null,
-      "local_reference_path": null,
+      "reference_fetch_status": "fetched_via_official_pdf_text",
+      "reference_accessed_date": "2026-06-05",
+      "local_reference_path": "brief/site-package/standards/references/mohurd-urban-design-measures.md",
       "review_status": "addressed",
       "proposal_sections": [
         "第4章 总体设计范围城市更新与控规深度城市设计",
@@ -115,7 +115,7 @@
         "public_space_ratio"
       ],
       "source_ids": [
-        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
         "A-CONTROLS-003",
@@ -127,7 +127,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "总体结构、公共空间体系、风貌与高度体量控制原则按城市设计深度组织（第4、9章与四种建筑原型）；官方文本快照不在本地副本，条文级符合性核验待取得官方文本后由持证专业人员完成。"
+      "evidence_summary_zh": "总体结构、公共空间体系、风貌与高度体量控制原则按城市设计深度组织（第4、9章与四种建筑原型）；主仓库已取得住建部官方 PDF 文本快照。本轮仅核对原则性响应，项目级条文审查、现场核查及必要签章仍须由持证专业人员在实施前完成。"
     },
     {
       "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
@@ -135,9 +135,9 @@
       "requirement_zh": "控规是规划许可与实施管理依据；涉及用地、开发强度、道路、市政与实施管理时必须区分已知控制条件、设计建议与待确认事项。",
       "professional_dimension": "控制性详细规划",
       "mandatory": true,
-      "reference_fetch_status": "needs_official_file",
-      "reference_accessed_date": null,
-      "local_reference_path": null,
+      "reference_fetch_status": "fetched",
+      "reference_accessed_date": "2026-06-05",
+      "local_reference_path": "brief/site-package/standards/references/mohurd-control-detailed-planning.md",
       "review_status": "addressed",
       "proposal_sections": [
         "第4章 总体设计范围城市更新与控规深度城市设计",
@@ -157,7 +157,7 @@
         "building_density"
       ],
       "source_ids": [
-        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING"
       ],
       "assumption_ids": [
         "A-CONTROLS-003"
@@ -168,7 +168,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "用地分区图层无缝覆盖总体设计范围且六类用地面积可复算；容积率、密度、高度、退线等控规指标因官方条件缺失一律登记 unknown 并写明所需资料，不以设计建议冒充控制条件；条文级核验待官方文本。"
+      "evidence_summary_zh": "用地分区图层无缝覆盖 provisional 总体设计范围且六类用地面积可复算；主仓库已取得办法官方页面快照。容积率、密度、高度、退线等项目控规条件仍缺失并保持 unknown，不以设计建议冒充控制条件；实施前仍需项目级专业复核。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -176,9 +176,9 @@
       "requirement_zh": "用地分类与指标表达应采用统一的国土空间用地用海分类逻辑，不以自造分类替代可校验用地代码。",
       "professional_dimension": "用地分类",
       "mandatory": true,
-      "reference_fetch_status": "needs_official_file",
-      "reference_accessed_date": null,
-      "local_reference_path": null,
+      "reference_fetch_status": "fetched",
+      "reference_accessed_date": "2026-06-05",
+      "local_reference_path": "brief/site-package/standards/references/mnr-land-use-classification-guide.md",
       "review_status": "addressed",
       "proposal_sections": [
         "第4章 总体设计范围城市更新与控规深度城市设计",
@@ -200,7 +200,7 @@
         "land_use_area_residential_support_sqm"
       ],
       "source_ids": [
-        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
+        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -212,7 +212,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "用地分区采用六类功能口径（commercial_service 等）并在 land_use.geojson 以 land_use_code 属性标注，面积可复算；与官方用地用海分类代码的逐类映射表待官方指南文本核对后补齐，当前以 A-ENUM-010 登记。"
+      "evidence_summary_zh": "主仓库已取得自然资源部指南官方页面快照；land_use.geojson 已使用指南数字代码子集（0701/0802/0804/0901/1401/1403），方案功能分类另存 functional_group，避免自造分类替代法定代码。具体地块用地批准和控规条件仍待正式资料。"
     },
     {
       "standard_id": "GB-55019-ACCESSIBILITY",

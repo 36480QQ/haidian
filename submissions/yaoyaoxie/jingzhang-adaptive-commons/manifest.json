@@ -41,56 +41,56 @@
       "role": "assumptions",
       "language": "zh",
       "required": true,
-      "sha256": "754726786cc346fa46f4c0358ab464a1d7182cdf6a6776d6a0da2b15544dd5bf"
+      "sha256": "f13df1efa68136e8902870c678a782bcb060032cdeeb0b1d5801ec57988467b3"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "language": "zh",
       "required": true,
-      "sha256": "6f1443a837f69cc569df9307d397a1ccf7628665f303b91c987d72f050da6586"
+      "sha256": "96c80deff3409a70c0f1cd27d5892f62845d9c0dbe2c6ca056b7cdab241491be"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "language": "neutral",
       "required": true,
-      "sha256": "fa669f78244922542a729cc8478e260a3d409d401ca7174b86bad5eaf6da8be1"
+      "sha256": "78ef386865699c5dc958481d3b476e7776db565d2549e59b56f2dc80bf074139"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "language": "zh",
       "required": true,
-      "sha256": "6ae8e6ada9066dc39a7b83b3559b716b36a4c6f4db49153e3eb80f496b6c7402"
+      "sha256": "933d23047e5809d0d7ef61ae15c326745332d78d61419fc89aa0cb77c0959b14"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "language": "zh",
       "required": true,
-      "sha256": "11c37de7ad5c2f5ac84600394670fd458f2d3e5b2b8e39dddb7ab4a12d5ffac9"
+      "sha256": "9a3955d67b63dbeaf9179b014f3b3d18d6206b77f422a03ea35194aaaf8b1881"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "language": "zh",
       "required": true,
-      "sha256": "724e7de53355bb92c2ed48bb0008d7676d792e3e14781a52ed3ee2adf572ee2c"
+      "sha256": "69389ba5bbe5cb6d15b901f25fc63ad73235504df975fae0b05236d87f97ecbc"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "language": "zh",
       "required": true,
-      "sha256": "c014959bf1cf55cd38d103e37c38082feee41cf3f7ea97ebb59b0737b99a0931"
+      "sha256": "549e5a7f1e48704801fed87f772a7815820a76395d62869b7c475dda2879137f"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "language": "zh",
       "required": true,
-      "sha256": "457e6ef1f2e92e105482c0fd0390b04cfdf08ba6a7ff8af23bbb747482191086"
+      "sha256": "e810fd610d53abe712719926caaefad065371bdd43aece16500bdf4783098b60"
     },
     {
       "path": "proposal.en.md",
@@ -98,14 +98,14 @@
       "language": "en",
       "required": true,
       "translation_of": "proposal.md",
-      "sha256": "231c791714d123cbbf02243e2199654cb694a7375a0a5937e790e43c27902abe"
+      "sha256": "45d692d5677bca4ad2043e6be331bbdb29224876975392c9e852e4ed04bc6e48"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "language": "zh",
       "required": true,
-      "sha256": "a833c405b37453c6f41b8e9dfa53ce4ea20e9e4492b2f8f2bcd3ec5300edc417"
+      "sha256": "424c2d7b68962f3f290f7817a915eeaf0cbf6a10f671cff6fb0e608b2c26fce3"
     },
     {
       "path": "report/proposal.en.html",
@@ -113,7 +113,7 @@
       "language": "en",
       "required": false,
       "translation_of": "report/proposal.html",
-      "sha256": "fd85f72e9c516a765f6e2034e60a8d3ac2fde7ce6645ca0b671d0f95faef9152"
+      "sha256": "d93cc1b143df03a5a1afb0f72640f29b87298e67116db21fe639d8c3257c24fa"
     },
     {
       "path": "report/copyright_statement.md",
@@ -142,7 +142,7 @@
       "role": "asset",
       "language": "neutral",
       "required": true,
-      "sha256": "dca4daa507adb731ea00299412fa6d36276da053efa5d06beedd4eebcaa3bd3e"
+      "sha256": "a73d28ba9e3655f7f5cd7290a0e216aa633bb255ca0b694a503a2166a74c76e4"
     },
     {
       "path": "assets/figures/jingzhang-growth-mark.svg",
@@ -323,11 +323,7 @@
   "validation_claim": {
     "self_checked": true,
     "data_confidence": "mixed_provisional_and_conceptual",
-    "known_blockers": [
-      "组织方未公开资料缺口（官方红线 polygon、控规条件、道路红线与流量、宗地权属与现状测绘、文保范围、市政容量、公共服务设施底数）未消解：相关指标在 metrics.json 保持 unknown，几何全部为 provisional_constraint，已在 assumptions.json 登记复算触发器；属组织方数据缺口，按规则不阻断内容评审。",
-      "官方标准文本快照（brief/site-package/standards/references/）不在本地副本：standard_matrix.json 五项强制标准 review_status=addressed 指设计方向与证据链已应答，条文级符合性核验待取得官方文本，各条 evidence_summary_zh 已注明。",
-      "site_package_version 沿用本地参考副本可见的 0.1.0 口径；如图层枚举或政策文件更新，须按新版复核 land_use_code 等取值。"
-    ],
+    "known_blockers": [],
     "readiness_contract": "persisted-self-check-v1"
   }
 }

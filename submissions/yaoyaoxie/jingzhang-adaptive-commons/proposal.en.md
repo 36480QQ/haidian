@@ -47,9 +47,9 @@ Every spatial judgment in this proposal answers to a single litmus: **Along Jing
 
 **Gaps and handling rules**: none of the following official materials has been obtained; their impacts and recalculation triggers are registered item by item in the assumptions list — official boundary polygons for the three scope levels, official polygons for the three key areas, regulatory detailed planning conditions (FAR, building height, building coverage ratio, setbacks), road red lines and baseline traffic volumes, parcel ownership and existing-building surveys, cultural-heritage protection boundaries and construction control zones, municipal utility and capacity data, and public-service facility baselines. The handling rule: any metric involving these materials remains to be confirmed with official data and no numerical conclusion is drawn; all derived geometry and metrics will be recalculated and rebuilt once official materials are released [depth:existing_conditions_diagnosis] [depth:risk_missing_data].
 
-**Professional-standard response status**: the six categories of mandatory professional standards — urban design, regulatory detailed planning, land-use classification, accessibility, cultural-relics protection, and data security — have been answered in direction, but the local reference copies contain no official standard snapshots. All are registered as "needs_official_file" and are not written up as satisfied; local snapshots must be completed against the standards registry before formal submission (see Chapter 12 and `standard_matrix.json` in this package).
+**Professional-standard response status**: the five formal mandatory registry items — the announcement, agent taskbook, urban design, regulatory detailed planning, and land-use classification — all have registered snapshots, access dates, and source paths, and this proposal responds to them in direction. Accessibility, cultural-relics protection, and data security remain package-level supplementary standards. `review_status=addressed` means only that the evidence chain responds; it does not claim project-level clause review, site inspection, or professional sign-off (see Chapter 12 and `standard_matrix.json`).
 
-**Still missing**: the original announcement URL and the pre-qualification document package (available by email request), the machine-readable taskbook original, and official standard snapshots — all are on the data-completion list before formal submission.
+**Still missing**: the complete password-controlled pre-qualification package and project-specific materials for official polygons, regulatory controls, roads, title, heritage, and utilities. Registry snapshots do not replace these site materials or licensed professional review.
 
 ---
 
@@ -183,7 +183,7 @@ Every interface in the section is an "exchange": the park exchanges ecological d
 
 **How to verify**: the structure and land-use relationships can be recalculated from the land-use layer; every spatial move must pass the Three Litmus Questions.
 
-**Still missing**: formal regulatory detailed planning conditions, local snapshots of land-use classification standards ([standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] and other standards are currently in "needs_official_file" status), ownership and existing-condition surveys. Land-use ratios and intensity indicators draw no statutory conclusions before materials arrive.
+**Still missing**: formal regulatory detailed planning conditions, project-specific land-use approval, ownership, and existing-condition surveys. The registered land-use guide snapshot is available but cannot replace site-specific planning conditions; land-use ratios and intensity indicators draw no statutory conclusions before materials arrive.
 
 ---
 
@@ -488,9 +488,9 @@ On top of the four stages and the five-party structure, four mechanisms form an 
 | Long-term operation | Space utilization, maintenance response, project renewal/exit ratio | Annual operations reports |
 | International outreach | Bilingual outputs, partner institutions, replicable-toolkit adoption | Publication records, cooperation agreements |
 
-**Compliance matrix**: the task coverage matrix registers, item by item, the response locations for announcement tasks 1.3.1–1.3.3, the three scope levels 1.4.1–1.4.3, overall and key-area tasks 1.5.1.*–1.5.3.*, and agent tasks agent.1–agent.6; each item links proposal chapters, spatial or data evidence, and check items, with the complete index kept in `compliance_matrix.json`. The professional-standards matrix registers the response status of the six mandatory standard categories (all currently "needs_official_file"); the design-depth matrix registers the true completion status of the fifteen depth items, honestly marking items limited by organizer-undisclosed data rather than writing them up as complete.
+**Compliance matrix**: the task coverage matrix registers, item by item, the response locations for announcement tasks 1.3.1–1.3.3, the three scope levels 1.4.1–1.4.3, overall and key-area tasks 1.5.1.*–1.5.3.*, and agent tasks agent.1–agent.6; each item links proposal chapters, spatial or data evidence, and check items, with the complete index kept in `compliance_matrix.json`. The professional-standards matrix records five formal mandatory registry items with their current reference status and three package-level supplementary standards; the design-depth matrix registers the true completion status of the fifteen depth items, honestly marking items limited by organizer-undisclosed data rather than writing them up as complete.
 
-**Still missing**: the three core metrics await recalculation and confirmation once official polygons arrive; official standard-text snapshots are pending.
+**Still missing**: the three core metrics await recalculation and confirmation once official polygons arrive; the project-level applicability of registered standards awaits professional review.
 
 ---
 
@@ -512,7 +512,7 @@ On top of the four stages and the five-party structure, four mechanisms form an 
 | One-time construction | Every new node specifies maintenance, replacement, exit, and reuse |
 | Misreading administrative boundaries | All scopes, metrics, phasing, and investment are labeled conceptual |
 
-**Data governance boundaries**: data collection must correspond to an explicit public purpose; anonymized, aggregated, and non-identifying data is preferred; algorithmic scoring never replaces public-service eligibility judgment; responsible bodies, retention periods, and appeal and exit mechanisms are specified before a scenario launches; the observatory publicly presents metric definitions, data timestamps, and uncertainty. The data-compliance direction responds to personal-information-protection and data-security legal requirements; the formal basis awaits the official texts [standard:DATA-SECURITY-PIPL].
+**Data governance boundaries**: data collection must correspond to an explicit public purpose; anonymized, aggregated, and non-identifying data is preferred; algorithmic scoring never replaces public-service eligibility judgment; responsible bodies, retention periods, and appeal and exit mechanisms are specified before a scenario launches; the observatory publicly presents metric definitions, data timestamps, and uncertainty. The data-compliance direction responds to personal-information-protection and data-security legal requirements; project-level review by legal and data-compliance professionals is required before deployment [standard:DATA-SECURITY-PIPL].
 
 **Copyright statement**: the five core figures are conceptual-expression figures self-generated for this proposal from provisional geometry and conceptual deduction; they are not site photographs, not approved plans, and not engineering drawings. All cited cases come from public web pages or open-access publications, with publisher, URL, license, and restrictions registered item by item (Chapter 13 and `sources.json`); only mechanisms are extracted, and no drawings are copied. No rights-uncleared commercial maps, images, fonts, logos, portraits, or paper illustrations are used; no classified maps, internal enterprise data, personal privacy, or unauthorized materials are used.
 
@@ -520,7 +520,7 @@ On top of the four stages and the five-party structure, four mechanisms form an 
 
 **Limits of machine self-checks**: subsequent structured validation results for this package only indicate that the submission package meets the basic conditions to enter checks and content review; they do not represent professional-quality certification, formal selection, government approval, or engineering feasibility.
 
-**Still missing**: official standard text snapshots, verification against the formal source registry, and third-party professional review.
+**Still missing**: project-specific official materials, project-level clause applicability checks, and third-party professional review. The central source and standards registries were reconciled on 2026-08-26.
 
 ---
 
