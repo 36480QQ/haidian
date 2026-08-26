@@ -47,3 +47,14 @@ OFL permits embedding and redistribution of subsets; the license text ships with
 | `visual/assets/*.js/.json` | hand-written code and schemas | Node/browser built-ins only |
 
 Third-party mechanism references (switchback archive, near-miss triage, evidence ladder, etc.) are **attributed idea-level references** registered in `sources.json` and credited inline in the proposal; no text, images, geometry or data files were copied from other submission packages except where an explicit open license is cited (e.g. the E0–E5 evidence-ladder concept under CC-BY-SA-4.0, independently re-expressed).
+
+## Third-party openly licensed photographs (v1.7 amend 3)
+
+Two Wikimedia Commons photographs are included under `assets/reference-photos/`, clearly separated from the account owner's field-survey photographs (`assets/site-photos/`, which remain exclusively the owner's own work):
+
+| File | Source & author | License | Changes | Role in this package |
+| --- | --- | --- | --- | --- |
+| `qinghuayuan-station-1908-building-2023.jpg` | [Wikimedia Commons: QINGHUAYUAN STATION OLD HOUSE 202310.jpg](https://commons.wikimedia.org/wiki/File:QINGHUAYUAN_STATION_OLD_HOUSE_202310.jpg), photo by 李汉宗 (Lhzss8), 2023-10-03 | CC BY-SA 4.0 | proportionally rescaled to 1600 px width | Visual reference for the old Qinghuayuan Station anchor, which the 2026-08-24 survey did not reach; counts as G1 public-source support only and does not change the anchor's evidence grade |
+| `wudaokou-night-2008.jpg` | [Wikimedia Commons: Wudaokou.jpg](https://commons.wikimedia.org/wiki/File:Wudaokou.jpg), photo by Mfrk, 2008-04-06 | CC BY-SA 3.0 | none | Historical illustration of Wudaokou's night-time tradition; explicitly labeled as not depicting 2026 conditions and not field evidence for scenario card 9 |
+
+Both are attributed inline at each point of use (proposal text and HTML, zh & en) and registered in `sources.json` (`WIKIMEDIA-QHY-OLDHOUSE-2023`, `WIKIMEDIA-WUDAOKOU-NIGHT-2008`). Per the ShareAlike condition, these two image files remain under their respective CC BY-SA licenses; their inclusion does not alter the licensing of any other package asset, and the package-level COMMUNITY-DISPLAY-ONLY notice does not restrict rights the CC licenses grant in these two files.
