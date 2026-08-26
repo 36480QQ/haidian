@@ -1,5 +1,9 @@
 # 方案迭代记录
 
+## v1.2 - 2026-08-26
+
+- Repair CocoSgt review P0/P1: provisional-boundary honesty, real bilingual figures, embedded CJK font, unique agent.1–6 evidence, personas, industry tests, JZ gates, logo and site sequence.
+
 ## v1.1 - 2026-08-26
 
 - Adopt manifest schema_version 0.2.0 required for new packages.

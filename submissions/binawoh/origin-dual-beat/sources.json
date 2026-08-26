@@ -42,6 +42,56 @@
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "CASE-KENDALL",
+      "url": "https://www.cambridgema.gov/cdd/economicopportunityanddevelopment/aboutcambridge/kendallsq",
+      "source_type": "official_public",
+      "publisher": "City of Cambridge Community Development Department",
+      "retrieved_at": "2026-08-26",
+      "license_or_reuse": "Public municipal web page; cite, do not copy plans.",
+      "limitations": "Cambridge zoning, housing, and visa context do not transfer to Haidian.",
+      "usage": "Mechanism comparison only: near-campus conversion parlor. Not copyable planning."
+    },
+    {
+      "id": "CASE-KINGS-CROSS",
+      "url": "https://www.kingscross.co.uk/about-the-development",
+      "source_type": "official_public",
+      "publisher": "King's Cross Central Limited Partnership / kingscross.co.uk",
+      "retrieved_at": "2026-08-26",
+      "license_or_reuse": "Public project website; cite, do not copy masterplan drawings.",
+      "limitations": "UK railway-heritage and long-term single-owner model does not transfer.",
+      "usage": "Mechanism comparison only: rail heritage and crowd layering. Not copyable planning."
+    },
+    {
+      "id": "CASE-TSUKUBA",
+      "url": "https://www.city.tsukuba.lg.jp/shisei/joho/profile/index.html",
+      "source_type": "official_public",
+      "publisher": "Tsukuba City",
+      "retrieved_at": "2026-08-26",
+      "license_or_reuse": "Public municipal web page; cite, do not copy plans.",
+      "limitations": "Research-city commute and student mix unlike Wudaokou.",
+      "usage": "Mechanism comparison only: research-city daily life. Not copyable planning."
+    },
+    {
+      "id": "CASE-NANSHAN",
+      "url": "https://www.szns.gov.cn/",
+      "source_type": "official_public",
+      "publisher": "People's Government of Nanshan District, Shenzhen",
+      "retrieved_at": "2026-08-26",
+      "license_or_reuse": "Public government portal; cite, do not copy statutory plans.",
+      "limitations": "Shenzhen renewal powers differ from Haidian.",
+      "usage": "Mechanism comparison only: industry street versus living setback. Not copyable planning."
+    },
+    {
+      "id": "CASE-ONENORTH",
+      "url": "https://www.jtc.gov.sg/find-land/jtc-key-estates/one-north",
+      "source_type": "official_public",
+      "publisher": "JTC Corporation",
+      "retrieved_at": "2026-08-26",
+      "license_or_reuse": "Public agency web page; cite, do not copy estate plans.",
+      "limitations": "Singapore state-land system is not reproducible here.",
+      "usage": "Mechanism comparison only: walking seams between clusters. Not copyable planning."
     }
   ]
 }
