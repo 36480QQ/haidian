@@ -25,7 +25,7 @@ This proposal uses the provisional rough boundaries in `brief/site-package/geome
 
 ## Core Design Proposition: Why Stitching
 
-Since the Jing-Zhang Railway commenced service in 1909, it has divided Haidian's northwestern area into eastern and western halves for over a century. In 2026, the Jing-Zhang Heritage Park opened, and a 9 km green corridor reconnected north-south public life; however, the boundary conditions on both sides of the park—walls, grade differences, road cross-sections, visual blind spots, and management fences—continue to obstruct east-west daily movement of numerous community residents on both sides (the number of communities on both sides and the affected population are design assumptions based on extrapolation from the resident population of streets along the corridor in the publicly available Haidian District Statistical Yearbook 2023; specific numbers require confirmation through community census; see assumptions.json#ASM-008). The core proposition of this proposal is: **not to design the park interior, but to focus on designing every interface between the park and the city**, introducing a temporal dimension so that the same interface serves different populations at different times of day [depth:overall_spatial_structure].
+Since the Jing-Zhang Railway commenced service in 1909, it has divided Haidian's northwestern area into eastern and western halves for over a century. In 2026, the Jing-Zhang Heritage Park opened [source:OFFICIAL-ANNOUNCEMENT] (see assumptions.json#ASM-PARK-OPENING), and a 9 km green corridor reconnected north-south public life; however, the boundary conditions on both sides of the park—walls, grade differences, road cross-sections, visual blind spots, and management fences—continue to obstruct east-west daily movement of numerous community residents on both sides (the number of communities on both sides and the affected population are design assumptions based on extrapolation from the resident population of streets along the corridor in the publicly available Haidian District Statistical Yearbook 2023; specific numbers require confirmation through community census; see assumptions.json#ASM-008). The core proposition of this proposal is: **not to design the park interior, but to focus on designing every interface between the park and the city**, introducing a temporal dimension so that the same interface serves different populations at different times of day [depth:overall_spatial_structure].
 
 This is not an abstract concept. From Wudaokou to Dazhongsi, pedestrian accessibility for communities on both sides of the park is significantly reduced (the specific reduction magnitude requires determination through formal network analysis; preliminary estimates are based on OpenStreetMap 2024-06 road network data and QGIS Network Analysis shortest path analysis, data license ODbL, analysis scope covering residential-to-commercial/public-service facility paths within a 500 m buffer on both sides of the park; this analysis has not been independently reviewed and precise values await formal data completion for confirmation). Every street opening blocked by walls, slopes, or railings is a specific spatial design object that can be repaired.
 
@@ -97,7 +97,7 @@ Two-Wing definition: The Xiaoyue River Scenario Empowerment Wing is oriented alo
 
 This proposal puts forward the spatial organization concept of "One Corridor, Nine Needles, Three Clocks in Coordination" (conceptual proposal, for professional team refinement):
 
-- **One Corridor**: The 9 km Jing-Zhang Heritage Park linear corridor (the already-built public space main axis)
+- **One Corridor**: The 9 km Jing-Zhang Heritage Park linear corridor (public space main axis [source:OFFICIAL-ANNOUNCEMENT])
 - **Nine Needles**: 9 suture nodes distributed at urban interface fracture points on both sides of the corridor
 - **Three Clocks**: Day Clock / Season Clock / Chronicle Clock—a three-layer temporal orchestration system managed by the unified AI scheduling hub
 
@@ -368,7 +368,7 @@ Data gaps: Precise building footprints, property ownership information, regulato
 
 The spatial structure of the overall design area (11.4 km²) follows the pattern "One Corridor, Nine Needles; East-West Mending; Three Clocks Synergy" [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]:
 
-- **One Corridor**: The Jing-Zhang Heritage Park 9km linear green public space main axis (already built)
+- **One Corridor**: The Jing-Zhang Heritage Park 9km linear green public space main axis [source:OFFICIAL-ANNOUNCEMENT]
 - **Nine Needles**: 9 suture nodes distributed at urban interface fracture points along park boundaries
 - **East-West Mending**: Radiating 300-500m in both directions from each suture node, forming "needle-eye influence zones"
 - **Three Clocks Synergy**: AI scheduling hub providing unified orchestration of Day/Season/Era three-layer temporal rhythms
