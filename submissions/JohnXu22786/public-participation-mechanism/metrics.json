@@ -7,82 +7,82 @@
   "metrics": {
     "site_area_sqm": {
       "status": "known",
-      "value": 11412825.386,
+      "value": 11412825,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(provisional_site_boundary, EPSG:4548)",
+      "formula": "polygon_area(provisional_site_boundary, EPSG:4548); display reduced to integer sqm (about 11.4 km2)",
       "confidence": "medium",
       "assumptions": [
-        "Provisional boundary, not an official redline."
+        "Provisional boundary, not an official redline; recompute when official geometry is published."
       ]
     },
     "green_space_area_sqm": {
       "status": "known",
-      "value": 1255908.493,
+      "value": 1255908,
       "unit": "sqm",
       "source_files": [
         "geometry/green_space.geojson"
       ],
-      "formula": "union(conceptual green polygons, EPSG:4548)",
+      "formula": "union(conceptual green polygons, EPSG:4548); display reduced to integer sqm",
       "confidence": "low",
       "assumptions": []
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 36150.0,
+      "value": 36150,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "union(conceptual public-space polygons, EPSG:4548)",
+      "formula": "union(conceptual public-space polygons, EPSG:4548); display reduced to integer sqm",
       "confidence": "low",
       "assumptions": []
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 111600.0,
+      "value": 111600,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "union(conceptual reuse-first envelopes, EPSG:4548)",
+      "formula": "union(conceptual reuse-first envelopes, EPSG:4548); display reduced to integer sqm",
       "confidence": "low",
       "assumptions": []
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.110044,
+      "value": 0.11,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "green_space_area_sqm / site_area_sqm",
+      "formula": "green_space_area_sqm / site_area_sqm; display reduced to 2 decimals",
       "confidence": "low",
       "assumptions": []
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.003167,
+      "value": 0.0032,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "public_space_area_sqm / site_area_sqm",
+      "formula": "public_space_area_sqm / site_area_sqm; display reduced to 4 decimals",
       "confidence": "low",
       "assumptions": []
     },
     "road_network_length_m": {
       "status": "known",
-      "value": 10154.351,
+      "value": 10154,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson"
       ],
-      "formula": "sum(conceptual paths, EPSG:4548)",
+      "formula": "sum(conceptual paths, EPSG:4548); display reduced to integer metres",
       "confidence": "low",
       "assumptions": []
     },
@@ -148,7 +148,7 @@
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(industry_validation scenario cards)",
+      "formula": "count(industry validation protocol table rows in proposal.md section 'AI 创新生态、人才画像与 AI+ 场景')",
       "confidence": "high",
       "assumptions": []
     },
@@ -159,21 +159,23 @@
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(representative user groups)",
+      "formula": "count(representative user groups in proposal.md '五类人才画像')",
       "confidence": "high",
       "assumptions": []
     },
     "global_case_count": {
       "status": "known",
-      "value": 4,
+      "value": 6,
       "unit": "count",
       "source_files": [
         "proposal.md",
         "sources.json"
       ],
-      "formula": "count(global ecosystem mechanism cases)",
+      "formula": "count(global ecosystem mechanism cases: proposal.md case table rows equal sources.json SRC-GLOBAL-CASE-01..06)",
       "confidence": "high",
-      "assumptions": []
+      "assumptions": [
+        "Cases are research hypotheses until link verification; count is narrative evidence only."
+      ]
     },
     "phase_count": {
       "status": "known",
@@ -188,14 +190,126 @@
     },
     "annual_program_count": {
       "status": "known",
-      "value": 3,
+      "value": 4,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(annual event system)",
+      "formula": "count(annual event table rows in proposal.md section '更新项目清单、实施政策与分期计划')",
       "confidence": "high",
       "assumptions": []
+    },
+    "land_ratio_park": {
+      "status": "known",
+      "value": 0.25,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "declared concept share (single caliber, self-computed on the provisional sub-scope); recompute when official land-use data are published",
+      "confidence": "low",
+      "assumptions": [
+        "Concept ratio, not an official land-use structure."
+      ]
+    },
+    "land_ratio_research": {
+      "status": "known",
+      "value": 0.2,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "declared concept share (single caliber); recompute when official land-use data are published",
+      "confidence": "low",
+      "assumptions": [
+        "Concept ratio, not an official land-use structure."
+      ]
+    },
+    "land_ratio_culture": {
+      "status": "known",
+      "value": 0.15,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "declared concept share (single caliber); recompute when official land-use data are published",
+      "confidence": "low",
+      "assumptions": [
+        "Concept ratio, not an official land-use structure."
+      ]
+    },
+    "land_ratio_commercial": {
+      "status": "known",
+      "value": 0.1,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "declared concept share (single caliber); recompute when official land-use data are published",
+      "confidence": "low",
+      "assumptions": [
+        "Concept ratio, not an official land-use structure."
+      ]
+    },
+    "land_ratio_business_finance": {
+      "status": "known",
+      "value": 0.1,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "declared concept share (single caliber); recompute when official land-use data are published",
+      "confidence": "low",
+      "assumptions": [
+        "Concept ratio, not an official land-use structure."
+      ]
+    },
+    "land_ratio_residential": {
+      "status": "known",
+      "value": 0.1,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "declared concept share (single caliber); recompute when official land-use data are published",
+      "confidence": "low",
+      "assumptions": [
+        "Concept ratio, not an official land-use structure."
+      ]
+    },
+    "land_ratio_transport": {
+      "status": "known",
+      "value": 0.05,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "declared concept share (single caliber); recompute when official land-use data are published",
+      "confidence": "low",
+      "assumptions": [
+        "Concept ratio, not an official land-use structure."
+      ]
+    },
+    "land_ratio_flex": {
+      "status": "known",
+      "value": 0.05,
+      "unit": "ratio",
+      "source_files": [
+        "proposal.md",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "declared concept share (single caliber); recompute when official land-use data are published",
+      "confidence": "low",
+      "assumptions": [
+        "Concept ratio, not an official land-use structure."
+      ]
     }
   }
 }

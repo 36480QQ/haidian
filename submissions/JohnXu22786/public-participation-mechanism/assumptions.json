@@ -42,6 +42,20 @@
       "statement_en": "Participation activity fluctuates; annual review adapts the mechanism.",
       "category": "operation",
       "status": "accepted_limitation"
+    },
+    {
+      "assumption_id": "A-OPS-001",
+      "statement_zh": "运营基线（人力配置、审核工作量、响应时限、年度预算、参与量、数据留存需求、维护能力）尚无组织方或实地数据校准，属待研究假设；本方案不以未校准目标作为承诺，相关指标仅作过程观测。",
+      "statement_en": "Operational baselines (staffing, moderation workload, response time, budget, participation volume, retention needs, maintenance capacity) are research hypotheses pending calibration; process observation only.",
+      "category": "operation",
+      "status": "research_hypothesis"
+    },
+    {
+      "assumption_id": "A-CASE-001",
+      "statement_zh": "六项全球 AI 创新生态案例与附录国际国内机制参照均为概念引用或待研究假设：已逐条登记待核验链接（SRC-GLOBAL-CASE-01 至 06），链接核验通过前不进入正式证据链，不构成对标结论。",
+      "statement_en": "Global ecosystem cases are registered research hypotheses pending link verification; they do not constitute benchmarking conclusions.",
+      "category": "evidence",
+      "status": "research_hypothesis"
     }
   ]
 }
