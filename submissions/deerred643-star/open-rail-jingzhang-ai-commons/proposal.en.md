@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the century-old Jing-Zhang railway heritage corridor as a civic mainboard, this proposal builds an open-source AI commons of one spine, six stations, three areas and two wings: a 9.7 km rail-to-trail mainline linking six station-hall public nodes and three key areas, forming a recomputable, verifiable, concept-level urban design ready for professional deepening."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # OPEN RAIL: Jing-Zhang AI Commons Urban Design Proposal
@@ -65,7 +65,22 @@ The following cases distill transferable ecosystem mechanisms; all are public ge
 5. **Nanshan Yuehai Sub-district (Shenzhen, China)**: a high-density mixed district embedding test scenarios and engineering capacity, enabling "test downstairs, research upstairs" rapid iteration. Transferable mechanism: the Dazhongsi AI-native commercial blocks and test scenarios.
 6. **Zhangjiang Science City (Shanghai, China)**: an innovation ecosystem and urban services organised around major science facilities, emphasising the "science — industry — city" triad. Transferable mechanism: Zhongzhiyuan's full-stack system with an open central green valley.
 
-Ecosystem mechanisms in place: land and space provide elastic supply through courtyard R&D plots; industry avoids homogeneous competition through the "mainboard — bootloader — dock" division; capital and talent rely on the global networks of the Zhongguancun wing; compute and data are embedded in station halls as edge-compute nodes and compliant data sandboxes (concept); scenarios open up on the Xiaoyuehe wing and the spine as living testbeds [depth:overall_spatial_structure].
+### AI innovation ecosystem map (concept proposal)
+
+The ecosystem map organises eight innovation factors in a factor—space—mechanism matrix, answering the agent.2 ecosystem-map requirement [source:AGENT-TASKBOOK]:
+
+| Factor | Spatial anchor | Mechanism (concept proposal) |
+|--------|----------------|------------------------------|
+| Land and space | Courtyard R&D plots across the three areas | Modular base plates for elastic supply; mainboard—bootloader—dock division avoids homogeneous competition |
+| Industry | Zhongzhiyuan (full stack) → Origin Community (productisation) → Dazhongsi (consumer) | Research—incubation—application three-stage transmission |
+| Capital | Zhongguancun technology-service wing | Investment-matching interfaces and global factor allocation |
+| Talent | Origin Community youth housing and campus interfaces | Campus-city internship channels and an international developer community |
+| Compute | Edge-compute nodes at the six halls | Open testing protocol; edge compute enters the park |
+| Data | Compliant data sandboxes at station halls (concept) | Public data first; personal data never leaves the device |
+| Scenarios | Xiaoyuehe wing and the spine as open testbeds | Annual scenario-release list and testing specifications |
+| Governance | Zhongzhiyuan governance testbed | Public trials of algorithm filing and impact assessment |
+
+How to read the map: horizontally, every factor row has an explicit spatial anchor and a mechanism outlet, avoiding a factor checklist; vertically, the three areas and two wings are not parallel labels but an output—conversion—feedback loop — Dazhongsi consumer insights and Xiaoyuehe scenario data flow back to Zhongzhiyuan's research end [source:GLOBAL-AI-ECOSYSTEM-CASES]. The full machine-readable index of the factor—space mapping lives in the compliance matrix and the land-use layer [data:geometry/land_use.geojson#LU-001] [depth:overall_spatial_structure].
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -172,6 +187,25 @@ Urban character: a belt-wide colour cue of "heritage rust + circuit teal"; wayfi
 4. **AI Origin Monument (Wudaokou hall square)**: marking the spatial coordinate of "Beijing's AI origin", becoming the default backdrop for industry gatherings and annual launches.
 
 No landmark involves physical alteration inside heritage protection redlines; all Qinghuayuan station content is conceptual and subject to the cultural relics authority's requirements [source:QINGHUAYUAN-STATION-HERITAGE]. Landmark and signage design avoids over-entertainment and keeps the restrained temperament of engineering commemoration [source:AGENT-TASKBOOK].
+
+### Public space component library (concept proposal)
+
+To keep station halls, the corridor and pocket plazas consistent and maintainable, the proposal defines ten combinable public-space components (component library); all are original concept designs reusing the OPEN RAIL visual system's herringbone-circuit symbol language [source:AGENT-TASKBOOK]:
+
+| Component | Type | Priority placement | Function |
+|-----------|------|--------------------|----------|
+| Open-source milestone inlay | Cultural narrative | Entire spine | Developer Promenade record system |
+| Agent honour plaque | Honour display | Hall walls | Continuously updated contributor plaques |
+| Trackside service kiosk | Service facility | Six halls | Guidance, Wi-Fi and edge-compute access |
+| Modular seating cluster | Street furniture | Corridor activity segments | Rearrangeable rest interfaces |
+| Rail-edge light strip | Lighting | Both sides of the rails | Night-time safety and heritage narration |
+| Rain-garden module | Ecological facility | Riverside green belts | Sponge infrastructure and interpretation |
+| Scenario test bollard | New infrastructure | Test segments | Sensor power and data interfaces |
+| Wayfinding beacon | Signage system | Hall entrances | Three-level scope navigation and scenario index |
+| Temporary exhibition pavilion | Event facility | Hall squares | Flexible carrier for the four-season events |
+| Barrier-free passage strip | Universal design | Whole slow-traffic network | All-age friendly, wheelchair accessible |
+
+Configuration rules (concept proposal): components follow a three-tier setup — full set at station halls, standard set along the corridor, light set at pocket plazas; final selection and quantities await professional deepening [data:geometry/public_space.geojson#PUBLIC-001]; components within heritage-control zones use reversible installation only [source:QINGHUAYUAN-STATION-HERITAGE]; all components are concept proposals offered for professional teams to deepen [depth:blue_green_public_space].
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
