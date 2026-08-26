@@ -20,6 +20,59 @@
       "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
     },
     {
+      "id": "PROCESSED-SCOPE-SUMMARY",
+      "path": "data/processed/project_scope_summary.csv",
+      "source_type": "repository_processed_reference",
+      "public_status": "confirmed-public",
+      "derived_from": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+      ],
+      "usage": "Three-tier scope and key-area navigation: announced areas, textual extents, provisional polygon feature ids.",
+      "usage_note": "仓库维护者公开发布的导航层处理资料,用于三层范围结构导航。不是新的权威来源:面积与四至的权威依据仍是官方公告,空间依据仍是临时粗略 polygon 登记。"
+    },
+    {
+      "id": "PROCESSED-TASK-REQUIREMENTS",
+      "path": "data/processed/agent_task_requirements.csv",
+      "source_type": "repository_processed_reference",
+      "public_status": "confirmed-public",
+      "derived_from": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+        "DATA-SRC-AGENT-TASKBOOK-20260518"
+      ],
+      "usage": "Index of required tasks from the official announcement and the agent-facing taskbook, used to check response coverage.",
+      "usage_note": "仓库维护者公开发布的导航层处理资料,用于必答任务逐条核对。任务措辞的权威依据是公告与任务书原文,本表只做索引。"
+    },
+    {
+      "id": "PROCESSED-SOURCE-USE-MATRIX",
+      "path": "data/processed/source_use_matrix.csv",
+      "source_type": "repository_processed_reference",
+      "public_status": "confirmed-public",
+      "derived_from": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
+        "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+      ],
+      "usage": "Source-use matrix separating formal basis, background-only material, provisional spatial data, and prohibited uses.",
+      "usage_note": "仓库维护者公开发布的导航层处理资料,为 data/source_registry.json 中登记的六项资料划定用途边界(登记表另有三项法规未纳入本表)。本表 source_id 列逐行列出上述六项上游来源,derived_from 与该列一致。用途判定本身是维护者的编排,不是新的权威来源。"
+    },
+    {
+      "id": "PROCESSED-MISSING-DATA-CHECKLIST",
+      "path": "data/processed/missing_data_checklist.csv",
+      "source_type": "repository_processed_reference",
+      "public_status": "confirmed-public",
+      "derived_from": [
+        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+      ],
+      "usage": "Outstanding-data checklist: official boundary, regulatory planning, roads, plots, buildings, utilities, heritage and public services.",
+      "usage_note": "仓库维护者公开发布的导航层处理资料,是依据已登记资料与其缺失项汇编的检查表,不是新的权威资料。与其他三份处理资料不同,本表没有 source_id 列:它登记的正是尚未登记、尚未公开的官方材料(官方边界、控规、道路红线、地块权属、现状建筑、文保范围、市政条件、公共服务底数)。derived_from 列出的是界定这些缺口的三项已登记来源——公告与任务书定义了需要什么资料,临时粗略 polygon 说明边界为何只能算 provisional——而不是缺失资料本身的来源。清单项进入 assumptions.json 与风险章节,缺口本身不因收录而消失。"
+    },
+    {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",

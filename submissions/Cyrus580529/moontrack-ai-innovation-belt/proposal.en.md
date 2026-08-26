@@ -993,9 +993,9 @@ This proposal claims no official approval, approved regulatory plan, final land 
 - brief/site-package/enums/
 - brief/site-package/ranges/planning_limits.json
 - data/processed/agent_fact_pack.md
-- data/processed/project_scope_summary.csv
-- data/processed/agent_task_requirements.csv
-- data/processed/source_use_matrix.csv
-- data/processed/missing_data_checklist.csv
-- Full machine index: see `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json`
+- data/processed/project_scope_summary.csv (maintainer-published processed material, derived from the official announcement and the provisional coarse-boundary registration; used for three-tier scope navigation, not a new authority source) [source:PROCESSED-SCOPE-SUMMARY]
+- data/processed/agent_task_requirements.csv (maintainer-published processed material, derived from the official announcement and the agent-facing taskbook; used to check required-task coverage, with the original wording governing) [source:PROCESSED-TASK-REQUIREMENTS]
+- data/processed/source_use_matrix.csv (maintainer-published processed material, derived from the repository source registry `data/source_registry.json`; separates formal basis, background-only material, provisional spatial data and prohibited uses) [source:PROCESSED-SOURCE-USE-MATRIX]
+- data/processed/missing_data_checklist.csv (maintainer-published processed material, derived from the source registry and announcement gaps; registers outstanding official boundary, regulatory planning, road, utility, heritage and public-service data) [source:PROCESSED-MISSING-DATA-CHECKLIST]
+- Full machine index: see `sources.json`, `metrics.json`, `compliance_matrix.json`, `standard_matrix.json` and `design_depth_matrix.json`; the `derived_from` field on derived entries cites the upstream `source_id` registered in `data/source_registry.json` [source:SOURCE-REGISTRY]
 - The bibliographic entries in this section follow the site-package registry; full provenance and licensing are in the structured source inventory [source:SITE-PACKAGE]

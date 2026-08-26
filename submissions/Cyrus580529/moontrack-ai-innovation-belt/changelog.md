@@ -2,6 +2,25 @@
 
 本文件记录本方案从初版到当前版本的实际改动，包括**被推翻的结论**与**被删除的内容**。删除比新增更能说明这份方案的作业方式，因此一并保留。
 
+## v0.9 - 2026-08-26
+
+### 改动摘要
+
+- **中文图纸字体改为嵌入。**此前两份中文 PDF 使用 reportlab 内置 CID 字体 `STSong-Light`,那是**不嵌入**的 CIDFontType0:PDF 里只写字体名、不写字形,由阅读器用自带的 Adobe 亚洲字体包或系统 CJK 回退来补。现改为 Noto Sans SC(OFL 1.1)以 TrueType 子集嵌入,`drawings/a3-booklet.pdf` 与 `drawings/a0-boards.pdf` 的字体描述符现含 `FontFile2`。
+- 未使用系统里的 `Songti.ttc` / `STHeiti*.ttc` / `Hiragino Sans GB.ttc`:那些是 Apple 授权字体,嵌入进公开发布的 PDF 不在其许可范围内。字体来源、许可与实例化方式记在 `report/copyright_statement.md` 的 Fonts 一节;字体二进制不作为独立文件进入提交包。
+- 顺带得到一个此前没有的效果:中文粗体过去与正文同字重(`CNB` 就是 `CN`),现在是 700 字重,标题层级更清楚。中文两份 PDF 与 manifest 校验值同步重出;英文两份内容未变(正文全部为拉丁字母),按原字节保留,不制造无谓的二进制改动。
+- **补齐四份派生 CSV 的来源与公开性说明。**`project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv`、`missing_data_checklist.csv` 此前只在参考资料里列了文件名,未登记上游来源,`score_submission.py` 的「公开资料引用」一项因此为 needs-work。现已在 `sources.json` 中登记为 `repository_processed_reference`,以 `derived_from` 字段引用 `data/source_registry.json` 中登记的上游 `source_id`,并标注 `public_status`;正文双语参考资料条目补上派生关系与 `[source:*]` 标签。
+
+### 采纳反馈
+
+- 外部复审指出中文 PDF 未嵌入字体。经复核,旧版确实依赖阅读器的 CJK 字体替代;两份中文 PDF 在本机 macOS 环境显示完整,但在缺少相应字体回退的 Linux Poppler 环境中可出现缺字或空白。为保证评审环境中的跨平台一致性,改为嵌入 Noto Sans SC。
+- 同一复审指出派生 CSV 引用不完整。核对后确认,并发现自检里还有第五条未匹配条目(机器索引行),一并补上;「公开资料引用」现为 8 pass / 0 needs-work。
+
+### 暂未采纳或待复核事项
+
+- 英文 A3/A0 仍不嵌入字体:正文使用 Helvetica/Helvetica-Bold,属于 PDF 标准 14 字体,常规合规阅读器可提供替代,按本次交付标准无需嵌入。
+- 组织方校验器对 PDF 只查空文件,不查字体嵌入;本轮修复属方案自定质量线,不是门槛要求。
+
 ## v0.8 - 2026-08-26
 
 ### 改动摘要

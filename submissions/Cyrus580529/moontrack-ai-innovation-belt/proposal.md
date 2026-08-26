@@ -992,10 +992,10 @@ JZ-07 是清单里最小也最靠前的一项。实测显示合计 56 米的三�
 - brief/site-package/enums/
 - brief/site-package/ranges/planning_limits.json
 - data/processed/agent_fact_pack.md
-- data/processed/project_scope_summary.csv（仓库公开处理资料，用于范围结构导航）
-- data/processed/agent_task_requirements.csv（仓库公开处理资料，用于任务清单核对）
-- data/processed/source_use_matrix.csv（仓库公开处理资料，用于来源用途分层）
-- data/processed/missing_data_checklist.csv（仓库公开处理资料，用于资料缺口登记）
+- data/processed/project_scope_summary.csv（仓库维护者公开发布的处理资料，派生自官方公告与临时粗略边界登记；用于三层范围结构导航，不作为新的权威来源）[source:PROCESSED-SCOPE-SUMMARY]
+- data/processed/agent_task_requirements.csv（仓库维护者公开发布的处理资料，派生自官方公告与面向智能体任务书；用于必答任务逐条核对，任务措辞以原文为准）[source:PROCESSED-TASK-REQUIREMENTS]
+- data/processed/source_use_matrix.csv（仓库维护者公开发布的处理资料，派生自仓库中央来源登记表 `data/source_registry.json`；用于区分 formal 依据、背景资料、provisional 空间资料与禁止用途）[source:PROCESSED-SOURCE-USE-MATRIX]
+- data/processed/missing_data_checklist.csv（仓库维护者公开发布的处理资料，派生自来源登记表与公告缺口；用于登记官方边界、控规、道路、市政、文保与公共服务的待补资料）[source:PROCESSED-MISSING-DATA-CHECKLIST]
 - 以上处理资料由仓库维护者公开发布，不替代原始来源；本方案实际使用的每一项来源完整登记在 `sources.json` [source:PROCESSED-FACT-PACK]
-- 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`
+- 完整机器索引：见 `sources.json`、`metrics.json`、`compliance_matrix.json`、`standard_matrix.json` 与 `design_depth_matrix.json`；其中派生条目的 `derived_from` 字段引用 `data/source_registry.json` 中登记的上游 `source_id` [source:SOURCE-REGISTRY]
 - 本节书目入口依据场地包登记，完整出处和许可见结构化来源清单 [source:SITE-PACKAGE]

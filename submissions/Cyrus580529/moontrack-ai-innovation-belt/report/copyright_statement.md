@@ -13,8 +13,12 @@ Generated and conceptual material is an explanatory layer. No figure in this pac
 | Asset | Use | Licence and redistribution |
 | --- | --- | --- |
 | Hiragino Sans GB | Rasterised into the PNG figures at generation time | Apple system font, not redistributed. Only rendered glyph pixels appear in the PNGs; no font file is embedded or included in this package. |
-| STSong-Light (Adobe-GB1) | Chinese text in the A3 and A0 PDFs | ReportLab built-in CID font reference. Referenced by name under the Adobe-GB1 character collection rather than embedded, so no font file is redistributed. |
-| Helvetica | Latin text in the English PDFs | PDF base-14 standard font, referenced by name, not embedded. |
+| Noto Sans SC Regular / Bold | Chinese text in the A3 booklet and A0 boards (`drawings/a3-booklet.pdf`, `drawings/a0-boards.pdf`) | SIL Open Font License 1.1, which permits embedding. Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'. Embedded as a TrueType subset: the font descriptors in both PDFs carry `FontFile2`. |
+| Helvetica / Helvetica-Bold | Latin text in the English PDFs (`drawings/a3-booklet.en.pdf`, `drawings/a0-boards.en.pdf`), and Latin runs in the Chinese PDFs | PDF base-14 standard font, referenced by name, not embedded. |
+
+Provenance of the Chinese face: upstream is the Noto Sans SC variable font published in the Google Fonts collection (`ofl/notosanssc/NotoSansSC[wght].ttf`). Its default instance is Thin (weight 100), so it was instantiated locally into two static weights — 400 for body text and 700 for headings — before use. Only those two static instances feed the PDF generator, and only the glyphs actually used are subset into each PDF.
+
+Font binaries are not shipped as standalone files in this package. What is redistributed is the embedded TrueType subset inside the two Chinese PDFs, which OFL 1.1 permits. The English PDFs embed no font at all.
 
 The HTML pages request no web font. They fall back through a local font stack (`Hiragino Sans GB`, `PingFang SC`, `Microsoft YaHei`, then the system UI font), so no font is transferred to the reader.
 
