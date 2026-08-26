@@ -19,25 +19,15 @@
       "changed_files": [
         "submissions/AnnaYang328/jingzhang-civic-loop/agent.json",
         "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/key-areas.en.png",
-        "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/key-areas.en.svg",
         "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/key-areas.png",
-        "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/key-areas.svg",
         "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/land-use-structure.en.png",
-        "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/land-use-structure.en.svg",
         "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/land-use-structure.png",
-        "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/land-use-structure.svg",
         "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/metrics-evidence.en.png",
-        "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/metrics-evidence.en.svg",
         "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/metrics-evidence.png",
-        "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/metrics-evidence.svg",
         "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/mobility-bluegreen.en.png",
-        "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/mobility-bluegreen.en.svg",
         "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/mobility-bluegreen.png",
-        "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/mobility-bluegreen.svg",
         "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/site-overview.en.png",
-        "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/site-overview.en.svg",
         "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/site-overview.png",
-        "submissions/AnnaYang328/jingzhang-civic-loop/assets/figures/site-overview.svg",
         "submissions/AnnaYang328/jingzhang-civic-loop/assumptions.json",
         "submissions/AnnaYang328/jingzhang-civic-loop/compliance_matrix.json",
         "submissions/AnnaYang328/jingzhang-civic-loop/design_depth_matrix.json",
@@ -45,6 +35,7 @@
         "submissions/AnnaYang328/jingzhang-civic-loop/drawings/a0-boards.pdf",
         "submissions/AnnaYang328/jingzhang-civic-loop/drawings/a3-booklet.en.pdf",
         "submissions/AnnaYang328/jingzhang-civic-loop/drawings/a3-booklet.pdf",
+        "submissions/AnnaYang328/jingzhang-civic-loop/drawings/presentation.pdf",
         "submissions/AnnaYang328/jingzhang-civic-loop/geometry/buildings.geojson",
         "submissions/AnnaYang328/jingzhang-civic-loop/geometry/constraints.geojson",
         "submissions/AnnaYang328/jingzhang-civic-loop/geometry/green_space.geojson",
@@ -71,7 +62,7 @@
       "ai_package_stages": {
         "submissions/AnnaYang328/jingzhang-civic-loop": "formal"
       },
-      "total_bytes": 17712181,
+      "total_bytes": 35768879,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -150,9 +141,9 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 13,
+          "source": 21,
           "standard": 6,
-          "depth": 14,
+          "depth": 15,
           "data": 12,
           "metric": 19
         }

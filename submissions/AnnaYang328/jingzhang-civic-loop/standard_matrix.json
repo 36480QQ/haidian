@@ -9,6 +9,9 @@
       "review_status": "addressed",
       "proposal_sections": [
         "设计依据与资料清单",
+        "全球 AI 创新生态案例比较：迁移机制，不复制规模",
+        "区域协同结构：五类建议接口",
+        "长期运营：五条从问题到留存或退出的建议路径",
         "总体设计范围城市更新与控规深度城市设计",
         "指标体系、面积复算与合规矩阵"
       ],
@@ -40,7 +43,14 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "CASE-VECTOR-TORONTO",
+        "CASE-MILA-MONTREAL",
+        "CASE-SEOUL-AI-HUB",
+        "CASE-AI-SINGAPORE",
+        "CASE-HI-PARIS",
+        "CASE-ETH-AI-CENTER",
+        "CASE-MERANTIX-BERLIN"
       ],
       "assumption_ids": [
         "A-CONTROLS-001"
@@ -51,7 +61,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "任务书六项要求由正文、七案例比较、五类区域接口、五条运营路径、A3/A0 图纸、结构化矩阵与自检共同证明；外部合作和绩效均保持建议或待测属性。"
     },
     {
       "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
