@@ -22,6 +22,8 @@
         "submissions/JohnXu22786/dazhongsi-ai-industry-district/agent.json",
         "submissions/JohnXu22786/dazhongsi-ai-industry-district/assets/figures/ai-ecosystem-map.en.png",
         "submissions/JohnXu22786/dazhongsi-ai-industry-district/assets/figures/ai-ecosystem-map.png",
+        "submissions/JohnXu22786/dazhongsi-ai-industry-district/assets/figures/deep-map.en.png",
+        "submissions/JohnXu22786/dazhongsi-ai-industry-district/assets/figures/deep-map.png",
         "submissions/JohnXu22786/dazhongsi-ai-industry-district/assets/figures/key-areas.en.png",
         "submissions/JohnXu22786/dazhongsi-ai-industry-district/assets/figures/key-areas.png",
         "submissions/JohnXu22786/dazhongsi-ai-industry-district/assets/figures/land-use-structure.en.png",
@@ -69,7 +71,7 @@
       "ai_package_stages": {
         "submissions/JohnXu22786/dazhongsi-ai-industry-district": "formal"
       },
-      "total_bytes": 8381493,
+      "total_bytes": 15445136,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -205,56 +207,303 @@
     "ink_ok": true,
     "clip_clear": true,
     "overlap_clear": "not_verified",
-    "summary": "ink+edge-clip machine check only; text-overlap not machine-verified post-hoc (figure generation text-bbox checks recorded in changelog)",
-    "figures": {
-      "ai-ecosystem-map.png": {
-        "width": 1800,
-        "height": 1200,
-        "ink": 0.0828,
-        "edge_clip_ratio": 0.0154,
-        "edge_clip_clear": true
+    "summary": "Round-4: all 16 PNGs machine ink/clip checked (maps >=0.08, charts >=0.10, edge bands <2%); generation-time text-bbox renderer check passed for every figure; A0/A3 PDFs post-hoc fitz text-bbox check: 0 overlapping text pairs on all 22 pages, A0 page-1 title/subtitle separation verified in both languages. PNG text-overlap not machine-verifiable post-hoc -> overlap_clear=not_verified at summary level; PDF-level overlap verified true.",
+    "checks": {
+      "figures": {
+        "ai-ecosystem-map.en.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.0868,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "ai-ecosystem-map.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.0832,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "deep-map.en.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.3408,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "deep-map.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.3394,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "key-areas.en.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.1088,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "key-areas.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.1063,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "land-use-structure.en.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.127,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "land-use-structure.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.1221,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "logo-precinct.en.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.1451,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "logo-precinct.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.143,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "metrics-evidence.en.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.1188,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "metrics-evidence.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.1156,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "mobility-bluegreen.en.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.0966,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "mobility-bluegreen.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.0961,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "site-overview.en.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.2033,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        },
+        "site-overview.png": {
+          "width": 2400,
+          "height": 1600,
+          "ink": 0.2013,
+          "edge_clip_ratio": 0.0,
+          "edge_clip_clear": true,
+          "ink_ok": true,
+          "text_bbox_check": "generation-time renderer check passed (no clipped/overlapping text)"
+        }
       },
-      "key-areas.png": {
-        "width": 1800,
-        "height": 1200,
-        "ink": 0.1253,
-        "edge_clip_ratio": 0.0103,
-        "edge_clip_clear": true
-      },
-      "land-use-structure.png": {
-        "width": 1800,
-        "height": 1200,
-        "ink": 0.1229,
-        "edge_clip_ratio": 0.0103,
-        "edge_clip_clear": true
-      },
-      "logo-precinct.png": {
-        "width": 1800,
-        "height": 1200,
-        "ink": 0.081,
-        "edge_clip_ratio": 0.0103,
-        "edge_clip_clear": true
-      },
-      "metrics-evidence.png": {
-        "width": 1800,
-        "height": 1200,
-        "ink": 0.1335,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
-      },
-      "mobility-bluegreen.png": {
-        "width": 1800,
-        "height": 1200,
-        "ink": 0.1328,
-        "edge_clip_ratio": 0.0103,
-        "edge_clip_clear": true
-      },
-      "site-overview.png": {
-        "width": 1800,
-        "height": 1200,
-        "ink": 0.1333,
-        "edge_clip_ratio": 0.0103,
-        "edge_clip_clear": true
+      "pdfs": {
+        "drawings/a0-boards.pdf#p1": {
+          "page_ink": 0.101,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true,
+          "title_bbox": [
+            873.8,
+            49.5,
+            2496.6,
+            126.3
+          ],
+          "title_size_pt": 64.0,
+          "title_subtitle_separation_ok": true
+        },
+        "drawings/a0-boards.pdf#p2": {
+          "page_ink": 0.0867,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a0-boards.en.pdf#p1": {
+          "page_ink": 0.1036,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true,
+          "title_bbox": [
+            690.5,
+            49.5,
+            2679.8,
+            126.3
+          ],
+          "title_size_pt": 64.0,
+          "title_subtitle_separation_ok": true
+        },
+        "drawings/a0-boards.en.pdf#p2": {
+          "page_ink": 0.0889,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.pdf#p1": {
+          "page_ink": 0.0172,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.pdf#p2": {
+          "page_ink": 0.1215,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.pdf#p3": {
+          "page_ink": 0.1014,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.pdf#p4": {
+          "page_ink": 0.0915,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.pdf#p5": {
+          "page_ink": 0.0838,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.pdf#p6": {
+          "page_ink": 0.0975,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.pdf#p7": {
+          "page_ink": 0.1168,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.pdf#p8": {
+          "page_ink": 0.0727,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.pdf#p9": {
+          "page_ink": 0.2071,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.en.pdf#p1": {
+          "page_ink": 0.0195,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.en.pdf#p2": {
+          "page_ink": 0.124,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.en.pdf#p3": {
+          "page_ink": 0.1056,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.en.pdf#p4": {
+          "page_ink": 0.094,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.en.pdf#p5": {
+          "page_ink": 0.0838,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.en.pdf#p6": {
+          "page_ink": 0.1002,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.en.pdf#p7": {
+          "page_ink": 0.1182,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.en.pdf#p8": {
+          "page_ink": 0.0758,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        },
+        "drawings/a3-booklet.en.pdf#p9": {
+          "page_ink": 0.2081,
+          "edge_clip_ratio": 0.0,
+          "text_overlap_pairs": 0,
+          "text_overlap_clear": true
+        }
       }
     }
   }
