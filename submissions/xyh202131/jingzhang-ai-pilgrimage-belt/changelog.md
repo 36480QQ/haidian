@@ -1,5 +1,23 @@
 # 方案迭代记录 / Changelog
 
+## v60.0 - 2026-08-26
+
+**出版可访问性与 A0 远读重构 / Publication Accessibility and A0 Distance-read Recomposition**
+
+- 在最新 canonical `main` `eab8b0c0f6c653992b46f764f4fe435fb4758524` 上复跑串行门和基线；前序 PR #3998 已合并并进入祖先链，同包开放 PR 为 0。修复前自动证据确认：390px 中英文 visual 主导航分别需要 631px / 706px，四份 PDF 共 44 页均无可提取正文。
+- 将中英文 visual 的六项主导航在窄屏改为 3×2 完整网格，保留 44px 触达高度、键盘焦点、无 JavaScript、减少动态、打印和静态回退；390px 实测不再横向溢出。
+- 在不增加页数、不改变可见正文事实的前提下，从同一确定性源重建 A3 14+14 页与 A0 8+8 页。可见标签继续由本地 Noto CJK 栅格层确定性呈现，同时嵌入 OFL 最小语义字形子集；44/44 页均有可搜索/复制文本、书签和元数据，但不声明 tagged PDF/UA 或无障碍达标。
+- A0 第 6 板收束为“项目门—气候维护—全年运营”，第 7 板收束为“证据图—专业交接—四条边界”，第 8 板改为远距离可读的唯一结论与四项状态裁决；彩色缩略图、灰度、全尺寸和中英配对人工 QA 未见裁切、越界、方框或警示弱化。
+- 两次独立新进程构建逐字节一致：中文 A3 `8d9958e516a3e73882e71b9472fcc3829aa4b4cb8580b18e42a75682835626c4`，英文 A3 `66361087a18951e3ef5fb35bb575dd1f41c02d342729f5d9b88126a77ef11e5e`，中文 A0 `a1fd334fca8112e362a9a90e05e590b8c6927a82f4fa9ed8df28d4b35e398291`，英文 A0 `b1daad98af2123b2944a35f4e4dd53e276b8605577078a0a0f1b4d372073238e`。
+- 本轮无新媒体，不改变 geometry、`metrics.json`、12/8/3/36、G0/NO-GO、provisional、现实结果 0、批准 0、专业接责 0、独立现实复测 0 或未来装置/品牌/专业实施边界。
+
+- Re-ran the serial gate and baseline on canonical `main` `eab8b0c0f6c653992b46f764f4fe435fb4758524`. Predecessor PR #3998 is merged and in the ancestry, with zero same-package open PRs. Automated before-evidence confirmed 631px / 706px navigation widths at a 390px viewport and zero extractable body text across all 44 PDF pages.
+- Reflowed the six-item bilingual visual navigation into a complete 3×2 narrow-screen grid with 44px targets, keyboard focus, zero JavaScript, reduced-motion, print and static-fallback behavior retained. The 390px tests no longer overflow horizontally.
+- Rebuilt the 14+14 A3 pages and 8+8 A0 boards from one deterministic source without adding pages or changing visible factual claims. Visible labels remain deterministic local Noto CJK raster layers, while an OFL minimal semantic glyph subset is embedded. All 44 pages now expose searchable/copyable text, outlines and metadata; tagged PDF/UA or accessibility conformance is not claimed.
+- Re-composed A0 board 6 as project gate - climate maintenance - year-round operations, board 7 as evidence picture - professional handoff - four boundaries, and board 8 as one distance-readable conclusion plus four state rulings. Color thumbnail, grayscale, full-size and bilingual-pair human QA found no clipping, overflow, tofu or weakened warnings.
+- Two independent fresh processes produced byte-identical PDFs: ZH A3 `8d9958e516a3e73882e71b9472fcc3829aa4b4cb8580b18e42a75682835626c4`; EN A3 `66361087a18951e3ef5fb35bb575dd1f41c02d342729f5d9b88126a77ef11e5e`; ZH A0 `a1fd334fca8112e362a9a90e05e590b8c6927a82f4fa9ed8df28d4b35e398291`; EN A0 `b1daad98af2123b2944a35f4e4dd53e276b8605577078a0a0f1b4d372073238e`.
+- No new media was added. Geometry, `metrics.json`, 12/8/3/36, G0/NO-GO, provisional status, zero real results, zero approvals, zero accepted professional duties, zero independent real-world retests and future installation/branding/professional-implementation boundaries are unchanged.
+
 ## v59.1 - 2026-08-25
 
 **当前精确投稿包权利闭合 / Current Exact-package Rights Closure**

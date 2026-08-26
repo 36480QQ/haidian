@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R59.0",
-  "as_of": "2026-08-25",
+  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R60.0",
+  "as_of": "2026-08-26",
   "audit_type": "contributor_editorial_review",
   "status": "contributor_side_material_equivalence_checked_human_confirmation_open",
   "review_method": {
@@ -68,7 +68,7 @@
       "check_id": "BME-08",
       "topic": "publication_pairing",
       "result": "pass",
-      "evidence": "The R59 A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages. Two fresh-process builds are byte-identical; all 44 pages render without blank, clipping, replacement or duplicate-body findings, and the bilingual R59 storyboard occupies the paired designated positions."
+      "evidence": "The R60 A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages. Two fresh-process builds are byte-identical; all 44 pages render without blank, clipping or replacement findings, expose paired searchable semantic text, and retain the bilingual R59 storyboard in paired designated positions."
     },
     {
       "check_id": "BME-09",
@@ -80,7 +80,7 @@
       "check_id": "BME-10",
       "topic": "first_view_and_accessible_descriptions",
       "result": "pass_with_html_as_accessible_counterpart",
-      "evidence": "Both visual counterparts expose the same compact first-view ruling, 12/8/3/36 labels, component-scoped rights boundary, skip target, keyboard focus and descriptive alt text for the five primary figures. Fixed-page PDFs remain visual publications and do not claim tagged-PDF conformance; paired offline HTML remains the keyboard and machine-readable route."
+      "evidence": "Both visual counterparts expose the same compact first-view ruling, 12/8/3/36 labels, component-scoped rights boundary, skip target, keyboard focus, six-destination 3-by-2 mobile navigation and descriptive alt text for the five primary figures. Fixed-page PDFs expose searchable/copyable text but do not claim tagged PDF/UA or accessibility conformance; paired offline HTML remains the complete keyboard and machine-readable route."
     },
     {
       "check_id": "BME-11",
@@ -156,7 +156,7 @@
       "topic": "publication_pair_positions",
       "zh_location": "A3 14 pages, A0 8 pages, 22 text-bearing figure files",
       "en_location": "A3.en 14 pages, A0.en 8 pages, 22 .en figure files",
-      "paired_statement": "Paired publication surfaces retain the same page/figure order, warning prominence and evidence status; R59 replaces the paired four-state slots without changing 14+14 A3 or 8+8 A0 page counts.",
+      "paired_statement": "Paired publication surfaces retain the same page/figure order, warning prominence and evidence status; R60 adds paired searchable semantic text and dedicated A0 distance-read hierarchy without changing 14+14 A3 or 8+8 A0 page counts.",
       "result": "equivalent"
     },
     {
