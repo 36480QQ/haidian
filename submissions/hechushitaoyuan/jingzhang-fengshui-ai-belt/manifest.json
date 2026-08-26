@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "5e876322def363129e2b8712459dd50641927d45c5ca20a3e02871b4200f01dd"
+      "sha256": "f507a48e714720f8891959cb7780d7a7f958c09830c0cde760a911a92835e464"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "58c78e7734594d027e8355697ff08dbcb671a5cfc90c1529758258c7af3afb92"
+      "sha256": "ab922a8bcb41dc8f663b70c833bdf25e858f53c653e5859c420749cdd6a7dc60"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "01b69917b33550e13d682c71aa7e7745fba120cf98e5da54bd3e86f37e21e5ec"
+      "sha256": "7ce9852f98ce122dd691f11cbb18aef04c05276317eda72967129170f89d71ac"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a42aed4739b3605fe9775bc94d76a3ae96cb48ca09cb6ee092b5bf8b8fbe6f74"
+      "sha256": "baf44c836c8c2670adaf93107d7bbf5ee88dcdd8b4023f29f1d3cf17dc31d99d"
     },
     {
       "path": "report/narrative.md",
@@ -93,28 +93,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "1c54517cdb171acc0916c6f2619220744225370e4bac4a5f0535a0352e951703"
+      "sha256": "53306f29dcc554bc1c6c2a8236590399a9ffa89766fdeddb800682f3300ce5cf"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "520523f963de9f18e5b6dc28c097051e37b7bc613730b0e103588c28e8688770"
+      "sha256": "a0475c0c77054945698e7a44bd6b70519aa3ca81b7e115144225de4927ab26e9"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "88d1d6ae27ca3e6a1b092fcab69dd5364ba961a305e3803d52874bcc4a4682a6"
+      "sha256": "04dcbfa26c8ea384dde7088bfa0d182b642fceebb98d47f274be15c72d72dd21"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "8ed117dd879c566df216ce1d664efe1ada82ae9a1d53e67687af4ac386cd2add"
+      "sha256": "4c142ea22ad1006313fda72c8a22ff37d90441a73f6cb98169d9b1d1095d4fc2"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7f18891b1f98c0305c62bb5432873165c915736374d20139d71c7247e058703d"
+      "sha256": "faf8e86cb49571daf564c3b2e6737e5a4e187d3c5ace36a40f36240d0b4047c3"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a4f298dede5c7d360d87c03868ed117a8672d0561af4ab8ece75ba4161f11924"
+      "sha256": "877c3bb880160b059566d81e130a6dbacccb4bb3151c122a30e9be8d94bbdac2"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "121f32d788deadaae03db63a748b7b33a5d8c310b812abb63378fcd6564f6a56"
+      "sha256": "0d5701248db7a3d72c9b1e707fed5c40ec078eda039ea5fec28cea5eb671439d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "f280778284773f9a407f9b681161f611a6943acc47637358a03d27cb91e3cf95"
+      "sha256": "8507ef0f02b59de6460837849ee967ec9ef5b5e3df8126b456bb672258affeff"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "ad1caf4e82fff49a158ba20f864d84f9cf2132f66c160a1e5ff41c5395912fcc"
+      "sha256": "8666b25a0808f7d1dd710e35407018fdffa52042b45eab09db99cd621f9bb714"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "11211013a93ac394330496b9d76c4c403729afdca3d1ebe556b30e817abf4a09",
+      "sha256": "9189da57d7374efe0b86248777b45a34e264da99b6e61a1fb529e5cf7ea0dbe3",
       "language": "neutral"
     },
     {
@@ -521,7 +521,7 @@
       "path": "visual/assets/fonts.css",
       "role": "asset",
       "required": false,
-      "sha256": "cc8b51f406a0566d1616321714c3ec273e48f11e6a0bc0446c9174b30ba71e2c",
+      "sha256": "80cc77b95c3c002ee94a1303bd4d54f3aa10b807ca36aa82cc352825f8ba87ca",
       "title_zh": "嵌入式 Noto Sans SC 子集样式（评审渲染用）",
       "title_en": "Embedded Noto Sans SC subset stylesheet for reviewer-side rendering",
       "description_zh": "按 SIL OFL 1.1 分发（许可全文见文件头注释）；base64 嵌入字符子集，供无 CJK 字体环境离线正确渲染中文。",
@@ -539,6 +539,28 @@
       "sha256": "406754d410de195a445fe7e5189ed0f814a0b6c7f7568db40a79b204b8585a70"
     },
     {
+      "path": "visual/assets/governance/model-card.schema.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "模型卡最小字段 schema",
+      "title_en": "Model-card minimum field schema",
+      "description_zh": "与正文模型卡最小字段模板一一对应的 JSON Schema 草案，绑定气数协议 QP-3。",
+      "description_en": "A JSON Schema draft matching the prose model-card minimum fields one-to-one and bound to Qi-as-Data QP-3.",
+      "sha256": "400435fa3c0f2fa52983fde4e704ad02c55fe9c0c45e233ec060b325b439093a"
+    },
+    {
+      "path": "visual/assets/governance/data-card.schema.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "数据卡最小字段 schema",
+      "title_en": "Data-card minimum field schema",
+      "description_zh": "与正文数据卡最小字段模板一一对应的 JSON Schema 草案，绑定气数协议 QP-5。",
+      "description_en": "A JSON Schema draft matching the prose data-card minimum fields one-to-one and bound to Qi-as-Data QP-5.",
+      "sha256": "3dc03487576d005213ebc1d1263114adb1b099f7ce0dbe6cec28fed988c893dd"
+    },
+    {
       "path": "visual/assets/governance/qi-protocol.json",
       "role": "evidence_data",
       "required": false,
@@ -547,7 +569,7 @@
       "title_en": "Qi-as-Data Protocol v0.1",
       "description_zh": "四步治理协议 + 七条规则 + 156 项离线演练记录（解析双语场景卡表逐项检查，全通过，可复算）。",
       "description_en": "Four-step governance protocol, seven rules, and a 156-check offline drill record parsed from the bilingual scenario tables (all passing, recomputable).",
-      "sha256": "ce6f734cf9e1ae726f7201eeb2ae48cff270d4d4dd1d1e3d9514b61cec339a80"
+      "sha256": "ab29fc2966d3b79bf092f37b5251926d3e17e6ea1a3ab73a367f5f193d672cae"
     },
     {
       "path": "visual/assets/a11y-color-check.json",
@@ -569,7 +591,7 @@
       "title_en": "Qi-Pulse deterministic self-verification results",
       "description_zh": "七组 30 项确定性检查全部 PASS：场景卡 156 演练复算、气数协议绑定、岗位闭环、分期条件门、指标跨文件一致性、双语标签对齐、CJK 字体覆盖。",
       "description_en": "Seven groups / 30 deterministic checks all PASS: scenario-card 156-drill recount, protocol binding, role loop, phase gates, metrics cross-file consistency, bilingual tag parity, CJK font coverage.",
-      "sha256": "4d4cbd270e29bf99ed9ff26a1a6c3b9b583b9d76080fc939a3637d2abaceb219"
+      "sha256": "c15042d02aefd3d8a847019372195ab580baf8c9ce1941a71c75fc17560895e2"
     }
   ],
   "validation_claim": {

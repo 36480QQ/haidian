@@ -2,33 +2,38 @@
   "schema_version": "0.1.0",
   "sources": [
     {
-      "id": "SITE-PACKAGE",
-      "path": "brief/site-package/",
-      "source_type": "official_public",
+    "id": "SITE-PACKAGE",
+    "path": "brief/site-package/",
+    "source_type": "official_public",
+    "accessed_date": "2026-08-26",
       "usage": "Project brief, enums, allowed design space, ranges, and schemas."
     },
     {
-      "id": "SOURCE-REGISTRY",
-      "path": "data/source_registry.json",
-      "source_type": "repository_public_registry",
+    "id": "SOURCE-REGISTRY",
+    "path": "data/source_registry.json",
+    "source_type": "repository_public_registry",
+    "accessed_date": "2026-08-26",
       "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
     },
     {
-      "id": "PROCESSED-FACT-PACK",
-      "path": "data/processed/agent_fact_pack.md",
-      "source_type": "repository_processed_reference",
+    "id": "PROCESSED-FACT-PACK",
+    "path": "data/processed/agent_fact_pack.md",
+    "source_type": "repository_processed_reference",
+    "accessed_date": "2026-08-26",
       "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
     },
     {
-      "id": "BOUNDARY-SOURCE",
-      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
-      "source_type": "agent_inferred_from_public_data",
+    "id": "BOUNDARY-SOURCE",
+    "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+    "source_type": "agent_inferred_from_public_data",
+    "accessed_date": "2026-08-26",
       "usage": "Submitted site boundary geometry source (provisional)."
     },
     {
-      "id": "KEY-AREA-SOURCE",
-      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
-      "source_type": "agent_inferred_from_public_data",
+    "id": "KEY-AREA-SOURCE",
+    "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+    "source_type": "agent_inferred_from_public_data",
+    "accessed_date": "2026-08-26",
       "usage": "Three required detailed-design key area boundaries (provisional)."
     },
     {
@@ -59,35 +64,40 @@
       "usage": "中央登记中的临时粗略边界条目；本方案 site/key-area 几何的来源登记 ID（provisional，仅用于生成、可视化与临时自检）。"
     },
     {
-      "id": "SRC-JINGZHANG-RAILWAY-HISTORY",
-      "url": "https://zh.wikipedia.org/wiki/京张铁路",
-      "source_type": "background_only",
+    "id": "SRC-JINGZHANG-RAILWAY-HISTORY",
+    "url": "https://zh.wikipedia.org/wiki/京张铁路",
+    "source_type": "background_only",
+    "accessed_date": "2026-08-26",
       "usage": "京张铁路（1909 年通车、詹天佑主持设计、人字形展线）公开史料背景；仅支撑文化叙事，不支撑空间控制结论。",
       "limitations": "百科级公开资料；正式使用前需专业团队以权威史料复核。"
     },
     {
-      "id": "SRC-QINGHUAYUAN-STATION",
-      "url": "https://zh.wikipedia.org/wiki/清华园站",
-      "source_type": "background_only",
+    "id": "SRC-QINGHUAYUAN-STATION",
+    "url": "https://zh.wikipedia.org/wiki/清华园站",
+    "source_type": "background_only",
+    "accessed_date": "2026-08-26",
       "usage": "清华园车站旧址（北京市文物保护单位）公开资料背景；用于文化叙事与 AR 导览场景的非接触式叙事依据。",
       "limitations": "文保范围与建设控制地带几何未公开取得；方案不划定任何文保控制线。"
     },
     {
-      "id": "SRC-FENGSHUI-CONCEPT",
-      "url": "https://zh.wikipedia.org/wiki/风水",
-      "source_type": "background_only",
+    "id": "SRC-FENGSHUI-CONCEPT",
+    "url": "https://zh.wikipedia.org/wiki/风水",
+    "source_type": "background_only",
+    "accessed_date": "2026-08-26",
       "usage": "风水作为中国传统人居环境智慧的概念来源；本方案仅作科学化转译与文化叙事，不含占卜或迷信内容。",
       "limitations": "概念性背景资料；所有空间结论均以环境性能与公开规划资料为准。"
     },
     {
-      "id": "SRC-GLOBAL-CASE-REFERENCES",
-      "source_type": "background_only",
+    "id": "SRC-GLOBAL-CASE-REFERENCES",
+    "source_type": "background_only",
+    "accessed_date": "2026-08-26",
       "usage": "High Line、King's Cross、清溪川、Kendall Square、Stanford Research Park、深圳南山、碧山-宏茂桥公园、京都历史街区等公开案例的常识级整理。",
       "limitations": "基于公开报道与普遍知识整理；关键事实需专业团队复核后方可作为正式论证依据。"
     },
     {
-      "id": "SRC-MEDIA-RENDER-V11",
-      "source_type": "background_only",
+    "id": "SRC-MEDIA-RENDER-V11",
+    "source_type": "background_only",
+    "accessed_date": "2026-08-26",
       "usage": "v1.1 多媒体资产的确定性生成方法登记：画廊封面与图件由 matplotlib 从投稿包 GeoJSON 确定性渲染；中英音频导览由 Windows 内置语音合成逐句生成并以 ffmpeg 转 mp3；概念视频由 matplotlib 逐帧渲染后 ffmpeg 本地编码。",
       "limitations": "全部媒体为概念氛围/导览内容，非空间依据，不构成面积、边界或指标证据；音频为合成语音、非真人录音；生成过程零网络请求、零第三方素材、零生成式图像模型。"
     },
@@ -110,9 +120,10 @@
       "limitations": "仅用于背景辨识；不参与边界、用地、道路与指标计算；不作测绘成果或审批底图。"
     },
     {
-      "id": "SRC-HAIDIAN-DISTRICT-PLAN",
-      "url": "http://zyk.beijing.gov.cn/xxgk/ghcg/bjscsgtztgh/201912/t20191211_1113098.html",
-      "source_type": "provisional_only",
+    "id": "SRC-HAIDIAN-DISTRICT-PLAN",
+    "url": "http://zyk.beijing.gov.cn/xxgk/ghcg/bjscsgtztgh/201912/t20191211_1113098.html",
+    "source_type": "provisional_only",
+    "accessed_date": "2026-08-26",
       "usage": "《海淀分区规划（国土空间规划）（2017年—2035年）》公开要点；作为区域绿道网络与创新走廊定位的背景对照。",
       "limitations": "宏观分区规划纲要，非控规红线；实际控制指标以深化阶段法定成果为准。"
     },

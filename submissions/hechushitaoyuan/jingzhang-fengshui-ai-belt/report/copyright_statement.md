@@ -1,7 +1,7 @@
 # 资产权利、生成链与再分发台账 · 京张气脉 · 风水AI
 
 > Asset rights, provenance, attribution, redistribution, and replacement ledger
-> 台账日期：2026-08-25｜适用对象：`submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/` v1.7
+> 台账日期：2026-08-26｜适用对象：`submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/` v1.8
 
 ## 0. 台账效力与状态口径
 

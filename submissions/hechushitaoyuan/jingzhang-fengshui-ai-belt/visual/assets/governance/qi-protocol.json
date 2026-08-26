@@ -114,12 +114,14 @@
     }
   },
   "model_card_ref": {
-    "location": "proposal.md / proposal.en.md · Qi-as-Data Protocol revision section",
+    "schema_file": "visual/assets/governance/model-card.schema.json",
+    "proposal_template_location": "proposal.md / proposal.en.md · Qi-as-Data Protocol revision section",
     "minimum_fields": ["model_version", "training_data_boundary", "applicable_scope", "failure_modes"],
     "binding_rule_ids": ["QP-3"]
   },
   "data_card_ref": {
-    "location": "proposal.md / proposal.en.md · Qi-as-Data Protocol revision section",
+    "schema_file": "visual/assets/governance/data-card.schema.json",
+    "proposal_template_location": "proposal.md / proposal.en.md · Qi-as-Data Protocol revision section",
     "minimum_fields": ["data_version", "source_and_authorisation_boundary", "aggregation_anonymisation_basis", "suspension_and_deletion_path"],
     "binding_rule_ids": ["QP-5"]
   },
