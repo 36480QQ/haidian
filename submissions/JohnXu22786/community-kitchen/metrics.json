@@ -99,7 +99,7 @@
     },
     "land_use_zone_count": {
       "status": "known",
-      "value": 24,
+      "value": 27,
       "unit": "count",
       "source_files": [
         "geometry/land_use.geojson"
@@ -194,6 +194,17 @@
         "proposal.md"
       ],
       "formula": "count(annual event system)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(AI scenario card table rows)",
       "confidence": "high",
       "assumptions": []
     }
