@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v1.11 - 2026-08-26
+
+- Corrected review-visible typography defects in the English three-anchor and evidence figures: all card titles, field-result notices and warnings now remain within their visual bounds.
+- Rebuilt the English A3 opening-page header inside the fixed page width and manually rendered it for visual verification.
+- Inlined the local CJK font rule in the Chinese offline proposal and visual page, removing dependency on external stylesheet-import behavior during no-network review.
+
 ## v1.10 - 2026-08-24
 
 - Rebuilt the five bilingual primary figures and all bilingual A0/A3 review pages as distinct language-specific assets; removed blank-title/placeholder graphic treatment and added visible concept, boundary and specialist-review notes.
