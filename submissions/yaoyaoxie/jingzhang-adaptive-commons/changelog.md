@@ -1,0 +1,38 @@
+# 方案迭代记录
+
+方案：京张生长网络 JINGZHANG ADAPTIVE COMMONS
+投稿包：`yaoyaoxie/jingzhang-adaptive-commons`（目标路径 `submissions/yaoyaoxie/jingzhang-adaptive-commons/`）
+
+## v0.1 - 2026-08-25
+
+- 形成概念方案初稿《京张生长网络》：一条公共主轴、三类功能片区、六类分布式节点、五层复合网络；以分布式生物网络的连接与更新规律作为底层生成逻辑。
+- 产出研究底稿：生成逻辑研究（证据成熟度分级）与评审维度拓扑。
+- 影响：确立“分布式公共基础设施网络”的总体方向，后续版本未改变该基本盘。
+
+## v0.2 - 2026-08-25
+
+- 新增设计判准三问（连接、交换、生长），全部空间判断须经判准检查。
+- 三类功能片区正式对应公告三处重点区域（众智园 192.1 ha / AI 原点 104.3 ha / 大钟寺 72.0 ha），形成“育—传—用—还”交换链。
+- 新增核心剖面“京张生长断面”与资源旅程“一块构件的九步循环”。
+- 三个验证项目（P1 生态基线、P2 AI 社区服务、P3 循环材料）升级为含基线、对照、责任人、继续/停止/恢复条款的可证伪协议。
+- 生成五张核心图概念版（基于 provisional 几何与概念推演）。
+- 影响：方案从概念框架进入可检验的结构模型；图件与正文均标注 provisional 属性。
+
+## v0.3 - 2026-08-25
+
+- 内容补充：按官方口径补“三区两翼”（西侧中关村科技服务翼、东侧小月河场景赋能翼）、8 个全球案例表、12 张场景卡深化、长期运营四机制、三片区场地专属要点。
+- 空间数据：以仓库 provisional 边界为基础，程序化派生 7 个设计图层，形成完整 9 个 GeoJSON 图层；拓扑校验（闭合、无自交、无重叠、覆盖）通过。
+- 指标：三项核心指标复算入库——site_area_sqm=11,412,825.4、green_ratio=0.2796、public_space_ratio=0.1111（全部 provisional、低置信度）；控规相关指标一律登记 unknown。
+- 展示：生成 23 页离线展示页 `visual/index.html`（中文版）。
+- 包装：补齐 manifest.json、agent.json、metrics.json、assumptions.json、sources.json、compliance_matrix.json、standard_matrix.json、design_depth_matrix.json 与版权合规声明；proposal.md 重组为 13 章正式结构。
+- 影响：形成完整证据链；双语版、图纸与官方自检列入 v1.0 计划。
+
+## v1.0 - 2026-08-26
+
+- 双语补齐：`proposal.en.md`、五张 `*.en.png`、`visual/index.en.html`、`drawings/` A3 文册与 A0 展板双语 PDF、`report/proposal.html` 与 `report/proposal.en.html` 全部生成入库。
+- 打包合规整改（对照官方四门检查）：`proposal.md` 补齐 front matter（author_github/license/summary/version）；`metrics.json`、`standard_matrix.json`、`compliance_matrix.json`、`design_depth_matrix.json` 按官方 schema 补齐 schema_version 与必填证据数组；`standard_matrix.json` 标准 ID 对齐官方登记库（PROJECT-OFFICIAL-ANNOUNCEMENT、PROJECT-AGENT-OPEN-CALL-TASKBOOK、MOHURD-URBAN-DESIGN-MEASURES、MOHURD-CONTROL-DETAILED-PLANNING、MNR-LAND-USE-CLASSIFICATION-GUIDE），正文 [depth:] 标记同步改用官方深度项 ID。
+- 几何口径修正：`site_boundary.geojson` 仅保留总体设计范围（PROV-SITE-001），统筹研究范围（PROV-RESEARCH-001）与重点区域汇总范围（PROV-KEY-SCOPE-001）移入 `constraints.geojson`（REGULATORY_CONTROL 图层），使用地分区与指标复算口径同官方 spatial_review 一致；复算结果 site_area_sqm=11,412,825.386、green_ratio=0.279551、public_space_ratio=0.111097，与 metrics.json 一致。
+- 展示页整改：字体改为本地化内嵌（`visual/assets/fonts.css`），消除全部远程请求；`visual/index.html` 补齐官方要求的十四个必备内容区块（总览地图、三层范围、重点区域、用地分区、交通慢行、蓝绿公共空间、建筑、更新项目、AI 场景、核心指标、任务覆盖、自检状态、来源、假设）与 `green_ratio`、`public_space_ratio` 的 data-metric 数值锚点。
+- 目录规范：按投稿目录白名单移出过程性文件（本地分析记录与生成脚本不进入投稿包）。
+- 措辞合规：修订版权说明中一处易引发误读的否定性表述。
+- 影响：投稿包进入 ready_for_review 状态，四门自检（deterministic/spatial/visual/professional）全部通过并持久化 `self_check.json`。
