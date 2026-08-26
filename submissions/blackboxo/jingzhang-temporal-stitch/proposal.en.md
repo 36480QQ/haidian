@@ -510,6 +510,18 @@ The system follows the "physical improvements remain effective when AI is shut d
 
 **Non-automatable boundary**: Decisions involving public space management authority changes, wall demolition, road redline adjustments, heritage protection zone modifications, and emergency safety responses must never be automatically executed by AI and require local jurisdiction government approval. Dynamic right-of-way and gate controls are currently testing recommendations pending professional validation, not presented as permitted systems.
 
+### AI Pilot Testing Protocol & Stop Conditions
+
+| Test Phase | Duration | Entry Gate | Stop Condition (any trigger = halt) | Post-Stop Action | Recovery Condition |
+| --- | --- | --- | --- | --- | --- |
+| T0-Sandbox | 4 weeks | Single node deployed + ethics review passed | Misclassification >20%; latency >5s; any safety incident | Revert to fixed schedule, preserve logs for audit | Root cause fixed + independent retest passed |
+| T1-Limited Trial | 12 weeks | T0 passed + local government approval | Confidence <0.85 for 3 consecutive days; MAPE >15% for 7 days; complaint rate >5% | AI suggestions suspended, manual takeover of all scheduling | Re-tuning then re-enter T0 |
+| T2-Open Operation | Ongoing | T1 passed + expert panel review + community notice with no objection | Quarterly satisfaction <60%; any AI auto-execution breaching non-automatable boundary | Downgrade to T1 mode, initiate incident investigation | Investigation conclusion + remediation verification + re-notice |
+
+**Fail-closed default**: All AI layers default to OFF during power failure, network interruption, or system anomaly. Spaces revert to safest open state (passages open, lights on, no access control). No scenario exists where AI failure locks public space.
+
+**Non-AI control requirement**: During T1, at least 1 node of the same type must remain as non-AI control group (physical improvements + fixed schedule only) for comparative effectiveness measurement. If difference lacks statistical significance, do not upgrade to T2.
+
 ### Element Responsibility Matrix
 
 | Element | Provider (proposed) | Consumer | Spatial Carrier | Zhongguancun Tech Service Wing Role | AI Origin Community Role |
