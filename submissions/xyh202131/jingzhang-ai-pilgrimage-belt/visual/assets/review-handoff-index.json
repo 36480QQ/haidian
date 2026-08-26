@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
-  "index_id": "JZ-REVIEW-HANDOFF-R59.0",
-  "publication_revision": "59.0",
-  "as_of": "2026-08-25",
+  "index_id": "JZ-REVIEW-HANDOFF-R61.0",
+  "publication_revision": "61.0",
+  "as_of": "2026-08-26",
   "reading_routes": [
     {
       "time": "30_seconds",
@@ -91,6 +91,54 @@
     "professional_packet": "visual/assets/professional-handoff-candidate.json",
     "field_intake": "visual/assets/field-evidence-intake-contract.json",
     "bilingual_human_sample_packet": "visual/assets/bilingual-material-equivalence.json#/formal_human_review_packet"
+  },
+  "information_efficiency": {
+    "audit_type": "contributor_editorial_red_green_contract",
+    "baseline": "merged_predecessor_pr_4033",
+    "before_characters": {
+      "proposal_zh": 51149,
+      "proposal_en": 135381
+    },
+    "current_characters": {
+      "proposal_zh": 45495,
+      "proposal_en": 116491
+    },
+    "reduction_ratio": {
+      "proposal_zh": 0.1104,
+      "proposal_en": 0.1395
+    },
+    "preserved_contract": [
+      "13 formal chapters in the same order",
+      "all proposal figure references",
+      "all unique source, standard, depth, data, metric and assumption markers",
+      "Twin-Track and three non-interchangeable prototypes",
+      "ordinary-verification-fault-recovery truth boundary",
+      "G0, NO-GO, provisional, zero-result, rights and professional-veto boundaries"
+    ],
+    "new_facts_media_or_pages": false,
+    "boundary": "This is contributor editorial QA, not an independent cold read, public feedback, jury result, maturity upgrade or evidence of field performance."
+  },
+  "publication_accessibility": {
+    "audit_type": "contributor_editorial_and_deterministic_qa",
+    "before_state": {
+      "mobile_nav_at_390px_zh": "631px_scroll_width_for_390px_client_width",
+      "mobile_nav_at_390px_en": "706px_scroll_width_for_390px_client_width",
+      "pdf_pages_with_extractable_body_text": "0/44"
+    },
+    "current_state": {
+      "mobile_navigation": "six_destinations_visible_as_3_by_2_grid_without_horizontal_scroll_in_both_languages",
+      "pdf_pages_with_extractable_body_text": "44/44",
+      "embedded_semantic_font": "Noto Sans CJK SC minimal OTF subset under SIL-OFL-1.1",
+      "a3_page_pair": "14+14",
+      "a0_page_pair": "8+8",
+      "fresh_process_byte_identical_build_count": 2,
+      "full_page_color_thumbnail_review": "pass",
+      "a0_grayscale_review": "pass",
+      "a0_full_size_detail_review": "pass",
+      "bilingual_page_position_review": "pass_contributor_side"
+    },
+    "boundary": "Searchable/copyable fixed-page text does not establish tagged PDF/UA, accessibility conformance, independent human bilingual confirmation, field truth, approval or G1. Paired offline HTML remains the complete keyboard and machine-readable route.",
+    "new_media": false
   },
   "authority_order": [
     "geometry/*.geojson",

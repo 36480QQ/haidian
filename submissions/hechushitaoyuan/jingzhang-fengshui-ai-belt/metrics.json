@@ -5,6 +5,34 @@
     "area": "sqm"
   },
   "metrics": {
+    "readiness_register_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(industry test scenarios registered at H0 in evidence-readiness register)",
+      "confidence": "high",
+      "assumptions": [
+        "#4/#8/#13 当前均未启动，登记为 H0；H1-H4 为条件式升级框架。"
+      ]
+    },
+    "measurement_protocol_registry_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(measurement protocol entries M01..M06)",
+      "confidence": "high",
+      "assumptions": [
+        "仅登记标定前口径草案；所有测量数值留白，不构成实测或预测结论。"
+      ]
+    },
     "site_area_sqm": {
       "status": "known",
       "value": 11412825.386,
@@ -255,6 +283,96 @@
         "由仓库 provisional 粗略边界派生的设计模型值；非官方红线或精确面积依据，正式数据发布后需复算。"
       ]
     },
+    "phase_1_green_ratio": {
+      "status": "known",
+      "value": 0.269,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(area(intersection(green_space_i, PHASE-001))) / polygon_area(PHASE-001) @EPSG:4548; provisional geometry（green 要素互不重叠，逐要素求和与 union 等价）",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方绿地分类或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
+    "phase_1_public_space_ratio": {
+      "status": "known",
+      "value": 0.1872,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum over union(public_space) ∩ phase(polygon_area) @EPSG:4548 / phase area（union 后求交，避免要素重叠重复计数）",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方公共空间边界或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
+    "phase_2_green_ratio": {
+      "status": "known",
+      "value": 0.3,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(area(intersection(green_space_i, PHASE-002))) / polygon_area(PHASE-002) @EPSG:4548; provisional geometry（green 要素互不重叠，逐要素求和与 union 等价）",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方绿地分类或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
+    "phase_2_public_space_ratio": {
+      "status": "known",
+      "value": 0.2086,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum over union(public_space) ∩ phase(polygon_area) @EPSG:4548 / phase area（union 后求交，避免要素重叠重复计数）",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方公共空间边界或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
+    "phase_3_green_ratio": {
+      "status": "known",
+      "value": 0.322,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(area(intersection(green_space_i, PHASE-003))) / polygon_area(PHASE-003) @EPSG:4548; provisional geometry（green 要素互不重叠，逐要素求和与 union 等价）",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方绿地分类或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
+    "phase_3_public_space_ratio": {
+      "status": "known",
+      "value": 0.2244,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum over union(public_space) ∩ phase(polygon_area) @EPSG:4548 / phase area（union 后求交，避免要素重叠重复计数）",
+      "confidence": "low",
+      "assumptions": [
+        "临时几何复算口径（provisional）；非官方公共空间边界或分期红线，正式数据发布后需同流程复算。"
+      ]
+    },
     "land_use_area_0802_research_sqm": {
       "status": "known",
       "value": 1505919.239,
@@ -467,7 +585,7 @@
     },
     "persona_count": {
       "status": "known",
-      "value": 6,
+      "value": 7,
       "unit": "count",
       "source_files": [
         "proposal.md",
@@ -620,16 +738,144 @@
     },
     "a11y_color_pair_fail_count": {
       "status": "known",
-      "value": 39,
+      "value": 36,
       "unit": "count",
       "source_files": [
         "visual/assets/a11y-color-check.json"
       ],
-      "formula": "count(pairs with simulated dE00 < 20): normal 5 + deuteranopia 10 + protanopia 13 + tritanopia 11",
+      "formula": "count(pairs with simulated dE00 < 20): normal 6 + deuteranopia 10 + protanopia 9 + tritanopia 11",
       "confidence": "high",
       "assumptions": [
-        "例外不造成信息丢失：图件全部类别带文字冗余编码；整改说明见正文无障碍专节。"
+        "v1.5 已应用八色整改并重渲图件；官方复检残差逐对登记于 visual/assets/a11y-color-check.json，图件全部类别保留文字冗余编码。"
+      ]
+    },
+    "work_package_count": {
+      "status": "known",
+      "value": 15,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(conditional RACI work packages WP-01..WP-15)",
+      "confidence": "high",
+      "assumptions": [
+        "工作包为概念深化框架建议（blocking_now=false），责任主体采用组织类型泛称。"
+      ]
+    },
+    "no_ai_equivalent_route_count": {
+      "status": "known",
+      "value": 13,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(scenario cards with explicit no-AI equivalent route) = 13",
+      "confidence": "high",
+      "assumptions": [
+        "全部 13 张场景卡均包含人工接管与无 AI 通道。"
+      ]
+    },
+    "degradation_recovery_hours": {
+      "status": "known",
+      "value": 24,
+      "unit": "hours",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "concept SLA: max hours to restore full base public space functionality after AI subsystem offline",
+      "confidence": "medium",
+      "assumptions": [
+        "降级恢复时限为概念运营承诺指标，深化阶段由运营主体细化。"
+      ]
+    },
+    "a11y_color_pair_fail_count_normal": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/a11y-color-check.json"
+      ],
+      "formula": "count(pairs with simulated dE00 < 20 under normal)",
+      "confidence": "high",
+      "assumptions": [
+        "Derived from the already registered four-condition distribution; no measured accessibility test is claimed."
+      ]
+    },
+    "a11y_color_pair_fail_count_deuteranopia": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/a11y-color-check.json"
+      ],
+      "formula": "count(pairs with simulated dE00 < 20 under deuteranopia)",
+      "confidence": "high",
+      "assumptions": [
+        "Derived from the already registered four-condition distribution; no measured accessibility test is claimed."
+      ]
+    },
+    "a11y_color_pair_fail_count_protanopia": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/a11y-color-check.json"
+      ],
+      "formula": "count(pairs with simulated dE00 < 20 under protanopia)",
+      "confidence": "high",
+      "assumptions": [
+        "Derived from the already registered four-condition distribution; no measured accessibility test is claimed."
+      ]
+    },
+    "a11y_color_pair_fail_count_tritanopia": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/a11y-color-check.json"
+      ],
+      "formula": "count(pairs with simulated dE00 < 20 under tritanopia)",
+      "confidence": "high",
+      "assumptions": [
+        "Derived from the already registered four-condition distribution; no measured accessibility test is claimed."
+      ]
+    },
+    "contact_sheet_inventory": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "manifest.json",
+        "changelog.md"
+      ],
+      "formula": "count PDF/A0 contact-sheet evidence assets already registered by Wave-11: assets/screenshots/a3-booklet-contact-sheet.png + assets/screenshots/a0-boards-contact-sheet.png",
+      "confidence": "high",
+      "assumptions": [
+        "Inventory count only; it does not alter page counts or drawing content.",
+        "The two registered path strings remain in formula/source evidence; validator contract requires the metric value to be numeric."
+      ]
+    },
+    "governance_verifier_check_count": {
+      "status": "known",
+      "value": 14,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/verify-governance.js",
+        "visual/assets/governance/evidence-readiness-register.json",
+        "visual/assets/governance/measurement-registry.json"
+      ],
+      "formula": "count structural checks emitted by in-package verify-governance.js",
+      "confidence": "high",
+      "assumptions": [
+        "Structural governance checks only; H0 remains not-started and measurement values remain blank."
       ]
     }
+  },
+  "derived_evidence_note": {
+    "wave": "W16-3",
+    "rule": "new keys are derived from registered artifacts; existing metric values are unchanged"
   }
 }

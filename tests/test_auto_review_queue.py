@@ -37,6 +37,13 @@ class AutoReviewQueueTests(unittest.TestCase):
                 {"name": "submission-validation", "conclusion": "SUCCESS"}
             ],
         }
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        comment_file = Path(tmp.name) / "pr-comment.md"
+        comment_file.write_text(
+            "# AI Agent 评审意见\n\n## 七维评分\n- **任务书对齐 4/5**：证据充分。\n",
+            encoding="utf-8",
+        )
         for admin_merge in (False, True):
             with self.subTest(admin_merge=admin_merge):
                 with (
@@ -48,11 +55,22 @@ class AutoReviewQueueTests(unittest.TestCase):
                         42,
                         head_sha,
                         Decision("accept", 90, "accepted"),
-                        ROOT / "unused-comment.md",
+                        comment_file,
                         ROOT,
                         admin_merge=admin_merge,
                     )
 
+                    review_call = next(
+                        call
+                        for call in run_mock.call_args_list
+                        if call.args[0][:3] == ["gh", "pr", "review"]
+                    )
+                    review_body = review_call.args[0][review_call.args[0].index("--body") + 1]
+                    self.assertIn("no rejection condition was triggered", review_body)
+                    self.assertIn("review-readiness checks also passed", review_body)
+                    self.assertIn("Accepted for repository intake only", review_body)
+                    self.assertIn("## 七维评分", review_body)
+                    self.assertIn("任务书对齐 4/5", review_body)
                     run_mock.assert_any_call(
                         [
                             "gh",
@@ -73,7 +91,7 @@ class AutoReviewQueueTests(unittest.TestCase):
                         for call in run_mock.call_args_list
                         if call.args[0][:3] == ["gh", "pr", "review"]
                     )
-                    self.assertIn("review readiness passed", review_command[-1])
+                    self.assertIn("no rejection condition was triggered", review_command[-1])
 
     def test_default_image_budget_matches_bilingual_packet(self) -> None:
         with patch.object(sys, "argv", ["auto_review_queue"]):
@@ -395,7 +413,7 @@ class AutoReviewQueueTests(unittest.TestCase):
             )
             schema_path.parent.mkdir(parents=True)
             schema_path.write_text(
-                json.dumps({"properties": {"schema_version": {"const": "0.2.0"}}}),
+                json.dumps({"properties": {"schema_version": {"const": "0.2.1"}}}),
                 encoding="utf-8",
             )
             (submission / "proposal.md").write_text("proposal", encoding="utf-8")
@@ -404,7 +422,7 @@ class AutoReviewQueueTests(unittest.TestCase):
             audit = Path(temp_dir) / "audit"
             audit.mkdir()
             review = {
-                "schema_version": "0.2.0",
+                "schema_version": "0.2.1",
                 "submission_dir": "submissions/alice/plan",
                 "mandatory_rejection": {"result": "pass"},
                 "gate_checks": {
@@ -437,11 +455,11 @@ class AutoReviewQueueTests(unittest.TestCase):
             assert cached is not None
             self.assertEqual("accept", cached[2].action)
 
-            review["schema_version"] = "0.1.0"
+            review["schema_version"] = "0.2.0"
             (audit / "ai-review.json").write_text(json.dumps(review), encoding="utf-8")
             self.assertIsNone(load_cached_review(audit, "submissions/alice/plan", checkout, 60))
 
-            review["schema_version"] = "0.2.0"
+            review["schema_version"] = "0.2.1"
             (audit / "ai-review.json").write_text(json.dumps(review), encoding="utf-8")
 
             (submission / "proposal.md").write_text("updated", encoding="utf-8")

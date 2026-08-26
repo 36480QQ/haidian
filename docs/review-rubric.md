@@ -76,6 +76,11 @@
 如果当前包把未来证据冒充为已取得事实，应阻断的是当前错误表述的修复，而不是要求参与者
 伪造尚不可得的证据。
 
+Schema `0.2.1` 要求每个维度最多给出 4 条 `required_repairs_zh`，每条最多 600 个字符。
+权威 `pr-comment.md` 按维度完整公开所有通过 schema 的 repair，不在展示层静默截断；该区
+不公开 `risks_zh`、`data_gaps_zh` 或本地中间材料，也不把 `conditional_followups` 混成
+当前阻断项。版本提升会使旧缓存评审失效，确保公开评论与当前反馈合同一致。
+
 正式评分表同样是本地维护者材料。若专家组希望向参赛者反馈正式评分摘要，只复制 `formal-scorecard-comment.md` 或整理后的 PR comment；不要把评分 JSON、专家分歧或中间评审材料提交到仓库。
 
 ## English Quick Reference

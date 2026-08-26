@@ -39,13 +39,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "491dcddd75196390e4cf2231739efbc88df04d21c6d42e25c2049c055af7f35e"
+      "sha256": "a7fee9055bc97d896d7858f9f299cfa4d63f2283e1b0cef80e2bc2044363035d"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "89792baf5b1866a2b7562d9fee509ca1bb2ed6ae1a1905e2bbb14eb1857bd43b"
+      "sha256": "bab5253cf282962d0f80c862c1d382f69aa8fc0f7e3f2a46f89d56a53bd8e895"
     },
     {
       "path": "metrics.json",
@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "023d7d5045a39243dc698935fb46f33091f138eb014e3ba095c02a34b9253354"
+      "sha256": "071a77ac0b856e22a1a5999bea37e77dca00aeef7b33b596de67f16fa58b079a"
     },
     {
       "path": "risk.json",
@@ -86,7 +86,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "686d3e9303bb27073354a424992e16b155250df01a6935693950220c0b344e39"
+      "sha256": "c6a226c4e4d8295d9b4ce1cde06732c1d6a4caa822b2c7ce9e39524b18e2fd9f"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,14 +132,14 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "518d7f52f969941d33888e3653e8dc325959ff8cca0e187cd26f893974a0d4da"
+      "sha256": "d749bd53e16c4baa8f48eadd284c1c8c5946d3fd74ee712994bcd33240e6ab55"
     },
     {
       "path": "visual/assets/data-gap-closure-register.json",
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "b3985b0d18e557ac4cd296929d62dae47eba88c146edca911c34a32d03b0f4aa"
+      "sha256": "d0912888a92eea3c7284b2ee140d91efb87fd0a68ae73ecf6cc8275839a0cfc9"
     },
     {
       "path": "visual/assets/site-grounding-register.json",
@@ -215,14 +215,14 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "fc8ecdaedc1f4237a43b2515a78c024e1dbbf610b9a7abfde3df7c904fe0b1d5"
+      "sha256": "c5e29af5b8a8b8e7f542dde90052ef5ca5df20bf31e9b4ba62b8dbd9ff0db519"
     },
     {
       "path": "visual/assets/file-rights-inventory.json",
       "role": "copyright_statement",
       "required": true,
       "language": "neutral",
-      "sha256": "9c6b397e3f2b7ca4f7327692d95c1f831c6b524fd1a8a33036dd0bac961bcb3d"
+      "sha256": "bccb7cbb237bc09792c977e47c60a06ffc184218dc51c03e3c1f466943608c4f"
     },
     {
       "path": "visual/assets/source-rights-evidence.json",
@@ -243,40 +243,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "45795b2a1e49bcfa377085164daaa0b94ddce11430289d9343b0caf2d1fff8ca"
+      "sha256": "e5825c0d7e7f011477afb1ef121b277ed34f30d12f453cfd11bd078b161e8e38"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "0797c1d16343c0bbdd2f6fd12d1f28c67cef8ddedf1702d6bae6a4ab50ba27d6"
+      "sha256": "c675e71be56c1f46c66ace324c226e6f975d38b1e33b0404e6401f33db595a32"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "0831fd4b731d54bfe668366c7b1029243cb59b8b29cad4178aaed5e58f537262"
+      "sha256": "918ce4d85f177ec1e38709da05dcbf995f60b663b277d121d6a1f8b51ef534da"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3f1f2ddbf8d24db8950f65dd989ddade6719f5cec6748281f954ae7c40bc6f61"
+      "sha256": "8d9958e516a3e73882e71b9472fcc3829aa4b4cb8580b18e42a75682835626c4"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "ff553e46d048022e5ba6e0d0825a268579360f371d15daa2e72496754c09de65"
+      "sha256": "a1fd334fca8112e362a9a90e05e590b8c6927a82f4fa9ed8df28d4b35e398291"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7d98b674b7accf845cd8aa77ea83564e0b34d0fde0e60bf3af724e8d86445019"
+      "sha256": "40a71eb5c96e434db3a0b48efbcdd3d4faf5c98142d081905f2734fc96965976"
     },
     {
       "path": "visual/assets/offline-cjk-font.css",
@@ -424,7 +424,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "90e803c39bb9ca88e949b296a03350d8da4f6767c9d6920fe18214887427068d"
+      "sha256": "ee913cdcafc39a2a28f833c9145c5bc51e949a5c2b60f367353a62c78a7362b8"
     },
     {
       "path": "report/proposal.en.html",
@@ -432,7 +432,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "04949da57798f9ab2babf5ef7c016fcce743e11ad1cac7725653db604e76c659"
+      "sha256": "0ba986506ce7b9b9cd3587d19326a7f628f07b04b0db3e339b6f5d6f739cf8bd"
     },
     {
       "path": "visual/index.en.html",
@@ -440,7 +440,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e01059c01b71891ddc98b271f27a25366b13a5cfa156e680c5a0f00a0392bea1"
+      "sha256": "f540b2498455b850552c97315c4f1f6ba8bae1dd70f65b13e79fe45a70314275"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -448,7 +448,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "09634f2bc12db2ffa7584fdfa834dd48c563d06125b47379193626eb6ae8a85a"
+      "sha256": "66361087a18951e3ef5fb35bb575dd1f41c02d342729f5d9b88126a77ef11e5e"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -456,7 +456,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "6c053bf222dd7bd5926705ae278103083c21ab638bcb722401912e8759f360f0"
+      "sha256": "b1daad98af2123b2944a35f4e4dd53e276b8605577078a0a0f1b4d372073238e"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -944,7 +944,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "评审交接导航：三条时间阅读路线、唯一专业交接候选、证据权威顺序与固定事实边界；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review handoff navigation: three timed reading routes, one professional handoff candidate, evidence authority order and fixed fact boundaries; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "db40f1691534c1ba40f3f742ee9850f669e2532823c6232b3d674b5c93d0a162"
+      "sha256": "fbd67e1ab42f237e69ec23e0f5b53d0e11dda566a1157bed23280fc92ea370b6"
     },
     {
       "path": "assets/figures/land-use-structure.svg",
