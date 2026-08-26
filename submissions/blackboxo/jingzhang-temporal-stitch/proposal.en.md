@@ -558,6 +558,22 @@ Note: Nodes are numbered north-to-south along the corridor (PUBLIC-001 highest l
 
 Note: All items marked "pending on-site survey," "pending ownership verification," or "pending professional assessment" are prerequisite confirmation items for the design proposal; items pending survey are not presented as established facts.
 
+## KPI Baselines, Measurement Cycles & Acceptance Thresholds
+
+| KPI Indicator | Node | Baseline Assumption | Measurement Method | Cycle | Near-term Threshold | Data Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| Daily pedestrian count | N-01 Knowledge | Currently ~0 (walled off) | IR counter + manual sampling | Weekly→Monthly | ≥200/day within 6 months | On-site sensor (pending) |
+| Peak-hour crossing time | N-02 Tidal | Pending traffic baseline | GPS float car + pedestrian timing | Daily→Quarterly | ≥15% reduction from baseline | Traffic mgmt platform (pending) |
+| Startup teams hosted | N-03 Entrepreneurship | Currently 0 (closed) | Tenancy agreement registry | Monthly | ≥5 teams within Year 1 | Industrial park ledger |
+| Accessibility satisfaction | N-04 Intergenerational | Pending barrier-free audit | Quarterly survey + observation | Quarterly | ≥75% (≥3.75/5 scale) | Community survey (pending) |
+| Stormwater retention | N-05 Nature | Pending water authority data | Flow meter + level sensor | Post-storm 48h report | ≥60% retention for 50mm events | Water monitoring system (pending) |
+| Weekend footfall | N-06 Commercial | Pending commercial baseline | Video counting (no face capture) | Weekly→Monthly | ≥30% increase from baseline | Commercial operator data |
+| Visitor dwell time | N-07 Memory | Pending tourism baseline | Anonymous WiFi probe (duration only) | Monthly | Average ≥15 minutes | Anonymized statistics (pending) |
+| Barrier-free pass rate | N-08 Health | Pending accessibility review | Success rate (manual + sensor) | Monthly | Wheelchair/walker success ≥95% | Observation + complaint records |
+| Resident participation rate | N-09 Data | Total residents (pending) | Interactions / total residents | Monthly→Quarterly | Quarterly rate ≥10% | Community service platform |
+
+Note: All baselines marked "pending" must be surveyed within 3 months of project launch. Thresholds shown are recommendations; formal thresholds require tripartite confirmation (owner, operator, community representatives). Measurement methods follow data minimization principles — no personal identity data collected.
+
 ## Public Service Inclusivity and Failure Fallback Table
 
 | Scenario | No-phone/no-account access | On-site human alternative | Continuous accessible passage | Emergency/safety mode | Multi-sensory information | Public appeal |
