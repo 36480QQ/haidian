@@ -4,7 +4,7 @@
 
 ## 生成方法 / Generation Method
 
-- **几何数据（geometry/*.geojson）**：由作者编写 Python 脚本（`dev/scripts/gen_geometry.py`，shapely + pyproj）从 `brief/site-package/geometry/provisional_boundaries.geojson` 派生生成，采用网格裁剪法保证用地分区拓扑安全（无缝隙、无重叠）。坐标 EPSG:4326，面积复算 EPSG:4548。
+- **几何数据（geometry/*.geojson）**：由作者编写 Python 脚本（`dev/scripts/gen_geometry.py`，shapely + pyproj）从 `brief/site-package/geometry/provisional_boundaries.geojson` 派生生成，采用网格裁剪法生成当前可复核的用地分区；边界覆盖细部仍以官方红线复核为准。坐标 EPSG:4326，面积复算 EPSG:4548。
 - **指标（metrics.json）**：由 `dev/scripts/gen_metrics.py` 从上述 GeoJSON 在 EPSG:4548 下复算，与 `scripts/spatial_review.py` 的复算口径一致（先投影后 union）。
 - **必需图件（assets/figures/*.png，中英各 5 张）**：由 `dev/scripts/composite_figures.py`（matplotlib + PIL）从 GeoJSON 与 metrics 派生光栅化渲染。文本渲染采用开源 SIL OFL 1.1 许可的 `Noto Sans SC`（思源/Noto 黑体）字体，纯栅格像素输出，卡片与图例经自适应排版完全消除文字碰撞重叠。
 - **自定义封面（assets/media/cover.webp 与 cover.png）**：由 PIL 纯几何与开源矢量字形合成，深青蓝底 + 黄铜金人字形道岔 + 人文橙/机器人青并进箭头 + 中英文标题。
@@ -16,9 +16,9 @@
 
 - Python 3.13 / shapely 2.1.2 / pyproj / matplotlib 3.11.1 / reportlab 5.0.0 / Pillow / jsonschema（requirements-review.txt）。
 - **字体许可策略**：
-  1. **Web 与 HTML 报告**：采用 CSS 通用开源字体族声明（`"Source Han Sans SC", "Noto Sans CJK SC", -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif`），无版权风险；
+  1. **Web 与 HTML 报告**：采用 CSS 通用开源字体族声明（`"Source Han Sans SC", "Noto Sans CJK SC", Arial, sans-serif`），不作绝对无风险声明；实际发布前仍需按素材来源与许可证逐项核验；
   2. **PNG 分析图件**：由 Matplotlib 使用本地 SIL OFL 1.1 许可的 `Noto Sans SC` 字体渲染并直接光栅化为像素，不捆绑任何专有商业字体库；
-  3. **PDF 文册与展板**：使用开源 SIL OFL 1.1 许可的 `Noto Sans SC` TrueType 字体进行内嵌子集化输出，保证离线与跨平台环境下 100% 正常呈现。
+  3. **PDF 文册与展板**：使用开源 SIL OFL 1.1 许可的 `Noto Sans SC` TrueType 字体进行内嵌子集化输出，支持离线展示；实际发布前仍需在目标环境抽查字体回退与嵌入效果。
 
 ## 第三方生成视觉主体 / Third-Party Visuals（可选增强层）
 

@@ -42,6 +42,24 @@
       "status": "conceptual_proposal",
       "statement": "本方案中所有服务响应时限（如\"15分钟响应\"）、运营主体责任、开放通道安排均为概念建议与测试目标，不代表现行服务承诺或已获批准的运营安排，实际实施需经相关主管部门授权与专业确认。",
       "impact": "场景卡中的投诉处置通道、响应时限等表述为拟议机制与SLA测试目标，待正式运营主体授权确认后调整；不构成对现有公共服务体系的替代或承诺。"
+    },
+    {
+      "id": "A-TRAFFIC-001",
+      "status": "conceptual_proposal",
+      "statement": "现状道路中线为公开资料粗略示意，不代表道路红线、断面或工程线位；绿波协调方案为概念建议，未经交通仿真验证。",
+      "impact": "roads.geojson 中现状道路标为 existing_condition、low confidence；绿波方案与慢行环、服务环的线位均为概念建议，待交通专业深化后方可用于实施。"
+    },
+    {
+      "id": "A-PHASING-001",
+      "status": "conceptual_proposal",
+      "statement": "分期建设时序（近期—中期—远期）为概念指引，不构成市政财政承诺或立项安排。",
+      "impact": "phasing.geojson 中三期范围为概念分区建议，实际建设时序、投资规模与资金安排须以发改部门立项批复为准。"
+    },
+    {
+      "id": "A-STANDARDS-001",
+      "status": "pending_verification",
+      "statement": "MOHURD（住建部）建筑类型与深度标准目前标为 data_gap，待获取正式文件后补充完善。",
+      "impact": "proposal 中与建筑深度、类型相关的标准引用为 provisional，正式标准文件到位后需对照复核并更新相关指标。"
     }
   ]
 }

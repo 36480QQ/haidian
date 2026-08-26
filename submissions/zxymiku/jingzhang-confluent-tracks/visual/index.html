@@ -581,12 +581,12 @@ main { padding: 36px 0 60px; }
     </div>
     
     <aside class="status-badge-card">
-      <h3>自检状态 <span class="status-tag">100% PASS</span></h3>
+      <h3>自检状态 <span class="status-tag">当前四门自检通过</span></h3>
       <p>
         deterministic validation、spatial review、visual packaging check 与 professional evidence review 全部验证通过。
       </p>
       <div style="font-size: 11.5px; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 8px;">
-        <div>• 空间拓扑：零缝隙 / 零重叠 (99.9998%)</div>
+        <div>• 空间覆盖复核：边界内约 100.8 m² 未覆盖，边界外约 0 m²</div>
         <div>• 投影基准：EPSG:4548 (CGCS2000)</div>
         <div>• 边界属性：provisional_constraint (待官方红线复算)</div>
       </div>
@@ -601,7 +601,7 @@ main { padding: 36px 0 60px; }
     <div class="sheet-header">
       <div>
         <h2>总览地图</h2>
-        <p>将用地分区、交通慢行、蓝绿公共空间、建筑与更新项目、AI 场景节点无缝整合于高精度空间底图。</p>
+        <p>将用地分区、交通慢行、蓝绿公共空间、建筑与更新项目、AI 场景节点整合到当前空间底图中。</p>
       </div>
       <span class="tag-badge">GIS Vector Studio · EPSG:4548</span>
     </div>
@@ -787,8 +787,8 @@ main { padding: 36px 0 60px; }
         <span class="area-badge">11.41 km² · 城市更新与控规深度</span>
         <p>组织「一脉三场、双环九站」空间骨架，完成拓扑安全的网格裁剪用地分区与建筑更新方案。</p>
         <ul>
-          <li><strong>MNR标准分区：</strong>零缝隙零重叠 (13大板块)</li>
-          <li><strong>双环微循环：</strong>8.7km慢行环 + 7.2km机器人环</li>
+          <li><strong>MNR标准分区：</strong>13 个板块的当前边界覆盖复核</li>
+          <li><strong>双环微循环：</strong>8.7km慢行环 + 8.2km机器人服务环</li>
           <li><strong>更新项目清单：</strong>低扰动有机更新与分期落地</li>
         </ul>
       </article>
@@ -797,7 +797,7 @@ main { padding: 36px 0 60px; }
         <span class="area-badge">368.4 ha · 详细设计实施层</span>
         <p>三处核心片区差异化定位，达到规划综合实施方案深度的详细城市设计与场景落位。</p>
         <ul>
-          <li><strong>众智园 (192.1 ha)：</strong>合辙试场 (危险作业巡检实测)</li>
+          <li><strong>众智园 (192.9 ha)：</strong>合辙试场 (危险作业巡检实测)</li>
           <li><strong>AI原点社区 (104.3 ha)：</strong>合辙学园 (成果孵化与交接大厅)</li>
           <li><strong>大钟寺 (72.0 ha)：</strong>合辙市集 (智能原生消费与绿波)</li>
         </ul>
@@ -817,8 +817,8 @@ main { padding: 36px 0 60px; }
     <div class="matrix-3col">
       <article class="area-card">
         <h3>众智园 · 合辙试场</h3>
-        <span class="area-badge">192.1 ha · 巡检机器人实测场</span>
-        <p>国家级 AI 创新高地与高危作业实测基地。围绕 AI 全栈自主体系布局电力、管廊、桥隧机器人实测场。</p>
+        <span class="area-badge">192.9 ha · 巡检机器人实测场</span>
+        <p>面向 AI 创新集聚的概念测试区与高风险作业实测基地。围绕 AI 全栈自主体系布局电力、管廊、桥隧机器人实测场。</p>
         <ul>
           <li><strong>朝圣地标：</strong>守望塔 (无人机巢+公众观景台)</li>
           <li><strong>特色空间：</strong>清河滨水创新花园与五环跨线慢行桥</li>
@@ -838,7 +838,7 @@ main { padding: 36px 0 60px; }
       <article class="area-card market">
         <h3>大钟寺 · 合辙市集</h3>
         <span class="area-badge">72.0 ha · 智能原生消费商务</span>
-        <p>以领军企业为牵引，汇聚智能体、内容消费、数字商服等新业态，打造24小时未来生活体验场。</p>
+        <p>以领军企业为牵引，汇聚智能体、内容消费、数字商服等新业态，打造面向全天候生活服务的概念场景。</p>
         <ul>
           <li><strong>朝圣地标：</strong>绿波光带路口 (四象限连通示范)</li>
           <li><strong>末端微循环：</strong>配送机器人专用窄车道网络</li>
@@ -861,12 +861,12 @@ main { padding: 36px 0 60px; }
       <div class="proto-box">
         <span class="proto-badge">原型 01 · 斑马线路口</span>
         <h4>路口斑马线人机交汇消解</h4>
-        <p>设置 1.5m 机器人专属减速等候岛与地面动态投光警示带。行人享有最高优先路权，机器人测距 2m 强制降速至 2 km/h 并执行静态礼让，以降低交汇冲撞风险为测试验证目标。</p>
+        <p>设置 1.5m 机器人专属减速等候岛与地面动态投光警示带。概念目标中行人享有较高优先路权，机器人测距 2m 强制降速至 2 km/h 并执行静态礼让，以降低交汇冲撞风险为测试验证目标。</p>
       </div>
       <div class="proto-box">
         <span class="proto-badge">原型 02 · 商圈微循环</span>
         <h4>外卖骑手与配送窄道分道</h4>
-        <p>设 1.2m 配送专用窄道，与非机动车道采用 15cm 缓坡绿化带物理隔离，显著降低 25 km/h 外卖电动车与 6 km/h 低速配送车刮擦混行风险。</p>
+        <p>设 1.2m 配送专用窄道，与非机动车道采用 15cm 缓坡绿化带物理隔离，预期可有效降低 25 km/h 外卖电动车与 6 km/h 低速配送车刮擦混行风险。</p>
       </div>
       <div class="proto-box">
         <span class="proto-badge">原型 03 · 慢行绿道</span>
@@ -963,8 +963,8 @@ main { padding: 36px 0 60px; }
         <div>
           <div class="sc-id">09 医疗应急</div>
           <h4>AED 急救物资无人机航线</h4>
-          <p>守望塔至各交接站；3分钟内将急救物资投送至现场，急救员同步响应。</p>
-          <span class="swb-tag">SWB: 120 地面救护车双响应</span>
+          <p>守望塔至各交接站；以“建议响应目标”验证急救物资投送链路，须经空域、医疗与安全授权；不代表现行服务承诺。</p>
+          <span class="swb-tag">SWB: 授权前降级为常规地面急救调度</span>
         </div>
         <div class="sc-footer"><span>区位: 9处交接站</span><span>安全: 定点软降落伞</span></div>
       </article>
@@ -1003,7 +1003,7 @@ main { padding: 36px 0 60px; }
     <div class="sheet-header">
       <div>
         <h2>实施分期与风险控制</h2>
-        <p>三阶段递进实施计划与 8 维风险控制矩阵，确保规划具备坚实的可落地性与合规边界。</p>
+        <p>三阶段递进实施计划与 8 维风险控制矩阵，力求规划具备较好的可落地性与合规边界。</p>
       </div>
       <span class="tag-badge">Phasing & Risk Radar</span>
     </div>
@@ -1022,13 +1022,13 @@ main { padding: 36px 0 60px; }
           <div style="border-left: 3px solid var(--teal-bot); padding-left: 12px;">
             <strong style="color:var(--teal-bot); font-size:13.5px;">中期成网 (2028-2030 · 297.4 ha)</strong>
             <p style="font-size:12.5px; color:var(--text-muted); margin-top:3px;">
-              贯通 8.7km 慢行绿道环与 7.2km 机器人服务环；9 处交接站全面联网运营；建成守望塔与人机交接总站；举办首届「人机合辙大会」。
+              贯通 8.7km 慢行绿道环与 8.2km 机器人服务环；9 处交接站互联运行验证；建成守望塔与人机交接总站；举办首届「人机合辙大会」。
             </p>
           </div>
           <div style="border-left: 3px solid var(--green-leaf); padding-left: 12px;">
             <strong style="color:#34d399; font-size:13.5px;">远期全面合辙 (2030-2035 · 392.3 ha)</strong>
             <p style="font-size:12.5px; color:var(--text-muted); margin-top:3px;">
-              全带 43.6 km² 产业协同与全域人机劳动合辙落地；形成面向全球的可复制人机劳动共治制度与城市智能体海淀标准。
+              以 43.6 km² 产业协同为远期研究方向；共治制度与城市智能体标准需经试点、评估和主管部门批准。
             </p>
           </div>
         </div>
@@ -1038,7 +1038,7 @@ main { padding: 36px 0 60px; }
       <div class="card-panel">
         <h3>风险与合规控制 (Risk & Compliance)</h3>
         <p style="font-size:12.5px; color:var(--text-muted); margin-bottom:12px;">
-          对数据隐私、技术成熟度、公众接受度等 8 维度进行 1-5 级严格把控，全部高风险环节设置人工介入兜底：
+          对数据隐私、技术成熟度、公众接受度等 8 维度进行 1-5 级风险分级；高风险环节预留人工复核与降级路径：
         </p>
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; font-size:12px;">
           <div style="background:rgba(0,0,0,0.25); padding:8px 10px; border-radius:4px;">
