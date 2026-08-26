@@ -60,7 +60,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘现状诊断图与资料缺口’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "现状诊断与资料缺口：六类基础资料（测绘地形图、现状用地与产权、轨道与市政管线、文保清单、产业人口数据、场地影像）均未获取，已在『设计依据与资料清单』与 assumptions.json(A-BOUNDARY/A-CONTROLS/A-DATA) 如实登记；现有 geometry 层仅作概念示意并以 provisional 标注，官方资料到位后整体复算。"
   },
   {
    "item_id": "three_level_scope_framework",
@@ -121,7 +121,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘三层范围工作框架’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "三层范围工作框架：统筹约43.6 km²—总体约11.4 km²—重点约368.4 ha 官方文本口径逐级传导，本包在总体层（provisional 替代边界约11.41 km²）内置三处重点区（约192.1/104.3/72.0 公顷），证据见『三层范围工作框架』节、site-overview 图与 geometry/site_boundary.geojson、key_areas.geojson。"
   },
   {
    "item_id": "overall_spatial_structure",
@@ -182,7 +182,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘总体空间结构’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "总体空间结构：轨道科技商务廊与绿带文化休闲廊双廊并行、站城锚点—科创片区—住区三级联动、双流交汇处布置创新驿站与AI场景试验场，证据见『统筹研究范围产业与未来城市研究』『总体设计范围城市更新与控规深度城市设计』节与 spatial-structure 图。"
   },
   {
    "item_id": "land_use_layout",
@@ -243,7 +243,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘用地布局’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "用地布局：27个概念用地地块（0701/0802/0803/0901/0902/1401 六类参照国标口径）沿绿带组织，重点区周边科研/商务/商业功能混合，证据见『用地、建筑规模与拆改留方案』节、land-use-structure 图与 geometry/land_use.geojson、metrics.json(land_use_zone_count)。"
   },
   {
    "item_id": "development_intensity_controls",
@@ -304,7 +304,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘开发强度控制’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "开发强度控制：仅作概念建议不预设数值——站点600米步行核心圈功能混合与适度密集开发为方向性表述，容积率、高度等管控指标待正式控规条件与专业审查后深化，证据见『总体设计范围城市更新与控规深度城市设计』『指标体系、面积复算与合规矩阵』节。"
   },
   {
    "item_id": "height_massing_character",
@@ -365,7 +365,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘高度体量风貌’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "高度体量风貌：站城设施宜轻宜透宜可逆、不遮挡历史遗迹与绿带视线，风貌延续京张铁路工业记忆语汇并克制统一，证据见『蓝绿空间、公共空间与城市风貌』节与 mobility-bluegreen 图、constraints.geojson(CT-HERITAGE-01 文保关注区概念)。"
   },
   {
    "item_id": "retain_renovate_demolish",
@@ -426,7 +426,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘拆改留方案’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "拆改留方案：留改拆并举、以留为主——保留遗址公园肌理与铁路遗存、存量功能置换预留站城接口、仅对个案论证的危旧零星建筑拆除，具体清单与规模待实测产权资料到位后复核，证据见『用地、建筑规模与拆改留方案』节与 buildings.geojson(reuse_first 概念体量12个)。"
   },
   {
    "item_id": "traffic_rail_slow_parking",
@@ -487,7 +487,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘交通轨道慢行停车’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "交通轨道慢行停车：轨道+公交+慢行分层接驳、沿绿带连续慢行轴贯通三节点、P+R与骑行一体、街道分时响应，客流与运营台账未取得，不提供客流预测与运力结论，证据见『交通、轨道、市政与公共服务设施』节与 roads.geojson(慢行主轴+3条缝合联系，概念)。"
   },
   {
    "item_id": "municipal_new_infrastructure",
@@ -548,7 +548,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘市政与新型基础设施’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "市政与新型基础设施：集约共享原则、站城设施与建筑一体化概念、低碳能源/海绵更新/智慧管线概念与十五分钟生活圈公共服务配置，市政管线与容量资料未取得，不提供容量结论，证据见『交通、轨道、市政与公共服务设施』节与 compliance_matrix 1.5.2.3 条目。"
   },
   {
    "item_id": "blue_green_public_space",
@@ -609,7 +609,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘蓝绿空间与公共空间’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "蓝绿空间与公共空间：绿带为轴、节点公园为珠体系，green_ratio≈0.11 与 public_space_ratio≈0.003 为概念可复算指标，八类可逆公共空间组件库与「轨道荣誉墙」荣誉展示系统，证据见『蓝绿空间、公共空间与城市风貌』节、mobility-bluegreen 图与 metrics.json。"
   },
   {
    "item_id": "three_key_area_detailed_design",
@@ -670,7 +670,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘三处重点区域详细设计’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "三处重点区域详细设计：三节点场地化平面（立体换乘大厅/环行慢行道与P+R库顶花园/桥下共享客厅与口袋公园）、四段断面（轨道与站台—上盖复合—绿带慢行—街道分时）与五步用户旅程，证据见『重点区域详细设计』节与 key-areas 图、geometry/key_areas.geojson(KEY-ZHON/KEY-BEIJ/KEY-DAZH)。"
   },
   {
    "item_id": "renewal_project_list",
@@ -731,7 +731,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘更新项目清单’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "更新项目清单：五类项目库（站城芯枢纽更新/接驳环设施提升/共构廊绿道贯通/老旧社区微更新/产业楼宇改造）按紧迫度与投资类型排序，规模与投资仅作建议性表述不设精确金额，证据见『更新项目清单、实施政策与分期计划』节与 phasing.geojson(PH-00/PH-01/PH-02 三阶段)。"
   },
   {
    "item_id": "phasing_implementation",
@@ -792,7 +792,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘分期实施’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "分期实施：近期1-3年试点（众智园站城芯样板、接驳环贯通段、共构廊织补段）、中期3-5年三节点接驳环成网、远期5-10年全域统筹与品牌沉淀，配套牵头/协作分工、年度评估指标与停止退出条件，证据见『更新项目清单、实施政策与分期计划』节与 metrics.json(phase_count=3)。"
   },
   {
    "item_id": "metrics_recalculation",
@@ -853,7 +853,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘指标复算’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "指标复算：全部指标带数据来源/公式/置信等级/用途限制/复算触发（green_ratio、public_space_ratio、site_area_sqm≈11.41 km² 等），官方几何发布后统一坐标系整体复算并标注复算版本号，证据见『指标体系、面积复算与合规矩阵』节、metrics.json 与 geometry 层。"
   },
   {
    "item_id": "risk_missing_data",
@@ -914,7 +914,7 @@
     "LAND_USE_TOPOLOGY",
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "以正文、GeoJSON、可复算指标、图册与自检结果回应‘风险与资料缺口’，provisional 边界与轨道保护区管控下的全部数值保留精度警示并在官方数据到位后复算。"
+   "evidence_summary_zh": "风险与资料缺口：provisional 边界风险、产权与搬迁不确定性、既有市政承载力约束、AI场景隐私敏感性以匿名聚合+人工复核+禁止过度监控回应；客流台账、建筑年代产权、文保逐栋核查、市政容量均未获取，实施前须完成多部门联审与专项评估，证据见『风险、版权与合规说明』节与 assumptions.json。"
   }
  ]
 }

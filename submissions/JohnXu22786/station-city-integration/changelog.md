@@ -1,5 +1,19 @@
 # 方案迭代记录
 
+## v1.2.0 (round-2 repair) - 2026-08-26
+
+针对评审（66.0 CHANGES_REQUESTED）逐项修复：
+
+- 三区两翼更正：proposal.md 与 proposal.en.md 的「三区两翼」改按任务书口径落实——三区为北京AI原点社区、众智园加速区、大钟寺产业聚集区（即三处重点区域，对应接驳环/站城芯/共构廊），两翼为中关村科技服务翼与小月河场景赋能翼；未来科学城、怀柔科学城、经开区、北纬社区与京津冀另行命名为「外部区域合作网络」，不再替代任务书三区两翼。同步更正协同矩阵表（新增五行列联表）、图注、compliance_matrix（1.4.1/agent.1）、visual 双语文案与 regional-cooperation 图（核心三区两翼回路+外部合作网络外环）。
+- 图件重制（9组×中英共18张）：修复 site-overview/land-use-structure/key-areas/mobility-bluegreen 三节点反复误标「共构廊/Co-Built Gallery」的问题，逐图按 KEY-ZHON=站城芯、KEY-BEIJ=接驳环、KEY-DAZH=共构廊 标注；英文总览左侧文字截断问题通过将全部文字置于坐标区内并加引线消除；图例、道路名、节点名、图表标题、轴标签与脚注全部重排，生成期以 matplotlib 渲染器逐 Text 艺术字形实测（画布内包含 + 两两交叠），18张PNG与全部A0/A3页码 0 重叠 0 裁切；沿带展平示意标注「非等比例」；每图保留双语 provisional 戳记、比例尺与指北针；metrics-evidence 比率与计数分轴展示。
+- 图纸重制：a0-boards(.en).pdf、a3-booklet(.en).pdf 全部页面文字经渲染器自适应缩放+折行防裁切，A0 首页标题≥60pt 且不越界，A3 英文首页标题不再裁切；每页经 ink/边缘像素探测（全部通过）。
+- HTML 重制：report/proposal.html 与 report/proposal.en.html 由 render_proposal_html.py 从修订后的 proposal.md / proposal.en.md 重新生成；visual/index.html 与 visual/index.en.html 由确定性生成脚本重写（三区两翼任务书口径文案+区域创新协同图+14个必需标记不变）；四个页面最后统一内嵌 NotoSansSC-Static 子集字体（@font-face data URI，face 优先，zh 页子集≥100KB）。
+- 内容加固：AI 节新增「实测基线诚实口径」与「基线与复现协议」（固定数据版本/随机种子/评测指标/误差分群，形成可复现实验配方，官方台账到位后以实测基线复算替换）；治理节新增「分群影响评估与参与记录」概念协议（长者/儿童/残障/低数字能力/夜间使用者/学生分群预评估与年度回访，仅匿名聚合保存并按年度公示，不形成个体档案）。
+- 矩阵证据去重：standard_matrix.json 5 条与 design_depth_matrix.json 15 条 evidence_summary_zh 由重复模板改为逐条指向各自实际内容（正文节、GeoJSON、指标、图件）。
+- 图件QC工件：新增 self_check.json[figure_qc]（含 ink/边缘剪裁 PIL 实测 + 生成期渲染器文本框重叠/包含核验，全部通过；生成期核验非事后OCR）。
+- 案例对齐与引用清理：proposal.en.md 全球案例表补齐与中文一致的来源数值（20条新街道/10处公共空间、约230米站上复合），并重新生成 report 双语文档与内嵌字体；删除对 report/asset_rights_ledger.md 的失效引用（report 为固定文件集，品牌在先权利状态登记于正文与 sources.json 许可边界）。
+- 校验：score_rubric、四道门禁（确定性/空间/视觉/专业证据）与 validate_local_submission 重跑通过；中英文实质等值已人工核对，品牌在先权利检索未完成前按内部工作代号处理，图件 ink 值与剪裁检查结果见 self_check.json[figure_qc]。
+
 ## v1.1.0 (round-1 repair) - 2026-08-26
 
 针对评审（50.0 CHANGES_REQUESTED）逐项修复：
