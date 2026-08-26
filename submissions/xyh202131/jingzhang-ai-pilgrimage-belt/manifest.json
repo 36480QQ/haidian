@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d1bb9315d4ee411c8ca34fb3366c6b963016ac3487baa3b8a1143e233b8af2e8"
+      "sha256": "071a77ac0b856e22a1a5999bea37e77dca00aeef7b33b596de67f16fa58b079a"
     },
     {
       "path": "risk.json",
@@ -86,7 +86,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "dcf79eeaa14c4dce83b1532b4d62a40b1d6e398b70c3c1366c110cc1ec5bbbb5"
+      "sha256": "c6a226c4e4d8295d9b4ce1cde06732c1d6a4caa822b2c7ce9e39524b18e2fd9f"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,14 +132,14 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "cd325808fe9b5c8027364f9bf55f21d4417db055bd7cf152e65d3ca8dcd2fde6"
+      "sha256": "d749bd53e16c4baa8f48eadd284c1c8c5946d3fd74ee712994bcd33240e6ab55"
     },
     {
       "path": "visual/assets/data-gap-closure-register.json",
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "b3985b0d18e557ac4cd296929d62dae47eba88c146edca911c34a32d03b0f4aa"
+      "sha256": "d0912888a92eea3c7284b2ee140d91efb87fd0a68ae73ecf6cc8275839a0cfc9"
     },
     {
       "path": "visual/assets/site-grounding-register.json",
@@ -243,13 +243,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "fad4dd172c10f9df2891971b3cab7101ba4fa18f46340e396ee585f866959252"
+      "sha256": "e5825c0d7e7f011477afb1ef121b277ed34f30d12f453cfd11bd078b161e8e38"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "fd0667a54dc61ab98edcf96d2ae789f9e851838b6d3fa660e718c6c4fbc1926d"
+      "sha256": "c675e71be56c1f46c66ace324c226e6f975d38b1e33b0404e6401f33db595a32"
     },
     {
       "path": "report/copyright_statement.md",
@@ -432,7 +432,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "4172081d50e0ac504b4094a05213de8c05af48e0702f5218d5db58fe6c2d9cec"
+      "sha256": "0ba986506ce7b9b9cd3587d19326a7f628f07b04b0db3e339b6f5d6f739cf8bd"
     },
     {
       "path": "visual/index.en.html",

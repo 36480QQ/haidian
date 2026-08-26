@@ -22,6 +22,12 @@ R61 responds to the predecessor review's remaining contributor-controllable weak
 
 R61 只修复前序评审仍指出的投稿方可控弱项：信息密度和概念重复。双语正文现按“一项问题一个主答案、证据按需回链”组织，人类阅读层较合并基线缩短 11.0% / 14.0%；13 个正式章节、图件顺序、全部唯一证据标记和真实性边界均保留。本结论是投稿方编辑审查，不是评审结果或独立冷读。
 
+## Offline report CJK repair / 离线报告 CJK 修复
+
+The current PR review exposed one publication-chain regression: the package already contained an OFL WOFF2 subset for all four offline HTML surfaces, but only the two visual pages linked it. Both report counterparts now load that same package-local stylesheet. A fresh Chromium profile reports the embedded family loaded and selected; the subset cmap covers every visible non-ASCII character across the four HTML files, and the bilingual report screenshots contain no tofu. This is participant-side rendering QA, not independent accessibility certification or legal review.
+
+本轮当前 PR 评审暴露出一项出版链回归：包内已有覆盖四个离线 HTML 的 OFL WOFF2 子集，但只有两份 visual 实际接入。两份 report 现均加载同一包内样式表；全新 Chromium 配置确认嵌入字体已加载并成为计算字体，子集 cmap 覆盖四份 HTML 的全部可见非 ASCII 字符，中英文报告截图未见方框。本结论仅为投稿方渲染 QA，不是独立无障碍认证或法律审查。
+
 ## Publication access and distance reading / 出版访问与远读
 
 R60 repairs two reproducible reading failures without adding facts or pages. At 390px, all six destinations now appear as a complete 3-by-2 navigation grid in both visual counterparts, so no destination depends on discovering a horizontal scroll gesture. The four fixed-page PDFs retain 14+14 A3 pages and 8+8 A0 boards, but every page now exposes embedded Noto CJK semantic text for search and copying while preserving the deterministic visible raster labels. A0 boards 6-8 use a stronger distance-read hierarchy for implementation gates, evidence/rights boundaries and the single concluding ruling. The PDFs remain fixed-page visual publications and do not claim tagged PDF/UA or accessibility conformance; the paired offline HTML remains the complete keyboard and machine-readable route.

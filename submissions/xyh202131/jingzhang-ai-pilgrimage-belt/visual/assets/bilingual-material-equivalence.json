@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R61.0",
+  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R61.1",
   "as_of": "2026-08-26",
   "audit_type": "contributor_editorial_review",
   "status": "contributor_side_material_equivalence_checked_human_confirmation_open",
@@ -93,6 +93,12 @@
       "topic": "information_efficiency_and_evidence_preservation",
       "result": "pass_contributor_red_green_contract",
       "evidence": "The Chinese/English human-reading layers are 11.0% / 14.0% shorter than the merged predecessor. Both retain the same 13 formal chapters, eight embedded figures, unique source/standard/depth/data/metric/assumption marker sets, frozen counts, state logic, public rights, status boundaries and professional veto. This is contributor editorial QA, not independent human confirmation."
+    },
+    {
+      "check_id": "BME-13",
+      "topic": "offline_cjk_report_rendering",
+      "result": "pass_contributor_clean_browser_and_cmap_check",
+      "evidence": "Both report counterparts load the same package-local OFL WOFF2 stylesheet as both visual counterparts. The subset cmap covers every visible non-ASCII character across all four final HTML files; fresh in-memory Chromium selects JZ Noto CJK Offline and bilingual report screenshot inspection finds no tofu. This is contributor rendering QA, not independent accessibility certification."
     },
     {
       "check_id": "R59-RIGHTS-EXACT-PACKAGE",

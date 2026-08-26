@@ -1,5 +1,19 @@
 # 方案迭代记录 / Changelog
 
+## v61.1 - 2026-08-26
+
+**离线报告 CJK 阻断修复 / Offline Report CJK Blocker Repair**
+
+- 复核 PR #4036 当前评审的唯一参与者可控阻断项，建立修复前 RED：`report/proposal.html` 与 `report/proposal.en.html` 均未接入包内 `visual/assets/offline-cjk-font.css`，而两份 visual 已接入；问题是报告导出链丢失字体链接，不是缺少字体子集。
+- 在两份报告原路径接入同一 OFL WOFF2 子集，不改正文、图件、PDF、visual 信息结构或事实。字体 cmap 对四个最终 HTML 可见非 ASCII 字符的覆盖为 1015/1015、19/19、249/249、3/3，缺失 0。
+- 使用全新 Chromium 内存配置经 `127.0.0.1` 本地静态服务打开中英文报告；`document.fonts.status=loaded`、计算字体为 `JZ Noto CJK Offline`、核心中文串字体检查为真，人工截图未见方框。唯一控制台错误为未提供非必需 `favicon.ico`，不影响报告内容或字体。
+- 本修复不增加媒体、页面、主张或成熟度，不改变 geometry、`metrics.json`、12/8/3/36、G0/NO-GO、provisional、现实结果 0、批准 0、专业接责 0、独立现实复测 0 或权利边界。
+
+- Reproduced the sole contributor-controlled blocker in the current PR #4036 review. Before repair, both `report/proposal.html` and `report/proposal.en.html` omitted the package-local `visual/assets/offline-cjk-font.css`, while both visual pages already loaded it. The fault was a dropped report-font link, not a missing subset.
+- Connected both reports to the same OFL WOFF2 subset in place, without changing proposal text, figures, PDFs, visual information architecture or facts. The font cmap covers 1015/1015, 19/19, 249/249 and 3/3 visible non-ASCII characters across the four final HTML surfaces, with zero missing glyphs.
+- Opened both reports in a fresh in-memory Chromium profile through a `127.0.0.1` local static server. `document.fonts.status=loaded`, the computed family is `JZ Noto CJK Offline`, the core Chinese-string font check is true, and screenshot inspection finds no tofu. The only console error is the non-required missing `favicon.ico`, unrelated to report content or fonts.
+- This repair adds no media, page, claim or maturity upgrade and changes no geometry, `metrics.json`, 12/8/3/36 count, G0/NO-GO, provisional status, zero real outcomes, zero approvals, zero accepted professional duties, zero independent real-world retests or rights boundary.
+
 ## v61.0 - 2026-08-26
 
 **评审可见信息效率 / Reviewer-visible Information Efficiency**
