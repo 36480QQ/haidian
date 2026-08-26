@@ -1,5 +1,33 @@
 # 方案迭代记录
 
+## v27 - 2026-08-27
+
+## 2026-08-27 — v27: 回应评审意见 ①④⑤⑥⑦②③（概念软化 + 治理矩阵 + 双语等价）
+
+### Fixed
+- **① 可变车道/Webster Y值**：修正 Y 值求和错误（原漏计 φ3+φ4=0.425），可变车道本身不降低总 Y 值（左转高峰 Y=1.258），撤回「Y 降至 0.827 / 延误 -40.7% / 能力 +25.3%」确定性表述，改为概念性方向（proposal.md、proposal.en.md、report/proposal.html、report/proposal.en.html）
+- **④ 概念软化**：建筑高度（60-150m）、拆除、隧道线位、建设年份、政策资金、机构合作等确定性措辞统一标注「概念建议 / 情景假设 / 待核 / 待机构意向确认」（proposal.md、proposal.en.md、report/*.html 分期表头）
+- **⑤ 敏感 AI 场景数据治理矩阵**：新增 S01/S05/S06/S09/S10 + 自动驾驶的「数据—目的—最小化—保存期限—授权/撤回—人工复核—申诉—停机降级」矩阵（proposal.md、proposal.en.md）
+- **⑥ 区域协同 + 公众参与 + 分期治理**：新增外部科学城/经开区/京津冀协同矩阵、受影响群体参与机制、分期 RACI·依赖·验收·暂停（proposal.md、proposal.en.md）
+- **⑦ 专项风险矩阵**：新增文保/生态/道路安全/医疗合规/自动驾驶许可/算法偏差/网络安全/数据保护八类风险矩阵，就近标注 [source:] 证据（proposal.md、proposal.en.md）
+- **②③ 视觉/双语等价**：visual/index.html 补充 @page A0 尺寸（修复 A0 首页空白）与中文字体栈（修复缺字）；visual/index.en.html 补充中文字体；修正 assets/figures 与 geometry/roads.geojson 陈旧指标（192.1→192.9、368.4→369.3、APM 7.5km/10 站→8.9km/12 站）；proposal.en.md 补充「五大功能」⚠️ 估算标注与效果来源列（对齐中文版）
+
+---
+
+## v26 - 2026-08-27
+
+## 2026-08-27 — v26: 建立唯一指标主表，统一跨文件指标数值
+
+### Fixed
+- **建立唯一指标主表**：在 proposal.md / proposal.en.md 的「指标体系」章节新增唯一指标主表（Single Source of Truth），统一全部文件的指标取值，消除跨文件数值冲突
+- **APM线长度**：正文 8.5km 与分期清单 7.5km 并存 → 统一为 **8.9km**（EPSG:4548 复算 geometry/roads.geojson#RD-APM-001 = 8866.52m）
+- **重点区域面积**：正文 368.4 ha 与 metrics.json 369.3 ha 不一致 → 统一为 **369.3 ha**（三处重点片区多边形面积之和）
+- **京新快速路延伸通行能力**：正文 5504 pcu/h 与 metrics.json 12800 不一致 → 统一为 **5504 pcu/h**（CJJ37-2012 饱和流法，双向隧道折减）
+- **绿地率 / 公共空间比例**：修正 visual/index.en.html 陈旧值（绿地率 5.81%→30.31%、公共空间比例 TBD→2.24%）
+- 更新 metrics.json（MT-APM-LINE=8866.52、MT-EXPRESSWAY-CAPACITY=5504 及公式/假设）、proposal.md、proposal.en.md、report/proposal.html、report/proposal.en.html、visual/index.html、visual/index.en.html、compliance_matrix.json、design_depth_matrix.json
+
+---
+
 ## v25 - 2026-08-18
 
 ## 2026-08-18 — v25: 英文版完全重写（以中文版为准）

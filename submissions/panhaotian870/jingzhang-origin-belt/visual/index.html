@@ -5,12 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>京张·智廊 | JingZhang AI Corridor</title>
 <style>
+@page{size:841mm 1189mm;margin:0}
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
 --blue:#1B3A5C;--teal:#00D4AA;--bg:#0a0f1a;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;
 --accent:#00D4AA;--border:#1f2937
 }
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 .hero{background:linear-gradient(135deg,#0a1628 0%,#0d2137 50%,#0a1f1a 100%);padding:80px 20px;text-align:center;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 30h60M30 0v60' stroke='%2300D4AA' stroke-width='.3' opacity='.1'/%3E%3C/svg%3E");pointer-events:none}
 .hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;background:linear-gradient(90deg,var(--blue) 0%,var(--teal) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px;position:relative}
@@ -79,7 +80,7 @@ footer a{color:var(--teal);text-decoration:none}
   <div class="stat" data-metric="site_area_sqm" data-value="11412825.386"><div class="num">11.4</div><div class="label">总体设计范围 (km²)</div></div>
   <div class="stat" data-metric="green_ratio" data-value="0.303132"><div class="num">30.31%</div><div class="label">绿地率</div></div>
   <div class="stat" data-metric="public_space_ratio" data-value="0.022444"><div class="num">2.24%</div><div class="label">公共空间比例</div></div>
-  <div class="stat"><div class="num">368.4</div><div class="label">重点区域 (ha)</div></div>
+  <div class="stat"><div class="num">369.3</div><div class="label">重点区域 (ha)</div></div>
   <div class="stat"><div class="num">9</div><div class="label">遗址公园 (km)</div></div>
   <div class="stat"><div class="num">10</div><div class="label">AI 场景卡</div></div>
   <div class="stat"><div class="num">8</div><div class="label">全球案例</div></div>
@@ -177,7 +178,7 @@ footer a{color:var(--teal);text-decoration:none}
   <div class="card"><h4>🏥 S01 AI诊疗走廊</h4><p><strong>空间</strong>：清华园社区卫生中心<br><strong>AI运行</strong>：大厅AI导诊终端替代人工挂号台，患者描述症状后AI匹配科室；检验报告AI自动解析推送到手机，用大白话标注异常指标供医生复核<br><strong>技术</strong>：医学知识图谱+NLP问诊+影像AI</p></div>
   <div class="card"><h4>🚁 S02 无人配送与无人驾驶</h4><p><strong>空间</strong>：全域道路+写字楼楼顶起降点<br><strong>AI运行</strong>：无人机从商家飞到楼顶起降点（3分钟）；L4无人出租车手机一键叫车全程无人驾驶；地面无人车沿人行道送快递<br><strong>技术</strong>：无人机避障+LiDAR自动驾驶+SLAM导航</p></div>
   <div class="card"><h4>🎨 S03 AI创意市集</h4><p><strong>空间</strong>：大钟寺智·大模型广场周边，周末开放<br><strong>AI运行</strong>：AI画师10秒生成风格化肖像；AI音乐人即时编曲配器+灯光秀；数字人穿铁路制服实时语音对话<br><strong>技术</strong>：风格迁移+AI作曲+数字人生成</p></div>
-  <div class="card"><h4>🚄 S04 京张APM无人驾驶</h4><p><strong>空间</strong>：创新区内部8.5km高架+地面，12座站<br><strong>AI运行</strong>：GoA4全自动驾驶无驾驶室；车厢屏幕实时AI语音解说沿途地标；与信号系统V2X协同优先通行<br><strong>技术</strong>：GoA4自动驾驶+V2X+AI解说</p></div>
+  <div class="card"><h4>🚄 S04 京张APM无人驾驶</h4><p><strong>空间</strong>：创新区内部8.9km高架+地面，12座站<br><strong>AI运行</strong>：GoA4全自动驾驶无驾驶室；车厢屏幕实时AI语音解说沿途地标；与信号系统V2X协同优先通行<br><strong>技术</strong>：GoA4自动驾驶+V2X+AI解说</p></div>
   <div class="card"><h4>⚖️ S05 AI法律服务站</h4><p><strong>空间</strong>：五道口开源社区总部一楼临街<br><strong>AI运行</strong>：上传合同PDF→30秒AI标出风险条款+通俗解释+修改模板；需人工律师时AI整理摘要推送给隔壁律所<br><strong>技术</strong>：法律NLP+知识图谱+Legal RAG</p></div>
   <div class="card"><h4>👴 S06 智慧养老社区</h4><p><strong>空间</strong>：小月河适老化改造老旧社区<br><strong>AI运行</strong>：手环24小时监测血压心率→异常自动床头语音安抚+通知医生家人+护士5分钟上门；陪伴机器人下棋聊天记得老人偏好；语音助手管药管饭管预约<br><strong>技术</strong>：可穿戴监测+异常预警+陪伴机器人+语音助手</p></div>
   <div class="card"><h4>☕ S07 开发者咖啡馆</h4><p><strong>空间</strong>：全线创新综合体底层临街<br><strong>AI运行</strong>：桌面AI编程助手5秒分析代码错误给修改建议；墙面AI白板画架构图自动识别依赖关系；每周四智·夜话技术沙龙<br><strong>技术</strong>：代码分析+架构图识别+协作白板</p></div>
@@ -259,7 +260,7 @@ footer a{color:var(--teal);text-decoration:none}
 <div class="grid grid-3">
   <div class="card"><h4>统筹研究范围</h4><p>约 43.6 km²：北五环路—京藏高速—西直门外大街—万泉河路围合，用于区域统筹与生态廊道衔接研判。</p></div>
   <div class="card"><h4>总体设计范围</h4><p>约 11.4 km²：沿京张铁路遗址公园两侧 1—2 公里城市带，是本次城市设计的主体范围。</p></div>
-  <div class="card"><h4>重点区域</h4><p>约 368.4 公顷：众智园 AI 加速区、北京 AI 原点社区、大钟寺 AI 产业集聚区三处重点详细设计片区。</p></div>
+  <div class="card"><h4>重点区域</h4><p>约 369.3 公顷：众智园 AI 加速区、北京 AI 原点社区、大钟寺 AI 产业集聚区三处重点详细设计片区。</p></div>
 </div>
 </section>
 
@@ -279,7 +280,7 @@ footer a{color:var(--teal);text-decoration:none}
 <section>
 <h2>交通慢行 / Mobility & Slow Traffic</h2>
 <div class="grid grid-2">
-  <div class="card"><h4>🚄 京张 APM 无人驾驶线</h4><p>约 8.5 km 高架+地面，12 座站，GoA4 全自动驾驶，衔接三大重点片区。</p></div>
+  <div class="card"><h4>🚄 京张 APM 无人驾驶线</h4><p>约 8.9 km 高架+地面，12 座站，GoA4 全自动驾驶，衔接三大重点片区。</p></div>
   <div class="card"><h4>🚶 慢行系统</h4><p>遗址公园全线"烟火智径"步行道 + 自行车绿道，与 APM、城市道路形成多层级绿色出行网络。</p></div>
 </div>
 </section>

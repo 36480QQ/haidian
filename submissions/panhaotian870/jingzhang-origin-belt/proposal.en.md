@@ -27,7 +27,7 @@ This proposal is based on the Centennial JingZhang AI Innovation Belt Urban Desi
 
 ## Three-Tier Scope Working Framework
 
-The project adopts a three-tier progressive working framework: Coordinated Research Scope (approx. 43.6 km²), Overall Design Scope (approx. 11.4 km²), and Key Areas (approx. 368.4 hectares)[^2].
+The project adopts a three-tier progressive working framework: Coordinated Research Scope (approx. 43.6 km²), Overall Design Scope (approx. 11.4 km²), and Key Areas (approx. 369.3 hectares)[^2].
 
 [^2]: Data anchors: `[data:geometry/key_areas.geojson#PROV-RESEARCH-001]` `[data:geometry/key_areas.geojson#PROV-SITE-001]` `[data:geometry/key_areas.geojson#PROV-KEY-SCOPE-001]`
 
@@ -209,7 +209,9 @@ Building renewal follows the "Preserve-Renovate-Demolish-Build" classification s
 | Demolish | Low-efficiency wholesale markets, dilapidated warehouses, illegal structures | Land released after demolition for new construction | ~15% |
 | Build | AI industry complexes, corporate headquarters, public facilities | High-quality new construction, emphasizing green buildings and smart operations | ~20% |
 
-Building height control is predominantly mid-to-high-rise, forming a "low in the north, high in the south" skyline gradient: Zhongzhiyuan section 60-100 m (tech park), Origin Community section 24-60 m (human-scaled residential), Dazhongsi section 80-150 m (industrial skyline). Specific heights and floor area ratios are subject to formal regulatory plan confirmation.
+> ⚠️ The "Preserve-Renovate-Demolish-Build" objects and estimated proportions above are conceptual scenario assumptions. Specific renewal objects and proportions must be determined through a specialized survey of existing building quality and ownership, public participation, and demolition-resettlement planning.
+
+Building height control (conceptual suggestion) is predominantly mid-to-high-rise, forming a "low in the north, high in the south" skyline gradient: Zhongzhiyuan section 60-100 m (tech park), Origin Community section 24-60 m (human-scaled residential), Dazhongsi section 80-150 m (industrial skyline). The above height ranges and floor area ratios are conceptual suggestions, subject to the formal regulatory plan and urban design guidelines.
 
 ### Transportation and Municipal Facilities
 
@@ -285,7 +287,7 @@ The transportation system follows the principles of "transit priority, pedestria
 **Route Plan**:
 - Partially planned along the JingZhang Railway Heritage Park corridor, running parallel to but not overlapping with Line 13, with the two separated by approximately 200-500 meters
 - South terminal at Dazhongsi Industry Zone (transfer with Line 13 at Dazhongsi Station), through Beijing AI Origin Community and Wudaokou Commercial Area (transfer with Line 13 at Wudaokou Station), north terminal at Zhongzhiyuan
-- Total length approximately **8.5 km**, with **12 stations**, average station spacing of approximately 700 meters
+- Total length approximately **8.9 km**, with **12 stations**, average station spacing of approximately 700 meters
 - APM stations penetrate deep into the interior of innovation areas, serving functional zones not covered by Line 13 (Origin Community, Zhongzhiyuan, Tsinghua Campus, etc.)
 
 **Passenger Flow Forecast** (Logit modal split model):
@@ -327,7 +329,7 @@ The Jingxin Expressway (G7) dead-ends at the North 5th Ring Road, forcing all no
 
 ##### How: Semi-Underground Tunnel + Surface Green Corridor Scheme
 
-**Design Scheme**: Jingxin Expressway extended southward as an urban rapid road, adopting a **semi-underground tunnel + surface green corridor** model.
+**Design Scheme (conceptual, pending verification)**: Jingxin Expressway extended southward as an urban rapid road, adopting a **semi-underground tunnel + surface green corridor** model. The alignment and tunnel engineering scheme must be finalized through transport-specific planning, engineering feasibility study, and environmental impact assessment approval.
 
 **Key Parameters**:
 - Total length approximately **8 km**, with **3-4 pairs of entrance/exit ramps**
@@ -385,23 +387,19 @@ The core differentiator: **the functional allocation of turning lanes is not fix
 
 **Five Functions**:
 
-| Function | Principle | Control Cycle | Y Reduction |
-|---|---|---|---|
-| **Real-Time Turning Lane Allocation** | **AI dynamically switches variable lane function each cycle** | **1 signal cycle** | **-0.08** |
-| Adaptive Signal Timing | AI optimizes phase duration every 15 seconds | 15s | -0.05 |
-| Green Wave Coordination | Multi-intersection unified coordination | Real-time | -0.06 |
-| AI Pedestrian Crossing Optimization | Auto-extended time for elderly and children | Real-time | - |
-| Emergency Vehicle Priority | Auto-green for fire/ambulance | Real-time | - |
+| Function | Principle | Control Cycle | Y Reduction (estimated) | Effect Source |
+|---|---|---|---|---|
+| **Real-Time Turning Lane Allocation** | **AI dynamically switches variable lane function each cycle** | **1 signal cycle** | ⚠️**-0.08** | Hangzhou Jiangnan Ave field data + this proposal's enhancement |
+| Adaptive Signal Timing | AI optimizes phase duration every 15 seconds | 15s | ⚠️-0.05 | Hangzhou City Brain field data |
+| Green Wave Coordination | Multi-intersection unified coordination | Real-time | ⚠️-0.06 | Hisense signal system field data |
+| AI Pedestrian Crossing Optimization | Auto-extended time for elderly and children | Real-time | - | - |
+| Emergency Vehicle Priority | Auto-green for fire/ambulance | Real-time | - | - |
 
-**Post-Optimization Effects**:
+> ⚠️ The Y-reduction figures are estimates referenced from Hangzhou, Shenzhen and other cities' AI traffic-governance results. Precise effects require: ① Hangzhou City Brain 2.0 technical white paper; ② Hisense intelligent-transport case data; ③ Baidu Apollo intelligent-transport field reports.
 
-Y_optimized = 1.001 - 0.174 = 0.827
+**Post-Optimization Direction (Conceptual, Pending Independent Review)**:
 
-| Metric | Current | After Optimization | Improvement |
-|---|---|---|---|
-| Wudaokou average delay | >120 s/veh | ~72 s/veh | **-40%** |
-| Zhichunlu capacity | Baseline | +25.3% | **+25.3%** |
-| Left-turn phase saturation | x=0.94 | x=0.72 | **-23.4%** |
+> The previous deterministic claim "Y falls to 0.827, delay -40%+, capacity +25.3%" is withdrawn: the Y-value summation omitted the remaining phases (phi3+phi4 = 0.425). Corrected totals show variable lanes rebalance phase saturation but do not by themselves reduce total Y below 1.0. The combined effect of AI signals + variable lanes + green-wave coordination may improve delay and saturation, but the magnitude must be independently verified via VISSIM/Synchro simulation and field surveys before any specific figure is stated.
 
 ---
 
@@ -441,7 +439,7 @@ Y_optimized = 1.001 - 0.174 = 0.827
 | Trip Generation | Trip Rate Method | Area-wide demand | Peak hour ~18,566 pax/h |
 | Modal Split | Logit Model | APM ridership forecast | Near-term 16,000 / Long-term 29,000 pax/day |
 | Capacity | CJJ37-2012 tunnel capacity | Expressway extension | Bidirectional 5,504 pcu/h, near-term V/C=0.36 |
-| Signal + Lane Allocation | Two-layer MDP + Two-layer Q-Learning | AI signal joint optimization | Wudaokou Y=1.001->0.827, delay -40.7% |
+| Signal + Lane Allocation | Two-layer MDP + Two-layer Q-Learning | AI signal joint optimization | Conceptual: may improve delay/saturation; magnitude pending independent review |
 | Network Topology | Betweenness + Max-Flow/Min-Cut + PageRank + Steiner Tree | Bottleneck identification | To be calculated after GIS and OD data |
 
 > **Disclaimer**: Mathematical models employ standard traffic engineering methods. Model outputs are conceptual predictions for scheme comparison. Detailed assessment requires professional agency field investigation and simulation validation.
@@ -573,10 +571,12 @@ $$Q_2(s, \phi_i) \leftarrow Q_2(s, \phi_i) + \alpha_2 [R_2 + \gamma_2 \max_{\phi
 
 | Metric | Fixed Timing + Fixed Lanes | AI Adaptive Timing | **AI Joint Optimization** | Improvement |
 |---|---|---|---|---|
-| Average Delay | 55.8 s/veh | 38.2 s/veh | **33.1 s/veh** | **-40.7%** |
-| 95th Percentile Delay | 120 s/veh | 78 s/veh | **65 s/veh** | **-45.8%** |
-| Max Queue Length | 364 m | 225 m | **188 m** | **-48.4%** |
-| Intersection Capacity | Baseline | +18.5% | **+25.3%** | **+25.3%** |
+| Average Delay | To be simulated | To be simulated | **To be simulated** | **Pending review** |
+| 95th Percentile Delay | To be simulated | To be simulated | **To be simulated** | **Pending review** |
+| Max Queue Length | To be simulated | To be simulated | **To be simulated** | **Pending review** |
+| Intersection Capacity | Baseline | To be simulated | **To be simulated** | **Pending review** |
+
+> The previous deterministic figures ("delay -40.7%, capacity +25.3%, Y=0.827") are withdrawn after correcting the Y-value summation. Quantitative effects must be independently verified before publication.
 
 ---
 
@@ -649,7 +649,7 @@ The three key areas are distributed along the railway axis, forming an innovatio
 
 - **Positioning**: The industrial transformation hub of the innovation belt, the core carrier for AI enterprise scaling and commercialization
 - **Spatial Structure**: With Dazhongsi Station as the core, "one core (Dazhongsi Industry Hub) + one axis (Railway Heritage Park) + dual rings (inner ring for industry, outer ring for supporting facilities)." Area: approximately 72.0 hectares
-- **Building Renewal**: Primarily industrial and commercial/service land. Demolish inefficient wholesale markets and warehouses; construct new AI industry complex, Zhi Large Model Plaza, and AI enterprise accelerator. Building massing: high-rise (80-150m)
+- **Building Renewal** (conceptual suggestion): Primarily industrial and commercial/service land. Demolish inefficient wholesale markets and warehouses (scope to be confirmed after existing-condition survey); construct new AI industry complex, Zhi Large Model Plaza, and AI enterprise accelerator. Building massing: high-rise (80-150m, conceptual suggestion)
 - **Transportation**: Connect to Dazhongsi Station of the JingZhang APM line and Line 13; optimize slow-traffic cross-section along Heritage Park
 - **Public Space**: Zhi Large Model Plaza (approx. 2.5ha) as landmark public space for AI-generated art exhibitions and digital human interactions
 - **AI Scenarios**: S03 AI Creative Market, S09 City Intelligent Agent Operations Center, S10 AI Traffic Signals, autonomous driving open road testing
@@ -695,6 +695,21 @@ JingZhang AI Corridor constructs the "Zhi Ecosystem" innovation model, driven by
 | S08 | AI Cultural Guide | Entire JingZhang Heritage Park | AR historical scene reconstruction, AI audio narration |
 | S09 | City Intelligent Agent Operations Center | Beijing AI Origin Community | Digital twin large screen, traffic incident detection |
 | S10 | AI Traffic Signals and Turn Lane Allocation | All major roads | Adaptive signal timing, turn lane allocation, green wave |
+
+### Sensitive AI Scenario Data-Governance Matrix (S01/S05/S06/S09/S10 + Autonomous Driving)
+
+For scenarios involving sensitive personal information and high-risk automated decision-making (S01/S05/S06/S09/S10 and autonomous driving), this proposal commits to data-minimization principles and establishes the following data-governance matrix:
+
+| Scenario | Sensitive Data | Purpose | Minimization | Retention | Consent/Withdrawal | Human Review | Appeal | Shutdown/Degradation |
+|---|---|---|---|---|---|---|---|---|
+| S01 AI Diagnostic Corridor | Health, lab-test, chronic-disease data | AI triage, report interpretation, chronic management | Collect only clinically necessary fields, de-identified | Per medical-records regulation, limited post-visit retention | Separate notice before visit; withdraw anytime | AI conclusions must be reviewed by a licensed physician | Data-error appeal channel | AI anomaly falls back to human |
+| S05 AI Legal Service Station | Contract text, case facts, identity | Contract review, legal consultation | De-identified processing, no raw case storage | Deleted within a set period after consultation | Explicit consent, withdrawable with deletion | Review opinions must be confirmed by a licensed lawyer | Disputed conclusions routed to a human | Service anomaly disables AI |
+| S06 Smart Elderly Care Community | Health monitoring, location, activity data | Health alerts, anomaly alarms | Safety-essential vitals only, edge-first | Deleted after alarm loop closure | Written consent by resident/guardian, withdrawable | Alarms confirmed by care staff/family | Privacy appeal mechanism | Failure falls back to human care |
+| S09 City Intelligent Agent Operations Center | Video surveillance, incident, emergency data | Digital twin, incident detection, dispatch | Video de-identified, event features only | Per public-safety video regulation | PIPL notification obligation | Disposal decisions confirmed by duty staff | Public can appeal data misuse | Center failure degrades to standard command |
+| S10 AI Traffic Signals & Turn Lanes | Traffic flow, trajectory, plates | Signal timing, lane allocation | Aggregated flow only, no individual tracking | Immediate aggregation, time-limited raw video | No individual profiling, public-management notice | Timing confirmed by traffic engineer | Timing disputes accepted | Anomaly reverts to fixed plan |
+| Autonomous Driving (S02/S04) | In/out vehicle video, trajectory, passenger info | Vehicle control, V2X coordination | External sensing for immediate decisions only, no identity | Regulatory retention, others deleted on schedule | Passenger informed consent, withdrawable | Remote safety operator/takeover | Accident appeal and disclosure | Failure triggers safe stop (MRM) |
+
+> The above matrix represents binding data-governance commitments. Implementation must comply with the PIPL, the Data Security Law, the Interim Measures for the Administration of Generative AI Services, and sector-specific regulation, and is subject to formal filing/assessment.
 
 ### AI Industry Testing and Verification Scenarios (3)
 
@@ -784,7 +799,7 @@ Using "Source" as the core imagery - Source of Matter (railway heritage), Source
 - **Annual**: JingZhang AI Innovation Festival (autumn, one week)
 - **Quarterly**: AI Developer Marathons, AI Art Exhibitions, AI Industry Roadshow Days
 - **Ongoing**: Digital twin platform real-time display; global AI community operations
-- **International**: Annual "Global AI Corridor Summit"
+- **International** (pending institutional confirmation): Annual "Global AI Corridor Summit"
 
 ## Project List, Policies, and Phasing
 
@@ -796,7 +811,9 @@ Using "Source" as the core imagery - Source of Matter (railway heritage), Source
 | Phase 2 (Development) | 2028-2030 | Cluster industries, achieve scale | Zhongzhiyuan full construction, Dazhongsi upgrading, APM construction |
 | Phase 3 (Maturity) | 2030-2035 | Establish brand, build closed loop | Domain-wide AI coverage, international brand, operational closed loop |
 
-### Phase 1 Key Projects (2026-2028)
+> ⚠️ Phasing timelines and construction years are scenario assumptions. Specific start/completion dates must be adjusted based on project approval, funding availability, and demolition progress.
+
+### Phase 1 Key Projects (2026-2028, scenario)
 
 | Project | Type | Scale | Priority |
 |---|---|---|---|
@@ -807,13 +824,13 @@ Using "Source" as the core imagery - Source of Matter (railway heritage), Source
 | Developer Cafe Demo Sites | Industrial Services | 3-5 locations | Medium |
 | AI Community Service Center | Public Services | 2 locations | Medium |
 
-### Phase 2 Key Projects (2028-2030)
+### Phase 2 Key Projects (2028-2030, scenario)
 
 | Project | Type | Scale | Priority |
 |---|---|---|---|
 | Zhongzhiyuan AI Enterprise HQ Cluster | Industrial Space | ~500,000 sqm | Highest |
 | Dazhongsi AI Industry Complex | Industrial Space | ~300,000 sqm | Highest |
-| JingZhang APM Line | Transportation | ~7.5km | Highest |
+| JingZhang APM Line | Transportation | ~8.9km | Highest |
 | Xiaoyuehe Waterfront Greenway | Public Space | ~6km | High |
 | Zhi Century Clock | Cultural Landmark | - | High |
 | Unmanned Bus Routes | Smart Transportation | 3 routes | Medium |
@@ -828,14 +845,60 @@ Using "Source" as the core imagery - Source of Matter (railway heritage), Source
 | Funding | JingZhang AI Industry Guidance Fund | Accelerate innovative enterprise growth |
 | Approval | "Sandbox regulation" for AI scenarios; simplified testing approval | Accelerate AI product deployment |
 
+> The above policy and funding items are conceptual recommendations to authorities. Specific policy instruments, funding sources, and scales must be determined through research by municipal authorities.
+
+### Regional Coordination Matrix (External Science Cities / E-Town / Beijing-Tianjin-Hebei)
+
+JingZhang Zhi Corridor is not an isolated project and must coordinate with surrounding innovation poles and regional strategies:
+
+| Coordination Object | Relationship | Functional Synergy | Transport/Factor Link | Coordination Mechanism |
+|---|---|---|---|---|
+| Beiwei Community (north Zhongguancun) | Adjacent talent-housing and life-service hinterland | Talent housing, community services, AI life-scenario pilots | Xueyuan Rd–Beiwei Rd slow traffic | Community co-construction, public participation |
+| Future Science City (Changping) | National S&T innovation main platform (energy/materials/life & health) | "AI + energy / life" cross-innovation with Zhongguancun AI | JingZhang HSR, Metro Line 8/Changping | Industry synergy, joint R&D |
+| Huairou Science City | National major S&T infrastructure cluster | Big-science-facility computing and lab sharing, AI research synergy | Jingcheng Expressway, suburban rail | Research collaboration, open sharing |
+| E-Town (Beijing ETDZ) | High-end manufacturing and autonomous-driving pilot zone | AV testing/commercialization synergy, smart-manufacturing landing | Jingjintang Expressway, Yizhuang Line | Scenario mutual recognition, industry-chain synergy |
+| Beijing-Tianjin-Hebei | Regional coordinated-development strategic depth | Cross-regional AI talent/capital/computing flow, non-capital functions | JingZhang HSR, Jingxiong Intercity | Summit mechanism, talent hub |
+
+### Affected-Group Participation Mechanism
+
+| Affected Group | Main Impact | Participation Method | Timing |
+|---|---|---|---|
+| Existing residents (aging communities) | Renewal, construction nuisance | Door-to-door survey, plan publicity, hearings | Pre-plan — construction |
+| Merchants & wholesale-market workers | Demolition, business adjustment | Owner negotiation, compensation publicity | Pre-demolition |
+| University/hospital staff, students, patients | Traffic, environment, public services | Consultation, joint workshops | Full cycle |
+| Heritage & relic protection groups | Heritage impact | Specialized review, public oversight | Pre-plan |
+| Commuters | Traffic construction impact | Traffic-diversion publicity, hotline feedback | Construction period |
+
+> Participation follows "prior notice, interim consultation, post feedback"; major plan adjustments require a second publicity round and re-solicitation of opinions.
+
+### Phased Implementation Governance (RACI · Dependency · Acceptance · Suspension)
+
+| Phase | Accountable (A) | Consult/Approve (C) | Support/Inform (R/I) | Key Dependency | Acceptance Criteria | Suspension/Exit Condition |
+|---|---|---|---|---|---|---|
+| Phase 1 (Launch) | Implementing body (management committee) | Municipal planning/NDRC | District agencies, developers | Project approval, funding, resettlement | Heritage Park connection, AI Origin Community launch | Suspend expansion if funding/demolition miss targets |
+| Phase 2 (Development) | Implementing body | Municipal authorities | Industry operators | Phase-1 acceptance, industry attraction | APM in operation, Zhongzhiyuan built | Scale back if attraction underperforms |
+| Phase 3 (Maturity) | Operating body | Municipal authorities | Brand operators, intl partners | Stable Phase-2 operation | District-wide AI coverage, closed loop | Exit on operating loss or compliance issues |
+
+> RACI key: R=Responsible, A=Accountable, C=Consulted, I=Informed. The coordination objects, participation mechanism, and governance arrangements above are conceptual suggestions, subject to formal project approval, statutory planning, and cooperation agreements.
+
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-| Metric | Value | Unit | Notes |
-|---|---|---|---|
-| Total Land Area (Coordinated Scope) | ~43.6 | km2 | Based on announcement |
-| Total Land Area (Overall Design) | ~11.4 | km2 | Based on provisional boundaries |
-| Key Area Total | ~368.4 | ha | Sum of three key area parcels |
-| Heritage Park Length | ~9 | km | Conceptual recommended value |
+This section establishes the **single source of truth** for all metrics, unifying values across proposal, report, visual, compliance_matrix, and design_depth_matrix to avoid cross-file conflicts. Recalculation bases are in metrics.json; the compliance matrix is in compliance_matrix.json.
+
+| Metric ID | Name | Canonical Value | Unit | Definition & Formula | Confidence | Boundary Status |
+|--------|----------|--------|------|------------|--------|----------|
+| MT-AREA-RESEARCH | Coordinated Research Area | 43.6 | km2 | Announcement research scope, as published [metric:MT-AREA-RESEARCH] | Medium | Awaiting official data |
+| site_area_sqm | Overall Design Area | 11.4 | km2 | EPSG:4548 area of geometry/site_boundary.geojson#PROV-SITE-001 [metric:site_area_sqm] | Medium | Provisional boundary |
+| MT-AREA-KEY | Key Areas Total Area | 369.3 | ha | Sum of three key-area polygons [metric:MT-AREA-KEY] | Medium | Provisional boundary |
+| MT-LENGTH-HERITAGE | Heritage Park Length | 9 | km | Conceptual recommended value [metric:MT-LENGTH-HERITAGE] | Low | Conceptual |
+| MT-APM-LINE | Jing-Zhang APM Line Length | 8.9 | km | EPSG:4548 length of geometry/roads.geojson#RD-APM-001 [metric:MT-APM-LINE] | Low | Provisional alignment |
+| MT-APM-CAPACITY | APM Peak Hour Directional Capacity | 5400 | pass/h | Vehicle capacity × headway [metric:MT-APM-CAPACITY] | Medium | Conceptual |
+| MT-APM-DAILY | APM Daily Ridership Forecast | 16000 | pass/day | Demand-model estimate [metric:MT-APM-DAILY] | Medium | Conceptual |
+| MT-EXPRESSWAY-CAPACITY | Jingxin Expressway Extension Capacity | 5504 | pcu/h | CJJ37-2012 saturation-flow: 4 lanes × 1650 × 0.97 × 0.95 × 1.00, tunnel factor 0.90 (bidirectional) [metric:MT-EXPRESSWAY-CAPACITY] | Medium | Conceptual |
+| green_ratio | Green Space Ratio | 30.31% | % | green_space_area_sqm / site_area_sqm [metric:green_ratio] | Medium | Provisional boundary |
+| public_space_ratio | Public Space Ratio | 2.24% | % | public_space_area_sqm / site_area_sqm [metric:public_space_ratio] | Low | Provisional boundary |
+
+All values are recomputed on provisional boundaries and must be recomputed once official GIS/CAD data is published; versions and timestamps are in metrics.json. Previously conflicting values (APM 8.5/7.5 km, key area 369.2/368.4 ha, expressway 5504/12800 pcu/h) have been unified to the canonical values above.
 
 ## Professional Standards Response and Design Depth Evidence
 
@@ -892,3 +955,18 @@ Using "Source" as the core imagery - Source of Matter (railway heritage), Source
 - All spatial recommendations are conceptual suggestions and do not replace formal planning approval
 - Provisional boundary data requires recalculation once official data is published
 - All cited data has been sourced, and generated content has been annotated with its generation method
+
+### Specialized Risk Matrix
+
+The proposal identifies risks across eight high-risk domains, assesses impact, and specifies mitigation, with each risk annotated to its nearest traceable evidence source:
+
+| Risk Category | Key Risk | Potential Impact | Mitigation | Evidence |
+|---|---|---|---|---|
+| Heritage protection | Heritage and industrial relic protection requirements along the park | Plan adjustment, schedule delay | Preserve-Renovate-Demolish-Build strategy, heritage-specialized review | [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] |
+| Ecology | Ecological disturbance to Xiaoyuehe waterfront and green system | Ecological capacity overload | Graded blue-green network, ecological impact assessment | [source:DATA-SRC-AGENT-TASKBOOK-20260518] |
+| Road safety | Safety hazards at semi-underground tunnel / expressway interface | Traffic accident risk | Dedicated tunnel ventilation/egress design, CJJ37 check | [source:CASE-SHANGHAI-BEIHENG] |
+| Medical compliance | AI diagnosis involving medical advertising and device compliance | Compliance and liability risk | Licensed physician review, medical device filing | [source:CASE-AI-HEALTHCARE-CHINA] |
+| Autonomous-driving licensing | AV taxis/APM require testing permits and operating qualification | Unable to operate | Phased testing, open-road filing | [source:CASE-WUHAN-ROBOTAXI] |
+| Algorithmic bias | Bias in signal timing / city-agent decisions | Congestion or misjudgment | Human review, simulation validation, fairness testing | [source:CASE-HANGZHOU-CITY-BRAIN] |
+| Cybersecurity | Attack on city agent / digital twin | Urban operation interruption | Classified protection, defense-in-depth, drills | [source:DATA-SRC-AGENT-TASKBOOK-20260518] |
+| Data protection | Non-compliant processing of sensitive-scenario personal data | Legal and trust risk | Minimization, de-identification, governance matrix | [source:CASE-AI-HEALTHCARE-CHINA] |

@@ -11,7 +11,7 @@
 --blue:#1B3A5C;--teal:#00D4AA;--bg:#0a0f1a;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;
 --accent:#00D4AA;--border:#1f2937
 }
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 .hero{background:linear-gradient(135deg,#0a1628 0%,#0d2137 50%,#0a1f1a 100%);padding:80px 20px;text-align:center;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 30h60M30 0v60' stroke='%2300D4AA' stroke-width='.3' opacity='.1'/%3E%3C/svg%3E");pointer-events:none}
 .hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;background:linear-gradient(90deg,var(--blue) 0%,var(--teal) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px;position:relative}
@@ -78,9 +78,9 @@ footer a{color:var(--teal);text-decoration:none}
 <div class="stats">
   <div class="stat"><div class="num">43.6</div><div class="label">Research scope (km²)</div></div>
   <div class="stat" data-metric="site_area_sqm" data-value="11412825.386"><div class="num">11.4</div><div class="label">Design scope (km²)</div></div>
-  <div class="stat" data-metric="green_ratio" data-value="0.0581"><div class="num">5.81%</div><div class="label">Green space ratio</div></div>
-  <div class="stat" data-metric="public_space_ratio" data-value="unknown"><div class="num">—</div><div class="label">Public space ratio (TBD)</div></div>
-  <div class="stat"><div class="num">368.4</div><div class="label">Key areas (ha)</div></div>
+  <div class="stat" data-metric="green_ratio" data-value="0.303132"><div class="num">30.31%</div><div class="label">Green space ratio</div></div>
+  <div class="stat" data-metric="public_space_ratio" data-value="0.022444"><div class="num">2.24%</div><div class="label">Public space ratio</div></div>
+  <div class="stat"><div class="num">369.3</div><div class="label">Key areas (ha)</div></div>
   <div class="stat"><div class="num">9</div><div class="label">Heritage park (km)</div></div>
   <div class="stat"><div class="num">10</div><div class="label">AI scenario cards</div></div>
   <div class="stat"><div class="num">8</div><div class="label">Global cases</div></div>
@@ -178,7 +178,7 @@ footer a{color:var(--teal);text-decoration:none}
   <div class="card"><h4>🏥 S01 AI Medical Corridor</h4><p><strong>Space</strong>: Qinghuayuan community health center<br><strong>AI run</strong>: lobby AI triage terminal replaces the manual registration desk; the patient describes symptoms and AI matches the department; lab reports are auto-parsed and pushed to the phone, flagging abnormal indicators in plain language for doctor review<br><strong>Tech</strong>: medical knowledge graph + NLP consultation + imaging AI</p></div>
   <div class="card"><h4>🚁 S02 Driverless Delivery &amp; Driving</h4><p><strong>Space</strong>: district-wide roads + rooftop takeoff/landing pads<br><strong>AI run</strong>: drones fly from merchant to rooftop pad (3 min); L4 robotaxi one-tap hailing, fully driverless; ground delivery robots along sidewalks<br><strong>Tech</strong>: drone obstacle avoidance + LiDAR autonomy + SLAM navigation</p></div>
   <div class="card"><h4>🎨 S03 AI Creative Market</h4><p><strong>Space</strong>: around Dazhongsi Zhi·LLM Plaza, weekends<br><strong>AI run</strong>: AI painter generates stylized portraits in 10s; AI musician arranges in real time + light show; digital human in railway uniform converses live<br><strong>Tech</strong>: style transfer + AI composition + digital human</p></div>
-  <div class="card"><h4>🚄 S04 JingZhang APM Driverless</h4><p><strong>Space</strong>: 8.5km elevated + ground inside the innovation zone, 12 stations<br><strong>AI run</strong>: GoA4 full autonomy with no cab; in-car screens narrate landmarks; V2X signal coordination for priority<br><strong>Tech</strong>: GoA4 autonomy + V2X + AI narration</p></div>
+  <div class="card"><h4>🚄 S04 JingZhang APM Driverless</h4><p><strong>Space</strong>: 8.9km elevated + ground inside the innovation zone, 12 stations<br><strong>AI run</strong>: GoA4 full autonomy with no cab; in-car screens narrate landmarks; V2X signal coordination for priority<br><strong>Tech</strong>: GoA4 autonomy + V2X + AI narration</p></div>
   <div class="card"><h4>⚖️ S05 AI Legal Service Station</h4><p><strong>Space</strong>: ground floor of Wudaokou open-source community HQ<br><strong>AI run</strong>: upload a contract PDF → 30s AI flags risky clauses + plain explanation + revision template; when a human lawyer is needed, AI sends a summary to the neighboring firm<br><strong>Tech</strong>: legal NLP + knowledge graph + Legal RAG</p></div>
   <div class="card"><h4>👴 S06 Smart Elderly Care Community</h4><p><strong>Space</strong>: Xiaoyuehe age-friendly retrofitted community<br><strong>AI run</strong>: wristband 24h blood-pressure/heart-rate monitoring → anomaly triggers bedside voice comfort + notifies doctor and family + nurse 5-min visit; companion robot plays chess, chats, remembers preferences; voice assistant manages meds, meals, appointments<br><strong>Tech</strong>: wearables + anomaly alert + companion robot + voice assistant</p></div>
   <div class="card"><h4>☕ S07 Developer Café</h4><p><strong>Space</strong>: ground floor of innovation complexes along the line<br><strong>AI run</strong>: desktop AI coding assistant analyzes errors in 5s with fixes; wall AI whiteboard draws architecture diagrams, auto-detects dependencies; weekly Zhi·Night Talk salon<br><strong>Tech</strong>: code analysis + diagram recognition + collaborative whiteboard</p></div>

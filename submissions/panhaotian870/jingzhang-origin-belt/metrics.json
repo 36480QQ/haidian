@@ -101,7 +101,10 @@
         "geometry/key_areas.geojson"
       ],
       "formula": "Sum of three key-area areas",
-      "confidence": "medium"
+      "confidence": "medium",
+      "assumptions": [
+        "Sum of three provisional key-area polygons; not official red-line area"
+      ]
     },
     "MT-LENGTH-HERITAGE": {
       "name_zh": "遗址公园长度",
@@ -119,12 +122,16 @@
       "name_zh": "京张APM线长度",
       "name_en": "Jing-Zhang APM Line Length",
       "status": "known",
-      "value": 7500.0,
+      "value": 8866.52,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson#RD-APM-001"
       ],
-      "confidence": "low"
+      "confidence": "low",
+      "formula": "EPSG:4548 length of geometry/roads.geojson#RD-APM-001",
+      "assumptions": [
+        "Provisional alignment; operational length may shift once official GIS/CAD alignment is issued"
+      ]
     },
     "MT-LANDUSE-MIX": {
       "name_zh": "用地构成比例",
@@ -219,12 +226,16 @@
       "name_zh": "京新快速路延伸通行能力",
       "name_en": "Jingxin Expressway Extension Capacity",
       "status": "known",
-      "value": 12800,
+      "value": 5504,
       "unit": "index",
       "source_files": [
         "proposal.md"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "formula": "CJJ37-2012 saturation-flow method: 4 lanes (2+2) x 1650 pcu/h/ln x 0.97 x 0.95 x 1.00, tunnel reduction factor 0.90 (bidirectional)",
+      "assumptions": [
+        "Bidirectional tunnel-reduced capacity; definitive value needs traffic-impact study and OD survey"
+      ]
     },
     "MT-CARBON-SINK": {
       "name_zh": "年碳汇能力",
