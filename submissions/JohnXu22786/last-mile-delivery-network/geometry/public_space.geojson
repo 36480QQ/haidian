@@ -373,6 +373,48 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "id": "PS-SN06",
+   "properties": {
+    "scenario_type": "scenario_node",
+    "label_zh": "AI场景节点（驿站服务季广场）",
+    "official_boundary": false,
+    "geometry_role": "design_proposal",
+    "confidence": "low",
+    "source_type": "agent_generated_design",
+    "note": "7th scenario node; binds with S09 community co-delivery and S10 annual disclosure point",
+    "id": "PS-SN06",
+    "layer": "PUBLIC_SPACE"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       116.3422,
+       39.9654
+      ],
+      [
+       116.3438,
+       39.9654
+      ],
+      [
+       116.3438,
+       39.9666
+      ],
+      [
+       116.3422,
+       39.9666
+      ],
+      [
+       116.3422,
+       39.9654
+      ]
+     ]
+    ]
+   }
   }
  ]
 }

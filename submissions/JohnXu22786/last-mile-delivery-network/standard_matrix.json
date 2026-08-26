@@ -1,310 +1,310 @@
 {
-  "schema_version": "0.1.0",
-  "standards": [
-    {
-      "standard_id": "PROJECT-OFFICIAL-ANNOUNCEMENT",
-      "requirement_zh": "公告1.3/1.4/1.5对目的、范围、任务与深度提出主控要求。",
-      "professional_dimension": "规划/城市设计",
-      "mandatory": true,
-      "review_status": "addressed",
-      "proposal_sections": [
-        "设计依据与资料清单",
-        "风险、版权与合规说明"
-      ],
-      "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
-      ],
-      "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
-      ],
-      "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "landmark_count",
-        "scenario_node_count",
-        "industry_test_scenario_count",
-        "persona_count",
-        "global_case_count",
-        "annual_program_count",
-        "phase_count"
-      ],
-      "source_ids": [
-        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
-        "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
-        "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
-        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
-        "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"
-      ],
-      "assumption_ids": [
-        "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-DATA-001",
-        "A-PRIVACY-001",
-        "A-ROAD-001",
-        "A-CONTENT-001"
-      ],
-      "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
-      ],
-      "evidence_summary_zh": "以「末程智环（LAST·JZ · 低速无人配送与末端物流网络）」构建沿京张AI创新带的末端物流专项概念（对应公开任务书 AI 场景赋能维度与仓库低速无人配送公开场景方向、交通慢行与公共服务设施维度，以及智慧物流公开政策方向）：以「一中心二站一点」组织末端物流网络，「共配中心」为园区级共同配送与分拣节点（多品牌共配、分时段装卸、可逆轻量设施意向，众智园侧）、「无人配送微站」为低速无人配送车与机器人的停放充电与接驳站点（限速低速路权、非机动车道协同，AI原点社区侧）、「智能驿站」为社区末端取送与便民服务点（取件寄存、退换代寄、便民服务，大钟寺侧），三节点沿京张绿带组织连续的末端服务动线；五类AI+场景（配送调度AI、路权管理AI、驿站存取AI、运力撮合AI、安全监测AI）仅处理匿名聚合数据、关键决策人工复核、禁止过度监控（不进行个体识别式追踪）；要素机制均为概念建议：共配准入与分时路权、末端设施设置导则、配送服务积分、骑手与机器人协同规范、年度安全评估公示；对标案例（低速无人配送公开试点城市经验、京东顺丰末端无人配送公开实践、新加坡无人配送试点公开信息、日本宅配机器人公开试点）仅按公开渠道信息概述；交通慢行优先、蓝绿空间低干预融合布置，三项formal核心指标（site_area_sqm、green_ratio、public_space_ratio）以本包几何复算、面积以官方文本口径为底，分期实施+年度复算与公示计划。全部为概念建议、参考方案，不给出容积率、建筑高度、具体拆改留、运力规模、配送量、投资测算或工程实施结论，不编造任何官方数据、车辆数量、配送量或政策承诺，不把设想写成已确定安排，基于 provisional 边界，官方数据发布后复算。"
-    },
-    {
-      "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
-      "requirement_zh": "任务书对三大定位、五大功能、三区两翼、六项任务与边界条款提出要求。",
-      "professional_dimension": "规划/城市设计",
-      "mandatory": true,
-      "review_status": "addressed",
-      "proposal_sections": [
-        "设计依据与资料清单",
-        "风险、版权与合规说明"
-      ],
-      "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
-      ],
-      "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
-      ],
-      "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "landmark_count",
-        "scenario_node_count",
-        "industry_test_scenario_count",
-        "persona_count",
-        "global_case_count",
-        "annual_program_count",
-        "phase_count"
-      ],
-      "source_ids": [
-        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
-        "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
-        "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
-        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
-        "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"
-      ],
-      "assumption_ids": [
-        "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-DATA-001",
-        "A-PRIVACY-001",
-        "A-ROAD-001",
-        "A-CONTENT-001"
-      ],
-      "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
-      ],
-      "evidence_summary_zh": "以「末程智环（LAST·JZ · 低速无人配送与末端物流网络）」构建沿京张AI创新带的末端物流专项概念（对应公开任务书 AI 场景赋能维度与仓库低速无人配送公开场景方向、交通慢行与公共服务设施维度，以及智慧物流公开政策方向）：以「一中心二站一点」组织末端物流网络，「共配中心」为园区级共同配送与分拣节点（多品牌共配、分时段装卸、可逆轻量设施意向，众智园侧）、「无人配送微站」为低速无人配送车与机器人的停放充电与接驳站点（限速低速路权、非机动车道协同，AI原点社区侧）、「智能驿站」为社区末端取送与便民服务点（取件寄存、退换代寄、便民服务，大钟寺侧），三节点沿京张绿带组织连续的末端服务动线；五类AI+场景（配送调度AI、路权管理AI、驿站存取AI、运力撮合AI、安全监测AI）仅处理匿名聚合数据、关键决策人工复核、禁止过度监控（不进行个体识别式追踪）；要素机制均为概念建议：共配准入与分时路权、末端设施设置导则、配送服务积分、骑手与机器人协同规范、年度安全评估公示；对标案例（低速无人配送公开试点城市经验、京东顺丰末端无人配送公开实践、新加坡无人配送试点公开信息、日本宅配机器人公开试点）仅按公开渠道信息概述；交通慢行优先、蓝绿空间低干预融合布置，三项formal核心指标（site_area_sqm、green_ratio、public_space_ratio）以本包几何复算、面积以官方文本口径为底，分期实施+年度复算与公示计划。全部为概念建议、参考方案，不给出容积率、建筑高度、具体拆改留、运力规模、配送量、投资测算或工程实施结论，不编造任何官方数据、车辆数量、配送量或政策承诺，不把设想写成已确定安排，基于 provisional 边界，官方数据发布后复算。"
-    },
-    {
-      "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
-      "requirement_zh": "城市设计应落实规划、指导建筑设计、塑造特色风貌并统筹立体空间。",
-      "professional_dimension": "规划/城市设计",
-      "mandatory": true,
-      "review_status": "addressed",
-      "proposal_sections": [
-        "设计依据与资料清单",
-        "风险、版权与合规说明"
-      ],
-      "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
-      ],
-      "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
-      ],
-      "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "landmark_count",
-        "scenario_node_count",
-        "industry_test_scenario_count",
-        "persona_count",
-        "global_case_count",
-        "annual_program_count",
-        "phase_count"
-      ],
-      "source_ids": [
-        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
-        "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
-        "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
-        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
-        "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"
-      ],
-      "assumption_ids": [
-        "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-DATA-001",
-        "A-PRIVACY-001",
-        "A-ROAD-001",
-        "A-CONTENT-001"
-      ],
-      "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
-      ],
-      "evidence_summary_zh": "以「末程智环（LAST·JZ · 低速无人配送与末端物流网络）」构建沿京张AI创新带的末端物流专项概念（对应公开任务书 AI 场景赋能维度与仓库低速无人配送公开场景方向、交通慢行与公共服务设施维度，以及智慧物流公开政策方向）：以「一中心二站一点」组织末端物流网络，「共配中心」为园区级共同配送与分拣节点（多品牌共配、分时段装卸、可逆轻量设施意向，众智园侧）、「无人配送微站」为低速无人配送车与机器人的停放充电与接驳站点（限速低速路权、非机动车道协同，AI原点社区侧）、「智能驿站」为社区末端取送与便民服务点（取件寄存、退换代寄、便民服务，大钟寺侧），三节点沿京张绿带组织连续的末端服务动线；五类AI+场景（配送调度AI、路权管理AI、驿站存取AI、运力撮合AI、安全监测AI）仅处理匿名聚合数据、关键决策人工复核、禁止过度监控（不进行个体识别式追踪）；要素机制均为概念建议：共配准入与分时路权、末端设施设置导则、配送服务积分、骑手与机器人协同规范、年度安全评估公示；对标案例（低速无人配送公开试点城市经验、京东顺丰末端无人配送公开实践、新加坡无人配送试点公开信息、日本宅配机器人公开试点）仅按公开渠道信息概述；交通慢行优先、蓝绿空间低干预融合布置，三项formal核心指标（site_area_sqm、green_ratio、public_space_ratio）以本包几何复算、面积以官方文本口径为底，分期实施+年度复算与公示计划。全部为概念建议、参考方案，不给出容积率、建筑高度、具体拆改留、运力规模、配送量、投资测算或工程实施结论，不编造任何官方数据、车辆数量、配送量或政策承诺，不把设想写成已确定安排，基于 provisional 边界，官方数据发布后复算。"
-    },
-    {
-      "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
-      "requirement_zh": "本方案为概念建议,明确不替代控制性详细规划法定内容。",
-      "professional_dimension": "规划/城市设计",
-      "mandatory": true,
-      "review_status": "addressed",
-      "proposal_sections": [
-        "设计依据与资料清单",
-        "风险、版权与合规说明"
-      ],
-      "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
-      ],
-      "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
-      ],
-      "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "landmark_count",
-        "scenario_node_count",
-        "industry_test_scenario_count",
-        "persona_count",
-        "global_case_count",
-        "annual_program_count",
-        "phase_count"
-      ],
-      "source_ids": [
-        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
-        "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
-        "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
-        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
-        "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"
-      ],
-      "assumption_ids": [
-        "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-DATA-001",
-        "A-PRIVACY-001",
-        "A-ROAD-001",
-        "A-CONTENT-001"
-      ],
-      "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
-      ],
-      "evidence_summary_zh": "以「末程智环（LAST·JZ · 低速无人配送与末端物流网络）」构建沿京张AI创新带的末端物流专项概念（对应公开任务书 AI 场景赋能维度与仓库低速无人配送公开场景方向、交通慢行与公共服务设施维度，以及智慧物流公开政策方向）：以「一中心二站一点」组织末端物流网络，「共配中心」为园区级共同配送与分拣节点（多品牌共配、分时段装卸、可逆轻量设施意向，众智园侧）、「无人配送微站」为低速无人配送车与机器人的停放充电与接驳站点（限速低速路权、非机动车道协同，AI原点社区侧）、「智能驿站」为社区末端取送与便民服务点（取件寄存、退换代寄、便民服务，大钟寺侧），三节点沿京张绿带组织连续的末端服务动线；五类AI+场景（配送调度AI、路权管理AI、驿站存取AI、运力撮合AI、安全监测AI）仅处理匿名聚合数据、关键决策人工复核、禁止过度监控（不进行个体识别式追踪）；要素机制均为概念建议：共配准入与分时路权、末端设施设置导则、配送服务积分、骑手与机器人协同规范、年度安全评估公示；对标案例（低速无人配送公开试点城市经验、京东顺丰末端无人配送公开实践、新加坡无人配送试点公开信息、日本宅配机器人公开试点）仅按公开渠道信息概述；交通慢行优先、蓝绿空间低干预融合布置，三项formal核心指标（site_area_sqm、green_ratio、public_space_ratio）以本包几何复算、面积以官方文本口径为底，分期实施+年度复算与公示计划。全部为概念建议、参考方案，不给出容积率、建筑高度、具体拆改留、运力规模、配送量、投资测算或工程实施结论，不编造任何官方数据、车辆数量、配送量或政策承诺，不把设想写成已确定安排，基于 provisional 边界，官方数据发布后复算。"
-    },
-    {
-      "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
-      "requirement_zh": "用地分类引用国土空间调查规划用途管制用地用海分类指南的公开子集。",
-      "professional_dimension": "规划/城市设计",
-      "mandatory": true,
-      "review_status": "addressed",
-      "proposal_sections": [
-        "设计依据与资料清单",
-        "风险、版权与合规说明"
-      ],
-      "drawing_refs": [
-        "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
-      ],
-      "geometry_refs": [
-        "geometry/site_boundary.geojson",
-        "geometry/key_areas.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/roads.geojson",
-        "geometry/green_space.geojson",
-        "geometry/public_space.geojson",
-        "geometry/phasing.geojson"
-      ],
-      "metric_refs": [
-        "site_area_sqm",
-        "green_ratio",
-        "public_space_ratio",
-        "landmark_count",
-        "scenario_node_count",
-        "industry_test_scenario_count",
-        "persona_count",
-        "global_case_count",
-        "annual_program_count",
-        "phase_count"
-      ],
-      "source_ids": [
-        "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518",
-        "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
-        "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
-        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
-        "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"
-      ],
-      "assumption_ids": [
-        "A-BOUNDARY-001",
-        "A-CONTROLS-001",
-        "A-DATA-001",
-        "A-PRIVACY-001",
-        "A-ROAD-001",
-        "A-CONTENT-001"
-      ],
-      "self_check_ids": [
-        "BOUNDARY_TRUST",
-        "KEY_AREAS_TRUST",
-        "LAND_USE_TOPOLOGY",
-        "VISUAL_STATIC"
-      ],
-      "evidence_summary_zh": "以「末程智环（LAST·JZ · 低速无人配送与末端物流网络）」构建沿京张AI创新带的末端物流专项概念（对应公开任务书 AI 场景赋能维度与仓库低速无人配送公开场景方向、交通慢行与公共服务设施维度，以及智慧物流公开政策方向）：以「一中心二站一点」组织末端物流网络，「共配中心」为园区级共同配送与分拣节点（多品牌共配、分时段装卸、可逆轻量设施意向，众智园侧）、「无人配送微站」为低速无人配送车与机器人的停放充电与接驳站点（限速低速路权、非机动车道协同，AI原点社区侧）、「智能驿站」为社区末端取送与便民服务点（取件寄存、退换代寄、便民服务，大钟寺侧），三节点沿京张绿带组织连续的末端服务动线；五类AI+场景（配送调度AI、路权管理AI、驿站存取AI、运力撮合AI、安全监测AI）仅处理匿名聚合数据、关键决策人工复核、禁止过度监控（不进行个体识别式追踪）；要素机制均为概念建议：共配准入与分时路权、末端设施设置导则、配送服务积分、骑手与机器人协同规范、年度安全评估公示；对标案例（低速无人配送公开试点城市经验、京东顺丰末端无人配送公开实践、新加坡无人配送试点公开信息、日本宅配机器人公开试点）仅按公开渠道信息概述；交通慢行优先、蓝绿空间低干预融合布置，三项formal核心指标（site_area_sqm、green_ratio、public_space_ratio）以本包几何复算、面积以官方文本口径为底，分期实施+年度复算与公示计划。全部为概念建议、参考方案，不给出容积率、建筑高度、具体拆改留、运力规模、配送量、投资测算或工程实施结论，不编造任何官方数据、车辆数量、配送量或政策承诺，不把设想写成已确定安排，基于 provisional 边界，官方数据发布后复算。"
-    }
-  ]
+ "schema_version": "0.1.0",
+ "standards": [
+  {
+   "standard_id": "PROJECT-OFFICIAL-ANNOUNCEMENT",
+   "requirement_zh": "公告1.3/1.4/1.5对目的、范围、任务与深度提出主控要求。",
+   "professional_dimension": "规划/城市设计",
+   "mandatory": true,
+   "review_status": "addressed",
+   "proposal_sections": [
+    "设计依据与资料清单",
+    "风险、版权与合规说明"
+   ],
+   "drawing_refs": [
+    "drawings/a3-booklet.pdf",
+    "drawings/a0-boards.pdf"
+   ],
+   "geometry_refs": [
+    "geometry/site_boundary.geojson",
+    "geometry/key_areas.geojson",
+    "geometry/land_use.geojson",
+    "geometry/buildings.geojson",
+    "geometry/roads.geojson",
+    "geometry/green_space.geojson",
+    "geometry/public_space.geojson",
+    "geometry/phasing.geojson"
+   ],
+   "metric_refs": [
+    "site_area_sqm",
+    "green_ratio",
+    "public_space_ratio",
+    "landmark_count",
+    "scenario_node_count",
+    "industry_test_scenario_count",
+    "persona_count",
+    "global_case_count",
+    "annual_program_count",
+    "phase_count"
+   ],
+   "source_ids": [
+    "DATA-SRC-OFFICIAL-ANNOUNCEMENT",
+    "DATA-SRC-AGENT-TASKBOOK",
+    "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
+    "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+    "DATA-SRC-PROVISIONAL-BOUNDARIES",
+    "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"
+   ],
+   "assumption_ids": [
+    "A-BOUNDARY-001",
+    "A-CONTROLS-001",
+    "A-DATA-001",
+    "A-PRIVACY-001",
+    "A-ROAD-001",
+    "A-CONTENT-001"
+   ],
+   "self_check_ids": [
+    "BOUNDARY_TRUST",
+    "KEY_AREAS_TRUST",
+    "LAND_USE_TOPOLOGY",
+    "VISUAL_STATIC"
+   ],
+   "evidence_summary_zh": "依据资格预审公告的文本口径复述三层范围（统筹约43.6km2、总体约11.4km2、重点区约368.4ha）与三处重点区（众智园约192.1ha、AI原点社区约104.3ha、大钟寺约72.0ha）；本方案为末端物流专项，全部几何为 provisional，仅作概念讨论与复算演示，不构成红线、权属或规划许可，官方几何发布后整体复算。"
+  },
+  {
+   "standard_id": "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+   "requirement_zh": "任务书对三大定位、五大功能、三区两翼、六项任务与边界条款提出要求。",
+   "professional_dimension": "规划/城市设计",
+   "mandatory": true,
+   "review_status": "addressed",
+   "proposal_sections": [
+    "设计依据与资料清单",
+    "风险、版权与合规说明"
+   ],
+   "drawing_refs": [
+    "drawings/a3-booklet.pdf",
+    "drawings/a0-boards.pdf"
+   ],
+   "geometry_refs": [
+    "geometry/site_boundary.geojson",
+    "geometry/key_areas.geojson",
+    "geometry/land_use.geojson",
+    "geometry/buildings.geojson",
+    "geometry/roads.geojson",
+    "geometry/green_space.geojson",
+    "geometry/public_space.geojson",
+    "geometry/phasing.geojson"
+   ],
+   "metric_refs": [
+    "site_area_sqm",
+    "green_ratio",
+    "public_space_ratio",
+    "landmark_count",
+    "scenario_node_count",
+    "industry_test_scenario_count",
+    "persona_count",
+    "global_case_count",
+    "annual_program_count",
+    "phase_count"
+   ],
+   "source_ids": [
+    "DATA-SRC-OFFICIAL-ANNOUNCEMENT",
+    "DATA-SRC-AGENT-TASKBOOK",
+    "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
+    "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+    "DATA-SRC-PROVISIONAL-BOUNDARIES",
+    "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"
+   ],
+   "assumption_ids": [
+    "A-BOUNDARY-001",
+    "A-CONTROLS-001",
+    "A-DATA-001",
+    "A-PRIVACY-001",
+    "A-ROAD-001",
+    "A-CONTENT-001"
+   ],
+   "self_check_ids": [
+    "BOUNDARY_TRUST",
+    "KEY_AREAS_TRUST",
+    "LAND_USE_TOPOLOGY",
+    "VISUAL_STATIC"
+   ],
+   "evidence_summary_zh": "任务书六项任务（agent.1—6）在 compliance_matrix.json 逐条映射：一带总体概念（末程智环命名与命名体系）、AI全栈创新生态（八项对标案例逐项登记 sources.json）、AI+场景（十张场景卡S01—S10、3处AI地标、10个场景节点）、AI公共空间与朝圣地标（公共空间组件库、末程荣誉榜、文化导视系统）、文化叙事（铁路最后一程转译物流最后一公里）、全球活动体系（四项年度活动与国际转化通道）；均以概念建议表述。"
+  },
+  {
+   "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",
+   "requirement_zh": "城市设计应落实规划、指导建筑设计、塑造特色风貌并统筹立体空间。",
+   "professional_dimension": "规划/城市设计",
+   "mandatory": true,
+   "review_status": "addressed",
+   "proposal_sections": [
+    "设计依据与资料清单",
+    "风险、版权与合规说明"
+   ],
+   "drawing_refs": [
+    "drawings/a3-booklet.pdf",
+    "drawings/a0-boards.pdf"
+   ],
+   "geometry_refs": [
+    "geometry/site_boundary.geojson",
+    "geometry/key_areas.geojson",
+    "geometry/land_use.geojson",
+    "geometry/buildings.geojson",
+    "geometry/roads.geojson",
+    "geometry/green_space.geojson",
+    "geometry/public_space.geojson",
+    "geometry/phasing.geojson"
+   ],
+   "metric_refs": [
+    "site_area_sqm",
+    "green_ratio",
+    "public_space_ratio",
+    "landmark_count",
+    "scenario_node_count",
+    "industry_test_scenario_count",
+    "persona_count",
+    "global_case_count",
+    "annual_program_count",
+    "phase_count"
+   ],
+   "source_ids": [
+    "DATA-SRC-OFFICIAL-ANNOUNCEMENT",
+    "DATA-SRC-AGENT-TASKBOOK",
+    "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
+    "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+    "DATA-SRC-PROVISIONAL-BOUNDARIES",
+    "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"
+   ],
+   "assumption_ids": [
+    "A-BOUNDARY-001",
+    "A-CONTROLS-001",
+    "A-DATA-001",
+    "A-PRIVACY-001",
+    "A-ROAD-001",
+    "A-CONTENT-001"
+   ],
+   "self_check_ids": [
+    "BOUNDARY_TRUST",
+    "KEY_AREAS_TRUST",
+    "LAND_USE_TOPOLOGY",
+    "VISUAL_STATIC"
+   ],
+   "evidence_summary_zh": "城市设计深度按「问题—空间对象—指标—资料缺口—复算路径」组织：总体结构落实为「一中心二站一点」与低速路权、慢行一体化空间对象；公共空间优先行人通行净宽、无障碍连续与夜间照明；风貌控制以低眩光、耐久可换部件为方向；依赖未公开控制条件的指标保持待定，不以概念方案替代法定内容。"
+  },
+  {
+   "standard_id": "MOHURD-CONTROL-DETAILED-PLANNING",
+   "requirement_zh": "本方案为概念建议,明确不替代控制性详细规划法定内容。",
+   "professional_dimension": "规划/城市设计",
+   "mandatory": true,
+   "review_status": "addressed",
+   "proposal_sections": [
+    "设计依据与资料清单",
+    "风险、版权与合规说明"
+   ],
+   "drawing_refs": [
+    "drawings/a3-booklet.pdf",
+    "drawings/a0-boards.pdf"
+   ],
+   "geometry_refs": [
+    "geometry/site_boundary.geojson",
+    "geometry/key_areas.geojson",
+    "geometry/land_use.geojson",
+    "geometry/buildings.geojson",
+    "geometry/roads.geojson",
+    "geometry/green_space.geojson",
+    "geometry/public_space.geojson",
+    "geometry/phasing.geojson"
+   ],
+   "metric_refs": [
+    "site_area_sqm",
+    "green_ratio",
+    "public_space_ratio",
+    "landmark_count",
+    "scenario_node_count",
+    "industry_test_scenario_count",
+    "persona_count",
+    "global_case_count",
+    "annual_program_count",
+    "phase_count"
+   ],
+   "source_ids": [
+    "DATA-SRC-OFFICIAL-ANNOUNCEMENT",
+    "DATA-SRC-AGENT-TASKBOOK",
+    "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
+    "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+    "DATA-SRC-PROVISIONAL-BOUNDARIES",
+    "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"
+   ],
+   "assumption_ids": [
+    "A-BOUNDARY-001",
+    "A-CONTROLS-001",
+    "A-DATA-001",
+    "A-PRIVACY-001",
+    "A-ROAD-001",
+    "A-CONTENT-001"
+   ],
+   "self_check_ids": [
+    "BOUNDARY_TRUST",
+    "KEY_AREAS_TRUST",
+    "LAND_USE_TOPOLOGY",
+    "VISUAL_STATIC"
+   ],
+   "evidence_summary_zh": "本方案明确为概念建议、参考方案，不替代控制性详细规划法定内容：不给出容积率、建筑高度、建筑强度、道路红线等结论；三节点以可逆轻量设施叠加既有用地，具体面积、层数与基底待现状、权属、文保、消防与结构调查后由专业团队确定；控规深度仅保留表达框架与复算路径。"
+  },
+  {
+   "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
+   "requirement_zh": "用地分类引用国土空间调查规划用途管制用地用海分类指南的公开子集。",
+   "professional_dimension": "规划/城市设计",
+   "mandatory": true,
+   "review_status": "addressed",
+   "proposal_sections": [
+    "设计依据与资料清单",
+    "风险、版权与合规说明"
+   ],
+   "drawing_refs": [
+    "drawings/a3-booklet.pdf",
+    "drawings/a0-boards.pdf"
+   ],
+   "geometry_refs": [
+    "geometry/site_boundary.geojson",
+    "geometry/key_areas.geojson",
+    "geometry/land_use.geojson",
+    "geometry/buildings.geojson",
+    "geometry/roads.geojson",
+    "geometry/green_space.geojson",
+    "geometry/public_space.geojson",
+    "geometry/phasing.geojson"
+   ],
+   "metric_refs": [
+    "site_area_sqm",
+    "green_ratio",
+    "public_space_ratio",
+    "landmark_count",
+    "scenario_node_count",
+    "industry_test_scenario_count",
+    "persona_count",
+    "global_case_count",
+    "annual_program_count",
+    "phase_count"
+   ],
+   "source_ids": [
+    "DATA-SRC-OFFICIAL-ANNOUNCEMENT",
+    "DATA-SRC-AGENT-TASKBOOK",
+    "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
+    "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+    "DATA-SRC-PROVISIONAL-BOUNDARIES",
+    "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES"
+   ],
+   "assumption_ids": [
+    "A-BOUNDARY-001",
+    "A-CONTROLS-001",
+    "A-DATA-001",
+    "A-PRIVACY-001",
+    "A-ROAD-001",
+    "A-CONTENT-001"
+   ],
+   "self_check_ids": [
+    "BOUNDARY_TRUST",
+    "KEY_AREAS_TRUST",
+    "LAND_USE_TOPOLOGY",
+    "VISUAL_STATIC"
+   ],
+   "evidence_summary_zh": "用地分类名称参照《国土空间调查、规划、用途管制用地用海分类指南》公开子集：科研用地、商业与商务服务用地、居住及配套用地、绿地与开敞空间、道路与市政设施用地；采用统一单一分类口径（约22%/29%/30%/9%/10%，按 land_use.geojson 在 EPSG:4548 下复算、约整显示），与图件、HTML、PDF 一致，官方数据发布后整体复算。"
+  }
+ ]
 }
