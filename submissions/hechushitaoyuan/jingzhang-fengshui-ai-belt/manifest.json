@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "216db5e31b49438be6d3a5531d7a0461f6e1d04a348379b3c1c3ecfe7a9fc809"
+      "sha256": "9004af571f8f9412e093c1891c72c85879a5a340e75679dd89cbe22db1439395"
     },
     {
       "path": "agent.json",
@@ -38,25 +38,25 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "01a4a5888045408ea2237c6cb25e13eca8d63b99c90cba480667621f427306bb"
+      "sha256": "32a4d920c5866420699ac8be9c43606e493f93a3aac5af8792807d56c56b42a9"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "a9e2abd7e1670ce9a69cd23d91f2ad9b92a8f49a76b85a94c620b47ef0acc8c6"
+      "sha256": "ddb246655f4fc10481291a436b6cda8c63897aa81f9912e1b44eb6a57b5fb84e"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "ab922a8bcb41dc8f663b70c833bdf25e858f53c653e5859c420749cdd6a7dc60"
+      "sha256": "49ada680a1684fc48bbe110493f25a11ba4b8c8dcd8b39b33d6e163d65edc5fc"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f5ab0e9b280c920ce7331faa383ae62032a86454b4f146d1febccf2448c74541"
+      "sha256": "66a4613c40ad8186cbdcc7096fa17440d1b02097a762563abe74a4983cdb6157"
     },
     {
       "path": "compliance_matrix.json",
@@ -68,20 +68,20 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "794d0ad687fd8393c2e454a95f5f12fedd3d804117ac9f15fdf1c79c27fa8ce2"
+      "sha256": "c861afe19bba1f619f311a04c63e06aefcafd65533b878dc0208eb8b78c2e838"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "757df04925caf170f9ed3b32ecd54ed7e076ddd40dbe8e3b47d33d8960489cec"
+      "sha256": "3e761cc9ccee6af5bde683436f12aa0af262cb3de1a86df21ec86ddef0c2a854"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4cdfe5dae8581dbbe5f82b1eac6d657c31a2fa45d88f79b7ef6cafa3eb89ae86"
+      "sha256": "169239b4dc3e71385ec637340fd078baddacfe31a949f9ae472466c5704629a5"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "a73cf645410eb05783f27b069acd6d1e5a881973bb2461f55bd7140ba0c30f28"
+      "sha256": "96632f29b20662df87462243a6a676deff0cfd1e9d25cf3ca9134c8fd0fdfcdb"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e032c1b6fad8e8d8fc228b8ce608ca1a0b3da03ceb3e72ec10d11703b17fc6d8"
+      "sha256": "d51a6816acf869203fecb11e96ab8fe3d0a35a2ff9982844ff8bbfd5f8e166c8"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e076411c66aad8eb42ae13b42805439e3ba2211ac2d692a41d38340fb66763c5"
+      "sha256": "a549156b79bc686392b9f2c1768c7eb941a7d72baef19bb5437bdd26efa03a58"
     },
     {
       "path": "visual/index.en.html",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "2469a50527a9783e2fc7238f3fb81a7c54e4b6bd33320465d6463fd1d4e26564",
+      "sha256": "52cb94b15588f310fc877e3ab951aeb85d0bd6738fc3f4a9ccc17311f0e9ee10",
       "language": "neutral"
     },
     {
@@ -539,6 +539,39 @@
       "sha256": "406754d410de195a445fe7e5189ed0f814a0b6c7f7568db40a79b204b8585a70"
     },
     {
+      "path": "visual/assets/governance/evidence-readiness-register.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "实证就绪等级登记（H0-H4）",
+      "title_en": "Evidence-readiness register (H0-H4)",
+      "description_zh": "三个产业测试场景如实登记为 H0；升级门材料、责任岗与复核要求结构化留痕，执行值保持空缺。",
+      "description_en": "Three industry test scenarios are honestly registered at H0; gate materials, responsible roles, and review requirements are structured while execution values remain blank.",
+      "sha256": "cfdc11e1dfe1e3be0c213aa61273170155640c85e4f6e2ddc89ddf8925a373ef"
+    },
+    {
+      "path": "visual/assets/governance/measurement-registry.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "M01-M06 测量口径登记",
+      "title_en": "M01-M06 measurement registry",
+      "description_zh": "标定前测量口径草案，定义、复核岗与留痕位置齐备；全部实测数值刻意留白。",
+      "description_en": "Pre-calibration measurement protocol drafts with definitions, reviewers, and ledger locations; all measured values are deliberately blank.",
+      "sha256": "173363ed20f0b58860b5c62564858e3b209fdf1ecf56f51ec54ada7bb7ab33ba"
+    },
+    {
+      "path": "visual/assets/governance/verify-governance.js",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "治理登记复算验证器",
+      "title_en": "Governance register verifier",
+      "description_zh": "作者自研 Node.js 标准库脚本，随包分发供复算就绪登记、测量口径和跨文件一致性共14项结构检查。",
+      "description_en": "Author-written Node.js standard-library script distributed for recomputation of 14 structural checks across readiness, measurement, and cross-file governance consistency.",
+      "sha256": "d98f917a3d786d6c62bb0e6be5127ac00b453e6d3c17d38cb606aa17c4f846e7"
+    },
+    {
       "path": "visual/assets/governance/model-card.schema.json",
       "role": "evidence_data",
       "required": false,
@@ -591,7 +624,7 @@
       "title_en": "Qi-Pulse deterministic self-verification results",
       "description_zh": "七组 30 项确定性检查全部 PASS：场景卡 156 演练复算、气数协议绑定、岗位闭环、分期条件门、指标跨文件一致性、双语标签对齐、CJK 字体覆盖。",
       "description_en": "Seven groups / 30 deterministic checks all PASS: scenario-card 156-drill recount, protocol binding, role loop, phase gates, metrics cross-file consistency, bilingual tag parity, CJK font coverage.",
-      "sha256": "45a5f7b44e756b9d2209bded6cd756ead8910b1fd72f7777ac93d87d89b4d8b8"
+      "sha256": "41306dfddf271534555ffeed48d79f5abfa825a812034740fcfc42c4253488d3"
     },
     {
       "path": "assets/screenshots/a3-booklet-contact-sheet.png",

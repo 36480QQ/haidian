@@ -790,6 +790,92 @@
       "assumptions": [
         "降级恢复时限为概念运营承诺指标，深化阶段由运营主体细化。"
       ]
+    },
+    "a11y_color_pair_fail_count_normal": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/a11y-color-check.json"
+      ],
+      "formula": "count(pairs with simulated dE00 < 20 under normal)",
+      "confidence": "high",
+      "assumptions": [
+        "Derived from the already registered four-condition distribution; no measured accessibility test is claimed."
+      ]
+    },
+    "a11y_color_pair_fail_count_deuteranopia": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/a11y-color-check.json"
+      ],
+      "formula": "count(pairs with simulated dE00 < 20 under deuteranopia)",
+      "confidence": "high",
+      "assumptions": [
+        "Derived from the already registered four-condition distribution; no measured accessibility test is claimed."
+      ]
+    },
+    "a11y_color_pair_fail_count_protanopia": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/a11y-color-check.json"
+      ],
+      "formula": "count(pairs with simulated dE00 < 20 under protanopia)",
+      "confidence": "high",
+      "assumptions": [
+        "Derived from the already registered four-condition distribution; no measured accessibility test is claimed."
+      ]
+    },
+    "a11y_color_pair_fail_count_tritanopia": {
+      "status": "known",
+      "value": 11,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/a11y-color-check.json"
+      ],
+      "formula": "count(pairs with simulated dE00 < 20 under tritanopia)",
+      "confidence": "high",
+      "assumptions": [
+        "Derived from the already registered four-condition distribution; no measured accessibility test is claimed."
+      ]
+    },
+    "contact_sheet_inventory": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "manifest.json",
+        "changelog.md"
+      ],
+      "formula": "count PDF/A0 contact-sheet evidence assets already registered by Wave-11: assets/screenshots/a3-booklet-contact-sheet.png + assets/screenshots/a0-boards-contact-sheet.png",
+      "confidence": "high",
+      "assumptions": [
+        "Inventory count only; it does not alter page counts or drawing content.",
+        "The two registered path strings remain in formula/source evidence; validator contract requires the metric value to be numeric."
+      ]
+    },
+    "governance_verifier_check_count": {
+      "status": "known",
+      "value": 14,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/governance/verify-governance.js",
+        "visual/assets/governance/evidence-readiness-register.json",
+        "visual/assets/governance/measurement-registry.json"
+      ],
+      "formula": "count structural checks emitted by in-package verify-governance.js",
+      "confidence": "high",
+      "assumptions": [
+        "Structural governance checks only; H0 remains not-started and measurement values remain blank."
+      ]
     }
+  },
+  "derived_evidence_note": {
+    "wave": "W16-3",
+    "rule": "new keys are derived from registered artifacts; existing metric values are unchanged"
   }
 }

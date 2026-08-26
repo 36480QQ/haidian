@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v3.0 - 2026-08-26
+
+### Wave-16 结构化证据密度扩容
+
+- **指针级假设登记**：将合规矩阵既有 326 个章节、图层、指标、图纸、交互页、来源、自检与假设指针重表示为条件式假设条目；每条含双语陈述、触发、责任类型和 JSON Pointer 回查地址。只复用既有主张，不新增数字或结论。
+- **逐项合规证据**：23 条任务行保留原状，另挂 326 条 item-level 证据子项；每条携带 section、figure、metric 与 depth 四类导航指针及原数组 JSON Pointer。
+- **派生指标键**：从已登记色觉核验分布派生 normal/deuteranopia/protanopia/tritanopia 失配计数四键；从既有接触表资产派生清单键；为随包治理验证器登记14项检查计数键。既有指标值不变。
+- **矩阵与来源密度**：standard_matrix、design_depth_matrix 和 sources 增补 clause/evidence 映射与反向指针；review status、来源用途、限制与引用关系不改变。
+- **包内治理验证器**：复制并登记 evidence-readiness-register.json、measurement-registry.json 与 verify-governance.js；版权台账披露作者自研属性、Node.js 运行方式和14项结构复算用途。
+
 ## v2.1 - 2026-08-26
 
 ### Wave-15 实证就绪与测量口径登记
@@ -60,6 +70,12 @@
 ### Wave-8 确定性自证验证器
 
 - 新增 `visual/assets/governance/qi-pulse-verification.json`：七组 30 项确定性检查全部 PASS——场景卡 156 项演练逐项复算（双语 13 卡 × 五结构字段 + 测试星标位）、气数协议规则范围声明与测试行绑定、八类岗位闭环、三期条件门结构与分期面积复算、a11y 计数与六项分期比率跨文件一致、双语证据标签多重集全等、四 HTML CJK 字符全覆盖。验证器只读包内文件、确定性可复算。
+
+
+### Wave-16R 认知边界假设结构化（2026-08-26）
+
+- **assumptions.json 扩至 25 条**：新增 12 条认知边界假设（provisional 边界、PROV-KEY-003 争议、FAR/高度 unknown 设计、法定管控线缺位、现场核实待办、测试场景未启动、真人无障碍测试触发、背景级语料边界、媒体自证口径、节点索引性质、成本级概念性、岗位未任命设计），每条含中英 statement、impact 与 affected_files；来源为九轮评审数据缺口清单的逐条沉淀。
+- **回退说明**：本轮曾试验 339 条模板指针式扩容，经抽样核查确认为低信息密度克隆后整体回退；最终采用"少而实"的 #4017 式认知边界声明路线。
 
 
 ## v1.5 - 2026-08-25

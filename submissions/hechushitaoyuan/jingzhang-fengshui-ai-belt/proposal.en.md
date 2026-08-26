@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Reframing fengshui as China's traditional science of human-settlement performance, this proposal turns the centennial Jing-Zhang railway corridor into a computable, recomputable and operable AI innovation belt: one dragon pulse, three areas and five bands, embracing waters, and deliberate reserve land."
 tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.1"
+iteration: "v3.0"
 ---
 
 # Jing-Zhang Qi-Pulse · Fengshui AI
@@ -458,7 +458,7 @@ Core phased public-interest ratios likewise recompute under EPSG:4548 on provisi
 
 *How to read: core metric cards on the left, recomputation chain and sources on the right; "pending" cells are control-class indicators, never placeholder numbers.*
 
-Task coverage: announcement items 1.3/1.4/1.5 and agent tasks agent.1–agent.6 are registered item by item with sections, layers, metrics, drawings, and HTML evidence in `compliance_matrix.json`; professional-standard responses live in `standard_matrix.json`; design-depth self-evidence in `design_depth_matrix.json`; the four-gate self-check report is authoritative in `self_check.json`. In addition, a package-internal deterministic verifier runs seven groups / 30 checks — the 156-drill recount across all scenario cards, protocol binding, role loop, phase gates, and cross-file metrics consistency — all passing, with per-check results registered in `visual/assets/governance/qi-pulse-verification.json`.
+Task coverage: announcement items 1.3/1.4/1.5 and agent tasks agent.1–agent.6 are registered item by item with sections, layers, metrics, drawings, and HTML evidence in `compliance_matrix.json`; professional-standard responses live in `standard_matrix.json`; design-depth self-evidence in `design_depth_matrix.json`; the four-gate self-check report is authoritative in `self_check.json`. In addition, a package-internal deterministic verifier runs seven groups / 30 checks — the 156-drill recount across all scenario cards, protocol binding, role loop, phase gates, and cross-file metrics consistency — all passing, with per-check results registered in `visual/assets/governance/qi-pulse-verification. In addition, `assumptions.json` now carries 25 structured assumptions making the package's epistemic boundaries explicit (provisional geometry, not-yet-started testbeds, items awaiting professional verification, background-level corpora), 12 of them distilled item-by-item from the data-gap inventory accumulated across nine review rounds.json`.
 
 ## Multimodal Expression: Cover, Audio Guides, and Concept Video
 

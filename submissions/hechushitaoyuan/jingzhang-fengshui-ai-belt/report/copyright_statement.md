@@ -73,6 +73,7 @@
 | `visual/assets/a11y-color-check.json` | 11 色色板在 4 类色觉下的 CIEDE2000 色差核验结果与 36 对例外清单 | 参与者量化核验结果；方法参考 Machado (2009) 与 Sharma (2005) |
 | `visual/assets/governance/qi-protocol.json` | 气数协议 v0.1 规则集与 156 项离线确定性演练自检记录 | 参与者概念治理框架设计 |
 | `visual/assets/governance/role-spec.json` | 八类运营岗位规格（全部 assignment_status=unassigned） | 参与者概念岗位设计 |
+| `visual/assets/governance/evidence-readiness-register.json`、`measurement-registry.json`、`verify-governance.js` | 作者自研治理证据三件套：前两者分别登记 H0-H4 就绪口径与 M01-M06 测量口径且执行值留白；验证器为 Node.js 标准库程序，运行 `node visual/assets/governance/verify-governance.js <packageDir> --json` 可复算14项结构检查，用于拒绝虚构“已达成/已实测”状态 | 参与者原创声明；随包分发仅供包内治理证据复算，不构成任何授权、实测或运营承诺 |
 
 ## 6. OpenStreetMap 数据合规声明
 

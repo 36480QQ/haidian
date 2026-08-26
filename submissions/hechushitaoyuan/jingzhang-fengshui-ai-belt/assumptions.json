@@ -78,6 +78,157 @@
       "status": "conditional_followup",
       "statement": "若项目推进至实施准备，则资金来源可在财政投资、社会资本、场景运营自平衡三类中组合选择；本方案不预设任何比例、金额或承诺。",
       "impact": "为深化阶段提供来源类型框架，实际融资结构、回报边界、公共资产保障与审计安排须经主管部门和专业机构确认。"
+    },
+    {
+      "id": "A-BOUNDARY-OFFICIAL-001",
+      "status": "provisional_constraint",
+      "statement_zh": "总体设计范围与三处重点区均为仓库 provisional 粗略边界派生，官方精确红线与正式 polygon 尚未发布；全部面积、比例与区位结论以后者为准复算。",
+      "statement_en": "Overall-design scope and three key areas derive from repository provisional rough polygons; official precise redlines and formal polygons have not been released, and all areas, ratios and location conclusions await recalculation against them.",
+      "impact": "所有生成图层与几何派生比率为内部可复算，但不得用于权属、审批或工程依据。",
+      "affected_files": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "metrics.json"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
+    },
+    {
+      "id": "A-PROV-KEY003-DISPUTE-001",
+      "status": "disclosed_dispute",
+      "statement_zh": "PROV-KEY-003 质心相对大钟寺站存在约 2.26 km 社区争议，本方案仅作粗略定位与场景指向，不支撑该片区边界、权属或实施结论。",
+      "statement_en": "PROV-KEY-003's centroid carries a community dispute of roughly 2.26 km relative to Dazhongsi station; used only for rough placement and scenario pointing.",
+      "impact": "大钟寺重点区的落位、拆改留与实施结论需待组织方正式几何或经确认的范围说明。",
+      "affected_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
+    },
+    {
+      "id": "A-CONTROLS-FAR-HEIGHT-001",
+      "status": "unknown_by_design",
+      "statement_zh": "容积率、建筑高度、建筑密度等地块控制指标在官方控规公布前保持 unknown/null，是刻意处理而非数据遗漏。",
+      "statement_en": "FAR, building height and density controls remain unknown/null until official regulatory controls are published — a deliberate treatment, not an omission.",
+      "impact": "任何体量与强度结论须待控制条件齐备后由专业团队建立。",
+      "affected_files": [
+        "metrics.json"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
+    },
+    {
+      "id": "A-STATUTORY-LINES-001",
+      "status": "pending_official_data",
+      "statement_zh": "道路红线、文保范围及建控地带、水体蓝线、生态控制线与市政管线容量等法定空间管控线尚未获得权威空间数据。",
+      "statement_en": "Statutory control lines (road redlines, heritage protection/construction zones, water blue lines, ecological control lines, municipal corridors) lack authoritative spatial data.",
+      "impact": "相关约束仅以文字性谨慎表述进入方案，不作空间叠加分析。",
+      "affected_files": [
+        "geometry/constraints.geojson"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
+    },
+    {
+      "id": "A-SITE-VERIFICATION-001",
+      "status": "pending_professional_survey",
+      "statement_zh": "权属、现状建筑安全、消防通行、交通运行与市政容量未经专业核实；拆改留与体量布局为概念建议。",
+      "statement_en": "Ownership, existing-building safety, fire access, traffic operation and municipal capacity are not professionally verified; retention/demolition and massing are conceptual.",
+      "impact": "一期试点的开工令以 DP 表逐项确认为前提。",
+      "affected_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
+    },
+    {
+      "id": "A-TESTBED-BASELINE-001",
+      "status": "not_started",
+      "statement_zh": "三个产业测试验证场景无现场基线、标定数据集、主管部门授权或实测结果——方案已如实将其表述为试点触发后的资料。",
+      "statement_en": "The three industry testbeds have no field baseline, calibration dataset, authorization record or measured result; correctly declared as post-trigger materials.",
+      "impact": "最小验收矩阵为标定阶段结构模板，数值留白。",
+      "affected_files": [
+        "proposal.md",
+        "metrics.json"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
+    },
+    {
+      "id": "A-ACCESSIBILITY-HUMAN-TEST-001",
+      "status": "pending_user_testing",
+      "statement_zh": "机器色差核验与冗余编码设计不能替代真人测试：视障、老年、行动不便与非智能手机用户的参与式验证被列为开放前验收的触发条件。",
+      "statement_en": "Machine color-simulation cannot substitute human testing; participatory verification with visually-impaired, elderly, mobility-limited and non-smartphone users is a pre-opening trigger.",
+      "impact": "220 对色觉核验与 39 对例外登记为机器口径；真人测试结果将纳入开放/停用决策。",
+      "affected_files": [
+        "visual/assets/a11y-color-check.json"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
+    },
+    {
+      "id": "A-BACKGROUND-CORPUS-001",
+      "status": "background_level_only",
+      "statement_zh": "全球案例、铁路史与车站史料为背景级整理，未转化为经专业审阅的权威证据语料；若后续作为法定或遗产设计依据，须先行专业审校。",
+      "statement_en": "Global cases, railway and station histories remain background-level compilations, not an authoritative professionally-reviewed corpus for statutory or heritage-design use.",
+      "impact": "文化叙事层引用不受影响；法定用途须先行转化。",
+      "affected_files": [
+        "proposal.md",
+        "report/narrative.md"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
+    },
+    {
+      "id": "A-MEDIA-INDEPENDENT-REVIEW-001",
+      "status": "self_generated_declared",
+      "statement_zh": "音频导览、概念视频与封面均为本地确定性生成并登记方法链，未经第三方独立检视。",
+      "statement_en": "Audio guides, concept video and cover are locally generated with disclosed method chains, not independently inspected by third parties.",
+      "impact": "媒体属概念氛围层，非空间证据；字幕与文稿随包提供。",
+      "affected_files": [
+        "assets/media",
+        "sources.json"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
+    },
+    {
+      "id": "A-SCENARIO-POINT-INDEX-001",
+      "status": "design_metric_only",
+      "statement_zh": "场景节点坐标为重点区内的面积级索引点，非勘测安装坐标；不证明地块可得性、施工可行性或点位许可。",
+      "statement_en": "Scenario node coordinates are area-level spatial indices inside key areas, not surveyed installation coordinates; they prove conceptual assignment only.",
+      "impact": "落位深化需现场勘察与权属确认。",
+      "affected_files": [
+        "visual/assets/governance/qi-protocol.json"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
+    },
+    {
+      "id": "A-COST-LEVEL-CONCEPT-001",
+      "status": "concept_estimate_class",
+      "statement_zh": "S/M/L 成本级为概念估算类别（非投资测算）；年度运维成本级同口径，资金来源类型（财政/社会资本/运营自平衡）待责任主体书面确认。",
+      "statement_en": "S/M/L cost tiers are conceptual estimate classes, not investment calculations; annual O&M tiers share the same basis, funding-source types pending written confirmation.",
+      "impact": "DP-06 未确认前仅保留零土建的概念展示与共设计工作坊。",
+      "affected_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
+    },
+    {
+      "id": "A-ROLES-UNASSIGNED-001",
+      "status": "unassigned_by_design",
+      "statement_zh": "八类岗位全部为组织类型规格、assignment_status=unassigned：岗位先于人选，缺岗则绑定场景不开放。",
+      "statement_en": "All eight roles are organisation-type specifications with assignment_status=unassigned: roles before names; bound scenarios stay closed when a role is vacant.",
+      "impact": "任命机制与互斥规则见 role-spec.json 与正文治理章。",
+      "affected_files": [
+        "visual/assets/governance/role-spec.json"
+      ],
+      "category": "epistemic_boundary",
+      "source": "accumulated reviewer data-gap inventory across PRs #3816/#4020/#4022/#4023/#4024/#4027/#4032/#4038/#4040"
     }
   ]
 }
