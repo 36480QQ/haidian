@@ -19,10 +19,10 @@
     },
     {
       "id": "A-RIGHTS",
-      "status": "active",
-      "statement": "External pages and peer proposals are cited as references; all submitted diagrams, charts, HTML and raster figures are generated for this proposal. No external image, logo, map tile, screenshot or third-party font file is redistributed.",
-      "impact": "Formal display remains rights-pending until the asset ledger is checked; system fonts used only to rasterize local figures are not submitted as font files.",
-      "trigger_to_recalculate": "Before any public display or PR, audit every visual asset, font rendering dependency, source URL, license and attribution record; unresolved rows remain marked A-RIGHTS.",
+      "status": "audited-cleared-for-repository-display",
+      "statement": "External pages and peer proposals remain citation-only references; every submitted diagram, chart, HTML page, PDF, raster figure, geometry layer and embedded font bundle has a row in the detailed file-level ledger in report/copyright_statement.md. Proposal text, geometry and visual compositions are original local assets; the embedded Noto Sans CJK SC subset is used under the SIL Open Font License 1.1.",
+      "impact": "The current repository package and PR display have a documented rights basis. This clearance does not authorize adding external images, logos, map tiles, screenshots, datasets or fonts without a new ledger row and license record.",
+      "trigger_to_recalculate": "Before any future public-display adaptation or asset addition, re-audit every visual asset, font rendering dependency, source URL, license and attribution record; unresolved rows must block that adaptation.",
       "owner": "participant"
     },
     {

@@ -30,7 +30,7 @@
       "review_status_legend": {
         "background_only": "Context or method support; not a project-specific formal control or boundary.",
         "peer_method_only": "Method comparison; no copied text, image, brand, policy or asset.",
-        "rights_pending": "External asset or future display use requires a separate rights check under A-RIGHTS."
+        "rights_pending": "Reserved status for a future external asset before audit; no current package item uses this status."
       },
       "background_only": ["OFFICIAL-CALL", "OFFICIAL-SKILL", "BEIJING-STAT-2025", "BEIJING-MASTER-PLAN", "BEIJING-AI-2025", "HAIDIAN-AI-2025", "BEIJING-TRANSPORT-2026", "OFFICIAL-RESILIENCE", "JZ-PLANNING-NOTICE"],
       "peer_method_only": ["PEER-CIVIC-LOOP", "PEER-REN-AXIS"]
@@ -212,6 +212,34 @@
       "use": "peer design-method reference with attribution",
       "license_or_reuse": "do not copy text or assets; cite method inspiration",
       "limitation": "community proposal, not official evidence"
+    },
+    {
+      "id": "SELF-GENERATED-PACKAGE",
+      "publisher": "Declared participant/agent",
+      "title": "Never-Off Jing-Zhang local proposal package assets",
+      "url": "submissions/ladidol/never-off-jingzhang/report/copyright_statement.md",
+      "retrieved_at": "2026-08-26",
+      "coverage": "original bilingual text, provisional conceptual geometry, raster diagrams, offline HTML and board composition",
+      "use": "asset provenance and repository/PR display rights record",
+      "license_or_reuse": "original proposal assets; no external pixels, map tiles, logos, screenshots or unlicensed media are redistributed",
+      "limitation": "does not constitute official approval, statutory planning control, construction authorization or a license for future external adaptations",
+      "review_status": "rights-cleared-for-this-package",
+      "usable_for_formal": "yes"
+    },
+    {
+      "id": "FONT-NOTO-SANS-CJK-SC",
+      "publisher": "Noto CJK project contributors",
+      "title": "Noto Sans CJK SC Regular",
+      "url": "https://github.com/notofonts/noto-cjk/blob/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf",
+      "retrieved_at": "2026-08-26",
+      "coverage": "offline Chinese glyph rendering for the submitted HTML, visual page and PDF assets",
+      "use": "bundled subset font; no remote font request",
+      "license_or_reuse": "SIL Open Font License 1.1; the package records the license and attribution in report/copyright_statement.md",
+      "limitation": "Only the subset needed by this package is embedded in visual/assets/font.css; future font or text changes require a coverage and rights re-audit",
+      "review_status": "rights-cleared-for-this-package",
+      "usable_for_formal": "yes",
+      "license_file": "report/copyright_statement.md",
+      "embedded_asset": "visual/assets/font.css"
     }
   ]
 }
