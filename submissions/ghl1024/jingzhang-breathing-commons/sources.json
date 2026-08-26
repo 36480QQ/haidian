@@ -80,6 +80,15 @@
       "usage": "Accessibility, equitable service, and non-digital fallback principles."
     },
     {
+      "id": "NOTO-SANS-CJK",
+      "url": "https://github.com/notofonts/noto-cjk",
+      "source_type": "open_source_font",
+      "usage": "Embedded offline subset of the Noto CJK Simplified Chinese regular face for readable proposal HTML; font data is embedded locally and is not used as design evidence.",
+      "license": "SIL Open Font License 1.1",
+      "retrieved_at": "2026-08-26",
+      "limits": "Presentation dependency only; subset contains characters used by this package and does not support any spatial, planning, or implementation claim."
+    },
+    {
       "id": "HELSINKI-KALASATAMA",
       "url": "https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/kalasatama",
       "source_type": "official_public",

@@ -2,6 +2,12 @@
 
 Jing-Zhang Breathing Commons / Changelog
 
+## v0.18 - 2026-08-26
+
+- 根据 PR #3910 专业评审意见，为中文 report/visual 离线 HTML 内嵌 OFL 授权的 Noto CJK 字体，修复无系统中文字体环境中的方框字，并在 sources/copyright 中记录字体来源与仅用于呈现的边界。
+- 将 `breathing_spine_length_m` 在双语图纸、HTML 与离线可视化中统一为一位小数（`9,242.5 m`），保持与 `metrics.json` 的 `9242.5` 一致。
+- 增加北纬社区、未来科学城、怀柔科学城、经开区和京津冀协同节点的区域协同接口矩阵；所有对象均标为概念建议/待协商，不新增合作承诺或空间事实。
+
 ## v0.17 - 2026-08-25
 
 - 根据 PR #3910 的确定性 CI 反馈，将新提交的 manifest 从兼容线 `schema_version=0.1.0` 迁移到当前前向契约 `0.2.0`。
@@ -65,4 +71,4 @@ Jing-Zhang Breathing Commons / Changelog
 
 ---
 
-v0.17 adopts manifest schema 0.2.0 and maps the review-evidence JSON to the canonical `evidence_data` role. The proposal, drawings, geometry, metrics, and provisional/statutory limitations remain unchanged.
+v0.18 embeds the OFL-licensed Noto CJK font for offline Chinese readability, standardizes the breathing-spine length at one decimal place across output surfaces, and adds a regional collaboration interface matrix with all five relationships marked conceptual and pending negotiation. Geometry and statutory limitations remain unchanged.

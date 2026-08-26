@@ -34,6 +34,20 @@ The coordinated research area answers “why”: how Haidian's concentration of 
 
 The overall structure is not a new boundary. It is one spine, three lungs, two wings, and six plug-in unit types. The spine combines active mobility, shade, rest, accessibility, environmental observation, and staffed service. The three lungs are differentiated open-validation areas. The Zhongguancun technology-service wing supplies standards, data compliance, procurement, capital, and talent interfaces; the Xiaoyue River scenario wing supplies blue-green settings, resident feedback, and urban operations. Air observatories, shaded stops, quiet co-translation points, blue-green wind gates, heat-return nodes, and staffed accessibility halls can move when official geometry changes. [depth:overall_spatial_structure] [data:geometry/key_areas.geojson#PROV-KEY-001]
 
+### Regional collaboration interface matrix (conceptual recommendation)
+
+The two wings are not written as an established alliance. They translate potential collaborators into a discussable object-resource-interface-conversion path. Each row is a research proposal requiring separate negotiation of actors, permissions, venues, data, and funding; none is a government, park, community, or regional cooperation commitment.
+
+| Potential collaborator | Resource or question | Jing-Zhang interface | Conversion path to public value | Evidence status |
+| --- | --- | --- | --- | --- |
+| Beiwei Community | Resident questions, daily-service feedback, accessibility observations | Paper/on-site question desk, staffed-route receipts, anonymized issue briefs | Community question -> scenario brief -> staffed validation -> public review record | Conceptual; negotiation pending |
+| Future Science City | Engineering and industry pilot questions, methods, test capacity | Technology-service wing standards, data compliance, insurance, bounded-test handoff | Engineering question -> controlled prototype -> recalculable public-service method | Conceptual; negotiation pending |
+| Huairou Science City | Research themes, environmental and public-health measurement methods | Blue-green observation nodes, method exchange, field-protocol review | Research question -> measurement protocol -> local calibration record | Conceptual; negotiation pending |
+| Beijing E-Town | Manufacturing, device integration, maintenance, procurement questions | Device calibration, maintenance evidence, enterprise-service interface | Validated pilot -> maintainable device package -> locally reviewed adoption option | Conceptual; negotiation pending |
+| Beijing-Tianjin-Hebei collaboration nodes | Cross-region scenarios, open methods, comparable public-service questions | Portable protocols, bilingual evidence summaries, locally reviewed cross-site comparison | Local evidence -> comparable method -> regional learning and recalibration | Conceptual; negotiation pending |
+
+This matrix describes interface design only. It does not claim partner consent, data access, funding, procurement, or event permission. When formal material and authorization arrive, each row must add an accountable actor, evidence source, and exit condition. [source:AGENT-TASKBOOK] [depth:industry_space_mapping]
+
 One boundary derives the whole spatial model. Five land-use partitions fully cover the provisional design area; the breathing spine and non-AI equivalent route stay inside it; green and public-space areas are measured after union; and three non-overlapping phase polygons cover the submitted boundary. The narrative, GeoJSON, metrics, five figures, A3/A0 drawings, and offline interaction therefore refer to one dataset rather than separate and conflicting drawings. [data:geometry/land_use.geojson#LU-BREATH-01] [metric:site_area_sqm] [metric:land_use_zone_count]
 
 ## Coordinated Research Area: Industry and Future City Research

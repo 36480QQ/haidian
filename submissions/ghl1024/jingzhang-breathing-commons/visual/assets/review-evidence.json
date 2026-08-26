@@ -143,5 +143,52 @@
     "cost_status": "unknown_pending_quantity_survey_local_quotes_permissions_and_operator_assignment",
     "currency_total": null
   },
+  "regional_collaboration": [
+    {
+      "partner_scope": "北纬社区",
+      "partner_scope_en": "Beiwei Community",
+      "status": "conceptual_proposal_pending_negotiation",
+      "resource_or_question": "resident questions, daily-service feedback, and community accessibility observations",
+      "interface": "paper and on-site question desk, staffed route feedback, and anonymized issue briefs",
+      "conversion_path": "community question -> scenario brief -> staffed validation -> public review record",
+      "evidence_boundary": "No partnership, consent, venue, or activity is confirmed."
+    },
+    {
+      "partner_scope": "未来科学城",
+      "partner_scope_en": "Future Science City",
+      "status": "conceptual_proposal_pending_negotiation",
+      "resource_or_question": "engineering and industry pilot questions, methods, and test capacity",
+      "interface": "standards, data-compliance, insurance, and bounded test handoff through the technology-service wing",
+      "conversion_path": "engineering question -> controlled prototype -> recalibrated public-service method",
+      "evidence_boundary": "No institutional or resource commitment is confirmed."
+    },
+    {
+      "partner_scope": "怀柔科学城",
+      "partner_scope_en": "Huairou Science City",
+      "status": "conceptual_proposal_pending_negotiation",
+      "resource_or_question": "science-research themes and environmental or public-health measurement methods",
+      "interface": "blue-green observation nodes, method exchange, and documented field-protocol review",
+      "conversion_path": "research question -> measurement protocol -> local calibration record",
+      "evidence_boundary": "No research collaboration or data access is confirmed."
+    },
+    {
+      "partner_scope": "经开区",
+      "partner_scope_en": "Beijing E-Town",
+      "status": "conceptual_proposal_pending_negotiation",
+      "resource_or_question": "manufacturing, device integration, maintenance, and procurement questions",
+      "interface": "calibration and maintenance evidence exchanged through bounded enterprise-service interfaces",
+      "conversion_path": "validated pilot -> maintainable device package -> locally reviewed adoption option",
+      "evidence_boundary": "No supplier, procurement, investment, or deployment commitment is confirmed."
+    },
+    {
+      "partner_scope": "京津冀协同节点",
+      "partner_scope_en": "Beijing-Tianjin-Hebei collaboration nodes",
+      "status": "conceptual_proposal_pending_negotiation",
+      "resource_or_question": "cross-region test scenarios, open methods, and comparable public-service questions",
+      "interface": "portable protocols, bilingual evidence summaries, and cross-site comparison with local review",
+      "conversion_path": "local evidence -> comparable method -> regional learning and re-calibration",
+      "evidence_boundary": "No regional agreement, data exchange, or implementation arrangement is confirmed."
+    }
+  ],
   "precision_notice": "This contract makes evidence requirements explicit. It does not prove approval, field performance, affordability, or implementation commitment."
 }
