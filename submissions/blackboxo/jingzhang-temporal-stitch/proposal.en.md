@@ -518,7 +518,7 @@ The system follows the "physical improvements remain effective when AI is shut d
 | T1-Limited Trial | 12 weeks | T0 passed + local government approval | Confidence <0.85 for 3 consecutive days; MAPE >15% for 7 days; complaint rate >5% | AI suggestions suspended, manual takeover of all scheduling | Re-tuning then re-enter T0 |
 | T2-Open Operation | Ongoing | T1 passed + expert panel review + community notice with no objection | Quarterly satisfaction <60%; any AI auto-execution breaching non-automatable boundary | Downgrade to T1 mode, initiate incident investigation | Investigation conclusion + remediation verification + re-notice |
 
-**Fail-closed default**: All AI layers default to OFF during power failure, network interruption, or system anomaly. Spaces revert to safest open state (passages open, lights on, no access control). No scenario exists where AI failure locks public space.
+**Fail-closed default**: All AI layers default to OFF during power failure, network interruption, or system anomaly. Spaces revert to safest open state (passages open, lights on, no access control). Design goal: AI failure shall not lock public space; residual risks (e.g., security system coupling in extreme scenarios) must be verified through power-loss drills during T0, with property management designating a manual unlock responsible person.
 
 **Non-AI control requirement**: During T1, at least 1 node of the same type must remain as non-AI control group (physical improvements + fixed schedule only) for comparative effectiveness measurement. If difference lacks statistical significance, do not upgrade to T2.
 
@@ -574,9 +574,9 @@ Note: All items marked "pending on-site survey," "pending ownership verification
 
 | KPI Indicator | Node | Baseline Assumption | Measurement Method | Cycle | Near-term Threshold | Data Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| Daily pedestrian count | N-01 Knowledge | Currently ~0 (walled off) | IR counter + manual sampling | Weekly→Monthly | ≥200/day within 6 months | On-site sensor (pending) |
+| Daily pedestrian count | N-01 Knowledge | Pending baseline (scenario assumption: ~0 when walled) | IR counter + manual sampling | Weekly→Monthly | ≥200/day within 6 months | On-site sensor (pending) |
 | Peak-hour crossing time | N-02 Tidal | Pending traffic baseline | GPS float car + pedestrian timing | Daily→Quarterly | ≥15% reduction from baseline | Traffic mgmt platform (pending) |
-| Startup teams hosted | N-03 Entrepreneurship | Currently 0 (closed) | Tenancy agreement registry | Monthly | ≥5 teams within Year 1 | Industrial park ledger |
+| Startup teams hosted | N-03 Entrepreneurship | Pending baseline (scenario assumption: 0 when closed) | Tenancy agreement registry | Monthly | ≥5 teams within Year 1 | Industrial park ledger |
 | Accessibility satisfaction | N-04 Intergenerational | Pending barrier-free audit | Quarterly survey + observation | Quarterly | ≥75% (≥3.75/5 scale) | Community survey (pending) |
 | Stormwater retention | N-05 Nature | Pending water authority data | Flow meter + level sensor | Post-storm 48h report | ≥60% retention for 50mm events | Water monitoring system (pending) |
 | Weekend footfall | N-06 Commercial | Pending commercial baseline | Video counting (no face capture) | Weekly→Monthly | ≥30% increase from baseline | Commercial operator data |
