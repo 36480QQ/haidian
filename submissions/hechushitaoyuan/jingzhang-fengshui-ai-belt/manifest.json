@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f507a48e714720f8891959cb7780d7a7f958c09830c0cde760a911a92835e464"
+      "sha256": "95325bb3f0b14c31fe886b09abf3978ea2f119fc7f8b0aa7324074f9c5be1297"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2f94b6bb56f9f8076b68019be5ab247dec8798d4dc427df4f93cffbb5b81d9df"
+      "sha256": "12b7a3a86dc974e2e527aa9cc47ef455f6c15718cf985d188756e1f23fdad7fd"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "baf44c836c8c2670adaf93107d7bbf5ee88dcdd8b4023f29f1d3cf17dc31d99d"
+      "sha256": "a8ee9ed42cd47c2ec71ab73dfdacfede18f6bcc122b6c85c7dff19bd2770107f"
     },
     {
       "path": "report/narrative.md",
@@ -93,28 +93,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "53306f29dcc554bc1c6c2a8236590399a9ffa89766fdeddb800682f3300ce5cf"
+      "sha256": "6a426ca1b14d403106168049bc9d7c1b02335270ebeb6c89d3d507c141eee35f"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "1e02ca7603f764dd5c6c4f99168d218a9149cb6b1c21d01519e488a8748a1517"
+      "sha256": "d2ce6849b807ba9849f36f9cf66d1db79d27fc302d94af2af4bd128a47a57f05"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "86cdfb5bfa3b3de36e6c779457a2e9dcef7000e7b8e9ebc2ffdad8165b11f30f"
+      "sha256": "dacf303c60461f444d572e41c8bbc384403765247e49a2205bdb3d92fb5a837e"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "4c142ea22ad1006313fda72c8a22ff37d90441a73f6cb98169d9b1d1095d4fc2"
+      "sha256": "30b10e934861756b304facc9b72a320fb26bdb518ae988da972c87d2adc79a59"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "faf8e86cb49571daf564c3b2e6737e5a4e187d3c5ace36a40f36240d0b4047c3"
+      "sha256": "e20765bcbc46e7285683e342b24e5fb5466fd1a697c326062880bd7d8dfeeeaf"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "877c3bb880160b059566d81e130a6dbacccb4bb3151c122a30e9be8d94bbdac2"
+      "sha256": "1e282be1b5a26061db1afa4ab87e66f39f04bd2288731414df7157575bea1a9a"
     },
     {
       "path": "visual/index.en.html",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0d5701248db7a3d72c9b1e707fed5c40ec078eda039ea5fec28cea5eb671439d"
+      "sha256": "846e365e159f5e430116fa86511100007d1043e4f3f429ab96fe490f0b7b5b4a"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "33083695ac9982f09e930cb565dd7e6e1b83f9ce77eab37b4a5a3d40964da6ca"
+      "sha256": "e43f7fa56cc2b15397d5c4b9dfeada82224c2bd406ba343b5ac5c5a3dab788f5"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "4698cef6654660a5c564724cb18a40f32b64dac98d86e25daabdb813026adbdf"
+      "sha256": "8370a3110257c5a276f1b659b7a79f9a097492b9aa388c25b6a473724b0744e7"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -289,7 +289,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "7abf3b117d584253657e148f3f09c4cceeeecf1eecd5d8b25862836b3c01350e",
+      "sha256": "9ff547934fdd4456151ab9309c7fa4a1f39358e19f84ce86160b2bfa4112c6bc",
       "language": "neutral"
     },
     {
@@ -591,7 +591,7 @@
       "title_en": "Qi-Pulse deterministic self-verification results",
       "description_zh": "七组 30 项确定性检查全部 PASS：场景卡 156 演练复算、气数协议绑定、岗位闭环、分期条件门、指标跨文件一致性、双语标签对齐、CJK 字体覆盖。",
       "description_en": "Seven groups / 30 deterministic checks all PASS: scenario-card 156-drill recount, protocol binding, role loop, phase gates, metrics cross-file consistency, bilingual tag parity, CJK font coverage.",
-      "sha256": "21ec5f64a6ec854b973b206d9d85ac7d678535bfc4e38ecde3c3d748a8570867"
+      "sha256": "a28d022964e1ba16ed058e8107ffe926ab02e06273185f5a1def6f47de4c2e3d"
     },
     {
       "path": "assets/screenshots/a3-booklet-contact-sheet.png",
@@ -602,7 +602,7 @@
       "title_en": "A3 booklet contact sheet",
       "description_zh": "六页一图总览（封面+设计依据+结构+重点区+分期+退出），供评审无需翻页即可核对全部版面；确定性自 PDF 导出。 回应评审\"PDF 证据仅限第一页预览\"的取证限制。",
       "description_en": "All six pages on one sheet for review without page-through; deterministic export from the booklet PDF. Answers the reviewer-noted first-page-only evidence limitation.",
-      "sha256": "00d37cb39426d63743c33cb50551e6e901bb4e568dacbaee98b11f7bc20c271d"
+      "sha256": "d1a6bf7bd624e501264d6b11ad65d4a4d284fa9be2e239841d69bbd5ad3d7a15"
     },
     {
       "path": "assets/screenshots/a0-boards-contact-sheet.png",
@@ -613,7 +613,22 @@
       "title_en": "A0 boards contact sheet",
       "description_zh": "两板一图总览（总体结构板真实语境版+重点区与指标证据板）；确定性自 PDF 导出。 回应评审\"PDF 证据仅限第一页预览\"的取证限制。",
       "description_en": "Both boards on one sheet; deterministic export from the boards PDF. Answers the reviewer-noted first-page-only evidence limitation.",
-      "sha256": "43330244079f66b9c24c5b1ee8e2ad1564217685907f6c0f623021e0a612e5db"
+      "sha256": "d37ac0f147c3ba509974ea2ef10c5db1b36c04acebdba00d812d7bb3a6d0b8d4"
+    },
+    {
+      "path": "assets/figures/key-area-detail.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "2767139b3d8f3788f5a600980e0565476305047aa4a16c54f70ab8b157125377"
+    },
+    {
+      "path": "assets/figures/key-area-detail.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/key-area-detail.png",
+      "sha256": "2b25dd98eaf055e01bda5f6ff3fcea3fd489be1e2b5b883c4cbbfd8c1e6d500c"
     }
   ],
   "validation_claim": {
