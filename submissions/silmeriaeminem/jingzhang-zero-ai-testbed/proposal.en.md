@@ -290,6 +290,37 @@ Positioning to build distinctive clusters for embodied intelligence, AI+ healthc
 
 Per-scenario notes: S1 no pedestrian biometrics (crowd counts only); S7 health data Tier 3 (explicit consent + medical professional review + deletable); S9 environment only (Tier 1, no personal data); S10 location Tier 2 (shortest retention + can disable); S11 plate Tier 2 (scheduling-minimized, deleted after use); S3/S4 governance data Tier 3 (authorized interface + manual release + no personal data out of sandbox). All scenarios include human review/takeover, appeal, deletion, and exit channels, registered in the asset rights & privacy registry of `sources.json`.
 
+### 6.2e AI-era People's Good Life: six living scenes
+> The S1–S11 scenarios above cover industrial, public-service, and city-governance dimensions. This section adds six concrete 'AI-era people's good life' scenes, expressing the citizen view of 'retaining the original rails for shared-track autonomous vehicles, robots, and future mobility equipment, and delivering a Jingzhang-era masterwork' — technology is not a cold industrial tool but serves everyday life across consumption, culture, sport, health, elderly care, child development, and care for persons with disabilities. The six scenes are:
+| ID | Scene | Key figures & elements |
+|---|---|---|
+| AI | Campus Lifestyle | developers collaborate with humanoid robots and drones inside a glass-walled tech park; young innovators work alongside robots in shared labs. |
+| Community | Market | elderly citizens select fresh produce with robot assistance, children interact nearby, drones deliver overhead — neighborhood life coexists with AI services. |
+| Future | City Pavilion | families experience the Jingzhang century narrative inside a curved projection hall; autonomous vehicles and robots wait outside. |
+| Inclusive | Neighborhood | robots accompany elders and children; wheelchair users can reach the mural wall and corner plaza. |
+| Wellbeing | Garden | elders and children walk through a greenhouse flower field while robots offer wayfinding and dietary suggestions. |
+| Co-track | Street | autonomous vehicles, delivery robots, cleaning robots, humanoid robots, and robotaxis share the retained rails and a street intersection; elders and children cross safely — the everyday future of human-machine coexistence. |
+
+The following six figures are concept illustrations (AI-generated, explanatory layer; not field photos, measured data, or approval conclusions; text, imagery, and persons are subject to separate clearance):
+
+![AI Campus Lifestyle](assets/figures/life_ai_campus_lifestyle.jpg)
+*AI Campus Lifestyle*
+
+![Community Market](assets/figures/life_community_market.jpg)
+*Community Market*
+
+![Future City Pavilion](assets/figures/life_future_city_pavilion.jpg)
+*Future City Pavilion*
+
+![Inclusive Neighborhood](assets/figures/life_inclusive_neighborhood.jpg)
+*Inclusive Neighborhood*
+
+![Wellbeing Garden](assets/figures/life_wellbeing_garden.jpg)
+*Wellbeing Garden*
+
+![Co-track Street](assets/figures/life_cotrack_street.jpg)
+*Co-track Street*
+
 ### Anchor-enterprise map and cooperation models
 
 **Core judgment: the anchors are not "to be attracted" but "already growing on the belt".** Verified: Moonshot AI's HQ is at 27 Zhichun Road, Cambricon's at Zhi Zhen Tower, 7 Zhichun Road, Galbot is registered at 3 Haidian Street, Ninebot's domestic HQ is in Zhongguancun Dongsheng Tech Park, ByteDance is building a super-HQ at Dazhongsi, and Lightwheel, Zhipu, and Shengshu are all rooted in Haidian — "anchor recruitment" is really about plugging the leading firms already circling the 9 km linear space into one "real-scenario operating system" [source:CHAIN-ENTERPRISES]. Wang Huiwen's investment-reward retrospection drew a startup "golden circle" — "south of Tsinghua, east of Peking University, west of Xueyuan Road, north of Dazhongsi" — which is exactly the three-cores-two-wings core area, a spatial proof that the anchors are already on the belt [source:CHAIN-ENTERPRISES].

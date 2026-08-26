@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "c1eecbf51271e5452a1fc44c25a259c0af857238b94c1939c4b77b578359527f"
+      "sha256": "c1a9e95aafab440e6a1296ec81fdef65d2f4c42f3e326937f78e8bb43217e759"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e9757958f430e8c909cd8f98335b64060997f8b35d30e654c8dedd3cc027a681"
+      "sha256": "48e1c9baffcce60bb5159c148e8ecb2531a1a7a3847d8ed3011cd09e89a8b1d2"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bbc3e1bb62b8c16714aa9ba3843a49110945f49c8b8a5c878a673889ce62000f"
+      "sha256": "b7a9544b185c2036b3efc26623dfe5aa632e31269eb249bdc07036f9d56799f8"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "8719bc346f663b3dc5f148d8dec49107dcf40d6ef7adbb7089b0790de489f7ef"
+      "sha256": "3f0db450dcb05d9616a36734b0f01fc8139a33d35f8ded6fb3bde6b8c06021f0"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f851e69153cd5d344d77ecb5f0aad8671c6a782a19062c5a511c9d43c7454c26"
+      "sha256": "b2aa91290f7e1d10146abcf3af6c00b7720c6a059052eb709483533a6bd4ec73"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "4a7dec22daca1dc817c3726a7274329f8f7b40086a98d8ba3ef95d4a5935a021"
+      "sha256": "d3a6cbfb285085e2d7c71682d1c92bd1f864d0bf85f976fecd8ccd35db12299f"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "378e7d32de82df49f267d0abcbf169614e6dc2685606cd56dc4c6c4e3f8dbb92"
+      "sha256": "7ebd23f31bc8fa0fa1f81a6b6dd5493994af236398263b25150ca8ae7026ee05"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7e48e96f72c1055e93c672f4d9103dbabb9ddbefc9a9e25055ac0360d8c81244"
+      "sha256": "7856690b5cd77472d2e0cf2d8cbc624dc8884447666b4711d7f78985d1b0cfa9"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "6fa5b7e647ede0bde753f9cdd3b10b79ca2af444983773df5e6ec2006e561cd1"
+      "sha256": "753f31f5b2f9ae06d4017c763582be7926c879331ed87d7a7de385bcd9d10e97"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "8c266079a7f6ed151cccbcf63fa4f1bb0a0e0b1d9edde91635fe44ae80c864ed"
+      "sha256": "28f35054f66e550d9bdbd5e392a313b134ade766b5c8bdc21beec52de2be5cbf"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "3767817617c1fc92eb79e289313c7f2b2eb867fe97b4eb2df19409d3c58c559e"
+      "sha256": "c7026859aa77e1cc7e459accc6d78bfcd0898ff75cdc05102efd18a6461be987"
     },
     {
       "path": "assets/figures/01_cotrack_testline_people_machines.jpg",
@@ -356,6 +356,48 @@
       "required": false,
       "language": "neutral",
       "sha256": "4af26d68a04cc7908684c8cb28d237a8cf9265f009face0b9380833dddd313d6"
+    },
+    {
+      "path": "assets/figures/life_ai_campus_lifestyle.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "8e5947b2252aab983c19d9ef1f4b016f39c722927889a151726bafcafa3b408a"
+    },
+    {
+      "path": "assets/figures/life_community_market.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "68e40acdfb6994b0273b5d370cfa478d1937809ed1b7119cd09140b843165b8a"
+    },
+    {
+      "path": "assets/figures/life_future_city_pavilion.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "0aa3c693aaabee318e6f10a5697e4a3f48408a47a7e5bb379aef779205b45161"
+    },
+    {
+      "path": "assets/figures/life_inclusive_neighborhood.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "055b65fa612933f755135eae69a07669e472c2dd1ac6be309765e094c9749b44"
+    },
+    {
+      "path": "assets/figures/life_wellbeing_garden.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "ef3222c92219bfb893eed24a7353072dcfb8965e5a976c5298a745b275bcc542"
+    },
+    {
+      "path": "assets/figures/life_cotrack_street.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "6393a0bb1fa65b12145f0754be738ff1811048aa96502a35b0d16c5b58cbd0a2"
     }
   ],
   "validation_claim": {
