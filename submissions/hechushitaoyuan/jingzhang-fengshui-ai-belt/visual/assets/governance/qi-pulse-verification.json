@@ -1,7 +1,7 @@
 {
  "schema_version": "1.0",
  "verifier": "qi-pulse-verifier v1.0 (deterministic, package-internal reads only)",
- "generated_at": "2026-08-26T04:50:40Z",
+ "generated_at": "2026-08-26T05:18:14Z",
  "summary": {
   "total_checks": 30,
   "passed": 30,
@@ -167,14 +167,14 @@
    "id": "TAG-DEPTH",
    "desc": "[depth:] 标签多重集中英全等",
    "status": "PASS",
-   "detail": "27 vs 27"
+   "detail": "29 vs 29"
   },
   {
    "group": "G6",
    "id": "TAG-METRIC",
    "desc": "[metric:] 标签多重集中英全等",
    "status": "PASS",
-   "detail": "42 vs 42"
+   "detail": "43 vs 43"
   },
   {
    "group": "G6",
