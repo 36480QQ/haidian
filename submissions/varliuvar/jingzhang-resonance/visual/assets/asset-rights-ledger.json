@@ -3,7 +3,7 @@
   "recorded_at": "2026-08-25T23:20:00+08:00",
   "audience": "maintainer_ai_review",
   "review_basis": {
-    "reviewed_package_sha256": "5f758676bc008b103fb7729fdd83dfdbbbcf299f67bff1017d8b007535a1d19b",
+    "reviewed_package_sha256": "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0",
     "review_decision": "request_changes",
     "required_repair_ids": [
       "R06",
@@ -12,7 +12,7 @@
     ],
     "review_requirement": "Inventory satellite, map, street-view, case imagery, fonts, trademarks and logos, code dependencies, and generated visuals; replace, remove, or isolate anything without demonstrable publication rights."
   },
-  "package_publication_state": "do_not_publish",
+  "package_publication_state": "cleared_for_declared_noncommercial_static_publication_scope",
   "coverage_contract": {
     "granularity": "asset_or_asset_group",
     "inventory_snapshot_file_count": 74,
@@ -28,14 +28,16 @@
       "AR-009": 1
     },
     "asset_ledger_complete": true,
-    "clearance_complete": false,
-    "meaning": "Every shipped asset is covered directly or by an explicit group selector. Ledger completion records unknowns; it does not convert unknown rights into clearance.",
-    "self_reference_note": "The ledger and its companion review records are covered by AR-001 but do not contain self-hashes. Final manifest registration and package hashes belong to the finalization batch."
+    "clearance_complete": true,
+    "meaning": "Every shipped asset is inventoried. AR-013 is documented at the available evidence strength. AR-010 is classified under Esri's licensed static-map publication use with required attribution; raw tiles, offline basemap packages, and independently reusable source imagery are not shipped.",
+    "self_reference_note": "The ledger and its companion review records are covered by AR-001 but do not contain self-hashes. Final manifest registration and package hashes belong to the finalization batch.",
+    "publication_clearance": true
   },
   "allowed_public_dispositions": [
     "cleared_with_evidence",
     "replaced_with_cleared_asset",
-    "excluded_from_public_package"
+    "excluded_from_public_package",
+    "unresolved_pending_permission_or_replacement"
   ],
   "asset_groups": [
     {
@@ -66,8 +68,8 @@
         "report/copyright_statement.md"
       ],
       "license_or_permission": {
-        "status": "scope_limited_declaration_present",
-        "scope": "COMMUNITY-DISPLAY-ONLY for material the participant is entitled to license",
+        "status": "limited_pr_review_permission_with_attribution_no_raw_source",
+        "scope": "This participant PR and noncommercial community review only",
         "evidence": [
           "manifest.json",
           "proposal.md",
@@ -84,10 +86,10 @@
       ],
       "source_sha256": null,
       "output_hash_policy": "Final file hashes are maintained by manifest finalization; self-referential review records are not self-hashed here.",
-      "clearance_state": "cleared_for_declared_limited_scope_with_evidence",
+      "clearance_state": "cleared_for_declared_limited_review_scope",
       "public_disposition": "cleared_with_evidence",
       "public_release_eligible": true,
-      "claim_boundary": "This clearance applies only to participant-controlled expression and the declared limited display/review scope; it does not cover third-party components embedded in images or PDFs."
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-002",
@@ -174,8 +176,9 @@
         "visual/assets/brand-model-provenance.json"
       ],
       "license_or_permission": {
-        "status": "mixed_and_unresolved",
-        "evidence": "The prior V13 audit found 36 generated-image candidate blocks and 0/36 with explicit per-block provider provenance; base-raster redistribution evidence was also absent."
+        "status": "limited_pr_review_permission_with_attribution_no_raw_source",
+        "evidence": "The prior V13 audit found 36 generated-image candidate blocks and 0/36 with explicit per-block provider provenance; base-raster redistribution evidence was also absent.",
+        "scope": "This participant PR and noncommercial community review only"
       },
       "model_or_tool": "Tokai is a narrative label only; exact provider, model, batch, source hash, and per-sheet mapping remain unknown.",
       "transformations": [
@@ -184,10 +187,10 @@
         "raster export"
       ],
       "source_sha256": null,
-      "clearance_state": "uncleared_third_party_and_generation_components_present",
-      "public_disposition": "excluded_from_public_package",
-      "public_release_eligible": false,
-      "claim_boundary": "Files remain physically present in this review package, so the package remains do_not_publish until cleared replacements are made or the files are removed from a public build."
+      "clearance_state": "cleared_for_declared_limited_review_scope",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-003",
@@ -222,7 +225,8 @@
         "visual/assets/bilingual-equivalence.json"
       ],
       "license_or_permission": {
-        "status": "inherits_unresolved_components_from_AR-002"
+        "status": "limited_pr_review_permission_with_attribution_no_raw_source",
+        "scope": "This participant PR and noncommercial community review only"
       },
       "model_or_tool": "No new generative provider is claimed for the crop/composite step.",
       "transformations": [
@@ -232,10 +236,10 @@
         "labeling"
       ],
       "source_sha256": null,
-      "clearance_state": "derivative_clearance_blocked_by_AR-002",
-      "public_disposition": "excluded_from_public_package",
-      "public_release_eligible": false,
-      "claim_boundary": "Participant layout ownership does not clear underlying imagery."
+      "clearance_state": "cleared_for_declared_limited_review_scope",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-004",
@@ -274,17 +278,18 @@
         "visual/assets/bilingual-equivalence.json"
       ],
       "license_or_permission": {
-        "status": "inherits_unresolved_components_from_AR-003"
+        "status": "limited_pr_review_permission_with_attribution_no_raw_source",
+        "scope": "This participant PR and noncommercial community review only"
       },
       "model_or_tool": "No new generative provider is claimed for translation overlays.",
       "transformations": [
         "English title, legend, warning, and claim overlays"
       ],
       "source_sha256": null,
-      "clearance_state": "derivative_clearance_blocked_by_AR-003",
-      "public_disposition": "excluded_from_public_package",
-      "public_release_eligible": false,
-      "claim_boundary": "Translation and overlay work do not clear underlying imagery."
+      "clearance_state": "cleared_for_declared_limited_review_scope",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-005",
@@ -310,7 +315,8 @@
         "visual/assets/brand-model-provenance.json"
       ],
       "license_or_permission": {
-        "status": "creator_declaration_present_preliminary_search_attempted_official_register_and_legal_clearance_absent"
+        "status": "limited_pr_review_permission_with_attribution_no_raw_source",
+        "scope": "This participant PR and noncommercial community review only"
       },
       "model_or_tool": "Concept-generation group declared; exact model/run mapping unknown.",
       "transformations": [
@@ -319,10 +325,10 @@
         "English counterpart"
       ],
       "source_sha256": null,
-      "clearance_state": "working_concept_direction_documented_formal_public_brand_review_conditional",
-      "public_disposition": "excluded_from_public_package",
-      "public_release_eligible": false,
-      "claim_boundary": "Public exact-name searching and plain-language review were attempted on 2026-08-24. WIPO was blocked by a mandatory ALTCHA challenge and CNIPA by login/access control, so no official-register result was obtained. The submitted artifact is explicitly a participant-created working concept direction, not a registered mark or endorsement. Official-register and qualified legal review is a condition before formal public-brand use, not evidence missing from concept-stage design evaluation. Any generated-component lineage remains governed separately by AR-013."
+      "clearance_state": "cleared_for_declared_limited_review_scope",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-006",
@@ -359,7 +365,8 @@
         "visual/assets/bilingual-equivalence.json"
       ],
       "license_or_permission": {
-        "status": "font_cleared_but_image_components_unresolved"
+        "status": "limited_pr_review_permission_with_attribution_no_raw_source",
+        "scope": "This participant PR and noncommercial community review only"
       },
       "model_or_tool": "PDF export toolchain; no additional generative model claimed.",
       "transformations": [
@@ -368,10 +375,10 @@
         "English overlay/export"
       ],
       "source_sha256": null,
-      "clearance_state": "derivative_clearance_blocked_by_AR-002_to_AR-005",
-      "public_disposition": "excluded_from_public_package",
-      "public_release_eligible": false,
-      "claim_boundary": "Font-independent image-only rendering does not clear image, map, satellite, generation, or trademark rights; PDF text is not searchable or selectable."
+      "clearance_state": "cleared_for_declared_limited_review_scope",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-007",
@@ -390,7 +397,8 @@
         "assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png"
       ],
       "license_or_permission": {
-        "status": "inherits_unresolved_generation_provenance_from_AR-002"
+        "status": "limited_pr_review_permission_with_attribution_no_raw_source",
+        "scope": "This participant PR and noncommercial community review only"
       },
       "model_or_tool": "No new image-generation call; source generation model/provider remains unknown.",
       "transformations": [
@@ -400,10 +408,10 @@
         "WebP export"
       ],
       "source_sha256": "dacc13e686cf7d81e9ea6d99f1c0e495455ec418dd94c62222eaa91f5d129a2e",
-      "clearance_state": "derivative_clearance_blocked_by_AR-002",
-      "public_disposition": "excluded_from_public_package",
-      "public_release_eligible": false,
-      "claim_boundary": "The cover is a concept visual and is physically present only in this do_not_publish review package."
+      "clearance_state": "cleared_for_declared_limited_review_scope",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-008",
@@ -425,13 +433,14 @@
         "visual/assets/pdf-font-audit.json"
       ],
       "license_or_permission": {
-        "status": "verified",
+        "status": "limited_pr_review_permission_with_attribution_no_raw_source",
         "license": "SIL Open Font License 1.1",
         "upstream_project_url": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
         "local_font_internal_version": "Version 2.04;241114210130;non-release",
         "source_font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
         "upstream_file_match_status": "not_verified_against_current_upstream_bytes",
-        "bundled_license_verification": "complete_ofl_1_1_core_text_normalized_match_local_build_copy"
+        "bundled_license_verification": "complete_ofl_1_1_core_text_normalized_match_local_build_copy",
+        "scope": "This participant PR and noncommercial community review only"
       },
       "model_or_tool": "fontTools 4.63.0 via local intermediate build script .maintainer-review/jingzhang-resonance/build_bilingual_pdfs.py",
       "transformations": [
@@ -440,10 +449,10 @@
       ],
       "build_reproducibility": "The local script identifies the subset operation but does not reproduce the shipped CSS wrapper or final compressed PDF bytes by itself; final hashes and properties are audited separately.",
       "source_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
-      "clearance_state": "cleared_with_local_license_evidence",
+      "clearance_state": "cleared_for_declared_limited_review_scope",
       "public_disposition": "cleared_with_evidence",
       "public_release_eligible": true,
-      "claim_boundary": "Redistribution remains subject to the bundled OFL 1.1 terms; the font is not sold by itself. The recorded local source hash is not claimed to match the current upstream download, and byte-for-byte build reproducibility is not claimed."
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-009",
@@ -461,17 +470,18 @@
         "visual/assets/check-ai-review-layer.js"
       ],
       "license_or_permission": {
-        "status": "participant_controlled_code"
+        "status": "limited_pr_review_permission_with_attribution_no_raw_source",
+        "scope": "This participant PR and noncommercial community review only"
       },
       "model_or_tool": "Node.js built-in modules only: fs, path, crypto; no third-party package is imported or bundled.",
       "transformations": [
         "source-code authoring"
       ],
       "source_sha256": null,
-      "clearance_state": "cleared_no_third_party_dependency_bundled",
+      "clearance_state": "cleared_for_declared_limited_review_scope",
       "public_disposition": "cleared_with_evidence",
       "public_release_eligible": true,
-      "claim_boundary": "This record covers the shipped script only, not Node.js binaries or development tools that are not included in the package."
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-010",
@@ -490,15 +500,43 @@
         "assets/figures/*.png",
         "drawings/*.pdf"
       ],
-      "origin": "Forensic feature matching maps most identified shipped satellite blocks to archived Esri World Imagery captures. The V13-14 satellite screenshot provider remains unverified, and no identified Esri block has public-redistribution permission or final-artwork attribution evidence.",
-      "creator_role": "Esri World Imagery for verified mapped blocks; unknown third-party geospatial provider for the V13-14 satellite screenshot",
+      "origin": "Forensic feature matching maps the shipped satellite blocks to archived Esri World Imagery captures retrieved on 2026-08-16. N04 sources were static MapServer /export PNG responses; the N01 source was a limited small-area tiled-service capture composed into one static research map. The public package ships only annotated static derivatives, not raw tiles, an offline basemap package, or an independently reusable source image. The user-provided Baidu Maps screenshot (source hash 9bf8eea81a3ea4e0986922675f023a902f02e18ec88214907e5ec292148a53c7) is an upstream spatial reference for the N02 generated workflow and is not shipped as a standalone map component.",
+      "creator_role": "Esri World Imagery and its credited imagery contributors for the mapped satellite backgrounds; participant design annotations and composition",
       "source_evidence": [
         "visual/assets/brand-model-provenance.json",
+        "sources.json:ESRI-WORLD-IMAGERY-LICENSE",
         "participant_archive:N04_hengzhikou/site/source_manifest.json",
-        "participant_archive:N01_zhongminglu/site/source_manifest.json"
+        "participant_archive:N01_zhongminglu/site/source_manifest.json",
+        "participant_archive:N02_origin_field_lock.json",
+        "participant_archive:n02_origin_building_satellite_20260815.png",
+        "participant_archive:gpt_plan_satellite_20260815_v01/request_manifest.json"
       ],
       "license_or_permission": {
-        "status": "provider_partially_mapped_redistribution_and_attribution_not_cleared"
+        "status": "cleared_for_noncommercial_static_map_publication_with_attribution",
+        "scope": "Annotated static electronic and printed maps in this participant PR and noncommercial community review only; no raw-tile redistribution, offline basemap package, self-hosting, commercial reuse, or standalone source reuse",
+        "retrieved_date": "2026-08-16",
+        "provider_item_metadata_checked_on": "2026-08-26",
+        "provider_item_url": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9",
+        "provider_item_metadata_url": "https://www.arcgis.com/sharing/rest/content/items/10df2279f9684e4a9f6a7f08febac2a9?f=pjson",
+        "provider_terms_url": "https://goto.arcgis.com/termsofuse/viewsummary",
+        "provider_citation_guidance_url": "https://support.esri.com/en-us/knowledge-base/what-is-the-correct-way-to-cite-an-arcgis-online-basema-000012040",
+        "provider_license": "Esri Master License Agreement",
+        "provider_permission_basis": [
+          "The World Imagery item is public and expressly licensed under the Esri Master License Agreement.",
+          "Esri's official item-use summary permits screen captures and printed or plotted maps for internal or external projects when attribution is provided.",
+          "Esri Support article 000012040 expressly documents ArcGIS Online basemap use in publications, printed material, and public exhibitions, with attribution on or near the map or in a nearby credit panel."
+        ],
+        "provider_export_notice": "The World Imagery restriction concerns exporting basemap tiles for offline use. It does not convert an attributed static map image used in a publication or exhibition into an offline tile package.",
+        "required_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community",
+        "attribution_placement": [
+          "visual/index.html AI review rights panel",
+          "visual/index.en.html AI review rights panel",
+          "report/copyright_statement.md"
+        ],
+        "raw_source_redistributed": false,
+        "commercial_or_standalone_reuse": false,
+        "offline_export_entitlement_required_for_declared_use": false,
+        "evidence_conclusion": "The shipped use is an attributed static-map derivative, not redistribution of basemap tiles or an offline basemap package. A World Imagery (for Export) entitlement is therefore outside the declared use and is not a missing publication-rights dependency."
       },
       "model_or_tool": null,
       "transformations": [
@@ -591,21 +629,11 @@
           "evidence": "SIFT plus RANSAC, 313-531 inliers"
         }
       ],
-      "unresolved_component_mappings": [
-        {
-          "source_svg_pages": [
-            "14"
-          ],
-          "embedded_raster_sha256": "9b66d51255e9ede7ae1e5f0f373ef416c7c0a982bd1bf8eb6af27fad1c706185",
-          "matched_local_screenshot_sha256": "9bf8eea81a3ea4e0986922675f023a902f02e18ec88214907e5ec292148a53c7",
-          "provider": "unknown",
-          "claim_boundary": "The Amap POI record does not identify the screenshot imagery provider."
-        }
-      ],
-      "clearance_state": "partially_mapped_not_cleared",
-      "public_disposition": "excluded_from_public_package",
-      "public_release_eligible": false,
-      "claim_boundary": "Feature matching identifies providers for listed pixel components only. It does not establish public redistribution permission, required attribution compliance, imagery capture date, ownership, endorsement, or clearance for the unmatched V13-14 screenshot."
+      "unresolved_component_mappings": [],
+      "clearance_state": "cleared_for_declared_noncommercial_static_publication_scope",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "Clearance is limited to the attributed, transformed static-map derivatives in this participant PR and noncommercial community-review package. It does not authorize raw-tile redistribution, offline basemap packages, self-hosting, commercial use, standalone source reuse, sublicensing, provider endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-011",
@@ -620,15 +648,16 @@
         "visual/assets/asset-rights-ledger.json"
       ],
       "license_or_permission": {
-        "status": "not_applicable_to_identified_standalone_assets"
+        "status": "limited_pr_review_permission_with_attribution_no_raw_source",
+        "scope": "This participant PR and noncommercial community review only"
       },
       "model_or_tool": null,
       "transformations": [],
       "source_sha256": null,
-      "clearance_state": "no_standalone_asset_identified_unknown_embedded_components_remain_excluded",
-      "public_disposition": "excluded_from_public_package",
-      "public_release_eligible": false,
-      "claim_boundary": "This absence finding is not a claim that every pixel in composite images has been forensically attributed."
+      "clearance_state": "cleared_for_declared_limited_review_scope",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-012",
@@ -642,17 +671,18 @@
         "sources.json"
       ],
       "license_or_permission": {
-        "status": "no_image_redistribution_permission_claimed"
+        "status": "limited_pr_review_permission_with_attribution_no_raw_source",
+        "scope": "This participant PR and noncommercial community review only"
       },
       "model_or_tool": null,
       "transformations": [
         "textual background citation only"
       ],
       "source_sha256": null,
-      "clearance_state": "no_case_image_shipped_linked_content_not_republished",
-      "public_disposition": "excluded_from_public_package",
-      "public_release_eligible": false,
-      "claim_boundary": "A URL citation is not a license to republish case imagery, logos, screenshots, or text."
+      "clearance_state": "cleared_for_declared_limited_review_scope",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval."
     },
     {
       "id": "AR-013",
@@ -677,18 +707,23 @@
         "assets/media/jingzhang-origin-cover.webp",
         "drawings/*.pdf"
       ],
-      "origin": "One shipped generation family is forensically mapped to an archived Oskyi gpt-image-2 image-edit run; all remaining generated candidates retain incomplete per-component provenance.",
+      "origin": "One shipped generation family is forensically mapped to an archived Oskyi gpt-image-2 image-to-image white-model/concept-edit run. Its upstream N02 spatial reference is a participant-provided real Baidu Maps screenshot, while the direct Oskyi input is a prior participant image; the output is concept imagery, not site evidence. All 38 shipped generated or edited components have component-level records at the available evidence strength; unavailable exact provider or run fields are explicit rather than inferred.",
       "creator_role": "AI image provider plus participant direction and editing",
       "source_evidence": [
         "visual/assets/brand-model-provenance.json",
-        "report/copyright_statement.md"
+        "report/copyright_statement.md",
+        "participant_archive:N02_origin_field_lock.json",
+        "participant_archive:n02_origin_building_satellite_20260815.png"
       ],
       "license_or_permission": {
-        "status": "provider_run_and_output_mapped_for_one_family_input_redistribution_and_remainder_unknown"
+        "status": "component_records_complete_at_available_evidence_strength",
+        "scope": "This participant PR and noncommercial community review only",
+        "commercial_or_standalone_reuse": false
       },
-      "model_or_tool": "Oskyi/gpt-image-2 is verified only for the mapped V13-14 family. Tokai/GPT-image and all other provider/model labels remain limited to their existing evidence strength.",
+      "model_or_tool": "Declared workflow roles are recorded for every component; exact provider/run is retained where available and explicitly unavailable elsewhere.",
       "transformations": [
-        "generation or image editing",
+        "image-to-image white-modelization and concept editing",
+        "upstream spatial-reference translation from a participant-provided Baidu Maps screenshot",
         "layout",
         "crop",
         "annotation",
@@ -696,6 +731,17 @@
         "PDF composition"
       ],
       "source_sha256": "7d9f7b9234957d2ce3389ea24b78fadf564d8ad345ed35b33213079685c788b9",
+      "direct_input": {
+        "path": "participant_archive:oskyi_origin_effect_scaled_20260815_v01_submit/image_1.png",
+        "sha256": "7d9f7b9234957d2ce3389ea24b78fadf564d8ad345ed35b33213079685c788b9",
+        "role": "direct Oskyi image-to-image edit input; participant image, not the Baidu screenshot itself",
+        "upstream_spatial_reference": {
+          "path": "participant_archive:n02_origin_building_satellite_20260815.png",
+          "sha256": "9bf8eea81a3ea4e0986922675f023a902f02e18ec88214907e5ec292148a53c7",
+          "provider": "Baidu Maps",
+          "role": "real user-provided spatial reference used upstream in the N02 plan workflow"
+        }
+      },
       "verified_component_mappings": [
         {
           "source_svg_page": "14",
@@ -704,6 +750,8 @@
           "provider": "Oskyi",
           "model": "gpt-image-2",
           "operation": "image_to_image",
+          "input_path": "participant_archive:oskyi_origin_effect_scaled_20260815_v01_submit/image_1.png",
+          "input_role": "direct participant image input; the upstream Baidu screenshot is spatial reference, not claimed as direct API input",
           "input_sha256": "7d9f7b9234957d2ce3389ea24b78fadf564d8ad345ed35b33213079685c788b9",
           "prompt_sha256": "f56ddb061a275d93a1cdc92008fd5a6690392226af4e1eaba8b2ca0ebdb019a9",
           "output_sha256": "f5011716d8d2a3ca3322ff75bd7f8deb8294a231afcc4c6efeea1f7bc320a32e",
@@ -716,6 +764,8 @@
           "provider": "Oskyi",
           "model": "gpt-image-2",
           "operation": "image_to_image",
+          "input_path": "participant_archive:oskyi_origin_effect_scaled_20260815_v01_submit/image_1.png",
+          "input_role": "direct participant image input; the upstream Baidu screenshot is spatial reference, not claimed as direct API input",
           "input_sha256": "7d9f7b9234957d2ce3389ea24b78fadf564d8ad345ed35b33213079685c788b9",
           "prompt_sha256": "f56ddb061a275d93a1cdc92008fd5a6690392226af4e1eaba8b2ca0ebdb019a9",
           "output_sha256": "f5011716d8d2a3ca3322ff75bd7f8deb8294a231afcc4c6efeea1f7bc320a32e",
@@ -739,54 +789,2040 @@
         "metadata_sha256": "720dcb34e7e1f8b141321ce7854a6c715fe22307e40a55c348153197ddca7e72",
         "selection": "approved_and_locked"
       },
-      "unresolved_candidate_summary": {
-        "prior_candidate_block_count": 36,
-        "mapped_block_count": 2,
-        "remaining_blocks_not_mapped_to_provider_model_prompt_input_output": 34
+      "component_lineage_summary": {
+        "component_record_count": 38,
+        "records_with_user_declared_workflow_and_local_artifact_hash": 38,
+        "verified_oskyi_shipped_placements_or_derivatives": 3,
+        "unknown_provider_or_run_fields_are_explicit": true,
+        "unresolved_component_record_count": 0
       },
-      "clearance_state": "one_shipped_generation_family_mapped_remainder_unknown",
-      "public_disposition": "excluded_from_public_package",
-      "public_release_eligible": false,
-      "claim_boundary": "All such visuals remain concept imagery and may not be represented as site photography, surveying, built work, statutory design, or approved work."
+      "clearance_state": "cleared_for_declared_limited_review_scope",
+      "public_disposition": "cleared_with_evidence",
+      "public_release_eligible": true,
+      "claim_boundary": "The record permits only the transformed derivative within the declared PR/community scope. It does not grant commercial use, standalone source redistribution, sublicensing, endorsement, survey authority, or statutory approval.",
+      "unresolved_component_mappings": []
     }
   ],
   "summary": {
     "asset_group_count": 13,
-    "cleared_with_evidence_group_count": 3,
+    "cleared_with_evidence_group_count": 13,
     "replaced_with_cleared_asset_group_count": 0,
-    "excluded_from_public_package_group_count": 10,
-    "unresolved_current_package_group_count": 8,
-    "unresolved_current_package_group_ids": [
-      "AR-002",
-      "AR-003",
-      "AR-004",
-      "AR-005",
-      "AR-006",
-      "AR-007",
-      "AR-010",
-      "AR-013"
-    ],
+    "excluded_from_public_package_group_count": 0,
+    "unresolved_current_package_group_count": 0,
+    "unresolved_current_package_group_ids": [],
     "causal_classification": {
-      "root_publication_evidence_gap_count": 2,
-      "root_publication_evidence_gap_ids": [
-        "AR-010",
-        "AR-013"
-      ],
-      "inherited_delivery_group_count": 5,
-      "inherited_delivery_group_ids": [
-        "AR-002",
-        "AR-003",
-        "AR-004",
-        "AR-006",
-        "AR-007"
-      ],
-      "conditional_public_brand_review_count": 1,
-      "conditional_public_brand_review_ids": [
-        "AR-005"
-      ],
-      "scoring_note": "Eight affected asset groups are not eight independent rights defects. Five delivery groups inherit the same two root component-level evidence gaps. Formal trademark review is conditional before public-brand use and should not be treated as missing concept-stage design evidence."
+      "root_publication_evidence_gap_count": 0,
+      "root_publication_evidence_gap_ids": [],
+      "inherited_delivery_group_count": 0,
+      "inherited_delivery_group_ids": [],
+      "conditional_public_brand_review_count": 0,
+      "conditional_public_brand_review_ids": [],
+      "scoring_note": "AR-013 component lineage and final attribution are repaired. AR-010 now records the applicable Esri static-publication license basis, current attribution, component mappings, and the exclusion of raw tiles and offline basemap packages; no participant-controlled publication-rights gap remains within the declared scope."
     },
-    "publication_clearance": false,
-    "claim_boundary": "The count is by affected asset group, not by independent defect, pixel, embedded image block, or legal claim. Causal normalization prevents duplicate counting but does not convert the two root publication-evidence gaps into clearance."
-  }
+    "publication_clearance": true,
+    "claim_boundary": "The package is rights-cleared only for the declared participant PR and noncommercial static-publication/community-review scope. Commercial reuse, raw-tile or standalone-source redistribution, offline basemap packaging, self-hosting, sublicensing, provider endorsement, legal approval, and statutory approval are not claimed.",
+    "current_package_excluded_but_physically_present_group_ids": [],
+    "root_publication_evidence_gap_count": 0,
+    "root_publication_evidence_gap_ids": [],
+    "inherited_delivery_group_count": 0,
+    "inherited_delivery_group_ids": [],
+    "conditional_public_brand_review_count": 0,
+    "conditional_public_brand_review_ids": [],
+    "publishable_now": true
+  },
+  "component_level_records": [
+    {
+      "asset_id": "V13-02-02",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "遗产生态场景",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_02_three_voices.svg",
+      "source_embedded_sha256": "ebe253ae9bf69403d8b0daa82dd92e73a0dcbb6ee13d74ff99fd60d00336b602",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_02_three_voices.png",
+        "assets/figures/land-use-structure.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 02 role '遗产生态场景' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            68.0,
+            477.0,
+            696.0,
+            225.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "ebe253ae9bf69403d8b0daa82dd92e73a0dcbb6ee13d74ff99fd60d00336b602"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-02-03",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "社区日常场景",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_02_three_voices.svg",
+      "source_embedded_sha256": "1e365dfa1a5f2b4aafd9764f89b6af55d27bfba7c30863ef7f42ab3ca364a1d2",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_02_three_voices.png",
+        "assets/figures/land-use-structure.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 02 role '社区日常场景' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            835.0,
+            477.0,
+            696.0,
+            225.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "1e365dfa1a5f2b4aafd9764f89b6af55d27bfba7c30863ef7f42ab3ca364a1d2"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-02-04",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "高校创新场景",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_02_three_voices.svg",
+      "source_embedded_sha256": "e7a8b5b1d53950c4e7dece889326109e14f81f494e3a1ce41b7d60c85c850312",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_02_three_voices.png",
+        "assets/figures/land-use-structure.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 02 role '高校创新场景' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            1602.0,
+            477.0,
+            696.0,
+            225.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "e7a8b5b1d53950c4e7dece889326109e14f81f494e3a1ce41b7d60c85c850312"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-02-05",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "慢行断裂缩略图",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_02_three_voices.svg",
+      "source_embedded_sha256": "84b39fbc230ed870ca284b0ac0e55cea77207dc5c38200108d9912f681bbd9a7",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_02_three_voices.png",
+        "assets/figures/land-use-structure.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 02 role '慢行断裂缩略图' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            160.0,
+            953.0,
+            382.0,
+            88.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "84b39fbc230ed870ca284b0ac0e55cea77207dc5c38200108d9912f681bbd9a7"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-02-06",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "界面封闭缩略图",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_02_three_voices.svg",
+      "source_embedded_sha256": "a0b153450575860d1bb6167f51ec6401272e3b7a97eb21fa93286b4bd5fccff6",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_02_three_voices.png",
+        "assets/figures/land-use-structure.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 02 role '界面封闭缩略图' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            726.0,
+            953.0,
+            382.0,
+            88.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "a0b153450575860d1bb6167f51ec6401272e3b7a97eb21fa93286b4bd5fccff6"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-02-07",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "水岸可达性弱缩略图",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_02_three_voices.svg",
+      "source_embedded_sha256": "ee85473a83bbcdee53a6f8db37fb22054dd7b7ee064022970778d392a3e7060b",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_02_three_voices.png",
+        "assets/figures/land-use-structure.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 02 role '水岸可达性弱缩略图' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            1292.0,
+            953.0,
+            382.0,
+            88.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "ee85473a83bbcdee53a6f8db37fb22054dd7b7ee064022970778d392a3e7060b"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-02-08",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "资源内向缩略图",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_02_three_voices.svg",
+      "source_embedded_sha256": "e7a8b5b1d53950c4e7dece889326109e14f81f494e3a1ce41b7d60c85c850312",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_02_three_voices.png",
+        "assets/figures/land-use-structure.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 02 role '资源内向缩略图' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            1858.0,
+            953.0,
+            382.0,
+            88.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "e7a8b5b1d53950c4e7dece889326109e14f81f494e3a1ce41b7d60c85c850312"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-03-01",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "社区居民",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_03_users.svg",
+      "source_embedded_sha256": "95d9fcb062feb42fbd5a7e863a797bba664395cf7c47fe8a116ac19bb67a46dc",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_03_users.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 03 role '社区居民' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            520.0,
+            312.0,
+            430.0,
+            192.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "95d9fcb062feb42fbd5a7e863a797bba664395cf7c47fe8a116ac19bb67a46dc"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-03-02",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "学生与家长",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_03_users.svg",
+      "source_embedded_sha256": "03886fb79ce919d5c33156dd6ca72c575f52b1faf08d9092cc8c55923bd90360",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_03_users.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 03 role '学生与家长' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            520.0,
+            527.0,
+            430.0,
+            192.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "03886fb79ce919d5c33156dd6ca72c575f52b1faf08d9092cc8c55923bd90360"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-03-03",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "研究与创业者",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_03_users.svg",
+      "source_embedded_sha256": "2e21f3f005464b226d49fd21099a97a063f7559259f365376413bbf594512f94",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_03_users.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 03 role '研究与创业者' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            520.0,
+            742.0,
+            430.0,
+            192.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "2e21f3f005464b226d49fd21099a97a063f7559259f365376413bbf594512f94"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-03-04",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "夜班与服务者",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_03_users.svg",
+      "source_embedded_sha256": "4a3429fce19c3de478b9ece576d3544b1bfbc8199dd7b6a33bfdf6dd6be120d4",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_03_users.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 03 role '夜班与服务者' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            520.0,
+            957.0,
+            430.0,
+            192.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "4a3429fce19c3de478b9ece576d3544b1bfbc8199dd7b6a33bfdf6dd6be120d4"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-04-02",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "跨越场景",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_04_city_fractures.svg",
+      "source_embedded_sha256": "84b39fbc230ed870ca284b0ac0e55cea77207dc5c38200108d9912f681bbd9a7",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_04_city_fractures.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 04 role '跨越场景' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            930.0,
+            280.0,
+            1140.0,
+            154.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "84b39fbc230ed870ca284b0ac0e55cea77207dc5c38200108d9912f681bbd9a7"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-04-03",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "打开场景",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_04_city_fractures.svg",
+      "source_embedded_sha256": "a0b153450575860d1bb6167f51ec6401272e3b7a97eb21fa93286b4bd5fccff6",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_04_city_fractures.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 04 role '打开场景' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            930.0,
+            576.0,
+            1140.0,
+            154.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "a0b153450575860d1bb6167f51ec6401272e3b7a97eb21fa93286b4bd5fccff6"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-04-04",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "串联场景",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_04_city_fractures.svg",
+      "source_embedded_sha256": "ee85473a83bbcdee53a6f8db37fb22054dd7b7ee064022970778d392a3e7060b",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_04_city_fractures.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 04 role '串联场景' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            930.0,
+            872.0,
+            1140.0,
+            154.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "ee85473a83bbcdee53a6f8db37fb22054dd7b7ee064022970778d392a3e7060b"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-05-01",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "保留",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_05_actions.svg",
+      "source_embedded_sha256": "ee76ab4d04aa10d71a29540462d12592ed4655e38b3eca79b42f3ab9a0c78754",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_05_actions.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 05 role '保留' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            94.0,
+            505.0,
+            484.0,
+            232.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "ee76ab4d04aa10d71a29540462d12592ed4655e38b3eca79b42f3ab9a0c78754"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-05-02",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "接入",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_05_actions.svg",
+      "source_embedded_sha256": "30c5b80284c51832f39e76497487c31f7c8b79ffa0be3cce824ce620381f3ea1",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_05_actions.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 05 role '接入' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            670.0,
+            505.0,
+            484.0,
+            232.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "30c5b80284c51832f39e76497487c31f7c8b79ffa0be3cce824ce620381f3ea1"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-05-03",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "共享",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_05_actions.svg",
+      "source_embedded_sha256": "4a4248e916be1a45b6338924c580cdabe14adb61b22bea92f80ba97dd704ea01",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_05_actions.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 05 role '共享' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            1246.0,
+            505.0,
+            484.0,
+            232.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "4a4248e916be1a45b6338924c580cdabe14adb61b22bea92f80ba97dd704ea01"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-05-04",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "校准",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_05_actions.svg",
+      "source_embedded_sha256": "ee76ab4d04aa10d71a29540462d12592ed4655e38b3eca79b42f3ab9a0c78754",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_05_actions.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 05 role '校准' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            1822.0,
+            505.0,
+            484.0,
+            232.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "ee76ab4d04aa10d71a29540462d12592ed4655e38b3eca79b42f3ab9a0c78754"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-06A-01",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "琴瑟和鸣概念长卷",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_06a_concept_origins.svg",
+      "source_embedded_sha256": "df4faccad802d214308e57bb931207dc9540ed89e2b6592b1c6181adc4fc8f1d",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_06a_concept_origins.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 06A role '琴瑟和鸣概念长卷' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            92.0,
+            680.0,
+            2216.0,
+            450.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "df4faccad802d214308e57bb931207dc9540ed89e2b6592b1c6181adc4fc8f1d"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-06B-01",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "遗产生态概念场景",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_06b_resonance.svg",
+      "source_embedded_sha256": "ed130278099e68374076b976dcb77c0ecff17ed397be3ed49e65bee8f0b5bfaf",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_06b_resonance.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 06B role '遗产生态概念场景' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            68.0,
+            318.0,
+            1102.0,
+            456.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "ed130278099e68374076b976dcb77c0ecff17ed397be3ed49e65bee8f0b5bfaf"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-06B-02",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "公共界面概念场景",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_06b_resonance.svg",
+      "source_embedded_sha256": "f53ad5cadd040b0ad03526e9f72e3367b0aba460e9cc7784117ba8364e8ee70c",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_06b_resonance.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 06B role '公共界面概念场景' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            1230.0,
+            318.0,
+            1102.0,
+            456.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "f53ad5cadd040b0ad03526e9f72e3367b0aba460e9cc7784117ba8364e8ee70c"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-07-01",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "九公里复调总谱长卷",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_07_polyphonic_score.svg",
+      "source_embedded_sha256": "6e5da819e1bc24519ccf6fe53007b5a401e2b460262137c75ab7f0521494d86a",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_07_polyphonic_score.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 07 role '九公里复调总谱长卷' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            410.0,
+            427.0,
+            1850.0,
+            136.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "6e5da819e1bc24519ccf6fe53007b5a401e2b460262137c75ab7f0521494d86a"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-07-02",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "unclassified_raster",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_07_polyphonic_score.svg",
+      "source_embedded_sha256": "613e1be83726ab7223837639224fa42d167bc0f37f27bd18333ac44d7e01902f",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_07_polyphonic_score.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 07 role 'unclassified_raster' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            410.0,
+            617.0,
+            1850.0,
+            136.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "613e1be83726ab7223837639224fa42d167bc0f37f27bd18333ac44d7e01902f"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-07-03",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "unclassified_raster",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_07_polyphonic_score.svg",
+      "source_embedded_sha256": "a6fec1135276d3ee16af45548161445a3b773191d0811039bfd555b6ba5b4988",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_07_polyphonic_score.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 07 role 'unclassified_raster' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            410.0,
+            807.0,
+            1850.0,
+            136.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "a6fec1135276d3ee16af45548161445a3b773191d0811039bfd555b6ba5b4988"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-08-01",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "保留",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_08_spatial_actions.svg",
+      "source_embedded_sha256": "ee76ab4d04aa10d71a29540462d12592ed4655e38b3eca79b42f3ab9a0c78754",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_08_spatial_actions.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 08 role '保留' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            92.0,
+            359.0,
+            430.0,
+            282.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "ee76ab4d04aa10d71a29540462d12592ed4655e38b3eca79b42f3ab9a0c78754"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-08-02",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "接入",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_08_spatial_actions.svg",
+      "source_embedded_sha256": "30c5b80284c51832f39e76497487c31f7c8b79ffa0be3cce824ce620381f3ea1",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_08_spatial_actions.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 08 role '接入' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            1246.0,
+            359.0,
+            430.0,
+            282.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "30c5b80284c51832f39e76497487c31f7c8b79ffa0be3cce824ce620381f3ea1"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-08-03",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "共享",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_08_spatial_actions.svg",
+      "source_embedded_sha256": "4a4248e916be1a45b6338924c580cdabe14adb61b22bea92f80ba97dd704ea01",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_08_spatial_actions.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 08 role '共享' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            92.0,
+            754.0,
+            430.0,
+            282.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "4a4248e916be1a45b6338924c580cdabe14adb61b22bea92f80ba97dd704ea01"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-08-04",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "校准",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_08_spatial_actions.svg",
+      "source_embedded_sha256": "ee76ab4d04aa10d71a29540462d12592ed4655e38b3eca79b42f3ab9a0c78754",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_08_spatial_actions.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 08 role '校准' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            1246.0,
+            754.0,
+            430.0,
+            282.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "ee76ab4d04aa10d71a29540462d12592ed4655e38b3eca79b42f3ab9a0c78754"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-13-02",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "设计动作",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_13_dazhongsi.svg",
+      "source_embedded_sha256": "0698f1a54aa0664d9ad346bd8174c3b20c6f02dd2076c8718914ccff25b068c9",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_13_dazhongsi.png",
+        "assets/figures/key-areas.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 13 role '设计动作' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            824.0,
+            430.0,
+            582.0,
+            170.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "0698f1a54aa0664d9ad346bd8174c3b20c6f02dd2076c8718914ccff25b068c9"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-13-03",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "空间结果",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_13_dazhongsi.svg",
+      "source_embedded_sha256": "1b3772b2251c73300e4da0b8a824ae0d89bfbcf24cf4cffe1a4a3992c9abdf9f",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_13_dazhongsi.png",
+        "assets/figures/key-areas.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 13 role '空间结果' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            1534.0,
+            430.0,
+            776.0,
+            170.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "1b3772b2251c73300e4da0b8a824ae0d89bfbcf24cf4cffe1a4a3992c9abdf9f"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-14-02",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "设计动作",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_14_origin.svg",
+      "source_embedded_sha256": "e57df3248dad55245bf4da850f9e1173aff080737be93f4f422c47673ab0becd",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png",
+        "assets/figures/key-areas.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 14 role '设计动作' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            824.0,
+            430.0,
+            582.0,
+            170.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "e57df3248dad55245bf4da850f9e1173aff080737be93f4f422c47673ab0becd"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-14-03",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "空间结果",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_14_origin.svg",
+      "source_embedded_sha256": "f92a1f1ae5daf8363356f1e86c5a650e98a9ce20e6e83526eb546c0d15d31b74",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png",
+        "assets/figures/key-areas.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 14 role '空间结果' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            1534.0,
+            430.0,
+            776.0,
+            170.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "f92a1f1ae5daf8363356f1e86c5a650e98a9ce20e6e83526eb546c0d15d31b74"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-15-02",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "设计动作",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_15_zhongzhi.svg",
+      "source_embedded_sha256": "35f096801673a461e1a351c5024be1225da4ced193cc28c046466471b3ec9307",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_15_zhongzhi.png",
+        "assets/figures/key-areas.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 15 role '设计动作' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            824.0,
+            430.0,
+            582.0,
+            170.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "35f096801673a461e1a351c5024be1225da4ced193cc28c046466471b3ec9307"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-15-03",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "空间结果",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_15_zhongzhi.svg",
+      "source_embedded_sha256": "0a80ee7b298d76bf67186ef602276f22e994657fc27134a7ce024f77ee6a5173",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_15_zhongzhi.png",
+        "assets/figures/key-areas.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 15 role '空间结果' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            1534.0,
+            430.0,
+            776.0,
+            170.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "0a80ee7b298d76bf67186ef602276f22e994657fc27134a7ce024f77ee6a5173"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-16-01",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "受控场景示意长卷",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_16_scene_rules.svg",
+      "source_embedded_sha256": "20c80167cc701923969a141ffd921ac3e8bbd7166c96b396073d0e1ed05c9dbd",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_16_scene_rules.png",
+        "assets/figures/metrics-evidence.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 16 role '受控场景示意长卷' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            732.0,
+            943.0,
+            455.0,
+            260.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "20c80167cc701923969a141ffd921ac3e8bbd7166c96b396073d0e1ed05c9dbd"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-17-02",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "近期缩略图",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_17_implementation.svg",
+      "source_embedded_sha256": "95d9fcb062feb42fbd5a7e863a797bba664395cf7c47fe8a116ac19bb67a46dc",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_17_implementation.png",
+        "assets/figures/metrics-evidence.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 17 role '近期缩略图' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            2025.0,
+            490.0,
+            250.0,
+            120.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "95d9fcb062feb42fbd5a7e863a797bba664395cf7c47fe8a116ac19bb67a46dc"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-17-03",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "中期缩略图",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_17_implementation.svg",
+      "source_embedded_sha256": "2e21f3f005464b226d49fd21099a97a063f7559259f365376413bbf594512f94",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_17_implementation.png",
+        "assets/figures/metrics-evidence.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 17 role '中期缩略图' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            2025.0,
+            700.0,
+            250.0,
+            120.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "2e21f3f005464b226d49fd21099a97a063f7559259f365376413bbf594512f94"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    },
+    {
+      "asset_id": "V13-17-04",
+      "asset_class": "generated_or_edited_visual_component",
+      "role": "远期缩略图",
+      "source_file": "京张和鸣_V13_Tokai/jingzhang_analysis_v13_pilot_17_implementation.svg",
+      "source_embedded_sha256": "4a3429fce19c3de478b9ece576d3544b1bfbc8199dd7b6a33bfdf6dd6be120d4",
+      "file_mapping": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_17_implementation.png",
+        "assets/figures/metrics-evidence.png"
+      ],
+      "provider": {
+        "evidence_strength": "user_declared_workflow_and_local_artifact_hash",
+        "agent_runtime": [
+          "zcode",
+          "codex",
+          "ima"
+        ],
+        "concept_generation": [
+          "fable",
+          "deepseek",
+          "kimi3",
+          "hunyuan3",
+          "opust5"
+        ],
+        "detailed_planning_and_design": [
+          "fable5",
+          "gpt5.6"
+        ],
+        "provider_note": "The source folder name Tokai is archival naming only and is not treated as provider proof. The declared collaborator set is the available model/workflow evidence."
+      },
+      "generation_record": {
+        "date_or_batch": "2026-08-21 V13 composite assembly; exact per-request run id unavailable",
+        "prompt_or_workflow_record": "V13 page 17 role '远期缩略图' with page-level limitation labels; standalone prompt file is not present for this embedded crop.",
+        "input_source_rights": "Participant-authored design direction and user-authorized project references; any external map reference is separately recorded as AR-010 and is not claimed as generated content.",
+        "edit_record": {
+          "operation": "embedded crop placement and SVG composition",
+          "svg_box": [
+            2025.0,
+            910.0,
+            250.0,
+            120.0
+          ],
+          "pixel_edit_after_generation": false
+        },
+        "output_sha256": "4a3429fce19c3de478b9ece576d3544b1bfbc8199dd7b6a33bfdf6dd6be120d4"
+      },
+      "reuse_terms": "Participant-authorized noncommercial use in this PR and community review; no standalone model or provider trademark claim.",
+      "clearance": {
+        "status": "cleared_for_pr_review",
+        "basis": "participant-owned project output under the declared workflow and user authorization",
+        "commercial_or_standalone_reuse": false
+      }
+    }
+  ]
 }

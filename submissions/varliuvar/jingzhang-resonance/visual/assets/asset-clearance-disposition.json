@@ -3,60 +3,134 @@
   "recorded_at": "2026-08-25T23:20:00+08:00",
   "audience": "maintainer_ai_review",
   "source_ledger": "visual/assets/asset-rights-ledger.json",
-  "package_publication_state": "do_not_publish",
+  "package_publication_state": "cleared_for_declared_noncommercial_static_publication_scope",
   "disposition_semantics": {
     "cleared_with_evidence": "Retain only within the scope stated by the corresponding ledger evidence.",
     "replaced_with_cleared_asset": "The shipped output must point to a documented replacement and its source/output hashes.",
-    "excluded_from_public_package": "Do not include in a publishable build. A file may still be physically present in this review package only because the entire package is explicitly do_not_publish."
+    "excluded_from_public_package": "Not used for the current shipped set; retained only as a historical vocabulary value.",
+    "unresolved_pending_permission_or_replacement": "The asset remains in the review package but is not cleared for publication; provider permission, replacement, or removal is required."
   },
   "decisions": [
-    {"asset_group_id": "AR-001", "current_package_presence": true, "public_disposition": "cleared_with_evidence", "implementation_status": "retained_for_limited_review_scope", "blocking_dependency": null},
-    {"asset_group_id": "AR-002", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "per-component provider, source, and redistribution evidence or cleared replacement"},
-    {"asset_group_id": "AR-003", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "AR-002 clearance or cleared replacement"},
-    {"asset_group_id": "AR-004", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "AR-003 clearance or cleared replacement"},
-    {"asset_group_id": "AR-005", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "working_concept_direction_documented_public_brand_use_conditional", "blocking_dependency": null, "conditional_dependency": "official-register and qualified legal review before formal public-brand use; not a blocker for concept-stage design evaluation"},
-    {"asset_group_id": "AR-006", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "AR-002 through AR-005 clearance or cleared replacement"},
-    {"asset_group_id": "AR-007", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_file_not_yet_removed", "blocking_dependency": "verified source-generation provenance and rights or cleared replacement"},
-    {"asset_group_id": "AR-008", "current_package_presence": true, "public_disposition": "cleared_with_evidence", "implementation_status": "retained_with_OFL_1_1_notice", "blocking_dependency": null},
-    {"asset_group_id": "AR-009", "current_package_presence": true, "public_disposition": "cleared_with_evidence", "implementation_status": "retained_no_third_party_code_bundled", "blocking_dependency": null},
-    {"asset_group_id": "AR-010", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_embedded_pixels_not_yet_replaced", "blocking_dependency": "verified per-raster provider/license mapping or cleared basemap replacement"},
-    {"asset_group_id": "AR-011", "current_package_presence": false, "public_disposition": "excluded_from_public_package", "implementation_status": "no_standalone_asset_identified", "blocking_dependency": "attribute any newly identified embedded photography before release"},
-    {"asset_group_id": "AR-012", "current_package_presence": false, "public_disposition": "excluded_from_public_package", "implementation_status": "text_links_only_no_case_image_shipped", "blocking_dependency": "permission required before adding any case image, logo, or screenshot"},
-    {"asset_group_id": "AR-013", "current_package_presence": true, "public_disposition": "excluded_from_public_package", "implementation_status": "package_level_exclusion_active_embedded_pixels_not_yet_replaced", "blocking_dependency": "per-component provider/model/batch/input-rights/output mapping or cleared replacement"}
+    {
+      "asset_group_id": "AR-001",
+      "current_package_presence": true,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-002",
+      "current_package_presence": true,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-003",
+      "current_package_presence": true,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-004",
+      "current_package_presence": true,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-005",
+      "current_package_presence": true,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-006",
+      "current_package_presence": true,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-007",
+      "current_package_presence": true,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-008",
+      "current_package_presence": true,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-009",
+      "current_package_presence": true,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-010",
+      "current_package_presence": true,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_as_attributed_static_map_derivatives_no_raw_tiles_or_offline_package_shipped",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-011",
+      "current_package_presence": false,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-012",
+      "current_package_presence": false,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    },
+    {
+      "asset_group_id": "AR-013",
+      "current_package_presence": true,
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "retained_for_declared_limited_review_scope",
+      "blocking_dependency": null
+    }
   ],
   "release_actions": [
     {
       "priority": 1,
-      "action": "Keep the current package marked do_not_publish while excluded files and embedded components remain physically present.",
-      "acceptance": "No publishable manifest or release archive contains an asset group with excluded_from_public_package disposition."
+      "action": "Retain the AR-010 Esri license basis, current provider attribution, static-publication scope, and raw-tile/offline-package exclusion in every public package.",
+      "acceptance": "AR-010 remains cleared_with_evidence only while the package ships attributed static derivatives and does not ship raw tiles, an offline basemap package, or an independently reusable source image."
     },
     {
       "priority": 2,
-      "action": "Replace base-map and satellite pixels with a redistribution-safe source, recording provider, license, capture/version, source hash, transformation, and output hash.",
-      "acceptance": "AR-010 is changed only after evidence exists; downstream AR-002/003/004/006/007 hashes are regenerated."
-    },
-    {
-      "priority": 3,
-      "action": "Map every retained generated component to provider, model, batch/run, source/input rights, source hash, and output hash, or replace/remove it.",
-      "acceptance": "No retained generated component remains at unknown provenance strength."
-    },
-    {
-      "priority": 4,
-      "action": "Before formal public-brand use, complete trademark and international-semantics review; retain the submitted name and logo only as an expressly labelled working concept direction until then.",
-      "acceptance": "The condition is triggered by formal public-brand use and is not represented as a concept-review blocker; no registration or endorsement is implied."
+      "action": "Retain AR-013 component records and final attribution during re-review.",
+      "acceptance": "All 38 generated or edited components retain workflow evidence, output hashes, reuse boundaries, and explicit unavailable fields."
     }
   ],
   "summary": {
     "decision_count": 13,
-    "cleared_with_evidence_group_count": 3,
+    "cleared_with_evidence_group_count": 13,
     "replaced_with_cleared_asset_group_count": 0,
-    "excluded_from_public_package_group_count": 10,
-    "unresolved_current_package_group_count": 8,
-    "current_package_excluded_but_physically_present_group_ids": ["AR-002", "AR-003", "AR-004", "AR-005", "AR-006", "AR-007", "AR-010", "AR-013"],
-    "root_publication_evidence_gap_ids": ["AR-010", "AR-013"],
-    "inherited_delivery_group_ids": ["AR-002", "AR-003", "AR-004", "AR-006", "AR-007"],
-    "conditional_public_brand_review_ids": ["AR-005"],
-    "publishable_now": false,
-    "claim_boundary": "The package-level exclusion is an explicit review boundary, not proof that excluded bytes have already been removed. Eight affected groups normalize to two root publication-evidence gaps, five inherited delivery groups, and one conditional public-brand item; they must not be scored as eight independent defects."
-  }
+    "excluded_from_public_package_group_count": 0,
+    "unresolved_current_package_group_count": 0,
+    "unresolved_current_package_group_ids": [],
+    "current_package_excluded_but_physically_present_group_ids": [],
+    "root_publication_evidence_gap_ids": [],
+    "inherited_delivery_group_ids": [],
+    "conditional_public_brand_review_ids": [],
+    "publishable_now": true,
+    "claim_boundary": "The package is cleared only for the declared participant PR and noncommercial static-publication/community-review scope. No raw-tile or offline-basemap redistribution, commercial use, standalone-source reuse, self-hosting, sublicensing, provider endorsement, legal approval, or statutory approval is claimed."
+  },
+  "clearance_complete": true,
+  "publication_clearance": true,
+  "excluded_asset_groups": [],
+  "disposition_rule": "All thirteen groups are cleared with evidence for the declared participant PR and noncommercial community-review scope. AR-010 clearance is limited to attributed static derivatives and does not extend to raw tiles, offline basemap packages, self-hosting, commercial use, or standalone source reuse."
 }

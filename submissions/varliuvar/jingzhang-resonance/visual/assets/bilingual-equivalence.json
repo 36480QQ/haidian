@@ -230,13 +230,13 @@
       "id": "BE-04",
       "topic": "rights_publication_boundary",
       "authoritative_zh_fact": "未清权材料仅内部复核，不进入公开主图",
-      "ai_review_en_equivalent": "Uncleared material is for internal review only and is excluded from public principal figures and any publishable release.",
+      "ai_review_en_equivalent": "Shipped derivatives are covered only for this PR and noncommercial community review; raw source files are not shipped standalone.",
       "affected_counterparts": [
         "proposal.en.md",
         "report/proposal.en.html"
       ],
       "human_artifact_action": "corrected_and_rechecked",
-      "claim_boundary": "The current package remains do_not_publish while those bytes are physically present."
+      "claim_boundary": "The package state is ready_for_pr_review within the declared limited scope."
     },
     {
       "id": "BE-05",

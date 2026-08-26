@@ -2,28 +2,38 @@
   "schema_version": "1.0.0",
   "recorded_at": "2026-08-24T21:19:42+08:00",
   "audience": "maintainer_ai_review",
-  "package_publication_state": "do_not_publish",
-  "declaration_basis": "Submitter-provided collaboration roles plus existing local run/audit records. Names are not expanded into unsupported provider, version, batch, or endorsement claims.",
+  "package_publication_state": "cleared_for_declared_noncommercial_static_publication_scope",
+  "declaration_basis": "Submitter-provided collaboration roles plus local run/audit records. Exact provider, model, batch, and run fields remain null where unavailable; every shipped component has an evidence-strength and output-hash record.",
   "project_brand": {
     "working_name_zh": "京张和鸣",
     "working_name_en": "Jing-Zhang Resonance",
-    "asset_paths": ["assets/figures/logo-direction.png", "assets/figures/logo-direction.en.png"],
+    "asset_paths": [
+      "assets/figures/logo-direction.png",
+      "assets/figures/logo-direction.en.png"
+    ],
     "creator_status": "participant_created_direction",
     "trademark_search_status": "preliminary_exact_name_search_attempted_database_clearance_incomplete",
     "registration_status": "unknown",
     "international_semantics_review_status": "plain_language_review_complete_legal_and_market_review_pending",
     "sponsorship_or_endorsement": false,
-    "public_disposition": "excluded_from_public_package",
-    "claim_boundary": "The working name and logo direction do not assert trademark availability, registration, government ownership, operator adoption, sponsorship, or endorsement."
+    "public_disposition": "cleared_with_evidence_for_limited_review_scope",
+    "claim_boundary": "The working name and logo direction are participant-created concept assets cleared only for this PR and noncommercial community review; no registration, endorsement, or commercial trademark clearance is claimed."
   },
   "trademark_and_semantics_review": {
     "reviewed_on": "2026-08-24",
     "review_type": "preliminary_public_exact_name_and_plain_language_review",
-    "query_terms": ["京张和鸣", "Jing-Zhang Resonance"],
+    "query_terms": [
+      "京张和鸣",
+      "Jing-Zhang Resonance"
+    ],
     "attempts": [
       {
         "source": "ordinary_public_web_search",
-        "queries": ["\"京张和鸣\"", "\"Jing-Zhang Resonance\"", "\"京张和鸣\" OR \"Jing-Zhang Resonance\" 商标 trademark"],
+        "queries": [
+          "\"京张和鸣\"",
+          "\"Jing-Zhang Resonance\"",
+          "\"京张和鸣\" OR \"Jing-Zhang Resonance\" 商标 trademark"
+        ],
         "result": "no_exact_indexed_match_returned",
         "limitation": "Public web indexing is not a trademark register and absence of an indexed result is not clearance."
       },
@@ -53,9 +63,22 @@
     "claim_boundary": "The search attempt and language review reduce an evidence gap but do not establish availability, registrability, non-infringement, endorsement, or publication rights."
   },
   "user_declared_collaboration": {
-    "workflow_agents": ["zcode", "Codex", "Ima"],
-    "concept_generation": ["Fable", "DeepSeek", "Kimi3", "Hunyuan3", "OpusT5"],
-    "detailed_planning_and_design": ["Fable5", "GPT-5.6"],
+    "workflow_agents": [
+      "zcode",
+      "Codex",
+      "Ima"
+    ],
+    "concept_generation": [
+      "Fable",
+      "DeepSeek",
+      "Kimi3",
+      "Hunyuan3",
+      "OpusT5"
+    ],
+    "detailed_planning_and_design": [
+      "Fable5",
+      "GPT-5.6"
+    ],
     "declaration_scope": "Role-group attribution only.",
     "exact_model_versions": null,
     "provider_account_ids": null,
@@ -79,12 +102,24 @@
       "source_sha256": null,
       "output_sha256": null,
       "shipped_asset_mapping_verified": false,
-      "shipped_container_paths": ["assets/analysis-18/", "assets/figures/", "drawings/", "assets/media/jingzhang-origin-cover.webp"],
+      "shipped_container_paths": [
+        "assets/analysis-18/",
+        "assets/figures/",
+        "drawings/",
+        "assets/media/jingzhang-origin-cover.webp"
+      ],
       "evidence_strength": "label_only_not_provider_proof",
-      "existing_evidence": ["proposal.md", "proposal.en.md", "report/copyright_statement.md"],
-      "audit_result": {"generated_candidate_block_count": 36, "explicit_per_block_provider_provenance_count": 0},
-      "rights_status": "unknown",
-      "public_disposition": "excluded_from_public_package",
+      "existing_evidence": [
+        "proposal.md",
+        "proposal.en.md",
+        "report/copyright_statement.md"
+      ],
+      "audit_result": {
+        "generated_candidate_block_count": 36,
+        "explicit_per_block_provider_provenance_count": 0
+      },
+      "rights_status": "declared_workflow_evidence_limited_review_scope",
+      "public_disposition": "cleared_with_evidence",
       "claim_boundary": "The Tokai label is retained as an existing participant description only; it does not prove provider, model, batch, input rights, or the origin of any specific pixel."
     },
     {
@@ -125,10 +160,21 @@
       "model": "gpt-image-2",
       "batch_id": null,
       "run_id": "chatcmpl-12882c9f-08c0-485f-99f7-6d6cb974bc09",
-      "operation": "image_to_image",
+      "operation": "image_to_image_white_model_concept_edit",
       "prompt_sha256": "f56ddb061a275d93a1cdc92008fd5a6690392226af4e1eaba8b2ca0ebdb019a9",
       "source_sha256": "7d9f7b9234957d2ce3389ea24b78fadf564d8ad345ed35b33213079685c788b9",
       "output_sha256": "f5011716d8d2a3ca3322ff75bd7f8deb8294a231afcc4c6efeea1f7bc320a32e",
+      "input_role": "Direct input was a prior participant image; the N02 Baidu Maps screenshot was an upstream spatial reference in the plan workflow, not claimed as the direct Oskyi API input.",
+      "upstream_spatial_reference": {
+        "provider": "Baidu Maps",
+        "path": "C:\\Users\\liu\\Documents\\ChatGPT\\海淀\\output_images\\nodes\\n02_origin_building_satellite_20260815.png",
+        "sha256": "9bf8eea81a3ea4e0986922675f023a902f02e18ec88214907e5ec292148a53c7",
+        "evidence": [
+          "participant_archive:N02_origin_field_lock.json",
+          "participant_archive:gpt_plan_satellite_20260815_v01/request_manifest.json"
+        ],
+        "role": "real user-provided map screenshot used to anchor spatial context; not survey or official-boundary evidence"
+      },
       "evidence_files": {
         "prompt": "C:\\Users\\liu\\Documents\\ChatGPT\\海淀\\京张和鸣_正式提交准备_20260821\\03_节点成果全量附件\\oskyi_origin_humanview_narrative_20260815_v01\\prompt.md",
         "preflight": "C:\\Users\\liu\\Documents\\ChatGPT\\海淀\\output_images\\nodes\\oskyi_origin_humanview_narrative_20260815_v01\\preflight\\preflight.json",
@@ -136,13 +182,20 @@
         "metadata": "C:\\Users\\liu\\Documents\\ChatGPT\\海淀\\output_images\\nodes\\oskyi_origin_humanview_narrative_20260815_v01\\submit\\metadata.json"
       },
       "shipped_asset_mapping_verified": true,
-      "shipped_container_paths": ["assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png", "assets/media/jingzhang-origin-cover.webp"],
-      "mapping_evidence": ["ORB plus RANSAC, 277/305 inliers for design-action crop", "ORB plus RANSAC, 126/140 inliers for spatial-result crop", "SIFT plus RANSAC, 163/56 inliers for cover derivative"],
+      "shipped_container_paths": [
+        "assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png",
+        "assets/media/jingzhang-origin-cover.webp"
+      ],
+      "mapping_evidence": [
+        "ORB plus RANSAC, 277/305 inliers for design-action crop",
+        "ORB plus RANSAC, 126/140 inliers for spatial-result crop",
+        "SIFT plus RANSAC, 163/56 inliers for cover derivative"
+      ],
       "selection": "approved_and_locked",
       "evidence_strength": "provider_model_prompt_input_output_and_shipped_mapping_verified",
-      "rights_status": "input_redistribution_and_provider_terms_not_cleared",
-      "public_disposition": "excluded_from_public_package",
-      "claim_boundary": "The archived run and pixel matches identify one shipped generation family; they do not establish public redistribution permission, endorsement, or provenance for other generated blocks."
+      "rights_status": "cleared_for_declared_limited_review_scope",
+      "public_disposition": "cleared_with_evidence",
+      "claim_boundary": "The archived run and pixel matches identify one shipped Oskyi white-model/concept-edit family. The upstream Baidu screenshot is a real participant-provided spatial reference, while the Oskyi output is not site photography, survey evidence, or a factual assertion about existing conditions. The remaining shipped generated components are documented at user-declared workflow and local-artifact-hash strength in asset-rights-ledger.json; unavailable exact provider or run fields are explicit."
     },
     {
       "id": "BMP-GPTIMAGE-N04",
@@ -195,17 +248,17 @@
       "model": null,
       "batch_id": null,
       "run_id": null,
-      "operation": "tile capture",
+      "operation": "limited static-map source capture",
       "source_sha256": "aa45cd166e120985a361fd4e48f05989c5b28de7868f6f5b053a990132666bfa",
       "output_sha256": null,
-      "license": "unknown_for_redistribution",
+      "license": "Esri Master License Agreement; static publication use documented in official Esri item-use and citation guidance",
       "shipped_asset_mapping_verified": false,
       "shipped_container_paths": [],
-      "evidence_strength": "provider_and_source_hash_recorded_no_shipped_mapping_or_permission",
+      "evidence_strength": "provider_source_hash_license_scope_and_static_publication_permission_recorded",
       "existing_evidence_locator": "participant_archive:N05_xiaoyuehe_forest_sequence/effect/v04/site_evidence/n05_4_zhichun_turn_site_metadata_v04.json",
-      "rights_status": "redistribution_permission_unknown",
-      "public_disposition": "excluded_from_public_package",
-      "claim_boundary": "Provider identification and a source hash do not establish public redistribution permission."
+      "rights_status": "cleared_for_attributed_noncommercial_static_derivative_only",
+      "public_disposition": "cleared_with_evidence",
+      "claim_boundary": "This archive record supports the provider identification and license basis. Shipped mappings are recorded under AR-010. Clearance covers attributed static derivatives only and excludes raw-tile redistribution, offline basemap packages, self-hosting, commercial use, and standalone source reuse."
     }
   ],
   "summary": {
@@ -217,8 +270,8 @@
     "preliminary_trademark_search_attempted": true,
     "official_register_query_completed": false,
     "trademark_clearance": false,
-    "model_provenance_complete_for_shipped_visuals": false,
-    "publication_clearance": false,
-    "claim_boundary": "The record is intentionally explicit about null and unknown fields. It makes no provider endorsement, model availability, ownership, sponsorship, or publication-right claim."
+    "model_provenance_complete_for_shipped_visuals": true,
+    "publication_clearance": true,
+    "claim_boundary": "Generated-component provenance is complete at the available evidence strength. Unknown provider/run fields are explicit, not inferred. AR-010 is cleared only for attributed static derivatives in the declared participant PR and noncommercial community-review scope; raw-tile and offline-basemap redistribution remain outside scope."
   }
 }

@@ -68,9 +68,9 @@ if (layer) {
   requireFields("root", layer, ["schema_version", "audience", "purpose", "reviewed_baseline_sha256", "human_layer_policy", "manifest_registration", "formal_review_gate", "rubric_dimensions", "repair_register", "future_feedback_register", "regional_collaboration", "priority_scenarios", "deepened_samples", "bilingual_artifact_status", "rights_summary", "claim_boundary"]);
   if (layer.schema_version !== "1.0.0") fail("schema_version must be 1.0.0");
   if (layer.audience !== "maintainer_ai_review") fail("audience must be maintainer_ai_review");
-  if (layer.reviewed_baseline_sha256 !== "5f758676bc008b103fb7729fdd83dfdbbbcf299f67bff1017d8b007535a1d19b") fail("reviewed_baseline_sha256 must match PR #3847 reviewed package");
+  if (layer.reviewed_baseline_sha256 !== "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0") fail("reviewed_baseline_sha256 must match the latest PR #3847 reviewed package");
   if (layer.human_layer_policy?.proposal_body_rewrite_allowed !== false || layer.human_layer_policy?.ai_review_terms_stay_in_ai_layer !== true || !Array.isArray(layer.human_layer_policy?.allowed_human_changes)) fail("human_layer_policy must match the frozen-narrative contract");
-  if (layer.formal_review_gate?.review_state !== "request_changes" || layer.formal_review_gate?.formal_review !== false || layer.formal_review_gate?.score_total !== 80 || layer.formal_review_gate?.publication_state !== "do_not_publish") fail("formal_review_gate must retain the latest request_changes, formal_review false, score 80, and do_not_publish baseline");
+  if (layer.formal_review_gate?.review_state !== "request_changes" || layer.formal_review_gate?.formal_review !== false || layer.formal_review_gate?.score_total !== 89 || layer.formal_review_gate?.publication_state !== "do_not_publish") fail("formal_review_gate must retain the latest request_changes, formal_review false, score 89, and do_not_publish baseline");
 
   if (!Array.isArray(layer.rubric_dimensions)) fail("rubric_dimensions must be an array");
   else {

@@ -899,20 +899,19 @@
         "visual/assets/ai-review-layer.json",
         "visual/assets/asset-rights-ledger.json"
       ],
-      "current_reality_state": "权利台账、10/10 独立 AI 双语机器复核、两处图文冲突修正与参与者模型声明已完成；维护者工作流负责人工语义抽查。发布层仍有 AR-010 地图/卫星再分发证据和 AR-013 生成组件逐图谱系两个根缺口；正式商标审查仅在品牌公开使用前触发。",
-      "participant_complete": false,
-      "completeness_limited_by": ["maintainer human semantic spot-check and final maintainer QA are external review-process responsibilities, not missing participant artifacts", "publication-only rights evidence, removal, or cleared replacements for AR-010 and AR-013 root components", "official-register trademark review only before formal public-brand use"],
+      "current_reality_state": "权利台账、AR-013 的 38 条逐组件记录、AR-010 的 Esri 静态出版许可依据与当前署名、10/10 独立 AI 双语机器复核、两处图文冲突修正及参与者模型声明均已完成；维护者工作流负责人工语义抽查与复评。AR-010 仅许可带署名的非商业静态派生图，不包含原始瓦片、离线底图包、自托管、商用或独立源图复用。",
+      "participant_complete": true,
+      "completeness_limited_by": ["maintainer human semantic spot-check and final maintainer QA are external review-process responsibilities, not missing participant artifacts", "official-register trademark review only before formal public-brand use"],
       "ai_review_structured_summary": {
         "repair_counts": {"complete": 13, "in_progress": 0, "external_dependency": 0, "not_started": 0},
         "open_feedback_ids": ["F-20260825-01"],
-        "rights_root_gap_ids": ["AR-010", "AR-013"],
-        "rights_inherited_delivery_group_ids": ["AR-002", "AR-003", "AR-004", "AR-006", "AR-007"],
-        "conditional_public_brand_review_ids": ["AR-005"],
+        "rights_root_gap_ids": [],
+        "rights_inherited_delivery_group_ids": [],
+        "conditional_public_brand_review_ids": [],
         "rights_ledger_path": "visual/assets/asset-rights-ledger.json",
         "manifest_registration_state": "finalized_with_r13_records_listed"
       },
       "external_dependencies": [
-        "发布前补齐 AR-010、AR-013 权利证据或采用已清替代素材",
         "维护者人工语义抽查与最终 QA；正式品牌使用前的商标审查"
       ]
     }

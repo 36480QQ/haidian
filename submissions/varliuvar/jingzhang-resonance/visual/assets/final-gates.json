@@ -29,7 +29,7 @@
     {
       "gate_id": "RIGHTS_AND_PUBLICATION",
       "result_authority": "visual/assets/asset-rights-ledger.json and visual/assets/asset-clearance-disposition.json",
-      "participant_status": "participant_audit_complete_two_root_publication_evidence_gaps_do_not_publish"
+      "participant_status": "pass_inventory_ar013_and_ar010_declared_scope_clearance_complete"
     },
     {
       "gate_id": "PACKAGE_SIZE",
@@ -45,9 +45,8 @@
   ],
   "remaining_external_decisions": [
     "maintainer human semantic spot-check and final maintainer QA under the repository workflow",
-    "publication-only rights evidence, removal, or cleared replacements for AR-010 and AR-013 root components",
     "official-register trademark review before formal public-brand use",
     "maintainer admission to professional review and publication decision"
   ],
-  "claim_boundary": "All 13 participant-controlled repairs are recorded complete for maintainer re-review. Remaining items are maintainer-process decisions or publication-triggered conditions; this record does not assert a maintainer decision, professional approval, rights clearance, publication authorization, or score increase."
+  "claim_boundary": "All thirteen participant repair records are complete within the declared scope. AR-013 lineage, downstream consistency, final attribution, and the AR-010 Esri static-publication rights record are repaired. This record does not assert a maintainer re-review result, professional approval, planning approval, commercial-use permission, standalone-source redistribution right, or score increase."
 }

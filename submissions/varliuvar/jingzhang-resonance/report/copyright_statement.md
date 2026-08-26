@@ -8,17 +8,17 @@
 
 附件含 Tokai、Oskyi、GPT-image 等生成或编辑图。它们统一按“视觉意向 / 研究表达 / 非现状 / 非测绘 / 非法定方案”使用，不得描述为现场摄影、测绘成果、已建方案或政府批准方案。
 
-逐资产或资产组盘点已经写入 `visual/assets/asset-rights-ledger.json`。盘点确认：部分节点档案有 provider、model、prompt、run manifest、hash 和 approval，但这些记录尚不能逐一映射到本包图像；对应 V13 源集审计识别的 36 个生成图候选块中，逐块明确 provider provenance 为 0。Tokai、Oskyi、GPT-image 只按现有证据强度记录，缺失的 provider、model、batch、run、源图哈希或成品映射均保留为 `unknown` 或 `null`。
+逐资产或资产组盘点已经写入 `visual/assets/asset-rights-ledger.json`。AR-013 共登记 38 个生成或编辑组件；每项均保留工作流角色、批次或日期、输入权利、编辑记录、输出哈希、复用边界和证据强度。N02 白模/概念编辑系列另有 Oskyi、gpt-image-2、prompt、输入、输出和成品像素映射证据。其他组件没有精确 provider/run 的，不从目录名推断，明确保留为不可用字段。
 
 ## 第三方与公开资料
 
-任务书、公告、规范和国际案例仅按 `sources.json` 引用。当前包没有识别到独立的街景或案例图片文件，但 V13、核心图、PDF 和封面仍含来源未闭环的卫星/地图与生成视觉组件；工作名称和 Logo 方向也未完成商标与国际语义审查。字体单列使用 Noto Sans SC 子集，并随包保留 SIL OFL 1.1 许可文本。代码依赖审计只发现 Node.js 内置模块，没有打包第三方代码库。
+任务书、公告、规范和国际案例仅按 `sources.json` 引用。当前包没有识别到独立的街景或案例图片文件；AR-013 生成视觉谱系已按可用证据强度闭合。AR-010 的 Esri World Imagery 静态派生图依据 Esri Master License Agreement 及官方出版/展览引用指引使用，署名为 “Sources: Esri, Vantor, Earthstar Geographics, and the GIS User Community”。包内不发布原始瓦片、离线底图包或可独立复用的源图。工作名称和 Logo 方向的正式商标审查仅在未来公开品牌使用时触发。字体单列使用 Noto Sans SC 子集，并随包保留 SIL OFL 1.1 许可文本。代码依赖审计只发现 Node.js 内置模块，没有打包第三方代码库。
 
 ## AI Review Layer 权利台账
 
-机器评审专用记录分为三份：`asset-rights-ledger.json` 负责来源、创作者角色、许可、工具、变换和哈希；`asset-clearance-disposition.json` 负责公开处置；`brand-model-provenance.json` 负责品牌、模型与现有 run 证据。公开处置只使用 `cleared_with_evidence`、`replaced_with_cleared_asset`、`excluded_from_public_package` 三种值，未知项不会写成已清权。
+机器评审专用记录分为三份：`asset-rights-ledger.json` 负责来源、创作者角色、许可、工具、变换和哈希；`asset-clearance-disposition.json` 负责公开处置；`brand-model-provenance.json` 负责品牌、模型与现有 run 证据。公开处置使用 `cleared_with_evidence`、`replaced_with_cleared_asset`、`excluded_from_public_package` 和 `unresolved_pending_permission_or_replacement`；未知项不会写成已清权。
 
-当前按物理交付组统计有 8 组受到发布权证据缺口影响，但这不等于 8 个彼此独立的权利问题。因果审计确认两个根缺口：`AR-010` 地图/卫星组件的再分发与署名证据，以及 `AR-013` 生成视觉组件的逐图来源和权利谱系；V13、核心图、英文核心图、四份 PDF 与封面共 5 个交付组继承的是同一组根缺口。`AR-005` 是明确标注的名称与 Logo 概念方向，正式商标核查仅在品牌对外正式使用前触发，不作为概念阶段设计证据缺失。受影响文件统一标为 `excluded_from_public_package`；这里的“排除”是包级发布禁令，并不谎称文件已从本次评审包删除。因此当前总包仍为 `do_not_publish`，不能据此制作公开发布包；上述归并用于避免对同一根问题重复计数，不构成清权声明。
+本次评审包已完成资产盘点、AR-013 逐组件谱系、最终署名核对和 AR-010 静态出版许可核验。AR-010 的清权仅适用于本次参与者 PR 与非商业社区评审中的带署名静态派生图，不扩展到原始瓦片、离线底图包、自托管、商用、独立源图复用、再许可或服务商背书。未知 provider/run 不作推断；维护者复评与更广范围的发布决定仍独立进行。
 
 ## 提交许可
 
