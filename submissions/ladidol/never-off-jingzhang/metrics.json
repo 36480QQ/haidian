@@ -1,0 +1,150 @@
+{
+  "schema_version": "0.2.0",
+  "units": {"length": "m", "area": "sqm"},
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 93882767.665,
+      "unit": "sqm",
+      "source_files": ["geometry/site_boundary.geojson"],
+      "formula": "projected EPSG:4548 area of site boundary",
+      "confidence": "low",
+      "assumptions": ["A-PROVISIONAL-GEOMETRY"]
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 12802203.277,
+      "unit": "sqm",
+      "source_files": ["geometry/green_space.geojson"],
+      "formula": "union area of green_space features projected to EPSG:4548",
+      "confidence": "low",
+      "assumptions": ["A-PROVISIONAL-GEOMETRY"]
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 6183288.49,
+      "unit": "sqm",
+      "source_files": ["geometry/public_space.geojson"],
+      "formula": "union area of public_space features projected to EPSG:4548",
+      "confidence": "low",
+      "assumptions": ["A-PROVISIONAL-GEOMETRY", "A-KEY-AREA-ROLES"]
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 843761.272,
+      "unit": "sqm",
+      "source_files": ["geometry/buildings.geojson"],
+      "formula": "union area of building footprints projected to EPSG:4548",
+      "confidence": "low",
+      "assumptions": ["A-KEY-AREA-ROLES"]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.136364,
+      "unit": "ratio",
+      "source_files": ["geometry/site_boundary.geojson", "geometry/green_space.geojson"],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "low",
+      "assumptions": ["A-PROVISIONAL-GEOMETRY"]
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.065862,
+      "unit": "ratio",
+      "source_files": ["geometry/site_boundary.geojson", "geometry/public_space.geojson"],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "low",
+      "assumptions": ["A-PROVISIONAL-GEOMETRY", "A-KEY-AREA-ROLES"]
+    },
+    "offline_service_coverage": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md", "geometry/public_space.geojson"],
+      "formula": "nodes_with_offline_or_human_baseline / all_service_nodes",
+      "confidence": "low",
+      "assumptions": ["A-KEY-AREA-ROLES"],
+      "reason": "Requires an operational inventory and field audit."
+    },
+    "accessible_route_breaks": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": ["geometry/roads.geojson", "geometry/constraints.geojson"],
+      "formula": "count of audited accessible-route discontinuities",
+      "confidence": "low",
+      "assumptions": ["A-PROVISIONAL-GEOMETRY"],
+      "reason": "Requires an accessibility audit on the official transport base."
+    },
+    "care_node_baseline_services": {
+      "status": "unknown",
+      "value": null,
+      "unit": "service-items-per-node",
+      "source_files": ["proposal.md", "geometry/public_space.geojson"],
+      "formula": "count of shade,rain,water,seating,information,help per care node",
+      "confidence": "low",
+      "assumptions": ["A-KEY-AREA-ROLES"],
+      "reason": "Requires a verified facility inventory."
+    },
+    "safe_detour_coverage": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["geometry/roads.geojson", "geometry/phasing.geojson"],
+      "formula": "safe alternative route length or node coverage / affected route length or nodes",
+      "confidence": "low",
+      "assumptions": ["A-TRANSPORT-CONCEPT"],
+      "reason": "Requires an operational route network and event scenarios."
+    },
+    "human_takeover_minutes": {
+      "status": "unknown",
+      "value": null,
+      "unit": "minutes",
+      "source_files": ["proposal.md"],
+      "formula": "human service available timestamp - AI pause timestamp",
+      "confidence": "low",
+      "assumptions": ["A-KEY-AREA-ROLES"],
+      "reason": "Requires a staffed service protocol and time-stamped drills."
+    },
+    "service_recovery_hours": {
+      "status": "unknown",
+      "value": null,
+      "unit": "hours",
+      "source_files": ["proposal.md", "geometry/phasing.geojson"],
+      "formula": "baseline and optional service restored timestamp - incident end timestamp",
+      "confidence": "low",
+      "assumptions": ["A-KEY-AREA-ROLES"],
+      "reason": "Requires recovery drills and operations records."
+    },
+    "robot_pause_conflict_events": {
+      "status": "unknown",
+      "value": null,
+      "unit": "events-per-test-period",
+      "source_files": ["proposal.md", "geometry/public_space.geojson"],
+      "formula": "yield + pause + human handover + retire events during controlled pilot",
+      "confidence": "low",
+      "assumptions": ["A-DATA-MINIMIZATION"],
+      "reason": "Requires a controlled pilot and event log."
+    },
+    "incident_log_completeness": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md", "sources.json"],
+      "formula": "events with source,time,owner,action,recovery,feedback / all recorded events",
+      "confidence": "low",
+      "assumptions": ["A-DATA-MINIMIZATION"],
+      "reason": "Requires an operational incident-log sample."
+    },
+    "inclusive_user_feedback": {
+      "status": "unknown",
+      "value": null,
+      "unit": "structured-feedback-score",
+      "source_files": ["proposal.md", "assumptions.json"],
+      "formula": "weighted feedback from older adults, children, disabled and non-digital users",
+      "confidence": "low",
+      "assumptions": ["A-DATA-MINIMIZATION"],
+      "reason": "Requires inclusive user testing after the baseline service is installed."
+    }
+  }
+}
