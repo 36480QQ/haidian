@@ -21,6 +21,8 @@
       ],
       "changed_files": [
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/agent.json",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/brand-system.en.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/brand-system.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/key-areas.en.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/key-areas.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/land-use-structure.en.png",
@@ -29,8 +31,12 @@
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/metrics-evidence.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/mobility-bluegreen.en.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/mobility-bluegreen.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/node-detail.en.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/node-detail.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/site-overview.en.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/site-overview.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/station-hall-imagery.en.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/station-hall-imagery.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/media/cover.webp",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/media/experience.md",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/media/experience.mp4",
@@ -66,7 +72,13 @@
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/self_check.json",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/sources.json",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/standard_matrix.json",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/baseline-protocols.json",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/funding-matrix.json",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/implementation-cards.json",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/render-evidence/index-en.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/render-evidence/index-zh.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/render-evidence/proposal-report-en.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/render-evidence/proposal-report-zh.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/seb-adoption.json",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/switchback-adoption.json",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/three.min.js",
@@ -77,7 +89,7 @@
       "ai_package_stages": {
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons": "formal"
       },
-      "total_bytes": 25760921,
+      "total_bytes": 32668202,
       "maintainer_bypass": false
     },
     "stderr": ""
