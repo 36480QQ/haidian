@@ -46,17 +46,42 @@
       "usage": "Design concept 'Temporal Stitch' developed through analysis of railway-as-barrier urban condition, community feedback in Issue #2955, and gap analysis of 700+ existing submissions showing lack of interface-focused and time-dimension approaches."
     },
     {
-      "id": "ZHAN-TIANYOU-HISTORY",
-      "source_type": "official_public",
-      "url": "https://www.gov.cn/guoqing/2019-07/09/content_5407614.htm",
-      "publisher": "中国政府网",
-      "usage": "Historical reference for Zhan Tianyou and Beijing-Zhangjiakou Railway cultural narrative; timetable scheduling as cultural anchor for temporal programming concept."
-    },
-    {
       "id": "HAIDIAN-POPULATION-DATA",
       "source_type": "official_public",
       "publisher": "北京市海淀区统计局",
       "usage": "Background demographic data for estimating corridor-adjacent population (~450,000 residents in ~70 communities). Used for persona development and temporal demand modeling."
+    },
+    {
+      "id": "OSM-NETWORK-2024",
+      "title": "OpenStreetMap 路网数据（海淀区京张廊道沿线）",
+      "publisher": "OpenStreetMap Contributors",
+      "date": "2024-06-01",
+      "license": "ODbL 1.0",
+      "url": "https://www.openstreetmap.org/",
+      "scope": "公园两侧各500m缓冲区内路网",
+      "method": "QGIS Network Analysis 最短路径分析",
+      "status": "background_only",
+      "notes": "用于初步可达性估算，尚未经独立复核"
+    },
+    {
+      "id": "ZHAN-TIANYOU-RAILWAY-HISTORY",
+      "title": "《詹天佑与中国铁路》",
+      "publisher": "中国铁道出版社",
+      "date": "2019",
+      "license": "published_book",
+      "scope": "京张铁路历史与詹天佑工程贡献",
+      "status": "background_only",
+      "notes": "文化叙事参考，历史唯一性判断以铁路史学界共识为准"
+    },
+    {
+      "id": "HAIDIAN-STATS-2023",
+      "title": "海淀区统计年鉴2023",
+      "publisher": "北京市海淀区统计局",
+      "date": "2023",
+      "license": "government_public",
+      "scope": "廊道沿线街道常住人口统计",
+      "status": "background_only",
+      "notes": "用于社区和人口规模推算，具体数值待社区普查确认"
     }
   ]
 }

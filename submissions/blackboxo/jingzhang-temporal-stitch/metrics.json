@@ -26,10 +26,10 @@
         "geometry/green_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(green_space_areas) / site_area_sqm = (1350000 + 480000 + 320000 + 72000 + 420000) / 11412825 = 0.232",
+      "formula": "green_space_area_sqm / site_area_sqm = 2758949.843 / 11412825.386 = 0.241741",
       "confidence": "medium",
       "assumptions": [
-        "Green space includes linear park corridor, riverside belts, pocket parks, and campus permeation zones."
+        "Computed from GeoJSON green_space layer union area (EPSG:4548 projection). Includes linear park corridor, riverside belts, pocket parks, and campus permeation zones."
       ]
     },
     "public_space_ratio": {
@@ -40,10 +40,10 @@
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "sum(public_space_areas) / site_area_sqm = (24000+20000+22000+18000+26000+20000+28000+22000+20000) / site_area * coverage_factor = 0.176",
+      "formula": "public_space_area_sqm / site_area_sqm = 1191371.811 / 11412825.386 = 0.104389",
       "confidence": "medium",
       "assumptions": [
-        "Public space includes 9 suture node plazas plus connecting corridors and park public areas."
+        "Computed from GeoJSON public_space layer union area (EPSG:4548 projection). Includes 9 suture node plazas plus connecting corridors."
       ]
     },
     "building_footprint_area_sqm": {
@@ -97,12 +97,12 @@
     },
     "temporal_programs_per_node": {
       "status": "known",
-      "value": 4,
+      "value": 3,
       "unit": "count",
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "average time-slots per suture node",
+      "formula": "3 temporal layers per node (day-clock, season-clock, era-clock)",
       "confidence": "medium",
       "assumptions": [
         "Each node operates 3-5 temporal programs; average is 4."
@@ -110,12 +110,12 @@
     },
     "total_temporal_programs": {
       "status": "known",
-      "value": 36,
+      "value": 27,
       "unit": "count",
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "sum of all temporal_program entries across 9 nodes",
+      "formula": "9 suture nodes × 3 temporal layers (day-clock, season-clock, era-clock) = 27",
       "confidence": "medium",
       "assumptions": []
     },
@@ -126,10 +126,10 @@
       "source_files": [
         "geometry/roads.geojson"
       ],
-      "formula": "count(road features with road_class=suture_crossing)",
+      "formula": "count(road features with road_class=pedestrian) = 9 primary east-west crossing locations",
       "confidence": "medium",
       "assumptions": [
-        "Design proposes 9 new or enhanced east-west crossings at suture nodes"
+        "Each suture node has 1 primary east-west pedestrian crossing. Additional secondary crossings may be added during detailed design."
       ]
     },
     "park_corridor_length_m": {

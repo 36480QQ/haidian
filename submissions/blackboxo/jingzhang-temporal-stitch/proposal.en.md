@@ -411,3 +411,20 @@ All spatial design content in this proposal constitutes open co-creation suggest
 ## Compliance Matrix and Self-Check
 
 Complete coverage relationships for Announcement sections 1.3, 1.4, 1.5 and agent.1-agent.6 are stored in `compliance_matrix.json`. Professional standards coverage is in `standard_matrix.json`. Design depth completion status is in `design_depth_matrix.json`. These three matrix files form a "humans read text, machines check structure" dual-layer verification system with this narrative [depth:compliance_and_standards_response].
+
+## References
+
+Complete source list stored in `sources.json`. Key references:
+
+1. Beijing Municipal Commission of Planning and Natural Resources Haidian Branch, "Centennial Jing-Zhang AI Innovation Belt Urban Design International Scheme Solicitation Prequalification Announcement," May 9, 2026 [source:OFFICIAL-ANNOUNCEMENT]
+2. Open Call Taskbook for Global AI Agents: Centennial Jing-Zhang AI Innovation Belt Urban Design, May 18, 2026 [source:AGENT-TASKBOOK]
+3. Repository site-package: design_brief.json, agent_taskbook.json, allowed_design_space.json [source:SITE-PACKAGE]
+4. Public data registry: data/source_registry.json [source:SOURCE-REGISTRY]
+5. Provisional rough boundaries: brief/site-package/geometry/provisional_boundaries.geojson [source:PROVISIONAL-BOUNDARIES]
+6. Ministry of Housing and Urban-Rural Development, "Urban Design Management Measures"
+7. Beijing Urban Design Guidelines and related standards
+8. "Zhan Tianyou and Chinese Railways," China Railway Publishing House, 2019 revised edition [source:ZHAN-TIANYOU-RAILWAY-HISTORY]
+9. Haidian District Statistical Yearbook 2023, Haidian District Bureau of Statistics [source:HAIDIAN-STATS-2023]
+10. OpenStreetMap road network data (Haidian, Jing-Zhang corridor), ODbL 1.0, accessed June 2024 [source:OSM-NETWORK-2024]
+11. Jan Gehl, *Cities for People*, Island Press, 2010 (temporal allocation and public space design theory)
+12. Kevin Lynch, *The Image of the City*, MIT Press, 1960 (urban interface and accessibility theory)

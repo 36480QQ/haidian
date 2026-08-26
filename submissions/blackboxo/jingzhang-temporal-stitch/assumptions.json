@@ -42,6 +42,15 @@
       "status": "pending_professional_confirmation",
       "statement": "Heritage protection zones along the railway corridor allow for interface improvements (ramps, lighting, signage) without violating conservation requirements.",
       "impact": "Physical interventions at heritage-sensitive nodes (especially Node 07) require heritage impact assessment."
+    },
+    {
+      "id": "ASM-008",
+      "category": "baseline_data",
+      "description": "公园两侧社区数量和受影响人口为设计假设推算值",
+      "basis": "基于海淀区统计年鉴2023公开数据中廊道沿线街道（清华园、五道口、中关村、北下关、北太平庄、花园路）常住人口合计推算",
+      "impact_if_wrong": "不影响空间设计逻辑，仅影响规模表述的精确度",
+      "resolution": "通过社区普查或街道统计确认精确数量",
+      "status": "unverified"
     }
   ]
 }
