@@ -19,13 +19,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "residential_support",
-        "land_use_code_zh": "居住配套",
+        "land_use_code": "0701",
+        "land_use_code_zh": "城镇住宅用地",
         "row_zone": "大钟寺片区段",
         "area_sqm_declared": 337441.605,
         "area_sqm_calculated": 337441.605,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "residential_support",
+        "land_use_code_label_zh": "城镇住宅用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -73,13 +75,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "public_space",
-        "land_use_code_zh": "公共空间",
+        "land_use_code": "1403",
+        "land_use_code_zh": "广场用地",
         "row_zone": "大钟寺片区段",
         "area_sqm_declared": 277190.871,
         "area_sqm_calculated": 277190.871,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "public_space",
+        "land_use_code_label_zh": "广场用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -127,13 +131,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "green_water",
-        "land_use_code_zh": "绿地水系",
+        "land_use_code": "1401",
+        "land_use_code_zh": "公园绿地",
         "row_zone": "大钟寺片区段",
         "area_sqm_declared": 308446.424,
         "area_sqm_calculated": 308446.424,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "green_water",
+        "land_use_code_label_zh": "公园绿地"
       },
       "geometry": {
         "type": "Polygon",
@@ -181,13 +187,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "commercial_service",
-        "land_use_code_zh": "商业服务",
+        "land_use_code": "0901",
+        "land_use_code_zh": "商业用地",
         "row_zone": "大钟寺片区段",
         "area_sqm_declared": 412007.111,
         "area_sqm_calculated": 412007.111,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "commercial_service",
+        "land_use_code_label_zh": "商业用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -235,13 +243,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "commercial_service",
-        "land_use_code_zh": "商业服务",
+        "land_use_code": "0901",
+        "land_use_code_zh": "商业用地",
         "row_zone": "大钟寺片区段",
         "area_sqm_declared": 182166.684,
         "area_sqm_calculated": 182166.684,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "commercial_service",
+        "land_use_code_label_zh": "商业用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -289,13 +299,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "residential_support",
-        "land_use_code_zh": "居住配套",
+        "land_use_code": "0701",
+        "land_use_code_zh": "城镇住宅用地",
         "row_zone": "大钟寺—知春路段",
         "area_sqm_declared": 507254.604,
         "area_sqm_calculated": 507254.604,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "residential_support",
+        "land_use_code_label_zh": "城镇住宅用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -343,13 +355,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "commercial_service",
-        "land_use_code_zh": "商业服务",
+        "land_use_code": "0901",
+        "land_use_code_zh": "商业用地",
         "row_zone": "大钟寺—知春路段",
         "area_sqm_declared": 388223.225,
         "area_sqm_calculated": 388223.225,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "commercial_service",
+        "land_use_code_label_zh": "商业用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -397,13 +411,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "green_water",
-        "land_use_code_zh": "绿地水系",
+        "land_use_code": "1401",
+        "land_use_code_zh": "公园绿地",
         "row_zone": "大钟寺—知春路段",
         "area_sqm_declared": 431359.417,
         "area_sqm_calculated": 431359.417,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "green_water",
+        "land_use_code_label_zh": "公园绿地"
       },
       "geometry": {
         "type": "Polygon",
@@ -451,13 +467,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "industrial_research",
-        "land_use_code_zh": "产业研发",
+        "land_use_code": "0802",
+        "land_use_code_zh": "科研用地",
         "row_zone": "大钟寺—知春路段",
         "area_sqm_declared": 575145.544,
         "area_sqm_calculated": 575145.544,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "industrial_research",
+        "land_use_code_label_zh": "科研用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -505,13 +523,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "green_water",
-        "land_use_code_zh": "绿地水系",
+        "land_use_code": "1401",
+        "land_use_code_zh": "公园绿地",
         "row_zone": "大钟寺—知春路段",
         "area_sqm_declared": 271501.909,
         "area_sqm_calculated": 271501.909,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "green_water",
+        "land_use_code_label_zh": "公园绿地"
       },
       "geometry": {
         "type": "Polygon",
@@ -563,13 +583,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "residential_support",
-        "land_use_code_zh": "居住配套",
+        "land_use_code": "0701",
+        "land_use_code_zh": "城镇住宅用地",
         "row_zone": "知春路—学院路段",
         "area_sqm_declared": 641390.027,
         "area_sqm_calculated": 641390.027,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "residential_support",
+        "land_use_code_label_zh": "城镇住宅用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -621,13 +643,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "education_research",
-        "land_use_code_zh": "教育科研",
+        "land_use_code": "0804",
+        "land_use_code_zh": "教育用地",
         "row_zone": "知春路—学院路段",
         "area_sqm_declared": 473756.946,
         "area_sqm_calculated": 473756.946,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "education_research",
+        "land_use_code_label_zh": "教育用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -675,13 +699,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "green_water",
-        "land_use_code_zh": "绿地水系",
+        "land_use_code": "1401",
+        "land_use_code_zh": "公园绿地",
         "row_zone": "知春路—学院路段",
         "area_sqm_declared": 526395.637,
         "area_sqm_calculated": 526395.637,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "green_water",
+        "land_use_code_label_zh": "公园绿地"
       },
       "geometry": {
         "type": "Polygon",
@@ -729,13 +755,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "education_research",
-        "land_use_code_zh": "教育科研",
+        "land_use_code": "0804",
+        "land_use_code_zh": "教育用地",
         "row_zone": "知春路—学院路段",
         "area_sqm_declared": 701861.707,
         "area_sqm_calculated": 701861.707,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "education_research",
+        "land_use_code_label_zh": "教育用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -783,13 +811,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "green_water",
-        "land_use_code_zh": "绿地水系",
+        "land_use_code": "1401",
+        "land_use_code_zh": "公园绿地",
         "row_zone": "知春路—学院路段",
         "area_sqm_declared": 228719.079,
         "area_sqm_calculated": 228719.079,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "green_water",
+        "land_use_code_label_zh": "公园绿地"
       },
       "geometry": {
         "type": "Polygon",
@@ -837,13 +867,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "education_research",
-        "land_use_code_zh": "教育科研",
+        "land_use_code": "0804",
+        "land_use_code_zh": "教育用地",
         "row_zone": "AI原点社区段",
         "area_sqm_declared": 270372.598,
         "area_sqm_calculated": 270372.598,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "education_research",
+        "land_use_code_label_zh": "教育用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -891,13 +923,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "public_space",
-        "land_use_code_zh": "公共空间",
+        "land_use_code": "1403",
+        "land_use_code_zh": "广场用地",
         "row_zone": "AI原点社区段",
         "area_sqm_declared": 256085.016,
         "area_sqm_calculated": 256085.016,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "public_space",
+        "land_use_code_label_zh": "广场用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -945,13 +979,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "green_water",
-        "land_use_code_zh": "绿地水系",
+        "land_use_code": "1401",
+        "land_use_code_zh": "公园绿地",
         "row_zone": "AI原点社区段",
         "area_sqm_declared": 284538.946,
         "area_sqm_calculated": 284538.946,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "green_water",
+        "land_use_code_label_zh": "公园绿地"
       },
       "geometry": {
         "type": "Polygon",
@@ -999,13 +1035,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "education_research",
-        "land_use_code_zh": "教育科研",
+        "land_use_code": "0804",
+        "land_use_code_zh": "教育用地",
         "row_zone": "AI原点社区段",
         "area_sqm_declared": 379385.285,
         "area_sqm_calculated": 379385.285,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "education_research",
+        "land_use_code_label_zh": "教育用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -1053,13 +1091,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "green_water",
-        "land_use_code_zh": "绿地水系",
+        "land_use_code": "1401",
+        "land_use_code_zh": "公园绿地",
         "row_zone": "AI原点社区段",
         "area_sqm_declared": 36229.561,
         "area_sqm_calculated": 36229.561,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "green_water",
+        "land_use_code_label_zh": "公园绿地"
       },
       "geometry": {
         "type": "Polygon",
@@ -1111,13 +1151,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "education_research",
-        "land_use_code_zh": "教育科研",
+        "land_use_code": "0804",
+        "land_use_code_zh": "教育用地",
         "row_zone": "五道口—众智园段",
         "area_sqm_declared": 260535.463,
         "area_sqm_calculated": 260535.463,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "education_research",
+        "land_use_code_label_zh": "教育用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -1169,13 +1211,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "industrial_research",
-        "land_use_code_zh": "产业研发",
+        "land_use_code": "0802",
+        "land_use_code_zh": "科研用地",
         "row_zone": "五道口—众智园段",
         "area_sqm_declared": 358519.337,
         "area_sqm_calculated": 358519.337,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "industrial_research",
+        "land_use_code_label_zh": "科研用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -1223,13 +1267,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "green_water",
-        "land_use_code_zh": "绿地水系",
+        "land_use_code": "1401",
+        "land_use_code_zh": "公园绿地",
         "row_zone": "五道口—众智园段",
         "area_sqm_declared": 398355.662,
         "area_sqm_calculated": 398355.662,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "green_water",
+        "land_use_code_label_zh": "公园绿地"
       },
       "geometry": {
         "type": "Polygon",
@@ -1277,13 +1323,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "industrial_research",
-        "land_use_code_zh": "产业研发",
+        "land_use_code": "0802",
+        "land_use_code_zh": "科研用地",
         "row_zone": "五道口—众智园段",
         "area_sqm_declared": 531141.699,
         "area_sqm_calculated": 531141.699,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "industrial_research",
+        "land_use_code_label_zh": "科研用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -1331,13 +1379,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "industrial_research",
-        "land_use_code_zh": "产业研发",
+        "land_use_code": "0802",
+        "land_use_code_zh": "科研用地",
         "row_zone": "五道口—众智园段",
         "area_sqm_declared": 115574.827,
         "area_sqm_calculated": 115574.827,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "industrial_research",
+        "land_use_code_label_zh": "科研用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -1385,13 +1435,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "green_water",
-        "land_use_code_zh": "绿地水系",
+        "land_use_code": "1401",
+        "land_use_code_zh": "公园绿地",
         "row_zone": "众智园片区段",
         "area_sqm_declared": 164171.582,
         "area_sqm_calculated": 164171.582,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "green_water",
+        "land_use_code_label_zh": "公园绿地"
       },
       "geometry": {
         "type": "Polygon",
@@ -1439,13 +1491,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "industrial_research",
-        "land_use_code_zh": "产业研发",
+        "land_use_code": "0802",
+        "land_use_code_zh": "科研用地",
         "row_zone": "众智园片区段",
         "area_sqm_declared": 487085.268,
         "area_sqm_calculated": 487085.268,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "industrial_research",
+        "land_use_code_label_zh": "科研用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -1493,13 +1547,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "green_water",
-        "land_use_code_zh": "绿地水系",
+        "land_use_code": "1401",
+        "land_use_code_zh": "公园绿地",
         "row_zone": "众智园片区段",
         "area_sqm_declared": 540749.811,
         "area_sqm_calculated": 540749.811,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "green_water",
+        "land_use_code_label_zh": "公园绿地"
       },
       "geometry": {
         "type": "Polygon",
@@ -1547,13 +1603,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "public_space",
-        "land_use_code_zh": "公共空间",
+        "land_use_code": "1403",
+        "land_use_code_zh": "广场用地",
         "row_zone": "众智园片区段",
         "area_sqm_declared": 720255.047,
         "area_sqm_calculated": 720255.047,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "public_space",
+        "land_use_code_label_zh": "广场用地"
       },
       "geometry": {
         "type": "Polygon",
@@ -1601,13 +1659,15 @@
           "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509"
         ],
         "usage_note": "概念性 provisional 几何，仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据；正式红线发布后须复算重绘。",
-        "land_use_code": "education_research",
-        "land_use_code_zh": "教育科研",
+        "land_use_code": "0804",
+        "land_use_code_zh": "教育用地",
         "row_zone": "众智园片区段",
         "area_sqm_declared": 346965.327,
         "area_sqm_calculated": 346965.327,
         "area_confidence": "low",
-        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。"
+        "area_note": "EPSG:4548 复算的概念设计模型值，非官方面积。",
+        "functional_group": "education_research",
+        "land_use_code_label_zh": "教育用地"
       },
       "geometry": {
         "type": "Polygon",

@@ -36,3 +36,8 @@
 - 目录规范：按投稿目录白名单移出过程性文件（本地分析记录与生成脚本不进入投稿包）。
 - 措辞合规：修订版权说明中一处易引发误读的否定性表述。
 - 影响：投稿包进入 ready_for_review 状态，四门自检（deterministic/spatial/visual/professional）全部通过并持久化 `self_check.json`。
+
+## v1.0.1 - 2026-08-26
+
+- 修复：`geometry/land_use.geojson` 的 `land_use_code` 从方案功能分类（residential_support 等）改为官方用地用海分类数字代码子集（自然资发〔2023〕234号：0701/0802/0804/0901/1401/1403），方案功能分类移入 `functional_group` 字段保留；响应 CI submission-validation 的确定性校验反馈。
+- 影响：仅数据字段口径修正，几何、面积与指标不变；四门自检重跑通过。
