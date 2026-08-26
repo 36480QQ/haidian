@@ -55,14 +55,14 @@
       "role": "self_check",
       "language": "neutral",
       "required": true,
-      "sha256": "da1f3abe34e4ff1aaea10b578e302cdba0f192d9032f1351fee81e7dfdb4068a"
+      "sha256": "e243721e3a7722824bb048e96b5155d1d36ebea3b33e079bbf4c3da231e2473e"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "language": "zh",
       "required": true,
-      "sha256": "9165bf68212ac81d440c78b90bfaced6f736b331714a7ebdaca85720c8e175a3"
+      "sha256": "c54aa997ebda76e6eebd4aa55c049735e71c4b49f8d1972cf229190470bd655a"
     },
     {
       "path": "standard_matrix.json",
@@ -83,14 +83,14 @@
       "role": "changelog",
       "language": "zh",
       "required": true,
-      "sha256": "59cd2ea0d2cbf47fbccfc0ec4c22dbc02675dcdb5e21d65f77bcef905cd4b3e1"
+      "sha256": "e3218f66bf6eec960c35c951a92014489625c8eb917ee27715535e0a33d2d218"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "language": "zh",
       "required": true,
-      "sha256": "eabe12f86065695db28999a562c863e5e9b42d03a31a544c4b54e0032fcbbf64"
+      "sha256": "abbd75651523ceaf654c1b18c67ce77f166082c0aa13968e1bb5a2fc3d54e1ac"
     },
     {
       "path": "proposal.en.md",
@@ -98,14 +98,14 @@
       "language": "en",
       "required": true,
       "translation_of": "proposal.md",
-      "sha256": "fcdcf364b73c14ac78a9c26379770a7385195375375f50221086a868734ab17b"
+      "sha256": "38612ac3dc1f7363118a9a4733300898b7ddbd409f3eac8a214d836aa4c468a3"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "language": "zh",
       "required": true,
-      "sha256": "b689831161d6f97f27cebd412fdd691b1f981f359cffb980be89713cdc5cd72d"
+      "sha256": "749574fa928a989ea7418c2ac53e7663644016f189a375e0e9dc202ba9405135"
     },
     {
       "path": "report/proposal.en.html",
@@ -113,7 +113,7 @@
       "language": "en",
       "required": false,
       "translation_of": "report/proposal.html",
-      "sha256": "f2522a38ecf629f063a1b794772daa70b2f5da7f710166b4d009c16ffd5bc80d"
+      "sha256": "a04b22aa5228496251bfc4c38cf15fb25f3429a79531d6c28d46ebef34b16d24"
     },
     {
       "path": "report/copyright_statement.md",
@@ -142,7 +142,7 @@
       "role": "asset",
       "language": "neutral",
       "required": true,
-      "sha256": "416eab597e7328a407d2124aa3d205db105f3cc5e90ea1d7da72377a33a938e5"
+      "sha256": "d12838f02e3ffdf95f9a45a2e34f3395621f43ed35a0950680eaa49e21a31243"
     },
     {
       "path": "assets/figures/jingzhang-growth-mark.svg",
