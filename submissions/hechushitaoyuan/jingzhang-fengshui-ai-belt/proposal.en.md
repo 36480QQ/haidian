@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Reframing fengshui as China's traditional science of human-settlement performance, this proposal turns the centennial Jing-Zhang railway corridor into a computable, recomputable and operable AI innovation belt: one dragon pulse, three areas and five bands, embracing waters, and deliberate reserve land."
 tracks: ["jingzhang-heritage-narrative", "civic-agent-governance", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "ai-health-service-navigation", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.7"
+iteration: "v1.8"
 ---
 
 # Jing-Zhang Qi-Pulse · Fengshui AI
@@ -359,6 +359,19 @@ Estimating assumption: if deepening proceeds, S/M/L bands are checked against or
 | Exit state | If the pilot exits as a whole, the south greenway, Compass Plaza, and lighting remain everyday public space under the Phase-1 rollback state; scenario facilities continue only in their declared post-exit uses |
 | Pre-start verification checklist | If the pilot is proposed to start, three checks are completed before the works notice: traceable south-gateway ownership and existing-conditions records; the public operator onboarded with its role specification signed; and the Phase-1 rollback responsibility trigger fixed in writing as “any entry-gate condition lapses, the rollback responsibility activates” |
 | Vacancy response path | If the corridor steward or independent reviewer is vacant, no works notice is issued; if any bound role becomes vacant after startup, related scenarios and activity layers close immediately while completed public space remains open, and vacancy handling is recorded in quarterly review |
+
+**Dependency-path registry (conditional)**. If the pilot is proposed to start, each prerequisite below is confirmed item by item; while any number remains unconfirmed, only its “fallback when missing” is performed — this is not treated as an entry-gate pass, and verbal commitments do not substitute for registration.
+
+| ID | Dependency | Prerequisite condition | Responsible role | Fallback when missing |
+| --- | --- | --- | --- | --- |
+| DP-01 | South-gateway ownership and existing-conditions basis | Traceable ownership records and a written right-of-way basis | Delivery body | If records are missing, conduct only existing-condition walks and design deepening that occupy no unverified right-of-way |
+| DP-02 | Public operator onboarded | Role specification signed and a daily operations contact identifiable | Public operator | If not onboarded, issue no works notice; completed public space receives cleaning and safety-patrol maintenance only |
+| DP-03 | Independent reviewer onboarded | Appointment and countersignature channel established, mutually exclusive from every operating role | Independent reviewer | If vacant, issue no works notice; opening/expansion items enter a pending-countersignature register |
+| DP-04 | Accessibility guardian available for verification | Acceptance checklists ready for scenario no-AI paths and activity accessibility | Accessibility guardian | If absent, close intelligent and activity layers while basic public space remains open |
+| DP-05 | Design and municipal engineering capacity bound | Professional design team and municipal engineering entity assigned under WP-01/WP-04 | Delivery body | If assignment is incomplete, pause construction work packages and complete sub-project design checks first |
+| DP-06 | Funding-source type confirmed | Fiscal investment, social capital, or scenario-operation self-balance confirmed in writing by the responsible body | Delivery body | If unconfirmed, retain only zero-construction concept display and co-design workshops |
+| DP-07 | Data governance and privacy boundary ready | Scenario minimal-data column, anonymisation basis, and deletion path registered | Data-governance roles | If not ready, deactivate the related data item; the scenario keeps manual service without those data |
+| DP-08 | Safety and emergency interfaces confirmed | Fire, transport, and municipal review channels plus an on-site stop mechanism available | Delivery body + professional institutions | If unconfirmed, issue no works notice and manage existing facilities as static public space |
 
 **Renewal project action packs (conceptual, numbered for discussion; cost class is a conceptual estimate category, not investment accounting or commitment)**: ① greenway connection works; ② three landmark plazas; ③ Wind-Harbouring compute-pavilion pilot (linked to scenario card #13); ④ robot-delivery-port pilot; ⑤ solar-term operations starter package; ⑥ deployment of wind-shelter service components [metric:renewal_project_count]. Action packs for each; every item traces to layers and metrics in `compliance_matrix.json`:
 
