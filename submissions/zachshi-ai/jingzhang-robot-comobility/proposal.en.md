@@ -1,5 +1,5 @@
 ---
-title: "Jingzhang AI Low-Speed Robot Co-Mobility Network v6: Dual Engines — Cross-Section Grammar x Co-Mobility License"
+title: "Jingzhang AI Low-Speed Robot Co-Mobility Network: Dual Engines — Cross-Section Grammar x Co-Mobility License"
 author_github: "zachshi-ai"
 language: "en"
 proposal_format_version: "2"
@@ -12,7 +12,7 @@ tracks: ["robotics-autonomous-mobility", "ai-origin-community"]
 scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability"]
 ---
 
-# Jingzhang AI Low-Speed Robot Co-Mobility Network v6: Dual Engines
+# Jingzhang AI Low-Speed Robot Co-Mobility Network: Dual Engines
 
 This proposal runs on two parallel engines: the **Co-Mobility Cross-Section Grammar** answers "how to design the space"; the **Co-Mobility License** answers "how to govern the operation".
 
@@ -208,7 +208,7 @@ Signaling governs **safety** (who may enter); the timetable governs **time** (wh
 
 **Capacity consistency check (v9.1, answering the feasibility question).** Are "one robot per block" and "2,000 orders/day on the demo section" consistent? The honest calculation is: **not directly, and it must be phased** [E:ROBOT-CAPACITY-MODEL]. The 8 block sections total 13.1 km, covering the spine of the 18.78 km lane network; the remaining 5.68 km are station-approach and last-hundred-meter connectors running at walking-follow speed without block signaling. Under the current block rule, the bottleneck block BLK-02 (3.1 km at 15 km/h) allows a 12.4-minute transit — about 4.8 end-to-end trips per hour, ~116 trips per 12-hour two-way day, and with 2-3 orders per trip roughly **230-350 orders/day** — the honest capacity ceiling of the initial phase, short of 2,000/day. Reaching that target requires sub-blocking (splitting the dedicated spine into 17 sub-blocks of 500 m yields ~1,440-2,160 orders/day); moving-block operation goes further in the long term. The KPI table has therefore been restated as three phased targets, with 2,000 orders/day applying only after sub-blocking matures — no longer the initial pass threshold. The model and its self-check script are at `visual/assets/signal-capacity-model.json` and `run_signal_capacity.js` (all 4 consistency checks pass) [data:visual/assets/signal-capacity-evidence.json#checks]。
 
-### Meta-Level Validation: Self-Explaining Cross-Section Test (original to this proposal, v6)
+### Meta-Level Validation: Self-Explaining Cross-Section Test (original to this proposal)
 
 The cross-section grammar's promise is "generating governance requirements from geometric constraints" — pedestrians can read the rules from the cross-section drawing itself. That promise **can be verified**: visual features and behavior rules must correspond one-to-one and be inferable in both directions — seeing a cross-section yields the rules; hearing the rules yields the cross-section drawing. Unambiguity = self-explaining [E:ROBOT-SELF-EXPLAINING].
 

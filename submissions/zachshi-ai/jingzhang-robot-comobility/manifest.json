@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "195fd91e363a54a7d3f815047e1c9d670bc5224411a5fd88e9da7212a2ad191c"
+      "sha256": "d9b493acafc85661417ca0d08b1ced8193eb7c5151e3a6b155823621da5790ee"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8935b43653f4d799bc1c3e0ab3f8a05f69a3b4a0cb782548082b4ded53568737"
+      "sha256": "a132ec3606fe2f4623eae6f448250306bca78c791b2e932353ee5b7db09425bd"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "a94180d4de6fcab937ccb23625c8ea47111a7540e5449ebd8a5bde28c7af3bf6"
+      "sha256": "514ae339b72793f77097d9083aec09a5795fadf6c966b995f856885b1934e975"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a8a4de1dfc40a50af857578246abbf9bbca2d787b36a7c114442b687ca4cd879"
+      "sha256": "7c496e534ff61c0fb20c5d2b78252e8dd889d87368252437a4d835826a3f3216"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9582dfce7349b95cd7871bbb3df89e608d8f5672e961def6bb28510879b4c63c"
+      "sha256": "b1ce92c1d64f090244a0196b97ae49175a0a12cdb72dba5a45590a755ac2c9e4"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "ec4f26ef24aabf8eee3a2f0aa86a3b5b1b48bdb7d192736ecb58d9cdca27528a"
+      "sha256": "29494070f570c01077c0c80f1add16714e9e494d8f9047905d260e3d84cec137"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -213,7 +213,7 @@
       "translation_of": "proposal.md",
       "title_zh": "京张AI低速机器人共行网（英文正式译文）",
       "title_en": "Jingzhang AI Low-Speed Robot Co-Mobility Network (English translation)",
-      "sha256": "1e3f7c39f1832fdd99df520cc420a1f2d95fb56e966cf744aafef29dac24f475"
+      "sha256": "216471b7ef65f20dfa45742c772660075d06ff819b638d83bd84c1c4e3417c92"
     },
     {
       "path": "risk.json",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5eb1ddb301407db9b6b8cba72a9d8d497cd4b1f0183dbb4bc2caca362ed0dc9d"
+      "sha256": "da8c372cf31231ca646f5fbcc7c6d20c7236c38f8149d6f9e166d2a68840ffd0"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "c99675e72593afcb2acb5a3d4ff0bf68bf23739bf80a4368de059b8ae33d973d"
+      "sha256": "29e057182fe6061a8b62e1cb517c977e9fb060a6a6d14be65c642d4ed3bc93a7"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -245,7 +245,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "a18beb418f5516397fa451386568c0f534d3f420059efad882a99b22c4018c46"
+      "sha256": "fa595078ba4486a9edb20ef1aeea3dfa22093f161152a91e05be37cd59811a55"
     },
     {
       "path": "visual/index.en.html",
@@ -253,7 +253,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "43d7dcc7410d53d387ddbb0c4e4da24d794f8076647994b9d3298ee4ef9ff702"
+      "sha256": "5c6b975f7e748862e6b9af5e1190a7567709493a93fb04233d855d5f1dbd0c15"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -353,7 +353,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "6d0d72ec671ad7bc5450e95151ca3c50c41fa5d2f6656e793197049bb24ae0a8"
+      "sha256": "4d3fdad854160a9b06a0777d05b1fd2d86844092f5a81602ad005b36143b8b3d"
     },
     {
       "path": "simulation.json",
