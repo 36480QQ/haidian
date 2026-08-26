@@ -94,6 +94,7 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 </style>
 </head>
 <body>
+<main>
 <h1 id="ai">智脉京张 · AI 原生创新带概念方案</h1>
 <blockquote>
 <p><strong>一句话方案</strong>：把 117 年前詹天佑的铁路信号安全制度（闭塞分区、联锁、路签）转译为 AI 时代的空间交互协议——<strong>1909协议</strong>，让京张铁路遗址公园成为概念上的全球首个（待实施验证）<strong>可编程城市街区</strong>：空间即 API，AI 应用从写代码到部署进真实城市，周期从月级压缩到天级。</p>
@@ -111,7 +112,7 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 <p><strong>背景信息来源标注说明</strong>：本方案部分现状/产业/交通数据引用自 <code>REF-JINGZHANG-PARK-2026</code>、<code>REF-HD-AI-2025</code>、<code>REF-BJMETRO-13</code> 三类来源。依据 sources.json，这三类来源均为 <strong>background_only / provisional（背景信息、待核实假设）</strong>，未经理正式测绘、权属核查或控规确认，<strong>不得作为现状判定或实施类确定结论的依据</strong>。凡引用上述来源的陈述，均已以【背景信息·待核实】标注；其对应现状事实仍需以官方统计、实地踏勘和控规成果为准。</p>
 </blockquote>
 <p>本方案遵守《国土空间用地用海分类指南》[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、《城市设计管理办法》[standard:MOHURD-URBAN-DESIGN-MEASURES]、《控制性详细规划编制审批办法》[standard:MOHURD-CONTROL-DETAILED-PLANNING]、《建筑工程设计文件编制深度规定》[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]。</p>
-<p><img alt="智脉京张总览图：三核一轴两翼空间结构" src="assets/figures/site-overview.png"></p>
+<p><img alt="智脉京张总览图：三核一轴两翼空间结构" src="../assets/figures/site-overview.png"></p>
 <h2 id="_2">三层范围工作框架</h2>
 <ul>
 <li><strong>统筹研究范围</strong>（约 43.6 km²）[metric:research_area_sqm]：北五环至北京北站，东西约 1-2 km，承载世界级 AI 创新生态与未来城市形态战略研究 [depth:three_level_scope_framework]。</li>
@@ -119,7 +120,7 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 <li><strong>重点区域范围</strong>（几何复算约 368.6 ha，公告口径约 368.4 ha）[metric:key_area_total_sqm] [metric:key_areas_count]：自北向南——众智园 AI 自主创新加速区 191.9 ha（KEY-001，公告 192.1 ha）、北京 AI 原点社区 104.3 ha（KEY-002）、大钟寺 AI 产业集聚区 72.4 ha（KEY-003，公告 72.0 ha）[data:geometry/key_areas.geojson#KEY-001] [data:geometry/key_areas.geojson#KEY-002] [data:geometry/key_areas.geojson#KEY-003] [depth:three_key_area_detailed_design]。</li>
 </ul>
 <p>本方案采用的 site_boundary 与 key_areas 均为临时粗略边界（official_boundary=false），面积已在 EPSG:4548 投影下复算；三核几何复算 368.6 ha 与公告口径 368.4 ha 的差异源于 provisional 边界精度 [metric:site_area_sqm] [metric:key_area_total_sqm] [depth:metrics_recalculation]。三核位置已基于公开可查的公开地理锚点（大钟寺站、五道口/东升大厦、学院路高校群）对官方 provisional 占位矩形进行了概念性校准，仍为非官方红线，待官方数据发布后替换。替换官方 polygon 后需重算用地、建筑、道路、蓝绿、公共空间、分期等图层及相关指标 [depth:existing_conditions_diagnosis]。</p>
-<p><img alt="用地结构图：六区功能分区与面积" src="assets/figures/land-use-structure.png"></p>
+<p><img alt="用地结构图：六区功能分区与面积" src="../assets/figures/land-use-structure.png"></p>
 <h2 id="_3">现状基底与公开数据锚点</h2>
 <blockquote>
 <p>本节数据均来自公开报道和官方发布，用于锚定方案的现实基础，不替代实地踏勘和官方测绘。方案定位为<strong>在已建成城市基底上叠加AI原生层</strong>，而非从零建设。</p>
@@ -323,7 +324,7 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 <blockquote>
 <p>区域协同关系为概念建议，具体协同机制需经市级层面统筹和各区分工协商。</p>
 </blockquote>
-<p><img alt="区域协同图：智脉京张与三科学城、经开区、京津冀创新网络" src="assets/figures/regional-synergy.png"></p>
+<p><img alt="区域协同图：智脉京张与三科学城、经开区、京津冀创新网络" src="../assets/figures/regional-synergy.png"></p>
 <h3 id="ai-8">全球 AI 创新生态案例比较（8 案例）</h3>
 <table>
 <thead>
@@ -509,7 +510,7 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 </tbody>
 </table>
 <p><strong>1909协议的独特价值</strong>：现有"智慧城市"标准多从IT视角出发（网络协议、数据标准），而1909协议从铁路安全——一种经过百年验证的、物理空间中的、高可靠的分布式安全系统——出发，重新定义AI与城市空间的交互规则。它不是技术堆栈，而是一套<strong>空间-数字混合的安全制度</strong>，可被其他城市和AI园区复用。</p>
-<p><img alt="1909协议机制图：路签→联锁→闭塞分区→信号机→调度所，源自铁路信号的AI原生空间交互协议" src="assets/figures/protocol-1909.png"></p>
+<p><img alt="1909协议机制图：路签→联锁→闭塞分区→信号机→调度所，源自铁路信号的AI原生空间交互协议" src="../assets/figures/protocol-1909.png"></p>
 <h3 id="ai_3">原创机制二：AI原生空间类型学</h3>
 <p>传统城市设计的空间类型（广场、街道、公园、庭院、中庭）服务于人的活动。AI原生城市需要新的空间类型——同时服务于人和AI agent的、传统分类中不存在的空间。本方案提出四种AI原生空间类型：</p>
 <p><strong>类型A：算力水塔（Compute Water Tower）</strong>
@@ -562,7 +563,7 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 <blockquote>
 <p>以上1909协议、AI原生空间类型和空间版本控制均为概念建议，具体技术标准、工程做法、管理制度需专业团队深化研究和相关部门审批。</p>
 </blockquote>
-<p><img alt="AI原生空间类型学：算力水塔、提示广场、模型机房、道岔广场" src="assets/figures/ai-typologies.png"></p>
+<p><img alt="AI原生空间类型学：算力水塔、提示广场、模型机房、道岔广场" src="../assets/figures/ai-typologies.png"></p>
 <h2 id="_9">总体设计范围城市更新与控规深度城市设计</h2>
 <p>总体结构为"一轴、三核、两翼、多节点"：以京张绿廊为创新主脉，串联三核，西翼科技服务、东翼场景赋能，节点为可感知的 AI 场景与公共空间 [data:geometry/land_use.geojson#LU-001] [data:geometry/land_use.geojson#LU-002] [data:geometry/land_use.geojson#LU-003] [depth:land_use_layout]。</p>
 <p><strong>用地布局</strong>（概念性，非法定用地性质）[metric:land_use_total_sqm]：
@@ -620,12 +621,12 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 <p>定位：世界级 AI 创新生态与 24 小时混合生活锚点。<strong>现实锚点</strong>【背景信息·待核实】[source:REF-HD-AI-2025][source:REF-XUEYUANLU-UNIV]：清华、北大、中科院自动化所/软件所/物理所、智源研究院；AI原点社区已入驻200+ AI企业（东升大厦、清华科技园、智源大厦），"上下楼就是上下游"；王慧文"黄金框"核心。空间结构：研发+居住混合街区，底层公共活动带，智脉原点碑（LM-01）位于中心广场，口袋公园 GR-003。建筑：围合式居住街坊，约23个街坊、109栋建筑段，内部留庭院 [data:geometry/buildings.geojson#BD-002-0101]。AI 场景：AI+健康导航站（SC-05）、AI教育空间（SC-06）、AI法律助手（SC-07）、开发者散步道（LM-03/SC-01）。实施风险：居住区业态混合需公众参与 [depth:three_key_area_detailed_design]。</p>
 <h3 id="ai-724-hadatageometrykey_areasgeojsonkey-003">大钟寺 AI 产业集聚区（南，约 72.4 ha）[data:geometry/key_areas.geojson#KEY-003]</h3>
 <p>定位：智能原生新业态与产业门户。<strong>现实锚点</strong>【背景信息·待核实】[source:REF-HD-AI-2025][source:REF-XUEYUANLU-UNIV]：大钟寺站（12/13号线）、中坤广场；北邮、北师大、北交大、央财；海淀区官方"两区一带多点"AI街区规划的两大先导区之一（另一个为五道口），京张遗址公园创新交往带。空间结构：商务+消费+测试场，全球AI里程碑亭（LM-04）位于门户广场。建筑：围合式商务街坊，约15个街坊、76栋建筑段，南商北办、临绿廊活跃界面 [data:geometry/buildings.geojson#BD-003-0101]。AI 场景：机器人配送走廊（SC-08，测试验证）、自动驾驶接驳（SC-09，测试验证）、AI文化导览（SC-10）、AI定制零售（SC-13）、AI金融与合规顾问（SC-14）、AI沉浸体验空间（SC-15）。实施风险：商业权属与工程条件待确认 [depth:three_key_area_detailed_design]。</p>
-<p><img alt="三核详细设计图：众智园、AI原点、大钟寺" src="assets/figures/key-areas.png"></p>
-<p><img alt="概念剖面图：南北向天际线与三核高度示意" src="assets/figures/concept-section.png"></p>
+<p><img alt="三核详细设计图：众智园、AI原点、大钟寺" src="../assets/figures/key-areas.png"></p>
+<p><img alt="概念剖面图：南北向天际线与三核高度示意" src="../assets/figures/concept-section.png"></p>
 <blockquote>
 <p>概念剖面为空间意向表达，非建筑方案；建筑高度、体量和布局均待专业团队深化研究和控规审批。</p>
 </blockquote>
-<p><img alt="城市设计导则：典型街道断面、建筑高度控制、公共空间界面与用地平衡" src="assets/figures/urban-design-guidelines.png"></p>
+<p><img alt="城市设计导则：典型街道断面、建筑高度控制、公共空间界面与用地平衡" src="../assets/figures/urban-design-guidelines.png"></p>
 <p><em>图4b 城市设计导则——京张绿廊大道、核心区内部街道、两翼联系道路三种典型断面概念示意；三核差异化高度概念方向（众智园以中低层研发街区为主、AI原点以低多层混合社区为主、大钟寺以中高层商务集群为主，均为概念体量方向，非法定高度控制，具体高度、容积率和退线以控规和城市设计导则为准）；底层架空、POPS、5min步行覆盖等公共空间界面导则；用地平衡表含概念性FAR/密度/绿地率指标。所有指标为概念建议值，以控规为准。</em></p>
 <h3 id="_11">小月河场景赋能翼（东翼）深化设计</h3>
 <p>小月河场景赋能翼是AI+生活场景的"开放试验场"，沿小月河（东升段至学院路段）约3km，串联三核东侧的居住社区、高校和产业用地。与三核的"研发-生态-产业"主线不同，东翼聚焦<strong>可感知、可体验、可测试</strong>的AI生活场景。</p>
@@ -713,18 +714,18 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 <h3 id="_12">三核三维空间表达</h3>
 <p>为补充平面图和剖面图的三维感知，以下提供两类三维图件：</p>
 <p><strong>（一）空间分析轴测图</strong>——基于buildings.geojson中441栋建筑的实际坐标和层数生成，展示三核的建筑高度关系、绿廊空间渗透和标志性节点位置。建筑高度按层数×3.5m概念推算，金色为标志性建筑，绿色为京张绿廊主脉。此图与总平面图、用地结构图空间对应，可作为空间分析依据。</p>
-<p><img alt="众智园轴测鸟瞰图" src="assets/figures/axonometric-key-001.png"></p>
+<p><img alt="众智园轴测鸟瞰图" src="../assets/figures/axonometric-key-001.png"></p>
 <p><em>图：众智园（北核）轴测鸟瞰——191.9ha，256栋概念建筑，蓝色为AI研发/实验室，金色为扇形机车库（保留）、算力中心、红队测试床、开源成果展示廊等标志节点，绿廊自南向北贯穿</em></p>
-<p><img alt="AI原点社区轴测鸟瞰图" src="assets/figures/axonometric-key-002.png"></p>
+<p><img alt="AI原点社区轴测鸟瞰图" src="../assets/figures/axonometric-key-002.png"></p>
 <p><em>图：AI原点社区（中核）轴测鸟瞰——104.3ha，109栋概念建筑，黄色为居住/人才公寓，紫色为办公/混合，金色为社区AI中心、AI教育空间、人才公寓标志节点，绿廊居中分隔东西片区</em></p>
-<p><img alt="大钟寺轴测鸟瞰图" src="assets/figures/axonometric-key-003.png"></p>
+<p><img alt="大钟寺轴测鸟瞰图" src="../assets/figures/axonometric-key-003.png"></p>
 <p><em>图：大钟寺（南核）轴测鸟瞰——72.4ha，76栋概念建筑，红色为商业/配套，紫色为办公/总部，金色为AI总部大楼（26层区域制高点）、商业中心、轨道接驳枢纽、AI展示中心，绿廊自北向南</em></p>
 <p><strong>（二）效果意向图</strong>——AI生成的建筑效果意向图，表达建成后的空间氛围、材质和尺度感。此图为视觉表达，建筑数量、街道网格和具体位置与公开地图不对应，空间位置以上述空间分析轴测图和总平面图为准。</p>
-<p><img alt="众智园效果意向图" src="assets/figures/rendering-key-001.jpg"></p>
+<p><img alt="众智园效果意向图" src="../assets/figures/rendering-key-001.jpg"></p>
 <p><em>图：众智园（北核）效果意向——保留的扇形机车库（右上红砖建筑）改造为开源成果展示廊，深色建筑为算力中心，蓝灰玻璃为AI研发塔楼群，线性绿廊南北贯通</em></p>
-<p><img alt="AI原点社区效果意向图" src="assets/figures/rendering-key-002.jpg"></p>
+<p><img alt="AI原点社区效果意向图" src="../assets/figures/rendering-key-002.jpg"></p>
 <p><em>图：AI原点社区（中核）效果意向——左侧暖色调为居住和人才公寓（6-12层），右侧蓝玻璃为TOD混合塔楼（最高20层），中央绿廊含社区花园和儿童活动场</em></p>
-<p><img alt="大钟寺效果意向图" src="assets/figures/rendering-key-003.jpg"></p>
+<p><img alt="大钟寺效果意向图" src="../assets/figures/rendering-key-003.jpg"></p>
 <p><em>图：大钟寺（南核）效果意向——金色玻璃塔楼为AI总部大楼（概念性中高层体量方向，非建筑设计方案，具体高度、层数和体量待控规和建筑设计确定），西侧红砖为商业街区，线性绿廊南北贯通</em></p>
 <blockquote>
 <p>⚠ 以上轴测图为概念性空间表达，建筑高度、体量、位置均为agent推断，非真实建筑方案。效果意向图为AI生成，不代表真实建筑设计，空间位置以总平面图和空间分析轴测图为准。provisional boundary, official_boundary=false。</p>
@@ -1383,7 +1384,7 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 <li><strong>SC-14 AI金融与合规顾问</strong>：面向AI创业者和中小企业的一站式AI金融服务站——AI辅助商业计划书生成、估值参考、政策匹配（中关村高新企业认定、研发费用加计扣除等）、知识产权检索、合同初审。空间特征：大钟寺商务楼内设"AI服务吧台"，创业者可预约15分钟免费AI咨询，复杂需求转持牌机构和律师。不替代银行/律所/会计师事务所，所有建议标注"非专业意见，请咨询持牌机构"。</li>
 <li><strong>SC-15 AI沉浸式体验空间</strong>：大钟寺门户区的AI主题沉浸体验——游客可与AI共同生成京张铁路历史场景（1909年青龙桥人字形铁路、詹天佑时代）、未来AI城市愿景、个人AI肖像等；AI驱动的互动艺术装置；多语言AI导览（中/英/日/韩）。空间特征：约500-1000㎡，利用旧商业空间改造，门票收入部分反哺社区基金。内容经人工审核，设年龄分区，不采集虹膜/指纹等生物特征。</li>
 </ul>
-<p><img alt="交通与蓝绿系统图：道路网络与公共空间" src="assets/figures/mobility-bluegreen.png"></p>
+<p><img alt="交通与蓝绿系统图：道路网络与公共空间" src="../assets/figures/mobility-bluegreen.png"></p>
 <h2 id="_13">用地、建筑规模与拆改留方案</h2>
 <p>用地分区严格按 geometry/land_use.geojson 六区落实 [data:geometry/land_use.geojson#]，无重叠覆盖总体设计范围约 11.4 km² [metric:site_area_sqm] [metric:land_use_total_sqm] [depth:land_use_layout]。建筑概念体量以 geometry/buildings.geojson 441 栋表达 [data:geometry/buildings.geojson#]，采用围合式街坊布局，建筑沿街道周边布置、内部留庭院，含3栋保留工业遗产（旧厂房、扇形机车库、仓库）以虚线标识；建筑基底约 65.5 万 m² [metric:building_footprint_area_sqm] [metric:building_count]，三核内建筑密度约18%（≤35%导则），仅为体量示意、非审批建筑面积。</p>
 <p>开发强度（容积率、建筑高度、密度分区）与拆改留分类全部列为待确认控规条件 [depth:development_intensity_controls] [depth:height_massing_character] [depth:retain_renovate_demolish]：在获取官方精确红线、三核 polygon、现状建筑测绘与权属数据之前，本方案不给出任何容积率数值、不设具体高度、不判定拆/改/留 [assumption:A-BUILD-001]。用地代码参照《国土空间用地用海分类指南》概念映射 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。</p>
@@ -1404,7 +1405,7 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 3. <strong>LM-03 开发者散步道</strong>：绿廊中段，代码星光大道，地面铭刻杰出开发者/项目；
 4. <strong>LM-04 全球AI里程碑亭</strong>：大钟寺门户广场，全球AI发展节点展示。</p>
 <p>地标为概念设计，未经文保/绿地/蓝线专项审批，不得写成已批准建设。风貌：铁路遗存肌理+浅灰金属玻璃+克制暖光+青绿基底 [standard:MOHURD-URBAN-DESIGN-MEASURES]。</p>
-<p><img alt="核心指标复算与证据链图" src="assets/figures/metrics-evidence.png"></p>
+<p><img alt="核心指标复算与证据链图" src="../assets/figures/metrics-evidence.png"></p>
 <h2 id="_16">公共利益与包容性</h2>
 <p>本方案将公共利益作为AI原生创新带的底线而非附属品，提出以下具体措施（均为概念建议，待政策研究和公众参与确认）：</p>
 <p><strong>人才安居</strong>：在AI原点社区和众智园建议配置不少于总建面20%的人才公寓和保障性租赁住房，面向AI研究者、创业者和青年学生，租金建议为市场价的60-70%。其中30%面向刚毕业3年内的青年人才，20%面向在站博士后和访问学者。公寓配建AI学习角和共享工位，降低创业居住成本。</p>
@@ -1928,7 +1929,7 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 <blockquote>
 <p>以上内容均为概念性方向建议，不构成投资承诺、融资安排、政府债务安排或任何形式的财务保证。具体投资规模、资金结构、收益预期和风险分担需在权属核查、控规编制和工程可研完成后，由专业财务顾问机构测算确定。</p>
 </blockquote>
-<p><img alt="三核现状分析：机构锚点·可更新用地概念分类·利益相关者" src="assets/figures/site-readiness.png"></p>
+<p><img alt="三核现状分析：机构锚点·可更新用地概念分类·利益相关者" src="../assets/figures/site-readiness.png"></p>
 <p><strong>治理结构建议</strong>（概念性，待政策研究）：
 - <strong>领导小组</strong>：区政府牵头，规划、科技、经信、财政、街道等参与，统筹政策和重大事项
 - <strong>运营平台公司</strong>：建议由区属国企牵头，引入专业运营团队，负责日常运营、场景管理、活动组织
@@ -2279,7 +2280,7 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 - <strong>与中关村政策衔接</strong>：智脉京张入驻企业自动纳入中关村高新企业服务体系，享受研发费用加计扣除、技术合同登记等政策；与海淀区"两区"建设政策衔接
 - <strong>转化漏斗指标</strong>（概念目标）：Open Week参与团队500+→深度对接100+→落地入驻30+→获得融资10+→规模化成长5+（年度）
 - <strong>回访与迭代</strong>：每季度回访入驻企业，收集需求反馈，迭代空间和服务；年度发布《智脉京张创新生态报告》</p>
-<p><img alt="实施路线图与治理结构：分期投资、治理层级、关键成功因素" src="assets/figures/implementation-roadmap.png"></p>
+<p><img alt="实施路线图与治理结构：分期投资、治理层级、关键成功因素" src="../assets/figures/implementation-roadmap.png"></p>
 <blockquote>
 <p>投资数字为概念性量级估算，非投资承诺；治理结构为政策建议，待政府研究确定。</p>
 </blockquote>
@@ -2651,7 +2652,7 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 - <strong>G3闭塞闸门</strong>对应V2-V3（封闭场地→有限现场）：F05/F08各100次目标零失效（待测试验证）（V2）后才进入V3有限现场；运行时越界/超限/健康检查失败立即"停车"
 - <strong>V4扩展</strong>对应各场景M4：连续90天零主责事故+满意度达标才允许扩展，不通过则回到V3整改
 - <strong>V5持续验证</strong>贯穿投入运营（概念计划，待实施）：年度故障注入复测+季度降级演练，道岔广场扳道结果可触发场景回滚（rollback）</p>
-<p><img alt="AI验证协议与故障注入测试：三道闸门、八类故障注入、四级降级策略" src="assets/figures/ai-verification-protocol.png"></p>
+<p><img alt="AI验证协议与故障注入测试：三道闸门、八类故障注入、四级降级策略" src="../assets/figures/ai-verification-protocol.png"></p>
 <h2 id="_28">指标体系、面积复算与合规矩阵</h2>
 <p>核心指标均由 GeoJSON 在 EPSG:4548 投影下复算 [metric:site_area_sqm] [metric:research_area_sqm] [metric:key_area_total_sqm] [metric:key_areas_count] [metric:land_use_total_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:building_footprint_area_sqm] [metric:building_count] [metric:ai_scenario_nodes] [metric:ai_pilgrimage_landmarks] [metric:talent_apartment_ratio] [metric:investment_estimate_total_yi] [metric:urban_os_phased_years] [metric:public_benefit_categories] [depth:metrics_recalculation]：</p>
 <table>
@@ -2771,5 +2772,6 @@ hr { border: none; border-top: 2px solid #e7e5e4; margin: 2em 0; }
 - 深度：[depth:existing_conditions_diagnosis] [depth:three_level_scope_framework] [depth:overall_spatial_structure] [depth:land_use_layout] [depth:development_intensity_controls] [depth:height_massing_character] [depth:retain_renovate_demolish] [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure] [depth:blue_green_public_space] [depth:three_key_area_detailed_design] [depth:renewal_project_list] [depth:phasing_implementation] [depth:metrics_recalculation] [depth:risk_missing_data]
 - 数据：[data:geometry/site_boundary.geojson#] [data:geometry/key_areas.geojson#] [data:geometry/land_use.geojson#] [data:geometry/buildings.geojson#] [data:geometry/roads.geojson#] [data:geometry/green_space.geojson#] [data:geometry/public_space.geojson#] [data:geometry/constraints.geojson#] [data:geometry/phasing.geojson#]
 - 指标：[metric:site_area_sqm] [metric:research_area_sqm] [metric:key_area_total_sqm] [metric:key_areas_count] [metric:land_use_total_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:building_footprint_area_sqm] [metric:building_count] [metric:ai_scenario_nodes] [metric:ai_pilgrimage_landmarks]</p>
+</main>
 </body>
 </html>
