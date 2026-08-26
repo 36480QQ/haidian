@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "audit_status": "completed",
-  "audit_date": "2026-08-13",
+  "audit_date": "2026-08-25",
   "scope": "human_facing_primary_deliverables",
   "review_method": "逐项人工比对中文与英文的标题、正文主张、数字、单位、时序、图位、证据状态和实施条件，并完成 PDF 逐页渲染检查。",
   "pair_count": 23,
@@ -37,6 +37,6 @@
     "evidence_markers": "pass",
     "figure_order_and_page_count": "pass",
     "translation_residue": "pass; English site overview uses 0–24 mo",
-    "rendering": "pass; 18 Chinese and 18 English A3 pages rendered without clipping or blank pages"
+    "rendering": "pass; V2 QA rendered all 18 Chinese + 18 English A3 pages and all 4 Chinese + 4 English A0 boards without blank pages, out-of-bounds text or high-risk clipping"
   }
 }
