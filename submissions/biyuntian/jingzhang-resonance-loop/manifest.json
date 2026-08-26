@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "18ff56f8c2e823b74afa9f376f5d551dd3b95fd33c2584336a2798cd4013bddf"
+      "sha256": "f07b9e766ab45a58b5860785add3f44535913253c36ebd9adf84af3c9e54d84e"
     },
     {
       "path": "agent.json",
@@ -68,7 +68,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "0f74124dfde091f7f81efcf2bc5ccd412100175b5e8c4e7ca7aa02b8f456b0d5"
+      "sha256": "64657ccddd590e58e85c0a2a9027664e8580aecb90b7e9cf5af2cee5dc7636b7"
     },
     {
       "path": "spatial.json",
@@ -99,7 +99,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "da208d7ed91efda55f4701d82c491e12ed51c2715e47d262a2e48047bdf215a9"
+      "sha256": "a59c0b10ee0d9aed3da443d94fd9b9ee8067b28532f1ae3c3cf597620c9c4b0a"
     },
     {
       "path": "report/narrative.md",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "2cbb3ea6318e212a7c006f19e194c81eb7b375db13b8a3b91a5933124756f09b"
+      "sha256": "d72630cf0d5168471169bcafc0a2182e78cdf3bb03bba21d920694bd2d09fe69"
     },
     {
       "path": "report/proposal.en.html",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "dc981d4f2a71646e4c6e568645944aaee7e88ce52c4503e9c7c6662df9fc551b"
+      "sha256": "5508da1de701c8bc9ffd1387ae9c646711408ee127dce8c798ed55f951eb829a"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -317,6 +317,21 @@
       "language": "en",
       "translation_of": "assets/figures/resonance-return-system.svg",
       "sha256": "c0254b8269df22e4daadb04aaff8ec011dc801f6da766635aaca80d33faacc56"
+    },
+    {
+      "path": "assets/figures/resonance-mark.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "658520f10c3501b8cfcd318044e3381b1ad728068824e46edb6178597948b474"
+    },
+    {
+      "path": "assets/figures/resonance-mark.en.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/resonance-mark.svg",
+      "sha256": "6c6682a187840a074e8331b4c94e19f883ce21000298d545b597b996e96e7368"
     },
     {
       "path": "assets/figures/handoff-cards.svg",

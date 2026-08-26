@@ -248,6 +248,14 @@ This is not a list of new landmarks. It is a set of three design components that
 
 The three units are linked through a public ledger of **place — service — retained benefit — maintainer — review date**. It records only spatial facilities, service responsibility and authorised aggregate feedback; it does not record personal journeys, identity or profiling. A digital service cannot expand when its maintainer, staffed entry or site condition is absent. The ledger is a working handoff record for later professional teams, not an administrative approval, a live-surveillance system or a construction commitment.
 
+### Brand Mark and Spatial Identity
+
+The mark is a “two lines, three points” grammar: railway navy records the time line; civic teal records public walking and open collaboration; the three amber points mark public moments of resonance. It is a conceptual identity only, not statutory wayfinding or an institutional logo.
+
+![Jingzhang Resonance Loop concept mark: two lines meet at three points and generate three different spatial kits — Compute Garden, Knowledge Front Desk and Station-City Gate](assets/figures/resonance-mark.en.svg)
+
+The mark is not only a graphic. It makes three visibly different spatial grammars: **Compute Garden** uses a shaded court and movable explanation for “testing with room to pause”; **Knowledge Front Desk** uses an edge service, shared table and withdrawable result cards for “conversion that faces people”; **Station-City Gate** uses a dwellable porch, physical orientation and night enquiry for “technology returning to everyday life”. The kits share the two lines and three colours but do not repeat the same building, bridge, ring, screen or object shape. Any actual identity, material, scale, installation, lighting and accessibility detail remains for professional design and applicable review.
+
 ### One Cultural Line, Four Seasons, Three Returns to Site
 
 Operation is not a string of events added beside the heritage park. The proposal organises Qinghuayuan—Dongsheng—Zhongguancun—Dazhongsi as a cultural line of **memory — question — co-create — return**: railway culture makes connection and maintenance legible; Zhongguancun culture provides a daily stage for problem-led work, open collaboration and conversion; AI culture enters the site only when it can be understood, questioned and leave a physical return. Each event follows the same three actions: raise a question on site, test collaboratively across the three anchors, and return to public space with a visible revision or pause.

@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v1.12 - 2026-08-26
+
+- Added a bilingual Jingzhang Resonance Loop identity mark that translates the two-line / three-point concept into three visibly different spatial kits: Compute Garden, Knowledge Front Desk and Station-City Gate.
+- Strengthened the spatial-identity specification so the three anchors share a coherent route grammar while avoiding copy-paste landmark forms; all implementation-grade identity details remain subject to later professional review.
+
 ## v1.11 - 2026-08-26
 
 - Corrected review-visible typography defects in the English three-anchor and evidence figures: all card titles, field-result notices and warnings now remain within their visual bounds.
