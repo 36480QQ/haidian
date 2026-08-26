@@ -5,6 +5,34 @@
     "area": "sqm"
   },
   "metrics": {
+    "readiness_register_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(industry test scenarios registered at H0 in evidence-readiness register)",
+      "confidence": "high",
+      "assumptions": [
+        "#4/#8/#13 当前均未启动，登记为 H0；H1-H4 为条件式升级框架。"
+      ]
+    },
+    "measurement_protocol_registry_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count(measurement protocol entries M01..M06)",
+      "confidence": "high",
+      "assumptions": [
+        "仅登记标定前口径草案；所有测量数值留白，不构成实测或预测结论。"
+      ]
+    },
     "site_area_sqm": {
       "status": "known",
       "value": 11412825.386,

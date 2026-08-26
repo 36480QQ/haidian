@@ -2,7 +2,7 @@
   "schema_version": "0.1.0",
   "protocol_id": "qi-protocol-v0.1",
   "package_id": "jingzhang-fengshui-ai-belt",
-  "updated_at": "2026-08-19",
+    "updated_at": "2026-08-26",
   "name_zh": "气数协议 v0.1（察气—演气—验气—养气）",
   "name_en": "Qi-as-Data Protocol v0.1 (observe — model — verify — maintain)",
   "purpose_zh": "把「气数（Qi-as-Data）」从概念锻造为可执行的治理协议：走廊上任何数据驱动的场景、指标或主张，都必须走过四步流程并遵守七条规则；说不出何时不成立的机制不是机制。",
@@ -1072,6 +1072,21 @@
         "detail": "testbed star marked"
       }
     ]
+  },
+  "readiness_register_ref": {
+    "proposal_locations": [
+      "proposal.md · 实证就绪等级登记（条件式）",
+      "proposal.en.md · Evidence-readiness register (conditional)"
+    ],
+    "current_status_zh": "三个产业测试验证场景 #4/#8/#13 当前均为 H0（概念态 · 未启动）",
+    "current_status_en": "Industry test scenarios #4/#8/#13 are all currently H0 (conceptual, not started)",
+    "upgrade_basis": "H1-H4 are conditional evidence gates; no upgrade is claimed",
+    "binding_rule_ids": [
+      "QP-4",
+      "QP-5",
+      "QP-7"
+    ],
+    "review_role_id": "R-INDEPENDENT-REVIEW"
   },
   "metrics_note": {
     "qi_protocol_rule_count": 7,
