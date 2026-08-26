@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the century-old Jing-Zhang railway heritage corridor as a civic mainboard, this proposal builds an open-source AI commons of one spine, six stations, three areas and two wings: a 9.7 km rail-to-trail mainline linking six station-hall public nodes and three key areas, forming a recomputable, verifiable, concept-level urban design ready for professional deepening."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.6"
+iteration: "v1.7"
 ---
 
 # OPEN RAIL: Jing-Zhang AI Commons Urban Design Proposal
@@ -106,6 +106,10 @@ Synergy principle: every interface requires agreement among the parties before i
 
 The spatial structure of the overall design area is summarised as "one spine, six stations, three areas, two wings" (concept proposal). The spine: the Jing-Zhang Heritage Park · Open Rail corridor, 180 m wide and 9.7 km long, a composite of continuous parkland, slow-mobility mainline and cultural gallery [data:geometry/green_space.geojson#GREEN-001] [metric:spine_length_m]. The six stations: six station-hall public nodes spaced 800–2,200 m apart, each combining transit connection, public square and AI scenario gateway. The three areas: Zhongzhiyuan, AI Origin Community and Dazhongsi. The two wings: the Zhongguancun technology-service wing on the west and the Xiaoyuehe scenario-empowerment wing on the east [depth:overall_spatial_structure].
 
+The six halls are further developed into tangible places through concept sections (proposals): Dazhongsi Hall covers a test-market block under a folded-plate canopy; Zhichunlu Hall arranges all-day community services under a light arched roof; Wudaokou Hall hosts international exchange at the Origin Plaza urban living room; Qinghuayuan Hall carries heritage display on the Honour Wall (heritage-first, reversible exhibits); Zhongzhiyuan South Hall organises shared experiments in the Mainboard Parlor; Zhongzhiyuan North Hall integrates the Qinghe gateway transfer under a folded-plate canopy. Each hall retains rail memory with human and tree scale references; final forms are subject to regulatory checks and professional detailing [depth:overall_spatial_structure].
+
+![Six station halls as places, concept sections](assets/figures/station-hall-imagery.en.png)
+
 ### Land-use layout and renewal framework
 
 The land-use layout follows "corridor first, moderate mixing, campus linkage" (concept proposal): R&D land of about 348.6 ha (30.5%) clusters along the spine and the three key areas; residential land of about 189.6 ha (16.6%) remains in the mature central communities with gradual renewal; education land of about 180.1 ha (15.8%) reinforces the campus interfaces along BUPT, BUAA and East Qinghua Road; commercial land of about 134.9 ha (11.8%) concentrates at Dazhongsi and Wudaokou; green space of about 246.6 ha (21.6%), giving a green ratio of 21.61% [metric:green_ratio] [depth:land_use_layout].
@@ -124,11 +128,19 @@ The vitality belt is the backbone of the structure: running from the Qing River 
 
 Character control (concept proposal): the corridor takes "industrial heritage + natural wilderness" as its tone, keeping rails, sleepers and signals; the campus interfaces favour a dialogue between collegiate brick and contemporary glass; Dazhongsi adopts a modern commercial frontage. Specific control values for building height, massing and roofscape are statutory regulatory-plan matters; this proposal makes no numerical determinations and offers only character-zone intentions [depth:height_massing_character].
 
+Brand experience extends into an application system of logo, paving, street furniture and wayfinding (proposal): herringbone paving translates the Jing-Zhang switchback motif; rail railings, commit-node benches, circuit-branch lights, merge medallions, honour-wall tiles and canopy orange bands compose a continuous, recognisable OPEN RAIL visual field, turning the brand from a mark into a bodily street experience. All directions are conceptual; materials and craft follow professional detailing.
+
+![OPEN RAIL brand application system](assets/figures/brand-system.en.png)
+
 ## Detailed Design of Key Areas
 
 ### Zhongzhiyuan AI Acceleration Area (~192.1 ha) — "Mainboard Chip"
 
 Positioning: the core carrier of the AI full-stack independent innovation system and the global voice on AI governance [source:AGENT-TASKBOOK]. Spatial structure (concept proposal): a central green valley forms the open innovation interface, flanked by compute, model and toolchain R&D courtyards composed of 60×40 m modular footprints for flexible subdivision [data:geometry/key_areas.geojson#PROV-KEY-001]. Building renewal is dominated by new R&D courtyards; concept footprints are shown in the buildings layer. Mobility: the south and north station halls serve the southern courtyards and the Qing River gateway respectively, with a low-speed robot-delivery test loop (concept). Public space: the central green valley doubles as a venue for launches and hackathons. AI scenarios: the AI governance standard testbed and public tests of edge-compute nodes. Implementation risks: the boundary is provisionally inferred and awaits the official polygon and regulatory conditions; development intensity is pending [depth:three_key_area_detailed_design].
+
+Commit Plaza, the core public node of Zhongzhiyuan, is enlarged as a concept plan: the heritage rail as axis, a circular herringbone plaza as core, and the merge pad beacon as the physical lighthouse for annually merged honour-wall entries; a ring walkway secures barrier-free circulation with non-digital equivalent paths; the surrounding shared lab, agent kiosk, developer teahouse and exhibit gallery are placeholder massing subject to regulatory, heritage and engineering checks.
+
+![Zhongzhiyuan Commit Plaza node enlargement](assets/figures/node-detail.en.png)
 
 ### Beijing AI Origin Community (~104.3 ha) — "Bootloader"
 
@@ -272,6 +284,21 @@ To give all eight renewal projects the full implementation granularity of curren
 
 Baseline note: no project yet has a measured baseline (organiser data unpublished); baselines are unmeasured design starting points, and acceptance metrics are suggested targets pending specialised deepening [depth:phasing_implementation].
 
+### Funding typology and entity paths (concept proposals)
+
+Responding to the implementability review gap on funding and statutory entities, a proposal-level funding matrix is established (no numeric commitments; all pending formal decisions; machine-readable: `visual/assets/funding-matrix.json`):
+
+| Funding type | Applies to | Entity path (proposal, pending negotiation) | Boundary |
+|---|---|---|---|
+| City/district fiscal & special funds | Public works (spine link, riverside green) | District-level projects under statutory procedures | Per formal approvals |
+| Market investment | Dazhongsi blocks, R&D courtyards | Concession / co-development under public-private contracts | Property negotiation first |
+| Industry funds & VC | Scenario testing & incubation | Open-scenario list + investment matchmaking | No investment promises presumed |
+| Foundations & donations | Honour wall, gallery cultural content | Curatorial charter + disclosed donations | Heritage review first |
+| Community micro-renewal funds | Pocket parks, stitching nodes | Participatory budgeting | Consent-rate threshold |
+| Operations reinvestment | Events & scenario operations | Revenue disclosure under 90-day public review | Audit scope to be defined |
+
+Entity authorisation path: public-space operations propose a dual-track authorisation of "district authority + named operator" closing the entry-supervision-review-exit loop (see the accountability-chain section); R&D and commercial plots are implemented by property owners or their partners under law. All arrangements are conceptual proposals, not commitments by governments or funders [depth:phasing_implementation].
+
 ### Public participation, conflict negotiation and service equity (concept framework)
 
 Answering the three inclusion gaps raised in review, an operable framework (concept proposals, landed during pilots):
@@ -279,6 +306,20 @@ Answering the three inclusion gaps raised in review, an operable framework (conc
 - **Participation ladder**: information disclosure (proposals, metrics and self-check status fully public) → consultation (design stage: Issues/PRs and community workshops) → co-design (pilot stage: resident participatory-design workshops) → co-decision (public representatives seated at the 90-day review) [source:AGENT-TASKBOOK].
 - **Three-tier conflict negotiation**: tier 1 on-site hall mediation (operator responds same day) → tier 2 community council (organised locally, within 7 working days) → tier 3 professional assessment and arbitration (third-party opinion within 15 working days); conclusions are written back to scenario and implementation cards under the write-back discipline.
 - **Service-equity baseline**: three proposed indicators — barrier-free node coverage, non-digital equivalent-path accessibility, and median complaint-response time; no measured data yet (kept pending baseline), to be measured per node via the SEB node schema during pilots, with failed samples never dropped [source:SEB-SPEC].
+
+### Baseline measurement protocols (pre-launch, concept proposals)
+
+Responding to the inclusiveness review gap that accessibility coverage and equivalent-path availability lack field measurement, this version fabricates no measured values; instead it provides protocols executable at pilot launch (machine-readable: `visual/assets/baseline-protocols.json`):
+
+| Protocol | Object | Definition (proposal) | Frequency | Disclosure |
+|---|---|---|---|---|
+| P1 accessibility-node coverage | Hall/corridor entrances, ramps, lifts, accessible toilets | Compliant nodes ÷ required nodes | Quarterly | 90-day review annex |
+| P2 equivalent-path availability | Non-digital equivalents (staffed desk, print guide) at each AI service point | Points with equivalents ÷ all AI service points | Quarterly | Same |
+| P3 complaint response median | On-site + online tickets | Median hours from receipt to first reply | Monthly | Monthly digest |
+| P4 walkability breaks | Campus-community stitching nodes | Break count & detour ratio | Semi-annual | Annual report |
+| P5 professional accessibility audit | Pilot built nodes | Third-party accessibility professionals | Pre-launch + annual | Audit report |
+
+Measurement discipline: sampling frames and failed samples are all retained and disclosed with reviews; machine-vision self-checks do not substitute for professional accessibility certification; any indicator stays "pending baseline" until measured — design-model values never masquerade as field data [source:SEB-SPEC].
 
 ### Global AI innovation event system and long-term operation (concept proposal)
 
