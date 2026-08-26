@@ -160,7 +160,12 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [],
+  "review_stage_note": "can_enter_formal_review=true means the deterministic intake CI gate is green for organizer/maintainer review. It does NOT mean the provisional boundary has been replaced; final professional scoring still requires replacing the provisional site_boundary.geojson / key_areas.geojson with official redline polygons and re-running self_check_submission.py --mark-self-checked.",
+  "next_actions": [
+    "Replace provisional site_boundary.geojson with the official redline polygon and rerun the area calculation.",
+    "Replace provisional key_areas.geojson features with the official detailed-design polygons.",
+    "Re-run self_check_submission.py --mark-self-checked after the boundary replacement so the persisted gates and metrics_confidence are refreshed."
+  ],
   "schema_version": "0.1.0",
   "checks": [
     {
