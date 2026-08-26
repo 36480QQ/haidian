@@ -10,8 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
-        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/changelog.md: 可能涉及非公开或敏感资料; maintainer review required"
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/proposal.md"
@@ -23,6 +22,8 @@
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/agent.json",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/brand-system.en.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/brand-system.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/construction-details.en.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/construction-details.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/key-areas.en.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/key-areas.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/land-use-structure.en.png",
@@ -37,6 +38,8 @@
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/site-overview.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/station-hall-imagery.en.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/station-hall-imagery.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/street-interface.en.png",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/figures/street-interface.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/media/cover.webp",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/media/experience.md",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/assets/media/experience.mp4",
@@ -80,6 +83,7 @@
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/render-evidence/proposal-report-en.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/render-evidence/proposal-report-zh.png",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/seb-adoption.json",
+        "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/sequencing-methodology.json",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/switchback-adoption.json",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/three.min.js",
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons/visual/assets/webfont-coverage-evidence.json",
@@ -89,7 +93,7 @@
       "ai_package_stages": {
         "submissions/deerred643-star/open-rail-jingzhang-ai-commons": "formal"
       },
-      "total_bytes": 32668202,
+      "total_bytes": 34945612,
       "maintainer_bypass": false
     },
     "stderr": ""
