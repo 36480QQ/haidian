@@ -105,7 +105,7 @@
       "formula": "3 temporal layers per node (day-clock, season-clock, era-clock)",
       "confidence": "medium",
       "assumptions": [
-        "Each node operates 3-5 temporal programs; average is 4."
+        "3 temporal layers (Day Clock, Season Clock, Era Clock) per node; each layer contains multiple operational programs but this metric counts clock layers only."
       ]
     },
     "total_temporal_programs": {

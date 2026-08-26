@@ -312,7 +312,7 @@ Each suture node establishes an independent operations unit following a "platfor
 
 ### Long-term Operations and Internationalization
 
-- **Three-year target**: Complete physical repair and AI system deployment across all 9 suture nodes
+- **Three-year target**: Complete physical repair and AI system deployment of the 4 near-term suture nodes (Dazhongsi area)
 - **Five-year target**: Develop a replicable "Urban Interface AI Suture" methodology and technical standards
 - **Ten-year target**: Export experience to cities worldwide with similar railway severance issues (conceptual proposal; no policy commitments made)
 
