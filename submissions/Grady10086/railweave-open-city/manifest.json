@@ -346,7 +346,7 @@
     {
       "path": "changelog.md",
       "required": true,
-      "sha256": "600547ea4bb7fe03980f5807a3fa804ea374afcca758d7bd7e60b07e546f551b",
+      "sha256": "574f30e145901158b04c3bf3d7104ecbbcd258da0b4cedf2d4bbb500477f162f",
       "role": "changelog",
       "language": "neutral"
     },
@@ -487,7 +487,7 @@
     {
       "path": "report/copyright_statement.md",
       "required": true,
-      "sha256": "2adc8beb22db15e8051f4af116e06771f31a9070b715542a79e10a5079feedd0",
+      "sha256": "da4f09a054339ba15a82e7c289b8caa037bf9114147bf44c9d30a70618e6ca51",
       "role": "copyright_statement",
       "language": "neutral"
     },
@@ -501,7 +501,7 @@
     {
       "path": "report/proposal.en.html",
       "required": true,
-      "sha256": "4dccb3d605b6c46a139f72e532f10be4c0b89971fd5674245be22370956483f8",
+      "sha256": "027e28d50915a298e3a53ccdf693d77816359156ad6560d564fe0246576f1aad",
       "role": "rendered_proposal_html",
       "language": "en",
       "translation_of": "report/proposal.html"
@@ -509,14 +509,14 @@
     {
       "path": "report/proposal.html",
       "required": true,
-      "sha256": "b4f27157246d012c357a43985b42abfd584c6e212fe1912fff8a4fa5157f0512",
+      "sha256": "b07a486864aefdcb480e99fb66009dd2b2685a747699a127da69d490c2dcdc9a",
       "role": "rendered_proposal_html",
       "language": "zh"
     },
     {
       "path": "self_check.json",
       "required": true,
-      "sha256": "4a908cf7ebe9c77ac6b7a0b789011b36fdb2c45e2653cc174002f30c34fbc471",
+      "sha256": "6036bb1f4ca4becdc62eba742cde56508663a01726ea584f528b95880676a68e",
       "role": "self_check",
       "language": "neutral"
     },
@@ -575,6 +575,14 @@
       "sha256": "9528832ba282062d94c04fbecc97861417b719b56b1afdfda751a91f0f59605b",
       "role": "evidence_data",
       "language": "neutral"
+    },
+    {
+      "path": "visual/assets/offline-cjk-font.css",
+      "required": true,
+      "sha256": "bdc16e4b5a4423d7e088294bbf6928c812c9fec073ee7700bba84821505991ba",
+      "role": "other",
+      "language": "neutral",
+      "role_detail": "offline_cjk_font_stylesheet_and_woff2_subset"
     },
     {
       "path": "visual/assets/project_delivery_ledger.json",
@@ -670,7 +678,7 @@
     {
       "path": "visual/index.en.html",
       "required": true,
-      "sha256": "d361abc845dd67d7845210d871d9db148ff3a19561ab03afa618210ba77aae43",
+      "sha256": "98b25fbd1f64ac2bfaeca4d1f691b79582601454463419c13e277799029c06cd",
       "role": "visualization",
       "language": "en",
       "translation_of": "visual/index.html"
@@ -678,7 +686,7 @@
     {
       "path": "visual/index.html",
       "required": true,
-      "sha256": "a3a94acb47f603bb67580477dc7cbbc771ba365a65580a932edec7630deda728",
+      "sha256": "41ba0f42c1ef96674bb10c1a04834b8f54867e7d927f30f1856ffb1452bf3f56",
       "role": "visualization",
       "language": "zh"
     }
@@ -687,6 +695,31 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "mixed_provisional_and_conceptual",
-    "readiness_contract": "persisted-self-check-v1"
+    "readiness_contract": "persisted-self-check-v1",
+    "extensions": {
+      "x-font-provenance": {
+        "schema_version": "1.0",
+        "data": {
+          "font_name": "Noto Sans CJK SC Regular",
+          "font_version": "2.004",
+          "source_copyright": "Copyright 2014-2021 Adobe",
+          "source_url": "https://github.com/notofonts/noto-cjk/blob/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf",
+          "source_git_blob": "dc15562470b4f842321894787a0d066879ccff8b",
+          "source_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+          "subset_sha256": "8bcb797105e7f01b2aefbd6284d97d694a4877afdf71140449203fcc10ed27b8",
+          "subset_tools": "fontTools 4.63.0; Brotli 1.2.0",
+          "subset_scope": "All characters required by the four final offline HTML pages, plus a small set of basic Latin and common replacement/typographic characters",
+          "license": "SIL Open Font License 1.1",
+          "redistribution": "Modified WOFF2 subset embedded once in visual/assets/offline-cjk-font.css; complete licence retained in the CSS header; full source OTF not distributed",
+          "embedded_asset": "visual/assets/offline-cjk-font.css",
+          "consumer_paths": [
+            "report/proposal.html",
+            "report/proposal.en.html",
+            "visual/index.html",
+            "visual/index.en.html"
+          ]
+        }
+      }
+    }
   }
 }
