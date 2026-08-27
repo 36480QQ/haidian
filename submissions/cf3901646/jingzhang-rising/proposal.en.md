@@ -1,12 +1,12 @@
 ---
-title: "JINGZHANG RISING - **A Century of Self-Reliance**, the Character for People Rising"
+title: "JINGZHANG RISING - A Century of Self-Reliance, the Character for People Rising"
 author_github: "cf3901646"
 language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "In 1909 the Jing-Zhang Railway became the first trunk line China surveyed, designed and built on its own. In 2009 the State Council wrote the words 'independent innovation' into the formal name of the Zhongguancun demonstration zone. One corridor, two acts of self-reliance a century apart. This proposal makes that corridor the origin corridor of China's independent AI innovation: four origin points strung into 9.6 walkable kilometres of history, 11.41 sq km organised as one spine, three terraces, two wings and two stitching systems, with every figure recomputed from nine GeoJSON layers in EPSG:4548. Its governance core is human fallback plus a public answer sheet: no public-facing AI service may go live without both a staffed human channel and an auditable published record. Floor area ratio, height limit and gross floor area have no defensible basis here as statutory controls, so they are marked unknown rather than guessed; at block scale only recomputable concept ranges are given."
+summary: "Two historical threads roughly a century apart along one corridor - the Jing-Zhang Railway completed in 1909, and the words 'independent innovation' entering the name of the Zhongguancun demonstration zone in 2009 (both carried as narrative assumptions pending verification; this package holds no verifiable published original for either, see sources.json) - lead this proposal to treat that corridor as the origin corridor of China's independent AI innovation: four origin points strung into 9.6 walkable kilometres of history, 11.41 sq km organised as one spine, three terraces, two wings and two stitching systems, with every figure recomputed from nine GeoJSON layers in EPSG:4548. Its governance core is human fallback plus a public answer sheet: no public-facing AI service may go live without both a staffed human channel and an auditable published record. Floor area ratio, height limit and gross floor area have no defensible basis here as statutory controls, so they are marked unknown rather than guessed; at block scale only recomputable concept ranges are given."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -41,8 +41,8 @@ This page is an evidence navigator, not a self-score. Every row points to an ins
 | Does AI genuinely enter urban planning? | Twelve cards specify space, operation, minimum data, human route, release evidence and exit; four industrial tests address stack adaptation, business stress, embodied safety and multi-agent coordination | "Twelve AI+ scenario cards" and "Four industry-grade test scenarios" [metric:scenario_card_count] [metric:industry_test_scenario_count] | Equipment names without responsibility and exit conditions are not AI planning innovation |
 | Can it be implemented? | Three first-start pilots use six 90-day evidence gates for baseline, tabletop rehearsal, shadow flow, AI-off drill, authorised trial and independent review; one-year indicators then decide continuation, redesign or exit | "First-start pilots" and "The first 90-day evidence gates" [depth:phasing_implementation] | If ownership, permission, human route or restoration responsibility is missing, on-site action cannot start |
 | Does it protect public interest? | Six core personas plus residents, elderly people, visitors, disabled people, low-income and flexible workers are mapped to real situations; AI is never the only public-service entrance | "Six personas", "What six user groups actually face", and "Inclusion is an admission condition" | If an equivalent human route fails, the AI route stops too |
-| Does it respect risk and compliance? | Thirty known metrics are recomputable and three statutory-control metrics remain explicitly unknown; ten risks, a file-by-file rights ledger and provisional-boundary warnings are disclosed | `metrics.json`, the risk register and `report/copyright_statement.md` [assumption:A-CONTROLS-001] | A fact unsupported by public or cleared evidence does not enter a conclusion |
-| Is the expression complete? | Five paired bilingual fixed figures, bilingual A3/A0 PDFs, and paired narrative and interactive offline HTML can each be read independently; static deliverables do not depend on video | `assets/figures/`, `drawings/`, `report/`, `visual/` | If a primary channel is unreadable, text, captions or static figures provide an equivalent fallback |
+| Does it respect risk and compliance? | Fifty-seven known metrics are recomputable and three statutory-control metrics remain explicitly unknown; ten risks, a file-by-file rights ledger and provisional-boundary warnings are disclosed | `metrics.json`, the risk register and `report/copyright_statement.md` [assumption:A-CONTROLS-001] | A fact unsupported by public or cleared evidence does not enter a conclusion |
+| Is the expression complete? | Five paired bilingual fixed figures, bilingual A3/A0 PDFs, and paired narrative and interactive offline HTML can each be read independently; every deliverable is a static file and depends on no video or executable content | `assets/figures/`, `drawings/`, `report/`, `visual/` | If a primary channel is unreadable, text or static figures provide an equivalent fallback |
 
 | Agent task | Delivered mandatory outputs | Direct entry |
 | --- | --- | --- |
@@ -73,7 +73,7 @@ Method statement. The package was generated by an AI agent from public material 
 | Technical standards | Urban design measures, regulatory planning, land-use classification, design depth | 6 entries in `standard_matrix.json` |
 | Design depth | 15 items from existing-conditions diagnosis to risk register | `design_depth_matrix.json` |
 | Spatial evidence | 9 layers, 31 parcels, 92 building footprints | `geometry/` |
-| Quantitative evidence | 33 metrics, of which 30 are known | `metrics.json` |
+| Quantitative evidence | 60 metrics: 57 known and 3 unknown | `metrics.json` |
 
 ## Three-Level Scope Framework
 
@@ -157,13 +157,13 @@ A necessary boundary statement: apart from this design area, none of the above l
 
 ### 1. Positioning: the origin corridor of China's self-reliant AI
 
-"A century of self-reliance" is not a slogan. It rests on two national-level facts one hundred years apart.
+"A century of self-reliance" is not a slogan. It rests on two publicly recorded events roughly a century apart along the same corridor — with one qualification: this package holds no verifiable published original for either, so both are carried below as **narrative assumptions pending verification**, used for cultural narrative and positioning only and never as the basis for any spatial metric or statutory conclusion [source:HIST-JINGZHANG-1909] [source:HIST-ZGC-APPROVALS].
 
-In 1909 the Jing-Zhang Railway was completed. It was the first trunk railway surveyed, designed and built by Chinese engineers themselves. In the Guangou section its chief engineer Zhan Tianyou used a herringbone switchback and a vertical-shaft excavation method to overcome gradients that foreign engineers had declared impassable for Chinese builders, and delivered the line two years ahead of schedule.
+In 1909 the Jing-Zhang Railway was completed. On the public record it was surveyed, designed and built by Chinese engineers, and in the Guangou section its chief engineer Zhan Tianyou used a herringbone switchback and a vertical-shaft excavation method to climb the gradients there. (No confirmatory claim is made about its precedence as the first self-built trunk line, about contemporary assessments of the difficulty, or about the number of years by which it was delivered early: this package could not obtain a verifiable published original for any of these.)
 
-On 13 March 2009 the State Council issued its official reply approving the development of the Zhongguancun Science Park as a national demonstration zone for independent innovation, formally designating it the Zhongguancun National Independent Innovation Demonstration Zone. The words "independent innovation" thereby entered the formal name of a national-level zone.
+In 2009 the State Council approved the development of the Zhongguancun Science Park as a national demonstration zone for independent innovation, formally designating it the Zhongguancun National Independent Innovation Demonstration Zone. The words "independent innovation" thereby entered the formal name of a national-level zone. (No exact date, document number or reply title is cited: this package could not obtain a verifiable published original, so the claim is carried as a narrative assumption pending verification [source:HIST-ZGC-APPROVALS].)
 
-The two events are exactly one hundred years apart and occurred along the same corridor: once proving on the rails that Chinese engineers could build independently, once confirming in national policy that this place carries the responsibility to demonstrate independent innovation. Today the same corridor must answer a third question — whether artificial intelligence can be self-reliant, and once self-reliant, whom it serves.
+The two events are roughly a century apart and occurred along the same corridor: once as engineering practice on the rails, once as a national policy designation that this place carries the responsibility to demonstrate independent innovation. Today the same corridor must answer a third question — whether artificial intelligence can be self-reliant, and once self-reliant, whom it serves.
 
 The proposal therefore states its positioning:
 
@@ -172,7 +172,7 @@ The proposal therefore states its positioning:
 
 Three testable propositions follow [source:AGENT-TASKBOOK]:
 
-1. Origination. This is one of the earliest cradles of Chinese technology entrepreneurship and artificial intelligence, and should carry zero-to-one origination rather than absorbing spillover. The institutional lineage is a matter of record: in 1988 the State Council approved the Beijing New Technology Industry Development Experimental Zone, China's first national-level high-tech industrial development zone; in 1999 it approved the Zhongguancun Science Park; in 2009 it approved the national independent innovation demonstration zone. Three approvals trace one clear curve of national intent.
+1. Origination. This is one of the earliest cradles of Chinese technology entrepreneurship and artificial intelligence, and should carry zero-to-one origination rather than absorbing spillover. The institutional lineage can broadly be traced: the Beijing New Technology Industry Development Experimental Zone was established in 1988, the Zhongguancun Science Park was approved in 1999, and the national independent innovation demonstration zone in 2009. Three approvals trace one clear curve of national intent. (These years and their sequence are carried as narrative assumptions pending verification; this package could not obtain verifiable published originals, and no ranking or precedence claim is asserted for any of the three [source:HIST-ZGC-APPROVALS].)
 2. Self-reliance. The belt should close a full-stack loop across chips and compute, frameworks and models, data and corpora, scenarios and applications, becoming a spatial exemplar of accelerating high-level technological self-reliance [standard:PROJECT-OFFICIAL-ANNOUNCEMENT].
 3. People-centredness. The benefits of AI must first be felt by the residents, students, elderly people and founders along this belt, translated into public space that can be touched rather than left in industrial indicators.
 
@@ -270,23 +270,27 @@ Conclusion: the one asset that cannot be replicated here is the historical legit
 
 A horizontal scan of eight cases is not enough. Three of them are closely comparable to this belt on three conditions at once — railway heritage, innovation function, and an existing resident community — and deserve to be read for their costs and lessons rather than mined for their headline successes.
 
+**The three readings below are the author's design observations and judgements, formed from public reporting and professional discussion. They are not established facts verified against per-item primary sources.** This package carried out no field study of these projects and holds no registrable primary source for them, so they are not stated in an "established" register; readers should verify against primary material [source:GLOBAL-CASE-OBSERVATIONS].
+
 Case one: King's Cross, London — the closest analogue, and the one to be most wary of.
 
 The comparability lies in its conversion of railway land and historic station buildings into a knowledge and creative district, its retention of substantial industrial fabric, and its embedding in existing urban tissue rather than a new town. What is worth learning is its very long phasing with the skeleton first: public space, pedestrian connections and open squares were built ahead of much of the commercial floorspace, so the district held public value before letting was complete.
 
-Its cost must equally be faced. The area has long attracted criticism for gentrification: lower-income residents and small businesses were progressively displaced, and while the space remained publicly accessible, the composition of its actual users shifted markedly. The lesson for this belt is unambiguous: physical accessibility of public space is not social accessibility. This proposal therefore lists existing local residents among its six user groups and places them at the threshold position, writes the human fallback as a binding clause, and requires the composition of review participants to be published — each a direct defence against gentrification risk [depth:renewal_project_list].
+The project has also been the subject of sustained public debate about gentrification and the position of lower-income residents and small businesses. **The design judgement the author draws from that debate** is unambiguous: physical accessibility of public space is not social accessibility. This proposal therefore lists existing local residents among its six user groups and places them at the threshold position, writes the human fallback as a binding clause, and requires the composition of review participants to be published — each a direct defence against gentrification risk [depth:renewal_project_list].
 
 Case two: one-north, Singapore — a government-led research and industry district.
 
 The comparability lies in government leadership, a research-industry mix, and organisation at walkable block scale rather than as gated compounds. What is worth learning is the long-run elasticity of its functional mix: plot functions may be adjusted between research, office, residential and service uses across cycles rather than being locked in once.
 
-One condition differs fundamentally from this belt: one-north was largely built new on low-intensity land, whereas this belt is renewal within a dense built-up area involving existing ownership, existing residents and existing businesses. This proposal therefore does not transplant its block template and borrows only its elasticity logic, expressed as deliberately reserved flexible land [metric:reserved_land_area_sqm]. That is an honest judgement: new-town experience cannot be applied directly to inner-city renewal.
+**In the author's reading**, one condition differs fundamentally from this belt: one-north is closer to new build on low-intensity land, whereas this belt is renewal within a dense built-up area involving existing ownership, existing residents and existing businesses. This proposal therefore does not transplant its block template and borrows only its elasticity logic, expressed as deliberately reserved flexible land [metric:reserved_land_area_sqm]. New-town experience should not be applied directly to inner-city renewal.
 
 Case three: station-city integration in Tokyo — vertical stitching, and the trade-off against ground-level publicness.
 
 The comparability lies in the Bell Hub district at the southern end of this belt, which faces the same problem of combining a rail station with urban functions. What is worth learning is the maturity of its interchange efficiency and vertical connection.
 
-Its cost is equally plain: high-intensity underground and elevated systems often come at the expense of the publicness of the ground-level street, with pedestrians drawn into commercialised interior circulation and open-air city life weakened. The core asset of this belt is precisely an open-air, continuous, free heritage park spine. This proposal therefore makes an explicit trade-off: station-city integration is adopted only locally within the Bell Hub district, and on the precondition that it neither severs the ground-level continuity of the spine nor forces pedestrian flow indoors [depth:traffic_rail_slow_parking].
+**The cost the author observes** is that high-intensity underground and elevated systems tend to come at the expense of the publicness of the ground-level street, with pedestrians drawn into commercialised interior circulation and open-air city life relatively weakened. The core asset of this belt is precisely an open-air, continuous, free heritage park spine. This proposal therefore makes an explicit trade-off: station-city integration is adopted only locally within the Bell Hub district, and on the precondition that it neither severs the ground-level continuity of the spine nor forces pedestrian flow indoors [depth:traffic_rail_slow_parking].
+
+None of the three "cost" readings above is a finding of fact about, or an evaluation of, the projects concerned. They are cited to constrain this proposal's own trade-offs, not to judge others.
 
 The three cases together yield the proposal's three self-imposed constraints:
 
@@ -329,15 +333,15 @@ This distinction is drawn because the persuasive power of urban design rests on 
 
 "Jing-Zhang" is a two-ended place name. Most proposals use only the "Jing" end and consume "Zhang" as historical rhetoric. This proposal treats that as the single largest waste in the brief: Zhangjiakou is not the backdrop of the Jing-Zhang story; it is the other half of today's AI infrastructure.
 
-An innovation belt that closes its loop inside Haidian is a park. Only when it carries a division of labour between the two ends of the corridor does it deserve the word "belt." Coordinated Development of the Beijing-Tianjin-Hebei Region was elevated to a national strategy in February 2014, and in April 2015 the Political Bureau meeting reviewed and approved the Outline Plan, setting out its strategic goals and priority tasks. Regional collaboration here is therefore not an appended chapter; it is the condition for honouring the name "Jing-Zhang."
+An innovation belt that closes its loop inside Haidian is a park. Only when it carries a division of labour between the two ends of the corridor does it deserve the word "belt." Coordinated Development of the Beijing-Tianjin-Hebei Region has been elevated to a national strategy and an outline plan setting out its strategic goals and priority tasks has been issued. (The exact dates, meetings and document titles are carried as a narrative assumption pending verification; this package holds no verifiable published original, and nothing here is used as the basis for any spatial or metric conclusion.) Regional collaboration here is therefore not an appended chapter; it is the condition for honouring the name "Jing-Zhang."
 
 #### 2. Algorithms in Haidian, computing power and green electricity in Zhangjiakou
 
-This is the hard core of the regional argument, and it rests on two verifiable public-policy facts.
+This is the hard core of the regional argument, and it rests on two public-policy threads. (This package holds no verifiable published original for either; both are carried as narrative assumptions pending verification, used only to explain the regional division of labour and never as the basis for any computing, energy or traffic conclusion.)
 
-First, Zhangjiakou is a physical node in the national computing layout. The East Data West Computing programme was formally launched on 17 February 2022, laying out 8 national computing hub nodes and 10 national data centre clusters nationwide; the Zhangjiakou data centre cluster is one of the clusters under the Beijing-Tianjin-Hebei national computing hub node.
+First, Zhangjiakou is a physical node in the national computing layout. The East Data West Computing programme was launched in 2022, laying out national computing hub nodes and national data centre clusters across the country; the Zhangjiakou data centre cluster is one of the clusters on the Beijing-Tianjin-Hebei side. (The exact launch date and the specific counts of hubs and clusters are carried as narrative assumptions pending verification; this package could not obtain a verifiable published original, and nothing here is used to derive computing capacity or energy figures [source:REGION-EAST-DATA-WEST-COMPUTING].)
 
-Second, Zhangjiakou is a State Council-approved renewable energy demonstration zone. On 8 January 2016 the State Council, by Guohan [2016] No. 5, approved the establishment of the Zhangjiakou Renewable Energy Demonstration Zone. (Note: its statutory name does not carry the words "national level," and this proposal does not inflate it.)
+Second, Zhangjiakou hosts a State Council-approved renewable energy demonstration zone, established in 2016. (The exact date and document number are carried as a narrative assumption pending verification; this package could not obtain a verifiable published original [source:REGION-ZJK-RENEWABLE-2016]. Note: its name does not carry the words "national level," this proposal does not inflate it, and no green-power share or supply capacity is derived from it.)
 
 Together these two facts produce a combination that is rare anywhere in the country: a computing host region less than two hundred kilometres from the capital, rich in renewable energy, and already designated within a national computing hub. What Haidian holds is the other end — algorithms, models, talent and an open-source ecosystem.
 
@@ -369,7 +373,7 @@ Beijing has built an innovation layout known as the "three cities and one zone,"
 - Yizhuang carries advanced manufacturing and connected-vehicle deployment at scale; this belt supplies algorithms and standards and does not compete for manufacturing land.
 - Yanqing hosts the 人-shaped switchback and was an Olympic competition zone; its relationship to the belt is cultural-narrative collaboration along the same railway heritage line, not industrial collaboration. As stated earlier, the switchback does not constitute a basis for this site's spatial structure.
 
-The Beijing-Zhangjiakou high-speed railway opened on 30 December 2019, connecting the Beijing, Yanqing and Zhangjiakou competition zones of the Beijing 2022 Winter Olympics. That line turned "one hour between the two ends of the corridor" from an aspiration into an accomplished fact, and gives the division of labour above a realistic commuting and operations basis. (Note: the official host city of the Beijing 2022 Winter Olympics was Beijing, with Zhangjiakou as one competition zone; this proposal does not use the phrase "co-hosted.")
+The Beijing-Zhangjiakou high-speed railway is in service, connecting the Beijing, Yanqing and Zhangjiakou competition zones of the Beijing 2022 Winter Olympics. It gives "one hour between the two ends of the corridor" a realistic basis, and makes the division of labour above a discussable option in commuting and operations terms. (The exact opening date and actual journey time are carried as a narrative assumption pending verification; this package holds no verifiable published original, and nothing here is used to derive traffic volume, journey time or modal split [source:REGION-JINGZHANG-HSR]. Note also: the official host city of the Beijing 2022 Winter Olympics was Beijing, with Zhangjiakou as one competition zone; this proposal does not use the phrase "co-hosted.")
 
 ### International Communication: Reproducibility as the Common Language
 
@@ -377,7 +381,7 @@ International communication here does not rely on promotional-film image project
 
 Three routes:
 
-First, natively bilingual delivery. Chinese and English are both natively written rather than machine round-tripped, and figures, drawings, HTML and film are all supplied in both languages. International peers read the whole proposal, not an abstract.
+First, natively bilingual delivery. Chinese and English are both natively written rather than machine round-tripped, and figures, drawings and HTML are all supplied in both languages. International peers read the whole proposal, not an abstract.
 
 Second, open-source reproducibility. Metrics are recomputed from layers, methods are stated in the text, and what cannot be recomputed is marked unknown. That practice is itself the most effective address to an international professional audience. A proposal willing to publish what it does not know is more credible than one whose every number is perfect.
 
@@ -415,7 +419,7 @@ The proposal fuses the centennial Jing-Zhang culture, Zhongguancun culture and n
 
 | Origin | Year | Historical meaning | Spatial anchor |
 | --- | --- | --- | --- |
-| Origin of self-reliance | 1909 | Zhan Tianyou completes China's first self-built trunk railway with the herringbone switchback | Herringbone Terrace |
+| Origin of self-reliance | 1909 | Zhan Tianyou completes the Jing-Zhang Railway with the herringbone switchback, surveyed, designed and built by Chinese engineers (narrative assumption pending verification) | Herringbone Terrace |
 | Origin of the examination | 1949 | Tsinghuayuan Station, the arrival point of the journey described as going to sit an examination - a symbol of mission and self-scrutiny | Ganfao Gate |
 | Origin of innovation | 1980 | The first non-state technology venture in Zhongguancun, the beginning of Chinese technology entrepreneurship | Bell of Compute |
 | Origin of AI | 2026- | The cradle of full-stack self-reliant AI and its open-source ecosystem | Origin Stele |
@@ -425,7 +429,7 @@ The four origins are threaded by the spine into a route of about 9.6 km. A conti
 
 A note on the Examination Origin: the most underrated asset on this site.
 
-On 23 March 1949 the Central Committee set out from Xibaipo for Beiping, leaving behind the well-known formulation of "going to the capital to sit the examination"; on 25 March the special train arrived at Tsinghuayuan Station. The station is one of the original stops on the Jing-Zhang Railway, and the site of its old station building lies within this overall design area, along the Haidian section of the Jing-Zhang Railway Heritage Park [source:SITE-PACKAGE].
+In 1949 the Central Committee moved from Xibaipo to Beiping, and the well-known formulation of "going to the capital to sit the examination" comes from that journey; the special train arrived at Tsinghuayuan Station, one of the original stops on the Jing-Zhang Railway. The site of its old station building lies within this overall design area, along the Haidian section of the Jing-Zhang Railway Heritage Park [source:SITE-PACKAGE]. (No departure or arrival day is given: this package could not obtain a verifiable published original, so the account is carried as a narrative assumption pending verification [source:HIST-TSINGHUAYUAN-1949].)
 
 This means something rare in national terms: one railway corridor carries both the starting point of Chinese engineering self-reliance (1909) and the starting point of the Communist Party of China in government (1949). The Jing-Zhang Railway remains, including Tsinghuayuan Station and the former Xizhimen Station, are a Major Site Protected at the National Level. In 2021 the Jing-Zhang Railway Heritage Park opened to the public, and the restored Tsinghuayuan station building opened as an exhibition space on the theme of that 1949 journey.
 
@@ -435,7 +439,7 @@ From this the proposal derives a contemporary reading of the Examination Origin:
 2. There must be an examination paper. Every AI service entering public space on this belt must publish its service commitment, data provenance, human takeover arrangement and failure record (see "Human fallback and the public report card" below).
 3. There must be examiners. The assessors are not industry experts but the actual users of the belt: residents, students, elderly people, founders, commuters and visitors.
 
-It should be stated plainly that this proposal's use of this historical resource is strictly limited to the spatial interpretation and commemorative expression of publicly documented history. It makes no political declaration, fabricates no historical material and alters no protected fabric. Any action touching protected heritage must be separately submitted for approval under the Cultural Relics Protection Law and the requirements of the heritage authorities [assumption:A-CONTROLS-001].
+It should be stated plainly that this proposal uses these historical resources only as background_only narrative threads pending verification, for spatial interpretation and commemorative expression. It does not treat them as formal source evidence, makes no political declaration, fabricates no historical material and alters no protected fabric. Any action touching protected heritage must be separately submitted for approval under the applicable law and the requirements of the heritage authorities [assumption:A-CONTROLS-001].
 
 ### 2.2 Honour display system and public-space component library
 
@@ -676,7 +680,7 @@ Building interface along the Origin Works pedestrian spine:
 
 **Edge inference node array.** Placed in the underground service duct beneath the central garden of the pedestrian spine at roughly 150 m spacing. Each node occupies 2.4 m², with only a 0.6 × 0.6 m ventilation and inspection cover flush with the garden paving at surface level. Power comes through the municipal utility corridor and heat is rejected through an underground duct into the planting belt. The nodes give community AI services — youth talent matching, shared-space scheduling, accessible navigation — local inference at ≤15 ms latency [depth:ai_scenario_integration].
 
-**Environmental sensors.** Mounted at the top of lighting columns (6 m height) at 80 m spacing, each with a footprint of 0 m² (pole-attached), collecting temperature, humidity, PM2.5, noise, illuminance and pedestrian density. The data drives adaptive lighting (dimming to 30% when flow falls to ≤5 people/min, saving roughly 40% of energy) and community safety awareness. Sensor housings are ≤12 cm in diameter and colour-matched to the column, so visual impact is minimal. No personal biometric data is collected and retention is ≤72 hours [standard:GENERATIVE-AI-INTERIM-MEASURES].
+**Environmental sensors.** Mounted at the top of lighting columns (6 m height) at 80 m spacing, each with a footprint of 0 m² (pole-attached), collecting temperature, humidity, PM2.5, noise, illuminance and pedestrian density. The data drives adaptive lighting (dimming to 30% when flow falls to ≤5 people/min, saving roughly 40% of energy) and community safety awareness. Sensor housings are ≤12 cm in diameter and colour-matched to the column, so visual impact is minimal. No personal biometric data is collected and retention is ≤72 hours. **That retention limit and the no-biometrics rule are self-imposed technical and operational constraints pending verification, and rest on no statute**: general environmental sensing is neither a generative-AI service nor an accessibility matter, so this package attaches no such citation to it. Applicable personal-information and data-security assessment, a data-minimisation case and independent review must be completed separately before go-live [assumption:A-OPERATIONS-001].
 
 #### 5.3 Bell Hub (Dazhongsi) detailed spatial design
 
@@ -748,7 +752,7 @@ Interface conditions for the Dazhongsi heritage buffer belt (DZ-D):
 
 **The Bell of Compute installation.** At the centre of the Bell of Compute Plaza, occupying about 25 m² (a circular base roughly 5.6 m in diameter) and about 8 m high. Modelled on the ancient bell of Dazhongsi, its shell is perforated weathering steel with a ring LED matrix inside that displays the belt's live compute load (green — amber — red), green-power share and carbon intensity. With no power the installation remains a sculpture, and an engraved plate at its base carries the summary of the latest published answer sheet. Maintenance access comes from below ground, with no inspection door visible at grade [data:geometry/public_space.geojson#PUBLIC-003] [depth:ai_scenario_integration].
 
-**AI retail sensing system.** The smart lighting columns of the DZ-C AI-native retail street (25 m spacing) integrate footfall-counting cameras (fisheye lens, anonymous counts only, no images stored) and environmental sensors. The data drives dynamic adjustment of shop spill-out zones (narrowing them by 0.5 m at peak to release walking space, restoring them off-peak). Sensing devices sit at the top of the column (5.5 m height) as an 8 cm hemispherical dome colour-matched to the pole. Every device carries a plate reading "AI sensing device · counting only · no images stored" [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+**AI retail sensing system.** The smart lighting columns of the DZ-C AI-native retail street (25 m spacing) integrate footfall-counting cameras (fisheye lens, anonymous counts only, no images stored) and environmental sensors. The data drives dynamic adjustment of shop spill-out zones (narrowing them by 0.5 m at peak to release walking space, restoring them off-peak). Sensing devices sit at the top of the column (5.5 m height) as an 8 cm hemispherical dome colour-matched to the pole. Every device carries a plate reading "AI sensing device · counting only · no images stored". **"Counting only" and "no images stored" are self-imposed technical and operational constraints pending verification, and rest on no statute**: footfall counting is not a generative-AI service, and the Barrier-Free Environment Construction Law is not a compliance basis for camera sensing. Applicable personal-information and data-security assessment, a data-minimisation case and independent review must be completed separately before go-live [assumption:A-OPERATIONS-001].
 
 ### 6. The Report Card Kiosk: making governance visible and touchable in public space
 
@@ -782,11 +786,11 @@ The Report Card Kiosk (答卷亭) is a piece of street furniture derived from th
 | RCK-03 | Bell Hub | Quadrant B of the four-quadrant station concourse | ≥2.5 m | ≥1.8 m | Faces the interchange exit, the direction of heaviest flow |
 | RCK-04 | Spine greenway | Junction of stitching link #3 (Beihang section) | ≥2.0 m | ≥1.5 m | Faces the slow-mobility crossing, also serving east-west pedestrians |
 
-Every location meets the requirement of Article 39 of the Barrier-Free Environment Construction Law on accessible information at public service facilities: the bottom edge of the screen is ≤1.1 m above ground (readable from a wheelchair), the plate carries a Braille summary, and a tactile guide strip leads to the kiosk [standard:BARRIER-FREE-ENVIRONMENT-LAW].
+Article 39 of the Barrier-Free Environment Construction Law supplies only the on-site guidance and human-service baseline for the medical, social-security, financial, utility-payment and other public-service settings it enumerates; it does not prove that a kiosk location or camera-sensing arrangement is compliant. A screen bottom edge ≤1.1 m above ground, a Braille summary, a tactile guide strip, a clear operating zone and wheelchair turning space are **concept design targets** here. A compliance finding may be made only after the applicable technical standard is identified, the actual route and location are checked segment by segment, and an accessibility professional verifies them [standard:BARRIER-FREE-ENVIRONMENT-LAW] [assumption:A-OPERATIONS-001].
 
 ##### Data flow path
 
-AI service backend → the belt's unified governance data bus (fibre) → area aggregation node → kiosk terminal (dual 5G / wired) → screen rendering engine (24 hours of data cached locally, cache displayed when the network is down). The data carries only service status and anonymous statistics, and contains no personal information or business data [standard:GENERATIVE-AI-INTERIM-MEASURES].
+AI service backend → the belt's unified governance data bus (fibre) → area aggregation node → kiosk terminal (dual 5G / wired) → screen rendering engine (24 hours of data cached locally, cache displayed when the network is down). The data carries only service status and anonymous statistics, and contains no personal information or business data. **That data boundary is a self-imposed technical and operational constraint pending verification, and rests on no statute**; applicable personal-information and data-security assessment and independent review must be completed separately before go-live [assumption:A-OPERATIONS-001].
 
 ### 7. An example of AI-driven adaptive spatial configuration
 
@@ -1463,7 +1467,7 @@ On the failure tests. The final column is not a disclaimer; it is the methodolog
 
 What does an innovation corridor leave behind in the end? Not buildings, which age; not single events, which disperse. Only three things endure [depth:phasing_implementation]:
 
-First: brand equity. The name, the "Herringbone Rising" motif, the Four Origins and the Bell of Compute form an extensible visual and narrative system that can be deployed across events, publishing, cultural products, wayfinding and international communication without loss of consistency. The test is simple: if a different team runs this ten years from now, will this identity still be recognisable? The proposal therefore requires the visual identity to be open-sourced alongside the submission for non-commercial reuse, rather than locked within a single operating company — widely used symbols become assets; monopolised symbols become liabilities.
+First: brand equity. The name, the "Herringbone Rising" motif, the Four Origins and the Bell of Compute form an extensible visual and narrative system that can be deployed across events, publishing, cultural products, wayfinding and international communication without loss of consistency. The test is simple: if a different team runs this ten years from now, will this identity still be recognisable? The proposal therefore **recommends that, on adopting this scheme, the organiser separately release the visual identity under an explicit public licence** permitting non-commercial reuse, rather than locking it inside a single operating company — widely used symbols become assets; monopolised symbols become liabilities. To be precise: this submission package itself is supplied under `COMMUNITY-DISPLAY-ONLY` and grants no reuse right whatsoever. The public licence above is a recommendation addressed to the organiser, to be decided and issued separately by the rights holder; this proposal does not purport to grant it [assumption:A-LICENCE-001].
 
 Second: collaboration channels. The value of "one congress, one contest, one festival, one list" lies not in holding meetings, but in regularly generating continuing relationships: the Open-Source Congress creates an annual contact point for international teams; the Challenge creates continuous pairing between enterprises and venue owners; the Contribution List creates an enduring identity bond between developers and the corridor. The proposal recommends establishing institutional landing mechanisms — corridor desks, scenario-opening catalogues, open-source maintainer seats — so that when the congress ends, the channel remains open.
 
@@ -1480,7 +1484,7 @@ Milestones and responsibility interfaces. Phase 1 (2026-2028) takes the three pi
 
 ### 1. Recalculation principle
 
-Every spatial metric is recomputed from the `geometry/` layers in EPSG:4548 and rounded back from the emitted coordinates, so that the declared value equals the value a reviewer recomputes [depth:metrics_recalculation]. There are 33 metrics, 30 known and 3 unknown [data:geometry/constraints.geojson#CONS-SITE-PROV] [metric:constraint_feature_count].
+Every spatial metric is recomputed from the `geometry/` layers in EPSG:4548 and rounded back from the emitted coordinates, so that the declared value equals the value a reviewer recomputes [depth:metrics_recalculation]. The current `metrics.json` contains 60 metrics: 57 known and 3 unknown [data:geometry/constraints.geojson#CONS-SITE-PROV] [metric:constraint_feature_count].
 
 ### 2. Core metrics
 
@@ -1534,7 +1538,7 @@ This proposal does not reduce risk to a disclaimer; it sets it out as a register
 | R2 | current regulatory plan conditions not obtained | high | plot ratio, height limit and total floor area cannot be given | the three are marked `status: unknown`; no inference |
 | R3 | land ownership and title relations unknown | high | feasibility and sequence of renewal projects undetermined | the renewal list gives categories and order only, not plot-level disposal |
 | R4 | structural safety appraisals missing | high | retain-renovate-demolish cannot be concluded | criteria only; explicitly no demolition decisions |
-| R5 | traffic and patronage surveys missing | medium | the scale of station integration and stitching links cannot be verified | organising principles and indicative positions only; no sections or capacities |
+| R5 | traffic and patronage surveys missing | medium | the **scale** of station integration and stitching links cannot be verified | sections, signal timing, parking caps and equipment spacing are **all given as concept assumptions and registered line by line** in the "concept parameter register" below [assumption:A-TRANSPORT-001] |
 | R6 | underground and civil defence conditions unknown | medium | feasibility of vertical development unknown | station-city integration confined locally and preconditioned |
 | R7 | population and employment data missing | medium | the scale of public service provision cannot be verified | provision principles and catchment logic only |
 | R8 | heritage and historic building registers incomplete | medium | positions of cultural anchors may need to move | anchor positions are indicative, subject to heritage authority confirmation |
@@ -1543,13 +1547,29 @@ This proposal does not reduce risk to a disclaimer; it sets it out as a register
 
 A standard for disclosure. R1 to R4 are high-rated, and share one characteristic: conclusions are unobtainable because data is missing. This proposal treats all four the same way — it declines to answer explicitly, and states the reason and the conditions under which an answer becomes possible — rather than filling the gap with design inference. That is this proposal's basic understanding of professionalism [standard:MOHURD-CONTROL-DETAILED-PLANNING].
 
+#### Concept parameter register: which figures are not verified against site or specialist data
+
+One class of number, touched by R5, R6 and R7, needs to be stated separately. This proposal does give specific figures — section widths, signal timings, parking caps, equipment spacing — down to the decimal. That is deliberate: a professional team needs a starting point it can criticise and replace, not a principle it cannot argue with. But precision is not verification. The table below registers each class as a concept assumption and names the data it depends on and the event that triggers a recheck. **No row below is an engineering conclusion, and none should be cited as a design basis** [depth:risk_missing_data].
+
+| Parameter class | Specific figures given | Where the figure comes from | Data it depends on | Recheck trigger |
+| --- | --- | --- | --- | --- |
+| Standard street sections | Origin Terrace 21.0 m, Origin Works 23.0 m, Bell Hub 24.0 m, and the carriageway / footway / planting widths within them | Indicative sections drawn from a pedestrian-first principle; no surveyed road line was applied | Road red lines, existing cross-sections, utility positions [assumption:A-TRANSPORT-001] [assumption:A-MUNICIPAL-001] | Once red lines and utility data are obtained, transport and municipal specialists re-allocate the bands |
+| Intersections and signals | Raised table 12 cm, 1:12 ramps, pedestrian green 22 s + 4 s clearance, cycle green 18 s, cycle time 80 s, 25 m sight triangle | Indicative timings following ordinary safety practice | Traffic counts, turning movements, crossing demand, rail interface [assumption:A-TRANSPORT-001] | A dedicated traffic impact assessment once counts and OD data are available |
+| Maximum parking provision | Office ≤0.25–0.35, housing ≤0.40–0.50, retail ≤0.20–0.30, civic ≤0.15–0.20 (spaces per 1,000 m² GFA); fast-charging share ≥30–40% | Concept caps reflecting a policy stance against car growth | Parking demand survey, existing supply, statutory provision standards [assumption:A-TRANSPORT-001] | Verified against measured demand and the current provision standard |
+| Station-area feeders | Covered walkways 240–380 m, bike hubs within 50 m, 500 m walk catchment | Indicative distances based on comfortable walking range | Station entrance positions, patronage OD, rail engineering interface [assumption:A-TRANSPORT-001] | Agreed with the operator once the rail interface is released |
+| AI equipment positions | Edge-compute nodes every 200 m / 4 m² each (Origin Works 150 m / 2.4 m²), V2X roadside units every 120 m, pole sensors every 80 m at 6 m height | Indicative spacing derived from coverage radius; no radio-coverage simulation performed | Power capacity, duct routing, radio-coverage simulation, pole ownership [assumption:A-MUNICIPAL-001] | Coverage simulation and power check before any pilot design |
+| Report Card Kiosk | 1,800 × 2,200 × 2,800 mm, footprint 3.96 m², clear zone ≥2.0 m, wheelchair turning ≥1.5 m, screen centre 1,000–1,200 mm | Product-level indicative dimensions derived from accessibility clearances | Site conditions, power and fire conditions at each location [standard:BARRIER-FREE-ENVIRONMENT-LAW] [assumption:A-MUNICIPAL-001] | Base and orientation adjusted to site conditions once locations are fixed |
+| Public space areas | Herringbone Plaza approx. 3,200 m², Examination Gate Plaza approx. 2,400 m², Origin Stele Garden approx. 1,200 m², pocket parks approx. 600 m² | Recomputed from this package's concept `public_space.geojson` | Tenure, existing buildings, heritage protection zones [assumption:A-HERITAGE-001] | Boundaries redrawn and areas recomputed once tenure and protection zones are known |
+
+The point of the table is this: **"a precise figure was given" and "that figure has been verified" are two different claims.** This proposal makes the first and explicitly denies the second, and writes down, for each class, the data it depends on and the event that should overturn it — so that whoever takes this forward knows which document to obtain first and which number to discard first.
+
 ### 3. Recalculation protocol: what happens when official data is published
 
 So that this package can be updated quickly and verifiably once the official boundary is released, a recalculation protocol is agreed in advance [depth:metrics_recalculation]:
 
 1. Scope of substitution — only the geometry of `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` is replaced; other layers are clipped and re-registered to the new boundary.
 2. Recalculation basis — all areas and lengths are recomputed in EPSG:4548, with coordinates retained to nine decimal places to preserve the tolerance at which parcels tile without gaps.
-3. Metrics that must be recomputed — site area, land-use total, green ratio, public space ratio, building coverage, spine length and area, key area totals, phasing areas, slow mobility and road lengths: all thirty known metrics.
+3. Metrics that must be recomputed — site area, land-use total, green ratio, public space ratio, building coverage, spine length and area, key area totals, phasing areas, slow mobility and road lengths: all fifty-seven known metrics.
 4. What is unaffected — the overall positioning, the logic of the spatial structure, the four-origin narrative, the governance design, and the naming and visual system do not change with the boundary, because they rest on historical fact and institutional logic rather than on particular coordinates.
 5. Record of recalculation — a before-and-after comparison of metrics must be retained and published; silent substitution is not permitted.
 
@@ -1573,11 +1593,37 @@ This is a conceptual recommendation for an open call, with the following explici
 
 ### 6. Factual integrity
 
-The proposal invents no company name, investment figure, policy document, approval number or letter of intent. All historical facts - the completion of the Jing-Zhang Railway in 1909, Zhan Tianyou's leadership, the herringbone switchback, Tsinghuayuan Station, and the beginnings of technology entrepreneurship in Zhongguancun - are matters of public record. All global cases cited are public information. All numeric metrics can be verified by recomputing the `geometry/` layers in this package.
+The proposal invents no company name, investment figure, policy document, approval number or letter of intent. Its Jing-Zhang, Zhongguancun and regional-coordination history is carried throughout as background_only narrative assumptions pending verification; it is not collectively described as verified history and does not enter the formal source evidence. The eight global-case comparisons are the author's design observations, not findings of fact about those projects. Every numeric metric can be verified by recomputing this package's `geometry/` layers.
+
+**Source registration and downgrade notice for historical and regional claims.** The specific facts that carry the core narrative and the regional-coordination argument are registered individually in `sources.json` and mapped as follows:
+
+| Claim in the text | Registered source | Current status |
+| --- | --- | --- |
+| The Jing-Zhang Railway was completed in 1909, surveyed, designed and built by Chinese engineers | [source:HIST-JINGZHANG-1909] | pending verification |
+| In 1949 the Central Committee entered Beiping and its train arrived at Tsinghuayuan Station; the "going to sit an examination" formulation | [source:HIST-TSINGHUAYUAN-1949] | pending verification |
+| The 1988 / 1999 / 2009 lineage of national approvals for Zhongguancun | [source:HIST-ZGC-APPROVALS] | pending verification |
+| The East-Data-West-Computing programme and the Zhangjiakou data-centre cluster | [source:REGION-EAST-DATA-WEST-COMPUTING] | pending verification |
+| The Zhangjiakou renewable energy demonstration zone, established 2016 | [source:REGION-ZJK-RENEWABLE-2016] | pending verification |
+| The opening of the Jing-Zhang high-speed railway and corridor accessibility | [source:REGION-JINGZHANG-HSR] | pending verification |
+| The differentiating comparisons drawn from eight global cases (the King's Cross gentrification debate, one-north's development conditions, the ground-level publicness cost of Tokyo station-city) | [source:GLOBAL-CASE-OBSERVATIONS] | author's design observation, not established fact |
+
+**Downgrade notice.** The six historical and regional threads are commonly repeated narratives, but this package **has not obtained a registrable public URL** for them. Each is therefore registered as `background_only` and flagged `verification_status: pending_public_url_registration` — that is, pending verification. Correspondingly, **every unverifiable exact date, reply document number, precedence claim and construction-schedule figure has been removed from the body text**, and **any wording presenting these items as confirmed national-level fact has been withdrawn**; only year-level narrative remains. They are used **only for cultural narrative, landmark naming and regional background, and never as the basis for any spatial metric, area, alignment, capacity or statutory conclusion**. The comparative statements drawn from the eight global cases have been rewritten as **the author's design observations** and are no longer presented as established fact.
+
+**On the withdrawn film.** This package previously shipped a bilingual proposal film. Its narration was already-synthesised audio containing historical statements this package could not verify (including a specific approval formulation and a day-level date in 1949), and the narration cannot be re-synthesised in this environment. Editing only the captions would leave them contradicting their own soundtrack, and the qualification still would not reach the point where a viewer actually hears the claim. The film, its captions, transcripts and posters have therefore been **withdrawn outright**, rather than keeping a finished entry point that asserts unverified claims behind a distant disclaimer. The static deliverables — body text, figures, drawings and bilingual HTML — never depended on the video, so no spatial conclusion or metric changes.
+
+If verification later shows that any statement cannot be supported, this proposal will delete that statement rather than soften it. This mirrors the treatment of R1–R4: **better to mark something uncertain than to use an uncleared fact as though it were cleared.**tion. All numeric metrics can be verified by recomputing the `geometry/` layers in this package.
 
 ### 7. Copyright and licence
 
-This package is submitted under a `COMMUNITY-DISPLAY-ONLY` licence for display, review and community exchange in this open call. All drawings, diagrams, HTML display and geometry were generated for this submission; no third-party copyrighted images, map basemaps, fonts beyond permitted use, or commercial datasets were used. The herringbone and four-origins motifs are original interpretations of publicly documented history.
+This package is submitted under a `COMMUNITY-DISPLAY-ONLY` licence for display, review and community exchange in this open call.
+
+**Licence scope, stated per asset class**: `COMMUNITY-DISPLAY-ONLY` covers everything in this package uniformly — the body text (`proposal.md` / `proposal.en.md`), the figures (`assets/figures/`), the drawings (`drawings/`), the geometry (`geometry/`), the structured matrices and metrics (`*.json`), the HTML deliverables (`report/`, `visual/`), the cover plate (`assets/media/cover.png`), and the brand and visual identity system (naming, wordmark, herringbone motif, four-origin names, palette and component library). **It grants display and review rights only, and grants no reuse, redistribution, adaptation or commercial licence of any kind.** Nothing anywhere in this package constitutes an open-source licence, a Creative Commons licence, or a non-commercial reuse grant. Where the body text refers to a "public licence" or "non-commercial reuse", that is a **recommendation** addressed to the organiser, to be decided and issued separately by the rights holder; this proposal does not purport to grant it.
+
+**Third-party exception**: the only third-party asset redistributed here is the embedded Chinese font subset, Droid Sans Fallback (Apache License 2.0, © Google Inc.). Its licence and attribution requirements are set out in section 4 of `report/copyright_statement.md`; it sits outside `COMMUNITY-DISPLAY-ONLY` and applies under the Apache-2.0 terms on its own. Apart from that, all drawings, diagrams, HTML display and geometry were generated for this submission; no third-party copyrighted images, map basemaps, fonts beyond permitted use, or commercial datasets were used.
+
+**Attribution requirement**: any use separately licensed by the rights holder must credit the author `cf3901646` and the scheme name "JINGZHANG RISING", and must retain the provisional-boundary notice and the statement that this is not statutory planning.
+
+The herringbone and four-origins motifs are original interpretations of the background_only narrative threads registered individually in `sources.json`; this package does not upgrade them to verified history.
 
 ### 8. AI generation statement
 
@@ -1611,14 +1657,14 @@ C. Structured evidence in this package
 14. Key-area layer [data:geometry/key_areas.geojson#PROV-KEY-002]
 15. Metric recalculation file `metrics.json` [metric:phase_one_area_sqm]
 
-D. Historical and cultural references, all public record
+D. Historical and cultural references (background_only narrative threads pending verification)
 
-16. The Jing-Zhang Railway, completed 1909 under Zhan Tianyou, China's first self-designed and self-built trunk railway
+16. The Jing-Zhang Railway, completed 1909 under Zhan Tianyou, surveyed, designed and built by Chinese engineers (narrative assumption pending verification; see sources.json)
 17. The herringbone switchback at Qinglongqiao Station
 18. The former Tsinghuayuan Station and its significance in 1949
 19. The origins and development of technology entrepreneurship in Zhongguancun
 20. Public reporting on the construction of the Jing-Zhang rail heritage park
 
-E. Global references, all public information
+E. Global references (author's design observations, not established facts)
 
 21. Stanford and Silicon Valley; King's Cross Knowledge Quarter, London; MILA, Montreal; Station F, Paris; one-north, Singapore; Tokyo station-city development; Zhangjiang AI Island, Shanghai; Hetao and Xilihu, Shenzhen [metric:ecosystem_case_count]
