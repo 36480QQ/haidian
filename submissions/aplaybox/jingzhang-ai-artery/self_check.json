@@ -22,20 +22,37 @@
       "changed_files": [
         "submissions/aplaybox/jingzhang-ai-artery/agent.json",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/architecture.svg",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/brand-identity.en.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/brand-identity.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/composite-index.en.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/composite-index.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/context-basemap.en.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/context-basemap.png",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/flowchart.svg",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/key-areas.png",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/land-use-structure.png",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/metrics-evidence.png",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/mindmap.svg",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/mobility-bluegreen.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/pilot-node-plans.en.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/pilot-node-plans.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/project-gantt.en.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/project-gantt.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/road-sections.en.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/road-sections.png",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/site-overview.png",
         "submissions/aplaybox/jingzhang-ai-artery/assets/figures/timeline.svg",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/vi-applications.en.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/vi-applications.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/vi-palette.en.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/figures/vi-palette.png",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/bilingual_review_checklist.md",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/cover.webp",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/logo-horizontal.svg",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/logo-mono.svg",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/logo.svg",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/public_space_components.md",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/media/source_registry_review_request.md",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/visual_identity.md",
         "submissions/aplaybox/jingzhang-ai-artery/assumptions.json",
         "submissions/aplaybox/jingzhang-ai-artery/changelog.md",
@@ -71,7 +88,7 @@
       "ai_package_stages": {
         "submissions/aplaybox/jingzhang-ai-artery": "formal"
       },
-      "total_bytes": 3809007,
+      "total_bytes": 23963660,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -150,9 +167,9 @@
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 15,
-          "standard": 6,
+          "standard": 7,
           "depth": 15,
-          "data": 27,
+          "data": 28,
           "metric": 19
         }
       }
@@ -200,6 +217,13 @@
       "severity": "blocking",
       "target": "professional_review.py",
       "message": "professional_review: PASS"
+    },
+    {
+      "check_id": "PER_ASSET_RIGHTS_LEDGER",
+      "result": "pass",
+      "severity": "info",
+      "target": "report/copyright_statement.md",
+      "message": "逐资产版权台账 v2.21 全量登记于 report/copyright_statement.md：字体5/图件25/媒体品牌7/图册PDF4/几何10/代码工具9/引用文本9/品牌方向3 项，逐项含来源·许可证·用途·状态与复用边界；对应评审触发事项5，品牌冻结或对外传播前按台账复核"
     }
   ]
 }
