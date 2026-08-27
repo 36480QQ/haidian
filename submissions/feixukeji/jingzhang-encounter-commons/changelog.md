@@ -4,6 +4,7 @@ Change log / 变更记录
 
 ## v1.9 - 2026-08-27
 
+- Closed the review renderer blockers: both long-form reports now load regenerated offline `Encounter Sans` subsets covering every current HTML glyph; the English language switch and raster figures are fully English; and the required figure footers now match v1.9.
 - Completed the taskbook semantics behind the identifiers: the bilingual proposal now maps all three official positionings, five functions, and the Three Zones and Two Wings collaboration loop, and adds developer-community, international-communication, and attraction-to-conversion mechanisms with explicit authorisation and exit boundaries.
 - Added a bilingual, independently readable AI innovation ecosystem map connecting eight resources, Three Zones and Two Wings, and the reversible public-problem-to-review loop; the diagram is original, programmatically generated, non-geographic, and visible in the proposal, offline HTML, and updated A3/A0 publications.
 - Added unknown-but-computable contracts for the AI Innovation Index, talent density, and AI industry output, including formulas, missing-data reasons, data requirements, and recalculation triggers instead of fabricated values.
