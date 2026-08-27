@@ -201,6 +201,33 @@
       "independent legal, file-level or trademark review"
     ]
   },
+  "round_62_1_repair": {
+    "date": "2026-08-27",
+    "pr": 4055,
+    "scope": "Close the post-build offline CJK regression in the two final reports and bind the repair to all four final HTML consumers.",
+    "before_evidence": {
+      "report_stylesheet_link_count_per_language": 0,
+      "visual_stylesheet_link_count_per_language": 1,
+      "historical_register_claimed_closed": true
+    },
+    "after_evidence": {
+      "html_surfaces_checked": 4,
+      "stylesheet_link_count_per_surface": 1,
+      "font_face_status": "loaded",
+      "computed_family": "JZ Noto CJK Offline",
+      "core_chinese_string_check": true,
+      "external_http_resource_requests": 0,
+      "screenshot_tofu_count": 0
+    },
+    "generation_boundary": "The shared repository renderer has no package-level stylesheet hook and remains out of submission scope; every future report rerender must repeat the four-surface font regression before manifest refresh.",
+    "new_media": false,
+    "spatial_and_metric_freeze": true,
+    "cannot_prove": [
+      "independent accessibility certification",
+      "official boundary, field result, approval or G1",
+      "independent legal, file-level or trademark review"
+    ]
+  },
   "media_generation_toolchain": {
     "method": "Local deterministic vector and Pillow frame synthesis from package-authored diagrams and the four-state contract; Chrome raster export; FFmpeg H.264 encoding; no network, download, model API, site image, voice, music or audio.",
     "python": "3.14.7",

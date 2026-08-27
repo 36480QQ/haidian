@@ -1,5 +1,19 @@
 # 方案迭代记录 / Changelog
 
+## v62.1 - 2026-08-27
+
+**R62 离线 CJK 回归闭合 / R62 Offline CJK Regression Closure**
+
+- 针对 PR #4055 当前 exact-head 评审的唯一参与者可控阻断项，重新建立修复前 RED：R62 重渲后，两份 visual 仍加载包内字体子集，但 `report/proposal.html` 与 `report/proposal.en.html` 的字体链接再次丢失；这证明旧台账的“已关闭”不能替代对最终消费者的复测。
+- 在两份最终报告中恢复 `../visual/assets/offline-cjk-font.css`，并将四个最终 HTML 作为同一回归集合。全新 Chromium 逐页确认 `document.fonts.status=loaded`、计算字体为 `JZ Noto CJK Offline`、核心中文串检查为真，外部 HTTP(S) 资源请求为 0；中英文报告和 visual 截图冷读未见方框字。
+- 由于仓库通用 renderer 暂无投稿包级样式钩子，本轮不越权修改共享脚本；后续每次重渲均必须在 manifest 刷新前复跑“四表面字体链接 + 字体加载 + 截图冷读”回归，不能只相信登记表或机器 schema PASS。
+- 本修复不增加媒体、页面、主张、事实或成熟度，不改变 geometry、`metrics.json`、12/8/3/36、G0/NO-GO、provisional、现实结果 0、批准 0、专业接责 0、独立现实复测 0 或权利边界。
+
+- Reproduced the sole contributor-controlled blocker on the current exact head of PR #4055. After the R62 rebuild, both visual pages still loaded the local font subset, but the stylesheet link had again disappeared from `report/proposal.html` and `report/proposal.en.html`. A historical “closed” register therefore did not substitute for retesting final consumers.
+- Restored `../visual/assets/offline-cjk-font.css` in both final reports and treated all four HTML surfaces as one regression set. Fresh Chromium checks confirm `document.fonts.status=loaded`, computed family `JZ Noto CJK Offline`, a true core-Chinese-string font check and zero external HTTP(S) resource requests; cold-read screenshots of both reports and both visual pages show no tofu.
+- The shared repository renderer currently exposes no package-level stylesheet hook, so this repair does not alter out-of-scope shared scripts. Every future rerender must repeat the four-surface link, font-load and screenshot checks before manifest refresh; a register or schema PASS alone is insufficient.
+- This repair adds no media, page, claim, fact or maturity upgrade and changes no geometry, `metrics.json`, 12/8/3/36 count, G0/NO-GO, provisional status, zero real outcomes, zero approvals, zero accepted professional duties, zero independent real-world retests or rights boundary.
+
 ## v62.0 - 2026-08-26
 
 **出版身份与首屏一致性 / Publication Identity and First-screen Coherence**
