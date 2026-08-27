@@ -1,5 +1,9 @@
 # 方案迭代记录
 
+## v1.15 - 2026-08-27
+
+- Corrected the remaining provisional-geometry language in the English visual and self-check record: current content review can proceed, while official geometry only triggers a later full recalculation and limits statutory use.
+
 ## v1.14 - 2026-08-27
 
 - Re-rendered the English proposal with English-only evidence labels and navigation text, removing the review-visible mixed-script fallback problem from the offline English report.
