@@ -13,6 +13,14 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 # Jingzhang Resonance Loop
 
+## First-read conclusion: an R04 public pilot that can stop and restore
+
+The Jingzhang Resonance Loop links Zhongzhiyuan, AI Origin and Dazhongsi along a heritage-park public validation line. This submission does not frame all three as simultaneous works. Its first detailed prototype is **R04 Open Knowledge Front Desk** at AI Origin: within an approximately 120m conceptual public route, verify site conditions and rights first, establish an uninterrupted no-login ordinary service, and only then consider a side, removable information layer. R04-A central display island is rejected for compressing public movement; R04-B distributed points returns for revision because responsibility becomes unreadable; R04-C side front desk advances for conceptual detailing [metric:r04_spatial_alternative_count] [metric:r04_pilot_corridor_length_m].
+
+![R04 Open Knowledge Front Desk: five scales and a bounded 100-day pilot](assets/figures/r04-pilot-atlas-v2.en.svg)
+
+The prototype can advance only after authorised people close four gates: G0 site/rights/accessibility, G1 ordinary public baseline, G2 limited-trial responsibility, and G3 human review. A failed gate does not trigger expansion: it returns to ordinary service, revision or stop. This is concept design and synthetic-rule verification only, with **0 field results**; it claims no permit, cost, construction or operating outcome [metric:r04_readiness_gate_count] [metric:r04_pilot_duration_days] [metric:r04_field_result_count].
+
 ## Design Basis and Source List
 
 This formal package responds to the public qualification announcement for the Centennial Jingzhang AI Innovation Belt and the agent open-call taskbook. It uses the registered brief, source registry, enumerations and schemas as its evidence layer [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The current site and key-area polygons are explicitly **provisional constraints**, not official boundaries, redlines or approval controls [source:SOURCE-REGISTRY]. Figures, GeoJSON and metrics are therefore reproducible design working materials rather than statutory conclusions.
@@ -69,6 +77,30 @@ The AI Origin “open knowledge front desk” does not aim to add more screens o
 This is not a survey, building permit or engineering proposal for an existing parcel. The alternatives test only five concept relations: continuous public route, no-login arrival at staffed help, readable responsibility, readable withdrawal and a removable optional information layer. The three alternatives are reproducible as [metric:r04_spatial_alternative_count]. R04-C’s four design-relation checks and zero field results are recorded in `visual/assets/r04-spatial-decision.json`, as [metric:r04_design_relation_check_count] and [metric:r04_field_result_count]. Any future plan dimensions, clear widths, fire conditions, equipment, tenure, trees, drainage, permits, costs and operating performance require official information and professional review.
 
 ![R04 Open Knowledge Front Desk four-part detail: concept plan, section of public baseline and removable information layer, four states from ordinary opening to pause and return, and four design-relation checks](assets/figures/r04-node-detail.en.svg)
+
+![R04 five-scale atlas and bounded 100-day pilot: from city relation to 1:50 reversible detail, organised through a 120m conceptual public route, four gates and three measurement contracts](assets/figures/r04-pilot-atlas-v2.en.svg)
+
+#### R04 first prototype: use one stoppable pilot to decide whether space merits deepening
+
+R04-C advances not by adding more scenes but by concentrating one **approximately 120m conceptual public route, four decision points, one accessible service bay and a 100-day bounded pilot**. The 120m envelope, 3.0m public route and 4.8m side desk are relationship dimensions for comparing one concept model and preparing a future survey brief; they are not a surveyed condition, construction dimension, fire route, permit or delivery commitment [metric:r04_pilot_corridor_length_m] [metric:r04_pilot_decision_point_count].
+
+The same R04 ID runs through five scales: city relation, district interface, 1:500 concept plan, 1:200 public-baseline/side-front-desk section and 1:50 reversible detail. Every scale remains within the expression boundary of formal information and specialist review. A public route, staffed handoff, removable information layer and pause/removal exit can therefore be examined as one spatial object.
+
+| Handoff material / decision | Suggested preparer or interface | Who owns the decision to enter the next gate | What is retained | Boundary note |
+| --- | --- | --- | --- | --- |
+| G0 site, rights, opening and risk verification sheet | site/operations interface and later specialist advisers | lawful rights-holder and the relevant professional review process; this submission does not replace that decision | formal-data list, gaps list and no-go items | 120m, 3.0m and 4.8m are concept-relation dimensions, not survey or construction dimensions |
+| G1 civic-baseline service card | on-site service, accessibility and maintenance interface | operations responsibility holder with accessibility and safety review | record of route, physical orientation, staffed hours, shade and seating availability | if it fails, retain ordinary service only; add no AI layer |
+| G2 attribution, withdrawal and removable-layer role card | open-source/rights service and on-site maintenance interface | content rights-holder and on-site responsibility holder together | consent summary, attribution, withdrawal route, removal and human-takeover record | no additional personal data; unclear rights means no display |
+| G3 100-day review and restoration note | independent review, user-feedback and operations interface | a human review group advises adopt/revise/stop; subsequent procedures decide lawfully | anonymous aggregate, complaint/correction log, restoration record and next brief | field results are currently 0 / not field-run; drawings do not substitute for field evidence |
+
+| 100-day phase | Entry gate | Only delivery at this phase | If it fails |
+| --- | --- | --- | --- |
+| days 0—15 | G0 site, rights, opening hours, accessibility and risk verification | verification and no-go list | retain ordinary opening and desktop proposal |
+| days 16—35 | G1 ordinary public baseline first | continuous route, static orientation, staffed help, shade and seating | do not enter any optional information layer |
+| days 36—70 | G2 staffed presence, rights, withdrawal, maintenance and removal responsibility | bounded removable result cards and check records | remove content and return to ordinary service |
+| days 71—100 | G3 human review | aggregated review, restoration and adopt / revise / stop advice | no automatic expansion; revise or stop |
+
+Three measurement contracts define only how a later review would judge the prototype: whether a no-login visitor reaches staffed help; whether content remains understandable after withdrawal; and whether ordinary service restores immediately after a pause. Each has an ordinary-service baseline, optional layer and stop condition. Field results remain **0 / not field-run** and cannot be substituted by drawings or synthetic rules [metric:r04_measurement_contract_count] [metric:r04_field_result_count] [metric:r04_pilot_duration_days] [metric:r04_readiness_gate_count].
 
 | R04 state | Public baseline visible on site | Optional information / AI layer | When to stop | What remains after pause |
 | --- | --- | --- | --- | --- |
@@ -216,6 +248,14 @@ This is not a list of new landmarks. It is a set of three design components that
 
 The three units are linked through a public ledger of **place — service — retained benefit — maintainer — review date**. It records only spatial facilities, service responsibility and authorised aggregate feedback; it does not record personal journeys, identity or profiling. A digital service cannot expand when its maintainer, staffed entry or site condition is absent. The ledger is a working handoff record for later professional teams, not an administrative approval, a live-surveillance system or a construction commitment.
 
+### Brand Mark and Spatial Identity
+
+The mark is a “two lines, three points” grammar: railway navy records the time line; civic teal records public walking and open collaboration; the three amber points mark public moments of resonance. It is a conceptual identity only, not statutory wayfinding or an institutional logo.
+
+![Jingzhang Resonance Loop concept mark: two lines meet at three points and generate three different spatial kits — Compute Garden, Knowledge Front Desk and Station-City Gate](assets/figures/resonance-mark.en.svg)
+
+The mark is not only a graphic. It makes three visibly different spatial grammars: **Compute Garden** uses a shaded court and movable explanation for “testing with room to pause”; **Knowledge Front Desk** uses an edge service, shared table and withdrawable result cards for “conversion that faces people”; **Station-City Gate** uses a dwellable porch, physical orientation and night enquiry for “technology returning to everyday life”. The kits share the two lines and three colours but do not repeat the same building, bridge, ring, screen or object shape. Any actual identity, material, scale, installation, lighting and accessibility detail remains for professional design and applicable review.
+
 ### One Cultural Line, Four Seasons, Three Returns to Site
 
 Operation is not a string of events added beside the heritage park. The proposal organises Qinghuayuan—Dongsheng—Zhongguancun—Dazhongsi as a cultural line of **memory — question — co-create — return**: railway culture makes connection and maintenance legible; Zhongguancun culture provides a daily stage for problem-led work, open collaboration and conversion; AI culture enters the site only when it can be understood, questioned and leave a physical return. Each event follows the same three actions: raise a question on site, test collaboratively across the three anchors, and return to public space with a visible revision or pause.
@@ -290,6 +330,19 @@ The cases below are not an international name collage. They test missing interfa
 | Waterfront Innovation Centre, Toronto | digital infrastructure, employment space, public realm and accountable delivery aligned together | the heritage park puts public space first and digital capability second through reversible packages | no developer, budget, construction scale or engineering standard transfer |
 
 The local chain is therefore: **basic research → open contribution → trusted test → incubation/IP/capital connection → small public-service pilot → public review and international exchange**. Every link needs a spatial carrier, accountable role, staffed option and stop condition; capital service means compliant advice, pitch and connection—not an investment promise [source:CASE-KENDALL-SQUARE] [source:CASE-STATION-F] [source:CASE-MARS].
+
+### Three Zones, Two Wings and Regional Interfaces: a Suggested-Interface Matrix
+
+“Three zones, two wings” is not a statement of existing partnerships, public commitments or delivery entities. It is a **suggested-interface framework** for later research, topic exchange and brief preparation. The three-anchor civic spine holds the everyday public baseline; the Zhongguancun technology-service wing makes the research-to-incubation-to-capital-service handoff legible; the Xiaoyue River scenario wing tests low-risk education, health, energy and park-care situations. Beiwei community, Future Science City, Huairou Science City, E-town and Jing–Jin–Ji are regional comparison and future-research windows only: no project, funding, estate-management power or partnership is assumed.
+
+| Interface layer | Suggested spatial/service question | Minimum exchange material | Still to verify before any next step | Must not be read as |
+| --- | --- | --- | --- | --- |
+| Three-anchor civic spine (Zhongzhiyuan—AI Origin—Dazhongsi) | public walking, staffed enquiry, removable information layer and daily service | issue map, service-role card, pause/restore record | existing boundary, accessibility, heritage, fire and maintenance responsibility | approved construction or simultaneous delivery |
+| Zhongguancun technology-service wing | spatial handoff among basic research, open contribution, incubation, IP and capital service | research brief, attribution/withdrawal note, scenario-fit list and non-exclusive resource-connection record | service entity, rights boundary, data compliance and site conditions | named investment, tenant or financing commitment |
+| Xiaoyue River scenario wing | civic scenes for AI+ education, health, energy, walking and park care | non-digital baseline, human-takeover flow and anonymous feedback digest | sector qualification, equipment safety, data authorisation and specialist assessment | deployed system or live public service |
+| Regional observation window (Beiwei community, Future Science City, Huairou Science City, E-town, Jing–Jin–Ji) | topic comparison, case reading, talent/activity research and later brief preparation | public case card, issue list and annual research topic | local formal policy, entity authorisation and independent procedures | cross-regional government cooperation or resource-allocation promise |
+
+![Three zones, two wings and regional interfaces: the civic spine, Zhongguancun technology-service wing, Xiaoyue River scenario wing and regional window are suggested interfaces only](assets/figures/land-use-structure.en.png)
 
 ### From Research to City Adoption: a Six-Stage Ecosystem Relay
 

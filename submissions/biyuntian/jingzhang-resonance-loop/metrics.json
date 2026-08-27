@@ -159,6 +159,51 @@
       "assumptions": [
         "No field test, service operation, permit, construction, cost or performance outcome is claimed by this concept package."
       ]
+    },
+    "r04_pilot_corridor_length_m": {
+      "status": "known",
+      "value": 120,
+      "unit": "m",
+      "source_files": ["visual/assets/r04-spatial-decision.json"],
+      "formula": "pilot_envelope.corridor_length_m",
+      "confidence": "medium",
+      "assumptions": ["Conceptual pilot-envelope length for spatial comparison only; it is not surveyed, permitted or construction-ready."]
+    },
+    "r04_pilot_decision_point_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": ["visual/assets/r04-spatial-decision.json"],
+      "formula": "pilot_envelope.decision_points_count",
+      "confidence": "high",
+      "assumptions": ["Decision points are concept-design checkpoints, not installed devices or public-service counters."]
+    },
+    "r04_measurement_contract_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": ["visual/assets/r04-spatial-decision.json"],
+      "formula": "count(measurement_contracts)",
+      "confidence": "high",
+      "assumptions": ["Contracts define a future review method and have no field result at this submission stage."]
+    },
+    "r04_pilot_duration_days": {
+      "status": "known",
+      "value": 100,
+      "unit": "day",
+      "source_files": ["visual/assets/r04-spatial-decision.json"],
+      "formula": "sum(hundred_day_pilot.day_ranges)",
+      "confidence": "high",
+      "assumptions": ["A concept-stage bounded pilot sequence; it neither authorizes an operation nor represents an agreed schedule."]
+    },
+    "r04_readiness_gate_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": ["visual/assets/r04-spatial-decision.json"],
+      "formula": "count(readiness_gates)",
+      "confidence": "high",
+      "assumptions": ["Gates are proposal-stage governance logic. A gate can only be closed by authorized human reviewers."]
     }
   }
 }
