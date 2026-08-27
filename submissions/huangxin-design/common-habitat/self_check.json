@@ -18,6 +18,7 @@
       "changelog_files": [],
       "changed_files": [
         "submissions/huangxin-design/common-habitat/agent.json",
+        "submissions/huangxin-design/common-habitat/assets/brand/common-habitat-project-mark.svg",
         "submissions/huangxin-design/common-habitat/assets/figures/key-areas.en.png",
         "submissions/huangxin-design/common-habitat/assets/figures/key-areas.png",
         "submissions/huangxin-design/common-habitat/assets/figures/land-use-structure.en.png",
@@ -28,6 +29,10 @@
         "submissions/huangxin-design/common-habitat/assets/figures/mobility-bluegreen.png",
         "submissions/huangxin-design/common-habitat/assets/figures/site-overview.en.png",
         "submissions/huangxin-design/common-habitat/assets/figures/site-overview.png",
+        "submissions/huangxin-design/common-habitat/assets/visuals/common-gateway-rainy-night.jpg",
+        "submissions/huangxin-design/common-habitat/assets/visuals/habitat-corridor-rainy-night.jpg",
+        "submissions/huangxin-design/common-habitat/assets/visuals/human-service-pavilion-day.jpg",
+        "submissions/huangxin-design/common-habitat/assets/visuals/jingzhang-commons-hero-v2.png",
         "submissions/huangxin-design/common-habitat/assumptions.json",
         "submissions/huangxin-design/common-habitat/compliance_matrix.json",
         "submissions/huangxin-design/common-habitat/design_depth_matrix.json",
@@ -61,7 +66,7 @@
       "ai_package_stages": {
         "submissions/huangxin-design/common-habitat": "formal"
       },
-      "total_bytes": 27947907,
+      "total_bytes": 34227143,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -135,15 +140,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 15,
+        "known_metric_refs_required": 27,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 12,
+          "source": 18,
           "standard": 3,
           "depth": 6,
           "data": 5,
-          "metric": 14
+          "metric": 26
         }
       }
     },

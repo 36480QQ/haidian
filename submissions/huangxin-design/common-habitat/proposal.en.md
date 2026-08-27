@@ -40,6 +40,34 @@ The spatial structure is one spine, two networks and three proposed pilot areas.
 
 ![Three-level scope and land-use transmission](assets/figures/land-use-structure.en.png)
 
+## Taskbook Alignment: Three Positions, Five Functions, Three Areas and Two Wings
+
+The three positions share one evidence chain rather than three slogans. The Centennial Jingzhang Culture Belt separates verified heritage, engineering knowledge, oral history and open contributions. The Metropolitan AI Life Experience Belt first guarantees public service without a phone, account or identity check. The AI-Integrated Innovation Belt links research, testing, public scrutiny, operation and exit. Their visible outputs are an auditable historical timeline, a complete public day available to everyone, and a City Test Passport with versions, named responsibilities, failures and exit conditions. [source:AGENT-TASKBOOK] [metric:positioning_count]
+
+The five functions form a sequence. Zhongzhiyuan hosts the **full-stack independent AI innovation system**. The three areas and two wings together form a **world-class AI innovation ecosystem**. Xiaoyue River and public-service nodes test a **new model of AI-enabled scenarios**. Dazhongsi and daily-life nodes test an **intelligent, active AI city**. Open protocols, independent recalculation and failure archives support **global discourse on AI governance**. “World-class” and “global discourse” are objectives, not current ratings. [metric:function_count]
+
+| Spatial unit | Proposed task | Interface to the next step | Current boundary |
+| --- | --- | --- | --- |
+| Zhongzhiyuan AI Independent Innovation Accelerator | R&D, engineering verification, repair, red-teaming and energy testing | Delivers reproducible prototypes and exit plans to public scenarios | Location and operator remain unverified |
+| AI Origin Community | Phone-free public service and daily-life testing | Returns access barriers, human workload and correction records | Low-risk reversible pilot only |
+| Dazhongsi AI Industry Cluster | Complex interchange, daily services and emerging-service testing | Produces service-process, market-fit and public-interest reviews | No engineering or commercial authorisation is implied |
+| Zhongguancun Technology Service Wing | IP, law, standards, talent, capital and international professional services | Provides the back-office interface for R&D, evaluation and transfer | No new statutory land boundary or existing commitment is implied |
+| Xiaoyue River Scenario Empowerment Wing | Controlled tests in public space, blue-green systems and urban services | Supplies scenarios, maintenance feedback, ecological evidence and public review | Parks and streets are not default data-collection zones |
+
+Together they form an R&D–public use–complex-environment verification–professional service–scenario feedback loop. This is a spatial and industrial coordination proposal, not an approved institution or investment arrangement. [metric:spatial_zone_count] [metric:collaboration_wing_count]
+
+Regional cooperation begins with revocable task interfaces rather than unverified physical links:
+
+| Node | Proposed interface | Transferable output | Boundary |
+| --- | --- | --- | --- |
+| Beiwei Community | Community needs, public service and user retesting | Problem ledger, task samples and maintenance feedback | Residents are not default test subjects |
+| Future Science City | Knowledge, talent and joint evaluation methods | Research questions, mentors and repeatable protocols | No signed partnership, staffing or special fund is claimed |
+| Huairou Science City | Scientific methods, instruments and independent verification | Test design, calibration and recalculation records | Facility access or compute quotas are not assumed |
+| Beijing E-Town | Engineering, manufacturing, industrial testing and transfer | Maintainable components, interface specifications, prototyping and exit records | No procurement, location commitment or industrial scale is promised |
+| Beijing–Tianjin–Hebei | Cross-city replication, talent exchange and fitness comparison | Open protocols, data dictionaries, version differences and limits | A conceptual network is not presented as an established alliance |
+
+Knowledge, talent, testing, compute and transfer enter only through named agreements, permissions and cost records. Formal partners, funding, space and data arrangements remain subject to confirmation by the relevant parties. [metric:regional_collaboration_node_count]
+
 ## Coordinated Research Area: Industry and Future City Research
 
 The corridor is proposed as an openly auditable urban testing process. Enterprises, researchers and public bodies would define real urban tasks and compare a zero-AI baseline, a low-tech solution and an optional AI solution at the same location. Public-interest safeguards become design inputs, test conditions and procurement evidence, reducing the risk of deploying a compelling demonstration that cannot be maintained, explained or removed. [source:AGENT-TASKBOOK] [depth:overall_spatial_structure]
@@ -47,6 +75,34 @@ The corridor is proposed as an openly auditable urban testing process. Enterpris
 A City Test Passport structures the pathway: problem registration, three-way comparison, isolated verification, shadow operation, limited public trial, independent recalculation, and either procurement discussion or exit. Each gate publishes versions, errors, energy, human takeover, least-served-group results and unresolved issues. Enterprises gain reusable task definitions, open interfaces, a shared testing space and a record of unsuccessful trials; participation alone conveys no procurement preference, certification or partnership.
 
 Industry validation begins with four cross-cutting tests: low-energy edge sensing, a robot shared-space safety sandbox, public-service-agent reliability and red-teaming, and AI energy and exit cost. These tests support accessible mobility, public-service navigation, low-interference cultural guidance, enterprise-service coordination and public-safety review. If ordinary signage, telephone or human service performs better, “do not procure AI” is a legitimate and useful result. [source:INT-UNESCO-AI-ETHICS] [metric:industry_test_count]
+
+## Six International Cases and an Eight-Element Innovation Ecosystem
+
+The cases compare organisational, spatial and governance mechanisms. They are not a ranking, and overseas scale, funding or policy conditions are not converted into Jingzhang forecasts.
+
+| Case and source | Verifiable mechanism | Action transferable to Jingzhang | Limit and non-transferable element |
+| --- | --- | --- | --- |
+| Vector Institute, Toronto [source:CASE-VECTOR] | A non-profit institute connects universities, industry, health and government across talent, research and trusted adoption | Zhongzhiyuan keeps a shared research–engineering–adoption ledger with public test goals and reusable outputs | Do not reuse its funding, talent or company numbers; research space is not automatically public space |
+| Mila, Montréal [source:CASE-MILA] | Research, universities, start-ups, industry and responsible-AI debate coexist over time | Place open lectures, translation, ethics review and public-interest sprints in one operating cycle | Do not copy a star-researcher model or substitute reputation for local evidence |
+| Knowledge Quarter, London [source:CASE-KNOWLEDGE-QUARTER] | A walkable institutional network connects culture, research, universities, community and local bodies | Organise a knowledge neighbourhood with a light membership charter and cross-institution problem groups | Institutional density, ownership and transport differ; its spatial scale cannot be transplanted |
+| LaunchPad @ one-north, Singapore [source:CASE-LAUNCHPAD] | Enterprise, research, events and daily support are organised at close range | Provide shared verification facilities, short project places and talent support at Zhongzhiyuan | Do not describe planned projects as completed; entrepreneurship cannot displace the public or ecological baseline |
+| Seoul AI Hub [source:CASE-SEOUL-AI-HUB] | A city-backed support institution links talent, incubation, R&D infrastructure and collaboration | The three areas share admission, mentoring, testing and exit rules with staged support | Do not copy incentives, investment or planning controls; similar policy remains a research proposal |
+| STATION F, Paris [source:CASE-STATION-F] | A reused historic building concentrates programmes, shared services and events | Dazhongsi can study one public entrance with multiple programmes and a shared back office | Do not copy the brand, company list, fee structure or single large-campus form |
+
+Across the six cases, the transferable value is a long-term chain linking research, talent, space, testing and adoption, not a list of companies. The proposed Jingzhang loop is: register an urban problem → compare N0, low-tech and AI → develop at Zhongzhiyuan → complete N2 safety testing → test public use at AI Origin Community and Xiaoyue River → test complex services at Dazhongsi → independently recalculate with resident/professional dual keys → continue, reduce, discuss procurement or exit → return evidence to the Open Ledger. [metric:international_case_count]
+
+| Element | Proposed carrier | Mechanism and release evidence | Accountable role, pending confirmation |
+| --- | --- | --- | --- |
+| Land | Reversible, reusable, short-cycle space in the three areas | No permanent allocation for unverified technology; restore ordinary public or R&D use on exit | Planning and site owner |
+| Space | Shared benches, N2 isolation rooms, public observation and repair positions | Passed and failed projects use the same disclosure format | Operator and safety lead |
+| Industry | Zhongzhiyuan R&D, Dazhongsi services and the Zhongguancun wing | Form teams around public problems; no vendor controls interfaces, data or evaluation | Industry convenor and procurement owner |
+| Capital | Staged challenge funds or joint R&D, as a proposal | Evidence-gated release; evaluation and failure publication budgets remain independent | Funder and independent reviewer |
+| Talent | Researchers, engineers, designers, maintainers and residents in one project unit | Maintainers join early; residents can refuse and receive paid or equivalent participation | Project and co-design leads |
+| Compute | Controlled tests and professional-service interfaces | Log quotas, duration, energy and cost; no quota is currently promised | Compute provider and energy manager |
+| Data | AI Origin Community, Xiaoyue River and the Open Ledger | Prefer open, synthetic, de-identified or cleared data; keep sensitive data within accountable boundaries | Data and safety lead |
+| Scenarios | Xiaoyue River, AI Origin Community and Dazhongsi | Each scenario retains a non-AI baseline, human takeover and an exit drill | Scenario owner and affected-user representative |
+
+All eight elements are conceptual arrangements. Land, funding, compute, data permission, responsible parties and agreements must be confirmed before implementation or performance claims. [metric:innovation_ecosystem_element_count]
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -61,6 +117,38 @@ Zhongzhiyuan hosts maintainability and research verification through an open tes
 Each area uses the same design card: intended users, six tasks, spatial action, zero-AI route, optional technology, physical location, maintainer, test method, stop condition and restoration action. All placements remain conceptual until boundaries, ownership and operating rights are confirmed.
 
 ![Three key areas and their test roles](assets/figures/key-areas.en.png)
+
+## Four Landmark Prototypes, Open Recognition and Public Components
+
+The four landmarks are spatial prototypes subject to verification, not fixed sites or approved projects. Each protects ordinary use before adding an optional intelligent layer.
+
+| Prototype | Proposed role | Ordinary use and optional technology | Stop or fallback condition |
+| --- | --- | --- | --- |
+| L01 AI Origin Contribution Archive / Origin Commons | Public knowledge, timeline, discussion and feedback | Fixed, paper and tactile content remains usable; AI only assists search and translation | Disable the intelligent layer when history or rights are unverified or human correction is impossible |
+| L02 Zhongzhiyuan Open Verification Yard | Observable and isolatable industry testing and repair | Shared tools, repair, observation and safety information precede edge, robotics, model-safety and energy tests | No entry to a real community before safety and outage drills pass |
+| L03 Dazhongsi Common Gateway | A non-commercial entrance linking interchange, community, life and industry services | Human service, rest, signage and public legal/life information remain; AI is opt-in only | Profiling, commercial steering or obstruction of a necessary route causes suspension |
+| L04 Jingzhang Unplugged Platform | A relocatable public dashboard, emergency stop and removal-drill node | Physical models, failures and human takeover remain readable; intelligent parts use standard removal interfaces | No placement until heritage, green-space, structure, power and event conditions are checked |
+
+The Jingzhang Open Ledger recognises five contribution types: finding a public problem, providing cleared data, repairing a component, completing independent replication, and publishing a failure or exit. A record includes a voluntarily disclosed name, date, output link, licence, conflict of interest and version. It is not ranked by sponsorship; essential facilities do not sell naming rights; unverified model scores do not become permanent monuments. Superseded findings keep version history, while non-essential personal information may be removed under the applicable rules. [metric:landmark_count]
+
+| Plug-in component | N0 public function | Optional N1/N2 increment | After intelligent removal |
+| --- | --- | --- | --- |
+| Quiet Habitat Island | Shaded rest, darkness, habitat and soil repair | Low-frequency non-identifying ecological sensing | Habitat and rest remain |
+| No-Threshold Service Point | Seating, water, human help, map and telephone | Opt-in translation | Human and physical information remain |
+| Common Crossing Gate | Accessible crossing, walking connection and lighting | Condition and maintenance advice | Ordinary transport operation remains |
+| Rainwater Habitat Court | Retention, infiltration, native planting and learning | Irrigation and care advice | Passive drainage and manual care remain |
+| Jingzhang Memory Table | Verified history, objects, tactile models and human narration | Captions, audio description and search | Fixed interpretation remains complete |
+| Co-Governance Audit Booth | Paper, telephone, in-person feedback and notice | Traceable issue index | Manual numbering and deliberation continue |
+| Plug-out Test Cabin | Physical isolation, emergency stop and observation | Time-limited industry test | Space returns to shared use after removal |
+| Shade and Supply Point | Trees, seating, water and night lighting | Environmental notice and repair request | Ordinary public facility remains |
+
+The component count is a proposal catalogue, not an inventory of built assets. Location, quantity, structure and maintenance require official boundaries, ownership, heritage, fire-safety and operating confirmation. [metric:public_component_count]
+
+## A Jingzhang–Zhongguancun–AI Narrative of Responsibility
+
+The main line is: **the railway left a scale of engineering; Zhongguancun left a habit of testing; AI must now learn to carry responsibility in the city.** Northern Zhongzhiyuan shows how technology is made, tested, repaired and rejected. The central AI Origin Community shows how it enters ordinary life and is questioned or corrected by residents. Southern Dazhongsi shows how it may become an urban service while preserving a non-commercial, non-profiling entrance. The two wings connect professional support and real scenarios, knowledge and consequence.
+
+Wayfinding uses “rail line + open gap + status colour”: ink blue for ordinary public routes, habitat green for water/soil and quiet space, open blue for optional service, heritage copper for history, and red only for stop, risk and no-entry conditions. Heritage marks, Jingzhang corridor identity, and Common Habitat project/event marks remain distinct so a proposal mark cannot impersonate an official or heritage mark. Portraits, trademarks, paper figures, photographs and fonts do not enter final material before rights clearance. [source:AGENT-TASKBOOK]
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -97,6 +185,37 @@ Eight actions organise delivery: the One-Day Common Loop, Common Gateway, contin
 Ninety days produces a pioneer-pilot result and a recommendation on whether to enter procurement discussion. It is not a procurement decision or corridor-wide construction. G0 accepts the non-digital baseline; G1 permits a small optional service; G2 permits only isolated or controlled verification. Each gate requires both professional review and affected-user confirmation. Missing critical participants, a red-line event, or interrupted budget and contract automatically returns service to N0.
 
 Required roles are a site owner, public-service owner, accessibility and co-design lead, ecology lead, data and safety lead, and independent reviewer. Names, mandates, funding and long-term maintenance contracts are not yet confirmed and must be secured before construction or a limited public trial.
+
+## Annual Operation, Open Conversion and Three-Year Resource Boundaries
+
+The proposed Common Habitat Open Season is an annual work cycle, not a confirmed event. It advances with evidence rather than a launch date.
+
+| Stage | Core work | Required evidence | Release question |
+| --- | --- | --- | --- |
+| 1 Public Problem and Baseline Week | Register affected groups, space and the N0 route | Problem map, missing data and six-task baseline | Is the problem real and worth R&D? |
+| 2 Open Build and Verification Month | Design prototypes, repair, data and risk controls | Test protocol, maintenance plan, licence and cost boundaries | Is low tech sufficient; can the work enter N2? |
+| 3 Jingzhang Field Test Season | Shadow tests, limited live tests and public observation | Primary outcome, guardrails, takeover and minority opinions | Have both benefit and safety gates passed? |
+| 4 Unplug AI Week | Graded network, power and removal drills | Service continuity, vendor migration and site-restoration record | Can basic service operate without the intelligent layer? |
+| 5 Open Evidence Assembly | Independent recalculation, resident jury, professional review and failure display | Keep, modify, reduce, pause, remove or reconsider | Is the evidence sufficient for another year? |
+
+Routine operation comprises a problem clinic, open repair day, red-team evening school, phone-free walk, habitat record day, developer office hours and failed-project display. The developer community works from open tasks: register beneficiaries, an N0 route, scenario owner and data licence before engineering; use shadow mode before public operation; deposit code, interfaces, data dictionaries, failures and exit records under their licences. Selection conveys no automatic procurement, investment, permit, space or policy support. [metric:annual_operation_stage_count] [metric:routine_activity_type_count]
+
+Every open scenario uses a result contract covering the public problem and beneficiaries; spatial and time boundary; N0, low-tech and AI options; one primary outcome and hard guardrails; retention and deletion; human takeover and appeal; named responsibility; vendor migration; equipment removal, site restoration and expiry decision. Visitors can progress to issue reporting, joint retesting or paid documentation. Developers can progress from a sprint to N2, shadow mode or exit. Enterprises negotiate with the relevant parties only after a common test. External professional teams may reuse protocols and return version differences.
+
+The three-year total-cost account defines resource categories without inventing amounts or public funding commitments:
+
+| Resource category | Three-year record | Required exit item |
+| --- | --- | --- |
+| N0 basic public service | Human desk, telephone, print, accessible route and service hours | Must continue after intelligent removal |
+| Site, permission and insurance | Site use, event permission, safety and liability cover | Restoration duty when permission ends |
+| Reversible components and installation | Design, fabrication, transport, installation, checking and rotation | Removal, storage, reuse or compliant disposal |
+| People and training | Maintenance, takeover, co-design, accessibility and emergency training | Knowledge transfer after vendor exit |
+| Maintenance, spares and failure | Inspection, repair, spares, downtime and human rework | Substitution for discontinued parts and open-interface migration |
+| Data, safety and independent evaluation | Clearance, storage, deletion, red-team, replication and appeals | Data deletion, log retention and audit handover |
+| Energy, network and compute | Electricity, connectivity, storage, quotas and metering | Degraded and offline operation |
+| Removal, restoration and contingency | Equipment clearance, site recovery, ecological repair and incident response | Cannot be controlled by one supplier |
+
+Basic public service, resident participation, independent evaluation and exit restoration cannot depend on a single vendor. Sponsorship cannot purchase test results, resident seats, essential-route naming rights, data privilege or the right to close an issue. Amounts, organiser, venues, partners and three-year contracts all remain unconfirmed. [metric:three_year_resource_category_count]
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 

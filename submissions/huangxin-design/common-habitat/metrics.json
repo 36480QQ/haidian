@@ -119,6 +119,77 @@
         "A-KEY-001"
       ]
     },
+    "positioning_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "brief/site-package/agent_taskbook.json",
+        "proposal.md"
+      ],
+      "formula": "count(positioning_zh items mapped to proposal outcomes)",
+      "confidence": "high",
+      "assumptions": [],
+      "metric_role": "taskbook_alignment_count_not_observed_performance"
+    },
+    "function_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "brief/site-package/agent_taskbook.json",
+        "proposal.md"
+      ],
+      "formula": "count(five_functions_zh items mapped to the operating loop)",
+      "confidence": "high",
+      "assumptions": [],
+      "metric_role": "taskbook_alignment_count_not_observed_performance"
+    },
+    "spatial_zone_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "brief/site-package/agent_taskbook.json",
+        "proposal.md"
+      ],
+      "formula": "count(proposed zones in the three-areas-two-wings structure)",
+      "confidence": "high",
+      "assumptions": [
+        "A-KEY-001"
+      ],
+      "metric_role": "proposal_structure_count_not_official_boundary"
+    },
+    "collaboration_wing_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": [
+        "brief/site-package/agent_taskbook.json",
+        "proposal.md"
+      ],
+      "formula": "count(proposed collaboration wings in the taskbook-aligned structure)",
+      "confidence": "high",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "metric_role": "proposal_structure_count_not_official_boundary_or_partnership"
+    },
+    "regional_collaboration_node_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "brief/site-package/agent_taskbook.json",
+        "proposal.md"
+      ],
+      "formula": "count(conceptual regional nodes with documented knowledge, talent, testing, compute or transfer interfaces)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "metric_role": "proposal_network_count_not_established_partnership"
+    },
     "land_use_feature_count": {
       "status": "known",
       "value": 4,
@@ -165,15 +236,64 @@
       "confidence": "medium",
       "assumptions": []
     },
-    "landmark_count": {
-      "status": "unknown",
-      "value": null,
+    "international_case_count": {
+      "status": "known",
+      "value": 6,
       "unit": "count",
-      "source_files": [],
-      "formula": "count(verified landmark records)",
-      "confidence": "unknown",
+      "source_files": [
+        "proposal.md",
+        "sources.json"
+      ],
+      "formula": "count(international case records with source, transferable mechanism and explicit non-transferable limit)",
+      "confidence": "high",
       "assumptions": [],
-      "reason": "The package does not yet include a verified landmark inventory."
+      "metric_role": "documented_case_count_not_local_performance_benchmark"
+    },
+    "innovation_ecosystem_element_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(land, space, industry, capital, talent, compute, data and scenario mechanism records)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-OPERATIONS-001",
+        "A-OWNERSHIP-001"
+      ],
+      "metric_role": "proposal_mechanism_count_not_committed_resource"
+    },
+    "landmark_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(conceptual landmark prototypes L01-L04 documented in proposal.md)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-KEY-001",
+        "A-OWNERSHIP-001",
+        "A-OPERATIONS-001"
+      ],
+      "metric_role": "proposal_inventory_not_built_or_approved_assets"
+    },
+    "public_component_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(reversible public component types with N0 function, optional increment and removal state)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-KEY-001",
+        "A-OPERATIONS-001"
+      ],
+      "metric_role": "proposal_catalogue_count_not_built_asset_inventory"
     },
     "renewal_project_count": {
       "status": "known",
@@ -185,6 +305,49 @@
       "formula": "count(eight actions enumerated in proposal.md)",
       "confidence": "medium",
       "assumptions": []
+    },
+    "annual_operation_stage_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(stages in the proposed Common Habitat Open Season cycle)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "metric_role": "proposal_operating_model_count_not_confirmed_event"
+    },
+    "routine_activity_type_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(routine activity types in the proposed annual operating model)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-OPERATIONS-001"
+      ],
+      "metric_role": "proposal_operating_model_count_not_confirmed_programme"
+    },
+    "three_year_resource_category_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(resource categories in the proposed three-year total-cost and exit account)",
+      "confidence": "medium",
+      "assumptions": [
+        "A-OPERATIONS-001",
+        "A-OWNERSHIP-001"
+      ],
+      "metric_role": "resource_account_structure_not_budget_or_funding_commitment"
     },
     "non_digital_service_coverage_target": {
       "status": "known",
