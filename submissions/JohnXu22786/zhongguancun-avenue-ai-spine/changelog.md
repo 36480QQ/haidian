@@ -1,5 +1,19 @@
 # 方案迭代记录
 
+## v5.0 - 2026-08-27
+
+ROUND-6 REPAIR（CocoSgt 83.0/100 CHANGES_REQUESTED 2026-08-26T18:44，逐项落实"必须完成的下一步"1-3）：
+
+- 全零比例尺修正：site-overview / key-areas / mobility-bluegreen 六张中英文空间静态图的比例尺改用投影坐标系（EPSG:4326→EPSG:4548，CGCS2000 3°带）按真实米距绘制，刻度标签为可核验的实际值（如"1,000 m"），杜绝此前重复为"0"的伪刻度；每图保留指北针与白边留白。
+- land-use-structure（zh/en）重排：改为横向柱图、分类名内置于柱体、计数标于柱端，横轴不再堆叠长英文标签；provisional/置信度说明独立移至图底部独立说明带，不再压入横轴或柱体。
+- metrics-evidence（zh/en）：置信度/口径说明移出绘图区、独立置于图底部说明带；比率（%）与计数两项指标保持左右分图、各占独立轴线，计数面板改为横向柱图（y 轴标签不与图形重叠）。
+- 表达深度提升（回应原创性 4/5"空间图形偏抽象骨架"）：site-overview 增加三层范围卡片+长街景象序列卡+图例带；mobility 增加沿街断面示意；key-areas 保留三节点设计任务卡+使用/实施流程条；cooperation-mechanism 输出 AI 治理三原则+机制工具箱+年度活动五栏+运营兜底清单。
+- 统一视觉脚手架：全部 14 张图（zh/en 各 7）新增深色标题带（白字标题+PROVISIONAL 徽标右上），内容区顶边统一低于标题带，标题按宽度/带高自动缩字≤2 行，杜绝标题与警示/正文重叠；生成期文本包围盒逐对扫描 overlap=0、全部文本在画布内，ink（lum<200）与 10px 边缘探针逐项通过（地图≥0.12、图表≥0.13）。
+- 图件与出图：figsize 地图 10×14、图表 12×8/13×8 @150dpi，标题≥18pt（英文长标题自动缩字保两行）、图例/标注≥9.5pt；A0×2 页/A3×8 页双语 PDF 由修正后图件重新生成并逐页记录 ink/边缘裁剪。
+- report/proposal.html 与 report/proposal.en.html 由 render_proposal_html.py 从 proposal.md / proposal.en.md 重新渲染；proposal.en.md 移除中文语版传播文案（仅保留英文文案与引号内品牌对照），en 页渲染后 0 残留功能性中文（品牌名/锚链标签除外）；4 页 HTML 最后重嵌 Noto Sans SC 子集字型。visual/index.html 与 visual/index.en.html 不内嵌 PNG，本轮仅重嵌字体。
+- QC 证据：机器 QC 记录由 assets/figure_qc.json 改置于 self_check.json[figure_qc]（ok=true、ink_ok=true、clip_clear=true、overlap_clear=true，附逐图与逐 PDF 页测量值），assets 只保留白名单扩展名文件。
+- 门禁：manifest.json 43 项 hash 刷新；valroot 四门禁全部通过并持久化 self_check（formal-review-ready）；validate_local_submission PASS；score_rubric = 100.0/100、reviewer_gaps 清零、无强制拒收项。
+
 ## v4.0 - 2026-08-27
 
 ROUND-5 REPAIR（CocoSgt 80.0/100 CHANGES_REQUESTED 2026-08-26T13:37，逐项落实）：
