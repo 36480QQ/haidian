@@ -50,6 +50,19 @@ Seven precedents remain distinct from proposed mechanisms: Singapore AI Verify, 
 
 ![CivicMind Jing-Zhang confirmed visual-identity direction V1](assets/figures/brand-identity-v1.en.png)
 
+### Regional Collaboration Tasks and Evidence Return
+
+Regional collaboration follows a five-part chain: **public issue entry → reciprocal resource list → controlled joint task → verifiable output → governed knowledge return**. The matrix below defines proposed counterpart types, inputs, outputs and return destinations. It does not indicate that any district, institution or department has agreed to participate. Accountable entities, data permissions, funding and timing require lawful confirmation by competent authorities.
+
+| Proposed counterpart type | Jing-Zhang input | Counterpart input | Proposed joint task | Verifiable output | Return and accountability boundary |
+|---|---|---|---|---|---|
+| Innovation nodes related to Future Science City | Urban-governance issue list, scenario responsibility template and Human Review rules | Public research outputs, foundation-model test methods and expert capability | Desktop replay and failure injection for higher-risk scenarios | Test log, issue register and revision recommendation | Authorised non-sensitive results return to the A1 knowledge base; stop if data authority or accountable ownership is unclear |
+| Innovation nodes related to Huairou Science City | Public-service needs, explainability checklist and public-communication checks | Public scientific tools, measurement methods and science-communication experience | Test whether outputs are understandable and suitable for public display | Explanation template, public-question set and staffed-referral conditions | Return to A2 public-review and navigation interfaces; no field use before accessibility and intelligibility checks pass |
+| Industry nodes related to Beijing E-Town | Scenario catalogue, compliance self-check template and exit protocol | Product documentation, public standards practice and de-identified test conditions | Compliance sandbox and delivery-acceptance rehearsal for enterprise-service agents | Compliance gap list, exit record and reusable toolkit | Return to A3 enterprise services and scenario access, with A1 reviewing compliance co-testing; creates no certification, procurement or market-access commitment |
+| Jing-Jin-Ji governance and industry nodes | Transferable scenario cards, safety gates and evaluation indicators | Local service conditions, differences in applicable rules/workflows and operating feedback | Small-scale reversible replication and cross-jurisdiction difference testing | Applicability boundary, localisation revisions and stop conditions | After A1 review, update the governed knowledge version; the Zhongguancun wing may release a standards pack with explicit applicability limits |
+
+Each proposed joint task uses a separate task card recording issue source, data authority, accountable owner, version, Human Review decision, stop condition and return destination. Only outputs that pass authority, safety, public-value and reproducibility checks may enter the knowledge base; all others remain isolated, undergo remediation or exit [source:AGENT-TASKBOOK] [depth:overall_spatial_structure].
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 ![Adaptive reuse and civic-service interface (AI-generated conceptual rendering)](assets/figures/adaptive-reuse-public-interface.en.png)
 
