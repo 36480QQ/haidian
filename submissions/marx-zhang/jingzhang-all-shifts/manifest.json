@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4c9117d9140f040616dde8dd5301e0b49691f18e6dc383f5c64ce3ca95130bb7"
+      "sha256": "c442aa2884ea69897d2bd4bc02eebcff638494ffa89903b11ba8046b8560ce18"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "bcc50aec41e48ec93a3c1307f816ff580d2ed0f783356939634843297954e737"
+      "sha256": "95e25da40afc120f2be505072ee6d39340a53095126e5d5d8297727fb634ed00"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "1ed8806359e5c4b77793acc2c67c2ddbaad38acd426b63b773b303b7c918a1e6"
+      "sha256": "4c1d72d16d02c7125ece96de14d027525fb2e00e12b42d66916b5ac158475363"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "25f909591655ff0ba59090d7a3afe22038a3447cdcc940b559fa79ebff98face"
+      "sha256": "899b8961fe00af702936dfc892c921e321da3d4fc11ba907545e4851871aa07a"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "81ee09e840cdc071e21d5976e36fc03ce4d52051892fba4ccc5c9179cfe64a17"
+      "sha256": "38fda8c4b7828adc34f8d2404f6466ec1d15b6bd890694aa9f08ef2bb62bb47b"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "f54a3d9cbe35ee53b05e540ca603d0d77f398a8e322c882f312d6533491b4643"
+      "sha256": "30023a1f59bda7700a1457b847f4c755ec3a903c1e5376cc9aa53c724bbf8a43"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "23740ee8e660fb7c9c733c0f605e32ffeeb0addae372932d531937f12b1fc1c6"
+      "sha256": "f48b2392743b4f70b6cf05e162f993c26edbd0d20a4b214d768df83455cdae17"
     },
     {
       "path": "visual/index.en.html",
@@ -251,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "485925aa8dc9221a956003fcd2b491238040377202f05ec471ece97034e30edc"
+      "sha256": "a78bb1cc1728991553af34c730ae66bca317a85416add772c19ccf3b67915a37"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "67a033a84f5d2e3fffb48df772cd5587e1792a0b7146a1fc981ed51359430bbf"
+      "sha256": "be4714d3031d5330bf28b56b2507f5bb6c28897060ed0d86aed4700c63f0d297"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "c747cec41ec62749254f535a36b04ae368322be571c6d47f2684d98ab8bf71fb"
+      "sha256": "b2bd7c0b53dff37f8d7a056f0534c02ecc76c74402b9643b829ef035d3828b69"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -275,7 +275,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/mobility-bluegreen.png",
-      "sha256": "56959e1235a308220e43c65073547d70c1a3187d29e2a452d118badbb59b445d"
+      "sha256": "b1f6f6769f762d84cd64975149e50d40077ff4598a9678386508bb39f77b25a8"
     },
     {
       "path": "assets/figures/site-overview.en.png",
@@ -283,7 +283,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "92e4a436213ce029dad574ed0730fcc37793f0cc28d0032507343d45f386207b"
+      "sha256": "223f86265c3d82d7023b63fec49e664a0e1bf431f58c99f50ff359e905d3d6f0"
     },
     {
       "path": "assets/figures/shift-station-prototype.png",
@@ -298,7 +298,7 @@
       "language": "en",
       "translation_of": "assets/figures/shift-station-prototype.png",
       "required": false,
-      "sha256": "b4cc1d10836bef1723863eff290e654404487145d274a9f6c741e3df0dab51ba"
+      "sha256": "77006d9d91307b0d6fba08b7df86928a2c6fdfa3c0a08415d0f87c88d60046c7"
     },
     {
       "path": "assets/figures/day-night-sequence.png",
@@ -313,7 +313,7 @@
       "language": "en",
       "translation_of": "assets/figures/day-night-sequence.png",
       "required": false,
-      "sha256": "56959e1235a308220e43c65073547d70c1a3187d29e2a452d118badbb59b445d"
+      "sha256": "b1f6f6769f762d84cd64975149e50d40077ff4598a9678386508bb39f77b25a8"
     },
     {
       "path": "assets/figures/zhongzhiyuan-pilot-space.png",
@@ -328,7 +328,7 @@
       "language": "en",
       "translation_of": "assets/figures/zhongzhiyuan-pilot-space.png",
       "required": false,
-      "sha256": "8f4cb4895abb8efd2d22f4d86ed8bd933b0a4049327109a2a497250aeb1694eb"
+      "sha256": "8a07f315261a816eb36a71fa1d409220091c686b44b5c41248a3455eee73226c"
     },
     {
       "path": "assets/figures/zhongzhiyuan-pilot-schedule.png",
@@ -343,7 +343,7 @@
       "language": "en",
       "translation_of": "assets/figures/zhongzhiyuan-pilot-schedule.png",
       "required": false,
-      "sha256": "46a12affffbbda9b264d351ff7b194b9e92b0b8c6c9bca3f33213603ab046e14"
+      "sha256": "903c83053f4f03ce0c72e43db7f801164a91abac397087c4fc96abeabda6c2c1"
     },
     {
       "path": "assets/figures/zhongzhiyuan-pilot-audit.png",
@@ -358,7 +358,7 @@
       "language": "en",
       "translation_of": "assets/figures/zhongzhiyuan-pilot-audit.png",
       "required": false,
-      "sha256": "4839dddfe1f01e3c1c87cdce15917b9ab1d50afe76cdb435b5a77d1c564176e9"
+      "sha256": "4de6eb063e282d12b69c8a9cb3355ca47c12fc6a5acb356f2f8783920c475f68"
     },
     {
       "path": "assets/figures/zhongzhiyuan-g1-checklist.png",
@@ -373,7 +373,7 @@
       "language": "en",
       "translation_of": "assets/figures/zhongzhiyuan-g1-checklist.png",
       "required": false,
-      "sha256": "c7393ee19dde5dd222583aa92af48260df93313ef2d79a2614d36199fe24dadd"
+      "sha256": "7224bf9c8746e93dbcedda8ad08b0b21eb6bf055d80e2647bc21589ae298f443"
     },
     {
       "path": "assets/figures/zhongzhiyuan-codesign-workshop.png",
@@ -388,7 +388,7 @@
       "language": "en",
       "translation_of": "assets/figures/zhongzhiyuan-codesign-workshop.png",
       "required": false,
-      "sha256": "ddf5fdf86730b60a1d827700d343e261a78c076958df52e4654216ef25034a19"
+      "sha256": "e09aece20d22823eb3593270774e3251c5a6b9eca5fe29283f3e2ca232f19780"
     },
     {
       "path": "assets/figures/zhongzhiyuan-shift-log.png",
@@ -403,7 +403,7 @@
       "language": "en",
       "translation_of": "assets/figures/zhongzhiyuan-shift-log.png",
       "required": false,
-      "sha256": "be754b469d04134147531ac381f148391cd4f6b55a9d080c631a8f1367d665ef"
+      "sha256": "f114d8ebfd964380d635c7b7260dd84900777992d7edb61c0ce9d3ad4196d0ab"
     },
     {
       "path": "assets/media/cover.webp",
@@ -414,7 +414,7 @@
       "title_en": "All Shifts concept cover",
       "description_zh": "创新带昼夜同班空间的概念合成",
       "description_en": "Concept synthesis of the day-night All Shifts corridor",
-      "sha256": "a8dd3fb04f396eb0ea99d5c3b6b7f8450f0101a33696e605861a6ad0af2db6e3"
+      "sha256": "4d6c8fb6cd43064ba42e5b460574e648bf9e9b8f6ab8cdc69ba0757f328558d9"
     },
     {
       "path": "assets/media/three-area-access-tour.webm",
@@ -498,7 +498,7 @@
       "role": "changelog",
       "language": "zh",
       "required": false,
-      "sha256": "4355a18a5c4c3cd895f10a3976273e11f21b69a74173587b69f59fef949bc741"
+      "sha256": "8676b214e40e761ac0c92bb8bdcb1534f632f7a81f577fb7c1180d35f8b328ac"
     },
     {
       "path": "assets/figures/daily-script-overview.png",

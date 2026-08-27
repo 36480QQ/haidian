@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v4.4 - 2026-08-27（复审修复：离线字体与概念状态标识）
+
+- **离线字体**：中文 `report/proposal.html` 与 `visual/index.html` 内嵌仅覆盖实际用字的 Noto Sans CJK SC 字符子集，并附许可证与来源说明；离线查看不再依赖维护者系统字体或 CDN。
+- **概念状态**：在封面图及中英文 A0/A3 首页首屏加入醒目的双语标识：生成式概念表现 / GENERATIVE CONCEPT VISUAL，以及“非现场影像、非设计定稿、非官方依据 / NOT A SITE IMAGE · NOT FINAL DESIGN · NOT OFFICIAL EVIDENCE”。
+- **边界**：本次修复只提升可读性与状态披露，继续保持 `optional_crosswalk_concept_only`；不宣称现场证据、外部等级、实施授权或官方依据。
+
 ## v4.3 - 2026-08-27（评审修复：视觉渲染、任务书映射与长期运营）
 
 - **视觉修复**：英文核心图改为标题自动缩放、长标签自动换行，修复 `land-use-structure`、`key-areas`、`mobility-bluegreen`、`metrics-evidence` 等图面越界；离线报告与展示页补充多级 CJK 系统字体 fallback。
