@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>双轨京张——连续日常轨与间歇验证轨 - proposal report</title>
-<link rel="stylesheet" href="../visual/assets/offline-cjk-font.css">
 <style>
 :root {
   --ink: #172033;
@@ -17,7 +16,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: "JZ Offline CJK", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
@@ -109,15 +108,15 @@ code {
   vertical-align: super;
 }
 @media (max-width: 720px) {
-  html, body { overflow-x: hidden; }
   main { padding: 26px 16px 52px; }
   h1 { font-size: 26px; }
   h2 { font-size: 21px; }
-  .proposal-table { display: block; width: 100%; max-width: 100%; min-width: 0; overflow-x: auto; overscroll-behavior-inline: contain; contain: inline-size; }
-  .proposal-table table { width: 520px; min-width: 520px; max-width: 520px; table-layout: fixed; }
-  .proposal-table th, .proposal-table td { overflow-wrap: anywhere; word-break: normal; }
+  p, li { overflow-wrap: anywhere; }
+  .proposal-table table { min-width: 0; table-layout: fixed; font-size: 12px; }
+  .proposal-table th, .proposal-table td { padding: 6px; overflow-wrap: anywhere; word-break: break-word; }
 }
 </style>
+<link rel="stylesheet" href="../visual/assets/offline-cjk-font.css">
 </head>
 <body>
 <main>
@@ -337,6 +336,7 @@ code {
 <p>专业团队接手时不需要重新解释 99 个槽，而是按七组既有移交包提交现实材料；一份材料可以同时进入复核包，但只有对应的九类关闭记录逐项完成后才能改变 NO-GO：</p>
 <div class="proposal-table"><table><thead><tr><th>移交包</th><th>必交现实材料</th><th>关闭对象</th><th>当前状态</th></tr></thead><tbody><tr><td>H01 责任与停机链</td><td>真实责任主体接受、运行责任接受、可联络停机链与轮班覆盖</td><td>责任接受</td><td>未提交 / NO-GO</td></tr><tr><td>H02 审批与范围</td><td>审批台账、获批场地与时段、条件与到期日</td><td>审批范围</td><td>未提交 / NO-GO</td></tr><tr><td>H03 场地与日常基线</td><td>有日期的现场调查、日常使用基线、同任务非 AI 对照</td><td>场地/时段基线</td><td>未提交 / NO-GO</td></tr><tr><td>H04 数据与安全</td><td>禁采数据控制、最小数据清单、事件与留存程序</td><td>禁采数据控制</td><td>未提交 / NO-GO</td></tr><tr><td>H05 停止与恢复</td><td>实体或程序停机测试、具名重启权限、恢复演练与验收记录</td><td>停机权限 + 恢复演练</td><td>未提交 / NO-GO</td></tr><tr><td>H06 公共同权</td><td>社区共测、同任务非 AI 同权比较、申诉与退出记录</td><td>社区共测</td><td>未提交 / NO-GO</td></tr><tr><td>H07 复测与决定</td><td>独立复测包、版本化发现台账、签署的 go/no-go 纪要</td><td>独立复测 + 最终决定</td><td>未提交 / NO-GO</td></tr></tbody></table></div>
 <p><strong>责任接收裁决。</strong> H01—H02 先回答“谁接责、在哪个范围内有权行动”，H03—H05 再回答“普通任务基线、数据禁区和停止恢复是否可复现”，H06—H07 最后回答“受影响群体是否同权、复测者是否独立、最终决定是否允许否决”。三组中缺任一项都应拒绝现实启动并保持 NO-GO；即使七项全部关闭，也只允许考虑 G1，不自动形成授权、批准或重启。当前书面责任接受为 0/7、批准为 0、现场执行为 0；普通路径、纸面/人工同任务服务、纠错、投诉、撤回与离开不等待接责，故障只停止验证叠层 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/professional-handoff-candidate.json#PRE-G1-JZ05-SCENE011-T02" title="空间数据：visual/assets/professional-handoff-candidate.json#PRE-G1-JZ05-SCENE011-T02">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/readiness-closure-contract.json#JZ-READINESS-CLOSURE-V1" title="空间数据：visual/assets/readiness-closure-contract.json#JZ-READINESS-CLOSURE-V1">空间数据</sup>.</p>
+<p><strong>独立人工双语复核仍未完成。</strong> 最终评审者应在 PR exact head 上依次完成 HUMAN-EQ-01—08：普通任务与总纲、三原型、数字与分母、来源等级、G0/临时/非批准边界、图件媒体页位、实施门与专业否决、接责拒绝与普通生活底板；先按 <code>manifest.json</code> 记录工件哈希，再逐项填写结果与差异。当前独立人工结果为 0/8、签署为 <code>not_signed</code>；空值、无法判断或未关闭重大差异均阻断签署，机器双语 PASS 只证明打包一致 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/bilingual-material-equivalence.json#formal_human_review_packet" title="空间数据：visual/assets/bilingual-material-equivalence.json#formal_human_review_packet">空间数据</sup>.</p>
 <p>分期采用“年份窗口 + 证据门”，年份从不自动赋予进入下一阶段的资格 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson#PHASE-1" title="空间数据：geometry/phasing.geojson#PHASE-1">空间数据</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="phase_count" title="指标：phase_count">指标</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="phasing_implementation" title="深度：phasing_implementation">深度</sup>：</p>
 <div class="proposal-table"><table><thead><tr><th>窗口</th><th>状态</th><th>进入门</th><th>毕业门</th><th>回滚</th></tr></thead><tbody><tr><td>0—2 年</td><td>G0 概念/离线与 G1 影子</td><td>来源、责任、风险、基线、人工兜底齐全</td><td>可安全回滚、公共价值门通过、复测包完整</td><td>任一重大安全、隐私、无障碍或公共价值失败</td></tr><tr><td>3—5 年</td><td>经批准的 G2 限域 Beta</td><td>独立复测、社区评议、专业审查和场地许可</td><td>三维毕业立方体通过并发布证据</td><td>连续失败、申诉无响应、公共红利未交付</td></tr><tr><td>5 年后</td><td>G3 申请、扩展、修正或退役</td><td>正式审批和运行资源明确</td><td>年度报告确认继续、改正或主动退役</td><td>边界、控制条件、技术或社会影响发生重大变化</td></tr></tbody></table></div>
 <p>年度运营采用四季协议。第一季度“问题季”由社区、高校和城市服务者发布可公开问题；第二季度“开源季”形成团队、协议和离线基线；第三季度“城市 Beta 季”只运行获批的限域测试；第四季度“Proof Week”发布通过、失败、投诉、修正和主动退役，并形成下一年问题。开发者转化漏斗为“公开问题 → 共创队伍 → 离线基线 → 限域申请 → 公开证据 → 人工服务/企业转化/外部复测”；任何环节都不得把参与写成招商、资金或政策承诺。活动品牌采用同一 Logo 的季节色，不额外制造与一带主品牌冲突的 IP。</p>

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R64.0",
-  "as_of": "2026-08-27",
+  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R65.0",
+  "as_of": "2026-08-28",
   "audit_type": "contributor_editorial_review",
   "status": "contributor_side_material_equivalence_checked_human_confirmation_open",
   "review_method": {
@@ -122,6 +122,12 @@
       "topic": "duty_acceptance_role_refusal_and_ordinary_life_equivalence",
       "result": "pass_contributor_side",
       "evidence": "Paired proposal, report, visual, E01 figures and fixed pages name the same three role groups and three H01-H07 decision groups; any missing item refuses real-world start, all seven closed only permits considering G1, accepted duty remains 0/7, and ordinary life continues while failure stops verification only."
+    },
+    {
+      "check_id": "BME-17",
+      "topic": "independent_human_review_execution_surface",
+      "result": "ready_for_independent_execution_not_signed",
+      "evidence": "HUMAN-EQ-01 through HUMAN-EQ-08 now form one complete ordered worksheet on the final PR exact head. The visual and fixed-page handoff surfaces expose 0/8 results, manifest-hash recording and fail-closed signoff. No reviewer, result, discrepancy resolution or signoff is fabricated."
     }
   ],
   "critical_claim_map": [
@@ -207,11 +213,11 @@
     }
   ],
   "formal_human_review_packet": {
-    "packet_id": "JZ-BILINGUAL-HUMAN-SAMPLE-R64-0",
+    "packet_id": "JZ-BILINGUAL-HUMAN-SAMPLE-R65-0",
     "status": "ready_for_independent_human_sampling_not_signed",
     "machine_supported_surface_facts": {
-      "proposal_line_count_zh": 590,
-      "proposal_line_count_en": 590,
+      "proposal_line_count_zh": 592,
+      "proposal_line_count_en": 592,
       "h2_count_zh": 15,
       "h2_count_en": 15,
       "h3_count_zh": 24,
@@ -320,7 +326,7 @@
       ],
       "review_order": [
         "record exact head and artifact hashes before reading",
-        "review HUMAN-EQ-01 through HUMAN-EQ-07 without consulting contributor conclusions",
+        "review HUMAN-EQ-01 through HUMAN-EQ-08 without consulting contributor conclusions",
         "record pass, discrepancy or cannot-determine for every sample",
         "classify every discrepancy by claim effect rather than wording preference",
         "correct all material discrepancies across every affected surface",
@@ -335,6 +341,12 @@
       ],
       "material_discrepancy_definition": "Any difference that changes the core ruling, prototype identity, operating-state effect, number/unit/denominator, evidence authority, G0/approval boundary, public right, professional veto, figure meaning or implementation gate.",
       "fail_closed_rule": "A missing sample result, cannot-determine result or unresolved material discrepancy prevents independent-human equivalence signoff; deterministic bilingual PASS remains only a packaging result."
+    },
+    "exact_head_record": {
+      "pr_exact_head": null,
+      "artifact_hash_authority": "manifest.json Git blob SHA-256 records at the final PR exact head",
+      "recording_rule": "Do not prefill the head or hashes before the final commit. The independent reviewer records them before reading and signs only that exact head.",
+      "recorded_artifact_hash_count": 0
     },
     "contributor_precheck_results": {
       "status": "complete_not_independent",

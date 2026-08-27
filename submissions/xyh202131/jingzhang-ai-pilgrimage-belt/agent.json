@@ -368,5 +368,47 @@
       "G1, authorization, approval, restart or professional acceptance",
       "independent human bilingual confirmation, legal audit or trademark review"
     ]
+  },
+  "round_65_provenance": {
+    "canonical_main_base_sha": "7f1f45d719f89fd40ff01a772de5119496c8129f",
+    "predecessor_pr": 4088,
+    "publication_revision": "65.0",
+    "scope": "Independent-human bilingual review handoff: expose the existing eight-sample worksheet, exact-head hash rule and fail-closed status without fabricating a reviewer or result.",
+    "before_evidence": {
+      "required_sample_count": 8,
+      "execution_order_last_sample": "HUMAN-EQ-07",
+      "frontstage_human_result_status_visible": false,
+      "populated_human_results": 0
+    },
+    "after_evidence": {
+      "ordered_samples": "HUMAN-EQ-01 through HUMAN-EQ-08",
+      "frontstage_human_result_status": "0/8; not signed",
+      "artifact_hash_authority": "manifest.json Git blob SHA-256 at final PR exact head",
+      "fail_closed": true,
+      "a3_page_pair": "14 + 14",
+      "a0_page_pair": "8 + 8",
+      "new_media": false
+    },
+    "review_repair_65_1": {
+      "reviewed_head": "ac29622e886672f145ac16612548d70f1e31cc15",
+      "finding": "Legacy time-museum rights metric conflated absent independent legal audit with a repository-display blocker; source governance also covered only 48 of 49 current source records.",
+      "resolution": "Current exact-package contributor disposition is 157/157 with an exact-head/manifest/SHA-256 chain; source governance is 49/49; independent legal, file-level legal and trademark review remain false and separately scoped.",
+      "current_exact_package_unhandled_time_museum_image_or_text_paths": 0,
+      "new_media": false,
+      "pdf_html_visual_bytes_changed": false
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "spatial_and_numeric_planning_metrics_frozen": true,
+      "metrics_json_rights_status_repair": "time_museum_uncleared_content_count only; stale repository-display blocker replaced by current exact-package contributor disposition while independent legal audit remains false",
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36"
+    },
+    "cannot_prove": [
+      "independent human bilingual confirmation, reviewer identity or certified translation",
+      "official boundary, exact site or approved design",
+      "field performance, accessibility result, public feedback or recovery duration",
+      "G1, authorization, approval or accepted professional duty",
+      "independent legal audit or trademark review"
+    ]
   }
 }

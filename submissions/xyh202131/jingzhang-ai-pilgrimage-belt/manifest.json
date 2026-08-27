@@ -39,19 +39,19 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "dd72eeb8f5d513adfdbb28bb4ae3d9f4b0c44325aeb4b8ac3c11a30588451a0f"
+      "sha256": "e4dd774ebf8931918f21eb1b3762dfd6c1975bea43c11fa305c5ed3b0cbbf9aa"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "7c26704b510b315da6e89ae0d903f691b5aa5ea7a085d04e88cc4c804100c128"
+      "sha256": "94a2dbea7afa761a98cb5c20f74af2b4c6dd7532443777c4593a57a8f7e17415"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "fbb26cd388d233c4ce606c75ce04b1435bd1f23700fc17c2ab4fdd1f4edc0701"
+      "sha256": "06ce66889453b04ebc5f6506cc570686bafc10ed55abee796cf6961b143ab777"
     },
     {
       "path": "assumptions.json",
@@ -63,13 +63,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "5d68f2f47023f17a25ed081358c84f5ab708f3f20ca0e751f2222e79234ef7eb"
+      "sha256": "dfc99d02c510b3491f476d9a94e494d45f4b641b5c61fa57e5eef7d1962a9b4d"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b827be6ca97d9b9b87e3223c45c6eab05f21dd5fa27f58ef2a92b43fd9ad3afd"
+      "sha256": "71f75142b9e3fb4556362a1635f32bca85e2a5741b013ca3e5673adc265ec892"
     },
     {
       "path": "risk.json",
@@ -86,7 +86,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "9cd5ab63e46a84e980cdb6238c7de58d3033e31b6e1d87a0562f567d3aa13218"
+      "sha256": "f3893e75372543933d1ff1a61e432934fc44d8ce87a6e88c484531e9f7422788"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,7 +132,7 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "6434f94928b5fa75e37f52ad2b29a621d7bec3eb975ea0aace336ddf97863fab"
+      "sha256": "4c70e03da2abca51692b221084e7ac3ad73a2ab0aa599d83af766b5b23fa414e"
     },
     {
       "path": "visual/assets/data-gap-closure-register.json",
@@ -201,7 +201,7 @@
       "path": "visual/assets/t02-g0-g1-replay-result.json",
       "role": "other",
       "required": true,
-      "sha256": "33e26078d1e21559e11b6c19d99730129cd600d334005b300ef95344b2684dae",
+      "sha256": "53b396e044edb32e37613be573179ac1deef00f18be78a69362bca568d849067",
       "role_detail": "synthetic_governance_replay_result"
     },
     {
@@ -215,27 +215,27 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "4a5f0e719f2548b0133df41e09a7b0fcad2a47323fcd20b6c53d8a076b8c717f"
+      "sha256": "8b49ece207bddfc60e506af6aee594ff0ce9f9489747df5295bed6bfad51a5fd"
     },
     {
       "path": "visual/assets/file-rights-inventory.json",
       "role": "copyright_statement",
       "required": true,
       "language": "neutral",
-      "sha256": "d13fcfc1e644caf52c18cd54b5240cb761db6ca3c07706a1d10d4ef765f728fa"
+      "sha256": "680421aae30fae39d7a34ac591c65dd1ee0b3506ddd7f2a4715fd4d9e90cae9a"
     },
     {
       "path": "visual/assets/source-rights-evidence.json",
       "role": "other",
       "required": true,
-      "sha256": "0db72df3f9bcd0b58a02ef7e9f203f2d1287d89d4d30f70440b627844c4a3f7f",
+      "sha256": "a0d54304f6ff999fff42453213186e4561932f4ac6d729a600f9817a703e77a3",
       "role_detail": "source_rights_evidence"
     },
     {
       "path": "visual/assets/submission-use-rights-matrix.json",
       "role": "other",
       "required": true,
-      "sha256": "9ea78f1c4ae02a28e1644fece7a9ac7a8dcbcb5a60ffbef987b8545d70d13b6f",
+      "sha256": "8e68be5abb5f70a9b52dbbb2c63dd36a9dc8941356bd052a8976f7ab2f287a3e",
       "role_detail": "rights_use_decision_evidence"
     },
     {
@@ -243,40 +243,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "35a4171fd857430f31c4f1ba62a362c13ad25689b155be2bab5272e94a2ce643"
+      "sha256": "2f4b64bec701c3ed9c1b1ba98b8c5517b324561d19aa3acff7c509e47eb55355"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "0a393fc14260b44ba387870b947f0e83feaf4e7c4bd4ef02bf6dd5c73fce68c9"
+      "sha256": "fdc7526c569b5f17676408fd31daac9d1fda074ca919b37968bd5ee3d8a94114"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "104b1d1975e675f317be15fb580ed5dd82cfaf72ebdb3c34e7d57626fa1dc6ac"
+      "sha256": "cb0f1398b02b798e98f157c59b8f7a8655fdd04cc54e9da6637d350d0dd84d6d"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "50c9a4de20497726f97bc280b0e308d3135976c4edef48285da0cdf666b9a7b6"
+      "sha256": "5881e0598ce133e789a2ed95e1ac134b4485115f01a0ec10959b8fed5f27e5f8"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "2356d5622a20bf41d50454019f91b9c85876fcfc05a8cabb85784891e00d51c7"
+      "sha256": "a2443b9f9ec3b43204b0e5842b69ad6d03345f9bcc360071ac5fd0087b1c109b"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "1a1ae55c53d2384ab9e3a545b6e94fc09173dc016c3ad8b5d4934177acd846f2"
+      "sha256": "ced165dab416a39ca26456421579e3cbad71f84fd90c86dbd1957a2c7927b726"
     },
     {
       "path": "visual/assets/offline-cjk-font.css",
@@ -424,7 +424,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "25d5e1ee5c2ea2fe19e956ef660a8ecc4be42c574ed63970cc6676e72ea66297"
+      "sha256": "d2509daf35603c9c406fa39c86836cb5833a0049bc3c81237d6cdec727496e2e"
     },
     {
       "path": "report/proposal.en.html",
@@ -432,7 +432,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "3e6102541513d2a27cd7eb603dc0fbd6e68e109f0c901ed0c024053710e9e4ef"
+      "sha256": "5fc62aa0ec7019477aa2d9f5e13f304eaedaf0aa1dbaa9e3c69f2f2a233c7c9e"
     },
     {
       "path": "visual/index.en.html",
@@ -440,7 +440,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e96af5aee38aacce89e33b839be7c171b6d1231368a410157095f30ab7b8ff7c"
+      "sha256": "e424d2425caf43fd694f216d96d36ee554d4246539146649e31327220fe44f93"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -448,7 +448,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "43882c564cd1908b1ff46367c8ae041f7f83cfdac40b3045dc734d82742171a9"
+      "sha256": "47df0bed739ca16bb1188cc0d146291501f9f6e1d5f6d368436bb5ee2772a3ba"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -456,7 +456,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "fc42620819859b8575a0c1ee1373b3606abfef6e2e9b8cf77e7866d7338cc48c"
+      "sha256": "759d11e839f1e39102792eb504ed574cccda59f306a970411d21905908e98838"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -944,7 +944,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "评审交接导航：三条时间阅读路线、唯一专业交接候选、证据权威顺序与固定事实边界；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review handoff navigation: three timed reading routes, one professional handoff candidate, evidence authority order and fixed fact boundaries; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "8ecf622cc44c3b140585a894cfb871632dcd679cec908837eb1324759b321289"
+      "sha256": "99ac0a9c56b80a75f4f37d168e03c8f2f8fb364b58b487e28c8b04e6961c0ca2"
     },
     {
       "path": "assets/figures/land-use-structure.svg",
@@ -1118,7 +1118,7 @@
       "path": "visual/assets/source-governance-register.json",
       "role": "evidence_data",
       "required": false,
-      "sha256": "b2ba411370e9731dd11013a24b70e3b6cee75876fdc9d17e9d52e3c5eec268a5"
+      "sha256": "1761e8c7278249298d6ad2abbf13b7013618b61fe3fda3b649a348a9b7b6f98c"
     },
     {
       "path": "visual/assets/professional-handoff-candidate.json",
@@ -1280,7 +1280,11 @@
           "independent_file_level_audit_completed": false,
           "trademark_search_completed": false,
           "path_level_decision_coverage": "157/157",
-          "single_package_license": false
+          "single_package_license": false,
+          "contributor_path_level_disposition_completed": true,
+          "path_inventory": "visual/assets/file-rights-inventory.json",
+          "hash_authority": "final PR exact head -> manifest Git blob -> files[].sha256 for 156 non-manifest paths; manifest self-hash intentionally omitted",
+          "independent_audit_boundary": "independent_file_level_audit_completed=false records an absent external legal finding; it is not an undisposed current-package path or repository-review/display blocker"
         }
       },
       "x-release-claim": {
@@ -1290,7 +1294,14 @@
           "professional_implementation": "not_authorized_requires_H01_H07_and_official_inputs",
           "known_blockers": [],
           "package_redistribution": "allowed_with_component_specific_terms_and_notices_no_single_package_license",
-          "future_public_installation_or_external_brand_release": "not_authorized_requires_scope_specific_review"
+          "future_public_installation_or_external_brand_release": "not_authorized_requires_scope_specific_review",
+          "repository_review_path_decision_coverage": "157/157",
+          "repository_review_hash_binding": "final PR exact head -> manifest Git blob -> 156 non-manifest SHA-256 records",
+          "non_blocking_unfinished_professional_findings": [
+            "independent legal advice",
+            "independent file-level legal audit",
+            "trademark review"
+          ]
         }
       }
     }

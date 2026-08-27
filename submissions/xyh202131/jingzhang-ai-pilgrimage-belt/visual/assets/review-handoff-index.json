@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
-  "index_id": "JZ-REVIEW-HANDOFF-R64.0",
-  "publication_revision": "64.0",
-  "as_of": "2026-08-27",
+  "index_id": "JZ-REVIEW-HANDOFF-R65.0",
+  "publication_revision": "65.0",
+  "as_of": "2026-08-28",
   "reading_routes": [
     {
       "time": "30_seconds",
@@ -101,6 +101,18 @@
     "professional_packet": "visual/assets/professional-handoff-candidate.json",
     "field_intake": "visual/assets/field-evidence-intake-contract.json",
     "bilingual_human_sample_packet": "visual/assets/bilingual-material-equivalence.json#/formal_human_review_packet"
+  },
+  "independent_human_review_execution": {
+    "status": "ready_for_independent_execution_not_signed",
+    "ordered_samples": "HUMAN-EQ-01 through HUMAN-EQ-08",
+    "required_sample_count": 8,
+    "populated_human_result_count": 0,
+    "signoff_result": "not_signed",
+    "exact_head_recorded": false,
+    "artifact_hash_authority": "manifest.json Git blob SHA-256 at the final PR exact head",
+    "fail_closed_rule": "Any null, cannot-determine or unresolved material discrepancy blocks signoff; machine PASS proves packaging consistency only.",
+    "frontstage": "visual/index.html#s5; visual/index.en.html#s5; A3-14; A0-07",
+    "packet": "visual/assets/bilingual-material-equivalence.json#/formal_human_review_packet"
   },
   "information_efficiency": {
     "audit_type": "contributor_editorial_red_green_contract",

@@ -3,10 +3,14 @@
   "rights_evidence_contract": {
     "instance": "visual/assets/source-governance-register.json",
     "asset_ledger": "visual/assets/rights-clearance-ledger.json",
-    "status": "component_licenses_declared",
+    "file_inventory": "visual/assets/file-rights-inventory.json",
+    "manifest_hash_authority": "manifest.json files[].sha256 at the final PR exact head",
+    "status": "current_exact_package_157_of_157_contributor_path_decisions_complete_under_component_specific_terms",
     "content_license": "CC-BY-4.0",
     "code_license": "MIT",
-    "osm_database_license": "ODbL-1.0"
+    "osm_database_license": "ODbL-1.0",
+    "independent_file_level_legal_audit_completed": false,
+    "scope_distinction": "The contributor inventory and component licences permit repository review, display and exact-package redistribution under their notices. They do not claim independent legal advice, reproduce citation-only external works, or authorize future installation, branding or professional implementation."
   },
   "sources": [
     {

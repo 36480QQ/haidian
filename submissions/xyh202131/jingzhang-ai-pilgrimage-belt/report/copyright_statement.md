@@ -2,9 +2,9 @@
 
 ## 分层许可 / Component licences
 
-截至 2026-08-27，投稿方 `xyh202131` 将本包中其原创的文字、表格、图解、SVG、PNG 导出、编辑版式、自编 JSON 与概念 GeoJSON 转化按 **CC BY 4.0** 许可。署名：`Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`。许可全文：<https://creativecommons.org/licenses/by/4.0/>。
+截至 2026-08-28，投稿方 `xyh202131` 将本包中其原创的文字、表格、图解、SVG、PNG 导出、编辑版式、自编 JSON 与概念 GeoJSON 转化按 **CC BY 4.0** 许可。署名：`Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`。许可全文：<https://creativecommons.org/licenses/by/4.0/>。
 
-As of 2026-08-27, contributor `xyh202131` licenses contributor-owned text, tables, diagrams, SVG source, PNG exports, editorial layout, package-authored JSON and conceptual GeoJSON transformations under **CC BY 4.0**. Attribution: `Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`. Full terms: <https://creativecommons.org/licenses/by/4.0/>.
+As of 2026-08-28, contributor `xyh202131` licenses contributor-owned text, tables, diagrams, SVG source, PNG exports, editorial layout, package-authored JSON and conceptual GeoJSON transformations under **CC BY 4.0**. Attribution: `Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`. Full terms: <https://creativecommons.org/licenses/by/4.0/>.
 
 投稿方自编的回放与离线交互代码采用 **MIT License**：Copyright (c) 2026 xyh202131。任何获得本软件及相关文档副本的人，可不受限制地使用、复制、修改、合并、发布、分发、再许可和/或销售，但所有副本或实质部分须保留上述版权和许可声明。本软件按现状提供，不作任何明示或默示担保；作者或版权持有人不对因本软件或其使用产生的索赔、损害或其他责任负责。
 
@@ -22,9 +22,15 @@ Contributor-authored replay and offline interaction code is under the **MIT Lice
 
 `visual/assets/file-rights-inventory.json` covers every path in the current distribution tree and distinguishes contributor-authored content, contributor code, OSM-derived database content, repository provisional inputs, embedded font software and citation-only external sources. It proves that every file has an explicit handling decision, but remains a contributor inventory rather than independent legal advice, an independent file-level rights audit or a trademark search.
 
-**当前精确投稿包决定。** 当前精确投稿包 157/157 个路径均已记录作者/权利人、来源、适用许可或处理、署名、变更、再分发和例外。该精确版本可按组件条款用于仓库评审、展示与再分发；不存在单一整包许可。独立法律意见、独立逐文件法律审计和商标审查仍未提供，但不反转投稿方对当前精确包作出的分组件分发授权。未来公共装置、外部品牌发布和专业实施仍须另行审查、批准与签约。
+**当前精确投稿包决定。** 当前精确投稿包 157/157 个路径均已记录作者/权利人、来源、适用许可或处理、署名、变更、再分发和例外。最终 PR exact head 绑定 `manifest.json` 的 Git blob，manifest 再以 SHA-256 绑定 156 个非 manifest 路径；manifest 自身不写自哈希以避免循环。该精确版本可按组件条款用于仓库评审、展示与再分发；不存在单一整包许可。`independent_file_level_audit_completed=false` 只表示尚无外部独立法律结论，不表示当前包仍有未处置路径，也不是仓库评审或展示阻断。未来公共装置、外部品牌发布和专业实施仍须另行审查、批准与签约。
 
-**Current exact-package decision.** All 157/157 paths record author/rightsholder, source, applicable licence or handling, attribution, transformation, redistribution and exceptions. This exact version may be reviewed, displayed and redistributed under component-specific terms; no single package-wide licence exists. Independent legal advice, independent file-level legal audit and trademark review remain absent, but do not reverse the contributor's component-specific distribution grant for the current exact package. Future public installation, external brand release and professional implementation still require separate review, approval and contracts.
+**Current exact-package decision.** All 157/157 paths record author/rightsholder, source, applicable licence or handling, attribution, transformation, redistribution and exceptions. The final PR exact head binds the `manifest.json` Git blob, whose SHA-256 records bind 156 non-manifest paths; the manifest intentionally has no circular self-hash. This exact version may be reviewed, displayed and redistributed under component-specific terms; no single package-wide licence exists. `independent_file_level_audit_completed=false` records the absence of an external independent legal finding, not an undisposed current-package path or a repository-review/display blocker. Future public installation, external brand release and professional implementation still require separate review, approval and contracts.
+
+## R65.1 权利状态消歧 / R65.1 rights-state disambiguation
+
+`metrics.json` 中的 `time_museum_uncleared_content_count` 现在只统计当前精确包内“没有投稿方再分发处置的时间博物馆图像或文本路径”，当前值为 0；它不统计未来馆藏、口述史、公共装置或策展内容。来源登记 49/49 与逐路径清单 157/157 已对齐。该 0 是投稿方清单结论，不冒充独立法律意见、独立逐文件法律审计或商标检索；新增任何历史图片、长文本、地图、字体、口述史或生成内容时必须重新登记和判断。
+
+The `time_museum_uncleared_content_count` in `metrics.json` now counts only current exact-package time-museum image or text paths lacking a contributor redistribution decision; its current value is 0. It does not cover future collections, oral histories, public installations or curatorial content. Source governance is aligned at 49/49 and the path inventory at 157/157. This zero is a contributor-inventory conclusion, not independent legal advice, an independent file-level legal audit or trademark review; any new historical image, long text, map, font, oral history or generated content requires a new record and decision.
 
 ## R63 人本出版更新 / R63 human-first publication update
 

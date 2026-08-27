@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-08-24",
+  "as_of": "2026-08-28",
   "central_registry_snapshot_count": 9,
-  "package_source_count": 48,
+  "package_source_count": 49,
   "method_zh": "中央登记只决定中央来源状态；投稿方自采与自编来源保持包内身份，不因公开或较新自动升级为正式依据。",
   "method_en": "The central registry governs central-source status only. Participant-collected and package-authored sources retain package-local status and are never upgraded merely for being public or recent.",
   "records": [
@@ -437,6 +437,15 @@
       "authority_level": "official_approval_status_and_textual_context",
       "redistributed_third_party_media": false,
       "review_rule": "Use only within the source record's stated scope, date, authority and limitations."
+    },
+    {
+      "source_id": "SOURCE-JZ-FOUR-STATE-EXPERIENCE-R59",
+      "central_registry_id": null,
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "conceptual_explanatory_presentation_only",
+      "authority_level": "submission_author",
+      "redistributed_third_party_media": false,
+      "review_rule": "Use only as contributor-authored conceptual presentation under CC BY 4.0; it is not field evidence, public opinion, accessibility compliance, approval, official geometry, real duration, service result or maturity evidence."
     }
   ]
 }

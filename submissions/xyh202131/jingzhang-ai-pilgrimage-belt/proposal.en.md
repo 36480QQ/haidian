@@ -5,8 +5,8 @@ language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-version: "64.0"
-iteration: "64.0"
+version: "65.0"
+iteration: "65.0"
 license: "CC-BY-4.0"
 summary: "Haidian's innovation density becomes public capability only when people can use, question and exit without accounts, devices or professional identity. Twin-Track Jing-Zhang keeps ordinary tasks continuous and G0 verification intermittent and stoppable; three distinct prototypes connect evidence, risk and professional handoff. Boundaries remain provisional; outcomes, approvals, field execution and accepted professional duties remain zero."
 tracks:
@@ -490,6 +490,8 @@ A professional team therefore does not need to reinterpret all 99 slots. It subm
 | H07 Retest and decision | Independent retest package, versioned finding register, and signed go/no-go minute | Independent retest + final decision | Not submitted / NO-GO |
 
 **Duty-acceptance ruling.** H01–H02 first ask who accepts duty and within what exact scope they may act; H03–H05 then ask whether the ordinary-task baseline, prohibited-data controls, and stop/recovery sequence are reproducible; H06–H07 finally ask whether affected groups have same-task parity, the retester is independent, and the final decision permits a veto. Any missing item in any group must refuse real-world start and retain NO-GO. Even all seven closed only permits considering G1; it never auto-authorizes, approves, or restarts. Written real-world acceptance is currently 0/7, approvals are 0, and field execution is 0. The ordinary route, printed/staffed same-task service, correction, complaint, withdrawal, and exit do not wait for duty acceptance; failure stops verification only [data:visual/assets/professional-handoff-candidate.json#PRE-G1-JZ05-SCENE011-T02] [data:visual/assets/readiness-closure-contract.json#JZ-READINESS-CLOSURE-V1].
+
+**Independent human bilingual review remains incomplete.** On the final PR exact head, a reviewer must complete HUMAN-EQ-01-08 in order: ordinary task and thesis, three prototypes, values and denominators, source authority, G0/provisional/not-approved boundaries, figure/media/page positions, implementation gates and professional veto, and duty/refusal/ordinary-life floor. Artifact hashes are recorded from `manifest.json` before each result and discrepancy is entered. Independent human results remain 0/8 and signoff is `not_signed`; a null, cannot-determine or unresolved material discrepancy blocks signoff. Machine bilingual PASS proves packaging consistency only [data:visual/assets/bilingual-material-equivalence.json#formal_human_review_packet].
 
 Phasing uses “year window + evidence gate”; a date never automatically grants eligibility to enter the next phase [data:geometry/phasing.geojson#PHASE-1] [metric:phase_count] [depth:phasing_implementation]:
 
