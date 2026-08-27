@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f6581fcb298abfd132dd8290d099960aa483f5610c11b8c1b72585dffb6d23dd"
+      "sha256": "213135e57b3c6b8e1bbe503e59913e24d3d1758f86d5a778e46473d46db152e1"
     },
     {
       "path": "agent.json",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d1d1e0aba09434d2d50e8b8d8d711f4624a8a207b6e97fa5fe806363fcb09325"
+      "sha256": "e06405764c09465309056c5c38082d5c4fba72acf84cb638b9ac64fb0a044db4"
     },
     {
       "path": "report/proposal.en.html",
@@ -306,7 +306,7 @@
       "role": "narrative",
       "required": false,
       "language": "zh",
-      "sha256": "5097e0c69ffbcd622c5f1f2652c445459b42d7c1afd67ff1e4795596c046ce91"
+      "sha256": "0a5fa544437ea8b739c0f0be0776082483b757a390ec89cf5703c1c4ba95f2ce"
     },
     {
       "path": "assets/media/cover.webp",
@@ -342,6 +342,76 @@
       "required": false,
       "language": "neutral",
       "sha256": "31c287d6c54f923692eb8bed6a2cbb3ba88ffa092cf79bfa9bb75adf0e4314c3"
+    },
+    {
+      "path": "assets/figures/brand-identity.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "93821780f3aa65aa4e0a23a4aa5a4530086011252e6443ec1207a4da004b1d37"
+    },
+    {
+      "path": "assets/figures/brand-identity.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "b476d2d4642a73eaaf2412a12fc5c3ce9fc2d4a4d33304038375cec315c525bf"
+    },
+    {
+      "path": "assets/figures/vi-palette.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "b87e19a15b30034cbf46370e1f37009a5674b88ea9be036fd72a3b8d0e31c445"
+    },
+    {
+      "path": "assets/figures/vi-palette.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "03bfdcec690185fce0add3fdaed5a592bc2e2d75658393f6284bcc876c2ca4a9"
+    },
+    {
+      "path": "assets/figures/vi-applications.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "8dea5190a8d38ce7c3a9409b9234c3aaa058145a7c136fde65f3beb505130f29"
+    },
+    {
+      "path": "assets/figures/vi-applications.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "9e1fd64efa5117fbda89dbc120453689cdbac09e8e963786772f78257cf5b309"
+    },
+    {
+      "path": "assets/figures/pilot-node-plans.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "f453f2271919285f9474e87c274f11b941a5ea3f9c4549bff47a68c1655a13b7"
+    },
+    {
+      "path": "assets/figures/pilot-node-plans.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "3222fae47d6973393816acf3a82e5d6539f445cda75c062e0214ef7eae3b8505"
+    },
+    {
+      "path": "assets/figures/road-sections.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "38b0f151c104f10eb403ce3bf9a859be8f4723679cd02d695fb6533f89adcc66"
+    },
+    {
+      "path": "assets/figures/road-sections.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "59038db255431ce9367a7d0c07cddc7bfc9ef6e12d8eaf587f1272beb700eba7"
     }
   ],
   "validation_claim": {
