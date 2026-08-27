@@ -313,6 +313,14 @@
       "impact_zh": "该假设把全部 KPI 的「可声明状态」与基线测量绑定，防止未测先宣称改善；窗口与阈值须在首个试点启动前与运营候选主体、专业团队确认后方可执行。",
       "recalculation_path_zh": "基线测量完成后，按实测值翻转对应 KPI 状态并复算偏差；窗口或阈值变更须同步修订正文、metrics.json 口径说明与 changelog。",
       "confidence": "medium"
+    },
+    {
+      "id": "ASM-014",
+      "topic": "data_processing_role_verification_schedule",
+      "assumption_zh": "「全部场景卡的控制者/处理者为候选标注，须按正文『数据处理角色触发核验表』在对应触发点完成书面确认并登记台账；未完成确认的场景保持 T5 缩窄或延后启动」为治理排程假设；确认主体、文书形式与完成时点均为概念建议，最终以主管部门要求为准。",
+      "impact_zh": "该假设把「数据处理角色需核验」从被动状态转为已排程的触发动作，防止概念阶段的候选角色被误读为既定任命，也防止未确认角色的场景提前进入采购或对外开放。",
+      "recalculation_path_zh": "任一触发点完成核验后，更新 ASM-006 对应场景字段与本表状态；主管部门如要求不同角色划分，以审定结论为准并同步修订正文与 changelog。",
+      "confidence": "medium"
     }
   ],
   "evidence_ledger": {
