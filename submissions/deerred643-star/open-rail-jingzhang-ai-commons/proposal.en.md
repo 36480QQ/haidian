@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the century-old Jing-Zhang railway heritage corridor as a civic mainboard, this proposal builds an open-source AI commons of one spine, six stations, three areas and two wings: a 9.7 km rail-to-trail mainline linking six station-hall public nodes and three key areas, forming a recomputable, verifiable, concept-level urban design ready for professional deepening."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.9"
+iteration: "v2.0"
 ---
 
 # OPEN RAIL: Jing-Zhang AI Commons Urban Design Proposal
@@ -23,9 +23,9 @@ iteration: "v1.9"
 > | Relevance to brief | The "one spine, six stations, three areas, two wings" structure derives level by level from the announced three-tier scope; tracks cover heritage narrative, AI origin community and youth-friendly public space; agent tasks agent.1–agent.6 mapped item by item | 23 task-coverage entries in `compliance_matrix.json`; three-tier scope areas within <0.5% of announced figures (recomputed from GeoJSON) |
 > | Originality | OPEN RAIL translates railway vocabulary (mainline / station hall / commit / merge) into open-source civic-governance vocabulary; this submission package itself (PR / review / changelog) is the mechanism's verifiable first run | The concept narrative runs through all deliverables; two community open standards adopted at component level as machine-readable governance contracts |
 > | AI & planning innovation | 13 scenario cards each declare data boundaries, privacy boundaries and an operating entity; edge-compute nodes brought into the park; AI governance sandbox run as a public experiment | `switchback-adoption.json` and `seb-adoption.json` included for review; 3 test-validation scenario cards in place |
-> | Feasibility | Five-element implementation cards for 8 renewal projects + trigger-gated sequencing methodology + six-type funding matrix + four-link accountability chain; values without data stay "pending baseline" | `implementation-cards.json`, `sequencing-methodology.json`, `funding-matrix.json`; no ranking conclusions or benefit figures output |
+> | Feasibility | Five-element implementation cards for 8 renewal projects + trigger-gated sequencing methodology + six-type funding matrix + four-link accountability chain + lifecycle O&M ledger framework; values without data stay "pending baseline" | `implementation-cards.json`, `sequencing-methodology.json`, `funding-matrix.json`, `lifecycle-om-framework.json`; no ranking conclusions or benefit figures output |
 > | Public interest & inclusivity | Six user profiles cover elderly, disabled and low-digital-literacy residents; P1–P5 field baseline measurement protocols; every AI service point carries a mandatory non-digital equivalent path | `baseline-protocols.json`; SEB schema enforces the ai_off_path field; measured data honestly marked "pending baseline" |
-> | Risk & compliance awareness | Four risk classes (provisional boundary, regulatory-plan gaps, heritage constraints, implementation conditions) disclosed item by item; unregistered sources downgraded to "background information pending review"; all metrics recomputable from geometry | Eight-dimension matrix in `risk.json`; recalculation path registered in `assumptions.json` (A-BOUNDARY-002); unknown fields such as FAR never faked with inferred values |
+> | Risk & compliance awareness | Four risk classes (provisional boundary, regulatory-plan gaps, heritage constraints, implementation conditions) disclosed item by item; unregistered sources downgraded to "background information pending review"; all metrics recomputable from geometry; a red-team review proactively registers outcome-level failure modes with early-warning indicators | Eight-dimension matrix in `risk.json` plus the outcome-level failure-mode library in `failure-modes.json`; recalculation path registered in `assumptions.json` (A-BOUNDARY-002); unknown fields such as FAR never faked with inferred values |
 > | Completeness of expression | Full bilingual deliverables (narrative / HTML / A3 / A0 / figures / video with captions and transcript); originally drawn programmatic figures; three machine-readable matrices | Bilingual deliverables mapped one-to-one; offline rendering reproducible with coverage evidence; this table itself is the review entry index |
 
 > **Falsifiability conditions of core claims**: the conditions below make this proposal's main claims independently falsifiable by reviewers and professional teams — triggering any one condition invalidates the corresponding claim or requires its reversion; no vague wording is used to dodge the test.
@@ -344,6 +344,21 @@ Responding to the implementability review gap on funding and statutory entities,
 
 Entity authorisation path: public-space operations propose a dual-track authorisation of "district authority + named operator" closing the entry-supervision-review-exit loop (see the accountability-chain section); R&D and commercial plots are implemented by property owners or their partners under law. All arrangements are conceptual proposals, not commitments by governments or funders [depth:phasing_implementation].
 
+### Lifecycle O&M ledger framework (concept proposal)
+
+The funding matrix answers "where construction money comes from"; this framework answers "who pays to keep it running" — the operating and maintenance costs of the six halls, the corridor, the scenarios and the events once they enter operation, registered cell by cell across account, object, funding linkage and responsible role (machine-readable: `visual/assets/lifecycle-om-framework.json`):
+
+| O&M account | Applies to | Linkable funding types (from funding matrix) | Responsible role (accountability chain) | Boundary |
+|---|---|---|---|---|
+| Space upkeep | Corridor green, hall plazas, riverside belts | City/district fiscal & special; operations reinvestment | Park manager / hall operator (supervision link) | Per formal approvals and maintenance division |
+| Scenario operation | Service points of the 13 scenario cards | Operations reinvestment; market investment | Named accountable_operator (named at entry link) | Pilot permission first |
+| Event curation | Four-season events, gallery annual curation | Foundations & donations; operations reinvestment | Operator + curatorial charter (review link) | Heritage review first |
+| Data & compute | Edge-compute nodes, data sandbox | Market investment; industry funds | Infrastructure operator (supervision link) | Power and data-compliance review first |
+| Review & measurement | P1–P5 baselines, 90-day public reviews, third-party accessibility audits | City/district fiscal & special | Third-party bodies + district authority (review link) | Failed samples never dropped |
+| Emergency switchback reserve | Recovery and handover of switched-back / exited projects | City/district fiscal & special; operations reinvestment | District authority + outgoing operator dual handover (exit link) | Per switchback archive records |
+
+Method discipline: this framework contains no numeric estimates; accounts and funding linkages are proposed paths only. Break-even conclusions are published only after pilot baseline measurement is complete and the revenue scope is audit-defined, jointly reviewed by the district authority and the named operator, and rolled forward with the 90-day public review [depth:phasing_implementation].
+
 ### Public participation, conflict negotiation and service equity (concept framework)
 
 Answering the three inclusion gaps raised in review, an operable framework (concept proposals, landed during pilots):
@@ -383,6 +398,34 @@ Compliance coverage: the response relationships for announcement items 1.3, 1.4,
 ![Core metrics recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
 ## Risk, Copyright, and Compliance
+
+### Red-team review: objections, failure modes and early warning (concept framework)
+
+This section is the author's voluntary critical audit of the proposal itself: it first lists the objections reviewers and the public are most likely to raise and answers them one by one, then registers "what would count as failure after implementation" as monitorable failure modes. Listing an objection does not mean it holds; every answer cites only mechanisms and indicators already present in the package and adds no new commitments; all early-warning indicators are proposed definitions with no measured baseline yet (kept pending baseline), to be executed under the same measurement discipline as P1–P5 once pilots launch, with failed samples never dropped [depth:risk_missing_data].
+
+**Objections and responses**:
+
+| Objection | This proposal's response (citing existing mechanisms) | Early-warning indicators (proposed, pending baseline) |
+|---|---|---|
+| Gentrification: the AI belt pushes up rents and displaces residents and small businesses | Gradual renewal dominated by "retain" in the central residential fabric; the Dazhongsi implementation card sets a tenant-retention acceptance indicator; community micro-renewal funds are gated on resident consent | Small-business retention rate, abnormal rent movements, resident-displacement tickets |
+| AI gimmickry: scenarios as tech theatre solving no real problem | All 13 scenario cards declare data boundaries and operating entities; every AI service point carries a mandatory non-digital equivalent path; the Switchback Protocol's 90-day review includes the "switchback" disposition | Scenario deactivation rate, equivalent-path usage share, review-triggered switchbacks |
+| Key-area vacancy: R&D courtyards built but unoccupied | The trigger-gated sequencing methodology outputs no ranking before data arrives, so vacancy-prone projects are not front-loaded; modular base plots split elastically to fit team sizes | Courtyard occupancy rate, vacant duration of modular plots |
+| One-off events: the four-season calendar goes cold after one edition | Events link to the annual open-scenario list and the conversion pathway; the honour wall and gallery are continuously updated mechanisms, not one-off installations | Event re-run rate, annual participation retention, honour-wall update gaps |
+| Open governance as formality: public reviews with no participants | The self-referential proof — this package's public PRs, reviews and changelogs from v1.0 onward are the isomorphic mechanism's running record; the participation ladder seats public representatives at reviews | Public attendance at reviews, Issue/PR response time |
+
+**Failure modes and early warning** (machine-readable: `visual/assets/failure-modes.json`):
+
+| # | Failure mode | Early-warning indicator (proposed, pending baseline) | Frequency | Triggered disposition (linked to governance contracts) |
+|---|---|---|---|---|
+| F1 | Spine continuity broken, breaks persist | Through-rate below 100% with a break persisting over two quarters | Quarterly | Segment switched to yellow controlled state; 90-day review four-option disposition |
+| F2 | AI scenarios deactivated or hollow | A scenario with no public operating record for two consecutive quarters | Semi-annual | Switchback Protocol red state; switchback archiving starts |
+| F3 | Non-digital equivalent paths missing | P2 non-compliant points persisting over one quarter | Quarterly | SEB node field rectification, entered into the review ledger |
+| F4 | Small businesses displaced | Tenant-retention trend declining continuously (threshold set after baseline) | Semi-annual | Dazhongsi project triggers tier-2 conflict negotiation |
+| F5 | Event and scenario operations stall | An annual event missed or the open-scenario list not published on schedule | Annual | Operator explains in the review-accountability link |
+| F6 | Review mechanism idles | Two consecutive 90-day reviews with no public participation and no rectification loop | Semi-annual | Participation ladder falls back to the co-design rung for reinforcement |
+| F7 | Complaint response degrades | P3 median response time worsening for two consecutive quarters | Quarterly | Supervision link imposes a deadline for published rectification |
+
+Division of labour with `risk.json`: risk.json registers compliance and material risks (the eight-dimension matrix), while `failure-modes.json` registers outcome-level failure risks; the two cross-reference each other in machine-readable form, and every triggered warning feeds into the 90-day public review, with dispositions archived in the switchback record [source:SWITCHBACK-PROTOCOL].
 
 Material and compliance risks: ① provisional-boundary risk — all geometry and metrics are interim design-model values requiring full recalculation upon official data release; ② regulatory-gap risk — intensity, height and demolition classification are uniformly pending and no inferred values are passed off as controls; ③ heritage risk — all Qinghuayuan Station content is conceptual and subordinate to relics-protection requirements; ④ implementation risk — phasing and the project list are recommendations, not government commitments [depth:risk_missing_data]. An eight-dimension structured risk matrix (1-5 scores, mitigations and human-review fields) is recorded in `risk.json`, forming the machine-readable index of this section and linking to the scenario-governance boundaries in the two adoption declarations under `visual/assets/`.
 
