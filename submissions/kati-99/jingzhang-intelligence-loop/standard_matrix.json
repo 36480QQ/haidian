@@ -207,7 +207,7 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
+      "evidence_summary_zh": "本包在结构、章节、图层、指标、图纸、HTML 上对应该标准（控规深度城市设计）做了完整响应：已建立三层范围框架、控制条件区分模块与指标复算体系。但容积率、建筑高度、建筑密度、退线、红线等具体管控参数因官方控规条件尚未发布，在本包中保持 unknown / pending_control，提交数值为方法演示与待校准清单，不得作为审定控规依据。官方控规发布后须按本表与 metrics.json 重算。此数据缺口（data_gap）已在本包风险、版权与合规说明章节及 metrics 的 provisional 标注中明示。"
     },
     {
       "standard_id": "MNR-LAND-USE-CLASSIFICATION-GUIDE",
@@ -313,5 +313,7 @@
       ],
       "evidence_summary_zh": "本条标准响应通过 proposal.md 正文引用、A3/A0 图纸、GeoJSON 图层、metrics.json 指标和自检项共同证明。"
     }
-  ]
+  ],
+  "review_stage_note": "本包对 6 项标准的响应状态为：5 项 addressed（含公告、任务书、土地分类、城市设计措施、来源登记），1 项（MOHURD-CONTROL-DETAILED-PLANNING）为 data_gap（官方控规参数缺失）。data_gap 状态表示本包在结构、章节、证据、引用上对应该标准，但因官方数据未发布，具体管控数值待校准。",
+  "generated_at": "2026-08-27T07:18:00Z"
 }

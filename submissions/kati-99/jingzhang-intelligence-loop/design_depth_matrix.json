@@ -269,7 +269,8 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "本项已给出开发强度方法与指标位（FAR、密度、绿地率），但官方控规条件未发布，FAR 保持 unknown；提交包内数值为方法演示，不得作为审定控规依据。 证据仍以结构化文件 + 自检为准。 本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。",
+      "provisional_note": "本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。"
     },
     {
       "item_id": "height_massing_character",
@@ -323,7 +324,8 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "本项已给出建筑高度、体量、界面与风貌方法，但官方建筑高度控制线、风貌分区与屋顶形态管控尚未发布；当前成果为方法与建议层级，非审定控制。 证据仍以结构化文件 + 自检为准。 本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。",
+      "provisional_note": "本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。"
     },
     {
       "item_id": "retain_renovate_demolish",
@@ -377,7 +379,8 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "本项已给出保留/改造/更新/新建/待确认的分类方法与建筑基底图层，但现状建筑、权属、控规与工程条件缺失；当前成果为方法与待校准清单，不得编造拆改留结论。 证据仍以结构化文件 + 自检为准。",
+      "provisional_note": "本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。"
     },
     {
       "item_id": "traffic_rail_slow_parking",
@@ -485,7 +488,8 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "本项已给出 AI 产业服务设施、分布式能源、端侧算力等新型基础设施的布局方法，但管线、能源、排水、防洪、消防工程资料缺失；当前成果为概念与待深化前置条件。 证据仍以结构化文件 + 自检为准。 本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。",
+      "provisional_note": "本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。"
     },
     {
       "item_id": "blue_green_public_space",
@@ -755,7 +759,8 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "本项已从 GeoJSON 复算 site_area_sqm、green_ratio、public_space_ratio、building_footprint_area_sqm 等指标，但 FAR 等管控指标因官方条件缺失保持 unknown；全部 known 指标可从 metrics.json 复算。 证据仍以结构化文件 + 自检为准。 本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。",
+      "provisional_note": "本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。"
     },
     {
       "item_id": "risk_missing_data",
@@ -809,7 +814,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "本项已登记 official boundary、key area、控规、道路、地块、建筑、市政、文保、公共服务等数据缺口（见 missing_data_checklist.csv 与 assumptions.json）；任何缺少官方条件的事项均降级为待确认。 证据仍以结构化文件 + 自检为准。 本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。",
+      "provisional_note": "本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。"
     }
-  ]
+  ],
+  "review_stage_note": "本包为基于 provisional boundary / 官方控规缺失前提下的 formal AI 城市设计方案包。9 项深度项为 complete（含结构化图层、指标复算、图纸、HTML 与自检），6 项因官方控规/权属/工程条件缺失为 partial（方法 + 待校准清单，不构成审定结论）。完整三项范围、官方控规与权属条件发布后须重算。",
+  "generated_at": "2026-08-26T23:55:00Z"
 }

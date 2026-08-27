@@ -22,14 +22,14 @@
     {
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
-      "source_type": "agent_inferred_from_public_data",
-      "usage": "Submitted site boundary geometry source (provisional)."
+      "source_type": "repository_maintainer_provisional",
+      "usage": "Submitted site boundary geometry source (provisional; provided by repository maintainers as provisional_only per data/source_registry.json; the agent does not re-derive this geometry)."
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
-      "source_type": "agent_inferred_from_public_data",
-      "usage": "Three required detailed-design key area boundaries (provisional)."
+      "source_type": "repository_maintainer_provisional",
+      "usage": "Three required detailed-design key area boundaries (provisional; provided by repository maintainers as provisional_only per data/source_registry.json; the agent does not re-derive these polygons)."
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
@@ -43,5 +43,13 @@
       "source_type": "user_provided_cleared",
       "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
     }
-  ]
+  ],
+  "source_type_legend": {
+    "official_public": "Publicly published official document or webpage.",
+    "repository_public_registry": "Repository public/cleared/provisional source registry (data/source_registry.json).",
+    "repository_processed_reference": "Repository processed navigation layer (not a new authority source).",
+    "repository_maintainer_provisional": "Provisional data provided by repository maintainers; usable for proposal generation and self-check, but NOT for official redline, approval basis, or precise area basis (see data/source_registry.json).",
+    "user_provided_cleared": "User-provided and rights-cleared material (e.g., agent taskbook).",
+    "agent_inferred_from_public_data": "Agent-derived inference from public data (not used in this submission; all boundary/key-area sources are repository_maintainer_provisional)."
+  }
 }

@@ -74,10 +74,21 @@ def render_inline(text: str) -> str:
         value = match.group(2)
         label = REFERENCE_LABELS[kind]
         escaped_value = html.escape(value)
+        # Render the chip body as the value's own identifier (or its tail
+        # after the last "#") instead of the bare kind label, so reviewers
+        # can tell multiple evidence chips apart at a glance (e.g. PROV-KEY-001
+        # vs PROV-KEY-002 vs PROV-KEY-003 all show a unique tag rather than
+        # three identical "空间数据"). The full kind+value is preserved in
+        # the tooltip and the data-evidence-* attributes for machine readers.
+        if "#" in value:
+            chip_body = value.rsplit("#", 1)[1]
+        else:
+            chip_body = value
+        chip_body = html.escape(chip_body)
         return (
             f'<sup class="evidence evidence-{kind}" data-evidence-kind="{kind}" '
             f'data-evidence-value="{escaped_value}" title="{label}：{escaped_value}">'
-            f'{label}</sup>'
+            f'{chip_body}</sup>'
         )
 
     escaped = REFERENCE_RE.sub(replace_ref, escaped)
