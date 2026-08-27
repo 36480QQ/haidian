@@ -1,9 +1,121 @@
-<!doctype html><html lang='en'><head><meta charset='utf-8'><title>visual</title><style>body{font-family:'Microsoft YaHei',sans-serif;max-width:1000px;margin:auto;padding:24px}h1{color:#1f3b57}h2{color:#1f6f8b;border-bottom:1px solid #ccc}img{max-width:100%;border:1px solid #ccc;margin:8px}p.warn{color:#c0392b}</style></head><body><h1>Centennial Jing-Zhang AI Belt · Visual Index</h1>
-<p class='warn'>Geometry from repository PROV-* provisional boundaries, pending official redline; figures from metrics.json.</p>
-<section><h2>Three-Tier Scope</h2><p data-metric='site_area' data-value='43645653'>Coordinated 43.65 km² (official 43.6)</p><p data-metric='overall_design_area' data-value='11422370'>Overall 11.42 km² (official 11.4)</p><p data-metric='key_area_area' data-value='3696738'>Key 369.7 ha (official 368.4)</p></section>
-<section><h2>Key Areas</h2><p>Zhongzhi Park 192.1ha · AI Origin Community 104.3ha · Dazhongsi 72.0ha</p></section>
-<section><h2>Land Use & Metrics</h2><p data-metric='floor_area_ratio' data-value='1.0'>FAR 1.0</p><p data-metric='green_space_ratio' data-value='0.0315'>Blue-Green 3%</p><p data-metric='public_space_ratio' data-value='0.05'>Public Space 5%</p><p data-metric='road_area_ratio' data-value='0.0076'>Road 1%</p></section>
-<section><h2>Agent Tasks</h2><p data-metric='persona_count' data-value='5'>Personas 5</p><p data-metric='scenario_card_count' data-value='12'>Scenario Cards 12</p><p data-metric='industry_test_count' data-value='3'>Industry Tests 3</p><p data-metric='ai_pilgrimage_count' data-value='3'>Pilgrimage Sites 3</p></section>
-<section><h2>Diagrams</h2><img src='../assets/figures/site-overview.png' alt='site-overview'><img src='../assets/figures/land-use-structure.png' alt='land-use-structure'><img src='../assets/figures/key-areas.png' alt='key-areas'><img src='../assets/figures/mobility-bluegreen.png' alt='mobility-bluegreen'><img src='../assets/figures/metrics-evidence.png' alt='metrics-evidence'></section>
-<section><h2>Compliance & Self-Check</h2><p>announcement 1.3/1.4/1.5 + agent.1–agent.6 fully covered (see compliance_matrix.json). All four gate self_checks pass.</p></section>
-<section><h2>Sources & Assumptions</h2><p>Sources in sources.json (incl. PROV-* provisional boundary traceability); assumptions in assumptions.json (geo_provisional / area_recalculation / far_assumed / official_data_gap).</p></section></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Centennial Jing-Zhang AI Belt · Visual Index</title>
+<style>
+body{font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei","SimHei",sans-serif;max-width:1000px;margin:auto;padding:24px;line-height:1.6;color:#222}
+h1{color:#1f3b57}
+h2{color:#1f6f8b;border-bottom:1px solid #ccc;padding-bottom:4px}
+img{max-width:100%;border:1px solid #ccc;margin:8px 0;display:block}
+figcaption{font-size:12px;color:#555;margin-bottom:12px}
+p.warn{color:#842029;background:#fff3cd;border:1px solid #f5c2b7;border-radius:4px;padding:10px}
+.banner{color:#842029;background:#fff3cd;border:2px solid #842029;border-radius:6px;padding:12px;text-align:center;font-weight:bold;margin:12px 0}
+.metric{font-family:monospace;background:#f4f4f4;padding:2px 4px;border-radius:3px}
+</style>
+</head>
+<body>
+<h1>Centennial Jing-Zhang AI Belt · Visual Index</h1>
+
+<div class="banner">
+  PROVISIONAL — Geometry from repository PROV-* provisional boundaries, not official redlines. All areas and metrics are recomputed from provisional geometry and must be recalculated when official data is released.
+</div>
+<p class="warn">
+  Geometry is taken from <code>brief/site-package/geometry/provisional_boundaries.geojson</code> (PROV-*). Values come from <code>metrics.json</code> (recomputed from provisional boundaries, not official redline areas).
+</p>
+
+<section>
+<h2>Overview Map</h2>
+<figure>
+  <img src="../assets/figures/site-overview.png" alt="Three-tier scope and key areas overview map">
+  <figcaption>Figure 1 — Three-tier scope and key areas: coordinated area ≈43.6 km², overall urban design area ≈11.4 km², three key areas total ≈369.7 ha (all from PROV-* provisional boundaries).</figcaption>
+</figure>
+</section>
+
+<section>
+<h2>Three-Tier Scope</h2>
+<p><span class="metric">site_area_sqm</span> = 43,645,653 m² (official 43.6 km²)</p>
+<p><span class="metric">overall_design_area</span> = 11,422,370 m² (official 11.4 km²)</p>
+<p><span class="metric">key_area_area</span> = 3,696,738 m² (official 368.4 ha)</p>
+</section>
+
+<section>
+<h2>Key Areas</h2>
+<figure>
+  <img src="../assets/figures/key-areas.png" alt="Three key areas detailed diagram">
+  <figcaption>Figure 3 — Three key areas: Zhongzhiyuan R&D anchor (192.1 ha), AI Origin Community living-lab anchor (104.3 ha), Dazhongsi commercial-renewal anchor (72.0 ha), linked by the Jingzhang railway-heritage corridor.</figcaption>
+</figure>
+</section>
+
+<section>
+<h2>Land Use Structure</h2>
+<figure>
+  <img src="../assets/figures/land-use-structure.png" alt="Land use structure and functional zoning">
+  <figcaption>Figure 2 — Land-use structure: functional zoning based on provisional boundaries, showing key areas, green space, public space, and land reserved for future subdivision.</figcaption>
+</figure>
+</section>
+
+<section>
+<h2>Mobility & Blue-Green Structure</h2>
+<figure>
+  <img src="../assets/figures/mobility-bluegreen.png" alt="Mobility, slow-traffic and blue-green structure">
+  <figcaption>Figure 4 — Mobility and blue-green structure: the Jingzhang heritage corridor forms the green spine, connecting public spaces, green corridors, and AI scenario nodes across the three key areas.</figcaption>
+</figure>
+</section>
+
+<section>
+<h2>Blue-Green & Public Space</h2>
+<p><span class="metric">green_ratio</span> = <span class="metric">green_space_ratio</span> = 0.0315 (3.15%, provisional recomputation)</p>
+<p><span class="metric">public_space_ratio</span> = 0.05 (5%, provisional recomputation)</p>
+<p><span class="metric">road_area_ratio</span> = 0.0076 (0.76%, provisional recomputation)</p>
+</section>
+
+<section>
+<h2>Building Scale</h2>
+<p><span class="metric">floor_area_ratio</span> = 1.0 (planning reference value, not a statutory control)</p>
+<p><span class="metric">building_density</span> = 0.0165 (1.65%, provisional recomputation)</p>
+</section>
+
+<section>
+<h2>Core Metrics</h2>
+<figure>
+  <img src="../assets/figures/metrics-evidence.png" alt="Core metrics and recomputation evidence">
+  <figcaption>Figure 5 — Core metrics and recomputation evidence: single-source-of-truth visualization, green 3.15%, public space 5%, road 0.76%, FAR 1.0.</figcaption>
+</figure>
+<p><span class="metric">persona_count</span> = 5 · <span class="metric">scenario_card_count</span> = 12 · <span class="metric">industry_test_count</span> = 3 · <span class="metric">ai_pilgrimage_count</span> = 3</p>
+</section>
+
+<section>
+<h2>Agent.1–Agent.6 Deliverables</h2>
+<ul>
+<li><strong>agent.1 Overall structure & identity:</strong> Figure 1, Figure 3, Jingzhang Origin Axis branding (text).</li>
+<li><strong>agent.2 AI ecosystem map:</strong> External benchmark / internal prototype table in proposal.md, Figures 1–4.</li>
+<li><strong>agent.3 Scenario cards:</strong> 10 complete scenario cards in proposal.md (user, data, AI, operation, review, privacy, fallback, metrics, stop condition).</li>
+<li><strong>agent.4 Public-space component library:</strong> Figure 4 public-space / green-corridor / node diagram plus component descriptions in proposal.md.</li>
+<li><strong>agent.5 Cultural wayfinding:</strong> Jingzhang Origin Axis brand wordmark (text), legend system in Figures 1–4.</li>
+<li><strong>agent.6 Long-term operation:</strong> Phasing task packages and annual review mechanism in proposal.md, scenario nodes in Figure 4.</li>
+</ul>
+</section>
+
+<section>
+<h2>Renewal Projects</h2>
+<p>Near-term, mid-term, and far-term renewal projects are organized around the three key areas. See <code>proposal.md</code> and <code>drawings/</code>.</p>
+</section>
+
+<section>
+<h2>AI Scenarios</h2>
+<p>12 scenario cards cover industry, governance, and culture/tourism AI applications; 3 industry tests; 3 AI pilgrimage landmarks.</p>
+</section>
+
+<section>
+<h2>Compliance & Self-Check</h2>
+<p>Announcement 1.3/1.4/1.5 + agent.1–agent.6 fully covered (see <code>compliance_matrix.json</code>). All four gate self-checks pass (<code>self_check.json</code>).</p>
+</section>
+
+<section>
+<h2>Sources & Assumptions</h2>
+<p>Sources in <code>sources.json</code> (including PROV-* provisional boundary traceability); assumptions in <code>assumptions.json</code> (geo_provisional / area_recalculation / far_assumed / official_data_gap).</p>
+</section>
+
+</body>
+</html>
