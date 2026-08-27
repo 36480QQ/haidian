@@ -502,8 +502,7 @@ def render_html(
 * {{ box-sizing: border-box; }}
 body {{
   margin: 0;
-  font-family: "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "WenQuanYi Zen Hei", "Droid Sans Fallback", "Arial Unicode MS", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-synthesis: none;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
