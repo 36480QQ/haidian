@@ -1,5 +1,10 @@
 # 方案迭代记录
 
+## v1.14 - 2026-08-27
+
+- Re-rendered the English proposal with English-only evidence labels and navigation text, removing the review-visible mixed-script fallback problem from the offline English report.
+- Re-spaced the `FOUR EDGES` and `STATUS` cards in the English overview figure, then synchronised the refreshed asset into the English A3 booklet, A0 board and HTML entry points; the revised first pages were visually checked after export.
+
 ## v1.13 - 2026-08-26
 
 - Rebuilt the Chinese review entry points as two locally rasterised, font-independent boards so critical Chinese titles, spatial decisions, R04 gates and AI+ scene commitments stay readable in an offline review environment.
