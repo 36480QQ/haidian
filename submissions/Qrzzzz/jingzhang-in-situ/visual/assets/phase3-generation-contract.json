@@ -3,7 +3,7 @@
   "authority": {
     "phase2_frozen_head": "554979e4bc66f21fbdf53e4cde85ed94afe4421c",
     "phase2_equivalent_rebased_parent": "2264c782d96f57f3ae95f0a6458f5e03e3112b42",
-    "phase3_scope": "protocols, governance, Human Takeover, red-team, F08/F11, bilingual HTML, and PDFs only",
+    "phase3_scope": "protocols, governance, Human Takeover, red-team, F08/F11, bilingual Visual/report HTML, and PDFs only",
     "spatial_evidence_changed": false,
     "pdf_reproducibility": {
       "contract": "rendered-pixel-equivalence",
@@ -20,6 +20,22 @@
       "fonttools": "4.63.0",
       "Brotli": "1.2.0",
       "reportlab": "5.0.0"
+    },
+    "report_html_authority": {
+      "primary_renderer": "scripts/render_proposal_html.py",
+      "primary_renderer_sha256": "e51c4453934640974e9a182f17e4f0ea4282881a46de086aee03df4eb4bcfdf7",
+      "primary_command": "python scripts/render_proposal_html.py submissions/Qrzzzz/jingzhang-in-situ",
+      "closure_source": "visual/assets/rebuild-visuals-source.json#ensure_report_favicon",
+      "closure_command": "restore visual/assets/phase3-governance-generator-source.json as phase3-governance-generator.py and run it",
+      "required_order": [
+        "primary_renderer",
+        "phase3_closure"
+      ],
+      "outputs": [
+        "report/proposal.html",
+        "report/proposal.en.html"
+      ],
+      "favicon": "../assets/figures/identity-system.png"
     }
   },
   "input_sha256": {
@@ -27,8 +43,10 @@
     "visual/assets/phase3-data-governance.json": "2dfd4d0c2ee0f1dff0fe2ee186fa8fe997d7de69a088d838914d56470df0bc35",
     "visual/assets/phase3-red-team.json": "58f607dc7971dc25c1674b186de576d11a1240038ac08ec3c3558e9ec64a2c4d",
     "visual/assets/phase3-delta.json": "066151b006917b02c914817b456476f06cc15847f57e28e0c3e100c01a808624",
-    "visual/assets/phase3-governance-generator-source.json": "86c1d21967063ded2f5767ab62da1511d83a47d38d633eaa74826d2d6251ff1c",
-    "visual/assets/rebuild-visuals-source.json": "b0033d2e4cf3f49f0672dfb8ea25b9e9552becbefcf93d1c5b26b798907b0175"
+    "visual/assets/phase3-governance-generator-source.json": "f1c2ce3604b45c1fe4a1949f46a2a22cd201fc9b234e10dc7690cd2ebdf0c0ea",
+    "visual/assets/rebuild-visuals-source.json": "b0033d2e4cf3f49f0672dfb8ea25b9e9552becbefcf93d1c5b26b798907b0175",
+    "proposal.md": "7611f3338c07b973d37f5998684e43b71ae4f50d22072130086cf904c10ff8d4",
+    "proposal.en.md": "e774099e235848b8468bc29708962760be4c9f8d883464caf6176ebe2bf1a067"
   },
   "protected_sha256_before": {
     "assets/figures/ai-ecosystem.en.png": "091645bd9ffc10df7484b6983e2aee720973a2b45da41da7562472902a730ed5",
@@ -95,13 +113,15 @@
     "assets/figures/operations-pathway.en.png": "ecae07fd231953994537393c341b6ebddfd728291e939958de3193990d57637f",
     "visual/index.html": "8dd5b821c81e9ea9536d152aad0ae7bd7aa760214d02ced9c7218695b0ce0315",
     "visual/index.en.html": "0a3c6b421ec45bf69ab3514ab0791a0289ea48c063c1045fd733e92c7aec40d0",
-    "visual/assets/font-subset.css": "3020256ac4ca4286735fcda6e0dfa212077c59477bfa837c525433acd6fcfc04",
+    "report/proposal.html": "05534c8f521860255e654d4aacf2ff9ee4916c835cac3b6160f950c9a04794fb",
+    "report/proposal.en.html": "7358901eee605ec3c72876a32c67f0f8bbcb5e9333f567abfc05eb969cfb37b4",
+    "visual/assets/font-subset.css": "c67b9e57477dc7a86fee5e38ef07bb5baef3ceb799e0d12ace6590ecf4e3e5ca",
     "visual/assets/visual.css": "bbc2d45c8645c6c182027f6ee4efe77f0139f1e157b51eb312e8bd39466a929d",
     "visual/assets/visual.js": "76acfd4dd172e7521547db827f594cc2d1158a66933b227586ff5836cbd5bc7f",
-    "drawings/a3-booklet.pdf": "825ed665e6d7427007cbe8c56681adbd3b58936952ecd94a56831296707f1191",
-    "drawings/a3-booklet.en.pdf": "4a1d583ed0b6cbaa3a9c7c465d4ce521c86a3323afd3d2f3806df008d7b26150",
-    "drawings/a0-boards.pdf": "49b3261a3bb31b2ec7bcbb7291751c757729fc5299ee941bd96223dd0a7d0fc9",
-    "drawings/a0-boards.en.pdf": "79e17ccd84e07c5f3da0d6487eab5f6ef3ed6ddedd0feefd32a63c13f5f8e3bf"
+    "drawings/a3-booklet.pdf": "ec467bb823fc83ea1f60037308629012052d3a3548d4c7023cbfa12b0ca470ed",
+    "drawings/a3-booklet.en.pdf": "1e6982b13c635080af9939f84df7020102e0a216feb6a252f4688522601a01d6",
+    "drawings/a0-boards.pdf": "89197dbdb8b2a0b112baf56a5b6bea0021001422f4e8edca3c5307013885bda6",
+    "drawings/a0-boards.en.pdf": "c8236c3c6805c07be527dbab79bb7bf65686da49e1b7a7a3563c4e138723d8df"
   },
   "consistency": {
     "scenario_ids": [
@@ -143,7 +163,7 @@
     "retained_fail_stop_unknown_count": 13,
     "protocol_selector_count": 69,
     "protected_path_count": 27,
-    "generated_output_count": 13
+    "generated_output_count": 15
   },
   "generated_outputs": [
     "assets/figures/scenario-matrix.png",
@@ -152,6 +172,8 @@
     "assets/figures/operations-pathway.en.png",
     "visual/index.html",
     "visual/index.en.html",
+    "report/proposal.html",
+    "report/proposal.en.html",
     "visual/assets/font-subset.css",
     "visual/assets/visual.css",
     "visual/assets/visual.js",

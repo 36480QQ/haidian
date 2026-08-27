@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "03dcf794f2ad681b0723716ca81a8d22721cffb1a15fd8e7e2ba72d7254db916"
+      "sha256": "e5c90768e73d87b5fb4d3bfe0e4895f69f0b72f74497f5c60dd2bb77ea39dc8d"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,13 +81,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "96e1f5f064910cfbd65f39c5cdd865ef98dd4a14ff0428b6135ff99ebdcc5c8a"
+      "sha256": "05534c8f521860255e654d4aacf2ff9ee4916c835cac3b6160f950c9a04794fb"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "f9449a8164eded4b76f4bd765f825d3f2b73acf67b3584b67f1558b3c7de012a"
+      "sha256": "02f6690825032401822f8e311a38ceb166cbad4047cae8ff2515be5f817e4709"
     },
     {
       "path": "changelog.md",
@@ -113,14 +113,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "825ed665e6d7427007cbe8c56681adbd3b58936952ecd94a56831296707f1191"
+      "sha256": "ec467bb823fc83ea1f60037308629012052d3a3548d4c7023cbfa12b0ca470ed"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "49b3261a3bb31b2ec7bcbb7291751c757729fc5299ee941bd96223dd0a7d0fc9"
+      "sha256": "89197dbdb8b2a0b112baf56a5b6bea0021001422f4e8edca3c5307013885bda6"
     },
     {
       "path": "visual/index.html",
@@ -232,7 +232,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9f05d37e20c38b94001962472e8339c141b60de38972a45b94f2e2ead20642d1"
+      "sha256": "7358901eee605ec3c72876a32c67f0f8bbcb5e9333f567abfc05eb969cfb37b4"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -240,7 +240,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "4a1d583ed0b6cbaa3a9c7c465d4ce521c86a3323afd3d2f3806df008d7b26150"
+      "sha256": "1e6982b13c635080af9939f84df7020102e0a216feb6a252f4688522601a01d6"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -248,7 +248,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "79e17ccd84e07c5f3da0d6487eab5f6ef3ed6ddedd0feefd32a63c13f5f8e3bf"
+      "sha256": "c8236c3c6805c07be527dbab79bb7bf65686da49e1b7a7a3563c4e138723d8df"
     },
     {
       "path": "visual/index.en.html",
@@ -263,7 +263,7 @@
       "role": "asset",
       "required": true,
       "language": "neutral",
-      "sha256": "3020256ac4ca4286735fcda6e0dfa212077c59477bfa837c525433acd6fcfc04"
+      "sha256": "c67b9e57477dc7a86fee5e38ef07bb5baef3ceb799e0d12ace6590ecf4e3e5ca"
     },
     {
       "path": "visual/assets/NotoSansSC-OFL-1.1.css",
@@ -474,13 +474,13 @@
       "path": "visual/assets/phase3-generation-contract.json",
       "role": "evidence_data",
       "required": true,
-      "sha256": "27c5f5587fe0b1b1dcfde170c18cb6cd9bd8ed1e0fa244ec9d65ac5c1e2556d8"
+      "sha256": "f6da0718432b7886b62f61459f046092df42a3b6e03a5081bc6dda994251b9fd"
     },
     {
       "path": "visual/assets/phase3-governance-generator-source.json",
       "role": "verification_script",
       "required": true,
-      "sha256": "86c1d21967063ded2f5767ab62da1511d83a47d38d633eaa74826d2d6251ff1c"
+      "sha256": "f1c2ce3604b45c1fe4a1949f46a2a22cd201fc9b234e10dc7690cd2ebdf0c0ea"
     },
     {
       "path": "visual/assets/phase3-protocol-audit-source.json",
