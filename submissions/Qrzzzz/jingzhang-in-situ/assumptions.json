@@ -80,7 +80,7 @@
     {
       "id": "A-RIGHTS-001",
       "status": "cleared_for_submission",
-      "statement": "Path-level rights evidence was reopened and manually reconciled on 2026-08-27 after the Phase 1 text, F08/F10/F11, HTML and PDF regeneration. The unresolved optional AI cover remains removed; authored text, structured data, unchanged concept geometry, generated figures, HTML and PDFs are recorded in report/copyright_statement.md, and redistributed Noto subsets carry their full OFL text and copyright notice.",
+      "statement": "Path-level rights evidence was reopened and manually reconciled on 2026-08-27 for the Phase 2 source-graph repair. All six repaired links use already registered official or background-policy snapshots under their existing item-level limits; no new image, map, logo, raw OSM payload or third-party asset was introduced, and regenerated text, HTML, visual and PDF artifacts remain covered by report/copyright_statement.md.",
       "impact": "The rights audit supports redistribution of this submission snapshot under its stated limits. It does not convert provisional data into official evidence or provide a legal non-infringement guarantee; any later asset change reopens the audit.",
       "affected_files": [
         "report/copyright_statement.md",
@@ -94,7 +94,7 @@
     {
       "id": "A-BILINGUAL-001",
       "status": "reviewed_2026-08-27",
-      "statement": "Deterministic counterpart checks do not establish substantive equivalence, so a dated manual comparison was completed on 2026-08-27 for the 13-section order, one thesis, four primary messages, ten core claims, proper names, six-level wayfinding, metric status, source markers, SC/CX/IM/AP/U/C/TVS and F/T IDs, provisional-boundary limits, captions and on-figure positions.",
+      "statement": "A dated manual comparison was completed on 2026-08-27 for the 13-section order, claims, figures, numbers, status language and evidence markers. The six repaired source links are paired at substantively equivalent Chinese/English claims, including the same non-generalization limits for generative AI, Article 39 barrier-free service contexts and the elderly smart-service policy.",
       "impact": "The current bilingual snapshot is cleared for review as substantively aligned. This finding does not guarantee legal translation or future-file parity; any edit to paired text, figures, HTML or PDFs reopens the comparison.",
       "affected_files": [
         "proposal.md",

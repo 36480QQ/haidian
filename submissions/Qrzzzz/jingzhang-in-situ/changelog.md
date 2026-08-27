@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v0.7 - 2026-08-27
+
+### Phase 2 independent-audit repair
+
+- Rebased the unchanged Phase 1 and Phase 2 history onto live `upstream/main=0558e48f98a92c9cfce43e947a44f8350da180a6`; since the previous live baseline `69e631fead6323e3b997315060e0d8bee7a93df1`, 32 commits changed 102 unique files across two other submissions only, bringing the cumulative delta from the independent-review baseline to 88 commits and 305 unique files across eight other submissions; protected paths remained unchanged.
+- Closed the six-source evidence-graph gap: three mandatory standards now point to their exact registered source IDs, while the generative-AI, barrier-free, and elderly smart-service sources connect to narrowly scoped existing claims and design-depth objects without creating a new scenario or protocol.
+- Added paired, claim-adjacent Chinese/English source markers with explicit non-generalization limits; retained 19 registered sources and all prior licensing, provisional, unknown, and not-surveyed boundaries.
+- Regenerated the affected structured evidence, reports, visual package, and four PDFs; refreshed the persisted self-check and manifest using the current Git-blob/LF payload-byte contract.
+
 ## v0.6 - 2026-08-27
 
 ### Phase 2 spatial evidence

@@ -85,9 +85,11 @@ F07 让土地、空间、产业、资金、人才、算力、数据、场景沿�
 
 ## 总体设计范围城市更新与控规深度城市设计
 
-更新只使用三个可回退动词：**KEEP** 保留经调查有公共价值的建筑、树阵和服务；**OPEN** 在权属、安全和运营允许时打开园边、院落与公共首层；**INTENSIFY** 先以共享时段和可逆构件提高使用强度，不预设开发量。[standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:retain_renovate_demolish]
+更新只使用三个可回退动词：**KEEP** 保留经调查有公共价值的建筑、树阵和服务；**OPEN** 在权属、安全和运营允许时打开园边、院落与公共首层；**INTENSIFY** 先以共享时段和可逆构件提高使用强度，不预设开发量。[standard:MOHURD-CONTROL-DETAILED-PLANNING] [source:DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING] [depth:retain_renovate_demolish]
 
 这一差异化机制把更新空间网络与三重在场责任体系绑定：任何空间动作都必须同时说明公众入口、证据状态、责任角色和恢复方式，而不是为传统功能分区换一个 AI 名称。
+
+城市设计在这里承担平面与立体空间、公共空间、交通市政和城市风貌的统筹框架；本期只把该框架转译为可复核设计建议，不据此声称已有批准的项目控制要求。[standard:MOHURD-URBAN-DESIGN-MEASURES] [source:DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES]
 
 临时用地仅检验公共开放、创新服务、生活照护和蓝绿连续。LU-001/LU-002 组织创新与公共界面，LU-003/LU-004 组织生活与蓝绿情景；完整覆盖不证明法定用途。[data:geometry/land_use.geojson#LU-001] [data:geometry/land_use.geojson#LU-002]
 
@@ -131,7 +133,11 @@ FAR、高度、密度、建筑规模和永久建设等待正式控规及逐栋�
 | U6 | 老年人、残障访客及陪同者 | 无障碍、人工帮助 |
 | U7 | 国际开发者与专业访客 | 双语状态、许可边界 |
 
+U6 的低技术替代以“传统服务方式与智能化服务创新并行”为政策背景；这不证明海淀已有相应服务、需求数字或实施承诺，仍须逐场景核验人员、线下入口和维护责任。[source:DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45] [depth:blue_green_public_space]
+
 所有 SC 共用十二字段责任合同：概念状态、用户、载体、AI 作用、最小数据、拟议运营角色、人工复核、低技术替代、申诉、进入条件、评价方法、退出动作。没有责任人或高风险问题不能闭环即不进入或立即停止。[source:DATA-SRC-AGENT-TASKBOOK-20260518] [depth:municipal_new_infrastructure]
+
+某场景只有在确属向境内公众提供生成文本、图像、音频或视频的生成式 AI 服务时，才进入《生成式人工智能服务管理暂行办法》的相应适用判断；本方案的 Human Takeover、停止与退出是设计合同，不把第十四条扩写为一般退出权，也不虚构第十五条的法定数字响应期限。[source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES] [depth:municipal_new_infrastructure]
 
 三项产业测试验证编号继续锁定：TVS-1＝SC01 模型评测，TVS-2＝SC02 能效与热安全，TVS-3＝SC03 具身智能无障碍共测；3+9 的竞争性层级不删除这组三项专业验证义务。
 
@@ -162,7 +168,7 @@ F08 用同一 ID 索引 3 旗舰＋9 支持，不改变后台 SC01—SC12。[dat
 
 ## 用地、建筑规模与拆改留方案
 
-用地和建筑都是临时情景。公共首层、基底、通透、退让、屋顶与可逆构件可供深化；逐栋 KEEP/OPEN/INTENSIFY 必须等待权属、结构、消防、日照、管线与文保套核。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
+用地和建筑都是临时情景。公共首层、基底、通透、退让、屋顶与可逆构件可供深化；逐栋 KEEP/OPEN/INTENSIFY 必须等待权属、结构、消防、日照、管线与文保套核。[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [source:DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311] [depth:land_use_layout]
 
 当前建筑基底只能复算提交图层，不等于现状或获批建筑包络；任一前提失败即退回公共空间或运营试验。[data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm] [depth:height_massing_character]
 
@@ -171,6 +177,8 @@ F08 用同一 ID 索引 3 旗舰＋9 支持，不改变后台 SC01—SC12。[dat
 ## 交通、轨道、市政与公共服务设施
 
 交通优先步行、无障碍、骑行、公交接驳与必要机动车。站口先改善地面可读和人工服务；缺少红线、断面、客流、停车资料时不作容量、安全、桥隧或地下工程结论。[depth:traffic_rail_slow_parking] [data:geometry/roads.geojson#SPINE-001]
+
+《无障碍环境建设法》第三十九条所述现场指导、人工办理，限于医疗健康、社会保障、金融业务、生活缴费等服务事项的公共服务场所；本方案把人工帮助用于更广城市界面时只作为设计目标，不声称该条普遍适用，也不声称已完成场所合规或无障碍审计。[source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] [depth:traffic_rail_slow_parking]
 
 边缘节点可结合座椅、遮阴、照明和状态告知，但供电、散热、噪声、网络、消防、排涝和维护须由专业团队确认；高风险服务必须切换人工或静态模式。
 
@@ -270,7 +278,7 @@ F05 是证据权威与重算链；三份矩阵保存逐项后台证据。六个 
 
 ## 风险、版权与合规说明
 
-主要缺口是正式边界、控规权属、逐栋现状、交通市政消防、文保生态、企业人才与真实需求；主要风险是临时数据被当成 official、AI 越过人工、活动被写成承诺、双语弱化限制、资产许可链中断。正确动作是暂停声明、登记缺口、等待授权资料并同批重算。[depth:risk_missing_data] [standard:MOHURD-URBAN-DESIGN-MEASURES]
+主要缺口是正式边界、控规权属、逐栋现状、交通市政消防、文保生态、企业人才与真实需求；主要风险是临时数据被当成 official、AI 越过人工、活动被写成承诺、双语弱化限制、资产许可链中断。正确动作是暂停声明、登记缺口、等待授权资料并同批重算。[depth:risk_missing_data]
 
 路径级版权台账覆盖双语正文/HTML、F01—F11、A3/A0、字体、图标、数据和代码；任何新增或再生成资产都重开清权。医疗、法律、消防、交通、结构、能源和审批结论只能由相应责任人员或专业团队作出。自检通过只表示可进入进一步审核，不代表入选、批准、发布或实施。
 

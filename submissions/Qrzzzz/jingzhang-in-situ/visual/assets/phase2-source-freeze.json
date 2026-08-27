@@ -3,10 +3,12 @@
   "freeze_id": "JZIS-PHASE2-20260827",
   "storage_path": "visual/assets/phase2-source-freeze.json",
   "created_at": "2026-08-27",
-  "upstream_baseline": "349a767d157798a6f1ec6d0e12ed97cabdacdb05",
+  "upstream_baseline": "e89d6b70b0448111641088c89bf33bca2068f801",
   "phase1_original_frozen_head": "752fd8a879f36bfcacb5baacc57aaff4a96df573",
-  "phase1_replayed_head": "38ae160f66acdc05bf3d0d23f1f18167020f3ccf",
-  "rule_input_delta": "Phase 2 first rebased onto c5b97be20d; before final close upstream advanced 19 commits to 349a767d15. The 70 changed files were all under other submissions, with zero changes to rules, required inputs, source registry, validators, or this submission. Phase 1 and Phase 2 replayed cleanly.",
+  "phase1_replayed_head": "fb9dd1bd9c25ad661d7fed6cb68efa598b003106",
+  "phase2_original_audit_head": "fe6a48240ca69932f32cabe12e82fb4bacce1c74",
+  "phase2_replayed_head_before_repair": "8291131e49de8f0c470c2c81d3c4f76c86a42fbe",
+  "rule_input_delta": "Independent Phase 2 review saw upstream/main=9248c59f83. The final repair fetch advanced it by 50 commits and 172 files to e89d6b70b0; every changed file belonged to five other submissions. Rules, required inputs, source registry, validators, templates, submissions-data.js, and this submission had zero drift. The complete Phase 1 and Phase 2 history replayed cleanly before the audit repair.",
   "entries": [
     {
       "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",

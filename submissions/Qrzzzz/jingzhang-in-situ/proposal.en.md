@@ -85,9 +85,11 @@ F07 moves land, space, industry, capital, talent, compute, data, and scenarios t
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-Renewal uses three reversible verbs. **KEEP** retains buildings, mature trees, and services shown by survey to have public value. **OPEN** unlocks park edges, courtyards, and public ground floors only when rights, safety, and operations permit. **INTENSIFY** first raises use through shared time and reversible components; it does not presume more development.[standard:MOHURD-CONTROL-DETAILED-PLANNING] [depth:retain_renovate_demolish]
+Renewal uses three reversible verbs. **KEEP** retains buildings, mature trees, and services shown by survey to have public value. **OPEN** unlocks park edges, courtyards, and public ground floors only when rights, safety, and operations permit. **INTENSIFY** first raises use through shared time and reversible components; it does not presume more development.[standard:MOHURD-CONTROL-DETAILED-PLANNING] [source:DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING] [depth:retain_renovate_demolish]
 
 This differentiated mechanism binds the renewal-space network to the threefold-presence responsibility system: every spatial move must state its public entry, evidence status, accountable role, and restoration path. It does not merely rename conventional zoning with “AI.”
+
+Urban design provides the coordinating frame for planar and three-dimensional space, public space, transport and municipal systems, and city character. This phase translates that frame into auditable design recommendations only; it does not claim that project-specific controls have been approved.[standard:MOHURD-URBAN-DESIGN-MEASURES] [source:DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES]
 
 Provisional land use tests relationships among public access, innovation services, everyday care, and blue-green continuity. LU-001/LU-002 organize innovation and public interfaces; LU-003/LU-004 organize living and blue-green scenarios. Topological coverage does not prove statutory use.[data:geometry/land_use.geojson#LU-001] [data:geometry/land_use.geojson#LU-002]
 
@@ -131,7 +133,11 @@ Canonical ownership is frozen by enumerated ID: Zhongzhiyuan has SC01, SC02, SC0
 | U6 | Older and disabled visitors, companions | Accessibility, human help |
 | U7 | International developers and visitors | Bilingual status, permission limits |
 
+U6's low-tech fallback uses the policy principle of running traditional service channels in parallel with smart-service innovation as background. It does not prove a Haidian service, demand figure, or implementation commitment; staffing, offline entry, and maintenance responsibility still require scenario-by-scenario verification.[source:DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45] [depth:blue_green_public_space]
+
 Every SC retains the same twelve-field responsibility contract: conceptual status, users, carrier, AI role, minimum data, proposed operator, human review, low-tech fallback, appeal, entry, evaluation, and exit. No accountable role or unresolved high-risk issue means no entry or immediate stop.[source:DATA-SRC-AGENT-TASKBOOK-20260518] [depth:municipal_new_infrastructure]
+
+A scenario enters the corresponding scope analysis under the Interim Measures for Generative AI Services only when it actually provides generated text, images, audio, or video to the public within mainland China. Human Takeover, stop, and exit in this proposal remain design-contract safeguards: Article 14 is not expanded into a general opt-out right, and no statutory numeric response deadline is invented from Article 15.[source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES] [depth:municipal_new_infrastructure]
 
 The three industrial testing-and-validation IDs remain locked: TVS-1 = SC01 model evaluation, TVS-2 = SC02 energy and thermal safety, and TVS-3 = SC03 embodied-AI accessibility co-testing. The 3+9 hierarchy does not remove those three professional validation obligations.
 
@@ -162,7 +168,7 @@ F08 indexes the 3+9 portfolio without changing SC01–SC12.[data:geometry/public
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-Land use and buildings remain provisional scenarios. Public ground floors, footprints, permeability, setbacks, roofs, and reversible components may be developed only after rights, structure, fire, daylight, utilities, and heritage checks.[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [depth:land_use_layout]
+Land use and buildings remain provisional scenarios. Public ground floors, footprints, permeability, setbacks, roofs, and reversible components may be developed only after rights, structure, fire, daylight, utilities, and heritage checks.[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [source:DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311] [depth:land_use_layout]
 
 The current footprint only recalculates a submitted scenario; it is neither surveyed condition nor approved envelope. Failure of any premise returns the proposal to a public-space or operational test.[data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm] [depth:height_massing_character]
 
@@ -171,6 +177,8 @@ Development must first align source authority, survey date, current use, rights,
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
 Priority is walking, accessibility, cycling, public-transport connection, then necessary vehicles. Station work begins with ground-level legibility and human service. Without redlines, sections, flows, or parking data, no capacity, safety, bridge/tunnel, or underground conclusion follows.[depth:traffic_rail_slow_parking] [data:geometry/roads.geojson#SPINE-001]
+
+Article 39 of the Barrier-Free Environment Construction Law retains on-site guidance and human-operated service only for public-service venues handling matters such as medical care, social security, finance, and living-payment services. Where this proposal carries human help into broader urban interfaces, it is a design target—not a claim that Article 39 applies universally or that venue compliance or an accessibility audit has been completed.[source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] [depth:traffic_rail_slow_parking]
 
 Small edge nodes may combine seating, shade, light, and status information, but qualified teams must confirm power, heat, noise, cybersecurity, fire, drainage, and maintenance. Every high-risk service must switch to a human or static mode.
 
@@ -270,7 +278,7 @@ Exact section, figure/table, data, source, and limitation anchors live in `revie
 
 ## Risk, Copyright, and Compliance
 
-Key gaps are official boundaries, controls/rights, building conditions, transport/municipal/fire, heritage/ecology, enterprise/talent data, and real demand. Key risks are treating provisional data as official, AI bypassing humans, activities becoming promises, bilingual text weakening limits, and rights chains breaking. The response is to pause the claim, register the gap, await authorized input, and recalculate together.[depth:risk_missing_data] [standard:MOHURD-URBAN-DESIGN-MEASURES]
+Key gaps are official boundaries, controls/rights, building conditions, transport/municipal/fire, heritage/ecology, enterprise/talent data, and real demand. Key risks are treating provisional data as official, AI bypassing humans, activities becoming promises, bilingual text weakening limits, and rights chains breaking. The response is to pause the claim, register the gap, await authorized input, and recalculate together.[depth:risk_missing_data]
 
 The path-level rights ledger covers bilingual text/HTML, F01–F11, A3/A0, fonts, icons, data, and code. Any new or regenerated asset reopens clearance. Medical, legal, fire, transport, structural, energy, and approval conclusions belong to accountable people or qualified teams. A passing self-check means only that the package may enter further review, not selection, approval, publication, or implementation.
 
