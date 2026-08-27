@@ -45,3 +45,8 @@
 
 - 中英文 visual 的 implementation 段新增 `Micro / Base / Extended / No-build` 四情景静态资源包络图与等义摘要；Base 面积、容量、FTE、CAPEX ROM、年度 OPEX ROM 全部与 `visual/assets/dazhongsi-operating-envelope.json` 一致。
 - 所有数字继续标注为参与者低置信假设，不是北京报价、预算、审批、采购或承诺；No-build 保留公共净线、导视、座椅/遮荫、人工窗口与人工服务后备。未新增 JS 交互类型，未重做 A3、视频或生成式 report HTML。
+
+### 冷读门 · A0 主级短语修复
+
+- A0-01 中英文主级短语明确为 `TWO REMOVABLE LONGITUDINAL INTERFACES` / “两条可撤南北接口”，同步页眉和结构索引短标签，不改变英雄区、照片尺寸或核心几何。
+- A0-03 将 `HUMAN TAKEOVER + SAFE RETURN` / “人工接管 + 安全回归”提升至与四态、90天同级的主标题；其余版式、状态图、资源模型和停止指标不变。
