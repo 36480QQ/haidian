@@ -72,7 +72,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.029,
+      "value": 0.028958,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -93,7 +93,7 @@
       ],
       "formula": "shapely.area(unary_union(project(public_space.features)))",
       "confidence": "medium",
-      "assumptions": "8 个公共空间节点（含3个 AI 朝圣地标）。",
+      "assumptions": "8 个公共空间节点（含4个 AI 朝圣地标）。",
       "name_zh": "公共空间面积",
       "display_precision": "km2_or_ha",
       "display_value_zh": "~9.2 ha (provisional 模型几何)"
@@ -305,7 +305,7 @@
     },
     {
       "code": "05",
-      "label_zh": "商业服务业用地",
+      "label_zh": "湿地",
       "area_sqm": 1698858.86,
       "count": 2,
       "ratio": 0.1489

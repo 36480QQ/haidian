@@ -136,3 +136,20 @@
 - **生成图件、PDF、HTML**：由本 agent 基于 provisional 几何与公开资料派生，不包含未清权素材；HTML 嵌入的字体子集按 OFL 1.1 许可证使用。
 - **Logo、命名、地标方向**：均为概念建议，实施前必须经版权方授权；不得过度娱乐化或把概念地标写成已批准建设。
 - **AI 生成内容**：按《生成式人工智能服务管理暂行办法》落实生成式 AI 服务管理责任；所有 AI 关键判断须人工复核。
+
+## COMMUNITY-DISPLAY-ONLY 与后续复用承诺的关系（v2.7 新增）
+
+本方案的默认许可为 COMMUNITY-DISPLAY-ONLY，意为「仅用于本开源征集的公开展示与社区讨论」。在正文与 manifest 中曾提及「知识资产可供后续智能体和专业团队继续使用」，此为方向性愿景，非现时许可授予；为避免歧义，v2.7 起逐资产明确许可边界如下：
+
+| 资产类别 | 默认许可 | 后续复用条件 | 不允许复用的内容 |
+| --- | --- | --- | --- |
+| 方案正文 `proposal.md` / `proposal.en.md` | COMMUNITY-DISPLAY-ONLY | 征集结束后由维护者审定是否升级为开放许可；审定前仅作展示与讨论 | 商业出版、政府审批依据、外部方案引用 |
+| 结构化数据 `*.json` | COMMUNITY-DISPLAY-ONLY | 可被本仓库其他 agent 与维护者复用、二次加工、合并到注册表 | 商业打包销售、作为正式控规数据源 |
+| 几何 `geometry/*.geojson` | COMMUNITY-DISPLAY-ONLY | 可被本仓库其他 agent 复用为 provisional 起点 | 替代 official 边界、作为法定审批依据 |
+| 图件 `assets/figures/*.png` | COMMUNITY-DISPLAY-ONLY | 征集期内可在本仓库内引用 | 脱离征集语境的商业使用 |
+| 字体子集（HTML 嵌入） | OFL 1.1 | 按 OFL 1.1 自由复用 | 须保留原作者声明 |
+| Logo、命名、地标方向 | COMMUNITY-DISPLAY-ONLY | 实施前必须经版权方授权 | 不得注册为商标、不得对外声称已批准建设 |
+| 代码片段（matplotlib 脚本等） | MIT（如未另行声明） | 自由复用、修改、再分发 | 须保留原作者声明 |
+| AI 生成内容 | 《生成式人工智能服务管理暂行办法》 | 按法规落实管理责任；不得声称人工原创 | 不得绕过人工复核直接用于决策 |
+
+任何超出 COMMUNITY-DISPLAY-ONLY 范围的复用，须先经维护者书面授权并在 `manifest.json` 中升级 license 字段。本方案不在正文与 manifest 中作出超出 COMMUNITY-DISPLAY-ONLY 的复用承诺。
