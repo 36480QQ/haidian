@@ -1,5 +1,30 @@
 # 方案迭代记录
 
+## v2.1 - 2026-08-27
+
+### 改动摘要
+
+- **自指证明（二）：本包即 AI 参与城市设计工作流的可查证运行**（双语 proposal + report 双 HTML 新增段落，紧接 v1.9 自指证明之后）：把 v2.0 候选补充 D「AI 辅助设计工作流披露」落地——披露管线六环节（任务书/公告 → 开源脚手架 → 几何生成 Python/shapely/pyproj → 图件渲染 Pillow → 四门自检 → 人工复核），明确责任分工（AI 负责结构化与可复算，人类协作者余枫负责事实、引用、版权与最终表达），并声明「披露管线不等于主张 AI 设计已达专业深度」。机器可读版 `visual/assets/ai-workflow-pipeline.json`（六阶段 stage/tool/input/output/human_gate/evidence，全部事实可由 agent.json/self_check.json/manifest.json 交叉验证）。
+- **气候韧性与碳科目框架**（双语 proposal + report 双 HTML 新增小节，置于「蓝绿空间、公共空间与城市风貌」节内城市风貌段之后）：把 v2.0 候选补充 E 落地——不新增空间结构，在既有「N」字形蓝绿骨架（开源主线廊道 + 清河、小月河滨水绿带）上叠加海绵—热岛—碳三类气候功能注记；三科目（海绵/雨洪、热岛/微气候、碳/能源）逐格登记议题、既有空间落位（引用）、机制、责任角色与待基线监测口径；与「市政与新型基础设施」节互为一体。机器可读版 `visual/assets/climate-carbon-framework.json`。
+- **评审问询速览表微调**：「AI 与规划创新」行追加 `ai-workflow-pipeline.json`；「公共利益与包容性」行追加气候碳科目与 `climate-carbon-framework.json`。仅改证据状态与回答措辞，不改动任何既有主张、几何与指标。
+- **管线同步**：report 双 HTML 以补丁插入（tools/apply_v21.py，插入位置与 proposal.md/.en.md 一一对应）；visual 双页新增 ai-workflow 与 climate-carbon 两个简介区段、iteration badge v2.0→v2.1；Noto Sans SC 子集重建（1235 字符，fontTools cmap 覆盖率 100%，程序化验证）并重新注入四份 HTML；A3/A0 PDF 封面版本号 v2.1（本轮不新增板面，惯例同 v2.0）；渲染证据截图更新。
+- **版本一致性**：proposal front matter、visual 双页 badge、A3 封面版本号统一 v2.1。
+
+### 采纳反馈
+
+- 落实 v2.0 changelog 中「留待后续迭代」的两项候选补充：D（AI 辅助设计工作流披露，对标「AI 与规划创新」维度，把提交物本身变成该维度的活证据——元创新）与 E（气候韧性与碳维度，对标「创新 / 公共利益与包容性」维度，补当前完全缺席的气候叙事，低垂果实）。两项延续「不造数值、不新增外部来源」纪律，由包内既有证据资产重组生成。
+
+### 暂未采纳或待复核事项
+
+- 本轮不新增外部来源、不新增数值承诺：气候三科目监测口径全部保持待基线（pending_baseline），AI 工作流披露不虚构工具版本号或未公开 prompt 内容；sources.json 不变。
+- 候选补充中「公开仪表盘原型」（F，工作量最大）经取舍留待后续迭代。
+- 官方精确几何、控规图则指标等条件触发项继续在 assumptions 登记（A-BOUNDARY-002 等），非本轮可关闭。
+
+### 公开资料与合规说明
+
+- 本轮无新增外部资料；两个新 JSON 资产与全部新增文本均由包内既有机制与证据资产重组生成，不引入任何对标提交的内容。
+
+
 ## v2.0 - 2026-08-27
 
 ### 改动摘要
