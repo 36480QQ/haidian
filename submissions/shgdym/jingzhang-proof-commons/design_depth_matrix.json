@@ -411,7 +411,7 @@
       "status": "complete",
       "proposal_sections": [
         "重点区域详细设计",
-        "AI为何让三处空间长得不一样",
+        "三种共同开发关系如何改变空间",
         "三站城市空间：做东西、开放东西、真正使用东西"
       ],
       "drawing_refs": [
@@ -442,7 +442,8 @@
         "pilgrimage_landmark_count",
         "lived_journey_step_count",
         "handover_ticket_type_count",
-        "minimum_pilot_duration_days",
+        "controlled_operating_shift_days",
+        "pre_pilot_readiness_review_window_days",
         "reversible_pilot_kit_type_count",
         "minimum_pilot_shift_role_count",
         "x_spatial_conflict_count",
@@ -520,6 +521,7 @@
       "drawing_refs": [
         "assets/figures/implementation-roadmap.png",
         "assets/figures/delivery-dashboard.png",
+        "visual/assets/formal-review-readiness-closure.json",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
@@ -543,7 +545,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "近期低扰动原型、中期受控验证和远期评估转化均设进入门、年度复盘和失败复原。"
+      "evidence_summary_zh": "近期低扰动原型、中期受控验证和远期评估转化均设进入门、年度复盘和失败复原；七项PRE-PILOT条件是未来现场启动闸门，不是当前概念包待修项。"
     },
     {
       "item_id": "metrics_recalculation",
@@ -556,6 +558,7 @@
       ],
       "drawing_refs": [
         "assets/figures/metrics-evidence.png",
+        "visual/assets/formal-review-readiness-closure.json",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
@@ -585,7 +588,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "每个数值保存状态、来源、公式与重算触发器；正式多边形到位后重建GeoJSON、指标、图件、网页和图册。"
+      "evidence_summary_zh": "每个数值保存状态、来源、公式与重算触发器；official polygon是尚未发布的组织方外部输入，发布后才触发参与者重建GeoJSON、指标、图件、网页、图册与差异报告，当前不存在可替代该输入的参与者动作。"
     },
     {
       "item_id": "risk_missing_data",
@@ -602,6 +605,7 @@
         "assets/figures/delivery-dashboard.png",
         "visual/assets/run-x-census.js",
         "visual/assets/x-census.json",
+        "visual/assets/formal-review-readiness-closure.json",
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
@@ -633,7 +637,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "风险、未知数据、版权来源、人工接管和停止复原分别持久化；组织方缺口与参与者责任明确分开。"
+      "evidence_summary_zh": "风险、未知数据、版权来源、人工接管和停止复原分别持久化；当前双语与资产状态CLOSED，组织方边界输入EXTERNAL，现场授权FUTURE-TRIGGERED，仓库合成证据不作现场结论。"
     }
   ]
 }

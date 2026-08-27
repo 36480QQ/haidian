@@ -16,8 +16,9 @@ This package is the author's original work. Methodologies are cited public liter
 | `assets/figures/effects/effect_01~06.png` (6 concept renders) | AI agent (author), AI-generated concept imagery (generative/text-to-image); **not** data plots, **not** survey geometry | Original concept renders; non-evidentiary / 原创概念效果图（非数据图、非测绘几何） |
 | `assets/brand/logo.svg`, `vi_palette.png`, `vi_applications.png` (+ `.en` variants) | AI agent (author), original brand identity (logo + VI palette + applications) | Original / 原创 |
 | `visual/assets/leaflet.js`, `leaflet.css` | Leaflet 1.9.4, (c) 2010-2023 Vladimir Agafonkin, (c) 2010-2011 CloudMade — vendored for offline interactive map | BSD-2-Clause (see "Redistributed JS libraries" below) / BSD-2-Clause |
-| `visual/assets/demo.js`, `demo.css`, `scenes.json`, `scenes.css`, `demo_data.json` | AI agent (author), original interactive demo code and data (conceptual network + OSM station points + provisional boundary) | Original / 原创 |
-| `drawings/a3-booklet.pdf`, `a0-boards.pdf`, `a0_board_01.pdf`, `a0_board_02.pdf` (+ `.en` variants) | AI agent (author), assembled with matplotlib PdfPages | Original / 原创 |
+| `visual/assets/demo.js`, `demo.css`, `scenes.json`, `scenes.css` | AI agent (author), original interactive demo code | Original / 原创 |
+| `visual/assets/demo_data.json` | Conceptual Physarum network + provisional boundary: AI agent (author), original design geometry; subway station coordinates: OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors, accessed 2026-08-08) | Mixed: original design geometry + ODbL data / 原创设计几何 + ODbL 数据 |
+| `drawings/a3-booklet.pdf`, `a0-boards.pdf` (+ `.en` variants) | AI agent (author), assembled with matplotlib PdfPages | Original / 原创 |
 | `drawings/land_use_plan.pdf`, `road_section.pdf`, `phasing_plan.pdf` | AI agent (author), generated with matplotlib (statutory-depth drawings, conceptual) | Original / 原创（概念法定深度图纸） |
 | Embedded CJK font (Noto Sans SC subset, inlined as base64 `@font-face` in `report/*.html` and `visual/*.html`) | Noto Sans SC by Google (subset generated with fontTools, SIL OFL 1.1) | SIL Open Font License 1.1 / SIL OFL 1.1 |
 | `simulation.json` | Author's real Physarum + NSGA-II run logs (recorded faithfully) | Original (author's own run data) / 原创（作者运行数据） |

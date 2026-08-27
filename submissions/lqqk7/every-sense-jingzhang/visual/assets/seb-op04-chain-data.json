@@ -48,7 +48,10 @@
      "OP-09"
     ]
    }
-  }
+  },
+  "expected_selection_check_count": 3,
+  "expected_selection_check_count_note_zh": "本节选点依据条目总数在此声明；复演器读入后与实到条目逐一比对，不等或未声明即报不符。此前只有非空与唯一两条下界断言，悄悄删掉一条依据只要剩下的还非空、还唯一就仍会收敛于「全部一致」。",
+  "expected_selection_check_count_note_en": "The item total of this section's selection checks is declared here; the replayer compares it item by item against what actually arrived, reporting a mismatch on any disagreement or absent declaration. Previously only two floor assertions existed — non-empty and unique — so quietly deleting one check still converged on \"everything agrees\" as long as what remained was still non-empty and unique."
  },
  "stage_1_open_data_baseline": {
   "stage_zh": "环节一：开放数据基线",
@@ -443,7 +446,10 @@
      "expected_reason_code": "NODE_CONSTRAINT_VIOLATION:ai_off_path",
      "why_zh": "这是断点处最常见的省事做法，字段填得满、语法合法、人工快速审阅极易放过；但 AI 关闭之后使用者仍被要求上线，绕行信息与断点本身都留在同一个系统里，等价性不成立。"
     }
-   ]
+   ],
+   "expected_claim_count": 4,
+   "expected_claim_count_note_zh": "本节机器复核声明条目总数在此声明；复演器读入后与实到条目逐一比对，不等或未声明即报不符。此前只有非空、唯一与至少一条反例三条下界断言，悄悄删掉一条正例只要剩下的还非空、还唯一、还带反例就仍会收敛于「全部一致」。",
+   "expected_claim_count_note_en": "The item total of this section's machine-review claims is declared here; the replayer compares it item by item against what actually arrived, reporting a mismatch on any disagreement or absent declaration. Previously only three floor assertions existed — non-empty, unique and at least one counterexample — so quietly deleting one positive claim still converged on \"everything agrees\" as long as what remained was still non-empty, unique and carried a counterexample."
   },
   "human_review": {
    "nature_zh": "以下是方案方的桌面推演结论，不是任何真实参与者、专业机构或使用者代表的意见。本档案不含任何一次真实复核，也不代表任何主体已经审议过本链路。",

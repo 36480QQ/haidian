@@ -426,6 +426,20 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
                 result["next_command_note"],
             )
 
+    def test_finalize_and_mark_self_checked_write_lf_only_manifest(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "lf-line-endings"
+            self.assertEqual(run_scaffold(submission_dir, cwd=root).returncode, 0)
+            self.assertEqual(complete_scaffold(submission_dir).returncode, 0)
+            manifest_bytes = (submission_dir / "manifest.json").read_bytes()
+            self.assertNotIn(b"\r", manifest_bytes, "finalize_submission must not emit CR bytes")
+            self.assertEqual(mark_self_checked(submission_dir).returncode, 0)
+            manifest_bytes = (submission_dir / "manifest.json").read_bytes()
+            self.assertNotIn(b"\r", manifest_bytes, "mark_self_checked must not emit CR bytes")
+            self.assertTrue(manifest_bytes.endswith(b"\n"))
+
     def test_ready_package_manifest_refresh_restores_missing_hashes(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

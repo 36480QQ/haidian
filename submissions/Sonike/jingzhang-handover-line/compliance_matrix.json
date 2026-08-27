@@ -9,14 +9,14 @@
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
         "统筹研究范围产业与未来城市研究",
-        "国际传播：把“全球关注”建立在可复核的记录上",
-        "荣誉展示体系：可纠错的记录，不是排行榜"
+        "更新项目清单、实施政策与分期计划",
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "report_sections_en": [
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
         "Coordinated Research Area: Industry and Future City Research",
-        "International communication: build \"global attention\" on a checkable record",
-        "Honour display system: a correctable record, not a leaderboard"
+        "Renewal Projects, Implementation Policy, and Phasing",
+        "Blue-Green Network, Public Space, and Urban Character"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -70,7 +70,9 @@
         "GENERATIVE-AI-INTERIM-MEASURES",
         "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
         "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "WCAG-CONTRAST"
+        "WCAG-CONTRAST",
+        "MOHURD-ARCH-DESIGN-DEPTH-2016",
+        "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
         "A-BASELINE-001",
@@ -116,17 +118,13 @@
         "总体设计范围城市更新与控规深度城市设计",
         "风险、版权与合规说明",
         "用地、建筑规模与拆改留方案",
-        "合规基线：先分清法定下限，再说本方案自设的标准",
-        "本方案提出的九件新东西，逐条对照常规做法",
-        "综合规划内涵、空间产业融合与国土空间规划创新"
+        "统筹研究范围产业与未来城市研究"
       ],
       "report_sections_en": [
         "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
         "Risk, Copyright, and Compliance",
         "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself",
-        "Nine New Things This Proposal Puts Forward, Each Against Conventional Practice",
-        "Integrated planning, space-industry fusion, and territorial-planning innovation"
+        "Coordinated Research Area: Industry and Future City Research"
       ],
       "geojson_layers": [
         "geometry/land_use.geojson",
@@ -215,14 +213,12 @@
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
         "风险、版权与合规说明",
-        "蓝绿空间、公共空间与城市风貌",
-        "合规基线：先分清法定下限，再说本方案自设的标准"
+        "蓝绿空间、公共空间与城市风貌"
       ],
       "report_sections_en": [
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
         "Risk, Copyright, and Compliance",
-        "Blue-Green Network, Public Space, and Urban Character",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself"
+        "Blue-Green Network, Public Space, and Urban Character"
       ],
       "geojson_layers": [
         "geometry/green_space.geojson",
@@ -352,7 +348,8 @@
       ],
       "standard_ids": [
         "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "GENERATIVE-AI-INTERIM-MEASURES"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001"
@@ -561,7 +558,8 @@
       ],
       "standard_ids": [
         "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "GENERATIVE-AI-INTERIM-MEASURES"
       ],
       "assumption_ids": [
         "A-CASES-001",
@@ -595,19 +593,13 @@
         "AI 创新生态、人才画像与 AI+ 场景",
         "总体设计范围城市更新与控规深度城市设计",
         "风险、版权与合规说明",
-        "统筹研究范围产业与未来城市研究",
-        "合规基线：先分清法定下限，再说本方案自设的标准",
-        "本方案提出的九件新东西，逐条对照常规做法",
-        "综合规划内涵、空间产业融合与国土空间规划创新"
+        "统筹研究范围产业与未来城市研究"
       ],
       "report_sections_en": [
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
         "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
         "Risk, Copyright, and Compliance",
-        "Coordinated Research Area: Industry and Future City Research",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself",
-        "Nine New Things This Proposal Puts Forward, Each Against Conventional Practice",
-        "Integrated planning, space-industry fusion, and territorial-planning innovation"
+        "Coordinated Research Area: Industry and Future City Research"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson",
@@ -772,14 +764,12 @@
       "report_sections": [
         "更新项目清单、实施政策与分期计划",
         "用地、建筑规模与拆改留方案",
-        "综合规划内涵、空间产业融合与国土空间规划创新",
-        "可实施性四件事：阶段路径、试点区域、参与主体与指标，逐项对齐"
+        "统筹研究范围产业与未来城市研究"
       ],
       "report_sections_en": [
         "Renewal Projects, Implementation Policy, and Phasing",
         "Land Use, Building Scale, and Retain-Renovate-Demolish Strategy",
-        "Integrated planning, space-industry fusion, and territorial-planning innovation",
-        "The four things implementability is judged on: phase path, pilot area, participants, and metrics"
+        "Coordinated Research Area: Industry and Future City Research"
       ],
       "geojson_layers": [
         "geometry/buildings.geojson",
@@ -818,7 +808,8 @@
         "MOHURD-ARCH-DESIGN-DEPTH-2016",
         "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
         "PROJECT-OFFICIAL-ANNOUNCEMENT",
-        "WCAG-CONTRAST"
+        "WCAG-CONTRAST",
+        "GENERATIVE-AI-INTERIM-MEASURES"
       ],
       "assumption_ids": [
         "A-BUILDING-001",
@@ -853,13 +844,11 @@
       "mandatory": true,
       "report_sections": [
         "交通、轨道、市政与公共服务设施",
-        "风险、版权与合规说明",
-        "合规基线：先分清法定下限，再说本方案自设的标准"
+        "风险、版权与合规说明"
       ],
       "report_sections_en": [
         "Transport, Rail, Municipal Infrastructure, and Public Services",
-        "Risk, Copyright, and Compliance",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself"
+        "Risk, Copyright, and Compliance"
       ],
       "geojson_layers": [
         "geometry/roads.geojson",
@@ -1057,11 +1046,11 @@
       "mandatory": true,
       "report_sections": [
         "重点区域详细设计",
-        "可实施性四件事：阶段路径、试点区域、参与主体与指标，逐项对齐"
+        "更新项目清单、实施政策与分期计划"
       ],
       "report_sections_en": [
         "Detailed Design of Key Areas",
-        "The four things implementability is judged on: phase path, pilot area, participants, and metrics"
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1103,7 +1092,9 @@
       ],
       "standard_ids": [
         "MOHURD-URBAN-DESIGN-MEASURES",
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "WCAG-CONTRAST"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -1137,10 +1128,10 @@
       "title_en": "Zhongzhi Park AI autonomous-innovation acceleration zone",
       "mandatory": true,
       "report_sections": [
-        "众智园：研制交接场 / BUILD→VERIFY"
+        "重点区域详细设计"
       ],
       "report_sections_en": [
-        "Zhongzhiyuan: Build Handover Yard / BUILD→VERIFY"
+        "Detailed Design of Key Areas"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1169,7 +1160,8 @@
         "OFFICIAL-ANNOUNCEMENT"
       ],
       "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
         "A-OPERATIONS-001",
@@ -1198,10 +1190,10 @@
       "title_en": "Beijing AI Origin Community",
       "mandatory": true,
       "report_sections": [
-        "北京 AI 原点社区：开源交接场 / VERIFY→SHARE"
+        "重点区域详细设计"
       ],
       "report_sections_en": [
-        "Beijing AI Origin Community: Share Handover Yard / VERIFY→SHARE"
+        "Detailed Design of Key Areas"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1230,7 +1222,8 @@
         "OFFICIAL-ANNOUNCEMENT"
       ],
       "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
         "A-OPERATIONS-001",
@@ -1254,10 +1247,10 @@
       "title_en": "Dazhongsi AI industry cluster",
       "mandatory": true,
       "report_sections": [
-        "大钟寺：城市交接场 / SHARE→SERVE"
+        "重点区域详细设计"
       ],
       "report_sections_en": [
-        "Dazhongsi: Serve Handover Yard / SHARE→SERVE"
+        "Detailed Design of Key Areas"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1287,7 +1280,8 @@
         "OFFICIAL-ANNOUNCEMENT"
       ],
       "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
         "A-TRANSPORT-001",
@@ -1315,24 +1309,20 @@
       "title_en": "Overall concept and functional coordination scheme for the belt",
       "mandatory": true,
       "report_sections": [
-        "让好 AI 更快进城，让每次交接都有回路",
+        "设计依据与资料清单",
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "导视、标识与符号系统",
-        "本方案的许可：不解释组织方留空的标识，直接授权",
-        "本方案提出的九件新东西，逐条对照常规做法",
-        "综合规划内涵、空间产业融合与国土空间规划创新"
+        "蓝绿空间、公共空间与城市风貌",
+        "风险、版权与合规说明"
       ],
       "report_sections_en": [
-        "Move Good AI into the City Faster, Give Every Handover a Return Path",
+        "Design Basis and Source List",
         "Three-Level Scope Framework",
         "Coordinated Research Area: Industry and Future City Research",
         "Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design",
-        "Wayfinding, signage, and the symbol set",
-        "This proposal's licence: not interpreting a blank identifier, but granting rights",
-        "Nine New Things This Proposal Puts Forward, Each Against Conventional Practice",
-        "Integrated planning, space-industry fusion, and territorial-planning innovation"
+        "Blue-Green Network, Public Space, and Urban Character",
+        "Risk, Copyright, and Compliance"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1374,7 +1364,10 @@
         "MOHURD-CONTROL-DETAILED-PLANNING",
         "MOHURD-URBAN-DESIGN-MEASURES",
         "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "BARRIER-FREE-ENVIRONMENT-LAW",
+        "ELDERLY-SMART-TECH-PLAN-2020-45",
+        "MOHURD-ARCH-DESIGN-DEPTH-2016"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -1407,18 +1400,14 @@
       "title_en": "Full-stack AI autonomous innovation system and world-class AI innovation ecosystem design",
       "mandatory": true,
       "report_sections": [
-        "六个全球案例，只借机制，不复制形态",
+        "统筹研究范围产业与未来城市研究",
         "AI 创新生态、人才画像与 AI+ 场景",
-        "众智园：研制交接场 / BUILD→VERIFY",
-        "北京 AI 原点社区：开源交接场 / VERIFY→SHARE",
-        "统筹研究范围产业与未来城市研究"
+        "重点区域详细设计"
       ],
       "report_sections_en": [
-        "Six international cases: transfer mechanisms, not forms",
+        "Coordinated Research Area: Industry and Future City Research",
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-        "Zhongzhiyuan: Build Handover Yard / BUILD→VERIFY",
-        "Beijing AI Origin Community: Share Handover Yard / VERIFY→SHARE",
-        "Coordinated Research Area: Industry and Future City Research"
+        "Detailed Design of Key Areas"
       ],
       "geojson_layers": [
         "geometry/key_areas.geojson",
@@ -1464,7 +1453,9 @@
         "ELDERLY-SMART-TECH-PLAN-2020-45",
         "GENERATIVE-AI-INTERIM-MEASURES",
         "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
-        "WCAG-CONTRAST"
+        "WCAG-CONTRAST",
+        "MOHURD-URBAN-DESIGN-MEASURES",
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
       ],
       "assumption_ids": [
         "A-CASES-001",
@@ -1503,19 +1494,13 @@
       "mandatory": true,
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
-        "首个现场原型：公开交接桌",
-        "已完成：十二场景离线接管桌面演练",
-        "开发者社区运营机制与 AI 场景开放运营机制",
-        "风险、版权与合规说明",
-        "合规基线：先分清法定下限，再说本方案自设的标准"
+        "更新项目清单、实施政策与分期计划",
+        "风险、版权与合规说明"
       ],
       "report_sections_en": [
         "AI Innovation Ecosystem, Personas, and AI+ Scenarios",
-        "First field prototype: Public Handover Table",
-        "Completed: twelve-scenario offline takeover tabletop",
-        "Developer community operation and AI scenario-opening operation",
-        "Risk, Copyright, and Compliance",
-        "Compliance baseline: separate the statutory floor from what this proposal sets for itself"
+        "Renewal Projects, Implementation Policy, and Phasing",
+        "Risk, Copyright, and Compliance"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson"
@@ -1529,7 +1514,16 @@
         "industry_validation_scenario_count",
         "machine_readable_shift_protocol_count",
         "schema_valid_synthetic_shift_count",
-        "shift_protocol_validation_error_count"
+        "shift_protocol_validation_error_count",
+        "no_ai_equivalent_service_target_ratio",
+        "accessibility_requirement_fixture_task_count",
+        "accessibility_requirement_fixture_coverage_ratio",
+        "real_user_accessibility_observation_count",
+        "offline_service_prototype_route_count",
+        "p0_preregistered_acceptance_criterion_count",
+        "public_benefit_group_count",
+        "scenario_public_benefit_gate_count",
+        "planned_equity_cotest_session_min_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf#p08",
@@ -1564,6 +1558,7 @@
       "self_check_ids": [
         "AI_HUMAN_HANDOVER",
         "DUAL_CONTROL_SHIFT_LEDGER",
+        "P0_IMPLEMENTATION_AND_PUBLIC_VALUE",
         "REGULATORY_BASELINE",
         "ROLE_SPEC_TRANSFERABLE"
       ],
@@ -1589,7 +1584,7 @@
         "G09_GEOMETRY_NON_REGRESSION",
         "G10_EVIDENCE_MARKER_DENSITY"
       ],
-      "evidence_summary_zh": "十二张场景卡超过10张下限，四个产业测试验证场景超过3个下限，八类用户画像表超过5类下限。双联交接账以Schema与十二条合成实例把交出、独立复现、接收/拒收、无AI底线与回滚收进同一个机器对象，并对七条协议规则逐条做缺陷注入：12 条基线加 84 条注入共 96 条检查，注入全部被拦截，schema 错误 0。结构校验通过不代表性能或现场安全通过；测试场景一律按沙盒处理，不表述为已批准运营。"
+      "evidence_summary_zh": "十二张场景卡超过10张下限，四个产业测试验证场景超过3个下限，八类用户画像表超过5类下限。双联交接账以Schema与十二条合成实例把交出、独立复现、接收/拒收、无AI底线与回滚收进同一个机器对象，并对七条协议规则逐条做缺陷注入：12 条基线加 84 条注入共 96 条检查，注入全部被拦截，schema 错误 0。公共服务等价合同把 12/12 无 AI 基础路线、24 条人工渠道和八类无障碍需求夹具结构化；SCN-05 另有可操作离线原型，可切断智能层、拒绝数据、比较两条同结果路线、生成停用回执并打印。十二场景还逐一挂接公共收益、伤害、保障、关闭和非技术遗产。夹具 8/8、计划共测至少24场与真实观察/通过 0/0 分栏记录；结构校验通过不代表性能、现场安全或真实可用性通过。"
     },
     {
       "requirement_id": "agent.4",
@@ -1598,17 +1593,13 @@
       "mandatory": true,
       "report_sections": [
         "蓝绿空间、公共空间与城市风貌",
-        "荣誉展示体系：可纠错的记录，不是排行榜",
-        "公共空间组件库：先能撤，再谈建",
-        "大钟寺：城市交接场 / SHARE→SERVE",
-        "一条铁路留下的三件遗产：线形、道口与交接班"
+        "重点区域详细设计",
+        "设计依据与资料清单"
       ],
       "report_sections_en": [
         "Blue-Green Network, Public Space, and Urban Character",
-        "Honour display system: a correctable record, not a leaderboard",
-        "Public-space component library: removable first, built second",
-        "Dazhongsi: Serve Handover Yard / SHARE→SERVE",
-        "Three Legacies of One Railway: Alignment, Level Crossing, and Shift Handover"
+        "Detailed Design of Key Areas",
+        "Design Basis and Source List"
       ],
       "geojson_layers": [
         "geometry/green_space.geojson",
@@ -1620,13 +1611,28 @@
         "LANDMARK-02",
         "LANDMARK-03",
         "LANDMARK-04",
-        "PUBLIC-01"
+        "PUBLIC-01",
+        "SCN-05",
+        "SCN-06",
+        "SCN-09",
+        "SCN-10",
+        "SCN-12"
       ],
       "metrics": [
         "civic_landmark_count",
         "green_space_area_sqm",
         "public_space_area_sqm",
-        "public_space_ratio"
+        "public_space_ratio",
+        "no_ai_equivalent_scenario_count",
+        "no_ai_equivalent_service_target_ratio",
+        "algorithm_refusal_no_penalty_scenario_count",
+        "accessibility_requirement_fixture_task_count",
+        "accessibility_requirement_fixture_coverage_ratio",
+        "real_user_accessibility_observation_count",
+        "real_user_accessibility_pass_count",
+        "public_benefit_group_count",
+        "scenario_public_benefit_gate_count",
+        "planned_equity_cotest_session_min_count"
       ],
       "drawings": [
         "drawings/a0-boards.pdf#p02",
@@ -1650,7 +1656,8 @@
         "GENERATIVE-AI-INTERIM-MEASURES",
         "MOHURD-ARCH-DESIGN-DEPTH-2016",
         "MOHURD-URBAN-DESIGN-MEASURES",
-        "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
       ],
       "assumption_ids": [
         "A-HERITAGE-001",
@@ -1658,10 +1665,15 @@
       ],
       "self_check_ids": [
         "AI_HUMAN_HANDOVER",
+        "P0_IMPLEMENTATION_AND_PUBLIC_VALUE",
         "REGULATORY_BASELINE",
         "ROLE_SPEC_TRANSFERABLE"
       ],
       "scenario_ids": [
+        "SCN-05",
+        "SCN-06",
+        "SCN-09",
+        "SCN-10",
         "SCN-12"
       ],
       "gate_ids": [
@@ -1672,7 +1684,7 @@
         "G09_GEOMETRY_NON_REGRESSION",
         "G10_EVIDENCE_MARKER_DENSITY"
       ],
-      "evidence_summary_zh": "京张遗址公园既有南北贯通与东西连通被升级为公共交接机制（不另起绿廊）；四处朝圣地标（交接钟 LANDMARK-01、公开交接桌 -02、百年值班簿 -03、零号接管亭 -04）在 public_space.geojson 定位并各带启用闸与回滚状态；荣誉记录按提名—证据—双复核—公示异议—纠错—撤回—申诉七步闭环运行，允许匿名且不按流量排名；公共空间组件库以 8 类可撤构件 × 参考做法／维护责任／撤除恢复标准成表，并声明为参考规格而非施工图。"
+      "evidence_summary_zh": "京张遗址公园既有南北贯通与东西连通被升级为公共交接机制（不另起绿廊）；四处朝圣地标（交接钟 LANDMARK-01、公开交接桌 -02、百年值班簿 -03、零号接管亭 -04）在 public_space.geojson 定位并各带启用闸与回滚状态。公共服务不是附属设备：十二场景逐一绑定先于智能层存在的无 AI 基础路线和两条人工渠道，六类任务书群体逐类登记公共价值与无 AI 入口，十二场景逐一登记公共收益、伤害、保障、关闭与智能层移除后仍留下的公共服务；公共生活、非消费停留、低光低噪、儿童/老人/残障安全、无设备、无强制人脸识别和人工申诉均为硬门槛。八类需求夹具 8/8、计划共测至少24场与真实观察/通过 0/0 分开登记，不把设计合同冒充用户测试。"
     },
     {
       "requirement_id": "agent.5",
@@ -1680,18 +1692,14 @@
       "title_en": "Narrative design fusing centennial Jing-Zhang culture, Zhongguancun culture and new AI culture",
       "mandatory": true,
       "report_sections": [
-        "一条铁路留下的三件遗产：线形、道口与交接班",
-        "导视、标识与符号系统",
-        "国际传播：把“全球关注”建立在可复核的记录上",
-        "可直接取用的对外短文",
-        "不看屏幕也能读完这份方案：音频、视频、触觉与三维"
+        "设计依据与资料清单",
+        "蓝绿空间、公共空间与城市风貌",
+        "更新项目清单、实施政策与分期计划"
       ],
       "report_sections_en": [
-        "Three Legacies of One Railway: Alignment, Level Crossing, and Shift Handover",
-        "Wayfinding, signage, and the symbol set",
-        "International communication: build \"global attention\" on a checkable record",
-        "Ready-to-use copy for international communication",
-        "Reading this proposal without a screen: audio, video, tactile, and 3D"
+        "Design Basis and Source List",
+        "Blue-Green Network, Public Space, and Urban Character",
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/public_space.geojson"
@@ -1725,7 +1733,8 @@
         "BARRIER-FREE-ENVIRONMENT-LAW",
         "MOHURD-ARCH-DESIGN-DEPTH-2016",
         "MOHURD-URBAN-DESIGN-MEASURES",
-        "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "WCAG-CONTRAST"
       ],
       "assumption_ids": [
         "A-HERITAGE-001",
@@ -1750,22 +1759,10 @@
       "title_en": "Global AI innovation event system and long-term operations design for the belt",
       "mandatory": true,
       "report_sections": [
-        "长期运营、年度活动与国际传播",
-        "年度活动体系、活动品牌与传播视觉系统",
-        "开发者社区运营机制与 AI 场景开放运营机制",
-        "招引转化机制与城市地标运营",
-        "国际传播：把“全球关注”建立在可复核的记录上",
-        "条件分期，而非政府时间表",
-        "可实施性四件事：阶段路径、试点区域、参与主体与指标，逐项对齐"
+        "更新项目清单、实施政策与分期计划"
       ],
       "report_sections_en": [
-        "Long-Term Operation, Annual Events, and International Communication",
-        "Annual event system, event brand and communication visual system",
-        "Developer community operation and AI scenario-opening operation",
-        "Attraction-and-conversion mechanism and civic landmark operation",
-        "International communication: build \"global attention\" on a checkable record",
-        "Conditional phasing, not a government timetable",
-        "The four things implementability is judged on: phase path, pilot area, participants, and metrics"
+        "Renewal Projects, Implementation Policy, and Phasing"
       ],
       "geojson_layers": [
         "geometry/phasing.geojson",
@@ -1780,7 +1777,13 @@
         "scenario_node_count",
         "versioned_asset_count",
         "machine_readable_shift_protocol_count",
-        "schema_valid_synthetic_shift_count"
+        "schema_valid_synthetic_shift_count",
+        "p0_entry_gate_count",
+        "p0_delivery_stage_count",
+        "p0_raci_work_package_count",
+        "p0_component_line_item_count",
+        "p0_preregistered_acceptance_criterion_count",
+        "offline_service_prototype_route_count"
       ],
       "drawings": [
         "drawings/a0-boards.pdf#p03",
@@ -1805,7 +1808,8 @@
         "BARRIER-FREE-ENVIRONMENT-LAW",
         "ELDERLY-SMART-TECH-PLAN-2020-45",
         "GENERATIVE-AI-INTERIM-MEASURES",
-        "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK",
+        "WCAG-CONTRAST"
       ],
       "assumption_ids": [
         "A-OPERATIONS-001",
@@ -1814,6 +1818,7 @@
       "self_check_ids": [
         "DUAL_CONTROL_SHIFT_LEDGER",
         "GOVERNANCE_SCHEMA_VALIDATION",
+        "P0_IMPLEMENTATION_AND_PUBLIC_VALUE",
         "PROFESSIONAL_EVIDENCE",
         "ROLE_SPEC_TRANSFERABLE",
         "SOURCE_PROVENANCE"
@@ -1834,7 +1839,7 @@
         "G09_GEOMETRY_NON_REGRESSION",
         "G10_EVIDENCE_MARKER_DENSITY"
       ],
-      "evidence_summary_zh": "年度活动体系按交接链四季各处理一环并各留可下载公共产物，无产物次年停办；活动品牌复用交接线标识与四类符号，不另起视觉；开发者社区按可复现而非会员制排序，场景开放分旁听／受控测试／公开试运行三级授权且不得跳级；招引转化写成四步准入与退出条件；国际传播输出四样可取用的东西（双语协议模板、十二场景最小数据与人工接管清单、年度交接账、可复现制图方法），并禁止把概念建议表述为政府决定。"
+      "evidence_summary_zh": "年度活动体系按交接链四季各处理一环并各留可下载公共产物，无产物次年停办；活动品牌复用交接线标识与四类符号，不另起视觉。首个实施单元只允许 SCN-05：可操作离线原型之下是一份 PRE-D0 至 D90 的交付合同，八门不齐不计时，十项 RACI 各有唯一 A 但当前均未指派，十二项构件有数量与验收但三方报价/总价保持空白，八项验收 observed_value 均为 null；D90 只允许继续/修复/终止，未全过不得扩到第二场景。开发者社区按可复现而非会员制排序；国际传播输出双语协议、场景最小数据与人工接管清单、年度交接账和可复现方法，并禁止把概念建议表述为政府决定。"
     }
   ],
   "package_level_gates": [
@@ -1844,9 +1849,28 @@
     "G13_REVIEW_VISUAL_BUDGET",
     "G14_HERO_IMAGE_NOT_CROPPED"
   ],
+  "formal_review_readiness_boundary": {
+    "source": "visual/assets/governance/review-3825-readiness-matrix.json",
+    "assessment_owner": "participant_self_audit",
+    "assessment_scope_zh": "仅判断当前概念投稿包是否已完成参与者可控制的材料修复并可交给正式评委评分；不判断官方接收、获奖、规划审定、采购、现场许可或公众绩效。",
+    "assessment_scope_en": "Determines only whether participant-controlled repairs to the current concept-submission package are closed for handover to formal jurors; it does not determine official intake, award status, planning approval, procurement, site permission or public performance.",
+    "package_result": "CLOSED_FOR_FORMAL_REVIEW",
+    "participant_controlled_open_repair_count": 0,
+    "eligibility_evidence_check_count": 6,
+    "eligibility_rejection_condition_observed_count": 0,
+    "latest_review_score_100": 96,
+    "latest_review_local_gate_pass_count": 4,
+    "latest_review_public_interest_inclusion_score_5": 5,
+    "latest_review_implementation_feasibility_score_5": 4,
+    "human_jury_procedure": "REVIEW_PROCEDURE_NOT_PARTICIPANT_REPAIR",
+    "official_geometry_result": "WAITING_ORGANIZER_INPUT",
+    "field_pilot_result": "BLOCKED_EXTERNAL_PRE_PILOT",
+    "public_performance_claim_result": "BLOCKED_UNTIL_24_REAL_TASKS",
+    "boundary_rule_zh": "投稿包闭合不等于现场获准。评委完整翻阅与双语实质比较属于正式评分程序；正式几何属于组织方输入；真实主体、授权、保险、报价、预算、签字与 24 场任务属于现场启动或绩效发布前置条件。后三类不得被伪造为当前投稿证据，也不得反向改写成当前投稿缺件。"
+  },
   "gate_scope_note_zh": "requirements[].gate_ids 只登记「该闸门失效会使这一条的证据失效」的闸门；对全部 23 条同样成立、无法按条目区分的包级闸门登记在 package_level_gates。闸门定义与判定规则见 visual/assets/governance/package-integrity-gates.json。",
   "gate_scope_note_en": "requirements[].gate_ids lists only the gates whose failure would invalidate that row's evidence; gates that hold identically for all 23 rows are recorded in package_level_gates. Definitions and decision rules live in visual/assets/governance/package-integrity-gates.json.",
-  "cross_reference_derivation_zh": "本表各字段的来源分两类。此前的说明写成「六个字段全部由包内文件推导，不手工填写」，2026-08-22 逐字段复算后确认该说法对其中三个字段不成立，现按实测改写。\n\n**（一）机械推导，可逐条复算。** `standard_ids` 的下界由规则确定：取 `standard_matrix.json` 中 `proposal_sections` 与本条 `report_sections` 有交集的标准。**复算发现该规则此前只跑了一部分**——8 个标准共 26 处应得引用缺失，其中 `WCAG-CONTRAST` 按规则应挂 7 条、实际挂 0 条（全包唯一无人引用的标准），已按规则补齐，现 10 条标准全部被至少一条要求引用。补齐后 `standard_ids` 声明总数 **112** ＝ 规则导出 **92** ＋ 定义性挂接 **12** ＋ 实质相关性挂接 **8**，三段可分别复算。① 定义性挂接 12 处，落在两个项目级标准上——公告条款挂 `PROJECT-OFFICIAL-ANNOUNCEMENT`（声明 19、规则导出 10、额外 9）、智能体任务挂 `PROJECT-AGENT-OPEN-CALL-TASKBOOK`（声明 14、规则导出 11、额外 3），二者按定义覆盖全部相关条目，因此声明次数多于交集导出的次数；② 实质相关性挂接 8 处，全部落在 `agent.4`／`agent.5`／`agent.6` 上——这三条智能体任务的章节（公共空间与风貌、文化叙事与导视、长期运营与国际传播）与任一标准的 `proposal_sections` 均无交集，但无障碍环境建设法、适老化智能技术方案、生成式 AI 暂行办法与建筑设计深度规定对这些章节有实质约束，故按相关性登记。**判据：规则导出的标准必须全部在位（可复算），额外挂接必须能指出实质约束理由。**\n\n`report_sections_en` 与 `visual_sections_en` 按中英标题的同序位置映射，不是机器翻译；中英正文各 65 个标题逐行对齐，映射可用标题序号逐条核对（已复算：全部同序）。\n\n**（二）人工登记的实质关联，不由正文标记推导。** `geometry_feature_ids` 登记本条要求在空间上实际落到的要素，取自本条 `geojson_layers` 声明的图层，每个 id 都能在对应 geojson 的 `properties.id` 解析。**它不等于「正文里带 `[data:]` 标记的要素」**——全集 18 个要素中，8 个在正文以 `[data:geometry/<层>#<ID>]` 显式标记（BLDG-001、LANDMARK-01、LANDMARK-03、LU-001、PHASE-001、PROV-KEY-001、ROAD-001、SCN-01），4 个仅以裸编号出现（BLDG-017、LANDMARK-02、LANDMARK-04、SCN-11），6 个只出现在结构化文件与图件中、正文未提（GREEN-01、LU-002、LU-005、PROV-KEY-002、PROV-KEY-003、PUBLIC-01）。`scenario_ids` 同理：登记本条要求实质涉及的场景，88 处引用中有 25 处的编号并不出现在该条自己的 `report_sections` 正文里（例如 1.3.2 的六个章节共 276 行，一个 `SCN-` 都没有），所以它是关联登记而不是正文抽取。十二个场景编号在 `proposal.md` 全文均有出现，且与 `geometry/public_space.geojson` 的 12 个 `layer=SCENARIO_NODE` 要素一一对应。\n\n`title_en` 为本包自译，组织方仅发布中文条款标题。",
+  "cross_reference_derivation_zh": "本表把评委主稿、英文对照稿与结构化证据分成机械推导和实质关联两层。\n\n**机械推导。** `standard_ids` 的下界为：本条 `report_sections` 与 `standard_matrix.json` 各标准 `proposal_sections` 的交集。冠军版把旧版细碎章节归并为官方要求的 13 个主章节后，已重新跑完整交集并补齐所有引用；当前声明总数 130 ＝规则导出 120＋定义性挂接 5＋实质相关性挂接 5。10 条标准均至少被一条要求引用。中英 `report_sections` 按官方 13 个必备章节逐项映射，正文主章节次序完全一致，不依赖机器翻译。\n\n**实质关联。** `geometry_feature_ids` 与 `scenario_ids` 登记要求实际涉及的空间对象和场景，不等同于正文标记的机械抽取；每个几何 ID 都能在声明图层的 `properties.id` 中解析，十二个场景与 `geometry/public_space.geojson` 的场景节点一一对应。`title_en` 为本包自译，组织方仅发布中文标题。",
   "self_check_expectations": [
     {
       "expectation_id": "DETERMINISTIC_VALIDATION",
@@ -1976,17 +2000,17 @@
     },
     {
       "expectation_id": "DRAWING_VERSION_CONSISTENCY",
-      "assertion_zh": "四套图纸的页数与版本印记命中数逐套相等，无旧版本号残留。",
-      "evidence_in_package": "drawings/*.pdf 页脚",
+      "assertion_zh": "四套图纸的页数与版本印记命中数逐套相等，无旧版本号残留；A0 中英首页的 4 张嵌入栅格与当前 v2.0 源图逐像素一致。",
+      "evidence_in_package": "drawings/*.pdf、visual/assets/governance/version-audit.js 与 pdf-version-report.json",
       "covered_by_self_check_id": "VISUAL_PACKAGING",
-      "independent_verification_zh": "`qpdf --show-npages` 与 `pdftotext <pdf> - | grep -c 'PACKAGE v1.15'` 逐套比对：13/13、13/13、6/6、6/6。"
+      "independent_verification_zh": "`node visual/assets/governance/version-audit.js` 联合 `qpdf --show-npages` 与 `pdftotext` 核得 13/13、13/13、6/6、6/6，`PACKAGE v1.15` 四套均为 0；并从 A0 中英首页抽取 F/01 与 F/03 后逐像素比对，4/4 与当前源图完全一致。"
     },
     {
       "expectation_id": "VISUAL_STATIC",
-      "assertion_zh": "送审视觉输入是静态图像，不依赖动画、脚本或网络即可完整呈现。",
+      "assertion_zh": "送审视觉输入是静态图像，不依赖动画、脚本或网络即可完整呈现；中文交互页的等宽标签显式回退到包内 CJK 字体，不依赖操作系统补字。",
       "evidence_in_package": "assets/figures/*.png、drawings/*.pdf、visual/index[.en].html 首屏",
       "covered_by_self_check_id": "VISUAL_PACKAGING",
-      "independent_verification_zh": "四个 HTML 的外部 http(s) 引用数为 0；图件与图纸均为静态位图或矢量。"
+      "independent_verification_zh": "四个 HTML 的外部 http(s) 引用数为 0；图件与图纸均为静态位图或矢量。`node visual/assets/governance/webfont-audit.js` 核验四页 WOFF2、字形、许可，以及交互总览页 24 类等宽标签均显式回退到 JZHandoverCJK。"
     },
     {
       "expectation_id": "PROTOCOL_RECOMPUTATION",
@@ -1996,18 +2020,32 @@
       "independent_verification_zh": "`node visual/assets/governance/protocol-check-runner.js` 输出「规则检查 96/96」「接管断言 48/48」且退出码 0；任何一条不一致即退出 1 并打印发布值与重算值。**该脚本不在 CI 或 preflight 中被调用**（投稿 PR 不得改 scripts/ 与 .github/），须手动执行。　枚举一致性与 fail-closed 断言的输出为「schema 枚举取值 360/360 合法（18 个枚举字段）」与「fail-closed 上限 未被改动」；2026-08-22 另增一行「拒收理由码 5/5 与目录一致；兼容表 4 行／7 对，十二条账逐条符合」。"
     },
     {
+      "expectation_id": "P0_IMPLEMENTATION_AND_PUBLIC_VALUE",
+      "assertion_zh": "首个 SCN-05 P0 已从概念图深化为可操作离线服务原型、90 天交付合同和逐场景公共利益硬门槛：8 道进入门、5 个阶段、10 项 RACI、12 项构件、8 项预注册验收、六类任务书群体与 12/12 场景公共价值门同时完整；另把六项资格事实核对、七项官方后续动作、投稿闭合与现场阻断分栏记录；真实授权、角色、报价、预算、专业签认与参与者观察仍如实为未开始/空值/0。",
+      "evidence_in_package": "visual/index.html#p0-prototype；visual/assets/governance/p0-delivery-contract.json；visual/assets/governance/public-benefit-gate.json；visual/assets/governance/review-3825-readiness-matrix.json；visual/assets/governance/p0-readiness-audit.js",
+      "covered_by_self_check_id": null,
+      "independent_verification_zh": "`node visual/assets/governance/p0-readiness-audit.js --json` 输出 ok=true、8/8 门、5/5 阶段、10/10 RACI、12/12 构件、8/8 验收、6/6 群体、12/12 场景公共门、资格证据 6/6、评审动作 7/7 和原型 14/14，同时 real_participant_observations=0；删一类群体、一个场景门、一条无 AI 路线、一个关闭控件、把未开始改成已完成、把投稿 CLOSED 改成开放或把资格事实改成命中都会退出 1。"
+    },
+    {
       "expectation_id": "CLAIM_AUDIT",
-      "assertion_zh": "正文里可复算的数值与结构声明共 60 项，逐条与结构化文件一致。含正文↔数据的逐行核对（落点表每一行的类型与东西侧）、断面表算术（含「容器子段不得重复相加」）、三个矩阵的交叉引用完整性，以及一项断言 ID 全集无缺项的元检查 Z1。**Z1 自己也在那份 60 项全集内，且退出码另由一道不走登记函数的结构性守卫决定**——一条检查查不到自己被删掉，所以守卫必须站在检查清单之外。　2026-08-22 另增 G4：四套图纸的每个 ToUnicode CMap 都必须是恒等 bfrange——用 Node 内置 zlib 解开 Flate 压缩的流后逐个检查，防止 v1.11 那种 code→字形索引错映被后续总装静默带回（本包真发生过一次：修好后又被覆盖）。　2026-08-22 另增 P11：四季活动只有一套名称——《年度活动体系》表恰 4 行、四个名字在正文另有引用、三套并存时的退役名（开源交班／维护者之夜／夜班维护者之夜／年度复盘班）零出现。　2026-08-22 另增 J2：核本文件自陈的 `standard_ids` 推导规则——下界＝本条 `report_sections` 与 `standard_matrix.json` 的 `proposal_sections` 之交集。复算发现该规则此前只跑了一部分，8 个标准共 26 处应得引用缺失（`WCAG-CONTRAST` 应挂 7 条实挂 0 条，是全包唯一无人引用的标准），已补齐；三段分解 112 ＝ 92 ＋ 12 ＋ 8 的规模写死在脚本里。　2026-08-22 增 P10：落点表垂距一列的四个统计量（区间／平均／中位／合计）与正文摘要一致，**中位按偶数个取值取第 10、11 项之均值**——此前摘要句写「中位 337」是把第 11 项本身当成中位数，而当时只有区间被钉住。",
+      "assertion_zh": "正文与交付物中可复算的数值、结构和呈现声明共 69 项，逐条与结构化文件一致。覆盖指标、几何、二十单元、断面算术、双语布局、矩阵引用、来源与许可、四套 PDF 文字层、四个 HTML 的包内 CJK 字体、全载体 v2.0 可见版本、A0 首页内嵌图 4/4 的源图像素绑定、七类用地唯一纹理、十二场景无 AI 等价路线，以及 P0 的实施与公共利益完整性。断言 ID 全集与数量另由不走登记函数的结构性守卫锁定。",
       "evidence_in_package": "visual/assets/governance/claims-audit.js",
       "covered_by_self_check_id": null,
-      "independent_verification_zh": "`node visual/assets/governance/claims-audit.js` 输出「60/60 条声明与包内数据一致」且退出码 0。阴性测试已做成随包脚本，不再是自述：见同目录 audit-selftest.js（AUDITOR_SELFTEST 一条）。**该脚本不在 CI 或 preflight 中被调用**，须手动执行。"
+      "independent_verification_zh": "`node visual/assets/governance/claims-audit.js` 输出「69/69 条声明与包内数据一致」且退出码 0；G6 核四页 HTML 字形与等宽控件，G7 输出 26 图件／4 套 38 页 PDF／A0 内嵌图 4/4 像素一致，G8 输出 7 类 × 6 载体／98 个纹理区域，G9 输出 12/12 无 AI 路线／24 条人工渠道／8/8 需求夹具，G10 输出 8 门／5 阶段／10 RACI／12 构件／8 验收／6 群体／12 场景公共门／原型 14/14，并保持真实观察 0。阴性测试见 audit-selftest.js。**该脚本不在 CI 或 preflight 中被调用**，须手动执行。"
     },
     {
       "expectation_id": "AUDITOR_SELFTEST",
-      "assertion_zh": "上面两条自检脚本本身经过回归测试：注入已知缺陷时它们必须退出 1 并报出指定的那一项。**加这一条的理由是本包两次栽在「自检只会通过」上**：一次条件式 add() 让两项检查在正文措辞改动后从清单里消失、脚本报 47/47 通过；一次元检查的 ID 全集不含元检查自己、删掉它后脚本报 48/48 通过。两次都是「检查悄悄没跑」而非「检查判错」，所以判据不能与被测对象同处一文件。共 20 例：2 例正向（含规模与 ID 序列须与本脚本独立记录的那份全集逐位相同）＋ 18 例阴性。　2026-08-21 增三例阴性，打新加的枚举校验与 fail-closed 断言：夹具里把 `assignment_state` 写成不在枚举里的 `assigned` 须报枚举越界；schema 里给 `smart_layer_state_after_decision` 加 `fully_enabled` 须报 fail-closed 断言失败；删掉 schema 里任一枚举定义须报枚举规模不符。　再增一例：夹具里把回滚演练改成 observed_pass 却把 evidence_pointer 留空须报回滚证据不一致。　再增一例：把摘要句的垂距中位改回 337 须报 P10。",
+      "assertion_zh": "声明审计器、版本审计器、用地纹理审计器、公共服务等价审计器、P0 就绪审计器与协议重跑器共经过 52 例回归测试：2 例正向锁定完整规模与 ID 序列，50 例阴性逐一注入已知缺陷并要求对应检查退出 1。最新四例分别删除“拒绝算法／拒绝数据”需求夹具、删除六类群体中的访客、把投稿 CLOSED 改成开放、把一项资格事实改成已命中，证明需求覆盖、公共群体和评审边界任何一项漂移都会被拒绝。所有扰动只写系统临时目录，不改投稿包。",
       "evidence_in_package": "visual/assets/governance/audit-selftest.js",
       "covered_by_self_check_id": null,
-      "independent_verification_zh": "`node visual/assets/governance/audit-selftest.js` 输出「36/36 例通过（2 正向 ＋ 34 阴性）」且退出码 0；任何一例未通过即退出 1 并打印该例期望与实得（例如「仍以退出码 0 通过」）。缺陷注入一律写进系统临时目录，**包内文件不被改动**，跑完即删。**该脚本同样不在 CI 或 preflight 中被调用**，须手动执行；已就此向上游提 Issue #3571 建议 participant_preflight.py 支持运行本节声明的自检命令。"
+      "independent_verification_zh": "`node visual/assets/governance/audit-selftest.js` 输出「52/52 例通过（2 正向 ＋ 50 阴性）」且退出码 0；任何一例未通过即退出 1 并打印该例期望与实得。缺陷注入一律写进系统临时目录，**包内文件不被改动**，跑完即删。**该脚本同样不在 CI 或 preflight 中被调用**，须手动执行；已就此向上游提 Issue #3571 建议 participant_preflight.py 支持运行本节声明的自检命令。"
+    },
+    {
+      "expectation_id": "FORMAL_REVIEW_SCOPE_SEPARATION",
+      "assertion_zh": "当前投稿材料闭合、正式评委程序、组织方数据、现场启动与公众绩效发布五种状态被分栏记录：参与者可控制的当前开放修复为 0；六项资格事实核对 0 项观察到拒绝条件；真实现场和绩效主张继续保持 BLOCKED，不以虚构授权换取可实施性分数。",
+      "evidence_in_package": "compliance_matrix.json#formal_review_readiness_boundary；visual/assets/governance/review-3825-readiness-matrix.json；visual/assets/governance/p0-delivery-contract.json#formal_review_boundary",
+      "covered_by_self_check_id": null,
+      "independent_verification_zh": "`node visual/assets/governance/p0-readiness-audit.js --json` 须输出 eligibility_evidence_checks_valid=6、review_items_classified_valid=7、ok=true；把 package_result 改成非 CLOSED、把任一资格事实改成 observed、或把现场 BLOCKED 改成已启动都会退出 1。"
     }
   ],
   "self_check_expectations_note_zh": "三个矩阵的 self_check_ids 引用的就是本表的 expectation_id。此前这些标签只在矩阵里出现、包内没有定义，而本包的 G01 闸门声称「三个矩阵里的每一条引用都必须能在包内解析到实体」——该自陈对其中 16 个标签（81 处引用）并不成立。本表把它们逐条定义在矩阵自身，因此引用与定义同文件可解析。covered_by_self_check_id 只取 self_check.json 中真实存在的四个 check_id。",
@@ -2242,7 +2280,7 @@
         "entry_id": "AG-6",
         "requirement_zh": "agent.6 活动体系与长期运营",
         "requirement_en": "agent.6 Event system and long-term operation",
-        "section_zh": "长期运营、年度活动与国际传播",
+        "section_zh": "更新项目清单、实施政策与分期计划",
         "figure": "JZ/13",
         "structured_entry": "compliance_matrix.json#agent.6",
         "spatial_object": "年度活动周线路",

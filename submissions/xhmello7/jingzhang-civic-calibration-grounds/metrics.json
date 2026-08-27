@@ -81,7 +81,7 @@
       "formula": "union_area(features where include_in_public_space_metric=true, epsg4548)",
       "confidence": "low",
       "assumptions": [
-        "Counts only the two V5 Dazhongsi building-free public-space proposals; Zhongzhiyuan and middle-segment polygons remain conceptual intervention zones."
+        "Counts only the two Dazhongsi building-free public-space proposals; Zhongzhiyuan and middle-segment polygons remain conceptual intervention zones."
       ]
     },
     "public_space_ratio": {
@@ -92,7 +92,7 @@
         "geometry/public_space.geojson",
         "geometry/site_boundary.geojson"
       ],
-      "formula": "v5_dazhongsi_public_space_area_sqm/site_area_sqm",
+      "formula": "dazhongsi_public_space_area_sqm/site_area_sqm",
       "confidence": "low",
       "assumptions": [
         "A design-layer reference ratio under provisional site geometry, not a statutory public-space ratio."
@@ -108,7 +108,7 @@
       "formula": "sum(length where route_type=pedestrian_link, epsg4548)",
       "confidence": "low",
       "assumptions": [
-        "Only the three V5 Dazhongsi pedestrian links are counted; all avoid mapped building footprints but still require access and station-interface survey."
+        "Only the three Dazhongsi pedestrian links are counted; all avoid mapped building footprints but still require access and station-interface survey."
       ]
     },
     "key_area_count": {
@@ -126,30 +126,30 @@
     },
     "ai_scenario_count": {
       "status": "known",
-      "value": 4,
+      "value": 10,
       "unit": "count",
       "source_files": [
-        "geometry/constraints.geojson",
+        "visual/assets/innovation_belt_program.json",
         "proposal.md"
       ],
-      "formula": "count(mapped calibration_case nodes)",
-      "confidence": "medium",
+      "formula": "count(innovation_belt_program.scenarios where tier in [flagship, supporting])",
+      "confidence": "high",
       "assumptions": [
-        "Two cases are detailed flagships and two remain a secondary spatial scenario library."
+        "Three flagship and seven supporting AI scenarios are counted. The separate no-AI continuity System Card is not an AI deployment scenario and is excluded."
       ]
     },
     "calibration_card_count": {
       "status": "known",
-      "value": 4,
+      "value": 10,
       "unit": "count",
       "source_files": [
-        "geometry/constraints.geojson",
+        "visual/assets/innovation_belt_program.json",
         "proposal.md"
       ],
-      "formula": "count(SCENARIO_NODE where node_type=calibration_case)",
-      "confidence": "medium",
+      "formula": "count(innovation_belt_program.scenarios where tier in [flagship, supporting])",
+      "confidence": "high",
       "assumptions": [
-        "Two detailed flagship cases and two secondary mapped cases."
+        "The ten AI scenarios use one shared calibration contract but do not receive equal visual or design depth; the continuity System Card is tracked separately."
       ]
     },
     "lifecycle_gate_count": {
@@ -209,7 +209,7 @@
       "formula": "count(ROAD-DZ features)",
       "confidence": "medium",
       "assumptions": [
-        "Three linked route stages within an approximately 8 ha study window; not road redlines or confirmed station entrances."
+        "Three linked route stages within an approximately 8.7 ha study window; not road redlines or confirmed station entrances."
       ]
     },
     "selected_existing_building_count": {
@@ -252,17 +252,99 @@
     },
     "detailed_flagship_case_count": {
       "status": "known",
-      "value": 2,
+      "value": 3,
       "unit": "count",
       "source_files": [
         "geometry/constraints.geojson",
+        "visual/assets/innovation_belt_program.json",
         "proposal.md"
       ],
-      "formula": "count(calibration_case where data_status=flagship_case_detailed)",
+      "formula": "count(innovation_belt_program.scenarios where tier=flagship)",
       "confidence": "medium",
       "assumptions": [
-        "Two Dazhongsi cases are detailed; two other cases remain a secondary scenario library."
+        "Two Dazhongsi cases retain conflict-checked site relationships; the third is a proposed cross-belt route with controlled validation, open-source review and bounded first use, not an implemented deployment."
       ]
+    },
+    "supporting_scenario_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": ["visual/assets/innovation_belt_program.json"],
+      "formula": "count(innovation_belt_program.scenarios where tier=supporting)",
+      "confidence": "high",
+      "assumptions": ["Supporting scenarios are concise programme cards and do not imply seven new facilities."]
+    },
+    "system_card_count": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": ["visual/assets/innovation_belt_program.json"],
+      "formula": "count(innovation_belt_program.scenarios where tier=system)",
+      "confidence": "high",
+      "assumptions": ["The System Card documents continuity when the AI layer is unavailable and is excluded from ai_scenario_count."]
+    },
+    "industrial_test_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": ["visual/assets/innovation_belt_program.json"],
+      "formula": "count(innovation_belt_program.industrial_tests)",
+      "confidence": "high",
+      "assumptions": ["All three are proposed evaluation protocols with no measured result."]
+    },
+    "user_type_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": ["visual/assets/innovation_belt_program.json"],
+      "formula": "count(innovation_belt_program.personas)",
+      "confidence": "high",
+      "assumptions": ["Personas describe service needs and fallbacks; they are not a surveyed population distribution."]
+    },
+    "global_precedent_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": ["visual/assets/innovation_belt_program.json", "sources.json"],
+      "formula": "count(innovation_belt_program.global_precedents)",
+      "confidence": "high",
+      "assumptions": ["Cases are used for transferable principles only; no external programme or performance is attributed to Jingzhang."]
+    },
+    "pilgrimage_node_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": ["visual/assets/innovation_belt_program.json", "geometry/constraints.geojson", "geometry/public_space.geojson"],
+      "formula": "count(innovation_belt_program.pilgrimage_nodes)",
+      "confidence": "medium",
+      "assumptions": ["Two northern/central carriers are indicative and require field and heritage review; Dazhongsi uses building-clear public-space geometry."]
+    },
+    "annual_operation_stage_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": ["visual/assets/innovation_belt_program.json"],
+      "formula": "count(innovation_belt_program.annual_operation)",
+      "confidence": "high",
+      "assumptions": ["Stages are a proposed role-based operating loop, not an announced or funded event calendar."]
+    },
+    "innovation_belt_level_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": ["visual/assets/innovation_belt_program.json"],
+      "formula": "count(overall_structure levels)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "spatial_wing_count": {
+      "status": "known",
+      "value": 2,
+      "unit": "count",
+      "source_files": ["visual/assets/innovation_belt_program.json"],
+      "formula": "count(innovation_belt_program.overall_structure.level_2.wings)",
+      "confidence": "high",
+      "assumptions": ["Wings describe network roles, not new statutory planning zones or geometry."]
     }
   }
 }

@@ -748,6 +748,23 @@ const selectionKeys = Object.keys(arc.node.selection_checks || {});
 if (selectionKeys.length === 0) {
   fail("选点依据一条未声明；零条检查不是「全部一致」 / no selection check is declared, and zero checks is not agreement");
 }
+// 条目总数等值断言：下界与唯一性合在一起仍防不住悄悄删掉一条选点依据检查——只要剩下
+// 的还非空、还唯一，收尾就照常报「全部一致」。总数由档案自身声明在
+// expected_selection_check_count，读入后与实到条目逐一比对，不等或未声明即报不符
+// （体例仿桌面校验器 fixtures 文件的 expected_fixture_count 声明）。
+// Equality assertion on the item count: the floor and the uniqueness together still do
+// not catch a quietly deleted selection check — as long as what remains is still
+// non-empty and unique the summary still reports "everything agrees". The total is
+// declared by the archive itself at expected_selection_check_count, read here and
+// compared item by item against what actually arrived; an absent declaration or a
+// mismatch is reported (styled after the tabletop checker's fixtures file
+// expected_fixture_count declaration).
+if (arc.node.expected_selection_check_count === undefined) {
+  fail("选点依据未声明 expected_selection_check_count，条目总数无从复核 / no expected_selection_check_count is declared for the selection checks; the item total cannot be re-checked");
+} else if (arc.node.expected_selection_check_count !== selectionKeys.length) {
+  fail("expected_selection_check_count 声明 " + arc.node.expected_selection_check_count + "，实到 " + selectionKeys.length
+    + " / expected_selection_check_count declares " + arc.node.expected_selection_check_count + " but " + selectionKeys.length + " arrived");
+}
 for (const key of selectionKeys) {
   const chk = arc.node.selection_checks[key];
   const got = allNodes.filter((p) => p[chk.field] === chk.value).map((p) => p.id).sort();
@@ -1108,6 +1125,25 @@ claimIds.filter((id, i) => claimIds.indexOf(id) !== i)
   .forEach((id) => fail("声明标识 " + id + " 重复 / claim id " + id + " appears more than once"));
 if (claims.length > 0 && !claims.some((c) => c.expected_verdict === "REJECT")) {
   fail("stage-5 一条反例也没有；只有正例的声明集证明不了判据会拒 / the claim set holds no REJECT case, and positives alone prove nothing about refusal");
+}
+// 条目总数等值断言：下界、唯一性与反例覆盖三条合在一起仍防不住悄悄删掉一条声明——
+// 只要剩下的还非空、还唯一、还带反例，收尾就照常报「全部一致」。总数由档案自身声明
+// 在 machine_review.expected_claim_count，读入后与实到条目逐一比对，不等或未声明即
+// 报不符（体例仿桌面校验器 fixtures 文件的 expected_fixture_count 声明）。
+// Equality assertion on the item count: the floor, the uniqueness check and the
+// counterexample-coverage check together still do not catch a quietly deleted claim —
+// as long as what remains is still non-empty, still unique and still carries a
+// counterexample, the summary still reports "everything agrees". The total is declared
+// by the archive itself at machine_review.expected_claim_count, read here and compared
+// item by item against what actually arrived; an absent declaration or a mismatch is
+// reported (styled after the tabletop checker's fixtures file expected_fixture_count
+// declaration).
+const expectedClaimCount = arc.stage_5_dual_review.machine_review.expected_claim_count;
+if (expectedClaimCount === undefined) {
+  fail("stage-5 机器复核未声明 expected_claim_count，条目总数无从复核 / the machine review declares no expected_claim_count; the item total cannot be re-checked");
+} else if (expectedClaimCount !== claims.length) {
+  fail("expected_claim_count 声明 " + expectedClaimCount + "，实到 " + claims.length
+    + " / expected_claim_count declares " + expectedClaimCount + " but " + claims.length + " arrived");
 }
 
 let claimMatched = 0;

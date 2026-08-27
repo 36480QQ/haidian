@@ -360,7 +360,7 @@
     },
     {
       "replacement_id": "D08_RIGHTS_AND_REUSE",
-      "current_state": "not_fully_cleared",
+      "current_state": "component_terms_declared_future_or_external_use_review_open",
       "current_refs": [
         "visual/assets/rights-clearance-ledger.json",
         "visual/assets/submission-use-rights-matrix.json"
@@ -1173,6 +1173,8 @@
     "covered_item_count": 11,
     "covered_preregistration_count": 12,
     "required_item_category_slot_count": 99,
+    "prepared_professional_review_candidate_count": 1,
+    "prepared_candidate_material_record_count": 8,
     "submitted_real_world_artifact_count": 0,
     "approved_item_count": 0,
     "confirmed_authoritative_replacement_input_count": 0,
@@ -1220,7 +1222,7 @@
   },
   "round_15_field_evidence_intake": {
     "canonical_contract_ref": "visual/assets/field-evidence-intake-contract.json",
-    "purpose": "Give D01-D08 and H01-H07 an empty, field-usable packet, custody and disposition schema without claiming that any material has been collected.",
+    "purpose": "Give D01-D08 and H01-H07 a field-usable packet, custody and disposition schema plus eight candidate-scoped intake records without claiming that any material has been collected.",
     "replacement_ids_reused": [
       "D01_OFFICIAL_GEOMETRY",
       "D02_EXISTING_CONDITION_SURVEY",
@@ -1241,9 +1243,30 @@
       "H07_RETEST_DECISION"
     ],
     "peer_method_boundary": "PR #2266 contributes public disposition semantics only; no Commons Loop brand, spatial grammar, geometry, metric, figure, media or claim is reused.",
-    "field_packet_count": 0,
+    "candidate_id": "PRE-G1-JZ05-SCENE011-T02",
+    "prepared_candidate_record_count": 8,
+    "submitted_field_packet_count": 0,
     "accepted_for_recalculation_count": 0,
     "approval_count": 0,
+    "current_gate": "G0",
+    "decision": "NO-GO"
+  },
+  "round_58_professional_review_candidate": {
+    "candidate_ref": "visual/assets/professional-handoff-candidate.json",
+    "candidate_id": "PRE-G1-JZ05-SCENE011-T02",
+    "linked_items": [
+      "JZ-05",
+      "SCENE-011",
+      "T-02",
+      "G1-PREREG-011"
+    ],
+    "prepared_handoff_gate_count": 7,
+    "accepted_handoff_gate_count": 0,
+    "prepared_candidate_material_record_count": 8,
+    "submitted_real_material_count": 0,
+    "primary_metric_id": "G1-M-011",
+    "primary_metric_denominator": "all_started_service_tasks",
+    "synthetic_10_of_10_is_service_accuracy": false,
     "current_gate": "G0",
     "decision": "NO-GO"
   }

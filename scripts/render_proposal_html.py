@@ -202,6 +202,7 @@ def write_text_atomically(path: Path, text: str) -> None:
             delete=False,
             mode="w",
             encoding="utf-8",
+            newline="\n",
         ) as handle:
             temporary = handle.name
             handle.write(text)

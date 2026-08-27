@@ -206,5 +206,94 @@
       "assumptions": [],
       "reason": "No deployment yet; the equivalence gap can only be read from the bounded field pilot, so it remains unknown until the first reading."
     }
+  },
+  "physarum_translation": {
+    "description": "Algorithm-to-design translation of the Physarum (slime mold) adaptive-network method into the Dazhongsi road-network renewal concept. Prose version: proposal.md / proposal.en.md §overall_spatial_structure.",
+    "transferable_properties": [
+      {
+        "algorithm": "minimal redundancy (total length near-optimal)",
+        "design": "renewal skeleton ~8813 m with minimal dead-end and redundant links"
+      },
+      {
+        "algorithm": "strong resilience (stays connected after local failure)",
+        "design": "main-vein + branch + slow-loop topology, so a single breakpoint does not sever the network"
+      },
+      {
+        "algorithm": "low crossing (detours around impassable obstacles)",
+        "design": "heritage-protection zones and impassable redlines are set as obstacles; the network detours around them (g1 hard constraint, 0 hard-crossings)"
+      }
+    ],
+    "translation_mechanism": {
+      "nutrient_anchors": [
+        "parks",
+        "metro stations",
+        "railway corridor",
+        "industry/office buildings"
+      ],
+      "obstacles": [
+        "heritage-protection zones",
+        "impassable redlines"
+      ],
+      "output_network": "four-level network: main vein — branch — slow-travel ring — green corridor"
+    },
+    "dimension_table": [
+      {
+        "dimension": "nutrient_anchors",
+        "offsite_parameter": "18 key terminals (metro stations, parks, railway corridor, industry anchors); skeleton covers 17/18",
+        "translation_rule": "transformed into metro-station + university + industry node density",
+        "onsite_design": "three key areas (PROV-KEY-001/002/003) + six renewal projects (JZ-01..06) anchor placement",
+        "status": "manually calibrated on provisional boundary"
+      },
+      {
+        "dimension": "obstacle_constraint",
+        "offsite_parameter": "class_I=1.5 / class_IV=3.0, protection_scope=hard block (manually digitized heritage boundary, MODEL credibility trust B)",
+        "translation_rule": "transformed into road redlines, river blue-lines, heritage buffer zones",
+        "onsite_design": "dashed forbidden-zone layer (geometry/constraints.geojson#CONSTRAINTS, compliance reference not approval geometry)",
+        "status": "provisional geometry"
+      },
+      {
+        "dimension": "main_vein_generation",
+        "offsite_parameter": "top-10% conductivity edges, 167-edge skeleton",
+        "translation_rule": "transformed into rail transfer corridor + industry spine",
+        "onsite_design": "main vein (geometry/roads.geojson#ROAD-001)",
+        "status": "conceptual design"
+      },
+      {
+        "dimension": "branch_penetration",
+        "offsite_parameter": "four-level network growth (main vein — branch — slow-travel ring — green corridor)",
+        "translation_rule": "transformed into community slow-travel network + green-corridor links",
+        "onsite_design": "branch (geometry/roads.geojson#ROAD-011, green corridor)",
+        "status": "conceptual design"
+      },
+      {
+        "dimension": "slow_ring_closure",
+        "offsite_parameter": "strong resilience (stays connected after local failure) transferable property",
+        "translation_rule": "transformed into slow-ring closure + four-quadrant connectivity",
+        "onsite_design": "slow-travel ring (geometry/roads.geojson#ROAD-005) + Dazhongsi station four-quadrant connectivity (JZ-04)",
+        "status": "conceptual design"
+      },
+      {
+        "dimension": "total_network_length",
+        "offsite_parameter": "8813.1 m",
+        "translation_rule": "not applied directly; corridor-efficiency reference baseline",
+        "onsite_design": "on-site corridor length to be recomputed once formal geometry arrives",
+        "status": "off-site method validation"
+      },
+      {
+        "dimension": "efficiency_index",
+        "offsite_parameter": "19.20 (baseline 1.143, Run7 frozen 2.802)",
+        "translation_rule": "not applied directly; multi-objective reference baseline",
+        "onsite_design": "on-site multi-objective trade-off to be recomputed",
+        "status": "off-site method validation"
+      },
+      {
+        "dimension": "heritage_avoidance",
+        "offsite_parameter": "0 hard crossings (f3≡f2; optimal skeleton edges fall outside class_I/class_IV penalty zones)",
+        "translation_rule": "transformed into the 'detour around heritage buffer zones' design principle",
+        "onsite_design": "dashed heritage buffer zone",
+        "status": "provisional geometry"
+      }
+    ],
+    "boundary": "Method-validation evidence only; the real Physarum run is ~2-3 km west of the provisional boundary, so the translated network is a conceptual design reference, not formal site geometry or approval geometry."
   }
 }

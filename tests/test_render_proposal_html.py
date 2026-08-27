@@ -9,10 +9,18 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
-from render_proposal_html import render_html, render_inputs  # noqa: E402
+from render_proposal_html import render_html, render_inputs, write_text_atomically  # noqa: E402
 
 
 class RenderProposalHtmlTests(unittest.TestCase):
+    def test_write_text_atomically_emits_lf_only_bytes_on_every_platform(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "report.html"
+            write_text_atomically(target, "<p>alpha</p>\n<p>beta</p>\n")
+            self.assertEqual(target.read_bytes(), b"<p>alpha</p>\n<p>beta</p>\n")
+            write_text_atomically(target, "<p>gamma</p>\n")
+            self.assertEqual(target.read_bytes(), b"<p>gamma</p>\n")
+
     def test_render_html_supports_emphasis_without_reformatting_inline_code(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             submission_dir = Path(tmp)

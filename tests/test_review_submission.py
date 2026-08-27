@@ -130,7 +130,10 @@ summary: "围绕百年京张 AI 创新带提出可审查方案。"
             self.assertIn("Version 2 bilingual deliverables are mandatory", prompt)
             self.assertIn("Organizer-owned missing geometry", prompt)
             self.assertIn("组织方：", prompt)
-            self.assertTrue((out_dir / "advisory-review.md").exists())
+            self.assertIn("conditional_followups", prompt)
+            advisory = (out_dir / "advisory-review.md").read_text(encoding="utf-8")
+            self.assertIn("## Current Blocking Repairs", advisory)
+            self.assertIn("## Conditional Follow-ups (Non-Blocking)", advisory)
 
     def test_advisory_review_schema_defines_pr_comment_contract(self) -> None:
         schema = json.loads(
@@ -149,6 +152,13 @@ summary: "围绕百年京张 AI 创新带提出可审查方案。"
         self.assertEqual(len(dimension_enum), 7)
         self.assertIn("brief_alignment", dimension_enum)
         self.assertIn("pr_comment_markdown", schema["required"])
+        self.assertIn("conditional_followups", schema["required"])
+        followup = schema["properties"]["conditional_followups"]["items"]
+        self.assertEqual(False, followup["properties"]["blocking_now"]["const"])
+        self.assertEqual(
+            ["participant", "organizer", "external", "shared"],
+            followup["properties"]["owner"]["enum"],
+        )
 
 
 

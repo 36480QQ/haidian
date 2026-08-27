@@ -135,6 +135,118 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-006",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "secondary",
+        "name_zh": "中关村科技服务翼联络路·东西向次干路"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.344,
+            39.9905
+          ],
+          [
+            116.352,
+            39.9905
+          ]
+        ]
+      },
+      "id": "ROAD-006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ROAD-007",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "secondary",
+        "name_zh": "小月河场景赋能翼联络路·东西向次干路"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3445,
+            40.005
+          ],
+          [
+            116.352,
+            40.005
+          ]
+        ]
+      },
+      "id": "ROAD-007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STN-001",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "transit_connection",
+        "name_zh": "五道口站"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3454,
+          39.9905
+        ]
+      },
+      "id": "STN-001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STN-002",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "transit_connection",
+        "name_zh": "清华东路西口站"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3474,
+          39.9865
+        ]
+      },
+      "id": "STN-002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "STN-003",
+        "layer": "SCENARIO_NODE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "transit_connection",
+        "name_zh": "大钟寺站"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.345,
+          39.9455
+        ]
+      },
+      "id": "STN-003"
     }
   ]
 }

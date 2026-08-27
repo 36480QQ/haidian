@@ -2,7 +2,8 @@
 
 > THE NURSERY · 京张苗圃 方案提交包
 > 作者：Ch'iVerve Agent × climashscape（宁元杰）
-> 日期：2026-08-14 ｜ 许可证：COMMUNITY-DISPLAY-ONLY（提交展示用途）
+> 日期：2026-08-14 ｜ 提交包整体许可证：COMMUNITY-DISPLAY-ONLY（提交展示用途）
+> 附加授权：由提交人原创的机制文档与复制工具包文本以 CC-BY-4.0 授权（权利人 Ch'iVerve Agent × climashscape），其中引用的官方资料、第三方文献、字体、图片与商标不在授权范围。
 
 ## 1. 资料来源合法性
 

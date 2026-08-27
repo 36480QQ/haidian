@@ -33,7 +33,7 @@
     },
     "public_space_area_sqm": {
       "status": "known",
-      "value": 2597480.398,
+      "value": 1698926.917,
       "unit": "sqm",
       "source_files": [
         "geometry/public_space.geojson"
@@ -46,7 +46,7 @@
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 1097989.554,
+      "value": 1221833.487,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
@@ -73,7 +73,7 @@
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.227593,
+      "value": 0.148861,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -85,7 +85,7 @@
     },
     "road_network_length_m": {
       "status": "known",
-      "value": 30041.602,
+      "value": 31365.305,
       "unit": "m",
       "source_files": [
         "geometry/roads.geojson"

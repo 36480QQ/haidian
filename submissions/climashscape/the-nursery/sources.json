@@ -17,7 +17,8 @@
       "id": "SOURCE-SITE-PACKAGE",
       "type": "official",
       "title": "site-package（边界/枚举/schema）",
-      "status": "formal-ready"
+      "status": "provisional_only",
+      "note": "Registry classifies the provisional boundary geometries as provisional_only; used only for generation, offline visualization and self-check. All areas & derived metrics must be recalculated once the official redline geometry is supplied (recalc SOP in proposal §指标口径)."
     },
     {
       "id": "SOURCE-LAUX-2024",

@@ -89,6 +89,7 @@
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/corridor-context.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/corridor-room-figure-ground.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/dazhongsi-osm-context.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-alternatives-register.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-build-receipt.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-changeover-binding.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/delivery-field-baseline-protocol.json",
@@ -146,6 +147,7 @@
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/model-swap-topologies.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/model-swap-verification.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/reproducibility.json",
+        "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/rights-matrix.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-changeover-ed41614d2fa3c85d/build_receipt.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-changeover-ed41614d2fa3c85d/contracts.json",
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang/visual/assets/runs/shared-floor-changeover-ed41614d2fa3c85d/delta_receipts/0c73115de9be544d5a35a88fed1351803579cd73a2983868ce392f6cecadd8cc.json",
@@ -269,7 +271,7 @@
       "ai_package_stages": {
         "submissions/PozdnyakovMaxim/shared-floor-jingzhang": "formal"
       },
-      "total_bytes": 38076264,
+      "total_bytes": 40823113,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -343,15 +345,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 111,
+        "known_metric_refs_required": 126,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 47,
+          "source": 48,
           "standard": 6,
           "depth": 14,
-          "data": 25,
-          "metric": 72
+          "data": 27,
+          "metric": 100
         }
       }
     },

@@ -25,6 +25,7 @@
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/brand/vi_applications.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/brand/vi_palette.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/brand/vi_palette.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/8d_mechanism.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/8d_mechanism.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/brand_identity.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/brand_identity.png",
@@ -43,6 +44,7 @@
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/gantt_chart.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/implementation-gantt.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/implementation-gantt.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/inclusive_matrix.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/inclusive_matrix.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/key-areas.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/key-areas.png",
@@ -66,10 +68,12 @@
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/pilot_node_plan.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/pilot_node_section.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/project_matrix.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/regional_synergy.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/regional_synergy.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/road_section.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/site-overview.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/site-overview.png",
+        "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/spatial_function_synergy.en.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assets/figures/spatial_function_synergy.png",
         "submissions/927420095-bot/dazhongsi-physarum-network/assumptions.json",
         "submissions/927420095-bot/dazhongsi-physarum-network/changelog.md",
@@ -77,10 +81,6 @@
         "submissions/927420095-bot/dazhongsi-physarum-network/design_depth_matrix.json",
         "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a0-boards.en.pdf",
         "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a0-boards.pdf",
-        "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a0_board_01.en.pdf",
-        "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a0_board_01.pdf",
-        "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a0_board_02.en.pdf",
-        "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a0_board_02.pdf",
         "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a3-booklet.en.pdf",
         "submissions/927420095-bot/dazhongsi-physarum-network/drawings/a3-booklet.pdf",
         "submissions/927420095-bot/dazhongsi-physarum-network/drawings/land_use_plan.pdf",
@@ -126,7 +126,7 @@
       "ai_package_stages": {
         "submissions/927420095-bot/dazhongsi-physarum-network": "formal"
       },
-      "total_bytes": 34184096,
+      "total_bytes": 29549166,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -204,11 +204,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 4,
+          "source": 6,
           "standard": 5,
           "depth": 14,
           "data": 12,
-          "metric": 9
+          "metric": 15
         }
       }
     },

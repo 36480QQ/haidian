@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "name": "lifecycle_nodes_and_calibration_cases",
-  "note_zh": "保留 6 个生命周期点和 4 个案例点，其中仅 2 个大钟寺案例为详细旗舰案例；另 2 个降级为 secondary scenario library。公共空间面不复制为 AI 服务区。",
+  "note_zh": "保留 6 个生命周期点、3 个旗舰案例点和 1 个 supporting 场景载体点；其余 supporting 场景映射到既有路线、公共空间或绿地属性，不复制几何。公共空间面不复制为 AI 服务区。",
   "features": [
     {
       "type": "Feature",
@@ -16,6 +16,11 @@
         "name_en": "Problem Intake and Field Evidence Entry",
         "node_type": "lifecycle_gate",
         "lifecycle_stage": "problem_intake",
+        "v6_ecosystem_node": "ECO-01",
+        "pilgrimage_node_id": "LANDMARK-01",
+        "pilgrimage_role": "engineering_problem_archive",
+        "ordinary_public_use": "shade seating walking orientation and readable public problem briefs",
+        "annual_operation_stage": "continuous_problem_intake",
         "data_status": "indicative_location",
         "proposed": true,
         "requires_detailed_survey": true
@@ -41,6 +46,8 @@
         "name_en": "Zhongzhiyuan Calibration Gate",
         "node_type": "lifecycle_gate",
         "lifecycle_stage": "calibration",
+        "v6_ecosystem_node": "ECO-04",
+        "annual_operation_stage": "summer_controlled_calibration",
         "data_status": "indicative_location",
         "proposed": true,
         "requires_detailed_survey": true
@@ -66,6 +73,10 @@
         "name_en": "University-Heritage Civic Verification Point",
         "node_type": "lifecycle_gate",
         "lifecycle_stage": "civic_verification",
+        "v6_ecosystem_node": "ECO-03",
+        "pilgrimage_node_id": "LANDMARK-02",
+        "pilgrimage_role": "open_source_contribution_ground_interface",
+        "annual_operation_stage": "spring_open_knowledge_and_prototype",
         "data_status": "indicative_location",
         "proposed": true,
         "requires_detailed_survey": true
@@ -87,18 +98,24 @@
         "source_type": "agent_generated_design",
         "confidence": "low",
         "geometry_role": "design_proposal",
-        "name_zh": "众智园低速服务 Agent 有界试运行",
-        "name_en": "Zhongzhiyuan Low-Speed Service Agent Bounded Pilot",
+        "name_zh": "开源低速公共服务 Agent",
+        "name_en": "Open-source Low-speed Public-Service Agent",
         "node_type": "calibration_case",
         "case_topic": "controlled_low_speed_service",
         "risk_level": "medium",
-        "data_status": "scenario_library_secondary",
+        "data_status": "flagship_case_proposed_cross_belt_protocol",
         "proposed": true,
-        "responsible_operator_type": "registered public or contracted service operator",
-        "release_condition": "evidence threshold and human fallback published before bounded deployment",
-        "public_verification": "on-site feedback, accessibility observation, appeal and incident record",
-        "rollback_condition": "threshold breach, material harm, unavailable human fallback, or unresolved repeated complaint",
-        "core_board_weight": "secondary"
+        "responsible_operator_type": "registered device/service operator with site manager, independent evaluator and visible on-site human supervisor",
+        "release_condition": "surveyed bounded route, published task and exclusions, tested stop/takeover, accessible bypass and incident channel",
+        "public_verification": "public observers report blockage discomfort exclusion or task failure during limited Dazhongsi first use",
+        "rollback_condition": "collision or near miss, inaccessible bypass, repeated obstruction, remote-stop failure or absent supervisor",
+        "no_ai_fallback": "human staff trolley or static wayfinding performs the same non-critical service",
+        "evaluation_status": "proposed_evaluation_protocol_no_measured_result",
+        "point_location_semantics": "Indicative indoor-or-courtyard calibration interface within an OSM building candidate; not an exact room, tenancy, entrance or public-space claim.",
+        "inside_osm_building_candidate": true,
+        "requires_building_access_confirmation": true,
+        "cross_belt_sequence": ["Zhongzhiyuan controlled validation", "AI Origin open-source reproduction", "Dazhongsi limited first use", "Jingzhang civic verification"],
+        "core_board_weight": "primary"
       },
       "geometry": {
         "type": "Point",
@@ -122,13 +139,13 @@
         "node_type": "calibration_case",
         "case_topic": "heritage_learning",
         "risk_level": "low",
-        "data_status": "scenario_library_secondary",
+        "data_status": "supporting_scenario_proposed",
         "proposed": true,
         "responsible_operator_type": "registered public or contracted service operator",
         "release_condition": "evidence threshold and human fallback published before bounded deployment",
         "public_verification": "on-site feedback, accessibility observation, appeal and incident record",
         "rollback_condition": "threshold breach, material harm, unavailable human fallback, or unresolved repeated complaint",
-        "core_board_weight": "secondary"
+        "core_board_weight": "supporting"
       },
       "geometry": {
         "type": "Point",
@@ -621,6 +638,8 @@
         "data_status": "mapped_open_space_access_rights_unverified",
         "source_id": "OSM-API-DAZHONGSI-20260815",
         "osm_way_id": "1324063875",
+        "supporting_scenario_ids": ["SC-S3"],
+        "scenario_status": "potential_opt_in_directory_and_public_notices_only",
         "requires_access_survey": true
       },
       "geometry": {
@@ -851,6 +870,8 @@
         "name_en": "Dazhongsi Release Gate",
         "node_type": "lifecycle_gate",
         "lifecycle_stage": "release_gate",
+        "v6_ecosystem_node": "ECO-07",
+        "annual_operation_stage": "autumn_limited_release_and_civic_verification",
         "data_status": "indicative_within_building_free_pedestrian_space",
         "proposed": true,
         "requires_detailed_survey": true
@@ -876,6 +897,8 @@
         "name_en": "Dazhongsi civic verification point",
         "node_type": "public_interface",
         "lifecycle_stage": "civic_verification",
+        "v6_ecosystem_node": "ECO-09",
+        "annual_operation_stage": "autumn_limited_release_and_civic_verification",
         "data_status": "indicative_within_osm_pedestrian_precinct",
         "proposed": true,
         "requires_detailed_survey": true
@@ -901,6 +924,9 @@
         "name_en": "Human service and appeal point",
         "node_type": "public_interface",
         "lifecycle_stage": "appeal",
+        "v6_ecosystem_node": "ECO-09",
+        "no_ai_continuity_role": "staffed assistance paper information and complaint channel",
+        "supporting_scenario_ids": ["SC-S2", "SC-S6", "SC-SYS1"],
         "data_status": "indicative_within_osm_pedestrian_precinct",
         "proposed": true,
         "requires_operator_confirmation": true
@@ -926,6 +952,8 @@
         "name_en": "Rollback decision and public notice point",
         "node_type": "lifecycle_gate",
         "lifecycle_stage": "rollback_retirement",
+        "v6_ecosystem_node": "ECO-10",
+        "annual_operation_stage": "winter_renew_rollback_retirement_archive",
         "data_status": "indicative_building_free_public_interface",
         "proposed": true,
         "requires_detailed_survey": true
@@ -951,6 +979,9 @@
         "name_en": "Retirement Memory archive point",
         "node_type": "lifecycle_gate",
         "lifecycle_stage": "rollback_retirement",
+        "v6_ecosystem_node": "ECO-10",
+        "pilgrimage_node_id": "LANDMARK-03",
+        "annual_operation_stage": "winter_renew_rollback_retirement_archive",
         "data_status": "indicative_building_free_station_edge",
         "proposed": true,
         "requires_detailed_survey": true
@@ -1453,6 +1484,8 @@
         "name_zh": "众智园校准庭院与科研接口",
         "name_en": "Zhongzhiyuan Calibration Courtyard and Research Interface",
         "lifecycle_role": "calibration_core",
+        "v6_ecosystem_role": "research_controlled_testing_and_evaluation_receipt",
+        "annual_operation_stage": "summer_controlled_calibration",
         "data_status": "not_a_public_space_boundary",
         "existing_reality": false,
         "proposed": true,
@@ -1744,6 +1777,10 @@
         "name_zh": "高校—遗产学习与公众复核院落",
         "name_en": "University-Heritage Learning and Civic Verification Courtyard",
         "lifecycle_role": "civic_verification",
+        "v6_ecosystem_role": "open_source_prototype_reproduction_and_public_explanation",
+        "pilgrimage_node_id": "LANDMARK-02",
+        "annual_operation_stage": "spring_open_knowledge_and_prototype",
+        "supporting_scenario_ids": ["SC-S1", "SC-S4"],
         "data_status": "not_a_public_space_boundary",
         "existing_reality": false,
         "proposed": true,

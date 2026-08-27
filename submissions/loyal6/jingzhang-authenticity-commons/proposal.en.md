@@ -21,26 +21,9 @@ scenarios: ["ai-health-service-navigation", "enterprise-service-copilot", "publi
 
 Jing-Zhang Authenticity Commons (JZAC) is neither a truth authority nor a permanent trust score for people, content or firms. It translates the most important modernity of the century-old Jing-Zhang Railway—a public-works discipline of measurement, handover, maintenance and repair—into AI-era urban infrastructure. Zhongzhiyuan tests claims and failure boundaries; the AI Origin Community makes evidence understandable and contestable; Dazhongsi tests whether procurement and use can be reversed. Harm found at the point of use returns through the same channels to public review, product retesting and procurement updates. Success is not “the machine decided truth”; it is that an error was paused, reviewed, corrected through the same channels and converted into a revision task.
 
-## Core Concept and Verifiable Mechanism: The PILOT-A Synthetic Correction Drill
-
-The original mechanism is not another truth-detection model. It is an urban loop of original-channel inventory, human pause, independent review, same-channel correction, product retest, and spatial/data recovery; PILOT-A compresses that loop into one publicly reproducible service scenario.
-
-In a controlled drill, an ordinary visitor sees a Jing-Zhang “historical photograph” described on both a physical exhibit label and an offline webpage. The image is clearly designated as synthetic test material, yet both drill channels mislabel it as an “original historical record.” This is neither a real incident nor a release into live public channels. It is a synthetic exercise designed to test whether the system can admit error, return correction and recover. The visitor need not understand model parameters; they check one thing: **did the correction return to every channel on which they saw the error?** [data:visual/assets/correction-receipt-demo.json#JZAC-DEMO-001]
-
-| Drill time | Human and system action | Publicly inspectable evidence | Fail-closed rule |
-| --- | --- | --- | --- |
-| T+00 | Synthetic mislabel appears on the drill label and offline page | Two original-channel IDs and one paper case number | Do not start without a channel inventory |
-| T+05 | Staff pause both drill interfaces manually | Pause time, accountable role and uncertainty notice | No accountable role means immediate pause |
-| T+20 | An independent archive-review role checks provenance, detector output and human judgement separately | Review states “AI reconstruction, not an original record” | Keep paused if basis and judgement are conflated |
-| T+35 | Correction returns to the original label and original offline page, not only the backend | Channel-by-channel acknowledgements; coverage 2/2 | One missed channel blocks service restoration |
-| T+50 | The mislabel becomes a product retest task for the publishing workflow | Traceable retest ID and modify/retire decision | The case cannot close without a retest task |
-| T+60 | Temporary label, cached data and test material are restored or cleared | Spatial, asset and data recovery record | No recovery record means retirement |
-
-### One Machine-readable Receipt That Can Be Failure-injected
-
-The drill emits `correction-receipt-demo.json`, recording the synthetic-case declaration, original propagation channels, pause time, evidence basis, independent reviewer, per-channel correction status, product-retest task, data/site recovery and final disposition. It is not an operating KPI or field-service result. The drill deliberately removes the accountable role, original-channel inventory, independent reviewer or recovery record; the system must switch to pause or retire. PILOT-A may advance only when all four fail-closed injections pass and both original channels acknowledge correction [data:visual/assets/correction-receipt-demo.json#fail_closed_tests].
-
 ## One-page Overview: One Closed Loop, Not Six Checklists
+
+A person should not have to decode a technical protocol before knowing whether correction is possible. JZAC compresses its entry point into one public test, its urban structure into one bidirectional evidence spine, and the taskbook's brand, industry, scenario, spatial, cultural and operating work into a service chain that can stop, review and recover.
 
 | Taskbook requirement | JZAC response | Inspectable output |
 | --- | --- | --- |
@@ -51,6 +34,18 @@ The drill emits `correction-receipt-demo.json`, recording the synthetic-case dec
 | Success and failure | Judge neither screens, footfall nor a single accuracy score; judge human handover, appeal, correction, export, shutdown and site recovery | Computable readiness plus field outcomes that stay unknown until measured |
 
 The table puts all six agent tasks on one evidence chain. Brand states a public promise; industry provides reproducible tests; scenarios generate situated problems; space hosts review and recovery; culture explains why errors must remain repairable; operation decides when to pause, modify or retire [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+### Three Verification Layers, Not One Truth Score
+
+| Layer | Question | Required evidence | Boundary |
+| --- | --- | --- | --- |
+| V1 Trace provenance and propagation | Where did the information come from, which version, for what purpose, and through which channels? | Source, version, purpose, expiry and complete original-channel inventory | Valid provenance does not prove factual truth |
+| V2 Independent human fact review | Can the particular claim be supported by domain evidence? | Named independent reviewer, evidence basis, dissent and uncertainty | Detector output does not replace human factual judgement |
+| V3 Executable correction consequences | Can the error be paused, corrected through its original channels and prevented from causing further effects? | Pause record, acknowledgements, product retest, procurement update, recovery or retirement | A backend-only edit does not count as correction |
+
+The three layers ask whether an item can be traced, judged and actually repaired. A conclusion may remain uncertain; accountability, delivery channels and recovery actions may not disappear [data:visual/assets/correction-protocol.json#verification_layers].
+
+![Bidirectional evidence spine, three areas, two wings and three verification layers](assets/figures/site-overview.en.png)
 
 ## Design Basis and Source Inventory
 
@@ -83,8 +78,6 @@ Eleven official or first-party cases support provenance, blind testing, risk gov
 
 Complete sources, limitations and primary links remain in `visual/assets/global-cases.json` and `sources.json`. This table is a rapid “mechanism-application-red line” review index; it creates no unverified partnership or implementation fact [metric:global_case_count].
 
-![Bidirectional evidence spine and urban correction rights](assets/figures/site-overview.en.png)
-
 ## Three-level Scope Framework
 
 The coordinated study scope handles industry, governance and reciprocal wings; the overall design scope translates the bidirectional spine into renewal, slow mobility, blue-green public space and six station types; each key area forms a distinct prototype, responsibility contract and reversible delivery unit. All three levels converge through “strategic judgement—spatial prototype—accountable owner—acceptance evidence—failure recovery,” without inventing new pseudo-precise boundaries [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:three_level_scope_framework].
@@ -92,6 +85,31 @@ The coordinated study scope handles industry, governance and reciprocal wings; t
 One evidence spine works in two directions. Southbound evidence moves from bounded, versioned failure tests at Zhongzhiyuan, through public interpretation and review at AI Origin, to a reversible adoption decision at Dazhongsi. Northbound correction starts when a resident, merchant or operator reports harm at the point of use: the original channel pauses and corrects, then the case becomes a retest and product-revision task. The Zhongguancun Technology Services Wing translates evidence into legal, IP, incubation, procurement and risk material; the Xiaoyue River Scenario Wing turns daily problems into the next test tasks [data:geometry/site_boundary.geojson#SITE-001] [metric:key_area_count].
 
 Regional synergy uses interfaces rather than detached enclaves. Beiwei Community contributes daily service questions and screenless experience testing; Future Science City offers a candidate interface for frontier research entering public evaluation; Huairou Science City offers candidate questions concerning scientific instruments, research-data governance and public explanation; Beijing E-Town offers manufacturing and supply-chain stress tests; Jing-Jin-Ji city and industry nodes provide cross-regional transfer retesting. All five are proposal interfaces, not established partnerships. Any connection requires data permission, named responsibility and an exit drill [source:AGENT-TASKBOOK] [data:visual/assets/brand-operations.json#regional_synergy].
+
+### Regional Deliverables and Exit
+
+Each candidate interface records responsibility, input, output, authorization, retesting and exit. Beiwei questions reach Origin as task cards and screenless replies; candidate Future Science City results reach Zhongzhiyuan as failure/retest dossiers; licensed Huairou material yields evidence limitations and revised public explanations; redacted E-Town tasks yield stress tests and procurement-exit checklists; Jing-Jin-Ji transfers require difference tables and receiving-site review. Each exchange records a receiver, purpose and withdrawal route; discussion alone is not delivery [data:visual/assets/execution-contract.json#regional_interfaces].
+
+Full-stack support covers data, isolated compute environments, models/tools, independent evaluation, scenario spaces, and talent/enterprise services. Outputs are licensed test bundles, run logs, version/failure dossiers, expiring review opinions, adaptation/recovery checklists and engineering handover records. Roles remain unappointed and all interfaces unsigned; live exchanges require purpose-specific permission. The [execution and collaboration annex](visual/index.en.html#execution) contains complete fields, not existing partnerships or funding commitments [data:visual/assets/execution-contract.json#full_stack].
+
+## Core Concept and Verifiable Mechanism: PILOT-A Three-area Correction Relay
+
+PILOT-A is not a new truth-detection model. It is a controlled synthetic drill that places intake, pause, review, correction, retest and recovery into a real spatial relationship. A temporary drill label and offline page at Dazhongsi misdescribe clearly marked AI-reconstructed test material as an “original Jing-Zhang historical record.” An ordinary visitor reports it through the screenless counter at the AI Origin Community. A person pauses both channels; an independent archive reviewer separates provenance records, detector output and factual judgement; correction returns to the original label and page. The case then moves north to Zhongzhiyuan as a product and publishing-workflow failure retest. It returns to Dazhongsi to update procurement evidence, test exit, and clear the temporary label, cache and test material. Nothing is released through live public channels, and no field-performance claim is made [data:visual/assets/correction-receipt-demo.json#JZAC-DEMO-001].
+
+| Time and place | Human and system action | Public evidence | Fail-closed rule |
+| --- | --- | --- | --- |
+| T+00 AI Origin | Screenless intake creates a paper case and inventories the exhibit label and offline page | One case ID + two channel IDs | Do not start without owner or complete inventory |
+| T+05 AI Origin | Original-channel owner manually pauses both drill interfaces | Pause time, accountable role and uncertainty notice | Missing owner causes immediate lock |
+| T+20 AI Origin | Independent archive reviewer separates provenance, detection and factual claim | “AI reconstruction, not an original historical record” | Keep paused if provenance and truth are conflated |
+| T+35 AI Origin | Correction returns to the original label and page with acknowledgements | Same-channel correction 2/2 | One missed channel blocks recovery |
+| T+50 Zhongzhiyuan | Mislabel becomes a product and publishing-workflow failure retest | Retest ID, failure boundary and modify/retire advice | The case cannot close without a retest |
+| T+60 Dazhongsi | Procurement dossier is updated, exit tested, and space/data recovered | Procurement update, exit record and recovery record | Missing recovery record requires retirement |
+
+Five Origin Community spaces host the drill: screenless intake counter, evidence foyer, private review room, public correction table, and revision-and-return wall. Five roles are the reporting visitor, case steward, original-channel owner, independent archive reviewer, and product/procurement owner. Acceptance is concrete: same-channel correction 2/2, four failure injections producing 4/4 expected lock states, and a complete three-area relay. Removing the accountable role, channel inventory, independent reviewer or recovery record must cause pause or retirement [data:visual/assets/pilot-playbook.json#pilot_a_implementation_card] [data:visual/assets/correction-receipt-demo.json#fail_closed_tests].
+
+### One Inspectable, Failure-injectable Correction Receipt
+
+`correction-receipt-demo.json` records the synthetic declaration, three verification layers, three-area relay, six moments, channel acknowledgements, product retest, procurement update and spatial/data recovery. It is a protocol sample, not an operating KPI. The service may advance only when the Origin correction, Zhongzhiyuan retest and Dazhongsi exit/recovery are all complete; otherwise it remains paused or retires.
 
 ## Coordinated Study Scope: Industry and Future City
 
@@ -184,6 +202,14 @@ During months 18–36, only after official geometry, ownership, building, fire, 
 
 No monetary range is fabricated. Projects use S (existing counter, staff training and paper/telephone workflow), M (reversible fit-out, isolation equipment and access improvement) and L (multi-organization evaluation facility) resource bands, with staffing, fit-out, equipment, data, accessibility, audit and recovery cost components. Monetary ranges require quantities, ownership conditions and authoritative local cost references. Core public screenless service remains free; selling case data and monetizing opaque scoring are prohibited [source:CASE-C07] [depth:renewal_project_list].
 
+### Execution Annex and Field-start Conditions
+
+Status: this remains a conceptual proposal using a provisional boundary. Site engineering conditions and operating KPIs await authorized field measurement. A complete execution annex is not field approval.
+
+The RACI overview expands into eight actions: authorization, intake, pause, independent review, same-channel correction, product retest, data/site recovery, and adopt/modify/retire. Each has one accountable role and explicit responsible, consulted and informed roles. Publishers, suppliers and material authors cannot independently review their own case. Each original channel records old/new versions, pause/correction times, acknowledger and evidence; omissions or missing receipts keep service paused. See the [fillable execution annex](visual/index.en.html#execution) [data:visual/assets/execution-contract.json#raci].
+
+Before field operation, confirm the host, staffing hours, data rules, accessibility co-test and signatures. These are unsigned drafts, not operating services. Co-testing covers no-phone intake, low-vision status reading, wheelchair arrival/departure and assisted explanation of provenance versus truth. Participation is voluntary and stoppable; record barriers, revisions and retests. Metric definitions specify start/end events, denominators and treatment of failures and pending cases; baselines, field targets and observed results await authorization [data:visual/assets/execution-contract.json#measurement].
+
 ## Metrics, Recalculation and Compliance
 
 Metrics separate package readiness from operational outcomes. Computable readiness includes three key areas, six stations, 15 scenarios, 12 journeys, five industry tests, four correction rights, and completion of owner, human route, correction channel, pause, shutdown and recovery fields. All six stations currently carry the structured contract, proving inspectability rather than an existing service [metric:verification_station_count] [metric:station_contract_complete_count] [metric:human_handover_contract_coverage_ratio].
@@ -200,7 +226,13 @@ The compliance boundary is explicit and parallel: public material stays within l
 
 The main report, HTML, A3, A0 and five text-bearing figures have English counterparts. The offline visual loads no CDN, remote map, font, form, iframe, tracker or network request. The AI-generated cover is disclosed. The five figures derive from the package GeoJSON, metrics and structured protocols; the PDFs use the same figures and have been rendered page by page for visual inspection. Short video is deferred and does not reduce the completeness of the static professional package. Every spatial move is conceptual material for professional deepening, not approved planning, final ownership, committed investment or guaranteed delivery.
 
-Version 1.2 retains the breadth of v1.0 in global cases, industry ecosystem, scenarios, talent, culture and long-term operation, and the v1.1 strengths of the bidirectional evidence spine, four correction rights, three spatial prototypes, six-field responsibility contracts and 90-day failure pilot. New content strengthens readability, relevance and taskbook mapping without presenting proposal material as implemented achievement.
+Version 1.4 candidate is not a volume expansion. It preserves the breadth of v1.2 in global cases, industry ecosystem, scenarios, talent, culture and long-term operation, as well as the one public test and controlled synthetic drill introduced in v1.3. The new work only turns three verification layers—provenance and propagation tracing, independent human fact review, and executable pause–correct–retest–procurement update–recover/retire consequences—into a three-area PILOT-A relay, while improving spatial evidence and readability at normal review scale. It does not present proposal material as implemented achievement.
+
+### Data and Authorization Evidence Boundaries
+
+The annex separates public correction receipts, restricted case materials and minimal audit events. Public receipts exclude originals and direct identifiers; restricted material uses need-to-know access, with no default publication of linkable hashes. Deletion within 30 days after closure and completed appeals, and 90-day necessity reviews for public/audit records, are proposed intervals requiring professional review, not statutory deadlines. Deletion covers originals, derivatives, caches, exports and backups; pending backups cannot be called complete deletion. Preservation exceptions require basis, approver, review date and access limits [data:visual/assets/execution-contract.json#data_protocol].
+
+This revision can verify offline fonts, protocol fields and controlled failure tests. Live permission, operator agreements, field co-tests and engineering costs are conditional follow-ups with explicit triggers and owners. They restrict real-world startup and are not presented as obtained evidence. Official geometry still triggers package-wide recalculation; this revision changes neither the nine spatial layers nor unknown statutory metrics [data:visual/assets/execution-contract.json#conditional_followups].
 
 ## References
 

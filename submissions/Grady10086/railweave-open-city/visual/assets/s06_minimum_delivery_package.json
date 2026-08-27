@@ -19,9 +19,9 @@
     "implementation_register": "implementation_register.json#/project_registers/0",
     "verification_handoff": "verification_handoff_register.json#/records/2",
     "cost_evidence": "cost_evidence_plan.json#/items/5",
-    "test_receipt": "receipt.json#/s06_90_day_slice",
-    "spatial_audit_segments": ["../../geometry/roads.geojson#AUD-V21-SPINE-01", "../../geometry/roads.geojson#AUD-V21-SPINE-06"],
-    "candidate_component": "../../geometry/public_space.geojson#DC-V21-AI-001"
+    "test_receipt": "receipt.json#/s06_100_day_slice",
+    "spatial_audit_segments": ["../../geometry/roads.geojson#AUD-SPINE-01", "../../geometry/roads.geojson#AUD-SPINE-06"],
+    "candidate_component": "../../geometry/public_space.geojson#DC-AI-001"
   },
   "common_controls": {
     "ordinary_service_first_zh": "固定导视、触觉与易读信息、纸质导览、电话和人工服务必须先于AI可用，并在全周期保持等价。",
@@ -33,8 +33,8 @@
     "no_penalty_rule_en": "Declining or disabling AI shall add no fee, unreasonable wait, or off-site journey."
   },
   "pilot_definition": {
-    "candidate_anchor_id": "AN-V21-005",
-    "candidate_component_id": "DC-V21-AI-001",
+    "candidate_anchor_id": "AN-005",
+    "candidate_component_id": "DC-AI-001",
     "site_status": "G0_pending_field_verification",
     "controlled_route_length_m": {"low": 100, "high": 150, "status": "design_control_pending_survey"},
     "decision_point_count": {"low": 3, "high": 5, "status": "design_control_pending_survey"},

@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "submission_dir": "submissions\\hechushitaoyuan\\jingzhang-fengshui-ai-belt",
+  "submission_dir": "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt",
   "pr_author": "hechushitaoyuan",
   "stage": "formal",
   "deterministic_validation": {
@@ -20,8 +20,14 @@
       ],
       "changed_files": [
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/agent.json",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/context-basemap.en.png",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/context-basemap.png",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/cultural-narrative.en.png",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/cultural-narrative.png",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/dazhongsi-block-concept.en.png",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/dazhongsi-block-concept.png",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/key-area-detail.en.png",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/key-area-detail.png",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/key-areas.en.png",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/key-areas.png",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/figures/land-use-structure.en.png",
@@ -50,6 +56,12 @@
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/media/experience.md",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/media/experience.mp4",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/media/experience.vtt",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/screenshots/a0-boards-contact-sheet.png",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/screenshots/a3-booklet-contact-sheet.png",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/screenshots/cjk-control-tofu-without-font.png",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/screenshots/cjk-proof-proposal-en.png",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/screenshots/cjk-proof-proposal-zh.png",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assets/screenshots/cjk-proof-visual-zh.png",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/assumptions.json",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/changelog.md",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/compliance_matrix.json",
@@ -79,15 +91,23 @@
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/sources.json",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/standard_matrix.json",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/a11y-color-check.json",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/fonts.css",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/governance/data-card.schema.json",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/governance/evidence-readiness-register.json",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/governance/measurement-registry.json",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/governance/model-card.schema.json",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/governance/qi-protocol.json",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/governance/qi-pulse-governance-verification.json",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/governance/qi-pulse-verification.json",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/governance/role-spec.json",
+        "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/assets/governance/verify-governance.js",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/index.en.html",
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/hechushitaoyuan/jingzhang-fengshui-ai-belt": "formal"
       },
-      "total_bytes": 15196020,
+      "total_bytes": 21965625,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -163,16 +183,16 @@
       "issues": [],
       "summary": {
         "standard_matrix_items": 9,
-        "design_depth_items": 15,
-        "known_metric_refs_required": 45,
+        "design_depth_items": 19,
+        "known_metric_refs_required": 62,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 12,
+          "source": 17,
           "standard": 6,
-          "depth": 6,
+          "depth": 29,
           "data": 10,
-          "metric": 16
+          "metric": 29
         }
       }
     },

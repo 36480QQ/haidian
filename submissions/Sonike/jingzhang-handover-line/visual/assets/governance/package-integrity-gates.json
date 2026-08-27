@@ -118,7 +118,7 @@
       "statement_en": "Shipped figures must be byte-reproducible from their generators; anything that is not must be recorded as such.",
       "checks": "assets/figures/*.png 与 drawings/*.pdf 各页",
       "decision_rule_zh": "以未改动的生成器重跑，sha256 须与包内文件相同；PDF 用 72–100 dpi 逐页渲染后比对差异像素比例。",
-      "current_result": "2026-08-22 逐图重测（五张送审图件 ＋ 两套图纸首页），结果分三档，如实记录：**字节相同 3 张**——land-use-structure（`fig_land_use_structure.py`）、key-areas（`render_figures.py key-areas`）、mobility-bluegreen（`fig_mobility_bluegreen.py`）；**不可复现 4 项**——site-overview（`fig_site_overview.py` 差异像素 3.67%、包围盒占全图 24.2%，原因是生成器在 2026-08-18 加了用地／蓝绿／更新单元三层底图与三条图例，而包内是回滚后的版本）、metrics-evidence（`fig_metrics_evidence.py` 差异 40.60%、包围盒 81.4%；`.bak` 亦差 39.45%；仓库外工具链 git 历史中该文件只有一个版本且无变体开关，产出包内那版的生成器已丢失）、A0 首页 B/01（当前 `sheet_a0_b1.py` 差 8.36%、`.bak` 与 `.bak2` 各差 10.70%；已排除字体干扰——包内 PDF 嵌 NotoSerifSC 子集而新 sheet 用未嵌入的 STSong-Light；决定性证据是文本比对：包内首页含 SPACE-TO-ROLLBACK／12/12／48/48／0/12，不含 IDENTITY／COLOUR／分期条件门，三个候选全部相反）、A3 首页 JZ/01（见下方 2026-08-16 记录，生成器停在已撤回的任务书对照页版本）。⚠️ **2026-08-21 曾把这三张改为「展开取景」版（由 `*_v2.py` 生成、同样字节可复现）；2026-08-22 已整体回退到 v1 版本，本条随之改准**——回退理由与判据见 changelog 同日条目。口径与 sources.json 一致：**本包不主张逐字节可复现**，只主张几何与指标可由公式与源文件独立复算；本闸门的作用是把三档如实分开，而不是宣称全部可复现。",
+      "current_result": "2026-08-22 逐图重测（五张送审图件 ＋ 两套图纸首页），结果分三档，如实记录：**字节相同 3 张**——land-use-structure（`fig_land_use_structure.py`）、key-areas（`render_figures.py key-areas`）、mobility-bluegreen（`fig_mobility_bluegreen.py`）；**不可复现 4 项**——site-overview（`fig_site_overview.py` 差异像素 3.67%、包围盒占全图 24.2%，原因是生成器在 2026-08-18 加了用地／蓝绿／更新单元三层底图与三条图例，而包内是回滚后的版本）、metrics-evidence（`fig_metrics_evidence.py` 差异 40.60%、包围盒 81.4%；`.bak` 亦差 39.45%；仓库外工具链 git 历史中该文件只有一个版本且无变体开关，产出包内那版的生成器已丢失）、A0 首页 B/01（当前 `sheet_a0_b1.py` 差 8.36%、`.bak` 与 `.bak2` 各差 10.70%；已排除字体干扰——包内 PDF 嵌 NotoSerifSC 子集而新 sheet 用未嵌入的 STSong-Light；决定性证据是文本比对：包内首页含 SPACE-TO-ROLLBACK／12/12／48/48／0/12，不含 IDENTITY／COLOUR／分期条件门，三个候选全部相反）、A3 首页 JZ/01（见下方 2026-08-16 记录，生成器停在已撤回的任务书对照页版本）。⚠️ **2026-08-21 曾把这三张改为「展开取景」版（由 `*_v2.py` 生成、同样字节可复现）；2026-08-22 已整体回退到 v1 版本，本条随之改准。2026-08-24 的无障碍修复在 land-use-structure 的可复现基础图上增加了独立、像素幂等的纹理后处理：`apply-land-use-patterns.js` 同步处理中英 F/02 与四套 PDF 第 2 页，首次写入 57,987 像素、再跑为 0；`land-use-pattern-audit.js` 对 7 类 × 6 载体与 98 个区域逐像素复核。故 2026-08-22 的“字节相同”指纹理前基础图，当前最终载体另由该后处理与审计闭合。** 口径与 sources.json 一致：**本包不主张全部产物逐字节可复现**，只主张几何与指标可由公式与源文件独立复算；本闸门的作用是把三档如实分开，而不是宣称全部可复现。",
       "caught_real_defects": [
         {
           "when": "2026-08-22",
@@ -143,15 +143,19 @@
     },
     {
       "gate_id": "G07_PDF_PAGE_STAMP_CONSISTENCY",
-      "statement_zh": "每套图纸的页数必须等于版本印记命中数。",
-      "statement_en": "For each drawing set, the page count must equal the number of version-stamp hits.",
+      "statement_zh": "每套图纸的页数必须等于版本印记命中数，A0 首页嵌入栅格必须与当前 v2.0 源图一致。",
+      "statement_en": "For each drawing set, the page count must equal the version-stamp hit count, and embedded A0 cover rasters must match the current v2.0 sources.",
       "checks": "drawings/*.pdf",
-      "decision_rule_zh": "`qpdf --show-npages` 的结果须等于 `pdftotext | grep -c 'PACKAGE v1.15'`；不相等即意味着有页面印着别的版本号。",
-      "current_result": "a0-boards 6/6、a0-boards.en 6/6、a3-booklet 13/13、a3-booklet.en 13/13",
+      "decision_rule_zh": "`qpdf --show-npages` 的结果须等于 `pdftotext | grep -c 'PACKAGE v2.0'`，且 `PACKAGE v1.15` 命中数须为 0；另须由 `version-audit.js` 从 A0 中英首页各抽取 F/01 与 F/03，解码后与当前源图逐像素一致（4/4）。任一项失败即仍存在旧投稿包标识或陈旧嵌入图。",
+      "current_result": "a0-boards 6/6、a0-boards.en 6/6、a3-booklet 13/13、a3-booklet.en 13/13；PACKAGE v1.15 四套均为 0；A0 内嵌图 4/4 与当前 v2.0 源图逐像素一致",
       "caught_real_defects": [
         {
           "when": "更早",
           "what": "版本印记常量有三处而非两处（jzstyle / jzsheet / assemble_pdfs），漏掉 jzsheet 会让新页印旧版本、保留页印新版本，正好制造要消除的「版本号并存」。**这条闸门是唯一能发现它的方式**，因为两处印记各自看都自洽。"
+        },
+        {
+          "when": "2026-08-24 93 分复评",
+          "what": "A0 中英首页外层可检索页脚已是 v2.0，但内嵌 F/01 栅格仍显示 PACKAGE v1.15；纯文本命中检查全绿却漏过视觉旧版本。重建首页并加入 4/4 逐像素源图绑定后关闭该盲区。"
         }
       ]
     },
@@ -209,11 +213,21 @@
     },
     {
       "gate_id": "G12_HTML_OFFLINE_SELF_CONTAINMENT",
-      "statement_zh": "四个 HTML 必须离线可开，不依赖任何外部资源。",
-      "statement_en": "All four HTML files must open offline with no external dependency.",
-      "checks": "visual/index[.en].html、report/proposal[.en].html",
-      "decision_rule_zh": "全文不得出现指向 http(s) 的 src / href 资源引用（CDN、远程瓦片、外部脚本、外部字体、API、iframe 一律禁止）。",
-      "current_result": "四个 HTML 的外部 http(s) 资源引用数 = 0"
+      "statement_zh": "四个 HTML 必须离线可开，并在无系统中文字体的干净浏览器中完整显示。",
+      "statement_en": "All four HTML files must open offline and render completely in a clean browser with no system CJK font.",
+      "checks": "visual/index[.en].html、report/proposal[.en].html；P0 原型位于 visual/index.html#p0-prototype",
+      "decision_rule_zh": "全文不得出现指向 http(s) 的 src / href 资源引用；四页须加载包内哈希绑定的 CJK WOFF2，中文 body 以 JZHandoverCJK 为首选，交互总览页 24 类等宽标签须显式把该字体列在 generic monospace 之前，且不得使用无效的 `font: … inherit` shorthand。",
+      "current_result": "四个 HTML 的外部 http(s) 资源引用数 = 0；268,872 字节 WOFF2 哈希、OFL、1,629 组可见字符全部闭合；交互总览页 24/24 类等宽标签显式回退 JZHandoverCJK；内嵌 P0 原型使用同一包内字体，已在 1280×633 桌面与 390×844 手机视口复核锚点、单列布局、双语、大字、高对比、拒绝不降级、投稿 CLOSED／现场 BLOCKED 状态分层与零浏览器存储",
+      "caught_real_defects": [
+        {
+          "when": "2026-08-23 88 分评审",
+          "what": "中文 body 依赖 macOS 系统字体，干净评审容器中大面积显示方框；改为四页共用包内 OFL CJK WOFF2。"
+        },
+        {
+          "when": "2026-08-24 93 分二次复评",
+          "what": "body 字体已正确，但微标题和交互控件用 `font: … monospace` 重置字体栈，macOS 的系统补字再次掩盖了 Linux 方框；现由 24 类等宽选择器显式回退包内 CJK 字体。"
+        }
+      ]
     },
     {
       "gate_id": "G13_REVIEW_VISUAL_BUDGET",

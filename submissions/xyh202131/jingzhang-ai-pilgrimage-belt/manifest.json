@@ -12,31 +12,19 @@
     "agent_name": "xyh202131 AI design agent",
     "model": "OpenAI Codex (GPT-5)",
     "model_family": "gpt",
-    "model_detail": "OpenAI Codex agent based on GPT-5; exact serving snapshot not asserted by the package",
+    "model_detail": "OpenAI Codex agent based on GPT-5; exact serving snapshot is not asserted by the package.",
     "provider": "OpenAI",
     "tools_used": [
       "OpenAI Codex (GPT-5 family; exact serving snapshot not asserted)",
-      "Python 3.13.12",
-      "Node.js 22.22.3",
-      "Git 2.54.0",
-      "GitHub CLI 2.95.0",
-      "Firecrawl CLI 1.19.30",
-      "ReportLab 5.0.0",
-      "fontTools 4.63.0",
-      "PyMuPDF 1.27.2.3",
+      "Python 3.14.7",
       "Pillow 12.2.0",
-      "Google Chrome 151.0.7922.108 and Microsoft Edge 151.0.4129.72 (offline headless SVG rasterization)",
-      "scripts/score_submission.py",
-      "scripts/validate_local_submission.py",
-      "scripts/spatial_review.py",
-      "scripts/visual_review.py",
-      "scripts/professional_review.py",
-      "scripts/self_check_submission.py",
-      "scripts/participant_preflight.py",
-      "OpenAI built-in image generation (exact serving snapshot not asserted)",
-      "Pillow 12.2.0 WebP conversion and metadata inspection",
-      "Python 3 package-authored SVG and structured-register generation",
-      "Google Chrome headless deterministic SVG rasterization"
+      "PyMuPDF 1.27.2.3",
+      "Google Chrome 151.0.7922.174",
+      "FFmpeg 6.1.1-essentials_build-www.gyan.dev",
+      "FFprobe 6.1.1-essentials_build-www.gyan.dev",
+      "Noto Sans CJK SC Regular under SIL OFL 1.1",
+      "Node.js zero-dependency T-02 replay",
+      "repository score, spatial, visual, professional, self-check and participant-preflight scripts"
     ]
   },
   "generated_at": "2026-08-13T06:04:16Z",
@@ -51,13 +39,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "cd46d23c2341eb7b6b59184525cd6b9bebc21f0462930f5d45970c915981854f"
+      "sha256": "a7fee9055bc97d896d7858f9f299cfa4d63f2283e1b0cef80e2bc2044363035d"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "fc33c42045f7b29ebb24366c386144cb345a80031f8cd798f6c4d329df61a015"
+      "sha256": "bab5253cf282962d0f80c862c1d382f69aa8fc0f7e3f2a46f89d56a53bd8e895"
     },
     {
       "path": "metrics.json",
@@ -69,19 +57,19 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "7d08cf96e6ec8809b2900bbb276e108046f82f99fe1ba7a40e0866cbff246271"
+      "sha256": "15ef396e03eba8962cad43e43c1e3826a00f2bf9f13cee2509bf68d61cff0bde"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "2b6a06f442af884970710bbff409d9a88ef20e0a3a0febe978e751a3909970d4"
+      "sha256": "5d68f2f47023f17a25ed081358c84f5ab708f3f20ca0e751f2222e79234ef7eb"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "06f01bbc67b6966edf5e3a66a7396fdc824480e30411accb5680300413995b58"
+      "sha256": "071a77ac0b856e22a1a5999bea37e77dca00aeef7b33b596de67f16fa58b079a"
     },
     {
       "path": "risk.json",
@@ -98,13 +86,13 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "25a58606756346b1783ec7a0a72499570470dda850d6a5e5ff0e44faa49afcba"
+      "sha256": "c6a226c4e4d8295d9b4ce1cde06732c1d6a4caa822b2c7ce9e39524b18e2fd9f"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "c02f8ba581ec18096893860da222f2e2f4ee8cf904bd07399e440e29f6daff9d"
+      "sha256": "9bfd0b4e4f2b0ee587ce6daaaf2b465a4da3bb142a2d1269ccd62f5f63e57fff"
     },
     {
       "path": "standard_matrix.json",
@@ -116,7 +104,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "d5fcbed12ea024d4568c77145eab4a5bae8323a74229d769c643e50062c75435"
+      "sha256": "695d5deab4b1cd14c12c04b59f7a15cee673841ae2631a42b43aaf917b166ca1"
     },
     {
       "path": "visual/assets/innovation-register.json",
@@ -129,21 +117,35 @@
       "path": "visual/assets/non-ai-parity-contract.json",
       "role": "other",
       "required": true,
-      "sha256": "34d5f2d30a787d1ca745b00d89d51f1449fad674323ba5065abe6943f9a4dd60",
+      "sha256": "4ce7ea325b9971f5fc8a2f12bc1a56991541d47c07d05e5b3a65626f1a066d3e",
       "role_detail": "public_interest_evidence"
     },
     {
       "path": "visual/assets/evidence-freshness-policy.json",
       "role": "other",
       "required": true,
-      "sha256": "8f80f2ecdb940f01ea21d76254840f383debbdfaea39a23347b8a9afbc2d4db2",
+      "sha256": "26ad5c87f8e93feabc5ae5aeb6499b5f9ab948c86dda2e37582bb02e5f6bb57f",
       "role_detail": "source_governance_evidence"
+    },
+    {
+      "path": "visual/assets/bilingual-material-equivalence.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "d749bd53e16c4baa8f48eadd284c1c8c5946d3fd74ee712994bcd33240e6ab55"
+    },
+    {
+      "path": "visual/assets/data-gap-closure-register.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "d0912888a92eea3c7284b2ee140d91efb87fd0a68ae73ecf6cc8275839a0cfc9"
     },
     {
       "path": "visual/assets/site-grounding-register.json",
       "role": "other",
       "required": true,
-      "sha256": "349ba271b4703f84fdfa5628353301b90886e65673b9205d4215345c9a57c902",
+      "sha256": "9bfdf6e606e856af3c392fdf2d8a46cba8f473113273d8bbf7564e6fa4e3caaa",
       "role_detail": "site_evidence"
     },
     {
@@ -164,7 +166,7 @@
       "path": "visual/assets/implementation-handoff-matrix.json",
       "role": "other",
       "required": true,
-      "sha256": "792b5f53004e465ac38590a89e7d4c06bf2d43aa3977ba12aa147b5a572f861e",
+      "sha256": "e84dc99af1b7a1879d384a7053d3aaff1a09e577c559c8b2f1ac77dc536d3043",
       "role_detail": "implementation_handoff_evidence"
     },
     {
@@ -199,41 +201,41 @@
       "path": "visual/assets/t02-g0-g1-replay-result.json",
       "role": "other",
       "required": true,
-      "sha256": "bebc2cd5c23f889f8dc63c4712c66b7926423d17eda8199c99f2ef66a79bc30d",
+      "sha256": "33e26078d1e21559e11b6c19d99730129cd600d334005b300ef95344b2684dae",
       "role_detail": "synthetic_governance_replay_result"
     },
     {
       "path": "visual/assets/key-area-evidence-matrix.json",
       "role": "other",
       "required": true,
-      "sha256": "74e6235aa146e4fe4548ec8f00d9a16543ad24da69e39b1e8045a0a49bbc06da",
+      "sha256": "7708caac9c33733588c8bb22a85c83fa90fe2e7cc078eacb377c6a6274c7f866",
       "role_detail": "spatial_evidence_matrix"
     },
     {
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "91e7aeebbe4033dd14fedcac2cfb62d0fa17975a80de1a95638eba44d1d74b97"
+      "sha256": "c5e29af5b8a8b8e7f542dde90052ef5ca5df20bf31e9b4ba62b8dbd9ff0db519"
     },
     {
-      "path": "visual/assets/source-rights-evidence.schema.json",
-      "role": "other",
+      "path": "visual/assets/file-rights-inventory.json",
+      "role": "copyright_statement",
       "required": true,
-      "sha256": "dd7812b4156aae837484efc7ebebb1be5d239ea092251a4e5dec6ddc17c7033b",
-      "role_detail": "rights_evidence_schema"
+      "language": "neutral",
+      "sha256": "bccb7cbb237bc09792c977e47c60a06ffc184218dc51c03e3c1f466943608c4f"
     },
     {
       "path": "visual/assets/source-rights-evidence.json",
       "role": "other",
       "required": true,
-      "sha256": "cd89b4b98f0423d5b97caad57884698d3c5f58d2e246fd93d3624f462ea9d0b9",
+      "sha256": "0db72df3f9bcd0b58a02ef7e9f203f2d1287d89d4d30f70440b627844c4a3f7f",
       "role_detail": "source_rights_evidence"
     },
     {
       "path": "visual/assets/submission-use-rights-matrix.json",
       "role": "other",
       "required": true,
-      "sha256": "0c0330c7c7bbd7b36272bdd1b5a1cc7689c5689163b9bc380f33a6a26c9ae4c1",
+      "sha256": "3d26b997904844a70de3ab708a2796b674a8a30d76e0cb564743afed04a2e70f",
       "role_detail": "rights_use_decision_evidence"
     },
     {
@@ -241,40 +243,48 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "59888f3f22531d6e81c51f8e31a7d2f03a56385dab3242c4deae89f707bb37bd"
+      "sha256": "e5825c0d7e7f011477afb1ef121b277ed34f30d12f453cfd11bd078b161e8e38"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "b5533d8bd42161e016270f8d1816889fb0675f06b045bdd590dcbffc8301882b"
+      "sha256": "c675e71be56c1f46c66ace324c226e6f975d38b1e33b0404e6401f33db595a32"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "7d68429ae84f01188627143dfd3e0743d0404ee9d5133a34fba2b48363bb2806"
+      "sha256": "918ce4d85f177ec1e38709da05dcbf995f60b663b277d121d6a1f8b51ef534da"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "c26f9ca0e8c9434431e549866be73f339c55739cec0c057363f3eed203f3737a"
+      "sha256": "8d9958e516a3e73882e71b9472fcc3829aa4b4cb8580b18e42a75682835626c4"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "0069201171bc553ebdc003f30a8b6ff237638c1ff84990e032efd45dc37bfa82"
+      "sha256": "a1fd334fca8112e362a9a90e05e590b8c6927a82f4fa9ed8df28d4b35e398291"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "2473328b36c3225d580118edecfc6f2878186f07051d9209b0ffeabf0f6781f7"
+      "sha256": "40a71eb5c96e434db3a0b48efbcdd3d4faf5c98142d081905f2734fc96965976"
+    },
+    {
+      "path": "visual/assets/offline-cjk-font.css",
+      "role": "other",
+      "required": true,
+      "language": "neutral",
+      "role_detail": "offline_cjk_font_stylesheet_and_woff2_subset",
+      "sha256": "3bdf43745983323ea1fc77da69cc7f54a5cb22e2388f50ae8e12da4b7d9d4528"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -414,7 +424,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ecfc06eb1063e9cb253b9835eaa9057ebd269e3162d361acad994e8f42112d05"
+      "sha256": "ee913cdcafc39a2a28f833c9145c5bc51e949a5c2b60f367353a62c78a7362b8"
     },
     {
       "path": "report/proposal.en.html",
@@ -422,7 +432,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "2af897237d7cfa34896408dcfb11fd5b300a0599e82c20f2b114a60250963752"
+      "sha256": "0ba986506ce7b9b9cd3587d19326a7f628f07b04b0db3e339b6f5d6f739cf8bd"
     },
     {
       "path": "visual/index.en.html",
@@ -430,7 +440,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "477ab50fca7398bf587c1434abd236d38941d4351aae82a06e9f79b43a2139da"
+      "sha256": "f540b2498455b850552c97315c4f1f6ba8bae1dd70f65b13e79fe45a70314275"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -438,7 +448,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "6964224f0bf8eb3207455f9561b433f00ddc667e681ba1003f232c2b289b3d2d"
+      "sha256": "66361087a18951e3ef5fb35bb575dd1f41c02d342729f5d9b88126a77ef11e5e"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -446,7 +456,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "e61329a7ea5490655f41ad635281946fb435f2a5867e55cb8b81fc7d6ca92f09"
+      "sha256": "b1daad98af2123b2944a35f4e4dd53e276b8605577078a0a0f1b4d372073238e"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -526,7 +536,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "fdd3eb7bf99d1258d96b219ad838eed27fad4f6d8a19336f2adbd79cbc832bbf"
+      "sha256": "ab844574f880cfb7e18de41c54b365e683262f2c8420401fa47a6a0d8f8d9d4f"
     },
     {
       "path": "assets/figures/site-overview.en.svg",
@@ -534,7 +544,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.svg",
-      "sha256": "0b3dcbb6141f02d43477f7c47b6741737456b736f2bdc358fbafe55fdfb92036",
+      "sha256": "61f655660da38e42b45b4cc06153dd3c6ea2325525adb6dee623446cc2e53298",
       "role_detail": "proposal_figure_editable_source"
     },
     {
@@ -542,14 +552,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "bd8e3ee1534177c54418648d6025dcc6d71b1079a77fd8df8bc8f7c05a2d0938"
+      "sha256": "c115f9f3206171fb0a719292cf607eba764b74634d22374d28c9803750005fd1"
     },
     {
       "path": "assets/figures/non-ai-service-blueprint.svg",
       "role": "other",
       "required": true,
       "language": "zh",
-      "sha256": "90bd01284a951e72bbc4c90e1efe6f7d21472ab71c771d9d6f08fca17a87d738",
+      "sha256": "299378d8d38dc32d47359d46a78ba5a8b03a6db7e552ef9780b6d966c88fa931",
       "role_detail": "proposal_figure_editable_source"
     },
     {
@@ -558,7 +568,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/non-ai-service-blueprint.png",
-      "sha256": "8212dd6e8eb01624ac5c0f4885814befe1bf7f1788d4450a8ff6b0aa9d67aa61"
+      "sha256": "fafaa1607960485d1913a396a834087e6432720ad0a3bdd670a77bc514a5ec34"
     },
     {
       "path": "assets/figures/non-ai-service-blueprint.en.svg",
@@ -566,14 +576,14 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/non-ai-service-blueprint.svg",
-      "sha256": "6133d288355ddf733549547b283bc6adb2a67c3e0e8aa2f8eb07fc29f4e091c6",
+      "sha256": "85d40776fdf8a60f7a6e80cfef86fa7d6bc80f5be6850829238ae8798296b204",
       "role_detail": "proposal_figure_editable_source"
     },
     {
       "path": "visual/assets/urban-metabolism-ledger.json",
       "role": "other",
       "required": true,
-      "sha256": "577c58019cd454fe068a259d5c070294975900fe24066f9d7a07de7d12d9e1fe",
+      "sha256": "d0dc23f7a4115c0911b4ce1dd0c9d4e1fafa80541439c3c5ec39f3abb1cb2cb3",
       "role_detail": "public_interest_evidence"
     },
     {
@@ -581,14 +591,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "e552ca7e36a3353b2852a0e15b76586799bcfaa9074086fea3cfb3bd4095cfee"
+      "sha256": "c62a02ea3540332550189a012c6615f24a0af0892336920acb15b718de9bdea2"
     },
     {
       "path": "assets/figures/urban-metabolism-ledger.svg",
       "role": "other",
       "required": true,
       "language": "zh",
-      "sha256": "908bc13a903e400653690697937051334ce9dffe6afc6341b45de4465df64c7d",
+      "sha256": "c12140d3eeb8c61a882731122da1682a51d0a710be4ab6d4543d48b868dc9b96",
       "role_detail": "proposal_figure_editable_source"
     },
     {
@@ -597,7 +607,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/urban-metabolism-ledger.png",
-      "sha256": "8800b01a794cd89149d32b507c1098d263f29baa8ebcab68aaa770d1e59aed91"
+      "sha256": "7e697a73806ee184d4544ef47b4a9dc204724cab550936b4654f0717619e6b91"
     },
     {
       "path": "assets/figures/urban-metabolism-ledger.en.svg",
@@ -605,7 +615,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/urban-metabolism-ledger.svg",
-      "sha256": "c85ff5708e90f664c8cdd30c4bb2555d7a316672a684b838cf843f02d59ec424",
+      "sha256": "c4f492c3dfea446b3eafd41660a8bd994027fa978c4d93b4245d8b71f42ba49c",
       "role_detail": "proposal_figure_editable_source"
     },
     {
@@ -690,7 +700,7 @@
       "path": "visual/assets/century-time-museum-contract.json",
       "role": "other",
       "required": true,
-      "sha256": "4328e6bddab7f4b9beaa18a3ca6876e64c578db7781ae6cba046973dcb7c3e39",
+      "sha256": "cc3bc9ffa38d2cd624bcd17125d3455887a34b00a7c843d1e41daa843e1cee48",
       "role_detail": "public_interest_evidence"
     },
     {
@@ -729,7 +739,7 @@
       "path": "visual/assets/mission-economy-contract.json",
       "role": "other",
       "required": true,
-      "sha256": "79a8ccce3d39e8ecded77e624ceab1f8fb5410a0a99c47930c55e181de9f02b6",
+      "sha256": "1cafc8e99bd235812ad356d919bc950848d0b5e2a00cb72170b1e769860e79e5",
       "role_detail": "public_interest_evidence"
     },
     {
@@ -768,7 +778,7 @@
       "path": "visual/assets/civic-operations-contract.json",
       "role": "other",
       "required": true,
-      "sha256": "9b5bc22f66d7eb175e7e13eb652016add598912b3086d4305feeb383b2aab5e9",
+      "sha256": "9095e0d96840b7bd32fdbddf4b716abc0c1c2d4b677b0642ed26749c4afac0ec",
       "role_detail": "public_interest_evidence"
     },
     {
@@ -776,14 +786,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f905a7363f6da93ece07f317eec492deeb7bd7e529a16ec5b397563cdcf63912"
+      "sha256": "3f766c40782bda0557336052c78e0c77f38998e4750c1bc21359f7e7fd133f56"
     },
     {
       "path": "assets/figures/year-round-civic-operations.svg",
       "role": "other",
       "required": true,
       "language": "zh",
-      "sha256": "e32552f88828c8105c1409c7004dd972e25f9f9e2d8093e996aaedc17ae92a65",
+      "sha256": "906534f2d8a9be8801ec67493cc29297615398fdbf1b45a5a1ccc480bc6f8849",
       "role_detail": "proposal_figure_editable_source"
     },
     {
@@ -792,7 +802,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/year-round-civic-operations.png",
-      "sha256": "a7d24000224a423fab1e552ad27177c6ef08b2da0a600694bed222e01cf6375b"
+      "sha256": "9b866cfc87923e6d193c07913c5045302ed92bb483426a45555bc42f0ae9364e"
     },
     {
       "path": "assets/figures/year-round-civic-operations.en.svg",
@@ -800,7 +810,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/year-round-civic-operations.svg",
-      "sha256": "3a40b115197ff740e5a455ff4972449955bf43ffa7557f1d664191c2ec9fa6d0",
+      "sha256": "01d6d2e3947821480bafdfca179237f13f48f710b0a581340aac46f4097dfc3c",
       "role_detail": "proposal_figure_editable_source"
     },
     {
@@ -808,14 +818,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "21b218ede029483b1a06ee3b9b0f1293aec623a0e92d55e357b71094d6c70522"
+      "sha256": "5859900d276e22635c195a90897033dc113adbe947253b60ce1b0a1ee9fb2bc1"
     },
     {
       "path": "assets/figures/review-professional-handoff.svg",
       "role": "other",
       "required": true,
       "language": "zh",
-      "sha256": "44d9b5a265f4e67654dc191e9c266bcaba31b653c640113833284b77efbafeac",
+      "sha256": "66adc26305e4f599fa82bb6b755ba94fe5ad8f6c976aa669e45778a92348dd2a",
       "role_detail": "proposal_figure_editable_source"
     },
     {
@@ -824,7 +834,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/review-professional-handoff.png",
-      "sha256": "7e4b84c69503130b6076cdf3f8c34101de02674977a0b3ef5fd7ef30ce74ed3f"
+      "sha256": "c01a0d7dac8b6a79d903694d3968a2115ff467b382142f9bb4324c48a8faabfa"
     },
     {
       "path": "assets/figures/review-professional-handoff.en.svg",
@@ -832,32 +842,8 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/review-professional-handoff.svg",
-      "sha256": "8bfc30193251e57e4d98e667cb547ab2e3c4b8a87441acc87462f11c8623ca2f",
+      "sha256": "de5addff2e4b1754a5a97c07935cb24d989fc77b1eca5ab1c2a20e76651c1847",
       "role_detail": "proposal_figure_editable_source"
-    },
-    {
-      "path": "visual/assets/ordinary-life-media-register.json",
-      "role": "other",
-      "required": true,
-      "sha256": "bdd3c82af3fa0d55f39015608fbf8fc27caaaed7c473e9561729a4948238a42e",
-      "role_detail": "public_interest_evidence"
-    },
-    {
-      "path": "assets/media/ordinary-life-scenes.webp",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "title_zh": "普通生活空间场景册",
-      "title_en": "Ordinary-Life Spatial Scenes",
-      "description_zh": "三处差异化原型的人尺度合成概念图；普通路径先成立，AI 只作旁侧可选叠层。",
-      "description_en": "A synthetic human-scale concept triptych for three differentiated prototypes; ordinary paths work first and AI remains an optional side overlay.",
-      "sha256": "8514c303642e4ddfa6e30b0f5c32e8f94d2da72159a5201ed049cdffd0c8f72f"
-    },
-    {
-      "path": "assets/media/ordinary-life-scenes.md",
-      "role": "transcript",
-      "required": false,
-      "sha256": "a0d68e57baec3d4a734b76871d7ca16d95f449e4cb937b190c0bc88f030873f3"
     },
     {
       "path": "visual/assets/reversible-component-restoration-register.json",
@@ -901,32 +887,11 @@
       "role_detail": "render"
     },
     {
-      "path": "visual/assets/review-walkthrough.json",
-      "role": "evidence_data",
-      "required": false,
-      "language": "neutral",
-      "sha256": "e4a97d2fef721a9633a04dc055a0d5ada1bf15ab1babeb15030a64c2c5c42af1"
-    },
-    {
-      "path": "visual/assets/review-walkthrough.css",
-      "role": "asset",
-      "required": false,
-      "language": "neutral",
-      "sha256": "9c2a7367b968a2deaebb6dd15e7b8f205f34136f58b7ce36535972feb995a722"
-    },
-    {
-      "path": "visual/assets/review-walkthrough.js",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "722776d52220b92d1924cb4b60f6704474c19627825e1f26d733250c3c0a0e3f"
-    },
-    {
       "path": "visual/assets/field-evidence-intake-contract.json",
       "role": "other",
       "required": true,
       "language": "neutral",
-      "sha256": "e8d27e6ce90a91e063aee55b9fafbad8a6dcf22c4ce2bf0fdf1ffaeec2f134b7",
+      "sha256": "d7197f2ac54ac9bba3036bf9f6c3233fe5a3eb833778f31dce9eef191d6b33bf",
       "role_detail": "public_interest_evidence"
     },
     {
@@ -934,7 +899,7 @@
       "role": "other",
       "required": true,
       "language": "zh",
-      "sha256": "1969c5bb2717ec83b77d8e51d4c93d014c2ba58628d445d259e6a936277e8866",
+      "sha256": "db6f2323e0b6c02c14a010b374ee619ccd49593254476a091ba090882484d5fe",
       "role_detail": "diagram"
     },
     {
@@ -942,7 +907,7 @@
       "role": "other",
       "required": false,
       "language": "zh",
-      "sha256": "bb3a093766678116c00c6378eb3dbd38d6b0f0480d15731562d160b9fab37b9f",
+      "sha256": "48dadb18fc9dd50455eefbb0309384d61d1f00d5c147c9def8ab39b09fd25876",
       "role_detail": "render"
     },
     {
@@ -951,7 +916,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/field-evidence-intake.svg",
-      "sha256": "83b99b2146f945709b00ff1aa695059206e926717b851fc5714bdd8078adefe5",
+      "sha256": "f26e3ee54b4caa8211c796fab20d730c3943eb00900e4203598a89d810df78f4",
       "role_detail": "diagram"
     },
     {
@@ -960,7 +925,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/field-evidence-intake.png",
-      "sha256": "e6b95393e24563025fcd95f656bededf60984ac67a90819534ee8e6b87b9492d",
+      "sha256": "071685a7d8bacd5a2d4966ccfba4beb4f9e24dd510f05269b76001a5fff66fb5",
       "role_detail": "render"
     },
     {
@@ -971,44 +936,15 @@
       "sha256": "3a8efc7e9ffabe4103f10e0a5efdb8719be0a1d861b9dc9457a7b35f19d1246b"
     },
     {
-      "path": "assets/media/twin-track-cover.webp",
-      "role": "media_poster",
-      "required": false,
-      "language": "neutral",
-      "title_zh": "双轨京张评审封面",
-      "title_en": "Twin-Track Jing-Zhang jury cover",
-      "description_zh": "第一方确定性绘制的双轨空间语法封面；不是地图、现场证据或批准。",
-      "description_en": "First-party deterministic cover of the twin-track spatial grammar; not a map, field evidence or approval.",
-      "sha256": "ce7214e0aa1addd477ab3f2ad60bcce852bc07b5f7ffd157c72d023c68a7cf7c"
-    },
-    {
-      "path": "visual/assets/jury-motion-journey.json",
-      "role": "evidence_data",
-      "required": false,
-      "language": "neutral",
-      "title_zh": "普通—验证—故障—恢复评审动态合同",
-      "title_en": "Ordinary–proof–failure–recovery jury-motion contract",
-      "description_zh": "用户启动、静音、无脚本可读且支持减少动态的 G0 解释合同。",
-      "description_en": "User-started, silent, no-script-readable and reduced-motion-aware G0 explanation contract.",
-      "sha256": "64f8b10fb17b9956507bf287ab5aea02928920cfa5cec03f7c11a8da29032377"
-    },
-    {
       "path": "visual/assets/review-handoff-index.json",
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
       "title_zh": "评审交接索引与包内导航",
       "title_en": "Review handoff index and package navigation",
-      "description_zh": "全部 156 个投稿包路径的评审定位索引：专家工件定位、五项快速判断、八条风险路由、七条阅读路线、逐文件登记、冻结/临时/历史标记、三载体映射与权利回链；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
-      "description_en": "Review navigation for all 156 package paths: expert artefact locator, five quick judgements, eight risk routes, seven reading routes, a per-file registry, frozen/provisional/historical labels, three-carrier mapping and rights backlinks; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "cfd74aaffea120738777e54225c58987a10eea59595cb4fc30f6fda2065bb899"
-    },
-    {
-      "path": "visual/assets/round17-reading.css",
-      "role": "asset",
-      "required": false,
-      "language": "neutral",
-      "sha256": "ed1aca8916deee471da8cb388c24d1197fd18b6e275a95bca7051a327f92dd32"
+      "description_zh": "评审交接导航：三条时间阅读路线、唯一专业交接候选、证据权威顺序与固定事实边界；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
+      "description_en": "Review handoff navigation: three timed reading routes, one professional handoff candidate, evidence authority order and fixed fact boundaries; the index only locates, creates no evidence and changes no maturity or rights state.",
+      "sha256": "fbd67e1ab42f237e69ec23e0f5b53d0e11dda566a1157bed23280fc92ea370b6"
     },
     {
       "path": "assets/figures/land-use-structure.svg",
@@ -1062,26 +998,12 @@
       "sha256": "705431200edf8a22573795a6f3576002c731d1b80bff28b9e50ae2de7b7fd7d7"
     },
     {
-      "path": "visual/assets/public-signal-interface.css",
-      "role": "asset",
-      "required": false,
-      "language": "neutral",
-      "sha256": "2a8fb16c1912944d3b050e3afc844589a06d2bb575103f64eaa186fb3330f18c"
-    },
-    {
-      "path": "visual/assets/public-signal-interface.js",
-      "role": "verification_script",
-      "required": false,
-      "language": "neutral",
-      "sha256": "2d40f872a38d9ef51c4960a841fa6a673fbe462e44e7b9a4be35139f75eeac43"
-    },
-    {
       "path": "assets/figures/public-signal-interface.svg",
       "role": "other",
       "required": true,
       "language": "zh",
       "role_detail": "diagram",
-      "sha256": "fc8a0b653e737e0e7ecac74bd44f3ef42e687f0d06a93430df0c83373ce55272"
+      "sha256": "38d3c06a2c5f09a3bd2849b0d41c20030dfbd57ebaa66e935e3a0d377307cad5"
     },
     {
       "path": "assets/figures/public-signal-interface.en.svg",
@@ -1090,7 +1012,7 @@
       "language": "en",
       "translation_of": "assets/figures/public-signal-interface.svg",
       "role_detail": "diagram",
-      "sha256": "8776d4eadafbb14c8de462837f60fb6773a664dd50aa4cc88cb9e535e329f3e4"
+      "sha256": "54c8411f26a862b1d30f633a24d0574f47641c78b8bec05874f053e81c6af888"
     },
     {
       "path": "assets/figures/public-signal-interface.png",
@@ -1098,7 +1020,7 @@
       "required": false,
       "language": "zh",
       "role_detail": "render",
-      "sha256": "25e41bbaf76731ccb9c43f1c20ee5554d225a3fda10e01ae65fbcf9e9b4e6d59"
+      "sha256": "6115f862a3c2f353326eba5b89d749adb845c00f9fe3c89b431300bf87815328"
     },
     {
       "path": "assets/figures/public-signal-interface.en.png",
@@ -1107,7 +1029,7 @@
       "language": "en",
       "translation_of": "assets/figures/public-signal-interface.png",
       "role_detail": "render",
-      "sha256": "25fb73744bbdc3efe955ded8288debba164a04d198197e9bd31d916bac0b5371"
+      "sha256": "b601ec5a1bb60521ab5bd94f6c6000f020b26cc00574ee98faec2de921f79001"
     },
     {
       "path": "visual/assets/spatial-atlas-contract.json",
@@ -1118,7 +1040,7 @@
       "title_en": "Spatial atlas relation contract",
       "description_zh": "三处既有原型的普通路径、旁侧验证、停止对象、人工交接与恢复回归的 G0 关系合同。",
       "description_en": "G0 relation contract for ordinary routes, side proof, stop objects, staffed handoff and recovery return across the three existing prototypes.",
-      "sha256": "6a8458aa58538a3555ecec6b0648d8059d86958039121303810c0fcb11c54319"
+      "sha256": "073119420b411b2d96bf07c46499a209857fd02fc739e4e58caee21da37b66b2"
     },
     {
       "path": "visual/assets/spatial-atlas-baseline.json",
@@ -1143,17 +1065,6 @@
       "sha256": "dcfd54bca34ad1b9e7c2bc429779ef1c252b8ca2c4bdf296416502462359939f"
     },
     {
-      "path": "visual/assets/spatial-atlas.css",
-      "role": "asset",
-      "required": false,
-      "language": "neutral",
-      "title_zh": "空间图谱离线样式",
-      "title_en": "Spatial atlas offline stylesheet",
-      "description_zh": "双语静态空间图谱入口的离线、打印和减少动态样式。",
-      "description_en": "Offline, print and reduced-motion styling for bilingual static spatial-atlas entries.",
-      "sha256": "bffc95feacd395517cbfdfcd3992876a0376822b8810bf8184ee7c4c33ff6b9a"
-    },
-    {
       "path": "assets/figures/spatial-atlas.svg",
       "role": "other",
       "required": true,
@@ -1163,7 +1074,7 @@
       "title_en": "Three-switchyard spatial atlas SVG",
       "description_zh": "中文可编辑 G0 概念关系图。",
       "description_en": "Chinese editable G0 concept relation diagram.",
-      "sha256": "7b86eceb519e28d9bbf82b9dc08134533e951beacafc01cf802e172b473ae8de"
+      "sha256": "e92cff4fc1910b1ab72f6e528e25011770ae4d6cba3480aee0aa397ca1cf1dbf"
     },
     {
       "path": "assets/figures/spatial-atlas.en.svg",
@@ -1176,7 +1087,7 @@
       "title_en": "Three-switchyard spatial atlas English SVG",
       "description_zh": "英文可编辑 G0 概念关系图。",
       "description_en": "English editable G0 concept relation diagram.",
-      "sha256": "31e09cc29adc72bd48b6d009b88635ea98885d43252c8d85ed94edf5651b7803"
+      "sha256": "1e46aab8acc730279ae42e777a5b61b185925d24ea6f06be5f6b59b024888ab8"
     },
     {
       "path": "assets/figures/spatial-atlas.png",
@@ -1188,7 +1099,7 @@
       "title_en": "Three-switchyard spatial atlas PNG",
       "description_zh": "中文空间图谱的离线显示导出。",
       "description_en": "Chinese offline display export of the spatial atlas.",
-      "sha256": "d6d6ddc360b38db2375bead5b1245b1f995d6de33d0ec110e062ee7c8c14f37f"
+      "sha256": "f17ed73dc125a302753292be42c8cbafc7d583f8559fe2bcfa06cb0dad460581"
     },
     {
       "path": "assets/figures/spatial-atlas.en.png",
@@ -1201,78 +1112,147 @@
       "title_en": "Three-switchyard spatial atlas English PNG",
       "description_zh": "英文空间图谱的离线显示导出。",
       "description_en": "English offline display export of the spatial atlas.",
-      "sha256": "c53c2fd37c833b551a49f952e5dc572ddc5bde872744c40a5371f1342b778dd4"
+      "sha256": "d30b6c14622992f83dd8c7dc6a407726c4b493621c7c7427e397369dd2564ed0"
     },
     {
-      "path": "assets/media/4-state-motion.mp4",
-      "sha256": "4df7ec8136acf9e52ccb4d03a720f0fba04e08cf2d4213673dfac29ccc295531",
-      "role": "video",
+      "path": "visual/assets/source-governance-register.json",
+      "role": "evidence_data",
       "required": false,
-      "language": "neutral",
-      "title_zh": "4 态空间运动概念视频",
-      "title_en": "Four-state spatial-motion concept video",
-      "description_zh": "48.000 秒双语空间旅程：双轨入口—普通生活—可选验证—故障/人工接管—恢复普通路径；MiniMax-H3 概念母片与包内图件经 ffmpeg 确定性组合，持续披露 G0、临时几何、非现场证据、非批准方案及展示节奏边界。",
-      "description_en": "A 48.000-second bilingual spatial journey: Twin-Track entry, ordinary life, optional proof, failure/staffed takeover and restoration of the ordinary route. One MiniMax-H3 concept master and package figures are deterministically composed with ffmpeg under persistent G0, provisional, not-field-evidence, not-approved and presentation-pacing disclosure.",
-      "transcript": "assets/media/4-state-narration-script.md",
-      "poster": "assets/media/4-state-motion-poster.webp",
-      "caption": "assets/media/4-state-narration.vtt"
+      "sha256": "b2ba411370e9731dd11013a24b70e3b6cee75876fdc9d17e9d52e3c5eec268a5"
     },
     {
-      "path": "assets/media/4-state-narration.mp3",
-      "sha256": "8985c4add05ead4b4a6635640748bf7e42ad381b6ecde290bd0bbf445a8ddb81",
-      "role": "audio",
+      "path": "visual/assets/professional-handoff-candidate.json",
+      "role": "evidence_data",
       "required": false,
-      "language": "zh",
-      "title_zh": "4 态旁白音频",
-      "title_en": "Four-state narration audio",
-      "description_zh": "43.344 秒普通话旁白，对应中英文 WebVTT 与双语文字稿；作为独立可选音轨，不得自动播放。",
-      "description_en": "43.344-second Mandarin narration matching paired Chinese/English WebVTT and the bilingual script; it remains a separate optional track and must not autoplay.",
-      "transcript": "assets/media/4-state-narration-script.md"
+      "sha256": "04bfabe1db392a871699e6272661a4234c14916d2918e759169b22be2681bf3e"
     },
     {
-      "path": "assets/media/4-state-narration.vtt",
-      "sha256": "bd1c38021d3400077095c496d77a7ec514df703304161ede274419bf1f47f44d",
-      "role": "caption_track",
+      "path": "visual/assets/convergence-baseline.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "0f5c5939779d93db974006478b499b7d07b9c164d015c9e5c353a6bbf8145aac"
+    },
+    {
+      "path": "assets/figures/ordinary-life-journey.svg",
+      "role": "other",
       "required": false,
       "language": "zh",
-      "title_zh": "4 态旁白 WebVTT 字幕",
-      "title_en": "Four-state narration WebVTT captions",
-      "description_zh": "4 态旁白 5 段 WebVTT 字幕，时间码与音频对齐；HTML5 <track kind=\"captions\"> 加载。",
-      "description_en": "WebVTT captions for the 4-state narration, timecodes aligned to the audio; loaded via HTML5 <track kind=\"captions\">."
+      "role_detail": "editable_figure_source",
+      "sha256": "ff8d3892df4dbb3865a14784b8cd906b54dcbc464332bc444d9b3dfa20784c85"
     },
     {
-      "path": "assets/media/4-state-narration-script.md",
-      "sha256": "99579d6b119fc49a67a77c6a446dbda5bdea01e7651f3754ef986808881ab9a5",
-      "role": "transcript",
+      "path": "assets/figures/ordinary-life-journey.png",
+      "role": "proposal_figure",
       "required": false,
-      "language": "neutral",
-      "title_zh": "4 态旁白文字稿",
-      "title_en": "Four-state narration written script",
-      "description_zh": "双语音频全文、MiniMax-H3/ffmpeg 生成方法、权利状态与不可证明事项披露；与视频、海报、音频和双语 WebVTT 锁步变更。",
-      "description_en": "Bilingual narration, MiniMax-H3/ffmpeg generation method, rights status and unprovable items; must lockstep-update the video, poster, audio and paired WebVTT."
+      "language": "zh",
+      "sha256": "baa05057656f191664f52910c34c547c2659f1a64e5d81b0ea344a79975ed349"
     },
     {
-      "path": "assets/media/4-state-narration.en.vtt",
-      "sha256": "fbd4f4066a23a70e21e82635df2bd867b87c01222623bd9716cbe374cb3824ba",
-      "role": "caption_track",
+      "path": "assets/figures/ordinary-life-journey.en.svg",
+      "role": "other",
       "required": false,
       "language": "en",
-      "translation_of": "assets/media/4-state-narration.vtt",
-      "title_zh": "4 态旁白英文 WebVTT 字幕",
-      "title_en": "English WebVTT captions for the four-state narration",
-      "description_zh": "与 43.344 秒中文旁白同轴的 5 段英文 WebVTT 翻译字幕；HTML5 <track kind=\"captions\"> 加载。",
-      "description_en": "Five English WebVTT translation cues aligned to the 43.344-second Chinese narration; loaded through HTML5 <track kind=\"captions\">."
+      "translation_of": "assets/figures/ordinary-life-journey.svg",
+      "role_detail": "editable_figure_source",
+      "sha256": "b27dab2416f836e16bc2e3c82a19351c94c6cf0aefa340bf1e76530198f55641"
     },
     {
-      "path": "assets/media/4-state-motion-poster.webp",
-      "sha256": "c5330f05a84a05aecdcbf8c99822874216ee6f357759ab73afef70c988a4831e",
+      "path": "assets/figures/ordinary-life-journey.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/ordinary-life-journey.png",
+      "sha256": "5666baeb23850e10156a69b10d7b79a5ec1a62dac622be23aad546282cb9b1a1"
+    },
+    {
+      "path": "assets/figures/four-state-journey.svg",
+      "role": "other",
+      "required": false,
+      "language": "zh",
+      "role_detail": "editable_figure_source",
+      "sha256": "bdd9cce5538760bfe4a349e75f3d149d78b1f9f7aa8803e0f323549aa23e7248"
+    },
+    {
+      "path": "assets/figures/four-state-journey.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "zh",
+      "sha256": "93740a19b746b4f160a86c58c9c4a3785b695db6b05466cb66f1757d7df62a59"
+    },
+    {
+      "path": "assets/figures/four-state-journey.en.svg",
+      "role": "other",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/four-state-journey.svg",
+      "role_detail": "editable_figure_source",
+      "sha256": "94ba040ab26c729d017aff7a52e1654b8015a0d65fb60c679fdf8d072a688635"
+    },
+    {
+      "path": "assets/figures/four-state-journey.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/figures/four-state-journey.png",
+      "sha256": "e9daa4bb4781d4d50884e3e78c775f259a000de67422b4436ddbb18148d65681"
+    },
+    {
+      "path": "assets/media/four-state-cover.webp",
       "role": "media_poster",
       "required": false,
       "language": "neutral",
-      "title_zh": "4 态空间运动视频海报",
-      "title_en": "Four-state spatial-motion video poster",
-      "description_zh": "从最终成片确定性提取的静态首帧，保留双语标题与 G0/provisional/非现场证据/非批准方案披露；用于无播放与加载前回退。",
-      "description_en": "Static first frame deterministically extracted from the final video, retaining the bilingual title and G0/provisional/not-field-evidence/not-approved disclosure for pre-playback and static fallback."
+      "title_zh": "双轨京张四态空间体验概念封面",
+      "title_en": "Twin-Track Jing-Zhang Four-state Concept Cover",
+      "description_zh": "投稿方原创确定性概念图：普通地面连续，验证位于旁侧；不是现场、官方边界或批准方案。",
+      "description_en": "Contributor-authored deterministic concept graphic: ordinary ground remains continuous and verification stays beside it; not site, official-boundary or approved-design evidence.",
+      "sha256": "d04bbbd14931142cc2b3cbb1377414f053d0b23fcc1825c79a9d84d2e170e12f"
+    },
+    {
+      "path": "assets/media/four-state-experience.mp4",
+      "role": "video",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "普通—验证—故障—恢复：四态空间体验",
+      "title_en": "Ordinary—Verification—Fault—Recovery: Four-state Spatial Experience",
+      "description_zh": "54 秒无声双语概念动态图解；编辑节奏不代表现实恢复时间，故障只停止验证对象，静态图提供同等完整回退。",
+      "description_en": "A silent 54-second bilingual conceptual motion diagram; editorial pacing is not real recovery time, fault stops only verification objects, and the static storyboard is an equivalent complete fallback.",
+      "poster": "assets/media/four-state-cover.webp",
+      "caption": "assets/media/four-state-experience.vtt",
+      "transcript": "assets/media/four-state-experience.md",
+      "sha256": "f4f396c70706943310400390bd0c55226cbcf486bfb2a420a69afef6db310f99"
+    },
+    {
+      "path": "assets/media/four-state-experience.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "四态空间体验双语字幕",
+      "title_en": "Bilingual Captions for the Four-state Spatial Experience",
+      "description_zh": "八段连续双语字幕，中文在前、英文在后。",
+      "description_en": "Eight contiguous bilingual cues, Chinese first and English second.",
+      "sha256": "82c66e4a8f742341b8eed336596d5a575cfcfafef3c26e393eeee28723260244"
+    },
+    {
+      "path": "assets/media/four-state-experience.md",
+      "role": "transcript",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "四态空间体验文字稿、方法与权利说明",
+      "title_en": "Four-state Experience Transcript, Method and Rights Note",
+      "description_zh": "双语逐镜文字稿、无声/编辑节奏声明、确定性生成方法、来源、权利、可访问性和不可证明事项。",
+      "description_en": "Bilingual shot transcript with silence/editorial-pacing statement, deterministic method, sources, rights, accessibility and non-provable claims.",
+      "sha256": "dfd4d51b297aeabf72ed96eff7ce35288a67a498d2c49555c524eff95f076efc"
+    },
+    {
+      "path": "visual/assets/four-state-experience-contract.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "title_zh": "四态空间体验镜头与真实性合同",
+      "title_en": "Four-state Spatial Experience Shot and Truth Contract",
+      "description_zh": "控制八段时间、状态、空间对象、停止/恢复对象、证据回链、QA 与禁止推断的投稿方概念合同。",
+      "description_en": "Contributor-authored conceptual contract controlling eight intervals, states, spatial objects, stop/recovery objects, evidence links, QA and forbidden inferences.",
+      "sha256": "fa7d618e42d249cb11a9d5600872d7117b2490e166a2ec7590c84e4b993cdc25"
     }
   ],
   "validation_claim": {
@@ -1287,48 +1267,33 @@
           "translation_file": "proposal.en.md"
         }
       },
-      "x-legacy-validation-claim": {
-        "schema_version": "1.0",
-        "data": {
-          "can_enter_formal_review": true,
-          "review_status": "formal-review-ready",
-          "self_check_file": "self_check.json"
-        }
-      },
       "x-rights-claim": {
-        "schema_version": "1.0",
+        "schema_version": "2.0",
         "data": {
-          "status": "not_fully_cleared",
-          "completed_independent_file_level_clearance_audits": 0,
-          "rights_ledger_file": "visual/assets/rights-clearance-ledger.json",
-          "source_rights_evidence_file": "visual/assets/source-rights-evidence.json",
-          "open_p0_items": [
-            "RIGHTS-OPEN-01",
-            "RIGHTS-OPEN-02",
-            "RIGHTS-OPEN-03"
-          ],
-          "statement": "Evidence-structure closure and validation do not constitute rights clearance."
+          "status": "current_exact_package_cleared_for_repository_review_display_and_redistribution_under_component_specific_terms",
+          "content_license": "CC-BY-4.0",
+          "code_license": "MIT",
+          "osm_database_license": "ODbL-1.0",
+          "generated_media_paths": 0,
+          "statement": "The current exact package may be reviewed, displayed and redistributed under component-specific CC BY 4.0, MIT, ODbL, OFL, citation-only and repository-input terms. This is a contributor distribution decision, not independent legal advice, and does not establish field truth, approval, professional acceptance or G1.",
+          "deterministic_contributor_media_paths": 4,
+          "independent_file_level_audit_completed": false,
+          "trademark_search_completed": false,
+          "path_level_decision_coverage": "157/157",
+          "single_package_license": false
         }
       },
       "x-release-claim": {
-        "schema_version": "1.0",
+        "schema_version": "2.0",
         "data": {
-          "repository_review": "disclosure_ready",
-          "public_or_professional_reuse": "blocked_pending_terms_and_audit",
-          "known_blockers": [
-            "PUBLIC_OR_PROFESSIONAL_REUSE_RIGHTS (unknown/major): public or professional reuse remains blocked_pending_terms_and_audit",
-            "RIGHTS-OPEN-01: complete COMMUNITY-DISPLAY-ONLY terms and applicability confirmation",
-            "RIGHTS-OPEN-02: complete independent file-level rights audit for every current manifest path",
-            "RIGHTS-OPEN-03: complete ODbL attribution, derivative, and share-alike review"
-          ],
-          "next_actions": [
-            "Confirm complete COMMUNITY-DISPLAY-ONLY terms and applicability before external display or professional reuse",
-            "Complete an independent file-level rights audit for every current manifest path",
-            "Complete ODbL attribution, derivative, and share-alike review for every redistributed OSM-derived element"
-          ]
+          "repository_review": "allowed_with_attribution_and_component_notices",
+          "professional_implementation": "not_authorized_requires_H01_H07_and_official_inputs",
+          "known_blockers": [],
+          "package_redistribution": "allowed_with_component_specific_terms_and_notices_no_single_package_license",
+          "future_public_installation_or_external_brand_release": "not_authorized_requires_scope_specific_review"
         }
       }
     }
   },
-  "cover_image": "assets/media/twin-track-cover.webp"
+  "cover_image": "assets/media/four-state-cover.webp"
 }

@@ -57,7 +57,7 @@
     {
       "id": "A-DAZHONGSI-001",
       "status": "pending_professional_confirmation",
-      "statement": "V5 limits detailed design to a station-west Dazhongsi pedestrian study window derived from mapped roads, railway, buildings and pedestrian space; exact entrances, access rights, gradients, bicycle parking and interchange works are not confirmed.",
+      "statement": "Detailed design is limited to a station-west Dazhongsi pedestrian study window derived from mapped roads, railway, buildings and pedestrian space; exact entrances, access rights, gradients, bicycle parking and interchange works are not confirmed.",
       "impact": "The three pedestrian links are conflict-checked conceptual alignments, not approved station-access engineering.",
       "data_needed": "Subway station drawings, access-right and entrance records, measured gradients, tactile-paving audit, pedestrian flow, bicycle parking inventory and traffic-safety review."
     },
@@ -85,9 +85,9 @@
     {
       "id": "A-DAZHONGSI-REALITY-001",
       "status": "provisional",
-      "statement": "V5 locates a roughly 8.7 ha Release-to-Retirement demonstration district west of the OSM-mapped Dazhongsi station and treats the repository Dazhongsi key-area polygon as a conflicting provisional placeholder rather than a physical station redline.",
-      "impact": "The district route avoids all buildings in the downloaded OSM window, but station entrances, access rights, gradients, paving, crossings and pedestrian capacity still require official engineering and field data.",
-      "data_needed": "Official station coordinates/drawings, entrance and interchange data, road redlines, access-right evidence, measured section survey, pedestrian counts and traffic-safety review."
+      "statement": "The proposal locates a roughly 8.7 ha Release-to-Retirement demonstration district west of the OSM-mapped Dazhongsi station and treats the repository Dazhongsi key-area polygon as a conflicting provisional placeholder rather than a physical station redline.",
+      "impact": "The district route avoids all buildings in the downloaded OSM window, but station entrances, access rights, gradients, sections, accessibility, crossings and pedestrian capacity still require official engineering and field data.",
+      "data_needed": "Official station coordinates/drawings, entrance and interchange data, road redlines, access-right evidence, measured gradient and section survey, accessibility peer audit with representative users, weekday/weekend peak pedestrian observation and traffic-safety review."
     },
     {
       "id": "A-RETIREMENT-SPACE-001",
@@ -97,11 +97,39 @@
       "data_needed": "Measured public-space and tree survey, access rights, heritage review, archive governance, accessibility design and operator agreement."
     },
     {
-      "id": "A-DESIGN-DEPTH-V5-001",
+      "id": "A-DESIGN-DEPTH-CONCEPT-001",
       "status": "pending_professional_confirmation",
-      "statement": "V5 reaches competition-level conceptual urban-design specification on a public basemap, with detailed conflict-checked design concentrated in the Dazhongsi demonstration district; it is not statutory planning, survey-grade detailed design or construction documentation.",
-      "impact": "Matrix completeness means the required response is evidenced and its limitation is disclosed; it does not assert official planning completion.",
+      "statement": "The proposal reaches competition-level conceptual urban-design specification on a public basemap, with detailed conflict-checked design concentrated in the Dazhongsi demonstration district; it is not statutory planning, survey-grade detailed design or construction documentation.",
+      "impact": "The package distinguishes complete, incomplete and data-gap items; none asserts official planning completion.",
       "data_needed": "Formal base map, parcels, access rights, station engineering, measured sections, controls, utilities, heritage boundaries, traffic survey and costed engineering design."
+    },
+    {
+      "id": "A-INNOVATION-ECOSYSTEM-001",
+      "status": "design_assumption",
+      "statement": "The proposal treats the Jingzhang AI Innovation Belt as a proposed network linking research, open source, prototypes, calibration, incubation interfaces, bounded first use, public service, market interfaces and public feedback.",
+      "impact": "The ecosystem diagram expresses proposed relationships and role types, not confirmed tenants, contracts, funding flows, data access, compute allocation or institutional commitments.",
+      "data_needed": "Verified institution and facility inventory, willingness-to-participate evidence, service-resource map, lawful data-access agreements and operator governance design."
+    },
+    {
+      "id": "A-EVALUATION-PROTOCOL-001",
+      "status": "design_assumption",
+      "statement": "The three industrial tests and all scenario evaluation methods are proposed evaluation protocols with no measured performance result.",
+      "impact": "Release conditions are qualitative evidence requirements until lawful data, field baselines, test equipment, representative users and responsible operators are available; no fabricated threshold is reported.",
+      "data_needed": "Approved evaluation plan, representative test cohort, authorized or synthetic dataset register, instrument calibration, baseline measurement, independent review and incident procedure."
+    },
+    {
+      "id": "A-ANNUAL-OPERATION-001",
+      "status": "design_assumption",
+      "statement": "The annual operating loop and its RACI, data-governance, human-takeover, incident-stop, maintenance, complaint and appeal arrangements name functional roles rather than specific institutions because no signed operating partnership, venue commitment, data authorization, staffing roster, maintenance budget or procurement authority is available.",
+      "impact": "Continuous, spring, summer, autumn and winter stages and the proposed operational framework are inputs for later partnership design, not an announced programme, funded calendar, contracted responsibility matrix or approved incident procedure.",
+      "data_needed": "Partner consent, governance charter, data authorization and retention/deletion rules, venue and maintenance rights, annual budget, staffing and takeover roster, incident and stop procedure, complaint/appeal service level, procurement route, archive stewardship and public-participation agreement."
+    },
+    {
+      "id": "A-ENGINEERING-CULTURE-001",
+      "status": "design_assumption",
+      "statement": "The Jingzhang Engineering Culture Route is a design interpretation linking publicly documented railway engineering culture with contemporary open-source contribution, public verification and technology retirement.",
+      "impact": "It does not claim a specific surviving artefact at an indicative node, use an unauthorized portrait, speak for a historic person or turn heritage into an AI endorsement.",
+      "data_needed": "Heritage inventory, curatorial review, approved texts, archaeological and conservation controls, rights clearance and field-based node selection."
     }
   ]
 }

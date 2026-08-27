@@ -55,13 +55,14 @@
         "submissions/xhmello7/jingzhang-civic-calibration-grounds/self_check.json",
         "submissions/xhmello7/jingzhang-civic-calibration-grounds/sources.json",
         "submissions/xhmello7/jingzhang-civic-calibration-grounds/standard_matrix.json",
+        "submissions/xhmello7/jingzhang-civic-calibration-grounds/visual/assets/innovation_belt_program.json",
         "submissions/xhmello7/jingzhang-civic-calibration-grounds/visual/index.en.html",
         "submissions/xhmello7/jingzhang-civic-calibration-grounds/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/xhmello7/jingzhang-civic-calibration-grounds": "formal"
       },
-      "total_bytes": 18850455,
+      "total_bytes": 16350655,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -120,8 +121,8 @@
       "issues": [],
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
-        "green_ratio": 0.018223299,
-        "public_space_ratio": 0.000106934
+        "green_ratio": 0.018223,
+        "public_space_ratio": 0.000107
       }
     },
     "stderr": ""
@@ -135,15 +136,15 @@
       "summary": {
         "standard_matrix_items": 7,
         "design_depth_items": 15,
-        "known_metric_refs_required": 18,
+        "known_metric_refs_required": 27,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 10,
-          "standard": 0,
-          "depth": 13,
-          "data": 19,
-          "metric": 8
+          "source": 21,
+          "standard": 3,
+          "depth": 11,
+          "data": 18,
+          "metric": 14
         }
       }
     },

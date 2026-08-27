@@ -13,15 +13,16 @@
 | 图纸拉丁文字 | Helvetica 家族与 ZapfDingbats | PDF 内置基础字体，按名引用，不嵌入不再分发 | `pdffonts drawings/a3-booklet.pdf` → `Type 1 / WinAnsi / emb=no` |
 | 图纸中文文字 | Noto Serif SC Light，子集嵌入四套 PDF | SIL Open Font License 1.1（读自字体 name 表 nameID 13/14），OFL 明确允许嵌入子集并随文档再分发 | 同上 → `CID TrueType / UniGB-UCS2-H / emb=yes`，字体名为 `<子集前缀>+NotoSerifSC` |
 | 全部栅格产物文字（24 张 PNG 与 2 张 JPEG） | OFL-1.1 的 Noto Sans CJK SC（Medium／Light）与 Noto Sans | OFL 明文允许使用与再分发；字体文件在仓库外工具链目录，仅渲染阶段读取字形 | `find assets -name '*.tt[cf]' -o -name '*.otf'` → 无结果 |
+| 四份离线 HTML | Noto Sans CJK SC Medium 的 268,872 字节 WOFF2 字符子集，嵌入包内 CSS data URI | SIL Open Font License 1.1；官方完整正文与版权通知在 `visual/assets/governance/noto-cjk-subset.rights.json`，作者授权明确排除该第三方负载 | `node visual/assets/governance/webfont-audit.js` → 解码实际 WOFF2，并核对哈希、覆盖、许可、来源与四页本地 CSS 链接 |
 | 工具链 | Python 3.12.13(PSF)、reportlab 4.4.3(BSD)、Pillow 12.3.0(MIT-CMU)、shapely 2.1.2(BSD-3)、pyproj 3.7.2(MIT)、fontTools 4.60.1(MIT)、qpdf 12.3.2(Apache-2.0)、PyMuPDF 1.27.2.3(AGPL-3.0 或 Artifex 商业)、Ghostscript 10.07.0(AGPL-3.0) | 版本与许可逐个读取依赖自身分发元数据或 `--version` 自述 | `importlib.metadata.version()` / `metadata()['License-Expression']`、`gs --version` |
 
 **v1.11 关闭了此前登记在案的中文字体阅读依赖。** v1.10 及更早版本的 CJK 字形 `emb=no`，需要阅读器自带中文字体包；本版把四套 PDF 的中文字体程序替换为子集嵌入的 Noto Serif SC（OFL-1.1，允许嵌入与再分发），只改字体程序、不动内容流，断行与字位逐项不变，内嵌图件经提取比对逐像素相同，PDF 内的字体名对象同步改为 `NotoSerifSC` 以免自述与实际不符。拉丁文字仍不嵌入：基础十四款字体由 PDF 规范要求阅读器自备，不构成显示风险，若为凑 `emb=yes` 而嵌入仿制实现并继续挂 Helvetica 之名反而是更差的溯源。
 
 仍须说明的限制：PyMuPDF 与 Ghostscript 均为 AGPL（PyMuPDF 另有 Artifex 商业许可可选），本包仅将其作为**工具**在本机运行——未分发其代码、未链接进任何交付物，PDF 是工具的输出而非其衍生作品，嵌入的字体子集来自 OFL 字体而非任何 AGPL 组件；若日后需随包分发生成脚本，须先确认这些依赖的分发条件。
 
-`COMMUNITY-DISPLAY-ONLY` 是 `schema/proposal.schema.json` 的 `license` 枚举值之一，仓库未发布其规范条款文本。**本包不再对这个留空标识作解释，而是由权利人另行给出一项自足、可直接执行的授权（与 `proposal.md` 风险与合规一节完全同文）：对本包内容的任何使用，只要符合 CC BY-NC 4.0（署名、非商业、标明修改），即已获得作者许可**；署名时须一并保留「本方案为开放共创建议，不代表任何政府决定或审批结论」。组织方标识若日后被定义，以其为准。第三方素材不在此授权范围内：包内不含任何他人既有作品（无他人图片、无商业地图或 OSM、无商标或受保护版式）；唯一的非程序化图像素材是封面背景层，由纯文字提示词调用 gpt-image-2 生成、未向模型提供任何图片输入，见 manifest.json#rights_inventory 的 generated_illustration 与 sources.json#IMAGEGEN-COVER-ILLUSTRATION，字体权利链见上表；第三方进一步使用时仍须自行核验其中每条外部来源的原始权利状态。
+`COMMUNITY-DISPLAY-ONLY` 是 `schema/proposal.schema.json` 的 `license` 枚举值之一，仓库未发布其规范条款文本。**本包不再对这个留空标识作解释，而是由权利人另行给出一项自足、可直接执行的授权（与 `proposal.md` 风险与合规一节完全同文）：对本包内容的任何使用，只要符合 CC BY-NC 4.0（署名、非商业、标明修改），即已获得作者许可**；署名时须一并保留「本方案为开放共创建议，不代表任何政府决定或审批结论」。组织方标识若日后被定义，以其为准。第三方素材不在此授权范围内：包内不含任何他人既有作品（无他人图片、无商业地图或 OSM、无商标或受保护版式）；唯一的非程序化图像素材是封面背景层，由纯文字提示词调用 gpt-image-2 生成、未向模型提供任何图片输入，见 manifest.json#rights_inventory 的 generated_illustration 与 sources.json#IMAGEGEN-COVER-ILLUSTRATION。包内唯一随包分发的第三方字体负载是四份 HTML 共用、嵌入本地 CSS data URI 的 Noto Sans CJK SC WOFF2 字符子集；作者授权不覆盖该字体，字体仅按 `visual/assets/governance/noto-cjk-subset.rights.json#license.text` 的 SIL OFL 1.1 分发，见 manifest.json#rights_inventory 的 web_font_assets 与 sources.json#FONT-NOTO-WEB。第三方进一步使用时仍须自行核验其中每条外部来源的原始权利状态。
 
-构建溯源：自 v1.9 起全部载体使用同一版本印记，当前全部图件与图纸使用 `JING-ZHANG HANDOVER LINE / PACKAGE v1.15`（图纸另附页码）。此前正文、图纸与图件多套页脚并存的状态已不存在。成果时效以 manifest 的 sha256 与 changelog 为准，不以页脚数字为准。
+构建溯源：当前投稿包、四份 HTML、全部 26 张栅格图件、两份触觉 SVG 与四套共 38 页 PDF 均使用 `JING-ZHANG HANDOVER LINE / PACKAGE v2.0`（图纸另附页码）。PDF 第 2 页至末页的技术图面内容沿用既有技术基线，但其**图件内容修订来源**不再冒充投稿包版本；所有可见载体的投稿包身份统一为 v2.0。除逐页可检索印记外，`version-audit.js` 还从 A0 中英首页抽取 4 张嵌入栅格并与当前 v2.0 源图逐像素比对，结果 4/4 完全一致。逐页核验见 `visual/assets/governance/pdf-version-report.json` 与 `version-stamp-report.json`，成果时效仍以 manifest 的 sha256 与 changelog 为准。
 
 v1.6 新增的 `visual/assets/governance/shift-ledger.schema.json` 为本方案原创的 JSON Schema Draft 2020-12 机器契约；`example-scn05-shift-ledger.json` 是合成、未执行且角色未授权的沙盒结构样例，不含个人数据，也不连接真实导航、政务、维护或告警服务。`validation-report.json` 仅记录 Schema 元模式与样例结构校验，不能据此声称路线、性能、安全、无障碍质量、法律合规、公众接受度或现场运行已经验证。
 
@@ -36,6 +37,12 @@ v1.6 引用的三部法律法规与政策文件（《生成式人工智能服务
 场地与重点区域采用仓库 `provisional_boundaries.geojson`，明确保留 `official_boundary=false`、`provisional_constraint` 和低置信度；它们不构成官方红线、法定规划、权属或工程依据。官方几何和专业条件可用后，全部派生图层、指标、图件与图纸应重新生成。
 
 本包授权标识为 `COMMUNITY-DISPLAY-ONLY`，并由权利人另行授予「符合 CC BY-NC 4.0 即已获许可」的等效使用（同文见 `proposal.md` 与本文件上节，`assets/media/` 内各媒体的说明文件沿用同一句）。任何第三方进一步使用应遵守上游仓库规则、逐项核验来源权利，并不得把概念建议表述为政府批准、专业审定或实施承诺。
+
+## 当前评审包与外部阻断 / Package Review State and External Blockers
+
+PR #3825 最新 96/100 评审的修复归类保存在 `visual/assets/governance/review-3825-readiness-matrix.json`。当前参与者可控制的投稿修复为 0，包自审结果为 `CLOSED_FOR_FORMAL_REVIEW`；这只表示材料可交给正式评委，不表示官方接收、获奖、发布、审批、采购或政府背书。真实 SCN-05 现场继续为 `BLOCKED_EXTERNAL_PRE_PILOT`，须由真实有权主体、保险、预算、报价、签字和专业现场证据关闭八门；任何公众可用性、包容性或绩效主张继续为 `BLOCKED_UNTIL_24_REAL_TASKS`。这些外部条件未被冒充为已完成合作或权利证据。
+
+The PR #3825 repair classification is persisted in `visual/assets/governance/review-3825-readiness-matrix.json`. Participant-controlled submission repairs stand at zero and the participant package assessment is `CLOSED_FOR_FORMAL_REVIEW`; this means only that the material may be handed to formal jurors, not official intake, award, publication, approval, procurement or government endorsement. The real SCN-05 field pilot remains `BLOCKED_EXTERNAL_PRE_PILOT` until authorised actors, insurance, budget, quotations, signatures and professional field evidence close all eight gates. Any public usability, inclusion or performance claim remains `BLOCKED_UNTIL_24_REAL_TASKS`. None of those external conditions is represented as a completed partnership or rights proof.
 
 ---
 
