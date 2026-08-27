@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v2.3 — same-layout English drawing rebuild
+
+- Replaced the interim side-panel English companions with same-layout English A0 and A3 drawings derived directly from the latest Chinese masters.
+- Preserved the Chinese masters' page geometry, image scale, card positions, analytical diagrams, scene order, K1-K5 identifiers, and JZ-01-JZ-06 implementation sequence.
+- Replaced principal Chinese headings, narratives, operational labels, captions, governance terms, and board information bands inside their original text areas; no English sidebar or reduced Chinese-board thumbnail remains.
+- Retained stable plan identifiers and base-map proper-name evidence where changing the underlying raster plan would compromise spatial fidelity.
+- Rendered all 22 A3 pages and all three A0 boards after compression and checked page order, clipping, blank/black regions, image integrity, and print dimensions.
+
 ## v2.2 — latest English A0/A3 synchronization
 
 - Replaced the superseded five-board English A0 set with a three-board English companion aligned to the approved latest Chinese A0 master.
