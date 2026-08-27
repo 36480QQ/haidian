@@ -52,3 +52,25 @@
 > 他们蹲下来数道钉：中国自主创新，钉到第几颗了。
 > 百年应答 · 9 公里应答长卷 · 46 座应答门向近 70 个社区打开
 > 全部空间与开发内容均为概念建议，不构成政府审定结论。
+
+## 制作与权利边界
+
+- **静帧生成**：Lib Image（LibTV 平台）与 GPT image 2.0（经用户 ChatGPT Pro 订阅调用），提示词全部依据本包 `proposal.md` 正文口径自行撰写。
+- **图生视频**：道钉带、鸣钟之门、应答门三段经 Seedance 2.5（1920×1080 / 24 fps / 各 10 秒）；应答原点与人字之跃两段为静帧缓慢推镜，未经视频模型。
+- **拼装**：片头片尾与字幕条由 Python（PIL）绘制，FFmpeg（libx264）拼装，全片 55 秒、静音无音轨。
+- **权利**：未使用任何第三方图像、影像或受版权保护的素材作为参考图；画面为 AI 生成的概念意象示意，非实景照片、非工程效果图、非实测数据、非官方审定成果。
+- 逐项溯源与权利声明见 `report/copyright_statement.md`。
+
+## English transcript
+
+Silent film, 1920x1080 / 24 fps / 55 s, no audio track. The imagery is AI-generated and is a conceptual impression - not a photograph, not an engineering rendering, and not an officially approved result. English captions ship as `narrative.en.vtt`; timecodes are identical to the Chinese track.
+
+- **00:00.700-00:03.500** THE CENTURY ANSWER. In 1909 a railway asked a question: can the Chinese build their own railway? Today, beside that same railway, a nine-kilometre scroll is answering a second one.
+- **00:04.500-00:10.700** Rail-Spike Band, whole line. Every large model independently registered in Haidian gets one bronze spike at the walkway edge.
+- **00:14.500-00:20.700** South-Question, Gate of the Ringing Bell. When a company in the belt completes registration or lists, the newly cast Answer Bell beside Dazhongsi is struck once.
+- **00:24.500-00:28.700** Middle-Answer, the Answer Origin. Only a bare 0.6-hectare plaza before the station: one answer book, one zero-kilometre stele, K0+000.
+- **00:32.500-00:38.700** North-Leap, the Ren-Shaped Leap. It crosses the ring road only, not the Qinghe; both ends land in the green either side and meet the river's blue-green.
+- **00:42.500-00:48.700** East-west crossing, the Answer Gates. 46 Answer Gates reach into nearly 70 communities; dual-use ramps carry wheelchairs and low-speed robots alike.
+- **00:52.000-00:54.900** Citizens do not come to read display boards. They crouch down and count the spikes: how far has China's independent innovation got? All spatial and development content is a conceptual recommendation, not an approved government conclusion.
+
+**Declared divergence**: in the Rail-Spike Band segment the bronze spikes appear mid-walkway, whereas the written calibre places them at the walkway edge. The sections and the proposal text govern.

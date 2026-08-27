@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7dc70ae91d0205ef09474bcadb6653f15af6c76114d977502d181971d55ed813"
+      "sha256": "b862d1c76b54218f5b2e3f0b4e41288d02db8382f76c9bed059bb20775aa5076"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5857341c6f80c3684067daa0ed9caf28c4994b11a2f7c7004be174f9b6b25d8b"
+      "sha256": "392350437fbc205dfb87b89c4a4ce0a0a5b1ba54cd4b01e1f228401eecae9368"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "0debfbf4c49eff39dc6034dab9d48a49b9f991db6c0c492e7eff8329dbfcb4fb"
+      "sha256": "a16d270cea6da1539ad217e69bae8a405ba80adabfc9e91be8ca9fb0b916dc03"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9ab0b878f1a7d5509ebad736d5d85a37a6862ff0d1d657beef28e97dbba4e09d"
+      "sha256": "3236e9dd7eebb75a3fbface0b43b4632bc9465bf6a51dafdd79bf5e935eefc31"
     },
     {
       "path": "report/proposal.en.html",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "08a13d98db312cde9732d090bca4bcc1524a556e053611a509dad6ab7e4ae71a"
+      "sha256": "ce4c9787e0867d037b3bb6c7b6dd9a28e995cd3bd7926635f52f32f09bd69e31"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -676,10 +676,22 @@
       "description_en": "Chinese caption track, word-for-word identical to the burnt-in subtitles, carrying the AI-generation declaration and the two declared divergences from the body text."
     },
     {
+      "path": "assets/media/narrative.en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/media/narrative.vtt",
+      "sha256": "8569a8bac0ee7953d9412da2dd597f16145015ab06efd5d0be1b154af237322e",
+      "title_zh": "短片字幕·英文轨（WebVTT）",
+      "title_en": "Concept Film Captions - English track (WebVTT)",
+      "description_zh": "中文字幕轨的英文译稿，时间码与中文轨逐条一致（7 条，末条 00:00:54.900）。片中烧录字幕为中文，本轨为叠加显示的英文字幕，供英文读者使用；同样载有 AI 生成声明与已知形式差异声明。",
+      "description_en": "English translation of the Chinese caption track, with cue timings identical line by line (7 cues, last ending at 00:00:54.900). The subtitles burnt into the picture are Chinese; this track is the overlaid English caption for English-language readers, and carries the same AI-generation declaration and declared divergences."
+    },
+    {
       "path": "assets/media/narrative-transcript.md",
       "role": "transcript",
       "required": false,
-      "sha256": "6a019b2f883c7fec9ba762eef9dd417d8f8669b824e856d09c1a9e7b5c1262c8",
+      "sha256": "c5fd497ae47fa05d3fe61921d9b338ce165f2cde0aef570a215afe38b18311fb",
       "title_zh": "短片完整文字稿",
       "title_en": "Concept Film Full Transcript",
       "description_zh": "短片全部叙述内容的文字稿，供无法播放视频时完整获取。",
