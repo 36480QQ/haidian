@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Centennial Jing-Zhang AI Innovation Belt · Machine-Readable Urban Design Proposal (WorkBuddy v1) - proposal report</title>
 <style>
+@font-face{font-family:"Noto Sans SC";src:url("../assets/fonts/NotoSansSC-Regular.otf") format("opentype");font-weight:400;font-display:swap;}
 :root {
   --ink: #172033;
   --muted: #667085;
@@ -16,7 +17,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: "Noto Sans SC", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
@@ -119,7 +120,7 @@ code {
 <section class="hero">
 <h1>Centennial Jing-Zhang AI Innovation Belt · Machine-Readable Urban Design Proposal (WorkBuddy v1)</h1>
 <p class="summary"></p>
-<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+<p class="translation-link"><a href="proposal.html">Read Chinese version</a></p>
 </section>
 <h1>Centennial Jing-Zhang AI Innovation Belt — Urban Design Proposal (WorkBuddy v1)</h1>
 <blockquote><p><strong>One-line judgment</strong>: The real asset of this belt is not &quot;43.6 km² of land&quot; but the unique overlap of three local, immovable facts — the Jing-Zhang railway industrial heritage, the Zhongguancun AI industry stock, and the Haidian education matrix. The proposal starts from these facts, not from &quot;XX-model analogy&quot; stacking <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="haidian_gov_2026" title="Source: haidian_gov_2026">Source</sup><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="open_city_ai_2026" title="Source: open_city_ai_2026">Source</sup>.</p></blockquote>
@@ -133,7 +134,7 @@ code {
 <ul>
 <li><strong>Coordinated area 43.6 km²</strong> (North 5th Ring – Beijing North Station); geometry taken from repo PROV-RESEARCH-001, shoelace recomputes ~43.6 km², matching the official 43.6 km² <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson" title="Spatial data: geometry/site_boundary.geojson">Spatial data</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area" title="Metric: site_area">Metric</sup>.</li>
 <li><strong>Overall urban-design area 11.4 km²</strong> (from PROV-SITE-001, recomputes ~11.4 km²) <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson" title="Spatial data: geometry/site_boundary.geojson">Spatial data</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="overall_design_area" title="Metric: overall_design_area">Metric</sup>.</li>
-<li><strong>Key areas 368.4 ha</strong>: Zhongzhiyuan AI Acceleration Area 192.1 ha, Beijing AI Origin Community 104.3 ha, Dazhongsi AI Industry Cluster 72.0 ha (from PROV-KEY-001/002/003, recomputed sum ~368.9 ha, matching official 368.4 ha) <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson" title="Spatial data: geometry/key_areas.geojson">Spatial data</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_area" title="Metric: key_area_area">Metric</sup>.</li>
+<li><strong>Key areas 368.4 ha</strong>: Zhongzhiyuan AI Acceleration Area 192.1 ha, Beijing AI Origin Community 104.3 ha, Dazhongsi AI Industry Cluster 72.0 ha (from PROV-KEY-001/002/003, recomputed sum ~369.7 ha, matching official 368.4 ha) <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson" title="Spatial data: geometry/key_areas.geojson">Spatial data</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_area" title="Metric: key_area_area">Metric</sup>.</li>
 <li>Three belts: Centennial Jing-Zhang Culture Belt, Urban AI Living-Experience Belt, AI Fusion Innovation Belt <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="spatial_structure" title="Standard: spatial_structure">Standard</sup>.</li>
 </ul>
 <figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="Three-level scope"><figcaption>Three-level scope</figcaption></figure>
@@ -164,7 +165,7 @@ code {
 </ul>
 <figure class="proposal-figure"><img src="../assets/figures/fig-agent2-ecosystem.png" alt="AI innovation ecosystem and factor-guarantee map"><figcaption>AI innovation ecosystem and factor-guarantee map</figcaption></figure>
 <h2>Land Use, Building Scale, and Retain-Renovate-Demolish Strategy</h2>
-<p>Land-use partition from provisional boundary in <code>geometry/land_use.geojson</code>; area metrics in <code>metrics.json</code> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="Spatial data: geometry/land_use.geojson">Spatial data</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_area_by_code" title="Metric: land_use_area_by_code">Metric</sup>. Retain class = railway heritage + university edges; renovate class = inefficient plants; demolish class = only零散 dilapidated buildings with no cultural value <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="retain_renovate_demolish" title="Depth: retain_renovate_demolish">Depth</sup>. <strong>All areas recomputed after official redlines release</strong> [assumption:area_recalculation].</p>
+<p>Land-use partition from provisional boundary in <code>geometry/land_use.geojson</code>; area metrics in <code>metrics.json</code> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="Spatial data: geometry/land_use.geojson">Spatial data</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_area_by_code" title="Metric: land_use_area_by_code">Metric</sup>. Retain class = railway heritage + university edges; renovate class = inefficient plants; demolish class = only scattered dilapidated buildings with no cultural value <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="retain_renovate_demolish" title="Depth: retain_renovate_demolish">Depth</sup>. <strong>All areas recomputed after official redlines release</strong> [assumption:area_recalculation].</p>
 <h2>Transport, Rail, Municipal Infrastructure, and Public Services</h2>
 <ul>
 <li>Rail uses the existing Jing-Zhang HSR heritage corridor + Line 13 / Changping line; add <strong>community-level driverless micro-circulation</strong>, not trunk increments <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="transit" title="Standard: transit">Standard</sup><sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="traffic_rail_slow_parking" title="Depth: traffic_rail_slow_parking">Depth</sup>.</li>
