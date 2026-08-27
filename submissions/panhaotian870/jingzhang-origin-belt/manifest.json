@@ -133,7 +133,7 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "4f6217e22255d263b29469e283f2011332a4a5c333c73756b6b221fddff0d473",
+      "sha256": "3df241c00085cc854563c8a65ac848f5b5cab9ea8fdc48abdcc535b62b22c04f",
       "language": "zh"
     },
     {
@@ -221,7 +221,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "9baebee7599ad64baf44163ca84129809fd282a824e92d4a9e43eb7e8f8dec09",
+      "sha256": "9065bb61286d85bb51b616353600d3735d14940255b86b6c172dc27f831cd9b2",
       "language": "zh"
     },
     {
@@ -253,7 +253,7 @@
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "32432f09833e5cb14c94d1c62d883f518758bf7d3729f861e831843a8b68dd9a",
+      "sha256": "1f2454e1b949c3e14db7594efd3c4f55b8fdce66dc597f143d91967bfb5bb86f",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -269,7 +269,7 @@
       "path": "drawings/a3-booklet.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "bacc6dada0157b1f1de4f8984d72fc675f0a6ba5cd9b78353f322d03ef128408",
+      "sha256": "e626b350dfc9baa01d04ac6e3a0a112a3db151e0865643b621217780a6965be9",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -320,6 +320,50 @@
       "sha256": "c3dfb0be7a3a57baf9c78c5540528bcb369cc2f0c46b8841cde7faa0a78334cd",
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png"
+    },
+    {
+      "path": "assets/figures/brand-identity.svg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "sha256": "d163cfd740b33895aeadfad97bec17780504da4cf3cd51a0dc0de5d55e96d47c"
+    },
+    {
+      "path": "assets/figures/landmarks.svg",
+      "role": "asset",
+      "required": false,
+      "language": "neutral",
+      "sha256": "45287e2fd40d6094bc84370c4c8309856edd4758ca560980e515cae363f395d1"
+    },
+    {
+      "path": "assets/figures/brand-identity.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "d0d3e9641f8a5407dde9454db1c6e851864440cad8b8506ba9060669c2b06996"
+    },
+    {
+      "path": "assets/figures/landmarks.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "sha256": "7d965a1effac682b6f34e00fcaffa5c619fad15f3d8c0924ab1a9d7caf3f1f65"
+    },
+    {
+      "path": "assets/figures/brand-identity.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/brand-identity.png",
+      "sha256": "5f6e8510cea7ad59eb2d846e6f2623014dc58389b596fbf3b7273caac2be83d0"
+    },
+    {
+      "path": "assets/figures/landmarks.en.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/landmarks.png",
+      "sha256": "728e727a4678fa120664e1148429e34176e7e84100a025fc3c92573112ce706d"
     }
   ],
   "validation_claim": {
