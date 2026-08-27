@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "7df0ddbbffcac75732e3d054f43b525039c047c024552bc2f58d505d30cce9f0"
+      "sha256": "5551aecc9bee8c1fd278b86e8a04f8abe8340097a7af8fd0224bb3c723d7d1ba"
     },
     {
       "path": "agent.json",
@@ -44,19 +44,19 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "f5ba393d2692e7372c3ebd6163cd5f8041cb98218366789bd4de5d83e10a05a8"
+      "sha256": "d4b359acdb6396100bcd04e01aa0a43d4a7140117890f344dbf59704ec6e0bb9"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "0a286acdb42c1b5e43c98ed7cce95967b90ef942242501278caa4c0ee0c103c1"
+      "sha256": "4c3dd4e8865b8199a01d567683cc6aebb50457f2b8ffacece10f77d9fab575a6"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "3e1615163195b14e12cfd1b4132d134c00514ebe31ffce62e9773e18a496d9be"
+      "sha256": "4757b0308aff5d1cc972dba36e8495ca7b5df16c0da63df6354d25f24a99a8c6"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,40 +81,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "74d81801951ee09bdb5064d818804b03988b78b6d19ef514b3a0ee20bf5575cf"
+      "sha256": "8512102f1fff81a895aa0ae29aaa5aa8bba834bee391f35123fdbaf0bbefeed0"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "f5012e261991a280375775a78e4bfc50fff338b8b6e71a28ba42b282752d00be"
+      "sha256": "dc1510564194ceb2dedb3f3efc564e9e7d6a145cd1113c739f1a32cf61b0ef6f"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "2379d853c2238a82fc33a42977603c0a26fc1a0254fcad718b8f8a70f485cdc7"
+      "sha256": "f401212cb326f5ff5b0fec12631cf32d3bfbd2c3bd297e739e732a0fa3fa1fe0"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "02e102798c2cbf42a7d2067428861b9bc96cc4c1c856bb04aa247c1dce4dfc9b"
+      "sha256": "bcd54eebefead91bdcb01c5bed5b5330a1868abfe5ec3301dba2cf11b7d2c5d6"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a6ee2f746d1b7d5d01ee109f4125de61b359d20660b13e1b0e57a793a9094c54"
+      "sha256": "c0fa8d3eaa4fb224d2760f87a3105040bd61f0b2080cf40c28a526f1b5d94c3a"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "eb8135945a0aef75a23e72922c7215cab3b836d833d8a948a1de81e638243d90"
+      "sha256": "e8f14a21081430e0da8d11f07c4b924b72b65b433e86d583e4295384114c75c6"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "cae4e873da385da9f4e71509cc56cdc30d76e0b00912c10267dff539912aa87e"
+      "sha256": "5177fbc82bac40680a1dc9a397565bd6495983204bbae83f0a0879766dd91e4c"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b64a3da37344ea34e6984990bce33140146089496c2377c12028d2284ded78a4"
+      "sha256": "8916c7563576e5bce63ec807da40e6853aa19c98de92858e41d447a83be3c20d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "1bcba132f735ea0df01965ea0562075cd506c9b553b0f8ea55caa2e2b22a6074"
+      "sha256": "1e476fec68629c2fe897a7e41de7ce2aa2cfc0770cf9325c07c334fd6483bbd7"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "f6e9bb077e8350a2f677b30ae460b33e215db14590e63cfb12674c30bb1a3020"
+      "sha256": "b584f7d21a10c2bba2087f053f3cd31c352e38025c2ec3acd1a393063f8092af"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f2eef124d49ae3a78cd847ae12855563cd18840db72eedc80f059cae90eff19d"
+      "sha256": "fb0f59b7aa2c47abd8e431aa2481d5fa336551e3f94940882cf8575b1a59b5cc"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +284,27 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "cb6908d0f66dd06616de8dc38e6f0ee5694b6a6471af98bcbbf3cec0ef80c5f7"
+    },
+    {
+      "path": "changelog.md",
+      "role": "changelog",
+      "required": true,
+      "language": "neutral",
+      "sha256": "0265a4b6513f58a1ec87ca4a5d4cae502d1566642cd7d491407ecb74c4c564e5"
+    },
+    {
+      "path": "visual/assets/careworks-cjk-font.css",
+      "role": "asset",
+      "required": true,
+      "language": "neutral",
+      "sha256": "a807d2bc90faf41688acc07103154ac747994a96079f10f9a37e400943c029d5"
+    },
+    {
+      "path": "visual/assets/webfont-coverage-evidence.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "ab3f6dd64c9f0b28f0ff950a76a55b93738efea3550415bfec12733013b7c896"
     }
   ],
   "validation_claim": {

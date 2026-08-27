@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/JewelRoam/jingzhang-careworks/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/JewelRoam/jingzhang-careworks/changelog.md"
+      ],
       "changed_files": [
         "submissions/JewelRoam/jingzhang-careworks/agent.json",
         "submissions/JewelRoam/jingzhang-careworks/assets/figures/key-areas.en.png",
@@ -29,6 +31,7 @@
         "submissions/JewelRoam/jingzhang-careworks/assets/figures/site-overview.en.png",
         "submissions/JewelRoam/jingzhang-careworks/assets/figures/site-overview.png",
         "submissions/JewelRoam/jingzhang-careworks/assumptions.json",
+        "submissions/JewelRoam/jingzhang-careworks/changelog.md",
         "submissions/JewelRoam/jingzhang-careworks/compliance_matrix.json",
         "submissions/JewelRoam/jingzhang-careworks/design_depth_matrix.json",
         "submissions/JewelRoam/jingzhang-careworks/drawings/a0-boards.en.pdf",
@@ -55,13 +58,15 @@
         "submissions/JewelRoam/jingzhang-careworks/self_check.json",
         "submissions/JewelRoam/jingzhang-careworks/sources.json",
         "submissions/JewelRoam/jingzhang-careworks/standard_matrix.json",
+        "submissions/JewelRoam/jingzhang-careworks/visual/assets/careworks-cjk-font.css",
+        "submissions/JewelRoam/jingzhang-careworks/visual/assets/webfont-coverage-evidence.json",
         "submissions/JewelRoam/jingzhang-careworks/visual/index.en.html",
         "submissions/JewelRoam/jingzhang-careworks/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/JewelRoam/jingzhang-careworks": "formal"
       },
-      "total_bytes": 4755870,
+      "total_bytes": 5678329,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -139,7 +144,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 15,
+          "source": 16,
           "standard": 3,
           "depth": 8,
           "data": 8,

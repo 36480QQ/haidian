@@ -546,6 +546,31 @@
       "coverage": "Source-specific publication scope; retrieved on the declared accessed_date.",
       "transformation": "Human-readable factual summary and design transfer only; no screenshot tracing, geocoding, personal-data import or outcome extrapolation.",
       "limitations": "Authority, spatial extent and time point remain source-specific; the item cannot replace official GIS/CAD or field verification."
+    },
+    {
+      "id": "FONT-NOTO-SANS-SC",
+      "url": "https://fonts.google.com/specimen/Noto+Sans+SC",
+      "source_type": "open_font",
+      "usage": "SIL Open Font License 1.1 CJK fallback for offline report and visual HTML; subsetted and embedded as data:font/woff2.",
+      "accessed_date": "2026-08-28",
+      "source_id": "FONT-NOTO-SANS-SC",
+      "title": "Noto Sans SC",
+      "publisher": "Google Fonts / Noto project",
+      "authority_level": "open_license",
+      "usable_for": [
+        "offline HTML typography",
+        "accessibility and readability"
+      ],
+      "not_usable_for": [
+        "site evidence",
+        "planning controls",
+        "official boundary",
+        "performance claim"
+      ],
+      "rights_and_license": "SIL Open Font License 1.1; this package redistributes a subset in an embedded WOFF2 data URI and retains attribution.",
+      "coverage": "Source-specific publication scope; retrieved on the declared accessed_date.",
+      "transformation": "Human-readable factual summary and design transfer only; no screenshot tracing, geocoding, personal-data import or outcome extrapolation.",
+      "limitations": "Authority, spatial extent and time point remain source-specific; the item cannot replace official GIS/CAD or field verification."
     }
   ]
 }

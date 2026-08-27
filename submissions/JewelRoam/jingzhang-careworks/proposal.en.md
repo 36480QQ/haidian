@@ -61,6 +61,20 @@ The talent profile includes facility operators, repair workers, accessibility re
 | Zhongguancun Technology Service Wing | Provide IP, capital, international standards and independent professional services. |
 | Xiaoyuehe Scenario Empowerment Wing | Provide continuous public settings and cross-neighbourhood transfer tests. |
 
+### Regional innovation coordination (conceptual interfaces / proposed collaboration)
+
+The following matrix turns the five named regional objects into **conceptual interfaces** with explicit entry and exit conditions. No object is treated as a signed partner; exchange elements, cooperation interfaces and verification methods require written permission, professional review and community discussion. The evidence boundary is a hard constraint: this package does not claim funding, policy, orders, compute dispatch, talent allocation or official cooperation [requirement:agent.1] [assumption:A-REGIONAL-SYNERGY-001].
+
+| Partner | Conceptual problem division | Exchange elements | Cooperation interface (concept) | Entry conditions | Exit conditions | Evidence boundary |
+|---|---|---|---|---|---|---|
+| North Latitude Community | Provide everyday community problems, youth feedback and reviewable service baselines; no community commitment is implied. | Anonymised problem templates, offline event feedback, repair knowledge and failure cases. | A conceptual community-desk to developer-community interface using static packets, paper forms and phone, with no personal tracking. | Written consent, venue permission, data minimisation, a named maintainer and a working offline path. | Remove the interface and return to manual service if ownership is absent, privacy/safety fails twice, or offline service is interrupted. | Conceptual interface/proposed collaboration only; no contract, funding, policy promise or current-performance evidence. |
+| Future Science City | Offer big-science, energy/compute and research-talent problems for enclosed evaluation along Jingzhang; not a substitute for the park plan. | Compliantly de-identified problem sets, compute performance metrics, test protocols and maintenance experience. | A conceptual Zhongzhiyuan enclosed-test and compute/evaluation-packet interface; the boundary stops at written data permission and test safety. | Data and equipment permissions, an enclosed site, network/safety review, human takeover and audit logging must be available. | Stop and clear the temporary link after a critical miss, failure to stop on geofence/link loss, or an unreviewable change in test conditions. | Conceptual interface/to be negotiated; no evidence of a joint lab, compute dispatch, funding or official cooperation. |
+| Huairou Science City | Offer AI-for-Science and research-data-governance questions; the Jingzhang side only hosts display, governance-tool tests and public explanation. | Compliant data dictionaries, algorithm-impact templates, annual result summaries and public feedback. | A conceptual annual exhibit and governance-sandbox interface at the AI Origin Community; no raw research data or research approval is transferred. | Written research authorisation, data classification and de-identification, exhibit/cyber review and a public-readable summary. | Stop display and sharing if authorisation is withdrawn, data boundaries are unclear, or the public explanation fails review. | Conceptual interface/to be negotiated; no research project, transfer, policy or funding commitment is asserted. |
+| Beijing E-Town | Offer embodied-AI, smart-manufacturing and robotics-supply-chain validation problems; Jingzhang supplies low-speed, stoppable public-service segments. | Equipment safety lists, test protocols, repair-spares knowledge and aggregate runtime feedback. | A conceptual Dazhongsi experience-front and enclosed-test-loop interface; open active travel stays separate from robots. | Title/traffic/fire/accessibility permissions, an enclosure, on-site supervision, vendor neutrality and a human stop control. | Stop after failure to halt near people, a boundary breach, an equipment incident or unclear maintenance; never move to open-road deployment. | Conceptual interface/proposed collaboration; no enterprise tenancy, orders, revenue or official-access evidence. |
+| Beijing-Tianjin-Hebei region | Frame shared questions about cross-city talent, housing, compute and data compliance; this package defines only verifiable regional interfaces. | Compliant data-element catalogues, talent-service needs, compute-network status and cross-city review templates. | A conceptual Qinghe gateway compute-network and youth-service interface; no housing allocation, network connection or cross-border data flow is promised. | Written confirmation by local owners, data/network compliance, aligned service standards, and complaint/exit mechanisms first. | Exit when any party withdraws, compliance fails, service standards cannot align, or complaints cannot close. | Conceptual interface/to be negotiated; no regional mechanism, talent allocation, compute access or government commitment is evidenced. |
+
+Every entry condition includes an accountable owner, lawful data/venue permission, a human fallback and an appeal path. When an exit condition is met, temporary data and equipment are removed and service returns to paper, phone and staffed routes. This is a working protocol draft for regional coordination, not a cooperation agreement or implementation commitment [source:AGENT-TASKBOOK].
+
 - **One Care Line:** a conceptual service connection across walking, cycling, stations and communities; it is not a new road redline [data:geometry/roads.geojson#ROAD-001].
 - **Three Careworks yards:** reliability testing in Zhongzhiyuan, shared reporting and care in the AI Origin Community, and spares/circular repair in Dazhongsi. Envelopes are derived from provisional key areas and make no development claim [data:geometry/buildings.geojson#BLDG-CARE-02] [assumption:A-CONTROLS-001].
 - **Ten shifts:** each public service states user, time, place, AI boundary, offline fallback, operator and metric. Face recognition and personal trajectory tracking are excluded by default.
@@ -88,6 +102,46 @@ Everyday services come first: public toilets, accessible continuity, drinking wa
 ### 3.3 Dazhongsi Circular Repair Yard
 
 The industrial cluster shifts from displaying AI to repairing faster and using equipment longer: shared civic spares, remanufacturing, small repair firms and a public reliability ledger. Humans approve all procurement and the recommender cannot lock in one supplier [requirement:agent.4].
+
+### agent.4 deepening: heritage-park public space and intelligent-native conversion (conceptual / proposed)
+
+**Spatial strategy (conceptual)**: use existing heritage-park public space as the base, then add reversible service nodes for east-west stitching and north-south continuity at existing crossings, station approaches, underpasses and community entrances. The nodes provide a repair desk, accessible-detour information, night-worker rest and a small repair workbench. No bridge, tunnel, underground, road-redline or heritage-engineering feasibility is assumed; exact locations wait for title, heritage, blue-line, green-space, traffic-safety and accessibility review [requirement:agent.4] [assumption:A-CONTROLS-001].
+
+**At least three honour/failure displays and a replaceable public-space component library (conceptual)**: every mechanism is offline-capable, replaceable and maintainable, and shows failure and repair instead of manufacturing a “zero-fault” landmark.
+
+### Contribution and failure ledger (conceptual / proposed)
+
+- **Honour/failure display mechanism:** Show aggregate uptime, failure reasons, repair dates, human edits and appeal outcomes; annual contributors and honest failures share the same wall.
+- **Replaceable public-space component:** Replaceable magnetic/clip-in panels, a paper-print slot and downloadable CSV; damaged panels are replaced individually.
+- **Maintenance responsibility (written confirmation pending):** A public-space operator is proposed for daily checks and replacement, with monthly sampling by an independent auditor; conceptual/proposed roles only.
+- **Stop and fallback:** Pause automated updates while retaining a manual bulletin when data cannot be de-identified, two periods are missed, or appeals lack an entry point.
+
+### Stoppable reliability test bench (conceptual / proposed)
+
+- **Honour/failure display mechanism:** Display passes, misses, false alerts, takeovers and stops; honour is never based on demo counts or “zero faults.”
+- **Replaceable public-space component:** Detachable status posts, boundary signs, a physical stop button and low-power light strips; equipment faults bypass to a static sign.
+- **Maintenance responsibility (written confirmation pending):** The enclosed-test operator handles opening and stop tests, the technical team maintains equipment, and a safety reviewer audits independently; conceptual/proposed only.
+- **Stop and fallback:** A boundary breach, failure to stop on link loss or proximity, or one critical miss triggers physical shutdown and manual rounds.
+
+### Repair library and public workbench (conceptual / proposed)
+
+- **Honour/failure display mechanism:** Reuse parts, repair steps, consented worker credits and community lessons form a third honour/failure display.
+- **Replaceable public-space component:** Standard shelves, replaceable tool boards, folding benches, paper catalogues and accessible-height modules form a reusable kit.
+- **Maintenance responsibility (written confirmation pending):** Repair firms/community workshops are proposed for tool inventories; the venue operator handles cleaning, accessibility and opening hours; written confirmation is required.
+- **Stop and fallback:** Close the workbench while retaining reading and staffed advice if tool safety, fire, accessibility or handover checks fail.
+
+#### Dazhongsi intelligent-native consumption and business conversion prerequisites (conceptual / proposed)
+
+Dazhongsi conversion is not an investment-attraction or tenancy promise. It is a reversible three-gate test:
+
+| Gate | Conditions to confirm first | Conceptual spatial/operational move | Boundary when unmet |
+|---|---|---|---|
+| Space and compliance | Title, existing buildings, heritage/land-use, fire, accessibility, traffic and municipal capacity; all await formal data | Place removable repair displays, civic-spares cabinets and separated people/service paths inside usable existing space; no demolition | Keep assets and staffed service in place whenever a permit or safety condition is unclear |
+| Operations and accountability | Written operator, merchant/repair team, opening hours, human procurement, data and labour review | Record a 30-day footfall/fault/cost baseline, then a small 90-day experience-front pilot; algorithms only suggest | Stop and remove temporary equipment if ownership, offline service or appeals are missing |
+| Revenue and fairness | Footfall, conversion, lease/revenue-sharing, lifecycle cost and public acceptance; currently unknown | Publish aggregate measures and failures; promise no revenue, orders, investment return or tenancy | Return to existing business and manual repair when evidence is insufficient or exclusion, hidden fees or safety events appear |
+| Exit and review | Independent safety, accessibility, labour, privacy and financial review | Export open-format records, remove unnecessary personal data, retain paper/phone access | Any red-line event stops the test; permanence requires formal planning, procurement and public participation |
+
+All components, landmarks and conversion steps are conceptual/proposed. They do not mean that a government, park, company or community has agreed, and they do not constitute a budget, policy, title or engineering conclusion [assumption:A-AGENT4-COMPONENTS-001] [assumption:A-DAZHONGSI-CONVERSION-001].
 
 ![Different responsibilities across the three yards](assets/figures/key-areas.en.png)
 
