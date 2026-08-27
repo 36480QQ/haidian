@@ -146,7 +146,9 @@
       "usage": "叙事母题：工程自主的时间起点，用于“百年自主，人字向上”的时间结构与四原点命名。",
       "usable_for": "background_only：仅用于文化叙事、地标命名与展陈主题",
       "not_usable_for": "不得作为空间指标、面积、线位或任何法定结论的依据；本包未取得可登记的公开 URL，故降格为待核观察，正式来源清权后方可升格",
-      "reuse_conditions": "史实本身不受版权保护；任何具体表述的转引须自行核验原始出处"
+      "reuse_conditions": "史实本身不受版权保护；任何具体表述的转引须自行核验原始出处",
+      "downgrade_scope": "已在中英摘要、正文、report/*.html、drawings/*.pdf 与 manifest.json 传播文案中统一降格；确认式措辞（如“两份国家级事实”）已取消。",
+      "film_narration_note": "短片旁白为已合成音频，字幕须与音轨逐字对应，故 assets/media/film*.mp4 及其字幕中的相关历史陈述未作文字改动，改由 film-transcript.md / film-transcript-en.md 顶部的降格声明统一标注为待核叙事假设；正文、HTML、PDF 与 manifest 传播文案中的确认式措辞与无法核验的精确日期均已删除。取得正式来源或重录配音后同步更新。"
     },
     {
       "id": "HIST-TSINGHUAYUAN-1949",
@@ -160,7 +162,9 @@
       "usage": "叙事母题：赶考原点，用于赶考门地标命名与主脉展陈主题。",
       "usable_for": "background_only：仅用于文化叙事与地标命名",
       "not_usable_for": "不得据此推断车站旧址的保护范围、建设控制地带或任何可计算边界；具体日期与站点关系须经文物主管部门核定；本包未取得可登记的公开 URL，降格为待核观察",
-      "reuse_conditions": "史实本身不受版权保护；具体表述的转引须自行核验原始出处"
+      "reuse_conditions": "史实本身不受版权保护；具体表述的转引须自行核验原始出处",
+      "downgrade_scope": "已在中英摘要、正文、report/*.html、drawings/*.pdf 与 manifest.json 传播文案中统一降格；确认式措辞（如“两份国家级事实”）已取消。",
+      "film_narration_note": "短片旁白为已合成音频，字幕须与音轨逐字对应，故 assets/media/film*.mp4 及其字幕中的相关历史陈述未作文字改动，改由 film-transcript.md / film-transcript-en.md 顶部的降格声明统一标注为待核叙事假设；正文、HTML、PDF 与 manifest 传播文案中的确认式措辞与无法核验的精确日期均已删除。取得正式来源或重录配音后同步更新。"
     },
     {
       "id": "HIST-ZGC-APPROVALS",
@@ -174,7 +178,9 @@
       "usage": "制度谱系：说明“自主创新”写入国家级园区正式名称的沿革，支撑本方案的原点性定位。",
       "usable_for": "background_only：仅用于定位论证的制度背景陈述",
       "not_usable_for": "不得据此推断本次设计范围内的用地性质、强度指标或政策待遇；文号与具体日期须以国务院公开文本为准；本包未取得可登记的公开 URL，降格为待核观察",
-      "reuse_conditions": "公文本身不受版权保护；转引须自行核验文号与原文"
+      "reuse_conditions": "公文本身不受版权保护；转引须自行核验文号与原文",
+      "downgrade_scope": "已在中英摘要、正文、report/*.html、drawings/*.pdf 与 manifest.json 传播文案中统一降格；确认式措辞（如“两份国家级事实”）已取消。",
+      "film_narration_note": "短片旁白为已合成音频，字幕须与音轨逐字对应，故 assets/media/film*.mp4 及其字幕中的相关历史陈述未作文字改动，改由 film-transcript.md / film-transcript-en.md 顶部的降格声明统一标注为待核叙事假设；正文、HTML、PDF 与 manifest 传播文案中的确认式措辞与无法核验的精确日期均已删除。取得正式来源或重录配音后同步更新。"
     },
     {
       "id": "REGION-EAST-DATA-WEST-COMPUTING",
@@ -188,7 +194,8 @@
       "usage": "区域协同：说明张家口在国家算力布局中的实体角色，支撑“绿色算力”与区域联动论述。",
       "usable_for": "background_only：仅用于区域协同的背景陈述",
       "not_usable_for": "不得据此推断本带的算力规模、能耗指标、投资额或任何可计算容量；本包未取得可登记的公开 URL，降格为待核观察",
-      "reuse_conditions": "政策事实本身不受版权保护；转引须自行核验发布机关与原文"
+      "reuse_conditions": "政策事实本身不受版权保护；转引须自行核验发布机关与原文",
+      "downgrade_scope": "已在中英摘要、正文、report/*.html、drawings/*.pdf 与 manifest.json 传播文案中统一降格；确认式措辞（如“两份国家级事实”）已取消。"
     },
     {
       "id": "REGION-ZJK-RENEWABLE-2016",
@@ -202,7 +209,8 @@
       "usage": "区域协同：绿电供给的制度背景；本方案已注明其法定名称不含“国家级”，不作拔高表述。",
       "usable_for": "background_only：仅用于绿电来源的背景陈述与名称准确性说明",
       "not_usable_for": "不得据此推断绿电比例、供电容量或任何可核算的能源指标；文号须以国务院公开文本为准；本包未取得可登记的公开 URL，降格为待核观察",
-      "reuse_conditions": "公文本身不受版权保护；转引须自行核验文号与原文"
+      "reuse_conditions": "公文本身不受版权保护；转引须自行核验文号与原文",
+      "downgrade_scope": "已在中英摘要、正文、report/*.html、drawings/*.pdf 与 manifest.json 传播文案中统一降格；确认式措辞（如“两份国家级事实”）已取消。"
     },
     {
       "id": "REGION-JINGZHANG-HSR",
@@ -216,7 +224,8 @@
       "usage": "区域协同：说明京张两端的通勤与协作可达性背景。",
       "usable_for": "background_only：仅用于区域可达性的定性背景陈述",
       "not_usable_for": "不得据此推断客流、OD、发车频次或任何交通量结论；相关交通结论一律依赖 [assumption:A-TRANSPORT-001]；本包未取得可登记的公开 URL，降格为待核观察",
-      "reuse_conditions": "事实本身不受版权保护；转引须自行核验原始出处"
+      "reuse_conditions": "事实本身不受版权保护；转引须自行核验原始出处",
+      "downgrade_scope": "已在中英摘要、正文、report/*.html、drawings/*.pdf 与 manifest.json 传播文案中统一降格；确认式措辞（如“两份国家级事实”）已取消。"
     },
     {
       "id": "GLOBAL-CASE-OBSERVATIONS",

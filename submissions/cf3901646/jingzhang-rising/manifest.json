@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "34642ce88e76e91002d832d6b12b0e157cc248cdbc665e5ddf673db47960ec61"
+      "sha256": "c0f6896bdf67c274458a6078a846fded8f6bd7225ff51074ced72e1cda1bc5b6"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "01052d8c5eed802b9d2abc8a1d73cca35df3fe33e6af4810e83791fcfe595c69"
+      "sha256": "627fbdbf7689b97eafaaabd57a2be997b38e8630b608e11774a8fa87a42e7d3e"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "dfff2ca3004e3c7ec8752e5d9e27f01c7948845de036e890624c21343b189bf4"
+      "sha256": "f097903eca1d7ad9e11a67bf20758f82262942e0f1d6d9f7841497a7563e0c58"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "461406a17b172c88b02fd25eb32036aa51900e1a3949908bfaabdc810263a26f"
+      "sha256": "6429a4fec3e3a14b3433a3966d83924c8145086c80cdcfec9e25f3940a5a83f9"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "7ad5ca58459e6f01e6b5b0640eea6b4feaff1b0c2116d46cddd900f6f18966ba"
+      "sha256": "30ed9d847a051ed0a8bc2de17f5029488c85016480073f999b57693af2645702"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "7ddb172b452a93315431fc7025a81ce87bc8a08ee5c8c7a43686ab72bcec4603"
+      "sha256": "446989e8d4e193322bbe3c2ef16be22643d2bffd4cb86a4818f87ba0cd138c40"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "02bc22f2c85b1fba5db56723b2ba2a4444a3a049c144f460393390feece96a72"
+      "sha256": "8cd7c84dc28edb2f91d48b31d9e3ba63d1c8e8c5e37b309cd6e2e6de2c334df2"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "86e985c3208025f613466a8793c0f06291733b7173043abdda3182199ce80543"
+      "sha256": "cd3717077c3a14df9891326be208f3b135af5d38a310c8200e95b7485f46948a"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "268686d9a7bbd8076ea7f8502d46a566f148c5a015dccde4f66975209842a65d"
+      "sha256": "26e5b23ac82d2baf8bb03b40111ca2dd89f3d1f7eafb8fef8f7db172372595f6"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "dc464152cdfb4fd00d1bff84d67e219573c099b922ad87fbb212c9a05fed904d"
+      "sha256": "46485c0ace6ad0f1e28da4d4784e11e8fdcbcbff200cbb95d8e14e8696755cc3"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "d76a4b39d665d347b1daa266c052b11b9d004e02f467069c0ff190f0e1540d5c"
+      "sha256": "5db6c042e127c4ddf8c316a760b498adcc6e463ebf358ea23e76d21e76007fe1"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "5850aaf986e9bcfa0d9dae628e1f8b53e2e77d77ee7430d886389670a7c4b3ab"
+      "sha256": "02c7c7d3bab0c2be1e166623b2cd549313aad45581ab3671d16e99a3b7cb7372"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -299,8 +299,8 @@
       "language": "zh",
       "title_zh": "京张向上 · 方案短片",
       "title_en": "Jingzhang Rising - proposal film",
-      "description_zh": "七十五秒方案短片，依次呈现百年自主的两份国家级事实、北京轴线谱系定位、一脉三台两翼双缝空间结构、四个原点文化线索、人工兜底与公开答卷治理内核，以及三项待确认指标的明确不回答。画面由本包 geometry 图层程序化生成。",
-      "description_en": "A 75-second proposal film covering the two national-level facts behind a century of self-reliance, the Beijing axis lineage, the spine-terraces-wings-stitches structure, the four origins, the human fallback and public report card governance core, and the three metrics this proposal declines to answer. Frames are generated programmatically from the package geometry layers.",
+      "description_zh": "七十五秒方案短片，依次呈现百年自主的两处历史线索（均为待核叙事假设，见 sources.json）、北京轴线谱系定位、一脉三台两翼双缝空间结构、四个原点文化线索、人工兜底与公开答卷治理内核，以及三项待确认指标的明确不回答。画面由本包 geometry 图层程序化生成。",
+      "description_en": "A 75-second proposal film covering the two historical threads behind a century of self-reliance (both carried as narrative assumptions pending verification; see sources.json), the Beijing axis lineage, the spine-terraces-wings-stitches structure, the four origins, the human fallback and public report card governance core, and the three metrics this proposal declines to answer. Frames are generated programmatically from the package geometry layers.",
       "sha256": "634320769c2536d8550eeae705fea1e8f09dbb82bcafcddd58e829c3e4495034",
       "poster": "assets/media/film-poster.png",
       "caption": "assets/media/film.vtt",
@@ -314,8 +314,8 @@
       "translation_of": "assets/media/film.mp4",
       "title_zh": "京张向上 · 方案短片（英文版）",
       "title_en": "Jingzhang Rising - proposal film (English)",
-      "description_zh": "七十五秒方案短片，依次呈现百年自主的两份国家级事实、北京轴线谱系定位、一脉三台两翼双缝空间结构、四个原点文化线索、人工兜底与公开答卷治理内核，以及三项待确认指标的明确不回答。画面由本包 geometry 图层程序化生成。",
-      "description_en": "A 75-second proposal film covering the two national-level facts behind a century of self-reliance, the Beijing axis lineage, the spine-terraces-wings-stitches structure, the four origins, the human fallback and public report card governance core, and the three metrics this proposal declines to answer. Frames are generated programmatically from the package geometry layers.",
+      "description_zh": "七十五秒方案短片，依次呈现百年自主的两处历史线索（均为待核叙事假设，见 sources.json）、北京轴线谱系定位、一脉三台两翼双缝空间结构、四个原点文化线索、人工兜底与公开答卷治理内核，以及三项待确认指标的明确不回答。画面由本包 geometry 图层程序化生成。",
+      "description_en": "A 75-second proposal film covering the two historical threads behind a century of self-reliance (both carried as narrative assumptions pending verification; see sources.json), the Beijing axis lineage, the spine-terraces-wings-stitches structure, the four origins, the human fallback and public report card governance core, and the three metrics this proposal declines to answer. Frames are generated programmatically from the package geometry layers.",
       "sha256": "75112e956b3ab601e1b8f3d9189a1ca39ebdc9b0f05da98d69998a94191cd565",
       "poster": "assets/media/film-poster-en.png",
       "caption": "assets/media/film-en.vtt",
@@ -353,7 +353,7 @@
       "title_en": "Jingzhang Rising - proposal film transcript",
       "description_zh": "短片文字稿，供无法播放视频时阅读。",
       "description_en": "Film transcript for readers who cannot play video.",
-      "sha256": "be73b52007bb3741acc6c1ae53e930122948646d24e863beb645d14dad55b5c9"
+      "sha256": "4dfc27296424d787147d42b41c893ae887d4d47b2f0a1edfac0b33056529723a"
     },
     {
       "path": "assets/media/film-transcript-en.md",
@@ -365,7 +365,7 @@
       "title_en": "Jingzhang Rising - proposal film transcript (English)",
       "description_zh": "短片英文文字稿。",
       "description_en": "English film transcript.",
-      "sha256": "d243a007a5a2c97a6b3b9f75049c7f9a4ff88ad1acbfdcd7ae18aa309f347225"
+      "sha256": "35ec08fa9d3bb556a425e6754806f6015ba0e2584b158fe6abcfef98446191a7"
     },
     {
       "path": "assets/media/film-poster.png",
@@ -394,7 +394,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "cd57d8dadc2953b10e2c133c32d7945b559c6608839cb9f5824bdf1de60b731d"
+      "sha256": "852004234b2a95928d0d4ee285aefc73ca3addd7e0c46cf34dd064509116adb2"
     }
   ],
   "validation_claim": {

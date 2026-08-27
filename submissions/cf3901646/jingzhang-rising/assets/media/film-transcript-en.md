@@ -2,6 +2,10 @@
 
 This transcript matches the synthetic narration in `film.en.mp4` and its captions `film-en.vtt`. Narration uses Microsoft `en-US-AndrewNeural`; there is no music, human recording, or voice cloning. It also provides an equivalent reading path when audio or video cannot be played.
 
+> **Downgrade notice, applying to every historical statement in this film.** The narration was synthesised before this package downgraded its historical sources. The statements in it — that the Jing-Zhang Railway was completed in 1909, that the demonstration zone was approved in 2009, and that the Central Committee's train arrived at Tsinghuayuan Station in March 1949 — are, exactly as in the body text, **narrative assumptions pending verification**. This package holds no verifiable published original for them; they serve cultural narrative only, are not findings of fact, and are never the basis for any spatial metric or statutory conclusion [source:HIST-JINGZHANG-1909] [source:HIST-TSINGHUAYUAN-1949] [source:HIST-ZGC-APPROVALS].
+>
+> The body text has had its unverifiable exact dates removed. Because the narration is already-synthesised audio and the captions must correspond to the soundtrack word for word, the narration wording is left unchanged here and downgraded by this notice instead. The film will be updated once primary sources are obtained or the narration is re-recorded.
+
 **00:00.000 – 00:07.000**
 
 Jingzhang Rising. A century of self-reliance; the character ren rises.
