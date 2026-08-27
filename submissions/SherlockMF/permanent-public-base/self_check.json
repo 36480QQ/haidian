@@ -15,13 +15,17 @@
       "proposal_files": [
         "submissions/SherlockMF/permanent-public-base/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/SherlockMF/permanent-public-base/changelog.md"
+      ],
       "changed_files": [
         "submissions/SherlockMF/permanent-public-base/agent.json",
         "submissions/SherlockMF/permanent-public-base/assets/figures/dazhongsi-construction-evidence.en.png",
         "submissions/SherlockMF/permanent-public-base/assets/figures/dazhongsi-construction-evidence.png",
         "submissions/SherlockMF/permanent-public-base/assets/figures/dazhongsi-flagship.en.png",
         "submissions/SherlockMF/permanent-public-base/assets/figures/dazhongsi-flagship.png",
+        "submissions/SherlockMF/permanent-public-base/assets/figures/dazhongsi-operating-envelope.en.png",
+        "submissions/SherlockMF/permanent-public-base/assets/figures/dazhongsi-operating-envelope.png",
         "submissions/SherlockMF/permanent-public-base/assets/figures/dazhongsi-operations.en.png",
         "submissions/SherlockMF/permanent-public-base/assets/figures/dazhongsi-operations.png",
         "submissions/SherlockMF/permanent-public-base/assets/figures/existing-diagnosis.en.png",
@@ -178,6 +182,7 @@
         "submissions/SherlockMF/permanent-public-base/assets/publication/three-site-ai-chains.en.png",
         "submissions/SherlockMF/permanent-public-base/assets/publication/three-site-ai-chains.png",
         "submissions/SherlockMF/permanent-public-base/assumptions.json",
+        "submissions/SherlockMF/permanent-public-base/changelog.md",
         "submissions/SherlockMF/permanent-public-base/compliance_matrix.json",
         "submissions/SherlockMF/permanent-public-base/design_depth_matrix.json",
         "submissions/SherlockMF/permanent-public-base/drawings/a0-boards.en.pdf",
@@ -206,6 +211,7 @@
         "submissions/SherlockMF/permanent-public-base/standard_matrix.json",
         "submissions/SherlockMF/permanent-public-base/visual/assets/cjk-font.css",
         "submissions/SherlockMF/permanent-public-base/visual/assets/complete-video-contract.json",
+        "submissions/SherlockMF/permanent-public-base/visual/assets/dazhongsi-operating-envelope.json",
         "submissions/SherlockMF/permanent-public-base/visual/assets/design-system-register.json",
         "submissions/SherlockMF/permanent-public-base/visual/assets/duplicate-assets.json",
         "submissions/SherlockMF/permanent-public-base/visual/assets/explorer-v2.css",
@@ -231,7 +237,7 @@
       "ai_package_stages": {
         "submissions/SherlockMF/permanent-public-base": "formal"
       },
-      "total_bytes": 37736595,
+      "total_bytes": 35051813,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -305,15 +311,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 23,
+        "known_metric_refs_required": 31,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 23,
           "standard": 2,
           "depth": 12,
-          "data": 13,
-          "metric": 12
+          "data": 14,
+          "metric": 13
         }
       }
     },

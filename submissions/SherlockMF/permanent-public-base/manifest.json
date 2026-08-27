@@ -1457,7 +1457,7 @@
       "path": "changelog.md",
       "required": false,
       "role": "changelog",
-      "sha256": "07a75456435d3251ae9139f219bc241c0295837318c5c3b00b23941e102c63cb"
+      "sha256": "f7e0d6da2e9bd177e81b477a7a51e76790ecfd62c5960e377f03d62494bbd4ac"
     },
     {
       "path": "compliance_matrix.json",
@@ -1477,7 +1477,7 @@
       "path": "drawings/a0-boards.en.pdf",
       "required": true,
       "role": "drawing",
-      "sha256": "e424e0a9121834b8ce6f0c45cece4d0e2683806208f70b116314286be072ff6c",
+      "sha256": "56888fda9cb2b8989dadefb67387e11e53eeb6fa85807cc437710f2edb13a14d",
       "title_en": "A0 Boards (English)",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -1487,7 +1487,7 @@
       "path": "drawings/a0-boards.pdf",
       "required": true,
       "role": "drawing",
-      "sha256": "c426f48b45ec2e35e200c5e7c506e66c6b5e1d6e4aebf48fda14373cc769e3b7",
+      "sha256": "a5f0ee47a0ae1692d1c0549cdedabc1368c8973466ca9a086f1d5d0dfeda06d0",
       "title_zh": "A0 展板（中文）"
     },
     {
@@ -1620,7 +1620,7 @@
       "path": "self_check.json",
       "required": true,
       "role": "self_check",
-      "sha256": "5a05453863d25f65c4b7021c65e3a058b39db0f51903ac20067effd33e20f222"
+      "sha256": "3b7e02b74b89399322c1f44b41e2cebe6d0a15e8e34532b4cb85a3798564307a"
     },
     {
       "path": "sources.json",
@@ -1832,6 +1832,6 @@
     "data_confidence": "mixed_provisional_and_conceptual",
     "known_blockers": [],
     "readiness_contract": "persisted-self-check-v1",
-    "self_checked": false
+    "self_checked": true
   }
 }
