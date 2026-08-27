@@ -35,7 +35,7 @@
 | `visual/index.html` / `visual/index.en.html` | 沉浸式叙事页（中/英） | AI 生成并人工指导修订；纯内联 CSS，无构建依赖 | 原创代码与文案；仅按相对路径引用本包 PNG；无外部资源 | `grep` 可复核：无 `<script>`、无 `<link>`、无 http(s) 外部引用；哈希见 `manifest.json` |
 | `report/proposal.html` / `report/proposal.en.html` | 方案书排版页（中/英） | 同上 | 同上 | 同上 |
 
-字体说明：四份 HTML 均已内嵌 Noto Sans SC 子集字体（SIL Open Font License 1.1，来自 notofonts/noto-cjk 开源项目），由本地脚本 `embed_font.py` 以 pyftsubset 生成 woff2 子集并 base64 内嵌为 `@font-face`（字体名 `JZ Noto Sans SC`）；子集只含各页面实际用字与可打印 ASCII，未携带完整字库。OFL 1.1 允许子集化与文档嵌入，该内嵌符合许可条款；子集化流程与复核方式详见第 7 节与第五节。
+字体说明：四份 HTML 均已内嵌 Noto Sans SC 子集字体（SIL Open Font License 1.1，来自 notofonts/noto-cjk 开源项目），由本地脚本 `embed_font.py` 以 pyftsubset 生成 woff2 子集并 base64 内嵌为 `@font-face`（字体名 `JZ Noto Sans SC`）；v1.5 起两份 visual 页面另内嵌 Noto Serif CJK SC 子集（同一 OFL 1.1 许可与来源项目，字体名 `JZ Noto Serif SC`）作为衬线兜底。子集只含各页面实际用字与可打印 ASCII，未携带完整字库。OFL 1.1 允许子集化与文档嵌入，该内嵌符合许可条款；子集化流程与复核方式详见第 7 节与第五节。
 
 ### 4. 正文与数据文本
 
@@ -64,6 +64,7 @@
 | --- | --- | --- | --- | --- |
 | Songti SC、PingFang SC、Menlo | 图件 PNG 与图纸 PDF 的文字渲染；HTML 系统字体栈 | Apple 系统字体，随 macOS 软件许可使用 | 仅用于在本机生成图件与嵌入 PDF，不复制、不再分发字体文件 | 绘图脚本与 HTML 的 font-family 声明可复核；包内无任何字体文件（无 *.ttf/*.otf/*.woff*） |
 | Noto Sans SC（子集） | 四份 HTML 内嵌显示字体 | SIL Open Font License 1.1（notofonts/noto-cjk 开源项目） | OFL 1.1 明确允许子集化与文档内嵌入；仅嵌入字形子集，随 HTML 一同分发符合条款 | 字体来源项目公开可查；四份 HTML 中可 grep 到 `@font-face` 与 `embed-font:JZ Noto Sans SC:start/end` 标记块，可核对子集声明；包内无独立字体文件 |
+| Noto Serif CJK SC（子集） | 两份 visual HTML 内嵌衬线兜底字体（v1.5 新增） | SIL Open Font License 1.1（notofonts/noto-cjk 开源项目） | 同上：仅嵌入页面实际用字子集 | 两份 visual HTML 中可 grep 到 `@font-face` 的 `JZ Noto Serif SC` 声明；包内无独立字体文件 |
 
 ### 8. 代码依赖许可
 
