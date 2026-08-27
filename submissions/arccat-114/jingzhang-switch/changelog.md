@@ -1,3 +1,9 @@
+## v5.2-english-figure-sync - 2026-08-27（英文成果同步修复轮）
+
+- 针对本轮评审唯一阻断项，重做 `assets/figures/mobility-bluegreen.en.png` 的三个公共空间节点标签，统一为 `Acceleration Track · Signal Plaza`、`Departure Yard · Zero Kilometer Plaza`、`Switch Heart · Switch Plaza`，保留中文图的几何、站点、图例、指标和证据状态。
+- 将更新后的英文交通—蓝绿—公共空间图同步嵌入 `drawings/a0-boards.en.pdf` 与 `drawings/a3-booklet.en.pdf`；英文 proposal、report 和 visual 页面继续引用同一份更新后的图件，并完成页面渲染复核。
+- 本轮只修复双语表达层的英文残留标签，不改变临时边界、空间几何、指标数值、专业证据边界或任何条件触发事项。
+
 ## v5.1-review-repair - 2026-08-27（评审可读性修复轮）
 
 - 针对 PR 评审指出的首读障碍，为双语 proposal、视觉页和核心旅程图内嵌离线中文子集字体数据，去除离线渲染中的缺字方框风险。
