@@ -23,7 +23,7 @@ package_state: "ready_for_review"
 ## Three-Level Scope Framework
 
 - **Coordinated area 43.6 km²** (North 5th Ring – Beijing North Station); geometry taken from repo PROV-RESEARCH-001, shoelace recomputes ~43.6 km², matching the official 43.6 km² [data:geometry/site_boundary.geojson][metric:site_area].
-- **Overall urban-design area 11.4 km²** (from PROV-SITE-001, recomputes ~11.4 km²) [data:geometry/overall_design_boundary.geojson][metric:overall_design_area].
+- **Overall urban-design area 11.4 km²** (from PROV-SITE-001, recomputes ~11.4 km²) [data:geometry/site_boundary.geojson][metric:overall_design_area].
 - **Key areas 368.4 ha**: Zhongzhiyuan AI Acceleration Area 192.1 ha, Beijing AI Origin Community 104.3 ha, Dazhongsi AI Industry Cluster 72.0 ha (from PROV-KEY-001/002/003, recomputed sum ~368.9 ha, matching official 368.4 ha) [data:geometry/key_areas.geojson][metric:key_area_area].
 - Three belts: Centennial Jing-Zhang Culture Belt, Urban AI Living-Experience Belt, AI Fusion Innovation Belt [standard:spatial_structure].
 
@@ -37,7 +37,7 @@ Haidian has the densest cluster of AI firms, universities, and compute in China,
 
 - Retain-Renovate-Demolish logic: **retain** railway heritage, existing communities, university edges; **renovate** inefficient stock plants and old retail; **build new** only to fill gaps inside key areas [standard:regulatory_depth].
 - Spatial structure: a green spine along the heritage park links the three key areas north–south into "one axis, three cores" [depth:overall_spatial_structure].
-- Land-use partition and FAR in `geometry/land_use.geojson`; overall FAR provisional ~1.2 [data:geometry/land_use.geojson][metric:floor_area_ratio].
+- Land-use partition and FAR in `geometry/land_use.geojson`; overall FAR provisional ~1.0 (planning reference value, not approved control) [data:geometry/land_use.geojson][metric:floor_area_ratio].
 - Guard against "scenes over products": every new vessel must bind a verifiable industry/talent occupancy commitment, or it degrades into a photo backdrop [depth:implementation_logic].
 
 ![Land use](assets/figures/land-use-structure.png)
@@ -60,7 +60,7 @@ Renew stock retail into an "AI+consumption" experience field, differentiated fro
 - **≥5 personas**: basic researcher, AI application engineer, cross-border entrepreneur, local resident (incl. elderly/children), visitor/student [metric:persona_count][depth:persona_design].
 - **≥10 scenario cards**: AI study room, community health station, railway-heritage AR tour, driverless micro-circulation dispatch, low-carbon energy simulation, AI elderly companion, children AI-literacy class, open-source achievement gallery, compute-booking platform, industry compliance sandbox [metric:scenario_card_count].
 - **≥3 industry test scenarios**: robot inspection pilot, AI-education product compliance test, low-carbon energy dispatch simulation [metric:industry_test_count].
-- AI scenario nodes are placed in key areas and the heritage park; see `geometry/ai_scenario_nodes.geojson` (illustrated in `assets/figures/mobility-bluegreen.png`) [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+- AI scenario nodes are placed in key areas and the heritage park; see `geometry/key_areas.geojson` (illustrated in `assets/figures/mobility-bluegreen.png`) [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -69,14 +69,14 @@ Land-use partition from provisional boundary in `geometry/land_use.geojson`; are
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
 - Rail uses the existing Jing-Zhang HSR heritage corridor + Line 13 / Changping line; add **community-level driverless micro-circulation**, not trunk increments [standard:transit][depth:traffic_rail_slow_parking].
-- Road hierarchy and slow network in `geometry/roads.geojson`; road-area ratio provisional ~0.14 [data:geometry/roads.geojson][metric:road_area_ratio].
+- Road hierarchy and slow network in `geometry/roads.geojson`; road-area ratio provisional ~0.0076 (0.76%, provisional shoelace recompute) [data:geometry/roads.geojson][metric:road_area_ratio].
 - Municipal and public services fill key-area gaps, prioritizing AI compute piping and distributed energy [depth:infrastructure].
 
 ![Mobility and blue-green](assets/figures/mobility-bluegreen.png)
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-- Heritage-park green spine links the three key areas' public-space network; green ratio provisional ~0.22, public-space ratio ~0.18 [data:geometry/green_space.geojson][data:geometry/public_space.geojson][metric:green_space_ratio][metric:public_space_ratio].
+- Heritage-park green spine links the three key areas' public-space network; green ratio provisional ~0.0315 (3.15%), public-space ratio ~0.05 (5%), provisional shoelace recompute (not announcement planning rate) [data:geometry/green_space.geojson][data:geometry/public_space.geojson][metric:green_space_ratio][metric:public_space_ratio].
 - Character rule: "industrial-heritage authenticity + restrained tech expression"; no decorative sci-fi skins [standard:blue_green][depth:urban_character].
 
 ## Renewal Projects, Implementation Policy, and Phasing
