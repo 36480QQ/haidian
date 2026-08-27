@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A rehearsable, offline-capable and human-overridable public-service spine: one Life-Line, three resilience stations, twelve graceful-degradation AI scenarios and three reversible prototypes."
 tracks: ["ai-public-services", "civic-agent-governance", "jingzhang-heritage-narrative"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "robot-delivery-low-speed", "ai-cultural-guide", "enterprise-service-copilot"]
-iteration: "v1.0"
+iteration: "v1.4.1"
 ---
 
 # Jingzhang Life-Line: Graceful-Degradation Urban Resilience and Public Care Commons
@@ -49,6 +49,25 @@ The ecosystem is organised as eight resources, three stations, two wings and one
 Seven official cases are translated into mechanisms rather than copied forms. One-north shows the value of adjacency between research, start-ups, living and exchange, while this proposal adds public-service floors and exit rules. Helsinki demonstrates real-city testing with residents and explicitly states that testing is not a procurement bypass. NYC provides a controlled institutional entry for companies and academic teams. Barcelona makes climate refuges legible as a network. WHO links governance, warning, vulnerable groups, communication, service resilience and learning. UNDRR turns resilience into cross-department questions. Seoul shows a living-lab approach, but this proposal rejects default surveillance, personal scoring and relationship profiling. [source:JTC-ONE-NORTH] [source:HELSINKI-TESTBED] [source:NYC-SMART-CITY-TESTBED]
 
 Agent task 1 is answered by the one-line/three-station/two-wing spatial and functional framework. Agent task 2 is answered by the eight-resource ecosystem, global case transfer and four bounded industrial test scenarios. Value is measured by whether a test can expose failure, transfer authority to a human, preserve evidence and produce a clear scale/change/stop decision, not by the number of devices deployed. [metric:industrial_test_scenario_count] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
+
+
+### Regional Synergy Interface Matrix: Auditable Exchange Rather Than Narrative Arrows
+
+The internal “three areas and two wings” loop explains how capability, public value and operating evidence circulate inside the Life-Line. External synergy must answer five additional questions: what is exchanged, who initiates, what evidence opens the interface, what stops it, and which matters are explicitly not commitments. The five interfaces below remain outside the design boundary and do not imply signed cooperation. [source:AGENT-TASKBOOK] [metric:regional_interface_count]
+
+| Interface | Exchange | Mechanism | Evidence and entry gate | Suggested owner and non-commitment boundary |
+|---|---|---|---|---|
+| Beiwei / BFSU-related communities | Multilingual service, youth volunteers, community feedback, accessibility walks | The AI Origin station issues a community task brief and quarterly walk-through; only anonymized problem lists and public service information are exchanged | Named by the taskbook; boundary, counterpart and authorization remain unconfirmed | Community-partner + public-service seats; no collection, publication or siting without authorization |
+| Future Science City | Energy AI, life-health research and campus continuity methods | Zhongzhiyuan publishes reproducible protocols; counterparts may provide interface samples or failure cases under a separate agreement | Regional-synergy direction only; no project, budget, data or procurement commitment | Technology-safety seat; no connection before data, procurement and safety review |
+| Huairou Science City | Basic research, major-facility resilience, trusted measurement and verification | Joint “question-method-evidence” research interfaces; no duplication of major science facilities inside the corridor | Regional-synergy direction; specific institutions and studies remain unconfirmed | Independent observer + professional review; never portray an intention as signed |
+| Beijing E-Town / Yizhuang | Embodied-AI hardware, manufacturing tests, repair and supply-chain feedback | The south station exports bounded scenarios and failure logs; manufacturing partners may return improvement and maintenance evidence under a separate agreement | Algorithm/scenario-manufacturing complementarity hypothesis; no procurement or attraction decision | Operations + safety seats; no public-road operation before road, insurance, service and liability clearance |
+| Beijing-Tianjin-Hebei / Zhangjiakou | Green compute, disruption-response experience, standards interoperability and talent exchange | Dazhongsi maintains an auditable compute/service-continuity interface list limited to service levels and recovery evidence | Corridor-synergy concept; cross-region governance, energy and network protocols remain unconfirmed | Standards/compliance seat; no land, investment or construction assignment outside the design scope |
+
+Every interface defaults to `not_activated`. It may enter a reversible pilot only when authorization, minimum data, named responsibility, cost/maintenance, complaint and exit mechanisms are verifiable. The performance measure is not the number of partnerships announced, but the number of reproducible exchange loops completed, boundary problems found, and interfaces correctly stopped for insufficient evidence.
+
+![Five regional interfaces, exchanged resources, entry gates and non-commitment boundaries](assets/figures/regional-synergy-v14.en.svg)
+
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
@@ -131,6 +150,25 @@ The **0-18 month** phase covers data, site audit, tabletop exercises and reversi
 A proposed policy bundle combines a city-test permit, public-interest contract and failure-evidence ledger. The permit defines place, time, data, equipment, observer and stop. The contract defines account-free equivalence, accessibility, human authority, deletion and appeal. The ledger records success, failure, complaint, repair, rollback and exit. Pilots never bypass planning, procurement, fire, transport, data or emergency rules. [source:HELSINKI-TESTBED] [assumption:A-COST-001]
 
 Long-term operations use four seats plus an independent safety lead: site/public service, technical/cybersecurity, accessibility/community, and privacy/complaints. Quarterly rehearsals address power/network loss, heat care, rain and accessibility, and crowd/supply continuity. Annual reporting includes failures and stopped projects, not only achievements. Life-Line Open Rehearsal programming includes red-team week, accessible walks, climate-care season, low-speed safety day, Jing-Zhang memory school and a continuity forum. [metric:planned_rehearsal_count_per_year] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
+
+
+### Three Reversible First-Year Pilots, Acceptance Evidence and Responsibility Interfaces
+
+The first year begins with three pilots that can clearly succeed or fail, rather than permanent construction. Suggested responsibility seats describe functions only and do not imply that any real institution has committed.
+
+| Pilot | Minimum action | Acceptance evidence | Go / No-Go gate | Exit and rollback |
+|---|---|---|---|---|
+| Y1-01 Human-takeover demonstrator | A removable staffed window, paper directory, offline cabinet and takeover timer at an AI Origin candidate carrier | Network/stale-data injection log; pause-to-takeover time; account-free completion; complaint closure | Site authorization, staffed public service, fire/accessibility review and minimum-data design must all pass | If AI is the only route, the human seat is absent or complaints cannot be handled, disable the digital service and restore human-only operation |
+| Y1-02 Continuous-care audit seam | Audit one representative route without permanent works: entrances, slope, shade, static guidance, offline navigation and human help | Continuous step-free/alternative route record; night/rain recheck; detour distance; paper-map and human-help availability | Rights/opening hours, crossing safety, step-free continuity and maintenance responsibility must be clear | Remove the “continuous route” claim if any critical segment is inaccessible, unverified or unmaintained |
+| Y1-03 Degradable industrial test yard | Inject power/network loss, stale data, model drift and device failure in a closed Zhongzhiyuan environment | E-stop, isolation, human review, rollback and evidence logs; zero production connection; repair report | Site, insurance, observer, network isolation, recovery and responsibility agreement must all pass | Abort and quarantine the version on production connection, failed e-stop, absent responsible person or public-logistics mixing |
+
+**Responsibility matrix.** Seven suggested seats cover authorization/site, public service, operations/maintenance, technology safety, data/privacy, accessibility/community and independent observation. Every pilot agreement must name Responsible / Accountable / Consulted / Informed roles and an ultimate stop authority.
+
+**Lifecycle-cost gate.** The first year may use L/M/H ranges instead of invented currency values, but must cover design/approval, components/equipment, energy/communications, human staffing, cleaning/repair, software/model updates, insurance/training and exit/removal. No pilot becomes permanent before independent lifecycle-cost review.
+
+**Service-level evidence.** Public interfaces record source freshness, system state, takeover timing, account-free equivalence, appeal response, recovery and removal decisions. The 72-hour value remains a design target; the first year proves only whether failure can degrade safely and leave evidence. [metric:first_year_pilot_count] [metric:responsibility_seat_count] [assumption:A-PILOT-AUTH-001]
+
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 

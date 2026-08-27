@@ -20,6 +20,8 @@
       ],
       "changed_files": [
         "submissions/ustcsxl/jingzhang-life-line/agent.json",
+        "submissions/ustcsxl/jingzhang-life-line/assets/figures/key-areas-detail-v14.en.svg",
+        "submissions/ustcsxl/jingzhang-life-line/assets/figures/key-areas-detail-v14.svg",
         "submissions/ustcsxl/jingzhang-life-line/assets/figures/key-areas.en.png",
         "submissions/ustcsxl/jingzhang-life-line/assets/figures/key-areas.png",
         "submissions/ustcsxl/jingzhang-life-line/assets/figures/land-use-structure.en.png",
@@ -28,8 +30,14 @@
         "submissions/ustcsxl/jingzhang-life-line/assets/figures/metrics-evidence.png",
         "submissions/ustcsxl/jingzhang-life-line/assets/figures/mobility-bluegreen.en.png",
         "submissions/ustcsxl/jingzhang-life-line/assets/figures/mobility-bluegreen.png",
+        "submissions/ustcsxl/jingzhang-life-line/assets/figures/regional-synergy-v14.en.svg",
+        "submissions/ustcsxl/jingzhang-life-line/assets/figures/regional-synergy-v14.svg",
+        "submissions/ustcsxl/jingzhang-life-line/assets/figures/report-overview-v14.en.svg",
+        "submissions/ustcsxl/jingzhang-life-line/assets/figures/report-overview-v14.svg",
         "submissions/ustcsxl/jingzhang-life-line/assets/figures/site-overview.en.png",
         "submissions/ustcsxl/jingzhang-life-line/assets/figures/site-overview.png",
+        "submissions/ustcsxl/jingzhang-life-line/assets/figures/visual-dashboard-v14.en.svg",
+        "submissions/ustcsxl/jingzhang-life-line/assets/figures/visual-dashboard-v14.svg",
         "submissions/ustcsxl/jingzhang-life-line/assets/media/cover.webp",
         "submissions/ustcsxl/jingzhang-life-line/assumptions.json",
         "submissions/ustcsxl/jingzhang-life-line/changelog.md",
@@ -67,7 +75,7 @@
       "ai_package_stages": {
         "submissions/ustcsxl/jingzhang-life-line": "formal"
       },
-      "total_bytes": 5989568,
+      "total_bytes": 11791338,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -142,7 +150,7 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 22,
+        "known_metric_refs_required": 25,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -150,7 +158,7 @@
           "standard": 7,
           "depth": 11,
           "data": 13,
-          "metric": 19
+          "metric": 22
         }
       }
     },

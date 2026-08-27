@@ -48,7 +48,9 @@
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/regional-synergy-v14.svg",
+        "assets/figures/key-areas-detail-v14.svg"
       ],
       "geometry_refs": [
         "geometry/roads.geojson",
@@ -56,7 +58,10 @@
       ],
       "metric_refs": [
         "scenario_card_count",
-        "persona_count"
+        "persona_count",
+        "regional_interface_count",
+        "first_year_pilot_count",
+        "responsibility_seat_count"
       ],
       "source_ids": [
         "AGENT-TASKBOOK"
@@ -69,7 +74,7 @@
         "PROFESSIONAL_EVIDENCE",
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "通过 统筹研究范围产业与未来城市研究、AI 创新生态、人才画像与 AI+ 场景、对应图层和指标形成证据链；状态为 addressed，不会把缺失专业条件伪装成结论。"
+      "evidence_summary_zh": "v1.4 补齐五类区域协同接口、三站实施级流线/接管图和三项首年可逆试点；协同、运营和成本均以证据闸门和非承诺边界表达。"
     },
     {
       "standard_id": "MOHURD-URBAN-DESIGN-MEASURES",

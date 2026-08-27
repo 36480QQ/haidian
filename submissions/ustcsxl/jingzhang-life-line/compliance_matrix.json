@@ -16,17 +16,20 @@
       "metrics": [
         "coordinated_research_area_sqm",
         "site_area_sqm",
-        "resilience_station_count"
+        "resilience_station_count",
+        "regional_interface_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/regional-synergy-v14.svg"
       ],
       "visual_sections": [
         "总览地图",
         "重点区域",
         "AI 场景",
-        "任务覆盖"
+        "任务覆盖",
+        "区域协同接口矩阵"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -38,7 +41,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-REGIONAL-NONCOMMIT-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -297,17 +301,20 @@
       "metrics": [
         "coordinated_research_area_sqm",
         "site_area_sqm",
-        "resilience_station_count"
+        "resilience_station_count",
+        "regional_interface_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/regional-synergy-v14.svg"
       ],
       "visual_sections": [
         "总览地图",
         "重点区域",
         "AI 场景",
-        "任务覆盖"
+        "任务覆盖",
+        "区域协同接口矩阵"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -319,7 +326,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-REGIONAL-NONCOMMIT-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -625,11 +633,13 @@
       "metrics": [
         "key_area_count",
         "resilience_station_count",
-        "scenario_card_count"
+        "scenario_card_count",
+        "first_year_pilot_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas-detail-v14.svg"
       ],
       "visual_sections": [
         "总览地图",
@@ -647,7 +657,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PILOT-AUTH-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -672,11 +683,13 @@
       "metrics": [
         "key_area_count",
         "resilience_station_count",
-        "scenario_card_count"
+        "scenario_card_count",
+        "first_year_pilot_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas-detail-v14.svg"
       ],
       "visual_sections": [
         "总览地图",
@@ -694,7 +707,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PILOT-AUTH-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -719,11 +733,13 @@
       "metrics": [
         "key_area_count",
         "resilience_station_count",
-        "scenario_card_count"
+        "scenario_card_count",
+        "first_year_pilot_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas-detail-v14.svg"
       ],
       "visual_sections": [
         "总览地图",
@@ -741,7 +757,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PILOT-AUTH-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -766,11 +783,13 @@
       "metrics": [
         "key_area_count",
         "resilience_station_count",
-        "scenario_card_count"
+        "scenario_card_count",
+        "first_year_pilot_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas-detail-v14.svg"
       ],
       "visual_sections": [
         "总览地图",
@@ -788,7 +807,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PILOT-AUTH-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -813,17 +833,20 @@
       "metrics": [
         "coordinated_research_area_sqm",
         "site_area_sqm",
-        "resilience_station_count"
+        "resilience_station_count",
+        "regional_interface_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/regional-synergy-v14.svg"
       ],
       "visual_sections": [
         "总览地图",
         "重点区域",
         "AI 场景",
-        "任务覆盖"
+        "任务覆盖",
+        "区域协同接口矩阵"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -835,7 +858,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-REGIONAL-NONCOMMIT-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -860,17 +884,20 @@
       "metrics": [
         "coordinated_research_area_sqm",
         "site_area_sqm",
-        "resilience_station_count"
+        "resilience_station_count",
+        "regional_interface_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/regional-synergy-v14.svg"
       ],
       "visual_sections": [
         "总览地图",
         "重点区域",
         "AI 场景",
-        "任务覆盖"
+        "任务覆盖",
+        "区域协同接口矩阵"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -882,7 +909,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-REGIONAL-NONCOMMIT-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -907,11 +935,13 @@
       "metrics": [
         "scenario_card_count",
         "industrial_test_scenario_count",
-        "persona_count"
+        "persona_count",
+        "first_year_pilot_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas-detail-v14.svg"
       ],
       "visual_sections": [
         "总览地图",
@@ -929,7 +959,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PILOT-AUTH-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1047,11 +1078,13 @@
       "metrics": [
         "project_count",
         "phase_count",
-        "planned_rehearsal_count_per_year"
+        "planned_rehearsal_count_per_year",
+        "first_year_pilot_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas-detail-v14.svg"
       ],
       "visual_sections": [
         "总览地图",
@@ -1069,7 +1102,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PILOT-AUTH-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",

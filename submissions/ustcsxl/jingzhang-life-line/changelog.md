@@ -24,3 +24,19 @@
 - Enriched all twelve scenario cards with concise manual or account-free fallback paths.
 - Refined competition typography with editorial serif headings while preserving the established colour and evidence system.
 - Re-rendered all four bilingual PDFs and verified page geometry, embedded fonts, PDFium output and a Poppler spot check.
+
+
+## v1.4 - 2026-08-26
+
+- 用 Noto Sans CJK SC 构建期字形轮廓重建中文 report/visual 可见层；不分发字体文件，并保留同位可搜索语义文本。
+- 新增五类区域协同接口矩阵，逐项定义交换资源、接口机制、证据状态、责任建议、进入/停止闸门和非承诺边界。
+- 新增三座韧性站实施级矢量图，标出入口/出口、人工接管、公众/物流流线、无障碍路径、隔离/急停、服务组件与 S01-S12 映射。
+- 将实施路径深化为 Y1-01 至 Y1-03 三项首年可逆试点，补充验收证据、Go/No-Go、RACI、生命周期成本、停止和回滚。
+- 同步中英文正文、指标、仿真合同、假设、来源、合规矩阵、专业深度矩阵、标准矩阵、版权说明与 manifest。
+
+## v1.4.1 - 2026-08-27
+
+- Replaced the mandatory bilingual `key-areas.png` pair with implementation-grade station diagrams.
+- Folded the five-interface regional matrix into the mandatory land-use figure pair and the first-year pilot evidence into the mandatory metrics figure pair.
+- Appended bilingual regional, station and pilot evidence sheets to A0/A3 PDFs so the repairs are visible in every principal review channel.
+- Re-rendered HTML and PDF evidence, refreshed all manifest hashes and prepared an exact-head self-check workflow.

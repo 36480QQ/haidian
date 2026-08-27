@@ -84,7 +84,8 @@
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/regional-synergy-v14.svg"
       ],
       "geometry_refs": [
         "geometry/roads.geojson",
@@ -92,7 +93,8 @@
       ],
       "metric_refs": [
         "life_line_length_m",
-        "resilience_station_count"
+        "resilience_station_count",
+        "regional_interface_count"
       ],
       "source_ids": [
         "HD-AI-BELT-2026",
@@ -349,7 +351,8 @@
       ],
       "drawing_refs": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas-detail-v14.svg"
       ],
       "geometry_refs": [
         "geometry/key_areas.geojson",
@@ -371,7 +374,7 @@
         "PROFESSIONAL_EVIDENCE",
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "三处重点区域详细设计由正文、双语图册、geometry/key_areas.geojson 和结构化指标共同表达；现状、法定和工程限制在假设表中可追溯。"
+      "evidence_summary_zh": "v1.4 以具名组件、入口/出口、人工接管、公众/物流流线、无障碍路径、急停/隔离边界及 S01-S12 映射形成专业接续图；provisional 仅限制位置精度，不限制关系与责任表达。"
     },
     {
       "item_id": "renewal_project_list",
@@ -422,7 +425,9 @@
       ],
       "metric_refs": [
         "phase_count",
-        "planned_rehearsal_count_per_year"
+        "planned_rehearsal_count_per_year",
+        "first_year_pilot_count",
+        "responsibility_seat_count"
       ],
       "source_ids": [
         "AGENT-TASKBOOK"
@@ -435,7 +440,7 @@
         "PROFESSIONAL_EVIDENCE",
         "SPATIAL_REVIEW"
       ],
-      "evidence_summary_zh": "分期与实施机制由正文、双语图册、geometry/phasing.geojson 和结构化指标共同表达；现状、法定和工程限制在假设表中可追溯。"
+      "evidence_summary_zh": "v1.4 将近期路径深化为三项首年可逆试点，逐项给出验收证据、Go/No-Go、RACI、生命周期成本闸门、停止和回滚规则。"
     },
     {
       "item_id": "metrics_recalculation",

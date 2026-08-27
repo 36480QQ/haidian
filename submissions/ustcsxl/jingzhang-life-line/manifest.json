@@ -14,14 +14,13 @@
     "model_family": "gpt",
     "model_detail": "GPT-5.6 Pro, single accountable Agent workflow with geospatial and document verification."
   },
-  "generated_at": "2026-08-26T20:00:00Z",
+  "generated_at": "2026-08-27T01:30:00Z",
   "cover_image": "assets/media/cover.webp",
   "files": [
     {
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "sha256": null,
       "language": "neutral"
     },
     {
@@ -34,67 +33,67 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "5695b59568d7ae111276423a73aea35fa056ea84df228139b3b04ba079fbb9b9"
+      "sha256": "956b7969f5c907ba9cf48beecc8d70479e8c91a02b9886ed7e7b21d0ecc25962"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "4a331355269c3bf445bc98b835dea60de99f4e523693b552fde17cd2ad610874"
+      "sha256": "841ceea6304b0581d2bc2ffdf0bdc15c7f7b3c44fce24da00472557e9e6d6d7d"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "ae0328eed6fa47d9042a05735d7971a0195536ca5f53ad96a1d2db5e2c5ac6af"
+      "sha256": "7e695bb3f3f5210f7795b3420d21e0e531bd718141ec3d512b428b5b6290174c"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7ef4763b1a8049487f1c8cb0013a91973d85fe4aa9520566a10b426ea9dbf3f4"
+      "sha256": "a6723fa2eb3bca17f959ab33045465b233f1b16db5f2f3540772fe22154f8ce9"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "78eced752d9063390ac731855d82c5e94edcec869cfc62941d0cb01d864ef8f8"
+      "sha256": "5410dcd49ce9077af12a775bc0e9e0cea6aa1e5c7bd42cca914a25d97b8e2b17"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "d17c3e7390d7d2e53a49df1171e76cadcea5a9939ff4eb8e4f96084c4a2ca7c6"
+      "sha256": "6e72ea46a83b0814ee32cc22c51cb6fe5f31b7f17c7461949d0391fc9fb129c8"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "c3693562bb997ed4605122c0dc3ee71e1c9e800fe571aeab5f0fcc18bb9e40f6"
+      "sha256": "806d791424a2f2619a84723add747f8435c65b6332d2cbdf7d998f53bd218cdf"
     },
     {
       "path": "simulation.json",
       "role": "evidence_data",
       "required": true,
-      "sha256": "d5b1c2d1e5c0429e37820acce6c1376e6fe93294eb172d3b8c630744e29ef344"
+      "sha256": "60d1b17363388d099f79f5044ffbd696a62d6dd5333b3d883aacf43f1dfe9d55"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "bfea737bb74f44a09dd99da6425e25f676bf39a36e15696a7e5cf511b8b2fbc7"
+      "sha256": "1786aa73045c4bba99871b9d81d9b025b28673ba1688c515d540b51cf9aec379"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "36c7f7a546f0d57be24a183cb4f964963cc2b753ac2248a1f6e03f6cc5498e10"
+      "sha256": "082bdcfefcc4841964000e117eebe24ee9d5cbdad11e93033662b7b3857cb47c"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "692b006be561ae7e6e154b67d3531726e1ff1c46f3fe8df92c5d34cb155681f4",
+      "sha256": "ba2f62cfbe9edca704eb4a13b2ea33b4c6277697a8a84831df92864ab14e0521",
       "language": "zh",
       "title_zh": "京张生命线：可降级城市韧性与公共照护公地",
       "title_en": "Jingzhang Life-Line: Graceful-Degradation Urban Resilience and Public Care Commons"
@@ -103,7 +102,7 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "810b21a9100a729d5d429428cdb68618076059e7d427105fb4ec53a78ec805c1",
+      "sha256": "c48f3a279cc516c2832dcb3d59207a7ac96a19e88cac4a2c74b9d1003589148b",
       "language": "en",
       "translation_of": "proposal.md",
       "title_zh": "京张生命线：可降级城市韧性与公共照护公地",
@@ -113,7 +112,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "630c34f1bdf045583a3c6e3e0fe619928a8f0ed4c1758df70525f5da2b7eb2e1",
+      "sha256": "e5669955eb8c5cb58e498784325c7ad9e65b9b073d28127eae824c2ca412e390",
       "language": "zh",
       "title_zh": "京张生命线：可降级城市韧性与公共照护公地",
       "title_en": "Jingzhang Life-Line: Graceful-Degradation Urban Resilience and Public Care Commons"
@@ -122,7 +121,7 @@
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "3c565c207542230d700de05550e34cd161b5e393cf64b1b15ffd9e26b9e93544",
+      "sha256": "d13f24a6d5d0016e413fa4659ca05ba339de4ad8086aac9aad80399d85f0bc60",
       "language": "en",
       "translation_of": "report/proposal.html",
       "title_zh": "京张生命线：可降级城市韧性与公共照护公地",
@@ -132,7 +131,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "a95124a489a6ff96b200dcc8361c15c18f43c8437f26e1242fc66a9a7bd66be2",
+      "sha256": "7e66aec1e64a372b16d5856ee341932bfbcc55e1725b3b0e35135407fc563c4c",
       "language": "zh",
       "title_zh": "京张生命线：可降级城市韧性与公共照护公地",
       "title_en": "Jingzhang Life-Line: Graceful-Degradation Urban Resilience and Public Care Commons"
@@ -141,7 +140,7 @@
       "path": "visual/index.en.html",
       "role": "visualization",
       "required": true,
-      "sha256": "39fda030f6067d01d122dd1a3265638db1f38fa0b379de09c16ed319cdc263cc",
+      "sha256": "728bd8424badfd0d5cc1ca4c282d41a4332365daedab3590b0b0843527f34368",
       "language": "en",
       "translation_of": "visual/index.html",
       "title_zh": "京张生命线：可降级城市韧性与公共照护公地",
@@ -151,7 +150,7 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "3c916ee7b14d09925d85158dd003b05efbbdce8e6349d0acaf6e3cf4bee7b9c9",
+      "sha256": "8170c0f5a0b12f2c99340f2d0d3d835624bcd2c5c803f3eeaab3eefc213533da",
       "language": "zh",
       "title_zh": "A3 专业方案图册",
       "title_en": "A3 Professional Design Booklet"
@@ -160,7 +159,7 @@
       "path": "drawings/a3-booklet.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "dc04294a14b28a737d497aba9ff4785c9de60da21365b5fb5bef9c777f04a968",
+      "sha256": "34b204afa9aa67beed0c320aeaf9b6d9c6dc554724a41a42af5cbc39159f446a",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
       "title_zh": "A3 专业方案图册",
@@ -170,7 +169,7 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "e556d69f176b9b78895188bc2d6b1f73c042354b4f0068b6320049b60f529fa2",
+      "sha256": "b20f938d05874a3a5c35048ad9aaa89df81880f45a4d40828ccd9f9d449fc687",
       "language": "zh",
       "title_zh": "A0 城市设计展板",
       "title_en": "A0 Urban Design Boards"
@@ -179,7 +178,7 @@
       "path": "drawings/a0-boards.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "76f3ed1d058a740b961d0ca44f0a36f55309935c5cca7a9cdc3f4ef4633d6c06",
+      "sha256": "3dad79648cb91e9eb22e2a2545fd71e3a58187b275374ac9f1d22b24a13b26b8",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
       "title_zh": "A0 城市设计展板",
@@ -262,7 +261,7 @@
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "3ca92341a190742d96c641f93a65142f79bdfa3fa5dcee574a976211df07f753",
+      "sha256": "ba6ebae954923a7aa26d6b7a84733f0fce3bfdb78ee1c2e5e889e58daa505f26",
       "language": "zh",
       "title_zh": "用地结构与生态闭环",
       "title_en": "Land-use structure and ecosystem loop"
@@ -271,7 +270,7 @@
       "path": "assets/figures/land-use-structure.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "e8aaa97b9a5b0e4c6461615aa02944aa61faeb176c970f10255180cd418bf82b",
+      "sha256": "e33157dcf198a405e853854fd8955887f1f36d7c6139f3d2d2eefd07cbb8c344",
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
       "title_zh": "用地结构与生态闭环",
@@ -281,7 +280,7 @@
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "797b989afc181018a2b2bfa2bfc76d41dcf9aaa2213a89676637b377b9862619",
+      "sha256": "3ef4a05a94420fa9c59c7b07da62b70abb3db364637f16b7b02f4eee1d5294db",
       "language": "zh",
       "title_zh": "三处重点区详细原型",
       "title_en": "Three key-area prototypes"
@@ -290,7 +289,7 @@
       "path": "assets/figures/key-areas.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "33a201773227cd45c5fe2ee6b5a54166db5e4b24d0e116f7aaf05915bc85ad60",
+      "sha256": "8e0ee307fe1d99a2a06762f40c3411842a15d871047cdbf847e7bf6061b3838b",
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
       "title_zh": "三处重点区详细原型",
@@ -319,7 +318,7 @@
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "b5945468d3ec71a0c60bc15aee0b6a0e16b21e29a900db43ece635bb1dfcae08",
+      "sha256": "3f4707e27fb5fa68b509faf17ba031f86420fe3a1144c4d56bb37967980f0a0b",
       "language": "zh",
       "title_zh": "指标、失败注入与扩展闸门",
       "title_en": "Metrics, failure injection and release gates"
@@ -328,7 +327,7 @@
       "path": "assets/figures/metrics-evidence.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "0f35a993dd76b3da8705532ebdd25b6818fc381d1ae7110de9f37680d94c154a",
+      "sha256": "2b6744d3acc5fca218ef4115ce3f3add4151bd9fff70eda0d686396335ae5c58",
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
       "title_zh": "指标、失败注入与扩展闸门",
@@ -354,6 +353,82 @@
       "required": true,
       "sha256": "d5b1c2d1e5c0429e37820acce6c1376e6fe93294eb172d3b8c630744e29ef344",
       "language": "neutral"
+    },
+    {
+      "path": "assets/figures/regional-synergy-v14.svg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "title_zh": "区域协同接口矩阵",
+      "title_en": "Regional synergy interface matrix",
+      "sha256": "7d30d30bd4b88dc814f21cf0f6f0616a3edc42b8a43a1809342824d1b22542fc"
+    },
+    {
+      "path": "assets/figures/regional-synergy-v14.en.svg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/regional-synergy-v14.svg",
+      "title_zh": "区域协同接口矩阵",
+      "title_en": "Regional synergy interface matrix",
+      "sha256": "e58edb6f7fe50099dee9d476d8f76e742c4d241c34a034e02df0d8906daecdf4"
+    },
+    {
+      "path": "assets/figures/key-areas-detail-v14.svg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "title_zh": "三站实施级空间与服务流线图",
+      "title_en": "Implementation-level station and service-flow diagrams",
+      "sha256": "57beb791fe9f15987ae3b05cd424697a77054f38e695c9ee809449fa5ee3ca8c"
+    },
+    {
+      "path": "assets/figures/key-areas-detail-v14.en.svg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/key-areas-detail-v14.svg",
+      "title_zh": "三站实施级空间与服务流线图",
+      "title_en": "Implementation-level station and service-flow diagrams",
+      "sha256": "c546f782b639cc04e2d51be47ada5fa99b500c64e162de4279b193b6a42f96ef"
+    },
+    {
+      "path": "assets/figures/report-overview-v14.svg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "title_zh": "完整成果阅读导图",
+      "title_en": "Complete proposal reading map",
+      "sha256": "4010665de670292744486d433be6030a3283ad23f3261c9028e55291a63e765d"
+    },
+    {
+      "path": "assets/figures/report-overview-v14.en.svg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/report-overview-v14.svg",
+      "title_zh": "完整成果阅读导图",
+      "title_en": "Complete proposal reading map",
+      "sha256": "ca95fa6e76f1ee007ac5ad9beb2f3f840b333fc597c0cdb3a34db05c7ddfdeb8"
+    },
+    {
+      "path": "assets/figures/visual-dashboard-v14.svg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "zh",
+      "title_zh": "离线可视化仪表板",
+      "title_en": "Offline visualization dashboard",
+      "sha256": "e38addb6691c3624576210870d049eeb796173fdf1fddb347b4cf0f127c5a155"
+    },
+    {
+      "path": "assets/figures/visual-dashboard-v14.en.svg",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "en",
+      "translation_of": "assets/figures/visual-dashboard-v14.svg",
+      "title_zh": "离线可视化仪表板",
+      "title_en": "Offline visualization dashboard",
+      "sha256": "097c87903b162e3fd2c6208660c096596abeeea02067a1f1cc8f89abc3d71011"
     }
   ],
   "validation_claim": {
@@ -365,8 +440,16 @@
       "x-local-preflight": {
         "schema_version": "1.0",
         "data": {
-          "status": "review-repair-v1.3-complete",
-          "official_four_gate_status": "persisted-pass"
+          "status": "v1.4.1-review-repair-built",
+          "official_four_gate_status": "pending_exact_head_self_check",
+          "visible_cjk_method": "Noto Sans CJK SC glyph outlines + co-located semantic text; no font file distributed",
+          "required_repairs_closed": [
+            "regional_synergy_matrix",
+            "station_handover_diagram",
+            "offline_visible_chinese"
+          ],
+          "mandatory_pngs_upgraded": true,
+          "pdf_evidence_pages_appended": true
         }
       }
     }
