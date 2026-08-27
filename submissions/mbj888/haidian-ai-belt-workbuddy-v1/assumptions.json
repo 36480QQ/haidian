@@ -23,12 +23,12 @@
   },
   "far_assumed": {
     "status": "known",
-    "value": 1.2,
+    "value": 1.0,
     "unit": "dimensionless",
     "source_files": [
       "metrics.json"
     ],
-    "description": "FAR 1.2 planning assumption, not approved control.",
+    "description": "FAR 1.0 planning reference value, not approved control.",
     "recalculation_trigger": "Official regulatory plan"
   },
   "official_data_gap": {
