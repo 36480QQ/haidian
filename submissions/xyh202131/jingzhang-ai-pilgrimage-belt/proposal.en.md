@@ -5,8 +5,8 @@ language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-version: "63.0"
-iteration: "63.0"
+version: "64.0"
+iteration: "64.0"
 license: "CC-BY-4.0"
 summary: "Haidian's innovation density becomes public capability only when people can use, question and exit without accounts, devices or professional identity. Twin-Track Jing-Zhang keeps ordinary tasks continuous and G0 verification intermittent and stoppable; three distinct prototypes connect evidence, risk and professional handoff. Boundaries remain provisional; outcomes, approvals, field execution and accepted professional duties remain zero."
 tracks:
@@ -489,6 +489,8 @@ A professional team therefore does not need to reinterpret all 99 slots. It subm
 | H06 Public parity | Community co-test, same-task non-AI parity comparison, and appeal/withdrawal record | Community co-test | Not submitted / NO-GO |
 | H07 Retest and decision | Independent retest package, versioned finding register, and signed go/no-go minute | Independent retest + final decision | Not submitted / NO-GO |
 
+**Duty-acceptance ruling.** H01–H02 first ask who accepts duty and within what exact scope they may act; H03–H05 then ask whether the ordinary-task baseline, prohibited-data controls, and stop/recovery sequence are reproducible; H06–H07 finally ask whether affected groups have same-task parity, the retester is independent, and the final decision permits a veto. Any missing item in any group must refuse real-world start and retain NO-GO. Even all seven closed only permits considering G1; it never auto-authorizes, approves, or restarts. Written real-world acceptance is currently 0/7, approvals are 0, and field execution is 0. The ordinary route, printed/staffed same-task service, correction, complaint, withdrawal, and exit do not wait for duty acceptance; failure stops verification only [data:visual/assets/professional-handoff-candidate.json#PRE-G1-JZ05-SCENE011-T02] [data:visual/assets/readiness-closure-contract.json#JZ-READINESS-CLOSURE-V1].
+
 Phasing uses “year window + evidence gate”; a date never automatically grants eligibility to enter the next phase [data:geometry/phasing.geojson#PHASE-1] [metric:phase_count] [depth:phasing_implementation]:
 
 | Window | Status | Admission gate | Graduation gate | Rollback |
@@ -563,7 +565,7 @@ The back-stage index answers five trace steps: culture returns to correctable na
 | 4 · Evidence/rights | Where does a claim lead, and what remains unproved? | `sources.json`, the rights ledger, scene passports and T-02 synthetic replay; field outcomes, public opinion, independent clearance and real recovery duration remain 0 or `unknown` |
 | 5 · Responsibility | Who may change or reject? | D01–D08 replace provisional objects; H01–H07 remain unsubmitted; only a future competent party accepting an exact scope may recalculate, revise, condition, reject or delete [data:visual/assets/implementation-handoff-matrix.json] |
 
-![Review and professional handoff: one concept, three prototypes, one kernel, six tasks, eight real inputs, seven suggested disciplines and a NO-GO stop line; real inputs and accepted duties remain 0](assets/figures/review-professional-handoff.en.png)
+![Duty-acceptance gate and professional handoff: the sole candidate passes through accountability and operations, public parity, and independent-retest role types, then three H01-H07 decision groups; any missing item means refuse and retain NO-GO, ordinary life continues, and real accepted duty remains 0](assets/figures/review-professional-handoff.en.png)
 
 ### Sole pre-G1 professional handoff candidate: JZ-05 × SCENE-011 × T-02
 

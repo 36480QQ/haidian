@@ -315,5 +315,58 @@
       "G1, authorization, approval or accepted professional duty",
       "independent human bilingual confirmation, legal audit or trademark review"
     ]
+  },
+  "round_64_provenance": {
+    "canonical_main_base_sha": "0558e48f98a92c9cfce43e947a44f8350da180a6",
+    "predecessor_pr": 4086,
+    "publication_revision": "64.0",
+    "scope": "Duty-acceptance frontstage: make existing H01-H07 role, refusal and ordinary-life-continuity decisions directly readable without adding a governance contract, real actor, fact, media or maturity.",
+    "before_evidence": {
+      "predecessor_review_score": 94,
+      "blocking_repairs": 0,
+      "implementability_score": "4/5",
+      "risk_compliance_score": "4/5",
+      "handoff_figure_role_group_count": 0,
+      "handoff_figure_explicit_missing_item_refusal_rule_count": 0,
+      "handoff_figure_explicit_ordinary_life_floor_count": 0,
+      "finding": "E01 showed one candidate and seven closed cards but did not directly answer who accepts duty, how missing evidence triggers refusal, or whether ordinary tasks continue during fault."
+    },
+    "after_evidence": {
+      "sole_candidate": "JZ-05 × SCENE-011 × T-02",
+      "role_groups": 3,
+      "decision_groups": 3,
+      "H01_H07_items": 7,
+      "accepted_H01_H07_items": 0,
+      "missing_item_action": "refuse real-world start and retain G0 / NO-GO",
+      "all_closed_action": "may consider a scoped G1 request; never automatic authorization, approval or restart",
+      "ordinary_life_floor": "ordinary route, printed/staffed same-task service, correction, complaint, withdrawal and exit continue; fault stops verification only",
+      "paired_figure_files_rebuilt_in_place": 4,
+      "offline_visual_navigation_items": 6,
+      "pdf_pages_checked": 44,
+      "fresh_process_byte_identical_builds": 2
+    },
+    "final_pdf_sha256": {
+      "drawings/a3-booklet.pdf": "50c9a4de20497726f97bc280b0e308d3135976c4edef48285da0cdf666b9a7b6",
+      "drawings/a3-booklet.en.pdf": "43882c564cd1908b1ff46367c8ae041f7f83cfdac40b3045dc734d82742171a9",
+      "drawings/a0-boards.pdf": "2356d5622a20bf41d50454019f91b9c85876fcfc05a8cabb85784891e00d51c7",
+      "drawings/a0-boards.en.pdf": "fc42620819859b8575a0c1ee1373b3606abfef6e2e9b8cf77e7866d7338cc48c"
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "metrics_json_frozen": true,
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36",
+      "a3_page_pair": "14 + 14",
+      "a0_page_pair": "8 + 8"
+    },
+    "new_media": false,
+    "new_source": false,
+    "new_governance_contract": false,
+    "cannot_prove": [
+      "a real institution, person, roster or duty acceptance",
+      "official boundary, exact site or approved design",
+      "field baseline, performance, accessibility result, budget or recovery duration",
+      "G1, authorization, approval, restart or professional acceptance",
+      "independent human bilingual confirmation, legal audit or trademark review"
+    ]
   }
 }

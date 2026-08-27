@@ -6,6 +6,16 @@ The proposal makes one spatial decision: verification may not occupy the ground 
 
 方案只作一项空间裁决：验证不得接管普通任务所需地面。众智园以平行绕行和旁置验证庭回答；原点社区以一街两院四个可撤回节点回答；大钟寺以净空四向通勤和路外信息厅/人工台回答。
 
+## Duty-acceptance gate / 责任接收门
+
+R64 makes the next professional question visible without inventing its answer: after a person completes the ordinary task, who may let verification continue? The sole pre-G1 candidate now passes through accountability/operations, public parity and independent-retest role types, then three grouped H01-H07 decisions. Any missing item means refuse real-world start and retain NO-GO; all seven closed only permits considering G1. Real acceptance remains 0/7, approvals 0 and field execution 0. Ordinary routes and printed/staffed same-task service do not wait for duty acceptance, and fault stops verification only.
+
+第64轮把下一道专业问题搬到前台，但不虚构答案：普通人完成日常任务后，谁可以让验证继续？唯一 pre-G1 候选先经过责任/运营、公共同权和独立复测三类角色，再经过分组三道 H01—H07 裁决。任一项缺失即拒绝现实启动并保持 NO-GO；七项全部关闭也只允许考虑 G1。现实接责仍为 0/7、批准 0、现场执行 0；普通路径与纸面/人工同任务服务不等待接责，故障只停止验证叠层。
+
+This is a contributor-authored reading contract over existing handoff fields, not a new governance contract, professional opinion, accepted duty, approval or field result. No new media was added.
+
+这是对既有交接字段的投稿方阅读合同，不是新治理合同、专业意见、责任接受、批准或现场结果。本轮无新媒体。
+
 ## Publication coherence and first-screen closure / 出版一致性与首屏收口
 
 R62 removes a reviewer-facing identity conflict rather than adding design content. Before repair, proposal and changelog revisions had advanced while both visual pages and all 44 fixed pages still presented R60 as current; each report also exposed two document H1 headings, and the Chinese desktop hero ended with an orphaned final character pair. The frontstage now uses the stable labels `G0 CONCEPT · REVIEW EDITION / G0 概念稿 · 评审版`, while revision 62.0 remains in backstage provenance. Reports retain one H1 each, hero line breaks are semantic, and all fixed pages carry the stable label.

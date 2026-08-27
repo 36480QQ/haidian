@@ -5,8 +5,8 @@ language: "zh"
 translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-version: "63.0"
-iteration: "63.0"
+version: "64.0"
+iteration: "64.0"
 license: "CC-BY-4.0"
 summary: "海淀的创新密度，只有在普通人无需账户、设备或专业身份也能使用、质疑和退出时，才会成为公共能力。双轨京张以连续日常轨保障普通任务，以间歇、可停止的 G0 验证轨承载概念测试；三种不可互换原型连接证据、风险与专业交接。边界仍为临时约束，现实结果、批准、现场执行和专业接责仍为 0。"
 tracks:
@@ -489,6 +489,8 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 | H06 公共同权 | 社区共测、同任务非 AI 同权比较、申诉与退出记录 | 社区共测 | 未提交 / NO-GO |
 | H07 复测与决定 | 独立复测包、版本化发现台账、签署的 go/no-go 纪要 | 独立复测 + 最终决定 | 未提交 / NO-GO |
 
+**责任接收裁决。** H01—H02 先回答“谁接责、在哪个范围内有权行动”，H03—H05 再回答“普通任务基线、数据禁区和停止恢复是否可复现”，H06—H07 最后回答“受影响群体是否同权、复测者是否独立、最终决定是否允许否决”。三组中缺任一项都应拒绝现实启动并保持 NO-GO；即使七项全部关闭，也只允许考虑 G1，不自动形成授权、批准或重启。当前书面责任接受为 0/7、批准为 0、现场执行为 0；普通路径、纸面/人工同任务服务、纠错、投诉、撤回与离开不等待接责，故障只停止验证叠层 [data:visual/assets/professional-handoff-candidate.json#PRE-G1-JZ05-SCENE011-T02] [data:visual/assets/readiness-closure-contract.json#JZ-READINESS-CLOSURE-V1].
+
 分期采用“年份窗口 + 证据门”，年份从不自动赋予进入下一阶段的资格 [data:geometry/phasing.geojson#PHASE-1] [metric:phase_count] [depth:phasing_implementation]：
 
 | 窗口 | 状态 | 进入门 | 毕业门 | 回滚 |
@@ -563,7 +565,7 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 | 4 · 证据权利 | 主张能追到哪里，哪些不能证明？ | `sources.json`、权利台账、场景护照和 T-02 合成回放；现场结果、公众意见、独立清权和现实恢复时间仍为 0 或 `unknown` |
 | 5 · 责任 | 谁能改变或否决？ | D01—D08 替换临时对象；H01—H07 尚未提交；仅未来接受明确范围的胜任专业方可复算、修订、附条件、否决或删除 [data:visual/assets/implementation-handoff-matrix.json] |
 
-![评审与专业交接：一概念、三原型、一内核、六项任务、八类真实输入、七类建议专业和 NO-GO 停止线；现实资料与责任接受均为 0](assets/figures/review-professional-handoff.png)
+![责任接收门与专业交接：唯一候选先经过责任运营、公共同权和独立复测三类角色，再经过 H01—H07 三组裁决门；任一缺失即拒绝并保持 NO-GO，普通生活底板继续，现实接责为 0](assets/figures/review-professional-handoff.png)
 
 ### 唯一 pre-G1 专业交接候选：JZ-05 × SCENE-011 × T-02
 
