@@ -15,6 +15,13 @@
       "sha256": "288d3c44db18f0f20f278ce16012e3a97f12b2f4034290e7f3970932291c4416"
     },
     {
+      "language": "neutral",
+      "path": "visual/assets/cjk-font.css",
+      "required": true,
+      "role": "asset",
+      "sha256": "0c7555db7ae43e132c5709c82f17a914bcf02ca1a519a680f3c56d0af1a04a1b"
+    },
+    {
       "path": "assets/figures/dazhongsi-construction-evidence.en.png",
       "required": false,
       "role": "proposal_figure",
@@ -220,7 +227,7 @@
       "path": "assets/figures/site-overview.en.png",
       "required": true,
       "role": "proposal_figure",
-      "sha256": "c2371b793a9eb7588457c7b92739dddf9b8ab904a483bbb0a6b8c92821dbc037",
+      "sha256": "ee423f8da1a8586ef887c541ce2ca87128a65a60c961e576e6ad33cf9a41031b",
       "title_en": "Site Overview",
       "translation_of": "assets/figures/site-overview.png"
     },
@@ -230,7 +237,7 @@
       "path": "assets/figures/site-overview.png",
       "required": true,
       "role": "proposal_figure",
-      "sha256": "57262b01f370332cf5b11af0ad3cb1023dc1ffcc55a7742293ec190ea54153ca",
+      "sha256": "01ad855d2581bd052044c8133012208f5c5c196478ccb8d56987bf79a649cac5",
       "title_zh": "场地总览"
     },
     {
@@ -361,7 +368,7 @@
       "poster": "assets/media/experience-poster.webp",
       "required": false,
       "role": "video",
-      "sha256": "5f5c644c8f910c7cb6ddd2d2c1abfda366fbf90d4b3a5c37b24e5270e69f04b7",
+      "sha256": "3e2b6b9cd53f62e3fedcb90c046d2e0cd032bdaac528af499fbd6015cc18f913",
       "title_en": "The City Works Before AI — Dazhongsi concept film",
       "title_zh": "城市先于人工智能继续运行——大钟寺概念短片",
       "transcript": "assets/media/experience.md"
@@ -1449,7 +1456,7 @@
       "path": "drawings/a0-boards.en.pdf",
       "required": true,
       "role": "drawing",
-      "sha256": "17852a0f86fe72d4fad570f516271a56a858edee35f98b0ff242eef240626e83",
+      "sha256": "3069feafe2bee5667ef961a647cb6cb4bc4cf47301b463e52ce930ca076674de",
       "title_en": "A0 Boards (English)",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -1459,26 +1466,26 @@
       "path": "drawings/a0-boards.pdf",
       "required": true,
       "role": "drawing",
-      "sha256": "dcc8226970fb8125e555889813c7c33989b2cf3c896043a823ebc5e3576dfa23",
+      "sha256": "8c7156773c3be3975ac76038cadd710258b6773a978a8626d62ddb19600c8129",
       "title_zh": "A0 展板（中文）"
     },
     {
-      "description_en": "Eighteen-page English-primary narrative.",
+      "description_en": "Sixteen-page English-primary narrative.",
       "language": "en",
       "path": "drawings/a3-booklet.en.pdf",
       "required": true,
       "role": "drawing",
-      "sha256": "2901276ad1f7ba3d7e5e349bbacf0b67ebad53932cc17f2929c81306544952ea",
+      "sha256": "b0bed4476b2098d2b9ebc7631c281015a600816a3e31df15b61bc8e179decdde",
       "title_en": "A3 Booklet (English)",
       "translation_of": "drawings/a3-booklet.pdf"
     },
     {
-      "description_zh": "18 页中文正式叙事。",
+      "description_zh": "16 页中文正式叙事。",
       "language": "zh",
       "path": "drawings/a3-booklet.pdf",
       "required": true,
       "role": "drawing",
-      "sha256": "79b669c3216e2e053a70d1149f8ac9f0bbe0e7b8cf9b329fa62b8bd95629d4a1",
+      "sha256": "7cec86e200ca5949addfcda1c9e279fa2f3f84086790307b74d5b356278f33fa",
       "title_zh": "A3 手册（中文）"
     },
     {
@@ -1565,7 +1572,7 @@
       "path": "report/copyright_statement.md",
       "required": true,
       "role": "copyright_statement",
-      "sha256": "415d61db5ea54c27802a25523fa3c242990970ab28569d1aca5e5d4875f5987e"
+      "sha256": "5354a14ab9954eb9aac4973601065ceabb6874178658aecbb4ab696109ef351b"
     },
     {
       "path": "report/narrative.md",
@@ -1578,7 +1585,7 @@
       "path": "report/proposal.en.html",
       "required": true,
       "role": "rendered_proposal_html",
-      "sha256": "6730969744619228c446c0b66ae2e942b6cc788930a1b19e071ed4cb8e930ae5",
+      "sha256": "f18085c69787f76f0f2e0d6f7df6cd7f80aa79d55866f5799fbb425665128d83",
       "translation_of": "report/proposal.html"
     },
     {
@@ -1586,13 +1593,13 @@
       "path": "report/proposal.html",
       "required": true,
       "role": "rendered_proposal_html",
-      "sha256": "ff0f37dc795e41f48209524d213e7a0263352bae99a9bbb50edd06137dd92d34"
+      "sha256": "0363312ce2dc0e8f7e25b4df14e72aff695475967f5460a433dd3781c4041016"
     },
     {
       "path": "self_check.json",
       "required": true,
       "role": "self_check",
-      "sha256": "cba510ca2a49f8da696534805bd60598a2e5ca5d6dea2aa62ab1b71b65327b91"
+      "sha256": "5a05453863d25f65c4b7021c65e3a058b39db0f51903ac20067effd33e20f222"
     },
     {
       "path": "sources.json",
@@ -1634,7 +1641,7 @@
       "path": "visual/assets/explorer-v2.css",
       "required": true,
       "role": "asset",
-      "sha256": "ba6d1a5c512ccd9daaf560a6572176369609c7cd1027f03e8753cd01c9595112"
+      "sha256": "3f0063772d207bee3554bbec59c7766dc08fe3b4b7633ea87a083c290dad90a2"
     },
     {
       "language": "neutral",
