@@ -9,12 +9,33 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the century-old Jing-Zhang railway heritage corridor as a civic mainboard, this proposal builds an open-source AI commons of one spine, six stations, three areas and two wings: a 9.7 km rail-to-trail mainline linking six station-hall public nodes and three key areas, forming a recomputable, verifiable, concept-level urban design ready for professional deepening."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.8"
+iteration: "v1.9"
 ---
 
 # OPEN RAIL: Jing-Zhang AI Commons Urban Design Proposal
 
 > **Concept disclaimer**: All spatial, operational, branding and policy content in this proposal is an open co-creation recommendation — a "concept proposal" or "reference scheme" for professional teams to deepen. It does not replace statutory planning and does not constitute a government-approved conclusion. Every area and ratio can be recomputed from the package GeoJSON in EPSG:4548. The overall design boundary and the three key areas use provisional rough boundaries (provisional_constraint); all layers and metrics must be recalculated once official boundaries are released. Public reporting indicates the HD00-1601 block-level regulatory plan was approved on 11 August 2026; that source is not yet in the repository's approved_formal_sources, so this proposal treats it as public background information pending source-registry review, not as a statutory basis. On that basis the proposal offers a concept-level-deepening direction (concept proposal), not a parallel alternative to the statutory plan [source:HD00-1601-CONTROL-PLAN-APPROVAL].
+
+> **Review inquiry quick view**: the table below maps the seven review dimensions' most frequent questions to this proposal's answers and their current evidence status; every answer traces back to a machine-readable entry inside the package. Evidence status is stated honestly — design-model values are never passed off as measured values.
+>
+> | Review dimension | This proposal's answer | Current evidence status |
+> | --- | --- | --- |
+> | Relevance to brief | The "one spine, six stations, three areas, two wings" structure derives level by level from the announced three-tier scope; tracks cover heritage narrative, AI origin community and youth-friendly public space; agent tasks agent.1–agent.6 mapped item by item | 23 task-coverage entries in `compliance_matrix.json`; three-tier scope areas within <0.5% of announced figures (recomputed from GeoJSON) |
+> | Originality | OPEN RAIL translates railway vocabulary (mainline / station hall / commit / merge) into open-source civic-governance vocabulary; this submission package itself (PR / review / changelog) is the mechanism's verifiable first run | The concept narrative runs through all deliverables; two community open standards adopted at component level as machine-readable governance contracts |
+> | AI & planning innovation | 13 scenario cards each declare data boundaries, privacy boundaries and an operating entity; edge-compute nodes brought into the park; AI governance sandbox run as a public experiment | `switchback-adoption.json` and `seb-adoption.json` included for review; 3 test-validation scenario cards in place |
+> | Feasibility | Five-element implementation cards for 8 renewal projects + trigger-gated sequencing methodology + six-type funding matrix + four-link accountability chain; values without data stay "pending baseline" | `implementation-cards.json`, `sequencing-methodology.json`, `funding-matrix.json`; no ranking conclusions or benefit figures output |
+> | Public interest & inclusivity | Six user profiles cover elderly, disabled and low-digital-literacy residents; P1–P5 field baseline measurement protocols; every AI service point carries a mandatory non-digital equivalent path | `baseline-protocols.json`; SEB schema enforces the ai_off_path field; measured data honestly marked "pending baseline" |
+> | Risk & compliance awareness | Four risk classes (provisional boundary, regulatory-plan gaps, heritage constraints, implementation conditions) disclosed item by item; unregistered sources downgraded to "background information pending review"; all metrics recomputable from geometry | Eight-dimension matrix in `risk.json`; recalculation path registered in `assumptions.json` (A-BOUNDARY-002); unknown fields such as FAR never faked with inferred values |
+> | Completeness of expression | Full bilingual deliverables (narrative / HTML / A3 / A0 / figures / video with captions and transcript); originally drawn programmatic figures; three machine-readable matrices | Bilingual deliverables mapped one-to-one; offline rendering reproducible with coverage evidence; this table itself is the review entry index |
+
+> **Falsifiability conditions of core claims**: the conditions below make this proposal's main claims independently falsifiable by reviewers and professional teams — triggering any one condition invalidates the corresponding claim or requires its reversion; no vague wording is used to dodge the test.
+>
+> 1. **Continuity claim**: if, once official boundaries are released, any segment of the Open Rail Spine cannot maintain continuous pedestrian and cycle through-movement (through-rate below 100%), the "one spine" structural claim fails [depth:overall_spatial_structure].
+> 2. **Equivalent-path claim**: if any SEB node's ai_off_path points to an online entrance of the same system, or the named non-digital equivalent path does not exist on site, the "usable after AI is switched off" design constraint fails [source:SEB-SPEC].
+> 3. **Governance-contract claim**: if any scenario card entering pilot cannot execute the four-option disposition of the 90-day public review (renew / shrink / suspend / switchback), the Switchback Protocol adoption fails [source:SWITCHBACK-PROTOCOL].
+> 4. **Recomputation claim**: if recomputing any core metric from the package GeoJSON in EPSG:4548 disagrees with `metrics.json` beyond the disclosed precision, the "all metrics recomputable" claim fails [metric:site_area_sqm].
+> 5. **Funding-coverage claim**: if any of the 8 renewal projects cannot find at least one pathable funding type in the six-type funding matrix, the matrix's coverage claim fails [depth:phasing_implementation].
+> 6. **Accountability claim**: if any scenario card's operating entity cannot be grounded in a named accountable_operator at pilot approval, the "accountable category entities" claim fails [source:SWITCHBACK-PROTOCOL].
 
 ## Design Basis and Source List
 

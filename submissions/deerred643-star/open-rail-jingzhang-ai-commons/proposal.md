@@ -9,12 +9,33 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以百年京张铁路遗址廊道为城市主板，构建“一廊·六站·三区·两翼”的开源AI共同体：把9.7公里铁轨转化为开源步道主线，串联六个站厅级公共节点与三处重点区域，形成可复算、可验证、可供专业团队深化的概念性城市设计方案。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v1.8"
+iteration: "v1.9"
 ---
 
 # 开源轨道 OPEN RAIL：京张AI共同体城市设计方案
 
 > **概念声明**：本方案全部空间落地、活动运营、品牌传播与政策机制内容均为“概念建议”“参考方案”或“可供专业团队深化研究”的开放共创建议，不替代正式规划，不构成政府审定结论。所有面积与比例均可从本包 GeoJSON 几何在 EPSG:4548 下复算；总体设计范围与三处重点区域使用临时粗略边界（provisional_constraint），正式官方边界发布后须整体复算。公开报道显示 HD00-1601 等街区控规已于 2026 年 8 月 11 日获批复；该来源尚未进入仓库来源登记表的 approved_formal_sources，本方案将其作为待来源登记复核的公开背景信息，不作法定依据。本方案以此提出「控规之上的概念深化」方向（概念建议），不与法定控规并列 [source:HD00-1601-CONTROL-PLAN-APPROVAL]。
+
+> **评审问询速览**：下表把评审七维最常问的事、本方案的回答与当前证据状态放在同一张表，每条回答均可回溯到包内机器可读入口；证据状态如实标注，不把设计模型值冒充实测值。
+>
+> | 评审维度 | 本方案的回答 | 当前证据状态 |
+> | --- | --- | --- |
+> | 与任务书的相关性 | 「一廊·六站·三区·两翼」由公告三层范围逐级推导；tracks 覆盖遗产叙事、AI 原点社区与青年友好公共空间；agent.1—agent.6 六项任务逐条映射 | `compliance_matrix.json` 23 条任务覆盖；三层范围面积与公告口径偏差 <0.5%（GeoJSON 复算） |
+> | 原创性 | 「开源轨道」把铁路语汇（主线/站厅/提交/合并）转译为开源城市治理语汇；本提交包自身（PR/复审/changelog）即该机制可查证的首次运行 | 概念叙事贯穿全部成果；两项社区开放标准以组件级采纳落地为机器可读治理合约 |
+> | AI 与规划创新 | 13 张场景卡逐卡声明数据边界、隐私边界与运营主体；端侧算力节点进公园；AI 治理沙箱以公开试验运行 | `switchback-adoption.json` 与 `seb-adoption.json` 随包可复核；含 3 张测试验证场景卡 |
+> | 可实施性 | 8 项更新项目五要素实施卡 + 触发式排序方法论 + 六类资金矩阵 + 四环节可问责链；数据未到位的数值一律保持待基线 | `implementation-cards.json`、`sequencing-methodology.json`、`funding-matrix.json`；不输出任何排序结论或效益数值 |
+> | 公共利益与包容性 | 六类画像覆盖长者、残障与低数字素养居民；P1—P5 现场基线测量协议；每个 AI 服务点强制非数字化等价路径 | `baseline-protocols.json`；SEB schema 强制 ai_off_path 字段；实测数据如实标注「待基线」 |
+> | 风险与合规意识 | 临时边界、控规缺口、文保约束、实施条件四类风险逐项披露；未登记来源降级为「待复核背景信息」；全部指标可从几何复算 | `risk.json` 八维矩阵；`assumptions.json` 登记复算路径（A-BOUNDARY-002）；容积率等 unknown 字段不以推测值冒充 |
+> | 表达完整性 | 中英双语全量成果（正文/HTML/A3/A0/图件/视频+字幕+文稿）；程序绘制原创图件；机器可读索引三矩阵 | 双语成果逐项对应；离线渲染可复现并有覆盖证据；本表即为评审入口索引 |
+
+> **核心主张的可证伪条件**：以下条件使本方案的主要主张可被评审与专业团队独立证伪——任一条件触发即意味着对应主张失效或须回退修正，不以模糊表述规避检验。
+>
+> 1. **贯通主张**：若官方边界发布后，开源主线任一段无法保持连续步行/骑行贯通（贯通率低于 100%），则「一廊」空间结构主张失效 [depth:overall_spatial_structure]。
+> 2. **等价路径主张**：若任一 SEB 节点的 ai_off_path 指向同一系统的线上入口，或现场不存在所指的非数字等价路径，则「AI 关闭后仍可用」的设计约束失效 [source:SEB-SPEC]。
+> 3. **治理合约主张**：若任一场景卡进入试点后无法执行 90 天公开复审的四选一处置（续期/缩减/暂停/折返），则折返协议采纳失效 [source:SWITCHBACK-PROTOCOL]。
+> 4. **复算主张**：若以包内 GeoJSON 在 EPSG:4548 下复算任一核心指标与 `metrics.json` 不一致（超出披露精度），则「全部指标可复算」主张失效 [metric:site_area_sqm]。
+> 5. **资金覆盖主张**：若 8 项更新项目中任一项在六类资金矩阵中找不到至少一条可路径化的资金类型，则资金矩阵的覆盖主张失效 [depth:phasing_implementation]。
+> 6. **可问责主张**：若任一场景卡的运营主体在试点核准时无法落实为具名 accountable_operator，则「类别主体可问责」主张失效 [source:SWITCHBACK-PROTOCOL]。
 
 ## 设计依据与资料清单
 

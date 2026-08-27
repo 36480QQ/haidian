@@ -1,5 +1,46 @@
 # 方案迭代记录
 
+## v1.9 - 2026-08-27
+
+### 改动摘要
+
+- **评审问询速览表**（双语 proposal 开场新增）：七评审维度 × 本方案回答 × 当前证据状态三列速览，置于概念声明之后；每条回答回溯包内机器可读入口（`compliance_matrix.json`、`funding-matrix.json`、`baseline-protocols.json`、`risk.json` 等），证据状态如实标注，不把设计模型值冒充实测值。
+- **核心主张可证伪条件**（双语新增）：贯通主张、等价路径主张、治理合约主张、复算主张、资金覆盖主张、可问责主张六条，任一条件触发即对应主张失效或须回退修正——把「可证伪」落为逐条检验条件，全部沿用既有 source/depth/metric 引用标记，不新增事实性主张。
+- **管线同步**：report 双 HTML 以补丁插入（与 proposal.md/.en.md 插入位置一一对应，沿用 blockquote/table/ol/sup.evidence 既有标记体系）；visual 双页 iteration badge v1.8→v1.9；Noto Sans SC 子集重建（1180 字符，fontTools cmap 覆盖率 100%，程序化验证）并重新注入四份 HTML；A3/A0 PDF 以新子集重建、封面版本号 v1.9；渲染证据截图更新。
+- **版本一致性**：proposal front matter、visual 双页 badge、A3 封面版本号统一 v1.9。
+
+### 采纳反馈
+
+- 对标同类高分提交已具备的评审体验件（问询速览表、可证伪条件），补齐本包此前缺失的两件；内容全部由本包既有证据资产重组生成，不引入外部对标提交的任何文本或数据。
+
+### 暂未采纳或待复核事项
+
+- 速览表与可证伪条件不改动任何既有主张、几何与指标；官方边界、控规图则等条件触发项维持原状继续披露。
+- A3/A0 图纸本轮仅同步封面版本号，未新增板面（速览表属评审入口件，落在双语正文与报告 HTML）。
+
+### 公开资料与合规说明
+
+- 无新增外部资料；新增文本仅重组本包既有机器可读索引的引用，不改变事实陈述与证据级别；对标提交仅作赛场观察，未复制其任何内容。
+
+## v1.8.1 - 2026-08-27
+
+### 改动摘要
+
+- **修复 self_check_ids 体系不一致**：`compliance_matrix.json`（23 处）、`standard_matrix.json`（6 处）与 `design_depth_matrix.json`（15 处）共 44 处 `self_check_ids` 由脚手架初始 ID（BOUNDARY_TRUST / KEY_AREAS_TRUST / LAND_USE_TOPOLOGY / VISUAL_STATIC）统一替换为 `self_check.json.checks[]` 实际持久化的四个门 ID（DETERMINISTIC_VALIDATION / SPATIAL_REVIEW / VISUAL_PACKAGING / PROFESSIONAL_EVIDENCE）。原因：`self_check_submission.py` 持久化时固定以上述四个门 ID 覆写 checks[]，矩阵引用初始 ID 无法与实际自检记录机器对位；改为门 ID 后引用在自检重跑后依然成立。
+- **manifest 同步**：三个矩阵文件的 sha256 随内容变更更新。
+
+### 采纳反馈
+
+- 闭合字段级校验报告问题 1（self_check_ids 与 self_check.json 的 check_id 两套体系不对位）。
+
+### 暂未采纳或待复核事项
+
+- 字段级校验报告问题 2（assumption_ids 仅引 A-CONTROLS-001）与问题 3（geojson_layers 全量引用）为改进建议，本轮未动，待下一迭代处理。
+
+### 公开资料与合规说明
+
+- 本轮仅改动机器可读索引文件的 ID 引用与 manifest 哈希，不涉及任何正文、几何、图件与来源变更。
+
 ## v1.8 - 2026-08-27
 
 ### 改动摘要
