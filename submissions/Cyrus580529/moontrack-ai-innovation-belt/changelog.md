@@ -2,6 +2,26 @@
 
 本文件记录本方案从初版到当前版本的实际改动，包括**被推翻的结论**与**被删除的内容**。删除比新增更能说明这份方案的作业方式，因此一并保留。
 
+## v0.10 - 2026-08-27
+
+### 改动摘要
+
+- **四份离线 HTML 补上嵌入中文字体。**页面此前只在 `font-family` 里列出 `Hiragino Sans GB`、`PingFang SC`、`Microsoft YaHei` 等系统字体,自己不带字形。这与 v0.9 修掉的 PDF 缺陷是同一个失效模式,当时只修了 PDF 那一半:在没有 CJK 字体的无头审查环境里,中文渲染成方框。现按每份页面实际用到的字符,从同一套 Noto Sans SC(OFL 1.1)切出 400/700 两个 woff2 子集,base64 内联为 `@font-face`,并把该字族插到原有字体栈最前,原栈保留作回退。全程无远程请求。
+- 体积代价:`report/proposal.html` 181→629 KB,`visual/index.html` 37→213 KB,两份英文页各增 14—42 KB。
+- 已逐字符核验:四份页面的可渲染字符(含 JS 运行时生成的标签文字)全部落在各自子集的 cmap 内,未覆盖 CJK 字符为 0。另做隔离验证——把页面字体栈里除嵌入字族外的全部回退项删掉后用无头 Chrome 截图,中文仍完整可读,证明字形来自嵌入子集而非本机系统字体。
+- **`manifest.validation_claim.data_confidence` 由 `high` 改为 `mixed_provisional_and_conceptual`。**`metrics.json` 的逐项分布是 high 8 / medium 35 / low 14 / unknown 1,包级声称 high 与之冲突,会让机器消费者误读总体证据等级。取该枚举值而非 `medium`,是因为它本身就表示证据等级不均一,正对应本包的实际状况:provisional 边界 + OSM 派生指标 + 概念性方案内容。逐项分布、判定理由与「不得用于覆盖单项等级」写进 `validation_claim.extensions` 的 `x-data-confidence-note`——schema 对 0.2.x 把 `validation_claim` 锁为五个键,`extensions` 是其规定的扩展点。
+- `report/proposal.html` 与 `report/proposal.en.html` 按当前 `proposal.md` 重新渲染(v0.9 改过参考资料章节,HTML 此前是旧版)。`report/copyright_statement.md` 的 Fonts 一节补入 HTML 字体行,并改掉此前把"页面不带字体"当作合规优点的表述。
+
+### 采纳反馈
+
+- PR #4080 的 AI 评审(七维加权 88.0/100)提出两项阻断:中文 HTML 大量文字显示为方框;`data_confidence=high` 与逐项等级冲突。两项均核实属实,本轮全部修复。
+- 表达完整度一维此前评 3/5,原因即中文 HTML 不可读;其余六维为 5/5/5/4/5/4。
+
+### 暂未采纳或待复核事项
+
+- 英文 HTML 也嵌了同一子集:两份英文页各含 72 个和 1 个中文字符(专有名词),不嵌同样会出现方框。
+- PDF 与 HTML 现在共用同一套字体来源,但子集各自独立生成,不共享文件;提交包内仍不含独立字体二进制。
+
 ## v0.9 - 2026-08-26
 
 ### 改动摘要

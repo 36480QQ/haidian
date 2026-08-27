@@ -15,12 +15,13 @@ Generated and conceptual material is an explanatory layer. No figure in this pac
 | Hiragino Sans GB | Rasterised into the PNG figures at generation time | Apple system font, not redistributed. Only rendered glyph pixels appear in the PNGs; no font file is embedded or included in this package. |
 | Noto Sans SC Regular / Bold | Chinese text in the A3 booklet and A0 boards (`drawings/a3-booklet.pdf`, `drawings/a0-boards.pdf`) | SIL Open Font License 1.1, which permits embedding. Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'. Embedded as a TrueType subset: the font descriptors in both PDFs carry `FontFile2`. |
 | Helvetica / Helvetica-Bold | Latin text in the English PDFs (`drawings/a3-booklet.en.pdf`, `drawings/a0-boards.en.pdf`), and Latin runs in the Chinese PDFs | PDF base-14 standard font, referenced by name, not embedded. |
+| Noto Sans SC Regular / Bold, subset per page | All four offline HTML pages (`report/proposal.html`, `report/proposal.en.html`, `visual/index.html`, `visual/index.en.html`) | Same OFL 1.1 face as the PDFs. Each page carries its own woff2 subset, cut to the characters that page actually uses and inlined as a `data:` URI in an `@font-face` rule. No network request is made and no standalone font file is added to the package. |
 
 Provenance of the Chinese face: upstream is the Noto Sans SC variable font published in the Google Fonts collection (`ofl/notosanssc/NotoSansSC[wght].ttf`). Its default instance is Thin (weight 100), so it was instantiated locally into two static weights — 400 for body text and 700 for headings — before use. Only those two static instances feed the PDF generator, and only the glyphs actually used are subset into each PDF.
 
 Font binaries are not shipped as standalone files in this package. What is redistributed is the embedded TrueType subset inside the two Chinese PDFs, which OFL 1.1 permits. The English PDFs embed no font at all.
 
-The HTML pages request no web font. They fall back through a local font stack (`Hiragino Sans GB`, `PingFang SC`, `Microsoft YaHei`, then the system UI font), so no font is transferred to the reader.
+The HTML pages request no remote web font. Earlier versions relied only on a local font stack (`Hiragino Sans GB`, `PingFang SC`, `Microsoft YaHei`, then the system UI font), which renders Chinese as empty boxes on a machine without those faces installed — the same failure mode the PDFs had. Each page now embeds its own subset of the same OFL face ahead of that stack, so the Chinese text is readable without depending on the reader's system, and the original stack is kept as a fallback. The subsets add roughly 447 KB to `report/proposal.html`, 176 KB to `visual/index.html`, and less to the two English pages; every subset was verified to cover every character its page can render.
 
 ## Toolchain
 

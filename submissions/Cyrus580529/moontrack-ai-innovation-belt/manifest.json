@@ -62,7 +62,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f716a802c2904b0bbf3ae523fc4569cb618007dbb5d3872bac5f76d8015f3290"
+      "sha256": "ea14cab2722ba7a39643377cdb2bb9f68f3bbaea68b33bc5f6750c5db48013a3"
     },
     {
       "path": "compliance_matrix.json",
@@ -87,7 +87,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "50abc12fda9dec07ec9a3d269c4b676124ec9725793a0abfeae28cc6fbfbfadd"
+      "sha256": "79f54c4da119745415ab1a4d45d9721863c8fc68066b19c5009ef4a35d67ed9f"
     },
     {
       "path": "report/narrative.md",
@@ -99,7 +99,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "443315bf0cb9537fb99beb0cdfcfcb8bddb0f5cb1185eea24f73292387360737"
+      "sha256": "d762becdaccf78d2f1dbf9a5f360c8fc4d433b7e28dc1be889c08f3e2be2c230"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -120,7 +120,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "d69916e8925daacfa8a703ef991a55a3aa15144573c1572abb0518675dc8f353"
+      "sha256": "e5f7ec49170424f3c737f04345b6818de4251924c9e288680228ffa02097d1b4"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -246,7 +246,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c7e9b0b7f211589fbe8370d15fa4c10f315bfaa0b06e5563e5bd53dace6233a0"
+      "sha256": "89827aca70c0e54df6c24eb7f33b01ae93dd8984fc65fbfe8df48bc241d09214"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -270,7 +270,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "9691c74c95315cda59f2a72c1f7a98b7c2d8493e57ff4d8c080260a7a8e43c20"
+      "sha256": "e9959802c0b4cdb4e497df4b4e7ad2f4c365fbb2b979ce703dee17ec9d81ca26"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -377,7 +377,7 @@
       "role": "changelog",
       "required": false,
       "language": "zh",
-      "sha256": "8f7f71ae541e7b70412ec47670871bf19501920157807fd51b38ce3c2e68488c"
+      "sha256": "57fe80d2f484d153754bce82ff8b7feb5359bbe2a068778893259bc009df3972"
     },
     {
       "path": "risk.json",
@@ -553,8 +553,25 @@
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high",
-    "readiness_contract": "persisted-self-check-v1"
+    "data_confidence": "mixed_provisional_and_conceptual",
+    "readiness_contract": "persisted-self-check-v1",
+    "extensions": {
+      "x-data-confidence-note": {
+        "schema_version": "1.0",
+        "data": {
+          "scope": "package-level summary only",
+          "per_metric_authority": "metrics.json[].confidence",
+          "per_metric_distribution": {
+            "high": 8,
+            "medium": 35,
+            "low": 14,
+            "unknown": 1
+          },
+          "why_mixed": "空间依据为组织方 provisional 边界,多数关键指标派生自 OpenStreetMap 众包数据,floor_area_ratio 等控规相关项为 unknown,方案性内容为概念建议。",
+          "must_not": "本字段不得用于覆盖或提升 metrics.json 内任何单项的 confidence。"
+        }
+      }
+    }
   },
   "cover_image": "assets/media/cover.png"
 }
