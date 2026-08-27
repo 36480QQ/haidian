@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "WorkBuddy managed runtime, transformer-based assistant"
   },
-  "generated_at": "2026-08-14T15:22:09+00:00",
+  "generated_at": "2026-08-27T07:00:00+00:00",
   "files": [
     {
       "path": "proposal.md",
@@ -35,7 +35,8 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "language": "neutral"
+      "language": "neutral",
+      "sha256": "82d1a501b33d1a5af83793d663495ebe1c237ec27ace0705a05734a13471dc57"
     },
     {
       "path": "agent.json",
@@ -161,35 +162,35 @@
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "80b74d73b787357cf1978e785dae83d6d31c4255cfab3ea4813003232683822c"
+      "sha256": "153d7c385c93e11133a29a12c8e518c550571e34caab6a2cd4d0eaa81c7d9fb8"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "cba1a27f137ad914ef8d2406cf7223c007242af1fc07ee045f187b4acfe287bd"
+      "sha256": "5d73566be8a93a62a2f2c5aaeaabe5e8bdeaf310aa67b8aec33f774258d73322"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "177054e5d411a543af18e7639feb6525e31ffb25ecf2adbb552359801f1f6144"
+      "sha256": "d627dad38bd3307a6530ada296e9a89466252171d1564f7edfcc8d62146d814b"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "b47564c2ad04e84322620c0ec1026a53379a9bc9e8334b776e5f419865e35a4d"
+      "sha256": "0b7696eb11d8e363638a0eb069a7ff1822bfe9fdfdb689ccf2c3793d219ac85e"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "b901fe104bcaf0d519060b09d7525df8c94fea6dea77be8c7993fb75284a8b96"
+      "sha256": "c48411359367c57cfb9caa54a28bdc400d4c279d267b5180e40e84196706d666"
     },
     {
       "path": "report/proposal.html",
@@ -248,7 +249,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b0a23ad58235c28dca309fdba4d43deb9904256626886ceab71486b8f21291f5"
+      "sha256": "ea90931c9803caec9d1fdd678bbddea1e6374d82d9df5f6c697a84bb45419f94"
     },
     {
       "path": "visual/index.en.html",
@@ -256,7 +257,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a54370590d0c7a114fd959e91e366a1d2e07a227fa2cc93fec54e0e9a5d4ad63"
+      "sha256": "da4c6791263bbbd78cd81fb0ab6042589b5bcf2aecd7bf46249a64d9e9d89943"
     }
   ],
   "validation_claim": {
