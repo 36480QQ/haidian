@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v2.2 — latest English A0/A3 synchronization
+
+- Replaced the superseded five-board English A0 set with a three-board English companion aligned to the approved latest Chinese A0 master.
+- Replaced the superseded 25-page English A3 booklet with a 22-page edition (cover plus 21 design pages) aligned page-for-page with the latest Chinese booklet.
+- Rebuilt English copy for the current spatial structure, K1-K5 nodes, JZ-01-JZ-06 implementation packages, KPI system, and open-city governance loop.
+- Preserved stable drawing identifiers and the conceptual-status, official-data recalculation, and professional-confirmation qualifications.
+- Re-rendered and visually checked every English page for order, clipping, blank or black regions, and submission-scale legibility.
+
 ## v2.1 — principal-designer A3 consolidation and review-response update
 
 - Replaced the Chinese A3 booklet with the principal-designer-approved 21-page design set plus a new cover, delivered as one 22-page A3 landscape PDF.
