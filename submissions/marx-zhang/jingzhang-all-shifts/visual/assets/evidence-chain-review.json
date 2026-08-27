@@ -54,9 +54,16 @@
     {
       "id": "SNAP-SOURCES",
       "path": "sources.json",
-      "sha256": "c4571580acf947cb3d1656ff0b9622e177fc9a6643cbb15c282d72c0ea845a1e",
+      "sha256": "b542d7c36f04cc74ff609dc434a4ef5deac58eb8b335025873219049e4a00e72",
       "source_refs": ["SOURCE-REGISTRY"],
       "snapshot_kind": "source_registry_record"
+    },
+    {
+      "id": "SNAP-TASKBOOK-OPERATIONS",
+      "path": "visual/assets/taskbook-operations-package.json",
+      "sha256": "f35aed0d3e73a477cd5091b62e7d6b065c5e6b894c6d4316e917a842e1da74c9",
+      "source_refs": ["AGENT-TASKBOOK", "AGENT-AUTHORED-ASSETS"],
+      "snapshot_kind": "taskbook_operations_record"
     },
     {
       "id": "SNAP-METRICS",

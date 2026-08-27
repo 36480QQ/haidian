@@ -10,6 +10,7 @@
       "ok": true,
       "errors": [],
       "warnings": [
+        "submissions/marx-zhang/jingzhang-all-shifts/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
         "submissions/marx-zhang/jingzhang-all-shifts/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
       ],
       "proposal_files": [
@@ -40,6 +41,8 @@
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/shift-station-prototype.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/site-overview.en.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/site-overview.png",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/spatial-culture-route.en.svg",
+        "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/spatial-culture-route.svg",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/three-area-operations-audit.en.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/three-area-operations-audit.png",
         "submissions/marx-zhang/jingzhang-all-shifts/assets/figures/zhongzhiyuan-codesign-workshop.en.png",
@@ -104,6 +107,7 @@
         "submissions/marx-zhang/jingzhang-all-shifts/visual/assets/protocol_snapshots/seb-spec-v0.5.0.json",
         "submissions/marx-zhang/jingzhang-all-shifts/visual/assets/protocol_snapshots/switchback-protocol-v0.3.0.json",
         "submissions/marx-zhang/jingzhang-all-shifts/visual/assets/protocol_snapshots/switchback-protocol-v0.3.0.schema.json",
+        "submissions/marx-zhang/jingzhang-all-shifts/visual/assets/taskbook-operations-package.json",
         "submissions/marx-zhang/jingzhang-all-shifts/visual/assets/three-area-operations-audit.json",
         "submissions/marx-zhang/jingzhang-all-shifts/visual/index.en.html",
         "submissions/marx-zhang/jingzhang-all-shifts/visual/index.html"
@@ -111,7 +115,7 @@
       "ai_package_stages": {
         "submissions/marx-zhang/jingzhang-all-shifts": "formal"
       },
-      "total_bytes": 41877778,
+      "total_bytes": 41723460,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -189,7 +193,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 11,
+          "source": 13,
           "standard": 7,
           "depth": 15,
           "data": 11,
