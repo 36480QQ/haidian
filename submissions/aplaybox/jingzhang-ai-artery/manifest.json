@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ada49a51c279c7efd465524aaf0668879f070edb156387b4214d328bc76c0ba6"
+      "sha256": "dc9316052a4770c72f6467a30ef8d97af708690239f82c3902774eb4e368c710"
     },
     {
       "path": "agent.json",
@@ -44,13 +44,13 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "d0b1cf021f25aeb44fa6feabd0d33a3d83172960e52ba32ff8ca44330248595b"
+      "sha256": "727523000c03788edeabee3d70bc2692cc764425fa155d6e97ae3dbb76286ae4"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "7ab22440db826bb97b83f7a9e27d30d28e8c4b4c1910debdada5e4c13be4cb30"
+      "sha256": "cdfb01fb28a885e8d68de377fb8f943b78ff2e567caafec63e1e9763a7cdf39b"
     },
     {
       "path": "self_check.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f1402e8b89e60f6e720635ab9a1007d08eee040a0b2adef77431f6356b889857"
+      "sha256": "de2ad764a49fe9288c9b36f1a24404c5a1dbb610eda0ae18f02b2d4df422f4d9"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "3711228c97ea96312406461fdb4017118d0f00964dedbf0e825f9989f3572cde"
+      "sha256": "4ee5cf9b7bb7b7532179633d84ed8cdd0c605fb75772a4ffaabd7648eb32d8b2"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "914cf3c920e813e9fbde4bf5f6ab2dba380c727b3430f8445ae662c818e7623e"
+      "sha256": "acf918054f90556a444f231cbb1d55a9b28c2348487c2435b893f5a2980f8853"
     },
     {
       "path": "report/proposal.en.html",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "22c64c108160b447567d81dcd5844ea9091a4b3fc5de57c7386703a7b6469c56"
+      "sha256": "26fa15f33efe437ff663362ea38eb7c57c68dc85948d7c3a96a12c1053f7b0ee"
     },
     {
       "path": "visual/index.en.html",
@@ -306,7 +306,7 @@
       "role": "narrative",
       "required": false,
       "language": "zh",
-      "sha256": "c43e46ab2d60d0b89903abc5773a7337fb90aa4dc990287f5a8a36828a26fccb"
+      "sha256": "0559b6568e13f6333b7110d94a48331f8874e728dada5fa8276cccf29fcfd9d9"
     },
     {
       "path": "assets/media/cover.webp",
@@ -320,28 +320,28 @@
       "role": "proposal_figure",
       "required": false,
       "language": "neutral",
-      "sha256": "e5ae3545dd301dfd98f34f4932de61d0a0d17b8084f11495268b58db5fafd0f4"
+      "sha256": "a4be01ec08ecb32d299bb2da6ac7b17cf1eb860c5c350b16e6ff0b8a6d985eb2"
     },
     {
       "path": "assets/figures/timeline.svg",
       "role": "proposal_figure",
       "required": false,
       "language": "neutral",
-      "sha256": "0269d5955b854d8920111ff3ca166e6f247fbef0eb70eca406dad3e51c33a29b"
+      "sha256": "3389751d3cb4f47402f44785dad290c717ef5f42825b85f6c15d86651cd6497a"
     },
     {
       "path": "assets/figures/mindmap.svg",
       "role": "proposal_figure",
       "required": false,
       "language": "neutral",
-      "sha256": "224a2a1655bbc0a58f733cacc7285c6b13951ad9d6ee545288275fea048f70be"
+      "sha256": "f04aabefd18a31b0aab789a21cfd92f4007a0307937381bb0caa05dacd89f7c4"
     },
     {
       "path": "assets/figures/flowchart.svg",
       "role": "proposal_figure",
       "required": false,
       "language": "neutral",
-      "sha256": "31c287d6c54f923692eb8bed6a2cbb3ba88ffa092cf79bfa9bb75adf0e4314c3"
+      "sha256": "702100e044bd46ac1442167006fbc651e61f91c061dbbdef2613c9ac9a72ff7f"
     },
     {
       "path": "assets/figures/brand-identity.png",
@@ -441,6 +441,13 @@
       "language": "en",
       "sha256": "1d36b798b511c16ca9ebecb2ece13c52394bb29318d37037fe72080fed0b28ff",
       "translation_of": "assets/figures/context-basemap.png"
+    },
+    {
+      "path": "assets/media/source_registry_review_request.md",
+      "role": "transcript",
+      "required": false,
+      "language": "zh",
+      "sha256": "4959b48c1280843d3c45a48b0b758ea6f1e8666eac510ce48cbeb61b6ae1409c"
     }
   ],
   "validation_claim": {
