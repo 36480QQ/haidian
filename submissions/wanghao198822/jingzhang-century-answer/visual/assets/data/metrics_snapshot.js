@@ -3,11 +3,11 @@
  * 内容 = metrics.json 的逐字内嵌副本（未删项、未改值）。
  * 内嵌原因同 geo_layers.js：file:// 下无法读取同目录 .json，且禁止网络请求。
  *
- * 原件 SHA-256（裸文件字节）：metrics.json = 73399e7029fba4d546471f87673736e4c63bfa018fbf0de26923708b034f11e2
+ * 原件 SHA-256（裸文件字节）：metrics.json = 6fb6e42da2a05c9b5e0555c69f56668ef66bb868e191f2ae9496f7c741d9fc22
  */
 window.CA_METRICS_SNAPSHOT = {
   "generated_from": "submissions/wanghao198822/jingzhang-century-answer/metrics.json",
-  "source_sha256": "73399e7029fba4d546471f87673736e4c63bfa018fbf0de26923708b034f11e2",
+  "source_sha256": "6fb6e42da2a05c9b5e0555c69f56668ef66bb868e191f2ae9496f7c741d9fc22",
   "metrics_json": {
     "schema_version": "0.1.0",
     "units": {
@@ -1237,6 +1237,84 @@ window.CA_METRICS_SNAPSHOT = {
           "Registering one public cost-index source would let the existing quantity base be developed straight into an itemised estimate."
         ],
         "reason": "The quantity base is complete, but no public construction cost index is registered in sources.json, so no unit price and no amount can be stated."
+      },
+      "simulation_task_count": {
+        "status": "known",
+        "value": 16,
+        "unit": "count",
+        "source_files": [
+          "simulation.json"
+        ],
+        "formula": "len(tasks)",
+        "confidence": "medium",
+        "assumptions": [
+          "离线合成演练读数，非现场实测；不构成效果承诺。"
+        ]
+      },
+      "simulation_success_rate": {
+        "status": "known",
+        "value": 0.6875,
+        "unit": "ratio",
+        "source_files": [
+          "simulation.json"
+        ],
+        "formula": "count(tasks[outcome=='success' or endswith('_success')]) / len(tasks)",
+        "confidence": "medium",
+        "assumptions": [
+          "离线合成演练读数，成功仅按 outcome 等于 success 或以 _success 结尾判定；非现场实测，不构成效果承诺。"
+        ]
+      },
+      "tool_schema_pass_rate": {
+        "status": "known",
+        "value": 0.9375,
+        "unit": "ratio",
+        "source_files": [
+          "simulation.json"
+        ],
+        "formula": "count(tasks[dispatch_schema_valid==true]) / len(tasks)",
+        "confidence": "medium",
+        "assumptions": [
+          "离线合成演练读数，仅反映派单结构校验结果；非现场实测，不构成效果承诺。"
+        ]
+      },
+      "energy_budget_violations": {
+        "status": "known",
+        "value": 1,
+        "unit": "count",
+        "source_files": [
+          "simulation.json"
+        ],
+        "formula": "count(tasks[energy_used_kwh > energy_budget_kwh])",
+        "confidence": "medium",
+        "assumptions": [
+          "离线合成演练读数，能耗为固定 seed 在人工声明区间内生成；非现场实测，不构成效果承诺。"
+        ]
+      },
+      "audit_completeness": {
+        "status": "known",
+        "value": 0.9375,
+        "unit": "ratio",
+        "source_files": [
+          "simulation.json"
+        ],
+        "formula": "count(tasks[audit_complete==true]) / len(tasks)",
+        "confidence": "medium",
+        "assumptions": [
+          "离线合成演练读数，仅按任务记录中的 audit_complete 字段统计；非现场实测，不构成效果承诺。"
+        ]
+      },
+      "replan_p95_seconds": {
+        "status": "known",
+        "value": 12.4,
+        "unit": "s",
+        "source_files": [
+          "simulation.json"
+        ],
+        "formula": "nearest_rank(sort(tasks[].replan_seconds), ceil(0.95 * len(tasks)))",
+        "confidence": "medium",
+        "assumptions": [
+          "离线合成演练读数，重规划耗时为固定 seed 在人工声明区间内生成；按全部 16 条任务取 nearest-rank P95，非现场实测，不构成效果承诺。"
+        ]
       }
     }
   }
