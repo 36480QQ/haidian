@@ -129,6 +129,22 @@
     el.addEventListener("pointerup", function () { dragging = false; el.style.cursor = "grab"; });
     el.addEventListener("wheel", function (e) { e.preventDefault(); userTouched = true; camR = Math.min(420, Math.max(70, camR * (e.deltaY > 0 ? 1.08 : 0.93))); placeCam(yaw); }, { passive: false });
 
+    /* —— 键盘操作（无障碍要求：不依赖鼠标即可旋转与缩放）—— */
+    el.setAttribute("tabindex", "0");
+    function onKey(e) {
+      var k = e.key, step = 0.12, handled = true;
+      if (k === "ArrowLeft") { yaw += step; }
+      else if (k === "ArrowRight") { yaw -= step; }
+      else if (k === "ArrowUp") { camPhi = Math.min(1.25, camPhi + 0.08); }
+      else if (k === "ArrowDown") { camPhi = Math.max(0.18, camPhi - 0.08); }
+      else if (k === "+" || k === "=") { camR = Math.max(70, camR * 0.9); }
+      else if (k === "-" || k === "_") { camR = Math.min(420, camR * 1.1); }
+      else { handled = false; }
+      if (handled) { userTouched = true; placeCam(yaw); e.preventDefault(); }
+    }
+    container.addEventListener("keydown", onKey);
+    el.addEventListener("keydown", onKey);
+
     var last = 0;
     function frame(ts) {
       if (!reduced && !userTouched) { yaw += 0.0022; placeCam(yaw); }
@@ -147,8 +163,19 @@
     if (STARTED || !window.THREE) return;
     STARTED = true;
     var reduced = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-    try { build(container, reduced); } catch (e) {
-      container.innerHTML = '<p style="padding:20px;font-size:13px">3D 场景初始化失败（' + e.message + '）；几何口径见断面 ZZY-1/ZZY-2。</p>';
+    var poster = document.getElementById("b3d-poster");
+    var state = document.getElementById("b3d-state");
+    try {
+      build(container, reduced);
+      /* 成功：撤下静态兜底图，状态改为可交互提示 */
+      if (poster) poster.style.display = "none";
+      if (state) state.parentNode.removeChild(state);
+    } catch (e) {
+      /* 失败：保留静态兜底图，明确告知不可交互及原因 */
+      if (state) state.textContent = (document.documentElement.lang === "en"
+        ? "Static image only - interactive 3D unavailable in this browser"
+        : "仅静态图 · 本浏览器无法运行可交互三维");
+      container.setAttribute("role", "img");
     }
   };
 })();
