@@ -25,8 +25,8 @@ const CLAIM_IDS = [
 ];
 const ASSUMPTION_ID = "A-PLAN-ALIGNMENT-001";
 const UNCHANGED_EVIDENCE_SIGNATURE = "c880c438924399d40267391551669d937dcfc5e144850eb511a45bbf024c4a52";
-const PRIOR_METRICS_SHA256 = "9c27a7ffbdb60768a9084ef7d41f5073fb0102b4f7f73629c1423a15748c8128";
-const CURRENT_METRICS_SHA256 = "d94a8b7bcad389bf26aad70d7ca4b02d4f02042b9a17288e990361f5167d2ba5";
+const PRIOR_METRICS_SHA256 = "d94a8b7bcad389bf26aad70d7ca4b02d4f02042b9a17288e990361f5167d2ba5";
+const CURRENT_METRICS_SHA256 = "6abfc1a9e00228244506266e95829e3ce0beff4d4a9768be6f98e25ffd3c4375";
 const RECERTIFIED_METRIC_IDS = [
   "synthetic_capacity_resource_gate_total",
   "synthetic_capacity_resource_gate_passed",
@@ -34,6 +34,14 @@ const RECERTIFIED_METRIC_IDS = [
   "synthetic_capacity_negative_path_fail_closed_total",
   "synthetic_capacity_minimum_headroom_requests",
   "synthetic_capacity_no_data_to_data_capacity_ratio",
+  "brand_identity_contrast_pair_total",
+  "brand_identity_contrast_pair_passed",
+  "brand_identity_lockup_bilingual_coverage_ratio",
+  "brand_identity_no_color_only_coverage_ratio",
+  "brand_identity_application_anchor_coverage_ratio",
+  "brand_identity_negative_fixture_fail_closed_total",
+  "brand_identity_audit_case_total",
+  "brand_identity_audit_case_passed",
 ];
 
 function absolute(relative) {

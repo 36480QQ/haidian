@@ -105,6 +105,19 @@
       "status": "E2_synthetic_capacity_envelope_only",
       "statement": "SCN06-C010204-SYNTHETIC-CAPACITY-01 uses one submission-owned 60-minute synthetic demand fixture and abstract parallel service units to rehearse admission gates for C-01, the C-02 data and no-data routes, and C-04. The values are not observed demand, named or counted staff, hardware, power, cooling, network, facility, fire, cost, procurement, approval, operator or professional capacity.",
       "impact": "The package may claim reproducible E2 throughput, headroom, route-reserve and fail-closed calculations only. Field operation remains not_ready_for_field_operation until authorized E3 observations and E4 operator, accessibility and professional confirmation replace or reject every synthetic input."
+    },
+    {
+      "id": "A-BRAND-IDENTITY-001",
+      "status": "synthetic_e2_specification_20260824",
+      "statement": "BRAND-IDENTITY-01 is an original, participant-authored visual identity specification (mark geometry, palette, lockups, state tokens, application templates) whose accessibility gates are recomputable by visual/assets/brand-identity-audit.js. It is E2 specification evidence only.",
+      "impact": "The identity can be shown in proposal carriers as the proposal's own design language, but no brand recognition, usability, legibility, trademark clearance, legal availability, professional brand review, official endorsement, adoption or implementation may be claimed. Observed users remain 0; all seven applications stay template_only.",
+      "review_trigger": "Revisit when an official identity requirement is published, an authorized trademark/font clearance search or professional brand review is completed, or real user testing (including accessibility and international audiences) is authorized.",
+      "related": [
+        "BRAND-IDENTITY-01",
+        "A-PLAN-ALIGNMENT-001"
+      ],
+      "evidence_register": "visual/assets/brand-identity-system.json",
+      "verification_script": "visual/assets/brand-identity-audit.js"
     }
   ]
 }

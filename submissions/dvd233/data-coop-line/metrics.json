@@ -504,6 +504,126 @@
         "E2 synthetic admission envelope only; no real staffing, hardware, engineering, facility, cost, operator, approval or field capacity is confirmed."
       ],
       "metric_kind": "synthetic_contract_test"
+    },
+    "brand_identity_contrast_pair_total": {
+      "status": "known",
+      "value": 15,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/brand-identity-system.json",
+        "visual/assets/brand-identity-audit.js"
+      ],
+      "formula": "count(BRAND-IDENTITY-01.palette.declared_pairs) ; recompute: node visual/assets/brand-identity-audit.js --json",
+      "confidence": "low",
+      "assumptions": [
+        "E2 accessibility gate only; no brand user testing, trademark clearance or professional brand review has been performed."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "brand_identity_contrast_pair_passed": {
+      "status": "known",
+      "value": 15,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/brand-identity-system.json",
+        "visual/assets/brand-identity-audit.js"
+      ],
+      "formula": "count(declared_pairs where recomputed WCAG contrast >= max(pair.required_min_contrast, usage gate)) ; recompute: node visual/assets/brand-identity-audit.js --json",
+      "confidence": "low",
+      "assumptions": [
+        "Contrast ratios are recomputed by the audit from hex values; they are laboratory gates, not observed legibility."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "brand_identity_lockup_bilingual_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/brand-identity-system.json",
+        "visual/assets/brand-identity-audit.js"
+      ],
+      "formula": "present_lockups(zh,en,bilingual)/3 ; recompute: node visual/assets/brand-identity-audit.js --json",
+      "confidence": "low",
+      "assumptions": [
+        "Coverage proves the declared lockup files exist and match the register; it does not prove international-audience effectiveness."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "brand_identity_no_color_only_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/brand-identity-system.json",
+        "visual/assets/brand-identity-audit.js"
+      ],
+      "formula": "(state tokens with unique shape + bilingual label + registered color + line roles distinguished by dash)/6 tokens ; recompute: node visual/assets/brand-identity-audit.js --json",
+      "confidence": "low",
+      "assumptions": [
+        "No-color-only coding is verified structurally; real color-vision user testing remains 0 observed users."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "brand_identity_application_anchor_coverage_ratio": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "visual/assets/brand-identity-system.json",
+        "visual/assets/brand-identity-audit.js"
+      ],
+      "formula": "applications whose anchor resolves to an existing package feature or template kind / 7 ; recompute: node visual/assets/brand-identity-audit.js --json",
+      "confidence": "low",
+      "assumptions": [
+        "All seven applications are template_only; anchors resolve inside this package but nothing is built, scheduled or commissioned."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "brand_identity_negative_fixture_fail_closed_total": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/brand-identity-system.json",
+        "visual/assets/brand-identity-audit.js"
+      ],
+      "formula": "count(BRAND-IDENTITY-01.negative_fixtures) verified by --self-test ; recompute: node visual/assets/brand-identity-audit.js --json",
+      "confidence": "low",
+      "assumptions": [
+        "Six in-memory mutations must each fail the audit; a passing mutation indicates audit drift, not brand quality."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "brand_identity_audit_case_total": {
+      "status": "known",
+      "value": 14,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/brand-identity-system.json",
+        "visual/assets/brand-identity-audit.js"
+      ],
+      "formula": "fixed audit check groups in brand-identity-audit.js ; recompute: node visual/assets/brand-identity-audit.js --json",
+      "confidence": "low",
+      "assumptions": [
+        "Check count is part of the audit contract; changing it requires updating this metric and the audit together."
+      ],
+      "metric_kind": "synthetic_contract_test"
+    },
+    "brand_identity_audit_case_passed": {
+      "status": "known",
+      "value": 14,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/brand-identity-system.json",
+        "visual/assets/brand-identity-audit.js"
+      ],
+      "formula": "check groups passing against the current register, assets, figures and metrics ; recompute: node visual/assets/brand-identity-audit.js --json",
+      "confidence": "low",
+      "assumptions": [
+        "Passing checks prove internal consistency of an original E2 identity specification, not adoption or recognition."
+      ],
+      "metric_kind": "synthetic_contract_test"
     }
   }
 }
