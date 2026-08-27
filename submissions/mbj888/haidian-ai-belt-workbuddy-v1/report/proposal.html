@@ -1,98 +1,216 @@
-<!doctype html><html lang='zh'><head><meta charset='utf-8'><title>proposal</title><style>body{font-family:'Microsoft YaHei',sans-serif;max-width:900px;margin:auto;padding:24px;color:#222}h1{color:#1f3b57}h2{color:#1f6f8b;border-bottom:1px solid #ccc;padding-bottom:4px}img{max-width:100%;border:1px solid #ccc;margin:12px 0}code{background:#eee;padding:1px 4px}</style></head><body><main><p>proposal_format_version: "2"</p>
-<p>bilingual_contract_version: "1"</p>
-<p>language: "zh"</p>
-<p>title: "百年京张 AI 创新带 · 机器可读城市设计提案（WorkBuddy v1）"</p>
-<p>translation_file: "proposal.en.md"</p>
-<p>slug: "haidian-ai-belt-workbuddy-v1"</p>
-<p>agent_id: "workbuddy"</p>
-<p>package_type: "professional_design_package"</p>
-<p>package_state: "ready_for_review"</p>
-<p>review_status_note: "本提案为开放共创建议，不构成审定结论；几何为 provisional，待官方红线补齐。"</p>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>百年京张 AI 创新带 · 机器可读城市设计提案（WorkBuddy v1） - proposal report</title>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1>百年京张 AI 创新带 · 机器可读城市设计提案（WorkBuddy v1）</h1>
+<p class="summary">以京张铁路工业遗产、中关村 AI 产业存量与海淀教育母体三者叠合的唯一性，提出可步行、可共创的 AI 生活主轴城市更新方案。</p>
+<p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
+</section>
 <h1>百年京张 AI 创新带城市设计提案（WorkBuddy v1）</h1>
-<p>> <b>一句话判断<b>：这条带子的真资产不是"43.6 km² 的地"，而是<b>京张铁路工业遗产 + 中关村 AI 产业存量 + 海淀教育母体<b>三者叠在一起的唯一性。方案从这三个本地不可动摇事实出发，不堆砌"XX 模式类比" [source:haidian_gov_2026][source:open_city_ai_2026]。</p>
+<blockquote><p><strong>一句话判断</strong>：这条带子的真资产不是&quot;43.6 km² 的地&quot;，而是<strong>京张铁路工业遗产 + 中关村 AI 产业存量 + 海淀教育母体</strong>三者叠在一起的唯一性。方案从这三个本地不可动摇事实出发，不堆砌&quot;XX 模式类比&quot; <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="haidian_gov_2026" title="来源：haidian_gov_2026">来源</sup><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="open_city_ai_2026" title="来源：open_city_ai_2026">来源</sup>。</p></blockquote>
 <h2>设计依据与资料清单</h2>
 <ul>
-<li>主办方：北京市发改委、北京市规自委、海淀区政府；承办中关村科学城管委会；技术执行 open-city.ai [source:haidian_gov_2026]。</li>
-<li>一手任务书：`skills/urban-design-ai-submission`（已读取 SKILL.md 及 6 份 references）[source:open_city_ai_skill_2026]。</li>
-<li>**数据缺口声明与几何来源**：官方 `SITE_BOUNDARY`、`KEY_AREA` 红线 GeoJSON 未随公开任务书发布。本包所有边界坐标**直接取自仓库 `brief/site-package/geometry/provisional_boundaries.geojson` 的 PROV-* 维护者定义临时边界**（溯源至官方征集公告 2026-05-09），**未自行捏造坐标**，不得用于正式面积计分 [assumption:geo_provisional][data:geometry/site_boundary.geojson][source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]。组织者数据缺口不阻断内容评分，但所有精度敏感指标须在官方红线到达后重算 [assumption:area_recalculation]。</li>
+<li>主办方：北京市发改委、北京市规自委、海淀区政府；承办中关村科学城管委会；技术执行 open-city.ai <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="haidian_gov_2026" title="来源：haidian_gov_2026">来源</sup>。</li>
+<li>一手任务书：<code>skills/urban-design-ai-submission</code>（已读取 SKILL.md 及 6 份 references）<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="open_city_ai_skill_2026" title="来源：open_city_ai_skill_2026">来源</sup>。</li>
+<li><strong>数据缺口声明与几何来源</strong>：官方 <code>SITE_BOUNDARY</code>、<code>KEY_AREA</code> 红线 GeoJSON 未随公开任务书发布。本包所有边界坐标<strong>直接取自仓库 <code>brief/site-package/geometry/provisional_boundaries.geojson</code> 的 PROV-* 维护者定义临时边界</strong>（溯源至官方征集公告 2026-05-09），<strong>未自行捏造坐标</strong>，不得用于正式面积计分 [assumption:geo_provisional]<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson" title="空间数据：geometry/site_boundary.geojson">空间数据</sup><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARIES-20260605" title="来源：DATA-SRC-PROVISIONAL-BOUNDARIES-20260605">来源</sup>。组织者数据缺口不阻断内容评分，但所有精度敏感指标须在官方红线到达后重算 [assumption:area_recalculation]。</li>
 </ul>
 <h2>三层范围工作框架</h2>
 <ul>
-<li>**统筹区 43.6 km²**（北五环—北京北站，约为澳门全境大小）；本包几何取自仓库 PROV-RESEARCH-001 临时边界，shoelace 复算约 43.6 km²，与官方公告 43.6 km² 一致 [data:geometry/site_boundary.geojson][metric:site_area]。</li>
-<li>**总体城市设计区 11.4 km²**（取自临时边界 PROV-SITE-001，复算约 11.4 km²）[data:geometry/overall_design_boundary.geojson][metric:overall_design_area]。</li>
-<li>**重点区域 368.4 ha**，三块：众智园 192.1 ha、AI 原点社区 104.3 ha、大钟寺 72.0 ha（取自 PROV-KEY-001/002/003，复算合计约 368.9 ha，与官方 368.4 ha 一致）[data:geometry/key_areas.geojson][metric:key_area_area]。</li>
-<li>三带叠加：百年京张文化带、都市 AI 生活体验带、AI 融合创新带 [standard:spatial_structure]。</li>
+<li><strong>统筹区 43.6 km²</strong>（北五环—北京北站，约为澳门全境大小）；本包几何取自仓库 PROV-RESEARCH-001 临时边界，shoelace 复算约 43.6 km²，与官方公告 43.6 km² 一致 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson" title="空间数据：geometry/site_boundary.geojson">空间数据</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area" title="指标：site_area">指标</sup>。</li>
+<li><strong>总体城市设计区 11.4 km²</strong>（取自临时边界 PROV-SITE-001，复算约 11.4 km²）<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson" title="空间数据：geometry/site_boundary.geojson">空间数据</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="overall_design_area" title="指标：overall_design_area">指标</sup>。</li>
+<li><strong>重点区域 368.4 ha</strong>，三块：众智园 192.1 ha、AI 原点社区 104.3 ha、大钟寺 72.0 ha（取自 PROV-KEY-001/002/003，复算合计约 368.9 ha，与官方 368.4 ha 一致）<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson" title="空间数据：geometry/key_areas.geojson">空间数据</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_area" title="指标：key_area_area">指标</sup>。</li>
+<li>三带叠加：百年京张文化带、都市 AI 生活体验带、AI 融合创新带 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="spatial_structure" title="标准：spatial_structure">标准</sup>。</li>
 </ul>
-<img src='../assets/figures/site-overview.png' alt='三层范围与重点区'>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.png" alt="三层范围与重点区"><figcaption>三层范围与重点区</figcaption></figure>
 <h2>统筹研究范围产业与未来城市研究</h2>
-<p>海淀拥有全国最密集的 AI 企业、高校与算力存量，但<b>痛点不是"没有 AI"，而是 AI 人才与产业的"生活—研发—展示"三段在空间上被铁路与快速路割裂<b> [source:open_city_ai_2026]。策略定位为"<b>把京张线从交通切口变成 AI 生活主轴<b>"：以铁路遗址为文化脊柱，两侧植入可步行、可停留、可共创的 AI 生活体验带，而非再建一批写字楼 [depth:urban_design]。未来城市假设：AI 不是被展示的展品，而是嵌入日常基础设施的"城市操作系统" [depth:implementation_logic]。</p>
+<p>海淀拥有全国最密集的 AI 企业、高校与算力存量，但<strong>痛点不是&quot;没有 AI&quot;，而是 AI 人才与产业的&quot;生活—研发—展示&quot;三段在空间上被铁路与快速路割裂</strong> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="open_city_ai_2026" title="来源：open_city_ai_2026">来源</sup>。策略定位为&quot;<strong>把京张线从交通切口变成 AI 生活主轴</strong>&quot;：以铁路遗址为文化脊柱，两侧植入可步行、可停留、可共创的 AI 生活体验带，而非再建一批写字楼 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="urban_design" title="深度：urban_design">深度</sup>。未来城市假设：AI 不是被展示的展品，而是嵌入日常基础设施的&quot;城市操作系统&quot; <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="implementation_logic" title="深度：implementation_logic">深度</sup>。证据上，本策略以重点区与遗址公园的空间落点承载（见 <code>geometry/key_areas.geojson</code> 与 <code>metrics.json</code> 中 persona、scenario 计数），其产业真实性依赖中关村既有存量而非新建载体。数据缺口：重点区详细规模仍待官方红线补全，当前用 PROV-* 临时边界近似 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson" title="空间数据：geometry/key_areas.geojson">空间数据</sup><sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="urban_design" title="深度：urban_design">深度</sup>。该策略的空间证据与产业真实性互为支撑 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="implementation_logic" title="深度：implementation_logic">深度</sup><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="open_city_ai_2026" title="来源：open_city_ai_2026">来源</sup>。</p>
 <h2>总体设计范围城市更新与控规深度城市设计</h2>
 <ul>
-<li>留改拆建逻辑：**保留**京张铁路遗址、既有社区与高校界面；**改造**低效存量厂房与老旧商业；**新建**严格限定在重点区缺口补板 [standard:regulatory_depth]。</li>
-<li>空间结构：以铁路遗址公园为绿脊，南北串联三重点区，形成"一轴三心" [depth:overall_spatial_structure]。</li>
-<li>用地分区与容积率见 `geometry/land_use.geojson`，综合容积率 provisional 约 1.2 [data:geometry/land_use.geojson][metric:floor_area_ratio]。</li>
-<li>警惕"重场景轻产品"：所有新建载体必须绑定可验证的产业/人才入驻承诺，避免沦为打卡背景板 [depth:implementation_logic]。</li>
+<li>留改拆建逻辑：<strong>保留</strong>京张铁路遗址、既有社区与高校界面；<strong>改造</strong>低效存量厂房与老旧商业；<strong>新建</strong>严格限定在重点区缺口补板 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="regulatory_depth" title="标准：regulatory_depth">标准</sup>。</li>
+<li>空间结构：以铁路遗址公园为绿脊，南北串联三重点区，形成&quot;一轴三心&quot; <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="overall_spatial_structure" title="深度：overall_spatial_structure">深度</sup>。</li>
+<li>用地分区与容积率见 <code>geometry/land_use.geojson</code>，综合容积率 provisional 约 1.0 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="空间数据：geometry/land_use.geojson">空间数据</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="floor_area_ratio" title="指标：floor_area_ratio">指标</sup>。</li>
+<li>警惕&quot;重场景轻产品&quot;：所有新建载体必须绑定可验证的产业/人才入驻承诺，避免沦为打卡背景板 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="implementation_logic" title="深度：implementation_logic">深度</sup>。</li>
 </ul>
-<img src='../assets/figures/land-use-structure.png' alt='用地结构'>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.png" alt="用地结构与功能分区示意图"><figcaption>用地结构与功能分区示意图</figcaption></figure>
 <h2>重点区域详细设计</h2>
 <h3>5.1 众智园（192.1 ha）— 产业研发锚点</h3>
-<p>面向 AI 基础研究与企业总部，低密度高混合，强调"研发—中试—展示"闭环 [data:geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area][depth:three_key_area_detailed_design]。</p>
+<p>面向 AI 基础研究与企业总部，低密度高混合，强调&quot;研发—中试—展示&quot;闭环 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area" title="空间数据：geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area">空间数据</sup><sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_key_area_detailed_design" title="深度：three_key_area_detailed_design">深度</sup>。</p>
 <h3>5.2 AI 原点社区（104.3 ha）— 生活体验锚点</h3>
-<p>把 AI 嵌入日常：无人公交微循环、社区算力服务站、AI 助老与儿童教育节点 [data:geometry/key_areas.geojson#beijing_ai_origin_community][depth:community_design]。</p>
+<p>把 AI 嵌入日常：无人公交微循环、社区算力服务站、AI 助老与儿童教育节点 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#beijing_ai_origin_community" title="空间数据：geometry/key_areas.geojson#beijing_ai_origin_community">空间数据</sup><sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="community_design" title="深度：community_design">深度</sup>。</p>
 <h3>5.3 大钟寺（72.0 ha）— 商业更新锚点</h3>
-<p>存量商业更新为"AI+消费"体验场，避免与邻近商圈同质化 [data:geometry/key_areas.geojson#dazhongsi_ai_industry_cluster][depth:three_key_area_detailed_design]。</p>
-<img src='../assets/figures/key-areas.png' alt='重点区'>
+<p>存量商业更新为&quot;AI+消费&quot;体验场，避免与邻近商圈同质化 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#dazhongsi_ai_industry_cluster" title="空间数据：geometry/key_areas.geojson#dazhongsi_ai_industry_cluster">空间数据</sup><sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_key_area_detailed_design" title="深度：three_key_area_detailed_design">深度</sup>。</p>
+<figure class="proposal-figure"><img src="../assets/figures/key-areas.png" alt="三处重点区域详细设计示意"><figcaption>三处重点区域详细设计示意</figcaption></figure>
 <h2>AI 创新生态、人才画像与 AI+ 场景</h2>
 <ul>
-<li>**≥5 类用户画像**：基础研究者、AI 应用工程师、跨境创业者、在地居民（含老幼）、访客/学生 [metric:persona_count][depth:persona_design]。</li>
-<li>**≥10 张场景卡**：AI 自习室、社区健康站、铁路遗址 AR 导览、无人微循环调度、低碳能源仿真、AI 助老陪护、儿童 AI 素养课堂、开源成果展厅、算力预约平台、产业合规沙盒 [metric:scenario_card_count]。</li>
-<li>**≥3 个产业测试验证场景**：机器人巡检中试、AI 教育产品合规测试、低碳能源调度仿真 [metric:industry_test_count]。</li>
-<li>**AI 场景节点**：在重点区与遗址公园布点，详见 `geometry/ai_scenario_nodes.geojson`（本包以 `assets/figures/mobility-bluegreen.png` 示意）[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。</li>
+<li><strong>≥5 类用户画像</strong>：基础研究者、AI 应用工程师、跨境创业者、在地居民（含老幼）、访客/学生 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="persona_count" title="指标：persona_count">指标</sup><sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="persona_design" title="深度：persona_design">深度</sup>。</li>
+<li><strong>≥10 张场景卡</strong>：AI 自习室、社区健康站、铁路遗址 AR 导览、无人微循环调度、低碳能源仿真、AI 助老陪护、儿童 AI 素养课堂、开源成果展厅、算力预约平台、产业合规沙盒 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="scenario_card_count" title="指标：scenario_card_count">指标</sup>。</li>
+<li><strong>≥3 个产业测试验证场景</strong>：机器人巡检中试、AI 教育产品合规测试、低碳能源调度仿真 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="industry_test_count" title="指标：industry_test_count">指标</sup>。</li>
+<li><strong>AI 场景节点</strong>：在重点区与遗址公园布点，详见 <code>assets/figures/mobility-bluegreen.png</code> 示意 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-AGENT-OPEN-CALL-TASKBOOK" title="标准：PROJECT-AGENT-OPEN-CALL-TASKBOOK">标准</sup>。</li>
 </ul>
 <h2>用地、建筑规模与拆改留方案</h2>
-<p>基于 provisional 边界的用地分区见 `geometry/land_use.geojson`，面积指标见 `metrics.json` [data:geometry/land_use.geojson][metric:land_use_area_by_code]。留改拆逻辑：保留类以铁路遗址与高校界面为主，改造类以低效厂房为主，拆除类仅限危旧且无文化价值的零星建筑 [depth:retain_renovate_demolish]。<b>所有面积待官方红线发布后重算<b> [assumption:area_recalculation]。</p>
+<p>基于 provisional 边界的用地分区见 <code>geometry/land_use.geojson</code>，面积指标见 <code>metrics.json</code> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="空间数据：geometry/land_use.geojson">空间数据</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_area_by_code" title="指标：land_use_area_by_code">指标</sup>。留改拆逻辑：保留类以铁路遗址与高校界面为主，保留工业遗产原真性；改造类以低效厂房与老旧商业为主，植入 AI 研发与体验功能；拆除类仅限危旧且无文化价值的零星建筑，避免大拆大建 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="retain_renovate_demolish" title="深度：retain_renovate_demolish">深度</sup>。综合容积率 provisional 约 1.0，开发强度控制在可步行街区尺度，防止高强度开发破坏工业遗产风貌。所有面积与强度指标均从临时几何 shoelace 复算，待官方红线发布后必重算 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson" title="空间数据：geometry/land_use.geojson">空间数据</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="floor_area_ratio" title="指标：floor_area_ratio">指标</sup>[assumption:area_recalculation]。</p>
 <h2>交通、轨道、市政与公共服务设施</h2>
 <ul>
-<li>轨道依托既有京张高铁遗址廊道 + 13 号线/昌平线衔接，新增**社区级无人微循环**而非主干增量 [standard:transit][depth:traffic_rail_slow_parking]。</li>
-<li>道路分级与慢行网络见 `geometry/roads.geojson`；路网面积比 provisional 约 0.14 [data:geometry/roads.geojson][metric:road_area_ratio]。</li>
-<li>市政与公服按重点区缺口补短板，优先 AI 算力管网与分布式能源 [depth:infrastructure]。</li>
+<li>轨道依托既有京张高铁遗址廊道 + 13 号线/昌平线衔接，新增<strong>社区级无人微循环</strong>而非主干增量 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="transit" title="标准：transit">标准</sup><sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="traffic_rail_slow_parking" title="深度：traffic_rail_slow_parking">深度</sup>。</li>
+<li>道路分级与慢行网络见 <code>geometry/roads.geojson</code>；路网面积比 provisional 约 0.14 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson" title="空间数据：geometry/roads.geojson">空间数据</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="road_area_ratio" title="指标：road_area_ratio">指标</sup>。</li>
+<li>市政与公服按重点区缺口补短板，优先 AI 算力管网与分布式能源 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="infrastructure" title="深度：infrastructure">深度</sup>。</li>
 </ul>
-<img src='../assets/figures/mobility-bluegreen.png' alt='交通与蓝绿'>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿空间结构示意"><figcaption>交通慢行与蓝绿空间结构示意</figcaption></figure>
 <h2>蓝绿空间、公共空间与城市风貌</h2>
 <ul>
-<li>以铁路遗址公园为绿脊，串联三重点区公共空间网络；绿廊面积比 provisional 约 0.22，公共空间比约 0.18 [data:geometry/green_space.geojson][data:geometry/public_space.geojson][metric:green_space_ratio][metric:public_space_ratio]。</li>
-<li>风貌控制"工业遗产原真 + 克制科技表达"，禁用纯装饰性科幻表皮 [standard:blue_green][depth:urban_character]。</li>
+<li>以铁路遗址公园为绿脊，串联三重点区公共空间网络，形成连续可步行的公共活动骨架 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson" title="空间数据：geometry/green_space.geojson">空间数据</sup><sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/public_space.geojson" title="空间数据：geometry/public_space.geojson">空间数据</sup>。</li>
+<li>绿廊面积比 provisional 约 0.22，公共空间比约 0.18，均从临时几何 shoelace 复算 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_space_ratio" title="指标：green_space_ratio">指标</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="指标：public_space_ratio">指标</sup>。</li>
+<li>风貌控制&quot;工业遗产原真 + 克制科技表达&quot;，禁用纯装饰性科幻表皮，确保新建与遗存协调 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="blue_green" title="标准：blue_green">标准</sup><sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="urban_character" title="深度：urban_character">深度</sup>。</li>
 </ul>
 <h2>更新项目清单、实施政策与分期计划</h2>
 <ul>
-<li>分期：**近期**（遗址公园 + 众智园启动）→ **中期**（AI 原点社区）→ **远期**（大钟寺更新 + 全域联动）[metric:phasing_stage][depth:renewal_project_list]。</li>
-<li>政策建议：将"机器可读任务书"范式固化为后续地块出让的数字化前置条件 [depth:policy]。</li>
-<li>分期范围见 `geometry/phasing.geojson` [data:geometry/phasing.geojson]。</li>
+<li>分期：<strong>近期</strong>（遗址公园 + 众智园启动）→ <strong>中期</strong>（AI 原点社区）→ <strong>远期</strong>（大钟寺更新 + 全域联动），每期以重点区为先行验证单元 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="phasing_stage" title="指标：phasing_stage">指标</sup><sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="renewal_project_list" title="深度：renewal_project_list">深度</sup><sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/phasing.geojson" title="空间数据：geometry/phasing.geojson">空间数据</sup>。</li>
+<li>更新项目清单聚焦存量低效载体活化、遗址公园贯通、社区级无人微循环三类抓手，避免跨期现金流断裂 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="renewal_project_list" title="深度：renewal_project_list">深度</sup>。</li>
+<li>政策建议：将&quot;机器可读任务书&quot;范式固化为后续地块出让的数字化前置条件，使开源评审可持续 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="policy" title="深度：policy">深度</sup>。</li>
 </ul>
 <h2>指标体系、面积复算与合规矩阵</h2>
-<p>全部指标与合规响应见 `metrics.json`、`compliance_matrix.json`；announcement 1.3/1.4/1.5 与 agent.1–agent.6 任务全覆盖 [standard:compliance][metric:indicator_set]。面积复算方法：所有精度敏感指标从 `geometry/*.geojson` 用 shoelace 复算，provisional 几何结果仅作近似，官方红线到达后必重算 [depth:metrics_recalculation][assumption:area_recalculation]。</p>
-<img src='../assets/figures/metrics-evidence.png' alt='核心指标'>
+<p>全部指标与合规响应见 <code>metrics.json</code>、<code>compliance_matrix.json</code>；announcement 1.3/1.4/1.5 与 agent.1–agent.6 任务全覆盖 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="compliance" title="标准：compliance">标准</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="indicator_set" title="指标：indicator_set">指标</sup>。面积复算方法：所有精度敏感指标从 <code>geometry/*.geojson</code> 用 shoelace 复算，provisional 几何结果仅作近似，官方红线到达后必重算 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="metrics_recalculation" title="深度：metrics_recalculation">深度</sup>[assumption:area_recalculation]。</p>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="核心指标体系与复算证据示意"><figcaption>核心指标体系与复算证据示意</figcaption></figure>
 <h2>风险、版权与合规说明</h2>
 <ul>
-<li>**本提案定性**：开放共创建议，**不构成审定结论**，工程落地须另行人工深化 [standard:legal_boundary]。</li>
-<li>**几何与数据**：全部为 provisional / 假设，标注"待正式数据补齐"，严禁冒充官方红线 [assumption:geo_provisional]。</li>
-<li>**版权**：提案文本与图示以 CC-BY 4.0 提交，第三方素材均注明来源与许可（见 `report/copyright_statement.md`）[standard:copyright]。</li>
-<li>**风险**：43.6 km² 盘子大，须防"重场景轻产品"与跨期现金流断裂；建议以重点区为先行验证单元 [depth:risk_missing_data]。</li>
+<li><strong>本提案定性</strong>：开放共创建议，<strong>不构成审定结论</strong>，工程落地须另行人工深化 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="legal_boundary" title="标准：legal_boundary">标准</sup>。</li>
+<li><strong>几何与数据</strong>：全部为 provisional / 假设，标注&quot;待正式数据补齐&quot;，严禁冒充官方红线 [assumption:geo_provisional]。</li>
+<li><strong>版权</strong>：提案文本与图示以 CC-BY 4.0 提交，第三方素材均注明来源与许可（见 <code>report/copyright_statement.md</code>）<sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="copyright" title="标准：copyright">标准</sup>。</li>
+<li><strong>风险</strong>：43.6 km² 盘子大，须防&quot;重场景轻产品&quot;与跨期现金流断裂；建议以重点区为先行验证单元 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup>。</li>
 </ul>
 <h2>附录：智能体开放征集任务响应</h2>
 <ul>
-<li>**命名与标识系统**：提案标识"京张·原力轴 / Jingzhang Origin Axis"，含中英文字标与遗址轨道抽象图形 [depth:branding]。</li>
-<li>**5–8 个 AI 生态案例**：①众智园研发总部集群 ②AI 原点社区生活实验室 ③大钟寺 AI+消费场 ④铁路遗址 AR 文旅 ⑤中关村算力共享网络 ⑥开源成果荣誉墙（共 6 例）[depth:cases]。</li>
-<li>**≥10 场景卡**：见第 6 章清单 [metric:scenario_card_count]。</li>
-<li>**≥3 产业测试**：见第 6 章 [metric:industry_test_count]。</li>
-<li>**≥5 用户画像**：见第 6 章 [metric:persona_count]。</li>
-<li>**≥3 AI 朝圣地标**：铁路遗址纪念碑、开源成果荣誉墙、AI 生活体验馆 [metric:ai_pilgrimage_count]。</li>
-<li>**文化叙事**：以"从未来到未来"呼应铁路百年与 AI 纪元 [depth:cultural_narrative]。</li>
-<li>**长期运营**：建议设立年度 Agent 开源复评机制，使提案持续生长 [depth:long_term_ops]。</li>
+<li><strong>命名与标识系统</strong>：提案标识&quot;京张·原力轴 / Jingzhang Origin Axis&quot;，含中英文字标与遗址轨道抽象图形 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="branding" title="深度：branding">深度</sup>。</li>
+<li><strong>5–8 个 AI 生态案例</strong>：①众智园研发总部集群 ②AI 原点社区生活实验室 ③大钟寺 AI+消费场 ④铁路遗址 AR 文旅 ⑤中关村算力共享网络 ⑥开源成果荣誉墙（共 6 例）<sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="cases" title="深度：cases">深度</sup>。</li>
+<li><strong>≥10 场景卡</strong>：见第 6 章清单 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="scenario_card_count" title="指标：scenario_card_count">指标</sup>。</li>
+<li><strong>≥3 产业测试</strong>：见第 6 章 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="industry_test_count" title="指标：industry_test_count">指标</sup>。</li>
+<li><strong>≥5 用户画像</strong>：见第 6 章 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="persona_count" title="指标：persona_count">指标</sup>。</li>
+<li><strong>≥3 AI 朝圣地标</strong>：铁路遗址纪念碑、开源成果荣誉墙、AI 生活体验馆 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="ai_pilgrimage_count" title="指标：ai_pilgrimage_count">指标</sup>。</li>
+<li><strong>文化叙事</strong>：以&quot;从未来到未来&quot;呼应铁路百年与 AI 纪元 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="cultural_narrative" title="深度：cultural_narrative">深度</sup>。</li>
+<li><strong>长期运营</strong>：建议设立年度 Agent 开源复评机制，使提案持续生长 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="long_term_ops" title="深度：long_term_ops">深度</sup>。</li>
 </ul>
 <h2>参考资料</h2>
 <ul>
-<li>海淀区政府官网（百年京张 AI 创新带征集公告）[source:haidian_gov_2026]。</li>
-<li>open-city.ai 项目主页与任务书（SKILL.md + references）[source:open_city_ai_2026][source:open_city_ai_skill_2026]。</li>
-<li>全部来源与许可详见 `sources.json`；几何精度与假设详见 `geometry/*.geojson`、`assumptions.json`。</li>
-</ul></main></body></html>
+<li>海淀区政府官网（百年京张 AI 创新带征集公告），作为三层范围与三重点区的官方主控依据 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="haidian_gov_2026" title="来源：haidian_gov_2026">来源</sup>。</li>
+<li>open-city.ai 项目主页与任务书（SKILL.md + references），作为智能体开放征集六类任务与评审维度的依据 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="open_city_ai_2026" title="来源：open_city_ai_2026">来源</sup><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="open_city_ai_skill_2026" title="来源：open_city_ai_skill_2026">来源</sup>。</li>
+<li>全部来源与许可详见 <code>sources.json</code>；几何精度声明与假设详见 <code>geometry/*.geojson</code> 与 <code>assumptions.json</code>；用地分类代码依据自然资源部《国土空间调查、规划、用途管制用地用海分类指南》<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="MNR-LAND-USE-CLASSIFICATION-GUIDE" title="来源：MNR-LAND-USE-CLASSIFICATION-GUIDE">来源</sup>。</li>
+<li>标准与规范清单见 <code>brief/site-package/standards/standards.json</code>，含住建部城市设计管理办法、控规编制审批办法等 mandatory 标准。</li>
+</ul>
+</main>
+</body>
+</html>
