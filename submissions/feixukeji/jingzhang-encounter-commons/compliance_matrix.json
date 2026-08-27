@@ -365,6 +365,9 @@
       ],
       "metrics": [
         "ecosystem_element_count",
+        "ai_innovation_index",
+        "ai_talent_density",
+        "ai_industry_output_cny",
         "building_footprint_area_sqm"
       ],
       "drawings": [
@@ -387,13 +390,14 @@
       ],
       "assumption_ids": [
         "A-SITE-VERIFY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-DATA-001"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE",
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "四类功能研究覆盖层见正文、assets/figures/land-use-structure.png与geometry/land_use.geojson；LU-003采用最新版09（商业服务业），05仅表示湿地。BLDG-COMMON-001等候选包络见geometry/buildings.geojson；均不冒充现状、权属或法定用地。"
+      "evidence_summary_zh": "四类功能研究覆盖层见正文、assets/figures/land-use-structure.png与geometry/land_use.geojson；LU-003采用最新版09（商业服务业），05仅表示湿地。BLDG-COMMON-001等候选包络见geometry/buildings.geojson，均不冒充现状、权属或法定用地。正文将1+X+1、高校院所、孵化平台、独角兽/上市企业、AI+垂直产业、科技/生活服务接口和功能比例逐项映射为待核验资源、场景与比例触发条件。公告要求的AI创新指数、人才密度和产值规模已在正文与metrics.json登记为unknown，并逐项给出公式、原因、数据需求和计算/复算触发条件。"
     },
     {
       "requirement_id": "1.5.2.2",
@@ -610,7 +614,7 @@
         "PROFESSIONAL_EVIDENCE",
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "三处必选重点区均有入口—阈值—核心—停止/退出的独立平剖原型、首项证据和专业移交；见A3 P09–A3 P12及A0 B05。"
+      "evidence_summary_zh": "三处必选重点区均有入口—阈值—核心—停止/退出的独立平剖原型；正文另逐区登记公告任务对应的概念策略、待补证据和深化触发条件。没有官方polygon、权属、现状与专业调查时不作地块落位、开发规模或拆改留结论；现有原型见A3 P09–A3 P12及A0 B05。"
     },
     {
       "requirement_id": "1.5.3.1",
@@ -652,7 +656,7 @@
         "PROFESSIONAL_EVIDENCE",
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "众智园原型在PROV-KEY-001中表达公开门厅、规则阈值、受控测试、人工急停与失败档案；S01及A3 P10给出输入、证据与停止。"
+      "evidence_summary_zh": "众智园以不绑定坐标的花园型创新街区策略回应全栈自主技术、标准与安全治理、产业展示、建筑—绿地—水系、清河文化、低碳交往和对外交通；正文列明官方polygon、项目/权属/建筑、平台授权及交通生态资料等缺口，并规定资料与多专业踏勘齐备后方可深化。PROV-KEY-001、S01及A3 P10只表达可迁移的受控测试原型。"
     },
     {
       "requirement_id": "1.5.3.2",
@@ -695,7 +699,7 @@
         "PROFESSIONAL_EVIDENCE",
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "AI原点原型在PROV-KEY-002中表达无障碍缓冲、开放共桌、多语服务与明示退出；P02十工作日开场包与90天基线见A3 P11、A3 P15。"
+      "evidence_summary_zh": "AI原点以不绑定坐标的近校型街区策略回应原始创新、人才特区、开源协作、孵化转化、品牌活动、成果发布、生活配套、校区园区慢行、轨道接驳和低扰动更新；正文列明官方polygon、授权资源、权属建筑、服务缺口及交通调查等证据与深化触发条件。PROV-KEY-002、P02和A3 P11/A3 P15只表达开放共桌及90天候选试点。"
     },
     {
       "requirement_id": "1.5.3.3",
@@ -734,7 +738,7 @@
         "PROFESSIONAL_EVIDENCE",
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "大钟寺内容仅为可迁移的首用/反馈/安静退出原型；PROV-KEY-003标注非站点锚定，未据其作站口路径或站城判断。"
+      "evidence_summary_zh": "大钟寺以不绑定坐标的城市型街区策略回应智能体、智能终端、内容消费与AI+新业态、合规数据/数字资产服务、商业环境、复合绿地、国际交往和静态交通。正文明确需补官方polygon、真实地块/企业/高校授权资料及站口客流、四象限过街、非机动车等调查；仅当官方范围与车站关系成立且多项资料齐备后才深化。PROV-KEY-003仍标注非站点锚定，不据其作空间判断。"
     },
     {
       "requirement_id": "agent.1",
@@ -779,7 +783,7 @@
         "PROFESSIONAL_EVIDENCE",
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "项目承诺与品牌见A3 P01，FLOW-A/B/C三段体验及其PROV-KEY映射见A3 P03，三层范围与一线三原型见A3 P05–A3 P06，A0 B01统一呈现人物、体验与证据；标识源文件为encounter-commons-logo.svg。"
+      "evidence_summary_zh": "正文逐字回应三大定位（百年京张文化带、都市AI生活体验带、AI融合创新带）和五大功能，并把AI原点、众智园、大钟寺、中关村科技服务翼、小月河场景赋能翼组织成“问题—服务—孵化—验证治理—首用反馈—归档”的可退出协同回路；明确该回路不代表机构参与或招商政策承诺。品牌见A3 P01，总体结构见A3 P05–A3 P06/A0 B01。"
     },
     {
       "requirement_id": "agent.2",
@@ -794,6 +798,9 @@
       ],
       "metrics": [
         "ecosystem_element_count",
+        "ai_innovation_index",
+        "ai_talent_density",
+        "ai_industry_output_cny",
         "industry_test_count"
       ],
       "drawings": [
@@ -821,7 +828,7 @@
         "PROFESSIONAL_EVIDENCE",
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "六个全球一手机制案例支撑八要素生态；S01–S03用合成/公开输入、版本、证据JSON、硬停止和回滚形成产业测试协议。"
+      "evidence_summary_zh": "六个全球一手机制案例支撑八要素生态；独立ecosystem_map输出见assets/figures/ecosystem-map.png及ecosystem-map.en.png，明确八类资源、三区两翼和“公共问题—人工准入—匹配—验证—公开产出—采用/修正/归档”回路。S01–S03用合成/公开输入、版本、证据JSON、硬停止和回滚形成产业测试协议。"
     },
     {
       "requirement_id": "agent.3",
@@ -988,7 +995,7 @@
         "PROFESSIONAL_EVIDENCE",
         "DETERMINISTIC_VALIDATION"
       ],
-      "evidence_summary_zh": "月/季/年活动节奏与P01–P10由三份合同、五闸门、八工件和采用/修正/退役状态承接；见A3 P15、A0 B07。"
+      "evidence_summary_zh": "月/季/年活动节奏与P01–P10由三份合同、五闸门、八工件和采用/修正/退役状态承接。正文新增开发者社区的公开问题单、版本化入门包、开放答疑、维护者复核与行为准则；国际传播采用经人工复核的双语证据包；人才/开发者/企业按“开放诊所—沙箱—独立复核—服务或候选空间转介—有限试点—采用/修正/归档”自愿转化，不承诺空间、采购、资金或政策。"
     }
   ]
 }
