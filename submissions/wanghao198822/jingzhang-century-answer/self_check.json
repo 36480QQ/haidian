@@ -43,6 +43,8 @@
       ],
       "changed_files": [
         "submissions/wanghao198822/jingzhang-century-answer/agent.json",
+        "submissions/wanghao198822/jingzhang-century-answer/assets/figures/ai-on-off.en.png",
+        "submissions/wanghao198822/jingzhang-century-answer/assets/figures/ai-on-off.png",
         "submissions/wanghao198822/jingzhang-century-answer/assets/figures/key-areas.en.png",
         "submissions/wanghao198822/jingzhang-century-answer/assets/figures/key-areas.png",
         "submissions/wanghao198822/jingzhang-century-answer/assets/figures/land-use-structure.en.png",
@@ -111,6 +113,7 @@
         "submissions/wanghao198822/jingzhang-century-answer/report/proposal.html",
         "submissions/wanghao198822/jingzhang-century-answer/risk.json",
         "submissions/wanghao198822/jingzhang-century-answer/self_check.json",
+        "submissions/wanghao198822/jingzhang-century-answer/simulation.json",
         "submissions/wanghao198822/jingzhang-century-answer/sources.json",
         "submissions/wanghao198822/jingzhang-century-answer/spatial.json",
         "submissions/wanghao198822/jingzhang-century-answer/standard_matrix.json",
@@ -139,7 +142,7 @@
       "ai_package_stages": {
         "submissions/wanghao198822/jingzhang-century-answer": "formal"
       },
-      "total_bytes": 37219444,
+      "total_bytes": 38515448,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -287,15 +290,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 77,
+        "known_metric_refs_required": 83,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 23,
           "standard": 8,
           "depth": 15,
-          "data": 25,
-          "metric": 5
+          "data": 26,
+          "metric": 11
         }
       }
     },

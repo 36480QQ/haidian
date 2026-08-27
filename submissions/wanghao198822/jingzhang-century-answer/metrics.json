@@ -1227,6 +1227,84 @@
         "Registering one public cost-index source would let the existing quantity base be developed straight into an itemised estimate."
       ],
       "reason": "The quantity base is complete, but no public construction cost index is registered in sources.json, so no unit price and no amount can be stated."
+    },
+    "simulation_task_count": {
+      "status": "known",
+      "value": 16,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "len(tasks)",
+      "confidence": "medium",
+      "assumptions": [
+        "离线合成演练读数，非现场实测；不构成效果承诺。"
+      ]
+    },
+    "simulation_success_rate": {
+      "status": "known",
+      "value": 0.6875,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks[outcome=='success' or endswith('_success')]) / len(tasks)",
+      "confidence": "medium",
+      "assumptions": [
+        "离线合成演练读数，成功仅按 outcome 等于 success 或以 _success 结尾判定；非现场实测，不构成效果承诺。"
+      ]
+    },
+    "tool_schema_pass_rate": {
+      "status": "known",
+      "value": 0.9375,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks[dispatch_schema_valid==true]) / len(tasks)",
+      "confidence": "medium",
+      "assumptions": [
+        "离线合成演练读数，仅反映派单结构校验结果；非现场实测，不构成效果承诺。"
+      ]
+    },
+    "energy_budget_violations": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks[energy_used_kwh > energy_budget_kwh])",
+      "confidence": "medium",
+      "assumptions": [
+        "离线合成演练读数，能耗为固定 seed 在人工声明区间内生成；非现场实测，不构成效果承诺。"
+      ]
+    },
+    "audit_completeness": {
+      "status": "known",
+      "value": 0.9375,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(tasks[audit_complete==true]) / len(tasks)",
+      "confidence": "medium",
+      "assumptions": [
+        "离线合成演练读数，仅按任务记录中的 audit_complete 字段统计；非现场实测，不构成效果承诺。"
+      ]
+    },
+    "replan_p95_seconds": {
+      "status": "known",
+      "value": 12.4,
+      "unit": "s",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "nearest_rank(sort(tasks[].replan_seconds), ceil(0.95 * len(tasks)))",
+      "confidence": "medium",
+      "assumptions": [
+        "离线合成演练读数，重规划耗时为固定 seed 在人工声明区间内生成；按全部 16 条任务取 nearest-rank P95，非现场实测，不构成效果承诺。"
+      ]
     }
   }
 }
