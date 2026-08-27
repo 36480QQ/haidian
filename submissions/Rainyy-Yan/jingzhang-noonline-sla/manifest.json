@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "eb5398c56b0a95d0e730122febcfd920a5376e99f5a55e0399456bdeb96e97ae"
+      "sha256": "56b128f89f13e2f4b57ec1c44b1cac89172bb382ef7cbf1a3b8ea0d1266fce90"
     },
     {
       "path": "compliance_matrix.json",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "56a44029f1c528cc8f8bcc63a415b49e349b05497fbccff0e58b1ec988015595"
+      "sha256": "40076f17a700a810fd06381d27a0eb7f972397108fac61b72ba849fb2754dc09"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "54772a5a9793d4e4c1241be65e9e02a6c8f3f29535bbf75cb2d5b52ef20f1f62"
+      "sha256": "d57a857affa571127b7cdbc9491fbe8240bbd85f3358e9f33e7cc4f12173573c"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -332,7 +332,7 @@
       "role": "changelog",
       "required": true,
       "language": "neutral",
-      "sha256": "ef3d47a806b09dda1f13392105670ca0f662ab7fed11ca157369d219b1d151bc"
+      "sha256": "15f956294576592cefdb7388f22f138300e08bb704d5e39a205a181e9b37b8d5"
     },
     {
       "path": "visual/assets/sla-engine-diagram.svg",
@@ -714,7 +714,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "3a3d4bb55898ec361e8fdbeac9a9394e7c50447b26c91fe4016490ac20e55a7b"
+      "sha256": "fde7a851c30690a85d986a23feaed56f704fc7e939f058a963b9c9afa144ceb3"
     },
     {
       "path": "visual/assets/v4_2-agent2-eight-element-mechanism-matrix.json",
@@ -743,6 +743,13 @@
       "required": true,
       "language": "neutral",
       "sha256": "97cf4c83ad37b4b44328b83da998b51856b81f3a3522939a108949699263fe4b"
+    },
+    {
+      "path": "visual/assets/v4_4-full-set-review-index.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "b3c85e44a485cabc0b36548198fc60fd0b01fde5e42c7934eb82b5c3a2c01799"
     }
   ],
   "validation_claim": {
@@ -752,3 +759,4 @@
     "readiness_contract": "persisted-self-check-v1"
   }
 }
+
