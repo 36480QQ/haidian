@@ -108,13 +108,13 @@
       "role": "changelog",
       "required": true,
       "language": "zh",
-      "sha256": "01ae2dd9e173e744670d58b3c457ceeada8fb6d8626a93f6915539f76423c7a5"
+      "sha256": "ea164bc1f44896dbd0d828ab178c594c4fa5023012a0a6bae2fc450028a374c5"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "f5dc0adfb010eeb23c40f0669161d0d75863c92c6d0fc9e9ee9b88fc1f0025d5"
+      "sha256": "7d1d6ea8520956f86499a8f451dd8b8369f91237183b9be85b0254314eee39be"
     },
     {
       "path": "design_depth_matrix.json",
@@ -150,7 +150,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "e9c36bdcb8ff32b03c4f89d291e6307e0150af9eba4ed5ddb6871550c80601d4"
+      "sha256": "4d2d887d1f42c68d08d8dfd7be502d5bbec5c393721d76de0b6062671ff4fd7a"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -263,7 +263,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "af878fbf38bfe987530a64aca468e3faebdc8add3fbced076cda7e9dc1c0e67f"
+      "sha256": "96bc3f5e880ebb5666813b3c7095e097c35c949a80377fd554f0a97993e13c01"
     },
     {
       "path": "sources.json",
