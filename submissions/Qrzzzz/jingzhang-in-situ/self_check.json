@@ -77,6 +77,13 @@
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase2-spatial-evidence-source.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase2-visual-generation-contract.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase2-visual-generator-source.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase3-data-governance.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase3-delta.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase3-generation-contract.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase3-governance-generator-source.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase3-protocol-audit-source.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase3-protocol-contracts.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase3-red-team.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/rebuild-visuals-source.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/visual.css",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/visual.js",
@@ -86,7 +93,7 @@
       "ai_package_stages": {
         "submissions/Qrzzzz/jingzhang-in-situ": "formal"
       },
-      "total_bytes": 12211857,
+      "total_bytes": 12872632,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -147,11 +154,7 @@
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.247076,
         "public_space_ratio": 0.042599,
-        "key_area_count": 3.0,
-        "cross_section_candidate_count": 12.0,
-        "cross_section_surveyed_count": 0.0,
-        "detailed_cross_section_count": 3.0,
-        "land_use_gap_area_sqm": 0.0
+        "key_area_count": 3.0
       }
     },
     "stderr": ""
@@ -163,7 +166,7 @@
       "ok": true,
       "issues": [],
       "summary": {
-        "standard_matrix_items": 6,
+        "standard_matrix_items": 9,
         "design_depth_items": 15,
         "known_metric_refs_required": 21,
         "proposal_format_version": "2",

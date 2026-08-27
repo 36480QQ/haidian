@@ -357,12 +357,14 @@
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
-        "A-OPS-001"
+        "A-OPS-001",
+        "A-PROTOCOL-001"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "SC02 将边缘节点限定为清权设备的受控能效与热安全试验，不能推断市政容量；正文逐项列出供电、散热、噪声、网络安全、消防、排涝和维护的专业 Gate，并要求异常时隔离设备。"
+      "evidence_summary_zh": "SC02 将边缘节点限定为清权设备的受控能效与热安全试验，不能推断市政容量；十二场景协议把断网、断电、传感/接口、专业阈值、人工接管与隔离/停止留痕写入同一状态机，现场容量、消防、能源和运营人员仍待专业确认。",
+      "phase3_protocol_refs": ["visual/assets/phase3-protocol-contracts.json", "visual/assets/phase3-data-governance.json", "visual/assets/phase3-red-team.json", "assets/figures/scenario-matrix.png", "assets/figures/operations-pathway.png"]
     },
     {
       "item_id": "blue_green_public_space",
@@ -478,7 +480,8 @@
         "A-OPS-001",
         "A-CONTROLS-001",
         "A-REGION-001",
-        "A-RIGHTS-001"
+        "A-RIGHTS-001",
+        "A-PROTOCOL-001"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE"
@@ -486,6 +489,9 @@
       "evidence_summary_zh": "T06 只承担 AP1-AP7 的前台聚合与 Gate 导航；IM01-IM13 的逐项责任、依赖、定性成本、证据、维护、评价、人工接管及停止/退出字段，以本对象 implementation_projects 数组为机器审计权威层。",
       "implementation_backend_path": "design_depth_matrix.json#/items/11/implementation_projects",
       "implementation_backend_contract": "phase1-audit-repair-v1",
+      "phase3_protocol_contract": "visual/assets/phase3-protocol-contracts.json#/scenarios",
+      "phase3_governance_contract": "visual/assets/phase3-data-governance.json#/scenario_profiles",
+      "phase3_red_team_contract": "visual/assets/phase3-red-team.json#/red_team_tests",
       "implementation_project_count": 13,
       "qualitative_cost_legend": {
         "S": {
@@ -976,6 +982,13 @@
           "stop_exit": {
             "zh": "安全、权利、误导营销或投诉闭环失败即撤场。",
             "en": "Withdraw for safety, rights, misleading marketing, or failed complaint closure."
+          },
+          "single_first_use": {
+            "binding": "SC10+IM06 only",
+            "preflight_ref": "visual/assets/phase3-protocol-contracts.json#/first_use_trial",
+            "red_team_refs": ["RT-04", "RT-05", "RT-07", "RT-09", "RT-10", "RT-12", "RT-13", "RT-14", "RT-16"],
+            "threshold_status": "design-target or unknown unless externally evidenced",
+            "not_claimed": ["opened", "approved", "legally reviewed", "safety certified", "staffed", "measured performance"]
           }
         },
         {
@@ -1554,12 +1567,14 @@
       ],
       "assumption_ids": [
         "A-OPS-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-PROTOCOL-001"
       ],
       "self_check_ids": [
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "近期只安排资料、调查、治理协议和可逆原型；中期取决于权属与专业确认；远期容量和永久工程需控规、交通、市政与工程专题。T06 以 Gate 和退出动作替代既定开发时序。"
+      "evidence_summary_zh": "近期只安排资料、调查、治理协议和可逆原型；十二场景按 preflight/limited-open/operating/degraded/human-takeover/paused/stopped/removed/archive 运行，转换必须留触发、角色、证据、公众状态、回退和禁止自动执行；中远期仍取决于权属、法律和专业确认。",
+      "phase3_protocol_refs": ["visual/assets/phase3-protocol-contracts.json#/shared_state_machine", "visual/assets/phase3-protocol-contracts.json#/first_use_trial", "assets/figures/operations-pathway.png"]
     },
     {
       "item_id": "metrics_recalculation",
@@ -1615,7 +1630,8 @@
         "A-CONTROLS-001",
         "A-CX-001",
         "A-DIMENSION-001",
-        "A-OPEN-DATA-NEGATIVE-001"
+        "A-OPEN-DATA-NEGATIVE-001",
+        "A-PROTOCOL-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1671,7 +1687,8 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "正式边界、控规、权属、文保、工程、客流和无障碍继续 unknown；OSM 原始响应缺失，不得升级为测绘或官方证据。"
+      "evidence_summary_zh": "正式边界、控规、权属、文保、工程、客流和无障碍继续 unknown；具名运营主体、个案合法依据、投诉数字窗口、人工配置与现场撤场可行性保留 requires legal review/design-target/unknown；16 项反方测试中 12 项保留 fail_stop、unknown_stop 或 fail_pause。",
+      "phase3_protocol_refs": ["visual/assets/phase3-data-governance.json#/uncertainty_register", "visual/assets/phase3-red-team.json#/red_team_tests", "visual/assets/phase3-protocol-contracts.json#/first_use_trial"]
     }
   ]
 }

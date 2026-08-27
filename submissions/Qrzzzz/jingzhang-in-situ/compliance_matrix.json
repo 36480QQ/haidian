@@ -1306,7 +1306,7 @@
     }
   ],
   "review_navigation": {
-    "phase": "phase2_spatial_evidence",
+    "phase": "phase3_governance_protocols",
     "thesis_zh": "京张在场把 AI 从隐藏能力变成三处公众可见、可人工接管、可验证、可撤回的城市界面。",
     "thesis_en": "Jing-Zhang In Situ turns AI from a hidden capability into three urban interfaces that the public can see, take over, verify, and withdraw.",
     "evaluation_criteria": [
@@ -1804,7 +1804,7 @@
     "first_use_trial": {
       "scenario_id": "SC10",
       "implementation_id": "IM06",
-      "status": "conceptual_recommendation",
+      "status": "design_target_preflight_not_opened",
       "time_limit": "set_in_writing_by_authorized_site_and_operating_roles; expiry_defaults_to_removal",
       "entry_gates": [
         "product_rights",
@@ -1815,14 +1815,24 @@
         "complaint_channel",
         "removal_plan"
       ],
-      "human_takeover": "host_can_switch_to_human_or_paper_feedback_at_any_time",
+      "minimum_data": "cleared product notice + non-identifying operational state + anonymous feedback by default",
+      "prohibited_data": "default face/emotion recognition, social scoring, predictive policing, undisclosed sensitive inference, unrelated identity tracking",
+      "human_takeover": "staffed host visibly switches to human explanation, paper feedback, and service isolation; absent host means no opening or immediate stop",
       "stop_conditions": [
+        "harm_or_near_miss",
         "safety_issue",
         "rights_dispute",
+        "identity_impersonation",
         "misleading_marketing",
+        "human_takeover_unavailable",
         "complaint_loop_failure",
+        "mandatory_log_missing",
+        "removal_failure",
         "written_period_expiry"
       ],
+      "removal_and_archive": "disconnect service, govern retained/deleted data, remove visible status and equipment, archive evidence, publish a review",
+      "reopen": "written human/professional review plus re-evidence of every opening gate",
+      "threshold_status": "all numeric times, response windows, and thresholds without external evidence are design-target or unknown",
       "non_expansion": "Uses existing SC10 and IM06; creates neither SC13 nor IM14."
     },
     "id_register": {
@@ -1998,8 +2008,11 @@
       "core_claims": "10/10",
       "agents": "6/6",
       "required_outputs": "31/31",
-      "scenarios": "3_flagships+9_supports",
-      "implementation_mapping": "13/13_into_7_packages"
+      "scenarios": "12/12 complete operating contracts; 3 flagships + 9 supports",
+      "implementation_mapping": "13/13_into_7_packages",
+      "shared_lifecycle": "9 states with transition trigger/role/evidence/public-status/rollback/no-auto",
+      "data_governance": "6 categories + 12 scenario profiles + 6 equivalent-service groups",
+      "red_team": "16 tests; 12 retained fail_stop/unknown_stop/fail_pause outcomes"
     },
     "internal_quality_position": {
       "working_target": "approximately 90-92 after Phase 2",
@@ -2066,6 +2079,34 @@
         "contract_note_en": "SC08 and SC12 are not assigned to a contiguous numbered area; every carrier must enumerate IDs explicitly."
       },
       "first_use_unchanged": "SC10 + IM06 only"
+    },
+    "phase3_protocol_governance": {
+      "authoritative_files": [
+        "visual/assets/phase3-protocol-contracts.json",
+        "visual/assets/phase3-data-governance.json",
+        "visual/assets/phase3-red-team.json",
+        "visual/assets/phase3-delta.json",
+        "visual/assets/phase3-generation-contract.json"
+      ],
+      "generated_consumers": [
+        "proposal.md",
+        "proposal.en.md",
+        "assets/figures/scenario-matrix.png",
+        "assets/figures/scenario-matrix.en.png",
+        "assets/figures/operations-pathway.png",
+        "assets/figures/operations-pathway.en.png",
+        "visual/index.html",
+        "visual/index.en.html",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
+      ],
+      "f08_judgment": "All 12 scenarios are comparable by AI authority, human-only decision, visible takeover, low/no-AI alternative, and lifecycle/removal.",
+      "f11_judgment": "One shared lifecycle links accountable evidence, complaint/appeal, Human Takeover, SC10+IM06 preflight, stop, removal, archive, and written reopening.",
+      "authority_model": "AI may suggest, sort, translate, assist verification, or prompt; implementation approval, rights changes, sanctions, resource denial, stop, and reopening are human-only.",
+      "governance_boundary": "No compliance, consent, operator appointment, safety certification, accessibility audit, partnership, or funding is claimed.",
+      "protected_phase2": "All geometry plus F01-F07 and F09-F10 remain byte-frozen to HEAD 554979e4bc66f21fbdf53e4cde85ed94afe4421c."
     },
     "program_aspiration": {
       "value": 96,

@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v0.8 - 2026-08-27
+
+### Phase 3 governance protocols
+
+- Added complete bilingual machine contracts for SC01–SC12 under one nine-state lifecycle; all transitions retain trigger, authorized role, required evidence, public status, rollback, and prohibited automation. SC01/SC05/SC10 add end-to-end sequences and role swimlanes without expanding nine support scenarios into building or product schemes.
+- Added a six-category data-governance matrix, twelve scenario profiles, six equivalent-service groups, explicit AI authority limits and prohibitions, and legal/professional/unknown boundaries without claiming consent, compliance, operator appointment, partnership, or funding.
+- Operationalized visible Human Takeover and the only SC10+IM06 first-use preflight, including written term, opening gates, staffed fallback, complaint/appeal, stop/removal/archive, public review, and written reopening conditions; unverified numeric windows and thresholds remain `design-target` or `unknown`.
+- Added sixteen independent adversarial tabletop tests covering all SC01–SC12 and retained twelve fail/stop/unknown/pause outcomes with residual risk and retest conditions.
+- Regenerated only protocol-bearing F08/F11, bilingual proposal/report/Visual surfaces, and four PDFs; Phase 2 geometry and F01–F07/F09–F10 remain byte-frozen and source-to-consumer coverage remains auditable.
+
 ## v0.7 - 2026-08-27
 
 ### Phase 2 independent-audit repair

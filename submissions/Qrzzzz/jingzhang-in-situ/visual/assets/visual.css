@@ -5,3 +5,7 @@
 @media(max-width:390px){.mast{padding-top:2.5rem}.metrics{grid-template-columns:1fr}.toolbar nav{display:grid;grid-template-columns:1fr 1fr;width:100%}.toolbar a,.toolbar button{min-width:0;text-align:center;padding:.5rem .35rem;font-size:.9rem}.board figcaption{display:block}.board figcaption span{display:block;margin-top:.3rem}main{padding-left:1rem;padding-right:1rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.toolbar{backdrop-filter:none}}
 @media print{.skip,.toolbar,.drawer{display:none!important}.mast{padding:1cm;background:white;color:black}.mast p,.mast small{color:#333}.status{background:white;color:#000;border:1px solid #000}.metrics{padding:.5cm}.boards{display:block}.board{break-inside:avoid;box-shadow:none;margin:0 0 .8cm}.evidence{background:white;color:black;border:1px solid #000}footer{background:white}}
+
+.protocol-index{max-width:1100px;margin:0 0 2.5rem;padding:1.3rem 1.5rem;background:var(--paper);border-left:6px solid var(--orange)}
+.protocol-index h2{margin:.1rem 0 .7rem}.protocol-index .provisional{color:var(--muted)}.protocol-index a{color:var(--teal);font-weight:700}
+@media(max-width:390px){.protocol-index{padding:1rem}}

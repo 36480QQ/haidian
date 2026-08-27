@@ -151,6 +151,26 @@
         "proposal.en.md"
       ],
       "recalculation_trigger": "Acquire an attributable, rights-cleared raw snapshot and/or authoritative geometry, register its hash and license, and rerun the comparison."
+    },
+    {
+      "id": "A-PROTOCOL-001",
+      "status": "design_target_requires_legal_and_operational_review",
+      "statement": "Phase 3 defines auditable operating contracts for SC01–SC12, a shared lifecycle, Human Takeover, data minimization, complaint/appeal, red-team tests and SC10+IM06 preflight. Named controllers/operators, case-specific lawful bases, numeric durations and response thresholds, on-site staffing, accessibility, fire, energy, safety and removal feasibility remain unverified.",
+      "impact": "The contracts can structure later procurement, review, rehearsal and stop decisions, but cannot be read as legal compliance, consent, appointment, certification, public-service commitment or evidence of operation.",
+      "affected_files": [
+        "visual/assets/phase3-protocol-contracts.json",
+        "visual/assets/phase3-data-governance.json",
+        "visual/assets/phase3-red-team.json",
+        "assets/figures/scenario-matrix.png",
+        "assets/figures/scenario-matrix.en.png",
+        "assets/figures/operations-pathway.png",
+        "assets/figures/operations-pathway.en.png",
+        "proposal.md",
+        "proposal.en.md",
+        "drawings/",
+        "visual/"
+      ],
+      "recalculation_trigger": "Obtain written appointment and permission, complete case-specific legal/professional/accessibility/safety review, run documented preflight and tabletop tests, then update only the matching fields and regenerate affected Phase 3 outputs."
     }
   ]
 }
