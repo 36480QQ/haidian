@@ -14,7 +14,7 @@
     "model_family": "kimi",
     "model_detail": "Kimi-K2.7-Code"
   },
-  "generated_at": "2026-08-27T20:28:04+08:00",
+  "generated_at": "2026-08-27T21:10:03+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -26,8 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "99ea8dea8d1fd13f4e69796c1766c2a3cf43e95edad838edeb5dcc5bb281beb6",
-      "size": 49500
+      "sha256": "99ea8dea8d1fd13f4e69796c1766c2a3cf43e95edad838edeb5dcc5bb281beb6"
     },
     {
       "path": "agent.json",
@@ -63,8 +62,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "de0ac691bd377e748db37f04aa1974ebffa91c6cad22be644426f9a0d5e03355",
-      "size": 39493
+      "sha256": "de0ac691bd377e748db37f04aa1974ebffa91c6cad22be644426f9a0d5e03355"
     },
     {
       "path": "standard_matrix.json",
@@ -83,8 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "9a9fd2f8663c7e8be7436a1ddf7615fb4e6818af81e12034e1646cc0d5f70f8d",
-      "size": 71158
+      "sha256": "35591d06fe51bad4c1329de4de09478f004b23d93b4f16566b1609c0f99541b8"
     },
     {
       "path": "report/narrative.md",
@@ -131,8 +128,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "555461c6bd7481b1fbc297b1c179a870cf0646e281d11f28afb12bcaae1452c9",
-      "size": 279104
+      "sha256": "555461c6bd7481b1fbc297b1c179a870cf0646e281d11f28afb12bcaae1452c9"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -229,8 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3f79fa1e0ca8d96c5111df4fcb7ad960e66ca16b119ec7c7a58b4b617743ea2c",
-      "size": 63545
+      "sha256": "3f79fa1e0ca8d96c5111df4fcb7ad960e66ca16b119ec7c7a58b4b617743ea2c"
     },
     {
       "path": "report/proposal.en.html",
@@ -238,8 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "8686e9a51f7705cba4bb1113cef0b95ad91795c3b2e1a9a061f63ac91c2e935a",
-      "size": 85485
+      "sha256": "184858edfaf5005da704feb29357fb4fc104a22b6901f4ee7c1c1b390ec6ecb4"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -279,8 +273,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "18e49a89e5d7e0430dd6f37ac09f29c3ffe61f8f9bd047fecc829d4f5696f11f",
-      "size": 218685
+      "sha256": "18e49a89e5d7e0430dd6f37ac09f29c3ffe61f8f9bd047fecc829d4f5696f11f"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
