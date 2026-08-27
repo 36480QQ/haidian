@@ -1,0 +1,1142 @@
+{
+  "schema": "jz-phase4-pdf-qa/v1",
+  "scope": "four Phase 4 presentation PDFs",
+  "claim_boundary": "Concrete tag, structure, text, typography, font, and rendering evidence only; not a PDF/UA conformance claim.",
+  "page_contract": {
+    "a3_pages_per_language": 12,
+    "a0_pages_per_language": 2,
+    "total_pages": 28,
+    "expected_total": 28
+  },
+  "tools": {
+    "pdfinfo": "pdfinfo version 26.05.0",
+    "pdffonts": "pdffonts version 25.02.0",
+    "pdftotext": "pdftotext version 25.02.0",
+    "pdftoppm": "pdftoppm version 26.05.0"
+  },
+  "conformance_tool_availability": {
+    "veraPDF": false,
+    "PAC": false,
+    "boundary": "No veraPDF or PAC available; PDF/UA is not asserted."
+  },
+  "advisories": [
+    "The Chromium print structure exposes headings, paragraphs, lists, figures, and alternative text, but does not create semantic Table tags for the dense F08/F11 raster panels.",
+    "The accessible HTML report and Visual provide structured textual summaries, keyboard-accessible original-image dialogs, and the authoritative machine-readable matrices as equivalent detailed entry points."
+  ],
+  "pdfs": [
+    {
+      "key": "a3_zh",
+      "path": "drawings/a3-booklet.pdf",
+      "pages": 12,
+      "expected_pages": 12,
+      "format": "A3",
+      "media_boxes_pt": [
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ]
+      ],
+      "metadata": {
+        "title": "京张在场 / Jing-Zhang In Situ · A3",
+        "language": "zh-CN",
+        "marked": true,
+        "tagged_pdfinfo": "Tagged:          yes"
+      },
+      "structure_counts": {
+        "/Document": 1,
+        "/NonStruct": 159,
+        "/P": 16,
+        "/H1": 1,
+        "/Figure": 12,
+        "Alt": 12,
+        "/H2": 13,
+        "/L": 2,
+        "/LI": 9,
+        "/Lbl": 3,
+        "/Strong": 16
+      },
+      "bookmarks": [
+        "京张在场 / Jing-Zhang In Situ",
+        "三处原型",
+        "评审路径",
+        "一带总览：十二条候选横断面已定位",
+        "共同分区：同边界、零缺口、零重叠",
+        "三处重点区：同尺度看差异化在场",
+        "责任横断面：十二候选、三条深化",
+        "证据与指标：负结果也必须在场",
+        "识别系统：一带、三界面、一套语法",
+        "AI 创新生态：三区两翼协同回路",
+        "十二场景协议：AI 权限与人工接管",
+        "三处地标、开放贡献谱与公共空间组件库",
+        "文化叙事与导视：时间成为空间坐标",
+        "运行、接管、申诉、停止与撤场"
+      ],
+      "page_tabs_structure_order": true,
+      "selectable_text": [
+        {
+          "page": 1,
+          "characters": 394,
+          "nonempty": true
+        },
+        {
+          "page": 2,
+          "characters": 139,
+          "nonempty": true
+        },
+        {
+          "page": 3,
+          "characters": 117,
+          "nonempty": true
+        },
+        {
+          "page": 4,
+          "characters": 248,
+          "nonempty": true
+        },
+        {
+          "page": 5,
+          "characters": 133,
+          "nonempty": true
+        },
+        {
+          "page": 6,
+          "characters": 210,
+          "nonempty": true
+        },
+        {
+          "page": 7,
+          "characters": 121,
+          "nonempty": true
+        },
+        {
+          "page": 8,
+          "characters": 128,
+          "nonempty": true
+        },
+        {
+          "page": 9,
+          "characters": 325,
+          "nonempty": true
+        },
+        {
+          "page": 10,
+          "characters": 126,
+          "nonempty": true
+        },
+        {
+          "page": 11,
+          "characters": 121,
+          "nonempty": true
+        },
+        {
+          "page": 12,
+          "characters": 372,
+          "nonempty": true
+        }
+      ],
+      "required_term_presence": {
+        "Jing-Zhang In Situ": true,
+        "Human Takeover": true,
+        "SC10 + IM06": true
+      },
+      "font_target": {
+        "design_target_pt": 8.0,
+        "tolerance_pt": 0.01,
+        "per_page_minimum_pt": [
+          {
+            "page": 1,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 2,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 3,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 4,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 5,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 6,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 7,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 8,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 9,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 10,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 11,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 12,
+            "minimum_pt": 7.995
+          }
+        ],
+        "met": true
+      },
+      "fonts": [
+        {
+          "name": "AAAAAA+NotoSansSC-Thin",
+          "type": "CID TrueType",
+          "encoding": "Identity-H",
+          "embedded": "yes",
+          "subset": "yes",
+          "unicode": "yes"
+        },
+        {
+          "name": "BAAAAA+NotoSansSC-Thin",
+          "type": "CID TrueType",
+          "encoding": "Identity-H",
+          "embedded": "yes",
+          "subset": "yes",
+          "unicode": "yes"
+        }
+      ],
+      "render_200dpi": {
+        "renderer": "pdftoppm version 26.05.0",
+        "dpi": 200,
+        "images": 12,
+        "expected_images": 12,
+        "pages": [
+          {
+            "page": 1,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 709.442,
+            "nonblank": true
+          },
+          {
+            "page": 2,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1754.97,
+            "nonblank": true
+          },
+          {
+            "page": 3,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1898.275,
+            "nonblank": true
+          },
+          {
+            "page": 4,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 763.026,
+            "nonblank": true
+          },
+          {
+            "page": 5,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1465.453,
+            "nonblank": true
+          },
+          {
+            "page": 6,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 3071.581,
+            "nonblank": true
+          },
+          {
+            "page": 7,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1752.231,
+            "nonblank": true
+          },
+          {
+            "page": 8,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1672.976,
+            "nonblank": true
+          },
+          {
+            "page": 9,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1409.508,
+            "nonblank": true
+          },
+          {
+            "page": 10,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 840.795,
+            "nonblank": true
+          },
+          {
+            "page": 11,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 2925.275,
+            "nonblank": true
+          },
+          {
+            "page": 12,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 693.056,
+            "nonblank": true
+          }
+        ],
+        "ok": true
+      },
+      "failures": [],
+      "ok": true
+    },
+    {
+      "key": "a3_en",
+      "path": "drawings/a3-booklet.en.pdf",
+      "pages": 12,
+      "expected_pages": 12,
+      "format": "A3",
+      "media_boxes_pt": [
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ],
+        [
+          1191.12,
+          841.92
+        ]
+      ],
+      "metadata": {
+        "title": "Jing-Zhang In Situ / 京张在场 · A3",
+        "language": "en",
+        "marked": true,
+        "tagged_pdfinfo": "Tagged:          yes"
+      },
+      "structure_counts": {
+        "/Document": 1,
+        "/NonStruct": 159,
+        "/P": 16,
+        "/H1": 1,
+        "/Figure": 12,
+        "Alt": 12,
+        "/H2": 13,
+        "/L": 2,
+        "/LI": 9,
+        "/Lbl": 3,
+        "/Strong": 16
+      },
+      "bookmarks": [
+        "Jing-Zhang In Situ / 京张在场",
+        "Three prototypes",
+        "Review routes",
+        "Belt Overview: Twelve Candidate Transects Located",
+        "Shared Partition: Same Edges, Zero Gaps, Zero Overlaps",
+        "Three Key Areas at One Comparative Scale",
+        "Responsibility Transects: Twelve Candidates, Three Detailed",
+        "Evidence + Metrics: Adverse Results Stay Visible",
+        "Identity System: One Belt, Three Interfaces, One Grammar",
+        "AI Innovation Ecosystem: Three Areas + Two Wings",
+        "Twelve Scenario Protocols: AI Authority + Human Takeover",
+        "Three Landmarks + Open Contribution Ledger + Components",
+        "Culture + Wayfinding: Time as a Spatial Coordinate",
+        "Operate, Take Over, Appeal, Stop, and Remove"
+      ],
+      "page_tabs_structure_order": true,
+      "selectable_text": [
+        {
+          "page": 1,
+          "characters": 788,
+          "nonempty": true
+        },
+        {
+          "page": 2,
+          "characters": 255,
+          "nonempty": true
+        },
+        {
+          "page": 3,
+          "characters": 236,
+          "nonempty": true
+        },
+        {
+          "page": 4,
+          "characters": 441,
+          "nonempty": true
+        },
+        {
+          "page": 5,
+          "characters": 271,
+          "nonempty": true
+        },
+        {
+          "page": 6,
+          "characters": 420,
+          "nonempty": true
+        },
+        {
+          "page": 7,
+          "characters": 280,
+          "nonempty": true
+        },
+        {
+          "page": 8,
+          "characters": 241,
+          "nonempty": true
+        },
+        {
+          "page": 9,
+          "characters": 591,
+          "nonempty": true
+        },
+        {
+          "page": 10,
+          "characters": 293,
+          "nonempty": true
+        },
+        {
+          "page": 11,
+          "characters": 242,
+          "nonempty": true
+        },
+        {
+          "page": 12,
+          "characters": 675,
+          "nonempty": true
+        }
+      ],
+      "required_term_presence": {
+        "Jing-Zhang In Situ": true,
+        "Human Takeover": true,
+        "SC10 + IM06": true
+      },
+      "font_target": {
+        "design_target_pt": 8.0,
+        "tolerance_pt": 0.01,
+        "per_page_minimum_pt": [
+          {
+            "page": 1,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 2,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 3,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 4,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 5,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 6,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 7,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 8,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 9,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 10,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 11,
+            "minimum_pt": 7.995
+          },
+          {
+            "page": 12,
+            "minimum_pt": 7.995
+          }
+        ],
+        "met": true
+      },
+      "fonts": [
+        {
+          "name": "AAAAAA+NotoSansSC-Thin",
+          "type": "CID TrueType",
+          "encoding": "Identity-H",
+          "embedded": "yes",
+          "subset": "yes",
+          "unicode": "yes"
+        },
+        {
+          "name": "BAAAAA+NotoSansSC-Thin",
+          "type": "CID TrueType",
+          "encoding": "Identity-H",
+          "embedded": "yes",
+          "subset": "yes",
+          "unicode": "yes"
+        }
+      ],
+      "render_200dpi": {
+        "renderer": "pdftoppm version 26.05.0",
+        "dpi": 200,
+        "images": 12,
+        "expected_images": 12,
+        "pages": [
+          {
+            "page": 1,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 718.263,
+            "nonblank": true
+          },
+          {
+            "page": 2,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1647.633,
+            "nonblank": true
+          },
+          {
+            "page": 3,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1806.315,
+            "nonblank": true
+          },
+          {
+            "page": 4,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 682.869,
+            "nonblank": true
+          },
+          {
+            "page": 5,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1409.632,
+            "nonblank": true
+          },
+          {
+            "page": 6,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 2993.296,
+            "nonblank": true
+          },
+          {
+            "page": 7,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1714.335,
+            "nonblank": true
+          },
+          {
+            "page": 8,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1612.626,
+            "nonblank": true
+          },
+          {
+            "page": 9,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 1339.287,
+            "nonblank": true
+          },
+          {
+            "page": 10,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 770.867,
+            "nonblank": true
+          },
+          {
+            "page": 11,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 2831.384,
+            "nonblank": true
+          },
+          {
+            "page": 12,
+            "pixels": [
+              3309,
+              2339
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              3308,
+              2339
+            ],
+            "mean_channel_variance": 630.658,
+            "nonblank": true
+          }
+        ],
+        "ok": true
+      },
+      "failures": [],
+      "ok": true
+    },
+    {
+      "key": "a0_zh",
+      "path": "drawings/a0-boards.pdf",
+      "pages": 2,
+      "expected_pages": 2,
+      "format": "A0",
+      "media_boxes_pt": [
+        [
+          3370.08,
+          2383.92
+        ],
+        [
+          3370.08,
+          2383.92
+        ]
+      ],
+      "metadata": {
+        "title": "京张在场 / Jing-Zhang In Situ · A0",
+        "language": "zh-CN",
+        "marked": true,
+        "tagged_pdfinfo": "Tagged:          yes"
+      },
+      "structure_counts": {
+        "/Document": 1,
+        "/NonStruct": 81,
+        "/P": 8,
+        "/H1": 1,
+        "/Art": 11,
+        "/Figure": 7,
+        "Alt": 7,
+        "/H2": 2,
+        "/L": 2,
+        "/LI": 9,
+        "/Strong": 8,
+        "/H3": 4
+      },
+      "bookmarks": [
+        "三重在场，从空间证据开始",
+        "直接保留的不利 / 未知结果",
+        "AI 可辅助；人决定权利、安全、停止与复开",
+        "识别系统：一带、三界面、一套语法",
+        "AI 创新生态：三区两翼协同回路",
+        "三处地标、开放贡献谱与公共空间组件库",
+        "文化叙事与导视：时间成为空间坐标"
+      ],
+      "page_tabs_structure_order": true,
+      "selectable_text": [
+        {
+          "page": 1,
+          "characters": 264,
+          "nonempty": true
+        },
+        {
+          "page": 2,
+          "characters": 849,
+          "nonempty": true
+        }
+      ],
+      "required_term_presence": {
+        "Jing-Zhang In Situ": true,
+        "Human Takeover": true,
+        "SC10 + IM06": true,
+        "13": true,
+        "12/12": true
+      },
+      "font_target": {
+        "design_target_pt": 14.0,
+        "tolerance_pt": 0.01,
+        "per_page_minimum_pt": [
+          {
+            "page": 1,
+            "minimum_pt": 13.995
+          },
+          {
+            "page": 2,
+            "minimum_pt": 13.995
+          }
+        ],
+        "met": true
+      },
+      "fonts": [
+        {
+          "name": "AAAAAA+NotoSansSC-Thin",
+          "type": "CID TrueType",
+          "encoding": "Identity-H",
+          "embedded": "yes",
+          "subset": "yes",
+          "unicode": "yes"
+        }
+      ],
+      "render_200dpi": {
+        "renderer": "pdftoppm version 26.05.0",
+        "dpi": 200,
+        "images": 2,
+        "expected_images": 2,
+        "pages": [
+          {
+            "page": 1,
+            "pixels": [
+              9362,
+              6622
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              9362,
+              6622
+            ],
+            "mean_channel_variance": 1650.218,
+            "nonblank": true
+          },
+          {
+            "page": 2,
+            "pixels": [
+              9362,
+              6622
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              9362,
+              6622
+            ],
+            "mean_channel_variance": 1579.268,
+            "nonblank": true
+          }
+        ],
+        "ok": true
+      },
+      "failures": [],
+      "ok": true
+    },
+    {
+      "key": "a0_en",
+      "path": "drawings/a0-boards.en.pdf",
+      "pages": 2,
+      "expected_pages": 2,
+      "format": "A0",
+      "media_boxes_pt": [
+        [
+          3370.08,
+          2383.92
+        ],
+        [
+          3370.08,
+          2383.92
+        ]
+      ],
+      "metadata": {
+        "title": "Jing-Zhang In Situ / 京张在场 · A0",
+        "language": "en",
+        "marked": true,
+        "tagged_pdfinfo": "Tagged:          yes"
+      },
+      "structure_counts": {
+        "/Document": 1,
+        "/NonStruct": 81,
+        "/P": 8,
+        "/H1": 1,
+        "/Art": 11,
+        "/Figure": 7,
+        "Alt": 7,
+        "/H2": 2,
+        "/L": 2,
+        "/LI": 9,
+        "/Strong": 8,
+        "/H3": 4
+      },
+      "bookmarks": [
+        "Three kinds of presence begin with spatial evidence",
+        "Adverse / unknown results retained directly",
+        "AI may assist; humans decide rights, safety, stop, and reopen",
+        "Identity System: One Belt, Three Interfaces, One Grammar",
+        "AI Innovation Ecosystem: Three Areas + Two Wings",
+        "Three Landmarks + Open Contribution Ledger + Components",
+        "Culture + Wayfinding: Time as a Spatial Coordinate"
+      ],
+      "page_tabs_structure_order": true,
+      "selectable_text": [
+        {
+          "page": 1,
+          "characters": 531,
+          "nonempty": true
+        },
+        {
+          "page": 2,
+          "characters": 1707,
+          "nonempty": true
+        }
+      ],
+      "required_term_presence": {
+        "Jing-Zhang In Situ": true,
+        "Human Takeover": true,
+        "SC10 + IM06": true,
+        "13": true,
+        "12/12": true
+      },
+      "font_target": {
+        "design_target_pt": 14.0,
+        "tolerance_pt": 0.01,
+        "per_page_minimum_pt": [
+          {
+            "page": 1,
+            "minimum_pt": 13.995
+          },
+          {
+            "page": 2,
+            "minimum_pt": 13.995
+          }
+        ],
+        "met": true
+      },
+      "fonts": [
+        {
+          "name": "AAAAAA+NotoSansSC-Thin",
+          "type": "CID TrueType",
+          "encoding": "Identity-H",
+          "embedded": "yes",
+          "subset": "yes",
+          "unicode": "yes"
+        }
+      ],
+      "render_200dpi": {
+        "renderer": "pdftoppm version 26.05.0",
+        "dpi": 200,
+        "images": 2,
+        "expected_images": 2,
+        "pages": [
+          {
+            "page": 1,
+            "pixels": [
+              9362,
+              6622
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              9362,
+              6622
+            ],
+            "mean_channel_variance": 1667.756,
+            "nonblank": true
+          },
+          {
+            "page": 2,
+            "pixels": [
+              9362,
+              6622
+            ],
+            "nonwhite_bbox": [
+              0,
+              0,
+              9362,
+              6622
+            ],
+            "mean_channel_variance": 1589.252,
+            "nonblank": true
+          }
+        ],
+        "ok": true
+      },
+      "failures": [],
+      "ok": true
+    }
+  ],
+  "failures": [],
+  "ok": true
+}

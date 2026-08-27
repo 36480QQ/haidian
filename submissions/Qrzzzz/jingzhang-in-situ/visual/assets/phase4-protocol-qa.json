@@ -1,0 +1,64 @@
+{
+  "schema": "jz-phase4-protocol-qa/v1",
+  "authority": "Frozen embedded Phase 3 auditor executed read-only against current submission authority inputs.",
+  "embedded_source_sha256": "50f946eacc0fc42a416f45f56cf1539e2bf01b77f175c773cb48ffdb318fe4e0",
+  "require_generated": false,
+  "reason": "Phase 3 generated-output hashes are intentionally superseded by Phase 4 presentation derivatives; authority semantics remain the audit scope.",
+  "audit": {
+    "ok": true,
+    "facts": {
+      "scenario_contracts": 12,
+      "states": 9,
+      "transitions": 15,
+      "scenario_paths_legal": "48/48",
+      "flagship_paths_legal": "12/12",
+      "red_team_paths_legal": 19,
+      "all_checked_paths_legal": 79,
+      "canonical_roles": 12,
+      "role_references_resolved": "411/411",
+      "flagships": [
+        "SC01",
+        "SC05",
+        "SC10"
+      ],
+      "data_categories": 6,
+      "governance_profiles": 12,
+      "no_personal_data_required_true": [
+        "SC01",
+        "SC02",
+        "SC03",
+        "SC04",
+        "SC07",
+        "SC08",
+        "SC09",
+        "SC10",
+        "SC12"
+      ],
+      "conditional_personal_data_requires_legal_review": [
+        "SC04",
+        "SC05",
+        "SC06",
+        "SC07",
+        "SC10",
+        "SC11",
+        "SC12"
+      ],
+      "controller_status_unknown": 12,
+      "sensitive_personal_data_required": 0,
+      "equivalent_service_groups": 6,
+      "red_team_tests": 16,
+      "retained_fail_stop_unknown": 13,
+      "protocol_selectors_resolved": "69/69",
+      "protocol_selector_expanded_targets": 317,
+      "source_count": 19,
+      "source_orphans": 0,
+      "proposal_sections_zh_en": [
+        13,
+        13
+      ],
+      "generated_required": false
+    },
+    "errors": []
+  },
+  "ok": true
+}

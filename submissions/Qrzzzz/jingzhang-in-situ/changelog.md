@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v0.9 - 2026-08-28
+
+### Phase 4 final presentation system
+
+- Added one bilingual figure registry and page-level layout contract for a stable 30-second route (cover → F01 → F03 → F08 → F11) and a 3-minute route (spatial evidence → twelve scenarios → governance/red team → implementation/exit → limits), without changing the frozen F01–F11 facts or authority semantics.
+- Rebuilt the paired A3 booklets as 12 pages per language and the paired A0 sets as two boards per language, retaining all 28 pages while giving each page one primary judgement, stable F/page navigation, direct F08/F11 authority/exit summaries, and measurable 8pt A3 / 14pt A0 document-wide design targets.
+- Added a deterministic bilingual code-and-vector cover from cleared in-package language only; it is explicitly conceptual and prohibited as survey, site, official-redline, approved-plan, or implementation evidence.
+- Added keyboard-operable native details/original-image regions to the two script-free reports and focus-trapped dialogs to the two Visual pages for all F01–F11 figures, plus skip links, focusable overflow tables, reduced-motion handling, language metadata, consistent captions/alternative text, and non-color status symbols across the four offline HTML outputs.
+- Replaced the PDF expression layer with Chromium semantic-HTML printing and independently checked real structure trees, language, titles, bookmarks, Figure/Alt counts, selectable reading order, embedded fonts, all-page 200 DPI Poppler output, and critical-page MuPDF output. These are tagged PDFs with a retained accessibility advisory, not a PDF/UA claim.
+- Preserved the six unknown metrics, three provisional key areas, twelve controller unknowns, incomplete legal/accessibility/safety/site/operator/approval boundaries, and the authoritative thirteen retained fail/stop/unknown red-team outcomes. The frozen Phase 3 proposal sentence that says twelve is retained as a documented baseline discrepancy rather than silently rewritten.
+
 ## v0.8 - 2026-08-27
 
 ### Phase 3 governance protocols

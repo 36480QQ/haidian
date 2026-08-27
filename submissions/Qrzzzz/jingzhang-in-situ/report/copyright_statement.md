@@ -57,7 +57,7 @@ F01—F05 由 Phase 2 扩展生成源从同一 GeoJSON/metrics 重建；F06—F1
 
 | 精确路径 | 生成链 | 嵌入资产 | 许可与限制 | 状态 |
 |---|---|---|---|---|
-| `drawings/a3-booklet.pdf`; `drawings/a3-booklet.en.pdf`; `drawings/a0-boards.pdf`; `drawings/a0-boards.en.pdf` | 本地图件经固定的 ReportLab 5.0.0 排版输出 | 图件、文本和 Noto Sans SC PDF 子集字体 | ReportLab 为 BSD 类许可；四份 PDF 仅允许用页面尺寸、渲染像素、可读文本与嵌入字体链复核。Creation/Modification 元数据、trailer ID、对象顺序和压缩字节流可能随运行/平台变化，因此不声明 whole-file bit-for-bit 可复现 | `cleared`，仍须在任何重渲染后复查 |
+| `drawings/a3-booklet.pdf`; `drawings/a3-booklet.en.pdf`; `drawings/a0-boards.pdf`; `drawings/a0-boards.en.pdf` | Phase 4 由 `visual/assets/phase4-presentation-generator.mjs` 从同一图号登记表、页级布局合同、本地图件与本地字体语义 HTML，经 Chromium CDP `Page.printToPDF` 的 tagged-PDF/outline 选项输出 | 图件、可选择文本和 Noto Sans SC PDF 子集字体 | Chromium/Playwright 只承担本地渲染；不改变内容权利。四份 PDF 以页面尺寸、结构树、书签、语言、阅读顺序、渲染像素、可读文本与嵌入字体链复核，不声明 whole-file bit-for-bit 或 PDF/UA 合规 | `cleared`；Phase 4 的 28 页、结构标签与 200 DPI 复核见 `visual/assets/phase4-pdf-qa.json`，任何重渲染后须重查 |
 | `report/proposal.html`; `report/proposal.en.html`; `visual/index.html`; `visual/index.en.html` | 仓库/本地渲染脚本生成的离线 HTML | 本地图件、本地 CSS、`visual/assets/font-subset.css` 中的本地字体数据，以及复用 `assets/figures/identity-system.png` 的本地 favicon | 不使用 CDN、远程脚本、远程地图瓦片、iframe 或远程字体；四份 HTML 均显式声明本地 favicon，不产生隐式 `/favicon.ico` 请求 | `cleared`，网络、应用资源与缺字检查通过；双语语义仍按独立人工复核处理 |
 
 ## 6. 字体
@@ -75,7 +75,9 @@ Noto Sans SC 以 SIL OFL 1.1 许可使用、修改、嵌入和再分发；本节
 
 ## 7. 封面状态
 
-原 `assets/media/cover.webp` 缺少足够的输入与生成链证据，已于 2026-08-13 从提交目录、manifest 文件清单和 `cover_image` 中移除。当前包不再分发该资产，也不以生成式氛围图作为封面、现状或设计证据；gallery 可使用仓库默认封面机制。
+Phase 4 新增 `assets/media/cover.webp`。它不是照片、测绘底图、效果图或外部生成式图像，而是 `visual/assets/phase4-presentation-generator.mjs#coverHtml` 用本包已清权的 Noto Sans SC 字体、SC01/SC05/SC10 与 SC10+IM06 既有编号、三处原型文字和统一状态线型，在 1600×900 本地 HTML/CSS 画布上确定性排版后由 Playwright/Chromium 截图生成。没有调用远程图片、地图瓦片、第三方 Logo、图库、ImageGen 或外部视觉素材。
+
+封面中英文文本成对，直接声明“只由包内已清权矢量与证据图形派生”和“不得作为现场观察、测绘、官方红线、批准方案或实施证据”。它只承担 3 秒项目识别和评审导航；不新增事实、几何、边界、证据等级、实施状态或官方身份。生成输入、输出哈希和禁止用途记录在 `visual/assets/phase4-generation-contract.json` 与最终 manifest；任何脚本、字体、字符集或语义变化都会使既有清权状态退回待复核。
 
 ## 8. 代码、工具与第三方库
 
@@ -84,6 +86,8 @@ Noto Sans SC 以 SIL OFL 1.1 许可使用、修改、嵌入和再分发；本节
 | `scripts/render_proposal_html.py`; `scripts/scaffold_ai_submission.py` | 仓库 HTML/投稿脚手架与渲染流程 | 最终实时上游基线 `349a767d157798a6f1ec6d0e12ed97cabdacdb05`；不把工具权利误写成输出内容许可 | `cleared` 作为生成证据；脚本本身不随投稿包重复分发 |
 | `visual/assets/rebuild-visuals-source.json` | 当前 F01—F11、PDF、visual HTML 与字体子集生成器的可审阅 Python 源码快照 | 因投稿白名单不接受 `.py`，以 JSON 的 `source` 字段随包分发并纳入 manifest；还原后的 Python 源 SHA-256 为 `54fdc9bf0241f4bb4f98420c408af8c9e43edf87c5d3c31ef67f71578aa0b8cf`。JSON 同时保存精确工具版本、字体哈希、F08 carrier 合同、Git blob/LF 字节域及 PDF/WOFF2 非 bit-exact 边界 | `cleared`；2026-08-27 重建后已复核，审阅者可直接提取并运行 |
 | `visual/assets/phase2-spatial-evidence-source.json`; `visual/assets/phase2-visual-generator-source.json` | Phase 2 GeoJSON/metrics/source-freeze 与 F01—F05/HTML/PDF 的可审阅 Python 源码快照 | 以允许的 JSON `source` 字段分发，分别保存源 SHA、恢复文件名、依赖版本与生成合同；前者不抓取网络空间数据，后者复用已登记 Noto 字体链 | `cleared`；最终 JSON 与生成输出 SHA-256 由 manifest 记录 |
+| `visual/assets/phase4-presentation-generator.mjs`; `visual/assets/phase4-font-subset.py` | Phase 4 封面、A3/A0、HTML 可访问层、字体子集和生成冻结合同的真实可运行源 | 只读取本包已登记图件、布局/图号登记表和冻结权威输入；生成器先逐项核对保护哈希，禁止把派生表达写回 GeoJSON、metrics、sources、协议或治理权威文件 | `cleared`；工具链、输入/输出 SHA-256 和不可变边界由 `phase4-generation-contract.json` 记录 |
+| Playwright 1.62.1；Chromium 151.0.7922.34 | 本地封面截图、离线 HTML 浏览器 QA 与四份 tagged PDF 生成 | Apache-2.0 / Chromium 项目许可；只作渲染与检查，不带入远程内容、商标或输出事实 | `cleared`；当前四 HTML 远程请求、追踪与外部资源均为 0；两份 report 为无脚本原生 details，两份 Visual 才加载本地 `visual.js` |
 | Pillow 12.2.0 | PNG 绘制 | MIT-CMU 类许可；工具许可不改变输入数据或输出内容权利 | `cleared` |
 | ReportLab 5.0.0 | PDF 生成 | BSD 类许可；工具许可不替代嵌入字体权利，本包字体权利单列核验 | `cleared` |
 | fontTools 4.63.0 | 字体固定化与 WOFF2 子集 | MIT 类许可；输出继续受 Noto Sans SC 的 OFL 1.1 约束 | `cleared` |

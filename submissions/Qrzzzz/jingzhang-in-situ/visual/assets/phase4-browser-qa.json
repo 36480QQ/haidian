@@ -1,0 +1,1601 @@
+{
+  "schema_version": "jingzhang-phase4-browser-qa-v1",
+  "generated_at": "2026-08-28",
+  "targets": [
+    {
+      "id": "proposal-zh",
+      "path": "report/proposal.html",
+      "lang": "zh-CN",
+      "kind": "report"
+    },
+    {
+      "id": "proposal-en",
+      "path": "report/proposal.en.html",
+      "lang": "en",
+      "kind": "report"
+    },
+    {
+      "id": "visual-zh",
+      "path": "visual/index.html",
+      "lang": "zh-CN",
+      "kind": "visual"
+    },
+    {
+      "id": "visual-en",
+      "path": "visual/index.en.html",
+      "lang": "en",
+      "kind": "visual"
+    }
+  ],
+  "viewports": [
+    {
+      "id": "mobile-390x844",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "tablet-768x1024",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "id": "desktop-1440x900",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "zoom-200-equivalent",
+      "width": 720,
+      "height": 450,
+      "note": "1440x900 CSS-pixel equivalent at 200% browser zoom"
+    }
+  ],
+  "summary": {
+    "checks": 16,
+    "failures": 0,
+    "ok": true
+  },
+  "failures": [],
+  "results": [
+    {
+      "target": "proposal-zh",
+      "kind": "report",
+      "viewport": {
+        "id": "mobile-390x844",
+        "width": 390,
+        "height": 844
+      },
+      "dom": {
+        "lang": "zh-CN",
+        "title": "京张在场：把 AI 变成可见、可接管、可验证、可撤回的城市界面 - proposal report",
+        "h1_count": 1,
+        "images": 22,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f01",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f03",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f08",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f11",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#phase4-boundaries"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 10.88,
+        "tables": 7,
+        "focusable_tables": 7,
+        "raw_png_links": 0,
+        "zoom_triggers": 0,
+        "figure_details": 11
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "phase4-skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY"
+        ],
+        "table": {
+          "focused": true,
+          "before": 0,
+          "after": 0,
+          "scrollable": true
+        },
+        "drawer": null,
+        "lightbox": null,
+        "figure_details": {
+          "open": true,
+          "focus_on_summary": true,
+          "pannable_200": true,
+          "semantic_summary": true,
+          "closed": true,
+          "returned_focus": true
+        }
+      }
+    },
+    {
+      "target": "proposal-zh",
+      "kind": "report",
+      "viewport": {
+        "id": "tablet-768x1024",
+        "width": 768,
+        "height": 1024
+      },
+      "dom": {
+        "lang": "zh-CN",
+        "title": "京张在场：把 AI 变成可见、可接管、可验证、可撤回的城市界面 - proposal report",
+        "h1_count": 1,
+        "images": 22,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f01",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f03",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f08",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f11",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#phase4-boundaries"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 10.88,
+        "tables": 7,
+        "focusable_tables": 7,
+        "raw_png_links": 0,
+        "zoom_triggers": 0,
+        "figure_details": 11
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "phase4-skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY"
+        ],
+        "table": {
+          "focused": true,
+          "before": 0,
+          "after": 0,
+          "scrollable": false
+        },
+        "drawer": null,
+        "lightbox": null,
+        "figure_details": {
+          "open": true,
+          "focus_on_summary": true,
+          "pannable_200": true,
+          "semantic_summary": true,
+          "closed": true,
+          "returned_focus": true
+        }
+      }
+    },
+    {
+      "target": "proposal-zh",
+      "kind": "report",
+      "viewport": {
+        "id": "desktop-1440x900",
+        "width": 1440,
+        "height": 900
+      },
+      "dom": {
+        "lang": "zh-CN",
+        "title": "京张在场：把 AI 变成可见、可接管、可验证、可撤回的城市界面 - proposal report",
+        "h1_count": 1,
+        "images": 22,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f01",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f03",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f08",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f11",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#phase4-boundaries"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 10.88,
+        "tables": 7,
+        "focusable_tables": 7,
+        "raw_png_links": 0,
+        "zoom_triggers": 0,
+        "figure_details": 11
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "phase4-skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY"
+        ],
+        "table": {
+          "focused": true,
+          "before": 0,
+          "after": 0,
+          "scrollable": false
+        },
+        "drawer": null,
+        "lightbox": null,
+        "figure_details": {
+          "open": true,
+          "focus_on_summary": true,
+          "pannable_200": true,
+          "semantic_summary": true,
+          "closed": true,
+          "returned_focus": true
+        }
+      }
+    },
+    {
+      "target": "proposal-zh",
+      "kind": "report",
+      "viewport": {
+        "id": "zoom-200-equivalent",
+        "width": 720,
+        "height": 450,
+        "note": "1440x900 CSS-pixel equivalent at 200% browser zoom"
+      },
+      "dom": {
+        "lang": "zh-CN",
+        "title": "京张在场：把 AI 变成可见、可接管、可验证、可撤回的城市界面 - proposal report",
+        "h1_count": 1,
+        "images": 22,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f01",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f03",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f08",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#figure-f11",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html#phase4-boundaries"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 10.88,
+        "tables": 7,
+        "focusable_tables": 7,
+        "raw_png_links": 0,
+        "zoom_triggers": 0,
+        "figure_details": 11
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "phase4-skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY"
+        ],
+        "table": {
+          "focused": true,
+          "before": 0,
+          "after": 0,
+          "scrollable": false
+        },
+        "drawer": null,
+        "lightbox": null,
+        "figure_details": {
+          "open": true,
+          "focus_on_summary": true,
+          "pannable_200": true,
+          "semantic_summary": true,
+          "closed": true,
+          "returned_focus": true
+        }
+      }
+    },
+    {
+      "target": "proposal-en",
+      "kind": "report",
+      "viewport": {
+        "id": "mobile-390x844",
+        "width": 390,
+        "height": 844
+      },
+      "dom": {
+        "lang": "en",
+        "title": "Jing-Zhang In Situ: Making AI Visible, Human-Takeover-Ready, Verifiable, and Withdrawable - proposal report",
+        "h1_count": 1,
+        "images": 22,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f01",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f03",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f08",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f11",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#phase4-boundaries"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 10.88,
+        "tables": 7,
+        "focusable_tables": 7,
+        "raw_png_links": 0,
+        "zoom_triggers": 0,
+        "figure_details": 11
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "phase4-skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY"
+        ],
+        "table": {
+          "focused": true,
+          "before": 0,
+          "after": 0,
+          "scrollable": true
+        },
+        "drawer": null,
+        "lightbox": null,
+        "figure_details": {
+          "open": true,
+          "focus_on_summary": true,
+          "pannable_200": true,
+          "semantic_summary": true,
+          "closed": true,
+          "returned_focus": true
+        }
+      }
+    },
+    {
+      "target": "proposal-en",
+      "kind": "report",
+      "viewport": {
+        "id": "tablet-768x1024",
+        "width": 768,
+        "height": 1024
+      },
+      "dom": {
+        "lang": "en",
+        "title": "Jing-Zhang In Situ: Making AI Visible, Human-Takeover-Ready, Verifiable, and Withdrawable - proposal report",
+        "h1_count": 1,
+        "images": 22,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f01",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f03",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f08",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f11",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#phase4-boundaries"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 10.88,
+        "tables": 7,
+        "focusable_tables": 7,
+        "raw_png_links": 0,
+        "zoom_triggers": 0,
+        "figure_details": 11
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "phase4-skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY"
+        ],
+        "table": {
+          "focused": true,
+          "before": 0,
+          "after": 0,
+          "scrollable": false
+        },
+        "drawer": null,
+        "lightbox": null,
+        "figure_details": {
+          "open": true,
+          "focus_on_summary": true,
+          "pannable_200": true,
+          "semantic_summary": true,
+          "closed": true,
+          "returned_focus": true
+        }
+      }
+    },
+    {
+      "target": "proposal-en",
+      "kind": "report",
+      "viewport": {
+        "id": "desktop-1440x900",
+        "width": 1440,
+        "height": 900
+      },
+      "dom": {
+        "lang": "en",
+        "title": "Jing-Zhang In Situ: Making AI Visible, Human-Takeover-Ready, Verifiable, and Withdrawable - proposal report",
+        "h1_count": 1,
+        "images": 22,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f01",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f03",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f08",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f11",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#phase4-boundaries"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 10.88,
+        "tables": 7,
+        "focusable_tables": 7,
+        "raw_png_links": 0,
+        "zoom_triggers": 0,
+        "figure_details": 11
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "phase4-skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY"
+        ],
+        "table": {
+          "focused": true,
+          "before": 0,
+          "after": 0,
+          "scrollable": false
+        },
+        "drawer": null,
+        "lightbox": null,
+        "figure_details": {
+          "open": true,
+          "focus_on_summary": true,
+          "pannable_200": true,
+          "semantic_summary": true,
+          "closed": true,
+          "returned_focus": true
+        }
+      }
+    },
+    {
+      "target": "proposal-en",
+      "kind": "report",
+      "viewport": {
+        "id": "zoom-200-equivalent",
+        "width": 720,
+        "height": 450,
+        "note": "1440x900 CSS-pixel equivalent at 200% browser zoom"
+      },
+      "dom": {
+        "lang": "en",
+        "title": "Jing-Zhang In Situ: Making AI Visible, Human-Takeover-Ready, Verifiable, and Withdrawable - proposal report",
+        "h1_count": 1,
+        "images": 22,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f01",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f03",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f08",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#figure-f11",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/report/proposal.en.html#phase4-boundaries"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 10.88,
+        "tables": 7,
+        "focusable_tables": 7,
+        "raw_png_links": 0,
+        "zoom_triggers": 0,
+        "figure_details": 11
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "phase4-skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY",
+          "DIV.proposal-table",
+          "DIV.proposal-table",
+          "SUMMARY",
+          "SUMMARY",
+          "SUMMARY"
+        ],
+        "table": {
+          "focused": true,
+          "before": 0,
+          "after": 0,
+          "scrollable": false
+        },
+        "drawer": null,
+        "lightbox": null,
+        "figure_details": {
+          "open": true,
+          "focus_on_summary": true,
+          "pannable_200": true,
+          "semantic_summary": true,
+          "closed": true,
+          "returned_focus": true
+        }
+      }
+    },
+    {
+      "target": "visual-zh",
+      "kind": "visual",
+      "viewport": {
+        "id": "mobile-390x844",
+        "width": 390,
+        "height": 844
+      },
+      "dom": {
+        "lang": "zh-CN",
+        "title": "京张在场：把 AI 变成可见、可接管、可验证、可撤回的城市界面",
+        "h1_count": 1,
+        "images": 12,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#phase4-residuals"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 13.3333,
+        "tables": 0,
+        "focusable_tables": 0,
+        "raw_png_links": 0,
+        "zoom_triggers": 11,
+        "figure_details": 0
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger"
+        ],
+        "table": null,
+        "drawer": {
+          "visible": true,
+          "focus_inside": true,
+          "inert_peers": 9,
+          "tab_inside": true,
+          "closed": true,
+          "returned_focus": true
+        },
+        "lightbox": {
+          "open": true,
+          "focus_inside": true,
+          "image_alt": "F01 三层范围、三区两翼、十二条候选责任横断面与三处重点区的关系；所有范围保持临时粗略约束状态。",
+          "tab_trapped": true,
+          "zoom_200_pan": {
+            "image_css_width": "688px",
+            "viewport_client_width": 344,
+            "viewport_scroll_width": 688,
+            "pannable": true
+          },
+          "closed": true,
+          "returned_focus": true
+        },
+        "figure_details": null
+      }
+    },
+    {
+      "target": "visual-zh",
+      "kind": "visual",
+      "viewport": {
+        "id": "tablet-768x1024",
+        "width": 768,
+        "height": 1024
+      },
+      "dom": {
+        "lang": "zh-CN",
+        "title": "京张在场：把 AI 变成可见、可接管、可验证、可撤回的城市界面",
+        "h1_count": 1,
+        "images": 12,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#phase4-residuals"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 13.3333,
+        "tables": 0,
+        "focusable_tables": 0,
+        "raw_png_links": 0,
+        "zoom_triggers": 11,
+        "figure_details": 0
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger"
+        ],
+        "table": null,
+        "drawer": {
+          "visible": true,
+          "focus_inside": true,
+          "inert_peers": 9,
+          "tab_inside": true,
+          "closed": true,
+          "returned_focus": true
+        },
+        "lightbox": {
+          "open": true,
+          "focus_inside": true,
+          "image_alt": "F01 三层范围、三区两翼、十二条候选责任横断面与三处重点区的关系；所有范围保持临时粗略约束状态。",
+          "tab_trapped": true,
+          "zoom_200_pan": {
+            "image_css_width": "1444px",
+            "viewport_client_width": 722,
+            "viewport_scroll_width": 1444,
+            "pannable": true
+          },
+          "closed": true,
+          "returned_focus": true
+        },
+        "figure_details": null
+      }
+    },
+    {
+      "target": "visual-zh",
+      "kind": "visual",
+      "viewport": {
+        "id": "desktop-1440x900",
+        "width": 1440,
+        "height": 900
+      },
+      "dom": {
+        "lang": "zh-CN",
+        "title": "京张在场：把 AI 变成可见、可接管、可验证、可撤回的城市界面",
+        "h1_count": 1,
+        "images": 12,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#phase4-residuals"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 13.3333,
+        "tables": 0,
+        "focusable_tables": 0,
+        "raw_png_links": 0,
+        "zoom_triggers": 11,
+        "figure_details": 0
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger"
+        ],
+        "table": null,
+        "drawer": {
+          "visible": true,
+          "focus_inside": true,
+          "inert_peers": 9,
+          "tab_inside": true,
+          "closed": true,
+          "returned_focus": true
+        },
+        "lightbox": {
+          "open": true,
+          "focus_inside": true,
+          "image_alt": "F01 三层范围、三区两翼、十二条候选责任横断面与三处重点区的关系；所有范围保持临时粗略约束状态。",
+          "tab_trapped": true,
+          "zoom_200_pan": {
+            "image_css_width": "2748.78px",
+            "viewport_client_width": 1374,
+            "viewport_scroll_width": 2749,
+            "pannable": true
+          },
+          "closed": true,
+          "returned_focus": true
+        },
+        "figure_details": null
+      }
+    },
+    {
+      "target": "visual-zh",
+      "kind": "visual",
+      "viewport": {
+        "id": "zoom-200-equivalent",
+        "width": 720,
+        "height": 450,
+        "note": "1440x900 CSS-pixel equivalent at 200% browser zoom"
+      },
+      "dom": {
+        "lang": "zh-CN",
+        "title": "京张在场：把 AI 变成可见、可接管、可验证、可撤回的城市界面",
+        "h1_count": 1,
+        "images": 12,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html#phase4-residuals"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 13.3333,
+        "tables": 0,
+        "focusable_tables": 0,
+        "raw_png_links": 0,
+        "zoom_triggers": 11,
+        "figure_details": 0
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger"
+        ],
+        "table": null,
+        "drawer": {
+          "visible": true,
+          "focus_inside": true,
+          "inert_peers": 9,
+          "tab_inside": true,
+          "closed": true,
+          "returned_focus": true
+        },
+        "lightbox": {
+          "open": true,
+          "focus_inside": true,
+          "image_alt": "F01 三层范围、三区两翼、十二条候选责任横断面与三处重点区的关系；所有范围保持临时粗略约束状态。",
+          "tab_trapped": true,
+          "zoom_200_pan": {
+            "image_css_width": "1348px",
+            "viewport_client_width": 674,
+            "viewport_scroll_width": 1348,
+            "pannable": true
+          },
+          "closed": true,
+          "returned_focus": true
+        },
+        "figure_details": null
+      }
+    },
+    {
+      "target": "visual-en",
+      "kind": "visual",
+      "viewport": {
+        "id": "mobile-390x844",
+        "width": 390,
+        "height": 844
+      },
+      "dom": {
+        "lang": "en",
+        "title": "Jing-Zhang In Situ: Making AI Visible, Human-Takeover-Ready, Verifiable, and Withdrawable",
+        "h1_count": 1,
+        "images": 12,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#phase4-residuals"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 13.3333,
+        "tables": 0,
+        "focusable_tables": 0,
+        "raw_png_links": 0,
+        "zoom_triggers": 11,
+        "figure_details": 0
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger"
+        ],
+        "table": null,
+        "drawer": {
+          "visible": true,
+          "focus_inside": true,
+          "inert_peers": 9,
+          "tab_inside": true,
+          "closed": true,
+          "returned_focus": true
+        },
+        "lightbox": {
+          "open": true,
+          "focus_inside": true,
+          "image_alt": "F01 relationship among three scope levels, Three Areas and Two Wings, twelve candidate responsibility transects, and three key areas; every extent remains a provisional rough constraint.",
+          "tab_trapped": true,
+          "zoom_200_pan": {
+            "image_css_width": "688px",
+            "viewport_client_width": 344,
+            "viewport_scroll_width": 688,
+            "pannable": true
+          },
+          "closed": true,
+          "returned_focus": true
+        },
+        "figure_details": null
+      }
+    },
+    {
+      "target": "visual-en",
+      "kind": "visual",
+      "viewport": {
+        "id": "tablet-768x1024",
+        "width": 768,
+        "height": 1024
+      },
+      "dom": {
+        "lang": "en",
+        "title": "Jing-Zhang In Situ: Making AI Visible, Human-Takeover-Ready, Verifiable, and Withdrawable",
+        "h1_count": 1,
+        "images": 12,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#phase4-residuals"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 13.3333,
+        "tables": 0,
+        "focusable_tables": 0,
+        "raw_png_links": 0,
+        "zoom_triggers": 11,
+        "figure_details": 0
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger"
+        ],
+        "table": null,
+        "drawer": {
+          "visible": true,
+          "focus_inside": true,
+          "inert_peers": 9,
+          "tab_inside": true,
+          "closed": true,
+          "returned_focus": true
+        },
+        "lightbox": {
+          "open": true,
+          "focus_inside": true,
+          "image_alt": "F01 relationship among three scope levels, Three Areas and Two Wings, twelve candidate responsibility transects, and three key areas; every extent remains a provisional rough constraint.",
+          "tab_trapped": true,
+          "zoom_200_pan": {
+            "image_css_width": "1444px",
+            "viewport_client_width": 722,
+            "viewport_scroll_width": 1444,
+            "pannable": true
+          },
+          "closed": true,
+          "returned_focus": true
+        },
+        "figure_details": null
+      }
+    },
+    {
+      "target": "visual-en",
+      "kind": "visual",
+      "viewport": {
+        "id": "desktop-1440x900",
+        "width": 1440,
+        "height": 900
+      },
+      "dom": {
+        "lang": "en",
+        "title": "Jing-Zhang In Situ: Making AI Visible, Human-Takeover-Ready, Verifiable, and Withdrawable",
+        "h1_count": 1,
+        "images": 12,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#phase4-residuals"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 13.3333,
+        "tables": 0,
+        "focusable_tables": 0,
+        "raw_png_links": 0,
+        "zoom_triggers": 11,
+        "figure_details": 0
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger"
+        ],
+        "table": null,
+        "drawer": {
+          "visible": true,
+          "focus_inside": true,
+          "inert_peers": 9,
+          "tab_inside": true,
+          "closed": true,
+          "returned_focus": true
+        },
+        "lightbox": {
+          "open": true,
+          "focus_inside": true,
+          "image_alt": "F01 relationship among three scope levels, Three Areas and Two Wings, twelve candidate responsibility transects, and three key areas; every extent remains a provisional rough constraint.",
+          "tab_trapped": true,
+          "zoom_200_pan": {
+            "image_css_width": "2748.78px",
+            "viewport_client_width": 1374,
+            "viewport_scroll_width": 2749,
+            "pannable": true
+          },
+          "closed": true,
+          "returned_focus": true
+        },
+        "figure_details": null
+      }
+    },
+    {
+      "target": "visual-en",
+      "kind": "visual",
+      "viewport": {
+        "id": "zoom-200-equivalent",
+        "width": 720,
+        "height": 450,
+        "note": "1440x900 CSS-pixel equivalent at 200% browser zoom"
+      },
+      "dom": {
+        "lang": "en",
+        "title": "Jing-Zhang In Situ: Making AI Visible, Human-Takeover-Ready, Verifiable, and Withdrawable",
+        "h1_count": 1,
+        "images": 12,
+        "broken_images": [],
+        "root_overflow_px": 0,
+        "bad_anchors": [],
+        "hrefs": [
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#content",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.html",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#site-overview",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#key-areas",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#scenario-matrix",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#operations-pathway",
+          "file:///C:/Users/qrzzz/.codex/worktrees/cf14/haidian/submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html#phase4-residuals"
+        ],
+        "remote_dom_references": [],
+        "reduced_motion": true,
+        "scroll_behavior": "auto",
+        "min_visible_font_px": 13.3333,
+        "tables": 0,
+        "focusable_tables": 0,
+        "raw_png_links": 0,
+        "zoom_triggers": 11,
+        "figure_details": 0
+      },
+      "local_reference_failures": [],
+      "requests": {
+        "remote": [],
+        "failed": []
+      },
+      "errors": {
+        "console": [],
+        "page": []
+      },
+      "keyboard": {
+        "first_focus": {
+          "tag": "A",
+          "className": "skip",
+          "href": "#content"
+        },
+        "skip_target": "MAIN#content",
+        "tab_sequence": [
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "A",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger",
+          "BUTTON.zoom-trigger"
+        ],
+        "table": null,
+        "drawer": {
+          "visible": true,
+          "focus_inside": true,
+          "inert_peers": 9,
+          "tab_inside": true,
+          "closed": true,
+          "returned_focus": true
+        },
+        "lightbox": {
+          "open": true,
+          "focus_inside": true,
+          "image_alt": "F01 relationship among three scope levels, Three Areas and Two Wings, twelve candidate responsibility transects, and three key areas; every extent remains a provisional rough constraint.",
+          "tab_trapped": true,
+          "zoom_200_pan": {
+            "image_css_width": "1348px",
+            "viewport_client_width": 674,
+            "viewport_scroll_width": 1348,
+            "pannable": true
+          },
+          "closed": true,
+          "returned_focus": true
+        },
+        "figure_details": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "schema": "jz-phase4-mupdf-qa/v1",
+  "purpose": "Independent second-renderer sampling after Poppler rendered all 28 pages at 200 DPI.",
+  "renderer": "PyMuPDF 1.28.2 / MuPDF 1.28.2",
+  "cases": [
+    {
+      "key": "a3_zh_cover",
+      "path": "drawings/a3-booklet.pdf",
+      "page": 1,
+      "dpi": 150,
+      "pixels": [
+        2482,
+        1754
+      ],
+      "expected_pixels": [
+        2481,
+        1754
+      ],
+      "selectable_text_characters": 395,
+      "sampled_pixels": 20916,
+      "nonwhite_ratio": 0.61914,
+      "near_black_ratio": 0.0,
+      "ok": true
+    },
+    {
+      "key": "a3_zh_f08",
+      "path": "drawings/a3-booklet.pdf",
+      "page": 9,
+      "dpi": 150,
+      "pixels": [
+        2482,
+        1754
+      ],
+      "expected_pixels": [
+        2481,
+        1754
+      ],
+      "selectable_text_characters": 326,
+      "sampled_pixels": 20916,
+      "nonwhite_ratio": 0.79269,
+      "near_black_ratio": 0.0,
+      "ok": true
+    },
+    {
+      "key": "a3_zh_f11",
+      "path": "drawings/a3-booklet.pdf",
+      "page": 12,
+      "dpi": 150,
+      "pixels": [
+        2482,
+        1754
+      ],
+      "expected_pixels": [
+        2481,
+        1754
+      ],
+      "selectable_text_characters": 373,
+      "sampled_pixels": 20916,
+      "nonwhite_ratio": 0.7533,
+      "near_black_ratio": 0.0,
+      "ok": true
+    },
+    {
+      "key": "a3_en_cover",
+      "path": "drawings/a3-booklet.en.pdf",
+      "page": 1,
+      "dpi": 150,
+      "pixels": [
+        2482,
+        1754
+      ],
+      "expected_pixels": [
+        2481,
+        1754
+      ],
+      "selectable_text_characters": 789,
+      "sampled_pixels": 20916,
+      "nonwhite_ratio": 0.62101,
+      "near_black_ratio": 0.0,
+      "ok": true
+    },
+    {
+      "key": "a3_en_f08",
+      "path": "drawings/a3-booklet.en.pdf",
+      "page": 9,
+      "dpi": 150,
+      "pixels": [
+        2482,
+        1754
+      ],
+      "expected_pixels": [
+        2481,
+        1754
+      ],
+      "selectable_text_characters": 592,
+      "sampled_pixels": 20916,
+      "nonwhite_ratio": 0.7926,
+      "near_black_ratio": 0.0,
+      "ok": true
+    },
+    {
+      "key": "a3_en_f11",
+      "path": "drawings/a3-booklet.en.pdf",
+      "page": 12,
+      "dpi": 150,
+      "pixels": [
+        2482,
+        1754
+      ],
+      "expected_pixels": [
+        2481,
+        1754
+      ],
+      "selectable_text_characters": 676,
+      "sampled_pixels": 20916,
+      "nonwhite_ratio": 0.75492,
+      "near_black_ratio": 0.0,
+      "ok": true
+    },
+    {
+      "key": "a0_zh_governance",
+      "path": "drawings/a0-boards.pdf",
+      "page": 2,
+      "dpi": 150,
+      "pixels": [
+        7021,
+        4967
+      ],
+      "expected_pixels": [
+        7021,
+        4966
+      ],
+      "selectable_text_characters": 850,
+      "sampled_pixels": 20008,
+      "nonwhite_ratio": 0.6279,
+      "near_black_ratio": 0.0,
+      "ok": true
+    },
+    {
+      "key": "a0_en_governance",
+      "path": "drawings/a0-boards.en.pdf",
+      "page": 2,
+      "dpi": 150,
+      "pixels": [
+        7021,
+        4967
+      ],
+      "expected_pixels": [
+        7021,
+        4966
+      ],
+      "selectable_text_characters": 1708,
+      "sampled_pixels": 20008,
+      "nonwhite_ratio": 0.6321,
+      "near_black_ratio": 0.0,
+      "ok": true
+    }
+  ],
+  "failures": [],
+  "ok": true
+}
