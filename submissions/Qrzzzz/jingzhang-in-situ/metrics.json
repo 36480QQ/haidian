@@ -4,6 +4,12 @@
     "length": "m",
     "area": "sqm"
   },
+  "phase": "phase2_spatial_evidence",
+  "independent_recalculation_summary": {
+    "known_metric_count": 21,
+    "independently_recomputable_count": 19,
+    "tolerance": "area/length <=0.5%; counts exact"
+  },
   "metrics": {
     "site_area_sqm": {
       "status": "known",
@@ -12,29 +18,274 @@
       "source_files": [
         "geometry/site_boundary.geojson"
       ],
-      "formula": "polygon_area(submitted_site_boundary)",
+      "formula": "area(EPSG:4548(site_boundary))",
       "confidence": "low",
       "assumptions": [
-        "Calculated from the provisional rough boundary registered as DATA-SRC-PROVISIONAL-BOUNDARIES-20260605.",
-        "The value is reproducible for intake self-check and scenario comparison only; it is not an official or precise site area."
-      ]
+        "Provisional rough boundary; not an official or precise site area."
+      ],
+      "baseline": "No official GIS/CAD boundary supplied.",
+      "action": "Retain one versioned provisional denominator.",
+      "target_or_observation_window": "Observe until official geometry arrives.",
+      "evidence_status": "provisional-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
+    },
+    "land_use_partition_area_sqm": {
+      "status": "known",
+      "value": 11412832.736,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "area(unary_union(EPSG:4548(land_use)))",
+      "confidence": "low",
+      "assumptions": [
+        "Agent-generated scenario partition, not statutory zoning."
+      ],
+      "baseline": "One complete four-part scenario partition.",
+      "action": "Preserve shared boundary coordinates.",
+      "target_or_observation_window": "Equals the provisional site within 0.5%.",
+      "evidence_status": "design-target-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
+    },
+    "land_use_gap_area_sqm": {
+      "status": "known",
+      "value": 0.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "formula": "topological_difference_in_EPSG:4326_then_area_in_EPSG:4548; empty geometry = 0",
+      "confidence": "medium",
+      "assumptions": [
+        "All partition and site coordinates share the same source vertices; zero means topology completeness only, not statutory validity.",
+        "Projecting independently densified polygon chords can create a false sliver, so topology is resolved before the common area projection."
+      ],
+      "baseline": "Potential untracked gaps.",
+      "action": "Use one shared partition logic.",
+      "target_or_observation_window": "0 sqm topology gap.",
+      "evidence_status": "zero-result-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true,
+      "adverse_or_unknown_result": true
+    },
+    "land_use_overlap_area_sqm": {
+      "status": "known",
+      "value": 0.0,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "pairwise_topological_intersection_in_EPSG:4326_then_area_in_EPSG:4548; line-only shared edge = 0",
+      "confidence": "medium",
+      "assumptions": [
+        "Zero means topology consistency only.",
+        "Shared boundary lines carry zero polygon area and are not overlaps."
+      ],
+      "baseline": "Potential double counting.",
+      "action": "Reuse identical shared vertices.",
+      "target_or_observation_window": "0 sqm topology overlap.",
+      "evidence_status": "zero-result-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true,
+      "adverse_or_unknown_result": true
+    },
+    "cross_section_candidate_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(feature.id startswith CX)",
+      "confidence": "high",
+      "assumptions": [
+        "Counts candidate analysis paths, not surveyed roads."
+      ],
+      "baseline": "Twelve named but previously non-locatable candidates.",
+      "action": "Bind CX01–CX12 to stable clipped paths.",
+      "target_or_observation_window": "12 candidates in this package version.",
+      "evidence_status": "candidate-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
+    },
+    "cross_section_surveyed_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(CX where surveyed=true)",
+      "confidence": "high",
+      "assumptions": [
+        "No field survey was conducted or claimed."
+      ],
+      "baseline": "No registered field survey.",
+      "action": "Keep false until a rights-cleared survey is registered.",
+      "target_or_observation_window": "0 surveyed candidates.",
+      "evidence_status": "negative-result-recomputable",
+      "recompute_trigger": "Registered fieldwork with date, method, coverage, consent, and reviewer sign-off.",
+      "independently_recomputable": true,
+      "adverse_or_unknown_result": true
+    },
+    "detailed_cross_section_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "count(CX where detailed_representative=true)",
+      "confidence": "high",
+      "assumptions": [
+        "Detail is a relational design target, not an existing-condition section."
+      ],
+      "baseline": "No Phase 2 representative sections.",
+      "action": "Develop only one different type per key area.",
+      "target_or_observation_window": "3 representative sections; 9 remain candidates only.",
+      "evidence_status": "design-target-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
+    },
+    "candidate_cross_section_total_length_m": {
+      "status": "known",
+      "value": 13885.278,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(length(EPSG:4548(CX candidate paths)))",
+      "confidence": "low",
+      "assumptions": [
+        "Length depends on provisional site clipping and is not a route or construction quantity."
+      ],
+      "baseline": "No locatable candidate paths.",
+      "action": "Clip twelve horizontal analysis transects to the same provisional site.",
+      "target_or_observation_window": "Package-internal comparison length.",
+      "evidence_status": "provisional-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_area features)",
+      "confidence": "high",
+      "assumptions": [
+        "Count is official-task grounded; polygons remain provisional."
+      ],
+      "baseline": "Three named areas in the taskbook.",
+      "action": "Retain exactly three prototypes.",
+      "target_or_observation_window": "3 named areas.",
+      "evidence_status": "task-fact-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
+    },
+    "background_observation_count": {
+      "status": "known",
+      "value": 15,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "sum(count(key_area.observations))",
+      "confidence": "high",
+      "assumptions": [
+        "Observations explicitly separate document facts, design targets, and unknowns."
+      ],
+      "baseline": "No structured Phase 2 observation ledger.",
+      "action": "Record five observations per named area.",
+      "target_or_observation_window": "15 observations.",
+      "evidence_status": "mixed-status-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
+    },
+    "spatial_action_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "sum(count(key_area.spatial_actions))",
+      "confidence": "high",
+      "assumptions": [
+        "Actions are conceptual design targets and not implementation commitments."
+      ],
+      "baseline": "No common structured action ledger.",
+      "action": "Record three actions per named area.",
+      "target_or_observation_window": "9 conceptual actions.",
+      "evidence_status": "design-target-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
     },
     "building_footprint_area_sqm": {
       "status": "known",
-      "value": 310807.184,
+      "value": 379028.169,
       "unit": "sqm",
       "source_files": [
         "geometry/buildings.geojson"
       ],
-      "formula": "sum(polygon_area(building_footprints))",
-      "confidence": "medium",
+      "formula": "sum(area(EPSG:4548(conceptual building footprints)))",
+      "confidence": "low",
       "assumptions": [
-        "The footprint is an agent-generated conceptual design layer, not a surveyed existing condition or approved building envelope."
-      ]
+        "Conceptual footprints only; not surveyed buildings or approved envelopes."
+      ],
+      "baseline": "One abstract rectangle.",
+      "action": "Use multiple prototype-specific interface footprints.",
+      "target_or_observation_window": "Scenario footprint sum.",
+      "evidence_status": "design-target-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
+    },
+    "building_feature_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(building features)",
+      "confidence": "high",
+      "assumptions": [
+        "Count describes proposal features only."
+      ],
+      "baseline": "1 feature.",
+      "action": "Avoid a single-block proxy.",
+      "target_or_observation_window": "6 conceptual features.",
+      "evidence_status": "design-target-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 2819839.524,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson"
+      ],
+      "formula": "sum(area(EPSG:4548(green-space scenarios)))",
+      "confidence": "low",
+      "assumptions": [
+        "Scenario layer, not statutory green space."
+      ],
+      "baseline": "One abstract rectangle.",
+      "action": "Use four related scenario polygons.",
+      "target_or_observation_window": "Scenario area sum.",
+      "evidence_status": "design-target-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.123423,
+      "value": 0.247076,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -43,13 +294,37 @@
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "low",
       "assumptions": [
-        "The numerator is an agent-generated conceptual design layer and the denominator is a provisional rough boundary.",
-        "Use only as a recalculable scenario indicator; publish with approximate precision and not as a statutory or engineering ratio."
-      ]
+        "Both numerator meaning and denominator authority remain provisional/design-only."
+      ],
+      "baseline": "Single-shape scenario ratio.",
+      "action": "Recompute from the shared site and multi-feature layer.",
+      "target_or_observation_window": "Package-internal scenario ratio.",
+      "evidence_status": "design-target-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 486173.635,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "sum(area(EPSG:4548(public-space scenarios)))",
+      "confidence": "low",
+      "assumptions": [
+        "Scenario layer, not cadastral or approved public space."
+      ],
+      "baseline": "One abstract rectangle.",
+      "action": "Use six role-specific public interfaces.",
+      "target_or_observation_window": "Scenario area sum.",
+      "evidence_status": "design-target-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.073281,
+      "value": 0.042599,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -58,170 +333,200 @@
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "low",
       "assumptions": [
-        "The numerator is an agent-generated conceptual design layer and the denominator is a provisional rough boundary.",
-        "Use only as a recalculable scenario indicator; publish with approximate precision and not as a statutory or engineering ratio."
-      ]
-    },
-    "green_space_area_sqm": {
-      "status": "known",
-      "value": 1408600.768,
-      "unit": "sqm",
-      "source_files": [
-        "geometry/green_space.geojson"
+        "Both numerator meaning and denominator authority remain provisional/design-only."
       ],
-      "formula": "sum(polygon_area(green_space))",
-      "confidence": "low",
-      "assumptions": [
-        "Recalculated from the agent-generated scenario layer; it is not a statutory green-space area."
-      ]
+      "baseline": "Single-shape scenario ratio.",
+      "action": "Recompute from the shared site and multi-feature layer.",
+      "target_or_observation_window": "Package-internal scenario ratio.",
+      "evidence_status": "design-target-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
     },
-    "public_space_area_sqm": {
+    "public_space_feature_count": {
       "status": "known",
-      "value": 836345.643,
-      "unit": "sqm",
+      "value": 6,
+      "unit": "count",
       "source_files": [
         "geometry/public_space.geojson"
       ],
-      "formula": "sum(polygon_area(public_space))",
-      "confidence": "low",
+      "formula": "count(public_space features)",
+      "confidence": "high",
       "assumptions": [
-        "Recalculated from the agent-generated scenario layer; it is not an approved public-space area."
-      ]
-    },
-    "land_use_area_by_code_sqm": {
-      "status": "unknown",
-      "value": null,
-      "unit": "sqm",
-      "source_files": [
-        "geometry/land_use.geojson"
+        "Count describes proposal features only."
       ],
-      "formula": "group_sum(polygon_area(land_use), land_use_code)",
-      "confidence": "unknown",
-      "assumptions": [],
-      "reason": "The current categories are an agent-generated scenario and the scalar metric contract cannot safely represent an approved code-by-code schedule; retain the geometry for later authoritative recalculation."
+      "baseline": "1 feature.",
+      "action": "Represent different interface roles.",
+      "target_or_observation_window": "6 conceptual features.",
+      "evidence_status": "design-target-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
     },
-    "total_floor_area_sqm": {
-      "status": "unknown",
-      "value": null,
-      "unit": "sqm",
-      "source_files": [
-        "brief/site-package/ranges/planning_limits.json"
-      ],
-      "formula": "sum(verified_building_floor_area)",
-      "confidence": "unknown",
-      "assumptions": [],
-      "reason": "Verified floor counts, surveyed building records, approved envelopes, and official controls are unavailable."
-    },
-    "building_coverage_ratio": {
-      "status": "unknown",
-      "value": null,
-      "unit": "ratio",
-      "source_files": [
-        "geometry/buildings.geojson",
-        "geometry/site_boundary.geojson"
-      ],
-      "formula": "verified_building_footprint_area_sqm / official_site_area_sqm",
-      "confidence": "unknown",
-      "assumptions": [],
-      "reason": "The footprint layer is conceptual and the official site denominator is unavailable; publishing a density-style control would imply false statutory precision."
-    },
-    "road_area_sqm": {
-      "status": "unknown",
-      "value": null,
-      "unit": "sqm",
-      "source_files": [
-        "geometry/roads.geojson"
-      ],
-      "formula": "sum(verified_road_redline_polygon_area)",
-      "confidence": "unknown",
-      "assumptions": [],
-      "reason": "Official road redlines and verified cross-sections are unavailable; the current network is conceptual."
-    },
-    "road_area_ratio": {
-      "status": "unknown",
-      "value": null,
-      "unit": "ratio",
-      "source_files": [
-        "geometry/roads.geojson",
-        "geometry/site_boundary.geojson"
-      ],
-      "formula": "verified_road_area_sqm / official_site_area_sqm",
-      "confidence": "unknown",
-      "assumptions": [],
-      "reason": "Neither the official road-area numerator nor the official site denominator is available."
-    },
-    "phasing_area_sqm": {
-      "status": "unknown",
-      "value": null,
-      "unit": "sqm",
+    "phasing_feature_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
       "source_files": [
         "geometry/phasing.geojson"
       ],
-      "formula": "group_sum(verified_project_area, approved_phase)",
-      "confidence": "unknown",
-      "assumptions": [],
-      "reason": "The current phasing layer represents conceptual work packages rather than approved project areas or timing."
-    },
-    "key_area_001_area_sqm": {
-      "status": "unknown",
-      "value": null,
-      "unit": "sqm",
-      "source_files": [
-        "geometry/key_areas.geojson"
+      "formula": "count(phasing features)",
+      "confidence": "high",
+      "assumptions": [
+        "Features are conditional packages, not an approved phasing plan."
       ],
-      "formula": "polygon_area(official_Zhongzhiyuan_key_area)",
-      "confidence": "unknown",
-      "assumptions": [],
-      "reason": "PROV-KEY-001 is a rough substitute, not an official detailed-design boundary."
+      "baseline": "One broad rectangle.",
+      "action": "Separate three prototypes and the spine audit.",
+      "target_or_observation_window": "4 conditional features.",
+      "evidence_status": "design-target-recomputable",
+      "recompute_trigger": "Any source geometry, CRS, clipping rule, or feature-status change reruns phase2-spatial-evidence.py and the full spatial gate.",
+      "independently_recomputable": true
     },
-    "key_area_002_area_sqm": {
-      "status": "unknown",
-      "value": null,
-      "unit": "sqm",
+    "osm_heritage_park_intersection_ratio": {
+      "status": "known",
+      "value": 0.0,
+      "unit": "ratio",
       "source_files": [
-        "geometry/key_areas.geojson"
+        "brief/site-package/geometry/provisional_boundaries_basis.md"
       ],
-      "formula": "polygon_area(official_AI_Origin_key_area)",
-      "confidence": "unknown",
-      "assumptions": [],
-      "reason": "PROV-KEY-002 is a rough substitute, not an official detailed-design boundary."
+      "formula": "documented_OSM_snapshot_intersection_area / provisional_site_area",
+      "confidence": "low",
+      "assumptions": [
+        "Background-only OSM check; raw snapshot is not included and the result cannot prove the provisional boundary wrong."
+      ],
+      "baseline": "Repository basis note records the mismatch check.",
+      "action": "Preserve as adverse evidence, not as a boundary correction.",
+      "target_or_observation_window": "0% documented intersection.",
+      "evidence_status": "background-only-negative",
+      "recompute_trigger": "Acquire rights-cleared raw snapshot or authoritative heritage geometry and rerun.",
+      "independently_recomputable": false,
+      "adverse_or_unknown_result": true
     },
-    "key_area_003_area_sqm": {
-      "status": "unknown",
-      "value": null,
-      "unit": "sqm",
+    "osm_named_street_average_offset_m": {
+      "status": "known",
+      "value": 667.0,
+      "unit": "m",
       "source_files": [
-        "geometry/key_areas.geojson"
+        "brief/site-package/geometry/provisional_boundaries_basis.md"
       ],
-      "formula": "polygon_area(official_Dazhongsi_key_area)",
-      "confidence": "unknown",
-      "assumptions": [],
-      "reason": "PROV-KEY-003 is a rough substitute, not an official detailed-design boundary."
+      "formula": "mean(documented nearest offsets for four named OSM street centre-lines)",
+      "confidence": "low",
+      "assumptions": [
+        "Crowdsourced centre-lines are not survey data or road redlines; raw snapshot is absent from the source registry."
+      ],
+      "baseline": "Repository basis note records 533–898 m offsets.",
+      "action": "Retain mismatch as a source-warning signal.",
+      "target_or_observation_window": "667 m documented average.",
+      "evidence_status": "background-only-adverse",
+      "recompute_trigger": "Register the raw snapshot and/or official road geometry before recalculation.",
+      "independently_recomputable": false,
+      "adverse_or_unknown_result": true
     },
     "floor_area_ratio": {
       "status": "unknown",
       "value": null,
       "unit": "ratio",
       "source_files": [
-        "brief/site-package/ranges/planning_limits.json"
+        "assumptions.json"
       ],
-      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "formula": "requires_authoritative_or_surveyed_input",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+      "baseline": "Missing input.",
+      "action": "Do not estimate.",
+      "target_or_observation_window": "Remain unknown until evidence arrives.",
+      "evidence_status": "unknown",
+      "recompute_trigger": "Register authoritative/rights-cleared source and rerun the full package.",
+      "reason": "Approved FAR control and verified floor area are unavailable.",
+      "adverse_or_unknown_result": true
     },
-    "key_area_count": {
-      "status": "known",
-      "value": 3,
+    "building_height_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "requires_authoritative_or_surveyed_input",
+      "confidence": "unknown",
+      "assumptions": [],
+      "baseline": "Missing input.",
+      "action": "Do not estimate.",
+      "target_or_observation_window": "Remain unknown until evidence arrives.",
+      "evidence_status": "unknown",
+      "recompute_trigger": "Register authoritative/rights-cleared source and rerun the full package.",
+      "reason": "Approved height controls and surveyed heights are unavailable.",
+      "adverse_or_unknown_result": true
+    },
+    "road_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "requires_authoritative_or_surveyed_input",
+      "confidence": "unknown",
+      "assumptions": [],
+      "baseline": "Missing input.",
+      "action": "Do not estimate.",
+      "target_or_observation_window": "Remain unknown until evidence arrives.",
+      "evidence_status": "unknown",
+      "recompute_trigger": "Register authoritative/rights-cleared source and rerun the full package.",
+      "reason": "Official road redlines and verified cross-sections are unavailable.",
+      "adverse_or_unknown_result": true
+    },
+    "pedestrian_flow_count": {
+      "status": "unknown",
+      "value": null,
       "unit": "count",
       "source_files": [
-        "brief/site-package/agent_taskbook.json"
+        "assumptions.json"
       ],
-      "formula": "count(required_key_detailed_design_areas_named_in_agent_taskbook)",
-      "confidence": "high",
-      "assumptions": [
-        "High confidence applies only to the textual requirement for three named key areas; their submitted polygons remain provisional-only and low confidence."
-      ]
+      "formula": "requires_authoritative_or_surveyed_input",
+      "confidence": "unknown",
+      "assumptions": [],
+      "baseline": "Missing input.",
+      "action": "Do not estimate.",
+      "target_or_observation_window": "Remain unknown until evidence arrives.",
+      "evidence_status": "unknown",
+      "recompute_trigger": "Register authoritative/rights-cleared source and rerun the full package.",
+      "reason": "No pedestrian count survey was conducted.",
+      "adverse_or_unknown_result": true
+    },
+    "accessible_route_pass_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "requires_authoritative_or_surveyed_input",
+      "confidence": "unknown",
+      "assumptions": [],
+      "baseline": "Missing input.",
+      "action": "Do not estimate.",
+      "target_or_observation_window": "Remain unknown until evidence arrives.",
+      "evidence_status": "unknown",
+      "recompute_trigger": "Register authoritative/rights-cleared source and rerun the full package.",
+      "reason": "No accessibility audit was conducted.",
+      "adverse_or_unknown_result": true
+    },
+    "heritage_control_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "assumptions.json"
+      ],
+      "formula": "requires_authoritative_or_surveyed_input",
+      "confidence": "unknown",
+      "assumptions": [],
+      "baseline": "Missing input.",
+      "action": "Do not estimate.",
+      "target_or_observation_window": "Remain unknown until evidence arrives.",
+      "evidence_status": "unknown",
+      "recompute_trigger": "Register authoritative/rights-cleared source and rerun the full package.",
+      "reason": "No authoritative heritage-control geometry was supplied.",
+      "adverse_or_unknown_result": true
     }
   }
 }

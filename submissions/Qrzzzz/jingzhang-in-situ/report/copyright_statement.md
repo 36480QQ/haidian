@@ -17,7 +17,7 @@
 | 精确路径 | 作者/生成方式 | 来源与许可基础 | 嵌入/再分发 | 限制 | 状态 |
 |---|---|---|---|---|---|
 | `proposal.md`; `proposal.en.md`; `report/narrative.md` | 投稿者在 Codex 辅助下编写和修订 | 投稿者原创表达；事实和案例仅按 `sources.json` 的逐项边界引用；投稿标签 `COMMUNITY-DISPLAY-ONLY` | 随投稿包再分发 | AI 辅助不构成不侵权保证；英文版本已于 2026-08-27 对照专名、主张强度、编号、来源标记和限制完成终稿复核 | `cleared`；最终 SHA-256 由 manifest 逐路径记录 |
-| `agent.json`; `manifest.json`; `self_check.json`; `metrics.json`; `assumptions.json`; `sources.json`; `compliance_matrix.json`; `standard_matrix.json`; `design_depth_matrix.json` | 投稿者与仓库脚本生成/维护的结构化元数据 | 仓库 schema、任务书与已登记来源；不复制其他投稿的表达、图件或专有资产 | 随投稿包再分发 | schema 兼容不代表现实数据获专业确认；权威状态由字段与限制单独表达 | `cleared`；2026-08-27 与最终 manifest 对账 |
+| `agent.json`; `manifest.json`; `self_check.json`; `metrics.json`; `assumptions.json`; `sources.json`; `compliance_matrix.json`; `standard_matrix.json`; `design_depth_matrix.json`; `visual/assets/phase2-source-freeze.json` | 投稿者与仓库脚本生成/维护的结构化元数据 | 仓库 schema、任务书与已登记来源；不复制其他投稿的表达、图件或专有资产 | 随投稿包再分发 | schema 兼容不代表现实数据获专业确认；URL-only 来源只冻结 canonical metadata hash，不把它误写成网页内容 hash | `cleared`；2026-08-27 与最终 manifest 对账 |
 
 `sources.json` 中的全球案例仅允许短篇事实转述、署名和链接，不复制网页图片、Logo、地图、长段文字或版式，也不在本地镜像页面。案例机制属于 `background_only`，不得替代本地现状、法定控制、合作承诺或绩效证据。
 
@@ -26,7 +26,7 @@
 | 精确路径 | 作者/来源 | 状态与允许用途 | 禁止用途 | 权利状态 |
 |---|---|---|---|---|
 | `geometry/site_boundary.geojson`; `geometry/key_areas.geojson` | 从仓库登记的 `DATA-SRC-PROVISIONAL-BOUNDARIES-20260605` 派生；其依据为官方公告文字、位置线索和约面积 | `provisional_only`、`low`；仅用于临时生成、离线展示、入口自检和醒目标注的方案内容评审 | 官方红线、精确空间证据、法定或工程结论、审批、权属、控规或实施依据 | 版权/再分发 `cleared`；数据权威仍为 `provisional_only`，正式几何到位后必须替换并全量重算 |
-| `geometry/buildings.geojson`; `geometry/green_space.geojson`; `geometry/land_use.geojson`; `geometry/phasing.geojson`; `geometry/public_space.geojson`; `geometry/roads.geojson` | 投稿者/agent 在临时范围内原创生成的概念设计层；输入链为本包 GeoJSON、assumptions 与 proposal | `conceptual_design`、`medium`；用于表达设计假设和可回退方案 | 不得称为测绘现状、审定用地、道路红线、批准建筑、工程线位、预算或工期承诺 | 版权/再分发 `cleared`；最终哈希由 manifest 记录，数据权威限制保持不变 |
+| `geometry/buildings.geojson`; `geometry/green_space.geojson`; `geometry/land_use.geojson`; `geometry/phasing.geojson`; `geometry/public_space.geojson`; `geometry/roads.geojson` | 投稿者/agent 在临时范围内原创生成的多要素概念设计层；输入链为本包 GeoJSON、assumptions、metrics 与 proposal | `design-target` / `candidate_not_surveyed`；用于表达可回退方案和现场核验计划 | 不得称为测绘现状、审定用地、道路红线、批准建筑、工程线位、预算或工期承诺；OSM 背景数据未复制进 required design layers | 版权/再分发 `cleared`；最终哈希由 manifest 记录，数据权威限制保持不变 |
 | `geometry/constraints.geojson` | 投稿者/agent 维护的刻意空集合 | 登记未取得官方控规、权属、道路、文保、市政等几何的缺口 | 不得以推定线代替 `official_constraint` | `cleared` 作为缺口说明；若将来加入要素须重新清权 |
 
 GeoJSON 中的数值小数位只服务机器复算，不提高来源权威；对公众展示必须使用合理约数和临时状态说明。
@@ -37,11 +37,11 @@ GeoJSON 中的数值小数位只服务机器复算，不提高来源权威；对
 
 | 图号 | 中文路径 | 英文路径 | 当前状态与限制 |
 |---|---|---|---|
-| F01 | `assets/figures/site-overview.png` | `assets/figures/site-overview.en.png` | `cleared`；原创本地栅格图，临时边界；已重渲染并完成 manifest 对账 |
-| F02 | `assets/figures/land-use-structure.png` | `assets/figures/land-use-structure.en.png` | 现有；概念设计，不是审定用地或逐栋拆改留结论 |
-| F03 | `assets/figures/key-areas.png` | `assets/figures/key-areas.en.png` | 已重生成；逐 ID 固定众智园 SC01/02/03/04、AI 原点 SC05/06/07、大钟寺 SC09/10/11，并把 SC08/SC12 单列为跨区支持；三处重点区边界仍为 `provisional_only` |
-| F04 | `assets/figures/mobility-bluegreen.png` | `assets/figures/mobility-bluegreen.en.png` | 现有；概念慢行/蓝绿结构，不是工程线位 |
-| F05 | `assets/figures/metrics-evidence.png` | `assets/figures/metrics-evidence.en.png` | 现有；只能显示低置信、可重算、约数指标 |
+| F01 | `assets/figures/site-overview.png` | `assets/figures/site-overview.en.png` | Phase 2 重生成；显示 12 条候选、0 条已踏勘和 3 处重点区；坐标不是测绘或工程线位 |
+| F02 | `assets/figures/land-use-structure.png` | `assets/figures/land-use-structure.en.png` | Phase 2 重生成；同边界情景分区缺口/重叠为 0，但不是审定用地、宗地或控规 |
+| F03 | `assets/figures/key-areas.png` | `assets/figures/key-areas.en.png` | Phase 2 重生成；三处共同尺度示意平面、5+3 记录、关系剖面和运营状态；逐 ID 固定载体并单列 SC08/SC12 跨区支持；边界仍 `provisional_only` |
+| F04 | `assets/figures/mobility-bluegreen.png` | `assets/figures/mobility-bluegreen.en.png` | Phase 2 重生成；只深化 CX02/CX05/CX10 的设计目标，其余九条保持 candidate/not surveyed |
+| F05 | `assets/figures/metrics-evidence.png` | `assets/figures/metrics-evidence.en.png` | Phase 2 重生成；显示可复算计数、负/零/未知结果、来源哈希和重算触发链 |
 | F06 | `assets/figures/identity-system.png` | `assets/figures/identity-system.en.png` | 已生成；Logo 为原创几何，不使用铁路标识、企业商标或未授权字标 |
 | F07 | `assets/figures/ai-ecosystem.png` | `assets/figures/ai-ecosystem.en.png` | 已生成；全球案例机制仅作有来源的背景转述，不复制案例视觉资产 |
 | F08 | `assets/figures/scenario-matrix.png` | `assets/figures/scenario-matrix.en.png` | 已生成；场景、角色、数据流和界面符号均为原创示意 |
@@ -49,7 +49,7 @@ GeoJSON 中的数值小数位只服务机器复算，不提高来源权威；对
 | F10 | `assets/figures/culture-wayfinding.png` | `assets/figures/culture-wayfinding.en.png` | 已生成；六级导视符号为原创，专名、固定状态词与双语文本于 2026-08-27 完成人工复核 |
 | F11 | `assets/figures/operations-pathway.png` | `assets/figures/operations-pathway.en.png` | 已生成；运营主体、资金、审批和服务能力均明确为建议，不写成既定承诺 |
 
-F01—F11 均已由同一可复现流程重建；最终文件哈希由 `manifest.json` 逐路径记录，任何再次重渲染都会使既有哈希作废并触发重新核验。
+F01—F05 由 Phase 2 扩展生成源从同一 GeoJSON/metrics 重建；F06—F11 保持 Phase 1 PNG 哈希不变。四份 PDF 和 visual HTML 再由两组图件同批生成；最终哈希由 `manifest.json` 逐路径记录，任何重渲染都会触发重新核验。
 
 ## 5. PDF 与 HTML
 
@@ -79,8 +79,9 @@ Noto Sans SC 以 SIL OFL 1.1 许可使用、修改、嵌入和再分发；本节
 
 | 路径/工具 | 用途 | 许可证/权利边界 | 状态 |
 |---|---|---|---|
-| `scripts/render_proposal_html.py`; `scripts/scaffold_ai_submission.py` | 仓库 HTML/投稿脚手架与渲染流程 | 实时上游基线 `70cd369cbb80d6b5da743422a3d0aa2d3a98e333`；`render_proposal_html.py` SHA-256 为 `fa19233623fb28466efca79da8e2f8109d54937abc41384ec375fd1126399dd8`；不把工具权利误写成输出内容许可 | `cleared` 作为生成证据；脚本本身不随投稿包重复分发 |
+| `scripts/render_proposal_html.py`; `scripts/scaffold_ai_submission.py` | 仓库 HTML/投稿脚手架与渲染流程 | 最终实时上游基线 `349a767d157798a6f1ec6d0e12ed97cabdacdb05`；不把工具权利误写成输出内容许可 | `cleared` 作为生成证据；脚本本身不随投稿包重复分发 |
 | `visual/assets/rebuild-visuals-source.json` | 当前 F01—F11、PDF、visual HTML 与字体子集生成器的可审阅 Python 源码快照 | 因投稿白名单不接受 `.py`，以 JSON 的 `source` 字段随包分发并纳入 manifest；还原后的 Python 源 SHA-256 为 `54fdc9bf0241f4bb4f98420c408af8c9e43edf87c5d3c31ef67f71578aa0b8cf`。JSON 同时保存精确工具版本、字体哈希、F08 carrier 合同、Git blob/LF 字节域及 PDF/WOFF2 非 bit-exact 边界 | `cleared`；2026-08-27 重建后已复核，审阅者可直接提取并运行 |
+| `visual/assets/phase2-spatial-evidence-source.json`; `visual/assets/phase2-visual-generator-source.json` | Phase 2 GeoJSON/metrics/source-freeze 与 F01—F05/HTML/PDF 的可审阅 Python 源码快照 | 以允许的 JSON `source` 字段分发，分别保存源 SHA、恢复文件名、依赖版本与生成合同；前者不抓取网络空间数据，后者复用已登记 Noto 字体链 | `cleared`；最终 JSON 与生成输出 SHA-256 由 manifest 记录 |
 | Pillow 12.2.0 | PNG 绘制 | MIT-CMU 类许可；工具许可不改变输入数据或输出内容权利 | `cleared` |
 | ReportLab 5.0.0 | PDF 生成 | BSD 类许可；工具许可不替代嵌入字体权利，本包字体权利单列核验 | `cleared` |
 | fontTools 4.63.0 | 字体固定化与 WOFF2 子集 | MIT 类许可；输出继续受 Noto Sans SC 的 OFL 1.1 约束 | `cleared` |
@@ -95,5 +96,5 @@ Noto Sans SC 以 SIL OFL 1.1 许可使用、修改、嵌入和再分发；本节
 3. 核对 `visual/assets/font-subset.css` 的 data-URI 子集、OFL 来源记录，并保持 HTML 网络请求为零。
 4. 用 PDF 字体检查工具确认四份 PDF 仅嵌入 Noto 子集，且许可证记录一致。
 5. 保留 Pillow、ReportLab、fontTools、Brotli 与随包渲染脚本证据；PDF 只按页面像素/版式/字体链复现，WOFF2 只按 glyph/cmap/字体属性/渲染像素复现，均不宣称整文件字节一致；未完成权利核验的可选封面已移除。
-6. 人工双语等价审查于 2026-08-27 完成，覆盖 13 章顺序、主命题、四个一级消息、十项 claim、专名、指标、SC/CX/IM/AP/U/C/TVS 与 F/T 编号、来源标记、图位和临时状态措辞。
+6. Phase 2 人工双语等价审查须覆盖 13 章顺序、主命题、四个一级消息、十项 claim、三处 5+3、三代表横断面、指标与负结果、SC/CX/IM/AP/U/C/TVS 与 F/T 编号、来源标记、图位和临时状态措辞。
 7. 对照最终 SHA-256 更新本台账；任何文件重渲染后原有清权状态自动退回 `needs_evidence`，直至重新复核。

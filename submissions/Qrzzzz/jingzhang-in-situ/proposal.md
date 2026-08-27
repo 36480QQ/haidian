@@ -21,6 +21,8 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 
 公告、面向智能体任务书、场地资料包、来源登记表和本地专业标准快照限定任务与表达；处理资料只承担导航作用。[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518] [source:REPO-SOURCE-REGISTRY]
 
+第 2 期资料冻结表逐项登记 publisher、URL/文件、发布日期或检索日、空间与时间范围、复用边界、采集—转换链、SHA-256、证据等级、限制和禁止用途。包内已有快照只按各自权利记录使用；无本地快照的案例只保留链接与释义。OSM 仅保留 2026-08-14 背景核对的 query/response hash 和“原始响应缺失、不可随包独立重放”说明，不进入 required design GeoJSON，也不称测绘成果。[source:DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814] [data:visual/assets/phase2-source-freeze.json#open_data_separation]
+
 组织方尚未提供三层范围和三处重点区的正式 polygon。SITE 与 KEY_AREA 是临时粗略约束，只能生成图件、入口自检和比较情景；不能证明红线、权属、审批、法定用地、精确面积或工程可行性。正式边界到位后，九类图层、指标、F01—F11、HTML 与 PDF 必须同批重算。[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] [data:geometry/site_boundary.geojson#SITE-001]
 
 法定控规、逐栋现状、结构消防、日照管线、文保、道路断面、客流停车、市政容量、企业人才底数和现场调查仍缺失。因此本文不填写未知 FAR、高度、密度、拆改留、红线或投资，不作桥隧、地下空间和审批判断。[standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [depth:existing_conditions_diagnosis]
@@ -49,9 +51,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 
 ### 十二个生活横断面
 
-南北向遗址公园是“一条在场脊柱”，CX01—CX12 是十二条待调查的东西向责任横断面，不是工程线位。每条后续用“现状—平面—剖面—运营”核验过街、无障碍、骑行、遮阴、首层、照明、座椅、维护、人工帮助和退出；当前不声明连通率或性能阈值。[depth:three_level_scope_framework] [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]
+南北向遗址公园是“一条在场脊柱”，CX01—CX12 已升级为可定位、可复核的候选分析路径；12 条均为 `candidate_not_surveyed`，不是工程线位、道路中线或现场成果。每条记录稳定 ID、坐标、类型、选择依据、主要用户、冲突、来源和现场核验项。[depth:three_level_scope_framework] [data:geometry/roads.geojson#SPINE-001] [data:geometry/roads.geojson#CX01] 候选总数与已踏勘数分别回到两项独立指标，`cross_section_surveyed_count=0` 明确保留未踏勘的负结果。[metric:cross_section_candidate_count] [metric:cross_section_surveyed_count]
 
-CX01—CX12 与 SC01—SC12 分开编号。类型依次为河岸研发、园区门户、研发院落、校园首层、成果转化、人才生活、社区缝合、小月河无障碍、轨道接驳、站城客厅、市场文化、安静照护；真实位置与尺寸待现场核验。
+CX01—CX12 与 SC01—SC12 分开编号。类型依次为河岸研发、公园门户、研发庭院、校园公共首层、成果转译、人才生活、社区缝合、小月河无障碍界面、轨道—公园连接、站城客厅、市集文化首层、安静照护。仅深化三种不同类型：CX02 公园门户、CX05 成果转译、CX10 站城客厅；其关系性剖面宽度全是 `design-target`，现状总宽与道路红线为 `unknown`，其余九条保持候选清单。[metric:detailed_cross_section_count] 三条代表剖面的逐项数据锚点如下。[data:geometry/roads.geojson#CX02] [data:geometry/roads.geojson#CX05] [data:geometry/roads.geojson#CX10]
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -89,25 +91,27 @@ F07 让土地、空间、产业、资金、人才、算力、数据、场景沿�
 
 临时用地仅检验公共开放、创新服务、生活照护和蓝绿连续。LU-001/LU-002 组织创新与公共界面，LU-003/LU-004 组织生活与蓝绿情景；完整覆盖不证明法定用途。[data:geometry/land_use.geojson#LU-001] [data:geometry/land_use.geojson#LU-002]
 
+四块情景用地复用完全相同的共享边界坐标：缺口和重叠均为 0 m²。这一结果只证明包内 partition 拓扑一致，不把情景升级为法定用地、宗地、控规或权属结论。[metric:land_use_gap_area_sqm] [metric:land_use_overlap_area_sqm]
+
 FAR、高度、密度、建筑规模和永久建设等待正式控规及逐栋资料。[data:geometry/land_use.geojson#LU-003] [data:geometry/land_use.geojson#LU-004] [depth:development_intensity_controls]
 
 ![F02 KEEP / OPEN / INTENSIFY 与概念用地结构](assets/figures/land-use-structure.png)
 
 ## 重点区域详细设计
 
-三处原型使用同一“空间—场景—人工—证据—撤回”评审框架，但承担不同责任。[depth:three_key_area_detailed_design] [metric:key_area_count]
+三处原型使用同一 400 m × 400 m `design-target` 比较框和“平面—关系剖面—运营状态”图例，但承担不同责任；400 m 是共同尺度画布，不是实测边长。每处都登记 5 条背景观察和 3 项空间动作，尺寸逐项标注 `open-data-derived`、`design-target` 或 `unknown`。[depth:three_key_area_detailed_design] [metric:key_area_count] [metric:background_observation_count] 空间动作总数另行按结构化字段精确计数。[metric:spatial_action_count]
 
 ### 众智园 AI 自主创新加速区
 
-“河岸验证界面”以验证庭、可逆展示廊和受控测试庭承接 SC01 旗舰及 SC02、SC03、SC04 支持项；公开协议、状态和失败记录。权属、河岸、能源、消防与接驳待核验。[data:geometry/key_areas.geojson#PROV-KEY-001]
+**背景观察**：①公告命名并给出约 192.1 公顷（`open-data-derived`）；②一期固定 SC01—SC04、SC01 为旗舰（`design-target`）；③任务线索要求处理园带与创新载体关系；④正式 polygon、权属和道路红线未知；⑤出入口、树荫、坡度、客流和无障碍连续性未调查。**空间动作**：验证庭院、园带接口、可逆证据前场；三者依次把受控测试与旁观、慢行与人工帮助、可断电与可移除条件并置。CX02 只给关系性设计目标，真实河岸、能源、消防和接驳待核验。[data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/roads.geojson#CX02]
 
 ### 北京 AI 原点社区
 
-“开放首层校园”以步行回路连接 SC05 旗舰和 SC06、SC07 支持项；人工顾问决定引荐，权属、消防、运营与无障碍是进入条件。[data:geometry/key_areas.geojson#PROV-KEY-002]
+**背景观察**：①公告命名并给出约 104.3 公顷（`open-data-derived`）；②一期固定 SC05—SC07、SC05 为旗舰；③成果转化、人才服务和开放共享来自任务；④校园开放边界、首层使用和消防未知；⑤居民、学生、研发及配送时段流量未调查。**空间动作**：开放首层环、成果转译诊所、照护服务节点；人工顾问决定引荐，并保留非智能入口、安静绕行和社区服务时段。CX05 是关系剖面设计目标，不是已建或已开放事实。[data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/roads.geojson#CX05]
 
 ### 大钟寺 AI 产业聚集区
 
-“站城四象限客厅”承接 SC10 旗舰和 SC09、SC11 支持项；地面连续和人工服务优先，不承诺地下联通、招商或改造。[data:geometry/key_areas.geojson#PROV-KEY-003]
+**背景观察**：①公告命名并给出约 72.0 公顷（`open-data-derived`）；②一期固定 SC09—SC11、SC10 为旗舰；③站城到达、公共体验和文化表达来自任务；④车站界面、商业权属、消防与撤场路线未知；⑤换乘、消费、摊位和文化访客流量未调查。**空间动作**：四象限到达环、公众试用室、市集文化界面；其中试用室只承载唯一 SC10＋IM06 首用试验。CX10 把到达、试用、人工投诉和撤场并置，但不承诺地下联通、招商或改造。[data:geometry/key_areas.geojson#PROV-KEY-003] [data:geometry/roads.geojson#CX10]
 
 场景归属按逐 ID 冻结：众智园为 SC01、SC02、SC03、SC04；AI 原点为 SC05、SC06、SC07；大钟寺为 SC09、SC10、SC11。SC08 是整条在场脊柱的跨区无障碍支持，SC12 是三处原型共用的公共服务与人工转接支持，二者不归入任一连续编号片区。
 
@@ -166,11 +170,11 @@ F08 用同一 ID 索引 3 旗舰＋9 支持，不改变后台 SC01—SC12。[dat
 
 ## 交通、轨道、市政与公共服务设施
 
-交通优先步行、无障碍、骑行、公交接驳与必要机动车。站口先改善地面可读和人工服务；缺少红线、断面、客流、停车资料时不作容量、安全、桥隧或地下工程结论。[depth:traffic_rail_slow_parking] [data:geometry/roads.geojson#ROAD-001]
+交通优先步行、无障碍、骑行、公交接驳与必要机动车。站口先改善地面可读和人工服务；缺少红线、断面、客流、停车资料时不作容量、安全、桥隧或地下工程结论。[depth:traffic_rail_slow_parking] [data:geometry/roads.geojson#SPINE-001]
 
 边缘节点可结合座椅、遮阴、照明和状态告知，但供电、散热、噪声、网络、消防、排涝和维护须由专业团队确认；高风险服务必须切换人工或静态模式。
 
-十二横断面的交通审计优先记录真实冲突和责任：不同时间的步行与骑行、无障碍连续、公交换乘、装卸停车、应急通道、照明遮阴和人工求助。只有来源、日期、方法和覆盖范围登记齐全，才可把调查升级为设计依据；否则保留“待调查”，不生成通行能力或停车需求数字。
+十二横断面现在提供逐条现场核验清单：合法路径与权属、现状宽度与障碍、铺装与坡度、过街等待、遮阴休息、轮椅回转、昼夜人流、维护及应急通行。只有来源、日期、方法、覆盖范围、同意与责任人登记齐全，才可把对应项升级为调查证据；本期全部保持“未踏勘”，不生成通行能力、无障碍通过率或停车需求数字。[metric:pedestrian_flow_count] [metric:accessible_route_pass_rate]
 
 ![F04 南北脊柱、东西横断面、蓝绿慢行与公共体验路线](assets/figures/mobility-bluegreen.png)
 
@@ -232,7 +236,9 @@ F08 用同一 ID 索引 3 旗舰＋9 支持，不改变后台 SC01—SC12。[dat
 
 ## 指标体系、面积复算与合规矩阵
 
-已知指标只限于可重算的临时范围面积、情景建筑基底、情景绿色/公共空间比例和任务书规定的重点区数量；图中降低精度并紧邻“临时边界复算值”。用地分项面积、总建面、建筑密度、道路面积/比例、分期面积、三重点区分项面积、法定 FAR/高度、客流、市政余量和实施绩效保持 `unknown`，等待权威数据或专业复核。[metric:site_area_sqm] [depth:metrics_recalculation]
+本期共 21 项已知/记录指标，其中 19 项可从随包 GeoJSON 和结构化字段独立复算；面积/长度使用 EPSG:4548，误差门槛 ≤0.5%，计数必须完全一致。每项都按“基线—动作—目标或观察窗口—证据状态—复算触发器”登记，并保留 `status/value/unit/source_files/formula/confidence/assumptions`。[metric:site_area_sqm] [metric:candidate_cross_section_total_length_m] [depth:metrics_recalculation]
+
+不利、零值和未知不会被删去：12 条候选中已踏勘为 0；情景用地缺口/重叠为 0；这些结果分别回到计数与拓扑指标。[metric:cross_section_surveyed_count] [metric:land_use_gap_area_sqm] [metric:land_use_overlap_area_sqm] OSM 背景核对记录遗址公园相交 0% 与四条命名道路平均偏移 667 m。[metric:osm_heritage_park_intersection_ratio] [metric:osm_named_street_average_offset_m] FAR、高度、道路面积、客流、无障碍通过率和文保控制面积仍为 `unknown`；OSM 两项因原始响应缺失不计入 19 项随包独立复算，也不能据此修改 provisional 边界。[metric:floor_area_ratio]
 
 F05 是证据权威与重算链；三份矩阵保存逐项后台证据。六个 agent 的 31 项 required outputs 在 `compliance_matrix.json` 中逐项指向章节、F 图、T 表或结构化文件，不再用相同文件列表代替完成证明。[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [source:REPO-SOURCE-REGISTRY]
 
@@ -272,7 +278,7 @@ F05 是证据权威与重算链；三份矩阵保存逐项后台证据。六个 
 
 ## 参考资料
 
-公告和任务书限定任务，专业标准限定表达深度，来源登记表限定用途，临时边界只支持生成与复算。`REPO-PROCESSED-FACT-PACK` 仅作导航；七案例均为 `background_only`。读者可通过 `sources.json`、`assumptions.json`、`metrics.json`、GeoJSON 和三份矩阵回溯。[source:REPO-PROCESSED-FACT-PACK]
+公告和任务书限定任务，专业标准限定表达深度，来源登记表限定用途，临时边界只支持生成与复算。`REPO-PROCESSED-FACT-PACK` 仅作导航；七案例均为 `background_only`。读者可通过 `visual/assets/phase2-source-freeze.json`、`sources.json`、`assumptions.json`、`metrics.json`、GeoJSON 和三份矩阵回溯。[source:REPO-PROCESSED-FACT-PACK]
 
 引用顺序遵循“直接来源优先、登记信息辅助、处理包只导航”。来源失效、用途越界或权威版本冲突时，相邻 claim 自动降级并进入 AP1；不能用案例、搜索摘要或生成文本替代正式附件。图件中的来源短码须能返回同一登记项，英文稿也不得删除限制或提升确定性。
 

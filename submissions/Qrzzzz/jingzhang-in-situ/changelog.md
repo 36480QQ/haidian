@@ -1,5 +1,17 @@
 # 方案迭代记录
 
+## v0.6 - 2026-08-27
+
+### Phase 2 spatial evidence
+
+- Rebased the frozen Phase 1 submission tree and the Phase 2 commit onto final live `upstream/main=349a767d157798a6f1ec6d0e12ed97cabdacdb05`. The final 19-commit delta from the initial Phase 2 base changed 70 files, all under other submissions; rules, required inputs, source registry, validators, and this submission had zero drift.
+- Added a hash-bound Phase 2 source freeze with item-level rights and use limits; URL-only precedents carry canonical metadata hashes, not fabricated webpage-content hashes. The OSM check remains background-only and non-replayable because raw response bytes are absent.
+- Upgraded CX01–CX12 to stable candidate/not-surveyed paths with individual rationale, users, conflicts, sources, and field checklists. Only CX02, CX05, and CX10 carry representative relationship-section design targets.
+- Added five background observations and three spatial moves for each of Zhongzhiyuan, AI Origin, and Dazhongsi, using one 400 m design-target comparison frame, relational sections, and open/human/stop/remove overlays.
+- Replaced single-line/single-rectangle proposal proxies with multiple role-specific ROAD, BUILDING, GREEN_SPACE, PUBLIC_SPACE, and PHASING features. The four-part land-use scenario remains a complete shared-edge partition with zero topological gaps and overlaps.
+- Expanded metrics to 21 known/documented values, 19 independently package-recalculable; preserved zero surveyed sections, zero topology gaps/overlaps, adverse OSM mismatch records, and unknown FAR/height/road/flow/accessibility/heritage controls.
+- Regenerated bilingual F01–F05, visual HTML, report HTML, and four PDFs from the Phase 2 sources while keeping F06–F11 pixel assets unchanged and preserving all Phase 1 scenario/carrier/first-use contracts.
+
 ## v0.5 - 2026-08-27
 
 ### Phase 1 F08 carrier audit repair

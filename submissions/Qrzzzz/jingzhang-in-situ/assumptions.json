@@ -107,6 +107,50 @@
         "visual/index.en.html"
       ],
       "recalculation_trigger": "Complete a dated human bilingual review covering proper names, claims, approximate indicators, source IDs, scenario limits, figure numbers and on-figure locations."
+    },
+    {
+      "id": "A-CX-001",
+      "status": "candidate_not_surveyed",
+      "statement": "CX01–CX12 are stable candidate analysis paths clipped to the provisional site. Only CX02, CX05 and CX10 carry representative relationship-section design targets; none is a surveyed street section, accessibility audit, pedestrian count, road redline or engineering alignment.",
+      "impact": "Coordinates support repeatable comparison and fieldwork planning only. All existing widths, gradients, obstructions, crossings, user counts, ownership and maintenance duties remain unverified.",
+      "affected_files": [
+        "geometry/roads.geojson",
+        "metrics.json",
+        "assets/figures/mobility-bluegreen.png",
+        "assets/figures/mobility-bluegreen.en.png",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "recalculation_trigger": "Register rights-cleared fieldwork with date, method, coverage, coordinates, consent, accessibility method and accountable reviewer; then replace candidate geometry and recalculate all dependent files."
+    },
+    {
+      "id": "A-DIMENSION-001",
+      "status": "mixed_evidence_status",
+      "statement": "Every Phase 2 dimension is tagged open-data-derived, design-target or unknown. Announced approximate key-area values are open-data-derived; 400 m comparison frames and representative-section bands are design targets; official extents, redlines and existing widths remain unknown.",
+      "impact": "No design target may be read as a measured fact or statutory control.",
+      "affected_files": [
+        "geometry/key_areas.geojson",
+        "geometry/roads.geojson",
+        "assets/figures/key-areas.png",
+        "assets/figures/mobility-bluegreen.png",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "recalculation_trigger": "Any authoritative dimension or survey replaces only the matching field, then regenerates metrics, figures, HTML and PDFs."
+    },
+    {
+      "id": "A-OPEN-DATA-NEGATIVE-001",
+      "status": "background_only_negative_result",
+      "statement": "The repository boundary-basis note records a 0% OSM heritage-park intersection and a 667 m average offset to four named OSM street centre-lines in a dated check. The raw OSM snapshot is not registered in the package.",
+      "impact": "These adverse results are retained as warnings. They neither invalidate nor validate the provisional polygon and cannot support survey, heritage-control, official-boundary or road-redline conclusions.",
+      "affected_files": [
+        "visual/assets/phase2-source-freeze.json",
+        "metrics.json",
+        "assets/figures/metrics-evidence.png",
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "recalculation_trigger": "Acquire an attributable, rights-cleared raw snapshot and/or authoritative geometry, register its hash and license, and rerun the comparison."
     }
   ]
 }
