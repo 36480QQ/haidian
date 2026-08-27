@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "de46085f0fca2a576a6713aa6dcc19d3dc93802e94014f55f18578e2f86c67f2"
+      "sha256": "34642ce88e76e91002d832d6b12b0e157cc248cdbc665e5ddf673db47960ec61"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "b629061ac0ebf40d420c079d0b34ad7f11eb759b0ac77763fd11f68d4d1ffb7e"
+      "sha256": "01052d8c5eed802b9d2abc8a1d73cca35df3fe33e6af4810e83791fcfe595c69"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "23edee80c18f8f01b653652e352f0566df1c0efd8b5fa7d02b460f366be03aee"
+      "sha256": "dfff2ca3004e3c7ec8752e5d9e27f01c7948845de036e890624c21343b189bf4"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e930862a5f6493a9f81a8020299f66da6cf977bc9a951976dfe4b1a29d282c57"
+      "sha256": "461406a17b172c88b02fd25eb32036aa51900e1a3949908bfaabdc810263a26f"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "60a62ffbe0fc0fa9e240d8079423b23bad22058c736a7ba063a76433d1548b14"
+      "sha256": "7ad5ca58459e6f01e6b5b0640eea6b4feaff1b0c2116d46cddd900f6f18966ba"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4d6bec43b7d29edbba0b7b3952655e5aefa60694a883f21746b08da9892927d7"
+      "sha256": "7ddb172b452a93315431fc7025a81ce87bc8a08ee5c8c7a43686ab72bcec4603"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "69cc6cca7b80f4316605ecc088b240cccbb03ce4c852055e0a897245098ee9b2"
+      "sha256": "02bc22f2c85b1fba5db56723b2ba2a4444a3a049c144f460393390feece96a72"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "7c7512e378084640d52a63258217915cc862fc77c1d74e9fcb25d4dfcbe6b8ef"
+      "sha256": "86e985c3208025f613466a8793c0f06291733b7173043abdda3182199ce80543"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "535f439c9f320c87976a9c862ea63becac98811d630a39a39236dddf41c5b418"
+      "sha256": "268686d9a7bbd8076ea7f8502d46a566f148c5a015dccde4f66975209842a65d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "3b414c0cacee6cbbfc2c5a27509a30b4d6ba5d69ac72a6660d22c81314df9eab"
+      "sha256": "dc464152cdfb4fd00d1bff84d67e219573c099b922ad87fbb212c9a05fed904d"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "feaf12dcc43ea0579c8a37915fa51dd482e9cd94f7497cdc2840e13b2f981838"
+      "sha256": "d76a4b39d665d347b1daa266c052b11b9d004e02f467069c0ff190f0e1540d5c"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c914bca3069fa1b04ce29f77158122e931ae883283013dae0213ef36f3d320b4"
+      "sha256": "5850aaf986e9bcfa0d9dae628e1f8b53e2e77d77ee7430d886389670a7c4b3ab"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -394,7 +394,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "d6a026ec7638c7bc33bb70101ae20b17e8747dfe3d9b53a235c259c53ecd6ab7"
+      "sha256": "cd57d8dadc2953b10e2c133c32d7945b559c6608839cb9f5824bdf1de60b731d"
     }
   ],
   "validation_claim": {
