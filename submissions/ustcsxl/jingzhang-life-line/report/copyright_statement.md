@@ -9,7 +9,7 @@ The proposal text, graphic composition, logo, figures, offline pages, PDF layout
 Suggested repository licence field: `COMMUNITY-DISPLAY-ONLY`, subject to the upstream call rules and the account owner's final review.
 
 
-## v1.4 中文离线可读性与字体许可
+## v1.5.0 中文离线可读性与字体许可
 
 - 构建期字体：Noto Sans CJK SC Regular/Bold，来自 Noto CJK 项目；许可为 SIL Open Font License 1.1。
 - 投稿包不包含、复制或分发任何 `.ttf`、`.ttc`、`.otf`、`.woff` 或 `.woff2` 字体文件。
@@ -17,3 +17,17 @@ Suggested repository licence field: `COMMUNITY-DISPLAY-ONLY`, subject to the ups
 - 同位透明语义层保留标题、正文、表格、脚注、证据标签和视觉复核关键词，支持浏览器查找、复制、辅助技术及机器检查；它不是可见内容的替代，而是与可见矢量字形一一对应。
 - 构建方法只输出当前成果所需字形轮廓，不输出完整字体、字符映射表或可还原字体文件。
 - 来源登记见 `sources.json` 的 `NOTO-CJK-OFL`；构建机的 Debian `fonts-noto-cjk` 版权记录指向 Noto CJK 上游并载明 OFL 许可。
+
+
+## v1.5.0 accessibility and experience layer
+
+- `service-continuity-storyboard.webp` and its English counterpart are original generated vector/raster compositions produced with Python/Pillow from abstract geometry and pictograms. They contain no photograph, map tile, identifiable person, logo, private interior or observed site condition.
+- Chinese glyphs used during build-time rasterization come from the locally installed Noto Sans CJK family under SIL Open Font License 1.1; no font file, subset or reusable font program is distributed in this package.
+- The storyboard is labelled as a generated concept expression and is not evidence of existing conditions, public consent, approval or implementation.
+- Offline HTML uses specific alternative text, visible full report content, static visual fallbacks and reduced-motion CSS. No remote font, script, tile, API, tracker or form is used.
+
+## v1.5.0 frozen presentation layer
+
+- The current visible Chinese HTML layer is composed of original raster or glyph-outline boards generated at build time with Noto Sans CJK SC under SIL OFL 1.1; no font file is included or redistributed.
+- `visual-hero-v150*.webp`, `report-overview-v150*.webp`, `visual-dashboard-v150*.webp`, `regional-synergy-v150*.webp`, `key-areas-detail-v150*.webp`, and `service-continuity-storyboard-v150*.webp` are original generated diagrams. They contain no photograph, map tile, identifiable person, third-party logo, private interior, or observed site condition.
+- Generated diagrams are presentation artifacts only. GeoJSON, metrics, matrices and later signed operating records remain authoritative.
