@@ -192,6 +192,10 @@ This package connects SEB v0.5.0 and Switchback Protocol v0.3.0 to the existing 
 
 Versions, snapshot commits, SHA-256 values and licence boundaries are in `visual/assets/three-area-operations-audit.json` and `sources.json`; all three areas remain `concept_only`, and protocol fields cannot replace G1, G3 or G4 decisions [source:SEB-V050-ISSUE] [source:SWITCHBACK-V030-ISSUE] [metric:operations_audit_gate_count].
 
+### Independent Evidence-Chain Recheck (Review Register)
+
+For future site or professional review, this package adds an independent offline evidence-chain register: every claim is bound to source IDs, current byte snapshots, metric interpretation, accountable roles and stop conditions, while package-structure evidence is separated from pending external confirmation. It is a review working paper, not an official review decision; the boundary remains `optional_crosswalk_concept_only`, and provisional geometry, design targets and protocol fields are not presented as field facts, external levels, implementation authorisation or official endorsement [source:EVIDENCE-CHAIN-REVIEW] [data:visual/assets/evidence-chain-review.json#claims].
+
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 | Persona | Core needs |

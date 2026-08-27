@@ -196,6 +196,10 @@ AI 原点交接院把学习者、照护者与低数字素养使用者放在同�
 
 版本、提交快照、SHA-256 与许可证边界见 `visual/assets/three-area-operations-audit.json` 和 `sources.json`；三处仍是 `concept_only`，协议字段不能替代 G1、G3 或 G4 决定 [source:SEB-V050-ISSUE] [source:SWITCHBACK-V030-ISSUE] [metric:operations_audit_gate_count]。
 
+### 独立证据链复核（可复核登记）
+
+为便于后续现场或专业复核，本包新增一份独立的离线证据链登记：每条主张都绑定来源 ID、当前字节快照、指标解释、责任角色和停止条件，并明确区分“包内结构证据”与“待外部确认”。它是复核工作底稿，不是官方审查结论；当前边界仍为 `optional_crosswalk_concept_only`，不会把临时几何、设计目标或协议字段写成现场事实、外部等级、实施授权或官方背书 [source:EVIDENCE-CHAIN-REVIEW] [data:visual/assets/evidence-chain-review.json#claims]。
+
 ## AI 创新生态、人才画像与 AI+ 场景
 
 八类画像把技术岗位与城市运行岗位放在同一张需求表中：
