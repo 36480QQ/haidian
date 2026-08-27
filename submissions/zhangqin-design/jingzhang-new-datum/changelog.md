@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v2.4 — clean English A0 reconstruction
+
+- Rebuilt only the English A0 set after principal review; the accepted English A3 booklet remains unchanged.
+- Removed the raster-overlay workflow that caused residual Chinese text, label collisions and panel misalignment.
+- Reconstructed all three English A0 boards from the accepted English A3 plans, scenes and analytical diagrams while preserving the approved three-board narrative: overall proposition, three areas/five nodes, and delivery/governance.
+- Applied fixed host frames and exact aspect-ratio crops so every plan and scene remains inside its intended panel without stretching, overlap or drift.
+- Rendered and inspected the compressed three-board PDF for residual Chinese narrative text, incorrect crops, clipped headings, blank/black image regions and A0 page dimensions.
+
 ## v2.3 — same-layout English drawing rebuild
 
 - Replaced the interim side-panel English companions with same-layout English A0 and A3 drawings derived directly from the latest Chinese masters.
