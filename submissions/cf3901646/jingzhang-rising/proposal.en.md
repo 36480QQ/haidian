@@ -1,5 +1,5 @@
 ---
-title: "JINGZHANG RISING - **A Century of Self-Reliance**, the Character for People Rising"
+title: "JINGZHANG RISING - A Century of Self-Reliance, the Character for People Rising"
 author_github: "cf3901646"
 language: "en"
 translation_of: "proposal.md"
@@ -1463,7 +1463,7 @@ On the failure tests. The final column is not a disclaimer; it is the methodolog
 
 What does an innovation corridor leave behind in the end? Not buildings, which age; not single events, which disperse. Only three things endure [depth:phasing_implementation]:
 
-First: brand equity. The name, the "Herringbone Rising" motif, the Four Origins and the Bell of Compute form an extensible visual and narrative system that can be deployed across events, publishing, cultural products, wayfinding and international communication without loss of consistency. The test is simple: if a different team runs this ten years from now, will this identity still be recognisable? The proposal therefore requires the visual identity to be open-sourced alongside the submission for non-commercial reuse, rather than locked within a single operating company — widely used symbols become assets; monopolised symbols become liabilities.
+First: brand equity. The name, the "Herringbone Rising" motif, the Four Origins and the Bell of Compute form an extensible visual and narrative system that can be deployed across events, publishing, cultural products, wayfinding and international communication without loss of consistency. The test is simple: if a different team runs this ten years from now, will this identity still be recognisable? The proposal therefore **recommends that, on adopting this scheme, the organiser separately release the visual identity under an explicit public licence** permitting non-commercial reuse, rather than locking it inside a single operating company — widely used symbols become assets; monopolised symbols become liabilities. To be precise: this submission package itself is supplied under `COMMUNITY-DISPLAY-ONLY` and grants no reuse right whatsoever. The public licence above is a recommendation addressed to the organiser, to be decided and issued separately by the rights holder; this proposal does not purport to grant it [assumption:A-LICENCE-001].
 
 Second: collaboration channels. The value of "one congress, one contest, one festival, one list" lies not in holding meetings, but in regularly generating continuing relationships: the Open-Source Congress creates an annual contact point for international teams; the Challenge creates continuous pairing between enterprises and venue owners; the Contribution List creates an enduring identity bond between developers and the corridor. The proposal recommends establishing institutional landing mechanisms — corridor desks, scenario-opening catalogues, open-source maintainer seats — so that when the congress ends, the channel remains open.
 
@@ -1534,7 +1534,7 @@ This proposal does not reduce risk to a disclaimer; it sets it out as a register
 | R2 | current regulatory plan conditions not obtained | high | plot ratio, height limit and total floor area cannot be given | the three are marked `status: unknown`; no inference |
 | R3 | land ownership and title relations unknown | high | feasibility and sequence of renewal projects undetermined | the renewal list gives categories and order only, not plot-level disposal |
 | R4 | structural safety appraisals missing | high | retain-renovate-demolish cannot be concluded | criteria only; explicitly no demolition decisions |
-| R5 | traffic and patronage surveys missing | medium | the scale of station integration and stitching links cannot be verified | organising principles and indicative positions only; no sections or capacities |
+| R5 | traffic and patronage surveys missing | medium | the **scale** of station integration and stitching links cannot be verified | sections, signal timing, parking caps and equipment spacing are **all given as concept assumptions and registered line by line** in the "concept parameter register" below [assumption:A-TRANSPORT-001] |
 | R6 | underground and civil defence conditions unknown | medium | feasibility of vertical development unknown | station-city integration confined locally and preconditioned |
 | R7 | population and employment data missing | medium | the scale of public service provision cannot be verified | provision principles and catchment logic only |
 | R8 | heritage and historic building registers incomplete | medium | positions of cultural anchors may need to move | anchor positions are indicative, subject to heritage authority confirmation |
@@ -1542,6 +1542,22 @@ This proposal does not reduce risk to a disclaimer; it sets it out as a register
 | R10 | governance mechanism degrades in practice | medium | human fallback and report cards become formalities | four failure modes and responses already set out |
 
 A standard for disclosure. R1 to R4 are high-rated, and share one characteristic: conclusions are unobtainable because data is missing. This proposal treats all four the same way — it declines to answer explicitly, and states the reason and the conditions under which an answer becomes possible — rather than filling the gap with design inference. That is this proposal's basic understanding of professionalism [standard:MOHURD-CONTROL-DETAILED-PLANNING].
+
+#### Concept parameter register: which figures are not verified against site or specialist data
+
+One class of number, touched by R5, R6 and R7, needs to be stated separately. This proposal does give specific figures — section widths, signal timings, parking caps, equipment spacing — down to the decimal. That is deliberate: a professional team needs a starting point it can criticise and replace, not a principle it cannot argue with. But precision is not verification. The table below registers each class as a concept assumption and names the data it depends on and the event that triggers a recheck. **No row below is an engineering conclusion, and none should be cited as a design basis** [depth:risk_missing_data].
+
+| Parameter class | Specific figures given | Where the figure comes from | Data it depends on | Recheck trigger |
+| --- | --- | --- | --- | --- |
+| Standard street sections | Origin Terrace 21.0 m, Origin Works 23.0 m, Bell Hub 24.0 m, and the carriageway / footway / planting widths within them | Indicative sections drawn from a pedestrian-first principle; no surveyed road line was applied | Road red lines, existing cross-sections, utility positions [assumption:A-TRANSPORT-001] [assumption:A-MUNICIPAL-001] | Once red lines and utility data are obtained, transport and municipal specialists re-allocate the bands |
+| Intersections and signals | Raised table 12 cm, 1:12 ramps, pedestrian green 22 s + 4 s clearance, cycle green 18 s, cycle time 80 s, 25 m sight triangle | Indicative timings following ordinary safety practice | Traffic counts, turning movements, crossing demand, rail interface [assumption:A-TRANSPORT-001] | A dedicated traffic impact assessment once counts and OD data are available |
+| Maximum parking provision | Office ≤0.25–0.35, housing ≤0.40–0.50, retail ≤0.20–0.30, civic ≤0.15–0.20 (spaces per 1,000 m² GFA); fast-charging share ≥30–40% | Concept caps reflecting a policy stance against car growth | Parking demand survey, existing supply, statutory provision standards [assumption:A-TRANSPORT-001] | Verified against measured demand and the current provision standard |
+| Station-area feeders | Covered walkways 240–380 m, bike hubs within 50 m, 500 m walk catchment | Indicative distances based on comfortable walking range | Station entrance positions, patronage OD, rail engineering interface [assumption:A-TRANSPORT-001] | Agreed with the operator once the rail interface is released |
+| AI equipment positions | Edge-compute nodes every 200 m / 4 m² each (Origin Works 150 m / 2.4 m²), V2X roadside units every 120 m, pole sensors every 80 m at 6 m height | Indicative spacing derived from coverage radius; no radio-coverage simulation performed | Power capacity, duct routing, radio-coverage simulation, pole ownership [assumption:A-MUNICIPAL-001] | Coverage simulation and power check before any pilot design |
+| Report Card Kiosk | 1,800 × 2,200 × 2,800 mm, footprint 3.96 m², clear zone ≥2.0 m, wheelchair turning ≥1.5 m, screen centre 1,000–1,200 mm | Product-level indicative dimensions derived from accessibility clearances | Site conditions, power and fire conditions at each location [standard:BARRIER-FREE-ENVIRONMENT-LAW] [assumption:A-MUNICIPAL-001] | Base and orientation adjusted to site conditions once locations are fixed |
+| Public space areas | Herringbone Plaza approx. 3,200 m², Examination Gate Plaza approx. 2,400 m², Origin Stele Garden approx. 1,200 m², pocket parks approx. 600 m² | Recomputed from this package's concept `public_space.geojson` | Tenure, existing buildings, heritage protection zones [assumption:A-HERITAGE-001] | Boundaries redrawn and areas recomputed once tenure and protection zones are known |
+
+The point of the table is this: **"a precise figure was given" and "that figure has been verified" are two different claims.** This proposal makes the first and explicitly denies the second, and writes down, for each class, the data it depends on and the event that should overturn it — so that whoever takes this forward knows which document to obtain first and which number to discard first.
 
 ### 3. Recalculation protocol: what happens when official data is published
 
@@ -1573,11 +1589,32 @@ This is a conceptual recommendation for an open call, with the following explici
 
 ### 6. Factual integrity
 
-The proposal invents no company name, investment figure, policy document, approval number or letter of intent. All historical facts - the completion of the Jing-Zhang Railway in 1909, Zhan Tianyou's leadership, the herringbone switchback, Tsinghuayuan Station, and the beginnings of technology entrepreneurship in Zhongguancun - are matters of public record. All global cases cited are public information. All numeric metrics can be verified by recomputing the `geometry/` layers in this package.
+The proposal invents no company name, investment figure, policy document, approval number or letter of intent. All historical facts - the completion of the Jing-Zhang Railway in 1909, Zhan Tianyou's leadership, the herringbone switchback, Tsinghuayuan Station, and the beginnings of technology entrepreneurship in Zhongguancun - are matters of public record. All global cases cited are public information. Every numeric metric can be verified by recomputing this package's `geometry/` layers.
+
+**Source registration and downgrade notice for historical and regional claims.** The specific facts that carry the core narrative and the regional-coordination argument are registered individually in `sources.json` and mapped as follows:
+
+| Claim in the text | Registered source | Current status |
+| --- | --- | --- |
+| The Jing-Zhang Railway was completed in 1909 as the first trunk line China surveyed, designed and built on its own | [source:HIST-JINGZHANG-1909] | pending verification |
+| In 1949 the Central Committee entered Beiping and its train arrived at Tsinghuayuan Station; the "going to sit an examination" formulation | [source:HIST-TSINGHUAYUAN-1949] | pending verification |
+| The 1988 / 1999 / 2009 lineage of national approvals for Zhongguancun | [source:HIST-ZGC-APPROVALS] | pending verification |
+| The East-Data-West-Computing programme and the Zhangjiakou data-centre cluster | [source:REGION-EAST-DATA-WEST-COMPUTING] | pending verification |
+| The Zhangjiakou renewable energy demonstration zone (State Council reply 〔2016〕No. 5) | [source:REGION-ZJK-RENEWABLE-2016] | pending verification |
+| The opening of the Jing-Zhang high-speed railway and corridor accessibility | [source:REGION-JINGZHANG-HSR] | pending verification |
+
+**Downgrade notice.** All six are matters of public record, but this package **has not obtained a registrable public URL** for them. Each is therefore registered as `background_only` and flagged `verification_status: pending_public_url_registration` — that is, pending verification. They are used **only for cultural narrative, landmark naming and regional background, and never as the basis for any spatial metric, area, alignment, capacity or statutory conclusion**; document numbers and exact dates must be taken from the issuing authority's own published text. If verification later shows that any statement cannot be supported, this proposal will delete that statement rather than soften it. This mirrors the treatment of R1–R4: **better to mark something uncertain than to use an uncleared fact as though it were cleared.**tion. All numeric metrics can be verified by recomputing the `geometry/` layers in this package.
 
 ### 7. Copyright and licence
 
-This package is submitted under a `COMMUNITY-DISPLAY-ONLY` licence for display, review and community exchange in this open call. All drawings, diagrams, HTML display and geometry were generated for this submission; no third-party copyrighted images, map basemaps, fonts beyond permitted use, or commercial datasets were used. The herringbone and four-origins motifs are original interpretations of publicly documented history.
+This package is submitted under a `COMMUNITY-DISPLAY-ONLY` licence for display, review and community exchange in this open call.
+
+**Licence scope, stated per asset class**: `COMMUNITY-DISPLAY-ONLY` covers everything in this package uniformly — the body text (`proposal.md` / `proposal.en.md`), the figures (`assets/figures/`), the drawings (`drawings/`), the geometry (`geometry/`), the structured matrices and metrics (`*.json`), the HTML deliverables (`report/`, `visual/`), the film and posters (`assets/media/`), and the brand and visual identity system (naming, wordmark, herringbone motif, four-origin names, palette and component library). **It grants display and review rights only, and grants no reuse, redistribution, adaptation or commercial licence of any kind.** Nothing anywhere in this package constitutes an open-source licence, a Creative Commons licence, or a non-commercial reuse grant. Where the body text refers to a "public licence" or "non-commercial reuse", that is a **recommendation** addressed to the organiser, to be decided and issued separately by the rights holder; this proposal does not purport to grant it.
+
+**Third-party exception**: the only third-party asset redistributed here is the embedded Chinese font subset, Droid Sans Fallback (Apache License 2.0, © Google Inc.). Its licence and attribution requirements are set out in section 4 of `report/copyright_statement.md`; it sits outside `COMMUNITY-DISPLAY-ONLY` and applies under the Apache-2.0 terms on its own. Apart from that, all drawings, diagrams, HTML display and geometry were generated for this submission; no third-party copyrighted images, map basemaps, fonts beyond permitted use, or commercial datasets were used.
+
+**Attribution requirement**: any use separately licensed by the rights holder must credit the author `cf3901646` and the scheme name "JINGZHANG RISING", and must retain the provisional-boundary notice and the statement that this is not statutory planning.
+
+The herringbone and four-origins motifs are original interpretations of publicly documented history; each underlying fact is registered individually in `sources.json`.
 
 ### 8. AI generation statement
 

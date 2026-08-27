@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "415e4fed377ef30677b9c6dbddf78d9d8b783faafbf9e845f11fcf69845a9338"
+      "sha256": "de46085f0fca2a576a6713aa6dcc19d3dc93802e94014f55f18578e2f86c67f2"
     },
     {
       "path": "agent.json",
@@ -44,19 +44,19 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "22c5541ce255ffc5a4222d7dfc4b01da4d4a800da85a02fcf1b81814095d2eb9"
+      "sha256": "11bc46ac9960131888336a83f32b5776aa5f451f7bea5632ac5dd6a469f6f085"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "22becff413e31397c87c234aca042e4f6ceef0b0b1cc2280de02680d8dc81016"
+      "sha256": "b629061ac0ebf40d420c079d0b34ad7f11eb759b0ac77763fd11f68d4d1ffb7e"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d50099488e3a6c4b9d15990e82c0786b5a86c0912f052d0ee4e4db2062c0d47c"
+      "sha256": "23edee80c18f8f01b653652e352f0566df1c0efd8b5fa7d02b460f366be03aee"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "3a39e74094779b1edfba6685c5838d03e9d16e142e264f4bb62b112a1e44f9a4"
+      "sha256": "e930862a5f6493a9f81a8020299f66da6cf977bc9a951976dfe4b1a29d282c57"
     },
     {
       "path": "report/narrative.md",
@@ -93,35 +93,35 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "0326f356ad0b9f851df2b31953857c17016077aa611a87ea5c47d61261c0a486"
+      "sha256": "d00c6df851bb45ae14a34fc15f299085e5b6ecf4cdd705774a3f0f0972f8bccb"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "6d72179a4fe1094607a8f2f9ece67cf5d1203b7a7986bebf2f1651f2828ece39"
+      "sha256": "60a62ffbe0fc0fa9e240d8079423b23bad22058c736a7ba063a76433d1548b14"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3ba4a66e1171464130ee75b83854ae3bb4c3fb6045262d5fe6001019a940a4e6"
+      "sha256": "4d6bec43b7d29edbba0b7b3952655e5aefa60694a883f21746b08da9892927d7"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "9ea60f1b82a0444994217ae265124d82a86b789433dda8ec2f42038576411c26"
+      "sha256": "69cc6cca7b80f4316605ecc088b240cccbb03ce4c852055e0a897245098ee9b2"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "658a144e307f7fcba1747d254504f3663ff2a3b7eeeea2bf2c7942d67b2c8852"
+      "sha256": "8fe96246e937c2b2a279d821382b30d90cfac733bdcbf9eb5459e2b6be04ae94"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "ee354e115d048e19daf91475a350e89e70631e2408eec5f6181edfb4cd4644cd"
+      "sha256": "83bc0c20b31eeb5450c4889cfef54f972bc5eb505d917e5cea603147511d17af"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9ba0a3049a9ed07c9d59ca4cf958837c0de9a93ecc40cb6e81140a594378ed93"
+      "sha256": "7c7512e378084640d52a63258217915cc862fc77c1d74e9fcb25d4dfcbe6b8ef"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "792ec0b1a8d8c640165d0606d2a798f1aa81a054778af45b43d7ad88d22b3dc3"
+      "sha256": "535f439c9f320c87976a9c862ea63becac98811d630a39a39236dddf41c5b418"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "5a95f2187ba4b6f3e21090f206c326a7de9cdadc83d671318e76cce1549a42d5"
+      "sha256": "3b414c0cacee6cbbfc2c5a27509a30b4d6ba5d69ac72a6660d22c81314df9eab"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "82c49145004961f62ccdc41b4ce933118b3b6f5c931c95049085e565d1c6993a"
+      "sha256": "feaf12dcc43ea0579c8a37915fa51dd482e9cd94f7497cdc2840e13b2f981838"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "34e90976b887dfad3591f81f29fcc55e179e85d539b26c9aa77bd6ec20ee949a"
+      "sha256": "c914bca3069fa1b04ce29f77158122e931ae883283013dae0213ef36f3d320b4"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -258,7 +258,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "7429caa24846ec7a337af0a6c59fac6a053be04fe8a5d7f5df6df23a15f95fc3"
+      "sha256": "0cacc6e8fbe73474ec767505a57d2dfc454ca17992c1c45c0eca96f2d894a7a3"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -290,7 +290,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "b9c94bd859e0a720991a84bd7d00cf46df5ba65be9ce65f87c4ffd9b5a8d3122"
+      "sha256": "66238a90e92e0235ffffdff47f6c4ed8c62b454aaaf891ee5d554fd1ca5c52d6"
     },
     {
       "path": "assets/media/film.mp4",
@@ -394,7 +394,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "4faa4bc85e6e67e72e755f6ac65a615f999ca54e8c76810c94cb9eec545a2ee1"
+      "sha256": "d6a026ec7638c7bc33bb70101ae20b17e8747dfe3d9b53a235c259c53ecd6ab7"
     }
   ],
   "validation_claim": {

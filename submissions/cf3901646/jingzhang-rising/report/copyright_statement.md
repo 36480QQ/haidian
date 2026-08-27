@@ -10,6 +10,17 @@ This package is a **conceptual design submission**. It contains no commissioned 
 
 If contrary evidence is found for any item below, the submitter will correct or remove that item.
 
+## 1a. Licence scope and the single reuse rule
+
+`COMMUNITY-DISPLAY-ONLY` is the licence for **every asset class in this package without exception**: body text, figures, drawings, geometry, structured JSON, HTML deliverables, film and posters, and the brand and visual identity system (naming, wordmark, herringbone motif, four-origin names, palette, component library).
+
+- It grants **display and review rights only**. It grants no reuse, redistribution, adaptation, sublicensing or commercial right.
+- This package contains **no open-source licence grant and no non-commercial reuse grant**. Where the proposal text recommends that the organiser publish the visual identity under a public licence, that is a recommendation to the rights holder, not a grant made here.
+- **Single third-party exception**: the embedded Droid Sans Fallback subset is governed by the Apache License 2.0 (section 4), not by `COMMUNITY-DISPLAY-ONLY`.
+- Any use separately licensed by the rights holder must credit `cf3901646` and "JINGZHANG RISING", and must retain the provisional-boundary and non-statutory notices.
+
+`manifest.json`, `proposal.md` section 7, `proposal.en.md` section 7 and this statement all carry the same rule; if any future revision changes one of them, all four must change together.
+
 ## 2. Asset ledger
 
 | Files | Author / production method | Source and clearance basis | Reuse restriction |
