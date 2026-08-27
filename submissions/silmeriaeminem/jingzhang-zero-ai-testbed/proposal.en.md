@@ -100,16 +100,16 @@ These four dynamics unify into the operating mechanism of the Time-Track, detail
 
 ### Methodological separation: AI-augmented six-layer mapping
 
-**Making traditional mapping data-driven and machine-verifiable.** Mature international urban-renewal projects do not produce "one masterplan" but a multi-method mapping system — from Lynch's mental maps to Gehl's public-life surveys, from Space Syntax to cultural mapping. This proposal upgrades it into an "AI-augmented six-layer mapping method": traditional mapping relies on human experience and subjective judgment, whereas this proposal data-fies and machine-verifies all six layers, forming a recomputable, self-checkable, iterable research method (signal-replaces-manual-counting and three-group interviews are method design to be carried out and collected later) — with no directly comparable method found in the reviewed sample of Chinese urban-design competitions.
+**Making traditional mapping data-driven and machine-verifiable.** Mature international urban-renewal projects do not produce "one masterplan" but a multi-method mapping system — from Lynch's mental maps to Gehl's public-life surveys, from Space Syntax to cultural mapping. This proposal upgrades it into an "AI-augmented six-layer mapping method": traditional mapping relies on human experience and subjective judgment, whereas this proposal designs a **machine-readable six-layer mapping workflow** (a recomputable, self-checkable, iterable research method framework) rather than claiming six layers of completed empirical analysis — each layer's execution status, current input, generated output, and gap are listed below. No directly comparable method was found in the reviewed sample of Chinese urban-design competitions.
 
-| Layer | Method source | Application here | Asset |
-|---|---|---|---|
-| L1 form | Transect + Space Syntax | Typical sections along the line + road integration | roads / rail_lines / land_use |
-| L2 behavior | Gehl PSPL + Whyte | planned POI heat + (upon authorization) signaling data instead of manual counts (proposed, pending data authorization) | public_space, POI heat |
-| L3 culture | Cultural Mapping | Heritage + industrial relics as cultural-resource GIS | cultural_heritage(7), archive |
-| L4 cognition | Lynch mental maps | planned three-persona interviews (pending data collection) → "five-image map" | survey + overlay |
-| L5 narrative | GIS narrative mapping | "Centennial Jingzhang" digital narrative map | interactive map |
-| L6 generation | Mapping Urbanism | L1–L5 as machine-readable data, AI scenario push | industry-space-scenario matrix |
+| Layer | Method source | Execution status | Current input | Generated output | Gap |
+|---|---|---|---|---|---|
+| L1 form | Transect + Space Syntax | Executed | roads / rail_lines / land_use (existing data) | Typical sections + road integration analysis | — |
+| L2 behavior | Gehl PSPL + Whyte | To collect / pending authorization | POI heat (existing) | Preliminary POI heat distribution | Signaling data pending authorization; manual counts to be carried out |
+| L3 culture | Cultural Mapping | Based on existing data (partial) | Heritage archives + 7 industrial relics | Preliminary cultural-resource GIS | Full archive to be completed |
+| L4 cognition | Lynch mental maps | To collect | None (survey to be designed) | Survey framework | Three-persona interviews pending collection |
+| L5 narrative | GIS narrative mapping | Based on existing data (partial) | Centennial Jing-Zhang archive | Digital narrative map framework | Interactive map to be refined |
+| L6 generation | Mapping Urbanism | To execute | L1–L5 machine-readable data | Industry-space-scenario matrix framework | Scenario push to run after L2/L4 data is complete |
 
 **Convergence of five frontier ideas.** 2024–2026 frontier ideas converge on "people-first, culture as soul, digital as wing, stitching as method"; five best-fit ideas are selected: **city stitching** (Jingzhang's essence is repairing the urban fabric divided by the railway, from "city edge line" to "development axis"), **culture-led regeneration** (old stations/rails/factories into cultural facilities, AI×culture dual IP), **15-minute innovation circle** (mixed R&D + apartments + commerce around stations), **meta-life city** (all-modality spatio-temporal model + agent "city as a service", linking the OPC community and data flywheel), and **computational design** (MOHURD 2025 official discourse, AI-assisted heritage conservation — a compliance basis) [source:AGENT-TASKBOOK].
 
@@ -156,7 +156,7 @@ The core value judgment: AI and industry must ultimately serve human civilizatio
 
 **Physical track (spatial spine).** The S1 co-track test line is elevated from a scenario card to the spatial spine: run autonomous vehicles, logistics robots, and future mobility equipment on the retained rails, with graded sections from closed to semi-open to open [data:geometry/roads.geojson#ROAD-001] [data:geometry/green_space.geojson#GREEN-001].
 
-**Institutional track (the differentiation barrier).** A machine-verifiable institution runs parallel: (1) a machine-auditable permit sandbox for test access and supervision; (2) data sovereignty and data-revenue sharing; (3) a public-participation veto — the lesson of Toronto Quayside: without data governance and public trust, the scheme collapses.
+**Institutional track (the differentiation barrier).** A machine-verifiable institution runs parallel: (1) a machine-auditable permit sandbox for test access and supervision; (2) data sovereignty and data-revenue sharing; (3) a public-participation check-and-balance mechanism (suspension, hearing, and negotiation triggers on major safety and environmental matters, with authority and procedure determined by the legally competent body) — the lesson of Toronto Quayside: without data governance and public trust, the scheme collapses.
 
 ### Spatial structure
 
@@ -277,8 +277,8 @@ Positioning to build distinctive clusters for embodied intelligence, AI+ healthc
 3. **Logs and audit**: full telemetry logs retained, auditable, reviewable; key events (collision, hard stop, boundary breach) mandatory reporting.
 4. **Human discretion**: safety officers/supervisors hold final discretion over operations; AI is advisory only; no automated decision replaces human judgment on safety and compliance.
 5. **Incident halt**: automatic halt on safety events plus human review; testing does not resume until review passes.
-6. **Public appeals**: open complaint channel, time-bound response, test suspension possible; public veto/adjustment rights on safety and environmental-impact matters (see 10.6).
-7. **Exit**: period-end assessment; exit on failure, major incident, or public veto; test data returned or deleted per rules.
+6. **Public appeals**: open complaint channel, time-bound response, test suspension possible; suspension/hearing/negotiation triggers on safety and environmental-impact matters (see 10.6).
+7. **Exit**: period-end assessment; exit on failure, major incident, or public suspension/reassessment trigger; test data returned or deleted per rules.
 
 ### Data and privacy tiers (concept-level)
 
@@ -323,24 +323,37 @@ The following six figures are concept illustrations (AI-generated, explanatory l
 
 ### Anchor-enterprise map and cooperation models
 
-**Core judgment: the anchor enterprises show an indicative pattern of "naturally growing on the belt".** Cross-checked via public sources (pending formal verification): Moonshot AI is registered at 27 Zhichun Road (current office subject to official confirmation), Cambricon's is at Zhi Zhen Tower, 7 Zhichun Road, Galbot is registered at 3 Haidian Street, Ninebot's domestic HQ is in Zhongguancun Dongsheng Tech Park, and ByteDance reportedly has an HQ cluster at Dazhongsi — "anchor recruitment" is really about plugging the leading firms already circling the 9 km linear space into one "real-scenario operating system" (an indicative judgment, not a recruitment or settlement conclusion) [source:CHAIN-ENTERPRISES]. A startup "golden circle" — "south of Tsinghua, east of Peking University, west of Xueyuan Road, north of Dazhongsi" — is cited in public reports as an indicative description (the exact source and wording require verification against the original report); the three-cores-two-wings core area overlaps observably with this range, providing indicative spatial evidence for anchor clustering [source:CHAIN-ENTERPRISES].
+**Core judgment: the anchor enterprises show an indicative pattern of "naturally growing on the belt".** Cross-checked via public sources (pending formal verification): Moonshot AI is registered at 27 Zhichun Road (current office subject to official confirmation), Cambricon's is at Zhi Zhen Tower, 7 Zhichun Road, Galbot is registered at 3 Haidian Street, Ninebot's domestic HQ is in Zhongguancun Dongsheng Tech Park, and ByteDance reportedly has an HQ cluster at Dazhongsi — "anchor recruitment" is really about plugging the leading firms already circling the 9 km linear space into one "real-scenario operating system" (an indicative judgment, not a recruitment or settlement conclusion) [source:CHAIN-ENTERPRISES-INDICATIVE]. A startup "golden circle" — "south of Tsinghua, east of Peking University, west of Xueyuan Road, north of Dazhongsi" — is cited in public reports as an indicative description (the exact source and wording require verification against the original report); the three-cores-two-wings core area overlaps observably with this range, providing indicative spatial evidence for anchor clustering [source:CHAIN-ENTERPRISES-INDICATIVE].
 
 **8 anchor categories** (full verified list in `sources.json`): ① foundation models (Zhipu, Moonshot, Shengshu, ByteDance Doubao) ② embodied intelligence (Galbot, Spirit AI, Robotera, Lightwheel, LinkerBot) ③ chips & compute (Moore Threads, Cambricon, Kunlunxin) ④ agent platforms (ByteDance Coze, ModelBest) ⑤ industry applications (Yidu Tech, Glodon, Megvii, Unisound) ⑥ platforms (ByteDance, Baidu, Kuaishou, Xiaomi, Meituan, JD) ⑦ data factors (National Blockchain Technology Innovation Center, Lightwheel) ⑧ autonomous driving & low-speed unmanned vehicles (Neolix, Ninebot, Haomo, WeRide, Pony.ai).
 
-**6 cooperation models** (who contributes, who gains, what mechanism makes it work): ① **test validation** — firms contribute robots/unmanned vehicles to real 9 km scenarios in exchange for the scarcest real physical-world data; the belt gains "a rare real-scenario AI data infrastructure among the samples reviewed" brand premium; ② **compute & data supply** — Moore Threads, Cambricon, Kunlunxin supply domestic compute and Lightwheel supplies the simulation-data engine in exchange for scaled real orders; ③ **scenario opening & orders** — ByteDance's Dazhongsi HQ, the OPC order platform, and Haidian's "ten application demonstration projects" release billable benchmark orders; ④ **industry-academia-research** — Tsinghua/Peking/CAS joint labs feed results directly into co-track validation; ⑤ **investment & incubation** — Zhongguancun Science City Company led investments in Zhipu, Shengshu, ModelBest, LinkerBot, and Lightwheel in 2024–2026, binding "investment + scenario" [source:CHAIN-ENTERPRISES]; ⑥ **data-factor circulation** — Lightwheel's data factory plus the National Blockchain Center's "data stays in domain, usable but not visible".
+**6 cooperation models** (who contributes, who gains, what mechanism makes it work): ① **test validation** — firms contribute robots/unmanned vehicles to real 9 km scenarios in exchange for the scarcest real physical-world data; the belt gains "a rare real-scenario AI data infrastructure among the samples reviewed" brand premium; ② **compute & data supply** — Moore Threads, Cambricon, Kunlunxin supply domestic compute and Lightwheel supplies the simulation-data engine in exchange for scaled real orders; ③ **scenario opening & orders** — ByteDance's Dazhongsi HQ, the OPC order platform, and Haidian's "ten application demonstration projects" release billable benchmark orders; ④ **industry-academia-research** — Tsinghua/Peking/CAS joint labs feed results directly into co-track validation; ⑤ **investment & incubation** — Zhongguancun Science City Company led investments in Zhipu, Shengshu, ModelBest, LinkerBot, and Lightwheel in 2024–2026, binding "investment + scenario" [source:CHAIN-ENTERPRISES-INDICATIVE]; ⑥ **data-factor circulation** — Lightwheel's data factory plus the National Blockchain Center's "data stays in domain, usable but not visible".
 
-**Three most persuasive models**: first, "test validation + data-factor circulation" (scenario for data, data for industry) hits the industry's two hardest pain points — scarce real data and hard road permits; second, "investment & incubation" — the state-fund list is already drawn, only "investment" needs binding to "co-track scenario landing"; third, "scenario opening & orders" — ByteDance Dazhongsi, OPC, and the ten application projects are ready-to-run levers that upgrade the 9 km space from a "test field" into a "cash-flow-generating operating field" [source:CHAIN-ENTERPRISES].
+**Three most persuasive models**: first, "test validation + data-factor circulation" (scenario for data, data for industry) hits the industry's two hardest pain points — scarce real data and hard road permits; second, "investment & incubation" — the state-fund list is already drawn, only "investment" needs binding to "co-track scenario landing"; third, "scenario opening & orders" — ByteDance Dazhongsi, OPC, and the ten application projects are ready-to-run levers that upgrade the 9 km space from a "test field" into a "cash-flow-generating operating field" [source:CHAIN-ENTERPRISES-INDICATIVE].
 
-### agent.1–agent.6 itemized depth review
+### agent.1–agent.6 itemized mapping to official task titles
 
-| Task | Delivery location | Depth note |
+The table below adopts the official agent.1–agent.6 titles from `agent_taskbook.json` verbatim and lists this proposal's actual delivery locations; the "relation" column states whether the proposal inherits, refines, or supplements each task requirement.
+
+| Official task title | Proposal delivery location | Relation and depth |
 |---|---|---|
-| agent.1 three-level scope | 3.2–3.5 | coordinated/overall/key areas with layered boundaries, tasks, and metrics |
-| agent.2 key-area detailed design | 5.1–5.3 | Zhongzhiyuan/Origin/Dazhongsi: positioning, structure, AI scenarios, risks |
-| agent.3 scenario–space–operation matrix | 6.2b | 11 scenario cards, unified 10 fields (users/space/data/minimization/operator/review/decommission/maturity/KPI/prereq) |
-| agent.4 public-space component library | 6.5 | six components (see 6.5) |
-| agent.5 wayfinding & international outreach | 6.6 | three-tier signage + international interface and conversion path (see 6.6) |
-| agent.6 long-term operation & conversion | 10.1/10.3/6.3 | U1–U8 implementation matrix, global AI activity system, "visit → connect → settle" conversion |
+| agent.1 Overall belt concept and function-integration scheme | §3.2–3.5, §3.6, §4 | Inherit + refine: three scope levels (coordinated/overall/key) map to "overall belt concept"; three positionings, five functions, three-areas-two-wings map to "function integration"; naming and Logo direction in §3.1 |
+| agent.2 AI full-stack autonomous innovation system and world-class AI ecosystem | §5.1 Zhongzhiyuan, §5.4 Zhongguancun tech-service wing, §6.3 anchor map | Inherit: Zhongzhiyuan maps to "full-stack autonomous system"; AI Origin Community and anchor ecosystem map to "world-class AI ecosystem"; 5–8 global cases in §3.2 and the 50-case appendix |
+| agent.3 AI+ scenario empowerment paradigm and intelligent AI living city | §6.2a scenario matrix, §6.2b 11 scenario cards, §6.2e good-life scenarios | Inherit + refine: 11 scenario cards (≥10 required) + 3 industrial test scenarios (S1/S2/S3) + 5 personas map to "scenario empowerment"; §6.2e six life scenarios map to "intelligent AI living city" |
+| agent.4 AI public space, native intelligent new business, and pilgrimage landmark | §6.5 public-space components, §5.3 Dazhongsi, §3.1 brand landmark | Inherit + supplement: six public-space components map to "AI public space"; Dazhongsi native intelligent consumption/business map to "new business"; Dual-Origin Plaza/honor wall/open-source gallery map to "pilgrimage landmark" |
+| agent.5 Centennial Jing-Zhang culture, Zhongguancun culture, and AI new-culture narrative | §3.5 cultural narrative, §6.6 wayfinding & outreach | Inherit: century relay (1909→2026→2049) maps to "centennial Jing-Zhang culture"; Zhongguancun innovation culture maps to "Zhongguancun culture"; the "timeline × tracks" brand maps to "AI new-culture fusion" |
+| agent.6 Global AI innovation activity system and long-term operation | §10.1/10.3, §6.3 conversion path, U1–U8 | Inherit + refine: annual open-source week/monthly roadshow/developer community map to "global AI activity system"; U1–U8 matrix and "visit → connect → settle" map to "long-term operation" |
+
+**Five-function mapping**: the taskbook's five functions — AI full-stack autonomous innovation system / world-class AI innovation ecosystem / AI+ scenario empowerment paradigm / intelligent AI living city / AI governance global voice — map to this proposal's five derived functions in §3.6 as follows:
+
+| Taskbook five functions | Proposal derived functions (§3.6) | Relation |
+|---|---|---|
+| AI full-stack autonomous innovation system | Independent innovation sourcing | Inherit (Zhongzhiyuan full-stack system) |
+| World-class AI innovation ecosystem | Talent-gathering service | Refine (ecosystem decomposed into talent + capital + scenario) |
+| AI+ scenario empowerment paradigm | Scenario-open experimentation | Inherit (scenario cards + sandbox) |
+| Intelligent AI living city | Livable-life carrying | Refine (livable dimension of the living city) |
+| AI governance global voice | (folded into the institutional track and permit sandbox, §3.7) | Supplement (machine-verifiable sandbox carries governance voice) |
+| — (not in taskbook; proposal addition) | Heritage-culture display | Proposal addition (centennial Jing-Zhang cultural narrative) |
 
 ### Public-space component library (concept-level)
 
@@ -466,11 +479,11 @@ The baseline is a concept-level design requirement; implementation follows barri
 To avoid unfulfillable blanket terms, participation is specified as a reviewable process:
 
 - **Participants**: corridor residents, merchants, developers, university students, visitors, and minority-group representatives (dedicated channels for seniors/persons with disabilities/low-digital-literacy groups).
-- **Veto scope**: the public holds veto/adjustment rights over **major safety and environmental-impact matters** (e.g., co-track segment opening, green-space redevelopment, noise-source placement); daily operations, industry tenancy, and commercial arrangements are outside the veto scope.
+- **Veto scope**: for **major safety and environmental-impact matters** (e.g., co-track segment opening, green-space redevelopment, noise-source placement), the proposal recommends setting trigger conditions for suspension, hearing, negotiation, or reassessment; the specific authority, scope, and procedure must be determined by the legally competent body (government and statutory regulators) — this proposal provides conceptual suggestions only and makes no quasi-administrative commitment.
 - **Information disclosure**: plans, test schedules, data uses, and monitoring results are published; period and form vary by matter tier.
 - **Opinion recording**: a unified opinion register (online + offline), each item numbered and traceable.
 - **Dispute handling**: tiered response — general opinions within 7 working days; major objections trigger hearings or negotiation.
-- **Feedback-time principle**: time limits are publicly committed; exceeding them defaults toward adopting the opinion direction.
+- **Feedback-time principle**: time limits are publicly committed; on timeout, the matter escalates to review, public explanation, or an extended deadline — silence is not treated as default consent or adoption.
 - **Minority representation**: participation samples cover seniors, persons with disabilities, and low-digital-literacy groups to avoid digital-divide distortion.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
