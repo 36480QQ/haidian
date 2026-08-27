@@ -193,7 +193,7 @@ The following drawings use **concept study modules** to test spatial relationshi
 
 ![Concept visualization of the AI Origin First-Use Commons, produced by this proposal's AI image-generation workflow; non-built, non-survey and not an implementation commitment](assets/figures/hero-first-use-commons.png)
 
-![Three flagship experiences: product readiness, safe first use and a verifiable first order; AI-generated concept image, not site evidence](assets/figures/three-flagship-scenes.en.png)
+![Three flagship experiences: product readiness, safe first use and a verifiable first order; AI-generated concept image, not site evidence](assets/figures/three-flagship-scenes.png)
 
 The three flagship experiences share one public-space baseline while changing protagonists. At Zhongzhiyuan, safety staff and developers complete a visible handoff. At AI Origin, ordinary residents, a wheelchair user and front-line staff complete a real task together. At Dazhongsi, a small team, operator and procurement adviser turn one pilot into acceptance, training and exit conditions. The image communicates human scale, everyday use, accessibility and staffed presence only; it is not evidence of existing conditions, interviews, partnership or a built result [source:FIRST-MILE-THREE-SCENES-IMAGEGEN-2026] [assumption:A-TRIPTYCH-001].
 
