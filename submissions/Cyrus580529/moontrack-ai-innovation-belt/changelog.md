@@ -2,6 +2,23 @@
 
 本文件记录本方案从初版到当前版本的实际改动，包括**被推翻的结论**与**被删除的内容**。删除比新增更能说明这份方案的作业方式，因此一并保留。
 
+## v0.11 - 2026-08-27
+
+### 改动摘要
+
+- **收窄「全部结论包内可复算」这句话。**摘要此前这样写,但 `sources.json` 里 `osm-footways-walking-network` 自己写明「本数据不进提交图层」,而正文引用的 `analysis_index.py`、`analysis_service.py`、`analysis_policy.py` 都不是提交包文件。也就是说 8.61% 步行网可达、6.5 倍增益这批反事实指标,实际是「按登记方法可复算」,不是「包内可复算」。现按两类分开表述:几何、用地、建筑与慢行网连通性结论可用包内 `visual/assets/verify-geometry.js`、`verify-network.js` 直接复算(Node 标准库,不依赖 GIS 库,不一致退出码为 1,本轮实测两者均为 0);步行网反事实须先按 `sources.json` 登记的 Overpass 查询重取输入。中英文摘要、正文、A3/A0 页脚、可达率图注与 HTML 同步。
+- **统一跨文件的版本化数量。**以当前 `metrics.json` 与项目清单为唯一口径,修正四处陈旧统计:`proposal.md` 与 `proposal.en.md` 称指标「共23项」——实为 58 项、57 项 known(唯一 unknown 为 `floor_area_ratio`);`design_depth_matrix.json` 称「共34项、33项 known」;`sources.json` 与 `design_depth_matrix.json` 三处称邻河车道「26段」——实为 42 段(`cycleway_near_river_300m_segments`,总数 421 段不变);`design_depth_matrix.json` 称更新清单「JZ-01至JZ-07」——正文已有 JZ-08。图件生成脚本里的「50 项已知指标」同步改为 57,`metrics-evidence` 与 `machine-accessibility` 三张图及 A3/A0 已重出。
+
+### 采纳反馈
+
+- PR #4080 第二轮 AI 评审(七维加权 91.0/100,较上轮 88.0 提升)提出两项阻断:复算声明的证据边界不清;跨文件统计数字冲突。两项均核实属实,本轮全部修复。
+- 上轮两项阻断已关闭:表达完整度由 3/5 升至 4/5(中文 HTML 方框已消除),`data_confidence` 冲突已解决。
+
+### 暂未采纳或待复核事项
+
+- 未把 `analysis_*.py` 与冻结的 OSM 步行网快照纳入提交包。提交包的定位是设计成果而非代码仓库,且步行网输入按 `sources.json` 登记口径本就不作提交图层;选择把话说准,而不是为使「包内可复算」成立而扩大包体。
+- 可实施性维持 4/5,原因是 0/5 适老可达、控规与权属未公开——属组织方数据缺口,rubric 明定此类缺口不因此扣分。
+
 ## v0.10 - 2026-08-27
 
 ### 改动摘要

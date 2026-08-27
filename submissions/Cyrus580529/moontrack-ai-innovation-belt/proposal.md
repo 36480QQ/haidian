@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "月轨 MoonTrack：具身智能跑在许可上，不是跑在算力上。对带内 1,619 个真实目的地实测，任取两个门、一台合规低速设备能互达的比例只有 0.69%——23.2% 的门接得上法定路权网，但接上的门散在互不相连的簇里。同一批门按步行网算是 8.61%，差 12.5 倍，这就是「只准走非机动车道」这条规则的价钱。据此主张：这条带最先需要的 AI 基础设施是一层可机读、可撤回的路权数据，而不是又一个沙盒。全部结论包内可复算。"
+summary: "月轨 MoonTrack：具身智能跑在许可上，不是跑在算力上。对带内 1,619 个真实目的地实测，任取两个门、一台合规低速设备能互达的比例只有 0.69%——23.2% 的门接得上法定路权网，但接上的门散在互不相连的簇里。同一批门按步行网算是 8.61%，差 12.5 倍，这就是「只准走非机动车道」这条规则的价钱。据此主张：这条带最先需要的 AI 基础设施是一层可机读、可撤回的路权数据，而不是又一个沙盒。几何、用地、建筑与慢行网结论可用包内两个脚本直接复算；步行网反事实结论须先按 sources.json 登记的 Overpass 查询重取输入，该输入按登记口径不进提交图层。"
 tracks: ["robotics-autonomous-mobility", "ai-traffic-walkability", "ai-public-services"]
 scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability", "ai-health-service-navigation"]
 ---
@@ -589,7 +589,7 @@ node visual/assets/verify-network.js
 
 由此得到本方案对旗舰场景最重要的一条修正意见：**这个场景的约束条件不在机器人，也不在非机动车道网络，而在最后一百米的步行环境。**剩下四家合计 1,841 米的末端，属于慢行与无障碍工程，不属于机器人项目。它应该被单独立项、单独排期，并且——这一点很关键——**即使机器人方案最终不落地，这 1,841 米的末端改善对轮椅、助行器与婴儿车使用者同样有用，不会浪费。**这也正是 agent.1 提出的"可撤回性"原则在具体项目上的落点：先做那些无论技术路线如何变化都不白做的部分。
 
-以上全部结论可由 `analysis_service.py` 的方法复算，输入为本包 `roads.geojson` 与 `public_space.geojson`，参数（15 km/h、8 米吸附、150 米步行阈值）均已写明。三处连接坐标与 JZ-07 的现场核验清单一致，不是另一套数。
+以上结论可由 `analysis_service.py` 的方法复算，输入为本包 `roads.geojson` 与 `public_space.geojson`，参数（15 km/h、8 米吸附、150 米步行阈值）均已写明。该脚本是本方案的编制工具，不是提交包文件；包内可直接运行的是 `visual/assets/verify-network.js`，它用 Node 标准库独立重算同一批连通性结论，不一致时退出码为 1。三处连接坐标与 JZ-07 的现场核验清单一致，不是另一套数。
 
 ### 三个追问：这套算法站不站得住，以及政府该动哪根旋钮
 
@@ -962,7 +962,7 @@ JZ-07 是清单里最小也最靠前的一项。实测显示合计 56 米的三�
 
 指标体系至少应包含总体设计范围面积、重点区域面积、绿地与公共空间比例、建筑基底、更新项目数量、AI场景节点、慢行连通指标、产业空间指标、人才服务指标和自检状态。所有 known 指标必须能从 GeoJSON 或可信来源复算；unknown 指标必须给出原因和正式提交前置条件。`scripts/spatial_review.py` 和 `scripts/visual_review.py` 的结果是 formal 自检的重要证据。
 
-指标复算遵循统一的设计深度要求 [depth:metrics_recalculation]。完整数值、公式、来源文件、置信度和关联假设保存在 `metrics.json`，共23项。以下按可信度分层解释其设计含义，**分层本身就是结论的一部分**：本方案能算准的和算不准的，界线画得比数值更重要。
+指标复算遵循统一的设计深度要求 [depth:metrics_recalculation]。完整数值、公式、来源文件、置信度和关联假设保存在 `metrics.json`，共58项，其中57项为 known、1项（容积率 [metric:floor_area_ratio]）为 unknown。以下按可信度分层解释其设计含义，**分层本身就是结论的一部分**：本方案能算准的和算不准的，界线画得比数值更重要。
 
 **第一层：可由提交几何直接复算的空间指标。**总体设计范围面积 [metric:site_area_sqm] 与重点区域数量 [metric:key_area_count] 直接来自官方 provisional 边界，是全部空间分配的分母。绿地率 [metric:green_ratio] 与公共空间比例 [metric:public_space_ratio] 虽可复算，置信度却只能标 low——底图是 OSM 众包数据，漏采与过时无法排除 [data:geometry/green_space.geojson#GREEN-001]，因此它们只用于说明蓝绿骨架的相对格局，**不作为绿地率达标结论**。
 
