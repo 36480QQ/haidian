@@ -752,7 +752,17 @@
         "CONTENT_MODEL",
         "CONTROLLED_PROVISIONAL_GEOMETRY",
         "DRAWING_SET"
-      ]
+      ],
+      "content_model_objects": [
+        "BELT_IDENTITY_SYSTEM",
+        "POSITION_FUNCTION_MATRIX",
+        "REGIONAL_ADVISORY_INTERFACES"
+      ],
+      "drawing_pages": [
+        "drawings/a3-booklet.pdf#page=8",
+        "drawings/a3-booklet.en.pdf#page=8"
+      ],
+      "evidence_summary_zh": "区分一带总体品牌与投稿题目，提供中英文命名层级、Logo方向、三大定位—五大功能—三区两翼矩阵及五类区域咨询接口。"
     },
     {
       "requirement_id": "agent.2",
@@ -875,7 +885,17 @@
         "CONTENT_MODEL",
         "CONTROLLED_PROVISIONAL_GEOMETRY",
         "DRAWING_SET"
-      ]
+      ],
+      "content_model_objects": [
+        "PUBLIC_NODES",
+        "HONOR_DISPLAY_SYSTEM",
+        "PUBLIC_SPACE_COMPONENT_LIBRARY"
+      ],
+      "drawing_pages": [
+        "drawings/a3-booklet.pdf#page=8",
+        "drawings/a3-booklet.en.pdf#page=8"
+      ],
+      "evidence_summary_zh": "三处公共识别对象逐项说明适用空间、公共使用、无障碍、维护责任、版权边界和形态方向，并补充贡献展示体系与四类公共空间组件。"
     },
     {
       "requirement_id": "agent.5",
@@ -957,7 +977,15 @@
         "CONTENT_MODEL",
         "CONTROLLED_PROVISIONAL_GEOMETRY",
         "DRAWING_SET"
-      ]
+      ],
+      "content_model_objects": [
+        "ANNUAL_OPERATION_SYSTEM"
+      ],
+      "drawing_pages": [
+        "drawings/a3-booklet.pdf#page=8",
+        "drawings/a3-booklet.en.pdf#page=8"
+      ],
+      "evidence_summary_zh": "京张开放场年度体系覆盖活动品牌、开发者社区、场景开放、公众体验、国际传播和人才／企业／开发者后续转化路径。"
     }
   ]
 }
