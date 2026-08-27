@@ -39,13 +39,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "dd72eeb8f5d513adfdbb28bb4ae3d9f4b0c44325aeb4b8ac3c11a30588451a0f"
+      "sha256": "e4dd774ebf8931918f21eb1b3762dfd6c1975bea43c11fa305c5ed3b0cbbf9aa"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "7c26704b510b315da6e89ae0d903f691b5aa5ea7a085d04e88cc4c804100c128"
+      "sha256": "6e6451b2b2bc8b56b94fde81046838b9e2ba5fe4ac58d56419d8531a9bdf4039"
     },
     {
       "path": "metrics.json",
@@ -69,7 +69,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b827be6ca97d9b9b87e3223c45c6eab05f21dd5fa27f58ef2a92b43fd9ad3afd"
+      "sha256": "3b74fef53f086946ef26c977c316d17c47cdf0686536f96e07d9b2f2b355091f"
     },
     {
       "path": "risk.json",
@@ -86,7 +86,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "9cd5ab63e46a84e980cdb6238c7de58d3033e31b6e1d87a0562f567d3aa13218"
+      "sha256": "c81dfd3eef05f37fa5b61052a509824879eb86b8c0804e08d78878e93ccb4e65"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,7 +132,7 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "6434f94928b5fa75e37f52ad2b29a621d7bec3eb975ea0aace336ddf97863fab"
+      "sha256": "4c70e03da2abca51692b221084e7ac3ad73a2ab0aa599d83af766b5b23fa414e"
     },
     {
       "path": "visual/assets/data-gap-closure-register.json",
@@ -243,13 +243,13 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "35a4171fd857430f31c4f1ba62a362c13ad25689b155be2bab5272e94a2ce643"
+      "sha256": "2f4b64bec701c3ed9c1b1ba98b8c5517b324561d19aa3acff7c509e47eb55355"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "0a393fc14260b44ba387870b947f0e83feaf4e7c4bd4ef02bf6dd5c73fce68c9"
+      "sha256": "fdc7526c569b5f17676408fd31daac9d1fda074ca919b37968bd5ee3d8a94114"
     },
     {
       "path": "report/copyright_statement.md",
@@ -262,21 +262,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "50c9a4de20497726f97bc280b0e308d3135976c4edef48285da0cdf666b9a7b6"
+      "sha256": "5881e0598ce133e789a2ed95e1ac134b4485115f01a0ec10959b8fed5f27e5f8"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "2356d5622a20bf41d50454019f91b9c85876fcfc05a8cabb85784891e00d51c7"
+      "sha256": "a2443b9f9ec3b43204b0e5842b69ad6d03345f9bcc360071ac5fd0087b1c109b"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "1a1ae55c53d2384ab9e3a545b6e94fc09173dc016c3ad8b5d4934177acd846f2"
+      "sha256": "ced165dab416a39ca26456421579e3cbad71f84fd90c86dbd1957a2c7927b726"
     },
     {
       "path": "visual/assets/offline-cjk-font.css",
@@ -424,7 +424,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "25d5e1ee5c2ea2fe19e956ef660a8ecc4be42c574ed63970cc6676e72ea66297"
+      "sha256": "d2509daf35603c9c406fa39c86836cb5833a0049bc3c81237d6cdec727496e2e"
     },
     {
       "path": "report/proposal.en.html",
@@ -432,7 +432,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "3e6102541513d2a27cd7eb603dc0fbd6e68e109f0c901ed0c024053710e9e4ef"
+      "sha256": "5fc62aa0ec7019477aa2d9f5e13f304eaedaf0aa1dbaa9e3c69f2f2a233c7c9e"
     },
     {
       "path": "visual/index.en.html",
@@ -440,7 +440,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e96af5aee38aacce89e33b839be7c171b6d1231368a410157095f30ab7b8ff7c"
+      "sha256": "e424d2425caf43fd694f216d96d36ee554d4246539146649e31327220fe44f93"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -448,7 +448,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "43882c564cd1908b1ff46367c8ae041f7f83cfdac40b3045dc734d82742171a9"
+      "sha256": "47df0bed739ca16bb1188cc0d146291501f9f6e1d5f6d368436bb5ee2772a3ba"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -456,7 +456,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "fc42620819859b8575a0c1ee1373b3606abfef6e2e9b8cf77e7866d7338cc48c"
+      "sha256": "759d11e839f1e39102792eb504ed574cccda59f306a970411d21905908e98838"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -944,7 +944,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "评审交接导航：三条时间阅读路线、唯一专业交接候选、证据权威顺序与固定事实边界；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review handoff navigation: three timed reading routes, one professional handoff candidate, evidence authority order and fixed fact boundaries; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "8ecf622cc44c3b140585a894cfb871632dcd679cec908837eb1324759b321289"
+      "sha256": "99ac0a9c56b80a75f4f37d168e03c8f2f8fb364b58b487e28c8b04e6961c0ca2"
     },
     {
       "path": "assets/figures/land-use-structure.svg",
