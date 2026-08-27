@@ -1,5 +1,11 @@
 # 方案迭代记录 / Iteration Changelog
 
+## v4.4 full-set review index - 2026-08-27
+
+**Full-set review access.** V4.4 makes the complete bilingual drawing package inspectable without asking a reviewer to infer its scope from a first page. A new machine-readable index records the four local PDF files, their 24 rendered pages, 12 bilingual page pairs, page order, figure sequence and original offline entry points. The paired visual pages expose the same summary and direct links to both A3 booklets and both A0 board sets.
+
+**Evidence boundary unchanged.** This is a reading and correspondence aid, not a new site claim. It does not verify or upgrade any concept geometry, route, node, facility, accessibility condition, operation, permission, land right, funding, construction condition or approval. The required future human bilingual comparison remains necessary after any substantive change.
+
 ## v4.3 delivery-readiness and report-font repair - 2026-08-26
 
 **Delivery-readiness pass.** V4.3 converts the six existing reversible work packages into a bilingual delivery-readiness contract: eight release checks, six activation cards, five taskbook-function delivery carriers, three future-only readiness measures and an explicit close-out rule for every activated component. The contract makes the evidence package, AI-OFF acceptance exercise, human stop authority, maintenance condition and handover record inspectable before a concept can advance.
@@ -59,3 +65,4 @@ SLA-A promotion gate 将 18 项 mandatory evidence 明确写入机器逻辑。�
 ## v0.1 - 2026-08-13
 
 V1 建立了 Target SLA = A / Verified SLA = B 的 Noonline SLA 设计框架、三类 SLA 路径、12 个概念服务节点、5 个概念人工兜底点、离线 Engine、失败案例与 AI-OFF 概念测试。V1 已明确临时边界、概念节点与未完成现场核验的证据边界。
+
