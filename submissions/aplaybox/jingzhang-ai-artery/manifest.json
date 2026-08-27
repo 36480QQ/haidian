@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "213135e57b3c6b8e1bbe503e59913e24d3d1758f86d5a778e46473d46db152e1"
+      "sha256": "50856b7084d90fa2ceae6e03314e4ab484ef6824d4315e39bdf8f6fcef312966"
     },
     {
       "path": "agent.json",
@@ -44,7 +44,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "5e2af6e9b63fcbc12da6515dab1decdc872f4c263959e58143f87f420009ff52"
+      "sha256": "7e9c83a99a6255bed4f6615d69579f050ebb8a8efc5893401d39a0df80a76a5e"
     },
     {
       "path": "sources.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e094b8dad8b2cf868e10fae1eb98a99df33f628ba67efb4a95e3426a9abaf825"
+      "sha256": "3aa17821d9a5ba12a28452bff5cc7c6a6639590ae24d0c3849e9823c4d132517"
     },
     {
       "path": "report/narrative.md",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e06405764c09465309056c5c38082d5c4fba72acf84cb638b9ac64fb0a044db4"
+      "sha256": "fd781f857c809446d3ca01a73f5e93f25981a4c74da9342aa03ebc20faa213b3"
     },
     {
       "path": "report/proposal.en.html",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "c01f121107813e8f3d19b01c7acf48edb297faf4aaadd0059a894a7524c05ca7"
+      "sha256": "999d203ada0942df3bebb3f6145260f29bcbf5aed8e8c250472b69235086af56"
     },
     {
       "path": "visual/index.en.html",
@@ -306,7 +306,7 @@
       "role": "narrative",
       "required": false,
       "language": "zh",
-      "sha256": "0a5fa544437ea8b739c0f0be0776082483b757a390ec89cf5703c1c4ba95f2ce"
+      "sha256": "90ba8af9b3e4a75d30ee54f7fe5d51151f69b0ce47e2681b6bdf84b64ef6652b"
     },
     {
       "path": "assets/media/cover.webp",
@@ -412,12 +412,26 @@
       "required": false,
       "language": "en",
       "sha256": "59038db255431ce9367a7d0c07cddc7bfc9ef6e12d8eaf587f1272beb700eba7"
+    },
+    {
+      "path": "assets/figures/project-gantt.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "7833e03a81c2171f7d5fdcece6b3608ee242f6133b3a14f7c2c9eb440c7c034c"
+    },
+    {
+      "path": "assets/figures/project-gantt.en.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "en",
+      "sha256": "a3abd62230f2ab4ac7d3ed0742397e5ed060f4cf83395890bc3f2a58e5bb4553"
     }
   ],
   "validation_claim": {
     "self_checked": true,
     "known_blockers": [],
-    "data_confidence": "high",
+    "data_confidence": "mixed_provisional_and_conceptual",
     "readiness_contract": "persisted-self-check-v1"
   },
   "cover_image": "assets/media/cover.webp"
