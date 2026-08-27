@@ -59,12 +59,12 @@
     },
     {
       "id": "POLICY-01-HD-CONTROL-PLAN",
-      "source_type": "pending_official_verification",
-      "usage": "《北京海淀区京张铁路遗址公园沿线（人工智能创新街区重点地区）HD00—1601 等街区控制性详细规划（街区层面）（2024年—2035年）》，2026 年 8 月公开公示；公开信息显示京张铁路遗址公园拟定位为'产业创新带'、发展大模型/智能体/具身智能新业态（具体批复状态以官方最终发布为准）。",
+      "source_type": "official_public",
+      "usage": "《北京海淀区京张铁路遗址公园沿线（人工智能创新街区重点地区）HD00—1601 等街区控制性详细规划（街区层面）（2024年—2035年）》，北京市海淀区人民政府、北京市规划和自然资源委员会组织编制，中国城市规划设计研究院编制；第9条明确'一带一轴，两心多点'整体空间结构，其中'一带'为京张铁路遗址公园产业创新带；规划同时落实中关村科学城建成具有全球影响力的人工智能创新引领区、产业集聚区的目标。",
       "license": "official_public",
-      "rights": "Official public planning document (Haidian District People's Government).",
-      "verification_status": "pending_official_verification",
-      "url": "https://zyk.bjhd.gov.cn/zwdt/tdzt/2018/zwgk/zdjs/202608/t20260817_4825631.shtml"
+      "rights": "Official regulatory detailed planning document. Participant holds the official PDF (42 pages, 2024-2035, provided 2026-08-27).",
+      "verification_status": "verified_against_official_pdf",
+      "url": "本地官方 PDF（42页）：北京海淀区京张铁路遗址公园沿线（人工智能创新街区重点地区）HD00-1601等街区控制性详细规划（街区层面）（2024年—2035年）.pdf"
     },
     {
       "id": "POLICY-02-AGENT-MEASURES",
@@ -144,6 +144,42 @@
       "license": "declaration",
       "rights": "Open-call review-only use. Third-party logos/marks/persons are NOT included; the proposed logo direction in proposal §3.1 is a concept description only. Any future official publication MUST re-clear.",
       "verification_status": "self_declared"
+    },
+    {
+      "id": "DATA-SRC-AMAP-POI-20260809",
+      "source_type": "local_collected_public_data",
+      "usage": "高德地图 POI 采集：8 个图层共 1127 个特征（去重后原始 966 条），用于现状 POI 底数与空间分析、十五分钟生活圈缺口识别，支撑 land_use/buildings/green_space/public_space/education/medical/transport_supplement/cultural_heritage 图层。",
+      "license": "amap_open_platform_terms",
+      "rights": "通过高德地图 POI API 采集的公开 POI 数据，许可以高德开放平台服务条款为准，未取得书面授权文件；仅用于本方案空间分析，不作法定现状、权属或红线依据，不替代官方规划底图。",
+      "verification_status": "approved_local_collection",
+      "conversion_record": "原始 API 返回 -> 按图层去重/分类 -> GeoJSON（EPSG:4326/WGS84）"
+    },
+    {
+      "id": "DATA-SRC-BJ-TRANSPORT-PLATFORM-20260808",
+      "source_type": "official_open_data",
+      "usage": "北京市交通出行数据平台公开下载数据（公交/轨道/路侧停车/公租自行车），数量口径：公交线路 1166 条、公交站点 58698 行、轨道 23 线 1080 站、路侧停车 1719 条、公租自行车 1870 条，用于公交/轨道/停车/慢行体系分析与站点 TOD/绿波走廊方案支撑。",
+      "license": "official_open_data",
+      "rights": "平台标注无条件开放、直接下载（service.jtw.beijing.gov.cn/cxsjxz）；用于本方案交通与空间分析，不作法定现状或权属依据。",
+      "verification_status": "approved",
+      "conversion_record": "6 个 xlsx -> 空间化 -> transport_supplement/bus_lines/rail_lines/roads_parking.geojson"
+    },
+    {
+      "id": "DATA-SRC-CASE-LIBRARY-20260810",
+      "source_type": "web_research",
+      "usage": "全球城市更新案例库（50 家：国内 30 + 国外 20），用于全球案例借鉴与转化机制提炼，及'50 案例检索范围'核心设计假设的检索边界声明。检索日期 2026-08-10，纳入/排除标准与逐项来源索引见案例库第七章 7.1—7.5。",
+      "license": "public_web_research",
+      "rights": "各案例为公开网络资料（政府官网/项目官方站/权威媒体/国际专业机构），未使用 OSM 等非正式来源；未单独存档 URL 的案例仅作定性参考，不参与排他性断言。",
+      "verification_status": "approved_web_research",
+      "conversion_record": "检索 -> 按纳入/排除标准筛选 50 家 -> 逐案例记录（机制/启示/来源字段）"
+    },
+    {
+      "id": "DATA-SRC-MULTI-FEEDBACK-20260809",
+      "source_type": "web_research",
+      "usage": "京张AI创新带多方反馈调研汇总（抖音/小红书/官网站评论等公开网络来源），用于痛点与诉求归纳、场景卡与更新项目的问题导向支撑。",
+      "license": "public_web_research",
+      "rights": "公开网络评论/反馈，非授权访谈，不视为居民共识或公众认可的正式证据；仅作痛点归纳参考，方案正文仅作'回应痛点'表述，不量化代表比例。",
+      "verification_status": "approved_web_research",
+      "conversion_record": "公开平台评论采集 -> 按主题归纳（停车难/蚊虫/树荫/配套不足/算力贵/融资难/规划沟通缺位等）"
     }
   ]
 }
