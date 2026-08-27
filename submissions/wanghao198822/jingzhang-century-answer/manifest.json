@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b862d1c76b54218f5b2e3f0b4e41288d02db8382f76c9bed059bb20775aa5076"
+      "sha256": "aa59eca561337f0b375a8623eb88cfb146eafb4ec4ecaa2edfd15d22c3c7f7ab"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b7b9fe5aaa23e66fb1a1299353af46306f4276dc7d8b89e1d9434143ad7be1d8"
+      "sha256": "6a1401a75dd1a6658524844fed4fe108a10786b5c034a4c8d8f231ee16985594"
     },
     {
       "path": "compliance_matrix.json",
@@ -99,7 +99,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "def6ec8e6c2956e1880a7bee1429dbb357eaa820335c2988ddb4b92c03abaa3a"
+      "sha256": "7b3d46eb3602ec6a3d340cc76b2c58f2e97c3b1f287df9e889f31fa04f5588fe"
     },
     {
       "path": "report/narrative.md",
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a031515c155f81228654925c8a8db9ca1444b7082c733b0cce664d2170f6577d"
+      "sha256": "7440afd6083e23eb62e0e38bbfb1b50f3c1c3910368fcde43f89b7de188d9803"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "aa0a5f995d7b8501b9a85275d3f50fa89e657276a99204e0c9fb642f4958b6ec"
+      "sha256": "b9e474fdf26591d07f5b10ff3f119d219b6a930c18b5ad5583399c2e9d61ff8d"
     },
     {
       "path": "report/proposal.en.html",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "7734e999824ac6a90be61bc898c603854e69750d8fef3186eaba52f0b7d9aabf"
+      "sha256": "9e2eca1bb00de86026dc0584d05f372fd29fe70ca7e9eb106335dbc15a4e081f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f78b9ca1d720d0c28af0d1d55378ef618fd9662d56964e78483f4ef8eb918960"
+      "sha256": "ac748c1f7cddbca619f0c1d50c8c22c826cd6b63bd928ab59a16e3e31f23d2b5"
     },
     {
       "path": "assets/figures/key-areas.en.png",
