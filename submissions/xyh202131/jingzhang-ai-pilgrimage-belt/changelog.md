@@ -1,3 +1,19 @@
+## v65.1 - 2026-08-28
+
+**当前精确包权利状态消歧 / Current Exact-Package Rights Disambiguation**
+
+- 定向回应 PR #4104 对 exact head `ac29622e886672f145ac16612548d70f1e31cc15` 的 request-changes：旧 `time_museum_uncleared_content_count` 把“独立法律审计尚未完成”误写成“任何公开展示前阻断”，与现行 157/157 投稿方路径处置冲突。
+- 将该指标严格限定为当前 manifest 绑定包内“无投稿方再分发处置的时间博物馆图像或文本路径”，值为 0；未来馆藏、口述史、公共装置、策展和新增媒体仍须逐项登记，独立法律/逐文件法律/商标审查继续为 false。
+- 明确最终 PR exact head → `manifest.json` Git blob → 156 个非 manifest 路径 SHA-256 的版本链；manifest 不写自哈希以避免循环。路径清单继续覆盖 157/157，并同步作者/权利人、来源、许可/处理、署名、转换、允许用途和限制。
+- 补齐 `source-governance-register.json` 漏掉的自编四态媒体来源，来源治理与 `sources.json`、source-rights 统一为 49/49；第三方页面继续仅引用，不复制或重新许可。
+- 更新 R65 已重建的四份 PDF、双语报告与双语 visual 的路径级转换记录。既有 PDF/HTML/visual 字节和页数不变，因为其可见权利声明已经正确；geometry、全部空间和数值规划指标、12/8/3/36、G0/NO-GO、provisional 和现实结果 0 不变。
+
+- Targeted PR #4104's request-changes on exact head `ac29622e886672f145ac16612548d70f1e31cc15`: the legacy `time_museum_uncleared_content_count` incorrectly turned an absent independent legal audit into a blocker before any public display, contradicting the current 157/157 contributor path decisions.
+- The metric now counts only current manifest-bound time-museum image or text paths lacking a contributor redistribution decision; its value is 0. Future collections, oral histories, installations, curatorial content and added media still require individual records, while independent legal/file-level legal/trademark review remains false.
+- The version chain is explicit: final PR exact head -> `manifest.json` Git blob -> SHA-256 for 156 non-manifest paths; the manifest omits a circular self-hash. The 157/157 inventory retains author/rightsholder, source, licence/handling, attribution, transformation, permitted use and limits.
+- Added the missing package-authored four-state media source to `source-governance-register.json`, aligning source, governance and source-rights coverage at 49/49. Third-party pages remain citation-only and are neither copied nor relicensed.
+- Updated path-level transformation records for the four R65 PDFs, paired reports and paired visuals. Existing PDF/HTML/visual bytes and page counts remain unchanged because their visible rights statement was already correct; geometry, every spatial and numeric planning metric, 12/8/3/36, G0/NO-GO, provisional status and zero real results remain unchanged.
+
 ## v65.0 - 2026-08-28
 
 **独立人工复核交接 / Independent Human Review Handoff**

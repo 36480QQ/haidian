@@ -1893,19 +1893,23 @@
       "reason": "No real historical sources verified yet; only contract-defined typology exists at G0"
     },
     "time_museum_uncleared_content_count": {
-      "status": "unknown",
-      "value": null,
+      "status": "known",
+      "value": 0,
       "unit": "count",
       "source_files": [
-        "visual/assets/century-time-museum-contract.json"
+        "visual/assets/century-time-museum-contract.json",
+        "visual/assets/file-rights-inventory.json",
+        "visual/assets/rights-clearance-ledger.json"
       ],
-      "formula": "count(uncleared_copyright_images_text_in_package)",
-      "confidence": "low",
+      "formula": "count(current_exact_package_time_museum_image_or_text_paths_without_contributor_redistribution_decision)",
+      "confidence": "medium",
       "required_for_formal_submission": false,
       "assumptions": [
-        "Current package content reviewed; any future additions require individual rights audit"
+        "Scope is the current exact manifest-bound package only, not future archive, oral-history, installation or curatorial content",
+        "Contributor path-level disposition is not independent legal advice or an independent file-level rights audit",
+        "Any future historical image, text, map, font, oral history or generated content requires a new path-level decision and applicable professional review"
       ],
-      "reason": "No copyright audit of generated content labels performed yet; audit required before any public display"
+      "reason": "The current exact package contains no embedded time-museum image or text path lacking a contributor redistribution decision: all 157/157 paths are inventoried and third-party works are citation-only. Independent legal/file-level audit remains absent, but is a separate professional finding rather than an unknown current-package byte or a repository-display blocker."
     },
     "time_museum_generated_content_label_coverage": {
       "status": "unknown",

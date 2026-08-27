@@ -1,12 +1,18 @@
 {
   "schema_version": "2.0",
-  "inventory_id": "JZ-FILE-RIGHTS-INVENTORY-R64",
-  "as_of": "2026-08-27",
+  "inventory_id": "JZ-FILE-RIGHTS-INVENTORY-R65-1",
+  "as_of": "2026-08-28",
   "status": "current_exact_package_cleared_for_repository_review_display_and_redistribution_under_component_specific_terms",
   "scope": "Every path in the current exact submission distribution tree at this revision.",
   "path_count": 157,
   "covered_path_count": 157,
   "coverage_ratio": 1.0,
+  "manifest_hash_binding": {
+    "manifest": "manifest.json",
+    "binding_rule": "The final PR exact head binds the manifest Git blob; manifest files[].sha256 binds each of the 156 non-manifest paths. The manifest path is bound by the exact head and omits a circular self-hash.",
+    "manifest_path_count": 157,
+    "hash_bearing_non_manifest_path_count": 156
+  },
   "artifact_class_counts": {
     "citation_metadata": 2,
     "composite_publication": 4,
@@ -1536,7 +1542,7 @@
       "source_or_provenance": "Submission author with AI-assisted deterministic layout, contributor-authored diagrams and retained R59 four-state storyboard",
       "applicable_license_or_handling": "CC BY 4.0 for contributor-authored publication content; visible Noto Sans SC glyphs rasterized and a minimal semantic OTF subset embedded under SIL OFL 1.1",
       "attribution_requirement": "Credit Twin-Track Jing-Zhang / 双轨京张 and xyh202131; retain CC BY, ODbL, OFL, source and provisional notices by component.",
-      "transformation_record": "R64 deterministic fixed-page rebuild with the duty-acceptance gate replacing the existing handoff surface in place, fixed page counts, G0/provisional warnings and searchable OFL semantic text retained; no tagged-PDF claim.",
+      "transformation_record": "R65 deterministic fixed-page rebuild adds the independent-human HUMAN-EQ-01-08 handoff and 0/8 not-signed fail-closed status on existing pages, with page counts, G0/provisional warnings and searchable OFL semantic text retained; no tagged-PDF claim.",
       "redistribution_decision": "allowed_under_component_specific_CC_BY_4_0_ODbL_and_OFL_terms_with_notices",
       "exceptions_or_limits": "Retain source, rights, G0, provisional, editorial-duration and recovery-not-authorization warnings; independent reuse clearance remains absent"
     },
@@ -1552,7 +1558,7 @@
       "source_or_provenance": "Submission author with AI-assisted deterministic layout, contributor-authored diagrams and retained R59 four-state storyboard",
       "applicable_license_or_handling": "CC BY 4.0 for contributor-authored publication content; visible Noto Sans SC glyphs rasterized and a minimal semantic OTF subset embedded under SIL OFL 1.1",
       "attribution_requirement": "Credit Twin-Track Jing-Zhang / 双轨京张 and xyh202131; retain CC BY, ODbL, OFL, source and provisional notices by component.",
-      "transformation_record": "R64 deterministic fixed-page rebuild with the duty-acceptance gate replacing the existing handoff surface in place, fixed page counts, G0/provisional warnings and searchable OFL semantic text retained; no tagged-PDF claim.",
+      "transformation_record": "R65 deterministic fixed-page rebuild adds the independent-human HUMAN-EQ-01-08 handoff and 0/8 not-signed fail-closed status on existing pages, with page counts, G0/provisional warnings and searchable OFL semantic text retained; no tagged-PDF claim.",
       "redistribution_decision": "allowed_under_component_specific_CC_BY_4_0_ODbL_and_OFL_terms_with_notices",
       "exceptions_or_limits": "Retain source, rights, G0, provisional, editorial-duration and recovery-not-authorization warnings; independent reuse clearance remains absent"
     },
@@ -1568,7 +1574,7 @@
       "source_or_provenance": "Submission author with AI-assisted deterministic layout, contributor-authored diagrams and retained R59 four-state storyboard",
       "applicable_license_or_handling": "CC BY 4.0 for contributor-authored publication content; visible Noto Sans SC glyphs rasterized and a minimal semantic OTF subset embedded under SIL OFL 1.1",
       "attribution_requirement": "Credit Twin-Track Jing-Zhang / 双轨京张 and xyh202131; retain CC BY, ODbL, OFL, source and provisional notices by component.",
-      "transformation_record": "R64 deterministic fixed-page rebuild with the duty-acceptance gate replacing the existing handoff surface in place, fixed page counts, G0/provisional warnings and searchable OFL semantic text retained; no tagged-PDF claim.",
+      "transformation_record": "R65 deterministic fixed-page rebuild adds the independent-human HUMAN-EQ-01-08 handoff and 0/8 not-signed fail-closed status on existing pages, with page counts, G0/provisional warnings and searchable OFL semantic text retained; no tagged-PDF claim.",
       "redistribution_decision": "allowed_under_component_specific_CC_BY_4_0_ODbL_and_OFL_terms_with_notices",
       "exceptions_or_limits": "Retain source, rights, G0, provisional, editorial-duration and recovery-not-authorization warnings; independent reuse clearance remains absent"
     },
@@ -1584,7 +1590,7 @@
       "source_or_provenance": "Submission author with AI-assisted deterministic layout, contributor-authored diagrams and retained R59 four-state storyboard",
       "applicable_license_or_handling": "CC BY 4.0 for contributor-authored publication content; visible Noto Sans SC glyphs rasterized and a minimal semantic OTF subset embedded under SIL OFL 1.1",
       "attribution_requirement": "Credit Twin-Track Jing-Zhang / 双轨京张 and xyh202131; retain CC BY, ODbL, OFL, source and provisional notices by component.",
-      "transformation_record": "R64 deterministic fixed-page rebuild with the duty-acceptance gate replacing the existing handoff surface in place, fixed page counts, G0/provisional warnings and searchable OFL semantic text retained; no tagged-PDF claim.",
+      "transformation_record": "R65 deterministic fixed-page rebuild adds the independent-human HUMAN-EQ-01-08 handoff and 0/8 not-signed fail-closed status on existing pages, with page counts, G0/provisional warnings and searchable OFL semantic text retained; no tagged-PDF claim.",
       "redistribution_decision": "allowed_under_component_specific_CC_BY_4_0_ODbL_and_OFL_terms_with_notices",
       "exceptions_or_limits": "Retain source, rights, G0, provisional, editorial-duration and recovery-not-authorization warnings; independent reuse clearance remains absent"
     },
@@ -1840,7 +1846,7 @@
       "source_or_provenance": "Submission author with AI-assisted deterministic rendering",
       "applicable_license_or_handling": "CC BY 4.0 for contributor content; linked embedded font subset is separately SIL OFL 1.1",
       "attribution_requirement": "Credit Twin-Track Jing-Zhang / 双轨京张 and xyh202131; retain CC BY, ODbL, OFL, source and provisional notices by component.",
-      "transformation_record": "R64 deterministic offline publication of the paired duty-acceptance reading contract using the registered package-local OFL WOFF2 subset; no remote dependency.",
+      "transformation_record": "R65 deterministic offline publication adds the paired independent-human review handoff and mobile overflow repair using the registered package-local OFL WOFF2 subset; no remote dependency.",
       "redistribution_decision": "allowed_under_component_specific_CC_BY_4_0_ODbL_and_OFL_terms_with_notices",
       "exceptions_or_limits": "No remote dependency; retain accessibility, rights and evidence-boundary notices"
     },
@@ -1856,7 +1862,7 @@
       "source_or_provenance": "Submission author with AI-assisted deterministic rendering",
       "applicable_license_or_handling": "CC BY 4.0 for contributor content; linked embedded font subset is separately SIL OFL 1.1",
       "attribution_requirement": "Credit Twin-Track Jing-Zhang / 双轨京张 and xyh202131; retain CC BY, ODbL, OFL, source and provisional notices by component.",
-      "transformation_record": "R64 deterministic offline publication of the paired duty-acceptance reading contract using the registered package-local OFL WOFF2 subset; no remote dependency.",
+      "transformation_record": "R65 deterministic offline publication adds the paired independent-human review handoff and mobile overflow repair using the registered package-local OFL WOFF2 subset; no remote dependency.",
       "redistribution_decision": "allowed_under_component_specific_CC_BY_4_0_ODbL_and_OFL_terms_with_notices",
       "exceptions_or_limits": "No remote dependency; retain accessibility, rights and evidence-boundary notices"
     },
@@ -2528,7 +2534,7 @@
       "source_or_provenance": "Submission author with AI-assisted deterministic rendering",
       "applicable_license_or_handling": "CC BY 4.0 for contributor content; linked embedded font subset is separately SIL OFL 1.1",
       "attribution_requirement": "Credit Twin-Track Jing-Zhang / 双轨京张 and xyh202131; retain CC BY, ODbL, OFL, source and provisional notices by component.",
-      "transformation_record": "R64 deterministic offline publication of the paired duty-acceptance reading contract using the registered package-local OFL WOFF2 subset; no remote dependency.",
+      "transformation_record": "R65 deterministic offline publication adds the paired independent-human review handoff and 0/8 not-signed fail-closed status using the registered package-local OFL WOFF2 subset; no remote dependency.",
       "redistribution_decision": "allowed_under_component_specific_CC_BY_4_0_ODbL_and_OFL_terms_with_notices",
       "exceptions_or_limits": "No remote dependency; retain accessibility, rights and evidence-boundary notices"
     },
@@ -2544,7 +2550,7 @@
       "source_or_provenance": "Submission author with AI-assisted deterministic rendering",
       "applicable_license_or_handling": "CC BY 4.0 for contributor content; linked embedded font subset is separately SIL OFL 1.1",
       "attribution_requirement": "Credit Twin-Track Jing-Zhang / 双轨京张 and xyh202131; retain CC BY, ODbL, OFL, source and provisional notices by component.",
-      "transformation_record": "R64 deterministic offline publication of the paired duty-acceptance reading contract using the registered package-local OFL WOFF2 subset; no remote dependency.",
+      "transformation_record": "R65 deterministic offline publication adds the paired independent-human review handoff and 0/8 not-signed fail-closed status using the registered package-local OFL WOFF2 subset; no remote dependency.",
       "redistribution_decision": "allowed_under_component_specific_CC_BY_4_0_ODbL_and_OFL_terms_with_notices",
       "exceptions_or_limits": "No remote dependency; retain accessibility, rights and evidence-boundary notices"
     }
