@@ -2,6 +2,14 @@
 
 记录「合辙京张 CONFLUENT TRACKS」方案的生成、自检与修订过程。每条记录包含版本、日期、主要变更与自检结果。
 
+
+## v1.5.1 - 2026-08-27
+
+- 修复中文 HTML 的离线 CJK 字体阻断项：从 Noto Sans SC 2.004 完整开源字体（SIL OFL 1.1）按四份中英文 HTML 的实际 Unicode 字符清单生成 WOFF2 子集，并以内嵌 data URL 写入 `visual/assets/cjk-font.css`；`report/proposal*.html` 与 `visual/index*.html` 均通过本地 `@font-face` 加载，不依赖 CDN 或审查环境预装字体。
+- 字体 CSS 对标题、正文、导航、按钮、表格、指标值与单位、状态区、图例、代码文本、SVG `text/tspan` 和替代文本统一施加完整 CJK 字体族及可靠 fallback；同时清除了上一轮误写入 `<style>` 的字面 `` `n ``，恢复有效 CSS。
+- 在 `sources.json` 与 `report/copyright_statement.md` 登记字体上游、OFL 许可、源文件/包内资产 SHA-256、字符子集方法和可复现重建条件；字体资产不超 5 MB，四份 HTML 均不超 2 MB。
+- 重新生成报告 HTML，并在与检查一致的断网本地 `file://` 环境进行整页截图与程序化布局审计；复跑 visual packaging、finalize、自检及 participant preflight。
+
 ## v1.5.0 - 2026-08-26
 
 - 针对最新 AI Agent 评审（七维加权分 85.0/100，建议结论 request-changes，SHA-256: e29e0ba9...）的表达完整度 P0 阻断项进行全面深度修复：

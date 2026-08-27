@@ -154,6 +154,23 @@
       "supported_claim": "Demonstrates autonomous navigation and multi-sensor payload inspection in complex, unstructured underground utility corridors, sewer networks, and bridge sub-structures.",
       "usage": "Background international reference case for underground utility tunnel and drainage network robotic inspection.",
       "not_usable_for": "local underground utility engineering sign-off, structural assessment liability, or statutory pipeline approvals."
+    },
+    {
+      "id": "FONT-NOTO-SANS-SC-OFL",
+      "title": "Noto Sans SC (Simplified Chinese), version 2.004",
+      "publisher": "Google Noto Fonts / Adobe",
+      "url": "https://github.com/notofonts/noto-cjk",
+      "license": "SIL Open Font License 1.1",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "source_type": "open_source_asset",
+      "authority_level": "cleared_open_license",
+      "source_file": "NotoSansSC variable TrueType font",
+      "source_sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "packaged_path": "visual/assets/cjk-font.css",
+      "packaged_sha256": "daf03caa79d1a99d13c9a4acfd596377b63f1eaafbbf81bca6a324b50b2920f2",
+      "packaging": "A WOFF2 subset is generated from the complete source font for every Unicode code point present in report/proposal*.html and visual/index*.html, then embedded as a data URL in CSS via @font-face. Both report and visual pages link this local CSS; no CDN or installed system font is required.",
+      "usage": "Offline CJK rendering for Chinese/English titles, body text, navigation, buttons, metric values and units, legends, status panels, SVG text and alternative text.",
+      "not_usable_for": "No claim that this font supplies characters outside the packaged HTML code-point inventory; regenerate the subset whenever visible or alternative text changes."
     }
   ]
 }

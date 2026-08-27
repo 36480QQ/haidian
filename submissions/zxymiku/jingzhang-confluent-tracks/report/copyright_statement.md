@@ -8,15 +8,15 @@
 - **指标（metrics.json）**：由 `dev/scripts/gen_metrics.py` 从上述 GeoJSON 在 EPSG:4548 下复算，与 `scripts/spatial_review.py` 的复算口径一致（先投影后 union）。
 - **必需图件（assets/figures/*.png，中英各 5 张）**：由 `dev/scripts/composite_figures.py`（matplotlib + PIL）从 GeoJSON 与 metrics 派生光栅化渲染。文本渲染采用开源 SIL OFL 1.1 许可的 `Noto Sans SC`（思源/Noto 黑体）字体，纯栅格像素输出，卡片与图例经自适应排版完全消除文字碰撞重叠。
 - **自定义封面（assets/media/cover.webp 与 cover.png）**：由 PIL 纯几何与开源矢量字形合成，深青蓝底 + 黄铜金人字形道岔 + 人文橙/机器人青并进箭头 + 中英文标题。
-- **报告 HTML（report/proposal.html 与 .en.html）**：由 `scripts/render_proposal_html.py` 从 proposal.md 渲染，样式优先采用开源 OFL 字体栈（`"Source Han Sans SC", "Noto Sans CJK SC"`）及客户端系统无衬线回退，剔除专有商业字体引用，无外部 WebFont 网络依赖。
+- **报告 HTML（report/proposal.html 与 .en.html）**：由 `scripts/render_proposal_html.py` 从 proposal.md 渲染；两页均加载包内 `../visual/assets/cjk-font.css`，由 `@font-face` 使用 data URL 内嵌 Noto Sans SC WOFF2 子集，覆盖本提交四份 HTML 出现的全部 Unicode 字符，并以 Noto/Source Han/Arial/sans-serif 作为可靠回退；无 CDN、无外部 WebFont、无审查机预装字体依赖。
 - **A3/A0 PDF（drawings/*.pdf，中英各 2 个）**：由 reportlab 生成，中文字形采用 Google Noto Sans SC（SIL OFL 1.1）TrueType 字体进行矢量子集化直接嵌入，确保客户端正确渲染中文字符；英文使用 `Helvetica`，所有指标严格回溯 geometry/metrics。
-- **可视化页（visual/index.html 与 .en.html）**：手写静态 HTML + 离线 SVG，完全自包含，无 CDN、无外部字体加载、无 iframe、无外部 API。
+- **可视化页（visual/index.html 与 .en.html）**：手写静态 HTML + 离线 SVG，加载同目录 `assets/cjk-font.css` 中的内嵌 Noto Sans SC WOFF2 子集；字体覆盖标题、正文、导航、按钮、指标单位、状态区、图例、SVG 标签及替代文本。页面无 CDN、无 iframe、无外部 API。
 
 ## 工具链与字体许可 / Toolchain & Font Licensing
 
 - Python 3.13 / shapely 2.1.2 / pyproj / matplotlib 3.11.1 / reportlab 5.0.0 / Pillow / jsonschema（requirements-review.txt）。
 - **字体许可策略**：
-  1. **Web 与 HTML 报告**：采用 CSS 通用开源字体族声明（`"Source Han Sans SC", "Noto Sans CJK SC", Arial, sans-serif`），不作绝对无风险声明；实际发布前仍需按素材来源与许可证逐项核验；
+  1. **Web 与 HTML 报告**：采用 Noto Sans SC 2.004（Google/Adobe，SIL OFL 1.1）。完整源 TTF 的 SHA-256 为 `a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da`；构建时按四份 HTML 的实际 Unicode 字符集合生成 WOFF2 子集并以 data URL 写入 `visual/assets/cjk-font.css`（当前 CSS SHA-256 `daf03caa79d1a99d13c9a4acfd596377b63f1eaafbbf81bca6a324b50b2920f2`）。四页通过本地 `<link>` 引用同一字体资产，`@font-face` 设置 `font-display:block`，并对正文、表格、表单控件、导航、指标、图例、`svg text/tspan` 等统一覆盖；无需系统字体或网络。字体内容改变时必须重建子集并刷新本登记及 manifest；
   2. **PNG 分析图件**：由 Matplotlib 使用本地 SIL OFL 1.1 许可的 `Noto Sans SC` 字体渲染并直接光栅化为像素，不捆绑任何专有商业字体库；
   3. **PDF 文册与展板**：使用开源 SIL OFL 1.1 许可的 `Noto Sans SC` TrueType 字体进行内嵌子集化输出，支持离线展示；实际发布前仍需在目标环境抽查字体回退与嵌入效果。
 
