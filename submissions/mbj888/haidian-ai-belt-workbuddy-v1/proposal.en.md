@@ -24,7 +24,7 @@ package_state: "ready_for_review"
 
 - **Coordinated area 43.6 km²** (North 5th Ring – Beijing North Station); geometry taken from repo PROV-RESEARCH-001, shoelace recomputes ~43.6 km², matching the official 43.6 km² [data:geometry/site_boundary.geojson][metric:site_area].
 - **Overall urban-design area 11.4 km²** (from PROV-SITE-001, recomputes ~11.4 km²) [data:geometry/site_boundary.geojson][metric:overall_design_area].
-- **Key areas 368.4 ha**: Zhongzhiyuan AI Acceleration Area 192.1 ha, Beijing AI Origin Community 104.3 ha, Dazhongsi AI Industry Cluster 72.0 ha (from PROV-KEY-001/002/003, recomputed sum ~368.9 ha, matching official 368.4 ha) [data:geometry/key_areas.geojson][metric:key_area_area].
+- **Key areas 368.4 ha**: Zhongzhiyuan AI Acceleration Area 192.1 ha, Beijing AI Origin Community 104.3 ha, Dazhongsi AI Industry Cluster 72.0 ha (from PROV-KEY-001/002/003, recomputed sum ~369.7 ha, matching official 368.4 ha) [data:geometry/key_areas.geojson][metric:key_area_area].
 - Three belts: Centennial Jing-Zhang Culture Belt, Urban AI Living-Experience Belt, AI Fusion Innovation Belt [standard:spatial_structure].
 
 ![Three-level scope](assets/figures/site-overview.png)
