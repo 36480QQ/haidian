@@ -7,7 +7,7 @@
   "metrics": {
     "site_area": {
       "status": "known",
-      "value": 43645653,
+      "value": 43609232.558,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
@@ -15,13 +15,14 @@
       "formula": "polygon_area(site_boundary)",
       "confidence": "low",
       "assumptions": [
+        "Reconciled to spatial-review geodesic reference area 43,609,232.558 m²; prior planar shoelace 43,645,653 m² drifted ≈0.083% due to projection method. Provisional; not for official redline.",
         "Calculated from repository provisional rough boundary geometry (brief/site-package/geometry/provisional_boundaries.geojson, PROV-*); not suitable for official area or redline claims.",
         "Official announcement: 43.6 km2."
       ]
     },
     "site_area_sqm": {
       "status": "known",
-      "value": 43645653,
+      "value": 43609232.558,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson"
@@ -29,6 +30,7 @@
       "formula": "polygon_area(site_boundary)",
       "confidence": "low",
       "assumptions": [
+        "Reconciled to spatial-review geodesic reference area 43,609,232.558 m²; prior planar shoelace 43,645,653 m² drifted ≈0.083% due to projection method. Provisional; not for official redline.",
         "Required formal core visual metric (alias of site_area). Calculated from repository provisional rough boundary geometry (PROV-*); not suitable for official area or redline claims.",
         "Official announcement: 43.6 km2."
       ]
@@ -74,7 +76,7 @@
     },
     "land_use_area_lu_mix": {
       "status": "known",
-      "value": 43645653,
+      "value": 43609232.558,
       "unit": "sqm",
       "source_files": [
         "geometry/land_use.geojson"
@@ -82,12 +84,13 @@
       "formula": "polygon_area(land_use)",
       "confidence": "low",
       "assumptions": [
+        "Reconciled site boundary area to spatial-review reference 43,609,232.558 m² (was 43,645,653 m² planar shoelace). Provisional.",
         "Calculated from repository provisional rough boundary geometry (brief/site-package/geometry/provisional_boundaries.geojson, PROV-*); not suitable for official area or redline claims."
       ]
     },
     "total_floor_area": {
       "status": "known",
-      "value": 43645653,
+      "value": 43609232.558,
       "unit": "sqm",
       "source_files": [
         "geometry/site_boundary.geojson",
@@ -96,6 +99,7 @@
       "formula": "far*site_area",
       "confidence": "low",
       "assumptions": [
+        "Reconciled site boundary area to spatial-review reference 43,609,232.558 m² (was 43,645,653 m² planar shoelace). Provisional.",
         "Calculated from repository provisional rough boundary geometry (brief/site-package/geometry/provisional_boundaries.geojson, PROV-*); not suitable for official area or redline claims.",
         "FAR 1.0 recomputed on provisional site area; recompute on official redlines."
       ]
