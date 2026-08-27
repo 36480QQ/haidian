@@ -105,6 +105,12 @@ iteration: "v0.1"
 
 ![京张100·AI 大动脉 Logo](assets/media/logo.svg)
 
+![品牌识别系统渲染图（Logo 主版 / 横向 / 单色三版）](assets/figures/brand-identity.png)
+
+![色彩系统（四主色 + 五辅色）](assets/figures/vi-palette.png)
+
+![应用场景示例（文档封面 / 导视牌 / 横幅 / 铭牌，概念 mockup）](assets/figures/vi-applications.png)
+
 **品牌识别渲染版（PNG，供评审与画廊预览直接读取）**：品牌识别系统 `assets/figures/brand-identity.png`、色彩系统 `assets/figures/vi-palette.png`、应用场景示例 `assets/figures/vi-applications.png`（英文版对应 `*.en.png`）。内容与 `assets/media/visual_identity.md` 手册逐项对应：Logo 三版、四主色 + 五辅色、文档封面 / 导视牌 / 传播横幅 / 荣誉墙铭牌四类概念 mockup；均为概念示意，实施前须经版权清权。
 
 面向智能体任务书还要求回应"五大功能"和"三区两翼"协同 [source:AGENT-TASKBOOK]。方案在统筹研究范围内提出五大功能的空间分工：AI 全栈自主创新体系主要落在北京AI原点社区与北航、北邮、清华协同带；世界级 AI 创新生态通过中关村科技服务翼与小月河场景赋能翼连接产业与场景；AI+ 场景赋能新范式落在三处重点区与周边街区；智能化 AI 活力城市由 11.4 km² 总体设计范围承载；AI 治理全球话语权（参考国务院《新一代人工智能发展规划》方向 [source:SRC-CENTRAL-GOV-AI-DEVELOPMENT-2017]；该来源尚未进入 source_registry_summary approved_formal 清单，仅作参考性背景，最终以 official 公告为准）则通过智能体贡献荣誉墙、年度开源成果发布、AI 治理论坛等机制长期沉淀。三区两翼协同回路：众智园（北）→ 北京AI原点社区（中）→ 大钟寺（南）形成"自主技术栈 → 开源转化 → 产业放大"的纵向走廊；中关村科技服务翼（西）提供资本、IP、政策与国际化通道；小月河场景赋能翼（东）提供场景开放、用户测试与生活体验。这一回路不是新建行政边界，而是把已登记的高校、企业、轨道站点和公共空间组织成可运营的协作网络 [depth:overall_spatial_structure]。
@@ -260,17 +266,25 @@ AI 朝圣地标：方案在 `geometry/public_space.geojson` 中布局 4 个 AI �
 
 地标、导视、Logo、字体、图像、人物和企业标识必须清权后实施；不得过度娱乐化或把概念地标写成已批准建设。
 
+![试点公共空间节点概念平面图（PUBLIC-001 荣誉墙广场 / PUBLIC-008 站前空间）](assets/figures/pilot-node-plans.png)
+
 **试点公共空间节点概念平面图**：`assets/figures/pilot-node-plans.png`（英文版 `*.en.png`）——选取两类典型节点（AI 智能体贡献荣誉墙广场 PUBLIC-001 / 大钟寺站前公共空间 PUBLIC-008）绘制概念平面布置；边界为 provisional 多边形（虚线），面积与周长按 EPSG:4548 投影复算（与 metrics.json 同口径），内部布置为概念示意（design_proposal，confidence=low），详细设计阶段调整。
 
 城市风貌：方案按 [standard:MOHURD-URBAN-DESIGN-MEASURES] 提出城市基调、建筑体量、屋顶形态、街墙贴线、首层通透性、夜景照明等维度形成图则。城市基调：以"京张铁锈红 + 数字蓝 + 遗址绿 + 数据银"四色为主，建筑外立面建议以浅灰、米白、深灰为主色，铁锈红与数字蓝作为点缀色。建筑体量：重点区塔楼高度待 official 限高确认（概念建议 36-80 m），避免"千篇一律"超高层；老城区以多层为主，避免大尺度破坏历史肌理。屋顶形态：屋顶绿化覆盖率待 official 屋顶承载力条件评估，结合光伏与雨水回收；地标建筑可采用"钢轨横截面"造型呼应京张铁路叙事。街墙贴线：街墙贴线率按控规条件落实（概念建议 60-80%），保障街道连续性；首层通透性按控规条件落实（概念建议 50-70%），避免"封闭裙房"。夜景照明：重点区允许适度装饰性夜景照明，居民区按光污染控制标准落实 [depth:height_massing_character]。
 
 夜景照明：重点区允许适度装饰性夜景照明，居民区按光污染控制标准落实 [depth:height_massing_character]。
 
+![典型街道断面概念示意图（遗产走廊街道 / 大钟寺站前街道）](assets/figures/road-sections.png)
+
 **典型街道断面概念示意图**：`assets/figures/road-sections.png`（英文版 `*.en.png`）——遗产走廊街道与大钟寺站前街道两类概念断面，表达 AI 智能杆（传感 + 摄像头 + 公众否决按钮同杆）、边缘计算设备舱（沿绿带贴杆、零占人行通行带）、建筑首层通透界面（概念建议 50-70%）、慢行道与无障碍通行带的横向关系；带宽为示意关系不标注米数，横断面尺寸与市政容量待 official 道路红线发布后由专业团队确定。
 
 ## 更新项目清单、实施政策与分期计划
 
 方案在 `geometry/phasing.geojson` 中按近期（2026-2028）、中期（2028-2030）、远期（2030-2035）三期组织更新项目 [data:geometry/phasing.geojson#PHASE-001] [data:geometry/phasing.geojson#PHASE-002] [data:geometry/phasing.geojson#PHASE-003] 。同时 [depth:renewal_project_list] [depth:phasing_implementation]。三期由南向北推进：近期聚焦大钟寺 AI 产业集聚区先导示范与轨道站点一体化，中期聚焦北京 AI 原点社区改造与 AI 场景开放运营，远期聚焦众智园 AI 自主创新加速区全栈建设与国际传播。三期分期是概念建议，最终时序与项目安排待 official 实施计划与政府审批为准。
+
+![建议性分期甘特图：R-01 ~ R-17 十七项 × 三期（概念）](assets/figures/project-gantt.png)
+
+**建议性分期甘特图**：R-01～R-17 在近/中/远三期的分布（条色对应 T1–T5 条件树类型）、任一项目通用的 G1–G3 阶段门与替代/退出路径、五类条件树的触发—替代速查；项目名与条件措辞与本章表格逐字一致。期次安排为概念建议，无官方时间表。
 
 **近期（2026-2028）项目清单**：①大钟寺批发市场片区更新（条件式启动：须先行完成权属核查、文保评估、参考性城市更新法定程序（参考《北京市城市更新条例》[source:SRC-BJ-URBAN-RENEWAL-REGULATION] 方向，待核验背景）与利益相关方协商；建议方向为 AI 企业总部与智能终端展示带，约 30 ha，投资规模待 official 权属、企业与政府投资条件确认；本方案不预设具体数字）；②大钟寺站一体化改造（轨道接驳、四象限步行连通、站前公共空间）；③大钟寺 AI 里程碑公园建设（约 1.5 ha 概念规模）；④京张遗址公园走廊南段先导示范（约 2 公里）；⑤AI 智能体贡献荣誉墙一期建设。实施主体：建议海淀区 + 大钟寺企业联合体；政策建议：现行中关村科技创新政策 + 海淀区城市更新专项资金。
 
