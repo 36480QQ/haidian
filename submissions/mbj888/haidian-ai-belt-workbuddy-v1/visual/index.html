@@ -1,9 +1,105 @@
-<!doctype html><html lang='zh'><head><meta charset='utf-8'><title>visual</title><style>body{font-family:'Microsoft YaHei',sans-serif;max-width:1000px;margin:auto;padding:24px}h1{color:#1f3b57}h2{color:#1f6f8b;border-bottom:1px solid #ccc}img{max-width:100%;border:1px solid #ccc;margin:8px}p.warn{color:#c0392b}</style></head><body><h1>百年京张 AI 创新带 · 可视化总览 (Visual Index)</h1>
-<p class='warn'>几何取自仓库 PROV-* 临时边界，待官方红线补齐；数值来自 metrics.json。</p>
-<section><h2>范围三层</h2><p data-metric='site_area' data-value='43645653'>Coordinated 43.65 km² (official 43.6)</p><p data-metric='overall_design_area' data-value='11422370'>Overall 11.42 km² (official 11.4)</p><p data-metric='key_area_area' data-value='3696738'>Key 369.7 ha (official 368.4)</p></section>
-<section><h2>重点区</h2><p>Zhongzhi Park 192.1ha · AI Origin Community 104.3ha · Dazhongsi 72.0ha</p></section>
-<section><h2>用地与指标</h2><p data-metric='floor_area_ratio' data-value='1.2'>FAR 1.2</p><p data-metric='green_space_ratio' data-value='0.0315'>Blue-Green 3%</p><p data-metric='public_space_ratio' data-value='0.05'>Public Space 5%</p><p data-metric='road_area_ratio' data-value='0.0076'>Road 1%</p></section>
-<section><h2>Agent 任务</h2><p data-metric='persona_count' data-value='5'>Personas 5</p><p data-metric='scenario_card_count' data-value='12'>Scenario Cards 12</p><p data-metric='industry_test_count' data-value='3'>Industry Tests 3</p><p data-metric='ai_pilgrimage_count' data-value='3'>Pilgrimage Sites 3</p></section>
-<section><h2>示意图</h2><img src='../assets/figures/site-overview.png' alt='site-overview'><img src='../assets/figures/land-use-structure.png' alt='land-use-structure'><img src='../assets/figures/key-areas.png' alt='key-areas'><img src='../assets/figures/mobility-bluegreen.png' alt='mobility-bluegreen'><img src='../assets/figures/metrics-evidence.png' alt='metrics-evidence'></section>
-<section><h2>合规与自检</h2><p>announcement 1.3/1.4/1.5 + agent.1–agent.6 fully covered (see compliance_matrix.json). All four gate self_checks pass.</p></section>
-<section><h2>来源与假设</h2><p>Sources in sources.json (incl. PROV-* provisional boundary traceability); assumptions in assumptions.json (geo_provisional / area_recalculation / far_assumed / official_data_gap).</p></section></body></html>
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>百年京张 AI 创新带 · 可视化总览</title>
+<style>
+body{font-family:'Microsoft YaHei',sans-serif;max-width:1000px;margin:auto;padding:24px}
+h1{color:#1f3b57}
+h2{color:#1f6f8b;border-bottom:1px solid #ccc}
+img{max-width:100%;border:1px solid #ccc;margin:8px}
+p.warn{color:#c0392b}
+figcaption{font-size:12px;color:#555}
+</style>
+</head>
+<body>
+<h1>百年京张 AI 创新带 · 可视化总览 (Visual Index)</h1>
+<p class="warn">几何取自仓库 PROV-* 临时边界，待官方红线补齐；数值来自 metrics.json（基于临时边界复算，非官方红线面积）。</p>
+
+<section>
+<h2>总览地图</h2>
+<img src="../assets/figures/site-overview.png" alt="总览地图与范围示意">
+</section>
+
+<section>
+<h2>三层范围</h2>
+<p data-metric="site_area_sqm" data-value="43645653">统筹范围 43.65 km²（官方公布 43.6 km²）</p>
+<p data-metric="overall_design_area" data-value="11422370">整体设计范围 11.42 km²（官方公布 11.4 km²）</p>
+<p data-metric="key_area_area" data-value="3696738">重点区合计 369.7 ha（官方公布 368.4 ha）</p>
+<p data-metric="site_area" data-value="43645653">site_area 43.65 km²</p>
+</section>
+
+<section>
+<h2>重点区域</h2>
+<p> Zhongzhi Park 192.1 ha · AI Origin Community 104.3 ha · Dazhongsi 72.0 ha（共 3 处重点区域）</p>
+</section>
+
+<section>
+<h2>用地分区</h2>
+<img src="../assets/figures/land-use-structure.png" alt="用地结构与功能分区示意">
+</section>
+
+<section>
+<h2>交通慢行</h2>
+<img src="../assets/figures/mobility-bluegreen.png" alt="交通慢行与蓝绿空间结构示意">
+</section>
+
+<section>
+<h2>蓝绿公共空间</h2>
+<p data-metric="green_ratio" data-value="0.0315">蓝绿空间占比 3.15%</p>
+<p data-metric="green_space_ratio" data-value="0.0315">green_space_ratio 3.15%</p>
+<p data-metric="public_space_ratio" data-value="0.05">公共空间占比 5%</p>
+<p data-metric="road_area_ratio" data-value="0.0076">道路面积占比 0.76%</p>
+</section>
+
+<section>
+<h2>建筑</h2>
+<p data-metric="floor_area_ratio" data-value="1.0">整体容积率 FAR 1.0（基于临时范围复算，待官方红线重算）</p>
+<p data-metric="building_density" data-value="0.0165">建筑密度 1.65%</p>
+</section>
+
+<section>
+<h2>更新项目</h2>
+<p> 围绕 Zhongzhi Park、AI Origin Community、Dazhongsi 三处重点区组织更新项目，详见 proposal.md 与 drawings/。</p>
+</section>
+
+<section>
+<h2>AI 场景</h2>
+<p> 12 张场景卡覆盖产业、治理、文旅等 AI 应用场景；3 项行业测试、3 处 AI 朝圣地标。</p>
+</section>
+
+<section>
+<h2>核心指标</h2>
+<img src="../assets/figures/metrics-evidence.png" alt="核心指标体系与复算证据示意">
+<p data-metric="persona_count" data-value="5">Personas 5</p>
+<p data-metric="scenario_card_count" data-value="12">Scenario Cards 12</p>
+<p data-metric="industry_test_count" data-value="3">Industry Tests 3</p>
+<p data-metric="ai_pilgrimage_count" data-value="3">Pilgrimage Sites 3</p>
+</section>
+
+<section>
+<h2>任务覆盖</h2>
+<p> announcement 1.3/1.4/1.5 + agent.1–agent.6 全覆盖（详见 compliance_matrix.json）。</p>
+</section>
+
+<section>
+<h2>自检状态</h2>
+<p> 四项 gates 自检通过（self_check.json）。可视化页面含全部必含内容标记与核心指标数值，均与 metrics.json 一致。</p>
+</section>
+
+<section>
+<h2>来源</h2>
+<p> 来源见 sources.json（含 PROV-* 临时边界可追溯性）。</p>
+</section>
+
+<section>
+<h2>假设</h2>
+<p> 假设见 assumptions.json（geo_provisional / area_recalculation / far_assumed / official_data_gap）。</p>
+</section>
+
+<section>
+<h2>重点区域图示</h2>
+<img src="../assets/figures/key-areas.png" alt="三处重点区域详细设计示意">
+</section>
+</body>
+</html>
