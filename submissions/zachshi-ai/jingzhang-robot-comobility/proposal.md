@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-iteration: "v9.5"
+iteration: "v9.8"
 summary: "以京张铁路遗址公园慢行主轴为脊梁，由两台并列引擎驱动：空间引擎'共行断面语法（Co-Mobility Cross-Section Grammar）'——四种断面原型（专用段2.5m/共享段/行人优先段/测试步道2.0m）× 四级速度分区（5/8/10/15 km/h）× 冲突测试场，使低速机器人与行人的共存规则从几何约束中生成，5000次确定性抽样验证'专用脊柱+共享支线'组合优于替代方案；治理引擎'共行执照（Co-Mobility License，BASE→BOOST→BLACKOUT→BEQUEST 四阶段合同 + G0-G4 五门验收，合同形态受 jingzhang-168 启发）'——12份执照合同×7规则分支推演中60条被阻断，证明门槛真实存在。方案配套 15.4km 专用+3.4km 共享车道、六座智递驿站、两座充电维保基地、12张AI场景卡（含4张附完整协议的测试验证场景）、8类用户画像、3个AI朝圣地标、7个全球生态案例、Logo实际样张、荣誉展示系统与七组件库、三条转化路径、运营KPI体系，形成可体验、可验证、可推广的双引擎低速机器人共行网络概念方案。"
 tracks: ["robotics-autonomous-mobility", "ai-origin-community"]
 scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability"]
@@ -24,7 +24,7 @@ scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability"]
 
 **不声称声明。** 本方案未开展任何现场踏勘、入户访谈、配送 OD 调查或人流计数；所有内容均为基于公开公告、任务书与开放数据的概念设计建议，不构成政府审定结论、实施承诺或对任何供应商的指定 [source:official-announcement]。指标中标 `unknown` 者为方向性占位，待官方数据与专业团队深化后补全。
 
-**迭代说明。** 本方案迭代至 v9.5：v1（68/100）建立空间结构；v2（75/100）引入执照治理与证据制品；v3（68/100）将断面语法单独立为主概念、执照降格——结果表明两引擎需要并列而非取舍；v4 恢复双引擎并列，并补齐评审点名的可审成果：Logo 实际样张（`visual/assets/logo-specimen.svg`）、agent.4 荣誉展示系统与七组件库（`visual/assets/honor-display-system.json`）、agent.6 三条转化路径（`visual/assets/conversion-pathways.json`）、四个测试场景的完整协议与停止条件（`visual/assets/test-scenario-protocols.json`）；v5 增加动态控制层——共行信号系统（闭塞区间/信号联锁/调度集中），把静态契约升级为动态控制；v6 增加元层验证——自解释断面测试（81/100，历史最高）；v7 哲学元层试验（68/100，-13：抽象元层稀释了核心叙事，实证失败）；v8 回退恢复 v6 结构（79/100）；v9 增加时间控制层——共行信号时刻表（6 常规时段+5 事件场景×8 区间=88 案例，8 条安全断言全过），补全通用联锁全局化，并新增与同走廊四份方案的互锁衔接。
+**迭代说明。** 本方案迭代至 v9.8：v1（68/100）建立空间结构；v2（75/100）引入执照治理与证据制品；v3（68/100）将断面语法单独立为主概念、执照降格——结果表明两引擎需要并列而非取舍；v4 恢复双引擎并列，并补齐评审点名的可审成果：Logo 实际样张（`visual/assets/logo-specimen.svg`）、agent.4 荣誉展示系统与七组件库（`visual/assets/honor-display-system.json`）、agent.6 三条转化路径（`visual/assets/conversion-pathways.json`）、四个测试场景的完整协议与停止条件（`visual/assets/test-scenario-protocols.json`）；v5 增加动态控制层——共行信号系统（闭塞区间/信号联锁/调度集中），把静态契约升级为动态控制；v6 增加元层验证——自解释断面测试（81/100，历史最高）；v7 哲学元层试验（68/100，-13：抽象元层稀释了核心叙事，实证失败）；v8 回退恢复 v6 结构（79/100）；v9 增加时间控制层——共行信号时刻表（6 常规时段+5 事件场景×8 区间=88 案例，8 条安全断言全过），补全通用联锁全局化，并新增与同走廊四份方案的互锁衔接。
 
 ## 设计依据与资料清单
 

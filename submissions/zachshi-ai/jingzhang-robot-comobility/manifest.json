@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "d9b493acafc85661417ca0d08b1ced8193eb7c5151e3a6b155823621da5790ee"
+      "sha256": "e5a84fe8005593c6402e21ed2c5ad7afde651bb6477e01b29ab427567c47ba67"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "a132ec3606fe2f4623eae6f448250306bca78c791b2e932353ee5b7db09425bd"
+      "sha256": "0de148701da98a9bd8cd5183438a33eaacf04042f97a55d0f80ad2a067e3f16d"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "514ae339b72793f77097d9083aec09a5795fadf6c966b995f856885b1934e975"
+      "sha256": "9cfedbf644b714644ce1b69646dd9f20a3aa5131dd763410e1da3da84e2e374d"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "7c496e534ff61c0fb20c5d2b78252e8dd889d87368252437a4d835826a3f3216"
+      "sha256": "e08ea08b65b05468000e6836cb0cb1b8ba7457b2f5300a39b732188c3d116311"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "b1ce92c1d64f090244a0196b97ae49175a0a12cdb72dba5a45590a755ac2c9e4"
+      "sha256": "a15d144024776bed7464e112f70eb5735f5f62bb4b1f2d5fcbd268afd06a647e"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "29494070f570c01077c0c80f1add16714e9e494d8f9047905d260e3d84cec137"
+      "sha256": "a59cb3c48cb8f891adfcc744095bb2bcfc3d4572cdc184276bb4461c64c0939b"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -213,7 +213,7 @@
       "translation_of": "proposal.md",
       "title_zh": "京张AI低速机器人共行网（英文正式译文）",
       "title_en": "Jingzhang AI Low-Speed Robot Co-Mobility Network (English translation)",
-      "sha256": "216471b7ef65f20dfa45742c772660075d06ff819b638d83bd84c1c4e3417c92"
+      "sha256": "b18a31a869981e4999197a8615c896d6639343d06d008f065858896b8afa9f2d"
     },
     {
       "path": "risk.json",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "da8c372cf31231ca646f5fbcc7c6d20c7236c38f8149d6f9e166d2a68840ffd0"
+      "sha256": "85f470707698d8e4605efe394f5d9f18aad251fd7c5e7e3f21e94faa207178c4"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "29e057182fe6061a8b62e1cb517c977e9fb060a6a6d14be65c642d4ed3bc93a7"
+      "sha256": "6b73e4309210bf8103cdef010c91c5754af6a03bd3452a60b2a192bcb0199bb0"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -245,7 +245,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "fa595078ba4486a9edb20ef1aeea3dfa22093f161152a91e05be37cd59811a55"
+      "sha256": "ee1b70b95aa9b0cf5fca5632f2e04521e6df0b68a73f12891ba1bd133f004ff3"
     },
     {
       "path": "visual/index.en.html",
@@ -253,7 +253,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "5c6b975f7e748862e6b9af5e1190a7567709493a93fb04233d855d5f1dbd0c15"
+      "sha256": "ff86357264a57cc80e1567dac012e89b750f0793863edcfb048667a3ac62a6d7"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -293,7 +293,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "1521fd9ae652c1324d7dbc7b1957a2e29ff4006e5333cb9dc2b41760f1bc1e3f"
+      "sha256": "ecb843fe0890c23fd909796213d6c1ae7066f288be7dff6ac819d0d176c38d41"
     },
     {
       "path": "visual/assets/co-mobility-license.schema.json",
@@ -353,7 +353,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "4d3fdad854160a9b06a0777d05b1fd2d86844092f5a81602ad005b36143b8b3d"
+      "sha256": "f1e856fd1d90c75dba4f3592e295270162b0f6194a237907d00be7c60aef4f4e"
     },
     {
       "path": "simulation.json",
