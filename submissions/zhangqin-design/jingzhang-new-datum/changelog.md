@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v2.6 — principal-approved direct English A0 translation
+
+- Replaced the reconstructed English A0 set with a direct English translation of the principal-approved Chinese v34 A0 master.
+- Preserved the original three-board layout, drawings, image positions, colour bands, frames, proportions and visual hierarchy; only the Chinese presentation text was translated.
+- Retained the already accepted 22-page English A3 booklet without re-layout or drawing replacement.
+- Refreshed the submission manifest and persisted self-check after the English A0 replacement.
+
 ## v2.5 — English A0 colour-bar alignment correction
 
 - Removed all secondary colour bars that had been overlaid across A3-derived image crops and caused duplicated or drifting headers.
