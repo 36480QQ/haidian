@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="共益生境：让每个人在京张沿线独立完成抵达、识路、休息、参与、求助与安全离开。">
+  <title>共益生境｜百年京张 AI 创新带城市设计</title>
+  <style>
+    :root {
+      --night:#030406; --night-2:#05070a; --panel:rgba(12,17,25,.76); --panel-strong:#0c1119;
+      --ink:#f1f0eb; --ink-soft:#d0d3d8; --muted:#9299a4; --line:rgba(111,196,255,.18);
+      --blue:#5dabff; --blue-strong:#6fc4ff; --blue-soft:rgba(93,171,255,.10);
+      --green:#58d6a6; --ochre:#ffc46b; --red:#f06a6a;
+      --shadow:0 28px 90px rgba(0,0,0,.34),inset 0 1px rgba(255,255,255,.035);
+      --mx:78vw; --my:16vh;
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; background:var(--night); color-scheme:dark; }
+    body { margin:0; color:var(--ink); background:
+      radial-gradient(circle at 82% 4%,rgba(33,97,155,.17),transparent 28rem),
+      radial-gradient(circle at 8% 48%,rgba(55,122,103,.09),transparent 35rem),
+      linear-gradient(180deg,var(--night),var(--night-2) 60%,#020305);
+      font-family:"Noto Sans SC","Microsoft YaHei UI","PingFang SC",sans-serif; letter-spacing:.024em; line-height:1.88; overflow-wrap:break-word; }
+    body::before { content:""; position:fixed; inset:0; pointer-events:none; opacity:.7; background-image:
+      linear-gradient(rgba(111,196,255,.035) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(111,196,255,.035) 1px,transparent 1px);
+      background-size:56px 56px; -webkit-mask-image:linear-gradient(to bottom,black,transparent 88%); mask-image:linear-gradient(to bottom,black,transparent 88%); }
+    body::after { content:""; position:fixed; z-index:0; width:32rem; height:32rem; left:calc(var(--mx) - 16rem); top:calc(var(--my) - 16rem); pointer-events:none; border-radius:50%; background:radial-gradient(circle,rgba(93,171,255,.09),transparent 67%); filter:blur(16px); }
+    a { color:inherit; }
+    button { font:inherit; }
+    :focus-visible { outline:2px solid var(--blue-strong); outline-offset:4px; }
+    .skip { position:fixed; left:16px; top:-80px; z-index:100; padding:10px 14px; background:var(--ink); color:var(--night); border-radius:3px; }
+    .skip:focus { top:16px; }
+    .rail { position:sticky; top:0; z-index:30; backdrop-filter:blur(22px) saturate(120%); background:rgba(3,4,6,.78); border-bottom:1px solid rgba(111,196,255,.18); box-shadow:0 14px 50px rgba(0,0,0,.18); }
+    .rail-inner { max-width:1440px; margin:auto; height:70px; padding:0 28px; display:flex; align-items:center; gap:20px; }
+    .brand { display:flex; align-items:center; gap:13px; color:var(--ink); text-decoration:none; font-weight:680; letter-spacing:.08em; white-space:nowrap; }
+    .mark { width:25px; height:25px; display:grid; grid-template-columns:repeat(3,1fr); gap:3px; transform:rotate(45deg); }
+    .mark i { display:block; border:1px solid rgba(255,255,255,.22); background:#101b28; }
+    .mark i:nth-child(2), .mark i:nth-child(5) { background:var(--ochre); }
+    .mark i:nth-child(4), .mark i:nth-child(7) { background:var(--blue-strong); }
+    .mark i:nth-child(9) { visibility:hidden; }
+    .brand small { display:block; color:var(--muted); font-family:"Aptos","Arial",sans-serif; font-size:10px; font-weight:500; letter-spacing:.16em; }
+    nav { display:flex; gap:4px; margin-left:auto; overflow:auto; scrollbar-width:none; }
+    nav a { text-decoration:none; white-space:nowrap; color:var(--muted); padding:8px 11px; border-bottom:1px solid transparent; font-size:13px; transition:color .18s ease,border-color .18s ease,background .18s ease; }
+    nav a:hover, nav a:focus-visible { color:var(--ink); border-color:var(--blue); background:var(--blue-soft); outline:none; }
+    nav a[aria-current="true"] { color:var(--ink); border-color:var(--blue-strong); }
+    .access-toggle { min-height:42px; padding:8px 11px; border:1px solid var(--line); background:transparent; color:var(--muted); cursor:pointer; white-space:nowrap; }
+    .access-toggle:hover,.access-toggle[aria-pressed="true"] { color:var(--night); background:var(--ink); border-color:var(--ink); }
+    body.readable { --muted:#c6ccd4; --ink-soft:#e1e3e6; letter-spacing:.03em; }
+    body.readable::after { display:none; }
+    body.readable .reveal { opacity:1; transform:none; transition:none; }
+    main { position:relative; z-index:1; }
+    .hero { min-height:780px; display:grid; place-items:center; padding:96px 28px 64px; overflow:hidden; }
+    .hero-inner { width:min(1380px,100%); display:grid; grid-template-columns:minmax(0,1.28fr) minmax(360px,.72fr); gap:54px; align-items:end; }
+    .eyebrow { color:var(--green); font-family:"Aptos","Arial",sans-serif; font-size:12px; font-weight:720; letter-spacing:.2em; text-transform:uppercase; }
+    h1 { margin:20px 0 22px; max-width:980px; font-size:clamp(58px,6.8vw,104px); line-height:1.07; letter-spacing:.035em; font-weight:720; text-wrap:balance; }
+    h1 em { display:block; color:var(--ink); font-style:normal; }
+    h1 span { display:block; margin-top:24px; font-family:"Aptos Display","Arial",sans-serif; font-size:.18em; letter-spacing:.23em; color:var(--blue-strong); font-weight:540; }
+    .lead { max-width:850px; margin:0; font-size:clamp(18px,1.7vw,24px); line-height:1.85; color:var(--ink-soft); letter-spacing:.035em; }
+    .lead-en { max-width:800px; margin:16px 0 0; color:var(--muted); font:500 12px/1.65 "Aptos","Arial",sans-serif; letter-spacing:.11em; text-transform:uppercase; }
+    .tag-row { display:flex; flex-wrap:wrap; gap:0; margin-top:32px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .tag { padding:9px 16px 9px 0; margin-right:16px; color:var(--ink-soft); border-right:1px solid var(--line); font-size:12px; }
+    .hero-panel { position:relative; min-height:520px; padding:30px; border:1px solid rgba(111,196,255,.24); border-radius:3px; background:linear-gradient(145deg,rgba(18,29,43,.82),rgba(5,9,15,.68)); box-shadow:var(--shadow),0 0 80px rgba(39,118,184,.10); backdrop-filter:blur(24px) saturate(125%); overflow:hidden; }
+    .hero-panel::before { content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(130deg,rgba(255,255,255,.055),transparent 26%,transparent 74%,rgba(93,171,255,.055)); }
+    .hero-panel::after { content:"K13+640 · COMMON SPINE"; position:absolute; right:24px; top:18px; color:rgba(208,211,216,.36); font:600 10px/1 "Consolas",monospace; letter-spacing:.14em; }
+    .spine { position:absolute; left:49%; top:34px; bottom:150px; width:3px; border-radius:4px; background:linear-gradient(var(--ochre),var(--blue),var(--green)); box-shadow:0 0 24px rgba(93,171,255,.32); animation:spine-breathe 12s ease-in-out infinite; }
+    .spine::before { content:""; position:absolute; left:-9px; top:0; bottom:0; width:1px; background:rgba(111,196,255,.25); }
+    .node { position:absolute; left:calc(49% - 9px); width:21px; height:21px; border-radius:50%; background:var(--night); border:4px solid var(--blue); box-shadow:0 0 0 8px rgba(93,171,255,.08),0 0 28px rgba(93,171,255,.28); }
+    .node b { position:absolute; left:43px; top:-14px; width:220px; font-size:16px; letter-spacing:.04em; }
+    .node small { display:block; color:var(--muted); font-weight:500; font-size:12px; }
+    .n1 { top:16%; } .n2 { top:42%; } .n3 { top:68%; }
+    .notice { position:absolute; left:30px; right:30px; bottom:26px; margin:0; padding:15px 17px; border-left:2px solid var(--red); color:#efb0b0; background:rgba(66,26,31,.34); font-size:12px; line-height:1.65; }
+    .wrap { width:min(1380px,calc(100% - 56px)); margin:auto; }
+    section { position:relative; scroll-margin-top:86px; padding:90px 0; }
+    main > section:not(.hero)::before { content:""; position:absolute; top:0; left:max(28px,calc((100% - 1380px)/2)); right:max(28px,calc((100% - 1380px)/2)); height:1px; background:linear-gradient(90deg,var(--ochre),rgba(93,171,255,.28) 24%,transparent 78%); opacity:.55; }
+    main > section:nth-of-type(even) { background:linear-gradient(100deg,rgba(9,16,25,.46),transparent 55%); }
+    .section-head { display:grid; grid-template-columns:160px minmax(0,1fr); gap:28px; align-items:start; margin-bottom:38px; }
+    .section-no { color:var(--blue-strong); font:680 12px/1.4 "Aptos","Arial",sans-serif; letter-spacing:.19em; padding-top:12px; }
+    .section-head > div:last-child { min-width:0; }
+    h2 { margin:0; max-width:1040px; font-size:clamp(34px,4vw,60px); line-height:1.2; letter-spacing:.035em; font-weight:710; text-wrap:balance; overflow-wrap:normal; word-break:normal; }
+    h2 .title-lead,
+    h2 .title-phrase { display:inline-block; white-space:nowrap; }
+    .section-en { max-width:100%; margin:12px 0 0; color:var(--blue-strong); font:540 11.5px/1.65 "Aptos","Arial",sans-serif; letter-spacing:.1em; text-transform:uppercase; overflow-wrap:anywhere; }
+    .section-intro { max-width:1000px; color:var(--muted); font-size:18px; line-height:1.9; }
+    .glass { position:relative; background:linear-gradient(145deg,rgba(15,22,32,.80),rgba(7,11,17,.70)); border:1px solid rgba(111,196,255,.17); border-radius:3px; box-shadow:var(--shadow); backdrop-filter:blur(22px) saturate(120%); }
+    .glass::before { content:""; position:absolute; z-index:0; left:18px; right:18px; top:0; height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),var(--blue),transparent); opacity:.62; }
+    .figure { padding:12px; overflow:hidden; }
+    .figure img { position:relative; z-index:1; width:100%; height:auto; display:block; border-radius:1px; filter:none; opacity:1; }
+    .caption { position:relative; z-index:1; display:flex; justify-content:space-between; gap:20px; padding:12px 8px 3px; color:var(--muted); font-size:12px; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { padding:25px; min-height:190px; overflow:hidden; transition:border-color .18s ease,background .18s ease; }
+    .card:hover { border-color:rgba(111,196,255,.36); background:linear-gradient(145deg,rgba(19,29,43,.88),rgba(8,13,20,.76)); }
+    .card::after { display:none; }
+    .card > * { position:relative; z-index:1; }
+    .card h3 { margin:0 0 11px; font-size:21px; letter-spacing:.035em; line-height:1.55; text-wrap:pretty; }
+    .card p { margin:0; color:var(--muted); }
+    .pill { display:inline-flex; padding:0 0 7px; border:0; border-bottom:1px solid rgba(93,171,255,.28); color:var(--blue-strong); font:650 11px/1.5 "Aptos","Arial",sans-serif; letter-spacing:.09em; margin-bottom:14px; }
+    .tabs { display:flex; flex-wrap:wrap; gap:24px; margin-bottom:22px; border-bottom:1px solid var(--line); }
+    .tab { min-height:42px; border:0; border-bottom:2px solid transparent; background:transparent; color:var(--muted); padding:8px 2px; cursor:pointer; transition:color .18s ease,border-color .18s ease; }
+    .tab:hover { color:var(--ink); border-color:rgba(111,196,255,.42); }
+    .tab[aria-pressed="true"] { color:var(--ink); background:transparent; border-color:var(--blue-strong); }
+    .scenario-card[hidden] { display:none; }
+    .scope-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-left:1px solid var(--line); }
+    .scope { padding:28px; border-radius:0; border-left:0; border-top:3px solid var(--blue); }
+    .scope:nth-child(2) { border-top-color:var(--green); } .scope:nth-child(3) { border-top-color:var(--ochre); }
+    .scope strong { font-size:34px; display:block; margin:8px 0; }
+    .scope p { color:var(--muted); }
+    .two { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .matrix { display:block; border-top:1px solid var(--line); }
+    .metric { min-height:0; padding:17px 0; display:grid; grid-template-columns:minmax(170px,.8fr) minmax(160px,.7fr) minmax(260px,1.5fr); gap:28px; align-items:center; background:transparent; border:0; border-bottom:1px solid var(--line); transition:background .18s ease; }
+    .metric:hover { background:linear-gradient(90deg,rgba(93,171,255,.045),transparent); }
+    .metric small { color:var(--muted); }
+    .metric strong { display:block; margin:0; font-size:26px; letter-spacing:.01em; }
+    .metric em { color:#e7a2a2; font-style:normal; font-size:11px; }
+    .scenario-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid var(--line); border-left:1px solid var(--line); }
+    .scenario-card { min-height:210px; padding:21px; border-radius:0; background:rgba(8,13,20,.56); border:0; border-right:1px solid var(--line); border-bottom:1px solid var(--line); transition:background .18s ease; }
+    .scenario-card:hover { background:rgba(14,22,33,.78); }
+    .scenario-card b { font-size:17px; display:block; margin-bottom:8px; }
+    .scenario-card p { color:var(--muted); font-size:13px; margin:8px 0; }
+    .scenario-card .result { color:var(--green); }
+    .flow { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; counter-reset:step; }
+    .project-flow { grid-template-columns:repeat(4,1fr); }
+    .step { min-height:176px; padding:22px; background:linear-gradient(150deg,rgba(16,24,35,.88),rgba(6,10,15,.82)); border:1px solid var(--line); border-radius:2px; }
+    .step::before { counter-increment:step; content:"0" counter(step); display:block; color:var(--blue-strong); font:760 12px/1 "Aptos","Arial",sans-serif; letter-spacing:.12em; margin-bottom:20px; }
+    .step p { color:var(--muted); }
+    .day-flow { display:grid; grid-template-columns:repeat(6,1fr); gap:10px; position:relative; }
+    .day-flow::before { content:""; position:absolute; left:4%; right:4%; top:31px; height:1px; background:linear-gradient(90deg,var(--ochre),var(--blue),var(--green)); box-shadow:0 0 14px rgba(93,171,255,.32); }
+    .day-step { position:relative; min-height:190px; padding:64px 18px 20px; border:1px solid var(--line); border-radius:2px; background:linear-gradient(150deg,rgba(16,24,35,.88),rgba(6,10,15,.82)); }
+    .day-step::before { content:""; position:absolute; z-index:2; left:18px; top:24px; width:13px; height:13px; border:2px solid var(--blue-strong); border-radius:50%; background:var(--night); box-shadow:0 0 15px rgba(93,171,255,.45); }
+    .day-step b { display:block; color:var(--blue-strong); font:720 10px/1.4 "Aptos","Arial",sans-serif; letter-spacing:.1em; }
+    .day-step strong { display:block; margin:8px 0; font-size:18px; }.day-step p { color:var(--muted); font-size:12px; line-height:1.75; }
+    .capability-band { margin:22px 0; padding:18px 20px; border:1px solid rgba(88,214,166,.22); background:rgba(88,214,166,.045); color:var(--ink-soft); }
+    .capability-band b { color:var(--green); margin-right:14px; font:700 11px "Aptos","Arial",sans-serif; letter-spacing:.1em; }
+    .target-grid,.eco-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-top:22px; border-top:1px solid var(--line); border-left:1px solid var(--line); }
+    .target-card,.eco-card { min-height:168px; padding:20px; border:0; border-right:1px solid var(--line); border-bottom:1px solid var(--line); background:rgba(8,13,20,.58); }
+    .target-card b,.eco-card b { color:var(--ochre); font:720 10px/1.5 "Aptos","Arial",sans-serif; letter-spacing:.1em; }.eco-card b { color:var(--green); }
+    .target-card strong { display:block; margin:12px 0 6px; font-size:27px; }.target-card p,.eco-card p { color:var(--muted); font-size:12px; line-height:1.75; }
+    .eco-head { display:flex; justify-content:space-between; gap:24px; align-items:end; margin-top:40px; }.eco-head h3 { margin:0; font-size:26px; }.eco-head p { max-width:660px; margin:0; color:var(--muted); font-size:13px; }
+    .alignment-bar { margin-top:24px; padding:20px; border-left:2px solid var(--ochre); background:rgba(255,196,107,.045); }
+    .alignment-bar b { color:var(--ochre); font:720 10px "Aptos","Arial",sans-serif; letter-spacing:.1em; }.alignment-bar p { margin:8px 0 0; color:var(--muted); font-size:12px; line-height:1.75; }
+    .offline-guide { margin-top:30px; padding-top:22px; border-top:1px solid var(--line); }
+    .offline-guide-head { display:grid; grid-template-columns:210px minmax(0,1fr); gap:30px; margin-bottom:18px; }.offline-guide-head b { color:var(--ochre); font:720 10px/1.6 "Aptos","Arial",sans-serif; letter-spacing:.11em; }.offline-guide-head h3 { margin:0 0 7px; font-size:24px; }.offline-guide-head p { margin:0; color:var(--muted); font-size:12px; }
+    .offline-guide-list { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--line); border-left:1px solid var(--line); }
+    .offline-guide-list div { min-height:120px; padding:16px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }.offline-guide-list strong { display:block; color:var(--blue-strong); font:700 10px/1.5 "Aptos","Arial",sans-serif; letter-spacing:.07em; }.offline-guide-list span { display:block; margin-top:7px; color:var(--muted); font-size:11px; line-height:1.72; }.offline-guide-rule { margin:13px 0 0; color:var(--green); font-size:11px; line-height:1.75; }
+    .warning { padding:22px; border-left:3px solid var(--red); background:rgba(67,24,30,.35); color:#efb0b0; }
+    details { border-top:1px solid var(--line); padding:14px 0; }
+    summary { cursor:pointer; font-weight:700; }
+    details p { color:var(--muted); }
+    footer { position:relative; z-index:1; border-top:1px solid var(--line); margin-top:70px; padding:42px 0 58px; color:var(--muted); font-size:12px; }
+    footer b { color:var(--ink-soft); letter-spacing:.12em; }
+    .status-dot { display:inline-block; width:9px; height:9px; border-radius:50%; background:var(--green); box-shadow:0 0 0 6px rgba(88,214,166,.10),0 0 18px rgba(88,214,166,.28); margin-right:10px; }
+    .reveal { opacity:0; transform:translateY(18px); transition:opacity .65s cubic-bezier(.2,.75,.2,1),transform .65s cubic-bezier(.2,.75,.2,1); transition-delay:var(--delay,0ms); }
+    .reveal.is-visible { opacity:1; transform:none; }
+    @keyframes spine-breathe { 0%,100% { opacity:.72; filter:saturate(.86); } 50% { opacity:1; filter:saturate(1.2); } }
+    @media (max-width:900px) {
+      .hero-inner,.section-head,.two { grid-template-columns:1fr; }
+      .hero-panel { min-height:560px; }
+      .spine { bottom:170px; }
+      .n1 { top:14%; } .n2 { top:37%; } .n3 { top:60%; }
+      .notice { left:18px; right:18px; bottom:18px; padding:12px 14px; font-size:11px; }
+      .cards,.scope-grid,.scenario-grid { grid-template-columns:1fr; }
+      .metric { grid-template-columns:1fr .7fr 1.3fr; }
+      .flow,.day-flow,.target-grid,.eco-grid { grid-template-columns:1fr; }
+      .offline-guide-list { grid-template-columns:repeat(2,1fr); }
+      .day-flow::before { display:none; }.eco-head { display:block; }.eco-head p { margin-top:8px; }
+      .section-head { gap:8px; }
+      nav { display:none; }
+      .brand small { display:none; }
+    }
+    @media (max-width:720px) { h2 .title-lead, h2 .title-phrase { display:inline; white-space:normal; } }
+    @media (max-width:560px) { h1 { font-size:clamp(42px,14vw,56px); } h1 span { font-size:10px; } h2 { font-size:32px; line-height:1.25; letter-spacing:.025em; } .section-en { font-size:10.5px; letter-spacing:.075em; } .caption { flex-direction:column; gap:4px; } .metric { grid-template-columns:1fr; gap:6px; } .wrap { width:min(100% - 32px,1380px); } .hero { padding-inline:16px; } .node b { width:170px; } .access-toggle span { display:none; } .offline-guide-head,.offline-guide-list { grid-template-columns:1fr; } }
+    @media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto !important; animation:none !important; transition:none !important; } .reveal { opacity:1; transform:none; } body::after { display:none; } }
+    @media print { .rail,.tabs { display:none; } .glass { box-shadow:none; } section { break-inside:avoid; } * { print-color-adjust:exact; -webkit-print-color-adjust:exact; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <header class="rail">
+    <div class="rail-inner">
+      <a class="brand" href="#overview" aria-label="返回共益生境总览">
+        <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span>共益生境<small>COMMON HABITAT</small></span>
+      </a>
+      <nav aria-label="章节导航">
+        <a href="#overview">总览</a><a href="#scope">范围</a><a href="#areas">重点区</a><a href="#day">一天</a><a href="#pilot">90天试点</a><a href="#industry">产业验证</a><a href="#review">审查</a>
+      </nav>
+      <button class="access-toggle" id="accessToggle" type="button" aria-label="开启清晰阅读模式" aria-pressed="false">Aa <span>清晰阅读</span></button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="overview">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">DESIGN GOAL · COMMON HABITAT · CENTENNIAL JING-ZHANG</div>
+          <h1>让每个人<em>独立完成一天</em><span>A DAY EVERYONE CAN COMPLETE</span></h1>
+          <p class="lead">本方案把沿京张铁路完成抵达、识路、休息、参与、求助与安全离开设为待验证的公共生活目标。年龄、身体能力、语言、照护负担或数字经验不同，都不应成为完成一天的门槛。</p>
+          <p class="lead-en">Across the Jingzhang corridor, six ordinary acts define the public-life baseline—without compulsory accounts, devices or AI.</p>
+          <div class="tag-row"><span class="tag">普遍可达</span><span class="tag">无数字强迫</span><span class="tag">代际共处</span><span class="tag">气候与生境修复</span><span class="tag">可问责 AI</span><span class="tag">分组公开证据</span></div>
+        </div>
+        <aside class="hero-panel" aria-label="三处重点区概念索引">
+          <div class="spine"></div>
+          <div class="node n1"><b>众智园<small>开放验证与维修</small></b></div>
+          <div class="node n2"><b>AI 原点社区<small>日常公共服务检验</small></b></div>
+          <div class="node n3"><b>大钟寺<small>复杂城市关系验证</small></b></div>
+          <div class="notice">临时粗略边界（PROVISIONAL）｜非官方红线｜仅用于方案生成、可视化与公开讨论，不用于精确面积复算、审批或实施；取得 official polygons 后统一替换并复算。</div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="map"><div class="wrap">
+      <div class="section-head"><div class="section-no">01 · OVERVIEW</div><div><h2><span class="title-lead">总览地图｜</span><span class="title-phrase">京张共生脊串联三处重点区</span></h2><p class="section-en">A COMMON SPINE LINKS THREE FOCUS AREAS ALONG THE JINGZHANG CORRIDOR.</p><p class="section-intro">南北主脊承接铁路记忆与公共生活；公平抵达网和水土生境网补齐通行与生态缺口。临时边界以虚线标记，官方边界到位后统一替换复算。</p></div></div>
+      <figure class="glass figure"><img src="../assets/figures/site-overview.png?v=20260825-dark" alt="共益生境总体概念和空间主线图"><figcaption class="caption"><span>总体概念 · 一脊两网三态</span><span>结构化依据：GeoJSON / metrics</span></figcaption></figure>
+    </div></section>
+
+    <section id="scope"><div class="wrap">
+      <div class="section-head"><div class="section-no">02 · SCOPE</div><div><h2>三层范围对应三类交付</h2><p class="section-en">THREE SCALES, THREE DISTINCT DELIVERABLES.</p><p class="section-intro">统筹研究处理产业与长期运营，总体设计形成空间与更新框架，重点区域检验场地关系和服务结果。三层范围使用不同的证据精度。</p></div></div>
+      <div class="scope-grid"><article class="glass scope"><span class="pill">统筹研究</span><strong>约 43.6 km²</strong><p>三区两翼、产业生态、品牌与长期运营。现有依据为文字四至与约面积；本轮不绘制伪精确红线。</p></article><article class="glass scope"><span class="pill">总体设计</span><strong>约 11.4 km²</strong><p>一脊两网、用地、更新、交通、市政、蓝绿和风貌。当前 polygon 为 provisional。</p></article><article class="glass scope"><span class="pill">重点区域</span><strong>约 368.4 ha</strong><p>众智园、AI 原点社区、大钟寺。名称和公告约面积可信，位置 polygon 为 provisional。</p></article></div>
+    </div></section>
+
+    <section id="land"><div class="wrap">
+      <div class="section-head"><div class="section-no">03 · STRUCTURE</div><div><h2><span class="title-lead">用地分区｜</span><span class="title-phrase">概念框架保留法定资料缺口</span></h2><p class="section-en">A CONCEPTUAL LAND-USE FRAMEWORK WITH EXPLICIT DATA GAPS.</p><p class="section-intro">四类概念用途覆盖临时总体范围，当前成果不构成已批控规。建筑权属、开发强度、拆改留和法定控制条件均标记为待补资料。</p></div></div>
+      <figure class="glass figure"><img src="../assets/figures/land-use-structure.png?v=20260825-dark" alt="四类用地与共生脊空间结构图"><figcaption class="caption"><span>0802 · 1401 · 05 · 0702</span><span>建筑：概念性可逆更新原型</span></figcaption></figure>
+      <div class="cards" style="margin-top:18px"><article class="glass card"><span class="pill">建筑</span><h3>保留优先，适配需验证，拆除需证据</h3><p>现状、结构和权属未补齐前，建筑 GeoJSON 只表达可逆原型，不构成具体拆改留结论。</p></article><article class="glass card"><span class="pill">开发强度</span><h3>容积率与高度保持 unknown</h3><p>等待 official polygon、已批准控规、文保与景观研究。现阶段不设置固定数值。</p></article><article class="glass card"><span class="pill">城市风貌</span><h3>铁路时间尺度 × 可维修界面</h3><p>控制连续大屏和高能耗立面，保障普通使用权，优先可拆构件和蓝绿界面。</p></article></div>
+    </div></section>
+
+    <section id="areas"><div class="wrap">
+      <div class="section-head"><div class="section-no">04 · KEY AREAS</div><div><h2>三个重点区检验不同城市关系</h2><p class="section-en">THREE FOCUS AREAS TEST RESEARCH, PUBLIC SERVICE AND COMPLEX URBAN RELATIONS.</p><p class="section-intro">片区卡片分别列明待解决问题、空间动作、交付物和停止条件。重点区边界仍为 provisional，面积与选址结论须待官方 polygon 复核。</p></div></div>
+      <figure class="glass figure"><img src="../assets/figures/key-areas.png?v=20260825-dark" alt="三处重点区问题动作结果和退出图"><figcaption class="caption"><span>边界为 provisional</span><span>方案为概念建议</span></figcaption></figure>
+      <div class="cards" style="margin-top:18px"><article class="glass card"><span class="pill">众智园</span><h3>技术能否复算、维修和退出</h3><p>交付 4 类产业测试协议、失败记录、能耗与退出成本基准。安全和断电演练未通过时，测试不得进入真实社区。</p></article><article class="glass card"><span class="pill">AI 原点社区</span><h3>公共服务能否在无账号条件下完成</h3><p>每个场景保留非数字等价路径、公开数据卡和人工更正。账号不得成为公共便利门槛。</p></article><article class="glass card"><span class="pill">大钟寺</span><h3>换乘时间和服务错误是否下降</h3><p>连续通行和人工服务构成基线；等待时间与错误率单独测量。商业体验不得占用必经通道。</p></article></div>
+    </div></section>
+
+    <section id="mobility"><div class="wrap">
+      <div class="section-head"><div class="section-no">05 · NETWORKS</div><div><h2><span class="title-lead">交通慢行 × 蓝绿公共空间｜</span><span class="title-phrase">城市基本底盘</span></h2><p class="section-en">PUBLIC LIFE AND LIVING SYSTEMS FORM THE URBAN BASELINE.</p><p class="section-intro">南北共生脊连接三处公平抵达横门。无障碍、遮阴、雨水、照明、停留和人工服务独立运行；AI 仅处理经确认的剩余服务缺口。</p></div></div>
+      <figure class="glass figure"><img src="../assets/figures/mobility-bluegreen.png?v=20260825-dark" alt="交通慢行与蓝绿公共空间复合网络图"><figcaption class="caption"><span>N0 留白 · N1 可选 · N2 受控</span><span>概念网络 / 不代表道路红线或工程线位</span></figcaption></figure>
+    </div></section>
+
+    <section id="day"><div class="wrap">
+      <div class="section-head"><div class="section-no">06 · COMPLETE THE DAY</div><div><h2><span class="title-lead">六项基本任务｜</span><span class="title-phrase">共同定义公共生活基线</span></h2><p class="section-en">SIX ESSENTIAL TASKS DEFINE THE PUBLIC-LIFE BASELINE.</p><p class="section-intro">正式评测按八种能力条件分别报告，任一条件在任一任务失败，当天体验即判定未完成；网页不合并计算分母。</p></div></div>
+      <div class="capability-band"><b>8 CAPABILITY CONDITIONS</b>M 移动耐力 · V 看见辨识 · H 听见交流 · C 理解记忆 · D 数字信心 · S 感官气候 · G 照护同行 · T 夜间时间</div>
+      <div class="day-flow" aria-label="完整一天的六项任务">
+        <article class="day-step"><b>01 · ARRIVE</b><strong>抵达</strong><p>换乘、落客与入口接入连续无台阶路径。</p></article>
+        <article class="day-step"><b>02 · ORIENT</b><strong>识路</strong><p>实体、多感官、易读信息可重复确认。</p></article>
+        <article class="day-step"><b>03 · REST</b><strong>休息</strong><p>遮阴、饮水、厕所、座位与安静点可达。</p></article>
+        <article class="day-step"><b>04 · PARTICIPATE</b><strong>参与</strong><p>不同速度、身高和沟通方式都能加入。</p></article>
+        <article class="day-step"><b>05 · GET HELP</b><strong>求助</strong><p>现场、电话与非数字入口覆盖同一服务。</p></article>
+        <article class="day-step"><b>06 · RETURN</b><strong>安全离开</strong><p>照明、候车、绕行与人工确认持续可用。</p></article>
+      </div>
+      <div class="capability-band"><b>TARGETS · NOT RESULTS</b>以下 100% 与 0 均为试点准入目标，尚未构成现场绩效或已实现结果。</div>
+      <div class="target-grid" aria-label="准入目标">
+        <article class="target-card"><b>NON-DIGITAL ROUTE</b><strong>100%</strong><p>六项基本任务均有非数字路径。</p></article>
+        <article class="target-card"><b>OWNER · APPEAL · EXIT</b><strong>100%</strong><p>公共 AI 均有具名责任人、申诉和退出安排。</p></article>
+        <article class="target-card"><b>IDENTITY RECOGNITION</b><strong>0</strong><p>不新增人脸、生物特征或设备身份识别。</p></article>
+        <article class="target-card"><b>REMOVAL / RED EVENTS</b><strong>0 min / 0</strong><p>计划拔除中断 / 未关闭权利、安全或生态红色事件。</p></article>
+      </div>
+      <aside class="offline-guide" aria-labelledby="formalOfflineGuideTitle">
+        <div class="offline-guide-head"><b>PLAN · NOT YET DELIVERED</b><div><h3 id="formalOfflineGuideTitle">多格式线下手册 / MULTI-FORMAT OFFLINE GUIDE</h3><p>二维码只作补充入口；每种格式分别与对应使用者共创，并接受六项任务测试。</p></div></div>
+        <div class="offline-guide-list">
+          <div><strong>BRAILLE + TACTILE MAP</strong><span>盲文与触觉线路图；盲人使用者共创，触觉地图另作专业复核。</span></div>
+          <div><strong>LARGE PRINT + HIGH CONTRAST</strong><span>低视力大字、高对比、低眩光版本；低视力使用者单独共测。</span></div>
+          <div><strong>CHILD EASY-READ</strong><span>儿童易读短句、图形与地标；儿童和照护者测试。</span></div>
+          <div><strong>OLDER-ADULT EASY-READ</strong><span>老人易读步骤、时间与求助方式；不同数字经验共同复核。</span></div>
+          <div><strong>AUDIO GUIDE</strong><span>可下载音频、离线播放包与文字稿；版本日期和人工求助方式同步提供。</span></div>
+          <div><strong>PHONE + HUMAN GUIDE</strong><span>电话与现场人工讲解独立可用；文字入口同步保留。</span></div>
+        </div>
+        <p class="offline-guide-rule">任何版本缺页、过期或无法独立使用时，不得将本计划表述为已完成的无障碍成果。</p>
+      </aside>
+      <div class="eco-head"><h3>环境收益与人的体验进入同一份结果合同</h3><p>完整生长季证据形成前，不发布生态成效结论。遮阴、饮水与休息、雨洪、土壤、生境、暗夜光扰动、噪声和维护能耗均需复测。</p></div>
+      <div class="eco-grid">
+        <article class="eco-card"><b>COOLING · RECOVERY</b><p>逐段记录最热时段遮阴、体感、饮水、座位和厕所可用性。</p></article>
+        <article class="eco-card"><b>STORMWATER · SOIL</b><p>比较渗透、蓄滞、土壤含水量、养护耗水与雨后恢复。</p></article>
+        <article class="eco-card"><b>HABITAT · SENSORY</b><p>跟踪树冠、生境连通、指示物种、光扰动、噪声与安静通行段。</p></article>
+        <article class="eco-card"><b>ENERGY · MAINTENANCE</b><p>单位合格任务计入算力、网络、设备、维修和人工工时。</p></article>
+      </div>
+      <div class="alignment-bar"><b>INTERNATIONAL ALIGNMENT ≠ CERTIFICATION</b><p>UN SDG 11.2 / 11.7 · CRPD Articles 9 / 19 · WHO Age-friendly Cities and Communities · WHO / UNICEF / UN-Habitat SPACES · UNESCO AI Ethics · W3C WCAG 2.2。此处只说明对照关系，不构成认证、背书或合规结论；本地共创、法规审查与独立验证仍须分别完成。</p></div>
+    </div></section>
+
+    <section id="pilot"><div class="wrap">
+      <div class="section-head"><div class="section-no">07 · 90-DAY PILOT</div><div><h2><span class="title-lead">90 天先锋试点｜</span><span class="title-phrase">把概念变成一次可停止的现场决定</span></h2><p class="section-en">A REVERSIBLE PIONEER PILOT AT THE AI ORIGIN COMMUNITY.</p><p class="section-intro">试点建议落在 AI 原点社区的一条可核实公共生活环；最终位置、责任主体和公众开放条件须由场地管理方及专业团队确认。90 天交付采购判断，不代表全线施工。</p></div></div>
+      <div class="flow" aria-label="90天试点阶段">
+        <div class="step"><b>0—15 DAYS</b><p>核实边界、权属接口、维护责任与六项任务现状基线。</p></div>
+        <div class="step"><b>16—30 DAYS</b><p>与使用者共创 N0、低技术和可选 AI 三种版本。</p></div>
+        <div class="step"><b>31—60 DAYS</b><p>隔离验证与影子运行；不让未经验证的决定影响公众。</p></div>
+        <div class="step"><b>61—75 DAYS</b><p>限量公众试用；按八种能力条件分别记录失败。</p></div>
+        <div class="step"><b>76—90 DAYS</b><p>断网、停电、撤除、复算；决定继续、修改、缩小或退出。</p></div>
+      </div>
+      <div class="cards" style="margin-top:22px">
+        <article class="glass card"><span class="pill">PILOT 01</span><h3>共益门廊与连续通行</h3><p>修复入口、过街、遮阴、休息、饮水和普通导视断点；低技术公共底盘独立可用。</p></article>
+        <article class="glass card"><span class="pill">PILOT 02</span><h3>人工服务台与六种线下信息</h3><p>纸本、盲文触觉、大字、儿童/老人易读、音频、电话和现场人工均保留。</p></article>
+        <article class="glass card"><span class="pill">PILOT 03</span><h3>可选路径、翻译与状态提示</h3><p>AI 只补剩余缺口；三年成本、最弱组结果与退出演练共同决定是否保留。</p></article>
+      </div>
+      <div class="warning" style="margin-top:20px">放行规则：低技术达到目标，不引入 AI；关键交叉样本缺席、红线触发、移除演练失败或长期维护无来源时，退回 N0。</div>
+    </div></section>
+
+    <section id="industry"><div class="wrap">
+      <div class="section-head"><div class="section-no">08 · INDUSTRY VALUE</div><div><h2><span class="title-lead">可信城市验证基础设施｜</span><span class="title-phrase">让企业知道什么值得部署</span></h2><p class="section-en">PUBLIC-INTEREST RULES BECOME R&amp;D, TEST AND PROCUREMENT EVIDENCE.</p><p class="section-intro">产业价值来自可复用的任务定义、共用验证场、开放接口、失败档案和采购验收证据。参与测试不自动获得合作、认证或采购资格。</p></div></div>
+      <div class="day-flow" aria-label="城市测试护照七步流程">
+        <article class="day-step"><b>01 · REGISTER</b><strong>问题登记</strong><p>受益人、现场位置、责任人和现有低技术方案。</p></article>
+        <article class="day-step"><b>02 · COMPARE</b><strong>三案比较</strong><p>N0、低技术、AI 使用同一任务和样本。</p></article>
+        <article class="day-step"><b>03 · ISOLATE</b><strong>隔离验证</strong><p>安全、数据、能耗、错误和人工接管。</p></article>
+        <article class="day-step"><b>04 · SHADOW</b><strong>影子运行</strong><p>系统给出建议，不直接改变公共服务。</p></article>
+        <article class="day-step"><b>05 · PUBLIC</b><strong>限量试用</strong><p>完整记录失败、近失与最弱组结果。</p></article>
+        <article class="day-step"><b>06 · REVIEW</b><strong>独立复算</strong><p>第三方复核版本、公式、成本与退出。</p></article>
+      </div>
+      <div class="target-grid" style="margin-top:22px">
+        <article class="target-card"><b>ENTERPRISE OUTPUT</b><strong>任务规格</strong><p>将“智慧城市需求”改写为可观察、可验收的城市任务。</p></article>
+        <article class="target-card"><b>PROCUREMENT OUTPUT</b><strong>验收条款</strong><p>效果、责任、成本、最弱组与退出条件进入同一合同。</p></article>
+        <article class="target-card"><b>PUBLIC OUTPUT</b><strong>开放证据</strong><p>发布版本、错误、能耗、人工负担和未解决问题。</p></article>
+        <article class="target-card"><b>VALID DECISION</b><strong>采购或退出</strong><p>“不采购 AI”与“继续小试”都是有价值的正式结果。</p></article>
+      </div>
+    </div></section>
+
+    <section id="projects"><div class="wrap">
+      <div class="section-head"><div class="section-no">09 · PROJECTS</div><div><h2><span class="title-lead">更新项目｜</span><span class="title-phrase">八个工作包按证据门分阶段放行</span></h2><p class="section-en">EIGHT WORK PACKAGES PASS THROUGH G0–G2 EVIDENCE GATES.</p><p class="section-intro">G0—G2 分别核验资料、设计与试点条件；任何红线触发即暂停。当前工作包不构成已确定的建设计划或工期承诺。</p></div></div>
+      <div class="flow project-flow">
+        <div class="step"><b>一日共益环</b><p>六项基本任务串成同一条可评测的一日路径。</p></div>
+        <div class="step"><b>共益门廊</b><p>连续无障碍、步行骑行与非消费性停留界面。</p></div>
+        <div class="step"><b>连续遮阴与休息</b><p>遮阴、饮水、座椅、照明与夜间返程连续可用。</p></div>
+        <div class="step"><b>人工服务与多格式信息</b><p>柜台、电话、纸本、盲文与大字版保留人工决定。</p></div>
+        <div class="step"><b>雨水与土壤修复</b><p>雨水花园、土壤修复、乡土植物与维护责任并列核验。</p></div>
+        <div class="step"><b>低干扰文化节点</b><p>铁路记忆、可逆展陈、低干扰照明与安静停留。</p></div>
+        <div class="step"><b>可信城市验证场</b><p>红队、维修、失败记录、断电与退出演练。</p></div>
+        <div class="step"><b>京张开放档案</b><p>版本、证据、贡献署名、公众更正与复算路径。</p></div>
+      </div>
+    </div></section>
+
+    <section id="scenes"><div class="wrap">
+      <div class="section-head"><div class="section-no">08 · AI SCENARIOS</div><div><h2><span class="title-lead">AI 场景｜</span><span class="title-phrase">15 个方案按公共价值与风险分组</span></h2><p class="section-en">FIFTEEN SCENARIOS ARE GROUPED BY PUBLIC VALUE, RISK AND EVIDENCE MATURITY.</p><p class="section-intro">每张场景卡分别记录非 AI 基线、可测增益、责任人和退出条件。S09—S12 仅限受控产业测试。</p></div></div>
+      <div class="tabs" role="group" aria-label="场景筛选"><button class="tab scene-tab" data-scene="all" aria-pressed="true">全部</button><button class="tab scene-tab" data-scene="public" aria-pressed="false">公共服务</button><button class="tab scene-tab" data-scene="ecology" aria-pressed="false">生态与慢行</button><button class="tab scene-tab" data-scene="test" aria-pressed="false">产业测试</button></div>
+      <div class="scenario-grid">
+        <article class="scenario-card" data-scene="ecology"><b>S01 无障碍通行链维护</b><p>非 AI 基线：巡检、报修、连续无障碍设施。</p><p class="result">结果：断点公开、人工确认、可撤除辅助。</p></article>
+        <article class="scenario-card" data-scene="public"><b>S02 无账号无障碍导航</b><p>非 AI 基线：纸本、导视、电话和现场人员。</p><p class="result">结果：不登录也能完成全程。</p></article>
+        <article class="scenario-card" data-scene="ecology"><b>S03 热浪与安静路线</b><p>非 AI 基线：树荫、座椅、饮水和安静区。</p><p class="result">结果：路线建议不建立个人轨迹。</p></article>
+        <article class="scenario-card" data-scene="ecology"><b>S04 雨水生境养护</b><p>非 AI 基线：土壤、水文与人工巡检。</p><p class="result">结果：告警可解释、维护者能停机。</p></article>
+        <article class="scenario-card" data-scene="public"><b>S05 公共服务转译台</b><p>非 AI 基线：清楚文本、人工窗口和多语言卡。</p><p class="result">结果：建议可更正，决定仍由人作出。</p></article>
+        <article class="scenario-card" data-scene="public"><b>S06 京张记忆无障碍讲述</b><p>非 AI 基线：时间线、触摸图和人工讲述。</p><p class="result">结果：历史事实与生成解释分栏。</p></article>
+        <article class="scenario-card" data-scene="public"><b>S07 可追溯公众意见整理</b><p>非 AI 基线：原始意见公开和人工归类。</p><p class="result">结果：每条摘要可回到原文。</p></article>
+        <article class="scenario-card" data-scene="public"><b>S08 夜间安心回程</b><p>非 AI 基线：照明、值守、求助和休息点。</p><p class="result">结果：不以异常识别替代公共服务。</p></article>
+        <article class="scenario-card" data-scene="test"><b>S09 端侧感知评测台</b><p>测试功耗、维修、误报与关闭能力。</p><p class="result">结果：公布能耗与退出成本基准。</p></article>
+        <article class="scenario-card" data-scene="test"><b>S10 机器人共享空间沙盒</b><p>隔离环境验证速度、礼让和人工接管。</p><p class="result">结果：不通过退出演练就不扩展。</p></article>
+        <article class="scenario-card" data-scene="test"><b>S11 Agent 可靠性红队</b><p>测试幻觉、偏见、越权和人工接管。</p><p class="result">结果：失败记录与修复版本公开。</p></article>
+        <article class="scenario-card" data-scene="test"><b>S12 能源与退出成本基准</b><p>比较模型规模、能耗、延迟和维护。</p><p class="result">结果：AI 无额外价值时允许结束。</p></article>
+        <article class="scenario-card" data-scene="public"><b>S13 法律与政策导航</b><p>只导航公开文本，不替代专业意见。</p><p class="result">结果：出处、日期和人工咨询入口可见。</p></article>
+        <article class="scenario-card" data-scene="public"><b>S14 开放学习与 AI 素养</b><p>儿童与成人都能理解模型边界。</p><p class="result">结果：不采集未成年人行为数据。</p></article>
+        <article class="scenario-card" data-scene="public"><b>S15 就医前公共服务导航</b><p>只做流程和资源导航，不做诊断。</p><p class="result">结果：紧急情况直接转人工与急救。</p></article>
+      </div>
+    </div></section>
+
+    <section id="metrics"><div class="wrap">
+      <div class="section-head"><div class="section-no">09 · METRICS</div><div><h2><span class="title-lead">核心指标｜</span><span class="title-phrase">结果按数据属性分栏报告</span></h2><p class="section-en">RESULTS ARE REPORTED AS PROVISIONAL CALCULATIONS, DELIVERY COUNTS AND ADMISSION THRESHOLDS.</p><p class="section-intro">临时复算、交付计数、设计验收阈值和 unknown 分开呈现。机器校验只确认文件与数据结构；城市绩效仍待现场基线和人工评审。</p></div></div>
+      <div class="matrix">
+        <div class="metric"><small>A · PROVISIONAL｜临时范围</small><strong data-metric="site_area_sqm" data-value="11412825.386">1141.3 ha</strong><em>低置信度 · 非官方红线</em></div>
+        <div class="metric"><small>A · PROVISIONAL｜绿地比例</small><strong data-metric="green_ratio" data-value="0.109621">10.96%</strong><em>方案 geometry / 临时范围</em></div>
+        <div class="metric"><small>A · PROVISIONAL｜公共空间比例</small><strong data-metric="public_space_ratio" data-value="0.04026">4.03%</strong><em>方案 geometry / 临时范围</em></div>
+        <div class="metric"><small>B · COUNT｜场景 / 测试 / 画像</small><strong>15 / 4 / 8</strong><em>完整性计数 / 不代表城市绩效</em></div>
+        <div class="metric"><small>C · TARGET｜非数字等价路径</small><strong>100%</strong><em>设计验收阈值 / 尚未实测</em></div>
+        <div class="metric"><small>C · TARGET｜新增身份识别</small><strong>0</strong><em>设计验收阈值 / 尚未实测</em></div>
+        <div class="metric"><small>C · TARGET｜拔除 AI 服务中断</small><strong>0 min</strong><em>计划性演练阈值 / 尚未实测</em></div>
+        <div class="metric"><small>D · UNKNOWN｜容积率 / 高度</small><strong>unknown</strong><em>等待 official 控规资料 / 不以估算补齐</em></div>
+      </div>
+      <figure class="glass figure" style="margin-top:20px"><img src="../assets/figures/metrics-evidence.png?v=20260825-dark" alt="指标证据风险和决策门关系图"><figcaption class="caption"><span>证据链而非大屏仪表盘</span><span>数值回到 metrics.json</span></figcaption></figure>
+    </div></section>
+
+    <section id="review"><div class="wrap">
+      <div class="section-head"><div class="section-no">10 · REVIEW</div><div><h2><span class="title-lead">对抗性审查｜</span><span class="title-phrase">失败模式与停止条件</span></h2><p class="section-en">ADVERSARIAL REVIEW EXAMINES FAILURE MODES, COUNTER-EVIDENCE, STOP CONDITIONS AND ACCOUNTABILITY.</p><p class="section-intro">23 项任务、6 条标准和 15 项设计深度均可追溯到正文与结构化证据。包内检查已有记录，内容仍待人工评审。</p></div></div>
+      <div class="two"><article class="glass card"><span class="pill">任务覆盖</span><h3>23 / 23</h3><p>官方 1.3—1.5 与 agent.1—agent.6 均定位到可读章节和结构化证据。</p></article><article class="glass card"><span class="pill">自检状态</span><h3><span class="status-dot"></span>四道机器检查</h3><p>确定性、空间、视觉和专业证据检查已有记录；provisional 边界提示继续保留，结论仍需人工复核。</p></article></div>
+      <div class="warning" style="margin-top:20px">权利、安全、生态或基本服务连续性任一项未通过，方案须修改、缩小、暂停或退出。</div>
+    </div></section>
+
+    <section id="sources"><div class="wrap">
+      <div class="section-head"><div class="section-no">11 · EVIDENCE</div><div><h2><span class="title-lead">来源与假设｜</span><span class="title-phrase">共同限定结论边界</span></h2><p class="section-en">SOURCES AND ASSUMPTIONS DEFINE THE LIMITS OF EACH CLAIM.</p><p class="section-intro">来源记录可支持的判断，假设记录尚未取得的资料。两类信息在正文中并列公开，便于复核和更正。</p></div></div>
+      <div class="two"><div class="glass card"><span class="pill">来源</span><h3>官方任务与专业依据</h3><details open><summary>项目公告与智能体任务书</summary><p>确认三层范围、三处重点区、设计任务、共创原则与统一边界条款。</p></details><details><summary>专业标准</summary><p>城市设计、控规编制审批与用地分类；建筑设计深度标准仍为待补资料。</p></details><details><summary>全球案例</summary><p>只借组织与运营机制，不用于本地规模、资金或政策预测。</p></details></div><div class="glass card"><span class="pill">假设</span><h3>九类待补资料</h3><details open><summary>空间与法定条件</summary><p>official 边界、重点区 polygon、控规、道路红线和四线。</p></details><details><summary>现状与工程条件</summary><p>建筑权属、交通实测、市政容量、生态四季基线和文保控制。</p></details><details><summary>运营授权</summary><p>项目主体、资金、活动、场地和 AI 试点均未被视为已经确定。</p></details></div></div>
+    </div></section>
+  </main>
+  <footer><div class="wrap"><b>共益生境 / COMMON HABITAT</b><p>作者 / AUTHOR：黄鑫 · GitHub @huangxin-design · github.com/huangxin-design</p><p>概念建议 · 参考方案 · 可供专业团队深化研究。本页面不代表政府或征集主办方，也不构成规划审批、工程实施或运营授权。</p></div></footer>
+  <script>
+    const accessToggle = document.querySelector("#accessToggle");
+    accessToggle.addEventListener("click", () => {
+      const next = !document.body.classList.contains("readable");
+      document.body.classList.toggle("readable", next);
+      accessToggle.setAttribute("aria-pressed", String(next));
+      accessToggle.setAttribute("aria-label", next ? "退出清晰阅读模式" : "开启清晰阅读模式");
+      accessToggle.querySelector("span").textContent = next ? "标准视觉" : "清晰阅读";
+    });
+
+    const bindFilter = (selector, cardSelector, key) => {
+      const buttons = Array.from(document.querySelectorAll(selector));
+      const cards = Array.from(document.querySelectorAll(cardSelector));
+      buttons.forEach((button) => button.addEventListener("click", () => {
+        buttons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+        const value = button.dataset[key];
+        cards.forEach((card) => { card.hidden = value !== "all" && card.dataset[key] !== value; });
+      }));
+    };
+    bindFilter(".scene-tab", ".scenario-card", "scene");
+
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const revealItems = document.querySelectorAll(".hero-inner > *, .section-head, .figure, .scope-grid, .cards, .flow, .tabs, .scenario-grid, .matrix, .two, .warning, .capability-band, .day-flow, .target-grid, .offline-guide, .eco-head, .eco-grid, .alignment-bar");
+    revealItems.forEach((item, index) => {
+      item.classList.add("reveal");
+      item.style.setProperty("--delay", `${Math.min(index % 3, 2) * 60}ms`);
+    });
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      revealItems.forEach((item) => item.classList.add("is-visible"));
+    } else {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { threshold:.08, rootMargin:"0px 0px -7% 0px" });
+      revealItems.forEach((item) => revealObserver.observe(item));
+
+      let pointerFrame = 0;
+      window.addEventListener("pointermove", (event) => {
+        if (pointerFrame) return;
+        pointerFrame = window.requestAnimationFrame(() => {
+          document.documentElement.style.setProperty("--mx", `${event.clientX}px`);
+          document.documentElement.style.setProperty("--my", `${event.clientY}px`);
+          pointerFrame = 0;
+        });
+      }, { passive:true });
+    }
+
+    const navLinks = Array.from(document.querySelectorAll("nav a"));
+    if ("IntersectionObserver" in window) {
+      const sectionObserver = new IntersectionObserver((entries) => {
+        const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        navLinks.forEach((link) => link.setAttribute("aria-current", String(link.getAttribute("href") === `#${visible.target.id}`)));
+      }, { rootMargin:"-20% 0px -65% 0px", threshold:[0,.15,.35] });
+      document.querySelectorAll("main section[id]").forEach((section) => sectionObserver.observe(section));
+    }
+  </script>
+</body>
+</html>
