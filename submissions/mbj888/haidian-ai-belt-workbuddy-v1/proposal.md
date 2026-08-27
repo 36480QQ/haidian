@@ -27,7 +27,7 @@ summary: "以京张铁路工业遗产、中关村 AI 产业存量与海淀教育
 
 ## 三层范围工作框架
 
-- **统筹区 约 43.6 km²**（北五环—北京北站）：本包几何取自仓库 PROV-RESEARCH-001 临时边界，shoelace 复算 43,645,653 m²（约 43.6 km²），与官方公告 43.6 km² 一致 [data:geometry/site_boundary.geojson][metric:site_area]。
+- **统筹区 约 43.6 km²**（北五环—北京北站）：本包几何取自仓库 PROV-RESEARCH-001 临时边界；平面 shoelace 复算 43,645,653 m²，与空间审查参考值 43,609,232.558 m²（约 43.61 km²）存在约 0.083% 漂移（平面投影 vs 测地算法差异），已统一采用空间审查参考值；与官方公告 43.6 km² 一致 [data:geometry/site_boundary.geojson][metric:site_area]。
 - **总体城市设计区 约 11.4 km²**：取自临时边界 PROV-SITE-001，复算 11,422,370 m²（约 11.4 km²）[data:geometry/site_boundary.geojson][metric:overall_design_area]。
 - **重点区域 公告 368.4 ha**（临时几何复算约 369.7 ha）：三块——众智园 192.1 ha、AI 原点社区 104.3 ha、大钟寺 72.0 ha（取自 PROV-KEY-001/002/003，复算合计约 369.7 ha，与公告 368.4 ha 基本一致）[data:geometry/key_areas.geojson][metric:key_area_area]。
 - 三带叠加：百年京张文化带、都市 AI 生活体验带、AI 融合创新带 [standard:spatial_structure]。
@@ -160,7 +160,7 @@ summary: "以京张铁路工业遗产、中关村 AI 产业存量与海淀教育
 
 | 指标 | 临时几何复算值 | 公告值（如可获取） | 状态 | 说明 |
 |---|---|---|---|---|
-| site_area / site_area_sqm | 43,645,653 m² (≈43.6 km²) | 43.6 km² | known/low | PROV-* 临时边界 |
+| site_area / site_area_sqm | 43,609,232.558 m² (≈43.61 km²) | 43.6 km² | known/low | PROV-* 临时边界；已对齐空间审查参考值（原平面 shoelace 43,645,653 m² 漂移≈0.083%） |
 | overall_design_area | 11,422,370 m² (≈11.4 km²) | 11.4 km² | known/low | PROV-SITE-001 |
 | key_area_area | 3,696,738 m² (≈369.7 ha) | 368.4 ha | known/low | PROV-KEY-001/002/003 |
 | floor_area_ratio (FAR) | 1.0 | — | known/low | 规划参考值，非审定控制 |
@@ -211,12 +211,12 @@ summary: "以京张铁路工业遗产、中关村 AI 产业存量与海淀教育
 
 | 类型 | 名称 | 来源/发布者/URL | 可支持判断 | 不可照搬条件 | 权利说明 |
 |---|---|---|---|---|---|
-| 外部对标 | 巴塞罗那 22@ 创新区（Barcelona 22@） | Barcelona City Council, "22@Barcelona, the innovation district", 2000-ongoing, https://ajuntament.barcelona.cat/22at/ | 工业遗存片区可系统转化为高密度混合创新区，但需要长期公共投入与弹性更新政策 | 巴塞罗那为港口工业遗存，京张为铁路廊道；空间骨架与产权结构不同 | 本提案未引用该案例图片/图表/字体，仅作机制对标 |
-| 外部对标 | 埃因霍温 High Tech Campus Eindhoven | High Tech Campus Eindhoven, https://www.hightechcampus.com/ | 开放共享的研发设施、测试床与企业混驻能加速技术协同与人才流动 | 依赖 ASML 等单一产业龙头与荷兰高密度产学研网络，中关村生态更分散 | 本提案未引用该案例图片/图表/字体，仅作机制对标 |
-| 外部对标 | 首尔数字媒体城（Seoul Digital Media City） | Seoul Metropolitan Government / Seoul Development Institute, 2000s, https://english.seoul.go.kr/ | 城市更新片区可承载媒体与数字产业集群，但需警惕过度硬件导向与后期空置 | 韩国政府主导的大型新城模式与海淀存量更新语境不同 | 本提案未引用该案例图片/图表/字体，仅作机制对标 |
-| 外部对标 | 多伦多滨水区 Quayside / Sidewalk Labs | Waterfront Toronto / Sidewalk Labs, "Master Innovation and Development Plan", 2019, https://www.waterfrontoronto.ca/ | 数据驱动的智慧城市治理争议极大，隐私、数据主权与公共监督必须前置设计 | 加拿大公私合作与数据治理框架与中国审批、权属语境不同 | 本提案未引用该案例图片/图表/字体，仅作机制对标；该案例后续已终止，主要价值为风险警示 |
-| 外部对标 | 新加坡榜鹅数字园区（Punggol Digital District） | JTC Corporation, 2018-ongoing, https://www.jtc.gov.sg/ | 政府主导的数字基础设施与产教融合园区可作为区域创新引擎，但重资产投入巨大 | 新加坡为新建园区，海淀为存量更新；土地权属与开发主体不同 | 本提案未引用该案例图片/图表/字体，仅作机制对标 |
-| 外部对标 | 波士顿海港创新区（Boston Seaport Innovation District） | Boston Planning & Development Agency / Mayor's Office, 2010-ongoing, https://www.boston.gov/ | 私人开发主导的创新区可快速成型，但需额外政策工具防止绅士化与公共性流失 | 美国私人土地开发与海淀国企/高校存量主导的更新路径不同 | 本提案未引用该案例图片/图表/字体，仅作机制对标 |
+| 外部对标 | 巴塞罗那 22@ 创新区（Barcelona 22@） | Barcelona City Council, "22@Barcelona, the innovation district", 2000-ongoing, https://ajuntament.barcelona.cat/22at/ | 工业遗存片区可系统转化为高密度混合创新区，但需要长期公共投入与弹性更新政策 | 巴塞罗那为港口工业遗存，京张为铁路廊道；空间骨架与产权结构不同 | 本提案未引用该案例图片/图表/字体，仅作机制对标 [source:SRC-CASE-001] |
+| 外部对标 | 埃因霍温 High Tech Campus Eindhoven | High Tech Campus Eindhoven, https://www.hightechcampus.com/ | 开放共享的研发设施、测试床与企业混驻能加速技术协同与人才流动 | 依赖 ASML 等单一产业龙头与荷兰高密度产学研网络，中关村生态更分散 | 本提案未引用该案例图片/图表/字体，仅作机制对标 [source:SRC-CASE-002] |
+| 外部对标 | 首尔数字媒体城（Seoul Digital Media City） | Seoul Metropolitan Government / Seoul Development Institute, 2000s, https://english.seoul.go.kr/ | 城市更新片区可承载媒体与数字产业集群，但需警惕过度硬件导向与后期空置 | 韩国政府主导的大型新城模式与海淀存量更新语境不同 | 本提案未引用该案例图片/图表/字体，仅作机制对标 [source:SRC-CASE-003] |
+| 外部对标 | 多伦多滨水区 Quayside / Sidewalk Labs | Waterfront Toronto / Sidewalk Labs, "Master Innovation and Development Plan", 2019, https://www.waterfrontoronto.ca/ | 数据驱动的智慧城市治理争议极大，隐私、数据主权与公共监督必须前置设计 | 加拿大公私合作与数据治理框架与中国审批、权属语境不同 | 本提案未引用该案例图片/图表/字体，仅作机制对标；该案例后续已终止，主要价值为风险警示 [source:SRC-CASE-004] |
+| 外部对标 | 新加坡榜鹅数字园区（Punggol Digital District） | JTC Corporation, 2018-ongoing, https://www.jtc.gov.sg/ | 政府主导的数字基础设施与产教融合园区可作为区域创新引擎，但重资产投入巨大 | 新加坡为新建园区，海淀为存量更新；土地权属与开发主体不同 | 本提案未引用该案例图片/图表/字体，仅作机制对标 [source:SRC-CASE-005] |
+| 外部对标 | 波士顿海港创新区（Boston Seaport Innovation District） | Boston Planning & Development Agency / Mayor's Office, 2010-ongoing, https://www.boston.gov/ | 私人开发主导的创新区可快速成型，但需额外政策工具防止绅士化与公共性流失 | 美国私人土地开发与海淀国企/高校存量主导的更新路径不同 | 本提案未引用该案例图片/图表/字体，仅作机制对标 [source:SRC-CASE-006] |
 | 内部原型 | 众智园研发总部集群 | 本方案 | — | — | 原创 |
 | 内部原型 | AI 原点社区生活实验室 | 本方案 | — | — | 原创 |
 | 内部原型 | 大钟寺 AI+消费场 | 本方案 | — | — | 原创 |
