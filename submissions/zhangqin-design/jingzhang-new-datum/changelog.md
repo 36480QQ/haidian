@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v2.5 — English A0 colour-bar alignment correction
+
+- Removed all secondary colour bars that had been overlaid across A3-derived image crops and caused duplicated or drifting headers.
+- Kept only the board header bands and the three equal-width area bands on Board 02; every other image now starts and ends inside a fixed unoverlapped frame.
+- Rechecked all board baselines, equal-column widths, scene-frame edges and title-band coordinates after submission compression.
+- Left the accepted English A3 booklet unchanged.
+
 ## v2.4 — clean English A0 reconstruction
 
 - Rebuilt only the English A0 set after principal review; the accepted English A3 booklet remains unchanged.
