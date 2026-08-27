@@ -9,10 +9,18 @@
     "expected_total": 28
   },
   "tools": {
+    "python": "3.13.14",
+    "pypdf": "6.10.0",
+    "Pillow": "12.1.1",
+    "PyMuPDF": "1.28.2",
     "pdfinfo": "pdfinfo version 26.05.0",
     "pdffonts": "pdffonts version 25.02.0",
     "pdftotext": "pdftotext version 25.02.0",
     "pdftoppm": "pdftoppm version 26.05.0"
+  },
+  "execution": {
+    "command": "uv run --with pymupdf==1.28.2 --with pypdf==6.10.0 --with pillow==12.1.1 python visual/assets/phase4-pdf-audit.py",
+    "poppler_full_render": "pdftoppm -png -r 200 <pdf> <temporary-output-prefix>"
   },
   "conformance_tool_availability": {
     "veraPDF": false,
@@ -20,8 +28,8 @@
     "boundary": "No veraPDF or PAC available; PDF/UA is not asserted."
   },
   "advisories": [
-    "The Chromium print structure exposes headings, paragraphs, lists, figures, and alternative text, but does not create semantic Table tags for the dense F08/F11 raster panels.",
-    "The accessible HTML report and Visual provide structured textual summaries, keyboard-accessible original-image dialogs, and the authoritative machine-readable matrices as equivalent detailed entry points."
+    "F08/F11 use native selectable text and retain Figure-level grouping rather than semantic Table tags; the structure tree, detailed Alt, same-page text, accessible HTML, and machine matrices remain equivalent entry points.",
+    "The accessible HTML report and Visual provide structured textual summaries, keyboard-accessible original-image dialogs, and the authoritative machine-readable matrices as equivalent detailed entry points; PDF/UA is not asserted."
   ],
   "pdfs": [
     {
@@ -88,8 +96,8 @@
       },
       "structure_counts": {
         "/Document": 1,
-        "/NonStruct": 159,
-        "/P": 16,
+        "/NonStruct": 484,
+        "/P": 23,
         "/H1": 1,
         "/Figure": 12,
         "Alt": 12,
@@ -97,7 +105,13 @@
         "/L": 2,
         "/LI": 9,
         "/Lbl": 3,
-        "/Strong": 16
+        "/Strong": 11,
+        "/Caption": 2,
+        "/Art": 28,
+        "/H3": 15
+      },
+      "role_map": {
+        "/Strong": "/Span"
       },
       "bookmarks": [
         "京张在场 / Jing-Zhang In Situ",
@@ -111,9 +125,24 @@
         "识别系统：一带、三界面、一套语法",
         "AI 创新生态：三区两翼协同回路",
         "十二场景协议：AI 权限与人工接管",
+        "SC01 · 模型评测沙盒",
+        "SC02 · 边缘节点能效与热安全试验",
+        "SC03 · 具身智能无障碍共测",
+        "SC04 · 开放标准共创台",
+        "SC05 · 成果匹配诊所",
+        "SC06 · 共享中试排程助手",
+        "SC07 · 人才生活导航",
+        "SC08 · 无障碍路线伴行",
+        "SC09 · 站城换乘导览",
+        "SC10 · AI 原生产品公共试用室",
+        "SC11 · 京张记忆共读导览",
+        "SC12 · 可解释公共服务问答台",
         "三处地标、开放贡献谱与公共空间组件库",
         "文化叙事与导视：时间成为空间坐标",
-        "运行、接管、申诉、停止与撤场"
+        "运行、接管、申诉、停止与撤场",
+        "投诉 / 申诉",
+        "唯一首用",
+        "不利 / 未知保留"
       ],
       "page_tabs_structure_order": true,
       "selectable_text": [
@@ -144,7 +173,7 @@
         },
         {
           "page": 6,
-          "characters": 210,
+          "characters": 211,
           "nonempty": true
         },
         {
@@ -159,7 +188,7 @@
         },
         {
           "page": 9,
-          "characters": 325,
+          "characters": 1668,
           "nonempty": true
         },
         {
@@ -174,7 +203,7 @@
         },
         {
           "page": 12,
-          "characters": 372,
+          "characters": 930,
           "nonempty": true
         }
       ],
@@ -182,6 +211,70 @@
         "Jing-Zhang In Situ": true,
         "Human Takeover": true,
         "SC10 + IM06": true
+      },
+      "direct_visibility": {
+        "f08_scenarios": {
+          "SC01": true,
+          "SC02": true,
+          "SC03": true,
+          "SC04": true,
+          "SC05": true,
+          "SC06": true,
+          "SC07": true,
+          "SC08": true,
+          "SC09": true,
+          "SC10": true,
+          "SC11": true,
+          "SC12": true
+        },
+        "f11_red_tests": {
+          "RT-01": true,
+          "RT-02": true,
+          "RT-03": true,
+          "RT-04": true
+        },
+        "f11_dispositions": {
+          "fail_stop": true,
+          "fail_pause": true,
+          "unknown_stop": true
+        },
+        "f11_prohibited_boundary": {
+          "默认人脸识别": true,
+          "情绪识别": true,
+          "社会评分": true,
+          "预测性执法": true,
+          "未披露敏感推断": true
+        },
+        "native_layout_has_no_summary_overlay": true,
+        "met": true
+      },
+      "native_protocol_typography": {
+        "parser": "PyMuPDF 1.28.2",
+        "pages": [
+          {
+            "page": 9,
+            "region_y_pt": [
+              112.0,
+              810.0
+            ],
+            "selectable_spans": 137,
+            "minimum_pt": 9.0,
+            "target_pt": 9.0,
+            "met": true
+          },
+          {
+            "page": 12,
+            "region_y_pt": [
+              112.0,
+              810.0
+            ],
+            "selectable_spans": 41,
+            "minimum_pt": 9.0,
+            "target_pt": 9.0,
+            "met": true
+          }
+        ],
+        "met": true
       },
       "font_target": {
         "design_target_pt": 8.0,
@@ -289,7 +382,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1754.97,
+            "mean_channel_variance": 1775.303,
             "nonblank": true
           },
           {
@@ -304,7 +397,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1898.275,
+            "mean_channel_variance": 1920.854,
             "nonblank": true
           },
           {
@@ -319,7 +412,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 763.026,
+            "mean_channel_variance": 781.465,
             "nonblank": true
           },
           {
@@ -334,7 +427,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1465.453,
+            "mean_channel_variance": 1468.818,
             "nonblank": true
           },
           {
@@ -349,7 +442,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 3071.581,
+            "mean_channel_variance": 2883.47,
             "nonblank": true
           },
           {
@@ -364,7 +457,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1752.231,
+            "mean_channel_variance": 1771.133,
             "nonblank": true
           },
           {
@@ -379,7 +472,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1672.976,
+            "mean_channel_variance": 1687.215,
             "nonblank": true
           },
           {
@@ -394,7 +487,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1409.508,
+            "mean_channel_variance": 759.542,
             "nonblank": true
           },
           {
@@ -409,7 +502,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 840.795,
+            "mean_channel_variance": 855.593,
             "nonblank": true
           },
           {
@@ -424,7 +517,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 2925.275,
+            "mean_channel_variance": 2954.943,
             "nonblank": true
           },
           {
@@ -439,7 +532,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 693.056,
+            "mean_channel_variance": 2901.467,
             "nonblank": true
           }
         ],
@@ -512,8 +605,8 @@
       },
       "structure_counts": {
         "/Document": 1,
-        "/NonStruct": 159,
-        "/P": 16,
+        "/NonStruct": 484,
+        "/P": 23,
         "/H1": 1,
         "/Figure": 12,
         "Alt": 12,
@@ -521,23 +614,44 @@
         "/L": 2,
         "/LI": 9,
         "/Lbl": 3,
-        "/Strong": 16
+        "/Strong": 11,
+        "/Caption": 2,
+        "/Art": 28,
+        "/H3": 15
+      },
+      "role_map": {
+        "/Strong": "/Span"
       },
       "bookmarks": [
         "Jing-Zhang In Situ / 京张在场",
         "Three prototypes",
         "Review routes",
         "Belt Overview: Twelve Candidate Transects Located",
-        "Shared Partition: Same Edges, Zero Gaps, Zero Overlaps",
+        "Shared Partition: Same Edges, Zero Gaps, ZeroOverlaps",
         "Three Key Areas at One Comparative Scale",
-        "Responsibility Transects: Twelve Candidates, Three Detailed",
+        "Responsibility Transects: Twelve Candidates, ThreeDetailed",
         "Evidence + Metrics: Adverse Results Stay Visible",
-        "Identity System: One Belt, Three Interfaces, One Grammar",
+        "Identity System: One Belt, Three Interfaces, OneGrammar",
         "AI Innovation Ecosystem: Three Areas + Two Wings",
-        "Twelve Scenario Protocols: AI Authority + Human Takeover",
-        "Three Landmarks + Open Contribution Ledger + Components",
+        "Twelve Scenario Protocols: AI Authority + HumanTakeover",
+        "SC01 · Model Evaluation Sandbox",
+        "SC02 · Edge-Node Energy and Thermal-SafetyBench",
+        "SC03 · Embodied-AI Accessibility Co-Test",
+        "SC04 · Open-Standard Co-Creation Desk",
+        "SC05 · Research-to-Application MatchingClinic",
+        "SC06 · Shared Pilot Scheduling Assistant",
+        "SC07 · Talent Life Navigator",
+        "SC08 · Accessible Route Companion",
+        "SC09 · Station-City Transfer Guide",
+        "SC10 · AI-Native Product Public TrialRoom",
+        "SC11 · Jing-Zhang Memory Co-Reading Guide",
+        "SC12 · Explainable Civic-Service Desk",
+        "Three Landmarks + Open Contribution Ledger +Components",
         "Culture + Wayfinding: Time as a Spatial Coordinate",
-        "Operate, Take Over, Appeal, Stop, and Remove"
+        "Operate, Take Over, Appeal, Stop, and Remove",
+        "COMPLAINT / APPEAL",
+        "SOLE FIRST USE",
+        "ADVERSE / UNKNOWN RETAINED"
       ],
       "page_tabs_structure_order": true,
       "selectable_text": [
@@ -583,7 +697,7 @@
         },
         {
           "page": 9,
-          "characters": 591,
+          "characters": 3938,
           "nonempty": true
         },
         {
@@ -598,7 +712,7 @@
         },
         {
           "page": 12,
-          "characters": 675,
+          "characters": 2008,
           "nonempty": true
         }
       ],
@@ -606,6 +720,70 @@
         "Jing-Zhang In Situ": true,
         "Human Takeover": true,
         "SC10 + IM06": true
+      },
+      "direct_visibility": {
+        "f08_scenarios": {
+          "SC01": true,
+          "SC02": true,
+          "SC03": true,
+          "SC04": true,
+          "SC05": true,
+          "SC06": true,
+          "SC07": true,
+          "SC08": true,
+          "SC09": true,
+          "SC10": true,
+          "SC11": true,
+          "SC12": true
+        },
+        "f11_red_tests": {
+          "RT-01": true,
+          "RT-02": true,
+          "RT-03": true,
+          "RT-04": true
+        },
+        "f11_dispositions": {
+          "fail_stop": true,
+          "fail_pause": true,
+          "unknown_stop": true
+        },
+        "f11_prohibited_boundary": {
+          "facial recognition": true,
+          "emotion recognition": true,
+          "social scoring": true,
+          "predictive policing": true,
+          "undisclosed sensitive inference": true
+        },
+        "native_layout_has_no_summary_overlay": true,
+        "met": true
+      },
+      "native_protocol_typography": {
+        "parser": "PyMuPDF 1.28.2",
+        "pages": [
+          {
+            "page": 9,
+            "region_y_pt": [
+              112.0,
+              810.0
+            ],
+            "selectable_spans": 156,
+            "minimum_pt": 9.0,
+            "target_pt": 9.0,
+            "met": true
+          },
+          {
+            "page": 12,
+            "region_y_pt": [
+              112.0,
+              810.0
+            ],
+            "selectable_spans": 49,
+            "minimum_pt": 9.0,
+            "target_pt": 9.0,
+            "met": true
+          }
+        ],
+        "met": true
       },
       "font_target": {
         "design_target_pt": 8.0,
@@ -713,7 +891,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1647.633,
+            "mean_channel_variance": 1712.774,
             "nonblank": true
           },
           {
@@ -728,7 +906,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1806.315,
+            "mean_channel_variance": 1867.281,
             "nonblank": true
           },
           {
@@ -743,7 +921,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 682.869,
+            "mean_channel_variance": 751.152,
             "nonblank": true
           },
           {
@@ -758,7 +936,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1409.632,
+            "mean_channel_variance": 1468.98,
             "nonblank": true
           },
           {
@@ -773,7 +951,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 2993.296,
+            "mean_channel_variance": 2845.1,
             "nonblank": true
           },
           {
@@ -788,7 +966,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1714.335,
+            "mean_channel_variance": 1785.84,
             "nonblank": true
           },
           {
@@ -803,7 +981,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1612.626,
+            "mean_channel_variance": 1672.634,
             "nonblank": true
           },
           {
@@ -818,7 +996,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 1339.287,
+            "mean_channel_variance": 696.509,
             "nonblank": true
           },
           {
@@ -833,7 +1011,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 770.867,
+            "mean_channel_variance": 851.243,
             "nonblank": true
           },
           {
@@ -848,7 +1026,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 2831.384,
+            "mean_channel_variance": 2900.739,
             "nonblank": true
           },
           {
@@ -863,7 +1041,7 @@
               3308,
               2339
             ],
-            "mean_channel_variance": 630.658,
+            "mean_channel_variance": 2820.832,
             "nonblank": true
           }
         ],
@@ -896,22 +1074,41 @@
       },
       "structure_counts": {
         "/Document": 1,
-        "/NonStruct": 81,
-        "/P": 8,
+        "/NonStruct": 422,
+        "/P": 15,
         "/H1": 1,
-        "/Art": 11,
+        "/Art": 37,
         "/Figure": 7,
         "Alt": 7,
         "/H2": 2,
         "/L": 2,
         "/LI": 9,
-        "/Strong": 8,
-        "/H3": 4
+        "/Caption": 2,
+        "/Strong": 11,
+        "/H3": 19
+      },
+      "role_map": {
+        "/Strong": "/Span"
       },
       "bookmarks": [
         "三重在场，从空间证据开始",
         "直接保留的不利 / 未知结果",
         "AI 可辅助；人决定权利、安全、停止与复开",
+        "SC01 · 模型评测沙盒",
+        "SC02 · 边缘节点能效与热安全试验",
+        "SC03 · 具身智能无障碍共测",
+        "SC04 · 开放标准共创台",
+        "SC05 · 成果匹配诊所",
+        "SC06 · 共享中试排程助手",
+        "SC07 · 人才生活导航",
+        "SC08 · 无障碍路线伴行",
+        "SC09 · 站城换乘导览",
+        "SC10 · AI 原生产品公共试用室",
+        "SC11 · 京张记忆共读导览",
+        "SC12 · 可解释公共服务问答台",
+        "投诉 / 申诉",
+        "唯一首用",
+        "不利 / 未知保留",
         "识别系统：一带、三界面、一套语法",
         "AI 创新生态：三区两翼协同回路",
         "三处地标、开放贡献谱与公共空间组件库",
@@ -926,7 +1123,7 @@
         },
         {
           "page": 2,
-          "characters": 849,
+          "characters": 3114,
           "nonempty": true
         }
       ],
@@ -936,6 +1133,24 @@
         "SC10 + IM06": true,
         "13": true,
         "12/12": true
+      },
+      "direct_visibility": {},
+      "native_protocol_typography": {
+        "parser": "PyMuPDF 1.28.2",
+        "pages": [
+          {
+            "page": 2,
+            "region_y_pt": [
+              390.0,
+              1385.0
+            ],
+            "selectable_spans": 179,
+            "minimum_pt": 18.0,
+            "target_pt": 18.0,
+            "met": true
+          }
+        ],
+        "met": true
       },
       "font_target": {
         "design_target_pt": 14.0,
@@ -955,6 +1170,14 @@
       "fonts": [
         {
           "name": "AAAAAA+NotoSansSC-Thin",
+          "type": "CID TrueType",
+          "encoding": "Identity-H",
+          "embedded": "yes",
+          "subset": "yes",
+          "unicode": "yes"
+        },
+        {
+          "name": "BAAAAA+NotoSansSC-Thin",
           "type": "CID TrueType",
           "encoding": "Identity-H",
           "embedded": "yes",
@@ -995,7 +1218,7 @@
               9362,
               6622
             ],
-            "mean_channel_variance": 1579.268,
+            "mean_channel_variance": 1716.558,
             "nonblank": true
           }
         ],
@@ -1028,22 +1251,41 @@
       },
       "structure_counts": {
         "/Document": 1,
-        "/NonStruct": 81,
-        "/P": 8,
+        "/NonStruct": 422,
+        "/P": 15,
         "/H1": 1,
-        "/Art": 11,
+        "/Art": 37,
         "/Figure": 7,
         "Alt": 7,
         "/H2": 2,
         "/L": 2,
         "/LI": 9,
-        "/Strong": 8,
-        "/H3": 4
+        "/Caption": 2,
+        "/Strong": 11,
+        "/H3": 19
+      },
+      "role_map": {
+        "/Strong": "/Span"
       },
       "bookmarks": [
         "Three kinds of presence begin with spatial evidence",
         "Adverse / unknown results retained directly",
         "AI may assist; humans decide rights, safety, stop, and reopen",
+        "SC01 · Model Evaluation Sandbox",
+        "SC02 · Edge-Node Energy and Thermal-Safety Bench",
+        "SC03 · Embodied-AI Accessibility Co-Test",
+        "SC04 · Open-Standard Co-Creation Desk",
+        "SC05 · Research-to-Application MatchingClinic",
+        "SC06 · Shared Pilot Scheduling Assistant",
+        "SC07 · Talent Life Navigator",
+        "SC08 · Accessible Route Companion",
+        "SC09 · Station-City Transfer Guide",
+        "SC10 · AI-Native Product Public Trial Room",
+        "SC11 · Jing-Zhang Memory Co-Reading Guide",
+        "SC12 · Explainable Civic-Service Desk",
+        "COMPLAINT / APPEAL",
+        "SOLE FIRST USE",
+        "ADVERSE / UNKNOWN RETAINED",
         "Identity System: One Belt, Three Interfaces, One Grammar",
         "AI Innovation Ecosystem: Three Areas + Two Wings",
         "Three Landmarks + Open Contribution Ledger + Components",
@@ -1058,7 +1300,7 @@
         },
         {
           "page": 2,
-          "characters": 1707,
+          "characters": 6944,
           "nonempty": true
         }
       ],
@@ -1068,6 +1310,24 @@
         "SC10 + IM06": true,
         "13": true,
         "12/12": true
+      },
+      "direct_visibility": {},
+      "native_protocol_typography": {
+        "parser": "PyMuPDF 1.28.2",
+        "pages": [
+          {
+            "page": 2,
+            "region_y_pt": [
+              390.0,
+              1385.0
+            ],
+            "selectable_spans": 190,
+            "minimum_pt": 18.0,
+            "target_pt": 18.0,
+            "met": true
+          }
+        ],
+        "met": true
       },
       "font_target": {
         "design_target_pt": 14.0,
@@ -1087,6 +1347,14 @@
       "fonts": [
         {
           "name": "AAAAAA+NotoSansSC-Thin",
+          "type": "CID TrueType",
+          "encoding": "Identity-H",
+          "embedded": "yes",
+          "subset": "yes",
+          "unicode": "yes"
+        },
+        {
+          "name": "BAAAAA+NotoSansSC-Thin",
           "type": "CID TrueType",
           "encoding": "Identity-H",
           "embedded": "yes",
@@ -1127,7 +1395,7 @@
               9362,
               6622
             ],
-            "mean_channel_variance": 1589.252,
+            "mean_channel_variance": 1717.889,
             "nonblank": true
           }
         ],

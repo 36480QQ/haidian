@@ -1078,57 +1078,57 @@
     {
       "path": "drawings/a0-boards.en.pdf",
       "base": "submission",
-      "expected_sha256": "b1b49c13227d40abdcfd5b1384177b1ee0a5ea6648a5cab6201ce6754298ef6b",
-      "actual_sha256": "b1b49c13227d40abdcfd5b1384177b1ee0a5ea6648a5cab6201ce6754298ef6b",
+      "expected_sha256": "010cc41f07e7f1f252a68097ee7b4add0c3d5cb3efbe9250016768adae8ba84f",
+      "actual_sha256": "010cc41f07e7f1f252a68097ee7b4add0c3d5cb3efbe9250016768adae8ba84f",
       "match": true
     },
     {
       "path": "drawings/a0-boards.pdf",
       "base": "submission",
-      "expected_sha256": "e3d941ca982632e37ebeee07336fe5264d6345da4aa19851a188cc7ec2ce88b9",
-      "actual_sha256": "e3d941ca982632e37ebeee07336fe5264d6345da4aa19851a188cc7ec2ce88b9",
+      "expected_sha256": "b1a3ccfd27338dd91171d6dffa490387514a505c36a84eaa2ef74d4190c4e45a",
+      "actual_sha256": "b1a3ccfd27338dd91171d6dffa490387514a505c36a84eaa2ef74d4190c4e45a",
       "match": true
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
       "base": "submission",
-      "expected_sha256": "a6991f5599487a05392fa2c5e9079a511594eafe636524196ca0ae23af52bcd8",
-      "actual_sha256": "a6991f5599487a05392fa2c5e9079a511594eafe636524196ca0ae23af52bcd8",
+      "expected_sha256": "0f34c5a1932dcb7932883dcf95839b05b07c56388a0a1e93764135a799b797a6",
+      "actual_sha256": "0f34c5a1932dcb7932883dcf95839b05b07c56388a0a1e93764135a799b797a6",
       "match": true
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "base": "submission",
-      "expected_sha256": "3fbb41b27e71a3cd83f5ea2de410155ad7a75b25d292908580fa7f48fad4b1c8",
-      "actual_sha256": "3fbb41b27e71a3cd83f5ea2de410155ad7a75b25d292908580fa7f48fad4b1c8",
+      "expected_sha256": "ee5acea1db00003c8ec3ceee94f05103fdf820f41c985fd1073e9916805442bf",
+      "actual_sha256": "ee5acea1db00003c8ec3ceee94f05103fdf820f41c985fd1073e9916805442bf",
       "match": true
     },
     {
       "path": "report/proposal.en.html",
       "base": "submission",
-      "expected_sha256": "b7b1866dfdd0421e24cd6243fa47d0ecb1bff6c366ab35f8ae904114afa3b9e8",
-      "actual_sha256": "b7b1866dfdd0421e24cd6243fa47d0ecb1bff6c366ab35f8ae904114afa3b9e8",
+      "expected_sha256": "dea018f19db8ce7a624f2082f04e43083c4e379f247dd9ce5bf515cb6b7e91ff",
+      "actual_sha256": "dea018f19db8ce7a624f2082f04e43083c4e379f247dd9ce5bf515cb6b7e91ff",
       "match": true
     },
     {
       "path": "report/proposal.html",
       "base": "submission",
-      "expected_sha256": "9e46535862ba54ca2f55261be7ba687f038c1168688cb89d797cfd395227d77f",
-      "actual_sha256": "9e46535862ba54ca2f55261be7ba687f038c1168688cb89d797cfd395227d77f",
+      "expected_sha256": "7e33a217197697100a40f0473eecf18d42c0d83c556256bb069c2832b4324d78",
+      "actual_sha256": "7e33a217197697100a40f0473eecf18d42c0d83c556256bb069c2832b4324d78",
       "match": true
     },
     {
       "path": "visual/assets/font-subset.css",
       "base": "submission",
-      "expected_sha256": "03d6ab2aec66baa2901fcf38cdef3ed9e8d337c78e26dd08ad4e7a461d0458d6",
-      "actual_sha256": "03d6ab2aec66baa2901fcf38cdef3ed9e8d337c78e26dd08ad4e7a461d0458d6",
+      "expected_sha256": "e72b48cd357e85b13e6c3afc9fa4362e2fa1e2d3539653c100ca5a01f4e9d821",
+      "actual_sha256": "e72b48cd357e85b13e6c3afc9fa4362e2fa1e2d3539653c100ca5a01f4e9d821",
       "match": true
     },
     {
       "path": "visual/assets/visual.css",
       "base": "submission",
-      "expected_sha256": "5eca39db5a27c9290fe8f8b75d7691e621d704840e75fcd2d0ab721b8a1aed7b",
-      "actual_sha256": "5eca39db5a27c9290fe8f8b75d7691e621d704840e75fcd2d0ab721b8a1aed7b",
+      "expected_sha256": "06a192fdc21a4bcbb7f2003a7608da8d17e47acdc961e06da06aba02e467c46c",
+      "actual_sha256": "06a192fdc21a4bcbb7f2003a7608da8d17e47acdc961e06da06aba02e467c46c",
       "match": true
     },
     {
@@ -1159,7 +1159,310 @@
     "mupdf_second_renderer": true,
     "page_contract": true,
     "protected_input_count": true,
-    "semantic_mutation_forbidden": true
+    "semantic_mutation_forbidden": true,
+    "display_redteam_summary_and_evidence": true
+  },
+  "display_redteam_checks": {
+    "computed_summary": {
+      "tests": 17,
+      "closed": 13,
+      "mitigated_with_advisory": 2,
+      "retained_advisory": 1,
+      "usage_guidance": 1,
+      "semantic_drift": 0
+    },
+    "declared_summary": {
+      "tests": 17,
+      "closed": 13,
+      "mitigated_with_advisory": 2,
+      "retained_advisory": 1,
+      "usage_guidance": 1,
+      "semantic_drift": 0
+    },
+    "summary_matches": true,
+    "evidence_references": [
+      {
+        "test": "D01",
+        "reference": "phase4-generation-contract.json#page_contract",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D01",
+        "reference": "phase4-pdf-qa.json#page_contract",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D02",
+        "reference": "phase4-presentation-sources.json#sources[restore_as=phase4-font-subset.py]",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D02",
+        "reference": "font-subset.css",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D02",
+        "reference": "phase4-pdf-qa.json#pdfs/*/fonts",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D03",
+        "reference": "../../assets/media/cover.webp",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D03",
+        "reference": "phase4-presentation-sources.json#sources[restore_as=phase4-presentation-generator.mjs]",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D04",
+        "reference": "phase4-browser-qa.json#summary",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D04",
+        "reference": "phase4-browser-qa.json#results",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D04",
+        "reference": "visual.js",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D05",
+        "reference": "phase4-browser-qa.json#summary",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D05",
+        "reference": "phase4-browser-qa.json#results",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D05",
+        "reference": "visual.js",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D06",
+        "reference": "phase4-browser-qa.json#summary",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D06",
+        "reference": "phase4-browser-qa.json#results",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D07",
+        "reference": "visual.js",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D07",
+        "reference": "phase4-browser-qa.json#summary",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D07",
+        "reference": "phase4-browser-qa.json#results",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D08",
+        "reference": "phase4-pdf-qa.json#advisories",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D09",
+        "reference": "phase4-pdf-qa.json#pdfs/*/structure_counts",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D10",
+        "reference": "phase4-layout-contract.json#design_targets/a0",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D10",
+        "reference": "phase4-pdf-qa.json#pdfs/*/native_protocol_typography",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D11",
+        "reference": "phase4-layout-contract.json#design_targets/a0",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D11",
+        "reference": "phase4-layout-contract.json#a0_boards[board=2]",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D12",
+        "reference": "phase4-figure-registry.json#figures[id=F08]",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D12",
+        "reference": "phase4-figure-registry.json#figures[id=F11]",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D12",
+        "reference": "phase4-browser-qa.json#summary",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D13",
+        "reference": "phase4-layout-contract.json#jury_paths",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D14",
+        "reference": "phase4-layout-contract.json#jury_paths",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D15",
+        "reference": "phase4-figure-registry.json#figures[id=F11]",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D15",
+        "reference": "phase4-layout-contract.json#a0_boards[board=2]",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D16",
+        "reference": "phase4-presentation-sources.json#sources[restore_as=phase4-presentation-generator.mjs]",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D17",
+        "reference": "phase4-figure-registry.json#figures",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D17",
+        "reference": "phase4-browser-qa.json#summary",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      },
+      {
+        "test": "D17",
+        "reference": "phase4-browser-qa.json#results",
+        "path_exists": true,
+        "packaged_source_only": true,
+        "fragment_resolves": true,
+        "ok": true
+      }
+    ],
+    "all_evidence_resolves": true
   },
   "known_baseline_advisory": "The frozen Phase 3 proposal text says twelve retained negative results in one sentence, while the authoritative red-team registry, F11, Visual, and Phase 4 direct summaries correctly retain thirteen. Phase 4 does not rewrite the frozen authority text; reviewers must use the structured registry as authoritative.",
   "failures": [],

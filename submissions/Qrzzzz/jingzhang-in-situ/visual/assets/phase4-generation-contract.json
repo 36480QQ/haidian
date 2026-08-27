@@ -17,6 +17,96 @@
     "playwright": "1.62.1",
     "chromium": "151.0.7922.34"
   },
+  "native_protocol_layout_assertions": {
+    "a3_zh": [
+      {
+        "figure": "F08",
+        "scenarios": 12,
+        "red_results": 0,
+        "prohibited_visible": false,
+        "minimum_selectable_text_pt": 9,
+        "overflow": [],
+        "summary_band_count": 0,
+        "summary_band_intersections": 0
+      },
+      {
+        "figure": "F11",
+        "scenarios": 0,
+        "red_results": 4,
+        "prohibited_visible": true,
+        "minimum_selectable_text_pt": 9,
+        "overflow": [],
+        "summary_band_count": 0,
+        "summary_band_intersections": 0
+      }
+    ],
+    "a3_en": [
+      {
+        "figure": "F08",
+        "scenarios": 12,
+        "red_results": 0,
+        "prohibited_visible": false,
+        "minimum_selectable_text_pt": 9,
+        "overflow": [],
+        "summary_band_count": 0,
+        "summary_band_intersections": 0
+      },
+      {
+        "figure": "F11",
+        "scenarios": 0,
+        "red_results": 4,
+        "prohibited_visible": true,
+        "minimum_selectable_text_pt": 9,
+        "overflow": [],
+        "summary_band_count": 0,
+        "summary_band_intersections": 0
+      }
+    ],
+    "a0_zh": [
+      {
+        "figure": "F08",
+        "scenarios": 12,
+        "red_results": 0,
+        "prohibited_visible": false,
+        "minimum_selectable_text_pt": 18,
+        "overflow": [],
+        "summary_band_count": 0,
+        "summary_band_intersections": 0
+      },
+      {
+        "figure": "F11",
+        "scenarios": 0,
+        "red_results": 4,
+        "prohibited_visible": true,
+        "minimum_selectable_text_pt": 18,
+        "overflow": [],
+        "summary_band_count": 0,
+        "summary_band_intersections": 0
+      }
+    ],
+    "a0_en": [
+      {
+        "figure": "F08",
+        "scenarios": 12,
+        "red_results": 0,
+        "prohibited_visible": false,
+        "minimum_selectable_text_pt": 18,
+        "overflow": [],
+        "summary_band_count": 0,
+        "summary_band_intersections": 0
+      },
+      {
+        "figure": "F11",
+        "scenarios": 0,
+        "red_results": 4,
+        "prohibited_visible": true,
+        "minimum_selectable_text_pt": 18,
+        "overflow": [],
+        "summary_band_count": 0,
+        "summary_band_intersections": 0
+      }
+    ]
+  },
   "page_contract": {
     "a3_pages_per_language": 12,
     "a0_pages_per_language": 2,
@@ -154,7 +244,7 @@
     "visual/assets/phase4-presentation-audit.json": "4d08b70092e47e5e32e4e862eb97ec428424204b4e43eb24613139a5b96b6049",
     "visual/assets/phase4-figure-registry.json": "7b240ae916f2c12e41033cec61bb78d1e3b93957f7e2098fa251229fa076b69f",
     "visual/assets/phase4-layout-contract.json": "87d1b6180c52a7f504279ca406749cb4054ccd58448a8e62f51a5e935dd15e2b",
-    "visual/assets/phase4-presentation-sources.json": "0716208fc65b5e581a8138cc240e90e2138094d70c162efd88070551e5f1e7dd",
+    "visual/assets/phase4-presentation-sources.json": "663e613065287a953ed724d3170ace88d4d9c64ba27816e6afc0c64d1c9ee7b8",
     "visual/assets/phase3-protocol-contracts.json": "5cd87aa06b7a4248e8f2fd358571ff8373c4166298e6010e536bbb10629cf606",
     "visual/assets/phase3-data-governance.json": "2dfd4d0c2ee0f1dff0fe2ee186fa8fe997d7de69a088d838914d56470df0bc35",
     "visual/assets/phase3-red-team.json": "58f607dc7971dc25c1674b186de576d11a1240038ac08ec3c3558e9ec64a2c4d",
@@ -183,16 +273,16 @@
   },
   "output_sha256": {
     "assets/media/cover.webp": "4dfb51872c27116c4e55f561645a121fa9ecef6dfe8223931213f6ce9412967c",
-    "drawings/a3-booklet.pdf": "3fbb41b27e71a3cd83f5ea2de410155ad7a75b25d292908580fa7f48fad4b1c8",
-    "drawings/a3-booklet.en.pdf": "a6991f5599487a05392fa2c5e9079a511594eafe636524196ca0ae23af52bcd8",
-    "drawings/a0-boards.pdf": "e3d941ca982632e37ebeee07336fe5264d6345da4aa19851a188cc7ec2ce88b9",
-    "drawings/a0-boards.en.pdf": "b1b49c13227d40abdcfd5b1384177b1ee0a5ea6648a5cab6201ce6754298ef6b",
-    "report/proposal.html": "9e46535862ba54ca2f55261be7ba687f038c1168688cb89d797cfd395227d77f",
-    "report/proposal.en.html": "b7b1866dfdd0421e24cd6243fa47d0ecb1bff6c366ab35f8ae904114afa3b9e8",
+    "drawings/a3-booklet.pdf": "ee5acea1db00003c8ec3ceee94f05103fdf820f41c985fd1073e9916805442bf",
+    "drawings/a3-booklet.en.pdf": "0f34c5a1932dcb7932883dcf95839b05b07c56388a0a1e93764135a799b797a6",
+    "drawings/a0-boards.pdf": "b1a3ccfd27338dd91171d6dffa490387514a505c36a84eaa2ef74d4190c4e45a",
+    "drawings/a0-boards.en.pdf": "010cc41f07e7f1f252a68097ee7b4add0c3d5cb3efbe9250016768adae8ba84f",
+    "report/proposal.html": "7e33a217197697100a40f0473eecf18d42c0d83c556256bb069c2832b4324d78",
+    "report/proposal.en.html": "dea018f19db8ce7a624f2082f04e43083c4e379f247dd9ce5bf515cb6b7e91ff",
     "visual/index.html": "22551995a0e01f3946949443895d15ecb6e63303fa289bbacce19f83b87c7470",
     "visual/index.en.html": "318f611758fe166347810ea0f5541a605829a872abd203abb5728074d50d985e",
-    "visual/assets/font-subset.css": "03d6ab2aec66baa2901fcf38cdef3ed9e8d337c78e26dd08ad4e7a461d0458d6",
-    "visual/assets/visual.css": "5eca39db5a27c9290fe8f8b75d7691e621d704840e75fcd2d0ab721b8a1aed7b",
+    "visual/assets/font-subset.css": "e72b48cd357e85b13e6c3afc9fa4362e2fa1e2d3539653c100ca5a01f4e9d821",
+    "visual/assets/visual.css": "06a192fdc21a4bcbb7f2003a7608da8d17e47acdc961e06da06aba02e467c46c",
     "visual/assets/visual.js": "d85c6d386803b1f65e99e1c8ab206453b74e2e3289e65795704ae9ae10e122f4"
   },
   "outputs": [
