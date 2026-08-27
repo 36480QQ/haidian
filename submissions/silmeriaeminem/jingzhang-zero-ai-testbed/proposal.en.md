@@ -67,6 +67,12 @@ The core concept is named **"Jingzhang New Era · Creative AI Time-Track"**, wit
 
 The logo direction upgrades from "herringbone line × code fork" to **"Timeline × Track"**: a multi-track editing timeline as the motif — a horizontal time axis (1909 / 2026 / 2049) crossed by parallel tracks (city collaboration / cultural ecology / AI technology), coupled by the flowing nodes of the AI rendering engine. The palette stays heritage rust-red, AI tech-blue, and Jing-Zhang green.
 
+![Jingzhang New Era · Creative AI Time-Track Logo (vector)](assets/logo-time-track.svg)
+*Logo direction (vector): horizontal time axis (1909 / 2026 / 2049) crossed by three parallel tracks (city-collab / Jing-Zhang-green, cultural-ecology / rust-red, AI-tech / tech-blue); the center 2026 node is the AI rendering-engine glow point. Logo, fonts, images, and portrait identifiers must be cleared before formal submission.*
+
+![Jingzhang New Era · Creative AI Time-Track Logo concept visual](assets/logo-time-track-concept.png)
+*Logo concept visual (AI-rendered mood image): three-color tracks + three-node time axis + center glow node for brand showcase. Replaced by the SVG vector final before formal use.*
+
 ### The Time-Track framework: timeline × tracks
 
 The proposal borrows the timeline × track architecture of video editing and elevates it into a development blueprint, replacing the conventional "static spatial masterplan" method [depth:overall_spatial_structure].

@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a203d5aac072103b0595703cd75400255dd78155b5be0af06f8f6f17fed3e19b"
+      "sha256": "dd8e4845d8f3e1ff56cfde4c7b00e2ee690836f29d8c70a61719ac88eaf55298"
     },
     {
       "path": "agent.json",
@@ -57,7 +57,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b1a0c9b58e116ae41211de8c8d7ca07a726fc6de9a08f021b3ed0af413c8b612"
+      "sha256": "4e6b09f78b844a745f535b668e30551bc6a8d2c68ef7f99cc68eb13d82be93e9"
     },
     {
       "path": "compliance_matrix.json",
@@ -82,7 +82,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "d569a5ed376cc906142e09ccfc55604e842a2285b1bdcdfbf0e6111adcfcd411"
+      "sha256": "b844af18d2a9291ea112c0f44d79b825ea4233ac51c4cd43a1fcbfbb0f6b5a9a"
     },
     {
       "path": "report/narrative.md",
@@ -123,6 +123,13 @@
       "required": false,
       "language": "neutral",
       "sha256": "454627204794228c0e58382f2bbc6567e014746450006db6957f672d2540e208"
+    },
+    {
+      "path": "assets/logo-time-track-concept.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e76a26276d612a216363cc81bd08bde3d55f269042d8fac45475b829930163f7"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -219,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "670298fcd5b094f334fa2deb9bef7f4448265c7ece47ec1c83d7f88a0ae70b20"
+      "sha256": "c7d823c73040d1e104fda5c249479d0cd6bcf1139dbbdfec82173c95cb945cbb"
     },
     {
       "path": "report/proposal.en.html",
@@ -227,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "80277c79c4efd73830104cc452c790cfbd5ba395ca227d17ad568a8914d7954f"
+      "sha256": "fc5fa6999389cfad81235b0a9040addb9bd8f0583dec715b94c17b89eb58b9a8"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
