@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "A rehearsable, offline-capable and human-overridable public-service spine: one Life-Line, three resilience stations, twelve graceful-degradation AI scenarios and three reversible prototypes."
 tracks: ["ai-public-services", "civic-agent-governance", "jingzhang-heritage-narrative"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "robot-delivery-low-speed", "ai-cultural-guide", "enterprise-service-copilot"]
-iteration: "v1.4.1"
+iteration: "v1.5.0"
 ---
 
 # Jingzhang Life-Line: Graceful-Degradation Urban Resilience and Public Care Commons
@@ -66,7 +66,7 @@ The internal “three areas and two wings” loop explains how capability, publi
 
 Every interface defaults to `not_activated`. It may enter a reversible pilot only when authorization, minimum data, named responsibility, cost/maintenance, complaint and exit mechanisms are verifiable. The performance measure is not the number of partnerships announced, but the number of reproducible exchange loops completed, boundary problems found, and interfaces correctly stopped for insufficient evidence.
 
-![Five regional interfaces, exchanged resources, entry gates and non-commitment boundaries](assets/figures/regional-synergy-v14.en.svg)
+![Five regional interfaces, exchanged resources, entry gates and non-commitment boundaries](assets/figures/regional-synergy-v150.en.webp)
 
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
@@ -191,6 +191,12 @@ The three stations are urban-design concepts, not certified emergency shelters, 
 Text, identity, diagrams, HTML, PDF layout and concept geometry are original to this submission. No third-party portraits, corporate marks, map tiles, photographs, music or video are reproduced. External cases contribute only factual references registered in `sources.json`. Figures identify concept and provisional status and never represent generated imagery as site evidence or public opinion. [source:SOURCE-REGISTRY] [assumption:A-HERITAGE-001]
 
 The account owner must review the work, accept the model disclosure, run the repository's current four-gate self-check and take responsibility for the pull request. This workspace does not claim a maintainer-environment PASS or selection. Its purpose is to make spatial, metric, risk and implementation evidence fast to audit. [depth:risk_missing_data] [data:geometry/constraints.geojson]
+
+### v1.5.0 Accessible Presentation Upgrade
+
+This revision changes no geometry or planning conclusion. It makes the same evidence chain more reliable for human review: the complete report is open and visible by default in offline HTML rather than substituted by transparent hidden text; every core figure and the new experience image receives specific alternative text; and a generated concept storyboard makes the normal-degraded-human-takeover sequence spatially legible while explicitly stating that it is not a site observation. Residual tofu before the English evidence-gate title and crowding in the north-station title are also removed. GeoJSON, metrics and the three evidence matrices remain authoritative.[depth:risk_missing_data] [metric:manual_fallback_coverage_ratio]
+
+![Concept experience of three operating states](assets/figures/service-continuity-storyboard-v150.en.webp)
 
 ## References
 

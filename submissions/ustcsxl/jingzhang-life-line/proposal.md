@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把百年京张从创新展示轴升级为可演练、可断网运行、可人工接管的公共服务生命线：一条连续照护脊、三座韧性站、十二个可降级 AI 场景和三类可逆原型。"
 tracks: ["ai-public-services", "civic-agent-governance", "jingzhang-heritage-narrative"]
 scenarios: ["ai-health-service-navigation", "ai-traffic-walkability", "public-safety-operations-review", "robot-delivery-low-speed", "ai-cultural-guide", "enterprise-service-copilot"]
-iteration: "v1.4.1"
+iteration: "v1.5.0"
 ---
 
 # 京张生命线：可降级城市韧性与公共照护公地
@@ -74,7 +74,7 @@ iteration: "v1.4.1"
 
 所有接口默认状态为 `not_activated`。只有当授权、最小数据、责任人、预算/维护、投诉和退出机制均可验证时，才允许进入可逆试点；任一项缺失即保持未启动。区域协同的绩效不是“签了多少合作”，而是完成多少个可复演的交换闭环、发现多少个边界问题、又有多少接口因证据不足被正确停止。
 
-![五类区域协同接口、交换对象、进入闸门与非承诺边界](assets/figures/regional-synergy-v14.svg)
+![五类区域协同接口、交换对象、进入闸门与非承诺边界](assets/figures/regional-synergy-v150.webp)
 
 
 ## 总体设计范围城市更新与控规深度城市设计
@@ -93,7 +93,7 @@ iteration: "v1.4.1"
 
 ![三处重点区域的空间原型、运行序列与人工接管](assets/figures/key-areas.png)
 
-`key-areas.png` 已在 v1.4.1 直接替换为专业接续层：明确入口/出口、人工接管点、公众与物流流线、连续无障碍路径、隔离/急停边界、服务组件及 S01-S12 对应关系。图中没有地块尺寸、道路红线或审批精度，任何落位仍由 official polygon、现场和专业审查触发。[depth:three_key_area_detailed_design]
+`key-areas.png` 已在 v1.5.0 直接替换为专业接续层：明确入口/出口、人工接管点、公众与物流流线、连续无障碍路径、隔离/急停边界、服务组件及 S01-S12 对应关系。图中没有地块尺寸、道路红线或审批精度，任何落位仍由 official polygon、现场和专业审查触发。[depth:three_key_area_detailed_design]
 
 
 ### 北站：众智园 AI 自主创新加速区韧性试验场
@@ -243,6 +243,12 @@ iteration: "v1.4.1"
 版权方面，文字、Logo、图件、HTML、PDF 排版和概念几何为本次原创生成；没有使用第三方人物、企业标识、地图瓦片、照片、音乐或视频。外部案例只引用公开事实并登记于 `sources.json`，不再分发其媒体。所有图都标注概念/provisional 状态，不把生成图像冒充现场或公众意见。中文 HTML 可见层使用 Noto Sans CJK SC 的构建期字形轮廓（SIL Open Font License 1.1），不随包分发字体文件；同位透明语义层保留搜索、复制和辅助技术文本。这样即使审查环境没有任何 CJK 系统字体，标题、正文、表格、脚注与证据标签仍由矢量路径显示。完整许可与生成方法见 `report/copyright_statement.md`。[source:SOURCE-REGISTRY] [assumption:A-HERITAGE-001]
 
 提交前，账号持有人必须阅读全部材料、确认模型披露、运行仓库当前版本四道 self-check，并对 PR 承担责任。任何文件改动都会使 manifest hash 和 self-check 失效，需要重新运行。由于当前工作区无法代表维护者环境，本包不声称已经获得官方四门 PASS，也不声称会被选中；其目标是让维护者能快速复核空间、指标、风险和实施证据。[depth:risk_missing_data] [data:geometry/constraints.geojson]
+
+### v1.5.0 可访问表达升级
+
+本轮不改变任何几何或规划结论，而是把同一证据链改造成更可靠的人类阅读层：完整正文在离线 HTML 中默认展开，不再以透明隐藏文本替代阅读；所有核心图和新增场景图提供具体替代文本；服务状态体验图把“正常—降级—人工接管”画成可直接理解的空间序列，并明确标注为生成式概念表达、非现场观察。英文证据图中的残余方框字形和北站标题拥挤同步清理。所有权威判断仍以 GeoJSON、metrics 和三个证据矩阵为准。[depth:risk_missing_data] [metric:manual_fallback_coverage_ratio]
+
+![公共服务生命线三种运行状态概念体验图](assets/figures/service-continuity-storyboard-v150.webp)
 
 ## 参考资料
 
