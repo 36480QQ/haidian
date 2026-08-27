@@ -4,15 +4,15 @@
   "license": "SIL Open Font License 1.1 (OFL-1.1)",
   "license_url": "https://openfontlicense.org/open-font-license-official-plaintext/",
   "subset_purpose": "离线 HTML 中英文字体回退：消除无 CJK 字体环境下的汉字方框；内联 base64 woff2，不请求远程字体。注入于 render_proposal_html.py 每次重新生成之后执行，防止渲染覆盖。",
-  "subset_chars_total": 1180,
+  "subset_chars_total": 1198,
   "covered_files": [
     "visual/index.html",
     "visual/index.en.html",
     "report/proposal.html",
     "report/proposal.en.html"
   ],
-  "woff2_bytes": 334736,
-  "woff2_sha256": "f175103f6817d23317b797074395047e2b525b95226a6aa4bcb5772e59739214",
+  "woff2_bytes": 338728,
+  "woff2_sha256": "d0a75320432bbb64fab11b0222f96189f13361a2a822f9375de4554530d651e7",
   "variable_axis": "wght 100-900 (subset preserves weight range)",
   "inlined_as": "data:font/woff2;base64 (no separate font file shipped in package)",
   "coverage_verification": "fontTools cmap 对四份 HTML 全部非 ASCII 字符的覆盖率 = 100%（程序化验证，v1.9 新增评审问询速览/可证伪条件文本后重建子集并重验）",
