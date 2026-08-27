@@ -220,6 +220,10 @@ EDGE-HOUSE 沿成府路公共侧形成可进入的知识门槛。基态提供遮
 
 大钟寺旁置到达前厅是唯一旗舰。多尺度概念控制框架以定位意图、非比例总平与剖面、接口组件关系共同说明公共净线目标、安全缓冲、旁置服务带、维护撤场带、状态与人工服务点；D1–D3 尺寸只来自当前概念几何，全部待站口、消防、文保、权属与管线测绘后移位或撤回，不是现状实测、施工图或批准结论。[data:geometry/phasing.geojson#PH-P819-01-DAZHONGSI] [depth:three_key_area_detailed_design]
 
+资源包络从同一 D1–D3 概念几何复算：Micro / Base / Extended 的主动服务面积为 367.47 / 734.93 / 1102.40 m²；Base 算术情景为 20–44 人、900–1800 小时/年、1.3–5.3 FTE、CNY 2.65–8.05M CAPEX ROM 和 CNY 0.51–2.53M/年 OPEX ROM。全部输入均为参与者低置信假设，不是北京报价、预算、采购或承诺；No-build 仍保留公共净线、人工窗口、座椅、遮荫、导视与人工服务。[metric:dazhongsi_base_active_service_area_sqm] [data:visual/assets/dazhongsi-operating-envelope.json]
+
+![图 06A｜大钟寺四情景资源与运营包络：面积、容量、开放、FTE、CAPEX/OPEX公式及不建设公共基底。](assets/figures/dazhongsi-operating-envelope.png)
+
 ![图 06｜大钟寺六类概念接口控制证据：定位意图、非比例总平、非比例剖面、接口组件、五构件与昼夜/高峰状态。](assets/figures/dazhongsi-construction-evidence.png)
 
 图 06｜大钟寺六类图纸：定位、总平、剖面、接口、组件与昼夜/高峰状态。
