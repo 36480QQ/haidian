@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R63.0",
+  "audit_id": "JZ-BILINGUAL-MATERIAL-EQUIVALENCE-R64.0",
   "as_of": "2026-08-27",
   "audit_type": "contributor_editorial_review",
   "status": "contributor_side_material_equivalence_checked_human_confirmation_open",
@@ -68,7 +68,7 @@
       "check_id": "BME-08",
       "topic": "publication_pairing",
       "result": "pass",
-      "evidence": "The A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages. R63 places the paired human-task answer first while retaining the semantic text layer. Two fresh-process builds are byte-identical; all 44 pages render without blank, clipping or replacement findings, expose paired searchable semantic text, and keep G0/provisional warnings visible."
+      "evidence": "The A3 pair remains 14+14 pages and the A0 pair remains 8+8 pages. R64 replaces the existing handoff surface in place without adding a page. Two fresh-process builds are byte-identical; all 44 pages retain paired positions, searchable semantic text and visible G0/provisional warnings."
     },
     {
       "check_id": "BME-09",
@@ -116,6 +116,12 @@
       "topic": "human_task_frontstage_equivalence",
       "result": "pass_contributor_side",
       "evidence": "Chinese and English proposals, reports, visual first panels, paired ordinary-life figures and the first pages of all four PDFs use the same arrive-understand-complete-correct-or-withdraw-leave sequence. The three place-specific task variants and anonymous-role-symbol truth boundary remain paired."
+    },
+    {
+      "check_id": "BME-16",
+      "topic": "duty_acceptance_role_refusal_and_ordinary_life_equivalence",
+      "result": "pass_contributor_side",
+      "evidence": "Paired proposal, report, visual, E01 figures and fixed pages name the same three role groups and three H01-H07 decision groups; any missing item refuses real-world start, all seven closed only permits considering G1, accepted duty remains 0/7, and ordinary life continues while failure stops verification only."
     }
   ],
   "critical_claim_map": [
@@ -190,22 +196,30 @@
       "en_location": "visual/index.en.html#s3; the same shared bilingual VTT and Markdown transcript",
       "paired_statement": "The same silent conceptual sequence, native controls, poster, eight bilingual cues, transcript, always-visible static fallback, 54-second editorial-only warning and G0/NO-GO/provisional/real-results-zero boundary are available in both languages.",
       "result": "equivalent_contributor_side_independent_human_review_open"
+    },
+    {
+      "claim_id": "EQ-10",
+      "topic": "duty_acceptance_gate",
+      "zh_location": "proposal.md Chapter 10; visual/index.html#s5; assets/figures/review-professional-handoff.png",
+      "en_location": "proposal.en.md Chapter 10; visual/index.en.html#s5; assets/figures/review-professional-handoff.en.png",
+      "paired_statement": "Accountability/operations, public parity and independent-retest role types remain unconfirmed. Any missing H01-H07 item refuses real-world start; all seven closed only permits considering G1. Accepted duty is 0/7 and ordinary life continues.",
+      "result": "equivalent_contributor_side"
     }
   ],
   "formal_human_review_packet": {
-    "packet_id": "JZ-BILINGUAL-HUMAN-SAMPLE-R63-0",
+    "packet_id": "JZ-BILINGUAL-HUMAN-SAMPLE-R64-0",
     "status": "ready_for_independent_human_sampling_not_signed",
     "machine_supported_surface_facts": {
-      "proposal_line_count_zh": 588,
-      "proposal_line_count_en": 588,
-      "h2_count_zh": 14,
-      "h2_count_en": 14,
+      "proposal_line_count_zh": 590,
+      "proposal_line_count_en": 590,
+      "h2_count_zh": 15,
+      "h2_count_en": 15,
       "h3_count_zh": 24,
       "h3_count_en": 24,
       "embedded_figure_count_zh": 8,
       "embedded_figure_count_en": 8,
-      "evidence_marker_count_zh": 304,
-      "evidence_marker_count_en": 304,
+      "evidence_marker_count_zh": 306,
+      "evidence_marker_count_en": 306,
       "evidence_marker_sequence_equal": true,
       "metric_marker_count_zh": 89,
       "metric_marker_count_en": 89,
@@ -283,6 +297,15 @@
         "review_question": "Do H01-H07, D01-D08, the sole primary metric, stop precedence, independent retest and NO-GO decision carry identical effect?",
         "human_result": null,
         "reviewer_initials": null
+      },
+      {
+        "sample_id": "HUMAN-EQ-08",
+        "scope": "duty acceptance, refusal and ordinary-life floor",
+        "zh_location": "proposal.md Chapter 10; visual/index.html#s5; Chinese E01 figure and paired PDF positions",
+        "en_location": "proposal.en.md Chapter 10; visual/index.en.html#s5; English E01 figure and paired PDF positions",
+        "review_question": "Do both versions assign the same effect to the three role groups, H01-H07, missing-item refusal, 0/7 acceptance, G1 non-automatic rule and ordinary-life continuity?",
+        "human_result": null,
+        "reviewer_initials": null
       }
     ],
     "independent_sampling_execution_contract": {
@@ -315,11 +338,11 @@
     },
     "contributor_precheck_results": {
       "status": "complete_not_independent",
-      "sample_count": 7,
+      "sample_count": 8,
       "material_discrepancy_detected_count": 0,
       "non_material_difference_detected_count": 0,
       "human_result_fields_populated_count": 0,
-      "evidence": "BME-01 through BME-15 and EQ-01 through EQ-09 record contributor-side structural, claim, number, status, position, human-task and media-accessibility comparisons.",
+      "evidence": "BME-01 through BME-16 and EQ-01 through EQ-10 record contributor-side structural, claim, number, status, position, human-task, media-accessibility and duty-acceptance comparisons.",
       "limit": "This precheck helps a human reviewer sample efficiently but cannot populate human_result, reviewer identity, independence or signoff fields."
     },
     "discrepancy_register": [],

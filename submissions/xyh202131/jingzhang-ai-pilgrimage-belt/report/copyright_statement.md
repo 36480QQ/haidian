@@ -50,3 +50,12 @@ No media path or type was added. The retained MP4, VTT, transcript, eight-shot s
 - The current deterministic concept media is not model-generated site imagery and is not presented as field evidence, resident opinion, approved design, accessibility result, real recovery duration or operational proof; 54 seconds is editorial pacing only.
 - These licences do not establish an official boundary, field survey, planning approval, engineering feasibility, accessibility compliance, real service result, accepted duty, G1 status or professional sign-off.
 - Independent legal advice, independent file-level rights audit and trademark search remain absent; this notice does not claim those professional conclusions.
+## R64 责任接收图更新 / R64 duty-acceptance figure update
+
+R64 在原路径重构投稿方自有的双语专业交接 SVG/PNG，并让中英文离线页面与固定页 PDF 引用同一图意。图件由本地确定性 Python/SVG/Chrome 流程生成，仅转译既有 H01—H07、候选与真实性边界；没有新增第三方素材、模型生成媒体、照片、人物、声音、字体、来源或远程依赖。投稿方图形内容继续采用 CC BY 4.0；Noto 字体组件继续适用 SIL OFL 1.1。
+
+R64 rebuilt the contributor-owned bilingual professional-handoff SVG/PNG files in place and aligned paired offline pages and fixed-page PDFs to the same meaning. The figure uses a deterministic local Python/SVG/Chrome workflow and only translates existing H01-H07, candidate and truth-boundary fields. It adds no third-party material, model-generated media, photograph, person, voice, font, source or remote dependency. Contributor visual content remains CC BY 4.0; Noto font components remain under SIL OFL 1.1.
+
+图中角色均为未确认的角色类型，不代表真实机构、人员、排班、责任接受、专业意见、批准或实施授权；当前 0/7 接受与 G0/NO-GO 必须保留。本轮无新媒体。
+
+All depicted roles are unconfirmed role types, not real institutions, people, shifts, accepted duties, professional opinions, approvals or implementation authority. The current 0/7 acceptance and G0/NO-GO boundary must remain. No new media was added.

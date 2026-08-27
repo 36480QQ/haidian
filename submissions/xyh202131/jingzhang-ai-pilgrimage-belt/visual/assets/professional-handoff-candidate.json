@@ -46,6 +46,62 @@
       "visual/assets/g1-preregistration-register.json#G1-PREREG-011"
     ]
   },
+  "frontstage_duty_acceptance_decision": {
+    "question_zh": "普通人完成任务后，谁可以让验证继续？",
+    "question_en": "After a person completes the task, who may let verification continue?",
+    "role_groups": [
+      {
+        "group_id": "accountability_and_operations",
+        "required_role_types": [
+          "accountable owner",
+          "operating lead",
+          "reachable stop chain"
+        ],
+        "assignment_status": "unconfirmed",
+        "accepted_count": 0
+      },
+      {
+        "group_id": "public_parity",
+        "required_role_types": [
+          "affected-group co-test representatives",
+          "accessibility reviewer",
+          "staffed same-task service"
+        ],
+        "assignment_status": "unconfirmed",
+        "accepted_count": 0
+      },
+      {
+        "group_id": "independent_retest",
+        "required_role_types": [
+          "independent real-world retester"
+        ],
+        "assignment_status": "unconfirmed",
+        "accepted_count": 0
+      }
+    ],
+    "decision_groups": [
+      {
+        "group_id": "authority_and_scope",
+        "gates": ["H01_AUTHORITY", "H02_APPROVAL_SCOPE"],
+        "accepted_count": 0
+      },
+      {
+        "group_id": "field_safety_and_recovery",
+        "gates": ["H03_BASELINE", "H04_DATA_SAFETY", "H05_STOP_RECOVERY"],
+        "accepted_count": 0
+      },
+      {
+        "group_id": "public_parity_and_independent_judgement",
+        "gates": ["H06_PUBLIC_PARITY", "H07_RETEST_DECISION"],
+        "accepted_count": 0
+      }
+    ],
+    "missing_item_action": "refuse real-world start and retain G0 / NO-GO",
+    "all_items_closed_action": "may consider a scoped G1 request; never automatic authorization, approval or restart",
+    "ordinary_life_floor": "The continuous ordinary route, printed or staffed same-task service, correction, complaint, withdrawal and exit do not wait for duty acceptance. Failure stops verification only.",
+    "current_result": "0/7 accepted; G0 / NO-GO",
+    "truth_boundary": "This is a contributor-authored reading contract over existing H01-H07 fields, not a new governance contract, accepted duty, professional opinion, approval or field result."
+  },
   "source_maintenance_contract": {
     "accountable_role_id": "service_information_owner",
     "responsible_role_id": "source_pack_custodian",

@@ -1,3 +1,19 @@
+## v64.0 - 2026-08-27
+
+**责任接收门：从人本任务到可拒绝的专业接责 / Duty Acceptance: From Human Task to Refusable Professional Responsibility**
+
+- 在 canonical `main` `4b6afeb9ded98f437673831ab100c47817912bb2` 上确认前序 PR #4086 已合并并进入祖先链，同投稿包开放 PR 为 0，工作树洁净；重新完整读取最新 README、Skill、任务书、中央来源登记、正式投稿指南和社区 Issues/PR，再跑六闸基线。
+- 前序评审为 94/100、无阻断项；剩余可控弱项集中在可实施性与风险合规。修复前 E01 只显示一个候选和七张关闭卡片，不能在图上直接回答谁应接责、缺项时如何拒绝、故障时普通任务是否继续。
+- 在原路径重构双语 `review-professional-handoff` SVG/PNG：把既有 H01—H07 组织为“责任/运营—公共同权—独立复测”三类角色和“权限范围—现场安全恢复—同权独立判断”三道裁决门。任一项缺失即拒绝现实启动；七项全部关闭也只允许考虑 G1，不自动授权、批准或重启。
+- 同步中英文 proposal、report、visual、A3/A0、交接候选、评审索引和双语等价记录；前台现直接显示当前现实接责 0/7、批准 0、现场执行 0，以及普通路径、纸面/人工同任务服务、纠错、投诉、撤回与离开继续。
+- A3 保持 14+14 页、A0 保持 8+8 页；两次新进程构建逐文件字节一致。本轮无新媒体、来源、场景、项目、重点区、治理合同或页面；geometry、`metrics.json`、12/8/3/36、G0/NO-GO、provisional、现实结果 0 和独立现实复测 0 均冻结。
+
+- Confirmed on canonical `main` `4b6afeb9ded98f437673831ab100c47817912bb2` that predecessor PR #4086 was merged and in the ancestry, with zero same-package open PRs and a clean worktree. Re-read the latest README, skill, taskbook, central source registry, formal guide and community Issues/PRs before rerunning all six baseline gates.
+- The predecessor review scored 94/100 with no blocker; the remaining contributor-controlled weakness was concentrated in implementability and risk/compliance. Before repair, E01 showed one candidate and seven closed cards but did not directly answer who should accept duty, how a missing item triggers refusal, or whether ordinary tasks continue during fault.
+- Rebuilt the paired `review-professional-handoff` SVG/PNG files in place. Existing H01-H07 conditions are now organized as three role groups—accountability/operations, public parity and independent retest—and three decision groups—authority/scope, field/safety/recovery and parity/independent judgement. Any missing item refuses real-world start; all seven closed only permits considering G1, never automatic authorization, approval or restart.
+- Synchronized paired proposal, report, visual, A3/A0, candidate packet, review index and bilingual-equivalence record. The frontstage now states real acceptance 0/7, approvals 0 and field execution 0, while the ordinary route, printed/staffed same-task service, correction, complaint, withdrawal and exit continue.
+- A3 remains 14+14 pages and A0 remains 8+8 pages; two fresh processes produced byte-identical files. No media, source, scenario, project, key area, governance contract or page was added; geometry, `metrics.json`, 12/8/3/36, G0/NO-GO, provisional status, zero real results and zero independent real-world retests remain frozen.
+
 ## v63.0 - 2026-08-27
 
 **一人一事一处：人本任务前台 / One Person, One Task, One Place**

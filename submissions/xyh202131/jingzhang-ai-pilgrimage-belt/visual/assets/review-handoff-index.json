@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
-  "index_id": "JZ-REVIEW-HANDOFF-R63.0",
-  "publication_revision": "63.0",
+  "index_id": "JZ-REVIEW-HANDOFF-R64.0",
+  "publication_revision": "64.0",
   "as_of": "2026-08-27",
   "reading_routes": [
     {
@@ -63,10 +63,10 @@
       },
       {
         "order": 5,
-        "label_zh": "一个候选",
-        "label_en": "One candidate",
-        "answer": "Only JZ-05 × SCENE-011 × T-02 may be deepened before G1; all real H01-H07 closures remain zero and the decision is NO-GO.",
-        "surface": "visual/assets/professional-handoff-candidate.json"
+        "label_zh": "一项接责裁决",
+        "label_en": "One duty ruling",
+        "answer": "Only JZ-05 × SCENE-011 × T-02 is reviewable before G1. Accountability/operations, public parity and independent-retest role types remain unconfirmed; any missing H01-H07 item refuses real-world start. Accepted items remain 0/7 and the decision is NO-GO, while ordinary life continues.",
+        "surface": "visual/index.html#s5; assets/figures/review-professional-handoff.png; visual/assets/professional-handoff-candidate.json#/frontstage_duty_acceptance_decision"
       }
     ],
     "detail_on_demand": [
@@ -94,6 +94,9 @@
     "accepted_H01_H07_items": 0,
     "prepared_D01_D08_records": 8,
     "submitted_real_materials": 0,
+    "frontstage_question": "After a person completes the task, who may let verification continue?",
+    "current_duty_acceptance": "0/7 accepted; G0 / NO-GO",
+    "missing_item_action": "refuse real-world start; keep ordinary life available",
     "sole_primary_metric": "tasks_with_correct_current_source_and_successful_required_handoff / all_started_service_tasks",
     "professional_packet": "visual/assets/professional-handoff-candidate.json",
     "field_intake": "visual/assets/field-evidence-intake-contract.json",
@@ -216,5 +219,32 @@
       "new_media": false
     },
     "boundary": "Anonymous standing and wheeled figures are contributor-authored conceptual role symbols, not photographs, real participants, public feedback, accessibility results or built-state evidence."
+  },
+  "duty_acceptance_frontstage": {
+    "audit_type": "contributor_red_green_reading_contract",
+    "before_state": {
+      "explicit_role_groups": 0,
+      "explicit_missing_item_refusal_rule": false,
+      "explicit_ordinary_life_floor": false,
+      "finding": "Seven closed cards disclosed missing evidence but did not expose the complete decision path on the figure itself."
+    },
+    "current_state": {
+      "question": "After a person completes the task, who may let verification continue?",
+      "role_groups": [
+        "accountability_and_operations",
+        "public_parity",
+        "independent_retest"
+      ],
+      "decision_groups": [
+        "authority_and_scope",
+        "field_safety_and_recovery",
+        "public_parity_and_independent_judgement"
+      ],
+      "missing_item_action": "refuse real-world start and retain G0 / NO-GO",
+      "accepted_items": "0/7",
+      "ordinary_life_floor": "continues_without_waiting_for_duty_acceptance"
+    },
+    "surface": "visual/index.html#s5; assets/figures/review-professional-handoff.png; visual/assets/professional-handoff-candidate.json#/frontstage_duty_acceptance_decision",
+    "boundary": "Contributor reading contract only; not a new governance contract, real role assignment, professional opinion, acceptance, approval or field result."
   }
 }
