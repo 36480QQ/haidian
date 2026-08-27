@@ -67,16 +67,16 @@ Per the public taskbook, GREEN.JZ maps the three positioning goals: as the **gre
 
 ### Benchmark cases: borrow mechanisms, not data (sources registered per item)
 
-| Benchmark case | Public mechanism overview | Translation into this proposal | Source registration (publisher/URL/licence) |
-| --- | --- | --- | --- |
-| Xiongan New Area green low-carbon practice | Green buildings, green power, near-zero-carbon park direction | Demo campus "practice cluster + public demonstration" organisation | sources.json CASE-XIONGAN |
-| Shenzhen International Low-Carbon City | Low-carbon technology display combined with industry clusters | Certification display and community-facing interface design | sources.json CASE-SHENZHEN-LOWCARBON |
-| Copenhagen carbon-neutral target | Public target and periodic disclosure mechanism | Annual carbon-efficiency disclosure mechanism | sources.json CASE-COPENHAGEN |
-| Freiburg Vauban community | Resident-participatory low-carbon neighbourhood | Zero-carbon-compact community covenant intention | sources.json CASE-FREIBURG-VAUBAN |
-| Hangzhou Asian Games Village low-carbon practice | Low-carbon construction and post-event reuse of large venues | Station-style community services and event-legacy linkage | sources.json CASE-HANGZHOU-GAMES |
-| Singapore Punggol Digital District | District-level district cooling and energy-as-a-service | Reference case for energy facilities as a public interface | sources.json CASE-SINGAPORE-PUNGGOL |
+| Benchmark case | Public mechanism overview | Claim anchor | Translation into this proposal | Source registration | Reuse boundary |
+| --- | --- | --- | --- | --- | --- |
+| Xiongan New Area green low-carbon practice | Green buildings, green power, near-zero-carbon park direction | "Near-zero-carbon park + green building" chapter of the published planning outline | Demo campus "practice cluster + public demonstration" organisation | sources.json CASE-XIONGAN (xiongan.gov.cn public article, 2023-04-13) | Mechanism and direction only; no figures cited |
+| Shenzhen International Low-Carbon City | Low-carbon technology display combined with industry clusters | "Low-carbon tech + industry cluster" in the government public article | Certification display and community-facing interface design | sources.json CASE-SHENZHEN-LOWCARBON (sz.gov.cn public article, 2022-09-15) | Direction only; no scale or investment |
+| Copenhagen carbon-neutral target | Public target and periodic disclosure mechanism | CPH 2025 Climate Plan published PDF | Annual carbon-efficiency disclosure mechanism | sources.json CASE-COPENHAGEN (kk.dk public PDF, 2021-06-01) | Disclosure mechanism only; no progress data |
+| Freiburg Vauban community | Resident-participatory low-carbon neighbourhood | "Participation + neighbourhood" in the ICLEI case dossier | Zero-carbon-compact community covenant intention | sources.json CASE-FREIBURG-VAUBAN (iclei-eu.org public dossier, 2018-11-22) | Participation mechanism only; no community scale |
+| Hangzhou Asian Games Village low-carbon practice | Low-carbon construction and post-event reuse of large venues | "Post-event reuse" in the People's Daily public report | Station-style community services and event-legacy linkage | sources.json CASE-HANGZHOU-GAMES (people.com.cn public news, 2022-09-08) | Post-event reuse mechanism only; no material or area |
+| Singapore Punggol Digital District | District-level district cooling and energy-as-a-service | "District cooling" on the JTC public page | Reference case for energy facilities as a public interface | sources.json CASE-SINGAPORE-PUNGGOL (jtc.gov.sg public page, 2024-05-20) | Mechanism only; no capacity |
 
-The six cases summarise public-channel mechanisms only; publisher, page URL, access date, licence and permitted uses are registered per item in sources.json. None constitutes evidence of this site's space, indicators or achievements; all details follow official public materials.
+The six cases summarise public-channel mechanisms only. Each row registers publisher, specific article or report page URL, published date, accessed date, claim anchor (chapter / paragraph) and reuse boundary; all registered per item in sources.json. None constitutes evidence of this site's space, indicators or achievements; all details follow official public materials.
 
 > **Evidence anchor**: [source:DATA-SRC-PROVISIONAL-BOUNDARIES] (provisional boundary; research scope conceptual only).
 
@@ -143,6 +143,46 @@ Zero-carbon practice is not a park island: the off-belt coordination targets, re
 | Jing-Jin-Ji region | Green-power corridor and cross-region carbon-benefit mutual recognition | Virtual power plant aggregation concept interface | Public bodies lead, multi-party co-build | Cross-region exchange of aggregated-level indicators only | Annual synergy recompute and disclosure, mutual-recognition protocol draft |
 
 > **Evidence anchor**: [source:DATA-SRC-AGENT-TASKBOOK] (conceptual response to belt-integration requirements).
+
+## Zhongguancun Tech Service Wing & Xiaoyuehe Scenario Empowerment Wing - Two-Wing Execution Evidence (concept)
+
+"One campus - one corridor - one station" carries the three zones, but the taskbook's "two wings" cannot remain only a phrase. This section makes the **Zhongguancun Tech Service Wing** and the **Xiaoyuehe Scenario Empowerment Wing** explicit as connectable, verifiable synergy loops using interface diagrams and a matrix: per wing, it lists the spatial interfaces with the three nodes, responsibility division with regional partners, resource/data/indicator boundaries, and outputs that can be verified at pilot stage gates G1-G2. Both wings are described using the public taskbook text and the provisional boundary; specific boundaries, land-use redlines and operations clauses are recomputed once official data is published.
+
+### Overall two-wing interface (concept)
+
+| Wing | Resources and capabilities | Spatial interface | Three-node correspondence | Data boundary | Pilot verifiable output |
+| --- | --- | --- | --- | --- | --- |
+| Zhongguancun Tech Service Wing | Sci-tech services, incubators, technology brokers, IP and computing-scheduling public-platform capability; service network of Zhongguancun Science City and Haidian tech actors | "Tech broker + validation-scenario opening" interface for campus-level zero-carbon practice, joining the demonstration campus outer ring and the Haidian main-area industry belt | Demo campus (validation, test protocol), corridor (sci-tech display), station (service outlet) | Only aggregated tech outputs, validation records, scenario-listing ledger; no individual-identifying data uploaded | Quarterly broker intake and conversion ledger (anonymised aggregation), annual scenario-listing and conversion report |
+| Xiaoyuehe Scenario Empowerment Wing | Blue-green corridor, public space, community deliberation and carbon-benefit participation; Xiaoyuehe water system and adjacent public spaces as daily-scenario carrier | "Public scenario + opinion collection + science node" interface overlaid on the Xiaoyuehe front line and the corridor slow-mobility system | Corridor (riverside science and display), station (community participation), demo campus (data display) | Only anonymised aggregated participation, opinion collection and carbon-benefit statistics; test data de-identified per protocol | Quarterly participation and opinion-collection public record, annual carbon-benefit point issuance and exchange ledger (anonymised aggregation) |
+
+### Resource flows with the three nodes (concept)
+
+Resource flows use the three nodes as anchors, injecting two-wing capability into the three nodes and feeding the three-node outputs back to the two wings, forming observable loops:
+
+| Flow direction | From | To | Main content | Boundary |
+| --- | --- | --- | --- | --- |
+| Service injection | Zhongguancun Tech Service Wing | Demo campus, corridor, station | Tech broker assignment, compute quota, IP and conversion services, incubator demo schedules | Protocol-level scheduling and admission conditions; no binding to individuals |
+| Resource injection | Xiaoyuehe Scenario Empowerment Wing | Corridor, station, demo campus | Blue-green corridor and public-space hosting, volunteer / operations team, community deliberation support | Public-space use protocol; no individual identification |
+| Feedback loop | Demo campus -> two wings | Zhongguancun Tech Service Wing | Test protocol ledger, scenario-listing results, conversion cases (anonymised aggregation) | De-identified data; retained per protocol |
+| Feedback loop | Station -> two wings | Xiaoyuehe Scenario Empowerment Wing | Carbon-benefit participation, opinion classification, quarterly response counts | Anonymised aggregation; no individual identification |
+
+### Responsibility, data, and verifiability (concept)
+
+| Dimension | Zhongguancun Tech Service Wing | Xiaoyuehe Scenario Empowerment Wing |
+| --- | --- | --- |
+| Responsible actor (concept) | Zhongguancun Science City operating company + park operations team (lead); universities and research institutes, green-tech enterprises (collaborate); public body (coordinate and file) | Public body (coordinate) + community council (community side) + operations team (facility maintenance) + volunteer organisation (programme support) |
+| Data boundary | Test-protocol ledger, conversion ledger, IP-registration summary; aggregated technical indicators; no individual-identifying data | Carbon-benefit participation, opinion collection, response counts, aggregated community satisfaction; no individual identification |
+| RACI matrix (concept) | R: park operations + broker; A: public body; C: universities / research; I: residents and enterprises | R: operations team + council; A: public body; C: universities / volunteers; I: residents and visitors |
+| Pilot stage gates | G1 data dictionary ready (incl. tech-output classification, conversion-judgement calibre); G2 privacy audit passed (no individual identification) | G1 data dictionary ready (incl. participation, opinion-collection, point-accounting fields); G2 privacy audit passed (no individual identification) |
+| Verifiable output (near term 1-3 y) | Quarterly broker intake / conversion ledger; annual scenario-listing and conversion report; at least 1 publicly reusable developer sandbox output | Quarterly participation and opinion-collection public record; annual carbon-benefit point issuance and exchange ledger; at least 1 station-style community service process live |
+| Mid term 3-5 y | Multi-party joint release of protocol-level scheduling and conversion; sandbox outputs entering Xiaoyuehe scenario-empowerment science narrative | Cross-park carbon-benefit mutual recognition interface; corridor science-node "understandable" energy-knowledge content updated >= 1 version per year |
+| Long term 5-10 y | Jing-Jin-Ji cross-region mutual-recognition protocol draft; VPP aggregation interface protocol-level formalisation | Community deliberation results feeding back to demo campus and station operations; cross-park, cross-subdistrict carbon-benefit mutual-recognition mechanism |
+
+### "Two wings + three zones" synergy loop (concept)
+
+The Zhongguancun Tech Service Wing injects energy from the "test, validate, convert" end; the Xiaoyuehe Scenario Empowerment Wing injects energy from the "participate, experience, deliberate" end. The two wings cross, dialogue and leave publishable outputs at the three nodes. The synergy loop is not a commitment: every entry is marked as "concept", every boundary is marked "provisional"; the whole thing is recomputed once official data is published, and proposal.md, metrics.json and visual/index.html data-values are updated in step.
+
+> **Evidence anchors**: [source:DATA-SRC-AGENT-TASKBOOK] (three-zones-two-wings synergy loop from taskbook text), [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT] (three-level scope and three-key-area announcement calibre), [data:PACKAGE-GEOMETRY] (interface locations correspond to this package's geometry/site_boundary.geojson and key_areas.geojson).
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 

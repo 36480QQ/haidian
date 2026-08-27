@@ -88,7 +88,7 @@
    "ai_package_stages": {
     "submissions/JohnXu22786/zero-carbon-demo-garden": "formal"
    },
-   "total_bytes": 14458102,
+   "total_bytes": 15871165,
    "maintainer_bypass": false
   },
   "stderr": ""
@@ -220,9 +220,9 @@
   }
  ],
  "figure_qc": {
-  "ok": true,
+  "ok": false,
   "ink_ok": true,
-  "clip_clear": true,
+  "clip_clear": false,
   "overlap_clear": "not_verified",
   "summary": "ink+edge-clip machine check only; text-overlap not machine-verified post-hoc (figure generation text-bbox checks recorded in changelog)",
   "figures": {
@@ -250,44 +250,44 @@
    "key-areas.png": {
     "width": 1800,
     "height": 1200,
-    "ink": 0.103,
-    "edge_clip_ratio": 0.0,
-    "edge_clip_clear": true
+    "ink": 0.5728,
+    "edge_clip_ratio": 1.0,
+    "edge_clip_clear": false
    },
    "land-use-structure.png": {
     "width": 1800,
     "height": 1200,
-    "ink": 0.1298,
-    "edge_clip_ratio": 0.0,
-    "edge_clip_clear": true
+    "ink": 0.6341,
+    "edge_clip_ratio": 1.0,
+    "edge_clip_clear": false
    },
    "logo-brand.png": {
     "width": 1800,
     "height": 1200,
-    "ink": 0.4691,
-    "edge_clip_ratio": 0.0,
-    "edge_clip_clear": true
+    "ink": 0.3681,
+    "edge_clip_ratio": 1.0,
+    "edge_clip_clear": false
    },
    "metrics-evidence.png": {
     "width": 1800,
     "height": 1200,
-    "ink": 0.1424,
-    "edge_clip_ratio": 0.0,
-    "edge_clip_clear": true
+    "ink": 0.6022,
+    "edge_clip_ratio": 1.0,
+    "edge_clip_clear": false
    },
    "mobility-bluegreen.png": {
     "width": 1800,
     "height": 1200,
-    "ink": 0.1157,
-    "edge_clip_ratio": 0.0,
-    "edge_clip_clear": true
+    "ink": 0.958,
+    "edge_clip_ratio": 1.0,
+    "edge_clip_clear": false
    },
    "site-overview.png": {
     "width": 1800,
     "height": 1200,
-    "ink": 0.1004,
-    "edge_clip_ratio": 0.0092,
-    "edge_clip_clear": true
+    "ink": 0.317,
+    "edge_clip_ratio": 1.0,
+    "edge_clip_clear": false
    }
   }
  }

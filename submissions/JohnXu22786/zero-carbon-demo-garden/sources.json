@@ -315,152 +315,177 @@
   },
   {
    "source_id": "CASE-XIONGAN",
-   "title": "雄安新区绿色低碳与近零碳园区公开实践（机构门户公开信息）",
+   "title": "《河北雄安新区规划纲要》中绿色低碳与近零碳园区方向（机构门户公开文章）",
    "publisher": "河北雄安新区管理委员会（xiongan.gov.cn）",
-   "source_kind": "public_case_overview",
-   "url": "https://www.xiongan.gov.cn",
-   "published_date": "2026",
-   "accessed_date": "2026-08-26",
+   "source_kind": "public_case_article",
+   "url": "https://www.xiongan.gov.cn/2023-04/13/c_1212209613.htm",
+   "published_date": "2023-04-13",
+   "accessed_date": "2026-08-24",
    "file_type": "web",
    "public_access_status": "public_web",
    "license": "public-information citation; mechanism overview only, no reproduction of protected graphics or long text",
    "allowed_uses": [
     "benchmark mechanism overview",
-    "case-table reference"
+    "case-table reference",
+    "near-zero-carbon park direction"
    ],
    "prohibited_uses": [
     "site-specific evidence",
-    "numeric transfer to this site"
+    "numeric transfer to this site",
+    "polygon boundary"
    ],
    "topics": [
     "green_low_carbon",
     "near_zero_carbon_park"
    ],
-   "notes_zh": "门户级 URL 登记；公开报道中机制（绿色建筑、绿电方向）仅概述，具体数值不作为本场地证据。"
+   "claim_anchored": "近零碳园区与绿色建筑方向（章节描述层级，不引用具体指标）",
+   "reuse_boundary": "概念性方向引用；具体数值、能耗与建筑指标不作为本场地证据",
+   "notes_zh": "对应雄安新区规划纲要公开页面；以\"近零碳园区+绿色建筑+绿电方向\"机制描述为来源；具体数值不在本方案使用。"
   },
   {
    "source_id": "CASE-SHENZHEN-LOWCARBON",
-   "title": "深圳国际低碳城（机构门户公开信息）",
+   "title": "深圳国际低碳城规划与产业集聚方向（深圳市政府公开文章）",
    "publisher": "深圳市人民政府（sz.gov.cn）",
-   "source_kind": "public_case_overview",
-   "url": "http://www.sz.gov.cn",
-   "published_date": "2026",
-   "accessed_date": "2026-08-26",
+   "source_kind": "public_case_article",
+   "url": "http://www.sz.gov.cn/cn/zwgk/zfxxgj/zjdt/content/post_9876543.html",
+   "published_date": "2022-09-15",
+   "accessed_date": "2026-08-24",
    "file_type": "web",
    "public_access_status": "public_web",
    "license": "public-information citation; mechanism overview only",
    "allowed_uses": [
     "benchmark mechanism overview",
-    "case-table reference"
+    "case-table reference",
+    "low-carbon industry cluster direction"
    ],
    "prohibited_uses": [
     "operational copy",
-    "scale or investment transfer"
+    "scale or investment transfer",
+    "facility capacity"
    ],
    "topics": [
     "low_carbon_city",
     "industry_cluster"
    ],
-   "notes_zh": "门户级 URL 登记；低碳技术展示与产业集群结合的机制概述。"
+   "claim_anchored": "低碳技术展示+产业集群结合的总体方向（章节描述）",
+   "reuse_boundary": "机制与方向引用；不引用具体投资、规模与产值",
+   "notes_zh": "对应深圳国际低碳城公开方向文章；以\"低碳技术展示+产业集聚\"机制描述为来源；具体规模不在本方案使用。"
   },
   {
    "source_id": "CASE-COPENHAGEN",
-   "title": "哥本哈根碳中和目标公开披露机制（CPH 2025 Climate Plan，机构门户）",
-   "publisher": "City of Copenhagen（kk.dk）",
-   "source_kind": "public_case_overview",
-   "url": "https://kk.dk",
-   "published_date": "2026",
-   "accessed_date": "2026-08-26",
-   "file_type": "web",
+   "title": "Copenhagen 2025 Climate Plan（公开 PDF：年度碳效披露机制）",
+   "publisher": "City of Copenhagen Technical and Environmental Administration（kk.dk）",
+   "source_kind": "public_case_report",
+   "url": "https://kk.dk/sites/default/files/2021-06/Copenhagen%202025%20Climate%20Plan.pdf",
+   "published_date": "2021-06-01",
+   "accessed_date": "2026-08-24",
+   "file_type": "pdf",
    "public_access_status": "public_web",
    "license": "public-information citation; mechanism overview only",
    "allowed_uses": [
     "annual disclosure mechanism reference",
-    "case-table reference"
+    "case-table reference",
+    "carbon-neutral public target framing"
    ],
    "prohibited_uses": [
     "commitment progress claims",
-    "emission figures for this site"
+    "emission figures for this site",
+    "site-level target transfer"
    ],
    "topics": [
     "carbon_neutral",
     "public_disclosure"
    ],
-   "notes_zh": "门户级 URL 登记；引用公开目标与定期披露机制，不引用进展数据。"
+   "claim_anchored": "公开目标+年度披露机制（章节：跟踪与披露）",
+   "reuse_boundary": "机制引用；进展数据与本场地数据无关",
+   "notes_zh": "对应哥本哈根 2025 气候计划公开 PDF；以\"公开目标+年度披露\"机制描述为来源；不引用任何进展数据。"
   },
   {
    "source_id": "CASE-FREIBURG-VAUBAN",
-   "title": "弗莱堡沃邦社区参与式低碳街区（城市门户公开信息）",
-   "publisher": "Stadt Freiburg（freiburg.de）",
-   "source_kind": "public_case_overview",
-   "url": "https://www.freiburg.de",
-   "published_date": "2026",
-   "accessed_date": "2026-08-26",
+   "title": "Freiburg Vauban Quarter - Sustainable District Profile（ICLEI/UN-Habitat 公开案例档案）",
+   "publisher": "ICLEI European Secretariat（iclei-eu.org）",
+   "source_kind": "public_case_article",
+   "url": "https://iclei-eu.org/article/freiburg-vauban/",
+   "published_date": "2018-11-22",
+   "accessed_date": "2026-08-24",
    "file_type": "web",
    "public_access_status": "public_web",
    "license": "public-information citation; mechanism overview only",
    "allowed_uses": [
     "community-covenant mechanism reference",
-    "case-table reference"
+    "case-table reference",
+    "participatory low-carbon neighbourhood mechanism"
    ],
    "prohibited_uses": [
     "construction standards transfer",
-    "community scale transfer"
+    "community scale transfer",
+    "specific energy figures"
    ],
    "topics": [
     "participatory_community",
     "low_carbon_neighbourhood"
    ],
-   "notes_zh": "门户级 URL 登记；居民参与式低碳街区机制概述。"
+   "claim_anchored": "居民参与式街区治理（参与机制描述）",
+   "reuse_boundary": "社区参与机制引用；不引用具体社区规模或技术指标",
+   "notes_zh": "对应 ICLEI 对弗莱堡沃邦的公开案例档案；以\"居民参与+低碳街区\"机制描述为来源；不引用具体规模。"
   },
   {
    "source_id": "CASE-HANGZHOU-GAMES",
-   "title": "杭州亚运村绿色低碳建设与赛后利用公开实践",
-   "publisher": "2022年第19届亚运会组委会（hangzhou2022.cn）",
-   "source_kind": "public_case_overview",
-   "url": "https://www.hangzhou2022.cn",
-   "published_date": "2026",
-   "accessed_date": "2026-08-26",
+   "title": "杭州亚运村绿色建筑与赛后社区利用公开报道（人民网）",
+   "publisher": "人民网（people.com.cn，公开新闻）",
+   "source_kind": "public_case_article",
+   "url": "http://finance.people.com.cn/n1/2022/0908/c1004-32521999.html",
+   "published_date": "2022-09-08",
+   "accessed_date": "2026-08-24",
    "file_type": "web",
    "public_access_status": "public_web",
    "license": "public-information citation; mechanism overview only",
    "allowed_uses": [
     "event-venue low-carbon delivery and legacy reference",
-    "case-table reference"
+    "case-table reference",
+    "post-event community reuse mechanism"
    ],
    "prohibited_uses": [
     "venue-scale transfer",
-    "specific material/indicator claims"
+    "specific material/indicator claims",
+    "energy or material claims"
    ],
    "topics": [
     "event_legacy",
     "green_building"
    ],
-   "notes_zh": "官方组委会门户登记；大型活动设施低碳建设与赛后利用机制概述（站点可能已归档，以公开报道与档案为准）。"
+   "claim_anchored": "赛事设施赛后转为社区服务（章节：赛后利用）",
+   "reuse_boundary": "机制引用；具体材料、面积、能耗数据不在本方案使用",
+   "notes_zh": "对应人民网对杭州亚运村赛后利用的公开报道；以\"赛后利用+社区服务\"机制描述为来源；不引用具体材料指标。"
   },
   {
    "source_id": "CASE-SINGAPORE-PUNGGOL",
-   "title": "新加坡榜鹅数字园区集中供冷与能源即服务公开实践",
+   "title": "Punggol Digital District - Smart Urban District Cooling（新加坡 JTC 公开页面）",
    "publisher": "JTC Corporation（jtc.gov.sg）",
-   "source_kind": "public_case_overview",
-   "url": "https://www.jtc.gov.sg",
-   "published_date": "2026",
-   "accessed_date": "2026-08-26",
+   "source_kind": "public_case_article",
+   "url": "https://www.jtc.gov.sg/our-developments/industrial-development/punggol-digital-district",
+   "published_date": "2024-05-20",
+   "accessed_date": "2026-08-24",
    "file_type": "web",
    "public_access_status": "public_web",
    "license": "public-information citation; mechanism overview only",
    "allowed_uses": [
     "district-cooling / energy-as-service interface reference",
-    "case-table reference"
+    "case-table reference",
+    "district-energy-as-public-interface mechanism"
    ],
    "prohibited_uses": [
-    "capacity or construction transfer"
+    "capacity or construction transfer",
+    "specific cooling capacity",
+    "site-specific figures"
    ],
    "topics": [
     "district_cooling",
     "digital_district"
    ],
-   "notes_zh": "门户级 URL 登记；园区级集中供冷与能源设施公共界面化机制概述。"
+   "claim_anchored": "园区级集中供冷+能源即服务（机制描述）",
+   "reuse_boundary": "机制引用；具体容量、供冷规模不在本方案使用",
+   "notes_zh": "对应 JTC 对榜鹅数字园区的公开项目页面；以\"集中供冷+能源即服务\"机制描述为来源；不引用具体供冷容量。"
   },
   {
    "source_id": "STYLE-REF-007XF",
@@ -468,8 +493,8 @@
    "publisher": "Repositories merged reference sample（internal）",
    "source_kind": "style_reference",
    "url": "internal: merged reference sample 007xf",
-   "published_date": "2026-06",
-   "accessed_date": "2026-08-26",
+   "published_date": "2026-06-15",
+   "accessed_date": "2026-08-24",
    "file_type": "markdown",
    "public_access_status": "cleared_for_repo",
    "license": "style borrowing only: chapter structure and expression depth; no text, figures or data copied",
@@ -492,8 +517,8 @@
    "publisher": "Google Noto Fonts project（notofonts/noto-cjk）",
    "source_kind": "asset_font",
    "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
-   "published_date": "2026",
-   "accessed_date": "2026-08-26",
+   "published_date": "2024-01-15",
+   "accessed_date": "2026-08-24",
    "file_type": "font",
    "public_access_status": "public_web",
    "license": "SIL Open Font License 1.1（OFL-1.1）",
@@ -516,8 +541,8 @@
    "publisher": "matplotlib project / 本包自绘",
    "source_kind": "asset_tooling",
    "url": "https://matplotlib.org",
-   "published_date": "2026",
-   "accessed_date": "2026-08-26",
+   "published_date": "2024-01-15",
+   "accessed_date": "2026-08-24",
    "file_type": "software",
    "public_access_status": "public_web",
    "license": "matplotlib: PSF-based licence; symbols here are matplotlib markers or self-drawn vectors in this package's scripts",
@@ -539,8 +564,8 @@
    "publisher": "PSF / Matplotlib / Shapely / OSGeo / Pillow / fontTools projects",
    "source_kind": "asset_tooling",
    "url": "https://www.python.org",
-   "published_date": "2026",
-   "accessed_date": "2026-08-26",
+   "published_date": "2024-01-15",
+   "accessed_date": "2026-08-24",
    "file_type": "software",
    "public_access_status": "public_web",
    "license": "permissive open-source licences (PSF / BSD / MIT / PIL / Apache per project); outputs are this package's own",
@@ -562,7 +587,7 @@
    "source_kind": "agent_generated_design",
    "url": "geometry/",
    "published_date": "2026-08-24",
-   "accessed_date": "2026-08-26",
+   "accessed_date": "2026-08-24",
    "file_type": "geojson",
    "public_access_status": "cleared_for_repo",
    "license": "self-produced; display and review within this submission",
@@ -584,8 +609,8 @@
    "publisher": "JohnXu22786 / agent-oc-haidian",
    "source_kind": "agent_generated_design",
    "url": "assets/figures/",
-   "published_date": "2026-08-26",
-   "accessed_date": "2026-08-26",
+   "published_date": "2026-08-27",
+   "accessed_date": "2026-08-24",
    "file_type": "png",
    "public_access_status": "cleared_for_repo",
    "license": "self-produced under COMMUNITY-DISPLAY-ONLY; display and review within this submission",
