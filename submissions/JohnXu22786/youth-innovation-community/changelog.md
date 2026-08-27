@@ -1,5 +1,16 @@
 # 方案迭代记录
 
+## v0.5.0 - 2026-08-26（Round 8 修复：应用 CocoSgt 70.0/100 逐条意见）
+
+- **单项用地口径修复（风险与合规 3/5、表达完整度 2/5 的根因）**：删除"公园绿地约30%"与正文/green_ratio 混用口径，确立**单一口径**——land_use.geojson 十类图斑在 EPSG:4548 下的面积占比（合计=提交总体范围面积，比值 1.0000）；同一数值用于 proposal.md 用地表（0802 科研21.6%、1401 公园绿地21.0%、0701 住宅17.9%、0901 商业14.4%、0902 商务金融9.1%、0803 文化6.8%、0702 社区服务4.7%、0804 教育科研设计1.8%、16 留白1.3%、1207 道路1.3%）、land-use-structure 中英条形图（条长=标签=上述占比，类别—条长—标签严格一致）、metrics.json 新增 land_use_share_* 十项（status=known、0–1 比值）、visual/index.html 与 index.en.html 用地分区段、A3/A0 图册；green_ratio(12.9%)、public_space_ratio(0.46%) 明确为另一几何口径（green_space/public_space 图斑 ÷ site_area），并声明不复用其他比例口径、官方数据发布后按同一公式整体复算。
+- **双语图面重叠/裁切/遮挡修复（表达完整度 2/5）**：全套 20 件图件（10 中英成对）以固定脚手架重绘，每件保存前运行 matplotlib 文本包围盒 QC（越界+两两重叠检查，0 违规）与 PIL/numpy ink/clip 实测；重点修复 site-overview（图例移入右独立列不遮挡地图、节点标签白底错位引出线）、land-use-structure（类别名作 y 轴刻度、占比标于条端，条长=标签）、mobility-bluegreen（左侧地形图+右侧剖面双面板、图例白底左下安全区、2 km 等距示意圆非等时圈+步速假设+检索日无路网数据警示、剖面面板浅灰底保证 ink）。ink 结果：site-overview 0.42/0.42、land-use-structure 0.123/0.123、mobility-bluegreen 0.135/0.132、key-areas 0.265/0.263、metrics-evidence 0.110/0.112、brand-identity 0.140/0.142、innovation-ecosystem 0.53、node-components 0.33、scenario-cards 0.276、operation-flow 0.33（图≥0.08、图≥0.10 达标线；edge-clip 全 0）。
+- **A0 第一页重排（表达完整度 2/5）**：A0 展板 1 仅放核心地图（site-overview）+ 用地结构（land-use-structure）+ 三节点（key-areas）三大件，img_panel 逐面板保长宽比 fit（不裁切不拉伸不letterbox缩放），标题≥60pt（中英自动换行、实测包围盒不越界）；A0 预览页密度验证 ink≈0.09、四边裁切 0；A3 封面标题换行不再越界（中英均过 QC）。
+- **七维评分逐项修复（可实施性 3/5、AI 与规划创新性 4/5、原创性 4/5、任务书相关性 4/5）**：①任务书相关性——新增「本包定位与全带统筹接口（专项界定）」章，显式说明青年友好专项与全带统筹的三层接口，不再被理解为与全带统筹冲突；②原创性——新增「场地独有形态与原型验证（概念）」章（三节点场地形态语言 + 「可撤回原型期」机制 + 原型验证迭代闭环，均概念、不表述为已建成/已批准）；③AI 创新性——新增「空间反馈—运营评估—规划调整闭环与共测基线（概念）」节（使用—评估—调整可撤回闭环 + 三级档位共测基线，AI 仅提供证据与候选，调整由人决策）；④可实施性——新增「分期决策门与基线设定流程（概念）」段（每期成本复盘/权属确认/公众评议/停止退出条件 + KPI 以共测基线流程设定、官方基线发布后校准）。中英正文同步等价更新。
+- **品牌在先权利与使用边界**：品牌识别章新增段落——概念阶段未完成官方商标检索，名称与标记仅作内部工作代号、不用于对外注册/商业化/官方署名，使用前须清权；report/copyright_statement.md 资产台账与 sources.json 保持逐项登记。
+- **图件与正文一致性**：metrics-evidence 比率分轴新增强化公园绿地 21.0%（land_use 单口径）与 green_ratio 12.9%、public_space_ratio 0.46% 并列说明；计数分轴 8 项与 metrics.json（3/3/9/30/12/3/3/6）一致；AI 闭环节新增「使用—评估—调整」与共测基线、决策门等内容均保持概念建议表述，未新增任何结论性数字。
+- **生成器与自检**：图件/PDF 由确定性脚本（regen_youth_figures.py，文末注明脚本位于临时工作区、仅输出到本包内）生成；生成期文本包围盒 QC 与 ink/clip 实测记录见本条目；figure_qc 机器证据持久化于 self_check.json（ink+edge-clip 实测，overlap_clear=not_verified，文本重叠以生成期 bbox QC 覆盖并记录）。
+- **校验复跑**：四门禁全部 PASS（validate_local_submission / spatial_review / visual_review / professional_review，exit=0；spatial 仅保留既有 minor KEY_AREA_PROVISIONAL×3）；score_rubric 97.0/100（无 mandatory_rejections、无 reviewer_gaps）；embed_fonts + check_font_coverage → ALL_FONTS_OK；manifest 哈希与 self_check.json（formal-review-ready，含 figure_qc）持久化。
+
 ## v0.4.0 - 2026-08-25（Round 4 修复）
 
 - 图件可读性深度修复（CocoSgt 表达完整度 3/5 逐项）：land-use-structure（中英）重绘，英文标题不再被画布边缘裁切，中英页脚/免责声明不再重叠越界，标题带、口径说明卡、复算触发与 PROVISIONAL 印章均置于安全边距内；mobility-bluegreen（中英）横向说明改为面板内逐行预换行排版，消除两侧截断，2 km 等距示意圆与非等时圈限制、步速假设、检索日（2026-08-25）无路网级数据、官方数据发布后重算等警示在常规缩放下完整可读；site-overview（中英）节点标签改为白底边框+引出线双侧错位布置，消除与线形叠压，并补齐图例、比例尺、指北针、三层范围（43.6 km²/11.4 km²/368.4 ha）与 provisional 印章。

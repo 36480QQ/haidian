@@ -27,6 +27,7 @@ This package's binding narrative is proposal.md (Chinese, proposal_format_versio
 | 19 | Figures 6-10 | 创新生态图谱/品牌识别/地标组件库/场景卡/运营流程（对应章节） | ecosystem atlas/brand identity/landmarks & components/scenario cards/operation flow (corresponding chapters) | equivalent |
 | 20 | Drawings | a3-booklet.pdf / a0-boards.pdf（zh）与 a3-booklet.en.pdf / a0-boards.en.pdf（en）同图位对应 | a3-booklet.en.pdf / a0-boards.en.pdf mirror the Chinese boards page by page | equivalent |
 | 21 | Visual index | visual/index.html 与 visual/index.en.html 结构和图位一致 | visual/index.en.html mirrors visual/index.html structure | equivalent |
+| 22 | Land-use single caliber | 用地结构为单一口径（land_use.geojson 十类图斑面积占比，EPSG:4548；正文表、land-use-structure 中英图、metrics.json 的 land_use_share_*、两版 HTML 与两版 PDF 同一数值；公园绿地约21%不再与其他口径混用；green_ratio/public_space_ratio 为另一几何口径，对象不同） | land-use structure uses one single caliber (area share of the ten land_use classes, EPSG:4548; identical in the proposal table, land-use-structure zh/en figures, the land_use_share_* metrics, both HTML pages and both PDFs; parks & green about 21% is no longer mixed with any other caliber; green_ratio/public_space_ratio are a different geometry scope with different objects) | equivalent |
 
 ## Verification note
 

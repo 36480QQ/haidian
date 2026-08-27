@@ -90,7 +90,7 @@
    "ai_package_stages": {
     "submissions/JohnXu22786/youth-innovation-community": "formal"
    },
-   "total_bytes": 13271008,
+   "total_bytes": 12040004,
    "maintainer_bypass": false
   },
   "stderr": ""
@@ -167,7 +167,7 @@
    "summary": {
     "standard_matrix_items": 5,
     "design_depth_items": 15,
-    "known_metric_refs_required": 17,
+    "known_metric_refs_required": 27,
     "proposal_format_version": "2",
     "evidence_contract": "section-anchors-plus-structured-audit",
     "proposal_reference_counts": {
@@ -225,79 +225,79 @@
   }
  ],
  "figure_qc": {
-  "ok": false,
+  "ok": true,
   "ink_ok": true,
-  "clip_clear": false,
+  "clip_clear": true,
   "overlap_clear": "not_verified",
   "summary": "ink+edge-clip machine check only; text-overlap not machine-verified post-hoc (figure generation text-bbox checks recorded in changelog)",
   "figures": {
    "brand-identity.png": {
-    "width": 1560,
-    "height": 1118,
-    "ink": 0.1962,
-    "edge_clip_ratio": 0.3903,
-    "edge_clip_clear": false
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.1405,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "innovation-ecosystem.png": {
-    "width": 1560,
-    "height": 1040,
-    "ink": 0.1412,
-    "edge_clip_ratio": 0.4878,
-    "edge_clip_clear": false
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.5321,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "key-areas.png": {
-    "width": 1560,
-    "height": 1092,
-    "ink": 0.1397,
-    "edge_clip_ratio": 0.9756,
-    "edge_clip_clear": false
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.2637,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "land-use-structure.png": {
     "width": 1800,
     "height": 1200,
-    "ink": 0.1711,
+    "ink": 0.1229,
     "edge_clip_ratio": 0.0,
     "edge_clip_clear": true
    },
    "metrics-evidence.png": {
-    "width": 2106,
-    "height": 871,
-    "ink": 0.2178,
-    "edge_clip_ratio": 0.9763,
-    "edge_clip_clear": false
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.1104,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "mobility-bluegreen.png": {
     "width": 1800,
     "height": 1200,
-    "ink": 0.1176,
+    "ink": 0.1342,
     "edge_clip_ratio": 0.0,
     "edge_clip_clear": true
    },
    "node-components.png": {
-    "width": 1612,
-    "height": 988,
-    "ink": 0.1522,
-    "edge_clip_ratio": 0.4882,
-    "edge_clip_clear": false
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.3329,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "operation-flow.png": {
-    "width": 1612,
-    "height": 884,
-    "ink": 0.1405,
-    "edge_clip_ratio": 0.5859,
-    "edge_clip_clear": false
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.327,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "scenario-cards.png": {
-    "width": 1612,
-    "height": 1118,
-    "ink": 0.1412,
-    "edge_clip_ratio": 0.3906,
-    "edge_clip_clear": false
+    "width": 1800,
+    "height": 1200,
+    "ink": 0.2762,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
    },
    "site-overview.png": {
     "width": 1800,
     "height": 1200,
-    "ink": 0.1102,
+    "ink": 0.4191,
     "edge_clip_ratio": 0.0,
     "edge_clip_clear": true
    }
