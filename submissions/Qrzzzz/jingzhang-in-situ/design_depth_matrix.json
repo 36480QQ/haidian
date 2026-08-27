@@ -179,7 +179,260 @@
       "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518", "CASE-AMSTERDAM-MARINETERREIN"],
       "assumption_ids": ["A-OPS-001", "A-CONTROLS-001", "A-REGION-001", "A-RIGHTS-001"],
       "self_check_ids": ["PROFESSIONAL_EVIDENCE"],
-      "evidence_summary_zh": "T06 列出 IM01-IM13，覆盖资料基线、横断面调查、治理协议、三类TVS、三区服务、三地标、组件库、文化导视、贡献谱、年度运营、区域接口和全量重算；每行包含责任、依赖、成本级别、维护、评价、人工接管和退出。"
+      "evidence_summary_zh": "T06 只承担 AP1-AP7 的前台聚合与 Gate 导航；IM01-IM13 的逐项责任、依赖、定性成本、证据、维护、评价、人工接管及停止/退出字段，以本对象 implementation_projects 数组为机器审计权威层。",
+      "implementation_backend_path": "design_depth_matrix.json#/items/11/implementation_projects",
+      "implementation_backend_contract": "phase1-audit-repair-v1",
+      "implementation_project_count": 13,
+      "qualitative_cost_legend": {
+        "S": {
+          "zh": "研究、内容、协调或轻量组件",
+          "en": "research, content, coordination, or lightweight components"
+        },
+        "M": {
+          "zh": "需要场地运营、可逆适配或持续人员",
+          "en": "site operations, reversible adaptation, or sustained staffing"
+        },
+        "L": {
+          "zh": "仅在正式资料和工程深化后讨论",
+          "en": "discussion only after official data and engineering deepening"
+        }
+      },
+      "implementation_projects": [
+        {
+          "implementation_id": "IM01",
+          "action_package_id": "AP1",
+          "title_zh": "正式边界与资料基线",
+          "title_en": "Official Geometry and Data Baseline",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": [],
+          "responsible_roles": {"zh": ["数据管理角色", "持证专业团队"], "en": ["data-steward role", "licensed professional team"]},
+          "dependencies": {"zh": ["正式附件", "权威版本登记"], "en": ["official attachments", "authoritative-version register"]},
+          "qualitative_cost": {"classes": ["S"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["版本台账", "差异记录", "重算范围"], "en": ["version register", "difference record", "recomputation scope"]},
+            "maintenance": {"zh": "每次来源更新即复核。", "en": "Recheck on every source update."},
+            "evaluation": {"zh": ["权威顺序一致性", "重算范围完整性"], "en": ["authority-order consistency", "recomputation-scope completeness"]}
+          },
+          "human_takeover": {"zh": "来源冲突交由数据管理角色与持证专业团队判定。", "en": "Source conflicts return to the data steward and licensed professional team."},
+          "stop_exit": {"zh": "来源冲突即冻结派生指标。", "en": "Freeze derived metrics when sources conflict."}
+        },
+        {
+          "implementation_id": "IM02",
+          "action_package_id": "AP2",
+          "title_zh": "十二横断面现场审计",
+          "title_en": "Field Audit of Twelve Cross-Sections",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": ["SC08"],
+          "responsible_roles": {"zh": ["城市设计", "交通", "无障碍", "社区共设计"], "en": ["urban design", "transport", "accessibility", "community co-design"]},
+          "dependencies": {"zh": ["调查许可", "现场安全安排"], "en": ["survey permission", "field-safety arrangements"]},
+          "qualitative_cost": {"classes": ["M"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["断点台账", "共设计反馈", "调查版本"], "en": ["barrier register", "co-design feedback", "survey version"]},
+            "maintenance": {"zh": "建议 4-8 周首轮并做季节复查。", "en": "A suggested 4-8-week first pass plus seasonal review."},
+            "evaluation": {"zh": ["横断面覆盖", "调查质量", "无障碍连续性"], "en": ["cross-section coverage", "survey quality", "accessible continuity"]}
+          },
+          "human_takeover": {"zh": "交通、无障碍与社区共设计人员共同确认断点和替代路线。", "en": "Transport, accessibility, and community co-design roles confirm barriers and fallback routes."},
+          "stop_exit": {"zh": "无许可或质量不足时只保留待调查清单。", "en": "Keep only a pending-survey list when permission or quality is insufficient."}
+        },
+        {
+          "implementation_id": "IM03",
+          "action_package_id": "AP2",
+          "title_zh": "状态、人工接管与申诉协议",
+          "title_en": "Status, Human Takeover, and Appeal Protocol",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": ["SC08", "SC12"],
+          "responsible_roles": {"zh": ["运营", "伦理", "法务", "无障碍"], "en": ["operations", "ethics", "legal", "accessibility"]},
+          "dependencies": {"zh": ["责任清单", "申诉入口", "停止权限"], "en": ["responsibility list", "appeal channel", "stop authority"]},
+          "qualitative_cost": {"classes": ["S"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["接管日志", "投诉台账", "协议修订记录"], "en": ["takeover log", "complaint register", "protocol revision record"]},
+            "maintenance": {"zh": "每个场景进入前测试并按季度复盘。", "en": "Test before scenario entry and review quarterly."},
+            "evaluation": {"zh": ["人工接管可达性", "投诉闭环", "高风险误答处置"], "en": ["human-takeover reachability", "complaint closure", "high-risk answer handling"]}
+          },
+          "human_takeover": {"zh": "责任角色接管服务、记录申诉并提供低技术替代。", "en": "The accountable role takes over service, records the appeal, and provides a low-tech fallback."},
+          "stop_exit": {"zh": "高风险误答或投诉无法闭环即停服。", "en": "Stop service when a high-risk error or complaint cannot be closed."}
+        },
+        {
+          "implementation_id": "IM04",
+          "action_package_id": "AP3",
+          "title_zh": "众智园三类产业验证场景",
+          "title_en": "Three Zhongzhiyuan Industry-Validation Scenarios",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": ["SC01", "SC02", "SC03", "SC04"],
+          "responsible_roles": {"zh": ["测试运营", "安全", "设施"], "en": ["test operations", "safety", "facilities"]},
+          "dependencies": {"zh": ["权属条件", "消防条件", "能源条件", "测试协议"], "en": ["ownership conditions", "fire conditions", "energy conditions", "test protocol"]},
+          "qualitative_cost": {"classes": ["M"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["异常记录", "放行记录", "停止记录"], "en": ["anomaly record", "release record", "stop record"]},
+            "maintenance": {"zh": "仅在有期限的受控测试窗口内逐次维护。", "en": "Maintain per run within a time-limited controlled-test window."},
+            "evaluation": {"zh": ["专业 Gate 完整性", "异常闭环", "停止可执行性"], "en": ["professional-gate completeness", "anomaly closure", "stop executability"]}
+          },
+          "human_takeover": {"zh": "安全或设施角色拒绝放行、隔离设备或结束测试。", "en": "Safety or facility roles refuse release, isolate equipment, or end the test."},
+          "stop_exit": {"zh": "专业条件或责任角色缺失即停止。", "en": "Stop when professional conditions or an accountable role are missing."}
+        },
+        {
+          "implementation_id": "IM05",
+          "action_package_id": "AP4",
+          "title_zh": "AI 原点成果匹配与共享中试",
+          "title_en": "AI Origin Matching and Shared Pilots",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": ["SC05", "SC06", "SC07"],
+          "responsible_roles": {"zh": ["研究转化", "设施", "人才服务", "人工顾问"], "en": ["research translation", "facilities", "talent services", "human adviser"]},
+          "dependencies": {"zh": ["数据用途许可", "设施条件", "人工顾问在场"], "en": ["data-use permission", "facility conditions", "human adviser present"]},
+          "qualitative_cost": {"classes": ["M"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["匹配记录", "拒绝记录", "纠错记录"], "en": ["matching record", "refusal record", "correction record"]},
+            "maintenance": {"zh": "建议 8-12 周服务原型并持续核验设施与权限。", "en": "A suggested 8-12-week service prototype with continuing facility and permission checks."},
+            "evaluation": {"zh": ["同意与拒绝", "误配与纠错", "数据泄露事件"], "en": ["consent and refusal", "mismatch and correction", "data-leak incidents"]}
+          },
+          "human_takeover": {"zh": "人工顾问决定引荐、纠错或退回非 AI 服务。", "en": "A human adviser decides referral, correction, or reversion to a non-AI service."},
+          "stop_exit": {"zh": "泄露、持续误配或设施条件不明即回退人工。", "en": "Revert to humans for leakage, persistent mismatch, or unknown facility conditions."}
+        },
+        {
+          "implementation_id": "IM06",
+          "action_package_id": "AP5",
+          "title_zh": "大钟寺产品试用与城市窗口",
+          "title_en": "Dazhongsi Product Trials and Urban Window",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": ["SC09", "SC10", "SC11"],
+          "responsible_roles": {"zh": ["公共运营", "消费者权益", "文化", "现场主持"], "en": ["public operations", "consumer rights", "culture", "on-site host"]},
+          "dependencies": {"zh": ["场地许可", "产品许可", "投诉与撤场许可"], "en": ["site permission", "product permission", "complaint and removal authority"]},
+          "qualitative_cost": {"classes": ["M"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["试用退出记录", "投诉记录", "撤场记录"], "en": ["trial-exit record", "complaint record", "removal record"]},
+            "maintenance": {"zh": "限时轮换并逐场维护。", "en": "Use time-limited rotations with per-event maintenance."},
+            "evaluation": {"zh": ["自愿退出", "投诉闭环", "权利与误导风险"], "en": ["voluntary exit", "complaint closure", "rights and misleading-marketing risk"]}
+          },
+          "human_takeover": {"zh": "现场主持人随时停止 AI 展示、转人工说明并启动投诉流程。", "en": "The on-site host can stop the AI display, switch to a human explanation, and open the complaint process."},
+          "stop_exit": {"zh": "安全、权利、误导营销或投诉闭环失败即撤场。", "en": "Withdraw for safety, rights, misleading marketing, or failed complaint closure."}
+        },
+        {
+          "implementation_id": "IM07",
+          "action_package_id": "AP6",
+          "title_zh": "三处公共地标原型",
+          "title_en": "Three Public-Landmark Prototypes",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": [],
+          "responsible_roles": {"zh": ["城市设计", "文化", "无障碍", "运营"], "en": ["urban design", "culture", "accessibility", "operations"]},
+          "dependencies": {"zh": ["权属确认", "文保、生态、交通和结构专业条件"], "en": ["ownership confirmation", "heritage, ecology, traffic, and structural conditions"]},
+          "qualitative_cost": {"classes": ["M", "L"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["纸面/临时原型", "公众理解记录", "维护审查"], "en": ["paper/temporary prototype", "public-understanding record", "maintenance review"]},
+            "maintenance": {"zh": "纸面或临时原型先行，进入前复核专业条件。", "en": "Start with paper or temporary prototypes and recheck professional conditions before entry."},
+            "evaluation": {"zh": ["可理解性", "无障碍", "维护责任"], "en": ["legibility", "accessibility", "maintenance accountability"]}
+          },
+          "human_takeover": {"zh": "专业团队或运营角色可拒绝落地并保留纸面方案。", "en": "Professional or operating roles can refuse implementation and keep the proposal on paper."},
+          "stop_exit": {"zh": "文保、生态、交通、结构或权属不满足即不落地。", "en": "Do not implement when heritage, ecology, traffic, structure, or ownership conditions fail."}
+        },
+        {
+          "implementation_id": "IM08",
+          "action_package_id": "AP6",
+          "title_zh": "公共空间组件库",
+          "title_en": "Public-Space Component Library",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": ["SC12"],
+          "responsible_roles": {"zh": ["设计", "维护", "无障碍", "信息治理"], "en": ["design", "maintenance", "accessibility", "information governance"]},
+          "dependencies": {"zh": ["场地核验", "维护责任", "安全与无障碍复核"], "en": ["site verification", "maintenance responsibility", "safety and accessibility review"]},
+          "qualitative_cost": {"classes": ["M"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["故障记录", "使用反馈", "撤除记录"], "en": ["failure record", "use feedback", "removal record"]},
+            "maintenance": {"zh": "小批量可逆试装并按月检查。", "en": "Use a small reversible installation and inspect monthly."},
+            "evaluation": {"zh": ["安全通行", "可达性", "故障与维护响应"], "en": ["safe passage", "accessibility", "failure and maintenance response"]}
+          },
+          "human_takeover": {"zh": "维护或无障碍角色关闭信息功能并改用人工/静态组件。", "en": "Maintenance or accessibility roles disable information functions and use human/static components."},
+          "stop_exit": {"zh": "无维护主体、妨碍安全或不可达即撤除。", "en": "Remove when no maintainer exists, safety is obstructed, or accessibility fails."}
+        },
+        {
+          "implementation_id": "IM09",
+          "action_package_id": "AP6",
+          "title_zh": "文化导视与国际传播",
+          "title_en": "Cultural Wayfinding and International Communication",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": [],
+          "responsible_roles": {"zh": ["历史", "翻译", "版权", "无障碍"], "en": ["history", "translation", "rights", "accessibility"]},
+          "dependencies": {"zh": ["来源可追溯", "内容清权", "双语人工复核"], "en": ["traceable sources", "content clearance", "manual bilingual review"]},
+          "qualitative_cost": {"classes": ["S", "M"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["来源台账", "译文对照", "更正与下架记录"], "en": ["source register", "translation comparison", "correction and takedown record"]},
+            "maintenance": {"zh": "内容先审后展并按季度纠错。", "en": "Review before display and correct quarterly."},
+            "evaluation": {"zh": ["史实准确", "翻译等义", "权利与可达性"], "en": ["historical accuracy", "translation equivalence", "rights and accessibility"]}
+          },
+          "human_takeover": {"zh": "历史、翻译或版权角色人工复核并替换争议内容。", "en": "History, translation, or rights roles manually review and replace disputed content."},
+          "stop_exit": {"zh": "史实争议、翻译误导或权利撤回即下架。", "en": "Remove disputed history, misleading translation, or withdrawn rights."}
+        },
+        {
+          "implementation_id": "IM10",
+          "action_package_id": "AP6",
+          "title_zh": "京张开放贡献谱",
+          "title_en": "Jing-Zhang Open Contribution Ledger",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": [],
+          "responsible_roles": {"zh": ["社区运营", "版权", "数据治理"], "en": ["community operations", "rights", "data governance"]},
+          "dependencies": {"zh": ["贡献者同意", "证据记录", "纠错与撤回入口"], "en": ["contributor consent", "evidence record", "correction and withdrawal channel"]},
+          "qualitative_cost": {"classes": ["S"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["贡献证据", "同意记录", "状态与撤回记录"], "en": ["contribution evidence", "consent record", "status and withdrawal record"]},
+            "maintenance": {"zh": "持续维护并每半年复核。", "en": "Maintain continuously and review semiannually."},
+            "evaluation": {"zh": ["证据完整", "同意有效", "纠错与撤回可达"], "en": ["evidence completeness", "valid consent", "reachable correction and withdrawal"]}
+          },
+          "human_takeover": {"zh": "社区运营与数据治理角色处理纠错、状态变更和撤回。", "en": "Community operations and data-governance roles handle corrections, status changes, and withdrawal."},
+          "stop_exit": {"zh": "无证据、无同意或不可纠错的记录即移除。", "en": "Remove records without evidence, consent, or correction access."}
+        },
+        {
+          "implementation_id": "IM11",
+          "action_package_id": "AP7",
+          "title_zh": "年度活动与开发者社区",
+          "title_en": "Annual Programme and Developer Community",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": [],
+          "responsible_roles": {"zh": ["社区", "场景", "安全", "传播"], "en": ["community", "scenario operations", "safety", "communications"]},
+          "dependencies": {"zh": ["逐项活动许可", "责任人", "资源与风险 Gate"], "en": ["permission per event", "accountable owner", "resource and risk gate"]},
+          "qualitative_cost": {"classes": ["S", "M"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["逐项批准记录", "参与与后续记录", "取消记录"], "en": ["item-level approval record", "participation and follow-up record", "cancellation record"]},
+            "maintenance": {"zh": "按候选年历逐项申请、复核和批准。", "en": "Apply, review, and approve item by item against the candidate calendar."},
+            "evaluation": {"zh": ["许可状态", "责任与资源", "风险 Gate"], "en": ["permission status", "responsibility and resources", "risk gate"]}
+          },
+          "human_takeover": {"zh": "活动责任人可取消 AI 环节、切换人工流程或取消活动。", "en": "The event owner can cancel the AI element, switch to a human process, or cancel the event."},
+          "stop_exit": {"zh": "无责任人、资源或风险 Gate 不通过即取消。", "en": "Cancel when responsibility, resources, or a risk gate are missing."}
+        },
+        {
+          "implementation_id": "IM12",
+          "action_package_id": "AP7",
+          "title_zh": "外部区域候选协同接口",
+          "title_en": "Candidate External Collaboration Interfaces",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": [],
+          "responsible_roles": {"zh": ["项目联络", "研究", "专业团队"], "en": ["project liaison", "research", "professional team"]},
+          "dependencies": {"zh": ["机构授权", "事实依据", "非约束议题清单"], "en": ["institutional authorization", "factual basis", "non-binding issue list"]},
+          "qualitative_cost": {"classes": ["S"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["授权记录", "议题与接口台账", "对外措辞复核"], "en": ["authorization record", "issue and interface register", "external-wording review"]},
+            "maintenance": {"zh": "先维护非约束议题清单；每次授权变化即复核。", "en": "Maintain a non-binding issue list first and recheck whenever authorization changes."},
+            "evaluation": {"zh": ["授权有效性", "事实可追溯", "合作措辞边界"], "en": ["authorization validity", "factual traceability", "partnership-wording boundary"]}
+          },
+          "human_takeover": {"zh": "项目联络人与机构授权角色人工确认每个对外接口。", "en": "Project liaisons and authorized institutional roles manually confirm every external interface."},
+          "stop_exit": {"zh": "无授权或事实依据不得公开称合作。", "en": "Do not call it a partnership without authority or evidence."}
+        },
+        {
+          "implementation_id": "IM13",
+          "action_package_id": "AP1",
+          "title_zh": "正式资料到位后的全量重算",
+          "title_en": "Full Recomputation after Official Data",
+          "concept_status": "conceptual_recommendation",
+          "scenario_refs": [],
+          "responsible_roles": {"zh": ["数据", "规划", "交通", "市政", "图纸团队"], "en": ["data", "planning", "transport", "municipal", "drawing teams"]},
+          "dependencies": {"zh": ["权威资料版本", "替换范围清单", "复算责任人"], "en": ["authoritative data version", "replacement-scope list", "recomputation owner"]},
+          "qualitative_cost": {"classes": ["M"], "not_an_investment_estimate": true},
+          "evidence_maintenance_evaluation": {
+            "evidence": {"zh": ["新旧差异", "输入与输出哈希", "九类图层及全部载体重算清单"], "en": ["old/new differences", "input and output hashes", "recomputation list for nine layers and all carriers"]},
+            "maintenance": {"zh": "每次权威资料变化触发同批重算。", "en": "Trigger one-batch recomputation on every authoritative change."},
+            "evaluation": {"zh": ["跨载体一致性", "差异闭环", "旧指标撤回"], "en": ["cross-carrier consistency", "difference closure", "withdrawal of stale metrics"]}
+          },
+          "human_takeover": {"zh": "各专业责任人复核替换范围并决定重新发布。", "en": "Accountable professionals review the replacement scope and decide republication."},
+          "stop_exit": {"zh": "新旧版本不一致时暂停发布旧指标。", "en": "Suspend publication of old metrics when versions conflict."}
+        }
+      ]
     },
     {
       "item_id": "phasing_implementation",

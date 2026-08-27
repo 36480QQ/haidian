@@ -99,15 +99,17 @@ All three prototypes use one space–scenario–human–evidence–withdrawal re
 
 ### Zhongzhiyuan AI Independent Innovation Acceleration Area
 
-The “riverfront validation interface” uses an evidence court, reversible display gallery, and controlled yard for flagship SC01 and supporting SC02–SC04. It makes protocols, status, and failures public. Rights, river constraints, energy, fire, and access await verification.[data:geometry/key_areas.geojson#PROV-KEY-001]
+The “riverfront validation interface” uses an evidence court, reversible display gallery, and controlled yard for flagship SC01 and supporting SC02, SC03, and SC04. It makes protocols, status, and failures public. Rights, river constraints, energy, fire, and access await verification.[data:geometry/key_areas.geojson#PROV-KEY-001]
 
 ### Beijing AI Origin Community
 
-The “open ground-floor campus” links flagship SC05 with supporting SC06, SC07, and SC12. A human adviser makes every referral; property rights, fire, operation, and accessibility gate entry.[data:geometry/key_areas.geojson#PROV-KEY-002]
+The “open ground-floor campus” links flagship SC05 with supporting SC06 and SC07. A human adviser makes every referral; property rights, fire, operation, and accessibility gate entry.[data:geometry/key_areas.geojson#PROV-KEY-002]
 
 ### Dazhongsi AI Industry Cluster
 
-The “four-quadrant station-city commons” hosts flagship SC10 and supporting SC08, SC09, and SC11. Ground-level continuity and human service come first. No underground connection, leasing, or building intervention is promised.[data:geometry/key_areas.geojson#PROV-KEY-003]
+The “four-quadrant station-city commons” hosts flagship SC10 and supporting SC09 and SC11. Ground-level continuity and human service come first. No underground connection, leasing, or building intervention is promised.[data:geometry/key_areas.geojson#PROV-KEY-003]
+
+Canonical ownership is frozen by enumerated ID: Zhongzhiyuan has SC01, SC02, SC03, and SC04; AI Origin has SC05, SC06, and SC07; Dazhongsi has SC09, SC10, and SC11. SC08 is cross-area accessibility support for the whole in-situ spine, while SC12 is public-service and human-transfer support shared by all three prototypes; neither belongs to a contiguous numbered area.
 
 ![F03 Differentiated Prototypes and Three Landmarks](assets/figures/key-areas.en.png)
 
@@ -138,15 +140,17 @@ The three flagships carry different responsibilities. **SC01 Model Evaluation Sa
 | Flagship SC01 | Zhongzhiyuan; U1/U2/U3 | Evaluation; cleared benchmark, synthetic data, logs | Safety release; offline script; incident log | Protocol/exception/takeover; unresolved issue stops |
 | Flagship SC05 | AI Origin; U1/U2/U3 | Matching; voluntary summaries, public needs | Adviser decides; booking ledger; correction | Consent/refusal/mismatch; leak stops |
 | Flagship SC10 | Dazhongsi; U2/U3/U4/U7 | Trial; cleared notice, voluntary feedback | Host; paper feedback; complaint | Exit/complaint; dispute removes |
-| Support SC02/SC03/SC04 | Zhongzhiyuan/Xiaoyue; U1/U2/U3/U6/U7 | Thermal safety, accessibility co-test, standards; permitted data | Experts/safety host/facilitator; meter, escort, issue wall | Threshold, near miss, rights, or no maintainer stops |
-| Support SC06/SC07/SC12 | AI Origin/three zones; U1–U7 | Scheduling, life guide, public FAQ; public/voluntary minima | Administrator/service staff; sheet, map, counter | Conflict, discrimination, expiry, risky error downgrades |
-| Support SC08/SC09/SC11 | Spine/Dazhongsi; U4–U7 | Route, interchange, co-reading; verified routes/transit/archives | Service point/on-site/history review; paper/static/audio-text | Route, emergency, fact, or rights issue hides/closes |
+| Support SC02/SC03/SC04 | Zhongzhiyuan; U1/U2/U3/U6/U7 | Thermal safety, accessibility co-test, standards; permitted data | Experts/safety host/facilitator; meter, escort, issue wall | Threshold, near miss, rights, or no maintainer stops |
+| Support SC06/SC07 | AI Origin; U1/U2/U3/U4 | Scheduling and life guide; public/voluntary minima | Administrator/service staff; sheet, map, counter | Conflict, discrimination, or expiry downgrades |
+| Support SC09/SC11 | Dazhongsi; U4/U6/U7 | Interchange and co-reading; verified transit and cleared archives | On-site/history review; static map and audio-text | Emergency, factual, or rights dispute hides/closes |
+| Cross-area support SC08 | In-situ spine; U4/U6/U7 | Accessible route; field-verified path | Service point; paper map and human escort | Unknown route risk or unreachable human help closes |
+| Cross-area support SC12 | All three prototypes; U4/U5/U6/U7 | Public FAQ with source and date | Service role; counter and human transfer | Expiry or risky error without transfer downgrades |
 
 The backend boundaries remain explicit. **SC02** reads only cleared device telemetry and isolates for exceeded professional thresholds or incomplete logs. **SC03** collects voluntary tasks and environmental state, never an identity profile, and stops after a near miss or without a safety host. **SC04** summarizes only public standards, issues, and objections; a facilitator verifies each item, and misattribution, rights problems, or no maintainer takes it down.
 
-**SC06** handles public time slots, equipment labels, and application state, returning to a manual sheet when permissions conflict. **SC07** uses public service information and active choices, pausing for stale, discriminatory, or unmaintained results. **SC12** cites dated public FAQs, never final legal, medical, or fire advice, and downgrades when sources or human transfer fail.
+**SC06** handles public time slots, equipment labels, and application state, returning to a manual sheet when permissions conflict. **SC07** uses public service information and active choices, pausing for stale, discriminatory, or unmaintained results.
 
-**SC08** requires a field accessibility audit and never continuously tracks identity. **SC09** explains verified public transport information and switches to a static map during emergencies or data error. **SC11** uses cleared archives and consented oral material, hiding disputed or withdrawn material. These nine are protection layers for the flagships and spine, not a decorative list.
+**SC09** explains verified public transport information and switches to a static map during emergencies or data error. **SC11** uses cleared archives and consented oral material, hiding disputed or withdrawn material. Cross-area **SC08** requires a field accessibility audit and never continuously tracks identity; unknown route risk or unreachable human help closes it. All-prototypes **SC12** cites dated public FAQs, never final legal, medical, or fire advice, and downgrades when sources or human transfer fail. These nine support scenarios protect the flagships and the whole spine.
 
 F08 indexes the 3+9 portfolio without changing SC01–SC12.[data:geometry/public_space.geojson#PUBLIC-001]
 
@@ -212,16 +216,16 @@ Scenario access follows open challenge→permission and data/ethics/accessibilit
 
 ### Project implementation table
 
-The front stage shows seven packages; the backend preserves the role, dependency, cost class, evidence, and stop action for every IM01–IM13. S/M/L mean research/coordination, reversible operations, and work requiring engineering development—not investment estimates.[depth:renewal_project_list]
+The front stage shows seven packages. Thirteen per-IM machine objects live at `design_depth_matrix.json#/items/11/implementation_projects`, each preserving responsible roles, dependencies, qualitative cost, evidence, maintenance, evaluation, Human Takeover, and stop/exit. S/M/L mean research/coordination, reversible operations, and work requiring engineering development—not investment estimates.[depth:renewal_project_list]
 
 | T06 package | Backend IDs | Front-stage action | Gate / withdrawal |
 | --- | --- | --- | --- |
 | AP1 Evidence baseline and recalculation | IM01+IM13 | Lock authority, differences, hashes | Source conflict freezes derived metrics |
-| AP2 Cross-sections and responsibility protocol | IM02+IM03 | Survey CX01–12; define human, appeal, stop | No permit or owner means no entry |
-| AP3 Zhongzhiyuan prototype | IM04 | Controlled SC01–04 validation | Professional or safety failure stops |
-| AP4 AI Origin prototype | IM05 | SC05/06/07/12 matching and service | Leak, mismatch, unclear facility returns to human |
-| AP5 Dazhongsi prototype | IM06 | SC10 flagship plus SC08/09/11 supports | Rights, safety, or complaint failure removes |
-| AP6 Public interface and identity | IM07–IM10 | Landmarks, components, wayfinding, ledger | Rights, maintenance, fact, or consent failure removes |
+| AP2 Cross-sections and responsibility protocol | IM02+IM03 | Survey CX01–12; safeguard cross-area SC08; define human, appeal, stop | No permit or owner means no entry |
+| AP3 Zhongzhiyuan prototype | IM04 | Controlled SC01/02/03/04 validation | Professional or safety failure stops |
+| AP4 AI Origin prototype | IM05 | SC05/06/07 matching and service | Leak, mismatch, unclear facility returns to human |
+| AP5 Dazhongsi prototype | IM06 | SC09/10/11 arrival, trial, and culture | Rights, safety, or complaint failure removes |
+| AP6 Public interface and identity | IM07–IM10 | Landmarks, components, wayfinding, ledger, and all-prototypes SC12 | Rights, maintenance, fact, or consent failure removes |
 | AP7 Operation and collaboration | IM11–IM12 | Candidate annual activity and external issues | No permit/authorization means no operation/partnership claim |
 
 The **single first-use trial** binds existing **SC10 + IM06**. It starts only when product, site, staff, consumer-rights, accessibility, complaint, and removal permissions are documented. The responsible operator sets a written time limit; expiry defaults to removal and evidence archiving. A host may switch to human service at any time; safety, rights, misleading marketing, or failed complaint closure ends the trial immediately. It is neither SC13 nor IM14 and claims no measured performance.
@@ -247,7 +251,7 @@ F05 shows evidence authority and recalculation. The three matrices preserve deta
 9. **One first-use trial:** existing SC10+IM06 runs within a written window, then withdraws; T06/F08/F11; no new SC or IM.
 10. **Seven packages/audit:** AP1–AP7 cover IM01–IM13 and anchor 6 agents/31 outputs; T06/F05/F11 and matrices; completeness means submission evidence only.
 
-The human-readable 31-output route is six lines: agent.1 narrative/name/logo/structure/compliance (T01/F01/F06); agent.2 cases/ecosystem/industry-space/metrics-sources/index (T02/F05/F07); agent.3 personas/scenarios/space-operation/privacy-human boundary/index (T03/T04/F08); agent.4 public space/landmarks/contribution/components/index (F03/F04/F09); agent.5 culture/wayfinding/storyline/international copy/index (F10); agent.6 annual events/brand IP/developer and scenario operation/conversion/index (T05/F06/F11). The machine layer retains every original output key.
+The human-readable 31-output route is six lines: agent.1 narrative / name / logo / structure / compliance (T01 / F01 / F06); agent.2 cases / ecosystem / industry-space / metrics-sources / index (T02 / F05 / F07); agent.3 personas / scenarios / space-operation / privacy-human boundary / index (T03 / T04 / F08); agent.4 public space / landmarks / contribution / components / index (F03 / F04 / F09); agent.5 culture / wayfinding / storyline / international copy / index (F10); agent.6 annual events / brand IP / developer and scenario operation / conversion / index (T05 / F06 / F11). The machine layer retains every original output key.
 
 | T07 manual bilingual review | Finding |
 | --- | --- |

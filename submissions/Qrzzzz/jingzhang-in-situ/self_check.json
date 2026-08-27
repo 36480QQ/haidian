@@ -81,7 +81,7 @@
       "ai_package_stages": {
         "submissions/Qrzzzz/jingzhang-in-situ": "formal"
       },
-      "total_bytes": 11020240,
+      "total_bytes": 11099713,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -211,6 +211,23 @@
       "severity": "blocking",
       "target": "professional_review.py",
       "message": "professional_review: PASS"
+    },
+    {
+      "check_id": "PACKAGE_PAYLOAD_SIZE",
+      "result": "pass",
+      "severity": "info",
+      "target": "submission payload excluding manifest.json and self_check.json",
+      "message": "final_payload_bytes=11076078 across payload_file_count=56",
+      "measurement": {
+        "definition": "recursive regular files under the submission directory",
+        "excluded": [
+          "manifest.json",
+          "self_check.json"
+        ],
+        "measurement_point": "after final bilingual/PDF regeneration and content repair, before the recursive manifest/self-check envelopes",
+        "payload_file_count": 56,
+        "final_payload_bytes": 11076078
+      }
     }
   ]
 }

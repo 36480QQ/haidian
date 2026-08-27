@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v0.4 - 2026-08-27
+
+### Phase 1 audit repair
+
+- Restored IM01–IM13 as thirteen bilingual machine-readable professional objects in `design_depth_matrix.json`, with responsible roles, dependencies, qualitative cost, evidence, maintenance, evaluation, Human Takeover, and stop/exit fields; T06 remains a seven-package front-stage index.
+- Froze canonical scenario ownership as Zhongzhiyuan SC01/02/03/04, AI Origin SC05/06/07, Dazhongsi SC09/10/11, cross-area spine support SC08, and all-prototypes cross-area support SC12; removed misleading contiguous ranges from navigation.
+- Persisted two reproducible Chinese-compression methods with base/head proposal blob SHAs and deleted the unsupported 21.94% measure.
+- Regenerated bilingual F03, HTML, and A3/A0 outputs; documented the pinned Pillow/ReportLab/fontTools/Brotli chain and the pixel-reproducible, non-bit-identical PDF metadata boundary.
+- Reconciled the package-size audit to one final payload definition and reran all current upstream gates without adding site data, IDs, projects, components, or official claims.
+
 ## v0.3 - 2026-08-27
 
 ### Phase 1 current-rule sync, thesis compression, and review navigation

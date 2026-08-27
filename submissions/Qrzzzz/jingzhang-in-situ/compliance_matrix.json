@@ -191,7 +191,7 @@
       "geojson_layers": ["geometry/key_areas.geojson", "geometry/public_space.geojson", "geometry/green_space.geojson"],
       "metrics": ["key_area_count", "green_ratio"],
       "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
-      "visual_sections": ["F03 众智园河岸验证界面", "SC01-SC04", "清河验证庭"],
+      "visual_sections": ["F03 众智园河岸验证界面", "SC01 / SC02 / SC03 / SC04", "清河验证庭"],
       "source_ids": ["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509", "DATA-SRC-AGENT-TASKBOOK-20260518", "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"],
       "assumption_ids": ["A-GEOM-001", "A-CONTROLS-001", "A-OPS-001"],
       "self_check_ids": ["SPATIAL_REVIEW", "PROFESSIONAL_EVIDENCE"]
@@ -204,7 +204,7 @@
       "geojson_layers": ["geometry/key_areas.geojson", "geometry/land_use.geojson", "geometry/public_space.geojson"],
       "metrics": ["key_area_count", "public_space_ratio"],
       "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
-      "visual_sections": ["F03 AI原点开放首层校园", "SC05-SC07", "原点发布台"],
+      "visual_sections": ["F03 AI原点开放首层校园", "SC05 / SC06 / SC07", "原点发布台"],
       "source_ids": ["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509", "DATA-SRC-AGENT-TASKBOOK-20260518", "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"],
       "assumption_ids": ["A-GEOM-001", "A-CONTROLS-001", "A-OPS-001"],
       "self_check_ids": ["SPATIAL_REVIEW", "PROFESSIONAL_EVIDENCE"]
@@ -217,7 +217,7 @@
       "geojson_layers": ["geometry/key_areas.geojson", "geometry/roads.geojson", "geometry/public_space.geojson"],
       "metrics": ["key_area_count", "public_space_ratio"],
       "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
-      "visual_sections": ["F03 大钟寺站城四象限客厅", "SC09-SC12", "大钟寺城市窗口"],
+      "visual_sections": ["F03 大钟寺站城四象限客厅", "SC09 / SC10 / SC11", "大钟寺城市窗口"],
       "source_ids": ["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509", "DATA-SRC-AGENT-TASKBOOK-20260518", "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"],
       "assumption_ids": ["A-GEOM-001", "A-CONTROLS-001", "A-OPS-001"],
       "self_check_ids": ["SPATIAL_REVIEW", "PROFESSIONAL_EVIDENCE"]
@@ -370,7 +370,7 @@
       {"id": "CL02", "claim_zh": "临时范围只支持生成与比较，正式资料触发整包重算。", "claim_en": "Provisional scope supports generation and comparison only; official inputs trigger package-wide recalculation.", "proposal_sections": ["设计依据与资料清单", "指标体系、面积复算与合规矩阵", "风险、版权与合规说明"], "figure_refs": ["F01", "F05"], "geometry_refs": ["geometry/site_boundary.geojson#SITE-001"], "metric_refs": ["site_area_sqm"], "source_ids": ["DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"], "limitation_zh": "不支持红线、权属、FAR、高度或工程判断。"},
       {"id": "CL03", "claim_zh": "遗址公园在场脊柱与 CX01—CX12 责任横断面共同发现日常断点。", "claim_en": "The heritage-park spine and CX01–CX12 responsibility cross-sections jointly find everyday breaks.", "proposal_sections": ["三层范围工作框架", "交通、轨道、市政与公共服务设施"], "figure_refs": ["F01", "F04"], "geometry_refs": ["geometry/roads.geojson#ROAD-001", "geometry/public_space.geojson#PUBLIC-001"], "limitation_zh": "横断面是候选调查单元，不是工程线位。"},
       {"id": "CL04", "claim_zh": "众智园验证、AI 原点转译、大钟寺公共试用形成三处差异化在场原型。", "claim_en": "Zhongzhiyuan validates, AI Origin translates, and Dazhongsi hosts public trials as differentiated prototypes.", "proposal_sections": ["重点区域详细设计"], "figure_refs": ["F03", "F09"], "geometry_refs": ["geometry/key_areas.geojson#PROV-KEY-001", "geometry/key_areas.geojson#PROV-KEY-002", "geometry/key_areas.geojson#PROV-KEY-003"], "metric_refs": ["key_area_count"], "limitation_zh": "三块边界均为 provisional。"},
-      {"id": "CL05", "claim_zh": "SC01、SC05、SC10 是三旗舰，其余九项作为支持场景完整覆盖。", "claim_en": "SC01, SC05, and SC10 are flagships; the other nine remain fully covered supporting scenarios.", "proposal_sections": ["AI 创新生态、人才画像与 AI+ 场景"], "table_refs": ["T04"], "figure_refs": ["F08"], "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"], "limitation_zh": "分组只改变前台层级，不改变 SC01—SC12。"},
+      {"id": "CL05", "claim_zh": "SC01、SC05、SC10 是三旗舰；众智园归属 SC01/02/03/04，AI 原点归属 SC05/06/07，大钟寺归属 SC09/10/11，SC08 支撑整条脊柱，SC12 跨三原型支撑。", "claim_en": "SC01, SC05, and SC10 are flagships; Zhongzhiyuan owns SC01/02/03/04, AI Origin owns SC05/06/07, Dazhongsi owns SC09/10/11, SC08 supports the spine, and SC12 supports all three prototypes.", "proposal_sections": ["AI 创新生态、人才画像与 AI+ 场景"], "table_refs": ["T04"], "figure_refs": ["F03", "F08"], "source_ids": ["DATA-SRC-AGENT-TASKBOOK-20260518"], "limitation_zh": "归属只冻结前台导航，不改变 SC01—SC12 的 ID 或概念状态。"},
       {"id": "CL06", "claim_zh": "十二场景共用最小数据、运营角色、人工、低技术、申诉、进入、评价和退出责任合同。", "claim_en": "All twelve scenarios share minimum-data, operator, human, low-tech, appeal, entry, evaluation, and exit fields.", "proposal_sections": ["AI 创新生态、人才画像与 AI+ 场景", "风险、版权与合规说明"], "table_refs": ["T03", "T04"], "figure_refs": ["F08"], "limitation_zh": "没有责任人或高风险问题不能闭环即不进入或停止。"},
       {"id": "CL07", "claim_zh": "八要素经研究、匹配、受控测试、公共共测和反馈形成有 Gate 的循环。", "claim_en": "Eight elements form a gated research, matching, controlled-test, public-co-test, and feedback loop.", "proposal_sections": ["统筹研究范围产业与未来城市研究"], "table_refs": ["T02"], "figure_refs": ["F07"], "source_ids": ["CASE-SEOUL-AI-HUB-20250710", "CASE-SINGAPORE-ONE-NORTH-20230703", "CASE-AMSTERDAM-MARINETERREIN"], "limitation_zh": "案例仅支持背景机制，不支持本地数字或合作。"},
       {"id": "CL08", "claim_zh": "KEEP、OPEN、INTENSIFY 与公共首层、慢行、蓝绿情景构成可逆更新。", "claim_en": "KEEP, OPEN, INTENSIFY and public-ground-floor, mobility, and blue-green scenarios form reversible renewal.", "proposal_sections": ["总体设计范围城市更新与控规深度城市设计", "用地、建筑规模与拆改留方案", "交通、轨道、市政与公共服务设施", "蓝绿空间、公共空间与城市风貌"], "figure_refs": ["F02", "F04", "F05"], "geometry_refs": ["geometry/land_use.geojson#LU-001", "geometry/land_use.geojson#LU-002", "geometry/land_use.geojson#LU-003", "geometry/land_use.geojson#LU-004", "geometry/buildings.geojson#BLDG-001", "geometry/green_space.geojson#GREEN-001"], "metric_refs": ["building_footprint_area_sqm", "green_ratio", "public_space_ratio"], "limitation_zh": "不补造 FAR、高度、密度、拆改留或红线。"},
@@ -386,22 +386,31 @@
       "supports": [
         {"scenario_id": "SC02", "supports": "SC01", "role": "能源与热安全"},
         {"scenario_id": "SC03", "supports": "SC01", "role": "无障碍与现场安全"},
-        {"scenario_id": "SC04", "supports": "SC01/SC05", "role": "公开标准共创"},
+        {"scenario_id": "SC04", "supports": "SC01", "canonical_scope": "zhongzhiyuan", "role": "公开标准共创"},
         {"scenario_id": "SC06", "supports": "SC05", "role": "共享设施排程"},
         {"scenario_id": "SC07", "supports": "SC05", "role": "人才生活服务"},
-        {"scenario_id": "SC08", "supports": "in_situ_spine", "role": "无障碍连续"},
+        {"scenario_id": "SC08", "supports": "in_situ_spine", "canonical_scope": "cross_area_spine_support", "role": "跨区无障碍连续"},
         {"scenario_id": "SC09", "supports": "SC10", "role": "站城到达"},
         {"scenario_id": "SC11", "supports": "SC10", "role": "文化记忆"},
-        {"scenario_id": "SC12", "supports": "all_prototypes", "role": "公共服务与人工转接"}
-      ]
+        {"scenario_id": "SC12", "supports": "all_prototypes", "canonical_scope": "cross_area_all_prototypes_support", "role": "跨区公共服务与人工转接"}
+      ],
+      "canonical_ownership": {
+        "zhongzhiyuan": ["SC01", "SC02", "SC03", "SC04"],
+        "beijing_ai_origin": ["SC05", "SC06", "SC07"],
+        "dazhongsi": ["SC09", "SC10", "SC11"],
+        "cross_area_spine_support": ["SC08"],
+        "cross_area_all_prototypes_support": ["SC12"],
+        "contract_note_zh": "SC08 与 SC12 不归入任一连续编号片区；所有载体必须逐 ID 列示。",
+        "contract_note_en": "SC08 and SC12 are not assigned to a contiguous numbered area; every carrier must enumerate IDs explicitly."
+      }
     },
     "action_packages": [
       {"package_id": "AP1", "title_zh": "证据基线与重算", "implementation_ids": ["IM01", "IM13"], "gate": "权威版本、差异和哈希可追溯", "withdrawal": "来源冲突即冻结派生指标"},
-      {"package_id": "AP2", "title_zh": "横断面与责任协议", "implementation_ids": ["IM02", "IM03"], "gate": "调查许可、责任角色、申诉和停止协议齐备", "withdrawal": "无许可或责任人即不进入"},
-      {"package_id": "AP3", "title_zh": "众智园原型", "implementation_ids": ["IM04"], "gate": "权属、消防、能源和测试协议齐备", "withdrawal": "专业条件或安全失败即停"},
-      {"package_id": "AP4", "title_zh": "AI 原点原型", "implementation_ids": ["IM05"], "gate": "数据许可、设施和人工顾问齐备", "withdrawal": "泄露、持续误配或设施不明即人工回退"},
-      {"package_id": "AP5", "title_zh": "大钟寺原型", "implementation_ids": ["IM06"], "gate": "场地、产品、人员、消费者权益、投诉和撤场许可齐备", "withdrawal": "权利、安全、误导或投诉闭环失败即撤场"},
-      {"package_id": "AP6", "title_zh": "公共界面与身份", "implementation_ids": ["IM07", "IM08", "IM09", "IM10"], "gate": "权属、维护、无障碍、史实和展示同意齐备", "withdrawal": "任一关键条件失败即移除、下架或撤回"},
+      {"package_id": "AP2", "title_zh": "横断面与责任协议", "implementation_ids": ["IM02", "IM03"], "scenario_scope": ["SC08"], "scenario_scope_note": "SC08 是脊柱跨区支持；IM03 的共用责任协议同时约束其他场景，但不改变归属。", "gate": "调查许可、责任角色、申诉和停止协议齐备", "withdrawal": "无许可或责任人即不进入"},
+      {"package_id": "AP3", "title_zh": "众智园原型", "implementation_ids": ["IM04"], "scenario_scope": ["SC01", "SC02", "SC03", "SC04"], "gate": "权属、消防、能源和测试协议齐备", "withdrawal": "专业条件或安全失败即停"},
+      {"package_id": "AP4", "title_zh": "AI 原点原型", "implementation_ids": ["IM05"], "scenario_scope": ["SC05", "SC06", "SC07"], "gate": "数据许可、设施和人工顾问齐备", "withdrawal": "泄露、持续误配或设施不明即人工回退"},
+      {"package_id": "AP5", "title_zh": "大钟寺原型", "implementation_ids": ["IM06"], "scenario_scope": ["SC09", "SC10", "SC11"], "gate": "场地、产品、人员、消费者权益、投诉和撤场许可齐备", "withdrawal": "权利、安全、误导或投诉闭环失败即撤场"},
+      {"package_id": "AP6", "title_zh": "公共界面与身份", "implementation_ids": ["IM07", "IM08", "IM09", "IM10"], "scenario_scope": ["SC12"], "scenario_scope_note": "SC12 只作为三原型共用服务与人工转接界面，不归属单一片区。", "gate": "权属、维护、无障碍、史实和展示同意齐备", "withdrawal": "任一关键条件失败即移除、下架或撤回"},
       {"package_id": "AP7", "title_zh": "运营与协同", "implementation_ids": ["IM11", "IM12"], "gate": "逐项活动许可、资源、责任与机构授权齐备", "withdrawal": "无许可或授权即取消，不称既有合作"}
     ],
     "first_use_trial": {
@@ -420,20 +429,59 @@
       "components": ["C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "C09"],
       "industrial_validation": ["TVS-1", "TVS-2", "TVS-3"],
       "implementation_items": [
-        {"id": "IM01", "package_id": "AP1", "title_zh": "正式边界与资料基线"},
-        {"id": "IM02", "package_id": "AP2", "title_zh": "十二横断面现场审计"},
-        {"id": "IM03", "package_id": "AP2", "title_zh": "状态、人工接管与申诉协议"},
-        {"id": "IM04", "package_id": "AP3", "title_zh": "众智园三类产业验证场景"},
-        {"id": "IM05", "package_id": "AP4", "title_zh": "AI 原点成果匹配与共享中试"},
-        {"id": "IM06", "package_id": "AP5", "title_zh": "大钟寺产品试用与城市窗口"},
-        {"id": "IM07", "package_id": "AP6", "title_zh": "三处公共地标原型"},
-        {"id": "IM08", "package_id": "AP6", "title_zh": "公共空间组件库"},
-        {"id": "IM09", "package_id": "AP6", "title_zh": "文化导视与国际传播"},
-        {"id": "IM10", "package_id": "AP6", "title_zh": "京张开放贡献谱"},
-        {"id": "IM11", "package_id": "AP7", "title_zh": "年度活动与开发者社区"},
-        {"id": "IM12", "package_id": "AP7", "title_zh": "外部区域候选协同接口"},
-        {"id": "IM13", "package_id": "AP1", "title_zh": "正式资料到位后的全量重算"}
-      ]
+        {"id": "IM01", "package_id": "AP1", "title_zh": "正式边界与资料基线", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/0"},
+        {"id": "IM02", "package_id": "AP2", "title_zh": "十二横断面现场审计", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/1"},
+        {"id": "IM03", "package_id": "AP2", "title_zh": "状态、人工接管与申诉协议", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/2"},
+        {"id": "IM04", "package_id": "AP3", "title_zh": "众智园三类产业验证场景", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/3"},
+        {"id": "IM05", "package_id": "AP4", "title_zh": "AI 原点成果匹配与共享中试", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/4"},
+        {"id": "IM06", "package_id": "AP5", "title_zh": "大钟寺产品试用与城市窗口", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/5"},
+        {"id": "IM07", "package_id": "AP6", "title_zh": "三处公共地标原型", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/6"},
+        {"id": "IM08", "package_id": "AP6", "title_zh": "公共空间组件库", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/7"},
+        {"id": "IM09", "package_id": "AP6", "title_zh": "文化导视与国际传播", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/8"},
+        {"id": "IM10", "package_id": "AP6", "title_zh": "京张开放贡献谱", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/9"},
+        {"id": "IM11", "package_id": "AP7", "title_zh": "年度活动与开发者社区", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/10"},
+        {"id": "IM12", "package_id": "AP7", "title_zh": "外部区域候选协同接口", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/11"},
+        {"id": "IM13", "package_id": "AP1", "title_zh": "正式资料到位后的全量重算", "backend_path": "design_depth_matrix.json#/items/11/implementation_projects/12"}
+      ],
+      "implementation_backend": {
+        "path": "design_depth_matrix.json#/items/11/implementation_projects",
+        "selector": "items[item_id=renewal_project_list].implementation_projects[implementation_id=IMxx]",
+        "count": 13,
+        "required_fields": ["responsible_roles", "dependencies", "qualitative_cost", "evidence_maintenance_evaluation.evidence", "evidence_maintenance_evaluation.maintenance", "evidence_maintenance_evaluation.evaluation", "human_takeover", "stop_exit"]
+      }
+    },
+    "compression_audit": {
+      "comparison_unit": "proposal.md Git blob content",
+      "encoding": "UTF-8",
+      "base_ref": "upstream/main",
+      "base_commit_sha1": "c44aa1054e471c46cca04753ac7ed018dae0666c",
+      "base_blob_sha1": "e03228ed0c29f56c569cd289408fd40cdfd98ebd",
+      "head_blob_sha1": "e7fccd5a3c0cec97587c8df042161c87f0cd3279",
+      "normalization": [
+        "Remove the opening YAML front matter from the first --- line through the next standalone --- line.",
+        "Remove every inline evidence marker matching \\[(source|standard|depth|data|metric):[^\\]]+\\].",
+        "Count Unicode Han characters matching [\\u3400-\\u4DBF\\u4E00-\\u9FFF]."
+      ],
+      "formula": "reduction_pct = round((base_count - head_count) / base_count * 100, 2)",
+      "methods": [
+        {
+          "method_id": "han_all_body",
+          "line_scope": "All normalized body lines, including headings, tables, and figure captions.",
+          "base_count": 7502,
+          "head_count": 6024,
+          "substitution": "round((7502 - 6024) / 7502 * 100, 2)",
+          "reduction_pct": 19.7
+        },
+        {
+          "method_id": "han_prose_lines",
+          "line_scope": "Normalized nonblank lines whose left-trimmed text does not begin with #, |, or !.",
+          "base_count": 5791,
+          "head_count": 4431,
+          "substitution": "round((5791 - 4431) / 5791 * 100, 2)",
+          "reduction_pct": 23.48
+        }
+      ],
+      "excluded_measure": "The former net_units/21.94% figure is not retained because its tokenization contract was not persisted."
     },
     "coverage_summary": {"core_claims": "10/10", "agents": "6/6", "required_outputs": "31/31", "scenarios": "3_flagships+9_supports", "implementation_mapping": "13/13_into_7_packages"}
   }
