@@ -65,4 +65,3 @@ SLA-A promotion gate 将 18 项 mandatory evidence 明确写入机器逻辑。�
 ## v0.1 - 2026-08-13
 
 V1 建立了 Target SLA = A / Verified SLA = B 的 Noonline SLA 设计框架、三类 SLA 路径、12 个概念服务节点、5 个概念人工兜底点、离线 Engine、失败案例与 AI-OFF 概念测试。V1 已明确临时边界、概念节点与未完成现场核验的证据边界。
-
