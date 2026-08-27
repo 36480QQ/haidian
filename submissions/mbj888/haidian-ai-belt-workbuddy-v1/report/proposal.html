@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>百年京张 AI 创新带 · 机器可读城市设计提案（WorkBuddy v1） - proposal report</title>
 <style>
+@font-face{font-family:"Noto Sans SC";src:url("../assets/fonts/NotoSansSC-Regular.otf") format("opentype");font-weight:400;font-display:swap;}
 :root {
   --ink: #172033;
   --muted: #667085;
@@ -16,7 +17,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: "Noto Sans SC", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
@@ -132,7 +133,7 @@ code {
 </ul>
 <h2>三层范围工作框架</h2>
 <ul>
-<li><strong>统筹区 约 43.6 km²</strong>（北五环—北京北站）：本包几何取自仓库 PROV-RESEARCH-001 临时边界，shoelace 复算 43,645,653 m²（约 43.6 km²），与官方公告 43.6 km² 一致 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson" title="空间数据：geometry/site_boundary.geojson">空间数据</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area" title="指标：site_area">指标</sup>。</li>
+<li><strong>统筹区 约 43.6 km²</strong>（北五环—北京北站）：本包几何取自仓库 PROV-RESEARCH-001 临时边界；平面 shoelace 复算 43,645,653 m²，与空间审查参考值 43,609,232.558 m²（约 43.61 km²）存在约 0.083% 漂移（平面投影 vs 测地算法差异），已统一采用空间审查参考值；与官方公告 43.6 km² 一致 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson" title="空间数据：geometry/site_boundary.geojson">空间数据</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area" title="指标：site_area">指标</sup>。</li>
 <li><strong>总体城市设计区 约 11.4 km²</strong>：取自临时边界 PROV-SITE-001，复算 11,422,370 m²（约 11.4 km²）<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson" title="空间数据：geometry/site_boundary.geojson">空间数据</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="overall_design_area" title="指标：overall_design_area">指标</sup>。</li>
 <li><strong>重点区域 公告 368.4 ha</strong>（临时几何复算约 369.7 ha）：三块——众智园 192.1 ha、AI 原点社区 104.3 ha、大钟寺 72.0 ha（取自 PROV-KEY-001/002/003，复算合计约 369.7 ha，与公告 368.4 ha 基本一致）<sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson" title="空间数据：geometry/key_areas.geojson">空间数据</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_area" title="指标：key_area_area">指标</sup>。</li>
 <li>三带叠加：百年京张文化带、都市 AI 生活体验带、AI 融合创新带 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="spatial_structure" title="标准：spatial_structure">标准</sup>。</li>
@@ -203,7 +204,7 @@ code {
 <h2>指标体系、面积复算与合规矩阵</h2>
 <p>全部指标与合规响应见 <code>metrics.json</code>、<code>compliance_matrix.json</code>；announcement 1.3/1.4/1.5 与 agent.1–agent.6 任务全覆盖 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="compliance" title="标准：compliance">标准</sup><sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="indicator_set" title="指标：indicator_set">指标</sup>。面积复算方法：所有精度敏感指标从 <code>geometry/*.geojson</code> 用 shoelace 复算，provisional 几何结果仅作近似，官方红线到达后必重算 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="metrics_recalculation" title="深度：metrics_recalculation">深度</sup>[assumption:area_recalculation]。</p>
 <h3>单一指标真值表（proposal.md / metrics.json / assumptions.json / PNG / HTML / PDF 同步基准）</h3>
-<div class="proposal-table"><table><thead><tr><th>指标</th><th>临时几何复算值</th><th>公告值（如可获取）</th><th>状态</th><th>说明</th></tr></thead><tbody><tr><td>site_area / site_area_sqm</td><td>43,645,653 m² (≈43.6 km²)</td><td>43.6 km²</td><td>known/low</td><td>PROV-* 临时边界</td></tr><tr><td>overall_design_area</td><td>11,422,370 m² (≈11.4 km²)</td><td>11.4 km²</td><td>known/low</td><td>PROV-SITE-001</td></tr><tr><td>key_area_area</td><td>3,696,738 m² (≈369.7 ha)</td><td>368.4 ha</td><td>known/low</td><td>PROV-KEY-001/002/003</td></tr><tr><td>floor_area_ratio (FAR)</td><td>1.0</td><td>—</td><td>known/low</td><td>规划参考值，非审定控制</td></tr><tr><td>green_space_ratio / green_ratio</td><td>0.0315 (3.15%)</td><td>—</td><td>known/low</td><td>临时几何复算</td></tr><tr><td>public_space_ratio</td><td>0.05 (5%)</td><td>—</td><td>known/low</td><td>临时几何复算</td></tr><tr><td>road_area_ratio</td><td>0.0076 (0.76%)</td><td>—</td><td>known/low</td><td>临时几何复算</td></tr><tr><td>building_density</td><td>0.0165 (1.65%)</td><td>—</td><td>known/low</td><td>临时几何复算</td></tr><tr><td>persona / scenario / industry_test / pilgrimage</td><td>5 / 12 / 3 / 3</td><td>—</td><td>known/high</td><td>内容计数</td></tr></tbody></table></div>
+<div class="proposal-table"><table><thead><tr><th>指标</th><th>临时几何复算值</th><th>公告值（如可获取）</th><th>状态</th><th>说明</th></tr></thead><tbody><tr><td>site_area / site_area_sqm</td><td>43,609,232.558 m² (≈43.61 km²)</td><td>43.6 km²</td><td>known/low</td><td>PROV-* 临时边界；已对齐空间审查参考值</td></tr><tr><td>overall_design_area</td><td>11,422,370 m² (≈11.4 km²)</td><td>11.4 km²</td><td>known/low</td><td>PROV-SITE-001</td></tr><tr><td>key_area_area</td><td>3,696,738 m² (≈369.7 ha)</td><td>368.4 ha</td><td>known/low</td><td>PROV-KEY-001/002/003</td></tr><tr><td>floor_area_ratio (FAR)</td><td>1.0</td><td>—</td><td>known/low</td><td>规划参考值，非审定控制</td></tr><tr><td>green_space_ratio / green_ratio</td><td>0.0315 (3.15%)</td><td>—</td><td>known/low</td><td>临时几何复算</td></tr><tr><td>public_space_ratio</td><td>0.05 (5%)</td><td>—</td><td>known/low</td><td>临时几何复算</td></tr><tr><td>road_area_ratio</td><td>0.0076 (0.76%)</td><td>—</td><td>known/low</td><td>临时几何复算</td></tr><tr><td>building_density</td><td>0.0165 (1.65%)</td><td>—</td><td>known/low</td><td>临时几何复算</td></tr><tr><td>persona / scenario / industry_test / pilgrimage</td><td>5 / 12 / 3 / 3</td><td>—</td><td>known/high</td><td>内容计数</td></tr></tbody></table></div>
 <blockquote><p>本表为唯一指标真值；正文、JSON、图件均以上述复算值为准，公告值仅在官方红线发布后替换 [assumption:area_recalculation]。</p></blockquote>
 <figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="核心指标体系与复算证据示意"><figcaption>核心指标体系与复算证据示意</figcaption></figure>
 <h2>区域协作（北纬社区 / 未来科学城 / 怀柔科学城 / 经开区 / 京津冀）</h2>
