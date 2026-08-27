@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JINGZHANG CAREWORKS: From Rail Care to City Care / 京张道班 - proposal report</title>
+<style>
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --line: #d7dee8;
+  --paper: #ffffff;
+  --bg: #f4f7fa;
+  --accent: #245b8f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+}
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 24px 72px;
+  background: var(--paper);
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px rgba(23, 32, 51, 0.05);
+}
+.hero {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
+h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
+h3 { font-size: 20px; margin: 26px 0 10px; }
+p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
+code {
+  background: #eef2f7;
+  color: #1d4f7a;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.summary { color: var(--muted); font-size: 17px; }
+.translation-link a { color: var(--accent); font-weight: 700; }
+.proposal-table { margin: 20px 0 26px; overflow-x: auto; }
+.proposal-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  font-size: 15px;
+}
+.proposal-table th, .proposal-table td {
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.proposal-table th { background: #eef2f7; color: var(--ink); font-weight: 700; }
+.proposal-table tbody tr:nth-child(even) { background: #fafcfe; }
+.proposal-table .align-center { text-align: center; }
+.proposal-table .align-right { text-align: right; }
+.proposal-figure {
+  margin: 22px 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.proposal-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.proposal-figure figcaption {
+  padding: 10px 14px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 0.12em;
+  border-bottom: 1px solid #8aa8c3;
+  color: #315f87;
+  font-size: 0.68em;
+  font-weight: 650;
+  line-height: 1.35;
+  vertical-align: super;
+}
+@media (max-width: 720px) {
+  main { padding: 26px 16px 52px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<h1>JINGZHANG CAREWORKS: From Rail Care to City Care / 京张道班</h1>
+<p class="summary">A measurable, stoppable and human-first public infrastructure for urban maintenance and care along the Centennial Jingzhang AI Belt.</p>
+<p class="translation-link"><a href="proposal.html">阅读中文版本</a></p>
+</section>
+<h1>Jingzhang Careworks: From Rail Care to City Care</h1>
+<blockquote><p>Railway reliability comes not only from trains and stations, but from people who inspect tracks, clear obstacles, refill supplies, replace parts and keep records every day. Jingzhang Careworks turns that maintenance ethic into public infrastructure for an AI innovation belt.</p></blockquote>
+<p>This proposal does not add another abstract “city operating system.” It creates a <strong>human-first urban reliability chain</strong>: the public and frontline workers can report a fault; AI may deduplicate tickets, flag anomalies and suggest rosters; an accountable operator verifies conditions, decides, acts and handles appeals. Every automated component has a baseline, measurement window, stop rule and usable offline path [requirement:agent.1] <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GENERATIVE-AI-MEASURES" title="Standard: GENERATIVE-AI-MEASURES">Standard</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/site-overview.en.png" alt="Site scope and three Careworks yards"><figcaption>Site scope and three Careworks yards</figcaption></figure>
+<h2>Design Basis and Source List</h2>
+<p>The official call states an approximately 43.6 km² coordinated research area, an 11.4 km² overall design area and three key areas totalling 368.4 ha. This package uses only the repository-provided provisional geometry for temporary placement and recalculation; it does not relabel those polygons as official <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="Source: OFFICIAL-ANNOUNCEMENT">Source</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-001" title="Spatial data: geometry/site_boundary.geojson#SITE-001">Spatial data</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="Metric: site_area_sqm">Metric</sup> [assumption:A-BOUNDARY-001]. The three provisional key-area rectangles remain unmoved and unedited <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-001" title="Spatial data: geometry/key_areas.geojson#PROV-KEY-001">Spatial data</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_count" title="Metric: key_area_count">Metric</sup>.</p>
+<p>The 1,668.2 ha approved district-level plan illustrated by an official account on 10 August 2026 is a different planning extent. It neither replaces the competition’s 11.4 km² extent nor supplies a coordinate polygon for this package <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-CONTROL-PLAN-20260810" title="Source: OFFICIAL-CONTROL-PLAN-20260810">Source</sup>. Textual heritage controls for former Tsinghuayuan Station are treated as a no-build review trigger; no “official” heritage polygon is invented <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="HERITAGE-STATION-CONTROL-20260214" title="Source: HERITAGE-STATION-CONTROL-20260214">Source</sup> [assumption:A-HERITAGE-001].</p>
+<h2>Three-Level Scope Framework</h2>
+<p>All three scales use an evidence-before-form method but answer different questions. The coordination scale covers industry, skills, supply chains and governance; the overall-design scale organises land use, public space, mobility, municipal services and phasing; the key-area scale contains only reversible pilots and conceptual envelopes. Every boundary or control value moving between scales retains a source and precision label. Graphic continuity never makes separate planning extents legally equivalent. When authoritative CAD/GIS becomes available, constraints must be locked, topology and metrics rerun, and the design retested before any implementation claim <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_level_scope_framework" title="Depth: three_level_scope_framework">Depth</sup> [assumption:A-BOUNDARY-001].</p>
+<p>The three-scale method is:</p>
+<p>1. <strong>43.6 km² coordination:</strong> align repair skills, suppliers, open testing and public data standards without drawing statutory controls. 2. <strong>11.4 km² overall design:</strong> use the heritage-park corridor as a Care Line linking repair desks, inspection routes, spare-parts points and accountable pilots. 3. <strong>368.4 ha key areas:</strong> propose a reliability test yard, community care yard and circular repair yard. Their envelopes are conceptual design layers only <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-CARE-01" title="Spatial data: geometry/buildings.geojson#BLDG-CARE-01">Spatial data</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_level_scope_framework" title="Depth: three_level_scope_framework">Depth</sup>.</p>
+<p>Official reports describe a roughly nine-kilometre continuous green corridor and a time-specific opening status in August 2026. Careworks therefore overlays maintenance and operations on public space rather than duplicating a new greenway; field verification remains mandatory <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PARK-PHASE2-20260730" title="Source: PARK-PHASE2-20260730">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PARK-OPEN-20260806" title="Source: PARK-OPEN-20260806">Source</sup> [assumption:A-SURVEY-001].</p>
+<h2>Coordinated Research Area: Industry and Future City Research</h2>
+<p>At the 43.6 km² coordination scale, urban reliability becomes a shared AI-industry challenge. The AI Origin Community supplies public problems and user feedback; Zhongzhiyuan tests the full stack from sensing, edge computing and models to robotics and audit tools; Dazhongsi supports spares, remanufacturing and service firms. The Zhongguancun Technology Service Wing links intellectual property, capital and international services, while the Xiaoyuehe Scenario Empowerment Wing provides continuous public settings. Together they form a loop of problem publication, enclosed evaluation, limited pilots, independent review and evidence-based pre-procurement rather than a one-way investment corridor [requirement:agent.1] [requirement:agent.2].</p>
+<p>The talent profile includes facility operators, repair workers, accessibility reviewers, caregivers and public-data auditors alongside AI engineers. The identity system draws on railway maintenance: signal yellow means pending attention, track green means service may continue, and repair red means stop and human takeover. The logo direction combines two parallel rail lines with an open repair bracket. An annual Urban Reliability Week, open failure review, developer repair challenge and public pilot hearing turn the proposal into a long-term community programme rather than a single exhibition [requirement:agent.5] [requirement:agent.6].</p>
+<div class="proposal-table"><table><thead><tr><th>Brief framework</th><th>Explicit Careworks translation</th></tr></thead><tbody><tr><td>Centennial Jingzhang cultural belt</td><td>Continue railway culture through daily maintenance, engineering duty and legible repair marks rather than nostalgic form.</td></tr><tr><td>Urban AI life experience belt</td><td>Make toilets, accessibility, heat care, night work and landscape uptime part of everyday experience.</td></tr><tr><td>AI-integrated innovation belt</td><td>Link problem lists, full-stack evaluation, 90-day pilots and evidence-based pre-procurement.</td></tr><tr><td>Full-stack independent AI innovation</td><td>Connect sensing, edge, models, robots, human takeover and audit tools through vendor-neutral interfaces.</td></tr><tr><td>World-class AI innovation ecosystem</td><td>Let universities, firms, operators, repairers and the public define and verify real faults together.</td></tr><tr><td>New AI+ scenario paradigm</td><td>Require minimum data, human approval and stop rules across ten shifts.</td></tr><tr><td>Intelligent and vibrant AI city</td><td>Measure vitality through continuous public-service availability, night care and net labour time.</td></tr><tr><td>Global voice in AI governance</td><td>Publish service cards, failures, human edits, appeals and exit records.</td></tr></tbody></table></div>
+<div class="proposal-table"><table><thead><tr><th>Three Areas and Two Wings</th><th>Role in the reliability loop</th></tr></thead><tbody><tr><td>AI Origin Community</td><td>Publish public problems, co-define baselines and verify offline usability.</td></tr><tr><td>Zhongzhiyuan AI Acceleration Area</td><td>Run enclosed tests, full-stack evaluation, robot safety and governance tools.</td></tr><tr><td>Dazhongsi AI Industry Cluster</td><td>Support repair-native business, shared spares, remanufacturing and small firms.</td></tr><tr><td>Zhongguancun Technology Service Wing</td><td>Provide IP, capital, international standards and independent professional services.</td></tr><tr><td>Xiaoyuehe Scenario Empowerment Wing</td><td>Provide continuous public settings and cross-neighbourhood transfer tests.</td></tr></tbody></table></div>
+<ul>
+<li><strong>One Care Line:</strong> a conceptual service connection across walking, cycling, stations and communities; it is not a new road redline <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson#ROAD-001" title="Spatial data: geometry/roads.geojson#ROAD-001">Spatial data</sup>.</li>
+<li><strong>Three Careworks yards:</strong> reliability testing in Zhongzhiyuan, shared reporting and care in the AI Origin Community, and spares/circular repair in Dazhongsi. Envelopes are derived from provisional key areas and make no development claim <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-CARE-02" title="Spatial data: geometry/buildings.geojson#BLDG-CARE-02">Spatial data</sup> [assumption:A-CONTROLS-001].</li>
+<li><strong>Ten shifts:</strong> each public service states user, time, place, AI boundary, offline fallback, operator and metric. Face recognition and personal trajectory tracking are excluded by default.</li>
+</ul>
+<h2>Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design</h2>
+<p>At the 11.4 km² overall-design scale, the rule is “maintain before renewing.” Existing public space first receives an owner, inspection route, spare-parts path, accessibility continuity check and offline service route. Only then is physical alteration considered. Land and building layers provide four conceptual roles and three modest group envelopes; they do not convert provisional geometry into FAR, height or demolition decisions. Mobility geometry expresses service links only. Municipal design brings drainage, water, sanitation, lighting and facility state into one accountable ticket chain, while digital infrastructure remains lightweight, exportable, replaceable and operable offline [requirement:1.4.1] [requirement:1.4.2].</p>
+<p>Public value is measured by continuity, not added floor area: whether the corridor remains usable in rain, heat, darkness and network outage; whether toilets and water points have maintainers; whether workers can reject a poor suggestion; and whether closure reasons and expected repair times are visible. A renewal item reaches a 90-day pilot only after a 30-day baseline, professional safety review, named operating responsibility and exit path. Urban design, operations design and AI evaluation therefore share one evidence ledger [requirement:1.4.3] <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="overall_spatial_structure" title="Depth: overall_spatial_structure">Depth</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/land-use-structure.en.png" alt="Land use and reliability structure"><figcaption>Land use and reliability structure</figcaption></figure>
+<p>The four land-use partitions cover the submitted boundary without overlap: reliability R&amp;D, park/heat shelter, repair manufacturing, and community care <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="Spatial data: geometry/land_use.geojson#LU-001">Spatial data</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_area_sqm" title="Metric: land_use_area_sqm">Metric</sup> [review:self_check#LAND_USE_TOPOLOGY]. FAR, height, demolition, ownership and approved capacity remain <code>unknown</code> [assumption:A-CONTROLS-001] <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="development_intensity_controls" title="Depth: development_intensity_controls">Depth</sup>.</p>
+<h2>Detailed Design of Key Areas</h2>
+<h3>3.1 Zhongzhiyuan Reliability Test Yard</h3>
+<p>Independent innovation becomes a facility-reliability test programme: low-speed inspection, drainage anomaly detection, heat-shift recommendations and manual takeover in an enclosed segment. Reports include misses, false alerts, stops and net crew time, not just demonstrations [requirement:agent.2].</p>
+<h3>3.2 AI Origin Community Care Yard</h3>
+<p>Everyday services come first: public toilets, accessible continuity, drinking water, shade and night-worker rest. Reports can arrive offline, by phone or online; a worker confirms each consolidated ticket. A model cannot speak for residents or rank neighbourhoods and workers by complaint volume [requirement:agent.3] <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="ACCESSIBILITY-LAW" title="Standard: ACCESSIBILITY-LAW">Standard</sup>.</p>
+<h3>3.3 Dazhongsi Circular Repair Yard</h3>
+<p>The industrial cluster shifts from displaying AI to repairing faster and using equipment longer: shared civic spares, remanufacturing, small repair firms and a public reliability ledger. Humans approve all procurement and the recommender cannot lock in one supplier [requirement:agent.4].</p>
+<figure class="proposal-figure"><img src="../assets/figures/key-areas.en.png" alt="Different responsibilities across the three yards"><figcaption>Different responsibilities across the three yards</figcaption></figure>
+<h2>AI Innovation Ecosystem, Personas, and AI+ Scenarios</h2>
+<p>Five personas anchor the scenarios: older and disabled users; children and caregivers; night and outdoor workers; students, developers and small firms; and facility operators and repair crews. Each persona includes both service users and people who may maintain or verify the service, avoiding an undifferentiated “citizen” profile. Ten scenario cards span different times, places and connectivity conditions. AI is limited to deduplication, alerts, retrieval and suggestions. Face recognition, personal trajectory tracking, automated procurement, automated penalties and models speaking on behalf of residents are outside scope [requirement:agent.3] <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="ACCESSIBILITY-LAW" title="Standard: ACCESSIBILITY-LAW">Standard</sup>.</p>
+<div class="proposal-table"><table><thead><tr><th>Shift</th><th>Users and place</th><th>AI scope</th><th>Manual fallback</th><th>Primary metric</th></tr></thead><tbody><tr><td><strong>SC-01 Public Toilet Uptime Shift</strong></td><td>commuters, caregivers with children, older adults; AI Origin Community and park entrances</td><td>cluster supply, ponding and accessibility faults; cleaners confirm on site</td><td>paper rounds, phone dispatch and physical closure signs</td><td>open-hours availability, accessible-fixture uptime, p95 response time</td></tr><tr><td><strong>SC-02 Stormwater Clearance Shift</strong></td><td>walkers, cyclists and municipal crews; low points, underpasses and east-west crossings</td><td>pre-rain inspection suggestions; crews verify blockages and log clearance</td><td>fixed pre-rain checklist and direct observation</td><td>ponding duration, false-alert rate and human takeover rate</td></tr><tr><td><strong>SC-03 Heat Care Shift</strong></td><td>older adults, outdoor workers and children; green corridor, station approaches and community service points</td><td>staff hydration and shade points using public weather data, without face recognition</td><td>fixed hours, staff announcements and paper maps</td><td>shaded-seat availability and hydration-point downtime</td></tr><tr><td><strong>SC-04 Accessible Continuity Shift</strong></td><td>wheelchair users, people with visual impairments, families with strollers; ramps, tactile paths, crossings and station links</td><td>deduplicate obstruction reports and publish detours after staff verification</td><td>staff guidance, temporary ramps and hotline</td><td>continuous access hours, complaint closure and detour distance</td></tr><tr><td><strong>SC-05 Night Worker Rest Shift</strong></td><td>cleaning, security, delivery and repair workers; Dazhongsi interchange edges and 24-hour service nodes</td><td>publish seating, water, charging and toilet status without tracking individuals</td><td>fixed staff rota and mechanical keys</td><td>service downtime and overnight inspection workload</td></tr><tr><td><strong>SC-06 Landscape Care Shift</strong></td><td>park crews and nearby residents; selected sections of the nine-kilometre green corridor</td><td>suggest irrigation from soil and weather data; crews decide execution</td><td>manual soil checks and scheduled irrigation</td><td>water intensity, planting survival and recommendation rejection rate</td></tr><tr><td><strong>SC-07 Repair Library Shift</strong></td><td>students, residents and small businesses; campus-industry interfaces and underused community rooms</td><td>tool booking, repair knowledge search and staff safety review</td><td>offline ledger and in-person guidance</td><td>items repaired, reuse rate and safety incidents</td></tr><tr><td><strong>SC-08 Low-speed Robot Inspection Shift</strong></td><td>municipal workers and robotics teams; closed test segment in Zhongzhiyuan</td><td>robots capture facility condition only and stop on geofence breach, link loss or human approach</td><td>fully manual inspection</td><td>safety takeovers, missed-defect rate and net crew time saved</td></tr><tr><td><strong>SC-09 Civic Spares Shift</strong></td><td>operators, repair crews and small manufacturers; Dazhongsi repair manufacturing and circular-service cluster</td><td>suggest shared spares by fault type without automated procurement decisions</td><td>manual stock calls and multi-vendor quotes</td><td>parts-related downtime, inventory turns and remanufactured share</td></tr><tr><td><strong>SC-10 Public Reliability Ledger Shift</strong></td><td>public users, operators, auditors and developers; three Careworks yards and a static public board</td><td>publish aggregate faults, closure reasons and repair times, never personal traces</td><td>monthly staff bulletin and downloadable CSV</td><td>data completeness, appeal closure and repeat-fault rate</td></tr></tbody></table></div>
+<p>These are candidates for professional, operator and community selection, not committed projects. Each shift proceeds only after an owner, field baseline, data permission, labour review and safety assessment are in place [assumption:A-OPERATIONS-001] [requirement:agent.5].</p>
+<h3>Three 90-day test-and-validation pilots</h3>
+<h3>P-01 AI Origin Community: toilet and accessible-route continuity</h3>
+<ul>
+<li><strong>Proposed owner:</strong> Proposed owner: park or subdistrict facility operator, subject to review</li>
+<li><strong>Baseline:</strong> 14 days of manual rounds recording opening, faults and complaints</li>
+<li><strong>Measurement window:</strong> 90 days; first 30 days are shadow recommendations with no automated dispatch</li>
+<li><strong>Stop rule:</strong> pause if false dispatch exceeds 10% for two weeks or one severe accessible-detour error occurs</li>
+<li><strong>Manual fallback:</strong> return to fixed rounds, phone dispatch and physical signs</li>
+</ul>
+<h3>P-02 Zhongzhiyuan: stormwater, heat and low-speed inspection loop</h3>
+<ul>
+<li><strong>Proposed owner:</strong> Proposed owner: municipal or park crew with closed-track operator</li>
+<li><strong>Baseline:</strong> two rainfall events or 30 days of manual records, whichever comes first</li>
+<li><strong>Measurement window:</strong> 90 days, with robot operation restricted to an enclosed segment</li>
+<li><strong>Stop rule:</strong> stop on geofence breach, failure to halt on link loss or proximity, or one missed critical defect</li>
+<li><strong>Manual fallback:</strong> fully manual rounds with the paper pre-rain checklist retained</li>
+</ul>
+<h3>P-03 Dazhongsi: shared spares and circular repair</h3>
+<ul>
+<li><strong>Proposed owner:</strong> Proposed owner: pilot group of facility operators, repair firms and an independent audit representative</li>
+<li><strong>Baseline:</strong> 30 days recording parts-related downtime, quote requests and disposal routes</li>
+<li><strong>Measurement window:</strong> 90 days, recommendations only with human approval</li>
+<li><strong>Stop rule:</strong> stop if one supplier exceeds 60% without explanation or any unauthorised purchase occurs</li>
+<li><strong>Manual fallback:</strong> return to manual multi-vendor quotes and existing approval</li>
+</ul>
+<p>Each pilot follows <code>14/30-day baseline → 30-day shadow mode → 60-day limited operation → public review on day 90</code>. No improvement percentage is published without a baseline; no pilot starts without owner acceptance; manual service remains operational after a stop <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="pilot_evaluation_window_days" title="Metric: pilot_evaluation_window_days">Metric</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="ELDERLY-TECH-PLAN" title="Standard: ELDERLY-TECH-PLAN">Standard</sup>.</p>
+<figure class="proposal-figure"><img src="../assets/figures/mobility-bluegreen.en.png" alt="Mobility, blue-green systems and care shifts"><figcaption>Mobility, blue-green systems and care shifts</figcaption></figure>
+<h3>An AI ecosystem built around verified reliability</h3>
+<p>Careworks offers four repeatable tasks: an anonymised public problem list; enclosed or shadow evaluation with failure cases; a small pilot with explicit stop rules; and a portable evaluation kit with field dictionary, offline form, human workflow and model card. Universities, startups, community repairers and facility operators contribute research, products, situated knowledge and accountable decisions respectively [requirement:agent.1] [requirement:agent.6].</p>
+<p>Six international references contribute observable mechanisms only; their contexts and promotional outcomes are not imported as evidence of success:</p>
+<div class="proposal-table"><table><thead><tr><th>Global case</th><th>Observable mechanism</th><th>Careworks transfer</th></tr></thead><tbody><tr><td>NYC 311 Open Data</td><td>Public structured service-request fields and time series <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="GLOBAL-NYC-311" title="Source: GLOBAL-NYC-311">Source</sup></td><td>Shared fault taxonomy and aggregate reliability ledger, with no personal record imported.</td></tr><tr><td>Boston 311</td><td>Phone, web and mobile service routes in parallel <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="GLOBAL-BOSTON-311" title="Source: GLOBAL-BOSTON-311">Source</sup></td><td>Digital reporting remains alongside phone, paper and staffed desks.</td></tr><tr><td>Singapore OneService</td><td>A cross-municipal issue-routing entry point <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="GLOBAL-SINGAPORE-ONESERVICE" title="Source: GLOBAL-SINGAPORE-ONESERVICE">Source</sup></td><td>A model suggests routing; the accountable recipient confirms ownership.</td></tr><tr><td>Helsinki AI Register</td><td>Public descriptions of city AI systems <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="GLOBAL-HELSINKI-AI-REGISTER" title="Source: GLOBAL-HELSINKI-AI-REGISTER">Source</sup></td><td>Every pilot publishes purpose, data, owner, human intervention and exit card.</td></tr><tr><td>Amsterdam Algorithm Register</td><td>Disclosure of algorithm purpose, risk and contact routes <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="GLOBAL-AMSTERDAM-ALGORITHM-REGISTER" title="Source: GLOBAL-AMSTERDAM-ALGORITHM-REGISTER">Source</sup></td><td>Publish human edits, appeals and audit contact for each suggestion service.</td></tr><tr><td>Barcelona Decidim</td><td>Open-source participatory proposal and discussion workflow <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="GLOBAL-BARCELONA-DECIDIM" title="Source: GLOBAL-BARCELONA-DECIDIM">Source</sup></td><td>Portable pilot proposals, objections, public reviews and version records.</td></tr></tbody></table></div>
+<p>The cases are neither endorsements nor a procurement shortlist. Each mechanism first passes Chinese legal, Haidian operating, labour, accessibility and data-localisation review. A mechanism without an accountable owner and a working offline fallback does not enter a pilot.</p>
+<p>The three visitable landmarks are practical rather than monumental: a <strong>public fault ledger, enclosed reliability test bench and repair library</strong>. They display failure and repair instead of claiming “zero faults.”</p>
+<h2>Land Use, Building Scale, and Retain-Renovate-Demolish Strategy</h2>
+<p>Four land-use roles are partitioned from the same provisional site boundary with full coverage and no overlap. Code <code>0802</code> supports reliability R&amp;D and testing; <code>1401</code> supports park, shade and pre-rain clearance; <code>05</code> supports repair manufacturing, spares and circular service; and <code>0702</code> supports community care and public services. They are urban-design roles, not statutory land-use changes. The three building features are conceptual Careworks envelopes. Their recalculated footprint does not represent approved development capacity <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="Spatial data: geometry/land_use.geojson#LU-001">Spatial data</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="Metric: building_footprint_area_sqm">Metric</sup>.</p>
+<p>The retain-renovate-demolish sequence is deliberately conservative. Anything with heritage significance or uncertain coordinates is retained pending verification. Serviceable public space receives maintenance and micro-renewal first. Adaptation is discussed only after structural, fire, ownership, operations and lifecycle-carbon review. This package proposes no demolition. Official FAR, height, density, setback and title data are absent, so intensity remains <code>unknown</code> and is never inferred from conceptual envelopes [assumption:A-CONTROLS-001] <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="retain_renovate_demolish" title="Depth: retain_renovate_demolish">Depth</sup>.</p>
+<h2>Transport, Rail, Municipal Infrastructure, and Public Services</h2>
+<ul>
+<li>The shared maintenance/active-travel line is a service relationship, not a road or rail control line. Robots operate only inside approved enclosures <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson#ROAD-001" title="Spatial data: geometry/roads.geojson#ROAD-001">Spatial data</sup>.</li>
+<li>Tickets remain operable through paper, phone and local CSV. A network outage cannot close a toilet, accessible route, hydration point or emergency service. The public ledger excludes faces, personal trajectories, identity scores and raw complaint text <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="GENERATIVE-AI-MEASURES" title="Standard: GENERATIVE-AI-MEASURES">Standard</sup>.</li>
+</ul>
+<p>Rail and road references identify interchange and service interfaces only; they do not imply control lines. Municipal assets follow an asset ID, baseline, accountable operator, manual round, suggestion, action and verification sequence. Assets without a verified register cannot be connected directly to a model. Public-service points retain paper forms, phone access and physical signs during weak or lost connectivity. Low-speed robots never mix with open active travel: testing requires an enclosure, a human supervisor and a verified geofence <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="traffic_rail_slow_parking" title="Depth: traffic_rail_slow_parking">Depth</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="municipal_new_infrastructure" title="Depth: municipal_new_infrastructure">Depth</sup>.</p>
+<h2>Blue-Green Network, Public Space, and Urban Character</h2>
+<p>The green-space layer organises conceptual responsibility for shade, water, irrigation and pre-rain clearance. The public-space layer supports repair desks, accessible detours and night-worker rest. Both ratios describe submitted design layers only and are not cross-proposal benchmarks. Heat shifts check shade, seating, water and hours; stormwater shifts check low points, underpasses and east-west crossings. They may share manual rounds but never personal identity data <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_space_ratio" title="Metric: green_space_ratio">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="Metric: public_space_ratio">Metric</sup>.</p>
+<p>Urban character avoids a monument that competes with railway heritage. Maintenance becomes legible through replaceable signal-colour parts, dated repair marks, reused components and small work benches. Former Tsinghuayuan Station and track artefacts constrain the narrative; no new landmark is placed nearby before authoritative coordinates exist, and no official graphic is copied. The cultural synthesis is specific: Jingzhang contributes long-term engineering care, Zhongguancun contributes open evaluation and knowledge sharing, and AI culture contributes transparent, stoppable and auditable services <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PARK-PHASE1-20211014" title="Source: PARK-PHASE1-20211014">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="HERITAGE-STATION-CONTROL-20260214" title="Source: HERITAGE-STATION-CONTROL-20260214">Source</sup> [requirement:agent.5].</p>
+<h3>Users, labour and accountability</h3>
+<p>Five personas shape the system: older and disabled users; children and caregivers; night and outdoor workers; students, developers and small firms; and facility operators/repair crews. Every interface begins with the lowest-connectivity, lowest-digital-skill and minimum-data condition. Traditional and smart routes remain in parallel <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="ELDERLY-TECH-PLAN" title="Standard: ELDERLY-TECH-PLAN">Standard</sup>.</p>
+<p>The ledger has three views: the public sees aggregate availability and closure causes; operators see tickets and rosters; authorised auditors see recommendations, human decisions and edits. Workers may reject a suggestion and record why. Rejection rate calibrates the model; it is not a worker performance penalty.</p>
+<h2>Renewal Projects, Implementation Policy, and Phasing</h2>
+<ul>
+<li><strong>P0 / day 0-30:</strong> fieldwork, accessibility audit, labour interviews and facility/data inventory. No automation pilot if incomplete.</li>
+<li><strong>P1 / day 31-120:</strong> three 90-day pilots with the first 30 days in shadow mode and all dispatch approved by people.</li>
+<li><strong>P2 / month 4-12:</strong> independent review of safety, service, equity, labour and lifecycle cost; expand only evidence-backed shifts.</li>
+<li><strong>P3 / after month 12:</strong> statutory planning, budget, procurement and public-participation processes decide whether anything becomes permanent.</li>
+</ul>
+<p>CAPEX, OPEX, land availability and staffing are <code>unknown</code>; the proposal does not fabricate a total investment or payback period [assumption:A-COST-001]. Exit exports tickets in open formats, removes unnecessary personal data, preserves phone/paper service and takes away reversible equipment.</p>
+<h2>Metrics, Area Recalculation, and Compliance Matrix</h2>
+<figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.en.png" alt="Metrics, evidence and stop rules"><figcaption>Metrics, evidence and stop rules</figcaption></figure>
+<p>Spatial metrics are recalculated from submitted geometry in EPSG:4548 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="building_footprint_area_sqm" title="Metric: building_footprint_area_sqm">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="road_centerline_length_m" title="Metric: road_centerline_length_m">Metric</sup>. Service metrics include availability, response time, false alerts, human takeover, complaint closure, repeat faults and net labour time. Every improvement statement carries a baseline, sample window, missing-data note and stop-event count.</p>
+<h2>Risk, Copyright, and Compliance</h2>
+<p>The AI agent conducted no field survey, interview or equipment observation and does not speak for residents, workers or government [assumption:A-SURVEY-001]. Official boundaries, redlines, ownership, utilities, fire access, heritage coordinates, soil, hydrology, heat, footfall, asset registers, budget and operating agreements are missing. Planning, architecture, transport, municipal, landscape, heritage, accessibility, fire, data, procurement and labour professionals must review any next step <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="Depth: risk_missing_data">Depth</sup>.</p>
+<p>All text, geometry, figures, PDFs and offline HTML were generated for this submission. Government webpages are cited for facts only. No official infographic, rendering, press photo, commercial map or map tile was copied. See <code>report/copyright_statement.md</code>.</p>
+<h3>Deliverable index</h3>
+<ul>
+<li>Human-readable proposal: <code>proposal.md</code> / <code>proposal.en.md</code></li>
+<li>Reading pages: <code>report/proposal.html</code> / <code>report/proposal.en.html</code></li>
+<li>Interactive atlas: <code>visual/index.html</code> / <code>visual/index.en.html</code></li>
+<li>Five bilingual PNG figure pairs in <code>assets/figures/</code></li>
+<li>A3 booklet and A0 boards in both languages in <code>drawings/</code></li>
+<li>GeoJSON and recalculated metrics: <code>geometry/*.geojson</code>, <code>metrics.json</code></li>
+<li>Evidence matrices: <code>sources.json</code>, <code>compliance_matrix.json</code>, <code>standard_matrix.json</code>, <code>design_depth_matrix.json</code></li>
+</ul>
+<h2>References</h2>
+<p>1. Haidian Branch of the Beijing Municipal Commission of Planning and Natural Resources, official call, 9 May 2026 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="Source: OFFICIAL-ANNOUNCEMENT">Source</sup>. 2. Beijing Planning and Natural Resources, approved district-plan infographic, 10 August 2026 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-CONTROL-PLAN-20260810" title="Source: OFFICIAL-CONTROL-PLAN-20260810">Source</sup>. 3. Beijing Municipal Cultural Heritage Bureau, Tsinghuayuan Station controls, 14 February 2026 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="HERITAGE-STATION-CONTROL-20260214" title="Source: HERITAGE-STATION-CONTROL-20260214">Source</sup>. 4. Beijing Government Portal, Jingzhang Railway Heritage Park Phase I, 14 October 2021 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PARK-PHASE1-20211014" title="Source: PARK-PHASE1-20211014">Source</sup>. 5. Beijing Government Portal and Beijing Haidian, Phase II reports, July/August 2026 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PARK-PHASE2-20260730" title="Source: PARK-PHASE2-20260730">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PARK-OPEN-20260806" title="Source: PARK-OPEN-20260806">Source</sup>. 6. Law of the PRC on Building Accessible Environments <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="ACCESSIBILITY-LAW" title="Source: ACCESSIBILITY-LAW">Source</sup>. 7. Interim Measures for Generative AI Services <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="GENERATIVE-AI-MEASURES" title="Source: GENERATIVE-AI-MEASURES">Source</sup>. 8. National plan on difficulties older adults face with smart technologies <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="ELDERLY-TECH-PLAN" title="Source: ELDERLY-TECH-PLAN">Source</sup>.</p>
+</main>
+</body>
+</html>
