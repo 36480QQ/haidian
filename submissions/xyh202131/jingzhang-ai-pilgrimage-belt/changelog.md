@@ -1,3 +1,21 @@
+## v63.0 - 2026-08-27
+
+**一人一事一处：人本任务前台 / One Person, One Task, One Place**
+
+- 在 canonical `main` `e89d6b70b0448111641088c89bf33bca2068f801` 上确认前序 PR #4055 已合并、进入祖先链，同包开放 PR 为 0。开工前重读最新 README、Skill、任务书、来源登记和正式投稿指南，并复跑基线闸门。
+- 建立修复前 RED：既有普通生活图对“到达—理解—完成—纠正或撤回—离开”的显式命中为 0/0/1/0/4，visual 为 0/0/2/0/0。系统机制清楚，但普通人的完整任务不是唯一首答。
+- 在原路径重制中英普通生活旅程 SVG/PNG 与概念海报，使三处分别以工作人员验证旁路、社区纠正/撤回、通勤离场连续性回答同一五动作链；匿名站立与轮椅符号只是概念角色，不是真实人员、意见或无障碍结果。
+- 双语 proposal、report、visual 和四份 PDF 改为先回答“一人一事一处”，再展开空间裁决、三原型、四态和专业候选。visual 仍为六项导航、零 JavaScript、零远程依赖、无自动播放和静态回退。
+- A3 仍为 14+14 页，A0 仍为 8+8 页；44/44 页有可提取文本，双次新进程构建字节一致。四个最终 HTML 均加载包内 CJK 字体、缺字 0、外部资源 0、横向溢出 0。
+- 本轮无新媒体类型或路径；只重建既有海报，既有 MP4/VTT/文字稿及 54 秒编辑节奏未变。来源状态、geometry、`metrics.json`、12/8/3/36、G0/NO-GO、provisional、现实结果 0、专业接责 0 与独立现实复测 0 均未改变。
+
+- Confirmed on canonical `main` `e89d6b70b0448111641088c89bf33bca2068f801` that predecessor PR #4055 was merged and in the ancestry, with zero same-package open PRs. Re-read the latest README, skill, taskbook, source registry and formal guide before rerunning baseline gates.
+- Established reproducible RED evidence: explicit arrive-understand-complete-correct-or-withdraw-leave hits were 0/0/1/0/4 in the ordinary-life figure and 0/0/2/0/0 in the visual. The system was clear, but an ordinary person's complete task was not the unique first answer.
+- Rebuilt the paired ordinary-life SVG/PNG figures and existing poster in place. The three places now answer the same five-action chain through a staffed verification bypass, neighbourhood correction/withdrawal and commuter exit continuity. Anonymous standing and wheeled symbols are conceptual roles, not real people, feedback or accessibility results.
+- Reordered paired proposal, report, visual and four PDFs to answer one person-one task-one place before the ruling, prototypes, four states and handoff candidate. The visual retains six navigation items, zero JavaScript, zero remote dependencies, no autoplay and static fallback.
+- A3 remains 14+14 pages and A0 remains 8+8 pages; 44/44 pages expose extractable text and two fresh-process builds are byte-identical. All four final HTML surfaces load the package-local CJK font with zero missing glyphs, external resources or horizontal overflow.
+- No new media type or path was added; only the existing poster was rebuilt, while the MP4, VTT, transcript and 54-second editorial pacing remain unchanged. Source status, geometry, `metrics.json`, 12/8/3/36, G0/NO-GO, provisional status, zero real results, zero accepted professional duty and zero independent real-world retests remain unchanged.
+
 # 方案迭代记录 / Changelog
 
 ## v62.1 - 2026-08-27

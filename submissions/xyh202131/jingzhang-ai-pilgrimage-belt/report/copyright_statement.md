@@ -2,9 +2,9 @@
 
 ## 分层许可 / Component licences
 
-截至 2026-08-26，投稿方 `xyh202131` 将本包中其原创的文字、表格、图解、SVG、PNG 导出、编辑版式、自编 JSON 与概念 GeoJSON 转化按 **CC BY 4.0** 许可。署名：`Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`。许可全文：<https://creativecommons.org/licenses/by/4.0/>。
+截至 2026-08-27，投稿方 `xyh202131` 将本包中其原创的文字、表格、图解、SVG、PNG 导出、编辑版式、自编 JSON 与概念 GeoJSON 转化按 **CC BY 4.0** 许可。署名：`Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`。许可全文：<https://creativecommons.org/licenses/by/4.0/>。
 
-As of 2026-08-26, contributor `xyh202131` licenses contributor-owned text, tables, diagrams, SVG source, PNG exports, editorial layout, package-authored JSON and conceptual GeoJSON transformations under **CC BY 4.0**. Attribution: `Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`. Full terms: <https://creativecommons.org/licenses/by/4.0/>.
+As of 2026-08-27, contributor `xyh202131` licenses contributor-owned text, tables, diagrams, SVG source, PNG exports, editorial layout, package-authored JSON and conceptual GeoJSON transformations under **CC BY 4.0**. Attribution: `Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`. Full terms: <https://creativecommons.org/licenses/by/4.0/>.
 
 投稿方自编的回放与离线交互代码采用 **MIT License**：Copyright (c) 2026 xyh202131。任何获得本软件及相关文档副本的人，可不受限制地使用、复制、修改、合并、发布、分发、再许可和/或销售，但所有副本或实质部分须保留上述版权和许可声明。本软件按现状提供，不作任何明示或默示担保；作者或版权持有人不对因本软件或其使用产生的索赔、损害或其他责任负责。
 
@@ -26,6 +26,16 @@ Contributor-authored replay and offline interaction code is under the **MIT Lice
 
 **Current exact-package decision.** All 157/157 paths record author/rightsholder, source, applicable licence or handling, attribution, transformation, redistribution and exceptions. This exact version may be reviewed, displayed and redistributed under component-specific terms; no single package-wide licence exists. Independent legal advice, independent file-level legal audit and trademark review remain absent, but do not reverse the contributor's component-specific distribution grant for the current exact package. Future public installation, external brand release and professional implementation still require separate review, approval and contracts.
 
+## R63 人本出版更新 / R63 human-first publication update
+
+R63 仅在原路径重建投稿方原创的人本任务链图件、既有概念海报、双语离线页面和四份固定页出版物。图件与海报由本地确定性 SVG/Python/Pillow 流程产生；四份 PDF 使用已登记的 Noto Sans CJK SC OFL 字体源形成可见字形与语义子集。A3 仍为 14+14 页、A0 仍为 8+8 页，44/44 页可搜索/复制且两次新进程构建字节一致；不声明 tagged PDF/UA 或无障碍达标。
+
+R63 rebuilt only the contributor-authored human-task figures, existing conceptual poster, paired offline pages and four fixed-page publications in place. The figures and poster use deterministic local SVG/Python/Pillow methods; the four PDFs use the registered Noto Sans CJK SC OFL source for visible glyphs and a semantic subset. A3 remains 14+14 pages and A0 remains 8+8 pages; 44/44 pages are searchable/copyable and two fresh-process builds are byte-identical. Tagged PDF/UA or accessibility conformance is not claimed.
+
+本轮没有新增媒体路径或类型。既有 MP4、VTT、文字稿、八镜结构与 54 秒编辑节奏未改；只重建既有 `four-state-cover.webp`。匿名站立/轮椅符号是投稿方概念角色，不是现场照片、真实人员、居民意见、公众反馈、无障碍结果或已建成状态。
+
+No media path or type was added. The retained MP4, VTT, transcript, eight-shot sequence and 54-second editorial pacing are unchanged; only the existing `four-state-cover.webp` was rebuilt. Anonymous standing and wheeled symbols are contributor-authored conceptual roles, not site photographs, real people, resident views, public feedback, accessibility results or built conditions.
+
 ## 第59轮概念媒体方法 / Round 59 concept-media method
 
 - `four-state-cover.webp`、54 秒无声 H.264 视频、双语 VTT、双语文字稿和四态合同均为投稿方原创概念表达，采用 Python 3.14.7、Pillow 12.2.0、Chrome 151.0.7922.174、FFmpeg/FFprobe 6.1.1 与登记的 Noto Sans CJK SC 源字体在本地确定性生成；未访问网络、未调用模型 API、未下载或嵌入外部媒体，不含音乐、配音或音轨。Chrome SHA-256 为 `b6d40f55e48e61760335d18f46abcec929e1a11b8330e7f2b501037584af4aa4`；FFmpeg 为 `0c4760db80d73a6ddc05c828a20c1b51c84bf61f4fcecff17f759c3edab800fb`；FFprobe 为 `01b99c76134e5c7a6b3f40f1d6c1e50f1084d5d5d763dfec1fde66bb1b575346`。工具二进制与源 OTF 不随包分发，继续适用各自独立许可。
@@ -33,10 +43,10 @@ Contributor-authored replay and offline interaction code is under the **MIT Lice
 
 ## 真实性与排除 / Authenticity and exclusions
 
-- 本轮新增的确定性概念媒体不是模型生成的现场图像，也不冒充现场、居民意见、批准方案、无障碍结果、现实恢复时间或运营证据；54 秒仅为编辑播放节奏。
+- 当前确定性概念媒体不是模型生成的现场图像，也不冒充现场、居民意见、批准方案、无障碍结果、现实恢复时间或运营证据；54 秒仅为编辑播放节奏。
 - 许可不把临时几何升级为官方红线，也不证明现场踏勘、规划批准、工程可行性、无障碍达标、现实服务效果、责任接受、G1 或专业签署。
 - 独立法律意见、逐文件独立权利审计与商标检索仍未提供；许可声明不冒充上述专业结论。
 
-- The new deterministic concept media is not model-generated site imagery and is not presented as field evidence, resident opinion, approved design, accessibility result, real recovery duration or operational proof; 54 seconds is editorial pacing only.
+- The current deterministic concept media is not model-generated site imagery and is not presented as field evidence, resident opinion, approved design, accessibility result, real recovery duration or operational proof; 54 seconds is editorial pacing only.
 - These licences do not establish an official boundary, field survey, planning approval, engineering feasibility, accessibility compliance, real service result, accepted duty, G1 status or professional sign-off.
 - Independent legal advice, independent file-level rights audit and trademark search remain absent; this notice does not claim those professional conclusions.

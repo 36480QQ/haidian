@@ -251,5 +251,69 @@
       "license": "SIL-OFL-1.1"
     },
     "redistribution_boundary": "Chrome, FFmpeg, FFprobe and the source OTF are build tools and are not redistributed in this package; their licenses remain independent of contributor media licensing."
+  },
+  "round_63_provenance": {
+    "canonical_main_base_sha": "e89d6b70b0448111641088c89bf33bca2068f801",
+    "predecessor_pr": 4055,
+    "publication_revision": "63.0",
+    "scope": "Human-first task lens: foreground arrival, comprehension, completion, correction or withdrawal, and exit before exposing the Twin-Track system, without adding facts, media types, pages or maturity.",
+    "before_evidence": {
+      "ordinary_life_figure_action_mentions": {
+        "arrival": 0,
+        "comprehension": 0,
+        "completion": 1,
+        "correction_or_withdrawal": 0,
+        "exit": 4
+      },
+      "offline_visual_action_mentions": {
+        "arrival": 0,
+        "comprehension": 0,
+        "completion": 2,
+        "correction_or_withdrawal": 0,
+        "exit": 0
+      },
+      "editorial_finding": "The system was legible, but an ordinary person's complete task was not the unique first answer."
+    },
+    "after_evidence": {
+      "human_action_sequence": [
+        "arrive",
+        "understand",
+        "complete",
+        "correct_or_withdraw",
+        "leave"
+      ],
+      "paired_human_task_figure_files": 4,
+      "offline_visual_first_panel": "human_task",
+      "offline_visual_navigation_items": 6,
+      "offline_html_surfaces_checked": 4,
+      "offline_html_missing_glyph_count": 0,
+      "offline_html_external_resource_count": 0,
+      "pdf_pages_checked": 44,
+      "pdf_pages_with_extractable_text": 44,
+      "fresh_process_byte_identical_builds": 2
+    },
+    "final_pdf_sha256": {
+      "drawings/a3-booklet.pdf": "6a8f10e563b9d5b4718130396d0ef43d18d1e238be8753124144552bf3cae762",
+      "drawings/a3-booklet.en.pdf": "70988257788607b31ce77782e47b7d9d5cd19263cdd37d5edae6c743a84290a1",
+      "drawings/a0-boards.pdf": "f6f39836e00763e32c26de98408530307dbf673779895a07e6f38d9f7471aebe",
+      "drawings/a0-boards.en.pdf": "2c3e1c9f4afd9c74e0bfaf80c434b7ab1c2c822512c3a783d6416b0035275cfa"
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "metrics_json_frozen": true,
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36",
+      "a3_page_pair": "14 + 14",
+      "a0_page_pair": "8 + 8"
+    },
+    "new_media": false,
+    "poster_rebuilt_in_place": true,
+    "retained_video_caption_and_transcript_changed": false,
+    "cannot_prove": [
+      "that anonymous human symbols depict real people, residents, users or feedback",
+      "official boundary, exact site or approved design",
+      "field performance, accessibility result, staffing, schedule, budget or recovery duration",
+      "G1, authorization, approval or accepted professional duty",
+      "independent human bilingual confirmation, legal audit or trademark review"
+    ]
   }
 }

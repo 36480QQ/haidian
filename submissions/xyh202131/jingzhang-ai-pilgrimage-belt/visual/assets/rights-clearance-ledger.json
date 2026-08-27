@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "as_of": "2026-08-26",
+  "as_of": "2026-08-27",
   "status": "current_exact_package_cleared_for_repository_review_display_and_redistribution_under_component_specific_terms",
   "legal_opinion_provided": false,
   "independent_file_level_audit_completed": false,
@@ -9,8 +9,8 @@
   "contributor_file_inventory": "visual/assets/file-rights-inventory.json",
   "contributor_file_inventory_path_count": 157,
   "contributor_file_inventory_coverage_ratio": 1.0,
-  "summary_zh": "当前精确投稿包 157/157 个路径均已由投稿方完成作者/来源/许可/署名/变更/再分发和例外处置，可按组件条款用于仓库评审、展示与再分发；不存在单一整包许可。自有内容及第59轮确定性概念媒体为 CC BY 4.0，自有代码 MIT，OSM 衍生数据库 ODbL，HTML 字体子集及第60轮首次嵌入、由第62轮重建继续保留的 PDF 语义子集适用 Noto Sans CJK SC OFL，第三方内容仅引用，仓库临时输入不被重新许可。独立法律意见、独立逐文件审计和商标审查仍未提供。",
-  "summary_en": "All 157/157 paths in the current exact submission package have contributor decisions for authorship/source, licence, attribution, transformation, redistribution and exceptions. The package may be reviewed, displayed and redistributed under component-specific terms; there is no single package-wide licence. Contributor content and R59 deterministic concept media are CC BY 4.0, code is MIT, OSM-derived database content is ODbL, the HTML font subset and the PDF semantic subset first embedded in R60 and retained by the R62 rebuild are Noto Sans CJK SC under OFL, third-party works are citation-only, and repository provisional inputs are not relicensed. Independent legal advice, independent file-level audit and trademark review remain absent.",
+  "summary_zh": "当前精确投稿包 157/157 个路径均已由投稿方完成作者/来源/许可/署名/变更/再分发和例外处置，可按组件条款用于仓库评审、展示与再分发；不存在单一整包许可。自有内容及第59轮确定性概念媒体为 CC BY 4.0，自有代码 MIT，OSM 衍生数据库 ODbL，HTML 字体子集及第60轮首次嵌入、由第63轮人本重建继续保留的 PDF 语义子集适用 Noto Sans CJK SC OFL，第三方内容仅引用，仓库临时输入不被重新许可。独立法律意见、独立逐文件审计和商标审查仍未提供。",
+  "summary_en": "All 157/157 paths in the current exact submission package have contributor decisions for authorship/source, licence, attribution, transformation, redistribution and exceptions. The package may be reviewed, displayed and redistributed under component-specific terms; there is no single package-wide licence. Contributor content and R59 deterministic concept media are CC BY 4.0, code is MIT, OSM-derived database content is ODbL, the HTML font subset and the PDF semantic subset first embedded in R60 and retained by the R63 human-first rebuild are Noto Sans CJK SC under OFL, third-party works are citation-only, and repository provisional inputs are not relicensed. Independent legal advice, independent file-level audit and trademark review remain absent.",
   "components": [
     {
       "component_id": "RIGHTS-CONTENT",
@@ -56,7 +56,7 @@
       "notice": "report/copyright_statement.md",
       "pdf_and_html_source_file_name": "NotoSansCJKsc-Regular.otf",
       "pdf_and_html_source_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
-      "pdf_render_method": "Pillow 12.2.0 deterministic 2x transparent visible glyph layers plus existing package-authored PNG figures inserted into PyMuPDF 1.27.2.3 pages; fontTools 4.62.1 creates a minimal OTF semantic subset embedded with invisible render mode for exact visible copy; font_programs_embedded=semantic_subset_only",
+      "pdf_render_method": "R63 deterministic fixed-page composition uses locally rasterized visible Noto Sans CJK SC glyphs and an embedded semantic subset made from the same registered OFL source; 44/44 pages remain searchable/copyable, with no tagged-PDF claim.",
       "pdf_accessibility_boundary": "All 44 fixed pages expose searchable/copyable semantic text, but tagged PDF/UA and accessibility conformance are not claimed; the paired offline HTML reports remain the complete keyboard and machine-readable surface",
       "html_subset_sha256": "30656aa6450d8676d3d7fe1f7ca4de135bc2bcf7e33667121c045a235779fdff",
       "html_subset_method": "fontTools subset 4.62.1 over the literal character union of both final report and visual HTML counterparts; WOFF2; 1148 Unicode code points; font-display swap"
@@ -74,7 +74,7 @@
       "scope": "assets/media/four-state-cover.webp, four-state-experience.mp4, its bilingual VTT and transcript, plus the explanatory four-state contract",
       "license": "CC-BY-4.0 for contributor-authored content",
       "status": "licensed_by_contributor_for_current_exact_package_no_independent_legal_opinion_claimed",
-      "method": "Deterministic local vector/Pillow/Chrome/FFmpeg production; no network, external media, model API, voice, music or audio.",
+      "method": "The retained MP4/VTT/transcript remain the deterministic R59 local production. R63 rebuilt only the contributor-owned poster in place from the human-task lens using local Pillow and the registered Noto font; no network, external media, model API, voice, music or audio.",
       "limit": "Conceptual explanatory presentation only; not site, public-opinion, accessibility, approval, performance, location, duration, official-geometry, service-result or maturity evidence."
     }
   ],

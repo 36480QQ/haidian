@@ -31,11 +31,15 @@ The diagram is silent: it contains no audio track, music, voice, or ambient soun
 
 The captions, transcript, frames, and video were generated deterministically only from the locally frozen contributor-authored four-state contract and listed contributor-authored static assets: no network request, download, model API, or generative-model call. “Frozen” means only that the editorial inputs stayed fixed for this round; it does not mean external approval, accepted professional responsibility, or maturity advancement.
 
+R63 rebuilt only the existing poster in place from the contributor-authored human-task lens with local Python/Pillow and the registered Noto font. The MP4, VTT, transcript, eight-shot sequence and 54-second editorial timing were not changed. No new media path, media type, model output or network source was added.
+
+
+
 ## 源资产与工具记录 / Source assets and tool record
 
 - 冻结的投稿方合同 / frozen contributor-authored contract: `visual/assets/four-state-experience-contract.json`, SHA-256 `fa7d618e42d249cb11a9d5600872d7117b2490e166a2ec7590c84e4b993cdc25`。
 - Task 4 静态故事板 / Task 4 static storyboard: `assets/figures/four-state-journey.svg`, SHA-256 `bdd9cce5538760bfe4a349e75f3d149d78b1f9f7aa8803e0f323549aa23e7248`; `assets/figures/four-state-journey.en.svg`, SHA-256 `94ba040ab26c729d017aff7a52e1654b8015a0d65fb60c679fdf8d072a688635`。
-- Task 5 概念封面 / Task 5 conceptual cover: `assets/media/four-state-cover.webp`, SHA-256 `d04bbbd14931142cc2b3cbb1377414f053d0b23fcc1825c79a9d84d2e170e12f`。
+- Task 5 概念封面 / Task 5 conceptual cover: `assets/media/four-state-cover.webp`, SHA-256 `23f94c2c7814ab0313600bb489a102784fc50c487c1b028a538d6ff52ab29d90`。
 - 已登记 Noto 字体源 / registered Noto source: `NotoSansCJKsc-Regular.otf`, SHA-256 `2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b`; 现有记录为 Noto Sans CJK SC Regular、SIL Open Font License 1.1。该 OTF 不随本 sidecar 或媒体目录分发。
 - 实际核验但未由本 Task 6 用于编码的本地工具 / locally verified but not used by Task 6 for encoding: FFmpeg `6.1.1-essentials_build-www.gyan.dev`, `ffmpeg.exe` SHA-256 `0c4760db80d73a6ddc05c828a20c1b51c84bf61f4fcecff17f759c3edab800fb`; FFprobe `6.1.1-essentials_build-www.gyan.dev`, `ffprobe.exe` SHA-256 `01b99c76134e5c7a6b3f40f1d6c1e50f1084d5d5d763dfec1fde66bb1b575346`。
 

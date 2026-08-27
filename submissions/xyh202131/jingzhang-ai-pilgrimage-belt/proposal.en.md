@@ -5,8 +5,8 @@ language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-version: "62.0"
-iteration: "62.0"
+version: "63.0"
+iteration: "63.0"
 license: "CC-BY-4.0"
 summary: "Haidian's innovation density becomes public capability only when people can use, question and exit without accounts, devices or professional identity. Twin-Track Jing-Zhang keeps ordinary tasks continuous and G0 verification intermittent and stoppable; three distinct prototypes connect evidence, risk and professional handoff. Boundaries remain provisional; outcomes, approvals, field execution and accepted professional duties remain zero."
 tracks:
@@ -34,6 +34,8 @@ Public materials place Haidian's talent, residents, services and opened Jing-Zha
 ## One Spatial Decision: Verification Must Step Aside from Ordinary Life
 
 **Proof may not occupy the ground required to complete an ordinary task.** Ordinary ground carries movement, rest, questions, care, and basic services first; proof may appear only beside it, bounded, stoppable, and removable.
+
+Review follows one anonymous ordinary task before it follows a system: **arrive → understand → complete → correct or withdraw → leave**. If any action requires an account, scan, screen, network or AI, the Continuous Civic Track has not been established. If a person cannot finish through staff and leave safely during failure, the verification overlay must stop. This is a front-stage reading of the existing seven rights and same-task dual paths, not a new persona, scene, service promise or maturity claim.
 
 | Three non-interchangeable prototypes | Explicitly rejected | Spatial answer kept | What continues on failure |
 |---|---|---|---|
@@ -319,17 +321,17 @@ The three pilgrimage landmarks are redefined as three chapters in one knowledge 
 
 The “restoration acceptance” above is a conceptual checklist for a future accountable role, not site approval, completion acceptance, or proof that existing conditions comply. All three prototypes require removability, stoppability, and a detour, but no component may be sited until exact land, ownership, fire, railway protection, municipal, accessibility, and operating responsibility evidence has passed professional review [assumption:A-KEY-AREA-SPATIAL-011] [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening].
 
-### Ordinary-Life Spatial Scenes: See How People Use the Place before Adding the System
+### One Person, One Task, One Place: Follow the Ordinary Task First
 
-The human-scale figure is not an atmospheric layer placed over dense system diagrams. It translates one public-rights rule into a reviewable journey: **a person can first walk, stay, ask, exit and complete the basic task; AI appears only in a side-positioned, optional, stoppable overlay.** Zhongzhiyuan separates an ordinary bypass from a parallel verification court. Origin Community uses one screen-free resident street to link two courts. Dazhongsi places the commuter spine and quiet staffed service beside optional activity. No place requires an account, scan, screen, network or AI, and none places verification furniture, platform, queue or cables in the continuous daily route [data:visual/assets/non-ai-parity-contract.json] [data:visual/assets/key-area-evidence-matrix.json].
+The human-scale figure applies one five-action lens to three different spaces: **arrive, understand, complete, correct or withdraw, and leave**. In Zhongzhiyuan, a person reads physical status from the parallel bypass, finds staff and leaves safely. In Origin Community, a person uses the resident street to raise a task on paper or by speech, complete it with staff and withdraw. At Dazhongsi, a person keeps the four-way commute while checking a source and correcting it off-route. AI appears only in a side-positioned, optional, stoppable overlay. No place requires an account, scan, screen, network or AI, and none places verification furniture, platform, queue or cables in the continuous daily route [data:visual/assets/non-ai-parity-contract.json] [data:visual/assets/key-area-evidence-matrix.json].
 
-![Ordinary-life journey: each place keeps entering, understanding, completing a staffed task, correcting or leaving as the complete non-AI path, while verification remains beside it; G0 concept, not field evidence or an accessibility result](assets/figures/ordinary-life-journey.en.png)
+![One person, one task, one place: arrive, understand, complete, correct or withdraw, and leave form the complete non-AI path; Zhongzhiyuan uses a parallel bypass, Origin Community one street and two courts, and Dazhongsi a four-way commute, while verification stays beside them; G0 concept, not field or accessibility evidence](assets/figures/ordinary-life-journey.en.png)
 
-This editable vector is produced by the package's deterministic build script without a site photograph, map screenshot, private image, identifiable person, logo, third-party visual or model-generated pixel. It converts the existing place contracts into a human-scale reading sequence and proves no real flow, service capacity, accessibility compliance or resident opinion [data:visual/assets/non-ai-parity-contract.json].
+This contributor-authored editable vector is rendered locally and deterministically to PNG without a site photograph, map screenshot, private image, identifiable person, logo, third-party visual or model-generated pixel. It converts the existing place contracts into a human-scale reading sequence and proves no real flow, service capacity, accessibility compliance or resident opinion [data:visual/assets/non-ai-parity-contract.json].
 
 **Ordinary—verification—fault—recovery.** Ordinary state first keeps physical wayfinding, continuous accessibility intent, screen-free staying and staffed explanation. Verification permits only a future announced, authorized, time-bounded, accountable, removable overlay outside the route; the figure does not prove those conditions exist. Fault immediately stops the overlay, isolates equipment, explains through staff and keeps the bypass. Recovery removes the overlay and restores surface, planting, quiet and passage first. Unless independent review confirms restoration, the object remains at G0, stays stopped or retires. The three places share this order but implement it differently through equipment isolation, consent withdrawal and source correction, so they cannot be copied mechanically [source:SOURCE-ORDINARY-LIFE-PROPOSAL-R12] [data:visual/assets/key-area-evidence-matrix.json#round2_spatial_deepening].
 
-**Rights visible in the image do not prove current site provision.** The wheelchair user, older people, children, caregivers, and commuters test whether the relationship is legible; they are not real participants, consent, or research samples. Tactile wayfinding, step-free continuity, clear width, slope, turning, rest, fire, railway protection, municipal conditions, and staffed-service capacity still require survey, co-testing, and professional responsibility. Real photographs, confirmed viewpoints, field observations, approved components, operational interactions, confirmed accessibility results, and confirmed restoration results all remain 0. The image cannot establish location, scale, dimension, material, shift, construction, operation, or approval [assumption:A-KEY-AREA-SPATIAL-011] [data:visual/assets/implementation-handoff-matrix.json].
+**Rights visible in the image do not prove current site provision.** Anonymous standing and wheeled-mobility symbols test whether the task chain and spatial relationship are legible; they do not represent real identities, participation, consent, or research samples. Tactile wayfinding, step-free continuity, clear width, slope, turning, rest, fire, railway protection, municipal conditions, and staffed-service capacity still require survey, co-testing, and professional responsibility. Real photographs, confirmed viewpoints, field observations, approved components, operational interactions, confirmed accessibility results, and confirmed restoration results all remain 0. The image cannot establish location, scale, dimension, material, shift, construction, operation, or approval [assumption:A-KEY-AREA-SPATIAL-011] [data:visual/assets/implementation-handoff-matrix.json].
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
