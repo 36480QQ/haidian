@@ -117,7 +117,7 @@ code.ref{font-size:9.5px;letter-spacing:.02em;color:var(--brass);background:var(
 code.ref.r-metric,code.ref.r-data{color:var(--rail)}
 
 /* ── 表 ── */
-.tw{margin:10px 0 4px;border:1px solid var(--hair);background:var(--paper)}
+.tw{margin:10px 0 4px;border:1px solid var(--hair);background:var(--paper);overflow-x:auto;-webkit-overflow-scrolling:touch}
 .tw.sc{max-height:520px;overflow:auto}
 table.dt{width:100%;border-collapse:collapse;font-size:12px}
 table.dt.fx{table-layout:fixed}
@@ -213,6 +213,12 @@ code.fml{font-size:10px;color:var(--soft);word-break:break-word;display:block}
  padding:6px 9px;border-bottom:1px solid var(--hair);background:var(--deep)}
 .mmb .mh b{font:600 10.5px/1.5 var(--mono);letter-spacing:.13em;color:var(--brass);white-space:nowrap}
 .mmb .mh span{font:500 9.5px/1.5 var(--mono);color:#8A938E;text-align:right}
+/* 窄屏：英文标题串比视口还长，允许折行，避免整页横向溢出 */
+@media(max-width:760px){
+  .mmb .mh{flex-wrap:wrap}
+  .mmb .mh b{white-space:normal;overflow-wrap:anywhere}
+  .mmb .mh span{text-align:left;overflow-wrap:anywhere}
+}
 .mmb video{display:block;width:100%;height:auto;background:var(--ink)}
 .mmb audio{display:block;width:100%;min-height:34px}
 .mma{padding:9px 9px 7px}
@@ -335,7 +341,7 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
   display:flex;flex-direction:column;gap:12px;margin:0;padding:0;list-style:none}#ov-rail::before{content:"";position:absolute;left:9.2px;top:5px;bottom:5px;width:1.5px;background:var(--ov-hair);z-index:-1}#ov-rail button{all:unset;cursor:pointer;width:20px;height:20px;display:grid;place-items:center}#ov-rail i{width:6px;height:6px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--ov-dim);
   transition:all .35s var(--ov-ease)}#ov-rail button[aria-current="true"] i{background:var(--ov-copper);box-shadow:inset 0 0 0 1.5px var(--ov-copper);transform:scale(1.8)}#ov-rail button:hover i{box-shadow:inset 0 0 0 1.5px var(--ov-copper);transform:scale(1.45)}
 @media(max-width:900px){#ov-rail{display:none}}#ovx /* ── 版式 A：引线标注大图 ───────────────────────────── */
-.plate{height:100vh;min-height:600px;overflow:hidden;background:#000}#ovx .plate .ph{position:absolute;inset:0}#ovx .plate .ph img{width:100%;height:100%;object-fit:cover;display:block;
+.plate{height:100vh;min-height:600px;overflow:hidden;background:#000}#ovx .plate .ph{position:absolute;inset:0;overflow:hidden}#ovx .plate .ph img{width:100%;height:100%;object-fit:cover;display:block;
   transform:scale(1.05);transition:transform 2.6s var(--ov-ease)}#ovx .plate.in .ph img{transform:scale(1)}#ovx .plate .ph::after{content:"";position:absolute;inset:0;
   background:linear-gradient(105deg,var(--ov-scrim) 0 34%,rgba(10,14,12,.18) 56%,rgba(10,14,12,0) 76%)}#ovx .plate .txt{position:absolute;left:clamp(58px,7vw,110px);top:50%;transform:translateY(-50%);
   width:min(680px,47vw);color:var(--ov-on)}#ovx .plate .txt .kick{font-size:11px;letter-spacing:.24em;font-weight:700;color:var(--ov-copper);
@@ -357,7 +363,7 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
   border:1px solid var(--ov-hair);overflow:hidden;transition:transform .5s var(--ov-ease),box-shadow .5s var(--ov-ease)}#ovx .cards figure:hover{transform:translateY(-7px);box-shadow:0 16px 40px rgba(0,0,0,.16)}#ovx .cards img{width:100%;height:100%;object-fit:cover;display:block;min-height:0;
   transition:transform .8s var(--ov-ease)}#ovx .cards figure:hover img{transform:scale(1.05)}#ovx .cards figcaption{padding:16px 18px 20px}#ovx .cards figcaption b{display:block;font-size:16px;font-weight:700;letter-spacing:-.01em}#ovx .cards figcaption span{display:block;margin-top:7px;font-size:12.5px;line-height:1.7;color:var(--ov-dim)}#ovx .trio>*{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ov-ease),transform .8s var(--ov-ease)}#ovx .trio.in>*{opacity:1;transform:none}#ovx .trio.in .cards{transition-delay:.12s}
 @media(max-width:900px){#ovx .cards{grid-template-columns:1fr;gap:14px}#ovx .trio{min-height:auto}#ovx .cards img{height:34vh}}#ovx /* ── 封面 / 尾 ─────────────────────────────────────── */
-.cover{height:100vh;min-height:600px;overflow:hidden;background:#000}#ovx .cover .ph{position:absolute;inset:0}#ovx .cover .ph img{width:100%;height:100%;object-fit:cover;opacity:.62;
+.cover{height:100vh;min-height:600px;overflow:hidden;background:#000}#ovx .cover .ph{position:absolute;inset:0;overflow:hidden}#ovx .cover .ph img{width:100%;height:100%;object-fit:cover;opacity:.62;
   transform:scale(1.07);transition:transform 3.4s var(--ov-ease),opacity 2s var(--ov-ease)}#ovx .cover.in .ph img{transform:scale(1)}#ovx .cover .ct{position:absolute;left:clamp(58px,7vw,120px);top:50%;transform:translateY(-50%);color:var(--ov-on)}#ovx .cover h1{margin:0;font-size:clamp(52px,10.5vw,140px);font-weight:800;letter-spacing:-.05em;line-height:.92}#ovx .cover .en{margin-top:14px;font-size:clamp(10px,1.2vw,13px);letter-spacing:.44em;color:var(--ov-on-dim)}#ovx .cover .q{margin-top:clamp(28px,4.4vh,52px);font-size:clamp(15px,1.7vw,21px);line-height:1.82;max-width:23em}#ovx .cover .q em{font-style:normal;box-shadow:inset 0 -.4em 0 rgba(164,99,42,.5)}#ovx .cover .ct>*{opacity:0;transform:translateY(22px);transition:opacity 1s var(--ov-ease),transform 1s var(--ov-ease)}#ovx .cover.in .ct>*{opacity:1;transform:none}#ovx .cover.in .ct>*:nth-child(2){transition-delay:.14s}#ovx .cover.in .ct>*:nth-child(3){transition-delay:.28s}#ovx .hint{position:absolute;right:clamp(24px,6vw,86px);bottom:clamp(32px,6vh,60px);
   font-size:10.5px;letter-spacing:.2em;color:var(--ov-on-dim)}#ovx .hint em{font-style:normal;display:inline-block;animation:nd 2.1s infinite}
 @keyframes nd{#ovx 0%, #ovx 100%{transform:translateY(0)}#ovx 50%{transform:translateY(5px)}}#ovx .fin{min-height:100vh;display:grid;place-items:center;text-align:center;background:var(--ov-paper);
@@ -843,7 +849,7 @@ This browser cannot play embedded video; open assets/media/narrative.mp4 directl
 <h3 class="sub3"><span class="ix">D·2</span>Four-gate self-check</h3>
 <div class="gates"><div class="gate"><div class="gn">Deterministic validation<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">deterministic_validation · returncode 0</div><pre>errors 0
 warnings 24
-total bytes 38,635,146
+total bytes 38,636,367
 · submissions/wanghao198822/jingzhang-century-answer/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied
 · submissions/wanghao198822/jingzhang-century-answer/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context</pre></div><div class="gate"><div class="gn">Spatial review<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">spatial_review · returncode 0</div><pre>stage formal
 issues 3 (minor:3)
@@ -860,7 +866,7 @@ known_metric_refs_required = 83
 proposal_format_version = 2
 evidence_contract = section-anchors-plus-structured-audit
 proposal_reference_counts = source:23, standard:8, depth:15, data:26, metric:11</pre></div></div>
-<div class="note">From self_check.json: stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>Calibre of total bytes: the figure above is the value recorded at self-check time. self_check.json is itself counted in the total, and the tool measures after writing an intermediate file that does not yet carry the gate results, so an independent re-run reports 758 bytes more (38,635,904). The difference is exactly the growth of self_check.json once the gate results are attached — an inherent two-phase write in the tool that changes no gate verdict.</div>
+<div class="note">From self_check.json: stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>Calibre of total bytes: the figure above is the value recorded at self-check time. self_check.json is itself counted in the total, and the tool measures after writing an intermediate file that does not yet carry the gate results, so an independent re-run reports 758 bytes more (38,637,125). The difference is exactly the growth of self_check.json once the gate results are attached — an inherent two-phase write in the tool that changes no gate verdict.</div>
 <div class="tw"><table class="dt"><thead><tr><th>Check</th><th>Result</th><th>Severity</th><th>Target</th><th>Message</th></tr></thead><tbody><tr><td><code class="mid2">DETERMINISTIC_VALIDATION</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">validate_local_submission.py</code></td><td>deterministic_validation: PASS</td></tr><tr><td><code class="mid2">SPATIAL_REVIEW</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">spatial_review.py</code></td><td>spatial_review: PASS</td></tr><tr><td><code class="mid2">VISUAL_PACKAGING</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">visual_review.py</code></td><td>visual_review: PASS</td></tr><tr><td><code class="mid2">PROFESSIONAL_EVIDENCE</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">professional_review.py</code></td><td>professional_review: PASS</td></tr></tbody></table></div>
 </div></section>
 <section class="sec apx" id="s12"><div class="wrap"><div class="sh rv"><span class="no">E</span><h2 class="serif">Appendix E · Verify it yourself, on the spot</h2><span class="sub">Three scripts recompute in your own browser</span><span class="en">附录 E · 可当场核验工具</span></div>
