@@ -3,7 +3,7 @@
 ## v2.1 — principal-designer A3 consolidation and review-response update
 
 - Replaced the Chinese A3 booklet with the principal-designer-approved 21-page design set plus a new cover, delivered as one 22-page A3 landscape PDF.
-- Preserved the previously submitted A0 boards as the large-format spatial baseline; this revision concentrates on the A3 narrative, node design, systems, implementation, governance, and closing synthesis.
+- Replaced the previous five-page Chinese A0 file with the principal-designer-approved three-board set covering the overall datum structure, three fields and five urban datums, and public-choice governance and implementation.
 - Expanded the Chinese A3 evidence chain for global case transfer, personas, AI industry ecology, mobility and blue-green systems, three key areas, five K-nodes, public infrastructure, culture, JZ-01–JZ-06 implementation, and open-city governance.
 - Removed repeated scenario images from the revised A3 sequence and strengthened plan, system, phasing, operator, trigger, fallback, stop, and exit-condition explanations.
 - Added exact A3 page references for agent.1–agent.6 in `compliance_matrix.json` and reran manifest refresh, four-gate self-check, and participant preflight before push.
