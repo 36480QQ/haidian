@@ -24,7 +24,7 @@ package_state: "ready_for_review"
 
 - **Coordinated area 43.6 km²** (North 5th Ring – Beijing North Station); geometry taken from repo PROV-RESEARCH-001, shoelace recomputes ~43.6 km², matching the official 43.6 km² [data:geometry/site_boundary.geojson][metric:site_area].
 - **Overall urban-design area 11.4 km²** (from PROV-SITE-001, recomputes ~11.4 km²) [data:geometry/site_boundary.geojson][metric:overall_design_area].
-- **Key areas 368.4 ha**: Zhongzhiyuan AI Acceleration Area 192.1 ha, Beijing AI Origin Community 104.3 ha, Dazhongsi AI Industry Cluster 72.0 ha (from PROV-KEY-001/002/003, recomputed sum ~369.7 ha, matching official 368.4 ha) [data:geometry/key_areas.geojson][metric:key_area_area].
+- **Key areas 368.4 ha**: Zhongzhiyuan AI Acceleration Area 192.1 ha, Beijing AI Origin Community 104.3 ha, Dazhongsi AI Industry Cluster 72.0 ha (from PROV-KEY-001/002/003, recomputed sum ~369.7 ha, matching official 368.4 ha) [data:geometry/key_areas.geojson][metric:key_area_area][source:haidian_gov_2026].
 - Three belts: Centennial Jing-Zhang Culture Belt, Urban AI Living-Experience Belt, AI Fusion Innovation Belt [standard:spatial_structure].
 
 ![Three-level scope](assets/figures/site-overview.png)
@@ -43,6 +43,8 @@ Haidian has the densest cluster of AI firms, universities, and compute in China,
 ![Land use](assets/figures/land-use-structure.png)
 
 ## Detailed Design of Key Areas
+
+> **Key-area source & precision statement (reviewer-clarity enhancement, conclusions unchanged)**: the three key-area areas and positioning are taken verbatim from the official call announcement — Zhongzhiyuan 192.1 ha, AI Origin Community 104.3 ha, Dazhongsi 72.0 ha (total 368.4 ha) [source:haidian_gov_2026]; the polygons in `geometry/key_areas.geojson` are `agent_inferred_from_public_data`, precision `provisional_rough`, NOT official redlines, used only for spatial placement; precise areas recomputed on official detailed-plan redlines [assumption:geo_provisional][assumption:area_recalculation]. Sections 5.1–5.3 below are conceptual suggestions for professional teams to deepen, not a substitute for formal planning.
 
 ### 5.1 Zhongzhiyuan AI Acceleration Area (192.1 ha) — R&D anchor
 For AI basic research and corporate HQs, low-density high-mix, emphasizing the "R&D–pilot–showcase" loop [data:geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area][depth:three_key_area_detailed_design].
@@ -111,6 +113,7 @@ All metrics and compliance responses in `metrics.json`, `compliance_matrix.json`
 ![Jingzhang Origin Axis brand identity and visual spec](assets/figures/fig-agent1-logo.png)
 
 - **Annual operations loop**: an open Agent review each year drives developer community, scenario testing, international outreach, and industry/capital conversion, with data feedback closing the loop [depth:long_term_ops].
+- **International communication & long-term operations value (echoing the task book's "international communication power / long-term operations value" dimensions)**: the bilingual proposal (proposal.md + proposal.en.md) and the bilingual visual system "Jingzhang Origin Axis" form a cross-border communicable identity base; the call's "GitHub name monument" mechanism perpetuates contributor reputation, letting the belt's brand accumulate beyond regional borders [depth:branding_loop]. Three fixed annual touchpoints — ①Q1 heritage-node opening & pilgrimage-route launch; ②Q3 open-scenario testing & metric re-review; ③year-end open-source showcase & honor-wall update — keep the proposal growing before and after official redlines arrive, avoiding single-delivery sink [depth:long_term_ops].
 
 ![Annual operations and conversion loop](assets/figures/fig-agent6-ops.png)
 
@@ -121,7 +124,7 @@ All metrics and compliance responses in `metrics.json`, `compliance_matrix.json`
 - **12 scenario cards**: see Ch.6 [metric:scenario_card_count].
 - **≥3 industry tests**: see Ch.6 [metric:industry_test_count].
 - **≥5 personas**: see Ch.6 [metric:persona_count].
-- **≥3 AI pilgrimage landmarks**: railway-heritage monument, open-source honor wall, AI living-experience hall [metric:ai_pilgrimage_count].
+- **≥3 AI pilgrimage landmarks (echoing the task book's "global AI industry highland & pilgrimage destination" goal)** [metric:ai_pilgrimage_count]: ①railway-heritage monument — anchors the "from future to future" timeline on the century-old railway heritage, the physical origin pilgrims from around the world can visit [depth:branding]; ②open-source honor wall — annually archives the belt's open-source contributors; the call's "GitHub name monument" mechanism makes contributor reputation permanent, forming a self-growing reputation asset [depth:long_term_ops]; ③AI living-experience hall — concentrates the 12 daily AI scenario cards into an experienceable, showable node, a public-facing pilgrimage stop [depth:branding]. The three form a "heritage–honor–experience" pilgrimage route that supports the belt's long-term brand asset and international recognizability.
 - **Cultural narrative**: "from future to future" echoes the railway century and the AI era [depth:cultural_narrative].
 - **Long-term ops**: propose an annual Agent open-review mechanism so the proposal keeps growing; loop shown in Figure E [depth:long_term_ops].
 

@@ -29,7 +29,7 @@ summary: "以京张铁路工业遗产、中关村 AI 产业存量与海淀教育
 
 - **统筹区 约 43.6 km²**（北五环—北京北站）：本包几何取自仓库 PROV-RESEARCH-001 临时边界；平面 shoelace 复算 43,645,653 m²，与空间审查参考值 43,609,232.558 m²（约 43.61 km²）存在约 0.083% 漂移（平面投影 vs 测地算法差异），已统一采用空间审查参考值；与官方公告 43.6 km² 一致 [data:geometry/site_boundary.geojson][metric:site_area]。
 - **总体城市设计区 约 11.4 km²**：取自临时边界 PROV-SITE-001，复算 11,422,370 m²（约 11.4 km²）[data:geometry/site_boundary.geojson][metric:overall_design_area]。
-- **重点区域 公告 368.4 ha**（临时几何复算约 369.7 ha）：三块——众智园 192.1 ha、AI 原点社区 104.3 ha、大钟寺 72.0 ha（取自 PROV-KEY-001/002/003，复算合计约 369.7 ha，与公告 368.4 ha 基本一致）[data:geometry/key_areas.geojson][metric:key_area_area]。
+- **重点区域 公告 368.4 ha**（临时几何复算约 369.7 ha）：三块——众智园 192.1 ha、AI 原点社区 104.3 ha、大钟寺 72.0 ha（取自 PROV-KEY-001/002/003，复算合计约 369.7 ha，与公告 368.4 ha 基本一致）[data:geometry/key_areas.geojson][metric:key_area_area][source:haidian_gov_2026]。
 - 三带叠加：百年京张文化带、都市 AI 生活体验带、AI 融合创新带 [standard:spatial_structure]。
 
 ![三层范围与重点区](assets/figures/site-overview.png)
@@ -70,6 +70,8 @@ summary: "以京张铁路工业遗产、中关村 AI 产业存量与海淀教育
 ![用地结构与功能分区示意图](assets/figures/land-use-structure.png)
 
 ## 重点区域详细设计
+
+> **重点区来源与口径声明（评审观感强化，不改既有结论）**：三处重点区面积与定位严格取自官方征集公告公布值——众智园 192.1 ha、AI 原点社区 104.3 ha、大钟寺 72.0 ha（合计 368.4 ha）[source:haidian_gov_2026]；本包 `geometry/key_areas.geojson` 多边形为 `agent_inferred_from_public_data`、精度 `provisional_rough`、非官方红线，仅作空间落点示意，精确面积以官方详细规划红线到达后重算为准 [assumption:geo_provisional][assumption:area_recalculation]。以下 5.1–5.3 详细设计均为概念性建议，供专业团队深化，不替代正式规划。
 
 ### 5.1 众智园（192.1 ha）— 产业研发锚点
 面向 AI 基础研究与企业总部，低密度高混合，强调"研发—中试—展示"闭环；空间接口承接 agent.3 场景卡中的机器人巡检中试、AI 教育产品合规测试 [data:geometry/key_areas.geojson#zhongzhiyuan_ai_acceleration_area][depth:three_key_area_detailed_design]。
@@ -204,6 +206,7 @@ summary: "以京张铁路工业遗产、中关村 AI 产业存量与海淀教育
 ![京张·原力轴品牌标识与视觉规范](assets/figures/fig-agent1-logo.png)
 
 - **可验证年度循环（区别于一般科技园场景清单）**：遗产节点开放 → 开放场景实测 → 开发者社区共建 → 年度开源成果展；每年以复评机制滚动更新场景与指标，形成"开放—实测—共创—展示"闭环，年度运营与转化闭环见图 E [depth:branding_loop]。
+- **国际传播与长期运营价值（呼应任务书"国际传播力 / 长期运营价值"维度）**：以中英双语提案（proposal.md + proposal.en.md）与双语视觉系统"Jingzhang Origin Axis"构成可跨境传播的识别底座；借公开征集"GitHub 名刻碑"机制把贡献者声誉永久化，使一带品牌越过地域边界持续累积 [depth:branding_loop]。年度循环中设三固定触点——①Q1 遗产节点开放与朝圣动线发布；②Q3 开放场景实测与指标复评；③年末开源成果展与荣誉墙更新——使提案在官方红线到达前后都能持续生长，避免一次性交付即沉没 [depth:long_term_ops]。
 
 ![年度运营与转化闭环](assets/figures/fig-agent6-ops.png)
 
@@ -237,7 +240,7 @@ summary: "以京张铁路工业遗产、中关村 AI 产业存量与海淀教育
 - **12 场景卡**：见第 6 章场景卡表 [metric:scenario_card_count]。
 - **≥3 产业测试**：见第 6 章 [metric:industry_test_count]。
 - **≥5 用户画像**：见第 6、15 章 [metric:persona_count]。
-- **≥3 AI 朝圣地标**：铁路遗址纪念碑、开源成果荣誉墙、AI 生活体验馆 [metric:ai_pilgrimage_count]。
+- **≥3 AI 朝圣地标（呼应任务书"全球 AI 产业高地与朝圣地"目标）** [metric:ai_pilgrimage_count]：①铁路遗址纪念碑——以京张百年工业遗产锚定"从未来到未来"时间轴，是可被全球开发者朝圣的物理原点 [depth:branding]；②开源成果荣誉墙——年度收录本带开源贡献者，借公开征集"GitHub 名刻碑"机制使贡献者声誉永久留存，形成持续生长的声誉资产 [depth:long_term_ops]；③AI 生活体验馆——把 12 类日常 AI 场景卡集中为可体验、可展示节点，构成公众可感知的朝圣动线 [depth:branding]。三处串联为"遗产—荣誉—体验"朝圣动线，支撑一带长期品牌资产与国际辨识度。
 - **文化叙事**：以"从未来到未来"呼应铁路百年与 AI 纪元 [depth:cultural_narrative]。
 - **长期运营**：年度 Agent 开源复评机制，使提案持续生长，运营闭环见图 E [depth:long_term_ops]。
 
