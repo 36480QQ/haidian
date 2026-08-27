@@ -21,7 +21,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "897c0de89a8e254e17276c5dd134282fbf568e3f43923e90296abe00397ae435"
+      "sha256": "4c480f600c76fcba9f24b22ff353ec869978cfc1243944c681ce89f42f4f58f6"
     },
     {
       "path": "proposal.en.md",
@@ -29,7 +29,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "ddd547e0fb02e26c29a87f78cc8637da0beefdd86010b18d2dfa1b06cc89f63e"
+      "sha256": "3a3a19e37202ba0ee02327e5bd0affa4a494c15781a97b98a4893e426e987529"
     },
     {
       "path": "manifest.json",
@@ -49,7 +49,7 @@
       "role": "metrics",
       "required": true,
       "language": "neutral",
-      "sha256": "e60f149b4cdbd245d47aeeaecc72e7597e9050cdd93078e0b7fa9c4ad5c791d6"
+      "sha256": "faec8a9bb545e262d3cdf65d6f4d8f6704effe3c907416dcb96fe891cb690e89"
     },
     {
       "path": "assumptions.json",
@@ -63,7 +63,7 @@
       "role": "sources",
       "required": true,
       "language": "neutral",
-      "sha256": "40cfd32b6db4babfbcbbbf9e4c7a9b6908c451247d8457d009eb487e956da702"
+      "sha256": "9e1a5879fbd03ded98b4acd7ede5f3a2a0a371d1d24dd998270851779ec98f19"
     },
     {
       "path": "self_check.json",
@@ -196,7 +196,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "9fd83e76447ad121ecbaee7e394398e41e6565232a4e800e3e08d0636bff870b"
+      "sha256": "4456806fee134d41905f621545595fb58dac78a4b3d827c2c95ee1ebf0c752d6"
     },
     {
       "path": "report/proposal.en.html",
@@ -204,7 +204,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "436092a7d5c56c8c3e8ce4b9b24634ae3cb3067dc2ff805224bd7182aaa73fce"
+      "sha256": "a319fdc4c3315c90e21c6bb076e5c0b567309a8ed370755b4c670a73be61c327"
     },
     {
       "path": "report/copyright_statement.md",
@@ -248,7 +248,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "2c42e0de09a11fa3f6b55ea613cd0b2ef19d2c3186916a9917974f0c243a2d4c"
+      "sha256": "4e8dd53cba5be47bdd33397035e9c16078a1eccbc50d4dd460034cc0aa049d55"
     },
     {
       "path": "visual/index.en.html",
@@ -256,7 +256,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "431a1acef00e658a58a2ab82873f1b46986abc74888d33e6d7a6004c2fc2c701"
+      "sha256": "0483370903e1cb22845df7361d251afdee4e7f9ecc1c6859701e9cc6d149457e"
     },
     {
       "path": "assets/figures/fig-agent1-logo.png",
@@ -292,6 +292,13 @@
       "required": true,
       "language": "neutral",
       "sha256": "5d2536255c02d4a6cbbfe4fa54d0f4a86a56cc7c0a32d7bce34bd051a4db5c68"
+    },
+    {
+      "path": "assets/fonts/NotoSansSC-Regular.otf",
+      "role": "font_asset",
+      "required": false,
+      "language": "neutral",
+      "sha256": "faa6c9df652116dde789d351359f3d7e5d2285a2b2a1f04a2d7244df706d5ea9"
     }
   ],
   "validation_claim": {
