@@ -58,8 +58,10 @@ To serve the overall recognizability and global communication of the "Centennial
 - **Master brand**: Jing-Zhang Pulse (Chinese 京张智脉, subtitle *The Civic AI Corridor*). "Intelligence artery" echoes both the railway—the artery of modern China's first self-designed line—and the neural network of AI, emphasizing continuity between history and the future.
 - **Three-core sub-brands**: Zhongzhiyuan → **Origin Valley** (full-stack autonomy origination); Beijing AI Origin Community → **The Origin** (outcome transformation and talent); Dazhongsi AI Industry Cluster → **Confluence** (intelligent economy and international exchange).
 - **Two-wing sub-brands**: Zhongguancun Technology Service Wing → **Hub Wing**; Xiaoyue River Scenario-Empowerment Wing → **Ripple Wing**.
-- **Logo direction (concept, not final)**: a minimalist emblem fusing three elements—rail-profile, neural-network nodes, and green vein; primary colors Intelligence Blue `#1E5BFF`, Garden Green `#2FB37A`, Capital Gold `#C8A24B`. The mark is a self-drawn vector and uses no copyrighted or trademarked graphics; final deployment requires professional brand and clearance review.
+- **Logo (finalized self-drawn vector emblem)**: a minimalist emblem fusing three elements—rail-profile, neural-network nodes, and green vein (see below); primary colors Intelligence Blue `#1E5BFF`, Garden Green `#2FB37A`, Capital Gold `#C8A24B`. The mark is a self-drawn vector and uses no copyrighted or trademarked graphics; formal deployment still warrants a professional brand clearance review.
 - **Signage and symbols**: reuse the railway "milestone" vocabulary (0-km origin monument, kilometer markers) with neural-network node graphics to form a unified spatial narrative and recognizable interface [depth:height_massing_character].
+
+![Jing-Zhang Pulse Logo (finalized self-drawn vector emblem)](assets/figures/logo.en.png)
 
 The naming system does not replace statutory planning names; it is an open-co-creation brand suggestion for professional teams to deepen [source:AGENT-TASKBOOK].
 
