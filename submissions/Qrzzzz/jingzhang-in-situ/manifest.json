@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "100bcca5f8c4bfa630e5fb8e37009441318ebbca6b2bd043525fd78779f20526"
+      "sha256": "58284e6313a33e46846a187228020904d4eb4853294d47993364d9d7bda11930"
     },
     {
       "path": "compliance_matrix.json",
@@ -113,14 +113,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "ee5acea1db00003c8ec3ceee94f05103fdf820f41c985fd1073e9916805442bf"
+      "sha256": "f78b7927bdc5a58ac1420156fa5796729ae2ffe36eed4f24e7a3192eb9a79379"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "b1a3ccfd27338dd91171d6dffa490387514a505c36a84eaa2ef74d4190c4e45a"
+      "sha256": "29cf872189aa86bb82c31f8c565602a34616c437981a4d03c1aa5ef1699754ad"
     },
     {
       "path": "visual/index.html",
@@ -240,7 +240,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "0f34c5a1932dcb7932883dcf95839b05b07c56388a0a1e93764135a799b797a6"
+      "sha256": "da22e500b0930a9774a95c7c0cd66c89587bab7f25c6ad64e63fd4b0553c96fb"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -248,7 +248,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "010cc41f07e7f1f252a68097ee7b4add0c3d5cb3efbe9250016768adae8ba84f"
+      "sha256": "d3fba040bc89edd9120d055a2ba12385a7ea74a8a5a3ec67a37edde2fe7d052f"
     },
     {
       "path": "visual/index.en.html",
@@ -263,7 +263,7 @@
       "role": "asset",
       "required": true,
       "language": "neutral",
-      "sha256": "e72b48cd357e85b13e6c3afc9fa4362e2fa1e2d3539653c100ca5a01f4e9d821"
+      "sha256": "beaea1311ee04fa030104f193e1ddd41a3388b0c3d7b28e7869d98ea530c75d7"
     },
     {
       "path": "visual/assets/NotoSansSC-OFL-1.1.css",
@@ -523,13 +523,13 @@
       "path": "visual/assets/phase4-presentation-sources.json",
       "role": "verification_script",
       "required": true,
-      "sha256": "663e613065287a953ed724d3170ace88d4d9c64ba27816e6afc0c64d1c9ee7b8"
+      "sha256": "4c279c822e181c91a8fd8d2a10273ce0f180601f26180c0c3853edddb6b88f26"
     },
     {
       "path": "visual/assets/phase4-generation-contract.json",
       "role": "evidence_data",
       "required": true,
-      "sha256": "7eb6fa976c806906d4be615eda80b4839ff4f11c303479009144a6fba939a659"
+      "sha256": "04618cd9030bfed583ddc6c910a3b3911023280daa0de6a73ad636cf5f0ee50a"
     },
     {
       "path": "visual/assets/phase4-browser-qa.json",
@@ -553,7 +553,7 @@
       "path": "visual/assets/phase4-cross-media-qa.json",
       "role": "evidence_data",
       "required": true,
-      "sha256": "743076c119e2411fc40fdee09857fb5d7881d2f89e04d669e2752d1a532cf4df"
+      "sha256": "63c39deacea7a1e0b3a29c980d6415ea32c2ed1d92bdbf6b41af3a108cffed71"
     },
     {
       "path": "visual/assets/phase4-display-redteam.json",
