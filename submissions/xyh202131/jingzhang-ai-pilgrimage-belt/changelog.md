@@ -1,5 +1,35 @@
 # 方案迭代记录 / Changelog
 
+## v62.1 - 2026-08-27
+
+**R62 离线 CJK 回归闭合 / R62 Offline CJK Regression Closure**
+
+- 针对 PR #4055 当前 exact-head 评审的唯一参与者可控阻断项，重新建立修复前 RED：R62 重渲后，两份 visual 仍加载包内字体子集，但 `report/proposal.html` 与 `report/proposal.en.html` 的字体链接再次丢失；这证明旧台账的“已关闭”不能替代对最终消费者的复测。
+- 在两份最终报告中恢复 `../visual/assets/offline-cjk-font.css`，并将四个最终 HTML 作为同一回归集合。全新 Chromium 逐页确认 `document.fonts.status=loaded`、计算字体为 `JZ Noto CJK Offline`、核心中文串检查为真，外部 HTTP(S) 资源请求为 0；中英文报告和 visual 截图冷读未见方框字。
+- 由于仓库通用 renderer 暂无投稿包级样式钩子，本轮不越权修改共享脚本；后续每次重渲均必须在 manifest 刷新前复跑“四表面字体链接 + 字体加载 + 截图冷读”回归，不能只相信登记表或机器 schema PASS。
+- 本修复不增加媒体、页面、主张、事实或成熟度，不改变 geometry、`metrics.json`、12/8/3/36、G0/NO-GO、provisional、现实结果 0、批准 0、专业接责 0、独立现实复测 0 或权利边界。
+
+- Reproduced the sole contributor-controlled blocker on the current exact head of PR #4055. After the R62 rebuild, both visual pages still loaded the local font subset, but the stylesheet link had again disappeared from `report/proposal.html` and `report/proposal.en.html`. A historical “closed” register therefore did not substitute for retesting final consumers.
+- Restored `../visual/assets/offline-cjk-font.css` in both final reports and treated all four HTML surfaces as one regression set. Fresh Chromium checks confirm `document.fonts.status=loaded`, computed family `JZ Noto CJK Offline`, a true core-Chinese-string font check and zero external HTTP(S) resource requests; cold-read screenshots of both reports and both visual pages show no tofu.
+- The shared repository renderer currently exposes no package-level stylesheet hook, so this repair does not alter out-of-scope shared scripts. Every future rerender must repeat the four-surface link, font-load and screenshot checks before manifest refresh; a register or schema PASS alone is insufficient.
+- This repair adds no media, page, claim, fact or maturity upgrade and changes no geometry, `metrics.json`, 12/8/3/36 count, G0/NO-GO, provisional status, zero real outcomes, zero approvals, zero accepted professional duties, zero independent real-world retests or rights boundary.
+
+## v62.0 - 2026-08-26
+
+**出版身份与首屏一致性 / Publication Identity and First-screen Coherence**
+
+- 在最新 canonical `main` `52d499a313ba9e54a1fca18ca62cf0693e8d70ec` 上确认前序 PR #4036 已合并并进入祖先链、同包开放 PR 为 0。修复前 RED 显示：正文版本为 61.0、最新记录为 61.1，但 visual 与四份 PDF 的 44/44 页仍把 `R60` 当作当前评审标签；两份报告各有两个一级标题，中文 visual 首屏还把结论末字“侧。”孤立成行。
+- 将前台身份改为不随轮次漂移的 `G0 概念稿 · 评审版 / G0 CONCEPT · REVIEW EDITION`，后台审计版本统一为 62.0；R59—R61 的历史标签继续保留在 changelog、溯源和方法记录中，不抹除真实演进。
+- 两份报告现各保留一个文档级 H1，首段裁决降为 H2；中英文 visual 首屏各使用两条语义完整的标题行。五档视口（1440×900、1280×800、768×1024、390×844、320×568）的双语浏览器复测共发现 0 项问题，并覆盖无 JavaScript、减少动态、键盘、静态回退、离线资源和打印相关入口。
+- 不增加页数地重建 A3 14+14 页与 A0 8+8 页，44/44 页改用稳定评审标签；两次新进程构建逐字节一致。最终 SHA-256：中文 A3 `17244b82ba85d21e77bd65559f7156c4f62c0bc73a6e8b40503f5bbca818a429`，英文 A3 `f62f06b03924bec5a8b34f7bfdd786f3effb624b27d307aa25c61a02fbef5864`，中文 A0 `a839288f62ea4aef4c7a6ec2469cbcda0cbf49fee363b7149c430a0d83093b30`，英文 A0 `7c093179837d1ee4c4ad3c003f2e270a009589658b9b28b2a8986ffabaccf75d`。
+- 本轮无新媒体、事实、场景、项目、重点区或页面。geometry、`metrics.json`、12/8/3/36、G0/NO-GO、provisional、现实结果 0、专业接责 0、独立现实复测 0 及分组件权利边界均保持不变。
+
+- Confirmed on canonical `main` `52d499a313ba9e54a1fca18ca62cf0693e8d70ec` that predecessor PR #4036 is merged and in the ancestry, with zero same-package open PRs. Reproducible RED evidence found proposal revision 61.0 and changelog revision 61.1 while both visual pages and all 44 PDF pages still presented `R60` as the current review label; each report had two document-level H1 headings, and the Chinese visual hero orphaned its final character pair on a separate line.
+- Replaced volatile frontstage identity with `G0 概念稿 · 评审版 / G0 CONCEPT · REVIEW EDITION` and aligned backstage audit revision to 62.0. Historical R59-R61 labels remain in the changelog, provenance and method records as an accurate evolution trail.
+- Each report now has one document H1 and an H2 opening ruling; both visual heroes use two semantically complete title lines. Bilingual browser retesting at 1440×900, 1280×800, 768×1024, 390×844 and 320×568 found zero issues and covered no-JavaScript, reduced-motion, keyboard, static fallback, offline-resource and print-related routes.
+- Rebuilt the 14+14 A3 pages and 8+8 A0 boards without adding pages; all 44 pages use the stable review label. Two fresh processes produced byte-identical files. Final SHA-256: ZH A3 `17244b82ba85d21e77bd65559f7156c4f62c0bc73a6e8b40503f5bbca818a429`; EN A3 `f62f06b03924bec5a8b34f7bfdd786f3effb624b27d307aa25c61a02fbef5864`; ZH A0 `a839288f62ea4aef4c7a6ec2469cbcda0cbf49fee363b7149c430a0d83093b30`; EN A0 `7c093179837d1ee4c4ad3c003f2e270a009589658b9b28b2a8986ffabaccf75d`.
+- No media, fact, scenario, project, key area or page was added. Geometry, `metrics.json`, 12/8/3/36, G0/NO-GO, provisional status, zero real results, zero accepted professional duties, zero independent real-world retests and component-specific rights boundaries remain unchanged.
+
 ## v61.1 - 2026-08-26
 
 **离线报告 CJK 阻断修复 / Offline Report CJK Blocker Repair**

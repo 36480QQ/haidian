@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "register_id": "JZ-DATA-GAP-CLOSURE-R61.1",
-  "as_of": "2026-08-26",
+  "register_id": "JZ-DATA-GAP-CLOSURE-R62.1",
+  "as_of": "2026-08-27",
   "status": "participant_controlled_gaps_closed_external_gaps_preserved",
   "purpose": "Separate gaps the contributor can close in the current publication package from authoritative or field inputs that cannot be fabricated, and bind every open gap to an owner, trigger and invalid substitute.",
   "participant_controlled": [
@@ -9,7 +9,7 @@
       "gap_id": "PC-01",
       "gap": "Chinese text rendered as tofu in clean Chromium",
       "status": "closed",
-      "evidence": "report/proposal.html and report/proposal.en.html now link ../visual/assets/offline-cjk-font.css, matching both visual counterparts; the embedded WOFF2 cmap covers 1015/1015, 19/19, 249/249 and 3/3 visible non-ASCII characters; fresh in-memory Chromium reports status=loaded, computed family JZ Noto CJK Offline and a true core-Chinese-string font check; bilingual report screenshot inspection finds no tofu",
+      "evidence": "post-R62 exact-head regression retest confirms report/proposal.html, report/proposal.en.html, visual/index.html and visual/index.en.html each link the package-local offline-cjk-font.css exactly once; fresh Chromium reports status=loaded, computed family JZ Noto CJK Offline, a true core-Chinese-string check and zero external HTTP(S) resource requests on all four surfaces; bilingual report and visual screenshot inspection finds no tofu",
       "residual_boundary": "Font licence and subset method are declared; independent legal audit remains absent."
     },
     {

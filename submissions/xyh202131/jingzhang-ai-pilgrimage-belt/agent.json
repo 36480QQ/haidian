@@ -153,6 +153,81 @@
       "independent legal, file-level or trademark review"
     ]
   },
+  "round_62_provenance": {
+    "canonical_main_base_sha": "52d499a313ba9e54a1fca18ca62cf0693e8d70ec",
+    "predecessor_pr": 4036,
+    "publication_revision": "62.0",
+    "scope": "Publication coherence and first-screen repair: stable reviewer-facing identity, one report H1 per language, semantic hero line breaks, and fixed-page label rebuild without new content, media or pages.",
+    "before_evidence": {
+      "proposal_frontmatter_revision": "61.0",
+      "latest_changelog_revision": "61.1",
+      "visual_current_label": "R60",
+      "pdf_pages_with_R60_current_label": 44,
+      "report_h1_count_per_language": 2,
+      "zh_desktop_hero_orphan": "侧。"
+    },
+    "after_evidence": {
+      "proposal_frontmatter_revision": "62.0",
+      "stable_frontstage_labels": {
+        "zh": "G0 概念稿 · 评审版",
+        "en": "G0 CONCEPT · REVIEW EDITION"
+      },
+      "pdf_pages_with_R60_current_label": 0,
+      "report_h1_count_per_language": 1,
+      "browser_viewports_checked_per_language": 5,
+      "browser_qa_issue_count": 0,
+      "pdf_pages_checked": 44,
+      "fresh_process_byte_identical_builds": 2
+    },
+    "final_pdf_sha256": {
+      "drawings/a3-booklet.pdf": "17244b82ba85d21e77bd65559f7156c4f62c0bc73a6e8b40503f5bbca818a429",
+      "drawings/a3-booklet.en.pdf": "f62f06b03924bec5a8b34f7bfdd786f3effb624b27d307aa25c61a02fbef5864",
+      "drawings/a0-boards.pdf": "a839288f62ea4aef4c7a6ec2469cbcda0cbf49fee363b7149c430a0d83093b30",
+      "drawings/a0-boards.en.pdf": "7c093179837d1ee4c4ad3c003f2e270a009589658b9b28b2a8986ffabaccf75d"
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "metrics_json_frozen": true,
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36",
+      "a3_page_pair": "14 + 14",
+      "a0_page_pair": "8 + 8"
+    },
+    "new_media": false,
+    "cannot_prove": [
+      "independent human bilingual confirmation or certified translation",
+      "official boundary, exact site or approved design",
+      "field performance, accessibility result, public feedback or recovery duration",
+      "G1, authorization, approval or accepted professional duty",
+      "independent legal, file-level or trademark review"
+    ]
+  },
+  "round_62_1_repair": {
+    "date": "2026-08-27",
+    "pr": 4055,
+    "scope": "Close the post-build offline CJK regression in the two final reports and bind the repair to all four final HTML consumers.",
+    "before_evidence": {
+      "report_stylesheet_link_count_per_language": 0,
+      "visual_stylesheet_link_count_per_language": 1,
+      "historical_register_claimed_closed": true
+    },
+    "after_evidence": {
+      "html_surfaces_checked": 4,
+      "stylesheet_link_count_per_surface": 1,
+      "font_face_status": "loaded",
+      "computed_family": "JZ Noto CJK Offline",
+      "core_chinese_string_check": true,
+      "external_http_resource_requests": 0,
+      "screenshot_tofu_count": 0
+    },
+    "generation_boundary": "The shared repository renderer has no package-level stylesheet hook and remains out of submission scope; every future report rerender must repeat the four-surface font regression before manifest refresh.",
+    "new_media": false,
+    "spatial_and_metric_freeze": true,
+    "cannot_prove": [
+      "independent accessibility certification",
+      "official boundary, field result, approval or G1",
+      "independent legal, file-level or trademark review"
+    ]
+  },
   "media_generation_toolchain": {
     "method": "Local deterministic vector and Pillow frame synthesis from package-authored diagrams and the four-state contract; Chrome raster export; FFmpeg H.264 encoding; no network, download, model API, site image, voice, music or audio.",
     "python": "3.14.7",

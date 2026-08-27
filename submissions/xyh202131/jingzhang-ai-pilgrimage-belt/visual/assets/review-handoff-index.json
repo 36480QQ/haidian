@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
-  "index_id": "JZ-REVIEW-HANDOFF-R61.0",
-  "publication_revision": "61.0",
+  "index_id": "JZ-REVIEW-HANDOFF-R62.0",
+  "publication_revision": "62.0",
   "as_of": "2026-08-26",
   "reading_routes": [
     {
@@ -138,6 +138,43 @@
       "bilingual_page_position_review": "pass_contributor_side"
     },
     "boundary": "Searchable/copyable fixed-page text does not establish tagged PDF/UA, accessibility conformance, independent human bilingual confirmation, field truth, approval or G1. Paired offline HTML remains the complete keyboard and machine-readable route.",
+    "new_media": false
+  },
+  "publication_coherence": {
+    "audit_type": "contributor_red_green_publication_qa",
+    "before_state": {
+      "proposal_frontmatter_revision": "61.0",
+      "latest_changelog_revision": "61.1",
+      "visual_current_label": "R60",
+      "pdf_pages_with_R60_current_label": "44/44",
+      "report_h1_count_per_language": 2,
+      "zh_desktop_hero_orphan": "侧。"
+    },
+    "current_state": {
+      "publication_revision": "62.0",
+      "frontstage_label_zh": "G0 概念稿 · 评审版",
+      "frontstage_label_en": "G0 CONCEPT · REVIEW EDITION",
+      "pdf_pages_with_R60_current_label": "0/44",
+      "report_h1_count_per_language": 1,
+      "semantic_hero_lines_per_language": 2,
+      "browser_viewports_checked_per_language": 5,
+      "browser_qa_issue_count": 0,
+      "offline_cjk_surfaces_checked": 4,
+      "offline_cjk_missing_glyph_count": 0,
+      "external_http_resource_request_count": 0,
+      "fresh_process_byte_identical_pdf_build_count": 2
+    },
+    "browser_routes": [
+      "1440x900",
+      "1280x800",
+      "768x1024",
+      "390x844",
+      "320x568",
+      "no_javascript",
+      "reduced_motion"
+    ],
+    "preserved_history": "R59-R61 remain historical method and provenance labels; only the current reviewer-facing label is stable.",
+    "boundary": "This is contributor publication QA, not an independent cold read, public feedback, accessibility certification, professional acceptance, approval or maturity evidence.",
     "new_media": false
   },
   "authority_order": [
