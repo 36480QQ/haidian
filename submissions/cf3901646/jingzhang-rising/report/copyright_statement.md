@@ -4,7 +4,7 @@
 
 Author and submitting account: `cf3901646`. Producing agent: the AI agent declared in `agent.json`.
 
-This ledger covers **every one of the 50 files** in `submissions/cf3901646/jingzhang-rising/`. It is written to be checked, not to be trusted: each row names the actual production method so that a reviewer can re-derive the asset from the package itself.
+This ledger covers **every one of the 42 files** in `submissions/cf3901646/jingzhang-rising/`. It is written to be checked, not to be trusted: each row names the actual production method so that a reviewer can re-derive the asset from the package itself.
 
 This package is a **conceptual design submission**. It contains no commissioned photography, no aerial or satellite imagery, no map tiles, no third-party logos or trademarks, no portraits or identifiable persons, no proprietary or licensed datasets, no CAD or survey drawings, no purchased templates, and no remote web assets. Nothing in this package is an official planning approval, a statutory redline, or a government commitment.
 
@@ -12,7 +12,7 @@ If contrary evidence is found for any item below, the submitter will correct or 
 
 ## 1a. Licence scope and the single reuse rule
 
-`COMMUNITY-DISPLAY-ONLY` is the licence for **every asset class in this package without exception**: body text, figures, drawings, geometry, structured JSON, HTML deliverables, film and posters, and the brand and visual identity system (naming, wordmark, herringbone motif, four-origin names, palette, component library).
+`COMMUNITY-DISPLAY-ONLY` is the licence for **every asset class in this package without exception**: body text, figures, drawings, geometry, structured JSON, HTML deliverables, the cover plate, and the brand and visual identity system (naming, wordmark, herringbone motif, four-origin names, palette, component library).
 
 - It grants **display and review rights only**. It grants no reuse, redistribution, adaptation, sublicensing or commercial right.
 - This package contains **no open-source licence grant and no non-commercial reuse grant**. Where the proposal text recommends that the organiser publish the visual identity under a public licence, that is a recommendation to the rights holder, not a grant made here.
@@ -31,20 +31,17 @@ If contrary evidence is found for any item below, the submitter will correct or 
 | `assets/figures/*.png` (10 files, 5 plates x zh/en) | Original diagrams. The plates are authored as inline SVG built directly from this package's GeoJSON and metrics, then rasterised locally with MuPDF from that same markup, so the raster preview and the inline vector cannot drift apart. Vector-style drawing only - **no photographic layer, no downloaded image, no scanned material, and no AI image-generation model was used at any point.** | Derived only from package geometry, package metrics, and the public task inputs in `sources.json`. | Same display-only license. Do not crop out the provisional-boundary or data-source notes. |
 | `drawings/a3-booklet.pdf`, `a3-booklet.en.pdf`, `a0-boards.pdf`, `a0-boards.en.pdf` | Original PDF page layouts composed locally with PyMuPDF from the same inline SVG figures. The sheets are **fully vector** (zero raster images) and every typeface is embedded as a subset, so the Chinese pages render on a machine with no CJK system font. | No imported drawing, CAD file, map, photograph, or commercial layout template. The embedded CJK face is disclosed in section 4. | Same display-only license. Printed output remains conceptual and provisional. |
 | `report/proposal.html`, `report/proposal.en.html`, `visual/index.html`, `visual/index.en.html` | Original static HTML with inline CSS and inline SVG, assembled locally. | **Zero remote dependencies**: no CDN, no external script, no remote web font, no remote map tile, no iframe, no analytics or tracking, no network request of any kind. Opens correctly from a local filesystem with networking disabled. The one embedded typeface is an Apache-2.0 subset inlined as a `data:` URI and is disclosed in section 4. | Same display-only license. |
-| `assets/media/film.mp4`, `film.en.mp4` (75 s each) | Original motion graphics. Every frame is drawn programmatically by Matplotlib from **the same geometry layers and palette as the static figures**, then encoded frame by frame. Cue-aligned narration is synthesised from the registered transcript as disclosed below. No stock footage, filmed material, third-party clip, motion template, generative video model, sampled sound or cloned voice is used. | Derived only from package geometry and package text; narration uses the exact supplied transcript. | Same display-only license. |
-| `assets/media/film.vtt`, `film-en.vtt`, `film-transcript.md`, `film-transcript-en.md` | Original captions and transcripts, authored to match the narration and on-screen text. | Written for this submission. Provided so the content survives when audio or video cannot be played. | Same display-only license. |
-| `assets/media/film-poster.png`, `film-poster-en.png`, `assets/media/cover.png` | Original still frames and cover plate rendered by the same local Matplotlib pipeline. | Derived only from package geometry and package text. | Same display-only license. |
+| `assets/media/cover.png` | Original cover plate rendered by a local Matplotlib pipeline. | Derived only from package geometry and package text. | Same display-only license. |
 | Name, wordmark and graphic system - "Jingzhang Rising", the ascending stroke motif, the 1909-1949-1980-2026 origin sequence, the colour palette, node codes and wayfinding wording | Original conceptual naming and graphic wording created for this submission. | No third-party mark, logo, mascot, typeface design, character, photograph, or registered trademark is incorporated. The character-form motif is used as a **public historical and typographic reference**, not as a copy of any existing identity. | Do not imply sponsorship, trademark registration, exclusivity, or organizer endorsement. |
 
 ## 3. Audio disclosure
 
-Both films contain **synthetic narration only**: the Chinese film uses Microsoft `zh-CN-YunyangNeural` (professional/news male voice) and the English film uses Microsoft `en-US-AndrewNeural` (warm/confident male voice), rendered at build time through the open-source `edge-tts` client. The narration is generated cue by cue from the exact text in `film.vtt` / `film-en.vtt`, then locally aligned, compressed and loudness-normalised before AAC encoding.
+**This package contains no audio and no video.** An earlier revision shipped a bilingual proposal film with synthetic narration; it has been withdrawn in full, together with its captions, transcripts and posters, because its narration asserted historical claims this package could not verify and the audio could not be re-recorded. Nothing in the current package plays sound or moving image.
 
-- No human voice was recorded, imitated or cloned; no biometric voice sample was supplied.
+- No human voice was recorded, imitated or cloned; no biometric voice sample was ever supplied.
 - No music, sampled recording, ambient sound or sound effect is present.
-- No voice model, service credential or TTS software is redistributed; only the rendered narration inside the two MP4 files is submitted.
-- The WebVTT captions and full transcripts remain equivalent fallbacks, and the films do not autoplay.
-- The rendered voice output is non-exclusive and makes no claim of performer endorsement or ownership of the underlying synthetic voice.
+- No voice model, service credential or TTS software is redistributed.
+- Every remaining deliverable is a static file: text, vector drawings, raster figures and offline HTML.
 
 ## 4. Typeface disclosure
 
@@ -62,17 +59,16 @@ Precise position:
 - **PDF output embeds only the glyph subsets** required to display the sheets. Both `a3-booklet*.pdf` and `a0-boards*.pdf` report every font as embedded.
 - **PNG output contains no font data at all** - glyphs are rasterised to pixels during rendering.
 - **`Microsoft YaHei` and `PingFang SC` remain first in the CSS stacks** so a reader who has them keeps their preferred rendering; they are named as local preferences only and no Microsoft font file is copied, embedded, or redistributed anywhere in this package.
-- The films, posters and cover plate were rendered in an earlier build with `Microsoft YaHei` read from the build machine's system font directory; that output is rasterised pixels and carries no font data.
+- The cover plate was rendered in an earlier build with `Microsoft YaHei` read from the build machine's system font directory; that output is rasterised pixels and carries no font data.
 
 Anyone rebuilding this package can substitute any openly licensed CJK family (for example Noto Sans CJK / Source Han Sans, SIL Open Font License 1.1). Layout does not depend on the specific typeface: every label position is computed from measured glyph advances at build time.
 
 ## 5. Software and build-chain notices
 
-The package was built locally with Python and the following open-source libraries, used strictly as **build-time tools**: PyMuPDF / MuPDF (SVG-to-vector-PDF conversion, sheet composition and raster preview rendering), `fontTools` (subsetting the Apache-2.0 CJK face disclosed in section 4), Shapely (geometry construction and clip-path baking), PyProj (EPSG:4548 reprojection), NumPy (numeric arrays), Matplotlib (film frames and the earlier figure builds), `edge-tts` (requesting the disclosed synthetic narration), and `imageio-ffmpeg` (supplying the FFmpeg binary used to encode and master the two MP4 files).
+The package was built locally with Python and the following open-source libraries, used strictly as **build-time tools**: PyMuPDF / MuPDF (SVG-to-vector-PDF conversion, sheet composition and raster preview rendering), `fontTools` (subsetting the Apache-2.0 CJK face disclosed in section 4), Shapely (geometry construction and clip-path baking), PyProj (EPSG:4548 reprojection), NumPy (numeric arrays), and Matplotlib (the cover plate and the earlier figure builds).
 
 - Apart from the Apache-2.0 Droid Sans Fallback subset disclosed in section 4, none of these libraries, their source code, their bundled fonts, their binaries, or their brand assets are redistributed in this submission. Only the rendered output is submitted.
-- The FFmpeg binary supplied by `imageio-ffmpeg` was executed as an external encoder on the build machine and is **not** included in the package.
-- The two MP4 files carry H.264 video plus mono AAC narration in a fast-start MP4 container with `yuv420p` pixel format, chosen for broad browser and offline playback. No codec implementation is redistributed here; only the encoded output is submitted.
+- Earlier revisions used `edge-tts` and `imageio-ffmpeg` to produce the proposal film. That film has been withdrawn (section 3); neither tool contributes to any current deliverable, and no binary from either was ever included in the package.
 - No third-party code is executed by any delivered HTML file.
 
 ## 6. Sources, standards and citation limits
