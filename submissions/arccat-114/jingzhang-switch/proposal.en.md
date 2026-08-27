@@ -5,33 +5,79 @@ language: "en"
 translation_of: "proposal.md"
 proposal_format_version: "2"
 license: "CC-BY-4.0"
-summary: "The Jing-Zhang corridor does not need another isolated AI park. It needs a test line that lets experiments enter daily life and stop when public value is harmed. SWITCH 2.0 uses one north-south public spine, three working yards, two coordination sidings, and four release gates to connect 12 conceptual scenarios, five slow variables, 18 renewal projects, and 45 recalculable metrics into a testable, reviewable, and withdrawable urban-design proposal. All spatial boundaries remain provisional and all implementation content is conceptual."
+summary: "SWITCH 2.0 starts with one small public problem: an ordinary resident finds a night route uncomfortable but cannot say what should be repaired. At Zhongzhiyuan the feeling becomes a minimum problem card; at AI Origin candidate solutions and unknowns are compared; at Dazhongsi a reversible real-world test can PASS, RETURN, or RETIRE. Three yards and seven steps turn a vague complaint into a verifiable, contestable, and returnable public action; protocols, ledgers, metrics, and drawings remain backend evidence, and all implementation content is conceptual."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "robot-delivery-low-speed"]
-iteration: "v4.2-spatial-rebuild"
+iteration: "v5.0-one-person-three-stations"
 ---
 
 # THE SWITCH 2.0
 
-## A public test line that can stop
+## One-sentence scheme
 
-In 1909, Zhan Tianyou used a herringbone switchback to carry trains up a slope. In 2019, the Jing-Zhang high-speed line turned “35 to 350 kilometres per hour” into a new speed story. Today AI enters the same corridor: models move quickly, while shade, accessibility, local livelihoods, and public trust move slowly. This proposal asks one question: how can a city let AI enter ordinary life without being permanently locked by one successful demonstration?
+SWITCH is not an AI device and not a showroom that asks residents to arrive with a finished brief. It is a city test line that turns a vague public discomfort into a verifiable action and can switch back to human service when it fails: one ordinary resident carries one small issue through three yards and seven steps, leaving a problem card, candidate solutions, and a real-world judgment while unresolved items remain unresolved.
 
-> **Do not add an isolated AI park; turn the already urbanized Jing-Zhang corridor into a public test line that can pause.**
+## One person, one small issue
 
-“Pauseable” is a chain that a person can walk: read the rule at the entrance, keep a human option on site, leave an objection, and move forward only after review. Technology may be tested quickly; public space and public service cannot be permanently locked by one successful demonstration [source:JZ-HERRINGBONE-PAPER] [source:SRC-JINGZHANG-35-350].
+The proposal uses a **resident who walks home from the Dazhongsi station area each evening** as a composite fictional person. She does not need technical knowledge or a complete application. Her issue is small but recognizable: **a night route from the station to the neighbourhood feels uncomfortable; direction, lighting, and places to pause may each have a break, but she cannot say what exactly should be repaired.**
 
-The chain is also constrained by the taskbook’s public-testing requirement and the generative-AI service standard; a technical demonstration is not written as a permanent space or public-service promise [source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES].
+This is a synthetic scenario, not a field interview or a recorded complaint. The proposal does not invent a measurement for her; it makes “not yet known” the content of the next step.
+
+### Seven steps: from “I cannot explain it” to “we can return”
+
+![One person, one issue, three yards, seven steps (concept diagram)](assets/figures/first-journey.en.svg)
+
+| Step | What she experiences | What it produces | What it cannot claim yet |
+|---|---|---|---|
+| 1. Notice | She walks an uncomfortable night segment and remembers the rough location and feeling | A plain-language issue | The cause has not been measured |
+| 2. Describe | At Zhongzhiyuan, oral, paper, and on-site marks add where, when, and who is affected | An initial split between feeling, fact, and guess | A guess is not existing-conditions data |
+| 3. Form | A staff member reduces it to a minimum problem card with unknown owners and items to measure | Problem card, unknowns, human entry | No ownership or construction permission is promised |
+| 4. Compare | At AI Origin, three candidates are visible: static wayfinding repair, lighting/visibility adjustment, and a small pause point | Candidate card and evidence-gap card | AI cannot make the final choice |
+| 5. Test | A removable, observable minimum intervention receives a short real-world test at Dazhongsi | Observation, human feedback, and anomaly records | A concept test is not a completed project |
+| 6. Judge | She and site staff walk it again; the result is only PASS, RETURN, or RETIRE | Pass, return, or retirement record | Clicks cannot replace public judgment |
+| 7. Return/exit | A wrong result returns to the issue or candidate step; a maintenance issue returns to existing human governance | Return reason, human takeover, or removal proof | No claim of an automatic AI loop or permanent solution |
+
+Within 30 seconds, a first-time reader can retell the point: one person brings one night-route problem, turns “I cannot explain it” into a problem card, compares candidates, and lets ordinary use mark one as pass, return, or retire. If an unknown remains, she can stop and human service continues.
+
+## Why the three yards cannot be swapped
+
+The three yards are not three similar parks. They are three non-interchangeable actions in the life of one small issue. Each has one question, one action, and one output.
+
+| Yard | Its one question | What it does | What it does not do |
+|---|---|---|---|
+| **Zhongzhiyuan** | “Something feels wrong, but where is the problem?” | Hear ordinary language, inspect the place, separate feeling/fact/guess, and form the minimum problem card | Generate solutions, score KPIs, or make the final governance decision |
+| **AI Origin** | “Now that the issue is formed, what can we try and what evidence is missing?” | Generate candidates, expose assumptions and unknowns, and support comparison and rejection | Treat an AI demo as the answer or choose for the resident |
+| **Dazhongsi** | “Does this candidate work in daily life?” | Run a removable test, re-walk, observe, collect human feedback, and issue PASS/RETURN/RETIRE | Turn a test into permanent deployment or remove the human window |
+
+Zhongzhiyuan **hears and narrows the issue**, AI Origin **opens uncertainty for comparison**, and Dazhongsi **lets daily use make a reversible judgment**. Together they form the minimum discover—form—compare—test—judge—return loop [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003].
+
+## What happens when it fails
+
+If a lighting adjustment does not improve the night route, or a new sign makes the path harder for another user to read, the proposal freezes the candidate, keeps the human path available, and returns according to the failure:
+
+- **The issue is still unclear:** return to Zhongzhiyuan and add location, time, affected people, and the feeling/fact/guess split.
+- **Evidence is insufficient:** return to AI Origin and update the evidence-gap card; no authorization or reliable baseline means no expansion.
+- **The candidate is wrong:** return to comparison and keep the rejection reason instead of rewriting failure as success.
+- **It is ordinary maintenance:** return the design task to existing street, park, or property governance, where people continue the work.
+- **Safety, privacy, or rights are touched:** stop immediately, hand over to people, and remove reversible parts when needed with an exit record.
+
+This return chain attaches to `switch-protocol.json`, `validation-ledger.json`, and `governance-ledger.json`. They are backend evidence and record formats, not a fourth yard or a parallel governance system. Static wayfinding, paper feedback, and a human window remain available at every stage [standard:GENERATIVE-AI-INTERIM-MEASURES] [depth:three_key_area_detailed_design].
+
+## V. A public test line that can pause
+
+In 1909, Zhan Tianyou used a herringbone switchback to carry trains up a slope. SWITCH borrows the gesture for another kind of switching: the city does not chase model speed; an issue switches between responsibilities while a return line remains open [source:JZ-HERRINGBONE-PAPER] [source:SRC-JINGZHANG-35-350].
+
+The chain is constrained by the taskbook’s public-testing requirement and the generative-AI service standard; a technical demonstration is not written as a permanent space or public-service promise [source:AGENT-TASKBOOK] [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
 ![Overall concept and spatial evidence](assets/figures/site-overview.en.png)
 
-> **How to read the drawing.** This is not an investment prospectus: the brass spine is the public-access line, the three dark nodes are the measuring, negotiating, and fulfillment yards, and the fine lines are negotiable east-west interfaces. The pale boundary is provisional, not a red line.
+> **How to read the drawing.** This is not an investment prospectus: the brass spine is the public-access line, the three dark nodes are problem-forming, candidate-comparison, and real-world fulfillment, and the pale boundary is provisional, not a red line.
 
-### Walk the first 100 metres
+### The first 100 metres: make the seven steps observable
 
-The first opening does not begin with industrial scale. It begins with an ordinary public route. In year one, a roughly 100-metre existing interface is treated as a conceptual demonstration: the **Zero Baseline Marker** is the entrance; shade, static wayfinding, and a soil observation window form the middle; the far end reaches a table where residents, caregivers, riders, and maintenance staff can draw the route together. The 100 metres is not an approved construction quantity or red line. It compresses “measure, negotiate, then test” into one reviewable spatial relationship.
+The first opening does not begin with industrial scale. It begins with an ordinary public route. In year one, a roughly 100-metre existing interface is treated as a conceptual demonstration: the **Zero Baseline Marker** is the entrance; shade, static wayfinding, and a soil observation window form the middle; the far end reaches a table where residents, caregivers, riders, and maintenance staff can draw the route together. The 100 metres is not an approved construction quantity or red line. It compresses “discover—form—compare—test—judge—return” into one reviewable spatial relationship.
 
-A person walking the line first sees milepost, direction, current state, and human entry—not a screen that only plays a demonstration. Sensor readings and manual profiles remain side by side. When an algorithm proposes a “safer” route, people can mark discomfort, detours, and inaccessible points on the same table [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002].
+A person walking the line first sees milepost, direction, current state, and human entry—not a screen that only plays a demonstration. Sensor readings and manual profiles remain side by side. When an algorithm proposes a candidate route, people can mark discomfort, detours, and inaccessible points on the same table [data:geometry/key_areas.geojson#PROV-KEY-001] [data:geometry/key_areas.geojson#PROV-KEY-002].
 
 At the Dazhongsi end, a service window and small shops remain present, while the annual ledger shows retained, changed, and retired projects together. A red card turns the signal yellow, freezes data, keeps the human path running, and removes reversible parts by record [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_key_area_detailed_design].
 
@@ -45,7 +91,17 @@ The difference is registered rather than hidden; the official boundary will trig
 
 Landmarks, scenarios, projects, funding categories, and responsibility types in this booklet are conceptual designs or interfaces for further work. Where field interviews, slow-variable baselines, or ownership records are absent, the status is explicitly pending measurement, verification, or authorization. A blank is a quality control decision, not a missing page [depth:risk_missing_data].
 
-## I. Design basis and source register
+### Evidence states: designed does not mean enacted
+
+| State | What this package can say | What it cannot say |
+|---|---|---|
+| demonstrated | Text, drawings, structured protocols, and the deterministic generation chain exist | A concept demonstration is not a field trial |
+| documented | Sources, assumptions, risks, return, and exit rules are recorded | A record is not a resident-use result |
+| provisional | Geometric relationships, area differences, and spatial interfaces support concept recalculation | The site is approved, owned, or built |
+| unknown | Interviews, slow-variable baselines, access conditions, and ownership remain explicit gaps | A synthetic scenario cannot fill an unknown |
+| future validation | Authorized parties must perform field walks, professional review, and public feedback later | Effects, acceptance, or performance cannot be claimed in advance |
+
+## VI. Design Basis and Source List
 
 The basis has four layers: the announcement sets the project boundary, the agent taskbook sets the questions, planning and AI standards set professional floors, and public reporting supplies historical and industrial context. No layer is allowed to overrule another.
 
@@ -58,7 +114,7 @@ The basis has four layers: the announcement sets the project boundary, the agent
 
 The formal reading is “design recommendation + evidence interface.” Each recommendation must answer four questions: where is it placed, whom does it serve, who reviews it, and how is it withdrawn if it fails [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [source:SOURCE-REGISTRY].
 
-## II. Three-scope working framework
+## VII. Three-Level Scope Framework
 
 The three scales carry different responsibilities; one plan is not simply enlarged three times.
 
@@ -74,7 +130,7 @@ The three key areas are not three isolated parks. They are one minimum loop: Zho
 
 No scenario moves directly from a laboratory to belt-wide expansion; the sequence is measure, negotiate, then fulfill [data:geometry/key_areas.geojson#PROV-KEY-003] [depth:three_level_scope_framework].
 
-## III. Industry and future-city research
+## VIII. Coordinated Research Area: Industry and Future City Research
 
 ### Three yards and two sidings: making switching operational
 
@@ -82,9 +138,9 @@ SWITCH 2.0 uses one spine, three working yards, and two coordination sidings:
 
 | Spatial role | Area/interface | Conversion problem | What it does not promise |
 |---|---|---|---|
-| Departure Yard | AI Origin Community | Start founders, residents, and universities from real questions | Tenants or investment results |
-| Acceleration Track | Zhongzhiyuan | Baselines, sandboxes, governance, and low-risk industry tests | Compute, orders, or product deployment |
-| Marshalling Yard | Dazhongsi AI industrial cluster | Test service, consumption, human windows, and small shops together | Business returns or forced replacement of uses |
+| Problem-forming yard | Zhongzhiyuan | Turn ordinary language into a minimum problem card with feeling, fact, guess, and unknowns | Equipment scale, compute, or industry orders |
+| Candidate-comparison yard | AI Origin Community | Put candidates, assumptions, evidence gaps, and human choice in public view | Tenants or automatic AI decisions |
+| Real-world fulfillment yard | Dazhongsi AI industrial cluster | Test service, consumption, human windows, and small shops together in daily life | Business returns or forced replacement of uses |
 | Service Siding | Zhongguancun technology-services interface | Standards, legal support, talent, funding, and compute channels | A named institution or budget |
 | Scenario Siding | Xiaoyuehe and community interfaces | Authorized real questions and public-service feedback | Personal or non-public data exchange |
 
@@ -122,7 +178,7 @@ Ecosystem support is not written as a company list but as three reversible resou
 
 The eight elements—land, space, industry, funding, talent, compute, data, and scenarios—follow one sequence: apply with object, permission, and responsibility; leave a version, human review, and public artifact; then release resources, remove components, and publish the difference. They are replaceable collaboration interfaces, not an existing industrial scale.
 
-## IV. Overall urban renewal and detailed urban design
+## IX. Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 ### A spine, three yards, and three interfaces
 
@@ -143,7 +199,7 @@ Scenario-Code is an auxiliary design language. It records scenario openness, ser
 
 Scenario-Code keeps only three readable states: open experience, bookable collaboration, and controlled test. They are not statutory metrics. They remind operators that the closer a scene comes to real data and real service, the earlier its named owner, human entry, objection record, and exit proof must exist. Professional development still depends on regulatory planning, ownership, fire safety, transport, and measured conditions [depth:development_intensity_controls] [depth:three_key_area_detailed_design].
 
-## V. Detailed key-area design
+## X. Detailed Design of Key Areas
 
 ![Three key areas: index and design tasks](assets/figures/key-areas.en.png)
 
@@ -161,18 +217,18 @@ The ground floor is a public table where disagreement can stop, rather than a sh
 
 Dazhongsi translates “launch” into daily questions: Is the human window still there? Did waiting actually shrink? Can small shops remain? Are seats under trees used? A public-ledger wall, service-appeal desk, annual jury table, and small fulfillment market form the yard. Retained and retired projects are shown together. Retirement is evidence that the system can limit loss. Success is not ranked by traffic or financing, but by equivalent human service, closed objections, and actual removal after failure [data:geometry/key_areas.geojson#PROV-KEY-003].
 
-## VI. AI ecosystem, people, and AI+ scenarios
+## XI. AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 ### How the six agent tasks become one chain
 
 | Task | Rebuilt deliverable | Checkable location |
 |---|---|---|
-| agent.1 Overall concept | SWITCH name, three yards/two sidings, Scenario-Code, brand direction | Sections I, III, IV and overview |
-| agent.2 Ecosystem | Seven cases, apply-and-exit mechanisms for compute, funding, and data, five regional interfaces | Section III and `sources.json` |
+| agent.1 Overall concept | SWITCH name, three yards/two sidings, Scenario-Code, brand direction | Sections V, VIII, IX and overview |
+| agent.2 Ecosystem | Seven cases, apply-and-exit mechanisms for compute, funding, and data, five regional interfaces | Section VIII and `sources.json` |
 | agent.3 AI+ scenarios | Twelve cards, three industry tests, six personas, human fallback | This section and `switch-protocol.json` |
-| agent.4 Public space | Spine, cross-connections, five landmarks, ten reversible components | Sections VIII, IX and layers |
-| agent.5 Culture | Railway history, internationally readable wayfinding, clearance-first heritage work | Sections I, III, IX, XII |
-| agent.6 Long-term operation | Four-season rhythm, annual ledger, relay ownership, exit | Section X and `validation-ledger.json` |
+| agent.4 Public space | Spine, cross-connections, five landmarks, ten reversible components | Sections XIII, XIV and layers |
+| agent.5 Culture | Railway history, internationally readable wayfinding, clearance-first heritage work | Sections V, VIII, XIV, XVII |
+| agent.6 Long-term operation | Four-season rhythm, annual ledger, relay ownership, exit | Section XV and `validation-ledger.json` |
 
 ### Six user groups: public value before technical convenience
 
@@ -220,13 +276,13 @@ Scenarios are the fast track; slow variables are the chassis. SV-01 canopy and s
 
 Full anomaly handling, comparison design, validation phases, public fields, and scenario-card verification methods are in `visual/assets/validation-ledger.json`. When sensor and manual records conflict, a participant exits, or authorization is missing, the anomaly remains and the point/card conclusion pauses; anomalies are not deleted to manufacture a trend. The current state is pending measurement, not an existing score [metric:slow_variable_baseline] [depth:risk_missing_data].
 
-## VII. Land use, building scale, and retain-renovate-demolish
+## XII. Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
 The submission geometry supplies 26 conceptual land-use units, building footprints, and public-space relationships for coverage, adjacency, and drawing checks. It does not decide the fate of any real building. The sequence is fixed: retain, low-impact repair, reversible insertion, then a demolition decision only after professional review. Statutory FAR, height, density, setbacks, ownership, and municipal capacity remain pending [data:geometry/buildings.geojson#BLDG-001] [metric:floor_area_ratio] [assumption:A-CONTROLS-003].
 
 Buildings are not containers for AI. Ground floors prioritize human service, toilets, continuous accessible entrances, non-digital feedback, and removable exhibitions; upper floors may then host incubation, education, and enterprise service. Every new component needs installation, maintenance, authorization, and removal fields before entering the opening list [standard:MOHURD-LAND-USE-CLASSIFICATION].
 
-## VIII. Transport, rail, municipal systems, and public service
+## XIII. Transport, Rail, Municipal Infrastructure, and Public Services
 
 ![Walking, mobility, and blue-green public-space system](assets/figures/mobility-bluegreen.en.png)
 
@@ -238,7 +294,7 @@ Transport design gives interfaces, not engineering conclusions. The spine stays 
 
 Municipal systems, fire safety, rail interfaces, bridges, tunnels, and underground space lack cleared evidence. Section widths and equipment in the drawings only explain shared relationships. Detailed work should begin with existing cross-sections, ownership, capacity, and safety review, followed by feasibility work [depth:municipal_new_infrastructure] [depth:risk_missing_data].
 
-## IX. Blue-green space, public space, and urban character
+## XIV. Blue-Green Network, Public Space, and Urban Character
 
 Green, public-space, and building ratios are conceptual quantities derived from the submission geometry, not statutory values. The formulas, sources, confidence, and pending status of 45 metrics are in `metrics.json`. Spatial quality is measured through bodies: summer shade, post-rain recovery, wheelchair detours, children’s routes, and local-shop continuity [metric:green_ratio] [metric:public_space_ratio].
 
@@ -271,7 +327,7 @@ Heritage placement, construction-control areas, lighting, and wayfinding require
 
 All components are reference specifications, not construction drawings; removal should restore the original interface [depth:blue_green_public_space].
 
-## X. Renewal projects, policy interfaces, and phasing
+## XV. Renewal Projects, Implementation Policy, and Phasing
 
 ### Six launch packages covering eighteen conceptual projects
 
@@ -301,7 +357,7 @@ Spring sets plots and permissions; summer runs route co-tests and red-card drill
 
 The opening action is only a 100-metre demonstration, one red-card withdrawal drill, and three no-permanent-construction pilots (SW-01, SW-05, SW-09). If they fail, they shrink or leave. Investment, traffic, or event photographs cannot substitute for acceptance. The machine record for seasons, the annual ledger, and responsibility fields is `validation-ledger.json` [source:DESIGN-CONCEPT-SWITCH].
 
-## XI. Metrics, recalculation, and compliance matrix
+## XVI. Metrics, Area Recalculation, and Compliance Matrix
 
 Metrics are divided into three classes:
 
@@ -315,7 +371,7 @@ The complete list and formulas for 45 metrics are in `metrics.json`. Key areas, 
 
 Whenever an official boundary, regulatory plan, or existing-conditions dataset arrives, the deterministic pipeline recalculates the whole package and records a before/after table in `changelog.md`; local patches must not conceal boundary change [assumption:A-BOUNDARY-001].
 
-## XII. Risk, copyright, and compliance
+## XVII. Risk, copyright, and compliance
 
 The risk register covers data privacy, heritage, ownership, public trust, engineering feasibility, boundary misreading, operating succession, and copyright in `risk.json`. This rebuild has three controls:
 
@@ -327,7 +383,7 @@ The risk register covers data privacy, heritage, ownership, public trust, engine
 
 The narrative, bilingual translation, drawings, and offline page were produced with AI assistance; geometry and metrics are recalculated by deterministic pipelines. Generation and authorization details are in `report/copyright_statement.md`. The package uses CC-BY-4.0; all scenarios remain conceptual and require separate authorization and professional review before implementation [source:SOURCE-REGISTRY] [standard:GENERATIVE-AI-INTERIM-MEASURES] [depth:risk_missing_data].
 
-## XIII. References
+## XVIII. References
 
 1. “International Urban Design Scheme Competition for the Centennial Jing-Zhang AI Innovation Belt,” Beijing Municipal Commission of Planning and Natural Resources, Haidian Branch, 2026 [source:OFFICIAL-ANNOUNCEMENT].
 2. “Open-source Competition Taskbook Extract for Global Intelligent Agents,” 2026 [source:AGENT-TASKBOOK].

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">One person, one issue, three yards, seven steps</title>
+  <desc id="desc">An ordinary resident carries a night-route problem through Zhongzhiyuan, AI Origin, and Dazhongsi: notice, describe, form, compare, test, judge, then return or exit.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101c32"/><stop offset="1" stop-color="#172b43"/></linearGradient>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e2ad54"/><stop offset="1" stop-color="#8fd4c8"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#050b15" flood-opacity=".25"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M100 810 H1500" stroke="#314760" stroke-width="2"/>
+  <path d="M100 116 H1500" stroke="#dca956" stroke-width="3" opacity=".75"/>
+  <text x="100" y="78" fill="#f4d99a" font-family="Arial,Microsoft YaHei,sans-serif" font-size="24" letter-spacing="4">SWITCH 2.0 / PUBLIC TEST LINE</text>
+  <text x="100" y="170" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="54" font-weight="700">One person, one issue, three yards</text>
+  <text x="100" y="218" fill="#b8c9d8" font-family="Arial,Microsoft YaHei,sans-serif" font-size="26">One ordinary resident · one night-route problem · one public action with a return line</text>
+
+  <rect x="100" y="285" width="410" height="390" rx="22" fill="#203c55" stroke="#5086a0" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="550" y="285" width="410" height="390" rx="22" fill="#273950" stroke="#7d7696" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="1000" y="285" width="500" height="390" rx="22" fill="#244a4d" stroke="#63a899" stroke-width="2" filter="url(#shadow)"/>
+
+  <text x="140" y="340" fill="#8fd4c8" font-family="Arial,Microsoft YaHei,sans-serif" font-size="22" font-weight="700">01 / ZHONGZHIYUAN</text>
+  <text x="140" y="380" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="31" font-weight="700">Turn “I can’t explain it” into a card</text>
+  <text x="140" y="428" fill="#c6d5df" font-family="Arial,Microsoft YaHei,sans-serif" font-size="22">Notice → Describe → Form</text>
+  <text x="140" y="484" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="23">She names the uncomfortable segment</text>
+  <text x="140" y="522" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="23">Mark time, place, and affected people</text>
+  <text x="140" y="560" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="23">Form the minimum issue and its unknowns</text>
+  <text x="140" y="627" fill="#e2ad54" font-family="Arial,Microsoft YaHei,sans-serif" font-size="20">Output: issue card / human entry</text>
+
+  <text x="590" y="340" fill="#d9b4e2" font-family="Arial,Microsoft YaHei,sans-serif" font-size="22" font-weight="700">02 / AI ORIGIN</text>
+  <text x="590" y="380" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="31" font-weight="700">Open candidates and unknowns</text>
+  <text x="590" y="428" fill="#c6d5df" font-family="Arial,Microsoft YaHei,sans-serif" font-size="22">Compare</text>
+  <text x="590" y="484" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="23">Static wayfinding repair</text>
+  <text x="590" y="522" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="23">Lighting / visibility adjustment</text>
+  <text x="590" y="560" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="23">Pause point + evidence gap</text>
+  <text x="590" y="627" fill="#e2ad54" font-family="Arial,Microsoft YaHei,sans-serif" font-size="20">Output: candidate card / human choice</text>
+
+  <text x="1040" y="340" fill="#8fd4c8" font-family="Arial,Microsoft YaHei,sans-serif" font-size="22" font-weight="700">03 / DAZHONGSI</text>
+  <text x="1040" y="380" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="31" font-weight="700">Let daily use make the judgment</text>
+  <text x="1040" y="428" fill="#c6d5df" font-family="Arial,Microsoft YaHei,sans-serif" font-size="22">Test → Judge → Return / Exit</text>
+  <text x="1040" y="484" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="23">Only a removable, observable minimum move</text>
+  <text x="1040" y="522" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="23">She re-walks it with staff; human service stays</text>
+  <text x="1040" y="560" fill="#ffffff" font-family="Arial,Microsoft YaHei,sans-serif" font-size="23">PASS / RETURN / RETIRE</text>
+  <text x="1040" y="627" fill="#e2ad54" font-family="Arial,Microsoft YaHei,sans-serif" font-size="20">Output: observation / exit proof</text>
+
+  <path d="M510 480 H550 M960 480 H1000" stroke="url(#route)" stroke-width="8"/>
+  <path d="M538 466 l18 14 -18 14" fill="none" stroke="#e2ad54" stroke-width="5"/>
+  <path d="M988 466 l18 14 -18 14" fill="none" stroke="#8fd4c8" stroke-width="5"/>
+  <g fill="#f3cf83" stroke="#172b43" stroke-width="6"><circle cx="150" cy="755" r="28"/><circle cx="365" cy="755" r="28"/><circle cx="580" cy="755" r="28"/><circle cx="795" cy="755" r="28"/><circle cx="1010" cy="755" r="28"/><circle cx="1225" cy="755" r="28"/><circle cx="1440" cy="755" r="28"/></g>
+  <path d="M150 755 H1440" stroke="url(#route)" stroke-width="5"/>
+  <g fill="#172b43" font-family="Arial,Microsoft YaHei,sans-serif" font-size="22" font-weight="700" text-anchor="middle"><text x="150" y="763">1</text><text x="365" y="763">2</text><text x="580" y="763">3</text><text x="795" y="763">4</text><text x="1010" y="763">5</text><text x="1225" y="763">6</text><text x="1440" y="763">7</text></g>
+  <g fill="#d9e5eb" font-family="Arial,Microsoft YaHei,sans-serif" font-size="18" text-anchor="middle"><text x="150" y="850">Notice</text><text x="365" y="850">Describe</text><text x="580" y="850">Form</text><text x="795" y="850">Compare</text><text x="1010" y="850">Test</text><text x="1225" y="850">Judge</text><text x="1440" y="850">Return / Exit</text></g>
+  <text x="100" y="270" fill="#90a9ba" font-family="Arial,Microsoft YaHei,sans-serif" font-size="18">Composite scenario · not a field interview · not a completed project · unknowns remain unknown</text>
+</svg>

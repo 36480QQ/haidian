@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">一人一事三站七步旅程</title>
+  <desc id="desc">一个普通居民带着夜间通行问题，经过众智园、AI 原点和大钟寺，完成发现、描述、成形、比较、试验、判断、返回或退出。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101c32"/>
+      <stop offset="1" stop-color="#172b43"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e2ad54"/>
+      <stop offset="1" stop-color="#8fd4c8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#050b15" flood-opacity=".25"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M100 810 H1500" stroke="#314760" stroke-width="2"/>
+  <path d="M100 116 H1500" stroke="#dca956" stroke-width="3" opacity=".75"/>
+  <text x="100" y="78" fill="#f4d99a" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" letter-spacing="4">SWITCH 2.0 / PUBLIC TEST LINE</text>
+  <text x="100" y="170" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="54" font-weight="700">一人一事，三站七步</text>
+  <text x="100" y="218" fill="#b8c9d8" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="26">一个普通居民 · 一个夜间通行问题 · 一条可以返回的公共行动</text>
+
+  <rect x="100" y="285" width="410" height="390" rx="22" fill="#203c55" stroke="#5086a0" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="550" y="285" width="410" height="390" rx="22" fill="#273950" stroke="#7d7696" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="1000" y="285" width="500" height="390" rx="22" fill="#244a4d" stroke="#63a899" stroke-width="2" filter="url(#shadow)"/>
+
+  <text x="140" y="340" fill="#8fd4c8" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="700">01 / 众智园</text>
+  <text x="140" y="380" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="32" font-weight="700">把“说不清”变成问题卡</text>
+  <text x="140" y="428" fill="#c6d5df" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22">发现 → 描述 → 成形</text>
+  <text x="140" y="484" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23">她说出不舒服的路段</text>
+  <text x="140" y="522" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23">现场标记时间、位置、影响者</text>
+  <text x="140" y="560" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23">形成最小问题卡与未知项</text>
+  <text x="140" y="627" fill="#e2ad54" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20">输出：问题卡 / 人工入口</text>
+
+  <text x="590" y="340" fill="#d9b4e2" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="700">02 / AI 原点</text>
+  <text x="590" y="380" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="32" font-weight="700">把候选和未知项摊开</text>
+  <text x="590" y="428" fill="#c6d5df" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22">比较</text>
+  <text x="590" y="484" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23">静态导视修补</text>
+  <text x="590" y="522" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23">照明 / 可见性调整</text>
+  <text x="590" y="560" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23">可停留点补足 + 证据缺口</text>
+  <text x="590" y="627" fill="#e2ad54" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20">输出：候选卡 / 人工选择点</text>
+
+  <text x="1040" y="340" fill="#8fd4c8" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="700">03 / 大钟寺</text>
+  <text x="1040" y="380" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="32" font-weight="700">让日常使用做判断</text>
+  <text x="1040" y="428" fill="#c6d5df" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22">试验 → 判断 → 返回 / 退出</text>
+  <text x="1040" y="484" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23">只做可拆、可撤、可观察的最小介入</text>
+  <text x="1040" y="522" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23">她与现场人员复走，保留人工路径</text>
+  <text x="1040" y="560" fill="#ffffff" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23">PASS / RETURN / RETIRE</text>
+  <text x="1040" y="627" fill="#e2ad54" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20">输出：观察记录 / 退出证明</text>
+
+  <path d="M510 480 H550 M960 480 H1000" stroke="url(#route)" stroke-width="8"/>
+  <path d="M538 466 l18 14 -18 14" fill="none" stroke="#e2ad54" stroke-width="5"/>
+  <path d="M988 466 l18 14 -18 14" fill="none" stroke="#8fd4c8" stroke-width="5"/>
+
+  <g fill="#f3cf83" stroke="#172b43" stroke-width="6">
+    <circle cx="150" cy="755" r="28"/><circle cx="365" cy="755" r="28"/><circle cx="580" cy="755" r="28"/>
+    <circle cx="795" cy="755" r="28"/><circle cx="1010" cy="755" r="28"/><circle cx="1225" cy="755" r="28"/><circle cx="1440" cy="755" r="28"/>
+  </g>
+  <path d="M150 755 H1440" stroke="url(#route)" stroke-width="5"/>
+  <g fill="#172b43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="700" text-anchor="middle">
+    <text x="150" y="763">1</text><text x="365" y="763">2</text><text x="580" y="763">3</text><text x="795" y="763">4</text><text x="1010" y="763">5</text><text x="1225" y="763">6</text><text x="1440" y="763">7</text>
+  </g>
+  <g fill="#d9e5eb" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="18" text-anchor="middle">
+    <text x="150" y="850">发现</text><text x="365" y="850">描述</text><text x="580" y="850">成形</text><text x="795" y="850">比较</text><text x="1010" y="850">试验</text><text x="1225" y="850">判断</text><text x="1440" y="850">返回 / 退出</text>
+  </g>
+  <text x="100" y="270" fill="#90a9ba" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="18">合成情境示意 · 非现场访谈 · 非已完成工程 · 未知项保持未知</text>
+</svg>
