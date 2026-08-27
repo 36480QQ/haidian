@@ -2,6 +2,7 @@
 
 ## v9.2 - 2026-08-27
 
+- Closed the formal-review readability blocker by adding a locally bundled Noto Sans SC glyph subset to both Chinese and English report/visual HTML files, declaring the SIL OFL 1.1 source and license, and assigning the same font to the Chinese Canvas labels.
 - Corrected three commercial and technology-service polygons from legacy land-use code `05` to current official code `09`, following the repository's 2026-08-16 enum correction; geometry and declared areas are unchanged.
 - Declared the two text-free concept images as language-neutral shared assets, updated the English reading paths and removed redundant byte-identical `.en.png` copies.
 - Kept the proposal scope, claims, spatial partition, metrics and implementation boundaries unchanged; this revision is a rules-alignment and packaging-quality repair.
