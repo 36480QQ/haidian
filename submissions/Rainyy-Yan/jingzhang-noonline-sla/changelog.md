@@ -8,6 +8,8 @@
 
 **Report readability repair.** Both required report HTML files now load the registered OFL-licensed local CJK subset used by the offline visual, so the report does not depend on a system Chinese font or network access.
 
+**Reviewer-facing handoff panel.** The paired offline visual pages now surface the same six activation cards, eight release checks, AI-OFF exercises, failure close-outs and five taskbook-function acceptance tests as the V4.3 contract. This makes the move from concept to a bounded pilot inspectable without changing any baseline status: every release record remains `unknown / HOLD` until an authorised evidence package exists.
+
 ## v4.2 blocking repair - 2026-08-26
 
 **Review-blocker repair only.** This pass does not change design logic, metrics, geometry, SLA, nodes, scenarios, implementation commitments or evidence levels. It embeds an OFL-licensed, text-specific Noto Sans SC subset for reliable offline CJK rendering; maps `CASE-01` to `CASE-06` to auditable public or project-institution sources with explicit reuse limits; and exposes the taskbook's Land / Space / Industry / Funding / Talent / Compute / Data / Scenario interfaces as one bilingual, machine-readable mechanism matrix.
