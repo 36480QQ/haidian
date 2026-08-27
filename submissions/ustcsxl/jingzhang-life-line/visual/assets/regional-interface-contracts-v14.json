@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "status": "concept_interfaces_no_commitment",
+  "assumption_ids": [
+    "A-REGIONAL-INTERFACE-001"
+  ],
+  "handoff_artifact_types": [
+    "protocol_card",
+    "source_or_data_card",
+    "safety_case",
+    "failure_repair_log",
+    "exit_transfer_receipt"
+  ],
+  "interfaces": [
+    {
+      "id": "R1",
+      "name_zh": "北纬/北外相关社区接口",
+      "name_en": "Beiwai/Beiwei-related community interface",
+      "carrier": "AI Origin Public Care Station",
+      "inputs": [
+        "multilingual usability questions",
+        "community service needs",
+        "staffed-service experience"
+      ],
+      "outputs": [
+        "bilingual accessibility audit",
+        "account-free service kit",
+        "human handover record"
+      ],
+      "go_no_go": [
+        "participation consent",
+        "clear service owner",
+        "no personal profiling"
+      ]
+    },
+    {
+      "id": "R2",
+      "name_zh": "未来科学城接口",
+      "name_en": "Future Science City interface",
+      "carrier": "Zhongzhiyuan Resilience Test Yard",
+      "inputs": [
+        "R&D prototype",
+        "test method",
+        "non-sensitive evidence"
+      ],
+      "outputs": [
+        "data dictionary",
+        "method version",
+        "12-week validation",
+        "failure log"
+      ],
+      "go_no_go": [
+        "model/data cards",
+        "safety lead",
+        "rollback path"
+      ]
+    },
+    {
+      "id": "R3",
+      "name_zh": "怀柔科学城接口",
+      "name_en": "Huairou Science City interface",
+      "carrier": "Xiaoyuehe wing and station environmental interfaces",
+      "inputs": [
+        "instrument or sensor method",
+        "calibration protocol",
+        "uncertainty method"
+      ],
+      "outputs": [
+        "calibration record",
+        "uncertainty budget",
+        "independent retest"
+      ],
+      "go_no_go": [
+        "traceable provenance",
+        "explainable range",
+        "explainable error"
+      ]
+    },
+    {
+      "id": "R4",
+      "name_zh": "北京经开区/亦庄接口",
+      "name_en": "Beijing E-Town/Yizhuang interface",
+      "carrier": "closed test yard and Continuity Depot",
+      "inputs": [
+        "maintainable hardware",
+        "robot or intelligent equipment",
+        "manufacturing documentation"
+      ],
+      "outputs": [
+        "urban-admission checklist",
+        "bounded-test record",
+        "repair/recall/exit receipt"
+      ],
+      "go_no_go": [
+        "E-stop",
+        "insurance",
+        "repair responsibility",
+        "authorised route"
+      ]
+    },
+    {
+      "id": "R5",
+      "name_zh": "京津冀/张家口接口",
+      "name_en": "BTH/Zhangjiakou interface",
+      "carrier": "evidence ledger and continuity interface",
+      "inputs": [
+        "non-sensitive compute scheduling",
+        "energy accounting method",
+        "regional continuity protocol"
+      ],
+      "outputs": [
+        "stress-recovery record",
+        "compatibility report",
+        "handoff receipt"
+      ],
+      "go_no_go": [
+        "cross-region data boundary",
+        "energy attribution",
+        "exit responsibility"
+      ]
+    }
+  ]
+}
