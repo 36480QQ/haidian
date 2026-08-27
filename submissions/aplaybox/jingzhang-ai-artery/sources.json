@@ -492,6 +492,29 @@
       ],
       "verified": "2026-08-23 HTTP 200",
       "registry_note": "参与者自登记来源，未经 source_registry_summary approved_formal 审定；审定前不得作为正式证据，仅作背景参考与现场事实陈述"
+    },
+    {
+      "id": "SRC-OSM-CONTEXT-TILES",
+      "title": "OpenStreetMap standard raster tiles (z15) used as background context imagery",
+      "publisher": "OpenStreetMap Foundation / contributors",
+      "published_date": "continuously updated (accessed 2026-08-27)",
+      "url": "https://tile.openstreetmap.org/",
+      "authority_level": "open_data_license",
+      "license": "ODbL 1.0; (c) OpenStreetMap contributors",
+      "topics": [
+        "background_context",
+        "existing_street_texture"
+      ],
+      "usable_for": [
+        "background visual context only (figures marked background_only)"
+      ],
+      "not_usable_for": [
+        "official redline",
+        "any indicator input",
+        "surveying or engineering judgment",
+        "statutory planning control",
+        "confirmed government commitment"
+      ]
     }
   ]
 }
