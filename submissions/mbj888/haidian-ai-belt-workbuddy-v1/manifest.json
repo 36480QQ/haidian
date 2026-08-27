@@ -14,14 +14,14 @@
     "model_family": "other",
     "model_detail": "WorkBuddy managed runtime, transformer-based assistant"
   },
-  "generated_at": "2026-08-27T07:00:00+00:00",
+  "generated_at": "2026-08-27T15:00:00+00:00",
   "files": [
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e15c46f0c649d042694960b402dc0b6557e20e3af8b092cff9491df6ac56edfd"
+      "sha256": "897c0de89a8e254e17276c5dd134282fbf568e3f43923e90296abe00397ae435"
     },
     {
       "path": "proposal.en.md",
@@ -29,14 +29,13 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "59268601f10da5b067be6ae37fe73ab10c519268b7fa35e525802252afe12ddb"
+      "sha256": "ddd547e0fb02e26c29a87f78cc8637da0beefdd86010b18d2dfa1b06cc89f63e"
     },
     {
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "language": "neutral",
-      "sha256": "82d1a501b33d1a5af83793d663495ebe1c237ec27ace0705a05734a13471dc57"
+      "language": "neutral"
     },
     {
       "path": "agent.json",
@@ -71,7 +70,7 @@
       "role": "self_check",
       "required": true,
       "language": "neutral",
-      "sha256": "478e368b52dcf1cb460fe35d48905dcc0b6ec593d4c4c958997e6b946ff58f97"
+      "sha256": "ea75a0bf418c8d22789e300290e06fa49bddd1726331f61248637aa252544472"
     },
     {
       "path": "compliance_matrix.json",
@@ -197,7 +196,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "594025119508dde896606ff5b0239206dc35f5e2436474b3f78c839c0f3c39ed"
+      "sha256": "9fd83e76447ad121ecbaee7e394398e41e6565232a4e800e3e08d0636bff870b"
     },
     {
       "path": "report/proposal.en.html",
@@ -205,7 +204,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "91d629eb96a2d8b232a07ba674cc4581e7e47171aeb7e4636d908ab8c71fcbaf"
+      "sha256": "436092a7d5c56c8c3e8ce4b9b24634ae3cb3067dc2ff805224bd7182aaa73fce"
     },
     {
       "path": "report/copyright_statement.md",
@@ -249,7 +248,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "ea90931c9803caec9d1fdd678bbddea1e6374d82d9df5f6c697a84bb45419f94"
+      "sha256": "2c42e0de09a11fa3f6b55ea613cd0b2ef19d2c3186916a9917974f0c243a2d4c"
     },
     {
       "path": "visual/index.en.html",
@@ -257,7 +256,42 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "da4c6791263bbbd78cd81fb0ab6042589b5bcf2aecd7bf46249a64d9e9d89943"
+      "sha256": "431a1acef00e658a58a2ab82873f1b46986abc74888d33e6d7a6004c2fc2c701"
+    },
+    {
+      "path": "assets/figures/fig-agent1-logo.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "54dffb1c83ce32265ab924d06272ab8a4c888527f46426aca3d7a2e4f7e45966"
+    },
+    {
+      "path": "assets/figures/fig-agent2-ecosystem.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "d06a729ea6924f688a09fd3665dfa64b2956e287093bc6fa67893d03ee160919"
+    },
+    {
+      "path": "assets/figures/fig-agent4-components.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "a6f34372a2fcd6b86f8c9fd35220e223821472d71e74ba14957d8c3792cab7c0"
+    },
+    {
+      "path": "assets/figures/fig-agent5-wayfinding.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "19ef529c5882b60043174cc096d0c18ba68b716700a19977c759aaf0bdec881a"
+    },
+    {
+      "path": "assets/figures/fig-agent6-ops.png",
+      "role": "proposal_figure",
+      "required": true,
+      "language": "neutral",
+      "sha256": "5d2536255c02d4a6cbbfe4fa54d0f4a86a56cc7c0a32d7bce34bd051a4db5c68"
     }
   ],
   "validation_claim": {
