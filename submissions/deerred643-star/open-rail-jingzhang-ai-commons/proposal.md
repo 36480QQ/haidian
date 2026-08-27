@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以百年京张铁路遗址廊道为城市主板，构建“一廊·六站·三区·两翼”的开源AI共同体：把9.7公里铁轨转化为开源步道主线，串联六个站厅级公共节点与三处重点区域，形成可复算、可验证、可供专业团队深化的概念性城市设计方案。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.1"
+iteration: "v2.2"
 ---
 
 # 开源轨道 OPEN RAIL：京张AI共同体城市设计方案
@@ -392,6 +392,12 @@ iteration: "v2.1"
 | P5 无障碍专业审查 | 试点节点建成环境 | 委托第三方无障碍专业机构 | 启动前 + 年度 | 审查报告 |
 
 测量纪律：抽样框与失败样本全部保留并随复审公开；机器视觉自检不替代无障碍专业认证；任何指标在实测前保持「待基线」状态，不以设计模型值冒充实测值 [source:SEB-SPEC]。
+
+### 公开仪表盘原型（静态概念）
+
+回应「信息公开」在参与阶梯中的第一级承诺：把四条已在包内公开的机器可读证据链——P1—P5 基线指标（`baseline-protocols.json`）、F1—F7 失败模式预警（`failure-modes.json`）、90 天公开复审与折返协议状态（`switchback-adoption.json`）、本包四门自检结果（`self_check.json`）——汇到一张静态公开页面（`visual/index.html#dashboard`），让公众与评审在同一屏看到「指标待基线、预警未激活（尚无基线，非「正常」结论）、复审未启动、自检四门通过」的真实状态 [source:SWITCHBACK-PROTOCOL]。
+
+仪表盘纪律：只再披露包内已公开条目，不引入运行时后端与任何新数据源；无实测一律保持「待基线」，不以设计模型值冒充实测值；试点后由上述四个既有数据源静态重建页面，失败样本全保留（机器可读 mockup 见 `visual/assets/dashboard-mockup.json`）[source:SEB-SPEC]。
 
 ### 全球 AI 创新活动体系与长期运营（概念建议）
 

@@ -130,7 +130,7 @@ code {
 <tr><td>原创性</td><td>「开源轨道」把铁路语汇（主线/站厅/提交/合并）转译为开源城市治理语汇；本提交包自身（PR/复审/changelog）即该机制可查证的首次运行</td><td>概念叙事贯穿全部成果；两项社区开放标准以组件级采纳落地为机器可读治理合约</td></tr>
 <tr><td>AI 与规划创新</td><td>13 张场景卡逐卡声明数据边界、隐私边界与运营主体；端侧算力节点进公园；AI 治理沙箱以公开试验运行；本包自身即 AI 参与城市设计工作流的可查证运行</td><td><code>switchback-adoption.json</code> 与 <code>seb-adoption.json</code> 随包可复核；<code>ai-workflow-pipeline.json</code> 披露管线；含 3 张测试验证场景卡</td></tr>
 <tr><td>可实施性</td><td>8 项更新项目五要素实施卡 + 触发式排序方法论 + 六类资金矩阵 + 四环节可问责链 + 全生命周期运营账本框架；数据未到位的数值一律保持待基线</td><td><code>implementation-cards.json</code>、<code>sequencing-methodology.json</code>、<code>funding-matrix.json</code>、<code>lifecycle-om-framework.json</code>；不输出任何排序结论或效益数值</td></tr>
-<tr><td>公共利益与包容性</td><td>六类画像覆盖长者、残障与低数字素养居民；P1—P5 现场基线测量协议；每个 AI 服务点强制非数字化等价路径；蓝绿骨架叠加海绵—热岛—碳气候科目</td><td><code>baseline-protocols.json</code>、<code>climate-carbon-framework.json</code>；SEB schema 强制 ai_off_path 字段；实测数据如实标注「待基线」</td></tr>
+<tr><td>公共利益与包容性</td><td>六类画像覆盖长者、残障与低数字素养居民；P1—P5 现场基线测量协议；每个 AI 服务点强制非数字化等价路径；蓝绿骨架叠加海绵—热岛—碳气候科目；公开仪表盘原型静态再披露指标、预警、复审与自检状态</td><td><code>baseline-protocols.json</code>、<code>climate-carbon-framework.json</code>、<code>dashboard-mockup.json</code>；SEB schema 强制 ai_off_path 字段；实测数据如实标注「待基线」</td></tr>
 <tr><td>风险与合规意识</td><td>临时边界、控规缺口、文保约束、实施条件四类风险逐项披露；未登记来源降级为「待复核背景信息」；全部指标可从几何复算；红队检视主动登记结果层失败模式与早期预警</td><td><code>risk.json</code> 八维矩阵 + <code>failure-modes.json</code> 结果层失败模式库；<code>assumptions.json</code> 登记复算路径（A-BOUNDARY-002）；容积率等 unknown 字段不以推测值冒充</td></tr>
 <tr><td>表达完整性</td><td>中英双语全量成果（正文/HTML/A3/A0/图件/视频+字幕+文稿）；程序绘制原创图件；机器可读索引三矩阵</td><td>双语成果逐项对应；离线渲染可复现并有覆盖证据；本表即为评审入口索引</td></tr>
 </tbody></table>
@@ -305,6 +305,9 @@ code {
 <tr><td>P5 无障碍专业审查</td><td>试点节点建成环境</td><td>委托第三方无障碍专业机构</td><td>启动前 + 年度</td><td>审查报告</td></tr>
 </tbody></table>
 <p>测量纪律：抽样框与失败样本全部保留并随复审公开；机器视觉自检不替代无障碍专业认证；任何指标在实测前保持「待基线」状态，不以设计模型值冒充实测值 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SEB-SPEC" title="来源：SEB-SPEC">来源</sup>。</p>
+<h3>公开仪表盘原型（静态概念）</h3>
+<p>回应「信息公开」在参与阶梯中的第一级承诺：把四条已在包内公开的机器可读证据链——P1—P5 基线指标（<code>baseline-protocols.json</code>）、F1—F7 失败模式预警（<code>failure-modes.json</code>）、90 天公开复审与折返协议状态（<code>switchback-adoption.json</code>）、本包四门自检结果（<code>self_check.json</code>）——汇到一张静态公开页面（<code>visual/index.html#dashboard</code>），让公众与评审在同一屏看到「指标待基线、预警未激活（尚无基线，非“正常”结论）、复审未启动、自检四门通过」的真实状态 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SWITCHBACK-PROTOCOL" title="来源：SWITCHBACK-PROTOCOL">来源</sup>。</p>
+<p>仪表盘纪律：只再披露包内已公开条目，不引入运行时后端与任何新数据源；无实测一律保持「待基线」，不以设计模型值冒充实测值；试点后由上述四个既有数据源静态重建页面，失败样本全保留（机器可读 mockup 见 <code>visual/assets/dashboard-mockup.json</code>） <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SEB-SPEC" title="来源：SEB-SPEC">来源</sup>。</p>
 <h3>全球 AI 创新活动体系与长期运营（概念建议）</h3>
 <p>年度活动体系：春季“开源轨道大会”（主论坛+开发者集市）、夏季“AI 城市测试季”（场景开放+测试验证公示）、秋季“京张百年文化季”（遗址展演+高校联动）、冬季“智能体贡献年会”（荣誉墙更新+年度开源成果发布）。品牌与传播：活动统一使用 OPEN RAIL 视觉体系，国际传播以“From the first Chinese-built railway to the first open-source city”为叙事主线。开发者社区运营：以 GitHub 为主要协作界面，延续本次开源征集的 PR/Issue 机制形成常态化城市共创；场景开放运营：每年发布场景开放清单与测试规范；招引转化：活动—测试—落地的三级转化通道，具体政策与资金安排不作承诺 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>。</p>
 <p><strong>自指证明：本提交包即“开源轨道”治理机制的首次可查证运行</strong>（概念主张的实证注脚）：本次开源征集本身即在 GitHub 上以公开 PR/Issue 机制运行——本方案 v1.0 至 v1.9 的每一次迭代都以公开 PR 提交、接受逐轮公开评审（评分与逐条意见在仓库中可回溯）、按意见修复并更新公开 changelog 后再提交，直至合并。这与本方案提出的开源治理机制完全同构：公开提交（PR）对应“场景开放提交”，逐轮公开评审对应“90 天公开复审”的微缩形态，公开 changelog 对应“可查证的治理记录”，合并对应“merge 里程碑”。因此本包不只是提出一套开源治理机制的提案，其自身的产生过程就是该机制可查证的第一次运行；机制可行性不再依赖类比论证，而以本仓库公开的 PR、评审与 changelog 记录为直接证据（概念主张；上述记录均在本征集仓库公开可查，不涉及任何未公开内部流程）。</p>

@@ -1,8 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-27T13:10:03+00:00",
+  "generated_at": "2026-08-27T13:16:13Z",
   "crs": "EPSG:4548",
-  "script": "recompute_metrics.py",
+  "script": "visual/assets/recompute_metrics.js",
+  "runtime": "Node.js（仅标准库，零外部依赖，全离线）",
   "inputs": [
     "geometry/site_boundary.geojson",
     "geometry/green_space.geojson",
@@ -36,9 +37,9 @@
   "results": [
     {
       "metric": "site_area_sqm",
-      "recomputed": 11412825.386,
+      "recomputed": 11412825.387,
       "claimed": 11412825.386,
-      "abs_diff": 0.000446,
+      "abs_diff": 0.001436,
       "tolerance": "rel <= 0.0001",
       "result": "PASS"
     },
@@ -46,7 +47,7 @@
       "metric": "green_space_area_sqm",
       "recomputed": 2466420.949,
       "claimed": 2466420.91,
-      "abs_diff": 0.038872,
+      "abs_diff": 0.039478,
       "tolerance": "rel <= 0.0001",
       "result": "PASS"
     },
@@ -54,15 +55,15 @@
       "metric": "green_ratio",
       "recomputed": 0.216,
       "claimed": 0.21611,
-      "abs_diff": 0.0,
+      "abs_diff": 0,
       "tolerance": "abs <= 0.0001",
       "result": "PASS"
     },
     {
       "metric": "public_space_area_sqm",
-      "recomputed": 1205675.696,
+      "recomputed": 1205675.697,
       "claimed": 1205675.657,
-      "abs_diff": 0.039407,
+      "abs_diff": 0.039533,
       "tolerance": "rel <= 0.0001",
       "result": "PASS"
     },
@@ -70,7 +71,7 @@
       "metric": "public_space_ratio",
       "recomputed": 0.106,
       "claimed": 0.105642,
-      "abs_diff": 0.0,
+      "abs_diff": 0,
       "tolerance": "abs <= 0.0001",
       "result": "PASS"
     },
@@ -78,7 +79,7 @@
       "metric": "building_footprint_area_sqm",
       "recomputed": 2215733.133,
       "claimed": 2215733.133,
-      "abs_diff": 0.000135,
+      "abs_diff": 0.000209,
       "tolerance": "rel <= 0.0001",
       "result": "PASS"
     },
@@ -86,7 +87,7 @@
       "metric": "building_footprint_ratio",
       "recomputed": 0.194,
       "claimed": 0.194146,
-      "abs_diff": 2e-06,
+      "abs_diff": 0.000002,
       "tolerance": "abs <= 0.0001",
       "result": "PASS"
     },
@@ -94,7 +95,7 @@
       "metric": "spine_length_m",
       "recomputed": 9717.879,
       "claimed": 9717.9,
-      "abs_diff": 0.020898,
+      "abs_diff": 0.020897,
       "tolerance": "rel <= 0.001",
       "result": "PASS"
     },
@@ -108,9 +109,9 @@
     },
     {
       "metric": "key_area_zhongzhiyuan_area_sqm",
-      "recomputed": 1929201.877,
+      "recomputed": 1929201.878,
       "claimed": 1929201.877,
-      "abs_diff": 0.000428,
+      "abs_diff": 0.000762,
       "tolerance": "rel <= 0.0001",
       "result": "PASS"
     },
@@ -118,7 +119,7 @@
       "metric": "key_area_origin_community_area_sqm",
       "recomputed": 1043236.909,
       "claimed": 1043236.909,
-      "abs_diff": 0.000256,
+      "abs_diff": 0.00008,
       "tolerance": "rel <= 0.0001",
       "result": "PASS"
     },
@@ -126,10 +127,10 @@
       "metric": "key_area_dazhongsi_area_sqm",
       "recomputed": 720454.219,
       "claimed": 720454.219,
-      "abs_diff": 8.2e-05,
+      "abs_diff": 0.00004,
       "tolerance": "rel <= 0.0001",
       "result": "PASS"
     }
   ],
-  "note": "一键复算证据：全部 known 状态指标由包内 GeoJSON 在 EPSG:4548 下独立复算并与 metrics.json 对账；floor_area_ratio 与 building_height_control 因官方控规未发布保持 unknown，不以推测值冒充。复算方法与仓库评审脚本一致（pyproj EPSG:4326->4548 投影 + shapely 面积/长度）。"
+  "note": "一键复算证据：全部 known 状态指标由包内 GeoJSON 在 EPSG:4548（CGCS2000 / 3-degree Gauss-Kruger CM 117E，脚本内联投影实现）下独立复算并与 metrics.json 对账；floor_area_ratio 与 building_height_control 因官方控规未发布保持 unknown，不以推测值冒充。复算口径与仓库评审脚本一致（EPSG:4326→4548 投影面积/长度）。"
 }

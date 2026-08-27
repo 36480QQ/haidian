@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the century-old Jing-Zhang railway heritage corridor as a civic mainboard, this proposal builds an open-source AI commons of one spine, six stations, three areas and two wings: a 9.7 km rail-to-trail mainline linking six station-hall public nodes and three key areas, forming a recomputable, verifiable, concept-level urban design ready for professional deepening."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.1"
+iteration: "v2.2"
 ---
 
 # OPEN RAIL: Jing-Zhang AI Commons Urban Design Proposal
@@ -392,6 +392,12 @@ Responding to the inclusiveness review gap that accessibility coverage and equiv
 | P5 professional accessibility audit | Pilot built nodes | Third-party accessibility professionals | Pre-launch + annual | Audit report |
 
 Measurement discipline: sampling frames and failed samples are all retained and disclosed with reviews; machine-vision self-checks do not substitute for professional accessibility certification; any indicator stays "pending baseline" until measured — design-model values never masquerade as field data [source:SEB-SPEC].
+
+### Public dashboard prototype (static concept)
+
+Answering the first rung of the participation ladder — information disclosure: four machine-readable evidence chains already public inside the package are brought onto one static public page (`visual/index.html#dashboard`): the P1-P5 baseline indicators (`baseline-protocols.json`), the F1-F7 failure-mode early warnings (`failure-modes.json`), the 90-day public review and Switchback Protocol status (`switchback-adoption.json`), and this package's four-gate self-check results (`self_check.json`). The public and reviewers see the honest state on one screen: indicators pending baseline, warnings not yet armed (no baseline — not a "normal" verdict), review not started, and all four self-check gates passing [source:SWITCHBACK-PROTOCOL].
+
+Dashboard discipline: it only re-discloses entries already public in the package, introducing no runtime backend and no new data source; anything unmeasured stays "pending baseline", with design-model values never shown as measured; after pilot launch the page is statically rebuilt from the four existing sources above, and failed samples are never dropped (machine-readable mockup: `visual/assets/dashboard-mockup.json`) [source:SEB-SPEC].
 
 ### Global AI innovation event system and long-term operation (concept proposal)
 
