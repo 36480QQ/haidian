@@ -40,3 +40,8 @@
 - 中英文 `grounded-hero-visuals` 保持 2000 × 1125 px，以 Pillow 256 色自适应调色板、MEDIANCUT、Floyd–Steinberg 抖动和 PNG `compress_level=9` 重编码；不删除双语、审计或版权资产，不修改视频与四份 PDF。
 - 两图由 1,882,278 / 1,897,950 bytes 降至 634,520 / 634,066 bytes；包含本轮版权与变更记录后包体为 34,880,809 bytes（33.265 MiB）。重复哈希组保持原登记，不新增重复资产。
 - 双语 A3 各 16 页均实际渲染复核；既有整页嵌入图约 132.02 ppi，本轮未重做 A3、未改变其分辨率，也未引入新的色带、缺字或视觉退化。
+
+### M4 · 跨载体实施同步
+
+- 中英文 visual 的 implementation 段新增 `Micro / Base / Extended / No-build` 四情景静态资源包络图与等义摘要；Base 面积、容量、FTE、CAPEX ROM、年度 OPEX ROM 全部与 `visual/assets/dazhongsi-operating-envelope.json` 一致。
+- 所有数字继续标注为参与者低置信假设，不是北京报价、预算、审批、采购或承诺；No-build 保留公共净线、导视、座椅/遮荫、人工窗口与人工服务后备。未新增 JS 交互类型，未重做 A3、视频或生成式 report HTML。
