@@ -58,9 +58,11 @@ Renew stock retail into an "AI+consumption" experience field, differentiated fro
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
 - **≥5 personas**: basic researcher, AI application engineer, cross-border entrepreneur, local resident (incl. elderly/children), visitor/student [metric:persona_count][depth:persona_design].
-- **≥10 scenario cards**: AI study room, community health station, railway-heritage AR tour, driverless micro-circulation dispatch, low-carbon energy simulation, AI elderly companion, children AI-literacy class, open-source achievement gallery, compute-booking platform, industry compliance sandbox [metric:scenario_card_count].
+- **12 scenario cards**: AI study room, community health station, railway-heritage AR tour, driverless micro-circulation dispatch, low-carbon energy simulation, AI elderly companion, children AI-literacy class, open-source achievement gallery, compute-booking platform, industry compliance sandbox, AI heritage-inspection patrol, community co-creation council [metric:scenario_card_count].
 - **≥3 industry test scenarios**: robot inspection pilot, AI-education product compliance test, low-carbon energy dispatch simulation [metric:industry_test_count].
 - AI scenario nodes are placed in key areas and the heritage park; see `geometry/key_areas.geojson` (illustrated in `assets/figures/mobility-bluegreen.png`) [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
+
+![AI innovation ecosystem and factor-guarantee map](assets/figures/fig-agent2-ecosystem.png)
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -78,6 +80,10 @@ Land-use partition from provisional boundary in `geometry/land_use.geojson`; are
 
 - Heritage-park green spine links the three key areas' public-space network; green ratio provisional ~0.0315 (3.15%), public-space ratio ~0.05 (5%), provisional shoelace recompute (not announcement planning rate) [data:geometry/green_space.geojson][data:geometry/public_space.geojson][metric:green_space_ratio][metric:public_space_ratio].
 - Character rule: "industrial-heritage authenticity + restrained tech expression"; no decorative sci-fi skins [standard:blue_green][depth:urban_character].
+
+![Public-space component library and AI pilgrimage landmarks](assets/figures/fig-agent4-components.png)
+
+![Cultural wayfinding system](assets/figures/fig-agent5-wayfinding.png)
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -98,16 +104,26 @@ All metrics and compliance responses in `metrics.json`, `compliance_matrix.json`
 - **Copyright**: text and diagrams submitted CC-BY 4.0; third-party assets credited with source and license (see `report/copyright_statement.md`) [standard:copyright].
 - **Risk**: the 43.6 km² scale risks "scenes over products" and cross-period cash-flow break; use key areas as the first validation unit [depth:risk_missing_data].
 
+## Brand Identity and Annual Operations Loop
+
+- **Brand identity**: "京张·原力轴 / Jingzhang Origin Axis" combines a CN/EN wordmark with an abstract heritage-track graphic; color, typeface, icon, and application rules are shown in Figure B [depth:branding].
+
+![Jingzhang Origin Axis brand identity and visual spec](assets/figures/fig-agent1-logo.png)
+
+- **Annual operations loop**: an open Agent review each year drives developer community, scenario testing, international outreach, and industry/capital conversion, with data feedback closing the loop [depth:long_term_ops].
+
+![Annual operations and conversion loop](assets/figures/fig-agent6-ops.png)
+
 ## Appendix: AI Agent Open-Call Task Response
 
-- **Naming & identity**: mark "京张·原力轴 / Jingzhang Origin Axis" with a CN/EN wordmark and abstract heritage-track graphic [depth:branding].
+- **Naming & identity**: mark "京张·原力轴 / Jingzhang Origin Axis" with a CN/EN wordmark and abstract heritage-track graphic; visual spec in Figure B [depth:branding].
 - **5–8 AI ecosystem cases**: ①Zhongzhiyuan R&D HQ cluster ②AI Origin living lab ③Dazhongsi AI+retail ④railway-heritage AR tourism ⑤Zhongguancun compute-sharing network ⑥open-source honor wall (6 cases) [depth:cases].
-- **≥10 scenario cards**: see Ch.6 [metric:scenario_card_count].
+- **12 scenario cards**: see Ch.6 [metric:scenario_card_count].
 - **≥3 industry tests**: see Ch.6 [metric:industry_test_count].
 - **≥5 personas**: see Ch.6 [metric:persona_count].
 - **≥3 AI pilgrimage landmarks**: railway-heritage monument, open-source honor wall, AI living-experience hall [metric:ai_pilgrimage_count].
 - **Cultural narrative**: "from future to future" echoes the railway century and the AI era [depth:cultural_narrative].
-- **Long-term ops**: propose an annual Agent open-review mechanism so the proposal keeps growing [depth:long_term_ops].
+- **Long-term ops**: propose an annual Agent open-review mechanism so the proposal keeps growing; loop shown in Figure E [depth:long_term_ops].
 
 ## References
 
