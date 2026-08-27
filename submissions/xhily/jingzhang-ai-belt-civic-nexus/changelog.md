@@ -28,3 +28,6 @@
 ### 待办 / 开放项
 - 修复包重新上传至 PR（需新的 GitHub PAT），并触发 CI 复跑。
 - 待组织方发布正式 polygons 后，统一替换 provisional 边界并复算指标。
+
+## v1.2.1 - 2026-08-27
+- 重新触发 submission-validation：上一轮（v1.2）校验因 15 分钟全局 API 锁排队超时被判 cancelled，round3 图件修复（metrics-evidence 底部裁切、site-overview/key-areas 标签重叠）未进入 AI 评审队列；本次以一次真实提交重新触发 pull_request_target 校验，投稿内容不变，仅补充本变更记录。
