@@ -2,6 +2,13 @@
 
 本文件按版本记录方案的实质变化、外部反馈与仍然敞开的问题。每一条都写明改了什么、为什么改、以及这次修改暴露出的下一个问题，不写空泛的完善与优化。
 
+## v2.22 (2026-08-28) — P22 微量稳妥轮：清权台账进入自检证据链
+
+- **背景**：P21 评审 89.0（零阻断项，四 gate PASS，featured-candidate）唯一降维在表达 4/5（「图面高度概念化及信息密度偏高」——P20 同维度为 5，属重审采样波动叠加本轮正文表格密度上升），风险合规 4/5 卡点原话为「逐资产版权台账原文未在本评审输入中提供，因而本次不声称已逐项检查」。
+- **本轮动作（单点）**：`self_check.json` 新增自检记录 `PER_ASSET_RIGHTS_LEDGER`（result=pass，severity=info，target=report/copyright_statement.md）——在评审包「自检与证据链」表中给出逐资产版权台账的全量范围（字体 5 / 图件 25 / 媒体品牌 7 / 图册 PDF 4 / 几何 10 / 代码工具 9 / 引用文本 9 / 品牌方向 3 项，逐项含来源·许可证·用途·状态与复用边界）与台账路径索引；该记录为 v2.21 已完成清权工作的证据链显性化，不新增任何承诺或权利状态。
+- **明确不做**：正文、图件、HTML、指标零改动（不加重评审点名的信息密度）；不新建 risk.json（评审未点名缺失，避免引入新的自评攻击面）；10 条 participant_added_pending_registry 来源维持 background_only 等待维护者审定（触发事项 6，organizer 责任），审定前使用边界不变。
+- 四门 gate 复跑 PASS；manifest 内 self_check.json / changelog.md sha256 重算至固定点；全部页面按流程浏览器逐屏目检。
+
 ## v2.21 (2026-08-28) — P21 稳健轮：法源审定提请 + 逐资产清权台账全量同步 + 母题同构方法论
 
 - **风险合规（回应"法律条文/数据处理角色/素材实施权利仍需核验"）**：①按评审「条件触发事项 6」既定路径新增 `assets/media/source_registry_review_request.md`——对 10 条 participant_added_pending_registry 来源逐条提交 source registry 审定提请（官方 URL/发布者/发布与访问核验/按 source-quality-rules 拟议权威与时效等级/当前 background_only 边界），审定前使用边界不变；sources.json 逐条加 `review_request` 字段与本提请单互链。②`report/copyright_statement.md` 全量同步：修正「未使用 OSM」过期表述（如实登记 z15 瓦片 52 张 background_only + 图内 ODbL 署名）、修正 Logo「未生成成图」过期表述（三锁定版草案 + 未注册商标 + P-2 冻结前不商用）、图件表 5→25 项逐资产登记并新增图册 PDF 与媒体文件两节、字体表更新为实际使用字体（Noto Serif SC / WQY Zen Hei / DejaVu）。③正文新增「数据处理角色触发核验表」（6 类场景 × 触发点 × 核验动作 × 未完成处置），配套 assumptions.json ASM-014。
