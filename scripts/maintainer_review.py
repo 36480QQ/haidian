@@ -1,10 +1,57 @@
 #!/usr/bin/env python3
-"""Run the local maintainer review bundle for one submission directory."""
+"""Run the local maintainer review bundle for one submission directory.
+
+This script orchestrates the four-gate self-check, builds a human-readable
+review summary, and writes the following files to ``--out`` (default:
+``.maintainer-review/<proposal-slug>/``):
+
+- ``review-input.json`` — structured input for an external AI review model
+- ``review-prompt.md`` — ready-to-paste prompt including the rubric
+- ``review-summary.json`` — machine-readable gate and recommendation summary
+- ``maintainer-comment.md`` — GitHub PR comment template
+- ``advisory-review.md`` — human-readable advisory review with per-dimension
+  stubs ready for professional scoring
+
+Recommendation values
+---------------------
+- ``formal-review-ready``: all four gates pass; eligible for professional scoring.
+- ``intake-provisional``: may be merged for intake discussion but not scored.
+- ``request-changes``: one or more gates fail; contributor must repair.
+- ``reject``: mandatory rejection condition detected (PII, false official claim,
+  classified material, etc.); close or reject the PR.
+
+Usage
+-----
+Run from the repository root::
+
+    python3 scripts/maintainer_review.py submissions/<login>/<slug> \\
+        --pr-author <login>
+
+Write output to a custom directory::
+
+    python3 scripts/maintainer_review.py submissions/<login>/<slug> \\
+        --pr-author <login> \\
+        --out .maintainer-review/<login>-<slug>
+
+Print the PR comment to stdout::
+
+    python3 scripts/maintainer_review.py submissions/<login>/<slug> \\
+        --pr-author <login> --comment
+
+Machine-readable summary::
+
+    python3 scripts/maintainer_review.py submissions/<login>/<slug> \\
+        --pr-author <login> --json
+
+Exit code is 0 when recommendation is ``formal-review-ready`` or
+``intake-provisional`` and 1 otherwise.
+"""
 
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -25,18 +72,28 @@ def script_path(repo_root: Path, name: str) -> Path:
 
 
 def run_json_command(command: list[str]) -> dict[str, Any]:
-    completed = subprocess.run(command, capture_output=True, text=True, check=False)
+    completed = subprocess.run(
+        command,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        env={**os.environ, "PYTHONUTF8": "1", "PYTHONIOENCODING": "utf-8"},
+        check=False,
+    )
     parsed: Any = {}
-    if completed.stdout.strip():
+    stdout = completed.stdout or ""
+    stderr = completed.stderr or ""
+    if stdout.strip():
         try:
-            parsed = json.loads(completed.stdout)
+            parsed = json.loads(stdout)
         except json.JSONDecodeError:
-            parsed = {"raw_stdout": completed.stdout}
+            parsed = {"raw_stdout": stdout}
     return {
         "returncode": completed.returncode,
         "ok": completed.returncode == 0,
         "stdout": parsed,
-        "stderr": completed.stderr.strip(),
+        "stderr": stderr.strip(),
     }
 
 
@@ -225,13 +282,38 @@ def run_maintainer_review(repo_root: Path, submission_dir: Path, pr_author: str,
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("submission_dir")
-    parser.add_argument("--repo-root", default=".")
-    parser.add_argument("--pr-author", required=True)
-    parser.add_argument("--out")
-    parser.add_argument("--comment", action="store_true", help="Print maintainer-comment.md content to stdout")
-    parser.add_argument("--json", action="store_true")
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "submission_dir",
+        help="Path to the proposal directory, e.g. submissions/<login>/<slug>",
+    )
+    parser.add_argument(
+        "--repo-root",
+        default=".",
+        help="Repository root directory (default: current working directory)",
+    )
+    parser.add_argument(
+        "--pr-author",
+        required=True,
+        help="Exact GitHub login of the PR author",
+    )
+    parser.add_argument(
+        "--out",
+        help="Output directory for review artifacts (default: .maintainer-review/<slug>)",
+    )
+    parser.add_argument(
+        "--comment",
+        action="store_true",
+        help="Print maintainer-comment.md content to stdout",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Print machine-readable JSON summary to stdout",
+    )
     args = parser.parse_args()
 
     repo_root = Path(args.repo_root).resolve()

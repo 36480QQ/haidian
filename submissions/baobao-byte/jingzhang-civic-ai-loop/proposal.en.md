@@ -13,7 +13,7 @@ iteration: 10
 
 # Jing-Zhang Civic AI Loop: An Open Belt for Verifiable Urban Agents
 
-v2.0 prototype-narrative review status. Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
+v2.1 prototype-narrative review status. Package-level checks have passed, while all spatial figures still use repository provisional geometry with low aggregate confidence. They support conceptual review only—not official redlines, statutory controls, property, engineering, or precise-area claims. Official geometry must trigger coordinated recalculation.
 
 Motto: Every urban intelligence must withstand public scrutiny.
 
@@ -99,6 +99,9 @@ All three use removable components and must not obstruct heritage fabric, fire a
 
 ## Spatial section and five interfaces
 Three layers overlap without surrendering the public realm: a free, accessible walking layer; a clearly bounded reversible-trial layer; and an urban-service layer that places compute, legal help, evaluation, appeal and maintenance in existing buildings. Trials may never displace basic access, green space or non-digital service.
+
+### The civic switch rule: AI enters the siding; daily life keeps the main line
+Borrowing the railway's simplest spatial move, every proving station treats continuous walking and staffed service as an algorithm-independent main line, while sensors, robots and agent experiences occupy a physically isolatable, removable trial siding. At one legible civic switch, a person may continue straight past, opt in, or request human takeover. When a stop condition fires, only the siding closes; the main route, tactile path, seating, water and staffed help remain open. This is not an unverified engineering location but a rule that every later 1:200 section must prove: no siding crosses essential access, and closure leaves no data dependency, device obstruction or unrestored ground. [depth:overall_spatial_structure] [metric:spatial_interface_type_count]
 
 |Interface|Design action|AI boundary|Human acceptance|
 |---|---|---|---|
@@ -230,7 +233,7 @@ The plan is also tested against adverse conditions. If official geometry conflic
 
 ## 19. The first 100 metres as a Civic AI Failure Theatre
 
-v2.0 preserves and tightens the spatial evidence and condenses it into a reviewable first 100 metres in each key area; this is not a new construction boundary or a dimensional promise. Five layers remain visible together: rail memory, shade and stormwater, continuous walking/cycling, reversible test pockets, and existing ground-floor edges. Every dimension remains field-survey pending. Four operating states make failure spatially legible: A daily keeps analogue routes and human service; B contest enables explanation, refusal and takeover; C failure stops devices, opens a physical bypass and onsite help; D replay publishes the run receipt, restoration proof and minority view. If AI procurement fails, accessibility, shade, seating, drainage, heritage interpretation and the human desk still retain public value. [depth:overall_spatial_structure] [metric:spatial_interface_type_count]
+v2.1 preserves and tightens the spatial evidence and condenses it into a reviewable first 100 metres in each key area; this is not a new construction boundary or a dimensional promise. Five layers remain visible together: rail memory, shade and stormwater, continuous walking/cycling, reversible test pockets, and existing ground-floor edges. Every dimension remains field-survey pending. Four operating states make failure spatially legible: A daily keeps analogue routes and human service; B contest enables explanation, refusal and takeover; C failure stops devices, opens a physical bypass and onsite help; D replay publishes the run receipt, restoration proof and minority view. If AI procurement fails, accessibility, shade, seating, drainage, heritage interpretation and the human desk still retain public value. [depth:overall_spatial_structure] [metric:spatial_interface_type_count]
 
 The five figures and the first A3/A0 pages now share one visual grammar: an evidence ladder limits precision; five-layer sections control space; three task cards control everyday operations; three non-conflicting routes control safe degradation; and a public decision room chooses scale, repair or exit. These are visible indexes into the machine contracts, not renderings used as substitutes for professional evidence. [metric:receipt_required_field_count]
 

@@ -1,5 +1,46 @@
 #!/usr/bin/env python3
-"""Run local workspace, scope, size, remote, and submission checks before a PR."""
+"""Run local workspace, scope, size, remote, and submission checks before a PR.
+
+This script is the final gate before uploading.  It confirms that the local
+workspace, branch, remote configuration, file scope, package size, and
+contributor self-check are all in order.  Run it once before committing and
+again with ``--check-push`` immediately before ``git push``.
+
+Checks performed
+----------------
+- Branch is not ``main`` or ``master``; a participant branch is required.
+- Submission path is ``submissions/<github-login>/<proposal-slug>``; the
+  directory owner matches ``--pr-author`` exactly.
+- All changed files are inside the participant's proposal directory.
+- No file exceeds GitHub's 100 MiB hard limit.
+- Total package size is reported; a warning fires above 200 MiB.
+- ``origin`` is a fork (not the canonical repository) unless
+  ``--allow-canonical-origin`` is supplied.
+- ``upstream`` remote points to ``open-city-ai/haidian`` (advisory).
+- Workspace uses blobless partial clone and sparse checkout (advisory).
+- Self-check passes (``self_check_submission.py``), unless ``--skip-self-check``.
+- Optional: ``git push --dry-run`` to confirm push credentials and access.
+
+Usage
+-----
+Standard preflight (run from repository root)::
+
+    python3 scripts/participant_preflight.py submissions/<login>/<slug> \\
+        --pr-author <login>
+
+Include push credential check::
+
+    python3 scripts/participant_preflight.py submissions/<login>/<slug> \\
+        --pr-author <login> --check-push
+
+Machine-readable output::
+
+    python3 scripts/participant_preflight.py submissions/<login>/<slug> \\
+        --pr-author <login> --json
+
+The exit code is 0 when all blockers pass and 1 otherwise.  Fix every listed
+blocker before running ``git push`` and ``gh pr create``.
+"""
 
 from __future__ import annotations
 
@@ -10,6 +51,8 @@ import subprocess
 import sys
 from pathlib import Path
 from typing import Any
+
+from participant_owner_aliases import authorized_legacy_submission_dirs
 
 
 GITHUB_HARD_FILE_LIMIT = 100 * 1024 * 1024
@@ -87,18 +130,20 @@ def check_push(repo_root: Path, branch: str) -> dict[str, Any]:
     }
 
 
-def run_self_check(repo_root: Path, submission_rel: str, pr_author: str) -> dict[str, Any]:
-    completed = run(
-        [
-            sys.executable,
-            str(repo_root / "scripts" / "self_check_submission.py"),
-            submission_rel,
-            "--pr-author",
-            pr_author,
-            "--json",
-        ],
-        repo_root,
-    )
+def run_self_check(
+    repo_root: Path, submission_rel: str, pr_author: str, pr_author_id: int | None
+) -> dict[str, Any]:
+    command = [
+        sys.executable,
+        str(repo_root / "scripts" / "self_check_submission.py"),
+        submission_rel,
+        "--pr-author",
+        pr_author,
+        "--json",
+    ]
+    if pr_author_id is not None:
+        command.extend(["--pr-author-id", str(pr_author_id)])
+    completed = run(command, repo_root)
     try:
         output: Any = json.loads(completed.stdout) if completed.stdout.strip() else {}
     except json.JSONDecodeError:
@@ -124,11 +169,15 @@ def inspect(args: argparse.Namespace) -> dict[str, Any]:
     parts = Path(submission_rel).parts
     blockers: list[str] = []
     warnings: list[str] = []
+    authorized_legacy_dirs = authorized_legacy_submission_dirs(
+        repo_root, args.pr_author_id, args.pr_author
+    )
     if len(parts) != 3 or parts[0] != "submissions":
         blockers.append("submission path must be submissions/<github-login>/<proposal-slug>")
-    elif parts[1] != args.pr_author:
+    elif parts[1] != args.pr_author and submission_rel not in authorized_legacy_dirs:
         blockers.append(
-            f"submission owner '{parts[1]}' does not exactly match PR author '{args.pr_author}'"
+            f"submission owner '{parts[1]}' does not exactly match PR author '{args.pr_author}'; "
+            "for a maintainer-approved login alias, pass the stable GitHub user ID with --pr-author-id"
         )
     if not submission_dir.is_dir():
         blockers.append(f"submission directory does not exist: {submission_rel}")
@@ -200,7 +249,9 @@ def inspect(args: argparse.Namespace) -> dict[str, Any]:
 
     self_check: dict[str, Any] | None = None
     if not args.skip_self_check and submission_dir.is_dir():
-        self_check = run_self_check(repo_root, submission_rel, args.pr_author)
+        self_check = run_self_check(
+            repo_root, submission_rel, args.pr_author, args.pr_author_id
+        )
         if not self_check["ok"]:
             blockers.append("submission self-check failed; repair the reported issues before pushing")
 
@@ -264,18 +315,49 @@ def render_text(report: dict[str, Any]) -> str:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("submission_dir")
-    parser.add_argument("--pr-author", required=True)
-    parser.add_argument("--repo-root", default=".")
-    parser.add_argument("--skip-self-check", action="store_true")
-    parser.add_argument("--check-push", action="store_true", help="Authenticate with origin using git push --dry-run")
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "submission_dir",
+        help="Path to the proposal directory, e.g. submissions/<login>/<slug>",
+    )
+    parser.add_argument(
+        "--pr-author",
+        required=True,
+        help="Exact GitHub login of the PR author; must match the directory owner",
+    )
+    parser.add_argument(
+        "--pr-author-id",
+        type=int,
+        help="Stable numeric GitHub user ID; required only for a maintainer-approved login alias",
+    )
+    parser.add_argument(
+        "--repo-root",
+        default=".",
+        help="Repository root directory (default: current working directory)",
+    )
+    parser.add_argument(
+        "--skip-self-check",
+        action="store_true",
+        help="Skip the self_check_submission.py gate (not recommended before the final push)",
+    )
+    parser.add_argument(
+        "--check-push",
+        action="store_true",
+        help="Run git push --dry-run to verify origin credentials and write access",
+    )
     parser.add_argument(
         "--allow-canonical-origin",
         action="store_true",
-        help="Suppress the fork warning for maintainers",
+        help="Suppress the fork warning; for maintainers with direct write access",
     )
-    parser.add_argument("--json", action="store_true")
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Emit machine-readable JSON instead of human-readable text",
+    )
     args = parser.parse_args(argv)
     try:
         report = inspect(args)

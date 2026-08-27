@@ -114,9 +114,9 @@
       "value": 10,
       "unit": "count",
       "source_files": [
-        "proposal.md"
+        "assets/media/human-ai-symbiotic-scenarios.md"
       ],
-      "formula": "count Twin-Path Scenario Cards",
+      "formula": "count Human–AI Symbiotic Scenarios mapped to the official scenario-card requirement",
       "confidence": "medium",
       "assumptions": [
         "concept package inventory"
@@ -127,7 +127,7 @@
       "value": 3,
       "unit": "count",
       "source_files": [
-        "proposal.md"
+        "assets/media/human-ai-symbiotic-scenarios.md"
       ],
       "formula": "count S05/S06/S07",
       "confidence": "medium",
@@ -179,7 +179,7 @@
       "value": 3,
       "unit": "count",
       "source_files": [
-        "assets/media/project-list-v4.md"
+        "assets/media/project-list.md"
       ],
       "formula": "count conceptual stages: source clearing and baseline, low-risk commons use, controlled validation and reuse",
       "confidence": "medium",
@@ -205,7 +205,7 @@
       "value": 3,
       "unit": "count",
       "source_files": [
-        "assets/media/project-list-v4.md"
+        "assets/media/project-list.md"
       ],
       "formula": "count distinct conceptual stages: source clearing and baseline, low-risk commons use, controlled validation and reuse",
       "confidence": "medium",
@@ -218,12 +218,79 @@
       "value": 1.0,
       "unit": "ratio",
       "source_files": [
-        "proposal.md"
+        "assets/media/human-ai-symbiotic-scenarios.md"
       ],
       "formula": "10 scenario cards with non-AI/human paths divided by 10 cards",
       "confidence": "medium",
       "assumptions": [
         "scenario-card inventory"
+      ]
+    },
+    "s01_synthetic_rule_test_case_count": {
+      "status": "known",
+      "value": 24,
+      "unit": "count",
+      "source_files": [
+        "assets/media/s01-synthetic-rule-test-ledger.md"
+      ],
+      "formula": "4 personas multiplied by 3 time windows multiplied by 2 route states",
+      "confidence": "high",
+      "assumptions": [
+        "deterministic synthetic rule test only; not field or user-performance evidence"
+      ]
+    },
+    "s01_safe_pause_case_count": {
+      "status": "known",
+      "value": 20,
+      "unit": "count",
+      "source_files": [
+        "assets/media/s01-synthetic-rule-test-ledger.md"
+      ],
+      "formula": "count cases with gate_status=ai_paused_ordinary_path_open",
+      "confidence": "high",
+      "assumptions": [
+        "pause is the expected protocol output for a blocked route or unverified night/weekend service window"
+      ]
+    },
+    "symbiotic_transfer_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "assets/media/s01-s06-s07-transfer-validation.md"
+      ],
+      "formula": "count S01, S06 and S07 protocol-transfer rows",
+      "confidence": "medium",
+      "assumptions": [
+        "S01 has synthetic rule-test evidence; S06 and S07 remain conceptual and untested in the field"
+      ]
+    },
+    "honor_display_node_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "assets/figures/co-track-protocol.png"
+      ],
+      "formula": "count of distinct honor-display outputs: Symbiotic Markers, version milestones, Evidence Yard and Fellow Travellers Register",
+      "confidence": "high",
+      "assumptions": [
+        "concept-level deliverable count; not a count of constructed facilities"
+      ]
+    },
+    "s01_acceptance_indicator_count": {
+      "status": "known",
+      "value": 9,
+      "unit": "count",
+      "source_files": [
+        "proposal.md",
+        "proposal.en.md"
+      ],
+      "formula": "count of rows in the bilingual S01 100-day package acceptance table",
+      "confidence": "high",
+      "assumptions": [
+        "design acceptance inventory; three performance indicators remain unknown until field baselines and sign-off"
       ]
     },
     "green_ratio": {

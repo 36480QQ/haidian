@@ -1,0 +1,390 @@
+{
+  "type": "FeatureCollection",
+  "name": "jingzhang_for_life_land_use_partition",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "LU-001",
+      "properties": {
+        "id": "LU-001",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "05",
+        "name_zh": "文明内容与公共门户",
+        "label_en": "Civic content and public gateway",
+        "design_status": "concept_reference_pending_official_controls",
+        "life_support_baseline": [
+          "住",
+          "学",
+          "业",
+          "养",
+          "医",
+          "游",
+          "文"
+        ],
+        "area_sqm_declared": 1717046.553
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.34035972222222,
+              39.95125
+            ],
+            [
+              116.3553,
+              39.95125
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.3407,
+              39.939
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-002",
+      "properties": {
+        "id": "LU-002",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0702",
+        "name_zh": "混合居住与人生支持",
+        "label_en": "Mixed housing and life support",
+        "design_status": "concept_reference_pending_official_controls",
+        "life_support_baseline": [
+          "住",
+          "学",
+          "业",
+          "养",
+          "医",
+          "游",
+          "文"
+        ],
+        "area_sqm_declared": 1883245.662
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3553,
+              39.95125
+            ],
+            [
+              116.34035972222222,
+              39.95125
+            ],
+            [
+              116.33999513888888,
+              39.964375
+            ],
+            [
+              116.3553,
+              39.964375
+            ],
+            [
+              116.3553,
+              39.95125
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-003",
+      "properties": {
+        "id": "LU-003",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0804",
+        "name_zh": "教育健康与照护协作",
+        "label_en": "Education, health and care",
+        "design_status": "concept_reference_pending_official_controls",
+        "life_support_baseline": [
+          "住",
+          "学",
+          "业",
+          "养",
+          "医",
+          "游",
+          "文"
+        ],
+        "area_sqm_declared": 1745894.948
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3553,
+              39.964375
+            ],
+            [
+              116.33999513888888,
+              39.964375
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.33980483870967,
+              39.976625
+            ],
+            [
+              116.35437,
+              39.976625
+            ],
+            [
+              116.3553,
+              39.965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-004",
+      "properties": {
+        "id": "LU-004",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0702",
+        "name_zh": "AI原点全龄共生社区",
+        "label_en": "AI Origin intergenerational community",
+        "design_status": "concept_reference_pending_official_controls",
+        "life_support_baseline": [
+          "住",
+          "学",
+          "业",
+          "养",
+          "医",
+          "游",
+          "文"
+        ],
+        "area_sqm_declared": 1589458.271
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35437,
+              39.976625
+            ],
+            [
+              116.33980483870967,
+              39.976625
+            ],
+            [
+              116.34059516129032,
+              39.988875
+            ],
+            [
+              116.35339,
+              39.988875
+            ],
+            [
+              116.35437,
+              39.976625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-005",
+      "properties": {
+        "id": "LU-005",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0802",
+        "name_zh": "开放研发与成果转化",
+        "label_en": "Open R&D and translation",
+        "design_status": "concept_reference_pending_official_controls",
+        "life_support_baseline": [
+          "住",
+          "学",
+          "业",
+          "养",
+          "医",
+          "游",
+          "文"
+        ],
+        "area_sqm_declared": 1566500.154
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.35339,
+              39.988875
+            ],
+            [
+              116.34059516129032,
+              39.988875
+            ],
+            [
+              116.34144193548387,
+              40.002
+            ],
+            [
+              116.35395753424658,
+              40.002
+            ],
+            [
+              116.3533,
+              39.99
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-006",
+      "properties": {
+        "id": "LU-006",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0702",
+        "name_zh": "稳定居住与共享服务",
+        "label_en": "Stable housing and shared services",
+        "design_status": "concept_reference_pending_official_controls",
+        "life_support_baseline": [
+          "住",
+          "学",
+          "业",
+          "养",
+          "医",
+          "游",
+          "文"
+        ],
+        "area_sqm_declared": 1451793.907
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35395753424658,
+              40.002
+            ],
+            [
+              116.34144193548387,
+              40.002
+            ],
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.34210243902439,
+              40.01425
+            ],
+            [
+              116.35462876712329,
+              40.01425
+            ],
+            [
+              116.35395753424658,
+              40.002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-007",
+      "properties": {
+        "id": "LU-007",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0802",
+        "name_zh": "众智园造物与公开验证",
+        "label_en": "Zhongzhiyuan making and public validation",
+        "design_status": "concept_reference_pending_official_controls",
+        "life_support_baseline": [
+          "住",
+          "学",
+          "业",
+          "养",
+          "医",
+          "游",
+          "文"
+        ],
+        "area_sqm_declared": 1458900.295
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35462876712329,
+              40.01425
+            ],
+            [
+              116.34210243902439,
+              40.01425
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.35462876712329,
+              40.01425
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "note_zh": "完整分区仅用于概念方案与投稿复算，不是法定用地方案。",
+    "note_en": "Complete concept partition for submission recalculation only; not a statutory land-use plan."
+  }
+}

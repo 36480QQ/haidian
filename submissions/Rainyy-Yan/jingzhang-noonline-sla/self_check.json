@@ -1,0 +1,261 @@
+{
+  "ok": true,
+  "submission_dir": "submissions\\Rainyy-Yan\\jingzhang-noonline-sla",
+  "pr_author": "Rainyy-Yan",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+      ],
+      "proposal_files": [
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/proposal.md"
+      ],
+      "changelog_files": [
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/changelog.md"
+      ],
+      "changed_files": [
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/agent.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/key-areas.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/key-areas.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/key-areas.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/key-areas.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/land-use-structure.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/land-use-structure.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/land-use-structure.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/land-use-structure.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/metrics-evidence.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/metrics-evidence.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/metrics-evidence.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/metrics-evidence.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/mobility-bluegreen.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/mobility-bluegreen.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/mobility-bluegreen.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/mobility-bluegreen.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/site-overview.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/site-overview.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/site-overview.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/site-overview.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-01-overall-urban-structure.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-01-overall-urban-structure.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-01-overall-urban-structure.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-01-overall-urban-structure.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-02-zhongzhiyuan.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-02-zhongzhiyuan.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-02-zhongzhiyuan.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-02-zhongzhiyuan.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-03-ai-origin.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-03-ai-origin.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-03-ai-origin.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-03-ai-origin.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-04-dazhongsi.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-04-dazhongsi.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-04-dazhongsi.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-04-dazhongsi.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-05-sections-01-04.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-05-sections-01-04.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-05-sections-01-04.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-05-sections-01-04.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-06-ai-on-off-resilience.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-06-ai-on-off-resilience.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-06-ai-on-off-resilience.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-06-ai-on-off-resilience.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-07-research-city-feedback.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-07-research-city-feedback.en.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-07-research-city-feedback.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-07-research-city-feedback.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-08-implementation-control.en.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/figures/v4-figure-08-implementation-control.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/working/previews/v4-p1-ai-origin-civic-knowledge-room.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/working/previews/v4-p1-dazhongsi-arrival-interface.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/working/previews/v4-p1-sections-01-04.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/working/previews/v4-p1-zhongzhiyuan-validation-interface.png",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/working/v4-p1-ai-origin-civic-knowledge-room.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/working/v4-p1-dazhongsi-arrival-interface.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/working/v4-p1-sections-01-04.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assets/working/v4-p1-zhongzhiyuan-validation-interface.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/assumptions.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/changelog.md",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/compliance_matrix.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/design_depth_matrix.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/drawings/a0-boards.en.pdf",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/drawings/a0-boards.pdf",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/drawings/a3-booklet.en.pdf",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/drawings/a3-booklet.pdf",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/geometry/buildings.geojson",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/geometry/constraints.geojson",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/geometry/green_space.geojson",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/geometry/key_areas.geojson",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/geometry/land_use.geojson",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/geometry/phasing.geojson",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/geometry/public_space.geojson",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/geometry/roads.geojson",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/geometry/site_boundary.geojson",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/manifest.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/metrics.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/proposal.en.md",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/proposal.md",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/report/copyright_statement.md",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/report/narrative.md",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/report/proposal.en.html",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/report/proposal.html",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/risk.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/self_check.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/sources.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/standard_matrix.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/noonline-cjk-font.css",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/noonline-field-verification-ledger.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/noonline-sla-engine.js",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/noonline-sla-field-verification.js",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/noonline-sla-report.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/noonline-sla-test-results.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/sla-engine-diagram.svg",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/v4-review.css",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/v4_2-agent2-eight-element-mechanism-matrix.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/v4_2-agent_delivery_index.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/v4_2-bilingual_equivalence_checklist.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/v4_2-brand_identity.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/v4_2-implementation_verification_matrix.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/assets/v4_3-delivery-readiness-contract.json",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/index.en.html",
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/Rainyy-Yan/jingzhang-noonline-sla": "formal"
+      },
+      "total_bytes": 8812397,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 1408600.768,
+        "public_space_area_sqm": 836345.643,
+        "building_footprint_area_sqm": 310807.184,
+        "green_ratio": 0.123423,
+        "public_space_ratio": 0.073281
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.123423,
+        "public_space_ratio": 0.073281
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 8,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 38,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 11,
+          "standard": 2,
+          "depth": 3,
+          "data": 16,
+          "metric": 11
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
+  "schema_version": "0.1.0",
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
+    }
+  ]
+}

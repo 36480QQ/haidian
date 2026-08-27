@@ -1,7 +1,372 @@
 {
+  "schema_version": "0.2.0",
   "agent_id": "xyh202131",
-  "agent_name": "xyh202131 opencode AI agent",
+  "agent_name": "xyh202131 AI design agent",
   "role": "ai_agent_submission_author",
-  "model": "agent-declared-model",
-  "generated_with": "scripts/scaffold_ai_submission.py"
+  "model": "OpenAI Codex (GPT-5)",
+  "model_family": "gpt",
+  "model_detail": "OpenAI Codex agent based on GPT-5; exact serving snapshot is not asserted by the package.",
+  "provider": "OpenAI",
+  "authoring_mode": "human-authorized agent-maintained submission package",
+  "generated_with": "Latest canonical main and repository urban-design submission skill; deterministic Python/Pillow/SVG/Chrome/PyMuPDF publication build with a fontTools semantic PDF subset; FFmpeg encoding for retained R59 media; repository validators; no network or model API in media generation.",
+  "tools_used": [
+    "OpenAI Codex (GPT-5 family; exact serving snapshot not asserted)",
+    "Python 3.14.7",
+    "Pillow 12.2.0",
+    "PyMuPDF 1.27.2.3",
+    "fontTools 4.62.1",
+    "Google Chrome 151.0.7922.174",
+    "FFmpeg 6.1.1-essentials_build-www.gyan.dev",
+    "FFprobe 6.1.1-essentials_build-www.gyan.dev",
+    "Noto Sans CJK SC Regular under SIL OFL 1.1",
+    "Node.js zero-dependency T-02 replay",
+    "repository score, spatial, visual, professional, self-check and participant-preflight scripts"
+  ],
+  "tool_boundary": "Tool disclosure and deterministic output do not establish field truth, legal advice, planning approval, accessibility compliance, professional acceptance or G1.",
+  "round_59_provenance": {
+    "canonical_main_base_sha": "078a7dba09176ddb431b1dfec63d0ce8606489c4",
+    "prior_publication_revision": "58.5",
+    "publication_revision": "59.0",
+    "scope": "Four-state spatial experience: one deterministic conceptual cover, one silent bilingual 54-second editorial sequence, one always-visible static fallback, and synchronized fixed-page publications.",
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "metrics_json_frozen": true,
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36"
+    },
+    "front_stage": {
+      "master_concept": "Twin-Track Jing-Zhang / 双轨京张",
+      "key_area_prototypes": 3,
+      "navigation_items": 6,
+      "optional_media_paths": 4,
+      "deterministic_contributor_media_paths": 4,
+      "model_generated_media_paths": 0,
+      "new_model_generated_media": false,
+      "video_audio_streams": 0,
+      "video_editorial_duration_seconds": 54
+    },
+    "professional_handoff": {
+      "candidate_id": "PRE-G1-JZ05-SCENE011-T02",
+      "status": "G0 / NO-GO",
+      "real_field_execution": 0,
+      "accepted_H01_H07_items": 0
+    },
+    "rights": {
+      "contributor_content_and_r59_concept_media": "CC-BY-4.0",
+      "contributor_code": "MIT",
+      "osm_database_derivatives": "ODbL-1.0",
+      "noto_font_software": "SIL-OFL-1.1",
+      "third_party_citations": "not_relicensed",
+      "package_clearance": "current_exact_package_cleared_for_repository_review_display_and_redistribution_under_component_specific_terms",
+      "independent_file_level_audit_completed": false,
+      "trademark_search_completed": false,
+      "current_exact_package_redistribution": "allowed_under_component_specific_terms_and_notices_no_single_package_license",
+      "future_installation_branding_and_professional_implementation": "not_authorized_requires_separate_review_and_acceptance"
+    },
+    "cannot_prove": [
+      "official boundary or exact site registration",
+      "existing or built condition",
+      "dimension, material, utility, fire or railway-protection conclusion",
+      "field or accessibility result",
+      "resident feedback, staffing, schedule, partner, budget or recovery duration",
+      "approval, authorization, GO, G1 or professional acceptance",
+      "real recovery duration; the 54-second sequence is editorial pacing only",
+      "public response or accessibility compliance from conceptual media"
+    ]
+  },
+  "round_60_provenance": {
+    "canonical_main_base_sha": "eab8b0c0f6c653992b46f764f4fe435fb4758524",
+    "predecessor_pr": 3998,
+    "publication_revision": "60.0",
+    "scope": "Publication accessibility and A0 distance-read repair: complete 390px bilingual navigation, searchable fixed-page text, and dedicated A0 hierarchy without new facts, media or pages.",
+    "before_evidence": {
+      "mobile_viewport_width_px": 390,
+      "visual_nav_scroll_width_zh_px": 631,
+      "visual_nav_scroll_width_en_px": 706,
+      "pdf_page_count": 44,
+      "pdf_pages_with_extractable_body_text": 0
+    },
+    "after_evidence": {
+      "mobile_navigation_layout": "3_by_2_all_six_destinations_no_horizontal_overflow",
+      "pdf_pages_with_extractable_body_text": 44,
+      "pdf_embedded_font": "Noto Sans CJK SC Regular minimal semantic OTF subset under SIL-OFL-1.1",
+      "pdf_accessibility_boundary": "searchable_and_copyable_fixed_page_text_not_tagged_pdf_ua_or_accessibility_conformance",
+      "a0_distance_read_recomposed_pages": [
+        6,
+        7,
+        8
+      ],
+      "fresh_process_byte_identical_builds": 2
+    },
+    "final_pdf_sha256": {
+      "drawings/a3-booklet.pdf": "8d9958e516a3e73882e71b9472fcc3829aa4b4cb8580b18e42a75682835626c4",
+      "drawings/a3-booklet.en.pdf": "66361087a18951e3ef5fb35bb575dd1f41c02d342729f5d9b88126a77ef11e5e",
+      "drawings/a0-boards.pdf": "a1fd334fca8112e362a9a90e05e590b8c6927a82f4fa9ed8df28d4b35e398291",
+      "drawings/a0-boards.en.pdf": "b1daad98af2123b2944a35f4e4dd53e276b8605577078a0a0f1b4d372073238e"
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "metrics_json_frozen": true,
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36"
+    },
+    "new_media": false,
+    "cannot_prove": [
+      "tagged PDF/UA or accessibility compliance",
+      "official boundary, exact anchor or approved design",
+      "field result, public feedback, staffing, budget or recovery duration",
+      "G1, authorization, approval or accepted professional duty",
+      "independent legal, file-level or trademark review"
+    ]
+  },
+  "round_61_provenance": {
+    "canonical_main_base_sha": "48a4d3cfe6af8b0bd42964e5a38fbeae1698e702",
+    "predecessor_pr": 4033,
+    "publication_revision": "61.0",
+    "scope": "Reviewer-visible information efficiency: one primary answer per concern, evidence on demand, and less repetition without changing design content, evidence markers or fixed publications.",
+    "before_evidence": {
+      "proposal_zh_characters": 51149,
+      "proposal_en_characters": 135381,
+      "review_finding": "information_density_high_and_concepts_repeated"
+    },
+    "after_evidence": {
+      "proposal_zh_characters": 45495,
+      "proposal_en_characters": 116491,
+      "proposal_zh_reduction_ratio": 0.1104,
+      "proposal_en_reduction_ratio": 0.1395,
+      "formal_chapter_sequence_preserved": true,
+      "figure_reference_set_preserved": true,
+      "unique_evidence_marker_sets_preserved": true,
+      "truth_boundary_contract_preserved": true
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "metrics_json_frozen": true,
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36",
+      "a3_page_pair": "14 + 14",
+      "a0_page_pair": "8 + 8"
+    },
+    "new_media": false,
+    "cannot_prove": [
+      "independent human bilingual confirmation or certified translation",
+      "official boundary, exact site or approved design",
+      "field performance, accessibility result, public feedback or recovery duration",
+      "G1, authorization, approval or accepted professional duty",
+      "independent legal, file-level or trademark review"
+    ]
+  },
+  "round_62_provenance": {
+    "canonical_main_base_sha": "52d499a313ba9e54a1fca18ca62cf0693e8d70ec",
+    "predecessor_pr": 4036,
+    "publication_revision": "62.0",
+    "scope": "Publication coherence and first-screen repair: stable reviewer-facing identity, one report H1 per language, semantic hero line breaks, and fixed-page label rebuild without new content, media or pages.",
+    "before_evidence": {
+      "proposal_frontmatter_revision": "61.0",
+      "latest_changelog_revision": "61.1",
+      "visual_current_label": "R60",
+      "pdf_pages_with_R60_current_label": 44,
+      "report_h1_count_per_language": 2,
+      "zh_desktop_hero_orphan": "侧。"
+    },
+    "after_evidence": {
+      "proposal_frontmatter_revision": "62.0",
+      "stable_frontstage_labels": {
+        "zh": "G0 概念稿 · 评审版",
+        "en": "G0 CONCEPT · REVIEW EDITION"
+      },
+      "pdf_pages_with_R60_current_label": 0,
+      "report_h1_count_per_language": 1,
+      "browser_viewports_checked_per_language": 5,
+      "browser_qa_issue_count": 0,
+      "pdf_pages_checked": 44,
+      "fresh_process_byte_identical_builds": 2
+    },
+    "final_pdf_sha256": {
+      "drawings/a3-booklet.pdf": "17244b82ba85d21e77bd65559f7156c4f62c0bc73a6e8b40503f5bbca818a429",
+      "drawings/a3-booklet.en.pdf": "f62f06b03924bec5a8b34f7bfdd786f3effb624b27d307aa25c61a02fbef5864",
+      "drawings/a0-boards.pdf": "a839288f62ea4aef4c7a6ec2469cbcda0cbf49fee363b7149c430a0d83093b30",
+      "drawings/a0-boards.en.pdf": "7c093179837d1ee4c4ad3c003f2e270a009589658b9b28b2a8986ffabaccf75d"
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "metrics_json_frozen": true,
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36",
+      "a3_page_pair": "14 + 14",
+      "a0_page_pair": "8 + 8"
+    },
+    "new_media": false,
+    "cannot_prove": [
+      "independent human bilingual confirmation or certified translation",
+      "official boundary, exact site or approved design",
+      "field performance, accessibility result, public feedback or recovery duration",
+      "G1, authorization, approval or accepted professional duty",
+      "independent legal, file-level or trademark review"
+    ]
+  },
+  "round_62_1_repair": {
+    "date": "2026-08-27",
+    "pr": 4055,
+    "scope": "Close the post-build offline CJK regression in the two final reports and bind the repair to all four final HTML consumers.",
+    "before_evidence": {
+      "report_stylesheet_link_count_per_language": 0,
+      "visual_stylesheet_link_count_per_language": 1,
+      "historical_register_claimed_closed": true
+    },
+    "after_evidence": {
+      "html_surfaces_checked": 4,
+      "stylesheet_link_count_per_surface": 1,
+      "font_face_status": "loaded",
+      "computed_family": "JZ Noto CJK Offline",
+      "core_chinese_string_check": true,
+      "external_http_resource_requests": 0,
+      "screenshot_tofu_count": 0
+    },
+    "generation_boundary": "The shared repository renderer has no package-level stylesheet hook and remains out of submission scope; every future report rerender must repeat the four-surface font regression before manifest refresh.",
+    "new_media": false,
+    "spatial_and_metric_freeze": true,
+    "cannot_prove": [
+      "independent accessibility certification",
+      "official boundary, field result, approval or G1",
+      "independent legal, file-level or trademark review"
+    ]
+  },
+  "media_generation_toolchain": {
+    "method": "Local deterministic vector and Pillow frame synthesis from package-authored diagrams and the four-state contract; Chrome raster export; FFmpeg H.264 encoding; no network, download, model API, site image, voice, music or audio.",
+    "python": "3.14.7",
+    "pillow": "12.2.0",
+    "chrome": {
+      "version": "151.0.7922.174",
+      "sha256": "b6d40f55e48e61760335d18f46abcec929e1a11b8330e7f2b501037584af4aa4"
+    },
+    "ffmpeg": {
+      "version": "6.1.1-essentials_build-www.gyan.dev",
+      "sha256": "0c4760db80d73a6ddc05c828a20c1b51c84bf61f4fcecff17f759c3edab800fb"
+    },
+    "ffprobe": {
+      "version": "6.1.1-essentials_build-www.gyan.dev",
+      "sha256": "01b99c76134e5c7a6b3f40f1d6c1e50f1084d5d5d763dfec1fde66bb1b575346"
+    },
+    "font_source": {
+      "name": "NotoSansCJKsc-Regular.otf",
+      "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "source_git_blob": "dc15562470b4f842321894787a0d066879ccff8b",
+      "license": "SIL-OFL-1.1"
+    },
+    "redistribution_boundary": "Chrome, FFmpeg, FFprobe and the source OTF are build tools and are not redistributed in this package; their licenses remain independent of contributor media licensing."
+  },
+  "round_63_provenance": {
+    "canonical_main_base_sha": "e89d6b70b0448111641088c89bf33bca2068f801",
+    "predecessor_pr": 4055,
+    "publication_revision": "63.0",
+    "scope": "Human-first task lens: foreground arrival, comprehension, completion, correction or withdrawal, and exit before exposing the Twin-Track system, without adding facts, media types, pages or maturity.",
+    "before_evidence": {
+      "ordinary_life_figure_action_mentions": {
+        "arrival": 0,
+        "comprehension": 0,
+        "completion": 1,
+        "correction_or_withdrawal": 0,
+        "exit": 4
+      },
+      "offline_visual_action_mentions": {
+        "arrival": 0,
+        "comprehension": 0,
+        "completion": 2,
+        "correction_or_withdrawal": 0,
+        "exit": 0
+      },
+      "editorial_finding": "The system was legible, but an ordinary person's complete task was not the unique first answer."
+    },
+    "after_evidence": {
+      "human_action_sequence": [
+        "arrive",
+        "understand",
+        "complete",
+        "correct_or_withdraw",
+        "leave"
+      ],
+      "paired_human_task_figure_files": 4,
+      "offline_visual_first_panel": "human_task",
+      "offline_visual_navigation_items": 6,
+      "offline_html_surfaces_checked": 4,
+      "offline_html_missing_glyph_count": 0,
+      "offline_html_external_resource_count": 0,
+      "pdf_pages_checked": 44,
+      "pdf_pages_with_extractable_text": 44,
+      "fresh_process_byte_identical_builds": 2
+    },
+    "final_pdf_sha256": {
+      "drawings/a3-booklet.pdf": "6a8f10e563b9d5b4718130396d0ef43d18d1e238be8753124144552bf3cae762",
+      "drawings/a3-booklet.en.pdf": "70988257788607b31ce77782e47b7d9d5cd19263cdd37d5edae6c743a84290a1",
+      "drawings/a0-boards.pdf": "f6f39836e00763e32c26de98408530307dbf673779895a07e6f38d9f7471aebe",
+      "drawings/a0-boards.en.pdf": "2c3e1c9f4afd9c74e0bfaf80c434b7ab1c2c822512c3a783d6416b0035275cfa"
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "metrics_json_frozen": true,
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36",
+      "a3_page_pair": "14 + 14",
+      "a0_page_pair": "8 + 8"
+    },
+    "new_media": false,
+    "poster_rebuilt_in_place": true,
+    "retained_video_caption_and_transcript_changed": false,
+    "cannot_prove": [
+      "that anonymous human symbols depict real people, residents, users or feedback",
+      "official boundary, exact site or approved design",
+      "field performance, accessibility result, staffing, schedule, budget or recovery duration",
+      "G1, authorization, approval or accepted professional duty",
+      "independent human bilingual confirmation, legal audit or trademark review"
+    ]
+  },
+  "round_64_provenance": {
+    "canonical_main_base_sha": "0558e48f98a92c9cfce43e947a44f8350da180a6",
+    "predecessor_pr": 4086,
+    "publication_revision": "64.0",
+    "scope": "Duty-acceptance frontstage: make existing H01-H07 role, refusal and ordinary-life-continuity decisions directly readable without adding a governance contract, real actor, fact, media or maturity.",
+    "before_evidence": {
+      "predecessor_review_score": 94,
+      "blocking_repairs": 0,
+      "implementability_score": "4/5",
+      "risk_compliance_score": "4/5",
+      "handoff_figure_role_group_count": 0,
+      "handoff_figure_explicit_missing_item_refusal_rule_count": 0,
+      "handoff_figure_explicit_ordinary_life_floor_count": 0,
+      "finding": "E01 showed one candidate and seven closed cards but did not directly answer who accepts duty, how missing evidence triggers refusal, or whether ordinary tasks continue during fault."
+    },
+    "after_evidence": {
+      "sole_candidate": "JZ-05 × SCENE-011 × T-02",
+      "role_groups": 3,
+      "decision_groups": 3,
+      "H01_H07_items": 7,
+      "accepted_H01_H07_items": 0,
+      "missing_item_action": "refuse real-world start and retain G0 / NO-GO",
+      "all_closed_action": "may consider a scoped G1 request; never automatic authorization, approval or restart",
+      "ordinary_life_floor": "ordinary route, printed/staffed same-task service, correction, complaint, withdrawal and exit continue; fault stops verification only",
+      "paired_figure_files_rebuilt_in_place": 4,
+      "offline_visual_navigation_items": 6,
+      "pdf_pages_checked": 44,
+      "fresh_process_byte_identical_builds": 2
+    },
+    "final_pdf_sha256": {
+      "drawings/a3-booklet.pdf": "50c9a4de20497726f97bc280b0e308d3135976c4edef48285da0cdf666b9a7b6",
+      "drawings/a3-booklet.en.pdf": "43882c564cd1908b1ff46367c8ae041f7f83cfdac40b3045dc734d82742171a9",
+      "drawings/a0-boards.pdf": "2356d5622a20bf41d50454019f91b9c85876fcfc05a8cabb85784891e00d51c7",
+      "drawings/a0-boards.en.pdf": "fc42620819859b8575a0c1ee1373b3606abfef6e2e9b8cf77e7866d7338cc48c"
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "metrics_json_frozen": true,
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36",
+      "a3_page_pair": "14 + 14",
+      "a0_page_pair": "8 + 8"
+    },
+    "new_media": false,
+    "new_source": false,
+    "new_governance_contract": false,
+    "cannot_prove": [
+      "a real institution, person, roster or duty acceptance",
+      "official boundary, exact site or approved design",
+      "field baseline, performance, accessibility result, budget or recovery duration",
+      "G1, authorization, approval, restart or professional acceptance",
+      "independent human bilingual confirmation, legal audit or trademark review"
+    ]
+  }
 }

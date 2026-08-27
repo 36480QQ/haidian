@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.1.0",
+  "status": "protocol_draft_not_run",
+  "optional_ai_role": "multi_point_event_attribution",
+  "preregistration_unit": "complete physical event before feature selection or augmentation",
+  "task_count": 4,
+  "tasks": [
+    {
+      "id": "evt-baseline-spectrum",
+      "outcome": "planned_not_run",
+      "dispatch_schema_valid": true,
+      "energy_used_kwh": 0,
+      "energy_budget_kwh": 0,
+      "audit_complete": false
+    },
+    {
+      "id": "evt-authorised-log",
+      "outcome": "planned_not_run",
+      "dispatch_schema_valid": true,
+      "energy_used_kwh": 0,
+      "energy_budget_kwh": 0,
+      "audit_complete": false
+    },
+    {
+      "id": "evt-fixed-rule",
+      "outcome": "planned_not_run",
+      "dispatch_schema_valid": true,
+      "energy_used_kwh": 0,
+      "energy_budget_kwh": 0,
+      "audit_complete": false
+    },
+    {
+      "id": "evt-optional-attribution",
+      "outcome": "planned_not_run",
+      "dispatch_schema_valid": true,
+      "energy_used_kwh": 0,
+      "energy_budget_kwh": 0,
+      "audit_complete": false
+    }
+  ],
+  "baselines": {
+    "preregistered_methods": {
+      "spectrum_analysis": "required",
+      "authorised_event_log": "required",
+      "fixed_rules": "required",
+      "human_engineering_review": "required"
+    }
+  },
+  "leakage_control": "Group and seal complete events before feature selection, augmentation or train/test assignment; the same event cannot cross arms or splits.",
+  "decision_effect": [
+    "investigation priority",
+    "next reversible action",
+    "confidence or refusal"
+  ],
+  "prohibited_outputs": [
+    "structural safety",
+    "statutory compliance",
+    "heritage safety",
+    "public-space release"
+  ],
+  "delete_if": "Delete the AI arm if leakage, budget inequality or failure to reach preregistered stable held-out decision gain occurs.",
+  "delete_if_zh": "数据泄漏、预算不等或留出事件无预注册稳定增益时，删除AI分支。",
+  "blind_benchmark": {
+    "status": "protocol_draft_not_run",
+    "preregistration_status": "pending_real_task_binding_and_signed_preregistration",
+    "arm_labels": [
+      "A",
+      "B"
+    ],
+    "blind_key_owner": "benchmark_custodian",
+    "same_input_scope": true,
+    "same_output_schema": true,
+    "budget_parity": {
+      "human_minutes": null,
+      "compute_kwh": null,
+      "data_scope": "same",
+      "set_by": "signed_preregistration"
+    },
+    "split_manifest_ref": null,
+    "heldout_event_ids_sha256": null,
+    "primary_endpoint": null,
+    "minimum_stable_gain": null,
+    "reveal_after": "human dispositions, investigation priority, refusal and review time are locked",
+    "model_developer_can_view_heldout_labels": false
+  },
+  "preregistration_status": "pending_real_task_binding_and_signed_preregistration"
+}

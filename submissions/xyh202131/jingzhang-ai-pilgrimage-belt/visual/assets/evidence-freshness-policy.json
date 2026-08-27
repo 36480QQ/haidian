@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "as_of": "2026-08-24",
+  "status": "targeted_public_source_refresh_complete",
+  "package_source_count": 48,
+  "central_registry_snapshot_count": 9,
+  "current_register": "source-governance-register.json",
+  "rules": [
+    "Central registry status is copied without upgrade.",
+    "Participant-collected public sources remain bounded background or case-comparison material unless separately reviewed.",
+    "Package-authored evidence supports proposal method and design intent, not external facts.",
+    "Access or publication dates do not prove present field conditions.",
+    "Any stale, inaccessible or conflicting source stops the affected claim and triggers human source review."
+  ],
+  "refresh_execution_this_round": {
+    "public_source_records_rechecked": 2,
+    "live_source_refresh_claimed": true,
+    "reason": "PR review identified CASE-22AT and CASE-KINGS-CROSS as review_due; only those two bounded background records were rechecked.",
+    "refresh_records": [
+      {
+        "source_id": "CASE-22AT",
+        "checked_at": "2026-08-24",
+        "url": "https://www.barcelona.cat/promocioeconomica/en/what-we-do/employment-business-entrepreneurship-and-innovation/science-and-innovation",
+        "method": "live public-page retrieval",
+        "result": "accessible_current_background_only",
+        "verified_scope": "The page identifies 22@ as an innovation and technology-transfer hub.",
+        "not_verified": ["22@ outcomes", "public-benefit delivery", "land policy", "fiscal tools", "transferability to Haidian"]
+      },
+      {
+        "source_id": "CASE-KINGS-CROSS",
+        "checked_at": "2026-08-24",
+        "previous_url": "https://www.kingscross.co.uk/workspace",
+        "url": "https://www.kingscross.co.uk/kings-cross-public-consultation",
+        "method": "live public-page retrieval after the previous URL returned HTTP 403",
+        "result": "replacement_primary_page_accessible_background_only",
+        "verified_scope": "The project-operator page describes human-scale principles, public-space delivery and continuing consultation.",
+        "not_verified": ["independent public-value outcomes", "current occupancy", "consultation quality", "commercial performance", "transferability to Haidian"]
+      }
+    ],
+    "next_trigger": "A changed source, new external claim, G1 application, official geometry release or maintainer request."
+  }
+}

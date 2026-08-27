@@ -1,0 +1,261 @@
+{
+  "type": "FeatureCollection",
+  "name": "jingzhang_for_life_mobility_network",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-001",
+      "properties": {
+        "id": "ROAD-001",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "greenway",
+        "name_zh": "京张人生长廊",
+        "label_en": "Jing-Zhang Life Corridor",
+        "movement_role": "heritage_nature_walk_cycle_life_support"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.3475,
+            39.939875
+          ],
+          [
+            116.34828,
+            39.953
+          ],
+          [
+            116.346876,
+            39.966125
+          ],
+          [
+            116.347968,
+            39.980125
+          ],
+          [
+            116.34671999999999,
+            39.994125
+          ],
+          [
+            116.348124,
+            40.008125
+          ],
+          [
+            116.347032,
+            40.025625
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-002",
+      "properties": {
+        "id": "ROAD-002",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "cycleway",
+        "name_zh": "文明门户圈横向联系",
+        "label_en": "Civilization Gateway cross-link",
+        "life_support_circle_id": "LSC-01",
+        "independent_mobility_test": "age_8_and_age_80_concept_standard"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34050555555555,
+            39.946
+          ],
+          [
+            116.354676,
+            39.946
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-003",
+      "properties": {
+        "id": "ROAD-003",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "cycleway",
+        "name_zh": "安居启程圈横向联系",
+        "label_en": "Stable Start cross-link",
+        "life_support_circle_id": "LSC-02",
+        "independent_mobility_test": "age_8_and_age_80_concept_standard"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.340324,
+            39.95825
+          ],
+          [
+            116.354676,
+            39.95825
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-004",
+      "properties": {
+        "id": "ROAD-004",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "cycleway",
+        "name_zh": "学养互助圈横向联系",
+        "label_en": "Learning and Care cross-link",
+        "life_support_circle_id": "LSC-03",
+        "independent_mobility_test": "age_8_and_age_80_concept_standard"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.340324,
+            39.9705
+          ],
+          [
+            116.354676,
+            39.9705
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-005",
+      "properties": {
+        "id": "ROAD-005",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "cycleway",
+        "name_zh": "原点共生圈横向联系",
+        "label_en": "Origin Commons cross-link",
+        "life_support_circle_id": "LSC-04",
+        "independent_mobility_test": "age_8_and_age_80_concept_standard"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.340324,
+            39.982749999999996
+          ],
+          [
+            116.35388,
+            39.982749999999996
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-006",
+      "properties": {
+        "id": "ROAD-006",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "cycleway",
+        "name_zh": "转化再学圈横向联系",
+        "label_en": "Transition Learning cross-link",
+        "life_support_circle_id": "LSC-05",
+        "independent_mobility_test": "age_8_and_age_80_concept_standard"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34099032258065,
+            39.995
+          ],
+          [
+            116.35357397260275,
+            39.995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-007",
+      "properties": {
+        "id": "ROAD-007",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "cycleway",
+        "name_zh": "照护韧性圈横向联系",
+        "label_en": "Care and Resilience cross-link",
+        "life_support_circle_id": "LSC-06",
+        "independent_mobility_test": "age_8_and_age_80_concept_standard"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34176097560976,
+            40.00725
+          ],
+          [
+            116.35424520547946,
+            40.00725
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-008",
+      "properties": {
+        "id": "ROAD-008",
+        "layer": "ROAD_CENTERLINE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "road_class": "cycleway",
+        "name_zh": "造物验证圈横向联系",
+        "label_en": "Making and Validation cross-link",
+        "life_support_circle_id": "LSC-07",
+        "independent_mobility_test": "age_8_and_age_80_concept_standard"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.34235853658537,
+            40.0195
+          ],
+          [
+            116.354676,
+            40.0195
+          ]
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "note_zh": "线位为概念联系，不是道路红线或工程线位。",
+    "note_en": "Conceptual connections, not road redlines or engineering alignments."
+  }
+}

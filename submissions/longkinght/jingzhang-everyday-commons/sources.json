@@ -47,15 +47,6 @@
       "limitations": "非官方红线，不能支撑精确面积或审批结论。"
     },
     {
-      "source_id": "GLOBAL-INNOVATION-DISTRICTS",
-      "title": "全球创新区公共空间案例研究",
-      "publisher": "公开学术文献与官方报告综合",
-      "url": "多来源",
-      "retrieval_date": "2026-08-07",
-      "usable_for_formal": "background_only",
-      "limitations": "仅用于方法比较。"
-    },
-    {
       "source_id": "MOHURD-LOCAL-STANDARDS",
       "title": "城市设计、控规深度与用地分类本地标准快照",
       "publisher": "项目组织方本地参考库",
@@ -65,31 +56,130 @@
       "limitations": "仅用于设计深度和证据链核对。"
     },
     {
-      "source_id": "D7-D8-CONCEPT-ASSETS",
-      "title": "D7-D8空间与文化表达初稿",
-      "publisher": "longkinght",
-      "url": "local workspace artifact",
-      "retrieval_date": "2026-08-11",
-      "usable_for_formal": "provisional_only",
-      "limitations": "原创概念图件和组件清单，不是现场测绘或审批资料。"
-    },
-    {
       "source_id": "GLOBAL-CASE-DEEP-RESEARCH-20260811",
-      "title": "全球AI创新生态案例证据审计与补强 v2",
-      "publisher": "longkinght / external AI research workflow",
-      "url": "local workspace artifact: 30-竞品与社区/全球AI创新生态案例-证据审计与补强-v2.md",
+      "title": "全球AI创新生态案例机制比较",
+      "publisher": "H&S",
+      "url": "assets/media/case-transfer-matrix.md",
       "retrieval_date": "2026-08-11",
       "usable_for_formal": "background_only",
       "limitations": "8个主案例与1个机制补充的比较参考；不支撑京张正式边界、控规、投资、运营方或实施承诺；待核清单中的问题不得写成已证实事实。"
     },
     {
       "source_id": "SCENARIO-GUARDRAILS-20260812",
-      "title": "场景双生卡三阶段护栏",
-      "publisher": "longkinght",
-      "url": "local workspace artifact: assets/media/scenario-guardrails-v1.md",
+      "title": "人机共生场景三阶段护栏",
+      "publisher": "H&S",
+      "url": "assets/media/scenario-guardrails.md",
       "retrieval_date": "2026-08-12",
       "usable_for_formal": "provisional_only",
       "limitations": "概念阶段的进入、普通服务等价、人工复核、停转和退出恢复字段；不构成运营授权、预算、采购或上线批准。"
+    },
+    {
+      "source_id": "CASE-KENDALL-OPENSPACE-20260827",
+      "title": "A New Open Space System for Eastern Cambridge and Kendall Square",
+      "publisher": "City of Cambridge Community Development Department",
+      "url": "https://www.cambridgema.gov/cdd/parks/osplanning/ecambkendallparks/creatinganeweckossystem",
+      "retrieval_date": "2026-08-27",
+      "usable_for_formal": "background_only",
+      "license": "citation only; page copyright retained by publisher",
+      "intended_use": "Compare a connected public-space network and open community planning process.",
+      "evidence_grade": "A",
+      "limitations": "Supports Kendall Square mechanism comparison only; does not prove Jingzhang conditions, causality or long-term inclusion outcomes."
+    },
+    {
+      "source_id": "CASE-CORTEX-STRATEGIC-20260827",
+      "title": "Cortex Strategic Plan",
+      "publisher": "Cortex Innovation Community",
+      "url": "https://www.cortexstl.org/about/strategic-plan",
+      "retrieval_date": "2026-08-27",
+      "usable_for_formal": "background_only",
+      "license": "citation only; page copyright retained by publisher",
+      "intended_use": "Compare a welcoming innovation district, talent ladder and stated inclusion goals.",
+      "evidence_grade": "A-",
+      "limitations": "Targets and impact figures are operator-reported; they are not transferred as Jingzhang forecasts or causal evidence."
+    },
+    {
+      "source_id": "CASE-KINGS-CROSS-ESTATE-20260827",
+      "title": "King's Cross Estate Management",
+      "publisher": "King's Cross Estate Services",
+      "url": "https://www.kingscross.co.uk/estate-management",
+      "retrieval_date": "2026-08-27",
+      "usable_for_formal": "background_only",
+      "license": "citation only; all rights reserved by publisher",
+      "intended_use": "Compare visible human assistance, estate operations and explicit facial-recognition policy.",
+      "evidence_grade": "A",
+      "limitations": "Privately managed accessible space is not equivalent to statutory public space; current policy is not evidence of historic or universal digital-rights compliance."
+    },
+    {
+      "source_id": "CASE-QUAYSIDE-CITY-20260827",
+      "title": "Quayside",
+      "publisher": "City of Toronto",
+      "url": "https://www.toronto.ca/city-government/planning-development/waterfront/current-projects/quayside/",
+      "retrieval_date": "2026-08-27",
+      "usable_for_formal": "background_only",
+      "license": "citation only; municipal page copyright retained",
+      "intended_use": "Compare scope resetting, transparent procurement, independent fairness monitoring and public-benefit housing governance.",
+      "evidence_grade": "A",
+      "limitations": "The current Quayside project is distinct from the discontinued Sidewalk Labs proposal; neither provides Jingzhang planning controls or delivery commitments."
+    },
+    {
+      "source_id": "CASE-PARIS-SACLAY-INNOVATION-20260827",
+      "title": "Innovation",
+      "publisher": "EPA Paris-Saclay",
+      "url": "https://epa-paris-saclay.fr/nos-ambitions/innovation/",
+      "retrieval_date": "2026-08-27",
+      "usable_for_formal": "background_only",
+      "license": "citation only; page copyright retained by publisher",
+      "intended_use": "Compare a large-scale urban living laboratory, open innovation network and public-space experimentation.",
+      "evidence_grade": "A-",
+      "limitations": "Operator descriptions and French national-development conditions are not transferable as Jingzhang performance, scale or investment evidence."
+    },
+    {
+      "source_id": "CASE-TONSLEY-FLEX-20260827",
+      "title": "FLEX Bus - Driverless Shuttle",
+      "publisher": "Flinders University",
+      "url": "https://www.flinders.edu.au/flex-bus",
+      "retrieval_date": "2026-08-27",
+      "usable_for_formal": "background_only",
+      "license": "citation only; university page copyright retained",
+      "intended_use": "Compare a completed public-road autonomous trial with free access, accessibility, onboard chaperone, emergency stop and manual takeover.",
+      "evidence_grade": "A-",
+      "limitations": "A completed Australian trial does not establish Beijing road approval, insurance, refusal rights, safety thresholds or operational feasibility."
+    },
+    {
+      "source_id": "CASE-22BARCELONA-SCIENCE-20260827",
+      "title": "Science and Innovation",
+      "publisher": "Barcelona City Council",
+      "url": "https://www.barcelona.cat/promocioeconomica/en/what-we-do/employment-business-entrepreneurship-and-innovation/science-and-innovation",
+      "retrieval_date": "2026-08-27",
+      "usable_for_formal": "background_only",
+      "license": "citation only; municipal page copyright retained",
+      "intended_use": "Compare the 22@ innovation hub, knowledge-transfer infrastructure and city-scale science network.",
+      "evidence_grade": "A",
+      "limitations": "Barcelona governance, land-use conversion and investment conditions are not transferable as Jingzhang approvals, effects or commitments."
+    },
+    {
+      "source_id": "CASE-HELSINKI-AI-REGISTER-20260827",
+      "title": "Get to know AI Register",
+      "publisher": "City of Helsinki",
+      "url": "https://ai.hel.fi/en/get-to-know-ai-register/",
+      "retrieval_date": "2026-08-27",
+      "usable_for_formal": "background_only",
+      "license": "citation only; municipal page copyright retained",
+      "intended_use": "Compare public disclosure and feedback fields for municipal AI systems.",
+      "evidence_grade": "A",
+      "limitations": "A public register supports transparency but does not by itself prove accessibility, accountability, legal remedy or local suitability."
+    },
+    {
+      "source_id": "CASE-STATIONF-CAMPUS-20260827",
+      "title": "How Is the STATION F Campus Organized?",
+      "publisher": "STATION F",
+      "url": "https://faq.stationf.co/hc/en-us/articles/115003119905-How-Is-the-STATION-F-Campus-Organized",
+      "retrieval_date": "2026-08-27",
+      "usable_for_formal": "background_only",
+      "license": "citation only; page copyright retained by publisher",
+      "intended_use": "Compare shared resources, selective startup space and public/semi-public campus zones as an ecosystem-support mechanism.",
+      "evidence_grade": "A-",
+      "limitations": "A selective private startup campus is not a model for universal public access and is used only as a professional-support reference."
     }
   ]
 }

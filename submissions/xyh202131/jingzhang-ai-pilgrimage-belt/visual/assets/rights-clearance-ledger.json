@@ -1,0 +1,182 @@
+{
+  "schema_version": "2.0",
+  "as_of": "2026-08-27",
+  "status": "current_exact_package_cleared_for_repository_review_display_and_redistribution_under_component_specific_terms",
+  "legal_opinion_provided": false,
+  "independent_file_level_audit_completed": false,
+  "independent_trademark_review_completed": false,
+  "contributor_file_inventory_complete": true,
+  "contributor_file_inventory": "visual/assets/file-rights-inventory.json",
+  "contributor_file_inventory_path_count": 157,
+  "contributor_file_inventory_coverage_ratio": 1.0,
+  "summary_zh": "当前精确投稿包 157/157 个路径均已由投稿方完成作者/来源/许可/署名/变更/再分发和例外处置，可按组件条款用于仓库评审、展示与再分发；不存在单一整包许可。自有内容及第59轮确定性概念媒体为 CC BY 4.0，自有代码 MIT，OSM 衍生数据库 ODbL，HTML 字体子集及第60轮首次嵌入、由第63轮人本重建继续保留的 PDF 语义子集适用 Noto Sans CJK SC OFL，第三方内容仅引用，仓库临时输入不被重新许可。独立法律意见、独立逐文件审计和商标审查仍未提供。",
+  "summary_en": "All 157/157 paths in the current exact submission package have contributor decisions for authorship/source, licence, attribution, transformation, redistribution and exceptions. The package may be reviewed, displayed and redistributed under component-specific terms; there is no single package-wide licence. Contributor content and R59 deterministic concept media are CC BY 4.0, code is MIT, OSM-derived database content is ODbL, the HTML font subset and the PDF semantic subset first embedded in R60 and retained by the R63 human-first rebuild are Noto Sans CJK SC under OFL, third-party works are citation-only, and repository provisional inputs are not relicensed. Independent legal advice, independent file-level audit and trademark review remain absent.",
+  "components": [
+    {
+      "component_id": "RIGHTS-CONTENT",
+      "scope": "Contributor-owned narrative, tables, diagrams, SVG, PNG exports, editorial layout, authored JSON and conceptual GeoJSON transformations",
+      "license": "CC-BY-4.0",
+      "notice": "report/copyright_statement.md",
+      "status": "licensed_by_contributor"
+    },
+    {
+      "component_id": "RIGHTS-CODE",
+      "scope": "Contributor-authored build, replay and offline interaction code",
+      "license": "MIT",
+      "notice": "report/copyright_statement.md",
+      "status": "licensed_by_contributor"
+    },
+    {
+      "component_id": "RIGHTS-OSM",
+      "scope": "OSM-derived records in geometry/constraints.geojson",
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "notice": "report/copyright_statement.md",
+      "status": "separately_licensed_database_content"
+    },
+    {
+      "component_id": "RIGHTS-PROVISIONAL",
+      "scope": "Repository-provided provisional boundary and key-area inputs",
+      "license": "not_relicensed_by_contributor",
+      "status": "repository_input_with_original_limits",
+      "limit": "Not an official redline or approval basis."
+    },
+    {
+      "component_id": "RIGHTS-CITATIONS",
+      "scope": "Linked policies, standards, cases and public webpages",
+      "license": "citation_only",
+      "status": "not_embedded_not_relicensed",
+      "limit": "No third-party page image, logo, document layout or retrieval cache is redistributed."
+    },
+    {
+      "component_id": "RIGHTS-FONT",
+      "scope": "Noto Sans CJK SC Regular visible glyph output rasterized into the four final PDFs, a minimal embedded OTF semantic subset for search/copy, and the WOFF2 subset shared by the four offline HTML outputs through visual/assets/offline-cjk-font.css",
+      "license": "SIL-OFL-1.1",
+      "status": "permitted_embedding_and_redistribution",
+      "notice": "report/copyright_statement.md",
+      "pdf_and_html_source_file_name": "NotoSansCJKsc-Regular.otf",
+      "pdf_and_html_source_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "pdf_render_method": "R63 deterministic fixed-page composition uses locally rasterized visible Noto Sans CJK SC glyphs and an embedded semantic subset made from the same registered OFL source; 44/44 pages remain searchable/copyable, with no tagged-PDF claim.",
+      "pdf_accessibility_boundary": "All 44 fixed pages expose searchable/copyable semantic text, but tagged PDF/UA and accessibility conformance are not claimed; the paired offline HTML reports remain the complete keyboard and machine-readable surface",
+      "html_subset_sha256": "30656aa6450d8676d3d7fe1f7ca4de135bc2bcf7e33667121c045a235779fdff",
+      "html_subset_method": "fontTools subset 4.62.1 over the literal character union of both final report and visual HTML counterparts; WOFF2; 1148 Unicode code points; font-display swap"
+    },
+    {
+      "component_id": "RIGHTS-FILE-INVENTORY",
+      "scope": "Every one of the 157 paths in the current submission distribution tree",
+      "license": "component_specific",
+      "status": "contributor_self_inventory_complete",
+      "notice": "visual/assets/file-rights-inventory.json",
+      "limit": "The inventory records provenance and licence decisions but is not an independent legal opinion, trademark search or professional rights audit."
+    },
+    {
+      "component_id": "RIGHTS-R59-CONCEPT-MEDIA",
+      "scope": "assets/media/four-state-cover.webp, four-state-experience.mp4, its bilingual VTT and transcript, plus the explanatory four-state contract",
+      "license": "CC-BY-4.0 for contributor-authored content",
+      "status": "licensed_by_contributor_for_current_exact_package_no_independent_legal_opinion_claimed",
+      "method": "The retained MP4/VTT/transcript remain the deterministic R59 local production. R63 rebuilt only the contributor-owned poster in place from the human-task lens using local Pillow and the registered Noto font; no network, external media, model API, voice, music or audio.",
+      "limit": "Conceptual explanatory presentation only; not site, public-opinion, accessibility, approval, performance, location, duration, official-geometry, service-result or maturity evidence."
+    }
+  ],
+  "release_decisions": {
+    "repository_review": "allowed_with_attribution_and_component_notices",
+    "public_reuse_of_contributor_content": "allowed_under_CC-BY-4.0_for_contributor_owned_components_only",
+    "code_reuse": "allowed_under_MIT",
+    "osm_database_reuse": "allowed_under_ODbL-1.0_with_attribution_and_share_alike",
+    "third_party_source_reproduction": "not_granted",
+    "professional_implementation": "not_authorized_requires_H01_H07_official_inputs_professional_acceptance_and_separate_contracts",
+    "current_exact_package_redistribution": "allowed_with_component_specific_terms_and_notices_no_single_package_license",
+    "future_public_installation_or_external_brand_release": "not_authorized_requires_scope_specific_review"
+  },
+  "future_public_installation_and_brand_release_gate": {
+    "status": "not_requested_no_public_installation_or_external_brand_release_authorized",
+    "current_public_installation_count": 0,
+    "current_external_brand_deployment_count": 0,
+    "gate_items": [
+      {
+        "gate_id": "PUB-RIGHT-01-AUTHORSHIP",
+        "required_evidence": "versioned authorship and contribution record for every proposed public asset and derivative",
+        "current_state": "current_package_contributor_inventory_available_future_asset_not_submitted",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-02-CC-BY-MIT",
+        "required_evidence": "applicable CC BY 4.0 and MIT notices, attribution placement and derivative boundaries for the exact release",
+        "current_state": "component_notices_declared_future_release_review_open",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-03-OSM",
+        "required_evidence": "ODbL attribution, database/produced-work classification, share-alike decision and distribution notice for the exact public output",
+        "current_state": "current_osm_component_declared_future_release_review_open",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-04-FONT",
+        "required_evidence": "OFL notice, source/subset identity, reserved-font-name check and embedding or rasterization method for the exact output",
+        "current_state": "current_font_component_declared_future_release_review_open",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-05-THIRD-PARTY",
+        "required_evidence": "item-level reproduction or citation-only decision for every third-party text, image, archive item, oral-history record, person or mark",
+        "current_state": "no_new_third_party_public_asset_submitted",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-06-TRADEMARK-HISTORY",
+        "required_evidence": "scope-specific trademark search and professional historical or curatorial verification for final names, logo and landmark content",
+        "current_state": "not_reviewed",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-07-GENERATED-CONTENT",
+        "required_evidence": "tool/model, prompt or production method, output terms, edit history, disclosure label and non-evidence statement for each generated public asset",
+        "current_state": "current_R59_deterministic_contributor_media_disclosed_no_model_API_future_public_asset_gate_open",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-08-ACCESSIBILITY",
+        "required_evidence": "reviewed alt text, caption/transcript, contrast, legibility, tactile/audio or other equivalent access appropriate to the installed medium",
+        "current_state": "future_installation_review_not_completed",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-09-WITHDRAWAL",
+        "required_evidence": "named takedown holder, correction route, withdrawal conditions, physical removal plan and archived rights decision",
+        "current_state": "future_release_owner_not_assigned",
+        "accepted_count": 0
+      }
+    ],
+    "release_rule": "A repository review, PR merge, current component licence declaration or contributor inventory does not authorize a public installation, permanent landmark, merchandise, external campaign or professional implementation. All applicable items must be accepted for the exact version and use context."
+  },
+  "truth_boundary": "Rights clearance does not establish field truth, planning approval, accessibility compliance, service performance, G1 maturity or professional acceptance.",
+  "media_toolchain_disclosure": {
+    "python": "3.14.7",
+    "pillow": "12.2.0",
+    "chrome_version_and_sha256": "151.0.7922.174 / b6d40f55e48e61760335d18f46abcec929e1a11b8330e7f2b501037584af4aa4",
+    "ffmpeg_version_and_sha256": "6.1.1-essentials_build-www.gyan.dev / 0c4760db80d73a6ddc05c828a20c1b51c84bf61f4fcecff17f759c3edab800fb",
+    "ffprobe_version_and_sha256": "6.1.1-essentials_build-www.gyan.dev / 01b99c76134e5c7a6b3f40f1d6c1e50f1084d5d5d763dfec1fde66bb1b575346",
+    "noto_source_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+    "redistribution": "Tool binaries and the source OTF are not redistributed; their licences remain independent."
+  },
+  "current_exact_package_release": {
+    "decision": "allowed_for_repository_review_display_and_redistribution_under_component_specific_terms",
+    "single_package_license": false,
+    "path_decision_coverage": "157/157",
+    "conditions": [
+      "apply CC BY 4.0 to contributor-owned content and indicate changes",
+      "retain MIT notice for contributor code",
+      "retain © OpenStreetMap contributors and ODbL obligations for OSM-derived database content",
+      "retain SIL OFL 1.1 notice for the Noto subset and rasterized glyph use",
+      "do not reproduce citation-only third-party works",
+      "retain repository provisional-input limits and all G0/non-evidence notices"
+    ],
+    "does_not_authorize": [
+      "future public installation or external brand release",
+      "professional implementation, construction or operation",
+      "planning approval, G1, field truth or professional acceptance"
+    ]
+  },
+  "round_64_note": "Only contributor-owned handoff figures and their existing publication consumers were rebuilt. No third-party material, new media, source, font or licence class was added; role types do not imply real institutions, people, acceptance or professional authorization."
+}

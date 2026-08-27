@@ -1,0 +1,6074 @@
+{
+  "type": "FeatureCollection",
+  "name": "building_footprints",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "BLDG-001",
+      "properties": {
+        "id": "BLDG-001",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "大钟寺广场2号楼",
+        "area_sqm_declared": 1366.124
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343212,
+              39.966401
+            ],
+            [
+              116.343212,
+              39.966801
+            ],
+            [
+              116.342852,
+              39.966801
+            ],
+            [
+              116.342852,
+              39.966401
+            ],
+            [
+              116.343212,
+              39.966401
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-002",
+      "properties": {
+        "id": "BLDG-002",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "致真大厦",
+        "area_sqm_declared": 1365.911
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351744,
+              39.977124
+            ],
+            [
+              116.351744,
+              39.977524
+            ],
+            [
+              116.351384,
+              39.977524
+            ],
+            [
+              116.351384,
+              39.977124
+            ],
+            [
+              116.351744,
+              39.977124
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-003",
+      "properties": {
+        "id": "BLDG-003",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京方恒中心",
+        "area_sqm_declared": 1366.092
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.340985,
+              39.968086
+            ],
+            [
+              116.340985,
+              39.968486
+            ],
+            [
+              116.340625,
+              39.968486
+            ],
+            [
+              116.340625,
+              39.968086
+            ],
+            [
+              116.340985,
+              39.968086
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-004",
+      "properties": {
+        "id": "BLDG-004",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "京果商厦A座",
+        "area_sqm_declared": 1366.24
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345808,
+              39.960473
+            ],
+            [
+              116.345808,
+              39.960873
+            ],
+            [
+              116.345448,
+              39.960873
+            ],
+            [
+              116.345448,
+              39.960473
+            ],
+            [
+              116.345808,
+              39.960473
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-005",
+      "properties": {
+        "id": "BLDG-005",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "弘彧大厦",
+        "area_sqm_declared": 1365.46
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351811,
+              40.000038
+            ],
+            [
+              116.351811,
+              40.000438
+            ],
+            [
+              116.351451,
+              40.000438
+            ],
+            [
+              116.351451,
+              40.000038
+            ],
+            [
+              116.351811,
+              40.000038
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-006",
+      "properties": {
+        "id": "BLDG-006",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "大钟寺广场1号楼",
+        "area_sqm_declared": 1366.142
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.340905,
+              39.965524
+            ],
+            [
+              116.340905,
+              39.965924
+            ],
+            [
+              116.340545,
+              39.965924
+            ],
+            [
+              116.340545,
+              39.965524
+            ],
+            [
+              116.340905,
+              39.965524
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-007",
+      "properties": {
+        "id": "BLDG-007",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "学院国际大厦",
+        "area_sqm_declared": 1365.91
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353346,
+              39.977104
+            ],
+            [
+              116.353346,
+              39.977503999999996
+            ],
+            [
+              116.352986,
+              39.977503999999996
+            ],
+            [
+              116.352986,
+              39.977104
+            ],
+            [
+              116.353346,
+              39.977104
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-008",
+      "properties": {
+        "id": "BLDG-008",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "金运大厦(西直门北大街辅路)",
+        "area_sqm_declared": 1366.433
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354922,
+              39.950519
+            ],
+            [
+              116.354922,
+              39.950919
+            ],
+            [
+              116.354562,
+              39.950919
+            ],
+            [
+              116.354562,
+              39.950519
+            ],
+            [
+              116.354922,
+              39.950519
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-009",
+      "properties": {
+        "id": "BLDG-009",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "西环广场-T1座(凯德MALL西直门店)",
+        "area_sqm_declared": 1366.624
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353029,
+              39.940827
+            ],
+            [
+              116.353029,
+              39.941227
+            ],
+            [
+              116.352669,
+              39.941227
+            ],
+            [
+              116.352669,
+              39.940827
+            ],
+            [
+              116.353029,
+              39.940827
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-010",
+      "properties": {
+        "id": "BLDG-010",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "中仪大厦",
+        "area_sqm_declared": 1366.652
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353196,
+              39.939409
+            ],
+            [
+              116.353196,
+              39.939809
+            ],
+            [
+              116.352836,
+              39.939809
+            ],
+            [
+              116.352836,
+              39.939409
+            ],
+            [
+              116.353196,
+              39.939409
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-011",
+      "properties": {
+        "id": "BLDG-011",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "学清嘉创大厦",
+        "area_sqm_declared": 1365.179
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353149,
+              40.014272
+            ],
+            [
+              116.353149,
+              40.014672
+            ],
+            [
+              116.352789,
+              40.014672
+            ],
+            [
+              116.352789,
+              40.014272
+            ],
+            [
+              116.353149,
+              40.014272
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-012",
+      "properties": {
+        "id": "BLDG-012",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "中坤大厦",
+        "area_sqm_declared": 1366.573
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35019,
+              39.943486
+            ],
+            [
+              116.35019,
+              39.943886
+            ],
+            [
+              116.34983,
+              39.943886
+            ],
+            [
+              116.34983,
+              39.943486
+            ],
+            [
+              116.35019,
+              39.943486
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-013",
+      "properties": {
+        "id": "BLDG-013",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "西环广场",
+        "area_sqm_declared": 1366.607
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35298,
+              39.941675000000004
+            ],
+            [
+              116.35298,
+              39.942075
+            ],
+            [
+              116.35262,
+              39.942075
+            ],
+            [
+              116.35262,
+              39.941675000000004
+            ],
+            [
+              116.35298,
+              39.941675000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-014",
+      "properties": {
+        "id": "BLDG-014",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "锦秋国际",
+        "area_sqm_declared": 1365.938
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349265,
+              39.975757
+            ],
+            [
+              116.349265,
+              39.976157
+            ],
+            [
+              116.348905,
+              39.976157
+            ],
+            [
+              116.348905,
+              39.975757
+            ],
+            [
+              116.349265,
+              39.975757
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-015",
+      "properties": {
+        "id": "BLDG-015",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "金码大厦",
+        "area_sqm_declared": 1365.428
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353953,
+              40.001606
+            ],
+            [
+              116.353953,
+              40.002006
+            ],
+            [
+              116.353593,
+              40.002006
+            ],
+            [
+              116.353593,
+              40.001606
+            ],
+            [
+              116.353953,
+              40.001606
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-016",
+      "properties": {
+        "id": "BLDG-016",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "大钟寺广场东区",
+        "area_sqm_declared": 1366.13
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343244,
+              39.966094
+            ],
+            [
+              116.343244,
+              39.966494
+            ],
+            [
+              116.342884,
+              39.966494
+            ],
+            [
+              116.342884,
+              39.966094
+            ],
+            [
+              116.343244,
+              39.966094
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-017",
+      "properties": {
+        "id": "BLDG-017",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "首享科技大厦",
+        "area_sqm_declared": 1365.894
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353114,
+              39.977946
+            ],
+            [
+              116.353114,
+              39.978346
+            ],
+            [
+              116.352754,
+              39.978346
+            ],
+            [
+              116.352754,
+              39.977946
+            ],
+            [
+              116.353114,
+              39.977946
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-018",
+      "properties": {
+        "id": "BLDG-018",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "学清嘉创大厦A座",
+        "area_sqm_declared": 1365.174
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353134,
+              40.014547
+            ],
+            [
+              116.353134,
+              40.014947
+            ],
+            [
+              116.352774,
+              40.014947
+            ],
+            [
+              116.352774,
+              40.014547
+            ],
+            [
+              116.353134,
+              40.014547
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-019",
+      "properties": {
+        "id": "BLDG-019",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "学府大厦",
+        "area_sqm_declared": 1365.497
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.352231,
+              39.998156
+            ],
+            [
+              116.352231,
+              39.998556
+            ],
+            [
+              116.351871,
+              39.998556
+            ],
+            [
+              116.351871,
+              39.998156
+            ],
+            [
+              116.352231,
+              39.998156
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-020",
+      "properties": {
+        "id": "BLDG-020",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "钻河中心2号楼",
+        "area_sqm_declared": 1366.554
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351182,
+              39.944415
+            ],
+            [
+              116.351182,
+              39.944815
+            ],
+            [
+              116.350822,
+              39.944815
+            ],
+            [
+              116.350822,
+              39.944415
+            ],
+            [
+              116.351182,
+              39.944415
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-021",
+      "properties": {
+        "id": "BLDG-021",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "智地·钻河公馆写字楼",
+        "area_sqm_declared": 1366.544
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350824,
+              39.944937
+            ],
+            [
+              116.350824,
+              39.945337
+            ],
+            [
+              116.350464,
+              39.945337
+            ],
+            [
+              116.350464,
+              39.944937
+            ],
+            [
+              116.350824,
+              39.944937
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-022",
+      "properties": {
+        "id": "BLDG-022",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "金运大厦B座",
+        "area_sqm_declared": 1366.428
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354856,
+              39.950763
+            ],
+            [
+              116.354856,
+              39.951163
+            ],
+            [
+              116.354496,
+              39.951163
+            ],
+            [
+              116.354496,
+              39.950763
+            ],
+            [
+              116.354856,
+              39.950763
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-023",
+      "properties": {
+        "id": "BLDG-023",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "量子银座",
+        "area_sqm_declared": 1365.909
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346046,
+              39.977305
+            ],
+            [
+              116.346046,
+              39.977705
+            ],
+            [
+              116.345686,
+              39.977705
+            ],
+            [
+              116.345686,
+              39.977305
+            ],
+            [
+              116.346046,
+              39.977305
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-024",
+      "properties": {
+        "id": "BLDG-024",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "学知轩",
+        "area_sqm_declared": 1365.224
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353171,
+              40.011986
+            ],
+            [
+              116.353171,
+              40.012386
+            ],
+            [
+              116.352811,
+              40.012386
+            ],
+            [
+              116.352811,
+              40.011986
+            ],
+            [
+              116.353171,
+              40.011986
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-025",
+      "properties": {
+        "id": "BLDG-025",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "汇智大厦",
+        "area_sqm_declared": 1365.073
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351212,
+              40.01967
+            ],
+            [
+              116.351212,
+              40.02007
+            ],
+            [
+              116.350852,
+              40.02007
+            ],
+            [
+              116.350852,
+              40.01967
+            ],
+            [
+              116.351212,
+              40.01967
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-026",
+      "properties": {
+        "id": "BLDG-026",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "大运金都",
+        "area_sqm_declared": 1365.922
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343609,
+              39.976651000000004
+            ],
+            [
+              116.343609,
+              39.977051
+            ],
+            [
+              116.343249,
+              39.977051
+            ],
+            [
+              116.343249,
+              39.976651000000004
+            ],
+            [
+              116.343609,
+              39.976651000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-027",
+      "properties": {
+        "id": "BLDG-027",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "蓟门壹号",
+        "area_sqm_declared": 1365.979
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35266,
+              39.973626
+            ],
+            [
+              116.35266,
+              39.974026
+            ],
+            [
+              116.3523,
+              39.974026
+            ],
+            [
+              116.3523,
+              39.973626
+            ],
+            [
+              116.35266,
+              39.973626
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-028",
+      "properties": {
+        "id": "BLDG-028",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京航空航天大学学院路校区柏彦大厦",
+        "area_sqm_declared": 1365.741
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.348937,
+              39.985786
+            ],
+            [
+              116.348937,
+              39.986186
+            ],
+            [
+              116.348577,
+              39.986186
+            ],
+            [
+              116.348577,
+              39.985786
+            ],
+            [
+              116.348937,
+              39.985786
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-029",
+      "properties": {
+        "id": "BLDG-029",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "科技财富中心",
+        "area_sqm_declared": 1365.149
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353435,
+              40.015783
+            ],
+            [
+              116.353435,
+              40.016183
+            ],
+            [
+              116.353075,
+              40.016183
+            ],
+            [
+              116.353075,
+              40.015783
+            ],
+            [
+              116.353435,
+              40.015783
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-030",
+      "properties": {
+        "id": "BLDG-030",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "科技财富中心A座",
+        "area_sqm_declared": 1365.154
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353848,
+              40.015551
+            ],
+            [
+              116.353848,
+              40.015951
+            ],
+            [
+              116.353488,
+              40.015951
+            ],
+            [
+              116.353488,
+              40.015551
+            ],
+            [
+              116.353848,
+              40.015551
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-031",
+      "properties": {
+        "id": "BLDG-031",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "中国医药大厦",
+        "area_sqm_declared": 1365.938
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346516,
+              39.97579
+            ],
+            [
+              116.346516,
+              39.97619
+            ],
+            [
+              116.346156,
+              39.97619
+            ],
+            [
+              116.346156,
+              39.97579
+            ],
+            [
+              116.346516,
+              39.97579
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-032",
+      "properties": {
+        "id": "BLDG-032",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京航空航天大学学院路校区唯实大厦",
+        "area_sqm_declared": 1365.879
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.352958,
+              39.978714000000004
+            ],
+            [
+              116.352958,
+              39.979114
+            ],
+            [
+              116.352598,
+              39.979114
+            ],
+            [
+              116.352598,
+              39.978714000000004
+            ],
+            [
+              116.352958,
+              39.978714000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-033",
+      "properties": {
+        "id": "BLDG-033",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京航空航天大学学院路校区世宁大厦",
+        "area_sqm_declared": 1365.743
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.352546,
+              39.985640000000004
+            ],
+            [
+              116.352546,
+              39.98604
+            ],
+            [
+              116.352186,
+              39.98604
+            ],
+            [
+              116.352186,
+              39.985640000000004
+            ],
+            [
+              116.352546,
+              39.985640000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-034",
+      "properties": {
+        "id": "BLDG-034",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "融汇国际大厦",
+        "area_sqm_declared": 1366.519
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345332,
+              39.946304
+            ],
+            [
+              116.345332,
+              39.946704
+            ],
+            [
+              116.344972,
+              39.946704
+            ],
+            [
+              116.344972,
+              39.946304
+            ],
+            [
+              116.345332,
+              39.946304
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-035",
+      "properties": {
+        "id": "BLDG-035",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "量子芯座",
+        "area_sqm_declared": 1365.922
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344634,
+              39.976678
+            ],
+            [
+              116.344634,
+              39.977078
+            ],
+            [
+              116.344274,
+              39.977078
+            ],
+            [
+              116.344274,
+              39.976678
+            ],
+            [
+              116.344634,
+              39.976678
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-036",
+      "properties": {
+        "id": "BLDG-036",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "智慧大厦(学院南路)",
+        "area_sqm_declared": 1366.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353711,
+              39.95732
+            ],
+            [
+              116.353711,
+              39.95772
+            ],
+            [
+              116.353351,
+              39.95772
+            ],
+            [
+              116.353351,
+              39.95732
+            ],
+            [
+              116.353711,
+              39.95732
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-037",
+      "properties": {
+        "id": "BLDG-037",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "汉华世纪大厦",
+        "area_sqm_declared": 1365.251
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350674,
+              40.010641
+            ],
+            [
+              116.350674,
+              40.011041
+            ],
+            [
+              116.350314,
+              40.011041
+            ],
+            [
+              116.350314,
+              40.010641
+            ],
+            [
+              116.350674,
+              40.010641
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-038",
+      "properties": {
+        "id": "BLDG-038",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "永泰嘉盛写字楼",
+        "area_sqm_declared": 1366.533
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350445,
+              39.945515
+            ],
+            [
+              116.350445,
+              39.945915
+            ],
+            [
+              116.35008499999999,
+              39.945915
+            ],
+            [
+              116.35008499999999,
+              39.945515
+            ],
+            [
+              116.350445,
+              39.945515
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-039",
+      "properties": {
+        "id": "BLDG-039",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "六所大厦A座",
+        "area_sqm_declared": 1365.437
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35214,
+              40.001171
+            ],
+            [
+              116.35214,
+              40.001571
+            ],
+            [
+              116.35178,
+              40.001571
+            ],
+            [
+              116.35178,
+              40.001171
+            ],
+            [
+              116.35214,
+              40.001171
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-040",
+      "properties": {
+        "id": "BLDG-040",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "华远·企业中心",
+        "area_sqm_declared": 1366.593
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347945,
+              39.942479
+            ],
+            [
+              116.347945,
+              39.942879
+            ],
+            [
+              116.347585,
+              39.942879
+            ],
+            [
+              116.347585,
+              39.942479
+            ],
+            [
+              116.347945,
+              39.942479
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-041",
+      "properties": {
+        "id": "BLDG-041",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "高思教育大厦",
+        "area_sqm_declared": 1365.723
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.341313,
+              39.986848
+            ],
+            [
+              116.341313,
+              39.987248
+            ],
+            [
+              116.340953,
+              39.987248
+            ],
+            [
+              116.340953,
+              39.986848
+            ],
+            [
+              116.341313,
+              39.986848
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-042",
+      "properties": {
+        "id": "BLDG-042",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "航遥大厦",
+        "area_sqm_declared": 1365.709
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349159,
+              39.987394
+            ],
+            [
+              116.349159,
+              39.987794
+            ],
+            [
+              116.348799,
+              39.987794
+            ],
+            [
+              116.348799,
+              39.987394
+            ],
+            [
+              116.349159,
+              39.987394
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-043",
+      "properties": {
+        "id": "BLDG-043",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京北邮科技大厦(蓟门桥地铁站店)",
+        "area_sqm_declared": 1366.161
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.355429,
+              39.964337
+            ],
+            [
+              116.355429,
+              39.964737
+            ],
+            [
+              116.355069,
+              39.964737
+            ],
+            [
+              116.355069,
+              39.964337
+            ],
+            [
+              116.355429,
+              39.964337
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-044",
+      "properties": {
+        "id": "BLDG-044",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "坤讯大厦",
+        "area_sqm_declared": 1365.918
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350117,
+              39.976749
+            ],
+            [
+              116.350117,
+              39.977149
+            ],
+            [
+              116.349757,
+              39.977149
+            ],
+            [
+              116.349757,
+              39.976749
+            ],
+            [
+              116.350117,
+              39.976749
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-045",
+      "properties": {
+        "id": "BLDG-045",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "西环广场-T2座(凯德MALL西直门店)",
+        "area_sqm_declared": 1366.61
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.352907,
+              39.941538
+            ],
+            [
+              116.352907,
+              39.941938
+            ],
+            [
+              116.352547,
+              39.941938
+            ],
+            [
+              116.352547,
+              39.941538
+            ],
+            [
+              116.352907,
+              39.941538
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-046",
+      "properties": {
+        "id": "BLDG-046",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "锦秋国际A座",
+        "area_sqm_declared": 1365.941
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.348872,
+              39.975645
+            ],
+            [
+              116.348872,
+              39.976045
+            ],
+            [
+              116.348512,
+              39.976045
+            ],
+            [
+              116.348512,
+              39.975645
+            ],
+            [
+              116.348872,
+              39.975645
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-047",
+      "properties": {
+        "id": "BLDG-047",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "宝源大厦",
+        "area_sqm_declared": 1365.461
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349559,
+              40.000022
+            ],
+            [
+              116.349559,
+              40.000422
+            ],
+            [
+              116.349199,
+              40.000422
+            ],
+            [
+              116.349199,
+              40.000022
+            ],
+            [
+              116.349559,
+              40.000022
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-048",
+      "properties": {
+        "id": "BLDG-048",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "鸿运大厦",
+        "area_sqm_declared": 1365.073
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345148,
+              40.019797
+            ],
+            [
+              116.345148,
+              40.020196999999996
+            ],
+            [
+              116.344788,
+              40.020196999999996
+            ],
+            [
+              116.344788,
+              40.019797
+            ],
+            [
+              116.345148,
+              40.019797
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-049",
+      "properties": {
+        "id": "BLDG-049",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "地铁大厦",
+        "area_sqm_declared": 1366.658
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354339,
+              39.939102
+            ],
+            [
+              116.354339,
+              39.939502
+            ],
+            [
+              116.353979,
+              39.939502
+            ],
+            [
+              116.353979,
+              39.939102
+            ],
+            [
+              116.354339,
+              39.939102
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-050",
+      "properties": {
+        "id": "BLDG-050",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "文林大厦",
+        "area_sqm_declared": 1366.206
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342604,
+              39.962281
+            ],
+            [
+              116.342604,
+              39.962680999999996
+            ],
+            [
+              116.342244,
+              39.962680999999996
+            ],
+            [
+              116.342244,
+              39.962281
+            ],
+            [
+              116.342604,
+              39.962281
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-051",
+      "properties": {
+        "id": "BLDG-051",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "科技财富中心B座",
+        "area_sqm_declared": 1365.144
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353411,
+              40.016028
+            ],
+            [
+              116.353411,
+              40.016428
+            ],
+            [
+              116.353051,
+              40.016428
+            ],
+            [
+              116.353051,
+              40.016028
+            ],
+            [
+              116.353411,
+              40.016028
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-052",
+      "properties": {
+        "id": "BLDG-052",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "海业商务发展中心",
+        "area_sqm_declared": 1365.601
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.352565,
+              39.992827
+            ],
+            [
+              116.352565,
+              39.993227
+            ],
+            [
+              116.352205,
+              39.993227
+            ],
+            [
+              116.352205,
+              39.992827
+            ],
+            [
+              116.352565,
+              39.992827
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-053",
+      "properties": {
+        "id": "BLDG-053",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北发大厦",
+        "area_sqm_declared": 1366.268
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353036,
+              39.958946
+            ],
+            [
+              116.353036,
+              39.959346
+            ],
+            [
+              116.352676,
+              39.959346
+            ],
+            [
+              116.352676,
+              39.958946
+            ],
+            [
+              116.353036,
+              39.958946
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-054",
+      "properties": {
+        "id": "BLDG-054",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "金泰鑫侨大厦",
+        "area_sqm_declared": 1366.619
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349138,
+              39.941146
+            ],
+            [
+              116.349138,
+              39.941546
+            ],
+            [
+              116.348778,
+              39.941546
+            ],
+            [
+              116.348778,
+              39.941146
+            ],
+            [
+              116.349138,
+              39.941146
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-055",
+      "properties": {
+        "id": "BLDG-055",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "京煤大厦",
+        "area_sqm_declared": 1366.406
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347884,
+              39.95201
+            ],
+            [
+              116.347884,
+              39.95241
+            ],
+            [
+              116.34752399999999,
+              39.95241
+            ],
+            [
+              116.34752399999999,
+              39.95201
+            ],
+            [
+              116.347884,
+              39.95201
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-056",
+      "properties": {
+        "id": "BLDG-056",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "汇智大厦B座",
+        "area_sqm_declared": 1365.069
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351204,
+              40.019893
+            ],
+            [
+              116.351204,
+              40.020293
+            ],
+            [
+              116.350844,
+              40.020293
+            ],
+            [
+              116.350844,
+              40.019893
+            ],
+            [
+              116.351204,
+              40.019893
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-057",
+      "properties": {
+        "id": "BLDG-057",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "中关村创新智库中心",
+        "area_sqm_declared": 1365.713
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347039,
+              39.987256
+            ],
+            [
+              116.347039,
+              39.987656
+            ],
+            [
+              116.346679,
+              39.987656
+            ],
+            [
+              116.346679,
+              39.987256
+            ],
+            [
+              116.347039,
+              39.987256
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-058",
+      "properties": {
+        "id": "BLDG-058",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "锦秋国际大厦B座",
+        "area_sqm_declared": 1365.937
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349421,
+              39.975814
+            ],
+            [
+              116.349421,
+              39.976214
+            ],
+            [
+              116.349061,
+              39.976214
+            ],
+            [
+              116.349061,
+              39.975814
+            ],
+            [
+              116.349421,
+              39.975814
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-059",
+      "properties": {
+        "id": "BLDG-059",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京东达物业写字楼",
+        "area_sqm_declared": 1365.978
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345326,
+              39.973786
+            ],
+            [
+              116.345326,
+              39.974185999999996
+            ],
+            [
+              116.344966,
+              39.974185999999996
+            ],
+            [
+              116.344966,
+              39.973786
+            ],
+            [
+              116.345326,
+              39.973786
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-060",
+      "properties": {
+        "id": "BLDG-060",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "政法大厦A座",
+        "area_sqm_declared": 1366.077
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351822,
+              39.968657
+            ],
+            [
+              116.351822,
+              39.969057
+            ],
+            [
+              116.351462,
+              39.969057
+            ],
+            [
+              116.351462,
+              39.968657
+            ],
+            [
+              116.351822,
+              39.968657
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-061",
+      "properties": {
+        "id": "BLDG-061",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "汇智大厦A座",
+        "area_sqm_declared": 1365.078
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351211,
+              40.019433
+            ],
+            [
+              116.351211,
+              40.019833
+            ],
+            [
+              116.350851,
+              40.019833
+            ],
+            [
+              116.350851,
+              40.019433
+            ],
+            [
+              116.351211,
+              40.019433
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-062",
+      "properties": {
+        "id": "BLDG-062",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "汇清大厦",
+        "area_sqm_declared": 1365.455
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350441,
+              40.00027
+            ],
+            [
+              116.350441,
+              40.00067
+            ],
+            [
+              116.350081,
+              40.00067
+            ],
+            [
+              116.350081,
+              40.00027
+            ],
+            [
+              116.350441,
+              40.00027
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-063",
+      "properties": {
+        "id": "BLDG-063",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "智优沃科技大厦",
+        "area_sqm_declared": 1365.716
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.341308,
+              39.987206
+            ],
+            [
+              116.341308,
+              39.987606
+            ],
+            [
+              116.340948,
+              39.987606
+            ],
+            [
+              116.340948,
+              39.987206
+            ],
+            [
+              116.341308,
+              39.987206
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-064",
+      "properties": {
+        "id": "BLDG-064",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "学清嘉创大厦B座",
+        "area_sqm_declared": 1365.185
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353123,
+              40.013980000000004
+            ],
+            [
+              116.353123,
+              40.01438
+            ],
+            [
+              116.352763,
+              40.01438
+            ],
+            [
+              116.352763,
+              40.013980000000004
+            ],
+            [
+              116.353123,
+              40.013980000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-065",
+      "properties": {
+        "id": "BLDG-065",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "中财大厦",
+        "area_sqm_declared": 1366.287
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.341587,
+              39.958167
+            ],
+            [
+              116.341587,
+              39.958567
+            ],
+            [
+              116.341227,
+              39.958567
+            ],
+            [
+              116.341227,
+              39.958167
+            ],
+            [
+              116.341587,
+              39.958167
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-066",
+      "properties": {
+        "id": "BLDG-066",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "全球创新社区",
+        "area_sqm_declared": 1365.327
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349341,
+              40.006831
+            ],
+            [
+              116.349341,
+              40.007231
+            ],
+            [
+              116.348981,
+              40.007231
+            ],
+            [
+              116.348981,
+              40.006831
+            ],
+            [
+              116.349341,
+              40.006831
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-067",
+      "properties": {
+        "id": "BLDG-067",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "六所大厦",
+        "area_sqm_declared": 1365.438
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351986,
+              40.001111
+            ],
+            [
+              116.351986,
+              40.001511
+            ],
+            [
+              116.351626,
+              40.001511
+            ],
+            [
+              116.351626,
+              40.001111
+            ],
+            [
+              116.351986,
+              40.001111
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-068",
+      "properties": {
+        "id": "BLDG-068",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "金贸大厦D座",
+        "area_sqm_declared": 1366.662
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349831,
+              39.938935
+            ],
+            [
+              116.349831,
+              39.939335
+            ],
+            [
+              116.349471,
+              39.939335
+            ],
+            [
+              116.349471,
+              39.938935
+            ],
+            [
+              116.349831,
+              39.938935
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-069",
+      "properties": {
+        "id": "BLDG-069",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "华远·企业中心A座",
+        "area_sqm_declared": 1366.588
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347658,
+              39.942741
+            ],
+            [
+              116.347658,
+              39.943141
+            ],
+            [
+              116.347298,
+              39.943141
+            ],
+            [
+              116.347298,
+              39.942741
+            ],
+            [
+              116.347658,
+              39.942741
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-070",
+      "properties": {
+        "id": "BLDG-070",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "凯德MALL(西直门店)",
+        "area_sqm_declared": 1366.613
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353049,
+              39.941397
+            ],
+            [
+              116.353049,
+              39.941797
+            ],
+            [
+              116.352689,
+              39.941797
+            ],
+            [
+              116.352689,
+              39.941397
+            ],
+            [
+              116.353049,
+              39.941397
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-071",
+      "properties": {
+        "id": "BLDG-071",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "1733山谷食集",
+        "area_sqm_declared": 1366.127
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342565,
+              39.966257
+            ],
+            [
+              116.342565,
+              39.966657
+            ],
+            [
+              116.34220499999999,
+              39.966657
+            ],
+            [
+              116.34220499999999,
+              39.966257
+            ],
+            [
+              116.342565,
+              39.966257
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-072",
+      "properties": {
+        "id": "BLDG-072",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "BOM嘻番里",
+        "area_sqm_declared": 1365.429
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354012,
+              40.001571
+            ],
+            [
+              116.354012,
+              40.001971
+            ],
+            [
+              116.353652,
+              40.001971
+            ],
+            [
+              116.353652,
+              40.001571
+            ],
+            [
+              116.354012,
+              40.001571
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-073",
+      "properties": {
+        "id": "BLDG-073",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "京果商厦",
+        "area_sqm_declared": 1366.247
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345984,
+              39.96014
+            ],
+            [
+              116.345984,
+              39.96054
+            ],
+            [
+              116.345624,
+              39.96054
+            ],
+            [
+              116.345624,
+              39.96014
+            ],
+            [
+              116.345984,
+              39.96014
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-074",
+      "properties": {
+        "id": "BLDG-074",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "京果商厦B座",
+        "area_sqm_declared": 1366.258
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346298,
+              39.959561
+            ],
+            [
+              116.346298,
+              39.959961
+            ],
+            [
+              116.345938,
+              39.959961
+            ],
+            [
+              116.345938,
+              39.959561
+            ],
+            [
+              116.346298,
+              39.959561
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-075",
+      "properties": {
+        "id": "BLDG-075",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "华联商厦",
+        "area_sqm_declared": 1366.293
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349045,
+              39.957751
+            ],
+            [
+              116.349045,
+              39.958151
+            ],
+            [
+              116.348685,
+              39.958151
+            ],
+            [
+              116.348685,
+              39.957751
+            ],
+            [
+              116.349045,
+              39.957751
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-076",
+      "properties": {
+        "id": "BLDG-076",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "学院live商场",
+        "area_sqm_declared": 1366.298
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347,
+              39.95752
+            ],
+            [
+              116.347,
+              39.95792
+            ],
+            [
+              116.34664,
+              39.95792
+            ],
+            [
+              116.34664,
+              39.95752
+            ],
+            [
+              116.347,
+              39.95752
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-077",
+      "properties": {
+        "id": "BLDG-077",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京伟业鹏远商贸中心",
+        "area_sqm_declared": 1365.724
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343288,
+              39.986758
+            ],
+            [
+              116.343288,
+              39.987158
+            ],
+            [
+              116.342928,
+              39.987158
+            ],
+            [
+              116.342928,
+              39.986758
+            ],
+            [
+              116.343288,
+              39.986758
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-078",
+      "properties": {
+        "id": "BLDG-078",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "Purcotton全棉时代(西直门凯德MALL店)",
+        "area_sqm_declared": 1366.614
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.352815,
+              39.941335
+            ],
+            [
+              116.352815,
+              39.941735
+            ],
+            [
+              116.352455,
+              39.941735
+            ],
+            [
+              116.352455,
+              39.941335
+            ],
+            [
+              116.352815,
+              39.941335
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-079",
+      "properties": {
+        "id": "BLDG-079",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "大钟寺方恒国际商业中心(建设中)",
+        "area_sqm_declared": 1366.096
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342629,
+              39.967844
+            ],
+            [
+              116.342629,
+              39.968244
+            ],
+            [
+              116.342269,
+              39.968244
+            ],
+            [
+              116.342269,
+              39.967844
+            ],
+            [
+              116.342629,
+              39.967844
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-080",
+      "properties": {
+        "id": "BLDG-080",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "wohkoon者行孙青年酒店(北京西直门交通大学店)",
+        "area_sqm_declared": 1366.534
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344429,
+              39.945570000000004
+            ],
+            [
+              116.344429,
+              39.94597
+            ],
+            [
+              116.344069,
+              39.94597
+            ],
+            [
+              116.344069,
+              39.945570000000004
+            ],
+            [
+              116.344429,
+              39.945570000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-081",
+      "properties": {
+        "id": "BLDG-081",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "自由宿民宿",
+        "area_sqm_declared": 1366.41
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353817,
+              39.951701
+            ],
+            [
+              116.353817,
+              39.952101
+            ],
+            [
+              116.353457,
+              39.952101
+            ],
+            [
+              116.353457,
+              39.951701
+            ],
+            [
+              116.353817,
+              39.951701
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-082",
+      "properties": {
+        "id": "BLDG-082",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "住小叮酒店(北京学清路学知园地铁站店)",
+        "area_sqm_declared": 1365.153
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353805,
+              40.015575
+            ],
+            [
+              116.353805,
+              40.015975
+            ],
+            [
+              116.353445,
+              40.015975
+            ],
+            [
+              116.353445,
+              40.015575
+            ],
+            [
+              116.353805,
+              40.015575
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-083",
+      "properties": {
+        "id": "BLDG-083",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "米来安酒店(北京中关村大钟寺地铁站店)",
+        "area_sqm_declared": 1366.234
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345429,
+              39.960787
+            ],
+            [
+              116.345429,
+              39.961187
+            ],
+            [
+              116.345069,
+              39.961187
+            ],
+            [
+              116.345069,
+              39.960787
+            ],
+            [
+              116.345429,
+              39.960787
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-084",
+      "properties": {
+        "id": "BLDG-084",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "速8精选酒店(北京中关村大钟寺地铁站店)",
+        "area_sqm_declared": 1366.185
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342215,
+              39.963318
+            ],
+            [
+              116.342215,
+              39.963718
+            ],
+            [
+              116.341855,
+              39.963718
+            ],
+            [
+              116.341855,
+              39.963318
+            ],
+            [
+              116.342215,
+              39.963318
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-085",
+      "properties": {
+        "id": "BLDG-085",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "青季酒店MINI(北京西直门店)",
+        "area_sqm_declared": 1366.353
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354902,
+              39.954575
+            ],
+            [
+              116.354902,
+              39.954975
+            ],
+            [
+              116.354542,
+              39.954975
+            ],
+            [
+              116.354542,
+              39.954575
+            ],
+            [
+              116.354902,
+              39.954575
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-086",
+      "properties": {
+        "id": "BLDG-086",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "wohkoon者行孙酒店(北京学清路农业大学店)",
+        "area_sqm_declared": 1365.224
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35331,
+              40.011973
+            ],
+            [
+              116.35331,
+              40.012373
+            ],
+            [
+              116.35294999999999,
+              40.012373
+            ],
+            [
+              116.35294999999999,
+              40.011973
+            ],
+            [
+              116.35331,
+              40.011973
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-087",
+      "properties": {
+        "id": "BLDG-087",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "金泰之家(北京北站交通大学店)",
+        "area_sqm_declared": 1366.479
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34112,
+              39.948409
+            ],
+            [
+              116.34112,
+              39.948809
+            ],
+            [
+              116.34076,
+              39.948809
+            ],
+            [
+              116.34076,
+              39.948409
+            ],
+            [
+              116.34112,
+              39.948409
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-088",
+      "properties": {
+        "id": "BLDG-088",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "一二三优选酒店(北京蓟门桥店)",
+        "area_sqm_declared": 1366.045
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351476,
+              39.970272
+            ],
+            [
+              116.351476,
+              39.970672
+            ],
+            [
+              116.351116,
+              39.970672
+            ],
+            [
+              116.351116,
+              39.970272
+            ],
+            [
+              116.351476,
+              39.970272
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-089",
+      "properties": {
+        "id": "BLDG-089",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京自由筑民宿",
+        "area_sqm_declared": 1366.133
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34886,
+              39.965866
+            ],
+            [
+              116.34886,
+              39.966266
+            ],
+            [
+              116.3485,
+              39.966266
+            ],
+            [
+              116.3485,
+              39.965866
+            ],
+            [
+              116.34886,
+              39.965866
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-090",
+      "properties": {
+        "id": "BLDG-090",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "住小叮(六道口地铁站店)",
+        "area_sqm_declared": 1365.492
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353702,
+              39.998373
+            ],
+            [
+              116.353702,
+              39.998773
+            ],
+            [
+              116.353342,
+              39.998773
+            ],
+            [
+              116.353342,
+              39.998373
+            ],
+            [
+              116.353702,
+              39.998373
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-091",
+      "properties": {
+        "id": "BLDG-091",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "汉庭酒店(北京中关村学院桥地铁站店)",
+        "area_sqm_declared": 1365.687
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.352769,
+              39.988492
+            ],
+            [
+              116.352769,
+              39.988892
+            ],
+            [
+              116.352409,
+              39.988892
+            ],
+            [
+              116.352409,
+              39.988492
+            ],
+            [
+              116.352769,
+              39.988492
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-092",
+      "properties": {
+        "id": "BLDG-092",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "亚朵酒店(北京中关村中央财经大学店)",
+        "area_sqm_declared": 1366.259
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353193,
+              39.959366
+            ],
+            [
+              116.353193,
+              39.959766
+            ],
+            [
+              116.352833,
+              39.959766
+            ],
+            [
+              116.352833,
+              39.959366
+            ],
+            [
+              116.353193,
+              39.959366
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-093",
+      "properties": {
+        "id": "BLDG-093",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "海春宾馆(北京大钟寺地铁站店)",
+        "area_sqm_declared": 1366.117
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347867,
+              39.966691
+            ],
+            [
+              116.347867,
+              39.967090999999996
+            ],
+            [
+              116.347507,
+              39.967090999999996
+            ],
+            [
+              116.347507,
+              39.966691
+            ],
+            [
+              116.347867,
+              39.966691
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-094",
+      "properties": {
+        "id": "BLDG-094",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "如家派柏·云酒店(中央财经大学大钟寺地铁站店)",
+        "area_sqm_declared": 1366.237
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345407,
+              39.960653
+            ],
+            [
+              116.345407,
+              39.961053
+            ],
+            [
+              116.345047,
+              39.961053
+            ],
+            [
+              116.345047,
+              39.960653
+            ],
+            [
+              116.345407,
+              39.960653
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-095",
+      "properties": {
+        "id": "BLDG-095",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京中关村五道口漫心酒店",
+        "area_sqm_declared": 1365.948
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346061,
+              39.97531
+            ],
+            [
+              116.346061,
+              39.97571
+            ],
+            [
+              116.345701,
+              39.97571
+            ],
+            [
+              116.345701,
+              39.97531
+            ],
+            [
+              116.346061,
+              39.97531
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-096",
+      "properties": {
+        "id": "BLDG-096",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "辰际酒店(西直门地铁站人民医院店)",
+        "area_sqm_declared": 1366.573
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350501,
+              39.943486
+            ],
+            [
+              116.350501,
+              39.943886
+            ],
+            [
+              116.350141,
+              39.943886
+            ],
+            [
+              116.350141,
+              39.943486
+            ],
+            [
+              116.350501,
+              39.943486
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-097",
+      "properties": {
+        "id": "BLDG-097",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "全季酒店(北京西直门交通大学店)",
+        "area_sqm_declared": 1366.406
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347986,
+              39.951983
+            ],
+            [
+              116.347986,
+              39.952383
+            ],
+            [
+              116.347626,
+              39.952383
+            ],
+            [
+              116.347626,
+              39.951983
+            ],
+            [
+              116.347986,
+              39.951983
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-098",
+      "properties": {
+        "id": "BLDG-098",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京西郊宾馆",
+        "area_sqm_declared": 1365.523
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343123,
+              39.996973
+            ],
+            [
+              116.343123,
+              39.997372999999996
+            ],
+            [
+              116.342763,
+              39.997372999999996
+            ],
+            [
+              116.342763,
+              39.996973
+            ],
+            [
+              116.343123,
+              39.996973
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-099",
+      "properties": {
+        "id": "BLDG-099",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "9号星辉电竞主题酒店(北京西直门店)",
+        "area_sqm_declared": 1366.353
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354902,
+              39.954575
+            ],
+            [
+              116.354902,
+              39.954975
+            ],
+            [
+              116.354542,
+              39.954975
+            ],
+            [
+              116.354542,
+              39.954575
+            ],
+            [
+              116.354902,
+              39.954575
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-100",
+      "properties": {
+        "id": "BLDG-100",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京展览馆宾馆",
+        "area_sqm_declared": 1366.613
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346503,
+              39.941491
+            ],
+            [
+              116.346503,
+              39.941891
+            ],
+            [
+              116.346143,
+              39.941891
+            ],
+            [
+              116.346143,
+              39.941491
+            ],
+            [
+              116.346503,
+              39.941491
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-101",
+      "properties": {
+        "id": "BLDG-101",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "希岸酒店(北京农业大学东校区学知园地铁站店)",
+        "area_sqm_declared": 1365.251
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350677,
+              40.010644
+            ],
+            [
+              116.350677,
+              40.011044
+            ],
+            [
+              116.350317,
+              40.011044
+            ],
+            [
+              116.350317,
+              40.010644
+            ],
+            [
+              116.350677,
+              40.010644
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-102",
+      "properties": {
+        "id": "BLDG-102",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "大正酒店(北京中关村大钟寺地铁站店)",
+        "area_sqm_declared": 1366.238
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345361,
+              39.960599
+            ],
+            [
+              116.345361,
+              39.960999
+            ],
+            [
+              116.345001,
+              39.960999
+            ],
+            [
+              116.345001,
+              39.960599
+            ],
+            [
+              116.345361,
+              39.960599
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-103",
+      "properties": {
+        "id": "BLDG-103",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "汉庭酒店(北京知春路蓟门桥地铁站店)",
+        "area_sqm_declared": 1366.052
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351191,
+              39.969949
+            ],
+            [
+              116.351191,
+              39.970349
+            ],
+            [
+              116.350831,
+              39.970349
+            ],
+            [
+              116.350831,
+              39.969949
+            ],
+            [
+              116.351191,
+              39.969949
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-104",
+      "properties": {
+        "id": "BLDG-104",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "喆啡锐品酒店(北京清华大学学知园地铁站店)",
+        "area_sqm_declared": 1365.256
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.350377,
+              40.010428
+            ],
+            [
+              116.350377,
+              40.010828
+            ],
+            [
+              116.350017,
+              40.010828
+            ],
+            [
+              116.350017,
+              40.010428
+            ],
+            [
+              116.350377,
+              40.010428
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-105",
+      "properties": {
+        "id": "BLDG-105",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "亿客家宾馆(北京罗庄西里店)",
+        "area_sqm_declared": 1365.959
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344285,
+              39.974795
+            ],
+            [
+              116.344285,
+              39.975195
+            ],
+            [
+              116.343925,
+              39.975195
+            ],
+            [
+              116.343925,
+              39.974795
+            ],
+            [
+              116.344285,
+              39.974795
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-106",
+      "properties": {
+        "id": "BLDG-106",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "桔子酒店(北京西直门交通大学店)",
+        "area_sqm_declared": 1366.497
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342324,
+              39.947481
+            ],
+            [
+              116.342324,
+              39.947881
+            ],
+            [
+              116.341964,
+              39.947881
+            ],
+            [
+              116.341964,
+              39.947481
+            ],
+            [
+              116.342324,
+              39.947481
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-107",
+      "properties": {
+        "id": "BLDG-107",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "如家精选酒店(北京西直门动物园店)",
+        "area_sqm_declared": 1366.493
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344148,
+              39.947622
+            ],
+            [
+              116.344148,
+              39.948022
+            ],
+            [
+              116.343788,
+              39.948022
+            ],
+            [
+              116.343788,
+              39.947622
+            ],
+            [
+              116.344148,
+              39.947622
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-108",
+      "properties": {
+        "id": "BLDG-108",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "麗枫酒店(北京中关村大钟寺地铁站店)",
+        "area_sqm_declared": 1366.192
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.341353,
+              39.962987
+            ],
+            [
+              116.341353,
+              39.963387
+            ],
+            [
+              116.340993,
+              39.963387
+            ],
+            [
+              116.340993,
+              39.962987
+            ],
+            [
+              116.341353,
+              39.962987
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-109",
+      "properties": {
+        "id": "BLDG-109",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京中关村西土城地铁站轻居酒店",
+        "area_sqm_declared": 1365.908
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353262,
+              39.977217
+            ],
+            [
+              116.353262,
+              39.977617
+            ],
+            [
+              116.352902,
+              39.977617
+            ],
+            [
+              116.352902,
+              39.977217
+            ],
+            [
+              116.353262,
+              39.977217
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-110",
+      "properties": {
+        "id": "BLDG-110",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京泰富酒店",
+        "area_sqm_declared": 1365.963
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.352625,
+              39.974455
+            ],
+            [
+              116.352625,
+              39.974855
+            ],
+            [
+              116.352265,
+              39.974855
+            ],
+            [
+              116.352265,
+              39.974455
+            ],
+            [
+              116.352625,
+              39.974455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-111",
+      "properties": {
+        "id": "BLDG-111",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京丽亭华苑酒店",
+        "area_sqm_declared": 1365.915
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345224,
+              39.977021
+            ],
+            [
+              116.345224,
+              39.977421
+            ],
+            [
+              116.344864,
+              39.977421
+            ],
+            [
+              116.344864,
+              39.977021
+            ],
+            [
+              116.345224,
+              39.977021
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-112",
+      "properties": {
+        "id": "BLDG-112",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "汉庭酒店(北京五道口清华园店)",
+        "area_sqm_declared": 1365.234
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344843,
+              40.011607
+            ],
+            [
+              116.344843,
+              40.012007
+            ],
+            [
+              116.344483,
+              40.012007
+            ],
+            [
+              116.344483,
+              40.011607
+            ],
+            [
+              116.344843,
+              40.011607
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-113",
+      "properties": {
+        "id": "BLDG-113",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "海友酒店(北京西直门交通大学店)",
+        "area_sqm_declared": 1366.553
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347481,
+              39.944542
+            ],
+            [
+              116.347481,
+              39.944942
+            ],
+            [
+              116.347121,
+              39.944942
+            ],
+            [
+              116.347121,
+              39.944542
+            ],
+            [
+              116.347481,
+              39.944542
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-114",
+      "properties": {
+        "id": "BLDG-114",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "漫曲酒店(北京动物园财经大学店)",
+        "area_sqm_declared": 1366.275
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346895,
+              39.958697
+            ],
+            [
+              116.346895,
+              39.959097
+            ],
+            [
+              116.346535,
+              39.959097
+            ],
+            [
+              116.346535,
+              39.958697
+            ],
+            [
+              116.346895,
+              39.958697
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-115",
+      "properties": {
+        "id": "BLDG-115",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "如家派柏·云酒店(北京西直门北京北站店)",
+        "area_sqm_declared": 1366.544
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.354011,
+              39.944885
+            ],
+            [
+              116.354011,
+              39.945285
+            ],
+            [
+              116.353651,
+              39.945285
+            ],
+            [
+              116.353651,
+              39.944885
+            ],
+            [
+              116.354011,
+              39.944885
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-116",
+      "properties": {
+        "id": "BLDG-116",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "乐家服务式酒店(北京动物园西直门地铁站店)",
+        "area_sqm_declared": 1366.556
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351432,
+              39.944293
+            ],
+            [
+              116.351432,
+              39.944693
+            ],
+            [
+              116.351072,
+              39.944693
+            ],
+            [
+              116.351072,
+              39.944293
+            ],
+            [
+              116.351432,
+              39.944293
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-117",
+      "properties": {
+        "id": "BLDG-117",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "速8酒店(北京西直门店)",
+        "area_sqm_declared": 1366.642
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346004,
+              39.940026
+            ],
+            [
+              116.346004,
+              39.940426
+            ],
+            [
+              116.345644,
+              39.940426
+            ],
+            [
+              116.345644,
+              39.940026
+            ],
+            [
+              116.346004,
+              39.940026
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-118",
+      "properties": {
+        "id": "BLDG-118",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "宜尚圆宾馆",
+        "area_sqm_declared": 1366.504
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343028,
+              39.947073
+            ],
+            [
+              116.343028,
+              39.947473
+            ],
+            [
+              116.342668,
+              39.947473
+            ],
+            [
+              116.342668,
+              39.947073
+            ],
+            [
+              116.343028,
+              39.947073
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-119",
+      "properties": {
+        "id": "BLDG-119",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "格林豪泰酒店(北京学清路学知园地铁站店)",
+        "area_sqm_declared": 1365.173
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349286,
+              40.014657
+            ],
+            [
+              116.349286,
+              40.015057
+            ],
+            [
+              116.348926,
+              40.015057
+            ],
+            [
+              116.348926,
+              40.014657
+            ],
+            [
+              116.349286,
+              40.014657
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-120",
+      "properties": {
+        "id": "BLDG-120",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "唯实国际文化交流中心",
+        "area_sqm_declared": 1365.879
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.352955,
+              39.978713
+            ],
+            [
+              116.352955,
+              39.979113
+            ],
+            [
+              116.352595,
+              39.979113
+            ],
+            [
+              116.352595,
+              39.978713
+            ],
+            [
+              116.352955,
+              39.978713
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-121",
+      "properties": {
+        "id": "BLDG-121",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "锦江之星(北京动物园店)",
+        "area_sqm_declared": 1366.637
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345849,
+              39.94027
+            ],
+            [
+              116.345849,
+              39.94067
+            ],
+            [
+              116.345489,
+              39.94067
+            ],
+            [
+              116.345489,
+              39.94027
+            ],
+            [
+              116.345849,
+              39.94027
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-122",
+      "properties": {
+        "id": "BLDG-122",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "墨历酒店(北京西直门交通大学店)",
+        "area_sqm_declared": 1366.431
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.349771,
+              39.950711
+            ],
+            [
+              116.349771,
+              39.951111
+            ],
+            [
+              116.349411,
+              39.951111
+            ],
+            [
+              116.349411,
+              39.950711
+            ],
+            [
+              116.349771,
+              39.950711
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-123",
+      "properties": {
+        "id": "BLDG-123",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京谊腾宾馆",
+        "area_sqm_declared": 1365.461
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345684,
+              40.000075
+            ],
+            [
+              116.345684,
+              40.000475
+            ],
+            [
+              116.345324,
+              40.000475
+            ],
+            [
+              116.345324,
+              40.000075
+            ],
+            [
+              116.345684,
+              40.000075
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-124",
+      "properties": {
+        "id": "BLDG-124",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "毕天成酒店(北京中关村知春路地铁站)",
+        "area_sqm_declared": 1365.921
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.347135,
+              39.97666
+            ],
+            [
+              116.347135,
+              39.97706
+            ],
+            [
+              116.346775,
+              39.97706
+            ],
+            [
+              116.346775,
+              39.97666
+            ],
+            [
+              116.347135,
+              39.97666
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-125",
+      "properties": {
+        "id": "BLDG-125",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "建兴达宾馆(北京航空航天大学知春路地铁站店)",
+        "area_sqm_declared": 1365.921
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346741,
+              39.976698
+            ],
+            [
+              116.346741,
+              39.977098
+            ],
+            [
+              116.346381,
+              39.977098
+            ],
+            [
+              116.346381,
+              39.976698
+            ],
+            [
+              116.346741,
+              39.976698
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-126",
+      "properties": {
+        "id": "BLDG-126",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京中关村学院桥地铁站亚朵酒店",
+        "area_sqm_declared": 1365.715
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351164,
+              39.987094
+            ],
+            [
+              116.351164,
+              39.987494
+            ],
+            [
+              116.350804,
+              39.987494
+            ],
+            [
+              116.350804,
+              39.987094
+            ],
+            [
+              116.351164,
+              39.987094
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-127",
+      "properties": {
+        "id": "BLDG-127",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "红果园宾馆",
+        "area_sqm_declared": 1366.44
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343685,
+              39.950344
+            ],
+            [
+              116.343685,
+              39.950744
+            ],
+            [
+              116.343325,
+              39.950744
+            ],
+            [
+              116.343325,
+              39.950344
+            ],
+            [
+              116.343685,
+              39.950344
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-128",
+      "properties": {
+        "id": "BLDG-128",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京教师家庭公寓(矿大店)",
+        "area_sqm_declared": 1365.531
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345223,
+              39.996534
+            ],
+            [
+              116.345223,
+              39.996933999999996
+            ],
+            [
+              116.344863,
+              39.996933999999996
+            ],
+            [
+              116.344863,
+              39.996534
+            ],
+            [
+              116.345223,
+              39.996534
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-129",
+      "properties": {
+        "id": "BLDG-129",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "融金中财大酒店",
+        "area_sqm_declared": 1366.287
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.341587,
+              39.958165
+            ],
+            [
+              116.341587,
+              39.958565
+            ],
+            [
+              116.341227,
+              39.958565
+            ],
+            [
+              116.341227,
+              39.958165
+            ],
+            [
+              116.341587,
+              39.958165
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-130",
+      "properties": {
+        "id": "BLDG-130",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北邮锦江酒店",
+        "area_sqm_declared": 1366.161
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.355423,
+              39.964334
+            ],
+            [
+              116.355423,
+              39.964734
+            ],
+            [
+              116.355063,
+              39.964734
+            ],
+            [
+              116.355063,
+              39.964334
+            ],
+            [
+              116.355423,
+              39.964334
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-131",
+      "properties": {
+        "id": "BLDG-131",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "锦江之星(北京清华东门店)",
+        "area_sqm_declared": 1365.076
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.34697,
+              40.019578
+            ],
+            [
+              116.34697,
+              40.019978
+            ],
+            [
+              116.34661,
+              40.019978
+            ],
+            [
+              116.34661,
+              40.019578
+            ],
+            [
+              116.34697,
+              40.019578
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-132",
+      "properties": {
+        "id": "BLDG-132",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "金码大酒店",
+        "area_sqm_declared": 1365.428
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.35401,
+              40.001625
+            ],
+            [
+              116.35401,
+              40.002024999999996
+            ],
+            [
+              116.35365,
+              40.002024999999996
+            ],
+            [
+              116.35365,
+              40.001625
+            ],
+            [
+              116.35401,
+              40.001625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-133",
+      "properties": {
+        "id": "BLDG-133",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "中国农业大学国际会议中心",
+        "area_sqm_declared": 1365.431
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.353583,
+              40.001456
+            ],
+            [
+              116.353583,
+              40.001856
+            ],
+            [
+              116.353223,
+              40.001856
+            ],
+            [
+              116.353223,
+              40.001456
+            ],
+            [
+              116.353583,
+              40.001456
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-134",
+      "properties": {
+        "id": "BLDG-134",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北岸·寓见酒店(北京西直门地铁站店)",
+        "area_sqm_declared": 1366.56
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351385,
+              39.944132
+            ],
+            [
+              116.351385,
+              39.944532
+            ],
+            [
+              116.35102499999999,
+              39.944532
+            ],
+            [
+              116.35102499999999,
+              39.944132
+            ],
+            [
+              116.351385,
+              39.944132
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-135",
+      "properties": {
+        "id": "BLDG-135",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "美榭公寓(北京西直门交通大学店)",
+        "area_sqm_declared": 1366.554
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351119,
+              39.944431
+            ],
+            [
+              116.351119,
+              39.944831
+            ],
+            [
+              116.350759,
+              39.944831
+            ],
+            [
+              116.350759,
+              39.944431
+            ],
+            [
+              116.351119,
+              39.944431
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-136",
+      "properties": {
+        "id": "BLDG-136",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京台体宾馆",
+        "area_sqm_declared": 1366.495
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342293,
+              39.947549
+            ],
+            [
+              116.342293,
+              39.947949
+            ],
+            [
+              116.341933,
+              39.947949
+            ],
+            [
+              116.341933,
+              39.947549
+            ],
+            [
+              116.342293,
+              39.947549
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-137",
+      "properties": {
+        "id": "BLDG-137",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "康福瑞连锁酒店(学院南路店)",
+        "area_sqm_declared": 1366.275
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346881,
+              39.958665
+            ],
+            [
+              116.346881,
+              39.959065
+            ],
+            [
+              116.346521,
+              39.959065
+            ],
+            [
+              116.346521,
+              39.958665
+            ],
+            [
+              116.346881,
+              39.958665
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-138",
+      "properties": {
+        "id": "BLDG-138",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京海棠湾青年民宿",
+        "area_sqm_declared": 1365.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351171,
+              40.013217
+            ],
+            [
+              116.351171,
+              40.013616999999996
+            ],
+            [
+              116.350811,
+              40.013616999999996
+            ],
+            [
+              116.350811,
+              40.013217
+            ],
+            [
+              116.351171,
+              40.013217
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-139",
+      "properties": {
+        "id": "BLDG-139",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "融寓(四道口店)",
+        "area_sqm_declared": 1366.152
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343398,
+              39.964993
+            ],
+            [
+              116.343398,
+              39.965393
+            ],
+            [
+              116.34303799999999,
+              39.965393
+            ],
+            [
+              116.34303799999999,
+              39.964993
+            ],
+            [
+              116.343398,
+              39.964993
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-140",
+      "properties": {
+        "id": "BLDG-140",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京人文招待所",
+        "area_sqm_declared": 1366.024
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.352733,
+              39.971318000000004
+            ],
+            [
+              116.352733,
+              39.971718
+            ],
+            [
+              116.352373,
+              39.971718
+            ],
+            [
+              116.352373,
+              39.971318000000004
+            ],
+            [
+              116.352733,
+              39.971318000000004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-141",
+      "properties": {
+        "id": "BLDG-141",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "德宝饭店",
+        "area_sqm_declared": 1366.644
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.348375,
+              39.939911
+            ],
+            [
+              116.348375,
+              39.940311
+            ],
+            [
+              116.348015,
+              39.940311
+            ],
+            [
+              116.348015,
+              39.939911
+            ],
+            [
+              116.348375,
+              39.939911
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-142",
+      "properties": {
+        "id": "BLDG-142",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京盈瑞瑞枫酒店管理有限公司",
+        "area_sqm_declared": 1365.251
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351255,
+              40.010625
+            ],
+            [
+              116.351255,
+              40.011025
+            ],
+            [
+              116.350895,
+              40.011025
+            ],
+            [
+              116.350895,
+              40.010625
+            ],
+            [
+              116.351255,
+              40.010625
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-143",
+      "properties": {
+        "id": "BLDG-143",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "北京西郊宾馆7号楼",
+        "area_sqm_declared": 1365.533
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.344155,
+              39.996425
+            ],
+            [
+              116.344155,
+              39.996825
+            ],
+            [
+              116.343795,
+              39.996825
+            ],
+            [
+              116.343795,
+              39.996425
+            ],
+            [
+              116.344155,
+              39.996425
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-144",
+      "properties": {
+        "id": "BLDG-144",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "西郊宾馆801号楼",
+        "area_sqm_declared": 1365.521
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343055,
+              39.997075
+            ],
+            [
+              116.343055,
+              39.997475
+            ],
+            [
+              116.342695,
+              39.997475
+            ],
+            [
+              116.342695,
+              39.997075
+            ],
+            [
+              116.343055,
+              39.997075
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-145",
+      "properties": {
+        "id": "BLDG-145",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "MilaianHotel",
+        "area_sqm_declared": 1366.233
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.345405,
+              39.960825
+            ],
+            [
+              116.345405,
+              39.961225
+            ],
+            [
+              116.345045,
+              39.961225
+            ],
+            [
+              116.345045,
+              39.960825
+            ],
+            [
+              116.345405,
+              39.960825
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-146",
+      "properties": {
+        "id": "BLDG-146",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "SlowQuHotel",
+        "area_sqm_declared": 1366.277
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346805,
+              39.958575
+            ],
+            [
+              116.346805,
+              39.958975
+            ],
+            [
+              116.346445,
+              39.958975
+            ],
+            [
+              116.346445,
+              39.958575
+            ],
+            [
+              116.346805,
+              39.958575
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-147",
+      "properties": {
+        "id": "BLDG-147",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "7天酒店(北京学院路二店)",
+        "area_sqm_declared": 1365.157
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.346492,
+              40.015517
+            ],
+            [
+              116.346492,
+              40.015917
+            ],
+            [
+              116.346132,
+              40.015917
+            ],
+            [
+              116.346132,
+              40.015517
+            ],
+            [
+              116.346492,
+              40.015517
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BLDG-148",
+      "properties": {
+        "id": "BLDG-148",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "building_type": "existing_retained",
+        "name_zh": "全季酒店(西直门店)",
+        "area_sqm_declared": 1366.643
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.348351,
+              39.939956
+            ],
+            [
+              116.348351,
+              39.940356
+            ],
+            [
+              116.347991,
+              39.940356
+            ],
+            [
+              116.347991,
+              39.939956
+            ],
+            [
+              116.348351,
+              39.939956
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -4,8 +4,43 @@
 The generated draft is intentionally conservative: records default to
 review_status=needs_review and cannot be used as formal evidence until a
 maintainer manually approves and merges them into data/source_registry.json.
-"""
 
+Input formats
+-------------
+- **discovery_csv** — output of ``scripts/discover_public_sources.py``:
+  columns ``url``, ``title``, ``publisher``, ``source_type``,
+  ``date_approx``, ``topic_terms``.
+- **seed_csv** — the seed URL table at ``brief/data/auto-crawl-seed-urls.csv``.
+- **auto** (default) — try discovery CSV first, fall back to seed CSV.
+
+Output
+------
+The draft is written to ``data/source_registry.draft.json`` (override with
+``--out``).  It follows the same schema as ``data/source_registry.json`` but
+every entry has ``review_status: needs_review`` and prefixed IDs
+(``DRAFT-...``).
+
+Submit the draft to maintainers via a ``[source-registry]`` Issue; do not edit
+``data/source_registry.json`` directly.
+
+Usage
+-----
+Generate from the default discovery CSV::
+
+    python3 scripts/prepare_source_registry_draft.py
+
+Generate from the seed CSV::
+
+    python3 scripts/prepare_source_registry_draft.py \\
+        --input brief/data/auto-crawl-seed-urls.csv \\
+        --input-format seed_csv
+
+Machine-readable output::
+
+    python3 scripts/prepare_source_registry_draft.py --json
+
+Exit code is 0 when the draft passes schema validation and 1 otherwise.
+"""
 from __future__ import annotations
 
 import argparse
@@ -43,8 +78,18 @@ def normalize_id(value: str, fallback_url: str) -> str:
     return f"DRAFT-{base}"
 
 
-def canonicalize_url(url: str) -> str:
-    parsed = urllib.parse.urlsplit((url or "").strip())
+def canonicalize_url(url: str) -> str | None:
+    value = (url or "").strip()
+    try:
+        parsed = urllib.parse.urlsplit(value)
+        hostname = parsed.hostname
+        _ = parsed.port
+    except ValueError:
+        return None
+    if parsed.scheme.lower() not in {"http", "https"} or not parsed.netloc or not hostname:
+        return None
+    if any(char.isspace() for char in value):
+        return None
     scheme = parsed.scheme.lower()
     netloc = parsed.netloc.lower()
     path = re.sub(r"/{2,}", "/", parsed.path)
@@ -68,7 +113,9 @@ def existing_urls(registry: dict[str, Any]) -> set[str]:
     urls = set()
     for source in registry.get("sources", []):
         if isinstance(source, dict) and source.get("url"):
-            urls.add(canonicalize_url(str(source["url"])))
+            canonical = canonicalize_url(str(source["url"]))
+            if canonical is not None:
+                urls.add(canonical)
     return urls
 
 
@@ -203,6 +250,8 @@ def dedupe_sources(sources: list[dict[str, Any]]) -> list[dict[str, Any]]:
     by_url: dict[str, dict[str, Any]] = {}
     for source in sources:
         key = canonicalize_url(source["url"])
+        if key is None:
+            continue
         if key not in by_url:
             by_url[key] = source
     used_ids: set[str] = set()
@@ -235,11 +284,16 @@ def build_draft(
     existing = load_existing_registry(existing_registry_path)
     existing_url_set = existing_urls(existing)
     sources = []
+    skipped_invalid_urls = 0
     for row in rows:
         url = row_url(row)
         if not url:
             continue
-        if not include_existing and canonicalize_url(url) in existing_url_set:
+        canonical = canonicalize_url(url)
+        if canonical is None:
+            skipped_invalid_urls += 1
+            continue
+        if not include_existing and canonical in existing_url_set:
             continue
         sources.append(discovery_row_to_source(row, current_year))
         if limit and len(sources) >= limit:
@@ -248,6 +302,7 @@ def build_draft(
         "schema_version": "0.1.0",
         "updated_date": dt.date.today().isoformat(),
         "sources": dedupe_sources(sources),
+        "_skipped_invalid_urls": skipped_invalid_urls,
         "_draft_note": f"Generated from {input_format}; review manually before merging into data/source_registry.json.",
     }
 
@@ -300,6 +355,7 @@ def main() -> int:
         "input": input_path.relative_to(repo_root).as_posix() if input_path.is_relative_to(repo_root) else str(input_path),
         "out": out_path.relative_to(repo_root).as_posix() if out_path.is_relative_to(repo_root) else str(out_path),
         "source_count": len(draft["sources"]),
+        "skipped_invalid_urls": draft["_skipped_invalid_urls"],
         "validation_errors": report.errors,
         "validation_warnings": report.warnings,
     }
@@ -307,6 +363,8 @@ def main() -> int:
         print(json.dumps(summary, ensure_ascii=False, indent=2))
     else:
         print(f"wrote {summary['source_count']} draft sources to {summary['out']}")
+        if summary["skipped_invalid_urls"]:
+            print(f"WARNING: skipped {summary['skipped_invalid_urls']} rows with invalid HTTP(S) URLs")
         for warning in report.warnings:
             print(f"WARNING: {warning}")
         for error in report.errors:

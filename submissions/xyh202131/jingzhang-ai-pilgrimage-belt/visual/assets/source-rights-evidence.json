@@ -1,0 +1,312 @@
+{
+  "schema_version": "2.0",
+  "as_of": "2026-08-25",
+  "source_record_count": 49,
+  "third_party_media_redistributed": 0,
+  "generated_media_paths": 0,
+  "file_rights_inventory": "visual/assets/file-rights-inventory.json",
+  "contributor_file_inventory_complete": true,
+  "contributor_file_inventory_path_count": 157,
+  "contributor_file_inventory_coverage_ratio": 1.0,
+  "independent_file_level_audit_completed": false,
+  "component_notices": [
+    "report/copyright_statement.md"
+  ],
+  "source_records": [
+    {
+      "source_id": "SITE-PACKAGE",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "SOURCE-REGISTRY",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "PROCESSED-FACT-PACK",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+      "governance_status": "central_provisional_only",
+      "claim_capacity": "provisional_geometry_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "PROVISIONAL-BOUNDARY-BASIS",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
+      "governance_status": "central_approved_formal",
+      "claim_capacity": "formal_claim_within_registered_scope",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "AGENT-TASKBOOK",
+      "governance_status": "central_approved_formal",
+      "claim_capacity": "formal_claim_within_registered_scope",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "OSM-CONTEXT",
+      "governance_status": "external_open_database",
+      "claim_capacity": "directional_context_only_not_formal_boundary",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "CASE-KENDALL",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "CASE-ONE-NORTH",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "CASE-22AT",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "CASE-KINGS-CROSS",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "CASE-STATION-F",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "CASE-MARS",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "BEIJING-AI-ORIGIN-2026",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "BEIJING-AI-DISTRICTS-2026",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "NATIONAL-DATA-INFRA-2025",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "AI-CONTENT-LABEL-2025",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "AI-PLUS-2025",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "JZ-PARK-2023",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "JZ-COCREATION-2021",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "STD-URBAN-DESIGN",
+      "governance_status": "central_approved_formal",
+      "claim_capacity": "formal_claim_within_registered_scope",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "STD-CONTROL-PLAN",
+      "governance_status": "central_approved_formal",
+      "claim_capacity": "formal_claim_within_registered_scope",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "STD-LAND-USE",
+      "governance_status": "central_approved_formal",
+      "claim_capacity": "formal_claim_within_registered_scope",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "STD-ARCH-DEPTH-GAP",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "HAIDIAN-JZ-PHASE2-OPEN-2026",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "HAIDIAN-AI-TRIAL-FIELD-2026",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "HAIDIAN-JZ-MIDTERM-2026",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "HAIDIAN-15FYP-2026",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "SOURCE-JZ-TIME-MUSEUM-G0-V1",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-CENTURY-TIMELINE-Figure",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-PORTABLE-TEMPORAL-EDUCATION-PEDAGOGY",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-JZ-MISSION-ECONOMY-G0-V1",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-INDUSTRY-PUBLIC-VALUE-FIGURE",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-MISSION-ECONOMY-PROPOSAL",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-JZ-CIVIC-OPERATIONS-G0-V1",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-YEAR-ROUND-CIVIC-OPERATIONS-FIGURE",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-CIVIC-OPERATIONS-PROPOSAL",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-JZ-REVIEW-HANDOFF-V1",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-REVIEW-PROFESSIONAL-HANDOFF-FIGURE",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-REVIEW-HANDOFF-PROPOSAL",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-ORDINARY-LIFE-PROPOSAL-R12",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-JZ-REVERSIBLE-REGISTER-R13",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-JZ-REVERSIBLE-FIGURE-R13",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-JZ-FIELD-INTAKE-CONTRACT-R15",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-JZ-FIELD-INTAKE-FIGURE-R15",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "proposal_method_or_design_intent_only",
+      "rights_use": "see_component_notice"
+    },
+    {
+      "source_id": "SOURCE-JZ-COMMONS-LOOP-METHOD-R15",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "BEIJING-JZ-CONTROL-PLAN-APPROVAL-20260812",
+      "governance_status": "participant_collected_citation",
+      "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "SOURCE-JZ-FOUR-STATE-EXPERIENCE-R59",
+      "governance_status": "package_authored_evidence",
+      "claim_capacity": "conceptual_explanatory_presentation_only",
+      "rights_use": "see_component_notice"
+    }
+  ],
+  "contributor_authored_deterministic_media_paths": 4
+}

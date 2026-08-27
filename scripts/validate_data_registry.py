@@ -1,12 +1,64 @@
 #!/usr/bin/env python3
-"""Validate the public data source registry without external dependencies."""
+"""Validate the public data source registry without external dependencies.
+
+The data source registry is at ``data/source_registry.json``. It is the
+shared repository-wide index of sources that have been reviewed and classified
+for use in formal urban design submissions. Participants must not modify this
+file directly; submit a ``[source-registry]`` Issue to request additions.
+
+Validation rules
+----------------
+- ``schema_version`` must be ``"0.1.0"``.
+- ``updated_date`` must be ``YYYY-MM-DD`` format.
+- Every source entry must have a unique ``source_id`` matching
+  ``^[A-Z0-9][A-Z0-9_-]+$``.
+- Required fields per entry: ``title``, ``publisher``, ``source_kind``,
+  ``url``, ``accessed_date``, ``file_type``, ``authority_level``,
+  ``timeliness_level``, ``public_access_status``, ``license_summary``,
+  ``review_status``, ``usable_for_formal``, ``allowed_uses``,
+  ``prohibited_uses``, ``topics``.
+- ``authority_level`` must be one of ``A0``, ``A1``, ``A2``, ``A3``,
+  ``CLEARED_USER_DOCUMENT``, ``PROVISIONAL_REPOSITORY``,
+  ``OPEN_LICENSE_REFERENCE``.
+- ``source_kind`` must be one of the recognized kind values.
+- ``timeliness_level`` must be one of ``T0``–``T4`` or ``NA``.
+- ``public_access_status`` must be a recognized access-status value.
+- ``review_status`` must be one of ``approved``, ``provisional``,
+  ``needs_review``, ``rejected``.
+- ``usable_for_formal`` must be one of ``yes``, ``background_only``,
+  ``provisional_only``, ``no``.
+- Consistency rules: ``usable_for_formal=yes`` requires
+  ``review_status=approved``; ``provisional`` sources cannot be
+  ``usable_for_formal=yes``; ``restricted_or_unknown`` sources cannot be
+  ``approved``.
+- ``local_paths`` items must be relative repo paths that exist on disk.
+
+Usage
+-----
+Validate the default registry::
+
+    python3 scripts/validate_data_registry.py
+
+Validate a custom registry::
+
+    python3 scripts/validate_data_registry.py --registry path/to/registry.json
+
+Machine-readable JSON::
+
+    python3 scripts/validate_data_registry.py --json
+
+Exit code is 0 when the registry passes all checks and 1 otherwise.
+"""
 
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import json
 import re
 import sys
+import unicodedata
+import urllib.parse
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -83,6 +135,28 @@ def is_non_empty_list(value: Any) -> bool:
     return isinstance(value, list) and all(isinstance(item, str) and item.strip() for item in value) and bool(value)
 
 
+def is_iso_date(value: Any) -> bool:
+    if not isinstance(value, str) or not DATE_RE.fullmatch(value):
+        return False
+    try:
+        dt.date.fromisoformat(value)
+    except ValueError:
+        return False
+    return True
+
+
+def is_http_url(value: str) -> bool:
+    if any(char.isspace() or unicodedata.category(char) in {"Cc", "Cf", "Cs"} for char in value):
+        return False
+    try:
+        parsed = urllib.parse.urlsplit(value)
+        hostname = parsed.hostname
+        _ = parsed.port
+    except ValueError:
+        return False
+    return parsed.scheme.lower() in {"http", "https"} and bool(parsed.netloc) and bool(hostname)
+
+
 def validate_local_path(report: RegistryReport, repo_root: Path, source_id: str, value: str) -> None:
     path = Path(value)
     if path.is_absolute() or ".." in path.parts:
@@ -145,10 +219,10 @@ def validate_source(report: RegistryReport, repo_root: Path, source: dict[str, A
         report.error(f"{source_id}: invalid usable_for_formal {source.get('usable_for_formal')!r}")
 
     accessed_date = source.get("accessed_date")
-    if not isinstance(accessed_date, str) or not DATE_RE.match(accessed_date):
+    if not is_iso_date(accessed_date):
         report.error(f"{source_id}: accessed_date must be YYYY-MM-DD")
     published_date = source.get("published_date")
-    if published_date is not None and (not isinstance(published_date, str) or not DATE_RE.match(published_date)):
+    if published_date is not None and not is_iso_date(published_date):
         report.error(f"{source_id}: published_date must be YYYY-MM-DD or null")
 
     for key in ["allowed_uses", "prohibited_uses", "topics"]:
@@ -161,9 +235,11 @@ def validate_source(report: RegistryReport, repo_root: Path, source: dict[str, A
 
     url = source.get("url")
     access_status = source.get("public_access_status")
-    if access_status in {"public_url", "public_local_snapshot"} and isinstance(url, str) and not url.startswith("http"):
+    if not isinstance(url, str) or not url.strip():
+        report.error(f"{source_id}: url must be a non-empty string")
+    elif access_status in {"public_url", "public_local_snapshot"} and not is_http_url(url):
         report.error(f"{source_id}: public URL sources must use an http(s) url")
-    if access_status in {"cleared_for_repo", "provisional_repository"} and isinstance(url, str):
+    elif access_status in {"cleared_for_repo", "provisional_repository"}:
         validate_local_path(report, repo_root, source_id, url)
 
     for local_path in source.get("local_paths", []) or []:
@@ -195,7 +271,7 @@ def validate_registry(repo_root: Path, registry_path: Path) -> RegistryReport:
     if data.get("schema_version") != "0.1.0":
         report.error("registry schema_version must be 0.1.0")
     updated_date = data.get("updated_date")
-    if not isinstance(updated_date, str) or not DATE_RE.match(updated_date):
+    if not is_iso_date(updated_date):
         report.error("registry updated_date must be YYYY-MM-DD")
     sources = data.get("sources")
     if not isinstance(sources, list) or not sources:
@@ -212,10 +288,25 @@ def validate_registry(repo_root: Path, registry_path: Path) -> RegistryReport:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--repo-root", default=".")
-    parser.add_argument("--registry", default="data/source_registry.json")
-    parser.add_argument("--json", action="store_true")
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "--repo-root",
+        default=".",
+        help="Repository root directory (default: current working directory)",
+    )
+    parser.add_argument(
+        "--registry",
+        default="data/source_registry.json",
+        help="Path to the registry file relative to --repo-root (default: data/source_registry.json)",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Emit machine-readable JSON instead of text",
+    )
     args = parser.parse_args()
 
     repo_root = Path(args.repo_root).resolve()
