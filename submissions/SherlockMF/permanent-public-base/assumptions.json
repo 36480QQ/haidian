@@ -223,7 +223,7 @@
       "category": "dazhongsi_fte",
       "id": "A-M2-03",
       "impact": "FTE is not a staffing promise, employment plan or claim about a named operator.",
-      "statement": "FTE uses participant assumptions of staffed positions, a 1.18 coverage factor and 1600 productive hours per FTE-year, rounded to 0.1 FTE.",
+      "statement": "FTE uses participant assumptions of staffed positions, a 1.18 coverage factor and 1600 productive hours per FTE-year. The machine-readable model publishes the unrounded result; the display rounds to 0.1 FTE, while OPEX uses the unrounded FTE.",
       "status": "pending_operator_confirmation",
       "trigger": "Recalculate when approved hours, positions, coverage or productive-hours inputs differ by more than 10%."
     },
@@ -239,7 +239,7 @@
       "category": "dazhongsi_no_build",
       "id": "A-M2-05",
       "impact": "No-build does not mean no public service; it rejects the reversible carrier while retaining a continuous public clear line, staffed manual window, seating, shade, bilingual wayfinding and paper service/appeal.",
-      "statement": "The no-build cost is a separate low-confidence public-base ROM envelope and must not be subtracted from a carrier scenario as a verified saving.",
+      "statement": "The no-build cost is a separate low-confidence public-base ROM envelope: CAPEX separately bands clear-line markings/wayfinding, seating/shade and staffed-window setup; OPEX separately bands unrounded-FTE staff cost and a fixed manual-service allowance. It must not be subtracted from a carrier scenario as a verified saving.",
       "status": "pending_public_base_and_operator_confirmation",
       "trigger": "Recalculate after public-base design, site survey, staffing plan or professional estimate changes."
     }

@@ -855,12 +855,13 @@
     "dazhongsi_base_fte_required": {
       "status": "known",
       "value": 3.0,
+      "unrounded_value": 2.986875,
       "unit": "none",
       "intended_unit": "FTE",
       "source_files": [
         "visual/assets/dazhongsi-operating-envelope.json"
       ],
-      "formula": "round_half_up(3 staffed positions * 1350 open hours/year * 1.18 coverage factor / 1600 productive hours/FTE-year, 0.1 FTE)",
+      "formula": "fte_required_unrounded = 3 staffed positions * 1350 open hours/year * 1.18 coverage factor / 1600 productive hours/FTE-year = 2.986875 FTE; display fte_required = round_half_up(2.986875, 0.1 FTE) = 3.0 FTE",
       "confidence": "low",
       "assumptions": [
         "A-M2-03"
@@ -904,7 +905,8 @@
       "source_files": [
         "visual/assets/dazhongsi-operating-envelope.json"
       ],
-      "formula": "round_half_up(3.0 FTE * 200000 CNY/FTE-year + 1350 hours * 140 CNY/open-hour + 400000 CNY fixed allowance, 10000 CNY)",
+      "formula": "round_half_up(2.986875 unrounded FTE * 200000 CNY/FTE-year + 1350 hours * 140 CNY/open-hour + 400000 CNY fixed allowance, 10000 CNY) = 1190000 CNY/year ROM",
+      "fte_required_unrounded": 2.986875,
       "confidence": "low",
       "assumptions": [
         "A-M2-04"
@@ -926,7 +928,12 @@
       "source_files": [
         "visual/assets/dazhongsi-operating-envelope.json"
       ],
-      "formula": "fixed clear-line markings and bilingual wayfinding + seating/shade package + staffed-window setup",
+      "formula": "base: 250000 CNY clear-line markings and bilingual wayfinding + 400000 CNY seating/shade + 250000 CNY staffed-window setup = 900000 CNY ROM; low/high use the corresponding published component bands",
+      "component_ranges_cny_rom": {
+        "clear_line_markings_and_fixed_wayfinding": [150000, 250000, 400000],
+        "seating_and_shade_package": [250000, 400000, 650000],
+        "staffed_window_setup": [150000, 250000, 400000]
+      },
       "confidence": "low",
       "assumptions": [
         "A-M2-05"
@@ -948,7 +955,9 @@
       "source_files": [
         "visual/assets/dazhongsi-operating-envelope.json"
       ],
-      "formula": "0.7 FTE * 200000 CNY/FTE-year + 150000 CNY fixed manual-service allowance",
+      "formula": "base: round_half_up(0.66375 unrounded FTE * 200000 CNY/FTE-year + 160000 CNY fixed manual-service allowance, 10000 CNY) = 290000 CNY/year ROM; low/high use the corresponding published bands",
+      "fte_required_unrounded_range": [0.4425, 0.66375, 1.77],
+      "fixed_manual_service_allowance_cny_range": [110000, 160000, 250000],
       "confidence": "low",
       "assumptions": [
         "A-M2-05"
