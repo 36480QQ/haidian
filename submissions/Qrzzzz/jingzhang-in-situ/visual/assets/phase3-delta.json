@@ -2,6 +2,7 @@
   "schema_version": "phase3-governance-delta-v1",
   "authority": {
     "phase2_frozen_head": "554979e4bc66f21fbdf53e4cde85ed94afe4421c",
+    "phase2_equivalent_rebased_parent": "2264c782d96f57f3ae95f0a6458f5e03e3112b42",
     "purpose_zh": "只补齐十二场景的运行协议、数据治理、人工接管、故障测试与停止撤场；不改二期空间证据。",
     "purpose_en": "Complete the operating protocols, data governance, Human Takeover, failure tests, stop, and removal for the twelve scenarios without changing Phase 2 spatial evidence.",
     "evidence_status": "design-target",
@@ -14,6 +15,13 @@
       "safety certification",
       "funding commitment"
     ]
+  },
+  "brand_name_contract": {
+    "canonical_zh": "京张在场",
+    "canonical_en": "Jing-Zhang In Situ",
+    "logo_variant_rule_zh": "Logo 图形排印可省略连字符，但不得成为正文、元数据、标题或对外名称。",
+    "logo_variant_rule_en": "A graphic logo treatment may omit the hyphen, but prose, metadata, titles, and external naming may not.",
+    "second_project_name_allowed": false
   },
   "minimum_delta": [
     {

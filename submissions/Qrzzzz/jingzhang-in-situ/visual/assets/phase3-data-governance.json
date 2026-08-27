@@ -159,35 +159,53 @@
         "collector": {
           "zh": "拟议来源登记员或内容维护角色",
           "en": "proposed source registrar or content-maintenance role",
-          "status": "design-target"
+          "status": "design-target",
+          "role_keys": [
+            "data_steward"
+          ]
         },
         "controller": {
           "zh": "开放前书面指定的责任实体",
           "en": "accountable entity to be designated in writing before opening",
-          "status": "unknown"
+          "status": "unknown",
+          "role_keys": [
+            "scenario_service_owner"
+          ]
         },
         "operator": {
           "zh": "场景内容维护、数据管理或专业复核角色",
           "en": "scenario content-maintenance, data-steward, or professional-review role",
-          "status": "design-target"
+          "status": "design-target",
+          "role_keys": [
+            "scenario_service_owner",
+            "on_site_host"
+          ]
         }
       },
       "access": {
-        "read": "public display may expose only the cleared excerpt, source label, date, and limitation; full local snapshots remain subject to their item-level rights record",
-        "write": "source registrar and authorized reviewer only",
-        "publish": "human review required",
+        "read_zh": "公开展示只可呈现清权摘录、来源标签、日期与限制；完整本地快照服从逐项权利记录",
+        "read_en": "public display may expose only the cleared excerpt, source label, date, and limitation; full local snapshots remain subject to their item-level rights record",
+        "write_zh": "仅来源登记员与获授权复核人可写",
+        "write_en": "source registrar and authorized reviewer only",
+        "publish_zh": "必须经人工复核",
+        "publish_en": "human review required",
         "least_privilege": true
       },
       "retention_deletion": {
-        "retain": "retain the cited version while it has an active consumer and reuse remains allowed",
-        "delete_or_tombstone": "remove displayed content on rights withdrawal or source invalidation; retain only a non-content tombstone and audit reason when permitted",
+        "retain_zh": "来源仍有真实消费者且复用获准时保留所引版本",
+        "retain_en": "retain the cited version while it has an active consumer and reuse remains allowed",
+        "delete_or_tombstone_zh": "权利撤回或来源失效时移除展示内容；获准时只保留无内容墓碑与审计原因",
+        "delete_or_tombstone_en": "remove displayed content on rights withdrawal or source invalidation; retain only a non-content tombstone and audit reason when permitted",
         "numeric_period": null,
         "numeric_period_status": "unknown"
       },
       "local_remote_boundary": {
         "default": "hashed_local_snapshot_or_registered_public_reference",
-        "remote_rule": "a remote fetch is a sourcing event, not authority by itself; do not transmit user or operational data with it",
-        "status": "documented"
+        "status": "documented",
+        "remote_rule_zh": "远程获取只是取证事件，不自行形成权威；不得随之传输用户或运营数据",
+        "remote_rule_en": "a remote fetch is a sourcing event, not authority by itself; do not transmit user or operational data with it",
+        "default_label_zh": "默认本地或离线，具体模式见稳定 token。",
+        "default_label_en": "Local or offline by default; see the stable token for the exact mode."
       },
       "audit": {
         "fields": [
@@ -199,19 +217,30 @@
           "review_result",
           "correction_or_withdrawal_event"
         ],
-        "trigger": "source change, rights change, factual dispute, or stale-data signal"
+        "trigger_zh": "来源变化、权利变化、事实争议或过期信号",
+        "trigger_en": "source change, rights change, factual dispute, or stale-data signal"
       },
       "appeal": {
         "route_zh": "前台更正／权利异议入口→内容维护角色→必要时历史、版权或专业复核；争议期间隐藏相关内容。",
         "route_en": "Front-stage correction/rights challenge -> content-maintenance role -> history, rights, or professional review when needed; hide disputed content during review.",
-        "response_window": "design-target"
+        "response_window": "design-target",
+        "response_window_zh": "由获授权运营者书面设定；当前为 design-target。",
+        "response_window_en": "Set in writing by an authorized operator; currently design-target."
       },
-      "prohibited_use": [
-        "upgrade a background or provisional source into official evidence",
-        "ignore item-level license or prohibited-use fields",
-        "reuse withdrawn or stale content as a current claim",
-        "use repository navigation metadata as a substitute for the underlying source"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "把背景或 provisional 来源升级为官方证据",
+          "忽略逐项许可或禁止用途",
+          "把撤回或过期内容当作当前主张",
+          "用仓库导航元数据替代底层来源"
+        ],
+        "en": [
+          "upgrade a background or provisional source into official evidence",
+          "ignore item-level license or prohibited-use fields",
+          "reuse withdrawn or stale content as a current claim",
+          "use repository navigation metadata as a substitute for the underlying source"
+        ]
+      },
       "evidence_status": "documented"
     },
     {
@@ -236,35 +265,53 @@
         "collector": {
           "zh": "拟议场景接口、设备网关或现场记录角色",
           "en": "proposed scenario interface, equipment gateway, or on-site recorder",
-          "status": "design-target"
+          "status": "design-target",
+          "role_keys": [
+            "data_steward"
+          ]
         },
         "controller": {
           "zh": "开放前书面指定的责任实体",
           "en": "accountable entity to be designated in writing before opening",
-          "status": "unknown"
+          "status": "unknown",
+          "role_keys": [
+            "scenario_service_owner"
+          ]
         },
         "operator": {
           "zh": "对应场景的运营、设施、安全、内容或服务角色",
           "en": "the scenario's proposed operations, facility, safety, content, or service role",
-          "status": "design-target"
+          "status": "design-target",
+          "role_keys": [
+            "scenario_service_owner",
+            "on_site_host"
+          ]
         }
       },
       "access": {
-        "read": "authorized scenario operator and human reviewer; public sees only an aggregate or current service state",
-        "write": "instrumented source or authorized human recorder",
-        "export": "non-personal aggregate only after human review",
+        "read_zh": "仅相关运营与复核席位按最小范围读取",
+        "read_en": "authorized scenario operator and human reviewer; public sees only an aggregate or current service state",
+        "write_zh": "仅获授权运营席位写入",
+        "write_en": "instrumented source or authorized human recorder",
+        "export_zh": "只可导出经人工复核的非个人汇总",
+        "export_en": "non-personal aggregate only after human review",
         "least_privilege": true
       },
       "retention_deletion": {
-        "retain": "through the written evaluation window and unresolved incident review only",
-        "delete_or_aggregate": "delete run-level records after evaluation and incident closure; retain only necessary non-personal aggregates and protocol version",
+        "retain_zh": "仅保留到运行、评价和未结事件窗口结束",
+        "retain_en": "through the written evaluation window and unresolved incident review only",
+        "delete_or_aggregate_zh": "窗口结束删除逐次载荷，只保留获准非个人汇总与停止证据",
+        "delete_or_aggregate_en": "delete run-level records after evaluation and incident closure; retain only necessary non-personal aggregates and protocol version",
         "numeric_period": null,
         "numeric_period_status": "design-target"
       },
       "local_remote_boundary": {
         "default": "site_local_or_offline",
-        "remote_rule": "remote telemetry or synchronization is disabled until a documented data-flow, operator, security review, and legal review exist",
-        "status": "design-target"
+        "status": "design-target",
+        "remote_rule_zh": "默认场地本地；远程传输须有书面数据流、安全与法律复核",
+        "remote_rule_en": "remote telemetry or synchronization is disabled until a documented data-flow, operator, security review, and legal review exist",
+        "default_label_zh": "默认本地或离线，具体模式见稳定 token。",
+        "default_label_en": "Local or offline by default; see the stable token for the exact mode."
       },
       "audit": {
         "fields": [
@@ -277,19 +324,30 @@
           "human_action",
           "stop_or_deletion_event"
         ],
-        "trigger": "quality failure, drift, safety threshold, missing log, or source disconnect"
+        "trigger_zh": "版本、阈值、故障、投诉、状态或访问变化",
+        "trigger_en": "quality failure, drift, safety threshold, missing log, or source disconnect"
       },
       "appeal": {
         "route_zh": "公众可质疑数据来源、过期状态或服务后果；运营角色暂停相关输出并由人工核验原始非个人记录。",
         "route_en": "The public may challenge a data source, stale state, or service consequence; the operator pauses the related output and a human checks the underlying non-personal record.",
-        "response_window": "design-target"
+        "response_window": "design-target",
+        "response_window_zh": "由获授权运营者书面设定；当前为 design-target。",
+        "response_window_en": "Set in writing by an authorized operator; currently design-target."
       },
-      "prohibited_use": [
-        "re-identify a person from operational traces",
-        "combine device, route, or slot records into attendance or worker-performance profiles",
-        "treat an uncalibrated sensor or unverified route as professional evidence",
-        "retain raw runs indefinitely"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "把运营数据与身份拼接",
+          "形成隐蔽人员或客流画像",
+          "未经复核用于训练或营销",
+          "用设备遥测替代专业结论"
+        ],
+        "en": [
+          "re-identify a person from operational traces",
+          "combine device, route, or slot records into attendance or worker-performance profiles",
+          "treat an uncalibrated sensor or unverified route as professional evidence",
+          "retain raw runs indefinitely"
+        ]
+      },
       "evidence_status": "design-target"
     },
     {
@@ -323,37 +381,57 @@
         "collector": {
           "zh": "用户主动提交的人工柜台或明确标注的场景表单",
           "en": "a human desk or clearly labelled scenario form used through active user submission",
-          "status": "design-target"
+          "status": "design-target",
+          "role_keys": [
+            "data_steward"
+          ]
         },
         "controller": {
           "zh": "必须在任何收集前书面指定并前台公示；当前未知",
           "en": "must be designated in writing and disclosed before any collection; currently unknown",
-          "status": "unknown"
+          "status": "unknown",
+          "role_keys": [
+            "scenario_service_owner"
+          ]
         },
         "operator": {
           "zh": "按需访问的人工顾问、设施管理员、投诉处理或内容权利角色",
           "en": "need-to-know human adviser, facility administrator, complaint handler, or content-rights role",
-          "status": "design-target"
+          "status": "design-target",
+          "role_keys": [
+            "scenario_service_owner",
+            "on_site_host"
+          ]
         }
       },
       "access": {
-        "read": "named need-to-know human role only",
-        "write": "data subject or authorized human intake role",
-        "ai_access": "disabled by default; any field passed to AI requires field-level necessity and legal review",
-        "separation": "contact data is separated from ranking, evaluation, and public display",
+        "read_zh": "仅处理请求所必需的具名人工席位可读",
+        "read_en": "named need-to-know human role only",
+        "write_zh": "仅在条件路径启用后由获授权人工写入",
+        "write_en": "data subject or authorized human intake role",
+        "ai_access_zh": "默认不向 AI 提供；如不可避免须另行法律、安全与目的复核",
+        "ai_access_en": "disabled by default; any field passed to AI requires field-level necessity and legal review",
+        "separation_zh": "联系信息与推荐、排程、展示和评价数据分离",
+        "separation_en": "contact data is separated from ranking, evaluation, and public display",
         "least_privilege": true
       },
       "retention_deletion": {
-        "retain": "until the requested referral, booking, reply, correction, or appeal is closed, subject to a written pre-open schedule",
-        "delete": "delete or irreversibly de-identify after closure and any specifically verified mandatory hold; do not use a blanket legal-hold claim",
-        "withdrawal": "stop optional processing and delete when the user withdraws, unless an authorized legal review identifies a specific contrary duty",
+        "retain_zh": "只保留至请求、投诉或权利行使闭环",
+        "retain_en": "until the requested referral, booking, reply, correction, or appeal is closed, subject to a written pre-open schedule",
+        "delete_zh": "闭环后按书面批次删除",
+        "delete_en": "delete or irreversibly de-identify after closure and any specifically verified mandatory hold; do not use a blanket legal-hold claim",
+        "withdrawal_zh": "撤回或反对触发隔离、停止处理与删除/封存复核",
+        "withdrawal_en": "stop optional processing and delete when the user withdraws, unless an authorized legal review identifies a specific contrary duty",
         "numeric_period": null,
         "numeric_period_status": "requires_legal_review"
       },
       "local_remote_boundary": {
         "default": "local_only_separate_store",
-        "remote_rule": "no remote model, vendor, synchronization, or cross-boundary transfer until a controller, processor boundary, location, security measure, user notice, and legal basis are documented",
-        "status": "requires_legal_review"
+        "status": "requires_legal_review",
+        "remote_rule_zh": "默认本地分库存取；远程端点和跨边界传输关闭，除非书面法律与安全复核通过",
+        "remote_rule_en": "no remote model, vendor, synchronization, or cross-boundary transfer until a controller, processor boundary, location, security measure, user notice, and legal basis are documented",
+        "default_label_zh": "默认本地或离线，具体模式见稳定 token。",
+        "default_label_en": "Local or offline by default; see the stable token for the exact mode."
       },
       "audit": {
         "fields": [
@@ -366,20 +444,31 @@
           "access_events_by_role_not_content",
           "correction_withdrawal_or_deletion_event"
         ],
-        "trigger": "collection attempt, access, purpose change, correction, withdrawal, leak, or deletion failure"
+        "trigger_zh": "收集、读取、更正、撤回、导出、泄露或删除事件",
+        "trigger_en": "collection attempt, access, purpose change, correction, withdrawal, leak, or deletion failure"
       },
       "appeal": {
         "route_zh": "匿名意见可不留联系方式；需回复时只收用户选择的单一联系渠道。投诉处理角色不得把投诉内容回流到匹配、排程、评价或展示。",
         "route_en": "Anonymous feedback needs no contact detail; when a reply is requested, collect only one user-selected contact channel. The complaint role may not feed complaint content back into matching, scheduling, evaluation, or display.",
-        "response_window": "design-target"
+        "response_window": "design-target",
+        "response_window_zh": "由获授权运营者书面设定；当前为 design-target。",
+        "response_window_en": "Set in writing by an authorized operator; currently design-target."
       },
-      "prohibited_use": [
-        "collect personal data for a scenario whose core service does not require it",
-        "condition equivalent service on accepting AI or personal-data processing",
-        "secondary marketing, model training, identity linking, eligibility scoring, or public display",
-        "infer consent from entry into a venue, use of a paper fallback, or silence",
-        "claim consent already obtained"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "无明确目的收集",
+          "强迫同意或以拒绝降低服务",
+          "敏感推断或画像",
+          "用于招聘、营销、训练或其他未告知用途"
+        ],
+        "en": [
+          "collect personal data for a scenario whose core service does not require it",
+          "condition equivalent service on accepting AI or personal-data processing",
+          "secondary marketing, model training, identity linking, eligibility scoring, or public display",
+          "infer consent from entry into a venue, use of a paper fallback, or silence",
+          "claim consent already obtained"
+        ]
+      },
       "evidence_status": "requires_legal_review"
     },
     {
@@ -404,36 +493,53 @@
         "collector": {
           "zh": "无；界面应阻止或警示提交",
           "en": "none; the interface should block or warn against submission",
-          "status": "prohibited"
+          "status": "prohibited",
+          "role_keys": [
+            "data_steward"
+          ]
         },
         "controller": {
           "zh": "未指定，因为当前合同禁止处理",
           "en": "not designated because processing is prohibited under the current contract",
-          "status": "unknown"
+          "status": "unknown",
+          "role_keys": [
+            "scenario_service_owner"
+          ]
         },
         "operator": {
           "zh": "误收时仅由授权事件处理角色隔离、删除并记录最小事件元数据",
           "en": "if received accidentally, only an authorized incident role quarantines and deletes it while recording minimum event metadata",
-          "status": "design-target"
+          "status": "design-target",
+          "role_keys": [
+            "scenario_service_owner",
+            "on_site_host"
+          ]
         }
       },
       "access": {
         "default": "none",
-        "incident_access": "authorized incident handler only for quarantine and deletion",
+        "incident_access_zh": "当前场景均不需要；意外收到时仅安全、法律与权利复核席位可隔离处理",
+        "incident_access_en": "authorized incident handler only for quarantine and deletion",
         "ai_access": "prohibited",
         "least_privilege": true
       },
       "retention_deletion": {
-        "retain": "none by design",
-        "delete": "quarantine and delete accidental submission without copying its content into incident or appeal logs",
-        "exception": "any proposed exception is outside the current protocol and requires a necessity finding, legal review, security review, and an explicit protocol change before collection",
+        "retain_zh": "默认不保留",
+        "retain_en": "none by design",
+        "delete_zh": "立即隔离并按事故程序删除",
+        "delete_en": "quarantine and delete accidental submission without copying its content into incident or appeal logs",
+        "exception_zh": "仅法律明确要求的事件证据可在限制访问下封存，当前为 requires legal review",
+        "exception_en": "any proposed exception is outside the current protocol and requires a necessity finding, legal review, security review, and an explicit protocol change before collection",
         "numeric_period": null,
         "numeric_period_status": "requires_legal_review"
       },
       "local_remote_boundary": {
         "default": "no_processing_no_transfer",
-        "remote_rule": "prohibited",
-        "status": "prohibited"
+        "status": "prohibited",
+        "remote_rule_zh": "禁止远程传输，除非未来法律审查明确要求并另立合同",
+        "remote_rule_en": "prohibited",
+        "default_label_zh": "默认本地或离线，具体模式见稳定 token。",
+        "default_label_en": "Local or offline by default; see the stable token for the exact mode."
       },
       "audit": {
         "fields": [
@@ -445,22 +551,33 @@
           "interface_repair_action"
         ],
         "content_excluded": true,
-        "trigger": "any attempted or accidental submission"
+        "trigger_zh": "任何疑似敏感数据输入、访问、推断、泄露或删除事件",
+        "trigger_en": "any attempted or accidental submission"
       },
       "appeal": {
         "route_zh": "用户可要求确认停止处理与删除；回复不复述敏感内容。",
         "route_en": "A user may request confirmation that processing stopped and deletion occurred; the reply does not repeat sensitive content.",
-        "response_window": "design-target"
+        "response_window": "design-target",
+        "response_window_zh": "由获授权运营者书面设定；当前为 design-target。",
+        "response_window_en": "Set in writing by an authorized operator; currently design-target."
       },
-      "prohibited_use": [
-        "face recognition",
-        "emotion recognition",
-        "sensitive inference",
-        "accessibility diagnosis",
-        "child profiling",
-        "risk, eligibility, discipline, price, or service ranking",
-        "training or evaluation dataset enrichment"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "默认人脸或情绪识别",
+          "健康、残障、族群、政治或脆弱性推断",
+          "声纹或生物识别",
+          "社会评分与预测性执法"
+        ],
+        "en": [
+          "face recognition",
+          "emotion recognition",
+          "sensitive inference",
+          "accessibility diagnosis",
+          "child profiling",
+          "risk, eligibility, discipline, price, or service ranking",
+          "training or evaluation dataset enrichment"
+        ]
+      },
       "evidence_status": "prohibited"
     },
     {
@@ -487,35 +604,53 @@
         "collector": {
           "zh": "不单独采集；只读取该场景已允许的最小输入",
           "en": "no separate collection; reads only the scenario's already allowed minimum inputs",
-          "status": "design-target"
+          "status": "design-target",
+          "role_keys": [
+            "data_steward"
+          ]
         },
         "controller": {
           "zh": "开放前书面指定的责任实体",
           "en": "accountable entity to be designated in writing before opening",
-          "status": "unknown"
+          "status": "unknown",
+          "role_keys": [
+            "scenario_service_owner"
+          ]
         },
         "operator": {
           "zh": "场景运营与相应安全、专业、顾问、设施、历史或服务复核角色",
           "en": "scenario operations plus the applicable safety, professional, adviser, facility, history, or service-review role",
-          "status": "design-target"
+          "status": "design-target",
+          "role_keys": [
+            "scenario_service_owner",
+            "on_site_host"
+          ]
         }
       },
       "access": {
-        "read": "human reviewer sees the input categories, source version, output, limitation, and override control",
-        "write": "model or deterministic rule produces a draft; only the human role records the decision",
-        "public": "display must distinguish AI output from human decision and show how to request Human Takeover",
+        "read_zh": "人工运营与复核席位按场景目的读取",
+        "read_en": "human reviewer sees the input categories, source version, output, limitation, and override control",
+        "write_zh": "仅系统生成并附版本、来源与限制",
+        "write_en": "model or deterministic rule produces a draft; only the human role records the decision",
+        "public_zh": "公众只看经人工复核的限定输出与解释",
+        "public_en": "display must distinguish AI output from human decision and show how to request Human Takeover",
         "least_privilege": true
       },
       "retention_deletion": {
-        "retain": "keep the minimum run record through evaluation or dispute review; do not retain prompts or raw outputs by default",
-        "delete_or_aggregate": "delete session content after the service or trial window; retain only non-personal aggregate error classes and versioned decisions when needed",
+        "retain_zh": "保留到评价、异常和申诉窗口结束",
+        "retain_en": "keep the minimum run record through evaluation or dispute review; do not retain prompts or raw outputs by default",
+        "delete_or_aggregate_zh": "删除逐次推断，只保留获准非个人错误类别与决定证据",
+        "delete_or_aggregate_en": "delete session content after the service or trial window; retain only non-personal aggregate error classes and versioned decisions when needed",
         "numeric_period": null,
         "numeric_period_status": "design-target"
       },
       "local_remote_boundary": {
         "default": "offline_or_local_model_preferred",
-        "remote_rule": "remote inference is disabled by default; if later proposed, only non-personal minimum input may be sent after endpoint, location, logging, security, rights, and legal review",
-        "status": "design-target"
+        "status": "design-target",
+        "remote_rule_zh": "默认本地；远程模型调用必须预检数据流、权限、版本和退出",
+        "remote_rule_en": "remote inference is disabled by default; if later proposed, only non-personal minimum input may be sent after endpoint, location, logging, security, rights, and legal review",
+        "default_label_zh": "默认本地或离线，具体模式见稳定 token。",
+        "default_label_en": "Local or offline by default; see the stable token for the exact mode."
       },
       "audit": {
         "fields": [
@@ -528,20 +663,31 @@
           "override_or_takeover",
           "complaint_or_retest_link"
         ],
-        "trigger": "wrong suggestion, discriminatory pattern, drift, unexplained output, missing source, or human override"
+        "trigger_zh": "模型、提示、来源、规则、偏差、漂移或人工推翻变化",
+        "trigger_en": "wrong suggestion, discriminatory pattern, drift, unexplained output, missing source, or human override"
       },
       "appeal": {
         "route_zh": "用户可拒绝 AI 建议、要求人工说明或改走低技术路径；拒绝不得带来服务降级、惩罚或排队劣势。",
         "route_en": "A user may reject the AI suggestion, request a human explanation, or use the low-tech route; refusal must not reduce service, impose a penalty, or worsen queue priority.",
-        "response_window": "design-target"
+        "response_window": "design-target",
+        "response_window_zh": "由获授权运营者书面设定；当前为 design-target。",
+        "response_window_en": "Set in writing by an authorized operator; currently design-target."
       },
-      "prohibited_use": [
-        "automated approval, eligibility, purchase, sanction, resource deprivation, or rights change",
-        "person-level reputation, risk, emotion, disability, health, or vulnerability scoring",
-        "predictive policing or worker/visitor performance scoring",
-        "hide source, model version, limitation, or human override",
-        "train on scenario inputs, feedback, or appeals without a separate authorized protocol"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "把分数当批准或权利决定",
+          "人员社会评分或敏感属性推断",
+          "自动惩戒、拒绝资源或资格",
+          "隐藏不确定性或人工推翻"
+        ],
+        "en": [
+          "automated approval, eligibility, purchase, sanction, resource deprivation, or rights change",
+          "person-level reputation, risk, emotion, disability, health, or vulnerability scoring",
+          "predictive policing or worker/visitor performance scoring",
+          "hide source, model version, limitation, or human override",
+          "train on scenario inputs, feedback, or appeals without a separate authorized protocol"
+        ]
+      },
       "evidence_status": "design-target"
     },
     {
@@ -573,35 +719,53 @@
         "collector": {
           "zh": "拟议事件记录器与人工投诉台",
           "en": "proposed event recorder and human complaint desk",
-          "status": "design-target"
+          "status": "design-target",
+          "role_keys": [
+            "data_steward"
+          ]
         },
         "controller": {
           "zh": "开放前书面指定的责任实体",
           "en": "accountable entity to be designated in writing before opening",
-          "status": "unknown"
+          "status": "unknown",
+          "role_keys": [
+            "scenario_service_owner"
+          ]
         },
         "operator": {
           "zh": "独立于场景推荐和评价的投诉处理、数据治理与责任复核角色",
           "en": "complaint-handling, data-governance, and accountability-review roles separated from scenario recommendation and evaluation",
-          "status": "design-target"
+          "status": "design-target",
+          "role_keys": [
+            "scenario_service_owner",
+            "on_site_host"
+          ]
         }
       },
       "access": {
-        "read": "complaint handler and authorized audit role; scenario operator sees only the action needed, not unnecessary complainant identity",
-        "write": "append-only event role plus human correction workflow",
-        "public": "publish only non-personal status and aggregate findings after review",
+        "read_zh": "按事件最小范围向投诉、审计和独立复核席位开放",
+        "read_en": "complaint handler and authorized audit role; scenario operator sees only the action needed, not unnecessary complainant identity",
+        "write_zh": "只允许具名人工席位与防篡改系统事件写入",
+        "write_en": "append-only event role plus human correction workflow",
+        "public_zh": "只公开去个人化结论、处置和限制",
+        "public_en": "publish only non-personal status and aggregate findings after review",
         "least_privilege": true
       },
       "retention_deletion": {
-        "retain": "through evaluation, complaint closure, and required retest; any further hold needs a specifically documented reason and legal review",
-        "delete_or_aggregate": "remove contact and narrative after closure; retain non-personal event class, outcome, protocol correction, and deletion proof when necessary",
+        "retain_zh": "保留至投诉、申诉、事故、删除和公开复盘闭环",
+        "retain_en": "through evaluation, complaint closure, and required retest; any further hold needs a specifically documented reason and legal review",
+        "delete_or_aggregate_zh": "闭环后删除非必要个人材料，保留获准索引、决定和删除证据",
+        "delete_or_aggregate_en": "remove contact and narrative after closure; retain non-personal event class, outcome, protocol correction, and deletion proof when necessary",
         "numeric_period": null,
         "numeric_period_status": "design-target"
       },
       "local_remote_boundary": {
         "default": "local_separated_audit_store",
-        "remote_rule": "no third-party ticketing or remote synchronization until vendor, location, access, security, retention, and legal boundaries are written",
-        "status": "design-target"
+        "status": "design-target",
+        "remote_rule_zh": "默认本地受限库；远程案件系统须另行法律、安全和访问复核",
+        "remote_rule_en": "no third-party ticketing or remote synchronization until vendor, location, access, security, retention, and legal boundaries are written",
+        "default_label_zh": "默认本地或离线，具体模式见稳定 token。",
+        "default_label_en": "Local or offline by default; see the stable token for the exact mode."
       },
       "audit": {
         "fields": [
@@ -615,20 +779,31 @@
           "retest_status",
           "deletion_status"
         ],
-        "trigger": "every state change, Human Takeover, complaint, correction, stop, removal, reopen, or deletion"
+        "trigger_zh": "投诉收件、分派、读取、决定、再申诉、停止、删除或归档",
+        "trigger_en": "every state change, Human Takeover, complaint, correction, stop, removal, reopen, or deletion"
       },
       "appeal": {
         "route_zh": "前台纸面、柜台或可访问数字入口→独立投诉角色→责任人复核→结果、纠正和复测说明；无法到达投诉入口本身即触发 Human Takeover 和停止评估。",
         "route_en": "Front-stage paper, counter, or accessible digital entry -> independent complaint role -> accountable review -> outcome, correction, and retest explanation; an unreachable complaint channel itself triggers Human Takeover and stop assessment.",
-        "response_window": "design-target"
+        "response_window": "design-target",
+        "response_window_zh": "由获授权运营者书面设定；当前为 design-target。",
+        "response_window_en": "Set in writing by an authorized operator; currently design-target."
       },
-      "prohibited_use": [
-        "retaliation, queue penalty, recommendation downgrade, or service denial because a person complained",
-        "copy sensitive content into logs",
-        "use complaints to train or rank people",
-        "delete or alter an unresolved incident trail without a recorded authorized reason",
-        "retain contact details indefinitely"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "由 AI 结案",
+          "删除未结申诉或事故证据",
+          "向产品方暴露匿名投诉者",
+          "把投诉材料用于训练、营销或人员画像"
+        ],
+        "en": [
+          "retaliation, queue penalty, recommendation downgrade, or service denial because a person complained",
+          "copy sensitive content into logs",
+          "use complaints to train or rank people",
+          "delete or alter an unresolved incident trail without a recorded authorized reason",
+          "retain contact details indefinitely"
+        ]
+      },
       "evidence_status": "design-target"
     }
   ],
@@ -663,18 +838,91 @@
       "notice_en": "No personal data required; do not upload real personal inputs or sensitive material. Evaluation scores assess only a model/system, not a person.",
       "controller_status": "unknown",
       "operator_roles": [
-        "test_operations",
-        "safety_reviewer"
+        "data_steward",
+        "safety_professional"
       ],
-      "human_decision": "release, restrict, isolate, retest, or stop",
-      "retention_override": "delete run-level payload after the evaluation and anomaly window; retain non-personal protocol/result aggregates and stop evidence only",
+      "human_decision": {
+        "zh": "放行、限制、隔离、复测或停止",
+        "en": "release, restrict, isolate, retest, or stop"
+      },
+      "retention_override": {
+        "zh": "评测与异常窗口后删除逐次载荷；只保留非个人协议、结果汇总与停止证据",
+        "en": "delete run-level payload after the evaluation and anomaly window; retain non-personal protocol/result aggregates and stop evidence only"
+      },
       "remote_boundary": "offline_or_local_by_default",
-      "prohibited_use": [
-        "person scoring",
-        "uncleared benchmark reuse",
-        "production release without a human safety decision"
+      "prohibited_use": {
+        "zh": [
+          "人员评分",
+          "复用未清权基准",
+          "无人工安全决定即生产放行"
+        ],
+        "en": [
+          "person scoring",
+          "uncleared benchmark reuse",
+          "production release without a human safety decision"
+        ]
+      },
+      "evidence_status": "design-target",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "model_inference_scoring",
+        "logs_appeal_materials"
       ],
-      "evidence_status": "design-target"
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "data_steward",
+          "safety_professional"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "评测与异常窗口后删除逐次载荷；只保留非个人协议、结果汇总与停止证据",
+          "en": "delete run-level payload after the evaluation and anomaly window; retain non-personal protocol/result aggregates and stop evidence only"
+        },
+        "local_remote_boundary": {
+          "mode": "offline_or_local_by_default",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "人员评分",
+            "复用未清权基准",
+            "无人工安全决定即生产放行"
+          ],
+          "en": [
+            "person scoring",
+            "uncleared benchmark reuse",
+            "production release without a human safety decision"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories"
     },
     {
       "scenario_id": "SC02",
@@ -707,19 +955,91 @@
       "notice_en": "Only equipment state is processed; no person, workstation, or visit record is created. Energy, fire, or noise thresholds and conclusions require confirmation by the relevant professional role.",
       "controller_status": "unknown",
       "operator_roles": [
-        "test_operations",
-        "facility_role",
-        "energy_fire_noise_professional"
+        "facilities_maintenance",
+        "safety_professional"
       ],
-      "human_decision": "confirm, reject, isolate equipment, or stop test",
-      "retention_override": "retain raw telemetry only through the controlled test and unresolved incident review, then aggregate or delete",
+      "human_decision": {
+        "zh": "确认、拒绝、隔离设备或停止试验",
+        "en": "confirm, reject, isolate equipment, or stop test"
+      },
+      "retention_override": {
+        "zh": "受控试验与未结事件复核后删除或聚合原始遥测",
+        "en": "retain raw telemetry only through the controlled test and unresolved incident review, then aggregate or delete"
+      },
       "remote_boundary": "local_equipment_gateway_by_default",
-      "prohibited_use": [
-        "worker monitoring",
-        "occupancy inference linked to identity",
-        "professional conclusion from uncalibrated telemetry"
+      "prohibited_use": {
+        "zh": [
+          "员工监控",
+          "将占用推断关联身份",
+          "用未校准遥测作专业结论"
+        ],
+        "en": [
+          "worker monitoring",
+          "occupancy inference linked to identity",
+          "professional conclusion from uncalibrated telemetry"
+        ]
+      },
+      "evidence_status": "design-target",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "model_inference_scoring",
+        "logs_appeal_materials"
       ],
-      "evidence_status": "design-target"
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "facilities_maintenance",
+          "safety_professional"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "受控试验与未结事件复核后删除或聚合原始遥测",
+          "en": "retain raw telemetry only through the controlled test and unresolved incident review, then aggregate or delete"
+        },
+        "local_remote_boundary": {
+          "mode": "local_equipment_gateway_by_default",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "员工监控",
+            "将占用推断关联身份",
+            "用未校准遥测作专业结论"
+          ],
+          "en": [
+            "worker monitoring",
+            "occupancy inference linked to identity",
+            "professional conclusion from uncalibrated telemetry"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories"
     },
     {
       "scenario_id": "SC03",
@@ -751,20 +1071,97 @@
       "notice_en": "No name, diagnosis, disability category, face, voice, or gait template is required. A participant may skip a task and use a human escort without losing equivalent service.",
       "controller_status": "unknown",
       "operator_roles": [
-        "test_operations",
-        "on_site_safety_host",
-        "accessibility_reviewer"
+        "on_site_host",
+        "safety_professional",
+        "accessibility_lead"
       ],
-      "human_decision": "start, adapt task, provide escort, stop, or retest",
-      "retention_override": "keep only non-personal task and safety-event records through review; delete any accidentally supplied identity or health detail",
+      "human_decision": {
+        "zh": "开始、调整任务、陪同、停止或复测",
+        "en": "start, adapt task, provide escort, stop, or retest"
+      },
+      "retention_override": {
+        "zh": "只保留非个人任务与安全事件至复核结束；意外身份或健康细节立即删除",
+        "en": "keep only non-personal task and safety-event records through review; delete any accidentally supplied identity or health detail"
+      },
       "remote_boundary": "offline_or_local_by_default",
-      "prohibited_use": [
-        "disability inference",
-        "biometric tracking",
-        "participant performance scoring",
-        "testing without an on-site safety host"
+      "prohibited_use": {
+        "zh": [
+          "残障推断",
+          "生物追踪",
+          "参与者绩效评分",
+          "无现场安全主持即测试"
+        ],
+        "en": [
+          "disability inference",
+          "biometric tracking",
+          "participant performance scoring",
+          "testing without an on-site safety host"
+        ]
+      },
+      "evidence_status": "design-target",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "model_inference_scoring",
+        "logs_appeal_materials"
       ],
-      "evidence_status": "design-target"
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "on_site_host",
+          "safety_professional",
+          "accessibility_lead"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "只保留非个人任务与安全事件至复核结束；意外身份或健康细节立即删除",
+          "en": "keep only non-personal task and safety-event records through review; delete any accidentally supplied identity or health detail"
+        },
+        "local_remote_boundary": {
+          "mode": "offline_or_local_by_default",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "残障推断",
+            "生物追踪",
+            "参与者绩效评分",
+            "无现场安全主持即测试"
+          ],
+          "en": [
+            "disability inference",
+            "biometric tracking",
+            "participant performance scoring",
+            "testing without an on-site safety host"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories"
     },
     {
       "scenario_id": "SC04",
@@ -792,26 +1189,132 @@
         "display_or_takedown_state"
       ],
       "no_personal_data_required": true,
-      "conditional_personal_data": "a contributor-selected display name or one contact channel may be processed only for requested attribution or reply after legal review; anonymous participation remains available",
+      "conditional_personal_data": {
+        "status": "requires_legal_review",
+        "core_service_requirement": "not_required",
+        "condition_zh": "仅用户请求署名或回复",
+        "condition_en": "only when a user requests attribution or a reply",
+        "minimum_fields_zh": [
+          "展示名或单一联系渠道"
+        ],
+        "minimum_fields_en": [
+          "display name or one contact channel"
+        ],
+        "controller_status": "unknown",
+        "activation_prerequisites_zh": [
+          "具名控制者",
+          "目的与合法依据",
+          "前台告知",
+          "最小字段",
+          "访问与期限",
+          "退出与删除"
+        ],
+        "activation_prerequisites_en": [
+          "named controller",
+          "purpose and lawful basis",
+          "frontstage notice",
+          "minimum fields",
+          "access and term",
+          "exit and deletion"
+        ],
+        "not_claimed_zh": "不宣称已完成法律审查、已获同意或已启用该路径。",
+        "not_claimed_en": "No completed legal review, obtained consent, or activated path is claimed."
+      },
       "notice_zh": "匿名或不署名参与不降低处理优先级；AI 归纳不代表主持人、标准机构或贡献者认可。",
       "notice_en": "Anonymous or unattributed participation receives no lower priority. AI summarization does not imply endorsement by the facilitator, a standards body, or a contributor.",
       "controller_status": "unknown",
       "operator_roles": [
-        "facilitator",
-        "content_maintenance",
-        "rights_reviewer"
+        "on_site_host",
+        "rights_content_reviewer"
       ],
-      "human_decision": "confirm attribution, correct, publish, hide, or take down",
-      "retention_override": "retain cleared public evidence and non-personal revision history while active; delete optional contact after reply and remove attribution on withdrawal",
+      "human_decision": {
+        "zh": "确认归属、更正、发布、隐藏或下架",
+        "en": "confirm attribution, correct, publish, hide, or take down"
+      },
+      "retention_override": {
+        "zh": "活动期间保留清权公开证据与非个人修订历史；回复后删除可选联系信息，撤回时移除署名",
+        "en": "retain cleared public evidence and non-personal revision history while active; delete optional contact after reply and remove attribution on withdrawal"
+      },
       "remote_boundary": "local_snapshot_and_moderation_by_default",
-      "prohibited_use": [
-        "rank contributors",
-        "infer consensus",
-        "publish private issue text",
-        "retain contact for outreach or marketing"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "贡献者排名",
+          "推断共识",
+          "发布私密议题",
+          "把联系信息用于外联或营销"
+        ],
+        "en": [
+          "rank contributors",
+          "infer consensus",
+          "publish private issue text",
+          "retain contact for outreach or marketing"
+        ]
+      },
       "evidence_status": "design-target",
-      "legal_review_status": "requires_legal_review"
+      "legal_review_status": "requires_legal_review",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "personal_data",
+        "model_inference_scoring",
+        "logs_appeal_materials"
+      ],
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "on_site_host",
+          "rights_content_reviewer"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "活动期间保留清权公开证据与非个人修订历史；回复后删除可选联系信息，撤回时移除署名",
+          "en": "retain cleared public evidence and non-personal revision history while active; delete optional contact after reply and remove attribution on withdrawal"
+        },
+        "local_remote_boundary": {
+          "mode": "local_snapshot_and_moderation_by_default",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "贡献者排名",
+            "推断共识",
+            "发布私密议题",
+            "把联系信息用于外联或营销"
+          ],
+          "en": [
+            "rank contributors",
+            "infer consensus",
+            "publish private issue text",
+            "retain contact for outreach or marketing"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories"
     },
     {
       "scenario_id": "SC05",
@@ -840,26 +1343,133 @@
         "single_contact_channel_only_if_referral_requested"
       ],
       "no_personal_data_required": false,
-      "personal_data_condition_zh": "浏览、咨询和纸面匹配可不留个人数据；只有用户请求具体引荐时才可能需要单一联系方式，合法依据、控制者、告知与期限须先经法律复核。",
-      "personal_data_condition_en": "Browsing, consultation, and paper matching can use no personal data. Only a user-requested referral may need one contact channel, and legal basis, controller, notice, and retention must pass legal review first.",
       "notice_zh": "AI 只给候选与理由，不批准引荐、岗位、资金、采购、空间、资格或背书；可拒绝 AI 并直接找人工顾问。",
       "notice_en": "AI supplies candidates and reasons only; it does not approve referral, employment, capital, procurement, space, eligibility, or endorsement. A user may refuse AI and go directly to a human adviser.",
       "controller_status": "unknown",
       "operator_roles": [
-        "research_translation",
-        "human_adviser",
-        "data_governance"
+        "scenario_service_owner",
+        "on_site_host",
+        "data_steward"
       ],
-      "human_decision": "refer, do not refer, request correction, or return to non-AI service",
-      "retention_override": "delete summary and contact after referral/refusal/correction closure under the written pre-open schedule; retain non-personal mismatch classes only",
+      "human_decision": {
+        "zh": "引荐、不引荐、要求纠正或回到非 AI 服务",
+        "en": "refer, do not refer, request correction, or return to non-AI service"
+      },
+      "retention_override": {
+        "zh": "按开放前书面计划在引荐、拒绝或纠正闭环后删除摘要与联系信息；只留非个人误配类别",
+        "en": "delete summary and contact after referral/refusal/correction closure under the written pre-open schedule; retain non-personal mismatch classes only"
+      },
       "remote_boundary": "local_separated_store_and_local_matching_by_default",
-      "prohibited_use": [
-        "automated eligibility or opportunity allocation",
-        "full-CV harvesting",
-        "sensitive or commercial-secret inference",
-        "reuse for recruitment, marketing, or model training"
+      "prohibited_use": {
+        "zh": [
+          "自动决定机会或资格",
+          "收集完整简历",
+          "推断敏感或商业秘密",
+          "用于招聘、营销或训练"
+        ],
+        "en": [
+          "automated eligibility or opportunity allocation",
+          "full-CV harvesting",
+          "sensitive or commercial-secret inference",
+          "reuse for recruitment, marketing, or model training"
+        ]
+      },
+      "evidence_status": "requires_legal_review",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "personal_data",
+        "model_inference_scoring",
+        "logs_appeal_materials"
       ],
-      "evidence_status": "requires_legal_review"
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "scenario_service_owner",
+          "on_site_host",
+          "data_steward"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "按开放前书面计划在引荐、拒绝或纠正闭环后删除摘要与联系信息；只留非个人误配类别",
+          "en": "delete summary and contact after referral/refusal/correction closure under the written pre-open schedule; retain non-personal mismatch classes only"
+        },
+        "local_remote_boundary": {
+          "mode": "local_separated_store_and_local_matching_by_default",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "自动决定机会或资格",
+            "收集完整简历",
+            "推断敏感或商业秘密",
+            "用于招聘、营销或训练"
+          ],
+          "en": [
+            "automated eligibility or opportunity allocation",
+            "full-CV harvesting",
+            "sensitive or commercial-secret inference",
+            "reuse for recruitment, marketing, or model training"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories",
+      "conditional_personal_data": {
+        "status": "requires_legal_review",
+        "core_service_requirement": "not_required",
+        "condition_zh": "仅用户请求具体引荐",
+        "condition_en": "only for a user-requested referral",
+        "minimum_fields_zh": [
+          "单一联系渠道"
+        ],
+        "minimum_fields_en": [
+          "one contact channel"
+        ],
+        "controller_status": "unknown",
+        "activation_prerequisites_zh": [
+          "具名控制者",
+          "目的与合法依据",
+          "前台告知",
+          "最小字段",
+          "访问与期限",
+          "退出与删除"
+        ],
+        "activation_prerequisites_en": [
+          "named controller",
+          "purpose and lawful basis",
+          "frontstage notice",
+          "minimum fields",
+          "access and term",
+          "exit and deletion"
+        ],
+        "not_claimed_zh": "不宣称已完成法律审查、已获同意或已启用该路径。",
+        "not_claimed_en": "No completed legal review, obtained consent, or activated path is claimed."
+      }
     },
     {
       "scenario_id": "SC06",
@@ -888,25 +1498,131 @@
         "single_contact_channel_only_if_confirmation_requested"
       ],
       "no_personal_data_required": false,
-      "personal_data_condition_zh": "公开空闲查询和纸面排程不需要个人数据；需要预约确认时，单一联系方式和处理依据须经法律复核。",
-      "personal_data_condition_en": "Public availability lookup and paper scheduling need no personal data. When booking confirmation is requested, one contact channel and its processing basis require legal review.",
       "notice_zh": "AI 不决定资格或优先级；权限冲突、设备条件不明或拒绝 AI 时退回人工表格。",
       "notice_en": "AI does not decide eligibility or priority. Permission conflict, unknown equipment condition, or refusal of AI returns the request to a manual sheet.",
       "controller_status": "unknown",
       "operator_roles": [
-        "facility_administrator",
-        "service_staff"
+        "facilities_maintenance",
+        "scenario_service_owner"
       ],
-      "human_decision": "approve, reschedule, reject with reason, or use manual sheet",
-      "retention_override": "delete booking contact and request detail after completion/cancellation and dispute closure; retain non-personal slot utilization aggregate only",
+      "human_decision": {
+        "zh": "批准、改期、说明理由后拒绝或改用人工表格",
+        "en": "approve, reschedule, reject with reason, or use manual sheet"
+      },
+      "retention_override": {
+        "zh": "完成、取消与争议闭环后删除预约联系和请求细节；只留非个人时段利用汇总",
+        "en": "delete booking contact and request detail after completion/cancellation and dispute closure; retain non-personal slot utilization aggregate only"
+      },
       "remote_boundary": "local_schedule_store_by_default",
-      "prohibited_use": [
-        "priority based on protected or inferred traits",
-        "attendance or worker-performance profiling",
-        "automated approval",
-        "unannounced calendar or contact reuse"
+      "prohibited_use": {
+        "zh": [
+          "按受保护或推断特征排序",
+          "出勤或员工绩效画像",
+          "自动批准",
+          "未告知复用日历或联系信息"
+        ],
+        "en": [
+          "priority based on protected or inferred traits",
+          "attendance or worker-performance profiling",
+          "automated approval",
+          "unannounced calendar or contact reuse"
+        ]
+      },
+      "evidence_status": "requires_legal_review",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "personal_data",
+        "model_inference_scoring",
+        "logs_appeal_materials"
       ],
-      "evidence_status": "requires_legal_review"
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "facilities_maintenance",
+          "scenario_service_owner"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "完成、取消与争议闭环后删除预约联系和请求细节；只留非个人时段利用汇总",
+          "en": "delete booking contact and request detail after completion/cancellation and dispute closure; retain non-personal slot utilization aggregate only"
+        },
+        "local_remote_boundary": {
+          "mode": "local_schedule_store_by_default",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "按受保护或推断特征排序",
+            "出勤或员工绩效画像",
+            "自动批准",
+            "未告知复用日历或联系信息"
+          ],
+          "en": [
+            "priority based on protected or inferred traits",
+            "attendance or worker-performance profiling",
+            "automated approval",
+            "unannounced calendar or contact reuse"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories",
+      "conditional_personal_data": {
+        "status": "requires_legal_review",
+        "core_service_requirement": "not_required",
+        "condition_zh": "仅预约确认",
+        "condition_en": "only for booking confirmation",
+        "minimum_fields_zh": [
+          "单一联系渠道"
+        ],
+        "minimum_fields_en": [
+          "one contact channel"
+        ],
+        "controller_status": "unknown",
+        "activation_prerequisites_zh": [
+          "具名控制者",
+          "目的与合法依据",
+          "前台告知",
+          "最小字段",
+          "访问与期限",
+          "退出与删除"
+        ],
+        "activation_prerequisites_en": [
+          "named controller",
+          "purpose and lawful basis",
+          "frontstage notice",
+          "minimum fields",
+          "access and term",
+          "exit and deletion"
+        ],
+        "not_claimed_zh": "不宣称已完成法律审查、已获同意或已启用该路径。",
+        "not_claimed_en": "No completed legal review, obtained consent, or activated path is claimed."
+      }
     },
     {
       "scenario_id": "SC07",
@@ -933,26 +1649,132 @@
         "human_transfer_or_correction_state"
       ],
       "no_personal_data_required": true,
-      "conditional_personal_data": "one contact channel may be accepted only for a user-requested human callback after legal review; no saved preference profile by default",
+      "conditional_personal_data": {
+        "status": "requires_legal_review",
+        "core_service_requirement": "not_required",
+        "condition_zh": "仅用户请求人工回访",
+        "condition_en": "only for a user-requested human callback",
+        "minimum_fields_zh": [
+          "单一联系渠道"
+        ],
+        "minimum_fields_en": [
+          "one contact channel"
+        ],
+        "controller_status": "unknown",
+        "activation_prerequisites_zh": [
+          "具名控制者",
+          "目的与合法依据",
+          "前台告知",
+          "最小字段",
+          "访问与期限",
+          "退出与删除"
+        ],
+        "activation_prerequisites_en": [
+          "named controller",
+          "purpose and lawful basis",
+          "frontstage notice",
+          "minimum fields",
+          "access and term",
+          "exit and deletion"
+        ],
+        "not_claimed_zh": "不宣称已完成法律审查、已获同意或已启用该路径。",
+        "not_claimed_en": "No completed legal review, obtained consent, or activated path is claimed."
+      },
       "notice_zh": "无需登录或持续画像；结果不是福利、居住、教育、就业、医疗或其他资格决定，过期、歧视或无人维护即暂停。",
       "notice_en": "No login or persistent profile is required. Results are not eligibility decisions for benefits, housing, education, employment, medical care, or any other service; stale, discriminatory, or unmaintained results pause the service.",
       "controller_status": "unknown",
       "operator_roles": [
-        "talent_service_staff",
-        "content_maintenance",
-        "human_transfer_role"
+        "on_site_host",
+        "rights_content_reviewer"
       ],
-      "human_decision": "explain, correct, transfer, or pause",
-      "retention_override": "do not persist session choices; delete optional callback contact after transfer and reply closure",
+      "human_decision": {
+        "zh": "解释、更正、转接或暂停",
+        "en": "explain, correct, transfer, or pause"
+      },
+      "retention_override": {
+        "zh": "不保存会话选择；人工回访与回复闭环后删除可选联系信息",
+        "en": "do not persist session choices; delete optional callback contact after transfer and reply closure"
+      },
       "remote_boundary": "session_local_by_default",
-      "prohibited_use": [
-        "eligibility determination",
-        "sensitive-needs inference",
-        "persistent lifestyle profile",
-        "advertising or recruitment reuse"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "资格决定",
+          "敏感需求推断",
+          "持久生活画像",
+          "广告或招聘复用"
+        ],
+        "en": [
+          "eligibility determination",
+          "sensitive-needs inference",
+          "persistent lifestyle profile",
+          "advertising or recruitment reuse"
+        ]
+      },
       "evidence_status": "design-target",
-      "legal_review_status": "requires_legal_review"
+      "legal_review_status": "requires_legal_review",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "personal_data",
+        "model_inference_scoring",
+        "logs_appeal_materials"
+      ],
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "on_site_host",
+          "rights_content_reviewer"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "不保存会话选择；人工回访与回复闭环后删除可选联系信息",
+          "en": "do not persist session choices; delete optional callback contact after transfer and reply closure"
+        },
+        "local_remote_boundary": {
+          "mode": "session_local_by_default",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "资格决定",
+            "敏感需求推断",
+            "持久生活画像",
+            "广告或招聘复用"
+          ],
+          "en": [
+            "eligibility determination",
+            "sensitive-needs inference",
+            "persistent lifestyle profile",
+            "advertising or recruitment reuse"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories"
     },
     {
       "scenario_id": "SC08",
@@ -984,21 +1806,98 @@
       "notice_en": "No name, diagnosis, or disability category is required. Origin and destination are used only for the current route and do not form location history. If the field accessibility audit is incomplete or human help is unreachable, close AI routing and offer a paper map or human escort.",
       "controller_status": "unknown",
       "operator_roles": [
-        "accessibility_service_point",
-        "route_maintenance",
-        "human_escort"
+        "accessibility_lead",
+        "on_site_host",
+        "facilities_maintenance"
       ],
-      "human_decision": "verify route, close route, select fallback, or escort",
-      "retention_override": "do not retain origin-destination or route choice after the session; keep only non-personal barrier and closure records",
+      "human_decision": {
+        "zh": "核验路线、关闭路线、选择替代或陪同",
+        "en": "verify route, close route, select fallback, or escort"
+      },
+      "retention_override": {
+        "zh": "会话后不保留起终点或路线选择；只留非个人障碍与关闭记录",
+        "en": "do not retain origin-destination or route choice after the session; keep only non-personal barrier and closure records"
+      },
       "remote_boundary": "on_device_or_site_local_by_default",
-      "prohibited_use": [
-        "continuous location tracking",
-        "disability inference",
-        "claim surveyed accessibility before field audit",
-        "route output when human help and fallback are unreachable"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "持续位置追踪",
+          "残障推断",
+          "现场审计前宣称已测无障碍",
+          "人工帮助和替代不可达仍给路线"
+        ],
+        "en": [
+          "continuous location tracking",
+          "disability inference",
+          "claim surveyed accessibility before field audit",
+          "route output when human help and fallback are unreachable"
+        ]
+      },
       "evidence_status": "design-target",
-      "field_evidence_status": "unknown"
+      "field_evidence_status": "unknown",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "model_inference_scoring",
+        "logs_appeal_materials"
+      ],
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "accessibility_lead",
+          "on_site_host",
+          "facilities_maintenance"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "会话后不保留起终点或路线选择；只留非个人障碍与关闭记录",
+          "en": "do not retain origin-destination or route choice after the session; keep only non-personal barrier and closure records"
+        },
+        "local_remote_boundary": {
+          "mode": "on_device_or_site_local_by_default",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "持续位置追踪",
+            "残障推断",
+            "现场审计前宣称已测无障碍",
+            "人工帮助和替代不可达仍给路线"
+          ],
+          "en": [
+            "continuous location tracking",
+            "disability inference",
+            "claim surveyed accessibility before field audit",
+            "route output when human help and fallback are unreachable"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories"
     },
     {
       "scenario_id": "SC09",
@@ -1029,18 +1928,91 @@
       "notice_en": "No login, identity, or journey history is required. Information is not transport dispatch, emergency command, or on-site accessibility certification.",
       "controller_status": "unknown",
       "operator_roles": [
-        "on_site_information_role",
-        "transport_content_reviewer"
+        "on_site_host",
+        "rights_content_reviewer"
       ],
-      "human_decision": "confirm, correct, switch to static map, or close",
-      "retention_override": "retain source version and non-personal correction events; do not retain user route queries",
+      "human_decision": {
+        "zh": "确认、更正、切换静态图或关闭",
+        "en": "confirm, correct, switch to static map, or close"
+      },
+      "retention_override": {
+        "zh": "保留来源版本与非个人更正事件；不保留用户路线查询",
+        "en": "retain source version and non-personal correction events; do not retain user route queries"
+      },
       "remote_boundary": "local_content_snapshot_by_default",
-      "prohibited_use": [
-        "movement profiling",
-        "automated emergency instruction",
-        "present stale or unverified transport data as live fact"
+      "prohibited_use": {
+        "zh": [
+          "移动画像",
+          "自动应急指令",
+          "把过期或未核验交通数据当实时事实"
+        ],
+        "en": [
+          "movement profiling",
+          "automated emergency instruction",
+          "present stale or unverified transport data as live fact"
+        ]
+      },
+      "evidence_status": "design-target",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "model_inference_scoring",
+        "logs_appeal_materials"
       ],
-      "evidence_status": "design-target"
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "on_site_host",
+          "rights_content_reviewer"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "保留来源版本与非个人更正事件；不保留用户路线查询",
+          "en": "retain source version and non-personal correction events; do not retain user route queries"
+        },
+        "local_remote_boundary": {
+          "mode": "local_content_snapshot_by_default",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "移动画像",
+            "自动应急指令",
+            "把过期或未核验交通数据当实时事实"
+          ],
+          "en": [
+            "movement profiling",
+            "automated emergency instruction",
+            "present stale or unverified transport data as live fact"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories"
     },
     {
       "scenario_id": "SC10",
@@ -1070,28 +2042,138 @@
         "stop_or_removal_evidence"
       ],
       "no_personal_data_required": true,
-      "conditional_personal_data": "one contact channel may be accepted only for a requested complaint reply after legal review; product-specific personal-data processing is outside the current first-use contract until separately reviewed and approved",
+      "conditional_personal_data": {
+        "status": "requires_legal_review",
+        "core_service_requirement": "not_required",
+        "condition_zh": "仅用户请求投诉回复；不含产品自身个人数据处理",
+        "condition_en": "only for a requested complaint reply; product-specific processing is outside this contract",
+        "minimum_fields_zh": [
+          "单一联系渠道"
+        ],
+        "minimum_fields_en": [
+          "one contact channel"
+        ],
+        "controller_status": "unknown",
+        "activation_prerequisites_zh": [
+          "具名控制者",
+          "目的与合法依据",
+          "前台告知",
+          "最小字段",
+          "访问与期限",
+          "退出与删除"
+        ],
+        "activation_prerequisites_en": [
+          "named controller",
+          "purpose and lawful basis",
+          "frontstage notice",
+          "minimum fields",
+          "access and term",
+          "exit and deletion"
+        ],
+        "not_claimed_zh": "不宣称已完成法律审查、已获同意或已启用该路径。",
+        "not_claimed_en": "No completed legal review, obtained consent, or activated path is claimed."
+      },
       "notice_zh": "不需要个人数据；不得输入人脸、身份、敏感材料或第三方秘密。AI 不自动购买、定价、授信、批准、惩戒或改变权利；可随时退出并改听人工说明。",
       "notice_en": "No personal data required; do not submit faces, identity data, sensitive material, or third-party secrets. AI does not automate purchase, price, credit, approval, sanction, or rights changes. A visitor may exit at any time and use a human explanation.",
       "controller_status": "unknown",
       "operator_roles": [
-        "public_operations",
-        "consumer_rights",
         "on_site_host",
-        "complaint_handler"
+        "safety_professional",
+        "complaint_appeal_lead"
       ],
-      "human_decision": "open within written scope, take over, pause, stop, remove, archive, or consider reopen after retest",
-      "retention_override": "delete session prompts/outputs and optional reply contact after the trial or complaint window; retain only non-personal error classes, host decisions, complaint outcome, and removal proof",
+      "human_decision": {
+        "zh": "在书面范围内开放、接管、暂停、停止、撤场、归档或决定新实例预检",
+        "en": "open within written scope, take over, pause, stop, remove, archive, or consider reopen after retest"
+      },
+      "retention_override": {
+        "zh": "试验或投诉窗口后删除会话提示、输出和可选回复联系；只留非个人错误类别、主持决定、投诉结果与撤场证据",
+        "en": "delete session prompts/outputs and optional reply contact after the trial or complaint window; retain only non-personal error classes, host decisions, complaint outcome, and removal proof"
+      },
       "remote_boundary": "offline_or_local_demo_by_default_remote_product_calls_disabled_without_preflight_review",
-      "prohibited_use": [
-        "personal or sensitive prompts",
-        "hidden product telemetry",
-        "automatic purchase or consequential decision",
-        "feedback reuse for model training",
-        "pilot expansion beyond SC10+IM06"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "个人或敏感提示",
+          "隐藏产品遥测",
+          "自动购买或后果性决定",
+          "反馈用于训练",
+          "把首用扩张到 SC10+IM06 之外"
+        ],
+        "en": [
+          "personal or sensitive prompts",
+          "hidden product telemetry",
+          "automatic purchase or consequential decision",
+          "feedback reuse for model training",
+          "pilot expansion beyond SC10+IM06"
+        ]
+      },
       "evidence_status": "design-target",
-      "legal_and_product_review_status": "requires_legal_review"
+      "legal_and_product_review_status": "requires_legal_review",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "personal_data",
+        "model_inference_scoring",
+        "logs_appeal_materials"
+      ],
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "on_site_host",
+          "safety_professional",
+          "complaint_appeal_lead"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "试验或投诉窗口后删除会话提示、输出和可选回复联系；只留非个人错误类别、主持决定、投诉结果与撤场证据",
+          "en": "delete session prompts/outputs and optional reply contact after the trial or complaint window; retain only non-personal error classes, host decisions, complaint outcome, and removal proof"
+        },
+        "local_remote_boundary": {
+          "mode": "offline_or_local_demo_by_default_remote_product_calls_disabled_without_preflight_review",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "个人或敏感提示",
+            "隐藏产品遥测",
+            "自动购买或后果性决定",
+            "反馈用于训练",
+            "把首用扩张到 SC10+IM06 之外"
+          ],
+          "en": [
+            "personal or sensitive prompts",
+            "hidden product telemetry",
+            "automatic purchase or consequential decision",
+            "feedback reuse for model training",
+            "pilot expansion beyond SC10+IM06"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories"
     },
     {
       "scenario_id": "SC11",
@@ -1119,28 +2201,136 @@
         "correction_withdrawal_or_hide_state"
       ],
       "no_personal_data_required": false,
-      "personal_data_condition_zh": "清权档案共读无需新增个人数据；任何可识别口述贡献在采集前必须确定控制者、许可／合法依据、展示范围、撤回和删除规则并完成法律与权利复核。当前不宣称已取得同意。",
-      "personal_data_condition_en": "Co-reading cleared archives needs no new personal data. Before any identifiable oral contribution is collected, controller, permission/legal basis, display scope, withdrawal, and deletion rules must be determined and pass legal and rights review. No consent is claimed as already obtained.",
       "notice_zh": "AI 转译不是史实裁决；贡献者可选匿名、假名或署名并提出更正／撤回。敏感内容不进入模型或展示。",
       "notice_en": "AI translation is not a historical ruling. A contributor may choose anonymous, pseudonymous, or attributed participation and request correction/withdrawal. Sensitive content does not enter the model or display.",
       "controller_status": "unknown",
       "operator_roles": [
-        "history_reviewer",
-        "rights_reviewer",
-        "translator",
-        "content_maintenance"
+        "rights_content_reviewer",
+        "data_steward"
       ],
-      "human_decision": "approve excerpt, correct, redact, hide, take down, or delete",
-      "retention_override": "retain cleared public archive records under their rights; retain oral excerpts only within a reviewed use window and delete/hide on withdrawal or unresolved dispute as applicable",
+      "human_decision": {
+        "zh": "批准摘录、更正、遮蔽、隐藏、下架或删除",
+        "en": "approve excerpt, correct, redact, hide, take down, or delete"
+      },
+      "retention_override": {
+        "zh": "清权档案按其权利保留；口述摘录只在获复核使用窗口保留，撤回或争议时删除/隐藏",
+        "en": "retain cleared public archive records under their rights; retain oral excerpts only within a reviewed use window and delete/hide on withdrawal or unresolved dispute as applicable"
+      },
       "remote_boundary": "local_rights_controlled_archive_by_default",
-      "prohibited_use": [
-        "speaker emotion, ethnicity, politics, health, or vulnerability inference",
-        "voiceprint or face recognition",
-        "public display beyond permission",
-        "treat AI output as historical fact"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "推断情绪、族群、政治、健康或脆弱性",
+          "声纹或人脸识别",
+          "超出许可公开展示",
+          "把 AI 输出当史实"
+        ],
+        "en": [
+          "speaker emotion, ethnicity, politics, health, or vulnerability inference",
+          "voiceprint or face recognition",
+          "public display beyond permission",
+          "treat AI output as historical fact"
+        ]
+      },
       "evidence_status": "requires_legal_review",
-      "rights_and_professional_review_status": "requires_legal_review"
+      "rights_and_professional_review_status": "requires_legal_review",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "personal_data",
+        "model_inference_scoring",
+        "logs_appeal_materials"
+      ],
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "rights_content_reviewer",
+          "data_steward"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "清权档案按其权利保留；口述摘录只在获复核使用窗口保留，撤回或争议时删除/隐藏",
+          "en": "retain cleared public archive records under their rights; retain oral excerpts only within a reviewed use window and delete/hide on withdrawal or unresolved dispute as applicable"
+        },
+        "local_remote_boundary": {
+          "mode": "local_rights_controlled_archive_by_default",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "推断情绪、族群、政治、健康或脆弱性",
+            "声纹或人脸识别",
+            "超出许可公开展示",
+            "把 AI 输出当史实"
+          ],
+          "en": [
+            "speaker emotion, ethnicity, politics, health, or vulnerability inference",
+            "voiceprint or face recognition",
+            "public display beyond permission",
+            "treat AI output as historical fact"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories",
+      "conditional_personal_data": {
+        "status": "requires_legal_review",
+        "core_service_requirement": "not_required",
+        "condition_zh": "仅可识别口述贡献；采集前须确定控制者、许可/合法依据、展示范围、撤回与删除",
+        "condition_en": "only for an identifiable oral contribution after controller, permission/legal basis, display scope, withdrawal, and deletion are determined",
+        "minimum_fields_zh": [
+          "获准身份或署名",
+          "获准口述摘录",
+          "许可与撤回记录"
+        ],
+        "minimum_fields_en": [
+          "authorized identity or attribution",
+          "authorized oral excerpt",
+          "permission and withdrawal record"
+        ],
+        "controller_status": "unknown",
+        "activation_prerequisites_zh": [
+          "具名控制者",
+          "目的与合法依据",
+          "前台告知",
+          "最小字段",
+          "访问与期限",
+          "退出与删除"
+        ],
+        "activation_prerequisites_en": [
+          "named controller",
+          "purpose and lawful basis",
+          "frontstage notice",
+          "minimum fields",
+          "access and term",
+          "exit and deletion"
+        ],
+        "not_claimed_zh": "不宣称已完成法律审查、已获同意或已启用该路径。",
+        "not_claimed_en": "No completed legal review, obtained consent, or activated path is claimed."
+      }
     },
     {
       "scenario_id": "SC12",
@@ -1168,27 +2358,134 @@
         "correction_or_degrade_state"
       ],
       "no_personal_data_required": true,
-      "conditional_personal_data": "one contact channel may be accepted only when a user requests a human reply and after legal review; high-risk personal narratives should be moved directly to a human without entering the AI log",
+      "conditional_personal_data": {
+        "status": "requires_legal_review",
+        "core_service_requirement": "not_required",
+        "condition_zh": "仅用户请求人工回复；高风险个人叙事直接转人工且不进入 AI 日志",
+        "condition_en": "only for a requested human reply; high-risk personal narratives transfer directly to a human and do not enter the AI log",
+        "minimum_fields_zh": [
+          "单一联系渠道"
+        ],
+        "minimum_fields_en": [
+          "one contact channel"
+        ],
+        "controller_status": "unknown",
+        "activation_prerequisites_zh": [
+          "具名控制者",
+          "目的与合法依据",
+          "前台告知",
+          "最小字段",
+          "访问与期限",
+          "退出与删除"
+        ],
+        "activation_prerequisites_en": [
+          "named controller",
+          "purpose and lawful basis",
+          "frontstage notice",
+          "minimum fields",
+          "access and term",
+          "exit and deletion"
+        ],
+        "not_claimed_zh": "不宣称已完成法律审查、已获同意或已启用该路径。",
+        "not_claimed_en": "No completed legal review, obtained consent, or activated path is claimed."
+      },
       "notice_zh": "无需登录或个人数据；不替代法律、医疗、消防、应急、交通调度或其他专业结论。可拒绝 AI，直接使用柜台或人工转接。",
       "notice_en": "No login or personal data required. The service does not replace legal, medical, fire, emergency, transport-dispatch, or other professional conclusions. A user may refuse AI and use the counter or human transfer directly.",
       "controller_status": "unknown",
       "operator_roles": [
-        "public_service_role",
-        "content_maintenance",
-        "human_transfer_role",
-        "complaint_handler"
+        "on_site_host",
+        "safety_professional",
+        "accessibility_lead"
       ],
-      "human_decision": "answer manually, transfer, correct, degrade, pause, or stop",
-      "retention_override": "do not retain question text by default; keep only non-personal question class, source version, transfer reachability, and correction events",
+      "human_decision": {
+        "zh": "人工回答、转接、更正、降级、暂停或停止",
+        "en": "answer manually, transfer, correct, degrade, pause, or stop"
+      },
+      "retention_override": {
+        "zh": "默认不保留问题文本；只留非个人问题类别、来源版本、转接可达和更正事件",
+        "en": "do not retain question text by default; keep only non-personal question class, source version, transfer reachability, and correction events"
+      },
       "remote_boundary": "local_faq_snapshot_and_local_routing_by_default",
-      "prohibited_use": [
-        "professional diagnosis or approval",
-        "user profiling",
-        "store sensitive narratives",
-        "continue high-risk answers when human transfer is unavailable"
-      ],
+      "prohibited_use": {
+        "zh": [
+          "专业诊断或批准",
+          "用户画像",
+          "保存敏感叙事",
+          "人工转接不可达仍继续高风险答案"
+        ],
+        "en": [
+          "professional diagnosis or approval",
+          "user profiling",
+          "store sensitive narratives",
+          "continue high-risk answers when human transfer is unavailable"
+        ]
+      },
       "evidence_status": "design-target",
-      "public_source_evidence_status": "documented"
+      "public_source_evidence_status": "documented",
+      "inherits_data_category_controls": [
+        "public_repository_evidence",
+        "operational_non_personal",
+        "personal_data",
+        "model_inference_scoring",
+        "logs_appeal_materials"
+      ],
+      "control_overrides": {
+        "collector_role_keys": [
+          "data_steward"
+        ],
+        "controller_role_key": "scenario_service_owner",
+        "controller_status": "unknown",
+        "operator_role_keys": [
+          "on_site_host",
+          "safety_professional",
+          "accessibility_lead"
+        ],
+        "access": {
+          "zh": "仅具名责任席位按场景目的和最小必要范围访问。",
+          "en": "Only named accountable roles access data within scenario purpose and minimum necessity."
+        },
+        "retention_deletion": {
+          "zh": "默认不保留问题文本；只留非个人问题类别、来源版本、转接可达和更正事件",
+          "en": "do not retain question text by default; keep only non-personal question class, source version, transfer reachability, and correction events"
+        },
+        "local_remote_boundary": {
+          "mode": "local_faq_snapshot_and_local_routing_by_default",
+          "zh": "默认本地或离线；远程能力须书面数据流、安全与法律复核。",
+          "en": "Local or offline by default; remote capability requires a written data flow, security review, and legal review."
+        },
+        "audit": {
+          "fields": [
+            "scenario_id",
+            "purpose",
+            "role",
+            "access_event",
+            "state_transition",
+            "complaint_ref",
+            "retention_or_deletion_action"
+          ],
+          "trigger_zh": "输入、访问、版本、状态、投诉、权利或删除变化。",
+          "trigger_en": "Input, access, version, state, complaint, rights, or deletion change."
+        },
+        "appeal": {
+          "zh": "非 AI 入口→回执→独立人工复核→结果告知→可由不同人员再申诉。",
+          "en": "Non-AI entry -> receipt -> independent human review -> outcome notice -> re-appeal to a different person."
+        },
+        "prohibited_use": {
+          "zh": [
+            "专业诊断或批准",
+            "用户画像",
+            "保存敏感叙事",
+            "人工转接不可达仍继续高风险答案"
+          ],
+          "en": [
+            "professional diagnosis or approval",
+            "user profiling",
+            "store sensitive narratives",
+            "continue high-risk answers when human transfer is unavailable"
+          ]
+        }
+      },
+      "data_governance_contract_ref": "phase3-data-governance.json#/data_categories"
     }
   ],
   "protected_user_equivalence": [
@@ -1457,5 +2754,6 @@
       "status": "requires_legal_review",
       "resolution_gate": "item-level rights, permission/legal basis, display scope, correction, withdrawal, and deletion review before collection"
     }
-  ]
+  ],
+  "role_registry_ref": "phase3-protocol-contracts.json#/role_registry"
 }

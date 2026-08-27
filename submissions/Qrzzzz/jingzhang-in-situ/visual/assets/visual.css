@@ -8,4 +8,9 @@
 
 .protocol-index{max-width:1100px;margin:0 0 2.5rem;padding:1.3rem 1.5rem;background:var(--paper);border-left:6px solid var(--orange)}
 .protocol-index h2{margin:.1rem 0 .7rem}.protocol-index .provisional{color:var(--muted)}.protocol-index a{color:var(--teal);font-weight:700}
+.board:is(#scenario-matrix,#operations-pathway){grid-column:1/-1}
+.protocol-original{display:block;position:relative;color:var(--ink);text-decoration:none}
+.protocol-original span{position:absolute;right:1rem;bottom:1rem;padding:.55rem .75rem;background:rgba(255,255,255,.94);border:2px solid var(--ink);font-weight:800}
+.protocol-board-summary{padding:1rem 1.2rem;border-top:1px solid var(--line);background:#f7f2e8;font-size:1rem}
+.protocol-original:focus-visible{outline:5px solid var(--focus);outline-offset:4px}
 @media(max-width:390px){.protocol-index{padding:1rem}}

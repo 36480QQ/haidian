@@ -2,6 +2,7 @@
   "schema_version": "phase3-governance-generation-contract-v1",
   "authority": {
     "phase2_frozen_head": "554979e4bc66f21fbdf53e4cde85ed94afe4421c",
+    "phase2_equivalent_rebased_parent": "2264c782d96f57f3ae95f0a6458f5e03e3112b42",
     "phase3_scope": "protocols, governance, Human Takeover, red-team, F08/F11, bilingual HTML, and PDFs only",
     "spatial_evidence_changed": false,
     "pdf_reproducibility": {
@@ -22,11 +23,11 @@
     }
   },
   "input_sha256": {
-    "visual/assets/phase3-protocol-contracts.json": "29bcccc415ac3aba4aee6c582080f78cd11ff88eb6da7cea6cb4789c505aa3f6",
-    "visual/assets/phase3-data-governance.json": "bfab1c627b7e17f1718724342ee9caeb40b73f8df85557c8845d85edf792e584",
-    "visual/assets/phase3-red-team.json": "708a309db8a8c300540e67057cf2611c350bcf34eeb71870cab49e69f9b0f1a5",
-    "visual/assets/phase3-delta.json": "8b690631f7a39012db595a4107e596ce0c92220d6a299b30853316daad702ce7",
-    "visual/assets/phase3-governance-generator-source.json": "e54ccd2ccb171356486add6aecd9d2529e5725b45ec2136f47dbcf4a7866869b",
+    "visual/assets/phase3-protocol-contracts.json": "5cd87aa06b7a4248e8f2fd358571ff8373c4166298e6010e536bbb10629cf606",
+    "visual/assets/phase3-data-governance.json": "2dfd4d0c2ee0f1dff0fe2ee186fa8fe997d7de69a088d838914d56470df0bc35",
+    "visual/assets/phase3-red-team.json": "58f607dc7971dc25c1674b186de576d11a1240038ac08ec3c3558e9ec64a2c4d",
+    "visual/assets/phase3-delta.json": "066151b006917b02c914817b456476f06cc15847f57e28e0c3e100c01a808624",
+    "visual/assets/phase3-governance-generator-source.json": "86c1d21967063ded2f5767ab62da1511d83a47d38d633eaa74826d2d6251ff1c",
     "visual/assets/rebuild-visuals-source.json": "b0033d2e4cf3f49f0672dfb8ea25b9e9552becbefcf93d1c5b26b798907b0175"
   },
   "protected_sha256_before": {
@@ -88,19 +89,19 @@
     "geometry/site_boundary.geojson": "a3ff9ef96c4ac626044a40b794e7868c2a3e4dafed466ed84665916ba31156fb"
   },
   "output_sha256": {
-    "assets/figures/scenario-matrix.png": "bb2628c2120c50407340b23458a96701b7956ab5510007882e748d1623efd84d",
-    "assets/figures/scenario-matrix.en.png": "02d40a3893cfd1c7cf54d9f53a67da55259f4e07d2d6325976df002e1b1cf3d6",
-    "assets/figures/operations-pathway.png": "8ce08a70219df139986285dab3d264bbea090c62b2aed91ed93e131e8ae6b568",
-    "assets/figures/operations-pathway.en.png": "2265c8e8da4412fb31bcd23d992bfd7964ef364823805f8bbb37d1496a352c46",
-    "visual/index.html": "e7c88f5ce1f4dd7eb027a32a585848b984a113df2f3087b0e2ef72bcae327461",
-    "visual/index.en.html": "0455740bbb7e91f8fa1a1caef812a0c7b348c08e9dab91dd6c0aee022332b1f3",
-    "visual/assets/font-subset.css": "506d0f44d0e73f3d30e352ea7d34ee22b65e30e7f89b2478fcd0f1713931c545",
-    "visual/assets/visual.css": "a5235f04dd4643dff6ef7d8594ec382c612f7ff0be6f254b18c7ed6e5fda961b",
+    "assets/figures/scenario-matrix.png": "aaf483eb87332c30ed624e630108ade4ba6885c46702449a3f6dad6fabf85747",
+    "assets/figures/scenario-matrix.en.png": "ea07fda8815c88827b189662189a78c980033f095c67681d27253baff7f369fc",
+    "assets/figures/operations-pathway.png": "d96c5fa99b292b4daffa9a18aac51d6382d280b927a6ecdc17de54df2ae229f7",
+    "assets/figures/operations-pathway.en.png": "ecae07fd231953994537393c341b6ebddfd728291e939958de3193990d57637f",
+    "visual/index.html": "8dd5b821c81e9ea9536d152aad0ae7bd7aa760214d02ced9c7218695b0ce0315",
+    "visual/index.en.html": "0a3c6b421ec45bf69ab3514ab0791a0289ea48c063c1045fd733e92c7aec40d0",
+    "visual/assets/font-subset.css": "3020256ac4ca4286735fcda6e0dfa212077c59477bfa837c525433acd6fcfc04",
+    "visual/assets/visual.css": "bbc2d45c8645c6c182027f6ee4efe77f0139f1e157b51eb312e8bd39466a929d",
     "visual/assets/visual.js": "76acfd4dd172e7521547db827f594cc2d1158a66933b227586ff5836cbd5bc7f",
-    "drawings/a3-booklet.pdf": "88a4b7a08482c64cd383ae1c6f19fadd7969c098a0c593590f54d43bf91f0449",
-    "drawings/a3-booklet.en.pdf": "ce3c9a9277a72afefe57f08ad009862a1e39f2adaaca9921b128eb32366dafd3",
-    "drawings/a0-boards.pdf": "ef0d64c4a7acead5bc177ac18f22643504dc57e6a7789c6e7c28b7d5bd4cd50d",
-    "drawings/a0-boards.en.pdf": "0cf782f1c56c78ae633ef002dcc50abad93feca1e77c29e22cbf73b53e5df72f"
+    "drawings/a3-booklet.pdf": "825ed665e6d7427007cbe8c56681adbd3b58936952ecd94a56831296707f1191",
+    "drawings/a3-booklet.en.pdf": "4a1d583ed0b6cbaa3a9c7c465d4ce521c86a3323afd3d2f3806df008d7b26150",
+    "drawings/a0-boards.pdf": "49b3261a3bb31b2ec7bcbb7291751c757729fc5299ee941bd96223dd0a7d0fc9",
+    "drawings/a0-boards.en.pdf": "79e17ccd84e07c5f3da0d6487eab5f6ef3ed6ddedd0feefd32a63c13f5f8e3bf"
   },
   "consistency": {
     "scenario_ids": [
@@ -128,6 +129,8 @@
       "removed",
       "archive"
     ],
+    "state_transition_count": 15,
+    "canonical_role_count": 12,
     "flagships": [
       "SC01",
       "SC05",
@@ -138,6 +141,7 @@
     "scenario_governance_count": 12,
     "red_team_test_count": 16,
     "retained_fail_stop_unknown_count": 13,
+    "protocol_selector_count": 69,
     "protected_path_count": 27,
     "generated_output_count": 13
   },
