@@ -111,7 +111,7 @@ FAR、高度、密度、建筑规模和永久建设等待正式控规及逐栋�
 
 场景归属按逐 ID 冻结：众智园为 SC01、SC02、SC03、SC04；AI 原点为 SC05、SC06、SC07；大钟寺为 SC09、SC10、SC11。SC08 是整条在场脊柱的跨区无障碍支持，SC12 是三处原型共用的公共服务与人工转接支持，二者不归入任一连续编号片区。
 
-![F03 三重点区差异化原型与三地标](assets/figures/key-areas.png)
+![F03 场景归属：SC01—SC04 众智园，SC05—SC07 AI 原点，SC09—SC11 大钟寺；SC08 在场脊柱跨区支持，SC12 三处原型共用跨区支持](assets/figures/key-areas.png)
 
 ## AI 创新生态、人才画像与 AI+ 场景
 
@@ -154,7 +154,7 @@ FAR、高度、密度、建筑规模和永久建设等待正式控规及逐栋�
 
 F08 用同一 ID 索引 3 旗舰＋9 支持，不改变后台 SC01—SC12。[data:geometry/public_space.geojson#PUBLIC-001]
 
-![F08 三项旗舰、九项支持及责任合同](assets/figures/scenario-matrix.png)
+![F08 责任矩阵：SC01—SC04 众智园，SC05—SC07 AI 原点，SC09—SC11 大钟寺；SC08 在场脊柱跨区支持，SC12 三处原型共用跨区支持](assets/figures/scenario-matrix.png)
 
 ## 用地、建筑规模与拆改留方案
 

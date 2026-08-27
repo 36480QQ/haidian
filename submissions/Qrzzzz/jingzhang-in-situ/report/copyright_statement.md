@@ -56,7 +56,7 @@ F01—F11 均已由同一可复现流程重建；最终文件哈希由 `manifest
 | 精确路径 | 生成链 | 嵌入资产 | 许可与限制 | 状态 |
 |---|---|---|---|---|
 | `drawings/a3-booklet.pdf`; `drawings/a3-booklet.en.pdf`; `drawings/a0-boards.pdf`; `drawings/a0-boards.en.pdf` | 本地图件经固定的 ReportLab 5.0.0 排版输出 | 图件、文本和 Noto Sans SC PDF 子集字体 | ReportLab 为 BSD 类许可；四份 PDF 仅允许用页面尺寸、渲染像素、可读文本与嵌入字体链复核。Creation/Modification 元数据、trailer ID、对象顺序和压缩字节流可能随运行/平台变化，因此不声明 whole-file bit-for-bit 可复现 | `cleared`，仍须在任何重渲染后复查 |
-| `report/proposal.html`; `report/proposal.en.html`; `visual/index.html`; `visual/index.en.html` | 仓库/本地渲染脚本生成的离线 HTML | 本地图件、本地 CSS 和 `visual/assets/font-subset.css` 中的本地字体数据 | 不使用 CDN、远程脚本、远程地图瓦片、iframe 或远程字体；四份 HTML 均通过本地样式引用同一字体子集 | `cleared`，网络与缺字检查通过；双语语义仍按独立人工复核处理 |
+| `report/proposal.html`; `report/proposal.en.html`; `visual/index.html`; `visual/index.en.html` | 仓库/本地渲染脚本生成的离线 HTML | 本地图件、本地 CSS、`visual/assets/font-subset.css` 中的本地字体数据，以及复用 `assets/figures/identity-system.png` 的本地 favicon | 不使用 CDN、远程脚本、远程地图瓦片、iframe 或远程字体；四份 HTML 均显式声明本地 favicon，不产生隐式 `/favicon.ico` 请求 | `cleared`，网络、应用资源与缺字检查通过；双语语义仍按独立人工复核处理 |
 
 ## 6. 字体
 
@@ -67,7 +67,7 @@ F01—F11 均已由同一可复现流程重建；最终文件哈希由 `manifest
 - `visual/assets/font-subset.css`：包含两个本地 `@font-face` WOFF2 data URI；源为 Noto Sans SC 2.004，源文件 SHA-256 为 `d68bafcb48a2707749396aa12bbbd833cb70401f3a9a689fd2902c7e0d295964`，CSS SHA-256 由最终 manifest 记录。
 - `visual/assets/NotoSansSC-OFL-1.1.css`：在允许的离线资产格式内，以可直接阅读的版权注释随包提供上游字体版权声明与完整 SIL OFL 1.1 文本；该文件已纳入 manifest，不承担运行时样式。
 - PNG/PDF 使用从同一源文件固定化的静态字重；静态 TTF 不作为独立文件随包分发，PDF 中仅嵌入实际使用的子集。
-- 子集由 fontTools 4.63.0 与 Brotli 1.2.0 生成，图件由 Pillow 12.2.0 生成，PDF 由 ReportLab 5.0.0 生成；运行时不依赖操作系统字体。生成器在写文件前核对这些精确版本，不匹配即停止。
+- 子集由 fontTools 4.63.0 与 Brotli 1.2.0 生成，图件由 Pillow 12.2.0 生成，PDF 由 ReportLab 5.0.0 生成；运行时不依赖操作系统字体。生成器在写文件前核对这些精确版本，不匹配即停止。WOFF2 的复现合同是 glyph 集、Unicode cmap、字体名称/字重和渲染像素等价；fontTools/Brotli 的时间戳、表顺序和压缩字节可因版本或平台变化，因此不声明 WOFF2 whole-file SHA bit-for-bit 相等。
 
 Noto Sans SC 以 SIL OFL 1.1 许可使用、修改、嵌入和再分发；本节保留官方上游与许可证链接、源版本、源哈希、子集方法和限制。四份 HTML、全部 PNG 和四份 PDF 已核对为同一 Noto 字体链，未使用或分发 Microsoft YaHei。字体链状态为 `cleared`；任何源版本、字符集或生成工具变化都会触发重新核验。
 
@@ -79,8 +79,8 @@ Noto Sans SC 以 SIL OFL 1.1 许可使用、修改、嵌入和再分发；本节
 
 | 路径/工具 | 用途 | 许可证/权利边界 | 状态 |
 |---|---|---|---|
-| `scripts/render_proposal_html.py`; `scripts/scaffold_ai_submission.py` | 仓库 HTML/投稿脚手架与渲染流程 | 实时上游基线 `c44aa1054e471c46cca04753ac7ed018dae0666c`；`render_proposal_html.py` SHA-256 为 `fa19233623fb28466efca79da8e2f8109d54937abc41384ec375fd1126399dd8`；不把工具权利误写成输出内容许可 | `cleared` 作为生成证据；脚本本身不随投稿包重复分发 |
-| `visual/assets/rebuild-visuals-source.json` | 当前 F01—F11、PDF、visual HTML 与字体子集生成器的可审阅 Python 源码快照 | 因投稿白名单不接受 `.py`，以 JSON 的 `source` 字段随包分发并纳入 manifest；还原后的 Python 源 SHA-256 为 `6d8988056bb85cda22a056a3a163707d220452053cefd4719aaab605d4283815`。JSON 同时保存精确工具版本、字体哈希与 PDF 非确定性边界 | `cleared`；2026-08-27 重建后已复核，审阅者可直接提取并运行 |
+| `scripts/render_proposal_html.py`; `scripts/scaffold_ai_submission.py` | 仓库 HTML/投稿脚手架与渲染流程 | 实时上游基线 `70cd369cbb80d6b5da743422a3d0aa2d3a98e333`；`render_proposal_html.py` SHA-256 为 `fa19233623fb28466efca79da8e2f8109d54937abc41384ec375fd1126399dd8`；不把工具权利误写成输出内容许可 | `cleared` 作为生成证据；脚本本身不随投稿包重复分发 |
+| `visual/assets/rebuild-visuals-source.json` | 当前 F01—F11、PDF、visual HTML 与字体子集生成器的可审阅 Python 源码快照 | 因投稿白名单不接受 `.py`，以 JSON 的 `source` 字段随包分发并纳入 manifest；还原后的 Python 源 SHA-256 为 `54fdc9bf0241f4bb4f98420c408af8c9e43edf87c5d3c31ef67f71578aa0b8cf`。JSON 同时保存精确工具版本、字体哈希、F08 carrier 合同、Git blob/LF 字节域及 PDF/WOFF2 非 bit-exact 边界 | `cleared`；2026-08-27 重建后已复核，审阅者可直接提取并运行 |
 | Pillow 12.2.0 | PNG 绘制 | MIT-CMU 类许可；工具许可不改变输入数据或输出内容权利 | `cleared` |
 | ReportLab 5.0.0 | PDF 生成 | BSD 类许可；工具许可不替代嵌入字体权利，本包字体权利单列核验 | `cleared` |
 | fontTools 4.63.0 | 字体固定化与 WOFF2 子集 | MIT 类许可；输出继续受 Noto Sans SC 的 OFL 1.1 约束 | `cleared` |
@@ -94,6 +94,6 @@ Noto Sans SC 以 SIL OFL 1.1 许可使用、修改、嵌入和再分发；本节
 2. 核对 F01—F11 中英文实际文件名、生成输入、字体和输出哈希。
 3. 核对 `visual/assets/font-subset.css` 的 data-URI 子集、OFL 来源记录，并保持 HTML 网络请求为零。
 4. 用 PDF 字体检查工具确认四份 PDF 仅嵌入 Noto 子集，且许可证记录一致。
-5. 保留 Pillow、ReportLab、fontTools、Brotli 与随包渲染脚本证据；PDF 只按页面像素/版式/字体链复现，不宣称整文件字节一致；未完成权利核验的可选封面已移除。
+5. 保留 Pillow、ReportLab、fontTools、Brotli 与随包渲染脚本证据；PDF 只按页面像素/版式/字体链复现，WOFF2 只按 glyph/cmap/字体属性/渲染像素复现，均不宣称整文件字节一致；未完成权利核验的可选封面已移除。
 6. 人工双语等价审查于 2026-08-27 完成，覆盖 13 章顺序、主命题、四个一级消息、十项 claim、专名、指标、SC/CX/IM/AP/U/C/TVS 与 F/T 编号、来源标记、图位和临时状态措辞。
 7. 对照最终 SHA-256 更新本台账；任何文件重渲染后原有清权状态自动退回 `needs_evidence`，直至重新复核。

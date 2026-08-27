@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v0.5 - 2026-08-27
+
+### Phase 1 F08 carrier audit repair
+
+- Repaired the single reviewable generator source so F08 fixes SC01–SC04 to Zhongzhiyuan, SC05–SC07 to AI Origin, and SC09–SC11 to Dazhongsi; SC08 and SC12 are distinct cross-area support relationships rather than second ownerships.
+- Removed `/Xiaoyue`, `/service wing`, and `/heritage` from every F08 carrier line and regenerated paired F03/F08 captions and alt text from the same contract.
+- Added one explicit local favicon reference to all four HTML files by reusing the declared identity-system figure, with no new asset or remote request.
+- Replaced checkout-dependent package bytes with a final-tree Git-blob/LF measurement contract and documented the WOFF2 glyph/cmap/pixel-equivalence boundary.
+
 ## v0.4 - 2026-08-27
 
 ### Phase 1 audit repair

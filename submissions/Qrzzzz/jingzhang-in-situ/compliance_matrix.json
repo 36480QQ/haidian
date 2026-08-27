@@ -454,9 +454,9 @@
       "comparison_unit": "proposal.md Git blob content",
       "encoding": "UTF-8",
       "base_ref": "upstream/main",
-      "base_commit_sha1": "c44aa1054e471c46cca04753ac7ed018dae0666c",
+      "base_commit_sha1": "70cd369cbb80d6b5da743422a3d0aa2d3a98e333",
       "base_blob_sha1": "e03228ed0c29f56c569cd289408fd40cdfd98ebd",
-      "head_blob_sha1": "e7fccd5a3c0cec97587c8df042161c87f0cd3279",
+      "head_blob_sha1": "68cce229de863cdf2e8e482eb0e3bfc98abfef44",
       "normalization": [
         "Remove the opening YAML front matter from the first --- line through the next standalone --- line.",
         "Remove every inline evidence marker matching \\[(source|standard|depth|data|metric):[^\\]]+\\].",
@@ -468,9 +468,9 @@
           "method_id": "han_all_body",
           "line_scope": "All normalized body lines, including headings, tables, and figure captions.",
           "base_count": 7502,
-          "head_count": 6024,
-          "substitution": "round((7502 - 6024) / 7502 * 100, 2)",
-          "reduction_pct": 19.7
+          "head_count": 6058,
+          "substitution": "round((7502 - 6058) / 7502 * 100, 2)",
+          "reduction_pct": 19.25
         },
         {
           "method_id": "han_prose_lines",

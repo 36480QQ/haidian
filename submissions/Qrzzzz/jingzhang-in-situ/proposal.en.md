@@ -111,7 +111,7 @@ The “four-quadrant station-city commons” hosts flagship SC10 and supporting 
 
 Canonical ownership is frozen by enumerated ID: Zhongzhiyuan has SC01, SC02, SC03, and SC04; AI Origin has SC05, SC06, and SC07; Dazhongsi has SC09, SC10, and SC11. SC08 is cross-area accessibility support for the whole in-situ spine, while SC12 is public-service and human-transfer support shared by all three prototypes; neither belongs to a contiguous numbered area.
 
-![F03 Differentiated Prototypes and Three Landmarks](assets/figures/key-areas.en.png)
+![F03 carrier map: SC01–SC04 Zhongzhiyuan, SC05–SC07 AI Origin, and SC09–SC11 Dazhongsi; SC08 is in-situ-spine cross-area support and SC12 is all-three-prototypes cross-area support](assets/figures/key-areas.en.png)
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
@@ -154,7 +154,7 @@ The backend boundaries remain explicit. **SC02** reads only cleared device telem
 
 F08 indexes the 3+9 portfolio without changing SC01–SC12.[data:geometry/public_space.geojson#PUBLIC-001]
 
-![F08 Three Flagships, Nine Supports, and the Responsibility Contract](assets/figures/scenario-matrix.en.png)
+![F08 responsibility matrix: SC01–SC04 Zhongzhiyuan, SC05–SC07 AI Origin, and SC09–SC11 Dazhongsi; SC08 is in-situ-spine cross-area support and SC12 is all-three-prototypes cross-area support](assets/figures/scenario-matrix.en.png)
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
