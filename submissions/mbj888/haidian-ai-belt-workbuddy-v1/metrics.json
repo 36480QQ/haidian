@@ -19,6 +19,20 @@
         "Official announcement: 43.6 km2."
       ]
     },
+    "site_area_sqm": {
+      "status": "known",
+      "value": 43645653,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(site_boundary)",
+      "confidence": "low",
+      "assumptions": [
+        "Required formal core visual metric (alias of site_area). Calculated from repository provisional rough boundary geometry (PROV-*); not suitable for official area or redline claims.",
+        "Official announcement: 43.6 km2."
+      ]
+    },
     "overall_design_area": {
       "status": "known",
       "value": 11422370,
@@ -125,6 +139,20 @@
       "confidence": "low",
       "assumptions": [
         "Calculated from repository provisional rough boundary geometry (brief/site-package/geometry/provisional_boundaries.geojson, PROV-*); not suitable for official area or redline claims."
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.0315,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_area/site_area",
+      "confidence": "low",
+      "assumptions": [
+        "Required formal core visual metric (alias of green_space_ratio). Calculated from repository provisional rough boundary geometry (PROV-*); not suitable for official area or redline claims."
       ]
     },
     "public_space_ratio": {
