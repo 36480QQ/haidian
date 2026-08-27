@@ -88,9 +88,9 @@ Beiwei Community is now stated as an optional community-context comparator besid
 
 北纬社区现被明确为与原点社区并列但不可互换的可选社区语境对照点；未来科学城、怀柔科学城、经开区、其他创新街区和京津冀各保留一项可选复测角色。所有节点均未确认。没有书面责任接受、合法数据边界、普通任务基线及适用 H01—H07 材料，接力不启动；节点间只可传递最小、带版本的任务/协议及匿名或合成证据包。
 
-The bilingual equivalence record now maps nine critical claims across Markdown, rendered HTML, figures, fixed-page PDFs and the shared accessible media route. It remains contributor-side agent QA: independent human confirmation and certified translation are not provided and are not claimed.
+The bilingual equivalence record maps ten critical claims across Markdown, rendered HTML, figures, fixed-page PDFs and the shared accessible media route. Its eight-item independent-human worksheet is now visible in the handoff route, but all human results remain 0/8 and signoff remains not signed. It remains contributor-side agent QA: independent human confirmation and certified translation are not provided and are not claimed.
 
-双语等价记录现把九项关键主张逐项映射到 Markdown、渲染 HTML、图件、定页 PDF 和共享可访问媒体路径；它仍是投稿方侧 Agent 审校，独立人工确认与认证翻译尚未提供，也不作此类宣称。
+双语等价记录把十项关键主张逐项映射到 Markdown、渲染 HTML、图件、定页 PDF 和共享可访问媒体路径；八项独立人工复核清单现已进入交接路线，但人工结果仍为 0/8，签署仍为未完成。它仍是投稿方侧 Agent 审校，独立人工确认与认证翻译尚未提供，也不作此类宣称。
 
 ## Frozen facts / 冻结事实
 

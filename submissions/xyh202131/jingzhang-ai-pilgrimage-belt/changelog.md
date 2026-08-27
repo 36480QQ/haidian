@@ -1,3 +1,19 @@
+## v65.0 - 2026-08-28
+
+**独立人工复核交接 / Independent Human Review Handoff**
+
+- 前序 PR #4088 已合并并进入最新 canonical `main`；同投稿包无开放 PR，工作树洁净，最新规则、任务书、来源登记、社区动态和六闸基线均已复核。
+- 修复前可复现缺口：双语包有 8 个 HUMAN-EQ 样本，但执行顺序只写到 07；清单仅藏在深层 JSON，前台和固定页也未显示当前 0/8、未签署及 fail-closed 规则。
+- 将 HUMAN-EQ-01—08 组织为唯一顺序，要求先在最终 PR exact head 上按 `manifest.json` 记录哈希；任一空值、无法判断或未关闭重大差异均阻断签署，机器 PASS 不替代人工判断。
+- 在不增加主导航、媒体或页数的前提下，同步双语 proposal/report/visual，并在 A3-14 与 A0-07 原页加入八项清单及 0/8 状态。三原型、四态、非 AI 路径与专业否决保持原义。
+- 本轮无新媒体、来源、场景、项目、重点区、治理合同或现实人物；geometry、`metrics.json`、12/8/3/36、G0/NO-GO、provisional、现实结果 0、专业接责 0 和独立人工签署 0/8 均冻结。
+
+- Predecessor PR #4088 was merged into the latest canonical `main`; there was no open same-package PR, the worktree was clean, and current rules, taskbook, source registry, community state and all six baseline gates were rechecked.
+- Reproducible before-gap: the bilingual packet contained eight HUMAN-EQ samples, but its execution order stopped at 07. The worksheet was buried in deep JSON, and neither the frontstage nor fixed pages exposed 0/8, not-signed or fail-closed status.
+- HUMAN-EQ-01-08 now form the sole order. A reviewer first records artifact hashes from `manifest.json` on the final PR exact head. Any null, cannot-determine or unresolved material discrepancy blocks signoff; machine PASS never replaces human judgement.
+- Paired proposal, report and visual surfaces were synchronized, and A3-14/A0-07 now carry the eight-item route and 0/8 status without adding navigation, media or pages. The three prototypes, four states, non-AI path and professional veto retain their meaning.
+- No media, source, scene, project, key area, governance contract or real person was added. Geometry, `metrics.json`, 12/8/3/36, G0/NO-GO, provisional status, zero real results, zero accepted professional duty and 0/8 independent-human signoff remain frozen.
+
 ## v64.0 - 2026-08-27
 
 **责任接收门：从人本任务到可拒绝的专业接责 / Duty Acceptance: From Human Task to Refusable Professional Responsibility**
