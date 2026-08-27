@@ -1,14 +1,14 @@
 {
   "schema_version": "2.0",
-  "index_id": "JZ-REVIEW-HANDOFF-R62.0",
-  "publication_revision": "62.0",
-  "as_of": "2026-08-26",
+  "index_id": "JZ-REVIEW-HANDOFF-R63.0",
+  "publication_revision": "63.0",
+  "as_of": "2026-08-27",
   "reading_routes": [
     {
       "time": "30_seconds",
-      "question": "What is the proposal and how do the three places differ?",
-      "primary_answer": "proposal.md#一次空间裁决验证必须退到普通生活之外",
-      "figure": "assets/figures/key-areas.png"
+      "question": "Can one ordinary person arrive, understand, complete, correct or withdraw, and leave without depending on AI; then how do the three places differ?",
+      "primary_answer": "proposal.md#一人一事一处先跟随普通任务再看系统叠加",
+      "figure": "assets/figures/ordinary-life-journey.png"
     },
     {
       "time": "3_minutes",
@@ -30,32 +30,39 @@
     }
   ],
   "formal_review_presentation_route": {
-    "route_id": "ONE-RULING-THREE-PROTOTYPES-FOUR-STATES-ONE-CANDIDATE",
-    "purpose": "Lead with the spatial decision and ordinary-life effect; expose registers only when a reviewer asks for evidence or handoff detail.",
+    "route_id": "ONE-PERSON-ONE-TASK-ONE-PLACE-THEN-SYSTEM",
+    "purpose": "Lead with one person's complete ordinary task, then expose the spatial ruling, three prototypes, four states and the sole handoff candidate only when needed.",
     "ordered_steps": [
       {
         "order": 1,
-        "label_zh": "一条裁决",
-        "label_en": "One ruling",
-        "answer": "Any verification must stay outside ground required to complete an ordinary task.",
-        "surface": "proposal.md#一次空间裁决验证必须退到普通生活之外"
+        "label_zh": "一个人，一件事",
+        "label_en": "One person, one task",
+        "answer": "Arrive, understand, complete, correct or withdraw, and leave through a complete ordinary route that does not depend on AI.",
+        "surface": "assets/figures/ordinary-life-journey.png; visual/index.html#s4"
       },
       {
         "order": 2,
-        "label_zh": "三种原型",
-        "label_en": "Three prototypes",
-        "answer": "Zhongzhiyuan parallel bypass and side proof garden; Origin Community one street, two courts and four withdrawals; Dazhongsi four-way commute and off-route service.",
-        "surface": "assets/figures/key-areas.png"
+        "label_zh": "一条裁决",
+        "label_en": "One ruling",
+        "answer": "Any verification must stay outside ground required to complete the ordinary task.",
+        "surface": "proposal.md#一次空间裁决验证必须退到普通生活之外"
       },
       {
         "order": 3,
-        "label_zh": "四种状态",
-        "label_en": "Four states",
-        "answer": "Ordinary continues; verification is bounded; fault stops only the overlay; recovery restores the ordinary task and is not authorization or G1.",
-        "surface": "visual/index.html#s3; assets/figures/four-state-journey.png; assets/media/four-state-experience.mp4"
+        "label_zh": "三种原型",
+        "label_en": "Three prototypes",
+        "answer": "Zhongzhiyuan uses a parallel bypass and side proof garden; Origin Community uses one street, two courts and four withdrawals; Dazhongsi keeps a four-way commute and off-route service.",
+        "surface": "assets/figures/key-areas.png"
       },
       {
         "order": 4,
+        "label_zh": "四种状态",
+        "label_en": "Four states",
+        "answer": "Ordinary life continues; verification is bounded; fault stops only the overlay; recovery restores the ordinary task and is not authorization or G1.",
+        "surface": "visual/index.html#s3; assets/figures/four-state-journey.png; assets/media/four-state-experience.mp4"
+      },
+      {
+        "order": 5,
         "label_zh": "一个候选",
         "label_en": "One candidate",
         "answer": "Only JZ-05 × SCENE-011 × T-02 may be deepened before G1; all real H01-H07 closures remain zero and the decision is NO-GO.",
@@ -192,5 +199,22 @@
     "field_tests": 0,
     "professional_acceptances": 0,
     "maturity": "G0 / NO-GO"
+  },
+  "human_task_frontstage": {
+    "audit_type": "contributor_red_green_human_task_qa",
+    "before_state": {
+      "ordinary_life_figure_action_mentions": "0 arrival / 0 comprehension / 1 completion / 0 correction-or-withdrawal / 4 exit",
+      "offline_visual_action_mentions": "0 arrival / 0 comprehension / 2 completion / 0 correction-or-withdrawal / 0 exit",
+      "finding": "The system preceded the person in the review order."
+    },
+    "current_state": {
+      "unique_first_answer": "one person, one task, one place",
+      "complete_action_chain": "arrive -> understand -> complete -> correct or withdraw -> leave",
+      "three_place_task_variants": "staffed validation bypass / neighbourhood correction and withdrawal / commuter exit continuity",
+      "offline_visual_first_panel": "human_task",
+      "pdf_first_page_pair": "human_task_first",
+      "new_media": false
+    },
+    "boundary": "Anonymous standing and wheeled figures are contributor-authored conceptual role symbols, not photographs, real participants, public feedback, accessibility results or built-state evidence."
   }
 }
