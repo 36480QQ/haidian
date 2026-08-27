@@ -1,5 +1,79 @@
 # 方案迭代记录
 
+## v2.2 - 2026-08-27
+
+### 改动摘要
+
+- **公开仪表盘原型（静态概念）**（双语 proposal + report 双 HTML 新增小节，置于「现场基线测量方案」之后；visual 双页新增 `dashboard` 简介区段）：把 v2.0/v2.1 候选补充 F 落地——回应参与阶梯第一级「信息公开」承诺，将四条已在包内公开的机器可读证据链（P1—P5 基线指标 `baseline-protocols.json`、F1—F7 失败模式预警 `failure-modes.json`、90 天公开复审与折返协议状态 `switchback-adoption.json`、本包四门自检结果 `self_check.json`）汇到一张静态公开页面（`visual/index.html#dashboard`），同屏如实显示「指标待基线、预警未激活（尚无基线，非「正常」结论）、复审未启动、自检四门通过」。机器可读 mockup `visual/assets/dashboard-mockup.json`（四面板 cells + state_legend + discipline）。
+- **仪表盘纪律**：只再披露包内已公开条目，不引入运行时后端与任何新数据源；无实测一律保持「待基线」，不以设计模型值冒充实测值；试点后由四个既有数据源静态重建页面，失败样本全保留。
+- **评审问询速览表微调**：「公共利益与包容性」行追加仪表盘原型与 `dashboard-mockup.json`。仅改证据状态与回答措辞，不改动任何既有主张、几何与指标。
+- **管线同步**：report 双 HTML 以补丁插入（tools/apply_v22.py，插入位置与 proposal.md/.en.md 一一对应，沿用 blockquote/sup.evidence 标记体系）；visual 双页 dashboard 区段复用既有 .card/.chips/.chip 样式（无新增 CSS 类）、iteration badge v2.1→v2.2；Noto Sans SC 子集重建（fontTools cmap 覆盖率 100%，程序化验证）并重新注入四份 HTML；A3/A0 PDF 封面版本号 v2.2（本轮不新增板面，惯例同 v2.1）；渲染证据截图更新。
+- **版本一致性**：proposal front matter、visual 双页 badge、A3 封面版本号统一 v2.2。
+
+### 采纳反馈
+
+- 落实 v2.1 changelog 中「留待后续迭代」的最后一项候选补充 F（公开仪表盘原型，对标「公共利益与包容性 / 原创性」维度，把开放治理叙事从机制文本推进到可见界面）。延续「不造数值、不新增外部来源」纪律，全部内容由包内四个既有证据资产重组生成。
+
+### 暂未采纳或待复核事项
+
+- 本轮不新增外部来源、不新增数值承诺：仪表盘全部数值保持披露占位（pending_baseline / 未启动），sources.json 不变。
+- 仪表盘为静态原型：不含交互筛选、实时数据接入与多语言切换之外的动态功能；试点后是否接入运行时数据由正式立项决定。
+- 官方精确几何、控规图则指标等条件触发项继续在 assumptions 登记（A-BOUNDARY-002 等），非本轮可关闭。
+
+### 公开资料与合规说明
+
+- 本轮无新增外部资料；新 JSON 资产与全部新增文本均由包内既有机制与证据资产重组生成，不引入任何对标提交的内容。
+
+
+## v2.2 - 2026-08-27
+
+### 改动摘要
+
+- **公开仪表盘原型（静态概念）**：把 v2.0 changelog 中「留待后续迭代」的候选补充 F 落地——参与阶梯第一级「信息公开」的最小界面。四条包内已公开证据链同屏再披露：P1—P5 基线指标（`baseline-protocols.json`，全部待基线）、F1—F7 失败模式预警（`failure-modes.json`，未激活且明确标注「非『正常』结论」）、90 天公开复审与折返协议状态（`switchback-adoption.json`，未启动）、本包四门自检结果（`self_check.json`，PASS）。双语 proposal 正文新增小节（「现场基线测量方案」之后）；report 双 HTML 同位置插入；visual 双页新增 `<section id="dashboard">`（P1—P5 指标卡 + F1—F7 预警 chips + 复审/自检状态卡）；机器可读 mockup `visual/assets/dashboard-mockup.json`。
+- **仪表盘纪律（延续既定口径）**：只再披露包内已公开条目，不引入运行时后端与任何新数据源；无实测一律保持「待基线」，不以设计模型值冒充实测值；试点后由四个既有数据源静态重建页面，失败样本全保留。
+- **评审问询速览表微调**：「公共利益与包容性」行追加公开仪表盘原型与 `dashboard-mockup.json`。仅改证据状态与回答措辞，不改动任何既有主张、几何与指标。
+- **管线同步**：Noto Sans SC 子集重建（1238 字符，fontTools cmap 覆盖率 100%，程序化验证）并重新注入四份 HTML；A3/A0 PDF 封面版本号 v2.2（本轮不新增板面，惯例同 v2.0/v2.1）；渲染证据截图更新。
+- **版本一致性**：proposal front matter、visual 双页 badge、A3 封面版本号统一 v2.2。
+
+### 采纳反馈
+
+- 落实 v2.0 changelog「留待后续迭代」的最后一项候选补充 F（公开仪表盘原型），至此 v2.0 登记的五项候选补充（红队检视 D'、运营账本、AI 工作流披露 D、气候韧性 E、仪表盘 F）全部完成。延续「不造数值、不新增外部来源」纪律，由包内既有证据资产重组生成。
+
+### 暂未采纳或待复核事项
+
+- 本轮无新增外部来源；仪表盘为静态概念原型，不承诺试点前的动态数据；sources.json 不变。
+- 官方精确几何、控规图则指标等条件触发项继续在 assumptions 登记（A-BOUNDARY-002 等），非本轮可关闭。
+
+### 公开资料与合规说明
+
+- 本轮无新增外部资料；仪表盘与全部新增文本均由包内既有机制与证据资产重组生成，不引入任何对标提交的内容。
+
+## v2.1 - 2026-08-27
+
+### 改动摘要
+
+- **自指证明（二）：本包即 AI 参与城市设计工作流的可查证运行**（双语 proposal + report 双 HTML 新增段落，紧接 v1.9 自指证明之后）：把 v2.0 候选补充 D「AI 辅助设计工作流披露」落地——披露管线六环节（任务书/公告 → 开源脚手架 → 几何生成 Python/shapely/pyproj → 图件渲染 Pillow → 四门自检 → 人工复核），明确责任分工（AI 负责结构化与可复算，人类协作者余枫负责事实、引用、版权与最终表达），并声明「披露管线不等于主张 AI 设计已达专业深度」。机器可读版 `visual/assets/ai-workflow-pipeline.json`（六阶段 stage/tool/input/output/human_gate/evidence，全部事实可由 agent.json/self_check.json/manifest.json 交叉验证）。
+- **气候韧性与碳科目框架**（双语 proposal + report 双 HTML 新增小节，置于「蓝绿空间、公共空间与城市风貌」节内城市风貌段之后）：把 v2.0 候选补充 E 落地——不新增空间结构，在既有「N」字形蓝绿骨架（开源主线廊道 + 清河、小月河滨水绿带）上叠加海绵—热岛—碳三类气候功能注记；三科目（海绵/雨洪、热岛/微气候、碳/能源）逐格登记议题、既有空间落位（引用）、机制、责任角色与待基线监测口径；与「市政与新型基础设施」节互为一体。机器可读版 `visual/assets/climate-carbon-framework.json`。
+- **一键复算脚本（可证伪条件第 4 条的落地件）**：`visual/assets/recompute_metrics.js`——Node.js 零依赖单文件（仅标准库，与 visual/index.html 同技术栈，评审环境无需安装任何包），内联实现 EPSG:4548（CGCS2000 / 3-degree Gauss-Kruger CM 117E）投影，从包内 GeoJSON 离线复算全部 12 项 known 指标并与 `metrics.json` 对账（面积/比率容差 0.01%、长度 0.1%），运行结果 **12/12 全部 PASS**（最大偏差 0.04 m²，浮点精度级，与仓库评审脚本 pyproj/shapely 口径核验一致）；floor_area_ratio 与 building_height_control 保持 unknown 不复算。机器可读证据 `visual/assets/recompute-evidence.json` 随包提交，评审执行 `node visual/assets/recompute_metrics.js` 即可重跑验证「全部指标可复算」主张。
+- **评审问询速览表微调**：「AI 与规划创新」行追加 `ai-workflow-pipeline.json`；「公共利益与包容性」行追加气候碳科目与 `climate-carbon-framework.json`。仅改证据状态与回答措辞，不改动任何既有主张、几何与指标。
+- **管线同步**：report 双 HTML 以补丁插入（tools/apply_v21.py，插入位置与 proposal.md/.en.md 一一对应）；visual 双页新增 ai-workflow 与 climate-carbon 两个简介区段、iteration badge v2.0→v2.1；Noto Sans SC 子集重建（1235 字符，fontTools cmap 覆盖率 100%，程序化验证）并重新注入四份 HTML；A3/A0 PDF 封面版本号 v2.1（本轮不新增板面，惯例同 v2.0）；渲染证据截图更新。
+- **版本一致性**：proposal front matter、visual 双页 badge、A3 封面版本号统一 v2.1。
+
+### 采纳反馈
+
+- 落实 v2.0 changelog 中「留待后续迭代」的两项候选补充：D（AI 辅助设计工作流披露，对标「AI 与规划创新」维度，把提交物本身变成该维度的活证据——元创新）与 E（气候韧性与碳维度，对标「创新 / 公共利益与包容性」维度，补当前完全缺席的气候叙事，低垂果实）。两项延续「不造数值、不新增外部来源」纪律，由包内既有证据资产重组生成。
+
+### 暂未采纳或待复核事项
+
+- 本轮不新增外部来源、不新增数值承诺：气候三科目监测口径全部保持待基线（pending_baseline），AI 工作流披露不虚构工具版本号或未公开 prompt 内容；sources.json 不变。
+- 候选补充中「公开仪表盘原型」（F，工作量最大）经取舍留待后续迭代。
+- 官方精确几何、控规图则指标等条件触发项继续在 assumptions 登记（A-BOUNDARY-002 等），非本轮可关闭。
+
+### 公开资料与合规说明
+
+- 本轮无新增外部资料；两个新 JSON 资产与全部新增文本均由包内既有机制与证据资产重组生成，不引入任何对标提交的内容。
+
+
 ## v2.0 - 2026-08-27
 
 ### 改动摘要

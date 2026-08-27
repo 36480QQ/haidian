@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "WorkBuddy coding agent powered by Kimi-K3 (Moonshot AI); geometry via shapely/pyproj; figures via Pillow; PDFs via headless Edge print"
   },
-  "generated_at": "2026-08-27T12:04:38Z",
+  "generated_at": "2026-08-27T13:19:32Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "4d5582957210da9bcc6999940ce92cc4369c82bfb8d2597ea2f79e22970717fd"
+      "sha256": "bb35cafad29c0d5a63b45901b5219aa12830e10c3e5537d17b775fe311c2e062"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "370a393400fb39fd68785743445cab4277bcccb7c8d2f55fd1b5cd1afda8cdc1"
+      "sha256": "c2b05b48b04e75b4c6ca0b88e8e2385779ea3e2822e9d55a1daa16fe28a20d2a"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "62bf46654b0f9f3aec31ce0b31d0a05d50031516817c1c8bd24a3f3131405535"
+      "sha256": "643054c7526d34c21b417d263f04b8b8fe5a16702eeac277e8516d4fd5415abb"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "a9001ddc6c54ae1ecb343c33acc689330f467250d51d33b5913e36eda48b40d3"
+      "sha256": "76fa8135b64212e8192979b02e464ab856ffae576741e3ec8bfa5c146d0a2f34"
     },
     {
       "path": "report/copyright_statement.md",
@@ -106,21 +106,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "02d10c3a3b9447f6a0f9cd53c2c6ce3a74b5268dccbcdcd9bc6c0a09b33351ff"
+      "sha256": "6580e20b7e970b899523e740933bafee385e38a1920505e72b58fad5c9af0803"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "9a18ae35dd0fbc905f301827ddf3185980840e11ff886bfb1871b67880ef2822"
+      "sha256": "f254c7c7b3a3386a321196a51859c62017316306ea20c8bff2421ec2f4c4c308"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3402d6076b8e7b202d169439edd050b152f1fef1c623a7cd314e6c140c667508"
+      "sha256": "265767cc40a52a25aad71980b4ce06f3150071e922c1d75a135665f3dfe5be5b"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e9f9c7c4b708d36af69d642832f5128932d3e2f82f32c48f32a5218e54d47e40"
+      "sha256": "71d5a06e1ab7ef715a0f26b05cb672a0a347dcebb3dc940d26f21256200449ea"
     },
     {
       "path": "report/proposal.en.html",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "3f6c0befefee7423299e67c2190d32cf0283b81047970f1a8db9e8c2cadc658c"
+      "sha256": "0ba9237f4f6e8f678673389376b3fcc7e51c7fb97006538c74fcee44dadad58b"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "6772399e08ba1f904cf4df8f92684b058692d31d494911484101c418cdfbca65"
+      "sha256": "7f863c56563e28f9627cc69d16e1739e8373ccf177f8dc16487e8f9198213c65"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -241,7 +241,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "26457ddfb4656d5cbf9fc4973c52f49314de48b7ff36bf94b1b28d6a9772e974"
+      "sha256": "7eb891041244b4ccc1c24aef6335db886cd683e396da512e3322d68f1672a967"
     },
     {
       "path": "visual/index.en.html",
@@ -249,7 +249,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "82c8dccd74c4f2ad8c3bf8374293286efee3c95ad83ba0bcc1b946f9d8301bf2"
+      "sha256": "dcd3e780b9bc816b64e472530cf5738e7598dfe5beb14eda164ff1dac9785f05"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -362,7 +362,7 @@
       "path": "visual/assets/webfont-coverage-evidence.json",
       "role": "asset",
       "required": false,
-      "sha256": "037c1f4fc7be800507bb3b497c6622905009b440e85730ea82b196234450e3f2"
+      "sha256": "c52dbcc3b41957c3b678f3a79b744c01e49a71f16f874a4778193f4365bc82da"
     },
     {
       "path": "assets/media/logo.png",
@@ -439,28 +439,28 @@
       "role": "asset",
       "required": false,
       "language": "zh",
-      "sha256": "5d606c027d9303073efbe33e650178882ccdcbd88372f5375f85b08b28df3112"
+      "sha256": "f1a224706f67075ca8bd0b432115e6766a04a4bdf76f4d2fc46a6c0d1c46aa17"
     },
     {
       "path": "visual/assets/render-evidence/index-en.png",
       "role": "asset",
       "required": false,
       "language": "en",
-      "sha256": "7c6c5fdafdf9893aecee37a3881124a51987bf96b85aba4d5cc36d830a5e855e"
+      "sha256": "8ef887105545bea1129c372d8bd813ca51302ffa1299a06f204e6c42b4f98c70"
     },
     {
       "path": "visual/assets/render-evidence/proposal-report-zh.png",
       "role": "asset",
       "required": false,
       "language": "zh",
-      "sha256": "d5c2385091c3a14b881454ccc335d9dd4b74f8124a541448c634834731d3641c"
+      "sha256": "7781814fda0b9e8af0169c94b0f6d43dc1561f3aea644e84130e15142d25fa13"
     },
     {
       "path": "visual/assets/render-evidence/proposal-report-en.png",
       "role": "asset",
       "required": false,
       "language": "en",
-      "sha256": "5d9827b389205e279ca5a21d89959e7032b220d3a12e68d58a260d81638ccfce"
+      "sha256": "86e4266907c474321a6a352bb212e003415c4d2634a96ad1a1fdc13bdb2eda10"
     },
     {
       "path": "assets/figures/street-interface.png",
@@ -509,6 +509,24 @@
       "role": "asset",
       "required": false,
       "sha256": "5865c35bfe2412804bd59ec61edfbd69e47281aadaf190a7b8401b92adde61e8"
+    },
+    {
+      "path": "visual/assets/ai-workflow-pipeline.json",
+      "role": "asset",
+      "required": false,
+      "sha256": "7519cf7bba378e1b9fc699c65366f31ed9d48cf41299e188878e76b0ea7582e3"
+    },
+    {
+      "path": "visual/assets/climate-carbon-framework.json",
+      "role": "asset",
+      "required": false,
+      "sha256": "45f46bc265454aab2c3f56d91e294c0e282d6e48b4b2dfce478c7a1cd5409d08"
+    },
+    {
+      "path": "visual/assets/dashboard-mockup.json",
+      "role": "asset",
+      "required": false,
+      "sha256": "8fed4e46a56bedc253aa55a68fe2a96eaa6d83e9db93b9b514a6da42edf3345c"
     }
   ],
   "validation_claim": {
