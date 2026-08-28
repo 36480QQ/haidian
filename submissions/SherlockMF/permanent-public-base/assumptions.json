@@ -202,6 +202,46 @@
       "impact": "This is a submission-evidence scope operation, not an official boundary, ownership, survey, retain/renovate/demolish, access or approval judgment. Replace and regenerate after official geometry arrives.",
       "statement": "OSM building context is losslessly copied when covered by PROV-SITE-001; source footprints crossing that repository provisional envelope are clipped and explicitly marked, while wholly outside features remain recoverable in the registered source layer.",
       "status": "pending_official_data"
+    },
+    {
+      "category": "dazhongsi_operating_area",
+      "id": "A-M2-01",
+      "impact": "Micro, Base and Extended active-service areas are low-confidence concept-geometry results, not measured usable floor area, approved occupancy or construction scope.",
+      "statement": "D1-D3 areas are recalculated from geometry/phasing.geojson#PH-P819-01-DAZHONGSI in EPSG:4548; scenario selection uses D2, D1+D2 or D1+D2+D3 without changing the concept geometry.",
+      "status": "pending_survey_and_geometry_confirmation",
+      "trigger": "Recalculate after any D1-D3 coordinate, selection, official-boundary or survey update."
+    },
+    {
+      "category": "dazhongsi_capacity_and_hours",
+      "id": "A-M2-02",
+      "impact": "Capacity and opening-hour results are arithmetic envelopes only and cannot be used as life-safety occupancy, an approved calendar or an operator commitment.",
+      "statement": "Usable fraction 0.32/0.40/0.48, gross area per person 12/10/8 sqm and scenario opening hours are participant assumptions with low confidence.",
+      "status": "pending_accessibility_fire_and_operator_confirmation",
+      "trigger": "Replace after verified layout, accessibility/fire review, observed demand and an approved operating calendar."
+    },
+    {
+      "category": "dazhongsi_fte",
+      "id": "A-M2-03",
+      "impact": "FTE is not a staffing promise, employment plan or claim about a named operator.",
+      "statement": "FTE uses participant assumptions of staffed positions, a 1.18 coverage factor and 1600 productive hours per FTE-year. The machine-readable model publishes the unrounded result; the display rounds to 0.1 FTE, while OPEX uses the unrounded FTE.",
+      "status": "pending_operator_confirmation",
+      "trigger": "Recalculate when approved hours, positions, coverage or productive-hours inputs differ by more than 10%."
+    },
+    {
+      "category": "dazhongsi_rom_cost",
+      "id": "A-M2-04",
+      "impact": "CAPEX and OPEX are CNY ROM participant assumptions, not Beijing quotations, a budget, procurement estimate, funding commitment or construction commitment.",
+      "statement": "Unit cost, equipment, contingency, loaded staff cost, service-hour cost and fixed allowances are original low-confidence scenario inputs used only to compare orders of magnitude.",
+      "status": "pending_professional_cost_and_procurement_confirmation",
+      "trigger": "Replace if a professional estimate or cleared quote changes any rate or allowance by more than 20%."
+    },
+    {
+      "category": "dazhongsi_no_build",
+      "id": "A-M2-05",
+      "impact": "No-build does not mean no public service; it rejects the reversible carrier while retaining a continuous public clear line, staffed manual window, seating, shade, bilingual wayfinding and paper service/appeal.",
+      "statement": "The no-build cost is a separate low-confidence public-base ROM envelope: CAPEX separately bands clear-line markings/wayfinding, seating/shade and staffed-window setup; OPEX separately bands unrounded-FTE staff cost and a fixed manual-service allowance. It must not be subtracted from a carrier scenario as a verified saving.",
+      "status": "pending_public_base_and_operator_confirmation",
+      "trigger": "Recalculate after public-base design, site survey, staffing plan or professional estimate changes."
     }
   ],
   "reconciliation_stage": "P8.4F2.1",
