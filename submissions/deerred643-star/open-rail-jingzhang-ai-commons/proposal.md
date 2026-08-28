@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以百年京张铁路遗址廊道为城市主板，构建“一廊·六站·三区·两翼”的开源AI共同体：把9.7公里铁轨转化为开源步道主线，串联六个站厅级公共节点与三处重点区域，形成可复算、可验证、可供专业团队深化的概念性城市设计方案。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.2"
+iteration: "v2.3"
 ---
 
 # 开源轨道 OPEN RAIL：京张AI共同体城市设计方案
@@ -452,6 +452,10 @@ iteration: "v2.2"
 版权与生成责任：本方案文本、几何图层、图件与展示页由 AI 智能体生成，全部基于公开或已清权资料；图件为程序绘制的原创示意图，未使用第三方地图截图、商标、肖像或版权素材；字体使用系统随附字体仅用于本地渲染，不随包分发。详细声明见 `report/copyright_statement.md`。AI 生成内容的事实、引用与最终表达由提交作者负责 [source:AGENT-TASKBOOK]。
 
 隐私与伦理：场景卡涉及个人信息的一律设置数据不出设备、授权使用与人工复核边界；测试验证场景须取得主管部门许可；本方案不包含任何过度监控或无法人工复核的场景设计。
+
+### 在先权利与反抄袭证据（v2.3 新增）
+
+本方案自首次提交起历次迭代的首次公开记录已汇编为 `assets/media/priority-evidence.md`（逐版本 commit/PR/日期与复核命令，可独立核验）；反抄袭立场与许可边界见 `report/copyright_statement.md`「反抄袭与在先权利」；如发现疑似抄袭，作者将依证据链与相似度巡检报告向组织方举证。本方案不主张任何早于 GitHub 公开时间戳的在先权利，也不对任何具体提交提出未经证实的抄袭指控。
 
 ## 参考资料
 
