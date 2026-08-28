@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "6b5892ec54486003fb348e55d4586c0f53fd48e9032df15ccd1a0ffd3050d139"
+      "sha256": "a383f1e33e6d67dc4f1adb3a5d8568a3c31188e5a645bc3f576697b16c6a3ce8"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f3723cc0cbdba6c9bbeb01bb95e4fff00e7ee84803df62db10ccef88b6a30e08"
+      "sha256": "745bd8396c070685cab7043d2e645cfa728e833e8fb34d6b9e874974379a2ed3"
     },
     {
       "path": "compliance_matrix.json",
@@ -95,7 +95,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "0986cfc6b2037b4a92a84e05aa412559bc34976bf0cf527e5110b5f74b1ae867"
+      "sha256": "00da382b2b3983241d3def169f21e1dc8c5bb0a4cedc36ac2d3d50e6e6eef54b"
     },
     {
       "path": "report/narrative.md",
@@ -107,7 +107,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ffca089366f4307767238d14868d2f61d916bfbe6b5e5d31c4c0973bce5dab4d"
+      "sha256": "24e8ff2ad3587c681b91ab277e1581e68da8db5d0fe800631e962078e320fcc1"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "06d2658e99bea3e2a9704b80e1147d73ac8b922e19012d911cb1e5aa0cb1b541"
+      "sha256": "b32fe17e2902f1bc138fb78e346c0c83ae256468c3a6aac4bc12268ec2de596e"
     },
     {
       "path": "report/proposal.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "52f2646f6926a35e851ff36a0f9127973ea40f0d8839d4303852204f996a1d5c"
+      "sha256": "816eed607b57cedde472777ac77c64c65fb1a8a916055f3e7214efc5c58179f6"
     },
     {
       "path": "visual/assets/font-license-ofl.json",
@@ -268,7 +268,7 @@
       "language": "neutral",
       "title_zh": "中文离线字体子集（思源黑体 SC Regular 子集，woff2 以 base64 data URI 内嵌；两份报告页与两份展示页共用一份字面）",
       "title_en": "Offline Chinese font subset (Source Han Sans SC Regular subset, woff2 embedded as a base64 data URI; one shared copy for both report pages and both display pages)",
-      "sha256": "2c71b0434ade177622154a74f3b6c80b5ea74a2e3215ad7fa1b9d031e5332a3b"
+      "sha256": "a826a972ef68705a071ff6a4449ac5ea0cd57951033a234aecc2599589f1daee"
     },
     {
       "path": "visual/assets/cjk-webfont-provenance.json",
@@ -277,7 +277,7 @@
       "language": "neutral",
       "title_zh": "中文字体子集溯源与许可合规登记（上游发布物 URL 与哈希、子集参数、OFL 保留名更名、unicode-range 例外、覆盖断言读数）",
       "title_en": "Provenance and licence-compliance register for the Chinese font subset (upstream release URL and hashes, subsetting parameters, OFL reserved-name rename, unicode-range exceptions, coverage-assertion readings)",
-      "sha256": "ba09ecf375045c14c542212b9ecd983cb95f16abcd2cb3c1460b58a816964604"
+      "sha256": "5fa07cb5c0483721bd648fc6c76a2b5576921ca8fd27144d433171c091460210"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -615,7 +615,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "6ba59c87df8e59940b341c7fc3c46fa46967acd0428817315325828bbd6855a4"
+      "sha256": "d3799b2280b70b8064d1fe6d2c7e930166e8e3868e31c356d21fb6492a794506"
     },
     {
       "path": "visual/assets/changelog-archive.json",
@@ -809,7 +809,7 @@
       "language": "neutral",
       "title_zh": "输出质量校样与可及性走查记录（方案方自查）",
       "title_en": "Output Proofing and Accessibility Walkthrough Record (Proposer's Self-Check)",
-      "sha256": "30cc8460d486aa251249c45ae698e0df7bdee3e9099699f36af610fd3b2c4a56"
+      "sha256": "b863cdfc1037d0c5f34adca2b4646b1850d8a7d9fa8bdcd93dae34e279f816c6"
     },
     {
       "path": "visual/assets/package-integrity-gates.json",
@@ -818,7 +818,7 @@
       "language": "neutral",
       "title_zh": "随包自检闸门台账（十一道闸门，逐道登记口径、当前读数与历史查获缺陷共 30 条）",
       "title_en": "Package self-check gate register (eleven gates, each with its criterion, current reading and the 30 defects the gates actually caught)",
-      "sha256": "98e0ced3bd2f4dc41eb3538e4814eb3976234d8253a57ed2bdecf7909abddccf"
+      "sha256": "a0a5fe683b5f62d0df4847f7052dd2ad2c9207bcf8102ee14cdf3b0b4772e9ee"
     },
     {
       "path": "visual/assets/service-desk-gonogo.json",
