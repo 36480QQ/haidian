@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "af8b9341cc7b544957f065ed5c92780847cb4e37e0d175dd20a45cfe4cc17e20"
+      "sha256": "0e72cbdaf16192f92db67816e975ff7d6a47dbd242e216cb9fb13204b61b339f"
     },
     {
       "path": "compliance_matrix.json",
@@ -498,7 +498,7 @@
       "role": "changelog",
       "language": "zh",
       "required": false,
-      "sha256": "98478cbb5cff48a507cba547f6c02911cbe060a00a6b06968ff7ff36a40b7e2a"
+      "sha256": "23ffac3e011df015a3d4f93079082932773f68c28ad1a0f472d8df5f501dc210"
     },
     {
       "path": "assets/figures/daily-script-overview.png",
@@ -667,6 +667,19 @@
       "role": "evidence_data",
       "required": false,
       "sha256": "f35aed0d3e73a477cd5091b62e7d6b065c5e6b894c6d4316e917a842e1da74c9"
+    },
+    {
+      "path": "assets/media/official-boundary-recalculation-runbook.md",
+      "role": "transcript",
+      "language": "neutral",
+      "required": false,
+      "sha256": "96e76b1b2eed25461df78040ed42fd9871ad571a1af1d791fb806ea78c06505e"
+    },
+    {
+      "path": "visual/assets/official-boundary-recalculation-workbook.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "440623439b1ce557c7b4ee5dfb0e9ece80d437a00929242128a42dc40119ba39"
     }
   ],
   "validation_claim": {
