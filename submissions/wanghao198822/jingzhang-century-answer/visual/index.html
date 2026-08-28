@@ -484,7 +484,7 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
 #ovx .b3d h2+p{margin:12px 0 0;font-size:15px;line-height:1.8;color:var(--ov-dim);max-width:46em}
 /* 静态图签是一张有页眉页脚的图解，必须整幅可读，所以舞台先按图解的幅面定高；
    三维起来之后由画布自己定高（JS 成功分支加 .is-live）。 */
-#ovx .b3d .stage{position:relative;border:1px solid var(--ov-hair);background:#EDEAE1;aspect-ratio:1742/1108;overflow:hidden}
+#ovx .b3d .stage{position:relative;border:1px solid var(--ov-hair);background:#EDEAE1;aspect-ratio:16/9;overflow:hidden}
 #ovx .b3d .stage.is-live{aspect-ratio:auto;min-height:360px}
 #ovx .b3d .stage canvas{display:block;position:relative;z-index:1}
 #ovx .b3d .stage:focus-visible{outline:2px solid var(--ov-copper);outline-offset:2px}
@@ -501,9 +501,9 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
   <div>
     <div class="kick mono">三维场景 · 本地离线 Three.js</div>
     <h2>把这座桥转起来看：为什么「人」字在坡道上</h2>
-    <p>拖拽旋转、滚轮缩放。桥面是一条平直的横线、之上只有栏板。「人」字落在两端的<b>折返</b>本身——京张铁路展线的技术内核——不落在桥面的平面造型上：正文明写「桥面一旦做成人字形平面造型，展线的技术内核就退化成图案」，两段坡道因此在平面上并排展开，俯视并不构成一个「人」字轮廓。转动模型看的是竖向链条：地面 → 折返坡道两段 → 桥头平台 → 一跨平直主跨 → 对岸桥头平台 → 折返坡道两段 → 落回地面。几何按断面 ZZY-1/ZZY-2 的设计目标值搭建，属概念示意、未经坐标配准。</p>
+    <p>拖拽旋转、滚轮缩放。桥面是一条平直的横线、之上只有栏板。「人」字落在两端的<b>折返</b>本身——京张铁路展线的技术内核——不落在桥面的平面造型上：正文明写「桥面一旦做成人字形平面造型，展线的技术内核就退化成图案」，两段坡道因此在平面上并排展开，俯视并不构成一个「人」字轮廓。转动模型看的是竖向链条：地面 → 折返坡道两段 → 桥头平台 → 一跨平直主跨 → 对岸桥头平台 → 折返坡道两段 → 落回地面；按本模型几何反算，坡道纵坡约 <b>1:20.7</b>（3.0 米 / 62 米），满足正文「不陡于 1:20」的控制意向。加载前显示的静态图为 AI 生成的概念意象，形式以断面与正文为准。几何按断面 ZZY-1/ZZY-2 的设计目标值搭建，属概念示意、未经坐标配准。</p>
   </div>
-  <div class="stage" id="b3d-stage" tabindex="0" role="application" aria-label="人字之跃步行桥三维概念示意，可用方向键旋转、加减号缩放"><img class="b3d-poster" id="b3d-poster" src="assets/renders/b3d-poster.jpg" alt="人字之跃步行桥的三维场景静态图：一跨平直桥面横跨环路，桥面之上只有栏板，两端各以两段并排折返坡道落回两侧绿地；「人」字落在折返这一动作上，不是俯视可读出的平面轮廓。图为平面／立面／纵剖三格正投影的技术图，附尺度校核与竖向链条说明。"><div class="b3d-state mono" id="b3d-state">静态图 · 可交互三维加载中</div><div class="hint3d mono">拖拽或方向键旋转 · 滚轮或 +/− 缩放</div></div>
+  <div class="stage" id="b3d-stage" tabindex="0" role="application" aria-label="人字之跃步行桥三维概念示意，可用方向键旋转、加减号缩放"><img class="b3d-poster" id="b3d-poster" src="assets/renders/b3d-poster.jpg" alt="人字之跃步行桥的三维场景静态图：一跨平直桥面横跨环路，桥面之上只有栏板，两端各以折返坡道落回两侧绿地；「人」字落在折返这一动作上，不是俯视可读出的平面轮廓。本图为 AI 生成的概念意象，非实景照片、非工程效果图；已知形式差异：图中折返坡道上下叠置，正文口径为两段在平面上并排展开、每侧只设一处折返——形式一律以断面 ZZY-1／ZZY-2 与正文为准。"><div class="b3d-state mono" id="b3d-state">静态图 · 可交互三维加载中</div><div class="hint3d mono">拖拽或方向键旋转 · 滚轮或 +/− 缩放</div></div>
   <div>
     <div class="dims3 mono"><span><b>6.0</b>m 抬升</span><span><b>9</b>m 桥面净宽</span><span><b>1.4</b>m 栏板</span><span><b>62</b>m×2 并排坡道</span><span><b>66×9</b>m 单侧占地</span></div>
     <p class="lic">Three.js r160（MIT 许可）随包离线提供于 assets/three.min.js，无任何网络请求。</p>
@@ -869,7 +869,7 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
 <h3 class="sub3"><span class="ix">D·2</span>四门自检</h3>
 <div class="gates"><div class="gate"><div class="gn">确定性校验<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">deterministic_validation · returncode 0</div><pre>错误 0
 警告 24
-总字节 41,322,906
+总字节 41,669,149
 · submissions/wanghao198822/jingzhang-century-answer/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied
 · submissions/wanghao198822/jingzhang-century-answer/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context</pre></div><div class="gate"><div class="gn">空间审查<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">spatial_review · returncode 0</div><pre>阶段 formal
 问题 3 (minor:3)
@@ -886,7 +886,7 @@ known_metric_refs_required = 83
 proposal_format_version = 2
 evidence_contract = section-anchors-plus-structured-audit
 proposal_reference_counts = source:23, standard:8, depth:15, data:26, metric:11</pre></div></div>
-<div class="note">self_check.json 记录：stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>总字节口径：上表为自检写入时点的记录值。self_check.json 自身计入总字节，而工具先写入尚未附四门结果的中间文件再测量，故独立重跑会比表中大 771 字节（41,323,677）——差值即 self_check.json 附上四门结果后的增量，属工具固有的两阶段写入，不影响任何一门的结论。</div>
+<div class="note">self_check.json 记录：stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>总字节口径：上表为自检写入时点的记录值。self_check.json 自身计入总字节，而工具先写入尚未附四门结果的中间文件再测量，故独立重跑会比表中大 759 字节（41,669,908）——差值即 self_check.json 附上四门结果后的增量，属工具固有的两阶段写入，不影响任何一门的结论。</div>
 <div class="tw"><table class="dt"><thead><tr><th>自检项</th><th>结果</th><th>级别</th><th>对象</th><th>说明</th></tr></thead><tbody><tr><td><code class="mid2">DETERMINISTIC_VALIDATION</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">validate_local_submission.py</code></td><td>deterministic_validation: PASS</td></tr><tr><td><code class="mid2">SPATIAL_REVIEW</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">spatial_review.py</code></td><td>spatial_review: PASS</td></tr><tr><td><code class="mid2">VISUAL_PACKAGING</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">visual_review.py</code></td><td>visual_review: PASS</td></tr><tr><td><code class="mid2">PROFESSIONAL_EVIDENCE</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">professional_review.py</code></td><td>professional_review: PASS</td></tr></tbody></table></div>
 </div></section>
 <section class="sec apx" id="s12"><div class="wrap"><div class="sh rv"><span class="no">E</span><h2 class="serif">附录 E · 可当场核验工具</h2><span class="sub">三个脚本在你自己的浏览器里当场复算</span><span class="en">Appendix E · Verify it yourself, on the spot</span></div>

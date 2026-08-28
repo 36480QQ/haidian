@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b3f8687c2cecde68adfe7737dddd295d31a0200ad8eee75fb44836b9fe9eac24"
+      "sha256": "ee14d37a0641d154189dee73e22b55a826cb4e223231402535063aa691e75c1b"
     },
     {
       "path": "compliance_matrix.json",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b26312e24ae4e7bc4d88a89092d230b944e15a3bf616dac6f3958bad1d834759"
+      "sha256": "81684ba50ade8c0e30109a2ba2076e01c264fd708bdc9912155740fd822659ba"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7f8653729437c9414bb1b39c192c74175a269cf83bb4fe02f0179b42a9f82f97"
+      "sha256": "6c1ce7594d2153c9b40194d2e9ff0f1c8092199c6d53db1e916d8a4e06c38fcc"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "5da5116561ada1fed26d2b3abdd2f1beb86aa722697a29384fafe7a8759f649d"
+      "sha256": "87452ad0de1a98007769bc18e81bcb06627f87a20b3e6767275ba39524f5be66"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -590,24 +590,12 @@
       "path": "visual/assets/renders/b3d-poster.jpg",
       "role": "visualization",
       "required": false,
-      "sha256": "4040c7d3fd703eeedbcbe49f40da33f64419f29f011fa67bbfeeadbf1641f42a",
-      "title_zh": "人字之跃 · 形态说明（平面／立面／纵剖）",
-      "title_en": "Ren-Shaped Leap - form explained (plan / elevation / section)",
-      "description_zh": "人字之跃步行桥的形态说明图：平面／立面／纵剖三格正投影，由确定性脚本 build-staging/make_b3d_form.py 绘制，几何参数与展示页的离线三维场景 （visual/assets/bridge3d.js）同源。平面格取一端坡道局部（1:1），画出两段坡道并排、不上下叠置的关系——「人」字落在折返本身，俯视不构成「人」字轮廓；立面格标注 6.0 抬升、1.4 栏板与 1:20.7 纵坡；纵剖格按沿路径展开长度 340 逐段标出竖向链条。立面与纵剖竖向放大 4×，已在图上注明。概念体量示意，未经坐标配准，不含工程结论。",
-      "description_en": "Form-explanation drawing for the Ren-Shaped Leap footbridge: plan, elevation and longitudinal section, drawn by the deterministic script build-staging/make_b3d_form.py from the same geometry parameters as the offline 3D scene on the page (visual/assets/bridge3d.js). The plan shows one ramp assembly at 1:1, where the two runs are visibly parallel rather than stacked - the character ren lies in the switchback itself and no ren outline reads from above; the elevation dimensions the 6.0 rise, the 1.4 parapet and the 1:20.7 gradient; the section steps through the vertical chain along a developed path length of 340. Elevation and section carry a 4x vertical exaggeration, stated on the drawing. Conceptual massing illustration, not coordinate-registered, not an engineering conclusion.",
-      "language": "zh"
-    },
-    {
-      "path": "visual/assets/renders/b3d-poster.en.jpg",
-      "role": "visualization",
-      "required": false,
-      "sha256": "060fb63be4d1149f666b9461d7b210c82b188823f70a1ae9f2c57ac2a141434c",
-      "title_zh": "人字之跃 · 形态说明（平面／立面／纵剖）（英文版）",
-      "title_en": "Ren-Shaped Leap - form explained (plan / elevation / section) (English)",
-      "description_zh": "人字之跃步行桥的形态说明图：平面／立面／纵剖三格正投影，由确定性脚本 build-staging/make_b3d_form.py 绘制，几何参数与展示页的离线三维场景 （visual/assets/bridge3d.js）同源。平面格取一端坡道局部（1:1），画出两段坡道并排、不上下叠置的关系——「人」字落在折返本身，俯视不构成「人」字轮廓；立面格标注 6.0 抬升、1.4 栏板与 1:20.7 纵坡；纵剖格按沿路径展开长度 340 逐段标出竖向链条。立面与纵剖竖向放大 4×，已在图上注明。概念体量示意，未经坐标配准，不含工程结论。",
-      "description_en": "Form-explanation drawing for the Ren-Shaped Leap footbridge: plan, elevation and longitudinal section, drawn by the deterministic script build-staging/make_b3d_form.py from the same geometry parameters as the offline 3D scene on the page (visual/assets/bridge3d.js). The plan shows one ramp assembly at 1:1, where the two runs are visibly parallel rather than stacked - the character ren lies in the switchback itself and no ren outline reads from above; the elevation dimensions the 6.0 rise, the 1.4 parapet and the 1:20.7 gradient; the section steps through the vertical chain along a developed path length of 340. Elevation and section carry a 4x vertical exaggeration, stated on the drawing. Conceptual massing illustration, not coordinate-registered, not an engineering conclusion.",
-      "language": "en",
-      "translation_of": "visual/assets/renders/b3d-poster.jpg"
+      "sha256": "1d1347d75538a2c3d451c1763cc9746ad3214b367ca4298cdf1b4474ea557c8c",
+      "title_zh": "人字之跃 · 概念意象（AI 生成）",
+      "title_en": "Ren-Shaped Leap - conceptual impression (AI-generated)",
+      "description_zh": "人字之跃步行桥的概念意象图（AI 生成）：一跨平直主跨横跨环路，桥面之上除栏板与照明外无构筑物，两端以折返坡道落回道路两侧绿地，桥墩落地、V 形支撑；耐候钢色与道钉带的铜相呼应。用作展示页三维场景加载前的静态图与浏览器不支持 WebGL 时的兜底图。**非实景照片、非工程效果图、非官方审定成果**；片中形体、材质、树种、人物、天气均为意象表达，不构成任何形式、尺寸或工程做法的设计依据。**已知形式差异（据实声明）**：图中两端折返坡道为上下叠置，而正文口径是「两段坡道在平面上并排展开、不上下叠置，每侧只设一处折返」——形式一律以断面 ZZY-1／ZZY-2 与正文为准。图上无文字，中英两版共用同一文件。",
+      "description_en": "AI-generated conceptual impression of the Ren-Shaped Leap footbridge: one flat main span crosses the ring road with nothing above the deck but parapet and lighting, each end returning to the green on switchback ramps, piers landing on V-shaped supports; the weathering-steel tone answers the bronze of the Rail-Spike Band. Used as the still shown before the 3D scene loads and as the fallback when a browser cannot run WebGL. **Not a photograph, not an engineering rendering, not an officially approved result**; forms, materials, tree species, figures and weather are expressive only and constitute no basis for any shape, dimension or construction method. **Declared divergence**: the switchback ramps in the image are stacked, whereas the written calibre is \"the two runs sit side by side in plan, not stacked, with a single switchback per end\" - sections ZZY-1/ZZY-2 and the proposal text govern. The image carries no text and is shared by both language editions.",
+      "language": "neutral"
     },
     {
       "path": "visual/assets/renders/render-spike-belt.jpg",
