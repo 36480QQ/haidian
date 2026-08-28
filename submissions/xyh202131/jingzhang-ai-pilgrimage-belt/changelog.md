@@ -1,5 +1,19 @@
 # 方案迭代记录 / Changelog
 
+## v68.0 - 2026-08-28
+
+**评审状态与精确版本绑定 / Review-state Exact-head Binding**
+
+- 修复前 `data-gap-closure-register.json` 把已被后续评审取代的 `708215…` request-changes 标成“最新 exact head 评审”，同时将实际 HUMAN-EQ-01—08 的人工双语抽样误写为 7 项；这会让审计者无法区分当前包状态、历史外部结论和新 head 尚未受评三种状态。
+- 将两次已完成外部评审改为按 `reviewed_head` 绑定的历史快照，保留旧版六项行动记录但明确其已被后续评审取代；当前包状态只由当前 exact head 的 `manifest.json` 与 `self_check.json` 给出，任何新字节都不会继承前序外部 verdict。
+- 将双语人工抽样统一为 HUMAN-EQ-01—08 共 8 项，并在评审交接索引中加入当前状态、外部评审、前序历史与未受评新 head 的显式判读规则。
+- 本轮只夯实审计语义：不改 proposal、report、visual 页面、图件、媒体或四份 PDF，不改变 geometry、`metrics.json`、12/8/3/36、G0/NO-GO、临时边界、现实结果 0、专业接责 0、独立人工复核 0/8 或权利边界。
+
+- Before repair, `data-gap-closure-register.json` labelled the superseded `708215…` request-changes decision as the “latest exact-head review” and described the HUMAN-EQ-01—08 bilingual human sample contract as seven items. A reviewer therefore could not reliably separate current package state, completed historical external decisions and a new head that has not yet been externally reviewed.
+- Rebound both completed external reviews to their exact `reviewed_head` values, retained the six old action records as superseded history, and made the current exact-head `manifest.json` and `self_check.json` the only authorities for current package state. Any later byte change does not inherit a predecessor external verdict.
+- Aligned the human bilingual sample contract to eight items, HUMAN-EQ-01 through HUMAN-EQ-08, and added explicit interpretation rules for current state, external review, predecessor history and an unreviewed new head to the review handoff index.
+- This round only strengthens audit semantics. It does not alter the proposal, reports, visual pages, figures, media or four PDFs, nor geometry, `metrics.json`, 12/8/3/36, G0/NO-GO, provisional boundaries, zero real outcomes, zero accepted professional duties, 0/8 independent human review or rights boundaries.
+
 ## v67.0 - 2026-08-28
 
 **审计入口闭合 / Audit Entry Closure**

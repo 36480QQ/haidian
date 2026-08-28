@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0.0",
-  "register_id": "JZ-DATA-GAP-CLOSURE-R62.1",
-  "as_of": "2026-08-27",
+  "schema_version": "1.1.0",
+  "register_id": "JZ-DATA-GAP-CLOSURE-R68.0",
+  "as_of": "2026-08-28",
   "status": "participant_controlled_gaps_closed_external_gaps_preserved",
   "purpose": "Separate gaps the contributor can close in the current publication package from authoritative or field inputs that cannot be fabricated, and bind every open gap to an owner, trigger and invalid substitute.",
   "participant_controlled": [
@@ -37,7 +37,7 @@
       "gap_id": "PC-05",
       "gap": "Counterpart existence did not evidence material bilingual equivalence",
       "status": "closed_at_contributor_side_agent_editorial_review_level",
-      "evidence": "visual/assets/bilingual-material-equivalence.json now includes seven required human sampling items and an unsigned discrepancy/signoff form",
+      "evidence": "visual/assets/bilingual-material-equivalence.json now includes eight required human sampling items and an unsigned discrepancy/signoff form",
       "residual_boundary": "Independent human confirmation, certified translation and external professional review are not provided."
     },
     {
@@ -80,7 +80,7 @@
     {
       "action_id": "REVIEW-96-05",
       "required_action": "perform human substantive bilingual sampling",
-      "participant_delivery": "visual/assets/bilingual-material-equivalence.json provides seven required samples, a discrepancy register and independent signoff fields backed by exact structural counts",
+      "participant_delivery": "visual/assets/bilingual-material-equivalence.json provides eight required samples, a discrepancy register and independent signoff fields backed by exact structural counts",
       "participant_status": "sample_packet_ready",
       "external_status": "independent human signature not provided"
     },
@@ -99,62 +99,95 @@
       "external_status": "organizer input pending; not replaced by inference"
     }
   ],
-  "latest_exact_head_review": {
-    "reviewed_head": "70821579589f4ce56770733d2db78d6a3ae27b0e",
-    "review_score": 96.0,
-    "review_state": "request_changes",
-    "local_gates": {
-      "deterministic": "PASS",
-      "spatial": "PASS",
-      "visual": "PASS",
-      "professional": "PASS"
-    },
-    "inline_comment_count": 0,
-    "published_detailed_required_repairs_exposed": false,
-    "interpretation_rule": "Only the six visible participant-facing actions are implemented as reviewer requirements. Dimension text is mapped to evidence boundaries but is not paraphrased as an undisclosed instruction."
+  "review_status_semantics": {
+    "current_package_state_authority": "manifest.json and self_check.json on the current exact head",
+    "completed_external_review_authority": "A review conclusion applies only to its reviewed_head.",
+    "unreviewed_head_rule": "After any package byte changes, the prior review is historical until a new review binds the new exact head.",
+    "historical_snapshot_rule": "Historical request-changes and formal-review-ready decisions remain traceable but must not be labelled current."
   },
-  "latest_exact_head_required_action_register": [
+  "completed_external_review_history": [
     {
-      "action_id": "EXACT-7082-01",
-      "required_action": "preserve G0, provisional, not-to-scale, not-approved and zero-real-result warnings; do not upgrade machine, synthetic, public-reporting or control-plan context",
-      "participant_delivery": "the fixed boundary register, proposal warnings, figures, review route and professional packet retain the same status and fail-closed interpretation",
-      "participant_status": "complete_and_locked",
-      "external_status": "no external input needed to preserve the warning"
+      "reviewed_head": "70821579589f4ce56770733d2db78d6a3ae27b0e",
+      "review_score": 96.0,
+      "review_state": "request_changes",
+      "history_status": "historical_superseded",
+      "local_gates": {
+        "deterministic": "PASS",
+        "spatial": "PASS",
+        "visual": "PASS",
+        "professional": "PASS"
+      },
+      "inline_comment_count": 0,
+      "published_detailed_required_repairs_exposed": false,
+      "interpretation_rule": "Only the six visible participant-facing actions were implemented as reviewer requirements. Dimension text was mapped to evidence boundaries but was not paraphrased as an undisclosed instruction.",
+      "superseded_by_reviewed_head": "c01d915ac819f51b77ce148c1c9a6be09e149eb7"
     },
     {
-      "action_id": "EXACT-7082-02",
-      "required_action": "use only JZ-05 × SCENE-011 × T-02 for pre-G1 deepening and close H01-H07 with real attributable evidence before live or shadow work",
-      "participant_delivery": "professional-handoff-candidate.json version 2.1.0 keeps one candidate, seven signable gates, eight intake records and a NO-GO rule",
-      "participant_status": "candidate_and_gate_structure_complete",
-      "external_status": "0 H-gates accepted; no live or shadow test authorized"
-    },
+      "reviewed_head": "c01d915ac819f51b77ce148c1c9a6be09e149eb7",
+      "review_score": 96.0,
+      "review_state": "formal-review-ready",
+      "history_status": "completed_predecessor_review",
+      "local_gates": {
+        "deterministic": "PASS",
+        "spatial": "PASS",
+        "visual": "PASS",
+        "professional": "PASS"
+      },
+      "required_next_action_count": 0,
+      "merged_by_pull_request": 4136,
+      "merge_sha": "15a9071cf74cf85d0e7d64551c77bd5ecb4bb07f",
+      "scope_rule": "This conclusion applies only to reviewed_head c01d915ac819f51b77ce148c1c9a6be09e149eb7 and becomes historical after any later package byte change."
+    }
+  ],
+  "historical_required_action_registers": [
     {
-      "action_id": "EXACT-7082-03",
-      "required_action": "after lawful access and responsibility acceptance, preregister a dated walkthrough, ordinary/non-AI baseline, peak and quiet observation, accessibility co-test, restoration objects, denominators and thresholds",
-      "participant_delivery": "professional-handoff-candidate.json version 2.1.0 now contains the exact empty field protocol, lock sequence, four restoration objects and retrospective-selection prohibition",
-      "participant_status": "preregistration_structure_complete",
-      "external_status": "lawful access, accepted responsibility, dates, windows, baselines, observations, thresholds and restoration acceptance all remain null or 0"
-    },
-    {
-      "action_id": "EXACT-7082-04",
-      "required_action": "replace provisional geometry and control material through a versioned difference report and full recalculation when authoritative inputs arrive",
-      "participant_delivery": "AI-01/AI-02 plus D01/D03 preserve the authority, version, CRS, difference-report and downstream recalculation contract",
-      "participant_status": "replacement_protocol_ready",
-      "external_status": "official geometry and control materials not supplied"
-    },
-    {
-      "action_id": "EXACT-7082-05",
-      "required_action": "retain reviewable authorship, component licences, ODbL, OFL, citation, trademark, history, generated-content and accessibility proof before public installation or external brand deployment",
-      "participant_delivery": "rights-clearance-ledger.json adds a nine-item future public-installation and brand release gate with exact-version/use-context acceptance and takedown requirements",
-      "participant_status": "future_release_gate_complete_current_installation_count_zero",
-      "external_status": "trademark, historical, public-installation accessibility and independent legal findings remain unreviewed"
-    },
-    {
-      "action_id": "EXACT-7082-06",
-      "required_action": "lead formal review with one ruling, three prototypes, four states and one bounded candidate before opening detailed registers",
-      "participant_delivery": "review-handoff-index.json now fixes this four-step presentation route and five detail-on-demand links",
-      "participant_status": "complete",
-      "external_status": "independent formal reviewer remains responsible for applying the route"
+      "reviewed_head": "70821579589f4ce56770733d2db78d6a3ae27b0e",
+      "review_state": "request_changes",
+      "history_status": "historical_superseded",
+      "actions": [
+        {
+          "action_id": "EXACT-7082-01",
+          "required_action": "preserve G0, provisional, not-to-scale, not-approved and zero-real-result warnings; do not upgrade machine, synthetic, public-reporting or control-plan context",
+          "participant_delivery": "the fixed boundary register, proposal warnings, figures, review route and professional packet retain the same status and fail-closed interpretation",
+          "participant_status": "complete_and_locked",
+          "external_status": "no external input needed to preserve the warning"
+        },
+        {
+          "action_id": "EXACT-7082-02",
+          "required_action": "use only JZ-05 × SCENE-011 × T-02 for pre-G1 deepening and close H01-H07 with real attributable evidence before live or shadow work",
+          "participant_delivery": "professional-handoff-candidate.json version 2.1.0 keeps one candidate, seven signable gates, eight intake records and a NO-GO rule",
+          "participant_status": "candidate_and_gate_structure_complete",
+          "external_status": "0 H-gates accepted; no live or shadow test authorized"
+        },
+        {
+          "action_id": "EXACT-7082-03",
+          "required_action": "after lawful access and responsibility acceptance, preregister a dated walkthrough, ordinary/non-AI baseline, peak and quiet observation, accessibility co-test, restoration objects, denominators and thresholds",
+          "participant_delivery": "professional-handoff-candidate.json version 2.1.0 now contains the exact empty field protocol, lock sequence, four restoration objects and retrospective-selection prohibition",
+          "participant_status": "preregistration_structure_complete",
+          "external_status": "lawful access, accepted responsibility, dates, windows, baselines, observations, thresholds and restoration acceptance all remain null or 0"
+        },
+        {
+          "action_id": "EXACT-7082-04",
+          "required_action": "replace provisional geometry and control material through a versioned difference report and full recalculation when authoritative inputs arrive",
+          "participant_delivery": "AI-01/AI-02 plus D01/D03 preserve the authority, version, CRS, difference-report and downstream recalculation contract",
+          "participant_status": "replacement_protocol_ready",
+          "external_status": "official geometry and control materials not supplied"
+        },
+        {
+          "action_id": "EXACT-7082-05",
+          "required_action": "retain reviewable authorship, component licences, ODbL, OFL, citation, trademark, history, generated-content and accessibility proof before public installation or external brand deployment",
+          "participant_delivery": "rights-clearance-ledger.json adds a nine-item future public-installation and brand release gate with exact-version/use-context acceptance and takedown requirements",
+          "participant_status": "future_release_gate_complete_current_installation_count_zero",
+          "external_status": "trademark, historical, public-installation accessibility and independent legal findings remain unreviewed"
+        },
+        {
+          "action_id": "EXACT-7082-06",
+          "required_action": "lead formal review with one ruling, three prototypes, four states and one bounded candidate before opening detailed registers",
+          "participant_delivery": "review-handoff-index.json now fixes this four-step presentation route and five detail-on-demand links",
+          "participant_status": "complete",
+          "external_status": "independent formal reviewer remains responsible for applying the route"
+        }
+      ]
     }
   ],
   "dimension_text_closure_map": [
@@ -173,7 +206,7 @@
     {
       "dimension": "expression_and_bilingual_equivalence",
       "published_open_condition": "independent human substantive comparison is still required despite deterministic mapping PASS",
-      "participant_controlled_response": "seven-sample independent execution contract, discrepancy classification and fail-closed signoff protocol prepared",
+      "participant_controlled_response": "eight-sample independent execution contract, discrepancy classification and fail-closed signoff protocol prepared",
       "honest_remaining_state": "human reviewer identity, results and signature remain null"
     }
   ],
