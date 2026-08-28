@@ -1,3 +1,10 @@
+# 方案迭代记录
+
+## v0.12 - 2026-08-28
+- **方案改名**：「京张·自动车钩带 / Jingzhang Coupler Belt (JCB)」→「**京张·共智列车 / JingZhang Co-Intelligence Express (JCE)**」，更易读、易记、直观对应核心意象（城市即列车 / AI 即车厢 / 人是车长）；目录 slug 保持 `jingzhang-coupler-belt` 不变；
+- 同步更新：proposal 中英 title 与主名称、visual 页标题、report HTML、A3/A0 PDF 标题栏与封面、brand-standards 品牌规范页（Chrome 白底重渲）；
+- 生成器（gen_visual / gen_brand / gen_brand_html / gen_pdfs）同步新名；manifest/自检刷新。
+
 # 方案迭代记录## v0.3 - 2026-08-24
 - 评审整改 P0（表达与一致性）：visual 重做为数据工作台（OSM 底图图件+图层切换+证据可展开+中英同视口），HTML/visual 全部声明跨平台 CJK 字体栈（PingFang/YaHei/Noto Sans CJK）；PDF 封面标语自动缩字号/折行不再裁切；英文图例去除中文残留；指标图重排布局消除卡片/流程框/地图重叠，数值标"≈/约值"；地图/指标图增加 PROVISIONAL 临时边界醒目角标；
 - 用户画像统一为 7 类（正文/指标/图件/HTML/A3A0 同步）；
