@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d98c4b4197561743abf0365841324192a29087005d9901222e41a105076e8784"
+      "sha256": "855b0f5d4136ecd3c11499c2a430dcb6d36c1fe1b9a95ae573c3ef11e3487e1e"
     },
     {
       "path": "compliance_matrix.json",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "dab81f7e9e6d9512fa048a4edb54a964a5ee0630f6e3e2281f81801dc64b2390"
+      "sha256": "03e459656b39d6e3f0e7d22c522c71fd9595255e1b31b904023711c853658021"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f4681e618652fa0708a0d34311222078e137e4e36ee9e8e60602db7c6a1ef21f"
+      "sha256": "84981aeaa48a079823f8372f3e32e604642da01550b4228eb4adc1be7fc75c31"
     },
     {
       "path": "visual/index.html",
@@ -249,7 +249,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "bac70bfeaea23aa424907f660ae29bfdc49e5ce6ee50d1b4caaf4e72033aed37"
+      "sha256": "164b267caa869824bca2666ddedce440f113a90d00c5521c22dcfa9b23b5c055"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -257,7 +257,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "b81be13f527da031f81219c1f537a0276c85431a018f41d460bc74a65e530ad8"
+      "sha256": "3f864a2d2e125dad55e32111a8453481af4eb7022eadc10d9fc67e1803bcfa3f"
     },
     {
       "path": "assets/media/logo.svg",
@@ -306,7 +306,7 @@
       "role": "narrative",
       "required": false,
       "language": "zh",
-      "sha256": "fb755354e49766a98f0d7e98cfd4cd51048c3e00a939b910925a4fa60f86c0c4"
+      "sha256": "82e98492aa9fd0d6b78b04466db5f1fdeab1c38149e36108477100dddf31efe7"
     },
     {
       "path": "assets/media/cover.webp",
@@ -451,7 +451,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "mixed_provisional_and_conceptual",
     "readiness_contract": "persisted-self-check-v1"
