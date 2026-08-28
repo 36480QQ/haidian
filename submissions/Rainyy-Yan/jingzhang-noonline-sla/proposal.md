@@ -324,4 +324,17 @@ EVENT-01“午间压力测试周”只在已获许可的公开窗口演练 AI-OF
 
 `visual/assets/v4_2-implementation_verification_matrix.json` 将 WP-01—06、45 项 FV 任务及 18 项 SLA-A mandatory evidence 逐项连接至 PHASE、ROLE、格式、有效期、门槛、停止权限与 HOLD/DOWNGRADE；`visual/assets/v4_3-delivery-readiness-contract.json` 将它们进一步组织为实际交接时可逐张使用的释放与结项卡。所有任务初始仍为 `unknown`；只有授权的人类核验者提交可审计证据后才可变更，AI 不得写入 promotion。`visual/assets/v4_2-bilingual_equivalence_checklist.json` 逐项比对数字、metrics、ID、证据等级、Target/Verified、warning、图号与 taskbook 输出，并记录中英文相同的可定位章节。
 
+### 13.9 Phase 0 数据、核验与最小实验行动包
+
+`visual/assets/v4_4-phase0-action-pack.json` 把已有交付控制转为未来授权主体可逐项响应的 Phase 0 行动包：P0-REQ-01—05 分别请求正式空间资料、控规与工程控制、现场核验、遗产限制、以及责任/服务/数据治理文件；资料未收到时维持 `provisional / unknown / HOLD`，不以文字、新闻图、商业地图或 AI 推测补齐。它记录的是请求和证据格式，不宣称任何资料、许可、预算、产权、算力或主体已到位 [data:visual/assets/v4_4-phase0-action-pack.json#data_requests]。
+
+行动包限定三项最小、可逆且未来才可启动的演练：P0-EXP-01 在已确认公共界面进行 AI-OFF 决策点步行核对；P0-EXP-02 在获准且有缓冲的界面演练测试停止后公共绕行与人工解释；P0-EXP-03 在已确认公共边界走查到达、合法过街和无障碍替代。每项均须先满足既有释放门、由授权人员记录时间、位置、证据、有效期和结项决定；缺任何适用条件即 HOLD、改线、降级或 STOP。一次演练通过不证明全线服务、施工就绪、审批、现实运营或 Verified SLA 升级 [data:visual/assets/v4_4-phase0-action-pack.json#minimum_reversible_exercises]。
+
+| Phase 0 请求/演练 | 未来所需的可审计输入 | 可解除的限制 | 缺失时的控制 |
+|---|---|---|---|
+| P0-REQ-01 正式空间资料 | 发布方、版本/日期、坐标系、用途许可与原始文件哈希 | 替换暂定几何并重算 | 保留 provisional geometry，不作法定或精确面积主张 |
+| P0-REQ-02 控规与工程控制 | 适用的道路、公共性、工程、消防、产权/界面资料 | 专业深化研究 | HOLD 高度、拆改、工程线位和审批结论 |
+| P0-REQ-03 现场核验 | 带日期、位置、核验人、证据引用和有效期的记录 | 选择性 Phase 1 可逆演练 | 节点、路线与服务条件保持 unknown / HOLD |
+| P0-REQ-04—05 遗产与实施文件 | 干预限制、具名停止权、维护/服务时段、数据治理和合法界面 | 单一工作包的启动卡 | 不启动实体安装、测试或运营服务 |
+
 主要公开资料包括：北京市规划和自然资源委员会海淀分局发布的征集公告和任务书尺度说明；北京市人民政府网站关于京张铁路遗址公园一期及约 9 km 线性走廊的公开信息；北京地铁关于大钟寺站 A/B 口和站内无障碍服务的公开页面；北京市文物局关于清华园车站旧址保护的公开页面；以及仓库内已登记的标准、数据与来源注册表。每一项引用均以 `sources.json` 中的 source_id、日期、许可用途和限制为准。公开资料只能支持其明确陈述的背景，不能替代官方 GIS、现场测绘、设施调查、许可或审批结论 [source:EXT-SRC-JINGZHANG-PARK-20230630] [source:EXT-SRC-DAZHONGSI-STATION-202605] [source:EXT-SRC-QINGHUAYUAN-STATION-20260214]。

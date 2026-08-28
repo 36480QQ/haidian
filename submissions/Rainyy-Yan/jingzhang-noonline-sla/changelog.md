@@ -1,5 +1,11 @@
 # 方案迭代记录 / Iteration Changelog
 
+## v4.4 Phase 0 action pack - 2026-08-28
+
+**Feasibility handoff.** This pass turns the existing Phase 0 gates into a machine-readable action pack: five request tracks for official geometry, planning/engineering controls, human field evidence, heritage constraints, and future pilot/operations/data-governance records; a minimum field-record protocol; and three future-only reversible exercises for AI-OFF decision points, public-bypass stop response and accessible arrival alternatives. The paired proposal chapters make the release conditions, evidence outputs and HOLD/STOP responses directly readable.
+
+**Evidence boundary unchanged.** The action pack records requests and future evidence formats only. It receives no official geometry, field observation, permit, budget, property right, appointed body, operational commitment, compute agreement or approval. Every request remains `not_received` and every exercise remains `HOLD` until an authorised record satisfies the applicable existing release gate; passing an exercise cannot promote an SLA or prove construction or operating readiness.
+
 ## v4.4 visual readability repair - 2026-08-28
 
 **Targeted visual repair.** The Chinese visual navigation now uses the already covered `交付控制` label, removing the unrenderable `就绪` glyph from the offline CJK-subset path. The two English concept labels in `site-overview.en.svg` now occupy their own clear row, and the public-space card in `land-use-structure.en.svg` now uses a compact, non-overlapping `FIXED WAYFINDING` heading beside its AI-OFF label. Their PNG derivatives are regenerated from these editable SVG sources.

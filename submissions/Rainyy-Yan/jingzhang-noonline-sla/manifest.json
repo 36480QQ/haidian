@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "331774761b7d891fbf02be06dc7564b9bdacd96848231e52ddc583b07055668a"
+      "sha256": "ace6d0aa83a041eefea5dda274cabbb66d985a75c47868a41b6d3ee59f2447ae"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7c29f7252bfba48a1fd5443214e10b131ca13f3c784fef42514bf80617d776c7"
+      "sha256": "4f5a9b6a6d14fb3dc4c0ca8cd5be010af3a03a016d040b7149fb53e8f7ccbfb2"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "907f85653f5960f5fc6c0e46171ded575c0d3cfd49178a3897bb36b903d3c32e"
+      "sha256": "efb98b9cfd7c930bca39445ea0b19b50231667aff4b5b3bc0c26bbb734a39b98"
     },
     {
       "path": "report/narrative.md",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "1494f86561e2d33820e8f6ff41c91dc9dbe6b883b65344af3670ad2ed71209e7"
+      "sha256": "0ea54321cff5fe390d4358f46afe7346240e51dedba4c168609bd6a1d10bcc31"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b0e35c1ef90646ecd227666c62f5e36594673aa14b62a3b3617943a915824ff3"
+      "sha256": "cdc51167332e272e8b1ebe0df33c4e973fd9fe27e341332b4b254ec3e0a38202"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -332,7 +332,7 @@
       "role": "changelog",
       "required": true,
       "language": "neutral",
-      "sha256": "1c61cbdc05067c5957e00b1977e97f482be349a2ceb1756abc98e7ed29cc6eae"
+      "sha256": "4083a3e240af4046703a7fb69844f0ceb33696783810553ec21c14d9cc0d94c9"
     },
     {
       "path": "visual/assets/sla-engine-diagram.svg",
@@ -750,6 +750,13 @@
       "required": false,
       "language": "neutral",
       "sha256": "b3c85e44a485cabc0b36548198fc60fd0b01fde5e42c7934eb82b5c3a2c01799"
+    },
+    {
+      "path": "visual/assets/v4_4-phase0-action-pack.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "99480124c3d8665a262ce4e22e1f7eb108a70efdeb5b250fb2fe904ec8135002"
     }
   ],
   "validation_claim": {

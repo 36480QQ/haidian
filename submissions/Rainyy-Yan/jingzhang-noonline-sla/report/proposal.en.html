@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../visual/assets/noonline-cjk-font.css">
 <title>jingzhang-noonline-sla - proposal report</title>
 <style>
 :root {
@@ -17,7 +16,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: "Noonline CJK Subset", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
@@ -51,6 +50,12 @@ code {
   color: #1d4f7a;
   padding: 0.1em 0.35em;
   border-radius: 4px;
+}
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .summary { color: var(--muted); font-size: 17px; }
 .translation-link a { color: var(--accent); font-weight: 700; }
@@ -255,6 +260,10 @@ code {
 <p>Three delivery-performance measures deliberately remain <code>unknown</code>: release-packet completeness for activated packages, AI-OFF acceptance pass rate and handover-evidence freshness. They are calculated only after a named party, lawful interface and human verification exist. This makes feasibility a verifiable progression condition, not a fabricated “already implemented” result <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/v4_3-delivery-readiness-contract.json#readiness_measures" title="Spatial data: visual/assets/v4_3-delivery-readiness-contract.json#readiness_measures">Spatial data</sup>.</p>
 <h3>13.8 Implementation evidence and bilingual audit</h3>
 <p><code>visual/assets/v4_2-implementation_verification_matrix.json</code> connects WP-01–06, all 45 FV tasks and the 18 mandatory SLA-A items to PHASE, ROLE, format, validity, threshold, stop authority and HOLD/DOWNGRADE response. <code>visual/assets/v4_3-delivery-readiness-contract.json</code> further organizes them into release and close-out cards that can be used one by one at handover. Every task remains <code>unknown</code> at baseline; only an authorised human verifier with auditable evidence may change it, and AI cannot write promotion. <code>visual/assets/v4_2-bilingual_equivalence_checklist.json</code> compares every number, metric, ID, evidence level, Target/Verified state, warning, figure and taskbook output with the same locatable section in both languages.</p>
+<h3>13.9 Phase 0 data, verification and minimum-exercise action pack</h3>
+<p><code>visual/assets/v4_4-phase0-action-pack.json</code> turns the existing delivery controls into a Phase 0 action pack that future authorised parties can answer item by item. P0-REQ-01–05 request official spatial data, planning and engineering controls, field verification, heritage constraints, and responsibility/service/data-governance records. Until they are received, the package retains <code>provisional / unknown / HOLD</code>; text, news images, commercial maps and AI inference cannot fill the gap. It records requests and evidence formats only, not received data, permission, budget, property, compute capacity or appointed bodies <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/v4_4-phase0-action-pack.json#data_requests" title="Spatial data: visual/assets/v4_4-phase0-action-pack.json#data_requests">Spatial data</sup>.</p>
+<p>The pack limits future activity to three minimum, reversible exercises: P0-EXP-01 checks AI-OFF decision points at a confirmed public interface; P0-EXP-02 rehearses public bypass and human explanation after a permitted, buffered test layer stops; P0-EXP-03 documents arrival, legal crossing and an accessible alternative at a confirmed public edge. Each requires the existing release gates plus an authorised record of time, place, evidence, validity and close-out. A missing condition means HOLD, reroute, downgrade or STOP. Passing one exercise does not prove corridor-wide service, construction readiness, approval, real operation or a Verified SLA promotion <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/v4_4-phase0-action-pack.json#minimum_reversible_exercises" title="Spatial data: visual/assets/v4_4-phase0-action-pack.json#minimum_reversible_exercises">Spatial data</sup>.</p>
+<div class="proposal-table"><table><thead><tr><th>Phase 0 request/exercise</th><th>Future auditable input</th><th>Constraint it may release</th><th>Control while missing</th></tr></thead><tbody><tr><td>P0-REQ-01 official spatial data</td><td>publisher, version/date, CRS, permitted use and original-file hash</td><td>replace provisional geometry and recalculate</td><td>retain provisional geometry; no statutory or precise-area claim</td></tr><tr><td>P0-REQ-02 planning and engineering controls</td><td>applicable road, publicness, engineering, fire and property/interface data</td><td>professional deepening study</td><td>HOLD height, demolition, engineering-line and approval conclusions</td></tr><tr><td>P0-REQ-03 field verification</td><td>dated, located record with verifier, evidence reference and validity</td><td>selected reversible Phase 1 exercise</td><td>node, route and service conditions stay unknown / HOLD</td></tr><tr><td>P0-REQ-04–05 heritage and implementation records</td><td>intervention limits, named stop authority, maintenance/service window, data governance and lawful interface</td><td>one work-package activation card</td><td>do not start physical installation, test or operating service</td></tr></tbody></table></div>
 <p>Primary public material includes the Haidian planning authority’s call and taskbook scale statement; the Beijing Municipal Government’s public information on the Jing-Zhang Railway Heritage Park first phase and c. 9 km corridor; Beijing Subway’s public page for Dazhongsi Station A/B exits and in-station accessibility service; the Beijing Cultural Heritage Bureau’s protection information for the former Tsinghuayuan station; and the repository’s registered standards, data and source registry. Each citation is governed by the source ID, date, allowed use and limitation recorded in <code>sources.json</code>. Public material supports only the context it expressly states; it never replaces official GIS, field survey, facility audit, permission or approval <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="EXT-SRC-JINGZHANG-PARK-20230630" title="Source: EXT-SRC-JINGZHANG-PARK-20230630">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="EXT-SRC-DAZHONGSI-STATION-202605" title="Source: EXT-SRC-DAZHONGSI-STATION-202605">Source</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="EXT-SRC-QINGHUAYUAN-STATION-20260214" title="Source: EXT-SRC-QINGHUAYUAN-STATION-20260214">Source</sup>.</p>
 </main>
 </body>
