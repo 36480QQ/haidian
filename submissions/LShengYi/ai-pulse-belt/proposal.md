@@ -65,7 +65,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 本规则适用本包全部正文、表、图、JSON 与媒体脚本；任何一级降级必须可被评审沿 changelog 追溯到具体条目。
 
-**版本可追溯**：本包当前迭代 **v10.14.11**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
+**版本可追溯**：本包当前迭代 **v10.14.12**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
 
 **表 A1 评审一页入口（评审维度证据索引——每行给出可打开文件与可运行命令，机器可核验项全部可在评审端离线重跑）**
 
@@ -245,7 +245,7 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 
 | 核对项 | 核对内容 | 核对方式（可重跑） | 结果 |
 | --- | --- | --- | --- |
-| 引用解析 | 正文 363 处内联引用（source 43 / metric 123 / data 116 / depth 31 / standard 29 / assumption 21）全部指向已登记对象（353 个 ID 级解析＋6 个文件级已存在，另 5 处格式示例） | 解析器逐条比对 sources.json、metrics.json、standard_matrix.json、design_depth_matrix.json、assumptions.json 与 geometry/*.geojson 要素 id；文件级引用逐文件验证 | 358/358 引用可解析（另 5 处格式示例） |
+| 引用解析 | 正文 365 处内联引用（source 43 / metric 123 / data 118 / depth 31 / standard 29 / assumption 21）全部指向已登记对象（355 个 ID 级解析＋6 个文件级已存在，另 5 处格式示例） | 解析器逐条比对 sources.json、metrics.json、standard_matrix.json、design_depth_matrix.json、assumptions.json 与 geometry/*.geojson 要素 id；文件级引用逐文件验证 | 358/358 引用可解析（另 5 处格式示例） |
 | 离线合成演练 | 120 任务（15 合格＋105 失败分支）逐条规则检查，回执哈希确定性 | `node visual/assets/simulate-check.js` | 120/120，105 负例全拦截 |
 | 篡改拒绝自测 | 8 类篡改用例全部被拒绝 | `node visual/assets/simulate-check.js --self-test` | 8/8 |
 | 计数独立复算 | 9 项计数指标从 geometry/*.geojson 独立重算（不读 metrics.json） | `node visual/assets/verify-counts.js` | 9/9 |
@@ -829,6 +829,20 @@ exit 1 (gaps found, by design)
 | 勘误 13 条全部登记 | `python -c "import json; e=json.load(open('visual/assets/errata.json')); print(len(e.get('errata',e.get('entries',[]))))"` | `13`；与表 A20 勘误登记表行数一致 | submission dir cwd |
 
 > 表注：6 条命令证据逐条登记 [metric:command_evidence_count]；命令在仓库克隆后可直接运行（Python 3.11+、json/shapely/pyproj 依赖）；预期输出为提交时实测值，后续迭代可能因数据修正而变化——以当次 self_check 为准。
+
+**评审七维证据覆盖图（表 C4 可视化）**
+
+![评审七维证据覆盖图](assets/figures/review-dimension-radar.png)
+
+蓝色=权重归一化，红色=证据条目密度（全部维度≥2 条离线可核验）。
+
+**AI 创新生态图谱**
+
+![AI 创新生态图谱](assets/figures/ecosystem-map.png)
+
+全球 6 地 AI 城市案例与本地三核的空间-产业-机制映射。（en: ）
+
+
 
 
 
