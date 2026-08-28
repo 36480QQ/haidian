@@ -1032,7 +1032,13 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "CASE-VECTOR",
+        "CASE-MILA",
+        "CASE-AISINGAPORE",
+        "CASE-SEOUL",
+        "CASE-AISWEDEN",
+        "CASE-APPLIEDAI"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -1219,7 +1225,8 @@
         "三层范围工作框架",
         "统筹研究范围产业与未来城市研究",
         "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "重点区域详细设计",
+        "更新项目清单、实施政策与分期计划"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1241,8 +1248,8 @@
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
+        "方案治理",
+        "实施责任",
         "核心指标"
       ],
       "source_ids": [

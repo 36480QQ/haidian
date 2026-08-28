@@ -92,6 +92,69 @@
       "publisher": "Barcelona City Council",
       "accessed_date": "2026-08-27",
       "usage": "Mechanism comparison: hybrid public participation; not spatial evidence."
+    },
+    {
+      "id": "CASE-VECTOR",
+      "url": "https://vectorinstitute.ai/research-talent/",
+      "source_type": "primary_institutional",
+      "publisher": "Vector Institute",
+      "accessed_date": "2026-08-28",
+      "usage": "AI ecosystem comparison: research, talent, industry partnership, AI engineering, and adoption mechanisms; not evidence of local partnership or investment.",
+      "limitations": "Institutional self-description. Quantitative claims are not transferred into the proposal."
+    },
+    {
+      "id": "CASE-MILA",
+      "url": "https://mila.quebec/en/industry/mila-ventures",
+      "source_type": "primary_institutional",
+      "publisher": "Mila - Quebec Artificial Intelligence Institute",
+      "accessed_date": "2026-08-28",
+      "usage": "AI ecosystem comparison: research-talent-to-venture training, acceleration, creation, and early support; not evidence of local partnership.",
+      "limitations": "Institutional program description; no company, funding, or performance figure is imported."
+    },
+    {
+      "id": "CASE-AISINGAPORE",
+      "url": "https://aisingapore.org/innovation/100e/",
+      "source_type": "primary_institutional",
+      "publisher": "AI Singapore",
+      "accessed_date": "2026-08-28",
+      "usage": "AI ecosystem comparison: industry problem definition, engineering teams, apprenticeships, iterative prototypes, and stakeholder review.",
+      "limitations": "Used as a mechanism reference only; it does not establish local program authorization."
+    },
+    {
+      "id": "CASE-SEOUL",
+      "url": "https://www.seoulaihub.kr/eng1/index2.asp",
+      "source_type": "official_public",
+      "publisher": "Seoul AI Hub",
+      "accessed_date": "2026-08-28",
+      "usage": "AI ecosystem comparison: startup support, talent cultivation, research exchange, and international networking.",
+      "limitations": "Used as a role-and-space precedent; no local partnership or equivalence is claimed."
+    },
+    {
+      "id": "CASE-AISWEDEN",
+      "url": "https://www.ai.se/en/research-innovation/ai-sweden-technology-infrastructure",
+      "source_type": "primary_institutional",
+      "publisher": "AI Sweden",
+      "accessed_date": "2026-08-28",
+      "usage": "AI ecosystem comparison: partner-provided infrastructure, shared testbeds, datasets, and technical/legal support.",
+      "limitations": "Mechanism reference only. Partner counts and program results are not used as local targets."
+    },
+    {
+      "id": "CASE-APPLIEDAI",
+      "url": "https://www.unternehmertum.de/en/services/applied-ai",
+      "source_type": "primary_institutional",
+      "publisher": "UnternehmerTUM / appliedAI Initiative",
+      "accessed_date": "2026-08-28",
+      "usage": "AI ecosystem comparison: collaboration among science, industry, public-sector roles, and selected startups for adoption and capability building.",
+      "limitations": "Institutional self-description; no vendor, funding, or government commitment is inferred."
+    },
+    {
+      "id": "FONT-NOTO-CJK",
+      "url": "https://github.com/notofonts/noto-cjk",
+      "source_type": "open_source_asset",
+      "publisher": "Noto Fonts project",
+      "accessed_date": "2026-08-28",
+      "usage": "Embedded glyph subset for portable Chinese and bilingual rendering in offline HTML, figures, and drawings.",
+      "license": "SIL Open Font License 1.1"
     }
   ]
 }

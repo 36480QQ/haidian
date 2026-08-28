@@ -15,7 +15,9 @@
       "proposal_files": [
         "submissions/PAPA-pq/jingzhang-learnline/proposal.md"
       ],
-      "changelog_files": [],
+      "changelog_files": [
+        "submissions/PAPA-pq/jingzhang-learnline/changelog.md"
+      ],
       "changed_files": [
         "submissions/PAPA-pq/jingzhang-learnline/agent.json",
         "submissions/PAPA-pq/jingzhang-learnline/assets/figures/key-areas.en.png",
@@ -30,6 +32,7 @@
         "submissions/PAPA-pq/jingzhang-learnline/assets/figures/site-overview.png",
         "submissions/PAPA-pq/jingzhang-learnline/assets/media/cover.webp",
         "submissions/PAPA-pq/jingzhang-learnline/assumptions.json",
+        "submissions/PAPA-pq/jingzhang-learnline/changelog.md",
         "submissions/PAPA-pq/jingzhang-learnline/compliance_matrix.json",
         "submissions/PAPA-pq/jingzhang-learnline/design_depth_matrix.json",
         "submissions/PAPA-pq/jingzhang-learnline/drawings/a0-boards.en.pdf",
@@ -62,7 +65,7 @@
       "ai_package_stages": {
         "submissions/PAPA-pq/jingzhang-learnline": "formal"
       },
-      "total_bytes": 2736143,
+      "total_bytes": 4971061,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -141,10 +144,10 @@
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 13,
-          "standard": 9,
-          "depth": 15,
-          "data": 12,
-          "metric": 10
+          "standard": 5,
+          "depth": 13,
+          "data": 9,
+          "metric": 7
         }
       }
     },
