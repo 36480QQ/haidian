@@ -205,12 +205,23 @@
     }
   }
 
+  /* 核验面板是双语页面共用的。英文页此前把这五个中文标签原样印出来了——
+     这是「任何人可独立核对」那一节的主表，是最不该只有中文的地方。 */
+  var LABEL_EN = {
+    land_use_coverage_gap_sqm: "Site area not covered by the land-use layer",
+    land_use_coverage_ratio: "Land-use layer coverage of the site",
+    land_use_max_overlap_sqm: "Largest pairwise intersection among land-use features",
+    land_use_parcel_count: "Number of land-use features",
+    phase_coverage_gap_sqm: "Site area not covered by the phasing layer"
+  };
+
   function addCheck(result, id, label, computed, expected, unit, formula, tol) {
     var t = tol === undefined ? result.tolerance_abs : tol;
     var delta = expected === null ? null : computed - expected;
     result.checks.push({
       id: id,
       label: label,
+      label_en: LABEL_EN[id] || label,
       unit: unit,
       computed: computed,
       computed_rounded: unit === "count" ? computed : round(computed, unit === "ratio" ? 9 : 3),

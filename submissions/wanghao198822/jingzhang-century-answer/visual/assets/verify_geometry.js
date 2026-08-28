@@ -113,13 +113,14 @@
         result.skipped.push({
           id: id,
           reason: "status=" + (m ? m.status : "missing") + "，非 known 指标不参与几何复算",
+          reason_en: "status=" + (m ? m.status : "missing") + " — not a known metric; excluded from geometric recomputation",
           formula: m ? m.formula : null
         });
         continue;
       }
       var f = String(m.formula || "");
       if (TOPOLOGY_IDS[id]) {
-        result.skipped.push({ id: id, reason: "布尔拓扑类指标，由 verify_topology.js 复算", formula: f });
+        result.skipped.push({ id: id, reason: "布尔拓扑类指标，由 verify_topology.js 复算", reason_en: "boolean-topology metric; recomputed by verify_topology.js", formula: f });
         continue;
       }
       var mm;
@@ -157,19 +158,19 @@
           deferred.push(id);
           continue;
         } else if (RE.reported.test(f)) {
-          result.skipped.push({ id: id, reason: "来源登记值（reported_value），不由几何推导，须回 sources.json 核对", formula: f });
+          result.skipped.push({ id: id, reason: "来源登记值（reported_value），不由几何推导，须回 sources.json 核对", reason_en: "reported_value from a registered source, not derived from geometry; check against sources.json", formula: f });
           continue;
         } else if (TOPOLOGY_HINT.test(f)) {
-          result.skipped.push({ id: id, reason: "布尔拓扑类公式，由 verify_topology.js 复算", formula: f });
+          result.skipped.push({ id: id, reason: "布尔拓扑类公式，由 verify_topology.js 复算", reason_en: "boolean-topology formula; recomputed by verify_topology.js", formula: f });
           continue;
         } else {
-          result.skipped.push({ id: id, reason: "本脚本未实现该公式形态，需人工核对", formula: f });
+          result.skipped.push({ id: id, reason: "本脚本未实现该公式形态，需人工核对", reason_en: "formula shape not implemented by this script; verify by hand", formula: f });
           continue;
         }
       } catch (err) {
         var msg = err && err.message ? err.message : String(err);
         result.errors.push(id + ": " + msg);
-        result.skipped.push({ id: id, reason: "复算出错：" + msg, formula: f });
+        result.skipped.push({ id: id, reason: "复算出错：" + msg, reason_en: "recomputation error: " + msg, formula: f });
         continue;
       }
       computed[id] = value;
@@ -187,7 +188,7 @@
           var a = resolve(computed, metrics, r[1]);
           var b = resolve(computed, metrics, r[2]);
           if (a === null || b === null || !b.value) {
-            result.skipped.push({ id: did, reason: "分子或分母无法解析（" + r[1] + " / " + r[2] + "）", formula: df });
+            result.skipped.push({ id: did, reason: "分子或分母无法解析（" + r[1] + " / " + r[2] + "）", reason_en: "numerator or denominator could not be parsed (" + r[1] + " / " + r[2] + ")", formula: df });
             continue;
           }
           push2(result, did, dm, "derived_ratio", a.value / b.value, srcNote(r[1], a, r[2], b), opt, computed);
@@ -195,7 +196,7 @@
           var a2 = resolve(computed, metrics, r[1]);
           var b2 = resolve(computed, metrics, r[2]);
           if (a2 === null || b2 === null || !b2.value) {
-            result.skipped.push({ id: did, reason: "分子或分母无法解析（" + r[1] + " / " + r[2] + "）", formula: df });
+            result.skipped.push({ id: did, reason: "分子或分母无法解析（" + r[1] + " / " + r[2] + "）", reason_en: "numerator or denominator could not be parsed (" + r[1] + " / " + r[2] + ")", formula: df });
             continue;
           }
           push2(result, did, dm, "derived_per_km", a2.value / (b2.value / 1000), srcNote(r[1], a2, r[2], b2), opt, computed);
@@ -203,7 +204,7 @@
           var a3 = resolve(computed, metrics, r[1]);
           var announced = parseFloat(r[3]);
           if (a3 === null || !announced) {
-            result.skipped.push({ id: did, reason: "无法解析被比较项 " + r[1], formula: df });
+            result.skipped.push({ id: did, reason: "无法解析被比较项 " + r[1], reason_en: "could not parse the compared item " + r[1], formula: df });
             continue;
           }
           push2(

@@ -866,7 +866,7 @@ This browser cannot play embedded video; open assets/media/narrative.mp4 directl
 <h3 class="sub3"><span class="ix">D·2</span>Four-gate self-check</h3>
 <div class="gates"><div class="gate"><div class="gn">Deterministic validation<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">deterministic_validation · returncode 0</div><pre>errors 0
 warnings 24
-total bytes 40,805,922
+total bytes 40,809,320
 · submissions/wanghao198822/jingzhang-century-answer/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied
 · submissions/wanghao198822/jingzhang-century-answer/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context</pre></div><div class="gate"><div class="gn">Spatial review<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">spatial_review · returncode 0</div><pre>stage formal
 issues 3 (minor:3)
@@ -883,11 +883,11 @@ known_metric_refs_required = 83
 proposal_format_version = 2
 evidence_contract = section-anchors-plus-structured-audit
 proposal_reference_counts = source:23, standard:8, depth:15, data:26, metric:11</pre></div></div>
-<div class="note">From self_check.json: stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>Calibre of total bytes: the figure above is the value recorded at self-check time. self_check.json is itself counted in the total, and the tool measures after writing an intermediate file that does not yet carry the gate results, so an independent re-run reports 758 bytes more (40,806,680). The difference is exactly the growth of self_check.json once the gate results are attached — an inherent two-phase write in the tool that changes no gate verdict.</div>
+<div class="note">From self_check.json: stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>Calibre of total bytes: the figure above is the value recorded at self-check time. self_check.json is itself counted in the total, and the tool measures after writing an intermediate file that does not yet carry the gate results, so an independent re-run reports 758 bytes more (40,810,078). The difference is exactly the growth of self_check.json once the gate results are attached — an inherent two-phase write in the tool that changes no gate verdict.</div>
 <div class="tw"><table class="dt"><thead><tr><th>Check</th><th>Result</th><th>Severity</th><th>Target</th><th>Message</th></tr></thead><tbody><tr><td><code class="mid2">DETERMINISTIC_VALIDATION</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">validate_local_submission.py</code></td><td>deterministic_validation: PASS</td></tr><tr><td><code class="mid2">SPATIAL_REVIEW</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">spatial_review.py</code></td><td>spatial_review: PASS</td></tr><tr><td><code class="mid2">VISUAL_PACKAGING</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">visual_review.py</code></td><td>visual_review: PASS</td></tr><tr><td><code class="mid2">PROFESSIONAL_EVIDENCE</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">professional_review.py</code></td><td>professional_review: PASS</td></tr></tbody></table></div>
 </div></section>
 <section class="sec apx" id="s12"><div class="wrap"><div class="sh rv"><span class="no">E</span><h2 class="serif">Appendix E · Verify it yourself, on the spot</h2><span class="sub">Three scripts recompute in your own browser</span><span class="en">附录 E · 可当场核验工具</span></div>
-<div class="vcall"><div class="vh">VERIFIABLE ON THIS PAGE</div><div class="vt">Not one number on this page asks to be taken on trust. The three buttons below: <b>geometry recomputation</b> re-runs 70 items from the formulas written inside metrics.json; <b>page-value check</b> compares all 165 declarations on this page against metrics.json; <b>topology and coverage</b> recomputes the land-use and phasing gaps and overlaps with boolean operations. The scripts run in your own browser, offline, and list every pass and every deviation.</div></div>
+<div class="vcall"><div class="vh">VERIFIABLE ON THIS PAGE</div><div class="vt">Not one number on this page asks to be taken on trust. The three buttons below: <b>geometry recomputation</b> re-runs 70 items from the formulas written inside metrics.json; <b>page-value check</b> compares all 171 declarations on this page against metrics.json; <b>topology and coverage</b> recomputes the land-use and phasing gaps and overlaps with boolean operations. The scripts run in your own browser, offline, and list every pass and every deviation.</div></div>
 <div class="pp">Anyone can check this independently is not an attitude, it is three buttons on this page. Press one and the verification script recomputes in your own browser, from verbatim inlined copies of geometry/*.geojson and metrics.json: geometry is recomputed from the formulas written in metrics.json itself, page values are compared item by item against metrics.json, and land-use and phasing coverage gaps and overlaps are recomputed with boolean operations. Every item is listed; neither passes nor deviations are hidden.</div>
 <div class="vbar rv">
  <button type="button" class="vb" id="va">Run all three</button>
@@ -1066,7 +1066,7 @@ function runGeom(){
   });
   var sk = (g.skipped || []).map(function(s){
     return '<tr class="unkrow"><td class="rh">' + esc(s.id) + '</td><td colspan="4"><div class="why">'
-      + esc(s.reason) + "</div></td><td>—</td></tr>";
+      + esc(LANG === "en" && s.reason_en ? s.reason_en : s.reason) + "</div></td><td>—</td></tr>";
   });
   var line = TXT.sum_geom.replace("{p}", g.summary.passed).replace("{t}", g.summary.total)
                          .replace("{s}", g.summary.skipped);
@@ -1089,7 +1089,7 @@ function runTopo(){
   if (!window.CA_verifyTopology) return '<div class="vidle">CA_verifyTopology unavailable</div>';
   var t = window.CA_verifyTopology();
   var rows = t.checks.map(function(c){
-    return '<tr><td class="rh">' + esc(c.label || c.id) + '</td><td class="num">' + n(c.expected)
+    return '<tr><td class="rh">' + esc((LANG === "en" && c.label_en ? c.label_en : c.label) || c.id) + '</td><td class="num">' + n(c.expected)
       + '</td><td class="num">' + n(c.computed) + '</td><td class="num">' + n(c.delta) + '</td><td class="num">'
       + n(c.tolerance) + "</td><td>" + pill(c.pass) + "</td></tr>";
   });

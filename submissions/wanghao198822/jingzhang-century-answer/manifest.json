@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "468208ddaf887290db3d0b117f4613391b32005a365064477fa2e99849ea3098"
+      "sha256": "eb1e548539e50001ce725e51be680ca84866a73825545f749953e6aaa3470163"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "34e342a3d4c597760f69cb8877ca3f89a59fb9228ad4369e4e621e38a8bde6bb"
+      "sha256": "b5d3efe32f8916a42b8cc2cfc8a3647d9ab636aab78feee95b5c9ca77236a96e"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "b77bc6867620118b646e8f7ffc9df48e5ce5fd505cfb7570b87fef6cdaefc47d"
+      "sha256": "ddfdacce452f93ec0828de46446c5e0f93bbef253c54083eef1150b6bcb81a7b"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -526,7 +526,7 @@
       "path": "visual/assets/verify_geometry.js",
       "role": "verification_script",
       "required": false,
-      "sha256": "9bd790cb6adf3ad34df8f70abc40d9b3e11fadcf9ab36bbd5bc7f95b4cd3c5e9"
+      "sha256": "418dbea3c9f22c50a3b5866fc758fafe9c342e58f2ffc43afba3b9d73bb80b59"
     },
     {
       "path": "visual/assets/verify_metrics.js",
@@ -538,7 +538,7 @@
       "path": "visual/assets/verify_topology.js",
       "role": "verification_script",
       "required": false,
-      "sha256": "5c4a425ff94809a39b3c7abcb8d73a34a319a8d331db7df981572a3f385fdde4"
+      "sha256": "3768786d453b7a9c1ac85b9c3952da9ee926ca564306c9639f780036d4b873cd"
     },
     {
       "path": "visual/assets/renders/render-answer-gate.jpg",
