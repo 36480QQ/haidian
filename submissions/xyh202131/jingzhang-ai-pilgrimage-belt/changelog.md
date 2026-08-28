@@ -1,5 +1,19 @@
 # 方案迭代记录 / Changelog
 
+## v69.0 - 2026-08-28
+
+**人本任务 Demo 深化 / Human-task Demo Depth**
+
+- 修复前可见 demo 只有 6 个线性段落，三处原型主要依赖一张图，12 个场景和 8 个项目只以数字标签出现；上一轮评审状态修复也未修改 `visual/index*.html`，因此用户看到的体验边界确实没有扩大。
+- 将中英文离线 demo 重构为 8 个可导航层级：普通任务、三处体验、四态、空间系统、12 场景、8 项目、专业交接和证据。三处原型逐项展开“到达—理解—完成—纠正或撤回—离开”、普通—验证—故障—恢复及不可删除条件，所有折叠组默认展开并可用键盘切换。
+- 复用现有 9 组中英图件和既有概念视频，不新增媒体或外部来源；页面仍为零 JavaScript、零远程依赖、无自动播放，并保留静态回退、离线 CJK 字体、390px 响应式、44px 导航目标、减少动态和完整打印内容。
+- 扩大的是可见体验深度，不是空间、事实或实施边界。geometry、`metrics.json`、12/8/3/36、G0/NO-GO、临时边界、现实结果 0、责任接受 0、独立人工双语复核 0/8、PDF 和权利边界保持冻结。
+
+- Before repair, the visible demo contained only six linear sections, the three prototypes depended mainly on one figure, and the 12 scenes and eight projects appeared only as count labels. The previous review-state repair did not change `visual/index*.html`, so the visible experience boundary had indeed not expanded.
+- Rebuilt both offline visual pages into eight navigable levels: ordinary task, three place experiences, four states, spatial system, 12 scenes, eight projects, professional handoff and evidence. Each prototype now exposes arrive-understand-complete-correct or withdraw-leave, Ordinary-Test-Failure-Restore, and non-removable conditions. Every disclosure group is open by default and remains keyboard-toggleable.
+- Reused nine existing bilingual figure families and the existing concept video without adding media or external sources. The pages retain zero JavaScript, zero remote dependency, no autoplay, static fallback, offline CJK font, 390px responsiveness, 44px navigation targets, reduced-motion support and complete print content.
+- What expands is visible experience depth, not spatial, factual or implementation scope. Geometry, `metrics.json`, 12/8/3/36, G0/NO-GO, provisional boundaries, zero real outcomes, zero accepted duties, 0/8 independent human bilingual review, PDFs and rights boundaries remain frozen.
+
 ## v68.0 - 2026-08-28
 
 **评审状态与精确版本绑定 / Review-state Exact-head Binding**
