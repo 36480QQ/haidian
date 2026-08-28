@@ -990,28 +990,6 @@
       "assumptions": [
         "Every claim carries an evidence level; L5 items never masquerade as official facts."
       ]
-    },
-    "review_first_screen_question_count": {
-      "status": "known",
-      "value": 8,
-      "unit": "count",
-      "source_files": [
-        "proposal.md"
-      ],
-      "formula": "count(review first-screen question rows in Table A21)",
-      "confidence": "high",
-      "assumptions": []
-    },
-    "command_evidence_count": {
-      "status": "known",
-      "value": 6,
-      "unit": "count",
-      "source_files": [
-        "proposal.md"
-      ],
-      "formula": "count(reproducible verification command rows in Table C5)",
-      "confidence": "high",
-      "assumptions": []
     }
   }
 }
