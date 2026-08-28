@@ -1,3 +1,17 @@
+# 方案迭代记录 / Changelog
+
+## v67.0 - 2026-08-28
+
+**审计入口闭合 / Audit Entry Closure**
+
+- 修复前 `changelog.md` 以 `## v66.1` 开头，唯一文档级标题落在第 101 行；最新版本先于文档身份出现，不符合投稿 Skill 的 validator-feedback reference 对 changelog 首行标题的结构合同。
+- 将唯一双语标题恢复到首个非空行，保持全部历史版本正文和顺序；确定性回归检查验证标题唯一且位于首行、版本标题格式正确、版本号唯一并按新到旧排列。
+- 本轮只修复审计入口；不改 proposal、report、visual、图件、媒体或四份 PDF，不改变 geometry、`metrics.json`、12/8/3/36、G0/NO-GO、临时边界、现实结果 0、专业接责 0、独立人工复核 0/8 或权利边界。
+
+- Before repair, `changelog.md` began with `## v66.1`, while its sole document title appeared at line 101. The newest entries therefore preceded the document identity and did not satisfy the changelog leading-title contract in the submission Skill's validator-feedback reference.
+- Restored the sole bilingual title as the first nonblank line while preserving every historical entry and its order. A deterministic regression check verifies one leading title, valid version-heading syntax, unique versions and newest-first ordering.
+- This round changes only the audit entry. It does not alter the proposal, reports, visuals, figures, media or four PDFs, nor geometry, `metrics.json`, 12/8/3/36, G0/NO-GO, provisional boundaries, zero real outcomes, zero accepted professional duties, 0/8 independent human review or rights boundaries.
+
 ## v66.1 - 2026-08-28
 
 **精确包权利计数口径统一 / Exact-package Rights Count Alignment**
@@ -97,8 +111,6 @@
 - Reordered paired proposal, report, visual and four PDFs to answer one person-one task-one place before the ruling, prototypes, four states and handoff candidate. The visual retains six navigation items, zero JavaScript, zero remote dependencies, no autoplay and static fallback.
 - A3 remains 14+14 pages and A0 remains 8+8 pages; 44/44 pages expose extractable text and two fresh-process builds are byte-identical. All four final HTML surfaces load the package-local CJK font with zero missing glyphs, external resources or horizontal overflow.
 - No new media type or path was added; only the existing poster was rebuilt, while the MP4, VTT, transcript and 54-second editorial pacing remain unchanged. Source status, geometry, `metrics.json`, 12/8/3/36, G0/NO-GO, provisional status, zero real results, zero accepted professional duty and zero independent real-world retests remain unchanged.
-
-# 方案迭代记录 / Changelog
 
 ## v62.1 - 2026-08-27
 
