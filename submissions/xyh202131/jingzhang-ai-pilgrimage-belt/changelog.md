@@ -1,3 +1,21 @@
+## v66.0 - 2026-08-28
+
+**政策—公共任务防误读层 / Policy-to-Public-Task Firewall**
+
+- 前序 PR #4104 已合并并进入最新 canonical `main`，同投稿包开放 PR 为 0、独立工作树洁净；在复读最新规则、任务书、中央来源登记与社区状态后复跑六闸基线。
+- 修复前可复现缺口：包内已有 49 条来源而正文仍写 48，且政策方向散落在正文和来源元数据中，没有一个结构化入口同时回答适用范围、普通任务、G1 前置、停止规则和禁止推论。
+- 新增六条双语政策—公共任务映射并同步 proposal、report、visual、A3-13、A0-07：政策只设置进入门，不替代批准、责任、伙伴承诺、执法权、现场结果或专业接责。
+- 明确三项易误读边界：无障碍法第三十九条只限列举公共服务事项；适老化方案继续为 `background_only`；生成式 AI 投诉链不得虚构法定天数或一般退出权。内容标识只在实际生成传播时触发。
+- 来源登记由 49 增至 52；新增一份投稿方原创结构化登记表后，逐路径权利清单由 157/157 更新为 158/158，政策原文、网页布局与标识不嵌入、不重新许可。
+- A3 仍为 14+14 页、A0 仍为 8+8 页，主导航仍为六项，本轮无新媒体。geometry、全部空间与数值规划指标、12/8/3/36、G0/NO-GO、provisional、现实结果 0、专业接责 0、独立法律/商标审查 0 均冻结；`metrics.json` 只同步当前精确包权利说明中的 158/158 路径数，不改指标值、分母或置信度。
+
+- Predecessor PR #4104 was merged into the latest canonical `main`; no same-package PR remained open and the isolated worktree was clean. Current rules, taskbook, central source registry and community state were re-read before all six baseline gates were rerun.
+- Reproducible before-gap: the package contained 49 source records while the proposal still said 48, and policy direction was dispersed across prose and source metadata without one structured route covering scope, ordinary task, G1 prerequisite, stop rule and prohibited inference.
+- Added six bilingual policy-to-public-task mappings and synchronized proposal, report, visual, A3-13 and A0-07. Policy sets an entry gate; it does not replace approval, responsibility, a partner commitment, enforcement authority, field outcome or accepted professional duty.
+- Closed three high-risk misreadings: Barrier-Free Environment Construction Law Article 39 stays limited to listed public-service matters; the elderly smart-technology plan remains `background_only`; and the generative-AI complaint chain creates no fabricated statutory day count or general opt-out. Content labelling is conditional on actual generation and distribution.
+- Source records rise from 49 to 52. With one new contributor-authored structured register, path rights coverage rises from 157/157 to 158/158; policy text, page layout and marks are neither embedded nor relicensed.
+- A3 remains 14+14 pages, A0 remains 8+8, navigation remains six items and no media is added. Geometry, every spatial and numeric planning metric, 12/8/3/36, G0/NO-GO, provisional status, zero real outcomes, zero accepted professional duty and zero independent legal/trademark review remain frozen. `metrics.json` changes only the current exact-package rights explanation to 158/158 paths; no metric value, denominator or confidence changes.
+
 ## v65.1 - 2026-08-28
 
 **当前精确包权利状态消歧 / Current Exact-Package Rights Disambiguation**
