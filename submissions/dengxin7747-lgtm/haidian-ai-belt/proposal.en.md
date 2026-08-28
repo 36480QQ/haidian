@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "The Jing-Zhang Archive Belt writes open co-creation into the city archive: a Memory Spine along the Jing-Zhang heritage park, with Source / Transform / Scenario Archive Stations on the three key areas and two record wings. The Archive Charter (tiered archiving, tiered search, corrections and withdrawal, minimum-necessary fields, human-final honors, archive-as-evidence, and non-AI equivalent paths) organizes AI services and contributor recognition. All spatial content is a conceptual proposal on a provisional boundary and will be fully recalculated when official data is released."
+summary: "The Jing-Zhang Archive Belt writes open co-creation into the city archive: a Memory Spine along the Jing-Zhang heritage park, with Source / Transform / Scenario Archive Stations on the three key areas and two record wings. The Archive Charter (open archiving, searchability, corrections, privacy, human-final honors, archive-as-evidence) organizes AI services and contributor recognition. All spatial content is a conceptual proposal on a provisional boundary and will be fully recalculated when official data is released."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
@@ -45,35 +45,18 @@ The five functions translate as follows: the Full-Stack Independent AI Innovatio
 
 **Naming system and visual identity direction (agent.1)**: the main name follows the official "Centennial Jing-Zhang AI Innovation Belt (JZ-AI Belt)"; the spatial naming system is "Memory Spine — Source / Transform / Scenario Archive Station — Record Wings"; the Logo direction uses an "archive card × rail sleeper" motif—archive cards arranged along the rails, each bearing an "archiving line," with space above the line always awaiting new contributions; the identity language uses the three archive-status colors (in archive / pending review / corrected) across wayfinding, scenario cards, and public interfaces, homologous with railway signal culture. All logos, fonts, and graphics must be rights-cleared before use [source:AGENT-TASKBOOK].
 
-### Global AI innovation ecosystem cases: mechanisms only, no borrowed numbers (agent.2)
+### Global cases: mechanisms only, no borrowed numbers
 
-The five cases below are **needs-review/background** public-page snapshots (accessed 2026-08-24). They are used only to frame mechanism questions: they are excluded from formal evidence mapping, approval grounds and local performance comparison. No images, logos, maps, passages or numbers are copied, and no endorsement, applicability, partnership or implementation commitment is inferred.
+Six global cases fall into two families—**memory/archive institutions** and **open collaboration platforms**—and the proposal's core judgment is the convergence of the two (case information is taken from public sources as background material; no performance numbers are cited and no local analogy is made):
 
-| Global case | Ecosystem inputs covered | Mechanism abstraction only | Conceptual correspondence in this proposal |
-|:---|:---|:---|:---|
-| Mila (Montréal) [source:MILA-ECOSYSTEM] | Research, talent, commercialization | A continuous interface between a research community and lab-to-startup support | The Source Station places research, standards, talent and reviewable tests together |
-| Vector Institute (Toronto) [source:VECTOR-ECOSYSTEM] | Research, talent, industry adoption | A long-term organizational interface across research, talent and industry adoption | The Transform Station tier-archives talent, enterprise outcomes and public display |
-| Hub71+ AI (Abu Dhabi) [source:HUB71-AI-ECOSYSTEM] | Capital, firms, market, test environment | Venture building, capital/corporate connections and a guided testing path | The two wings hold a conceptual interface for capital and enterprise actors **to be confirmed**; no funding or access commitment |
-| AI Sweden Data Factory (Sweden) [source:AI-SWEDEN-DATA-FACTORY] | Data, compute, compliance, testing | Data, compute and test environments organized with legal and technical support | JZA-07/JZA-13 form a data–compute–evaluation interface through minimum-necessary, tiered-access and test records |
-| Forum Virium Helsinki Mobility Lab (Helsinki) [source:HELSINKI-MOBILITY-LAB] | Urban scenarios, digital twin, resident feedback | A real-city setting links government, research, firms and resident feedback | The Scenario Station and Xiaoyue wing bring staffed service, correction and de-identified feedback into stage reviews |
-
-| Information item | Source-use boundary in this revision |
-|:---|:---|
-| Grade and time | `needs-review/background`; public-page snapshot accessed 2026-08-24; future operating status requires renewed verification |
-| Licence and content boundary | Link plus short mechanism summary only; no visual, logo, map, long text, number or proprietary material reused |
-| Local-use boundary | It frames questions that may be discussed only; it does not establish redlines, area, finance, delivery actors, approvals, collaboration or performance claims |
-
-### AI innovation ecosystem mechanism loop (agent.2)
-
-The proposal does not transplant these cases to Haidian. Instead, it treats **land and space, industry, capital, talent, compute, data and test scenarios** as inputs to be verified, and organizes them through a conceptual loop of “three stations / two wings — 13 projects — stage review.” The Source Station combines research, talent, compute and standards; the Transform Station provides an interface for outcomes, firms and capital collaboration; the Scenario Station and Xiaoyue wing host real service, testing and correction; the Zhongguancun service wing records factor collaboration. Competent legal entities decide whether any later phase proceeds only after formal boundaries, ownership, data, finance and operating conditions are confirmed; this proposal makes no prior commitment.
-
-![AI innovation ecosystem mechanism matrix](assets/figures/ai-ecosystem.en.png)
-
-| Input | Three-station / two-wing carrier | Projects and phase | Feedback and role boundary |
-|:---|:---|:---|:---|
-| Land/space, research, talent, compute | Source Station · Zhongzhiyuan | JZA-07, JZA-10 (P2/P3) | Universities and research institutes are **conceptual roles**; standards, evaluation and spatial conditions are reviewed |
-| Industry, capital, IP, talent | Transform Station · AI Origin Community + Zhongguancun service wing | JZA-02, JZA-04, JZA-05 (P1) | Enterprise and investment actors are **to be confirmed**; no funding size, access or return commitment |
-| Data, testing, civic service, resident experience | Scenario Station · Dazhongsi + Xiaoyue scenario wing | JZA-01, JZA-03, JZA-06, JZA-08, JZA-09, JZA-11, JZA-12, JZA-13 (P1/P2/P3/ongoing) | City and community service windows are **conceptual roles**; de-identified feedback, human review and a stop mechanism come first |
+| Case | Transferable mechanism | Archive Belt application |
+|:---|:---|:---|
+| International Council on Archives (ICA) | Openness, searchability, long-term preservation standards | Archive Charter principles 1–2 |
+| US National Archives Citizen Archivist program | Public participation in description and correction | Contribution Intake Desks and correction review |
+| Wikipedia contributor system | Version history, dispute arbitration, reputation | Commit stele and Honor Yearbook |
+| Open-source foundations (e.g., Linux Foundation) | Commit–review–merge contribution records | Open-Source Commit Stele |
+| City memory programs (oral-history archives) | Archives as public cultural assets | Memory era installations on the spine |
+| Open data portals | Tiered open data with provenance | Archive data platform (JZA-13) |
 
 ### Conceptual differentiation from adjacent peer themes (originality argument)
 
@@ -191,27 +174,6 @@ Non-AI equivalent paths (Charter article 7, operationalized): every AI service e
 | Scenario test block (TEST) | On-site staff, offline application | Stop testing and switch to human on anomalies |
 | Honor Yearbook Node / Open-Source Commit Stele | On-site filing, paper archive | Human channel retained on digital-terminal failure |
 
-### Figure–scenario–project–metric cross-index (conceptual correspondence)
-
-> This index checks the design narrative; spatial recomputation metrics do not substitute for operating performance. Every operating baseline, threshold and responsible entity awaits specialist studies and confirmation by a legally responsible body.
-
-| Scenario card | Figure / spatial carrier | Corresponding projects | Key metric or evidence to retain |
-|:---|:---|:---|:---|
-| S01 Contribution Intake Desk | `node-sequence`, `node-details`, Memory Spine | JZA-02 | Authorization coverage, paper/digital rehearsal and correction closure; baseline pending |
-| S02 Service Archive Panel | `node-details`, public-space nodes | JZA-03, JZA-13 | Staffed-counter accessibility, status updates and correction records; baseline pending |
-| S03 Memory era installations | `site-overview`, Memory Spine | JZA-01 | Public-space layer and on-site accessibility check |
-| S04 Honor Yearbook Node | `node-details`, AI Origin public edge | JZA-04 | Authorization, withdrawal and human-review records |
-| S05 Open-Source Commit Stele | `facility-system`, AI Origin public edge | JZA-05 | Rights verification, display capacity and correction records |
-| S06 Scenario Test Block | `key-areas`, Dazhongsi street corner | JZA-06, JZA-08 | Test boundary, safety review and suspension record |
-| S07 Model Evaluation & Standards Hall | `key-areas`, Zhongzhiyuan | JZA-07, JZA-10 | Evaluation version, energy and rerun-method study |
-| S08 AI cultural guide | `signage-system`, Memory Spine | JZA-01, JZA-13 | Human-guide/paper alternative and correction record |
-| S09 Smart civic service hub | `facility-system`, neighborhood nodes | JZA-03, JZA-13 | Service state, human handling and minimum-necessary data record |
-| S10 AI-native consumption block | `key-areas`, Dazhongsi | JZA-11 | Public access, service reachability and over-commercialization review |
-| S11 Xiaoyue experience path | `mobility-bluegreen`, Xiaoyue wing | JZA-09 | Greenway continuity, ecological impact and scenario-capacity study |
-| S12 Archive Open Season venue | `ai-ecosystem`, belt public space | JZA-12 | Event safety, non-AI equivalent path and retrospective record |
-
-![S01 Contribution Desk: human-scale spatial sequence (conceptual)](assets/figures/node-sequence.en.png)
-
 ![Mobility and blue-green system with archive facilities](assets/figures/mobility-bluegreen.en.png)
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
@@ -253,14 +215,6 @@ Renewal projects follow "archive anchors + spine stitching + blue-green upgrade 
 The implementation mechanism uses "project library + annual action plan + dynamic adjustment" as a conceptual recommendation: after official boundaries, ownership, controls, municipal capacity and operating entities are confirmed, competent professional teams must determine whether each item enters specialist studies, statutory procedures and implementation. This proposal does not represent background policy, cases or local mechanisms as confirmed project applicability.
 
 Phasing is learning: "Archive Starter Zone → full-line skeleton → node deepening" rolls forward, with each phase writing verification results into the archive; expansion depends on safety, privacy, heritage, ecology and operating reviews [depth:phasing_implementation] [data:geometry/phasing.geojson#PHASE-001].
-
-**Archive Starter Zone: start-control table (conceptual recommendation).** Before any field construction, data processing, or public service begins, a legally authorized professional or operating body must complete the respective review. This table defines proposed entry, stopping, and record-keeping rules only; it does not imply that any project is authorized.
-
-| Pilot | Proposed entry condition | Minimum operating setup | Human takeover and stop | Acceptance evidence to retain |
-|:---|:---|:---|:---|:---|
-| S01 Contribution Intake Desk | Site-use consent, privacy notice, and paper process ready | One staffed-intake role, paper archive cards, level access | Terminal failure moves to paper; disputed entries pause display for human review | Paper/digital flow rehearsal record; correction-closure record |
-| S02 Service Archive Panel | Data-minimization review and a community staffed counter available | Panel, static notice board, on-site correction entry | Network failure moves to static notice; misread feedback enters human review | Staffed-counter accessibility check; status-update and correction record |
-| S04 Honor Yearbook Node | Authorization rules, human-review procedure, and withdrawal mechanism defined | Readable yearbook display and on-site submission channel | Nomination dispute or withdrawal pauses display while retaining correction history | Human-review record; authorization, withdrawal, and correction records |
 
 **Archive Starter Zone: start-control table (conceptual recommendation).** Before any field construction, data processing, or public service begins, a legally authorized professional or operating body must complete the respective review. This table defines proposed entry, stopping, and record-keeping rules only; it does not imply that any project is authorized.
 
@@ -463,16 +417,3 @@ Area recalculation: all areas are computed directly from polygon geometry under 
 | JZA-11 | Dazhongsi Scenario Archive Station | Industry/building | 3 | District investment + commercial tenants | Plot renewal scheme | Renewal and public-opening specialist procedures | Public access, scenario operation and commercial-boundary studies | Over-commercialization → operating rights recalled |
 | JZA-12 | Archive Open Season annual operations | Operations | 1 (ongoing) | Joint operating committee | Resource arrangement, event safety plan | Event-safety and site-use procedures | Event scale, participation modes and accessible-service studies | Safety/reputation incident → pause |
 | JZA-13 | Archive data platform and charter | New infrastructure/governance | 2 | District data department + standards organization | Data-security assessment, tiering rules | Data-security and cyberspace-related procedures | Data classification, retention, access control and correction-loop studies | Data leak → shutdown |
-
-### Role, baseline and decision points for JZA-01–05 and JZA-12 (RACI types, pending)
-
-> This table defines role types only, not confirmed institutions. “A/R/C/I” means accountable, responsible, consulted and informed. No threshold is pre-set; an authorized legal body decides whether to advance or pause from retained evidence.
-
-| Project | A/R/C/I role types | Baseline and measurement frequency | Acceptance-evidence responsibility | Expansion / pause decision point |
-|:---|:---|:---|:---|:---|
-| JZA-01 | A: legally authorized project body; R: slow-mobility/landscape team; C: accessibility, ecology, heritage and ownership roles; I: corridor users | Check continuity, accessibility and ecology before implementation; recheck after design changes | Designated archive custodian keeps survey, accessibility and ecology-review records | Stage review uses conflict, reachability and ecology evidence to expand or revert |
-| JZA-02 | A: legally authorized operating body; R: staffed intake and data-handling roles; C: privacy, accessibility and community-service roles; I: participants | Establish authorization, paper/digital rehearsal and correction-closure baseline in the first week; review monthly | Designated operations recorder keeps authorization, rehearsal and closure records | Pause on privacy incident, no human takeover or unclosed correction; expand only after stage review |
-| JZA-03 | A: legally authorized operating body; R: community service and facility-maintenance roles; C: privacy, safety and accessibility roles; I: residents | Check staffed counter, static notice and correction route before opening; review monthly | Designated service recorder keeps accessibility, status-update and correction records | Pause on data/safety event or unavailable staffed counter; stage review decides expansion |
-| JZA-04 | A: legally authorized operating body; R: yearbook editor and human-review roles; C: rights, heritage and community roles; I: nominees and visitors | Establish authorization, withdrawal and human-review baseline for each nomination; annual review | Designated yearbook recorder keeps review, authorization and withdrawal records | Pause display on nomination dispute, withdrawal or heritage conflict; annual review decides continuation |
-| JZA-05 | A: legally authorized operating body; R: content-verification and display-maintenance roles; C: copyright, open-source and data-governance roles; I: contributors | Verify rights, attribution and correction route before each release; review at each version update | Designated display recorder keeps rights, version and correction records | Take down and review on rights/content dispute; stage review decides display expansion |
-| JZA-12 | A: legally authorized operating body; R: event coordination and on-site service roles; C: safety, accessibility, community and data-governance roles; I: participants and nearby users | Set safety, staffed-service and non-AI path checklist before each event; retrospective after each event and annually | Designated event recorder keeps safety, accessibility, staffed-service and retrospective records | Pause on safety/reputation incident or non-AI path failure; annual stage review decides subsequent scale |
