@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v2.7 - 2026-08-28
+
+Implementation-readiness handoff register / 实施准备度交接台账
+
+- Feasibility refinement / 可实施性深化：新增 `visual/assets/implementation-readiness-register.json`（`IMPLEMENTATION-READINESS-01`）与只读审计 `visual/assets/implementation-readiness-audit.js`。台账统一列出 4 道实施门、9 个更新项目、6 个待确认角色和 6 个证据簇；逐项给出概念试点引用、输入/输出、已有指标或设计目标、退出材料、停止条件及 E2→E3/E4 晋级条件。
+- Evidence boundary / 证据边界：所有角色实体继续为 `null / unknown`，签署继续 `not_signed`，现场授权继续 `unknown`，总体状态继续 `not_ready_for_field_operation`；该台账只补充可审计的交接结构，不构成 E3 现场、E4 主体/专业确认、审批、资金或实施承诺。
+- Verification / 验证：`implementation-readiness-audit.js --json` 与 `--self-test --json` 均通过；self-test 在内存中注入角色确认后 fail-closed，源文件不被修改。同步更新中英 proposal 与离线报告，随后刷新 manifest 并重跑四门 self-check。
+
 ## v2.6 - 2026-08-24
 
 P3-02 review response: fonts, regional synergy, operations chain / 评审响应：字体、区域协同、运营链

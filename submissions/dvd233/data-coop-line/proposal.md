@@ -7,8 +7,6 @@ bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗址公园为公共数据合作主线，用一张会到期、会撤回、会披露残余影响并回报公共价值的数据票，把受控计算转化为可选择、可追溯且设有无数据等价服务的城市制度空间。"
-tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
-scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # 共数京张 / THE DATA CO-OP LINE
@@ -355,6 +353,10 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 所有项目共用七条政策闸门：用途必须可读且可集体修改；许可按目的和期限拆分；原始数据优先不出控制域；数据劳动的工时、质量争议和回报规则事前公开；模型、特征、报告和公开输出建立派生链；撤回回执区分“删除受控副本”“停止未来使用”“公开输出下架”“模型需重评”和“无法保证抹除”；形成经济或非经济收益时，项目启动前就约定可审计的公共回报选项。任何项目未提供无数据等价正线、人工复核和停止条件，均不得进入下一阶段。
 
 分期采用三道门而非单纯年份。**门 0：证据与共同议定**，完成正式边界、专业底图、法律伦理、需求与无数据基线；**门 1：可逆原型**，在不改变法定用地和不采集高风险真实数据的条件下测试用途票、人工服务、合成数据和回执；**门 2：受控场景**，经独立评估后运行有限用户、有限期限、可关停的测试；**门 3：空间深化**，只有当交通、市政、权属、文保、资金和审批均明确时才讨论永久改造。当前 `phasing.geojson` 只表达概念分期范围 [data:geometry/phasing.geojson#PHASE-001] [depth:phasing_implementation]。
+
+**实施准备度交接台账（E2，不是实施证据）。** 为避免“有分期但接手人不知道下一份材料是什么”，新增 `IMPLEMENTATION-READINESS-01`，把 4 道门、9 个更新项目、6 个待确认角色和 6 个证据簇放进同一份可复核台账 [data:visual/assets/implementation-readiness-register.json#IMPLEMENTATION-READINESS-01]。每个项目都明确当前阶段、概念试点区引用、输入、输出、至少两项验收指标、退出材料和停止条件；`C-01/C-02/C-04` 直接指向已有合成容量门，其他指标明确标为设计目标或概念量。每道门同时列出参与者可准备的台账产物与必须由外部取得的官方、现场、运营或专业确认，避免把“模板完整”读成“门已开启”。
+
+台账中的 6 个角色槽位均仍为 `entity: null`、`status: unknown`、`signoff_status: not_signed`；9 个项目的问责实体均仍为 `null / unknown`；总体状态固定为 `not_ready_for_field_operation`。因此本轮补齐的是实施交接的可操作结构和可审计停止路径，不是运营主体、现场授权、消防市政、容量、审批或资金证据。`implementation-readiness-audit.js` 会检查项目/门/角色/证据簇的完整性，并在内存中把一个角色改成 confirmed 时 fail-closed：`node visual/assets/implementation-readiness-audit.js --self-test --json`。只有取得授权 E3 现场材料与 E4 主体/专业确认后，台账中的对应槽位才可按来源、范围和哈希逐项替换。
 
 年度运营建议形成可复盘的节律：每月一次议题桌，公开下一批城市问题和反对意见；每季度一次场景开放窗，只开放已过闸任务并发布失败报告；每半年一次劳动与回报结算会，核对工时、公共成果、异议和未兑现事项；每年举办“共数开放周”，串联三地标、案例诊所、无数据正线实测、国际圆桌和下一年度议题投票。年度报告至少披露任务数量、拒绝或停止数量、撤回处理时长、无法回滚项、两线服务差距、公共回报状态、能耗和安全事件。该节律是运营参考，不表示已有主办方、经费或国际合作。
 

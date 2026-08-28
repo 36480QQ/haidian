@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ddec1c36c2b21eb1777ee118ff59df6c80abb20ace53815c1010cbf72009ec90"
+      "sha256": "4b496665a2526e39aaf11668a1d236f28c2f5643d4c62debbf813894e4993d8f"
     },
     {
       "path": "agent.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "5723b6b19511a770a05a523845632d1fc142c4629295a46acc1abcc01a7bb239"
+      "sha256": "2407d631be20e12f91f494ce9a235f602cb6dbb4ab00f27b34aa7afc0feefe63"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "603662fb169e0e275518eb231d5837c05a8399e0d6bfa4b4d76a2964f5aa4891"
+      "sha256": "810671d3cf405b66ab4e33e4ed1a57fe08c567b0d50df9b9e19fa7d8488e3b31"
     },
     {
       "path": "report/narrative.md",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e97aba8e753a51a105906883b956905b1c31f756025ef91a40dc2ee2b8acf509"
+      "sha256": "9da54e734c3ddfe6e8404414f7ff0b41aec3c25a04fd41746ca9dbec8b35368e"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9da66ce033c31b50b3de3a0f3fd1c0bf0321d5449b4ba32a61ba1b018b55673a"
+      "sha256": "688a25a3e494b3c17ee79050c18e52f940342d6f4d3a8b950dbba8c784eeaef5"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -290,7 +290,7 @@
       "role": "changelog",
       "required": true,
       "language": "neutral",
-      "sha256": "4908b5a41b49162a39f2938c7e0b102cffedf6ab5f71ca289cdfdc2aafc9f710"
+      "sha256": "2a5393d69da79bb6f0641e84d24d3b1ed679d0273cf13a66f5415795598ec011"
     },
     {
       "path": "visual/assets/evidence-consistency.js",
@@ -442,6 +442,20 @@
       "language": "en",
       "sha256": "9f147b3671272416fcf494dd594d7110b19aeb711fc8fe4b354be843861411fb",
       "translation_of": "assets/figures/planning-alignment.png"
+    },
+    {
+      "path": "visual/assets/implementation-readiness-register.json",
+      "role": "evidence_data",
+      "required": true,
+      "language": "neutral",
+      "sha256": "255eafedd6529eb911be770cc4319c153480030729c9725ee8f7e8ac5aa1cfd5"
+    },
+    {
+      "path": "visual/assets/implementation-readiness-audit.js",
+      "role": "verification_script",
+      "required": true,
+      "language": "neutral",
+      "sha256": "a989a40ae4521db8bc11c5a8d57491115a74ba30c9c89d3d0c40707a2d15dd0e"
     },
     {
       "path": "assets/media/experience.mp4",
