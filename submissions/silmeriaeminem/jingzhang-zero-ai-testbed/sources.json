@@ -1,0 +1,206 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas.",
+      "license": "public_official_task_package",
+      "rights": "Open-call task package, used per official call rules."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials.",
+      "license": "repository_public",
+      "rights": "Repository-published reference registry; usable for scope/boundary/source-tier navigation only."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source.",
+      "license": "repository_processed",
+      "rights": "Processed navigation reference; does not introduce new authoritative facts."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Submitted site boundary geometry source (provisional).",
+      "license": "provisional_constraint",
+      "rights": "Agent-inferred provisional boundary; not an official GIS/CAD polygon."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three required detailed-design key area boundaries (provisional).",
+      "license": "provisional_constraint",
+      "rights": "Agent-inferred provisional polygons; not official key-area boundaries."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context.",
+      "license": "public_official_announcement",
+      "rights": "Official pre-qualification announcement; public document."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause.",
+      "license": "user_provided_cleared",
+      "rights": "User-provided task excerpt (2026-05-18), cleared for use in submission."
+    },
+    {
+      "id": "POLICY-01-HD-CONTROL-PLAN",
+      "source_type": "official_public",
+      "usage": "《北京海淀区京张铁路遗址公园沿线（人工智能创新街区重点地区）HD00—1601 等街区控制性详细规划（街区层面）（2024年—2035年）》，北京市海淀区人民政府、北京市规划和自然资源委员会组织编制，中国城市规划设计研究院编制；第9条明确'一带一轴，两心多点'整体空间结构，其中'一带'为京张铁路遗址公园产业创新带；规划同时落实中关村科学城建成具有全球影响力的人工智能创新引领区、产业集聚区的目标。",
+      "license": "official_public",
+      "rights": "Official regulatory detailed planning document (public version). Participant holds the official PDF (42 pages, 2024-2035).",
+      "verification_status": "verified",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/tdzt/2018/zwgk/zdjs/202608/t20260817_4825631.shtml",
+      "published_date": "2026-08-17",
+      "publisher": "北京市规划和自然资源委员会海淀分局",
+      "document_record": {
+        "title": "北京海淀区京张铁路遗址公园沿线（人工智能创新街区重点地区）HD00-1601等街区控制性详细规划（街区层面）（2024年—2035年）（公开版）",
+        "compiler": "中国城市规划设计研究院（城乡规划编制甲级，证书编号：自资规甲字21110023）",
+        "pages": 42,
+        "cited_clause": "第9条（整体空间结构：一带一轴两心多点）",
+        "file_sha256": "2f33c7e23ab31f2ff1612afcff08da30835487348d4a66c75c50cc509ce98d57",
+        "file_size_bytes": 20935569
+      }
+    },
+    {
+      "id": "POLICY-02-AGENT-MEASURES",
+      "source_type": "official_public",
+      "usage": "《北京市关于加快智能体引领发展的若干措施》（京发改〔2026〕1185号，北京市发展和改革委员会、市委网信办、市科委中关村管委会、市经济和信息化局四部门联合，2026-07-21 印发）第七条'全面提升安全治理能力'明确'探索建立智能体分级分类监管机制'与'搭建靶场环境和可信沙箱'。",
+      "license": "official_public",
+      "rights": "Official public policy (Open Beijing portal, four departments jointly issued).",
+      "verification_status": "verified",
+      "url": "https://open.beijing.gov.cn/html//zcfg/2026/7/1784877791704.html",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "POLICY-03-AUTONOMOUS-DRIVING",
+      "source_type": "official_public",
+      "usage": "《北京市自动驾驶汽车条例》（北京市第十六届人民代表大会常务委员会第十四次会议 2024-12-31 通过，2025-04-01 施行）确立'道路测试—示范应用—安全评估—道路应用试点'链条；第二十三条第四项将'摆渡接驳'列为城市运行保障支持场景，第四十七条明确功能型无人车测试和上路通行规范按国家和本市有关规定执行。",
+      "license": "official_public",
+      "rights": "Official municipal regulation (Beijing Municipal People's Congress Standing Committee).",
+      "verification_status": "verified",
+      "url": "https://www.bjrd.gov.cn/zyfb/202501/t20250102_3979083.html",
+      "verified_on": "2026-08-27"
+    },
+    {
+      "id": "CHAIN-ENTERPRISES-INDICATIVE",
+      "source_type": "pending_official_verification",
+      "usage": "Indicative anchor-enterprise list (pending verification against official sources). Cross-checked via public company/regulatory webpages: 寒武纪 (知春路7号致真大厦D座), 银河通用 (海淀大街鼎好DH3大厦A座), 九号公司 (西小口路66号中关村东升科技园A4楼). Indicative wording: 月之暗面 (registered at 知春路27号; current office possibly 知春路76号), 字节跳动 ('大钟寺总部集群', not official '超级总部').",
+      "license": "pending_verification",
+      "rights": "Category list and cooperation model descriptions are indicative. Specific HQ addresses (e.g. 知春路27号), funding round details, and named partnerships are pending verification against official sources (enterprise official websites, AIC records, news releases).",
+      "verification_status": "pending_verification"
+    },
+    {
+      "id": "ASSET-FIGURES-AI-16",
+      "path": "assets/figures/01_cotrack_testline_people_machines.jpg through 16_masterplan_timetrack_v4.jpg",
+      "source_type": "ai_generated",
+      "usage": "16 concept/visualization figures for the proposal (co-track test line, time-sharing, origin community, brand imagery, three-area masterplan, etc.).",
+      "license": "user_owned_ai_generation",
+      "rights": "Generated by the user's own Jimeng (即梦 AI) account, with account-generation records serving as author proof; use governed by Jimeng's user terms. User confirms the right to use these figures in this open-call submission. All figures are conceptual illustrations — not photographs, not third-party works, and containing no third-party logos, brand marks, or recognizable identifiable persons; any incidental resemblance is unintentional.",
+      "verification_status": "user_confirmed"
+    },
+    {
+      "id": "ASSET-FIGURES-MATPLOTLIB-5",
+      "path": "assets/figures/site-overview.png, land-use-structure.png, key-areas.png, mobility-bluegreen.png, metrics-evidence.png",
+      "source_type": "auto_generated_diagram",
+      "usage": "5 presentation-quality diagrams derived from submitted geometry.geojson files via matplotlib.",
+      "license": "auto_generated_from_submitted_data",
+      "rights": "Auto-generated diagrams from the submitted GeoJSON. No third-party imagery. Diagram text rendered with Noto Sans SC (SIL OFL 1.1).",
+      "verification_status": "auto_generated"
+    },
+    {
+      "id": "ASSET-GEOMETRY-PROVISIONAL",
+      "path": "geometry/site_boundary.geojson, key_areas.geojson, land_use.geojson, buildings.geojson, roads.geojson, green_space.geojson, public_space.geojson, phasing.geojson, constraints.geojson",
+      "source_type": "agent_generated_design_with_provisional_constraint",
+      "usage": "9 design layers. site_boundary and key_areas are provisional (announced text-based, not official GIS/CAD). land_use/buildings/roads/green_space/public_space/phasing are agent-generated design proposals (concept-level, not statutory). constraints is empty set per agent discipline (no official constraint geometry available).",
+      "license": "provisional_and_concept_design",
+      "rights": "All 9 layers are concept-level design proposals. Buildings and roads are derived from POI points/centerlines as 36m squares and 16m buffers respectively (confidence medium/low). They are NOT survey-grade or statutory, and must be relabelled as concept model estimates.",
+      "verification_status": "concept_design"
+    },
+    {
+      "id": "ASSET-FONT-NOTO-SANS-SC",
+      "path": "embedded @font-face in report/*.html and visual/*.html (woff2)",
+      "source_type": "open_source_font",
+      "usage": "Replaces Microsoft YaHei/SimHei for all CJK rendering. Embedded as woff2 subset (regular + bold).",
+      "license": "SIL OFL 1.1",
+      "rights": "Noto Sans SC by Google/Adobe, licensed under SIL Open Font License 1.1. Permits free redistribution, modification, and embedding. Source: fonts.google.com/noto/specimen/Noto+Sans+SC.",
+      "verification_status": "open_source_license"
+    },
+    {
+      "id": "ASSET-LOGO-VECTOR-SVG",
+      "path": "assets/logo-time-track.svg",
+      "source_type": "original_design",
+      "usage": "Logo vector '时间线×轨道线' (timeline × track line), hand-designed original vector with three-color tracks + 1909/2026/2049 time axis + center AI glow node.",
+      "license": "user_owned_original",
+      "rights": "Original vector logo designed by the participant (user). No third-party fonts, marks, or assets used. Participant owns and confirms the right to use this logo in this open-call submission and exhibition. Formal commercial publication still requires trademark screening and brand authorization.",
+      "verification_status": "user_confirmed"
+    },
+    {
+      "id": "ASSET-LOGO-CONCEPT-PNG",
+      "path": "assets/logo-time-track-concept.png",
+      "source_type": "ai_generated",
+      "usage": "Logo concept visual (AI-rendered): three-color tracks + three-node time axis + center glow node, for brand showcase.",
+      "license": "user_owned_ai_generation",
+      "rights": "Generated by the participant's own account via AI image generation (ImageGen), with generation records serving as author proof; no third-party logos, brand marks, or recognizable identifiable persons. Participant confirms the right to use this concept visual in this open-call submission.",
+      "verification_status": "user_confirmed"
+    },
+    {
+      "id": "ASSET-NO-THIRD-PARTY-LOGO-OR-PORTRAIT",
+      "source_type": "declaration",
+      "usage": "Declaration: the submission does NOT contain third-party logos, corporate identifiers, brand marks, or recognizable portraits of identifiable persons in a manner that requires third-party clearance for open-call review.",
+      "license": "declaration",
+      "rights": "Open-call review-only use. Third-party logos/marks/persons are NOT included; the proposed logo direction in proposal §3.1 is a concept description only. Any future official publication MUST re-clear.",
+      "verification_status": "self_declared"
+    },
+    {
+      "id": "DATA-SRC-AMAP-POI-20260809",
+      "source_type": "local_collected_public_data",
+      "usage": "高德地图 POI 采集：8 个图层共 1127 个特征（去重后原始 966 条），用于现状 POI 底数与空间分析、十五分钟生活圈缺口识别，支撑 land_use/buildings/green_space/public_space/education/medical/transport_supplement/cultural_heritage 图层。",
+      "license": "amap_open_platform_terms",
+      "rights": "通过个人开发者账号调用高德开放平台 POI 检索 API 采集，适用高德开放平台《服务条款》与《开放数据服务协议》（以 2026-08 采集时生效版本为准，数据来源署名为高德地图）。原始 POI 坐标数据不随投稿再分发；投稿中仅保留去重/聚合后的概念设计图层（建筑为约 36m 方形、道路为约 16m 缓冲的派生表达），不作法定现状、权属或红线依据，不替代官方规划底图。",
+      "verification_status": "approved_local_collection",
+      "conversion_record": "原始 API 返回 -> 按图层去重/分类 -> 派生为概念设计图层（GeoJSON，EPSG:4326/WGS84）；原始坐标不随投稿分发"
+    },
+    {
+      "id": "DATA-SRC-BJ-TRANSPORT-PLATFORM-20260808",
+      "source_type": "official_open_data",
+      "usage": "北京市交通出行数据平台公开下载数据（公交/轨道/路侧停车/公租自行车），数量口径：公交线路 1166 条、公交站点 58698 行、轨道 23 线 1080 站、路侧停车 1719 条、公租自行车 1870 条，用于公交/轨道/停车/慢行体系分析与站点 TOD/绿波走廊方案支撑。",
+      "license": "official_open_data",
+      "rights": "平台标注无条件开放、直接下载（service.jtw.beijing.gov.cn/cxsjxz）；用于本方案交通与空间分析，不作法定现状或权属依据。",
+      "verification_status": "approved",
+      "conversion_record": "6 个 xlsx -> 空间化 -> transport_supplement/bus_lines/rail_lines/roads_parking.geojson"
+    },
+    {
+      "id": "DATA-SRC-CASE-LIBRARY-20260810",
+      "source_type": "web_research",
+      "usage": "全球城市更新案例库（50 家：国内 30 + 国外 20），用于全球案例借鉴与转化机制提炼，及'50 案例检索范围'核心设计假设的检索边界声明。检索日期 2026-08-10，纳入/排除标准与逐项来源索引见案例库第七章 7.1—7.5。",
+      "license": "public_web_research",
+      "rights": "各案例为公开网络资料（政府官网/项目官方站/权威媒体/国际专业机构），未使用 OSM 等非正式来源；未单独存档 URL 的案例仅作定性参考，不参与排他性断言。",
+      "verification_status": "approved_web_research",
+      "conversion_record": "检索 -> 按纳入/排除标准筛选 50 家 -> 逐案例记录（机制/启示/来源字段）"
+    },
+    {
+      "id": "DATA-SRC-MULTI-FEEDBACK-20260809",
+      "source_type": "web_research",
+      "usage": "京张AI创新带多方反馈调研汇总（抖音/小红书/官网站评论等公开网络来源），用于痛点与诉求归纳、场景卡与更新项目的问题导向支撑。",
+      "license": "public_web_research",
+      "rights": "公开网络评论/反馈，非授权访谈，不视为居民共识或公众认可的正式证据；仅作痛点归纳参考，方案正文仅作'回应痛点'表述，不量化代表比例。",
+      "verification_status": "approved_web_research",
+      "conversion_record": "公开平台评论采集 -> 按主题归纳（停车难/蚊虫/树荫/配套不足/算力贵/融资难/规划沟通缺位等）"
+    }
+  ]
+}

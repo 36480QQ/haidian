@@ -3,10 +3,12 @@ import importlib.util
 import json
 import os
 import shlex
+import struct
 import subprocess
 import sys
 import tempfile
 import unittest
+import zlib
 from pathlib import Path
 from unittest import mock
 
@@ -109,7 +111,51 @@ class SelfCheckEncodingTests(unittest.TestCase):
         )
         self.assertEqual("1", run.call_args.kwargs["env"]["PYTHONUTF8"])
         self.assertEqual("utf-8", run.call_args.kwargs["env"]["PYTHONIOENCODING"])
-        self.assertEqual({"returncode": 1, "ok": False, "stdout": {}, "stderr": ""}, result)
+        self.assertEqual(
+            {
+                "returncode": 1,
+                "ok": False,
+                "stdout": {},
+                "stderr": "command produced no JSON output",
+            },
+            result,
+        )
+
+    def test_run_json_command_requires_json_object_output(self) -> None:
+        fixtures = [
+            ("print('not json')", "invalid JSON output"),
+            ("print('[]')", "JSON output must be an object, got list"),
+            ("print('null')", "JSON output must be an object, got NoneType"),
+            ("pass", "command produced no JSON output"),
+        ]
+        for script, expected_error in fixtures:
+            with self.subTest(script=script):
+                result = run_json_command([sys.executable, "-c", script])
+
+                self.assertEqual(0, result["returncode"])
+                self.assertFalse(result["ok"])
+                self.assertIn(expected_error, result["stderr"])
+
+    @unittest.skipIf(sys.platform == "win32", "LC_ALL does not select the Windows code page")
+    def test_force_utf8_output_prints_chinese_under_non_utf8_locale(self) -> None:
+        chinese_section = "设计依据与资料清单"
+        script = (
+            f"import sys; sys.path.insert(0, {ascii(str(REPO_ROOT / 'scripts'))});"
+            "import self_check_submission as module;"
+            "module.force_utf8_output();"
+            f"print({ascii(chinese_section)})"
+        )
+        environment = os.environ.copy()
+        environment.update({"LC_ALL": "C", "PYTHONUTF8": "0", "PYTHONCOERCECLOCALE": "0"})
+        completed = subprocess.run(
+            [sys.executable, "-c", script],
+            capture_output=True,
+            encoding="utf-8",
+            env=environment,
+            check=False,
+        )
+        self.assertEqual(completed.returncode, 0, completed.stderr)
+        self.assertIn(chinese_section, completed.stdout)
 
 
 def run_scaffold(output_dir: Path, stage: str = "formal", cwd: Path = REPO_ROOT) -> subprocess.CompletedProcess:
@@ -134,7 +180,28 @@ def run_scaffold(output_dir: Path, stage: str = "formal", cwd: Path = REPO_ROOT)
     )
 
 
-def complete_scaffold(output_dir: Path) -> subprocess.CompletedProcess:
+def mark_png_participant_revision(path: Path) -> None:
+    raw = path.read_bytes()
+    iend_offset = raw.rfind(b"\x00\x00\x00\x00IEND")
+    if iend_offset < 0:
+        raise ValueError(f"PNG has no IEND chunk: {path}")
+    chunk_type = b"tEXt"
+    payload = b"Revision\x00participant-revision"
+    checksum = zlib.crc32(chunk_type)
+    checksum = zlib.crc32(payload, checksum) & 0xFFFFFFFF
+    chunk = (
+        struct.pack(">I", len(payload))
+        + chunk_type
+        + payload
+        + struct.pack(">I", checksum)
+    )
+    path.write_bytes(raw[:iend_offset] + chunk + raw[iend_offset:])
+
+
+def complete_scaffold(
+    output_dir: Path,
+    synchronized_paths: tuple[str, ...] = (),
+) -> subprocess.CompletedProcess:
     proposal = output_dir / "proposal.md"
     proposal.write_text(
         proposal.read_text(encoding="utf-8").replace("SCAFFOLD-DRAFT", "PARTICIPANT-DESIGN")
@@ -152,7 +219,7 @@ def complete_scaffold(output_dir: Path) -> subprocess.CompletedProcess:
         "assets/figures/metrics-evidence.png",
     ]:
         path = output_dir / rel
-        path.write_bytes(path.read_bytes() + b"participant-revision")
+        mark_png_participant_revision(path)
     geometry = output_dir / "geometry" / "land_use.geojson"
     geometry.write_text(geometry.read_text(encoding="utf-8") + "\n", encoding="utf-8")
     drawing = b"%PDF-1.4\n3 0 obj<</Type/Page/Parent 2 0 R>>endobj\n" + b"0" * 4096
@@ -204,6 +271,15 @@ def complete_scaffold(output_dir: Path) -> subprocess.CompletedProcess:
         target = source.with_name(f"{source.stem}.en{source.suffix}")
         if not target.exists():
             target.write_bytes(source.read_bytes())
+    if synchronized_paths:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        items = {item["path"]: item for item in manifest["files"]}
+        for rel in synchronized_paths:
+            items[rel]["sha256"] = hashlib.sha256((output_dir / rel).read_bytes()).hexdigest()
+        manifest_path.write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
     return subprocess.run(
         [sys.executable, str(REPO_ROOT / "scripts" / "finalize_submission.py"), str(output_dir)],
         capture_output=True,
@@ -260,6 +336,7 @@ def official_feature(feature_id: str, layer: str, geometry: dict, **props) -> di
 
 
 def write_official_site_package(root: Path) -> None:
+    write_land_use_registry(root)
     geometry_dir = root / "brief" / "site-package" / "geometry"
     geometry_dir.mkdir(parents=True, exist_ok=True)
     features = [
@@ -289,7 +366,15 @@ def write_official_site_package(root: Path) -> None:
     )
 
 
+def write_land_use_registry(root: Path) -> None:
+    enum_dir = root / "brief" / "site-package" / "enums"
+    enum_dir.mkdir(parents=True, exist_ok=True)
+    source = REPO_ROOT / "brief" / "site-package" / "enums" / "land_use_codes.json"
+    (enum_dir / "land_use_codes.json").write_bytes(source.read_bytes())
+
+
 def write_provisional_site_package(root: Path) -> None:
+    write_land_use_registry(root)
     geometry_dir = root / "brief" / "site-package" / "geometry"
     geometry_dir.mkdir(parents=True, exist_ok=True)
     source = REPO_ROOT / "brief" / "site-package" / "geometry" / "provisional_boundaries.geojson"
@@ -340,6 +425,57 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
                 "Replace GITHUB_LOGIN with the exact PR author login.",
                 result["next_command_note"],
             )
+
+    def test_finalize_and_mark_self_checked_write_lf_only_manifest(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "lf-line-endings"
+            self.assertEqual(run_scaffold(submission_dir, cwd=root).returncode, 0)
+            self.assertEqual(complete_scaffold(submission_dir).returncode, 0)
+            manifest_bytes = (submission_dir / "manifest.json").read_bytes()
+            self.assertNotIn(b"\r", manifest_bytes, "finalize_submission must not emit CR bytes")
+            self.assertEqual(mark_self_checked(submission_dir).returncode, 0)
+            manifest_bytes = (submission_dir / "manifest.json").read_bytes()
+            self.assertNotIn(b"\r", manifest_bytes, "mark_self_checked must not emit CR bytes")
+            self.assertTrue(manifest_bytes.endswith(b"\n"))
+
+    def test_ready_package_manifest_refresh_restores_missing_hashes(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "refresh-missing-hashes"
+            self.assertEqual(run_scaffold(submission_dir, cwd=root).returncode, 0)
+            self.assertEqual(complete_scaffold(submission_dir).returncode, 0)
+            self.assertEqual(mark_self_checked(submission_dir).returncode, 0)
+
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for item in manifest["files"]:
+                item.pop("sha256", None)
+            manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "refresh_submission_manifest.py"),
+                    str(submission_dir),
+                    "--json",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
+            refreshed = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertTrue(refreshed["files"])
+            self.assertTrue(
+                all(item.get("sha256") for item in refreshed["files"] if item.get("path") != "manifest.json")
+            )
+            self.assertFalse(refreshed["validation_claim"]["self_checked"])
+
+            checked = mark_self_checked(submission_dir)
+            self.assertEqual(checked.returncode, 0, checked.stdout + checked.stderr)
 
     def test_manifest_refresh_next_command_quotes_space_in_path(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -413,6 +549,33 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             self.assertEqual(expected, {key: agent[key] for key in expected})
             self.assertEqual(expected, {key: manifest["agent"][key] for key in expected})
 
+    def test_scaffold_land_use_code_labels_match_registry(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            output_dir = Path(tmp) / "submissions" / "alice" / "land-use-codes"
+            scaffold = run_scaffold(output_dir)
+            self.assertEqual(0, scaffold.returncode, scaffold.stdout + scaffold.stderr)
+
+            land_use = json.loads(
+                (output_dir / "geometry" / "land_use.geojson").read_text(encoding="utf-8")
+            )
+            registry = json.loads(
+                (REPO_ROOT / "brief/site-package/enums/land_use_codes.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            labels = {item["code"]: item["label_zh"] for item in registry["codes"]}
+            generated = {
+                feature["properties"]["land_use_code"]: feature["properties"]["name_zh"]
+                for feature in land_use["features"]
+            }
+
+            self.assertEqual(
+                {code: labels[code] for code in generated},
+                generated,
+            )
+            self.assertIn("09", generated)
+            self.assertNotIn("05", generated)
+
     def test_finalize_blocks_v2_package_without_required_bilingual_files(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             output_dir = Path(tmp) / "submissions" / "alice" / "missing-bilingual"
@@ -435,7 +598,7 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
                 "assets/figures/metrics-evidence.png",
             ]:
                 path = output_dir / rel
-                path.write_bytes(path.read_bytes() + b"participant-revision")
+                mark_png_participant_revision(path)
             geometry = output_dir / "geometry" / "land_use.geojson"
             geometry.write_text(geometry.read_text(encoding="utf-8") + "\n", encoding="utf-8")
             drawing = b"%PDF-1.4\n3 0 obj<</Type/Page/Parent 2 0 R>>endobj\n" + b"0" * 4096
@@ -450,6 +613,21 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             )
             self.assertNotEqual(0, finalized.returncode)
             self.assertIn("required bilingual counterpart is missing", finalized.stdout)
+
+    def test_finalize_accepts_nonempty_drawing_with_synchronized_scaffold_hash(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            output_dir = Path(tmp) / "submissions" / "alice" / "synchronized-drawing"
+            scaffold = run_scaffold(output_dir)
+            self.assertEqual(0, scaffold.returncode, scaffold.stdout + scaffold.stderr)
+
+            finalized = complete_scaffold(
+                output_dir,
+                synchronized_paths=("drawings/a0-boards.pdf",),
+            )
+
+            self.assertEqual(0, finalized.returncode, finalized.stdout + finalized.stderr)
+            manifest = json.loads((output_dir / "manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual("ready_for_review", manifest["package_state"])
 
     def test_finalize_registers_existing_language_counterparts(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -644,6 +822,64 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
 
             self.assertFalse(has_blocking_self_check(submission_dir))
 
+    def test_finalize_rejects_manifest_path_outside_submission(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "path-escape"
+            scaffold = run_scaffold(submission_dir, cwd=root)
+            self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
+            outside = root / "outside.txt"
+            outside.write_text("outside must not be hashed\n", encoding="utf-8")
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["files"].append(
+                {"path": str(outside), "role": "narrative", "required": False}
+            )
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            finalized = complete_scaffold(submission_dir)
+
+            self.assertNotEqual(finalized.returncode, 0)
+            self.assertIn("unsafe path", finalized.stdout)
+            persisted = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual("scaffold", persisted["package_state"])
+            self.assertEqual("outside must not be hashed\n", outside.read_text(encoding="utf-8"))
+
+    def test_finalize_rejects_manifest_path_through_symlink(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "symlink-escape"
+            scaffold = run_scaffold(submission_dir, cwd=root)
+            self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
+            outside = root / "outside.txt"
+            outside.write_text("outside must not be hashed\n", encoding="utf-8")
+            link = submission_dir / "linked.txt"
+            try:
+                link.symlink_to(outside)
+            except OSError as exc:
+                self.skipTest(f"symlink not supported: {exc}")
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["files"].append(
+                {"path": "linked.txt", "role": "narrative", "required": False}
+            )
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            finalized = complete_scaffold(submission_dir)
+
+            self.assertNotEqual(finalized.returncode, 0)
+            self.assertIn("path traverses symbolic link", finalized.stdout)
+            persisted = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual("scaffold", persisted["package_state"])
+
     def test_scaffold_does_not_emit_contributor_exhibit(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -821,6 +1057,52 @@ class AgentScaffoldAndSelfCheckTests(unittest.TestCase):
             )
             self.assertNotEqual(checked.returncode, 0)
             self.assertIn("sha256 mismatch for `proposal.md`", checked.stdout)
+            self.assertNotIn("declared digest matches", checked.stdout)
+
+    def test_manifest_hash_mismatch_explains_crlf_normalization(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_official_site_package(root)
+            submission_dir = root / "submissions" / "alice" / "crlf-manifest"
+            scaffold = run_scaffold(submission_dir, cwd=root)
+            self.assertEqual(scaffold.returncode, 0, scaffold.stdout + scaffold.stderr)
+
+            proposal = submission_dir / "proposal.md"
+            lf_raw = proposal.read_bytes().replace(b"\r\n", b"\n")
+            proposal.write_bytes(lf_raw)
+            crlf_digest = hashlib.sha256(lf_raw.replace(b"\n", b"\r\n")).hexdigest()
+            manifest_path = submission_dir / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            next(item for item in manifest["files"] if item["path"] == "proposal.md")[
+                "sha256"
+            ] = crlf_digest
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            checked = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "validate_local_submission.py"),
+                    str(submission_dir),
+                    "--repo-root",
+                    str(root),
+                    "--pr-author",
+                    "alice",
+                    "--json",
+                ],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertNotEqual(checked.returncode, 0)
+            self.assertIn("sha256 mismatch for `proposal.md`", checked.stdout)
+            self.assertIn("declared digest matches the CRLF form", checked.stdout)
+            self.assertIn(
+                "Regenerate manifest.json from the exact bytes committed to Git",
+                checked.stdout,
+            )
 
     def test_scaffold_includes_public_source_registry_reference(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

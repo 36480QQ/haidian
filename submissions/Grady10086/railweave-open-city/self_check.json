@@ -94,12 +94,17 @@
         "submissions/Grady10086/railweave-open-city/visual/assets/ecosystem_operating_map.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/fact_index.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/implementation_register.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/offline-cjk-font.css",
+        "submissions/Grady10086/railweave-open-city/visual/assets/project_delivery_ledger.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/public_value_survival_register.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/railweave_runner.js",
+        "submissions/Grady10086/railweave-open-city/visual/assets/readiness_decision_receipt.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/receipt.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/s06_minimum_delivery_package.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/scenario_prototypes.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/source_registry.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/spatial_source_conflicts.json",
+        "submissions/Grady10086/railweave-open-city/visual/assets/spatial_weave_options.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/synthetic_cases.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/verification_handoff_register.json",
         "submissions/Grady10086/railweave-open-city/visual/assets/weave_contracts.json",
@@ -109,7 +114,7 @@
       "ai_package_stages": {
         "submissions/Grady10086/railweave-open-city": "formal"
       },
-      "total_bytes": 40698705,
+      "total_bytes": 41259022,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -126,7 +131,7 @@
           "severity": "minor",
           "target_file": "geometry/key_areas.geojson",
           "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-          "target_feature_id": "KEY-V2-001",
+          "target_feature_id": "KEY-001",
           "expected": null,
           "actual": null
         },
@@ -135,7 +140,7 @@
           "severity": "minor",
           "target_file": "geometry/key_areas.geojson",
           "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-          "target_feature_id": "KEY-V2-002",
+          "target_feature_id": "KEY-002",
           "expected": null,
           "actual": null
         },
@@ -144,7 +149,7 @@
           "severity": "minor",
           "target_file": "geometry/key_areas.geojson",
           "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-          "target_feature_id": "KEY-V2-003",
+          "target_feature_id": "KEY-003",
           "expected": null,
           "actual": null
         }
@@ -183,14 +188,14 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 24,
+        "known_metric_refs_required": 28,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 34,
           "standard": 6,
           "depth": 14,
-          "data": 25,
+          "data": 26,
           "metric": 18
         }
       }

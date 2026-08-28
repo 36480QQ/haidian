@@ -15,6 +15,7 @@
     "team": "starixs"
   },
   "generated_at": "2026-08-07T08:48:06Z",
+  "cover_image": "assets/media/cover.webp",
   "files": [
     {
       "path": "manifest.json",
@@ -25,14 +26,14 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "41e87d93906428fa36e861e24fb9785414ef6fbf55440e2fd86af496cff0678a",
+      "sha256": "9a37d20d7c60ce61979a86256b42e7da8cd1c4233136821bae452795f31e132a",
       "language": "en"
     },
     {
       "path": "report/proposal.zh.html",
       "role": "rendered_proposal_html",
       "required": false,
-      "sha256": "7b82feaf4191a8fc850f2d9537db8ab03aee791906e2551678633f488611e5a7",
+      "sha256": "b282eadb300cebae0f052c119f1f0bc8ad9738832cf7cd16b331fcdc981027e6",
       "language": "zh",
       "translation_of": "report/proposal.html"
     },
@@ -40,7 +41,7 @@
       "path": "proposal.zh.md",
       "role": "narrative",
       "required": false,
-      "sha256": "1ae7cf78486246c791e153a8acdf2e23ea7a8c408ff15c8eb803c97dd0573d12",
+      "sha256": "52f7ad5ef4a62601f89f5555c9584ce993853cd31a36d4b467bceb74244ec8fc",
       "language": "zh",
       "translation_of": "proposal.md"
     },
@@ -48,19 +49,19 @@
       "path": "changelog.md",
       "role": "narrative",
       "required": false,
-      "sha256": "08b8869f20427d0c9359f485bd18f4032a3e6de04a18bf3edfa9cd90144a8be8"
+      "sha256": "9aa371a44441f4a0add7d780af9ca18e3c15e80c6166f8a6afcfbe3b590eb412"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "7b73508ac3f4719b91c6de977f002922ae2787274605ec502ee7a4e715bac9b0"
+      "sha256": "270f3444d189ca90dcd50ee7c5df2d8f2c978bff761764c1408aef5332770004"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "515416cc2d1a5afbdf03f50af0835b21a7d8cf8df12382b45fcc6e487d999f49"
+      "sha256": "2ddd20c569a42de2a69056856b356e25961613f63628f3de4490350d97a82484"
     },
     {
       "path": "assumptions.json",
@@ -72,19 +73,19 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "277f52ce872fad29938dfe266f8049d8250961b041a4bdd12169cf35e75f1079"
+      "sha256": "ae817dea4cc506221851ce025fe77fad79a640b46b628afa3c7cf5beb7b07df5"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "80b71cb78d2c1581fc679eb561959ac515bc8a3ff6f76c74dcc2c4e20d49b72f"
+      "sha256": "925d514806bdd27f68e01449a33d6a15925f9f6847e3bd430a256519c73f0a10"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "6297c0a43c9bec30f181f47f673600c9112363b16c24046e197a675c8d26742c"
+      "sha256": "37f7e48abc2186215902443969c10cbe9fbe93de9809aa35b3a75f064e81a1e0"
     },
     {
       "path": "standard_matrix.json",
@@ -102,7 +103,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "426d8e8c62c0f1401ec06b3d8b4ca92acc5305226acb0d70980e0e7dcfdf2f5d",
+      "sha256": "3a97dbbcfae78db1c9e12fb3822e7872f6964621067f25af921f12540550447d",
       "language": "en"
     },
     {
@@ -115,66 +116,69 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "9a1140fada9855c33bdd9d43bc9168059d85dbd35a7078b8ade678a674eb5249"
+      "sha256": "e82f13e90bd7a0c311cffd109082c917dfc03f1289e7992460d6b3223d80b07b"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "9d53f6e02ddfc8a486369e280d87b5e97a1b7faf47bab38732f4f4d5160d5b75"
+      "sha256": "ff0c654977c96167efae3f82d97b6cb8664d2efa72327d7aff4fc92d42f15572",
+      "language": "en"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "d3df30ff38e43d24e9c9915844dc150d0390afa2e9b9855a93a3b1b87a6a0dc0"
+      "sha256": "1b63bd73bb56c99b1518cadc2cf63f204bf29208a5c2199adce82ef26101b2ce",
+      "language": "en"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "b1752871e7a98200951b45a29f4228e8631700df8846eeb55b8982f491e91260"
+      "sha256": "262a63cda31f640e6a399e338f7bd8258c546a3f866dd447af699f6bf5982d9f",
+      "language": "en"
     },
     {
       "path": "assets/figures/identity-system.png",
       "role": "proposal_figure",
       "required": false,
-      "sha256": "cb975451d5d7036fa9b361f6e43c26f8f04eafc86dd3ececf4a674ee313c1cb9",
+      "sha256": "6313ca437662bcee683bfc4ce0d56a657fb2be8562fed6431113330b465d8e9c",
       "language": "neutral"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "b44a8ed4fbd91504a789b534210371ba40ade8adda4b8af91672896ff307a007",
+      "sha256": "568109352310813bc0a66a36de39d4d215fcce96eed4f9e5d91c727ec506ba84",
       "language": "neutral"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "6110e63c088f783f9925b2e6736e6b90cf357ac049c32f21c5b0fd41a7a9db97",
+      "sha256": "b2fb133eed2d86fb5f6fd60a911b62c68278c7105e314540f5cb51517a8442af",
       "language": "neutral"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "9e151278e50b60d398fcbd27155fa2847c6fcaf6ac3cbee5c5dbbe3871e3e83d",
+      "sha256": "b6eb15419fcc80528f1b994f1121062e4ae106f510a3cbe31f780e840479fb0e",
       "language": "neutral"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "042f9946788d1722d4f5b9303b84539629ddf20ddf51a8a5358a40935b329ace",
+      "sha256": "327da1d429db4d18d5f1224d4c4a8b16ffc4a2bed20f9d79ee3f9bec53ad21de",
       "language": "neutral"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "1f8f843197d4b1a60d16094698dd6f29f22cecb46d485632821312414721553d",
+      "sha256": "034d62ef896b0452830b8ce0d91c8a5e7caf93cb11fde607cb3d65ab9bf11b43",
       "language": "neutral"
     },
     {
@@ -223,19 +227,237 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "8cf72fb4478099f56799b5cafe0bcf0ce2d9133aa2642caf22a8655e26e0dc22"
+      "sha256": "7a9982a5946e05cc375a43d16d418032ae44a741b65dea339d2b47d0e35782b7"
     },
     {
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
       "sha256": "f54c91eaaaa1515f7c1a65a1f0bc4e6b055571493e5ff1a8a69fea6f1ce0c60e"
+    },
+    {
+      "path": "assets/media/cover.webp",
+      "role": "media_poster",
+      "required": false,
+      "sha256": "74adc72d38bd7044fa6c2cd6066073ab4795291fa4322bba34c92a5bbb7f7dd8",
+      "language": "neutral",
+      "title_zh": "提案封面：京张令牌识别装置",
+      "title_en": "Proposal cover: the Token Block identity device",
+      "description_zh": "一条实线在三处按真实里程断开为虚线（三站），线上方两枚菱形为两处道岔；断点位置由三处重点片区形心在主脊 ROAD-001 上的里程投影计算，非手工摆放。概念方案，非官方渲染。",
+      "description_en": "One solid rule broken into dashed segments at the three stations, with two diamonds for the two switches. Break positions are computed from the projected chainage of the three key-area centroids on the ROAD-001 main-line alignment. Conceptual, not an official rendering."
+    },
+    {
+      "path": "visual/assets/token-run.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "555c4c7440fc3fba1d5b8e2a1bb35982065f66ab016aa64523a3de20d9e41a3e",
+      "language": "zh",
+      "title_zh": "跑一枚令牌：离线三维走廊交互",
+      "title_en": "Run a Token: offline 3D corridor interactive",
+      "description_zh": "内嵌于 visual/index.html「跑一枚令牌」章节的离线交互逻辑与数据（本地打包 three.js）：一枚令牌沿主脊从 S1 跑到 S6，进入某段即高亮该段并显示区间名称与场景卡数量；同一时刻线上只允许一枚令牌。支持键盘操作、prefers-reduced-motion 逐段跳转、WebGL 失败与无脚本时的内联静态俯视图回退。挤出高度为示意符号，非建筑体量提案。",
+      "description_en": "Logic and embedded data for the “Run a token” section of visual/index.html (three.js bundled locally): one token runs the main line S1→S6, highlighting the occupied section with its name and scenario-card count; only one token may be on the line at a time. Keyboard operable, reduced-motion stepping, and an inline static top-view fallback for no-WebGL and no-JavaScript. Extruded heights are symbolic markers, not a building-volume proposal."
+    },
+    {
+      "path": "visual/assets/three-0.160.0.min.js",
+      "role": "visualization",
+      "required": false,
+      "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+      "language": "neutral",
+      "title_zh": "本地打包的 three.js r160（MIT）",
+      "title_en": "Locally bundled three.js r160 (MIT)",
+      "description_zh": "visual/token-run.html 使用的第三方渲染库，版本固定为 r160，随包本地打包，保留原始 MIT 许可头；运行期不发起任何网络请求。",
+      "description_en": "Third-party rendering library used by visual/token-run.html, pinned to r160 and bundled locally with its original MIT licence header; it makes no network request at runtime."
+    },
+    {
+      "path": "drawings/a3-booklet.zh.pdf",
+      "role": "drawing",
+      "required": false,
+      "sha256": "32cc1796e06aaba608253e9e0b12b89eddf6770663c22175e82ffc28ac012aed",
+      "language": "zh",
+      "translation_of": "drawings/a3-booklet.pdf"
+    },
+    {
+      "path": "drawings/a0-boards.zh.pdf",
+      "role": "drawing",
+      "required": false,
+      "sha256": "a7afd693e35065daec3b0e2f949a40ce0b4e3f1eca4ecc2e790447bc1052c88e",
+      "language": "zh",
+      "translation_of": "drawings/a0-boards.pdf"
+    },
+    {
+      "path": "risk.json",
+      "role": "other",
+      "required": false,
+      "sha256": "fcabc31a054a0c1f74ddfc47c9672bd7a01cf059abcf162b48706d0904d44cf7",
+      "title_zh": "风险登记表",
+      "title_en": "Risk register"
+    },
+    {
+      "path": "assets/figures/key-area-dazhongsi.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "5dd19a5e8456743f2386eee73d176d18a58157e5289903c3e344561afd273ff5",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/figures/key-area-origin.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "bdf5298fba462dd8061e52d56c244e9e2f7114ed670b404c5f8879ea63ef83ae",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/figures/key-area-zhongzhiyuan.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "e93763d8e357d1e2de970fe728a70de5f8bb08d6a45b4e6792de1b88422cda0b",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/figures/public-realm-section.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "5eec284ccce5edb56ff2ef92b72495febd37983fee8694bd711f7a7672d2cc15",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/figures/implementation-gates.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "bc16c365371dd98cfc0177da4678290dab4739b4a91e57cbb7597c7f5e12cf37",
+      "language": "neutral"
+    },
+    {
+      "path": "assets/figures/scenarios-personas.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "ea982fc7932472578733d92fcd24e061c0891ecea479c7cf72d0d1b47c47134b",
+      "language": "neutral"
+    },
+    {
+      "path": "simulation.json",
+      "role": "simulation_model",
+      "required": false,
+      "sha256": "ea0033d85b18eb16323b18c74d6f68f81282aa28ad419e00a97190cd1cf94bcd",
+      "title_zh": "令牌协议离线复演",
+      "title_en": "Offline token-protocol replay",
+      "description_zh": "确定性脚本对本包自身数据实际执行的 80 项合成复演（55 项负分支）：场景准入、令牌周期、协议状态机与几何拓扑校验；负分支成功 = 规则正确拒绝。不构成现场证据或运营批准。",
+      "description_en": "80 synthetic replay tasks (55 negative branches) executed by a deterministic script against this package's own data: scenario admission, token cycles, protocol state-machine branches and geometry-topology checks. A negative branch succeeds when the rule correctly refuses. Not field evidence and not an approval."
+    },
+    {
+      "path": "assets/figures/concept-hero-wide.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "4952dfcc6c46ff3e8ed028477e411ea4725a2de5070be8e3ad95a96a11396f3b",
+      "language": "neutral",
+      "title_zh": "走廊全线概念视景——一线、三站、两岔",
+      "title_en": "Corridor concept view — one line, three stations, two switches",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "assets/figures/concept-dazhongsi.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "60d779ce9603281553f344787960f9b49ec273317f8c10ba431ca66f60a90971",
+      "language": "neutral",
+      "title_zh": "S1 到发场·大钟寺站前广场概念视景",
+      "title_en": "S1 Arrival Yard — Dazhongsi arrival plaza concept view",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "assets/figures/concept-origin.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "a92a07e95d58330eedfae0673885885efc664067fd90b8c41e2b1f2b8af34f29",
+      "language": "neutral",
+      "title_zh": "S4 零公里站·原点社区零公里碑广场概念视景",
+      "title_en": "S4 Zero-Km Station — zero-kilometre plaza concept view",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "assets/figures/concept-zhongzhiyuan.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "eac171c172cb7ce8b1c9d66bca4ef0d96656f563577b49c633ea6212614425d8",
+      "language": "neutral",
+      "title_zh": "S6 编组场·众智园编组场地景公园概念视景",
+      "title_en": "S6 Marshalling Yard — yard landscape park concept view",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "assets/figures/concept-platform.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "e0794da402947dab4382070aec391b3a7eada88a4dbcea8a5e819dffeabcbd16",
+      "language": "neutral",
+      "title_zh": "站台棚架与慢行主线人视概念视景",
+      "title_en": "Platform canopy at eye level, concept view",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "assets/figures/concept-bluegreen.jpg",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "15c8520c2c46c37341dc31b7ffd15f361d420d5bec3526f6ad1a5396e3f79700",
+      "language": "neutral",
+      "title_zh": "慢行主线与蓝绿基底黄昏概念视景",
+      "title_en": "Slow-mobility spine and blue-green base at dusk, concept view",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "visual/assets/concept-hero-wide.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "4952dfcc6c46ff3e8ed028477e411ea4725a2de5070be8e3ad95a96a11396f3b",
+      "language": "neutral",
+      "title_zh": "展示页首屏概念视景（AI 生成，同 assets/figures/concept-hero-wide.jpg）",
+      "title_en": "Visual-page hero concept impression (AI-generated; same image as assets/figures/concept-hero-wide.jpg)",
+      "description_zh": "AI 生成概念效果示意（gpt-image-2，布局参考本包 geometry/*.geojson）：仅传达空间气质，不承载量值信息；非测绘依据、非建成表现、非投资承诺。",
+      "description_en": "AI-generated concept impression (gpt-image-2; layout referenced from this package's geometry/*.geojson). It conveys spatial character only and carries no quantitative information; not a survey basis, an as-built view or an investment commitment."
+    },
+    {
+      "path": "visual/assets/implementation.json",
+      "role": "other",
+      "required": false,
+      "sha256": "3342e8e412d075826e91060e7e6b18ee1112daf50a4eb92ed831b568ea7a637e",
+      "title_zh": "首期一百天交付框架（工作包/退出门/采购主题/监测窗）",
+      "title_en": "First-100-days delivery frame (work packages / exit gates / procurement themes / monitoring windows)",
+      "description_zh": "机读实施层：10 个工作包（前置条件/依赖/证据产出/相对投入量级）、G0–G4 五道退出门、8 类采购主题（不含金额）、3/12/36 月监测窗（写明六项绩效指标何时开始积累真实数据）。不构成实施、采购或投资承诺。",
+      "description_en": "Machine-readable delivery layer: 10 work packages (precondition/dependency/evidence output/relative effort class), exit gates G0-G4, 8 procurement themes (no amounts), and 3/12/36-month monitoring windows stating when each of the six performance metrics starts accruing real data. Not a delivery, procurement or investment commitment."
+    },
+    {
+      "path": "visual/index.zh.html",
+      "role": "visualization",
+      "required": false,
+      "sha256": "ea6249d13474f672a09e55b2337ae5850cff4030d4f01200cc44a2b234dae442",
+      "language": "zh",
+      "title_zh": "离线展示页中文对照版（与 visual/index.html 同内容，中文主导）",
+      "title_en": "Chinese display counterpart of the offline visual page (same content as visual/index.html, zh-primary)",
+      "translation_of": "visual/index.html"
+    },
+    {
+      "path": "visual/assets/execution-receipts.json",
+      "role": "visualization",
+      "required": false,
+      "sha256": "9e17e74ef5000ac3092dd8b79d52be14ecb6e6076303267cabc51b504b57a528",
+      "language": "neutral",
+      "title_zh": "令牌交互真实浏览器执行回执链（参赛者自测）",
+      "title_en": "Hash-chained real-browser execution receipts of the token interaction (participant self-test)",
+      "description_zh": "无头 Chromium 实际驱动 visual/index.html 令牌交互的 3 次运行（鼠标/键盘/减动效）共 18 条哈希链事件回执，含拒发第二枚与 S1→S6 有序独占；绑定产物 sha256，可用包内文件复跑核验。参赛者自测证据，非现场证据、非运营批准。",
+      "description_en": "Three headless-Chromium runs (mouse/keyboard/reduced-motion) driving the token interaction of visual/index.html: 18 hash-chained event receipts, including second-token refusal and ordered S1-S6 exclusive occupancy, bound to artifact sha256 hashes and re-runnable from the shipped files. Participant self-test evidence; not field evidence, not an operating approval."
     }
   ],
   "validation_claim": {
-    "self_checked": false,
+    "self_checked": true,
     "known_blockers": [],
     "data_confidence": "medium",
-    "data_confidence_note": "Design layers and metrics are fully recomputable, but the submitted boundary and the three key-area polygons are the repository's provisional rough boundaries, not an official redline."
+    "data_confidence_note": "Design layers and metrics are fully recomputable, but the submitted boundary and the three key-area polygons are the repository's provisional rough boundaries, not an official redline.",
+    "readiness_contract": "persisted-self-check-v1"
   }
 }

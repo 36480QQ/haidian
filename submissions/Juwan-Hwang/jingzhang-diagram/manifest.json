@@ -14,7 +14,7 @@
     "model_family": "deepseek",
     "model_detail": "方案文本由 Kimi K3 × WorkBuddy 融合生成（融合多个 agent 与模型）；正式提交包由 DeepSeek V4 Flash × Trae 完成装配、校验与打包。"
   },
-  "generated_at": "2026-08-11T20:01:44Z",
+  "generated_at": "2026-08-10T16:03:16Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "264acb9bbba4292c375b946858516cefbb9da0bad2bb42e8d4c0c7cec846f066"
+      "sha256": "3577ba6e748de5a21c665d205a8e46b9307e3add11e4445ab93df4feb6552543"
     },
     {
       "path": "agent.json",
@@ -44,19 +44,19 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "bfa239c6e2141b38c038fdc76136b891fe8ba9ad0f711a4d5609e6eb32b04752"
+      "sha256": "e2f2acfff5128a56fe8e4272bc6c32445227460213171b8ee15925f308b67abd"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "277f52ce872fad29938dfe266f8049d8250961b041a4bdd12169cf35e75f1079"
+      "sha256": "ece61d65f2b4efd8c286717aedea35d158ce1f70adf6ef434ae7ac17c424c898"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "b9551eebabd9ea39f2be11a476af73aa05f467c287d5d803d1308c8cc97df64d"
+      "sha256": "fec20ffb568996451b7eec1baee12dde591600e6be2a61300a34f0a94ad3d97b"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "e806da5621741972582728dc314e1c8a44fd90f2395a0de1622b92482ee7226f"
+      "sha256": "2dec228e3d1a1f0631ffdbf69ddda82394f324fac17812a55dff7aad5bec7177"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "82424b7800804b4f7e915340e0bbf95fa9eddc2e8c04c5960ba7e7f8df55fcc5"
+      "sha256": "b758c29a45b107e04372900cad6cda1da8289df42835d65180027cd3144e8a2a"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -161,7 +161,7 @@
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "0d4209b73251a056e8b0fd31f41b133a7d6aa6a20897ea0136fd923ec1938adc"
+      "sha256": "210065a2307b437b5df92a9733912bdad31e78f835f21b5efc6d33d796bf6081"
     },
     {
       "path": "geometry/green_space.geojson",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "9ca36f2c8bf8fb14ccf3bbc774ef98720887676427c2c77989826c07f85e30d6"
+      "sha256": "4459b95d4bab805fd4385e36a114c286582b52c929f6ce9111f7a70df486bf32"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5137e9a67d93140627ddcf14043646ceb06f17b499f82b83cb66f2e17ef6a786"
+      "sha256": "87e97f6e303836eb9e99d625d8bdba983681c16ae14f3ef917dc74a7b57c6a53"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "94fda691ac3a4da6ba392c9563ad4f4bc97fbf7a55a07ed52cb63d2448ea43ae"
+      "sha256": "221da841c0b355a49d62a27ea3fe1ef453411433eb7e4ab5bf3493d8ea82cc76"
     },
     {
       "path": "assets/figures/key-areas.en.png",

@@ -3,13 +3,48 @@
 
 This worker intentionally runs outside GitHub Actions. It never executes code from
 the PR and only sends a package to AI after the required deterministic CI passes.
-"""
 
+The worker polls open submission PRs, skips those that already have a review
+comment matching the current head SHA, runs the four-gate self-check and AI
+advisory review on each eligible package, and posts the result as a PR comment.
+A concurrency lock prevents two worker instances from reviewing the same PR
+simultaneously.
+
+Security model
+--------------
+- Only processes PRs where the deterministic CI check has passed.
+- Never executes contributor-supplied code; the review binary is the trusted
+  worker host copy.
+- Rate-limits AI API calls and retries on transient errors.
+- Writes review artifacts to the gitignored .maintainer-review/ directory only.
+
+Environment variables
+---------------------
+- ``GITHUB_TOKEN`` — required; needs ``pull-requests: write`` and
+  ``contents: read`` permissions.
+- ``GITHUB_REPOSITORY`` — required; ``owner/repo`` format.
+- ``OPENAI_API_KEY`` or ``AI_REVIEW_API_KEY`` — required for AI review.
+
+Usage
+-----
+Run the review worker (typically called by a scheduled GitHub Action)::
+
+    python3 scripts/auto_review_queue.py
+
+Process a specific PR only::
+
+    python3 scripts/auto_review_queue.py --pr-number 1234
+
+Dry run without posting comments::
+
+    python3 scripts/auto_review_queue.py --dry-run
+
+Exit code is 0 when the queue processes without fatal errors and 1 otherwise.
+"""
 from __future__ import annotations
 
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import fcntl
 import json
 import os
 import shutil
@@ -20,7 +55,16 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+try:
+    import fcntl
+except ImportError:  # Windows has no fcntl; the worker lock uses msvcrt there.
+    fcntl = None
+    import msvcrt
+else:
+    msvcrt = None
+
 from generate_submissions_data import package_sha256
+from review_submission import ADVISORY_REVIEW_SCHEMA_PATH
 
 
 REVIEW_MARKER = "<!-- haidian-auto-review:{head_sha} -->"
@@ -42,9 +86,20 @@ class Decision:
 
 
 def run(command: list[str], *, cwd: Path, capture: bool = True) -> subprocess.CompletedProcess[str]:
-    completed = subprocess.run(command, cwd=cwd, text=True, capture_output=capture, check=False)
+    completed = subprocess.run(
+        command,
+        cwd=cwd,
+        text=True,
+        capture_output=capture,
+        encoding="utf-8",
+        errors="replace",
+        env={**os.environ, "PYTHONUTF8": "1", "PYTHONIOENCODING": "utf-8"},
+        check=False,
+    )
     if completed.returncode:
-        detail = completed.stderr.strip() or completed.stdout.strip() or "command failed"
+        stdout = completed.stdout or ""
+        stderr = completed.stderr or ""
+        detail = stderr.strip() or stdout.strip() or "command failed"
         raise WorkerError(f"{command[0]} failed: {detail}")
     return completed
 
@@ -55,6 +110,29 @@ def gh_json(repo: str, args: list[str], *, cwd: Path) -> Any:
         return json.loads(completed.stdout)
     except json.JSONDecodeError as exc:
         raise WorkerError(f"invalid JSON from gh {' '.join(args)}") from exc
+
+
+def queued_prs(repo: str, label: str, cwd: Path) -> list[dict[str, Any]]:
+    """Return queued PRs from object labels, without GitHub search indexing."""
+    open_prs = gh_json(
+        repo,
+        [
+            "pr",
+            "list",
+            "--state",
+            "open",
+            "--limit",
+            "1000",
+            "--json",
+            "number,author,headRefOid,state,isDraft,mergeable,statusCheckRollup,labels",
+        ],
+        cwd=cwd,
+    )
+    return [
+        item
+        for item in open_prs
+        if any(str(entry.get("name") or "") == label for entry in item.get("labels", []))
+    ]
 
 
 def pr_file_paths(repo: str, number: int, cwd: Path) -> list[str]:
@@ -130,7 +208,34 @@ def decide(review: dict[str, Any], decision: dict[str, Any], threshold: float) -
         raise WorkerError("AI decision has no numeric weighted_score_100")
     if float(score) < threshold:
         return Decision("low-quality", float(score), f"score below {threshold:g}")
-    return Decision("accept", float(score), "threshold and all gates passed")
+    intake_blocks = []
+    if review.get("recommendation") != "formal-review-ready":
+        intake_blocks.append("recommendation")
+    if review.get("can_enter_formal_review") is not True:
+        intake_blocks.append("can_enter_formal_review")
+    if review.get("required_next_actions_zh") != []:
+        intake_blocks.append("required_next_actions_zh")
+    conditional_followups = review.get("conditional_followups")
+    if conditional_followups is not None:
+        valid_followups = isinstance(conditional_followups, list) and all(
+            isinstance(item, dict)
+            and item.get("blocking_now") is False
+            and isinstance(item.get("action_zh"), str)
+            and bool(item["action_zh"].strip())
+            and isinstance(item.get("trigger"), str)
+            and bool(item["trigger"].strip())
+            and item.get("owner") in {"participant", "organizer", "external", "shared"}
+            for item in conditional_followups
+        )
+        if not valid_followups:
+            intake_blocks.append("conditional_followups")
+    if intake_blocks:
+        return Decision(
+            "request-changes",
+            float(score),
+            f"intake blocked by review fields: {', '.join(intake_blocks)}",
+        )
+    return Decision("accept", float(score), "threshold, gates, and intake readiness passed")
 
 
 def pr_meta(repo: str, number: int, cwd: Path) -> dict[str, Any]:
@@ -196,6 +301,7 @@ def load_cached_review(
     submission_dir: str,
     checkout_root: Path,
     threshold: float,
+    advisory_schema_path: Path | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any], Decision] | None:
     try:
         review = json.loads((audit_dir / "ai-review.json").read_text(encoding="utf-8"))
@@ -204,6 +310,14 @@ def load_cached_review(
     except (OSError, json.JSONDecodeError):
         return None
     if not comment.strip():
+        return None
+    schema_path = advisory_schema_path or checkout_root / ADVISORY_REVIEW_SCHEMA_PATH
+    try:
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        current_schema_version = schema["properties"]["schema_version"]["const"]
+    except (OSError, json.JSONDecodeError, KeyError, TypeError):
+        return None
+    if review.get("schema_version") != current_schema_version:
         return None
     if review.get("submission_dir") != submission_dir or decision.get("submission_dir") != submission_dir:
         return None
@@ -238,14 +352,30 @@ def apply_review(
     if outcome.action == "accept":
         if live.get("mergeable") == "CONFLICTING":
             raise WorkerError("PR became conflicting before merge")
+        authoritative_comment = comment_file.read_text(encoding="utf-8").strip()
+        if not authoritative_comment:
+            raise WorkerError("authoritative PR comment is empty")
         body = (
             f"{marker}\nMaintainer intake decision: Review Agent score {outcome.score:g}/100. "
-            "Mandatory rejection and all four local gates passed. Accepted for repository intake only; "
+            "The mandatory-rejection check passed (no rejection condition was triggered); "
+            "all four local gates and review-readiness checks also passed. "
+            "Accepted for repository intake only; "
             "this is not gallery publication, award selection, implementation approval, or government endorsement."
+            f"\n\n{authoritative_comment}"
         )
         run(["gh", "pr", "review", str(number), "--repo", repo, "--approve", "--body", body], cwd=cwd)
         assert_live(pr_meta(repo, number, cwd), head_sha, require_success=True)
-        merge = ["gh", "pr", "merge", str(number), "--repo", repo, "--merge"]
+        merge = [
+            "gh",
+            "pr",
+            "merge",
+            str(number),
+            "--repo",
+            repo,
+            "--merge",
+            "--match-head-commit",
+            head_sha,
+        ]
         if admin_merge:
             merge.append("--admin")
         run(merge, cwd=cwd)
@@ -283,6 +413,7 @@ def process_pr(args: argparse.Namespace, meta: dict[str, Any], repo_root: Path) 
         return {"number": number, "head_sha": head_sha, "result": "skipped-conflicting"}
 
     submission_dir = submission_dir_from_files(pr_file_paths(args.repo, number, repo_root), author)
+    advisory_schema_path = repo_root / ADVISORY_REVIEW_SCHEMA_PATH
     worktree = args.worktree_root / f"pr-{number}-{head_sha[:12]}"
     audit_dir = args.audit_root / f"pr-{number}" / head_sha
     ref = f"refs/codex-auto-review/pr-{number}-{head_sha[:12]}"
@@ -295,7 +426,13 @@ def process_pr(args: argparse.Namespace, meta: dict[str, Any], repo_root: Path) 
         checked = run(["git", "rev-parse", "HEAD"], cwd=worktree).stdout.strip()
         if checked != head_sha:
             raise WorkerError("fetched worktree SHA does not match live PR head")
-        cached = load_cached_review(audit_dir, submission_dir, worktree, args.threshold)
+        cached = load_cached_review(
+            audit_dir,
+            submission_dir,
+            worktree,
+            args.threshold,
+            advisory_schema_path,
+        )
         if cached is None:
             command = [
                 sys.executable,
@@ -317,6 +454,8 @@ def process_pr(args: argparse.Namespace, meta: dict[str, Any], repo_root: Path) 
                 str(args.retries),
                 "--max-images",
                 str(args.max_images),
+                "--advisory-schema",
+                str(advisory_schema_path),
                 "--comment",
                 "--json",
             ]
@@ -355,6 +494,37 @@ def process_pr(args: argparse.Namespace, meta: dict[str, Any], repo_root: Path) 
         if worktree.exists() and not args.keep_worktrees:
             with WORKTREE_LOCK:
                 run(["git", "worktree", "remove", "--force", str(worktree)], cwd=repo_root)
+
+
+def acquire_worker_lock(lock_path: Path) -> Any:
+    """Hold a non-blocking inter-process lock on the worker lock file.
+
+    The lock is released when the file object is closed or the process
+    exits, matching the previous flock lifetime. Raises WorkerError when
+    another live worker already holds the lock.
+    """
+    lock_file = lock_path.open("a+", encoding="utf-8")
+    if fcntl is not None:
+        try:
+            fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError as exc:
+            lock_file.close()
+            raise WorkerError("another auto-review worker is already running") from exc
+        return lock_file
+    # Windows fallback: lock one byte at the start of the file. The byte is
+    # written only when the file is still empty; touching a byte range held
+    # by another worker fails, and any such OSError means contention.
+    try:
+        lock_file.seek(0, os.SEEK_END)
+        if lock_file.tell() == 0:
+            lock_file.write("0")
+            lock_file.flush()
+        lock_file.seek(0)
+        msvcrt.locking(lock_file.fileno(), msvcrt.LK_NBLCK, 1)
+    except OSError as exc:
+        lock_file.close()
+        raise WorkerError("another auto-review worker is already running") from exc
+    return lock_file
 
 
 def parse_args() -> argparse.Namespace:
@@ -396,27 +566,8 @@ def main() -> int:
     if args.concurrency < 1:
         raise WorkerError("--concurrency must be at least 1")
     args.audit_root.mkdir(parents=True, exist_ok=True)
-    lock_file = (args.audit_root / ".worker.lock").open("w", encoding="utf-8")
-    try:
-        fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
-    except BlockingIOError as exc:
-        raise WorkerError("another auto-review worker is already running") from exc
-    candidates = gh_json(
-        args.repo,
-        [
-            "pr",
-            "list",
-            "--state",
-            "open",
-            "--label",
-            args.label,
-            "--limit",
-            "1000",
-            "--json",
-            "number,author,headRefOid,state,isDraft,mergeable,statusCheckRollup,labels",
-        ],
-        cwd=repo_root,
-    )
+    lock_file = acquire_worker_lock(args.audit_root / ".worker.lock")
+    candidates = queued_prs(args.repo, args.label, repo_root)
     selected = []
     results = []
     for candidate in sorted(candidates, key=lambda item: int(item["number"])):

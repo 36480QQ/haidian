@@ -7,9 +7,11 @@ import subprocess
 import hashlib
 import io
 import re
+import struct
 import urllib.error
+import zlib
 from pathlib import Path
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock, call, patch
 
 import jsonschema
 
@@ -20,6 +22,8 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 from validate_submission import (  # noqa: E402
     ALL_REQUIRED_TASK_IDS,
     FALLBACK_REQUIRED_STANDARD_IDS,
+    MAX_SINGLE_FILE_BYTES,
+    MAX_VIDEO_BYTES,
     MODEL_FAMILY_VALUES,
     REQUIRED_SECTIONS,
     REQUIRED_SECTIONS_EN,
@@ -27,18 +31,24 @@ from validate_submission import (  # noqa: E402
     ValidationReport,
     is_empty_pdf,
     media_signature_is_valid,
+    png_integrity_issue,
+    png_integrity_result,
     validate_agent_disclosure,
+    validate_compliance_matrix_file,
     validate_media_manifest_entries,
     validate_submission,
 )
 from github_pr_validation import (  # noqa: E402
+    authorized_legacy_submission_dirs,
     base_requires_persisted_readiness,
+    COMMENT_MARKER,
     GitHubClient,
     MAX_DOWNLOAD_BYTES,
     _is_retryable_http_error,
     is_current_pull_request_head,
     is_non_submission_pr,
     is_review_queue_candidate,
+    reserved_legacy_login_user_id,
     main,
     readiness_contract_dirs_from_base,
     run_trusted_review_gates,
@@ -47,6 +57,69 @@ from github_pr_validation import (  # noqa: E402
     validation_paths_for,
 )
 from validate_local_submission import discover_submission_files  # noqa: E402
+
+
+class LandUseCodeRegistryTests(unittest.TestCase):
+    def test_wetland_and_commercial_service_codes_match_official_numeric_system(self) -> None:
+        registry = json.loads(
+            (REPO_ROOT / "brief/site-package/enums/land_use_codes.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        labels = {item["code"]: item["label_zh"] for item in registry["codes"]}
+
+        self.assertEqual("湿地", labels["05"])
+        self.assertEqual("商业服务业用地", labels["09"])
+        self.assertEqual(
+            {"0901", "0902", "0903", "0904"},
+            {code for code in labels if code.startswith("09") and len(code) == 4},
+        )
+        self.assertIn("自然资发〔2023〕234号", registry["note"])
+        self.assertIn("GB 50137-2011", registry["note"])
+
+
+class ComplianceMatrixNamespaceTests(unittest.TestCase):
+    def test_standard_ids_are_separate_from_source_ids(self) -> None:
+        requirements = []
+        for requirement_id in sorted(ALL_REQUIRED_TASK_IDS):
+            requirements.append(
+                {
+                    "requirement_id": requirement_id,
+                    "mandatory": True,
+                    "report_sections": ["section"],
+                    "geojson_layers": ["geometry/site_boundary.geojson"],
+                    "metrics": ["site_area_sqm"],
+                    "drawings": ["drawings/a3-booklet.pdf"],
+                    "visual_sections": ["overview"],
+                    "source_ids": ["SITE-PACKAGE"],
+                    "standard_ids": ["MOHURD-URBAN-DESIGN-MEASURES"],
+                    "assumption_ids": ["A-CONTROLS-001"],
+                    "self_check_ids": ["BOUNDARY_TRUST"],
+                }
+            )
+        requirements[0]["source_ids"].append("MOHURD-URBAN-DESIGN-MEASURES")
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "compliance_matrix.json"
+            path.write_text(
+                json.dumps(
+                    {"schema_version": "0.1.0", "requirements": requirements},
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            report = ValidationReport()
+            validate_compliance_matrix_file(
+                report,
+                path,
+                "compliance_matrix.json",
+                {"MOHURD-URBAN-DESIGN-MEASURES"},
+            )
+        self.assertTrue(report.ok, report.errors)
+        self.assertIn(
+            "source_ids contains standard IDs that belong in standard_ids: "
+            "MOHURD-URBAN-DESIGN-MEASURES",
+            "\n".join(report.warnings),
+        )
 
 
 class MediaContractTests(unittest.TestCase):
@@ -209,6 +282,92 @@ class GitHubApiResilienceTests(unittest.TestCase):
         self.assertEqual(1, urlopen.call_count)
         sleep.assert_not_called()
 
+    def test_comment_patch_forbidden_falls_back_to_new_comment(self) -> None:
+        client = GitHubClient("token", "open-city-ai/haidian")
+        existing = {"id": 42, "body": f"{COMMENT_MARKER}\nold result"}
+        patch_error = RuntimeError(
+            "GitHub API PATCH https://api.github.com/repos/open-city-ai/haidian/issues/comments/42 "
+            "failed with HTTP 403: Must have admin rights to Repository."
+        )
+        with patch.object(client, "paginate", return_value=[existing]), patch.object(
+            client,
+            "request",
+            side_effect=[patch_error, ({"id": 43}, {})],
+        ) as request:
+            client.upsert_comment(1955, f"{COMMENT_MARKER}\nnew result")
+        self.assertEqual(
+            [
+                call(
+                    "PATCH",
+                    "/repos/open-city-ai/haidian/issues/comments/42",
+                    {"body": f"{COMMENT_MARKER}\nnew result"},
+                ),
+                call(
+                    "POST",
+                    "/repos/open-city-ai/haidian/issues/1955/comments",
+                    {"body": f"{COMMENT_MARKER}\nnew result"},
+                ),
+            ],
+            request.call_args_list,
+        )
+
+    def test_comment_fallback_is_idempotent_when_identical_marker_exists(self) -> None:
+        client = GitHubClient("token", "open-city-ai/haidian")
+        body = f"{COMMENT_MARKER}\nnew result"
+        comments = [
+            {"id": 42, "body": f"{COMMENT_MARKER}\nold result"},
+            {"id": 43, "body": body},
+        ]
+        with patch.object(client, "paginate", return_value=comments), patch.object(
+            client, "request"
+        ) as request:
+            client.upsert_comment(1955, body)
+        request.assert_not_called()
+
+    def test_comment_patch_forbidden_tries_next_marker_before_posting(self) -> None:
+        client = GitHubClient("token", "open-city-ai/haidian")
+        first = {"id": 42, "body": f"{COMMENT_MARKER}\nold result"}
+        second = {"id": 43, "body": f"{COMMENT_MARKER}\nolder result"}
+        patch_error = RuntimeError(
+            "GitHub API PATCH https://api.github.com/repos/open-city-ai/haidian/issues/comments/42 "
+            "failed with HTTP 403: Must have admin rights to Repository."
+        )
+        with patch.object(client, "paginate", return_value=[first, second]), patch.object(
+            client,
+            "request",
+            side_effect=[patch_error, ({"id": 43}, {})],
+        ) as request:
+            client.upsert_comment(1955, f"{COMMENT_MARKER}\nnew result")
+        self.assertEqual(
+            [
+                call(
+                    "PATCH",
+                    "/repos/open-city-ai/haidian/issues/comments/42",
+                    {"body": f"{COMMENT_MARKER}\nnew result"},
+                ),
+                call(
+                    "PATCH",
+                    "/repos/open-city-ai/haidian/issues/comments/43",
+                    {"body": f"{COMMENT_MARKER}\nnew result"},
+                ),
+            ],
+            request.call_args_list,
+        )
+
+    def test_comment_patch_non_permission_failure_is_not_hidden(self) -> None:
+        client = GitHubClient("token", "open-city-ai/haidian")
+        existing = {"id": 42, "body": f"{COMMENT_MARKER}\nold result"}
+        error = RuntimeError(
+            "GitHub API PATCH https://api.github.com/repos/open-city-ai/haidian/issues/comments/42 "
+            "failed with HTTP 500: server error"
+        )
+        with patch.object(client, "paginate", return_value=[existing]), patch.object(
+            client, "request", side_effect=error
+        ) as request:
+            with self.assertRaisesRegex(RuntimeError, "HTTP 500: server error"):
+                client.upsert_comment(1955, f"{COMMENT_MARKER}\nnew result")
+        request.assert_called_once()
+
     def test_download_404_retries_then_succeeds(self) -> None:
         client = GitHubClient("token", "open-city-ai/haidian")
         not_found = self._error(404, b'{"message":"Not Found"}')
@@ -238,6 +397,40 @@ class GitHubApiResilienceTests(unittest.TestCase):
                     "head-sha",
                     Path(temp_dir) / "asset.bin",
                 )
+
+    def test_download_network_error_retries_then_succeeds(self) -> None:
+        client = GitHubClient("token", "open-city-ai/haidian")
+        network_error = urllib.error.URLError(
+            "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed"
+        )
+        with tempfile.TemporaryDirectory() as temp_dir, patch(
+            "github_pr_validation.urllib.request.urlopen",
+            side_effect=[network_error, _Response(b"payload")],
+        ), patch("github_pr_validation.time.sleep") as sleep:
+            destination = Path(temp_dir) / "asset.bin"
+            client.download_content("fork/repo", "asset.bin", "head-sha", destination)
+            self.assertEqual(b"payload", destination.read_bytes())
+        sleep.assert_called_once_with(1.0)
+
+    def test_download_network_error_exhaustion_reports_path(self) -> None:
+        client = GitHubClient("token", "open-city-ai/haidian")
+        errors = [urllib.error.URLError("temporary resolver failure") for _ in range(4)]
+        with tempfile.TemporaryDirectory() as temp_dir, patch(
+            "github_pr_validation.urllib.request.urlopen",
+            side_effect=errors,
+        ), patch("github_pr_validation.time.sleep") as sleep:
+            with self.assertRaisesRegex(
+                RuntimeError,
+                r"GitHub API download submissions/alice/design/asset.bin failed after network error: "
+                r"temporary resolver failure",
+            ):
+                client.download_content(
+                    "fork/repo",
+                    "submissions/alice/design/asset.bin",
+                    "head-sha",
+                    Path(temp_dir) / "asset.bin",
+                )
+        self.assertEqual([call(1.0), call(2.0), call(4.0)], sleep.call_args_list)
 
 
 class PullRequestHeadGuardTests(unittest.TestCase):
@@ -555,27 +748,35 @@ class ManifestHydrationTests(unittest.TestCase):
             required,
         )
 
-    def test_download_content_accepts_ten_mib_file(self) -> None:
-        client = GitHubClient("token", "owner/repo")
-        with tempfile.TemporaryDirectory() as tmp:
-            destination = Path(tmp) / "artifact.pdf"
-            with patch(
-                "github_pr_validation.urllib.request.urlopen",
-                return_value=_Response(b"x" * MAX_DOWNLOAD_BYTES),
-            ):
-                client.download_content("owner/repo", "artifact.pdf", "sha", destination)
-            self.assertEqual(MAX_DOWNLOAD_BYTES, destination.stat().st_size)
+    def test_download_content_default_covers_validator_video_limit(self) -> None:
+        self.assertEqual(MAX_SINGLE_FILE_BYTES, MAX_DOWNLOAD_BYTES)
+        self.assertGreaterEqual(MAX_DOWNLOAD_BYTES, MAX_VIDEO_BYTES)
 
-    def test_download_content_rejects_file_over_ten_mib(self) -> None:
+    def test_download_content_accepts_file_at_explicit_boundary(self) -> None:
         client = GitHubClient("token", "owner/repo")
         with tempfile.TemporaryDirectory() as tmp:
             destination = Path(tmp) / "artifact.pdf"
             with patch(
                 "github_pr_validation.urllib.request.urlopen",
-                return_value=_Response(b"x" * (MAX_DOWNLOAD_BYTES + 1)),
+                return_value=_Response(b"1234"),
+            ):
+                client.download_content(
+                    "owner/repo", "artifact.pdf", "sha", destination, max_bytes=4
+                )
+            self.assertEqual(b"1234", destination.read_bytes())
+
+    def test_download_content_rejects_file_over_explicit_boundary(self) -> None:
+        client = GitHubClient("token", "owner/repo")
+        with tempfile.TemporaryDirectory() as tmp:
+            destination = Path(tmp) / "artifact.pdf"
+            with patch(
+                "github_pr_validation.urllib.request.urlopen",
+                return_value=_Response(b"12345"),
             ):
                 with self.assertRaisesRegex(RuntimeError, "file exceeds download cap"):
-                    client.download_content("owner/repo", "artifact.pdf", "sha", destination)
+                    client.download_content(
+                        "owner/repo", "artifact.pdf", "sha", destination, max_bytes=4
+                    )
             self.assertFalse(destination.exists())
 
     def test_accepts_only_safe_relative_manifest_paths(self) -> None:
@@ -827,6 +1028,60 @@ class ManifestHydrationTests(unittest.TestCase):
                 "alice",
             )
         )
+        self.assertTrue(
+            is_review_queue_candidate(
+                ["submissions/legacy/design/proposal.md"],
+                "current",
+                {"submissions/legacy/design"},
+            )
+        )
+        self.assertFalse(
+            is_review_queue_candidate(
+                ["submissions/legacy/other/proposal.md"],
+                "current",
+                {"submissions/legacy/design"},
+            )
+        )
+
+    def test_owner_alias_requires_stable_user_id_current_login_and_exact_package(self) -> None:
+        expected = {
+            "submissions/zymk8353/jingzhang-safe-return-line",
+            "submissions/zymk8353/jingzhang-safe-charge-line",
+            "submissions/zymk8353/jingzhang-ready-aed-line",
+            "submissions/zymk8353/jingzhang-level-access-line",
+        }
+        self.assertEqual(
+            expected,
+            authorized_legacy_submission_dirs(REPO_ROOT, 51290995, "zyaoii"),
+        )
+        self.assertEqual(set(), authorized_legacy_submission_dirs(REPO_ROOT, 7, "zyaoii"))
+        self.assertEqual(
+            set(), authorized_legacy_submission_dirs(REPO_ROOT, 51290995, "attacker")
+        )
+        self.assertEqual(51290995, reserved_legacy_login_user_id(REPO_ROOT, "zymk8353"))
+        self.assertIsNone(reserved_legacy_login_user_id(REPO_ROOT, "unrelated"))
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            policy = root / "data" / "participant_owner_aliases.json"
+            policy.parent.mkdir()
+            policy.write_text(
+                json.dumps(
+                    {
+                        "aliases": [
+                            {
+                                "github_user_id": 51290995,
+                                "current_login": "zyaoii",
+                                "legacy_login": "legacy",
+                                "legacy_submission_dirs": ["submissions/other/package"],
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            self.assertEqual(
+                set(), authorized_legacy_submission_dirs(root, 51290995, "zyaoii")
+            )
         self.assertFalse(
             is_review_queue_candidate(
                 [
@@ -959,6 +1214,45 @@ REFERENCE_BLOCK = (
     "[metric:public_space_ratio]"
 )
 REFERENCE_BLOCK += " " + " ".join(f"[depth:{item_id}]" for item_id in sorted(REQUIRED_DESIGN_DEPTH_IDS))
+
+
+def png_chunk(chunk_type: bytes, payload: bytes) -> bytes:
+    checksum = zlib.crc32(chunk_type)
+    checksum = zlib.crc32(payload, checksum) & 0xFFFFFFFF
+    return struct.pack(">I", len(payload)) + chunk_type + payload + struct.pack(">I", checksum)
+
+
+def valid_png_bytes() -> bytes:
+    ihdr = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 0)
+    return (
+        b"\x89PNG\r\n\x1a\n"
+        + png_chunk(b"IHDR", ihdr)
+        + png_chunk(b"IDAT", zlib.compress(b"\x00\x00\x00\x00\x00"))
+        + png_chunk(b"IEND", b"")
+    )
+
+
+def custom_png_bytes(
+    ihdr: bytes,
+    scanlines: bytes,
+    *,
+    before_idat: tuple[tuple[bytes, bytes], ...] = (),
+    split_idat: bool = False,
+) -> bytes:
+    compressed = zlib.compress(scanlines)
+    split = max(1, len(compressed) // 2)
+    idat_chunks = (
+        png_chunk(b"IDAT", compressed[:split]) + png_chunk(b"IDAT", compressed[split:])
+        if split_idat
+        else png_chunk(b"IDAT", compressed)
+    )
+    return (
+        b"\x89PNG\r\n\x1a\n"
+        + png_chunk(b"IHDR", ihdr)
+        + b"".join(png_chunk(kind, payload) for kind, payload in before_idat)
+        + idat_chunks
+        + png_chunk(b"IEND", b"")
+    )
 
 
 def english_primary(text: str) -> str:
@@ -1167,6 +1461,119 @@ class SubmissionWorkflowTests(unittest.TestCase):
         path = root / rel
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(content)
+
+    def test_png_integrity_rejects_payload_damage_after_digest_refresh(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/design"
+            changed = self.write_minimal_ai_package(root, base)
+            image = root / base / "assets/figures/key-areas.png"
+            damaged = bytearray(image.read_bytes())
+            idat = damaged.index(b"IDAT")
+            damaged[idat + 5] ^= 0x01
+            image.write_bytes(damaged)
+
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for item in manifest["files"]:
+                if item.get("path") == "assets/figures/key-areas.png":
+                    item["sha256"] = hashlib.sha256(damaged).hexdigest()
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            report = validate_submission(root, "alice", changed)
+            self.assertIn(
+                "invalid PNG `assets/figures/key-areas.png`: IDAT chunk checksum is invalid",
+                "\n".join(report.errors),
+            )
+            self.assertIsNone(png_integrity_issue(root / base / "assets/figures/site-overview.png"))
+
+    def test_png_integrity_checks_decoder_structure_and_resource_bounds(self) -> None:
+        rgba = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 0)
+        indexed = struct.pack(">IIBBBBB", 1, 1, 1, 3, 0, 0, 0)
+        grayscale = struct.pack(">IIBBBBB", 1, 1, 16, 0, 0, 0, 0)
+        interlaced = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 1)
+        cases = {
+            "invalid-filter.png": (
+                custom_png_bytes(rgba, b"\x05\x00\x00\x00\x00"),
+                "invalid filter type 5",
+            ),
+            "missing-palette.png": (
+                custom_png_bytes(indexed, b"\x00\x00"),
+                "missing PLTE",
+            ),
+            "empty-palette.png": (
+                custom_png_bytes(indexed, b"\x00\x00", before_idat=((b"PLTE", b""),)),
+                "PLTE chunk has an invalid length",
+            ),
+            "grayscale-palette.png": (
+                custom_png_bytes(
+                    grayscale,
+                    b"\x00\x00\x00",
+                    before_idat=((b"PLTE", b"\x00\x00\x00"),),
+                ),
+                "PLTE is not allowed",
+            ),
+            "unknown-critical.png": (
+                custom_png_bytes(rgba, b"\x00\x00\x00\x00\x00", before_idat=((b"ABCD", b""),)),
+                "unknown critical chunk ABCD",
+            ),
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for name, (payload, expected) in cases.items():
+                path = root / name
+                path.write_bytes(payload)
+                with self.subTest(name=name):
+                    self.assertIn(expected, png_integrity_issue(path) or "")
+
+            for name, payload in {
+                "multi-idat.png": custom_png_bytes(
+                    rgba, b"\x00\x00\x00\x00\x00", split_idat=True
+                ),
+                "adam7.png": custom_png_bytes(interlaced, b"\x00\x00\x00\x00\x00"),
+                "grayscale16.png": custom_png_bytes(grayscale, b"\x00\x00\x00"),
+                "indexed.png": custom_png_bytes(
+                    indexed,
+                    b"\x00\x00",
+                    before_idat=((b"PLTE", b"\x00\x00\x00\xff\xff\xff"),),
+                ),
+            }.items():
+                path = root / name
+                path.write_bytes(payload)
+                with self.subTest(name=name):
+                    self.assertIsNone(png_integrity_issue(path))
+
+            bounded = root / "bounded.png"
+            bounded.write_bytes(valid_png_bytes())
+            issue, decoded = png_integrity_result(bounded, max_inflated_bytes=4)
+            self.assertIn("safe decoding limit", issue or "")
+            self.assertEqual(0, decoded)
+
+    def test_png_integrity_enforces_validation_wide_decode_budget(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/design"
+            changed = self.write_minimal_ai_package(root, base)
+            first = root / base / "assets/figures/site-overview.png"
+            rgba = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 0)
+            first.write_bytes(custom_png_bytes(rgba, b"\x05\x00\x00\x00\x00"))
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for item in manifest["files"]:
+                if item.get("path") == "assets/figures/site-overview.png":
+                    item["sha256"] = hashlib.sha256(first.read_bytes()).hexdigest()
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            )
+            with patch("validate_submission.MAX_TOTAL_PNG_INFLATED_BYTES", 9):
+                report = validate_submission(root, "alice", changed)
+            errors = "\n".join(report.errors)
+            self.assertIn("invalid filter type 5", errors)
+            self.assertIn("safe decoding limit", errors)
+            self.assertEqual(5, report.png_inflated_bytes)
 
     def write_minimal_ai_package(self, root: Path, base: str) -> list[str]:
         proposal = f"{base}/proposal.md"
@@ -1496,11 +1903,7 @@ class SubmissionWorkflowTests(unittest.TestCase):
 </main></body></html>""",
         )
         for figure in figure_assets:
-            self.write(
-                root,
-                f"{base}/{figure}",
-                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><title>Figure</title><rect width="10" height="10"/></svg>',
-            )
+            self.write_bytes(root, f"{base}/{figure}", valid_png_bytes())
         return [proposal] + [f"{base}/{item}" for item in required]
 
     def add_bilingual_v2_display(self, root: Path, base: str, changed: list[str]) -> None:
@@ -1697,6 +2100,56 @@ class SubmissionWorkflowTests(unittest.TestCase):
             report = validate_submission(root, "alice", [rel])
             self.assertFalse(report.ok)
             self.assertIn("must exactly match", "\n".join(report.errors))
+
+    def test_verified_rename_alias_can_only_maintain_listed_legacy_package(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/legacy/known-package"
+            changed = self.write_minimal_ai_package(root, base)
+            proposal = root / base / "proposal.md"
+            proposal.write_text(
+                proposal.read_text(encoding="utf-8").replace(
+                    'author_github: "alice"', 'author_github: "legacy"'
+                ),
+                encoding="utf-8",
+            )
+            allowed = validate_submission(
+                root,
+                "current",
+                changed,
+                authorized_legacy_submission_dirs={base},
+            )
+            denied = validate_submission(root, "current", changed)
+
+        self.assertTrue(allowed.ok, allowed.errors)
+        self.assertFalse(denied.ok)
+        self.assertIn("must exactly match", "\n".join(denied.errors))
+
+    def test_re_registered_legacy_login_cannot_take_over_historical_package(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/legacy/known-package"
+            changed = self.write_minimal_ai_package(root, base)
+            report = validate_submission(
+                root,
+                "legacy",
+                changed,
+                blocked_submission_owners={"legacy"},
+            )
+
+        self.assertFalse(report.ok)
+        self.assertIn("reserved historical login", "\n".join(report.errors))
+
+    def test_alias_policy_is_participant_protected(self) -> None:
+        path = "data/participant_owner_aliases.json"
+        self.assertFalse(is_non_submission_pr([path]))
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            (root / path).write_text('{"aliases": []}\n', encoding="utf-8")
+            report = validate_submission(root, "alice", [path])
+        self.assertFalse(report.ok)
+        self.assertIn("global policy", "\n".join(report.errors))
 
     def test_submission_owner_casing_must_match_github_login(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -1927,6 +2380,35 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertIn("HTML report must not contain scripts", errors)
             self.assertIn("HTML report must not load remote resources", errors)
             self.assertIn("missing rendered figure reference `../assets/figures/land-use-structure.png`", errors)
+
+    def test_inline_string_remote_css_imports_fail_validation(self) -> None:
+        cases = (
+            (
+                "report/proposal.html",
+                "https://cdn.example.com/report.css",
+                "HTML report CSS must not import remote styles",
+            ),
+            (
+                "visual/index.html",
+                "//cdn.example.com/visual.css",
+                "visual HTML/CSS must not import remote styles",
+            ),
+        )
+        for rel_path, remote_url, expected in cases:
+            with self.subTest(rel_path=rel_path), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                base = "submissions/alice/ai-urban-loop"
+                changed = self.write_minimal_ai_package(root, base)
+                path = root / base / rel_path
+                html = path.read_text(encoding="utf-8").replace(
+                    "</head>", f'<style>@import "{remote_url}";</style></head>'
+                )
+                path.write_text(html, encoding="utf-8")
+
+                report = validate_submission(root, "alice", changed)
+
+                self.assertFalse(report.ok)
+                self.assertIn(expected, "\n".join(report.errors))
 
     def test_privacy_pattern_fails_validation(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -2854,6 +3336,24 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertIn("visual/index.en.html", "\n".join(report.errors))
             self.assertIn("iframe", "\n".join(report.errors))
 
+    def test_undeclared_svg_asset_receives_xml_safety_validation(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            asset = root / base / "visual" / "assets" / "nested" / "active.svg"
+            asset.parent.mkdir(parents=True)
+            asset.write_text(
+                '<svg xmlns="http://www.w3.org/2000/svg"><image href="https://example.com/a.png"/></svg>',
+                encoding="utf-8",
+            )
+            changed.append(f"{base}/visual/assets/nested/active.svg")
+            report = validate_submission(root, "alice", changed)
+            self.assertFalse(report.ok)
+            joined = "\n".join(report.errors)
+            self.assertIn("visual/assets/nested/active.svg", joined)
+            self.assertIn("external, data, or script URIs", joined)
+
     def test_stale_translation_manifest_hash_is_non_blocking(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -3128,11 +3628,61 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.update_json(
                 root,
                 f"{base}/design_depth_matrix.json",
-                lambda data: data["items"][0].update({"status": "data_gap"}),
+                lambda data: data["items"][0].update({"status": "incomplete"}),
             )
             report = validate_submission(root, "alice", changed)
             self.assertFalse(report.ok)
             self.assertIn("formal design depth item status must be complete", "\n".join(report.errors))
+
+    def test_data_gap_design_depth_remains_blocking(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            self.update_json(
+                root,
+                f"{base}/design_depth_matrix.json",
+                lambda data: data["items"][0].update(
+                    {"status": "data_gap", "limited_by": ["site_area_sqm"]}
+                ),
+            )
+            report = validate_submission(root, "alice", changed)
+
+        self.assertFalse(report.ok)
+        self.assertIn("formal design depth item status must be complete", "\n".join(report.errors))
+
+    def test_completeness_limited_by_is_machine_readable_disclosure(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            self.update_json(
+                root,
+                f"{base}/design_depth_matrix.json",
+                lambda data: data["items"][0].update(
+                    {"completeness_limited_by": ["floor_area_ratio"]}
+                ),
+            )
+            report = validate_submission(root, "alice", changed)
+
+        self.assertTrue(report.ok, report.errors)
+
+    def test_completeness_limited_by_rejects_non_string_array(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            self.update_json(
+                root,
+                f"{base}/design_depth_matrix.json",
+                lambda data: data["items"][0].update(
+                    {"completeness_limited_by": ["", 7]}
+                ),
+            )
+            report = validate_submission(root, "alice", changed)
+
+        self.assertFalse(report.ok)
+        self.assertIn("completeness_limited_by must be a non-empty string array", "\n".join(report.errors))
 
     def test_proposal_missing_evidence_references_fails(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -3222,6 +3772,69 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertFalse(report.ok)
             self.assertIn("invalid or unclosed geometry", "\n".join(report.errors))
 
+    def test_boolean_ai_package_coordinate_fails_validation(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            site_path = root / base / "geometry/site_boundary.geojson"
+            site = json.loads(site_path.read_text(encoding="utf-8"))
+            ring = site["features"][0]["geometry"]["coordinates"][0]
+            ring[0] = [True, False]
+            ring[-1] = [True, False]
+            site_path.write_text(json.dumps(site), encoding="utf-8")
+            report = validate_submission(root, "alice", changed)
+            self.assertFalse(report.ok)
+            self.assertIn("invalid or unclosed geometry", "\n".join(report.errors))
+
+    def test_boolean_ai_package_third_ordinate_fails_validation(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            site_path = root / base / "geometry/site_boundary.geojson"
+            site = json.loads(site_path.read_text(encoding="utf-8"))
+            ring = site["features"][0]["geometry"]["coordinates"][0]
+            ring[0].append(True)
+            ring[-1].append(True)
+            site_path.write_text(json.dumps(site), encoding="utf-8")
+            report = validate_submission(root, "alice", changed)
+            self.assertFalse(report.ok)
+            self.assertIn("invalid or unclosed geometry", "\n".join(report.errors))
+
+    def test_nonfinite_ai_package_third_ordinate_fails_validation(self) -> None:
+        for nonfinite in (float("nan"), float("inf"), float("-inf")):
+            with self.subTest(nonfinite=nonfinite), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                base = "submissions/alice/ai-urban-loop"
+                changed = self.write_minimal_ai_package(root, base)
+                site_path = root / base / "geometry/site_boundary.geojson"
+                site = json.loads(site_path.read_text(encoding="utf-8"))
+                ring = site["features"][0]["geometry"]["coordinates"][0]
+                ring[0].append(nonfinite)
+                ring[-1].append(nonfinite)
+                site_path.write_text(json.dumps(site), encoding="utf-8")
+                report = validate_submission(root, "alice", changed)
+                self.assertFalse(report.ok)
+                self.assertIn("invalid or unclosed geometry", "\n".join(report.errors))
+
+    def test_large_integer_ai_package_third_ordinate_does_not_crash(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            site_path = root / base / "geometry/site_boundary.geojson"
+            site = json.loads(site_path.read_text(encoding="utf-8"))
+            ring = site["features"][0]["geometry"]["coordinates"][0]
+            large_integer = 10**1000
+            ring[0].append(large_integer)
+            ring[-1].append(large_integer)
+            site_path.write_text(json.dumps(site), encoding="utf-8")
+
+            report = validate_submission(root, "alice", changed)
+
+            self.assertTrue(report.ok, report.errors)
+
     def test_local_submission_wrapper_validates_directory(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -3243,6 +3856,36 @@ class SubmissionWorkflowTests(unittest.TestCase):
             )
             self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
             self.assertIn("Result: PASS", completed.stdout)
+
+    def test_local_submission_wrapper_accepts_only_verified_owner_alias(self) -> None:
+        base = "submissions/zymk8353/jingzhang-safe-return-line"
+        common = [
+            sys.executable,
+            str(REPO_ROOT / "scripts" / "validate_local_submission.py"),
+            base,
+            "--repo-root",
+            str(REPO_ROOT),
+            "--pr-author",
+            "zyaoii",
+            "--json",
+        ]
+        allowed = subprocess.run(
+            [*common, "--pr-author-id", "51290995"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(allowed.returncode, 0, allowed.stdout + allowed.stderr)
+        self.assertTrue(json.loads(allowed.stdout)["ok"])
+
+        denied = subprocess.run(
+            [*common, "--pr-author-id", "7"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertNotEqual(denied.returncode, 0)
+        self.assertFalse(json.loads(denied.stdout)["ok"])
 
     def test_local_submission_wrapper_can_enforce_forward_manifest_contract(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

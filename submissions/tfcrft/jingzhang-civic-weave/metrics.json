@@ -1,0 +1,223 @@
+{
+  "schema_version": "0.1.0",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.386,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "polygon_area(submitted_site_boundary)",
+      "confidence": "low",
+      "assumptions": [
+        "Repository-maintained provisional polygon only; not an official boundary or planning redline."
+      ]
+    },
+    "building_footprint_area_sqm": {
+      "status": "known",
+      "value": 723.967613,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "sum(projected polygon area of three nominal reversible trial envelopes: 12x6 + 18x12 + 24x18)",
+      "confidence": "low",
+      "assumptions": [
+        "Nominal dimensional sum is 720 sqm; WGS84 rectangles reproject to 723.967613 sqm.",
+        "Design envelopes only; not existing building survey or statutory capacity."
+      ]
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.123423,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_space_area_sqm / site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "Low-confidence conceptual allocation on a provisional boundary; visible presentation rounds this value to about 12%, while the exact machine value is retained only for recomputation."
+      ]
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.073281,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area_sqm / site_area_sqm",
+      "confidence": "low",
+      "assumptions": [
+        "Low-confidence conceptual allocation on a provisional boundary; visible presentation rounds this value to about 7%, while the exact machine value is retained only for recomputation."
+      ]
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Approved FAR controls and official site boundary are not present in the public site package."
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "count(key_detailed_design_areas)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 1408600.768,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(polygon_area(green_space))",
+      "confidence": "low",
+      "assumptions": [
+        "Provisional boundary and generated design layer; recalculate after official geometry."
+      ]
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 836345.643,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(polygon_area(public_space))",
+      "confidence": "low",
+      "assumptions": [
+        "Provisional boundary and generated design layer; recalculate after official geometry."
+      ]
+    },
+    "road_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "requires official road polygons or verified widths",
+      "confidence": "unknown",
+      "assumptions": [
+        "OpenStreetMap centerlines are visual context only."
+      ],
+      "reason": "No official road redlines or verified width survey."
+    },
+    "ai_scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery_contracts.json"
+      ],
+      "formula": "count(readable_ai_scenario_cards)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "user_persona_count": {
+      "status": "known",
+      "value": 7,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery_contracts.json"
+      ],
+      "formula": "count(user_personas)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "industry_validation_scenario_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery_contracts.json"
+      ],
+      "formula": "count(industry_validation_scenarios)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "spatial_prototype_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery_contracts.json"
+      ],
+      "formula": "count(spatial_prototypes)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "implementation_package_count": {
+      "status": "known",
+      "value": 8,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery_contracts.json"
+      ],
+      "formula": "count(project_packages)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "public_space_gate_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/delivery_contracts.json"
+      ],
+      "formula": "count(public_space_release_gates)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "total_floor_area_sqm": {
+      "status": "unknown",
+      "value": null,
+      "unit": "sqm",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "sum(official_floor_area_by_building)",
+      "confidence": "unknown",
+      "assumptions": [
+        "Official existing/buildable floor area is not supplied."
+      ],
+      "reason": "Requires official survey and regulatory controls."
+    },
+    "building_height_m": {
+      "status": "unknown",
+      "value": null,
+      "unit": "m",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "official_height_control",
+      "confidence": "unknown",
+      "assumptions": [
+        "Official height controls are not supplied."
+      ],
+      "reason": "Requires official controls and heritage/aviation review."
+    }
+  }
+}

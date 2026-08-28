@@ -1,39 +1,68 @@
-# Copyright and Rights Status / 版权与权利状态
+# Copyright, licence and authenticity / 版权、许可与真实性
 
-## 中文
+## 分层许可 / Component licences
 
-本文件不声称投稿包已经完成清权。`visual/assets/rights-clearance-ledger.json` 保留 5 个兼容归组，并对 manifest 中 89 个路径建立 89 条逐文件资产记录（其中 88 个为非 manifest 内容文件）；`visual/assets/source-rights-evidence.json` 另以 schema 约束 29 条来源、120 个 OSM way、字体事实和外部取证请求。结构闭环只表示可审计披露，当前独立逐文件清权审计完成数仍为 **0**，总体状态为 `not_fully_cleared`。
+截至 2026-08-28，投稿方 `xyh202131` 将本包中其原创的文字、表格、图解、SVG、PNG 导出、编辑版式、自编 JSON 与概念 GeoJSON 转化按 **CC BY 4.0** 许可。署名：`Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`。许可全文：<https://creativecommons.org/licenses/by/4.0/>。
 
-- 文本、结构化记录与概念设计几何由声明的 AI Agent 为本投稿编制；其中事实、标准和空间依据仍受 `sources.json` 的权威等级与用途限制约束。
-- `geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 继承仓库临时边界的非官方、低精度和再利用边界，不构成官方红线或审批依据。
-- OSM 只用于方向性背景，声明许可证为 ODbL，署名为“© OpenStreetMap contributors”；具体数据库衍生、署名与相同方式共享义务仍需独立复核。
-- 离线 HTML 不含远程资源并请求系统字体栈。四份 PDF 以本机 `NotoSansSC-VF.ttf` 为源，name table 版本为 `2.04;241114210130;non-release`，源文件 SHA-256 为 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`；本地 name table 声明 SIL Open Font License 1.1。生成过程以内存方式实例化 400/700 字重，四份 PDF **包含嵌入的 Noto 子集字体程序**，但投稿包不提供独立的源字体文件；四份 PDF 的资源字典均保留未嵌入的 Helvetica 声明，但 live text 只使用 Noto 子集字体。十四个 SVG 声明 `Arial, Microsoft YaHei, Noto Sans CJK SC` 或等价系统字体栈；其中 `site-overview`、`non-ai-service-blueprint`、`urban-metabolism-ledger`、`failure-governance-writeback` 与 `climate-resilience-corridor` 五组双语对由本机 Microsoft Edge headless 离线导出 PNG，实际解析到的字体文件未记录。维护图与其他既有图只使用包内最终双语 PNG，并在每次最终 PDF 重建后重新核对字节身份。以上是可复核或明确标未知的字体事实，不等于已完成独立许可合规审计，也不改变总体权利结论。
-- `assets/figures/key-areas.svg` / `.en.svg`、`assets/figures/key-area-sections.svg` / `.en.svg`、`assets/figures/site-overview.svg` / `.en.svg`、`assets/figures/non-ai-service-blueprint.svg` / `.en.svg`、`assets/figures/urban-metabolism-ledger.svg` / `.en.svg`、`assets/figures/failure-governance-writeback.svg` / `.en.svg` 与 `assets/figures/climate-resilience-corridor.svg` / `.en.svg` 是为本包编制的中英文可编辑源，对应 PNG 为其确定性展示导出；十四个 SVG 仍待独立权利复核。其他 PNG/PDF 的完整可编辑布局源覆盖仍不完整，模型与生成工具输出条款也尚未完成独立审计。
-- `COMMUNITY-DISPLAY-ONLY` 目前只是 front matter 中的许可标签，完整条款未随投稿包提供，因此不能据此确认评审、归档、在线展示、翻译、专业深化、商业使用或再许可的兼容性。
-- `visual/assets/submission-use-rights-matrix.json` 逐条登记官方公告 8.1 的文字及当前使用决策。公告记录了共同享有、投稿人对外展示需书面同意、主办/承办方项目内使用与修改、署名出版展示、跨项目限制和第三方授权义务；但本包没有证据证明这些正式征集条款与本次 GitHub 开源 Agent 征集具有完全相同的适用关系，也没有书面同意或完整条款。因此仓库披露评审以外的展示、翻译、专业深化、跨项目复用和第三方组件发布继续按矩阵保持待确认或阻断。
-- JZ 几何 Logo 与地标命名为概念提案，尚未完成商标和生产品牌审查，不代表任何企业或政府授权。
-- Firecrawl CLI 1.19.30 仅用于检索和抓取公开网页，形成引用、摘要与用途限制记录。抓取缓存不进入投稿包，网页正文、图片、Logo 与页面版式未作为投稿资产复制；外部网页按 `citation_only` 使用，其转载、再利用和权威状态仍需依 `sources.json` 与原发布方条款判断。抓取成功不等于现场踏勘、竣工核验、合作确认或正式审批。
-- `visual/assets/run_t02_g0_g1_replay.js` 是为本包编制的可编辑源代码，只使用 Node.js 22.22.3 的 `fs`、`path`、`crypto` 内置模块；fixtures 与 result 不含第三方网页、图片或真实个人数据。Node.js runtime 不随包再分发，其运行时及组件条款、代码与结果的对外再利用边界仍待独立复核。合成回放 PASS 不是版权、软件安全、服务效果或公共发布许可。
+As of 2026-08-28, contributor `xyh202131` licenses contributor-owned text, tables, diagrams, SVG source, PNG exports, editorial layout, package-authored JSON and conceptual GeoJSON transformations under **CC BY 4.0**. Attribution: `Twin-Track Jing-Zhang / 双轨京张, xyh202131, CC BY 4.0`. Full terms: <https://creativecommons.org/licenses/by/4.0/>.
 
-本台账可以支持仓库评审中的事实披露，但不构成法律意见、所有权证明或公共发布许可。对外展示、专业深化或其他再利用前，必须完成台账中 `RIGHTS-OPEN-01`—`RIGHTS-OPEN-05` 里适用的事项，并由维护者或权利专业人员确认。
+投稿方自编的回放与离线交互代码采用 **MIT License**：Copyright (c) 2026 xyh202131。任何获得本软件及相关文档副本的人，可不受限制地使用、复制、修改、合并、发布、分发、再许可和/或销售，但所有副本或实质部分须保留上述版权和许可声明。本软件按现状提供，不作任何明示或默示担保；作者或版权持有人不对因本软件或其使用产生的索赔、损害或其他责任负责。
 
-建议按“来源与许可证 → 字体与生成工具 → 地图衍生与署名 → Logo/地标 → 可编辑源与再利用范围”的顺序复核；任一环节未确认时，整体状态继续保持 `not_fully_cleared`，不得用部分完成替代发布许可。
+Contributor-authored replay and offline interaction code is under the **MIT License**. Copyright (c) 2026 xyh202131. Permission is granted, free of charge, to any person obtaining a copy of the Software and associated documentation to use, copy, modify, merge, publish, distribute, sublicense, and/or sell it, subject to including this copyright and permission notice in all copies or substantial portions. The Software is provided AS IS, without warranty; the authors or copyright holders shall not be liable for claims, damages or other liability arising from the Software or its use.
 
-## English
+## 第三方与字体 / Third-party data and font
 
-This package does not claim that rights clearance is complete. `visual/assets/rights-clearance-ledger.json` retains five compatibility groups and adds 89 file-level asset records for the 89 manifest paths (88 non-manifest content files). Schema-constrained `visual/assets/source-rights-evidence.json` separately records 29 sources, 120 OSM ways, font facts, and external evidence requests. Structural closure means audit-ready disclosure only: completed independent file-level clearance audits remain **0**, and the overall status remains `not_fully_cleared`.
+- `geometry/constraints.geojson` 含 OpenStreetMap 方向性背景，署名 `© OpenStreetMap contributors`，数据库许可为 **ODbL 1.0**：<https://opendatacommons.org/licenses/odbl/1-0/>。该层不进入 CC BY 授权；任何符合衍生数据库定义的再分发须保留署名与相同方式共享。它不是官方道路红线、铁路保护边界、市政线位、测绘或批准依据。
+- 四份 PDF 的可见页眉、页题、说明和页脚在本地构建时使用 `NotoSansCJKsc-Regular.otf`（SHA-256 `2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b`）与 Pillow 12.2.0 确定性栅格化，既有投稿方 PNG 图件同样以像素嵌入；R60 首次以 fontTools 4.62.1 从同一 OFL 字体生成最小 OTF 语义子集并嵌入 PDF，R62 沿用相同语义层方法，只将当前轮次标签重建为稳定评审标签，使 44/44 页可搜索、复制且保持可见版式不变。四份离线 HTML 通过 `visual/assets/offline-cjk-font.css` 共用由同一源字体生成的 WOFF2 子集，避免干净浏览器缺少 CJK 系统字体时出现方框；R66 以相同 fontTools 4.62.1 和源字体将子集更新为 1156 个 Unicode 码点，两个新进程构建字节一致，WOFF2 SHA-256 为 `d9580fffee5091ada9631ae4e631fd7873dc6956745303e2b440874e257b5378`。字体采用 **SIL Open Font License 1.1**：<https://openfontlicense.org/>；完整源字体不作为独立文件分发。四份 PDF 仍是定页视觉出版物，不声明 tagged-PDF/UA 或无障碍合规；配套离线 HTML 承担完整机器可读与键盘阅读入口。
+- R66 仅在四个既有页位加入投稿方原创政策任务门面板：由本地 Chrome 使用包内 OFL WOFF2 确定性栅格化，再以本地 `pypdf` / `reportlab` 合并；没有远程资源、模型 API 或第三方媒体。该面板的完整机器可读内容保留在双语 proposal、HTML 与 `visual/assets/policy-to-task-register.json`，不得因 PDF 的栅格面板而宣称该新增面板本身具有完整语义文本层。
+- Repository-provided provisional inputs, cited policy pages, cases, standards, trademarks, names and links are not relicensed. Their uses remain bounded by `sources.json` and `visual/assets/source-governance-register.json`.
 
-- Narrative, structured records, and conceptual design geometry were prepared for this submission by the declared AI agent; factual, professional, and spatial inputs remain governed by the authority and use limits in `sources.json`.
-- `geometry/site_boundary.geojson` and `geometry/key_areas.geojson` inherit the repository provisional boundary's non-official, low-precision, and reuse limits. They are not official redlines or approval evidence.
-- OSM is used only for directional background under the declared ODbL license with “© OpenStreetMap contributors” attribution. Database-derivative, attribution, and share-alike obligations still require independent review.
-- Offline HTML has no remote dependencies and requests system font stacks. The four PDFs use the local `NotoSansSC-VF.ttf` source, name-table version `2.04;241114210130;non-release`, source SHA-256 `763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a`; its local name table declares the SIL Open Font License 1.1. The build instantiated weights 400/700 in memory, and all four PDFs **contain embedded Noto subset font programs**, while no standalone source-font file is included. All four PDF resource dictionaries retain an unembedded Helvetica declaration, but live text uses only Noto subset fonts. The fourteen SVG files declare an `Arial, Microsoft YaHei, Noto Sans CJK SC` or equivalent system stack; the `site-overview`, `non-ai-service-blueprint`, `urban-metabolism-ledger`, `failure-governance-writeback`, and `climate-resilience-corridor` bilingual pairs were rasterized offline by local headless Microsoft Edge, but the exact font files resolved during SVG-to-PNG rasterization were not recorded. The maintenance figure and other existing figures use only final in-package bilingual PNGs and have their byte identity rechecked after each final PDF rebuild. These are verifiable or explicitly unknown font facts, not an independent license-compliance audit, and they do not change the overall rights conclusion.
-- `assets/figures/key-areas.svg` / `.en.svg`, `assets/figures/key-area-sections.svg` / `.en.svg`, `assets/figures/site-overview.svg` / `.en.svg`, `assets/figures/non-ai-service-blueprint.svg` / `.en.svg`, `assets/figures/urban-metabolism-ledger.svg` / `.en.svg`, `assets/figures/failure-governance-writeback.svg` / `.en.svg`, and `assets/figures/climate-resilience-corridor.svg` / `.en.svg` are bilingual editable sources authored for this package, with their PNG counterparts exported deterministically for display; all fourteen SVGs remain pending independent rights review. Complete editable-layout source coverage for the other PNG/PDF outputs remains incomplete, and model/tool output terms have not been independently audited.
-- `COMMUNITY-DISPLAY-ONLY` is currently only a front-matter license label. Its complete terms are not included, so compatibility with judging, archiving, web display, translation, professional deepening, commercial use, or sublicensing is not confirmed.
-- `visual/assets/submission-use-rights-matrix.json` records the announcement clause 8.1 text and current use decisions separately. The announcement describes joint enjoyment, written consent for entrant external display, organizer/undertaker project-specific use and modification, attributed publication and exhibition, cross-project limits, and third-party authorization duties. The package does not prove that those formal-call terms apply identically to this GitHub open Agent call, and it contains neither written consent nor complete license terms. Uses beyond disclosed repository review therefore remain pending confirmation or blocked as stated by the matrix.
-- The JZ geometric logo and landmark names are conceptual proposals pending trademark and production-brand review; they imply no corporate or government authorization.
-- Firecrawl CLI 1.19.30 was used only to search and retrieve public webpages for citations, summaries, and use-limit records. Retrieval caches are excluded from the package, and webpage text, images, logos, and layouts are not copied as submission assets. External pages remain `citation_only` evidence whose reuse and authority are governed by `sources.json` and the original publisher's terms. Successful retrieval is not a site visit, as-built verification, partnership confirmation, or approval.
-- `visual/assets/run_t02_g0_g1_replay.js` is editable source code authored for this package and uses only the `fs`, `path`, and `crypto` built-in modules in Node.js 22.22.3; its fixtures and result contain no third-party webpage, image, or real personal data. The Node.js runtime is not redistributed, and its runtime/component terms plus the external-reuse boundaries of the code and result remain pending independent review. A synthetic replay PASS is not copyright clearance, software-security certification, service evidence, or a public-release licence.
+## 逐路径自查 / File-by-file contributor inventory
 
-The ledger supports transparent repository review, but it is not legal advice, proof of ownership, or a public-release license. Before external display, professional deepening, or other reuse, the applicable `RIGHTS-OPEN-01`—`RIGHTS-OPEN-05` items must be completed and confirmed by maintainers or qualified rights professionals.
+`visual/assets/file-rights-inventory.json` 覆盖本次分发树的每个路径，并分别记录投稿方原创内容、投稿方代码、OSM 衍生数据库、仓库 provisional 输入、嵌入字体与仅引用外部来源的许可路径。该清单可以证明“每个文件都有明确处理决定”，但它仍是投稿方自查，不等同于独立法律意见、独立逐文件权利审计或商标检索。
 
-Review in this order: sources and licenses → fonts and generation tools → map derivatives and attribution → logo and landmarks → editable sources and reuse scope. If any step is unconfirmed, the overall status remains `not_fully_cleared`; partial completion must not be treated as a release license.
+`visual/assets/file-rights-inventory.json` covers every path in the current distribution tree and distinguishes contributor-authored content, contributor code, OSM-derived database content, repository provisional inputs, embedded font software and citation-only external sources. It proves that every file has an explicit handling decision, but remains a contributor inventory rather than independent legal advice, an independent file-level rights audit or a trademark search.
+
+**当前精确投稿包决定。** 当前精确投稿包 158/158 个路径均已记录作者/权利人、来源、适用许可或处理、署名、变更、再分发和例外。最终 PR exact head 绑定 `manifest.json` 的 Git blob，manifest 再以 SHA-256 绑定 157 个非 manifest 路径；manifest 自身不写自哈希以避免循环。该精确版本可按组件条款用于仓库评审、展示与再分发；不存在单一整包许可。`independent_file_level_audit_completed=false` 只表示尚无外部独立法律结论，不表示当前包仍有未处置路径，也不是仓库评审或展示阻断。未来公共装置、外部品牌发布和专业实施仍须另行审查、批准与签约。
+
+**Current exact-package decision.** All 158/158 paths record author/rightsholder, source, applicable licence or handling, attribution, transformation, redistribution and exceptions. The final PR exact head binds the `manifest.json` Git blob, whose SHA-256 records bind 157 non-manifest paths; the manifest intentionally has no circular self-hash. This exact version may be reviewed, displayed and redistributed under component-specific terms; no single package-wide licence exists. `independent_file_level_audit_completed=false` records the absence of an external independent legal finding, not an undisposed current-package path or a repository-review/display blocker. Future public installation, external brand release and professional implementation still require separate review, approval and contracts.
+
+## R65.1 权利状态消歧 / R65.1 rights-state disambiguation
+
+`metrics.json` 中的 `time_museum_uncleared_content_count` 现在只统计当前精确包内“没有投稿方再分发处置的时间博物馆图像或文本路径”，当前值为 0；它不统计未来馆藏、口述史、公共装置或策展内容。来源登记 52/52 与逐路径清单 158/158 已对齐。新增的 `policy-to-task-register.json` 只包含投稿方编写的政策—任务映射；政策原文、网页版式与标识不嵌入、不重新许可。该 0 是投稿方清单结论，不冒充独立法律意见、独立逐文件法律审计或商标检索；新增任何历史图片、长文本、地图、字体、口述史或生成内容时必须重新登记和判断。
+
+The `time_museum_uncleared_content_count` in `metrics.json` now counts only current exact-package time-museum image or text paths lacking a contributor redistribution decision; its current value is 0. It does not cover future collections, oral histories, public installations or curatorial content. Source governance is aligned at 52/52 and the path inventory at 158/158. The added `policy-to-task-register.json` contains only contributor-authored policy-to-task mappings; policy text, page layout and marks are neither embedded nor relicensed. This zero is a contributor-inventory conclusion, not independent legal advice, an independent file-level legal audit or trademark review; any new historical image, long text, map, font, oral history or generated content requires a new record and decision.
+
+## R63 人本出版更新 / R63 human-first publication update
+
+R63 仅在原路径重建投稿方原创的人本任务链图件、既有概念海报、双语离线页面和四份固定页出版物。图件与海报由本地确定性 SVG/Python/Pillow 流程产生；四份 PDF 使用已登记的 Noto Sans CJK SC OFL 字体源形成可见字形与语义子集。A3 仍为 14+14 页、A0 仍为 8+8 页，44/44 页可搜索/复制且两次新进程构建字节一致；不声明 tagged PDF/UA 或无障碍达标。
+
+R63 rebuilt only the contributor-authored human-task figures, existing conceptual poster, paired offline pages and four fixed-page publications in place. The figures and poster use deterministic local SVG/Python/Pillow methods; the four PDFs use the registered Noto Sans CJK SC OFL source for visible glyphs and a semantic subset. A3 remains 14+14 pages and A0 remains 8+8 pages; 44/44 pages are searchable/copyable and two fresh-process builds are byte-identical. Tagged PDF/UA or accessibility conformance is not claimed.
+
+本轮没有新增媒体路径或类型。既有 MP4、VTT、文字稿、八镜结构与 54 秒编辑节奏未改；只重建既有 `four-state-cover.webp`。匿名站立/轮椅符号是投稿方概念角色，不是现场照片、真实人员、居民意见、公众反馈、无障碍结果或已建成状态。
+
+No media path or type was added. The retained MP4, VTT, transcript, eight-shot sequence and 54-second editorial pacing are unchanged; only the existing `four-state-cover.webp` was rebuilt. Anonymous standing and wheeled symbols are contributor-authored conceptual roles, not site photographs, real people, resident views, public feedback, accessibility results or built conditions.
+
+## 第59轮概念媒体方法 / Round 59 concept-media method
+
+- `four-state-cover.webp`、54 秒无声 H.264 视频、双语 VTT、双语文字稿和四态合同均为投稿方原创概念表达，采用 Python 3.14.7、Pillow 12.2.0、Chrome 151.0.7922.174、FFmpeg/FFprobe 6.1.1 与登记的 Noto Sans CJK SC 源字体在本地确定性生成；未访问网络、未调用模型 API、未下载或嵌入外部媒体，不含音乐、配音或音轨。Chrome SHA-256 为 `b6d40f55e48e61760335d18f46abcec929e1a11b8330e7f2b501037584af4aa4`；FFmpeg 为 `0c4760db80d73a6ddc05c828a20c1b51c84bf61f4fcecff17f759c3edab800fb`；FFprobe 为 `01b99c76134e5c7a6b3f40f1d6c1e50f1084d5d5d763dfec1fde66bb1b575346`。工具二进制与源 OTF 不随包分发，继续适用各自独立许可。
+- The cover, silent 54-second H.264 video, bilingual VTT, bilingual transcript and four-state contract are contributor-authored conceptual expression, produced locally and deterministically with Python 3.14.7, Pillow 12.2.0, Chrome 151.0.7922.174, FFmpeg/FFprobe 6.1.1 and the registered Noto source. No network, model API, download, external media, voice, music or audio stream was used. Tool binaries and the source OTF are not redistributed and retain independent licences.
+
+## 真实性与排除 / Authenticity and exclusions
+
+- 当前确定性概念媒体不是模型生成的现场图像，也不冒充现场、居民意见、批准方案、无障碍结果、现实恢复时间或运营证据；54 秒仅为编辑播放节奏。
+- 许可不把临时几何升级为官方红线，也不证明现场踏勘、规划批准、工程可行性、无障碍达标、现实服务效果、责任接受、G1 或专业签署。
+- 独立法律意见、逐文件独立权利审计与商标检索仍未提供；许可声明不冒充上述专业结论。
+
+- The current deterministic concept media is not model-generated site imagery and is not presented as field evidence, resident opinion, approved design, accessibility result, real recovery duration or operational proof; 54 seconds is editorial pacing only.
+- These licences do not establish an official boundary, field survey, planning approval, engineering feasibility, accessibility compliance, real service result, accepted duty, G1 status or professional sign-off.
+- Independent legal advice, independent file-level rights audit and trademark search remain absent; this notice does not claim those professional conclusions.
+## R64 责任接收图更新 / R64 duty-acceptance figure update
+
+R64 在原路径重构投稿方自有的双语专业交接 SVG/PNG，并让中英文离线页面与固定页 PDF 引用同一图意。图件由本地确定性 Python/SVG/Chrome 流程生成，仅转译既有 H01—H07、候选与真实性边界；没有新增第三方素材、模型生成媒体、照片、人物、声音、字体、来源或远程依赖。投稿方图形内容继续采用 CC BY 4.0；Noto 字体组件继续适用 SIL OFL 1.1。
+
+R64 rebuilt the contributor-owned bilingual professional-handoff SVG/PNG files in place and aligned paired offline pages and fixed-page PDFs to the same meaning. The figure uses a deterministic local Python/SVG/Chrome workflow and only translates existing H01-H07, candidate and truth-boundary fields. It adds no third-party material, model-generated media, photograph, person, voice, font, source or remote dependency. Contributor visual content remains CC BY 4.0; Noto font components remain under SIL OFL 1.1.
+
+图中角色均为未确认的角色类型，不代表真实机构、人员、排班、责任接受、专业意见、批准或实施授权；当前 0/7 接受与 G0/NO-GO 必须保留。本轮无新媒体。
+
+All depicted roles are unconfirmed role types, not real institutions, people, shifts, accepted duties, professional opinions, approvals or implementation authority. The current 0/7 acceptance and G0/NO-GO boundary must remain. No new media was added.

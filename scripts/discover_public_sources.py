@@ -10,8 +10,35 @@ The agent is intentionally dependency-free. It uses:
 
 It does not automatically add sources to the public brief. It writes a review
 queue for humans to approve.
-"""
 
+Discovery pipeline
+------------------
+1. Load seed URLs from ``brief/data/auto-crawl-seed-urls.csv``.
+2. Load search queries from ``brief/data/discovery-queries.txt``.
+3. For each seed URL, fetch the page and extract outbound links.
+4. Score each candidate URL against topic terms, recency signals, and
+   domain authority rules.
+5. Write ranked candidates to ``brief/discovery/candidate-sources.csv``.
+
+The output CSV can be fed into ``scripts/prepare_source_registry_draft.py``
+to generate a draft registry for maintainer review.
+
+Usage
+-----
+Run discovery from defaults::
+
+    python3 scripts/discover_public_sources.py
+
+Limit to a subset of seed URLs::
+
+    python3 scripts/discover_public_sources.py --max-seeds 10
+
+Write to a custom output directory::
+
+    python3 scripts/discover_public_sources.py --output-dir path/to/discovery
+
+Exit code is 0 when discovery completes and 1 on network or IO error.
+"""
 from __future__ import annotations
 
 import argparse
@@ -302,12 +329,21 @@ def host_of(url: str) -> str:
 
 
 def is_probably_supported_url(url: str) -> bool:
-    if not url.startswith(("http://", "https://")):
+    value = (url or "").strip()
+    try:
+        parsed = urllib.parse.urlsplit(value)
+        hostname = parsed.hostname
+        _ = parsed.port
+    except ValueError:
         return False
-    lower = url.lower()
+    if parsed.scheme.lower() not in {"http", "https"} or not hostname:
+        return False
+    if any(char.isspace() for char in value):
+        return False
+    lower = value.lower()
     if any(item in lower for item in EXCLUDED_HOST_KEYWORDS):
         return False
-    path = urllib.parse.urlsplit(lower).path
+    path = parsed.path.lower()
     return not any(path.endswith(ext) for ext in EXCLUDED_EXTENSIONS)
 
 
@@ -568,8 +604,11 @@ def extract_links_from_html(html_text: str, base_url: str) -> list[tuple[str, st
         href = raw_href.strip()
         if not href or href.startswith(("javascript:", "mailto:", "tel:")):
             continue
-        url = urllib.parse.urljoin(base_url, href)
-        url = decode_duckduckgo_url(url)
+        try:
+            url = urllib.parse.urljoin(base_url, href)
+            url = decode_duckduckgo_url(url)
+        except ValueError:
+            continue
         if is_probably_supported_url(url):
             output.append((canonicalize_url(url), anchor))
     deduped: dict[str, str] = {}
@@ -669,7 +708,8 @@ def discover_seed_links(
     html_rows = [
         row
         for row in seed_rows
-        if row.get("type") in {"auto_html", "metadata_html"} and row.get("url", "").startswith("http")
+        if row.get("type") in {"auto_html", "metadata_html"}
+        and is_probably_supported_url(row.get("url", ""))
     ]
     for row in html_rows[:max_seed_pages]:
         seed_url = row["url"]

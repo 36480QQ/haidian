@@ -1,11 +1,16 @@
 {
   "schema_version": "0.2.0",
   "rights_evidence_contract": {
-    "schema": "visual/assets/source-rights-evidence.schema.json",
-    "instance": "visual/assets/source-rights-evidence.json",
+    "instance": "visual/assets/source-governance-register.json",
     "asset_ledger": "visual/assets/rights-clearance-ledger.json",
-    "status": "audit_ready_not_cleared",
-    "completed_independent_file_level_clearance_audits": 0
+    "file_inventory": "visual/assets/file-rights-inventory.json",
+    "manifest_hash_authority": "manifest.json files[].sha256 at the final PR exact head",
+    "status": "current_exact_package_158_of_158_contributor_path_decisions_complete_under_component_specific_terms",
+    "content_license": "CC-BY-4.0",
+    "code_license": "MIT",
+    "osm_database_license": "ODbL-1.0",
+    "independent_file_level_legal_audit_completed": false,
+    "scope_distinction": "The contributor inventory and component licences permit repository review, display and exact-package redistribution under their notices. They do not claim independent legal advice, reproduce citation-only external works, or authorize future installation, branding or professional implementation."
   },
   "sources": [
     {
@@ -15,7 +20,7 @@
       "publisher": "open-city-ai/haidian",
       "path": "brief/site-package/",
       "source_type": "official_public",
-      "accessed_date": "2026-08-08",
+      "accessed_date": "2026-08-24",
       "authority_level": "project_primary",
       "collection_method": "Direct read of the repository-local site-package directory and its declared inputs; no external collection was performed for this record.",
       "temporal_scope": "Repository snapshot available on the recorded access date; individual files retain their own publication and status dates.",
@@ -328,15 +333,15 @@
       "source_type": "official_public",
       "accessed_date": "2026-08-08",
       "authority_level": "official_case",
-      "collection_method": "Direct desktop reading of the public Barcelona City Council innovation page; no page media or dataset was copied into the package.",
-      "temporal_scope": "Case-page content visible on the recorded access date; it is not a completed historical or current-performance audit of 22@.",
+      "collection_method": "Live public-page recheck of the Barcelona City Council science and innovation page on 2026-08-24; no page text, media, layout or dataset was copied into the package.",
+      "temporal_scope": "Official city page accessible on 2026-08-24 and identifying 22@ as an innovation and technology-transfer hub; this is not a historical or current-performance audit of 22@.",
       "spatial_scope": "Barcelona city and 22@ innovation-district context; it has no jurisdictional or geometric authority in Haidian.",
       "rights_or_reuse": "citation_only_public_page; no text, image, logo or layout is redistributed; terms_not_independently_audited",
       "transformations": [
         "Innovation-district themes were summarized into one comparative row and reframed as a public-benefit delivery question."
       ],
       "known_limitations": [
-        "The selected page does not provide a complete evaluation of 22@ outcomes, land policy or fiscal tools.",
+        "The selected page does not provide a complete evaluation of 22@ outcomes, land policy, public-benefit delivery or fiscal tools.",
         "No Barcelona control, entitlement or funding mechanism is imported into the local proposal."
       ],
       "usable_for": [
@@ -350,21 +355,21 @@
     {
       "id": "CASE-KINGS-CROSS",
       "rights_evidence_id": "SRC-RIGHTS-CASE-KINGS-CROSS",
-      "title": "King's Cross workspace and regeneration",
+      "title": "Public Consultation at King's Cross",
       "publisher": "King's Cross",
-      "url": "https://www.kingscross.co.uk/workspace",
+      "url": "https://www.kingscross.co.uk/kings-cross-public-consultation",
       "source_type": "official_public",
-      "accessed_date": "2026-08-08",
+      "accessed_date": "2026-08-24",
       "authority_level": "case_primary",
-      "collection_method": "Direct desktop reading of the public King's Cross project page; no page media or dataset was copied into the package.",
-      "temporal_scope": "Project-page content visible on the recorded access date; no independent audit of current occupancy, public use or project performance was completed.",
+      "collection_method": "Live public-page recheck on 2026-08-24. The former workspace URL still returned 403, so the record was replaced with an accessible public-consultation page from the same project operator; no page text, media, layout or dataset was copied into the package.",
+      "temporal_scope": "Project-operator public-consultation page accessible on 2026-08-24; no independent audit of current occupancy, public use, consultation quality or project performance was completed.",
       "spatial_scope": "King's Cross regeneration context in London; it has no jurisdictional or geometric authority in Haidian.",
       "rights_or_reuse": "citation_only_public_page; no text, image, logo or layout is redistributed; terms_not_independently_audited",
       "transformations": [
         "Heritage-reuse and public-space themes were summarized into one comparative row and converted into a non-event-day use question."
       ],
       "known_limitations": [
-        "This is a project-operated page rather than an independent evaluation of public value or commercial performance.",
+        "This is a project-operated page rather than an independent evaluation of public value, consultation outcomes or commercial performance.",
         "Property, conservation and commercial conditions are not transferable evidence for the local site."
       ],
       "usable_for": [
@@ -580,6 +585,112 @@
       "not_usable_for": [
         "specific project approval",
         "investment commitment"
+      ]
+    },
+    {
+      "id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
+      "rights_evidence_id": "SRC-RIGHTS-GENERATIVE-AI-INTERIM-MEASURES",
+      "title": "生成式人工智能服务管理暂行办法",
+      "publisher": "国家互联网信息办公室等七部门",
+      "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "path": "brief/site-package/standards/references/generative-ai-interim-measures.md",
+      "source_type": "official_public",
+      "published_date": "2023-07-13",
+      "accessed_date": "2026-08-28",
+      "authority_level": "A0",
+      "central_registry_status": "approved_formal",
+      "collection_method": "Direct read of the repository-local attributed Markdown snapshot and cross-check against the official CAC page; no page text, image, logo or layout is redistributed in the package.",
+      "temporal_scope": "Measures published on 2023-07-13 and effective from 2023-08-15; later amendments, interpretations and service-specific determinations were not independently audited.",
+      "spatial_scope": "Services using generative AI to provide generated text, images, audio or video to the public within mainland China; not every AI application, urban design project or non-generative system.",
+      "rights_or_reuse": "citation_only_official_public_text_and_repository_snapshot; no original page media redistributed; terms_not_independently_audited",
+      "transformations": [
+        "Article 2 scope and Article 15 complaint/reporting duties were translated into a bounded G1-entry requirement for relevant public-facing generative-service candidates."
+      ],
+      "known_limitations": [
+        "Article 14 concerns unlawful-content and service handling and is not treated as a general user opt-out right.",
+        "Article 15 does not set a numeric statutory response deadline; a project-specific feedback timeframe must be preregistered rather than invented.",
+        "Article 17 security-assessment and filing references are not generalized beyond services with public-opinion or social-mobilization capacity.",
+        "This record is not legal advice, proof of filing, security assessment, approval or service compliance."
+      ],
+      "usable_for": [
+        "public-facing generative-service applicability boundary",
+        "complaint and reporting channel requirement",
+        "G1 preregistration question"
+      ],
+      "not_usable_for": [
+        "general AI opt-out right",
+        "numeric statutory response deadline",
+        "proof of filing or security assessment",
+        "project approval or legal opinion"
+      ]
+    },
+    {
+      "id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
+      "rights_evidence_id": "SRC-RIGHTS-BARRIER-FREE-ENVIRONMENT-LAW",
+      "title": "中华人民共和国无障碍环境建设法",
+      "publisher": "全国人民代表大会常务委员会",
+      "url": "https://www.gov.cn/yaowen/liebiao/202306/content_6888910.htm",
+      "path": "brief/site-package/standards/references/barrier-free-environment-law.md",
+      "source_type": "official_public",
+      "published_date": "2023-06-28",
+      "accessed_date": "2026-08-28",
+      "authority_level": "A0",
+      "central_registry_status": "approved_formal",
+      "collection_method": "Direct read of the repository-local attributed Markdown snapshot and cross-check against the official government publication; no page text, image, logo or layout is redistributed in the package.",
+      "temporal_scope": "Law adopted on 2023-06-28 and effective from 2023-09-01; venue-specific applicability and compliance were not independently determined.",
+      "spatial_scope": "Article 39 human-operated service boundary for public service venues handling medical, social-security, financial or living-payment services; not every public space or digital interface.",
+      "rights_or_reuse": "citation_only_official_public_text_and_repository_snapshot; no original page media redistributed; terms_not_independently_audited",
+      "transformations": [
+        "Article 39 was mapped only to existing enterprise/public-service task candidates whose service matter falls within the listed contexts."
+      ],
+      "known_limitations": [
+        "The listed human-service requirement is not generalized to every park, street, event or interface.",
+        "The law does not prove the accessibility status of existing facilities or the compliance of this conceptual proposal.",
+        "Venue-specific compliance still requires competent legal, accessibility and service review."
+      ],
+      "usable_for": [
+        "listed public-service human-operated service baseline",
+        "accessibility handoff question"
+      ],
+      "not_usable_for": [
+        "general human-service mandate for every space",
+        "existing-facility accessibility result",
+        "venue-specific legal conclusion"
+      ]
+    },
+    {
+      "id": "DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45",
+      "rights_evidence_id": "SRC-RIGHTS-ELDERLY-SMART-TECH-PLAN-2020-45",
+      "title": "国务院办公厅关于印发《关于切实解决老年人运用智能技术困难实施方案》的通知（国办发〔2020〕45号）",
+      "publisher": "国务院办公厅",
+      "url": "https://www.gov.cn/zhengce/content/2020-11/24/content_5563804.htm",
+      "path": "brief/site-package/standards/references/elderly-smart-tech-plan-2020-45.md",
+      "source_type": "official_public_background",
+      "published_date": "2020-11-24",
+      "accessed_date": "2026-08-28",
+      "authority_level": "A0_background_only",
+      "central_registry_status": "approved_background_only",
+      "collection_method": "Direct read of the repository-local attributed Markdown snapshot and official policy page; no page text, image, logo or layout is redistributed in the package.",
+      "temporal_scope": "National policy notice published in 2020; current local implementation, service-provider compliance and site-specific demand were not audited.",
+      "spatial_scope": "National background for traditional service channels operating in parallel with smart services across high-frequency tasks; no Haidian site placement or statutory project control.",
+      "rights_or_reuse": "citation_only_official_public_policy_and_repository_snapshot; no original page media redistributed; terms_not_independently_audited",
+      "transformations": [
+        "The parallel-channel direction was used as background support for the proposal's existing non-AI same-task route and was not promoted to a formal local control."
+      ],
+      "known_limitations": [
+        "Background-only status cannot support a formal compliance conclusion.",
+        "The source supplies no local elderly usage figures, service coverage, staffing or site-specific control.",
+        "It does not prove that any Haidian service has implemented the policy."
+      ],
+      "usable_for": [
+        "background context for parallel traditional and smart channels",
+        "high-frequency service task framing"
+      ],
+      "not_usable_for": [
+        "local implementation conclusion",
+        "site-specific statutory control",
+        "local elderly demand or coverage metric",
+        "service-provider compliance evaluation"
       ]
     },
     {
@@ -906,7 +1017,7 @@
       "allowable_uses": [
         "Repository review",
         "Peer assessment",
-        "Internal consistency checks"
+        "Internal package consistency checks"
       ],
       "restrictions": [
         "Cannot claim real archive access",
@@ -918,7 +1029,8 @@
         "Oral history consent template not yet distributed",
         "Independent historical review not yet conducted"
       ],
-      "license": "CC-BY-NC-SA-4.0 as per repository norms; cultural content rights require separate audit"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-CENTURY-TIMELINE-Figure",
@@ -929,11 +1041,11 @@
       "source_type": "generated_figure",
       "accessed_date": "2026-08-12",
       "authority_level": "submission_author",
-      "collection_method": "Script-generated from century-time-museum-contract.json data; bilingual text embedded in SVG",
+      "collection_method": "Package-authored bilingual SVG source with deterministic PNG exports; visual QA rerun in the Round 7–9 closure repair",
       "allowable_uses": [
         "Repository review",
         "Peer assessment",
-        "Exhibition display (with attribution)"
+        "Internal package consistency checks"
       ],
       "restrictions": [
         "Must carry G0 conceptual label",
@@ -944,7 +1056,8 @@
         "Font embedding rights not separately audited",
         "Image quality depends on rendering engine"
       ],
-      "license": "Generated figure; source SVG retains full author attribution"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
     },
     {
       "id": "SOURCE-PORTABLE-TEMPORAL-EDUCATION-PEDAGOGY",
@@ -958,7 +1071,8 @@
       "collection_method": "Cultural narrative section written as part of Round 8 proposal update",
       "allowable_uses": [
         "Repository review",
-        "Peer assessment"
+        "Peer assessment",
+        "Internal package consistency checks"
       ],
       "restrictions": [
         "Conceptual only; not a built exhibition",
@@ -968,7 +1082,460 @@
         "Educator review not completed",
         "Child comprehension testing pending"
       ],
-      "license": "CC-BY-NC-SA-4.0 as per repository norms"
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-JZ-MISSION-ECONOMY-G0-V1",
+      "rights_evidence_id": "SRC-RIGHTS-MISSION-ECONOMY-G0-V1",
+      "title": "公共任务经济 G0 合同：问题驱动的产业与人才转化（准入退出、采购知识产权边界、公共收益回流）",
+      "publisher": "xyh202131",
+      "path": "visual/assets/mission-economy-contract.json",
+      "source_type": "in_package_mechanism_contract",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Mission-economy mechanism contract written as part of Round 9 proposal update",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Conceptual only; no task, enterprise, procurement or deployment exists",
+        "0 written institution confirmations; roles to-be-confirmed"
+      ],
+      "known_gaps": [
+        "Responsible roles to be confirmed",
+        "No real tasks, retests or exit events"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-INDUSTRY-PUBLIC-VALUE-FIGURE",
+      "rights_evidence_id": "SRC-RIGHTS-INDUSTRY-PUBLIC-VALUE-FIG",
+      "title": "产业—公共价值状态图：双语 SVG/PNG 图件（公共任务生命周期、四轴分离、授权阶梯、收益回流）",
+      "publisher": "xyh202131",
+      "path": "assets/figures/industry-public-value-state.{svg,png}",
+      "source_type": "generated_figure",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Package-authored bilingual SVG source with deterministic PNG exports; visual QA rerun in the Round 7–9 closure repair",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 conceptual mechanism only",
+        "No real status, approval, partner or operating result shown"
+      ],
+      "known_gaps": [
+        "Renderer-resolved fonts are not independently audited",
+        "Independent professional review remains pending"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-MISSION-ECONOMY-PROPOSAL",
+      "rights_evidence_id": "SRC-RIGHTS-MISSION-ECONOMY-PROPOSAL",
+      "title": "公共任务经济：问题驱动的产业与人才转化（概念章节）",
+      "publisher": "xyh202131",
+      "path": "proposal.md#mission-economy-section",
+      "source_type": "conceptual_proposal",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Mission-economy narrative section written as part of Round 9 proposal update",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Conceptual only; not a government procurement or deployment",
+        "Passing a test is not an authorization"
+      ],
+      "known_gaps": [
+        "No institution written confirmations",
+        "No field or controlled testing"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-JZ-CIVIC-OPERATIONS-G0-V1",
+      "rights_evidence_id": "SRC-RIGHTS-CIVIC-OPERATIONS-G0-V1",
+      "title": "长期公共共同体运营 G0 合同：全年普通使用、四窗旅程、角色责任、三载体回写与年度去留",
+      "publisher": "xyh202131",
+      "path": "visual/assets/civic-operations-contract.json",
+      "source_type": "in_package_operations_integration_contract",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Round 10 integration contract independently authored from the package's inherited Round 3–9 governance contracts and the local method-spec prompts; no peer submission expression or restricted asset is copied",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 concept only; not a confirmed calendar, event, opening hour, roster, budget, partner, complaint record or operating result",
+        "The inherited 22:00–07:00 window is a design contract only and cannot establish a night shift, noise limit or lighting level",
+        "Annual expand requires new field evidence and separate written authorization"
+      ],
+      "known_gaps": [
+        "Responsible operators and duty holders remain unconfirmed",
+        "Field accessibility, staffing, budget, complaint and operating evidence remain unknown or 0",
+        "Independent operations and rights review remains pending"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-YEAR-ROUND-CIVIC-OPERATIONS-FIGURE",
+      "rights_evidence_id": "SRC-RIGHTS-YEAR-ROUND-CIVIC-OPERATIONS-FIG",
+      "title": "全年公共运营与十轮审计图：双语 SVG/PNG（普通日、条件季节、四窗旅程、三载体与年度去留）",
+      "publisher": "xyh202131",
+      "path": "assets/figures/year-round-civic-operations.{svg,png}",
+      "source_type": "generated_figure",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Package-authored bilingual SVG sources with deterministic local Chromium PNG exports and direct visual QA",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 conceptual operations diagram only",
+        "No real schedule, staffing, event, budget, international partner, complaint result or performance is shown",
+        "Cannot be used as approval for opening, operation, procurement, construction or deployment"
+      ],
+      "known_gaps": [
+        "Renderer-resolved fonts are not independently audited",
+        "Independent professional and rights review remains pending"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-CIVIC-OPERATIONS-PROPOSAL",
+      "rights_evidence_id": "SRC-RIGHTS-CIVIC-OPERATIONS-PROPOSAL",
+      "title": "长期公共共同体运营：普通日常不断轨（双语概念章节）",
+      "publisher": "xyh202131",
+      "path": "proposal.md#long-term-civic-operations-section",
+      "source_type": "conceptual_proposal",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Round 10 bilingual narrative independently authored as an integration and ten-round audit of the package's existing contracts",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Conceptual only; not an operating plan or confirmed civic programme",
+        "Cannot upgrade any scene beyond G0 or clear any provisional geometry or rights status"
+      ],
+      "known_gaps": [
+        "No confirmed operation, staffing, budget, events, partners or results",
+        "No independent operations review"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-JZ-REVIEW-HANDOFF-V1",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-REVIEW-HANDOFF-V1",
+      "title": "评审收束与专业深化交接矩阵：四步评审、六任务、八类资料替换与七专业停止线",
+      "publisher": "xyh202131",
+      "path": "visual/assets/implementation-handoff-matrix.json",
+      "source_type": "in_package_review_handoff_matrix",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Round 11 extension of the existing implementation handoff matrix, independently authored from the package's merged ten-round evidence and current repository taskbook",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 review and handoff index only; not a professional opinion, approval or implementation record",
+        "A mapped replacement or discipline does not prove that real material or responsibility exists",
+        "Cannot replace the nine-category closure contract or authorize progression"
+      ],
+      "known_gaps": [
+        "Authoritative replacement materials remain 0",
+        "Accepted professional duties and all 99 real-world closure artifacts remain 0"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-REVIEW-PROFESSIONAL-HANDOFF-FIGURE",
+      "rights_evidence_id": "SRC-RIGHTS-REVIEW-PROFESSIONAL-HANDOFF-FIG",
+      "title": "评审收束与专业深化交接图：双语 SVG/PNG（一概念、三原型、一内核、六任务、八替换、七专业）",
+      "publisher": "xyh202131",
+      "path": "assets/figures/review-professional-handoff.{svg,png}",
+      "source_type": "generated_figure",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Package-authored bilingual SVG sources with deterministic local Chromium PNG exports and direct visual QA",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "G0 review diagram only",
+        "No official input, professional acceptance, approval, field test, GO decision or implementation result is shown",
+        "Cannot be used as authorization for professional reuse, operation, construction or deployment"
+      ],
+      "known_gaps": [
+        "Renderer-resolved fonts are not independently audited",
+        "Independent professional and rights review remains pending"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-REVIEW-HANDOFF-PROPOSAL",
+      "rights_evidence_id": "SRC-RIGHTS-REVIEW-HANDOFF-PROPOSAL",
+      "title": "评审收束与专业深化交接：冻结骨架，只替换现实缺口（双语概念章节）",
+      "publisher": "xyh202131",
+      "path": "proposal.md#review-synthesis-professional-handoff",
+      "source_type": "conceptual_proposal",
+      "accessed_date": "2026-08-12",
+      "authority_level": "submission_author",
+      "collection_method": "Round 11 bilingual review synthesis independently authored from the package's merged evidence and official six-task structure",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Conceptual only; not a professional handoff acceptance, statutory plan, review conclusion or authorization",
+        "Cannot upgrade geometry, rights, responsibility or any scene beyond G0"
+      ],
+      "known_gaps": [
+        "No authoritative replacement material or professional acceptance",
+        "No field test, approval or GO decision"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-ORDINARY-LIFE-PROPOSAL-R12",
+      "rights_evidence_id": "SRC-RIGHTS-ORDINARY-LIFE-PROPOSAL-R12",
+      "title": "普通生活空间场景册：先看人怎样使用，再看系统怎样叠加（双语概念章节）",
+      "publisher": "xyh202131",
+      "path": "proposal.md#ordinary-life-spatial-scenes",
+      "source_type": "conceptual_proposal",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Round 12 bilingual interpretation authored from the existing three-switchyard, non-AI parity, failure/recovery, and professional-handoff evidence",
+      "allowable_uses": [
+        "Repository review",
+        "Peer assessment",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Conceptual only; not field research, resident consent, professional opinion, approval or implementation evidence",
+        "Cannot upgrade any scene beyond G0 or alter provisional geometry"
+      ],
+      "known_gaps": [
+        "No field survey, confirmed viewpoint, approved component, operating result or restoration result"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-JZ-REVERSIBLE-REGISTER-R13",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-REVERSIBLE-REGISTER-R13",
+      "title": "三处可逆构件与恢复装配结构化登记",
+      "publisher": "xyh202131",
+      "path": "visual/assets/reversible-component-restoration-register.json",
+      "source_type": "in_package_concept_register",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Round 13 package-authored synthesis of existing key-area, readiness and professional-handoff contracts",
+      "allowable_uses": [
+        "Repository review",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Concept types only; not engineering, approval, installation or restoration evidence"
+      ],
+      "known_gaps": [
+        "All location, dimension, material, connection, specialist and real acceptance evidence remains unknown or 0"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-JZ-REVERSIBLE-FIGURE-R13",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-REVERSIBLE-FIGURE-R13",
+      "title": "三处可逆构件与恢复装配双语关系图",
+      "publisher": "xyh202131",
+      "path": "assets/figures/reversible-components.svg",
+      "source_type": "package_authored_concept_figure",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Deterministic package-authored SVG generated from the structured Round 13 register and rasterized with local Chrome",
+      "allowable_uses": [
+        "Repository review",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Not to scale; not engineering, site, component or acceptance evidence"
+      ],
+      "known_gaps": [
+        "No professional or independent file-level rights audit"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-JZ-FIELD-INTAKE-CONTRACT-R15",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-FIELD-INTAKE-CONTRACT-R15",
+      "title": "第15轮现场证据采集与替换空白合同",
+      "publisher": "xyh202131",
+      "path": "visual/assets/field-evidence-intake-contract.json",
+      "source_type": "package_authored_empty_evidence_contract",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Round 15 package-authored synthesis of existing D01-D08, H01-H07, key-area and rights contracts; contains no field values",
+      "allowable_uses": [
+        "Repository review",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Empty template only; not field evidence, professional acceptance, approval or maturity authorization"
+      ],
+      "known_gaps": [
+        "All real issuers, collectors, custodians, reviewers, artifacts, values, approvals and results remain unknown or 0"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-JZ-FIELD-INTAKE-FIGURE-R15",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-FIELD-INTAKE-FIGURE-R15",
+      "title": "第15轮现场证据采集与替换双语系统图",
+      "publisher": "xyh202131",
+      "path": "assets/figures/field-evidence-intake.svg",
+      "source_type": "package_authored_concept_figure",
+      "accessed_date": "2026-08-13",
+      "authority_level": "submission_author",
+      "collection_method": "Package-authored SVG from the empty Round 15 contract, rasterized locally with Chrome",
+      "allowable_uses": [
+        "Repository review",
+        "Internal package consistency checks"
+      ],
+      "restrictions": [
+        "Not to scale; no field, approval, professional, operating or rights-clearance result"
+      ],
+      "known_gaps": [
+        "No independent visual or file-level rights audit"
+      ],
+      "license": "CC-BY-4.0",
+      "rights_or_reuse": "contributor_owned_content_CC_BY_4_0; does not upgrade factual authority or maturity"
+    },
+    {
+      "id": "SOURCE-JZ-COMMONS-LOOP-METHOD-R15",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-COMMONS-LOOP-METHOD-R15",
+      "title": "PR #2266 京张共创环的公众处置方法（仅方法对照）",
+      "publisher": "xyh202131",
+      "url": "https://github.com/open-city-ai/haidian/pull/2266",
+      "path": "submissions/xyh202131/jingzhang-commons-loop-v1/proposal.md",
+      "source_type": "same_author_peer_proposal_method_comparison",
+      "accessed_date": "2026-08-13",
+      "authority_level": "peer_method_only",
+      "collection_method": "Read merged proposal at commit 8cd86936a434b532645c13932281a90417344bd7 and extract public disposition semantics only",
+      "allowable_uses": [
+        "Method comparison for repository review"
+      ],
+      "restrictions": [
+        "Do not copy the Commons Loop brand, one-spine/two-wing/three-courtyard composition, geometry, metrics, figures, media, text assets or provisional/real-world claims"
+      ],
+      "known_gaps": [
+        "Separate proposal remains provisional and cannot supply field evidence or authorization for this package"
+      ],
+      "license": "Citation and method comparison only pending complete terms and independent rights audit"
+    },
+    {
+      "id": "BEIJING-JZ-CONTROL-PLAN-APPROVAL-20260812",
+      "rights_evidence_id": "SRC-RIGHTS-BEIJING-JZ-CONTROL-PLAN-APPROVAL-20260812",
+      "title": "京张铁路遗址公园沿线街区控规获批 一条‘绿带’建设引领区域城市更新",
+      "publisher": "北京市人民政府门户网站（来源：北京日报）",
+      "url": "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202608/t20260812_4819212.html",
+      "source_type": "official_public_secondary",
+      "published_date": "2026-08-12",
+      "accessed_date": "2026-08-23",
+      "authority_level": "official_approval_status_and_textual_context",
+      "collection_method": "Direct browser reading of the official Beijing Municipal Government public page; no page image, map, full text or layout is redistributed in the package.",
+      "temporal_scope": "Reports an 11 August 2026 approval and a 2024–2035 planning period; this record does not independently authenticate the underlying approval instrument.",
+      "spatial_scope": "Public text reports nine neighbourhoods, about 1,668.2 hectares, and a one-belt/one-axis/two-centres/multiple-nodes structure; no official polygon or co-registration file is supplied.",
+      "rights_or_reuse": "citation_only_official_public_page; no page text, image, map, logo or layout redistributed; terms_not_independently_audited",
+      "transformations": [
+        "Approval status, date, planning period, textual extent and high-level directions were summarized into a bilingual alignment table without importing geometry or parcel controls."
+      ],
+      "known_limitations": [
+        "The page is a public information report, not the approval instrument, statutory drawing set, official GIS/CAD or parcel-control schedule.",
+        "The reported 1,668.2-hectare extent cannot be substituted for, rescale, validate or relocate the package's provisional 11,412,825.386 m² design model.",
+        "The page supplies no field condition, ownership, FAR, height, road redline, municipal capacity, fire/railway conclusion, partner, budget, programme, staffing, recovery duration or project authorization."
+      ],
+      "usable_for": [
+        "reported control-plan approval status",
+        "published planning period and textual extent",
+        "high-level planning-direction alignment"
+      ],
+      "not_usable_for": [
+        "official geometry or redline",
+        "parcel or building control",
+        "engineering design or project authorization",
+        "field or operating result"
+      ]
+    },
+    {
+      "id": "SOURCE-JZ-FOUR-STATE-EXPERIENCE-R59",
+      "rights_evidence_id": "SRC-RIGHTS-JZ-FOUR-STATE-EXPERIENCE-R59",
+      "title": "第59轮四态空间体验概念媒体与静态回退",
+      "publisher": "xyh202131",
+      "path": "assets/media/four-state-experience.md",
+      "source_type": "submission_authored",
+      "accessed_date": "2026-08-25",
+      "authority_level": "submission_author",
+      "collection_method": "Local deterministic vector and Pillow frame synthesis from package-authored diagrams and visual/assets/four-state-experience-contract.json; Chrome raster export and FFmpeg H.264 encoding; no network, model API, external media, audio or field data.",
+      "temporal_scope": "The 54 seconds are editorial pacing only and do not represent a real recovery or service duration.",
+      "spatial_scope": "Conceptual relation diagrams for three non-interchangeable prototypes; no coordinates, official boundary, site condition, surveyed dimension or approved design.",
+      "rights_or_reuse": "contributor_owned_concept_media_CC_BY_4_0; build tools and font remain separately licensed and are not redistributed; current exact package redistribution is allowed under component-specific terms and notices; future installation, branding and professional implementation require separate review",
+      "transformations": [
+        "Recomposed retained contributor-authored four-state and prototype relations into a cover, silent bilingual sequence, captions, transcript and static fallback.",
+        "Encoded 1350 deterministic 1920x1080 frames as a 54-second silent H.264 MP4 and retained the static storyboard for no-motion, print and decoding-failure access."
+      ],
+      "known_limitations": [
+        "Conceptual presentation only; not site condition, public opinion, accessibility compliance, approval, performance, location, real duration, official geometry, service result or maturity evidence.",
+        "Not a central-registry or approved-formal fact source; independent legal/file-level clearance and trademark review remain absent."
+      ],
+      "usable_for": [
+        "explanatory presentation",
+        "repository review",
+        "internal package consistency checks"
+      ],
+      "not_usable_for": [
+        "site condition",
+        "public opinion",
+        "accessibility compliance",
+        "approval",
+        "performance",
+        "location",
+        "real duration",
+        "official geometry",
+        "service result",
+        "maturity evidence"
+      ],
+      "license": "CC-BY-4.0"
     }
   ]
 }

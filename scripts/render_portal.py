@@ -1,6 +1,38 @@
 #!/usr/bin/env python3
-"""Render a static portal page from proposal exhibit cards."""
+"""Render a static portal page from proposal exhibit cards.
 
+This is a maintainer-only rendering tool. It combines exhibit cards from
+multiple submission directories into a single gallery portal page for the
+public website.
+
+The rendered page is a self-contained static HTML file with:
+- A hero header with project title and description.
+- A card grid of all included proposals.
+- Track and scenario filter buttons.
+- A side-by-side proposal comparison panel.
+- Collection highlight sections (optional).
+
+Security: The page does not execute contributor JavaScript; all interactive
+behavior is driven by vanilla DOM and CSS. Remote resources are not loaded.
+
+Usage
+-----
+Render a portal from multiple submission directories::
+
+    python3 scripts/render_portal.py \\
+        --proposal-dirs submissions/alice/proposal-a submissions/bob/proposal-b \\
+        --title "百年京张 AI 创新带 · 城市设计方案展" \\
+        --output public/submissions.html
+
+Pass a collections directory for highlight sections::
+
+    python3 scripts/render_portal.py \\
+        --proposal-dirs ... \\
+        --collections-dir collections/ \\
+        --output public/submissions.html
+
+Exit code is 0 on success and 1 on a parsing or rendering error.
+"""
 from __future__ import annotations
 
 import argparse
@@ -266,7 +298,16 @@ def load_collections(collections_dir: Path | None, cards: list[dict[str, Any]]) 
     if not collections_dir.is_dir():
         raise PortalError(f"{collections_dir}: collections path must be a directory")
 
-    card_lookup = {card["source_path"]: card for card in cards}
+    repo_root = collections_dir.resolve().parent
+
+    def proposal_identity(raw_path: str) -> Path:
+        path = Path(raw_path)
+        return (path if path.is_absolute() else repo_root / path).resolve()
+
+    card_lookup = {
+        proposal_identity(text(card["source_path"])): card
+        for card in cards
+    }
     collections: list[dict[str, Any]] = []
     for path in sorted(collections_dir.glob("*.json")):
         try:
@@ -286,7 +327,7 @@ def load_collections(collections_dir: Path | None, cards: list[dict[str, Any]]) 
             if not isinstance(item, dict):
                 raise PortalError(f"{path}: each collection item must be an object")
             proposal_ref = safe_proposal_ref(item.get("proposal"))
-            matched = card_lookup.get(proposal_ref)
+            matched = card_lookup.get(proposal_identity(proposal_ref))
             rendered_items.append(
                 {
                     "proposal": proposal_ref,

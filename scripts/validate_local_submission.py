@@ -3,6 +3,24 @@
 
 This is a contributor-friendly wrapper around validate_submission.py. It
 discovers files under one proposal directory and passes them as changed files.
+
+Usage
+-----
+Run from the repository root (or pass --repo-root explicitly):
+
+    python3 scripts/validate_local_submission.py submissions/<login>/<slug> \\
+        --pr-author <login>
+
+Add --json to get machine-readable output suitable for automated repair:
+
+    python3 scripts/validate_local_submission.py submissions/<login>/<slug> \\
+        --pr-author <login> --json
+
+The exit code is 0 when the package passes all blocking checks and 1 when one
+or more errors are found.  Warnings do not affect the exit code.
+
+Use --allow-pending-self-check to skip the self_checked assertion when the
+four-gate self-check is still running in a background process.
 """
 
 from __future__ import annotations
@@ -13,6 +31,7 @@ import sys
 from pathlib import Path
 
 from validate_submission import format_report, validate_submission
+from participant_owner_aliases import authorized_legacy_submission_dirs
 
 
 def repo_relative(path: Path, repo_root: Path) -> str:
@@ -72,6 +91,11 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("submission_dir")
     parser.add_argument("--pr-author", required=True)
+    parser.add_argument(
+        "--pr-author-id",
+        type=int,
+        help="Stable numeric GitHub user ID; required only for a maintainer-approved login alias",
+    )
     parser.add_argument("--repo-root", default=".")
     parser.add_argument("--json", action="store_true")
     parser.add_argument(
@@ -100,6 +124,9 @@ def main() -> int:
         strict_manifest_paths=strict_manifest_paths(changed_files)
         if args.strict_manifest
         else (),
+        authorized_legacy_submission_dirs=authorized_legacy_submission_dirs(
+            repo_root, args.pr_author_id, args.pr_author
+        ),
     )
     if args.json:
         print(json.dumps(report.to_dict(), ensure_ascii=False, indent=2))

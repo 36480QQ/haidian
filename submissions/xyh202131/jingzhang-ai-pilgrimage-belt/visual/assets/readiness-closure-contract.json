@@ -1,7 +1,8 @@
 {
   "schema_version": "1.0.0",
   "contract_id": "JZ-READINESS-CLOSURE-V1",
-  "as_of": "2026-08-10",
+  "as_of": "2026-08-12",
+  "as_of_semantics": "date of last real content edit, verified from git history during the Round 26 as_of consistency audit; it is not a validity or freshness guarantee",
   "status": "concept_only_no_go",
   "purpose_zh": "把 pilot-readiness-register.json 中既有的 RACI、审批、禁采数据、停机恢复、社区共测和独立复测要求转成统一的 G0→G1 交付关闭合同；不新增项目、测试、机构、场地、批准或结果。",
   "purpose_en": "Convert the existing RACI, approval, prohibited-data, stop/recovery, community co-test, and independent-retest requirements in pilot-readiness-register.json into one G0-to-G1 handoff-closure contract, without adding a project, test, organisation, site, approval, or result.",
@@ -25,6 +26,9 @@
   "closure_categories": [
     {
       "category_id": "C01_ROLE_ACCEPTANCE",
+      "linked_handoff_pack_ids": [
+        "H01_AUTHORITY"
+      ],
       "parent_field": "raci",
       "required_artifacts": [
         "written acceptance by the accountable role",
@@ -35,6 +39,9 @@
     },
     {
       "category_id": "C02_APPROVAL_SCOPE",
+      "linked_handoff_pack_ids": [
+        "H02_APPROVAL_SCOPE"
+      ],
       "parent_field": "approval_triggers",
       "required_artifacts": [
         "one decision record for every parent approval trigger",
@@ -45,6 +52,9 @@
     },
     {
       "category_id": "C03_SITE_TIME_BASELINE",
+      "linked_handoff_pack_ids": [
+        "H03_BASELINE"
+      ],
       "parent_field": "evidence_deliverables",
       "required_artifacts": [
         "owner- or authority-confirmed site and time window",
@@ -55,6 +65,9 @@
     },
     {
       "category_id": "C04_PROHIBITED_DATA_CONTROL",
+      "linked_handoff_pack_ids": [
+        "H04_DATA_SAFETY"
+      ],
       "parent_field": "prohibited_data",
       "required_artifacts": [
         "signed prohibited-data acknowledgement",
@@ -65,6 +78,9 @@
     },
     {
       "category_id": "C05_STOP_AUTHORITY",
+      "linked_handoff_pack_ids": [
+        "H05_STOP_RECOVERY"
+      ],
       "parent_field": "incident_and_stop_responsibility",
       "required_artifacts": [
         "named immediate-stop holder",
@@ -75,6 +91,9 @@
     },
     {
       "category_id": "C06_RECOVERY_REHEARSAL",
+      "linked_handoff_pack_ids": [
+        "H05_STOP_RECOVERY"
+      ],
       "parent_field": "stop_conditions,recovery_plan",
       "required_artifacts": [
         "one rehearsal record for every critical stop-condition class",
@@ -85,6 +104,9 @@
     },
     {
       "category_id": "C07_COMMUNITY_CO_TEST",
+      "linked_handoff_pack_ids": [
+        "H06_PUBLIC_PARITY"
+      ],
       "parent_field": "community_co_test",
       "required_artifacts": [
         "affected-group sampling and invitation record",
@@ -95,6 +117,9 @@
     },
     {
       "category_id": "C08_INDEPENDENT_RETEST",
+      "linked_handoff_pack_ids": [
+        "H07_RETEST_DECISION"
+      ],
       "parent_field": "independent_retest",
       "required_artifacts": [
         "reviewer independence declaration",
@@ -105,6 +130,9 @@
     },
     {
       "category_id": "C09_GO_NO_GO_MINUTE",
+      "linked_handoff_pack_ids": [
+        "H07_RETEST_DECISION"
+      ],
       "parent_field": "go_no_go",
       "required_artifacts": [
         "dated decision minute",
@@ -139,8 +167,28 @@
       "parent_item_ref": "visual/assets/pilot-readiness-register.json#JZ-01",
       "item_type": "concept_project",
       "completed_category_ids": [],
-      "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "required_artifact_ids": ["JZ-01-C01_ROLE_ACCEPTANCE", "JZ-01-C02_APPROVAL_SCOPE", "JZ-01-C03_SITE_TIME_BASELINE", "JZ-01-C04_PROHIBITED_DATA_CONTROL", "JZ-01-C05_STOP_AUTHORITY", "JZ-01-C06_RECOVERY_REHEARSAL", "JZ-01-C07_COMMUNITY_CO_TEST", "JZ-01-C08_INDEPENDENT_RETEST", "JZ-01-C09_GO_NO_GO_MINUTE"],
+      "open_category_ids": [
+        "C01_ROLE_ACCEPTANCE",
+        "C02_APPROVAL_SCOPE",
+        "C03_SITE_TIME_BASELINE",
+        "C04_PROHIBITED_DATA_CONTROL",
+        "C05_STOP_AUTHORITY",
+        "C06_RECOVERY_REHEARSAL",
+        "C07_COMMUNITY_CO_TEST",
+        "C08_INDEPENDENT_RETEST",
+        "C09_GO_NO_GO_MINUTE"
+      ],
+      "required_artifact_ids": [
+        "JZ-01-C01_ROLE_ACCEPTANCE",
+        "JZ-01-C02_APPROVAL_SCOPE",
+        "JZ-01-C03_SITE_TIME_BASELINE",
+        "JZ-01-C04_PROHIBITED_DATA_CONTROL",
+        "JZ-01-C05_STOP_AUTHORITY",
+        "JZ-01-C06_RECOVERY_REHEARSAL",
+        "JZ-01-C07_COMMUNITY_CO_TEST",
+        "JZ-01-C08_INDEPENDENT_RETEST",
+        "JZ-01-C09_GO_NO_GO_MINUTE"
+      ],
       "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
@@ -149,8 +197,28 @@
       "parent_item_ref": "visual/assets/pilot-readiness-register.json#JZ-02",
       "item_type": "concept_project",
       "completed_category_ids": [],
-      "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "required_artifact_ids": ["JZ-02-C01_ROLE_ACCEPTANCE", "JZ-02-C02_APPROVAL_SCOPE", "JZ-02-C03_SITE_TIME_BASELINE", "JZ-02-C04_PROHIBITED_DATA_CONTROL", "JZ-02-C05_STOP_AUTHORITY", "JZ-02-C06_RECOVERY_REHEARSAL", "JZ-02-C07_COMMUNITY_CO_TEST", "JZ-02-C08_INDEPENDENT_RETEST", "JZ-02-C09_GO_NO_GO_MINUTE"],
+      "open_category_ids": [
+        "C01_ROLE_ACCEPTANCE",
+        "C02_APPROVAL_SCOPE",
+        "C03_SITE_TIME_BASELINE",
+        "C04_PROHIBITED_DATA_CONTROL",
+        "C05_STOP_AUTHORITY",
+        "C06_RECOVERY_REHEARSAL",
+        "C07_COMMUNITY_CO_TEST",
+        "C08_INDEPENDENT_RETEST",
+        "C09_GO_NO_GO_MINUTE"
+      ],
+      "required_artifact_ids": [
+        "JZ-02-C01_ROLE_ACCEPTANCE",
+        "JZ-02-C02_APPROVAL_SCOPE",
+        "JZ-02-C03_SITE_TIME_BASELINE",
+        "JZ-02-C04_PROHIBITED_DATA_CONTROL",
+        "JZ-02-C05_STOP_AUTHORITY",
+        "JZ-02-C06_RECOVERY_REHEARSAL",
+        "JZ-02-C07_COMMUNITY_CO_TEST",
+        "JZ-02-C08_INDEPENDENT_RETEST",
+        "JZ-02-C09_GO_NO_GO_MINUTE"
+      ],
       "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
@@ -159,8 +227,28 @@
       "parent_item_ref": "visual/assets/pilot-readiness-register.json#JZ-03",
       "item_type": "concept_project",
       "completed_category_ids": [],
-      "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "required_artifact_ids": ["JZ-03-C01_ROLE_ACCEPTANCE", "JZ-03-C02_APPROVAL_SCOPE", "JZ-03-C03_SITE_TIME_BASELINE", "JZ-03-C04_PROHIBITED_DATA_CONTROL", "JZ-03-C05_STOP_AUTHORITY", "JZ-03-C06_RECOVERY_REHEARSAL", "JZ-03-C07_COMMUNITY_CO_TEST", "JZ-03-C08_INDEPENDENT_RETEST", "JZ-03-C09_GO_NO_GO_MINUTE"],
+      "open_category_ids": [
+        "C01_ROLE_ACCEPTANCE",
+        "C02_APPROVAL_SCOPE",
+        "C03_SITE_TIME_BASELINE",
+        "C04_PROHIBITED_DATA_CONTROL",
+        "C05_STOP_AUTHORITY",
+        "C06_RECOVERY_REHEARSAL",
+        "C07_COMMUNITY_CO_TEST",
+        "C08_INDEPENDENT_RETEST",
+        "C09_GO_NO_GO_MINUTE"
+      ],
+      "required_artifact_ids": [
+        "JZ-03-C01_ROLE_ACCEPTANCE",
+        "JZ-03-C02_APPROVAL_SCOPE",
+        "JZ-03-C03_SITE_TIME_BASELINE",
+        "JZ-03-C04_PROHIBITED_DATA_CONTROL",
+        "JZ-03-C05_STOP_AUTHORITY",
+        "JZ-03-C06_RECOVERY_REHEARSAL",
+        "JZ-03-C07_COMMUNITY_CO_TEST",
+        "JZ-03-C08_INDEPENDENT_RETEST",
+        "JZ-03-C09_GO_NO_GO_MINUTE"
+      ],
       "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
@@ -169,8 +257,28 @@
       "parent_item_ref": "visual/assets/pilot-readiness-register.json#JZ-04",
       "item_type": "concept_project",
       "completed_category_ids": [],
-      "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "required_artifact_ids": ["JZ-04-C01_ROLE_ACCEPTANCE", "JZ-04-C02_APPROVAL_SCOPE", "JZ-04-C03_SITE_TIME_BASELINE", "JZ-04-C04_PROHIBITED_DATA_CONTROL", "JZ-04-C05_STOP_AUTHORITY", "JZ-04-C06_RECOVERY_REHEARSAL", "JZ-04-C07_COMMUNITY_CO_TEST", "JZ-04-C08_INDEPENDENT_RETEST", "JZ-04-C09_GO_NO_GO_MINUTE"],
+      "open_category_ids": [
+        "C01_ROLE_ACCEPTANCE",
+        "C02_APPROVAL_SCOPE",
+        "C03_SITE_TIME_BASELINE",
+        "C04_PROHIBITED_DATA_CONTROL",
+        "C05_STOP_AUTHORITY",
+        "C06_RECOVERY_REHEARSAL",
+        "C07_COMMUNITY_CO_TEST",
+        "C08_INDEPENDENT_RETEST",
+        "C09_GO_NO_GO_MINUTE"
+      ],
+      "required_artifact_ids": [
+        "JZ-04-C01_ROLE_ACCEPTANCE",
+        "JZ-04-C02_APPROVAL_SCOPE",
+        "JZ-04-C03_SITE_TIME_BASELINE",
+        "JZ-04-C04_PROHIBITED_DATA_CONTROL",
+        "JZ-04-C05_STOP_AUTHORITY",
+        "JZ-04-C06_RECOVERY_REHEARSAL",
+        "JZ-04-C07_COMMUNITY_CO_TEST",
+        "JZ-04-C08_INDEPENDENT_RETEST",
+        "JZ-04-C09_GO_NO_GO_MINUTE"
+      ],
       "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
@@ -179,8 +287,28 @@
       "parent_item_ref": "visual/assets/pilot-readiness-register.json#JZ-05",
       "item_type": "concept_project",
       "completed_category_ids": [],
-      "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "required_artifact_ids": ["JZ-05-C01_ROLE_ACCEPTANCE", "JZ-05-C02_APPROVAL_SCOPE", "JZ-05-C03_SITE_TIME_BASELINE", "JZ-05-C04_PROHIBITED_DATA_CONTROL", "JZ-05-C05_STOP_AUTHORITY", "JZ-05-C06_RECOVERY_REHEARSAL", "JZ-05-C07_COMMUNITY_CO_TEST", "JZ-05-C08_INDEPENDENT_RETEST", "JZ-05-C09_GO_NO_GO_MINUTE"],
+      "open_category_ids": [
+        "C01_ROLE_ACCEPTANCE",
+        "C02_APPROVAL_SCOPE",
+        "C03_SITE_TIME_BASELINE",
+        "C04_PROHIBITED_DATA_CONTROL",
+        "C05_STOP_AUTHORITY",
+        "C06_RECOVERY_REHEARSAL",
+        "C07_COMMUNITY_CO_TEST",
+        "C08_INDEPENDENT_RETEST",
+        "C09_GO_NO_GO_MINUTE"
+      ],
+      "required_artifact_ids": [
+        "JZ-05-C01_ROLE_ACCEPTANCE",
+        "JZ-05-C02_APPROVAL_SCOPE",
+        "JZ-05-C03_SITE_TIME_BASELINE",
+        "JZ-05-C04_PROHIBITED_DATA_CONTROL",
+        "JZ-05-C05_STOP_AUTHORITY",
+        "JZ-05-C06_RECOVERY_REHEARSAL",
+        "JZ-05-C07_COMMUNITY_CO_TEST",
+        "JZ-05-C08_INDEPENDENT_RETEST",
+        "JZ-05-C09_GO_NO_GO_MINUTE"
+      ],
       "submitted_evidence_by_category": {},
       "decision": "NO-GO",
       "boundary_note": "The existing synthetic T-02 replay does not close any real-world category."
@@ -190,8 +318,28 @@
       "parent_item_ref": "visual/assets/pilot-readiness-register.json#JZ-06",
       "item_type": "concept_project",
       "completed_category_ids": [],
-      "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "required_artifact_ids": ["JZ-06-C01_ROLE_ACCEPTANCE", "JZ-06-C02_APPROVAL_SCOPE", "JZ-06-C03_SITE_TIME_BASELINE", "JZ-06-C04_PROHIBITED_DATA_CONTROL", "JZ-06-C05_STOP_AUTHORITY", "JZ-06-C06_RECOVERY_REHEARSAL", "JZ-06-C07_COMMUNITY_CO_TEST", "JZ-06-C08_INDEPENDENT_RETEST", "JZ-06-C09_GO_NO_GO_MINUTE"],
+      "open_category_ids": [
+        "C01_ROLE_ACCEPTANCE",
+        "C02_APPROVAL_SCOPE",
+        "C03_SITE_TIME_BASELINE",
+        "C04_PROHIBITED_DATA_CONTROL",
+        "C05_STOP_AUTHORITY",
+        "C06_RECOVERY_REHEARSAL",
+        "C07_COMMUNITY_CO_TEST",
+        "C08_INDEPENDENT_RETEST",
+        "C09_GO_NO_GO_MINUTE"
+      ],
+      "required_artifact_ids": [
+        "JZ-06-C01_ROLE_ACCEPTANCE",
+        "JZ-06-C02_APPROVAL_SCOPE",
+        "JZ-06-C03_SITE_TIME_BASELINE",
+        "JZ-06-C04_PROHIBITED_DATA_CONTROL",
+        "JZ-06-C05_STOP_AUTHORITY",
+        "JZ-06-C06_RECOVERY_REHEARSAL",
+        "JZ-06-C07_COMMUNITY_CO_TEST",
+        "JZ-06-C08_INDEPENDENT_RETEST",
+        "JZ-06-C09_GO_NO_GO_MINUTE"
+      ],
       "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
@@ -200,8 +348,28 @@
       "parent_item_ref": "visual/assets/pilot-readiness-register.json#JZ-07",
       "item_type": "concept_project",
       "completed_category_ids": [],
-      "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "required_artifact_ids": ["JZ-07-C01_ROLE_ACCEPTANCE", "JZ-07-C02_APPROVAL_SCOPE", "JZ-07-C03_SITE_TIME_BASELINE", "JZ-07-C04_PROHIBITED_DATA_CONTROL", "JZ-07-C05_STOP_AUTHORITY", "JZ-07-C06_RECOVERY_REHEARSAL", "JZ-07-C07_COMMUNITY_CO_TEST", "JZ-07-C08_INDEPENDENT_RETEST", "JZ-07-C09_GO_NO_GO_MINUTE"],
+      "open_category_ids": [
+        "C01_ROLE_ACCEPTANCE",
+        "C02_APPROVAL_SCOPE",
+        "C03_SITE_TIME_BASELINE",
+        "C04_PROHIBITED_DATA_CONTROL",
+        "C05_STOP_AUTHORITY",
+        "C06_RECOVERY_REHEARSAL",
+        "C07_COMMUNITY_CO_TEST",
+        "C08_INDEPENDENT_RETEST",
+        "C09_GO_NO_GO_MINUTE"
+      ],
+      "required_artifact_ids": [
+        "JZ-07-C01_ROLE_ACCEPTANCE",
+        "JZ-07-C02_APPROVAL_SCOPE",
+        "JZ-07-C03_SITE_TIME_BASELINE",
+        "JZ-07-C04_PROHIBITED_DATA_CONTROL",
+        "JZ-07-C05_STOP_AUTHORITY",
+        "JZ-07-C06_RECOVERY_REHEARSAL",
+        "JZ-07-C07_COMMUNITY_CO_TEST",
+        "JZ-07-C08_INDEPENDENT_RETEST",
+        "JZ-07-C09_GO_NO_GO_MINUTE"
+      ],
       "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
@@ -210,8 +378,28 @@
       "parent_item_ref": "visual/assets/pilot-readiness-register.json#JZ-08",
       "item_type": "concept_project",
       "completed_category_ids": [],
-      "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "required_artifact_ids": ["JZ-08-C01_ROLE_ACCEPTANCE", "JZ-08-C02_APPROVAL_SCOPE", "JZ-08-C03_SITE_TIME_BASELINE", "JZ-08-C04_PROHIBITED_DATA_CONTROL", "JZ-08-C05_STOP_AUTHORITY", "JZ-08-C06_RECOVERY_REHEARSAL", "JZ-08-C07_COMMUNITY_CO_TEST", "JZ-08-C08_INDEPENDENT_RETEST", "JZ-08-C09_GO_NO_GO_MINUTE"],
+      "open_category_ids": [
+        "C01_ROLE_ACCEPTANCE",
+        "C02_APPROVAL_SCOPE",
+        "C03_SITE_TIME_BASELINE",
+        "C04_PROHIBITED_DATA_CONTROL",
+        "C05_STOP_AUTHORITY",
+        "C06_RECOVERY_REHEARSAL",
+        "C07_COMMUNITY_CO_TEST",
+        "C08_INDEPENDENT_RETEST",
+        "C09_GO_NO_GO_MINUTE"
+      ],
+      "required_artifact_ids": [
+        "JZ-08-C01_ROLE_ACCEPTANCE",
+        "JZ-08-C02_APPROVAL_SCOPE",
+        "JZ-08-C03_SITE_TIME_BASELINE",
+        "JZ-08-C04_PROHIBITED_DATA_CONTROL",
+        "JZ-08-C05_STOP_AUTHORITY",
+        "JZ-08-C06_RECOVERY_REHEARSAL",
+        "JZ-08-C07_COMMUNITY_CO_TEST",
+        "JZ-08-C08_INDEPENDENT_RETEST",
+        "JZ-08-C09_GO_NO_GO_MINUTE"
+      ],
       "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
@@ -220,8 +408,28 @@
       "parent_item_ref": "visual/assets/pilot-readiness-register.json#T-01",
       "item_type": "first_test_protocol",
       "completed_category_ids": [],
-      "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "required_artifact_ids": ["T-01-C01_ROLE_ACCEPTANCE", "T-01-C02_APPROVAL_SCOPE", "T-01-C03_SITE_TIME_BASELINE", "T-01-C04_PROHIBITED_DATA_CONTROL", "T-01-C05_STOP_AUTHORITY", "T-01-C06_RECOVERY_REHEARSAL", "T-01-C07_COMMUNITY_CO_TEST", "T-01-C08_INDEPENDENT_RETEST", "T-01-C09_GO_NO_GO_MINUTE"],
+      "open_category_ids": [
+        "C01_ROLE_ACCEPTANCE",
+        "C02_APPROVAL_SCOPE",
+        "C03_SITE_TIME_BASELINE",
+        "C04_PROHIBITED_DATA_CONTROL",
+        "C05_STOP_AUTHORITY",
+        "C06_RECOVERY_REHEARSAL",
+        "C07_COMMUNITY_CO_TEST",
+        "C08_INDEPENDENT_RETEST",
+        "C09_GO_NO_GO_MINUTE"
+      ],
+      "required_artifact_ids": [
+        "T-01-C01_ROLE_ACCEPTANCE",
+        "T-01-C02_APPROVAL_SCOPE",
+        "T-01-C03_SITE_TIME_BASELINE",
+        "T-01-C04_PROHIBITED_DATA_CONTROL",
+        "T-01-C05_STOP_AUTHORITY",
+        "T-01-C06_RECOVERY_REHEARSAL",
+        "T-01-C07_COMMUNITY_CO_TEST",
+        "T-01-C08_INDEPENDENT_RETEST",
+        "T-01-C09_GO_NO_GO_MINUTE"
+      ],
       "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     },
@@ -230,8 +438,28 @@
       "parent_item_ref": "visual/assets/pilot-readiness-register.json#T-02",
       "item_type": "first_test_protocol",
       "completed_category_ids": [],
-      "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "required_artifact_ids": ["T-02-C01_ROLE_ACCEPTANCE", "T-02-C02_APPROVAL_SCOPE", "T-02-C03_SITE_TIME_BASELINE", "T-02-C04_PROHIBITED_DATA_CONTROL", "T-02-C05_STOP_AUTHORITY", "T-02-C06_RECOVERY_REHEARSAL", "T-02-C07_COMMUNITY_CO_TEST", "T-02-C08_INDEPENDENT_RETEST", "T-02-C09_GO_NO_GO_MINUTE"],
+      "open_category_ids": [
+        "C01_ROLE_ACCEPTANCE",
+        "C02_APPROVAL_SCOPE",
+        "C03_SITE_TIME_BASELINE",
+        "C04_PROHIBITED_DATA_CONTROL",
+        "C05_STOP_AUTHORITY",
+        "C06_RECOVERY_REHEARSAL",
+        "C07_COMMUNITY_CO_TEST",
+        "C08_INDEPENDENT_RETEST",
+        "C09_GO_NO_GO_MINUTE"
+      ],
+      "required_artifact_ids": [
+        "T-02-C01_ROLE_ACCEPTANCE",
+        "T-02-C02_APPROVAL_SCOPE",
+        "T-02-C03_SITE_TIME_BASELINE",
+        "T-02-C04_PROHIBITED_DATA_CONTROL",
+        "T-02-C05_STOP_AUTHORITY",
+        "T-02-C06_RECOVERY_REHEARSAL",
+        "T-02-C07_COMMUNITY_CO_TEST",
+        "T-02-C08_INDEPENDENT_RETEST",
+        "T-02-C09_GO_NO_GO_MINUTE"
+      ],
       "submitted_evidence_by_category": {},
       "decision": "NO-GO",
       "boundary_note": "One synthetic governance replay is complete, but it confirms no organisation, approval, site, field baseline, real stop/recovery rehearsal, community co-test, or independent real retest."
@@ -241,8 +469,28 @@
       "parent_item_ref": "visual/assets/pilot-readiness-register.json#T-03",
       "item_type": "first_test_protocol",
       "completed_category_ids": [],
-      "open_category_ids": ["C01_ROLE_ACCEPTANCE", "C02_APPROVAL_SCOPE", "C03_SITE_TIME_BASELINE", "C04_PROHIBITED_DATA_CONTROL", "C05_STOP_AUTHORITY", "C06_RECOVERY_REHEARSAL", "C07_COMMUNITY_CO_TEST", "C08_INDEPENDENT_RETEST", "C09_GO_NO_GO_MINUTE"],
-      "required_artifact_ids": ["T-03-C01_ROLE_ACCEPTANCE", "T-03-C02_APPROVAL_SCOPE", "T-03-C03_SITE_TIME_BASELINE", "T-03-C04_PROHIBITED_DATA_CONTROL", "T-03-C05_STOP_AUTHORITY", "T-03-C06_RECOVERY_REHEARSAL", "T-03-C07_COMMUNITY_CO_TEST", "T-03-C08_INDEPENDENT_RETEST", "T-03-C09_GO_NO_GO_MINUTE"],
+      "open_category_ids": [
+        "C01_ROLE_ACCEPTANCE",
+        "C02_APPROVAL_SCOPE",
+        "C03_SITE_TIME_BASELINE",
+        "C04_PROHIBITED_DATA_CONTROL",
+        "C05_STOP_AUTHORITY",
+        "C06_RECOVERY_REHEARSAL",
+        "C07_COMMUNITY_CO_TEST",
+        "C08_INDEPENDENT_RETEST",
+        "C09_GO_NO_GO_MINUTE"
+      ],
+      "required_artifact_ids": [
+        "T-03-C01_ROLE_ACCEPTANCE",
+        "T-03-C02_APPROVAL_SCOPE",
+        "T-03-C03_SITE_TIME_BASELINE",
+        "T-03-C04_PROHIBITED_DATA_CONTROL",
+        "T-03-C05_STOP_AUTHORITY",
+        "T-03-C06_RECOVERY_REHEARSAL",
+        "T-03-C07_COMMUNITY_CO_TEST",
+        "T-03-C08_INDEPENDENT_RETEST",
+        "T-03-C09_GO_NO_GO_MINUTE"
+      ],
       "submitted_evidence_by_category": {},
       "decision": "NO-GO"
     }

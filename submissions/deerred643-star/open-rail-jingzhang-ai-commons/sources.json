@@ -1,0 +1,124 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "项目任务书结构化场地包：范围层级、枚举、允许设计空间、指标口径、校验 schema。formal 设计依据。"
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "公开/清权/临时资料可用性登记表；区分 formal-ready、background_only、provisional_only。用于判断每份资料可支撑的结论级别。"
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "面向智能体的资料导航层：范围结构、任务要求、资料用途边界与缺口清单；不替代原始来源。"
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "提交的总体设计范围边界几何来源（provisional_constraint，boundary_precision=provisional_rough）。仅用于临时生成、展示与自检，不作官方红线。"
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "三处重点区域边界几何来源（provisional_constraint）。公告口径面积：众智园约192.1ha、AI原点社区约104.3ha、大钟寺约72.0ha。"
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "北京市规划和自然资源委员会海淀分局《百年京张AI创新带城市设计国际方案征集资格预审公告》：任务、范围层级、面积口径与成果要求的第一权威依据。"
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "面向智能体任务书摘录：十条共创原则、三大定位、五大功能、三区两翼、六项必答任务、评审维度与边界条款。"
+    },
+    {
+      "id": "JINGZHANG-HERITAGE-PARK",
+      "url": "https://www.beijing.gov.cn/",
+      "source_type": "official_public",
+      "usage": "京张铁路遗址公园公开报道与建设信息（北京市/海淀区公开发布）。仅作背景与文化叙事依据（background_only），不作空间控制依据。"
+    },
+    {
+      "id": "QINGHUAYUAN-STATION-HERITAGE",
+      "url": "https://wwj.beijing.gov.cn/",
+      "source_type": "official_public",
+      "usage": "北京市文物局公开的清华园车站旧址文物保护信息。仅作文化资源背景依据（background_only），具体保护范围与建控地带以文物部门正式公布为准。"
+    },
+    {
+      "id": "BEIJING-OPEN-DATA",
+      "url": "https://data.beijing.gov.cn/",
+      "source_type": "official_public",
+      "usage": "北京市公共数据开放平台（人口、交通、公共设施等公开统计口径）。仅作背景参照（background_only），本版未将其用于任何 formal 空间结论。"
+    },
+    {
+      "id": "GLOBAL-AI-ECOSYSTEM-CASES",
+      "source_type": "public_background_knowledge",
+      "usage": "全球AI创新生态公开案例（硅谷/肯德尔广场/Station F/慕尼黑工业大学创新廊道/深圳南山/上海张江等）的公开通识研究。仅作生态机制类比的背景依据，具体数据以各案例官方发布为准。"
+    },
+    {
+      "id": "TERMINOLOGY-GLOSSARY",
+      "path": "docs/terminology-glossary.md",
+      "source_type": "repository_processed_reference",
+      "usage": "赛事中英术语表：双语译稿术语一致性依据。"
+    },
+    {
+      "id": "HD00-1601-CONTROL-PLAN-APPROVAL",
+      "url": "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202608/t20260812_4819212.html",
+      "source_type": "official_public",
+      "usage": "《北京海淀区京张铁路遗址公园沿线（人工智能创新街区重点地区）HD00-1601等街区控制性详细规划（街区层面）（2024年—2035年）》获批消息（北京市人民政府门户网站转载北京日报，批复日期2026-08-11，共9个街区约1668.2公顷，空间结构一带一轴两心多点）。用途限于背景参照：提及「一带」与本方案开源主线所沿的京张铁路遗址公园产业创新带、「两心」含大钟寺与五道口，支持「控规之上的概念深化」定位方向（概念建议）。该来源尚未进入 data/source_registry.json 的 approved_formal_sources，按待来源登记复核的公开背景信息使用，不作法定依据或正式实施证据。它是新闻通稿口径而非图则：不给地块红线、容积率、建筑高度或退线数值，本包不据它产生任何控制指标，相关指标保持 unknown。"
+    },
+    {
+      "id": "JINGZHANG-PARK-PHASE2-APPROVAL",
+      "url": "https://fgw.beijing.gov.cn/fgwzwgk/ysqzzdgk/202409/t20240923_3902988.htm",
+      "source_type": "official_public",
+      "usage": "北京市发展和改革委员会《关于京张铁路遗址公共空间改造提升工程（二期）实施方案的批复》（京发改（审）〔2024〕609号，2024-09-23，受文单位海淀区发展和改革委员会，建设单位北京市海淀区园林绿化局，西直门至知春路段用地约23.08公顷）。用于更新项目①⑦的实施背景参照。该来源尚未进入 data/source_registry.json 的 approved_formal_sources，按待来源登记复核的公开背景信息使用，不作法定依据或正式实施证据。批复不构成对本方案的认可，不提供红线或控制指标。"
+    },
+    {
+      "id": "HD-FYP-PLAN-2026",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/zcwj/202604/t20260428_4813297.shtml",
+      "source_type": "official_public",
+      "usage": "北京市海淀区人民政府关于印发《北京市海淀区国民经济和社会发展第十五个五年规划纲要》的通知（海政发〔2026〕5号，2026-01-09 区人代会批准，2026-04-28 印发，现行有效；区政府门户网站原文）。本包作者已于原网址逐项自行核验后登记。引用口径：十四五末海淀成为全国首个经济总量破万亿的地市级区县、GDP 占北京市 26% 左右；人工智能核心产业规模超 2800 亿元、为全国人工智能领域产业基础最好/人力资源最密集/产品迭代最活跃的地区；清华园车站旧址对公众开放、进京赶考之路（北京段）全线贯通；京张铁路遗址公园（一期）等建成开放。用途限于产业与文化叙事的公开统计口径背景参照（background 参照），不用于任何空间结论、控制指标或实施承诺；不据其产生本包任何数值。"
+    },
+    {
+      "id": "HD-GOV-REPORT-2026",
+      "url": "https://zyk.bjhd.gov.cn/zwdt/xxgk/zfgzbg/202602/t20260209_4805226_hd.shtml",
+      "source_type": "official_public",
+      "usage": "北京市海淀区人民政府关于印发 2026 年《政府工作报告》的通知（2026-01-07 区十七届人大六次会议审议通过，区政府门户网站原文）。本包作者已于原网址逐项自行核验后登记。引用口径：京张铁路遗址公园沿线街区控规通过技术审查；备案大模型累计 122 款、全市占比近 60%；依托 AI 原点社区、AI 北纬社区和京张铁路遗址公园创新带打造人工智能创新街区。用途限于规划衔接与产业背景参照：佐证本方案三区两翼与官方部署同向、佐证沿线控规程序进展；控规技术审查不等于图则发布，本包不据其产生任何控制指标，强度/高度/退线保持 unknown。"
+    },
+    {
+      "id": "HD-QIANXIAN-ARTICLE-2026",
+      "url": "https://peking.bjd.com.cn/content/s6a210605e4b0e45f3fd28654.html",
+      "source_type": "official_public",
+      "usage": "中共北京市海淀区委书记张革署名文章《推动创新关键变量成为发展最大增量》，《前线》杂志 2026 年第 6 期；北京日报客户端「北京海淀官方发布」（区政府官方发布渠道）2026-06-04 全文转载。本包作者已于原网址逐项自行核验后登记。引用口径：2025 年全区 GDP 近 1.37 万亿元、增速 7.2%、占全市 26%；人工智能核心企业超 2000 家、2025 年产业规模 3575 亿元；PCT 国际专利申请量占全市 47%、有效发明专利 35 万件占全市 46%。用途限于产业底盘的公开口径背景参照（最新年度数据），不用于任何空间结论或数值承诺。"
+    },
+    {
+      "id": "SWITCHBACK-PROTOCOL",
+      "url": "https://github.com/open-city-ai/haidian/issues/1119",
+      "source_type": "community_open_spec",
+      "usage": "折返协议 Switchback Protocol v1.0（chucky1102/人字线 RENLINE，CC-BY-4.0，规范文本许可）。组件级采纳：为场景卡 6/11/12/13 建立机器可读运营合约（三色状态、数字化时限、90 天复审、折返留痕）；采用声明见 visual/assets/switchback-adoption.json。它是社区开放贡献的治理合约模板，不是官方标准，不代表任何机构背书。"
+    },
+    {
+      "id": "SEB-SPEC",
+      "url": "https://github.com/open-city-ai/haidian/issues/2549",
+      "source_type": "community_open_spec",
+      "usage": "服务等价基准 SEB v0.5.0（lqqk7/万感京张，CC BY-SA 4.0，条文与 schema 许可）。组件级采纳：仅节点 schema 组件（五项必填字段），为六座站厅服务节点声明 AI 关闭后等价路径；采用声明见 visual/assets/seb-adoption.json。它是社区开放贡献的判据集，不是官方标准，本包不认领任何 SEB 开放等级。"
+    },
+    {
+      "id": "WEBFONT-NOTOSANS-SC-SUBSET",
+      "url": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+      "source_type": "community_open_spec",
+      "usage": "Noto Sans SC 可变字体字符子集（OFL-1.1）：内联于本包四份 HTML 的 base64 woff2，作为离线中英文字体回退，消除无 CJK 字体环境下的方框；覆盖证据与 SHA-256 见 visual/assets/webfont-coverage-evidence.json。OFL-1.1 允许再分发与子集化，要求保留版权声明；本包未修改字形。"
+    }
+  ]
+}

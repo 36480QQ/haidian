@@ -1,0 +1,586 @@
+{
+  "schema_version": "0.1.0",
+  "items": [
+    {
+      "item_id": "existing_conditions_diagnosis",
+      "title_zh": "现状诊断图与资料缺口",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "key_area_count",
+        "measured_conflict_event_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE",
+        "RISK-BOUNDARY-LEDGER"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-VIBRATION-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "把已知粗略范围、概念原型与尚无现场基线分栏，不用推断补空。"
+    },
+    {
+      "item_id": "three_level_scope_framework",
+      "title_zh": "三层范围工作框架",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "key_area_count"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "三层范围分别对应区域服务关系、总体性能框架和片区类型设计。"
+    },
+    {
+      "item_id": "overall_spatial_structure",
+      "title_zh": "总体空间结构",
+      "professional_dimension": "城市设计",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "三层范围工作框架",
+        "统筹研究范围产业与未来城市研究",
+        "总体设计范围城市更新与控规深度城市设计"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/roads.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metric_refs": [
+        "prototype_count",
+        "evidence_grade_count",
+        "measurement_point_count"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "BEIJING-EMBODIED-2026",
+        "XISANQI-ENGINEERING-2026"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-VIBRATION-001"
+      ],
+      "self_check_ids": [
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE",
+        "VISUAL_PACKAGING"
+      ],
+      "evidence_summary_zh": "空间骨架由区域服务链、D-T-S事件链和连续普通公共系统组成。"
+    },
+    {
+      "item_id": "land_use_layout",
+      "title_zh": "用地布局",
+      "professional_dimension": "规划",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "用地、建筑规模与拆改留方案"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "BOUNDARY-SOURCE",
+        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "09等法定分类与D/T/S逐事件角色分层表达，互不替代。"
+    },
+    {
+      "item_id": "development_intensity_controls",
+      "title_zh": "开发强度或待确认控规条件",
+      "professional_dimension": "控规",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "用地、建筑规模与拆改留方案",
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "metric_refs": [
+        "building_footprint_area_sqm",
+        "floor_area_ratio"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "SITE-PACKAGE"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001",
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "概念基底可复算，FAR、高度、密度与退线保持待正式控制条件。",
+      "completeness_limited_by": [
+        "official regulatory controls, ownership, existing-building and structural records remain unavailable"
+      ]
+    },
+    {
+      "item_id": "height_massing_character",
+      "title_zh": "建筑高度、体量与风貌控制",
+      "professional_dimension": "建筑",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "用地、建筑规模与拆改留方案",
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/buildings.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metric_refs": [
+        "building_footprint_area_sqm",
+        "prototype_count"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "RISK-BOUNDARY-LEDGER"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE",
+        "VISUAL_PACKAGING"
+      ],
+      "evidence_summary_zh": "只给三种体量关系与接缝构造原则，不给项目高度结论。",
+      "completeness_limited_by": [
+        "official regulatory controls, ownership, existing-building and structural records remain unavailable"
+      ]
+    },
+    {
+      "item_id": "retain_renovate_demolish",
+      "title_zh": "建筑拆改留分类",
+      "professional_dimension": "建筑",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "用地、建筑规模与拆改留方案",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/buildings.geojson",
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [
+        "building_footprint_area_sqm",
+        "implementation_level_count"
+      ],
+      "source_ids": [
+        "XISANQI-ENGINEERING-2026",
+        "RISK-BOUNDARY-LEDGER"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001",
+        "A-VIBRATION-001"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "拆改留按保留普通服务、维修、一个可逆增设和专项工程四类方法表达，不逐栋断言。",
+      "completeness_limited_by": [
+        "official regulatory controls, ownership, existing-building and structural records remain unavailable"
+      ]
+    },
+    {
+      "item_id": "traffic_rail_slow_parking",
+      "title_zh": "道路、轨道、慢行与停车组织",
+      "professional_dimension": "交通",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "交通、轨道、市政与公共服务设施"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/roads.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "public_space_ratio",
+        "public_reading_count"
+      ],
+      "source_ids": [
+        "BEIJING-DAZHONGSI-STACK",
+        "DB11-938-2022",
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-DAZHONGSI-001"
+      ],
+      "self_check_ids": [
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "普通慢行、维护和动态时窗分层，轨道背景不等于本地影响诊断。"
+    },
+    {
+      "item_id": "municipal_new_infrastructure",
+      "title_zh": "市政与新型基础设施策略",
+      "professional_dimension": "市政",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "交通、轨道、市政与公共服务设施",
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/roads.geojson",
+        "geometry/constraints.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "metric_refs": [
+        "public_reading_count",
+        "pilot_duration_days"
+      ],
+      "source_ids": [
+        "DB11-938-2022",
+        "RISK-BOUNDARY-LEDGER",
+        "HJ-918-2017"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001",
+        "A-VIBRATION-001"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "市政先查设备源、维护和人工运行；断网、删AI或STOP时基本服务继续。"
+    },
+    {
+      "item_id": "blue_green_public_space",
+      "title_zh": "蓝绿系统与公共空间",
+      "professional_dimension": "景观",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "蓝绿空间、公共空间与城市风貌"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [
+        "green_ratio",
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "BOUNDARY-SOURCE",
+        "RISK-BOUNDARY-LEDGER"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-PUBLIC-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING"
+      ],
+      "evidence_summary_zh": "蓝绿空间保持公共与生态主权，临时调试不得阻断普通路径。"
+    },
+    {
+      "item_id": "three_key_area_detailed_design",
+      "title_zh": "三大重点片区详细设计",
+      "professional_dimension": "城市设计",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "重点区域详细设计"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/key_areas.geojson",
+        "geometry/constraints.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "metric_refs": [
+        "key_area_count",
+        "prototype_count"
+      ],
+      "source_ids": [
+        "KEY-AREA-SOURCE",
+        "BEIJING-EMBODIED-2026",
+        "XISANQI-ENGINEERING-2026",
+        "BEIJING-DAZHONGSI-STACK"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001",
+        "A-VIBRATION-001",
+        "A-DAZHONGSI-001"
+      ],
+      "self_check_ids": [
+        "SPATIAL_REVIEW",
+        "PROFESSIONAL_EVIDENCE",
+        "VISUAL_PACKAGING"
+      ],
+      "evidence_summary_zh": "三片区分别回答受控调试、安装前筛查和轨道/文保交接。"
+    },
+    {
+      "item_id": "renewal_project_list",
+      "title_zh": "更新项目清单",
+      "professional_dimension": "实施",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "更新项目清单、实施政策与分期计划",
+        "统筹研究范围产业与未来城市研究"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson",
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [
+        "pilot_duration_days",
+        "implementation_level_count",
+        "public_reading_count"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "HAIDIAN-ROBOT-PROCUREMENT-2026",
+        "RISK-BOUNDARY-LEDGER"
+      ],
+      "assumption_ids": [
+        "A-USERS-001",
+        "A-COST-001"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "项目按责任、许可、采购科目、停止与恢复组织，不给虚构总价。"
+    },
+    {
+      "item_id": "phasing_implementation",
+      "title_zh": "分期实施计划",
+      "professional_dimension": "实施",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "更新项目清单、实施政策与分期计划"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/phasing.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metric_refs": [
+        "pilot_duration_days",
+        "implementation_level_count",
+        "evidence_grade_count"
+      ],
+      "source_ids": [
+        "RISK-BOUNDARY-LEDGER",
+        "AGENT-TASKBOOK",
+        "HJ-918-2017"
+      ],
+      "assumption_ids": [
+        "A-USERS-001",
+        "A-COST-001",
+        "A-AI-001"
+      ],
+      "self_check_ids": [
+        "PROFESSIONAL_EVIDENCE",
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "90天依次完成授权、QA、基线/盲测、可逆措施/A-B-A、独立复测和恢复，每层有签署门。"
+    },
+    {
+      "item_id": "metrics_recalculation",
+      "title_zh": "指标复算",
+      "professional_dimension": "校核",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "指标体系、面积复算与合规矩阵"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson",
+        "geometry/buildings.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "building_footprint_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "key_area_count"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE",
+        "BOUNDARY-SOURCE",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "A-BOUNDARY-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW"
+      ],
+      "evidence_summary_zh": "三项核心视觉指标从提交几何复算；正式几何到位后整包重算。"
+    },
+    {
+      "item_id": "risk_missing_data",
+      "title_zh": "风险与缺资料清单",
+      "professional_dimension": "合规",
+      "required": true,
+      "status": "complete",
+      "proposal_sections": [
+        "风险、版权与合规说明"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/constraints.geojson"
+      ],
+      "metric_refs": [
+        "floor_area_ratio",
+        "measured_conflict_event_count",
+        "ai_gain_over_baseline"
+      ],
+      "source_ids": [
+        "SOURCE-REGISTRY",
+        "RISK-BOUNDARY-LEDGER"
+      ],
+      "assumption_ids": [
+        "A-CONTROLS-001",
+        "A-VIBRATION-001",
+        "A-USERS-001",
+        "A-COST-001"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "PROFESSIONAL_EVIDENCE"
+      ],
+      "evidence_summary_zh": "官方控制、现场基线、真实用户、报价和AI增益均保持未知，并写明补证触发。"
+    }
+  ]
+}

@@ -1,5 +1,50 @@
 #!/usr/bin/env python3
-"""Run contributor-facing pre-submit checks for an AI urban design package."""
+"""Run contributor-facing pre-submit checks for an AI urban design package.
+
+This is the four-gate self-check that every participant must pass before
+opening a pull request.  It orchestrates four independent validators and
+writes the result into ``self_check.json`` when ``--mark-self-checked`` is
+supplied.
+
+Four gates
+----------
+1. **DETERMINISTIC_VALIDATION** — ``validate_local_submission.py``: checks
+   file scope, bilingual contract, manifest hashes, proposal structure, and
+   PII risk patterns.  This gate runs without optional dependencies.
+2. **SPATIAL_REVIEW** — ``spatial_review.py``: validates GeoJSON topology,
+   coordinate system, area coverage, and metric reproducibility.  Requires
+   ``shapely`` and ``pyproj``; install with ``requirements-review.txt``.
+3. **VISUAL_PACKAGING** — ``visual_review.py``: validates ``visual/index.html``
+   offline constraints, data-attribute metric matching, and forbidden network
+   patterns.
+4. **PROFESSIONAL_EVIDENCE** — ``professional_review.py``: validates
+   ``standard_matrix.json``, ``design_depth_matrix.json``,
+   ``compliance_matrix.json``, and source coverage.
+
+Usage
+-----
+Dry run (advisory output only)::
+
+    python3 scripts/self_check_submission.py submissions/<login>/<slug> \\
+        --pr-author <login>
+
+Write the four-gate report into ``self_check.json`` and update
+``manifest.json``::
+
+    python3 scripts/self_check_submission.py submissions/<login>/<slug> \\
+        --pr-author <login> --mark-self-checked --json
+
+Pass ``--json`` to get machine-readable output.  The exit code is 0 when all
+four gates pass and 1 otherwise.
+
+Install review dependencies before running gates 2–4::
+
+    python3 -m pip install -r requirements-review.txt
+
+After ``--mark-self-checked`` completes successfully, open the pull request.
+Any subsequent file edit invalidates the self-check; re-run with
+``--mark-self-checked`` before pushing the update.
+"""
 
 from __future__ import annotations
 
@@ -45,23 +90,35 @@ def run_json_command(command: list[str]) -> dict[str, Any]:
         check=False,
         env=environment,
     )
-    parsed: Any = {}
+    parsed: Any = None
+    parse_error = ""
     stdout = completed.stdout or ""
     stderr = completed.stderr or ""
     if stdout.strip():
         try:
             parsed = json.loads(stdout)
-        except json.JSONDecodeError:
-            parsed = {"raw_stdout": stdout}
+        except json.JSONDecodeError as exc:
+            parse_error = f"invalid JSON output: {exc.msg} at line {exc.lineno}"
+    else:
+        parse_error = "command produced no JSON output"
+    if not parse_error and not isinstance(parsed, dict):
+        parse_error = f"JSON output must be an object, got {type(parsed).__name__}"
+    if parse_error:
+        diagnostic = parse_error
+        if stderr.strip():
+            diagnostic = f"{diagnostic}; {stderr.strip()}"
+        stderr = diagnostic
+        parsed = {"raw_stdout": stdout} if stdout else {}
     return {
         "returncode": completed.returncode,
-        "ok": completed.returncode == 0,
+        "ok": completed.returncode == 0 and not parse_error,
         "stdout": parsed,
         "stderr": stderr.strip(),
     }
 
 
 def missing_review_dependencies() -> list[str]:
+    """Return the names of optional review dependencies that are not installed."""
     return [name for name in REVIEW_DEPENDENCIES if importlib.util.find_spec(name) is None]
 
 
@@ -207,6 +264,7 @@ def build_self_check(
     submission_dir: Path,
     pr_author: str,
     *,
+    pr_author_id: int | None = None,
     allow_pending_self_check: bool = False,
 ) -> dict[str, Any]:
     repo_root = repo_root.resolve()
@@ -221,6 +279,8 @@ def build_self_check(
         pr_author,
         "--json",
     ]
+    if pr_author_id is not None:
+        validation_command.extend(["--pr-author-id", str(pr_author_id)])
     if allow_pending_self_check:
         validation_command.append("--allow-pending-self-check")
     validation = run_json_command(validation_command)
@@ -314,6 +374,14 @@ def format_markdown(report: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def force_utf8_output() -> None:
+    """Keep the report printable when the locale encoding cannot hold Chinese text."""
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure is not None:
+            reconfigure(encoding="utf-8", errors="replace")
+
+
 def _self_check_gate_checks(report: dict[str, Any]) -> list[dict[str, str]]:
     gates = [
         ("DETERMINISTIC_VALIDATION", "deterministic_validation", "validate_local_submission.py"),
@@ -397,7 +465,8 @@ def mark_self_checked(submission_dir: Path, report: dict[str, Any]) -> tuple[boo
         self_check_item["sha256"] = hashlib.sha256(self_check_bytes).hexdigest()
         claim["readiness_contract"] = PERSISTED_READINESS_CONTRACT
         claim["self_checked"] = True
-        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        with manifest_path.open("w", encoding="utf-8", newline="\n") as handle:
+            handle.write(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     except OSError as exc:
         self_check_path.write_bytes(original_self_check)
         manifest_path.write_bytes(original_manifest)
@@ -406,15 +475,42 @@ def mark_self_checked(submission_dir: Path, report: dict[str, Any]) -> tuple[boo
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("submission_dir")
-    parser.add_argument("--pr-author", required=True)
-    parser.add_argument("--repo-root", default=".")
-    parser.add_argument("--json", action="store_true")
+    force_utf8_output()
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "submission_dir",
+        help="Path to the proposal directory, e.g. submissions/<login>/<slug>",
+    )
+    parser.add_argument(
+        "--pr-author",
+        required=True,
+        help="Exact GitHub login of the PR author; must match the directory owner",
+    )
+    parser.add_argument(
+        "--pr-author-id",
+        type=int,
+        help="Stable numeric GitHub user ID; required only for a maintainer-approved login alias",
+    )
+    parser.add_argument(
+        "--repo-root",
+        default=".",
+        help="Repository root directory (default: current working directory)",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Emit machine-readable JSON instead of human-readable Markdown",
+    )
     parser.add_argument(
         "--mark-self-checked",
         action="store_true",
-        help="after a passing check, set manifest.validation_claim.self_checked=true and verify it again",
+        help=(
+            "After a passing four-gate check, set manifest.validation_claim.self_checked=true, "
+            "write self_check.json, and verify the result; required before opening the PR"
+        ),
     )
     args = parser.parse_args()
 
@@ -427,6 +523,7 @@ def main() -> int:
         repo_root,
         submission_dir,
         args.pr_author,
+        pr_author_id=args.pr_author_id,
         allow_pending_self_check=args.mark_self_checked,
     )
     if args.mark_self_checked:
@@ -441,7 +538,12 @@ def main() -> int:
                 report.setdefault("next_actions", []).append(error)
                 report["self_checked_manifest_updated"] = False
             else:
-                verified = build_self_check(repo_root, submission_dir, args.pr_author)
+                verified = build_self_check(
+                    repo_root,
+                    submission_dir,
+                    args.pr_author,
+                    pr_author_id=args.pr_author_id,
+                )
                 if verified["ok"]:
                     report = verified
                     report["self_checked_manifest_updated"] = True

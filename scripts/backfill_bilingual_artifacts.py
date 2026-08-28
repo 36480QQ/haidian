@@ -5,14 +5,61 @@ The script is intentionally maintainer-only.  It preserves every original
 artifact, creates a localized sibling, and records the relationship in the
 submission manifest.  Raster figures retain the full source graphic and gain
 an appended OCR-derived translation panel so no spatial evidence is removed.
-"""
 
+This script is the second pass of the bilingual backfill workflow:
+
+1. ``backfill_bilingual_submissions.py`` — translates ``proposal.md`` to
+   create the sibling Markdown file.
+2. **This script** — creates bilingual counterparts for rendered artifacts:
+   ``report/proposal.*.html``, ``drawings/*.pdf``, and
+   ``assets/figures/*.*.png``.
+
+Artifacts created
+-----------------
+- ``report/proposal.en.html`` / ``report/proposal.zh.html`` — rendered HTML
+  reading versions using ``render_proposal_html.render_html()``.
+- ``drawings/a3-booklet.en.pdf`` / ``drawings/a3-booklet.zh.pdf`` — copies of
+  the original PDF with a localized cover sheet prepended.
+- ``assets/figures/*.en.png`` / ``assets/figures/*.zh.png`` — figure copies
+  with an OCR-translated caption panel appended at the bottom.
+- Updates ``manifest.json`` to add ``language`` and ``translation_of`` fields
+  for each new artifact.
+
+Requirements
+------------
+Install both dependency groups::
+
+    python3 -m pip install -r requirements-review.txt
+    python3 -m pip install -r requirements-translation.txt
+
+On Apple Silicon, ``mlx-community/Qwen2.5-7B-Instruct-4bit`` is used for
+translation; on other platforms, ``Qwen/Qwen2.5-3B-Instruct`` is used.
+``Pillow`` is required for figure caption rendering.
+
+Usage
+-----
+Process all merged submissions::
+
+    python3 scripts/backfill_bilingual_artifacts.py
+
+Process one submission::
+
+    python3 scripts/backfill_bilingual_artifacts.py \\
+        --only submissions/alice/my-proposal
+
+Dry run::
+
+    python3 scripts/backfill_bilingual_artifacts.py --dry-run
+
+Exit code is 0 on success and 1 when any artifact fails to render.
+"""
 from __future__ import annotations
 
 import argparse
 import hashlib
 import html
 import json
+import os
 import re
 import subprocess
 from pathlib import Path
@@ -54,12 +101,70 @@ def display_path(path: Path) -> str:
         return path.as_posix()
 
 
-def submission_dirs(repo_root: Path, only: list[str]) -> list[Path]:
-    dirs = sorted(path.parent for path in (repo_root / "submissions").glob("*/*/proposal.md"))
+def is_symlink_free_contained_path(path: Path, root: Path) -> bool:
+    try:
+        relative = path.relative_to(root)
+    except ValueError:
+        return False
+    current = root
+    for part in relative.parts:
+        current /= part
+        if current.is_symlink():
+            return False
+    return path.resolve().is_relative_to(root.resolve())
+
+
+def package_is_symlink_free(directory: Path) -> bool:
+    def raise_walk_error(error: OSError) -> None:
+        raise error
+
+    try:
+        for current, names, files in os.walk(
+            directory, followlinks=False, onerror=raise_walk_error
+        ):
+            if any((Path(current) / name).is_symlink() for name in [*names, *files]):
+                return False
+    except OSError:
+        return False
+    return True
+
+
+def resolve_only_selection(found: list[Path], only: list[str], repo_root: Path) -> list[Path]:
     if not only:
-        return dirs
-    wanted = set(only)
-    return [directory for directory in dirs if directory.name in wanted or directory.as_posix() in wanted]
+        return found
+    selected: list[Path] = []
+    resolved = {path: path.resolve() for path in found}
+    for raw in only:
+        candidate = Path(raw)
+        if candidate.is_absolute():
+            target = candidate.resolve()
+            matches = [path for path in found if resolved[path] == target]
+        elif "/" in raw or "\\" in raw:
+            target = (repo_root / candidate).resolve()
+            matches = [path for path in found if resolved[path] == target]
+        else:
+            matches = [path for path in found if path.name == raw]
+            if len(matches) > 1:
+                choices = ", ".join(path.relative_to(repo_root).as_posix() for path in matches)
+                raise ValueError(f"--only `{raw}` is ambiguous; use an exact path: {choices}")
+        if not matches:
+            raise ValueError(f"--only `{raw}` did not match a discovered submission")
+        if matches[0] not in selected:
+            selected.append(matches[0])
+    return sorted(selected)
+
+
+def submission_dirs(repo_root: Path, only: list[str]) -> list[Path]:
+    submissions_root = repo_root / "submissions"
+    if submissions_root.is_symlink():
+        raise ValueError(f"submissions root must not be a symbolic link: {submissions_root}")
+    dirs = sorted(
+        path.parent
+        for path in submissions_root.glob("*/*/proposal.md")
+        if is_symlink_free_contained_path(path, submissions_root)
+        and package_is_symlink_free(path.parent)
+    )
+    return resolve_only_selection(dirs, only, repo_root)
 
 
 def languages(submission_dir: Path) -> tuple[str, str]:
@@ -167,6 +272,8 @@ def ocr_image(path: Path, source_language: str) -> str:
             ["tesseract", str(path), "stdout", "-l", language, "--psm", psm],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             check=False,
         )
         if completed.returncode != 0:
@@ -550,7 +657,10 @@ def main() -> int:
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
     repo_root = args.repo_root.resolve()
-    dirs = submission_dirs(repo_root, args.only)
+    try:
+        dirs = submission_dirs(repo_root, args.only)
+    except ValueError as exc:
+        parser.error(str(exc))
     changed = 0
     if args.mode in {"figures", "all"}:
         zh_to_en, en_to_zh = load_glossary(repo_root / "docs" / "terminology-glossary.md")

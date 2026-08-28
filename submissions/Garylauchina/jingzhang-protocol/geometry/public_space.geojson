@@ -201,7 +201,24 @@
           "ROAD-TEST-001",
           "ROAD-SPINE-001",
           "ROAD-INTERFACE-001"
-        ]
+        ],
+        "first_use_contract_template_id": "FP01-CONTRACT-001",
+        "first_use_contract_carrier_status": "provisional_concept_carrier",
+        "first_use_contract_gate_ids": [
+          "D0",
+          "D30",
+          "D60",
+          "D90",
+          "D100"
+        ],
+        "fp01_problem_id": "FP01-S07-PROBLEM-001",
+        "fp01_evidence_file": "visual/assets/fp01-contract.json",
+        "fp01_spatial_prototype_scale_ids": [
+          "SCALE-1-500",
+          "SCALE-1-100",
+          "SCALE-1-50"
+        ],
+        "fp01_spatial_prototype_status": "concept_dimensions_pending_survey"
       },
       "geometry": {
         "type": "Polygon",
@@ -783,7 +800,22 @@
           "SOURCE",
           "ENABLE"
         ],
-        "scenario_role_assignment_status": "v0.7_final_spatial_mapping"
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping",
+        "first_use_contract_template_id": "FP01-CONTRACT-001",
+        "contract_status": "concept_template_unexecuted",
+        "contract_gate_ids": [
+          "D0",
+          "D30",
+          "D60",
+          "D90",
+          "D100"
+        ],
+        "contract_work_package_id": "FP01-WP-S03",
+        "fp01_problem_id": "FP01-S07-PROBLEM-001",
+        "fp01_service_role": "evaluation_support",
+        "fp01_problem_status": "candidate_pending_d0_confirmation",
+        "fp01_baseline_status": "unknown_pending_d0_measurement",
+        "fp01_evidence_file": "visual/assets/fp01-contract.json"
       },
       "geometry": {
         "type": "Point",
@@ -902,7 +934,22 @@
           "SOURCE",
           "ENABLE"
         ],
-        "scenario_role_assignment_status": "v0.7_final_spatial_mapping"
+        "scenario_role_assignment_status": "v0.7_final_spatial_mapping",
+        "first_use_contract_template_id": "FP01-CONTRACT-001",
+        "contract_status": "concept_template_unexecuted",
+        "contract_gate_ids": [
+          "D0",
+          "D30",
+          "D60",
+          "D90",
+          "D100"
+        ],
+        "contract_work_package_id": "FP01-WP-S04",
+        "fp01_problem_id": "FP01-S07-PROBLEM-001",
+        "fp01_service_role": "interface_support",
+        "fp01_problem_status": "candidate_pending_d0_confirmation",
+        "fp01_baseline_status": "unknown_pending_d0_measurement",
+        "fp01_evidence_file": "visual/assets/fp01-contract.json"
       },
       "geometry": {
         "type": "Point",
@@ -1247,7 +1294,22 @@
           "ROAD-UPDATE-001",
           "ROAD-SPINE-001",
           "PHASE-002"
-        ]
+        ],
+        "first_use_contract_template_id": "FP01-CONTRACT-001",
+        "contract_status": "concept_template_unexecuted",
+        "contract_gate_ids": [
+          "D0",
+          "D30",
+          "D60",
+          "D90",
+          "D100"
+        ],
+        "contract_work_package_id": "FP01-WP-S07",
+        "fp01_problem_id": "FP01-S07-PROBLEM-001",
+        "fp01_service_role": "primary_user_service",
+        "fp01_problem_status": "candidate_pending_d0_confirmation",
+        "fp01_baseline_status": "unknown_pending_d0_measurement",
+        "fp01_evidence_file": "visual/assets/fp01-contract.json"
       },
       "geometry": {
         "type": "Point",
@@ -2017,7 +2079,7 @@
           "S07",
           "S08"
         ],
-        "design_scale": "conceptual_evidence_window_1_500_to_1_1000_pending_survey",
+        "design_scale": "paired_concept_prototypes_1_500_1_100_1_50_pending_survey",
         "derived_from_feature_ids": [
           "SITE-001",
           "PROV-KEY-002",
@@ -2046,7 +2108,24 @@
           "SCENARIO-S09",
           "PUBLIC-TEST-001"
         ],
-        "network_role_anchor": false
+        "network_role_anchor": false,
+        "first_use_contract_template_id": "FP01-CONTRACT-001",
+        "first_use_contract_carrier_status": "provisional_concept_carrier",
+        "first_use_contract_gate_ids": [
+          "D0",
+          "D30",
+          "D60",
+          "D90",
+          "D100"
+        ],
+        "fp01_problem_id": "FP01-S07-PROBLEM-001",
+        "fp01_evidence_file": "visual/assets/fp01-contract.json",
+        "fp01_spatial_prototype_scale_ids": [
+          "SCALE-1-500",
+          "SCALE-1-100",
+          "SCALE-1-50"
+        ],
+        "fp01_spatial_prototype_status": "concept_dimensions_pending_survey"
       },
       "geometry": {
         "type": "Polygon",
