@@ -1,8 +1,8 @@
 {
   "file_id": "cjk-webfont-provenance",
   "schema_version": "0.1.0",
-  "version": "0.1.0",
-  "issued": "2026-08-25",
+  "version": "0.1.1",
+  "issued": "2026-08-28",
   "document_zh": "中文离线字体子集溯源与许可合规登记（visual/assets/cjk-webfont.css）",
   "document_en": "Provenance and licence-compliance register for the offline Chinese font subset (visual/assets/cjk-webfont.css)",
   "component": "Source Han Sans SC",
@@ -46,8 +46,8 @@
     "python": "Haidian_OC_toolchain/venv, CPython 3.14",
     "character_set_source_zh": "从包内 11 个交付文件中提取全部非 ASCII 字符的并集：report/proposal.html、report/proposal.en.html、visual/index.html、visual/index.en.html，以及 visual/assets/ 下 7 个会向 DOM 注入文案的脚本（scene-data.js、scene.js、seb-crosscheck-run.js、seb-op04-chain-run.js、seb-tabletop-run.js、spine3d.js、three.min.js）。",
     "character_set_source_en": "Union of every non-ASCII character found in eleven delivered files: report/proposal.html, report/proposal.en.html, visual/index.html, visual/index.en.html, and the seven scripts under visual/assets/ that inject copy into the DOM (scene-data.js, scene.js, seb-crosscheck-run.js, seb-op04-chain-run.js, seb-tabletop-run.js, spine3d.js, three.min.js).",
-    "codepoints_requested": 1321,
-    "cjk_unified_ideographs": 1288,
+    "codepoints_requested": 1323,
+    "cjk_unified_ideographs": 1290,
     "other_codepoints": 33,
     "options": {
       "flavor": "woff2",
@@ -69,10 +69,10 @@
     },
     "drop_tables_rationale_zh": "VORG、vhea、vmtx、BASE 是竖排书写所需的度量与基线表；本包四份 HTML 与三份样式表中 writing-mode 与 text-orientation 的出现次数为 0，全部为横排，故删除这四张表不改变任何一处渲染结果。DSIG 为数字签名表，子集化后必然失效。",
     "drop_tables_rationale_en": "VORG, vhea, vmtx and BASE carry vertical-writing metrics and baselines; writing-mode and text-orientation occur zero times across the package's four HTML files and three stylesheets, so dropping them changes no rendered result. DSIG is a digital-signature table that is void once the font is subsetted.",
-    "output_bytes": 198180,
-    "output_sha256": "dcc5dbeb91dbd806d78dca33f53bdd19018add76c9ae850db9f6e0fc0cb3b094",
-    "output_glyph_count": 1324,
-    "output_cmap_entries": 1323,
+    "output_bytes": 198300,
+    "output_sha256": "c9427b9129530703b7cc4c775e9ff26fa60fb2efa61d404d24a21d1042b80de7",
+    "output_glyph_count": 1326,
+    "output_cmap_entries": 1325,
     "output_tables": [
       "CFF ",
       "GPOS",
@@ -113,8 +113,8 @@
   },
   "packaged_artifact": {
     "path": "visual/assets/cjk-webfont.css",
-    "bytes": 265471,
-    "sha256": "2c71b0434ade177622154a74f3b6c80b5ea74a2e3215ad7fa1b9d031e5332a3b",
+    "bytes": 265631,
+    "sha256": "a826a972ef68705a071ff6a4449ac5ea0cd57951033a234aecc2599589f1daee",
     "carrier_zh": "本仓库的校验器把 visual/assets/ 的扩展名白名单限定为 .css/.js/.json/.svg/.png/.jpg/.jpeg/.webp，.woff2 不在其内；report/ 目录的文件集是封闭枚举，不能新增文件。因此字体只能以 base64 data URI 内嵌进一份 CSS 承载，两份中文 HTML 与两份英文 HTML 以相对路径共用这一份，全包只存一份字面数据。",
     "carrier_en": "The repository validator restricts visual/assets/ to .css/.js/.json/.svg/.png/.jpg/.jpeg/.webp, which excludes .woff2, and the report/ directory has a closed file whitelist that admits no new file. The font can therefore only travel as a base64 data URI inside one CSS file, shared by relative reference from all four HTML pages, so the package stores exactly one copy of the glyph data.",
     "font_family": "ESJZ Sans Subset",
@@ -177,7 +177,7 @@
     "run_date": "2026-08-25",
     "checks_zh": [
       "A 承载资产：CSS 内的 data URI 可 base64 解码、解码结果以 wOF2 魔数开头、可被 fontTools 打开、族名已改名、unicode-range 已声明",
-      "B 覆盖：11 个来源文件的 1321 个唯一非 ASCII 字符全部在子集 cmap 内，缺字 0 个；四份 HTML 的 1299 个唯一非 ASCII 字符缺字 0 个",
+      "B 覆盖：11 个来源文件的 1323 个唯一非 ASCII 字符全部在子集 cmap 内，缺字 0 个；四份 HTML 的 1301 个唯一非 ASCII 字符缺字 0 个",
       "C 字体栈首位：四份 HTML 与两份场景样式表共 23 条 font-family 声明，第一个族名全部是子集族名",
       "D 引用可解析：四份 HTML 各有且仅有一条对该 CSS 的相对路径引用，且该路径在磁盘上存在",
       "E1 UA 样式表等宽族修正在位，且子集排在该族链首位",
@@ -185,7 +185,7 @@
     ],
     "checks_en": [
       "A carrier: the data URI decodes from base64, starts with the wOF2 magic, opens in fontTools, carries the renamed family, and declares a unicode-range",
-      "B coverage: all 1,321 unique non-ASCII characters across eleven source files are present in the subset cmap, zero missing; the four HTML files contribute 1,299 unique non-ASCII characters, zero missing",
+      "B coverage: all 1,323 unique non-ASCII characters across eleven source files are present in the subset cmap, zero missing; the four HTML files contribute 1,301 unique non-ASCII characters, zero missing",
       "C stack position: across the four HTML files and two scene stylesheets, all 23 font-family declarations name the subset family first",
       "D references resolve: each HTML file carries exactly one relative reference to the CSS and that path exists on disk",
       "E1 the user-agent monospace override is present and names the subset first in that family chain",
@@ -213,5 +213,17 @@
     "The subset covers only the characters actually present in the four HTML files and seven scripts at the time this package was cut. Any future prose introducing a Han character not already present requires re-running the subset and font_coverage_check.py, otherwise the new character will be missing. The assertion exists precisely so that this step cannot be forgotten.",
     "The eight Western typographic punctuation marks excluded from unicode-range rely on the reading environment's own Western fonts. That dependency is deliberate, as explained above, not an oversight.",
     "The browser sweep above ran on a machine that has Chinese system fonts; its conclusion rests on which font actually drew the glyphs rather than on a direct measurement on a machine without any CJK font. The two are equivalent but not the same thing, and the distinction is registered as fact."
+  ],
+  "revision_history": [
+    {
+      "version": "v9.9",
+      "date": "2026-08-28",
+      "reason_zh": "v9.9 双语正文新挂两段与两处段末定位句，重渲后的 report/proposal.html 出现两个此前未在包内任何交付文件中出现过的汉字（「她」与「悔」）。子集只覆盖出包时点实际出现的字符，这两字若不重出子集即为缺字——这正是 v9.8 在 limitations 中预告、并由 font_coverage_check.py 的 B 项断言负责拦截的情形，本轮由该断言在正文改动后首次实拦。处置：按 v9.8 登记的同一套参数、同一份上游源字体重跑子集。上游源字体本轮以本机留存副本复用，其 SHA-256 与本文件 upstream_source_face.sha256 逐位相同（f1d86111…5637256），溯源链未因复用而中断。",
+      "reason_en": "At v9.9 two paragraphs and two sentence-level additions were mounted in the bilingual prose, and the re-rendered report/proposal.html introduced two Han characters that had never appeared in any delivered file of the package (她 and 悔). The subset covers only the characters present at packaging time, so without a rebuild those two would have been missing glyphs — exactly the case foreseen in the v9.8 limitations and guarded by check B of font_coverage_check.py, which caught it here for the first time after a prose change. The subset was rebuilt with the same parameters and the same upstream source face registered in this file. The source face was reused from a local copy whose SHA-256 is bit-for-bit equal to upstream_source_face.sha256 (f1d86111…5637256), so the provenance chain is unbroken.",
+      "deltas_zh": "字符集 1,321 → 1,323（CJK 统一表意 1,288 → 1,290，其余 33 不变）；woff2 198,180 → 198,300 字节；字形 1,324 → 1,326；cmap 1,323 → 1,325；CSS 265,471 → 265,631 字节。子集参数、更名清单、unicode-range 与等宽族修正一字未改。",
+      "deltas_en": "Character set 1,321 to 1,323 (CJK unified ideographs 1,288 to 1,290, the other 33 unchanged); woff2 198,180 to 198,300 bytes; glyphs 1,324 to 1,326; cmap 1,323 to 1,325; CSS 265,471 to 265,631 bytes. Subsetting parameters, the renaming list, unicode-range and the monospace-family correction are unchanged.",
+      "superseded_output_sha256": "dcc5dbeb91dbd806d78dca33f53bdd19018add76c9ae850db9f6e0fc0cb3b094",
+      "superseded_packaged_sha256": "2c71b0434ade177622154a74f3b6c80b5ea74a2e3215ad7fa1b9d031e5332a3b"
+    }
   ]
 }
