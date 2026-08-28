@@ -6,7 +6,7 @@ proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以京张铁路百年叙事为文化主轴，以智能体为新基础设施，把 11.4 km² 总体设计范围组织为'一带三核、多点场景、蓝绿慢行复合环'的 AI 创新带；通过结构化 GeoJSON、可复算指标、6 张核心图件（5 张专题设计图 + 1 张综合指标索引图）和离线可视化页，呈现一个可讨论、可替换 official 边界后重算的概念方案。"
+summary: "以京张铁路百年叙事为文化主轴，以智能体为新基础设施，把 11.4 km² 总体设计范围组织为'一带三核、多点场景、蓝绿慢行复合环'的 AI 创新带；通过结构化 GeoJSON、可复算指标、7 张核心图件（6 张专题设计图——含 1 张节点体验叙事图——+ 1 张综合指标索引图，每张均有中英双版）和离线可视化页，呈现一个可讨论、可替换 official 边界后重算的概念方案。"
 tracks: ["jingzhang-heritage-narrative", "ai-traffic-walkability", "civic-agent-governance"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
 iteration: "v0.1"
@@ -165,6 +165,10 @@ iteration: "v0.1"
 功能比例与建筑规模：方案在 `metrics.json` 中复算建筑基底面积约 ~58 ha (provisional 模型几何)（34 栋建筑）；概念容积率因原始公式量纲错误已标为 unknown。这一概念量在 official 控规条件发布前不得视为法定容积率 [metric:building_footprint_area_sqm] [metric:concept_far] [depth:development_intensity_controls] 。同时 [depth:height_massing_character]。建筑高度按建筑类型分级：AI 研发 36 m、实验室 30 m、孵化器 24 m、办公 30 m、人才公寓 60 m、商业 18 m、文化展示 15 m、社区服务 12 m；这一高度分区分级是概念建议，最终须以 official 控规与航空限高、文保控制、景观视廊控制为准。拆改留分类参考《北京市城市更新条例》[source:SRC-BJ-URBAN-RENEWAL-REGULATION]方向与"老城保护优先、工业遗存再利用优先、低效商业拆除重建"原则（注：该来源尚未进入 source_registry_summary approved_formal 清单，仅作待核验背景；法定程序以 official 实施细则为准），每栋建筑在 `geometry/buildings.geojson#BLDG-xxx` 中标注 building_type；具体拆除/改造/保留清单待 official 现状建筑与权属数据补齐后形成。
 
 空间组织模式：方案在总体设计范围内提出"轨道站点 TOD × 慢行 5 分钟生活圈 × AI 场景节点"的三层组织（慢行网络参考《北京市慢行系统规划（2020年-2035年）》方向 [source:SRC-BJ-SLOW-TRAFFIC-PLAN]（该来源尚未进入 source_registry_summary approved_formal 清单，仅作参考性背景，最终以 official 公告为准））。轨道 TOD：大钟寺站、五道口站、清华东路西口站、清华园站四站点周边 500 米做高强度复合开发（容积率概念建议（待 official 控规条件确认；典型轨道 TOD 复合开发强度参考值为 2-4，本方案不预设具体值）），用地混合比例建议居住 30%、办公 35%、商业 15%、公共服务 10%、绿地 10%。慢行 5 分钟生活圈：每个轨道站点周边 400 米半径内布局 1 个社区中心、1 所小学、1 个社区卫生服务中心、1 个口袋公园、1 个共享办公空间。AI 场景节点：每个生活圈内布局 2-3 个 AI 场景节点（智能配送站、AI 导览点、智能体治理终端等）。交通组织：方案在 `geometry/roads.geojson` 中生成 11 条道路中心线（3 条主干路、3 条次干路、1 条京张遗址公园绿道、1 条蓝绿复合慢行环、3 条轨道接驳连接线），道路总长 ~59 km (provisional 模型几何) [data:geometry/roads.geojson#ROAD-NS-01] [metric:road_total_length_m] [depth:traffic_rail_slow_parking]。
+
+![节点体验叙事：一位访客在「京张100·AI 大动脉」的一天](assets/figures/node-experience.png)
+
+**节点体验叙事（街道尺度视图）**：上图以「一位访客的一天」五幕分镜（到达 → 穿行 → 交互 → 停留 → 参与离开）呈现上述三层组织在街道与节点尺度的体验：遗址公园入口双通道导览（SC-01 + 纸质导览图）、蓝绿慢行环与智能灯杆、口袋公园 AI 触点的 300 m 准入分区与公众否决按钮、社区中心人工咨询岗（非数字通道），以及公众参与屏与朝圣打卡。五幕均对应正文既有设计主张（场景卡 SC、400 m 生活圈、24 h 人工接管目标、ASM-006 台账），为概念叙事示意而非建成实景，不新增任何指标或承诺；英文版对应 `assets/figures/node-experience.en.png`。
 
 市政承载与新型基础设施：方案提出"端侧算力 + 分布式能源 + 智能感知"三位一体的新型基础设施策略。端侧算力：参考《北京市算力基础设施建设实施方案（2024-2027年）》方向 [source:SRC-BJ-COMPUTING-INFRA-2024]（该来源尚未进入 source_registry_summary approved_formal 清单，仅作参考性背景，最终以 official 公告为准），在京张遗址公园走廊沿线布局若干边缘数据中心（每个 ~300 m² 概念规模，具体数量待算力需求评估），为公共空间内的智能体、机器人、AR/VR、自动驾驶提供低时延算力。分布式能源：在重点区屋顶布局光伏（覆盖率待 official 屋顶承载力与日照条件评估），结合储能与直流配电；在公园绿地与道路绿带布局地源热泵。智能感知：在道路与公共空间布局多模态传感器（交通流量、空气质量、噪声、人流），数据进入城市智能体治理平台，但所有个人可识别信息须脱敏并按 `brief/site-package/enums/source_types.json` 的可追溯规则登记 [depth:municipal_new_infrastructure]。风貌控制按 [standard:MOHURD-URBAN-DESIGN-MEASURES] 的城市基调、建筑体量、屋顶形态、街墙贴线、首层通透性、夜景照明等维度形成图则，落到 `geometry/land_use.geojson` 每个地块的 `building_type` 字段。
 
@@ -432,7 +436,7 @@ AI 朝圣地标：方案在 `geometry/public_space.geojson` 中布局 4 个 AI �
 
 资料合法性：方案所有空间判断基于公开公告、仓库登记的 provisional 边界、维护者清权的任务书摘录和 agent 生成的概念图层；未使用任何秘密地图、非公开表格、伪造官方背书或伪造规划结论 [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:PROVISIONAL-BOUNDARIES-2026]。所有引用资料在 `sources.json` 中登记来源、许可、用途边界与限制。AI 生成内容按 `brief/site-package/standards/references/generative-ai-interim-measures.md` 落实生成式人工智能服务管理责任 [depth:risk_missing_data]。
 
-版权授权：方案中所有 Logo、命名、地标、导视、字体、图像、人物和企业标识均为概念建议，实施前必须经版权方授权；不得过度娱乐化或把概念地标写成已批准建设。生成的 6 张核心 PNG 图件（5 张专题设计图 + 1 张综合指标索引图）、A3/A0 PDF、`visual/index.html` 均由本 agent 基于 provisional 几何与公开资料派生，不包含未清权素材；版权声明见 `report/copyright_statement.md`。
+版权授权：方案中所有 Logo、命名、地标、导视、字体、图像、人物和企业标识均为概念建议，实施前必须经版权方授权；不得过度娱乐化或把概念地标写成已批准建设。生成的 7 张核心 PNG 图件（6 张专题设计图——含 1 张节点体验叙事图——+ 1 张综合指标索引图，每张均有中文版与英文版 `*.en.png`）、A3/A0 PDF、`visual/index.html` 均由本 agent 基于 provisional 几何与公开资料派生，不包含未清权素材；版权声明见 `report/copyright_statement.md`。
 
 非公开资料排除：方案不使用内部或非公开空间数据；不使用商业地图瓦片作为投稿数据；不使用 OSM 作为 formal 边界依据（按 `brief/site-package/allowed_design_space.json` 规定 OSM 仅可用于 bootstrap base layers 并需 ODbL 署名）。隐私保护：方案中所有 AI 场景均明确数据输入、隐私边界与人工复核机制（见 AI 场景卡表格）；所有个人可识别信息须脱敏；视频与传感器数据的处理合法性依据以正式审定入库的隐私相关法源为准，在完成来源审定前仅作待核验参考框架使用，不作个案合规结论；《无障碍环境建设法》与老年人智慧科技方案仅用于物理空间与服务设计的无障碍适老要求（`barrier-free-environment-law.md`、`elderly-smart-tech-plan-2020-45.md`），不作为视频与传感器数据的处理合法性依据（同注 4）。
 
@@ -458,6 +462,10 @@ AI 生成责任：本方案由 aplaybox（GitHub login）作为 Agent 贡献者�
 | 项目时序 | 3 | 近期 2026-2028 / 中期 2028-2030 / 远期 2030-2035 | 一致 |
 | 来源等级与降级标注 | 8 | 8 条 participant_added_pending_registry 来源的引用与 approved_formal 降级语 | 一致 |
 | 图件与板册登记 | 16 | 6 张 PNG + 4 份 PDF 在 manifest.json 的登记与 sha256 | 一致 |
+
+**v2.27（2026-08-28）图件双语化后的增量复核**：新增节点体验叙事图（中英两版）与 5 张专题设计图英文版并登记 manifest 后，按扩展清单重跑机械对照脚本 `scripts/p14_task_f_check.py`（图件类由 10 项扩展为 18 项：7 张核心 PNG + 7 张英文变体 + 4 份板册 PDF 的登记检查），共 8 大类 53 项，**53/53 全部一致（PASS）**，结果 JSON 随提交存档；v2.13 历史 45 项记录保持原样不改。
+
+**v2.27（2026-08-28）图件双语化后的增量复核**：新增节点体验叙事图（中英两版）与 5 张专题设计图英文版并登记 manifest 后，按扩展清单重跑机械对照脚本 `scripts/p14_task_f_check.py`（图件类由 10 项扩展为 18 项：7 张核心 PNG + 7 张英文变体 + 4 份板册 PDF 的登记检查），共 8 大类 53 项，**53/53 全部一致（PASS）**，结果 JSON 随提交存档；v2.13 历史 45 项记录保持原样不改。
 
 原有章节级复核（章节标题 13 项、关键主张 21+23 项、证据标记、术语统一等）沿用 v2.4 建立的 `assets/media/bilingual_review_checklist.md` 清单，其映射存在性已由确定性双语 gate 持续校验。
 
