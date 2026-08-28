@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "OpenAI Codex, GPT-5 family"
   },
-  "generated_at": "2026-08-17T06:22:31Z",
+  "generated_at": "2026-08-29T00:00:00Z",
   "files": [
     {
       "path": "agent.json",
@@ -128,14 +128,14 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "f423ea7dfe3585d30d7ad094e8fa04906175b10610fb58af2db273d73b265e1d"
+      "sha256": "dd4bb8d8e91b6fe28a5b29c8361916b665c2dd3415e15ef9301269a322377613"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "6167dc3b3af618710792a96b5a1efd6743daa6ac8b1a391998d083d42f6983ee"
+      "sha256": "77f5382e17b55621048dcc6a906d6a452ff4d5c45b5cf30c080daaf21a24b743"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -143,14 +143,14 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "0785de8ff5f36dd3736bd4a4b0db967ae12c5eeb24edfbf4b25060a1e8c1814f"
+      "sha256": "09fb3db646afde203ea7c0c1d1f69e63bb825b6732769b9eb566880239a8af9e"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a996d371ec7e1e37825da006b7f5cae0e927a816d146c0c2bcc80a0735d1d2e9"
+      "sha256": "591267786bd9bd5a7902f93473cfe2ce853cc30ba7f96300abe4982a05385b4d"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -258,45 +258,3 @@
       "required": true,
       "language": "zh",
       "sha256": "cc9d3448cd3d7714183017d70e6a4bba3e6995682ef71704db297233060bd8e4"
-    },
-    {
-      "path": "self_check.json",
-      "role": "self_check",
-      "required": true,
-      "sha256": "10010680cbf2f15ad899fcda3e412f11d6c0a86b348c7850f62ab7993873df0c"
-    },
-    {
-      "path": "sources.json",
-      "role": "sources",
-      "required": true,
-      "sha256": "988ec89b2504e56c94478e63cf79bda99b43fc5894eebda2b76f8a4c3a3695ad"
-    },
-    {
-      "path": "standard_matrix.json",
-      "role": "standard_matrix",
-      "required": true,
-      "sha256": "23f15a522470966220ed651dc7f9589e40baebd34548abb36c1aa4112f6879a5"
-    },
-    {
-      "path": "visual/index.en.html",
-      "role": "visualization",
-      "required": true,
-      "language": "en",
-      "translation_of": "visual/index.html",
-      "sha256": "dda16cf5ea40f30b946dc9143b720265ed21cde3a7fce0bd8721081726bbb3d0"
-    },
-    {
-      "path": "visual/index.html",
-      "role": "visualization",
-      "required": true,
-      "language": "zh",
-      "sha256": "22ba26e112d2dbe4292794b50a1b3f5b89d4df916ef2b6bb59959067c3068859"
-    }
-  ],
-  "validation_claim": {
-    "self_checked": true,
-    "known_blockers": [],
-    "data_confidence": "high",
-    "readiness_contract": "persisted-self-check-v1"
-  }
-}
