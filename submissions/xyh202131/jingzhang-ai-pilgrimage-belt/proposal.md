@@ -47,7 +47,7 @@ scenarios:
 
 > **四态只改变验证叠层。** 普通状态先成立；验证满足前置条件后才出现；故障只隔离验证对象，完整非 AI 路径、人工交接、撤回与申诉继续；恢复先还普通地面和同一任务，再复核，**不等于授权、批准、重启或 G1**。动态图解的 54 秒只是编辑节奏，静态图给出同一答案，均不表示现实恢复时长。
 
-> **真实性边界。** 三处图面是临时几何上的 G0 概念关系，不是现状测绘、精确总平、获批方案、无障碍结果或居民意见；官方红线、准确锚点、现实阈值、责任主体、现场服务、批准与独立复测仍为 0 或 `unknown`。投稿方内容、代码、OSM 衍生层和 Noto 字体分别适用 CC BY 4.0、MIT、ODbL 与 OFL；第三方引用和仓库输入不被重新许可。157/157 个路径已有组件级处置，但不存在单一整包许可。图像不构成现场、服务、公众反馈或成熟度证据，旧模型生成媒体已清退。
+> **真实性边界。** 三处图面是临时几何上的 G0 概念关系，不是现状测绘、精确总平、获批方案、无障碍结果或居民意见；官方红线、准确锚点、现实阈值、责任主体、现场服务、批准与独立复测仍为 0 或 `unknown`。投稿方内容、代码、OSM 衍生层和 Noto 字体分别适用 CC BY 4.0、MIT、ODbL 与 OFL；第三方引用和仓库输入不被重新许可。158/158 个路径已有组件级处置，但不存在单一整包许可。图像不构成现场、服务、公众反馈或成熟度证据，旧模型生成媒体已清退。
 
 ![双轨京张公共地面结构：连续日常骨架与六处横向联系串联三种不可互换原型；旁置验证、人工交接和失败对象均退出普通路径；G0、临时几何、不按比例](assets/figures/site-overview.png)
 
@@ -598,7 +598,7 @@ JZ-AIOS 规定任何场景依次经过 G0 概念/离线、G1 影子比对、G2 �
 
 近期背景包括：原点社区与百年京张 [source:BEIJING-AI-ORIGIN-2026]、“一核多点”AI 创新街区 [source:BEIJING-AI-DISTRICTS-2026]、二期开放 [source:HAIDIAN-JZ-PHASE2-OPEN-2026]、AI 试验场 [source:HAIDIAN-AI-TRIAL-FIELD-2026]、京张中期成果 [source:HAIDIAN-JZ-MIDTERM-2026] 和海淀“十五五”方向 [source:HAIDIAN-15FYP-2026]。公开网页只形成基线、意向和待核问题，不是现场、竣工、地块批准或机构承诺。
 
-治理与方法背景还包括 [source:NATIONAL-DATA-INFRA-2025] 国家数据基础设施建设指引；[source:AI-CONTENT-LABEL-2025] 人工智能生成合成内容标识办法；[source:AI-PLUS-2025] 国务院“人工智能+”意见；[source:JZ-PARK-2023] 京张铁路遗址公园一期公开资料；[source:JZ-COCREATION-2021] 京张遗址公园公众共创与专业连续性资料。它们只支撑方向、方法和治理边界，不产生本项目审批、资金、伙伴或控制值。
+治理与方法背景还包括 [source:NATIONAL-DATA-INFRA-2025] 国家数据基础设施建设指引；[source:AI-CONTENT-LABEL-2025] 人工智能生成合成内容标识办法；[source:AI-PLUS-2025] 国务院“人工智能+”意见；[source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] 无障碍环境建设法；[source:DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45] 适老化智能技术背景方案；[source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES] 生成式人工智能服务管理暂行办法；[source:JZ-PARK-2023] 京张铁路遗址公园一期公开资料；[source:JZ-COCREATION-2021] 京张遗址公园公众共创与专业连续性资料。它们只支撑方向、方法和治理边界；其中适老化方案保持 `background_only`，条文义务按适用对象限缩，不产生本项目审批、资金、伙伴、执法权或控制值。
 
 创新片区机制对照包括 [source:CASE-KENDALL]、[source:CASE-ONE-NORTH] 与 [source:CASE-22AT]。遗产更新和运营机制另参考 [source:CASE-KINGS-CROSS]、[source:CASE-STATION-F] 与 [source:CASE-MARS]。现状方向背景为 [source:OSM-CONTEXT]，其 ODbL 数据只用于道路、铁路和水系识别，不能作为官方边界或工程依据。
 
