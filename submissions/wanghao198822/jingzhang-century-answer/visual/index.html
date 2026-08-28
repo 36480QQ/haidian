@@ -7,7 +7,7 @@
 <style>
 :root{
  --paper:#F2F1EC; --deep:#E8E7E0; --ink:#1F2A26; --soft:#5A6560;
- --rail:#2F6B4F; --brass:#835C30; --hair:#C9C7BE; --hair2:#DDDBD2;
+ --rail:#1F3A5F; --ok:#2F6B4F; --brass:#835C30; --hair:#C9C7BE; --hair2:#DDDBD2;
  --mono:ui-monospace,"Cascadia Mono","SFMono-Regular",Consolas,Menlo,monospace;
  --serif:"Noto Serif SC","Source Han Serif SC","SimSun",serif;
 }
@@ -43,7 +43,7 @@ nav.top{position:sticky;top:0;z-index:60;background:rgba(242,241,236,.96);border
 #ruler .cap b{display:block;font-weight:700;color:var(--brass);letter-spacing:.12em}
 #ruler .body{position:relative;flex:0 0 auto;display:flex;flex-direction:column;gap:0;width:100%}
 #ruler .line{position:absolute;right:0;top:0;bottom:0;width:1px;background:var(--hair)}
-#ruler .fill{position:absolute;right:0;top:0;width:1px;background:var(--rail);height:0;transition:height .12s linear}
+#ruler .fill{position:absolute;right:0;top:0;width:1px;background:var(--ok);height:0;transition:height .12s linear}
 .km{position:relative;height:30px;display:flex;align-items:center;justify-content:flex-end;gap:7px;
  font:600 9.5px/1 var(--mono);letter-spacing:.08em;color:var(--hair);pointer-events:auto;text-decoration:none}
 .km::after{content:"";width:7px;height:1px;background:currentColor}
@@ -135,7 +135,7 @@ table.dt td.st{white-space:normal}
 table.dt td.ty{font-family:var(--mono);font-size:10.5px;color:var(--soft);overflow-wrap:anywhere}
 table.dt td.fm{max-width:430px}
 .pill{display:inline-block;font:600 9px/1 var(--mono);letter-spacing:.08em;padding:3px 5px;border:1px solid}
-.pill.ok{color:var(--rail);border-color:var(--rail)}
+.pill.ok{color:var(--ok);border-color:var(--ok)}
 .pill.un{color:var(--brass);border-color:var(--brass)}
 .pill.no{color:#8E3B2F;border-color:#8E3B2F}
 .cf{font:500 9px/1 var(--mono);color:var(--soft);margin-left:5px}
@@ -246,7 +246,7 @@ code.fml{font-size:10px;color:var(--soft);word-break:break-word;display:block}
   .spike .card{width:min(268px,calc(100vw - 56px))}
 }
 .beltrail{position:relative;height:2px;background:var(--hair);width:100%}
-.beltrail .grown{position:absolute;left:0;top:0;height:2px;background:var(--rail);width:0;transition:width .25s linear}
+.beltrail .grown{position:absolute;left:0;top:0;height:2px;background:var(--ok);width:0;transition:width .25s linear}
 .spike{position:absolute;top:50%;width:15px;height:15px;margin:-7.5px 0 0 -7.5px;border-radius:50%;
  background:var(--brass);transform:scale(0);opacity:0;cursor:pointer;border:0;padding:0;
  box-shadow:inset 0 0 0 2.5px rgba(255,255,255,.55);
@@ -282,7 +282,7 @@ button.vb.alt:hover{background:var(--rail);color:var(--paper)}
 .vhead{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;border:1px solid var(--hair);
  background:var(--deep);padding:9px 11px;font-size:12px}
 .vhead .vs{font:700 10px/1 var(--mono);letter-spacing:.1em;padding:4px 6px;border:1px solid}
-.vhead .vs.p{color:var(--rail);border-color:var(--rail)}
+.vhead .vs.p{color:var(--ok);border-color:var(--ok)}
 .vhead .vs.f{color:#8E3B2F;border-color:#8E3B2F}
 .vhead .vt{font-weight:600;color:var(--ink)}
 .vidle{border:1px dashed var(--hair);padding:14px;font-size:12px;color:var(--soft);background:var(--deep)}
@@ -866,7 +866,7 @@ footer .fl{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-siz
 <h3 class="sub3"><span class="ix">D·2</span>四门自检</h3>
 <div class="gates"><div class="gate"><div class="gn">确定性校验<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">deterministic_validation · returncode 0</div><pre>错误 0
 警告 24
-总字节 40,809,320
+总字节 40,810,765
 · submissions/wanghao198822/jingzhang-century-answer/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied
 · submissions/wanghao198822/jingzhang-century-answer/spatial.json: items[0]: provisional spatial concept needs maintainer review before being treated as public-facing context</pre></div><div class="gate"><div class="gn">空间审查<span class="pill ok" style="margin-left:7px">PASS</span></div><div class="gk">spatial_review · returncode 0</div><pre>阶段 formal
 问题 3 (minor:3)
@@ -883,7 +883,7 @@ known_metric_refs_required = 83
 proposal_format_version = 2
 evidence_contract = section-anchors-plus-structured-audit
 proposal_reference_counts = source:23, standard:8, depth:15, data:26, metric:11</pre></div></div>
-<div class="note">self_check.json 记录：stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>总字节口径：上表为自检写入时点的记录值。self_check.json 自身计入总字节，而工具先写入尚未附四门结果的中间文件再测量，故独立重跑会比表中大 758 字节（40,810,078）——差值即 self_check.json 附上四门结果后的增量，属工具固有的两阶段写入，不影响任何一门的结论。</div>
+<div class="note">self_check.json 记录：stage = formal · review_status = formal-review-ready · can_enter_formal_review = True<br>总字节口径：上表为自检写入时点的记录值。self_check.json 自身计入总字节，而工具先写入尚未附四门结果的中间文件再测量，故独立重跑会比表中大 758 字节（40,811,523）——差值即 self_check.json 附上四门结果后的增量，属工具固有的两阶段写入，不影响任何一门的结论。</div>
 <div class="tw"><table class="dt"><thead><tr><th>自检项</th><th>结果</th><th>级别</th><th>对象</th><th>说明</th></tr></thead><tbody><tr><td><code class="mid2">DETERMINISTIC_VALIDATION</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">validate_local_submission.py</code></td><td>deterministic_validation: PASS</td></tr><tr><td><code class="mid2">SPATIAL_REVIEW</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">spatial_review.py</code></td><td>spatial_review: PASS</td></tr><tr><td><code class="mid2">VISUAL_PACKAGING</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">visual_review.py</code></td><td>visual_review: PASS</td></tr><tr><td><code class="mid2">PROFESSIONAL_EVIDENCE</code></td><td class="st"><span class="pill ok">pass</span></td><td>blocking</td><td><code class="mid2">professional_review.py</code></td><td>professional_review: PASS</td></tr></tbody></table></div>
 </div></section>
 <section class="sec apx" id="s12"><div class="wrap"><div class="sh rv"><span class="no">E</span><h2 class="serif">附录 E · 可当场核验工具</h2><span class="sub">三个脚本在你自己的浏览器里当场复算</span><span class="en">Appendix E · Verify it yourself, on the spot</span></div>
