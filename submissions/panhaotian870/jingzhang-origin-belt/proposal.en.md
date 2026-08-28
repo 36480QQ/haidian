@@ -892,7 +892,7 @@ This section establishes the **single source of truth** for all metrics, unifyin
 | MT-AREA-KEY | Key Areas Total Area | 369.3 | ha | Sum of three key-area polygons [metric:MT-AREA-KEY] | Medium | Provisional boundary |
 | MT-LENGTH-HERITAGE | Heritage Park Length | 9 | km | Conceptual recommended value [metric:MT-LENGTH-HERITAGE] | Low | Conceptual |
 | MT-APM-LINE | Jing-Zhang APM Line Length | 8.9 | km | EPSG:4548 length of geometry/roads.geojson#RD-APM-001 [metric:MT-APM-LINE] | Low | Provisional alignment |
-| MT-APM-CAPACITY | APM Peak Hour Directional Capacity | 5400 | pass/h | Vehicle capacity × headway [metric:MT-APM-CAPACITY] | Medium | Conceptual |
+| MT-APM-CAPACITY | APM Peak Hour Directional Capacity | 5400 | pass/h | ~90 pax/train × 60 trains/h (3600 s ÷ 60 s headway) = 5400 pass/h (conceptual; capacity & headway assumed, not verified) [metric:MT-APM-CAPACITY] | Medium | Conceptual |
 | MT-APM-DAILY | APM Daily Ridership Forecast | 16000 | pass/day | Demand-model estimate [metric:MT-APM-DAILY] | Medium | Conceptual |
 | MT-EXPRESSWAY-CAPACITY | Jingxin Expressway Extension Capacity | 5504 | pcu/h | CJJ37-2012 saturation-flow: 4 lanes × 1650 × 0.97 × 0.95 × 1.00, tunnel factor 0.90 (bidirectional) [metric:MT-EXPRESSWAY-CAPACITY] | Medium | Conceptual |
 | green_ratio | Green Space Ratio | 30.31% | % | green_space_area_sqm / site_area_sqm [metric:green_ratio] | Medium | Provisional boundary |
