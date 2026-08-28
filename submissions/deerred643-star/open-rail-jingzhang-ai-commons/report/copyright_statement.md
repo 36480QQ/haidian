@@ -33,3 +33,27 @@ v1.7 新增三组双语图件（station-hall-imagery、brand-system、node-detai
 ## Logo 概念图形（v1.5 新增）
 
 `assets/media/logo.png` 为本方案 Logo 概念图形：由程序（Python/Pillow）绘制的原创矢量式图形——人字形折返双轨、commit 节点、电路迹线与过孔节点。图形不含任何第三方商标、人物肖像或版权素材；颜色值为自定义。允许在署名本方案的前提下作为概念图形引用。
+
+## 反抄袭与在先权利（v2.3 新增）
+
+**证据链**：本方案自首次提交起历次迭代的首次公开记录汇编于 `assets/media/priority-evidence.md`，逐版本登记本地 commit、公开 PR 编号、创建与合并时间、合并 commit，并附任何读者均可执行的独立复核命令。
+
+**主张边界（诚实声明）**：本方案主张的在先权利以「commit 推送至公开 fork」与「PR 创建」两层 GitHub 公开时间戳为起点；不主张任何早于该公开时间戳的在先权利，包括本地草稿时间、未推送的构思记录或私有会话内容。该证据链的公开历史托管于组织方仓库，其效力依赖平台记录与各方本地克隆的留存，不单独证明内容的更早创作时间。
+
+**许可边界**：本方案以 `COMMUNITY-DISPLAY-ONLY` 许可提交，仅授权本次征集的评审、展示与公共知识沉淀。逐字复制、改写洗稿、未署名演绎、抢先以相同概念在他处申报，均属该许可之外的使用，作者不予授权。
+
+**举证方式**：如发现疑似抄袭，作者将以上述公开证据链与本地相似度巡检报告（作者本地证据，不随包分发，仅在向组织方举证时提供）向组织方举证；不对任何具体提交提出未经证实的抄袭指控。
+
+**原创性边界**：本方案的设计概念、命名、图件与结构化机制为原创生成；其中明确标注采纳的社区开放标准（Switchback Protocol v1.0、SEB v0.5.0）已按组件级采纳登记并署名来源，不构成对他人的抄袭。方案不排除与其他提交在通用规划常识层面存在趋同。
+
+### Anti-plagiarism and priority (added in v2.3)
+
+**Evidence chain**: the first-publication record of every iteration of this proposal since initial submission is compiled in `assets/media/priority-evidence.md`, registering per-version local commits, public PR numbers, creation and merge timestamps and merge commits, together with independent verification commands executable by any reader.
+
+**Scope of claim (honest statement)**: the priority claimed here starts from the two public GitHub timestamps — "commit pushed to the public fork" and "PR created". No priority earlier than those public timestamps is claimed, including local draft times, unpushed drafts or private session content. The public history of this chain is hosted in the organizer repository; its evidentiary weight depends on platform records and the local clones retained by various parties, and it does not by itself prove any earlier time of authorship.
+
+**Licence boundary**: this proposal is submitted under the `COMMUNITY-DISPLAY-ONLY` licence, authorising review, display and public knowledge sedimentation for this open call only. Verbatim copying, paraphrasing laundering, unattributed derivative works, or re-filing the same concept elsewhere are outside the licence and are not authorised.
+
+**How evidence would be presented**: upon suspected plagiarism the author will present evidence to the organizer based on the public chain above plus a local similarity-inspection report (local evidence, not distributed with the package, provided only when presenting evidence to the organizer). No unsubstantiated plagiarism allegation is made against any specific submission.
+
+**Originality boundary**: the design concepts, naming, figures and structured mechanisms of this proposal are original. The community open standards explicitly declared as adopted (Switchback Protocol v1.0, SEB v0.5.0) are registered as component-level adoption with attributed sources and do not constitute plagiarism. Convergence with other submissions at the level of general planning common knowledge is not excluded.
