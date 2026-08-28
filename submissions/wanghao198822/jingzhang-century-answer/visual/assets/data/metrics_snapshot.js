@@ -3,11 +3,11 @@
  * 内容 = metrics.json 的逐字内嵌副本（未删项、未改值）。
  * 内嵌原因同 geo_layers.js：file:// 下无法读取同目录 .json，且禁止网络请求。
  *
- * 原件 SHA-256（裸文件字节）：metrics.json = 6fb6e42da2a05c9b5e0555c69f56668ef66bb868e191f2ae9496f7c741d9fc22
+ * 原件 SHA-256（裸文件字节）：metrics.json = 398a0ba678d72f781b3f80311483a39182bebafa5065d54b2065da2c91fe1cc1
  */
 window.CA_METRICS_SNAPSHOT = {
   "generated_from": "submissions/wanghao198822/jingzhang-century-answer/metrics.json",
-  "source_sha256": "6fb6e42da2a05c9b5e0555c69f56668ef66bb868e191f2ae9496f7c741d9fc22",
+  "source_sha256": "398a0ba678d72f781b3f80311483a39182bebafa5065d54b2065da2c91fe1cc1",
   "metrics_json": {
     "schema_version": "0.1.0",
     "units": {
@@ -25,7 +25,6 @@ window.CA_METRICS_SNAPSHOT = {
         "formula": "round(area(project(union(site_boundary.features), EPSG:4326->EPSG:4548)), 3)",
         "confidence": "high",
         "assumptions": [
-          "Trusted official boundary is present in the site package.",
           "Based on the provisional submitted boundary, not an official redline; recompute the whole package when official geometry is published."
         ]
       },

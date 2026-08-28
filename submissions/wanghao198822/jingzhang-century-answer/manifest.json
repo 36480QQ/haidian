@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2b74bf66fddec128654bc8b18c02abffe1d824ee32a5ef643027e538ead7d173"
+      "sha256": "ee0e0d15bf91e0e9087217f53ffb7e7506dbe552ffdef71893f25253ab62f57c"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "ec189ec838f4942eaccc821fc3fa67aaa308837ae78c2955c72ea7210515396d"
+      "sha256": "9bfa21594230af4b2de34614d152ea251da3d9fd51b01b30c900d7856f5c04fa"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0e8ced0d9303dbbc05b91231a27dd5f94fe13defb8a62ebf8837aed764644ae3"
+      "sha256": "852f2935205afd18f2a83253fb548313e65911d509c8d00dc65f0e9d603caa8d"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -508,7 +508,7 @@
       "path": "visual/assets/data/metrics_snapshot.js",
       "role": "evidence_data",
       "required": false,
-      "sha256": "286cc41cc19aa2a3920e94613360a0df054aa1fcc44acef66e187e346d2a42e9"
+      "sha256": "7bc03382f38bb262f3a4e1f7ea74616edd3c8284d3d1cb840d85b0a2d872a5a1"
     },
     {
       "path": "visual/assets/geo_core.js",
