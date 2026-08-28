@@ -242,7 +242,7 @@ The first block ends with `status=offline_complete_field_not_authorized_not_run`
 The complete review set Any single failure blocks submission; all checks re-run offline; values are real outputs(full pass 2026-08-15):
 
 | Check item | Content | Verification (re-runnable) | Result |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 |Reference resolution|363 inline refs(source 43/metric 123/data 116/depth 31/standard 29/assumption 21)→registered objects|Parser cross-check vs JSON registries & geometry ids|363/363(+5 format examples)|
 |Offline synthesis rehearsal|120 tasks(15 qualified + 105 failure branches), deterministic receipt hashes|`node visual/assets/simulate-check.js`|120/120; negatives all blocked|
 |Tamper-rejection self-test|8 tamper cases rejected|`node visual/assets/simulate-check.js --self-test`|8/8|
@@ -263,7 +263,7 @@ The complete review set Any single failure blocks submission; all checks re-run 
 Each [source:] reference carries an explicit role; parser groups by sources.json type into four layers(official/policy/background/cross-check):
 
 | Role | Semantics (registered type) | Entries | Refs | Representative | Determination |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 |O Official basis|taskbook, source registry & boundary(brief/boundary)|5|24|AGENT-TASKBOOK 18, SITE-PACKAGE 2, PROCESSED-FACT-PACK 2, SOURCE-REGISTRY 1, BOUNDARY-SOURCE 1|vs brief/site-package originals|
 |P Policy compliance|policy & standards(policy)|9|7|OFFICIAL-ANNOUNCEMENT 6, MNR-LAND-USE-GUIDE 1; 7 others registered standby|doc no. & clause checked|
 |R Background reference|industry cases & culture(industry/culture/other)|7|10|JZ-RAILWAY-CULTURE 4, KEY-AREA-SOURCE 1, PEER-REFERENCE 1, 4 benchmarks 1 each|never approval basis|
@@ -383,7 +383,7 @@ Each transition binds a deciding role, evidence gate, checkable item by item(sta
 A verifiable responsibility loop, not a RACI chart(governance-raci.json consistent with public-committee model charter):
 
 | Role ID | Duty | Must not replace | Vacancy fallback |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 |ROLE-ACCOUNTABLE-LEAD|Passport, E0–E4 determinations, retirement & restoration|Statutory approval, regulators, licensing bodies|No testing; P1 returned for material|
 |ROLE-OPERATIONS|Operation, term & renewal, daily records public|Independent retest & audit conclusions|No release; sandbox only|
 |ROLE-SAFETY|Safety review, physical emergency stop, rollback-trigger stops|Operation & budget decisions|No pilot; vacancy = blackout + flat-line light|
@@ -731,7 +731,7 @@ The proposal builds spatial-need profiles for AI talent, enterprises, and a two-
 Before any card is released it must prove: a person who refuses AI, refuses non-essential data authorization, or carries no smart device can still complete the same basic task(same source as Table A3 checkpoint, falsification condition(2); 12/12 [metric:same_task_equivalence_scenario_count]); paths from each card's data-&-human-boundary column—no new claims; unavailable path→P2 retest or retirement:
 
 | Scenario card | Human-equivalent path (non-AI) | Must be proven before release |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 |01 Rail-patrol AR twin|Fixed labels, human docent shifts|History visit & narration without scanning|
 |02 Autonomous shuttle corridor|Regular bus & shuttle schedules unchanged|Routine travel unaffected; incidents hand to human|
 |03 AI cycling coach|Paper cycling map, human coach|Route & safety guidance without devices|
@@ -752,7 +752,7 @@ Before any card is released it must prove: a person who refuses AI, refuses non-
 Completing contract from budget & retirement views: AI gain from each card's spatial carrier; BEQUEST dividend = post-exit public assets not depending on AI; retirement condition = card's hard KPI/exit trigger:
 
 | Scenario | AI gain | BEQUEST no-AI dividend | Immediate retirement condition |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 |01 Rail-patrol AR twin|AR century-photo overlay & twin demo|Fixed labels & docents continue|Accuracy <98% or complaint unrepaired→offline|
 |02 Autonomous shuttle|Station shuttle demo(concept)|Platform kept; line to regular bus|Punctuality <85% or incident→stop, hand to human|
 |03 AI cycling coach|Data viz & AI coaching|Lane & rest facilities kept|Failure >24h or privacy complaint→pause|
@@ -773,7 +773,7 @@ Completing contract from budget & retirement views: AI gain from each card's spa
 What happens when AI stops, per project: tiered by AI dependency(overlay/core function/no dependency; cost categories & bases in [assumption:ASSUME-005] and Table A3); **no amounts listed**—unit prices, totals deleted v10.14.14(no auditable source):
 
 | Project | AI dependency | No-AI takeover (action + budget caliber) |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 |JZ-01 Central pulse greenway|Overlay|Fixed labels & docents continue(C1-01); greenway budget unchanged, AR layer deleted|
 |JZ-02 North-5th-Ring cross-ring node|No AI dependency|Pure infrastructure; budget unchanged|
 |JZ-03 Zhongzhiyuan plaza & Light Tower|Overlay|Entity kept(BASE); AI show stopped; infra budget unchanged|
@@ -810,7 +810,7 @@ Pointing each weighted dimension's evidence chain at reviewer: anchor→chapters
 Reviewers can clone locally, run each command(lqqk7 96-point signature: run output pasted in text; here: command + expected-result summary):
 
 | Claim | Reproducible command | Expected output | Prerequisite |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 |3 core visual metrics known & HTML-consistent|`python scripts/visual_review.py <dir>`|`Result: PASS`; site_area_sqm=11412825.386, green_ratio=0.249581, public_space_ratio=0.005187|repo root cwd|
 |363 refs all resolvable|`python _audit_refs2.py`|`total=363  unresolved=0`(source 43/metric 123/data 116/depth 31/standard 29/assumption 21)|tools/ cwd|
 |76 metrics(61 known) vs 120 simulation tasks|`python scripts/self_check_submission.py <dir> --pr-author LShengYi --json`|`ok: true`; `formal_review_ready: true`; 120 = 61+15|repo root cwd|
@@ -1228,7 +1228,7 @@ The judgment of this chapter: value of an implementation path lies not in length
 Renewal project list(conceptual recommendation, 12 items):
 
 | ID | Project | Type | Near-term action | Release evidence | Acceptance indicator | Suggested lead | Capital attribute | Conceptual cost band | Rollback trigger | Approval/filing type | Protocol beat |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |JZ-01|Central Pulse-Belt greenway connection|Public space/blue-green|Pedestrian audit, temporary wayfinding, under-bridge clearance|Red lines, traffic & ecology review|Through-connection rate ≥90%, net green-space gain|District landscape + transport [data:geometry/green_space.geojson#GREEN-001]|Public|Medium(temporary works, phased input)|Ecology/safety|Green-line/ecology review|P3 release|
 |JZ-02|North-5th-Ring slow-traffic crossing|Transport/slow traffic|Cross-section, overpass-condition assessment|Structural safety & crossing approval|Crossing time ≤60s, accessibility compliance|Transport commission + design firm [data:geometry/roads.geojson#ROAD-001]|Public|Low-medium(assessment first, works pending)|Safety|Crossing structural approval|P3 release|
 |JZ-03|Zhongzhiyuan gateway plaza & Tower of AI Light|Public space/landmark|Concept design, light-environment trial|Ownership & landscape approval|≥20 events/year, 50,000 visits|Park operating platform [data:geometry/public_space.geojson#PUBLIC-003]|Quasi-public|Medium(event ops partially fund)|Economics/safety|Ownership & landscape approval|P3 release|
