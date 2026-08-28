@@ -1,8 +1,15 @@
 {
   "schema_version": "2.0",
-  "index_id": "JZ-REVIEW-HANDOFF-R66.0",
-  "publication_revision": "66.0",
+  "index_id": "JZ-REVIEW-HANDOFF-R68.0",
+  "publication_revision": "68.0",
   "as_of": "2026-08-28",
+  "review_status_semantics": {
+    "current_package_state_authority": "manifest.json and self_check.json on the current exact head",
+    "external_review_binding": "Every external review conclusion applies only to its reviewed_head.",
+    "predecessor_review": "PR #4136 completed a formal-review-ready review on c01d915ac819f51b77ce148c1c9a6be09e149eb7; after this package changes, that conclusion is predecessor history rather than a claim about the new head.",
+    "new_head_rule": "A new PR exact head remains unreviewed until an external review explicitly binds that head; contributor gates cannot prefill an external verdict.",
+    "history_route": "visual/assets/data-gap-closure-register.json preserves completed review history and superseded action registers without labelling them current."
+  },
   "reading_routes": [
     {
       "time": "30_seconds",
