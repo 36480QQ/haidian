@@ -27,7 +27,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "89149b8ebf3dbaf3e12bd2ce309061b70d81f8cb07438bc1139c4b54b12d2cc6"
+      "sha256": "ae747b67a677bdeee825dc64c8dbae110426d0bdf2b17c279c91d36d1eb9ac0d"
     },
     {
       "path": "agent.json",
@@ -51,13 +51,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "4ffc9ec22360565d0990fc8c7a35d5bd25b75d0e0fcfb30e92ebb4e365988b01"
+      "sha256": "69326a8838ce3244e487877416a1ca22600aae5fdd45306d4ea3592586f332b7"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c19bb18cf1215cb0d658df79b89041b21792d06e4eb33cb471283d732f1de30a"
+      "sha256": "b0aea78a4bb84c16c13605a0219752db5e207b16f3872aad6066392f5628a9e7"
     },
     {
       "path": "compliance_matrix.json",
@@ -82,7 +82,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ee1e37cc3752eb8ec459716bada31a09b27c1d2deb666ee77ce1efd18f8ffaa7"
+      "sha256": "0238b950bbd0e22e94fe7e528940369744ed37183acc3ad6321a85b6944966e5"
     },
     {
       "path": "report/narrative.md",
@@ -101,14 +101,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "351b72bf23ba9ab142725f6b42d5e07f9147a32d4250647512abd99a324859b5"
+      "sha256": "a404af4badd73f0e9ab32d9ce81ac6378812e69fde722e632f410ea26b0653ab"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "05c271ebe28497fa2ae7d83207eba1ea86366017a75cb30887a687f86ecfc679"
+      "sha256": "bff86f99078daa8ff8a6149a039ea8db3249f088c11e90d8b77580a56b8a50c5"
     },
     {
       "path": "visual/index.html",
@@ -116,6 +116,20 @@
       "required": true,
       "language": "zh",
       "sha256": "fa2c84fe40aee22a27620df0955cb7fcad6d8aabba0008de4ec20810d2e17d78"
+    },
+    {
+      "path": "assets/logo-time-track.svg",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "454627204794228c0e58382f2bbc6567e014746450006db6957f672d2540e208"
+    },
+    {
+      "path": "assets/logo-time-track-concept.png",
+      "role": "proposal_figure",
+      "required": false,
+      "language": "neutral",
+      "sha256": "d40714311d17dfae215dea3b5678db2b4b03f9b9c031402ae05a621245055194"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -129,7 +143,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "fd24cea5d3575bf3940bddb13fa8172d744376786ae34921a2a4338cc289fc85"
+      "sha256": "8c88a9a89328ac19675897944f035b0ee96ef1ee9632c589483eaded05f38e70"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -212,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "952d747a8823877c88624bca9b19752759b8d9b3ce417809f3860c6952e4f0ff"
+      "sha256": "78f4333379c3029ec754ec34996e1a19d87b19a8e3c113b3bc1635fa8bd77488"
     },
     {
       "path": "report/proposal.en.html",
@@ -220,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "e18f95ae954f96b35845ddad6d1ae42fb225b3cdde67065393755c36175743b7"
+      "sha256": "1ca4452fb41c50cf533fe0f3df3f1373b188d07b2ac24d7515c774dcd50e01f4"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -228,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "5ce0f3c0c400406bc628b9ec3bb6b048c106f6b0fe26e0fdac0d548090029787"
+      "sha256": "4fc5626703e624d2c57d3461f499690d3ad3540ba3223dfcae0fae4fe07fe2d1"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -236,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "d57a52822e95907b8a00a46fbb728239595d973164837d0c69a81843fea17a4f"
+      "sha256": "65467f59ad57300aa451cf830e4a1f90bc79bf30247272e5f88e63916492d281"
     },
     {
       "path": "visual/index.en.html",
