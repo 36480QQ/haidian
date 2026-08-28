@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f9af9ad1b027b250236254afdeed637161ab69932c84c812755dab68c717ea95"
+      "sha256": "074158a2ada5d7021fed57c1a68d9df33d6b92eb165dc7511c37ce7c5d82fab4"
     },
     {
       "path": "compliance_matrix.json",
@@ -74,14 +74,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "f208a65b9759cc4ef6c9cd02ffb7e166b24531e980d42eadcab19d123c71267a"
+      "sha256": "54717d9245a05835ff0476d7ca5438c29127c6c673927f8796d792e248ea0e98"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "dac67323194d8e1d17a43efa5f54414cadf8d0b2498f5f1f50d10320ea8e7eb5"
+      "sha256": "57863688ceb6341973a0921c339146272bcb401a7849dd217c1c3434f97a1dd0"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,29 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "ad4fae76259f35d0df93360d18eb5bacffebd0cc089cebc1e2ad376f8fef3fa7"
+      "sha256": "3abf62d48c06874de9829ff3be0f03688df2763296945e586a3fce4f88042c67"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "44977d1320d92459ef6f4431106deb5d09dbcdd43f87e1ae01ccab19eccf0f78"
+      "sha256": "791f13a7ece5e4c47b9ca2354b1a13bd4dc29e88c7b109a080417b015a7485a7"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "07134883d35d0cb8cb64bd04ecbbc6f529baaf40532b8e96c817af769de565a1"
+      "sha256": "d665bd1c8e8c46fae5e475d6a510a2c9da95587e55c2cdfa9ef5dae31f251b59"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "87066b5994f7fab3ea5713ae4fe95b4be4ace124dca4f8ec29619d686518ea37"
+      "description_zh": "评审包五组核心固定图之一。首屏为三处重点区街道层级空间体验与构件落位：建筑首层、人物与轮椅尺度、绿化、骑行、答卷亭、人工兜底及 21/23/24 m 完整断面；下部为三片区放大总平面。概念表达，不是现状照片、审批效果图或工程承诺。",
+      "sha256": "be8706ad477b50515552d5ad07d0e8a27944cb1cc082fa3be631fa0ef7f3a4f0"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -226,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "20a555258aa3319b57c90d4a2275df0ccc6bc32f58893e5864353da15559b516"
+      "sha256": "4665284039d7d69eefaa7aa0077472301e96a1511b47739598d4a2cfcd6931bb"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "fdf6dd015d644dbdfd553af4abbffb9e4dc379007ad46070d8c4e81f7468192b"
+      "sha256": "d6d1b36e140ddd93c4411d7df600b640b520e0b1475fadcbf7862011152b5969"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "a7b928cfff8ce1fe79d39cbf955226b7514e8ce6c9cd0bf1dc5139aaef5aaebb"
+      "sha256": "e786aa9e07c82f25d8cb9039ed22d8967bf1e3b372d4048290056d7d9dd0cfdb"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a1d737a33961c870e5ecaf7fcffdc407730c59caace4738652dd8fb22878f0d7"
+      "sha256": "0ca8b05d4975105975cf0cf870be96f7b5b065ae92df7fd875221a0092ac5bc0"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -258,7 +259,8 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "d1b7077ce37b28f1df3c4eb1a125090d05e3f52e35a7375db57b2e232b360e6c"
+      "description_en": "One of the five fixed figure pairs supplied to the reviewer. It leads with street-level spatial experience and component placement in the three key areas: ground-floor facades, people and wheelchair scale, planting, cycling, kiosks, human fallback and complete 21/23/24 m sections; enlarged plans follow below. Conceptual expression, not a site photograph, approval rendering or engineering promise.",
+      "sha256": "23cd5191c5e363cf329f3490436df748c86b6c007f31fa079cb7fd5a02eaec4c"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -296,7 +298,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "b7ecbe5f86eb0b5056323a4577d40f035fb1c83a7b8b3a7b62e94fc421afd6a3"
+      "sha256": "69e34a6c9460a450f1dc5e1d55805aefe5abe574ac54b39189caa999b4ce91dd"
     }
   ],
   "validation_claim": {
