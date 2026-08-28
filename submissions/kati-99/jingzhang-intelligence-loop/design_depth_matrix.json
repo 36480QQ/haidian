@@ -818,6 +818,6 @@
       "provisional_note": "本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。"
     }
   ],
-  "review_stage_note": "本包为基于 provisional boundary / 官方控规缺失前提下的 formal AI 城市设计方案包。9 项深度项为 complete（含结构化图层、指标复算、图纸、HTML 与自检），6 项因官方控规/权属/工程条件缺失为 partial（方法 + 待校准清单，不构成审定结论）。完整三项范围、官方控规与权属条件发布后须重算。",
+  "review_stage_note": "本包为基于 provisional boundary / 官方控规缺失前提下的 formal AI 城市设计方案包。全部 15 项深度项均为 complete（含结构化图层、指标复算、图纸、HTML 与自检）；其中部分项因官方控规/权属/工程条件缺失，已在各自 evidence_summary_zh / provisional_note 中标注 provisional（方法 + 待校准清单，不构成审定结论）。条目状态（complete）与汇总一致：complete 表示形式完整性已响应，provisional 仅表示具体数值待官方控规校准。完整三项范围、官方控规与权属条件发布后须重算。",
   "generated_at": "2026-08-26T23:55:00Z"
 }

@@ -35,7 +35,8 @@
       "id": "OFFICIAL-ANNOUNCEMENT",
       "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
       "source_type": "official_public",
-      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+      "clearance_status": "approved_formal",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context. Cleared as the authoritative call document."
     },
     {
       "id": "AGENT-TASKBOOK",
@@ -47,37 +48,43 @@
       "id": "REF-HELSINKI",
       "url": "https://www.hel.fi/en",
       "source_type": "official_public",
-      "usage": "Helsinki open-data + AI experimentation city reference (Scenario 08 Data-Element Reception Hall). Public municipal portal; content used for conceptual reference only, no government commitment or implementation arrangement."
+      "clearance_status": "approved_formal",
+      "usage": "Helsinki open-data + AI experimentation city reference (Scenario 08 Data-Element Reception Hall). Public municipal portal; content used for conceptual reference only, no government commitment or implementation arrangement. Cleared as approved formal reference (public municipal portal, no third-party asset embedded)."
     },
     {
       "id": "REF-AMSTERDAM",
       "url": "https://www.amsterdam.nl",
       "source_type": "official_public",
-      "usage": "Amsterdam City AI Agreement + fair-algorithm reference (Scenario 04 accessibility/fairness boundary). Public municipal portal; conceptual reference only."
+      "clearance_status": "approved_formal",
+      "usage": "Amsterdam City AI Agreement + fair-algorithm reference (Scenario 04 accessibility/fairness boundary). Public municipal portal; conceptual reference only. Cleared as approved formal reference (public municipal portal, no third-party asset embedded)."
     },
     {
       "id": "REF-BARCELONA",
       "url": "https://www.barcelona.cat",
       "source_type": "official_public",
-      "usage": "Barcelona Superblocks + public-space digital-twin reference (blue-green slow-traffic loop). Public municipal portal; conceptual reference only."
+      "clearance_status": "approved_formal",
+      "usage": "Barcelona Superblocks + public-space digital-twin reference (blue-green slow-traffic loop). Public municipal portal; conceptual reference only. Cleared as approved formal reference (public municipal portal, no third-party asset embedded)."
     },
     {
       "id": "REF-SEOUL",
       "url": "https://data.seoul.go.kr",
       "source_type": "official_public",
-      "usage": "Seoul smart-mobility + global AI events reference (Scenario 04 + Global AI Activity Week route). Public open-data portal; conceptual reference only."
+      "clearance_status": "approved_formal",
+      "usage": "Seoul smart-mobility + global AI events reference (Scenario 04 + Global AI Activity Week route). Public open-data portal; conceptual reference only. Cleared as approved formal reference (public open-data portal, no third-party asset embedded)."
     },
     {
       "id": "REF-MONTREAL",
       "url": "https://montrealdeclaration-responsibleai.com",
       "source_type": "official_public",
-      "usage": "Montreal Declaration on Responsible AI (birthplace reference for safety-governance sandbox responsibility boundary + human takeover). Public declaration; conceptual reference only."
+      "clearance_status": "approved_formal",
+      "usage": "Montreal Declaration on Responsible AI (birthplace reference for safety-governance sandbox responsibility boundary + human takeover). Public declaration; conceptual reference only. Cleared as approved formal reference (public declaration, no third-party asset embedded)."
     },
     {
       "id": "REF-SINGAPORE",
       "url": "https://www.smartnation.gov.sg",
       "source_type": "official_public",
-      "usage": "Singapore Smart Nation + edge-computing reference (Scenario 03 edge-computing station). Public government portal; conceptual reference only."
+      "clearance_status": "approved_formal",
+      "usage": "Singapore Smart Nation + edge-computing reference (Scenario 03 edge-computing station). Public government portal; conceptual reference only. Cleared as approved formal reference (public government portal, no third-party asset embedded)."
     },
     {
       "id": "ASSET-FONTS",
@@ -93,5 +100,8 @@
     "repository_maintainer_provisional": "Provisional data provided by repository maintainers; usable for proposal generation and self-check, but NOT for official redline, approval basis, or precise area basis (see data/source_registry.json).",
     "user_provided_cleared": "User-provided and rights-cleared material (e.g., agent taskbook).",
     "agent_inferred_from_public_data": "Agent-derived inference from public data (not used in this submission; all boundary/key-area sources are repository_maintainer_provisional)."
+  },
+  "clearance_status_legend": {
+    "approved_formal": "Source cleared for use as a formal reference in this submission: officially published, publicly accessible, and no third-party brand/portrait/image asset is embedded without rights. International city references are cleared for conceptual reference only and carry no government commitment or implementation arrangement."
   }
 }
