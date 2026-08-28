@@ -265,7 +265,7 @@ Enterprise and talent conversion follows five gates: need registration, controll
 
 Indicators are divided into observed or model-estimated evidence, design responses, scenario effects and implementation controls. WorldPop, the OSM walking network and 5,000 weight-sensitivity draws answer where intervention should be prioritised, while walking/cycling widths, shade and staffed service remain unbuilt control targets. Existing green conditions are now supplemented by a five-date 2026 Sentinel-2 vegetation spectral-cover proxy, and official-facility identities/addresses have been conservatively reconciled for 36 schools, 2 medical points and 1 eldercare point; these results still do not replace a statutory green-space ratio, a complete official facility base map or field verification.[metric:v2_observed_green_ratio] [metric:v2_official_validated_school_point_count] [metric:v2_official_validated_medical_point_count] [metric:v2_official_validated_eldercare_point_count] [depth:metrics_recalculation]
 
-![Metric evidence table](assets/figures/metrics-evidence.en.png)
+![Planning metrics, evidence chain and implementation evaluation requirements](assets/figures/metrics-evidence.en.png)
 
 | Metric | Value or status | Attribute | Measurement and review |
 |---|---:|---|---|

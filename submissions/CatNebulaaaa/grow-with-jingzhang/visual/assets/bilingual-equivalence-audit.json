@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0.0",
   "audit_status": "completed",
-  "audit_date": "2026-08-26",
+  "audit_date": "2026-08-28",
   "scope": "human_facing_primary_deliverables",
-  "review_method": "逐项比对中英文标题、正文主张、数字、单位、时序、图位、证据状态和实施条件，并完成 PDF 逐页渲染检查；对 18 张英文正式图执行 OCR 辅助可见文字审校，对重点区映射、慢行图标题、中文离线字体加载和廊道长度限定语进行专项复核。",
+  "review_method": "逐项比对中英文标题、正文主张、数字、单位、时序、图位、证据状态和实施条件，并完成 PDF 逐页渲染检查；本轮专项复核 land-use-structure 与 metrics-evidence 的主题、主张、指标、图例和插入位置等值性，检查英文 HTML 离线中文字体覆盖，并对 55.0% / 57.6% 数值间距进行成品 OCR 与浏览器截图校验。",
   "pair_count": 23,
   "missing_count": 0,
   "pairs": [
@@ -13,10 +13,10 @@
     {"zh":"drawings/a3-booklet.pdf","en":"drawings/a3-booklet.en.pdf","status":"equivalent","page_count":18},
     {"zh":"drawings/a0-boards.pdf","en":"drawings/a0-boards.en.pdf","status":"equivalent","page_count":4},
     {"zh":"assets/figures/site-overview.png","en":"assets/figures/site-overview.en.png","status":"equivalent","checks":["11.41 km²","3 key areas","concept-spine wording","Zhongzhiyuan=validation+everyday services","AI Origin=shared ground floor","Dazhongsi=station-city connectivity"]},
-    {"zh":"assets/figures/land-use-structure.png","en":"assets/figures/land-use-structure.en.png","status":"equivalent","checks":["English file regenerated from bilingual source layout","no continuous Chinese annotation detected in final English raster"]},
+    {"zh":"assets/figures/land-use-structure.png","en":"assets/figures/land-use-structure.en.png","status":"equivalent","checks":["same topic: six mixed-use functions grow along one spine","same six-function order and conceptual mix: 18% / 17% / 15% / 15% / 20% / 15%","same caveat: design comparison subject to statutory land-use, tenure, building survey and implementation verification","A3/A0 captions and insertion positions updated to the mixed-use theme","English raster contains English-only formal annotations"]},
     {"zh":"assets/figures/key-areas.png","en":"assets/figures/key-areas.en.png","status":"equivalent","checks":["panel order: Zhongzhiyuan / AI Origin Community / Dazhongsi","Zhongzhiyuan=validation + everyday-service completion","AI Origin=shared ground floor for talent/family/health","Dazhongsi=station-city connectivity first","English panel text is English-only"]},
     {"zh":"assets/figures/mobility-bluegreen.png","en":"assets/figures/mobility-bluegreen.en.png","status":"equivalent","checks":["English file regenerated from clean source layout instead of raster title patching","CORRIDOR-04 remains the 1.0 km first-phase window","full-axis wording is conceptual","no unsupported exact whole-axis length"]},
-    {"zh":"assets/figures/metrics-evidence.png","en":"assets/figures/metrics-evidence.en.png","status":"equivalent","checks":["English file regenerated from bilingual source layout","no continuous Chinese annotation detected in final English raster"]},
+    {"zh":"assets/figures/metrics-evidence.png","en":"assets/figures/metrics-evidence.en.png","status":"equivalent","checks":["same topic: evidence → design → impact → acceptance chain","same core evidence: modelled population 192.6k, service gap ≥1 17.9%, Sentinel-2 five scenes, 39 conservative official-facility checks","same design/impact claims: 8 retained + 4 replaced, CORRIDOR-04 1 km pilot, total coverage 55.0% → 57.6%, gap1 39.4% → 61.9%, gap2 28.8% → 51.5%, P(top20)=99.86%","55.0% and 57.6% are spatially separated and independently OCR-readable","A3/A0 captions and insertion positions updated to the evidence-contract theme"]},
     {"zh":"assets/figures/implementation-protocol.png","en":"assets/figures/implementation-protocol.en.png","status":"equivalent"},
     {"zh":"assets/figures/inclusion-incidence.png","en":"assets/figures/inclusion-incidence.en.png","status":"equivalent"},
     {"zh":"assets/figures/area-action-plan.png","en":"assets/figures/area-action-plan.en.png","status":"equivalent"},
@@ -36,15 +36,15 @@
     "qualifiers_and_policy_status": "pass; the unsupported exact whole-axis length was replaced by explicit conceptual/full-axis wording while the registered 1.0 km CORRIDOR-04 pilot remains unchanged",
     "evidence_markers": "pass",
     "figure_order_and_page_count": "pass",
-    "translation_residue": "pass; all 18 final English PNGs were OCR-audited and no sequence of two or more CJK characters was detected; the five core English figures were regenerated/rebuilt from clean bilingual sources rather than patched rasters",
-    "rendering": "pass; regenerated 18 Chinese + 18 English A3 pages and 4 Chinese + 4 English A0 boards; Chinese PDF text uses an embedded Noto Sans SC subset; browser-level checks confirm report/proposal.html and visual/index.html load and apply the embedded JZ-NotoSC WOFF2 with complete current-page CJK glyph coverage"
+    "translation_residue": "pass; all 18 final English PNGs were re-audited with confidence-filtered OCR and no high-confidence token containing two or more CJK characters was detected; the final English A3/A0 PDFs were rendered page-by-page at 90 dpi and showed zero pages with a 2+ CJK sequence; the two reviewer-flagged core figures were rebuilt to match the Chinese themes rather than remapped to unrelated analysis graphics",
+    "rendering": "pass after final regeneration; 18 Chinese + 18 English A3 pages and 4 Chinese + 4 English A0 boards were regenerated and spot-rendered at delivery scale, with the full 22-page English PDF set additionally rendered for OCR; all four HTML deliverables embed the same offline Noto Sans SC subset where CJK may appear; headless Chrome confirms document.fonts=loaded and JZ-NotoSC as the computed body/title family on both English pages, while Chinese browser screenshots remain OCR-readable"
   },
   "font_embedding": {
     "family": "Noto Sans SC",
     "license": "SIL Open Font License 1.1",
-    "html": "subset WOFF2 embedded as a data URI in Chinese report/proposal.html and visual/index.html; no remote font dependency",
+    "html": "subset WOFF2 embedded as a data URI in Chinese and English report/visual HTML where CJK proper nouns or navigation appear; no remote font dependency",
     "pdf": "TrueType/OpenType subset embedded in Chinese A3 and A0 PDFs",
-    "verification": "PDF font descriptors contain embedded font streams; HTML embedded font cmap covers every current-page CJK codepoint; headless Chrome reports document.fonts=loaded, JZ-NotoSC available and JZ-NotoSC as the computed body/title family; rendered Chinese screenshots are OCR-readable"
+    "verification": "PDF font descriptors contain embedded font streams; the unified offline HTML subset was regenerated from the current four HTML files and covers 865 distinct CJK codepoints with missing=0; headless Chrome reports document.fonts=loaded, JZ-NotoSC available and JZ-NotoSC as the computed body/title family on report/proposal.en.html and visual/index.en.html; rendered Chinese HTML screenshots are OCR-readable"
   },
   "publication_blocker_repairs": {
     "chinese_font_rendering": "closed",
@@ -52,6 +52,10 @@
     "unsupported_exact_whole_axis_length_claim": "closed",
     "english_mobility_title_overlap": "closed",
     "english_visible_text_translation_residue": "closed",
-    "key_area_role_mapping": "closed"
+    "key_area_role_mapping": "closed",
+    "english_land_use_translation_pair": "closed",
+    "english_metrics_evidence_translation_pair": "closed",
+    "english_html_cjk_tofu": "closed",
+    "english_metrics_55_0_57_6_overlap": "closed"
   }
 }
