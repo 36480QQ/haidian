@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ee14d37a0641d154189dee73e22b55a826cb4e223231402535063aa691e75c1b"
+      "sha256": "32a0e2db57254a56a053b608e5f1cf3e3d1be7b0ed8d2b0a69fe1561faa50d8a"
     },
     {
       "path": "compliance_matrix.json",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "81684ba50ade8c0e30109a2ba2076e01c264fd708bdc9912155740fd822659ba"
+      "sha256": "1d66c0a2a1109d9c6031ebadc2d3fa4fdfa4e62667526cc9cbcf8e06d32148c2"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "6c1ce7594d2153c9b40194d2e9ff0f1c8092199c6d53db1e916d8a4e06c38fcc"
+      "sha256": "18914f6836719d6d8790a33b2d944797a8fb74cd94f22028773a6e643100da53"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "87452ad0de1a98007769bc18e81bcb06627f87a20b3e6767275ba39524f5be66"
+      "sha256": "ac02c7a52db5abe0723ee1ee9ae3fb4cf2bcde47889178efe4a48c4bcd442b12"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -590,11 +590,11 @@
       "path": "visual/assets/renders/b3d-poster.jpg",
       "role": "visualization",
       "required": false,
-      "sha256": "1d1347d75538a2c3d451c1763cc9746ad3214b367ca4298cdf1b4474ea557c8c",
+      "sha256": "a0bd417ec9ba8e466eba36873b31c969868399a9d3b0226bbd5825ec5504e638",
       "title_zh": "人字之跃 · 概念意象（AI 生成）",
       "title_en": "Ren-Shaped Leap - conceptual impression (AI-generated)",
-      "description_zh": "人字之跃步行桥的概念意象图（AI 生成）：一跨平直主跨横跨环路，桥面之上除栏板与照明外无构筑物，两端以折返坡道落回道路两侧绿地，桥墩落地、V 形支撑；耐候钢色与道钉带的铜相呼应。用作展示页三维场景加载前的静态图与浏览器不支持 WebGL 时的兜底图。**非实景照片、非工程效果图、非官方审定成果**；片中形体、材质、树种、人物、天气均为意象表达，不构成任何形式、尺寸或工程做法的设计依据。**已知形式差异（据实声明）**：图中两端折返坡道为上下叠置，而正文口径是「两段坡道在平面上并排展开、不上下叠置，每侧只设一处折返」——形式一律以断面 ZZY-1／ZZY-2 与正文为准。图上无文字，中英两版共用同一文件。",
-      "description_en": "AI-generated conceptual impression of the Ren-Shaped Leap footbridge: one flat main span crosses the ring road with nothing above the deck but parapet and lighting, each end returning to the green on switchback ramps, piers landing on V-shaped supports; the weathering-steel tone answers the bronze of the Rail-Spike Band. Used as the still shown before the 3D scene loads and as the fallback when a browser cannot run WebGL. **Not a photograph, not an engineering rendering, not an officially approved result**; forms, materials, tree species, figures and weather are expressive only and constitute no basis for any shape, dimension or construction method. **Declared divergence**: the switchback ramps in the image are stacked, whereas the written calibre is \"the two runs sit side by side in plan, not stacked, with a single switchback per end\" - sections ZZY-1/ZZY-2 and the proposal text govern. The image carries no text and is shared by both language editions.",
+      "description_zh": "人字之跃步行桥的概念意象图（AI 生成）：一跨平直主跨横跨环路，桥面之上除栏板与照明外无构筑物；两端各设一处折返，两段坡道同层并排、中夹绿带、行进方向相反并在远端相接，落回道路两侧绿地；桥墩落地、V 形支撑；耐候钢色与道钉带的铜相呼应。用作展示页三维场景加载前的静态图与浏览器不支持 WebGL 时的兜底图。**非实景照片、非工程效果图、非官方审定成果**；形体、材质、树种、人物、天气均为意象表达，不构成任何形式、尺寸或工程做法的设计依据，形式与尺寸一律以断面 ZZY-1／ZZY-2 与正文为准。图上无文字，中英两版共用同一文件。",
+      "description_en": "AI-generated conceptual impression of the Ren-Shaped Leap footbridge: one flat main span crosses the ring road with nothing above the deck but parapet and lighting; each end carries a single switchback whose two runs sit side by side on the same level with a planted strip between them, running in opposite directions and meeting at the far turn before landing in the green on either side; piers land on V-shaped supports; the weathering-steel tone answers the bronze of the Rail-Spike Band. Used as the still shown before the 3D scene loads and as the fallback when a browser cannot run WebGL. **Not a photograph, not an engineering rendering, not an officially approved result**; forms, materials, tree species, figures and weather are expressive only and constitute no basis for any shape, dimension or construction method - sections ZZY-1/ZZY-2 and the proposal text govern. The image carries no text and is shared by both language editions.",
       "language": "neutral"
     },
     {
