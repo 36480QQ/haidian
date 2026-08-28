@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8c8b00f3b12f4db6f233890841ae3d802001d95efe4e83a39cd45f918695717b"
+      "sha256": "1e0fe27f67aa7ababfc32bf993ee634409f634e5b77c9535621abc807fc786bf"
     },
     {
       "path": "compliance_matrix.json",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "751a51203f5d8f6c51723e1513e7e4d8d32823fe98cb8700e30412825f18e2b2"
+      "sha256": "c3d765049f94ce9a165686ebd618061691d2af208acd2268e62e85b7750415e6"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "f78509a71a111a889b3ac6716efc843c6c4aeac1f6d71615c1afd28b4c6bf402"
+      "sha256": "c5cf4e2a1a8cc56784d2915081684dcbaaac46c64f42611eed33a7f6d7c40795"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "a731dc36312e87fc39e272cb1d475fe9ed634b6e845e4068657dcc6149ff359a"
+      "sha256": "f42c0194d0eb2ef949bfffba82febf679127200d4a8de3c170f76421d6a2c40a"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -590,11 +590,24 @@
       "path": "visual/assets/renders/b3d-poster.jpg",
       "role": "visualization",
       "required": false,
-      "sha256": "89fe620273c83bcb83b9f0a5688845592131c5edf0c90246c4ae42370ec70d97",
+      "sha256": "222d4f510c51a38587f1309cb109c5f865b957ceefc467ce1749d30191aa283a",
       "title_zh": "人字之跃三维场景 · 静态兜底图",
       "title_en": "Ren-Shaped Leap 3D scene - static fallback",
-      "description_zh": "离线三维场景（Three.js，几何按断面 ZZY-1/ZZY-2 的设计目标值搭建）的静态截图，用作浏览器不支持 WebGL 时的兜底图与加载前占位。画面为俯视：一跨平直桥面横跨环路、桥面之上只有栏板，两端各以两段并排折返坡道落回两侧绿地，俯视合读为「人」字。概念示意，未经坐标配准。",
-      "description_en": "A static screenshot of the offline three-dimensional scene (Three.js; geometry built to the target values of sections ZZY-1/ZZY-2), used as the fallback when a browser cannot run WebGL and as the placeholder before load. Seen from above: one flat deck spans the ring road with nothing above it but the parapet, and each end returns to the green on two parallel switchback ramps that together read as the character ren. Conceptual illustration, not coordinate-registered."
+      "description_zh": "离线三维场景（Three.js，几何按断面 ZZY-1/ZZY-2 的设计目标值搭建）的静态截图，经确定性脚本套入与断面图件同一套图签版式（标题、几何依据、尺度校核、竖向链条、免责），用作浏览器不支持 WebGL 时的兜底图与加载前占位。「人」字落在两端的折返本身，不落在桥面的平面造型上——两段坡道在平面上并排展开，俯视不构成「人」字轮廓。概念体量示意，未经坐标配准。",
+      "description_en": "A static screenshot of the offline three-dimensional scene (Three.js; geometry built to the target values of sections ZZY-1/ZZY-2), set by a deterministic script into the same titled frame as the section drawings (title, geometric basis, scale check, vertical chain, disclaimer), used as the fallback when a browser cannot run WebGL and as the placeholder before load. The character ren lies in the switchback itself, not in any plan-view outline of the deck: the two ramp runs sit parallel and no ren outline is readable from above. Conceptual massing illustration, not coordinate-registered.",
+      "language": "zh"
+    },
+    {
+      "path": "visual/assets/renders/b3d-poster.en.jpg",
+      "role": "visualization",
+      "required": false,
+      "sha256": "7a7f95a54c5de050bfe7c85cbe3c089c3f053f0bafca45e6eef10b25d4df4d8d",
+      "title_zh": "人字之跃三维场景 · 静态兜底图（英文版）",
+      "title_en": "Ren-Shaped Leap 3D scene - static fallback (English)",
+      "description_zh": "离线三维场景（Three.js，几何按断面 ZZY-1/ZZY-2 的设计目标值搭建）的静态截图，经确定性脚本套入与断面图件同一套图签版式（标题、几何依据、尺度校核、竖向链条、免责），用作浏览器不支持 WebGL 时的兜底图与加载前占位。「人」字落在两端的折返本身，不落在桥面的平面造型上——两段坡道在平面上并排展开，俯视不构成「人」字轮廓。概念体量示意，未经坐标配准。",
+      "description_en": "A static screenshot of the offline three-dimensional scene (Three.js; geometry built to the target values of sections ZZY-1/ZZY-2), set by a deterministic script into the same titled frame as the section drawings (title, geometric basis, scale check, vertical chain, disclaimer), used as the fallback when a browser cannot run WebGL and as the placeholder before load. The character ren lies in the switchback itself, not in any plan-view outline of the deck: the two ramp runs sit parallel and no ren outline is readable from above. Conceptual massing illustration, not coordinate-registered.",
+      "language": "en",
+      "translation_of": "visual/assets/renders/b3d-poster.jpg"
     },
     {
       "path": "visual/assets/renders/render-spike-belt.jpg",
@@ -742,7 +755,7 @@
       "path": "visual/assets/bridge3d.js",
       "role": "visualization",
       "required": false,
-      "sha256": "04718e572ff9a68a3c3505b0e84aa97787a8e444b8fdab37a9da9d96168176df",
+      "sha256": "26086f85de6aa9fc96f5fbc3724a6ab3023269115499f9d95e7a997f0ecd49b2",
       "title_zh": "人字之跃 · 三维示意场景脚本",
       "title_en": "Ren-Shaped Leap — 3D sketch scene",
       "description_zh": "以断面 ZZY-1/ZZY-2 设计目标值搭建的本地三维示意（抬升6.0m、桥面9m、栏板1.4m、并排坡道62m×2、单侧占地66×9m）；概念示意，未经坐标配准。",

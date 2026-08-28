@@ -9,13 +9,17 @@
   function build(container, reduced) {
     var W = container.clientWidth, Hpx = Math.max(360, Math.round(W * 0.52));
     var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     renderer.setSize(W, Hpx);
     renderer.setClearColor(0xEDEAE1, 1);
     container.appendChild(renderer.domElement);
 
     var scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(0xEDEAE1, 260, 560);
+    // 雾原为 260-560：地面还只有 560x500 时靠它盖住地块边缘。地面已放大到 1500x1180，
+    // 边缘早已在视野外，而这段雾会把「退到能看全整座桥」的那个距离整片洗白。推远。
+    scene.fog = new THREE.Fog(0xEDEAE1, 620, 1400);
     var world = new THREE.Group();
     scene.add(world);
 
@@ -27,32 +31,41 @@
       cam.lookAt(0, 4, 0);
     }
 
-    scene.add(new THREE.HemisphereLight(0xffffff, 0x8a9070, 1.05));
-    var sun = new THREE.DirectionalLight(0xfff2dd, 1.5);
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x9a9e90, 0.85));
+    var sun = new THREE.DirectionalLight(0xfff2dd, 1.35);
     sun.position.set(120, 160, 80);
+    sun.castShadow = true;
+    sun.shadow.mapSize.set(2048, 2048);
+    var sc = sun.shadow.camera;
+    sc.left = -220; sc.right = 220; sc.top = 220; sc.bottom = -220;
+    sc.near = 1; sc.far = 520;
     scene.add(sun);
 
     var M = {
       copper: new THREE.MeshStandardMaterial({ color: 0xA4632A, metalness: 0.45, roughness: 0.5 }),
       deckTop: new THREE.MeshStandardMaterial({ color: 0xC9A97C, roughness: 0.85 }),
-      green: new THREE.MeshStandardMaterial({ color: 0x7C9A5F, roughness: 1 }),
-      green2: new THREE.MeshStandardMaterial({ color: 0x6E8C53, roughness: 1 }),
+      green: new THREE.MeshStandardMaterial({ color: 0x8C9A78, roughness: 1 }),
+      green2: new THREE.MeshStandardMaterial({ color: 0x808E6C, roughness: 1 }),
       road: new THREE.MeshStandardMaterial({ color: 0x5C6167, roughness: 0.95 }),
       lane: new THREE.MeshStandardMaterial({ color: 0xE8E6DE, roughness: 0.9 }),
-      tree: new THREE.MeshStandardMaterial({ color: 0x4F7A45, roughness: 1 }),
+      tree: new THREE.MeshStandardMaterial({ color: 0x5E7355, roughness: 1 }),
       trunk: new THREE.MeshStandardMaterial({ color: 0x6B5138, roughness: 1 }),
-      car: new THREE.MeshStandardMaterial({ color: 0xD8D8DC, roughness: 0.6 })
+      car: new THREE.MeshStandardMaterial({ color: 0xC6C7C4, roughness: 0.6 })
     };
     function box(w, h, d, mat, x, y, z, g) {
       var m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
-      m.position.set(x, y, z); (g || world).add(m); return m;
+      m.position.set(x, y, z);
+      m.castShadow = true;
+      m.receiveShadow = true;
+      (g || world).add(m);
+      return m;
     }
 
     /* —— 场地：中间 60m 环路，两侧绿地 —— */
     var ROAD_W = 60;
-    box(1500, 0.4, ROAD_W, M.road, 0, -0.2, 0);
-    box(1500, 0.42, 560, M.green, 0, -0.21, -(ROAD_W / 2 + 280));
-    box(1500, 0.42, 560, M.green2, 0, -0.21, (ROAD_W / 2 + 280));
+    box(1500, 0.4, ROAD_W, M.road, 0, -0.2, 0).castShadow = false;
+    box(1500, 0.42, 560, M.green, 0, -0.21, -(ROAD_W / 2 + 280)).castShadow = false;
+    box(1500, 0.42, 560, M.green2, 0, -0.21, (ROAD_W / 2 + 280)).castShadow = false;
     box(1500, 0.44, 1.2, M.lane, 0, -0.18, 0);                    // 中央分隔
     for (var i = 0; i < 70; i++) {                                // 车道虚线
       box(6, 0.44, 0.5, M.lane, -690 + i * 20, -0.18, -15);
@@ -98,9 +111,9 @@
     function tree(x, z, s) {
       var g = new THREE.Group();
       var tr = new THREE.Mesh(new THREE.CylinderGeometry(0.3 * s, 0.4 * s, 2.4 * s, 6), M.trunk);
-      tr.position.y = 1.2 * s; g.add(tr);
-      var cr = new THREE.Mesh(new THREE.SphereGeometry(2.1 * s, 10, 8), M.tree);
-      cr.position.y = 3.4 * s; cr.scale.y = 1.15; g.add(cr);
+      tr.position.y = 1.2 * s; tr.castShadow = true; g.add(tr);
+      var cr = new THREE.Mesh(new THREE.SphereGeometry(2.4 * s, 12, 7), M.tree);
+      cr.position.y = 3.1 * s; cr.scale.y = 0.55; cr.castShadow = true; g.add(cr);
       g.position.set(x, 0, z); world.add(g);
     }
     var rng = 9973;
@@ -168,6 +181,7 @@
     try {
       build(container, reduced);
       /* 成功：撤下静态兜底图，状态改为可交互提示 */
+      container.classList.add("is-live");   // 舞台改由画布定高，不再按图签幅面
       if (poster) poster.style.display = "none";
       if (state) state.parentNode.removeChild(state);
     } catch (e) {
