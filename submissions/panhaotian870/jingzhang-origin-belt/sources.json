@@ -372,7 +372,8 @@
       "topics": [
         "case_study",
         "ai_traffic"
-      ]
+      ],
+      "notes_zh": "正文信号优化章节引用的 -0.08/-0.05/-0.06 等 Y 值改善幅度，为对杭州城市大脑与海信信号系统的类比估计，正文已以⚠️标注为假设值；具体幅度须以杭州城市大脑技术白皮书、海信智能交通项目实测报告（含年份、表号、采集方法）为据，并经本地 VISSIM/Synchro 仿真复核后方可采信。当前仅作概念性方向参考。"
     },
     {
       "source_id": "CASE-AI-HEALTHCARE-CHINA",
@@ -481,7 +482,8 @@
       "topics": [
         "road_engineering_standard",
         "traffic_parameters"
-      ]
+      ],
+      "notes_zh": "正文饱和流率 1650 pcu/h/ln、车道宽度、阻塞密度 150 veh/km/ln、自由流速度等参数取自 CJJ 37-2012《城市道路工程设计规范》，属规范经验取值；精确章/表号与页码须对照正式标准文本补充后方可用于正式评分，正文已以📐/⚠️标注。当前按背景参考使用。"
     },
     {
       "source_id": "DATA-SRC-BEIJING-METRO-RIDERSHIP",
@@ -508,7 +510,8 @@
       "topics": [
         "metro_ridership",
         "traffic_demand"
-      ]
+      ],
+      "notes_zh": "正文“13号线日均全线约80万人次/日”及各站客流为按该基数的比例估算，正文已以⚠️标注为假设值；精确分站进出站与断面客流须查阅北京地铁运营年报、北京交通发展研究院年度报告、北京市统计年鉴的对应年份与表号，并经本地 OD 调查复核后方可采信。"
     },
     {
       "source_id": "DATA-SRC-AMAP-TRAFFIC",
@@ -536,7 +539,8 @@
       "topics": [
         "amap_traffic",
         "traffic_baseline"
-      ]
+      ],
+      "notes_zh": "正文南北向/东西向路段 V/C（如 0.88、0.89、0.95、0.97）为基于高德拥堵指数的反推估算，非官方实测，正文已以⚠️标注为假设情景；精确 V/C 须以海淀区交通支队路段流量统计、北京市交通委运行监测年报（含年份、表号、采集方法）为据，并经 VISSIM/Synchro 仿真复核后方可采信。"
     },
     {
       "source_id": "DATA-SRC-HAIDIAN-INDUSTRY-STATUS",
@@ -563,7 +567,8 @@
       "topics": [
         "industry_status",
         "zhongguancun"
-      ]
+      ],
+      "notes_zh": "正文“百度、字节跳动等头部企业在中关村设总部/核心研发机构”等现状描述，基于公开报道与园区公开信息汇总，正文已以“据公开报道”标注；具体企业名单、空间分布与时间戳须以最新工商登记、中关村科学城管委会及园区公开数据为据补充后方可用于正式论证。"
     }
   ]
 }

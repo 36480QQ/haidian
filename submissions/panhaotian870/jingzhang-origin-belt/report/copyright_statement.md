@@ -16,7 +16,7 @@
 
 ## 素材与工具权利清理
 
-- **字体**：HTML/SVG 使用系统默认 CJK 字体栈（"Microsoft YaHei" / "PingFang SC" / "Noto Sans CJK SC" 等），未嵌入或分发第三方商业字体，无字体授权风险。
+- **字体**：报告 HTML（report/proposal.html 及英文版、visual/index.html 及英文版）已内嵌 OFL 许可的 Noto Sans SC（SIL Open Font License 1.1，chinese-simplified 子集，Regular 400）以保证离线渲染无中文方框，许可全文见 assets/fonts/OFL-1.1.txt；SVG 图件仍使用系统 CJK 字体栈。未引入商业字体，无字体授权风险。
 - **生成图件**：全部图件由 AI Agent 基于仓库提供的临时边界与公开数据生成，未使用第三方受版权保护的图纸、渲染或照片素材。
 - **第三方案例**：全球案例（硅谷、伦敦、特拉维夫、广州 APM、杭州城市大脑等）来自公开资料，仅作背景类比与经验借鉴，已在 sources.json 中逐条注明来源与"背景用途"边界，未复制第三方受版权保护的图文。
 - **代码依赖**：分析脚本使用 Python 标准库及 matplotlib、cairosvg、Pillow 等开源许可（PSF/BSD/MIT 类）依赖，未引入专有或未授权代码。
