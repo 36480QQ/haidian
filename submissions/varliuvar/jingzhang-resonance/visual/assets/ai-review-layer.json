@@ -2,10 +2,10 @@
   "schema_version": "1.0.0",
   "audience": "maintainer_ai_review",
   "purpose": "Reviewer navigation and explicit participant-controlled repair evidence only.",
-  "reviewed_baseline_sha256": "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0",
+  "reviewed_baseline_sha256": "34aeb29893414ae9eeace69348abf21fc4addbc511abfb0b23efb1364ebb4b9a",
   "prior_reviewed_baseline": {
-    "score_total": 80,
-    "package_sha256": "5f758676bc008b103fb7729fdd83dfdbbbcf299f67bff1017d8b007535a1d19b"
+    "score_total": 89,
+    "package_sha256": "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0"
   },
   "human_layer_policy": {
     "proposal_body_rewrite_allowed": false,
@@ -27,26 +27,27 @@
   "formal_review_gate": {
     "review_state": "request_changes",
     "formal_review": false,
-    "score_total": 89,
+        "score_total": 84,
+        "previous_reviewed_baseline_score_total": 89,
     "score_max": 100,
     "score_status": "latest_reviewed_baseline_not_recalculated_after_round_2_repairs",
-    "publication_state": "do_not_publish",
+    "publication_state": "pending_visual_rights_reconciliation",
     "participant_remediation_status": {
       "repository_self_check": "pass_can_enter_formal_review_true",
       "ai_review_layer_check": "pass",
       "repair_state_counts": {
         "complete": 13,
         "in_progress": 0,
-        "external_dependency": 0,
+          "external_dependency": 2,
         "not_started": 0
       },
       "participant_controlled_submission_work": "complete_for_declared_noncommercial_static_publication_scope",
       "maintainer_re_review_required": true,
-      "publication_clearance": true
+      "publication_clearance": false
     },
     "gate_owner_role_type": "maintainer_reviewer",
     "institution_status": "unknown",
-    "claim_boundary": "The 89/100 request-changes result is the latest reviewed baseline and is not recalculated here. Participant checks now document AR-013 lineage, package consistency, final attribution, and the AR-010 Esri static-publication license basis. These records cannot replace a maintainer re-review, formal jury decision, planning approval, or publication decision."
+    "claim_boundary": "The 84/100 request-changes result is the latest historical reviewed baseline and the previous 89/100 review is retained; neither is recalculated for the current worktree. Participant records preserve the remaining AR-013 evidence gap; AR-010 is documented as replacement-cleared within scope. These records cannot replace a maintainer re-review, formal jury decision, planning approval, or publication decision."
   },
   "rubric_dimensions": [
     {
@@ -139,7 +140,7 @@
       "participant_re_review_target": 5,
       "score_status": "reviewed_baseline_not_recalculated",
       "findings": [
-        "The latest review awarded 3/5 because AR-010 map/satellite rights, AR-013 generated-component lineage, and final attribution were unresolved in that reviewed package. The participant repair now records all 38 AR-013 components, reconciles submitter attribution, and classifies AR-010 under Esri's licensed noncommercial static-map publication use with the current provider credit and an explicit exclusion of raw tiles, offline basemap packages, self-hosting, and standalone source reuse."
+        "The latest historical review awarded 3/5 because AR-010 map/satellite rights, AR-013 generated-component lineage, and final attribution were unresolved in that reviewed package. Current records document the completed AR-010 page-13 replacement; 36 AR-013 components still have unknown exact provider/run. Only retained attributed /export derivatives have Esri static-publication evidence."
       ],
       "evidence": [
         "visual/assets/asset-rights-ledger.json",
@@ -352,7 +353,7 @@
       "id": "F-20260825-01",
       "review_source": "maintainer_ai_review_full_pdf",
       "dimension_id": "expression_completeness",
-      "feedback_summary": "The latest full-PDF review scored 89/100: brief alignment 5/5, originality 5/5, AI planning innovation 5/5, implementation feasibility 4/5, public interest and inclusion 5/5, risk and compliance 3/5, and expression completeness 4/5. It requests four participant-side actions before formal professional review: resolve AR-010 map/satellite rights component by component; complete AR-013 generated-component lineage at available evidence strength; refresh all affected derivatives and records consistently; and reconcile varliuvar with the final human and AI collaborator credits.",
+      "feedback_summary": "The latest historical review scored 84/100; the previous review scored 89/100. Neither score is recalculated for the current worktree. The review requests four participant-side actions before formal professional review: resolve AR-010 map/satellite rights component by component; complete AR-013 generated-component lineage at available evidence strength; refresh all affected derivatives and records consistently; and reconcile varliuvar with the final human and AI collaborator credits.",
       "requested_action": "Keep the human narrative frozen. Preserve the completed AR-013 component register, package-consistency records, and varliuvar attribution. Resolve AR-010 with provider permission or a cleared visual replacement before claiming publication clearance.",
       "human_narrative_change_required": false,
       "status": "open",
@@ -584,20 +585,20 @@
     "claim_boundary": "Independent AI review passes the corrected English counterparts and all participant-controlled bilingual artifacts are complete. The machine-review addendum remains an audit trail, not a human, certified, official, legal, planning, or publication approval; repository policy assigns the human semantic spot-check to the maintainer workflow."
   },
   "rights_summary": {
-    "status": "inventory_and_declared_scope_clearance_complete",
+    "status": "inventory_complete_declared_scope_clearance_pending",
     "asset_ledger_complete": true,
-    "clearance_complete": true,
-    "affected_current_package_group_ids": [],
-    "root_publication_evidence_gap_count": 0,
-    "root_publication_evidence_gap_ids": [],
-    "publication_clearance": true,
+    "clearance_complete": false,
+    "affected_current_package_group_ids": ["AR-013"],
+    "root_publication_evidence_gap_count": 1,
+    "root_publication_evidence_gap_ids": ["AR-013"],
+    "publication_clearance": false,
     "scope": "Participant PR and noncommercial static-publication/community-review scope; maintainer re-review remains pending",
     "evidence_paths": [
       "visual/assets/asset-rights-ledger.json",
       "visual/assets/asset-clearance-disposition.json",
       "visual/assets/brand-model-provenance.json"
     ],
-    "claim_boundary": "AR-013 generated-component lineage and AR-010 static-publication rights evidence are complete within the declared scope. No raw-tile or offline-basemap redistribution, commercial use, standalone-source reuse, self-hosting, sublicensing, provider endorsement, legal approval, statutory approval, or maintainer publication decision is claimed."
+    "claim_boundary": "AR-013 has component records but exact provider/run mapping is unavailable for 36 components. AR-010 is replacement-cleared within scope: the N01 tiled capture was removed from shipped derivatives and replaced with a participant-authored abstract base; Esri evidence covers only retained attributed /export derivatives. No raw-tile or offline-basemap redistribution, commercial use, standalone-source reuse, self-hosting, sublicensing, provider endorsement, legal approval, statutory approval, or maintainer publication decision is claimed."
   },
   "claim_boundary": "Participant-authored review navigation; not official approval, field evidence, institutional commitment, budget, procurement, or implementation permission."
 }

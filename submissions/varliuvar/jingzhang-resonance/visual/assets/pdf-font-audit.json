@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_on": "2026-08-25",
+  "generated_on": "2026-08-28",
   "font_source": {
     "name": "Noto Sans SC",
     "local_font_internal_version": "Version 2.04;241114210130;non-release",
@@ -9,11 +9,11 @@
     "upstream_file_match_status": "not_verified_against_current_upstream_bytes",
     "license": "SIL Open Font License 1.1",
     "source_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
-    "html_subset_sha256": "8db2fdaafa37e872aa7047f7c5a04fa965bab541012eebcdeb70f28baafdba7e",
+    "html_subset_sha256": "daa20824ec1c022cbe8a0b8a5931bca86595227e414acbca60f3581aeeb799e8",
     "subset_tool": "fontTools 4.63.0",
-    "local_intermediate_build_script": ".maintainer-review/jingzhang-resonance/build_bilingual_pdfs.py",
-    "local_intermediate_build_script_sha256": "c98f5c82802d9056527eb463542154702a9378e87c1d4f39469884431374a828",
-    "build_script_scope": "Local font subsetting and intermediate PDF generation only; it does not generate the shipped review-font.css wrapper or reproduce the final compressed four-PDF byte set by itself.",
+    "local_intermediate_build_script": ".maintainer-review/jingzhang-resonance/work-cache/scripts/rebuild_bilingual_pdfs.py",
+    "local_intermediate_build_script_sha256": "202dfab628a7beb3257bc73f692131616fa0bb75d658008d03444eb6e57a2531",
+    "build_script_scope": "Rebuilds the four shipped PDFs from the locked baseline, final English core figures, the approved cover, and the two sanitized Chinese analysis pages; it does not rebuild the audited HTML font subset.",
     "finalization_provenance_status": "final artifact hashes and deterministic properties audited; byte-for-byte rebuild recipe not shipped",
     "license_text_bundled_in": "visual/assets/review-font.css",
     "license_verification": "complete_ofl_1_1_core_text_normalized_match_local_build_copy",
@@ -25,6 +25,50 @@
     "report/proposal.html",
     "report/proposal.en.html"
   ],
+  "html_font_audit": {
+    "audited_on": "2026-08-28",
+    "method": "Decode the data URI font in review-font.css with fontTools and compare its cmap against every CJK character in the four final HTML files.",
+    "cjk_ranges": [
+      "U+3400-U+4DBF",
+      "U+4E00-U+9FFF",
+      "U+F900-U+FAFF"
+    ],
+    "unique_cjk_total": 881,
+    "covered_cjk_total": 881,
+    "missing_cjk_total": 0,
+    "repaired_codepoints": [
+      "U+51E0",
+      "U+552F",
+      "U+6362",
+      "U+80CC"
+    ],
+    "artifacts": [
+      {
+        "path": "report/proposal.html",
+        "sha256": "6108b2e32d3beb6781e1b5abf24627adcb94f83150a73c1614742390b77675e0",
+        "unique_cjk": 875,
+        "missing_cjk": 0
+      },
+      {
+        "path": "report/proposal.en.html",
+        "sha256": "02a7b3df9e12113f91c9f6768e380d5b5cf2d1639ff5bdd8a5a40765991045eb",
+        "unique_cjk": 6,
+        "missing_cjk": 0
+      },
+      {
+        "path": "visual/index.html",
+        "sha256": "8059e0a4f2894654ff0ef87738aabee8775d0fb205653dd61839d08ef305bf68",
+        "unique_cjk": 330,
+        "missing_cjk": 0
+      },
+      {
+        "path": "visual/index.en.html",
+        "sha256": "f97e99631ba0482faf739fc971d14096865eeb264c8b74fed41a1e051c1eb086",
+        "unique_cjk": 0,
+        "missing_cjk": 0
+      }
+    ]
+  },
   "pdf_strategy": {
     "implementation": "font_independent_image_only",
     "scope": "four Chinese and English A3/A0 PDFs",
@@ -34,7 +78,7 @@
   "artifacts": [
     {
       "path": "drawings/a3-booklet.pdf",
-      "sha256": "f82f568158069885088767ecf7b3aacb163e90b1256f276b2d2980567c2da8e9",
+      "sha256": "1fcf63e08ed7d995e6de66001a1ab9b0e8b35bf6159d5b8746cc365ee1de3161",
       "page_count": 21,
       "font_resource_count": 0,
       "fonts": {},
@@ -43,7 +87,7 @@
     },
     {
       "path": "drawings/a0-boards.pdf",
-      "sha256": "da0092b01a6d796d489770d33302a9ff269a8a085486cc8ae2435ed27175af48",
+      "sha256": "fcba9ebb841ffcd90d23e58607b13d0341708d2e538bf847afea4017e83bd311",
       "page_count": 3,
       "font_resource_count": 0,
       "fonts": {},
@@ -52,7 +96,7 @@
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
-      "sha256": "8fb7ef1e875dc416bb8a4e47c7558f083a3d5af1afb5311b4dcb9e182a3dc316",
+      "sha256": "ded6d97ce3304b2d18bcbb8a8486efa9a5141f091a40a18d4fb30ba513e1f183",
       "page_count": 21,
       "font_resource_count": 0,
       "fonts": {},
@@ -61,7 +105,7 @@
     },
     {
       "path": "drawings/a0-boards.en.pdf",
-      "sha256": "c712d8a6a1add875e73ee339e26c28d8ddab832cbcd08ba40b6cc8bf61f3657f",
+      "sha256": "d23482f4a4a7c35555f3eda83dcfb18b6608d42c8504cfc1118fe86df7500813",
       "page_count": 3,
       "font_resource_count": 0,
       "fonts": {},
@@ -69,5 +113,6 @@
       "text_layer": "absent_not_searchable_or_selectable"
     }
   ],
-  "claim_boundary": "This deterministic audit proves zero PDF font resources and records local font-subset provenance. It does not claim byte-for-byte rebuild reproducibility, that the local source font bytes match the current upstream download, or completion of visual, semantic, accessibility, and independent bilingual review."
+  "claim_boundary": "This deterministic audit proves page counts, hashes and zero PDF font resources. Visual, semantic, rights and professional review remain separate.",
+  "recorded_on": "2026-08-28"
 }

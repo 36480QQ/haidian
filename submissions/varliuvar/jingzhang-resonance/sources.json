@@ -70,10 +70,36 @@
       "source_type": "official_public_license_and_attribution_evidence",
       "provider_access": "public",
       "license": "Esri Master License Agreement",
-      "checked_on": "2026-08-26",
+      "checked_on": "2026-08-27",
       "required_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community",
-      "usage": "AR-010 evidence for attributed static electronic/printed map derivatives in this participant PR and noncommercial community review.",
-      "scope_boundary": "Does not authorize raw-tile redistribution, offline basemap packages, self-hosting, commercial use, standalone source reuse, sublicensing, or provider endorsement."
+      "evidence_index_path": "visual/assets/esri-evidence-index.json",
+      "evidence_index_sha256": "a94ab8a521f05718d361f1d05a59a97c826fd1301d99ff04672534bf20409a44",
+      "evidence_snapshots": [
+        {
+          "path": "visual/assets/esri-world-imagery-item-20260827.json",
+          "sha256": "8306b066fc656f51331b6529b57384274ca2de4f00276862c5d21e7d893572a0"
+        },
+        {
+          "path": "visual/assets/esri-citation-guidance-20260827.json",
+          "sha256": "d43d5c5bb366d9d0e9b7b255ee2e398f6f308587ea374b156a1349e827582d7c"
+        },
+        {
+          "path": "visual/assets/esri-terms-summary-20260827.json",
+          "sha256": "93fb9c99be9592684ef562c097b5d4afac1e107726d3f7f175f26018d8e1bba6"
+        }
+      ],
+      "usage": "AR-010 evidence for attributed static electronic/printed derivatives supported by the archived /export captures in this participant PR and noncommercial community review.",
+      "n01_tiled_capture_status": "replaced_with_participant_authored_abstract_base",
+      "n01_replacement_evidence": {
+        "former_page": "assets/analysis-18/jingzhang_analysis_v13_pilot_13_dazhongsi.png",
+        "former_raster_sha256": "b80d5952832d6699804af2c26da2de08c65b0f73296753b50f0971b1624eb992",
+        "replacement_asset_sha256": "b456ade7809f5ce2b602ad02163dfd0a7b76d1dc4e1f5e7a892d540e81592231",
+        "replacement_clean_svg_sha256": "fcc40ce96bcb29bb43c43aec82ccddb21a333355f0f42b6265c30ad8c7e9504b",
+        "replacement_png_sha256": "8a3e0b1eb5e19f552c6b9aacbb50422935517552e2ca7308fea0bec1592b717f",
+        "removed_raster_absent": true
+      },
+      "scope_boundary": "The snapshots support the retained /export-derived static maps. The former N01 page-13 tiled-service capture has been removed from shipped derivatives and replaced with a participant-authored abstract base. The evidence does not authorize raw-tile redistribution, offline basemap packages, self-hosting, commercial use, standalone source reuse, sublicensing, or provider endorsement.",
+      "original_evidence_index_sha256": "092eba7f38fe1941fcb70985f7c41424220dba84fb0ccfffea07bf22b44eeb3c"
     },
     {
       "id": "AI-REVIEW-LAYER",
@@ -84,10 +110,11 @@
       "manifest_listed": true,
       "usage": "Participant-authored reviewer navigation and remediation register only; not maintainer endorsement, design prose, source authority, institutional commitment, approval, or publication authorization.",
       "ai_review_input_summary": {
-        "reviewed_baseline_sha256_prefix": "53ae6be5a378",
+        "reviewed_baseline_sha256_prefix": "34aeb2989341",
         "gate": "request_changes",
         "formal_review": false,
-        "score_total": 89,
+        "score_total": 84,
+        "previous_reviewed_baseline_score_total": 89,
         "dimension_ids": [
           "brief_alignment",
           "originality",
@@ -115,7 +142,7 @@
         "repair_counts": {
           "complete": 13,
           "in_progress": 0,
-          "external_dependency": 0,
+          "external_dependency": 2,
           "not_started": 0
         },
         "open_feedback_ids": [
@@ -140,22 +167,25 @@
       "usage": "Asset-or-group inventory for R06 covering shipped text/data, V13 sheets, core and English figures, PDFs, cover, fonts, code dependencies, map/satellite components, street-view/category checks, case imagery, logo/trademark status, and generated visuals.",
       "clearance_summary": {
         "asset_ledger_complete": true,
-      "clearance_complete": true,
-      "root_publication_evidence_gap_count": 0,
-      "root_publication_evidence_gap_ids": [],
-      "publication_clearance": true,
-      "scope": "Participant PR and noncommercial static-publication/community-review scope"
-    },
-    "claim_boundary": "AR-013 lineage and the AR-010 Esri static-publication license basis are complete within the declared scope. No raw-tile/offline-basemap redistribution, commercial use, standalone-source reuse, or legal approval is implied."
+        "clearance_complete": false,
+        "root_publication_evidence_gap_count": 1,
+        "root_publication_evidence_gap_ids": [
+          "AR-013"
+        ],
+        "publication_clearance": false,
+        "publication_state": "pending_visual_rights_reconciliation",
+        "scope": "Participant PR and noncommercial static-publication/community-review scope"
+      },
+      "claim_boundary": "AR-010 is replacement-cleared within the declared scope: the former N01 page-13 tiled capture was removed from shipped derivatives and replaced with a participant-authored abstract base. AR-013 has exact Oskyi mapping only for the two page-14 components and cover derivative; the remaining 36 provider/run fields are unknown. No raw-tile/offline-basemap redistribution, commercial use, standalone-source reuse, model-name-based rights claim, or legal approval is implied."
     },
     {
       "id": "ASSET-CLEARANCE-DISPOSITION",
       "path": "visual/assets/asset-clearance-disposition.json",
       "source_type": "participant_generated_release_boundary",
       "ownership": "participant_generated",
-    "usage": "R07 disposition record confirming all thirteen groups are cleared with evidence for the declared scope, including AR-010 as attributed static-map derivatives.",
-    "publication_state": "cleared_for_declared_noncommercial_static_publication_scope",
-    "claim_boundary": "The participant rights record is complete for the declared scope; maintainer re-review and any broader publication decision remain separate."
+      "usage": "R07 disposition record documenting the completed AR-010 replacement and holding only AR-013 pending provenance reconciliation while retaining the other eleven group decisions.",
+      "publication_state": "pending_visual_rights_reconciliation",
+      "claim_boundary": "Publication clearance is withheld only for AR-013; AR-010 is replacement-cleared within its declared scope. Maintainer re-review and any broader publication decision remain separate."
     },
     {
       "id": "BRAND-MODEL-PROVENANCE",
@@ -163,7 +193,8 @@
       "source_type": "participant_generated_provenance_register",
       "ownership": "participant_generated",
       "usage": "R12 register for the working brand, declared agent/model role groups, and existing Tokai/Oskyi/GPT-image/OSM/Esri evidence at its actual verification strength.",
-      "claim_boundary": "Component provenance is complete at available evidence strength; unknowns are explicit."
+      "publication_state": "pending_visual_rights_reconciliation",
+      "claim_boundary": "Only the two page-14 components and cover derivative have exact Oskyi mapping. The remaining 36 component provider/run fields are explicitly unknown, and model names are not rights evidence."
     },
     {
       "id": "NOTO-SANS-SC-OFL",

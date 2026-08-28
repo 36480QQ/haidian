@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "recorded_at": "2026-08-25T23:20:00+08:00",
+  "recorded_at": "2026-08-28T19:10:00+08:00",
   "audience": "maintainer_ai_review",
   "source_ledger": "visual/assets/asset-rights-ledger.json",
-  "package_publication_state": "cleared_for_declared_noncommercial_static_publication_scope",
+  "package_publication_state": "pending_visual_rights_reconciliation",
   "disposition_semantics": {
     "cleared_with_evidence": "Retain only within the scope stated by the corresponding ledger evidence.",
     "replaced_with_cleared_asset": "The shipped output must point to a documented replacement and its source/output hashes.",
@@ -77,9 +77,17 @@
     {
       "asset_group_id": "AR-010",
       "current_package_presence": true,
-      "public_disposition": "cleared_with_evidence",
-      "implementation_status": "retained_as_attributed_static_map_derivatives_no_raw_tiles_or_offline_package_shipped",
-      "blocking_dependency": null
+      "public_disposition": "replaced_with_cleared_asset",
+      "implementation_status": "replacement_complete_manifest_refreshed",
+      "blocking_dependency": null,
+      "replacement_record": {
+        "former_page": "13",
+        "former_raster_sha256": "b80d5952832d6699804af2c26da2de08c65b0f73296753b50f0971b1624eb992",
+        "replacement_asset_sha256": "b456ade7809f5ce2b602ad02163dfd0a7b76d1dc4e1f5e7a892d540e81592231",
+        "replacement_png_sha256": "8a3e0b1eb5e19f552c6b9aacbb50422935517552e2ca7308fea0bec1592b717f",
+        "replacement_clean_svg_sha256": "fcc40ce96bcb29bb43c43aec82ccddb21a333355f0f42b6265c30ad8c7e9504b",
+        "removed_raster_absent": true
+      }
     },
     {
       "asset_group_id": "AR-011",
@@ -98,39 +106,40 @@
     {
       "asset_group_id": "AR-013",
       "current_package_presence": true,
-      "public_disposition": "cleared_with_evidence",
-      "implementation_status": "retained_for_declared_limited_review_scope",
-      "blocking_dependency": null
+      "public_disposition": "unresolved_pending_permission_or_replacement",
+      "implementation_status": "held_pending_exact_provider_run_mapping_and_final_derivative_reconciliation",
+      "blocking_dependency": "Exact provider/run evidence is available only for page-14 components and cover; reconcile remaining 36 component records and affected derivatives."
     }
   ],
   "release_actions": [
     {
       "priority": 1,
-      "action": "Retain the AR-010 Esri license basis, current provider attribution, static-publication scope, and raw-tile/offline-package exclusion in every public package.",
-      "acceptance": "AR-010 remains cleared_with_evidence only while the package ships attributed static derivatives and does not ship raw tiles, an offline basemap package, or an independently reusable source image."
+      "action": "Record the completed AR-010 page-13 replacement and retain Esri evidence only for the remaining attributed /export derivatives.",
+      "acceptance": "AR-010 is replaced_with_cleared_asset after the former page-13 tiled raster is absent from the shipped clean SVG/PNG/PDF derivatives; no raw tiles or offline package is shipped."
     },
     {
       "priority": 2,
-      "action": "Retain AR-013 component records and final attribution during re-review.",
-      "acceptance": "All 38 generated or edited components retain workflow evidence, output hashes, reuse boundaries, and explicit unavailable fields."
+      "action": "Hold AR-013 publication pending exact provider/run reconciliation for the 36 components without precise records.",
+      "acceptance": "The two page-14 components and cover retain exact Oskyi evidence; the other 36 records remain explicitly unknown until reconciled."
     }
   ],
   "summary": {
     "decision_count": 13,
-    "cleared_with_evidence_group_count": 13,
-    "replaced_with_cleared_asset_group_count": 0,
+    "cleared_with_evidence_group_count": 11,
+    "replaced_with_cleared_asset_group_count": 1,
     "excluded_from_public_package_group_count": 0,
-    "unresolved_current_package_group_count": 0,
-    "unresolved_current_package_group_ids": [],
+    "unresolved_current_package_group_count": 1,
+    "unresolved_current_package_group_ids": ["AR-013"],
     "current_package_excluded_but_physically_present_group_ids": [],
-    "root_publication_evidence_gap_ids": [],
-    "inherited_delivery_group_ids": [],
-    "conditional_public_brand_review_ids": [],
-    "publishable_now": true,
-    "claim_boundary": "The package is cleared only for the declared participant PR and noncommercial static-publication/community-review scope. No raw-tile or offline-basemap redistribution, commercial use, standalone-source reuse, self-hosting, sublicensing, provider endorsement, legal approval, or statutory approval is claimed."
+    "root_publication_evidence_gap_count": 1,
+    "root_publication_evidence_gap_ids": ["AR-013"],
+    "inherited_delivery_group_ids": ["AR-002", "AR-003", "AR-004", "AR-006", "AR-007"],
+    "conditional_public_brand_review_ids": ["AR-005"],
+    "publishable_now": false,
+    "claim_boundary": "The package remains pending visual rights reconciliation because AR-013 still has an unresolved provenance gap. AR-010 is a documented replacement-cleared group: the former N01 page-13 tiled raster was removed and replaced with a participant-authored abstract base, while Esri evidence applies only to the remaining attributed /export derivatives. AR-013 has exact Oskyi evidence only for page-14 components and the cover derivative; the other 36 provider/run fields remain unknown. No raw-tile or offline-basemap redistribution, commercial use, standalone-source reuse, self-hosting, sublicensing, provider endorsement, legal approval, or statutory approval is claimed."
   },
-  "clearance_complete": true,
-  "publication_clearance": true,
+  "clearance_complete": false,
+  "publication_clearance": false,
   "excluded_asset_groups": [],
-  "disposition_rule": "All thirteen groups are cleared with evidence for the declared participant PR and noncommercial community-review scope. AR-010 clearance is limited to attributed static derivatives and does not extend to raw tiles, offline basemap packages, self-hosting, commercial use, or standalone source reuse."
+  "disposition_rule": "Eleven groups remain cleared within the declared limited scope. AR-010 is a documented replacement-cleared group; AR-013 remains unresolved_pending_permission_or_replacement until its stated provenance gap is reconciled."
 }

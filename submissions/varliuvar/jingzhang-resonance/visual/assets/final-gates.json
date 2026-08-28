@@ -1,46 +1,46 @@
 {
   "schema_version": "1.0.0",
-  "recorded_on": "2026-08-25",
+  "recorded_on": "2026-08-28",
   "scope": "Participant-controlled finalization gates for the AI review remediation batch.",
   "gate_authorities": [
     {
       "gate_id": "AI_REVIEW_LAYER_CONSISTENCY",
       "command": "node visual/assets/check-ai-review-layer.js --check",
       "result_authority": "command exit status at final verification",
-      "participant_status": "pass_2026-08-24"
+      "participant_status": "pass_2026-08-28"
     },
     {
       "gate_id": "REPOSITORY_SELF_CHECK",
       "command": "python scripts/self_check_submission.py <submission> --pr-author varliuvar --mark-self-checked --json",
       "result_authority": "self_check.json",
-      "participant_status": "pass_can_enter_formal_review_true_2026-08-24"
+      "participant_status": "self_check_pass_marked_current_manifest_2026-08-28"
     },
     {
       "gate_id": "MANIFEST_INTEGRITY",
       "command": "python scripts/refresh_submission_manifest.py <submission> --json",
       "result_authority": "manifest.json",
-      "participant_status": "pass_74_manifest_entries_2026-08-24"
+      "participant_status": "refresh_succeeded_88_manifest_entries_2026-08-28"
     },
     {
       "gate_id": "BILINGUAL_AND_FONT_QA",
       "result_authority": "visual/assets/bilingual-equivalence.json and visual/assets/pdf-font-audit.json",
-      "participant_status": "independent_ai_review_complete_10_pass_0_needs_work_machine_review_addendum_present_human_certification_not_claimed"
+      "participant_status": "independent_ai_review_complete_10_pass_0_needs_work_machine_review_addendum_present_playwright_chromium_qa_pass_2026-08-28_human_certification_not_claimed"
     },
     {
       "gate_id": "RIGHTS_AND_PUBLICATION",
       "result_authority": "visual/assets/asset-rights-ledger.json and visual/assets/asset-clearance-disposition.json",
-      "participant_status": "pass_inventory_ar013_and_ar010_declared_scope_clearance_complete"
+      "participant_status": "pass_inventory_only_clearance_pending_ar013_exact_mapping"
     },
     {
       "gate_id": "PACKAGE_SIZE",
       "result_authority": "self_check.json deterministic_validation.stdout.total_bytes",
-      "participant_status": "pass_under_40_mib_repository_limit_2026-08-24"
+      "participant_status": "pass_under_40_mib_repository_limit_40444470_bytes_2026-08-28"
     },
     {
       "gate_id": "ADVISORY_PROPOSAL_SCORE",
       "command": "python scripts/score_submission.py <submission>/proposal.md --repo-root . --json",
       "result_authority": "command output; advisory only",
-      "participant_status": "ready_true_7_pass_1_needs_work_0_missing_2026-08-24"
+      "participant_status": "ready_true_6_pass_2_needs_work_0_missing_2026-08-28_advisory_only"
     }
   ],
   "remaining_external_decisions": [
@@ -48,5 +48,5 @@
     "official-register trademark review before formal public-brand use",
     "maintainer admission to professional review and publication decision"
   ],
-  "claim_boundary": "All thirteen participant repair records are complete within the declared scope. AR-013 lineage, downstream consistency, final attribution, and the AR-010 Esri static-publication rights record are repaired. This record does not assert a maintainer re-review result, professional approval, planning approval, commercial-use permission, standalone-source redistribution right, or score increase."
+  "claim_boundary": "All thirteen participant repair records are complete within the declared scope. AR-010 N01 tiled capture was removed and replaced with a participant-authored abstract base; the remaining external evidence dependency is AR-013 exact provider/run mapping for 36 components. This record does not assert publication clearance, maintainer re-review, professional approval, planning approval, commercial-use permission, standalone-source redistribution right, or score increase."
 }

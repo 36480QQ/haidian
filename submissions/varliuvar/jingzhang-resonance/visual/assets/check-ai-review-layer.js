@@ -20,6 +20,9 @@ const repairStates = ["complete", "in_progress", "external_dependency", "not_sta
 const expectedScenarios = ["T-01", "T-04", "T-10"];
 const expectedSamples = ["S-LOW-DISTURBANCE-SPATIAL", "S-T04-AI-TEST"];
 const participantMethodCompleteStatus = "method_complete_external_evidence_pending";
+const expectedReviewBaselineSha = "34aeb29893414ae9eeace69348abf21fc4addbc511abfb0b23efb1364ebb4b9a";
+const expectedPreviousReviewBaselineSha = "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0";
+const expectedRepairCounts = { complete: 13, in_progress: 0, external_dependency: 2, not_started: 0 };
 const repairFields = ["id", "title", "status", "repair_state", "participant_action", "evidence_paths", "claim_boundary", "external_dependency"];
 const feedbackFields = ["id", "review_source", "dimension_id", "feedback_summary", "requested_action", "human_narrative_change_required", "status", "evidence_paths", "resolution_note"];
 const scenarioFields = ["scenario_id", "baseline_status", "sampling_scope", "data_controller_role", "human_reviewer_role", "continue_condition", "pause_condition", "exit_condition", "public_disclosure", "measured_value", "institution_status"];
@@ -68,9 +71,10 @@ if (layer) {
   requireFields("root", layer, ["schema_version", "audience", "purpose", "reviewed_baseline_sha256", "human_layer_policy", "manifest_registration", "formal_review_gate", "rubric_dimensions", "repair_register", "future_feedback_register", "regional_collaboration", "priority_scenarios", "deepened_samples", "bilingual_artifact_status", "rights_summary", "claim_boundary"]);
   if (layer.schema_version !== "1.0.0") fail("schema_version must be 1.0.0");
   if (layer.audience !== "maintainer_ai_review") fail("audience must be maintainer_ai_review");
-  if (layer.reviewed_baseline_sha256 !== "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0") fail("reviewed_baseline_sha256 must match the latest PR #3847 reviewed package");
+  if (layer.reviewed_baseline_sha256 !== expectedReviewBaselineSha) fail("reviewed_baseline_sha256 must match the latest 84/100 historical review");
+  if (layer.prior_reviewed_baseline?.score_total !== 89 || layer.prior_reviewed_baseline?.package_sha256 !== expectedPreviousReviewBaselineSha) fail("prior_reviewed_baseline must retain the previous 89/100 review");
   if (layer.human_layer_policy?.proposal_body_rewrite_allowed !== false || layer.human_layer_policy?.ai_review_terms_stay_in_ai_layer !== true || !Array.isArray(layer.human_layer_policy?.allowed_human_changes)) fail("human_layer_policy must match the frozen-narrative contract");
-  if (layer.formal_review_gate?.review_state !== "request_changes" || layer.formal_review_gate?.formal_review !== false || layer.formal_review_gate?.score_total !== 89 || layer.formal_review_gate?.publication_state !== "do_not_publish") fail("formal_review_gate must retain the latest request_changes, formal_review false, score 89, and do_not_publish baseline");
+  if (layer.formal_review_gate?.review_state !== "request_changes" || layer.formal_review_gate?.formal_review !== false || layer.formal_review_gate?.score_total !== 84 || layer.formal_review_gate?.previous_reviewed_baseline_score_total !== 89 || layer.formal_review_gate?.publication_state !== "pending_visual_rights_reconciliation") fail("formal_review_gate must retain 84 latest historical score, 89 previous score, formal_review false, and pending rights state");
 
   if (!Array.isArray(layer.rubric_dimensions)) fail("rubric_dimensions must be an array");
   else {
@@ -143,9 +147,10 @@ if (layer) {
   if (layer.regional_collaboration?.institution_status !== "unconfirmed") fail("regional_collaboration.institution_status must be unconfirmed");
   if (!Array.isArray(layer.regional_collaboration?.suggested_relationship_names) || layer.regional_collaboration.suggested_relationship_names.length !== 5) fail("regional_collaboration must retain five existing suggested relationship names");
 
-  const counts = Object.fromEntries(repairStates.map((state) => [state, 0]));
-  for (const repair of layer.repair_register || []) counts[repair.repair_state] += 1;
-  if (Object.values(counts).reduce((sum, value) => sum + value, 0) !== 13) fail("repair-state counts must total 13");
+  const counts = { ...expectedRepairCounts };
+  const repairRegisterCounts = Object.fromEntries(repairStates.map((state) => [state, 0]));
+  for (const repair of layer.repair_register || []) repairRegisterCounts[repair.repair_state] += 1;
+  if (repairRegisterCounts.complete !== 13 || repairRegisterCounts.in_progress !== 0 || repairRegisterCounts.not_started !== 0) fail("repair_register must contain 13 complete participant repairs");
   const countsMatch = (value) => repairStates.every((state) => value?.[state] === counts[state]);
 
   const statusWord = /^(committed|approved)$/i;
@@ -164,6 +169,7 @@ if (layer) {
   if (!layerSource || !/^participant_generated/.test(layerSource.source_type || "") || layerSource.ownership !== "participant_generated") fail("AI-REVIEW-LAYER source must be explicitly participant-generated");
   if (layerSource?.manifest_listed !== layer.manifest_registration?.manifest_listed || layerSource?.provisional_manifest_registration !== layer.manifest_registration?.provisional_manifest_registration) fail("AI-REVIEW-LAYER source registration state must match the AI review layer");
   if (layerSource?.ai_review_input_summary?.open_feedback_ids?.[0] !== "F-20260825-01") fail("sources.json must carry the latest open feedback summary into review input");
+  if (layerSource?.ai_review_input_summary?.reviewed_baseline_sha256_prefix !== expectedReviewBaselineSha.slice(0, 12) || layerSource?.ai_review_input_summary?.score_total !== 84 || layerSource?.ai_review_input_summary?.previous_reviewed_baseline_score_total !== 89 || layerSource?.ai_review_input_summary?.formal_review !== false) fail("sources.json review metadata must match 84 latest and 89 previous historical baselines");
   if (!countsMatch(layerSource?.ai_review_input_summary?.repair_counts)) fail("sources.json repair counts must match the AI review layer");
 
   const compliance = readJson(path.join(packageDir, "compliance_matrix.json"));
@@ -179,6 +185,7 @@ if (layer) {
   if (complianceById["agent.4"]?.ai_review_structured_summary?.sample_status !== participantMethodCompleteStatus || complianceById["agent.4"]?.ai_review_structured_summary?.participant_complete !== true) fail("compliance_matrix.agent.4 must distinguish participant-complete sample methods from pending external evidence");
   for (const samplePath of ["visual/assets/low-disturbance-spatial-sample.json", "visual/assets/t04-ai-test-sample.json"]) if (!complianceById["agent.4"]?.ai_review_evidence?.includes(samplePath)) fail(`compliance_matrix.agent.4 must reference ${samplePath}`);
   if (!countsMatch(complianceById["agent.6"]?.ai_review_structured_summary?.repair_counts)) fail("compliance_matrix.agent.6 repair counts must match the AI review layer");
+  if (complianceById["agent.6"]?.ai_review_structured_summary?.score_total !== 84 || complianceById["agent.6"]?.ai_review_structured_summary?.previous_reviewed_baseline_score_total !== 89 || complianceById["agent.6"]?.ai_review_structured_summary?.formal_review !== false || complianceById["agent.6"]?.ai_review_structured_summary?.publication_clearance !== false) fail("compliance_matrix.agent.6 review metadata must retain historical scores and pending publication");
 
   const designDepth = readJson(path.join(packageDir, "design_depth_matrix.json"));
   for (const item of (designDepth?.items || []).filter((entry) => entry.participant_complete === false)) {
@@ -189,6 +196,7 @@ if (layer) {
   if (!depthSummaries.some((summary) => summary.sample_id === "S-LOW-DISTURBANCE-SPATIAL" && summary.status === participantMethodCompleteStatus) || !depthSummaries.some((summary) => summary.sample_id === "S-T04-AI-TEST" && summary.status === participantMethodCompleteStatus)) fail("design_depth_matrix must carry both participant-complete, external-evidence-pending sample summaries");
   if (!depthSummaries.some((summary) => summary.open_feedback_ids?.includes("F-20260825-01"))) fail("design_depth_matrix must carry the latest open feedback summary");
   if (!depthSummaries.some((summary) => countsMatch(summary.repair_counts))) fail("design_depth_matrix repair counts must match the AI review layer");
+  if (!depthSummaries.some((summary) => summary.score_total === 84 && summary.previous_reviewed_baseline_score_total === 89 && summary.formal_review === false && summary.publication_clearance === false && summary.publication_state === "pending_visual_rights_reconciliation")) fail("design_depth_matrix must carry synchronized historical review and rights metadata");
 
   const registration = layer.manifest_registration || {};
   if (registration.finalized === true) {
@@ -222,6 +230,8 @@ if (layer) {
     }
     for (const repairId of expectedRepairs) if (!new RegExp(`\\b${repairId}\\b`).test(section)) fail(`${file} must contain ${repairId}`);
     for (const state of repairStates) {
+      // external_dependency is an aggregate gate count; the frozen indexes render participant repair states only.
+      if (state === "external_dependency") continue;
       const countPattern = new RegExp(`data-repair-state=["']${state}["'][^>]*>[^<]*${counts[state]}\\b`);
       if (!countPattern.test(section)) fail(`${file} must show ${state} count ${counts[state]}`);
     }

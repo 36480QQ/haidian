@@ -2,22 +2,26 @@
   "schema_version": "1.0.0",
   "recorded_at": "2026-08-24T21:19:42+08:00",
   "audience": "maintainer_ai_review",
-  "package_publication_state": "cleared_for_declared_noncommercial_static_publication_scope",
-  "declaration_basis": "Submitter-provided collaboration roles plus local run/audit records. Exact provider, model, batch, and run fields remain null where unavailable; every shipped component has an evidence-strength and output-hash record.",
+  "package_publication_state": "pending_visual_rights_reconciliation",
+  "declaration_basis": "Submitter-provided collaboration roles plus local run/audit records. Exact provider, model, batch, and run fields remain null where unavailable. Only the two page-14 components and the cover derivative have exact Oskyi mapping; the remaining 36 component records have declared-workflow and local-hash evidence only.",
   "project_brand": {
     "working_name_zh": "京张和鸣",
     "working_name_en": "Jing-Zhang Resonance",
     "asset_paths": [
       "assets/figures/logo-direction.png",
-      "assets/figures/logo-direction.en.png"
+      "assets/figures/logo-direction.en.png",
+      "assets/brand/logo-primary.svg",
+      "assets/brand/logo-mono.svg",
+      "assets/brand/logo-reverse.svg",
+      "assets/brand/logo-usage.svg"
     ],
-    "creator_status": "participant_created_direction",
+    "creator_status": "participant_created_identity_system_v1",
     "trademark_search_status": "preliminary_exact_name_search_attempted_database_clearance_incomplete",
     "registration_status": "unknown",
     "international_semantics_review_status": "plain_language_review_complete_legal_and_market_review_pending",
     "sponsorship_or_endorsement": false,
     "public_disposition": "cleared_with_evidence_for_limited_review_scope",
-    "claim_boundary": "The working name and logo direction are participant-created concept assets cleared only for this PR and noncommercial community review; no registration, endorsement, or commercial trademark clearance is claimed."
+    "claim_boundary": "The working name and reviewable identity system v1.0 are participant-created concept assets cleared only for this PR and noncommercial community review; trademark registration, formal brand authorization, accessibility-contrast review, international-semantic review, endorsement, and commercial trademark clearance are not claimed."
   },
   "trademark_and_semantics_review": {
     "reviewed_on": "2026-08-24",
@@ -118,8 +122,8 @@
         "generated_candidate_block_count": 36,
         "explicit_per_block_provider_provenance_count": 0
       },
-      "rights_status": "declared_workflow_evidence_limited_review_scope",
-      "public_disposition": "cleared_with_evidence",
+      "rights_status": "exact_provider_run_unavailable_pending_reconciliation",
+      "public_disposition": "unresolved_pending_permission_or_replacement",
       "claim_boundary": "The Tokai label is retained as an existing participant description only; it does not prove provider, model, batch, input rights, or the origin of any specific pixel."
     },
     {
@@ -193,9 +197,9 @@
       ],
       "selection": "approved_and_locked",
       "evidence_strength": "provider_model_prompt_input_output_and_shipped_mapping_verified",
-      "rights_status": "cleared_for_declared_limited_review_scope",
-      "public_disposition": "cleared_with_evidence",
-      "claim_boundary": "The archived run and pixel matches identify one shipped Oskyi white-model/concept-edit family. The upstream Baidu screenshot is a real participant-provided spatial reference, while the Oskyi output is not site photography, survey evidence, or a factual assertion about existing conditions. The remaining shipped generated components are documented at user-declared workflow and local-artifact-hash strength in asset-rights-ledger.json; unavailable exact provider or run fields are explicit."
+      "rights_status": "exact_run_evidence_recorded_pending_final_visual_rights_reconciliation",
+      "public_disposition": "unresolved_pending_permission_or_replacement",
+      "claim_boundary": "The archived run and pixel matches identify the two page-14 components and cover derivative as one shipped Oskyi white-model/concept-edit family. The upstream Baidu screenshot is a real participant-provided spatial reference, not a redistributable source or claimed direct API input. This exact run evidence does not by itself establish publication rights, and the remaining 36 shipped generated components retain unknown provider/run fields in asset-rights-ledger.json."
     },
     {
       "id": "BMP-GPTIMAGE-N04",
@@ -270,8 +274,11 @@
     "preliminary_trademark_search_attempted": true,
     "official_register_query_completed": false,
     "trademark_clearance": false,
-    "model_provenance_complete_for_shipped_visuals": true,
-    "publication_clearance": true,
-    "claim_boundary": "Generated-component provenance is complete at the available evidence strength. Unknown provider/run fields are explicit, not inferred. AR-010 is cleared only for attributed static derivatives in the declared participant PR and noncommercial community-review scope; raw-tile and offline-basemap redistribution remain outside scope."
+    "exact_oskyi_component_record_count": 2,
+    "exact_oskyi_shipped_placement_or_derivative_count": 3,
+    "component_records_with_exact_provider_run_unavailable": 36,
+    "model_provenance_complete_for_shipped_visuals": false,
+    "publication_clearance": false,
+    "claim_boundary": "Only the two page-14 components and cover derivative have exact Oskyi provider/model/prompt/input/output/run mapping. The remaining 36 component records preserve declared-workflow and local-hash evidence with provider/run unknown; model names are provenance labels, not rights evidence. AR-010 N01 is closed by the participant-authored replacement; AR-013 remains pending reconciliation for the 36 unavailable exact provider/run mappings and their affected derivatives."
   }
 }

@@ -8,21 +8,21 @@
 
 附件含 Tokai、Oskyi、GPT-image 等生成或编辑图。它们统一按“视觉意向 / 研究表达 / 非现状 / 非测绘 / 非法定方案”使用，不得描述为现场摄影、测绘成果、已建方案或政府批准方案。
 
-逐资产或资产组盘点已经写入 `visual/assets/asset-rights-ledger.json`。AR-013 共登记 38 个生成或编辑组件；每项均保留工作流角色、批次或日期、输入权利、编辑记录、输出哈希、复用边界和证据强度。N02 白模/概念编辑系列另有 Oskyi、gpt-image-2、prompt、输入、输出和成品像素映射证据。其他组件没有精确 provider/run 的，不从目录名推断，明确保留为不可用字段。
+逐资产或资产组盘点已经写入 `visual/assets/asset-rights-ledger.json`。AR-013 共登记 38 个生成或编辑组件；每项均保留工作流角色、批次或日期、输入权利、编辑记录、输出哈希、复用边界和证据强度。仅页 14 的两个组件及其封面派生图具有精确的 Oskyi、gpt-image-2、prompt、输入、输出、run 和成品像素映射证据；其余 36 个组件没有精确 provider/run，保持 `unknown`/`null`，不从目录名或模型角色声明推断。模型名称只表示来源谱系，不构成权利证据。
 
 ## 第三方与公开资料
 
-任务书、公告、规范和国际案例仅按 `sources.json` 引用。当前包没有识别到独立的街景或案例图片文件；AR-013 生成视觉谱系已按可用证据强度闭合。AR-010 的 Esri World Imagery 静态派生图依据 Esri Master License Agreement 及官方出版/展览引用指引使用，署名为 “Sources: Esri, Vantor, Earthstar Geographics, and the GIS User Community”。包内不发布原始瓦片、离线底图包或可独立复用的源图。工作名称和 Logo 方向的正式商标审查仅在未来公开品牌使用时触发。字体单列使用 Noto Sans SC 子集，并随包保留 SIL OFL 1.1 许可文本。代码依赖审计只发现 Node.js 内置模块，没有打包第三方代码库。
+任务书、公告、规范和国际案例仅按 `sources.json` 引用。当前包没有识别到独立的街景或案例图片文件。AR-010 中来自 N04 `/export` 静态捕获的派生图已有随包 Esri item、条款摘要和引用指引快照，适用署名为 “Sources: Esri, Vantor, Earthstar Geographics, and the GIS User Community”。N01 页 13 原有瓦片服务拼接已移除，并由参与者自制抽象底板替换；该替换记录与成品哈希见 `visual/assets/asset-rights-ledger.json` 和 `visual/assets/esri-evidence-index.json`。包内不发布原始瓦片、离线底图包或可独立复用的源图。工作名称和 Logo 方向的正式商标审查仅在未来公开品牌使用时触发。字体单列使用 Noto Sans SC 子集，并随包保留 SIL OFL 1.1 许可文本。代码依赖审计只发现 Node.js 内置模块，没有打包第三方代码库。
 
 ## AI Review Layer 权利台账
 
 机器评审专用记录分为三份：`asset-rights-ledger.json` 负责来源、创作者角色、许可、工具、变换和哈希；`asset-clearance-disposition.json` 负责公开处置；`brand-model-provenance.json` 负责品牌、模型与现有 run 证据。公开处置使用 `cleared_with_evidence`、`replaced_with_cleared_asset`、`excluded_from_public_package` 和 `unresolved_pending_permission_or_replacement`；未知项不会写成已清权。
 
-本次评审包已完成资产盘点、AR-013 逐组件谱系、最终署名核对和 AR-010 静态出版许可核验。AR-010 的清权仅适用于本次参与者 PR 与非商业社区评审中的带署名静态派生图，不扩展到原始瓦片、离线底图包、自托管、商用、独立源图复用、再许可或服务商背书。未知 provider/run 不作推断；维护者复评与更广范围的发布决定仍独立进行。
+本次评审包已完成资产盘点，并保留 AR-010 的随包 Esri 证据与 AR-013 的真实 Oskyi 运行记录；AR-010 的 N01 页 13 瓦片拼接已替换为参与者自制抽象底板，当前唯一根权利缺口是 AR-013 其余 36 个组件的精确 provider/run。当前 `package_publication_state` 为 `pending_visual_rights_reconciliation`，`publication_clearance=false`；在 AR-013 证据闭合前不恢复可发布状态。维护者复评与更广范围的发布决定仍独立进行。
 
 ## 提交许可
 
-本包当前 manifest 使用 `COMMUNITY-DISPLAY-ONLY`。该许可只覆盖本项目有权处分的文字、结构、数据整理与自制视觉，不替代第三方权利人的授权。任何公开发布、商业使用、再许可或衍生传播都需按来源逐项核验。
+本包的中英文 proposal front matter 使用 `COMMUNITY-DISPLAY-ONLY`；该字段不在 manifest 中。该许可只覆盖本项目有权处分的文字、结构、数据整理与自制视觉，不替代第三方权利人的授权。任何公开发布、商业使用、再许可或衍生传播都需按来源逐项核验。
 
 ## 合规声明
 

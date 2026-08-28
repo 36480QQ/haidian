@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
-  "recorded_on": "2026-08-25",
+  "recorded_on": "2026-08-28",
   "reviewed_baseline_sha256": "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0",
   "human_content_guard": {
     "proposal_md_baseline_sha256": "d474eab08ab1f3cfa5512b338e879676627ee8e5ef38348159cbf10f542f5659",
     "proposal_en_md_baseline_sha256": "a122eb9c7a0f13fcf9c0849428e1ee2ee8a0d51fb295fd35e6a34f59eab7afa4",
-    "allowed_primary_delta": "front matter only: bilingual_contract_version",
+    "allowed_primary_delta": "front matter bilingual_contract_version plus Logo v1.0 factual update only; human narrative content remains frozen",
     "allowed_translation_delta": "five Markdown image destinations only, from Chinese core figures to their .en.png counterparts",
     "frozen_v13_sheet_count": 18,
     "frozen_chinese_core_figure_count": 5,
@@ -17,5 +17,21 @@
     "pdf_font_artifacts": "visual/assets/pdf-font-audit.json artifacts[].sha256"
   },
   "self_reference_policy": "manifest.json has no self-hash; final-hashes.json does not duplicate its own hash or the package hash.",
-  "claim_boundary": "Hash verification proves byte identity and declared deltas only; it does not prove semantic equivalence, rights clearance, professional approval, or publication readiness."
+  "claim_boundary": "Hash verification proves byte identity and declared deltas only; it does not prove semantic equivalence, rights clearance, professional approval, or publication readiness.",
+  "current_snapshot": {
+    "recorded_on": "2026-08-28",
+    "files": {
+      "drawings/a3-booklet.pdf": "1fcf63e08ed7d995e6de66001a1ab9b0e8b35bf6159d5b8746cc365ee1de3161",
+      "drawings/a0-boards.pdf": "fcba9ebb841ffcd90d23e58607b13d0341708d2e538bf847afea4017e83bd311",
+      "drawings/a3-booklet.en.pdf": "ded6d97ce3304b2d18bcbb8a8486efa9a5141f091a40a18d4fb30ba513e1f183",
+      "drawings/a0-boards.en.pdf": "d23482f4a4a7c35555f3eda83dcfb18b6608d42c8504cfc1118fe86df7500813",
+      "visual/index.html": "8059e0a4f2894654ff0ef87738aabee8775d0fb205653dd61839d08ef305bf68",
+      "visual/index.en.html": "f97e99631ba0482faf739fc971d14096865eeb264c8b74fed41a1e051c1eb086",
+      "report/proposal.html": "6108b2e32d3beb6781e1b5abf24627adcb94f83150a73c1614742390b77675e0",
+      "report/proposal.en.html": "02a7b3df9e12113f91c9f6768e380d5b5cf2d1639ff5bdd8a5a40765991045eb",
+      "assets/figures/logo-direction.png": "a5c125f1c69e488bd8d55fc11f14433928d6657e99974675bb0ab888188f4f71",
+      "assets/figures/logo-direction.en.png": "f9e36a178ac7cd1ce2d9124f43e16f0e0c6491a4c3579e534e1bf0bff53800b2"
+    },
+    "logo_fact_update": "Logo files are permitted factual updates; their current hashes supersede prior snapshot values without changing the historical baseline."
+  }
 }
