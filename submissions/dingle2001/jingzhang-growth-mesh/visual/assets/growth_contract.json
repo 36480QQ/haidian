@@ -8,6 +8,60 @@
     "independent_survival",
     "public_return"
   ],
+  "canonical_protocol": "five_states_three_spatial_engines_four_human_gates_one_public_expansion_condition",
+  "spatial_engines": [
+    {
+      "id": "ENGINE-Z",
+      "area": "zhongzhiyuan",
+      "role": "bounded_validation",
+      "spatial_object": "closable_test_court_and_observation_edge"
+    },
+    {
+      "id": "ENGINE-O",
+      "area": "ai_origin",
+      "role": "community_incubation",
+      "spatial_object": "time_shared_open_clinic_and_residency_courtyard"
+    },
+    {
+      "id": "ENGINE-D",
+      "area": "dazhongsi",
+      "role": "first_order_conversion",
+      "spatial_object": "open_ground_floor_first_order_and_compliance_interface"
+    }
+  ],
+  "human_gates": [
+    {
+      "id": "HG-01",
+      "name": "problem_release",
+      "required_signer_role": "named_problem_owner"
+    },
+    {
+      "id": "HG-02",
+      "name": "safety_release",
+      "required_signer_role": "licensed_or_authorized_professional"
+    },
+    {
+      "id": "HG-03",
+      "name": "transaction_release",
+      "required_signer_role": "demand_and_procurement_owner"
+    },
+    {
+      "id": "HG-04",
+      "name": "public_value_release",
+      "required_signer_role": "operator_professional_and_resident_co_review"
+    }
+  ],
+  "expansion_condition": "Independent-survival evidence and a net public-return package must both pass HG-04; otherwise restore the prior service and do not expand.",
+  "support_modules": {
+    "health_checks": 7,
+    "scenarios": 12,
+    "projects": 15,
+    "agents": 6,
+    "monitoring_frameworks": [
+      "NIS-Lite",
+      "EHS-Lite"
+    ]
+  },
   "release_rule": "Each gate requires minimum evidence and named human sign-off; a missing field returns the case one stage.",
   "stages": [
     {
