@@ -50,3 +50,30 @@
 3. Per the announcement's IP clause, deliverable IP is jointly held by the organisers/agents and the applicant, who retains authorship rights; this statement does not supersede that clause.
 4. `visual/index.html`, `visual/index.en.html` and `report/proposal.html` are fully offline static pages with no remote resources.
 5. If selected for deepening, the submitter agrees to licensing per the project's public open-call rules, with items 8/9 above professionally cleared at that stage.
+
+---
+
+## 品牌权利清单 / Brand Rights-Clearance Ledger
+
+> 对应条件触发事项 5.5（品牌进入对外生产/商标申请/永久导视/商业传播制作前，责任：participant）；本清单在概念阶段完成权利检索与留档。
+
+| # | 品牌要素 | 内容 | 权利状态 | 说明 |
+|---|---|---|---|---|
+| 1 | 主名称（中） | 京张·共智列车 | 原创命名 | 未注册；"京张"为地名（公用），组合词申请前须专业检索 |
+| 2 | 主名称（英） | JingZhang Co-Intelligence Express (JCE) | 原创命名 | 未注册；无已知冲突 |
+| 3 | 符号 | 车钩+正线 JZ/∞（双线环+琥珀联锁圆点） | 原创矢量（logo-mark.svg） | 自产图形，未复制历史构件/机构标识；几何参数留档 |
+| 4 | 标准色 | #16324F / #E8A13D / #8A94A0 | 通用色值 | 应用时避免与已知机构标准色混淆 |
+| 5 | 字体 | PingFang/YaHei/Noto Sans CJK（中）、Inter 方向（英） | 系统/开源（OFL） | Noto Sans SC 为 OFL 1.1；系统字体仅本地渲染，不随包再分发 |
+| 6 | 名称与导视规范 | 变体/安全区/最小尺寸/多语/状态符号 | 自产规范（brand-standards.png） | 定稿前按 5.5 复核最小尺寸与多语一致性 |
+| 7 | 活动品牌 | 车钩节/京张接口周/道口文化节 | 原创命名 | 商业化前检索 |
+| 8 | 概念渲染/封面 | seedance-*.png / cover.webp（Seedream 5.0，带水印） | 平台授权生成 | 已登记 sources.json 与版权声明第 11 项 |
+
+进入定稿前动作：①商标检索（主名称中英/JZ-∞/活动名）；②英文以 OFL 字体落地；③应用复核（最小尺寸/安全区/多语）；④更新本声明第 8/9 项状态。
+
+## 双语人工审读记录 / Bilingual Human Review Record
+
+> 对应条件触发事项 5.6（正式专业评审开展双语审读时，责任：shared）；本记录以人工逐项比较中英文正文/图件/指标/证据状态/限定语，确认实质等价。
+
+已核对 15 项：主名称（JCE 缩写一致）、共智契约三原则、三重叙事（Pride/Innovation/Co-Intelligence）、车钩=USB、车钩引进推广定论、空间结构（One Track·Three Stations·Two Wings·Switches·Crossing Stations）、首百日工作包（P01–P05 含天数）、无AI基线（same staff/site/hours）、实施责任矩阵（P01–P09 四栏）、治理协议引用（同路径）、指标体系（metrics.json 单源）、风险限定语（conceptual/not official redline/approximate）、来源状态（pending_review/background）、图件图位（.en 对应）、指标数值口径（单源一致）。
+
+发现差异 1 处：proposal.en.md L49 "Primary name" 中"English:" 表述略冗余，语义无冲突，保留；术语"争新→Innovation"采用最通用映射。机器验证 `verify_bilingual_equivalence.py`：zh 164 / en 163 markers，only_zh=NONE，only_en=NONE，章节 13=13，PASS。结论：实质等价，随包存档供正式双语审读引用。

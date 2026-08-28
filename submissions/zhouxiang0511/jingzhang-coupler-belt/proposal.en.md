@@ -284,6 +284,37 @@ The renewal projects total 21 items [metric:renewal_project_count]; all are conc
 
 Implementation policy recommendations (conceptual directions): a "application—review—testing—exit" closed loop for scenario access, open public data and open-source licensing, co-building of the developer community, and public participation and human review systems. All policy and funding arrangements are directions for deepening [source:AGENT-TASKBOOK].
 
+
+### First-100-Days Work Packages and No-AI Baseline (verifiable deliverables)
+
+No AI scenario ends at "deploying AI"; the near-term delivery is five verifiable work packages (machine-readable protocol in `visual/assets/governance-protocol.json`, audited deterministically by `verify-governance.js`):
+
+| Work package | Days | Deliverable / acceptance |
+| --- | --- | --- |
+| Base map and rights freeze | Days 1–20 | Official base map, ownership, and approval-issue checklist frozen with version archive |
+| Continuous accessible spine | Days 21–40 | Step-free route mock-up, wheelchair/stroller pass-through, and emergency-stop walk test records |
+| Three reversible demo nodes | Days 41–60 | Reinstallable prototypes ready with mechanical keys, staff post, and fixed signage |
+| No-AI baseline operation | Days 61–80 | Fixed signage + paper rules + manual scheduling form a self-sufficient public service; cancellation reasons published |
+| Shadow-mode comparison and public-interest review | Days 81–100 | AI vs no-AI baseline compared in parallel; a public-interest review panel decides keep / revise / remove |
+
+**No-AI baseline (FT-03)**: every pilot runs in parallel with a "no-AI, same staff, same site, same opening hours" baseline; AI is kept to the next round only if it proves net public value (reduced waiting, missed reporting, or repetitive labor) without lowering safety, fairness, or accessibility. If there is no net value, keep the spatial upgrade and human service and remove the model — never remove basic passage [data:visual/assets/governance-protocol.json].
+
+### Implementation Responsibility Matrix (initial projects)
+
+The 21 renewal projects are supplemented by "lead-entity type / start gate / stage acceptance / exit asset" per the protocol (entities and funding are conceptual suggestions and do not constitute confirmed arrangements):
+
+| Project | Lead type (suggested) | Cost tier | Start gate | Stage acceptance / exit asset |
+| --- | --- | --- | --- | --- |
+| P01 Base map and rights freeze | Planning—heritage joint team | L | Rights and fact review passed | Traceable base-map index; contested data kept as cleared |
+| P02 Accessible spine | Transport—park joint team | H | Route audit and fire access passed | Full-chain task passed; accessible paths and signage retained |
+| P03 Three reversible demo nodes | Public operator | M | Manual fallback fully ready | Three field tests passed; movable components withdrawn on failure |
+| P04 No-AI baseline | Public operator | L | Fixed signage / paper rules / mechanical keys ready | Baseline records published; human service retained |
+| P05 Shadow-mode review | Independent public-interest review panel | L | Appeal deadlines and public log ready | Keep / revise / remove decision; audit ledger archived |
+| P06 Coupler Plaza open-interface site | Government platform company + authorized third party | M | Data protection and human review point ready | Usage/complaint/accessibility KPIs met; uncouple on violation |
+| P07 Interlocking Tower governance experience | Government platform company | M | Interlock demo and staffed post ready | Governance-rule readability assessed; stop on state mismatch |
+| P08 Robot low-speed delivery demo | Park operator + delivery enterprise | M | Traffic-safety audit and manual takeover drill passed | Zero tolerance for incidents; stop and switch to manual on route mismatch |
+| P09 City-agent emergency drill field | Governance agency + enterprise | H | Emergency plan and interlock drill passed | Takeover within 5 minutes; review and rectify on timeout |
+
 ### Operations Ledger and Three-Year Operating Model (agent.6)
 
 Landing the 21 conceptual renewal projects into a "near/medium/long term × operating-entity type / preconditions / KPIs / feedback / maintenance / stop-and-exit" ledger (**entities and funding are all conceptual suggestions and do not constitute confirmed arrangements**) [depth:renewal_project_list]:
