@@ -4,6 +4,12 @@
   "title_en": "Three Key Areas Operating and Audit Upgrade Pack",
   "status": "conceptual_reversible_working_pack",
   "authority_boundary": "No confirmed parcel, roster, service hour, construction action, operating authorisation or official spatial control is asserted.",
+  "evidence_chain_review": {
+    "status": "independent_offline_recheck",
+    "path": "visual/assets/evidence-chain-review.json",
+    "adoption_boundary": "optional_crosswalk_concept_only",
+    "purpose": "Claim-level review aid; it records package evidence and unresolved conditions without converting design hypotheses into field evidence or implementation authorisation."
+  },
   "shared_gates": [
     {
       "id": "G0",
