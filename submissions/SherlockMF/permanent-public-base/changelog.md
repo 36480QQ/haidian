@@ -1,5 +1,13 @@
 # 方案迭代记录
 
+## v8.1 - 2026-08-28
+
+### 远端评审离线字体修复
+
+- 按 PR #4109 评审截图复现：Windows 本机系统字体掩盖了 `report/proposal*.html` 未加载离线 CJK 字体的问题；英文 visual 的“中文”切换标签也未命中已嵌入字体。
+- 先用最新官方渲染器重建双语 report HTML，再显式加载本地 `visual/assets/cjk-font.css`，并将 `P1NotoSansSC` 置于报告字体链首位；英文 visual 的中文切换标签补充 `lang="zh"` 与定向字体规则。
+- 从 Google Fonts 官方 Noto Sans SC 可变字体生成 400 字重的离线 WOFF 子集，字符集合覆盖两份 report 与两份 visual HTML；不依赖 CDN、远程字体、评审机缓存或特定系统字体。
+
 ## v8.0 - 2026-08-28
 
 ### 实施基线

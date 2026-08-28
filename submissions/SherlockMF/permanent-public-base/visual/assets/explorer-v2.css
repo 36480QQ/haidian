@@ -5,4 +5,4 @@
 @media(max-width:520px){body{font-size:15px}header,section{padding-left:18px;padding-right:18px}.hero{margin-top:88px}.hero h1{font-size:48px}.section-head h2{font-size:40px}.grid.two,.grid.three,.grid.four,.ledger,.gallery{grid-template-columns:1fr}.interactive .media{grid-template-columns:1fr}.interactive .media img{min-height:210px}.journey ol{grid-template-columns:1fr}.controls button{flex:1 1 42%}.card{padding:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 @media print{header{min-height:auto;padding:24px;color:var(--ink);background:white}header nav,.lang,.controls{display:none}section{padding:22px 0;break-inside:avoid;background:white!important}.frame,.card{box-shadow:none}.gallery{grid-template-columns:repeat(4,1fr)}body{background:white}.footer{color:var(--ink);background:white}}
-html[lang="zh"] body{font-family:P1NotoSansSC,Inter,"Segoe UI","Microsoft YaHei",sans-serif}
+html[lang="zh"] body,.lang[lang="zh"]{font-family:P1NotoSansSC,Inter,"Segoe UI","Microsoft YaHei",sans-serif}
