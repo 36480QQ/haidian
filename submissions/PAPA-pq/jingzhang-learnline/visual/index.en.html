@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jing-Zhang LEARNLINE</title>
+<style>
+:root{--teal:#123f4a;--gold:#d8a24a;--coral:#c8645a;--green:#78a887;--paper:#f5f1e8;--ink:#1a2730}
+*{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans CJK SC",sans-serif;line-height:1.55}
+header{background:var(--teal);color:white;padding:4rem max(6vw,24px) 3rem} h1{font-size:clamp(2.5rem,7vw,6rem);margin:0;letter-spacing:-.04em} .kicker{color:#f0c46d;font-weight:700;letter-spacing:.16em}
+.wrap{max-width:1500px;margin:auto;padding:2rem} .notice{border-left:7px solid var(--coral);padding:1rem 1.4rem;background:white;margin:1rem 0 2rem}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem} .metric{background:white;border-radius:18px;padding:1.3rem;box-shadow:0 8px 24px #123f4a12} .metric b{display:block;font-size:2rem;color:var(--teal)}
+.board{background:white;border-radius:24px;padding:1.2rem;margin:2rem 0;box-shadow:0 12px 35px #123f4a12} .board img{width:100%;height:auto;border-radius:14px}
+.contract{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem} .field{padding:1.2rem;border-radius:16px;background:#dde8e5;border-top:6px solid var(--gold)}
+.controls{display:flex;gap:.7rem;flex-wrap:wrap;margin:1rem 0} button{border:0;border-radius:999px;padding:.8rem 1.2rem;background:var(--teal);color:white;font-weight:700;cursor:pointer} button:focus{outline:4px solid var(--gold)}
+.scenario{display:none;padding:1rem 1.2rem;background:#fff6e5;border-left:6px solid var(--gold)} .scenario.active{display:block}
+canvas{width:100%;height:380px;background:#0d3038;border-radius:18px} .fallback{display:none} footer{padding:3rem 2rem;background:#102f37;color:white}
+@media(max-width:850px){.metrics{grid-template-columns:repeat(2,1fr)}.contract{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){canvas{display:none}.fallback{display:block}}
+</style></head><body>
+<header><div class="kicker">TEACH-BACK CITY</div><h1>LEARNLINE</h1><p>Before deployment, every urban AI project must teach back responsibility, data, human takeover, a no-AI path, exit conditions, and review results.</p></header>
+<main class="wrap"><div class="notice"><strong>Provisional-boundary notice</strong> All areas, ratios, and spatial relations use the repository provisional rough boundary. They are not official redlines or statutory controls and must be fully recalculated when official polygons arrive.</div>
+<section class="metrics" aria-label="Core metrics">
+<div class="metric" data-metric="site_area_sqm" data-value="11412825.386"><b>11.413 km²</b>provisional design model</div>
+<div class="metric" data-metric="green_ratio" data-value="0.3275"><b>32.75%</b>concept green spine</div>
+<div class="metric" data-metric="public_space_ratio" data-value="0.0433"><b>4.33%</b>course public space</div>
+<div class="metric"><b>9.54 km</b>Teach-Back Line · 3 courts · 12 points</div></section>
+<section class="board"><img src="../assets/figures/site-overview.en.png" alt="Overall LEARNLINE structure, three key areas, and course points"></section>
+<h2>Six-field Teach-Back Contract</h2><section class="contract">
+<div class="field"><b>Problem</b><br>Whose problem is addressed?</div><div class="field"><b>Minimum data</b><br>Collect less; retain briefly</div><div class="field"><b>Named reviewer</b><br>Explain and take over</div><div class="field"><b>No-AI path</b><br>Same task still works</div><div class="field"><b>Pause / exit</b><br>Publish triggers first</div><div class="field"><b>Public receipt</b><br>Review success and failure</div>
+</section>
+<h2>Interactive learning loop</h2><div class="controls"><button data-i="0">Before</button><button data-i="1">During</button><button data-i="2">Pause</button><button data-i="3">Review</button></div>
+<div class="scenario active">Register six fields; test minimum data and the no-AI path; named reviewer signs off.</div><div class="scenario">Course points display system boundaries; people can reach a human and report errors.</div><div class="scenario">At a trigger, degrade or stop; complete the task through human or basic service.</div><div class="scenario">Quarterly receipts publish outcomes, errors, pauses, and next revisions.</div>
+<canvas id="line" width="1200" height="380" aria-label="Interactive diagram of the line, three courts, and twelve course points"></canvas><div class="fallback"><img src="../assets/figures/mobility-bluegreen.en.png" alt="Static fallback of the Teach-Back Line"></div>
+<section class="board"><img src="../assets/figures/metrics-evidence.en.png" alt="Metrics and Teach-Back Contract evidence diagram"></section>
+<h2>Review index</h2><section class="audit-grid" aria-label="Package completeness index"><article><b>Overview map</b><br>One line, three courts, twelve points</article><article><b>Three-level scope</b><br>Research, overall, key areas</article><article><b>Key areas</b><br>Zhongzhiyuan, Origin, Dazhongsi</article><article><b>Land-use zoning</b><br>Six topology-safe bands</article><article><b>Mobility</b><br>9.54 km Teach-Back Line</article><article><b>Blue-green public space</b><br>32.75% and 4.33%</article><article><b>Buildings</b><br>Three conceptual interfaces</article><article><b>Renewal projects</b><br>Six actions, three phases</article><article><b>AI scenarios</b><br>Twelve course cards</article><article><b>Core metrics</b><br>Geometry-backed recomputation</article><article><b>Task coverage</b><br>All 23 requirements mapped</article><article><b>Self-check status</b><br>Authoritative in self_check.json</article><article><b>Sources</b><br>Official, cleared, provisional tiers</article><article><b>Assumptions</b><br>Recalculate after official data</article></section>
+</main><footer>This is an open co-creation reference for professional deepening. It does not replace formal planning or constitute a government decision. See self_check.json and structured files for authoritative package status.</footer>
+<script>
+const buttons=[...document.querySelectorAll('button[data-i]')],cards=[...document.querySelectorAll('.scenario')];buttons.forEach(b=>b.addEventListener('click',()=>{cards.forEach((c,i)=>c.classList.toggle('active',i===+b.dataset.i));}));
+const c=document.getElementById('line'),x=c.getContext('2d');x.fillStyle='#0d3038';x.fillRect(0,0,c.width,c.height);x.strokeStyle='#d8a24a';x.lineWidth=12;x.beginPath();for(let i=0;i<90;i++){const yy=32+i*3.55,xx=600+120*Math.sin(i*.18);i?x.lineTo(xx,yy):x.moveTo(xx,yy)}x.stroke();for(let i=0;i<12;i++){const yy=45+i*27,xx=600+120*Math.sin((i*7)*.18);x.fillStyle='#f5f1e8';x.beginPath();x.arc(xx,yy,10,0,Math.PI*2);x.fill()}[95,190,285].forEach(yy=>{x.strokeStyle='#c8645a';x.lineWidth=7;x.beginPath();x.moveTo(170,yy);x.lineTo(1030,yy);x.stroke()});
+</script></body></html>

@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, schemas, and standards snapshots."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Separates formal-ready, background-only, provisional-only, and needs-review sources."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Navigation layer only; not an independent authority."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Temporary overall-design boundary for generation and recomputation only; not an official redline."
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Temporary key-area locations only; replace when official polygons arrive."
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "publisher": "Beijing Municipal Commission of Planning and Natural Resources, Haidian Branch",
+      "accessed_date": "2026-08-27",
+      "usage": "Official project name, scope areas, tasks, and deliverable context."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent principles, six tasks, scenario, branding, operation, and boundary clauses."
+    },
+    {
+      "id": "CASE-HELSINKI",
+      "url": "https://ai.hel.fi/en/ai-register/",
+      "source_type": "official_public",
+      "publisher": "City of Helsinki",
+      "accessed_date": "2026-08-27",
+      "usage": "Mechanism comparison: public AI-system register and feedback; not spatial evidence."
+    },
+    {
+      "id": "CASE-AMSTERDAM",
+      "url": "https://algoritmeregister.amsterdam.nl/",
+      "source_type": "official_public",
+      "publisher": "City of Amsterdam",
+      "accessed_date": "2026-08-27",
+      "usage": "Mechanism comparison: public algorithm register; not spatial evidence."
+    },
+    {
+      "id": "CASE-SINGAPORE",
+      "url": "https://www.imda.gov.sg/about-imda/emerging-technologies-and-research/artificial-intelligence",
+      "source_type": "official_public",
+      "publisher": "Infocomm Media Development Authority, Singapore",
+      "accessed_date": "2026-08-27",
+      "usage": "Mechanism comparison: AI Verify testing; not spatial evidence."
+    },
+    {
+      "id": "CASE-CANADA",
+      "url": "https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html",
+      "source_type": "official_public",
+      "publisher": "Government of Canada",
+      "accessed_date": "2026-08-27",
+      "usage": "Mechanism comparison: algorithmic impact assessment; not spatial evidence."
+    },
+    {
+      "id": "CASE-NYC",
+      "url": "https://www.nyc.gov/content/oti/pages/artificial-intelligence",
+      "source_type": "official_public",
+      "publisher": "New York City Office of Technology and Innovation",
+      "accessed_date": "2026-08-27",
+      "usage": "Mechanism comparison: city AI action plan; not spatial evidence."
+    },
+    {
+      "id": "CASE-BARCELONA",
+      "url": "https://media-edg.barcelona.cat/wp-content/uploads/2017/10/24110041/Decidim_bcn_eng.pdf",
+      "source_type": "official_public",
+      "publisher": "Barcelona City Council",
+      "accessed_date": "2026-08-27",
+      "usage": "Mechanism comparison: hybrid public participation; not spatial evidence."
+    }
+  ]
+}

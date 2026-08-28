@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>京张共学线 LEARNLINE</title>
+<style>
+:root{--teal:#123f4a;--gold:#d8a24a;--coral:#c8645a;--green:#78a887;--paper:#f5f1e8;--ink:#1a2730}
+*{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans CJK SC",sans-serif;line-height:1.55}
+header{background:var(--teal);color:white;padding:4rem max(6vw,24px) 3rem} h1{font-size:clamp(2.5rem,7vw,6rem);margin:0;letter-spacing:-.04em} .kicker{color:#f0c46d;font-weight:700;letter-spacing:.16em}
+.wrap{max-width:1500px;margin:auto;padding:2rem} .notice{border-left:7px solid var(--coral);padding:1rem 1.4rem;background:white;margin:1rem 0 2rem}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem} .metric{background:white;border-radius:18px;padding:1.3rem;box-shadow:0 8px 24px #123f4a12} .metric b{display:block;font-size:2rem;color:var(--teal)}
+.board{background:white;border-radius:24px;padding:1.2rem;margin:2rem 0;box-shadow:0 12px 35px #123f4a12} .board img{width:100%;height:auto;border-radius:14px}
+.contract{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem} .field{padding:1.2rem;border-radius:16px;background:#dde8e5;border-top:6px solid var(--gold)}
+.controls{display:flex;gap:.7rem;flex-wrap:wrap;margin:1rem 0} button{border:0;border-radius:999px;padding:.8rem 1.2rem;background:var(--teal);color:white;font-weight:700;cursor:pointer} button:focus{outline:4px solid var(--gold)}
+.scenario{display:none;padding:1rem 1.2rem;background:#fff6e5;border-left:6px solid var(--gold)} .scenario.active{display:block}
+canvas{width:100%;height:380px;background:#0d3038;border-radius:18px} .fallback{display:none} footer{padding:3rem 2rem;background:#102f37;color:white}
+@media(max-width:850px){.metrics{grid-template-columns:repeat(2,1fr)}.contract{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){canvas{display:none}.fallback{display:block}}
+</style></head><body>
+<header><div class="kicker">TEACH-BACK CITY · 教回城市</div><h1>LEARNLINE</h1><p>让每个城市 AI 项目在部署前，先把责任、数据、人工接管、无 AI 路径、停用条件和复盘结果讲清楚。</p></header>
+<main class="wrap"><div class="notice"><strong>临时边界声明</strong> 本页所有面积、比例与空间关系均来自仓库临时粗略边界，不是官方红线或法定规划指标；正式图形到位后须整体复算。</div>
+<section class="metrics" aria-label="核心指标">
+<div class="metric" data-metric="site_area_sqm" data-value="11412825.386"><b>11.413 km²</b>临时设计模型</div>
+<div class="metric" data-metric="green_ratio" data-value="0.3275"><b>32.75%</b>概念绿脊</div>
+<div class="metric" data-metric="public_space_ratio" data-value="0.0433"><b>4.33%</b>课程公共空间</div>
+<div class="metric"><b>9.54 km</b>教回线 · 3座学庭 · 12课程点</div></section>
+<section class="board"><img src="../assets/figures/site-overview.png" alt="京张共学线总体空间结构、三处重点区与课程节点图"></section>
+<h2>六字段课程契约</h2><section class="contract">
+<div class="field"><b>问题</b><br>解决谁的什么问题</div><div class="field"><b>最少必要数据</b><br>不多采，不久存</div><div class="field"><b>具名人工复核人</b><br>能解释，能接管</div><div class="field"><b>无 AI 同任务路径</b><br>系统停用仍可办</div><div class="field"><b>暂停/退出条件</b><br>提前写清触发器</div><div class="field"><b>公开课程回执</b><br>成功与失败都复盘</div>
+</section>
+<h2>交互式学习环</h2><div class="controls"><button data-i="0">部署前</button><button data-i="1">运行中</button><button data-i="2">暂停/接管</button><button data-i="3">公开复盘</button></div>
+<div class="scenario active">登记六字段，检查最少数据和无 AI 路径，具名人工复核人签收。</div><div class="scenario">课程点展示系统边界，公众能找到人工联系人并提交纠错。</div><div class="scenario">触发阈值后降级或停用，以人工或基础服务完成同一任务。</div><div class="scenario">季度回执公开效果、错误、停用与下一轮修改。</div>
+<canvas id="line" width="1200" height="380" aria-label="教回线、三座学庭和十二个课程点的交互示意"></canvas><div class="fallback"><img src="../assets/figures/mobility-bluegreen.png" alt="教回线静态替代图"></div>
+<section class="board"><img src="../assets/figures/metrics-evidence.png" alt="指标与课程契约证据图"></section>
+<h2>评审索引</h2><section class="audit-grid" aria-label="方案完整性索引"><article><b>总览地图</b><br>一线、三庭、十二点</article><article><b>三层范围</b><br>研究、总体、重点</article><article><b>重点区域</b><br>众智园、原点、大钟寺</article><article><b>用地分区</b><br>六类拓扑完整分区</article><article><b>交通慢行</b><br>9.54公里教回线</article><article><b>蓝绿公共空间</b><br>32.75%与4.33%</article><article><b>建筑</b><br>三处概念更新界面</article><article><b>更新项目</b><br>六项行动与三阶段</article><article><b>AI 场景</b><br>十二张课程场景卡</article><article><b>核心指标</b><br>几何同源复算</article><article><b>任务覆盖</b><br>23项任务全覆盖</article><article><b>自检状态</b><br>以self_check.json为准</article><article><b>来源</b><br>官方、清权、临时分级</article><article><b>假设</b><br>正式数据到位后复算</article></section>
+</main><footer>本方案为开放共创建议，可供专业团队深化研究；不替代正式规划，不构成政府审定结论。权威状态请以 self_check.json 与结构化文件为准。</footer>
+<script>
+const buttons=[...document.querySelectorAll('button[data-i]')],cards=[...document.querySelectorAll('.scenario')];buttons.forEach(b=>b.addEventListener('click',()=>{cards.forEach((c,i)=>c.classList.toggle('active',i===+b.dataset.i));}));
+const c=document.getElementById('line'),x=c.getContext('2d');x.fillStyle='#0d3038';x.fillRect(0,0,c.width,c.height);x.strokeStyle='#d8a24a';x.lineWidth=12;x.beginPath();for(let i=0;i<90;i++){const yy=32+i*3.55,xx=600+120*Math.sin(i*.18);i?x.lineTo(xx,yy):x.moveTo(xx,yy)}x.stroke();for(let i=0;i<12;i++){const yy=45+i*27,xx=600+120*Math.sin((i*7)*.18);x.fillStyle='#f5f1e8';x.beginPath();x.arc(xx,yy,10,0,Math.PI*2);x.fill()}[95,190,285].forEach(yy=>{x.strokeStyle='#c8645a';x.lineWidth=7;x.beginPath();x.moveTo(170,yy);x.lineTo(1030,yy);x.stroke()});
+</script></body></html>
