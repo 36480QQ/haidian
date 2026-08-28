@@ -29,4 +29,4 @@
 
 ## 离线网页字体
 
-为保证中英 HTML 在无系统中文字体、无网络的评审环境中稳定显示，提交包在 `visual/assets/common-time-font.css` 中内嵌了仅覆盖本方案网页所需字符的 `Noto Sans SC` 可变字体子集。原字体来自 Google 维护的 Noto CJK 官方仓库并按 `SIL Open Font License 1.1` 发布；完整许可文本保留在该 CSS 的可读文件头中。子集化只删除未使用字形，不改变字体许可，也不表示字体作者认可本方案。
+为保证中英 HTML 在无系统中文字体、无网络的评审环境中稳定显示，提交包在 `visual/assets/common-time-font.css` 中以合法的单行 data URL 内嵌仅覆盖本方案网页所需字符的 `Noto Sans SC` 可变字体子集。原字体来自 Google 维护的 Noto CJK 官方仓库并按 `SIL Open Font License 1.1` 发布；完整许可文本保留在该 CSS 的可读文件头中。子集化只删除未使用字形，不改变字体许可，也不表示字体作者认可本方案。单行编码避免多行 CSS 字符串在干净浏览器中失效，也避免系统字体回退掩盖加载错误。

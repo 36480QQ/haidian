@@ -83,7 +83,7 @@ version: "14.0.0-evidence-balance"
 | 文化导视 | 证据票据、方向标、版本日期、勘误入口 | 事实、解释、拟议设施分层 | 不复制机车、钟体、校徽、企业 Logo 或伪遗产 |
 | 活动品牌 | COMMON TIME CYCLE | 每次活动显示问题业主、阶段门、后续责任和事实状态 | 不把设想活动写成政府确定日程 |
 
-字体方向采用系统可用的中性无衬线字体与开放授权替代，不在投稿包中分发字体文件；图形优先黑白可识别、色盲友好和低墨印刷。实景照片、分析图、概念效果图继续分栏并保留来源/生成状态。文化标识与一带总体 Logo 不混同。[source:AGENT-TASKBOOK]
+字体方向采用中性无衬线字体与开放授权替代；为保证无网络、无系统中文字体的评审环境可读，离线 HTML 在 `visual/assets/common-time-font.css` 中以合法的单行 data URL 内嵌 `Noto Sans SC` 可变字体子集，并在同一文件头保留完整 `SIL Open Font License 1.1`。图形优先黑白可识别、色盲友好和低墨印刷。实景照片、分析图、概念效果图继续分栏并保留来源/生成状态。文化标识与一带总体 Logo 不混同。[source:AGENT-TASKBOOK]
 
 ### 3. 最小国际传播副本
 
@@ -339,7 +339,7 @@ DR-01 是附属于 90 日 MVP 的合成单元测试，不是空间概念、现�
 
 #### 6. 官方边界发布后的整包重算
 
-截至 2026-08-20，官方仓库 `main@362986d3040b98891d8f99b07f25b2dd165cb3fa` 的 geometry 目录仍只有临时粗略边界、依据说明和研究框；数据明确标记 `official_boundary=false`，因此本包任何面积、比例、位置和剖面都不是法定结果。[source:OFFICIAL-CURRENT-REPO-GEOMETRY-20260820]
+截至 2026-08-20，官方仓库快照 `d1ff9415abb4b0d916757f65658e7d77f5c91697` 的 geometry 目录仍只有临时粗略边界、依据说明和研究框；该精确哈希与 [source:OFFICIAL-CURRENT-REPO-GEOMETRY-20260820] 的快照 URL 一致。数据明确标记 `official_boundary=false`，因此本包任何面积、比例、位置和剖面都不是法定结果。[source:OFFICIAL-CURRENT-REPO-GEOMETRY-20260820]
 
 官方范围、重点区、宗地、道路/河道/绿线或文保控制任一发布即触发十步重算：①冻结来源、许可、发布日期与 SHA-256；②确认 CRS/垂直基准/精度；③保留原始层并生成投影副本；④做拓扑、空值、重叠与范围检查；⑤裁切和重算全部 GeoJSON 指标；⑥重新标注仍未知的法定/专业门；⑦重绘双语 PNG、四份 PDF 与两份 HTML；⑧更新 `metrics/sources/assumptions/manifest/self_check`；⑨由未参与计算者独立复算；⑩发布逐项差异和 `GO/HOLD/PIVOT/RETIRE` 决定。所有图面在复算完成前继续显示 provisional 声明。当前状态：`RECALCULATION SOP READY / OFFICIAL GEOMETRY PENDING`。[metric:official_geometry_recalculation_step_count]
 
@@ -560,7 +560,7 @@ CT-02、03、06、10 是四个受控 testbed [metric:industry_testbed_count]。�
 | OpenStreetMap 背景 | 按 ODbL 归属的 C 级公开背景 | 仅表达低权威关系，不是官方 GIS、地籍、测绘或工程核验 |
 | AI 概念效果图 | 本项目生成，已标“AI 生成、非现状、非官方、待测绘核验” | 不可用于证明已建、实景、尺寸、权属或审批 |
 | 官方/机构公开资料 | 摘要引用并回链 `sources.json` | 不整部复制，不把政策语言写成本项目授权、资助或承诺 |
-| 字体 | 投稿包不分发字体文件 | 正式出版前需确认嵌入许可或用开放字体替换，并做机检与人工检查 |
+| 字体 | CSS 以单行 data URL 内嵌 `Noto Sans SC` 可变字体子集；按 `SIL Open Font License 1.1` 使用，许可全文位于同一文件头 | 对外复制时保留字体许可与来源说明；每次导出后做字体加载机检和人工可读性检查 |
 | 双语与工具输出 | 中英内容按同一事实状态编辑；工具输出保留溯源 | 不把工具许可理解为内容来源批准；正式外发前仍待双语规划编辑和人工事实复核 |
 
 所有空间、政策、运营、活动和品牌动作均为概念建议、参考方案或供专业团队深化研究的工作框架；不构成政府审定、专业批准、投资、建设、采购、招商、运营或活动承诺。
