@@ -10,36 +10,43 @@
     },
     {
       "assumption_id": "A-CONTROLS-001",
-      "statement_zh": "低碳绿色创新环境涉及的绿地蓝线、文物保护与建设控制条件未知，本方案不给出任何具体数值结论，仅保留概念口径的示意。",
-      "statement_en": "Statutory protection and control conditions are unknown; this proposal keeps concept-level indications only.",
+      "statement_zh": "绿地蓝线、文物保护与建设控制条件未知，本方案不给出任何具体数值结论，仅保留概念口径的示意；相关管控条件属于组织方数据缺口，未虚构。",
+      "statement_en": "Statutory protection and control conditions are unknown; this proposal keeps concept-level indications only; the gap is organizer-side and is not fabricated.",
       "category": "statutory_control",
       "status": "accepted_limitation"
     },
     {
+      "assumption_id": "A-TM-001",
+      "statement_zh": "品牌在先权利：概念阶段未完成官方商标检索，「视觉识别智环」「VIS·JZ」及节点名称一律按内部工作代号处理，限制对外使用与注册，待在先权利检索与正式评选确定后评估；本方案不作「不涉及商标」类自证声明。",
+      "statement_en": "Trademark position: no official trademark search at concept stage; all names and marks are internal working codenames, restricted from external use and registration until clearance; no bare 'no trademark involved' self-declaration is made.",
+      "category": "trademark_prior_rights",
+      "status": "accepted_limitation"
+    },
+    {
       "assumption_id": "A-DATA-001",
-      "statement_zh": "碳核算与能耗口径仅作概念性公共数据服务方向建议，不替代官方统计，不涉及任何真实个体信息与实测数据。",
-      "statement_en": "Carbon accounting is a concept-level public data service suggestion, not official statistics or measured data.",
+      "statement_zh": "全部指标为参与者临时模型数据，非权威数据；与公告口径一致处按公告自算、非官方核发；官方数据发布后整体复算并标注复算版本。",
+      "statement_en": "All metrics are participant provisional model data, not authoritative data; statements consistent with the announcement are self-calculated; full recalculation follows official data release.",
       "category": "data_boundary",
       "status": "accepted_limitation"
     },
     {
       "assumption_id": "A-DESIGN-001",
-      "statement_zh": "主视台、导视廊与叙视厅三节点均为原创概念建议，模块化可逆，不构成建设承诺。",
-      "statement_en": "All node facilities are original reversible conceptual proposals, not construction commitments.",
+      "statement_zh": "主视台、导视廊与叙视厅三节点均为原创概念建议，模块化可逆，不构成建设承诺；可逆公共空间组件库与荣誉展示系统为概念性机制建议。",
+      "statement_en": "The three nodes are original reversible conceptual proposals, not construction commitments; the reversible component library and honor display system are concept-level mechanisms.",
       "category": "design_proposal",
       "status": "concept"
     },
     {
       "assumption_id": "A-PRIVACY-001",
-      "statement_zh": "碳排感知与公众参与仅提供匿名聚合与人工复核兜底，不设个体识别采集，不设无法人工终止的自动决定。",
-      "statement_en": "Carbon sensing and public participation process anonymized aggregates only, with human review as backstop.",
+      "statement_zh": "视觉识别专项的 AI 场景仅提供匿名聚合与人工复核兜底：仅匿名聚合数据、关键决策人工复核、禁止过度监控（不进行个体识别式追踪（含视觉识别）），不设无法人工终止的自动决定。",
+      "statement_en": "AI scenarios process anonymized aggregates only, with human review of key decisions and no excessive monitoring (no individual-identification tracking, including visual recognition); no auto-decision without human termination.",
       "category": "privacy",
       "status": "concept"
     },
     {
       "assumption_id": "A-EVENT-001",
-      "statement_zh": "低碳开放日、低碳市集与绿环骑行季等均为建议性设计，不代表已确定的政府安排或投资承诺。",
-      "statement_en": "The event system and phasing are design suggestions, not confirmed government or investment commitments.",
+      "statement_zh": "视觉识别开放日、视觉体验周、季度导视更新通报与叙视厅文化节等年度活动均为建议性设计，不代表已确定的政府安排或投资承诺。",
+      "statement_en": "The annual programme system and phasing are design suggestions, not confirmed government or investment commitments.",
       "category": "operation",
       "status": "concept"
     }

@@ -13,6 +13,7 @@
       "authority_level": "A0",
       "timeliness_level": "T0",
       "public_access_status": "public_local_snapshot",
+      "license": "official_public_snapshot",
       "license_summary": "Official public announcement snapshot retained for reference and citation.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -54,6 +55,7 @@
       "authority_level": "CLEARED_USER_DOCUMENT",
       "timeliness_level": "T0",
       "public_access_status": "cleared_for_repo",
+      "license": "cleared_user_document",
       "license_summary": "User provided this document for repository use and public agent-facing task alignment.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -98,6 +100,7 @@
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "official_public_snapshot",
       "license_summary": "Official public standard/policy page snapshot retained for reference and citation.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -127,12 +130,13 @@
       "publisher": "中华人民共和国住房和城乡建设部",
       "source_kind": "official_standard",
       "url": "https://www.gov.cn/zhengce/2022-01/25/content_5711967.htm",
-      "published_date": null,
+      "published_date": "2022-01-25",
       "accessed_date": "2026-06-03",
       "file_type": "markdown",
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "official_public_snapshot",
       "license_summary": "Official public government page snapshot retained for reference and citation.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -166,6 +170,7 @@
       "authority_level": "A0",
       "timeliness_level": "T2",
       "public_access_status": "public_local_snapshot",
+      "license": "official_public_snapshot",
       "license_summary": "Official public government page snapshot retained for reference and citation.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -198,6 +203,7 @@
       "authority_level": "PROVISIONAL_REPOSITORY",
       "timeliness_level": "T0",
       "public_access_status": "provisional_repository",
+      "license": "provisional_repository_data",
       "license_summary": "Repository-maintained provisional geometry for intake testing and visualization only.",
       "review_status": "provisional",
       "usable_for_formal": "provisional_only",
@@ -246,6 +252,7 @@
       "authority_level": "A0",
       "timeliness_level": "T1",
       "public_access_status": "public_local_snapshot",
+      "license": "official_public_snapshot",
       "license_summary": "Official public government text; attributed Markdown snapshot retained for reference. No reuse permission is inferred for page chrome, images or third-party editorial content; any reuse remains subject to official terms.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -283,6 +290,7 @@
       "authority_level": "A0",
       "timeliness_level": "T1",
       "public_access_status": "public_local_snapshot",
+      "license": "official_public_snapshot",
       "license_summary": "Official public government text; attributed Markdown snapshot retained for reference. No reuse permission is inferred for page chrome, images or third-party editorial content; any reuse remains subject to official terms.",
       "review_status": "approved",
       "usable_for_formal": "yes",
@@ -306,6 +314,222 @@
       "notes_zh": "法律于 2023-06-28 通过（人大常委会通过/公布），gov.cn/Xinhua 页面于 2023-06-29 发布；2023-09-01 起施行。第39条的现场指导、人工办理边界仅限正文列举的医疗、社会保障、金融、生活缴费等服务事项公共服务场所，不能泛化为所有公共空间或数字界面。快照仅供离线检索，具体场所合规仍需单独判断。"
     },
     {
+      "source_id": "CASE-TFL-ROUNDEL",
+      "title": "Transport for London - the Roundel (corporate identity)",
+      "publisher": "Transport for London",
+      "source_kind": "public_case_reference",
+      "url": "https://tfl.gov.uk/corporate/about-tfl/",
+      "published_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_web_reference_fair_use",
+      "license_summary": "Public official page used as a case reference with attribution; no page assets are copied into this package.",
+      "review_status": "reference_only",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "case study narrative and lesson extraction",
+        "attribution in the case table"
+      ],
+      "prohibited_uses": [
+        "copying official logos or page assets",
+        "claiming endorsement by Transport for London"
+      ],
+      "topics": [
+        "global_case",
+        "city_identity",
+        "wayfinding"
+      ],
+      "notes_zh": "伦敦交通局 Roundel 案例；页面未标注具体发布日期，发布栏记录获取日期，引用时以获取日期为准。"
+    },
+    {
+      "source_id": "CASE-LEGIBLE-NYC",
+      "title": "Legible NYC - pedestrian wayfinding programme",
+      "publisher": "New York City Department of Transportation",
+      "source_kind": "public_case_reference",
+      "url": "https://www.nyc.gov/html/dot/html/pedestrians/legible-nyc.shtml",
+      "published_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_web_reference_fair_use",
+      "license_summary": "Public official page used as a case reference with attribution; no page assets are copied into this package.",
+      "review_status": "reference_only",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "case study narrative and lesson extraction",
+        "attribution in the case table"
+      ],
+      "prohibited_uses": [
+        "copying official graphics or page assets",
+        "claiming endorsement by NYC DOT"
+      ],
+      "topics": [
+        "global_case",
+        "city_wayfinding"
+      ],
+      "notes_zh": "纽约市 Legible NYC 案例；发布栏记录获取日期，引用时以获取日期为准。"
+    },
+    {
+      "source_id": "CASE-TOKYO-METRO",
+      "title": "Tokyo Metro - signage and multilingual guidance",
+      "publisher": "Tokyo Metro Co., Ltd.",
+      "source_kind": "public_case_reference",
+      "url": "https://www.tokyometro.jp/en/",
+      "published_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_web_reference_fair_use",
+      "license_summary": "Public official page used as a case reference with attribution; no page assets are copied into this package.",
+      "review_status": "reference_only",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "case study narrative and lesson extraction",
+        "attribution in the case table"
+      ],
+      "prohibited_uses": [
+        "copying official graphics or page assets",
+        "claiming endorsement by Tokyo Metro"
+      ],
+      "topics": [
+        "global_case",
+        "rail_wayfinding",
+        "multilingual"
+      ],
+      "notes_zh": "东京地铁导视案例；发布栏记录获取日期，引用时以获取日期为准。"
+    },
+    {
+      "source_id": "CASE-PUNGGOL-DIGITAL-DISTRICT",
+      "title": "Punggol Digital District - AI district development (JTC/LTA)",
+      "publisher": "JTC Corporation; Land Transport Authority of Singapore",
+      "source_kind": "public_case_reference",
+      "url": "https://www.jtc.gov.sg/",
+      "published_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_web_reference_fair_use",
+      "license_summary": "Public official pages used as case references with attribution; no page assets are copied into this package.",
+      "review_status": "reference_only",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "case study narrative and lesson extraction",
+        "attribution in the case table"
+      ],
+      "prohibited_uses": [
+        "copying official graphics or page assets",
+        "claiming endorsement by JTC or LTA"
+      ],
+      "topics": [
+        "global_case",
+        "ai_district",
+        "wayfinding_integration"
+      ],
+      "notes_zh": "新加坡榜鹅数码园区案例（JTC/LTA 公开页）；发布栏记录获取日期。"
+    },
+    {
+      "source_id": "CASE-KENDALL-SQUARE",
+      "title": "Kendall Square Association - innovation ecosystem district",
+      "publisher": "Kendall Square Association",
+      "source_kind": "public_case_reference",
+      "url": "https://www.kendallsquare.org/",
+      "published_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_web_reference_fair_use",
+      "license_summary": "Public district association page used as a case reference with attribution; no page assets are copied into this package.",
+      "review_status": "reference_only",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "case study narrative and lesson extraction",
+        "attribution in the case table"
+      ],
+      "prohibited_uses": [
+        "copying official graphics or page assets",
+        "claiming endorsement by Kendall Square Association"
+      ],
+      "topics": [
+        "global_case",
+        "ai_ecosystem",
+        "district_identity"
+      ],
+      "notes_zh": "波士顿肯德尔广场案例；发布栏记录获取日期。"
+    },
+    {
+      "source_id": "CASE-QUAYSIDE-TORONTO",
+      "title": "Waterfront Toronto - Quayside project history and governance lessons",
+      "publisher": "Waterfront Toronto",
+      "source_kind": "public_case_reference",
+      "url": "https://www.waterfrontoronto.ca/",
+      "published_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
+      "file_type": "web",
+      "authority_level": "PUBLIC_REFERENCE",
+      "timeliness_level": "T1",
+      "public_access_status": "public_web",
+      "license": "public_web_reference_fair_use",
+      "license_summary": "Public waterfront agency page used as a case reference with attribution; no page assets are copied into this package.",
+      "review_status": "reference_only",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": [
+        "case study narrative and governance lesson extraction",
+        "attribution in the case table"
+      ],
+      "prohibited_uses": [
+        "copying official graphics or page assets",
+        "claiming endorsement by Waterfront Toronto"
+      ],
+      "topics": [
+        "global_case",
+        "ai_district_governance",
+        "stop_exit_lessons"
+      ],
+      "notes_zh": "多伦多滨水区 Quayside 项目作为 AI 创新区治理教训（决策门控、公开评估、退出中止）的公开案例索引；发布栏记录获取日期。"
+    },
+    {
+      "source_id": "DATA-SRC-TRADEMARK-STATUS-20260820",
+      "title": "品牌在先权利检索状态记录（概念阶段）",
+      "publisher": "Participant self-record (JohnXu22786)",
+      "source_kind": "participant_self_record",
+      "url": "report/copyright_statement.md",
+      "published_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
+      "file_type": "markdown",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "participant_self_record",
+      "license_summary": "Participant's own status record; not a legal opinion or a completed trademark search.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "self_record",
+      "allowed_uses": [
+        "documenting that no official trademark search was completed at concept stage",
+        "restricting names and marks to internal working codenames until clearance"
+      ],
+      "prohibited_uses": [
+        "claiming trademark clearance or registration rights",
+        "claiming prior-rights clearance for any name or mark"
+      ],
+      "topics": [
+        "trademark",
+        "prior_rights",
+        "risk"
+      ],
+      "notes_zh": "概念阶段未完成官方商标检索；「视觉识别智环」「VIS·JZ」及节点名称一律按内部工作代号处理，限制对外使用与注册，待在先权利检索与正式评选确定后评估。"
+    },
+    {
       "source_id": "PACKAGE-GEOMETRY",
       "title": "本方案 geometry 层(provisional 概念设计)",
       "publisher": "JohnXu22786 / dsh-haidian-agent",
@@ -317,6 +541,7 @@
       "authority_level": "SELF-DECLARED",
       "timeliness_level": "T0",
       "public_access_status": "cleared_for_repo",
+      "license": "participant_original",
       "license_summary": "Original AI-generated design geometry, free for repository display.",
       "review_status": "self_reviewed",
       "usable_for_formal": "provisional_only",

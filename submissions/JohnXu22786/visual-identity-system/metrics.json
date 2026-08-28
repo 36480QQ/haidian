@@ -75,6 +75,20 @@
       "confidence": "low",
       "assumptions": []
     },
+    "land_use_park_green_share": {
+      "status": "known",
+      "value": 0.2731,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "sum(1401 area) / total land-use polygon area (single caliber A)",
+      "confidence": "medium",
+      "assumptions": [
+        "Caliber A: land-use classification share; differs from green_ratio (caliber B) by statistical object; both recalculated after official data."
+      ]
+    },
     "road_network_length_m": {
       "status": "known",
       "value": 10154.351,
@@ -99,7 +113,7 @@
     },
     "land_use_zone_count": {
       "status": "known",
-      "value": 24,
+      "value": 27,
       "unit": "count",
       "source_files": [
         "geometry/land_use.geojson"
@@ -143,12 +157,23 @@
     },
     "industry_test_scenario_count": {
       "status": "known",
-      "value": 3,
+      "value": 5,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(industry_validation scenario cards)",
+      "formula": "count(industry test protocol rows in proposal.md)",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(scenario card rows in proposal.md)",
       "confidence": "high",
       "assumptions": []
     },
@@ -165,7 +190,7 @@
     },
     "global_case_count": {
       "status": "known",
-      "value": 4,
+      "value": 6,
       "unit": "count",
       "source_files": [
         "proposal.md",
@@ -188,12 +213,12 @@
     },
     "annual_program_count": {
       "status": "known",
-      "value": 3,
+      "value": 4,
       "unit": "count",
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(annual event system)",
+      "formula": "count(annual programme rows in proposal.md)",
       "confidence": "high",
       "assumptions": []
     }
