@@ -41,7 +41,49 @@
       "id": "AGENT-TASKBOOK",
       "path": "brief/site-package/agent_taskbook.json",
       "source_type": "user_provided_cleared",
-      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements,  and boundary clause."
+    },
+    {
+      "id": "REF-HELSINKI",
+      "url": "https://www.hel.fi/en",
+      "source_type": "official_public",
+      "usage": "Helsinki open-data + AI experimentation city reference (Scenario 08 Data-Element Reception Hall). Public municipal portal; content used for conceptual reference only, no government commitment or implementation arrangement."
+    },
+    {
+      "id": "REF-AMSTERDAM",
+      "url": "https://www.amsterdam.nl",
+      "source_type": "official_public",
+      "usage": "Amsterdam City AI Agreement + fair-algorithm reference (Scenario 04 accessibility/fairness boundary). Public municipal portal; conceptual reference only."
+    },
+    {
+      "id": "REF-BARCELONA",
+      "url": "https://www.barcelona.cat",
+      "source_type": "official_public",
+      "usage": "Barcelona Superblocks + public-space digital-twin reference (blue-green slow-traffic loop). Public municipal portal; conceptual reference only."
+    },
+    {
+      "id": "REF-SEOUL",
+      "url": "https://data.seoul.go.kr",
+      "source_type": "official_public",
+      "usage": "Seoul smart-mobility + global AI events reference (Scenario 04 + Global AI Activity Week route). Public open-data portal; conceptual reference only."
+    },
+    {
+      "id": "REF-MONTREAL",
+      "url": "https://montrealdeclaration-responsibleai.com",
+      "source_type": "official_public",
+      "usage": "Montreal Declaration on Responsible AI (birthplace reference for safety-governance sandbox responsibility boundary + human takeover). Public declaration; conceptual reference only."
+    },
+    {
+      "id": "REF-SINGAPORE",
+      "url": "https://www.smartnation.gov.sg",
+      "source_type": "official_public",
+      "usage": "Singapore Smart Nation + edge-computing reference (Scenario 03 edge-computing station). Public government portal; conceptual reference only."
+    },
+    {
+      "id": "ASSET-FONTS",
+      "path": "visual/index.html, report/proposal.html, report/proposal.en.html, drawings/*",
+      "source_type": "original_or_open_license",
+      "usage": "All brand figures, logos, palette, and type stack are original to this proposal or use OFL-licensed open-source fonts (Source Han Sans / LXGW WenKai) and system-bundled fonts (PingFang SC / Microsoft YaHei / Noto Sans CJK SC). No third-party brand, portrait, or image is embedded without clearance; usage rights asserted in copyrights/copyright_statement.md."
     }
   ],
   "source_type_legend": {

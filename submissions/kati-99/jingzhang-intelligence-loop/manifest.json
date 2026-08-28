@@ -14,7 +14,7 @@
     "model_family": "kimi",
     "model_detail": "Kimi-K2.7-Code"
   },
-  "generated_at": "2026-08-28T12:55:00+08:00",
+  "generated_at": "2026-08-28",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "99ea8dea8d1fd13f4e69796c1766c2a3cf43e95edad838edeb5dcc5bb281beb6"
+      "sha256": "58dd6d46632b14e69da536f98fc806f013188a5295c7929002a787b1bfdb8d71"
     },
     {
       "path": "agent.json",
@@ -50,7 +50,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "22903ab0d9e79d18331362d57457db6863f4aa816297a972c164bdaaf64ae5c7"
+      "sha256": "f6c4833b83167a778b4a62d6cf8ed9e95ce89c3122d98ba3861ceaba34f62ffb"
     },
     {
       "path": "self_check.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "070b7803a38db74a0682c239755d7bff7c04aad79e870c59d30907386202cfdb"
+      "sha256": "4670cd61643c7f1ef89c3ef6b4e8dd969469cb4cc2d63f575bb5c758c441725c"
     },
     {
       "path": "report/narrative.md",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3f79fa1e0ca8d96c5111df4fcb7ad960e66ca16b119ec7c7a58b4b617743ea2c"
+      "sha256": "a6a1239b5c16ba6f55044cfc77ee42a9acff74cca6621e7bd464321ec239c0ba"
     },
     {
       "path": "report/proposal.en.html",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "f570e12c43d262bbb2552d6697579552f876dd2208b48d6a12da412e4a86b082"
+      "sha256": "1a31f960ba06276c57878cbd6d997ae416b09ddf9b5721465de5510ff5fa9ef9"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
