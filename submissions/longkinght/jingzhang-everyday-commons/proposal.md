@@ -11,7 +11,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以三站五段组织一条可理解、可选择、可回退、可复核的 AI 日常公共路径，用共轨协议和人机共生场景连接技术供给、普通人体验与公共反馈。"
 tracks: ["ai-traffic-walkability", "civic-agent-governance", "enterprise-services-ecosystem"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.1"
+iteration: "v1.2"
 ---
 
 # 京张共用日常：从看见 AI 到共用 AI 的公共路径
@@ -82,6 +82,18 @@ Barcelona 市政府的 22@ 创新枢纽说明、Helsinki 市政府 AI Register �
 总体结构为“**三站五段**”：众智园是验证站，AI 原点社区是共用站，大钟寺是转化站；五段为轨道到达、遗址公园、社区日常、园区工作和公共体验 [data:geometry/roads.geojson#JZ-ROUTE-001] [depth:overall_spatial_structure]。
 
 三区两翼是总体研究范围的协同层：AI 原点社区承接世界级创新生态，众智园承接全栈自主创新与治理验证，大钟寺承接智能原生新业态；中关村科技服务翼提供要素全球化配置与 IP/资本赋能，小月河场景赋能翼把 AI 场景开放到日常公共体验。三处重点区与两翼通过“三站五段”形成概念协同回路，不代表正式边界、权属或已确定的运营安排 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure]。
+
+任务书同时点名北纬社区、未来科学城、怀柔科学城、经开区及京津冀的创新协同 [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]。本案不虚构已经存在的协议，而把它们写成下一阶段可由专业团队逐项核验的**区域协同接口**：每一项都说明建议连接、可交换内容、空间/运营接口和待确认缺口；在边界、主体、权限、数据与资源落实前，均不得表述为已签约、已立项或已确定安排。
+
+| 区域对象 | 与三站/两翼的建议连接 | 建议交换内容 | 空间或运营接口 | 依据与待确认事项 |
+|---|---|---|---|---|
+| 北纬社区 | AI 原点社区 / 共用站 | 社区需求、适老与低数字服务反馈 | 共生门牌样表、人工回退清单、社区共读接口 | 任务书点名对象；边界、参与主体与合作方式待确认 |
+| 未来科学城 | 众智园 / 验证站 | 科研成果的公共解释、可测试场景与失败记录 | 证据工坊、能力限制牌、受控验证登记接口 | 任务书点名对象；机构、项目、数据和授权待确认 |
+| 怀柔科学城 | 众智园 + 中关村科技服务翼 | 科学设施成果转译、公众理解与开放方法 | 双语证据摘要、访问前说明、人工讲解接口 | 任务书点名对象；开放范围、版权和安全边界待确认 |
+| 经开区 | 大钟寺 / 转化站 | 产品首次使用、制造场景反馈与安全退出规则 | 可撤回体验桌、版本状态牌、异常回执接口 | 任务书点名对象；产品、场地、测试许可与责任待确认 |
+| 京津冀 | 三站五段 / 协同网络 | 可复用协议、双语案例与公共 AI 空间方法 | 共用日常周、开放方法包、退场档案交换接口 | 任务书点名对象；城市伙伴、周期、资金与发布机制待确认 |
+
+![区域协同接口矩阵：五个外部对象、建议接口与待确认缺口](assets/figures/regional-coordination-interfaces.png)
 
 ![三区两翼—三站五段—协同网络](assets/figures/three-zones-two-wings-network.png)
 

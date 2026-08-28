@@ -11,7 +11,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Three stations and five segments form an understandable, optional, reversible and reviewable everyday AI path, using the Co-Track Protocol and Human–AI Symbiotic Scenarios to connect technology supply, public use and feedback."
 tracks: ["ai-traffic-walkability", "civic-agent-governance", "enterprise-services-ecosystem"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.1"
+iteration: "v1.2"
 ---
 
 # Jingzhang Everyday Commons: A Public Path from Seeing AI to Sharing AI
@@ -82,6 +82,18 @@ There is always a human path beside AI. The same loop also enters the Co-Track P
 The overall structure is **three stations and five segments**: Zhongzhiyuan is the Verification Station, AI Origin Community is the Commons Station, and Dazhongsi is the Conversion Station. The five segments are rail arrival, heritage park, community daily life, campus/work and public experience [data:geometry/roads.geojson#JZ-ROUTE-001] [depth:overall_spatial_structure].
 
 The three zones and two wings form the collaboration layer of the wider study area: AI Origin Community carries a world-class innovation ecosystem, Zhongzhiyuan carries full-stack autonomy and governance testing, and Dazhongsi carries intelligent-native new formats. The Zhongguancun Technology Services Wing provides global factor allocation and IP/capital enablement; the Xiaoyue River Scenario Enablement Wing opens AI scenarios to everyday public experience. The three key areas and two wings connect through the three-station, five-segment concept loop; this does not represent official boundaries, ownership or confirmed operations [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] [depth:overall_spatial_structure].
+
+The taskbook also names Beiwei Community, Future Science City, Huairou Science City, the Beijing Economic-Technological Development Area, and Beijing-Tianjin-Hebei as collaboration geographies [source:SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK]. This proposal does not invent existing agreements. It frames each geography as a **regional collaboration interface** for professional verification: every row states a proposed link, exchange, spatial/operating interface and confirmation gap. No row may be described as contracted, funded, approved or confirmed until boundaries, participants, authority, data and resources are verified.
+
+| Geography | Proposed link to stations/wings | Proposed exchange | Spatial or operating interface | Evidence and confirmation gap |
+|---|---|---|---|---|
+| Beiwei Community | AI Origin Community / Commons | Community needs and age-friendly / low-digital-skill service feedback | Symbiotic Marker template, human-fallback list and community reading interface | Named by taskbook; boundary, participants and collaboration mode unconfirmed |
+| Future Science City | Zhongzhiyuan / Verification | Public explanation of research, testable scenes and failure records | Evidence Yard, capability notice and controlled-validation register | Named by taskbook; institutions, projects, data and permissions unconfirmed |
+| Huairou Science City | Zhongzhiyuan + Zhongguancun Technology Services Wing | Translation of science-facility outcomes, public understanding and open methods | Bilingual evidence brief, pre-visit notice and human interpretation interface | Named by taskbook; access, rights and security boundaries unconfirmed |
+| Beijing Economic-Technological Development Area (BDA) | Dazhongsi / Conversion | First product use, manufacturing-scene feedback and safe exit rules | Reversible trial table, version-status sign and incident receipt | Named by taskbook; products, site, permits and accountable roles unconfirmed |
+| Beijing-Tianjin-Hebei | Three stations / collaboration network | Reusable protocols, bilingual cases and public-AI-space methods | Everyday Commons Week, open method kit and Retreat Archive exchange | Named by taskbook; city partners, cycle, funding and publication mechanism unconfirmed |
+
+![Regional collaboration interface matrix: five external geographies, proposed interfaces and confirmation gaps](assets/figures/regional-coordination-interfaces.en.png)
 
 ![Three Zones, Two Wings, and the Co-Track Network](assets/figures/three-zones-two-wings-network.en.png)
 

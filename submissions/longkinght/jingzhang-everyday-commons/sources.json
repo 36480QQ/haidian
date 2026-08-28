@@ -180,6 +180,20 @@
       "intended_use": "Compare shared resources, selective startup space and public/semi-public campus zones as an ecosystem-support mechanism.",
       "evidence_grade": "A-",
       "limitations": "A selective private startup campus is not a model for universal public access and is used only as a professional-support reference."
+    },
+    {
+      "source_id": "FONT-NOTO-SANS-SC-20260828",
+      "title": "Noto Sans CJK SC OpenType font subset",
+      "publisher": "The Noto Project / notofonts",
+      "url": "https://github.com/notofonts/noto-cjk/tree/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/Variable/TTF/Subset",
+      "retrieval_date": "2026-08-28",
+      "usable_for_formal": "yes",
+      "license": "SIL Open Font License 1.1; https://github.com/notofonts/noto-cjk/blob/f8d157532fbfaeda587e826d4cd5b21a49186f7c/LICENSE",
+      "intended_use": "A character subset is embedded as WOFF2 data in the four offline HTML files; PNG and PDF text is rasterized from the same subset. No remote font request or reviewer-device system font is required.",
+      "source_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "license_sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "source_commit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+      "limitations": "Glyph subset only; rebuild when new textual glyphs are introduced. The font does not imply endorsement by the publisher."
     }
   ]
 }
