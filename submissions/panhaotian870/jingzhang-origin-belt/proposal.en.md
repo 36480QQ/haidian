@@ -38,9 +38,9 @@ The project adopts a three-tier progressive working framework: Coordinated Resea
 The JingZhang AI Corridor adopts a "One Axis, Two Wings, Three Zones, Five Cores" coordinated layout, forming a "spine-ribs-organs" spatial logic: the axis serves as the spine, the wings as the ribs, and the three zones and five cores as functional organs.
 
 - **One Axis**: The JingZhang Railway Heritage Park Axis (approx. 9 km), connecting the two wings, three zones, and five cores
-- **Two Wings**: The Zhongguancun Tech Service Wing (industry + secondary schools) and the Xiaoyuehe Scenario Empowerment Wing (universities + hospitals)
+- **Two Wings**: The Zhongguancun Technology Service Wing (industry + secondary schools) and the Xiaoyuehe Scenario Empowerment Wing (universities + hospitals)
 - **Three Zones**: Zhongzhiyuan AI Independent Innovation Acceleration Zone (northern section, R&D), Beijing AI Origin Community (central section, covering Zhichunlu-Wudaokou, living), and Dazhongsi AI Industry Cluster Zone (southern section, industry)
-- **Five Cores**: Zhongguancun ZhiChan Core (major enterprise industry), Zhichunlu-Wudaokou ZhiShi Core (commercial + living), Dazhongsi ZhiChuang Core (startup industry), Xueyuanqiao ZhiYuan Core (talent), Zhongzhiyuan ZhiSuan Core (research)
+- **Five Cores**: Zhongguancun ZhiChan Core (major enterprise industry), Zhichunlu-Wudaokou ZhiXiang Core (commercial + living), Dazhongsi ZhiChuang Core (startup industry), Xueyuanqiao ZhiYuan Core (talent), Zhongzhiyuan ZhiSuan Core (research)
 
 ---
 
@@ -54,14 +54,14 @@ The three zones unfold along the JingZhang Railway Heritage Park, forming an inn
 - **Spatial Extent**: Extending along the northern section of the heritage park, approximately 192.9 hectares
 - **Industry Directions**: AI large model fundamental research, AI chips and computing infrastructure, embodied intelligence and robotics, AI safety and governance research
 - **Core Facilities**: Supercomputing center, AI shared laboratory, embodied intelligence testing ground, AI governance research center
-- **Synergies**: Acquires university research outcomes (talent supply) through Xueyuanqiao ZhiYuan Core, connects to industrial resources (technology transfer) of Zhongguancun ZhiChan Core via the Zhongguancun Tech Service Wing, and obtains medical, educational, and other application scenarios (verification feedback) through the Xiaoyuehe Scenario Empowerment Wing
+- **Synergies**: Acquires university research outcomes (talent supply) through Xueyuanqiao ZhiYuan Core, connects to industrial resources (technology transfer) of Zhongguancun ZhiChan Core via the Zhongguancun Technology Service Wing, and obtains medical, educational, and other application scenarios (verification feedback) through the Xiaoyuehe Scenario Empowerment Wing
 
 **Beijing AI Origin Community - World-Class AI Innovation Ecosystem**
 
 - **Positioning**: The living service center and innovation ecosystem hub of the innovation belt, centered on the concept of "AI integrated into daily life," creating a world-class model AI innovation community[^4]
 - **Spatial Extent**: Centered on Zhichunlu Station and Wudaokou Station, extending along the central section of the heritage park, covering the area from Zhichunlu to Wudaokou, approximately 104.3 hectares
 - **Functional Composition**: AI community services (medical, elderly care, education), talent apartments and international community, developer spaces and tech salons, AI experience exhibition corridor
-- **Core Facilities**: AI community service center, Zhi Algorithm Garden, developer cafe cluster, smart elderly care demonstration community
+- **Core Facilities**: AI community service center, Zhi·Algorithm Garden, developer cafe cluster, smart elderly care demonstration community
 - **Synergies**: Serving as the "central node" of the three zones, the Origin Community simultaneously absorbs the everyday applications of Zhongzhiyuan's R&D outcomes (e.g., AI medical care, smart elderly care) and the residential needs of the Dazhongsi industry zone population (jobs-housing balance), functioning as a "living buffer zone" and "scenario testbed" between R&D and industry
 
 **Dazhongsi AI Industry Cluster Zone - Intelligent-Native New Business Formats**
@@ -70,7 +70,7 @@ The three zones unfold along the JingZhang Railway Heritage Park, forming an inn
 - **Spatial Extent**: Centered on Dazhongsi Station, extending along the railway heritage park, approximately 72.0 hectares
 - **Industry Directions**: AI startup incubation, AI + consumer new business formats, intelligent-native business models, urban intelligent agent operations
 - **Core Facilities**: AI industry complex, Zhi Large Model Plaza, AI startup accelerator, urban intelligent agent operations center
-- **Synergies**: Acquires open innovation resources (technology, data, scenarios) from major enterprises at the Zhongguancun ZhiChan Core through the Zhongguancun Tech Service Wing, and connects to university talent and research outcomes through Xueyuanqiao ZhiYuan Core, serving as a "from 1 to N" scaling amplifier in the innovation chain
+- **Synergies**: Acquires open innovation resources (technology, data, scenarios) from major enterprises at the Zhongguancun ZhiChan Core through the Zhongguancun Technology Service Wing, and connects to university talent and research outcomes through Xueyuanqiao ZhiYuan Core, serving as a "from 1 to N" scaling amplifier in the innovation chain
 
 [^3]: `[data:geometry/key_areas.geojson#PROV-KEY-001]`
 [^4]: `[data:geometry/key_areas.geojson#PROV-KEY-002]`
@@ -82,7 +82,7 @@ The three zones unfold along the JingZhang Railway Heritage Park, forming an inn
 
 The two wings correspond to the eastern and western cores, performing "factor empowerment" and "scenario empowerment" functions.
 
-**West Wing - Zhongguancun Tech Service Wing - Global Factor Allocation and Capital Empowerment**
+**West Wing - Zhongguancun Technology Service Wing - Global Factor Allocation and Capital Empowerment**
 
 - **Positioning**: The industrial service corridor of the innovation belt, leveraging thirty years of innovation accumulated along Zhongguancun Street, providing global allocation services for core innovation factors including technology, capital, and intellectual property
 - **Spatial Extent**: Extending along both sides of Zhongguancun Street, with its core corresponding to the Zhongguancun ZhiChan Core
@@ -144,7 +144,7 @@ The five cores are the key functional nodes of the innovation belt, each support
 - **Design Strategies**: (1) Create an AI listed enterprise headquarters cluster along Zhongguancun Street, focusing on attracting leading companies in AI large models, autonomous driving, AI chips, and other sectors; (2) Build the Zhi Roadshow Center and investor community, opening capital access channels to serve enterprise IPO and M&A needs; (3) Establish an AI industry chain collaboration center to facilitate proximate cooperation between major enterprises and upstream/downstream suppliers; (4) Build major enterprise open innovation platforms, making technology capabilities and application scenarios available to Dazhongsi startups
 - **Key Scenarios**: S07 Developer Cafe Cluster, S05 AI Legal Services Station, AI Investment & Financing Roadshow Center, Major Enterprise Open Innovation Platform
 
-**Central Core - Zhichunlu-Wudaokou ZhiShi Core - Commercial Vitality and Living Services**
+**Central Core - Zhichunlu-Wudaokou ZhiXiang Core - Commercial Vitality and Living Services**
 
 - **Positioning**: The core living area of the innovation belt, combining Wudaokou's commercial vitality with Zhichunlu's community service functions, a zone where "neighborhood warmth" meets "AI daily life"
 - **Current Conditions**: Wudaokou is renowned as the "center of the universe" for its vibrant street life - **it already possesses a large-scale street-level commercial ecosystem that does not depend on shopping complexes**. Street-front shops, cafes, restaurants, and creative markets have formed a spontaneously growing commercial model. Backed by the university cluster of Tsinghua, Peking University, and BUPT, it sees dense daily foot traffic. Zhichunlu Station is a transfer station between Metro Line 10 and Line 13, with the highest accessibility among the five cores. Its surroundings are primarily residential neighborhoods, home to many AI practitioners and tech workers. Together, they form the living and commercial core of the central section of the innovation belt
@@ -631,7 +631,7 @@ The three key areas are distributed along the railway axis, forming an innovatio
 - **Spatial Structure**: Deployed along the north section of the JingZhang Railway Heritage Park, forming "one axis (Railway Heritage Park) + two belts (east-west innovation corridors) + multiple nodes (R&D clusters)." Area: approximately 192.9 hectares
 - **Building Renewal**: Primarily research and industrial land. Retain existing research institutes and university buildings; convert inefficient industrial factories into AI shared laboratories and incubators; construct new AI enterprise headquarters clusters and a supercomputing center. Building massing: mid-to-high rise (60-100m)
 - **Transportation**: Connect to Zhongzhiyuan Station of the JingZhang APM line; east-west green slow-traffic corridors connecting Xiaoyuehe and Zhongguancun Street; 5-minute walkable living circle
-- **Public Space**: Zhi Robot Paradise (approx. 3ha) at the core node, combining railway heritage for outdoor robot interaction plaza and AI testing exhibition belt
+- **Public Space**: Zhi·Robot Paradise (approx. 3ha) at the core node, combining railway heritage for outdoor robot interaction plaza and AI testing exhibition belt
 - **AI Scenarios**: Embodied intelligence testing ground, S02 Unmanned Delivery, S04 JingZhang APM Autonomous Driving Experience
 - **Implementation Risks**: Some land parcels have complex ownership; supercomputing center has high energy consumption requiring dedicated municipal feasibility studies
 
@@ -641,7 +641,7 @@ The three key areas are distributed along the railway axis, forming an innovatio
 - **Spatial Structure**: With Zhichunlu Station and Wudaokou Station as dual cores, "dual cores (Zhichunlu TOD + Wudaokou TOD) + one axis (Heritage Park) + three zones (residential, commercial, public service)." Area: approximately 104.3 hectares
 - **Building Renewal**: Primarily residential and public management/service land. Retain existing residential communities; convert ground floors of aging residential areas into community AI service spaces; construct new AI community service centers and talent apartments. Building massing: mid-rise and small high-rise (24-60m)
 - **Transportation**: Connect to Zhichunlu Station of the JingZhang APM line; leverage transfer advantages of Line 10 and Line 13; optimize internal community slow-traffic network
-- **Public Space**: Community-level greenways and pocket parks along the Heritage Park; Zhi Algorithm Garden (approx. 2ha) as core of community public activities
+- **Public Space**: Community-level greenways and pocket parks along the Heritage Park; Zhi·Algorithm Garden (approx. 2ha) as core of community public activities
 - **AI Scenarios**: S01 AI Diagnostic Corridor, S06 Smart Elderly Care Community, S07 Developer Cafe, S02 Unmanned Delivery
 - **Implementation Risks**: Renovation of aging residential communities involves coordinating residents' interests; data privacy protection for community AI services requires dedicated design
 
@@ -742,18 +742,18 @@ The Heritage Park is the spine of JingZhang AI Corridor. The design proposes the
 
 ### Four AI Theme Parks
 
-1. **Zhi Robot Paradise** (Zhongzhiyuan section, ~3ha): Outdoor robot interaction plaza with embodied intelligence exhibition belts
-2. **Zhi Algorithm Garden** (Origin Community section, ~2ha): Algorithm visualization as design language, classic algorithms transformed into ground pavements and interactive installations
-3. **Zhi Data Forest** (Dazhongsi section, ~1.8ha): Data flow visual theme, LED light columns and interactive screens displaying real-time urban data
-4. **Zhi Century Platform** (Xizhimen section, ~1.5ha): Preserved JingZhang Railway historical platform remains, combined with AR technology to recreate a century of railway history
+1. **Zhi·Robot Paradise** (Zhongzhiyuan section, ~3ha): Outdoor robot interaction plaza with embodied intelligence exhibition belts
+2. **Zhi·Algorithm Garden** (Origin Community section, ~2ha): Algorithm visualization as design language, classic algorithms transformed into ground pavements and interactive installations
+3. **Zhi·Data Forest** (Dazhongsi section, ~1.8ha): Data flow visual theme, LED light columns and interactive screens displaying real-time urban data
+4. **Zhi·Century Platform** (Xizhimen section, ~1.5ha): Preserved JingZhang Railway historical platform remains, combined with AR technology to recreate a century of railway history
 
 ### Three AI Pilgrimage Landmarks
 
 | Landmark | Location | Design Concept | Function |
 |---|---|---|---|
-| Zhi Source Tower | North end of Heritage Park | Railway tracks spiraling upward into neural network form | Observation deck + AI achievement exhibition |
-| Zhi Century Clock | Dazhongsi AI Industry Cluster | JingZhang Railway century clock + AI digital dial | Temporal narrative + hourly AI light show |
-| Zhi Future Gate | Xizhimen south entrance | High-speed train nose-shaped arch + holographic projection | Ceremonial entrance for Beijing-Tianjin-Hebei AI talent |
+| Zhi·Source Tower | North end of Heritage Park | Railway tracks spiraling upward into neural network form | Observation deck + AI achievement exhibition |
+| Zhi·Century Bell | Dazhongsi AI Industry Cluster | JingZhang Railway century clock + AI digital dial | Temporal narrative + hourly AI light show |
+| Zhi·Future Gate | Xizhimen south entrance | High-speed train nose-shaped arch + holographic projection | Ceremonial entrance for Beijing-Tianjin-Hebei AI talent |
 
 ### Characteristic Streets and Slow Traffic Network
 
@@ -768,7 +768,7 @@ The Heritage Park is the spine of JingZhang AI Corridor. The design proposes the
 
 | Cultural Layer | Time | Core Symbol | Spatial Carrier |
 |---|---|---|---|
-| Century-Long JingZhang Culture | 1909-2019 | Zhan Tianyou, zigzag railway, self-reliance | Heritage Park, Zhi Century Platform |
+| Century-Long JingZhang Culture | 1909-2019 | Zhan Tianyou, zigzag railway, self-reliance | Heritage Park, Zhi·Century Platform |
 | Zhongguancun Innovation Culture | 1988-2025 | Electronics Street, entrepreneurial spirit | Zhongguancun Street, ZhiChan enterprise cluster |
 | New AI Culture | 2025- | Beauty of algorithms, human-machine symbiosis | AI theme parks, developer cafes, digital humans |
 
@@ -807,7 +807,7 @@ Using "Source" as the core imagery - Source of Matter (railway heritage), Source
 
 | Phase | Timeframe | Strategic Focus | Key Content |
 |---|---|---|---|
-| Phase 1 (Launch) | 2026-2028 | Build framework, set benchmark | Heritage Park connectivity, AI Origin Community launch, Zhi Source Tower, AI signal pilot |
+| Phase 1 (Launch) | 2026-2028 | Build framework, set benchmark | Heritage Park connectivity, AI Origin Community launch, Zhi·Source Tower, AI signal pilot |
 | Phase 2 (Development) | 2028-2030 | Cluster industries, achieve scale | Zhongzhiyuan full construction, Dazhongsi upgrading, APM construction |
 | Phase 3 (Maturity) | 2030-2035 | Establish brand, build closed loop | Domain-wide AI coverage, international brand, operational closed loop |
 
@@ -819,7 +819,7 @@ Using "Source" as the core imagery - Source of Matter (railway heritage), Source
 |---|---|---|---|
 | JingZhang Heritage Park Phase 1 | Public Space | ~54ha connectivity | Highest |
 | AI Origin Community Launch Zone | Urban Renewal | ~30ha | Highest |
-| Zhi Source Tower | Cultural Landmark | Height ~60m | High |
+| Zhi·Source Tower | Cultural Landmark | Height ~60m | High |
 | Wudaokou AI Signal Pilot | Smart Transportation | 1 intersection | High |
 | Developer Cafe Demo Sites | Industrial Services | 3-5 locations | Medium |
 | AI Community Service Center | Public Services | 2 locations | Medium |
@@ -832,7 +832,7 @@ Using "Source" as the core imagery - Source of Matter (railway heritage), Source
 | Dazhongsi AI Industry Complex | Industrial Space | ~300,000 sqm | Highest |
 | JingZhang APM Line | Transportation | ~8.9km | Highest |
 | Xiaoyuehe Waterfront Greenway | Public Space | ~6km | High |
-| Zhi Century Clock | Cultural Landmark | - | High |
+| Zhi·Century Bell | Cultural Landmark | - | High |
 | Unmanned Bus Routes | Smart Transportation | 3 routes | Medium |
 
 ### Policy Recommendations
@@ -921,34 +921,50 @@ All values are recomputed on provisional boundaries and must be recomputed once 
 
 ## Brief Response
 
-### Three Major Positionings Response
+### Taskbook "Three Positionings / Five Functions / Three Areas Two Wings" Mapping
 
-| Positioning | Proposal Response |
+This proposal responds to the three major positionings, five major functions, three areas and two wings, and six tasks (agent.1–agent.6) specified in the taskbook. The tables below distinguish taskbook requirements (verbatim) from the self-defined positioning of this proposal, to avoid mislabeling self-defined positionings as taskbook requirements. Taskbook original text: [source:DATA-SRC-AGENT-TASKBOOK-20260518].
+
+**Three Major Positionings** (taskbook `positioning_zh` verbatim):
+
+| Taskbook Positioning (verbatim) | Proposal Response | Self-defined Positioning (NOT taskbook) |
+|---|---|---|
+| Century-Long JingZhang Culture Belt | "Zhi·Path" railway heritage activation, three-layer cultural narrative, century timeline, Zhi·Century Platform | — |
+| Urban AI Life Experience Belt | 10 AI scenario cards + lifestyle applications of Beijing AI Origin Community (diagnosis / elderly care / delivery) | — |
+| AI Convergence Innovation Belt | "Zhi Ecosystem" four-ring (Zhi·Create → Zhi·Incubate → Zhi·Share → Zhi·Govern) drives the complete innovation chain | AI innovation source / urban renewal demonstration / international exchange window (self-defined, NOT taskbook positionings) |
+
+**Five Major Functions** (taskbook `five_functions_zh` verbatim):
+
+| Taskbook Function (verbatim) | Proposal Response |
 |---|---|
-| AI Innovation Source | Zhongzhiyuan Park for AI full-stack innovation; five-core linkage forms complete innovation chain |
-| Urban Renewal Demonstration | "Preserve-Renovate-Demolish-Build" strategy; Heritage Park drives corridor renewal |
-| International Exchange Window | Beijing-Tianjin-Hebei AI talent hub; international conference facilities; Global AI Corridor Summit |
+| AI Full-Stack Independent Innovation System | Zhongzhiyuan R&D engine: supercomputing center, AI shared lab, basic research and key-hardware breakthroughs |
+| World-Class AI Innovation Ecosystem | Three-areas-two-wings closed loop + Zhi Ecosystem four-ring + 8 global case benchmarks |
+| AI+ Scenario Empowerment New Paradigm | S01–S10 scenario cards + Xiaoyuehe scenario-empowerment wing real-scenario validation |
+| Intelligent AI Vibrant City | Smart elderly care, AI diagnosis, unmanned delivery, AI property management + Zhichunlu-Wudaokou ZhiXiang Core commercial vitality |
+| AI Governance Global Discourse | Sensitive-scenario data-governance matrix + city-agent operations center + Global AI Corridor Summit |
 
-### Five Major Functions Response
+**Three Areas Two Wings** (taskbook `three_areas_two_wings` verbatim):
 
-| Function | Proposal Response |
+| Taskbook Structure (verbatim) | Proposal Spatial Deployment |
 |---|---|
-| Technology Innovation | Supercomputing center, AI shared lab, university transformation center |
-| Industry Development | Enterprise HQ cluster, industry complex, AI accelerator |
-| Cultural Exhibition | Heritage Park, century timeline, AI cultural guide |
-| Public Services | AI diagnostic corridor, smart elderly care, community AI center |
-| Transportation | APM system, AI signals, unmanned buses, smart slow traffic |
+| AI Origin Community | Beijing AI Origin Community (central section, Zhichunlu–Wudaokou) |
+| Zhongzhiyuan AI Independent Innovation Acceleration Zone | Zhongzhiyuan AI Independent Innovation Acceleration Zone (northern section) |
+| Dazhongsi AI Industry Cluster Zone | Dazhongsi AI Industry Cluster Zone (southern section) |
+| Zhongguancun Technology Service Wing (west) | Zhongguancun Technology Service Wing (west, factor globalization + capital empowerment) |
+| Xiaoyuehe Scenario Empowerment Wing (east) | Xiaoyuehe Scenario Empowerment Wing (east, AI scenario empowerment + intelligent AI vibrant city) |
+
+> Note: "One Axis" (JingZhang Railway Heritage Park axis) and "Five Cores" (Zhongguancun Zhichan Core / Zhichunlu-Wudaokou Zhixiang Core / Dazhongsi Zhichuang Core / Xueyuanqiao Zhiyuan Core / Zhongzhiyuan Zhisuan Core) are self-defined spatial-organization concepts added on top of the taskbook's "three areas two wings", not taskbook verbatim, used to deepen the design expression.
 
 ### Six Tasks Response
 
 | Task | Requirement | Response |
 |---|---|---|
-| 1 | Naming/Logo and brand identity | JingZhang Zhi Lang / JingZhang AI Corridor; "A Century of Innovation" |
-| 2 | AI innovation ecosystem cases (5-8) | 8 global cases studied; "Zhi Ecosystem" four-ring model |
-| 3 | Scenario cards (10+) | S01-S10 totaling 10 AI scenario cards |
-| 4 | AI pilgrimage landmarks (3+) | Zhi Source Tower, Zhi Century Clock, Zhi Future Gate |
-| 5 | Cultural narrative and international communication | Three-layer narrative, brand system, five-dimensional strategy |
-| 6 | Long-term operations and global events | Annual Festival, quarterly marathons, Global AI Corridor Summit |
+| agent.1 | Naming/Logo and brand identity | JingZhang Zhi Lang / JingZhang AI Corridor; "A Century of Innovation" |
+| agent.2 | AI innovation ecosystem cases (5-8) | 8 global cases studied; "Zhi Ecosystem" four-ring model |
+| agent.3 | Scenario cards (10+) | S01-S10 totaling 10 AI scenario cards |
+| agent.4 | AI pilgrimage landmarks (3+) | Zhi·Source Tower, Zhi·Century Bell, Zhi·Future Gate |
+| agent.5 | Cultural narrative and international communication | Three-layer narrative, brand system, five-dimensional strategy |
+| agent.6 | Long-term operations and global events | Annual Festival, quarterly marathons, Global AI Corridor Summit |
 
 ## Risks, Copyright, and Legal Boundaries
 

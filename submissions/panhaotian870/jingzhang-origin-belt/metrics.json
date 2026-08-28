@@ -205,22 +205,29 @@
       "name_en": "APM Peak Hour Directional Capacity",
       "status": "known",
       "value": 5400,
-      "unit": "index",
+      "unit": "pass/h",
       "source_files": [
         "proposal.md"
       ],
-      "confidence": "medium"
+      "confidence": "low",
+      "formula": "定员约90人/列 × 60列/h（3600s ÷ 60s发车间隔）= 5400人次/h（概念情景）",
+      "assumptions": [
+        "定员与发车间隔均为假设，非正式核验值，须经APM车型选型与运营方案论证后复核"
+      ]
     },
     "MT-APM-DAILY": {
       "name_zh": "APM日均客流预测",
       "name_en": "APM Daily Ridership Forecast",
       "status": "known",
       "value": 16000,
-      "unit": "index",
+      "unit": "pass/day",
       "source_files": [
         "proposal.md"
       ],
-      "confidence": "medium"
+      "confidence": "low",
+      "assumptions": [
+        "需求模型（Logit方式分担）推算，非实测OD，须经居民出行调查与手机信令校核"
+      ]
     },
     "MT-EXPRESSWAY-CAPACITY": {
       "name_zh": "京新快速路延伸通行能力",
