@@ -17,7 +17,7 @@
 
 | 资产 | 来源 | 许可证 | 用途 | 嵌入方式 |
 | --- | --- | --- | --- | --- |
-| Noto Serif SC Regular | Google Fonts / Noto Project, `/usr/share/fonts/truetype/noto-serif-sc/NotoSerifSC-Regular.ttf` | SIL Open Font License 1.1 | PDF 渲染 + HTML @font-face 子集嵌入 | reportlab TTFont 注册（PDF 嵌入子集）+ fonttools 子集化后 base64 嵌入 HTML |
+| Noto Serif SC Regular | Google Fonts / Noto Project, `/usr/share/fonts/truetype/noto-serif-sc/NotoSerifSC-Regular.ttf` | SIL Open Font License 1.1 | PDF 渲染 + HTML @font-face 子集嵌入 | matplotlib PDF 后端嵌入子集 + fonttools 子集化后 base64 嵌入 HTML |
 | Noto Serif SC Bold | Google Fonts / Noto Project, `/usr/share/fonts/truetype/noto-serif-sc/NotoSerifSC-Bold.ttf` | SIL Open Font License 1.1 | PDF 渲染 + HTML @font-face 子集嵌入 | 同上 |
 | WenQuanYi Zen Hei | 文泉驿项目, `/usr/share/fonts/truetype/wqy/` | GPL-2.0（含字体嵌入例外） | matplotlib PNG 图件正文渲染 | matplotlib font_manager.addfont 注册 |
 | Noto Serif SC Bold | Google Fonts / Noto Project, `/usr/share/fonts/truetype/noto-serif-sc/NotoSerifSC-Bold.ttf` | SIL Open Font License 1.1 | matplotlib PNG 图件标题渲染 | matplotlib font_manager.addfont 注册 |
@@ -133,8 +133,8 @@ PDF 嵌入字体子集为 Noto Serif SC（OFL 1.1），符合 OFL 嵌入条款�
 1. **资料读取**：Agent 读取公告、面向智能体任务书、`brief/site-package/` 全部机器可读文件、`data/source_registry.json` 与 `brief/site-package/standards/standards.json`。
 2. **几何生成**：`scripts/generate_geometry.py` 基于 `brief/site-package/geometry/provisional_boundaries.geojson` 派生 9 个 GeoJSON 文件，使用 shapely 进行空间操作。
 3. **指标复算**：`scripts/generate_metrics.py` 使用 pyproj（EPSG:4326 → EPSG:4548）与 shapely.area 复算 19 个核心指标。
-4. **图件生成**：`scripts/generate_figures.py` 使用 matplotlib + LXGW WenKai 中文字体渲染 5 张 PNG 图件。
-5. **PDF 生成**：`scripts/generate_pdfs.py` 使用 reportlab + NotoSerifSC（嵌入子集）生成 A3 booklet 与 A0 boards PDF（中英双语）。
+4. **图件生成**：agent 图件脚本（matplotlib + Noto Serif SC / WenQuanYi Zen Hei 中文字体，与上文资产表一致）渲染 6 张核心 PNG 图件（图 1-图 5 与图 6 综合索引图，含英文版）。
+5. **PDF 生成**：agent 板册脚本（matplotlib，Noto Serif SC / WenQuanYi Zen Hei 嵌入子集）生成 A3 booklet 与 A0 boards PDF（中英双语，逐轮版本标重出）。
 6. **HTML 渲染**：仓库自带 `scripts/render_proposal_html.py` 从 proposal.md 渲染 `report/proposal.html`，由 agent 手动复制为 `report/proposal.en.html`。
 7. **HTML 字体嵌入**：`scripts/embed_fonts_in_html.py` 使用 fonttools 子集化 NotoSerifSC，base64 嵌入 HTML @font-face，确保 CI 环境 headless Chromium 能正确渲染中文。
 8. **可视化页**：`scripts/generate_visual_html.py` 生成离线静态 `visual/index.html` 与 `visual/index.en.html`，含 `data-metric` / `data-value` 属性以供机器可读。
