@@ -262,6 +262,14 @@ Phasing is learning: "Archive Starter Zone → full-line skeleton → node deepe
 | S02 Service Archive Panel | Data-minimization review and a community staffed counter available | Panel, static notice board, on-site correction entry | Network failure moves to static notice; misread feedback enters human review | Staffed-counter accessibility check; status-update and correction record |
 | S04 Honor Yearbook Node | Authorization rules, human-review procedure, and withdrawal mechanism defined | Readable yearbook display and on-site submission channel | Nomination dispute or withdrawal pauses display while retaining correction history | Human-review record; authorization, withdrawal, and correction records |
 
+**Archive Starter Zone: start-control table (conceptual recommendation).** Before any field construction, data processing, or public service begins, a legally authorized professional or operating body must complete the respective review. This table defines proposed entry, stopping, and record-keeping rules only; it does not imply that any project is authorized.
+
+| Pilot | Proposed entry condition | Minimum operating setup | Human takeover and stop | Acceptance evidence to retain |
+|:---|:---|:---|:---|:---|
+| S01 Contribution Intake Desk | Site-use consent, privacy notice, and paper process ready | One staffed-intake role, paper archive cards, level access | Terminal failure moves to paper; disputed entries pause display for human review | Paper/digital flow rehearsal record; correction-closure record |
+| S02 Service Archive Panel | Data-minimization review and a community staffed counter available | Panel, static notice board, on-site correction entry | Network failure moves to static notice; misread feedback enters human review | Staffed-counter accessibility check; status-update and correction record |
+| S04 Honor Yearbook Node | Authorization rules, human-review procedure, and withdrawal mechanism defined | Readable yearbook display and on-site submission channel | Nomination dispute or withdrawal pauses display while retaining correction history | Human-review record; authorization, withdrawal, and correction records |
+
 **Long-term operations (agent.6 response)**: the annual "JZ Archive Open Season"—spring: Global Developer Archive Open Week; summer: Scenario Archive Testing Month; autumn: outcome roadshows and industry matchmaking; winter: Honor Yearbook publication and award ceremony. The developer community accumulates reputation through the Open-Source Commit Stele and contribution archiving; scenario access follows a four-step mechanism of "application–assessment–public notice–review"; the conversion pathway covers talent, enterprises, and developers. All activities, policies, and funding statements are conceptual recommendations, not confirmed government arrangements [source:AGENT-TASKBOOK].
 
 ## Metrics, Area Recalculation, and Compliance Matrix
