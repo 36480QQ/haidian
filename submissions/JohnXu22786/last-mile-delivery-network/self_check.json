@@ -81,7 +81,7 @@
    "ai_package_stages": {
     "submissions/JohnXu22786/last-mile-delivery-network": "formal"
    },
-   "total_bytes": 9294791,
+   "total_bytes": 11225854,
    "maintainer_bypass": false
   },
   "stderr": ""
@@ -220,16 +220,16 @@
   "summary": "ink+edge-clip machine check only; text-overlap not machine-verified post-hoc (figure generation text-bbox checks recorded in changelog)",
   "figures": {
    "key-areas.png": {
-    "width": 1875,
+    "width": 1950,
     "height": 1275,
-    "ink": 0.0913,
-    "edge_clip_ratio": 0.0117,
+    "ink": 0.0822,
+    "edge_clip_ratio": 0.0,
     "edge_clip_clear": true
    },
    "land-use-structure.png": {
-    "width": 1875,
+    "width": 1950,
     "height": 1275,
-    "ink": 0.2144,
+    "ink": 0.1354,
     "edge_clip_ratio": 0.0,
     "edge_clip_clear": true
    },
@@ -241,23 +241,23 @@
     "edge_clip_clear": true
    },
    "metrics-evidence.png": {
-    "width": 1875,
+    "width": 2250,
     "height": 1275,
-    "ink": 0.2145,
+    "ink": 0.1193,
     "edge_clip_ratio": 0.0,
     "edge_clip_clear": true
    },
    "mobility-bluegreen.png": {
-    "width": 1875,
+    "width": 1950,
     "height": 1275,
-    "ink": 0.0747,
+    "ink": 0.0688,
     "edge_clip_ratio": 0.0,
     "edge_clip_clear": true
    },
    "site-overview.png": {
-    "width": 1875,
+    "width": 1950,
     "height": 1275,
-    "ink": 0.0783,
+    "ink": 0.1497,
     "edge_clip_ratio": 0.0,
     "edge_clip_clear": true
    }

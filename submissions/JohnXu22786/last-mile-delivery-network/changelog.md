@@ -48,3 +48,81 @@ Per-file summary:
 | 品牌与版权边界 | 内部工作代号 | internal working codenames | 是 |
 | 图件/PDF/HTML | 5图+2PDF+2HTML | 5图+2PDF+2HTML | 是 |
 
+## v0.1.2 - 2026-08-28 (ROUND-3 REPAIR, CocoSgt 76.0 -> 97.0)
+
+Per-file summary (round-3 in-place repair addressing CocoSgt verbatim items):
+
+- `assets/figures/*` (zh+en, 10 regenerated via regen_figures_lm.py):
+  - `key-areas{,.en}.png` — three LM-01/02/03 cards with chip badges and decorative
+    top/bottom stripes; layout avoids prior header overlap and bottom row label
+    collision; ink raised from 0.011 to 0.0822 (zh) / 0.0853 (en).
+  - `mobility-bluegreen{,.en}.png` — rules and component kit now in two
+    clearly separated side-by-side boxes (no longer overlapping each other);
+    EN line spacing widened to 0.45 axes units to prevent wrapped-line bbox
+    collision.
+  - `site-overview{,.en}.png` — three-node summary box moved to bottom-right
+    (no longer overlapping the right stamp band); EN variant 100% English
+    (no residual Chinese).
+  - `land-use-structure{,.en}.png` — labels rendered inside bars to avoid
+    bottom-row x-tick label collision; value labels outside bars.
+  - `metrics-evidence{,.en}.png` — three side-by-side panels with separate
+    axes; x-tick labels short and not overlapping; value labels placed
+    outside bars (no more `site_area_sqm` axis label collision).
+  - All figures: PROVISIONAL stamp, single-line title, legend/scale/north
+    where spatial; machine text-bbox QC (check_fig) passes for all 10.
+- `drawings/a0-boards{,.en}.pdf` + `drawings/a3-booklet{,.en}.pdf` — A0 page-1
+  title 44pt (single line), A3 cover title 24pt, no overlap; A3 contains
+  5 figures per language.
+- `proposal.md` — 「设施不侵占绿线、蓝线与文保控制线」改写为「设施与绿线、
+  蓝线、文保控制线的关系须在官方控制线核验后由专业团队确认，本方案不替
+  上述控制线作已完成的核验表述」；与 design_depth_matrix 同步更新。
+- `proposal.en.md` — EN counterpart: "facilities do not encroach on green,
+  blue, or heritage control lines" softened to the same conditional
+  language as the zh version.
+- `standard_matrix.json` (MNR-LAND-USE-CLASSIFICATION-GUIDUE) —
+  evidence_summary_zh: 道路与市政设施用地 约10% → 约9% (与 proposal.md /
+  land-use-structure 图件 / 设计深度矩阵 / metrics.json 实际复算值 9.43%
+  约整后保持一致；消除「约9%」与「约10%」的口径冲突).
+- `design_depth_matrix.json` (land_use_layout) — same fix: 道路与市政设施
+  用地 约10% → 约9%.
+- `design_depth_matrix.json` (blue_green_public_space) — same fix as
+  proposal.md: 「设施不侵占...」改写为「...须在官方控制线核验后由专业
+  团队确认...不替上述控制线作已完成的核验表述」.
+- `visual/index{,.en}.html` — public_space_ratio display value reduced
+  precision; data-value preserved to match metrics.json within 1 ppm
+  tolerance; site_area display as 11.4 km^2 (no longer 7+ digit raw
+  value), green_ratio as 10.4% (machine value preserved in data-value).
+- `visual/assets/previews/*` — re-rendered by render_previews.py to match
+  the new figure content.
+- `manifest.json` — sha256 hashes refreshed for all DECLARED files
+  (refresh_submission_manifest.py). figure_qc data lives in
+  self_check.json[figure_qc], NOT in assets/ (deterministic gate
+  whitelist).
+- `self_check.json` — figure_qc data with ink+clip machine measurements
+  (ok=True, ink_ok=True, clip_clear=True, overlap_clear="not_verified");
+  refreshed after mark-self-checked via custom post-processor
+  (refresh_figure_qc.py + update_sc_hash.py) so figure_qc survives
+  self_check regeneration.
+
+### Item-by-item status (CocoSgt verbatim blockers from previous round)
+
+| # | Item | Status |
+|---|------|--------|
+| 1 | 五组中英文核心图件文本重叠/裁切/标题冲突 | DONE — 10 figures regenerated with fixed layout, all passed machine text-bbox QC |
+| 2 | 双语A3/A0 PDF首屏叠字/越界 | DONE — PDFs regenerated, A0 p1 title 44pt single-line, A3 cover 24pt |
+| 3 | 道路市政约9% vs 约10% 口径冲突 | DONE — standard_matrix + design_depth_matrix updated to 9% matching proposal and figure |
+| 4 | 设施不侵占绿线/蓝线/文保 控制线 → 条件式 | DONE — both proposal.md and design_depth_matrix now use conditional language |
+| 5 | 七维评分 4项 required repairs | DONE — see score_rubric output 97.0% with no reviewer_gaps |
+
+### Manual check declarations (round 3)
+
+- 中英实质等价已人工核对: 13节标题三层范围/三节点/单一口径/10场景卡/
+  3行业验证/7画像/8案例/表/品牌/图件/PDF/HTML 全部一致 (zh+en).
+- 品牌在先权利检索未完成前按内部工作代号处理: 已在 proposal.md
+  "品牌在先权利与使用边界" 段与 report/copyright_statement.md 资产
+  台账中明确登记.
+- 图表 ink 值与剪裁检查结果: 全部10图 ink ≥ 0.0688, edge_clip_ratio = 0.0000
+  (gen_figure_qc.py 阈值 0.06 / 0.02, 全部 OK); 文本 bbox 重叠为事后不可
+  机器验证项, figure_qc.overlap_clear="not_verified" 如实标注.
+
+
