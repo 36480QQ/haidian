@@ -173,6 +173,15 @@
     .section-no { color: var(--blue); font: var(--fs-card) Arial, sans-serif; }
     .section-head h2 { margin: 14px 0 16px; font-size: var(--fs-section); line-height: 1.08; letter-spacing: .08em; }
     .section-note { max-width: 760px; margin: 0; color: var(--muted); }
+    .quick-read-band { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; padding: clamp(24px, 4vw, 48px); border-bottom: 1px solid var(--ink); background: var(--line); }
+    .quick-read-band p { min-height: 118px; display: flex; align-items: center; margin: 0; padding: clamp(30px, 4vw, 56px) clamp(20px, 3vw, 42px); background: var(--paper-light); color: var(--blue-deep); font-family: var(--serif); font-size: clamp(19px, 1.7vw, 25px); font-weight: 600; line-height: 1.55; }
+    .quick-read-band__tag { position: absolute; top: 10px; right: clamp(24px, 4vw, 48px); z-index: 1; padding: 2px 9px; background: var(--blue-deep); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+    .evidence-trail { max-width: 900px; margin-top: 18px; border: 1px solid var(--line); background: var(--paper-light); }
+    .evidence-trail summary { padding: 12px 16px; color: var(--blue-deep); font-weight: 800; cursor: pointer; }
+    .evidence-trail[open] summary { border-bottom: 1px solid var(--line); }
+    .evidence-trail .section-note { max-width: none; margin: 0; padding: 12px 16px; border-top: 1px solid color-mix(in srgb, var(--line) 58%, transparent); }
+    .evidence-trail summary + .section-note { border-top: 0; }
+    @media (max-width: 760px) { .quick-read-band { grid-template-columns: 1fr; } .quick-read-band p { min-height: 88px; } }
     .geometry-sequence { container-type: inline-size; width: 100%; min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr); min-height: 0; overflow: hidden; border: 1px solid var(--ink); border-radius: 0; background: var(--paper); }
     .geometry-sequence button { font: inherit; }
     .geometry-sequence button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
@@ -2315,6 +2324,10 @@ figure figcaption > p + p {
   }
 }
   </style>
+  <!-- 186A-OFFLINE-CJK-FONT-START -->
+  <!-- Source font: Source Han Serif SC Regular; source SHA-256: 78aa7a328fd974df2d688c8a9fd74a33d8334dfa84ab24d9d11efb2ffc464117; embedded subset: JZ Offline CJK 186H; Copyright 2017-2024 Adobe; SIL Open Font License 1.1; package source record: ../sources.json. -->
+  <link rel="stylesheet" href="assets/offline-cjk-font.css">
+  <!-- 186A-OFFLINE-CJK-FONT-END -->
 </head>
 <body>
   <noscript><style>.film-track{height:auto!important}.film-stage{position:relative!important;display:grid!important;height:auto!important}.film-frame{position:relative!important;visibility:visible!important;clip-path:none!important}.film-layer{transform:none!important}.reveal-target{opacity:1!important;transform:none!important;transition:none!important}.failure-panel{display:grid!important;margin-bottom:14px}.replay-controls{display:none!important}</style></noscript>
@@ -2367,6 +2380,13 @@ figure figcaption > p + p {
         </section>
         <nav class="hero-directory" aria-label="M01 责任目录"><a href="#m01-users">使用人群是谁</a><a href="#m01-owner">最终责任落在谁</a><a href="#m01-stop-authority">谁有权按下暂停</a><a href="#m01-recovery">退场时留下什么</a><a href="#m01-retest">复测时间点</a><a href="#m01-cost">需要投入多少成本</a></nav>
       </div>
+    </section>
+
+    <section class="quick-read-band" aria-label="十秒快读">
+      <span class="quick-read-band__tag">概念方案</span>
+      <p>做什么：让城市问题先过验证，再由公众决定继续、修改或撤除。</p>
+      <p>在哪：43.6 km²统筹、11.4 km²总体、368.4 ha三重点区。</p>
+      <p>何时停：未批准不启动；接手失败即熄灭并复原。</p>
     </section>
 
     <section class="opening-film" aria-label="京张发现线四帧开场胶片段">
@@ -2562,7 +2582,7 @@ figure figcaption > p + p {
           </div>
         </section>
         <section class="failure-replay" id="m01-failure-replay" aria-labelledby="m01-failure-title">
-          <header class="section-head"><p class="section-no">M01 / 04</p><div><p class="eyebrow">CSS-ONLY FAILURE REPLAY</p><h2 id="m01-failure-title">AI 可熄火，人工与日常通道必须留</h2><p class="section-note">四态文字结论始终可见；选择标签只切换剖面。四态共用同一 M01 ID，不把桌面模拟写成现场事实。 </p><p class="section-note">我们在桌面上跑过的那一次 桌面模拟｜非现场测试｜不代表真实项目发生过 状态声明：当前状态：未批准 · 未授权 · 未实施。 </p><p class="section-note">三态票据：十卡各三态共 30 张票据已合并为单一 JSON 数组；每票含输入摘要、六门判定、依据路径及合成/非现场标记。人工基线与协议比较各 10 张为条件未齐；越线推进 10/10 被规则拒绝。 </p><p class="section-note">负向注入：负向注入 14 项，结果 `14 injections / 0 leaks`；覆盖越权、非AI通道缺失、撤回失败、责任空缺、M01 漂移等类型。 </p><p class="section-note">该结果仅证明桌面推演内无泄漏，不证明现场。 </p><p class="section-note">M01 一轮闭合：M01 通过 Codex 自身模型真实生成 1 轮空间候选：提示词、3 个候选、3 个裁决全部存档，没有删轮或结果性挑选；模型精确服务身份与种子不可得已如实记录。3 个候选均未越过授权、资源和运营条件，现场计数为 0。 </p><p class="section-note">整线降级：任一卡复测不过，整条线护照等级降回上一级，禁止只补最差一卡；该记录不是一次真实复测。 </p><p class="section-note">权限边界：众智园负责复查；AI 原点把问题说清再验证；大钟寺只有得到同意后才能小范围试用，并随时退出。 </p><p class="section-note">责任链（M01）：M01 是唯一展开最深责任链的候选。责任人：UNKNOWN；叫停人：UNKNOWN／待正式责任主体确认；复测日：UNKNOWN；恢复费用：UNKNOWN。 </p><p class="section-note">非 AI 与失败恢复：非 AI 等价路径为固定装卸时段、静态车位与人工引导；个人骑手不被跟踪或考核。失败时 AI 层熄灭，恢复原状和非 AI 时刻表，日常任务继续。 </p><p class="section-note">双计数：双计数已锁定为：桌面推演 `30/30`、真实复测 `0`、现场 `0`。 </p><p class="section-note">小结：边界线 / 桌面模拟｜非现场测试｜不代表真实项目发生过 / 不可删改 桌面票据 / 30/30 / 十卡各三态 负向注入 / 14 injections / 0 leaks / 0 漏检 M01 捕获 / 1 轮；3 个候选；3 个裁决 / 全部存档 </p><p class="section-note">真实复测 / 0 / 没有执行 现场 / 0 / 没有执行 </p><p class="section-note">当前状态 / 未批准 · 未授权 · 未实施 / 不可删改 责任人 / UNKNOWN / 待正式责任主体确认 叫停人 / UNKNOWN / 待正式责任主体确认 复测日 / UNKNOWN / 恢复费用 / UNKNOWN /</p></div></header>
+          <header class="section-head"><p class="section-no">M01 / 04</p><div><p class="eyebrow">CSS-ONLY FAILURE REPLAY</p><h2 id="m01-failure-title">AI 可熄火，人工与日常通道必须留</h2><p class="section-note">四态文字结论始终可见；选择标签只切换剖面。四态共用同一 M01 ID，不把桌面模拟写成现场事实。 </p><details class="evidence-trail"><summary>追证层</summary><p class="section-note">我们在桌面上跑过的那一次 桌面模拟｜非现场测试｜不代表真实项目发生过 状态声明：当前状态：未批准 · 未授权 · 未实施。  另须防止把机器门的『完整』读成专业深化已完成——前者只指证据链满足当前门禁,专业空间深化仍待具备资质的团队接续。</p><p class="section-note">三态票据：十卡各三态共 30 张票据已合并为单一 JSON 数组；每票含输入摘要、六门判定、依据路径及合成/非现场标记。人工基线与协议比较各 10 张为条件未齐；越线推进 10/10 被规则拒绝。 </p><p class="section-note">负向注入：负向注入 14 项，结果 `14 injections / 0 leaks`；覆盖越权、非AI通道缺失、撤回失败、责任空缺、M01 漂移等类型。 </p><p class="section-note">该结果仅证明桌面推演内无泄漏，不证明现场。 </p><p class="section-note">M01 一轮闭合：M01 通过 Codex 自身模型真实生成 1 轮空间候选：提示词、3 个候选、3 个裁决全部存档，没有删轮或结果性挑选；模型精确服务身份与种子不可得已如实记录。3 个候选均未越过授权、资源和运营条件，现场计数为 0。 </p><p class="section-note">整线降级：任一卡复测不过，整条线护照等级降回上一级，禁止只补最差一卡；该记录不是一次真实复测。 </p><p class="section-note">权限边界：众智园负责复查；AI 原点把问题说清再验证；大钟寺只有得到同意后才能小范围试用，并随时退出。 </p><p class="section-note">责任链（M01）：M01 是唯一展开最深责任链的候选。责任人：UNKNOWN；叫停人：UNKNOWN／待正式责任主体确认；复测日：UNKNOWN；恢复费用：UNKNOWN。 </p><p class="section-note">非 AI 与失败恢复：非 AI 等价路径为固定装卸时段、静态车位与人工引导；个人骑手不被跟踪或考核。失败时 AI 层熄灭，恢复原状和非 AI 时刻表，日常任务继续。 </p><p class="section-note">双计数：双计数已锁定为：桌面推演 `30/30`、真实复测 `0`、现场 `0`。 </p><p class="section-note">小结：边界线 / 桌面模拟｜非现场测试｜不代表真实项目发生过 / 不可删改 桌面票据 / 30/30 / 十卡各三态 负向注入 / 14 injections / 0 leaks / 0 漏检 M01 捕获 / 1 轮；3 个候选；3 个裁决 / 全部存档 </p><p class="section-note">真实复测 / 0 / 没有执行 现场 / 0 / 没有执行 </p><p class="section-note">当前状态 / 未批准 · 未授权 · 未实施 / 不可删改 责任人 / UNKNOWN / 待正式责任主体确认 叫停人 / UNKNOWN / 待正式责任主体确认 复测日 / UNKNOWN / 恢复费用 / UNKNOWN /</p></details></div></header>
           <input class="visually-hidden-control" type="radio" name="m01-replay-zh" id="replay-zh-1" checked>
           <input class="visually-hidden-control" type="radio" name="m01-replay-zh" id="replay-zh-2">
           <input class="visually-hidden-control" type="radio" name="m01-replay-zh" id="replay-zh-3">

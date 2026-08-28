@@ -1054,6 +1054,157 @@
       "closure_status": "closed_for_osm_attribution_and_provisional_geometry"
     },
     {
+      "source_id": "RIGHTS-OPENAI-TERMS-20260828",
+      "publisher": "OpenAI",
+      "title": "OpenAI Terms of Use (ROW) - Content ownership",
+      "document_date": "2026-01-01",
+      "url": "https://openai.com/policies/row-terms-of-use/",
+      "local_evidence_path": "report/copyright_statement.md",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "As between the submitter and OpenAI, and to the extent permitted by applicable law, the submitter owns Output; OpenAI assigns any right, title, and interest it may have in Output.",
+      "spatial_coverage": "OpenAI-generated current package visuals registered by package path",
+      "temporal_coverage": "Terms published and effective 2026-01-01; accessed 2026-08-28",
+      "transformation": "Rights basis only; asset-specific generation and transformation chains remain in the package asset records.",
+      "limitations": "Output may not be unique. The terms do not establish automatic copyright protection, factual accuracy, trademark clearance, or freedom from third-party rights claims.",
+      "supports": [
+        "OpenAI-to-submitter Output rights basis",
+        "public submission use when combined with the sharing policy and submitter declaration"
+      ],
+      "cannot_support": [
+        "uniqueness",
+        "automatic copyrightability",
+        "third-party non-infringement"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_openai_output_rights_basis"
+    },
+    {
+      "source_id": "RIGHTS-OPENAI-SHARING-20260828",
+      "publisher": "OpenAI",
+      "title": "OpenAI Sharing & Publication Policy - public sharing conditions",
+      "document_date": "2022-11-14",
+      "url": "https://openai.com/policies/sharing-publication-policy/",
+      "local_evidence_path": "report/copyright_statement.md",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "The policy generally permits public sharing of a user's own generated content, subject to human review, attribution to the user or company, clear AI disclosure, and human responsibility for the final content.",
+      "spatial_coverage": "OpenAI-generated current package visuals registered by package path",
+      "temporal_coverage": "Policy updated 2022-11-14; accessed 2026-08-28",
+      "transformation": "Public-display condition applied together with the Output-rights basis and the submitter declaration.",
+      "limitations": "The policy does not waive applicable law or third-party rights and does not replace per-asset human review.",
+      "supports": [
+        "public repository and review display",
+        "AI disclosure and human-responsibility requirements"
+      ],
+      "cannot_support": [
+        "third-party rights clearance",
+        "factual accuracy of generated imagery"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_openai_public_display_basis"
+    },
+    {
+      "source_id": "RIGHTS-SOURCE-HAN-SERIF-OFL-20260828",
+      "publisher": "Adobe",
+      "title": "Source Han Serif official LICENSE - SIL Open Font License 1.1",
+      "document_date": "2017-2022",
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-serif/release/LICENSE.txt",
+      "local_evidence_path": "report/copyright_statement.md",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "OFL 1.1 allows use, study, embedding, modification, bundling, and redistribution, subject to the licence, Reserved Font Name, and no-standalone-sale conditions.",
+      "spatial_coverage": "Source Han Serif inputs actually used in the final HTML, figure, Logo, or PDF chain",
+      "temporal_coverage": "Official adobe-fonts release and OFL evidence current on 2026-08-28; release 2.003R",
+      "transformation": "Official font inputs were installed into the deterministic build chain; the final package carries a renamed Regular HTML subset in one data-URI CSS asset and embeds Source Han objects in all four PDFs.",
+      "official_font_inputs": [
+        {
+          "filename": "SourceHanSerifSC-Regular.otf",
+          "release": "2.003R",
+          "weight_style": "Regular",
+          "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-serif/2.003R/OTF/SimplifiedChinese/SourceHanSerifSC-Regular.otf",
+          "sha256": "78aa7a328fd974df2d688c8a9fd74a33d8334dfa84ab24d9d11efb2ffc464117",
+          "workspace_only": true
+        },
+        {
+          "filename": "SourceHanSerifSC-Bold.otf",
+          "release": "2.003R",
+          "weight_style": "Bold",
+          "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-serif/2.003R/OTF/SimplifiedChinese/SourceHanSerifSC-Bold.otf",
+          "sha256": "706b8c0de2deff6cbc0c87e2cdedfd33a78b7ffd76cebb4549012f197ba611fe",
+          "workspace_only": true
+        }
+      ],
+      "limitations": "Technical embedding and licence provenance are verified separately; this record does not constitute legal advice.",
+      "supports": [
+        "Source Han Serif use, embedding, and redistribution"
+      ],
+      "cannot_support": [
+        "current proprietary or unidentified embedded fonts"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_final_source_han_installation"
+    },
+    {
+      "source_id": "RIGHTS-SOURCE-HAN-SANS-OFL-20260828",
+      "publisher": "Adobe",
+      "title": "Source Han Sans official LICENSE - SIL Open Font License 1.1",
+      "document_date": "2017-2022",
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/release/LICENSE.txt",
+      "local_evidence_path": "report/copyright_statement.md",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "OFL 1.1 allows use, study, embedding, modification, bundling, and redistribution, subject to the licence, Reserved Font Name, and no-standalone-sale conditions.",
+      "spatial_coverage": "Source Han Sans inputs actually used in the final HTML, figure, Logo, or PDF chain",
+      "temporal_coverage": "Official adobe-fonts release and OFL evidence current on 2026-08-28; release 2.005R",
+      "transformation": "Official font inputs were installed into the deterministic build chain; the final package carries a renamed Regular HTML subset in one data-URI CSS asset and embeds Source Han objects in all four PDFs.",
+      "limitations": "Technical embedding and licence provenance are verified separately; this record does not constitute legal advice.",
+      "supports": [
+        "Source Han Sans use, embedding, and redistribution"
+      ],
+      "cannot_support": [
+        "current proprietary or unidentified embedded fonts"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_final_source_han_installation",
+      "official_font_inputs": [
+        {
+          "filename": "SourceHanSansSC-Regular.otf",
+          "release": "2.005R",
+          "weight_style": "Regular",
+          "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/2.005R/OTF/SimplifiedChinese/SourceHanSansSC-Regular.otf",
+          "sha256": "f1d8611151880c6c336aabeac4640ef434fa13cbfbf1ffe82d0a71b2a5637256",
+          "workspace_only": true
+        },
+        {
+          "filename": "SourceHanSansSC-Bold.otf",
+          "release": "2.005R",
+          "weight_style": "Bold",
+          "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/2.005R/OTF/SimplifiedChinese/SourceHanSansSC-Bold.otf",
+          "sha256": "df2b90f5bcc6d01dfc964cec5f6d535d6b6aebd26ed7fd79a9c1b3f2112fcb6b",
+          "workspace_only": true
+        }
+      ]
+    },
+    {
+      "source_id": "RIGHTS-LOVART-OFFICIAL-TERMS-UNVERIFIED-20260828",
+      "publisher": "Lovart",
+      "title": "Lovart official terms and copyright-policy retrieval failure",
+      "document_date": "UNKNOWN",
+      "url": "https://www.lovart.ai/terms-of-service",
+      "local_evidence_path": "report/copyright_statement.md",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "No use grant is asserted. Two official service-terms paths and two official copyright-policy paths returned HTTP 404 within the authorised attempt limit.",
+      "spatial_coverage": "Historical Lovart-converted Logo route, replaced and not distributed in the current package",
+      "temporal_coverage": "Official-page retrieval attempts on 2026-08-28",
+      "transformation": "The Lovart-derived version was replaced by a project-authored vector and is not used as a rights basis.",
+      "limitations": "The official Lovart pages remained unavailable; therefore no Lovart use grant is asserted.",
+      "supports": [
+        "historical exclusion and replacement decision"
+      ],
+      "cannot_support": [
+        "rights for any Lovart-derived asset"
+      ],
+      "usability": "background_only",
+      "closure_status": "historical_replaced_not_distributed_not_rights_basis"
+    },
+    {
       "source_id": "RIGHTS-FONTS-2026",
       "publisher": "Submission team rights disclosure",
       "title": "Font use and distribution disclosure",
@@ -1061,20 +1212,19 @@
       "url": "PACKAGE_INTERNAL",
       "local_evidence_path": "report/copyright_statement.md",
       "access_date": "2026-08-18",
-      "license_allowed_use": "No font files are distributed in this package. System fonts are referenced without copying; technical PDF embedding does not itself establish font-license permission.",
+      "license_allowed_use": "Final HTML, figures, Logo outline input, and four PDFs use official Source Han Serif/Sans releases under SIL Open Font License 1.1; the renamed HTML subset is embedded in visual/assets/offline-cjk-font.css.",
       "spatial_coverage": "Not applicable",
       "temporal_coverage": "Final submission package",
-      "transformation": "The rights statement records system-font use, historical Source Han Serif build input, and the absence of Barlow Condensed from the package.",
-      "limitations": "This record does not independently establish third-party font-license rights and makes no license claim beyond the package disclosure.",
+      "transformation": "Source Han inputs were installed, figures and A3/A0 were rebuilt as applicable, the HTML subset was regenerated from Serif SC Regular, and the OFL 1.1 full text was embedded in report/copyright_statement.md.",
+      "limitations": "Engineering licence and embedding evidence; not legal advice.",
       "supports": [
-        "font provenance and non-distribution disclosure"
+        "final Source Han provenance, embedding, and redistribution basis"
       ],
       "cannot_support": [
-        "independent font-license clearance",
-        "ownership of third-party typefaces"
+        "trademark or third-party rights clearance"
       ],
       "usability": "formal_ready",
-      "closure_status": "closed_for_font_disclosure"
+      "closure_status": "closed_for_final_source_han_chain"
     },
     {
       "source_id": "RIGHTS-GPT-IMAGE-2026",
@@ -1084,11 +1234,11 @@
       "url": "PACKAGE_INTERNAL",
       "local_evidence_path": "visual/assets/film-history-engineering-v1.webp",
       "access_date": "2026-08-18",
-      "license_allowed_use": "Project batch records disclose OpenAI image_gen (GPT Image 2) concept-image generation and the submitter's acceptance of public AI-image use for this entry.",
+      "license_allowed_use": "Project batch records disclose OpenAI image_gen concept-image generation. OpenAI Terms of Use effective 2026-01-01 provide the Output-rights basis, and the Sharing & Publication Policy updated 2022-11-14 provides the public-display conditions, subject to human review, AI disclosure, and submitter responsibility.",
       "spatial_coverage": "Conceptual visualization only",
       "temporal_coverage": "Final submission package",
       "transformation": "Synthetic concept imagery was packaged as visual communication material and is not used as evidence of existing conditions.",
-      "limitations": "This package does not independently verify platform licensing and does not claim that synthetic imagery proves site facts, construction status, or third-party rights clearance.",
+      "limitations": "The official platform terms are independently recorded, but they do not make synthetic imagery site evidence and do not guarantee uniqueness, automatic copyrightability, factual accuracy, or third-party non-infringement.",
       "supports": [
         "AI-image provenance disclosure",
         "conceptual visualization status"
@@ -1096,10 +1246,10 @@
       "cannot_support": [
         "existing-condition evidence",
         "construction completion",
-        "independent platform-license verification"
+        "uniqueness, automatic copyrightability, or third-party non-infringement"
       ],
       "usability": "formal_ready",
-      "closure_status": "closed_for_gpt_image_disclosure"
+      "closure_status": "closed_for_openai_rights_basis_pending_submitter_declaration_install"
     },
     {
       "source_id": "RIGHTS-GPT-IMAGE-FIVE-SLOTS-20260819",
@@ -1113,7 +1263,7 @@
       "spatial_coverage": "Current package retains visual/assets/slot-d.jpg and visual/assets/slot-k.jpg from this five-image batch; the three replaced slots are no longer present.",
       "temporal_coverage": "Generated and selected on 2026-08-19; packaged for final submission review",
       "transformation": "The five selected PNG outputs were proportionally resized from 1672x941 to 1600x900 and encoded as JPEG. Slot d additionally received a clone-only removal of a suspected pseudo-text speck row within x=796..839, y=654..667 before resizing; no subject, composition, or narrative element was changed.",
-      "limitations": "These synthetic images are concept illustrations, not evidence of existing conditions, permissions, construction, exact locations, public operation, or third-party rights clearance. The package does not independently verify platform licensing.",
+      "limitations": "These synthetic images are concept illustrations, not evidence of existing conditions, permissions, construction, exact locations, public operation, or third-party rights clearance. Official OpenAI terms are recorded but do not guarantee uniqueness, copyrightability, or non-infringement.",
       "supports": [
         "provenance disclosure for visual/assets/slot-d.jpg",
         "provenance disclosure for visual/assets/slot-k.jpg"
@@ -1122,34 +1272,32 @@
         "existing-condition evidence",
         "construction completion or operational authorization",
         "exact site representation",
-        "independent platform-license verification"
+        "uniqueness, automatic copyrightability, or third-party non-infringement"
       ],
       "usability": "formal_ready",
-      "closure_status": "closed_for_selected_five_slot_disclosure"
+      "closure_status": "closed_for_openai_rights_basis_pending_submitter_declaration_install"
     },
     {
       "source_id": "RIGHTS-LOVART-2026",
       "publisher": "Submission team rights disclosure",
-      "title": "Lovart brand-lockup disclosure",
+      "title": "Lovart route exclusion record",
       "document_date": "2026-08-18",
       "url": "PACKAGE_INTERNAL",
       "local_evidence_path": "visual/assets/brand-lockup-paper.svg",
       "access_date": "2026-08-18",
-      "license_allowed_use": "The submitter confirmed commercial use of the Lovart-generated brand lockup for this submission.",
+      "license_allowed_use": "No Lovart platform use grant is asserted or relied upon for the current package.",
       "spatial_coverage": "Not applicable",
       "temporal_coverage": "Final submission package",
-      "transformation": "The selected brand lockup is included as a package asset and disclosed in the copyright statement.",
-      "limitations": "Commercial-use confirmation is user-provided and was not independently verified against the platform; no trademark search, registration, non-infringement, or exclusivity claim is made.",
+      "transformation": "The Lovart-derived lockup was replaced by a project-authored vector; the replaced version and candidates are not distributed.",
+      "limitations": "Historical record only. Current Logo rights and provenance are recorded under ASSET-PROJECT-AUTHORED-LOGO-20260828.",
       "supports": [
-        "brand-lockup provenance disclosure"
+        "proof that the Lovart route is excluded from the current package"
       ],
       "cannot_support": [
-        "trademark clearance",
-        "registered ownership",
-        "independent platform-license verification"
+        "rights for Lovart-derived assets"
       ],
-      "usability": "formal_ready",
-      "closure_status": "closed_for_lovart_disclosure"
+      "usability": "background_only",
+      "closure_status": "historical_replaced_not_distributed_not_rights_basis"
     },
     {
       "source_id": "ASSET-PAGE-SCENE-RETAINED-20260817-19",
@@ -1226,7 +1374,7 @@
         "existing-condition evidence",
         "approval, authorization, construction, or operation",
         "real responsibility or interface text",
-        "independent platform-license verification"
+        "uniqueness, automatic copyrightability, or third-party non-infringement"
       ],
       "usability": "formal_ready",
       "closure_status": "closed_for_selected_111d2_scene_provenance"
@@ -1331,7 +1479,7 @@
         "official geometry, road redline, land right, or precise location",
         "approval, authorization, construction, or operation",
         "field-test results",
-        "independent platform-license verification"
+        "uniqueness, automatic copyrightability, or third-party non-infringement"
       ],
       "usability": "formal_ready",
       "closure_status": "closed_for_restored_mobility_bluegreen_provenance"
@@ -1524,11 +1672,195 @@
       ],
       "usability": "provisional_only",
       "closure_status": "closed_for_provisional_corridor_registry_only"
+    },
+    {
+      "source_id": "ASSET-PROJECT-AUTHORED-LOGO-20260828",
+      "publisher": "Submission team",
+      "title": "Project-authored vector Logo A",
+      "document_date": "2026-08-28",
+      "url": "PACKAGE_INTERNAL",
+      "local_evidence_path": "visual/assets/brand-lockup-paper.svg",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "Project-authored vector may be displayed and redistributed with the package; trademark and legal adoption remain separately reviewable.",
+      "spatial_coverage": "Not applicable",
+      "temporal_coverage": "Final package asset installed 2026-08-28",
+      "transformation": "Final installed input pinned by SHA-256 8dfb43066965cea36c3b2a8106cddc89acf182bd83166e374378587774614332.",
+      "limitations": "Engineering provenance and licence evidence; not legal advice.",
+      "supports": [
+        "final package rights and provenance record"
+      ],
+      "cannot_support": [
+        "trademark clearance or third-party non-infringement"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_final_package_evidence",
+      "sha256": "8dfb43066965cea36c3b2a8106cddc89acf182bd83166e374378587774614332"
+    },
+    {
+      "source_id": "FONT-SOURCE-HAN-SERIF-REGULAR-20260828",
+      "publisher": "Adobe",
+      "title": "Source Han Serif SC Regular",
+      "document_date": "2026-08-28",
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-serif/2.003R/OTF/SimplifiedChinese/SourceHanSerifSC-Regular.otf",
+      "local_evidence_path": "report/copyright_statement.md",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "SIL Open Font License 1.1; use, embedding, modification, bundling, and redistribution subject to OFL 1.1.",
+      "spatial_coverage": "Not applicable",
+      "temporal_coverage": "adobe-fonts release tag 2.003R; Regular",
+      "transformation": "Final installed input pinned by SHA-256 78aa7a328fd974df2d688c8a9fd74a33d8334dfa84ab24d9d11efb2ffc464117.",
+      "limitations": "Engineering provenance and licence evidence; not legal advice.",
+      "supports": [
+        "final package rights and provenance record"
+      ],
+      "cannot_support": [
+        "trademark clearance or third-party non-infringement"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_final_package_evidence",
+      "sha256": "78aa7a328fd974df2d688c8a9fd74a33d8334dfa84ab24d9d11efb2ffc464117"
+    },
+    {
+      "source_id": "FONT-SOURCE-HAN-SERIF-BOLD-20260828",
+      "publisher": "Adobe",
+      "title": "Source Han Serif SC Bold",
+      "document_date": "2026-08-28",
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-serif/2.003R/OTF/SimplifiedChinese/SourceHanSerifSC-Bold.otf",
+      "local_evidence_path": "report/copyright_statement.md",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "SIL Open Font License 1.1; use, embedding, modification, bundling, and redistribution subject to OFL 1.1.",
+      "spatial_coverage": "Not applicable",
+      "temporal_coverage": "adobe-fonts release tag 2.003R; Bold",
+      "transformation": "Final installed input pinned by SHA-256 706b8c0de2deff6cbc0c87e2cdedfd33a78b7ffd76cebb4549012f197ba611fe.",
+      "limitations": "Engineering provenance and licence evidence; not legal advice.",
+      "supports": [
+        "final package rights and provenance record"
+      ],
+      "cannot_support": [
+        "trademark clearance or third-party non-infringement"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_final_package_evidence",
+      "sha256": "706b8c0de2deff6cbc0c87e2cdedfd33a78b7ffd76cebb4549012f197ba611fe"
+    },
+    {
+      "source_id": "FONT-SOURCE-HAN-SANS-REGULAR-20260828",
+      "publisher": "Adobe",
+      "title": "Source Han Sans SC Regular",
+      "document_date": "2026-08-28",
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/2.005R/OTF/SimplifiedChinese/SourceHanSansSC-Regular.otf",
+      "local_evidence_path": "report/copyright_statement.md",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "SIL Open Font License 1.1; use, embedding, modification, bundling, and redistribution subject to OFL 1.1.",
+      "spatial_coverage": "Not applicable",
+      "temporal_coverage": "adobe-fonts release tag 2.005R; Regular",
+      "transformation": "Final installed input pinned by SHA-256 f1d8611151880c6c336aabeac4640ef434fa13cbfbf1ffe82d0a71b2a5637256.",
+      "limitations": "Engineering provenance and licence evidence; not legal advice.",
+      "supports": [
+        "final package rights and provenance record"
+      ],
+      "cannot_support": [
+        "trademark clearance or third-party non-infringement"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_final_package_evidence",
+      "sha256": "f1d8611151880c6c336aabeac4640ef434fa13cbfbf1ffe82d0a71b2a5637256"
+    },
+    {
+      "source_id": "FONT-SOURCE-HAN-SANS-BOLD-20260828",
+      "publisher": "Adobe",
+      "title": "Source Han Sans SC Bold",
+      "document_date": "2026-08-28",
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/2.005R/OTF/SimplifiedChinese/SourceHanSansSC-Bold.otf",
+      "local_evidence_path": "report/copyright_statement.md",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "SIL Open Font License 1.1; use, embedding, modification, bundling, and redistribution subject to OFL 1.1.",
+      "spatial_coverage": "Not applicable",
+      "temporal_coverage": "adobe-fonts release tag 2.005R; Bold",
+      "transformation": "Final installed input pinned by SHA-256 df2b90f5bcc6d01dfc964cec5f6d535d6b6aebd26ed7fd79a9c1b3f2112fcb6b.",
+      "limitations": "Engineering provenance and licence evidence; not legal advice.",
+      "supports": [
+        "final package rights and provenance record"
+      ],
+      "cannot_support": [
+        "trademark clearance or third-party non-infringement"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_final_package_evidence",
+      "sha256": "df2b90f5bcc6d01dfc964cec5f6d535d6b6aebd26ed7fd79a9c1b3f2112fcb6b"
+    },
+    {
+      "source_id": "ASSET-REGIONAL-SYNERGY-20260828",
+      "publisher": "Submission team",
+      "title": "Regional synergy bilingual figure pair",
+      "document_date": "2026-08-28",
+      "url": "PACKAGE_INTERNAL",
+      "local_evidence_path": "assets/figures/regional-synergy.png",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "Project-authored deterministic non-geographic interface diagram.",
+      "spatial_coverage": "Not applicable",
+      "temporal_coverage": "Final bilingual pair installed 2026-08-28",
+      "transformation": "Final installed input pinned by SHA-256 547ef98977b136860ae6931d84984aa62099f43e8cc2583873cd3dc70f566eba.",
+      "limitations": "Engineering provenance and licence evidence; not legal advice.",
+      "supports": [
+        "final package rights and provenance record"
+      ],
+      "cannot_support": [
+        "trademark clearance or third-party non-infringement"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_final_package_evidence",
+      "sha256": "547ef98977b136860ae6931d84984aa62099f43e8cc2583873cd3dc70f566eba"
+    },
+    {
+      "source_id": "ASSET-METRICS-EVIDENCE-DETAIL-20260828",
+      "publisher": "Submission team",
+      "title": "Metrics responsibility and handoff bilingual detail pair",
+      "document_date": "2026-08-28",
+      "url": "PACKAGE_INTERNAL",
+      "local_evidence_path": "assets/figures/metrics-evidence-detail.png",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "Project-authored deterministic evidence detail diagram.",
+      "spatial_coverage": "Not applicable",
+      "temporal_coverage": "Final bilingual pair installed 2026-08-28",
+      "transformation": "Final installed input pinned by SHA-256 e091981d2665461baa1b87929b0c601c750e68885b395b580b062c96c57da107.",
+      "limitations": "Engineering provenance and licence evidence; not legal advice.",
+      "supports": [
+        "final package rights and provenance record"
+      ],
+      "cannot_support": [
+        "trademark clearance or third-party non-infringement"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_final_package_evidence",
+      "sha256": "e091981d2665461baa1b87929b0c601c750e68885b395b580b062c96c57da107"
+    },
+    {
+      "source_id": "ASSET-OFFLINE-CJK-FONT-20260828",
+      "publisher": "Adobe",
+      "title": "Offline CJK embedded subset CSS",
+      "document_date": "2026-08-28",
+      "url": "PACKAGE_INTERNAL",
+      "local_evidence_path": "visual/assets/offline-cjk-font.css",
+      "access_date": "2026-08-28",
+      "license_allowed_use": "Renamed Source Han Serif SC Regular subset embedded under SIL Open Font License 1.1.",
+      "spatial_coverage": "Not applicable",
+      "temporal_coverage": "Final subset rebuilt in 186H",
+      "transformation": "Source Han Serif SC Regular 78aa7a328fd974df2d688c8a9fd74a33d8334dfa84ab24d9d11efb2ffc464117 was subset to 1225 requested characters, renamed to JZ Offline CJK 186H, embedded as one WOFF2 data URI, and installed in four HTML carriers; WOFF2 SHA-256 81697546dfaa5d87a83a00be1d7aa78435d3d40e4d3f02ca6e032e31bedfc961.",
+      "limitations": "Engineering provenance and licence evidence; not legal advice.",
+      "supports": [
+        "final package rights and provenance record"
+      ],
+      "cannot_support": [
+        "trademark clearance or third-party non-infringement"
+      ],
+      "usability": "formal_ready",
+      "closure_status": "closed_for_final_package_evidence",
+      "sha256": "33c3174956727091b7183cff419a58ecd2d6b760ee644d97f7c8df3b37427f84"
     }
   ],
   "package_asset_coverage": {
     "as_of_date": "2026-08-28",
-    "expected_current_file_count": 71,
+    "expected_current_file_count": 76,
     "coverage_contract": "Every current package file must match exactly one mutually exclusive rule below. A future file addition or deletion requires this ledger and the copyright coverage matrix to be refreshed.",
     "rules": [
       {
@@ -1574,12 +1906,14 @@
       {
         "rule_id": "COV-03-FIGURES",
         "glob": "assets/figures/*.png",
-        "expected_count": 20,
+        "expected_count": 24,
         "source_ids": [
           "ASSET-FIGURE-FAMILY-20260822",
           "ASSET-SITE-OVERVIEW-20260818",
           "ASSET-MOBILITY-BLUEGREEN-20260821",
-          "RIGHTS-GPT-IMAGE-2026"
+          "RIGHTS-GPT-IMAGE-2026",
+          "ASSET-REGIONAL-SYNERGY-20260828",
+          "ASSET-METRICS-EVIDENCE-DETAIL-20260828"
         ],
         "copyright_record": "COPY-COV-03"
       },
@@ -1619,13 +1953,15 @@
           "visual/assets/brand-lockup-paper.svg",
           "visual/assets/film-history-engineering-v1.webp",
           "visual/assets/geometry-sequence-data.js",
-          "visual/assets/geometry-sequence.js"
+          "visual/assets/geometry-sequence.js",
+          "visual/assets/offline-cjk-font.css"
         ],
-        "expected_count": 4,
+        "expected_count": 5,
         "source_ids": [
-          "RIGHTS-LOVART-2026",
+          "ASSET-PROJECT-AUTHORED-LOGO-20260828",
           "RIGHTS-GPT-IMAGE-2026",
-          "ASSET-GEOMETRY-SEQUENCE-20260820"
+          "ASSET-GEOMETRY-SEQUENCE-20260820",
+          "ASSET-OFFLINE-CJK-FONT-20260828"
         ],
         "copyright_record": "COPY-COV-07"
       },

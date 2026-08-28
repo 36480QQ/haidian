@@ -36,3 +36,11 @@
 ### 公开资料与合规说明
 
 - 本版本继续区分公开事实、概念建议和待接续事项；图示、指标和场景说明不替代法定规划、专业审查、授权程序或现场验证。
+
+## v1.1 - 2026-08-28
+
+- 中文离线显示：四件 HTML 使用 `visual/assets/offline-cjk-font.css` 的思源宋体 Regular 子集；A0/A3 与 24 张正式图完成思源字体链复核。
+- 权利证据：`sources.json`、`report/copyright_statement.md` 与 `manifest.json` 登记 OpenAI 条款、项目自绘 Logo、思源字体六件证据和 OFL 1.1 全文。
+- 区域协同：`proposal.md` / `.en.md` 与 `regional-synergy` 中英图覆盖北纬社区、未来科学城、怀柔科学城、经开区和京津冀的进出条件与证据状态。
+- agent.6 运营：双语 proposal 补齐七项运行、责任、退出、维护与资金状态矩阵。
+- 指标可读性：`metrics-evidence` 保留总览，新增 `metrics-evidence-detail` 中英责任／依赖／交接明细，并进入 A3 与正文引用。
