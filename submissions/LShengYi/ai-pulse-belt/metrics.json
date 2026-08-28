@@ -16,7 +16,8 @@
       "confidence": "high",
       "assumptions": [
         "No official boundary in site package; PROV-SITE-001 provisional boundary used.",
-        "Official planning limit 11400000 sqm; computed fit deviation 0.11%."
+        "Official planning limit 11400000 sqm; computed fit deviation 0.11%.",
+        "Value is a temporary model-computed figure; not for precise area or formal planning evidence."
       ]
     },
     "building_footprint_area_sqm": {
@@ -83,7 +84,8 @@
       "formula": "sum(area_sqm_calculated) over 3 key areas in EPSG:4548",
       "confidence": "high",
       "assumptions": [
-        "Areas measured on provisional key-area scopes; per-area deviations disclosed in ASSUME-002."
+        "Areas measured on provisional key-area scopes; per-area deviations disclosed in ASSUME-002.",
+        "Values are temporary model-computed figures; not for precise area or formal planning evidence."
       ]
     },
     "land_parcel_count": {
@@ -210,7 +212,7 @@
       "source_files": [
         "geometry/land_use.geojson"
       ],
-      "formula": "sum(area of 05 commerce) / total land-use area in EPSG:4548",
+      "formula": "sum(area of 09 commerce) / total land-use area in EPSG:4548",
       "confidence": "medium",
       "assumptions": [
         "Concept layer recomputation; not official land-use figures"
@@ -672,7 +674,7 @@
       "formula": "public funds reserved for relocation/compensation",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Budget figures are concept assumptions only (see ASSUME-005), not commitments."
+      "reason": "Withdrawn / non-operative (v10.14.15): no monetary range is claimed - budget figures are deleted because unit prices lack publisher/date/region/calibre/licence and per-item recomputation chains (see ASSUME-005); not a commitment."
     },
     "compute_capacity": {
       "status": "unknown",
@@ -732,7 +734,7 @@
       "formula": "annual operation cost of scenario ecosystem",
       "confidence": "unknown",
       "assumptions": [],
-      "reason": "Concept range 5-15 M CNY/year (JZ-12 caliber) registered as an assumption in ASSUME-005, not a commitment."
+      "reason": "Withdrawn / non-operative (v10.14.15): the previous annual-operation range was deleted because it lacked publisher/date/region/calibre/licence and a per-item recomputation chain; not a commitment. Value stays unknown pending the official investment plan."
     },
     "ai_innovation_index": {
       "status": "unknown",

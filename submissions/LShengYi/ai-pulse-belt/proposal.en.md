@@ -4,7 +4,7 @@ author_github: "LShengYi"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "19"
+iteration: "20"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "AI Pulse Belt: the engineering tradition of the centennial Jing-Zhang Railway 'iron pulse' — inspectable, verifiable, retired — is translated into a public protocol for the AI era: before any AI service enters public space, it must be declarable, testable, releasable, and retirable (P1-P4), each beat paired with a spatial interface and passing evidence. An offline synthetic rehearsal of 120 checks blocks all 105 failure branches, with zero services released (all currently not authorized, not field-run); 76 metrics (61 known) are recomputable, and the three-level scope, the three key areas, and the 12 scenario cards respond to announcement clauses 1.4/1.5 and the agent.1-6 tasks. All content is conceptual recommendation; once official boundaries and existing-condition surveys are released, everything is recomputed under the P4 procedure."
@@ -64,7 +64,7 @@ This section provides review-dimension evidence indexes, response checklists; re
 
 Applies to all narrative, tables, figures, JSON, and media scripts; every downgrade traceable via changelog.
 
-**Version traceability**: iteration **v10.14.14**(2026-08-28, frontmatter 19); per-round records in `changelog.md`. **v10.14.0** = compliance-repair: needs_review source downgraded(HAIDIAN-URBAN-RENEWAL-2025 removed, Table B4 reworded as schematic numbering); UAS rules updated to 2026 Beijing Municipal UAS Regulations(No. 50, effective 2026-05-01; Beijing-wide controlled airspace, prior application required)—cards, standards matrix, source registry synced; metric count 61/76 known(metrics.json). **v10.14.14** = seven-dimension review repair(prices deleted, 100-day split, red-line scopes, data minimization, en tables A14–A21/C1–C5 95/95). QA(E12): pixel-level figure review—title bands 46–94 px apart, headroom 1–2%, zero duplicate subtitle rows, dashed boundaries machine-checkable; "title clipped" refuted.
+**Version traceability**: iteration **v10.14.15**(2026-08-28, frontmatter 20); per-round records in `changelog.md`. **v10.14.0** = compliance-repair: needs_review source downgraded(HAIDIAN-URBAN-RENEWAL-2025 removed, Table B4 reworded as schematic numbering); UAS rules updated to 2026 Beijing Municipal UAS Regulations(No. 50, effective 2026-05-01; Beijing-wide controlled airspace, prior application required)—cards, standards matrix, source registry synced; metric count 61/76 known(metrics.json). **v10.14.14** = seven-dimension review repair(prices deleted, 100-day split, red-line scopes, data minimization, en tables A14–A21/C1–C5 95/95). QA(E12): pixel-level figure review—title bands 46–94 px apart, headroom 1–2%, zero duplicate subtitle rows, dashed boundaries machine-checkable; "title clipped" refuted.
 
 **Table A1 One-page review entry (review-dimension evidence index — every row gives an openable file and runnable command; machine-verifiable items re-run offline)**
 
@@ -119,15 +119,17 @@ Applies to all narrative, tables, figures, JSON, and media scripts; every downgr
 | --- | --- | --- |
 |known, directly recomputable|61|Spatial class 14(areas/ratios/counts, EPSG:4548) + functional proportions 7(concept recalc) + element counts 19(registered in narrative, incl. 120-check rehearsal/11 passport fields/5 evidence gates/8 hundred-day steps/12 equivalence registrations) + mechanism coverage 9(8 coverage ratios verified =1.0, plus an 8-dimension risk-registry count) + v10.4 asset family 12(8 state-machine states/8 gate transitions, 16 dual gateways, 8 roles & 5 constitutional rules, 15/15×3 contracts, 120/120 re-runnable receipts, 7-dimension index, 3 issue-ledger entries, 5 evidence levels); full list in Metrics chapter|
 |unknown, pending official data|15|Control class 12(FAR/height/density/setback/households/budget/compute/operations, etc.) + performance class 3(AI innovation index/talent density/AI output value, formulas registered); each `reason` states recomputation path|
-|Concept ranges enter no conclusion|all|Every proportion/investment/funding range marked "pending review", see ASSUME-005|
+|Concept ranges enter no conclusion|all|Every proportion range marked "pending review"; monetary ranges withdrawn, none listed (see ASSUME-005)|
 
-**Table A6 Official-vs-measured deviation statement**
+**Table A6 Area deviation disclosure (temporary model-computed)**
 
-| Item | Official value | Package-measured value | Deviation & handling |
+| Item | Official provisional value | Package recomputation (temporary model) | Deviation & handling |
 | --- | --- | --- | --- |
-|Overall design area|11.400 km²|11.413 km²(EPSG:4548)|+0.11%, disclosed in ASSUME-002|
-|Three key areas combined|368.4 ha|369.29 ha|+0.24%, per-zone disclosure(+0.43/+0.02/+0.06%)|
+|Overall design area|11.400 km²|11.413 km²(EPSG:4548)|+0.11% (temporary model-computed), ASSUME-002|
+|Three key areas combined|368.4 ha|369.29 ha|+0.24% per-zone disclosure (temporary model-computed)|
 |Green ratio|No official value|25.0%(concept-layer recomputation)|Not existing stock; caliber in metrics chapter|
+
+> Table note: temporary model-computed values; not for precise area or formal planning evidence.
 
 **Table A7 Deliverables & verification paths**
 
@@ -279,10 +281,10 @@ Every [assumption:] citation points to an assumptions.json entry—traceable id,
 | Assumption ID | Content summary | Confidence | Refs | Managing file & disposition |
 | --- | --- | --- | --- | --- |
 |ASSUME-001|Official geometry missing; provisional boundary used|high|1|replaced via P4 on official survey|
-|ASSUME-002|Fit deviation 11.413 vs 11.400 km²(+0.11%)|high|4|recompute + sync Table A6|
+|ASSUME-002|Recomputation deviation +0.11% (temporary model value)|high|4|recompute + sync Table A6|
 |ASSUME-003|Planning indicators unpublished; ranges pending|unknown|2|recompute on control-plan release|
 |ASSUME-004|Deterministic generation(fixed seed)|agent-declared|1|re-verified each revision|
-|ASSUME-005|Industry ratios & investment matrix = concept baseline|medium|5|P4 calibration on official plan|
+|ASSUME-005|Industry ratios = concept baseline; budget ranges withdrawn (non-operative)|medium|5|P4 calibration on official plan|
 |ASSUME-006|Two-wing orientation registered as concept|medium|2|P4 update on official release|
 |ASSUME-007|Public Issue #1029 Dazhongsi centroid deviation cited|high|1|recheck when issue closes|
 |A-CONTROLS-001|Official control conditions missing|high|3|formal after confirmation|
@@ -426,7 +428,7 @@ The 8 questions a reviewer most likely asks right after opening proposal.md, eac
 |1|Mapping to six taskbook tasks?|agent.1–6 item-by-item; three-column mapping(taskbook wording→response→deliverable)|A1+A2|proposal.md, agent.json|
 |2|Originality? Falsifiable?|Four falsifiable questions + candidate comparison; Pulse Protocol P1–P4(waveform=run/pulse=test/flat-line=stop); state_machine_irreducible unique in 840|A11+Q|proposal.md, design_depth_matrix.json, track_scan.json|
 |3|What if AI stops?|8-state machine(blackout drill & retirement audit non-skippable); dividend contracts BASE→BOOST→BLACKOUT→BEQUEST 15/15; dual gateways + passport 11 fields|C2+C3|state-machine.json, dividend-contracts.json, implementation-gates.json|
-|4|Area data reliable?|100-m/100-day first segment: desktop census with zero additional official data(official calibers); red-line/transport/ecology recheck + E2 permit = field-opening prerequisites, consistent with desktop census; JZ-01 timeline(EPSG:4548); fit deviations disclosed(overall +0.11%, key areas +0.02%–+0.43%); 76 metrics(61 known) with formula & source|A3+metrics|metrics.json, assumptions.json, geometry/*.geojson|
+|4|Area data reliable?|100-m/100-day first segment: desktop census with zero additional official data(temporary model-computed calibers); red-line/transport/ecology recheck + E2 permit = field-opening prerequisites, consistent with desktop census; JZ-01 timeline(EPSG:4548); fit deviations disclosed(overall +0.11%, key areas +0.02%–+0.43%); 76 metrics(61 known) with formula & source|A3+metrics|metrics.json, assumptions.json, geometry/*.geojson|
 |5|Public participation?|8 personas + affected-public role; accessible & non-digital services(human paths/tactile paving/committee); issue ledger entry by entry|C1+committee|simulation.json, governance-raci.json|
 |6|Risk & copyright boundaries?|Statutory vs self-imposed listed separately; 5 rollback triggers + 5 hard stops; L1–L5 evidence; provisional disclosed, never forged|risk+std|risk.json, standard_matrix.json, errata.json|
 |7|Bilingual alignment?|Bilingual 1:1(proposal/PDF/HTML/figures zh+en); en = ordered subsequence of zh; supplement tables(A14–A21, C1–C5) got en translations in v10.14.14—95 tables aligned|bilingual scan|proposal.md, proposal.en.md|
@@ -626,7 +628,7 @@ The overall design scope(11.413 km²) requires control-detailed-planning-level u
 
 **Road network (conceptual recommendation)**: a "four-horizontal, two-vertical" skeleton—horizontal: North 5th Ring Road(expressway), Tsinghua East Road(secondary), Chengfu Road(branch), Zhichun Road(arterial); vertical: Xueyuan Road/Xitucheng Road(arterial), Heqing Road/Dazhongsi East Road(secondary); plus new design streets—**Pulse-Belt Avenue(智脉大道)**, Pulse-2nd Street, Pulse-3rd Street—organizing block-level micro-circulation, with a continuous greenway inside central corridor [data:geometry/roads.geojson#ROAD-001] [data:geometry/roads.geojson#ROAD-010].
 
-**Land use**: `geometry/land_use.geojson` has 155 parcels across 13 classes, seamlessly covering boundary(difference ~30 m², 0.0003%, from EPSG:4326 rounding; verified by `validate_cover`) [data:geometry/land_use.geojson#LU-001]. Research 0802 dominates, supported by commercial 05, residential 0701, cultural 0803, educational 0804; central corridor(1401 park green) ~260 m wide, north-south [data:geometry/green_space.geojson#GREEN-001]. `geometry/buildings.geojson`: 84 conceptual footprints(design_proposal, non-overlapping, not statutory permits) [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. **Building heights, intensity, red lines, setbacks, roof form, massing, and facility standards are "pending official control conditions"—agent-estimated values never presented as approved indicators.**
+**Land use**: `geometry/land_use.geojson` has 155 parcels across 13 classes, seamlessly covering boundary(difference ~30 m², 0.0003%, from EPSG:4326 rounding; verified by `validate_cover`) [data:geometry/land_use.geojson#LU-001]. Research 0802 dominates, supported by commercial 09, residential 0701, cultural 0803, educational 0804; central corridor(1401 park green) ~260 m wide, north-south [data:geometry/green_space.geojson#GREEN-001]. `geometry/buildings.geojson`: 84 conceptual footprints(design_proposal, non-overlapping, not statutory permits) [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. **Building heights, intensity, red lines, setbacks, roof form, massing, and facility standards are "pending official control conditions"—agent-estimated values never presented as approved indicators.**
 
 **East-west stitching and north-south connection**(answering "promoting east-west stitching and north-south connection"): **north-south**—central greenway(JZ-01) and Pulse-Belt Avenue(JZ-06) form twin spines, continuous slow-traffic greenway keeps walking/cycling uninterrupted [data:geometry/green_space.geojson#GREEN-001] [data:geometry/roads.geojson#ROAD-008]; **east-west**—four zone bands flanking the greenway, plus Wudaokou/Dazhongsi station-front pedestrian interfaces(JZ-05), Tsinghua-East-Road education-belt stitching(JZ-07), and Xueyuan-Road protective green interfaces [data:geometry/land_use.geojson#LU-001]. Concept expression, updated under P4 on official release.
 
@@ -934,7 +936,7 @@ Cards unfold through eight-element structure(**service users, spatial carrier, u
 |Low-altitude delivery route verification|Concept Zhongzhiyuan–Dazhongsi route [data:geometry/public_space.geojson#PUBLIC-014]|Drone delivery(card 06) [scenario:robot-delivery-low-speed]|Subject to airspace, safety regulations; no facial capture|No operation without airspace approval; zero tolerance for safety hazards|
 |Multimodal wayfinding evaluation ground|Central greenway node [data:geometry/public_space.geojson#PUBLIC-015]|Multimodal evaluation of barrier-free wayfinding(card 08)|No personal trajectory storage; on-site verifiable|On-site mismatch stops it|
 
-**Scenario technical basis (conceptual recommendation)**: AI deployment path of scenario cards and test scenarios is anchored to public technical standards, regulations, and pilots, keeping technical path verifiable [standard:UNMANNED-AIRCRAFT-REGULATIONS] [standard:ICV-ROAD-TEST-REGULATIONS] [standard:BARRIER-FREE-DESIGN-CODE]; low-altitude delivery and vehicle-road-cloud trials also anchor to Beijing municipal UAS measures and vehicle-road-cloud integration pilot conditions [standard:BEIJING-UAS-MEASURES] [standard:V2X-CLOUD-INTEGRATION-PILOT]:
+**Scenario technical basis (conceptual recommendation)**: AI deployment path of scenario cards and test scenarios is anchored to public technical standards, regulations, and pilots, keeping technical path verifiable [standard:UNMANNED-AIRCRAFT-REGULATIONS] [standard:ICV-ROAD-TEST-REGULATIONS] [standard:BARRIER-FREE-DESIGN-CODE]; low-altitude delivery and vehicle-road-cloud trials also anchor to Beijing municipal UAS measures and vehicle-road-cloud integration pilot conditions [standard:BEIJING-UAS-MEASURES] [standard:V2X-CLOUD-INTEGRATION-PILOT]. The five bases - UAS regulations, ICV road-test rules, vehicle-road-cloud pilot, GB 50763 - are NOT in the organizer approved formal list (checked 2026-08-28); registered as background/needs-review pre-implementation verification items (sources.json downgraded to background_only), not formal basis - official text, number, date, scope to be completed and registry review awaited before implementation:
 
 | Scenario / test | Public reference basis | Constraint on this proposal's expression |
 | --- | --- | --- |
@@ -943,6 +945,8 @@ Cards unfold through eight-element structure(**service users, spatial carrier, u
 |Card 06 drone delivery station + low-altitude route verification|"Interim Regulations on the Flight Management of Unmanned Aircraft"(effective 2024-01-01); "Beijing Municipal UAS Regulations"(No. 50, effective 2026-05-01; Beijing-wide controlled airspace)|Airspace approval — JZ-09 gate; no facial capture; zero safety tolerance|
 |Card 08 barrier-free AI wayfinding + evaluation ground|Barrier-Free Environment Construction Law; "Code for Accessibility Design" GB 50763-2012|Facilities rechecked against GB 50763(JZ-11 gate); 100% human-alternative rate|
 |Content-class cards 01/04/12|"Interim Measures for the Management of Generative AI Services"(2023-08-15)|Human final review; complaint deadlines(48h/24h); content labeling|
+
+> Table note: the five bases above (UAS regulations, Beijing UAS measures, ICV road-test rules, vehicle-road-cloud pilot, GB 50763) are background/needs-review pre-implementation verification items (not in the organizer approved formal list); formal citation awaits registry review.
 
 **Clause-level scope limitation (conceptual recommendation)**: legal citations are pinned to specific clauses with explicit scope boundaries, avoiding duty expansion—① **Generative-AI Measures** apply only to "generative AI services provided to the public within Chinese territory" per **Article 2**; content-class cards(01/04/12) follow labeling, final-review within that scope only; **Article 14** deadlines are not expanded into a general exit right; no complaint time limits invented. ② **Article 39 of the Barrier-Free Environment Law** applies only to premises it enumerates; not expanded into a statutory duty for all public spaces—card 08's 100% manual-backup is our self-imposed higher commitment, not statutory. ③ **Elderly-friendly policy(2020–2022 targets)** window has passed; only its "traditional and smart services in parallel" principle is borrowed, not claimed as a 2026 fact. ④ Airspace approval under **UAS Flight Management Regulations**(2024-01-01), **Beijing Municipal UAS Regulations**(No. 50, effective 2026-05-01; Beijing-wide controlled airspace)—release gate, not a self-set goal; no approval, no opening; approved routes only.
 
@@ -1120,7 +1124,7 @@ All 12 scenario cards, 3 industrial test-and-verification scenarios, annual even
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-The land-use plan follows public land-use survey, planning, and regulation classification standards, forming complete, closed, seamless zoning [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. Of 13 classes, research 0802 dominates(14 parcels), with commercial 05(10), residential 0701(6), education 0804(6), medical 0806(6), culture 0803(3), sports 0805(1), community service 0702(1), park green 1401(12), protective green 1402(9), plaza 1403(2), road 1207(81), and reserve 16(4)—155 parcels total, seamless [depth:land_use_layout].
+The land-use plan follows public land-use survey, planning, and regulation classification standards, forming complete, closed, seamless zoning [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson#LU-001]. Of 13 classes, research 0802 dominates(14 parcels), with commercial 09(10), residential 0701(6), education 0804(6), medical 0806(6), culture 0803(3), sports 0805(1), community service 0702(1), park green 1401(12), protective green 1402(9), plaza 1403(2), road 1207(81), and reserve 16(4)—155 parcels total, seamless [depth:land_use_layout].
 
 The building plan distinguishes retained, renovated, renewed, new, and to-be-confirmed objects: because existing buildings, ownership, control plans, and engineering conditions are absent, proposal provides only a **method framework, to-be-calibrated checklist, without fabricating retain-renovate-demolish conclusions** [depth:retain_renovate_demolish] [depth:height_massing_character] [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]. All 84 conceptual buildings in `geometry/buildings.geojson` carry `status=design_proposal`, `confidence=low`, expressing massing intent only [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]. Total building scale, FAR, height, and density are uniformly `status=unknown` pending official conditions(see [metric:floor_area_ratio], whose `reason` states missing conditions, recomputation path).
 
@@ -1325,7 +1329,7 @@ Renewal project list(conceptual recommendation, 12 items):
 |JZ-11 Barrier-free AI wayfinding system|Public service/accessibility|Public-interest fund + fiscal guidance|
 |JZ-12 Global AI Week public route|Operations/brand|Scenario revenue + cleared sponsorship|
 
-Magnitude column deleted(v10.14.14: unit prices lack auditable sources—publisher/date/region—so 360–925 million CNY totals, their derived funding ratios do not constitute budget commitments). Cost categories, recomputation bases remain(Table A3), managed under [assumption:ASSUME-005]; official investment plans supersede via P4 recalibration.
+Magnitude column deleted(v10.14.14: unit prices lack auditable sources—publisher/date/region—so the totals and their derived funding ratios do not constitute budget commitments). Cost categories, recomputation bases remain(Table A3), managed under [assumption:ASSUME-005]; official investment plans supersede via P4 recalibration.
 
 **Table A3 cost categories and recomputation bases (conceptual; unit prices removed v10.14.14 — no auditable source; official investment plans supersede under P4)**
 
@@ -1344,7 +1348,7 @@ Magnitude column deleted(v10.14.14: unit prices lack auditable sources—publish
 |JZ-11 Barrier-free AI wayfinding system|Wayfinding points ~30([data:geometry/constraints.geojson#CONSTRAINTS-01])|
 |JZ-12 Global AI Activity Week public routes|Annual events ~12(this chapter)|
 
-> Table note: Unit prices and cost totals removed (v10.14.14 reason: no auditable source for unit prices — publisher/date/region missing; totals 360–925 M CNY did not constitute budget commitments). Geometry bases from this package’s layers (EPSG:4548), item-by-item verifiable. Official investment plans supersede; this table auto-invalidates and recalculates.
+> Table note: Unit prices and cost totals removed (v10.14.14 reason: no auditable source for unit prices — publisher/date/region missing; the totals did not constitute budget commitments). Geometry bases from this package’s layers (EPSG:4548), item-by-item verifiable. Official investment plans supersede; this table auto-invalidates and recalculates.
 
 
 
@@ -1428,7 +1432,7 @@ The 100-day solicitation window is delivery/review time constraint, strictly dis
 
 The indicator system(`metrics.json`) has **76 metrics** in seven classes(all 76 are listed with values in table below):
 
-**① Spatial class, known (14 metrics, recomputed from submitted geometry (EPSG:4548))**: overall-design area(site_area_sqm, measured 11,412,825.4 m2—**display precision 0.1 m²(machine-recomputed; full value in metrics.json; not official; official caliber 11,400,000 m², 0.11% deviation)**; precision discipline: display values are truncations—any calculation depending on full value must read metrics.json, never back-derive from narrative), building footprint area(building_footprint_area_sqm, ~110.3 ha), green ratio(green_ratio, 25.0%), public-space ratio(public_space_ratio, ~5.9 ha, 0.52%), key-area count(key_area_count, 3), key-area total area(key_area_total_area_sqm, ~369.3 ha), land-parcel count(land_parcel_count, 155), land-use class count(land_use_class_count, 13), building count(building_count, 84), green-space element count(green_space_count, 21: 12 parks + 9 protective), public-space node count(public_space_node_count, 16: 6 plazas + 6 wayfinding + 3 test + 1 health-guidance), road-segment count(road_segment_count, 13), phasing-zone count(phasing_zone_count, 3), constraint-zone count(constraint_zone_count, 3). Spatial class recomputes entirely from `geometry/*.geojson`: layer-count metrics come directly from feature counts([metric:land_parcel_count] [metric:land_use_class_count] [metric:building_count]); green, public-space-node, road-segment counts in [metric:green_space_count] [metric:public_space_node_count] [metric:road_segment_count].
+**① Spatial class, known (14 metrics, recomputed from submitted geometry (EPSG:4548))**: overall-design area(site_area_sqm, recomputed 11,412,825.4 m2 (temporary model-computed; not for precise area or formal planning evidence)—**display precision 0.1 m²(machine-recomputed; full value in metrics.json; official provisional caliber 11,400,000 m², 0.11% deviation)**; precision discipline: display values are truncations—any calculation depending on full value must read metrics.json, never back-derive from narrative), building footprint area(building_footprint_area_sqm, ~110.3 ha), green ratio(green_ratio, 25.0%), public-space ratio(public_space_ratio, ~5.9 ha, 0.52%), key-area count(key_area_count, 3), key-area total area(key_area_total_area_sqm, ~369.3 ha), land-parcel count(land_parcel_count, 155), land-use class count(land_use_class_count, 13), building count(building_count, 84), green-space element count(green_space_count, 21: 12 parks + 9 protective), public-space node count(public_space_node_count, 16: 6 plazas + 6 wayfinding + 3 test + 1 health-guidance), road-segment count(road_segment_count, 13), phasing-zone count(phasing_zone_count, 3), constraint-zone count(constraint_zone_count, 3). Spatial class recomputes entirely from `geometry/*.geojson`: layer-count metrics come directly from feature counts([metric:land_parcel_count] [metric:land_use_class_count] [metric:building_count]); green, public-space-node, road-segment counts in [metric:green_space_count] [metric:public_space_node_count] [metric:road_segment_count].
 
 **② Functional-proportion class, known (7 metrics, recomputed from concept layers (EPSG:4548); not official land-use figures)**: research 0802 21.9%, commerce 09 7.0%, housing 0701 13.6%, roads 1207 10.7%, green 1401+1402 25.0%, reserve 16 2.7%, culture/education/sports/medical combined 14.4%(interval caliber and 1+X+1 mapping in ASSUME-005, Chapter 3). Each proportion recomputes from concept layers([metric:research_0802_ratio] [metric:commercial_09_ratio] [metric:residential_0701_ratio]); roads, green and reserve proportions registered separately([metric:roads_1207_ratio] [metric:green_1401_1402_ratio] [metric:reserve_16_ratio]), and culture/education/sports/medical combined share in [metric:culture_edu_sports_medical_ratio].
 
@@ -1441,7 +1445,7 @@ Rehearsal failure branches, passport fields in [metric:synthetic_negative_branch
 
 The geometry-layer validation rate(9/9 pass spatial review; same source family as the "phasing-zone, constraint-zone counts registered in geometry layers" under class ④) is in [metric:geometry_layer_validation_ratio], with recomputation path following geometry registry.
 
-**④ Control class, unknown (12 metrics; official conditions absent, no conclusions entered)**: floor-area ratio(floor_area_ratio), building height(building_height_m), building density(building_density), statutory green ratio(statutory_green_ratio), setback(setback_m), affected-household count(affected_household_count), mitigation budget(mitigation_budget_cny), compute capacity(compute_capacity), annual participant count(annual_participant_count), approved scenario count(approved_scenario_count), developer-to-pilot conversion ratio(developer_to_pilot_conversion_ratio), annual operation cost(annual_operation_cost_cny; concept range 5–15 M CNY/year in ASSUME-005)—each `reason` states missing conditions, recomputation path; phasing-zone, constraint-zone counts in geometry layers([metric:phasing_zone_count] [metric:constraint_zone_count]), key-area total recalculation in [metric:key_area_total_area_sqm].
+**④ Control class, unknown (12 metrics; official conditions absent, no conclusions entered)**: floor-area ratio(floor_area_ratio), building height(building_height_m), building density(building_density), statutory green ratio(statutory_green_ratio), setback(setback_m), affected-household count(affected_household_count), mitigation budget(mitigation_budget_cny), compute capacity(compute_capacity), annual participant count(annual_participant_count), approved scenario count(approved_scenario_count), developer-to-pilot conversion ratio(developer_to_pilot_conversion_ratio), annual operation cost(annual_operation_cost_cny; range withdrawn v10.14.14, pending official plan)—each `reason` states missing conditions, recomputation path; phasing-zone, constraint-zone counts in geometry layers([metric:phasing_zone_count] [metric:constraint_zone_count]), key-area total recalculation in [metric:key_area_total_area_sqm].
 
 **⑤ Performance class, unknown (3 metrics, announcement 1.5(2) planning-indicator system)**: AI innovation index(ai_innovation_index), talent density(talent_density), AI output value(ai_output_value)—formulas and data sources registered; computed once official statistics release.
 **⑥ Mechanism-coverage class, known (9 metrics: 8 verification-style coverage ratios all =1.0, plus an 8-dimension risk-registry count)**: five-dimensional scenario-card commitment coverage—failure degradation(12/12, every KPI-and-exit column cell non-empty), data & human boundary(12/12), operating body(12/12), post-exit spatial disposition(12/12, the "AI's limited role and post-exit spatial disposition" table in Ch. 6), passport-registration completeness(15/15, itemized in simulation.json: all 15 services complete 11-field passport); mechanism completeness—four-beat passing-evidence coverage(4/4, every protocol-table beat defines passing evidence, failure disposition), rollback-mapping coverage(5/5 trigger classes map one-to-one to scenario-card exit conditions), geometry-layer validation rate(9/9 pass spatial review); risk-registry count(8 risk dimensions, risk.json). Coverage formulas are "verification-style" rather than "declaration-style": formula states numerator, denominator, verified object, so reviewers can recheck row by row([metric:scenario_fallback_coverage_ratio] [metric:scenario_data_boundary_coverage_ratio] [metric:scenario_operator_coverage_ratio]); exit disposition, passport pass rate in [metric:scenario_exit_path_coverage_ratio] [metric:simulation_p1_pass_ratio]; beats, rollback mapping, risk registration in [metric:protocol_gate_coverage_ratio] [metric:risk_rollback_mapping_ratio] [metric:risk_item_count].
@@ -1478,7 +1482,7 @@ All three substitute measures are marked **concept measures**, used for in-propo
 
 | Metric | Current value | Confidence | Use |
 | --- | --- | --- | --- |
-|Overall-design area|11,412,825.4 m2|High(measured)|Spatial-ratio denominator|
+|Overall-design area|11,412,825.4 m2|High(package recomputation)|Spatial-ratio denominator|
 |Building footprint area|~110.3 ha|Medium(massing)|Building-scale ref|
 |Green ratio|25.0%|Medium(provisional)|Blue-green performance|
 |Public-space ratio|~5.9 ha(0.52%)|Medium(provisional)|Public-space performance|
@@ -1493,7 +1497,7 @@ All three substitute measures are marked **concept measures**, used for in-propo
 |Phasing-zone count|3|High(layer)|Phasing evidence|
 |Constraint-zone count|3|High(layer)|Sensitive-boundary evidence|
 |Research 0802 ratio|21.9%(concept recalc)|Medium(concept)|1+X+1 structure(interval in ASSUME-005)|
-|Commerce 05 ratio|7.0%(concept recalc)|Medium(concept)|1+X+1 structure|
+|Commerce 09 ratio|7.0%(concept recalc)|Medium(concept)|1+X+1 structure|
 |Housing 0701 ratio|13.6%(concept recalc)|Medium(concept)|1+X+1 structure|
 |Roads 1207 ratio|10.7%(concept recalc)|Medium(concept)|1+X+1 structure|
 |Green 1401+1402 ratio|25.0%(concept recalc)|Medium(concept)|1+X+1 structure|
@@ -1527,12 +1531,12 @@ All three substitute measures are marked **concept measures**, used for in-propo
 |Statutory green ratio|unknown|Pending official conditions|Per official control caliber|
 |Setback|unknown|Pending official conditions|Per official red lines|
 |Affected-household count|unknown|Pending site survey|No demolish-renovate-retain conclusion|
-|Mitigation budget|unknown|Pending official investment plan|Concept range in ASSUME-005|
+|Mitigation budget|unknown|Pending official investment plan|Range withdrawn (v10.14.14), see ASSUME-005|
 |Compute capacity|unknown|Pending industry implementation|Concept direction(Ch. 6)|
 |Annual participant count|unknown|Pending operating data|Conversion funnel(ASSUME-005)|
 |Approved scenario count|unknown|Pending P1 gates|All scenarios concept declarations|
 |Developer-to-pilot conversion ratio|unknown|Pending operating data|Conversion funnel(ASSUME-005)|
-|Annual operation cost|unknown|Pending official investment plan|Concept range 5–15 M CNY/year in ASSUME-005|
+|Annual operation cost|unknown|Pending official investment plan|Range withdrawn (v10.14.14), see ASSUME-005|
 |AI innovation index|unknown|Pending official statistics|Announcement 1.5(2) planning indicator(formula registered)|
 |Talent density|unknown|Pending official statistics|Announcement 1.5(2) planning indicator(formula registered)|
 |AI output value|unknown|Pending official statistics|Announcement 1.5(2) planning indicator(formula registered)|
@@ -1563,7 +1567,7 @@ Caliber note: public_space_ratio follows the `metrics.json` formula(public_space
 
 | Metric | Deviation source | Sensitivity | Impact range |
 | --- | --- | --- | --- |
-|Overall design area|PROV-SITE-001 fit +0.11%|Low(uniform shift/scale)|Ratio metrics change within ±0.2%|
+|Overall design area|PROV-SITE-001 recomputation deviation +0.11% (temporary model value)|Low(uniform shift/scale)|Ratio metrics change within ±0.2%|
 |Three key-area areas|PROV-KEY placeholder rectangles +0.24%|Low(placeholder shape)|Area difference ≤±2 ha|
 |Green ratio|Boundary-deviation transmission|Medium(green concentrated along corridor)|±1.0%|
 |Public-space ratio|Boundary-deviation transmission|Medium(small node scale)|±0.1%|
@@ -1588,7 +1592,7 @@ Metrics are managed in three classes: ① spatial metrics recomputable from subm
 
 The compliance matrix covers all mandatory tasks of announcement clauses 1.3, 1.4, 1.5, agent.1–agent.6: agent.1 naming system, identity(this chapter, Chapter 3), agent.2 global cases, ecosystem map(Chapter 3), agent.3 scenario cards/test scenarios/profiles(Chapter 6), agent.4 pilgrimage landmarks, honor displays(Chapter 6), agent.5 cultural narrative, wayfinding(Chapter 9), agent.6 event system, community operations(Chapter 10). Results of `scripts/spatial_review.py`, `scripts/visual_review.py` serve as formal self-check evidence.
 
-**Standard applicability boundary**: of fourteen standard responses in `standard_matrix.json`, thirteen are addressed, one(Architectural Design Document Compilation Depth Provisions, 2016 edition) is a data_gap to be activated once official building conditions are available; beyond nine planning/governance regulations, five technical standards were added(unmanned-aircraft regulations, Beijing municipal UAS rules, intelligent-connected-vehicle road-test norms, vehicle-road-cloud integration pilot, barrier-free design code GB 50763), keeping scenario paths verifiable [standard:UNMANNED-AIRCRAFT-REGULATIONS] [standard:ICV-ROAD-TEST-REGULATIONS] [standard:BARRIER-FREE-DESIGN-CODE]; each standard response constrains only this proposal's own expression, evidence—never substitutes for official approval or statutory review [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:GENERATIVE-AI-INTERIM-MEASURES].
+**Standard applicability boundary**: of fourteen standard responses in `standard_matrix.json`, thirteen are addressed, one(Architectural Design Document Compilation Depth Provisions, 2016 edition) is a data_gap to be activated once official building conditions are available; beyond nine planning/governance regulations, five technical standards were added(unmanned-aircraft regulations, Beijing municipal UAS rules, intelligent-connected-vehicle road-test norms, vehicle-road-cloud integration pilot, barrier-free design code GB 50763) - all five are pre-implementation verification items(not in the organizer approved formal source list; sources.json downgraded to background_only; formal citation awaits registry review), keeping scenario paths verifiable [standard:UNMANNED-AIRCRAFT-REGULATIONS] [standard:ICV-ROAD-TEST-REGULATIONS] [standard:BARRIER-FREE-DESIGN-CODE]; each standard response constrains only this proposal's own expression, evidence—never substitutes for official approval or statutory review [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:GENERATIVE-AI-INTERIM-MEASURES].
 
 **13-dimension self-assessment against the agent taskbook (conceptual recommendation)**: self-assessment on taskbook's supplemental review dimensions(self-assessment states proposal's own position for professional review to verify). The rating takes only two states—**"closed"**(this proposal has provided evidence chain for that dimension) and **"pending"**(official conditions or later deepening required)—no fuzzy intermediate score, so no dimension is left hanging as "seemingly answered, actually unanswered":
 
@@ -1615,13 +1619,13 @@ The compliance matrix covers all mandatory tasks of announcement clauses 1.3, 1.
 
 **Expression-completeness self-statement**: `visual/index.html`(and `index.en.html`) is a single file with zero external requests, openable offline via `file://`(gen_05 embeds `http://`/`https://` assertion, double-checked by CI/self_check); layer toggles are native checkboxes(Tab/Space), map container has role/ARIA labels and visible focus styles—keyboard and screen-reader users can complete all layer browsing. Verification: full-text search for external URLs(expect 0) + keyboard layer toggling in browser.
 
-**Compliance-triage principle**: every claim triaged by legal force, never mixed or upgraded—**statutory duties**(personal-info protection, barrier-free, airspace, minor protection, etc.; in compliance_matrix.json): verified externally item by item, no exemption by "pilot"/"concept" labels; **voluntary standards**(GB/T etc.): always marked "voluntarily adopted, non-mandatory"—reading as universal statutory duty is misleading; **conceptual suggestions**(protocol, operations, capital, mechanism content): framed as suggestions, never as policy/approval/commitment. Triage cuts both ways: statutory duties not downgraded to "optional". Itemized in compliance_matrix.json:
+**Compliance-triage principle**: every claim triaged by legal force, never mixed or upgraded—**statutory duties**(personal-info protection, barrier-free, airspace, minor protection, etc.; in compliance_matrix.json): verified externally item by item, no exemption by "pilot"/"concept" labels; airspace/road-test/vehicle-road-cloud bases are not in the organizer approved formal source list and are temporarily registered as pre-implementation verification items(see standard_matrix.json); **voluntary standards**(GB/T etc.): always marked "voluntarily adopted, non-mandatory"—reading as universal statutory duty is misleading; **conceptual suggestions**(protocol, operations, capital, mechanism content): framed as suggestions, never as policy/approval/commitment. Triage cuts both ways: statutory duties not downgraded to "optional". Itemized in compliance_matrix.json:
 
 | Statutory duty domain | Corresponding claim (this proposal) | Verification action | Responsible party |
 | --- | --- | --- | --- |
 |Personal information & privacy|Data minimization, retention cap, no minor data collection(declared card by card in Ch. 6)|PIA assessment + ledger spot-checks(risk-monitoring beat · monthly)|Operator|
 |Barrier-free environment|Barrier-free AI wayfinding with 100% human-alternative-rate backstop; barrier-free re-verification of public space(Ch. 6 bottom-line table)|On-site verification + quarterly independent retest(risk-monitoring beat · quarterly)|Third party + disabled persons' federation|
-|Airspace management|Drone delivery route = concept route; no operation without airspace approval(Ch. 6 card 06)|Airspace approval gated at P1 declaration|Delivery operator + airspace regulator|
+|Airspace management|Drone delivery route = concept route; no operation without airspace approval(Ch. 6 card 06; basis = pre-implementation verification item, pending registry review)|Airspace approval gated at P1 declaration|Delivery operator + airspace regulator|
 |Heritage protection|Low-intervention treatment; AI displays detachable, off-heritage(heritage special section, this chapter)|Heritage authority pre-confirmation(P1 declaration requirement)|Heritage authority|
 
 **What we intentionally do NOT give (boundary-discipline list)**: eight categories of formal final conclusions withheld until formal data arrives, each with reason and substitute—one glance verifies proposal never oversteps:
