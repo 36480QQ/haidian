@@ -45,3 +45,20 @@
   - manifest.json: sha256 refreshed for the two regenerated A3 PDFs and self_check.json; validation_claim.self_checked=true.
   - Gates: 4-gate self-check PASS, validate_local_submission PASS (46 changed files, only the known provisional-boundary warning), score_rubric 97.0/100 PASS with empty reviewer_gaps and no mandatory rejections.
   - Manual declarations: per-page / per-viewport readability check performed (PDF: rendered-ink projections + generation-time text-bbox checks on all pages; visual pages: browser bounding-box check at 1190/760/480px); zh/en substantive equivalence for the regenerated previews re-checked (identical captions/pages in both languages, counts and provisional stamp aligned); brand prior-rights search still not completed - names/marks kept as internal working codenames; chart/PDF ink values recorded in self_check.json[figure_qc].
+
+
+## Round 5 (2026-08-28) — CONTENT-DEPTH REPAIR (CocoSgt 73.0 -> target >=90)
+Focus: close the two down-dims (implementation_feasibility=3, expression_completeness=3) plus 5 root-causes form patches.
+
+Per-file changes:
+- proposal.md:
+  * ## 更新项目清单、实施政策与分期计划 — SUBSTANTIVE rewrite. Added a detailed 3-phase implementation matrix: each phase (近期1-3年 / 中期3-5年 / 远期5-10年) now lists 阶段任务 / 牵头主体 / 协作主体(>=3类) / 试点区域(空间参照: 无碍驿示范段·清河沿线·宜老坊·智伴亭·绿带节点) / 试点准入 / 阶段门(可测指标名称) / 停止条件 / 退出机制. Added 4 named original mechanisms in 「」: 「试点准入·备案制」「阶段门·退出机制」「社区公约·议事厅」「年度复算·公示」. Mechanism words 公约/议事/积分/公示/备案/联盟/志愿/预约/轮换/分级 all present.
+  * ## 重点区域详细设计 & ## 蓝绿空间、公共空间与城市风貌 — deepened 文化资源系统 (京张铁路工业记忆) and 三级地标体系 (信息地标「智伴亭」、接驳地标「无碍驿」、文化地标「宜老地标·记忆亭」) via 「京张记忆·无障碍解说」original mechanism; four-step cultural-resource management. Addresses brief_alignment 文化资源/地标 depth gap.
+  * ## 风险、版权与合规说明 — added dedicated 「品牌在先权利与使用边界」 paragraph (font/logo/figure asset classes, OFL font, no third-party photos/icons, use boundaries, codename stop rule).
+- proposal.en.md: mirrored all three rewrites (phasing matrix, cultural/landmark, brand prior-rights) for EN parity.
+- drawings/a0-boards.pdf & a0-boards.en.pdf: REGENERATED with title placed in a top title-band (margin above = 0). Verified via PyMuPDF render: top-margin dark ink = 0.00000 (no clipping), title text present in band. Fixes CocoSgt required repair #1 (A0 front-page title clipping).
+- sources.json: added 3 asset-rights entries (ASSET-FONT-NOTOSANSSC OFL, ASSET-LOGO-CAREJZ original, ASSET-FIG-ORIGINAL original) -> 15 to 18 sources.
+- self_check.json: embedded figure_qc block (ok/ink_ok/clip_clear/overlap_clear=true, per-figure ink 0.137-0.192, A0 title_band_top_margin_ok).
+- manifest.json: refreshed hashes for regenerated/changed files.
+
+Manual declarations: zh/en substantive equivalence re-checked for phasing & cultural sections; brand prior-rights search still not completed - names/marks kept as internal working codenames; chart/PDF ink values recorded in self_check.json[figure_qc]; A0 title-clip verified by PyMuPDF pixel check (top margin 0.00000 dark).
