@@ -1057,10 +1057,9 @@
       "title_zh": "AI+场景赋能新范式与智能化AI活力城市设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "五类用户画像与进入路径",
+        "C01-C12 可审查场景卡"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1079,12 +1078,14 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "C01-C12 场景卡",
+        "五类用户画像",
+        "产业测试验证"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1112,10 +1113,8 @@
       "title_zh": "AI公共空间、智能原生新业态与朝圣地标设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "蓝绿空间、公共空间与城市风貌",
+        "agent.4｜AI 朝圣地标、荣誉展示与公共空间组件库"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1134,12 +1133,14 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "AI 地标与组件库",
+        "荣誉展示体系",
+        "专业复核边界"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1167,10 +1168,8 @@
       "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计"
+        "蓝绿空间、公共空间与城市风貌",
+        "agent.5｜京张历史—中关村创新—AI 新文化系统"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1189,12 +1188,14 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
       ],
       "visual_sections": [
-        "总览地图",
-        "任务覆盖",
-        "核心指标"
+        "三层文化系统",
+        "导视与符号规则",
+        "国际传播文案"
       ],
       "source_ids": [
         "SITE-PACKAGE",
@@ -1203,7 +1204,12 @@
         "OFFICIAL-ANNOUNCEMENT",
         "AGENT-TASKBOOK",
         "BOUNDARY-SOURCE",
-        "KEY-AREA-SOURCE"
+        "KEY-AREA-SOURCE",
+        "CULTURE-JINGZHANG-PLANNING",
+        "CULTURE-JINGZHANG-PHASE1",
+        "CULTURE-JINGZHANG-PHASE2",
+        "CULTURE-ZGC-EXHIBITION",
+        "CULTURE-ZGC-HISTORY"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -1222,11 +1228,8 @@
       "title_zh": "一带全球AI创新活动体系与长期运营设计",
       "mandatory": true,
       "report_sections": [
-        "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究",
-        "总体设计范围城市更新与控规深度城市设计",
-        "重点区域详细设计",
-        "更新项目清单、实施政策与分期计划"
+        "更新项目清单、实施政策与分期计划",
+        "agent.6｜开发者社区、活动品牌与转化运营套件"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -1245,12 +1248,14 @@
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
-        "drawings/a0-boards.pdf"
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
       ],
       "visual_sections": [
-        "方案治理",
-        "实施责任",
-        "核心指标"
+        "开发者五步链",
+        "活动品牌与转化",
+        "年度运营矩阵"
       ],
       "source_ids": [
         "SITE-PACKAGE",
