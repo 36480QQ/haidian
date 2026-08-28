@@ -1,154 +1,301 @@
 ---
-title: "VIS·JZ Visual Identity Ring: Visual Identity System (Concept)"
+title: "VIS·JZ Visual Identity Ring: Visual Identity System Specialism (Concept)"
 author_github: "JohnXu22786"
 language: "en"
 translation_of: "proposal.md"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "The Visual Identity Ring (VIS·JZ) is the visual-identity specialism along the Jing-Zhang AI Innovation Belt: the Visual Hub (VI central: logo directions and brand standards, anonymized-aggregate services), the Signage Gallery (wayfinding demonstration run with signage, symbols and public-caliber checking) and the Narrative Hall (storytelling station for Jing-Zhang railway history and new AI culture, human-review backstop). Five AI+ scenario families process anonymized aggregates only, with human review of key decisions and no individual-identification visual tracking. Three positioning statements and five functions are mapped into a perceptible identity environment; a 'three zones, two wings' collaboration loop (Beiwei, Future Science City, Huairou Science City, E-Town and Jing-Jin-Ji, concept) supports regional coordination; five personas, 12 scenario cards, 5 industry test protocols, 4 annual programmes, 6 global AI-ecosystem cases with an ecosystem map, an honor display system, a reversible public-space component library, a developer community and conversion mechanisms (concept) form the complete narrative. Before trademark clearance, all names and marks are treated as internal working codenames. Core metrics (site_area_sqm, green_ratio, public_space_ratio) are recomputed from package geometry; all values are provisional and require recalculation when official data are released. Everything is conceptual advice; no FAR, height, retain/renovate/demolish or implementation conclusions are given and no official data are fabricated."
-iteration: "v0.2"
+summary: "A concept proposal for a visual identity system that translates the taskbook's three positioning statements, five functions, and internal Three Areas, Two Wings into a reviewable system of brand, wayfinding, pictograms, physical and digital applications, and AI-ecosystem operations. It separates the internal structure from the external coordination network and provides six traceable public cases, 12 scenario cards, five executable industry test protocols, a seven-element space-operation matrix, an AI ecosystem map, RACI/KPI/gates/exit conditions, and a rights ledger. All spatial boundaries and areas are provisional concept models, not planning, engineering, approval, or investment conclusions."
+tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
+scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
+iteration: "v0.4"
 ---
 
-> Position: this chapter is a concept draft for the visual-identity specialism. It gives no FAR, building height, retain/renovate/demolish or engineering conclusions and fabricates no official data. The name Visual Identity Ring (VIS·JZ) follows the formal review and official text.
+> Position: this is a concept advisory for the Visual Identity System Specialism. It gives no FAR, building-height, statutory-redline, retain/renovate/demolish, engineering, approval, or investment conclusion. VIS·JZ, node names, and mechanism names are unresolved working codenames and must not be treated as registration or an external promise before prior-rights clearance. Space, metrics, and cases are used only at their stated evidence level; no individual-identification, privacy, or classified material is included. [source:DATA-SRC-AGENT-TASKBOOK-20260518] [source:DATA-SRC-TRADEMARK-STATUS-20260820]
 
 ## Design Basis and Source List
-The listed public historical materials, planning reports and general standards form the concept working basis; the data actually used by this package are recorded in sources.json, and unverified items are honestly demoted to research hypotheses. The list covers: the call for proposals and agent taskbook (overall concept, main name, English name and naming family, visual identity and logo-direction requirements; wayfinding, signage, symbol systems and the integrated expression of Jing-Zhang railway history, Zhongguancun innovation culture and new AI culture); the public caliber of 'retain-renovate-demolish combined, prioritizing heritage park fabric and railway relics' along the Jing-Zhang railway park; Zhongguancun innovation culture materials; GB/T 10001 public information graphical symbols and GB/T 20501 guidance-system standards; and international/domestic visual identity and AI-ecosystem cases. Item-level provenance (publisher, URL, published and accessed dates, reuse boundary) is kept in sources.json; anything unverifiable is stated as a research hypothesis, not formal evidence.
 
-> Evidence: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT], [source:DATA-SRC-AGENT-TASKBOOK].
+The working basis has four classes: the taskbook and public announcement; public standards and laws; public web cases; and participant-produced provisional geometry, metrics, and concept graphics. sources.json is the item-level rights and provenance ledger: each item records publisher, URL or local path, publication date, access date, permitted use, prohibited use, and review status. When a webpage has no displayed publication date, published_date is null; the access date is never substituted. Unverifiable names, numbers, or cases are labelled as verification pending/research hypotheses and are not presented as facts or commitments. [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518] [source:DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES]
+
+Regulatory-plan depth, land-use classification, generative-AI service, and accessibility provenance remain itemised in sources.json and are used only for the stated design boundary and validation action. [source:DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING] [source:DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311] [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES]
+
+### Taskbook translation
+
+The three positioning statements are the Centennial Jing-Zhang Cultural Belt, the Urban AI Life-Experience Belt, and the AI Integration Innovation Belt. The five functions are a full-stack AI self-innovation system, a world-class AI innovation ecosystem, an AI+ scenario-empowerment paradigm, an intelligent AI vitality city, and global discourse power in AI governance. This specialism translates those statements into identity, public wayfinding, scenario interfaces, and public evaluation; it does not claim that an industrial, planning, or governance outcome has already been achieved. The machine-readable coverage is recorded in standard_matrix.json and compliance_matrix.json.
+
+### Original visual mechanisms
+
+1. Visual Hub - Signage Gallery - Narrative Hall: the Visual Hub is the visible brand entrance and information overview; the Signage Gallery turns movement, railway memory, and AI scenarios into a walkable sequence; the Narrative Hall exposes sources, test results, and resident feedback as a reviewable story.
+2. Rail Sequence: every sign follows start - transfer or fork - destination - review-back. Chinese meaning and English function copy keep equivalent positions; no real railway signal or protected mark is copied.
+3. Reversible Component Library: modular gateways, ground decals, removable boards, night bands, web cards, and QR placeholders use bolts, clips, or configuration switches so a failed test can be withdrawn, replaced, or reused.
 
 ## Three-Level Scope Framework
-The three levels transmit results stepwise: the coordinated research outputs (identity-governance environment and corridor coordination judgment) constrain the overall design; the overall design's calibrated node layout, wayfinding skeleton and phasing growth land in the key-area detailed design; each level keeps machine-readable evidence anchors for review. Framework: coordinated research (industry and future-city research), overall design (urban renewal and regulatory-plan-level urban design for the identity concept and wayfinding skeleton), and key areas (detailed design of the original nodes). All scope boundaries are provisional and may be adjusted as materials and official calibers evolve; they are not commitment boundaries. This specialism's sub-scope sits inside the overall design area (about 11.4 km2), anchored by the key areas of about 368.4 ha (concept).
 
-> Evidence: [source:DATA-SRC-AGENT-TASKBOOK], [source:DATA-SRC-PROVISIONAL-BOUNDARIES].
+The three levels are the coordinated research area, the overall design area, and the detailed-design key areas. They are work levels, not administrative or statutory boundaries; polygons in geometry/ exist only for recalculation and reading. [source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] [data:PACKAGE-GEOMETRY] [depth:three_level_scope_framework]
+
+| Level | Package work caliber | Concept area/status | Specialism output | Recalculation trigger |
+|---|---|---:|---|---|
+| Coordinated research area | Industry, culture, external coordination, and future-city direction | About 43.6 km²; provisional | Ecosystem map, narrative grammar, case study, external interfaces | Verified official extent, industry register, and historical material |
+| Overall design area | Urban-renewal and regulatory-plan-depth identity skeleton, slow mobility/blue-green narrative, operations | 11,412,825.386 m²; provisional geometry | System rules, wayfinding skeleton, metric caliber, phase gates | Official controls, rights, and facility data |
+| Detailed-design key areas | Brand placement, physical/digital components, pilot tests, and public feedback for three nodes | About 368.4 ha; provisional | Visual Hub, Signage Gallery, Narrative Hall, scenario-card prototypes | Property, transport, municipal, accessibility, and safety review |
+
+### Three-level progression
+
+The research level answers who the belt communicates with; the overall level answers how people identify and turn across a larger area; the key-area level answers how a gateway, page, or card is used, measured, and withdrawn. No level treats a provisional area as an approval condition. The core values are recalculable from metrics.json; green and public-space values remain low confidence because layer caliber and official material are incomplete. [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
+
+![Identity overview](assets/figures/site-overview.en.png)
+![Key-area detail](assets/figures/key-areas.en.png)
+![Concept land-use structure](assets/figures/land-use-structure.en.png)
+![Mobility and blue-green diagram](assets/figures/mobility-bluegreen.en.png)
+![Core metrics evidence](assets/figures/metrics-evidence.en.png)
+![AI ecosystem map](assets/figures/ecosystem-map.en.png)
+![VIS JZ logo directions](assets/figures/logo-vis-jz.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
-The industry and city research identifies the 'fit' effect of the identity system: a unified visual and wayfinding network organizes the image needs of universities, innovation clusters, rail stations and neighborhoods into recognizable, navigable and narratable visual units ('visual node - innovation cluster - neighborhood' three-level linkage); future-city research is directional only and implies no land or investment commitment. Mapping to the taskbook's three positioning statements and five functions (concept-level): the Identity Ring's unified motif supports the cultural expression of the 'centennial Jing-Zhang cultural belt'; perceptible wayfinding and scenario indexing support the experience organization of the 'urban AI life experience belt'; corridor-wide image coordination supports the industry and brand communication of the 'AI integration innovation belt'. Functionally, the visual and standards system provides image infrastructure for the 'full-stack self-innovation system' and 'world-class AI innovation ecosystem'; scenario-based wayfinding and the public feedback loop provide perceptible carriers for the 'AI+ scenario empowerment paradigm' and 'intelligent AI vitality city'; public-caliber checking and the resident feedback channel participate in the governance expression of 'global discourse power in AI governance'. Regional coordination is developed as a 'three zones, two wings' loop (concept): Beiwei Community (Haidian universities and innovation communities), Future Science City, Huairou Science City, E-Town (Yizhuang) and the Jing-Jin-Ji direction form five supports for corridor-wide image and communication synergy; the unified motif takes calibrated variants per zone. Haidian, as the core section of the belt, contributes the innovation semantics of its universities, science parks and Zhongguancun culture; this specialism only makes a coordination judgment with Haidian's existing image and makes no weighting or implementation commitment. All mappings are conceptual advice, not confirmed government decisions or arrangements.
 
-> Evidence: [source:DATA-SRC-AGENT-TASKBOOK], [source:DATA-SRC-PROVISIONAL-BOUNDARIES].
+### Three Areas, Two Wings: internal taskbook structure
+
+The table describes only the five internal work units. Names and spatial carriers require official material, property coordination, and professional review before placement; they must not be conflated with the external coordination network.
+
+| Internal unit | Role and identity theme | Industry/life interface | Visual translation | Collaboration |
+|---|---|---|---|---|
+| AI Origin Community | Beijing AI Origin Community; community life, learning, public explanation | Residents, youth, volunteers, public-service explanation | Origin circle, bilingual Q&A cards, human fallback | Sends questions and talent to Zhongzhiyuan; opens life scenarios to Xiaoyuehe |
+| Zhongzhiyuan AI Self-Innovation Acceleration Area | Full-stack innovation trial and acceleration | Models, compute, data governance, application developers | Layered rings, version number, test-status light | Receives origin questions; sends verifiable products to Dazhongsi; receives service-wing support |
+| Dazhongsi AI Industry Cluster | Enterprise, consumer, and business-facing cluster | Enterprise service, business reception, consumer experience | Grid-chain address plates and service-status labels | Aggregates supply and demand; turns pilots into scenario orders without promising investment |
+| Zhongguancun Technology Service Wing | Outward research, capital, technical-service, and developer connector | Universities, research, IP, developer community | Side arrow, capability catalogue | Horizontally connects Zhongzhiyuan and Dazhongsi; publishes tests and resource limits |
+| Xiaoyuehe Scenario Empowerment Wing | Life, ecology, and public-space scenario carrier | Residents, visitors, accessibility users, public operations | Continuous water-line band and scenario-card entry | Brings origin questions and park capability into daily scenes and feeds back to the operating desk |
+
+### External coordination: separate from the internal structure
+
+The external network is a coordination and communication boundary, not a replacement for the five internal units: Beiwei Community, Future Science City, Huairou Science City, E-Town, and Jing-Jin-Ji. Possible exchanges include case learning, developer co-testing, talent exchange, or scenario interoperability, but each requires a named party, written authorization, public data caliber, and exit condition. This package invents no external partnership commitment. [source:DATA-SRC-AGENT-TASKBOOK-20260518] [depth:overall_spatial_structure]
+
+### agent.1: visual identity system
+
+agent.1 delivers a reversible specification rather than a slogan. The mark has three concept directions - dot, folded line, and open frame - all locked to VIS·JZ. The recommended palette is Jing-Zhang Blue #174A78, Origin Teal #16A6A1, Wing Orange #F2A33A, Ink #172033, and Paper #F7F9FC. The Chinese typeface is Noto Sans SC; the English typeface is Arial or DejaVu Sans. No unlicensed font file or existing brand mark is used. Pictograms use a 24 px grid, a 2 px base stroke, rounded terminals, and two-colour status layers. Rules cover gateways, signs, ground decals, badges, boards, web headers, mobile cards, data status, and reflective night film. The three directions remain concept options until rights and legibility tests pass.
+
+### agent.2: space-element-operation matrix
+
+| Element space | Internal unit/wing | Input and source | AI role | Owner/interface | Validation indicator | Human gate | Stop condition |
+|---|---|---|---|---|---|---|---|
+| Land and space | Overall area and three nodes | Provisional geometry; official controls pending | Layer retrieval and version comparison, never a redline | Planning interface and design lead | Traceable boundary versions; 100% of conflicts labelled | Professional planner confirmation | Missing material or boundary dispute returns to research |
+| Industry | Zhongzhiyuan and Dazhongsi | Public enterprise/research list; source ledger | Relationship clustering and draft capability catalogue | Industry operations and compliance | Every capability has a source; manual sample target >=90% | Operations/legal approval to publish | Unknown source, conflict, or unexplained output is deleted |
+| Funding | Technology Service Wing | Public policy and authorized project material | Eligibility summary and application list | Funding interface and finance | Conditions link back to source; no award forecast | Finance/competent-department review | Non-public finance input or implied commitment |
+| Talent | Origin Community, Zhongzhiyuan, both wings | Public events and voluntary registration summaries | Role matching and learning-path suggestion | Community operations and human mentor | Opt-out available; completion/feedback auditable | Human mentor confirmation | Individual identification, inferred traits, or sensitive data |
+| Compute | Zhongzhiyuan and Technology Service Wing | Public resource catalogue and test quota | Queueing and resource-use display | Technical operations and security | Auditable usage; no unauthorized data | Technical lead release | Resource, permission, or security condition unmet |
+| Data | Origin Community and Xiaoyuehe Wing | Anonymous aggregates and public geography | Theme grouping and quality warning | Data steward and privacy lead | No individual trajectory; source and deletion date complete | Privacy/ethics review | Re-identification, sensitive inference, or unknown source |
+| Scenarios | Xiaoyuehe, Dazhongsi, external coordination | Scenario cards, test logs, resident feedback | Candidate generation and metric comparison | Scenario owner and resident representative | Each card has baseline, threshold, and exit action | Scenario review decides continuation | Threshold fails twice or public rejection |
+
+The matrix turns ecosystem language into inputs, roles, interfaces, indicators, human gates, and stops. It promises no compute, funding, investment, talent, or approval outcome. [depth:existing_conditions_diagnosis] [depth:development_intensity_controls]
+
+### agent.3: ecosystem cases and industry validation
+
+Six traceable public cases are retained, all reference-only; no logo, page asset, or endorsement is copied or implied: Transport for London Roundel (CASE-TFL-ROUNDEL), Legible NYC (CASE-LEGIBLE-NYC), Tokyo Metro multilingual wayfinding (CASE-TOKYO-METRO), Punggol Digital District (CASE-PUNGGOL-DIGITAL-DISTRICT), Kendall Square (CASE-KENDALL-SQUARE), and Waterfront Toronto Quayside (CASE-QUAYSIDE-TORONTO). sources.json records each official entry point, the treatment of an undisplayed publication date, access date, and reuse boundary. Lessons are stated as transferable hypotheses. The five local protocols are below; case publicity is not local evidence.
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
-The overall design emphasizes a 'green-belt-framed identity environment': visual nodes, the wayfinding skeleton and the slow-mobility system are organized along the Jing-Zhang railway heritage park belt; visual facilities grow reversibly and streets can time-share identity and festival needs; renewal is preferred over new construction, with identity functions planted into existing stock; regulatory-plan indicators receive calibration suggestions only, with no preset numeric conclusions. A three-level identity hierarchy of 'region - node - facility' is built on the green belt: the regional level sets the corridor motif and color semantics; the node level covers stations, park entrances and key public spaces; the facility level covers wayfinding, seating, lighting and street furniture. The wayfinding skeleton is integrated with the slow-mobility system so sign information is continuously presented along slow paths. Land use follows a single caliber: 'land-use classification share' with the total land-use polygon area (equal to the overall design area, about 11.4 km2) as denominator; shares are park green 27.3%, research 26.1%, business/financial 16.7%, commercial 13.1%, residential 8.8%, cultural 8.1%. The park-green share (Caliber A) differs from the blue-green layer recalculation (Caliber B: green_ratio 11.0%; Caliber C: public_space_ratio 0.3%); the calibers are labeled separately and never mixed, and all are recalculated when official data are released.
 
-![Overall design overview (provisional geometry)](assets/figures/site-overview.en.png)
+### Visual identity is not a statutory-plan substitute
 
-![Land use structure (single caliber)](assets/figures/land-use-structure.en.png)
+The overall concept proposes only a testable relationship among identity, space, and operations. Within the provisional overall area, layer IDs, colour bands, node codes, and version records connect cultural narrative, slow mobility, blue-green space, public services, and AI scenarios. Land use, building scale, transport, municipal systems, ownership, fire safety, approvals, and engineering require separate professional material; this package outputs no statutory intensity, height, road redline, or approval conclusion. [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
 
-> Evidence: [source:DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING], [metric:land_use_park_green_share].
+### Visible interfaces for three positions and five functions
+
+| Taskbook content | Identity interface | Verifiable evidence | Promise withheld |
+|---|---|---|---|
+| Centennial Jing-Zhang Cultural Belt | Rail Sequence, heritage narrative points, timeline cards | Public historical sources, wayfinding tests, authorized oral history | No unverified history or copied railway mark |
+| Urban AI Life-Experience Belt | Xiaoyuehe scenario cards, human-service point, bilingual wayfinding | Input/output/stop records for 12 cards | No individual trajectory or guaranteed experience |
+| AI Integration Innovation Belt | Zhongzhiyuan - Technology Service Wing - Dazhongsi service chain | Ecosystem map, open interface catalogue, tests | No claim of delivered investment, compute, funding, or policy |
+| Full-stack AI self-innovation system | Model/compute/data/application capability tags | agent.2 matrix and service catalogue | No backing for unauthorized training or transfer |
+| World-class AI innovation ecosystem | Developer community, case learning, bilingual communication | Activity record and public indicators | “World-class” remains an aspiration, not a result |
+| AI+ scenario-empowerment paradigm | Scenario cards and pilot protocols | T1-T5 logs and failure actions | Concept prototypes are not deployments |
+| Intelligent AI vitality city | Low-barrier information, public feedback, reversible components | Legibility, accessibility, and satisfaction tests | No replacement of public-service responsibility |
+| Global discourse power in AI governance | Three governance rules, public review, exit gates | Governance record and review form | No claim of international recognition or authority |
+
+### Identity skeleton and three nodes
+
+The three nodes are internal visual anchors, not statutory projects: L1 Visual Hub (public explanation entry for AI Origin Community), L2 Signage Gallery (capability connector for Zhongzhiyuan and the Technology Service Wing), and L3 Narrative Hall (scenario review for Dazhongsi and Xiaoyuehe). They are joined by a concept axis for east-west narrative stitching and north-south through-connection. At least three display landmarks are the Visual Hub entry, Signage Gallery timeline, and Narrative Hall data-review wall. Each carries source, version, test status, human contact, and withdrawal method. [data:geometry/key_areas.geojson] [depth:overall_spatial_structure]
 
 ## Detailed Design of Key Areas
-Node locations are concept-level points that must be relocated after site surveys, material verification, authority assessment and public comments; green-belt routes and slow paths between nodes form the complete visual circulation, expressed in the drawings and geometry layers. Three original nodes (concept): the Visual Hub (identity central: logo master wall, color/type/pictogram library and aggregated digital preview screens); the Signage Gallery (wayfinding demonstration run validating continuity and legibility of the three-level hierarchy, with accessible and multilingual panels, reversible component samples and on-site walkthrough test lines); the Narrative Hall (storytelling station featuring Jing-Zhang railway history and new AI culture, with an honor display system (group honor screens; honors carry sources and human review), symbol translation (not replication) and curation scripts subject to human review and public disclosure). The three nodes form a demonstration - verification - storytelling loop; node briefs, scale and siting remain for later argumentation.
 
-![Three node design briefs](assets/figures/key-areas.en.png)
+### agent.4: physical and digital applications
 
-> Evidence: [data:PACKAGE-GEOMETRY] (three node polygons from geometry/key_areas.geojson).
+| Component | Physical application | Digital application | Status and withdrawal |
+|---|---|---|---|
+| Origin Circle | Gateway, ground decal, volunteer badge | Home entry and Q&A card start | VIS-C01; clip removal and page rollback |
+| Layered Rings | Industry capability plate and test board | Capability catalogue and API/data-permission card | VIS-C02; grey-out if rights or test fails |
+| Grid Chain | Dazhongsi enterprise/consumer wayfinding | Service appointment and developer task card | VIS-C03; no unconfirmed enterprise or investment information |
+| Service Wing Arrow | Technology Service Wing sign and open-day guide | Developer community and resource interface | VIS-C04; external names only with authorization |
+| Water-line Wing | Xiaoyuehe slow-mobility sign and reflective band | Scenario map and accessible-route hint | VIS-C05; adjust after light and glare test |
+| Version Ring | Test-status plate and review wall | Changelog and feedback loop | VIS-C06; failed versions are marked and withdrawn |
+
+### Honour display and reversible component library
+
+The honour display shows only verified awards, public cooperation/test records, or contribution entries; selection, nomination, and concept demonstration are not rewritten as awards. Each record has subject, issuer, date, public_url, evidence_status, attribution, and expiry. Pending records show verification pending; records without a complete source are hidden. The C01-C06 library retains material, dimension, accessibility, installation, maintainer, version, removal action, and cost-pending fields and prioritises removable, replaceable, reusable parts.
+
+### agent.5: cultural narrative and bilingual communication
+
+The Chinese voice is translated as “From railway memory to testable AI in everyday life.” The three node function names are Visual Hub, Signage Gallery, and Narrative Hall. The internal units use the fixed English names AI Origin Community, Zhongzhiyuan AI Self-Innovation Acceleration Area, Dazhongsi AI Industry Cluster, Zhongguancun Technology Service Wing, and Xiaoyuehe Scenario Empowerment Wing. English pages and figure files contain no functional Chinese; VIS·JZ remains only as an unresolved Latin-letter working code.
+
+The communication chain is public material -> concept card -> bilingual sample -> community reading -> blind/legibility test -> public review -> retain or withdraw version. “World-class” is not translated into an achieved claim; English uses aspiration or reference only where appropriate. [source:CASE-TOKYO-METRO] [source:CASE-LEGIBLE-NYC]
+
+### 12 AI scenario cards
+
+Each card has an owner, input, output, validation, and stop condition. These are proposed test definitions with no operating result yet, and no card accepts individual-identification fields.
+
+| ID / card | User and place | Input | AI work | Output/interaction | Owner | Indicator | Stop |
+|---|---|---|---|---|---|---|---|
+| S01 Origin Wayfinding | Residents/visitors; Origin Circle | Public node layers, accessibility rules | Generate bilingual route candidates | Paper and web route | Community ops | Task completion >=90% | Two misleading rounds or no human review |
+| S02 Rail Timeline | Students; Signage Gallery | Verified history entries | Summarise with source | Timeline card/board | Culture editor | Source backlink 100% | Missing source |
+| S03 Scenario Translation | International visitors; Visual Hub | Bilingual terminology | Generate equal-length draft | Bilingual labels | Communications | Zero functional Chinese; term sample >=95% | One untranslated item goes offline |
+| S04 Developer Capability | Developers; Technology Service Wing | Public capability/interface catalogue | Match task to resource | Capability/API status card | Technical ops | Field completeness 100% | Unknown permission or source |
+| S05 Data Review | Residents; Narrative Hall | Anonymous aggregate feedback | Group themes and confidence | Public review board | Data steward | Traceable items >=95% | Re-identification or sensitive inference |
+| S06 Xiaoyuehe Mobility | Older/accessibility users; Xiaoyuehe | Public network, human site check | Draft slope/obstacle hint | Paper card and human point | Accessibility lead | Site route check 100% | Site differs from layer |
+| S07 Night Identity | Night walkers; Signage Gallery | Colour, light, glare records | Compare colour bands | Night component sample | Visual lead | Self-set legibility target | Glare or safety risk remains |
+| S08 Enterprise Navigation | Business visitors; Dazhongsi | Public service list | Draft service path | Sign and web page | Enterprise owner | Information accuracy >=95% | Stale or untraceable list |
+| S09 Community Co-design | Residents/volunteers; Origin Community | Voluntary anonymous themes | Cluster and draft card | Co-design wall/poll | Community ops | Explainable themes >=90% | Personal profiling or abuse |
+| S10 Pilot Log Review | Pilot team; Zhongzhiyuan | De-identified T1-T5 logs | Find failure patterns | Version review page | Pilot owner | Action item in every review | Missing or unauditable log |
+| S11 Component Ledger | Operators; three nodes | C01-C06 inventory and rights | Recommend reversible part | Loan/return record | Asset admin | Return record 100% | Asset, right, or maintainer unknown |
+| S12 External Case Compare | Researchers/developers; Service Wing | Six public case entries | Form transferable hypothesis | Case card/workshop | Research lead | URL and limitation on every card | Page unavailable or unverifiable |
 
 ## AI Innovation Ecosystem, Personas, and AI+ Scenarios
-Visual-compliance AI, wayfinding-content AI and sign-maintenance AI are the backbone scenarios, each with human-review backstop; narrative-curation AI and public-feedback AI are supporting scenarios. Data handling: anonymized aggregates only; human review of key decisions; no excessive monitoring (no individual-identification tracking, including visual recognition); identity management remains a conceptual mechanism, not a substitute for statutory duties. Five personas: entrepreneurs, AI developers, residents, students and visitors, with distinct information needs and movement patterns; elders, children and families, persons with disabilities and other vulnerable groups are served by all-age, accessible and aging-friendly information layers in multiple languages. The AI innovation ecosystem map (concept) places the Identity Ring at the center, linking six circles - universities/research, innovators, developer community, venture capital, government and public services, talent and users - and maps each of the six domains (transport, industry, space, public services, culture, governance). AI technical protocols (concept, four): model evaluation (benchmark sets with human-review comparison), data quality (de-identification and quality validation of anonymized aggregates), error stratification (per scenario and time-period stratification with disclosure) and runtime monitoring (false-positive rate and human-intervention rate, weekly review). Data lifecycle (concept): anonymized aggregates are retained for a fixed period only, periodically purged, used solely for the stated purpose and never for individual identification. 12 scenario cards (concept) follow:
 
-| Scenario card | Spatial carrier | AI capability | Data and privacy boundary | Operator |
-|---|---|---|---|---|
-| Card 01 Compliance check | Visual Hub, park entrances | Batch conformity comparison | Anonymized samples; human review of key results | Professional team, operator |
-| Card 02 Logo demo | Visual Hub | Interactive logo/standards demo | Public standards only; no individual data | Operator |
-| Card 03 Wayfinding content | Signage Gallery, station paths | Multilingual accessible content | Anonymized demand; human review before release | Operator, professional team |
-| Card 04 Accessible rendering | Signage Gallery | Large-type/voice/tactile content | Anonymized aggregates; human review | Professional team, volunteers |
-| Card 05 Walkthrough test | Signage Gallery | Automated continuity walkthrough | Anonymized trajectory aggregates | Operator, volunteers |
-| Card 06 Narrative curation | Narrative Hall | Rail history x AI culture curation | Public materials only; human review | Professional team, university researchers |
-| Card 07 Honor display | Narrative Hall | Group honor screen layout | Group honors only; no individual identification | Community, operator |
-| Card 08 Station handoff | Rail stations | Inside-outside wayfinding linkage | Anonymized maintenance records; human review | Operator |
-| Card 09 Park entrance image | Park entrances | Image content rotation advice | Anonymized preferences; human review | Enterprises, operator |
-| Card 10 Public visual feedback | Communities, public space | Feedback aggregation and triage | Anonymized; no excessive monitoring; no individual tracking | Community, merchants, operator |
-| Card 11 Event rotation | Green-belt event grounds | Temporary identity compliance check | Anonymized; human review | Merchants, volunteers |
-| Card 12 Study tours | Schools, study routes | Age-adapted explanation content | Public knowledge base; human review | Universities, volunteers |
+### Role-based personas, not personal profiling
 
-Five industry test protocols (concept) make scenarios perceptible and transferable, each with object, indicator, pass criterion and RACI (concept):
+Five working roles are used without prediction about individuals: community explainer, full-stack developer, scenario operator, culture editor, and accessibility/ethics reviewer. They translate AI for residents, build model/compute/data/application services, turn needs into tests, verify history and bilingual copy, and check accessibility, privacy, and human fallback. Participation can be anonymous and withdrawn; faces, trajectories, contact details, and sensitive attributes are not retained. [standard:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW]
 
-| Test protocol | Object | Indicator (concept) | Pass criterion (concept) | Lead/support (RACI concept) |
-|---|---|---|---|---|
-| Test 1 Accessible multilingual walkthrough | Signage Gallery section | Multilingual completeness; accessibility layers | Elder/child/disabled representatives complete the route | Operator leads; volunteers support |
-| Test 2 Day/night legibility | Gallery and station paths | Contrast pass rate day/night | Key nodes pass both directions | Professional team leads; merchants support |
-| Test 3 Old-new signage handoff | Station transfer paths | Information consistency rate | No gap at existing station signage | Operator leads; rail authority supports |
-| Test 4 AI human-review workflow | Wayfinding-content AI | Review coverage; false-positive rate | Human review covers key decisions; rate disclosed | Professional team leads; universities support |
-| Test 5 Public feedback loop | Communities, public space | Handling rate; loop cycle | 48-hour receipt (concept) | Community leads; operator supports |
+### AI ecosystem map
 
-Six global AI-ecosystem benchmark cases are public-source references registered item-by-item in sources.json; lessons are conceptual only:
+The map centres on the VIS·JZ concept identity layer and connects six supply/user classes: competent-department interface, universities/research, enterprises/developers, communities/residents, culture/heritage, and operations/third-party evaluation. Seven element spaces are land/space, industry, funding, talent, compute, data, and scenarios. Every edge must show source, owner, interface, metric, gate, and stop in a public catalogue or authorized record. An unsupported edge is drawn as a dotted verification-pending edge, never as an established partnership. The corresponding files are assets/figures/ecosystem-map.en.png and ecosystem-map.png. [depth:stakeholder_governance] [source:DATA-SRC-AGENT-TASKBOOK-20260518]
 
-| Case | Country/city | Nature | Lesson | Source (organization - URL - date) |
-|---|---|---|---|---|
-| Transport for London | UK/London | City identity | Single motif + extendable standards for a century | tfl.gov.uk - 2026-08 |
-| Legible NYC | USA/New York | City wayfinding | Multi-agency unified identity order | nyc.gov - 2026-08 |
-| Tokyo Metro | Japan/Tokyo | Rail wayfinding | Line colors + hierarchy + multilingual | tokyometro.jp - 2026-08 |
-| Punggol Digital District | Singapore | AI district image | District wayfinding integrated with municipal works | lta.gov.sg - jtc.gov.sg - 2026-08 |
-| Kendall Square | USA/Boston | AI ecosystem image | Minimum common visual denominator for ecosystem marketing | kendallsquare.org - 2026-08 |
-| Quayside, Toronto | Canada/Toronto | AI district governance | Decision gates, public evaluation, stop/exit lesson | waterfrontoronto.ca - 2026-08 |
+### agent.6: developer community, open scenarios, and conversion chain
 
-> Evidence: [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES], [metric:industry_test_scenario_count], [metric:global_case_count].
+The developer community has four layers: a public issue pool that accepts anonymous themes only; an interface catalogue with capability and limits; a small-sample workshop for reversible components and bilingual figures; and evaluation/review with public baseline, result, and failure action. Scenario opening follows issue card -> eligibility/ethics screen -> sandbox sample -> three-party test -> public review -> adopt, revise, or exit. An application without authorization, baseline, or exit condition does not enter. External coordination joins only through public nodes in this chain and does not change the internal division.
+
+### Five executable industry test protocols
+
+| Protocol | Object/sample | Baseline | Formula and threshold, all self-set targets | Log and RACI | Frequency and failure action |
+|---|---|---|---|---|---|
+| T1 Bilingual wayfinding | Stratified blind test of 24 people, including older and accessibility users | Existing text card without unified identity | Completion = completed tasks/valid sample; target >=90%, median direction time <=8 s | Version, start/end, time, errors, human prompts; R visual lead, A scenario owner, C community/accessibility, I public review | Every version; below 80% withdraw and revise type/arrow |
+| T2 Colour and night legibility | Six colour-band samples, 10 daytime and 10 night readings each | Ink-on-paper combination | Contrast = (Lmax+0.05)/(Lmin+0.05); normal-text target >=4.5:1, no-glare complaints target | Colour, light, distance, device, reading, complaint; R visual, A operations, C safety/accessibility, I review | Before/after sample install; change colour or stop |
+| T3 Pictogram comprehension | 30 people, 12 icons, 5-second limit each | Text-only explanation card | Correct = correct interpretations/valid answers; target >=80%, concentrated misunderstandings <=2 | Icon version, question, answer, error, interview; R icon design, A visual, C culture/community, I engineering | First and revised version; delete or add text |
+| T4 English-page completeness | 20 page tasks plus automatic character scan | Mixed-language page | Functional Chinese character count in English page = 0; bilingual task completion target >=90% | URL, local file, scan, screenshot, version; R communications, A editor, C translation/legal, I public | Before each export/merge; any residue returns to export |
+| T5 Component withdrawal and receipt | Three C01-C06 prototypes, three removals, five simulated issues | Fixed non-removable mock-up record | Withdrawal success = completed removals/planned removals; target 100%; a 48-hour receipt is a self-set service target, not a statutory deadline | Asset, authorization, installer, time, receipt, stop reason; R asset admin, A operations, C legal/safety, I community | Monthly or after event; stop component, take human control, review |
+
+### Unified log template
+
+test_id, version, date, site_unit, sample_rule, baseline, input_source, operator, consent_or_public_notice, raw_count, formula, threshold, result, uncertainty, human_decision, action, next_review, retention_and_delete_date. Logs keep anonymous aggregates only and do not record identification data; a test target is not an existing performance.
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
-Retain-renovate-demolish is combined with retention first: heritage park fabric and railway relics are preserved; existing buildings undergo functional replacement with reserved identity retrofit directions (sign interfaces, display windows); demolition is limited to case-by-case, locally justified clearance for slow-mobility connectivity. Identity facilities are light-touch, reversible and low-footprint, adding no large buildings; reversible connections are preferred when combined with existing relics. Signage follows the 'add in retention, embed in renovation, replenish after demolition' pattern. No numeric retain/renovate/demolish conclusions are preset; all areas are concept calibers to be recalculated when official data arrive. The 'reversible public-space component library' is the specialism's facility strategy: modular seating, poles and information boards that can be assembled, dismantled, rotated and tiered, supporting temporary event settings and quiet everyday states.
 
-> Evidence: [source:DATA-SRC-MNR-LAND-USE-CLASSIFICATION], [depth:retain_renovate_demolish].
+This specialism defines how identity reads land-use and renewal information; it does not replace statutory planning, architecture, fire, or engineering judgement. Land-use polygons and metrics.json values are recalculable from provisional geometry. Building scale, ownership, and retain/renovate/demolish status remain verification pending when no traceable official source exists. [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] [data:geometry/land_use.geojson]
+
+### Three area calibers
+
+1. Caliber A is the overall design polygon: 11,412,825.386 m², recomputed from package geometry, confidence medium.
+2. Caliber B aggregates green/public-space layers: green_ratio = 0.110044, displayed as 11.0%; public_space_ratio = 0.003167, displayed as 0.3%. Both are low confidence and are not statutory green ratios or public-service standards.
+3. Caliber C aggregates the land-use theme: park/public green share is 27.31% of the land-use layer, displayed as 27.3%. It is a package-layer share, not an overall-area green ratio.
+
+Building footprint, building volume, ownership, and site-specific retain/renovate/demolish lists have no traceable official basis in this package and remain unknown. The concept recommendation is reversible components, low-intervention identity, test before extension; it makes no parcel conclusion.
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
-Slow mobility first: a continuous slow axis links the three nodes; wayfinding is integrated with the slow system with sign nodes corresponding to route ends; rail station handoff signage stays continuous with reserved slack against existing in-station signage; signage lighting and municipal facilities are integrated to reduce standalone poles; accessible and multilingual information layers (large type, voice, tactile) serve elders, children, persons with disabilities and non-smartphone users. Municipal services follow intensive sharing; public services provide multilingual wayfinding, visual exhibition and study spaces; every AI decision has human review. This section states concept principles only, with no engineered values or technical parameters.
 
-> Evidence: [source:DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES], [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW].
+Transport identity follows stop / turn / arrive / review-back and does not draw a concept slow route as a built road. The mobility-bluegreen sheet shows only the provisional participation axis, blue-green narrative line, three nodes, and a 1 km schematic scale; roads, rail, pipes, fire, accessibility, and public-service facilities require professional source material. [data:geometry/roads.geojson] [standard:MOHURD-CONTROL-DETAILED-PLANNING]
+
+### Identity and service rules
+
+- Rail/road entries use public, verifiable stops and a human direction check. Unknown entries are marked verification pending, not drawn as promised exits.
+- Web, board, and physical sign surfaces show human fallback, update time, accountable interface, and complaint/suggestion entry. Service venues covered by accessibility law require separate applicability review; no generalisation is made. [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW]
+- A 48-hour receipt is this package's self-set operating target for T5; it is not a statutory deadline and not a departmental promise.
+- Personal location, camera identification, and continuous trajectories are excluded. Only anonymous counts, error types, and public geography are used. [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES]
 
 ## Blue-Green Network, Public Space, and Urban Character
-A 'green belt as axis, node parks as pearls' blue-green system connects pocket green spaces and open spaces along the heritage park belt; identity and display facilities merge into parks lightly, transparently and reversibly, without blocking heritage views or the green-belt sightline; guidance and interpretation systems are restrained and unified; character continues the Jing-Zhang industrial-memory vocabulary in dialogue with a new, ordered atmosphere, avoiding symbol stacking and slogan packaging. Caliber note: the 27.3% park-green share is Caliber A (land-use classification, denominator = total land-use area); 11.0% green_ratio is Caliber B (union of green polygons over the overall design area); 0.3% public_space_ratio is Caliber C (node areas). The calibers share one denominator but different statistical objects; they are labeled separately, never mixed, and all are recalculated after official data - this explains the difference between the park-green share and the green ratio noted in review.
 
-![Slow mobility and blue-green analysis](assets/figures/mobility-bluegreen.en.png)
+The blue-green identity layer is Jing-Zhang Blue - Xiaoyuehe Water Line - Origin Teal: blue means direction/memory, teal means ecology and everyday scenes, and orange is reserved for an action or warning. Colours do not imply land ownership or engineering rank. Public space uses the reversible C01-C06 set, each with removal, maintenance, replacement, and withdrawal actions. [data:geometry/green_space.geojson] [data:geometry/public_space.geojson] [depth:public_space_system]
 
-> Evidence: [metric:green_ratio], [metric:public_space_ratio].
+### Character and legibility
+
+Mark, Chinese, English, icons, numbers, and colour bands keep the same grammar across A0/A3, web, mobile cards, gateways, signs, ground decals, badges, and reflective night bands. Every spatial sheet has a north arrow, schematic scale, provisional warning, legend, data caliber, and version/source note. English figures and HTML contain English functional text only. Colour and font are test subjects; a simulated sample is not an installed facility.
 
 ## Renewal Projects, Implementation Policy, and Phasing
-Four project families (identity standards, wayfinding network expansion, narrative completion, annual update) are concept lists with no specific amounts; policy suggestions (standards filing procedures, implementation guidelines, public participation channels, identity usage compact) require statutory argumentation and imply no government or operator commitment. Phasing: near term (1-3 years) basic standards and the Signage Gallery pilot; mid term (3-5 years) Gallery and Narrative Hall delivery plus corridor-wide wayfinding expansion; long term (5-10 years) full identity system entering annual updates. The pilot is the Signage Gallery section, subject to authority argumentation and public comments. A concept-gate mechanism gates every phase: initiation requires project argumentation, public comments and compliance review; phases do not start without approval. Stop/exit conditions: pilot indicators not met or public acceptance fluctuating can suspend a node and withdraw reversible facilities to restore the site. Annual programmes roll in a day-week-quarter-festival-month rhythm:
 
-| Annual programme | Frequency | Carrier | Operator (concept) |
-|---|---|---|---|
-| Identity Open Day | Annual/day | Visual Hub | Operator + volunteers |
-| Identity Experience Week | Annual/week | Signage Gallery section | Operator + merchants |
-| Quarterly Wayfinding Update Report | Quarterly | Online + on-site notice points | Operator + professional team |
-| Narrative Hall Festival | Annual/festival | Hall and green-belt grounds | Community + universities + merchants |
+### Project list
 
-Governance in three sentences. First, who decides - the competent department consults the operator and corridor parties (including a future alliance and expert team) through a deliberation mechanism for standard revisions, sign settings and annual programmes; this proposal expresses no authority conclusion. Second, how to disclose - annual recalculation results, filing records and updates go through public notice and filing procedures; scope and frequency await formal rules. Third, how to supervise - a resident feedback channel, volunteer patrols and periodic evaluation form the external supervision loop, improved iteratively with points and tiered feedback. Implementation uses RACI (concept): lead - the local department; collaboration and daily operations - the operator; technical support - universities and enterprises; review - the expert team; co-building - residents, communities, merchants and volunteers. A developer community mechanism (open components and wayfinding data interfaces, annual developer events with points incentives) and talent/enterprise conversion mechanisms (youth incubation, scenario interface docking, annual showcase and filing) are explored - all conceptual. Maintenance service levels (concept): quarterly facility inspection, annual content update and fault-response timing suggestions, calibrated during the pilot and included in the annual public notice.
+| Project | Content | Lead / collaborators | Gate | Exit/recovery |
+|---|---|---|---|---|
+| P01 Identity sample | Mark, palette, type, icons, bilingual glossary | Visual lead / legal, community | G1 rights + T2/T3 | Rights or legibility failure returns to another direction |
+| P02 Three-node component pilot | Three samples selected from C01-C06 | Operations / accessibility, safety | G2 site check + T1/T5 | Glare, obstruction, or maintenance failure means removal |
+| P03 Bilingual digital index | HTML, cards, source ledger, version review | Communications / technical, culture | G1 scan + T4 | Any functional Chinese or remote resource returns to export |
+| P04 Developer sample workshop | Public issue pool, interface catalogue, sandbox evaluation | Technology Wing / Zhongzhiyuan, Dazhongsi | G3 T1-T5 review | No authorization/baseline/ethics gate, no entry |
+| P05 Ecosystem and honour wall | Six cases, verification, reversible display | Research / legal, community | G1 URL/rights review | Broken source or weak evidence becomes pending or is removed |
 
-> Evidence: [source:DATA-SRC-AGENT-TASKBOOK], [metric:annual_program_count].
+### agent.6 phasing, RACI, and gates
+
+Phase A (0-6 months, concept validation): rights, glossary, C01-C06, and T1-T5 samples. G1 requires complete source, copyright, and privacy lists; exit is triggered by an unverifiable critical source, functional Chinese in the English page, or a rights infringement.
+
+Phase B (6-18 months, limited pilot): only three reversible components and a developer sample under written authorization, human service, and safety conditions. G2 requires written site, property, accessibility, safety, and maintenance responsibility; exit is triggered by T1/T2/T5 failure, public rejection, data risk, or uncontrolled maintenance.
+
+Phase C (18-36 months, public review): version the components that pass and retain failed versions and withdrawal records. G3 requires independent review, metric trend, and transparent budget/maintenance conditions; exit is triggered by two failed rounds, no human takeover, a dead source, or unauthorized external coordination. The schedule is a proposal, not an implementation promise.
+
+### RACI
+
+R = visual lead, scenario owner, asset administrator, culture editor, technical operations; A = operating or competent-department interface for the phase; C = community representative, accessibility/ethics, legal, planning/safety professionals; I = public-review readers, developer community, and external case contacts. Every card and protocol must state R/A/C/I or it does not pass the gate.
+
+### Five KPIs
+
+K1 bilingual wayfinding completion (T1); K2 component share meeting the self-set normal-text contrast target (T2); K3 icon comprehension (T3); K4 functional Chinese residue in English (T4, target 0); K5 reversible-component withdrawal success and anonymous receipt coverage (T5, targets 100%/100%). KPIs are concept-validation indicators, not departmental performance or statutory standards; lock sample, version, denominator, and deletion period before formal counting. [metric:scenario_card_count] [metric:industry_test_count]
 
 ## Metrics, Area Recalculation, and Compliance Matrix
-Five conceptual indicators (identity coverage, wayfinding completeness, sign compliance rate, narrative update rate, feedback handling rate) enter metrics.json. The three formal core indicators (site_area_sqm, green_ratio, public_space_ratio) are recomputed from package geometry with the official text calibers as base; no independent values are taken. Every indicator carries source, formula, confidence, use limitation and recompute trigger:
 
-| Indicator | Formula | Confidence | Use limitation | Recompute trigger |
-|---|---|---|---|---|
-| site_area_sqm | polygon_area(site, EPSG:4548) | medium | concept display and discussion | after official data |
-| green_ratio | union(green)/site_area | low | concept display and discussion | after official data |
-| public_space_ratio | union(public)/site_area | low | concept display and discussion | after official data |
-| land_use_park_green_share | sum(1401)/site_area | medium | concept display and discussion | after official data |
+### Machine-readable metrics
 
-The compliance matrix is checked item by item against mandatory norms; it does not replace statutory review. All metrics are participant provisional model data, not authoritative data; statements consistent with the announcement are self-calculated from the announcement, not officially issued.
+| Metric | metrics.json value | Display | Confidence/use |
+|---|---:|---:|---|
+| site_area_sqm | 11412825.386 | 11,412,825.386 m² | medium; geometry recomputation |
+| green_space_area_sqm | 1255908.493 | 1,255,908.493 m² | low; layer aggregation |
+| public_space_area_sqm | 36150 | 36,150 m² | low; layer aggregation |
+| green_ratio | 0.110044 | 11.0% | low; not statutory green ratio |
+| public_space_ratio | 0.003167 | 0.3% | low; not public-service standard |
+| land_use_park_green_share | 0.2731 | 27.3% | medium; theme-layer caliber |
+| scenario_card_count / industry_test_count | 12 / 5 | 12 / 5 | proposal-defined inventory |
 
-![Core indicator evidence](assets/figures/metrics-evidence.en.png)
+The formulas are green_ratio = green_space_area_sqm / site_area_sqm and public_space_ratio = public_space_area_sqm / site_area_sqm; rounding is display-only. When official extent, layer class, ownership, or facility caliber changes, regenerate metrics, figures, HTML, PDFs, and manifest. [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio]
 
-> Evidence: [metric:site_area_sqm], [metric:green_ratio], [metric:public_space_ratio].
+### Compliance and evidence matrices
+
+standard_matrix.json covers the five required announcement, taskbook, urban-design, regulatory-plan-depth, and land-use-classification standards. design_depth_matrix.json covers existing-condition diagnosis, three levels, overall structure, land use, intensity boundaries, massing, transport, municipal systems, blue-green, public space, renewal list, phasing, metrics, AI scenarios, and operating governance. compliance_matrix.json maps each item to prose, figures, geometry, metrics, assumptions, and validation actions. These matrices are evidence indexes, not legal compliance opinions. [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
 ## Risk, Copyright, and Compliance
-This proposal is conceptual research design and is not an administrative-approval basis or a FAR/height/retain/engineering-feasibility conclusion. Five risk dimensions are registered honestly in assumptions.json and the missing-data notes: trademark and prior-rights search, identity vs heritage character coordination, wayfinding information accuracy, AI/copyright of generated content and fonts/images, and public-acceptance fluctuation (responses: source labeling, human review, feedback channels, statutory procedures). Trademark/prior-rights position: no official trademark search has been completed at concept stage; the names 'Visual Identity Ring', 'VIS·JZ' and all node names are internal working codenames, restricted from external use and registration until clearance; this proposal makes no bare 'no trademark involved' self-declaration. AI governance in three sentences: anonymized aggregates only; human review of key decisions; no excessive monitoring (no individual-identification tracking, including visual recognition). Copyright and licensing: cited public materials carry sources and access dates; graphics, names and texts are participant originals or public-domain materials; any resemblance to existing marks is coincidental; the package is licensed COMMUNITY-DISPLAY-ONLY for community display and review discussion; no distortion of facts; no unauthorized use of portraits, trademarks, fonts, images or papers; multi-department joint review and public evaluation precede any formal implementation.
 
-> Evidence: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT].
+### Three-line AI governance
+
+Anonymous aggregates only; key decisions receive human review; no excessive monitoring and no individual-identification tracking. Generated content is labelled machine draft. Residents can request human explanation, correction, and withdrawal. Complaints follow applicable public procedures and law; no nonexistent numeric deadline is inferred from legal text. [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES]
+
+### Risk ledger
+
+| Risk | Prevention | Trigger | Response |
+|---|---|---|---|
+| Source/copyright | Item ledger; no copied case logo or page asset | Broken URL or missing permission | Label pending or delete, retaining a note |
+| Trademark/prior rights | VIS·JZ, nodes, mechanisms remain working codenames | Search conflict | Stop external use, rename, update assets |
+| Privacy/security | Anonymous aggregates, minimum fields, human fallback | Re-identification or sensitive inference | Stop, delete, ethics review |
+| Accessibility/equity | Type, contrast, human service, blind testing | T1/T2/T3 below threshold | Return to design and fix access |
+| Space/property dispute | All geometry marked provisional | Property, redline, engineering conflict | Do not place or install; return to research |
+| Operations/technology | Reversible parts, version budget, exit gate | Maintenance or explanation failure | Stop, human takeover, public review |
+
+### Copyright ledger summary
+
+Participant-original prose, icon rules, colour drafts, layouts, and geometry are offered for community review under COMMUNITY-DISPLAY-ONLY; this is not trademark registration or third-party authorization. Public standards and laws are quoted as references and summaries, without copying restricted page assets. Six cases are reference-only narratives; source, URL, access date, null publication-date record, and prohibited use are in sources.json. A0/A3, PNG, and HTML graphics are produced in this package; the legally embeddable Noto Sans SC and system English font are used without redistributing font files. copyright_statement.md contains the complete rights statement. [source:DATA-SRC-TRADEMARK-STATUS-20260820]
 
 ## References
-References follow official published versions, archived by public/internal class with access dates: the call for proposals and taskbook (publisher: Beijing Municipal Commission of Planning and Natural Resources, Haidian Branch; published 2026-05-09, accessed 2026-06-03); public materials on Jing-Zhang railway history and the heritage park (including Zhan Tianyou and railway history sources); Beijing master plan and district plan public calibers; Beijing urban renewal special plan, implementation opinions and supporting documents; public information symbol and wayfinding standards (GB/T 10001 series, GB/T 20501 series); international and domestic visual identity and AI-ecosystem cases (Transport for London, Legible NYC, Tokyo Metro, Punggol Digital District, Kendall Square, Toronto Quayside, and domestic benchmarks Beijing, Shanghai, Shenzhen, Hangzhou); site survey records and self-drawn analysis sketches (self-collected). Item-level bibliographic entries (publisher, URL, published and accessed dates, reuse boundary) are registered in sources.json; unverified items are honestly marked as research hypotheses in the assumptions and missing-data notes.
 
-> Evidence: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT] (first entry is the organizer's public package).
+Reference priority is project announcement and taskbook; public national or ministry standards and laws; official public case pages; then participant provisional geometry and metrics. The cases below are traceable learning hypotheses, not proof of local performance:
 
-## Brand and Visual Identity System (VIS·JZ original)
-Brand identity is the core of agent.4: the original naming family 'Visual Identity Ring' forms the design - testing - storytelling loop of Visual Hub, Signage Gallery and Narrative Hall, with a complete visual identity system concept. Three logo directions (concept): Direction A 'Loop Mark' - loop body, rail dash cut, open ends, meaning a century of rail x AI loop; Direction B 'Rail Wordmark' - the VIS·JZ wordmark with a J-shaped rail hook stroke and platform-arrival dot rhythm; Direction C 'Heritage Grid' - a 1:1.414 grid echoing the heritage stone motif (schematic), one grid one screen for future slots. Construction and usage rules: 1 grid = 8 cm concept; minimum size 12 mm; clear space 1.5 x mark height; five colors (Rail Blue, Chrono Red, Belt Green, Heritage Cream, Anchor Black) tiered by use; Noto Sans SC (OFL); six pictogram families (hub/way/story/scene/edu/open). Prototypes (concept): signpost, app icon, information panel and honor screen, physical and digital; multilingual examples are zh/en with extension space. The Jing-Zhang/AI narrative grammar is the original mechanism 'rail sequence': the rail line is the narrative spine, node events are punctuation, annual programmes are chapters, forming a reusable expression standard. International communication (concept): 'a century of Jing-Zhang x a new generation of AI' as the international narrative motif with unified visual output, bilingual material kits and annual overseas exhibition suggestions. See logo-vis-jz, A0-01 masterboard and the visual page.
+| Case | Traceable source | Transferable hypothesis | Limit |
+|---|---|---|---|
+| Transport for London Roundel | sources.json: CASE-TFL-ROUNDEL | A unified mark can remain recognizable across transport touchpoints | Do not copy Roundel or imply endorsement |
+| Legible NYC | sources.json: CASE-LEGIBLE-NYC | City wayfinding can be tested through walking tasks | Different institutions and street conditions |
+| Tokyo Metro | sources.json: CASE-TOKYO-METRO | Multilingual transfer grammar must be equal-length and continuous | Do not copy icons; test locally |
+| Punggol Digital District | sources.json: CASE-PUNGGOL-DIGITAL-DISTRICT | A digital district can join spatial and operational interfaces in one map | Broad official entry point; specific facts pending |
+| Kendall Square | sources.json: CASE-KENDALL-SQUARE | Innovation ecosystems need public narrative and community interfaces | No inference about industry effect or partnership |
+| Quayside / Waterfront Toronto | sources.json: CASE-QUAYSIDE-TORONTO | Public gates and exit conditions should precede scale commitments | Governance lesson only, not a local conclusion |
 
-![VIS·JZ brand visual identity system](assets/figures/logo-vis-jz.en.png)
-
-> Evidence: [source:DATA-SRC-AGENT-TASKBOOK] (visual identity and logo-direction requirements).
-
-## Appendix: AI Innovation Ecosystem Map
-The ecosystem map figure places the Identity Ring at the center, presenting the six circles (universities/research, innovators, developer community, venture capital, government and public services, talent and users) together with six global cases as the agent.2 evidence figure for 5-8 global AI-ecosystem cases; cases are registered item-by-item in sources.json and imply no official endorsement or implementation commitment.
-
-![Global AI innovation ecosystem map](assets/figures/ecosystem-map.en.png)
-
-> Evidence: [source:DATA-SRC-AGENT-TASKBOOK].
+The package also references assets/figures/site-overview.en.png, land-use-structure.en.png, key-areas.en.png, mobility-bluegreen.en.png, metrics-evidence.en.png, ecosystem-map.en.png, and logo-vis-jz.en.png plus their Chinese counterparts. Every figure carries a provisional notice, a scale/legend or metric caliber, and a version/source note. [source:PACKAGE-GEOMETRY] [data:geometry/site_boundary.geojson]

@@ -1,376 +1,277 @@
 {
+ "ok": true,
+ "submission_dir": "submissions\\JohnXu22786\\visual-identity-system",
+ "pr_author": "JohnXu22786",
+ "stage": "formal",
+ "deterministic_validation": {
+  "returncode": 0,
   "ok": true,
-  "submission_dir": "submissions\\JohnXu22786\\visual-identity-system",
-  "pr_author": "JohnXu22786",
-  "stage": "formal",
-  "deterministic_validation": {
-    "returncode": 0,
-    "ok": true,
-    "stdout": {
-      "ok": true,
-      "errors": [],
-      "warnings": [
-        "submissions/JohnXu22786/visual-identity-system/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
-      ],
-      "proposal_files": [
-        "submissions/JohnXu22786/visual-identity-system/proposal.md"
-      ],
-      "changelog_files": [
-        "submissions/JohnXu22786/visual-identity-system/changelog.md"
-      ],
-      "changed_files": [
-        "submissions/JohnXu22786/visual-identity-system/agent.json",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/ecosystem-map.en.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/ecosystem-map.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/key-areas.en.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/key-areas.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/land-use-structure.en.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/land-use-structure.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/logo-vis-jz.en.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/logo-vis-jz.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/metrics-evidence.en.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/metrics-evidence.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/mobility-bluegreen.en.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/mobility-bluegreen.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/site-overview.en.png",
-        "submissions/JohnXu22786/visual-identity-system/assets/figures/site-overview.png",
-        "submissions/JohnXu22786/visual-identity-system/assumptions.json",
-        "submissions/JohnXu22786/visual-identity-system/changelog.md",
-        "submissions/JohnXu22786/visual-identity-system/compliance_matrix.json",
-        "submissions/JohnXu22786/visual-identity-system/design_depth_matrix.json",
-        "submissions/JohnXu22786/visual-identity-system/drawings/a0-boards.en.pdf",
-        "submissions/JohnXu22786/visual-identity-system/drawings/a0-boards.pdf",
-        "submissions/JohnXu22786/visual-identity-system/drawings/a3-booklet.en.pdf",
-        "submissions/JohnXu22786/visual-identity-system/drawings/a3-booklet.pdf",
-        "submissions/JohnXu22786/visual-identity-system/geometry/buildings.geojson",
-        "submissions/JohnXu22786/visual-identity-system/geometry/constraints.geojson",
-        "submissions/JohnXu22786/visual-identity-system/geometry/green_space.geojson",
-        "submissions/JohnXu22786/visual-identity-system/geometry/key_areas.geojson",
-        "submissions/JohnXu22786/visual-identity-system/geometry/land_use.geojson",
-        "submissions/JohnXu22786/visual-identity-system/geometry/phasing.geojson",
-        "submissions/JohnXu22786/visual-identity-system/geometry/public_space.geojson",
-        "submissions/JohnXu22786/visual-identity-system/geometry/roads.geojson",
-        "submissions/JohnXu22786/visual-identity-system/geometry/site_boundary.geojson",
-        "submissions/JohnXu22786/visual-identity-system/manifest.json",
-        "submissions/JohnXu22786/visual-identity-system/metrics.json",
-        "submissions/JohnXu22786/visual-identity-system/proposal.en.md",
-        "submissions/JohnXu22786/visual-identity-system/proposal.md",
-        "submissions/JohnXu22786/visual-identity-system/report/copyright_statement.md",
-        "submissions/JohnXu22786/visual-identity-system/report/narrative.md",
-        "submissions/JohnXu22786/visual-identity-system/report/proposal.en.html",
-        "submissions/JohnXu22786/visual-identity-system/report/proposal.html",
-        "submissions/JohnXu22786/visual-identity-system/self_check.json",
-        "submissions/JohnXu22786/visual-identity-system/sources.json",
-        "submissions/JohnXu22786/visual-identity-system/standard_matrix.json",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-key-areas-en.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-key-areas-zh.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-metrics-evidence-en.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-metrics-evidence-zh.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-mobility-bluegreen-en.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-mobility-bluegreen-zh.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-site-overview-en.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-site-overview-zh.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/html-en.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/html-zh.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/pdf-a0-en-p1.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/pdf-a0-zh-p1.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/pdf-a3-en-p1.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/pdf-a3-zh-p1.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/visual-en.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/visual-zh.png",
-        "submissions/JohnXu22786/visual-identity-system/visual/index.en.html",
-        "submissions/JohnXu22786/visual-identity-system/visual/index.html"
-      ],
-      "ai_package_stages": {
-        "submissions/JohnXu22786/visual-identity-system": "formal"
-      },
-      "total_bytes": 9409756,
-      "maintainer_bypass": false
-    },
-    "stderr": ""
+  "stdout": {
+   "ok": true,
+   "errors": [],
+   "warnings": [
+    "submissions/JohnXu22786/visual-identity-system/proposal.md: 可能涉及非公开或敏感资料; maintainer review required",
+    "submissions/JohnXu22786/visual-identity-system/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied"
+   ],
+   "proposal_files": [
+    "submissions/JohnXu22786/visual-identity-system/proposal.md"
+   ],
+   "changelog_files": [
+    "submissions/JohnXu22786/visual-identity-system/changelog.md"
+   ],
+   "changed_files": [
+    "submissions/JohnXu22786/visual-identity-system/agent.json",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/ecosystem-map.en.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/ecosystem-map.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/key-areas.en.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/key-areas.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/land-use-structure.en.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/land-use-structure.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/logo-vis-jz.en.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/logo-vis-jz.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/metrics-evidence.en.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/metrics-evidence.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/mobility-bluegreen.en.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/mobility-bluegreen.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/site-overview.en.png",
+    "submissions/JohnXu22786/visual-identity-system/assets/figures/site-overview.png",
+    "submissions/JohnXu22786/visual-identity-system/assumptions.json",
+    "submissions/JohnXu22786/visual-identity-system/changelog.md",
+    "submissions/JohnXu22786/visual-identity-system/compliance_matrix.json",
+    "submissions/JohnXu22786/visual-identity-system/design_depth_matrix.json",
+    "submissions/JohnXu22786/visual-identity-system/drawings/a0-boards.en.pdf",
+    "submissions/JohnXu22786/visual-identity-system/drawings/a0-boards.pdf",
+    "submissions/JohnXu22786/visual-identity-system/drawings/a3-booklet.en.pdf",
+    "submissions/JohnXu22786/visual-identity-system/drawings/a3-booklet.pdf",
+    "submissions/JohnXu22786/visual-identity-system/geometry/buildings.geojson",
+    "submissions/JohnXu22786/visual-identity-system/geometry/constraints.geojson",
+    "submissions/JohnXu22786/visual-identity-system/geometry/green_space.geojson",
+    "submissions/JohnXu22786/visual-identity-system/geometry/key_areas.geojson",
+    "submissions/JohnXu22786/visual-identity-system/geometry/land_use.geojson",
+    "submissions/JohnXu22786/visual-identity-system/geometry/phasing.geojson",
+    "submissions/JohnXu22786/visual-identity-system/geometry/public_space.geojson",
+    "submissions/JohnXu22786/visual-identity-system/geometry/roads.geojson",
+    "submissions/JohnXu22786/visual-identity-system/geometry/site_boundary.geojson",
+    "submissions/JohnXu22786/visual-identity-system/manifest.json",
+    "submissions/JohnXu22786/visual-identity-system/metrics.json",
+    "submissions/JohnXu22786/visual-identity-system/proposal.en.md",
+    "submissions/JohnXu22786/visual-identity-system/proposal.md",
+    "submissions/JohnXu22786/visual-identity-system/report/copyright_statement.md",
+    "submissions/JohnXu22786/visual-identity-system/report/narrative.md",
+    "submissions/JohnXu22786/visual-identity-system/report/proposal.en.html",
+    "submissions/JohnXu22786/visual-identity-system/report/proposal.html",
+    "submissions/JohnXu22786/visual-identity-system/self_check.json",
+    "submissions/JohnXu22786/visual-identity-system/sources.json",
+    "submissions/JohnXu22786/visual-identity-system/standard_matrix.json",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-key-areas-en.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-key-areas-zh.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-metrics-evidence-en.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-metrics-evidence-zh.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-mobility-bluegreen-en.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-mobility-bluegreen-zh.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-site-overview-en.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/fig-site-overview-zh.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/html-en.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/html-zh.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/pdf-a0-en-p1.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/pdf-a0-zh-p1.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/pdf-a3-en-p1.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/pdf-a3-zh-p1.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/visual-en.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/assets/previews/visual-zh.png",
+    "submissions/JohnXu22786/visual-identity-system/visual/index.en.html",
+    "submissions/JohnXu22786/visual-identity-system/visual/index.html"
+   ],
+   "ai_package_stages": {
+    "submissions/JohnXu22786/visual-identity-system": "formal"
+   },
+   "total_bytes": 6850094,
+   "maintainer_bypass": false
   },
-  "spatial_review": {
-    "returncode": 0,
-    "ok": true,
-    "stdout": {
-      "ok": true,
-      "stage": "formal",
-      "issues": [
-        {
-          "check_id": "KEY_AREA_PROVISIONAL",
-          "severity": "minor",
-          "target_file": "geometry/key_areas.geojson",
-          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-          "target_feature_id": "KEY-ZHON",
-          "expected": null,
-          "actual": null
-        },
-        {
-          "check_id": "KEY_AREA_PROVISIONAL",
-          "severity": "minor",
-          "target_file": "geometry/key_areas.geojson",
-          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-          "target_feature_id": "KEY-BEIJ",
-          "expected": null,
-          "actual": null
-        },
-        {
-          "check_id": "KEY_AREA_PROVISIONAL",
-          "severity": "minor",
-          "target_file": "geometry/key_areas.geojson",
-          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
-          "target_feature_id": "KEY-DAZH",
-          "expected": null,
-          "actual": null
-        }
-      ],
-      "metrics": {
-        "site_area_sqm": 11412825.386,
-        "green_space_area_sqm": 1255908.493,
-        "public_space_area_sqm": 36150.0,
-        "building_footprint_area_sqm": 111600.0,
-        "green_ratio": 0.110044,
-        "public_space_ratio": 0.003167
-      }
-    },
-    "stderr": ""
-  },
-  "visual_review": {
-    "returncode": 0,
-    "ok": true,
-    "stdout": {
-      "ok": true,
-      "issues": [],
-      "metrics_seen": {
-        "site_area_sqm": 11412825.386,
-        "green_ratio": 0.110044,
-        "public_space_ratio": 0.003167,
-        "land_use_park_green_share": 0.2731,
-        "key_area_count": 3.0,
-        "land_use_zone_count": 27.0,
-        "scenario_card_count": 12.0,
-        "industry_test_scenario_count": 5.0,
-        "annual_program_count": 4.0,
-        "global_case_count": 6.0,
-        "persona_count": 5.0,
-        "phase_count": 3.0
-      }
-    },
-    "stderr": ""
-  },
-  "professional_review": {
-    "returncode": 0,
-    "ok": true,
-    "stdout": {
-      "ok": true,
-      "issues": [],
-      "summary": {
-        "standard_matrix_items": 5,
-        "design_depth_items": 15,
-        "known_metric_refs_required": 19,
-        "proposal_format_version": "2",
-        "evidence_contract": "section-anchors-plus-structured-audit",
-        "proposal_reference_counts": {
-          "source": 8,
-          "standard": 0,
-          "depth": 1,
-          "data": 1,
-          "metric": 7
-        }
-      }
-    },
-    "stderr": ""
-  },
-  "spatial_issue_ids": [
-    "KEY_AREA_PROVISIONAL",
-    "KEY_AREA_PROVISIONAL",
-    "KEY_AREA_PROVISIONAL"
-  ],
-  "visual_issue_ids": [],
-  "professional_issue_ids": [],
-  "missing_review_dependencies": [],
-  "can_enter_formal_review": true,
-  "package_type": "professional_design_package",
-  "review_status": "formal-review-ready",
-  "next_actions": [],
-  "schema_version": "0.1.0",
-  "checks": [
+  "stderr": ""
+ },
+ "spatial_review": {
+  "returncode": 0,
+  "ok": true,
+  "stdout": {
+   "ok": true,
+   "stage": "formal",
+   "issues": [
     {
-      "check_id": "DETERMINISTIC_VALIDATION",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "validate_local_submission.py",
-      "message": "deterministic_validation: PASS"
+     "check_id": "KEY_AREA_PROVISIONAL",
+     "severity": "minor",
+     "target_file": "geometry/key_areas.geojson",
+     "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+     "target_feature_id": "KEY-ZHON",
+     "expected": null,
+     "actual": null
     },
     {
-      "check_id": "SPATIAL_REVIEW",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "spatial_review.py",
-      "message": "spatial_review: PASS"
+     "check_id": "KEY_AREA_PROVISIONAL",
+     "severity": "minor",
+     "target_file": "geometry/key_areas.geojson",
+     "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+     "target_feature_id": "KEY-BEIJ",
+     "expected": null,
+     "actual": null
     },
     {
-      "check_id": "VISUAL_PACKAGING",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "visual_review.py",
-      "message": "visual_review: PASS"
-    },
-    {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "professional_review.py",
-      "message": "professional_review: PASS"
+     "check_id": "KEY_AREA_PROVISIONAL",
+     "severity": "minor",
+     "target_file": "geometry/key_areas.geojson",
+     "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+     "target_feature_id": "KEY-DAZH",
+     "expected": null,
+     "actual": null
     }
-  ],
-  "figure_qc": {
-    "ok": true,
-    "ink_ok": true,
-    "clip_clear": true,
-    "overlap_clear": true,
-    "summary": "Machine QC measured at figure-generation time (matplotlib renderer): ink coverage (pixels < 200 luminance), 10px edge-band clip probe, and pairwise text-bbox overlap over the rendered canvas (tick labels excluded - they are positioned by the axis layout and their window extents can be stale). All 14 figures (7 zh + 7 en) pass ink >= 0.08 for maps/diagrams and >= 0.10 for charts, edge clip < 0.02, and zero text-overlap pairs. See changelog for per-figure values.",
-    "figures": {
-      "logo-vis-jz": {
-        "width": 1890,
-        "height": 1290,
-        "ink": 0.0921,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "site-overview": {
-        "width": 1920,
-        "height": 1260,
-        "ink": 0.1586,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0023,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "land-use-structure": {
-        "width": 1890,
-        "height": 1260,
-        "ink": 0.1011,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "key-areas": {
-        "width": 1890,
-        "height": 1260,
-        "ink": 0.4191,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "mobility-bluegreen": {
-        "width": 1920,
-        "height": 1260,
-        "ink": 0.1251,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "metrics-evidence": {
-        "width": 1920,
-        "height": 1260,
-        "ink": 0.1088,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "ecosystem-map": {
-        "width": 1920,
-        "height": 1290,
-        "ink": 0.1793,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "logo-vis-jz.en": {
-        "width": 1890,
-        "height": 1290,
-        "ink": 0.092,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "site-overview.en": {
-        "width": 1920,
-        "height": 1260,
-        "ink": 0.1585,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0023,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "land-use-structure.en": {
-        "width": 1890,
-        "height": 1260,
-        "ink": 0.1009,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "key-areas.en": {
-        "width": 1890,
-        "height": 1260,
-        "ink": 0.4184,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "mobility-bluegreen.en": {
-        "width": 1920,
-        "height": 1260,
-        "ink": 0.1251,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "metrics-evidence.en": {
-        "width": 1920,
-        "height": 1260,
-        "ink": 0.1083,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      },
-      "ecosystem-map.en": {
-        "width": 1920,
-        "height": 1290,
-        "ink": 0.1793,
-        "ink_ok": true,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true,
-        "text_overlap_pairs_at_generation": 0,
-        "text_overlap_clear": true
-      }
+   ],
+   "metrics": {
+    "site_area_sqm": 11412825.386,
+    "green_space_area_sqm": 1255908.493,
+    "public_space_area_sqm": 36150.0,
+    "building_footprint_area_sqm": 111600.0,
+    "green_ratio": 0.110044,
+    "public_space_ratio": 0.003167
+   }
+  },
+  "stderr": ""
+ },
+ "visual_review": {
+  "returncode": 0,
+  "ok": true,
+  "stdout": {
+   "ok": true,
+   "issues": [],
+   "metrics_seen": {
+    "site_area_sqm": 11412825.386,
+    "green_ratio": 0.110044,
+    "public_space_ratio": 0.003167
+   }
+  },
+  "stderr": ""
+ },
+ "professional_review": {
+  "returncode": 0,
+  "ok": true,
+  "stdout": {
+   "ok": true,
+   "issues": [],
+   "summary": {
+    "standard_matrix_items": 5,
+    "design_depth_items": 15,
+    "known_metric_refs_required": 19,
+    "proposal_format_version": "2",
+    "evidence_contract": "section-anchors-plus-structured-audit",
+    "proposal_reference_counts": {
+     "source": 12,
+     "standard": 5,
+     "depth": 6,
+     "data": 7,
+     "metric": 5
     }
+   }
+  },
+  "stderr": ""
+ },
+ "spatial_issue_ids": [
+  "KEY_AREA_PROVISIONAL",
+  "KEY_AREA_PROVISIONAL",
+  "KEY_AREA_PROVISIONAL"
+ ],
+ "visual_issue_ids": [],
+ "professional_issue_ids": [],
+ "missing_review_dependencies": [],
+ "can_enter_formal_review": true,
+ "package_type": "professional_design_package",
+ "review_status": "formal-review-ready",
+ "next_actions": [],
+ "schema_version": "0.1.0",
+ "checks": [
+  {
+   "check_id": "DETERMINISTIC_VALIDATION",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "validate_local_submission.py",
+   "message": "deterministic_validation: PASS"
+  },
+  {
+   "check_id": "SPATIAL_REVIEW",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "spatial_review.py",
+   "message": "spatial_review: PASS"
+  },
+  {
+   "check_id": "VISUAL_PACKAGING",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "visual_review.py",
+   "message": "visual_review: PASS"
+  },
+  {
+   "check_id": "PROFESSIONAL_EVIDENCE",
+   "result": "pass",
+   "severity": "blocking",
+   "target": "professional_review.py",
+   "message": "professional_review: PASS"
   }
+ ],
+ "figure_qc": {
+  "ok": true,
+  "ink_ok": true,
+  "clip_clear": true,
+  "overlap_clear": "not_verified",
+  "summary": "ink+edge-clip machine check only; text-overlap not machine-verified post-hoc (figure generation text-bbox checks recorded in changelog)",
+  "figures": {
+   "ecosystem-map.png": {
+    "width": 1848,
+    "height": 1248,
+    "ink": 0.0931,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
+   },
+   "key-areas.png": {
+    "width": 1848,
+    "height": 1248,
+    "ink": 0.0975,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
+   },
+   "land-use-structure.png": {
+    "width": 1848,
+    "height": 1248,
+    "ink": 0.0686,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
+   },
+   "logo-vis-jz.png": {
+    "width": 1848,
+    "height": 1248,
+    "ink": 0.0989,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
+   },
+   "metrics-evidence.png": {
+    "width": 1848,
+    "height": 1248,
+    "ink": 0.0785,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
+   },
+   "mobility-bluegreen.png": {
+    "width": 1848,
+    "height": 1248,
+    "ink": 0.0798,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
+   },
+   "site-overview.png": {
+    "width": 1848,
+    "height": 1248,
+    "ink": 0.0978,
+    "edge_clip_ratio": 0.0,
+    "edge_clip_clear": true
+   }
+  }
+ }
 }
