@@ -104,6 +104,8 @@ The source of separation is a methodological switch: most proposals draw space; 
 
 These four dynamics unify into the operating mechanism of the Time-Track, detailed in the Metrics section (a new time-indicator group: time-sharing ratio, growth rate, tidal amplitude, innovation diffusion stage).
 
+**The four-dimension coupling loop.** The four "× time" terms are not parallel labels but a mutually-driving operating loop: the innovation diffusion clock's industrial agglomeration (the S-curve of L(x,t)) → pulls in developer and visitor flows of the tidal rhythm → those flows misalign across day/night and weekday/weekend, producing minute-billing and per-run-charging time-mismatch value → the time-sharing script distributes that value across 24 hours → recycled revenue feeds back into the co-track test line's iteration, accelerating the next round of agglomeration. Time is thereby upgraded from a background parameter of planning into the first planning variable — the methodological core that separates this proposal from static spatial blueprints, and the shared operational underpinning of the "timeline × tracks" brand narrative and the "physical-track + institutional-track" dual structure: original concept, operating mechanism, and brand narrative close into one loop here.
+
 ### Methodological separation: AI-augmented six-layer mapping
 
 **Making traditional mapping data-driven and machine-verifiable.** Mature international urban-renewal projects do not produce "one masterplan" but a multi-method mapping system — from Lynch's mental maps to Gehl's public-life surveys, from Space Syntax to cultural mapping. This proposal upgrades it into an "AI-augmented six-layer mapping method": traditional mapping relies on human experience and subjective judgment, whereas this proposal designs a **machine-readable six-layer mapping workflow** (a recomputable, self-checkable, iterable research method framework) rather than claiming six layers of completed empirical analysis — each layer's execution status, current input, generated output, and gap are listed below. No directly comparable method was found in the reviewed sample of Chinese urban-design competitions.
@@ -459,6 +461,18 @@ Phasing is expressed in `geometry/phasing.geojson` [data:geometry/phasing.geojso
 ### Implementation policy
 
 All policy suggestions are conceptual: FAR incentives and use-conversion facilitation, scenario-open interfaces and data-return mechanisms, compute subsidy and financing, transparent public notification, and developer-community tax and talent policies.
+
+**Implementation preconditions and tiered decision gates.** To move the co-track test line from concept to real operation, the following preconditions must be met in sequence; each unlocks the corresponding test tier, forming a "condition — tier — openness" progression:
+
+| Precondition (all currently pending confirmation, no assumed arrangement) | Unlocked test tier |
+|---|---|
+| ① Track ownership confirmed + site permit obtained | Closed test segment (authorized R&D actors only, not open to public) |
+| ② Heritage/relic impact assessment passed | Retained-rail use finalized; heritage interface fixed |
+| ③ Safety risk assessment + liability insurance configured | Semi-open test segment (reservation-based, safety officer on board) |
+| ④ Road red line + municipal capacity (power/telecom/drainage) verified | Open segment (time/speed/capacity limited) |
+| ⑤ Fire + emergency response + accessibility design completed | Full opening + public-event access |
+
+Before the corresponding precondition is met, that open segment must not be described as operable; until all are met, every co-track description in this proposal is conceptual design (this tiered gate is consistent with the "decision gate" column of scenario card S1 and implementation unit U1).
 
 ### Long-term operation: a global AI activity system
 
