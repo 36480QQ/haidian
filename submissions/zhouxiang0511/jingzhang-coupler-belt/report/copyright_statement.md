@@ -77,3 +77,17 @@
 已核对 15 项：主名称（JCE 缩写一致）、共智契约三原则、三重叙事（Pride/Innovation/Co-Intelligence）、车钩=USB、车钩引进推广定论、空间结构（One Track·Three Stations·Two Wings·Switches·Crossing Stations）、首百日工作包（P01–P05 含天数）、无AI基线（same staff/site/hours）、实施责任矩阵（P01–P09 四栏）、治理协议引用（同路径）、指标体系（metrics.json 单源）、风险限定语（conceptual/not official redline/approximate）、来源状态（pending_review/background）、图件图位（.en 对应）、指标数值口径（单源一致）。
 
 发现差异 1 处：proposal.en.md L49 "Primary name" 中"English:" 表述略冗余，语义无冲突，保留；术语"争新→Innovation"采用最通用映射。机器验证 `verify_bilingual_equivalence.py`：zh 164 / en 163 markers，only_zh=NONE，only_en=NONE，章节 13=13，PASS。结论：实质等价，随包存档供正式双语审读引用。
+
+### 品牌与媒体资产登记补充（v0.13，方案 B）
+
+| 资产 | 作者/工具 | 许可与再分发范围 | 署名/溯源 | 登记状态 |
+|---|---|---|---|---|
+| Logo 矢量（`visual/assets/logo-mark.svg`） | AI Agent 原创绘制（DeepSeek harness agent） | 原创图形；随提交包以 COMMUNITY-DISPLAY-ONLY 分发；未注册、未授权商标 | 不复制历史构件/机构标识；几何参数留档（a=28/gap=6/联锁圆点±32.5） | **已登记（概念版）**；定稿前按 5.5 商标检索 |
+| 品牌规范页（`brand-standards.png/.en.png`） | AI Agent 生成（matplotlib→Chrome 白底渲染） | 自产规范，可随包分发 | 无第三方素材 | 已登记 |
+| 概念渲染/封面（seedance-*.png / cover.webp） | 豆包 Seedream 5.0（doubao-seedream-5-0-pro，火山方舟 API） | 按火山引擎服务条款使用生成内容；带平台水印；标注"AI 生成概念示意" | sources.json 逐条登记 + 版权声明第 11 项 | 已登记（平台授权生成） |
+| 中文字体 | Noto Sans SC（子集，OFL 1.1）内嵌 HTML；PingFang/YaHei 仅本地渲染 | **随包再分发**:Noto 子集（OFL 1.1 允许再分发）;系统字体不随包 | @font-face 声明 + OFL 许可 | 已登记（OFL 合规） |
+| 英文字体 | Inter（方向，OFL） | 定稿时以 OFL 字体落地 | — | 概念方向，定稿登记 |
+| 地图派生物 | OSM 底图派生统计/概化几何 | © OpenStreetMap contributors，ODbL 1.0；仅发布派生统计，不分发原始数据 | 图中署名 + sources.json OSM-ODBL 条目 | 已登记（ODbL 合规） |
+| 活动品牌（车钩节/接口周/道口文化节） | 原创命名 | 未注册；商业化前检索 | — | 已登记（原创命名） |
+
+**结论**：品牌与媒体资产的作者、工具、许可、署名、再分发范围与生成工具均已登记；仅剩"商标检索与专业定稿"两项在触发 5.5（对外生产前）时执行。当前无未授权第三方素材。
