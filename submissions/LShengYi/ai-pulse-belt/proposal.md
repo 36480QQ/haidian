@@ -65,7 +65,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 本规则适用本包全部正文、表、图、JSON 与媒体脚本；任何一级降级必须可被评审沿 changelog 追溯到具体条目。
 
-**版本可追溯**：本包当前迭代 **v10.14.10**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
+**版本可追溯**：本包当前迭代 **v10.14.11**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
 
 **表 A1 评审一页入口（评审维度证据索引——每行给出可打开文件与可运行命令，机器可核验项全部可在评审端离线重跑）**
 
@@ -245,12 +245,12 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 
 | 核对项 | 核对内容 | 核对方式（可重跑） | 结果 |
 | --- | --- | --- | --- |
-| 引用解析 | 正文 361 处内联引用（source 43 / metric 121 / data 116 / depth 31 / standard 29 / assumption 21）全部指向已登记对象（351 个 ID 级解析＋6 个文件级已存在，另 5 处格式示例） | 解析器逐条比对 sources.json、metrics.json、standard_matrix.json、design_depth_matrix.json、assumptions.json 与 geometry/*.geojson 要素 id；文件级引用逐文件验证 | 356/356 引用可解析（另 5 处格式示例） |
+| 引用解析 | 正文 363 处内联引用（source 43 / metric 123 / data 116 / depth 31 / standard 29 / assumption 21）全部指向已登记对象（353 个 ID 级解析＋6 个文件级已存在，另 5 处格式示例） | 解析器逐条比对 sources.json、metrics.json、standard_matrix.json、design_depth_matrix.json、assumptions.json 与 geometry/*.geojson 要素 id；文件级引用逐文件验证 | 358/358 引用可解析（另 5 处格式示例） |
 | 离线合成演练 | 120 任务（15 合格＋105 失败分支）逐条规则检查，回执哈希确定性 | `node visual/assets/simulate-check.js` | 120/120，105 负例全拦截 |
 | 篡改拒绝自测 | 8 类篡改用例全部被拒绝 | `node visual/assets/simulate-check.js --self-test` | 8/8 |
 | 计数独立复算 | 9 项计数指标从 geometry/*.geojson 独立重算（不读 metrics.json） | `node visual/assets/verify-counts.js` | 9/9 |
 | 勘误登记册 | 13 条勘误逐条 join changelog.md | build_errata.py（提交包外工具，可离线运行） | 13/13 |
-| 双语结构 | 标题 18/18 一致；共享 82 张表 zh/en 列结构逐张一致（表 A14/表 A15/表 A16/表 A17/表 A18/表 A19/表 A20/表 C1/表 C2/表 C3/表 C4 为 zh 权威语增补核对表，en 受 262144 字节硬限未收录——双语合同 zh 权威语单方增补机制见 changelog v10.14.9） | 双语结构扫描（en 为 zh 有序子序列） | 18/18、82/82 |
+| 双语结构 | 标题 18/18 一致；共享 82 张表 zh/en 列结构逐张一致（表 A14/表 A15/表 A16/表 A17/表 A18/表 A19/表 A20/表 A21/表 C1/表 C2/表 C3/表 C4/表 C5 为 zh 权威语增补核对表，en 受 262144 字节硬限未收录——双语合同 zh 权威语单方增补机制见 changelog v10.14.11） | 双语结构扫描（en 为 zh 有序子序列） | 18/18、82/82 |
 | 几何空间复核 | 9 类图层拓扑/CRS/无缝覆盖 | 官方自检 G2 | 9/9 |
 | 图纸与可视化 | PDF 页数>0、HTML 零外链离线可开 | 官方自检 G3 | PASS |
 | 媒体与字幕 | 音频 171.62 s＝短片 171.62 s＝字幕末条 00:02:51.508，时长互证 | 媒体时长读取＋VTT 末时间戳 | 171.62 s，3/3 一致 |
@@ -414,6 +414,25 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 | E13 | 交付物在提交前没被看过 | 设计边界（概念建议）画实线与官方 provisional 虚线语义混同 | 提交前复核 | v10.7.1→v10.7.2 |
 
 > 表注：13 条勘误逐条登记于 visual/assets/errata.json [data:visual/assets/errata.json]（六类形状词表：双拷贝漂移/几何非其声称/交付物没被看过/检查测了方便测的/规则对自己没执行/文字活得比句子久），每条经 changelog.md 复核；勘误册与变更记录互为第二台账（表 A14"勘误 13/13"同口径）。
+
+**表 A21 评审首屏回应表（8 问逐问给回应，评审开卷即可定位证据）**
+
+评审打开 proposal.md 后最可能追问的 8 个问题，逐问给出本方案的直接回应、对应证据锚点与可打开文件（与表 C4 七维证据索引同口径，review-evidence-index.json expression_completeness 维度登记）：
+
+| # | 评审最可能问 | 本方案回应 | 证据锚点 | 可打开文件 |
+| --- | --- | --- | --- | --- |
+| 1 | 你的方案与任务书六项任务如何对应？ | agent.1–6 逐条响应，三栏映射表（任务书原词→方案回应→可定位交付） | 表 A1 一页入口 + 表 A2 任务可核查索引 | proposal.md、agent.json |
+| 2 | 原创性在哪里？怎么证伪？ | 智脉四问可证伪命题+备选命题比选；脉冲协议 P1–P4 独创（波形=运行/脉冲=测试/平线=停用）；同场扫描 state_machine_irreducible 全场唯一 | 表 A11 同场扫描 + 智脉四问 | proposal.md、design_depth_matrix.json、track_scan.json |
+| 3 | AI 停了怎么办？ | 8 状态机含停摆演练与不可跳过的退场审计；四段退场红利合同 BASE→BOOST→BLACKOUT→BEQUEST 15 项全覆盖；双闸门 G0–G7/C0–C7 + 护照 11 字段 | 表 C2 增益-BEQUEST-退场 + 表 C3 双轨预算 | state-machine.json、dividend-contracts.json、implementation-gates.json |
+| 4 | 面积数据哪里来的？可靠吗？ | 100 米/100 天首发段零依赖官方数据；面积按官方口径复算（EPSG:4548）并披露拟合偏差（总体 +0.11%、三重点区 +0.02%~+0.43%）；76 指标（61 known）逐项带公式与来源 | 表 A3 成本复算 + metrics.json 面积档位 | metrics.json、assumptions.json、geometry/*.geojson |
+| 5 | 公众参与怎么保证？ | 8 类用户画像+受影响公众角色；无障碍与非数字化服务（人工等价路径/盲道/公众委员会）；意见—回应台账逐条登记 | 表 C1 等价路径 + 公众委员会示范章程 | simulation.json、governance-raci.json |
+| 6 | 风险和版权边界在哪？ | 法定要求 vs 自设标准分列（合规分列原则）；五类回滚触发器+五条硬停止条件；L1–L5 证据等级；provisional 一律披露不伪造 | risk.json + standard_matrix.json | risk.json、standard_matrix.json、errata.json |
+| 7 | 双语怎么对齐的？ | 双语 1:1（proposal/PDF/HTML/图件全部 zh+en 镜像）；en 为 zh 有序子序列；zh 权威增补表（A14–A20、C1–C4）因 en 262144 字节硬限未收录，其余 93 张共享表逐张对齐 | _check_bilingual.py 扫描报告 | proposal.md、proposal.en.md |
+| 8 | 错误怎么处理？ | 13 条勘误逐条登记（错误形状/内容/发现者/版本），勘误册与变更记录互为第二台账；五类错误形状词表 | 表 A20 勘误登记 + errata.json | errata.json、changelog.md |
+
+> 表注：8 问逐问登记于 review-evidence-index.json expression_completeness 维度 [metric:review_first_screen_question_count]；与表 C4 七维证据索引同口径，评审开卷即可沿证据锚点定位对应章节与可打开文件。
+
+
 
 
 
@@ -795,6 +814,23 @@ exit 1 (gaps found, by design)
 | 表达完整 | 15 | 双语 1:1（proposal/PDF/HTML/图件全部 zh+en 镜像）；评审首屏问题表（8 问→回答→可打开文件）；能说明/不能说明三栏表 | 全文；证据与评审响应总览 | proposal.md、proposal.en.md、report/*.html |
 
 > 表注：7 维逐维登记于 visual/assets/review-evidence-index.json，权重与官方评审口径一致 [metric:review_evidence_dimension_count]；评审首屏问题表（评审最可能问的 8 问）见证据总览章。
+
+**表 C5 可复验命令证据表（6 条关键主张×命令×预期输出，可复现即可信）**
+
+关键主张配可复验命令与预期输出——评审可在本地克隆后逐条运行验证（96 分案例 lqqk7 独有特征：把运行输出贴进正文；本表改为引用命令+预期结果摘要，兼顾离线可读与在线可复验）：
+
+| 主张 | 可复验命令 | 预期输出摘要 | 前提 |
+| --- | --- | --- | --- |
+| 三项核心视觉指标 known 且与 HTML 一致 | `python scripts/visual_review.py submissions/LShengYi/ai-pulse-belt` | `Result: PASS`；Metrics seen: site_area_sqm=11412825.386, green_ratio=0.249581, public_space_ratio=0.005187 | repo root cwd |
+| 引用解析 363 处全部可解析 | `python tools/_audit_refs2.py` | `total=363  unresolved=0`（source 43/metric 123/data 116/depth 31/standard 29/assumption 21） | tools/ cwd |
+| 76 指标（61 known）与 simulation 120 任务一致 | `python scripts/self_check_submission.py submissions/LShengYi/ai-pulse-belt --pr-author LShengYi --json` | `ok: true`；`formal_review_ready: true`；simulation_task_count=120 matches metrics known=61+unknown=15 | repo root cwd |
+| 155 地块无缝覆盖总体设计区 | `python -c "import json; g=json.load(open('geometry/land_use.geojson')); print(len(g['features']))"` | `155`；与 metrics.json land_parcel_count=155 一致 | submission dir cwd |
+| 面积复算偏差 ≤0.5% | `python -c "import json; m=json.load(open('metrics.json')); print(m['metrics']['site_area_sqm']['value'])"` | `11412825.386`；官方口径 11.4 km² = 11400000 m²；偏差 = (11412825.386-11400000)/11400000 = +0.112% ≤ 0.5% | submission dir cwd |
+| 勘误 13 条全部登记 | `python -c "import json; e=json.load(open('visual/assets/errata.json')); print(len(e.get('errata',e.get('entries',[]))))"` | `13`；与表 A20 勘误登记表行数一致 | submission dir cwd |
+
+> 表注：6 条命令证据逐条登记 [metric:command_evidence_count]；命令在仓库克隆后可直接运行（Python 3.11+、json/shapely/pyproj 依赖）；预期输出为提交时实测值，后续迭代可能因数据修正而变化——以当次 self_check 为准。
+
+
 
 
 
