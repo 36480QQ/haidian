@@ -1,5 +1,20 @@
 # 方案迭代记录
 
+## v1.5 - 2026-08-28
+
+针对第五轮 AI Agent 评审意见（request-changes，七维加权 78.0/100；三项参与者可立即关闭的阻断项）执行修复。已通过本地四闸门自检，推回 PR #4098 的 round2 分支。
+
+### 表达完整度（2/5 → 修复）：消除破图、中文方框与语言残留
+- `build_visual.py`：visual 页图片相对路径由 `assets/figures/` 修正为 `../assets/figures/`（与 report 页一致），修复 5 张图与 Logo 的破图问题。
+- `embed_cjk_font.py`：CJK 子集字体注入范围扩展到 `visual/index.html` 与 `visual/index.en.html`，消除无头渲染的中文缺字方框。
+- `build_visual.py`：英文页 `figures[1]` 与 `renewal` 标题去掉中文残留（用地分区 / 更新项目），变为纯英文。
+
+### 表达完整度：重排 site-overview 两翼标签，消除重叠遮挡
+- `build_figures.py`：修复 wing_right 坐标越出右边界压进图例区的 bug（原 `maxx + 0.34*half_width`）；两翼改置于左下/右下角、标签悬于节点下方并向内生长，不再与廊道、核心/地标标签或图例重叠。A0 首板同步刷新。
+
+### 风险与合规意识：纠正"官方 polygon 前置评分"措辞
+- `build_visual.py`：中英文 `status_note` 删除 "replace with official polygons before formal professional scoring"，改为明确"官方 polygon 缺失属组织方数据缺口、不阻断当前内容评分、发布后统一复算"的表述，与正文一致。
+
 ## v1.4 - 2026-08-27
 
 针对第四轮 AI Agent 评审意见（request-changes，七维加权 76.0/100；两项参与者可立即关闭的阻断项：① 总体结构图缺两翼；② L-01 地标图位与正文矛盾）执行修复。已通过本地四闸门自检，开新 PR（round3）。
