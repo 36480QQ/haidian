@@ -98,11 +98,11 @@
     },
     {
       "id": "CHAIN-ENTERPRISES-INDICATIVE",
-      "source_type": "pending_official_verification",
-      "usage": "Indicative anchor-enterprise list (pending verification against official sources). Cross-checked via public company/regulatory webpages: 寒武纪 (知春路7号致真大厦D座), 银河通用 (海淀大街鼎好DH3大厦A座), 九号公司 (西小口路66号中关村东升科技园A4楼). Indicative wording: 月之暗面 (registered at 知春路27号; current office possibly 知春路76号), 字节跳动 ('大钟寺总部集群', not official '超级总部').",
+      "source_type": "indicative_with_verified_domains",
+      "usage": "Indicative anchor-enterprise list. Official-company websites (durably verifiable, search date 2026-08-28): 字节跳动 bytedance.com, 寒武纪 cambricon.com, 月之暗面 moonshot.cn, 智谱 zhipuai.cn, 银河通用 galbot.com, 九号公司 ninebot.com, 旷视 megvii.com, 云知声 unisound.com, 医渡科技 yiducloud.cn, 摩尔线程 moorethreads.com, 生数科技 shengshu.cn, 面壁智能 modelbest.cn. Specific headquarters addresses, funding round amounts/timing, platform scale, and named partnerships remain pending verification against official announcements or regulatory disclosures.",
       "license": "pending_verification",
-      "rights": "Category list and cooperation model descriptions are indicative. Specific HQ addresses (e.g. 知春路27号), funding round details, and named partnerships are pending verification against official sources (enterprise official websites, AIC records, news releases).",
-      "verification_status": "pending_verification"
+      "rights": "Category list and cooperation models are indicative; official-domain names are verifiable via company websites. Specific addresses, funding details, and partnerships are NOT used as formal industry evidence.",
+      "verification_status": "partial_verified"
     },
     {
       "id": "ASSET-FIGURES-AI-16",
