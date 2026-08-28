@@ -43,7 +43,7 @@
 1. `visual/assets/renders/` 下七张概念意象图，分两批生成，来源如下：
    - **Lib Image（LibTV 平台）两张**：`render-bell-plaza.jpg`（应答钟广场，以公开授权的大钟寺实景照片〔Wikimedia Commons，CC 许可〕为参考图生成，用于还原古建形制）、`render-spike-belt.jpg`（道钉带日景）。
    - **GPT image 2.0（经用户 ChatGPT Pro 订阅调用）八张**：`render-ren-bridge.jpg`（人字之跃片区鸟瞰）、`render-answer-gate.jpg`（巨型「应答簿」纪念门，生成过程留档、判为不采用）、`render-spike-belt-night.jpg`（道钉带夜景）、`render-disclosure-wall.jpg`（算法公示墙）、`render-lesson-gate.jpg`（无墙学期课门）、`render-answer-origin.jpg`（中答·应答原点片区鸟瞰）、`render-dazhongsi-aerial.jpg`（南问·大钟寺片区鸟瞰）、`render-robot-knocks.jpg`（应答门·机器人敲门）。
-   - **非 AI 生成的随包图像两张**：`b3d-poster.jpg` 与 `b3d-poster.en.jpg`，均为本包离线三维场景（Three.js）自身的截图，经确定性脚本 `build-staging/make_b3d_poster.py` 套入与断面图件同一套图签版式（标题、视点与几何依据说明、尺度校核、竖向链条、免责），非图像模型生成物、未经任何图像模型润饰。图中尺度数值与展示页 `.dims3`、正文口径一致；几何按断面 ZZY-1／ZZY-2 的设计目标值搭建，未经坐标配准。
+   - **非 AI 生成的随包图像两张**：`b3d-poster.jpg` 与 `b3d-poster.en.jpg` 为确定性脚本 `build-staging/make_b3d_form.py` 绘制的正投影技术图（平面／立面／纵剖三格），几何参数与包内离线三维场景 `visual/assets/bridge3d.js` 同源，非图像模型生成物、未经任何图像模型润饰。图中尺寸为设计目标值，与展示页 `.dims3`、正文口径一致；立面与纵剖的竖向放大倍数已在图上注明。
    - **两张前版已判为不采用并整条替换**：旧 `render-ren-bridge` 表现为下承式桁架桥，与正文「桥不做塔、不做拱、不做门架」「桥面之上不叠加构筑物」等五项口径不符，该文件已不随包提交；旧 `render-answer-gate` 表现为青铜卷轴（巨型「应答簿」）纪念门，与正文「46 座社区出入口」的定义不符，**该文件仍随包提交、但仅作生成过程留档**，在 manifest 与展示页画廊中均标注「判为不采用」，不作为方案表达。作废原因在此写明，以免读者从早期版本产生误解。
    - **提示词全部由本方案自行撰写**，其中人字之跃一张的几何条件（抬升 6 米、单侧坡道展开 128 米、两段并排折返、占地 66×9 米、两端落地）取自本包断面图件 ZZY-1／ZZY-2 的数值；大钟寺一带的空间关系取自 OSM 实测（觉生寺与地铁 13 号线大钟寺站相距约 676 米、方位约 115°，13 号线走向约 175°）。
    - **边界（重要）**：以上七张均为**意象图，不是图纸**。它们由文字提示词生成，**未经坐标配准，不由本包 `geometry/*.geojson` 派生**，因而不表达用地性质、不表达地块边界、不表达任何要素的精确位置与尺寸；个别画面与正文数值吻合，是提示词约束的结果而非几何生成的结果。凡涉及用地、边界、尺寸与位置的表达，一律以 `assets/figures/` 下的规划图件与断面图件为准。

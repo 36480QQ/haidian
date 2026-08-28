@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "1e0fe27f67aa7ababfc32bf993ee634409f634e5b77c9535621abc807fc786bf"
+      "sha256": "b3f8687c2cecde68adfe7737dddd295d31a0200ad8eee75fb44836b9fe9eac24"
     },
     {
       "path": "compliance_matrix.json",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "c3d765049f94ce9a165686ebd618061691d2af208acd2268e62e85b7750415e6"
+      "sha256": "b26312e24ae4e7bc4d88a89092d230b944e15a3bf616dac6f3958bad1d834759"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "c5cf4e2a1a8cc56784d2915081684dcbaaac46c64f42611eed33a7f6d7c40795"
+      "sha256": "7f8653729437c9414bb1b39c192c74175a269cf83bb4fe02f0179b42a9f82f97"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f42c0194d0eb2ef949bfffba82febf679127200d4a8de3c170f76421d6a2c40a"
+      "sha256": "5da5116561ada1fed26d2b3abdd2f1beb86aa722697a29384fafe7a8759f649d"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -590,22 +590,22 @@
       "path": "visual/assets/renders/b3d-poster.jpg",
       "role": "visualization",
       "required": false,
-      "sha256": "222d4f510c51a38587f1309cb109c5f865b957ceefc467ce1749d30191aa283a",
-      "title_zh": "人字之跃三维场景 · 静态兜底图",
-      "title_en": "Ren-Shaped Leap 3D scene - static fallback",
-      "description_zh": "离线三维场景（Three.js，几何按断面 ZZY-1/ZZY-2 的设计目标值搭建）的静态截图，经确定性脚本套入与断面图件同一套图签版式（标题、几何依据、尺度校核、竖向链条、免责），用作浏览器不支持 WebGL 时的兜底图与加载前占位。「人」字落在两端的折返本身，不落在桥面的平面造型上——两段坡道在平面上并排展开，俯视不构成「人」字轮廓。概念体量示意，未经坐标配准。",
-      "description_en": "A static screenshot of the offline three-dimensional scene (Three.js; geometry built to the target values of sections ZZY-1/ZZY-2), set by a deterministic script into the same titled frame as the section drawings (title, geometric basis, scale check, vertical chain, disclaimer), used as the fallback when a browser cannot run WebGL and as the placeholder before load. The character ren lies in the switchback itself, not in any plan-view outline of the deck: the two ramp runs sit parallel and no ren outline is readable from above. Conceptual massing illustration, not coordinate-registered.",
+      "sha256": "4040c7d3fd703eeedbcbe49f40da33f64419f29f011fa67bbfeeadbf1641f42a",
+      "title_zh": "人字之跃 · 形态说明（平面／立面／纵剖）",
+      "title_en": "Ren-Shaped Leap - form explained (plan / elevation / section)",
+      "description_zh": "人字之跃步行桥的形态说明图：平面／立面／纵剖三格正投影，由确定性脚本 build-staging/make_b3d_form.py 绘制，几何参数与展示页的离线三维场景 （visual/assets/bridge3d.js）同源。平面格取一端坡道局部（1:1），画出两段坡道并排、不上下叠置的关系——「人」字落在折返本身，俯视不构成「人」字轮廓；立面格标注 6.0 抬升、1.4 栏板与 1:20.7 纵坡；纵剖格按沿路径展开长度 340 逐段标出竖向链条。立面与纵剖竖向放大 4×，已在图上注明。概念体量示意，未经坐标配准，不含工程结论。",
+      "description_en": "Form-explanation drawing for the Ren-Shaped Leap footbridge: plan, elevation and longitudinal section, drawn by the deterministic script build-staging/make_b3d_form.py from the same geometry parameters as the offline 3D scene on the page (visual/assets/bridge3d.js). The plan shows one ramp assembly at 1:1, where the two runs are visibly parallel rather than stacked - the character ren lies in the switchback itself and no ren outline reads from above; the elevation dimensions the 6.0 rise, the 1.4 parapet and the 1:20.7 gradient; the section steps through the vertical chain along a developed path length of 340. Elevation and section carry a 4x vertical exaggeration, stated on the drawing. Conceptual massing illustration, not coordinate-registered, not an engineering conclusion.",
       "language": "zh"
     },
     {
       "path": "visual/assets/renders/b3d-poster.en.jpg",
       "role": "visualization",
       "required": false,
-      "sha256": "7a7f95a54c5de050bfe7c85cbe3c089c3f053f0bafca45e6eef10b25d4df4d8d",
-      "title_zh": "人字之跃三维场景 · 静态兜底图（英文版）",
-      "title_en": "Ren-Shaped Leap 3D scene - static fallback (English)",
-      "description_zh": "离线三维场景（Three.js，几何按断面 ZZY-1/ZZY-2 的设计目标值搭建）的静态截图，经确定性脚本套入与断面图件同一套图签版式（标题、几何依据、尺度校核、竖向链条、免责），用作浏览器不支持 WebGL 时的兜底图与加载前占位。「人」字落在两端的折返本身，不落在桥面的平面造型上——两段坡道在平面上并排展开，俯视不构成「人」字轮廓。概念体量示意，未经坐标配准。",
-      "description_en": "A static screenshot of the offline three-dimensional scene (Three.js; geometry built to the target values of sections ZZY-1/ZZY-2), set by a deterministic script into the same titled frame as the section drawings (title, geometric basis, scale check, vertical chain, disclaimer), used as the fallback when a browser cannot run WebGL and as the placeholder before load. The character ren lies in the switchback itself, not in any plan-view outline of the deck: the two ramp runs sit parallel and no ren outline is readable from above. Conceptual massing illustration, not coordinate-registered.",
+      "sha256": "060fb63be4d1149f666b9461d7b210c82b188823f70a1ae9f2c57ac2a141434c",
+      "title_zh": "人字之跃 · 形态说明（平面／立面／纵剖）（英文版）",
+      "title_en": "Ren-Shaped Leap - form explained (plan / elevation / section) (English)",
+      "description_zh": "人字之跃步行桥的形态说明图：平面／立面／纵剖三格正投影，由确定性脚本 build-staging/make_b3d_form.py 绘制，几何参数与展示页的离线三维场景 （visual/assets/bridge3d.js）同源。平面格取一端坡道局部（1:1），画出两段坡道并排、不上下叠置的关系——「人」字落在折返本身，俯视不构成「人」字轮廓；立面格标注 6.0 抬升、1.4 栏板与 1:20.7 纵坡；纵剖格按沿路径展开长度 340 逐段标出竖向链条。立面与纵剖竖向放大 4×，已在图上注明。概念体量示意，未经坐标配准，不含工程结论。",
+      "description_en": "Form-explanation drawing for the Ren-Shaped Leap footbridge: plan, elevation and longitudinal section, drawn by the deterministic script build-staging/make_b3d_form.py from the same geometry parameters as the offline 3D scene on the page (visual/assets/bridge3d.js). The plan shows one ramp assembly at 1:1, where the two runs are visibly parallel rather than stacked - the character ren lies in the switchback itself and no ren outline reads from above; the elevation dimensions the 6.0 rise, the 1.4 parapet and the 1:20.7 gradient; the section steps through the vertical chain along a developed path length of 340. Elevation and section carry a 4x vertical exaggeration, stated on the drawing. Conceptual massing illustration, not coordinate-registered, not an engineering conclusion.",
       "language": "en",
       "translation_of": "visual/assets/renders/b3d-poster.jpg"
     },
