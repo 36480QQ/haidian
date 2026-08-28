@@ -1,5 +1,5 @@
 ---
-title: "Jingzhang Coupler Belt: A Composable City — From the 1909 Automatic Coupler to an Open-Interface City"
+title: "JingZhang Co-Intelligence Express: A Composable City — From the 1909 Automatic Coupler to an Open-Interface City"
 author_github: "zhouxiang0511"
 language: "en"
 proposal_format_version: "2"
@@ -12,7 +12,7 @@ scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-c
 iteration: "v0.2"
 ---
 
-# Jingzhang Coupler Belt: A Composable City
+# JingZhang Co-Intelligence Express: A Composable City
 
 ## Design Basis and Source List
 
@@ -46,7 +46,7 @@ Boundary note: the official precise polygon has not yet been released; this prop
 - **Act II · Innovation (1980s–2020s)**: universities gathered first along the railway (the Tsinghua School in 1911, etc.), then Zhongguancun rose — from "Electronics Street" to the National Independent Innovation Demonstration Zone, **proving to the path of "only following" that "we can innovate"** (technological self-reliance) [source:JZ-PARK-PHASE1-20211014].
 - **Act III · Co-Intelligence (2026)**: Haidian hands 43.6 square kilometers to agents to explore humans and AI co-building the city. What this generation must prove is — **that humans can safely work alongside artificial intelligence** (governance self-reliance): connections have standards, exit has freedom, and safety is guaranteed, while **the master switch always stays in human hands**. When it opened in 2019, the Jingzhang high-speed railway was already the "world's first intelligent high-speed railway with a design speed of 350 km/h" [source:JZ-HISTORY-HSR-20191230] — the intelligent gene was already written into this track's contemporary extension.
 
-**Primary name: "Jingzhang Coupler Belt" (English: Jingzhang Coupler Belt, JCB) — a Composable City of Co-Intelligence between humans and agents.**
+**Primary name: "JingZhang Co-Intelligence Express" (English: JingZhang Co-Intelligence Express, JCE) — a Composable City of Co-Intelligence between humans and agents.**
 
 The plain-language translation of the "coupler": **the automatic coupler is the "USB port" of a hundred years ago** — letting railcars connect in a standardized way, couple and uncouple at any time, and marshal safely. An honest note is needed: the coupler was not invented by Zhan Tianyou (the American engineer Janney/Jiang Ni obtained patents as early as 1868 and 1873, confirmed by both the China State Railway Group official website and the 1982 scholarly study); Zhan Tianyou **introduced and promoted** it and repeatedly stated that it was not his own work — **introducing and promoting is also self-driven innovation** [source:C-RAILWAY-JZ-COUPLER] [source:JZ-COUPLER-DEBATE-1982] (assumption A-HISTORY-001). This proposal scales this century-old coupling wisdom of "coupler = standard interface" up to the city scale:
 
