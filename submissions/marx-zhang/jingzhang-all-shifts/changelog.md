@@ -1,5 +1,11 @@
 # 方案迭代记录
 
+## v4.6 - 2026-08-28（官方边界发布后的独立复算工作包）
+
+- **复算工作簿**：新增 `visual/assets/official-boundary-recalculation-workbook.json`，冻结当前临时几何与指标基线，登记官方总体边界/三处重点区的输入契约、来源与 SHA-256、CRS/几何 QA、等面积复算公式、指标 delta、受影响交付物、责任角色、状态机与停止条件。
+- **执行手册**：新增 `assets/media/official-boundary-recalculation-runbook.md`，把未来的登记、验证、替换、复算、视觉抽查和证据链复核组织成可独立执行的工作包；当前保持 `not_activated`，不替换临时 polygon。
+- **边界**：正式边界尚未进入本包；专题图层缺失时仍保持 `conceptual` 或 `unknown`，不把官方边界升级为法定控制、外部协议等级、实施授权、政府承诺或官方背书。
+
 ## v4.5 - 2026-08-28（复审修复：英文入口 CJK 切换标签）
 
 - **双语入口**：为英文 `report/proposal.en.html` 与 `visual/index.en.html` 同步内嵌包内可分发的 CJK 字符子集，覆盖中文版本、中文文字稿及权利说明等切换标签，避免离线环境出现方框字形。
