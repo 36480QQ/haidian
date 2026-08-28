@@ -175,6 +175,24 @@ AI consolidates large volumes of material, matches requirements, identifies conf
 
 Industry validation occurs only in spaces that satisfy physical conditions, professional review, controlled access, abnormal shutdown and return-to-everyday-use requirements. Every intelligent service retains an ordinary, non-digital route of use.
 
+AI advice may change spatial or delivery arrangements only after named professional roles verify evidence and make the decision. Continuous movement, accessibility, basic public service, staffed and non-digital routes, the right to refuse participation and recovery after failure are common public guarantees across all scenarios; if any cannot be met, the intelligent layer stops while everyday service continues.
+
+### AI-assisted spatial judgement and exit arrangements in the three areas
+
+| Area | Question | AI support | Human decision | Spatial action | Stop and restore |
+| --- | --- | --- | --- | --- | --- |
+| Zhongzhiyuan | Whether ordinary shared functions require new dedicated space | Align premises and requirements, distinguishing shareable, adaptable, specialised and evidence-missing items. | Planning, architecture, utilities and operations specialists verify conditions and decide sharing, adaptation or whether specialised new space remains justified. | Distribute ordinary functions across multiple premises; new floor space serves only verified non-substitutable specialised conditions. | If evidence is incomplete or non-substitutability is unproven, do not initiate new space for ordinary shared functions; existing shared and staffed services continue. |
+| AI Origin | Whether consolidation-led renewal would damage the fine-grain street-and-courtyard network | Compare consolidation and retain-and-repair options by spatial consequence, flagging missing evidence and affected links. | Planning, architecture, fire, ownership and operations parties verify building-level conditions and decide retain-and-repair or limited reconstruction. | Do not reduce independent entrances, short links, courtyard connections or small units unless repair is shown to be infeasible. | If key evidence is missing, accessibility worsens or public movement is closed, pause consolidation, return to retain-and-repair review and retain existing access. |
+| Dazhongsi | How multiple projects jointly form and deliver the public ground | Consolidate demand, identifying overlap, conflict, time-sharing opportunities and duplicated public-improvement claims. | Transport, utilities, public-space, project-management and operations parties jointly set scale, section, sequence and responsibility. | Give each public improvement one ID with a separate works package, responsibility allocation and acceptance record that commercial opening cannot replace. | If continuous movement, accessibility, responsibility or independent acceptance is unresolved, commercial projects cannot claim the improvement early; basic routes and services remain open. |
+
+### Public-use and public-service guarantees
+
+- **PG-01 · Basic service is not displaced.** Basic movement, public services and non-commercial rest are not displaced by display, testing, deliveries or commercial activity.
+- **PG-02 · Physical accessibility first.** Continuous physical accessibility comes first; intelligent explanation cannot replace barrier removal or safety review.
+- **PG-03 · Retain staffed and non-digital routes.** Essential information, help and service retain staffed, paper or fixed-sign routes without requiring a phone or account.
+- **PG-04 · Refusal does not reduce service.** People may refuse testing; refusal, complaint or non-use of AI cannot reduce basic service.
+- **PG-05 · Restore everyday use after failure.** On failure, stop the intelligent layer, remove reversible facilities and record restoration of everyday use.
+
 ### Personas and spatial needs
 
 | ID | Persona | Task | Spatial need |
@@ -284,6 +302,14 @@ Implementation avoids invented dates and proceeds according to evidence and prof
 Shared projects include the heritage public connection, transport and blue-green interfaces, historical interpretation and basic public services. Zhongzhiyuan establishes a premises-capacity register and shared-premises projects. AI Origin establishes building-level and fine-grain records and repair projects. Dazhongsi establishes a cross-project time-based demand register, an independent public-ground works package and a responsibility allocation schedule.
 
 Long-term operation annually updates premises capacity, changes to entrances and fine grain, public demand and project responsibility, revising spatial options, project scale and sequence in response to operational feedback. No real implementing body, investment amount or partner is assigned, and no existing event, test or government commitment is claimed.
+
+### Three first-round detailed review tasks
+
+| Area | First review task | If unresolved |
+| --- | --- | --- |
+| Zhongzhiyuan | Complete one cross-premises capacity-to-specialised-need comparison; if non-substitutability is unproven, close the review with a sharing or adaptation option. | If evidence is incomplete or non-substitutability is unproven, do not initiate new space for ordinary shared functions; existing shared and staffed services continue. |
+| AI Origin | Select one entrance-short-link-courtyard sequence for parallel consolidation and retain-and-repair review; if unresolved, do not reduce existing links. | If key evidence is missing, accessibility worsens or public movement is closed, pause consolidation, return to retain-and-repair review and retain existing access. |
+| Dazhongsi | Select one cross-project public improvement and record one ID, service extent, responsibility and independent acceptance; unclear responsibility prevents duplicate project credit. | If continuous movement, accessibility, responsibility or independent acceptance is unresolved, commercial projects cannot claim the improvement early; basic routes and services remain open. |
 
 ### Annual operational review
 

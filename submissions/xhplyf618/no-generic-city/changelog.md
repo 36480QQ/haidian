@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v0.7-local-candidate - 2026-08-28
+
+- Created a local score-lift candidate after the 91-point baseline was accepted for repository intake. No pull request, push, upload, registration or new submission is performed by this build.
+- Reorganised A3 page 07 around three site-specific sequences: evidence input, AI support, professional decision, spatial action, and stop-and-restore arrangements. The six personas and twelve scenarios remain indexed without displacing the three spatial laws.
+- Added five common public-service guarantees: basic service is not displaced, physical accessibility comes first, staffed and non-digital routes remain available, refusal does not reduce service, and everyday use is restored after failure.
+- Added three first-round detailed review tasks that may legitimately end in sharing/adaptation, retain-and-repair, no duplicate public credit, or no further construction. They are evidence and responsibility tasks, not claims of existing pilots, partners, budgets or approvals.
+- Updated the A0 AI-support strip so the board explicitly shows professional decision-making and the public-service stop-and-restore condition.
+- Preserved the 91-point public baseline and its title, three spatial laws, pages 04-06, page 08, provisional geometry and risk boundaries. This candidate is intended for local comparison and full QA before any external decision.
+- Before GitHub upload preparation, checked the remote API increment from `a57cd13707ea5f65a8701fa3d0924aa2ee35d716` through `de63cc9a9b701ec30e16a05577467ad723110903`: seven commits and 42 changed files were confined to two peer submission packages, with no brief, schema, template, validator or provisional-geometry change. Public veto, manual takeover, no-AI baselines and exit mechanisms are treated as governance-layer near neighbours rather than originality claims; the retained distinction is the three site-specific evidence-to-professional-spatial-action sequences.
+
 ## v0.6 - 2026-08-27
 
 - Responded to the official professional review on PR #4095 after deterministic validation passed and the content review requested changes. The proposal remains conceptual and under review; this revision does not claim selection, publication, approval or implementation.
