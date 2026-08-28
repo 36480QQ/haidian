@@ -10,11 +10,11 @@
   "agent": {
     "agent_id": "zxymiku",
     "agent_name": "zxymiku-agent",
-    "model": "claude-opus-4-8",
-    "model_family": "claude",
-    "model_detail": "Claude Opus 4.8 (1M context) via Claude Code CLI, session 2026-08-23"
+    "model": "claude-opus-4-8+gpt-5.6-sol",
+    "model_family": "other",
+    "model_detail": "Claude Opus 4.8 (original proposal) + OpenAI Codex gpt-5.6-sol (v1.8.0 repair/regeneration)"
   },
-  "generated_at": "2026-08-22T18:21:48Z",
+  "generated_at": "2026-08-27T20:15:00+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -26,19 +26,19 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e9123002a34a67a47164f704fb3545f88ed1443274d94b750e2dbc2d107907d9"
+      "sha256": "857c08164fb5ecbb34d1eeb6fbf275cbc49927c754ce15ffa84990fde15b6404"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "d1b381d247981c30e29a4456289ceef4bded0d9fac5d9fe0734c1066fdc837cd"
+      "sha256": "743c59e4c9fbbab3f6d12992774bdcb74835def820885ae2acaff380078c1a79"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "49013446eeca5820e5c00279c15edd9d14a9344d67c3c16a0593ac73ff0f7171"
+      "sha256": "cb58e4455077220634e008cba57566c580c630ffbce8da88c9670de8b23ce3f2"
     },
     {
       "path": "assumptions.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "9e95c767e2cba3d86e04934c7d2e6a835bd3bfdb0b5d086ea6b4e1280ec4fca6"
+      "sha256": "9470c4888771ad3e598d5076e6a34efaa44bf678416660dfa9c656ce9fa88456"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7f8a2f0f3d65daa51df19aa0f1f073d911aa0ef1a1525daa6083d4a9f471666a"
+      "sha256": "031194c7f33ad1f0542738814cd304c5f8596e603db77cd9378d2a7e9f18472f"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,28 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "3b426536f906a86940531725c6d8048b7f7dbe35001d86c9472f969f9fa1e8bc"
+      "sha256": "42f5d1f137983cb3a26e756abf692ea7c293b22ff2ed2eb0230d0e1dda21f796"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "77d6efbafe52c438292395d22165fe0769db030f9d8ba5df534e0b771520466d"
+      "sha256": "bc4e65796194017bddfbc9907f9826236ccd04636497a87843ee0622e04f8e65"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "82ca91a35f75229915c3cf5df32c7de459d8b68a9337f71f1a6a664c6b758095"
+      "sha256": "1acea373f46bcdb5d2196c0ec758535a80a59658380096153043674c91431997"
     },
     {
       "path": "assets/media/cover.webp",
       "role": "media_poster",
       "required": false,
       "language": "neutral",
-      "sha256": "41fea67d6600cdfa3b3bfb3872e9d32611f989ca6f56abcb34eca44ddb8a2dbb"
+      "sha256": "e6a86627ef79febc1afe67457b78b2372106d9ab8e98ebea4d58cee61a08ba0d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -135,7 +135,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f02b3cbe99fddd7241768209a03c071dfddfeb50e3b0b39b45fa27a9f3f13952"
+      "sha256": "e49c1f332a8302c463ce9bb123dc86a1ce394b2f963af53dd5c350743380ef82"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -186,7 +186,7 @@
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "48c53c50e9a4a55bc85b912dea99fdc71275143dcb4b736a47855a383b1879dd"
+      "sha256": "6165f4998611da9b733016dfabdb3d8b1d476a48c7d90e00e308bf77b7284f5e"
     },
     {
       "path": "geometry/phasing.geojson",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "f92bc9faaaab20cb1e6bb8677420c45b72e6d889b3c44f89544ed4679be41411"
+      "sha256": "697aeea1193f02f97eaaeb62983138aa7d48315a16ebc28843217a2c512d782e"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "66821767937b859dac99b74e621618fb13054ea51f69353cc5502804e4362307"
+      "sha256": "5b394cfc3f3d8b959f3e0e240627470c20e509247c78d35328a90505534c15e0"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "e862094a1d2652bf7f8dd20f084c8911b64e4d62a0b4d3d2acd1d16883a56cde"
+      "sha256": "c8a4a7e3dfa7079f62ba949c3ad021608fae4a48604dba3fb31731fab7c8d948"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "9ce5b45687e184a4d3d916b1f82720da102e6d642db53d2b83458666ce6bc53e"
+      "sha256": "386fabd406c2a395774c994afd5386be17b71bcf9108b58849f784216b406ab7"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e23245a40763648eb09c976f421b3b36f889b61a70f3dadf98ad61ab349d85a5"
+      "sha256": "d83539383271d93c4503dd5a97433e81254701dfdb869535018b160c2cbdfa05"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -266,7 +266,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "54309e29a0255e4f810f9347f15c818f78792985d372d3db200859bc4c46103d"
+      "sha256": "d1103148aa2c540d9b03582fab596fbd888677cb248343911bb9bfc1217f1ce6"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -304,7 +304,21 @@
     "self_checked": true,
     "known_blockers": [],
     "data_confidence": "low",
-    "readiness_contract": "persisted-self-check-v1"
+    "readiness_contract": "persisted-self-check-v1",
+    "extensions": {
+      "x-package-freeze": {
+        "schema_version": "1.0",
+        "data": {
+          "version": "v1.8.0",
+          "iteration": "v1.8.0",
+          "generated_at": "2026-08-27T20:15:00+08:00",
+          "agent_id": "zxymiku",
+          "agent_name": "zxymiku-agent",
+          "model": "claude-opus-4-8+gpt-5.6-sol",
+          "model_detail": "Claude Opus 4.8 (original proposal) + OpenAI Codex gpt-5.6-sol (v1.8.0 repair/regeneration)"
+        }
+      }
+    }
   },
   "cover_image": "assets/media/cover.webp"
 }

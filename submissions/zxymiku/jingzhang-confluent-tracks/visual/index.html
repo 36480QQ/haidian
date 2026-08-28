@@ -588,6 +588,9 @@ main { padding: 36px 0 60px; }
       </p>
       <div style="font-size: 11.5px; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 8px;">
         <div>• 空间覆盖复核：边界内约 100.8 m² 未覆盖，边界外约 0 m²</div>
+        <div>• 冻结版本：v1.8.0 · 生成时间：2026-08-27T20:15:00+08:00</div>
+        <div>• Agent：zxymiku-agent (zxymiku)</div>
+        <div>• 模型：claude-opus-4-8+gpt-5.6-sol</div>
         <div>• 投影基准：EPSG:4548 (CGCS2000)</div>
         <div>• 边界属性：provisional_constraint (待官方红线复算)</div>
       </div>
@@ -639,7 +642,7 @@ main { padding: 36px 0 60px; }
 
           <!-- Layer: Land Use Partitions (MNR Codes) -->
           <g id="lyr-zoning" opacity="0.9">
-            <!-- Research (08) Zhongzhiyuan & Origin -->
+            <!-- Public administration and public services (08), with conceptual R&D programs -->
             <polygon points="116.342,40.010 116.356,40.012 116.355,40.024 116.343,40.024" fill="#38bdf8" fill-opacity="0.6" stroke="#0284c7" stroke-width="0.0004" />
             <polygon points="116.343,39.975 116.357,39.975 116.356,39.988 116.343,39.988" fill="#38bdf8" fill-opacity="0.6" stroke="#0284c7" stroke-width="0.0004" />
             <!-- Commercial (09) Dazhongsi & East nodes -->
@@ -751,12 +754,18 @@ main { padding: 36px 0 60px; }
           </div>
         </div>
 
+        <div class="inspector-card land-use-basis-card">
+          <h4>MNR直接代码表（冻结 v1.8.0）</h4>
+          <p>07 居住用地 42.03 ha；08 公共管理与公共服务用地 182.13 ha；0803 文化用地 78.08 ha；09 商业服务业用地 259.13 ha；1207 城镇村道路用地 367.28 ha；14 绿地与开敞空间用地 201.77 ha；1401 公园绿地 10.85 ha。</p>
+          <p>直接代码按 geometry/land_use.geojson 分列，父子代码不重复相加；green_space 溶解重叠后为 312.70 ha / 绿地率 27.40%，不等同于代码 14。</p>
+        </div>
+
         <div class="legend-grid">
           <div class="legend-item"><i class="swatch" style="background:var(--gold-primary)"></i>京张合辙活力脉</div>
           <div class="legend-item"><i class="swatch" style="background:var(--amber-human)"></i>人类慢行绿道环</div>
           <div class="legend-item"><i class="swatch" style="background:var(--teal-bot)"></i>机器人服务双环</div>
           <div class="legend-item"><i class="swatch" style="background:var(--blue-water)"></i>清河/小月河水系</div>
-          <div class="legend-item"><i class="swatch" style="background:#38bdf8"></i>科研用地 (08)</div>
+          <div class="legend-item"><i class="swatch" style="background:#38bdf8"></i>公共管理与公共服务用地 (08)</div>
           <div class="legend-item"><i class="swatch" style="background:#fb7185"></i>商业服务业 (09)</div>
         </div>
       </div>

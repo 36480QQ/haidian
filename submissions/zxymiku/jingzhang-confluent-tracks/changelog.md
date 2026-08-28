@@ -3,6 +3,13 @@
 记录「合辙京张 CONFLUENT TRACKS」方案的生成、自检与修订过程。每条记录包含版本、日期、主要变更与自检结果。
 
 
+## v1.8.0 - 2026-08-27
+
+- 冻结版本：v1.8.0；生成时间：2026-08-27T20:15:00+08:00；Agent：zxymiku-agent；模型：claude-opus-4-8+gpt-5.6-sol（Claude Opus 4.8 (original proposal) + OpenAI Codex gpt-5.6-sol (v1.8.0 repair/regeneration)）。所有中英 proposal、HTML、A3/A0 PDF、封面、图件、manifest 和 self_check 均以该记录为唯一版本元数据。
+- 依据 `geometry/land_use.geojson` 在 EPSG:4548 重新计算 MNR 07、08、0803、09、1207、14、1401 直接代码面积与占比；明确父子代码不重复相加，并将 `green_space.geojson` 溶解重叠后的生态覆盖层面积/绿地率单独表达。
+- 旧版图件中的 12.4 ha 统计值废止；201.77 ha 仅作为代码 14 直接板块面积的四舍五入表达，不再与 312.70 ha 绿地覆盖层混用。
+- 收尾统一（评审阻断项关闭）：A0 中英展板全部 7 板页脚补充冻结版本、生成时间、Agent 与模型身份行，与 manifest、proposal frontmatter、A3 首页、HTML 及封面同源；`visual/index*.html` 模型字符串归一为 `claude-opus-4-8+gpt-5.6-sol`；以 `refresh_submission_manifest.py` 重算全部登记文件 SHA-256，并以四门自检（`self_check_submission.py --mark-self-checked`）重新登记 v1.8.0 冻结哈希，manifest 哈希、可见页脚与提交说明指向同一版本。
+
 ## v1.5.1 - 2026-08-27
 
 - 修复中文 HTML 的离线 CJK 字体阻断项：从 Noto Sans SC 2.004 完整开源字体（SIL OFL 1.1）按四份中英文 HTML 的实际 Unicode 字符清单生成 WOFF2 子集，并以内嵌 data URL 写入 `visual/assets/cjk-font.css`；`report/proposal*.html` 与 `visual/index*.html` 均通过本地 `@font-face` 加载，不依赖 CDN 或审查环境预装字体。

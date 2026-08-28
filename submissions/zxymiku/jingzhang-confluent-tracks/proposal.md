@@ -9,10 +9,35 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以「人机合辙」为总体概念，探索让机器人与无人机在获授权的试点中承担电力巡检、管廊检测、消防侦察等危险作业，建议由人类保留授权、叫停、验收三段控制权；以 AI 算法辅助测试城市交通绿波与公交优先。空间结构为「一脉三场、双环九站」，沿京张铁路遗产公园组织众智园合辙试场、AI原点社区合辙学园、大钟寺合辙市集三处重点区，全部空间建议为概念方案，可供专业团队深化研究。"
 tracks: ["robotics-autonomous-mobility", "ai-traffic-walkability", "civic-agent-governance"]
 scenarios: ["robot-delivery-low-speed", "ai-traffic-walkability", "public-safety-operations-review", "enterprise-service-copilot"]
-iteration: "v1.0"
+iteration: "v1.8.0"
+version: "v1.8.0"
+generated_at: "2026-08-27T20:15:00+08:00"
+agent_id: "zxymiku"
+agent_name: "zxymiku-agent"
+model: "claude-opus-4-8+gpt-5.6-sol"
+model_detail: "Claude Opus 4.8 (original proposal) + OpenAI Codex gpt-5.6-sol (v1.8.0 repair/regeneration)"
 ---
 
 # 合辙京张 CONFLUENT TRACKS
+
+
+**冻结版本与生成信息：** `v1.8.0` · 生成时间 `2026-08-27T20:15:00+08:00` · Agent `zxymiku-agent`（`zxymiku`）· 模型 `claude-opus-4-8+gpt-5.6-sol`（Claude Opus 4.8 (original proposal) + OpenAI Codex gpt-5.6-sol (v1.8.0 repair/regeneration)）。本节及派生成果均以该冻结版本为准。
+
+### MNR 用地直接代码复算（EPSG:4548）
+
+| MNR代码 | 标准名称 | geometry直接代码面积（ha） | 占总体设计范围 | 统计说明 |
+|---|---|---:|---:|---|
+| 07 | 居住用地 | 42.03 | 3.68% | 直接代码板块 |
+| 08 | 公共管理与公共服务用地 | 182.13 | 15.96% | 直接代码板块；不是“科研用地” |
+| 0803 | 文化用地 | 78.08 | 6.84% | 直接代码板块，MNR层级上属于08；不与08行相加 |
+| 09 | 商业服务业用地 | 259.13 | 22.70% | 直接代码板块 |
+| 1207 | 城镇村道路用地 | 367.28 | 32.18% | 直接代码板块 |
+| 14 | 绿地与开敞空间用地 | 201.77 | 17.68% | 直接代码板块；不是green_space覆盖层面积 |
+| 1401 | 公园绿地 | 10.85 | 0.95% | 直接代码板块，MNR层级上属于14；不与14行相加 |
+
+这里的“面积/占比”均指 `geometry/land_use.geojson` 按**精确代码**溶解后相对总体设计范围的结果；父子代码仅分列展示，直接代码表不重复相加。若仅为层级参考，14的父级包络为 14 + 1401 = **212.62 ha（18.63%）**，但不得把它再加入直接代码合计。提交几何直接代码合计为 **1141.27 ha**，边界内独立复核未覆盖约 **100.80 m²**。
+
+`green_space.geojson` 是独立的生态覆盖层；其多边形先溶解重叠后复算为 **312.70 ha**，对应 `green_ratio = 27.40%`。因此：**14代码面积（201.77 ha）≠ 1401代码面积（10.85 ha）≠ green_space覆盖层面积（312.70 ha）**。旧草稿图中的 **12.4 ha 已废止**，不是冻结版统计值；旧图中约 **201.77 ha** 对应的是本冻结版直接代码 `14` 的 **201.77 ha** 四舍五入结果，不能替代绿地覆盖层 **312.70 ha**。
 
 ## 设计依据与资料清单
 
@@ -63,7 +88,7 @@ Logo 方向以詹天佑人字形道岔为原型：人字形轮廓内嵌两个并
 
 总体设计范围以城市更新为抓手，开展产业与空间深度融合的规划设计，达到控制性详细规划的城市设计深度 [source:OFFICIAL-ANNOUNCEMENT]。空间结构为"一脉三场、双环九站"：一脉是京张遗址公园人机合辙活力脉，南北贯通串联三区；三场是三处重点区合辙场景场；双环是人类慢行环（步行+骑行，沿遗址公园与东部联系）和机器人低速服务环（南北两环，承担配送、巡检、清洁等末端服务）；九站是九处人机交接站，作为任务前授权、任务中可停、任务后验收的空间界面 [data:geometry/roads.geojson#RD-101] [depth:overall_spatial_structure]。
 
-用地布局采用拓扑安全的网格裁剪分区，相邻用地多边形按当前网格裁剪结果共享边界；当前复核显示边界内约 100.8 平方米未覆盖、边界外约 0 平方米，细部关系仍待官方红线复核 [data:geometry/land_use.geojson] [depth:land_use_layout]。用地构成以道路用地为骨架，科研用地集中在众智园与原点社区，商业服务业用地分布在大钟寺与重点区东侧，文化用地布局在原点社区五道口遗产界面，居住用地安排在西部与南部，绿地与开敞空间沿小月河、清河与遗址公园组织 [metric:green_ratio]。完整用地面积按 MNR 国土空间用地用海分类指南的可校验代码复算 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。
+用地布局采用拓扑安全的网格裁剪分区，相邻用地多边形按当前网格裁剪结果共享边界；当前复核显示边界内约 100.8 平方米未覆盖、边界外约 0 平方米，细部关系仍待官方红线复核 [data:geometry/land_use.geojson] [depth:land_use_layout]。用地构成以道路用地为骨架，公共管理与公共服务用地（08）集中在众智园与原点社区，其中科研功能仅为概念性策划，不改变 MNR 标准名称，商业服务业用地分布在大钟寺与重点区东侧，文化用地布局在原点社区五道口遗产界面，居住用地安排在西部与南部，绿地与开敞空间沿小月河、清河与遗址公园组织 [metric:green_ratio]。完整用地面积按 MNR 国土空间调查、规划、用途管制用地用海分类指南的可校验数字代码复算，逐项结果与上方冻结版表格一致；14/1401 的层级关系与 green_space 独立覆盖层口径见表后说明 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。
 
 更新总体框架以"低扰动、有机更新"为原则，重点更新对象为众智园潜力用地、原点社区近校街区与大钟寺商业环境。更新后的 AI 企业聚集目标与产业空间规模以概念建议表达，区域规划建筑总规模因缺少官方控规而记为待确认 [assumption:A-CONTROLS-001]。方案明确区分已知控制条件、设计建议与待确认事项：容积率、建筑高度、建筑密度等依赖未公开官方控制条件的指标保持 status=unknown、value=null 并说明原因，不以概念体量冒充法定控制值 [depth:development_intensity_controls]。
 
@@ -167,11 +192,11 @@ AI 创新生态图谱以全栈自主创新体系为内核，形成"一核三环�
 
 ## 用地、建筑规模与拆改留方案
 
-用地布局以拓扑安全分区落实产业功能比例，所有面积可从 `geometry/land_use.geojson` 与 `metrics.json` 复算 [data:geometry/land_use.geojson] [depth:land_use_layout]。建筑概念体量布置在科研、商服与文化地块内，共 54 栋，基底面积合计约 371 万平方米，标为概念体量基底、非现状测绘、非审批规模 [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]。拆改留分类采用低扰动有机更新原则：保留清华园车站旧址等文保要素与既有优质建筑，改造近校低效街区与商业环境，拆除仅限经专业团队确认的危房与无保留价值临时建筑，新建集中在潜力用地。
+用地布局以拓扑安全分区落实产业功能比例，所有面积可从 `geometry/land_use.geojson` 与 `metrics.json` 复算 [data:geometry/land_use.geojson] [depth:land_use_layout]。建筑概念体量布置在公共管理与公共服务（含概念科研功能）、商服与文化地块内，共 54 栋，基底面积合计约 371 万平方米，标为概念体量基底、非现状测绘、非审批规模 [data:geometry/buildings.geojson] [metric:building_footprint_area_sqm]。拆改留分类采用低扰动有机更新原则：保留清华园车站旧址等文保要素与既有优质建筑，改造近校低效街区与商业环境，拆除仅限经专业团队确认的危房与无保留价值临时建筑，新建集中在潜力用地。
 
 容积率、建筑高度、建筑密度等开发强度指标因缺少官方控规而保持 status=unknown、value=null，并在 `assumptions.json` 与 `metrics.json` 中说明待正式控制条件补齐后的复算路径 [assumption:A-CONTROLS-001] [depth:development_intensity_controls]。方案保留由本包几何复算的概念体量作为设计量，但明确标为概念建议与低置信度设计量，不等于法定控制值。任务书禁止把容积率、建筑高度、建筑强度或具体拆改留写成法定规划、审批或工程实施结论，本方案严格遵守该边界 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
 
-空间供给与运营策略与人才生活需求匹配：科研用地邻近轨道交通与慢行环，商服用地与机器人服务环接驳，居住用地安排在西部与南部 quieter 区域，绿地与公共空间均衡分布以支撑创新交往 [depth:land_use_layout]。建筑风貌在重点区采取未来感与文化性并重的方向，具体高度、体量与屋顶形态管控因待官方条件而记为概念引导，不作为法定控制。
+空间供给与运营策略与人才生活需求匹配：公共管理与公共服务用地（含概念科研功能）邻近轨道交通与慢行环，商服用地与机器人服务环接驳，居住用地安排在西部与南部 quieter 区域，绿地与公共空间均衡分布以支撑创新交往 [depth:land_use_layout]。建筑风貌在重点区采取未来感与文化性并重的方向，具体高度、体量与屋顶形态管控因待官方条件而记为概念引导，不作为法定控制。
 
 ## 交通、轨道、市政与公共服务设施
 
@@ -185,7 +210,7 @@ AI 交通优化以绿波协调与公交优先为核心场景：大钟寺四象�
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张遗址公园活力带为南北主脉，清河与小月河为东西蓝绿廊道，形成连续无界的绿色空间体系 [data:geometry/green_space.geojson] [metric:green_ratio]。绿地面积约 312.7 公顷，绿地率约 27.4%，由小月河滨水绿带、清河南岸绿带、遗址公园合辙活力脉绿带与两处口袋公园组成，支撑人才生活与创新交往 [depth:blue_green_public_space]。公共空间面积约 50.2 公顷，公共空间率约 4.4%，包括百年道岔广场、交接总站广场、守望塔观景台、绿波光带路口、滨水步道与社区园地 [data:geometry/public_space.geojson] [metric:public_space_ratio]。
+蓝绿空间以京张遗址公园活力带为南北主脉，清河与小月河为东西蓝绿廊道，形成连续无界的绿色空间体系 [data:geometry/green_space.geojson] [metric:green_ratio]。独立生态覆盖层 `green_space.geojson` 经溶解重叠后为 312.70 公顷，绿地率为 27.40%；该覆盖层与 MNR 14/1401 用地代码面积是不同统计对象。MNR 14 直接代码板块为 201.77 公顷，1401 直接代码板块为 10.85 公顷；旧草稿中的 12.4 公顷已废止。绿地覆盖层由小月河滨水绿带、清河南岸绿带、遗址公园合辙活力脉绿带与两处口袋公园组成，支撑人才生活与创新交往 [depth:blue_green_public_space]。公共空间面积约 50.22 公顷，公共空间率约 4.40%，包括百年道岔广场、交接总站广场、守望塔观景台、绿波光带路口、滨水步道与社区园地 [data:geometry/public_space.geojson] [metric:public_space_ratio]。
 
 东西缝合与南北贯通策略通过一脉双环落实：遗址公园绿脉南北贯通，人类慢行环与机器人服务环东西缝合居住、科研与商业地块。公共空间组件库提供广场、口袋公园、滨水步道、交接站前区等可组合单元，供专业团队在详细设计阶段调用 [depth:blue_green_public_space]。城市风貌以"百年京张 × AI 新文化"为基调：建筑高度、体量、屋顶形态与色彩管控因待官方条件记为概念引导，但方向上强调遗产谦逊、新区未来感、过渡区协调。
 

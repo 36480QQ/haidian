@@ -588,6 +588,9 @@ main { padding: 36px 0 60px; }
       </p>
       <div style="font-size: 11.5px; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 8px;">
         <div>• Coverage review: ≈100.8 m² remains inside-boundary uncovered; ≈0 m² outside</div>
+        <div>• Frozen version: v1.8.0 · Generated: 2026-08-27T20:15:00+08:00</div>
+        <div>• Agent: zxymiku-agent (zxymiku)</div>
+        <div>• Models: claude-opus-4-8+gpt-5.6-sol</div>
         <div>• Projection: EPSG:4548 (CGCS2000)</div>
         <div>• Boundary: provisional_constraint (Full recompute on official release)</div>
       </div>
@@ -639,7 +642,7 @@ main { padding: 36px 0 60px; }
 
           <!-- Layer: Land Use Partitions (MNR Codes) -->
           <g id="lyr-zoning" opacity="0.9">
-            <!-- Research (08) Zhongzhiyuan & Origin -->
+            <!-- Public administration and public services (08), with conceptual R&D programs -->
             <polygon points="116.342,40.010 116.356,40.012 116.355,40.024 116.343,40.024" fill="#38bdf8" fill-opacity="0.6" stroke="#0284c7" stroke-width="0.0004" />
             <polygon points="116.343,39.975 116.357,39.975 116.356,39.988 116.343,39.988" fill="#38bdf8" fill-opacity="0.6" stroke="#0284c7" stroke-width="0.0004" />
             <!-- Commercial (09) Dazhongsi & East nodes -->
@@ -751,12 +754,18 @@ main { padding: 36px 0 60px; }
           </div>
         </div>
 
+        <div class="inspector-card land-use-basis-card">
+          <h4>MNR Direct-Code Table (Frozen v1.8.0)</h4>
+          <p>07 Residential 42.03 ha; 08 Public administration and public services 182.13 ha; 0803 Cultural 78.08 ha; 09 Commercial and service 259.13 ha; 1207 Urban and rural roads 367.28 ha; 14 Green and open space 201.77 ha; 1401 Park green space 10.85 ha.</p>
+          <p>Direct codes are reported separately from geometry/land_use.geojson; parent and child codes are never double-counted. The dissolved green_space overlay is 312.70 ha / 27.40% and is not code 14.</p>
+        </div>
+
         <div class="legend-grid">
           <div class="legend-item"><i class="swatch" style="background:var(--gold-primary)"></i>Heritage Active Spine</div>
           <div class="legend-item"><i class="swatch" style="background:var(--amber-human)"></i>Human Greenway Loop</div>
           <div class="legend-item"><i class="swatch" style="background:var(--teal-bot)"></i>Robot Service Twin Loops</div>
           <div class="legend-item"><i class="swatch" style="background:var(--blue-water)"></i>Qinghe / Xiaoyue River</div>
-          <div class="legend-item"><i class="swatch" style="background:#38bdf8"></i>Research & AI (08)</div>
+          <div class="legend-item"><i class="swatch" style="background:#38bdf8"></i>Public Admin. & Services (08)</div>
           <div class="legend-item"><i class="swatch" style="background:#fb7185"></i>Commercial / Retail (09)</div>
         </div>
       </div>
