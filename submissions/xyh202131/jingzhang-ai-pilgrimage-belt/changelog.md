@@ -1,5 +1,17 @@
 # 方案迭代记录 / Changelog
 
+## v70.0 - 2026-08-29
+
+**三区同屏判读入口 / Three-place One-board Reading Entry**
+
+- 修复前，既有 `spatial-atlas` 已经并列三处原型，但它位于“空间系统”层；读者需要先穿过各自展开的五步旅程，才能在同一画面比较三种不能互换的空间裁决。
+- 将既有、已登记的中英空间图谱前移到“三处体验”入口，并补上同屏判读说明：绿色普通地面不能中断，蓝色验证只能旁置，珊瑚色故障只隔离验证对象；众智园、原点社区和大钟寺分别处理通行、撤回和通勤风险，不能彼此替代。
+- 不新增或重绘图件、媒体、PDF、来源、几何或指标；`spatial-atlas` 仍在空间系统中作为总体关系阅读。geometry、`metrics.json`、12/8/3/36、G0/NO-GO、临时边界、现实结果 0、责任接受 0、独立人工双语复核 0/8、权利边界和四份 PDF 均保持冻结。
+
+- Before repair, the existing `spatial-atlas` already placed three prototypes side by side, but it appeared only in the spatial-system layer. A reader had to pass the expanded five-action journeys before comparing the three non-exchangeable spatial rulings on one page.
+- Moved the existing registered Chinese/English spatial atlas to the entry of “Three places” and added a one-board reading key: green ordinary ground cannot stop, blue testing stays beside it, and coral failure isolates only the test object. Zhongzhiyuan, Origin Community and Dazhongsi address passage, withdrawal and commuting risks respectively and cannot replace one another.
+- No figure, media, PDF, source, geometry or metric is added or redrawn; the `spatial-atlas` remains in the spatial-system layer for overall-relations reading. Geometry, `metrics.json`, 12/8/3/36, G0/NO-GO, provisional boundaries, zero real outcomes, zero accepted duties, 0/8 independent human bilingual review, rights boundaries and all four PDFs remain frozen.
+
 ## v69.0 - 2026-08-28
 
 **人本任务 Demo 深化 / Human-task Demo Depth**
