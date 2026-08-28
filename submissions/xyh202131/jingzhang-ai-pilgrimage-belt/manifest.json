@@ -45,7 +45,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "8e4a19a0dd595fae92c32ada2cd352f2cc56639dd806ba6e26ed9eff32f54de8"
+      "sha256": "b8554a8ad83418e41847d8e75877935fe757e9f4ae02173fdcfbb76d29f63d1b"
     },
     {
       "path": "metrics.json",
@@ -63,13 +63,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "53a211fc8dfd63a4f8c674e9874e0dcb1c6e9a74dff0692f71ab07c6adaf9f71"
+      "sha256": "3a4957bac93f2615ae051ed7206203e217a7dc3149cf8a8f8e8699e5d2704bb5"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "c628a09f1ace30145a970fb67fff88a8168ae0e685182d975f9298606a418781"
+      "sha256": "0d53fe94251ed88168c537fed7cb6b2ab6b2889d83b7810132974ea3af8d6dae"
     },
     {
       "path": "risk.json",
@@ -86,7 +86,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "c8920495db3f3b23a695ac619a94a3ea38d48195770deca979f67f1ca9edca25"
+      "sha256": "7ac8d9a137de5e97bb1731fe92999ac196b71d0c366c9fec235a77ec93bc59d8"
     },
     {
       "path": "compliance_matrix.json",
@@ -201,7 +201,7 @@
       "path": "visual/assets/t02-g0-g1-replay-result.json",
       "role": "other",
       "required": true,
-      "sha256": "3741274da9d195f373b46fce6435626d3d5d3c564c31aadf4f25ec857b006986",
+      "sha256": "b3d01ee6dca23eb7d09b6908c0272fe460dcfe1a0c2ec3ab5ceaa51cae040439",
       "role_detail": "synthetic_governance_replay_result"
     },
     {
@@ -215,7 +215,7 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "a7d573391359bf25c628b26c3891178c9897f500725f6b6315caa96153fedf33"
+      "sha256": "e74d414077075dafcc72765ab0bf7e04d433f6c121fa615e349f35576e3c8e90"
     },
     {
       "path": "visual/assets/file-rights-inventory.json",
@@ -228,14 +228,14 @@
       "path": "visual/assets/source-rights-evidence.json",
       "role": "other",
       "required": true,
-      "sha256": "f55a67d7275e8f91aa7b06963544716e83e4a4a62631cb3fd790b66c647c0aae",
+      "sha256": "c8cda96924df0196d6c8c3f266f6f0c41787a25e4392d972730411d7c6c5e7a8",
       "role_detail": "source_rights_evidence"
     },
     {
       "path": "visual/assets/submission-use-rights-matrix.json",
       "role": "other",
       "required": true,
-      "sha256": "8e68be5abb5f70a9b52dbbb2c63dd36a9dc8941356bd052a8976f7ab2f287a3e",
+      "sha256": "9995c9f486b7a1570a7bd63d421c10c39cc51aeae2abc6b2e942ec5f8379c0a2",
       "role_detail": "rights_use_decision_evidence"
     },
     {
@@ -255,7 +255,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "b1ee495affb586ea000da0e5ce78b95a1a166f5711fc035ed8a5c8aab6517ea3"
+      "sha256": "2ec3a2f608f2382a31d8ac0debe779e0d1c34433bf4833f4cd8d534a619fa947"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -284,7 +284,7 @@
       "required": true,
       "language": "neutral",
       "role_detail": "offline_cjk_font_stylesheet_and_woff2_subset",
-      "sha256": "3bdf43745983323ea1fc77da69cc7f54a5cb22e2388f50ae8e12da4b7d9d4528"
+      "sha256": "7c919c1c6ba2902d7a45ade133c75f7a7d8a0a615d4c7c2a4d0474593fa5cead"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -1285,11 +1285,11 @@
           "deterministic_contributor_media_paths": 4,
           "independent_file_level_audit_completed": false,
           "trademark_search_completed": false,
-          "path_level_decision_coverage": "157/157",
+          "path_level_decision_coverage": "158/158",
           "single_package_license": false,
           "contributor_path_level_disposition_completed": true,
           "path_inventory": "visual/assets/file-rights-inventory.json",
-          "hash_authority": "final PR exact head -> manifest Git blob -> files[].sha256 for 156 non-manifest paths; manifest self-hash intentionally omitted",
+          "hash_authority": "final PR exact head -> manifest Git blob -> files[].sha256 for 157 non-manifest paths; manifest self-hash intentionally omitted",
           "independent_audit_boundary": "independent_file_level_audit_completed=false records an absent external legal finding; it is not an undisposed current-package path or repository-review/display blocker"
         }
       },
@@ -1301,8 +1301,8 @@
           "known_blockers": [],
           "package_redistribution": "allowed_with_component_specific_terms_and_notices_no_single_package_license",
           "future_public_installation_or_external_brand_release": "not_authorized_requires_scope_specific_review",
-          "repository_review_path_decision_coverage": "157/157",
-          "repository_review_hash_binding": "final PR exact head -> manifest Git blob -> 156 non-manifest SHA-256 records",
+          "repository_review_path_decision_coverage": "158/158",
+          "repository_review_hash_binding": "final PR exact head -> manifest Git blob -> 157 non-manifest SHA-256 records",
           "non_blocking_unfinished_professional_findings": [
             "independent legal advice",
             "independent file-level legal audit",

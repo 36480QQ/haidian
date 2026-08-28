@@ -1,3 +1,19 @@
+## v66.1 - 2026-08-28
+
+**精确包权利计数口径统一 / Exact-package Rights Count Alignment**
+
+- 定向回应 PR #4123 对 exact head `3f1dc3e1d61d6348d9f89eb0b299fe5c357fe37b` 的 request-changes：当前包实际共有 158 个路径，其中 `manifest.json` 由最终 PR exact head 绑定，另外 157 个非 manifest 路径由 manifest 的 `files[].sha256` 绑定。
+- 将 `sources.json`、manifest 权利/发布扩展、source-rights 证据和 submission-use 矩阵统一为 158/158 总路径与 157 个非 manifest 哈希记录；R65 的 157/156 数字仅作为历史快照，不再表述为当前状态。
+- `sources.json` 字节变化触发 T-02 fail-closed 输入校验，已按原脚本确定性重放并更新输入哈希；结果仍为 10/10、4/4、13/13，现实服务调用仍为 0。
+- 回归检查发现 R66 新增政策文字带来 9 个不在 R59 离线字体子集中的汉字；使用既有登记且 SHA-256 不变的 OFL Noto 源字体，将子集从 1147 扩至 1156 个码点。两次新进程 WOFF2 字节一致，四个最终 HTML 的 CJK 缺字重新归零。
+- 不改 proposal、HTML、visual、PDF、geometry、规划指标、12/8/3/36、G0/NO-GO、provisional、现实结果 0、专业接责 0 或独立法律/商标审查 0；本轮无新媒体。
+
+- Targeted PR #4123's request-changes on exact head `3f1dc3e1d61d6348d9f89eb0b299fe5c357fe37b`: the current package contains 158 paths. The final PR exact head binds `manifest.json`, while manifest `files[].sha256` binds the other 157 non-manifest paths.
+- Aligned `sources.json`, manifest rights/release extensions, source-rights evidence and the submission-use matrix to 158/158 total paths and 157 non-manifest hash records. R65's 157/156 figures remain historical snapshots and are no longer phrased as current state.
+- The `sources.json` byte change triggered T-02's fail-closed input check, so the original runner deterministically replayed and refreshed the input hash. Results remain 10/10, 4/4 and 13/13 with zero real-service calls.
+- Regression QA found nine R66 policy-text glyphs absent from the R59 offline subset. Using the previously registered OFL Noto source with the unchanged SHA-256, the subset expands from 1,147 to 1,156 code points. Two fresh WOFF2 builds are byte-identical, restoring zero missing CJK glyphs across all four final HTML surfaces.
+- Proposal, HTML, visual, PDFs, geometry, planning metrics, 12/8/3/36, G0/NO-GO, provisional status, zero real outcomes, zero accepted professional duty and zero independent legal/trademark review remain unchanged. No media is added.
+
 ## v66.0 - 2026-08-28
 
 **政策—公共任务防误读层 / Policy-to-Public-Task Firewall**
