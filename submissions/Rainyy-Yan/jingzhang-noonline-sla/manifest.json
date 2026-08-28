@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "56b128f89f13e2f4b57ec1c44b1cac89172bb382ef7cbf1a3b8ea0d1266fce90"
+      "sha256": "48fb5e58e9a049b815017d7c1ae57ff8fa2a3eaadcb11a769c068e95ccb37c64"
     },
     {
       "path": "compliance_matrix.json",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "40076f17a700a810fd06381d27a0eb7f972397108fac61b72ba849fb2754dc09"
+      "sha256": "6c9abdebd3c2e442425a0d5345057a358f22ee7b355aefe13f0edffcbaacf169"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "d57a857affa571127b7cdbc9491fbe8240bbd85f3358e9f33e7cc4f12173573c"
+      "sha256": "f9789dd525364dfad5ed26f5eaa12096825ccf016b83c5b61c161bc00aaf70d4"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -759,4 +759,3 @@
     "readiness_contract": "persisted-self-check-v1"
   }
 }
-
