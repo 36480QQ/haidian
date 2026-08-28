@@ -1,5 +1,11 @@
 # 方案迭代记录 / Iteration Changelog
 
+## v4.4 visual readability repair - 2026-08-28
+
+**Targeted visual repair.** The Chinese visual navigation now uses the already covered `交付控制` label, removing the unrenderable `就绪` glyph from the offline CJK-subset path. The two English concept labels in `site-overview.en.svg` now occupy their own clear row, and the public-space card in `land-use-structure.en.svg` now uses a compact, non-overlapping `FIXED WAYFINDING` heading beside its AI-OFF label. Their PNG derivatives are regenerated from these editable SVG sources.
+
+**Evidence boundary unchanged.** This repair changes neither the design logic, geometry, metrics, scenario logic, verified SLA, implementation claims, permissions, funding, land rights nor approvals. It only makes existing bilingual material legible at its intended review size.
+
 ## v4.4 full-set review index - 2026-08-27
 
 **Full-set review access.** V4.4 makes the complete bilingual drawing package inspectable without asking a reviewer to infer its scope from a first page. A new machine-readable index records the four local PDF files, their 24 rendered pages, 12 bilingual page pairs, page order, figure sequence and original offline entry points. The paired visual pages expose the same summary and direct links to both A3 booklets and both A0 board sets.
