@@ -80,7 +80,7 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "11be736b4013bd75c0e249b25aefba07438ac18a5a77c59d13f27de802c1a413",
+      "sha256": "b7537921e04fbb37b162b49f11973e8e6f9ab3eb1457f48bba89a1368f08943d",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -88,14 +88,14 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "295d553e3a6d9d32693a04e75d1bffcc7fd2acb7c1ce5dc0a1d2d22e0fa4b331",
+      "sha256": "eaebd9bfb07576f222a57da05a04a523c00c31a0baec49e33c0c7c788dc8b92b",
       "language": "zh"
     },
     {
       "path": "report/proposal.en.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "e87efa1f2a8957248f66aaf65732b5690fa312b746225697e624a438f827fcd7",
+      "sha256": "28c354cd7ab4619a5c3aa5ac3afe9e43b4885ac860c63163adf7fb58030d3bc8",
       "language": "en",
       "translation_of": "report/proposal.html"
     },
@@ -115,14 +115,14 @@
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "ed2f1a77a283c291cb6a694a820b9e6dc35edf8bed33d981755ca3b7f905180b",
+      "sha256": "4817c2ba9f827f1c43b84915d5d732b2e0f5e4f7c154402c2727d1ca47e5e663",
       "language": "zh"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "bc3283834335af140b26da103ea8fe12388eb3543b8ec9fa1d87c6d50e0bad56",
+      "sha256": "4bab5f0f04702dd914447612c01c4d8e3349254c170ca17018357b70240ba3ad",
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf"
     },
@@ -130,14 +130,14 @@
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "9944aab646459b9377200661a28ef3b1f04050f173a0edefb5cbade7de1acf0b",
+      "sha256": "8c409eb38604d75020a1a32441db1d037f82f94e6f678c560eaae344fb841c6a",
       "language": "zh"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
       "role": "drawing",
       "required": true,
-      "sha256": "b877e260c5cd0d8cbc3190b8dcae2e57c4f0cb2985049b000dc5d2c583079d81",
+      "sha256": "ac61bf2ae3942b8b65ba772294f60c84151f72114a6c38ad658be9be3e88427f",
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf"
     },
@@ -145,14 +145,14 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "666634132c71a829b29ffa35171169796ba75e184ef144531106700698281e4f",
+      "sha256": "61d393c5ce7e9cb244b8e0348b7bf41a55e48f5ee330d9a6250cf313105880d4",
       "language": "zh"
     },
     {
       "path": "visual/index.en.html",
       "role": "visualization",
       "required": true,
-      "sha256": "f70550f34a8d1c9c35ba91cab91f82e6f08d2b74938b8fb5f1e53c6e90996dd7",
+      "sha256": "018f74256f583d5b3445f6b0a3c6d12c024edada8d8aeb449168949aeaaebb3e",
       "language": "en",
       "translation_of": "visual/index.html"
     },
@@ -182,7 +182,7 @@
       "path": "assets/figures/land-use-structure.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "a9f8557fd268534089588d729b466c34565d6f5c24b8e82124a11df0ba4dca29",
+      "sha256": "94673fa5334c99896a6abcceee7f4c130ff94230a1ea9def9aef452915d25438",
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png"
     },
@@ -227,7 +227,7 @@
       "path": "assets/figures/metrics-evidence.en.png",
       "role": "proposal_figure",
       "required": true,
-      "sha256": "7eb295498501dcc197628ed8ac02d5d118b4e1f7252ec8adcb98627b275c08de",
+      "sha256": "0b8ab44c85701f75f6a15e01017c3d243cdce40fef97f6b8cf9cf144a811fcfe",
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png"
     },
@@ -453,7 +453,7 @@
       "path": "visual/assets/bilingual-equivalence-audit.json",
       "role": "visualization",
       "required": false,
-      "sha256": "ca110f04eb3aa5f2141463ad35b1d5b38430b0d49cbd7433670de1f96a47ec23",
+      "sha256": "405225fa3ed20c11dd2a299d38e8cbf173cf660edcd41c3e5f8e8f3b8c7b8644",
       "language": "neutral"
     },
     {
@@ -685,7 +685,7 @@
     }
   ],
   "validation_claim": {
-    "self_checked": true,
+    "self_checked": false,
     "known_blockers": [],
     "data_confidence": "medium",
     "readiness_contract": "persisted-self-check-v1"
