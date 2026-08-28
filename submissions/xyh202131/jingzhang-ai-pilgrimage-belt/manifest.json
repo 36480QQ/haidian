@@ -39,19 +39,19 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "e4dd774ebf8931918f21eb1b3762dfd6c1975bea43c11fa305c5ed3b0cbbf9aa"
+      "sha256": "4cf96da6a406e8dc8e00cfadc5d4673f9666e4841275e4a72626ce82597de0dd"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "94a2dbea7afa761a98cb5c20f74af2b4c6dd7532443777c4593a57a8f7e17415"
+      "sha256": "8e4a19a0dd595fae92c32ada2cd352f2cc56639dd806ba6e26ed9eff32f54de8"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "06ce66889453b04ebc5f6506cc570686bafc10ed55abee796cf6961b143ab777"
+      "sha256": "2129fc16234854752f85bcc558d8618e2249fbd5e94c03415636161f563b1e11"
     },
     {
       "path": "assumptions.json",
@@ -63,13 +63,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "dfc99d02c510b3491f476d9a94e494d45f4b641b5c61fa57e5eef7d1962a9b4d"
+      "sha256": "53a211fc8dfd63a4f8c674e9874e0dcb1c6e9a74dff0692f71ab07c6adaf9f71"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "71f75142b9e3fb4556362a1635f32bca85e2a5741b013ca3e5673adc265ec892"
+      "sha256": "30d56b68f5ad0b1b666887ccb8b90345bae077fda6238b45591edf1ce77a9774"
     },
     {
       "path": "risk.json",
@@ -86,7 +86,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "f3893e75372543933d1ff1a61e432934fc44d8ce87a6e88c484531e9f7422788"
+      "sha256": "c8920495db3f3b23a695ac619a94a3ea38d48195770deca979f67f1ca9edca25"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,7 +132,7 @@
       "role": "evidence_data",
       "required": true,
       "language": "neutral",
-      "sha256": "4c70e03da2abca51692b221084e7ac3ad73a2ab0aa599d83af766b5b23fa414e"
+      "sha256": "2fea07ecf912b68855ca1f7c45d61b6fbf3654c33490a16703cebeaa7da34d47"
     },
     {
       "path": "visual/assets/data-gap-closure-register.json",
@@ -215,20 +215,20 @@
       "path": "visual/assets/rights-clearance-ledger.json",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "8b49ece207bddfc60e506af6aee594ff0ce9f9489747df5295bed6bfad51a5fd"
+      "sha256": "a7d573391359bf25c628b26c3891178c9897f500725f6b6315caa96153fedf33"
     },
     {
       "path": "visual/assets/file-rights-inventory.json",
       "role": "copyright_statement",
       "required": true,
       "language": "neutral",
-      "sha256": "680421aae30fae39d7a34ac591c65dd1ee0b3506ddd7f2a4715fd4d9e90cae9a"
+      "sha256": "6fb0cf365e8e3e3decc38fedaa792a968d7e5c781ba8dc110bd5e94c55f8139d"
     },
     {
       "path": "visual/assets/source-rights-evidence.json",
       "role": "other",
       "required": true,
-      "sha256": "a0d54304f6ff999fff42453213186e4561932f4ac6d729a600f9817a703e77a3",
+      "sha256": "f55a67d7275e8f91aa7b06963544716e83e4a4a62631cb3fd790b66c647c0aae",
       "role_detail": "source_rights_evidence"
     },
     {
@@ -243,40 +243,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2f4b64bec701c3ed9c1b1ba98b8c5517b324561d19aa3acff7c509e47eb55355"
+      "sha256": "705b7ea65a0fa3b5e1a1ece51860da8a566b9efbb80a481f641e3fe83a291839"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "fdc7526c569b5f17676408fd31daac9d1fda074ca919b37968bd5ee3d8a94114"
+      "sha256": "6630eb505a7b90b33286d28acd8b21e86c341d7f63d0c8845d7aca0371f9161a"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "cb0f1398b02b798e98f157c59b8f7a8655fdd04cc54e9da6637d350d0dd84d6d"
+      "sha256": "b1ee495affb586ea000da0e5ce78b95a1a166f5711fc035ed8a5c8aab6517ea3"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "5881e0598ce133e789a2ed95e1ac134b4485115f01a0ec10959b8fed5f27e5f8"
+      "sha256": "8bae14a5668c05cf53d3c569a0cf694803166625e60360453c7dee763ac7a9ae"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "a2443b9f9ec3b43204b0e5842b69ad6d03345f9bcc360071ac5fd0087b1c109b"
+      "sha256": "84401dd8d14f921991c180dff1714badc3d747dde511e36378536113feb35847"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "ced165dab416a39ca26456421579e3cbad71f84fd90c86dbd1957a2c7927b726"
+      "sha256": "0534989e3f1640ad9d7fa54e3636b90ec41e12e48e7c5e0a830d710ef9863dec"
     },
     {
       "path": "visual/assets/offline-cjk-font.css",
@@ -424,7 +424,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "d2509daf35603c9c406fa39c86836cb5833a0049bc3c81237d6cdec727496e2e"
+      "sha256": "ef6020d9ed705dc54945489a666b4131b91cbe9e7fe51f7e3459c8cf3c482f43"
     },
     {
       "path": "report/proposal.en.html",
@@ -432,7 +432,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5fc62aa0ec7019477aa2d9f5e13f304eaedaf0aa1dbaa9e3c69f2f2a233c7c9e"
+      "sha256": "306088a628bf79f75e66de2a1311255a971b57cd5899b3bf41c272ccdcf74595"
     },
     {
       "path": "visual/index.en.html",
@@ -440,7 +440,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "e424d2425caf43fd694f216d96d36ee554d4246539146649e31327220fe44f93"
+      "sha256": "ce35820083594cc6454336ced2840092e0f81c13e43030ea6a433c74e4b65081"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -448,7 +448,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "47df0bed739ca16bb1188cc0d146291501f9f6e1d5f6d368436bb5ee2772a3ba"
+      "sha256": "e0f39eaecc2e09d1d6a6b5966c1b84b47c873e5035571018527bbe7eeb13583e"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -456,7 +456,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "759d11e839f1e39102792eb504ed574cccda59f306a970411d21905908e98838"
+      "sha256": "7a70ce799898162490b5314a7d44e73aa180919e16c94e30c3808e2b8c0f8653"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
@@ -944,7 +944,7 @@
       "title_en": "Review handoff index and package navigation",
       "description_zh": "评审交接导航：三条时间阅读路线、唯一专业交接候选、证据权威顺序与固定事实边界；索引只负责定位，不生成证据、不改变成熟度或权利状态。",
       "description_en": "Review handoff navigation: three timed reading routes, one professional handoff candidate, evidence authority order and fixed fact boundaries; the index only locates, creates no evidence and changes no maturity or rights state.",
-      "sha256": "99ac0a9c56b80a75f4f37d168e03c8f2f8fb364b58b487e28c8b04e6961c0ca2"
+      "sha256": "7a0ebe405100f56807751309e5a00a794e415b9e6398b45f600faeb48ecb381b"
     },
     {
       "path": "assets/figures/land-use-structure.svg",
@@ -1118,7 +1118,13 @@
       "path": "visual/assets/source-governance-register.json",
       "role": "evidence_data",
       "required": false,
-      "sha256": "1761e8c7278249298d6ad2abbf13b7013618b61fe3fda3b649a348a9b7b6f98c"
+      "sha256": "8ee704130070bbc0829fcfb54791ee85a5a36afc14e3af62ccc0813d00ebe76a"
+    },
+    {
+      "path": "visual/assets/policy-to-task-register.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "ac41a01254e4168b670c34da8dd85a4c925c24d4e0b10fdb3ad5bfbc81820fc9"
     },
     {
       "path": "visual/assets/professional-handoff-candidate.json",
@@ -1130,7 +1136,7 @@
       "path": "visual/assets/convergence-baseline.json",
       "role": "evidence_data",
       "required": false,
-      "sha256": "0f5c5939779d93db974006478b499b7d07b9c164d015c9e5c353a6bbf8145aac"
+      "sha256": "0fc47315a9db10af7a66e07632059ac120483bc77dd82931d2f272a3c85fed77"
     },
     {
       "path": "assets/figures/ordinary-life-journey.svg",
