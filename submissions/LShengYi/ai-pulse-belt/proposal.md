@@ -24,7 +24,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 ## 核心判断与公共验收契约（智脉四问）
 
-本节把执行摘要的协议主张展开为**四项可判定契约**，供评审与公众逐问核验：任何一项公共 AI 服务进入智脉一带之前，都必须回答四个问题——**它凭什么进入（P1 可申报）、它如何被测试（P2 可测试）、它凭什么留下（P3 可发布）、它怎么离开（P4 可退役）**。四问各有市民可见的空间界面、可核验的通过证据与不满足时的处置，任何服务都不能以"试点"名义无限期停留在公共空间：
+本节把执行摘要的协议主张展开为**四项可核验契约**（PSAB v1.0 为实验性 schema，3 条缺口见自否推演），供评审与公众逐问核验：任何一项公共 AI 服务进入智脉一带之前，都必须回答四个问题——**它凭什么进入（P1 可申报）、它如何被测试（P2 可测试）、它凭什么留下（P3 可发布）、它怎么离开（P4 可退役）**。四问各有市民可见的空间界面、可核验的通过证据与不满足时的处置，任何服务都不能以"试点"名义无限期停留在公共空间：
 
 | 智脉四问 | 市民能核验什么（最低可见证据） | 空间界面 | 通过证据 | 不满足时 |
 | --- | --- | --- | --- | --- |
@@ -65,7 +65,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 本规则适用本包全部正文、表、图、JSON 与媒体脚本；任何一级降级必须可被评审沿 changelog 追溯到具体条目。
 
-**版本可追溯**：本包当前迭代 **v10.14.12**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
+**版本可追溯**：本包当前迭代 **v10.14.13**（2026-08-15，frontmatter iteration 19），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**本轮 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
 
 **表 A1 评审一页入口（评审维度证据索引——每行给出可打开文件与可运行命令，机器可核验项全部可在评审端离线重跑）**
 
@@ -134,7 +134,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 | 成果类别 | 文件 | 校验途径 |
 | --- | --- | --- |
-| 正文 | proposal.md、proposal.en.md | 双语 1:1、引用可解析、四道门 |
+| 正文 | proposal.md, proposal.en.md | 双语 1:1、引用可解析、四道门 |
 | 几何 | geometry/*.geojson（9 类） | 拓扑/CRS/无缝覆盖（G2） |
 | 图件 | assets/figures/*（6 图 zh/en） | 尺寸/分辨率/双语（G3） |
 | 图纸 | drawings/a3-booklet.pdf、a0-boards.pdf（zh/en） | 页数>0、PDF 有效（G3） |
@@ -309,7 +309,7 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 | 空间类（14） | phasing_zone_count | 3 | 项 | geometry/phasing.geojson |
 | 空间类（14） | constraint_zone_count | 3 | 项 | geometry/constraints.geojson |
 | 功能比例（7） | research_0802_ratio | 21.89% | 比率 | geometry/land_use.geojson |
-| 功能比例（7） | commercial_05_ratio | 7.03% | 比率 | geometry/land_use.geojson |
+| 功能比例（7） | commercial_09_ratio | 7.03% | 比率 | geometry/land_use.geojson |
 | 功能比例（7） | residential_0701_ratio | 13.64% | 比率 | geometry/land_use.geojson |
 | 功能比例（7） | roads_1207_ratio | 10.65% | 比率 | geometry/land_use.geojson |
 | 功能比例（7） | green_1401_1402_ratio | 24.96% | 比率 | geometry/land_use.geojson |
@@ -419,18 +419,18 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 
 评审打开 proposal.md 后最可能追问的 8 个问题，逐问给出本方案的直接回应、对应证据锚点与可打开文件（与表 C4 七维证据索引同口径，review-evidence-index.json expression_completeness 维度登记）：
 
-| # | 评审最可能问 | 本方案回应 | 证据锚点 | 可打开文件 |
+| # | 问 | 回应 | 证据 | 文件 |
 | --- | --- | --- | --- | --- |
-| 1 | 你的方案与任务书六项任务如何对应？ | agent.1–6 逐条响应，三栏映射表（任务书原词→方案回应→可定位交付） | 表 A1 一页入口 + 表 A2 任务可核查索引 | proposal.md、agent.json |
-| 2 | 原创性在哪里？怎么证伪？ | 智脉四问可证伪命题+备选命题比选；脉冲协议 P1–P4 独创（波形=运行/脉冲=测试/平线=停用）；同场扫描 state_machine_irreducible 全场唯一 | 表 A11 同场扫描 + 智脉四问 | proposal.md、design_depth_matrix.json、track_scan.json |
-| 3 | AI 停了怎么办？ | 8 状态机含停摆演练与不可跳过的退场审计；四段退场红利合同 BASE→BOOST→BLACKOUT→BEQUEST 15 项全覆盖；双闸门 G0–G7/C0–C7 + 护照 11 字段 | 表 C2 增益-BEQUEST-退场 + 表 C3 双轨预算 | state-machine.json、dividend-contracts.json、implementation-gates.json |
-| 4 | 面积数据哪里来的？可靠吗？ | 100 米/100 天首发段零依赖官方数据；面积按官方口径复算（EPSG:4548）并披露拟合偏差（总体 +0.11%、三重点区 +0.02%~+0.43%）；76 指标（61 known）逐项带公式与来源 | 表 A3 成本复算 + metrics.json 面积档位 | metrics.json、assumptions.json、geometry/*.geojson |
-| 5 | 公众参与怎么保证？ | 8 类用户画像+受影响公众角色；无障碍与非数字化服务（人工等价路径/盲道/公众委员会）；意见—回应台账逐条登记 | 表 C1 等价路径 + 公众委员会示范章程 | simulation.json、governance-raci.json |
-| 6 | 风险和版权边界在哪？ | 法定要求 vs 自设标准分列（合规分列原则）；五类回滚触发器+五条硬停止条件；L1–L5 证据等级；provisional 一律披露不伪造 | risk.json + standard_matrix.json | risk.json、standard_matrix.json、errata.json |
-| 7 | 双语怎么对齐的？ | 双语 1:1（proposal/PDF/HTML/图件全部 zh+en 镜像）；en 为 zh 有序子序列；zh 权威增补表（A14–A20、C1–C4）因 en 262144 字节硬限未收录，其余 93 张共享表逐张对齐 | _check_bilingual.py 扫描报告 | proposal.md、proposal.en.md |
-| 8 | 错误怎么处理？ | 13 条勘误逐条登记（错误形状/内容/发现者/版本），勘误册与变更记录互为第二台账；五类错误形状词表 | 表 A20 勘误登记 + errata.json | errata.json、changelog.md |
+| 1 | 你的方案与任务书六项任务如何对应？ | agent.1–6 逐条响应，三栏映射表（任务书原词→方案回应→可定位交付） | A1+A2 | proposal.md、agent.json |
+| 2 | 原创性在哪里？怎么证伪？ | 智脉四问可证伪命题+备选命题比选；脉冲协议 P1–P4 独创（波形=运行/脉冲=测试/平线=停用）；同场扫描 state_machine_irreducible 全场唯一 | A11+四问 | proposal.md, design_depth_matrix.json, track_scan.json |
+| 3 | AI 停了怎么办？ | 8 状态机含停摆演练与不可跳过的退场审计；四段退场红利合同 BASE→BOOST→BLACKOUT→BEQUEST 15 项全覆盖；双闸门 G0–G7/C0–C7 + 护照 11 字段 | C2+C3 | state-machine.json, dividend-contracts.json, implementation-gates.json |
+| 4 | 面积数据哪里来的？可靠吗？ | 100 米/100 天首发段零依赖官方数据；面积按官方口径复算（EPSG:4548）并披露拟合偏差（总体 +0.11%、三重点区 +0.02%~+0.43%）；76 指标（61 known）逐项带公式与来源 | A3+metrics | metrics.json, assumptions.json, geometry/*.geojson |
+| 5 | 公众参与怎么保证？ | 8 类用户画像+受影响公众角色；无障碍与非数字化服务（人工等价路径/盲道/公众委员会）；意见—回应台账逐条登记 | C1+委员会 | simulation.json, governance-raci.json |
+| 6 | 风险和版权边界在哪？ | 法定要求 vs 自设标准分列（合规分列原则）；五类回滚触发器+五条硬停止条件；L1–L5 证据等级；provisional 一律披露不伪造 | risk+standard | risk.json, standard_matrix.json, errata.json |
+| 7 | 双语怎么对齐的？ | 双语 1:1（proposal/PDF/HTML/图件全部 zh+en 镜像）；en 为 zh 有序子序列；zh 权威增补表（A14–A20、C1–C4）因 en 262144 字节硬限未收录，其余 93 张共享表逐张对齐 | bilingual scan | proposal.md, proposal.en.md |
+| 8 | 错误怎么处理？ | 13 条勘误逐条登记（错误形状/内容/发现者/版本），勘误册与变更记录互为第二台账；五类错误形状词表 | 表 A20 勘误登记 + errata.json | errata.json, changelog.md |
 
-> 表注：8 问逐问登记于 review-evidence-index.json expression_completeness 维度 [metric:review_first_screen_question_count]；与表 C4 七维证据索引同口径，评审开卷即可沿证据锚点定位对应章节与可打开文件。
+> 表注：8 问登记于 review-evidence-index.json [metric:review_first_screen_question_count]；与表 C4 同口径。
 
 
 
@@ -443,7 +443,7 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 
 **表 A13 公共服务准入基准（PSAB）与自否推演（规范机器可读，推演自我否证）**
 
-第六至八章把协议写成机制；本表把机制提炼为**可复用的机器可读规范**——PSAB（Public Service Admission Baseline，公共服务准入基准，`visual/assets/psab-spec.json`，规范文本为本方案自著、CC BY-SA 4.0）：任何公共 AI 服务对象可离线核验准入判定，不依赖本方案自述 [metric:dual_gateway_gate_count] [metric:service_passport_required_field_count] [metric:contract_coverage_ratio]：
+第六至八章把协议写成机制；本表把机制提炼为**可复用的机器可读规范**——PSAB（Public Service Admission Baseline，公共服务准入基准，`visual/assets/psab-spec.json`，规范文本为本方案自著、CC BY-SA 4.0）：任何公共 AI 服务对象可离线核验准入判定（PSAB v1.0 为实验性不完整 schema，仅覆盖 9/15 个已登记 audit 对象，3 条缺口见自否推演，不声称可判定任意公共 AI 服务），不依赖本方案自述 [metric:dual_gateway_gate_count] [metric:service_passport_required_field_count] [metric:contract_coverage_ratio]：
 
 | PSAB 要素 | 核心判定子句 | 非合规处置 | 对应正文 |
 | --- | --- | --- | --- |
@@ -465,7 +465,7 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 
 ```text
 $ node visual/assets/psab-validate.js
-PSAB AUDIT: 9 real services vs PSAB v1.0
+PSAB AUDIT: 9 registered service entries vs PSAB v1.0 ("registered" = listed in proposal, not deployed or approved)
   ADMISSIBLE(9/9), TESTABLE(9/9), PUBLISHABLE(9/9), RETIRABLE(9/9), EVIDENCED(9/9)
   gaps in real services: 0
 exit 0 (all real services admit per PSAB v1.0; none field-run)
@@ -805,13 +805,13 @@ exit 1 (gaps found, by design)
 
 | 评审维度 | 权重 | 本方案回应锚点 | 响应章节 | 可打开证据文件 |
 | --- | --- | --- | --- | --- |
-| 任务书契合 | 20 | 三栏映射表（任务书原词→方案回应→可定位交付）；agent.1-6 逐条响应与场景卡/测试场/画像/地标/文化/社区活动一一对应 | 证据与评审响应总览；AI 创新生态、人才画像与 AI+ 场景 | proposal.md、agent.json、sources.json |
+| 任务书契合 | 20 | 三栏映射表（任务书原词→方案回应→可定位交付）；agent.1-6 逐条响应与场景卡/测试场/画像/地标/文化/社区活动一一对应 | 证据与评审响应总览；AI 创新生态、人才画像与 AI+ 场景 | proposal.md, agent.json, sources.json |
 | 原创性 | 10 | 智脉四问可证伪命题与备选命题比选；脉冲协议 P1-P4 与状态灯语言（波形=运行/脉冲=测试/平线=停用）；表 A11 同场扫描 | 核心判断与公共验收契约；智脉脉冲协议 | proposal.md、design_depth_matrix.json、state-machine.json、implementation-gates.json |
-| AI 规划创新 | 15 | 8 状态机（停摆演练/退场审计不可跳过）；四段退场红利合同 BASE→BOOST→BLACKOUT→BEQUEST（15 项全覆盖）；双闸门 G0-G7/C0-C7 与护照 11 字段 | 第六章（场景/脉冲协议） | state-machine.json、dividend-contracts.json、implementation-gates.json |
+| AI 规划创新 | 15 | 8 状态机（停摆演练/退场审计不可跳过）；四段退场红利合同 BASE→BOOST→BLACKOUT→BEQUEST（15 项全覆盖）；双闸门 G0-G7/C0-C7 与护照 11 字段 | 第六章（场景/脉冲协议） | state-machine.json, dividend-contracts.json, implementation-gates.json |
 | 实施可行性 | 20 | 首期 100 天零依赖官方数据；100 米/100 天首发段与硬性日落不续期；指标 76 项（61 known）逐项带公式与来源；面积按官方口径复算并披露拟合偏差 | 更新实施章；指标体系章 | metrics.json、simulation.json、geometry/*.geojson |
-| 公共利益包容 | 10 | 8 类用户画像与受影响公众角色；无障碍与非数字化服务（人工等价路径/盲道/公众委员会）；意见—回应台账逐条登记 | 场景卡章；公众委员会示范章程 | simulation.json、governance-raci.json、errata.json |
-| 风险合规 | 10 | 法定要求 vs 自设标准分列；五类回滚触发器与五条硬停止条件；L1-L5 证据等级；provisional 一律披露不伪造 | 风险、版权与合规说明 | risk.json、standard_matrix.json、errata.json |
-| 表达完整 | 15 | 双语 1:1（proposal/PDF/HTML/图件全部 zh+en 镜像）；评审首屏问题表（8 问→回答→可打开文件）；能说明/不能说明三栏表 | 全文；证据与评审响应总览 | proposal.md、proposal.en.md、report/*.html |
+| 公共利益包容 | 10 | 8 类用户画像与受影响公众角色；无障碍与非数字化服务（人工等价路径/盲道/公众委员会）；意见—回应台账逐条登记 | 场景卡章；公众委员会示范章程 | simulation.json, governance-raci.json、errata.json |
+| 风险合规 | 10 | 法定要求 vs 自设标准分列；五类回滚触发器与五条硬停止条件；L1-L5 证据等级；provisional 一律披露不伪造 | 风险、版权与合规说明 | risk.json, standard_matrix.json, errata.json |
+| 表达完整 | 15 | 双语 1:1（proposal/PDF/HTML/图件全部 zh+en 镜像）；评审首屏问题表（8 问→回答→可打开文件）；能说明/不能说明三栏表 | 全文；证据与评审响应总览 | proposal.md, proposal.en.md、report/*.html |
 
 > 表注：7 维逐维登记于 visual/assets/review-evidence-index.json，权重与官方评审口径一致 [metric:review_evidence_dimension_count]；评审首屏问题表（评审最可能问的 8 问）见证据总览章。
 
@@ -821,14 +821,14 @@ exit 1 (gaps found, by design)
 
 | 主张 | 可复验命令 | 预期输出摘要 | 前提 |
 | --- | --- | --- | --- |
-| 三项核心视觉指标 known 且与 HTML 一致 | `python scripts/visual_review.py submissions/LShengYi/ai-pulse-belt` | `Result: PASS`；Metrics seen: site_area_sqm=11412825.386, green_ratio=0.249581, public_space_ratio=0.005187 | repo root cwd |
-| 引用解析 363 处全部可解析 | `python tools/_audit_refs2.py` | `total=363  unresolved=0`（source 43/metric 123/data 116/depth 31/standard 29/assumption 21） | tools/ cwd |
-| 76 指标（61 known）与 simulation 120 任务一致 | `python scripts/self_check_submission.py submissions/LShengYi/ai-pulse-belt --pr-author LShengYi --json` | `ok: true`；`formal_review_ready: true`；simulation_task_count=120 matches metrics known=61+unknown=15 | repo root cwd |
-| 155 地块无缝覆盖总体设计区 | `python -c "import json; g=json.load(open('geometry/land_use.geojson')); print(len(g['features']))"` | `155`；与 metrics.json land_parcel_count=155 一致 | submission dir cwd |
-| 面积复算偏差 ≤0.5% | `python -c "import json; m=json.load(open('metrics.json')); print(m['metrics']['site_area_sqm']['value'])"` | `11412825.386`；官方口径 11.4 km² = 11400000 m²；偏差 = (11412825.386-11400000)/11400000 = +0.112% ≤ 0.5% | submission dir cwd |
+| 三项核心视觉指标 known 且与 HTML 一致 | `python scripts/visual_review.py <dir>` | `Result: PASS`；Metrics seen: site_area_sqm=11412825.386, green_ratio=0.249581, public_space_ratio=0.005187 | repo root cwd |
+| 引用解析 363 处全部可解析 | `python _audit_refs2.py` | `total=363  unresolved=0`（source 43/metric 123/data 116/depth 31/standard 29/assumption 21） | tools/ cwd |
+| 76 指标（61 known）与 simulation 120 任务一致 | `python scripts/self_check_submission.py <dir> --pr-author LShengYi --json` | `ok: true`；`formal_review_ready: true`；simulation_task_count=120 matches metrics known=61+unknown=15 | repo root cwd |
+| 155 地块无缝覆盖总体设计区 | `python -c "import json; print(len(json.load(open('geometry/land_use.geojson'))['features']))"` | `155`；与 metrics.json land_parcel_count=155 一致 | submission dir cwd |
+| 面积复算偏差 ≤0.5% | `python -c "import json; print(json.load(open('metrics.json'))['metrics']['site_area_sqm']['value'])"` | `11412825.386`；官方口径 11.4 km² = 11400000 m²；偏差 = (11412825.386-11400000)/11400000 = +0.112% ≤ 0.5% | submission dir cwd |
 | 勘误 13 条全部登记 | `python -c "import json; e=json.load(open('visual/assets/errata.json')); print(len(e.get('errata',e.get('entries',[]))))"` | `13`；与表 A20 勘误登记表行数一致 | submission dir cwd |
 
-> 表注：6 条命令证据逐条登记 [metric:command_evidence_count]；命令在仓库克隆后可直接运行（Python 3.11+、json/shapely/pyproj 依赖）；预期输出为提交时实测值，后续迭代可能因数据修正而变化——以当次 self_check 为准。
+> 表注：6 条命令证据逐条登记 [metric:command_evidence_count]；命令可本地复验（Python 3.11+）；预期输出为提交时实测值。
 
 **评审七维证据覆盖图（表 C4 可视化）**
 
@@ -1052,9 +1052,9 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 
 | 本方案的规则 | 法定依据（已核实） | 效力变化 |
 | --- | --- | --- |
-| 每项服务必须存在**无 AI 等价路径**（人工等价路径缺失不得上线） | 《中华人民共和国无障碍环境建设法》**第三十九条**：公共服务场所涉及医疗健康、社会保障、金融业务、生活缴费等服务事项的，应当**保留现场指导、人工办理等传统服务方式** [standard:BARRIER-FREE-ENVIRONMENT-LAW] | 从「设计者的善意」变为**法定义务**——公共服务不得只剩 AI 一条路 |
-| 发现问题**即停止生成与传输**，不得先观察（五类回滚触发器停机阀） | 《生成式人工智能服务管理暂行办法》**第十四条**：提供者发现违法内容的，应当及时采取**停止生成、停止传输、消除**等处置措施，并向有关主管部门报告 [standard:GENERATIVE-AI-INTERIM-MEASURES] | 从「本方案的停用规则」变为**提供者义务** |
-| 异议与申诉必须给出**数字时限**，否则不可执行（三道异议门） | 同办法**第十五条**：提供者应当建立健全投诉、举报机制，设置便捷的投诉、举报入口，**公布处理流程和反馈时限**，及时受理、处理并反馈 | 从「本方案的主张」变为**已有要求的落实** |
+| 每项服务必须存在**无 AI 等价路径**（人工等价路径缺失不得上线） | 《中华人民共和国无障碍环境建设法》**第三十九条**：公共服务场所涉及医疗健康、社会保障、金融业务、生活缴费等服务事项的，应当**保留现场指导、人工办理等传统服务方式** [standard:BARRIER-FREE-ENVIRONMENT-LAW] | 本方案**自设等价路径协议**（比法定义务更严：法定仅要求保留传统方式，本方案要求每项 AI 服务配完整人工等价） |
+| 发现问题**即停止生成与传输**，不得先观察（五类回滚触发器停机阀） | 《生成式人工智能服务管理暂行办法》**第十四条**：提供者发现违法内容的，应当及时采取**停止生成、停止传输、消除**等处置措施，并向有关主管部门报告 [standard:GENERATIVE-AI-INTERIM-MEASURES] | **提供者法定义务**（本方案停用规则 ≥ 该义务：五类回滚触发器覆盖第十四条的停止要求并更严） |
+| 异议与申诉必须给出**数字时限**，否则不可执行（三道异议门） | 同办法**第十五条**：提供者应当建立健全投诉、举报机制，设置便捷的投诉、举报入口，**公布处理流程和反馈时限**，及时受理、处理并反馈 | **已有要求的细化**（办法要求"反馈时限"但未规定具体天数；7/15/30 日为本方案自设标准，非法定天数） |
 | 画像 P4 的**非智能手机路径**不可豁免 | 《关于切实解决老年人运用智能技术困难实施方案》（国办发〔2020〕45号）：在各类日常生活场景中，**必须保留老年人熟悉的传统服务方式**，并列出出行、就医、消费、文娱、办事五类高频事项 [standard:ELDERLY-SMART-TECH-PLAN-2020-45] | 从「本方案的画像约束」变为**政策依据 + 可对照场景清单** |
 
 **同时要说准边界**：本方案不是法律意见，条款要义引述可能不完整，具体适用须由具备资质的专业人员判断；本方案只主张上述四条红线**有法可依**，不主张自己对法条的理解具有权威性。四条红线进入 P1 申报要件与公共底线量化表核验，不可通过运营调整豁免。
@@ -1359,7 +1359,7 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 
 全部投入量级为概念区间：上表 11 项一次性建设投入合计约 **3.6–9.1 亿元**（下限 0.3+0.5+0.2+0.1+0.1+0.5+0.2+0.8+0.3+0.5+0.1、上限 0.8+1.5+0.6+0.3+0.3+1.0+0.5+2.0+0.6+1.2+0.3，逐项可复算），不含年度运营 JZ-12；含 JZ-12 年度运营 0.05–0.15 亿元/年的合计口径约 **3.65–9.25 亿元**。进入 `assumptions.json`（[assumption:ASSUME-005]）管理，官方投资计划发布后按 P4 复盘校准。**P1 近期资金组合（概念基准组合）**：财政引导 **45%**、场景服务收益 **20%**、开源与公益基金 **15%**、社会资本（政策兑付）**20%**（合计 100%；各渠道区间独立浮动、浮动后不强制归一，待复核），均为概念假设待复核（见 [assumption:ASSUME-005]），不构成预算承诺。
 
-**表 A3 成本复算框架（概念建议，量级不是拍脑袋——每项给出可复算的基数×单价区间；基数取自本包几何复算或官方公开口径，单价区间为同类项目公开市场水平，任一变更即重算）**
+**表 A3 成本复算框架（概念建议，未核验假设——基数可复算，单价区间无发布者/日期/地域等可审计来源，不构成预算承诺，不支撑可实施性结论；官方投资计划发布后按 P4 替换）**
 
 | 项目 | 复算基数（来源） | 单价区间（概念） | 复算区间 | 对应上表 |
 | --- | --- | --- | --- | --- |
@@ -1461,7 +1461,7 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 
 **① 空间类 known（14 项，从提交几何直接复算，EPSG:4548）**：总体设计范围面积（site_area_sqm，实测 11,412,825.4 m²——**展示精度 0.1 m²，此处数值只是本包几何图层在 EPSG:4548 下的机器复算值，复算全值（含更多小数位）见 metrics.json；它不是官方认定面积，官方口径 11,400,000 m²，偏差 0.11%**；精度纪律：展示值与全值分离，任何依赖全值的计算从 metrics.json 取值而不是从正文展示值反推）、建筑基底面积（building_footprint_area_sqm，约 110.3 ha）、绿地率（green_ratio，25.0%）、公共空间比例（public_space_ratio，约 5.9 ha、0.52%）、重点区数量（key_area_count，3）、重点区总面积（key_area_total_area_sqm，约 369.3 ha）、用地地块数（land_parcel_count，155 地块）、用地类别数（land_use_class_count，13 类）、建筑栋数（building_count，84）、绿地要素数（green_space_count，21：12 公园＋9 防护）、公共空间节点数（public_space_node_count，16：6 广场＋6 导视＋3 测试＋1 健康导引）、道路段数（road_segment_count，13）、分期区数（phasing_zone_count，3）、约束区数（constraint_zone_count，3）。空间类全部从 `geometry/*.geojson` 复算：图层计数类指标直接来自图层要素数（[metric:land_parcel_count] [metric:land_use_class_count] [metric:building_count]），绿地、公共空间节点与道路段计数见 [metric:green_space_count] [metric:public_space_node_count] [metric:road_segment_count]。
 
-**② 功能比例 known（7 项，按本包概念图层 EPSG:4548 复算，非官方用地口径）**：科研 0802 21.9%、商业 05 7.0%、住宅 0701 13.6%、道路 1207 10.7%、绿地 1401＋1402 25.0%、留白 16 2.7%、文教体医合计 14.4%（区间口径与 1+X+1 映射见 ASSUME-005 与第三章表）。各比例按概念图层复算（[metric:research_0802_ratio] [metric:commercial_05_ratio] [metric:residential_0701_ratio]）；道路、绿地与留白比例分别登记（[metric:roads_1207_ratio] [metric:green_1401_1402_ratio] [metric:reserve_16_ratio]），文教体医合计见 [metric:culture_edu_sports_medical_ratio]。
+**② 功能比例 known（7 项，按本包概念图层 EPSG:4548 复算，非官方用地口径）**：科研 0802 21.9%、商业 09 7.0%、住宅 0701 13.6%、道路 1207 10.7%、绿地 1401＋1402 25.0%、留白 16 2.7%、文教体医合计 14.4%（区间口径与 1+X+1 映射见 ASSUME-005 与第三章表）。各比例按概念图层复算（[metric:research_0802_ratio] [metric:commercial_09_ratio] [metric:residential_0701_ratio]）；道路、绿地与留白比例分别登记（[metric:roads_1207_ratio] [metric:green_1401_1402_ratio] [metric:reserve_16_ratio]），文教体医合计见 [metric:culture_edu_sports_medical_ratio]。
 
 **③ 方案元素计数 known（19 项，按正文登记）**：12 场景卡、3 产业测试场景、8 用户画像、3 朝圣地标、6 全球案例、9 几何图层、4 脉冲节拍、5 回滚触发器、120 合成检查任务（15 合格＋105 失败分支）、11 服务护照必填字段、5 运营证据门、8 首个 100 天步骤、12 同任务等价登记、4 资金渠道、11 一次性投入项目、3 异议门、3 应急层级、5 公共底线指标、15 项服务推演对象。元素计数均登记于正文与结构文件（[metric:scenario_card_count] [metric:industry_test_scenario_count] [metric:persona_count]），朝圣地标、全球案例与几何图层计数见 [metric:pilgrimage_landmark_count] [metric:ecosystem_case_count] [metric:geometry_layer_count]。
 
