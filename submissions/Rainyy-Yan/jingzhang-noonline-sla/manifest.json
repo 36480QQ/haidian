@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "eb5398c56b0a95d0e730122febcfd920a5376e99f5a55e0399456bdeb96e97ae"
+      "sha256": "7c29f7252bfba48a1fd5443214e10b131ca13f3c784fef42514bf80617d776c7"
     },
     {
       "path": "compliance_matrix.json",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "56a44029f1c528cc8f8bcc63a415b49e349b05497fbccff0e58b1ec988015595"
+      "sha256": "fcfde5b96ea8e2d61c76094f914e877e38523b4837f296a447059fab935f3ac5"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "9440816646555758cf8212aabefe1758ec08508c549dcae306286a6ea94645a2"
+      "sha256": "b560f5132b009fae4049a3fa3aeb79ceab151103d086c0149316347b5e873ec1"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "f33ab3783918973502e4c2ab59af57d9b92cc1325bf26961448f3d178f02f812"
+      "sha256": "b6eee5ffb834a74c1737e21af7446454dc60b6bf576ac90834af035ad28f385c"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "54772a5a9793d4e4c1241be65e9e02a6c8f3f29535bbf75cb2d5b52ef20f1f62"
+      "sha256": "f9789dd525364dfad5ed26f5eaa12096825ccf016b83c5b61c161bc00aaf70d4"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -266,7 +266,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "86d105fdbf762eec9c1529d256328251e74192d816468c7aecdc9b428cfa93e7"
+      "sha256": "508dc8f24c4ffaeaf65f892a898143130e57e947ba404dbe0e277436d3b977ce"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -290,7 +290,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "86c812a72d0969362e1abee2d61a9f66dd0fde99c73bf5615d5c0eb84b1c9e03"
+      "sha256": "5051965011e66949a60ded1661d2cc3dcae0b775234d31d570e0ec4c79d98472"
     },
     {
       "path": "visual/assets/noonline-sla-engine.js",
@@ -332,7 +332,7 @@
       "role": "changelog",
       "required": true,
       "language": "neutral",
-      "sha256": "ef3d47a806b09dda1f13392105670ca0f662ab7fed11ca157369d219b1d151bc"
+      "sha256": "1c61cbdc05067c5957e00b1977e97f482be349a2ceb1756abc98e7ed29cc6eae"
     },
     {
       "path": "visual/assets/sla-engine-diagram.svg",
@@ -362,7 +362,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.svg",
-      "sha256": "5f2e9d7718986ab8c7dee3192e58c5a3aa6c065dad374a39c58e95fce1077c10"
+      "sha256": "32f8cca89810d5fb9bd7f7cd15c3a66a0790a5a7a92b4aaf06b4557238640131"
     },
     {
       "path": "assets/figures/land-use-structure.svg",
@@ -407,7 +407,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/site-overview.svg",
-      "sha256": "d0be997dbd4a6e5b80efb36c9e870d4f2e165c2bde23e6201ca816bf0600e43a"
+      "sha256": "52c98d5945154e3c95f604ee02453ad0c5ba0e7aaae9acfa32b8f983c9436a89"
     },
     {
       "path": "assets/figures/site-overview.svg",
@@ -422,7 +422,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/v4-figure-01-overall-urban-structure.png",
-      "sha256": "86c812a72d0969362e1abee2d61a9f66dd0fde99c73bf5615d5c0eb84b1c9e03"
+      "sha256": "5051965011e66949a60ded1661d2cc3dcae0b775234d31d570e0ec4c79d98472"
     },
     {
       "path": "assets/figures/v4-figure-01-overall-urban-structure.en.svg",
@@ -430,7 +430,7 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/figures/v4-figure-01-overall-urban-structure.svg",
-      "sha256": "d0be997dbd4a6e5b80efb36c9e870d4f2e165c2bde23e6201ca816bf0600e43a"
+      "sha256": "52c98d5945154e3c95f604ee02453ad0c5ba0e7aaae9acfa32b8f983c9436a89"
     },
     {
       "path": "assets/figures/v4-figure-01-overall-urban-structure.png",
@@ -714,7 +714,7 @@
       "role": "evidence_data",
       "required": false,
       "language": "neutral",
-      "sha256": "3a3d4bb55898ec361e8fdbeac9a9394e7c50447b26c91fe4016490ac20e55a7b"
+      "sha256": "fde7a851c30690a85d986a23feaed56f704fc7e939f058a963b9c9afa144ceb3"
     },
     {
       "path": "visual/assets/v4_2-agent2-eight-element-mechanism-matrix.json",
@@ -743,6 +743,13 @@
       "required": true,
       "language": "neutral",
       "sha256": "97cf4c83ad37b4b44328b83da998b51856b81f3a3522939a108949699263fe4b"
+    },
+    {
+      "path": "visual/assets/v4_4-full-set-review-index.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "b3c85e44a485cabc0b36548198fc60fd0b01fde5e42c7934eb82b5c3a2c01799"
     }
   ],
   "validation_claim": {
