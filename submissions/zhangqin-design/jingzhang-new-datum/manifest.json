@@ -258,3 +258,45 @@
       "required": true,
       "language": "zh",
       "sha256": "cc9d3448cd3d7714183017d70e6a4bba3e6995682ef71704db297233060bd8e4"
+    },
+    {
+      "path": "self_check.json",
+      "role": "self_check",
+      "required": true,
+      "sha256": "10010680cbf2f15ad899fcda3e412f11d6c0a86b348c7850f62ab7993873df0c"
+    },
+    {
+      "path": "sources.json",
+      "role": "sources",
+      "required": true,
+      "sha256": "988ec89b2504e56c94478e63cf79bda99b43fc5894eebda2b76f8a4c3a3695ad"
+    },
+    {
+      "path": "standard_matrix.json",
+      "role": "standard_matrix",
+      "required": true,
+      "sha256": "23f15a522470966220ed651dc7f9589e40baebd34548abb36c1aa4112f6879a5"
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "required": true,
+      "language": "en",
+      "translation_of": "visual/index.html",
+      "sha256": "dda16cf5ea40f30b946dc9143b720265ed21cde3a7fce0bd8721081726bbb3d0"
+    },
+    {
+      "path": "visual/index.html",
+      "role": "visualization",
+      "required": true,
+      "language": "zh",
+      "sha256": "22ba26e112d2dbe4292794b50a1b3f5b89d4df916ef2b6bb59959067c3068859"
+    }
+  ],
+  "validation_claim": {
+    "self_checked": true,
+    "known_blockers": [],
+    "data_confidence": "high",
+    "readiness_contract": "persisted-self-check-v1"
+  }
+}
