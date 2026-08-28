@@ -6,18 +6,20 @@ translation_of: "proposal.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Two historical threads roughly a century apart along one corridor - the Jing-Zhang Railway completed in 1909, and the words 'independent innovation' entering the name of the Zhongguancun demonstration zone in 2009 (both carried as narrative assumptions pending verification; this package holds no verifiable published original for either, see sources.json) - lead this proposal to treat that corridor as the origin corridor of China's independent AI innovation: four origin points strung into 9.6 walkable kilometres of history, 11.41 sq km organised as one spine, three terraces, two wings and two stitching systems, with every figure recomputed from nine GeoJSON layers in EPSG:4548. Its governance core is human fallback plus a public answer sheet: no public-facing AI service may go live without both a staffed human channel and an auditable published record. Floor area ratio, height limit and gross floor area have no defensible basis here as statutory controls, so they are marked unknown rather than guessed; at block scale only recomputable concept ranges are given."
+summary: "The formal basis of this proposal is the organiser's announcement and agent taskbook. Its formal proposition is to organise the Jing-Zhang corridor as one spine, three terraces, two wings and two stitching systems, and to use human fallback plus a public report card to decide whether public AI may enter space. The 11.41 sq km model and every metric are recomputed from nine GeoJSON layers in EPSG:4548; statutory FAR, height and total GFA remain unknown. All historical and regional-coordination material is background_only narrative pending verification, not a prerequisite for the brand, spatial structure, governance system or any metric. If every such thread is deleted, the name, spatial loop, admission rules and evidence gates remain complete."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
 ---
 
 # JINGZHANG RISING - A Century of Self-Reliance, the Character for People Rising
 
-> The proposal in one sentence: let the spirit of self-reliance embodied in Zhan Tianyou's herringbone switchback grow, along the very same corridor, into the Chinese character for "people" that begins the Chinese word for artificial intelligence - AI, for the people.
+> The proposal in one sentence: use the folded 人 geometry to organise one spine, three terraces, two wings and two stitches, and use human fallback plus a public report card to govern public AI — AI, for the people.
 
 ## Overall Concept, Name, English Name and Naming System
 
-The overall concept is: taking the "herringbone switchback" at Qinglong Bridge as a geometric motif, forming a spatial narrative of "a century of self-reliance, the character for people rising". Through four origin points of independent innovation and AI governance demonstration, we give Haidian the spatial identity of "the source of independent innovation".
+The **formal basis of the concept** is the organiser's announcement and agent taskbook [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]. The author-created folded 人 geometry organises one spine, three terraces, two wings and two stitches; human fallback plus a public report card is the spatial admission system for public AI; and a Temporal Commons records contributions, failures and corrections. In the formal package, “A Century of Self-Reliance, the Character for People Rising” first names this spatial-operating-governance system; it is not a certification of any unverified historical fact.
+
+**Brand-independence statement.** The six groups of material concerning 1909, 1949, the 1988–2009 lineage, East Data West Computing, Zhangjiakou energy and the high-speed railway survive only as `background_only` narrative threads pending verification [source:SOURCE-REGISTRY]. They enter no condition for the brand, no derivation of the spatial structure, no metric, compliance conclusion or implementation gate. If all six are removed, the name `JINGZHANG RISING`, folded 人 geometry, spatial loop, human fallback, public report card and G0–G5 evidence gates remain complete and unchanged. The historical appendix supplies replaceable exhibition material only; it does not prove the proposal correct.
 
 The concept is integrated in three layers from the outset rather than added as a later chapter: the spatial layer uses the folded 人 geometry to organise one spine, three terraces, two wings and two stitches; the operating layer records century-long contributions, present experiments and future corrections as a Temporal Commons; the governance layer uses "human fallback + public report card" to decide whether an AI service may enter public space. The three layers answer what it looks like, how it accumulates value over time, and why it may be admitted.
 
@@ -1527,6 +1529,21 @@ This reflects a fundamental methodological stance: statutory development intensi
 ### 1. Boundary and data risk
 
 The highest-severity risk: the official `SITE_BOUNDARY` and the three official `KEY_AREA` polygons have not been released, so this package uses a provisional rough surrogate [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [depth:risk_missing_data]. Consequently every area, ratio and length is a value recomputed against a surrogate boundary and must be recomputed in full once official data is published. The limitation is declared consistently in `metrics.json`, `assumptions.json`, the drawing footers and the HTML display; it is neither hidden nor softened.
+
+### 1A. Current authorisation state: no real-world action is authorised
+
+A concept proposal saying how something might be done does not mean that any actor has permission to do it. At the time of submission every row below is **`NOT_AUTHORIZED`** [assumption:A-AUTHORIZATION-001]. Only the responsible reviewer may change a state after the listed evidence exists; the author, AI agent, suggested operator or visual package cannot unlock it. If one item of evidence is absent, the outcome is not “conditional implementation” but **not started / not collected / not opened / not reused**.
+
+| Real-world action | Current state | Minimum evidence required to unlock | Responsible reviewer | Result if not passed |
+| --- | --- | --- | --- | --- |
+| Any construction, excavation, structure or road alteration | `NOT_AUTHORIZED` | Official boundary, tenure, planning permission, structural and utility conditions, professional design documents | Competent planning/construction authority, rights holder and relevant professional teams | No site entry, no work |
+| Action affecting protected heritage or its control zone | `NOT_AUTHORIZED` | Official protection geometry, heritage impact assessment, heritage-authority position | Heritage authority and rights holder | Cancel or move outside the affected area |
+| Camera, environmental sensing, footfall counting or data processing | `NOT_AUTHORIZED` | Named controller, data inventory and purpose, lawful basis, minimisation case, retention/deletion rule, security assessment and independent review | The actual service controller's privacy/security accountable officer and any competent authority | No collection, no network connection, no retention |
+| Public AI service or on-site pilot | `NOT_AUTHORIZED` | Tenure and site permission, non-AI baseline, human route, negative-case rehearsal, AI-off drill, insurance / physical stop / restoration responsibility, independent review | Site operator, service controller, safety and accessibility reviewers | Do not open, or revert to human service |
+| Autonomous vehicles, robots or unmanned delivery | `NOT_AUTHORIZED` | Closed test boundary, road/site permission, physical separation, emergency plan, insurance, human takeover and restoration responsibility | Competent transport/site manager and safety reviewer | Do not operate; remove equipment |
+| Reuse of the brand, figures, geometry or text | `NOT_AUTHORIZED` | Separate written licence from the rights holder, attribution, purpose and third-party-exception ledger | Rights holder; Droid Sans Fallback remains separately governed by Apache-2.0 | Display and review use only |
+
+This table is the strongest presently executable risk control in the package. It does not pretend that future approvals exist: it states who may change each status, what evidence permits the change and what failure does. The G0–G5 evidence gates can supply material to the responsible reviewer; they cannot replace that reviewer's legal authority.
 
 ### 2. Risk register: rating, impact and response
 
