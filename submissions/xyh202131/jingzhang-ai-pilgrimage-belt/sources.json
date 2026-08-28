@@ -5,7 +5,7 @@
     "asset_ledger": "visual/assets/rights-clearance-ledger.json",
     "file_inventory": "visual/assets/file-rights-inventory.json",
     "manifest_hash_authority": "manifest.json files[].sha256 at the final PR exact head",
-    "status": "current_exact_package_157_of_157_contributor_path_decisions_complete_under_component_specific_terms",
+    "status": "current_exact_package_158_of_158_contributor_path_decisions_complete_under_component_specific_terms",
     "content_license": "CC-BY-4.0",
     "code_license": "MIT",
     "osm_database_license": "ODbL-1.0",
@@ -585,6 +585,112 @@
       "not_usable_for": [
         "specific project approval",
         "investment commitment"
+      ]
+    },
+    {
+      "id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
+      "rights_evidence_id": "SRC-RIGHTS-GENERATIVE-AI-INTERIM-MEASURES",
+      "title": "生成式人工智能服务管理暂行办法",
+      "publisher": "国家互联网信息办公室等七部门",
+      "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "path": "brief/site-package/standards/references/generative-ai-interim-measures.md",
+      "source_type": "official_public",
+      "published_date": "2023-07-13",
+      "accessed_date": "2026-08-28",
+      "authority_level": "A0",
+      "central_registry_status": "approved_formal",
+      "collection_method": "Direct read of the repository-local attributed Markdown snapshot and cross-check against the official CAC page; no page text, image, logo or layout is redistributed in the package.",
+      "temporal_scope": "Measures published on 2023-07-13 and effective from 2023-08-15; later amendments, interpretations and service-specific determinations were not independently audited.",
+      "spatial_scope": "Services using generative AI to provide generated text, images, audio or video to the public within mainland China; not every AI application, urban design project or non-generative system.",
+      "rights_or_reuse": "citation_only_official_public_text_and_repository_snapshot; no original page media redistributed; terms_not_independently_audited",
+      "transformations": [
+        "Article 2 scope and Article 15 complaint/reporting duties were translated into a bounded G1-entry requirement for relevant public-facing generative-service candidates."
+      ],
+      "known_limitations": [
+        "Article 14 concerns unlawful-content and service handling and is not treated as a general user opt-out right.",
+        "Article 15 does not set a numeric statutory response deadline; a project-specific feedback timeframe must be preregistered rather than invented.",
+        "Article 17 security-assessment and filing references are not generalized beyond services with public-opinion or social-mobilization capacity.",
+        "This record is not legal advice, proof of filing, security assessment, approval or service compliance."
+      ],
+      "usable_for": [
+        "public-facing generative-service applicability boundary",
+        "complaint and reporting channel requirement",
+        "G1 preregistration question"
+      ],
+      "not_usable_for": [
+        "general AI opt-out right",
+        "numeric statutory response deadline",
+        "proof of filing or security assessment",
+        "project approval or legal opinion"
+      ]
+    },
+    {
+      "id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
+      "rights_evidence_id": "SRC-RIGHTS-BARRIER-FREE-ENVIRONMENT-LAW",
+      "title": "中华人民共和国无障碍环境建设法",
+      "publisher": "全国人民代表大会常务委员会",
+      "url": "https://www.gov.cn/yaowen/liebiao/202306/content_6888910.htm",
+      "path": "brief/site-package/standards/references/barrier-free-environment-law.md",
+      "source_type": "official_public",
+      "published_date": "2023-06-28",
+      "accessed_date": "2026-08-28",
+      "authority_level": "A0",
+      "central_registry_status": "approved_formal",
+      "collection_method": "Direct read of the repository-local attributed Markdown snapshot and cross-check against the official government publication; no page text, image, logo or layout is redistributed in the package.",
+      "temporal_scope": "Law adopted on 2023-06-28 and effective from 2023-09-01; venue-specific applicability and compliance were not independently determined.",
+      "spatial_scope": "Article 39 human-operated service boundary for public service venues handling medical, social-security, financial or living-payment services; not every public space or digital interface.",
+      "rights_or_reuse": "citation_only_official_public_text_and_repository_snapshot; no original page media redistributed; terms_not_independently_audited",
+      "transformations": [
+        "Article 39 was mapped only to existing enterprise/public-service task candidates whose service matter falls within the listed contexts."
+      ],
+      "known_limitations": [
+        "The listed human-service requirement is not generalized to every park, street, event or interface.",
+        "The law does not prove the accessibility status of existing facilities or the compliance of this conceptual proposal.",
+        "Venue-specific compliance still requires competent legal, accessibility and service review."
+      ],
+      "usable_for": [
+        "listed public-service human-operated service baseline",
+        "accessibility handoff question"
+      ],
+      "not_usable_for": [
+        "general human-service mandate for every space",
+        "existing-facility accessibility result",
+        "venue-specific legal conclusion"
+      ]
+    },
+    {
+      "id": "DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45",
+      "rights_evidence_id": "SRC-RIGHTS-ELDERLY-SMART-TECH-PLAN-2020-45",
+      "title": "国务院办公厅关于印发《关于切实解决老年人运用智能技术困难实施方案》的通知（国办发〔2020〕45号）",
+      "publisher": "国务院办公厅",
+      "url": "https://www.gov.cn/zhengce/content/2020-11/24/content_5563804.htm",
+      "path": "brief/site-package/standards/references/elderly-smart-tech-plan-2020-45.md",
+      "source_type": "official_public_background",
+      "published_date": "2020-11-24",
+      "accessed_date": "2026-08-28",
+      "authority_level": "A0_background_only",
+      "central_registry_status": "approved_background_only",
+      "collection_method": "Direct read of the repository-local attributed Markdown snapshot and official policy page; no page text, image, logo or layout is redistributed in the package.",
+      "temporal_scope": "National policy notice published in 2020; current local implementation, service-provider compliance and site-specific demand were not audited.",
+      "spatial_scope": "National background for traditional service channels operating in parallel with smart services across high-frequency tasks; no Haidian site placement or statutory project control.",
+      "rights_or_reuse": "citation_only_official_public_policy_and_repository_snapshot; no original page media redistributed; terms_not_independently_audited",
+      "transformations": [
+        "The parallel-channel direction was used as background support for the proposal's existing non-AI same-task route and was not promoted to a formal local control."
+      ],
+      "known_limitations": [
+        "Background-only status cannot support a formal compliance conclusion.",
+        "The source supplies no local elderly usage figures, service coverage, staffing or site-specific control.",
+        "It does not prove that any Haidian service has implemented the policy."
+      ],
+      "usable_for": [
+        "background context for parallel traditional and smart channels",
+        "high-frequency service task framing"
+      ],
+      "not_usable_for": [
+        "local implementation conclusion",
+        "site-specific statutory control",
+        "local elderly demand or coverage metric",
+        "service-provider compliance evaluation"
       ]
     },
     {

@@ -1,17 +1,17 @@
 {
   "schema_version": "2.0",
   "as_of": "2026-08-28",
-  "source_record_count": 49,
+  "source_record_count": 52,
   "third_party_media_redistributed": 0,
   "generated_media_paths": 0,
   "file_rights_inventory": "visual/assets/file-rights-inventory.json",
   "contributor_file_inventory_complete": true,
-  "contributor_file_inventory_path_count": 157,
+  "contributor_file_inventory_path_count": 158,
   "contributor_file_inventory_coverage_ratio": 1.0,
   "independent_file_level_audit_completed": false,
   "current_exact_package_review_display_decision": "allowed_under_component_specific_terms_and_notices",
   "independent_audit_boundary": "The absent independent legal/file-level audit is not a missing contributor decision for current bytes; it remains a separate professional finding for use contexts that require it.",
-  "manifest_hash_binding": "final PR exact head -> manifest Git blob -> files[].sha256 for 156 non-manifest paths; manifest self-hash intentionally omitted",
+  "manifest_hash_binding": "final PR exact head -> manifest Git blob -> files[].sha256 for 157 non-manifest paths; manifest self-hash intentionally omitted",
   "component_notices": [
     "report/copyright_statement.md"
   ],
@@ -128,6 +128,24 @@
       "source_id": "AI-PLUS-2025",
       "governance_status": "participant_collected_citation",
       "claim_capacity": "bounded_background_or_case_comparison_only",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
+      "governance_status": "central_approved_formal",
+      "claim_capacity": "formal_claim_within_registered_scope",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
+      "governance_status": "central_approved_formal",
+      "claim_capacity": "formal_claim_within_registered_scope",
+      "rights_use": "citation_only"
+    },
+    {
+      "source_id": "DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45",
+      "governance_status": "central_background_only",
+      "claim_capacity": "background_context_only",
       "rights_use": "citation_only"
     },
     {

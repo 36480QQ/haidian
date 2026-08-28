@@ -30,7 +30,8 @@
     "scope": "Four-state spatial experience: one deterministic conceptual cover, one silent bilingual 54-second editorial sequence, one always-visible static fallback, and synchronized fixed-page publications.",
     "spatial_and_metric_freeze": {
       "geometry_files": 9,
-      "metrics_json_frozen": true,
+      "spatial_and_numeric_metrics_frozen": true,
+      "metrics_json_rights_explanation_sync": "Only the current exact-package rights path count changed from 157/157 to 158/158 after adding the policy-to-task register; no planning metric value, denominator or confidence changed.",
       "scenario_project_area_unit_counts": "12 / 8 / 3 / 36"
     },
     "front_stage": {
@@ -392,7 +393,7 @@
     "review_repair_65_1": {
       "reviewed_head": "ac29622e886672f145ac16612548d70f1e31cc15",
       "finding": "Legacy time-museum rights metric conflated absent independent legal audit with a repository-display blocker; source governance also covered only 48 of 49 current source records.",
-      "resolution": "Current exact-package contributor disposition is 157/157 with an exact-head/manifest/SHA-256 chain; source governance is 49/49; independent legal, file-level legal and trademark review remain false and separately scoped.",
+      "resolution": "The R65 exact-package contributor disposition was 157/157 with an exact-head/manifest/SHA-256 chain; source governance was 49/49; independent legal, file-level legal and trademark review remained false and separately scoped.",
       "current_exact_package_unhandled_time_museum_image_or_text_paths": 0,
       "new_media": false,
       "pdf_html_visual_bytes_changed": false
@@ -409,6 +410,57 @@
       "field performance, accessibility result, public feedback or recovery duration",
       "G1, authorization, approval or accepted professional duty",
       "independent legal audit or trademark review"
+    ]
+  },
+  "round_66_provenance": {
+    "canonical_main_base_sha": "7ab6e2543543b3dae927d7880fb694b227513749",
+    "predecessor_pr": 4104,
+    "publication_revision": "66.0",
+    "scope": "Policy-to-public-task firewall: make applicable policy direction readable as bounded design entry gates without upgrading G0, claiming approval or inventing implementation facts.",
+    "before_evidence": {
+      "package_source_records": 49,
+      "proposal_stated_source_records": 48,
+      "structured_policy_to_task_mapping_count": 0,
+      "finding": "Policy sources were dispersed across prose and source metadata, so the route from policy scope to ordinary task, G1 prerequisite, stop rule and prohibited inference was not a single reviewer-visible answer."
+    },
+    "after_evidence": {
+      "package_source_records": 52,
+      "structured_policy_to_task_mapping_count": 6,
+      "paired_proposal_report_visual_surfaces_updated": true,
+      "a3_page_pair": "14 + 14",
+      "a0_page_pair": "8 + 8",
+      "rights_path_coverage": "158/158",
+      "new_media": false,
+      "new_governance_contract": false
+    },
+    "policy_scope_guards": {
+      "barrier_free_article_39": "limited to listed public-service matters; not generalized to every space or interface",
+      "elderly_smart_technology_plan": "background_only; supports parallel traditional and smart channels but proves no local implementation or coverage",
+      "generative_ai_measures": "complaint receipt and timely handling without an invented statutory day count or general opt-out",
+      "content_labeling": "triggered only when generated content is actually produced and distributed",
+      "controlling_rule": "Policy sets an entry gate; it does not create approval, partnership, enforcement authority, field result or accepted professional duty."
+    },
+    "review_repair_66_1": {
+      "reviewed_head": "3f1dc3e1d61d6348d9f89eb0b299fe5c357fe37b",
+      "finding": "Current-package rights statements mixed the R66 total path count with R65 manifest and non-manifest denominators.",
+      "resolution": "The canonical scope is 158/158 total package paths, including manifest.json; the exact-head-bound manifest carries SHA-256 records for 157 non-manifest paths and omits a circular manifest self-hash.",
+      "geometry_or_planning_metric_changed": false,
+      "new_media": false,
+      "offline_cjk_subset_refresh": "Nine R66 policy-text glyphs added to the existing OFL Noto subset; 1156 code points, two fresh builds byte-identical, four final HTML surfaces with zero missing CJK glyphs."
+    },
+    "spatial_and_metric_freeze": {
+      "geometry_files": 9,
+      "spatial_and_numeric_metrics_frozen": true,
+      "metrics_json_rights_explanation_sync": "Only the current exact-package rights path count changed from 157/157 to 158/158 after adding the policy-to-task register; no planning metric value, denominator or confidence changed.",
+      "scenario_project_area_unit_counts": "12 / 8 / 3 / 36",
+      "maturity": "G0 / NO-GO"
+    },
+    "cannot_prove": [
+      "legal advice, statutory compliance or an enforcement decision",
+      "official boundary, exact site or approved design",
+      "field performance, accessibility result, public feedback, budget or recovery duration",
+      "G1, partnership, authorization, approval or accepted professional duty",
+      "independent human bilingual confirmation, legal audit or trademark review"
     ]
   }
 }

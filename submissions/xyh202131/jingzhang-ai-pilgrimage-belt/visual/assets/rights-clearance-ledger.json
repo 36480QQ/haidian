@@ -7,17 +7,17 @@
   "independent_trademark_review_completed": false,
   "contributor_file_inventory_complete": true,
   "contributor_file_inventory": "visual/assets/file-rights-inventory.json",
-  "contributor_file_inventory_path_count": 157,
+  "contributor_file_inventory_path_count": 158,
   "contributor_file_inventory_coverage_ratio": 1.0,
   "manifest_hash_binding": {
     "manifest": "manifest.json",
     "inventory": "visual/assets/file-rights-inventory.json",
     "rule": "The final PR exact head binds the manifest Git blob; manifest files[].sha256 binds every non-manifest package path. The manifest omits its own SHA-256 to avoid a circular self-hash.",
-    "manifest_path_count": 157,
-    "hash_bearing_non_manifest_path_count": 156
+    "manifest_path_count": 158,
+    "hash_bearing_non_manifest_path_count": 157
   },
-  "summary_zh": "当前精确投稿包 157/157 个路径均已由投稿方完成作者/来源/许可/署名/变更/再分发和例外处置，并通过最终 PR exact head → manifest Git blob → 156 个非 manifest 路径 SHA-256 绑定，可按组件条款用于仓库评审、展示与再分发；不存在单一整包许可。自有内容及第59轮确定性概念媒体为 CC BY 4.0，自有代码 MIT，OSM 衍生数据库 ODbL，HTML 字体子集及 PDF 语义子集适用 Noto Sans CJK SC OFL，第三方内容仅引用，仓库临时输入不被重新许可。独立法律意见、独立逐文件法律审计和商标审查仍未提供；这表示外部专业结论缺失，不表示当前包仍有未处置路径，也不构成仓库评审展示阻断。",
-  "summary_en": "All 157/157 paths in the current exact submission package have contributor decisions for authorship/source, licence, attribution, transformation, redistribution and exceptions, bound through final PR exact head -> manifest Git blob -> SHA-256 for 156 non-manifest paths. The package may be reviewed, displayed and redistributed under component-specific terms; there is no single package-wide licence. Contributor content and R59 deterministic concept media are CC BY 4.0, code is MIT, OSM-derived database content is ODbL, the HTML font subset and PDF semantic subsets are Noto Sans CJK SC under OFL, third-party works are citation-only, and repository provisional inputs are not relicensed. Independent legal advice, independent file-level legal audit and trademark review remain absent; this records missing external professional findings, not an undisposed current-package path or a repository-review/display blocker.",
+  "summary_zh": "当前精确投稿包 158/158 个路径均已由投稿方完成作者/来源/许可/署名/变更/再分发和例外处置，并通过最终 PR exact head → manifest Git blob → 157 个非 manifest 路径 SHA-256 绑定，可按组件条款用于仓库评审、展示与再分发；不存在单一整包许可。自有内容及第59轮确定性概念媒体为 CC BY 4.0，自有代码 MIT，OSM 衍生数据库 ODbL，HTML 字体子集及 PDF 语义子集适用 Noto Sans CJK SC OFL，政策与第三方内容仅引用，仓库临时输入不被重新许可。独立法律意见、独立逐文件法律审计和商标审查仍未提供；这表示外部专业结论缺失，不表示当前包仍有未处置路径，也不构成仓库评审展示阻断。",
+  "summary_en": "All 158/158 paths in the current exact submission package have contributor decisions for authorship/source, licence, attribution, transformation, redistribution and exceptions, bound through final PR exact head -> manifest Git blob -> SHA-256 for 157 non-manifest paths. The package may be reviewed, displayed and redistributed under component-specific terms; there is no single package-wide licence. Contributor content and R59 deterministic concept media are CC BY 4.0, code is MIT, OSM-derived database content is ODbL, the HTML font subset and PDF semantic subsets are Noto Sans CJK SC under OFL, policy and third-party works are citation-only, and repository provisional inputs are not relicensed. Independent legal advice, independent file-level legal audit and trademark review remain absent; this records missing external professional findings, not an undisposed current-package path or a repository-review/display blocker.",
   "components": [
     {
       "component_id": "RIGHTS-CONTENT",
@@ -63,14 +63,14 @@
       "notice": "report/copyright_statement.md",
       "pdf_and_html_source_file_name": "NotoSansCJKsc-Regular.otf",
       "pdf_and_html_source_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
-      "pdf_render_method": "R63 deterministic fixed-page composition uses locally rasterized visible Noto Sans CJK SC glyphs and an embedded semantic subset made from the same registered OFL source; 44/44 pages remain searchable/copyable, with no tagged-PDF claim.",
+      "pdf_render_method": "R63 base fixed-page composition uses locally rasterized visible Noto Sans CJK SC glyphs and an embedded semantic subset made from the same registered OFL source. R66 adds contributor-authored policy panels on four existing pages through local Chrome rasterization and deterministic local pypdf/reportlab merging. Existing body text remains searchable/copyable across 44/44 pages; the new raster policy panels use paired HTML/JSON as their complete machine-readable route. No remote resource, model API or tagged-PDF claim.",
       "pdf_accessibility_boundary": "All 44 fixed pages expose searchable/copyable semantic text, but tagged PDF/UA and accessibility conformance are not claimed; the paired offline HTML reports remain the complete keyboard and machine-readable surface",
-      "html_subset_sha256": "30656aa6450d8676d3d7fe1f7ca4de135bc2bcf7e33667121c045a235779fdff",
-      "html_subset_method": "fontTools subset 4.62.1 over the literal character union of both final report and visual HTML counterparts; WOFF2; 1148 Unicode code points; font-display swap"
+      "html_subset_sha256": "d9580fffee5091ada9631ae4e631fd7873dc6956745303e2b440874e257b5378",
+      "html_subset_method": "fontTools subset 4.62.1 over the retained R59 character set plus nine R66 policy-text glyphs used by the four final report and visual HTML counterparts; two fresh builds byte-identical; WOFF2; 1156 Unicode code points; font-display swap"
     },
     {
       "component_id": "RIGHTS-FILE-INVENTORY",
-      "scope": "Every one of the 157 paths in the current submission distribution tree",
+      "scope": "Every one of the 158 paths in the current submission distribution tree",
       "license": "component_specific",
       "status": "contributor_self_inventory_complete",
       "notice": "visual/assets/file-rights-inventory.json",
@@ -170,7 +170,7 @@
   "current_exact_package_release": {
     "decision": "allowed_for_repository_review_display_and_redistribution_under_component_specific_terms",
     "single_package_license": false,
-    "path_decision_coverage": "157/157",
+    "path_decision_coverage": "158/158",
     "conditions": [
       "apply CC BY 4.0 to contributor-owned content and indicate changes",
       "retain MIT notice for contributor code",
