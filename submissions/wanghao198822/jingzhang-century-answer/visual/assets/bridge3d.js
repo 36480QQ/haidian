@@ -50,13 +50,13 @@
 
     /* —— 场地：中间 60m 环路，两侧绿地 —— */
     var ROAD_W = 60;
-    box(560, 0.4, ROAD_W, M.road, 0, -0.2, 0);
-    box(560, 0.42, 220, M.green, 0, -0.21, -(ROAD_W / 2 + 110));
-    box(560, 0.42, 220, M.green2, 0, -0.21, (ROAD_W / 2 + 110));
-    box(560, 0.44, 1.2, M.lane, 0, -0.18, 0);                    // 中央分隔
-    for (var i = 0; i < 26; i++) {                                // 车道虚线
-      box(6, 0.44, 0.5, M.lane, -250 + i * 20, -0.18, -15);
-      box(6, 0.44, 0.5, M.lane, -240 + i * 20, -0.18, 15);
+    box(1500, 0.4, ROAD_W, M.road, 0, -0.2, 0);
+    box(1500, 0.42, 560, M.green, 0, -0.21, -(ROAD_W / 2 + 280));
+    box(1500, 0.42, 560, M.green2, 0, -0.21, (ROAD_W / 2 + 280));
+    box(1500, 0.44, 1.2, M.lane, 0, -0.18, 0);                    // 中央分隔
+    for (var i = 0; i < 70; i++) {                                // 车道虚线
+      box(6, 0.44, 0.5, M.lane, -690 + i * 20, -0.18, -15);
+      box(6, 0.44, 0.5, M.lane, -680 + i * 20, -0.18, 15);
     }
 
     /* —— 桥：Z 向跨路，桥面顶标高 6.0 —— */
@@ -105,8 +105,8 @@
     }
     var rng = 9973;
     function rnd() { rng = (rng * 16807) % 2147483647; return rng / 2147483647; }
-    for (var t = 0; t < 90; t++) {
-      var x = (rnd() - 0.5) * 480, z = (ROAD_W / 2 + 14) + rnd() * 150;
+    for (var t = 0; t < 190; t++) {
+      var x = (rnd() - 0.5) * 1100, z = (ROAD_W / 2 + 14) + rnd() * 330;
       if (Math.abs(x) < 78 && z < 78) continue;                    // 让开坡道
       tree(x, (t % 2 ? 1 : -1) * z, 0.8 + rnd() * 0.7);
     }
@@ -176,6 +176,14 @@
         ? "Static image only - interactive 3D unavailable in this browser"
         : "仅静态图 · 本浏览器无法运行可交互三维");
       container.setAttribute("role", "img");
+      /* 三维起不来时，「拖拽或方向键旋转」这条操作提示还留在右下角，等于让人去做办不到的事；
+         同时 aria-label 也还在说可以用方向键。两处一并改掉。 */
+      var hint = container.querySelector(".hint3d");
+      if (hint && hint.parentNode) hint.parentNode.removeChild(hint);
+      container.removeAttribute("tabindex");
+      container.setAttribute("aria-label", document.documentElement.lang === "en"
+        ? "Static concept view of the Ren-Shaped Leap footbridge; interactive 3D is unavailable in this browser"
+        : "人字之跃步行桥三维概念示意的静态图；本浏览器无法运行可交互三维");
     }
   };
 })();

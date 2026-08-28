@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4415c2bed72724086c097acec1bb08c5160eceb38d6fb3cb038db25c2cf588c5"
+      "sha256": "c18e5d3976dd1c3ac7ca367d454b0c26eaebd7915cc18bb9bb3bde6503e3b0d9"
     },
     {
       "path": "compliance_matrix.json",
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "bd04c6c44524247f556af9c28a76b9a0596b55ace67cdb26a652afa10418c547"
+      "sha256": "b17070d04630ff024f8de847f1dc0d5e249377bd53c29341d9386e9fdfab064c"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "c44bbe2cf0f384764dcf89aefb22cf185e5a1825944cfcbc075180b2d09b53f5"
+      "sha256": "d0dbd10f4f71cbde268d1c0974dddfcd4d2493ad73a443e11e6d35835c431be9"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -590,7 +590,7 @@
       "path": "visual/assets/renders/b3d-poster.jpg",
       "role": "visualization",
       "required": false,
-      "sha256": "dd1dee92c8f3f262f21368f1e184993540e38ce63c6e49444e3b215295e4374b",
+      "sha256": "89fe620273c83bcb83b9f0a5688845592131c5edf0c90246c4ae42370ec70d97",
       "title_zh": "人字之跃三维场景 · 静态兜底图",
       "title_en": "Ren-Shaped Leap 3D scene - static fallback",
       "description_zh": "离线三维场景（Three.js，几何按断面 ZZY-1/ZZY-2 的设计目标值搭建）的静态截图，用作浏览器不支持 WebGL 时的兜底图与加载前占位。画面为俯视：一跨平直桥面横跨环路、桥面之上只有栏板，两端各以两段并排折返坡道落回两侧绿地，俯视合读为「人」字。概念示意，未经坐标配准。",
@@ -742,7 +742,7 @@
       "path": "visual/assets/bridge3d.js",
       "role": "visualization",
       "required": false,
-      "sha256": "c06e540db9587c2eb1739c4545ad445d3261d5bfcd8e3f560014bbb6d8a343c1",
+      "sha256": "04718e572ff9a68a3c3505b0e84aa97787a8e444b8fdab37a9da9d96168176df",
       "title_zh": "人字之跃 · 三维示意场景脚本",
       "title_en": "Ren-Shaped Leap — 3D sketch scene",
       "description_zh": "以断面 ZZY-1/ZZY-2 设计目标值搭建的本地三维示意（抬升6.0m、桥面9m、栏板1.4m、并排坡道62m×2、单侧占地66×9m）；概念示意，未经坐标配准。",
