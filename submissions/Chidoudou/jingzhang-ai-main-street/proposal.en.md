@@ -105,7 +105,17 @@ Six international cases transfer mechanisms only: [metric:global_case_count]
 
 The identity combines twin parallel lines, three nodes and a bracket opening toward the street to represent rail, data and public access. The Chinese name is “京张上街” and the English name “AI MAIN STREET”; secondary names are “First-use Yard”, “Street Node” and “Service Wing”. The logo and protocol are original vector directions for professional visual development. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
 
-Regional collaboration uses an open interface. Beiwei Community, Future Science City, Huairou Science City, Beijing E-Town and Beijing-Tianjin-Hebei participants can contribute problems, model cards, test protocols, failure reviews and conversion applications. Each collaboration records provenance, rights, data boundaries, responsibility and exit conditions. [depth:overall_spatial_structure]
+Regional collaboration uses an open interface. Beiwei Community, Future Science City, Huairou Science City, Beijing E-Town and Beijing-Tianjin-Hebei participants contribute problems, model cards, test protocols, failure reviews and conversion applications. Each collaboration records provenance, rights, data boundaries, responsibility and exit conditions. [depth:overall_spatial_structure]
+
+| Coordination partner | Input brought to Jing-Zhang | Joint task and spatial interface | Output and return loop |
+| --- | --- | --- | --- |
+| Beiwei Community | Real problems from residents, young families and community operations | Turn them into plain-language problem cards, an ordinary-service baseline and a co-test list at the AI Origin translation window | Return adoption, refusal, appeal and unresolved needs to community deliberation and product revision |
+| Future Science City | Research outputs, engineering problems and validation needs | Enter the PROVE gate at Zhongzhiyuan and use its controlled loop and safety-record template | Produce reusable validation protocols, failure records and conditions for public translation |
+| Huairou Science City | Scientific-facility scenarios, research-data boundaries and interdisciplinary needs | Publish purpose, limits and human responsibility at the Origin translation desk before choosing a Jing-Zhang first-use site | Return model cards, public comprehension gaps and questions requiring research-team correction |
+| Beijing E-Town | Intelligent-manufacturing, robotics and supply-chain scenarios | After closed testing, apply for the low-speed controlled loop at Zhongzhiyuan or a candidate Xiaoyue River interface | Produce maintenance, takeover, near-miss and removal records for industrial iteration and regulatory discussion |
+| Beijing-Tianjin-Hebei actors | Cross-regional talent, scenarios and public-service needs | Join seasonal problem calls and open-protocol co-editing; each locality re-authorizes its own use | Produce a portable Street Pass template, local-difference list and annual open-source review |
+
+These are proposed collaboration interfaces, not evidence of an existing agreement, funding, site or institutional commitment. Responsible entities are confirmed task by task by the actual project and authorized operator. [source:AGENT-TASKBOOK]
 
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
