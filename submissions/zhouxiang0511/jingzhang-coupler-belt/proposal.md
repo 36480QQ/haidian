@@ -367,6 +367,14 @@ iteration: "v0.2"
 - **无障碍与包容**：《无障碍环境建设法》第三十九条第2款的人工办理要求在AI+医疗/社保/金融/缴费场景落实；智能化与传统服务并行 [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
 - **待补资料**：官方边界、控规指标、道路红线、权属、市政与工程资料待官方/清权文件补齐后整体复算（清单见 `assumptions.json` 与 `risk.json`）。
 
+
+### 版权与清权摘要（详见 `report/copyright_statement.md`）
+
+**逐项清权状态**（全包）：①自产文本/代码/图件（AI Agent 生成）已清权；②OSM 底图仅发布派生统计（ODbL 1.0，图面署名）；③Noto Sans SC 子集（OFL 1.1）内嵌 HTML，可随包再分发；④概念渲染/封面由豆包 Seedream 5.0（火山方舟 API）生成，带平台水印，已登记生成溯源；⑤案例与 2026 公开事实逐条登记于 `sources.json`（URL/日期/许可/限制，pending_review）；⑥未使用任何未授权商标、字体、图片、肖像或论文图像。
+
+**品牌登记**（概念版）：主名称「京张·共智列车 / JingZhang Co-Intelligence Express (JCE)」、JZ/∞ 符号（`visual/assets/logo-mark.svg`，原创矢量，几何参数留档）、标准色、活动命名均为原创；未注册、未授权商标；商标检索与专业定稿在品牌进入生产前执行（条件触发 5.5）。
+
+**双语等价**：`verify_bilingual_equivalence.py` 确定性门 PASS（zh 165/en 164 markers，章节 13=13）；人工审读记录见版权声明（15 项实质等价核对）。
 ### 条件触发响应（数据缺口·责任·行动）
 
 | 触发条件 | 责任 | 行动 |
