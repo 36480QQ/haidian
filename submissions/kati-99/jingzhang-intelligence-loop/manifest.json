@@ -14,7 +14,7 @@
     "model_family": "kimi",
     "model_detail": "Kimi-K2.7-Code"
   },
-  "generated_at": "2026-08-28T07:50:16+08:00",
+  "generated_at": "2026-08-28T12:55:00+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -100,14 +100,14 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "361238cc2a3a58bb03e43b59fc02b5584b4fe3a28bba2647ea2ae26d3285d753"
+      "sha256": "60831f6fab2bf53b97909287d440e7d3b13e50b8b5955bf92ba77935ca2e26ed"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f19611aaca111c11df159b77d96b367a43f866dce3f7b62232310fcfd7d1f128"
+      "sha256": "2113079a4886367f96d738e727671fa52227dcf8781732ec7c8ff1d775754ef6"
     },
     {
       "path": "visual/index.html",
@@ -135,7 +135,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "aed70d7c62495a2cdc749344c2de43bc1e15c2f3c32a1bc41c4d2ad8f821361f"
+      "sha256": "907e6116f6f33dc70af7e70e1fb0d756a6b72f3daa735c966d39bbd60dbfaa37"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -241,7 +241,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "c867d06d102d190fb4112e0c9eca3db59cb9f395af5e06035b6e124257ecf53e"
+      "sha256": "2343c3bfba72eb3b75d8c4f5ad63dd468433cc7190a492e7bf89a308fe94dd79"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -249,7 +249,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "8b53f81a7cd115aefa7104bbd12de2cd18ac81b77ac36c29fd6c37fe46fc90e0"
+      "sha256": "68c1a17eea4f0ff678246cadfd06569996ec76ae18d1c186244fb2e7bdcdbdbd"
     },
     {
       "path": "visual/index.en.html",
@@ -281,7 +281,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "b0108d88fecf41ea9459b16dd60fda1cd73d7864659fa74700e18142f45eaf5e"
+      "sha256": "25b27b885969abcbe34cd1901696d77b759d325c8d2ea4c0d4e5de01ec6bec67"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
