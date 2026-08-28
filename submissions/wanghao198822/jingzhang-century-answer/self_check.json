@@ -144,7 +144,7 @@
       "ai_package_stages": {
         "submissions/wanghao198822/jingzhang-century-answer": "formal"
       },
-      "total_bytes": 37926218,
+      "total_bytes": 37943942,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -278,7 +278,13 @@
         "filed_model_reported_count": 122.0,
         "green_space_feature_count": 4.0,
         "public_space_feature_count": 5.0,
-        "daoding_design_density_per_km": 12.5642
+        "daoding_design_density_per_km": 12.5642,
+        "simulation_task_count": 16.0,
+        "simulation_success_rate": 0.6875,
+        "tool_schema_pass_rate": 0.9375,
+        "audit_completeness": 0.9375,
+        "energy_budget_violations": 1.0,
+        "replan_p95_seconds": 12.4
       }
     },
     "stderr": ""

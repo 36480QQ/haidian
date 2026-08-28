@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "aa59eca561337f0b375a8623eb88cfb146eafb4ec4ecaa2edfd15d22c3c7f7ab"
+      "sha256": "a9d60c28fef83e899fa7cda77c4bee0b45d94636ebf47a32a60a06332caf0adb"
     },
     {
       "path": "agent.json",
@@ -38,43 +38,43 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "6fb6e42da2a05c9b5e0555c69f56668ef66bb868e191f2ae9496f7c741d9fc22"
+      "sha256": "398a0ba678d72f781b3f80311483a39182bebafa5065d54b2065da2c91fe1cc1"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "40d4524102d953e27ce1dcf88efa85c14e9bb7342655d3edd8faf412e186a0da"
+      "sha256": "1a60c3d4fae1926ac8c476ac916b628e8ef933fb9b1df9651ba1ddd76881dcf8"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "28a425b465f535e3246da52c53322de3e0665dee3b623323ab81dc06cd7b5dc0"
+      "sha256": "9f3e5d6785f675cd5d2e7f91d6d8328cfc59878ed86bc816c7bf8cde399faeb9"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2d7a9e9e3f4e1968f9dbbd670feb34c44188b3dc39ba3ad8890787c730d3259d"
+      "sha256": "2b74bf66fddec128654bc8b18c02abffe1d824ee32a5ef643027e538ead7d173"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3d7cb74169da195370658a22178f77a1ac18346715a2c0876edd6e9ad3073cfc"
+      "sha256": "a5a8736f26672de54628da0fe18529c45ebdc35e8a784476c7c0a34e08d059c2"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "300cb1d5ff83c42fabfbcc0616b837b1d783649f994f7dc9f2ccbef977382a8e"
+      "sha256": "f4cef09a8a0469d8a810ce28ba74024e3fee7dbe3597c0a009fa218127a7d221"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "6afa3a9e8cc1e9ae11ef06f8d3b4089f9fd71d5dbecc057fd8fc12820c91a6f6"
+      "sha256": "d555f1392878570f3610d44d045409f8050e1f9e8614859dfbf79c97e6ef6ceb"
     },
     {
       "path": "risk.json",
@@ -99,7 +99,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "7b3d46eb3602ec6a3d340cc76b2c58f2e97c3b1f287df9e889f31fa04f5588fe"
+      "sha256": "56afd98b016ecd1a461129ab3f5ea48967cdc94e48f40f9d6918c37b0b63ff69"
     },
     {
       "path": "report/narrative.md",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "6c43d31d6f61ce210ac439e391af82b6ebd1bd8ec2966cf7ddf0602cd8660618"
+      "sha256": "751a51203f5d8f6c51723e1513e7e4d8d32823fe98cb8700e30412825f18e2b2"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "7c2ad67326d3fb9d9d1da1724466744fc39d20ed96fef1d4589382a87f714265"
+      "sha256": "ec189ec838f4942eaccc821fc3fa67aaa308837ae78c2955c72ea7210515396d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -229,7 +229,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "b9e474fdf26591d07f5b10ff3f119d219b6a930c18b5ad5583399c2e9d61ff8d"
+      "sha256": "6786323852792a61db8bf47b5970a77e2dcf4c93b1f464dee79b85e1d0a23b24"
     },
     {
       "path": "report/proposal.en.html",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "9e2eca1bb00de86026dc0584d05f372fd29fe70ca7e9eb106335dbc15a4e081f"
+      "sha256": "1b1e15dfcb198acde51060d04177273137e6be99a50689c66774a8efdbcf074f"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "bdd9ca7d71e5c6d48e271ee56646d302c0c80d2dd5fc4cecbc5bbd1fbe2d5ecb"
+      "sha256": "0e8ced0d9303dbbc05b91231a27dd5f94fe13defb8a62ebf8837aed764644ae3"
     },
     {
       "path": "assets/figures/key-areas.en.png",
