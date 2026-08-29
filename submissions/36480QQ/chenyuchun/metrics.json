@@ -1,0 +1,149 @@
+{
+  "schema_version": "0.1.0",
+  "project_id": "centennial-jingzhang-ai-belt",
+  "coordinate_system": "EPSG:4548 (CGCS2000 / 3-degree GK CM 117E)",
+  "boundary_status": "provisional (SRC-PROVISIONAL-BOUNDARIES-2026); not official redline",
+  "metrics": {
+    "total_site_area": {
+      "status": "computed_provisional",
+      "value": 11412825.4,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(SITE-001) EPSG:4548",
+      "confidence": "low",
+      "assumptions": "provisional boundary; official polygon missing"
+    },
+    "key_area_zhongzhiyuan": {
+      "status": "computed_provisional",
+      "value": 1929201.9,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "area(PROV-KEY-001) EPSG:4548",
+      "confidence": "low",
+      "assumptions": "provisional boundary"
+    },
+    "key_area_ai_origin": {
+      "status": "computed_provisional",
+      "value": 1043236.9,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "area(PROV-KEY-002) EPSG:4548",
+      "confidence": "low",
+      "assumptions": "provisional boundary"
+    },
+    "key_area_dazhongsi": {
+      "status": "computed_provisional",
+      "value": 720454.2,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "formula": "area(PROV-KEY-003) EPSG:4548",
+      "confidence": "low",
+      "assumptions": "provisional boundary"
+    },
+    "green_space_ratio": {
+      "status": "computed_provisional",
+      "value": 0.3574,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_area/site_area",
+      "confidence": "low",
+      "assumptions": "provisional green layer"
+    },
+    "public_space_area": {
+      "status": "computed_provisional",
+      "value": 96379.2,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "formula": "sum(area public_space)",
+      "confidence": "low",
+      "assumptions": "provisional"
+    },
+    "land_use_composition": {
+      "status": "computed_provisional",
+      "value": {
+        "05": 411221.7,
+        "07": 2701473.2,
+        "08": 819413.3,
+        "0802": 2074715.3,
+        "14": 973065.2,
+        "1401": 3895891.2,
+        "16": 537062.4
+      },
+      "unit": "sqm",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "formula": "sum by land_use_code",
+      "confidence": "low",
+      "assumptions": "conceptual partition"
+    },
+    "building_footprint_count": {
+      "status": "computed_provisional",
+      "value": 40,
+      "unit": "count",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "formula": "count(BUILDING_FOOTPRINT)",
+      "confidence": "low",
+      "assumptions": "provisional"
+    },
+    "road_centerline_length": {
+      "status": "computed_provisional",
+      "value": 32150.2,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(length) EPSG:4548",
+      "confidence": "low",
+      "assumptions": "provisional"
+    },
+    "scenario_node_count": {
+      "status": "computed_provisional",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count scenario cards (agent.3)",
+      "confidence": "medium",
+      "assumptions": "narrative-derived"
+    },
+    "ai_landmark_count": {
+      "status": "computed_provisional",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count landmarks (agent.4)",
+      "confidence": "medium",
+      "assumptions": "narrative-derived"
+    },
+    "persona_count": {
+      "status": "computed_provisional",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count personas (agent.3)",
+      "confidence": "medium",
+      "assumptions": "narrative-derived"
+    }
+  }
+}
