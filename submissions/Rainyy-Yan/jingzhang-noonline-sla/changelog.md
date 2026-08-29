@@ -1,5 +1,11 @@
 # 方案迭代记录 / Iteration Changelog
 
+## v4.6 offline CJK report repair - 2026-08-29
+
+**Required readability repair.** The two required report HTML files again load the project-local OFL-licensed CJK font before their system fallbacks. The embedded WOFF2 has been regenerated from the four current bilingual HTML deliverables, so the report title, summary, body, figure captions, evidence labels and the English-page Chinese return link remain readable in a network-free environment without a system Chinese font.
+
+**Non-regression boundary.** This repair changes only the generated report font link, the local font subset and their source/hash registration. It does not change proposal claims, geometry, metrics, scenarios, Verified SLA, implementation commitments, permissions, funding, land rights or approvals.
+
 ## v4.5 prototype-experience and reversible-assembly pass - 2026-08-29
 
 **Human-scale spatial expression.** Three participant-authored concept perspectives now make the Zhongzhiyuan validation porch, AI Origin civic knowledge room and Dazhongsi arrival/accessible-alternative chain legible at eye level. They are paired with a bilingual reversible-prototype atlas: each card names only conceptual removable components, its existing DR-GATE checks, future authorised exercise, human acceptance observation and immediate removal/reroute/stop response.
