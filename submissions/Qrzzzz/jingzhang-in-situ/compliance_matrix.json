@@ -201,7 +201,8 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "DATA-SRC-R3E-JINGZHANG-CONTROL-PLAN-RESPONSE-20250208"
       ],
       "assumption_ids": [
         "A-GEOM-001",
@@ -404,7 +405,8 @@
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
         "CASE-HELSINKI-MARIA-AREA",
-        "CASE-AMSTERDAM-MARINETERREIN"
+        "CASE-AMSTERDAM-MARINETERREIN",
+        "DATA-SRC-R3E-PARCEL-ACCESS-LIMITATION-2015"
       ],
       "assumption_ids": [
         "A-CONTROLS-001",
@@ -444,7 +446,10 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518"
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-R3E-GB55019-2021-ACCESSIBILITY",
+        "DATA-SRC-R3E-GB55037-2022-FIRE",
+        "DATA-SRC-R3E-DB11-1761-2020-WALK-CYCLE"
       ],
       "assumption_ids": [
         "A-SURVEY-001",
@@ -485,7 +490,9 @@
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
-        "DATA-SRC-AGENT-TASKBOOK-20260518"
+        "DATA-SRC-AGENT-TASKBOOK-20260518",
+        "DATA-SRC-R3E-QINGHUAYUAN-HERITAGE-TEXT-20260214",
+        "DATA-SRC-R3E-JINGZHANG-PARK-PLANNING-INTERPRETATION-20211216"
       ],
       "assumption_ids": [
         "A-SURVEY-001",
@@ -566,7 +573,9 @@
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
         "DATA-SRC-AGENT-TASKBOOK-20260518",
-        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "DATA-SRC-R3E-GB55019-2021-ACCESSIBILITY",
+        "DATA-SRC-R3E-GB55037-2022-FIRE"
       ],
       "assumption_ids": [
         "A-GEOM-001",
@@ -691,7 +700,9 @@
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
         "DATA-SRC-AGENT-TASKBOOK-20260518",
-        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+        "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+        "DATA-SRC-R3E-DAZHONGSI-HERITAGE-REGISTER-20171027",
+        "DATA-SRC-R3E-PARCEL-ACCESS-LIMITATION-2015"
       ],
       "assumption_ids": [
         "A-GEOM-001",
@@ -1974,10 +1985,10 @@
     "compression_audit": {
       "comparison_unit": "proposal.md Git blob content",
       "encoding": "UTF-8",
-      "base_ref": "upstream/main",
+      "base_ref": "70cd369cbb80d6b5da743422a3d0aa2d3a98e333",
       "base_commit_sha1": "70cd369cbb80d6b5da743422a3d0aa2d3a98e333",
       "base_blob_sha1": "e03228ed0c29f56c569cd289408fd40cdfd98ebd",
-      "head_blob_sha1": "b162e6e044ca58496f4531503911e35a82a6b23f",
+      "head_blob_sha1": "830a390984bc0864c714929cfd992fd534f58fdb",
       "normalization": [
         "Remove the opening YAML front matter from the first --- line through the next standalone --- line.",
         "Remove every inline evidence marker matching \\[(source|standard|depth|data|metric):[^\\]]+\\].",
@@ -1989,20 +2000,33 @@
           "method_id": "han_all_body",
           "line_scope": "All normalized body lines, including headings, tables, and figure captions.",
           "base_count": 7502,
-          "head_count": 6731,
-          "substitution": "round((7502 - 6731) / 7502 * 100, 2)",
-          "reduction_pct": 10.28
+          "head_count": 6709,
+          "substitution": "round((7502 - 6709) / 7502 * 100, 2)",
+          "reduction_pct": 10.57
         },
         {
           "method_id": "han_prose_lines",
           "line_scope": "Normalized nonblank lines whose left-trimmed text does not begin with #, |, or !.",
           "base_count": 5791,
-          "head_count": 5104,
-          "substitution": "round((5791 - 5104) / 5791 * 100, 2)",
-          "reduction_pct": 11.86
+          "head_count": 5185,
+          "substitution": "round((5791 - 5185) / 5791 * 100, 2)",
+          "reduction_pct": 10.46
         }
       ],
-      "excluded_measure": "The former net_units/21.94% figure is not retained because its tokenization contract was not persisted."
+      "excluded_measure": "The former net_units/21.94% figure is not retained because its tokenization contract was not persisted.",
+      "head_ref": "local working tree after additive R3-E implementation-evidence closeout",
+      "head_sha256": "66115cdbf6bfcb667dcbcb369443326c865529eef9f95266b51b327c6dffc0dd",
+      "recompute_evidence": {
+        "baseline_content": "git show 70cd369cbb80d6b5da743422a3d0aa2d3a98e333:submissions/Qrzzzz/jingzhang-in-situ/proposal.md",
+        "candidate_content": "UTF-8 bytes of proposal.md in this local working tree",
+        "regex": {
+          "front_matter": "\\A---\\s*\\n.*?\\n---\\s*\\n",
+          "evidence_marker": "\\[(source|standard|depth|data|metric):[^\\]]+\\]",
+          "han": "[\\u3400-\\u4DBF\\u4E00-\\u9FFF]"
+        },
+        "rounding": "round half to two decimal places using Python round",
+        "target_range_pct": "approximately 10-20 after adding bounded R3-E implementation evidence; reduction is descriptive, not a score"
+      }
     },
     "coverage_summary": {
       "core_claims": "10/10",
@@ -2012,12 +2036,8 @@
       "implementation_mapping": "13/13_into_7_packages",
       "shared_lifecycle": "9 states with transition trigger/role/evidence/public-status/rollback/no-auto",
       "data_governance": "6 categories + 12 scenario profiles + 6 equivalent-service groups",
-      "red_team": "16 tests; 12 retained fail_stop/unknown_stop/fail_pause outcomes"
-    },
-    "internal_quality_position": {
-      "working_target": "approximately 90-92 after Phase 2",
-      "status": "internal workflow target only",
-      "not_a_claim": "Not an official score, jury assessment, external re-review, selection, approval, or publication result."
+      "red_team": "16 tests; 12 retained fail_stop/unknown_stop/fail_pause outcomes",
+      "implementation_readiness": "3 normalized CX quantities + unpriced cost/resource model + RACI gaps + 10 desktop checks + 6 synthetic exercises / 0 field tests"
     },
     "phase2_spatial_evidence": {
       "source_freeze": "visual/assets/phase2-source-freeze.json",
@@ -2108,10 +2128,54 @@
       "governance_boundary": "No compliance, consent, operator appointment, safety certification, accessibility audit, partnership, or funding is claimed.",
       "protected_phase2": "All geometry plus F01-F07 and F09-F10 remain byte-frozen to HEAD 554979e4bc66f21fbdf53e4cde85ed94afe4421c."
     },
-    "program_aspiration": {
-      "value": 96,
-      "status": "internal long-horizon ambition only",
-      "not_a_claim": "Not a Phase 2 score, jury score, external reassessment, ranking, selection, approval, or publication result."
+    "r3e_implementation_readiness": {
+      "status": "desktop_review_ready_not_implementation_ready",
+      "current_go_no_go": "NO_GO_ALL_OPENING_GATES_NOT_EVIDENCED",
+      "proposal_sections": [
+        "更新项目清单、实施政策与分期计划",
+        "Renewal Projects, Implementation Policy, and Phasing"
+      ],
+      "evidence_files": [
+        "visual/assets/r3e-implementation-evidence.json",
+        "visual/assets/r3e-implementation-qa.json",
+        "visual/assets/r3e-official-source-snapshots.json",
+        "visual/assets/r3e-implementation-sources.json"
+      ],
+      "presentation_carriers": [
+        "proposal.md",
+        "proposal.en.md",
+        "report/proposal.html",
+        "report/proposal.en.html",
+        "visual/index.html",
+        "visual/index.en.html",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf"
+      ],
+      "official_reference_ids": [
+        "DATA-SRC-R3E-JINGZHANG-CONTROL-PLAN-RESPONSE-20250208",
+        "DATA-SRC-R3E-PARCEL-ACCESS-LIMITATION-2015",
+        "DATA-SRC-R3E-QINGHUAYUAN-HERITAGE-TEXT-20260214",
+        "DATA-SRC-R3E-DAZHONGSI-HERITAGE-REGISTER-20171027",
+        "DATA-SRC-R3E-JINGZHANG-PARK-PLANNING-INTERPRETATION-20211216",
+        "DATA-SRC-R3E-GB55019-2021-ACCESSIBILITY",
+        "DATA-SRC-R3E-GB55037-2022-FIRE",
+        "DATA-SRC-R3E-DB11-1761-2020-WALK-CYCLE"
+      ],
+      "normalized_quantity_sqm_per_linear_m": {
+        "CX02": 14,
+        "CX05": 16,
+        "CX10": 18
+      },
+      "cost_status": "conceptual_parametric_model_total_unknown",
+      "controller_unknown_count": 12,
+      "operator_appointed": false,
+      "professional_checklist_rows": 10,
+      "professional_signatures_complete": 0,
+      "synthetic_tabletop_tests": 6,
+      "field_or_operational_tests": 0,
+      "limitation": "Supporting desktop evidence only; not survey, formal estimate, appointment, professional sign-off, approval, field drill, or operating performance."
     }
   }
 }

@@ -1,5 +1,46 @@
 # 方案迭代记录
 
+## v1.0-local-repair - 2026-08-28
+
+### R3-E implementation-evidence repair candidate
+
+- Appended eight hash-bound Beijing/central-government official source interfaces for control-plan response, parcel-access limits, two heritage registers, Jing-Zhang park planning interpretation, accessibility, fire, and walking/cycling review. Only metadata, short factual summaries and hashes are redistributed; no web/PDF body is packaged and none may generate official geometry, a professional opinion, operator authority or approval.
+- Added review-ready implementation records for CX02/CX05/CX10. Their frozen representative design bands yield only normalized design-target quantities of 14/16/18 m² per linear metre; lawful alignment, surveyed length, existing condition, operator, priced rates and totals remain unknown, with explicit acquisition and recalculation gates.
+- Added a deliberately unpriced parametric cost/resource model, an eight-row RACI/handover gap table, twelve still-unknown controller slots, a ten-row clause-to-action professional checklist with zero signatures, and a `NO_GO_ALL_OPENING_GATES_NOT_EVIDENCED` acceptance state.
+- Added six reproducible synthetic desktop protocol exercises covering absent opening gates, unavailable host, unreachable complaint, incomplete removal, zero archive reopening and zero personal fields. All are explicitly not field drills or operating performance, and six matching in-memory tamper fixtures must fail.
+- Linked “design action → evidence status → responsibility/cost → acceptance/stop” to the existing F08/F11 review route and added the same bounded evidence to bilingual Markdown, Report/Visual, and A0/A3 without adding canonical IDs or changing Phase 3 governance. F08/F11 PNG facts remain unchanged. This local candidate is prepared only for a new independent review after validation; it is not a score, implementation permission, professional sign-off, PDF/UA claim, approval or release.
+
+### Independent final-review repair candidate
+
+- Recompressed the Chinese proposal against frozen baseline blob `70cd369cbb80d6b5da743422a3d0aa2d3a98e333` while retaining all 13 sections, ten claims, 31 required-output anchors, agent.1–agent.6, the complete identifier systems, governance contracts, adverse/zero/unknown results, and substantively equivalent English content; the persisted audit now binds the actual working-tree blob and two reproducible count formulas.
+- Raised and reflowed the English A3 running header and added a browser-space plus PDF-space zero-intersection assertion for every English A3 figure page, without changing spatial, metric, source, or governance meaning.
+- Rebuilt bilingual F02 with measured code-label placement and an eight-row zero-overlap assertion; LU identifiers, geometry, areas, statuses, and source grades are unchanged.
+- Strengthened the first Chinese A0 board's 30-second route so location, one thesis, three differentiated interfaces, AI authority limits, human decision duties, and the sole `SC10 + IM06 only` first use are visible together. This is a local repair candidate prepared for a new independent blind review, not a score, approval, selection, or implementation claim.
+- Retained the one provisional site-boundary warning, three `KEY_AREA_PROVISIONAL` minors, `surveyed=0`, six unknown metrics, twelve unknown controllers, the incomplete legal/accessibility/safety/site/operator/formal-approval conditions, the proposal's “twelve” sentence beside the authoritative thirteen-item F11/red-team record, and the absence of any PDF/UA claim.
+
+### R3 site-grounded spatial expression and blind-review packet
+
+- Added four fixed, hash-bound OpenStreetMap/Overpass snapshots under ODbL 1.0 and a deterministic EPSG:4548 background builder. The new data is isolated as `background_only` / `open-data-derived`, carries visible attribution and prohibited-use terms, and never enters or upgrades required design GeoJSON, source grades, survey status, redlines, parcels, heritage controls, legal findings, or approval evidence.
+- Rebuilt bilingual F01–F04 so the Jing-Zhang rail / heritage-park trace, real roads, parks, cleared landmarks, CX candidates, coordinate grid, north arrow, and reproducible graphic scales are visible together. F03 compares Zhongzhiyuan, AI Origin, and Dazhongsi in exact 1000 m × 650 m EPSG:4548 viewports with 200 m scale bars and distinct existing morphology; it does not claim a fixed print ratio or survey precision.
+- Made the sole first-use chain explicit across F01–F04, both A0/A3 languages, and four HTML entries: Dazhongsi station arrival and the heritage/retail edge expose the candidate CX10 conflict, so only `SC10 + IM06` may be tested, with visible Human Takeover and no opening until every Gate is evidenced. No second first use, implementation evidence, controller, operator, or approval is introduced.
+- Added hard-failing audits for raw/query hashes, ODbL rights, background authority, nine frozen design-geometry hashes, the append-only 20th source record, 14 bilingual scale/north assertions, six common-scale assertions, 132 label bboxes with zero intersections, and the CX/first-use chain. Seven in-memory tamper fixtures plus generator-level scale and label-overlap fixtures must fail.
+- Clarified generator ownership for isolated rebuilds: Phase 2 regenerates F01–F05 but preserves any existing Phase 4-owned HTML shell, CSS, JavaScript, and deterministic font subset byte-for-byte, bootstrapping those five files only when no final presentation candidate exists.
+- Regenerated all four PDFs and four HTML entry points from the same deterministic chain, extended the English outline contracts to 30/30 A3 nodes for the visible R3-E implementation-status heading while retaining 22/22 A0 nodes and two raw WOFF2 timestamps, and refreshed Poppler, MuPDF, Chromium, cross-media, display-red-team, handoff, manifest, and contributor evidence. This local R3-E package is only prepared for a new independent review; it is not a score, PDF/UA declaration, official approval, selection, implementation permission, or release claim.
+
+### R2 PDF outline and font-generation accuracy
+
+- Normalized every generated PDF outline title by replacing newline or contiguous-whitespace runs with one ordinary space, preserving punctuation, destination order, and hierarchy. The English A3 contract now asserts all 30 nodes, including the R3-E implementation-status heading, and the English A0 contract all 22 nodes; it rejects eight known glued-title forms and proves normalization idempotency.
+- Added a hard-failing read-only `--negative-outline-glue` fixture, and persisted each pre/post normalization title so reviewers can distinguish the affected outline nodes without treating PDF text extraction as layout authority.
+- Corrected the embedded font builder and final CSS declaration to the actual final WOFF2 raw OpenType `head.created/head.modified` value `2082840000`. The builder and PDF audit now decode both WOFF2 data URIs from the final CSS, read the raw `head` table, pin fontTools 4.63.0/Brotli 1.2.0, and expose a wrong-expectation negative fixture.
+- Rebuilt all four PDFs from the same deterministic chain and reran PDF, second-renderer, browser, cross-media, display-red-team, R1 handoff, manifest, and contributor gates. This remains a local R2 repair prepared for an independent read-only review; it does not claim PDF/UA, official approval, release readiness, or completion of R3.
+
+### R1 stage lineage and rights-ledger repair
+
+- Preserved Phase 3 as the byte-exact snapshot at `d673846a83d03e6adafa48d5b068601a3d88330a` / submission tree `b675cd77318bb59eb62c179f70a27e57ee752949`: its generator check and protocol audit with and without `--require-generated` remain historical replay commands, all expected to exit 0 only at that snapshot.
+- Added an explicit Phase 3→Phase 4 handoff contract and machine audit. On the final candidate the Phase 3 semantic audit runs without `--require-generated` and exits 0; the historical-byte checks intentionally exit 1, while exactly two F02 assets are owned by the current Phase 2 repair contract, eleven presentation derivatives are owned by the Phase 4 contract, and four Phase 3 F08/F11 PNGs remain byte-identical.
+- Replaced nonexistent Phase 4 script paths in the copyright ledger with RFC 6901 pointers into `visual/assets/phase4-presentation-sources.json`, explicit `restore_as` names, and verified embedded UTF-8/LF source hashes. Added hard-failing undeclared-override and bad-rights-pointer fixtures and wired the positive handoff result into cross-media QA.
+- Kept geometry, metrics, source/evidence grades, proposal semantics, all SC/CX/IM/AP/claim/agent IDs, protocol/governance/red-team authority, the only `SC10+IM06` first use, F01–F04 visual content, and all PDF bytes outside R1's mutation scope.
+
 ## v0.9 - 2026-08-28
 
 ### Phase 4 final presentation system
