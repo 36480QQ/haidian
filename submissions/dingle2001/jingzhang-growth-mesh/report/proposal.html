@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>京张生长网｜从园到城再到网的AI人才与企业共生社区 - proposal report</title>
+<link rel="stylesheet" href="../visual/assets/fonts/offline-font.css">
 <style>
 :root {
   --ink: #172033;
@@ -16,7 +17,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: "JZG Noto Sans SC", "Noto Sans SC", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
@@ -372,7 +373,7 @@ code {
 <p>每项机制均指向文件、图件、责任主体、边界与验收状态；真实运行发生前，现场成效一律不填报。</p>
 <h3>可复跑的版面质检与权利审计</h3>
 <p>机器可读记录 <code>visual/assets/qa-proofing-record.json</code> 对中英文四份A0／A3的 <strong>124页</strong> 逐页检查文字是否超出页面边界，枚举全部嵌入字体，对照双语页数／页面类型／图件顺序，并检查四个HTML入口的远程主动依赖和图片替代文本，同时登记核心色板对比度。发布门槛是：越界文字为0、非OFL嵌入字体为0、缺失图片替代文本为0、远程主动依赖为0。该记录是投稿者可复跑的自检，不是无障碍认证、法律清权证明、工程签发或辅助技术用户测试。</p>
-<p>权利台账按原创文字与方法、官方公开来源、临时几何、代码生成图、AI概念视景、品牌与基础几何、字体和成品版式分类。PDF仅嵌入SIL Open Font License许可的Noto Sans SC字形子集，不随包分发独立字体；AI视景可以单独撤下，规划图、剖面、GeoJSON和项目合同仍能维持核心证据链。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="RIGHTS-NOTO-OFL" title="来源：RIGHTS-NOTO-OFL">来源</sup></p>
+<p>权利台账按原创文字与方法、官方公开来源、临时几何、代码生成图、AI概念视景、品牌与基础几何、字体和成品版式分类。PDF嵌入SIL Open Font License许可的Noto Sans SC字形子集，四个HTML入口共用封装于本地CSS data URL中的WOFF2字形子集及OFL JSON许可记录；Web子集仅保留四个HTML实际使用字符。AI视景可以单独撤下，规划图、剖面、GeoJSON和项目合同仍能维持核心证据链。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="RIGHTS-NOTO-OFL" title="来源：RIGHTS-NOTO-OFL">来源</sup></p>
 <h2>指标体系、面积复算与合规矩阵</h2>
 <p>几何指标由EPSG:4326图层投影至EPSG:4548复算。临时边界面积、绿地比例、公共空间比例和建筑基底面积只用于包内一致性，不用于官方面积评分。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="green_ratio" title="指标：green_ratio">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="public_space_ratio" title="指标：public_space_ratio">指标</sup></p>
 <p>NIS-Lite监测“有效团队、活跃项目、专业服务调用、场景订单、资本/首单连接”五类数量；EHS-Lite监测“本地项目生成率、跨主体协作率、测试到采购转化率、主体存活与成长、公共价值与风险事件”五类质量。仪表盘以季度为观察周期，以一年和三年为评价窗口；在缺少公开、清权基线数据时不生成海淀分数。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="nis_monitoring_dimension_count" title="指标：nis_monitoring_dimension_count">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="ehs_monitoring_dimension_count" title="指标：ehs_monitoring_dimension_count">指标</sup></p>
