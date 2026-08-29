@@ -14,6 +14,28 @@
       "limitations_zh": "公开 Issue 不是官方空间边界或站点定位依据；不用于移动临时几何、面积结论或正式规划控制。"
     },
     {
+      "id": "FONT-NOTO-SANS-SC",
+      "title": "Noto Sans SC（本包 HTML 用字子集）",
+      "publisher": "Google Noto Project, SIL Open Font License 1.1",
+      "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+      "accessed_date": "2026-08-29",
+      "source_type": "external_public_reference",
+      "usable_for_formal": "no",
+      "usage": "仅用于四个双语 HTML 载体的离线 CJK 字形回退；本包内 visual/assets/fonts-noto-subset.css 只嵌入当前载体实际使用的 Regular/Bold 子集。",
+      "limitations_zh": "字体是展示依赖而非规划事实来源；SIL OFL 1.1 允许子集化与嵌入，但不把本包字体声明为完整字体发行。"
+    },
+    {
+      "id": "FONT-NOTO-SANS-SC",
+      "title": "Noto Sans SC（本包 HTML 用字子集）",
+      "publisher": "Google Noto Project, SIL Open Font License 1.1",
+      "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+      "accessed_date": "2026-08-29",
+      "source_type": "external_public_reference",
+      "usable_for_formal": "no",
+      "usage": "仅用于四个双语 HTML 载体的离线 CJK 字形回退；本包内 visual/assets/fonts-noto-subset.css 只嵌入当前载体实际使用的 Regular/Bold 子集。",
+      "limitations_zh": "字体是展示依赖而非规划事实来源；SIL OFL 1.1 允许子集化与嵌入，但不把本包字体声明为完整字体发行。"
+    },
+    {
       "id": "SITE-PACKAGE",
       "title": "百年京张AI创新带场地资料包（design_brief / allowed_design_space / enums / ranges / schemas）",
       "publisher": "open-city-ai/haidian 维护者",
