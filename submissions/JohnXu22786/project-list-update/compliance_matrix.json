@@ -1009,7 +1009,7 @@
    "evidence_summary_zh": "以本包正文与「更新清单智环：更新项目清单专项（概念）」概念回应本条要求：范围与边界按任务书文本口径划分并标注 provisional，相关结论为概念建议、待官方数据发布后复算，详细证据见对应章节、geometry 层、metrics.json 与自检结果。"
   },
   {
-   "requirement_id": "agent.2",
+  "requirement_id": "agent.2",
    "title_zh": "AI全栈自主创新体系与世界级AI创新生态设计",
    "mandatory": true,
    "report_sections": [
@@ -1047,7 +1047,13 @@
     "DATA-SRC-AGENT-TASKBOOK-20260518",
     "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
     "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+    "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+    "CASE-AI-SG-100E",
+    "CASE-AI-SG-AIVERIFY",
+    "CASE-AI-SG-MOONSHOT",
+    "CASE-AI-HELSINKI-REGISTER",
+    "CASE-AI-CANADA-PAN",
+    "CASE-AI-MILA-ECOSYSTEM"
    ],
    "assumption_ids": [
     "A-BOUNDARY-001",
@@ -1063,7 +1069,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "以本包正文与「更新清单智环：更新项目清单专项（概念）」概念回应本条要求：范围与边界按任务书文本口径划分并标注 provisional，相关结论为概念建议、待官方数据发布后复算，详细证据见对应章节、geometry 层、metrics.json 与自检结果。"
+   "evidence_summary_zh": "agent.2 的六个 AI 生态案例以 CASE-AI-* 在正文与 sources.json 一一可核验，assets/figures/ecosystem-atlas*.png 展示八要素机制，proposal 的外部接口表把北纬社区、未来科学城、怀柔科学城、经开区、京津冀写为待确认合作接口；三节点测试/人工复核/停用条件见正文与 metrics.json，全部事实与合作状态保留引用边界和 unknown/to_verify。"
   },
   {
    "requirement_id": "agent.3",
@@ -1119,7 +1125,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "以本包正文与「更新清单智环：更新项目清单专项（概念）」概念回应本条要求：范围与边界按任务书文本口径划分并标注 provisional，相关结论为概念建议、待官方数据发布后复算，详细证据见对应章节、geometry 层、metrics.json 与自检结果。"
+   "evidence_summary_zh": "agent.3 以 proposal.md/en.md 的 10 张场景卡、3 个行业测试协议和 5 个画像（含老年人、轮椅/行动不便者与低数字熟练者）为内容证据；每项写明输入、规则/模型、人工复核、责任、指标、申诉、停用和 fallback，metrics-evidence*.png 将场景/测试/画像/阶段作为独立计数，不与比例共轴。"
   },
   {
    "requirement_id": "agent.4",
@@ -1176,7 +1182,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "以本包正文与「更新清单智环：更新项目清单专项（概念）」概念回应本条要求：范围与边界按任务书文本口径划分并标注 provisional，相关结论为概念建议、待官方数据发布后复算，详细证据见对应章节、geometry 层、metrics.json 与自检结果。"
+   "evidence_summary_zh": "agent.4 的三节点场地级成果不是仅靠任务卡宣称：key-areas*.png 与 A0/A3 图册逐节点给出概念平面、换乘/慢行路径、绿带缝合、公共空间、AI 测试节点、人工兜底、运营界面、代表性断面和用户旅程；key_areas.geojson 仅支撑 provisional 落位，未宣称工程或红线。"
   },
   {
    "requirement_id": "agent.5",
@@ -1233,7 +1239,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "以本包正文与「更新清单智环：更新项目清单专项（概念）」概念回应本条要求：范围与边界按任务书文本口径划分并标注 provisional，相关结论为概念建议、待官方数据发布后复算，详细证据见对应章节、geometry 层、metrics.json 与自检结果。"
+   "evidence_summary_zh": "agent.5 以 ring-plus-rail Logo 概念、轨道/百年京张叙事节点、公共空间与年度活动条目回应文化融合；logo-belt*.png 为自绘方向且未作商标清权，历史/产权/合作事实仅在 sources.json 可核验范围内陈述，其他内容保留 provisional/unknown。"
   },
   {
    "requirement_id": "agent.6",
@@ -1289,7 +1295,7 @@
     "VISUAL_PACKAGING",
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "以本包正文与「更新清单智环：更新项目清单专项（概念）」概念回应本条要求：范围与边界按任务书文本口径划分并标注 provisional，相关结论为概念建议、待官方数据发布后复算，详细证据见对应章节、geometry 层、metrics.json 与自检结果。"
+   "evidence_summary_zh": "agent.6 以 proposal 的年度运营、三阶段闸门、RACI/KPI/退出与维护回路为主体证据，a0/a3 图册和 visual/index*.html 提供可读交付入口；资金、所有权、审批、基线和合作承诺仍标为 unknown/to_verify，不能把概念运营建议当作已签约实施。"
   }
  ]
 }

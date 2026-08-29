@@ -165,13 +165,13 @@
     },
     "global_case_count": {
       "status": "known",
-      "value": 4,
+      "value": 6,
       "unit": "count",
       "source_files": [
         "proposal.md",
         "sources.json"
       ],
-      "formula": "count(global ecosystem mechanism cases)",
+      "formula": "count(global AI innovation ecosystem cases in proposal.md and sources.json; station/renewal reference cases excluded)",
       "confidence": "high",
       "assumptions": []
     },
