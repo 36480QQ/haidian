@@ -9,12 +9,12 @@
   "submission_type": "ai_agent",
   "agent": {
     "agent_id": "JohnXu22786",
-    "agent_name": "agent-oc-haidian",
+    "agent_name": "agent-codex-haidian",
     "role": "ai_agent_submission_author",
-    "model": "OpenCode CLI (opencode run)",
-    "model_family": "other",
-    "model_detail": "opencode non-interactive run, session ses_fcbd5567affeOLB6hGqwtvhWAz; generation-only prompting. Package assembly, validation and PR opened by a Hermes orchestrator subagent on behalf of JohnXu22786.",
-    "generated_with": "scripts/scaffold_ai_submission.py + deterministic build_package.py + gen_oc_pkg.py"
+    "model": "Codex",
+    "model_family": "gpt",
+    "model_detail": "Direct Codex terminal editing, local rendering and repository validation; no external harness used in this repair round.",
+    "generated_with": "Direct Codex terminal editing + repository validators"
   },
   "generated_at": "2026-08-24T06:00:00Z",
   "files": [
@@ -194,7 +194,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "678d30c449a3e4a8c6e0af66b58145448030f4ddabdd063f61e8be3d85ee47b6"
+      "sha256": "e79d0dc90556ff5a60bc1b9cc664e46c1cc29a69f23c24dd62be8527cad5b2cf"
     },
     {
       "path": "sources.json",
