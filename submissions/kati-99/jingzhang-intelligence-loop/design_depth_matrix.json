@@ -543,7 +543,11 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。 本深度项新增两类包容性证据：①**无障碍与包容性设计依据（国家标准）**——对接 GB 55019-2021（强制性工程建设规范，2022-04-01 实施，全部条文必须严格执行，与现行标准不一致时以本规范为准）、GB 50763-2012（2012-09-01 实施）、GB 50180-2018（第 4.0.4 条为强制性条文），三项标准均已登记于 sources.json（STD-GB55019-2021 / STD-GB50763-2012 / STD-GB50180-2018），条文数值不在本方案复述或自行设定；②**服务半径与覆盖度测算**——按 GB 50180-2018 生活圈分级，以现有图层实测直线 300 m / 500 m / 1000 m 覆盖分别为 2.5% / 6.1% / 18.1%，并明确标注该组数值因 public_space 图层仅登记 1 处节点而属下界值、**不代表设计意图**，且直线距离不等于步行距离，须在节点补录并取得路网后重算。",
+      "inclusion_evidence": [
+        "无障碍与包容性设计依据（国家标准）",
+        "服务半径与覆盖度测算（直线距离近似，待补录后重算）"
+      ]
     },
     {
       "item_id": "three_key_area_detailed_design",
@@ -651,7 +655,11 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。 本深度项新增两类实施证据：①**投资估算与资金渠道表**——JZ-01~06 的量级区间、主要构成、建议资金渠道方向、不确定度与重算触发条件，合计约 7,000 万元–2.07 亿元，明确标注为非预算/非报价/非承诺；②**实施前置条件矩阵**——将六项 JZ 的启动条件拆分为法定前置（须官方确认）、技术前置（须专业复核）、权属前置（须协议或确权）三类，并逐项标注当前状态与可先行部分。",
+      "implementation_evidence": [
+        "投资估算与资金渠道（量级区间，待核）",
+        "实施前置条件矩阵"
+      ]
     },
     {
       "item_id": "phasing_implementation",
@@ -705,7 +713,10 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。"
+      "evidence_summary_zh": "本深度项由 proposal.md 的可读解释、图纸成果、结构化图层、指标复算和自检结果共同支撑。 本深度项新增**分期验收标准与可核查交付物表**：为近期 0–12 月、中期 1–3 年、长期 3–10 年三个时段分别列出可核查交付物清单、验收口径（方法性建议）、建议责任方，以及未达成时的处置方式，使分期不以时间为唯一标尺。",
+      "implementation_evidence": [
+        "分期验收标准与可核查交付物"
+      ]
     },
     {
       "item_id": "metrics_recalculation",
@@ -814,10 +825,13 @@
         "LAND_USE_TOPOLOGY",
         "VISUAL_STATIC"
       ],
-      "evidence_summary_zh": "本项已登记 official boundary、key area、控规、道路、地块、建筑、市政、文保、公共服务等数据缺口（见 missing_data_checklist.csv 与 assumptions.json）；任何缺少官方条件的事项均降级为待确认。 证据仍以结构化文件 + 自检为准。 本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。",
-      "provisional_note": "本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。"
+      "evidence_summary_zh": "本项已登记 official boundary、key area、控规、道路、地块、建筑、市政、文保、公共服务等数据缺口（见 missing_data_checklist.csv 与 assumptions.json）；任何缺少官方条件的事项均降级为待确认。 证据仍以结构化文件 + 自检为准。 本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。 本深度项新增**实施风险登记表 R1–R10**：逐条登记风险、概率（高/中/低）、影响、应对措施与触发复评条件；并明确 R1（控规与红线长期未确认）、R5（市政管线复杂需分期）、R9（运营主体未落实）三者属组织方或责任主体主导事项，参与者无法自行消除，处置原则为显式化不确定性并给出替代路径，而非把待确认条件写成已确定承诺。",
+      "provisional_note": "本项为控规深度城市设计的形式完整性响应（formal complete）。其中容积率、高度、密度、退线、红线等具体数值因官方控规未发布为待校准参考值（pending_control / unknown），属方法演示而非审定结论；正式实施须以官方控规与审批为准。数据缺口已在风险清单与 metrics 的 provisional 标注中明示。",
+      "implementation_evidence": [
+        "实施风险登记表"
+      ]
     }
   ],
   "review_stage_note": "本包为基于 provisional boundary / 官方控规缺失前提下的 formal AI 城市设计方案包。全部 15 项深度项均为 complete（含结构化图层、指标复算、图纸、HTML 与自检）；其中部分项因官方控规/权属/工程条件缺失，已在各自 evidence_summary_zh / provisional_note 中标注 provisional（方法 + 待校准清单，不构成审定结论）。条目状态（complete）与汇总一致：complete 表示形式完整性已响应，provisional 仅表示具体数值待官方控规校准。完整三项范围、官方控规与权属条件发布后须重算。",
-  "generated_at": "2026-08-26T23:55:00Z"
+  "generated_at": "2026-08-29T11:55:18+08:00"
 }

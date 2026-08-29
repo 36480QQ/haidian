@@ -276,6 +276,36 @@ The project list and phasing depth are managed by [depth:renewal_project_list] a
 - **PUE <= 1.3**: Measurement scope = annual total station energy / IT-equipment energy; Baseline = industry reference value for comparable edge nodes (to be measured in this project); Measurement period = monthly; Suggested target = after one pilot station stabilizes.
 - **Availability >= 99%**: Measurement scope = available time / total time; Baseline = to be measured; Measurement period = monthly.
 
+#### Investment Estimate and Funding Channels (order-of-magnitude, to be verified)
+
+Investment for JZ-01 to JZ-06 is expressed as an order-of-magnitude range and is intended **only for feasibility ranking and phasing decisions**. **This table is not a budget, not a quotation, and not a funding commitment.** All figures must be recalculated at the formal scheme stage by a cost or engineering consultancy with the appropriate qualifications, on the basis of official regulatory plan, property-rights and municipal conditions, and updated whenever those conditions change.
+
+| Project | Investment range (RMB) | Main components | Indicative funding channel | Uncertainty | Recalculation trigger |
+| --- | --- | --- | --- | --- | --- |
+| JZ-01 | 3.0M – 8.0M | Wayfinding system, pilot under-bridge signage, gap survey | District urban-renewal fund + park O&M budget | Medium | After road redline confirmation and under-bridge property rights are clear |
+| JZ-02 | 5.0M – 12.0M | Riverside walkway signage, storm sensing pilot, ecological repair | Urban-renewal fund + water authority programme | Medium-high | After river blue line and flood assessment are complete |
+| JZ-03 | 20M – 60M | Ground-floor use guidance, demonstration street section, tenant attraction | Social capital (owner/operator) + district industry guidance fund | High | After campus boundary and property rights confirm and re-tenantability is assessed |
+| JZ-04 | 30M – 90M | Crossing siting study, construction, interim wayfinding | Transit-integration funding + municipal/district finance + transit entity | High | After the combined transit, road and utility scheme is fixed |
+| JZ-05 | 8.0M – 25.0M | Pilot station retrofit, compute and power distribution, energy monitoring | Attracted enterprise self-funding + energy performance contracting | Medium-high | After energy capacity, compute selection and operator are determined |
+| JZ-06 | 4.0M – 12.0M (annual operation) | Wayfinding, trial-run organisation, safety and rights clearance | Event revenue + cleared sponsorship + district culture/brand budget | Medium | After public-space permit, safety assessment and rights clearance |
+
+**Aggregate order of magnitude.** Near term (JZ-01/02/06) approximately **12M – 32M**; mid term (JZ-03/04/05) approximately **58M – 175M**; total approximately **70M – 207M**. The wide span exists because all three mid-term items require official regulatory plan and municipal conditions before they can converge, and those conditions are not yet available.
+
+**Note on funding channels.** The indicative channels above are **directions** corresponding to conventional practice in Chinese urban renewal, transit integration and new infrastructure. They do not represent any arrangement that has been secured, and they are not commitments. The specific channel, proportion and timing must be determined by the responsible entity through the statutory project-approval, approval and procurement processes.
+
+#### Implementation Precondition Matrix
+
+The six JZ projects are gated by three classes of preconditions. This matrix makes explicit what can start now and what must await official conditions, so that pending conditions are never presented as settled arrangements:
+
+| Project | Statutory precondition (official confirmation) | Technical precondition (professional review) | Property precondition (agreement or confirmation) | Current status |
+| --- | --- | --- | --- | --- |
+| JZ-01 | Road redline; lawfulness of under-bridge use | Traffic organisation review; structural safety assessment | Under-bridge ownership / management right | Statutory and property **unconfirmed**; wayfinding can proceed |
+| JZ-02 | River blue line; flood assessment; ecological control | Hydrology and flood review; sensor siting | Riverside land ownership | Statutory **unconfirmed**; signage and sensing pilot can proceed |
+| JZ-03 | Regulatory land use and intensity; legality of ground-floor use guidance | Structural and fire review | Campus boundary; ground-floor title | All three **unconfirmed**; guidance drafting can proceed |
+| JZ-04 | Road redline; transit protection zone; utility corridors | Crossing structural review; utility coordination | Land ownership in the four station quadrants | All three **unconfirmed**; siting study can proceed |
+| JZ-05 | Planning conditions for energy and compute facilities; data-security compliance | Power supply capacity; PUE calculation; safety assessment | Station site ownership and operating authorisation | All three **unconfirmed**; depends on attracting an operator |
+| JZ-06 | Public-space event permit; foreign-related activity approval | Safety assessment; crowd management | Venue use authorisation; copyright clearance | Permit and clearance **unconfirmed**; small-scale trial run can proceed |
+
 #### Implementation Phasing (Near-term / Mid-term / Long-term)
 
 Phasing is strictly distinguished from the 100-day open-call design cycle: the open-call cycle is the time requirement for submitting deliverables, while implementation phasing is the advancement path for urban renewal and project construction. This proposal assigns the six JZ projects to three time bands and labels the boundary between what can be initiated with lightweight measures and what must await preconditions:
@@ -286,6 +316,35 @@ Phasing is strictly distinguished from the 100-day open-call design cycle: the o
  JZ-06 trial run | No regulatory-plan adjustment required; mainly operation, wayfinding, and sensing | Suggested led by local sub-district + park management (pending confirmation); may start after the open call subject to conditions (not a commitment) |
 | Mid-term 1-3 years | Main renewal | JZ-03 ground-floor uses, JZ-04 crossing facility, JZ-05 edge-computing station | Requires official regulatory plan, road redline, municipal and energy conditions | In parallel with official regulatory-plan compilation and municipal overhaul |
 | Long-term 3-10 years | Governance framework | Annual activity system matured, attraction-conversion chain running, international dissemination mechanism | Requires annual evaluation and strategy iteration | Suggested led by Haidian District (pending confirmation), as the annual review and strategy-update mechanism |
+
+#### Phasing Acceptance Criteria and Verifiable Deliverables
+
+So that phasing is not measured by time alone, this table lists, for each time band, the **verifiable deliverables, the acceptance method and the indicative responsible party**. All methods are procedural suggestions; the binding acceptance documents are those determined by the responsible entity through the statutory process.
+
+| Time band | Verifiable deliverables | Acceptance method (procedural suggestion) | Indicative responsible party | If not achieved |
+| --- | --- | --- | --- | --- |
+| Near term 0-12 months | (i) slow-traffic gap survey report; (ii) wayfinding implementation drawings and completion records; (iii) pilot under-bridge signage; (iv) storm-sensing locations and data-interface specification; (v) activity-week trial-run record and safety review | Deliverables complete and signed off by the responsible party; sensor data routed into the existing compliance-audit channel; zero safety incidents in the trial run | Local subdistrict office + park management office (indicative, to be confirmed) | An unmet item rolls into the next band; main works do not start on the strength of incomplete items |
+| Mid term 1-3 years | (i) ground-floor use guidance and demonstration street completion acceptance; (ii) crossing siting study and works acceptance; (iii) compute station acceptance with first-cycle PUE and availability measurement | Statutory acceptance procedures completed; KPIs measured over one full cycle and compared with design targets | Haidian District + university technology-transfer office + transit and utility bodies (indicative, to be confirmed) | Triggers the exit mechanism (see the "Exit mechanism" column of the project table) or downgrades to a light version |
+| Long term 3-10 years | (i) annual activity system operating report; (ii) attraction-conversion chain statistics; (iii) annual review and strategy update document; (iv) public-feedback closed-loop ledger | Annual evaluation completed with the reasons for adjustments published; public-feedback response rate and pause mechanism traceable | Haidian District lead + annual review mechanism (indicative, to be confirmed) | Two consecutive years of shortfall triggers a strategy reassessment rather than continuing ineffective investment |
+
+#### Implementation Risk Register
+
+This register states conditions that are not yet in place as risks rather than as commitments to deliver. Probability and impact are subjective gradings (high/medium/low) used for ranking and contingency planning; they are not a quantified risk assessment.
+
+| # | Risk | Probability | Impact | Response | Reassessment trigger |
+| --- | --- | --- | --- | --- | --- |
+| R1 | Official regulatory plan and road redline remain unconfirmed for a long period | High | High | Proceed with lightweight pilots; main works wait for conditions | Official plan or redline issued for this area |
+| R2 | Under-bridge ownership or management right unclear | Medium | Medium | Reroute, or implement land-side wayfinding only | Ownership confirmed or managing body identified |
+| R3 | River blue line or flood assessment not satisfied | Medium | High | Downgrade to land-side display; drop riverside facilities | Flood assessment conclusion issued |
+| R4 | Campus boundary or ground-floor title dispute | Medium | Medium | Move to online service; defer physical works | Boundary and title confirmed |
+| R5 | Utility complexity forces phased delivery of the crossing works | High | Medium | Deliver in phases; complete interim wayfinding first | Combined utility scheme determined |
+| R6 | Energy capacity or compute cost exceeds expectations | Medium | Medium | Reduce pilot scale or change the technical route | Power supply scheme and measured energy use determined |
+| R7 | Event copyright or foreign-related content clearance fails | Medium | Medium | Reduce to an internal roadshow; stop external dissemination | Clearance conclusion issued |
+| R8 | Personal-information compliance review not passed | Medium | High | Suspend the affected scenario; resume after the assessment | Personal-information impact assessment completed |
+| R9 | Operating entity or responsibility allocation not settled | High | High | Defer until the responsible entity is identified | Responsible entity formally determined |
+| R10 | Funding channel not secured | Medium | High | Reduce scope or defer until funding is in place | Project approval and funding arrangement granted |
+
+**Note on the register.** R1, R5 and R9 are the principal sources of implementation uncertainty at present. All three are **matters led by the organiser or the responsible entity** and cannot be removed by the participant. The principle applied here is to make uncertainty explicit and provide alternative paths, rather than to present pending conditions as confirmed delivery commitments.
 
 #### Annual Activity System (Q1-Q4 cadence)
 
@@ -321,6 +380,48 @@ Following the scenario cards' requirements for "human takeover" and "special gro
 | Children (<=14) | Safe school commute, parent visibility, slow-traffic priority | School-zone speed limits, AI slow-traffic navigation child mode, parent-side view of aggregated arrival/departure status only (no individual trajectory) | No precise child trajectory collection; location access limited to aggregated statistics and arrival/departure status query; guardian explicit authorization + on-device desensitization + retention <= 30 days + deletion on expiry + revocable at any time; non-smart fallback required; individual-tracking capability that fails minimum-necessity or retention rules is disabled | Parent authorization; school + sub-district double-sign; features failing minimum-necessity and retention are not enabled |
 | Low-digital-skill population | Non-smart alternative channels, in-person consultation, paper wayfinding | Community service points with face-to-face consultation, paper maps, manual windows | No mandatory APP use for public services | Offline channels retained for all public services |
 | Night workers (22:00-06:00) | Safe night walking, low-disturbance lighting, emergency response | Tiered smart lighting, nighttime safety-perception sensors (Scenario 06), 24h emergency contact | Noise-disturbance boundary; no full-time high-frequency collection | Property + sub-district emergency response; noise-complaint closed loop |
+
+#### Accessibility and Inclusion Design Basis (National Standards)
+
+The inclusion measures in this proposal do not invent their own thresholds; they align with the classifications and indicators of current national standards. The numbers, publication and effective dates below have been checked against information published by the responsible national authority. **Design and acceptance must follow the versions in force**; if a standard is revised or replaced, the corresponding provisions of this proposal are updated accordingly.
+
+| Standard | Title | Published / Effective | Nature | Corresponding content in this proposal |
+| --- | --- | --- | --- | --- |
+| GB 55019-2021 | General Code for Accessibility of Buildings and Municipal Engineering Projects | Published 2021-09-08 / **effective 2022-04-01** | **Mandatory engineering construction code; all provisions must be strictly implemented.** Where provisions of existing standards conflict with this code, this code prevails | Accessible ramps, tactile paving, audible pedestrian signals, accessible toilets, accessible signage systems |
+| GB 50763-2012 | Code for Accessibility Design | Published 2012-03-30 / effective 2012-09-01 | National standard (current); where inconsistent with GB 55019-2021, the latter prevails | Kerb ramps, tactile paving, wheelchair ramps, accessible routes, accessibility requirements for urban green space and squares |
+| GB 50180-2018 | Standard for Urban Residential Area Planning and Design | Published 2018 | National standard; clause 4.0.4 is mandatory (residential areas at every living-circle level shall be provided with public green space) | Living-circle classification; service radius for public service facilities and public green space (see the next subsection) |
+
+**Note on the basis.** The **numeric provisions of these standards (gradients, widths, handrail heights, tactile paving dimensions, and so on) are neither restated nor independently set in this proposal.** At formal design stages they must be implemented item by item by a design institute with the appropriate qualifications, in accordance with the standards in force. This proposal registers the standards as its design basis only, so that a concept design is never allowed to substitute for statutory technical requirements.
+
+#### Service Radius and Coverage Measurement (straight-line approximation, to be recalculated)
+
+Using the living-circle classification of GB 50180-2018, coverage is measured by **walking service radius** from public space and public service nodes:
+
+| Living-circle level | Standard walking distance | Coverage definition | Measured on the current layers (straight-line) | Data status |
+| --- | --- | --- | --- | --- |
+| Five-minute living circle | 300 m | Share of the site within 300 m of the nearest public-space node | **2.5%** | Lower bound; does not represent design intent |
+| Ten-minute living circle | 500 m | As above, threshold 500 m | **6.1%** | Lower bound; does not represent design intent |
+| Fifteen-minute living circle | 800-1,000 m | As above, threshold 1,000 m | **18.1%** | Lower bound; does not represent design intent |
+
+**Method and three important limitations (to be read together with the figures).**
+
+1. **The layer is under-registered.** `geometry/public_space.geojson` currently registers only **one** "public interface" node, while the public-space system described in the narrative and the scenario cards (scenarios 01-10, the blue-green slow-traffic composite loop, the JingZhang Heritage Park slow-traffic belt, and others) contains considerably more. The figures above therefore measure **the current state of the layer, not the intent of the design**, and must not be used to judge the coverage performance of this proposal.
+2. **Straight-line distance is not walking distance.** The measurement uses planar straight-line distance after latitude/longitude projection (converted at the latitude of the site centre) and does not account for network detours, barriers formed by the river or the railway, or the location of crossing facilities. Real walking coverage is typically **lower** than the straight-line figure.
+3. **The site is of a different nature.** The overall design scope is approximately 11.35 km2 and is an industry and innovation belt rather than a single residential area. The living-circle classification and its relationship to residential population are used here **only as a methodological reference for service radius**, not as a determination of residential scale.
+
+**Recalculation trigger.** Once public-space and public-service nodes are fully registered in the GeoJSON layers in line with the design, and once network data is available, the three coverage levels must be recalculated. Until that registration is complete, this table must not be cited as a basis for evaluating the performance of the proposal.
+
+#### Group Needs, Spatial Carriers, Service Provision and Verifiable Indicators
+
+To support acceptance and review, the needs of the five groups are mapped onto **specific spatial carriers, service provision and verifiable indicators**. All current values are `provisional_estimated` or `unknown_baseline`; **no measured baseline exists yet**, and the indicators must be calibrated against measurements taken during pilots or operation using the definitions below. The definitions themselves are methodological suggestions; the binding acceptance requirements are those determined by the responsible entity through the statutory process.
+
+| Group | Core need | Spatial carrier | Service provision | Verifiable indicator (definition / baseline) |
+| --- | --- | --- | --- | --- |
+| Older people (60+) | Low-intensity continuous walking; nearby rest and assistance | Gentle-gradient sections of the JingZhang slow-traffic belt; rest points along the route; embedded community service points | Gentle-gradient priority navigation; seating; one-call assistance to property management | Share of gentle-gradient sections in the slow-traffic belt (baseline to be surveyed); spacing between rest points (suggested 500 m or less, to be verified); call response time (baseline to be measured) |
+| People with disabilities (visual / hearing / mobility) | Continuous accessible passage; multi-sensory cues | Accessible ramps; tactile paving; audible crossing signals; accessible toilets | Accessibility-priority routing; vibration and voice cues; bookable on-site assistance | Number of barrier-free crossings / total crossings (baseline: survey of existing connectivity gaps, to be completed); tactile paving continuity rate (to be surveyed); pass rate in verification by representatives of people with disabilities (no baseline; to be established after pilots) |
+| Children (14 and under) | Safe school travel; aggregated visibility to parents | Speed-restricted zones around schools; school-travel priority routes | AI slow-traffic navigation child mode; aggregated arrival/departure status for parents | Coverage of speed restriction on school-travel routes (to be surveyed); availability of the aggregated status query (to be measured); time to honour a consent withdrawal request (to be measured) |
+| People with low digital skills | Access to public services without smart devices | Community service points; paper wayfinding boards; staffed counters | Face-to-face advice; paper maps; staffed counters | Number of public services covered by an offline channel / total (baseline to be surveyed); density of paper wayfinding points (to be surveyed) |
+| Night workers (22:00-06:00) | Safe night travel; low-disturbance lighting; emergency response | Graded night-lighting sections; 24-hour service points | Graded smart lighting; night-safety sensing (Scenario 06); 24-hour emergency contact | Share of sections meeting night-lighting requirements (to be surveyed); emergency response time (to be measured); closure rate of noise complaints (baseline to be established) |
 
 ### AI Slow-Traffic Navigation Accessibility Three-Piece Set
 
