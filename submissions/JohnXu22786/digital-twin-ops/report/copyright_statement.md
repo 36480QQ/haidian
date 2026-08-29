@@ -14,7 +14,7 @@ All submitted text, geometry, diagrams, PDFs, and static HTML assets are generat
 
 ## Brand prior-rights and usage boundary
 
-No official trademark search has been completed at the concept stage. Until clearance, names and marks (including DIGI·JZ and its Chinese gloss) are treated as internal working codenames: not used externally, not registered, and not commercially licensed. Any resemblance to existing marks is coincidental and will be clarified by later search and professional legal opinion.
+The package records the 2026-08-29 search in `sources.json` as `BRAND-SEARCH-3883-20260829`: CNIPA China Trademark online query (mainland China) and USPTO Trademark Search (United States), Nice classes 9, 35, 38, 41 and 42, with exact and near-match queries for the retired terms and the replacement label. The public portals and search attempts did not produce a legally reliable clearance conclusion; no attorney opinion or certified search report is held. The former proposed name and graphic mark are therefore retired. “JZ Operations Concept / 京张运营概念” is a neutral descriptive text-only label for this submission, with no trademark claim, logo claim, registration, commercial use or external endorsement. Professional clearance is required before any external use.
 
 ## Limitation
 
