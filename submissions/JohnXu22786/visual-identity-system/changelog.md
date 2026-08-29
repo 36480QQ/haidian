@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v0.6.0 - 2026-08-29
+
+- Closed the three actionable blockers in CocoSgt review 5056533488 (78/100 CHANGES_REQUESTED): added a prominent formal-task crosswalk that preserves official agent.1-agent.6 titles and maps the A-F specialism chapters to required outputs, figures, and metrics; renamed the ambiguous body subheads and synchronized the crosswalk in both proposals, compliance matrix, visual index, and PDF evidence pages.
+- Added the directly verifiable AP01-AP04 annual-activity table in both proposals. Each row now records brand, frequency, target users, spatial node, proposed RACI, prerequisites, bilingual touchpoints, privacy/accessibility boundary, KPI, stage gate, and cancellation/exit. `metrics.json` now stores `annual_programs` as the canonical four-row source and `annual_program_count` counts it; design/compliance matrices and derived HTML/PDF/index outputs point to the same IDs.
+- Rebuilt the four offline HTML surfaces and four A0/A3 PDFs with the official Google Fonts Noto Sans SC v2.004 artifact (URL, exact file SHA-256, upstream commit, complete Appendix-A OFL text and hash, fontTools 4.63.0 subset method, WOFF hashes, CSS alias and Reserved Font Name handling are recorded in `sources.json`). Arial is removed as a required fallback; no system font file is embedded or redistributed. The local participant-authored build helper is recorded as build-only and is not submitted.
+- Ran bounded HTML structure/font assertions and PDF metadata/text/render checks after regeneration. No official CocoSgt acceptance is claimed; official geometry, site authorization, field tests, and trademark clearance remain future `unknown/to_verify` conditions.
+
 ## v0.5.0 - 2026-08-29
 
 - Closed CocoSgt review 5056268082 (79/100 CHANGES_REQUESTED) rights-evidence items: recorded the exact local Noto Sans SC metadata and SHA-256, official Google Fonts source and OFL-1.1 source URL, complete OFL-1.1 text in `report/copyright_statement.md` Appendix A, WOFF1 subset method and per-surface subset hashes, and separated participant output, repository renderer, static HTML/CSS, and third-party font provenance in `sources.json`.

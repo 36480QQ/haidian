@@ -9,7 +9,7 @@ All submitted text, geometry, diagrams, PDFs, and static HTML are participant-pr
 - Public announcement, taskbook, standards, and laws are cited by source ID and used only for the stated design-basis or compliance-reference purpose.
 - The six case entries are reference-only. Their official URLs, publisher, access date, publication-date status, attribution, permitted uses, and prohibited uses are recorded per item in sources.json. No case logo, screenshot, page image, or page-specific design asset is copied.
 - Geometry, metrics, diagrams, colour drafts, icon rules, layouts, HTML, and PDFs are original package outputs. Geometry is provisional and is not an official boundary or planning control.
-- Fonts are rendering inputs, not a blanket rights claim. The evidenced Noto Sans SC input is family Noto Sans SC / Regular, Version 2.04;241114210130;non-release, local SHA-256 `628654215a32e94c84f830237918dab66d74e73d303349e16aa921f3f29809d9`, sourced from the Google Fonts Noto Sans SC directory and licensed under OFL-1.1. The complete license text is retained in Appendix A of this file; its official source URL and the WOFF1 subset/data-URI method are recorded in `sources.json`. OFL-1.1 permits embedding with software subject to its conditions; the source TTF is not redistributed, and the embedded family is `Noto Sans SC Subset` rather than a reserved-name claim. The exact upstream release artifact identity and system Arial fallback terms remain `unknown/to_verify`. Renderer, HTML/CSS, visual-index, PNG and PDF provenance is itemised in `sources.json`: participant-authored content/output is separated from repository-local renderer code and the single third-party font input; renderer external-reuse terms remain `unknown/to_verify`, so this package claims only repository review use.
+- Fonts are rendering inputs, not a blanket rights claim. The actual Noto Sans SC build input is the official Google Fonts artifact `https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf`, release version 2.004, exact file SHA-256 `a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da`, licensed under OFL-1.1. The complete license text is retained in Appendix A of this file. The Appendix-A text hash is `89f948d3dec24e22e7d854931f05bcc523e830c31633f1d91961e52068cc642c`; the upstream raw `OFL.txt` hash is `1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9`. The official source URL, WOFF1 subset/data-URI method, and fontTools version are recorded in `sources.json`. The source TTF is a local build input and is not redistributed; the CSS family is `Noto Sans SC Subset`, and Reserved Font Name `Source` is not used as the modified family name. No Arial file or system font is embedded or required. The HTML/PDF build is participant-authored local build work used only to produce this submission; no external renderer/tool redistribution or endorsement is claimed.
 
 ## Rights and review limits
 
@@ -20,8 +20,8 @@ No remote asset is required by visual/index.html or report/proposal.html; all im
 ## Evidence paths
 
 - Font metadata and input hash: `sources.json` → `PACKAGE-ASSETS-20260829.font_evidence.cjk`.
-- Complete OFL text: `assets/OFL-1.1-NotoSansSC.txt`.
-- Renderer source: `valroot/scripts/render_proposal_html.py` (repository-local code; external reuse terms `unknown/to_verify`).
+- Complete OFL text: this file, `Appendix A — SIL Open Font License 1.1 for Noto Sans SC`; its exact appendix hash is in `sources.json`.
+- HTML/PDF build record: `sources.json` → `asset_rights_register` (participant-authored local build helper; no source or third-party runtime is redistributed).
 - Static visual/report output and local-only resource policy: `report/proposal.html`, `report/proposal.en.html`, `visual/index.html`, `visual/index.en.html`.
 
 ## Appendix A — SIL Open Font License 1.1 for Noto Sans SC

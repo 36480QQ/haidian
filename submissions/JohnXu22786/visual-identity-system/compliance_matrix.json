@@ -604,7 +604,7 @@
    "self_check_ids": [
     "BOUNDARY_TRUST"
    ],
-   "evidence_summary_zh": "agent.1 以'视觉识别智环 VIS·JZ'原创命名 + 三大定位（百年京张文化带/都市 AI 生活体验带/AI 融合创新带）+ 五大功能 + 三层范围（统筹研究 43.6/总体设计 11.4/重点区域 368.4）+ 内部三区两翼 vs 外部协同网络回应；主名称与英文名按内部工作代号处理。"
+   "evidence_summary_zh": "正式 agent.1 的总体概念与功能统筹由正文交叉表锁定，A 章提供 VIS·JZ 命名/Logo方向、三大定位、五大功能、三区两翼与外部协同区分、三层范围和总体结构；图件为 site-overview.png/logo-vis-jz.png，指标为定位/功能映射。"
   },
   {
    "requirement_id": "agent.2",
@@ -638,7 +638,7 @@
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "agent.2 以众智园 AI 自主创新加速区承载 AI 全栈自主体系 + AI 原点社区承载世界级 AI 创新生态 + 6 个全球案例 + 12 张场景卡 + 5 项行业测试协议回应；土地/空间/产业/资金/人才/算力/数据/场景八要素由可逆组件库 + 视觉识别联盟 + 开发者社区机制提供机制链。"
+   "evidence_summary_zh": "正式 agent.2 的生态交付由正文交叉表锁定，B 章以众智园/AI原点社区/中关村科技服务翼承载全栈、生态和服务接口，提供 6 个公开案例、生态图谱、八要素输入—接口—责任—指标—人工门；图件为 ecosystem-map.png，指标为 global_case_count=6。"
   },
   {
    "requirement_id": "agent.3",
@@ -673,7 +673,7 @@
    "self_check_ids": [
     "PROFESSIONAL_EVIDENCE"
    ],
-   "evidence_summary_zh": "agent.3 以 12 张场景卡（11 字段：用户/数据/空间/模型/运营方/人工兜底/隐私控制/失败模式/阶段门/成效指标/停止条件）+ 5 项行业测试协议（准入/退出/验证方法/样本/基线/阈值/RACI）+ 5 类用户画像 + 小月河场景赋能翼承载 + 公共体验路径回应；AI 治理三句式守住边界。"
+   "evidence_summary_zh": "正式 agent.3 的场景交付由正文交叉表锁定，C 章提供 12 张 S01–S12 场景卡、5 项 T1–T5 行业测试、5 类工作角色、场景—空间—运营映射及人工/隐私/停止边界；图件为 key-areas.png 与生态/指标图，指标为 scenario_card_count=12、industry_test_scenario_count=5。"
   },
   {
    "requirement_id": "agent.4",
@@ -709,7 +709,7 @@
    "self_check_ids": [
     "KEY_AREAS_TRUST"
    ],
-   "evidence_summary_zh": "agent.4 以京张遗址公园 AI 公共空间（蓝绿公共空间体系）+ 东西缝合（沿中关村大街/高校走廊）与南北贯通（沿小月河/京张绿带）+ 大钟寺智能原生消费商务场景（视觉识别系统提供导视语汇）+ ≥3 个 AI 朝圣地标（主视台/导视廊/叙视厅）+ 荣誉展示系统 + 可逆公共空间组件库回应；不预设业态清单。"
+   "evidence_summary_zh": "正式 agent.4 的公共空间/地标交付由正文交叉表锁定，D 章提供京张遗址公园 AI 公共空间、东西缝合/南北贯通概念策略、大钟寺智能原生消费商务场景、L1–L3 三个 AI 地标、荣誉展示与 VIS-C01–C06 组件库；图件为 key-areas.png，指标为 landmark_count=3、scenario_node_count=8。"
   },
   {
    "requirement_id": "agent.5",
@@ -730,7 +730,9 @@
     "drawings/a0-boards.pdf"
    ],
    "visual_sections": [
-    "总览地图"
+    "总览地图",
+    "正式任务—专项交叉表",
+    "年度活动体系"
    ],
    "source_ids": [
     "DATA-SRC-AGENT-TASKBOOK-20260518"
@@ -773,7 +775,7 @@
    "self_check_ids": [
     "VISUAL_STATIC"
    ],
-   "evidence_summary_zh": "agent.6 以 4 类年度活动品牌（开放日/体验周/季度通报/叙视厅文化节）+ 3 阶段分期（1-3/3-5/5-10 年）+ 决策门控机制 + 6 类参与主体（主管部门/运营机构/高校/企业/社区/志愿者）+ 视觉识别联盟（探索）+ 开发者社区机制（开源组件/导视数据接口/年度积分激励）+ 人才/企业转化机制回应；不预设招商、资金或产值承诺。"
+   "evidence_summary_zh": "正式 agent.6 的年度活动与长期运营交付由正文交叉表锁定，F 章以 metrics.json 的 annual_programs 为单一活动源，逐项展开 AP01–AP04 的品牌、频次、人群、节点、RACI、资源前提、双语触点、隐私/无障碍、KPI、阶段门和取消/退出；保留 3 阶段（1-3/3-5/5-10 年）、开发者社区、场景开放和转化路径，不预设招商、资金或产值承诺。"
   }
  ]
 }

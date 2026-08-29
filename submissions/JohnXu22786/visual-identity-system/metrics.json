@@ -216,11 +216,75 @@
       "value": 4,
       "unit": "count",
       "source_files": [
+        "metrics.json",
         "proposal.md"
+        ,"proposal.en.md"
       ],
-      "formula": "count(annual programme rows in proposal.md)",
+      "formula": "count(annual_programs)",
       "confidence": "high",
       "assumptions": []
     }
-  }
+  },
+  "annual_programs": [
+    {
+      "activity_id": "AP01",
+      "brand_zh": "VIS·JZ 开放系统日",
+      "brand_en": "VIS·JZ Open Systems Day",
+      "frequency": "once_per_year_date_pending",
+      "target_users": "residents; youth; developers; visitors",
+      "spatial_node": "L1 Visual Hub / AI Origin Community; exact venue pending",
+      "raci_owner": "R community operations; A annual-operations owner; C accessibility/legal; I public",
+      "resource_prerequisites": "written venue permission; paper cards; staffed service; bilingual editing; budget and host unknown/to_verify",
+      "bilingual_touchpoints": "L1 bilingual wayfinding; offline paper card; web index; public review-back",
+      "privacy_accessibility_boundary": "no identity or trajectory collection; paper/staffed entry; wheelchair, child and older-user check",
+      "kpi": ">=90% wayfinding task completion; one public review-back",
+      "stage_gate": "G1 rights, notice, accessibility and T1/T4 plan complete",
+      "cancellation_exit": "missing permission, staff fallback or access condition; withdraw AP01 and retain reason"
+    },
+    {
+      "activity_id": "AP02",
+      "brand_zh": "水线慢行体验周",
+      "brand_en": "Waterline Mobility Week",
+      "frequency": "once_per_year_season_pending",
+      "target_users": "older people; accessibility users; families; night walkers",
+      "spatial_node": "L2 Signage Gallery to Xiaoyuehe Wing; exact route pending",
+      "raci_owner": "R scenario owner; A accessibility lead; C community/safety; I public review",
+      "resource_prerequisites": "human site walk; light/obstacle baseline; paper alternative route; data and venue unknown/to_verify",
+      "bilingual_touchpoints": "Waterline bilingual node signs; large-print/audio card; web route note",
+      "privacy_accessibility_boundary": "anonymous aggregates of error types only; human route check; no camera or location tracking",
+      "kpi": "T1 completion >=90%; T2 contrast target; zero glare complaints in 10 readings",
+      "stage_gate": "G2 site permission and professional fire/traffic/accessibility review plus T1/T2",
+      "cancellation_exit": "route mismatch, glare, safety or obstacle risk unresolved; withdraw components and return to staff service"
+    },
+    {
+      "activity_id": "AP03",
+      "brand_zh": "三节点季度复盘",
+      "brand_en": "Three-Node Quarterly Review",
+      "frequency": "four_times_per_year_quarter_end",
+      "target_users": "operators; design/planning professionals; community representatives; developers",
+      "spatial_node": "L1/L2/L3 narrative review; online/offline venue pending",
+      "raci_owner": "R data steward; A operations/compliance owner; C visual/culture/ethics; I public",
+      "resource_prerequisites": "anonymous logs; version wall; public sources; human chair; interfaces and staffing unknown/to_verify",
+      "bilingual_touchpoints": "bilingual changelog; Narrative Hall review page; public summary",
+      "privacy_accessibility_boundary": "anonymous aggregates and source levels only; captions, large print and paper; no personal case display",
+      "kpi": "100% versions have source/gate/exit records; >=95% items backlinkable",
+      "stage_gate": "G1 source, retention/deletion date, human review and T4 scan pass",
+      "cancellation_exit": "source failure, sensitive inference or unexplained output; delete related item and pause release"
+    },
+    {
+      "activity_id": "AP04",
+      "brand_zh": "铁路—AI 叙视节",
+      "brand_en": "Rail-to-AI Narrative Festival",
+      "frequency": "once_per_year_theme_pending",
+      "target_users": "students; cultural participants; international visitors; residents",
+      "spatial_node": "L3 Narrative Hall; Dazhongsi/Xiaoyuehe carrier pending",
+      "raci_owner": "R culture editor; A communications owner; C history review/community/legal; I developers",
+      "resource_prerequisites": "verified history entries; authorized narrative; bilingual layout; human guide; tenure and partners unknown/to_verify",
+      "bilingual_touchpoints": "timeline cards; bilingual landmark notes; downloadable transcript; staffed interpretation",
+      "privacy_accessibility_boundary": "no unlicensed portrait, mark or paper image; captions, large print and quiet hours; no face/voice biometrics",
+      "kpi": "100% historical entries backlinkable; T3 icon comprehension >=80%",
+      "stage_gate": "G3 history/rights/accessibility review; T3/T4 pass; withdrawal drill complete",
+      "cancellation_exit": "insufficient history evidence or permission, misleading risk or public rejection; remove item and return to research"
+    }
+  ]
 }

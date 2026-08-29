@@ -20,6 +20,21 @@ The working basis has four classes: the taskbook and public announcement; public
 
 Regulatory-plan depth, land-use classification, generative-AI service, and accessibility provenance remain itemised in sources.json and are used only for the stated design boundary and validation action. [source:DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING] [source:DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311] [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES]
 
+### Formal task ID — specialism chapter — required outputs — figure/metric crosswalk
+
+The table preserves the taskbook's formal IDs and titles. The specialism chapters are this package's visual-identity entry points; they do not rename or replace the formal tasks. The four potentially ambiguous IDs are locked to a formal title, a chapter, and verifiable evidence.
+
+| Formal task ID (taskbook title) | Specialism chapter | Required outputs | Figure/metric evidence |
+|---|---|---|---|
+| agent.1 Overall concept and functional coordination design | A Overall concept and VIS·JZ identity translation | Overall narrative, naming/logo direction, Three Areas Two Wings loop, structure, matrix entry | `site-overview.en.png`, `logo-vis-jz.en.png`; three positions/five functions |
+| agent.2 Full-stack AI self-innovation and world-class AI ecosystem design | B AI ecosystem and eight-element interfaces | Six public cases, ecosystem map, industry-space mapping, sources and metrics | `ecosystem-map.en.png`; `global_case_count=6`; eight-element matrix |
+| agent.3 AI+ scenario empowerment and intelligent AI vitality-city design | C Scenario cards and industry tests | At least 10 cards, at least 3 test scenarios, five roles, scenario-space-operation matrix, human/privacy boundary | S01-S12; T1-T5; `scenario_card_count=12`, `industry_test_scenario_count=5` |
+| agent.4 AI public space, intelligent-native new formats and pilgrimage landmarks | D Public space, landmarks and components | Jing-Zhang heritage-park public space, east-west/north-south strategy, Dazhongsi scenes, at least 3 landmarks, honour and component system | `key-areas.en.png`; L1-L3, 3 landmarks, VIS-C01-C06 |
+| agent.5 Centennial Jing-Zhang, Zhongguancun and AI-new-culture narrative integration | E Cultural narrative and communication | Jing-Zhang/Zhongguancun/AI narrative, signage symbols, international copy | `logo-vis-jz.en.png`; bilingual terms and Narrative Hall |
+| agent.6 Global AI innovation activities and long-term operation | F Annual activities and long-term operation | Annual activities, brand/communication, developer community, open scenarios, conversion path | `annual_program_count=4`; AP01-AP04 table, phases A-C/G1-G3 |
+
+This is the only explanation of agent IDs in the body. A-F are specialism chapter codes, not alternative formal task titles.
+
 ### Taskbook translation
 
 The three positioning statements are the Centennial Jing-Zhang Cultural Belt, the Urban AI Life-Experience Belt, and the AI Integration Innovation Belt. The five functions are a full-stack AI self-innovation system, a world-class AI innovation ecosystem, an AI+ scenario-empowerment paradigm, an intelligent AI vitality city, and global discourse power in AI governance. This specialism translates those statements into identity, public wayfinding, scenario interfaces, and public evaluation; it does not claim that an industrial, planning, or governance outcome has already been achieved. The machine-readable coverage is recorded in standard_matrix.json and compliance_matrix.json.
@@ -70,11 +85,11 @@ The table describes only the five internal work units. Names and spatial carrier
 
 The external network is a coordination and communication boundary, not a replacement for the five internal units: Beiwei Community, Future Science City, Huairou Science City, E-Town, and Jing-Jin-Ji. Possible exchanges include case learning, developer co-testing, talent exchange, or scenario interoperability, but each requires a named party, written authorization, public data caliber, and exit condition. This package invents no external partnership commitment. [source:DATA-SRC-AGENT-TASKBOOK-20260518] [depth:overall_spatial_structure]
 
-### agent.1: visual identity system
+### Specialism chapter A: visual identity system (formal agent.1)
 
-agent.1 delivers a reversible specification rather than a slogan. The mark has three concept directions - dot, folded line, and open frame - all locked to VIS·JZ. The recommended palette is Jing-Zhang Blue #174A78, Origin Teal #16A6A1, Wing Orange #F2A33A, Ink #172033, and Paper #F7F9FC. The Chinese typeface is Noto Sans SC; the English typeface is Arial or DejaVu Sans. Font family, version, local source path, embedding basis, repository-only use, and unresolved license terms are recorded in sources.json; no clearance is claimed. Pictograms use a 24 px grid, a 2 px base stroke, rounded terminals, and two-colour status layers. Rules cover gateways, signs, ground decals, badges, boards, web headers, mobile cards, data status, and reflective night film. The three directions remain concept options until rights and legibility tests pass.
+agent.1 delivers a reversible specification rather than a slogan. The mark has three concept directions - dot, folded line, and open frame - all locked to VIS·JZ. The recommended palette is Jing-Zhang Blue #174A78, Origin Teal #16A6A1, Wing Orange #F2A33A, Ink #172033, and Paper #F7F9FC. Both Chinese and English surfaces use the evidenced Noto Sans SC subset; no Arial font file or system font is required. The artifact URL, exact version, SHA-256, OFL text, subset method, and naming record are in sources.json and copyright_statement.md. Pictograms use a 24 px grid, a 2 px base stroke, rounded terminals, and two-colour status layers. Rules cover gateways, signs, ground decals, badges, boards, web headers, mobile cards, data status, and reflective night film. The three directions remain concept options until rights and legibility tests pass.
 
-### agent.2: space-element-operation matrix
+### Specialism chapter B: space-element-operation matrix (formal agent.2)
 
 agent.2 is not a partner cloud. It assigns every element an applicable unit, spatial carrier, open-interface fields, human gate, and auditable indicator. No authorized compute, funding, enterprise register, or dataset is claimed here; the interfaces below are verification-pending catalogue fields and concept workflows, not an operating platform. The five internal units remain distinct: Origin Community handles life questions and explanation; Zhongzhiyuan handles full-stack capability samples; Dazhongsi handles enterprise/consumer validation; the Technology Service Wing handles outward service catalogues; and the Xiaoyuehe Wing carries everyday and ecological scenarios.
 
@@ -90,7 +105,7 @@ agent.2 is not a partner cloud. It assigns every element an applicable unit, spa
 
 The matrix turns ecosystem language into inputs, spatial carriers, dual AI/non-AI capability, open-interface fields, owners, indicators, human gates, and stops. An interface becomes public only when source, authorization, version, and withdrawal method are complete. It promises no compute, funding, investment, talent, or approval outcome. [depth:existing_conditions_diagnosis] [depth:development_intensity_controls]
 
-### agent.3: ecosystem cases and industry validation
+### Specialism chapter C: ecosystem cases and industry validation (scenario evidence for formal agent.3; cases support agent.2)
 
 Six traceable public cases are retained, all reference-only; no logo, page asset, or endorsement is copied or implied: Transport for London Roundel (visual anchor/multi-touchpoint), Legible NYC (walking-wayfinding validation), Tokyo Metro (multilingual transfer grammar), Punggol Digital District (space-operation interface), Kendall Square (public innovation-ecosystem interface), and Waterfront Toronto Quayside (public review and exit gates). Each case contributes one transferable mechanism to T1/T2/T3, the agent.2 interface fields, or agent.6 public review. sources.json records each official entry point, the treatment of an undisplayed publication date, access date, and reuse boundary. The five local protocols are below; case publicity is not local evidence.
 
@@ -119,7 +134,7 @@ The three nodes are internal visual anchors, not statutory projects: L1 Visual H
 
 ## Detailed Design of Key Areas
 
-### agent.4: physical and digital applications
+### Specialism chapter D: physical and digital applications (public-space, landmark and component evidence for formal agent.4)
 
 | Component | Physical application | Digital application | Status and withdrawal |
 |---|---|---|---|
@@ -174,6 +189,19 @@ The map centres on the VIS·JZ concept identity layer and connects six supply/us
 The developer community has four layers: a public issue pool that accepts anonymous themes only; an interface catalogue with capability and limits; a small-sample workshop for reversible components and bilingual figures; and evaluation/review with public baseline, result, and failure action. Scenario opening follows issue card -> eligibility/ethics screen -> sandbox sample -> three-party test -> public review -> adopt, revise, or exit. An application without authorization, baseline, or exit condition does not enter. External coordination joins only through public nodes in this chain and does not change the internal division.
 
 ### Five executable industry test protocols
+
+### Four-activity annual programme (the single activity source for metrics.json)
+
+The table expands `annual_program_count=4`. All four brands, frequencies, and nodes are concept proposals, not confirmed arrangements. Owners are proposed RACI roles; venues, resources, and external parties remain `unknown/to_verify` until written confirmation.
+
+| Activity brand | Frequency | Target users | Spatial node | RACI / owner | Resource prerequisites | Bilingual touchpoints | Privacy / accessibility boundary | KPI | Stage gate | Cancellation / exit |
+|---|---|---|---|---|---|---|---|---|---|---|
+| AP01 VIS·JZ Open Systems Day | Once per year; date pending | Residents, youth, developers, visitors | L1 Visual Hub; AI Origin Community | R community operations; A annual-operations owner; C accessibility/legal; I public | Written venue permission, paper cards, staffed service, bilingual editing; budget and host pending | L1 bilingual wayfinding, offline paper card, web index, public review-back | No identity or trajectory collection; paper/staffed entry; wheelchair, child and older-user check | >=90% wayfinding task completion; one public review-back | G1: rights, notice, accessibility and T1/T4 plan complete | Any missing permission, staff fallback, or access condition; withdraw AP01 and retain reason |
+| AP02 Waterline Mobility Week | Once per year; season pending | Older people, accessibility users, families, night walkers | L2 Signage Gallery to Xiaoyuehe Wing; exact route pending | R scenario owner; A accessibility lead; C community/safety; I public review | Human site walk, light/obstacle baseline, paper alternative route; data and venue pending | Waterline bilingual node signs, large-print/audio card, web route note | Anonymous aggregates of error types only; human route check; no camera or location tracking | T1 completion >=90%; T2 contrast target; zero glare complaints in 10 readings | G2: site permission and professional fire/traffic/accessibility review plus T1/T2 | Route mismatch, glare, safety or obstacle risk unresolved; withdraw components and return to staff service |
+| AP03 Three-Node Quarterly Review | Four times per year; quarter-end | Operators, design/planning professionals, community representatives, developers | L1/L2/L3 narrative review; online/offline venue pending | R data steward; A operations/compliance owner; C visual, culture, ethics; I public | Anonymous logs, version wall, public sources, human chair; interfaces and staffing pending | Bilingual changelog, Narrative Hall review page, public summary | Anonymous aggregates and source levels only; captions, large print and paper; no personal case display | 100% versions have source/gate/exit records; >=95% items backlinkable | G1: source, retention/deletion date, human review and T4 scan pass | Source failure, sensitive inference, or unexplained output; delete related item and pause release |
+| AP04 Rail-to-AI Narrative Festival | Once per year; theme pending | Students, cultural participants, international visitors, residents | L3 Narrative Hall; Dazhongsi/Xiaoyuehe carrier pending | R culture editor; A communications owner; C history review/community/legal; I developers | Verified history entries, authorized narrative, bilingual layout, human guide; tenure and partners pending | Timeline cards, bilingual landmark notes, downloadable transcript, staffed interpretation | No unlicensed portrait, mark, or paper image; captions, large print and quiet hours; no face/voice biometrics | 100% historical entries backlinkable; T3 icon comprehension >=80% | G3: history/rights/accessibility review, T3/T4 pass, and withdrawal drill complete | Insufficient history evidence or permission, misleading risk, or public rejection; remove item and return to research |
+
+All four activities share one log schema: `activity_id`, version, date, node, RACI, resource status, notice/consent, anonymous count, KPI, gate, human decision, cancellation reason, next review, and deletion date. No result data is claimed for an activity that has not occurred; every KPI is a proposed validation target.
 
 | Protocol | Object/sample | Baseline | Formula and threshold, all self-set targets | Log and RACI | Frequency and failure action |
 |---|---|---|---|---|---|
