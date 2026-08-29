@@ -110,18 +110,6 @@
       "url": "https://www.zgc.gov.cn/"
     },
     {
-      "id": "GLOBAL-CASES",
-      "title": "Global Innovation District Case Studies",
-      "type": "academic_reference",
-      "publisher": "Brookings Institution / URBAN DESIGN Associates",
-      "published_at": "2023-09-01",
-      "public_status": "public",
-      "citation": "Katz, J. & Narkar, M., The Innovation Economy in Cities and Metro Areas, Brookings Institution, 2023; plus High Line NYC, King's Cross London, 22@Barcelona, Shenzhen Bay Eco-Tech Park, Songdo Korea case studies.",
-      "usage_note": "Six global case studies referenced for design inspiration: High Line (NYC), King's Cross (London), 22@Barcelona (Spain), Shenzhen Bay Eco-Tech Park, Songdo (Korea), and Cambridge Innovation Cluster.",
-      "risk_note": "Case studies from different regulatory, cultural, and climatic contexts; direct transfer may not be appropriate.",
-      "url": "https://www.brookings.edu/research/the-innovation-economy-in-cities-and-metro-areas/"
-    },
-    {
       "id": "SITE-PACKAGE",
       "title": "Site Package",
       "type": "official_public",
@@ -180,6 +168,78 @@
       "usage_note": "Background reference for Haidian's \"Two Zones, One Belt\" AI innovation street (AI Origin Community and Zhongguancun AI Beiwai Community linked by the Jingzhang Railway Heritage Park green belt), cited in proposal Section 9.5 as the north-side regional counterpart.",
       "risk_note": "Media reporting of district-level plans; not a statutory plan. The Beiwai Community lies outside the proposal site boundary and is referenced as a coordination counterpart only.",
       "url": "https://xinwen.bjd.com.cn/content/s696a3368d5de6b42d6c33ebc.html"
+    },
+    {
+      "id": "CASE-SZ-HUAQIANGBEI",
+      "title": "Huaqiangbei",
+      "type": "public_reference",
+      "publisher": "Wikipedia, The Free Encyclopedia",
+      "published_at": "accessed 2026-08",
+      "public_status": "public",
+      "citation": "Wikipedia contributors, \"Huaqiangbei\", Wikipedia, The Free Encyclopedia, accessed 2026-08 (background encyclopedic reference).",
+      "usage_note": "Electronics-market district in Shenzhen; referenced for bottom-up dense weaving from market to hardware innovation ecosystem. Referenced in proposal Section 3.4 and `report/ecosystem_cases.md` only as background reference.",
+      "risk_note": "Encyclopedic background from a different regulatory, cultural, and climatic context; direct transfer may not be appropriate. The case card under `assets/cases/` is an original abstract card containing no third-party photographs.",
+      "url": "https://en.wikipedia.org/wiki/Huaqiangbei"
+    },
+    {
+      "id": "CASE-BOSTON-SEAPORT",
+      "title": "Seaport, Boston",
+      "type": "public_reference",
+      "publisher": "Wikipedia, The Free Encyclopedia",
+      "published_at": "accessed 2026-08",
+      "public_status": "public",
+      "citation": "Wikipedia contributors, \"Seaport, Boston\", Wikipedia, The Free Encyclopedia, accessed 2026-08 (background encyclopedic reference).",
+      "usage_note": "Formerly industrial South Boston area branded as the Innovation District; referenced for university-community open weaving and slow-traffic Parcel connection. Referenced in proposal Section 3.4 and `report/ecosystem_cases.md` only as background reference.",
+      "risk_note": "Encyclopedic background from a different regulatory, cultural, and climatic context; direct transfer may not be appropriate. The case card under `assets/cases/` is an original abstract card containing no third-party photographs.",
+      "url": "https://en.wikipedia.org/wiki/Seaport,_Boston"
+    },
+    {
+      "id": "CASE-IL-TELAVIV",
+      "title": "Silicon Wadi",
+      "type": "public_reference",
+      "publisher": "Wikipedia, The Free Encyclopedia",
+      "published_at": "accessed 2026-08",
+      "public_status": "public",
+      "citation": "Wikipedia contributors, \"Silicon Wadi\", Wikipedia, The Free Encyclopedia, accessed 2026-08 (background encyclopedic reference).",
+      "usage_note": "Israel's coastal high-tech corridor from Tel Aviv to Haifa; referenced for nationwide startup weaving spilling from military technology to civilian entrepreneurship. Referenced in proposal Section 3.4 and `report/ecosystem_cases.md` only as background reference.",
+      "risk_note": "Encyclopedic background from a different regulatory, cultural, and climatic context; direct transfer may not be appropriate. The case card under `assets/cases/` is an original abstract card containing no third-party photographs.",
+      "url": "https://en.wikipedia.org/wiki/Silicon_Wadi"
+    },
+    {
+      "id": "CASE-SG-JURONG",
+      "title": "Jurong Lake District",
+      "type": "public_reference",
+      "publisher": "Wikipedia, The Free Encyclopedia",
+      "published_at": "accessed 2026-08",
+      "public_status": "public",
+      "citation": "Wikipedia contributors, \"Jurong Lake District\", Wikipedia, The Free Encyclopedia, accessed 2026-08 (background encyclopedic reference).",
+      "usage_note": "Singapore URA-planned second CBD on former industrial land; referenced for integrated city-industry transformation paths. Referenced in proposal Section 3.4 and `report/ecosystem_cases.md` only as background reference.",
+      "risk_note": "Encyclopedic background from a different regulatory, cultural, and climatic context; direct transfer may not be appropriate. The case card under `assets/cases/` is an original abstract card containing no third-party photographs.",
+      "url": "https://en.wikipedia.org/wiki/Jurong_Lake_District"
+    },
+    {
+      "id": "CASE-LDN-KINGSX",
+      "title": "King's Cross Central",
+      "type": "public_reference",
+      "publisher": "Wikipedia, The Free Encyclopedia",
+      "published_at": "accessed 2026-08",
+      "public_status": "public",
+      "citation": "Wikipedia contributors, \"King's Cross Central\", Wikipedia, The Free Encyclopedia, accessed 2026-08 (background encyclopedic reference).",
+      "usage_note": "Mixed-use regeneration of a former London rail goods yard; referenced for weaving rail heritage into contemporary city life. Referenced in proposal Section 3.4 and `report/ecosystem_cases.md` only as background reference.",
+      "risk_note": "Encyclopedic background from a different regulatory, cultural, and climatic context; direct transfer may not be appropriate. The case card under `assets/cases/` is an original abstract card containing no third-party photographs.",
+      "url": "https://en.wikipedia.org/wiki/King%27s_Cross_Central"
+    },
+    {
+      "id": "CASE-BCN-22A",
+      "title": "22@Barcelona",
+      "type": "public_reference",
+      "publisher": "Wikipedia, The Free Encyclopedia",
+      "published_at": "accessed 2026-08",
+      "public_status": "public",
+      "citation": "Wikipedia contributors, \"22@Barcelona\", Wikipedia, The Free Encyclopedia, accessed 2026-08 (background encyclopedic reference).",
+      "usage_note": "Poblenou innovation-district regeneration and the Barcelona superblock programme; referenced for weaving slow traffic and service radii into the existing grid. Referenced in proposal Section 3.4 and `report/ecosystem_cases.md` only as background reference.",
+      "risk_note": "Encyclopedic background from a different regulatory, cultural, and climatic context; direct transfer may not be appropriate. The case card under `assets/cases/` is an original abstract card containing no third-party photographs.",
+      "url": "https://en.wikipedia.org/wiki/22@Barcelona"
     }
   ]
 }

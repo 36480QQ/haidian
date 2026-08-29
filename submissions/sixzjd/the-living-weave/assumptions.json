@@ -68,10 +68,10 @@
     {
       "id": "ASSUMP-009",
       "title": "Global case studies used as reference, not direct templates",
-      "detail": "Six global innovation district case studies (High Line NYC, King's Cross London, 22@Barcelona, etc.) are referenced for design inspiration and lessons learned. They are not direct planning templates.",
+      "detail": "Six global innovation-district cases are referenced for design inspiration and lessons learned: Shenzhen Huaqiangbei, Boston Innovation District (Seaport), Tel Aviv (Silicon Wadi), Singapore Jurong Lake District, London King's Cross Central, and Barcelona 22@/Superblocks. Each is individually registered as a CASE-* entry in sources.json with its own URL and access date, and corresponds one-to-one with the abstract case cards under assets/cases/. They are not direct planning templates.",
       "scope": "narrative",
       "impact": "Direct transfer of strategies from different regulatory, cultural, and climatic contexts may not be appropriate.",
-      "mitigation": "Case study lessons are adapted to Beijing/Haidian context through the design process."
+      "mitigation": "Case study lessons are adapted to the Beijing/Haidian context through the design process; the abstract case cards are participant-authored and contain no third-party photographs, logos, or map tiles."
     },
     {
       "id": "ASSUMP-010",
@@ -120,6 +120,14 @@
       "scope": "public_interest",
       "impact": "Inclusive-performance claims stay qualitative during the concept stage; no accessibility value is fabricated.",
       "mitigation": "Publish the audit protocol and baseline results when operational data becomes available; until then the metric stays unknown by design rather than being backfilled."
+    },
+    {
+      "id": "ASSUMP-016",
+      "title": "Honor-display system is non-authoritative and fully revocable",
+      "detail": "The AI-contributor honor wall described in Section 9.4.1 publishes voluntary GitHub IDs and public contribution links only after contributor confirmation, under a CC BY 4.0 display-level license.",
+      "scope": "public_interest",
+      "impact": "Honor display must not be read as a competition rating, acceptance promise, organizer endorsement, or government recognition.",
+      "mitigation": "Annual refresh, 10-working-day complaint review, and immediate takedown with archived records when a license lapses, on the contributor's request, or on failed verification."
     }
   ]
 }

@@ -139,16 +139,16 @@ These spatial responses are not vague technology visions; they are realized as l
 
 The proposal selects the following global cases as benchmarks, each representing a distinct "weaving method" [source:AGENT-TASKBOOK]:
 
-| Case | Weaving Type | Benchmark Insight |
-| --- | --- | --- |
-| Shenzhen Huaqiangbei | Bottom-up dense weave | Spontaneous weaving from electronics market to hardware innovation ecosystem |
-| Shenzhen Qianhai | Policy-guided structured weave | How a reclaimed new town rapidly formed its network through institutional innovation |
-| Boston Innovation District | University-community open weave | How MIT/Harvard-area innovation districts connect fragmented parcels through slow-traffic systems and public space |
-| Tel Aviv | Nationwide startup weave | How a national innovation ecosystem spilled over from military technology into civilian entrepreneurship |
-| Singapore Jurong Lake District | Integrated city-industry new weave | The transformation path from industrial zone to "Life Sciences and AI Innovation Hub" |
-| The Silk Road | Civilization-scale weave network | China's earliest "cross-civilization innovation network" — how technology and culture interlaced through trade routes |
+| Case | Weaving Type | Benchmark Insight | Source |
+| --- | --- | --- | --- |
+| Shenzhen Huaqiangbei | Bottom-up dense weave | Spontaneous weaving from electronics market to hardware innovation ecosystem | [source:CASE-SZ-HUAQIANGBEI] |
+| Boston Innovation District (Seaport, South Boston) | University-community open weave | How MIT/Harvard-area innovation districts connect fragmented parcels through slow-traffic systems and public space | [source:CASE-BOSTON-SEAPORT] |
+| Tel Aviv (Silicon Wadi) | Nationwide startup weave | How a national innovation ecosystem spilled over from military technology into civilian entrepreneurship | [source:CASE-IL-TELAVIV] |
+| Singapore Jurong Lake District | Integrated city-industry new weave | The transformation path from industrial zone to "Life Sciences and AI Innovation Hub" | [source:CASE-SG-JURONG] |
+| London King's Cross | Rail-yard infill weave | A former rail goods yard regenerated into a mixed-use district — how rail heritage weaves into contemporary city life | [source:CASE-LDN-KINGSX] |
+| Barcelona 22@ and Superblocks | Fine-grained service-radius weave | Weaving slow traffic and service radii into the existing street grid through superblocks | [source:CASE-BCN-22A] |
 
-Detailed analysis of benchmark cases, applicability assessments, and localization recommendations are stored in `report/ecosystem_cases.md`.
+The six cases correspond one-to-one with the six original abstract case cards under `assets/cases/` and the per-case CASE-* entries in `sources.json`; detailed analysis, applicability assessment, and localization recommendations are stored in the "Global benchmark cases" section of `report/narrative.md`.
 
 ### 3.5 Stitching the Two Wings: Aligning with the Official "Three Zones, Two Wings" Structure
 
@@ -168,7 +168,7 @@ The two wings share the same scenario-governance, permitting, and exit mechanism
 
 ### 4.1 "Ripping the Warp, Threading the Weft" of Urban Regeneration
 
-The overall design scope (11.4 km²) requires urban design depth at the level of a detailed regulatory plan [standard:MOHURD-CONTROL-DETAILED-PLANNING]. The proposal understands urban regeneration as a "rip the warp, thread the weft" operation — not demolishing all the warp threads and starting over, but preserving the historical warp (Jingzhang Railway heritage, Qinghuayuan Railway Station, university campus fabric) while threading new weft (innovation functions, public services, green infrastructure).
+The overall design scope (11.4 km²) is organized with reference to the depth requirements of a detailed regulatory plan, forming a concept-level framework that professional teams can deepen [standard:MOHURD-CONTROL-DETAILED-PLANNING]. The proposal understands urban regeneration as a "rip the warp, thread the weft" operation — not demolishing all the warp threads and starting over, but preserving the historical warp (Jingzhang Railway heritage, Qinghuayuan Railway Station, university campus fabric) while threading new weft (innovation functions, public services, green infrastructure).
 
 The land-use structure plan takes [data:geometry/land_use.geojson#LU-001] as its spatial carrier, forming a complete, closed, seamless land-use zoning scheme. Land-use classification follows [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE], covering residential, commercial, R&D office, public service, green space and plaza, transport facility, and municipal facility categories. The current land-use plan is generated on the basis of a provisional boundary and may serve as statutory basis only after formal regulatory-plan conditions are confirmed [assumption:A-CONTROLS-001].
 
@@ -208,7 +208,7 @@ Each regeneration strategy is paired with a "Reversible Weft" mechanism (see Sec
 
 ### 5.1 Overview
 
-The three key areas are the specific siting of the "One Warp, Three Wefts" weaving method. Each area achieves the urban design depth of a comprehensive implementation plan [depth:three_key_area_detailed_design], covering functional programming, building scale, architectural form, retain-renovate-demolish classification, public space systems, traffic organization, and implementation projects.
+The three key areas are the specific siting of the "One Warp, Three Wefts" weaving method. Each area is organized with reference to the depth requirements of a comprehensive implementation plan, as a concept-level framework for professional teams to deepen [depth:three_key_area_detailed_design], covering functional programming, building scale, architectural form, retain-renovate-demolish classification, public space systems, traffic organization, and implementation projects.
 
 ![Overview of the three key area designs](assets/figures/key-areas.en.png)
 
@@ -456,6 +456,23 @@ The proposal recommends establishing a wayfinding signage system with "warp-weft
 - Provide multilingual guided tours and digital narration at the three pilgrimage landmarks.
 - Propose a "Living Weave" cultural-symbol system and an AI-contributor honor-display scheme.
 - Reuse the original mark and pattern assets under `visual/assets/brand/` (guidelines in Section 3.2) so that full-line signage, event materials, and the offline web pages stay visually consistent.
+
+### 9.4.1 Public-Space Component Library and Honor-Display System
+
+To turn "public-space components" from a directional statement into a verifiable deliverable, the proposal provides a component catalog and an honor-display mechanism. All components follow the same baseline: reversible installation, no new permanent floor area, built-in accessibility and safety requirements, and restoration on exit.
+
+| Component | Applicable space | Accessibility & safety | Data / power boundary | Reversible installation | Maintainer | Exit rule |
+| --- | --- | --- | --- | --- | --- | --- |
+| Reversible signage totem | Warp paths, rail-station exits | Rounded corners, reflective film, braille plate | No data; no power | Ballast base, no casting | Urban-management coordination group | Remove or retain after 90-day review |
+| Modular seating & planters | Pocket plazas, waterfront walks | Seat height 450mm, wheelchair turning space | No data; no power | Individually movable | Street operator | Removed within 48h after events |
+| Community service terminal | Community centers, station plazas | Screen ≤1200mm, voice + paper channels | Anonymous queries only; existing municipal circuit | Bolt-down base | Licensed operator | Deactivate and restore on retirement |
+| Open-source code wall & honor wall | Jacquard Square, Weave Origin | Reading height 900—1600mm | Public repo metadata only; no personal data | Modular hanging | Community-culture operator | Takedown per honor mechanism |
+| Heritage trail marker band | Railway heritage walkway | High contrast, no obstruction of tactile paving | No data; no power | Precast surface-mounted elements | Park operator | Adjust on conservation changes |
+| Temporary event power pile | Event lawns, pitch areas | Earth-leakage protection, screened during use | Metered; no load beyond lighting | Reserved interface box | Event organizing committee | De-energized and stored after events |
+| Movable children's play kit | Community gardens, Qinghe frontage | Soft surfacing, EN 1176 reference | No data; no power | No hardened foundation | Street operator | Suspended on complaint or incident |
+| Accessibility ramp kit | Existing level differences | Slope ≤1:12, double handrails | No data; no power | Aluminum modular ramp | Urban-management coordination group | Removed once permanent works complete |
+
+The honor-display system follows "verifiable contribution, revocable attribution": the AI-contributor honor wall lists a voluntary GitHub ID with public contribution links (PR/commit), published only after the contributor's confirmation; content is licensed at display level under CC BY 4.0, and unauthorized third-party branding is not accepted; the list is refreshed annually, complaints are reviewed within 10 working days, and entries are removed and archived when a license lapses, on the contributor's request, or on failed verification. Honor display does not constitute a competition rating, acceptance promise, or official endorsement [assumption:ASSUMP-016].
 
 ### 9.5 Annual Operations and Regional Collaboration
 
