@@ -4,7 +4,7 @@ author_github: "LShengYi"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "20"
+iteration: "21"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "AI Pulse Belt: the engineering tradition of the centennial Jing-Zhang Railway 'iron pulse' — inspectable, verifiable, retired — is translated into a public protocol for the AI era: before any AI service enters public space, it must be declarable, testable, releasable, and retirable (P1-P4), each beat paired with a spatial interface and passing evidence. An offline synthetic rehearsal of 120 checks blocks all 105 failure branches, with zero services released (all currently not authorized, not field-run); 76 metrics (61 known) are recomputable, and the three-level scope, the three key areas, and the 12 scenario cards respond to announcement clauses 1.4/1.5 and the agent.1-6 tasks. All content is conceptual recommendation; once official boundaries and existing-condition surveys are released, everything is recomputed under the P4 procedure."
@@ -64,7 +64,7 @@ This section provides review-dimension evidence indexes, response checklists; re
 
 Applies to all narrative, tables, figures, JSON, and media scripts; every downgrade traceable via changelog.
 
-**Version traceability**: iteration **v10.14.15**(2026-08-28, frontmatter 20); per-round records in `changelog.md`. **v10.14.0** = compliance-repair: needs_review source downgraded(HAIDIAN-URBAN-RENEWAL-2025 removed, Table B4 reworded as schematic numbering); UAS rules updated to 2026 Beijing Municipal UAS Regulations(No. 50, effective 2026-05-01; Beijing-wide controlled airspace, prior application required)—cards, standards matrix, source registry synced; metric count 61/76 known(metrics.json). **v10.14.14** = seven-dimension review repair(prices deleted, 100-day split, red-line scopes, data minimization, en tables A14–A21/C1–C5 95/95). QA(E12): pixel-level figure review—title bands 46–94 px apart, headroom 1–2%, zero duplicate subtitle rows, dashed boundaries machine-checkable; "title clipped" refuted.
+**Version traceability**: iteration **v10.14.16**(2026-08-28, frontmatter 20); per-round records in `changelog.md`. **v10.14.0** = compliance-repair: needs_review source downgraded(HAIDIAN-URBAN-RENEWAL-2025 removed, Table B4 reworded as schematic numbering); UAS rules updated to 2026 Beijing Municipal UAS Regulations(No. 50, effective 2026-05-01; Beijing-wide controlled airspace, prior application required)—cards, standards matrix, source registry synced; metric count 61/76 known(metrics.json). **v10.14.14** = seven-dimension review repair(prices deleted, 100-day split, red-line scopes, data minimization, en tables A14–A21/C1–C5 95/95). QA(E12): pixel-level figure review—title bands 46–94 px apart, headroom 1–2%, zero duplicate subtitle rows, dashed boundaries machine-checkable; "title clipped" refuted.
 
 **Table A1 One-page review entry (review-dimension evidence index — every row gives an openable file and runnable command; machine-verifiable items re-run offline)**
 
@@ -1452,11 +1452,12 @@ The geometry-layer validation rate(9/9 pass spatial review; same source family a
 
 **⑦ v10.4 asset-family class, known (12 metrics, machine-readable, re-runnable)**: four-stage dividend-contract coverage(15/15 services hold BASE→BOOST→BLACKOUT→BEQUEST), blackout-clause coverage(15/15, paired one-to-one with five rollback triggers), bequest-clause coverage(15/15, no bequest→no release), state-machine state count(8: proposed→removed_archived, blackout_drill/bequest_audit not skippable), state-machine transition-gate count(8 transitions each carrying roles, evidence gates), dual-gateway gate count(16: G0-G7 project gates + C0-C7 scenario gates), governance role count(8 roles with must-not-impersonate pairing, fallback-if-absent), governance constitutional-rule count(5 rules, incl. "no operator certifies its own bequest audit"), re-runnable receipt ratio(120/120, node simulate-check.js exit-code contract 0/1/2), seven-dimension evidence-index coverage(7 dimensions each pointing to openable files); issue ledger(3 entries: #846/#1029/#1368), evidence levels(5: L1-L5) registered in the narrative.
 
-All 10 metrics' source_files point into the visual/assets/ family so reviewers can open, recheck each one([metric:contract_coverage_ratio] [metric:state_machine_state_count] [metric:dual_gateway_gate_count]).
-
-Blackout, bequest clause coverage are in [metric:blackout_clause_coverage_ratio] and [metric:bequest_clause_coverage_ratio]; role, constitutional-rule, receipt re-runs are counted in [metric:governance_role_count] [metric:simulation_rerun_receipt_ratio] [metric:review_evidence_dimension_count]; issue ledger, evidence levels are registered in narrative(Table A9, Design Basis chapter).
-
-All known metrics recompute from GeoJSON; area, green ratio are also cross-checked against public map measurements, official planning_limits.json values(cross-check record in [source:AREA-CROSSCHECK]) [metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001] [depth:metrics_recalculation]. metrics.json entries carry no category field; seven-class management(spatial/functional/count/control/performance/coverage/asset-family) follows this chapter, keeping JSON schema lean.
+Asset-family 10 source_files point into visual/assets/; reviewers can open each. [metric:contract_coverage_ratio] [metric:state_machine_state_count] [metric:dual_gateway_gate_count] Blackout/bequest coverage: [metric:blackout_clause_coverage_ratio] [metric:bequest_clause_coverage_ratio]; roles/receipts: [metric:governance_role_count] [metric:simulation_rerun_receipt_ratio] [metric:review_evidence_dimension_count] (Table A9).
+61 known metrics split into three reproducibility classes(aligned with metrics.json source_files/formula; detail in Table A17):
+① **GeoJSON geometry/count recomputable**(23) — from geometry/*.geojson in EPSG:4548; area/green ratio also cross-checked via planning_limits.json([source:AREA-CROSSCHECK]);
+② **Narrative/structured-registry verifiable**(27) — registered counts in tables/JSON, verifiable by opening the named file;
+③ **Simulation/contract/state-machine replayable**(11) — offline-replayable from simulation.json + simulate-check.js.
+metrics.json carries no category field; seven-class management per this chapter, three reproducibility classes per this paragraph. [metric:site_area_sqm] [depth:metrics_recalculation]
 
 **Alternative measures for the innovation indicator system (responding to announcement 1.5(2)1, the "planning indicator system"; the official formulas for the AI innovation index / talent density / output value are not published — this proposal does not fabricate values; it first gives actionable, recomputable concept substitute measures, replaced under P4 once the official caliber releases)**:
 

@@ -4,7 +4,7 @@ author_github: "LShengYi"
 language: "zh"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "20"
+iteration: "21"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "智脉一带 · AI Pulse Belt 把京张铁路百年'铁脉'可巡检、可验收、可退役的工程传统转译为 AI 时代的公共协议：任何 AI 服务进入公共空间之前，都必须可申报、可测试、可发布、可退役（P1–P4），四拍各配空间界面与通过证据。120 条离线合成演练中 105 条失败分支全部被拦截、零项服务获得发布放行（当前全部处于未获授权、未现场运行状态），76 项指标（61 known）可复算；三层范围、三重点区与 12 张场景卡回应公告 1.4/1.5 及 agent.1–6 任务。全部内容为概念建议，官方边界与现状调查发布后按 P4 程序重算。"
@@ -65,7 +65,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 本规则适用本包全部正文、表、图、JSON 与媒体脚本；任何一级降级必须可被评审沿 changelog 追溯到具体条目。
 
-**版本可追溯**：本包当前迭代 **v10.14.15**（2026-08-28，frontmatter iteration 20），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**历史记录句 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
+**版本可追溯**：本包当前迭代 **v10.14.16**（2026-08-28，frontmatter iteration 20），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**历史记录句 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
 
 **表 A1 评审一页入口（评审维度证据索引——每行给出可打开文件与可运行命令，机器可核验项全部可在评审端离线重跑）**
 
@@ -1416,7 +1416,7 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 | --- | --- | --- | --- | --- |
 | 第 1–14 天 | 官方数据核验：边界/控规/现状调查发布跟踪 | 本方案团队 | 数据缺口清单更新 | 3–5 人日 |
 | 第 1–14 天 | 公开讨论与意见征集回应 | 本方案团队 | 逐条回应记录 | 2–3 人日 |
-| 第 15–30 天 | 评审反馈闭环：按意见修订章节与指标 | 本方案团队 | 修订版（下一迭代，当前 v10.14.15） | 6–10 人日 |
+| 第 15–30 天 | 评审反馈闭环：按意见修订章节与指标 | 本方案团队 | 修订版（下一迭代，当前 v10.14.16） | 6–10 人日 |
 | 第 15–30 天 | 场景卡 P1 申报要件预演（五要素核对） | 运营秘书处（建议） | 申报模板 | 3–5 人日 |
 | 第 31–60 天 | 官方数据发布则重算图层与指标（P4 程序） | 本方案团队 | 重算报告 | 4–8 人日 |
 | 第 31–60 天 | 三重点区利益相关方工作坊 | 运营秘书处（建议） | 意见汇总 | 6 人日（2 场×3 人次） |
@@ -1485,13 +1485,15 @@ AI 治理建议遵守数据最小化、公开来源、可解释与人工复核�
 **⑤ 绩效类 unknown（3 项，公告 1.5(2) 规划指标体系）**：AI 创新指数（ai_innovation_index）、人才密度（talent_density）、产值规模（ai_output_value）——公式与数据来源均已登记，待官方统计发布后复算。
 **⑥ 机制 coverage known（9 项：8 项核验式覆盖率全部 =1.0，风险登记 8 维为计数）**：场景卡五维承诺覆盖率——失败降级（12/12 每行 KPI 与退出条件列非空）、数据与人工边界（12/12）、运营主体（12/12）、退出后空间处置（12/12，见第六章"AI 的有限作用与退出后空间处置"表）、护照登记完整率（15/15，simulation.json 逐项核验，15 项服务全部完成 11 字段护照登记）；机制完整性——四拍通过证据覆盖率（4/4，协议表每拍有通过证据与未通过处置）、回滚映射覆盖率（5/5 触发器与场景卡退出条件一一对应）、几何图层校验率（9/9 通过空间复核）；风险登记（8 维风险清单，risk.json）。覆盖率类公式均为"核验式"而非"声明式"：公式写明分子/分母与核验对象，评审可逐行复核（[metric:scenario_fallback_coverage_ratio] [metric:scenario_data_boundary_coverage_ratio] [metric:scenario_operator_coverage_ratio]）；退出处置与护照通过率见 [metric:scenario_exit_path_coverage_ratio] [metric:simulation_p1_pass_ratio]；四拍、回滚与风险登记见 [metric:protocol_gate_coverage_ratio] [metric:risk_rollback_mapping_ratio] [metric:risk_item_count]。
 
-**⑦ v10.4 数据资产族 known（12 项，机器可读、可重跑）**：四段退场红利合同覆盖率（15/15 服务全部持有 BASE→BOOST→BLACKOUT→BEQUEST）、停摆条款覆盖率（15/15，与五类回滚触发器一一对应）、退场契约覆盖率（15/15，无退场契约不得发布）、状态机状态数（8 态：proposed→removed_archived，blackout_drill/bequest_audit 不可跳过）、状态机转移门数（8 条转移各带角色与证据门）、双闸门数（16 门：G0-G7 项目闸＋C0-C7 场景闸）、治理角色数（8 角色，含"不得替代"双栏与缺岗兜底）、治理宪法条款数（5 条，含"运营者不得自证其退场审计"）、回执可复算率（120/120，node simulate-check.js 退出码契约 0/1/2）、七维证据索引覆盖（7 维逐维指向可打开文件）；另意见台账 3 条（#846/#1029/#1368）与证据等级 5 级（L1-L5）登记于正文。
+**⑦ v10.4 数据资产族 known（12 项，机器可读、可重跑）**：四段退场红利合同覆盖率 15/15（BASE→BOOST→BLACKOUT→BEQUEST）、停摆条款 15/15、退场契约 15/15、状态机 8 态（proposed→removed_archived，blackout_drill/bequest_audit 不可跳过）、转移门 8 条、双闸门 16 门（G0-G7+C0-C7）、治理角色 8、宪法条款 5、回执可复算率 120/120（simulate-check.js 契约）、七维证据索引 7 维；另意见台账 3 条（#846/#1029/#1368）与证据等级 5 级（L1-L5）登记于正文。
 
-全部 10 项 source_files 指向 visual/assets/ 数据资产族，评审可逐一打开复核（[metric:contract_coverage_ratio] [metric:state_machine_state_count] [metric:dual_gateway_gate_count]）。
+资产族 10 项 source_files 指向 visual/assets/，评审可逐一打开复核。[metric:contract_coverage_ratio] [metric:state_machine_state_count] [metric:dual_gateway_gate_count] 停摆/退场覆盖率见 [metric:blackout_clause_coverage_ratio] [metric:bequest_clause_coverage_ratio]；治理角色/回执/意见台账见 [metric:governance_role_count] [metric:simulation_rerun_receipt_ratio] [metric:review_evidence_dimension_count]（表 A9）。
 
-停摆/退场条款覆盖率见 [metric:blackout_clause_coverage_ratio] 与 [metric:bequest_clause_coverage_ratio]，治理角色、宪法条款与回执复算计数见 [metric:governance_role_count] [metric:simulation_rerun_receipt_ratio] [metric:review_evidence_dimension_count]；意见台账与证据等级登记于正文（表 A9、设计依据章）。
-
-所有 known 指标均可从 GeoJSON 复算，面积与绿地率另经公开地图量测与官方 planning_limits.json 数值交叉验证（交叉验证记录见 [source:AREA-CROSSCHECK]）[metric:site_area_sqm] [data:geometry/green_space.geojson#GREEN-001] [depth:metrics_recalculation]。metrics.json 条目不另设分类字段，①-⑦ 七类管理以本章分类为准，JSON 保持 schema 精简。
+61 项 known 指标按可复算性分三类（与 metrics.json source_files/formula 对齐，明细见表 A17）：
+① **GeoJSON 几何/计数可复算**（23）——由 geometry/*.geojson 在 EPSG:4548 复算，面积/绿地率另经 planning_limits.json 交叉验证（[source:AREA-CROSSCHECK]）；
+② **正文/结构化登记可核对**（27）——表/JSON 登记计数，评审可打开文件逐项核对；
+③ **模拟回执/合同/状态机可重放**（11）——由 simulation.json 与 simulate-check.js 离线重放。
+metrics.json 不另设分类字段；七类管理以本章为准，三类可复算性以本段为准。[metric:site_area_sqm] [depth:metrics_recalculation]
 
 **创新指标体系替代度量建议（回应公告 1.5(2)1"规划指标体系"；官方 AI 创新指数/人才密度/产值三项公式未发布，本方案不虚构数值，先给出可落地、可复算的概念替代度量，待官方口径发布后按 P4 替换）**：
 

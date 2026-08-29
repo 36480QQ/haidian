@@ -136,7 +136,7 @@
     <div id="status"></div>
   </div>
 </div>
-<footer>概念建议图（design_proposal）· 基于官方临时边界生成 · 范围面积 11.41 km2（临时模型计算值，EPSG:4548 计算；不得用于精确面积或正式规划证据）· 交换 EPSG:4326 · 非官方边界，未作容积率/高度/拆改结论 · 本页面零外部请求，可离线打开，图层开关支持键盘操作（Tab 聚焦+Space 切换，地图含 ARIA 标注）· 迭代 v10.14.15 · 76 项指标七类管理+承诺覆盖率族 · 2026-08-28 · 自我审计：errata.json（13 条勘误）· simulate-check.js --self-test（8/8 篡改拒绝）· verify-counts.js（9/9 复算）· track_scan.json（801 份同场扫描）</footer>
+<footer>概念建议图（design_proposal）· 基于官方临时边界生成 · 范围面积 11.41 km2（临时模型计算值，EPSG:4548 计算；不得用于精确面积或正式规划证据）· 交换 EPSG:4326 · 非官方边界，未作容积率/高度/拆改结论 · 本页面零外部请求，可离线打开，图层开关支持键盘操作（Tab 聚焦+Space 切换，地图含 ARIA 标注）· 迭代 v10.14.16 · 76 项指标七类管理+承诺覆盖率族 · 2026-08-28 · 自我审计：errata.json（13 条勘误）· simulate-check.js --self-test（8/8 篡改拒绝）· verify-counts.js（9/9 复算）· track_scan.json（801 份同场扫描）</footer>
 
 <script>
 "use strict";
@@ -385,14 +385,46 @@ function showStaticMap() {
   cv.parentElement.appendChild(d);
 }
 window.addEventListener("error", showStaticMap);
+function canvasHasContent() {
+  // Sample a few pixels to verify the canvas actually drew geometry (not just
+  // the grid background).  Headless Chromium may have a blank canvas if the
+  // draw didn't composite before the screenshot; keeping the static visible
+  // until real content is confirmed prevents the "blank grid" screenshot.
+  try {
+    var d = ctx.getImageData(0, 0, cv.width, cv.height).data;
+    // check ~20 scattered pixels for any non-background colour
+    var step = Math.max(1, Math.floor(d.length / 80));
+    for (var i = 0; i < d.length; i += step * 4) {
+      // background is #eef1f4 = rgb(238,241,244); allow tolerance ±8
+      if (Math.abs(d[i] - 238) > 8 || Math.abs(d[i+1] - 241) > 8 || Math.abs(d[i+2] - 244) > 8)
+        return true;
+    }
+  } catch(e) {}  // tainted canvas in some environments
+  return false;
+}
+function swapToCanvas() {
+  // Only swap after confirming canvas has real geometry drawn
+  if (canvasHasContent()) {
+    var sm = document.getElementById("static-map");
+    if (sm) { sm.style.display = "none"; }
+    cv.style.visibility = "visible";
+  } else {
+    // Canvas drew only grid; keep static visible and retry once after a frame
+    setTimeout(function() {
+      if (canvasHasContent()) {
+        var sm = document.getElementById("static-map");
+        if (sm) { sm.style.display = "none"; }
+        cv.style.visibility = "visible";
+      }
+      // else: leave static visible (it's already showing geometry)
+    }, 50);
+  }
+}
 function tryInit(attempt) {
   var r = cv.getBoundingClientRect();
   if (r.width > 0 && r.height > 0) {
     buildPanel(); resize(); // resize() draws all layers synchronously
-    // first successful draw: swap from static fallback to the live canvas
-    var sm = document.getElementById("static-map");
-    if (sm) { sm.style.display = "none"; }
-    cv.style.visibility = "visible";
+    swapToCanvas();
   } else if (attempt < 10) {
     setTimeout(function(){ tryInit(attempt + 1); }, 100);
   } else {
