@@ -1,5 +1,5 @@
 ---
-title: PROTO·JZ Public Prototyping Commons
+title: PAR·JZ Participation Loop
 author_github: JohnXu22786
 language: en
 proposal_format_version: 2
@@ -9,15 +9,15 @@ license: COMMUNITY-DISPLAY-ONLY
 summary: A concept plan for public prototyping, community learning and AI-ecosystem collaboration; spatial, data and metric claims remain provisional.
 ---
 
-# PROTO·JZ Public Prototyping Commons
+# PAR·JZ Participation Loop
 
-**Chinese name: 京张原型公地**. PROTO·JZ proposes a public prototype chain—learn, make, shadow-test, review, archive and return knowledge. AI learning, reversible public-space components, neighborhood services and industry testing become a visible network that people can pause and withdraw. It is neither a maker-park investment plan nor an approved construction plan: all locations, values and operations are concept advice pending official data, field survey and professional review. [source:AGENT-TASKBOOK]
+**Chinese name: 京张参与智环**. PAR·JZ (Participation · Jing-Zhang) is the sole primary brand in this package; it is not an existing enterprise or government mark. It proposes a public prototype chain—learn, make, shadow-test, review, archive and return knowledge. AI learning, reversible public-space components, neighborhood services and industry testing become a visible network that people can pause and withdraw. It is neither a maker-park investment plan nor an approved construction plan: all locations, values and operations are concept advice pending official data, field survey and professional review. [source:AGENT-TASKBOOK]
 
 ## Design Basis and Source List
 
 This package uses the taskbook, public standards and participant-authored geometry/graphics only. `sources.json` registers each source. The announcement and taskbook define scope; planning, land-use, AI-governance and accessibility materials are method references. Global cases are `research_hypothesis` only and do not prove investment, performance or partnership. Existing buildings, tenure, heritage lines, station entrances, operating capacity and statutory controls are `unknown/to_verify`.
 
-The naming system is PROTO·JZ; its three spatial anchors are Prototype School Z1, Reversible Test Yard Z2 and Service Loop Station Z3. The logo concept uses an opening square and Jing-Zhang sleeper rhythm to express demountable modules. It does not use any existing enterprise or government mark; trademark and prior-rights checks remain to_verify. [source:PACKAGE-GEOMETRY]
+The naming system is PAR·JZ Participation Loop; Z1, Z2 and Z3 are spatial nodes under this one brand, not sub-brands: Z1 Prototype School, Z2 Reversible Test Yard and Z3 Service Loop Station. They interface respectively with Zhongzhiyuan AI Acceleration Area, Beijing AI Origin Community and Dazhongsi AI Industry Cluster. The logo concept uses an opening square and Jing-Zhang sleeper rhythm to express demountable modules. It does not use any existing enterprise or government mark; trademark and prior-rights checks remain to_verify. [source:PACKAGE-GEOMETRY]
 
 ## Three-Level Scope Framework
 
@@ -33,7 +33,7 @@ The three positionings are the Centennial Jing-Zhang Culture Belt (memory and ne
 
 ## Coordinated Research Area: Industry and Future City Research
 
-PROTO·JZ links industry, space and public value through an issue–prototype–evidence–reuse chain, rather than attaching an AI label to a conventional park. Eight element interfaces are explicit: land/space provides reversible containers; industry provides needs and maintenance capacity; capital is a potential resource to verify; talent includes students, engineers, residents, caregivers and operators; compute is a resource interface to verify; data is public or authorized anonymized aggregation only; scenarios use the three nodes and test corridor; knowledge returns through versioned archives. No enterprise, financing, output, compute scale or supplier is asserted.
+PAR·JZ links industry, space and public value through an issue–prototype–evidence–reuse chain, rather than attaching an AI label to a conventional park. Eight element interfaces are explicit: land/space provides reversible containers; industry provides needs and maintenance capacity; capital is a potential resource to verify; talent includes students, engineers, residents, caregivers and operators; compute is a resource interface to verify; data is public or authorized anonymized aggregation only; scenarios use the three nodes and test corridor; knowledge returns through versioned archives. No enterprise, financing, output, compute scale or supplier is asserted.
 
 Internal three areas and two wings are separate from external coordination:
 
@@ -131,7 +131,7 @@ The heritage-park green belt is the continuous setting. Prototype components ste
 ![AI prototype ecology and eight element interfaces (concept)](assets/figures/ecosystem-atlas.en.png)
 ![Slow route and test corridor (concept)](assets/figures/mobility-bluegreen.en.png)
 ![Metrics and phase gates (concept)](assets/figures/metrics-evidence.en.png)
-![PROTO·JZ visual identity direction (concept)](assets/figures/logo-protojz.en.png)
+![PAR·JZ visual identity direction (concept)](assets/figures/logo-parjz.en.png)
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
@@ -161,4 +161,4 @@ Taskbook and announcement: [source:AGENT-TASKBOOK] [source:OFFICIAL-ANNOUNCEMENT
 
 ### Research hypotheses and verification register
 
-Official polygons, statutory controls, tenure, heritage/green/blue lines, station conditions, accessibility baseline, staffing, sample frame, budget and model-compliance opinion are all `unknown/to_verify`. Until supplied, PROTO·JZ gives no precise plot, engineering quantity, investment return, approval conclusion or built/operating claim.
+Official polygons, statutory controls, tenure, heritage/green/blue lines, station conditions, accessibility baseline, staffing, sample frame, budget and model-compliance opinion are all `unknown/to_verify`. Until supplied, PAR·JZ gives no precise plot, engineering quantity, investment return, approval conclusion or built/operating claim.
