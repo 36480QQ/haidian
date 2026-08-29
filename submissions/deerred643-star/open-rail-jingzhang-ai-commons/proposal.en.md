@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Taking the century-old Jing-Zhang railway heritage corridor as a civic mainboard, this proposal builds an open-source AI commons of one spine, six stations, three areas and two wings: a 9.7 km rail-to-trail mainline linking six station-hall public nodes and three key areas, forming a recomputable, verifiable, concept-level urban design ready for professional deepening."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.4"
+iteration: "v2.5"
 ---
 
 # OPEN RAIL: Jing-Zhang AI Commons Urban Design Proposal
@@ -26,7 +26,7 @@ iteration: "v2.4"
 > | Feasibility | **Implementation economics as a first-class citizen**: five-element implementation cards for 8 renewal projects + trigger-gated sequencing methodology + six-type funding matrix + four-link accountability chain + lifecycle O&M ledger framework | ◐ Mechanism files ship in the package (`implementation-cards.json`, `sequencing-methodology.json`, `funding-matrix.json`, `lifecycle-om-framework.json`); benefit figures stay "pending baseline", no ranking conclusions output |
 > | Public interest & inclusivity | **Everyone can still use it after AI is switched off**: every AI service point carries a mandatory non-digital equivalent path; six user profiles cover elderly, disabled and low-digital-literacy residents; the blue-green skeleton is overlaid with sponge, heat-island and carbon climate accounts; a public dashboard statically re-discloses indicators, warnings, review and self-check status | ◐ SEB schema enforces the ai_off_path field; `baseline-protocols.json`, `climate-carbon-framework.json`, `dashboard-mockup.json` included; P1–P5 measured values honestly marked "pending baseline" |
 > | Risk & compliance awareness | **All metrics independently recomputable, unknown fields never faked**: four risk classes disclosed item by item; unregistered sources downgraded to "background information pending review"; a red-team review proactively registers outcome-level failure modes with early-warning indicators | ✓ Eight-dimension matrix in `risk.json` plus the failure-mode library in `failure-modes.json`; `node visual/assets/recompute_metrics.js` recomputes offline 12/12 PASS; recalculation path registered in `assumptions.json` (A-BOUNDARY-002) |
-> | Completeness of expression | **Full bilingual deliverables, reproducible offline**: narrative / HTML / A3 / A0 / figures / video with captions and transcript; originally drawn programmatic figures; three machine-readable matrices | ✓ Bilingual deliverables mapped one-to-one; offline rendering reproducible with coverage evidence; this table itself is the review entry index |
+> | Completeness of expression | **Full bilingual deliverables, reproducible offline, with real fabric and three-level visual hierarchy**: narrative / HTML / A3 / A0 / figures / video with captions and transcript; originally drawn programmatic figures — every plan figure now carries a conceptual building-fabric base (1,107 footprints) organized as fabric-structure-focus layers, plus a spine experience scroll for the walking sequence | ✓ Bilingual deliverables mapped one-to-one; offline rendering reproducible with coverage evidence; this table itself is the review entry index |
 
 > **Falsifiability conditions of core claims**: the conditions below make this proposal's main claims independently falsifiable by reviewers and professional teams — triggering any one condition invalidates the corresponding claim or requires its reversion; no vague wording is used to dodge the test.
 >
@@ -257,6 +257,10 @@ Municipal and new infrastructure (concept proposal): retrofitting and capacity a
 Public services: aligned with the six personas — youth apartments and maker services (Origin Community), community healthcare and elder stations (central residential areas), international schools and science venues (campus interfaces), cultural performance facilities (corridor and halls), and barrier-free age-friendly facilities (whole slow-traffic network); the direction can echo the "15-minute community service circle" in the publicly reported regulatory plan (concept proposal, source pending registry review), while specific scales and layouts await specialised deepening.
 
 ![Mobility, slow traffic and blue-green public space system](assets/figures/mobility-bluegreen.en.png)
+
+Spine experience scroll (concept intent): an elevation-longitudinal scroll of the 9.7 km spine from south (Dazhongsi) to north (Zhongzhiyuan N · Qinghe) through six station halls — hall silhouettes, streetscape rhythm, the Jing-Zhang railway memory layer (herringbone paving motif) and a distance ruler in one frame, adding an experiential perspective to the plan figures; hall positions unfold by spine geometry mileage (EPSG:4548), volumes and heights are conceptual only [data:geometry/roads.geojson#ROAD-010] [metric:spine_length_m].
+
+![Spine experience scroll](assets/figures/spine-experience.en.png)
 
 ## Blue-Green Network, Public Space, and Urban Character
 
