@@ -14,6 +14,23 @@
       "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
     },
     {
+      "id": "OPEN-FONT-NOTO-SANS-SC",
+      "title": "Noto Sans SC",
+      "publisher": "Google Fonts / Adobe",
+      "url": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+      "accessed_date": "2026-08-29",
+      "source_type": "open_font_license",
+      "authority_level": "background_only",
+      "usable_for": [
+        "offline Chinese HTML typography under SIL Open Font License 1.1",
+        "local WOFF2 subsetting"
+      ],
+      "not_usable_for": [
+        "official planning evidence",
+        "spatial or implementation claims"
+      ]
+    },
+    {
       "id": "PROCESSED-FACT-PACK",
       "path": "data/processed/agent_fact_pack.md",
       "source_type": "repository_processed_reference",

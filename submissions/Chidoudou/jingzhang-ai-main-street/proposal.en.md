@@ -198,7 +198,7 @@ Character guidance focuses on developable interfaces: continuous public ground f
 
 ## Transport, Rail, Municipal Infrastructure, and Public Services
 
-The transport structure uses heritage-park north-south slow mobility as its spine and six cross-corridor gateways for arrival from both sides. The current conceptual centreline length compares network continuity. [metric:walking_cycling_network_length_m] Break repair advances through wayfinding, crossing phase, sightline, parking, accessibility and then specialist engineering. [data:geometry/roads.geojson#ROAD-002]
+The transport structure uses heritage-park north-south slow mobility as its spine and six cross-corridor gateways for arrival from both sides. Its current conceptual centreline length is approximately 16.09 km and is used only to compare network continuity. [metric:walking_cycling_network_length_m] Break repair advances through wayfinding, crossing phase, sightline, parking, accessibility and then specialist engineering. [data:geometry/roads.geojson#ROAD-002]
 
 Station integration uses an arrival checklist: shade, continuous accessibility, micromobility order, public toilets, staffed information, service status and complaint access. Dazhongsi establishes the T0 route and human baseline first; Wudaokou, Qinghuadongluxikou and other nodes use the same arrival audit. Specialist projects determine actual rail exits and underground space. [depth:traffic_rail_slow_parking]
 
@@ -282,3 +282,4 @@ Every public scenario retains a specific human responsibility and an ordinary-se
 7. Dated public information from the Beijing municipal portal, Haidian CPPCC and Beijing Urban Renewal Service Platform on the AI Origin Community, Jing-Zhang Park and Dazhongsi renewal.
 8. One Dazhongsi evening observation on 13 August 2026; Beijing Subway station/accessibility pages; a 2024 Beijing Daily opening-period transfer report.
 9. Official pages of AI Singapore, Mila, Vector Institute, FCAI, STATION F and Helsinki AI Register, used for mechanism comparison only.
+10. Google Fonts / Adobe, Noto Sans SC; used only for offline HTML Chinese typography, with a local subset generated under the SIL Open Font License 1.1. [source:OPEN-FONT-NOTO-SANS-SC]

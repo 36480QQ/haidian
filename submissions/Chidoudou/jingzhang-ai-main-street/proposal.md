@@ -198,7 +198,7 @@ AI原点社区公开时点数据支持“一公里成果转化圈”的研究方
 
 ## 交通、轨道、市政与公共服务设施
 
-交通结构以遗址公园南北慢行为骨架，六个横向入口承担两侧到达。当前概念中心线总长用于比较网络连续性，[metric:walking_cycling_network_length_m] 断点治理按“导视—过街—视距—停放—无障碍—工程专项”逐级推进。[data:geometry/roads.geojson#ROAD-002]
+交通结构以遗址公园南北慢行为骨架，六个横向入口承担两侧到达。当前概念中心线总长约16.09公里，仅用于比较网络连续性，[metric:walking_cycling_network_length_m] 断点治理按“导视—过街—视距—停放—无障碍—工程专项”逐级推进。[data:geometry/roads.geojson#ROAD-002]
 
 站点一体化采用七项到达清单：遮荫、连续无障碍、非机动车秩序、公共厕所、人工咨询、服务状态与投诉入口。大钟寺先完成T0路线与人工基线，五道口、清华东路西口等节点建立同样的到达审计；轨道出入口和地下空间由专业专项确定。[depth:traffic_rail_slow_parking]
 
@@ -282,3 +282,4 @@ AI原点社区公开时点数据支持“一公里成果转化圈”的研究方
 7. 首都之窗、海淀政协和北京市城市更新服务平台关于AI原点社区、京张铁路遗址公园和大钟寺更新的有日期公开信息。
 8. 2026-08-13大钟寺单次傍晚观察；北京地铁站点与无障碍页面；北京日报2024年开通期站外换乘报道。
 9. AI Singapore、Mila、Vector Institute、FCAI、STATION F与Helsinki AI Register官方网页，仅用于机制比较。
+10. Google Fonts / Adobe，Noto Sans SC；仅用于离线 HTML 中文排版，并按 SIL Open Font License 1.1 生成本地字体子集。[source:OPEN-FONT-NOTO-SANS-SC]
