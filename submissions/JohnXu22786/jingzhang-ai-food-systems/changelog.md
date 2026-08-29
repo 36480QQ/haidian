@@ -24,3 +24,11 @@
 - Rebuilt the bilingual A0 and A3 PDF boards from the corrected local figures and re-rendered the report HTML from the current proposal text.
 - Embedded per-page Noto Sans SC WOFF subsets into all four HTML surfaces using the local source `NotoSansSC-Static.ttf`; recorded the source version, SHA-256, OFL metadata and each embedded subset hash in `visual/assets/asset_rights_ledger.json`. No independent font authorization is claimed.
 - Ran the offline preview generator; HTML/PDF raster previews were skipped because Playwright and PyMuPDF are not installed, while eight local figure previews were refreshed. Formal gates and manifest hashes are rerun after this entry.
+
+## v0.4 - 2026-08-29 (CocoSgt review 5056189027)
+
+- Closed the two visual blockers in the 83/100 `CHANGES_REQUESTED` review: moved the site-overview evidence loop into a dedicated band below the three color blocks, reserved text bands inside every card, and rewrapped bilingual labels so bullets are complete and unobscured.
+- Re-exported the bilingual site-overview/key-areas figures and rebuilt the bilingual A0/A3 boards from those figures. A0 page 1 now has one board-level title band, one fully visible status label, and local panel titles without the former global overlay; title, explanatory text, footnote and provisional warning were checked at a 90-dpi screen/print proxy.
+- Re-rendered both report HTML files and re-embedded the local Noto Sans SC WOFF subsets. Font source/version/SHA-256, OFL metadata, and embedded subset hashes remain in `visual/assets/asset_rights_ledger.json`; no unverified authorization is claimed.
+- Refreshed the eight local figure previews and manifest. Playwright and PyMuPDF are unavailable in the bundled runtime, so HTML/PDF raster preview generation remains an honest skip; direct `pdftoppm` A0 first-page inspection was used instead.
+- Re-ran formal self-check, strict manifest validation, manifest schema, four independent review gates, and font coverage. Local checks are not CocoSgt scoring; official review remains authoritative.
