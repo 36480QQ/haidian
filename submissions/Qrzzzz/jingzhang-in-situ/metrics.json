@@ -4,10 +4,17 @@
     "length": "m",
     "area": "sqm"
   },
-  "phase": "phase2_spatial_evidence",
+  "phase": "r4_package_with_phase2_spatial_baseline",
   "independent_recalculation_summary": {
-    "known_metric_count": 21,
-    "independently_recomputable_count": 19,
+    "package_total": {
+      "known_metric_count": 23,
+      "unknown_metric_count": 6,
+      "independently_recomputable_count": 21
+    },
+    "phase2_spatial_baseline": {
+      "known_metric_count": 21,
+      "independently_recomputable_count": 19
+    },
     "tolerance": "area/length <=0.5%; counts exact"
   },
   "metrics": {
@@ -527,6 +534,47 @@
       "recompute_trigger": "Register authoritative/rights-cleared source and rerun the full package.",
       "reason": "No authoritative heritage-control geometry was supplied.",
       "adverse_or_unknown_result": true
+    },
+    "regional_interface_contract_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/regional-interface-contracts.json"
+      ],
+      "formula": "count($.interfaces)",
+      "confidence": "high",
+      "assumptions": [
+        "Counts candidate design contracts, not institutions, partnerships, projects, authorized exchanges, or operating interfaces."
+      ],
+      "baseline": "IM12 contained one abstract external-interface item.",
+      "action": "Differentiate IM12 into RI01–RI05 without creating IM14.",
+      "target_or_observation_window": "Exactly five candidate regional-interface contracts in this package version.",
+      "evidence_status": "design-contract-recomputable",
+      "recompute_trigger": "Any interface addition, removal, identifier change, or target-scope change reruns the regional-interface audit and full package gates.",
+      "independently_recomputable": true,
+      "excluded_from_phase2_spatial_summary": true
+    },
+    "regional_interface_authorized_count": {
+      "status": "known",
+      "value": 0,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/regional-interface-contracts.json"
+      ],
+      "formula": "count($.interfaces where $.authorization_gate.gate_status == 'passed')",
+      "confidence": "high",
+      "assumptions": [
+        "No written external authorization is present in the current package."
+      ],
+      "baseline": "No authorized regional interface.",
+      "action": "Retain zero until a separately cleared written authorization record is registered.",
+      "target_or_observation_window": "Current package state.",
+      "evidence_status": "zero-result-recomputable",
+      "recompute_trigger": "Addition, withdrawal, expiry, or invalidation of a written authorization record reruns the regional-interface audit and full package gates.",
+      "independently_recomputable": true,
+      "adverse_or_unknown_result": true,
+      "excluded_from_phase2_spatial_summary": true
     }
   }
 }

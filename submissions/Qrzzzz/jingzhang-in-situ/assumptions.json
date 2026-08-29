@@ -68,14 +68,16 @@
     {
       "id": "A-REGION-001",
       "status": "open_data_gap",
-      "statement": "No verified cooperation agreements, operating interfaces or current datasets establish project-level links with Beiwei Community, Future Science City, Huairou Science City, Beijing Economic-Technological Development Area or the Beijing-Tianjin-Hebei region.",
+      "statement": "No verified cooperation agreements, operating interfaces or current datasets establish project-level links with Beiwei Community, Future Science City, Huairou Science City, the taskbook-named Economic-Technological Development Area scope (exact entity unresolved) or the Beijing-Tianjin-Hebei region.",
       "impact": "Regional collaboration loops and external resource flows are conceptual network hypotheses only; named organizations must not be presented as committed partners.",
       "affected_files": [
         "report/",
         "visual/",
-        "assets/figures/"
+        "assets/figures/",
+        "visual/assets/regional-interface-contracts.json",
+        "design_depth_matrix.json#/items/11/implementation_projects[implementation_id=IM12]"
       ],
-      "recalculation_trigger": "Add current first-party sources and, where commitments are claimed, written confirmation from the responsible organization; distinguish background precedent from a local agreement."
+      "recalculation_trigger": "Add current first-party sources and, where any exchange or commitment is proposed, separately scoped written authorization from competent roles; rerun the regional-interface audit and distinguish the participant-authored design hypothesis from any later local agreement."
     },
     {
       "id": "A-RIGHTS-001",

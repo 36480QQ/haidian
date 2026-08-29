@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v1.1-r4-regional-interfaces - 2026-08-29
+
+### R4 Five Regional In-Situ Interfaces
+
+- Strengthened existing IM12 only, without creating SC13, IM14, F12, a fourth flagship, or a second first use. RI01—RI05 now define five target-specific candidate handover contracts for Beiwei Community, Future Science City, Huairou Science City, the taskbook-named Economic-Technological Development Area scope, and Beijing–Tianjin–Hebei.
+- Each bilingual contract records its differentiated purpose, existing Jing-Zhang anchors, outbound and minimum inbound artifacts, first deliverable, acceptance criteria, prohibited inputs, accountable and reviewer role types, authorization gate, review trigger, stop rule, and evidence boundary. Current state remains 5 contracts / 0 authorized / 0 operating / 0 field or live exchanges.
+- Added only two recomputable state metrics: `regional_interface_contract_count=5` and `regional_interface_authorized_count=0`; the Phase 2 spatial baseline remains separately identified as 21 known / 19 independently recomputable, while the package total is 23 known / 6 unknown / 21 independently recomputable.
+- Rebuilt bilingual F07 with five hollow, dashed, physically disconnected interface cards outside the dominant internal loop. Rebuilt F11 with a separate readiness header block in standalone figures and a separate governance card in native A3/A0, so 5/0/0 is not a lifecycle state or complaint-path overlay.
+- Regenerated four figures, four offline HTML entries, and all four PDFs through the hash-bound R4 wrapper over the frozen Phase 3 and Phase 4 sources. This remains a participant-authored candidate mechanism, not evidence of partnership, authorization, exchange, operation, procurement, approval, or implementation.
+
 ## v1.0-local-repair - 2026-08-28
 
 ### R3-E implementation-evidence repair candidate

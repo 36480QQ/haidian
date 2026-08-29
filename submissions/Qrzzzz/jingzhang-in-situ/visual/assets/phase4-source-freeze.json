@@ -317,15 +317,15 @@
     "protocol_selectors": "69/69",
     "selector_expanded_targets": 317,
     "sources": "19 / 0 orphan",
-    "metrics": "27 total / 21 known / 6 unknown / 19 independently recomputable",
+    "metrics": "29 total / 23 known / 6 unknown / 21 independently recomputable; Phase 2 spatial summary remains 21 known / 19 independently recomputable",
     "red_team": "16 tests / 13 retained fail-stop-unknown",
     "proposal_sections": "13 zh / 13 en",
     "geometry_metrics_sources_protocol_mutation_allowed": false
   },
   "allowed_phase4_mutation": {
-    "scope": "presentation layer only",
-    "files": "phase4 audit/freeze/contracts/generator; cover; four PDFs; four HTML carriers; F08/F11 presentation renderings; presentation CSS/JS; manifest/self_check/changelog/copyright statement",
-    "restriction": "no new facts, sources, metrics, geometry, IDs, scenarios, actions, claims, authority, evidence grade, or implementation status"
+    "scope": "presentation layer plus bounded R4 IM12 regional-interface structured authority",
+    "files": "phase4 audit/freeze/contracts/generator; cover; four PDFs; four HTML carriers; F08/F11 presentation renderings; presentation CSS/JS; manifest/self_check/changelog/copyright statement; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers",
+    "restriction": "No geometry, source claim, approval, external capability, partnership, appointment, cost, SC13, IM14, F12, additional flagship, or additional first use."
   },
   "phase3_phase4_handoff": {
     "schema": "jz-phase3-phase4-handoff/v1",
@@ -361,7 +361,9 @@
         "assets/figures/mobility-bluegreen.en.png",
         "assets/figures/mobility-bluegreen.png",
         "assets/figures/site-overview.en.png",
-        "assets/figures/site-overview.png"
+        "assets/figures/site-overview.png",
+        "assets/figures/ai-ecosystem.en.png",
+        "assets/figures/ai-ecosystem.png"
       ],
       "allowed_phase4_output_overrides": [
         "drawings/a0-boards.en.pdf",
@@ -374,11 +376,11 @@
         "visual/assets/visual.css",
         "visual/assets/visual.js",
         "visual/index.en.html",
-        "visual/index.html"
+        "visual/index.html",
+        "assets/figures/operations-pathway.en.png",
+        "assets/figures/operations-pathway.png"
       ],
       "phase3_outputs_preserved_byte_for_byte": [
-        "assets/figures/operations-pathway.en.png",
-        "assets/figures/operations-pathway.png",
         "assets/figures/scenario-matrix.en.png",
         "assets/figures/scenario-matrix.png"
       ],
@@ -390,7 +392,8 @@
         "handoff_audit": 0
       },
       "nonzero_phase3_byte_checks_mean": "historical bytes were explicitly superseded; they are expected diagnostics on the final candidate and are not Phase 3 semantic failures",
-      "restriction": "Only the exact listed paths may differ from the Phase 3 byte snapshot, and each current byte must match its declared Phase 2 repair or Phase 4 generation owner. Geometry, metrics, sources, evidence grades, protocol/governance/red-team authority, IDs, claims, and implementation status remain outside the override set."
+      "restriction": "Only the exact listed paths may differ from the Phase 3 byte snapshot, and each current byte must match its declared Phase 2 repair or Phase 4 generation owner. Geometry, metrics, sources, evidence grades, protocol/governance/red-team authority, IDs, claims, and implementation status remain outside the override set.",
+      "r4_owner_contract": "visual/assets/r4-regional-interface-generation-contract.json"
     },
     "full_chain_mode": {
       "phase3_historical_replay": "Restore the Phase 3 generator and protocol auditor at the submission root of detached d673846a83d03e6adafa48d5b068601a3d88330a; generator --check and protocol audit with and without --require-generated must all exit 0.",
@@ -631,5 +634,41 @@
       "R3-E bilingual Markdown authority, official-reference tier normalization, cross-media carrier assertions, and PDF layout repair only"
     ],
     "authority": "local repair only; no commit, push, PR, approval, publication, or official-score claim"
+  },
+  "r4_regional_interface_override": {
+    "schema": "jz-r4-regional-interface-override/v1",
+    "authority": "R4 changes IM12 regional-interface contracts and their exact bilingual carriers only. Geometry, SC01–SC12, IM01–IM13, the sole SC10+IM06 first use, Phase 3 state/authority/governance semantics, cost, operators, controllers, and real-world approval remain unchanged.",
+    "interface_ids": [
+      "RI01",
+      "RI02",
+      "RI03",
+      "RI04",
+      "RI05"
+    ],
+    "status": "5 candidate contracts / 0 authorized / 0 operating / 0 field or live exchanges",
+    "file_sha256": {
+      "assets/figures/ai-ecosystem.png": "413a3083c6463c9ab5d113fb3fbcebee8b48d39280e68d15ae47a5c1c0f0655c",
+      "assets/figures/ai-ecosystem.en.png": "154bf31c7b06fc66000d9a98900c52e56a79bce2641ef004e92d60f899a158cb",
+      "assets/figures/operations-pathway.png": "c4b29de5657934ccef645db914ab9aa56d62100906e47432639fd654614231c3",
+      "assets/figures/operations-pathway.en.png": "d6e600f2fa58aad8f964e989986cbf8a5cb19cde58636fdd6fdf1593a321480c",
+      "metrics.json": "dafc6874ac2ea59b9be8b441777fc8a29af5833146db7f9c5c4bdbfe4b98e678",
+      "assumptions.json": "3f18540cef67c99d46add6f3fee8ff945f4b8c9b61ac2428b3c6e98364ff11fd",
+      "compliance_matrix.json": "bdfeecbf94265b2268f717dac23a91ce54396d7138f311e8cd34e9ffe46a3245",
+      "design_depth_matrix.json": "94b4880e19033a5db9f383a84eca6f3332a4b4fadfbe51c923c56d3b56764862",
+      "proposal.md": "13af20cf7ba6bf9e3a6f9d17f7a4e4dcef1b9af384be41b9e668668b9dc303c2",
+      "proposal.en.md": "223a7a8ce06d9fa3dae45332cc69268d10be587e2db1d611bcd5163e1320e68d",
+      "visual/assets/phase4-figure-registry.json": "b7ea7916f06bd397a0ab630de618efda895e612979c1b732463a8b5edc56842f",
+      "visual/assets/phase4-layout-contract.json": "1cf8b0ce2be47da37ad261ba9eacde594a9f0db7de8da02d901ec03045e22c1b",
+      "visual/assets/regional-interface-contracts.json": "96d370bf605ba5b7094683f30025549a62620384cafcd881a2967ea6565a721c",
+      "visual/assets/r4-regional-interface-generator.js": "ffedd2543b47fdd3c964511aec0d59f16ef1cda5820667fc17f1878e3e38d560"
+    },
+    "output_overrides": [
+      "assets/figures/ai-ecosystem.png",
+      "assets/figures/ai-ecosystem.en.png",
+      "assets/figures/operations-pathway.png",
+      "assets/figures/operations-pathway.en.png"
+    ],
+    "generator": "visual/assets/r4-regional-interface-generator.js",
+    "contract": "visual/assets/r4-regional-interface-generation-contract.json"
   }
 }

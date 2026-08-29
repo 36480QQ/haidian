@@ -1388,6 +1388,20 @@
           "title_zh": "外部区域候选协同接口",
           "title_en": "Candidate External Collaboration Interfaces",
           "concept_status": "conceptual_recommendation",
+          "regional_interfaces_ref": "visual/assets/regional-interface-contracts.json#/interfaces",
+          "regional_interface_ids": [
+            "RI01",
+            "RI02",
+            "RI03",
+            "RI04",
+            "RI05"
+          ],
+          "current_readiness": {
+            "contract_count": 5,
+            "authorized_count": 0,
+            "operating_count": 0,
+            "activation": "written authorization + first-party factual basis + named accountable interface lead"
+          },
           "scenario_refs": [],
           "responsible_roles": {
             "zh": [
@@ -1405,12 +1419,14 @@
             "zh": [
               "机构授权",
               "事实依据",
-              "非约束议题清单"
+              "非约束议题清单",
+              "RI01—RI05 逐接口授权范围与具名责任角色"
             ],
             "en": [
               "institutional authorization",
               "factual basis",
-              "non-binding issue list"
+              "non-binding issue list",
+              "per-interface authorization scope and named accountable roles for RI01–RI05"
             ]
           },
           "qualitative_cost": {
@@ -1424,12 +1440,14 @@
               "zh": [
                 "授权记录",
                 "议题与接口台账",
-                "对外措辞复核"
+                "对外措辞复核",
+                "visual/assets/regional-interface-contracts.json 中五域首件交付与停止合同"
               ],
               "en": [
                 "authorization record",
                 "issue and interface register",
-                "external-wording review"
+                "external-wording review",
+                "five-domain first-deliverable and stop contracts in visual/assets/regional-interface-contracts.json"
               ]
             },
             "maintenance": {
@@ -1440,12 +1458,14 @@
               "zh": [
                 "授权有效性",
                 "事实可追溯",
-                "合作措辞边界"
+                "合作措辞边界",
+                "五项合同、零授权、零运行的状态一致性"
               ],
               "en": [
                 "authorization validity",
                 "factual traceability",
-                "partnership-wording boundary"
+                "partnership-wording boundary",
+                "state consistency of five contracts, zero authorizations, and zero operating interfaces"
               ]
             }
           },
@@ -1454,8 +1474,8 @@
             "en": "Project liaisons and authorized institutional roles manually confirm every external interface."
           },
           "stop_exit": {
-            "zh": "无授权或事实依据不得公开称合作。",
-            "en": "Do not call it a partnership without authority or evidence."
+            "zh": "任一接口无逐范围书面授权、一手事实依据或具名京张责任角色，不得交换、运行或公开称合作；出现禁止输入、误导措辞或停止条件即撤回该接口材料。",
+            "en": "Without per-scope written authorization, first-party factual basis, and a named Jing-Zhang accountable role, an interface may not exchange, operate, or be described as a partnership; prohibited input, misleading wording, or a stop trigger withdraws its material."
           }
         },
         {

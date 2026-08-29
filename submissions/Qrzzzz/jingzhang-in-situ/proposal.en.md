@@ -81,7 +81,19 @@ Challenge-led validation and reversible temporary use inform only gates.[source:
 
 ### Ecosystem map and eight enabling elements
 
-F07 moves land, space, industry, capital, talent, compute, data, and scenarios through research→matching→controlled testing→public co-testing→feedback. Complaints, failures, costs, and revisions return to research. Land, capital, compute, and external regions remain authorization-dependent conditions, not committed resources or partners.[source:DATA-SRC-AGENT-TASKBOOK-20260518] [depth:overall_spatial_structure]
+F07 moves land, space, industry, capital, talent, compute, data, and scenarios through research→matching→controlled testing→public co-testing→feedback. Complaints, failures, costs, and revisions return to research. Land, capital, and compute remain authorization-dependent. External regions do not enter the internal loop: IM12 instead gives RI01–RI05 separate inactive contracts for purpose, minimum input, first deliverable, authorization Gate, and stop rule.[source:DATA-SRC-AGENT-TASKBOOK-20260518] [depth:overall_spatial_structure]
+
+All five domains are participant-authored design hypotheses—not existing functions, partnership intent, or resource commitments. The present state is five contracts, zero authorized, zero operating, and zero field or live exchanges.[metric:regional_interface_contract_count] [metric:regional_interface_authorized_count]
+
+| Target / interface purpose | Jing-Zhang output | Minimum inbound material | First deliverable | Current status / why it cannot start |
+| --- | --- | --- | --- | --- |
+| RI01 Beiwei Community: translate people-present into everyday public-service equivalence | SC08/SC12 four-path equivalence, Human Takeover, accessible complaint, and failure-handoff patterns | Authorized de-identified issue taxonomy; first-party service catalogue, window/scenario, and accessibility notice | *Everyday Public-Service Equivalent-Path Package* | Candidate / Not Authorized; no per-scope mandate, first-party facts, or accountable role |
+| RI02 Future Science City: turn a public research question into a bounded, stoppable urban-validation task | TVS-1–3, evidence-field–professional-Gate–stop template, and low-tech checklist | Cleared public question, applicability/use limits, safety class, and data class | *Research-Question-to-Urban-Validation Task Card* | Candidate / Not Authorized; no disclosure permission, material rights, or scenario mandate |
+| RI03 Huairou Science City: test science translation, access, and error rollback | F10 bilingual status, SC11 source review, and SC12 static/human fallback | Cleared public science summary, rights/access rules, cautions, and scenario boundary | *Science-Communication-and-Access Tabletop Stress-Test Package* | Candidate / Not Authorized; no content rights, access boundary, or accountable role |
+| RI04 Economic-Technological Development Area: extend reversible-component responsibility to manufacture, maintenance, and removal | C01–C09 power-off/assembly, maintenance/human substitution, and SC10 stop logs | Supplier-neutral manufacturability, material/safety/maintenance/disassembly feedback, and failure conditions | *Reversible-Prototype Manufacturing–Maintenance Handover Sheet* | Candidate / Not Authorized; no confirmed entity, rights boundary, professional role, or manufacturing conclusion |
+| RI05 Beijing–Tianjin–Hebei: compare different public urban contexts under one rule set | Nine states/fifteen transitions, evidence grades, negative results/takeover, and four result classes | First-party public rule/context, source rights, definitions, and non-comparability | *Same-Rule / Different-Context Comparison Package* | Candidate / Not Authorized; no per-context mandate, first-party facts, or cross-regional governance arrangement |
+
+The complete bilingual contracts are at `visual/assets/regional-interface-contracts.json#/interfaces`. That file is authoritative for prohibited inputs, Jing-Zhang accountability, counterparty role types after authorization, review triggers, and per-interface stop rules. Any prohibited input, misleading partnership wording, or missing Gate produces only stop/withdrawal—never an “established coordination” result.
 
 ![F07 Three Zones and Two Wings AI Ecosystem and Eight-Element Loop](assets/figures/ai-ecosystem.en.png)
 
@@ -244,7 +256,7 @@ The front stage shows seven packages. Thirteen per-IM machine objects live at `d
 | AP4 AI Origin prototype | IM05 | SC05/06/07 matching and service | Leak, mismatch, unclear facility returns to human |
 | AP5 Dazhongsi prototype | IM06 | SC09/10/11 arrival, trial, and culture | Rights, safety, or complaint failure removes |
 | AP6 Public interface and identity | IM07–IM10 | Landmarks, components, wayfinding, ledger, and all-prototypes SC12 | Rights, maintenance, fact, or consent failure removes |
-| AP7 Operation and collaboration | IM11–IM12 | Candidate annual activity and external issues | No permit/authorization means no operation/partnership claim |
+| AP7 Operation and collaboration | IM11–IM12 | Candidate annual activity; five-domain first-exchange contracts RI01–RI05 | No per-interface authorization, first-party fact, or accountable role means no exchange, operation, or partnership claim |
 
 ### Implementation-maturity evidence and current NO-GO
 
@@ -260,7 +272,7 @@ Sixteen independent adversarial tabletop tests cover wrong advice, bias/inequali
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Phase 2 records 21 known/documented metrics; 19 can be independently recalculated from package GeoJSON and structured fields. Areas and lengths use EPSG:4548 with a ≤0.5% tolerance; counts require exact equality. Every metric follows baseline–action–target or observation window–evidence status–rerun trigger and retains `status/value/unit/source_files/formula/confidence/assumptions`.[metric:site_area_sqm] [metric:candidate_cross_section_total_length_m] [depth:metrics_recalculation]
+The spatial-evidence baseline remains 21 known/documented metrics, 19 independently recalculable from package GeoJSON and structured fields. Areas and lengths use EPSG:4548 with a ≤0.5% tolerance; counts require exact equality.[metric:site_area_sqm] [metric:candidate_cross_section_total_length_m] This round adds two contract-state counts—five RI contracts and zero authorized—computed from one JSON; they do not count institutions, projects, partnerships, or performance.[metric:regional_interface_contract_count] [metric:regional_interface_authorized_count] [depth:metrics_recalculation]
 
 Adverse, zero, and unknown results remain visible: 0 of 12 candidates are surveyed, while scenario land-use gap/overlap are both 0; those results return to count and topology metrics.[metric:cross_section_surveyed_count] [metric:land_use_gap_area_sqm] [metric:land_use_overlap_area_sqm] The OSM background check records 0% heritage-park intersection and a 667 m mean offset to four named street proxies.[source:DATA-SRC-OSM-CONTEXT-20260828] [metric:osm_heritage_park_intersection_ratio] [metric:osm_named_street_average_offset_m] FAR, height, road area, flows, accessibility pass rate, and heritage-control area remain `unknown`. Because the raw OSM response is absent, its two results are excluded from the 19 package-recalculable metrics and cannot alter the provisional boundary.[metric:floor_area_ratio]
 
@@ -276,7 +288,7 @@ F05 shows evidence authority and recalculation. The three matrices preserve deta
 4. **Three prototypes:** Zhongzhiyuan validates, AI Origin translates, Dazhongsi hosts public trial; Key Areas and F03/F09; all polygons provisional.
 5. **3+9 scenarios:** SC01/05/10 carry the full loop and nine add safeguards; T04/F08; twelve-scenario backend unchanged.
 6. **Responsibility contract:** each SC keeps data, operator, human, low-tech, appeal, entry, evaluation, exit; T03/T04/F08; real performance unknown.
-7. **Eight-element gate loop:** research, matching, test, public co-test, feedback; T02/F07; cases support background mechanisms only.
+7. **Eight-element internal loop + five-domain interfaces:** internal Gates connect the eight elements; IM12 defines five differentiated, inactive RI01–RI05 exchange contracts; T02/F07; target functions are design hypotheses, not existing partnerships.
 8. **Reversible renewal:** KEEP/OPEN/INTENSIFY precede permanence; F02/F04/F05; no invented FAR, height, redline.
 9. **One first-use trial:** existing SC10+IM06 runs within a written window, then withdraws; T06/F08/F11; no new SC or IM.
 10. **Seven packages/audit:** AP1–AP7 cover IM01–IM13 and anchor 6 agents/31 outputs; T06/F05/F11 and matrices; completeness means submission evidence only.
