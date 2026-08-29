@@ -28,9 +28,13 @@
         "submissions/chucky1102/jingzhang-renline/assets/figures/metrics-evidence.png",
         "submissions/chucky1102/jingzhang-renline/assets/figures/mobility-bluegreen.en.png",
         "submissions/chucky1102/jingzhang-renline/assets/figures/mobility-bluegreen.png",
+        "submissions/chucky1102/jingzhang-renline/assets/figures/public-section.en.png",
+        "submissions/chucky1102/jingzhang-renline/assets/figures/public-section.png",
         "submissions/chucky1102/jingzhang-renline/assets/figures/renline-logo.svg",
         "submissions/chucky1102/jingzhang-renline/assets/figures/site-overview.en.png",
         "submissions/chucky1102/jingzhang-renline/assets/figures/site-overview.png",
+        "submissions/chucky1102/jingzhang-renline/assets/figures/street-interface.en.png",
+        "submissions/chucky1102/jingzhang-renline/assets/figures/street-interface.png",
         "submissions/chucky1102/jingzhang-renline/assets/figures/survey-track.png",
         "submissions/chucky1102/jingzhang-renline/assets/media/cover.webp",
         "submissions/chucky1102/jingzhang-renline/assets/media/renline-explorer-walkthrough.webp",
@@ -98,6 +102,7 @@
         "submissions/chucky1102/jingzhang-renline/visual/assets/renline-explorer-fallback.png",
         "submissions/chucky1102/jingzhang-renline/visual/assets/renline-explorer.js",
         "submissions/chucky1102/jingzhang-renline/visual/assets/run-switchback-validation.js",
+        "submissions/chucky1102/jingzhang-renline/visual/assets/seb-adoption.json",
         "submissions/chucky1102/jingzhang-renline/visual/assets/switchback-protocol.json",
         "submissions/chucky1102/jingzhang-renline/visual/assets/switchback-protocol.schema.json",
         "submissions/chucky1102/jingzhang-renline/visual/assets/switchback-validation-receipt.json",
@@ -107,7 +112,7 @@
       "ai_package_stages": {
         "submissions/chucky1102/jingzhang-renline": "formal"
       },
-      "total_bytes": 37005894,
+      "total_bytes": 38645521,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -188,8 +193,8 @@
           "source": 14,
           "standard": 6,
           "depth": 15,
-          "data": 32,
-          "metric": 24
+          "data": 33,
+          "metric": 27
         }
       }
     },
