@@ -174,7 +174,11 @@
       "official_basis": false,
       "recalculation_status": "blocked_missing_official_controls",
       "assumptions": [],
-      "reason": "Approved FAR controls and the official site boundary are both absent from the public site package. The scheme deliberately makes no estimate, because a floor area ratio conclusion would exceed the responsibility boundary declared for machine-agent submissions."
+      "reason": "Approved FAR controls and the official site boundary are both absent from the public site package. The scheme deliberately makes no estimate, because a floor area ratio conclusion would exceed the responsibility boundary declared for machine-agent submissions.",
+      "closure_conditions_zh": "取得官方控规批复（建筑密度、容积率、限高）后按 EPSG:4548 重算并替换当前 null 值。",
+      "closure_conditions_en": "After official planning control (building density, FAR, height limit) is released, recompute under EPSG:4548 and replace the current null value.",
+      "responsibility": "政府规划部门发布；本包自动接入复算接口。",
+      "verification": "metrics.json status 从 unknown/ null 转为 known/有限值，且 confidence 不低于 medium。"
     },
     "building_height_limit_m": {
       "status": "unknown",
@@ -189,7 +193,11 @@
       "official_basis": false,
       "recalculation_status": "blocked_missing_official_controls",
       "assumptions": [],
-      "reason": "No approved height control is published for the belt. The scheme states a height and massing intent in words and refuses to publish a numeric limit that a reader could mistake for a statutory control."
+      "reason": "No approved height control is published for the belt. The scheme states a height and massing intent in words and refuses to publish a numeric limit that a reader could mistake for a statutory control.",
+      "closure_conditions_zh": "取得机场净空、文保紫线、铁路安全净距三项叠加约束后按 EPSG:4548 重算并替换当前 null 值。",
+      "closure_conditions_en": "After the three combined constraints (airport clearance, heritage purple-line, rail safety) are released, recompute under EPSG:4548 and replace the current null value.",
+      "responsibility": "政府规划/文物/铁路主管部门联合发布。",
+      "verification": "metrics.json status 从 unknown/ null 转为 known/有限值，且 assumptions 中注明三约束的 official_boundary 链接。"
     },
     "resident_population": {
       "status": "unknown",
@@ -204,7 +212,11 @@
       "official_basis": false,
       "recalculation_status": "blocked_missing_official_data",
       "assumptions": [],
-      "reason": "No population figure for the belt extent exists in the public site package, and inferring one from open sources would create a false precision about real residents."
+      "reason": "No population figure for the belt extent exists in the public site package, and inferring one from open sources would create a false precision about real residents.",
+      "closure_conditions_zh": "取得走廊粒度的现状人口普查/统计资料后回填。",
+      "closure_conditions_en": "Fill in once corridor-grain resident population census / statistical data is available.",
+      "responsibility": "统计部门发布。",
+      "verification": "metrics.json status 从 unknown/ null 转为 known/有限值，附数据来源 URL。"
     },
     "parking_supply_spaces": {
       "status": "not_applicable",
@@ -217,7 +229,11 @@
       "official_basis": false,
       "recalculation_status": "not_applicable",
       "assumptions": [],
-      "reason": "Parking supply is a control-detailed-planning output. At urban-design concept stage the scheme sets a parking policy direction in words instead of a number."
+      "reason": "Parking supply is a control-detailed-planning output. At urban-design concept stage the scheme sets a parking policy direction in words instead of a number.",
+      "closure_conditions_zh": "在控制性详细规划阶段根据建筑量、道路红线、轨道站点一体化设计推算；本包不主张在概念阶段给出数字。",
+      "closure_conditions_en": "Compute at regulatory-detailed planning stage from building program, road redlines and station-area integrated design; this package does not project a number at concept stage.",
+      "responsibility": "本包输出方法学；专业团队在详细规划阶段填写。",
+      "verification": "metrics.json status 从 not_applicable 转为 known/有限值。"
     },
     "key_area_count": {
       "confidence": "medium",
