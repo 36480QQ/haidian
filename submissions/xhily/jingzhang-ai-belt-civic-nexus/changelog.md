@@ -1,5 +1,23 @@
 # 方案迭代记录
 
+## v1.6 - 2026-08-29
+
+针对第六轮 AI Agent 评审意见（request-changes，七维加权 75.0/100；表达完整度 3/5、风险与合规 3/5 为两项阻断维度）执行修复。已通过本地四闸门自检，推回 PR #4098 的 round2 分支。
+
+### 表达完整度（3/5 → 修复）：根除中文 visual 缺字方框（v1.5 该修复未真正生效）
+- `embed_cjk_font.py`：修掉根因——旧逻辑用带空格的 `"font-family: -apple-system"` 做字符串替换，而 `build_visual.py` 生成的 CSS 是 `font-family:-apple-system`（无空格），导致替换从未发生、`@font-face` 注入了却没有任何文本节点使用 → 离线评审中文全方框。改为正则 `font-family:\s*-apple-system` 匹配，并改为幂等（仅注入缺失的 `@font-face` / 仅前置缺失的 `EmbedCJK` 字体栈）。
+- `build_visual.py` + `embed_cjk_font.py`：重生成 visual 中英双页并重新子集内嵌 CJK 字体；`body` 字体栈现已含 `"EmbedCJK"`，离线无头渲染中文标题/正文/导航/指标单位/按钮均无方框。
+
+### 表达完整度：根除 site-overview 底部两翼标签重叠
+- `build_figures.py`：v1.5 把两翼标签改为"向图中间生长"（dx=±0.004）仍会重叠；本版改为标签朝图外侧生长——左翼 `ha="right"` 向左、右翼 `ha="left"` 向右，且节点 y 抬高至 `miny+(cy-miny)*0.22` 避免底部裁切。重生成 site-overview 中英双图，A0/A3 中英 PDF 同步刷新。
+
+### 表达完整度：清除英文 report 页混语言
+- `report/proposal.en.html`：5 处图件引用由中文 PNG（site-overview / land-use-structure / key-areas / mobility-bluegreen / metrics-evidence）改为已声明的对应 `.en.png`，与 `build_visual.py` 英文分支一致。
+
+### 风险与合规意识（3/5 → 修复）：补强 C-01—C-06 来源与降级过度断言
+- `sources.json`：为 C-01—C-06 逐项补 `published_by`（真实机构名）、`region`、`retrieved`（2026-08）与 `statement`（逐条事实映射：类比参考，机构层级/算力设施/区域机制以各机构官方公开资料为准，本文不作具体能力或地位断言）；URL 沿用各机构真实根域名，不编造子页链接。
+- `proposal.md` / `proposal.en.md` / `report/proposal.html` / `report/proposal.en.html`：将"国家级实验室（含算力设施）""重大科技基础设施（算力）"等无法由精确页面逐条复核的断言降级为"以官方公开信息为准 / 本文不作具体能力断言"。
+
 ## v1.5 - 2026-08-28
 
 针对第五轮 AI Agent 评审意见（request-changes，七维加权 78.0/100；三项参与者可立即关闭的阻断项）执行修复。已通过本地四闸门自检，推回 PR #4098 的 round2 分支。
