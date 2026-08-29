@@ -1,5 +1,17 @@
 # 方案迭代记录 / Changelog
 
+## v71.0 - 2026-08-29
+
+**渐进阅读入口 / Progressive Reading Routes**
+
+- 修复前，首屏已经声明“30 秒 / 3 分钟 / 15 分钟”三种阅读深度，但它们只是不可操作的标签；读者仍需从同一条八段导航自行猜测入口，时间承诺没有形成可用路径。
+- 将中英文三种阅读深度改为可点击、可键盘聚焦并带有目的说明的入口：30 秒进入五动作与七项非 AI 权利，3 分钟进入三区同屏、五步旅程与四态，15 分钟从空间系统继续追到 12 场景、8 项目、专业交接与证据。
+- 不新增正文主张、图件、媒体、来源、几何、指标或 PDF。geometry、`metrics.json`、12/8/3/36、G0/NO-GO、临时边界、现实结果 0、责任接受 0、独立人工双语复核 0/8、权利边界和四份 PDF 均保持冻结。
+
+- Before repair, the hero already promised 30-second, three-minute and 15-minute reading depths, but they were inert labels. Readers still had to guess an entry from the same eight-section navigation, so the time promise did not form a usable route.
+- Converted the three bilingual reading depths into clickable, keyboard-focusable entries with explicit destinations: 30 seconds opens the five actions and seven non-AI rights; three minutes opens the one-board comparison, five-action journeys and four states; 15 minutes starts at the spatial system and continues through 12 scenes, eight projects, professional handoff and evidence.
+- No proposal claim, figure, media, source, geometry, metric or PDF is added. Geometry, `metrics.json`, 12/8/3/36, G0/NO-GO, provisional boundaries, zero real outcomes, zero accepted duties, 0/8 independent human bilingual review, rights boundaries and all four PDFs remain frozen.
+
 ## v70.0 - 2026-08-29
 
 **三区同屏判读入口 / Three-place One-board Reading Entry**
