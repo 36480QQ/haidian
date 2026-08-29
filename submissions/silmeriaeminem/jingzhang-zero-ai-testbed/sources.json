@@ -169,11 +169,20 @@
     {
       "id": "DATA-SRC-AMAP-POI-20260809",
       "source_type": "local_collected_public_data",
-      "usage": "高德地图 POI 采集：8 个图层共 1127 个特征（去重后原始 966 条），用于现状 POI 底数与空间分析、十五分钟生活圈缺口识别，支撑 land_use/buildings/green_space/public_space/education/medical/transport_supplement/cultural_heritage 图层。",
+      "usage": "高德地图 POI 采集：8 个图层共 1127 个特征（去重后原始 966 条），用于现状 POI 底数与空间分析、十五分钟生活圈缺口识别，支撑 land_use/green_space/public_space/education/medical/transport_supplement/cultural_heritage 图层（建筑轮廓由 OSM 公开数据提供，见 DATA-SRC-OSM-BUILDINGS-20260829）。",
       "license": "amap_open_platform_terms",
-      "rights": "通过个人开发者账号调用高德开放平台 POI 检索 API 采集，适用高德开放平台《服务条款》与《开放数据服务协议》（以 2026-08 采集时生效版本为准，数据来源署名为高德地图）。原始 POI 坐标数据不随投稿再分发；投稿中仅保留去重/聚合后的概念设计图层（建筑为约 36m 方形、道路为约 16m 缓冲的派生表达），不作法定现状、权属或红线依据，不替代官方规划底图。",
+      "rights": "通过个人开发者账号调用高德开放平台 POI 检索 API 采集，适用高德开放平台《服务条款》与《开放数据服务协议》（以 2026-08 采集时生效版本为准，数据来源署名为高德地图）。原始 POI 坐标数据不随投稿再分发；投稿中仅保留去重/聚合后的概念设计图层（道路为约 16m 缓冲的派生表达，建筑为 OSM 真实轮廓），不作法定现状、权属或红线依据，不替代官方规划底图。",
       "verification_status": "approved_local_collection",
       "conversion_record": "原始 API 返回 -> 按图层去重/分类 -> 派生为概念设计图层（GeoJSON，EPSG:4326/WGS84）；原始坐标不随投稿分发"
+    },
+    {
+      "id": "DATA-SRC-OSM-BUILDINGS-20260829",
+      "source_type": "open_geodata",
+      "usage": "OpenStreetMap 建筑轮廓（overpass-api.de 检索，2026-08-29）：site 范围内 1623 个真实建筑轮廓（其中 585 个带建筑名称，如凯德MALL·西直门、北航图书馆等），用于建筑基底空间分析、形态研究与概念方案的空间基底参考，替换此前 POI 派生的约 36m 规则方块模型。",
+      "license": "odbl-1.0",
+      "rights": "© OpenStreetMap contributors, licensed under the Open Data Commons Open Database License (ODbL) 1.0. Building footprints retrieved via Overpass API (overpass-api.de) on 2026-08-29 and clipped to the provisional site polygon (1623 buildings, coverage 17.7%). Used as conceptual baseline reference; not survey-grade and not a statutory building-approval basis.",
+      "verification_status": "verified_public_source",
+      "conversion_record": "Overpass API (way[building] within site bounds, 1898 个) -> shapely 代表性点判断 site 内 -> 裁剪到 site 边界 -> GeoJSON (EPSG:4326/WGS84), 1623 个建筑, 建筑总面积 2,012,004 m², 覆盖率 17.7%"
     },
     {
       "id": "DATA-SRC-BJ-TRANSPORT-PLATFORM-20260808",
