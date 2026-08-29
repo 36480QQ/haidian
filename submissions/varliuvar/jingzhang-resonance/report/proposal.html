@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>京张和鸣｜百年京张AI创新带公共空间复调方案 - proposal report</title>
+<link rel="stylesheet" href="../visual/assets/review-font.css">
 <style>
 :root {
   --ink: #172033;
@@ -16,7 +17,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-family: "JingZhangReviewSans", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
@@ -124,6 +125,11 @@ code {
 <p>当前官方精确红线和三处重点区 polygon 尚未取得。<code>geometry/site_boundary.geojson</code> 与 <code>geometry/key_areas.geojson</code> 使用仓库提供的临时粗略边界，仅承担生成、自检和讨论入口，属性保持 <code>geometry_role=provisional_constraint</code>、<code>official_boundary=false</code>、<code>boundary_precision=provisional_rough</code> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="BOUNDARY-SOURCE" title="来源：BOUNDARY-SOURCE">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="KEY-AREA-SOURCE" title="来源：KEY-AREA-SOURCE">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-001" title="空间数据：geometry/site_boundary.geojson#SITE-001">空间数据</sup>。官方数据补齐后，全部用地、道路、建筑、绿地、公共空间、分期和指标必须统一复算。</p>
 <h2>提交阅读路径</h2>
 <div class="proposal-table"><table><thead><tr><th>任务</th><th>直接成果</th><th>主要入口</th><th>状态边界</th></tr></thead><tbody><tr><td>agent.1 总体概念</td><td>proposal、logo-direction、land-use-structure、A3/A0</td><td><code>proposal.md</code>、<code>assets/figures/</code>、<code>drawings/</code></td><td>概念研究 / 无法定红线</td></tr><tr><td>agent.2 创新生态</td><td>六案例表、生态回路、三站两翼</td><td>proposal 章节、<code>compliance_matrix.json</code></td><td>机制提案 / 无资金或企业承诺</td></tr><tr><td>agent.3 AI+场景</td><td>14 张卡、六类人群、场景-空间-运营映射</td><td>proposal 场景章节、geometry 图层</td><td>测试提案 / 无已批准运营</td></tr><tr><td>agent.4 公共空间与地标</td><td>N01-N03、重点区行动图、公共空间规则</td><td><code>assets/analysis-18/</code>、<code>assets/figures/key-areas.png</code></td><td>研究点位图 / 非施工图</td></tr><tr><td>agent.5 文化叙事</td><td>京张、中关村、AI 文化与身份方向</td><td>proposal、logo、视觉索引</td><td>叙事系统 / 来源与权利边界仍有效</td></tr><tr><td>agent.6 长期运营</td><td>分期、年度节奏、暂停/退出/复测规则</td><td>proposal、<code>geometry/phasing.geojson</code>、矩阵</td><td>运营提案 / 无政府或投资承诺</td></tr></tbody></table></div>
+<ul>
+<li>agent.2 增量附件：<code>report/narrative.md#agent2-ecosystem-case-matrix</code>，含六案例可转译表与八要素接口矩阵。</li>
+<li>agent.4 增量附件：<code>report/narrative.md#agent4-landmark-component-catalog</code>，含 N01-N03 地标目录、公共空间组件库与贡献荣誉规则。</li>
+<li>agent.6 增量附件：<code>report/narrative.md#agent6-operation-conversion-matrix</code>，含四季运营、开发者回路与转化路径矩阵。</li>
+</ul>
 <p>本次提交的空间证据分为三层：9 个 GeoJSON 与 <code>metrics.json</code> 是机器可读研究层；21 页 A3 文册（含 18 页 V13 分析图）、3 张 A0 展板和五张核心图是设计表达层；节点附件中的 lock、approval、evaluation 和 source record 是版本与边界层。生成图不能替代地理线位、现场照片和测绘边界。</p>
 <p>现状诊断的可核查入口包括建筑、约束、绿地、用地、道路和公共空间图层 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/buildings.geojson#BLDG-001" title="空间数据：geometry/buildings.geojson#BLDG-001">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/constraints.geojson#CONSTRAINT-001" title="空间数据：geometry/constraints.geojson#CONSTRAINT-001">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/green_space.geojson#GREEN-001" title="空间数据：geometry/green_space.geojson#GREEN-001">空间数据</sup>，以及用地图层与现状诊断深度 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/land_use.geojson#LU-001" title="空间数据：geometry/land_use.geojson#LU-001">空间数据</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="existing_conditions_diagnosis" title="深度：existing_conditions_diagnosis">深度</sup>。这些图层的完整性不消除现状测绘、权属和官方控规缺口。</p>
 <figure class="proposal-figure"><img src="../assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png" alt="AI 原点公共空间效果表达与行动框架"><figcaption>AI 原点公共空间效果表达与行动框架</figcaption></figure>
@@ -144,7 +150,7 @@ code {
 <p>这些案例只提供机制参照，不证明京张片区已经具备同等机构、资金或政策。区域协同建议通过公开课题、跨园区场景清单、开发者互认、成果巡展和安全评测接口，连接北纬社区、未来科学城、怀柔科学城、经开区与京津冀创新网络。</p>
 <h3>命名体系与Logo方向</h3>
 <p>总名保持“京张和鸣 / The Jingzhang Resonance”。三站按走廊由南向北依次为鸣响站、原点站、众智园: 鸣响站对应大钟寺片区的钟声、发布与公共检验; 原点站对应近校协作、日常生活与成果转化; 众智园对应全栈测试、治理记录与北端门户。两翼只使用中关村科技服务翼和小月河场景翼, 前者连接专业服务, 后者承接受控的滨水场景。命名不再叠加“零号”“一号”或新的音乐隐喻。</p>
-<p>Logo 以京张铁路“人”字形展线、钟摆和轨道刻度为母题, 三条声部线保持各自可辨, 在同一标志中相遇但不合并。色彩用于识别而非功能分区: 以铁锈红和轨枕灰为主体, 蓝、绿只作小面积信息提示, 避免把构件与材质做成多色拼贴。当前图为方向稿, 正式使用前仍需完成字体、商标、缩放、无障碍对比度和国际语义审查 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>。</p>
+<p>Logo 以京张铁路“人”字形展线、钟摆和轨道刻度为母题, 三条声部线保持各自可辨, 在同一标志中相遇但不合并。色彩用于识别而非功能分区: 以铁锈红和轨枕灰为主体, 蓝、绿只作小面积信息提示, 避免把构件与材质做成多色拼贴。本提交包含可评审的概念识别系统 v1.0, 由同一锁定几何源派生标准彩色、单色、反白及使用规范 (<code>assets/brand/logo-primary.svg</code>, <code>logo-mono.svg</code>, <code>logo-reverse.svg</code>, <code>logo-usage.svg</code>), 并明确安全区、最小尺寸和禁止用法。正式使用前仍需完成商标、无障碍对比度和国际语义审查, 且不作注册标识、正式品牌授权或商业背书声明 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>。</p>
 <figure class="proposal-figure"><img src="../assets/figures/logo-direction.png" alt="京张和鸣命名体系与Logo方向"><figcaption>京张和鸣命名体系与Logo方向</figcaption></figure>
 <h2>总体设计范围城市更新与控规深度城市设计</h2>
 <p>总体空间结构概括为“一脊、三站、两翼、十二节点”: 京张遗址公园构成连续公共空间脊; 鸣响站、原点站、众智园形成由南向北的三站; 中关村科技服务翼和小月河场景翼联系东西两侧; N01-N12 以到达、连接、停留、学习、试验和纪念等不同角色形成可步行节点序列。它是研究结构, 不新增法定红线。</p>
@@ -344,10 +350,10 @@ code {
 <p><code>compliance_matrix.json</code> 映射公告要求和 agent.1-agent.6；<code>standard_matrix.json</code> 记录本地标准依据；<code>design_depth_matrix.json</code> 记录专业深度及外部依赖。校验通过只说明结构、引用和文件合同成立，不说明规划、工程或权属已经通过。</p>
 <p>全部面积和比例在 official polygon 补齐后重新执行 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="metrics_recalculation" title="深度：metrics_recalculation">深度</sup>；缺口与风险由 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup> 管理。</p>
 <h2>风险、版权与合规说明</h2>
-<p>主要缺口包括：GitHub 提交身份与最终署名；官方精确红线和三处重点区 polygon；现状测绘、权属、控规、道路水岸和工程条件；部分外部底图和参考图片的公开再分发权；生成图逐图供应商、模型、批次与源图哈希的完整登记。缺口均不得通过推测填补。</p>
+<p>本次提交已确认：<code>author_github=varliuvar</code> 同时是 PR 作者、最终人类提交者和设计署名；AI 协作者、运行角色与生成分工见 <code>agent.json</code> 和 <code>visual/assets/brand-model-provenance.json</code>。AR-013 已闭合为 34 条生成或编辑组件记录 / 22 个唯一嵌入块：其中 32/20 对应六个 Tokai gpt-image-2 运行，2/2 对应第 14 页 Oskyi 运行；Tokai 响应没有 provider response ID 或服务条款归档，相关字段如实保持 null，并由本地归档键、运行文件、哈希、变换与像素匹配支撑。AR-010 已核验 Esri World Imagery 的公开图层元数据、Esri Master License Agreement、官方静态出版说明和引用要求。包内仅发布带注记的非商业静态派生图，不发布原始瓦片、离线底图包或可独立复用的源图；当前来源署名和适用边界见 <code>visual/assets/asset-rights-ledger.json</code>。</p>
 <p>上述结论由 V13 终检成果、节点完整附件和风险清单共同支撑 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="V13-ANALYSIS" title="来源：V13-ANALYSIS">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="NODE-ARCHIVE" title="来源：NODE-ARCHIVE">来源</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup>。</p>
 <p>18 页 V13 分析图为研究表达。V13-13 至 15 是研究点位图而非节点平面设计图；N04 廊行道效果图现场关系未通过；横织口旧假定断面和虚构今日图禁止作为事实证据。节点附件中已锁定、未锁定和被否决历史均保留，但必须以状态清单解释。</p>
-<p>本包的文字、结构化数据和自制图件按 manifest 声明用于本次社区展示与评审。卫星、地图、街景、第三方案例和外部图片只在有明确许可或引用边界时公开；权利未确认的材料保留在内部复核附件，不进入公开主图。AI 生成视觉不得声称为现场摄影、测绘或官方方案。</p>
+<p>本包的文字、结构化数据和自制图件按 manifest 声明用于本次社区展示与评审。原始瓦片、离线底图包或独立源截图不作为单独文件发布；生成视觉按逐组件 provenance 登记，且不得声称为现场摄影、测绘或官方方案。处置状态见 <code>visual/assets/asset-clearance-disposition.json</code>；参与者可控的 13 项修复均已完成，等待维护者复评。</p>
 <h2>参考资料</h2>
 <ul>
 <li>百年京张 AI 创新带城市设计国际方案征集资格预审公告 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="来源：OFFICIAL-ANNOUNCEMENT">来源</sup>。</li>

@@ -1,5 +1,6 @@
 ---
 proposal_format_version: "2"
+bilingual_contract_version: "1"
 title: "京张和鸣｜百年京张AI创新带公共空间复调方案"
 author_github: "varliuvar"
 language: "zh"
@@ -33,6 +34,10 @@ tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent
 | agent.4 公共空间与地标 | N01-N03、重点区行动图、公共空间规则 | `assets/analysis-18/`、`assets/figures/key-areas.png` | 研究点位图 / 非施工图 |
 | agent.5 文化叙事 | 京张、中关村、AI 文化与身份方向 | proposal、logo、视觉索引 | 叙事系统 / 来源与权利边界仍有效 |
 | agent.6 长期运营 | 分期、年度节奏、暂停/退出/复测规则 | proposal、`geometry/phasing.geojson`、矩阵 | 运营提案 / 无政府或投资承诺 |
+
+- agent.2 增量附件：`report/narrative.md#agent2-ecosystem-case-matrix`，含六案例可转译表与八要素接口矩阵。
+- agent.4 增量附件：`report/narrative.md#agent4-landmark-component-catalog`，含 N01-N03 地标目录、公共空间组件库与贡献荣誉规则。
+- agent.6 增量附件：`report/narrative.md#agent6-operation-conversion-matrix`，含四季运营、开发者回路与转化路径矩阵。
 
 本次提交的空间证据分为三层：9 个 GeoJSON 与 `metrics.json` 是机器可读研究层；21 页 A3 文册（含 18 页 V13 分析图）、3 张 A0 展板和五张核心图是设计表达层；节点附件中的 lock、approval、evaluation 和 source record 是版本与边界层。生成图不能替代地理线位、现场照片和测绘边界。
 
@@ -78,7 +83,7 @@ AI不是第四个声部, 也不是一条永久占用城市的轨道。它只在�
 
 总名保持“京张和鸣 / The Jingzhang Resonance”。三站按走廊由南向北依次为鸣响站、原点站、众智园: 鸣响站对应大钟寺片区的钟声、发布与公共检验; 原点站对应近校协作、日常生活与成果转化; 众智园对应全栈测试、治理记录与北端门户。两翼只使用中关村科技服务翼和小月河场景翼, 前者连接专业服务, 后者承接受控的滨水场景。命名不再叠加“零号”“一号”或新的音乐隐喻。
 
-Logo 以京张铁路“人”字形展线、钟摆和轨道刻度为母题, 三条声部线保持各自可辨, 在同一标志中相遇但不合并。色彩用于识别而非功能分区: 以铁锈红和轨枕灰为主体, 蓝、绿只作小面积信息提示, 避免把构件与材质做成多色拼贴。当前图为方向稿, 正式使用前仍需完成字体、商标、缩放、无障碍对比度和国际语义审查 [source:AGENT-TASKBOOK]。
+Logo 以京张铁路“人”字形展线、钟摆和轨道刻度为母题, 三条声部线保持各自可辨, 在同一标志中相遇但不合并。色彩用于识别而非功能分区: 以铁锈红和轨枕灰为主体, 蓝、绿只作小面积信息提示, 避免把构件与材质做成多色拼贴。本提交包含可评审的概念识别系统 v1.0, 由同一锁定几何源派生标准彩色、单色、反白及使用规范 (`assets/brand/logo-primary.svg`, `logo-mono.svg`, `logo-reverse.svg`, `logo-usage.svg`), 并明确安全区、最小尺寸和禁止用法。正式使用前仍需完成商标、无障碍对比度和国际语义审查, 且不作注册标识、正式品牌授权或商业背书声明 [source:AGENT-TASKBOOK]。
 
 ![京张和鸣命名体系与Logo方向](assets/figures/logo-direction.png)
 
@@ -331,13 +336,13 @@ AI 只取得限时、限地、可撤销的使用许可。
 
 ## 风险、版权与合规说明
 
-主要缺口包括：GitHub 提交身份与最终署名；官方精确红线和三处重点区 polygon；现状测绘、权属、控规、道路水岸和工程条件；部分外部底图和参考图片的公开再分发权；生成图逐图供应商、模型、批次与源图哈希的完整登记。缺口均不得通过推测填补。
+本次提交已确认：`author_github=varliuvar` 同时是 PR 作者、最终人类提交者和设计署名；AI 协作者、运行角色与生成分工见 `agent.json` 和 `visual/assets/brand-model-provenance.json`。AR-013 已闭合为 34 条生成或编辑组件记录 / 22 个唯一嵌入块：其中 32/20 对应六个 Tokai gpt-image-2 运行，2/2 对应第 14 页 Oskyi 运行；Tokai 响应没有 provider response ID 或服务条款归档，相关字段如实保持 null，并由本地归档键、运行文件、哈希、变换与像素匹配支撑。AR-010 已核验 Esri World Imagery 的公开图层元数据、Esri Master License Agreement、官方静态出版说明和引用要求。包内仅发布带注记的非商业静态派生图，不发布原始瓦片、离线底图包或可独立复用的源图；当前来源署名和适用边界见 `visual/assets/asset-rights-ledger.json`。
 
 上述结论由 V13 终检成果、节点完整附件和风险清单共同支撑 [source:V13-ANALYSIS] [source:NODE-ARCHIVE] [depth:risk_missing_data]。
 
 18 页 V13 分析图为研究表达。V13-13 至 15 是研究点位图而非节点平面设计图；N04 廊行道效果图现场关系未通过；横织口旧假定断面和虚构今日图禁止作为事实证据。节点附件中已锁定、未锁定和被否决历史均保留，但必须以状态清单解释。
 
-本包的文字、结构化数据和自制图件按 manifest 声明用于本次社区展示与评审。卫星、地图、街景、第三方案例和外部图片只在有明确许可或引用边界时公开；权利未确认的材料保留在内部复核附件，不进入公开主图。AI 生成视觉不得声称为现场摄影、测绘或官方方案。
+本包的文字、结构化数据和自制图件按 manifest 声明用于本次社区展示与评审。原始瓦片、离线底图包或独立源截图不作为单独文件发布；生成视觉按逐组件 provenance 登记，且不得声称为现场摄影、测绘或官方方案。处置状态见 `visual/assets/asset-clearance-disposition.json`；参与者可控的 13 项修复均已完成，等待维护者复评。
 
 ## 参考资料
 

@@ -32,18 +32,22 @@ The proposal responds to the official open-call announcement, the agent taskbook
 | agent.5 Cultural narrative | Jing-Zhang, Zhongguancun, AI culture, and identity direction | proposal, logo, visual index | narrative system / source and rights boundaries remain active |
 | agent.6 Long-term operation | phasing, annual rhythm, pause/exit/retest rules | proposal, `geometry/phasing.geojson`, matrices | operating proposal / no government or investment commitment |
 
+- agent.2 incremental attachment: `report/narrative.md#agent2-ecosystem-case-matrix-en`, with the six-case transferable-mechanism table and eight-factor interface matrix.
+- agent.4 incremental attachment: `report/narrative.md#agent4-landmark-component-catalog-en`, with the N01-N03 catalog, public-space component library, and contribution-honour rule.
+- agent.6 incremental attachment: `report/narrative.md#agent6-operation-conversion-matrix-en`, with the four-season operation, developer loop, and conversion pathway matrix.
+
 The evidence system has three layers: nine GeoJSON files and metrics for machine review; the 21-page A3 booklet (including 18 V13 analysis pages), plus 3 A0 boards and five core figures for design communication; and lock, approval, evaluation, and source records for version control.
 
 ![AI Origin public-space visual intention and action framework](assets/analysis-18/jingzhang_analysis_v13_pilot_14_origin.png)
-![Overall structure and research boundary](assets/figures/site-overview.png)
+![Overall structure and research boundary](assets/figures/site-overview.en.png)
 
 ## Three-Level Scope Framework
 
-The coordinated research area addresses the taskbook's approximately 43.6 square kilometres of innovation ecosystem and regional collaboration. The overall design area addresses approximately 11.4 square kilometres around the Jing-Zhang heritage park. The three key areas address approximately 368.4 hectares in total. These taskbook figures are not exact measurements of the provisional polygons [source:PROCESSED-FACT-PACK].
+The coordinated research area addresses the taskbook's approximately 43.6 square kilometres of innovation ecosystem and regional collaboration. The overall design area addresses approximately 11.4 square kilometres and the surrounding 1-2 km of urban renewal, industrial space, public space, transport, and municipal conditions around the Jing-Zhang heritage park. The three key areas address approximately 368.4 hectares in total. These taskbook figures are not exact measurements of the provisional polygons [source:PROCESSED-FACT-PACK].
 
 The ecological, everyday, and knowledge voices are independent and none is subordinate. Every action follows the weakest-link (wooden-bucket) principle: judge the weakest voice first. If any voice falls below its baseline, a pilot may neither enter nor expand; gains in the other two cannot compensate [depth:overall_spatial_structure] [depth:blue_green_public_space]. AI is not a fourth voice. It enters only within a publicly announced permission domain of space, time, weather, and responsibility. Three veto lines precede efficiency: never occupy tactile paving; never enter residential interiors; and stop mobile devices on campuses and school routes during 16:30-19:00. A triggered veto pauses operation immediately [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
-![Three voices, functions, and action framework](assets/figures/land-use-structure.png)
+![Three voices, functions, and action framework](assets/figures/land-use-structure.en.png)
 
 ## Coordinated Research Area: Industry and Future City Research
 
@@ -51,9 +55,11 @@ The proposed ecosystem loop is: publish a problem, run a controlled test, conduc
 
 Six international references provide transferable mechanisms without importing their scale, firms, or policy conditions: Kendall Square for short-distance university-lab-enterprise collaboration [source:CASE-KENDALL]; London's Knowledge Quarter for a network of research, culture, mobility, and public communication [source:CASE-KQ]; STATION F for legible shared startup services [source:CASE-STATIONF]; Vector Institute for research, talent, responsible AI, and enterprise application [source:CASE-VECTOR]; one-north for mixed research, work, living, and public space [source:CASE-ONENORTH]; and Pittsburgh Robotics Network for regional university, robotics, and manufacturing collaboration [source:CASE-PITTSBURGH].
 
+These cases provide mechanisms only; they do not prove that the Jing-Zhang area has comparable institutions, funding, or policy conditions. Suggested, unconfirmed regional collaboration could use open research topics, cross-park scenario lists, developer mutual recognition, travelling results exhibitions, and safety-evaluation interfaces to connect Beiwei Community, Future Science City, Huairou Science City, Beijing E-Town, and the Beijing-Tianjin-Hebei innovation network. No participation, commitment, partnership, authorization, or endorsement is claimed.
+
 ### Naming system and logo direction
 
-The master name remains "Jing-Zhang Resonance". From south to north the stations are Resonance Station, Origin Station, and Zhongzhi Park Station. The wings are named only Zhongguancun Technology Services Wing and Xiaoyue River Scenario Wing; no numbered stations or additional musical metaphor is added. The logo combines the railway's ren-shaped switchback, a bell pendulum, and track graduations. Three voice lines meet without merging. Rust red and sleeper grey are primary; blue and green are limited information accents. This direction still requires typeface, trademark, scaling, accessibility, and international-semantic review [source:AGENT-TASKBOOK].
+The master name remains "Jing-Zhang Resonance". From south to north the stations are Resonance Station, Origin Station, and Zhongzhi Park Station. The wings are named only Zhongguancun Technology Services Wing and Xiaoyue River Scenario Wing; no numbered stations or additional musical metaphor is added. The logo combines the railway's ren-shaped switchback, a bell pendulum, and track graduations. Three voice lines meet without merging. Rust red and sleeper grey are primary; blue and green are limited information accents. This submission includes a reviewable concept identity system v1.0: primary, monochrome, reverse, and usage-rule vector derivatives built from one locked geometry source (`assets/brand/logo-primary.svg`, `logo-mono.svg`, `logo-reverse.svg`, `logo-usage.svg`), with clear space, minimum size, and prohibited transformations stated explicitly. Trademark, accessibility-contrast, and international-semantic review remain required before formal use; no registration, formal brand authorization, or commercial endorsement is claimed [source:AGENT-TASKBOOK].
 
 ![Jing-Zhang Resonance naming system and logo direction](assets/figures/logo-direction.en.png)
 
@@ -67,9 +73,9 @@ The land-use, building, road, green-space, public-space, and phasing GeoJSON fil
 
 AI receives only time-limited, site-specific, and revocable permission to use public space.
 
-![Three key areas: research locations and actions](assets/figures/key-areas.png)
+![Three key areas: research locations and actions](assets/figures/key-areas.en.png)
 
-The Dazhongsi area is proposed as an urban district for AI-native services and international exchange. Heritage quiet zones, open ground floors, station links, and four-quadrant walking connections must be relocated on verified building, station, property, and fire-safety boundaries. V13-13 is a research location diagram, not a measured node plan.
+The Dazhongsi area is proposed as an urban district for AI-native services and international exchange. Heritage quiet zones, open ground floors, station links, and four-quadrant walking connections must be relocated on verified building, station, property, and fire-safety boundaries. V13-13 is a research location diagram, not a measured node plan. N01 Bell-Ringing Road may serve as a public-space prototype that compares the current view with a 2045 same-view evolution scenario.
 
 The Beijing AI Origin Community is proposed as a near-university district for open-source collaboration, translation, and talent life. School crossings, everyday forecourts, and park openings require verified road, campus, and property boundaries. V13-14 communicates relationships, not survey facts. N02 Origin Field is a concept-locked landmark sequence, with ownership, utilities, fire, and structural feasibility unresolved.
 
@@ -141,7 +147,7 @@ New infrastructure follows three rules: removable, inspectable, and outside the 
 
 ## Blue-Green Network, Public Space, and Urban Character
 
-![Blue-green mobility and segment actions](assets/figures/mobility-bluegreen.png)
+![Blue-green mobility and segment actions](assets/figures/mobility-bluegreen.en.png)
 
 The Jing-Zhang heritage park, Xiaoyue River, Qinghe River, and existing tree canopy form the public ecological skeleton. Actions are ordered as: preserve continuity, repair gaps, add places to pause, and control disturbance. Public-space character uses low-saturation materials, clear ink-like lines, limited green-blue-orange identity colours, and restrained night lighting.
 
@@ -157,7 +163,7 @@ The suggested annual rhythm is spring open-source co-creation, summer urban scen
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-![Rules, implementation, and verifiable indicators](assets/figures/metrics-evidence.png)
+![Rules, implementation, and verifiable indicators](assets/figures/metrics-evidence.en.png)
 
 Indicators cover spatial continuity, ecological public value, innovation operations, and governance credibility. Values in `metrics.json` are calculated from provisional geometry and cannot replace taskbook scope figures or statutory indicators [metric:site_area_sqm] [metric:green_ratio] [metric:public_space_ratio] [metric:key_area_count].
 
@@ -165,7 +171,9 @@ The compliance matrix maps announcement requirements and agent.1-agent.6. The st
 
 ## Risk, Copyright, and Compliance
 
-Open gaps include the final GitHub identity and contributor names; official redlines and key-area polygons; survey, property, control-plan, water, road, and engineering conditions; redistribution rights for some basemaps and references; and complete per-image generation provenance. These gaps must not be filled by inference.
+This submission confirms that `author_github=varliuvar` is the PR author, final human submitter, and design signatory; AI collaborators, runtime roles, and generation roles are declared in `agent.json` and `visual/assets/brand-model-provenance.json`. AR-013 is closed at 34 generated or edited component records / 22 unique embedded blocks: 32/20 map to six Tokai gpt-image-2 runs, and 2/2 map to the page-14 Oskyi run. The archived Tokai responses contain no provider response ID or provider-terms artifact, so those fields remain `null`; separate local archive keys, run files, hashes, transformations, and pixel matches support the mapping. This limited publication decision relies on participant-controlled inputs and the participant's PR/noncommercial review release; it does not claim provider terms, commercial rights, or standalone-source redistribution. AR-010 records the public Esri World Imagery item metadata, Esri Master License Agreement, official static-publication guidance, and citation requirements. The package publishes only attributed, annotated noncommercial static derivatives, not raw tiles, an offline basemap package, or an independently reusable source image; see `visual/assets/asset-rights-ledger.json` for the current credit and scope limits.
+
+Text, structured data, and self-created figures are declared in the manifest for this community display and review. Raw tiles, offline basemap packages, and standalone source screenshots are not shipped. Generated visuals carry component-level provenance records and must not be represented as site photography, survey evidence, or an official proposal. See `visual/assets/asset-clearance-disposition.json`; all thirteen participant-controlled repairs are complete pending maintainer re-review.
 
 V13-13 to V13-15 are research location diagrams. N04 Langxingdao failed site-relationship verification. Superseded assumed sections and fictional present-day imagery must not be used as factual evidence. The full node archive retains locked, unlocked, rejected, and historical versions with an explicit status register.
 
