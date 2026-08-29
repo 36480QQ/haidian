@@ -98,6 +98,18 @@
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase4-protocol-qa.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase4-qa-sources.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/phase4-source-freeze.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3-osm-ai_origin-snapshot.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3-osm-corridor-snapshot.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3-osm-dazhongsi-snapshot.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3-osm-zhongzhiyuan-snapshot.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3-site-context-audit-source.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3-site-context-builder-source.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3-site-context-qa.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3-site-context.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3e-implementation-evidence.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3e-implementation-qa.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3e-implementation-sources.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3e-official-source-snapshots.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/rebuild-visuals-source.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/visual.css",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/visual.js",
@@ -107,7 +119,7 @@
       "ai_package_stages": {
         "submissions/Qrzzzz/jingzhang-in-situ": "formal"
       },
-      "total_bytes": 11601926,
+      "total_bytes": 14728757,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -168,7 +180,11 @@
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.247076,
         "public_space_ratio": 0.042599,
-        "key_area_count": 3.0
+        "key_area_count": 3.0,
+        "cross_section_candidate_count": 12.0,
+        "cross_section_surveyed_count": 0.0,
+        "detailed_cross_section_count": 3.0,
+        "land_use_gap_area_sqm": 0.0
       }
     },
     "stderr": ""
@@ -186,7 +202,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 19,
+          "source": 28,
           "standard": 6,
           "depth": 15,
           "data": 18,
