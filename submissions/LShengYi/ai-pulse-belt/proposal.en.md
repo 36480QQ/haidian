@@ -64,7 +64,7 @@ This section provides review-dimension evidence indexes, response checklists; re
 
 Applies to all narrative, tables, figures, JSON, and media scripts; every downgrade traceable via changelog.
 
-**Version traceability**: iteration **v10.14.16**(2026-08-28, frontmatter 20); per-round records in `changelog.md`. **v10.14.0** = compliance-repair: needs_review source downgraded(HAIDIAN-URBAN-RENEWAL-2025 removed, Table B4 reworded as schematic numbering); UAS rules updated to 2026 Beijing Municipal UAS Regulations(No. 50, effective 2026-05-01; Beijing-wide controlled airspace, prior application required)—cards, standards matrix, source registry synced; metric count 61/76 known(metrics.json). **v10.14.14** = seven-dimension review repair(prices deleted, 100-day split, red-line scopes, data minimization, en tables A14–A21/C1–C5 95/95). QA(E12): pixel-level figure review—title bands 46–94 px apart, headroom 1–2%, zero duplicate subtitle rows, dashed boundaries machine-checkable; "title clipped" refuted.
+**Version traceability**: iteration **v10.14.16**(2026-08-28, frontmatter 21); per-round records in `changelog.md`. **v10.14.0** = compliance-repair: needs_review source downgraded(HAIDIAN-URBAN-RENEWAL-2025 removed, Table B4 reworded as schematic numbering); UAS rules updated to 2026 Beijing Municipal UAS Regulations(No. 50, effective 2026-05-01; Beijing-wide controlled airspace, prior application required)—cards, standards matrix, source registry synced; metric count 61/76 known(metrics.json). **v10.14.14** = seven-dimension review repair(prices deleted, 100-day split, red-line scopes, data minimization, en tables A14–A21/C1–C5 95/95). QA(E12): pixel-level figure review—title bands 46–94 px apart, headroom 1–2%, zero duplicate subtitle rows, dashed boundaries machine-checkable; "title clipped" refuted.
 
 **Table A1 One-page review entry (review-dimension evidence index — every row gives an openable file and runnable command; machine-verifiable items re-run offline)**
 
@@ -1644,7 +1644,7 @@ The compliance matrix covers all mandatory tasks of announcement clauses 1.3, 1.
 
 The eight disciplines map item by item to boundary clause(agent_taskbook.boundary_clause's "land ownership, investment estimates, development sequencing, and approval judgments") and are registered in compliance_matrix.json, risk.json; if any item is ever misread as a formal conclusion, this list is clarification baseline.
 
-**Per-asset rights summary**: all 52 asset files itemized in `report/copyright_statement.md`(52-line ledger); table below gives fabrication chain, rights status, and verification location per class—reviewers can open ledger line to verify:
+**Per-asset rights summary**: all 52 asset files itemized in `report/copyright_statement.md`(37-line ledger); table below gives fabrication chain, rights status, and verification location per class—reviewers can open ledger line to verify:
 
 | Asset class | Source / fabrication | License / rights status | Verification location |
 | --- | --- | --- | --- |

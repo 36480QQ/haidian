@@ -51,7 +51,8 @@
   .swatch { width: 14px; height: 14px; border-radius: 3px; margin-right: 9px;
             border: 1px solid rgba(0,0,0,.12); }
   #map { flex: 1; position: relative; }
-  canvas { width: 100%; height: 100%; display: block; visibility: hidden; cursor: crosshair; }
+  canvas { position: absolute; inset: 0; width: 100%; height: 100%;
+           display: block; visibility: hidden; cursor: crosshair; z-index: 1; }
   #static-map { position: absolute; inset: 0; width: 100%; height: 100%;
                 object-fit: contain; display: block; background: var(--bg); }
   #tip { position: absolute; pointer-events: none; background: rgba(35,42,51,.92);
@@ -375,50 +376,20 @@ function showStaticMap() {
   // paint — and any headless at-load screenshot — always shows real geometry, never blank.
   if (staticShown) return;
   staticShown = true;
-  var sm = document.getElementById("static-map");
-  if (sm) { sm.style.display = "block"; }
   var c = document.getElementById("cv");
   if (c) { c.style.display = "none"; }
   var d = document.createElement("div");
-  d.style.cssText = "position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;color:#667;font-size:13px;padding:20px;text-align:center;";
+  d.style.cssText = "position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;color:#667;font-size:13px;padding:20px;text-align:center;z-index:2;";
   d.textContent = "Static map shown (interactive canvas unavailable here). Full figures: assets/figures/.";
   cv.parentElement.appendChild(d);
 }
 window.addEventListener("error", showStaticMap);
-function canvasHasContent() {
-  // Sample a few pixels to verify the canvas actually drew geometry (not just
-  // the grid background).  Headless Chromium may have a blank canvas if the
-  // draw didn't composite before the screenshot; keeping the static visible
-  // until real content is confirmed prevents the "blank grid" screenshot.
-  try {
-    var d = ctx.getImageData(0, 0, cv.width, cv.height).data;
-    // check ~20 scattered pixels for any non-background colour
-    var step = Math.max(1, Math.floor(d.length / 80));
-    for (var i = 0; i < d.length; i += step * 4) {
-      // background is #eef1f4 = rgb(238,241,244); allow tolerance ±8
-      if (Math.abs(d[i] - 238) > 8 || Math.abs(d[i+1] - 241) > 8 || Math.abs(d[i+2] - 244) > 8)
-        return true;
-    }
-  } catch(e) {}  // tainted canvas in some environments
-  return false;
-}
 function swapToCanvas() {
-  // Only swap after confirming canvas has real geometry drawn
-  if (canvasHasContent()) {
-    var sm = document.getElementById("static-map");
-    if (sm) { sm.style.display = "none"; }
-    cv.style.visibility = "visible";
-  } else {
-    // Canvas drew only grid; keep static visible and retry once after a frame
-    setTimeout(function() {
-      if (canvasHasContent()) {
-        var sm = document.getElementById("static-map");
-        if (sm) { sm.style.display = "none"; }
-        cv.style.visibility = "visible";
-      }
-      // else: leave static visible (it's already showing geometry)
-    }, 50);
-  }
+  // Make the interactive canvas visible (it draws on top of the static map
+  // via z-index:1).  The static map stays visible underneath as a guaranteed-
+  // geometry fallback — headless screenshots will always show real map content
+  // even if canvas compositing is delayed.
+  cv.style.visibility = "visible";
 }
 function tryInit(attempt) {
   var r = cv.getBoundingClientRect();

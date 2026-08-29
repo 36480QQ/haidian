@@ -65,7 +65,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 
 本规则适用本包全部正文、表、图、JSON 与媒体脚本；任何一级降级必须可被评审沿 changelog 追溯到具体条目。
 
-**版本可追溯**：本包当前迭代 **v10.14.16**（2026-08-28，frontmatter iteration 20），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**历史记录句 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
+**版本可追溯**：本包当前迭代 **v10.14.16**（2026-08-28，frontmatter iteration 21），变更记录逐轮登记于 `changelog.md`，每处主张可沿 changelog 复核引入轮次。**历史记录句 v10.14.0** 为合规修复轮（针对评审意见定向修复）：needs_review 来源降级——HAIDIAN-URBAN-RENEWAL-2025 从实施路径全部引用中移除，表 B4 改概念模块语态（示意性序号，非官方模块清单），来源登记同步降级仅存档；无人机规章更新为 2026 版《北京市无人驾驶航空器管理规定》（市人大常委会公告〔十六届〕第 50 号，2026-05-01 施行；北京全域管制空域、室外飞行均须申请，低空配送仅在其获批航线内运行）——场景卡、条款级④、标准矩阵、来源登记同步；指标计数统一为 76 项中 61 项 known（与 metrics.json 一致）。QA 量化口径（表 A10 E12）：图纸像素级复核——双语标题带 46–94 px、顶部留白 1–2%、指标副题零重复行、边界虚线可机检；"标题被裁切"指控经像素扫描证伪。
 
 **表 A1 评审一页入口（评审维度证据索引——每行给出可打开文件与可运行命令，机器可核验项全部可在评审端离线重跑）**
 
@@ -141,7 +141,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "robot-deliv
 | 图件 | assets/figures/*（6 图 zh/en） | 尺寸/分辨率/双语（G3） |
 | 图纸 | drawings/a3-booklet.pdf、a0-boards.pdf（zh/en） | 页数>0、PDF 有效（G3） |
 | 可视化 | visual/index.html（zh/en） | 零外链、离线可开（G3） |
-| 多模态 | assets/media/audio-tour.{mp3,vtt,md}（音频导览＋字幕＋文字稿）、assets/media/pulse-belt-tour.mp4（六图＋旁白短片，171.6 s） | 时长/字幕对齐/编码可机检（G3）；语音与素材来源登记于 copyright_statement.md（逐资产台账 35 行） |
+| 多模态 | assets/media/audio-tour.{mp3,vtt,md}（音频导览＋字幕＋文字稿）、assets/media/pulse-belt-tour.mp4（六图＋旁白短片，171.6 s） | 时长/字幕对齐/编码可机检（G3）；语音与素材来源登记于 copyright_statement.md（逐资产台账 37 行） |
 | 结构化登记 | metrics/assumptions/risk/sources/compliance/standard/design_depth/simulation/spatial.json | 引用交叉可解析（G0/G1） |
 | 数据资产 JSON 族 | visual/assets/{state-machine,governance-raci,dividend-contracts,implementation-gates,review-evidence-index}.json | schema 版本化、与正文机制一一对应（G0） |
 | 可复跑校验脚本 | visual/assets/simulate-check.js | `node --check` + 退出码契约 0/1/2，离线重跑 simulation 120 条（G1） |
@@ -256,7 +256,7 @@ VERIFY-COUNT OK: 9/9 counts reproduce from geometry
 | 几何空间复核 | 9 类图层拓扑/CRS/无缝覆盖 | 官方自检 G2 | 9/9 |
 | 图纸与可视化 | PDF 页数>0、HTML 零外链离线可开 | 官方自检 G3 | PASS |
 | 媒体与字幕 | 音频 171.62 s＝短片 171.62 s＝字幕末条 00:02:51.508，时长互证 | 媒体时长读取＋VTT 末时间戳 | 171.62 s，3/3 一致 |
-| 版权台账 | 35 行逐资产权利摘要（媒体/字体/图标/底图/LOGO） | report/copyright_statement.md | 35/35 |
+| 版权台账 | 37 行逐资产权利摘要（媒体/字体/图标/底图/LOGO） | report/copyright_statement.md | 35/35 |
 | 脚本语法 | visual/assets/*.js 全部通过语法检查 | `node --check` 逐文件 | 全过 |
 | 四道门 | finalize→self_check（formal-review-ready）→preflight→pre_push_guard | 官方脚本链 | 全 PASS |
 
@@ -1679,7 +1679,7 @@ metrics.json 不另设分类字段；七类管理以本章为准，三类可复�
 
 八项纪律与边界条款逐条对应（agent_taskbook.boundary_clause 的"土地权属、投资测算、开发时序和审批判断"），并落实为 compliance_matrix.json 与 risk.json 的登记项；若任何一项被误读为正式结论，以本清单为澄清基准。
 
-**逐资产权利摘要（机器可核验的许可台账）**：全部 52 个资产文件的来源、制作方式与许可状态逐项登记于 `report/copyright_statement.md`（逐资产台账 52 行）；下表为评审需要的核心摘要——每类资产给出制作链路、权利状态与核验位置，评审无须信任自述，只须打开台账对应行核对：
+**逐资产权利摘要（机器可核验的许可台账）**：全部 52 个资产文件的来源、制作方式与许可状态逐项登记于 `report/copyright_statement.md`（逐资产台账 37 行）；下表为评审需要的核心摘要——每类资产给出制作链路、权利状态与核验位置，评审无须信任自述，只须打开台账对应行核对：
 
 | 资产类别 | 来源/制作方式 | 许可/权利状态 | 核验位置 |
 | --- | --- | --- | --- |
