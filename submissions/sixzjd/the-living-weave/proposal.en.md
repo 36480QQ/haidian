@@ -27,7 +27,7 @@ The second warp thread is the *Agent Task Book* [source:AGENT-TASKBOOK], which t
 
 A supplementary navigation layer includes the Processed Fact Pack [source:PROCESSED-FACT-PACK] — it helps designers quickly grasp the three scope tiers, the task list, and data gaps, but does not itself constitute a new authoritative source. All factual determinations must still trace back to the registered original materials.
 
-![Source evidence chain and site overview](assets/figures/site-overview.png)
+![Source evidence chain and site overview](assets/figures/site-overview.en.png)
 
 ### 1.2 "Fabric Quality Control" of Source Reliability
 
@@ -67,7 +67,7 @@ The structure of a fabric depends on warp density and the way weft threads inter
 - **Weft 3 — Dazhongsi Structured Weave**: 72.0 hectares, a stable corporate pattern. Headquarters economy, business services, and AI deployment are woven like warp-knit fabric — structurally explicit, predictable, and capable of sustaining large-scale industrial operations.
 - **Cross-Weave**: Transverse connections — rail transit interchanges, green corridors, data infrastructure — stitch the three wefts together with the warp into a single, integrated whole.
 
-![Three-tier scope and spatial structure analysis](assets/figures/land-use-structure.png)
+![Three-tier scope and spatial structure analysis](assets/figures/land-use-structure.en.png)
 
 ### 2.2 Depth Correspondence of the Three-Tier Working Framework
 
@@ -215,7 +215,7 @@ Each regeneration strategy is paired with a "Reversible Weft" mechanism (see Sec
 
 The three key areas are the specific siting of the "One Warp, Three Wefts" weaving method. Each area achieves the urban design depth of a comprehensive implementation plan [depth:three_key_area_detailed_design], covering functional programming, building scale, architectural form, retain-renovate-demolish classification, public space systems, traffic organization, and implementation projects.
 
-![Overview of the three key area designs](assets/figures/key-areas.png)
+![Overview of the three key area designs](assets/figures/key-areas.en.png)
 
 ### 5.2 Weft 1: Zhongzhiyuan Open Weave District (192.1 ha)
 
@@ -389,7 +389,7 @@ The transport plan responds to the competition notice's requirements for the fol
 - **External Traffic**: Strengthen connections with the North Fifth Ring Road, Xueyuan Road, Zhichun Road, and other arterial roads.
 - **Parking and Non-Motorized Transport**: Reasonably plan motor-vehicle parking supply and non-motorized-vehicle parking, preventing parking from encroaching on public space.
 
-![Integrated map of slow-traffic, transit, and blue-green public space](assets/figures/mobility-bluegreen.png)
+![Integrated map of slow-traffic, transit, and blue-green public space](assets/figures/mobility-bluegreen.en.png)
 
 ### 8.2 Municipal and New-Type Infrastructure
 
@@ -573,7 +573,7 @@ AI innovation index, talent density, industrial-service satisfaction, slow-traff
 
 Among them, the accessible-route completion rate (`accessibility_completion`) is honestly registered as `unknown`, but its measurement path is explicit: the numerator is the length of continuous accessible routes (segments with complete curb ramps, dropped kerbs, and crossing facilities), the denominator is the total planned accessible-route length, and the data comes from on-site sidewalk audits; during operation it is re-measured quarterly and published. Until real audit data exists, no number is entered, avoiding false precision [metric:accessibility_completion].
 
-![Core indicator recalculation and evidence chain](assets/figures/metrics-evidence.png)
+![Core indicator recalculation and evidence chain](assets/figures/metrics-evidence.en.png)
 
 ### 11.2 Compliance Matrix
 
@@ -615,6 +615,8 @@ All images, drawings, icons, data, and code assets have their sources, licenses,
 - HTML pages do not load remote scripts, remote map tiles, remote fonts, iframes, forms, or external APIs; they do not track reviewer behavior.
 - All brands, fonts, images, portraits, and corporate logos must have cleared sources.
 - The proposal recommends original design and cleared resources.
+
+The offline HTML pages embed a subset of Source Han Sans (SIL OFL 1.1) as a woff2 font covering exactly the characters used, so real Chinese glyphs render offline even on review machines without CJK fonts; no remote resource is loaded.
 
 `report/copyright_statement.md` records the creator/generation method, input provenance, and redistribution status for figures, case cards, PDFs, and offline pages. OpenStreetMap, historical material, and global cases remain background references in `sources.json`; this package does not reproduce their photographs, logos, tiles, or proprietary drawings, and does not use them as statutory planning evidence.
 
