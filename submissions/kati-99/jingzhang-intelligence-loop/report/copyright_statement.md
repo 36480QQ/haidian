@@ -19,11 +19,14 @@ Canonical path / 规范路径：`submissions/kati-99/jingzhang-intelligence-loop
 
 | Usage 用途 | Font 字体 | Version 版本 | Licence 许可 | Note 说明 |
 | --- | --- | --- | --- | --- |
-| Embedded in HTML (base64 woff2 subset) HTML 内嵌子集 | Heiti TC (STHeiti Medium) | 17.0d1e2 | macOS system-bundled font; bundled with the operating system, **not** an OFL / open-source licence | Subset contains only the glyphs actually used by each page (report: 934 glyphs; visual index: 423–433 glyphs). The subset is embedded so that the pages need no remote font loading (a submission requirement). Because system-font redistribution terms are not governed by an open licence, **if the organiser requires redistribution of the HTML outside the review context, the submitter will replace it with an OFL-licensed open-source CJK font (e.g. Source Han Sans / Noto Sans CJK / LXGW WenKai) and re-export.** |
-| Figure rendering 图件渲染 | Heiti TC (STHeiti Medium) | same | same | Figures are exported as static PNG/SVG; SVG text is converted to paths (`svg.fonttype = path`) where applicable. |
-| CSS font stack (fallback) CSS 回退栈 | PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Source Han Sans, LXGW WenKai | — | system-bundled / OFL | Used only as a fallback when the embedded subset is unavailable; no remote font is ever loaded. |
+| All text: figures, A3/A0 PDFs, HTML 全部文字 | Noto Sans SC (Regular / Bold) | 2.004 | SIL Open Font License 1.1 | Open-source licence permitting commercial use, modification, redistribution and embedding. Source: Google Noto Fonts (`notofonts/noto-cjk`, `Sans/SubsetOTF/SC`). |
+| Embedded in HTML (base64 woff2 subset) HTML 内嵌子集 | Noto Sans SC (per-page glyph subset) | subset of 2.004 | SIL Open Font License 1.1 | Exactly two faces per page, declared explicitly as `font-weight` 400 (Regular) and 700 (Bold), so CSS matches each face unambiguously. Each face on its own covers every CJK character used on its page (report: 942 glyphs; visual index: 426 glyphs), so no glyph can fall back to a system font and render as a missing-glyph box. No remote font is loaded; no full font file is distributed. |
+| Figure rendering 图件渲染 | Noto Sans SC (Regular / Bold) | 2.004 | SIL Open Font License 1.1 | Figures are exported as static PNG/SVG; SVG text is converted to vector paths (`svg.fonttype = path`) where applicable, so the raster and vector exports carry no font dependency. |
+| CSS font stack (fallback) CSS 回退栈 | Noto Sans CJK SC, Source Han Sans SC, LXGW WenKai, Microsoft YaHei | — | OFL-1.1 / system-bundled | Declared only behind the embedded face; no remote font is ever loaded. |
 
-**No commercial or licensed third-party font is distributed as a full font file.** Only per-page glyph subsets are embedded, and no remote font, remote script, remote map tile, iframe, form or external API is loaded by any HTML page.
+**Removed typeface / 已移除字体.** Heiti TC (STHeiti Medium, macOS system-bundled, not redistributable) was used in earlier revisions and has been **fully removed** from every figure, PDF and HTML page in this package and replaced with Noto Sans SC (OFL-1.1). The same applies to PingFang SC, which appeared in earlier CSS fallback stacks.
+
+**No commercial or licensed third-party font is distributed as a full font file.** Only per-page glyph subsets of the OFL-licensed Noto Sans SC are embedded, and no remote font, remote script, remote map tile, iframe, form or external API is loaded by any HTML page.
 
 ## 3. Map and data sources / 地图与数据来源
 
@@ -33,7 +36,7 @@ Canonical path / 规范路径：`submissions/kati-99/jingzhang-intelligence-loop
 | Agent taskbook (repository-provided, rights cleared) | `AGENT-TASKBOOK` | `approved_formal` |
 | Site package / provisional boundaries (repository maintainers) | `SITE-PACKAGE`, `BOUNDARY-SOURCE`, `KEY-AREA-SOURCE`, `DATA-SRC-PROVISIONAL-BOUNDARIES-20260605` | `repository_maintainer_provisional` — usable for generation and self-check, **not** for official redline, approval or precise area basis |
 | Processed fact pack / navigation layer | `PROCESSED-FACT-PACK`, `SOURCE-REGISTRY` | `repository_processed_reference` |
-| Six international city references (Helsinki, Amsterdam, Barcelona, Seoul, Montreal Declaration, Singapore Smart Nation) | `REF-HELSINKI`, `REF-AMSTERDAM`, `REF-BARCELONA`, `REF-SEOUL`, `REF-MONTREAL`, `REF-SINGAPORE` | `conceptual_reference_pending_source_verification` — portal home pages only; **not** source-registry-approved formal sources and **not** evidence for specific programme claims |
+| Six international city references (Helsinki, Amsterdam, Barcelona, Seoul, Montreal Declaration, Singapore Smart Nation) | `REF-HELSINKI`, `REF-AMSTERDAM`, `REF-BARCELONA`, `REF-SEOUL`, `REF-MONTREAL`, `REF-SINGAPORE` | `document_level_verified` — each entry now points to a **document-level page** (not a portal home page) that was retrieved and read on 2026-08-29, with page title, publisher, publication/access date, reachability (HTTP status), the specific claim it supports, a supporting passage, and the licence/reuse boundary recorded in `sources.json`. Each source may be cited as fact **only within the scope of its `supports_claims` field**. Three earlier claims — "city AI agreement", "public-space digital twin", "edge computing" — were found to have **no** document-level support and have been removed; see section 5. |
 
 No commercial basemap, satellite imagery, street-view image or third-party map tile is used. All map-like graphics are plotted from the GeoJSON layers listed in section 1.
 
@@ -41,15 +44,15 @@ No commercial basemap, satellite imagery, street-view image or third-party map t
 
 - **No third-party brand, trademark, logo, portrait, stock image or photograph is embedded.**
 - **No third-party text passage is quoted beyond short citations** of the official announcement and agent taskbook, both registered in `sources.json`.
-- The six international city references are **names and public concepts only**; no image, diagram, document excerpt or logo from those cities is reproduced.
+- The six international city references are **cited by name and by their one verifiable public practice only** (see the `supports_claims` field of each entry). No image, diagram, logo or extended document excerpt from those cities is reproduced; only short supporting passages are quoted, each attributed to its publisher.
 - All HTML files are self-contained: fonts are base64-embedded, figures are local relative paths, and no network request is made at render time.
 
 ## 5. Open items / 待清权事项
 
 | Item 事项 | Action required 需采取的行动 | Trigger 触发条件 |
 | --- | --- | --- |
-| Heiti TC subset redistribution | Replace with an OFL-licensed CJK font and re-export HTML/PDF/figures | If the organiser publishes or redistributes the package outside review |
-| Six international references | Register document-level URL, page title, publisher, publication/access date, supporting paragraph, licence, and manual verification status | Before any external publication or citation of a specific programme claim |
+| ~~Heiti TC subset redistribution~~ | **Closed 已关闭** — replaced with Noto Sans SC (OFL-1.1) across all figures, PDFs and HTML pages; see section 2 | — |
+| ~~Six international references~~ | **Closed 已关闭** — document-level URL, page title, publisher, publication/access date, reachability, supporting passage, licence/reuse boundary and manual verification status are now registered for all six entries in `sources.json` (`clearance_status: document_level_verified`). Three claims that could not be verified ("city AI agreement", "public-space digital twin", "edge computing") were **deleted** from the proposal text, figures and both language editions. | — |
 | Any future third-party font, image, trademark, portrait, map or case image | Obtain verifiable licence and update this statement and `sources.json`; otherwise replace or delete | On introduction of any asset outside the current original/open scope |
 
 ## 6. Responsibility / 责任声明
