@@ -54,7 +54,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "868631d0403e5d9312a7762423879ed5da0496b12aeed749c67d578c0340235a"
+      "sha256": "de8deff638e105f2d1673dd055fc7254ee3c0ed25e0b650585d1295d13f0cca1"
     },
     {
       "path": "compliance_matrix.json",
@@ -79,7 +79,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "f88db6b8e7d98243edad7abf855f5f92113c9fb87ba5bdfc81c0ce95a80b565b"
+      "sha256": "39ffa4b172fadd5ba48f81d30682f5370cdcee8d464346dea14f69890bf66c1e"
     },
     {
       "path": "report/narrative.md",
@@ -217,7 +217,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "862db68f30c742529cc87264328b4b9a2288b57f5ee2cb3616974bc03c8ff9a4"
+      "sha256": "fec43724fa485ea80e4abd51fe0ebbd62dbe778f9616ffeedd168de9fac1a8ab"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "f17c2664c2264c54086f5284c038965f3f9d315434654c499c3558fa1c7f1e06"
+      "sha256": "0a952c267301f234d877ccbbd99898642a562f4116c4fd617a3d5b5216eab305"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "65f3393bff57b40f74e846835847c475dccd48ea188395d9461291e18d0dd227"
+      "sha256": "3f677c9d027802732a75b32b49be1d99180d57389efbf9d814d70f21b6884de0"
     },
     {
       "path": "visual/index.en.html",
@@ -249,7 +249,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "cf087721ffef5e3a458107f063fd89f772ff3fc97cf63a2168143657ea2c1cc6"
+      "sha256": "03395da9a492d19b394d9994f5c3276f94fa25b6bb637ab30fe774ce36cc07a6"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",

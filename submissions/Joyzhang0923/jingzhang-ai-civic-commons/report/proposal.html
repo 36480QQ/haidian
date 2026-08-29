@@ -25,7 +25,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: "JZ Noto Sans SC", "Noto Sans SC", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "JZ Noto Sans SC", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.75;
@@ -47,11 +47,24 @@ h1 { font-size: 34px; line-height: 1.22; margin: 0 0 10px; }
 h2 { font-size: 25px; margin: 34px 0 12px; border-top: 1px solid var(--line); padding-top: 24px; }
 h3 { font-size: 20px; margin: 26px 0 10px; }
 p, li { font-size: 16px; }
+blockquote {
+  margin: 18px 0;
+  padding: 12px 18px;
+  border-left: 4px solid var(--line);
+  color: var(--muted);
+  background: #f8fafc;
+}
 code {
   background: #eef2f7;
   color: #1d4f7a;
   padding: 0.1em 0.35em;
   border-radius: 4px;
+}
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .summary { color: var(--muted); font-size: 17px; }
 .translation-link a { color: var(--accent); font-weight: 700; }
@@ -118,8 +131,8 @@ code {
 <p class="translation-link"><a href="proposal.en.html">Read in English</a></p>
 </section>
 <h1>京张智惠共生带：AI城市公共服务与创新生活实验场</h1>
-<p>&gt; **设计主张**：世界级AI创新带既要缩短技术从实验室到企业的距离，也要缩短创新与普通人的距离。本方案以“智惠而非智炫”为价值判断，把京张遗址公园转化为一条连接高校策源、企业转化、社区服务、公共体验和全球交流的城市公共服务主轴。</p>
-<p>&gt; **成果属性**：本稿为开放共创的概念建议和专业团队深化底稿，不替代正式规划，不构成政府审定结论。现阶段采用仓库维护的临时粗略边界；所有面积、道路、建筑和重点区位置均须在官方图件发布后统一复算。</p>
+<blockquote><p><strong>设计主张</strong>：世界级AI创新带既要缩短技术从实验室到企业的距离，也要缩短创新与普通人的距离。本方案以“智惠而非智炫”为价值判断，把京张遗址公园转化为一条连接高校策源、企业转化、社区服务、公共体验和全球交流的城市公共服务主轴。</p></blockquote>
+<blockquote><p><strong>成果属性</strong>：本稿为开放共创的概念建议和专业团队深化底稿，不替代正式规划，不构成政府审定结论。现阶段采用仓库维护的临时粗略边界；所有面积、道路、建筑和重点区位置均须在官方图件发布后统一复算。</p></blockquote>
 <h2>设计依据与资料清单</h2>
 <p>方案以资格预审公告确认三层工作范围、三处重点区、设计任务及成果深度，以面向智能体任务书确认三大定位、五大功能、“三区两翼”和六项必答任务。城市设计、控规深度语言及用地分类分别遵循仓库保存的官方标准快照；临时几何仅用于概念生成、可视化和自检 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="OFFICIAL-ANNOUNCEMENT" title="来源：OFFICIAL-ANNOUNCEMENT">来源</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup> <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="PROJECT-OFFICIAL-ANNOUNCEMENT" title="标准：PROJECT-OFFICIAL-ANNOUNCEMENT">标准</sup>。</p>
 <p>资料分为三类：官方或清权资料用于任务与方法依据；国际机构官网用于案例机制比较；临时边界只用于表达空间关系。任何缺少正式控规、道路红线、权属、市政、消防或文保资料的内容，都保留为“待正式数据补齐”，不以推测值制造精确感 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="risk_missing_data" title="深度：risk_missing_data">深度</sup>。</p>
@@ -127,13 +140,13 @@ code {
 <p>当前提交边界为 <code>provisional_constraint</code>。图中淡色虚线仅代表工作范围约束，不能作为官方红线、审批依据或精确面积基础；设计重点是主轴、三核、两翼接口、场景节点和实施回路 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/site_boundary.geojson#SITE-001" title="空间数据：geometry/site_boundary.geojson#SITE-001">空间数据</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="site_area_sqm" title="指标：site_area_sqm">指标</sup>。</p>
 <h2>三层范围工作框架</h2>
 <p>三层范围不是三套彼此割裂的图纸，而是一条“区域协同—总体结构—片区验证”的传导链：43.6平方公里统筹研究范围识别创新生态与区域协同接口；约11.4平方公里总体设计范围组织公共服务主轴、功能网络和更新项目；三处重点区用于检验空间、产业、交通、运营与治理是否能够落到具体空间类型 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_level_scope_framework" title="深度：three_level_scope_framework">深度</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-001" title="空间数据：geometry/key_areas.geojson#PROV-KEY-001">空间数据</sup>。</p>
-<p>总体结构概括为“**一带三核、两翼协同、十景共测、蓝绿慢行复合环**”：</p>
+<p>总体结构概括为“<strong>一带三核、两翼协同、十景共测、蓝绿慢行复合环</strong>”：</p>
 <ul>
-<li>**一带**：京张遗址公园公共服务主轴，串联创新服务、公共生活与文化叙事。</li>
-<li>**三核**：众智园全栈自主创新核、AI原点近校转化核、大钟寺智能原生经济核。</li>
-<li>**两翼**：向中关村科技服务翼链接资本、知识产权和专业服务；向小月河场景赋能翼链接社区需求、公共体验和城市测试。</li>
-<li>**十景共测**：十类AI场景全部采用“小范围试用—人工复核—公众评价—暂停或退出”的治理流程。</li>
-<li>**复合环**：步行、骑行、轨道接驳、蓝绿空间和公共服务节点组成连续日常网络。</li>
+<li><strong>一带</strong>：京张遗址公园公共服务主轴，串联创新服务、公共生活与文化叙事。</li>
+<li><strong>三核</strong>：众智园全栈自主创新核、AI原点近校转化核、大钟寺智能原生经济核。</li>
+<li><strong>两翼</strong>：向中关村科技服务翼链接资本、知识产权和专业服务；向小月河场景赋能翼链接社区需求、公共体验和城市测试。</li>
+<li><strong>十景共测</strong>：十类AI场景全部采用“小范围试用—人工复核—公众评价—暂停或退出”的治理流程。</li>
+<li><strong>复合环</strong>：步行、骑行、轨道接驳、蓝绿空间和公共服务节点组成连续日常网络。</li>
 </ul>
 <figure class="proposal-figure"><img src="../assets/figures/land-use-structure.png" alt="三层范围、三区两翼与功能传导"><figcaption>三层范围、三区两翼与功能传导</figcaption></figure>
 <p>“三区两翼”进一步连接北纬社区的开放创新、未来科学城和怀柔科学城的科研转化、经开区的工程化与制造验证，以及京津冀的应用市场。方案不假定已经存在合作协议，而提出五类可执行接口：联合课题、场景需求清单、测试资源互认、人才短期驻留和成果路演转介 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="overall_spatial_structure" title="深度：overall_spatial_structure">深度</sup>。</p>
