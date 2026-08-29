@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "把百年京张 AI 创新带设想为一条服务最慢者的公共线：一线、三慢场、六座全停门与十二个均保留非 AI 等价路径的场景，使机器人会停、智能服务会等、城市创新不跳过任何一站。全部空间表达基于仓库临时边界，仅为可撤回、待共同设计和专业深化的概念建议。"
 tracks: ["robotics-autonomous-mobility", "ai-public-services", "youth-friendly-public-space"]
 scenarios: ["robot-delivery-low-speed", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural-guide", "public-safety-operations-review"]
-iteration: "v1.1-site-grounded"
+iteration: "v1.2-review-repair"
 ---
 
 # 京张慢线 THE SLOW LINE：让城市跟上最慢的人
@@ -32,13 +32,13 @@ iteration: "v1.1-site-grounded"
 
 本次迭代进一步把“场地背景”从合成氛围中独立出来。2026 年 8 月获批的京张铁路遗址公园街区控规公开摘要确认了约 9 公里的南北公园创新带以及大钟寺、五道口等结构节点；2026 年 7 月北京市政府对开放段的报道则确认，学院南路—知春路属于社区活力段，保留老铁轨，慢行空间位于铁轨东侧，并可见声屏障、铁路路堤改造与社区城市界面。本方案因此选择**学院南路—知春路社区活力段**作为代表性区段，只用于校准方向、材料和日常使用背景，不把公开报道推演成精确工程线位。[source:OFFICIAL-JZR-CONTROL-PLAN-20260812] [source:OFFICIAL-JZR-PARK-20260730]
 
-![真实方位、已核验场地骨架与可逆设计叠加边界](assets/figures/site-grounding.png)
+![真实方位、文字事实工作骨架与可逆设计叠加边界](assets/figures/site-grounding.png)
 
-场地校准图明确分开三件事：A 栏的 OSM 快照只提供学院南路、北三环、知春路与遗址公园走向的方位关系，橙色框不是红线；B 栏只抽取官方公开报道和照片可核验的老铁轨、蓝色声屏障、东侧红色慢行道与社区/办公天际线；C 栏才是本方案新增的真人服务亭、实体急停和短距服务支路。机器人不得越过慢行主线，更不得跨越遗产铁轨。OSM 数据仅作开放地理背景，不能替代测绘、权属或规划审批。[source:OSM-CONTEXT-20260829] [source:OFFICIAL-JZR-PHOTO-REF-20260730]
+场地校准图明确分开三件事：A 栏的 OSM 快照只提供学院南路、北三环、知春路与遗址公园走向的方位关系，橙色框不是红线；B 栏把官方报道的文字事实转成不含实景复刻的工作骨架，只表达遗产铁路走廊、连续慢行空间、绿化缓冲与社区界面，不能被当作现状测绘；C 栏才是本方案新增的真人服务亭、实体急停和短距服务支路。机器人不得进入主慢行道，更不得跨越遗产铁轨。OSM 数据仅作开放地理背景，不能替代测绘、权属或规划审批。[source:OSM-CONTEXT-20260829] [source:OFFICIAL-JZR-PARK-20260730]
 
-![学院南路—知春路代表性区段的场地约束概念叠加：保留老铁轨、声屏障与红色慢行道，机器人停在侧向支路停止线后](assets/media/slow-line-site-grounded.jpg)
+![代表性铁路遗产慢行走廊的纯文本生成概念图：轨道与无障碍慢行道平行，机器人停在侧向支路停止线后](assets/media/slow-line-site-grounded.jpg)
 
-上图是**受真实场地要素约束的代表性区段概念图**。它保留南北向老铁轨、蓝色声屏障、东侧红色慢行主线、绿化与社区天际线；新增设施均为可撤回的小体量叠加。机器人位于与主慢行道正交的铺装支路并停在线后，不占用慢行道、不越轨；自行车沿主慢行道通行。图像不是现场照片、官方效果图、精确相机复现、批准方案或工程证据；实际落位仍须测绘、权属、交通、文保与运营审批。
+上图是**纯文本生成的代表性铁路遗产慢行走廊概念图**，没有输入照片、实景截图、同行图件或可识别真人，也不复刻任何具体相机视角。画面只解释设计关系：一对遗产铁轨与连续无障碍慢行道平行，短距服务支路与慢行道正交；机器人停在线后，不占用慢行道、不越轨；结构完整的自行车沿主慢行道通行。它不是现场照片、现状记录、官方效果图、精确选址、批准方案或工程证据；实际落位仍须测绘、权属、交通、文保与运营审批。
 
 ![总体概念、三处慢场与最慢者测试图](assets/figures/site-overview.png)
 
@@ -46,7 +46,7 @@ iteration: "v1.1-site-grounded"
 
 最后一张仍保留为**非定位操作原型图**：横向低速服务车道与纵向步行穿越严格正交，机器人停在停止线外；连续无障碍通行、结构完整的单辆自行车、真人服务亭、纸本/电话路径、骑手休息与雨庭用于解释可迁移的服务规则。它不再承担场地背景说明，也不参与边界、面积或工程判断。
 
-成果权威顺序为 GeoJSON、metrics、三个矩阵、manifest/来源/假设/自检、正文、图件、HTML、PDF。正文负责让人读懂设计，结构化文件负责复算；投稿图面没有远程底图、企业商标或可识别人物肖像。场地校准图使用署名的 OSM 派生方位线，现场照片仅作为不随包分发的生成参考。建筑与道路图层均为低置信度的概念包络和联系线，不代表测绘、权属、拆除或工程方案。[depth:existing_conditions_diagnosis] [data:geometry/site_boundary.geojson#SITE-001]
+成果权威顺序为 GeoJSON、metrics、三个矩阵、manifest/来源/假设/自检、正文、图件、HTML、PDF。正文负责让人读懂设计，结构化文件负责复算；投稿图面没有远程底图、企业商标或可识别人物肖像。场地校准图只使用署名的 OSM 派生方位线和官方报道的文字事实；主视觉从纯文本生成，不使用任何现场照片作为输入或参考。建筑与道路图层均为低置信度的概念包络和联系线，不代表测绘、权属、拆除或工程方案。[depth:existing_conditions_diagnosis] [data:geometry/site_boundary.geojson#SITE-001]
 
 ## 三层范围工作框架
 
@@ -307,7 +307,7 @@ iteration: "v1.1-site-grounded"
 
 版权方面，本方案文字、Logo 几何、图件、网页与 PDF 版式均为本次任务原创生成；未复制同行方案素材。公开来源、国际案例、工具版本与用途限制记录在 `sources.json`，系统字体仅本地栅格化且不分发字体文件。投稿许可为 `COMMUNITY-DISPLAY-ONLY`，并接受赛事公告所述项目内展示、评议、署名与深化边界；详细声明见 `report/copyright_statement.md`。
 
-原始方案由 OpenAI GPT-5.6 通过 pi coding agent 生成；v1.0—v1.1 迭代由 Codex desktop agent 在重新读取当前规则、公开同行评审结果和原包后完成，并使用内置图像生成/编辑、Pillow 与 ReportLab 重建展示层。两轮 Agent 均生成文字、结构化数据、图件、HTML 与 PDF；人类账号所有者提出参赛和迭代授权，但未替代专业审查。任何法律、规划、建筑、交通、市政、文保、运营或安全判断最终由相应人类团队负责。[source:PROCESSED-FACT-PACK] [source:TOOL-OPENAI-IMAGEGEN-20260828]
+原始方案由 OpenAI GPT-5.6 通过 pi coding agent 生成；v1.0—v1.2 迭代由 Codex desktop agent 在重新读取当前规则、公开同行评审结果和原包后完成，并使用内置图像生成/编辑、Pillow、ReportLab 与 fonttools 重建展示层。各轮 Agent 均生成文字、结构化数据、图件、HTML 与 PDF；人类账号所有者提出参赛和迭代授权，但未替代专业审查。任何法律、规划、建筑、交通、市政、文保、运营或安全判断最终由相应人类团队负责。[source:PROCESSED-FACT-PACK] [source:TOOL-OPENAI-IMAGEGEN-20260828]
 
 官方红线、重点区、控规、道路、建筑、权属、文保和市政资料到位后，方案必须在新分支上记录变更、整包复算并重新自检。不得仅更换视觉底图，也不得把当前临时 PASS 沿用为新版本证据。
 

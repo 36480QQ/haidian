@@ -26,13 +26,13 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "5fb4243071504becd11afc87909b842a1ccaf4b32cc211e16444cd2e7a3762a3"
+      "sha256": "036abe2a1e26c917762c2849ddcd1e21f4b781303960b686b0954a47f69e4743"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "6b99f796d2c9632283f388e54f32394cbd6339e0eb8baa71517db18e5eb747c4"
+      "sha256": "3522a119b0e0639ff232bdafbc39a176856de35e5c95f55cfd7b64d2e323d067"
     },
     {
       "path": "metrics.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "022d788e6a47bb8170fc8502e34ddf774a37c3eb9a9a6c4aa224e5bc0be5f048"
+      "sha256": "b8ba14e1310888504a300e10c1f038e0e83ef7e251d59964e4ffe63d190de83a"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4af608b99fcdfb38502fe26349737876a194fcd2b01dcb96ae7d1a666575a18f"
+      "sha256": "19a4d3763b57e681ec28ca975a0907a7a6a7a7d647033eb12fa711aab411d6c3"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,40 +81,40 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4474527e93c402b6d1098896510e157db403e58f07eb712d9f15520e9adcc1f4"
+      "sha256": "d4f7e9537baccf94ca8cb2d43667aacc06273ed37b52cb2205e1432a27aa515a"
     },
     {
       "path": "report/narrative.md",
       "role": "narrative",
       "required": false,
-      "sha256": "4d58cf59947993d64af7cc107e67abab67ec4d2f9fdcbdeffa8cc15c75df4307"
+      "sha256": "5d7042662dac0dcd618539473b0762b35d99e6bbd53ad75f6b9c6e10a44fa698"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "49c73969866c3645bdaf4cd7411e674001b7ddec25311a4074444674eb493c33"
+      "sha256": "e60651581f58ff9bfbbb6106d13e6994932d96e09f2fd7587be70d6daf05dcd5"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "90f06bfca8ecaae21d9fa5d39cf5a9b13681e4d0a2a04e62db3202df1c851be0"
+      "sha256": "e6c07f308714b1c92a43482fb0710924dc2523a617465e51a3b1053cd6687bbe"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "f77a8526f2284565ffcb551be090ea7bda8962b7bcd30b5eccc5f0bf3de5c487"
+      "sha256": "7f7f951117c863bb67d2811fcccf6539ac0b665ccf94ffc3c44b25dfaa246a1a"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b3bdbb3d6a40fd96216faacff176cf11a562cf10740140d2445bc50b626d4b90"
+      "sha256": "ee6665efba1647126e770eac48b08038a1b7c2aa975241f7c18b660734cd323b"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -128,14 +128,14 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "06f354ac04f7025bc58f84d560a394c1b7fcc76b47b3e32f6f92d98fdbea941e"
+      "sha256": "408aef0916380b657b2702d60d366c85deb18b9dbd7cdbad2f34abcb67930f23"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "6fd63870c417bed82eb1be2cfc673e531d6750fe499d96dfd5a6b1d95498db49"
+      "sha256": "305c0baa0d69d58a389830531f4a131ce2869699b24ff4b0981602a4798c9e73"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "3a75c2cffae2032a9082cd6217afd815943f46a41f1b103ca90386d2600a9da8"
+      "sha256": "e77cc828066775a3104969225f6b0f542b3c02f5d51700748a0299196818ceb4"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "d176fd1ca827bae42dc0696c1b18f7258825baf4b6d927b4174f9b9c4cc7dd08"
+      "sha256": "86780cfc97b54b56640897abaf75643177932b8e208ac07fa23e6de8ff70442e"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "89268ef8c300c7c9427826d7a65b85aa05ac95319958b5d06a448db69ccae677"
+      "sha256": "1d4e1ad35c1e5da5d87cfdc2055e3015196f8db999b719a6e0e92da115a6c1b2"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "8ecb11317dec73e43c24bfe35acd4bad4d85d1d10a622e6bbee8fb51a2014d32"
+      "sha256": "a74c820ae37395d945396bdeb02a08df033562017cf6f730ef90b2d358d9ac80"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "7b2b0f742b1b77998f37984f18687842b5b4f2609636347ae2082b265322ddfa"
+      "sha256": "3deac0c885efadb65323834b44e2cad6ab7852050cbb4d535be570acada9d594"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -259,7 +259,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/land-use-structure.png",
-      "sha256": "e9f319273acd856798412a3f2c9dbdaf062be40a56b85e943d0b6cd653cc7bc4"
+      "sha256": "68821af02195b0ea781f5a931001d37c32374a9c148d42e4a1e15f169130fb42"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
@@ -267,7 +267,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/metrics-evidence.png",
-      "sha256": "8fdd38f6b1828fd209bc42ea6f9d276d2b7fd0826693756e601bb0bd01e0e253"
+      "sha256": "574f079727c322a1e5bb7070a40b8225c0c7d2adc152395ae423b0c8d49f27cd"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
@@ -310,7 +310,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "a2a16b1a825731d3dffd2bab184adf4c97ed9c31ee10a2f7557350ed27f52d6d"
+      "sha256": "3000fb15b5ed97f6da76a3eb28e187b1ce71a0f32a2a2155fceafc72b93410f9"
     },
     {
       "path": "assets/media/slow-line-experience.jpg",
@@ -328,18 +328,18 @@
       "role": "media_poster",
       "required": false,
       "language": "neutral",
-      "title_zh": "学院南路—知春路代表性区段场地约束概念图",
-      "title_en": "Site-constrained concept for the representative Xueyuan South Road–Zhichun Road segment",
-      "description_zh": "AI 生成的代表性区段概念叠加：保留老铁轨、声屏障与红色慢行主线，机器人停在侧向铺装支路停止线后；非现场照片、非精确选址、非批准方案。",
-      "description_en": "AI-generated representative-segment overlay: restored rails, acoustic barrier, and red main slow path remain; the robot stops behind the side-spur line. Not a site photo, exact site, or approved plan.",
-      "sha256": "3852a29c0758c8bf0b0ee92740e972f06f2fe374f84c7a788983ae67185729a1"
+      "title_zh": "代表性铁路遗产慢行走廊概念图",
+      "title_en": "Representative railway-heritage slow-corridor concept",
+      "description_zh": "从纯文本生成的概念图：遗产铁轨与无障碍慢行道平行，机器人停在正交侧向支路停止线后；无照片输入，非现状记录、精确选址或批准方案。",
+      "description_en": "Text-only generated concept: heritage rails and an accessible slow path run in parallel, and the robot stops behind the perpendicular side-spur line. No photo input; not an existing-conditions record, exact site, or approved plan.",
+      "sha256": "c98d6b5de46aaf75e841f002e90828ef543c11ff6c60376a6bfa4011988b1912"
     },
     {
       "path": "assets/figures/site-grounding.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "7bb240e9fbec24ed57994fd0be7f97e91394cccf802e78f153baa2b7f8594a3e"
+      "sha256": "54e60ad77fe994e17b3277a6445794bdc9aba3a89e153af894e0301340371aeb"
     },
     {
       "path": "assets/figures/site-grounding.en.png",
@@ -347,7 +347,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-grounding.png",
-      "sha256": "b32b775004f1c1781804b1f0cbe3f7fc9b1b1f38c2f18bcdc55497e2d6855e5b"
+      "sha256": "1d9a28f8eca5ca54846e7ed6f1cffe6378e76d4984b369d1865ae460dd10796a"
     },
     {
       "path": "assets/figures/pilot-protocol.png",
