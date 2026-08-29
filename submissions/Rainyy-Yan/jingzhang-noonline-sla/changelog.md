@@ -1,5 +1,11 @@
 # 方案迭代记录 / Iteration Changelog
 
+## v4.5 prototype-experience and reversible-assembly pass - 2026-08-29
+
+**Human-scale spatial expression.** Three participant-authored concept perspectives now make the Zhongzhiyuan validation porch, AI Origin civic knowledge room and Dazhongsi arrival/accessible-alternative chain legible at eye level. They are paired with a bilingual reversible-prototype atlas: each card names only conceptual removable components, its existing DR-GATE checks, future authorised exercise, human acceptance observation and immediate removal/reroute/stop response.
+
+**Evidence boundary unchanged.** The perspectives are not site photographs, surveys, facility inventories, construction drawings, access confirmations, accessibility tests, permits, budgets, procurement records, staffing commitments or implementation approval. No real site reference image, map tile, logo or trademark was supplied. Every component remains HOLD until an authorised record exists, and no image or exercise promotes a Verified SLA.
+
 ## v4.4 Phase 0 action pack - 2026-08-28
 
 **Feasibility handoff.** This pass turns the existing Phase 0 gates into a machine-readable action pack: five request tracks for official geometry, planning/engineering controls, human field evidence, heritage constraints, and future pilot/operations/data-governance records; a minimum field-record protocol; and three future-only reversible exercises for AI-OFF decision points, public-bypass stop response and accessible arrival alternatives. The paired proposal chapters make the release conditions, evidence outputs and HOLD/STOP responses directly readable.

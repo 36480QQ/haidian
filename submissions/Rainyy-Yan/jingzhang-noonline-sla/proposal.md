@@ -74,6 +74,10 @@ AI 城市常把“会被算法看见”误当成“可以被人使用”。午�
 
 ![众智园验证界面：公共、观察、缓冲、受控测试与 F01 的概念关系](assets/figures/v4-figure-02-zhongzhiyuan.png)
 
+**概念体验透视（非现场再现）。** 下图是参与者生成的可逆原型体验示意，不是众智园既有现场、测绘依据或实施效果。它把“公共清晰带—观察/停留边—可拆安全缓冲—受控测试”放到人的高度；可移动标识、座椅、遮阴或帮助点只有在 `P0-EXP-01` 的授权、公共通行、维护和停止门槛具备时才能进入下一阶段，未满足即不设置或移除。[source:DESIGN-VISUAL-V4_5] [data:visual/assets/v4_5-reversible-prototype-atlas.json#PRA-01]
+
+![众智园可停止验证门廊概念透视：公共通行与受控测试由可拆缓冲分隔，非现场再现](assets/media/v4_5-zhongzhiyuan-concept-perspective.png)
+
 测试许可、安全距离、既有设备、公共入口和现状遮阴均未获得现场或专业确认；图中均是 conceptual intervention 或 field verification required [assumption:A-CONTROLS-001]。
 
 ## 6. AI 原点 / AI Origin: Understand → Question → Co-create
@@ -88,6 +92,10 @@ AI 原点不是 AI 展厅，而是让公众拥有选择权的城市知识客厅�
 
 ![AI 原点公共知识客厅：实体知识线、停留、人工帮助与可选 AI](assets/figures/v4-figure-03-ai-origin.png)
 
+**概念体验透视（非现场再现）。** 这张参与者生成的概念图说明实体知识线、可移动座椅、人工问询与可选 AI 如何并置，而非确认任何既有建筑、遗产位置、入口、树荫或服务人员。启用时必须让人能够只依靠实体信息完成进入、阅读、停留、提问与离开；任何维护、人工响应或清晰带条件缺失，交互层和相应服务主张即撤除。[source:DESIGN-VISUAL-V4_5] [data:visual/assets/v4_5-reversible-prototype-atlas.json#PRA-02]
+
+![AI 原点无设备门槛公共知识客厅概念透视：实体展线、人工帮助与自由通行并置，非现场再现](assets/media/v4_5-ai-origin-concept-perspective.png)
+
 公开资料可支持 AI 原点的战略角色和京张走廊语境，但不能确认图中具体入口、横向连接、座椅或遗产位置；这些条件保留为概念设计或待现场核验 [source:EXT-SRC-JINGZHANG-PARK-20230630] [assumption:A-HERITAGE-SEQUENCE-001]。
 
 ## 7. 大钟寺 / Dazhongsi: Arrive → Decide → Pause → Enter Daily Life
@@ -101,6 +109,10 @@ AI 原点不是 AI 展厅，而是让公众拥有选择权的城市知识客厅�
 - 将高频商务午间转换转化为短停、问路、固定导向和人工接力的公共界面。
 
 ![大钟寺概念到达界面：真实站点背景与待核验的城市转换清晰分层](assets/figures/v4-figure-04-dazhongsi.png)
+
+**概念体验透视（非现场再现）。** 图示只表达“到达标记—人工交接—短暂停留—公共清晰带—经核验替代路径或日常界面”的可逆关系，不确认真实车站出口、过街、商业、饮水、无障碍或营业状态。`P0-EXP-03` 只有在合法通行与无障碍替代被授权核验后才能演练；一旦证据失效，系统须改走已核验公共边界或暂停连续性主张。[source:DESIGN-VISUAL-V4_5] [data:visual/assets/v4_5-reversible-prototype-atlas.json#PRA-03]
+
+![大钟寺到达与可达替代概念透视：无障碍使用者沿公共清晰带经过人工帮助与物理判断标记，非现场再现](assets/media/v4_5-dazhongsi-concept-perspective.png)
 
 站外过街、合法通行、站外无障碍连续路线、公共入口及商业营业界面均必须现场核验或由交通、无障碍和运营专业团队研究 [assumption:A-ACCESSIBLE-ROUTE-001]。
 
@@ -146,6 +158,19 @@ Noonline 的核心顺序是 **Physical → Human → Digital → AI**。当 AI �
 工作包仍是概念性、可逆的试点建议，不包含虚构投资额、工期、产权、审批结论或政府承诺。每一阶段的责任角色、资源带、门槛和停机条件已回写到 Phase 0–3；每一工作包同时指向具体道路、节点和 ledger 任务 [data:geometry/phasing.geojson#PHASE-000] [data:risk.json#work_packages]。
 
 ## 12. 证据、指标与核验 / Evidence, Metrics and Verification
+
+### Phase 1 原型不是施工承诺，而是一套可撤回的空间演练
+
+V4.5 将三个重点区的抽象关系进一步压缩为三张“看得见、可暂停、可移交”的原型卡。每一张卡只提出可逆构件的概念组合和下一步必须由授权主体完成的观察，不把透视图里的树、座椅、设备、入口或人员当成现状。它们与 Phase 0 行动包共用同一条规则：先收到资料和责任接口，再进行一次有边界的演练；任何一项安全、通行、无障碍、维护或人工停止条件失败，就移除、改址、绕行或停止，而不是由 AI 为其补足。[source:DESIGN-VISUAL-V4_5] [data:visual/assets/v4_5-reversible-prototype-atlas.json#prototype_cards]
+
+| 原型卡 | 仅作概念表达的可逆构件 | 必须先具备的放行门 | 人类验收观察 | 即时结项 |
+| --- | --- | --- | --- | --- |
+| PRA-01 众智园 | 固定信息、可移动停留、遮阴预留、可拆缓冲、人工交接 | DR-GATE-01/02/04/05/06 | 清晰带未受占用；固定信息可读；测试与公众分隔；无设备时可人工交接 | 通行被占、缓冲或维护失效，即移除或改址 |
+| PRA-02 AI 原点 | 可拆信息展线、可移动座椅、轻型遮阴、人工问询、侧置可选 AI | DR-GATE-01/02/04/05/06 | 可不使用设备而进入、阅读、停留、提问和离开 | 内容维护、人工响应或清晰带缺失，即撤除交互层 |
+| PRA-03 大钟寺 | 可拆到达标记、人工帮助、短暂停留、遮阴预留、非数字判断标记 | DR-GATE-01/02/03/04/05/06 | 记录合法到达、无障碍替代、短停与交接；不推定直达站点 | 过街、入口或替代路径失效，即改走已核验公共边界或暂停 |
+
+三张图与表不提高任何 Verified SLA，也不构成对 Phase 1 试点、施工或运营的批准；它们只是让未来授权团队可以用同一套空间、证据与停止语言审查一次有限演练并完成移交。
+
 
 **Target SLA** 是设计希望达到的等级；**Verified SLA** 是当前证据可以支持的等级。当前 Engine 结果保持：SLA-A = B、SLA-B = C、SLA-C = C。缺少现场遮阴连续性、连续暴晒、真实节点位置、饮水/座椅状态、公共入口、关键过街、夏季绕行和人工服务时段中的任一关键项，都不得自动升级到 A [data:visual/assets/noonline-sla-report.json#routes]。
 

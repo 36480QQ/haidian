@@ -14,7 +14,7 @@
     "model_family": "gpt",
     "model_detail": "GPT-5 based Codex desktop coding agent"
   },
-  "generated_at": "2026-08-24T00:00:00Z",
+  "generated_at": "2026-08-29T00:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "ace6d0aa83a041eefea5dda274cabbb66d985a75c47868a41b6d3ee59f2447ae"
+      "sha256": "639726c9eac40679662406a5c231ae8f5104e53a7e317027cca5cdf58783506c"
     },
     {
       "path": "agent.json",
@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "55ec871646a5ed09ccfd22a432f0ad431de46680b973360ca0572413f0bc73fd"
+      "sha256": "7c6ebfb471f183e5977170a9a7dfc1829e4dd56cef6ff949995c026c2b1d698f"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "4f5a9b6a6d14fb3dc4c0ca8cd5be010af3a03a016d040b7149fb53e8f7ccbfb2"
+      "sha256": "2ebf9ad7002c86ae55246ce33f20d338afe08eef650409cb67dcc2847fbbae51"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,7 +88,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "efb98b9cfd7c930bca39445ea0b19b50231667aff4b5b3bc0c26bbb734a39b98"
+      "sha256": "a58957212d5262db68c0f18864d63bcb40b64f03423b3df6770d48af65da3513"
     },
     {
       "path": "report/narrative.md",
@@ -100,7 +100,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "0739938ff8744e14574395e92ff51c6cc2f81dd25135758ace1eed44960f38fc"
+      "sha256": "bcdad3dd763724d33db4b90e9112dad6736e5de313269ca9c01b3d67bb5f97eb"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -121,7 +121,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "fcfde5b96ea8e2d61c76094f914e877e38523b4837f296a447059fab935f3ac5"
+      "sha256": "2f4b65a17d1a41917b7d26b32aaa5c1b76e348654299ddcafdc40c9b97f4f81d"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "0ea54321cff5fe390d4358f46afe7346240e51dedba4c168609bd6a1d10bcc31"
+      "sha256": "915b295821ecdcce62cd010fd420d34e79ce089ee6a937c4947fac80bf9e015f"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "cdc51167332e272e8b1ebe0df33c4e973fd9fe27e341332b4b254ec3e0a38202"
+      "sha256": "ba68b86207d919b6912f483d4bd1e9550716135ccec81ac80c484f1d2008430b"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f9789dd525364dfad5ed26f5eaa12096825ccf016b83c5b61c161bc00aaf70d4"
+      "sha256": "e23801e03bb64e1727cadc05b6f0adad5ecdd92ac3d966d78cf067d96715137d"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -332,7 +332,7 @@
       "role": "changelog",
       "required": true,
       "language": "neutral",
-      "sha256": "4083a3e240af4046703a7fb69844f0ceb33696783810553ec21c14d9cc0d94c9"
+      "sha256": "63dfd5aa484826ccc3a1391416d53ec22d6c7606e3d11f661b4fa537c82237a1"
     },
     {
       "path": "visual/assets/sla-engine-diagram.svg",
@@ -693,7 +693,7 @@
       "path": "visual/assets/v4-review.css",
       "role": "asset",
       "required": true,
-      "sha256": "a80f6dce587b92ed700a6a16cee86020e9b769053bd054e94abfb7494a58893c"
+      "sha256": "7a62b2fd9df74ad8004ee9ff371c4db048346e6c1ab7413d4108ad3ccc932a7f"
     },
     {
       "path": "visual/assets/v4_2-agent_delivery_index.json",
@@ -757,6 +757,34 @@
       "required": false,
       "language": "neutral",
       "sha256": "99480124c3d8665a262ce4e22e1f7eb108a70efdeb5b250fb2fe904ec8135002"
+    },
+    {
+      "path": "assets/media/v4_5-zhongzhiyuan-concept-perspective.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "642da1e21738125e28ba731f90e3ff25838dd1da9c63397809868ebb1fcdba95"
+    },
+    {
+      "path": "assets/media/v4_5-ai-origin-concept-perspective.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "d3a0c121ee578d06f807147c19810334791d0197ba5d526546f0cba682e8722e"
+    },
+    {
+      "path": "assets/media/v4_5-dazhongsi-concept-perspective.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "e7ed2bebc1952ca167e1cae553e84ffc1cab5c2838bc2b7747d5e77878221afc"
+    },
+    {
+      "path": "visual/assets/v4_5-reversible-prototype-atlas.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "509fd3b69f70a3625a87fd53d96674a50fdddb8fbc9d85d84c9cdf640c7feeda"
     }
   ],
   "validation_claim": {
