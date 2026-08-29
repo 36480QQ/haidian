@@ -12,6 +12,8 @@
 
 无后缀文件是 `proposal.md` 所声明的主语言版本；译稿在扩展名前插入语言码，例如 `report/proposal.en.html`、`visual/index.en.html`、`drawings/a3-booklet.en.pdf` 和 `assets/figures/site-overview.en.png`。manifest 中主文件项声明 `language: "zh"` 或 `language: "en"`，译稿项声明另一语言并通过 `translation_of` 指回主文件；无文字资产可声明 `language: "neutral"` 并由两版共用。
 
+若译稿条目声明了 `translation_of`（或按语言后缀与主文件配对），且与对应主文件字节完全相同，同时双方都未声明 `language: "neutral"`，CI 会给出一条不阻断的提示（`report_identical_bilingual_artifacts`，随 #1689 于 2026-08-20 上线）：要么补上真正的译文渲染，要么在确实无文字/语言中立时把 `language` 补声明为 `"neutral"`。该提示只走 `warning`，不参与 PASS/FAIL 判定，也不会追溯历史包。
+
 英文主稿必须使用以下正式章节标题；中文译稿保持对应顺序。这样英文正文可独立通过结构校验，不依赖同一文件中的中文章节。
 
 | 中文章节 | 英文正式章节 |
@@ -36,11 +38,13 @@
 
 面向智能体的开源征集任务书已整理为 `brief/site-package/agent_taskbook.json`，本地参考摘录见 `brief/site-package/standards/references/agent-open-call-taskbook-0518.md`。它补充了十条智能体共创原则、持续参与与协作循环、三大定位、五大功能、三区两翼、六项智能体任务、统一评审维度和统一边界条款。agent 必须把这些要求写入 `proposal.md`、`compliance_matrix.json`、`standard_matrix.json`、HTML 和图纸，不得只在 JSON 中形式覆盖；任务书、资料或社区反馈更新后，应重新同步、复核并迭代方案。
 
-公开资料登记表位于 `data/source_registry.json`，处理规则见 `docs/data-workflow.md`。agent 必须区分 `usable_for_formal="yes"`、`background_only` 和 `provisional_only`：formal 权威结论只能来自已批准的 formal 可用资料；背景资料不能支撑空间控制结论；provisional 资料只能支撑临时生成、可视化和讨论，不能冒充官方或精确依据，但该数据缺口本身不阻断内容评分。
+公开资料登记表位于 `data/source_registry.json`，处理规则见 `docs/data-workflow.md`。它是维护者维护的共享资料目录，不要求参赛者把所有自采源重复登记到中央表；参赛者实际使用的每项来源仍必须完整记录在投稿包自己的 `sources.json` 中。agent 必须区分 `usable_for_formal="yes"`、`background_only` 和 `provisional_only`：formal 权威结论只能来自中央表中已批准的 formal 可用资料，或另有明确的官方/清权附件；背景资料不能支撑空间控制结论；provisional 资料只能支撑临时生成、可视化和讨论，不能冒充官方或精确依据，但该数据缺口本身不阻断内容评分。未进入中央表的自采源不能据此声称已获中央批准，也不能据此被自动判定为禁止使用。
 
 为了避免 agent 直接面对零散资料后写成空泛报告，仓库提供了第一批处理资料：`data/processed/agent_fact_pack.md`、`project_scope_summary.csv`、`agent_task_requirements.csv`、`source_use_matrix.csv` 和 `missing_data_checklist.csv`。参赛者应先用这些文件建立任务清单、范围结构、资料用途和缺口清单，再在 `proposal.md` 中把它们翻译成可读的设计论证。处理资料不能替代原始来源；正文只回引直接支撑当前判断的 `source_id`，完整来源覆盖由 `sources.json` 负责。
 
-视觉生成辅助工具不是 mandatory，但 agent 可以读取 `brief/site-package/visual_style_recommendations.json` 和 `docs/visual-style-recommendations.md`，选择适合 formal 城市设计的 HTML、信息图、diagram 或展板风格。任何外部 skill 生成的图片和 HTML 都只是解释层，权威依据仍是 GeoJSON、JSON、PDF 图纸和自检结果。
+参赛者自采的公开数据、案例、图像、字体和工具链依赖，不应混用同一套中央状态：公开事实资料按来源、用途和限制写入包内 `sources.json`；字体、PDF 内置字体、Python/Node 依赖和构建工具链则补充版本、许可证、是否再分发及本地资产/构建路径，必要时同步写入 `report/copyright_statement.md`。中央 source registry 只在维护者决定将某项资料作为仓库共享或 formal 依据统一复核时登记。若需申请中央登记，按 `docs/data-workflow.md` 的 `[source-registry]` Issue 通道提交材料，不能直接修改 `data/`。
+
+方案是给人看的。视觉和多模态能力不是所有 Agent 的 mandatory 资格门槛，但只要运行环境具备能力，Agent 就应主动使用高质量图像、示意图、短视频、声音或音乐、动画、三维场景和交互式网页增强人类理解；本地离线 Three.js、WebGL、Canvas 受到欢迎。详细文件、封面、无障碍和权利契约见 `skills/urban-design-ai-submission/references/multimodal-presentation.md`。任何生成媒体都只是解释层，权威依据仍是 GeoJSON、JSON、PDF 图纸和自检结果。
 
 ### 可接受的官方边界来源
 
@@ -80,7 +84,7 @@
 2. 提取或转换边界：SHP/GPKG/GeoJSON 可直接转换；DWG/DXF/PDF 需说明提取方法；扫描图或截图不得作为 formal 红线。
 3. 统一输出为 EPSG:4326 GeoJSON；面积复算使用 `brief/site-package/design_brief.json` 中指定的 EPSG:4548。
 4. 将转换误差、坐标系不确定、图纸版本差异写入 `assumptions.json`。
-5. 替换全部 scaffold 内容和占位图纸后运行 `scripts/finalize_submission.py`，再运行 `scripts/self_check_submission.py`。provisional boundary 必须保留精度与复算提示，但组织方数据缺口不阻断内容评分。
+5. 替换全部 scaffold 内容和占位图纸后运行 `scripts/finalize_submission.py`，再运行 `scripts/self_check_submission.py submissions/<github-login>/<proposal-slug> --pr-author <github-login> --mark-self-checked --json`。只有全部检查通过后，工具才会把本次四门报告写入 `self_check.json`、刷新其 manifest 哈希、写入 `validation_claim.self_checked=true` 并再次验证；provisional boundary 必须保留精度与复算提示，但组织方数据缺口不阻断内容评分。
 
 ### 专业标准本地参考库
 
@@ -193,7 +197,7 @@ python3 scripts/fetch_standard_references.py --update-standards
 
 ## 4. `compliance_matrix.json`
 
-`compliance_matrix.json` 是“任务响应表”。它告诉评审器和人类评审：官方公告 1.3、1.4、1.5 与面向智能体任务书 `agent.1` 至 `agent.6` 的每个必选任务，在方案中由哪些章节、图层、指标、图纸、HTML 页面、来源和自检项支撑。
+`compliance_matrix.json` 是“任务响应表”。它告诉评审器和人类评审：官方公告 1.3、1.4、1.5 与面向智能体任务书 `agent.1` 至 `agent.6` 的每个必选任务，在方案中由哪些章节、图层、指标、图纸、HTML 页面、来源、标准和自检项支撑。`source_ids` 只填写 `sources.json` / 中央来源登记中的来源 ID；专业标准 ID 应填写到独立的 `standard_ids`，并同时在 `standard_matrix.json` 中声明，不得混入 `source_ids`。
 
 必须覆盖这些 `requirement_id`：
 
@@ -236,6 +240,7 @@ agent.6 一带全球AI创新活动体系与长期运营设计
   "drawings": ["drawings/a3-booklet.pdf", "drawings/a0-boards.pdf"],
   "visual_sections": ["建筑与更新项目", "任务覆盖"],
   "source_ids": ["OFFICIAL-ANNOUNCEMENT", "OFFICIAL-DESIGN-BOUNDARY"],
+  "standard_ids": ["MOHURD-URBAN-DESIGN-MEASURES"],
   "assumption_ids": ["A-CONTROLS-001"],
   "self_check_ids": ["LAND_USE_TOPOLOGY", "BOUNDARY_TRUST"]
 }
@@ -267,7 +272,7 @@ agent.6 一带全球AI创新活动体系与长期运营设计
 }
 ```
 
-`design_depth_matrix.json` 回答：方案是否达到 formal 成果深度。核心项必须全部 `status: "complete"`，包括现状诊断、三层范围、总体结构、用地布局、开发强度或待确认控规条件、建筑高度体量风貌、拆改留、交通轨道慢行停车、市政新基建、蓝绿公共空间、三大重点区详细设计、更新项目清单、分期实施、指标复算、风险和缺资料清单。
+`design_depth_matrix.json` 回答：方案是否达到 formal 成果深度。核心项仍必须使用 `status: "complete"`，`incomplete` 与 `data_gap` 都会阻断正式投稿。若某项虽已完成现有数据允许的设计深度、但受组织方尚未公开的控规、边界或其他官方数据限制，可增加可选的 `completeness_limited_by` 字符串数组，用于机器可读披露；它不会把未知数据变成确定结论，也不会改变 formal 资格。核心项包括现状诊断、三层范围、总体结构、用地布局、开发强度或待确认控规条件、建筑高度体量风貌、拆改留、交通轨道慢行停车、市政新基建、蓝绿公共空间、三大重点区详细设计、更新项目清单、分期实施、指标复算、风险和缺资料清单。
 
 每个深度项必须同时提供：
 
@@ -304,6 +309,8 @@ agent.6 一带全球AI创新活动体系与长期运营设计
 - `design_depth_matrix.json` 中的深度项应在正文中被引用。
 - 核心 GeoJSON 图层应在正文中解释其设计含义。
 - `metrics.json` 中 `status=known` 的指标应在正文中说明公式、来源或空间含义。
+- proposal v2 或由当前流程写入 `readiness_contract=persisted-self-check-v1` 的包，`manifest.json.validation_claim.self_checked` 必须为 `true`；它表示作者确实运行并回读了 `self_check.json`，不能用 ready 状态反向替代自检证据。没有该 contract 的历史 ready 包只保留 intake 兼容性警告，并应使用 `self_check_submission.py --mark-self-checked` 迁移。CI 从 trusted base 的 manifest 判断包是历史包、新包还是已经进入 contract 的包；不能通过在 PR head 删除 contract 字段把新包降级为 legacy warning。公开 gallery 为连续性而保留的历史状态只描述展示分类，不构成新的可信正式证据。
+- `self_check.json` 是可回读的 contributor-owned 运行记录，结构完整不等于独立可信证明；真正的 provenance 以 `pull_request_target` 的 exact trusted run 或维护者在 trusted checkout 上的重跑为准。
 
 这类引用不是装饰。它要求 agent 在正文中说明：“这个用地分区为什么这样做，来自哪个图层；这个比例怎么复算；这个风貌控制依据哪个标准；这个结论有什么资料缺口。”
 
@@ -317,9 +324,15 @@ agent.6 一带全球AI创新活动体系与长期运营设计
 
 这些图应由 GeoJSON、metrics、compliance/standard/depth 矩阵和自检结果派生；不得使用远程图片、data URI、未清权地图截图或把图片当作权威面积/边界来源。图是解释层，权威数据仍是 GeoJSON/JSON。
 
+每张图片还会经过解码体积校验，校验的是解码后的像素数据体积，不是磁盘文件大小：`scripts/validate_submission.py` 依据 PNG `IHDR` 声明的宽、高、位深和颜色类型换算出未压缩字节数，单张图片不得超过 128 MiB（`MAX_PNG_INFLATED_BYTES`），全部 PNG 累计解码体积不得超过 1024 MiB（`MAX_TOTAL_PNG_INFLATED_BYTES`），按 manifest 声明顺序累加——排在后面的图片会消耗前面图片剩下的额度，不是每张各自独立的 128 MiB（`298500d70`，2026-08-19 上线）。这与压缩率无关：一张 7000×4000 像素以上的真彩色图，磁盘文件即使只有几百 KB，解码后仍可能占用 80 MiB 以上；多张高分辨率图片会快速消耗整包预算。命中上限时报错会直接给出换算出的字节数（如 `IHDR dimensions exceed the safe decoding limit`），修复方向是降低图片的像素分辨率到实际展示所需的程度，而不是继续调高压缩率。
+
+如果提交包包含 `simulation.json`，仿真结果也必须能够从任务台账复算：`task_count` 要等于 `tasks.length`；使用 `simulation_task_count`、`simulation_success_rate`、`tool_schema_pass_rate`、`energy_budget_violations` 或 `audit_completeness` 这些保留指标名时，指标的 `source_files` 应包含 `simulation.json`，并与任务记录逐项一致。成功任务使用 `outcome=success` 或以 `_success` 结尾的结果；能耗违规按 `energy_used_kwh > energy_budget_kwh` 计数。若同时提供 `baselines.urban_llm_harness` 或 `visual/assets/evaluation-baseline.json`，同名聚合值必须一致：`urban_llm_harness` 被定义为任务台账的镜像，不能用一个 scope 字段绕过冲突。其他评测范围须放在不同、说明用途的基线名下，不能在同一个保留指标名下并列两个结果。`ready_for_review` / 双语 v2 包中的冲突会阻断校验，legacy v1 仅给出迁移警告。字段说明、保留指标推导规则、baselines 边界和可复制模板见 [`docs/simulations.md`](simulations.md) 与 `templates/simulation.json`。
+
 ### 图面表达质量要求
 
 本项目要求的图面不是 raw data 截图，也不是把 GeoJSON polygon 直接填色后的 debug map。GeoJSON、metrics 和矩阵是证据层；`assets/figures/*.png`、A3/A0 和 `visual/index.html` 是解释层，必须让非技术评审者一眼看懂设计判断、空间主次和资料边界。
+
+图面也不必停留在 SVG 或静态信息板。可把清楚标注为概念表达的体验图、生成图、视频、声音、音乐、动画和三维交互放入 `assets/media/`，并让 `visual/index.html` 通过本地资源提供叙事入口。网站会在方案工作台中直接展示这些媒体；视频必须有 poster、VTT 字幕和 Markdown 文字稿，音频必须有文字稿，所有播放器禁止 autoplay。自定义封面由 `manifest.cover_image` 指向 `assets/media/` 中已登记的图片；空值继续使用默认封面。
 
 每张核心图必须有一个明确主叙事：
 
@@ -443,6 +456,8 @@ HTML 是必交电子展示页面，用于让评审者快速看懂方案。它不
 
 核心指标必须用 `data-metric` 和 `data-value` 标记，便于 `scripts/visual_review.py` 与 `metrics.json` 对比：
 
+每一个带数值的 `data-metric` 都必须对应 `metrics.json` 中 `status="known"` 且具有数值 `value` 的指标，并且数值必须一致。`unknown`、`not_applicable` 或尚未登记的指标不得在 HTML 中用 `data-value` 渲染成数字；应显示明确的 unknown/pending 文本、原因和复算前置条件。视觉审查会把这类数值声明判为阻断问题，防止单独截屏或摘录后被误读为正式控规或已知事实。
+
 ```html
 <span data-metric="site_area_sqm" data-value="11400000">1140 公顷</span>
 <span data-metric="green_ratio" data-value="0.23">23%</span>
@@ -455,7 +470,9 @@ HTML 是必交电子展示页面，用于让评审者快速看懂方案。它不
 - `green_ratio`
 - `public_space_ratio`
 
-HTML 展示值与 `metrics.json` 不一致会失败。
+这三项是 formal visual gate 的严格子集，不适用一般指标可保留 `unknown` 的兼容规则。它们必须是从投稿者提交的 `site_boundary`、`green_space` 和 `public_space` GeoJSON 可复算得到的 `status="known"` 有限数值，并在 HTML 中提供一致的数值 `data-value`。若底层几何为 provisional，可继续用低置信度的临时设计模型值，但必须保留 `provisional_constraint` / `provisional_rough` 标记、公式与来源文件，并说明正式几何发布后的复算触发条件；这不是宣称官方红线或法定控制指标。若三项之一尚不能从包内几何复算，投稿应保持 revision/scaffold 并先补齐或修复几何，不得用 `unknown`、`not_applicable` 或脱离几何的占位数绕过 gate。
+
+容积率、建筑高度等确实依赖尚未公开的官方控制条件的其他指标，仍可按一般契约使用 `status="unknown"`、`value: null` 和明确原因，也无需放入上述三项视觉声明。HTML 展示值与 `metrics.json` 不一致会失败。
 
 ## 10. 提交前自检
 
@@ -465,7 +482,7 @@ HTML 展示值与 `metrics.json` 不一致会失败。
 python3 -m pip install -r requirements-review.txt
 python3 scripts/render_proposal_html.py submissions/<github-login>/<proposal-slug>
 python3 scripts/finalize_submission.py submissions/<github-login>/<proposal-slug>
-python3 scripts/self_check_submission.py submissions/<github-login>/<proposal-slug> --pr-author <github-login>
+python3 scripts/self_check_submission.py submissions/<github-login>/<proposal-slug> --pr-author <github-login> --mark-self-checked --json
 ```
 
 这个命令会依次运行：

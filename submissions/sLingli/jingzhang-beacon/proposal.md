@@ -2,12 +2,14 @@
 title: "京张信标：把 AI 城市的运行状态变成公共信号语言"
 author_github: "sLingli"
 language: "zh"
+proposal_format_version: "2"
+bilingual_contract_version: "1"
 translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以百年京张铁路信号体系为原型，提出 JINGZHANG BEACON 京张信标：用绿、黄、红三色信号语言把 AI 城市的运行状态变成人人可读的公共信号。一脊三核双翼的空间结构与信号格网，让三处重点区分别成为验证信标、开源信标与体验信标，形成可体验、可复核、可回滚的 AI 城市公共界面。"
 tracks: ["ai-traffic-walkability", "ai-origin-community", "enterprise-services-ecosystem"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v1.2"
+iteration: "v1.4"
 ---
 
 # 京张信标：把 AI 城市的运行状态变成公共信号语言
@@ -15,6 +17,15 @@ iteration: "v1.2"
 > **JINGZHANG BEACON**｜京张铁路曾用臂板信号与信号灯把"前方路况"告诉每一趟列车；本方案用同一套公共信号逻辑，把 AI 城市的运行状态——哪些服务可体验、哪些正在受控测试、哪些已停用——转译为绿、黄、红三色公共信号，让市民、开发者与治理者都能读懂、都能复核、都能回退。
 
 本方案的全部空间、活动、政策、招商、投资与分期均为**开放共创概念建议、参考方案或可供专业团队深化研究的材料**，不替代正式规划，不构成政府审定结论，不代表任何地块拆改留、道路红线或工程实施结论 [source:AGENT-TASKBOOK]。方案在官方 `SITE_BOUNDARY` 与三处 `KEY_AREA` 精确 polygon 尚未取得时，使用仓库维护者登记的临时粗略边界生成；所有几何均为 `official_boundary=false`、`geometry_role=provisional_constraint`，只能用于生成、展示、讨论与包内自检 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE]。official polygons 发布后，须依次替换 site boundary、key areas，重做 land use、buildings、roads、green/public space、phasing、metrics、五图、HTML 与 PDF。
+
+> **执行摘要（七行）**
+> 1. 核心命题：把 AI 城市的运行状态转译为绿/黄/红三色公共信号语言——可体验、可复核、可回滚。
+> 2. 空间响应：一脊三核双翼；三处重点区分别成为验证、开源、体验信标。
+> 3. 合规锚点：红灯停用、申诉时限、无 AI 等价路径不是自我约束，而是生成式 AI 暂行办法、无障碍环境建设法与国办发〔2020〕45 号下的现行义务。
+> 4. 实施起点：近期从慢行断点缝合与限期试点场景开始；三期是三道合并门槛，不是时间表。
+> 5. 公共价值：信号是公共信息，人人可读、可申诉、可触发复核；不使用 AI 仍可获得不更慢、不更差的服务。
+> 6. 证据状态：全部几何为 provisional；空间指标可由包内几何复算到同一位（EPSG:4548）。
+> 7. 决策边界：所有空间与运营建议均为概念建议，不构成法定规划与政府审定结论。
 
 ## 1. 设计依据与资料清单
 
@@ -73,9 +84,19 @@ Logo 方向取"一枚立在轨距规上的信号灯"：底座两条平行线象�
 
 任务书要求体现与北纬社区、未来科学城、怀柔科学城、经开区及京津冀的创新协同 [source:AGENT-TASKBOOK]。本方案把协同组织为一条**信号接力**（概念建议）：未来科学城与怀柔科学城承担基础研究与源头创新，是信号链的"策源端"；一带之内，众智园完成全栈验证（验证端）、AI 原点完成开源转化（开源端）、大钟寺完成体验与消费放大（体验端）；经开区与京津冀城市群承接制造化、规模化落地场景，是"放大端"；北纬社区作为带上的生活配套与人才中转节点。接力的规则沿用信号语言：成果在上游节点转绿（验证通过、权属清晰、许可齐备）后才进入下一节点，红灯成果就地回滚、不向下游转嫁风险。区域协同只表达机制方向，不构成任何跨区投资、政策或实施承诺。
 
+### 区级公开统计：用来收敛问题，不用来制造目标
+
+依据公开发布的《北京市海淀区 2025 年国民经济和社会发展统计公报》（2026-04-10 发布）[source:SRC-HAIDIAN-STATS-2025]，三条可核验发现各自收敛了一个设计判断，并写明它不能证明什么：
+
+- 备案上线大模型 123 款（约占全市六成）→ 验证场景按"备案—评估—受控上线—退出"组织，与众智园三级验证门对应；不能证明这些模型位于一带之内或愿意参与。
+- 在区全国重点实验室 92 家 → 本带不重复建设研究能力，只承担成果交出与独立验证的接口（信号接力的"策源—验证"交接）；不能证明其会使用本带设施。
+- 常住人口 311.1 万人 → 更新不以人口增长为前提，空间供给跟随信号状态而非规模预测。
+
+全部区级统计只作背景参考（evidence_class=background_only，not_spatially_allocable=true）：不进入 `metrics.json`，不改变任何几何、面积、线位与分期——区级口径无法分配到 43.6 平方公里的走廊，方案因此"给出口径而不给出数值"。
+
 ## 4. 总体设计范围城市更新与控规深度城市设计
 
-总体设计不从"新建多少"开始，而从"哪些判断必须先公开"开始。35 个共享边界用地单元完整覆盖临时 site，形成西侧科技服务、中部信号脊绿带、东侧科研生活、南北门户留白交替的结构 [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]。用地以国土空间分类表达：科研用地（0802）集中于众智园与原点两侧 [data:geometry/land_use.geojson#LU-013]、[data:geometry/land_use.geojson#LU-011]，商业服务业用地（05）沿门户与产业带分布 [data:geometry/land_use.geojson#LU-001]、[data:geometry/land_use.geojson#LU-035]，居住用地（0701）组织为小月河翼生活片 [data:geometry/land_use.geojson#LU-029]，文化用地（0803）锚定大钟寺文化体验 [data:geometry/land_use.geojson#LU-009]，教育用地（0804）服务中段教育科研 [data:geometry/land_use.geojson#LU-024]，留白用地（16）保留北门户弹性 [data:geometry/land_use.geojson#LU-014]。该分区用于验证功能组合、连续开放空间和拓扑，不代表现状或法定用地；official parcel 与控规到位后须重构。
+总体设计不从"新建多少"开始，而从"哪些判断必须先公开"开始。35 个共享边界用地单元完整覆盖临时 site，形成西侧科技服务、中部信号脊绿带、东侧科研生活、南北门户留白交替的结构 [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]。用地以国土空间分类表达：科研用地（0802）集中于众智园与原点两侧，商业服务业用地（05）沿门户与产业带分布，居住用地（0701）组织为小月河翼生活片，文化用地（0803）锚定大钟寺文化体验，教育用地（0804）服务中段教育科研，留白用地（16）保留北门户弹性 [data:geometry/land_use.geojson#LU-013] [data:geometry/land_use.geojson#LU-035]。该分区用于验证功能组合、连续开放空间和拓扑，不代表现状或法定用地；official parcel 与控规到位后须重构。
 
 更新采用"**限期试点—年度评估—扩大或退役**"方法，与三色信号语言一一对应：绿灯服务直接开放并接受申诉；黄灯试点明确期限、测评与人工复核；红灯试点到期后评估、整改或退役，设备可拆除、数据可回滚 [depth:retain_renovate_demolish]。概念建筑基底由非开放空间用地内缩生成，仅测试空间容量，不表示现实建筑，也不作逐栋保留、改造、拆除或新建结论 [data:geometry/buildings.geojson#BLDG-001]。逐栋深化必须先补年代、结构、用途、权属、文保、消防、日照与全生命周期碳评估 [depth:development_intensity_controls]。
 
@@ -85,6 +106,20 @@ Logo 方向取"一枚立在轨距规上的信号灯"：底座两条平行线象�
 
 总体设计的底层机制是**信号机制体系**：空间、设施、场景、活动四类对象统一接入绿/黄/红状态体系，形成"发布（绿）—试点（黄）—退役（红）"的闭环；每次状态变更都留下记录、责任人与人工复核缺口。这套机制体系让更新项目清单、分期计划与指标复算共用同一套状态语言，也使方案本身成为可被继续深化的开放体系而非一次性蓝图 [depth:overall_spatial_structure]。
 
+### 空间产业融合：信号格网的产业职能
+
+任务书规划创新性维度要求对空间产业融合提出有价值思路 [source:AGENT-TASKBOOK]。本方案的回答是：产业不按"地块"一次配齐，而按**信号状态**动态供给——用地分区提供载体，信号层决定供给方式：
+
+| 用地分类 | 信号格网中的产业职能 | 供给方式 |
+| --- | --- | --- |
+| 科研用地 0802 | 验证与策源载体（众智园验证门、原点开源街区） | 长期稳定供给；黄灯试验空间按期限供给 [data:geometry/land_use.geojson#LU-013] |
+| 商业服务业用地 05 | 体验与消费界面（大钟寺站前、门户场景街） | 绿灯服务稳定开放；场景空间随信号审计更替 [data:geometry/land_use.geojson#LU-001] |
+| 居住用地 0701 | 生活承载（小月河翼生活片） | 服务嵌入社区；无 AI 等价路径保底 [data:geometry/land_use.geojson#LU-029] |
+| 公园绿地 1401 | 公共信号界面（信号脊、信标广场） | 全时开放；组件可拆可撤 [data:geometry/green_space.geojson#GREEN-001] |
+| 留白用地 16 | 信号状态待定的弹性载体（北门户） | 留白至信号状态明确，不预置功能 [data:geometry/land_use.geojson#LU-014] |
+
+融合规则有三条：其一，黄灯产业空间限期供给——试点到期即评估，扩绿或转红，不形成事实上的永久占用；其二，绿灯服务空间稳定供给——公共服务的空间承诺不因运营方更替而中断；其三，红灯空间可收回再配置——退役设施拆除后，载体回到可再分配状态。空间供给跟随产业信号的状态而非一次锁定的招商图纸；本机制不构成招商、投资或产值承诺 [depth:land_use_layout]。
+
 ## 5. 重点区域详细设计
 
 三处重点区以三座信标组织，共用"先公开、后运行"的门槛：每个 AI 场景进入前都要回答"为谁服务、使用什么数据、谁来复核、失败如何退出、公共收益如何留下" [depth:three_key_area_detailed_design]。三处临时 polygon 的包内复算面积分别约 192.9 万㎡（众智园）、104.3 万㎡（AI 原点）与 72.0 万㎡（大钟寺），合计 [metric:key_area_total_sqm]，与公告公开的约 192.1 / 104.3 / 72.0 公顷接近，说明临时位置的量级合理；official polygon 到位后以官方边界重算 [data:geometry/key_areas.geojson#PROV-KEY-001] 至 [data:geometry/key_areas.geojson#PROV-KEY-003]。
@@ -93,7 +128,7 @@ Logo 方向取"一枚立在轨距规上的信号灯"：底座两条平行线象�
 
 ### 5.1 众智园验证信标｜AMBER｜全栈自主验证区（约 192.9 万㎡）
 
-众智园承担"AI 全栈自主创新体系与 AI 治理全球话语权" [source:AGENT-TASKBOOK]。空间结构为"清河界面—验证中轴—科研单元"：清河一侧组织低碳创新廊 [data:geometry/green_space.geojson#GREEN-004]（依生成 id 对应信号脊北段 [data:geometry/green_space.geojson#GREEN-007]），中轴设验证信标广场 [data:geometry/public_space.geojson#PUBLIC-001]，两侧为科研用地 [data:geometry/land_use.geojson#LU-013]、[data:geometry/land_use.geojson#LU-027] 与商业服务 [data:geometry/land_use.geojson#LU-034]。验证门按黄灯三级组织：虚拟评测 → 受控实验室 → 真实街区试点；每个试点有期限、有测评、有人工复核、有退出通道。建筑以 AI 研发与孵化器为主 [data:geometry/buildings.geojson#BLDG-001]，概念基底不表示现实建筑；对外交通、清河界面与跨环路节点需待道路红线和工程条件确认 [depth:traffic_rail_slow_parking]。实施风险主要是 official polygon、控规指标与清河蓝线未到位 [depth:risk_missing_data]。
+众智园承担"AI 全栈自主创新体系与 AI 治理全球话语权" [source:AGENT-TASKBOOK]。空间结构为"清河界面—验证中轴—科研单元"：清河一侧组织低碳创新廊 [data:geometry/green_space.geojson#GREEN-004]（依生成 id 对应信号脊北段），中轴设验证信标广场 [data:geometry/public_space.geojson#PUBLIC-001]，两侧为科研用地与商业服务 [data:geometry/land_use.geojson#LU-013] [data:geometry/land_use.geojson#LU-034]。验证门按黄灯三级组织：虚拟评测 → 受控实验室 → 真实街区试点；每个试点有期限、有测评、有人工复核、有退出通道。建筑以 AI 研发与孵化器为主 [data:geometry/buildings.geojson#BLDG-001]，概念基底不表示现实建筑；对外交通、清河界面与跨环路节点需待道路红线和工程条件确认 [depth:traffic_rail_slow_parking]。实施风险主要是 official polygon、控规指标与清河蓝线未到位 [depth:risk_missing_data]。
 
 ### 5.2 AI 原点开源信标｜GREEN｜近校开源社区（约 104.3 万㎡）
 
@@ -178,7 +213,7 @@ AI 创新生态按"策源、验证、开源、体验、治理"五段组织，与
 
 ## 10. 蓝绿空间、公共空间与城市风貌
 
-蓝绿空间以京张遗址公园信号脊为骨架 [data:geometry/green_space.geojson#GREEN-001] 至 [data:geometry/green_space.geojson#GREEN-007]，统筹清河、小月河与南北门户绿楔 [data:geometry/green_space.geojson#GREEN-001]、[data:geometry/green_space.geojson#GREEN-007] [depth:blue_green_public_space]。信号脊绿带同时承担**东西缝合、南北连通**：南北方向贯通慢行与活动走廊，东西方向以缝合轴连接校区、园区与站点，打通既有铁路遗存造成的东西割裂。绿地比例约 11.3% [metric:green_ratio]，三座信标广场约 4.1 万㎡ [metric:public_space_area_sqm] [metric:public_space_ratio] [data:geometry/public_space.geojson#PUBLIC-001] 至 [data:geometry/public_space.geojson#PUBLIC-003]，与慢行、活动与 AI 展示复合利用 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+蓝绿空间以京张遗址公园信号脊为骨架 [data:geometry/green_space.geojson#GREEN-001] 至 [data:geometry/green_space.geojson#GREEN-007]，统筹清河、小月河与南北门户绿楔 [depth:blue_green_public_space]。信号脊绿带同时承担**东西缝合、南北连通**：南北方向贯通慢行与活动走廊，东西方向以缝合轴连接校区、园区与站点，打通既有铁路遗存造成的东西割裂。绿地比例约 11.3% [metric:green_ratio]，三座信标广场约 4.1 万㎡ [metric:public_space_area_sqm] [metric:public_space_ratio] [data:geometry/public_space.geojson#PUBLIC-001]，与慢行、活动与 AI 展示复合利用 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
 
 **公共空间组件库**（概念）：信号灯柱、信号信息亭、信号铺装带、状态展示屏与无障碍读信设施组成一套可组合的组件库。所有组件遵循可拆、可撤、可退役原则，共用可拆设备带与独立计量；停用即恢复素状，不留下不可逆的城市痕迹；组件规格、材质与文保相容性待专业团队深化 [depth:blue_green_public_space]。
 
@@ -217,11 +252,43 @@ AI 创新生态按"策源、验证、开源、体验、治理"五段组织，与
 
 **实施主体与年度评估**（概念建议）：政府与专业团队深化法定层与工程条件；企业与高校共建场景和试验空间；居民与开发者通过申诉、复核与活动参与评估；维护者与评审团队负责证据链与状态审计。年度评估指标建议为可衡量项：场景开放数量、试点按期完成率、申诉响应时长、回滚执行率、公共空间活动场次与满意度抽样；全部指标需运营数据持续校准，本稿只给出指标框架，不预设目标值 [depth:renewal_project_list]。
 
+### 落位清单与深化移交（空间明确性与可转化性）
+
+任务书补充维度要求说明方案适合落在哪些片区、节点或空间类型，以及能否被专业团队继续深化 [source:AGENT-TASKBOOK]。本方案逐项给出落位与移交对象：
+
+| 方案成果 | 适合落位（片区/节点） | 空间类型 | 前置依赖 | 深化接收方 |
+| --- | --- | --- | --- | --- |
+| 三级验证门 | 众智园验证中轴与受控实验室簇 [data:geometry/key_areas.geojson#PROV-KEY-001] | 科研用地 + 试验空间 | 官方边界、控规条件 | 专业规划团队 + 技术测评机构 |
+| 开源广场与成果转化街 | AI 原点校区—园区缝合轴 [data:geometry/key_areas.geojson#PROV-KEY-002] | 公共空间 + 首层业态 | 校区边界、权属 | 运营团队 + 知识产权/法务服务 |
+| 四象限步行连通与体验广场 | 大钟寺站前四象限 [data:geometry/key_areas.geojson#PROV-KEY-003] | 站域公共空间 | 道路红线、客流、出入口 | 轨道与城市设计团队 |
+| 信号脊绿道与组件库 | 京张遗址公园及两侧 [data:geometry/green_space.geojson#GREEN-001] | 蓝绿空间 | 文保控制、蓝线 | 景观团队 + 文保顾问 |
+| 信号态平台与审计台 | 包内数据层（GeoJSON/metrics/审计记录） | 数字成果 | 无（已可运行） | 开发者社区 + 维护者复核 |
+| 合规基线映射 | 全部信号节点运营机制 | 制度接口 | 法规更新跟踪 | 法务/合规团队 |
+
+移交原则：本包交付的是机制、接口与证据链；量化、法定化与工程化留给后续专业团队，任何接收方都可在官方数据到位后重算并覆盖本包的 provisional 结论 [depth:renewal_project_list]。
+
+### 七个交付问题：专业交接表
+
+为便于维护者与接收团队在不开包通读全文的情况下完成交接，本方案把交接必须回答的七个问题逐一落到可核验对象与下一责任位；每行的“可核验对象”均可在本包内直接打开复核 [depth:renewal_project_list]：
+
+| 交付问题 | 本包的回答 | 可核验对象 | 下一责任位 |
+| --- | --- | --- | --- |
+| 任务贴合：是否覆盖任务书全部必选任务？ | 六项必选任务全覆盖，逐条映射 | `compliance_matrix.json` requirements 全条目 | 维护者 intake 复核 |
+| 原创与可复现：结论能否被第三方重算？ | 全部空间指标可由提交几何用 `scripts/spatial_review.py` 复算到同一位 | `metrics.json` 复算值 + `geometry/*.geojson` | 专业测绘/规划团队按官方边界重算 |
+| AI—空间耦合：AI 机制如何落到空间？ | 三色信号分级到三级空间载体（实验室/街区/公共界面） | 第 5 章重点区 + `geometry/key_areas.geojson` | 运营团队 + 技术测评机构 |
+| 实施入口：第一步从哪里开始、谁批准？ | 一期以众智园验证中轴为入口，五问门槛逐项过闸 | 第 11 章分期计划 + 落位清单 | 政府与专业团队深化法定层 |
+| 公共利益：公共收益如何留下、损害如何救济？ | 申诉入口与人工复核缺口随每个信号节点配置，回滚即救济 | 第 13 章合规基线 + 风险矩阵 | 运营团队 + 法务/合规团队 |
+| 风险与约束：什么不知道、什么不可做？ | 几何 provisional、控规 unknown，逐条登记原因 | `assumptions.json` + 风险矩阵 R-01~R-04 | 官方数据供给方 + 复核团队 |
+| 继续深化：接收方拿到后做什么？ | 官方 polygon 到位后的整包重算序列已写明 | 第 1 章替换序列 + 落位清单移交对象列 | 下一轮迭代参与者 |
+
+交接表不新增任何承诺：所有“下一责任位”都是建议性的深化接收方，正式责任分配以法定程序为准 [source:AGENT-TASKBOOK]。
+
 ## 12. 指标体系、面积复算与合规矩阵
 
-指标体系包含空间指标（可由提交几何直接复算）、管控指标（需官方控规支撑）与绩效指标（需运营数据持续校准）三类 [depth:metrics_recalculation]：
+指标体系包含空间指标（可由提交几何直接复算）、管控指标（需官方控规支撑）与绩效指标（需运营数据持续校准）三类 [depth:metrics_recalculation]。空间指标保留完整复算值（如场地面积 11,412,825.386 ㎡ [metric:site_area_sqm]）；小数位的含义是"第三方可用同一几何复现到同一位"，不代表外部事实具有同等精度，也不因此把约数改写成伪精确：
 
-- **空间指标（known）**：总体设计范围面积 [metric:site_area_sqm]、重点区面积 [metric:key_area_total_sqm]、用地覆盖 [metric:land_use_area_sqm]、建筑基底 [metric:building_footprint_area_sqm]、建筑密度 [metric:building_density]、绿地面积与比例 [metric:green_space_area_sqm] [metric:green_ratio]、公共空间面积与比例 [metric:public_space_area_sqm] [metric:public_space_ratio]、道路与绿道长度 [metric:road_length_m] [metric:greenway_length_m]、三期面积 [metric:phase_1_area_sqm] [metric:phase_2_area_sqm] [metric:phase_3_area_sqm]；
+- **空间指标（known）— 规模与分期**：总体设计范围面积 [metric:site_area_sqm]、重点区面积 [metric:key_area_total_sqm]、用地覆盖 [metric:land_use_area_sqm]、建筑基底 [metric:building_footprint_area_sqm]、三期面积 [metric:phase_1_area_sqm] [metric:phase_2_area_sqm] [metric:phase_3_area_sqm]；
+- **空间指标（known）— 密度、比例与网络**：建筑密度 [metric:building_density]、绿地面积与比例 [metric:green_space_area_sqm] [metric:green_ratio]、公共空间面积与比例 [metric:public_space_area_sqm] [metric:public_space_ratio]、道路与绿道长度 [metric:road_length_m] [metric:greenway_length_m]；
 - **管控指标（unknown）**：容积率 [metric:floor_area_ratio]、建筑高度 [metric:building_height_max_m]，缺官方控规条件，原因已登记；
 - **绩效指标（known 计数）**：AI 场景卡 [metric:ai_scenario_node_count]、测试验证场景 [metric:ai_test_scenario_count]、用户画像 [metric:user_persona_count]、朝圣地标 [metric:ai_pilgrimage_landmark_count]、全球案例 [metric:global_case_study_count]。
 
@@ -231,11 +298,47 @@ AI 创新生态按"策源、验证、开源、体验、治理"五段组织，与
 
 ## 13. 风险、版权与合规说明
 
-主要风险与缺资料清单：official boundary 与 key-area polygon 缺失（不阻断内容评分，但阻断官方红线级精确面积结论）[depth:risk_missing_data]；控规指标、道路红线、现状建筑与权属、文保控制、市政容量与公共设施底数缺失（全部降级为待确认）[data:geometry/constraints.geojson#CONSTRAINT-01] 至 [data:geometry/constraints.geojson#CONSTRAINT-03]；外部数据的许可与复用条款需持续核查 [source:SITE-PACKAGE]。
+### 风险矩阵
+
+| 风险 | 本轮处理 | 进入深化的必要动作 | 登记编号 |
+| --- | --- | --- | --- |
+| 官方边界与重点区 polygon 缺失 | 全部标注 provisional_constraint，指标只证包内一致性 | 官方数据到位后整包重算 [depth:risk_missing_data] | R-01 |
+| 控规指标缺失（容积率/高度/密度） | 保持 unknown 并登记原因 [metric:floor_area_ratio] | 依审定控规条件深化 | R-02 |
+| 道路红线、权属、文保、市政容量缺失 | 全部降级为方向性策略 [data:geometry/constraints.geojson#CONSTRAINT-01] | 工程与权属资料齐备后复核 | R-03 |
+| 外部数据许可与复用条款 | 只用公开/清权资料，逐条登记 [source:SITE-PACKAGE] | 持续核查并登记变更 | R-04 |
+
+### 故障演练设计：48 小时合成联调（桌面推演，未实际执行）
+
+红灯机制的可信度取决于“停用与回滚”是否真的可执行。本方案设计一场 48 小时合成联调作为深化移交的演练剧本：**不接触公众、不使用真实个人数据、不连接真实城市系统**，仅在测试环境对信号机制本身注入四类故障，验证三色信号的状态迁移是否如设计收敛 [depth:risk_missing_data]：
+
+| 故障注入 | 期望信号迁移 | 验证点 | 退出与恢复 |
+| --- | --- | --- | --- |
+| F1 服务不可用（模型接口中断） | 绿→黄→红，界面即时降级为人工指引 | 降级公告是否在时限内发出、人工等价路径是否可用 | 恢复后重新过虚拟评测再回绿灯 |
+| F2 评测不通过（输出质量/安全未达标） | 黄→红，试点资格即刻冻结 | 冻结动作是否可一键执行、是否留审计记录 | 整改后从黄灯重新申请 |
+| F3 用户申诉升级（集中投诉） | 红灯复核，人工接管并暂停自动决策 | 申诉入口可达性、响应时限、人工复核记录 | 复核结论公示后决定恢复或退役 |
+| F4 数据撤回（参与方收回数据授权） | 相关场景整体回滚，派生数据可删除 | 回滚脚本可执行性、数据最小化是否成立 | 重新取得授权前保持停用 |
+
+演练要求由未参与本方案设计的团队复演并出具偏差清单；演练结论、偏差与整改都应写入公开记录。本节是演练设计而非执行结果——本包不声称已运行该演练，实际执行需要运营方、测评机构与监督方在场 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]。
+
+### 合规基线：三条红线的法定依据
+
+方案的三条红线——任何智能服务必须可停止、申诉入口必须便捷且有时限、不使用 AI 者保有等价路径——不是设计者的自我约束，而是现行法规下的义务；本节把红线逐条锚定到依据，只引条款要义与出处，不构成法律意见：
+
+| 本方案红线 | 现行依据 | 依据要点 | 空间与运营落位 |
+| --- | --- | --- | --- |
+| 任何智能服务必须可停止 | 《生成式人工智能服务管理暂行办法》第十四条（七部门联合发布，2023-08-15 施行）[source:STATUTORY-GENERATIVE-AI-MEASURES] | 发现违法内容应及时停止生成、停止传输、消除 | 红灯退役机制：到期或评测未过即停用，设备可拆、数据可回滚 |
+| 申诉与投诉入口便捷且有时限 | 同上第十五条 | 建立投诉举报机制，设置便捷入口，公布处理流程与反馈时限 | 每个信号节点带申诉入口与人工复核缺口；响应时长纳入年度评估 |
+| 涉舆论属性服务先评估 | 同上第十七条 | 具有舆论属性或社会动员能力的服务应开展安全评估 | 黄灯场景准入门槛：虚拟评测→受控实验室→街区试点三级递进 |
+| 公共服务保留人工办理 | 《中华人民共和国无障碍环境建设法》第三十九条（2023-09-01 施行）[source:STATUTORY-BARRIER-FREE-LAW] | 医疗健康、社会保障、金融业务、生活缴费等公共服务场所应保留现场指导与人工办理 | 绿灯服务保留人工替代；高影响判断回到人工 |
+| 智能化不得取消传统渠道 | 国办发〔2020〕45 号《关于切实解决老年人运用智能技术困难的实施方案》[source:POLICY-GUOBAN-2020-45] | 坚持传统服务方式与智能化服务创新并行 | 无 AI 等价路径不更慢、不更差，不以装 App 为通行前提 |
+
+这也解释了方案为什么把"可逆"放在"智能"之前：在既有法规下，一个不能停止、不能投诉、不能由人工替代的智能服务，本来就不具备进入公共空间的资格。
 
 本方案不声称官方批准、审定控规、最终土地权属、最终建设规模或保证实施；所有空间与活动建议均为开放共创概念建议，不替代正式规划，不构成政府审定结论 [source:AGENT-TASKBOOK]。图片、图纸、图标、数据与代码资产的来源与许可状态见 `sources.json` 与 `report/copyright_statement.md`。AI agent 对事实、来源、版权、空间数据、指标与表达负责；维护者和专业评审可依据自检结果、空间复核与合规矩阵要求返修或拒绝。
 
 ## 14. 参考资料
+
+本方案全部正文判断与几何指标均基于下列仓库内官方材料与数据源生成 [source:SITE-PACKAGE]：
 
 - `brief/public-brief.md`
 - `brief/site-package/design_brief.json`
@@ -254,4 +357,3 @@ AI 创新生态按"策源、验证、开源、体验、治理"五段组织，与
 - `data/processed/agent_task_requirements.csv`
 - `data/processed/source_use_matrix.csv`
 - `data/processed/missing_data_checklist.csv`
-- 机器可读引用索引：[source:OFFICIAL-ANNOUNCEMENT]、[source:AGENT-TASKBOOK]、[source:SITE-PACKAGE]、[source:SOURCE-REGISTRY]、[source:PROCESSED-FACT-PACK]、[standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]、[depth:metrics_recalculation]、[data:geometry/site_boundary.geojson#SITE-001]、[metric:site_area_sqm]

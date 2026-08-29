@@ -1,190 +1,285 @@
 ---
-title: "Jing-Zhang AI MAIN STREET: A Centennial Innovation Front Door from Laboratory to Street Corner"
+title: "JING-ZHANG AI MAIN STREET: One Route, Three Gates, One Public Ledger"
 author_github: "Chidoudou"
 language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "Using the Jing-Zhang Railway Heritage Park as a public first-use interface, one Street Pass, three spatial stamps and seven first-use rights close the final 500 metres between AI results in laboratories and ordinary streets. Three First-use Yards and twelve Street Nodes form an open innovation system that can be verified, translated, first used and withdrawn."
+summary: "Make the Jing-Zhang Railway Heritage Park the public launch line for AI services entering the real city: prove safety at Zhongzhiyuan, translate for public understanding at the AI Origin Community, test useful first use at Dazhongsi, and record evidence, responsibility and disposition in one Street Pass."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-iteration: "v2.0"
+iteration: "v2.7"
 ---
 
-# Jing-Zhang AI MAIN STREET: A Centennial Innovation Front Door from Laboratory to Street Corner
+# JING-ZHANG AI MAIN STREET
 
-In one sentence: enable Haidian's AI to be seen not only in laboratories, launches and campuses, but to be safely first used at ordinary street corners through a “Street Pass”; understood by ordinary people; taken over by maintainers; and promptly withdrawn when it fails. Rather than another technology-landscape axis, the spatial structure is “one Main Street line, three First-use Yards, a two-wing service network, and twelve Street Nodes”: Zhongzhiyuan applies the “verification” stamp, the Beijing AI Origin Community the “translation” stamp, and Dazhongsi the “time-limited first-use” stamp, while the Jing-Zhang Railway Heritage Park joins them into a continuous public front door. Each Street Pass records seven first-use rights, responsible roles, minimum data, human takeover, appeal, and the conditions for restoring ordinary service.
+## Core Proposition: One Route, Three Gates, One Public Ledger
 
-All proposed spatial interventions are open co-creation proposals, conceptual recommendations, or reference material for further study by professional teams. They do not replace formal planning and do not constitute government approval, engineering feasibility, investment, business-attraction, or implementation commitments.
+**AI MAIN STREET translates the centennial railway ethic of trial, verification and passage into a civic institution for the AI era. Before an AI service enters a real street, it proves safety at Zhongzhiyuan, proves that people can understand it at the AI Origin Community, and proves everyday usefulness at Dazhongsi. All three results enter one Street Pass.**
+
+Spatially, the proposal uses the north-south Jing-Zhang Railway Heritage Park as its public base and connects universities, innovation parks, communities, rail stations and renewal areas through six cross-corridor gateways. The three key areas host `PROVE / TRANSLATE / FIRST USE`; twelve street nodes provide physical wayfinding, staffed service, reversible trials and public feedback. The city continuously operates through an ordinary-service layer, while AI is an enhancement layer that people activate when useful and hand back when needed. [metric:street_pass_gate_count] [metric:scenario_node_count]
+
+The design produces four handover-ready outcomes:
+
+| Urban question | Design decision | First visible outcome |
+| --- | --- | --- |
+| How does innovation leave the laboratory? | Three distinct places, one evidence handover | Three Street Pass gates and a public status board |
+| How does the park activate both sides? | One north-south base and six cross-corridor gateways | Continuous arrival, public ground floors and twelve street nodes |
+| How does AI earn public trust? | Seven first-use rights and four-party co-review | Staffed window, paper route, appeal receipt and result card |
+| How does implementation begin? | A 90-day Dazhongsi arrival pilot | A relocatable physical-digital interface from Exit A through 1733 to Exit D |
+
+![One urban route, three public gates and one evidence ledger](assets/figures/street-pass-journey.en.png)
+
+The spatial content is an open co-creation proposal for professional development. The official announcement establishes tasks, textual extents and approximate areas; package geometry uses repository provisional boundaries; Dazhongsi photographs record one evening; the 90-day sequence, resource bands and action packages are conceptual implementation frameworks. Each evidence type is labelled, while statutory planning, engineering design, investment decisions and operational authorization proceed through their formal processes.
+
+## First Scene: A 90-Day Dazhongsi Arrival Pilot
+
+On 13 August 2026 from 18:07 to 19:44, the contributor walked from the direction of Dazhongsi Exit A on Line 13, via the surface and 1733 ground/B1/B2, to Line 12 Exit D and the edge beneath North Third Ring Road. The elevated station, hoardings and level changes, layered commercial interface, exit status and micromobility parking together create a station-city arrival chain that keeps changing. Four cleared stills record this public-viewpoint observation; the evidence ledger documents the complete method and limits. [source:USER-FIELD-DAZHONGSI-20260813] [data:geometry/public_space.geojson#SCN-03]
+
+![Dazhongsi field evidence: Exit A, 1733 and Exit D](assets/figures/dazhongsi-field-evidence.en.png)
+
+The first pilot assembles physical routing, staffed directions, a verified accessible alternative, operating status and multilingual advice as one relocatable service unit. `T0` is the current route, `T1` the construction transition and `T2` future station-city integration. When an entrance, hoarding or passage changes, the on-site team updates the route version and verifies it again. Line 13 capacity expansion and the Lanjing Lijia renewal study support the conclusion that this interface will continue to change; approved design will determine any actual concourse or exit. [source:OFFICIAL-L13-CAPACITY-EXPANSION] [source:OFFICIAL-DAZHONGSI-LANJING-TRANSPORT-2025]
+
+![Relocatable Dazhongsi station-city first-use interface](assets/figures/prototype-dazhongsi.en.png)
+
+The 90 days form five consecutive decision windows and combine `SP-01 Street Pass + SP-04 Station-City Interface + SP-05 Accessible Companion`:
+
+| Decision window | On-site delivery | Pass condition |
+| --- | --- | --- |
+| D0-15 Route record | Time-sliced route, exit status, continuous accessible alternative, micromobility conflicts and maintenance responsibility | A time-stamped valid route version and responsibility list exist |
+| D16-30 Ordinary-service baseline | Physical map, paper wayfinding, staffed desk, pause/appeal receipt and removal drill | Arrival works without an app; human response and restoration can be executed |
+| D31-60 Time-limited first use | Opt-in multilingual/accessibility advice with explanation, correction and shutdown | Advice cites the current route, human takeover is immediate and the commuting line stays open |
+| D61-75 Four-party review | Users, maintainers, professional reviewers and a potentially authorized operator sign separate result cards | High-risk findings close individually and all four perspectives remain visible |
+| D76-90 Disposition | Adopt, pause or retire; process equipment, accounts and temporary data accordingly | Ordinary service is fully restored and each new site is authorized again |
+
+The conceptual resource band is `M`: one 90-day operating cycle, one movable staffed desk, two sets of physical maps, one time-sliced route/accessibility audit, four co-review roles and one removal drill. The order-of-magnitude non-construction range for option appraisal is CNY 0.8-2.5 million, excluding civil works, land, existing staff salaries and formal procurement prices. Cost, rail, fire, accessibility and site-operation professionals reprice the authorized scope in the next stage. The proposed RACI assigns A to a potentially authorized district/station-city operator, R to the on-site service and maintenance team, C to rail, 1733, subdistrict, traffic and accessibility professionals, and I to passengers, merchants and the community. [depth:renewal_project_list]
+
+## Three-Minute Reading Route
+
+1. Read `site-overview` for the north-south base and six cross-corridor gateways.
+2. Read `key-areas` for the distinction between proving, translating and first use.
+3. Read `dazhongsi-field-evidence` to see how field evidence changes the design.
+4. Read `delivery-roadmap` for the first delivery, responsibility, resources and disposition gates.
+5. Open `visual/index.en.html` for bilingual figures, scenario cards, metrics and machine-audit entries.
 
 ## Design Basis and Source List
 
-The proposal makes “what can be established and what must remain unknown” part of its design. The official announcement and `brief/public-brief.md` provide the project name, three-tier scope, approximate areas, three key areas and design tasks, and therefore form the basis for this response; the agent taskbook provides three orientations, five functions, Three Zones and Two Wings, six required tasks and public-compliance boundaries. [source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] `data/source_registry.json` distinguishes formal-ready, background-only and provisional-only material; the processed fact pack is navigation only. [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK]
+The official announcement provides the project name, three scope levels, approximate areas, three key areas and design tasks. The Agent taskbook provides the three positionings, five functions, three areas and two wings, six required tasks and public-compliance principles. [source:OFFICIAL-ANNOUNCEMENT] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
 
-The repository currently contains no formally verifiable, coordinate-based overall boundary or polygons for the three key areas. This package therefore inherits maintainer-generated provisional geometry, explicitly marked `official_boundary=false` and `geometry_role=provisional_constraint`. It is solely for generation, graphic expression, discussion and intake self-checking—not an Official Planning Boundary, precise area, ownership, Regulatory Detailed Planning, or approval judgement. [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#SITE-001] [data:geometry/key_areas.geojson#PROV-KEY-001] [depth:existing_conditions_diagnosis] [depth:risk_missing_data]
+The repository site package, central source registry and processed fact pack jointly navigate data and classify permitted uses. [source:SITE-PACKAGE] [source:SOURCE-REGISTRY] [source:PROCESSED-FACT-PACK] Urban design, regulatory planning and land-use terminology follow public MOHURD and MNR sources. The architectural design-depth item lacking an official file remains a future data item. [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
 
-Professional references include the principles for public space, historic culture, urban character, traffic organisation and key-area design in the Urban Design Management Measures, and the statutory status of land use, intensity, facilities and the “four lines” in the regulatory detailed-planning rules. [standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] Land-use codes follow the repository subset of the Ministry of Natural Resources classification. [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] The architectural design-document depth standard is recorded only as a missing-data item because no official document is provided; it is not an authoritative basis. [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
+| Evidence layer | Use in this proposal | Update trigger |
+| --- | --- | --- |
+| Official task | Purpose, scope names, textual extents, approximate areas and mandatory responses | An official addendum or taskbook update |
+| Provisional geometry | Layer generation, area recalculation, figures and self-check | Rebuild the whole package after official CAD/GIS/PDF arrives [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] |
+| Field observation | Dazhongsi spatial sequence, conflict types and pilot question | Time-sliced counts, accessibility audit and operator interviews |
+| Concept design | Street Pass, scenarios, action packages and 90-day decision sequence | Ownership, control plan, traffic, utilities, fire and operational authorization |
 
-External cases are used only to compare mechanisms, never for spatial controls in this project. The six cases form a “mechanisms, not images” comparison [metric:global_case_count]:
+The provisional boundary retains `official_boundary=false` and `geometry_role=provisional_constraint`. It supports internal package consistency, while statutory redlines, ownership, approval and engineering come from the relevant formal evidence. [data:geometry/site_boundary.geojson#SITE-001] [depth:existing_conditions_diagnosis]
 
-| Case | Transferable mechanism | Jing-Zhang translation | Not copied |
+## Three-Level Scope Framework
+
+The 43.6 sq km coordinated research area organizes industry, talent, compute, data, finance and regional collaboration. The 11.4 sq km overall design area organizes renewal, public space, slow mobility, life services and innovation carriers. The three announced key areas, approximately 368.4 ha in total, host spatial prototypes and operating mechanisms. [depth:three_level_scope_framework]
+
+One problem-to-evidence chain connects the three levels: the coordinated level gathers real problems and innovation resources; the overall level provides arrival and public interfaces; the key-area level creates operational, reviewable places. In EPSG:4548 the submitted provisional overall boundary recalculates to approximately 11.413 sq km, a value internal to the package. [metric:site_area_sqm]
+
+The three key areas retain separate provisional calculations: Zhongzhiyuan [metric:key_area_1_sqm], AI Origin [metric:key_area_2_sqm], and Dazhongsi [metric:key_area_3_sqm].
+
+When official geometry is released, replace site boundary and key areas together and regenerate land use, buildings, roads, green space, public space, phasing, metrics, figures, web pages and PDFs. [data:geometry/constraints.geojson#CON-001]
+
+## Coordinated Research Area: Industry and Future City Research
+
+AI MAIN STREET supplies the public conversion stage between AI research and urban first use. The three areas and two wings form a continuous division of labour: Zhongzhiyuan offers full-stack validation, safety and standards; the AI Origin Community offers research translation, talent entrepreneurship and public explanation; Dazhongsi offers real first-use interfaces for agents, content consumption and smart terminals; the Zhongguancun Technology Service Wing connects IP, finance, legal, productization and international services; the Xiaoyue River Scenario Wing connects embodied AI and sector applications. [source:OFFICIAL-THREE-ZONES-TWO-WINGS]
+
+Public, dated information about the AI Origin Community supports the one-kilometre conversion-circle research direction. Existing Jing-Zhang Park activity and services support a retain-upgrade-connect approach. The Dazhongsi renewal project supports first use through existing carriers and station-city interfaces. Together, these baselines determine translation windows, park attachment and the first Dazhongsi pilot. [source:OFFICIAL-AI-ORIGIN-BASELINE] [source:OFFICIAL-JINGZHANG-PARK-BASELINE] [source:OFFICIAL-DAZHONGSI-RENEWAL]
+
+Six international cases transfer mechanisms only: [metric:global_case_count]
+
+| Case | Transferable mechanism | Jing-Zhang translation |
+| --- | --- | --- |
+| AI Singapore | Research, talent and open toolchains | Zhongzhiyuan problem library and proof gate [source:CASE-AISG] |
+| Mila | Open science and cross-sector partnership | Origin Community co-working and model-card reading [source:CASE-MILA] |
+| Vector Institute | Bridge from research to adoption | Street Pass handover across three places [source:CASE-VECTOR] |
+| FCAI | Real problems, ethics and intelligibility | Seven first-use rights and four-party review [source:CASE-FCAI] |
+| STATION F | Shared startup services and public interface | Dazhongsi small-organization first-use desk [source:CASE-STATION-F] |
+| Helsinki AI Register | Public purpose, responsibility and feedback | Public status board and correctable ledger [source:CASE-HELSINKI-REGISTER] |
+
+The identity combines twin parallel lines, three nodes and a bracket opening toward the street to represent rail, data and public access. The Chinese name is “京张上街” and the English name “AI MAIN STREET”; secondary names are “First-use Yard”, “Street Node” and “Service Wing”. The logo and protocol are original vector directions for professional visual development. [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]
+
+Regional collaboration uses an open interface. Beiwei Community, Future Science City, Huairou Science City, Beijing E-Town and Beijing-Tianjin-Hebei participants contribute problems, model cards, test protocols, failure reviews and conversion applications. Each collaboration records provenance, rights, data boundaries, responsibility and exit conditions. [depth:overall_spatial_structure]
+
+| Coordination partner | Input brought to Jing-Zhang | Joint task and spatial interface | Output and return loop |
 | --- | --- | --- | --- |
-| AI Singapore | Research, talent, innovation and open toolchain | Zhongzhiyuan verification gateway and open problem library | Brand, institutional lists and funding figures |
-| Mila | Open science, talent and industry partners | Origin Community co-learning room and model-card reading | Organisational structure and spatial scale |
-| Vector Institute | Bridge from research to adoption | Three-stamp adoption chain | Partner lists and industrial performance |
-| FCAI | Real problems, ethics and intelligibility | Seven first-use rights and affected-user review | Extrapolation of research findings |
-| STATION F | Shared services, startup programmes and public interface | Dazhongsi small-shop first-use desk | Corporate brands and investment-attraction commitments |
-| Helsinki AI Register | Public system purpose, responsibility information and public feedback | Street Pass status board, responsible person and feedback entry | Existing register contents and governance authority |
+| Beiwei Community | Real problems from residents, young families and community operations | Turn them into plain-language problem cards, an ordinary-service baseline and a co-test list at the AI Origin translation window | Return adoption, refusal, appeal and unresolved needs to community deliberation and product revision |
+| Future Science City | Research outputs, engineering problems and validation needs | Enter the PROVE gate at Zhongzhiyuan and use its controlled loop and safety-record template | Produce reusable validation protocols, failure records and conditions for public translation |
+| Huairou Science City | Scientific-facility scenarios, research-data boundaries and interdisciplinary needs | Publish purpose, limits and human responsibility at the Origin translation desk before choosing a Jing-Zhang first-use site | Return model cards, public comprehension gaps and questions requiring research-team correction |
+| Beijing E-Town | Intelligent-manufacturing, robotics and supply-chain scenarios | After closed testing, apply for the low-speed controlled loop at Zhongzhiyuan or a candidate Xiaoyue River interface | Produce maintenance, takeover, near-miss and removal records for industrial iteration and regulatory discussion |
+| Beijing-Tianjin-Hebei actors | Cross-regional talent, scenarios and public-service needs | Join seasonal problem calls and open-protocol co-editing; each locality re-authorizes its own use | Produce a portable Street Pass template, local-difference list and annual open-source review |
 
-[source:CASE-AISG] [source:CASE-MILA] [source:CASE-VECTOR] [source:CASE-FCAI] [source:CASE-STATION-F] [source:CASE-HELSINKI-REGISTER] The proposal copies neither brands, imagery, company lists, investment figures nor spatial scales; it extracts only the organisational method of “research–verification–translation–first use–feedback–exit.”
+These are proposed collaboration interfaces, not evidence of an existing agreement, funding, site or institutional commitment. Responsible entities are confirmed task by task by the actual project and authorized operator. [source:AGENT-TASKBOOK]
 
-![Overall concept and evidence boundary](assets/figures/site-overview.en.png)
+## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
-## Three-Tier Scope Framework
+The overall structure is “**one public base, six cross-corridor gateways, three first-use yards and twelve street nodes**”. Jing-Zhang Railway Heritage Park supports north-south walking and civic exchange. Six gateway relationships from X1 Zhongzhiyuan-Xuezhiyuan to X6 Dazhongsi-North Third Ring connect real urban directions on both sides. Three first-use yards host evidence gates, while street nodes bring status, staffed service, rest and feedback to everyday scale. [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001]
 
-The Coordinated Research Area, approximately 43.6 km², supports industrial and regional coordination research; the Overall Design Area, approximately 11.4 km², supports urban renewal and overall urban design; and the three announced Key-Area Detailed Design Areas total approximately 368.4 ha, supporting deeper scenario, spatial and operational design. These are not three unrelated plans but one “Main Street chain”: the coordinated tier determines who supplies research, computing capacity, funding, talent and industry problems; the overall tier connects public interfaces, walking and cycling, the green spine and daily-life services; and the key-area tier makes verification, translation and first use into operable nodes. [depth:three_level_scope_framework] [depth:overall_spatial_structure]
+The 2024 published draft control-plan concept of one belt, one axis, two centres and multiple nodes, Jing-Zhang Park Phase 2, the Haidian Urban Renewal Guide and the Garden City plan together support this framework. The proposal adds service interfaces to existing parks, centres and public ground floors, translating cross-corridor access, greenway continuity, four-zone integration and public participation into actions. [source:OFFICIAL-JINGZHANG-CONTROL-PLAN-DRAFT-2024] [source:OFFICIAL-JINGZHANG-PARK-PHASE2-2026] [source:OFFICIAL-HAIDIAN-URBAN-RENEWAL-GUIDE-2025]
 
-Under EPSG:4548, the provisional polygon recalculates the Overall Design Area at approximately 11.413 km²; [metric:site_area_sqm] this establishes only internal consistency of submitted geometry and does not replace the announced approximation or a formal boundary. Provisional recalculations for the three key areas are [metric:key_area_1_sqm], [metric:key_area_2_sqm] and [metric:key_area_3_sqm], with [metric:key_area_count] areas. Drawings reduce provisional boundaries to pale grey dashed lines while showing the design spine, scenario nodes and public space in high contrast, enabling legible design without misrepresenting coarse rectangles as statutory controls.
+![Planning alignment: one base and six cross-corridor gateways](assets/figures/site-overview.en.png)
 
-Four requirements flow from the coordinated tier to the key areas: put problems onto the street, so industries and the public jointly define problems; put models through the gate, so every scenario is tested under open rules, minimum data and human takeover; bring services to people, with non-AI alternatives retained; and return results to the repository, so successes and failures both become reviewable records. Once official polygons are available, the site boundary and key areas must be replaced together, and land use, buildings, roads, green space, public space, phases, metrics, five figures, web pages and both PDF sets regenerated—not merely a boundary line changed. [data:geometry/constraints.geojson#CON-001]
+Five conceptual functional gradients organize open R&D/validation, near-campus learning/conversion, community/common-benefit service, first-use commerce/city launch and talent-friendly daily life. Shared cut lines ensure complete, non-overlapping coverage within the provisional geometry; the formal plan and site survey determine final use and intensity. [data:geometry/land_use.geojson#LU-001] [depth:land_use_layout]
 
-![Three-tier scope and functional gradient](assets/figures/land-use-structure.en.png)
+![Spatial, industrial and public-service structure](assets/figures/land-use-structure.en.png)
 
-## Coordinated Research Area: Industry and Future-City Research
+Renewal follows “public interface first, building decision second”. It first audits accessible ground floors, barrier-free access, continuous walking, shade and rest, lighting, explanation, appeals and maintenance space. Survey, ownership, structure, heritage and statutory control then establish building-by-building retain, repair, adapt or add decisions. FAR, total floor area, height and road-area ratio remain pending formal information in this package. [depth:development_intensity_controls] [depth:municipal_new_infrastructure]
 
-The industrial proposition of Jing-Zhang AI MAIN STREET is to close the final 500 metres of the AI ecosystem: how research enters real organisations; how real organisations raise verifiable questions; how ordinary people receive explanation and an exit right; and how maintainers know when systems fail. The six cases collectively show that neither a single landmark nor one enterprise creates an ecosystem; research, talent, adoption, public discussion, startup services, transparent registration and ongoing operations must be combined. Jing-Zhang therefore sets out five connected stages—problem library, verification yard, translation desk, first-use window and responsibility ledger—rather than a one-off launch. [depth:overall_spatial_structure]
+## Detailed Design of Key Areas
 
-The smallest transferable unit is the “Jing-Zhang Street Pass.” It is neither an administrative permit nor a commercial access certificate, but an open-co-creation conceptual credential. The same scenario must leave [metric:street_pass_gate_count] spatial stamps and, in one record, declare spatial reference, seven first-use rights, data minimisation, named human roles, operating window, stop conditions, restoration of ordinary service and evidence links. Its machine schema is [data:visual/assets/street-pass.schema.json#Jing-Zhang-Street-Pass] and its synthetic example is [data:visual/assets/example-street-pass.json#SYNTHETIC-PASS-S03-001]; all examples are `pending` and `authorized=false`, and do not purport to be actual authorisations or pilot performance.
+### Zhongzhiyuan: Public Proof Yard / PROVE
 
-The three orientations become spatial actions: the Centennial Jing-Zhang cultural belt becomes a public timeline of visible evolution; the urban AI life-experience belt becomes everyday first use rather than spectacle; and the AI-integrated innovation belt becomes a chain from research through industry to street corner. The five functions are allocated as follows: Zhongzhiyuan hosts full-stack verification and governance dialogue; the Beijing AI Origin Community hosts research translation and a talent community; Dazhongsi hosts AI-native consumption and business first use; the Zhongguancun Technology Services Wing supplies intellectual-property, capital, legal and productisation services; and the Xiaoyue River Scenario Enablement Wing supplies everyday scenarios, environmental feedback and public co-evaluation.
+The 100 m conceptual sequence comprises a garden daily-life base, status board, safety window, observation gallery, soft-separated validation loop, emergency-stop/maintenance point and removal/restoration surface. People walking, using wheelchairs and cycling maintain continuous passage while low-speed devices are tested within the controlled loop. Tests record boundary, takeover, near misses and restoration. After testing, the place remains a garden, observation gallery and safety advice point. [data:geometry/key_areas.geojson#PROV-KEY-001]
 
-The visual identity is an open direction independent of third-party marks, images or commercial fonts: two parallel lines represent railways and data; a bracket opening onto the street represents movement from a closed system to a public interface; and three nodes represent verification, translation and first use. The Chinese primary name is “Jing-Zhang Shangjie”; the English name is “AI MAIN STREET.” Secondary names are standardised as “First-use Yard,” “Street Node” and “Service Wing.” The original vector construction is at `assets/figures/jingzhang-main-street-logo.svg`; the three-stamp protocol is at `assets/figures/street-pass-protocol.svg`. Both are conceptual directions for further development by a professional visual team, not registered trademarks or official marks.
+![Zhongzhiyuan public proof yard](assets/figures/prototype-zhongzhiyuan.en.png)
 
-![Jing-Zhang Street Pass: three stamps and seven first-use rights](assets/figures/street-pass-protocol.svg)
+### AI Origin Community: Translation Gallery-Courtyard / TRANSLATE
 
-Regional coordination does not invent a company list; it defines open interfaces. Beiwey Community, Future Science City, Huairou Science City, the Economic-Technological Development Area, and Beijing–Tianjin–Hebei participants may enter through open problems, model cards, testing protocols, failure reviews and transformation applications. Each collaboration must state source, rights, data boundaries and exit conditions. Thus a “global ecosystem” is not a geographical directory but a collaboration protocol that any qualified participant can understand, reproduce and join.
+The 100 m conceptual sequence is organized as street-gallery-courtyard-quiet room: no-app entry, staffed problem-framing window, dual-height model-card wall, co-test gallery, community courtyard and sensitive-information room. Research is explained, tried and corrected at the public ground floor, and plain-language result cards return to research teams. Advice, shared reading, rest and community service remain everyday uses. [data:geometry/key_areas.geojson#PROV-KEY-002]
 
-## Overall Design Area: Urban Renewal and Urban Design at Regulatory Detailed-Planning Depth
+![AI Origin translation gallery-courtyard](assets/figures/prototype-ai-origin.en.png)
 
-The overall structure is “one line, three yards, twelve nodes”: the north–south Main Street line follows the Jing-Zhang Railway Heritage Park with continuous walking, cycling, shade and public explanation interfaces; the three First-use Yards sit in the three key areas; six east–west connectors reach universities, campuses, communities and rail-station directions; and twelve Street Nodes break AI services into small-scale, maintainable interfaces. [data:geometry/roads.geojson#ROAD-001] [data:geometry/public_space.geojson#PUBLIC-001] [depth:land_use_layout] [depth:traffic_rail_slow_parking]
+### Dazhongsi: Relocatable Station-City First-use Interface / FIRST USE
 
-The land-use layer is not a determination of existing conditions or approved Regulatory Detailed Planning. It is a five-part functional gradient cut by the same provisional boundary: open research and verification; near-campus learning and translation; community service and shared-benefit interface; first-use commerce and urban presentation; and life support and talent friendliness. Shared cut lines ensure full coverage and no overlap, so it can be recalculated once the Official Planning Boundary is available. [data:geometry/land_use.geojson#LU-001] Its value is in explaining how far research is from the street, where services occur and how residents enter—not in declaring a land-use adjustment.
+The 100 m conceptual window links the direction of Line 13 Exit A, the surface, 1733's layered interface and Line 12 Exit D. Physical routes and staffed service form the stable core; multilingual and accessibility advice form an updatable side layer. T0/T1/T2 route versions, on-site status and maintenance responsibility relocate as station-city conditions change. [data:geometry/key_areas.geojson#PROV-KEY-003] [source:OFFICIAL-BEIJING-SUBWAY-L13-DAZHONGSI]
 
-Urban renewal follows “interfaces first, buildings later”: first check ground-floor accessibility, walking continuity, night lighting, shaded rest, information signs, appeal channels and maintenance space; then decide retention, repair, adaptation or new construction through survey, ownership, structure and Regulatory Detailed Planning. Twelve conceptual building footprints express only the scale and distribution of street-corner hosts. [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm] [metric:building_coverage_ratio] They do not establish existing buildings, demolition, storeys or construction scale. [depth:development_intensity_controls] [depth:height_massing_character] [depth:retain_renovate_demolish]
+Beijing Subway's accessibility page and a 2024 opening-period out-of-station transfer report provide a checklist for field verification. Every first use updates actual operating status, continuous accessible routing and time-specific conflicts. [source:OFFICIAL-BEIJING-SUBWAY-ACCESSIBILITY] [source:BACKGROUND-DAZHONGSI-OUT-OF-STATION-TRANSFER-2024]
 
-Regulatory controls, road boundaries, heritage-protection extent, utility networks, fire protection, flood control and public-service baselines have not been provided. The proposal puts these gaps in the constraints layer and assumptions table rather than concealing them with concept drawings; FAR, total floor area, building height and road-area ratio remain `unknown`. Municipal and new infrastructure are limited to a functional list—shared cabinets, edge-side de-identification, power-off degradation, human watch, event logs and seasonal calibration—with capacities and engineering alignments pending specialist study. [depth:municipal_new_infrastructure]
+The three prototypes share six reversible component types: C1 status board, C2 staffed window, C3 dual-height physical map, C4 trial side-pocket, C5 emergency-stop/maintenance, and C6 exit/restoration cart. [metric:reversible_component_type_count] Three 100 m study windows are recorded by [metric:prototype_study_count] and share the spatial grammar of arrival-public use-status-human help-optional AI-restoration. [depth:three_key_area_detailed_design]
 
-## Key-Area Detailed Design
+![Three key areas: prove, translate and first use](assets/figures/key-areas.en.png)
 
-### Zhongzhiyuan: the Verifiable First-use Yard
+## AI Innovation Ecosystem, Personas, and AI+ Scenarios
 
-Zhongzhiyuan performs “model-gating.” Its conceptual space comprises an open verification court, industry-problem desk, safety-and-standards forum, low-speed-delivery verification loop and reversible demonstration surface. Testing must first define boundaries, observation indicators, human takeover, incident reporting and exit conditions. A garden-style innovation district is not ornamental planting: continuous tree shade, sittable steps, outdoor test power and quiet spaces support sustained research collaboration. Its provisional extent is [data:geometry/key_areas.geojson#PROV-KEY-001], and must not be read as an official district or project boundary.
+Seven personas co-produce the system: researchers supply verifiable results; startup developers organize prototypes; small merchants define adoption problems; residents protect choice in public services; older and disabled people co-test continuous arrival; frontline maintainers control shutdown and restoration; and city-management/professional roles review evidence and responsibility. Every persona is linked to benefit, risk, a human role and an ordinary-service path.
 
-### Beijing AI Origin Community: the Translatable First-use Yard
+Seven first-use rights translate inclusion into on-site components: know, choose, equivalent service, human review, correction/deletion, appeal, and exit/restoration. [metric:first_use_right_count] Four-party co-review retains separate result cards from affected users, on-site maintainers, professional reviewers and a potentially authorized operator. [metric:public_co_review_role_count]
 
-The Beijing AI Origin Community translates “paper language into city language.” Its conceptual space includes a research-result first-use window, developer co-learning room, model-card reading rack, talent daily-service desk, and co-testing periods for families and older adults. The priority is not another closed incubator but walkable ground-floor and courtyard contact among universities, research institutions, startups and residents. Any connection involving a university or campus is conceptual and requires verification of ownership, fire safety, campus management and traffic conditions. [data:geometry/key_areas.geojson#PROV-KEY-002]
+Twelve scenario cards cover the taskbook: [metric:scenario_node_count]
 
-### Dazhongsi: the Urban First-use Yard
+| Scenario group | Cards | Space and human responsibility |
+| --- | --- | --- |
+| Research conversion | S01 Model Translation, S02 Research First Use, S11 Consent and Appeal | Origin public ground floor; explainer, researcher and compliance reviewer |
+| Station-city and inclusion | S03 Multilingual Transfer, S05 Accessible Collaboration, S07 Night Companion | Dazhongsi and corridor nodes; service staff, accessibility co-testers and maintainers |
+| Embodied and environmental | S04 Shared-path Validation, S08 Thermal Comfort Co-care | Zhongzhiyuan and green spine; safety, landscape and traffic roles |
+| Sector and daily life | S06 Health Referral, S09 Content Launch, S10 Repair Desk | Two wings and communities; regulated-service referral, curation/translation and repair technician |
+| Culture | S12 Centennial Jing-Zhang Story Station | Heritage park; curator and historical-source review |
 
-Dazhongsi enables “the first safe AI adoption by small organisations.” Its four interface types serve small shops, cultural consumption, international business and community repair. Merchants may bring real but de-identified problems to the first-use desk, where a service team assists needs breakdown, model selection, risk assessment, trial and withdrawal. The four quadrants around Dazhongsi station express only aims for walkability, orderly non-motorised parking, corner dwell time and continuous wayfinding; they make no conclusion on bridges, tunnels, roads or station-city construction. [data:geometry/key_areas.geojson#PROV-KEY-003]
+The first round uses three minimum trial sheets: Accessible Companion, Small-organization First Use and Embodied Shared Path. [metric:minimum_pilot_count] Each sheet records objective, place, responsibility, ordinary service, data boundary, entry gate, pause gate and restoration evidence.
 
-The three key areas share one Street Pass: the same scenario is verified in Zhongzhiyuan, translated in the Origin Community and first used for a limited period in Dazhongsi, then its problem, evidence, faults, appeals, human takeover, non-AI alternative and exit outcome enter a public ledger. Each follows the sequence “arrival–ordinary public use–status board–human desk–optional AI–restored ordinary use.” After pilot equipment is removed, walking, shade, seating, wayfinding and human service must still work. The detailed design reaches a depth at which problems, space, operations, risks and evidence can be further developed; it is not statutory planning or an approved Integrated Planning Implementation Plan. [depth:three_key_area_detailed_design]
+### Street Pass Offline Fault Rehearsal
 
-![Verification–translation–first-use chain across the three key areas](assets/figures/key-areas.en.png)
+Twelve fixed-seed synthetic tasks test the three gates item by item. A Node.js-stdlib-only verifier recomputes the aggregates offline. [metric:simulation_task_count]
 
-## AI Innovation Ecosystem, Talent Profiles and AI-Enabled Scenarios
+| Rehearsal reading | Result | Design meaning |
+| --- | ---: | --- |
+| Complete successful records | 11/12 (91.67%) [metric:simulation_success_rate] | One appeal record is incomplete; the task stays on hold for evidence repair |
+| Structurally valid payloads | 11/12 (91.67%) [metric:tool_schema_pass_rate] | A payload requesting passenger identity and continuous traces fails the structure gate |
+| Complete audit records | 11/12 (91.67%) [metric:audit_completeness] | Failed and successful records share the same ledger |
+| High-risk faults intercepted | 6/6 (100%) [metric:high_risk_intercept_rate] | Boundary breach, missing stop, missing owner, accessibility gap, identity request and appeal gap all enter hold |
 
-Seven user profiles determine how Street Nodes work: researchers need real problems and compliant verification; entrepreneurial developers need low-cost first-use customers and failure feedback; small merchants need lightweight, explainable tools they can exit; residents need equivalent service without being forced to use AI; older adults and people with disabilities need accessibility, low cognitive burden and a human desk; front-line maintainers need fault isolation, spare parts and stop authority; urban managers and professionals need an evidence chain, audit and appeal review. Each profile records benefits, risks, non-AI alternatives and human responsibility.
+The rehearsal validates rule workflow, rather than field-model accuracy, real-route performance or a future zero-miss guarantee. Its immediate value is making “hold” a visible, recomputable planning outcome. Task-level records are in `simulation.json`; replay with `node visual/assets/verify-street-pass-simulation.js`.
 
-All profiles share seven “first-use rights” [metric:first_use_right_count]: the right to know purpose, capability limits, status and responsible person; to choose without coercion; to receive equivalent no-app, non-AI, paper or human service; to have an important result reviewed by a named person; to correct errors and withdraw or delete data according to rules; to appeal in person, by phone or offline; and to restore ordinary public use after a pilot ends. The complete conceptual list is [data:visual/assets/first-use-rights.json#Seven-First-use-Rights]. It is not a substitute summary of current law; real pilots still require joint development by legal, privacy, safety, accessibility, operational and affected-user participants.
+## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
-The twelve scenario cards are below. Node locations correspond to [data:geometry/public_space.geojson#SCN-01] through `SCN-12`, [metric:scenario_node_count]:
+Five conceptual functional bands completely cover the submitted boundary and form a legible knowledge production-research translation-public service-first-use commerce-talent life gradient. [data:geometry/land_use.geojson#LU-002] Green, public-space and building carriers are expressed as overlay systems; official controls and parcel surveys update formal land use.
 
-| ID | Scenario and space | Users | Data minimisation and human review | Status |
-| --- | --- | --- | --- | --- |
-| S01 | Open model-translation desk / Origin Community | Researchers, residents | Read-only public model cards; on-site explainer review | Public-service concept |
-| S02 | Research-result first-use window / Origin Community | Developers, small shops | De-identified samples; merchant signs trial and withdrawal | Industry testing and validation |
-| S03 | Small-shop smart operations desk / Dazhongsi | Small merchants | No customer identity upload; operator confirms recommendations | Industry testing and validation |
-| S04 | Low-speed delivery verification loop / Zhongzhiyuan | Developers, cyclists | No facial recognition; safety officer may emergency-stop | Industry testing and validation |
-| S05 | Accessible-route collaboration station / whole line | People with disabilities, older adults | Voluntary feedback; accessibility expert and user review | Industry testing and validation |
-| S06 | Community health-referral desk / street corner | Residents | No diagnosis; human referral to formal services | Public-service concept |
-| S07 | Night-return safety companionship point / active-travel node | Night-time users | No continuous identity tracking; human help callable | Public-service concept |
-| S08 | Thermal-comfort co-care station / green spine | Outdoor workers, children | Environmental data only; landscape staff calibrate | Public-service concept |
-| S09 | Multilingual city welcome desk / launch yard | International talent | Local temporary processing; human interpretation fallback | Community concept |
-| S10 | Smart repair desk for old items / community | Residents, repair workers | No retention of personal device content; technician decides | Community concept |
-| S11 | Data-consent and appeal desk / three yards | Everyone | Check purpose, withdraw consent, make human appeal | Governance infrastructure |
-| S12 | Centennial Jing-Zhang story station / heritage park | Visitors, students | Rights-cleared historical material only; curator review | Cultural concept |
+Buildings pass through four review levels: history/structure/ownership/safety record; public-ground-floor and accessibility assessment; low-carbon repair and reversible adaptation comparison; then discussion of added floor space when prior conditions are clear. Of twelve conceptual footprints, eight express adaptation of existing interfaces and four express lightweight reversible carriers. Together they test the scale and distribution of street nodes. [data:geometry/buildings.geojson#BLDG-001] [metric:building_footprint_area_sqm]
 
-The four testing-and-validation scenarios share one gate: before testing, disclose objective, scope, responsible person, non-AI option and stop thresholds; during testing, record false positives, false negatives, takeovers and near misses; after testing, affected users and professionals evaluate together, and a scenario exits if public value or operational capacity is not met. Scenarios do not use secret maps, enterprise-internal data or personal privacy; they lock in no vendor and do not represent prototypes as ready for full deployment.
+The conceptual footprint ratio provides an internal consistency check. [metric:building_coverage_ratio] Height, storeys, total floor area and FAR await official controls and building surveys. [depth:retain_renovate_demolish] [depth:height_massing_character]
 
-The first round does not deploy all twelve scenarios at once. It selects two minimum pilots—one public and one industrial [metric:minimum_pilot_count]. The public “Accessible Together Street Pass” begins at the Origin Community human desk, follows the Heritage Park active-travel spine to the Dazhongsi service desk, first ensuring physical maps, shaded rest, human assistance and a no-app route; users then voluntarily activate AI route advice. It stops immediately if the accessible main chain is blocked, human help is unavailable, identity tracking is continuous, or ordinary access cannot be restored. The industrial “Small-Shop First-use Street Pass” moves the same de-identified business problem through Zhongzhiyuan verification, Origin Community translation and a time-limited Dazhongsi trial; it requires human needs breakdown, paper templates, no customer-identity upload, merchant final confirmation and a withdrawable trial. Roles, evidence targets and stop conditions are at [data:visual/assets/pilot-matrix.json#PILOT-PUBLIC-01] and [data:visual/assets/pilot-matrix.json#PILOT-INDUSTRY-01]. Ninety days is only a conceptual test window for discussion—not an approved timetable, budget, procurement or performance commitment.
+Character guidance focuses on developable interfaces: continuous public ground floors, visible maintenance, weather protection and rest, wheelchair turning, low-glare lighting, repairable rooftop equipment and switchable digital media. Each intervention enters design after heritage, green-line, fire, structure, traffic, ownership and public-impact review.
 
-## Land Use, Building Scale and Demolish–Renovate–Retain Strategy
+## Transport, Rail, Municipal Infrastructure, and Public Services
 
-Five conceptual functional bands cover the submitted boundary in full, with areas recalculated in EPSG:4548. Their purpose is to arrange “knowledge production–result translation–public service–first-use commerce–talent life” in a walkably legible gradient, not to prescribe statutory land-use change. [data:geometry/land_use.geojson#LU-002] [depth:land_use_layout] Green space, public space and building hosts are overlapping systems; repeated colour fills do not substitute for actual parcels and control lines.
+The transport structure uses heritage-park north-south slow mobility as its spine and six cross-corridor gateways for arrival from both sides. Its current conceptual centreline length is approximately 16.09 km and is used only to compare network continuity. [metric:walking_cycling_network_length_m] Break repair advances through wayfinding, crossing phase, sightline, parking, accessibility and then specialist engineering. [data:geometry/roads.geojson#ROAD-002]
 
-The building strategy uses four levels of review rather than a specific demolish–renovate–retain determination: confirm history, structure, ownership and safety; assess ground-floor publicness and accessibility; assess low-carbon repair and reversible adaptation; only then consider additions. Of the current 12 conceptual footprints, 8 indicate intent to adapt existing interfaces and 4 reversible lightweight new-build intent; all are marked “subject to existing-conditions verification.” Building height, storeys, total floor area, FAR and actual density have no official basis and must remain `unknown`.
+Station integration uses an arrival checklist: shade, continuous accessibility, micromobility order, public toilets, staffed information, service status and complaint access. Dazhongsi establishes the T0 route and human baseline first; Wudaokou, Qinghuadongluxikou and other nodes use the same arrival audit. Specialist projects determine actual rail exits and underground space. [depth:traffic_rail_slow_parking]
 
-Urban-character control does not prescribe numerical height. It proposes refinable interface rules: keep continuous public ground floors and visible maintenance space along the Heritage Park; reserve rain shelter, dwell space and accessible turning at important corners; organise roof equipment to be maintainable, screened and removable; prioritise pedestrian recognition and low glare at night; and make digital media silent, low-brightness and switchable by default. Every building renewal must first pass review of heritage protection, green lines, fire safety, structure, traffic, ownership and public impact.
+Municipal and digital infrastructure uses degradable architecture: shared cabinets, edge-based minimum-data processing, offline human service, power-isolatable equipment, visible fault states, incident logs and a specific maintenance role. Public service offers digital, paper and human entry for older and disabled people, people without smart devices, and temporary visitors. [standard:MOHURD-URBAN-DESIGN-MEASURES]
 
-Conceptual building footprints total [metric:building_footprint_area_sqm] and represent [metric:building_coverage_ratio] of the provisional overall area. These metrics check only internal layer consistency; they are not planned building coverage, development intensity or project capacity. Actual demolish–renovate–retain classification must be rebuilt once official base mapping and building-by-building surveys are complete. [depth:development_intensity_controls] [depth:height_massing_character] [depth:retain_renovate_demolish]
+![Transport, slow mobility, green spine and street nodes](assets/figures/mobility-bluegreen.en.png)
 
-## Transport, Rail, Municipal Systems and Public Facilities
+## Blue-Green Network, Public Space, and Urban Character
 
-The transport strategy is oriented to “arriving at Street Nodes”: one continuous north–south walking-and-cycling spine joins the three key areas, with six east–west interfaces directed toward universities, campuses, communities and rail stations. Its submitted network length is [metric:walking_cycling_network_length_m], only a conceptual centreline length, not a road boundary, cross-section or construction length. [data:geometry/roads.geojson#ROAD-002] Missing-link work proceeds “at grade first, engineering later”: first wayfinding, crossing timing, intersection sightlines, non-motorised parking and accessible continuity; bridges, tunnels or station-city works only if necessary and then through transport and engineering studies.
+Jing-Zhang Railway Heritage Park becomes a legible innovation frontage. Its north-south green spine supports walking and everyday rest; cross-corridor gateways bring in neighbourhood life; first-use yards display trial, maintenance and public adoption. Concept green area and ratio derive from a 78 m main-line buffer, [data:geometry/green_space.geojson#GREEN-001] [metric:green_space_area_sqm] [metric:green_ratio], while public space derives from the union of the main line and twelve node buffers. [data:geometry/public_space.geojson#PUBLIC-001] [metric:public_space_area_sqm] [metric:public_space_ratio]
 
-Transit-station integration uses a “last-500-metres service checklist”: upon exit, users should find a shaded route, accessible route, non-motorised parking, public toilet, human information, scenario status and complaint entry. Dazhongsi’s four quadrants, Wudaokou and Qinghuadongluxikou show public-arrival relationships only, not conclusions on roads, bridges, tunnels, relocated entrances or underground space. Parking prioritises management of existing supply and short-duration loading; robots and low-speed delivery may enter only defined time windows and test boundaries.
+Existing interfaces including the railway museum, 1909 restaurant, mobile boxes, AI training station and youth activities become the operational base for retain-upgrade-connect. New interfaces begin with accessibility, wayfinding, human help and status, then use public capacity and operating calendars to schedule trials. [source:OFFICIAL-JINGZHANG-PARK-BASELINE] [source:OFFICIAL-BEIJING-GARDEN-CITY-PLAN-2024]
 
-Municipal and new infrastructure are designed to degrade safely: a Street Node retains human service when offline; sensors collect only data required for the task; edge processing comes first; computing and energy equipment have shut-down, inspection and replacement access; abnormal status is visible on site; and a named position takes over incidents. Public services never make AI the sole gateway: older adults, people with disabilities, people without smart devices and temporary visitors can complete matters through equivalent human processes. [depth:traffic_rail_slow_parking] [depth:municipal_new_infrastructure]
+The material language uses twin inlaid lines, dark repairable frames, replaceable enamel/metal plates, sleeper-scale seating, low-glare amber status lights and demountable dual-height counters. It combines plain engineering, open-academic and warm-street qualities while clearly separating sources, heritage fabric and conceptual expression. [depth:blue_green_public_space]
 
-![Walking and cycling, green spine and street-corner nodes](assets/figures/mobility-bluegreen.en.png)
+Four knowledge landmarks display public validation and failure review at Zhongzhiyuan, open-source results and contributions at the Origin Community, first-user stories at Dazhongsi, and a centennial innovation milestone along the heritage park. Every honor entry links a PR/commit, contribution type, evidence, licence, version and correction path, creating a maintainable public archive. [source:OFFICIAL-AGENT-ONLY-ARTICLE]
 
-## Blue-Green Space, Public Space and Urban Character
+## Renewal Projects, Implementation Policy, and Phasing
 
-The Jing-Zhang Railway Heritage Park is defined as a “legible innovation front door”: railway history is not decorative background but explains how independent innovation passes through testing, failure, maintenance and public use. The green spine is derived from a conceptual 78-metre buffer around the main line, [data:geometry/green_space.geojson#GREEN-001] [metric:green_space_area_sqm] [metric:green_ratio]; the public first-use interface derives from buffers around the line and twelve nodes, [data:geometry/public_space.geojson#PUBLIC-001] [metric:public_space_area_sqm] [metric:public_space_ratio]. Both express continuity goals only and require refinement when green-line, water, tree, heritage and ownership information is supplied. [depth:blue_green_public_space]
+Ten renewal projects are organized as eight action packages. [metric:renewal_project_count] Resource bands support option appraisal: `S` is CNY 0.2-0.6 million for single-site paper/movable tools and one operating shift; `M` is CNY 0.8-2.5 million for a roughly 100 m audit, movable interface and 90-day co-review; `L` is CNY 3-8 million for multi-node annual operation, maintenance and spares. These are 2026 conceptual non-construction ranges. Authorized scope, bills and market enquiry establish formal investment.
 
-The public-space component library includes replaceable information panels, model-card racks, human-takeover buttons, low-brightness status lights, dual-height accessible counters, movable shade, seasonal seating, equipment access doors, non-AI service guidance, and dual QR-code/telephone appeal channels. Each component must state who maintains it, inspection interval, failure degradation and exit point. Digital screens are not default components; they may be installed only when content rights, energy use, glare, maintenance and an equivalent non-device alternative are resolved.
+| Action package | Delivery and potentially authorized responsibility | Band | Release evidence |
+| --- | --- | --- | --- |
+| SP-01 Street Pass and status board | Public operator A; legal, privacy and accessibility C | S | Three gate records, staffed window, appeal and restoration templates |
+| SP-02 Zhongzhiyuan Proof Yard | Test-site A/R; safety, traffic and maintenance C | M | Boundary, emergency stop, near misses and removal restoration |
+| SP-03 Origin Translation Window | Translation operator A/R; researchers, residents and small organizations C | S | Plain-language recall, correction and withdrawal receipt |
+| SP-04 Dazhongsi Station-City Interface | District/station-city operator A; on-site service R; rail, site, traffic and fire C | M | Valid route version, staffed desk, time-sliced co-test and relocation record |
+| SP-05 Accessible Companion | Public-space operator A; users and accessibility professionals C | M | Continuous route, help response and working ordinary service |
+| SP-06 Twelve Street-node Components | Site operator A/R; landscape, municipal and public C | L | Inspection, fault degradation, spares and restoration of ordinary use |
+| SP-07 Correctable Milestone | Public curator A/R; rights holder, archive and public C | S | Provenance, licence, version and correction record |
+| SP-08 Four-season Operation | Annual operator A/R; community, university, enterprise and international participants C | M | Problem library, result cards, failure library and annual review |
 
-Four “AI pilgrimage” nodes are knowledge-and-responsibility landmarks, not exaggerated objects: Zhongzhiyuan’s “Open Verification Court” shows test protocols and failure reviews; the Origin Community’s “Open-Source Contribution Gallery” records rights-cleared sources for papers, code, data and community contributions; Dazhongsi’s “First User Desk” shows safe small-organisation adoption; and the Heritage Park’s “Centennial Innovation Milestones” links railway engineering, reform and opening-up, and AI public culture in an updateable timeline. Recognition displays must state contribution type, evidence, team and licence, avoiding personality cults and corporate advertising.
+Three stages advance by evidence maturity. [metric:delivery_horizon_count] Months 0-6 deliver paper passes, staffed desks, route audits and removal drills; months 6-18 copy controlled loops, co-tests and time-limited first use after first-round review; months 18-36 establish the twelve-node network, version ledger and four-season operation. Phasing geometry records three conceptual areas [data:geometry/phasing.geojson#PHASE-001], with areas cited by [metric:phase_1_area_sqm], [metric:phase_2_area_sqm] and [metric:phase_3_area_sqm]. [depth:phasing_implementation]
 
-The urban character follows three threads: plain engineering, open academy and warm street. Materials are durable and repairable; information is clear rather than showy; public ground floors welcome different people. Wayfinding and the overall logo have distinct roles: the logo identifies “one belt”; wayfinding addresses arrival, status, responsibility and exit. Historical narrative uses rights-cleared public historical material reviewed by curatorial professionals; generated imagery does not substitute for history.
+![Eight action packages and three delivery gates](assets/figures/delivery-roadmap.en.png)
 
-## Renewal Project List, Implementation Policies and Phasing
+The annual operating identity comprises a spring Global Problem Call, summer Street Co-test, autumn Open-source First-use Week and winter Maintainers' Review. Every season publishes problems, trial status, result cards and the next revision, turning events into long-term developer-community, public-experience and international-collaboration assets.
 
-Ten conceptual renewal projects create a package of “small spatial inputs, institutions in place first”: 1 Main Street continuity audit; 2 Street Pass protocol and public status board; 3 Zhongzhiyuan Open Verification Court; 4 Origin Community result-translation window; 5 Dazhongsi small-shop first-use desk; 6 unified service components for twelve nodes; 7 Accessible Together minimum pilot; 8 Small-Shop First-use minimum pilot; 9 centennial innovation and maintainer milestones; 10 a public ledger for operations, appeals and exit. [metric:renewal_project_count] Each may enter professional development only after verification of existing conditions, ownership, heritage protection, traffic, utilities, operational authorisation and public impact. [depth:renewal_project_list]
+## Metrics, Area Recalculation, and Compliance Matrix
 
-The phasing layer divides the provisional overall area into three parts, not to prescribe construction geographically from south to north but to represent operational maturity as reviewable thresholds. [data:geometry/phasing.geojson#PHASE-001] The near term first tests the three First-use Yards and four high-value scenario types, area [metric:phase_1_area_sqm]; the medium term extends Street Nodes and the two service wings after review passes, area [metric:phase_2_area_sqm]; only the long term forms an annual network of global problem calls, open protocols and activities, area [metric:phase_3_area_sqm]. Phasing is conceptual sequence, not an investment or start-of-work commitment. [depth:phasing_implementation]
+Metrics are grouped as spatial calculations, structural counts, offline rehearsal and formal-data-pending items. `known` means recomputable from package files; statutory or engineering meaning follows formal data and professional process. [depth:metrics_recalculation]
 
-Annual operational recommendations are: spring “Real Problem Week,” when residents, merchants and institutions submit problems; summer “Street-Corner Co-Testing Season” for accessibility, thermal comfort and small-shop first use; autumn “Open-Source First-Use Week” for model cards, failure reviews and public contributions; and winter “Maintainers’ Assembly,” rewarding reliability, repair and exit experience. The developer community operates through a problem library, testing protocol, mentor duty, maintenance credits and open archive; the enterprise conversion path is “problem registration–compliance assessment–small-sample verification–public review–time-limited first use–scale-up or exit.”
+| Metric group | Current reading and references |
+| --- | --- |
+| Overall extent | Provisional area [metric:site_area_sqm] |
+| Key-area count | Three key areas [metric:key_area_count] |
+| Key-area areas | Zhongzhiyuan [metric:key_area_1_sqm]; AI Origin [metric:key_area_2_sqm]; Dazhongsi [metric:key_area_3_sqm] |
+| Spatial systems | Green [metric:green_space_area_sqm] / [metric:green_ratio]; public space [metric:public_space_area_sqm] / [metric:public_space_ratio]; slow mobility [metric:walking_cycling_network_length_m] |
+| Buildings and phases | Footprints [metric:building_footprint_area_sqm] / [metric:building_coverage_ratio]; phases [metric:phase_1_area_sqm], [metric:phase_2_area_sqm], [metric:phase_3_area_sqm] |
+| Scenarios and governance | Scenarios [metric:scenario_node_count]; cases [metric:global_case_count]; gates [metric:street_pass_gate_count]; rights [metric:first_use_right_count]; trial sheets [metric:minimum_pilot_count] |
+| Expression and co-review | Prototypes [metric:prototype_study_count]; components [metric:reversible_component_type_count]; journey [metric:journey_stage_count]; co-review roles [metric:public_co_review_role_count]; evidence cards [metric:public_evidence_card_count]; horizons [metric:delivery_horizon_count] |
+| Rehearsal and self-check | Tasks [metric:simulation_task_count]; success [metric:simulation_success_rate]; schema pass [metric:tool_schema_pass_rate]; audit [metric:audit_completeness]; high-risk intercept [metric:high_risk_intercept_rate]; four gates [metric:validation_gate_pass_count] |
 
-Every pilot uses five responsibility roles: a public-task proposer defines the issue and public value; an authorisable operations lead is responsible for operation and restoration; specialist reviewers cover safety, privacy, accessibility and sector judgement; on-site maintainers hold emergency-stop, inspection and degradation authority; and affected-user representatives participate in close-out. A proposer may not approve a pilot alone, an operator may not assess expansion alone, and AI cannot replace any person who legally or contractually bears responsibility. Minimum evidence for advancing is not “a cool experience,” but complete three-stamp records, usable seven rights, equivalent non-AI service achievable on site, receipted appeals, and a stop drill that restores ordinary use.
+Total floor area, FAR, building height and road-area ratio remain `unknown`. The compliance matrix covers 17 official-announcement requirements and agent.1-agent.6; the standards matrix covers project and professional sources; the depth matrix covers 15 design-depth items. Figures and PDFs explain, while GeoJSON and JSON recalculate. [standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
 
-Policy recommendations describe mechanisms only: a first-use voucher for small organisations requires separate funding and procurement analysis; public-scenario protocols require legal, privacy and sector coordination; open data require rights clearance, anonymisation and purpose review; and contribution recognition cannot replace contracts or intellectual property. Every external release distinguishes “submitted,” “pending review,” “selected” and “implemented”; this proposal is currently only a submission package.
+![Metrics, formulae and evidence chain](assets/figures/metrics-evidence.en.png)
 
-## Metrics, Area Recalculation and Compliance Matrix
+## Risk, Copyright, and Compliance
 
-This package has three metric types. First are internally consistent metrics recalculated from submitted geometry: provisional site area; green and public-space areas/ratios; conceptual building footprints; walking-and-cycling line length; three key areas and three phase areas. Second are counts: 12 scenario nodes, 10 conceptual renewal projects, 3 key areas, 6 global cases, 3 Street Pass stamps, 7 first-use rights, 2 minimum pilots and 4 passed self-check gates [metric:validation_gate_pass_count]. Third are statutory or engineering metrics that must remain `unknown`: total floor area, FAR, building height and road-area ratio. Status, value, unit, source_files, formula, confidence and assumptions for every metric are recorded in `metrics.json`. [depth:metrics_recalculation]
+| Risk | Design control | Next-stage responsibility |
+| --- | --- | --- |
+| Boundary and control precision | Low-contrast provisional geometry; pending statutory indicators; whole-package recalculation after official data | Organizer data plus planning and survey professionals [data:geometry/constraints.geojson#CON-002] |
+| Traffic, fire, heritage and utilities | Ground-level reversible interfaces first; engineering actions enter specialist review | Rail, traffic, fire, heritage, utility and site rights holders |
+| Bias, misinformation and privacy | Minimum data, purpose limitation, human review, appeal, incident log and retirement | Operator A, on-site R, legal/privacy/sector C |
+| Digital exclusion | Digital, paper and human entry; dual-height counters; users in co-review | Public service, accessibility professionals and affected users |
+| Maintenance failure | Visible status, offline degradation, stop control, spares, maintenance shift and restoration drill | Named operating and maintenance roles at every site |
+| Rights and communication | Original diagrams, cleared field stills and disclosed concept renders; distinct submitted/reviewed/selected/implemented states | Curation, communication, rights holders and project operators |
 
-Areas use the project-specified EPSG:4548; ratios use the same provisional site boundary as denominator. A known metric is not an official metric: `known` means only that it can be recalculated from current submitted geometry. Land use is generated with that boundary and shared cut lines; its union should equal the site without overlap. Green, public, building and phase layers are all constrained within the site. Self-checks additionally verify non-overlap of the three key areas, paginated PDFs, offline HTML with no remote resources, the presence of five figures and complete matrix coverage.
+Two atmosphere images were generated with an OpenAI image tool and labelled as conceptual experience. Four Dazhongsi stills were photographed by the contributor from public viewpoints and re-encoded to remove EXIF and Live Photo payloads. Core figures are deterministically derived from package GeoJSON, metrics and structured ledgers. The package uses no commercial map tiles, enterprise logos, identifiable portraits or third-party paper figures. See `report/copyright_statement.md` for the detailed rights statement. [depth:risk_missing_data]
 
-The compliance matrix covers 17 requirements in announcement sections 1.3, 1.4 and 1.5, plus six agent.1–agent.6 tasks; the standards matrix covers the project announcement, agent taskbook, urban design, regulatory detailed planning, land-use classification and the architectural-depth data gap; and the depth matrix covers 15 formal-evidence items. Drawings and webpages explain but do not replace GeoJSON and JSON. Every known metric is cited in the text; unknown metrics are not converted into deceptively precise planning numbers.
-
-![Metrics, formulas and evidence chain](assets/figures/metrics-evidence.en.png)
-
-## Risk, Copyright and Compliance Statement
-
-The greatest risk is not insufficiently bold design but treating provisional data as approved conclusions. Accordingly, all drawings, webpages, PDFs and text are marked provisional; the legal or engineering implications of boundaries, key areas, land use, buildings, roads, municipal systems, heritage protection and project timing remain subject to verification. When official CAD/GIS/PDF files arrive, file hash, issuing body, date, version, coordinate reference system and transformation method must be recorded, and the whole package recalculated. [data:geometry/constraints.geojson#CON-002] [depth:risk_missing_data]
-
-AI-scenario risks include bias, misleading outputs, privacy, lack of explainability, excessive surveillance, digital exclusion, vendor lock-in and operational failure. Uniform controls are minimum data, purpose limitation, open model cards, human review, non-AI alternatives, on-site status, incident logs, appeal, rollback and regular exit assessment. Outputs concerning health, law, public safety and personal rights must not directly replace professional judgement or administrative decisions.
-
-For copyright, core spatial figures are generated from this package’s GeoJSON, metrics and matrices by a local deterministic script. The script is not distributed with the submission; the figures, data and method statement remain independently reviewable. The original logo and Street Pass protocol are submitted as SVG. Microsoft YaHei is used only for local layout generation and no font file is distributed. No commercial map tiles, news imagery, corporate logos, portraits or third-party paper images are used. Text on external cases is brief mechanism summary based on official institutional pages. Submission intellectual property and display use follow the announcement and the `COMMUNITY-DISPLAY-ONLY` declaration; see `report/copyright_statement.md`.
-
-This proposal was generated by an AI agent and passed official-script self-checks. Machine passing means only that the information structure, topology, visual packaging and evidence chain meet intake requirements; it does not mean design quality, a formal boundary, engineering feasibility, government recognition or an implementation decision. Human reviewers, professional teams, relevant rights holders and the public retain final judgement.
+Every public scenario retains a specific human responsibility and an ordinary-service entry. Public regulations and policies for generative AI, accessibility and older-person inclusion enter professional review within their respective scope and do not substitute for case-specific legal judgement.
 
 ## References
 
-1. Haidian Branch, Beijing Municipal Commission of Planning and Natural Resources, *Prequalification Announcement for the International Urban Design Scheme Solicitation for the Centennial Jing-Zhang AI Innovation Belt*, 2026-05-09. [source:OFFICIAL-ANNOUNCEMENT]
-2. User-provided, rights-cleared taskbook excerpt, *Taskbook for the Centennial Jing-Zhang AI Innovation Belt Urban Design Open Call for Global Agents*, 2026-05-18. [source:AGENT-TASKBOOK]
-3. Repository package: `brief/public-brief.md`, `brief/site-package/`, `data/source_registry.json`, `data/processed/agent_fact_pack.md`. [source:SITE-PACKAGE]
-4. Ministry of Housing and Urban-Rural Development, *Urban Design Management Measures* and *Measures for the Formulation and Approval of Regulatory Detailed Planning for Cities and Towns*.
-5. Ministry of Natural Resources, *Land and Sea-Use Classification Guide for Territorial Spatial Survey, Planning and Use Control*.
-6. Official webpages of AI Singapore, Mila, Vector Institute, FCAI, STATION F and the City of Helsinki AI Register, as background-only cases.
+1. Beijing Municipal Commission of Planning and Natural Resources, Haidian Branch, official prequalification announcement, 9 May 2026. [source:OFFICIAL-ANNOUNCEMENT]
+2. Cleared user-provided excerpt, Agent-facing open-call taskbook, 18 May 2026. [source:AGENT-TASKBOOK]
+3. Repository `brief/site-package/`, `data/source_registry.json` and processed fact pack. [source:SITE-PACKAGE]
+4. MOHURD Measures for the Administration of Urban Design and Measures for Regulatory Detailed Planning; MNR land-use/sea-use classification guide.
+5. Published Jing-Zhang corridor draft plan, Haidian Urban Renewal Guide, Beijing Garden City plan and Jing-Zhang Railway Heritage Park Phase 2 information, each used within its stated scope.
+6. Beijing Haidian official account, “The world's first urban planning initiative with only Agents participating,” for open participation, review and contribution-record direction. [source:OFFICIAL-AGENT-ONLY-ARTICLE]
+7. Dated public information from the Beijing municipal portal, Haidian CPPCC and Beijing Urban Renewal Service Platform on the AI Origin Community, Jing-Zhang Park and Dazhongsi renewal.
+8. One Dazhongsi evening observation on 13 August 2026; Beijing Subway station/accessibility pages; a 2024 Beijing Daily opening-period transfer report.
+9. Official pages of AI Singapore, Mila, Vector Institute, FCAI, STATION F and Helsinki AI Register, used for mechanism comparison only.
+10. Google Fonts / Adobe, Noto Sans SC; used only for offline HTML Chinese typography, with a local subset generated under the SIL Open Font License 1.1. [source:OPEN-FONT-NOTO-SANS-SC]

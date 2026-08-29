@@ -10,40 +10,6 @@
   },
   "assets": [
     {
-      "path": "assets/figures/construction-participation.en.png",
-      "asset_class": "derived_figure",
-      "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
-      "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
-      ],
-      "third_party_materials": [],
-      "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
-      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "bd3cf22d3f859c36167abcfc28e90df899bc1adc1e8d0e73633367de437bebd3"
-    },
-    {
-      "path": "assets/figures/construction-participation.png",
-      "asset_class": "derived_figure",
-      "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
-      "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
-      ],
-      "third_party_materials": [],
-      "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
-      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "2305363de77c903b1ffb12d99b45dc4088a3c311e365fed58ac1b3fc5b3ee647"
-    },
-    {
       "path": "agent.json",
       "asset_class": "metadata_or_matrix",
       "author": "许丙南 / Codex",
@@ -58,7 +24,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "ed9a67eb3d4de08c78843c3f87a09da717df60cbbf0fb35cf0e4e5441f711abb"
+      "hash_sha256": "c57e050fce1a6a28310aed171a103e126d8bf93e70e571144c34c962f8e31a85"
     },
     {
       "path": "assets/figures/component-operations.en.png",
@@ -75,7 +41,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "a373ded226951c65ecf5358ad739a5787efb2843afca940406273ac3ccf880f3"
+      "hash_sha256": "7f1f08ae21e55a78d5e40a324e88d0c302d2959d62944376e845de65dd5ef713"
     },
     {
       "path": "assets/figures/component-operations.png",
@@ -92,7 +58,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "d3a322c49c34dc4a3cd0a0f0faa70bfcbbc06724d28d697563c01613658f8c90"
+      "hash_sha256": "27166c425eb1eb27e00207c647a8814ef6ceedbae5e2b07c99568dda5e632d2e"
     },
     {
       "path": "assets/figures/identity-system.en.png",
@@ -109,7 +75,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "f253b39ae9d5c830b6f8cb40acb1b0e442285a2171dd1fa96749e2e9271ba3a0"
+      "hash_sha256": "7c5cb21debadffc4aa2624da6c5a2fe2933d9831537008f3f4bc905d30cb7df2"
     },
     {
       "path": "assets/figures/identity-system.png",
@@ -126,143 +92,217 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "409901862b50c4db79411e3ede82cfb9912eae07403673c07e8a4356fe863652"
+      "hash_sha256": "706f7573eb8e7733009150770184dca13b0e46f8ead63f693867793fde9da9c5"
     },
     {
       "path": "assets/figures/key-areas.en.png",
       "asset_class": "derived_figure",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "7149bff26bb32de5e66db381add7db112b84156ea600140febf42d260a31487d"
+      "hash_sha256": "83578c4861289d270c0001f645d6363568044579bc01d14cd48c9c9ffd425187"
     },
     {
       "path": "assets/figures/key-areas.png",
       "asset_class": "derived_figure",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "30dd0c2f7037be45fc00df1699bf2e61ff8d6d36a1694daa6ed8f57d42a103d1"
+      "hash_sha256": "46945b9a973cf2d179ddb173ff34ca14663f02bffe28c51518e929459d1b8a28"
+    },
+    {
+      "path": "assets/figures/key-areas.en.svg",
+      "asset_class": "authored_vector_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
+      "source_inputs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "a9402a722aa88eea34c824be07e8d3d6c22361a37c74b258a85d677469a2cec9"
+    },
+    {
+      "path": "assets/figures/key-areas.svg",
+      "asset_class": "authored_vector_figure",
+      "author": "许丙南 / Codex",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
+      "source_inputs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
+      ],
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "hash_sha256": "182843afbfd6be36e26da9cf209e2745f290876914923f44c471626cc9b62f77"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
       "asset_class": "derived_figure",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "8a9c87b4affe4a129c582bb6f9a3470d5fc6caea50848ff58fb29eb4cae225a3"
+      "hash_sha256": "bbadf950c93c8eae0be91b402b4c69bd656066800af1f6ca9638456c38f65b33"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "asset_class": "derived_figure",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "c3a79eab25ab5078af64aea32978fb3934261c3e1b90732f7c6f19fdd8288218"
+      "hash_sha256": "ba10b545e93935f6dcac6eaa71c692f9004770decc92798e8efc2561351d9885"
     },
     {
       "path": "assets/figures/metrics-evidence.en.png",
       "asset_class": "derived_figure",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "6959c377a90d97c6d38ac0794cd51d695719be80136adc8eebef168cb984b62f"
+      "hash_sha256": "af8bf577f8aa1ea5ae87c5855dcae13069c187502092b5b90f1ef70405d564e2"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "asset_class": "derived_figure",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "e2d3d5b3b0a52507a6713203e9305ef37c0fce54565832d8d408a59ad6208e7a"
+      "hash_sha256": "a1d30552e527fcba58b6ae63556a75d23def7a2b7846250e76bb2ec8d80a7ab9"
     },
     {
       "path": "assets/figures/mobility-bluegreen.en.png",
       "asset_class": "derived_figure",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "8dc2e01feaebeffb62b0eed00dcf71f9b55f1fee852c3d5449b9c4ba12d7ae75"
+      "hash_sha256": "78969417b137e962aef2afa24d3a693fc4b9e889bb06be4a2f9f1a2c8ae6ba87"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "asset_class": "derived_figure",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "89e06fb50cd4216362ff156f33536d345eac7641358d33d42639083bb2ea5496"
+      "hash_sha256": "05bbe011426dff531c5eb34adac541178ff24c55b96ce226632f7a40fff8f0bf"
     },
     {
       "path": "assets/figures/regional-ecosystem.en.png",
@@ -279,7 +319,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "82e864584b9a626d2e73aa06b1ee55ede0cb962aa818b66c6bc3f2498b3f26da"
+      "hash_sha256": "e9048476aebdaa4efa8f0ccb3643a2c87a09aff07ca385c5967980d144c788a4"
     },
     {
       "path": "assets/figures/regional-ecosystem.png",
@@ -296,41 +336,49 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "abab73dbf3a2391e90d7eb7eeba73a3ee4df5b67c0ddc0d710ffa6832685d473"
+      "hash_sha256": "486c9795a1b275b26822ab238cdfdddf60a3b50ca205fd1a56a0eabb69ad5977"
     },
     {
       "path": "assets/figures/site-overview.en.png",
       "asset_class": "derived_figure",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "9497848e6b902630435bd4e56242f21e01317bbadb46c4d3868c5d11bd65ae71"
+      "hash_sha256": "faa1b9d8978100830b202164f92d7a58728e2f15e30b8f46f5dfa8c52b9e7a63"
     },
     {
       "path": "assets/figures/site-overview.png",
       "asset_class": "derived_figure",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "a74d06454226848a2a0ab1d8163e5bf7c9196f7382c3e96d3dd79f8be09329f3"
+      "hash_sha256": "ba8c5d1e044c35fb347d760c8514dd683e8dc0571b26570071f0ec8a7cd34389"
     },
     {
       "path": "assets/figures/sustainability-timeseries.png",
@@ -347,7 +395,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "378352289946fff1dfab3bc40c04988e5546f3fb02b9213a8c2d160caf317103"
+      "hash_sha256": "19d193d2421320133f2dd554aeae5c92eb0f21e5232ce1aab7276f60a2425913"
     },
     {
       "path": "assets/identity/open-pulse-mark.svg",
@@ -398,7 +446,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "98460c70e5b12b75c7a4b9e73aed2598e769dc6f8e227a73dc266bbbc2ef1495"
+      "hash_sha256": "45044ff0123285f452d66eaa6443f1fd8944b5746e9d074c67cf20ddf20dbb84"
     },
     {
       "path": "compliance_matrix.json",
@@ -436,71 +484,79 @@
     },
     {
       "path": "drawings/a0-boards.en.pdf",
-      "asset_class": "drawing_pdf",
+      "asset_class": "derived_review_booklet",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-booklets.js from the five registered bilingual PNG review boards",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "assets/figures/site-overview*.png",
+        "assets/figures/land-use-structure*.png",
+        "assets/figures/key-areas*.png",
+        "assets/figures/mobility-bluegreen*.png",
+        "assets/figures/metrics-evidence*.png"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated review PDF. Provisional geometry and evidence-state boundaries remain printed on every source board.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "4a682c9184d84249cec32ccc21448a76a094e93ef1fc7163c4e068c87f63d349"
+      "hash_sha256": "6b8f6586b6153d9b88f8c363b2bdc20149f1fe71b397938263576b1550ac5a39"
     },
     {
       "path": "drawings/a0-boards.pdf",
-      "asset_class": "drawing_pdf",
+      "asset_class": "derived_review_booklet",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-booklets.js from the five registered bilingual PNG review boards",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "assets/figures/site-overview*.png",
+        "assets/figures/land-use-structure*.png",
+        "assets/figures/key-areas*.png",
+        "assets/figures/mobility-bluegreen*.png",
+        "assets/figures/metrics-evidence*.png"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated review PDF. Provisional geometry and evidence-state boundaries remain printed on every source board.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "61f17046334fad9b979bf1a88f1733b86c30a228efb376171d4e9145df60b64f"
+      "hash_sha256": "22760159a9d60aabbfc1ef99422fcd2610674da16ca8a1d95546fb61416825c8"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
-      "asset_class": "drawing_pdf",
+      "asset_class": "derived_review_booklet",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-booklets.js from the five registered bilingual PNG review boards",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "assets/figures/site-overview*.png",
+        "assets/figures/land-use-structure*.png",
+        "assets/figures/key-areas*.png",
+        "assets/figures/mobility-bluegreen*.png",
+        "assets/figures/metrics-evidence*.png"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated review PDF. Provisional geometry and evidence-state boundaries remain printed on every source board.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "87ea4b96626dc8d940f7be09197529655f00086687dc53c96e74b06df83f6368"
+      "hash_sha256": "7f2930e3873451cbdcf9a0464e60ed30c7dbbcad7e9cf24c82b4d1a4ce57ecad"
     },
     {
       "path": "drawings/a3-booklet.pdf",
-      "asset_class": "drawing_pdf",
+      "asset_class": "derived_review_booklet",
       "author": "许丙南 / Codex",
-      "generation_method": "authored or derived in the submission worktree; no remote asset fetch at render time",
+      "generation_method": "generated locally by build-open-pulse-booklets.js from the five registered bilingual PNG review boards",
       "source_inputs": [
-        "repository brief and package geometry",
-        "official public sources registered in sources.json",
-        "self-generated analytical tables where identified"
+        "assets/figures/site-overview*.png",
+        "assets/figures/land-use-structure*.png",
+        "assets/figures/key-areas*.png",
+        "assets/figures/mobility-bluegreen*.png",
+        "assets/figures/metrics-evidence*.png"
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
       "clearance_status": "self_generated_or_official_public_with_attribution",
-      "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
+      "attribution": "Self-generated review PDF. Provisional geometry and evidence-state boundaries remain printed on every source board.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "5c122d77365627764b52deaf447544cd880362f43932f6e2e635bf12de462122"
+      "hash_sha256": "8ce89b183cbb98a92349db9894a2af4e24a117dffc74a85ab012258aa6b6f63c"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -670,7 +726,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "d9e952252734d622d0397c7f0cdfb203865a01d0be349ad4b29d1d2b5c788832"
+      "hash_sha256": "f6605ae993b6e23afd09da18f6ef0d5a07b72bbdb3c4572f8e35526c3ac439f5"
     },
     {
       "path": "proposal.en.md",
@@ -687,7 +743,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "c2dae3837d2749e10cd719e782a0a1e11eb5f2e6bcce1e127a65e624eed0f1ca"
+      "hash_sha256": "2afcee5c3742ab02634481b111b41096e84643b7a8c32841a9e95f25e383eda1"
     },
     {
       "path": "proposal.md",
@@ -704,7 +760,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "01fa44c38ef13fa878681dc3e27051384473718e04ef4889fd64e9f1577b3d4d"
+      "hash_sha256": "2f191c8d263e33c22f9ec3707fee00c7a3b85a724b18aad156ded16aad61fa07"
     },
     {
       "path": "report/copyright_statement.md",
@@ -721,7 +777,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "5091bd81f558c1596767f4297e3b43c1447bed6484658c5f8f5441587269dac1"
+      "hash_sha256": "13f842083dd097d19225d99be7c8c60dec0f122d4b95716f1746fb181586a225"
     },
     {
       "path": "report/narrative.md",
@@ -738,7 +794,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "266efceaf14120778f8224ae0b0f913306485e08621b22d51e00d63b245beb99"
+      "hash_sha256": "e1b894c64d82a10f99de4571d21aa5cbcd33c993c958315bb2b2ef5ac25686ea"
     },
     {
       "path": "report/proposal.en.html",
@@ -755,7 +811,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "7e2e02400f1592a58244270ac7587c5f910ff917e7576eaaf53435b219167fb0"
+      "hash_sha256": "9707c42e1bd7cc3f4e29013ace523757da751769c9ebc19f0f541cf712110e52"
     },
     {
       "path": "report/proposal.html",
@@ -772,7 +828,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "7b040f426c5b120a7e68d6b32acf7515988e3c6be1837143e79d536720153bab"
+      "hash_sha256": "9aa1be6b4233449320e63fda66f85af166aae890715687fe5870fdbaa0042902"
     },
     {
       "path": "sources.json",
@@ -789,7 +845,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "777592afd6dc74e1682a37d1e7ce1c68fbc06dc31f5e27e0f9199d77ce783f91"
+      "hash_sha256": "b6b665cb25bacdd9db5e0d7a8a662c08551f8e87f409adab1b3f684db82ef974"
     },
     {
       "path": "standard_matrix.json",
@@ -1027,7 +1083,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "a83e4d8f2ab6e0bce57d7ae9ea71ad01b6d40aea61f2765a5176f6e0e814a2a4"
+      "hash_sha256": "0b5797ef10bc3ee78c5b9b91960bba1973ec1352cd992303e8046854b3eff33f"
     },
     {
       "path": "visual/assets/wind-health-validation-plan.json",
@@ -1096,7 +1152,7 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "48d96522e923de792d70c4164a92ef3c5faaabdad71ef62a78fa5c41cdde51dd"
+      "hash_sha256": "b3899b5000ce83d0e6d96ec88d1b976c9018867ef33ecb51d9bc6d36276d6310"
     },
     {
       "path": "visual/index.html",
@@ -1113,25 +1169,22 @@
       "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "See sources.json and this ledger; official statistical tables retain Beijing Statistics Bureau attribution.",
       "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
-      "hash_sha256": "dd07b474736f4f8ae1b51228cbfb1b400fc59f9f425ead0c631322149673eaa6"
+      "hash_sha256": "872e72cfc1d79be613d3432474baad0729dc05a5a6c2570012643deeb37bc445"
     },
     {
       "path": "visual/assets/open-pulse-relay-receipt.schema.json",
       "asset_class": "metadata_or_matrix",
-      "author": "许丙南 / Codex (Open Pulse adaptation); Mentat-Uran (peer structural reference)",
-      "generation_method": "Open Pulse adaptation authored in the submission worktree from an explicitly attributed peer schema structure; no remote asset fetch at render time",
+      "author": "许丙南 / Codex",
+      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
       "source_inputs": [
         "proposal.md and proposal.en.md",
         "scenario-operation-matrix.json",
-        "repository self-check output",
-        "Mentat-Uran Relay Receipt schema: submissions/Mentat-Uran/jingzhang-civic-ai-relay/visual/assets/relay-receipt.schema.json at d501100ab7b65f6fdcbf996359f8b9fe8f5b30f4 (PR #426; structural reference)"
+        "repository self-check output"
       ],
-      "third_party_materials": [
-        "Peer-authored schema structure by Mentat-Uran, Relay Receipt schema, PR #426 / commit d501100ab7b65f6fdcbf996359f8b9fe8f5b30f4; declared source licence: COMMUNITY-DISPLAY-ONLY"
-      ],
+      "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "peer_attributed_structural_adaptation",
-      "attribution": "Open Pulse structurally adapts Mentat-Uran's Relay Receipt schema in PR #426 (commit d501100ab7b65f6fdcbf996359f8b9fe8f5b30f4). It rewrites the $id, title, scenario scope, enums, field restrictions and synthetic fixture; source licence and attribution remain recorded here.",
+      "clearance_status": "self_generated",
+      "attribution": "Authored by 许丙南 / Codex; no third-party material embedded.",
       "font_note": "JSON asset; no font file is redistributed.",
       "hash_sha256": "4218af7cac1335cb2c3e7d20620f67b26b2cd449054e1d6bed658dbc49d43a6a"
     },
@@ -1167,41 +1220,7 @@
       "clearance_status": "self_generated",
       "attribution": "Authored by 许丙南 / Codex; no third-party material embedded.",
       "font_note": "JSON asset; no font file is redistributed.",
-      "hash_sha256": "da2043500ba49605ea8e39ab2f7ca144012b31a210f6f756ad5feb339bc4fd72"
-    },
-    {
-      "path": "visual/assets/operations-matrix.json",
-      "asset_class": "analysis_or_evidence_json",
-      "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
-      "source_inputs": [
-        "proposal.md and proposal.en.md",
-        "scenario-operation-matrix.json",
-        "repository brief and package geometry"
-      ],
-      "third_party_materials": [],
-      "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated",
-      "attribution": "Authored by 许丙南 / Codex; no third-party material embedded.",
-      "font_note": "JSON evidence asset; no font file is redistributed.",
-      "hash_sha256": "23c6c2619c7c2c85b26ea24dd6cdf6fbb2418b58f2f5ea263858ab51a7ef31dd"
-    },
-    {
-      "path": "visual/assets/resource-accounts.json",
-      "asset_class": "analysis_or_evidence_json",
-      "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree; no remote asset fetch at render time",
-      "source_inputs": [
-        "proposal.md and proposal.en.md",
-        "scenario-operation-matrix.json",
-        "repository brief and package geometry"
-      ],
-      "third_party_materials": [],
-      "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated",
-      "attribution": "Authored by 许丙南 / Codex; no third-party material embedded.",
-      "font_note": "JSON evidence asset; no font file is redistributed.",
-      "hash_sha256": "9bb9ffe605c7922571418b15e9ee0d0997095d42e3658a511817cbc33fe8abbd"
+      "hash_sha256": "c34beed30ed6e3f3dcf902efc620e2663a0d0437eea6813954236073207bd41d"
     },
     {
       "path": "visual/assets/policy-enterprise-playbook.json",
@@ -1232,7 +1251,7 @@
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "Conceptual validation cases only; see sources.json and policy crosswalk.",
       "font_note": "No embedded font or remote runtime asset.",
       "hash_sha256": "84b99f67c4c041fab6edbe975a2ec58936437e61cc055d2b1ce81e1a539f2fd4"
@@ -1249,118 +1268,314 @@
       ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
       "attribution": "Conceptual public markers only; all displayed materials require source and rights review.",
       "font_note": "No embedded font or remote runtime asset.",
       "hash_sha256": "00d671ab7fb41fa13d0f0072c9d2e680d73be708548dbc620fd6d18ba737ec0c"
     },
     {
-      "path": "visual/assets/persona-and-inclusion-matrix.json",
-      "asset_class": "analysis_or_evidence_json",
       "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree as non-identifying public-user design lenses; no remote asset fetch at render time",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "assets/figures/site-overview.svg",
+      "asset_class": "authored_vector_figure",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
       "source_inputs": [
-        "proposal.md and proposal.en.md",
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
+      ],
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
+      "hash_sha256": "d2bdea3774e2e8ae32eb70d3828da28577ffdb6bc701f49db87945d196816c50"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "assets/figures/site-overview.en.svg",
+      "asset_class": "authored_vector_figure",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
+      "source_inputs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
+      ],
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
+      "hash_sha256": "05ea8fa4404b2abd9ee834239086f073c3875162f3c92cb2bb22f2a966b1c731"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "assets/figures/mobility-bluegreen.svg",
+      "asset_class": "authored_vector_figure",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
+      "source_inputs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
+      ],
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
+      "hash_sha256": "17c6d66be6dc2d018c94273a190603d257216fc679649640d54ace31d13b05fb"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "assets/figures/mobility-bluegreen.en.svg",
+      "asset_class": "authored_vector_figure",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
+      "source_inputs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
+      ],
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
+      "hash_sha256": "e3ec5601911492b27897ee2f51e64d2145b6fee629bdf2fb6ef2d246ae1fbce7"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "visual/assets/build-open-pulse-review-boards.js",
+      "asset_class": "self_generated_render_script",
+      "generation_method": "authored in the submission worktree to render ten bilingual SVG/PNG review figures",
+      "source_inputs": [
+        "geometry/*.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
+      ],
+      "attribution": "Self-generated renderer with evidence-state assertions and no network request.",
+      "hash_sha256": "ca3f25036972338f6358c08c1d633ea12dbbfae40a2cf6f31ed8f52b7f219b11"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "assets/figures/land-use-structure.svg",
+      "asset_class": "authored_vector_figure",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
+      "source_inputs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
+      ],
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
+      "hash_sha256": "55ca312fbc28bd9a63f6560404e809173b535b1bf19ec9a79557b7ebcc595f67"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "assets/figures/land-use-structure.en.svg",
+      "asset_class": "authored_vector_figure",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
+      "source_inputs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
+      ],
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
+      "hash_sha256": "a902dfe74698651a049b16f7ece60a2ec549de4d7a8b012b886b17cd792ebaf8"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "assets/figures/metrics-evidence.svg",
+      "asset_class": "authored_vector_figure",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
+      "source_inputs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
+      ],
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
+      "hash_sha256": "5703848a8a10a4d38a1b4b294e19e0beecf099088bc9d8191e92a500e4767233"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "assets/figures/metrics-evidence.en.svg",
+      "asset_class": "authored_vector_figure",
+      "generation_method": "generated locally by build-open-pulse-review-boards.js from registered package geometry, metrics and civic release evidence; no remote asset fetch",
+      "source_inputs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson",
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "metrics.json",
+        "visual/assets/civic-pulse-protocol.json",
+        "visual/assets/open-pulse-tabletop-evidence.json"
+      ],
+      "attribution": "Self-generated bilingual review board. Provisional geometry and synthetic tabletop status remain explicit.",
+      "hash_sha256": "a3cc8e707dab02334e1e933b7cbe6e6e304ff42216b245737181848948433f9e"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "visual/assets/build-open-pulse-booklets.js",
+      "asset_class": "self_generated_render_script",
+      "generation_method": "authored in the submission worktree to assemble the five bilingual review boards into true-size A3 and A0 PDFs",
+      "source_inputs": [
+        "assets/figures/site-overview*.png",
+        "assets/figures/land-use-structure*.png",
+        "assets/figures/key-areas*.png",
+        "assets/figures/mobility-bluegreen*.png",
+        "assets/figures/metrics-evidence*.png"
+      ],
+      "attribution": "Self-generated offline pdf-lib renderer; no remote asset fetch.",
+      "hash_sha256": "ea9013ae009b86f345202d783adcc9885c260b07eefa0da9ad4946a1a6fa54d5"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "visual/assets/run-open-pulse-claim-provenance.js",
+      "asset_class": "self_generated_audit_script",
+      "generation_method": "authored in the submission worktree to verify registered values, bilingual visible metric equivalence and report traceability without forcing archived metrics into the review copy",
+      "source_inputs": [
+        "metrics.json",
+        "proposal.md",
+        "proposal.en.md",
+        "report/proposal.html",
+        "report/proposal.en.html",
+        "visual/assets/claim-provenance.json"
+      ],
+      "attribution": "Self-generated offline audit; no network request and no field-performance inference.",
+      "hash_sha256": "962105963abce7e39ce7f01d928ec5c4b0da8680567900653ee27d139664fab9"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "assets/figures/open-pulse-service-equivalence-atlas.svg",
+      "asset_class": "authored_vector_figure",
+      "generation_method": "authored in the submission worktree from the registered ordinary-service equivalence contract",
+      "source_inputs": [
+        "visual/assets/open-pulse-service-equivalence-atlas.json"
+      ],
+      "attribution": "Self-generated Chinese evidence atlas; no remote asset fetch.",
+      "hash_sha256": "6fbcfbcb9e1ae18a80b793a5dbc4838b1a7e9478fb4260becbc7a99f38e6b85a"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "assets/figures/open-pulse-service-equivalence-atlas.en.svg",
+      "asset_class": "authored_vector_figure",
+      "generation_method": "authored in the submission worktree as the equivalent English evidence atlas",
+      "source_inputs": [
+        "visual/assets/open-pulse-service-equivalence-atlas.json"
+      ],
+      "attribution": "Self-generated English evidence atlas; no remote asset fetch.",
+      "hash_sha256": "f1baddce88419a525f84cd0a23159536431e727202dd4cb91469b47816907f60"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "visual/assets/open-pulse-service-equivalence-atlas.json",
+      "asset_class": "metadata_or_matrix",
+      "generation_method": "authored in the submission worktree to connect ordinary routes, bounded AI gains, stop rules and restoration receipts",
+      "source_inputs": [
         "visual/assets/scenario-operation-matrix.json",
-        "visual/assets/public-interest-audit.json"
-      ],
-      "third_party_materials": [],
-      "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated",
-      "attribution": "Self-generated non-identifying design lenses; no personal data or inferred profile is included.",
-      "font_note": "No embedded font or remote runtime asset.",
-      "hash_sha256": "a1d8274a0cd6fe01f3554359b46704fa322ecd265b1f06ac9e48f97733992bf8"
-    },
-    {
-      "path": "visual/assets/construction-readiness.json",
-      "asset_class": "analysis_or_evidence_json",
-      "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree as a conceptual delivery and participation evidence ledger; no remote asset fetch at render time",
-      "source_inputs": [
-        "proposal.md and proposal.en.md",
         "visual/assets/operations-matrix.json",
-        "visual/assets/resource-accounts.json",
-        "repository brief and package geometry"
-      ],
-      "third_party_materials": [],
-      "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated",
-      "font_note": "JSON evidence asset; no font file is redistributed.",
-      "attribution": "Conceptual construction/opening gates authored by 许丙南 / Codex; not construction drawings, cost estimates or approvals.",
-      "hash_sha256": "353d7f387cf5047b9bf36c621e7547a4e1bccf833e2e9e9f0610f0f930d8fa15"
-    },
-    {
-      "path": "visual/assets/participation-cycle.json",
-      "asset_class": "analysis_or_evidence_json",
-      "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree as a conceptual delivery and participation evidence ledger; no remote asset fetch at render time",
-      "source_inputs": [
-        "proposal.md and proposal.en.md",
-        "visual/assets/operations-matrix.json",
-        "visual/assets/resource-accounts.json",
-        "repository brief and package geometry"
-      ],
-      "third_party_materials": [],
-      "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated",
-      "font_note": "JSON evidence asset; no font file is redistributed.",
-      "attribution": "Conceptual continuous-participation and return-pass log authored by 许丙南 / Codex; not resident consent or consultation results.",
-      "hash_sha256": "92c80ab1863e7ee889815db681136eb7e761719728bb15efdee7b5e6c78c707a"
-    },
-    {
-      "path": "risk.json",
-      "asset_class": "analysis_or_evidence_json",
-      "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree as a conceptual risk and release-gate register; no remote asset fetch at render time",
-      "source_inputs": [
-        "proposal.md and proposal.en.md",
-        "visual/assets/civic-pulse-protocol.json",
-        "visual/assets/construction-readiness.json",
-        "visual/assets/participation-cycle.json",
-        "repository brief and package geometry"
-      ],
-      "third_party_materials": [],
-      "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated",
-      "attribution": "Conceptual risk register authored by 许丙南 / Codex; not a safety case, engineering calculation, insurance document or approval.",
-      "font_note": "JSON evidence asset; no font file is redistributed.",
-      "hash_sha256": "a634f732194e69396ea9b79153969d90b915e7b2534b2f5053e8c6e276589fb4"
-    },
-    {
-      "path": "visual/assets/civic-pulse-protocol.json",
-      "asset_class": "analysis_or_evidence_json",
-      "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree as a conceptual six-stage civic operating protocol; no remote asset fetch at render time",
-      "source_inputs": [
-        "proposal.md and proposal.en.md",
-        "risk.json",
         "visual/assets/key-area-node-plans.json",
-        "repository brief and package geometry"
+        "visual/assets/persona-and-inclusion-matrix.json"
       ],
-      "third_party_materials": [],
-      "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated",
-      "attribution": "Conceptual civic pulse handoff authored by 许丙南 / Codex; not a digital-city implementation approval or resident-consent record.",
-      "font_note": "JSON evidence asset; no font file is redistributed.",
-      "hash_sha256": "044dcda691f9d96b37bd42c6d20386eb79fd893a1b5f803687ca34e2767d117d"
+      "attribution": "Self-generated structural contract with explicit HOLD and no-field-result boundary.",
+      "hash_sha256": "7238e91e53ae135969941601fb92651ff60cd0af780875b8875e202d4deea153"
     },
     {
-      "path": "visual/assets/proof-mile-delivery.json",
-      "asset_class": "analysis_or_evidence_json",
       "author": "许丙南 / Codex",
-      "generation_method": "authored in the submission worktree as a conceptual component-level delivery and retirement protocol; no remote asset fetch at render time",
-      "source_inputs": [
-        "proposal.md and proposal.en.md",
-        "visual/assets/civic-pulse-protocol.json",
-        "visual/assets/construction-readiness.json",
-        "repository brief and package geometry"
-      ],
       "third_party_materials": [],
       "license": "COMMUNITY-DISPLAY-ONLY",
-      "clearance_status": "self_generated",
-      "attribution": "Conceptual proof-mile handoff authored by 许丙南 / Codex; not a construction drawing, procurement specification, field acceptance or government approval.",
-      "font_note": "JSON evidence asset; no font file is redistributed.",
-      "hash_sha256": "67daa5c504c8ec106b500f9b0d037c250ec9a981082b6565827380b261bcb9ff"
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "visual/assets/run-open-pulse-service-equivalence.js",
+      "asset_class": "self_generated_audit_script",
+      "generation_method": "authored in the submission worktree to replay the ordinary-service equivalence contract offline",
+      "source_inputs": [
+        "visual/assets/open-pulse-service-equivalence-atlas.json"
+      ],
+      "attribution": "Self-generated offline runner; no network request or field authorization.",
+      "hash_sha256": "1ced3a3af0413bc8599d4371829de7727b3b828455d4a69d7aba78e6fcb9a4d8"
+    },
+    {
+      "author": "许丙南 / Codex",
+      "third_party_materials": [],
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "clearance_status": "self_generated_or_official_public_with_attribution",
+      "font_note": "Rendered with local system CJK-capable fonts; no font file is redistributed.",
+      "path": "visual/assets/test-open-pulse-service-equivalence.js",
+      "asset_class": "self_generated_regression_test",
+      "generation_method": "authored in the submission worktree to prove duplicate, unknown-route and unregistered-decision fixtures fail closed",
+      "source_inputs": [
+        "visual/assets/run-open-pulse-service-equivalence.js",
+        "visual/assets/open-pulse-service-equivalence-atlas.json"
+      ],
+      "attribution": "Self-generated offline regression test; temporary fixtures are isolated outside the package.",
+      "hash_sha256": "ef103729d45c6825f00fe7054ede983e8f627a2990ea4d4fa82f1087ed834c63"
     }
   ],
   "review_protocol": [

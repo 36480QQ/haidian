@@ -1,0 +1,98 @@
+{
+  "schema_version": "2.0",
+  "as_of": "2026-08-28",
+  "status": "current_exact_package_cleared_for_repository_review_display_and_redistribution_under_component_specific_terms",
+  "file_inventory": "visual/assets/file-rights-inventory.json",
+  "file_inventory_path_count": 158,
+  "file_inventory_coverage_ratio": 1.0,
+  "contributor_path_decisions_complete": true,
+  "independent_file_level_audit_completed": false,
+  "independent_audit_is_repository_review_or_display_blocker": false,
+  "manifest_hash_binding": "final PR exact head -> manifest Git blob -> files[].sha256 for 157 non-manifest paths; manifest self-hash intentionally omitted",
+  "purpose_zh": "把公开评审、内容复用、代码复用、OSM 数据库衍生、第三方引用和专业实施分开判断。",
+  "purpose_en": "Separate repository review, content reuse, code reuse, OSM database derivatives, third-party citations and professional implementation.",
+  "decisions": [
+    {
+      "use_id": "USE-01",
+      "use": "Repository validation, review, archive and display",
+      "decision": "allowed",
+      "conditions": [
+        "retain attribution",
+        "retain provisional and G0 notices",
+        "preserve component licence notices"
+      ]
+    },
+    {
+      "use_id": "USE-02",
+      "use": "Reuse or adaptation of contributor-owned content",
+      "decision": "allowed_under_CC-BY-4.0",
+      "conditions": [
+        "attribute xyh202131",
+        "indicate changes",
+        "do not imply approval or field evidence"
+      ]
+    },
+    {
+      "use_id": "USE-03",
+      "use": "Reuse of contributor-owned code",
+      "decision": "allowed_under_MIT",
+      "conditions": [
+        "retain MIT notice"
+      ]
+    },
+    {
+      "use_id": "USE-04",
+      "use": "Reuse of OSM-derived database content",
+      "decision": "allowed_under_ODbL-1.0",
+      "conditions": [
+        "attribute OpenStreetMap contributors",
+        "apply ODbL share-alike where triggered",
+        "do not call the layer official"
+      ]
+    },
+    {
+      "use_id": "USE-05",
+      "use": "Reproduction of cited third-party pages, images, logos or document layouts",
+      "decision": "not_granted",
+      "conditions": [
+        "obtain permission from the original rightsholder"
+      ]
+    },
+    {
+      "use_id": "USE-06",
+      "use": "Professional deepening, field pilot or construction",
+      "decision": "content_may_be_reused_but_execution_not_authorized",
+      "conditions": [
+        "obtain official geometry and controls",
+        "complete H01-H07",
+        "professional sign-off",
+        "site and community verification",
+        "separate contracts and approvals"
+      ]
+    },
+    {
+      "use_id": "USE-07",
+      "use": "Review, display or redistribution of the current exact package as one manifest-bound distribution",
+      "decision": "allowed_with_component_specific_terms_and_notices_no_single_package_license",
+      "conditions": [
+        "use the path-level inventory for all current manifest paths",
+        "apply CC BY 4.0, MIT, ODbL and OFL by component",
+        "retain citation-only and repository provisional-input limits",
+        "do not infer authorization for a future installation, brand deployment or professional implementation"
+      ]
+    },
+    {
+      "use_id": "USE-08",
+      "use": "Reuse or adaptation of the retained R59 silent sequence and the R63 rebuilt deterministic concept poster, captions, transcript and four-state contract",
+      "decision": "allowed_under_CC-BY-4.0_for_contributor_owned_components_only",
+      "conditions": [
+        "attribute xyh202131",
+        "indicate changes",
+        "retain conceptual and editorial-duration disclosures",
+        "do not imply site evidence, public opinion, accessibility compliance, approval, performance, official geometry, service result or maturity"
+      ]
+    }
+  ],
+  "non_equivalence": "An open licence is permission to reuse an artifact, not evidence that its spatial claims are official, its service works, or its proposal is approved.",
+  "independent_review_boundary": "Independent legal advice, file-level legal audit and trademark review remain absent. Their absence does not reverse the contributor's current exact-package distribution grant, but remains a gate for any use context that requires those professional findings."
+}

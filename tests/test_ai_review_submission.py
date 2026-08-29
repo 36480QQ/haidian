@@ -18,7 +18,9 @@ from ai_review_submission import (  # noqa: E402
     ReviewError,
     collect_visual_inputs,
     content_preflight,
+    is_organizer_owned_action,
     run_ai_review,
+    system_instructions,
     validate_base_url,
     validate_output_dir,
 )
@@ -39,7 +41,7 @@ DIMENSIONS = [
 
 def valid_review() -> dict:
     return {
-        "schema_version": "0.1.0",
+        "schema_version": "0.2.1",
         "submission_dir": SUBMISSION_REL,
         "recommendation": "formal-review-ready",
         "can_enter_formal_review": True,
@@ -71,6 +73,7 @@ def valid_review() -> dict:
         ],
         "data_gaps_zh": ["官方边界仍未提供，后续需要复算。"],
         "required_next_actions_zh": [],
+        "conditional_followups": [],
         "pr_comment_markdown": "# AI 评审意见\n\n结论：可进入正式专业评分。七维证据完整，并保留正式边界发布后的复算要求。",
     }
 
@@ -126,6 +129,16 @@ class AIReviewSubmissionTests(unittest.TestCase):
             validate_base_url("http://example.com/v1")
         with self.assertRaisesRegex(ReviewError, "embed credentials"):
             validate_base_url("https://user:secret@example.com/v1")
+
+    def test_system_prompt_does_not_penalize_unsupplied_manifest_artifacts(self) -> None:
+        instructions = system_instructions()
+        self.assertIn("review_input_access_boundary", instructions)
+        self.assertIn("not proof that the participant omitted evidence", instructions)
+        self.assertIn("Do not penalize that limitation by itself", instructions)
+        self.assertIn("participant verification scripts", instructions)
+        self.assertIn("conditional_followups", instructions)
+        self.assertIn("blocking_now=false", instructions)
+        self.assertIn("current participant-controlled blockers", instructions)
 
     def test_output_inside_repo_must_use_ignored_review_root(self) -> None:
         validate_output_dir(ROOT, ROOT / ".maintainer-review" / "proposal")
@@ -206,6 +219,17 @@ class AIReviewSubmissionTests(unittest.TestCase):
             api_schema = client.payload["text"]["format"]["schema"]
             self.assertEqual("string", api_schema["properties"]["schema_version"]["type"])
             self.assertEqual("string", api_schema["properties"]["recommendation"]["type"])
+            followup_properties = api_schema["properties"]["conditional_followups"]["items"][
+                "properties"
+            ]
+            blocking_now = followup_properties["blocking_now"]
+            self.assertEqual("boolean", blocking_now["type"])
+            self.assertIs(False, blocking_now["const"])
+            repairs_schema = api_schema["properties"]["rubric_scores"]["items"][
+                "properties"
+            ]["required_repairs_zh"]
+            self.assertEqual(4, repairs_schema["maxItems"])
+            self.assertEqual(600, repairs_schema["items"]["maxLength"])
             self.assertFalse(client.payload["store"])
             content = client.payload["input"][0]["content"]
             self.assertTrue(any(item["type"] == "input_image" for item in content))
@@ -245,6 +269,83 @@ class AIReviewSubmissionTests(unittest.TestCase):
             self.assertEqual("request-changes", result["review"]["recommendation"])
             self.assertTrue(any("1 项详细 required repairs" in item for item in result["review"]["required_next_actions_zh"]))
             self.assertEqual("do-not-publish", result["decision"]["publication_recommendation"])
+            comment = result["review"]["pr_comment_markdown"]
+            self.assertIn("## 当前版本逐维修复项（阻断本轮）", comment)
+            self.assertIn("### 任务书相关性", comment)
+            self.assertIn("1. 补充任务书条款逐项对应表。", comment)
+
+    def test_required_repair_budget_fails_closed(self) -> None:
+        review = valid_review()
+        review["rubric_scores"][0]["required_repairs_zh"] = [
+            f"当前版本修复项 {index}。" for index in range(5)
+        ]
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            with self.assertRaisesRegex(ReviewError, "does not match advisory schema"):
+                run_ai_review(
+                    ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                    "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+                )
+
+    def test_required_repair_length_budget_fails_closed(self) -> None:
+        review = valid_review()
+        review["rubric_scores"][0]["required_repairs_zh"] = ["修" * 601]
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            with self.assertRaisesRegex(ReviewError, "does not match advisory schema"):
+                run_ai_review(
+                    ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                    "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+                )
+
+    def test_comment_publishes_every_repair_without_mixing_followups_or_gaps(self) -> None:
+        review = valid_review()
+        review["rubric_scores"][0]["required_repairs_zh"] = [
+            "补充任务书条款逐项对应表。",
+            "说明目标与任务书约束的取舍。",
+        ]
+        review["rubric_scores"][1]["required_repairs_zh"] = ["补充同类方案差异证据。"]
+        review["rubric_scores"][0]["risks_zh"] = ["任务书映射仍可能存在解释风险。"]
+        review["conditional_followups"] = [
+            {
+                "action_zh": "官方边界发布后复算空间指标。",
+                "blocking_now": False,
+                "trigger": "official-data-available",
+                "owner": "participant",
+            }
+        ]
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            result = run_ai_review(
+                ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+            )
+
+        comment = result["review"]["pr_comment_markdown"]
+        repair_section = comment.split("## 当前版本逐维修复项（阻断本轮）", 1)[1].split(
+            "## 数据缺口", 1
+        )[0]
+        self.assertIn("### 任务书相关性", repair_section)
+        self.assertIn("1. 补充任务书条款逐项对应表。", repair_section)
+        self.assertIn("2. 说明目标与任务书约束的取舍。", repair_section)
+        self.assertIn("### 原创性", repair_section)
+        self.assertIn("1. 补充同类方案差异证据。", repair_section)
+        self.assertNotIn("官方边界仍未提供", repair_section)
+        self.assertNotIn("任务书映射仍可能存在解释风险", repair_section)
+        self.assertNotIn("官方边界发布后复算空间指标", repair_section)
+        self.assertIn("## 条件触发的后续事项（不阻断本轮）", comment)
+        self.assertTrue(
+            any(
+                "3 项详细 required repairs" in item
+                for item in result["review"]["required_next_actions_zh"]
+            )
+        )
 
     def test_mandatory_hits_force_rejection_even_if_model_marks_pass(self) -> None:
         review = valid_review()
@@ -260,6 +361,33 @@ class AIReviewSubmissionTests(unittest.TestCase):
             self.assertEqual("reject", result["review"]["recommendation"])
             self.assertEqual("fail", result["review"]["mandatory_rejection"]["result"])
             self.assertFalse(result["review"]["can_enter_formal_review"])
+
+    def test_mandatory_fail_without_hits_stops_review_fail_closed(self) -> None:
+        review = valid_review()
+        review["mandatory_rejection"]["result"] = "fail"
+        review["mandatory_rejection"]["hits"] = []
+        review["mandatory_rejection"]["notes_zh"] = "未发现任何强制退回事实。"
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            out = Path(tmp)
+            with self.assertRaisesRegex(
+                ReviewError,
+                "result=fail requires at least one evidence hit",
+            ):
+                run_ai_review(
+                    ROOT, SUBMISSION, "alice", out, client, "gpt-test",
+                    "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+                )
+            final_artifacts = [
+                "model-output.json",
+                "ai-review.json",
+                "ai-decision.json",
+                "pr-comment.md",
+            ]
+            for artifact in final_artifacts:
+                self.assertFalse((out / artifact).exists())
 
     def test_invalid_model_schema_is_rejected(self) -> None:
         client = FakeClient({"recommendation": "formal-review-ready"})
@@ -324,6 +452,208 @@ class AIReviewSubmissionTests(unittest.TestCase):
             self.assertIn("review evidence omitted", preview)
             self.assertNotIn("OPENAI_API_KEY", preview)
             self.assertIn("content_preflight_issues", result)
+
+    def test_visual_packet_includes_present_english_figure_counterparts(self) -> None:
+        try:
+            from PIL import Image
+        except ImportError:  # pragma: no cover - Pillow is a project test dependency.
+            self.skipTest("Pillow unavailable")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            figure_dir = root / "assets" / "figures"
+            figure_dir.mkdir(parents=True)
+            for name in ["site-overview.png", "site-overview.en.png"]:
+                Image.new("RGB", (2, 2), "white").save(figure_dir / name)
+            with mock.patch(
+                "ai_review_submission.FIGURE_PATHS",
+                ["assets/figures/site-overview.png"],
+            ), mock.patch("ai_review_submission.render_pdf_previews", return_value=[]), mock.patch(
+                "ai_review_submission.render_html_previews", return_value=[]
+            ):
+                _, included, warnings = collect_visual_inputs(root, root / "rendered", 2, 1024 * 1024)
+            self.assertEqual(
+                included,
+                ["assets/figures/site-overview.png", "assets/figures/site-overview.en.png"],
+            )
+            self.assertEqual([], warnings)
+
+    def test_visual_packet_keeps_all_bilingual_previews_with_eighteen_image_budget(self) -> None:
+        try:
+            from PIL import Image
+        except ImportError:  # pragma: no cover - Pillow is a project test dependency.
+            self.skipTest("Pillow unavailable")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            figure_dir = root / "assets" / "figures"
+            figure_dir.mkdir(parents=True)
+            figure_paths = [
+                "assets/figures/site-overview.png",
+                "assets/figures/land-use-structure.png",
+                "assets/figures/key-areas.png",
+                "assets/figures/mobility-bluegreen.png",
+                "assets/figures/metrics-evidence.png",
+            ]
+            for rel in figure_paths:
+                primary = root / rel
+                counterpart = primary.with_name(f"{primary.stem}.en{primary.suffix}")
+                Image.new("RGB", (2, 2), "white").save(primary)
+                Image.new("RGB", (2, 2), "white").save(counterpart)
+
+            for rel in [
+                "drawings/a3-booklet.pdf",
+                "drawings/a0-boards.pdf",
+                "drawings/a3-booklet.en.pdf",
+                "drawings/a0-boards.en.pdf",
+                "report/proposal.html",
+                "visual/index.html",
+                "report/proposal.en.html",
+                "visual/index.en.html",
+            ]:
+                path = root / rel
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_bytes(b"fixture")
+
+            rendered = root / "rendered"
+            rendered.mkdir()
+            def previews(prefix: str) -> list[Path]:
+                paths = [rendered / f"{prefix}-a3-01.png", rendered / f"{prefix}-a0-01.png"]
+                for path in paths:
+                    Image.new("RGB", (2, 2), "white").save(path)
+                return paths
+
+            with mock.patch("ai_review_submission.FIGURE_PATHS", figure_paths), mock.patch(
+                "ai_review_submission.render_pdf_previews",
+                side_effect=[previews("pdf-zh"), previews("pdf-en")],
+            ), mock.patch(
+                "ai_review_submission.render_html_previews",
+                side_effect=[previews("html-zh"), previews("html-en")],
+            ):
+                _, included, warnings = collect_visual_inputs(
+                    root, rendered, 18, 1024 * 1024
+                )
+            self.assertEqual(18, len(included))
+            self.assertIn("rendered/html-en-a3-01.png", included)
+            self.assertIn("rendered/html-en-a0-01.png", included)
+            self.assertEqual([], warnings)
+
+    def test_organizer_owned_next_action_moves_to_data_gap(self) -> None:
+        review = valid_review()
+        for item in review["rubric_scores"]:
+            item["score"] = 5
+        review["required_next_actions_zh"] = ["组织方：发布官方几何后重算指标。"]
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            result = run_ai_review(
+                ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                "https://api.openai.com/v1", "high", 18, 1024 * 1024, False,
+            )
+        self.assertEqual("featured-candidate", result["decision"]["publication_recommendation"])
+        self.assertEqual([], result["review"]["required_next_actions_zh"])
+        self.assertIn("组织方：发布官方几何后重算指标。", result["review"]["data_gaps_zh"])
+        self.assertTrue(any("moved organizer-owned" in item for item in result["decision"]["local_gate_overrides"]))
+
+    def test_explicit_non_blocking_followup_does_not_block_intake(self) -> None:
+        review = valid_review()
+        for item in review["rubric_scores"]:
+            item["score"] = 5
+        review["conditional_followups"] = [
+            {
+                "action_zh": "正式边界发布后，从拓扑开始重算全部空间载体。",
+                "blocking_now": False,
+                "trigger": "official-data-available",
+                "owner": "participant",
+            }
+        ]
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            result = run_ai_review(
+                ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                "https://api.openai.com/v1", "high", 18, 1024 * 1024, False,
+            )
+        self.assertEqual("formal-review-ready", result["review"]["recommendation"])
+        self.assertTrue(result["review"]["can_enter_formal_review"])
+        self.assertEqual([], result["review"]["required_next_actions_zh"])
+        self.assertEqual(review["conditional_followups"], result["review"]["conditional_followups"])
+        self.assertEqual("featured-candidate", result["decision"]["publication_recommendation"])
+        self.assertIn(
+            "## 条件触发的后续事项（不阻断本轮）",
+            result["review"]["pr_comment_markdown"],
+        )
+        self.assertIn("当前阻断：否", result["review"]["pr_comment_markdown"])
+        self.assertNotIn("## 当前版本逐维修复项（阻断本轮）", result["review"]["pr_comment_markdown"])
+
+    def test_conditional_followup_cannot_set_blocking_now_true(self) -> None:
+        review = valid_review()
+        review["conditional_followups"] = [
+            {
+                "action_zh": "正式边界发布后重算。",
+                "blocking_now": True,
+                "trigger": "official-data-available",
+                "owner": "participant",
+            }
+        ]
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            with self.assertRaises(ReviewError):
+                run_ai_review(
+                    ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                    "https://api.openai.com/v1", "high", 18, 1024 * 1024, False,
+                )
+
+    def test_participant_repair_mentioning_official_geometry_stays_blocking(self) -> None:
+        review = valid_review()
+        for item in review["rubric_scores"]:
+            item["score"] = 5
+        review["required_next_actions_zh"] = [
+            "修正把非官方边界误标为官方边界的声明。",
+            "删除声称使用官方几何的虚假描述。",
+        ]
+        client = FakeClient(review)
+        with tempfile.TemporaryDirectory() as tmp, mock.patch(
+            "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+        ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+            result = run_ai_review(
+                ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+            )
+        self.assertEqual("request-changes", result["review"]["recommendation"])
+        self.assertFalse(result["review"]["can_enter_formal_review"])
+        self.assertEqual(
+            review["required_next_actions_zh"], result["review"]["required_next_actions_zh"]
+        )
+        self.assertEqual("do-not-publish", result["decision"]["publication_recommendation"])
+        self.assertFalse(any("moved organizer-owned" in item for item in result["decision"]["local_gate_overrides"]))
+
+    def test_ambiguous_organizer_language_stays_blocking(self) -> None:
+        participant_repairs = [
+            "由组织方提供的几何被错误解读，请参赛者修正图件。",
+            "待组织方确认前，请删除已获正式批准的表述。",
+            "等待主办方发布边界前，请参赛者修正图件。",
+        ]
+        for action in participant_repairs:
+            with self.subTest(action=action):
+                self.assertFalse(is_organizer_owned_action(action))
+                review = valid_review()
+                for item in review["rubric_scores"]:
+                    item["score"] = 5
+                review["required_next_actions_zh"] = [action]
+                client = FakeClient(review)
+                with tempfile.TemporaryDirectory() as tmp, mock.patch(
+                    "ai_review_submission.collect_visual_inputs", return_value=([], [], [])
+                ), mock.patch("ai_review_submission.content_preflight", return_value=[]):
+                    result = run_ai_review(
+                        ROOT, SUBMISSION, "alice", Path(tmp), client, "gpt-test",
+                        "https://api.openai.com/v1", "high", 7, 1024 * 1024, False,
+                    )
+                self.assertEqual("request-changes", result["review"]["recommendation"])
+                self.assertEqual([action], result["review"]["required_next_actions_zh"])
+                self.assertFalse(any("moved organizer-owned" in item for item in result["decision"]["local_gate_overrides"]))
 
     def test_submission_path_author_must_match_pr_author(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

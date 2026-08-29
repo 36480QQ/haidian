@@ -1,8 +1,38 @@
 #!/usr/bin/env python3
-"""Audit historical bilingual proposal pairs without modifying submissions."""
+"""Audit historical bilingual proposal pairs without modifying submissions.
 
+This read-only tool scans all merged submission directories and reports the
+health of each bilingual proposal pair (primary + translation).  It does not
+write or modify any files.
+
+Checks performed
+----------------
+- Both primary and translation files exist and declare the correct ``language``
+  and ``translation_of`` front-matter.
+- Section headings in both files are paired and aligned (by count and rough
+  content match).
+- Evidence markers (``[source:...]``, ``[depth:...]``, etc.) are present in
+  both files with no large asymmetry.
+- Inline images match between primary and translation.
+- No legacy combined-file format (single file with ``# 中文正式译文`` heading)
+  is mixed with the standalone bilingual contract.
+
+Usage
+-----
+Run from the repository root::
+
+    python3 scripts/audit_bilingual_backfill.py
+
+Limit to specific submissions::
+
+    python3 scripts/audit_bilingual_backfill.py submissions/alice/my-proposal
+
+Exit code is 0 when the audit completes (it is advisory; individual issues
+are warnings, not hard failures).
+"""
 from __future__ import annotations
 
+import argparse
 from collections import Counter
 import re
 from pathlib import Path
@@ -111,16 +141,24 @@ def audit_pair(directory: Path) -> list[str]:
     return failures
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--repo-root", type=Path, default=ROOT)
+    args = parser.parse_args(argv)
+    repo_root = args.repo_root.resolve()
+
     failures: list[tuple[Path, list[str]]] = []
-    directories = proposal_dirs(ROOT, [])
+    directories = proposal_dirs(repo_root, [])
+    if not directories:
+        print("Audit failed: no bilingual submissions found under submissions/*/*/proposal.md")
+        return 2
     for directory in directories:
         problems = audit_pair(directory)
         if problems:
             failures.append((directory, problems))
     if failures:
         for directory, problems in failures:
-            print(directory.relative_to(ROOT))
+            print(directory.relative_to(repo_root))
             for problem in problems:
                 print(f"  - {problem}")
         print(f"Audit failed for {len(failures)} of {len(directories)} submissions")

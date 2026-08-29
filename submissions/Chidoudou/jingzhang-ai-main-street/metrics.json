@@ -152,12 +152,12 @@
     },
     "minimum_pilot_count": {
       "status": "known",
-      "value": 2,
+      "value": 3,
       "unit": "count",
       "source_files": [
         "visual/assets/pilot-matrix.json"
       ],
-      "formula": "count(conceptual_minimum_pilots)",
+      "formula": "count(conceptual_minimum_trial_sheets)",
       "confidence": "high",
       "assumptions": [
         "A-PILOT-001"
@@ -268,6 +268,150 @@
       "formula": "polygon_area(PHASE-003)",
       "confidence": "medium",
       "assumptions": []
+    },
+    "prototype_study_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-prototypes.json"
+      ],
+      "formula": "count(prototypes)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOTYPE-001"
+      ]
+    },
+    "reversible_component_type_count": {
+      "status": "known",
+      "value": 6,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-prototypes.json"
+      ],
+      "formula": "count(components)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOTYPE-001"
+      ]
+    },
+    "journey_stage_count": {
+      "status": "known",
+      "value": 5,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-prototypes.json"
+      ],
+      "formula": "count(journey.steps)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOTYPE-001"
+      ]
+    },
+    "public_co_review_role_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-prototypes.json"
+      ],
+      "formula": "count(co_review.roles)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOTYPE-001"
+      ]
+    },
+    "public_evidence_card_count": {
+      "status": "known",
+      "value": 4,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-prototypes.json"
+      ],
+      "formula": "count(co_review.evidence_cards)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOTYPE-001"
+      ]
+    },
+    "delivery_horizon_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "visual/assets/spatial-prototypes.json"
+      ],
+      "formula": "count(delivery_horizons)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PROTOTYPE-001"
+      ]
+    },
+    "simulation_task_count": {
+      "status": "known",
+      "value": 12,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(simulation.tasks)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001"
+      ]
+    },
+    "simulation_success_rate": {
+      "status": "known",
+      "value": 0.9166666666666666,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(outcome == success or outcome endswith _success) / simulation_task_count",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001"
+      ]
+    },
+    "tool_schema_pass_rate": {
+      "status": "known",
+      "value": 0.9166666666666666,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(dispatch_schema_valid == true) / simulation_task_count",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001"
+      ]
+    },
+    "audit_completeness": {
+      "status": "known",
+      "value": 0.9166666666666666,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(audit_complete == true) / simulation_task_count",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001"
+      ]
+    },
+    "high_risk_intercept_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json",
+        "visual/assets/verify-street-pass-simulation.js"
+      ],
+      "formula": "count(high_risk == true and release_decision == hold) / count(high_risk == true)",
+      "confidence": "high",
+      "assumptions": [
+        "A-PILOT-001"
+      ]
     },
     "total_floor_area_sqm": {
       "status": "unknown",

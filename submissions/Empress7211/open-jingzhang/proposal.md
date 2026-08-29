@@ -37,7 +37,7 @@ scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-wal
 
 ![三层范围与用地结构的横向展开图](assets/figures/land-use-structure.png)
 
-本次提交的场地面积复算值为 11,412,825.386 平方米，来自 provisional polygon 投影到 EPSG:4548 的内部计算；它是设计包的一致性数字，不是官方精确面积结论。[metric:site_area_sqm] 三处重点区数量为 3，形状保持仓库原始临时几何且互不重叠。[metric:key_area_count] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003] 官方 polygon 到位后，必须以同一流水线重算 site、key areas、land use、buildings、roads、green space、public space、phasing、metrics、五张 PNG、两份 PDF 与两个 HTML；不能只换一张边界图。
+本次提交的 provisional 场地面积公开口径约为 **11.4 平方千米**；精确复算值只保留在 `metrics.json` 和 GeoJSON 等机器证据中。该数值来自 provisional polygon 投影到 EPSG:4548 的内部计算，是设计包的一致性证据，不是官方精确面积结论。[metric:site_area_sqm] 三处重点区数量为 3，形状保持仓库原始临时几何且互不重叠。[metric:key_area_count] [data:geometry/key_areas.geojson#PROV-KEY-002] [data:geometry/key_areas.geojson#PROV-KEY-003] 官方 polygon 到位后，必须以同一流水线重算 site、key areas、land use、buildings、roads、green space、public space、phasing、metrics、五张 PNG、两份 PDF 与两个 HTML；不能只换一张边界图。
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -59,6 +59,8 @@ OPEN JINGZHANG 的品牌只保留五个元素：总品牌“开源京张”；�
 | Amsterdam Algorithm Lifecycle / Register | 把算法目的、数据、责任、人审、异议、审计与版本转译为 Model Passport。[source:CASE-SRC-NL-AMS-ALGORITHM-LIFECYCLE] | 登记不等于认证、无偏或安全保证，荷兰申诉与采购法律不迁移。 |
 
 产业生态由五类接口构成：高校与研究机构提出方法和基准，众智园提供共享原型与安全验证，原点社区提供公开解释、成果转化和人才生活，大钟寺提供产业应用、商务和国际交换，Living Mainline 将居民问题与试验结果公开连接。它回应三大定位、五大功能和“三区两翼”，但不列未经授权的企业入驻、投资或产值承诺。所有产业资源都用“接口、服务类型、进入条件”表达；没有正式合作文件，就不出现确定伙伴名单。
+
+区域协同进一步按“议题—资源接口—空间接口—非承诺边界”登记：北纬社区提供日常公共服务与无障碍议题接口，未来科学城提供研发方法与测试基准接口，怀柔科学城提供科学装置与基础研究转译接口，经开区提供先进制造与具身智能工程接口，京津冀提供跨区域铁路文化与开放协作接口；中关村科技服务翼承接高校、知识产权、法律与转化服务，小月河场景赋能翼承接社区、公园和滨水日常议题。上述均为待对接的功能关系，不表示已签合作、已获资源或已确定实施主体；完整矩阵及核验状态见 `report/narrative.md` 与 `visual/assets/maintenance-followup.json`。
 
 未来城市形态因此不是无处不在的屏幕，而是三类可感知变化：建筑中有可预约的共享实验、开源评议和产业交换空间；街道中有慢行主干、公共道岔、无障碍导航和人工服务等价通道；治理中有场景护照、暂停阈值、拒绝清单和失败档案。总体结构对应用地、建筑和公共空间图层，而不是独立的产业口号。[data:geometry/land_use.geojson#LU-001] [data:geometry/buildings.geojson#BLDG-101] [data:geometry/public_space.geojson#PUBLIC-LANDMARK-001]
 
@@ -126,9 +128,9 @@ Agent.1—Agent.6 不是六个自动决策者，而是六张可审计的工作�
 | 13 夜间安全共治灯带 | 夜行者、安保、商户；主干与道岔广场 | 人流拥挤预警和照明调节；值守人员复核，不自动执法 | 仅低分辨率计数和环境数据；误报、眩光或扰民即恢复固定照明。 |
 | 14 城市议题路由台 | 居民、企业、高校团队；开源零号站 | 将问题聚类并匹配 Branch、场地和导师；议题委员会确认优先级 | 公众议题在公开展示时默认去标识，内部只保留经同意的联系与责任记录；无合法条件或无责任主体则进入 Hold。正式投稿仍按规则保留 GitHub 署名。 |
 
-为避免“场景名称相同、责任和通过条件却漂移”，下表冻结同一批 14 个 ID 的英文短名、建议人类 Owner 与最小成功门槛。这里的 success gate 是进入下一轮评审前必须提交的证据，不表示本方案已经达到任何效果；若专业人员尚未确定具体工程阈值，状态只能保持 concept / Hold，不能由 AI 猜数。
+为避免“场景名称相同、责任和通过条件却漂移”，下表冻结同一批 14 个 ID 的英文短名、建议人类 Owner 与最小成功门槛。所有 Owner 均为角色建议，状态统一为 `pending_confirmation`，不表示现实主体已同意承担责任。这里的 success gate 是进入下一轮评审前必须提交的证据，不表示本方案已经达到任何效果；任何现场条件和专业阈值未确认时，状态只能保持 concept / Hold，不能由 AI 猜数。
 
-| ID / English short name | 建议人类 Owner | 最小成功证据（非既成绩效） | 红牌暂停 / 退出 |
+| ID / English short name | 建议人类 Owner（待确认） | 最小成功证据（非既成绩效） | 红牌暂停 / 退出 |
 | --- | --- | --- | --- |
 | 01 Agent Consist Yard | Technical Owner + 独立复现人 | 冻结测试集可连续复现，所有工具调用和冲突处理均进入日志 | 越权、不可复现或无法回滚即隔离版本。 |
 | 02 Embodied Mobility Sandbox | 现场安全员 + Domain Professional | 每轮紧急停机演练通过，限定路径内零红线侵入 | 安全距离触发、误识别或投诉达到预设阈值即停机。 |
@@ -146,6 +148,10 @@ Agent.1—Agent.6 不是六个自动决策者，而是六张可审计的工作�
 | 14 Civic Issue Router | Scenario Owner + Affected-group Steward | 公开议题全部去标识，每个 Branch 均有 Owner、闸门或明确 Hold 理由 | 无合法条件、责任主体或可申诉路径即 Hold。 |
 
 front matter 中的 6 个 scenario ID 是仓库展示门户允许登记的场景家族；本节的 14 个编号是本方案唯一的设计场景清单，其中 01—06 是产业测试子集。A3 第 9—10 页完整展示同一 14 项，A0 第 6 页只摘要 6/14 产业验证并明确指向完整清单，不构成第二套场景。十四个场景均落到重点区、慢行、蓝绿或公共空间图层，而不是漂浮图标。[data:geometry/roads.geojson#ROAD-BRANCH-001] [data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-SWITCH-001] 主动选择、知情说明、随时退出和非 AI 等价服务是基础权利；未成年人、老年人、患者和残障人士不作为首轮高风险测试群体。每个场景都要有风险等级、独立复核人、人工接管、投诉申诉、即时暂停阈值和退出责任人。[depth:risk_missing_data]
+
+维护阶段以 14 城市议题路由台作为唯一旗舰证据旅程，10 开放 AI 素养课堂与 11 京张文化证据导览只作为可复用的低风险协议。路由台把“人如何完成同一任务”冻结为六个空间时刻：普通到达路径、提问门槛、人工前台与去标识工作台、Branch 桌面推演台、公开人工复核桌、公开回执与安静退出边。每一步都有不依赖 AI 的等价路径、明确人审点和恢复方式；AI 不可用、使用者拒绝或撤回时，人工/纸面路径仍完成同一任务，不降低服务。
+
+当前最高状态仍是 `simulation`。零依赖 runner 已离线复演 7 个固定合成 fixtures：`1 PASS / 5 HOLD / 1 RETIRED`，7/7 与预期一致，并生成确定性去标识回执；另有“未声明字段”和“误标 field run”两个 fail-closed 守卫测试。**这只证明规则、失败注入、删除/回滚/恢复证据和回执能够被重复执行；没有现场运行、没有真实参与者，也没有产生现实绩效或实施授权。** 首 100 天仍是八项尚未开始的建议证据行动：冻结模板与数据边界、建立非 AI 基线、制作可撤低保真样机、由待确认的人类角色复演并签署合成案例、独立复演、专业与受影响群体前置审查、人工 Go/Modify/Hold 决策、发布去标识证据包。所有 Owner、场地、预算、保险、采购、数据处理、值守、文保、消防和无障碍条件均为 `pending_confirmation`；任一未确认即保持 Hold，不得进入现场。合同、fixtures、runner 与回执见 `visual/assets/issue-router-tabletop/`，百日闸门见 `visual/assets/first-100-days-evidence-plan.json`。[metric:flagship_journey_step_count] [metric:synthetic_tabletop_case_count] [metric:first_100_days_evidence_action_count]
 
 ## 用地、建筑规模与拆改留方案
 
@@ -211,9 +217,9 @@ front matter 中的 6 个 scenario ID 是仓库展示门户允许登记的场景
 
 ![场地面积、绿地、公共空间与建筑基底复算证据图](assets/figures/metrics-evidence.png)
 
-当前 known 指标为：场地面积 `11,412,825.386 sqm`，[metric:site_area_sqm]；概念建筑基底 `228,096.0 sqm`，[metric:building_footprint_area_sqm]；绿地比例 `0.149399`，[metric:green_ratio]；公共空间比例 `0.040773`，[metric:public_space_ratio]；重点区数量 `3`，[metric:key_area_count]。面积均在 EPSG:4548 复算，交换几何均为 EPSG:4326。容积率保持 unknown，[metric:floor_area_ratio]。每项在 `metrics.json` 中同时记录 source_files、formula、confidence、assumptions 与 reason，避免孤立手填。
+当前公开指标口径为：provisional 场地面积约 `11.4 km²`，[metric:site_area_sqm]；概念建筑基底约 `22.8 ha`，[metric:building_footprint_area_sqm]；绿地比例约 `14.94%`，[metric:green_ratio]；公共空间比例约 `4.08%`，[metric:public_space_ratio]；重点区数量 `3`，[metric:key_area_count]。精确复算值仅保留在 `metrics.json` 与几何文件中；面积均在 EPSG:4548 复算，交换几何均为 EPSG:4326。容积率保持 unknown，[metric:floor_area_ratio]。每项在 `metrics.json` 中同时记录 source_files、formula、confidence、assumptions 与 reason，避免孤立手填。
 
-为避免“6个门户标签、14张设计场景、9项更新行动”再次混读，交付与治理计数也进入同一指标账本：设计场景 14 项 [metric:scenario_card_count]；其中产业测试 6 项 [metric:industry_test_scenario_count]；人物画像 8 类 [metric:persona_count]；更新行动 OJZ-01—09 共 9 项 [metric:renewal_project_count]；分期图层 PHASE-001—003 共 3 期 [metric:phase_count]；用地 union 对 provisional site 的覆盖率为 1.0 [metric:land_use_coverage_ratio]。这些 KPI 只证明投稿内部交付完整和治理覆盖，不证明实际经济、社会或技术绩效。
+为避免“6个门户标签、14张设计场景、9项更新行动”再次混读，交付与治理计数也进入同一指标账本：设计场景 14 项 [metric:scenario_card_count]；其中产业测试 6 项 [metric:industry_test_scenario_count]；人物画像 8 类 [metric:persona_count]；更新行动 OJZ-01—09 共 9 项 [metric:renewal_project_count]；分期图层 PHASE-001—003 共 3 期 [metric:phase_count]；用地 union 对 provisional site 的覆盖率为 1.0 [metric:land_use_coverage_ratio]。旗舰证据合同另登记 6 个旅程步骤 [metric:flagship_journey_step_count]、7 个已完成离线合成复演的 fixtures [metric:synthetic_tabletop_case_count] 与 8 项尚未开始的首百日证据行动 [metric:first_100_days_evidence_action_count]。前两项证明旅程已冻结、机器规则可复演；它们不证明现场已运行、现实人审已完成或绩效已实现。
 
 九层空间数据构成同一证据链：场地 [data:geometry/site_boundary.geojson#SITE-001]；重点区 [data:geometry/key_areas.geojson#PROV-KEY-001]；用地 [data:geometry/land_use.geojson#LU-001]；建筑 [data:geometry/buildings.geojson#BLDG-101]；道路 [data:geometry/roads.geojson#ROAD-MAINLINE-001]；绿地 [data:geometry/green_space.geojson#GREEN-001]；公共空间 [data:geometry/public_space.geojson#PUBLIC-MAINLINE-001]；约束缺口 [data:geometry/constraints.geojson#intentionally-empty]；分期 [data:geometry/phasing.geojson#PHASE-001]。用地由同一场地顺序差集生成，空间审查通过 validity、coverage、overlap 和指标一致性检查；三重点区保持原 geometry。
 
@@ -245,6 +251,8 @@ front matter 中的 6 个 scenario ID 是仓库展示门户允许登记的场景
 必须保持为概念建议的内容包括用地性质调整、容积率、建筑高度和规模、道路与轨道工程控制、市政条件、土地权属、拆改留、文保控制、投资额、建设时序、运营主体、采购、国际合作、数据共享、公共服务部署与行政结论。所有空间与场景均采用条件式建议、人工复核、专业深化和可撤回语言，不把测试结果升级为政府决定、工程保证或自动推广依据。
 
 版权方面，文字、Logo、机制图、五张图、PDF 和 HTML 均由本投稿在设计宪章指导下原创生成；地图仅使用仓库 provisional GeoJSON，不使用商业地图截图、远程瓦片或 OSM；国际案例只做短事实转述与原创机制抽象，不复制图片、Logo、地图或图表；字体仅使用系统可渲染字体或 PDF 标准 CID 字体，不把字体文件重新分发；代码由 Codex 生成并人工校核。完整分类声明见 `report/copyright_statement.md`，机器检查不被描述为法律确权。[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]
+
+维护补交同时提供逐资产权利台账 `visual/assets/asset-rights-ledger.json` 与图像替代文本台账 `visual/assets/alt-text.json`。静态 HTML 的语言、标题、结构、离线性、图像替代文本和最小字号已完成机器/代码预检；A3/A0 PDF 仍未标记为 tagged PDF，印刷打样、对比度、屏幕阅读器阅读顺序与最终版权意见必须由人类在公开展示前签字。八个国际案例的一手来源已登记预审状态，但外部人工逐页来源审计仍为 pending，不得表述为中央案例库认证。
 
 本方案采用仓库提供的 provisional 几何开展开放共创、方向性设计、正式内容评审、可视化表达、几何复算与自检；其不得被解释为官方红线、法定控制边界、审批依据或精确面积结论。官方精确几何缺失不构成本次评审的 blocker，资料补齐后须重新复算与校核。Merge 只表示建议进入下一轮专业深化与审查，不代表政府采纳、采购、建设或上线。
 

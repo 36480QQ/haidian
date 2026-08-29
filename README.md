@@ -120,6 +120,7 @@ open-city.ai 将把通过发布审核的投稿整理成开源可视化网站，�
 - 精选方案专题：`collections/*.json`、`schema/collection.schema.json`、`templates/collection.json` 和 `docs/collections.md` 支持维护者手动组织“最佳公共空间”“最佳 AI 治理”等专题合集，portal 会展示精选入口和入选理由。
 - 场景卡片库：`scenarios/*.json`、`schema/scenario.schema.json`、`templates/scenario.json` 和 `docs/scenarios.md` 维护 AI+交通、AI+医疗、机器人配送、AI 导览、企业服务、公共安全等标准场景；`proposal.md` 和 `exhibit.json` 可引用场景 ID，portal 支持按场景筛选。
 - 概念空间节点：`templates/spatial.json`、`schema/spatial.schema.json` 和 `docs/spatial.md` 支持投稿者用概念节点、廊道和区域说明方案空间结构；不允许坐标、bbox 或官方规划线位，portal 会以节点清单展示。
+- 场景演练台账：`templates/simulation.json` 和 `docs/simulations.md` 支持投稿者用可复算的任务台账说明 AI 场景演练读数；`simulation_task_count`、`simulation_success_rate`、`tool_schema_pass_rate`、`energy_budget_violations` 和 `audit_completeness` 由 `scripts/validate_submission.py` 从任务记录重新推导，失败、超预算和审计缺口应如实记录。
 - 方案展示配置：`templates/exhibit.json`、`schema/exhibit.schema.json`、`scripts/render_exhibit.py` 和 `scripts/render_portal.py` 支持生成标准展示页、portal 卡片、赛道筛选和方案对比，示例位于 `examples/`。
 - 方案迭代记录：`templates/changelog.md` 和 `proposal.md` 中的 `iteration` / `version` 元数据用于记录版本变化、采纳反馈和待复核事项。
 - 导出版专家评审包：`scripts/export_review_packet.py` 可把单个或多个投稿导出为本地 Markdown/HTML 评审包，并可在安装 PDF 引擎时生成 PDF，方便专家离线阅读；说明见 `docs/review-packets.md`。
@@ -166,7 +167,7 @@ Use $urban-design-ai-submission to create a lightweight sparse workspace and par
 4. 优先使用 `brief/site-package/geometry/` 中可信的官方边界；没有官方 polygon 时，可使用 `provisional_boundaries.geojson`。临时几何不得冒充官方红线、审批或精确面积依据，但组织方的数据缺口不再阻断内容评分，也不得因此扣分。
 5. 按 `docs/formal-submission-guide.md` 准备边界、三处重点区域、合规矩阵、专业标准矩阵、设计深度矩阵、A3/A0 图纸和 `visual/index.html`。使用 provisional 边界时，必须在正文、HTML、sources、assumptions 和自检结果中醒目标注。
    - 必须同时读取 `brief/site-package/agent_taskbook.json`，并在方案中回应 `agent.1` 至 `agent.6`：命名/Logo、生态案例、场景卡、朝圣地标、文化叙事和长期运营。
-   - 需要视觉生成辅助时，可参考 `docs/visual-style-recommendations.md`。推荐优先使用 `baoyu-markdown-to-html`、`baoyu-infographic`、`baoyu-diagram`、`baoyu-slide-deck` 中偏技术图解、仪表盘、蓝图、企业/专业简报的风格；不要把漫画、社交媒体卡片或氛围插画作为 formal 核心成果。核心图应表达设计意图、空间层级和重点区域，不应只是 raw GeoJSON/GIS 截图、矩形色块拼图或无主次的图层堆叠。
+   - 方案最终是给人看的。只要 Agent 具备相关能力，就应主动使用高质量图像与示意图、短视频、声音或音乐、动画、三维场景和交互网页增强表达；本地打包的 Three.js、WebGL、Canvas 体验都受到欢迎。不要把密集文字、机械 SVG、raw GeoJSON/GIS 截图或无主次图层堆叠当作默认终点。没有多模态能力的 Agent 不失格，可继续使用数据驱动图件、清晰文字和仓库默认封面生成器。详细契约见 `skills/urban-design-ai-submission/references/multimodal-presentation.md`。
 6. 使用 formal 脚手架生成结构化 package：
 
 ```text
@@ -180,9 +181,9 @@ python3 scripts/scaffold_ai_submission.py \
 ```
 
 7. 按 formal 模板完善 `proposal.md`、图纸、HTML 可视化、合规矩阵、标准矩阵、深度矩阵和自检结果。脚手架默认是 `package_state=scaffold`，不能投稿；必须替换正文、至少一个设计图层、五张图、HTML 和有效 A3/A0 PDF，并移除 `SCAFFOLD-DRAFT`。每次手动修改 `proposal.md` 后，重新生成 `report/proposal.html`。
-8. 运行 `python3 scripts/finalize_submission.py submissions/<your-github-login>/<proposal-slug>`；它会拒绝未修改模板和零页 PDF，成功后写入 `package_state=ready_for_review` 并刷新 manifest 哈希。随后运行一键自检，修复到 PASS 后发起 Pull Request。PR 作者只能修改自己 GitHub 用户名对应的目录。
+8. 运行 `python3 scripts/finalize_submission.py submissions/<your-github-login>/<proposal-slug>`；它会拒绝未修改模板和零页 PDF，成功后写入 `package_state=ready_for_review`、声明 `readiness_contract=persisted-self-check-v1` 并刷新 manifest 哈希。随后运行 `python3 scripts/self_check_submission.py submissions/<your-github-login>/<proposal-slug> --pr-author <your-github-login> --mark-self-checked --json`，只有全部检查 PASS 才会把本次四门报告写入 `self_check.json`、刷新对应 manifest 哈希、把 `validation_claim.self_checked` 写为 `true` 并再次验证；带有该 readiness contract 的新包必须满足这个声明。ready 包后续修改已登记工件时，先运行 `python3 scripts/refresh_submission_manifest.py submissions/<your-github-login>/<proposal-slug>`；该窄命令只刷新已有 manifest 条目、拒绝 scaffold 或越界路径，并先把 `self_checked` 置回 `false`，之后必须重新运行上述完整自检。没有该标记的历史 ready 包只保留 intake 兼容警告，不被伪装成已完成自检；gallery 为公开连续性而沿用的历史状态也不等于新的可信正式证据，可按同一命令迁移。修复到 PASS 后发起 Pull Request。PR 作者只能修改自己 GitHub 用户名对应的目录。
    - 发起 PR 前运行 `python3 scripts/participant_preflight.py submissions/<your-github-login>/<proposal-slug> --pr-author <your-github-login> --check-push`，提前检查目录归属、变更范围、大文件、完整自检、fork 远程与推送权限。
-9. 发起 PR 后必须持续监控 CI、评审评论、合并队列和状态变化。审核通常实时启动，但繁忙时可能排队；上传完成不等于任务结束。检查失败或收到修改意见时，阅读完整日志与上下文，修复后重新运行渲染、finalize、自检和 preflight，推送并继续监控，直到 PR 合并或明确记录外部 blocker。可用 `gh pr checks <PR> --watch --interval 15` 与 `gh pr view <PR> --json state,mergeStateStatus,reviewDecision,statusCheckRollup,comments,reviews`；排队时使用通知或低频定时复查，不要高频轮询或发布空评论。
+9. 发起 PR 后必须持续监控 CI、评审评论、合并队列和状态变化。审核通常实时启动，但繁忙时可能排队；上传完成不等于任务结束。检查失败或收到修改意见时，阅读完整日志与上下文，修复并先重新渲染所有衍生 HTML、图件和 PDF；然后按包状态运行 manifest 命令（scaffold 首次定稿运行 `finalize_submission.py`，已是 `ready_for_review` 的修订运行 `refresh_submission_manifest.py`），再依次运行完整自检和 preflight，推送并继续监控，直到 PR 合并或明确记录外部 blocker。可用 `gh pr checks <PR> --watch --interval 15` 与 `gh pr view <PR> --json state,mergeStateStatus,reviewDecision,statusCheckRollup,comments,reviews`；排队时使用通知或低频定时复查，不要高频轮询或发布空评论。
 10. 方案合并到 `main` 后会自动进入公开展示页。`gallery-publication.json` 仅用于首页精选，或由维护者明确暂停某个已合并方案的展示；`published=false` 表示暂停，`published=true` 可记录经人工内容、视觉和版权审核的版本，`featured=true` 决定首页精选。然后运行 `scripts/generate_submissions_data.py`；参赛者不得修改该清单或 `submissions-data.js`。
 
 示例：
@@ -197,6 +198,8 @@ submissions/octocat/ai-urban-loop/visual/index.html
 ## 方案应包含
 
 本仓库只接受 `formal` AI agent 方案。Markdown-only 投稿会失败；正式方案必须同时提交专业报告、结构化数据、图纸、HTML 可视化和自检结果。
+
+**强烈鼓励多模态呈现。** 可选视频、音频/音乐、海报、字幕和文字稿放入 `assets/media/` 并登记 manifest；网站会把自定义封面、视频、音频和 `visual/index.html` 交互入口直接呈现在方案工作台，而不是只列出下载链接。`manifest.cover_image` 可以指向 Agent 自己生成或清权的 PNG/JPEG/WebP；为空、`null` 或省略时，保持现有确定性默认封面。视频和音频不得自动播放，必须提供可访问的字幕/文字稿；生成媒体必须记录工具/模型、来源和权利边界，且不得替代五张必交图、A3/A0、离线 HTML 或结构化证据。
 
 **要求双语言。** 新方案设置 `bilingual_contract_version: "1"`，并让 `translation_file` 指向独立的完整译稿：中文主稿配 `proposal.en.md`，英文主稿配 `proposal.zh.md`；译稿设置 `translation_of: "proposal.md"`。`report/proposal.html`、`visual/index.html`、A3/A0 和含文字图件也必须按同一命名规则提供另一语言版本。两版须保持章节、主张、指标、证据引用和图件位置一致，并优先使用[赛事中英术语表](docs/terminology-glossary.md)。缺少或损坏任一必需译稿、语言映射或 manifest 哈希会阻断新契约投稿合并；历史 v1 及早期 v2 单语方案继续兼容展示。
 
@@ -220,9 +223,10 @@ submissions/octocat/ai-urban-loop/visual/index.html
 - 风险、版权与合规说明
 - 可选 `spatial.json` 概念空间节点
 - 可选 `risk.json` 风险矩阵
+- 可选 `simulation.json` 场景演练台账
 - 参考资料与来源
 
-必交文件包括：`manifest.json`、`agent.json`、`metrics.json`、`assumptions.json`、`sources.json`、`self_check.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`、`geometry/*.geojson`、`assets/figures/*.png`、`report/proposal.html`、`report/copyright_statement.md`、`drawings/a3-booklet.pdf`、`drawings/a0-boards.pdf`、`visual/index.html`。可选 `risk.json` 用于说明风险矩阵；可选 `changelog.md` 用于记录迭代过程；一旦提交，CI 会检查它们的基本格式和合规风险。`proposal.md` 是主语言主体方案，语言副本只是等义译稿；JSON/GeoJSON 是证据和复算数据，图片/PDF/HTML 是展示层。HTML 必须离线可打开，不得依赖 CDN、远程地图瓦片、外部脚本、外部字体、API 请求或 iframe。
+必交文件包括：`manifest.json`、`agent.json`、`metrics.json`、`assumptions.json`、`sources.json`、`self_check.json`、`compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json`、`geometry/*.geojson`、`assets/figures/*.png`、`report/proposal.html`、`report/copyright_statement.md`、`drawings/a3-booklet.pdf`、`drawings/a0-boards.pdf`、`visual/index.html`。可选 `risk.json` 用于说明风险矩阵；可选 `simulation.json` 用于登记可复算的场景演练台账；可选 `changelog.md` 用于记录迭代过程；一旦提交，CI 会检查它们的基本格式和合规风险。`proposal.md` 是主语言主体方案，语言副本只是等义译稿；JSON/GeoJSON 是证据和复算数据，图片/PDF/HTML 是展示层。HTML 必须离线可打开，不得依赖 CDN、远程地图瓦片、外部脚本、外部字体、API 请求或 iframe。
 
 可读性优先级最高。`proposal.md` 必须像一份真正的城市设计方案，而不是 JSON/GeoJSON 的目录说明；每个章节都要解释设计判断、空间图层、指标含义、标准依据和资料缺口，并在核心章节插入本地派生图。必须嵌入 `assets/figures/site-overview.png`、`land-use-structure.png`、`key-areas.png`、`mobility-bluegreen.png`、`metrics-evidence.png`。`report/proposal.html` 是从 `proposal.md` 渲染出的离线阅读版，解决不同 Markdown 预览器图片路径和排版不一致的问题；`visual/index.html` 是独立电子展示页，必须有清晰版式、图例、核心指标、任务覆盖、自检状态、来源和假设，建议 agent 使用设计/产品设计类能力完成视觉 QA。
 
@@ -241,6 +245,7 @@ submissions/octocat/ai-urban-loop/visual/index.html
 - 第一权威公告：北京市规划和自然资源委员会海淀分局《百年京张AI创新带城市设计国际方案征集资格预审公告》。
 - 专业标准本地参考：已拉取的标准正文位于 `brief/site-package/standards/references/`，索引为 `brief/site-package/standards/references/index.json`；`standards.json` 记录每份参考文件的 `local_reference_path`、`local_reference_sha256` 和获取状态。
 - 公开数据登记表：`data/source_registry.json` 说明每条资料的来源、权威等级、时效等级、许可摘要、是否可用于 formal、禁止用途和本地路径；处理流程见 `docs/data-workflow.md`。
+- 投稿包自采来源不要求重复写入中央登记表：实际使用的资料、资产、字体和工具链依赖仍须记录在各自 `sources.json`/版权说明中；中央登记和 `[source-registry]` Issue 申请通道见 `docs/data-workflow.md`。
 - Agent 处理资料包：`data/processed/agent_fact_pack.md` 和同目录 CSV 将公告范围、agent 任务、资料可用性、缺资料清单整理为可读表格；它们是导航层，不替代原始公告、任务书、标准或 source registry。
 - 更新标准快照：维护者可运行 `python3 scripts/fetch_standard_references.py --update-standards` 重新抓取可访问官方页面；若没有官方正文或清权文件，保持 `needs_official_file`，不得用第三方镜像冒充 formal 权威依据。
 - 资格预审文件：公告说明需在北京科技园拍卖招标有限公司网站下载登记表，发送至 `kjysanbu@163.com` 后由征集组织机构发送下载密码；精确边界、正式图纸和设计附件最可能来自该文件包。
@@ -259,10 +264,12 @@ CI 不替代人工评审。`package_type` 描述成果包类型，`review_status
 
 ## 本地校验
 
-安装 Python 测试依赖后，可以运行：
+安装与本次改动相关的测试依赖后，优先运行对应的测试模块。仓库中的依赖清单包括
+`requirements-validation.txt`、`requirements-review.txt` 和 `requirements-translation.txt`；
+完整测试 discovery 需要相应环境和依赖，可运行：
 
 ```bash
-python -m pytest
+python3 -m unittest discover -s tests -v
 ```
 
 校验公开资料登记表可运行：
@@ -307,6 +314,10 @@ python3 scripts/validate_local_submission.py \
   --pr-author <your-github-login>
 ```
 
+新建投稿或主动升级 manifest 时，增加 `--strict-manifest`，让本地校验也按
+`schema_version: 0.2.x` 的前向契约执行。已有 0.1.x 包维持默认的 legacy
+advisory 模式。
+
 如果手动修改了 `proposal.md`，先重新渲染离线阅读版：
 
 ```bash
@@ -318,6 +329,8 @@ python3 scripts/render_proposal_html.py submissions/<your-github-login>/<proposa
 ```bash
 python3 scripts/score_submission.py submissions/<your-github-login>/<proposal-slug>/proposal.md
 ```
+
+该命令只检查 `proposal.md` 的轻量建议项；即使显示全绿或 `--strict` 返回 0，也**不表示** formal 投稿已通过。它不会检查目录范围、manifest、图层、图纸、HTML 或专业证据链。完成后仍必须运行下面的 `self_check_submission.py`，并以 `can_enter_formal_review=true` / `formal-review-ready` 作为正式准入证据。
 
 exhibit 展示页和 portal 卡片由**维护者策展**:投稿包不包含 `exhibit.json`(deterministic 校验会拒绝它),
 进入 portal 与否由维护者在合并后决定。预览渲染流程可使用 `examples/` 演示样例:
@@ -343,7 +356,8 @@ AI agent 提交前应运行完整自检。它会同时执行 required CI 同款�
 python3 -m pip install -r requirements-review.txt
 python3 scripts/self_check_submission.py \
   submissions/<your-github-login>/<proposal-slug> \
-  --pr-author <your-github-login>
+  --pr-author <your-github-login> \
+  --mark-self-checked --json
 ```
 
 维护者进行可信空间复核和 AI 评审输入生成时，可运行：

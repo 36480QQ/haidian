@@ -44,12 +44,24 @@ python3 scripts/maintainer_review.py \
 精选、正式专业评分或现实实施批准。CI 禁止参赛者创建或修改该文件；维护者应在
 合并投稿后通过独立 PR 添加或更新，并注明对应 PR 与 commit SHA。
 
+AI advisory schema `0.2.1` 延续 `0.2.0` 的两类事项分离：`required_next_actions_zh` 只保存
+当前版本中参与者可关闭、阻断 intake 的修复；`conditional_followups` 保存官方资料
+到位、获得外部授权、进入现场试点或以后实质修改时才触发的事项。后者每项必须显式
+记录 `blocking_now=false`、`trigger` 和 `owner`，保留在 PR 评论和后续 `FEEDBACK.md`
+中，但不阻断当前 intake。归属和触发条件不得通过关键词或子串推断；含混项继续按
+当前修复 fail closed。
+
+`0.2.1` 同时把逐维 `required_repairs_zh` 限为每维最多 4 条、每条最多 600 个字符；
+`pr-comment.md` 必须按维度完整公开所有通过 schema 的当前 repair，不得只给计数或静默
+截断。风险、数据缺口和本地中间材料不进入该 repair 区，条件触发项继续使用独立的
+“不阻断本轮”区块。schema 版本提升会让旧缓存评审失效。
+
 ## 4. 复制 PR 评论
 
 把命令输出复制到 PR comment。maintainer review 的可见结果只在 PR comment 中展示，不进入 `submissions-data.js`、方案卡片或公开展示页。按建议状态处理：
 
 - `request-changes`：要求参赛者修复后再审。
-- `intake-provisional`：历史状态，仅用于识别旧审核结果；不得仅因组织方缺少正式 geometry 继续使用该状态。
+- `intake-provisional`：历史状态，仅用于识别旧审核结果；不得仅因组织方缺少正式 geometry 继续使用该状态。历史包在 gallery 中可能为公开连续性保留既有展示分类，但该分类不构成新的可信正式证据。
 - `formal-review-ready`：可进入正式专业评分。
 - `reject`：触发强制拒绝条件，关闭或拒绝 PR。
 
@@ -137,8 +149,21 @@ python3 scripts/generate_submissions_data.py --check
 ```
 
 确认 `submissions-data.js` 已更新后，再提交展示索引变更。该提交应由维护者完成，不要求参赛者在 PR 中提供。
+生成器输出的展示项 `id` 使用 `github-login/proposal-slug` 路径键，另保留短 `slug` 供显示和排序；不要把方案 slug 当作跨作者全局唯一键。
 
 提交展示索引时，只提交 `submissions-data.js` 等展示页必要变更，不提交 `.maintainer-review/`、`docs/reviews/` 或任何 review packet。
+
+### Gallery snapshot maintenance 分支首次引导
+
+`.github/workflows/gallery-snapshot-maintenance.yml` 只在可信 `main` 或手动触发时生成 `submissions-data.js`，然后把变更推到 `automation/gallery-snapshot`，由维护者 PR 审查后合并。仓库的 `admin-only branch creation` ruleset 不允许 `GITHUB_TOKEN` 创建这个分支，因此首次启用前需要管理员一次性从可信 `main` 建立维护分支：
+
+```bash
+git fetch origin main
+git push origin origin/main:refs/heads/automation/gallery-snapshot
+git ls-remote --heads origin automation/gallery-snapshot
+```
+
+如果分支不存在，workflow 会在生成前 fail-closed，并把上述引导写入 Actions step summary；它不会尝试创建分支、借用参赛者分支，也不会直接写入 `main`。分支建立后用 `workflow_dispatch` 重新运行，后续更新继续使用带预期 SHA 的 `--force-with-lease`，并只打开或更新维护者草稿 PR。
 
 ### 策展 portal 展示卡片
 
@@ -252,15 +277,22 @@ export HAIDIAN_REVIEW_MODEL="gpt-5.6-sol"
 # 先评审并生成审计材料，不修改 GitHub
 python3 scripts/auto_review_queue.py --limit 10
 
-# 正式回写 review/label；通过 60 分门槛和四项 gate 的 PR 自动合并
+# 正式回写 review/label；同时满足分数、四项 gate 和审核准入状态的 PR 自动合并
 python3 scripts/auto_review_queue.py --limit 10 --concurrency 3 --apply --admin-merge
 ```
 
 固定顺序为：required CI → 单一作者目录 → 固定 head SHA worktree → 本地四项 gate →
-强制退件 → 多模态 100 分评审 → 决策前再次检查 head SHA/CI → review 与标签 →
+强制退件 → 多模态 100 分评审 → 分数门槛与审核准入状态 gate →
+决策前再次检查 head SHA/CI → review 与标签 →
 合并前最后一次检查 head SHA/CI。低于 60 分标记 `review/low-quality`；CI 未成功的
 PR 不调用模型；draft 不进入队列。合并仅表示仓库 intake，展示、精选、正式评分与
 实施决定继续由 `gallery-publication.json` 的独立流程控制。
+自动合并还要求 `recommendation=formal-review-ready`、`can_enter_formal_review=true`、
+参与者 `required_next_actions_zh` 为空；否则 fail closed 为修改请求。
+结构化 `conditional_followups` 不参与当前 intake 阻断，但会作为带触发条件和责任归属的
+advisory 反馈保留。worker 使用受信任主线的 advisory schema；schema 版本变化会使旧缓存
+评审失效，避免沿用已经过时的阻断语义。
+`publication_recommendation` 是独立的展示建议，不改变 60 分 repository intake 门槛。
 worker 每轮按 PR 编号从旧到新处理，避免持续新增投稿使早期稿件饥饿。
 模型调用和本地视觉检查默认三路并行；worktree 创建/清理以及 GitHub review、标签、
 SHA 复核和 merge 使用进程内锁串行执行，避免 Git 引用锁和 base-branch merge 竞态。
@@ -274,3 +306,45 @@ SHA 复核和 merge 使用进程内锁串行执行，避免 Git 引用锁和 bas
 5–10 分钟运行一次，并以进程锁保证同一时间只有一个 worker。执行账号应使用
 fine-grained token 或 GitHub App，只授予本仓库 Contents/PR 所需权限；若 ruleset
 限定管理员合并，则将该 App/账号加入 bypass list 后使用 `--admin-merge`。
+
+## Quick Reference (English)
+
+### Workflow overview
+
+1. Check the PR diff — participant PRs must only modify `submissions/<login>/<slug>/`.
+2. Install local review dependencies: `python3 -m pip install -r requirements-review.txt`.
+3. Run the maintainer review bundle: `python3 scripts/maintainer_review.py submissions/<login>/<slug> --pr-author <login> --comment`.
+4. Read `maintainer-comment.md` in `.maintainer-review/<slug>/`.
+5. Make a decision: `formal-review-ready`, `intake-provisional`, `request-changes`, or `reject`.
+6. Post the comment to the PR (copy `pr_comment_markdown`; do not commit review artifacts).
+7. If `formal-review-ready`: merge the PR, then run `scripts/generate_submissions_data.py` and publish.
+8. If `request-changes`: post the comment and keep the PR open.
+9. If `reject`: close the PR with the rejection reason.
+
+### Gate check reference
+
+| Gate | Script | Passes when |
+|---|---|---|
+| DETERMINISTIC_VALIDATION | `validate_local_submission.py` | No blocking errors in format, scope, manifest, or PII checks |
+| SPATIAL_REVIEW | `spatial_review.py` | Geometry is valid, inside boundary, no topology errors |
+| VISUAL_PACKAGING | `visual_review.py` | `visual/index.html` is offline, has required sections, metrics match |
+| PROFESSIONAL_EVIDENCE | `professional_review.py` | Standard matrix, design-depth matrix, and metric references are complete |
+
+### Decision values
+
+| Recommendation | Meaning | Action |
+|---|---|---|
+| `formal-review-ready` | All four gates pass | Eligible for merge and formal professional scoring |
+| `intake-provisional` | May be merged for display but not scoring | Merge for gallery; do not assign professional scores |
+| `request-changes` | One or more gates fail or a current participant-controlled repair remains | Post review comment; keep PR open |
+| `reject` | Mandatory rejection condition | Close PR with explanation |
+
+### Prohibited artifacts
+
+Never commit to the repository:
+- `.maintainer-review/` contents (gitignored)
+- `docs/reviews/` contents (gitignored)
+- `formal-scorecard.json` (local only)
+- AI advisory review intermediates
+
+Post review conclusions only as PR comments. Do not embed them in `submissions-data.js` or public display pages.

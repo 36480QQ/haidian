@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, utilities, structural systems, fire access and engineering constraints are unavailable in the public package.",
+      "impact": "All siting and construction decisions remain conceptual; statutory use requires official files and professional confirmation."
+    },
+    {
+      "id": "A-BOUNDARY-001",
+      "status": "provisional_constraint",
+      "statement": "The submitted SITE_BOUNDARY and three KEY_AREA polygons are organizer-provided rough substitutes rather than official redlines.",
+      "impact": "Geometry supports package consistency only; all dependent layers and metrics must be recalculated when official polygons arrive."
+    },
+    {
+      "id": "A-VIBRATION-001",
+      "status": "unknown_pending_measurement",
+      "statement": "No authorised vibration baseline exists for the three key areas.",
+      "impact": "No exceedance, contour, attenuation distance, threshold or engineering treatment is asserted; unmeasured locations remain U."
+    },
+    {
+      "id": "A-USERS-001",
+      "status": "pending_user_confirmation",
+      "statement": "Official industry and procurement evidence are demand proxies; no test user, platform or operator has committed to the proposal.",
+      "impact": "A real user and written site permission are hard gates before L1."
+    },
+    {
+      "id": "A-AI-001",
+      "status": "deletable_optional_role",
+      "statement": "Event attribution is optional and must outperform preregistered non-AI baselines on held-out physical events.",
+      "impact": "Failure deletes the algorithm without changing public access, measurement or operational safeguards."
+    },
+    {
+      "id": "A-PUBLIC-001",
+      "status": "no_preset_target",
+      "statement": "Five public readings are fields to be measured, not promised performance targets.",
+      "impact": "No public improvement means no public-benefit claim and no escalation for display value."
+    },
+    {
+      "id": "A-DAZHONGSI-001",
+      "status": "type_study_only",
+      "statement": "Dazhongsi is represented as a multi-level investigation type, not a diagnosed impact location.",
+      "impact": "All local elements remain U until official geometry, structure and measurements are available."
+    },
+    {
+      "id": "A-COST-001",
+      "status": "unknown_pending_quotes",
+      "statement": "No comparable quotations, quantity schedule or approved budget is available.",
+      "impact": "The package gives work packages and escalation gates but no invented total cost."
+    },
+    {
+      "id": "A-BUILDING-001",
+      "status": "concept_typology_only",
+      "statement": "The three submitted building footprints are conceptual envelopes for reversible service typologies, not surveyed existing buildings or approved construction footprints.",
+      "impact": "They support spatial explanation and internal footprint recomputation only; official existing-building, ownership and control data must replace them before siting."
+    },
+    {
+      "id": "A-VIBRATION-BASELINE-001",
+      "status": "alias_to_unknown_measurement",
+      "statement": "Geometry records using this legacy assumption ID refer to the same absent authorised baseline recorded by A-VIBRATION-001.",
+      "impact": "No D/T/S role, E grade, exceedance or treatment may be inferred from the concept geometry alone."
+    },
+    {
+      "id": "A-ROAD-001",
+      "status": "concept_network_only",
+      "statement": "Submitted public-continuity and maintenance lines are design principles, not surveyed roads, official redlines or confirmed service routes.",
+      "impact": "Their exact alignment, accessibility, fire and operating conditions require official data and on-site review."
+    },
+    {
+      "id": "A-PILOT-001",
+      "status": "candidate_schedule_only",
+      "statement": "The 90-day phasing polygon and schedule are a candidate commissioning container with no confirmed user, permission, site or start date.",
+      "impact": "The clock does not start until L1 role assignment, written permission and a signed professional measurement plan are complete."
+    }
+  ]
+}

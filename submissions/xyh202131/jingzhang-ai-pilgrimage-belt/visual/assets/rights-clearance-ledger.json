@@ -1,205 +1,189 @@
 {
-  "schema_version": "1.0.0",
-  "ledger_id": "RIGHTS-01",
-  "title": "Jing-Zhang V2 file-level rights status ledger",
-  "as_of": "2026-08-09",
-  "scope": "All 48 files declared by this submission after this ledger is added, including manifest.json and this ledger itself.",
-  "clearance_claim": {
-    "status": "not_fully_cleared",
-    "completed_independent_file_level_clearance_audits": 0,
-    "statement": "This ledger is a disclosure and release-gate record. It is not legal advice, an ownership certificate, a trademark clearance, or proof that every third-party term has been satisfied."
+  "schema_version": "2.0",
+  "as_of": "2026-08-28",
+  "status": "current_exact_package_cleared_for_repository_review_display_and_redistribution_under_component_specific_terms",
+  "legal_opinion_provided": false,
+  "independent_file_level_audit_completed": false,
+  "independent_trademark_review_completed": false,
+  "contributor_file_inventory_complete": true,
+  "contributor_file_inventory": "visual/assets/file-rights-inventory.json",
+  "contributor_file_inventory_path_count": 158,
+  "contributor_file_inventory_coverage_ratio": 1.0,
+  "manifest_hash_binding": {
+    "manifest": "manifest.json",
+    "inventory": "visual/assets/file-rights-inventory.json",
+    "rule": "The final PR exact head binds the manifest Git blob; manifest files[].sha256 binds every non-manifest package path. The manifest omits its own SHA-256 to avoid a circular self-hash.",
+    "manifest_path_count": 158,
+    "hash_bearing_non_manifest_path_count": 157
   },
-  "status_vocabulary": {
-    "self_declared_origin_pending_independent_review": "The submission identifies the material as created for this package, but no independent file-level rights audit is recorded.",
-    "repository_provisional_derivative": "The file derives from repository-provided provisional material and inherits its non-official and rights-review limits.",
-    "generated_derivative_pending_embedded_asset_audit": "The output was generated for the package, but embedded fonts, metadata, tool terms, and third-party elements have not been independently audited."
+  "summary_zh": "当前精确投稿包 158/158 个路径均已由投稿方完成作者/来源/许可/署名/变更/再分发和例外处置，并通过最终 PR exact head → manifest Git blob → 157 个非 manifest 路径 SHA-256 绑定，可按组件条款用于仓库评审、展示与再分发；不存在单一整包许可。自有内容及第59轮确定性概念媒体为 CC BY 4.0，自有代码 MIT，OSM 衍生数据库 ODbL，HTML 字体子集及 PDF 语义子集适用 Noto Sans CJK SC OFL，政策与第三方内容仅引用，仓库临时输入不被重新许可。独立法律意见、独立逐文件法律审计和商标审查仍未提供；这表示外部专业结论缺失，不表示当前包仍有未处置路径，也不构成仓库评审展示阻断。",
+  "summary_en": "All 158/158 paths in the current exact submission package have contributor decisions for authorship/source, licence, attribution, transformation, redistribution and exceptions, bound through final PR exact head -> manifest Git blob -> SHA-256 for 157 non-manifest paths. The package may be reviewed, displayed and redistributed under component-specific terms; there is no single package-wide licence. Contributor content and R59 deterministic concept media are CC BY 4.0, code is MIT, OSM-derived database content is ODbL, the HTML font subset and PDF semantic subsets are Noto Sans CJK SC under OFL, policy and third-party works are citation-only, and repository provisional inputs are not relicensed. Independent legal advice, independent file-level legal audit and trademark review remain absent; this records missing external professional findings, not an undisposed current-package path or a repository-review/display blocker.",
+  "components": [
+    {
+      "component_id": "RIGHTS-CONTENT",
+      "scope": "Contributor-owned narrative, tables, diagrams, SVG, PNG exports, editorial layout, authored JSON and conceptual GeoJSON transformations",
+      "license": "CC-BY-4.0",
+      "notice": "report/copyright_statement.md",
+      "status": "licensed_by_contributor"
+    },
+    {
+      "component_id": "RIGHTS-CODE",
+      "scope": "Contributor-authored build, replay and offline interaction code",
+      "license": "MIT",
+      "notice": "report/copyright_statement.md",
+      "status": "licensed_by_contributor"
+    },
+    {
+      "component_id": "RIGHTS-OSM",
+      "scope": "OSM-derived records in geometry/constraints.geojson",
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "notice": "report/copyright_statement.md",
+      "status": "separately_licensed_database_content"
+    },
+    {
+      "component_id": "RIGHTS-PROVISIONAL",
+      "scope": "Repository-provided provisional boundary and key-area inputs",
+      "license": "not_relicensed_by_contributor",
+      "status": "repository_input_with_original_limits",
+      "limit": "Not an official redline or approval basis."
+    },
+    {
+      "component_id": "RIGHTS-CITATIONS",
+      "scope": "Linked policies, standards, cases and public webpages",
+      "license": "citation_only",
+      "status": "not_embedded_not_relicensed",
+      "limit": "No third-party page image, logo, document layout or retrieval cache is redistributed."
+    },
+    {
+      "component_id": "RIGHTS-FONT",
+      "scope": "Noto Sans CJK SC Regular visible glyph output rasterized into the four final PDFs, a minimal embedded OTF semantic subset for search/copy, and the WOFF2 subset shared by the four offline HTML outputs through visual/assets/offline-cjk-font.css",
+      "license": "SIL-OFL-1.1",
+      "status": "permitted_embedding_and_redistribution",
+      "notice": "report/copyright_statement.md",
+      "pdf_and_html_source_file_name": "NotoSansCJKsc-Regular.otf",
+      "pdf_and_html_source_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "pdf_render_method": "R63 base fixed-page composition uses locally rasterized visible Noto Sans CJK SC glyphs and an embedded semantic subset made from the same registered OFL source. R66 adds contributor-authored policy panels on four existing pages through local Chrome rasterization and deterministic local pypdf/reportlab merging. Existing body text remains searchable/copyable across 44/44 pages; the new raster policy panels use paired HTML/JSON as their complete machine-readable route. No remote resource, model API or tagged-PDF claim.",
+      "pdf_accessibility_boundary": "All 44 fixed pages expose searchable/copyable semantic text, but tagged PDF/UA and accessibility conformance are not claimed; the paired offline HTML reports remain the complete keyboard and machine-readable surface",
+      "html_subset_sha256": "d9580fffee5091ada9631ae4e631fd7873dc6956745303e2b440874e257b5378",
+      "html_subset_method": "fontTools subset 4.62.1 over the retained R59 character set plus nine R66 policy-text glyphs used by the four final report and visual HTML counterparts; two fresh builds byte-identical; WOFF2; 1156 Unicode code points; font-display swap"
+    },
+    {
+      "component_id": "RIGHTS-FILE-INVENTORY",
+      "scope": "Every one of the 158 paths in the current submission distribution tree",
+      "license": "component_specific",
+      "status": "contributor_self_inventory_complete",
+      "notice": "visual/assets/file-rights-inventory.json",
+      "limit": "The inventory records provenance and licence decisions but is not an independent legal opinion, trademark search or professional rights audit."
+    },
+    {
+      "component_id": "RIGHTS-R59-CONCEPT-MEDIA",
+      "scope": "assets/media/four-state-cover.webp, four-state-experience.mp4, its bilingual VTT and transcript, plus the explanatory four-state contract",
+      "license": "CC-BY-4.0 for contributor-authored content",
+      "status": "licensed_by_contributor_for_current_exact_package_no_independent_legal_opinion_claimed",
+      "method": "The retained MP4/VTT/transcript remain the deterministic R59 local production. R63 rebuilt only the contributor-owned poster in place from the human-task lens using local Pillow and the registered Noto font; no network, external media, model API, voice, music or audio.",
+      "limit": "Conceptual explanatory presentation only; not site, public-opinion, accessibility, approval, performance, location, duration, official-geometry, service-result or maturity evidence."
+    }
+  ],
+  "release_decisions": {
+    "repository_review": "allowed_with_attribution_and_component_notices",
+    "public_reuse_of_contributor_content": "allowed_under_CC-BY-4.0_for_contributor_owned_components_only",
+    "code_reuse": "allowed_under_MIT",
+    "osm_database_reuse": "allowed_under_ODbL-1.0_with_attribution_and_share_alike",
+    "third_party_source_reproduction": "not_granted",
+    "professional_implementation": "not_authorized_requires_H01_H07_official_inputs_professional_acceptance_and_separate_contracts",
+    "current_exact_package_redistribution": "allowed_with_component_specific_terms_and_notices_no_single_package_license",
+    "future_public_installation_or_external_brand_release": "not_authorized_requires_scope_specific_review"
   },
-  "file_coverage": {
-    "expected_manifest_entries": 48,
-    "expected_non_manifest_entries": 47,
-    "coverage_rule": "Every manifest path appears in exactly one asset_group. Path coverage does not equal legal clearance.",
-    "asset_groups": [
+  "future_public_installation_and_brand_release_gate": {
+    "status": "not_requested_no_public_installation_or_external_brand_release_authorized",
+    "current_public_installation_count": 0,
+    "current_external_brand_deployment_count": 0,
+    "gate_items": [
       {
-        "id": "RIGHTS-GROUP-01",
-        "name": "Package records and machine-audit evidence",
-        "rights_status": "self_declared_origin_pending_independent_review",
-        "origin_basis": "Authored or assembled for this submission from the declared repository task package and sources.json records.",
-        "paths": [
-          "manifest.json",
-          "agent.json",
-          "metrics.json",
-          "assumptions.json",
-          "sources.json",
-          "self_check.json",
-          "compliance_matrix.json",
-          "standard_matrix.json",
-          "design_depth_matrix.json",
-          "visual/assets/innovation-register.json",
-          "visual/assets/non-ai-parity-contract.json",
-          "visual/assets/evidence-freshness-policy.json",
-          "visual/assets/rights-clearance-ledger.json",
-          "report/narrative.md"
-        ],
-        "limits": [
-          "Repository source status is relied on but not independently re-licensed here.",
-          "Factual or regulatory authority remains governed by sources.json, not by authorship of these records."
-        ]
+        "gate_id": "PUB-RIGHT-01-AUTHORSHIP",
+        "required_evidence": "versioned authorship and contribution record for every proposed public asset and derivative",
+        "current_state": "current_package_contributor_inventory_available_future_asset_not_submitted",
+        "accepted_count": 0
       },
       {
-        "id": "RIGHTS-GROUP-02",
-        "name": "Bilingual narrative and rendered reports",
-        "rights_status": "self_declared_origin_pending_independent_review",
-        "origin_basis": "Bilingual text and offline HTML prepared for this submission; cited facts remain attributable to sources.json.",
-        "paths": [
-          "proposal.md",
-          "proposal.en.md",
-          "report/proposal.html",
-          "report/proposal.en.html",
-          "report/copyright_statement.md"
-        ],
-        "limits": [
-          "The COMMUNITY-DISPLAY-ONLY front-matter label is not a complete license grant because its full terms are not included in this package.",
-          "No independent plagiarism, quotation, model-output, or legal review is recorded."
-        ]
+        "gate_id": "PUB-RIGHT-02-CC-BY-MIT",
+        "required_evidence": "applicable CC BY 4.0 and MIT notices, attribution placement and derivative boundaries for the exact release",
+        "current_state": "component_notices_declared_future_release_review_open",
+        "accepted_count": 0
       },
       {
-        "id": "RIGHTS-GROUP-03",
-        "name": "Repository-derived provisional constraints",
-        "rights_status": "repository_provisional_derivative",
-        "origin_basis": "Derived from the repository provisional boundary package; not an official survey, redline, or approved key-area geometry.",
-        "paths": [
-          "geometry/site_boundary.geojson",
-          "geometry/key_areas.geojson"
-        ],
-        "limits": [
-          "May support conceptual generation, display, and intake checks only.",
-          "Repository maintainers must confirm redistribution terms before use outside the repository workflow."
-        ]
+        "gate_id": "PUB-RIGHT-03-OSM",
+        "required_evidence": "ODbL attribution, database/produced-work classification, share-alike decision and distribution notice for the exact public output",
+        "current_state": "current_osm_component_declared_future_release_review_open",
+        "accepted_count": 0
       },
       {
-        "id": "RIGHTS-GROUP-04",
-        "name": "Conceptual design geometry",
-        "rights_status": "self_declared_origin_pending_independent_review",
-        "origin_basis": "Conceptual design features authored for this submission using provisional constraints, repository enums, and OSM only as directional background.",
-        "paths": [
-          "geometry/buildings.geojson",
-          "geometry/constraints.geojson",
-          "geometry/green_space.geojson",
-          "geometry/land_use.geojson",
-          "geometry/phasing.geojson",
-          "geometry/public_space.geojson",
-          "geometry/roads.geojson"
-        ],
-        "limits": [
-          "OSM-derived orientation, if retained in a redistributed database, requires ODbL-compliant attribution and share-alike review.",
-          "These files create no statutory control, engineering entitlement, or exclusive claim over public facts."
-        ]
+        "gate_id": "PUB-RIGHT-04-FONT",
+        "required_evidence": "OFL notice, source/subset identity, reserved-font-name check and embedding or rasterization method for the exact output",
+        "current_state": "current_font_component_declared_future_release_review_open",
+        "accepted_count": 0
       },
       {
-        "id": "RIGHTS-GROUP-05",
-        "name": "Generated visual and publication outputs",
-        "rights_status": "generated_derivative_pending_embedded_asset_audit",
-        "origin_basis": "Figures, PDFs, and offline HTML generated for this package from the bilingual narrative, structured evidence, and conceptual geometry.",
-        "paths": [
-          "drawings/a3-booklet.pdf",
-          "drawings/a0-boards.pdf",
-          "drawings/a3-booklet.en.pdf",
-          "drawings/a0-boards.en.pdf",
-          "visual/index.html",
-          "visual/index.en.html",
-          "assets/figures/key-areas.png",
-          "assets/figures/land-use-structure.png",
-          "assets/figures/metrics-evidence.png",
-          "assets/figures/mobility-bluegreen.png",
-          "assets/figures/site-overview.png",
-          "assets/figures/innovation-system.png",
-          "assets/figures/implementation-roadmap.png",
-          "assets/figures/key-areas.en.png",
-          "assets/figures/land-use-structure.en.png",
-          "assets/figures/metrics-evidence.en.png",
-          "assets/figures/mobility-bluegreen.en.png",
-          "assets/figures/site-overview.en.png",
-          "assets/figures/innovation-system.en.png",
-          "assets/figures/implementation-roadmap.en.png"
-        ],
-        "limits": [
-          "No font binaries are shipped by the package; HTML requests system font stacks, while PDF font embedding and licensing remain unaudited.",
-          "Editable sources exist for Markdown, HTML, JSON, and GeoJSON, but no separate editable vector or layout source is declared for every PNG or PDF.",
-          "The conceptual JZ logo grammar has not received trademark or production-brand clearance."
-        ]
+        "gate_id": "PUB-RIGHT-05-THIRD-PARTY",
+        "required_evidence": "item-level reproduction or citation-only decision for every third-party text, image, archive item, oral-history record, person or mark",
+        "current_state": "no_new_third_party_public_asset_submitted",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-06-TRADEMARK-HISTORY",
+        "required_evidence": "scope-specific trademark search and professional historical or curatorial verification for final names, logo and landmark content",
+        "current_state": "not_reviewed",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-07-GENERATED-CONTENT",
+        "required_evidence": "tool/model, prompt or production method, output terms, edit history, disclosure label and non-evidence statement for each generated public asset",
+        "current_state": "current_R59_deterministic_contributor_media_disclosed_no_model_API_future_public_asset_gate_open",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-08-ACCESSIBILITY",
+        "required_evidence": "reviewed alt text, caption/transcript, contrast, legibility, tactile/audio or other equivalent access appropriate to the installed medium",
+        "current_state": "future_installation_review_not_completed",
+        "accepted_count": 0
+      },
+      {
+        "gate_id": "PUB-RIGHT-09-WITHDRAWAL",
+        "required_evidence": "named takedown holder, correction route, withdrawal conditions, physical removal plan and archived rights decision",
+        "current_state": "future_release_owner_not_assigned",
+        "accepted_count": 0
       }
+    ],
+    "release_rule": "A repository review, PR merge, current component licence declaration or contributor inventory does not authorize a public installation, permanent landmark, merchandise, external campaign or professional implementation. All applicable items must be accepted for the exact version and use context."
+  },
+  "truth_boundary": "Rights clearance does not establish field truth, planning approval, accessibility compliance, service performance, G1 maturity or professional acceptance.",
+  "media_toolchain_disclosure": {
+    "python": "3.14.7",
+    "pillow": "12.2.0",
+    "chrome_version_and_sha256": "151.0.7922.174 / b6d40f55e48e61760335d18f46abcec929e1a11b8330e7f2b501037584af4aa4",
+    "ffmpeg_version_and_sha256": "6.1.1-essentials_build-www.gyan.dev / 0c4760db80d73a6ddc05c828a20c1b51c84bf61f4fcecff17f759c3edab800fb",
+    "ffprobe_version_and_sha256": "6.1.1-essentials_build-www.gyan.dev / 01b99c76134e5c7a6b3f40f1d6c1e50f1084d5d5d763dfec1fde66bb1b575346",
+    "noto_source_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+    "redistribution": "Tool binaries and the source OTF are not redistributed; their licences remain independent."
+  },
+  "current_exact_package_release": {
+    "decision": "allowed_for_repository_review_display_and_redistribution_under_component_specific_terms",
+    "single_package_license": false,
+    "path_decision_coverage": "158/158",
+    "conditions": [
+      "apply CC BY 4.0 to contributor-owned content and indicate changes",
+      "retain MIT notice for contributor code",
+      "retain © OpenStreetMap contributors and ODbL obligations for OSM-derived database content",
+      "retain SIL OFL 1.1 notice for the Noto subset and rasterized glyph use",
+      "do not reproduce citation-only third-party works",
+      "retain repository provisional-input limits and all G0/non-evidence notices"
+    ],
+    "does_not_authorize": [
+      "future public installation or external brand release",
+      "professional implementation, construction or operation",
+      "planning approval, G1, field truth or professional acceptance"
     ]
   },
-  "third_party_and_tool_boundaries": [
-    {
-      "id": "RIGHTS-THIRD-01",
-      "material": "OpenStreetMap directional context",
-      "source_id": "OSM-CONTEXT",
-      "declared_license": "ODbL",
-      "required_attribution": "© OpenStreetMap contributors",
-      "current_use": "Background orientation only; not an official road redline, railway protection zone, water blue line, or boundary.",
-      "status": "attribution_declared_compliance_not_independently_audited"
-    },
-    {
-      "id": "RIGHTS-THIRD-02",
-      "material": "Official documents, public policy pages, and international case references",
-      "source_ids": "See sources.json",
-      "current_use": "Citation and factual background; no third-party photographs, logos, or document-layout reproductions are declared as embedded assets.",
-      "status": "citation_only_reuse_terms_not_independently_audited"
-    },
-    {
-      "id": "RIGHTS-THIRD-03",
-      "material": "AI models, rendering tools, PDF generators, and other production software",
-      "current_use": "The package declares generated outputs but does not contain a complete tool-version and output-license inventory.",
-      "status": "inventory_pending"
-    },
-    {
-      "id": "RIGHTS-THIRD-04",
-      "material": "COMMUNITY-DISPLAY-ONLY",
-      "current_use": "Front-matter label only.",
-      "status": "full_terms_unavailable_in_package",
-      "limit": "This label must not be represented as confirmed compatibility with judging, archiving, web display, professional deepening, commercial use, or sublicensing until the maintainer supplies and approves the complete terms."
-    }
-  ],
-  "unresolved_items": [
-    {
-      "id": "RIGHTS-OPEN-01",
-      "priority": "P0",
-      "item": "Obtain and review the complete COMMUNITY-DISPLAY-ONLY terms and record the permitted review, archive, display, translation, derivative, and professional-deepening uses."
-    },
-    {
-      "id": "RIGHTS-OPEN-02",
-      "priority": "P0",
-      "item": "Perform an independent file-level audit of quotations, embedded metadata, fonts, icons, logos, maps, model outputs, and third-party visual elements."
-    },
-    {
-      "id": "RIGHTS-OPEN-03",
-      "priority": "P0",
-      "item": "Verify ODbL attribution, database-derivative treatment, and share-alike obligations for every redistributed OSM-derived element."
-    },
-    {
-      "id": "RIGHTS-OPEN-04",
-      "priority": "P1",
-      "item": "Publish an editable-source inventory and identify which PNG/PDF outputs can be regenerated from included source files."
-    },
-    {
-      "id": "RIGHTS-OPEN-05",
-      "priority": "P1",
-      "item": "Complete trademark and production-brand review for the JZ logo grammar and landmark names before external brand deployment."
-    }
-  ],
-  "release_gates": [
-    {
-      "id": "RIGHTS-GATE-01",
-      "gate": "repository_review",
-      "status": "disclosure_ready",
-      "condition": "Reviewers can inspect path coverage, origins, limits, and unresolved items; no full-clearance claim is made."
-    },
-    {
-      "id": "RIGHTS-GATE-02",
-      "gate": "public_or_professional_reuse",
-      "status": "blocked_pending_terms_and_audit",
-      "condition": "Requires maintainer-confirmed license terms plus completion of applicable RIGHTS-OPEN items."
-    }
-  ]
+  "round_64_note": "Only contributor-owned handoff figures and their existing publication consumers were rebuilt. No third-party material, new media, source, font or licence class was added; role types do not imply real institutions, people, acceptance or professional authorization."
 }

@@ -1,0 +1,298 @@
+{
+  "schema_version": "2.0",
+  "index_id": "JZ-REVIEW-HANDOFF-R68.0",
+  "publication_revision": "68.0",
+  "as_of": "2026-08-28",
+  "review_status_semantics": {
+    "current_package_state_authority": "manifest.json and self_check.json on the current exact head",
+    "external_review_binding": "Every external review conclusion applies only to its reviewed_head.",
+    "predecessor_review": "PR #4136 completed a formal-review-ready review on c01d915ac819f51b77ce148c1c9a6be09e149eb7; after this package changes, that conclusion is predecessor history rather than a claim about the new head.",
+    "new_head_rule": "A new PR exact head remains unreviewed until an external review explicitly binds that head; contributor gates cannot prefill an external verdict.",
+    "history_route": "visual/assets/data-gap-closure-register.json preserves completed review history and superseded action registers without labelling them current."
+  },
+  "reading_routes": [
+    {
+      "time": "30_seconds",
+      "question": "Can one ordinary person arrive, understand, complete, correct or withdraw, and leave without depending on AI; then how do the three places differ?",
+      "primary_answer": "proposal.md#一人一事一处先跟随普通任务再看系统叠加",
+      "figure": "assets/figures/ordinary-life-journey.png"
+    },
+    {
+      "time": "3_minutes",
+      "question": "What continues in ordinary, verification, fault and recovery states?",
+      "primary_answer": "visual/index.html#s3",
+      "contract": "visual/assets/non-ai-parity-contract.json",
+      "motion": "assets/media/four-state-experience.mp4",
+      "static_fallback": "assets/figures/four-state-journey.png",
+      "caption": "assets/media/four-state-experience.vtt",
+      "transcript": "assets/media/four-state-experience.md",
+      "experience_contract": "visual/assets/four-state-experience-contract.json"
+    },
+    {
+      "time": "15_minutes",
+      "question": "How does a claim return to evidence, rights and professional veto?",
+      "primary_answer": "visual/assets/professional-handoff-candidate.json",
+      "source_governance": "visual/assets/source-governance-register.json",
+      "policy_to_task_firewall": "visual/assets/policy-to-task-register.json",
+      "rights": "visual/assets/rights-clearance-ledger.json"
+    }
+  ],
+  "formal_review_presentation_route": {
+    "route_id": "ONE-PERSON-ONE-TASK-ONE-PLACE-THEN-SYSTEM",
+    "purpose": "Lead with one person's complete ordinary task, then expose the spatial ruling, three prototypes, four states and the sole handoff candidate only when needed.",
+    "ordered_steps": [
+      {
+        "order": 1,
+        "label_zh": "一个人，一件事",
+        "label_en": "One person, one task",
+        "answer": "Arrive, understand, complete, correct or withdraw, and leave through a complete ordinary route that does not depend on AI.",
+        "surface": "assets/figures/ordinary-life-journey.png; visual/index.html#s4"
+      },
+      {
+        "order": 2,
+        "label_zh": "一条裁决",
+        "label_en": "One ruling",
+        "answer": "Any verification must stay outside ground required to complete the ordinary task.",
+        "surface": "proposal.md#一次空间裁决验证必须退到普通生活之外"
+      },
+      {
+        "order": 3,
+        "label_zh": "三种原型",
+        "label_en": "Three prototypes",
+        "answer": "Zhongzhiyuan uses a parallel bypass and side proof garden; Origin Community uses one street, two courts and four withdrawals; Dazhongsi keeps a four-way commute and off-route service.",
+        "surface": "assets/figures/key-areas.png"
+      },
+      {
+        "order": 4,
+        "label_zh": "四种状态",
+        "label_en": "Four states",
+        "answer": "Ordinary life continues; verification is bounded; fault stops only the overlay; recovery restores the ordinary task and is not authorization or G1.",
+        "surface": "visual/index.html#s3; assets/figures/four-state-journey.png; assets/media/four-state-experience.mp4"
+      },
+      {
+        "order": 5,
+        "label_zh": "一项接责裁决",
+        "label_en": "One duty ruling",
+        "answer": "Only JZ-05 × SCENE-011 × T-02 is reviewable before G1. Accountability/operations, public parity and independent-retest role types remain unconfirmed; any missing H01-H07 item refuses real-world start. Accepted items remain 0/7 and the decision is NO-GO, while ordinary life continues.",
+        "surface": "visual/index.html#s5; assets/figures/review-professional-handoff.png; visual/assets/professional-handoff-candidate.json#/frontstage_duty_acceptance_decision"
+      }
+    ],
+    "detail_on_demand": [
+      "visual/assets/source-governance-register.json",
+      "visual/assets/policy-to-task-register.json",
+      "visual/assets/rights-clearance-ledger.json",
+      "visual/assets/field-evidence-intake-contract.json",
+      "visual/assets/bilingual-material-equivalence.json",
+      "visual/assets/data-gap-closure-register.json"
+    ],
+    "presentation_warning": "Keep G0, provisional, not-to-scale, not-approved and real-results-zero visible; a concise route changes reading order, not evidence status.",
+    "media_accessibility_route": {
+      "video": "assets/media/four-state-experience.mp4",
+      "poster": "assets/media/four-state-cover.webp",
+      "caption": "assets/media/four-state-experience.vtt",
+      "transcript": "assets/media/four-state-experience.md",
+      "static_fallback": "assets/figures/four-state-journey.png",
+      "truth_boundary": "54 seconds is editorial pacing; conceptual only; G0 / NO-GO / provisional / real results 0."
+    }
+  },
+  "single_handoff_candidate": {
+    "candidate_id": "PRE-G1-JZ05-SCENE011-T02",
+    "packet_version": "2.1.0",
+    "status": "G0 / NO-GO",
+    "prepared_H01_H07_items": 7,
+    "accepted_H01_H07_items": 0,
+    "prepared_D01_D08_records": 8,
+    "submitted_real_materials": 0,
+    "frontstage_question": "After a person completes the task, who may let verification continue?",
+    "current_duty_acceptance": "0/7 accepted; G0 / NO-GO",
+    "missing_item_action": "refuse real-world start; keep ordinary life available",
+    "sole_primary_metric": "tasks_with_correct_current_source_and_successful_required_handoff / all_started_service_tasks",
+    "professional_packet": "visual/assets/professional-handoff-candidate.json",
+    "field_intake": "visual/assets/field-evidence-intake-contract.json",
+    "bilingual_human_sample_packet": "visual/assets/bilingual-material-equivalence.json#/formal_human_review_packet"
+  },
+  "independent_human_review_execution": {
+    "status": "ready_for_independent_execution_not_signed",
+    "ordered_samples": "HUMAN-EQ-01 through HUMAN-EQ-08",
+    "required_sample_count": 8,
+    "populated_human_result_count": 0,
+    "signoff_result": "not_signed",
+    "exact_head_recorded": false,
+    "artifact_hash_authority": "manifest.json Git blob SHA-256 at the final PR exact head",
+    "fail_closed_rule": "Any null, cannot-determine or unresolved material discrepancy blocks signoff; machine PASS proves packaging consistency only.",
+    "frontstage": "visual/index.html#s5; visual/index.en.html#s5; A3-14; A0-07",
+    "packet": "visual/assets/bilingual-material-equivalence.json#/formal_human_review_packet"
+  },
+  "information_efficiency": {
+    "audit_type": "contributor_editorial_red_green_contract",
+    "baseline": "merged_predecessor_pr_4033",
+    "before_characters": {
+      "proposal_zh": 51149,
+      "proposal_en": 135381
+    },
+    "current_characters": {
+      "proposal_zh": 45495,
+      "proposal_en": 116491
+    },
+    "reduction_ratio": {
+      "proposal_zh": 0.1104,
+      "proposal_en": 0.1395
+    },
+    "preserved_contract": [
+      "13 formal chapters in the same order",
+      "all proposal figure references",
+      "all unique source, standard, depth, data, metric and assumption markers",
+      "Twin-Track and three non-interchangeable prototypes",
+      "ordinary-verification-fault-recovery truth boundary",
+      "G0, NO-GO, provisional, zero-result, rights and professional-veto boundaries"
+    ],
+    "new_facts_media_or_pages": false,
+    "boundary": "This is contributor editorial QA, not an independent cold read, public feedback, jury result, maturity upgrade or evidence of field performance."
+  },
+  "publication_accessibility": {
+    "audit_type": "contributor_editorial_and_deterministic_qa",
+    "before_state": {
+      "mobile_nav_at_390px_zh": "631px_scroll_width_for_390px_client_width",
+      "mobile_nav_at_390px_en": "706px_scroll_width_for_390px_client_width",
+      "pdf_pages_with_extractable_body_text": "0/44"
+    },
+    "current_state": {
+      "mobile_navigation": "six_destinations_visible_as_3_by_2_grid_without_horizontal_scroll_in_both_languages",
+      "pdf_pages_with_extractable_body_text": "44/44",
+      "embedded_semantic_font": "Noto Sans CJK SC minimal OTF subset under SIL-OFL-1.1",
+      "a3_page_pair": "14+14",
+      "a0_page_pair": "8+8",
+      "fresh_process_byte_identical_build_count": 2,
+      "full_page_color_thumbnail_review": "pass",
+      "a0_grayscale_review": "pass",
+      "a0_full_size_detail_review": "pass",
+      "bilingual_page_position_review": "pass_contributor_side"
+    },
+    "boundary": "Searchable/copyable fixed-page text does not establish tagged PDF/UA, accessibility conformance, independent human bilingual confirmation, field truth, approval or G1. Paired offline HTML remains the complete keyboard and machine-readable route.",
+    "new_media": false
+  },
+  "publication_coherence": {
+    "audit_type": "contributor_red_green_publication_qa",
+    "before_state": {
+      "proposal_frontmatter_revision": "61.0",
+      "latest_changelog_revision": "61.1",
+      "visual_current_label": "R60",
+      "pdf_pages_with_R60_current_label": "44/44",
+      "report_h1_count_per_language": 2,
+      "zh_desktop_hero_orphan": "侧。"
+    },
+    "current_state": {
+      "publication_revision": "62.0",
+      "frontstage_label_zh": "G0 概念稿 · 评审版",
+      "frontstage_label_en": "G0 CONCEPT · REVIEW EDITION",
+      "pdf_pages_with_R60_current_label": "0/44",
+      "report_h1_count_per_language": 1,
+      "semantic_hero_lines_per_language": 2,
+      "browser_viewports_checked_per_language": 5,
+      "browser_qa_issue_count": 0,
+      "offline_cjk_surfaces_checked": 4,
+      "offline_cjk_missing_glyph_count": 0,
+      "external_http_resource_request_count": 0,
+      "fresh_process_byte_identical_pdf_build_count": 2
+    },
+    "browser_routes": [
+      "1440x900",
+      "1280x800",
+      "768x1024",
+      "390x844",
+      "320x568",
+      "no_javascript",
+      "reduced_motion"
+    ],
+    "preserved_history": "R59-R61 remain historical method and provenance labels; only the current reviewer-facing label is stable.",
+    "boundary": "This is contributor publication QA, not an independent cold read, public feedback, accessibility certification, professional acceptance, approval or maturity evidence.",
+    "new_media": false
+  },
+  "authority_order": [
+    "geometry/*.geojson",
+    "metrics.json",
+    "three formal matrices",
+    "sources / assumptions / rights / self_check",
+    "proposal.md",
+    "figures / report / PDFs / visual"
+  ],
+  "fixed_boundaries": {
+    "official_boundary": false,
+    "real_results": 0,
+    "approvals": 0,
+    "field_tests": 0,
+    "professional_acceptances": 0,
+    "maturity": "G0 / NO-GO"
+  },
+  "human_task_frontstage": {
+    "audit_type": "contributor_red_green_human_task_qa",
+    "before_state": {
+      "ordinary_life_figure_action_mentions": "0 arrival / 0 comprehension / 1 completion / 0 correction-or-withdrawal / 4 exit",
+      "offline_visual_action_mentions": "0 arrival / 0 comprehension / 2 completion / 0 correction-or-withdrawal / 0 exit",
+      "finding": "The system preceded the person in the review order."
+    },
+    "current_state": {
+      "unique_first_answer": "one person, one task, one place",
+      "complete_action_chain": "arrive -> understand -> complete -> correct or withdraw -> leave",
+      "three_place_task_variants": "staffed validation bypass / neighbourhood correction and withdrawal / commuter exit continuity",
+      "offline_visual_first_panel": "human_task",
+      "pdf_first_page_pair": "human_task_first",
+      "new_media": false
+    },
+    "boundary": "Anonymous standing and wheeled figures are contributor-authored conceptual role symbols, not photographs, real participants, public feedback, accessibility results or built-state evidence."
+  },
+  "duty_acceptance_frontstage": {
+    "audit_type": "contributor_red_green_reading_contract",
+    "before_state": {
+      "explicit_role_groups": 0,
+      "explicit_missing_item_refusal_rule": false,
+      "explicit_ordinary_life_floor": false,
+      "finding": "Seven closed cards disclosed missing evidence but did not expose the complete decision path on the figure itself."
+    },
+    "current_state": {
+      "question": "After a person completes the task, who may let verification continue?",
+      "role_groups": [
+        "accountability_and_operations",
+        "public_parity",
+        "independent_retest"
+      ],
+      "decision_groups": [
+        "authority_and_scope",
+        "field_safety_and_recovery",
+        "public_parity_and_independent_judgement"
+      ],
+      "missing_item_action": "refuse real-world start and retain G0 / NO-GO",
+      "accepted_items": "0/7",
+      "ordinary_life_floor": "continues_without_waiting_for_duty_acceptance"
+    },
+    "surface": "visual/index.html#s5; assets/figures/review-professional-handoff.png; visual/assets/professional-handoff-candidate.json#/frontstage_duty_acceptance_decision",
+    "boundary": "Contributor reading contract only; not a new governance contract, real role assignment, professional opinion, acceptance, approval or field result."
+  },
+  "policy_to_public_task_firewall": {
+    "audit_type": "contributor_bounded_policy_translation",
+    "before_state": {
+      "package_source_records": 49,
+      "proposal_stated_source_records": 48,
+      "structured_policy_to_task_mapping_count": 0,
+      "finding": "Policy direction existed in prose and sources, but a reviewer could not see one bounded route from policy scope to ordinary task, G1 entry condition, stop rule and prohibited inference."
+    },
+    "current_state": {
+      "package_source_records": 52,
+      "structured_policy_to_task_mapping_count": 6,
+      "primary_surface": "proposal.md policy entry-gate table; visual/index.html#s6; A3-13 and A0-07",
+      "machine_readable_surface": "visual/assets/policy-to-task-register.json",
+      "core_rule": "Policy sets a design entry gate; it does not create site approval, partnership, enforcement authority, field outcome or accepted professional duty.",
+      "rights_path_coverage": "158/158",
+      "new_media": false
+    },
+    "bounded_examples": [
+      "AI+ direction becomes same-task dual-route design intent rather than a deployment mandate",
+      "Barrier-Free Environment Construction Law Article 39 remains limited to its listed public-service matters",
+      "The elderly smart-technology plan remains background-only context for parallel traditional and smart channels",
+      "Generative-AI complaint handling does not create a fabricated statutory day count or general opt-out",
+      "Content-label rules apply only when generated content is actually produced and distributed",
+      "Haidian policy grouping informs optional testing questions, not partner or delivery commitments"
+    ],
+    "boundary": "Contributor interpretation for this G0 concept package only; not legal advice, an implementation decision, statutory compliance finding, organizer instruction, government approval or professional acceptance."
+  }
+}

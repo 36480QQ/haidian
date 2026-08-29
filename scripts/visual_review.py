@@ -4,6 +4,32 @@
 The page is treated as a presentation artifact. This script never executes
 contributor JavaScript; it only checks static safety markers and consistency
 with machine-readable metrics.
+
+Checks performed
+----------------
+- ``visual/index.html`` exists and is valid UTF-8.
+- The page contains no remote-resource patterns (no ``<iframe>``, ``fetch()``,
+  ``WebSocket``, remote ``<script src>``, remote CSS ``@import``, etc.).
+- SVG files under ``visual/assets`` are well-formed, passive, and self-contained.
+- The page contains the 14 required Chinese-language content markers
+  (总览地图, 三层范围, 重点区域, …).
+- Metric ``data-metric`` / ``data-value`` attributes declare finite numeric
+  values that match ``metrics.json`` within a 1 ppm tolerance.
+- The three required metrics (``site_area_sqm``, ``green_ratio``,
+  ``public_space_ratio``) are present and declared.
+
+Usage
+-----
+Human-readable output::
+
+    python3 scripts/visual_review.py submissions/<login>/<slug>
+
+Machine-readable JSON::
+
+    python3 scripts/visual_review.py submissions/<login>/<slug> --json
+
+This script is gate 3 of the four-gate self-check. Run it directly or through
+``self_check_submission.py``; there are no optional dependencies.
 """
 
 from __future__ import annotations
@@ -11,10 +37,15 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import math
 import re
 from dataclasses import dataclass, field
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
+
+from metric_types import is_json_number
+from svg_asset_safety import visual_svg_asset_issues
 
 
 REQUIRED_TEXT_MARKERS = [
@@ -42,11 +73,12 @@ FORBIDDEN_PATTERNS = [
     (re.compile(r"\bWebSocket\b", re.I), "HTML must not open WebSocket connections"),
     (re.compile(r"\bEventSource\b", re.I), "HTML must not open EventSource connections"),
     (re.compile(r"\bsendBeacon\s*\(", re.I), "HTML must not send beacon requests"),
-    (re.compile(r"@import\s+url\s*\(\s*['\"]?(?:https?:)?//", re.I), "HTML/CSS must not import remote styles"),
+    (re.compile(r"@import\s+(?:url\s*\(\s*)?['\"]?(?:https?:)?//", re.I), "HTML/CSS must not import remote styles"),
     (re.compile(r"url\s*\(\s*['\"]?(?:https?:)?//", re.I), "HTML/CSS must not load remote assets"),
     (re.compile(r"<script\b[^>]*\bsrc\s*=\s*['\"]?(?:https?:)?//", re.I), "HTML must not load remote scripts"),
     (re.compile(r"<link\b[^>]*\bhref\s*=\s*['\"]?(?:https?:)?//", re.I), "HTML must not load remote linked resources"),
     (re.compile(r"<(?:img|source|video|audio)\b[^>]*\bsrc\s*=\s*['\"]?(?:https?:)?//", re.I), "HTML must not load remote media"),
+    (re.compile(r"<(?:video|audio)\b[^>]*\bautoplay\b", re.I), "HTML must not autoplay media"),
 ]
 
 
@@ -88,18 +120,41 @@ def load_metrics(path: Path) -> dict[str, Any]:
     return metrics if isinstance(metrics, dict) else {}
 
 
-def extract_visual_metrics(text: str) -> dict[str, float]:
-    metrics: dict[str, float] = {}
-    pattern = re.compile(
-        r"data-metric\s*=\s*['\"]([^'\"]+)['\"][^>]*data-value\s*=\s*['\"]([^'\"]+)['\"]",
-        re.I,
-    )
-    for name, raw_value in pattern.findall(text):
+class VisualMetricParser(HTMLParser):
+    """Collect numeric metric declarations without depending on attribute order."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.metrics: dict[str, float] = {}
+        self.declarations: list[tuple[str, float]] = []
+        self.nonfinite_metrics: set[str] = set()
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attributes = {name.lower(): value for name, value in attrs}
+        name = attributes.get("data-metric")
+        raw_value = attributes.get("data-value")
+        if not isinstance(name, str) or not isinstance(raw_value, str):
+            return
+        name = html.unescape(name)
         try:
-            metrics[html.unescape(name)] = float(raw_value)
+            value = float(html.unescape(raw_value))
         except ValueError:
-            continue
-    return metrics
+            return
+        if not math.isfinite(value):
+            self.nonfinite_metrics.add(name)
+            return
+        self.declarations.append((name, value))
+        self.metrics[name] = value
+
+    def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        self.handle_starttag(tag, attrs)
+
+
+def extract_visual_metrics(text: str) -> dict[str, float]:
+    parser = VisualMetricParser()
+    parser.feed(text)
+    parser.close()
+    return parser.metrics
 
 
 def review_visual(submission_dir: Path) -> VisualReport:
@@ -118,6 +173,8 @@ def review_visual(submission_dir: Path) -> VisualReport:
     for pattern, message in FORBIDDEN_PATTERNS:
         if pattern.search(text):
             report.add("VISUAL_REMOTE_OR_ACTIVE_CONTENT", "blocking", display_path, message)
+    for rel_path, message in visual_svg_asset_issues(submission_dir):
+        report.add("VISUAL_REMOTE_OR_ACTIVE_CONTENT", "blocking", rel_path, message)
 
     plain = re.sub(r"<[^>]+>", " ", text)
     plain = html.unescape(re.sub(r"\s+", " ", plain))
@@ -130,28 +187,69 @@ def review_visual(submission_dir: Path) -> VisualReport:
                 f"Visualization must visibly include `{marker}`.",
             )
 
-    declared = extract_visual_metrics(text)
+    parser = VisualMetricParser()
+    parser.feed(text)
+    parser.close()
+    declarations = parser.declarations
+    declared = parser.metrics
     report.metrics_seen = declared
     metrics = load_metrics(submission_dir / "metrics.json")
-    for name in REQUIRED_METRICS:
-        if name not in declared:
-            report.add("VISUAL_METRIC_MISSING", "major", display_path, f"Missing data-metric `{name}`.")
-            continue
+    for name in sorted(parser.nonfinite_metrics):
+        report.add(
+            "VISUAL_METRIC_NONFINITE_VALUE",
+            "major",
+            display_path,
+            f"HTML metric `{name}` must use a finite numeric data-value.",
+        )
+    for name, value in declarations:
         metric = metrics.get(name)
-        if not isinstance(metric, dict) or metric.get("status") != "known":
-            report.add("VISUAL_METRIC_SOURCE_MISSING", "major", display_path, f"`metrics.json` has no known metric `{name}`.")
+        if not isinstance(metric, dict):
+            report.add(
+                "VISUAL_METRIC_SOURCE_MISSING",
+                "major",
+                display_path,
+                f"HTML declares unregistered metric `{name}`; add it to metrics.json before displaying a numeric value.",
+            )
+            continue
+        if metric.get("status") != "known":
+            issue_id = "VISUAL_METRIC_SOURCE_MISSING" if name in REQUIRED_METRICS else "VISUAL_METRIC_NON_KNOWN_CLAIM"
+            report.add(
+                issue_id,
+                "major",
+                display_path,
+                f"HTML declares numeric metric `{name}` but metrics.json status is `{metric.get('status')!r}`; unknown or not_applicable metrics must remain explicitly non-numeric.",
+            )
             continue
         expected = metric.get("value")
-        if not isinstance(expected, (int, float)):
-            report.add("VISUAL_METRIC_SOURCE_MISSING", "major", display_path, f"`metrics.json` metric `{name}` has no numeric value.")
+        if not is_json_number(expected):
+            report.add(
+                "VISUAL_METRIC_SOURCE_MISSING",
+                "major",
+                display_path,
+                f"`metrics.json` metric `{name}` has no numeric value.",
+            )
             continue
         tolerance = max(abs(float(expected)) * 1e-6, 1e-6)
-        if abs(declared[name] - float(expected)) > tolerance:
+        if abs(value - float(expected)) > tolerance:
             report.add(
                 "VISUAL_METRIC_MISMATCH",
                 "major",
                 display_path,
-                f"HTML metric `{name}` value {declared[name]} does not match metrics.json value {expected}.",
+                f"HTML metric `{name}` value {value} does not match metrics.json value {expected}.",
+            )
+    for name in REQUIRED_METRICS:
+        if name not in declared:
+            metric = metrics.get(name)
+            status = metric.get("status") if isinstance(metric, dict) else None
+            detail = f" (metrics.json status is `{status}`)" if status is not None else ""
+            report.add(
+                "VISUAL_METRIC_MISSING",
+                "major",
+                display_path,
+                f"Missing numeric data-metric `{name}`{detail}. Formal core visual metrics must be known finite "
+                "design-model outputs recomputable from submitted geometry; add or repair the relevant geometry "
+                "and metric, then declare its matching numeric data-value. Do not substitute unknown, "
+                "not_applicable, or a geometry-free placeholder.",
             )
     return report
 
@@ -170,10 +268,24 @@ def format_markdown(report: VisualReport) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("submission_dir")
-    parser.add_argument("--json", action="store_true")
-    parser.add_argument("--markdown", action="store_true")
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "submission_dir",
+        help="Path to the proposal directory, e.g. submissions/<login>/<slug>",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Emit machine-readable JSON instead of human-readable Markdown",
+    )
+    parser.add_argument(
+        "--markdown",
+        action="store_true",
+        help="Emit Markdown output (default when --json is not passed)",
+    )
     args = parser.parse_args()
 
     report = review_visual(Path(args.submission_dir))
