@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "f6866dad966671235f185ac79906c51b1efe4632179a7cf851f0781b67533440"
+      "sha256": "cb9152d665f86d44075dc973066c4155f59c5116e27f1526cd85c901afd0f4a2"
     },
     {
       "path": "agent.json",
@@ -50,7 +50,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "913e8e8f6cf769030619a01d98033b0f80cb0c4001c4cd4e8ef5d2784deed02e"
+      "sha256": "a8beba1f7c63f3193d29952f1f5b1f3079dccdef910f1398d6022ed8af4dd711"
     },
     {
       "path": "self_check.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "3be7f4de2525c89cd70614a71684874f05c8b07b0f1813bf5fab106063b29223"
+      "sha256": "a1c4eead685af552028aa7669304f4943772018e70728cca3b8d8697102060a7"
     },
     {
       "path": "report/narrative.md",
@@ -100,21 +100,21 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "4a5734d7094b8fed72b6bac7119ada74d8bac0eef9c2fc01b8d3ce0a90da204c"
+      "sha256": "dc1f272cb4fc4e39b48657917544a5605d1fb469ca46f5e8d36891249e2cee66"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "148af3082837ee33c48cb75ae88ab3f5626005421575153b329a55b188b43097"
+      "sha256": "65e39b6acb12245535dfe423c4678dcb91cfb547907ed0dda5f4b1f3ba63eb9b"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "d2efd001995653489123d028a06479324c0dbada3434f684f20e4f49071c7469"
+      "sha256": "d6901f43c0a0bb76ee4464df2b712cac43c5fd6ca4a75fd5d5ecc4cb481ba3cc"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "69d7365e286ea2792a86033207fe3f5f07a680c1965dd48848da453a917c5a91"
+      "sha256": "249d949234373a8272f76ecec6a7fdbe39dca69addd1f815e3708991657016eb"
     },
     {
       "path": "assets/figures/logo.png",
@@ -218,7 +218,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "a11d952766f0a1c23c978041c6cd966fab55a12d71cc3a0360fdf5e0eefbc367"
+      "sha256": "293d764c978d463b0e664e04a6e6d0eb8c4f69ca05904c453b9f3efbc663c78e"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +226,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "961e0e4597b42396ca51515b24b4eb337c85d55a8ebc86bea6d9b960cad77cca"
+      "sha256": "69f10df29ca3e865418663c16ffc0f2b73bca8d9384ad334b8ac89fec65c74a1"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +234,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "fb7fb42a661b36e4adacd7a2ed6205fce533c0b7d1e39b886266344668ea5119"
+      "sha256": "11a7e82d2e483145dad565854d932c9fa8f92a9b42319ee10f07c6485272cb00"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +242,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "19ca1aa48fa68ca671ffbfd29cd6e209da5a4fdf08bb96d0714bc09469fc5af7"
+      "sha256": "6fc33d6d07ad33d436a2e922e65fa6ffa5513605695bdf4bdd6a4a7378d75f9e"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +250,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "0ee16445a48fd5be622cb5bff385582171093fecf4ed342c5a15cff678189358"
+      "sha256": "c44e2a4e6b771ce49c2de8fff0249833f779784d283dd694985847b945e8e0ac"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -290,7 +290,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "ceb7daa835dc22789476e79c0e95c8c7cdeb18f974ef280ad8c489d3a3948a0f"
+      "sha256": "da6a3603394ceff682cbd97aa137aa29b43d01681fdb1af3229b06e04e9d8ec0"
     },
     {
       "path": "assets/figures/logo.en.png",
