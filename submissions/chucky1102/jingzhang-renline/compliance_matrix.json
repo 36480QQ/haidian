@@ -1045,9 +1045,12 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
+        "equity_access_burden_gap_target_minutes",
         "green_ratio",
         "industry_test_scenario_count",
         "key_area_count",
+        "no_login_task_completion_target_ratio",
+        "non_ai_task_completion_target_ratio",
         "persona_count",
         "public_space_ratio",
         "scenario_card_count",

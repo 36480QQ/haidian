@@ -2,6 +2,22 @@
 
 人字线 RENLINE(submissions/chucky1102/jingzhang-renline)
 
+## v1.8 - 2026-08-29
+
+本版把"非智能等价路径"从条款升格为准入前提;不动几何、指标数值与折返协议 JSON。
+
+- **采用 SEB v0.5.0 节点 schema 组件**(lqqk7,Issue #2549,CC-BY-SA-4.0):K标十驿 K0-K9 逐点声明五项必填字段(`ai_off_path`/`human_handoff`/`gate_id`/`operating_mode`/`responsible_role`),登记于新增文件 `visual/assets/seb-adoption.json`。十处节点全部通过 SEB 的 constraint_machine_rule 机器判据——禁用词命中 0、角色词缺失 0、枚举违规 0、字段缺失 0,自检结论随文件登记可复算。**只采一个组件**,不采评分口径、等级定义、判定规则、AI 权限边界与双联交接台账;**不认领任何 SEB 开放等级(L0-L4)**。上游坐标按可核验四要素登记(canonical path / schema_version 0.5.0 / exact commit `949f6b9406ad2de56695487d15ceac4fe8aa860c` / 内容 SHA-256 `adb930c3…`)。
+- **十处 `ai_off_path` 逐点不同**,不套用同一模板:等价路径由该点实际空间条件决定(碑刻、展板、门岗、公告栏、纸本、实体导视各有适用处)。
+- **R5 自证不违例**:本次采用恰好落在协议规则 R5 警告的位置上,故在正文说明规避方式——SEB 的 `gate_id` 用于**节点**(全部 G0),本协议 `gate`/`ascent_grade` 用于**卡片**,两者不共享对象、不互相推导,十处节点无一据此认领开放等级。同步修正 v1.6 正文"本包未采用 SEB 任何字段"一句(中英两侧)。
+- **六类画像 × AI 关闭后完整任务链**入正文:逐画像登记"关键任务→AI 关闭后如何完成→节点锚点",每条锚定到具体 K 标;包容性由总括条款落为可定位的空间安排。
+- **新增三项包容性指标,并刻意保持 `unknown`**:`non_ai_task_completion_target_ratio`(目标 1.0)、`no_login_task_completion_target_ratio`(目标 1.0)、`equity_access_burden_gap_target_minutes`(目标 ≤10 分钟,按画像分组报告,不取合并中位数)。三项 `value` 均为 `null`——**目标值不是测量结果,十驿 gate_id 全部 G0,观察用户数为零**。分母口径写明四类非完成原因须一并报告,删除任一类该次测量作废(口径借自 SEB 评分组件公开条文,该组件未采用)。参与式核验尚未开展,如实声明。
+- **互采登记**:SEB 发布文本在机制谱系中署名折返协议(#1119)为其体裁与开放方式的来源先例,本版是反向的组件级采用;两个方向均为自愿登记,不构成互相背书。
+- **新增两张空间体验图件(中英各一份,共 4 个文件)**:①`assets/figures/public-section.png` 绿脊典型段**公共剖面**——把"AI 设施全部旁置于步行净线之外"画成断面,配"断面分带 / 概念控制目标 / AI 关闭后"三行对位矩阵,逐带标明保留或撤除;②`assets/figures/street-interface.png` **三重点区首层界面展开**——逐开间登记业态,并高亮 AI 撤除后仍在的实体要素(人工问询岗、纸质登记窗口、无障碍入口、实体警示牌等),与 SEB 节点 `ai_off_path` 逐项对位,现状观察等级 G3/G3/G1 如实标注。图件回应评审"重点区图面仍以抽象色块与大量留白为主"的意见。
+- **图件尺寸标注纪律**:剖面所标净宽均为**概念控制目标(design_target)**,明示非现状测量,待控规、交通与市政专业校核;断面位置示意,不构成任何法定断面。
+- **全部图件字体统一为包内自带 Noto Sans SC(SIL OFL)**:由可变字体切出 Regular/Bold 静态实例后渲染。除本版两张新图外,**既有 5 对核心图件(site-overview / land-use-structure / key-areas / mobility-bluegreen / metrics-evidence)此前由专有系统字体 PingFang SC、Hiragino Sans GB 栅格化,与正文"视觉系统只使用开源许可(SIL OFL)字体"的声明不一致,本版一并订正并重新生成**。版式未变(逐图像素差异 1.9%-3.8%,画布尺寸全部不变),仅字形来源改变。权利台账 `report/copyright_statement.md` 增加图件字体行,并把仍以系统字体栅格化的两项例外(封面 `cover.webp`、短片帧)由概括披露改为逐项列名。同时修正 `key-areas` 中英两图**图例遮挡底部 provisional 警示文字**的既有版式缺陷(图例锚点由 y=0.008 抬至 0.032),该警示行现完整可读。
+- **新增内容补齐核验入口**:新小节此前 marker 数为零,现补 `[data:visual/assets/seb-adoption.json]` 与三项 `[metric:]` 引用(中英各 4 处,两份 HTML 同步为 evidence sup);三项包容性指标登记进 `compliance_matrix.json` 的 agent.3(AI+场景赋能新范式与智能化AI活力城市设计)。
+- 中英正文与两份 HTML 同步;iteration 升 v1.8。
+
 ## v1.7 - 2026-08-24
 
 本版新增本包第一批**现场证据**;不动几何、指标与协议 JSON。
