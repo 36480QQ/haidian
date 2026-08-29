@@ -40,7 +40,8 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。"
+      "notes_zh": "公告可作为 formal 任务依据，但其中的文字四至和面积值不能替代 official GIS/CAD polygon。",
+      "license": "Official public announcement snapshot retained for reference and citation."
     },
     {
       "source_id": "DATA-SRC-AGENT-TASKBOOK-20260518",
@@ -84,7 +85,8 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "该资料更贴近 AI agent 任务要求，可作为方案任务响应依据，但不是官方空间红线或控规条件。"
+      "notes_zh": "该资料更贴近 AI agent 任务要求，可作为方案任务响应依据，但不是官方空间红线或控规条件。",
+      "license": "User provided this document for repository use and public agent-facing task alignment."
     },
     {
       "source_id": "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
@@ -119,7 +121,8 @@
       "local_paths": [
         "brief/site-package/standards/references/mohurd-urban-design-measures.md"
       ],
-      "notes_zh": "可作为专业标准响应依据。"
+      "notes_zh": "可作为专业标准响应依据。",
+      "license": "Official public standard/policy page snapshot retained for reference and citation."
     },
     {
       "source_id": "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
@@ -152,7 +155,8 @@
       "local_paths": [
         "brief/site-package/standards/references/mohurd-control-detailed-planning.md"
       ],
-      "notes_zh": "可要求 agent 区分已知控制与待补控制。"
+      "notes_zh": "可要求 agent 区分已知控制与待补控制。",
+      "license": "Official public government page snapshot retained for reference and citation."
     },
     {
       "source_id": "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
@@ -184,7 +188,8 @@
       "local_paths": [
         "brief/site-package/standards/references/mnr-land-use-classification-guide.md"
       ],
-      "notes_zh": "可用于统一 land_use_code 语义。"
+      "notes_zh": "可用于统一 land_use_code 语义。",
+      "license": "Official public government page snapshot retained for reference and citation."
     },
     {
       "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
@@ -232,7 +237,8 @@
         "data/processed/source_use_matrix.csv",
         "data/processed/missing_data_checklist.csv"
       ],
-      "notes_zh": "该 geometry 由维护者依据官方公告的文字四至、位置线索和约面积推定，并在 EPSG:4548 下校核；它提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。2026-08-07 复核时，征集组织机构的资格预审文件下载仍受密码保护，公开渠道未找到可验证坐标系的精确红线。"
+      "notes_zh": "该 geometry 由维护者依据官方公告的文字四至、位置线索和约面积推定，并在 EPSG:4548 下校核；它提供三层范围和三处重点区的临时粗略 polygon，只能让 agent 先跑通生成、自检和展示，不得升级为 official boundary。2026-08-07 复核时，征集组织机构的资格预审文件下载仍受密码保护，公开渠道未找到可验证坐标系的精确红线。",
+      "license": "Repository-maintained provisional geometry for intake testing and visualization only."
     },
     {
       "source_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
@@ -269,7 +275,8 @@
       "local_paths": [
         "brief/site-package/standards/references/generative-ai-interim-measures.md"
       ],
-      "notes_zh": "官方页面标注 2023-07-13 发布、2023-08-15 施行；第2条适用范围是向境内公众提供生成文本、图片、音频、视频等内容的生成式人工智能服务。第14条是违法内容与服务处置，不是一般用户退出权；第15条有投诉举报和及时处理要求，但没有法定数字响应期限；第17条安全评估、备案等表述仅针对具有舆论属性或社会动员能力的服务。快照仅供离线检索，正式引用仍以官方页面为准。"
+      "notes_zh": "官方页面标注 2023-07-13 发布、2023-08-15 施行；第2条适用范围是向境内公众提供生成文本、图片、音频、视频等内容的生成式人工智能服务。第14条是违法内容与服务处置，不是一般用户退出权；第15条有投诉举报和及时处理要求，但没有法定数字响应期限；第17条安全评估、备案等表述仅针对具有舆论属性或社会动员能力的服务。快照仅供离线检索，正式引用仍以官方页面为准。",
+      "license": "Official public government text; attributed Markdown snapshot retained for reference. No reuse permission is inferred for page chrome, images or third-party editorial content; any reuse remains subject to official terms."
     },
     {
       "source_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
@@ -303,7 +310,110 @@
       "local_paths": [
         "brief/site-package/standards/references/barrier-free-environment-law.md"
       ],
-      "notes_zh": "法律于 2023-06-28 通过（人大常委会通过/公布），gov.cn/Xinhua 页面于 2023-06-29 发布；2023-09-01 起施行。第39条的现场指导、人工办理边界仅限正文列举的医疗、社会保障、金融、生活缴费等服务事项公共服务场所，不能泛化为所有公共空间或数字界面。快照仅供离线检索，具体场所合规仍需单独判断。"
+      "notes_zh": "法律于 2023-06-28 通过（人大常委会通过/公布），gov.cn/Xinhua 页面于 2023-06-29 发布；2023-09-01 起施行。第39条的现场指导、人工办理边界仅限正文列举的医疗、社会保障、金融、生活缴费等服务事项公共服务场所，不能泛化为所有公共空间或数字界面。快照仅供离线检索，具体场所合规仍需单独判断。",
+      "license": "Official public government text; attributed Markdown snapshot retained for reference. No reuse permission is inferred for page chrome, images or third-party editorial content; any reuse remains subject to official terms."
+    },
+    {
+      "source_id": "C01-GLOBAL-AI-HELSINKI",
+      "title": "City of Helsinki AI Register",
+      "publisher": "City of Helsinki",
+      "source_kind": "global_ai_ecosystem_case",
+      "url": "https://ai.hel.fi/en/get-to-know-ai-register/",
+      "published_date": "2019-12-12",
+      "accessed_date": "2026-08-29",
+      "public_access_status": "public_web_page",
+      "license_summary": "Citation and short mechanism summary only; page text, logo and screenshots require separate rights review.",
+      "review_status": "to_verify",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": ["attribute public register and human-control mechanism"],
+      "prohibited_uses": ["imply local partnership, data transfer, licence for imagery or local compliance"],
+      "topics": ["ai_governance", "public_register"],
+      "notes_zh": "案例登记 C01；仅作全球AI生态机制参照，发布时间与再利用边界发布前复核。"
+    },
+    {
+      "source_id": "C02-GLOBAL-AI-AMSTERDAM",
+      "title": "City of Amsterdam Algorithm Register",
+      "publisher": "City of Amsterdam",
+      "source_kind": "global_ai_ecosystem_case",
+      "url": "https://algoritmeregister.amsterdam.nl/en/",
+      "published_date": "to_verify",
+      "accessed_date": "2026-08-29",
+      "public_access_status": "public_web_page",
+      "license_summary": "Citation only pending page-specific reuse check; no logo, record or screenshot reproduced.",
+      "review_status": "to_verify",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": ["attribute city-facing algorithm disclosure pattern"],
+      "prohibited_uses": ["import Amsterdam records, legal basis, data or compliance conclusion"],
+      "topics": ["algorithm_register", "ai_governance"],
+      "notes_zh": "案例登记 C02；首发日期、当前字段和许可待核。"
+    },
+    {
+      "source_id": "C03-GLOBAL-AI-SINGAPORE",
+      "title": "AI Singapore",
+      "publisher": "AI Singapore",
+      "source_kind": "global_ai_ecosystem_case",
+      "url": "https://aisingapore.org/",
+      "published_date": "2017-05",
+      "accessed_date": "2026-08-29",
+      "public_access_status": "public_web_page",
+      "license_summary": "Attribution and mechanism summary only; product and programme licences must be checked separately.",
+      "review_status": "to_verify",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": ["compare research-enterprise-talent portfolio logic"],
+      "prohibited_uses": ["claim access, funding, partnership, product reuse or open-source permission"],
+      "topics": ["ai_ecosystem", "talent", "innovation"],
+      "notes_zh": "案例登记 C03；官方页面称项目始于2017年5月，具体许可按资产单独核对。"
+    },
+    {
+      "source_id": "C04-GLOBAL-AI-MILA",
+      "title": "Mila Québec AI Institute",
+      "publisher": "Mila Québec AI Institute",
+      "source_kind": "global_ai_ecosystem_case",
+      "url": "https://mila.quebec/en",
+      "published_date": "to_verify",
+      "accessed_date": "2026-08-29",
+      "public_access_status": "public_web_page",
+      "license_summary": "Attribution and short mechanism summary only; images, logo and quoted text require separate review.",
+      "review_status": "to_verify",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": ["compare research, startup and policy-learning interfaces"],
+      "prohibited_uses": ["claim relationship, participant scale, building reuse or transfer result"],
+      "topics": ["research", "startup", "ai_policy"],
+      "notes_zh": "案例登记 C04；页面事实和引用边界在发布前复核。"
+    },
+    {
+      "source_id": "C05-GLOBAL-AI-UK-AISI",
+      "title": "UK AI Safety Institute",
+      "publisher": "UK Government",
+      "source_kind": "global_ai_ecosystem_case",
+      "url": "https://www.gov.uk/government/organisations/ai-safety-institute",
+      "published_date": "to_verify",
+      "accessed_date": "2026-08-29",
+      "public_access_status": "public_web_page",
+      "license_summary": "GOV.UK text is generally under OGL v3.0 except where stated; page imagery and third-party material excluded and status must be checked.",
+      "review_status": "to_verify",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": ["attribute evaluation-first and public guidance mechanism"],
+      "prohibited_uses": ["claim planning approval, local safety certification or partner status"],
+      "topics": ["ai_safety", "evaluation", "governance"],
+      "notes_zh": "案例登记 C05；只借鉴评测、红队和人工兜底的机制，许可按页面条款复核。"
+    },
+    {
+      "source_id": "C06-GLOBAL-AI-AUSTRALIA",
+      "title": "Australian National AI Centre essential AI practices",
+      "publisher": "Australian Government",
+      "source_kind": "global_ai_ecosystem_case",
+      "url": "https://www.ai.gov.au/staying-safe-and-responsible/essential-ai-practices",
+      "published_date": "to_verify",
+      "accessed_date": "2026-08-29",
+      "public_access_status": "public_web_page",
+      "license_summary": "Attribution and mechanism summary only; current reuse terms and page assets require human review.",
+      "review_status": "to_verify",
+      "usable_for_formal": "reference_only",
+      "allowed_uses": ["compare accountability, oversight, pause and shutdown concepts"],
+      "prohibited_uses": ["treat guidance as Chinese law, local compliance or Australian partnership"],
+      "topics": ["ai_governance", "risk_management", "human_control"],
+      "notes_zh": "案例登记 C06；页面内容和许可为 to_verify，不把指南转译成法定结论。"
     },
     {
       "source_id": "PACKAGE-GEOMETRY",
@@ -337,7 +447,8 @@
         "generator": "deepseek-v4-flash via DeepSeek Harness + deterministic build script",
         "generation_method": "concept prompting + geometry program",
         "limitations": "low confidence conceptual envelopes"
-      }
+      },
+      "license": "Original AI-generated design geometry, free for repository display."
     }
   ]
 }
