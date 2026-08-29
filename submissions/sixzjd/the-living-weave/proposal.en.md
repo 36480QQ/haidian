@@ -15,7 +15,6 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 > A city is not a machine; a city is a living fabric. The railway is the warp, the transverse paths are the weft, and AI is the Jacquard mechanism — the first programmable machine in human history. We are not planning a city; we are re-threading the loom, so that the warp and weft of the century-old Jingzhang line may weave the future once more.
 
----
 
 ## 1. Design Basis and Source Inventory
 
@@ -53,7 +52,6 @@ This proposal uses five categories of evidence markers to help reviewers trace f
 
 Each paragraph of main text uses at most 3 markers, keeping the evidence chain clear without overwhelming the narrative. Full source relationships are maintained in `sources.json`, `standard_matrix.json`, and `compliance_matrix.json`; machine indexes are not repeated in the body text.
 
----
 
 ## 2. Three-Tier Scope Working Framework
 
@@ -89,7 +87,6 @@ A city is not a homogeneous textile. If every district were woven at the same de
 
 This density gradient is not static zoning but a dynamic weaving logic: as technology evolves and demand shifts, open weave districts can gradually intensify, and dense weave districts can loosen locally — just as a Jacquard mechanism can adjust the lift pattern of every individual warp thread in real time according to different pattern cards.
 
----
 
 ## 3. Coordinated Research Scope: Industrial and Future City Study
 
@@ -166,7 +163,6 @@ Scale note: the public reporting uses roughly 37 km², while the coordinated res
 
 The two wings share the same scenario-governance, permitting, and exit mechanisms as the three key areas and the annual operations (Section 9.5). All wing content is woven into existing streets, canal blue lines, and public space, with no new development-intensity assumptions.
 
----
 
 ## 4. Overall Design Scope: Urban Regeneration and Regulatory-Plan-Depth Urban Design
 
@@ -207,7 +203,6 @@ Through overlay analysis of current land use and industrial performance, the pro
 
 Each regeneration strategy is paired with a "Reversible Weft" mechanism (see Section 10), ensuring that the regeneration process is testable, evaluable, and adjustable.
 
----
 
 ## 5. Key Area Detailed Design
 
@@ -270,7 +265,6 @@ Dazhongsi is the most structurally stable of the three weft districts. Its weavi
 
 **Pilgrimage Landmark (3): Warp-Weft Tower** — Located at the highest point of the Dazhongsi district, this observation tower commands a view of the entire Jingzhang Railway corridor. The tower's structure takes the interlacing of warp (vertical) and weft (ascending spiral) as its formal motif. A panoramic observation deck at the top lets visitors see the "entire fabric" — from Qinghuayuan Railway Station in the south to Qinghe in the north, from the openness of Zhongzhiyuan to the density of AI Origin and the solidity of Dazhongsi. Inside the tower, a "Pattern Exhibition Hall" presents the history, present, and future of the AI Innovation Belt.
 
----
 
 ## 6. AI Innovation Ecosystem, Talent Personas, and AI+ Scenarios
 
@@ -332,7 +326,6 @@ Entry into the Pattern Library does not automatically authorize any of the twelv
 
 People can participate or complain through a staffed desk, paper form, telephone, and accessible web page. A smartphone, account registration, or algorithmic score must never be a precondition for service. Pilots must publish participation capacity, free or low-cost rules, construction notice for nearby businesses, and complaint-response time limits. Older people, children, people with disabilities, people with low digital literacy, tenants, and small businesses receive a specific access and disturbance review. A safety, privacy, discrimination, accessibility, or unresolved-complaint event pauses the relevant function and returns service to staff, telephone, paper wayfinding, or the existing public-service channel [depth:risk_missing_data].
 
----
 
 ## 7. Land Use, Building Scale, and Retain-Renovate-Demolish
 
@@ -373,7 +366,6 @@ The retain-renovate-demolish plan is not simply "demolish the old, build the new
 
 Retain-renovate-demolish conclusions must be based on ownership, structural assessment, and regulatory-plan conditions. Where these are absent, the proposal can only present methodology and a to-be-calibrated list; it must not fabricate definitive conclusions.
 
----
 
 ## 8. Transport, Rail, Municipal Infrastructure, and Public Services
 
@@ -415,7 +407,6 @@ Public service facilities cover the following categories:
 
 Facility standards, spatial layout, service radii, and operating models — where official conditions are absent — are listed as design recommendations, pending formal regulatory-plan confirmation.
 
----
 
 ## 9. Blue-Green Public Space and Urban Character
 
@@ -480,7 +471,6 @@ The research scope organizes collaboration as “university origination - Haidia
 
 Operating KPIs are limited to accessible participation, participant satisfaction, voluntary local-business feedback, completed enterprise-service referrals, and complaint closure. They are not investment promises or governmental performance findings [source:AGENT-TASKBOOK].
 
----
 
 ## 10. Regeneration Project List, Implementation Policy, and Phasing
 
@@ -545,7 +535,6 @@ The phasing plan takes [data:geometry/phasing.geojson#PHASE-001] as its spatial 
 
 Phased implementation is not the same as the competition design cycle (100 days). The competition cycle is the timeline for delivering submission materials; the implementation phasing is the urban-regeneration pathway. Near-term pilots can begin with lightweight facilities, operational activities, and service platforms; medium- and long-term projects must await formal regulatory-plan, municipal, and ownership confirmations.
 
----
 
 ## 11. Indicator System, Area Recalculation, and Compliance Matrix
 
@@ -593,7 +582,6 @@ Key coverage relationships:
 
 Among them, the "two-wing stitching" of Section 3.5 simultaneously serves agent.1 (structural coordination), agent.3 (scenario carriers), and agent.6 (regional collaboration); it is this proposal's direct response to the official "Three Zones, Two Wings" structure.
 
----
 
 ## 12. Risk, Copyright, and Compliance
 
@@ -659,7 +647,6 @@ This proposal complies with the following requirements:
 - All spatial statements are labeled as conceptual proposals.
 - The distinction between provisional and official data is clearly stated.
 
----
 
 ## 13. References
 
@@ -711,6 +698,5 @@ This proposal complies with the following requirements:
 - The Silk Road: China's earliest "cross-civilization innovation network" — silk, papermaking, gunpowder, and other technologies spread through trade routes, forming a knowledge web spanning Asia and Europe.
 - Zhongguancun: From electronics marketplace to China's AI innovation heart — over four decades, it has re-woven China's digital fabric.
 
----
 
 > **Epilogue**: The Living Weave is not yet another grand urban-planning vision. It is a Jacquard loom — a machine that lets residents, enterprises, and AI agents together "load cards and weave cloth." Each scenario card is a harness raise, each weft thread is an urban experiment, and each bolt of fabric is the city we share. A century ago, Zhan Tianyou folded the impossible on the Jingzhang Railway; today, on that same warp, we weave new patterns. The city is a living fabric — and it is still being woven.
