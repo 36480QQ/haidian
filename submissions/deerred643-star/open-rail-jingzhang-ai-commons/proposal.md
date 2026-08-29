@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以百年京张铁路遗址廊道为城市主板，构建“一廊·六站·三区·两翼”的开源AI共同体：把9.7公里铁轨转化为开源步道主线，串联六个站厅级公共节点与三处重点区域，形成可复算、可验证、可供专业团队深化的概念性城市设计方案。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "youth-friendly-public-space"]
 scenarios: ["ai-cultural-guide", "ai-health-service-navigation", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.4"
+iteration: "v2.5"
 ---
 
 # 开源轨道 OPEN RAIL：京张AI共同体城市设计方案
@@ -26,7 +26,7 @@ iteration: "v2.4"
 > | 可实施性 | **落地经济学为一等公民**：8 项更新项目五要素实施卡＋触发式排序方法论＋六类资金矩阵＋四环节可问责链＋全生命周期运营账本框架 | ◐ 机制文件随包（`implementation-cards.json`、`sequencing-methodology.json`、`funding-matrix.json`、`lifecycle-om-framework.json`）；效益数值一律待基线，不输出排序结论 |
 > | 公共利益与包容性 | **AI 关闭后人人仍可用**：每个 AI 服务点强制非数字化等价路径；六类画像覆盖长者、残障与低数字素养居民；蓝绿骨架叠加海绵—热岛—碳气候科目；公开仪表盘静态再披露指标、预警、复审与自检 | ◐ SEB schema 强制 ai_off_path 字段；`baseline-protocols.json`、`climate-carbon-framework.json`、`dashboard-mockup.json` 随包；P1—P5 实测值如实标注「待基线」 |
 > | 风险与合规意识 | **全部指标可独立复算，未知字段不以推测冒充**：四类风险逐项披露；未登记来源降级为「待复核背景信息」；红队检视主动登记结果层失败模式与早期预警 | ✓ `risk.json` 八维矩阵＋`failure-modes.json` 失败模式库；`node visual/assets/recompute_metrics.js` 离线复算 12/12 PASS；复算路径登记于 `assumptions.json`（A-BOUNDARY-002） |
-> | 表达完整性 | **中英双语全量成果、离线可复现**：正文/HTML/A3/A0/图件/视频＋字幕＋文稿；程序绘制原创图件；机器可读索引三矩阵 | ✓ 双语成果逐项对应；离线渲染可复现并有覆盖证据；本表即为评审入口索引 |
+> | 表达完整性 | **中英双语全量成果、离线可复现，图面带真实肌理与三级信息层级**：正文/HTML/A3/A0/图件/视频＋字幕＋文稿；程序绘制原创图件，全部平面图件叠入概念建筑肌理基底（1107 个基底）并以「背景肌理—结构—焦点」三级层级组织，另附主线体验长卷呈现步行序列 | ✓ 双语成果逐项对应；离线渲染可复现并有覆盖证据；本表即为评审入口索引 |
 
 > **核心主张的可证伪条件**：以下条件使本方案的主要主张可被评审与专业团队独立证伪——任一条件触发即意味着对应主张失效或须回退修正，不以模糊表述规避检验。
 >
@@ -257,6 +257,10 @@ iteration: "v2.4"
 公共服务设施：结合六类画像配置青年公寓与创客服务（原点社区）、社区医疗与养老驿站（中部居住区）、国际学校和科普场馆（高校界面）、文化展演设施（廊道与站厅）与无障碍适老化设施（全域慢行），方向上可衔接公开报道中控规提出的「一刻钟社区服务圈」（概念建议，来源待登记复核），具体规模与布局待专项深化。
 
 ![交通慢行与蓝绿公共空间复合系统图](assets/figures/mobility-bluegreen.png)
+
+开源主线步行体验长卷（概念意向）：以立剖面长卷呈现 9.7km 主线由南（大钟寺）向北（众智园北·清河）的六站厅步行序列——站厅剪影、沿线界面节奏、京张铁路记忆层（人字轨道铺装意象）与里程刻度同框，为平面图件补充体验视角；站厅位置按主线几何（EPSG:4548）里程展开，体量与高度均为概念示意 [data:geometry/roads.geojson#ROAD-010] [metric:spine_length_m]。
+
+![开源主线体验长卷](assets/figures/spine-experience.png)
 
 ## 蓝绿空间、公共空间与城市风貌
 
