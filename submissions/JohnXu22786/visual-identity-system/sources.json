@@ -601,6 +601,63 @@
         "visual/index.en.html"
       ],
       "font_status": "Noto Sans SC embedding source and system Latin font terms are verification pending; no font file is redistributed.",
+      "asset_items": [
+        {
+          "paths": ["assets/figures/*.png"],
+          "created_by": "JohnXu22786 participant-authored deterministic figure generator",
+          "inputs": ["package geometry/*.geojson", "package metrics.json", "package proposal.md/proposal.en.md"],
+          "derivative_status": "participant_generated; no third-party image or logo asset copied",
+          "repository_pr_use": "COMMUNITY-DISPLAY-ONLY review and local validation",
+          "external_reuse": "unknown/to_verify; prohibited before item-level rights review",
+          "evidence": "generator source is outside the submission and the PNG output is listed by manifest"
+        },
+        {
+          "paths": ["drawings/*.pdf"],
+          "created_by": "JohnXu22786 participant-authored PDF export from this package's PNG figures and text",
+          "inputs": ["assets/figures/*.png", "proposal.md/proposal.en.md"],
+          "derivative_status": "participant_generated; no third-party page image embedded",
+          "repository_pr_use": "COMMUNITY-DISPLAY-ONLY review and local validation",
+          "external_reuse": "unknown/to_verify; no production or redistribution clearance"
+        },
+        {
+          "paths": ["report/*.html", "visual/*.html"],
+          "created_by": "repository-local offline HTML renderer plus participant-authored visual index",
+          "inputs": ["proposal.md/proposal.en.md", "local package figures", "local CJK subset data URI"],
+          "derivative_status": "participant_generated; no remote resource, iframe, or CDN",
+          "repository_pr_use": "COMMUNITY-DISPLAY-ONLY review and local validation",
+          "external_reuse": "unknown/to_verify; template/code reuse terms require separate review"
+        },
+        {
+          "paths": ["layout rules", "icons", "colour drafts", "templates in generated outputs"],
+          "created_by": "JohnXu22786 participant-authored concept rules",
+          "derivative_status": "participant_original_claim, not independently certified",
+          "repository_pr_use": "COMMUNITY-DISPLAY-ONLY review",
+          "external_reuse": "unknown/to_verify; no trademark or third-party endorsement implied"
+        }
+      ],
+      "font_evidence": {
+        "cjk": {
+          "family": "Noto Sans SC",
+          "subfamily": "Regular",
+          "version": "Version 2.04;241114210130;non-release",
+          "source_path": "C:/Users/22786/.dsh/haidian-marathon/refs/fonts/NotoSansSC-Static.ttf",
+          "file_sha256": "unknown/to_verify",
+          "license": "unknown/to_verify",
+          "license_text_path": null,
+          "embedding_basis": "A local subset is embedded as a data URI in visual/index.html and copied into report HTML by the local renderer; the font file itself is not redistributed.",
+          "repository_pr_use": "local offline review only",
+          "external_reuse": "prohibited until license and embedding terms are verified"
+        },
+        "latin_fallback": {
+          "family": "Arial",
+          "version": "Version 7.06",
+          "source_path": "C:/Windows/Fonts/arial.ttf",
+          "license": "unknown/to_verify; operating-system font terms not assessed",
+          "embedding_basis": "fallback only; no font file is redistributed",
+          "repository_pr_use": "local review only",
+          "external_reuse": "prohibited until terms are verified"
+        }
+      },
       "notes_zh": "本条登记本包自产 PNG、A0/A3 PDF、HTML 及排版规则；不复制第三方 logo 或页面素材。字体仅作本地渲染，外部复用、生产和再分发须逐项复核。"
     }
   ]

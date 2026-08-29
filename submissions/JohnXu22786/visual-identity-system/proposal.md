@@ -285,7 +285,7 @@ standard_matrix.json 逐项覆盖公告、任务书、城市设计管理、控�
 
 ### 版权台账摘要
 
-参与者原创的文字、图标规则、配色草案、版式和几何以 COMMUNITY-DISPLAY-ONLY 供社区审阅；不把该许可写成商标注册或第三方授权。公开标准/法律只作引用和摘要，不复制受限页面素材；六个案例只做 reference-only 叙述，来源、URL、获取日、页面未标示发布日的 null 记录和禁止用途详见 sources.json。A0/A3、PNG、HTML 的图件由本包自产，字体使用可合法嵌入的 Noto Sans SC/系统英文字体；字体文件本身不随包再分发。copyright_statement.md 是完整权利声明。[source:DATA-SRC-TRADEMARK-STATUS-20260820]
+参与者原创的文字、图标规则、配色草案、版式和几何以 COMMUNITY-DISPLAY-ONLY 供社区审阅；不把该许可写成商标注册或第三方授权。公开标准/法律只作引用和摘要，不复制受限页面素材；六个案例只做 reference-only 叙述，来源、URL、获取日、页面未标示发布日的 null 记录和禁止用途详见 sources.json。A0/A3、PNG、HTML 的图件由本包自产；Noto Sans SC 的家族、版本、获取路径和本地嵌入依据已登记，但许可证文本、系统英文字体条款和外部复用仍为 unknown/to_verify，字体文件本身不随包再分发。copyright_statement.md 是完整权利声明。[source:DATA-SRC-TRADEMARK-STATUS-20260820]
 
 ## 参考资料
 

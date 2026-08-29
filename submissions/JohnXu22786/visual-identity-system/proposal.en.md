@@ -72,7 +72,7 @@ The external network is a coordination and communication boundary, not a replace
 
 ### agent.1: visual identity system
 
-agent.1 delivers a reversible specification rather than a slogan. The mark has three concept directions - dot, folded line, and open frame - all locked to VIS·JZ. The recommended palette is Jing-Zhang Blue #174A78, Origin Teal #16A6A1, Wing Orange #F2A33A, Ink #172033, and Paper #F7F9FC. The Chinese typeface is Noto Sans SC; the English typeface is Arial or DejaVu Sans. No unlicensed font file or existing brand mark is used. Pictograms use a 24 px grid, a 2 px base stroke, rounded terminals, and two-colour status layers. Rules cover gateways, signs, ground decals, badges, boards, web headers, mobile cards, data status, and reflective night film. The three directions remain concept options until rights and legibility tests pass.
+agent.1 delivers a reversible specification rather than a slogan. The mark has three concept directions - dot, folded line, and open frame - all locked to VIS·JZ. The recommended palette is Jing-Zhang Blue #174A78, Origin Teal #16A6A1, Wing Orange #F2A33A, Ink #172033, and Paper #F7F9FC. The Chinese typeface is Noto Sans SC; the English typeface is Arial or DejaVu Sans. Font family, version, local source path, embedding basis, repository-only use, and unresolved license terms are recorded in sources.json; no clearance is claimed. Pictograms use a 24 px grid, a 2 px base stroke, rounded terminals, and two-colour status layers. Rules cover gateways, signs, ground decals, badges, boards, web headers, mobile cards, data status, and reflective night film. The three directions remain concept options until rights and legibility tests pass.
 
 ### agent.2: space-element-operation matrix
 
@@ -285,7 +285,7 @@ Anonymous aggregates only; key decisions receive human review; no excessive moni
 
 ### Copyright ledger summary
 
-Participant-original prose, icon rules, colour drafts, layouts, and geometry are offered for community review under COMMUNITY-DISPLAY-ONLY; this is not trademark registration or third-party authorization. Public standards and laws are quoted as references and summaries, without copying restricted page assets. Six cases are reference-only narratives; source, URL, access date, null publication-date record, and prohibited use are in sources.json. A0/A3, PNG, and HTML graphics are produced in this package; font embedding and external reuse remain subject to the item-level font/right check in sources.json. copyright_statement.md contains the complete rights statement. [source:DATA-SRC-TRADEMARK-STATUS-20260820]
+Participant-original prose, icon rules, colour drafts, layouts, and geometry are offered for community review under COMMUNITY-DISPLAY-ONLY; this is not trademark registration or third-party authorization. Public standards and laws are quoted as references and summaries, without copying restricted page assets. Six cases are reference-only narratives; source, URL, access date, null publication-date record, and prohibited use are in sources.json. A0/A3, PNG, and HTML graphics are produced in this package; Noto Sans SC family/version/path and local embedding basis are recorded, while the license text, system Latin terms, and external reuse remain unknown/to_verify. copyright_statement.md contains the complete rights statement. [source:DATA-SRC-TRADEMARK-STATUS-20260820]
 
 ## References
 

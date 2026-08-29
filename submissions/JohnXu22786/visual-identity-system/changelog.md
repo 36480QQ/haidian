@@ -27,7 +27,7 @@
   - Precision: removed all 7+ digit / 4-decimal provisional numbers from text; land-use single caliber (口径A 27.3%) vs blue-green calibers (口径B 11.0% / 口径C 0.3%) explained with same denominator and separate labels; ratios and counts on separate chart panels.
   - Sources: 6 traceable global case entries (publisher+URL+published/accessed dates) + trademark-status self-record; license fields on all entries; assumptions updated (A-TM-001, honest data/event/privacy statements).
   - metrics.json reconciled with visible evidence: global_case_count=6, industry_test_scenario_count=5, annual_program_count=4, land_use_zone_count=27, scenario_card_count=12, land_use_park_green_share added; manifest data_confidence=medium (provisional metrics).
-  - Fonts: NotoSansSC subset @font-face data URI embedded in all 4 HTML surfaces; check_font_coverage ALL_FONTS_OK (0 missing CJK).
+  - Fonts: NotoSansSC subset @font-face data URI embedded in all 4 HTML surfaces; family/version/source path are recorded in sources.json, while license text and external reuse remain unknown/to_verify; check_font_coverage ALL_FONTS_OK (0 missing CJK).
 - Figures' text-bbox QC method: matplotlib renderer pairwise text extents over the rendered canvas, tick labels excluded (axis-layout positioned; their window extents can be stale) - real measurements, recorded in self_check.json[figure_qc] with overlap_clear=true.
 
 ## v0.1.0 - 2026-08-24
