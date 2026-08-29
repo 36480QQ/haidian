@@ -1,8 +1,8 @@
 {
   "format": "jingzhang-phase2-visual-generation-v1",
   "generator": "visual/assets/phase2-visual-generator-source.json",
-  "generator_sha256": "dcae80b7bb23bedcd919fbc01b865945a1342c8ae4f9d7ca51b1ce93b073f57b",
-  "generator_snapshot_sha256": "d4bf7bc0ca915405b0420c0d8760f788f1c59e5f3ab246e9c0b11d6b66e56c6e",
+  "generator_sha256": "8ad3da25a97be6b782ef67f5844d9a955221fa75ce662774497ea421267910a0",
+  "generator_snapshot_sha256": "198d752a038de55160dfe0d9d25556aa5fd3fb8fb46cf6dff1552a6c67b6ab15",
   "base_phase1_generator": "visual/assets/rebuild-visuals-source.json",
   "base_phase1_generator_sha256": "b0033d2e4cf3f49f0672dfb8ea25b9e9552becbefcf93d1c5b26b798907b0175",
   "toolchain": {
@@ -12,7 +12,7 @@
     "reportlab": "5.0.0"
   },
   "inputs": {
-    "metrics.json": "1cb26da847988e642359f290d8008de440dde51e34906c3a9917acdb12844c51",
+    "metrics.json": "111bca3622fffe098f0f41121aab496099f38dcca7e8a141a33426ba8d68f16d",
     "geometry/site_boundary.geojson": "a3ff9ef96c4ac626044a40b794e7868c2a3e4dafed466ed84665916ba31156fb",
     "geometry/land_use.geojson": "d1db782861ac49c2ca4fb2cfb89998c8e29c7355c0c2d4dcda5f63d60f83454d",
     "geometry/key_areas.geojson": "914cf53d4242a81cd445d8271e2718e3dc7750800d0da421688ed21425a09d23",
@@ -29,8 +29,8 @@
     "visual/assets/r3-osm-dazhongsi-snapshot.json": "94530599dddd00b9dfd604ce7e8454c238e7bfa4980f54d5a5c22475a2aaf1fa"
   },
   "outputs": {
-    "assets/figures/site-overview.png": "5000a0c3891512502b4dfd2ec354f92af3891ce3e2ffa89386a2c6e4540649d5",
-    "assets/figures/site-overview.en.png": "dddfa651d9713ecd5f9b7b89a9d5eff750787b2e70b13b2a40c25eb59b144783",
+    "assets/figures/site-overview.png": "fc939523b5b8b9ad549a3085e35279abee114634b2da1ba2fa5a4fd65e4d5fb8",
+    "assets/figures/site-overview.en.png": "66ceef624ad90c80074d7c529af8060f309ea63c989527b31e816d3e59bea612",
     "assets/figures/land-use-structure.png": "b8271accbf0c383b0759c7ba8914d45faf01c581472e99d26c87237fa31f1e54",
     "assets/figures/land-use-structure.en.png": "a12b84849ca3bf84c37b0a0e512f8077b2495240c5c20d3ebe9f16dd2c7b2b7e",
     "assets/figures/key-areas.png": "42b219d5f09d69f14fb6b87db6bfafd65d3df0364d3181d2040c33adec4c6bb2",
@@ -39,27 +39,124 @@
     "assets/figures/mobility-bluegreen.en.png": "a11d03bbbfe75ab039003c20cfd59fae72d92ea9de64cf9c9b0b4b1523041e01",
     "assets/figures/metrics-evidence.png": "a13efe09955f6775d40ade8c4665400f7214effde47465439ba741a8aff30996",
     "assets/figures/metrics-evidence.en.png": "93f24f3abb10ca72b8f9650ba67727f2eebb6aa15633b8e04911a3dc5aa6e9ee",
-    "visual/index.html": "6e1cdcfaf43e2086b42a9f034fe4efc0df0d834cacb4cb7a5c3fc5d57a435112",
-    "visual/index.en.html": "982a042b6f80a6ee5b6fccfeca89d792faafd41692bce851ee9ff36d5d322f43",
-    "visual/assets/font-subset.css": "3db0cc596f256a460382025c9965a64e2e3f24edf360ab51598dc35df855b44e",
-    "visual/assets/visual.css": "674db96bf5d22ed8a6bc08941293c66d38c72f0c150dea3a603682aa25490ea9",
+    "visual/index.html": "a7664e30031dcb3283acc61bc4cbee831c94d6ec6394e16bf577c1c4557e013c",
+    "visual/index.en.html": "c29f52a9c342ad6597f4d39a0f01a86ce41e53678b68404ae00abf63797801f5",
+    "visual/assets/font-subset.css": "c2383f16bf2c84f2de76164c9614bb9168d9dad04c2038681674b870b6098c53",
+    "visual/assets/visual.css": "333a1e596904e7e4b3dcf32c12a489aec9064bd501cb69192720eb84d4b5c166",
     "visual/assets/visual.js": "d85c6d386803b1f65e99e1c8ab206453b74e2e3289e65795704ae9ae10e122f4"
   },
   "phase1_frozen_assets": {
     "identity-system.png": "3676a31d2118a649450ca4834fe3f2f2c63f662a02028812edcedf7f832b28ef",
     "identity-system.en.png": "aa3dd469e5f06d84bbf2e6f81cbccdde073d20274dfbf203af110b6a858dba37",
-    "ai-ecosystem.png": "fa1a2c42cb8445647e7190989c1b2f698d5dc7042df1aafa4ba05dcc87acd3d1",
-    "ai-ecosystem.en.png": "091645bd9ffc10df7484b6983e2aee720973a2b45da41da7562472902a730ed5",
+    "ai-ecosystem.png": "413a3083c6463c9ab5d113fb3fbcebee8b48d39280e68d15ae47a5c1c0f0655c",
+    "ai-ecosystem.en.png": "154bf31c7b06fc66000d9a98900c52e56a79bce2641ef004e92d60f899a158cb",
     "scenario-matrix.png": "aaf483eb87332c30ed624e630108ade4ba6885c46702449a3f6dad6fabf85747",
     "scenario-matrix.en.png": "ea07fda8815c88827b189662189a78c980033f095c67681d27253baff7f369fc",
     "landmarks-components.png": "bae37413b53d87a08846ca4cffaf861ef3019d0fc4a53fcf85ef007a6cd31163",
     "landmarks-components.en.png": "61f8f586512e1cf1f6a0b221150a2020ef17bf7aca31e39f4892db6cd0d0033e",
     "culture-wayfinding.png": "5972815d26671e0fd905afe4dd17cd5ff30a50d08638a75bbe5f183f744ff790",
     "culture-wayfinding.en.png": "8c1a02d02e58f28f0c9e2b5d05a63d2f099b9a15613e71fa04bfa68bf979e22c",
-    "operations-pathway.png": "d96c5fa99b292b4daffa9a18aac51d6382d280b927a6ecdc17de54df2ae229f7",
-    "operations-pathway.en.png": "ecae07fd231953994537393c341b6ebddfd728291e939958de3193990d57637f"
+    "operations-pathway.png": "c4b29de5657934ccef645db914ab9aa56d62100906e47432639fd654614231c3",
+    "operations-pathway.en.png": "d6e600f2fa58aad8f964e989986cbf8a5cb19cde58636fdd6fdf1593a321480c"
   },
   "phase1_frozen_assets_unchanged": true,
+  "f01_readability_assertion": {
+    "required_intersections": 0,
+    "minimum_label_marker_gap_px": 12,
+    "minimum_effective_attribution_px_at_1440_preview": 10,
+    "assertions": [
+      {
+        "element": "F01 map attribution",
+        "language": "zh",
+        "font_px": 18,
+        "effective_px_at_1440_preview": 10.8,
+        "bbox_px": [
+          94,
+          1314,
+          809,
+          1334
+        ],
+        "background_bbox_px": [
+          87,
+          1309,
+          816,
+          1339
+        ],
+        "bottom_clearance_px": 31,
+        "inside_map": true
+      },
+      {
+        "element": "F01 Chinese candidate metric card",
+        "language": "zh",
+        "value_bbox_px": [
+          1288,
+          350,
+          1344,
+          387
+        ],
+        "label_bbox_px": [
+          1288,
+          409,
+          1442,
+          431
+        ],
+        "marker_bbox_px": [
+          1288,
+          448,
+          1622,
+          467
+        ],
+        "label_marker_gap_px": 17,
+        "inside_card": true,
+        "intersections": 0
+      },
+      {
+        "element": "F01 map attribution",
+        "language": "en",
+        "font_px": 18,
+        "effective_px_at_1440_preview": 10.8,
+        "bbox_px": [
+          94,
+          1316,
+          1009,
+          1334
+        ],
+        "background_bbox_px": [
+          87,
+          1311,
+          1016,
+          1339
+        ],
+        "bottom_clearance_px": 31,
+        "inside_map": true
+      },
+      {
+        "element": "F01 English candidate metric card",
+        "language": "en",
+        "value_bbox_px": [
+          1288,
+          350,
+          1344,
+          387
+        ],
+        "label_bbox_px": [
+          1288,
+          410,
+          1553,
+          456
+        ],
+        "marker_bbox_px": [
+          1288,
+          473,
+          1622,
+          492
+        ],
+        "label_marker_gap_px": 17,
+        "inside_card": true,
+        "intersections": 0
+      }
+    ]
+  },
   "f02_legend_bbox_assertion": {
     "required_intersections": 0,
     "minimum_gap_px": 36,

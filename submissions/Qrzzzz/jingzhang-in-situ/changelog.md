@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v1.3-r6-expression-closeout - 2026-08-29
+
+### F01 cross-format readability repair
+
+- Reflowed the English F01 candidate-responsibility metric card from its authoritative Phase 2 source and replaced fixed vertical offsets with measured text bounds. The persisted contract now requires a 17 px label-to-marker gap, zero intersections and complete card containment in both languages.
+- Raised the F01 OSM/ODbL attribution and site-status text to a measured 18 px source layer on opaque support, with a 31 px bottom-grid clearance and an asserted effective 10.8 px size at the 1440 px review preview. Attribution, provisional/CX limits, scale and north remain visible; no limitation text was removed.
+- Added one independent source-and-limit line to each F01 Report, Visual and A3 route, and released duplicated A3 caption space for the map. The source note remains selectable in the PDFs; the four HTML files remain offline and bilingual.
+- This is a presentation-only repair. It does not change any claim, metric, geometry, source/evidence grade, SC/CX/IM/AP identifier, authorization state, operating state, unique first-use route, professional signature or field evidence. The final R5 rights and bilingual audit is regenerated after these bytes settle.
+
 ## v1.2-r5-final-snapshot-evidence - 2026-08-29
 
 ### Professional-review required repairs

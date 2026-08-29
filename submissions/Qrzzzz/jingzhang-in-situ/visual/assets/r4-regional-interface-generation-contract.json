@@ -16,7 +16,7 @@
     "no_real_world_claim": "No external capability, partnership, appointment, exchange, operation, procurement, approval, or implementation is evidenced."
   },
   "toolchain": {
-    "node": "v24.14.1",
+    "node": "v24.19.0",
     "playwright": "1.62.1",
     "chromium": "151.0.7922.34"
   },
@@ -25,6 +25,7 @@
       2400,
       1600
     ],
+    "f01_r6": "candidate metric value / label / marker use measured non-overlapping bboxes; map status and OSM/ODbL attribution are 18 px, with the attribution on an opaque support and equivalent to >=10 px at a 1440 px image preview; report/visual HTML repeat source and limits at >=12 CSS px, while A3 replaces the duplicate title/judgment caption with an 8.5 pt source/limit line",
     "f07": "existing internal loop retains dominant visual weight; five hollow dashed interfaces remain physically disconnected below a closed authorization boundary",
     "f11": "readiness is a separate header block in standalone F11 and a separate governance card in native A3/A0, never a lifecycle state or complaint-path overlay; it reports 5 contracts / 0 authorized / 0 operating",
     "standalone_png_minimum_new_text_px": 21,
@@ -34,9 +35,11 @@
   },
   "input_sha256": {
     "visual/assets/regional-interface-contracts.json": "96d370bf605ba5b7094683f30025549a62620384cafcd881a2967ea6565a721c",
-    "visual/assets/r4-regional-interface-generator.js": "64738817a052a777fe8231edea452bc71af92c177ed0dd33944f311997f20ed1",
+    "visual/assets/r4-regional-interface-generator.js": "790d0146ebc3667d61db432661b14fb0dcd63e716dc4af5ab2ce416ae734bcc2",
     "visual/assets/phase4-figure-registry.json": "b7ea7916f06bd397a0ab630de618efda895e612979c1b732463a8b5edc56842f",
     "visual/assets/phase4-layout-contract.json": "1cf8b0ce2be47da37ad261ba9eacde594a9f0db7de8da02d901ec03045e22c1b",
+    "visual/assets/phase2-visual-generator-source.json": "198d752a038de55160dfe0d9d25556aa5fd3fb8fb46cf6dff1552a6c67b6ab15",
+    "visual/assets/phase2-visual-generation-contract.json": "fd676ac653ef56fd9c503b481b85bf8b3faf22ca1531a049ee2e2868b04791a8",
     "visual/assets/phase3-governance-generator-source.json": "f1c2ce3604b45c1fe4a1949f46a2a22cd201fc9b234e10dc7690cd2ebdf0c0ea",
     "visual/assets/rebuild-visuals-source.json": "b0033d2e4cf3f49f0672dfb8ea25b9e9552becbefcf93d1c5b26b798907b0175",
     "visual/assets/phase3-protocol-contracts.json": "5cd87aa06b7a4248e8f2fd358571ff8373c4166298e6010e536bbb10629cf606",
@@ -51,19 +54,21 @@
     "proposal.en.md": "848742d69ba842843ddff4c4ef3ef5436435ae36b9c5bb4315723b9aad061b91"
   },
   "output_sha256": {
+    "assets/figures/site-overview.png": "fc939523b5b8b9ad549a3085e35279abee114634b2da1ba2fa5a4fd65e4d5fb8",
+    "assets/figures/site-overview.en.png": "66ceef624ad90c80074d7c529af8060f309ea63c989527b31e816d3e59bea612",
     "assets/figures/ai-ecosystem.png": "413a3083c6463c9ab5d113fb3fbcebee8b48d39280e68d15ae47a5c1c0f0655c",
     "assets/figures/ai-ecosystem.en.png": "154bf31c7b06fc66000d9a98900c52e56a79bce2641ef004e92d60f899a158cb",
     "assets/figures/operations-pathway.png": "c4b29de5657934ccef645db914ab9aa56d62100906e47432639fd654614231c3",
     "assets/figures/operations-pathway.en.png": "d6e600f2fa58aad8f964e989986cbf8a5cb19cde58636fdd6fdf1593a321480c",
-    "drawings/a3-booklet.pdf": "679a2320a75e46caafb451d52a34ec44ad01bc837b2be665102421d7f714b548",
-    "drawings/a3-booklet.en.pdf": "b58e2871bd2f8798d619da0451a2692ff878e5a9744ba9f6ca54f94c59c9cd7f",
-    "drawings/a0-boards.pdf": "44d1eb6001b511d15132981364f12a78b48e4656e45ca7261ff0734ad47d24c4",
-    "drawings/a0-boards.en.pdf": "44d8fb7397eee1a4d97047ad4bf14534777b2c7ac29e9690279f2d714bd53e23",
-    "report/proposal.html": "39e2535a6cf593a68fadb35f5cd5cb18033889ba51aaa1f2281936cc786f7ae5",
-    "report/proposal.en.html": "6a1b2273eae6486cd6f079ca1c571910a5417ae571858325d7c24f4971d98539",
-    "visual/index.html": "fcc4eadd118ab7cf69479201b473058bb43473d52dc70cd76e2f7c858fa99f6f",
-    "visual/index.en.html": "8c0e0097d6d9f7d0f277228acedb109c11bd68d6f2c2e46a6d519135724e7327",
-    "visual/assets/phase4-source-freeze.json": "268f786e8f131b55dc24737920741b2a6bfb64ae841be8db75222cfbb59abfef",
-    "visual/assets/phase4-generation-contract.json": "cbc8db891d29dca9a3d58a57a6f12f7731340386f25c99148401a30038491f97"
+    "drawings/a3-booklet.pdf": "5fc0b68017e9e010280d840824ed9203b7fb0402caa9e0e670da325f0256b8ea",
+    "drawings/a3-booklet.en.pdf": "82e74d806d9ef076c41f47eb5404e3cd2c085c1f8f1b58333cea09806220682f",
+    "drawings/a0-boards.pdf": "121fba47757b68dc43117a93a21c251705a3b59df35b8f0cb8706962868ad3f2",
+    "drawings/a0-boards.en.pdf": "5c809e3751108aa3c90f9602d81cd8d8e608cee47fcff3e560a625d268cce5a7",
+    "report/proposal.html": "1870b78f7025ee6dd214873c3a049dfc343ccff1f42f5451c3f56276793f870c",
+    "report/proposal.en.html": "6cbcb9bd818f0bdbbbc867555a7392fab5ba212d8128f2ee7c2e36aedad66b08",
+    "visual/index.html": "a7664e30031dcb3283acc61bc4cbee831c94d6ec6394e16bf577c1c4557e013c",
+    "visual/index.en.html": "c29f52a9c342ad6597f4d39a0f01a86ce41e53678b68404ae00abf63797801f5",
+    "visual/assets/phase4-source-freeze.json": "cb9afc890d86ec46115d46f90998a936b70c0322dd3770b16b486edf8632a41a",
+    "visual/assets/phase4-generation-contract.json": "e627e122713ec3b091f9505a45776a9abb0e86d9bba5ec02f02062a5d6671b65"
   }
 }
