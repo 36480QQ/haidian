@@ -1,5 +1,19 @@
 {
   "schema_version": "0.1.0",
+  "rights_contract": {
+    "version": "1.0",
+    "review_basis": "CocoSgt review 5058033387; rights-status repair on 2026-08-29",
+    "package_status": "evidence_backed_package_display_only",
+    "font_status": "license_verified_scoped_embedding_only",
+    "geometry_status": "evidence_backed_provisional_display_only",
+    "build_status": "reproducibility_record_not_redistributed",
+    "external_source_status": "citation_only_no_asset_rights",
+    "mark_status": "internal_codename_prior_rights_unchecked",
+    "ledger_path": "report/copyright_statement.md",
+    "manifest_extension": "validation_claim.extensions.x-rights-status",
+    "unresolved_third_party_assets": [],
+    "scope_note": "The evidence record is complete for the stated repository/community display scope. It is not a claim of public-release, commercial, engineering, trademark or legal clearance."
+  },
   "sources": [
     {
       "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
@@ -478,7 +492,8 @@
       "accessed_date": "2026-08-29",
       "public_access_status": "repository_asset_record",
       "license_summary": "COMMUNITY-DISPLAY-ONLY for this concept package; no third-party image, map tile, logo or screenshot is included. Public display and adaptation remain subject to the row-level boundaries in the rights ledger.",
-      "review_status": "verified_package_record",
+      "review_status": "scoped_evidence_recorded",
+      "rights_status": "evidence_backed_package_display_only",
       "usable_for_formal": "yes",
       "allowed_uses": ["review the original diagrams, text and provisional geometry as a concept package", "adapt only with the package attribution and non-official boundary"],
       "prohibited_uses": ["treat concept assets as official planning, engineering, emergency or partnership evidence", "reuse names or marks commercially before separate clearance"],
@@ -500,8 +515,9 @@
       "published_date": "undated_upstream_artifact",
       "accessed_date": "2026-08-29",
       "public_access_status": "official_upstream_reference_and_local_copy",
-      "license_summary": "SIL Open Font License 1.1; complete license proof is embedded in report/copyright_statement.md. Local file SHA-256: 628654215A32E94C84F830237918DAB66D74E73D303349E16AA921F3F29809D9.",
-      "review_status": "verified_license_file_and_local_font_metadata",
+      "license_summary": "SIL Open Font License 1.1; complete license proof is embedded in report/copyright_statement.md. Local font SHA-256: 628654215A32E94C84F830237918DAB66D74E73D303349E16AA921F3F29809D9; canonical embedded license-text SHA-256 (UTF-8, trimmed, final LF): d184e640966b6dd478a45ad203be855e9b45ef8087ff02afcc330eba062dcde8.",
+      "review_status": "scoped_license_evidence_recorded",
+      "rights_status": "license_verified_scoped_embedding_only",
       "usable_for_formal": "yes",
       "allowed_uses": ["embed the derived subset in offline HTML", "render this package figures and PDFs", "retain OFL notice with any permitted font redistribution"],
       "prohibited_uses": ["remove OFL notices from a redistributed font", "claim the font grants rights to package marks, page content or third-party assets"],
@@ -509,6 +525,9 @@
       "transferable_mechanism": "Pin the actual font path/hash, package the full OFL text, and distinguish font embedding permission from rights in the surrounding content.",
       "non_copy_condition": "The font license does not clear the package logo, names, source pages or public-use claims; preserve the OFL notice and recheck the upstream artifact before a new distribution.",
       "font_path": "refs/fonts/NotoSansSC-Static.ttf",
+      "font_sha256": "628654215A32E94C84F830237918DAB66D74E73D303349E16AA921F3F29809D9",
+      "license_text_sha256": "d184e640966b6dd478a45ad203be855e9b45ef8087ff02afcc330eba062dcde8",
+      "license_text_hash_method": "UTF-8 bytes of the embedded SIL OFL 1.1 text after trimming surrounding whitespace and appending one LF",
       "font_version": "Noto Sans SC 2.004 metadata family; local name table version 2.04/241114210130/non-release",
       "attribution": "Noto Sans SC; Google Fonts / Adobe / Noto project",
       "local_paths": ["refs/fonts/NotoSansSC-Static.ttf", "report/copyright_statement.md", "visual/index.html", "visual/index.en.html", "report/proposal.html", "report/proposal.en.html"],
@@ -524,7 +543,8 @@
       "accessed_date": "2026-08-29",
       "public_access_status": "repository_asset_record",
       "license_summary": "Build-time dependency versions and license metadata are recorded in the packaged notice; dependency packages are not redistributed as package assets.",
-      "review_status": "verified_runtime_record",
+      "review_status": "scoped_runtime_record",
+      "rights_status": "reproducibility_record_not_redistributed",
       "usable_for_formal": "yes",
       "allowed_uses": ["reproduce local figure, HTML, PDF and validation build with equivalent licensed dependencies"],
       "prohibited_uses": ["infer that build dependencies license package content or third-party sources", "treat runtime checks as professional approval"],
@@ -545,9 +565,10 @@
       "file_type": "geojson",
       "authority_level": "SELF-DECLARED",
       "timeliness_level": "T0",
-      "public_access_status": "cleared_for_repo",
-      "license_summary": "Original AI-generated design geometry, free for repository display.",
-      "review_status": "self_reviewed",
+      "public_access_status": "repository_display_scope_recorded",
+      "license_summary": "evidence_backed_provisional_display_only: original AI-assisted design geometry retained for this repository/community concept display; no general external-reuse or legal clearance is inferred.",
+      "review_status": "provisional_package_record",
+      "rights_status": "evidence_backed_provisional_display_only",
       "usable_for_formal": "provisional_only",
       "allowed_uses": [
         "design intent visualization",
@@ -567,7 +588,7 @@
         "generation_method": "concept prompting + geometry program",
         "limitations": "low confidence conceptual envelopes"
       },
-      "license": "Original AI-generated design geometry, free for repository display."
+      "license": "evidence_backed_provisional_display_only; repository/community concept display only; no general external-reuse or legal clearance."
     }
   ]
 }

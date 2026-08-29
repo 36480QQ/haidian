@@ -26,3 +26,10 @@
 - Added a bilingual five-case table and a new self-drawn ecosystem map. Each counted source records publisher, URL, publication or undated status, access date, verified fact, citation/licence boundary, transferable mechanism and non-copy condition.
 - Replaced the unproven logo asset with an original deterministic working mark and expanded the path-level ledger to cover every figure, PDF/HTML embedded resource, font, geometry/data layer, code, mark, source and current-round Codex-generated material.
 - Added a complete Noto Sans SC OFL 1.1 proof embedded in the allowed copyright report and pinned local font/dependency provenance. Regenerated bilingual figures, visual indexes, HTML reports and A0/A3 PDFs; all remaining values and geometry retain provisional/to_verify boundaries.
+
+## v1.5-codex-review-5058033387-rights-unification - 2026-08-29
+
+- Unified the rights vocabulary across both proposals, the source registry, manifest extension, copyright ledger and all derived artifacts after CocoSgt review 5058033387 identified a verified/not-fully-verified contradiction.
+- Added an explicit path-level ledger for every package text, bilingual figure, PDF, HTML, geometry/data file, font, build/validation script, source record, working mark and AI-generated/derived output. Each row records author or generation method, source/input, licence or authorization basis, allowed use, restrictions and hash evidence.
+- Scoped the retained package to `evidence_backed_package_display_only`; separated the Noto OFL status, provisional geometry status, citation-only external records, reproducibility-only code status and unchecked internal name/mark status. No unresolved third-party asset remains in the deliverable.
+- Regenerated all bilingual figures, A0/A3 PDFs and both visual indexes with the same rights boundary; report HTML is regenerated from the synchronized bilingual proposals.
