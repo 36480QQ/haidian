@@ -261,7 +261,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "bdc880f947db743d274ce40bf8272fcb299a3829b26d7ac0129337e20d1422de"
+      "sha256": "e9b8d786b211c170d996e2dd3e4a7841bd499865438acdeadeb5c578831e629c"
     },
     {
       "path": "report/narrative.md",
@@ -275,26 +275,26 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "067c0bbebc2225f6778a06d5afee4a5246d6c04e2e934c12ed64f7448d8e8448"
+      "sha256": "f537b5cc011bd400f5858c85d09f0003ca7b4c502fc04ed36a38e173938eb739"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "6781055833764799d59ff55f9041adf74acb0f5a59650882ebcce556e91c7f3d"
+      "sha256": "d418dfbf4ffce96b0e7d75d1c88c7ef60d7bcfaa5dd4fbf475dd0f8ba761afaa"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "378553c1fee56d68e74265749764c7d3990d1e566c1b03649754a03074258ee2"
+      "sha256": "02dd68efc1d0952ef04d69505305ca282d6c03ba9824f21032aff302010b01bc"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "e9c436a078522dd7c6e140cfe44890e3a7a38e8439497c0a080abec05ee812a1"
+      "sha256": "6e6ba661dd7f685a9f0bc4c10f3d958c7647318dc4fae5349bfd7f8434566c45"
     },
     {
       "path": "standard_matrix.json",
@@ -308,14 +308,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "944cc4c178cfc94a2bf5e1ae334de9ecfc519696c1f4bbee02a095897adf8933"
+      "sha256": "66baabebb2952eb17156f4b1fc6baba00ea1171bccd8f3e896acbb68d59a5a95"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "11a67cb9b48765d6e23da6e004d4db5085c1c599faa5e025091a7732b88efa75"
+      "sha256": "6cc0a5628e5ecec13dcc658980681745d8c2452bc829974f88b23d6e82d24674"
     }
   ],
   "validation_claim": {

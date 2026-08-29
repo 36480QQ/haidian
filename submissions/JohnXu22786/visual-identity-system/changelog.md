@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v0.5.0 - 2026-08-29
+
+- Closed CocoSgt review 5056268082 (79/100 CHANGES_REQUESTED) rights-evidence items: recorded the exact local Noto Sans SC metadata and SHA-256, official Google Fonts source and OFL-1.1 source URL, complete OFL-1.1 text in `report/copyright_statement.md` Appendix A, WOFF1 subset method and per-surface subset hashes, and separated participant output, repository renderer, static HTML/CSS, and third-party font provenance in `sources.json`.
+- Re-rendered `report/proposal.html` and `report/proposal.en.html` from the current bilingual proposal, then applied a report-only CJK readability guard: normal letter/word spacing, start alignment, non-justified text, normal word breaking, stable table sizing, and `font-display: swap`; re-embedded the surfaced Noto subset and re-ran coverage checks.
+- Refreshed the 8 figure previews that the available local preview tool could generate. Its honest result was that Playwright and PyMuPDF were unavailable; the Codex in-app browser also blocked `file://` navigation, so no new HTML screenshot is claimed. PDF files were not rewritten because this round changed report HTML/CSS and rights documentation only; `pdfinfo` still reads all four existing PDFs (2, 2, 8, 8 pages) without a reported xref error.
+- Re-ran formal four-gate self-check, strict local validation, schema validation, direct visual review, professional review, font coverage, static report CSS assertions and PDF metadata checks; local pass remains distinct from CocoSgt acceptance.
+
 ## v0.4.0 - 2026-08-29
 
 - 按 3888 最新复审意见重做专项正文：纠正任务书内部三区两翼名称并与北纬社区、未来科学城、怀柔科学城、经开区、京津冀外部协同网络分开；补足三大定位/五大功能、agent.1-6、7 要素空间运营矩阵、6 个可追溯案例、12 张场景卡、5 项可执行测试协议、生态图谱、实体/数字应用、荣誉展示、可逆组件库、开发者社区、场景开放、转化链、RACI/KPI/阶段门/退出条件。

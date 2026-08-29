@@ -600,7 +600,7 @@
         "visual/index.html",
         "visual/index.en.html"
       ],
-      "font_status": "Noto Sans SC embedding source and system Latin font terms are verification pending; no font file is redistributed.",
+      "font_status": "Noto Sans SC source and OFL-1.1 embedding permission are evidenced below; the exact upstream release artifact identity and Windows Arial fallback terms remain unknown/to_verify, so neither is redistributed.",
       "asset_items": [
         {
           "paths": ["assets/figures/*.png"],
@@ -638,15 +638,29 @@
       "font_evidence": {
         "cjk": {
           "family": "Noto Sans SC",
+          "embedded_family": "Noto Sans SC Subset",
           "subfamily": "Regular",
           "version": "Version 2.04;241114210130;non-release",
           "source_path": "C:/Users/22786/.dsh/haidian-marathon/refs/fonts/NotoSansSC-Static.ttf",
-          "file_sha256": "unknown/to_verify",
-          "license": "unknown/to_verify",
-          "license_text_path": null,
-          "embedding_basis": "A local subset is embedded as a data URI in visual/index.html and copied into report HTML by the local renderer; the font file itself is not redistributed.",
+          "file_sha256": "628654215a32e94c84f830237918dab66d74e73d303349e16aa921f3f29809d9",
+          "upstream_release_artifact_sha256": "unknown/to_verify; local cache is the evidenced input artifact",
+          "source_url": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+          "license": "SIL Open Font License 1.1 (OFL-1.1)",
+          "license_text_path": "report/copyright_statement.md#Appendix-A-SIL-Open-Font-License-1.1-for-Noto-Sans-SC",
+          "license_text_source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/OFL.txt",
+          "license_text_sha256": "e9b8d786b211c170d996e2dd3e4a7841bd499865438acdeadeb5c578831e629c9",
+          "embedding_permission_basis": "OFL-1.1 preamble permits bundling, embedding and redistribution with software; permission and condition clauses 2 and 5 apply. Reserved Font Name is not used for this modified/subset font family; the HTML/PDF are documents created using the font.",
+          "subset_method": "fontTools.subset.Subsetter in C:/Users/22786/.dsh/haidian-marathon/scripts/embed_fonts.py; visible non-ASCII characters; WOFF1 data URI; deterministic per-surface subset",
+          "embedding_surfaces": ["report/proposal.html", "report/proposal.en.html", "visual/index.html", "visual/index.en.html"],
+          "embedded_subset_sha256": {
+            "report/proposal.html": "7181b7e69ab018bf7f7efa2e8188318f00faca11f72f19573dcc1f7d0bc74894",
+            "report/proposal.en.html": "507e462f34a9269a671cc17d6539d604a0d5a8c9a8dd0b6566cef7ef773a7485",
+            "visual/index.html": "a0819feb47ede153ea7272f3525e35ee363447649dd65fc226e172259ece75a3",
+            "visual/index.en.html": "514e3fd6b9d22bff7168485ab331d39185c1658c63203f9d1dc30bc35679e3bc"
+          },
+          "embedding_basis": "Each listed HTML surface embeds its own WOFF1 subset as a data URI generated from the evidenced local TTF. The source TTF is not redistributed. PDF files use the rendered report/figure outputs and are not a separate font-file distribution.",
           "repository_pr_use": "local offline review only",
-          "external_reuse": "prohibited until license and embedding terms are verified"
+          "external_reuse": "OFL-1.1 permits embedding/bundling subject to its conditions; external font-file redistribution or brand production remains out of scope until the upstream release artifact and reserved-name review are completed"
         },
         "latin_fallback": {
           "family": "Arial",
@@ -658,7 +672,40 @@
           "external_reuse": "prohibited until terms are verified"
         }
       },
-      "notes_zh": "本条登记本包自产 PNG、A0/A3 PDF、HTML 及排版规则；不复制第三方 logo 或页面素材。字体仅作本地渲染，外部复用、生产和再分发须逐项复核。"
+      "asset_rights_register": [
+        {
+          "asset_class": "report/proposal.html and report/proposal.en.html",
+          "participant_original": "Markdown content, figure placement, report-specific CSS adjustments and output composition by JohnXu22786",
+          "repository_code": "valroot/scripts/render_proposal_html.py; repository-local deterministic Markdown renderer; no third-party runtime or remote resource is bundled",
+          "repository_code_sha256": "8e9fd045856c7c4079bfe05a5c051381983039542662d06ea87200a735b6b329",
+          "repository_code_path": "valroot/scripts/render_proposal_html.py",
+          "font_subset_script_path": "C:/Users/22786/.dsh/haidian-marathon/scripts/embed_fonts.py",
+          "font_subset_script_sha256": "8cd22eb680a8ed7c2fbe5290d9b5989d24a278af59830bfd0064800be321f5f9",
+          "font_subset_script_author": "repository-local participant tooling; individual author unknown/to_verify",
+          "font_subset_script_license": "unknown/to_verify; script is not redistributed and is recorded only as the reproducibility input for this local review",
+          "template_and_css": "No third-party template or external CSS is bundled. Report CSS is generated by the repository renderer and the report-specific readability guard is participant-directed output CSS; external reuse terms for the renderer remain unknown/to_verify.",
+          "third_party": "Noto Sans SC subset only, evidenced by cjk font_evidence; no remote CSS, script, image, or template asset",
+          "license_or_terms": "participant-original output; repository renderer reuse license not separately evidenced, so external reuse is unknown/to_verify and the renderer is used only for this repository submission",
+          "evidence_paths": ["report/proposal.html", "report/proposal.en.html", "report/copyright_statement.md#Appendix-A-SIL-Open-Font-License-1.1-for-Noto-Sans-SC"]
+        },
+        {
+          "asset_class": "visual/index.html and visual/index.en.html",
+          "participant_original": "Participant-authored visual index content, layout, labels and local package links",
+          "repository_code": "No external template, CDN, or copied script; page is static HTML/CSS",
+          "third_party": "Noto Sans SC subset only, evidenced by cjk font_evidence",
+          "license_or_terms": "participant-original output for COMMUNITY-DISPLAY-ONLY repository review; external reuse unknown/to_verify",
+          "evidence_paths": ["visual/index.html", "visual/index.en.html", "report/copyright_statement.md#Appendix-A-SIL-Open-Font-License-1.1-for-Noto-Sans-SC"]
+        },
+        {
+          "asset_class": "PNG figures and A0/A3 PDFs",
+          "participant_original": "Diagrams, labels, layout and PDF assembly are participant-produced from package geometry, metrics and proposal text",
+          "repository_code": "No third-party image, logo, page screenshot, or external template copied",
+          "third_party": "Only the same evidenced font may be present in rendered HTML inputs; no separate font file is redistributed",
+          "license_or_terms": "participant-original concept outputs for COMMUNITY-DISPLAY-ONLY; external production, registration and redistribution remain unknown/to_verify",
+          "evidence_paths": ["assets/figures/", "drawings/", "sources.json"]
+        }
+      ],
+      "notes_zh": "本条登记本包自产 PNG、A0/A3 PDF、HTML 及排版规则；不复制第三方 logo 或页面素材。Noto Sans SC 的本地输入文件、准确元数据、SHA-256、官方来源、完整 OFL-1.1 文本和 HTML 嵌入依据已登记；上游 release artifact 精确身份、系统 Arial 回退字体条款、仓库渲染器的外部复用许可仍明确标为 unknown/to_verify。"
     }
   ]
 }
