@@ -25,7 +25,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "efaba455a4ff41d416ccc933d9edd16b11014c297559a9cad8207575864328ae"
+      "sha256": "0cbd2ea4ae40da144fbee8156aaa383799c74f383a76c3586209eed2affec3db"
     },
     {
       "path": "agent.json",
@@ -55,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f09942582754c3a6ee40c341857d231245ca7d91a47cce44bac133f8f280f4ce"
+      "sha256": "6ba0fae2af66785aabab7aea3632621b3bc5d8853494c7d73678badeb9f99ff4"
     },
     {
       "path": "compliance_matrix.json",
@@ -80,7 +80,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "32557b6501db3b9778180d64c346bf8e87b6d80f7e8e337070cc2e9391a064bf"
+      "sha256": "54822a9a97fefb4af718c0b2132b38912876c662fb78e295537abf8a2a7291cf"
     },
     {
       "path": "report/narrative.md",
@@ -219,7 +219,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "9b411b7cea93e0683bc68aa41d857da12c6a665b18f41fe405b9b720e82f6eb5"
+      "sha256": "5d94c9700a2601535a68284e6d25a39fb5acfc4609db73437530028cd5d469ab"
     },
     {
       "path": "assets/figures/jingzhang-main-street-logo.svg",
@@ -280,7 +280,7 @@
       "required": false,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "40d7ad0bdc5892380f8c78e9ac44f00c7680e997e87566a9d3177824025cb00d"
+      "sha256": "d67aabfc1e6441c51f378cfe86beed25a50bd7f62752368546517e8b3de293f3"
     },
     {
       "path": "report/proposal.en.html",
@@ -288,7 +288,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "efe1fce61b12fff83b6c534001d3e22fce260e3de2376f2b3d7e8d431160db47"
+      "sha256": "fd6f2512a9582a121ca8748b1b4687c569abc5ad5ab9d124d025b1049be8c31d"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",

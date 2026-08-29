@@ -175,7 +175,7 @@ The first round uses three minimum trial sheets: Accessible Companion, Small-org
 
 ### Street Pass Offline Fault Rehearsal
 
-Twelve fixed-seed synthetic tasks test the three gates item by item. A Python-stdlib-only verifier recomputes the aggregates offline. [metric:simulation_task_count]
+Twelve fixed-seed synthetic tasks test the three gates item by item. A Node.js-stdlib-only verifier recomputes the aggregates offline. [metric:simulation_task_count]
 
 | Rehearsal reading | Result | Design meaning |
 | --- | ---: | --- |

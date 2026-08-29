@@ -175,7 +175,7 @@ AI原点社区公开时点数据支持“一公里成果转化圈”的研究方
 
 ### Street Pass离线故障演练
 
-固定seed的12条合成任务逐项测试三道门；验证脚本只使用Python标准库，可在离线环境复算。[metric:simulation_task_count]
+固定seed的12条合成任务逐项测试三道门；验证脚本只使用Node.js标准库，可在离线环境复算。[metric:simulation_task_count]
 
 | 演练读数 | 结果 | 设计含义 |
 | --- | ---: | --- |
