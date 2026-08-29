@@ -321,7 +321,7 @@
       "accessed_date": "2026-08-29",
       "source_type": "user_provided_cleared",
       "authority_level": "",
-      "usage": "随包字体。本包 report/proposal.html、report/proposal.en.html、visual/index.html、visual/index.en.html 四个 HTML 以 @font-face 引用 visual/assets/fonts/NotoSansSC-subset.woff，以保证在没有中文系统字体的环境（如评审用的离线容器）中，中文标题、正文、导航与图注不出现豆腐块。该文件为原字体按本包四个 HTML 实际用字（1551 个码位）子集化后的 WOFF，字体族名改为「NotoSansSC Subset」以与系统同名字体区分。许可证与版权字段取自字体文件自身的 name 表：版权 © 2014, 2015 Adobe Systems Incorporated；许可 SIL Open Font License, Version 1.1（未声明保留字体名，故子集化与改名均为该许可允许的行为）。"
+      "usage": "随包字体。本包 report/proposal.html、report/proposal.en.html、visual/index.html、visual/index.en.html 四个 HTML 以 <link> 引用 visual/assets/fonts/notosanssc-subset.css，其中以 @font-face 声明字体，以保证在没有中文系统字体的环境（如评审用的离线容器）中，中文标题、正文、导航与图注不出现豆腐块。**交付形态**：包内任何目录都不允许字体扩展名（visual/assets/** 仅收 .css/.js/.json/.svg/图片，assets/** 仅收图片），故字体为原字体按本包四个 HTML 实际用字（1551 个码位）子集化后的 WOFF2（解码后 167,488 字节），经 data: URI 内嵌于该 CSS（CSS 共 223,958 字节）；字体族名改为「NotoSansSC Subset」以与系统同名字体区分。许可证与版权字段取自字体文件自身的 name 表：版权 © 2014, 2015 Adobe Systems Incorporated；许可 SIL Open Font License, Version 1.1（未声明保留字体名，故子集化与改名均为该许可允许的行为）。"
     }
   ]
 }

@@ -1,5 +1,15 @@
 # 方案迭代记录
 
+## v0.32 - 2026-08-29
+
+- **修复「声明与实况不符」：版权声明与 sources.json 里写的字体文件在包内不存在。** 上一轮因包规则不允许字体扩展名，字体交付形态从独立的 `.woff` 改成了「WOFF2 经 `data:` URI 内嵌于 `.css`」，但两处声明还停在旧方案上，写的是 `visual/assets/fonts/NotoSansSC-subset.woff`（约 210 KB）——**大小写、扩展名、形态三者都与包内实况不同，且该文件在包里根本不存在**。甲方对同批投稿的修复要求原话即「使可见成果与包内声明一致」，这类不符打的是风险合规与表达完整度两维。
+  - 两处均已改准：路径与文件名 `visual/assets/fonts/notosanssc-subset.css`；形态「WOFF2 子集经 `data:` URI 内嵌于该 CSS，因 `visual/assets/**` 仅收 .css/.js/.json/.svg/图片、`assets/**` 仅收图片」；体积「CSS 223,958 字节（约 218.7 KB），其中内嵌 WOFF2 解码后 167,488 字节（约 163.6 KB）」。其余（OFL 1.1、版权取自 name 表、无 Reserved Font Name、1551 码位、族名改名理由、四个 HTML 的用途）本就准确，未动。
+  - **`sources.json` 那一处是本轮 grep 出来的，此前未被报告** —— 只修被点名的那一处就会漏掉它。
+- **固化为判据（`check_drift.py` 第 6c 项，位于包外的构建目录、不进投稿 diff）**：`report/copyright_statement.md`、`sources.json`、`manifest.json` 里点名的包内路径必须真实存在。
+  - **这条判据自身出过两次错，都是靠故意破坏验出来的**：第一版正则末尾混进了一个真的退格字符（0x08），导致它对任何输入都不匹配——**一个永远不会失败的检查比没有检查更糟**；第二版又把 `brief/site-package/geometry/…` 这类甲方侧长路径的尾段误当成本包文件报缺失，已加前置约束修正。现已验证：正常态 PASS、把声明改成不存在的文件名即 FAIL、还原后再 PASS。
+- **本轮只动了这些**：`report/copyright_statement.md`、`sources.json`、`changelog.md`，以及门禁自动刷新的 `manifest.json`、`self_check.json`。**排版类改动（proposal 首屏标题重复、英文孤字换行）已完成并验证，但按用户「先提交再做 B」的顺序，另置于后一个提交，不混入本次。**
+- **复验**：四门 PASS · 漂移 PASS · 跨产物数字 PASS。
+
 ## v0.30 - 2026-08-29
 
 - **修复甲方评审 PR #4151 的唯一阻断项：四个必需 HTML 的中文在无中文字体环境下显示为方框。** 评审在离线容器里渲染截图，标题与正文中文大量成豆腐块，表达完整度因此扣到 3/5。**根因是包里根本没带字体**——实测四个 HTML 的 `@font-face` 数为 0、包内字体文件为 0，字体栈全部只指向系统字体（`PingFang SC` / `Microsoft YaHei` / `Noto Sans SC` 等）。本机 Windows 装着雅黑所以永远正常，这正是「只在会成功的环境里验证过」。
