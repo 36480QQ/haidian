@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v2.3.0 - 2026-08-29 (Codex round: CocoSgt 81 feedback)
+
+- `sources.json` now records a dated retrieval, exact page title/publisher, evidence location, summary and reuse boundary for `SRC-GLOBAL-CASE-01..06`. Cases 01, 02 and 06 were downgraded to `no_research_question_only` because the retrieved page/path or claimed termination evidence was not verifiable; 03, 04 and 05 remain direct-page `mechanism_reference_only` references with no inferred publication date or outcome claim.
+- Replaced the incomplete rights note in `report/copyright_statement.md` and both proposal ledgers with exact Noto Sans SC family/version/SHA-256, `to_verify` license provenance, author/date/tool/model for generated figures, participant-drawn symbol inventory, PAR·JZ/Z1–Z3 internal-codename status, dated approximate-search limitation, and package-only reuse boundaries.
+- Patched `regen_3889_visuals.py` so the land-use figure visibly carries all eight labels and ratios, including `交通运输用地 5%` / `留白用地（弹性） 5%` and `Transport 5%` / `Flexible reserve 5%`; regenerated bilingual figures and A0/A3 boards, re-rendered report HTML, and synchronized both visual indexes.
+- Manifest hashes and `self_check.json` are refreshed only after the above derived artifacts were regenerated. This round does not assert CocoSgt approval; the latest official result known before push remains review 5056510589, 81/100 CHANGES_REQUESTED.
+
 ## v0.1.0 - 2026-08-24
 
 - Initial assembly (concept package) for public-participation-mechanism.

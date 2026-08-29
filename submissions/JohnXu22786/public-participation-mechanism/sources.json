@@ -270,19 +270,19 @@
   },
   {
    "source_id": "SRC-GLOBAL-CASE-01",
-   "title": "Singapore Smart Nation and National AI Strategy",
-   "publisher": "Smart Nation Singapore",
+   "title": "Smart Nation Singapore (official programme homepage; strategy page not verified)",
+   "publisher": "Smart Nation and Digital Government Office, Singapore",
    "source_kind": "case_study",
-   "url": "https://www.smartnation.gov.sg/",
-   "published_date": "2024-12-31",
-   "accessed_date": "2026-08-20",
+   "url": "https://www.smartnation.gov.sg/nais/",
+   "published_date": "not stated on the retrieved page",
+   "accessed_date": "2026-08-29",
    "file_type": "web",
    "authority_level": "B1",
    "timeliness_level": "T2",
    "public_access_status": "public_web",
    "license_summary": "Public government program page; facts summarized at concept level, no content reused verbatim.",
-   "review_status": "needs_verification",
-   "usable_for_formal": "research_hypothesis",
+   "review_status": "not_verified_primary_page_returned_404_for_strategy_path",
+   "usable_for_formal": "no_research_question_only",
    "allowed_uses": [
     "concept-level mechanism description with source attribution",
     "ecosystem case study reference"
@@ -295,8 +295,11 @@
     "ai_ecosystem",
     "government_program"
    ],
-   "notes_zh": "待研究假设：页面为公开项目主页，参与方尚未完成逐条链接复核，仅作概念引用，链接核验后升级为正式证据。",
-   "license": "concept-level summary with attribution; no verbatim reuse"
+   "evidence_location": "The requested strategy path /nais/ returned HTTP 404 on 2026-08-29; no claim-level evidence retained.",
+   "summary": "Do not use as evidence. Research question only: verify which current Singapore strategy page, if any, documents the proposed ecosystem mechanism.",
+   "reuse_boundary": "No formal case claim, benchmark, number, or copied text until a dated primary page is independently verified.",
+   "notes_zh": "已降格：策略路径在本轮核验返回 404；不进入正式案例证据链，仅保留待研究问题。",
+   "license": "No content reused; research lead only"
   },
   {
    "source_id": "SRC-GLOBAL-CASE-02",
@@ -304,15 +307,15 @@
    "publisher": "City of Helsinki",
    "source_kind": "case_study",
    "url": "https://omastadi.hel.fi/",
-   "published_date": "2025-12-31",
-   "accessed_date": "2026-08-20",
+   "published_date": "not stated on the retrieved page",
+   "accessed_date": "2026-08-29",
    "file_type": "web",
    "authority_level": "B1",
    "timeliness_level": "T2",
    "public_access_status": "public_web",
    "license_summary": "Public city program page; facts summarized at concept level.",
-   "review_status": "needs_verification",
-   "usable_for_formal": "research_hypothesis",
+   "review_status": "not_verified_primary_page_forbidden_403",
+   "usable_for_formal": "no_research_question_only",
    "allowed_uses": [
     "concept-level mechanism description with source attribution"
    ],
@@ -323,8 +326,11 @@
     "participatory_budgeting",
     "public_participation"
    ],
-   "notes_zh": "待研究假设，链接核验后升级为正式证据。",
-   "license": "concept-level summary with attribution; no verbatim reuse"
+   "evidence_location": "The primary programme homepage returned HTTP 403 to the dated retrieval; no page text was used.",
+   "summary": "Do not use as evidence. Research question only: verify OmaStadi's proposal, voting and feedback stages from an accessible City of Helsinki primary page or archived snapshot.",
+   "reuse_boundary": "No formal mechanism claim or number; no copied text; requires an accessible primary page or verifiable snapshot.",
+   "notes_zh": "已降格：官网本轮返回 403，无法核验摘要对应证据位置；仅保留待研究问题。",
+   "license": "No content reused; research lead only"
   },
   {
    "source_id": "SRC-GLOBAL-CASE-03",
@@ -332,15 +338,15 @@
    "publisher": "Ajuntament de Barcelona / Decidim Association",
    "source_kind": "case_study",
    "url": "https://www.decidim.org/",
-   "published_date": "2025-12-31",
-   "accessed_date": "2026-08-20",
+   "published_date": "not stated on the retrieved page",
+   "accessed_date": "2026-08-29",
    "file_type": "web",
    "authority_level": "B1",
    "timeliness_level": "T2",
    "public_access_status": "public_web",
    "license_summary": "Public open-source project site; facts summarized at concept level.",
-   "review_status": "needs_verification",
-   "usable_for_formal": "research_hypothesis",
+   "review_status": "verified_primary_page",
+   "usable_for_formal": "mechanism_reference_only",
    "allowed_uses": [
     "concept-level mechanism description with source attribution"
    ],
@@ -351,8 +357,11 @@
     "digital_participation",
     "open_source"
    ],
-   "notes_zh": "待研究假设，链接核验后升级为正式证据。",
-   "license": "concept-level summary with attribution; no verbatim reuse"
+   "evidence_location": "Retrieved page HTML title: Decidim; homepage describes the open-source digital participation project and links to its documentation/community sections.",
+   "summary": "The official Decidim homepage supports a concept-level reference to an open-source digital participation platform; it does not evidence this package's outcomes or numeric targets.",
+   "reuse_boundary": "Attribution-only mechanism reference; no copied interface, logo, code, outcome, or number; not a benchmark for this package.",
+   "notes_zh": "已核验为直接项目主页；页面未声明发布日期，因此不填推定日期，仅作机制参照。",
+   "license": "Concept-level summary with attribution; no verbatim reuse"
   },
   {
    "source_id": "SRC-GLOBAL-CASE-04",
@@ -360,15 +369,15 @@
    "publisher": "City of New York",
    "source_kind": "case_study",
    "url": "https://portal.311.nyc.gov/",
-   "published_date": "2025-12-31",
-   "accessed_date": "2026-08-20",
+   "published_date": "not stated on the retrieved page",
+   "accessed_date": "2026-08-29",
    "file_type": "web",
    "authority_level": "B1",
    "timeliness_level": "T2",
    "public_access_status": "public_web",
    "license_summary": "Public city service portal; facts summarized at concept level.",
-   "review_status": "needs_verification",
-   "usable_for_formal": "research_hypothesis",
+   "review_status": "verified_primary_page",
+   "usable_for_formal": "mechanism_reference_only",
    "allowed_uses": [
     "concept-level mechanism description with source attribution"
    ],
@@ -379,8 +388,11 @@
     "citizen_service",
     "request_handling"
    ],
-   "notes_zh": "待研究假设，链接核验后升级为正式证据。",
-   "license": "concept-level summary with attribution; no verbatim reuse"
+   "evidence_location": "Retrieved NYC311 primary portal HTML title: Home · NYC311; page is the City's public 311 service entry and request-information portal.",
+   "summary": "The official NYC311 portal supports a concept-level reference to a unified city service entry; it does not evidence response performance for this package.",
+   "reuse_boundary": "Attribution-only mechanism reference; no copied interface, service-level number, or claim that this package is integrated with NYC311.",
+   "notes_zh": "已核验为纽约市直接服务入口；未见可用发布日期，保留访问日并禁止外推绩效。",
+   "license": "Concept-level summary with attribution; no verbatim reuse"
   },
   {
    "source_id": "SRC-GLOBAL-CASE-05",
@@ -388,15 +400,15 @@
    "publisher": "Taipei City Government",
    "source_kind": "case_study",
    "url": "https://ivoting.taipei/",
-   "published_date": "2025-12-31",
-   "accessed_date": "2026-08-20",
+   "published_date": "not stated on the retrieved page",
+   "accessed_date": "2026-08-29",
    "file_type": "web",
    "authority_level": "B1",
    "timeliness_level": "T2",
    "public_access_status": "public_web",
    "license_summary": "Public city program page; facts summarized at concept level.",
-   "review_status": "needs_verification",
-   "usable_for_formal": "research_hypothesis",
+   "review_status": "verified_primary_page",
+   "usable_for_formal": "mechanism_reference_only",
    "allowed_uses": [
     "concept-level mechanism description with source attribution"
    ],
@@ -407,8 +419,11 @@
     "participatory_governance",
     "online_voting"
    ],
-   "notes_zh": "待研究假设，链接核验后升级为正式证据。",
-   "license": "concept-level summary with attribution; no verbatim reuse"
+   "evidence_location": "Retrieved Taipei City Government i-Voting primary page HTML title: 臺北市政府i-Voting網路投票; page identifies the city's i-Voting service.",
+   "summary": "The official Taipei City i-Voting page supports a concept-level reference to a city online-voting service; it does not evidence this package's participation outcomes.",
+   "reuse_boundary": "Attribution-only mechanism reference; no copied logo, screen, vote result, number, or legal equivalence claim.",
+   "notes_zh": "已核验为台北市政府直接服务页面；未见可用发布日期，不填推定日期，仅作机制参照。",
+   "license": "Concept-level summary with attribution; no verbatim reuse"
   },
   {
    "source_id": "SRC-GLOBAL-CASE-06",
@@ -416,15 +431,15 @@
    "publisher": "Waterfront Toronto",
    "source_kind": "case_study",
    "url": "https://www.waterfrontoronto.ca/",
-   "published_date": "2025-12-31",
-   "accessed_date": "2026-08-20",
+   "published_date": "not stated on the retrieved page",
+   "accessed_date": "2026-08-29",
    "file_type": "web",
    "authority_level": "B1",
    "timeliness_level": "T2",
    "public_access_status": "public_web",
    "license_summary": "Public agency site; the Quayside termination is summarized at concept level as a lesson.",
-   "review_status": "needs_verification",
-   "usable_for_formal": "research_hypothesis",
+   "review_status": "not_verified_for_termination_claim",
+   "usable_for_formal": "no_research_question_only",
    "allowed_uses": [
     "concept-level lesson reference with source attribution"
    ],
@@ -436,8 +451,11 @@
     "ai_district",
     "pilot_termination"
    ],
-   "notes_zh": "待研究假设；引用仅到“试点终止教训”层面，不涉及合同与责任细节，链接核验后升级为正式证据。",
-   "license": "concept-level summary with attribution; no verbatim reuse"
+   "evidence_location": "Retrieved Waterfront Toronto Quayside page title: Quayside | Waterfront Toronto; the retrieved page does not by itself evidence the claimed termination lesson.",
+   "summary": "Do not use the termination lesson as evidence. Research question only: locate a dated primary Waterfront Toronto decision page or verifiable snapshot before discussing termination or decommissioning.",
+   "reuse_boundary": "No formal termination, contract, liability, or outcome claim; no copied text; research lead only.",
+   "notes_zh": "已降格：直接项目页可访问，但本轮页面不足以支持“试点终止教训”摘要；不进入正式证据链。",
+   "license": "No content reused; research lead only"
   },
   {
    "source_id": "PACKAGE-GEOMETRY",

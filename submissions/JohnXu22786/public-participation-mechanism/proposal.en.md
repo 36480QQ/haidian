@@ -83,16 +83,18 @@ Five persona groups: entrepreneurs, AI developers, community residents, students
 
 The AI innovation ecosystem is organized as actors, flows and open interfaces (concept): eight actor types — universities and institutes, AI enterprise clusters, developer community, residents and visitors, government and operators, investment and capital, compute and data services, international partners; six flows — talent and issues, scenario opening and conversion, compute and data (anonymized aggregation), capital and incubation, results and sharing, standards and compliance reference; and open interfaces including data sandboxes, testbeds, issue-to-dev-task conversion and multilingual communication templates, forming a linkage vision across land, space, industry, capital, talent, compute, data and scenario access (concept level, no scale preselected; see the ecosystem map figure).
 
-Global AI innovation ecosystem cases (concept references, registered one by one in sources.json; research hypotheses upgraded to formal evidence after link verification):
+Global AI innovation ecosystem cases (registered one by one in sources.json; only direct pages marked `mechanism_reference_only` enter the mechanism reference chain; the rest are research questions):
 
 | Case | Country / city | Mechanism | Lesson for this package | Source |
 | --- | --- | --- | --- | --- |
-| Singapore AI strategy | Singapore | government-led AI ecosystem and talent planning | governance testbed and scenario opening channel | [source:SRC-GLOBAL-CASE-01] |
-| Helsinki OmaStadi | Finland | open participatory budgeting | public issue collection and result feedback | [source:SRC-GLOBAL-CASE-02] |
-| Barcelona Decidim | Spain | digital participation platform | digital deliberation and publication norms | [source:SRC-GLOBAL-CASE-03] |
-| NYC 311 | United States | unified non-emergency service entry | opinion receipt and status transparency | [source:SRC-GLOBAL-CASE-04] |
-| Taipei i-Voting | Chinese Taipei | online voting plus offline debate | online-offline participation loop | [source:SRC-GLOBAL-CASE-05] |
-| Toronto Quayside | Canada | AI district pilot termination lessons | pilot gating and decommission review | [source:SRC-GLOBAL-CASE-06] |
+| Singapore AI strategy | Singapore | strategy-page lead returned 404 in this verification | research question only; not evidence for an ecosystem channel | [source:SRC-GLOBAL-CASE-01] |
+| Helsinki OmaStadi | Finland | primary homepage returned 403; evidence position unavailable | research question only; not evidence for budgeting flow | [source:SRC-GLOBAL-CASE-02] |
+| Barcelona Decidim | Spain | direct project homepage supports a concept reference to an open-source participation platform | digital deliberation and publication reference, no performance inference | [source:SRC-GLOBAL-CASE-03] |
+| NYC 311 | United States | direct City service-entry portal | service-entry and status-transparency reference, no performance inference | [source:SRC-GLOBAL-CASE-04] |
+| Taipei i-Voting | Chinese Taipei | direct Taipei City Government i-Voting service page | online-voting service reference, no outcome inference | [source:SRC-GLOBAL-CASE-05] |
+| Toronto Quayside | Canada | current direct project page does not evidence a termination lesson | research question only; no decommissioning evidence | [source:SRC-GLOBAL-CASE-06] |
+
+Verification boundary: 01, 02 and 06 are explicitly downgraded to `no_research_question_only`; 03, 04 and 05 are mechanism-only references from directly retrieved primary pages. Their pages did not state a usable publication date, so no date is inferred and no outcome, budget, vote result or liability claim is made.
 
 ![AI innovation ecosystem map (concept)](assets/figures/ecosystem-atlas.en.png)
 
@@ -323,10 +325,11 @@ Three governance sentences run through the whole package: only anonymized aggreg
 | Logo | PAR-JZ Participation Ring mark | self-developed (participant) | concept stage, community display | trademark search not completed (internal working codename) |
 | Logo | Z1 Issue Collaboration Hall / Z2 Evidence Verification Station / Z3 Sharing and Publicity Gallery node names | self-developed (participant) | concept stage, community display | trademark search not completed (internal working codename) |
 | Logo | Deliberation Covenant mechanism name | self-developed (participant) | concept stage, community display | trademark search not completed (internal working codename) |
-| Font | Noto Sans SC / Noto Sans | Google Noto fonts (OFL) | HTML/PDF embedded use | OFL license registered in sources.json |
-| Icon / image | matplotlib / scikit-image / shapely / pyproj default symbols | project default symbols | concept figures | no separate attribution (tool defaults) |
-| Trademark (not prior) | any resemblance to official or third-party trademarks | participant declares no prior claim | concept display | does not involve trademark (until clearance) |
-| Case | six global AI innovation ecosystem cases (SRC-GLOBAL-CASE-01..06) | each publisher's public page | concept-level summary, no verbatim reuse | research_hypothesis (link verification in progress) |
+| Font | `NotoSansSC-Static.ttf`, Noto Sans SC Regular; Version 2.04;241114210130;non-release; SHA-256 `628654215a32e94c84f830237918dab66d74e73d303349e16aa921f3f29809d9` | local font file; upstream Noto is commonly distributed under OFL-1.1, but this package does not include the upstream license text, so license remains `to_verify` | subset embedded in HTML; registered for Matplotlib PDF/PNG rendering | no claim of completed font clearance; see `report/copyright_statement.md` |
+| Icons / image elements | dots, rectangles, arrows, route lines, legend swatches, north/scale cues | participant-drawn default geometric symbols; no third-party icon library | concept figures and legends | generated 2026-08-29 by `regen_3889_visuals.py`; no third-party icon rights claimed |
+| PAR·JZ / Z1–Z3 names and marks | “参与智环 / PAR·JZ”, “Issue Collaboration Hall / Z1”, “Evidence Verification Station / Z2”, “Sharing and Publicity Gallery / Z3” | internal working codenames and participant-made text/geometric logo | concept identification and display | dated 2026-08-29 approximate search across package/repository/branch; no trademark database, domain or legal clearance; no prior-right or endorsement claim |
+| Generated figures and layout | all PNG, A0/A3 PDFs and HTML layout | author: JohnXu22786 / Codex direct; date: 2026-08-29; tools: Python, Matplotlib, Pillow and repository renderers; model: none, deterministic rendering | competition review, offline preview and community discussion | no third-party images, remote CDN, external model output or unregistered asset; not an official promotional asset |
+| Case | six global AI innovation ecosystem cases (SRC-GLOBAL-CASE-01..06) | direct publisher pages or verification leads | use only according to `usable_for_formal` in sources.json | 01/02/06 excluded from formal evidence; 03/04/05 mechanism reference only |
 | Case | Appendix 1/2 international and domestic mechanism references | each mechanism publisher's public page | concept-level summary, no verbatim reuse | research_hypothesis (link verification in progress) |
 | Data | provisional geometry geometry/ | participant-generated, provisional | concept display, not an approval basis | PACKAGE-GEOMETRY registered in sources.json |
 
