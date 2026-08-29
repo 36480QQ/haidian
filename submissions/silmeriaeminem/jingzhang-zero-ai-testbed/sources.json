@@ -99,9 +99,9 @@
     {
       "id": "CHAIN-ENTERPRISES-INDICATIVE",
       "source_type": "indicative_with_verified_domains",
-      "usage": "Indicative anchor-enterprise list. Official-company websites (durably verifiable, search date 2026-08-28): 字节跳动 bytedance.com, 寒武纪 cambricon.com, 月之暗面 moonshot.cn, 智谱 zhipuai.cn, 银河通用 galbot.com, 九号公司 ninebot.com, 旷视 megvii.com, 云知声 unisound.com, 医渡科技 yiducloud.cn, 摩尔线程 moorethreads.com, 生数科技 shengshu.cn, 面壁智能 modelbest.cn. Specific headquarters addresses, funding round amounts/timing, platform scale, and named partnerships remain pending verification against official announcements or regulatory disclosures.",
+      "usage": "Indicative anchor-enterprise list. Official-company websites (durably verifiable): 字节跳动 bytedance.com, 寒武纪 cambricon.com, 月之暗面 moonshot.cn, 智谱 zhipuai.cn, 银河通用 galbot.com, 九号公司 ninebot.com, 旷视 megvii.com, 云知声 unisound.com, 医渡科技 yiducloud.cn, 摩尔线程 moorethreads.com, 生数科技 shengshu.cn, 面壁智能 modelbest.cn. Publicly reported investment facts (durable source: 投中网《AI投资人扎堆五道口》/ 虎嗅转载 https://www.huxiu.com/article/4863699.html, retrieved 2026-08-29): 美团联合创始人王慧文作为 AI 投资人 2024—2026 年投资组合约 23 个项目，其中约 6 个位于'黄金圈'（清华以南/北大以东/学院路以西/大钟寺以北，约 2.5 km²）；Manus 获投后约一年估值由约 8500 万美元升至约 20 亿美元（账面约 23.5 倍）；月之暗面不足半年账面约 4.6 倍，2026 年公开报道美团领投约 20 亿美元（估值超 200 亿美元）。上述为公开报道事实，具体金额与时间以企业官方公告/监管披露核验。",
       "license": "pending_verification",
-      "rights": "Category list and cooperation models are indicative; official-domain names are verifiable via company websites. Specific addresses, funding details, and partnerships are NOT used as formal industry evidence.",
+      "rights": "Category list and cooperation models are indicative; official-domain names are verifiable via company websites; the publicly reported investment facts are citable with the cited media source but exact amounts/timing remain subject to official-announcement verification. Not used as formal industry evidence.",
       "verification_status": "partial_verified"
     },
     {
@@ -126,10 +126,10 @@
       "id": "ASSET-GEOMETRY-PROVISIONAL",
       "path": "geometry/site_boundary.geojson, key_areas.geojson, land_use.geojson, buildings.geojson, roads.geojson, green_space.geojson, public_space.geojson, phasing.geojson, constraints.geojson",
       "source_type": "agent_generated_design_with_provisional_constraint",
-      "usage": "9 design layers. site_boundary and key_areas are provisional (announced text-based, not official GIS/CAD). land_use/buildings/roads/green_space/public_space/phasing are agent-generated design proposals (concept-level, not statutory). constraints is empty set per agent discipline (no official constraint geometry available).",
+      "usage": "9 design layers. site_boundary and key_areas are provisional (announced text-based, not official GIS/CAD). buildings is based on OpenStreetMap public footprints (see DATA-SRC-OSM-BUILDINGS-20260829, ODbL 1.0, 1,623 footprints clipped to site, retrieved 2026-08-29). roads are agent-generated design proposals with 16 m centerline-buffer area assumption (concept-level, not statutory). land_use/green_space/public_space/phasing are agent-generated design proposals; constraints is empty set per agent discipline (no official constraint geometry available).",
       "license": "provisional_and_concept_design",
-      "rights": "All 9 layers are concept-level design proposals. Buildings and roads are derived from POI points/centerlines as 36m squares and 16m buffers respectively (confidence medium/low). They are NOT survey-grade or statutory, and must be relabelled as concept model estimates.",
-      "verification_status": "concept_design"
+      "rights": "All 9 layers are concept-level design proposals; none is survey-grade or statutory. Building footprints derive from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors, retrieved via Overpass API 2026-08-29, clipped to the provisional site: 1,623 footprints, 585 named; area 1,989,362 m² EPSG:4548 union, confidence high) — consistent with DATA-SRC-OSM-BUILDINGS-20260829, metrics.json and proposal.md; road area remains a 16 m centerline-buffer assumption (confidence low). All layers must be relabelled as concept model estimates and recomputed when official footprints/controls/redlines are published.",
+      "verification_status": "concept_design_with_verified_baseline"
     },
     {
       "id": "ASSET-FONT-NOTO-SANS-SC",
@@ -169,11 +169,20 @@
     {
       "id": "DATA-SRC-AMAP-POI-20260809",
       "source_type": "local_collected_public_data",
-      "usage": "高德地图 POI 采集：8 个图层共 1127 个特征（去重后原始 966 条），用于现状 POI 底数与空间分析、十五分钟生活圈缺口识别，支撑 land_use/buildings/green_space/public_space/education/medical/transport_supplement/cultural_heritage 图层。",
+      "usage": "高德地图 POI 采集：8 个图层共 1127 个特征（去重后原始 966 条），用于现状 POI 底数与空间分析、十五分钟生活圈缺口识别，支撑 land_use/green_space/public_space/education/medical/transport_supplement/cultural_heritage 图层（建筑轮廓由 OSM 公开数据提供，见 DATA-SRC-OSM-BUILDINGS-20260829）。",
       "license": "amap_open_platform_terms",
-      "rights": "通过个人开发者账号调用高德开放平台 POI 检索 API 采集，适用高德开放平台《服务条款》与《开放数据服务协议》（以 2026-08 采集时生效版本为准，数据来源署名为高德地图）。原始 POI 坐标数据不随投稿再分发；投稿中仅保留去重/聚合后的概念设计图层（建筑为约 36m 方形、道路为约 16m 缓冲的派生表达），不作法定现状、权属或红线依据，不替代官方规划底图。",
+      "rights": "通过个人开发者账号调用高德开放平台 POI 检索 API 采集，适用高德开放平台《服务条款》与《开放数据服务协议》（以 2026-08 采集时生效版本为准，数据来源署名为高德地图）。原始 POI 坐标数据不随投稿再分发；投稿中仅保留去重/聚合后的概念设计图层（道路为约 16m 缓冲的派生表达，建筑为 OSM 真实轮廓），不作法定现状、权属或红线依据，不替代官方规划底图。",
       "verification_status": "approved_local_collection",
       "conversion_record": "原始 API 返回 -> 按图层去重/分类 -> 派生为概念设计图层（GeoJSON，EPSG:4326/WGS84）；原始坐标不随投稿分发"
+    },
+    {
+      "id": "DATA-SRC-OSM-BUILDINGS-20260829",
+      "source_type": "open_geodata",
+      "usage": "OpenStreetMap 建筑轮廓（overpass-api.de 检索，2026-08-29）：site 范围内 1623 个真实建筑轮廓（其中 585 个带建筑名称，如凯德MALL·西直门、北航图书馆等），用于建筑基底空间分析、形态研究与概念方案的空间基底参考，替换此前 POI 派生的约 36m 规则方块模型。",
+      "license": "odbl-1.0",
+      "rights": "© OpenStreetMap contributors, licensed under the Open Data Commons Open Database License (ODbL) 1.0. Building footprints retrieved via Overpass API (overpass-api.de) on 2026-08-29 and clipped to the provisional site polygon (1623 buildings, coverage 17.7%). Used as conceptual baseline reference; not survey-grade and not a statutory building-approval basis.",
+      "verification_status": "verified_public_source",
+      "conversion_record": "Overpass API (way[building] within site bounds, 1898 个) -> shapely 代表性点判断 site 内 -> 裁剪到 site 边界 -> GeoJSON (EPSG:4326/WGS84), 1623 个建筑, 建筑总面积 2,012,004 m², 覆盖率 17.7%"
     },
     {
       "id": "DATA-SRC-BJ-TRANSPORT-PLATFORM-20260808",
@@ -194,13 +203,13 @@
       "conversion_record": "检索 -> 按纳入/排除标准筛选 50 家 -> 逐案例记录（机制/启示/来源字段）"
     },
     {
-      "id": "DATA-SRC-MULTI-FEEDBACK-20260809",
-      "source_type": "web_research",
-      "usage": "京张AI创新带多方反馈调研汇总（抖音/小红书/官网站评论等公开网络来源），用于痛点与诉求归纳、场景卡与更新项目的问题导向支撑。",
+      "id": "DATA-SRC-SURVEY-LEDGER-20260829",
+      "source_type": "traceable_public_samples",
+      "usage": "《四类主体正式调研样本台账》（京张铁路遗址公园/海淀AI原点社区，生成日期 2026-08-29）：28 个可追溯公开样本（居民 7 / 游客 7 / 企业 7 / 政府 7，其中 12 条 A 级可正式引用）。用于 L2 行为层与 L4 认知层的公开渠道佐证、痛点/诉求主题归纳、产业生态与法定程序证据。A 级样本要点：R1 居民建言增设跨13号线便民桥（zmhd.bjhd.gov.cn 政民互动 AH24100310115）；R2 居民建言补儿童设施（zyk.bjhd.gov.cn/zmhd/lxxd/202305/t20230525_4604001）；R3 清河站慢行系统南延建议（bj.people.com.cn/n2/2026/0718/c14540-41642665）；G1 控规公示采信通告（5条意见全部采纳，ghzrzyw.beijing.gov.cn 202502/t20250207_4005553）；G2 街控规获批（bj.people.com.cn/BIG5/n2/2026/0812/c82840-41665678，东至新街口外大街/西至中关村大街/北至成府路/南至西直门外大街，9街区1668.2公顷）；G3 二期服务70社区45万居民（bj.people.com.cn/BIG5/n2/2026/0730/c14540-41654109）；G4 二期全线开放（news.bjd.com.cn/2026/08/07/11905254）；G5 公园年度客流430多万人次（bjrb-app.bjd.com.cn）；G6 海淀融媒全球AI产业高地（hdb.bjhdnet.cn/hdb/content/202601/16/c60077）；G7 人民日报京张工作纪实（peopleapp.com/rmharticle/30025811780）；E5 北京市政府门户AI原点社区专题（beijing.gov.cn 202606/t20260612_4697411）；T1 Trip.com 用户实拍（hk.trip.com/moments/detail/beijing-1-148351589）。",
       "license": "public_web_research",
-      "rights": "公开网络评论/反馈，非授权访谈，不视为居民共识或公众认可的正式证据；仅作痛点归纳参考，方案正文仅作'回应痛点'表述，不量化代表比例。",
+      "rights": "样本为政府官网、央媒官媒、新媒体聚合、大数据平台入口等公开渠道采集，样本性质分级：A=具名个人/官方回复（可追溯链接，可正式引用）；B=媒体转述具名主体（可追溯，转述性质）；C=平台声量/聚合（仅摘要，不可作量化断言）。**属公开网络反馈主题归纳，非授权访谈、非代表性抽样，不得推断居民共识**；C 级样本不作量化断言；所有样本不替代信令/访谈/问卷等一手调研，仅作公开渠道可追溯佐证；大数据平台入口（百度迁徙/腾讯位置大数据/高德交通）标注 background_only。",
       "verification_status": "approved_web_research",
-      "conversion_record": "公开平台评论采集 -> 按主题归纳（停车难/蚊虫/树荫/配套不足/算力贵/融资难/规划沟通缺位等）"
+      "conversion_record": "政府官网/央媒/新媒体/平台入口采集 -> 按四类主体归类（28 样本）-> 分级 A/B/C（12/10/6）-> 主题归纳（连通性/全龄设施/停车/配套/产业生态/法定程序）"
     }
   ]
 }
