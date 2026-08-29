@@ -73,7 +73,7 @@
       "ai_package_stages": {
         "submissions/JohnXu22786/station-city-integration": "formal"
       },
-      "total_bytes": 6885780,
+      "total_bytes": 7308522,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -169,13 +169,6 @@
   "visual_issue_ids": [],
   "professional_issue_ids": [],
   "missing_review_dependencies": [],
-  "figure_qc": {
-    "artifact": "visual/assets/figure_qc.json",
-    "edge_clip": "pass",
-    "ink_and_dimensions": "pass",
-    "text_overlap": "not_verified",
-    "honesty_boundary": "Raster edge/ink checks are machine-measured; raster output alone cannot prove text bounding-box overlap."
-  },
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",

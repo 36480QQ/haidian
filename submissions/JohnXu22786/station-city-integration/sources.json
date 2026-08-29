@@ -518,6 +518,41 @@
    ],
    "notes_zh": "知识资本官方英文页；注明2013年开业语境，涉及现状数据须另行复核。",
    "local_paths": []
+  },
+  {
+   "source_id": "ASSET-FONT-NOTO-SANS-SC",
+   "title": "Noto Sans SC Static",
+   "publisher": "Noto Sans CJK contributors",
+   "source_kind": "bundled_font_asset",
+   "url": "https://scripts.sil.org/OFL",
+   "published_date": "not applicable",
+   "accessed_date": "2026-08-29",
+   "file_type": "ttf_subset_source",
+   "authority_level": "LICENSED_OPEN_ASSET",
+   "timeliness_level": "T0",
+   "public_access_status": "bundled_local_copy",
+   "license_summary": "SIL Open Font License 1.1; local subset used for offline CJK rendering.",
+   "review_status": "approved",
+   "usable_for_formal": "yes",
+   "allowed_uses": [
+    "offline embedding as a subset in report/proposal.html and report/proposal.en.html",
+    "local CJK fallback for selectable text"
+   ],
+   "prohibited_uses": [
+    "removing the SIL OFL notice",
+    "implying endorsement or trademark ownership"
+   ],
+   "topics": [
+    "asset_rights",
+    "font_embedding",
+    "offline_rendering"
+   ],
+   "notes_zh": "本地字体源文件位于 refs/fonts/NotoSansSC-Static.ttf；报告 HTML 内嵌裁剪子集，保留 SIL OFL 1.1 权利说明；字体来源、版本与逐字形人工核对仍需后续复核。",
+   "local_paths": [
+    "refs/fonts/NotoSansSC-Static.ttf",
+    "submissions/JohnXu22786/station-city-integration/report/copyright_statement.md"
+   ],
+   "license": "SIL-OFL-1.1"
   }
  ]
 }

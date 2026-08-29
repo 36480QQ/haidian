@@ -1,5 +1,10 @@
 {
  "schema_version": "0.1.0",
+ "bilingual_review_status": {
+  "machine_checked": ["language_mapping", "section_structure", "file_presence", "offline_packaging", "machine_readable_fields"],
+  "human_review_pending": ["translated_claims", "metrics", "evidence_anchors", "limitations", "figure_placement"],
+  "statement_zh": "本矩阵仅证明双语文件映射、结构与包装字段可被机器读取；不证明翻译内容实质等值，仍待人工逐项核对。"
+ },
  "requirements": [
   {
    "requirement_id": "1.3.1",

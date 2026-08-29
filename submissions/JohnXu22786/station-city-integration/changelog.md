@@ -16,7 +16,7 @@
 - 「指标体系」维度：## 指标体系、面积复算与合规矩阵 节重写，从 5 行扩为 17 行指标表（含 scenario_card_count、project_lib_count、pilot_zone_count、phase_gate_count、actor_type_count、original_mechanism_count 等 6 个新增口径）；五类项目库分别给出成本定性分级、估算方法、价格基期、包含范围、置信等级与复算触发；合规矩阵从单段扩为 7 维度表。
 - 「风险、版权与合规说明」维度：新增「品牌在先权利与使用边界（品牌使用 ledger）」子节，登记 9 行资产 ledger（Fusion Ring / RAIL·JZ / 三节点 / 6 个机制名 / Logo 概念 / Noto Sans SC / 公开规划资料 / 公开案例）；明确「不构成放弃权利，也不视为已取得任何在先权利」；fonts 全部为 OFL/Apache 许可，logo 与色彩为参与方原创。
 - 5 ROOT-CAUSES 形式补丁：(a) 中英双语图件对位：每张 .en.png 与中文图件对位登记，en 标签 100% 英文；(b) figure_qc 工件：self_check.json[figure_qc] 含 ink/edge_clip/text_overlap/text_clips 机器实测，9 组 18 张全过；(c) scenario_cards ≥ 10：metrics.json 登记 scenario_card_count=12；(d) industry_test_protocols ≥ 3：metrics.json 登记 industry_test_scenario_count=3；(e) design_depth_key_coverage ≥ 80%：每条 [depth:...] 键 evidence_summary 独立指向实际内容；(f) asset-rights ledger：见上述「品牌在先权利与使用边界」子节 + sources.json 同步登记 publisher/URL/date/许可；(g) key-areas.png ink ≥ 0.08：实测 ink 0.1182（zh）/ 0.1121（en）符合要求。
-- 校验：score_rubric（8 pass 0 needs-work 0 missing 0 manual-review）、self_check_submission（4 道门禁全 PASS）、validate_local_submission（PASS, 1 minor warning on provisional 边界）重跑通过；中英文实质等值已人工核对，品牌在先权利检索未完成前按内部工作代号处理，图件 ink 值与剪裁检查结果见 self_check.json[figure_qc]。
+- 校验：score_rubric（8 pass 0 needs-work 0 missing 0 manual-review）、self_check_submission（4 道门禁全 PASS）、validate_local_submission（PASS, 1 minor warning on provisional 边界）重跑通过；当时仅核验了中英文件结构与包装字段，翻译主张、指标、证据、限制条件与图位的实质等值仍待人工逐项核对，品牌在先权利检索未完成前按内部工作代号处理，图件 ink 值与剪裁检查结果见 self_check.json[figure_qc]。
 
 ## v1.2.0 (round-2 repair) - 2026-08-26
 
@@ -30,19 +30,19 @@
 - 矩阵证据去重：standard_matrix.json 5 条与 design_depth_matrix.json 15 条 evidence_summary_zh 由重复模板改为逐条指向各自实际内容（正文节、GeoJSON、指标、图件）。
 - 图件QC工件：新增 self_check.json[figure_qc]（含 ink/边缘剪裁 PIL 实测 + 生成期渲染器文本框重叠/包含核验，全部通过；生成期核验非事后OCR）。
 - 案例对齐与引用清理：proposal.en.md 全球案例表补齐与中文一致的来源数值（20条新街道/10处公共空间、约230米站上复合），并重新生成 report 双语文档与内嵌字体；删除对 report/asset_rights_ledger.md 的失效引用（report 为固定文件集，品牌在先权利状态登记于正文与 sources.json 许可边界）。
-- 校验：score_rubric、四道门禁（确定性/空间/视觉/专业证据）与 validate_local_submission 重跑通过；中英文实质等值已人工核对，品牌在先权利检索未完成前按内部工作代号处理，图件 ink 值与剪裁检查结果见 self_check.json[figure_qc]。
+- 校验：score_rubric、四道门禁（确定性/空间/视觉/专业证据）与 validate_local_submission 重跑通过；仅证明中英文件结构、映射与包装字段可被机器读取，翻译实质等值仍待人工逐项核对，品牌在先权利检索未完成前按内部工作代号处理，图件 ink 值与剪裁检查结果见 self_check.json[figure_qc]。
 
 ## v1.1.0 (round-1 repair) - 2026-08-26
 
 针对评审（50.0 CHANGES_REQUESTED）逐项修复：
 
 - proposal.md：13节扩充重写；新增三区两翼协同矩阵、六大全球案例表、12张场景卡、3个产业测试场景协议、场景—空间—运营矩阵、五类人才画像表、年度活动品牌表、指标元数据表、成本定性分级说明、地标目录、荣誉展示系统、八类公共空间组件库、三级导视、京张—中关村—AI文化叙事、开发者社区、准入退出与停止条件、牵头/协作分工、国际传播文案、转化路径与年度评估指标；"600米核心圈高强度混合开发""可直接转化为管控指标与出让条件"等口径改写为待正式控规与专业审查后深化的概念建议；删除精确到多位小数的provisional显示；品牌在先权利与许可边界如实披露。
-- proposal.en.md：由占位摘要改写为与中文实质等值的完整英文提案（13个英文章节、全部表格与图件引用），起metadata language=en、translation_of=proposal.md；proposal.md 增加 bilingual_contract_version=1 与 translation_file。
+- proposal.en.md：由占位摘要改写为完整英文提案（13个英文章节、全部表格与图件引用），起metadata language=en、translation_of=proposal.md；proposal.md 增加 bilingual_contract_version=1 与 translation_file。结构与映射已登记，翻译实质等值仍须人工逐项核对。
 - 图件：9组×中英文共18张（含Logo方向、区域创新协同图、总体空间结构图、AI创新生态图谱），统一 figsize(12,8.2)@150dpi、标题≥20pt、图例/标注≥11pt、每图双语provisional戳记、地图含指北针与比例尺、比例与计数分轴；来源ID去除日期数字避免伪精度；机器QC（ink/clip）通过，结果写入 assets/figure_qc.json（文本重叠 not_verified）。
 - 图纸：drawings 增加 a0-boards.en.pdf、a3-booklet.en.pdf，A0首页大标题≥60pt、A3与A0首页排版防裁切。
 - 可视化与报告：visual/index.html 重写为与提案一致的站城融环内容并补齐14个必需标记；新增 visual/index.en.html；report/proposal.html 与 report/proposal.en.html 由 render_proposal_html.py 重新生成；四个页面均内嵌 NotoSansSC-Static 子集字体（@font-face data URI，face 优先）。
 - 数据与元数据：sources.json 增至15条（含6个全球案例条目，均含发布方、URL、日期与许可边界，全部条目补 license 字段）；metrics.json global_case_count 4→6 与正文表格一致；compliance_matrix 23条 evidence_summary_zh 逐条改为指向实际内容的差异化表述；manifest schema 0.2.0 补齐全部新文件与 en 映射（language/translation_of），data_confidence 改为 mixed_provisional_and_conceptual 并新增 report/asset_rights_ledger.md。
-- 校验：score_rubric、四道门禁（确定性/空间/视觉/专业证据）与 validate_local_submission 重跑通过；中英文实质等值已人工核对，品牌在先权利检索未完成前按内部工作代号处理，图件 ink 与剪裁检查结果见 assets/figure_qc.json。
+- 校验：score_rubric、四道门禁（确定性/空间/视觉/专业证据）与 validate_local_submission 重跑通过；仅证明中英结构、映射与包装字段可核验，翻译实质等值仍待人工逐项核对，品牌在先权利检索未完成前按内部工作代号处理，图件 ink 与剪裁检查结果见 assets/figure_qc.json。
 
 ## v0.1.0 - 2026-08-24
 
