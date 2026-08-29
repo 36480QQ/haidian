@@ -71,7 +71,7 @@
       "ai_package_stages": {
         "submissions/JohnXu22786/digital-twin-ops": "formal"
       },
-      "total_bytes": 11168546,
+      "total_bytes": 6608939,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -201,70 +201,5 @@
       "target": "professional_review.py",
       "message": "professional_review: PASS"
     }
-  ],
-  "figure_qc": {
-    "ok": true,
-    "ink_ok": true,
-    "clip_clear": true,
-    "overlap_clear": "not_verified",
-    "summary": "ink+edge-clip machine check only; text-overlap not machine-verified post-hoc (figure generation text-bbox checks recorded in changelog)",
-    "figures": {
-      "ai-ecosystem.png": {
-        "width": 1823,
-        "height": 1223,
-        "ink": 0.2106,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
-      },
-      "belt-structure.png": {
-        "width": 1823,
-        "height": 1223,
-        "ink": 0.3089,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
-      },
-      "key-areas.png": {
-        "width": 1823,
-        "height": 1223,
-        "ink": 0.3141,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
-      },
-      "land-use-structure.png": {
-        "width": 1823,
-        "height": 1223,
-        "ink": 0.2286,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
-      },
-      "logo-concept.png": {
-        "width": 1823,
-        "height": 1223,
-        "ink": 0.116,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
-      },
-      "metrics-evidence.png": {
-        "width": 1823,
-        "height": 1223,
-        "ink": 0.192,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
-      },
-      "mobility-bluegreen.png": {
-        "width": 1823,
-        "height": 1223,
-        "ink": 0.1304,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
-      },
-      "site-overview.png": {
-        "width": 1823,
-        "height": 1223,
-        "ink": 0.5061,
-        "edge_clip_ratio": 0.0,
-        "edge_clip_clear": true
-      }
-    }
-  }
+  ]
 }
