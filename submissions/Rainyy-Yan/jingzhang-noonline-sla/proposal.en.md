@@ -66,6 +66,10 @@ The key spatial moves are:
 
 ![Zhongzhiyuan validation interface: conceptual relationship among public route, observation, buffer, controlled testing and F01](assets/figures/v4-figure-02-zhongzhiyuan.en.png)
 
+**Concept experience perspective, not a site depiction.** This participant-authored reversible-prototype illustration is neither an existing Zhongzhiyuan condition, survey basis nor delivery outcome. It puts the public clearway, observation/stay edge, removable safety buffer and controlled test at human scale. Movable markers, seating, shade or a help point may proceed only after the authorisation, public-passage, maintenance and stop gates for `P0-EXP-01` are present; otherwise they are not placed or are removed.[source:DESIGN-VISUAL-V4_5] [data:visual/assets/v4_5-reversible-prototype-atlas.json#PRA-01]
+
+![Concept perspective of a stoppable Zhongzhiyuan validation porch: a removable buffer separates public passage and controlled testing; not a site depiction](assets/media/v4_5-zhongzhiyuan-concept-perspective.png)
+
 Test permission, safety dimension, existing equipment, public entry and actual shade remain unconfirmed by field or professional evidence; every item is shown as a conceptual intervention or field-verification requirement [assumption:A-CONTROLS-001].
 
 ## 6. AI Origin: Understand → Question → Co-create
@@ -80,6 +84,10 @@ The key spatial moves are:
 
 ![AI Origin civic knowledge room: physical knowledge line, staying, human help and optional AI](assets/figures/v4-figure-03-ai-origin.en.png)
 
+**Concept experience perspective, not a site depiction.** This participant-authored illustration explains how a physical knowledge line, movable seating, human enquiry and optional AI can sit side by side; it confirms no existing building, heritage location, entry, shade or staff. Activation must let a person enter, read, pause, ask and leave using physical information alone. If maintenance, human response or clearway evidence is absent, the interactive layer and related service claim are removed.[source:DESIGN-VISUAL-V4_5] [data:visual/assets/v4_5-reversible-prototype-atlas.json#PRA-02]
+
+![Concept perspective of an AI Origin civic knowledge room without a device gate: physical display, human help and free passage coexist; not a site depiction](assets/media/v4_5-ai-origin-concept-perspective.png)
+
 Public sources support the strategic role of AI Origin and the Jing-Zhang corridor context, but do not confirm the depicted entry, lateral links, seats or relic location. These conditions remain design inference or field verification [source:EXT-SRC-JINGZHANG-PARK-20230630] [assumption:A-HERITAGE-SEQUENCE-001].
 
 ## 7. Dazhongsi: Arrive → Decide → Pause → Enter Daily Life
@@ -93,6 +101,10 @@ The key spatial moves are:
 - Turn a high-frequency business-noon transfer into a public interface for short pause, wayfinding and human handover.
 
 ![Dazhongsi conceptual arrival interface: verified station context is visibly separated from an unverified urban transition](assets/figures/v4-figure-04-dazhongsi.en.png)
+
+**Concept experience perspective, not a site depiction.** This view only describes the reversible sequence arrival marker -> human handover -> short pause -> public clearway -> verified alternative or daily-use edge. It confirms no real station exit, crossing, retail, water, accessibility or operating condition. `P0-EXP-03` may be exercised only after lawful passage and an accessible alternative have been authorised and field-verified; when evidence fails, the move reroutes to a verified public edge or suspends its continuity claim.[source:DESIGN-VISUAL-V4_5] [data:visual/assets/v4_5-reversible-prototype-atlas.json#PRA-03]
+
+![Concept perspective of a Dazhongsi arrival and accessible-alternative interface: a wheelchair user moves along a public clearway beside human help and physical decision markers; not a site depiction](assets/media/v4_5-dazhongsi-concept-perspective.png)
 
 External crossings, legal passage, continuous accessible route, public entries and operating retail frontage all require field verification or study by transport, accessibility and operational professionals [assumption:A-ACCESSIBLE-ROUTE-001].
 
@@ -138,6 +150,19 @@ The control-object counts are explicit and reviewable: six work packages and six
 The work packages remain conceptual, reversible pilot suggestions with no fabricated investment, schedule, land-right, approval or governmental commitment. Every phase now carries its proposed role, resource bands, gate and stop condition, and every work package points to specific roads, nodes and ledger tasks [data:geometry/phasing.geojson#PHASE-000] [data:risk.json#work_packages].
 
 ## 12. Evidence, Metrics and Verification
+
+### A Phase 1 prototype is a reversible spatial exercise, not a construction promise
+
+V4.5 condenses the abstract relationships of the three key areas into three visible, pausable and handover-ready prototype cards. Each card proposes only a conceptual combination of reversible components and the next observation an authorised party must make; it does not treat the trees, seating, devices, entries or people in a perspective as existing conditions. The cards share the Phase 0 rule: receive records and responsibility interfaces first, then run one bounded exercise. When a safety, passage, accessibility, maintenance or human-stop condition fails, remove, relocate, reroute or stop the affected move rather than letting AI fill the gap.[source:DESIGN-VISUAL-V4_5] [data:visual/assets/v4_5-reversible-prototype-atlas.json#prototype_cards]
+
+| Prototype card | Reversible components shown only as concepts | Required release gates | Human acceptance observation | Immediate close-out |
+| --- | --- | --- | --- | --- |
+| PRA-01 Zhongzhiyuan | fixed information, movable stay edge, shade reservation, removable buffer, human handover | DR-GATE-01/02/04/05/06 | clearway remains free; fixed information is legible; testing is separated; a human can hand over without a device | remove or relocate when passage is occupied or the buffer/maintenance condition fails |
+| PRA-02 AI Origin | demountable information rail, movable seating, light shade, human enquiry, side-by-side optional AI | DR-GATE-01/02/04/05/06 | a person can enter, read, pause, ask and leave without a device | remove the interactive layer when content maintenance, human response or clearway evidence fails |
+| PRA-03 Dazhongsi | removable arrival marker, human help, short pause, shade reservation, non-digital decision marker | DR-GATE-01/02/03/04/05/06 | record lawful arrival, accessible alternative, short stay and handover without asserting direct station access | reroute to a verified public edge or pause when crossing, entry or alternative access fails |
+
+The three views and table do not raise any Verified SLA or approve a Phase 1 pilot, construction or operation. They only let a future authorised team review one bounded exercise and hand it over using the same spatial, evidence and stop language.
+
 
 **Target SLA** is the intended design grade. **Verified SLA** is the grade current evidence can support. The Engine result remains: SLA-A = B, SLA-B = C and SLA-C = C. Missing any critical item among field-verified shade continuity, continuous exposure, real node location, water/seat state, public entry, key crossing, summer detour and human-service hours blocks promotion to A [data:visual/assets/noonline-sla-report.json#routes].
 
@@ -315,5 +340,18 @@ Three delivery-performance measures deliberately remain `unknown`: release-packe
 ### 13.8 Implementation evidence and bilingual audit
 
 `visual/assets/v4_2-implementation_verification_matrix.json` connects WP-01–06, all 45 FV tasks and the 18 mandatory SLA-A items to PHASE, ROLE, format, validity, threshold, stop authority and HOLD/DOWNGRADE response. `visual/assets/v4_3-delivery-readiness-contract.json` further organizes them into release and close-out cards that can be used one by one at handover. Every task remains `unknown` at baseline; only an authorised human verifier with auditable evidence may change it, and AI cannot write promotion. `visual/assets/v4_2-bilingual_equivalence_checklist.json` compares every number, metric, ID, evidence level, Target/Verified state, warning, figure and taskbook output with the same locatable section in both languages.
+
+### 13.9 Phase 0 data, verification and minimum-exercise action pack
+
+`visual/assets/v4_4-phase0-action-pack.json` turns the existing delivery controls into a Phase 0 action pack that future authorised parties can answer item by item. P0-REQ-01–05 request official spatial data, planning and engineering controls, field verification, heritage constraints, and responsibility/service/data-governance records. Until they are received, the package retains `provisional / unknown / HOLD`; text, news images, commercial maps and AI inference cannot fill the gap. It records requests and evidence formats only, not received data, permission, budget, property, compute capacity or appointed bodies [data:visual/assets/v4_4-phase0-action-pack.json#data_requests].
+
+The pack limits future activity to three minimum, reversible exercises: P0-EXP-01 checks AI-OFF decision points at a confirmed public interface; P0-EXP-02 rehearses public bypass and human explanation after a permitted, buffered test layer stops; P0-EXP-03 documents arrival, legal crossing and an accessible alternative at a confirmed public edge. Each requires the existing release gates plus an authorised record of time, place, evidence, validity and close-out. A missing condition means HOLD, reroute, downgrade or STOP. Passing one exercise does not prove corridor-wide service, construction readiness, approval, real operation or a Verified SLA promotion [data:visual/assets/v4_4-phase0-action-pack.json#minimum_reversible_exercises].
+
+| Phase 0 request/exercise | Future auditable input | Constraint it may release | Control while missing |
+|---|---|---|---|
+| P0-REQ-01 official spatial data | publisher, version/date, CRS, permitted use and original-file hash | replace provisional geometry and recalculate | retain provisional geometry; no statutory or precise-area claim |
+| P0-REQ-02 planning and engineering controls | applicable road, publicness, engineering, fire and property/interface data | professional deepening study | HOLD height, demolition, engineering-line and approval conclusions |
+| P0-REQ-03 field verification | dated, located record with verifier, evidence reference and validity | selected reversible Phase 1 exercise | node, route and service conditions stay unknown / HOLD |
+| P0-REQ-04–05 heritage and implementation records | intervention limits, named stop authority, maintenance/service window, data governance and lawful interface | one work-package activation card | do not start physical installation, test or operating service |
 
 Primary public material includes the Haidian planning authority’s call and taskbook scale statement; the Beijing Municipal Government’s public information on the Jing-Zhang Railway Heritage Park first phase and c. 9 km corridor; Beijing Subway’s public page for Dazhongsi Station A/B exits and in-station accessibility service; the Beijing Cultural Heritage Bureau’s protection information for the former Tsinghuayuan station; and the repository’s registered standards, data and source registry. Each citation is governed by the source ID, date, allowed use and limitation recorded in `sources.json`. Public material supports only the context it expressly states; it never replaces official GIS, field survey, facility audit, permission or approval [source:EXT-SRC-JINGZHANG-PARK-20230630] [source:EXT-SRC-DAZHONGSI-STATION-202605] [source:EXT-SRC-QINGHUAYUAN-STATION-20260214].

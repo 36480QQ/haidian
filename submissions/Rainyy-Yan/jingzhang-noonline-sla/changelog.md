@@ -1,5 +1,23 @@
 # 方案迭代记录 / Iteration Changelog
 
+## v4.6 offline CJK report repair - 2026-08-29
+
+**Required readability repair.** The two required report HTML files again load the project-local OFL-licensed CJK font before their system fallbacks. The embedded WOFF2 has been regenerated from the four current bilingual HTML deliverables, so the report title, summary, body, figure captions, evidence labels and the English-page Chinese return link remain readable in a network-free environment without a system Chinese font.
+
+**Non-regression boundary.** This repair changes only the generated report font link, the local font subset and their source/hash registration. It does not change proposal claims, geometry, metrics, scenarios, Verified SLA, implementation commitments, permissions, funding, land rights or approvals.
+
+## v4.5 prototype-experience and reversible-assembly pass - 2026-08-29
+
+**Human-scale spatial expression.** Three participant-authored concept perspectives now make the Zhongzhiyuan validation porch, AI Origin civic knowledge room and Dazhongsi arrival/accessible-alternative chain legible at eye level. They are paired with a bilingual reversible-prototype atlas: each card names only conceptual removable components, its existing DR-GATE checks, future authorised exercise, human acceptance observation and immediate removal/reroute/stop response.
+
+**Evidence boundary unchanged.** The perspectives are not site photographs, surveys, facility inventories, construction drawings, access confirmations, accessibility tests, permits, budgets, procurement records, staffing commitments or implementation approval. No real site reference image, map tile, logo or trademark was supplied. Every component remains HOLD until an authorised record exists, and no image or exercise promotes a Verified SLA.
+
+## v4.4 Phase 0 action pack - 2026-08-28
+
+**Feasibility handoff.** This pass turns the existing Phase 0 gates into a machine-readable action pack: five request tracks for official geometry, planning/engineering controls, human field evidence, heritage constraints, and future pilot/operations/data-governance records; a minimum field-record protocol; and three future-only reversible exercises for AI-OFF decision points, public-bypass stop response and accessible arrival alternatives. The paired proposal chapters make the release conditions, evidence outputs and HOLD/STOP responses directly readable.
+
+**Evidence boundary unchanged.** The action pack records requests and future evidence formats only. It receives no official geometry, field observation, permit, budget, property right, appointed body, operational commitment, compute agreement or approval. Every request remains `not_received` and every exercise remains `HOLD` until an authorised record satisfies the applicable existing release gate; passing an exercise cannot promote an SLA or prove construction or operating readiness.
+
 ## v4.4 visual readability repair - 2026-08-28
 
 **Targeted visual repair.** The Chinese visual navigation now uses the already covered `交付控制` label, removing the unrenderable `就绪` glyph from the offline CJK-subset path. The two English concept labels in `site-overview.en.svg` now occupy their own clear row, and the public-space card in `land-use-structure.en.svg` now uses a compact, non-overlapping `FIXED WAYFINDING` heading beside its AI-OFF label. Their PNG derivatives are regenerated from these editable SVG sources.
