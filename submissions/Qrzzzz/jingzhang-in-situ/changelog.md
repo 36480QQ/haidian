@@ -1,5 +1,14 @@
 # 方案迭代记录
 
+## v1.2-r5-final-snapshot-evidence - 2026-08-29
+
+### Professional-review required repairs
+
+- Separated the non-replayable 2026-08-14 OSM boundary-mismatch check from the replayable 2026-08-28 R3 site-recognition package. The former alone supports the low-confidence 0% intersection and 667 m offset warnings; the latter packages four raw ODbL snapshots for background presentation only and cannot backfill those metrics or required design geometry.
+- Replaced the premature 2026-08-27 rights and bilingual declarations with a final post-generation, dated, path-level R5 audit. It covers the OSM groups, R3-E metadata, fonts/OFL, cover, structured evidence, 22 figure PNGs, four HTML files and four PDFs with SHA-256 and byte counts.
+- Repeated the final bilingual equivalence review across claims, numbers, source/limitation strength, identifiers, figure positions, two Markdown files, 11 figure pairs, four HTML files and four PDFs. Any later byte change invalidates the persisted conclusion until the audit is regenerated.
+- Moved the manifest freeze time after actual retrieval, generation and audit; the R5 checker rejects time inversion, hash drift, OSM-source conflation, incomplete rights coverage, or incomplete bilingual coverage.
+
 ## v1.1-r4-regional-interfaces - 2026-08-29
 
 ### R4 Five Regional In-Situ Interfaces

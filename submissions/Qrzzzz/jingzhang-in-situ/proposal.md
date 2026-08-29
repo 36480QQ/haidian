@@ -21,7 +21,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "ai-cultural
 
 公告、智能体任务书、场地包、来源表和本地标准快照限定任务与表达；处理资料只导航。[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518] [source:REPO-SOURCE-REGISTRY]
 
-第 2 期冻结表登记来源、日期、时空范围、复用边界、转换链、SHA-256、等级与禁限用途。快照依权利使用，无快照案例仅留链接。OSM 只留 2026-08-14 query/response hash；原始响应缺失、不可随包重放，故不进入 required design GeoJSON 或冒充测绘。[source:DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814] [data:visual/assets/phase2-source-freeze.json#open_data_separation]
+第 2 期冻结表登记来源、日期、时空范围、复用边界、转换链、SHA-256、等级与禁限用途。早期 OSM 组是 2026-08-14 边界错位核对：只留 query/response hash，原始响应未登记、不可随包重放；它只产生下文 0% 与 667 m 两项低置信度警示，不能进入 required design GeoJSON 或冒充测绘。[source:DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814] [data:sources.json#r5_evidence_separation]
+
+另一组是 2026-08-28 R3 场地识别背景：四个固定 OSM/Overpass 查询及原始响应、检索时间、query/raw/derived hash 与 ODbL 1.0 权利记录均随包保存、可重放；只支持道路/铁路、公园、已清权地标与粗粒度建筑肌理表达，不产生或回填 0%/667 m，不进入 required design GeoJSON，也不支持正式边界、文保控制、道路红线或测绘。[source:DATA-SRC-OSM-CONTEXT-20260828] [data:visual/assets/r3-site-context-qa.json] [data:sources.json#r5_evidence_separation]
 
 三层范围和三重点区尚无正式 polygon。SITE/KEY_AREA 是临时粗略约束，只供图件、自检、情景比较；不证明红线、权属、审批、法定用地、精确面积或工程可行性。正式边界到位后，同批重算图层、指标、F01—F11、HTML/PDF。[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] [data:geometry/site_boundary.geojson#SITE-001]
 
@@ -274,7 +276,7 @@ F08 用同一 ID 横向比较 12/12 场景的 AI 权限、人工决定、前台�
 
 原有空间证据仍为 21 项已知/记录指标、其中 19 项可随包复算；面积/长度用 EPSG:4548，误差 ≤0.5%，计数一致。[metric:site_area_sqm] [metric:candidate_cross_section_total_length_m] 本轮另增两项合同状态计数：RI 合同 5、授权 0，均从同一 JSON 自动计数，不代表机构、项目、合作或绩效。[metric:regional_interface_contract_count] [metric:regional_interface_authorized_count] [depth:metrics_recalculation]
 
-不删不利、零值和未知：12 条候选已踏勘 0；情景用地缺口/重叠 0。[metric:cross_section_surveyed_count] [metric:land_use_gap_area_sqm] [metric:land_use_overlap_area_sqm] OSM 背景核对为遗址公园相交 0%、四条命名道路平均偏移 667 m。[source:DATA-SRC-OSM-CONTEXT-20260828] [metric:osm_heritage_park_intersection_ratio] [metric:osm_named_street_average_offset_m] FAR、高度、道路面积、客流、无障碍通过率、文保控制面积仍 `unknown`；OSM 原始响应缺失，故两项不计入 19 项随包复算，也不能修改 provisional 边界。[metric:floor_area_ratio]
+不删不利、零值和未知：12 条候选已踏勘 0；情景用地缺口/重叠 0。[metric:cross_section_surveyed_count] [metric:land_use_gap_area_sqm] [metric:land_use_overlap_area_sqm] 早期 2026-08-14 边界错位核对记录遗址公园相交 0%、四条命名道路平均偏移 667 m；其原始响应未登记，故两项不计入 19 项随包复算，也不能修改 provisional 边界。[source:DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814] [metric:osm_heritage_park_intersection_ratio] [metric:osm_named_street_average_offset_m] 2026-08-28 R3 的四份原始 OSM 快照虽然随包、可重放，却属于另一组场地识别查询，不回填这两项值或正式指标。[source:DATA-SRC-OSM-CONTEXT-20260828] FAR、高度、道路面积、客流、无障碍通过率、文保控制面积仍 `unknown`。[metric:floor_area_ratio]
 
 F05 展示证据与重算链；三矩阵保存逐项证据。六个 agent 的 31 项 required outputs 在 `compliance_matrix.json` 中逐项指向章节、F 图、T 表或结构化文件。[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [source:REPO-SOURCE-REGISTRY]
 
@@ -301,14 +303,15 @@ F05 展示证据与重算链；三矩阵保存逐项证据。六个 agent 的 31
 | 专名、三重在场、六层导视、固定状态词 | 已逐项对照 |
 | SC/CX/IM/AP/U/C/TVS 与 F/T 编号 | 集合及分组一致 |
 | 指标状态、来源 marker、临时边界、图位 | 不提高置信度，不遗漏限制 |
+| 最终快照范围与日期 | 2026-08-29，在生成后逐对复核 2 份 Markdown、22 幅 PNG、4 份 HTML、4 份 PDF；两组 OSM 的来源与限制同强度 |
 
-十项 claim 的章节、图表、数据、来源、限制见 `review_navigation.core_claims`；T07 仅记人工 parity，不替代机器检查。
+十项 claim 的章节、图表、数据、来源、限制见 `review_navigation.core_claims`；T07 仅记人工 parity，不替代机器检查。最终逐路径哈希、范围、标准和结论见 `visual/assets/r5-final-snapshot-audit.json#/bilingual_audit`。
 
 ## 风险、版权与合规说明
 
 缺口包括正式边界、控规权属、逐栋现状、交通市政消防、文保生态、企业人才、真实需求；风险是临时数据冒充 official、AI 越权、活动变承诺、双语弱化限制、许可链中断。相关声明须暂停，待授权资料后同批重算。[depth:risk_missing_data]
 
-版权台账覆盖双语正文/HTML、F01—F11、A3/A0、字体、图标、数据、代码；新增/再生成资产须重开清权。医疗、法律、消防、交通、结构、能源、审批结论只由责任人员或专业团队作出。自检通过不代表入选、批准、发布或实施。
+2026-08-29 最终快照审计在全部来源检索与 R4 生成完成后执行：版权台账逐路径覆盖双语正文/HTML、F01—F11、A3/A0、字体及 OFL、封面、两组 OSM、R3-E 元数据、数据与代码；双语审计逐对覆盖主张、数字、来源/限制、图位、HTML 与 PDF，结果和哈希见 `visual/assets/r5-final-snapshot-audit.json`。新增或再生成资产须重开清权。医疗、法律、消防、交通、结构、能源、审批结论只由责任人员或专业团队作出。自检通过不代表入选、批准、发布或实施。
 
 协议把运营主体、个案法律依据、个人数据条件、投诉窗口、现场人工、无障碍/消防/能源/撤场可行性保留为 `requires legal review`、`design-target` 或 `unknown`。`controller`、`operator`、专业角色只是责任占位；来源不能证明合规、同意、合作或资金。
 

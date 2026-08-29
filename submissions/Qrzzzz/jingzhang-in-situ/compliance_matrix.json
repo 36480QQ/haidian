@@ -1456,9 +1456,11 @@
           "site_area_sqm"
         ],
         "source_ids": [
-          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814",
+          "DATA-SRC-OSM-CONTEXT-20260828"
         ],
-        "limitation_zh": "不支持红线、权属、FAR、高度或工程判断。"
+        "limitation_zh": "不支持红线、权属、FAR、高度或工程判断。2026-08-14 不可重放的错位核对只产生 0%/667 m 警示；2026-08-28 可重放的 R3 场地识别快照是另一证据组，不能回填前两项指标。"
       },
       {
         "id": "CL03",
@@ -2232,6 +2234,19 @@
       "field_or_live_exchange_count": 0,
       "activation": "written authorization + first-party factual basis + named accountable interface lead",
       "scope_limit": "Participant-authored design hypotheses only; no external capability, partnership, appointment, resource, procurement, field exchange, implementation, or operating result is claimed."
+    },
+    "r5_final_snapshot_closeout": {
+      "status": "final_snapshot_rights_and_bilingual_audited",
+      "reviewed_date": "2026-08-29",
+      "audit_ref": "visual/assets/r5-final-snapshot-audit.json",
+      "source_separation_ref": "sources.json#/r5_evidence_separation",
+      "osm_evidence_groups": {
+        "early_mismatch_2026_08_14": "non-replayable; sole source of 0% and 667 m warnings",
+        "r3_site_recognition_2026_08_28": "four replayable raw Overpass snapshots; background presentation only; no metric backfill"
+      },
+      "rights_scope": "Sources and limits, R3 OSM snapshots, R3-E metadata, fonts/OFL, cover, structured evidence, 22 bilingual figure PNGs, four HTML files and four PDFs with per-path SHA-256.",
+      "bilingual_scope": "Claims, numbers, source/limitation strength, identifiers, figure positions, two Markdown files, 11 figure pairs, four HTML files and four PDFs.",
+      "reopen_rule": "Any later byte change in an audited path invalidates the corresponding final-snapshot conclusion until the dated audit and hashes are regenerated."
     }
   }
 }

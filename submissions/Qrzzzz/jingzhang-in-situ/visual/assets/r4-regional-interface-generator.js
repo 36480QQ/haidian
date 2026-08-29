@@ -37,8 +37,11 @@ const PRESENTATION_OUTPUTS = [
 ];
 const R4_OVERRIDE_INPUTS = [
   ...FIGURE_OUTPUTS,
+  "report/proposal.html",
+  "report/proposal.en.html",
   "metrics.json",
   "assumptions.json",
+  "sources.json",
   "compliance_matrix.json",
   "design_depth_matrix.json",
   "proposal.md",
@@ -57,6 +60,71 @@ function writeJson(target, value) {
   const staged = `${target}.${process.pid}.tmp`;
   fs.writeFileSync(staged, `${JSON.stringify(value, null, 2)}\n`, "utf8");
   fs.renameSync(staged, target);
+}
+
+function replaceExact(text, oldValue, newValue, label) {
+  const first = text.indexOf(oldValue);
+  if (first < 0) {
+    const already = text.indexOf(newValue);
+    if (already >= 0 && text.indexOf(newValue, already + newValue.length) < 0) return text;
+    throw new Error(`${label} old and repaired forms are missing or non-unique`);
+  }
+  if (text.indexOf(oldValue, first + oldValue.length) >= 0) throw new Error(`${label} is non-unique`);
+  return text.slice(0, first) + newValue + text.slice(first + oldValue.length);
+}
+
+function repairR5ReportHtml() {
+  const repairs = {
+    "report/proposal.html": [
+      [
+        '<p>第 2 期冻结表登记来源、日期、时空范围、复用边界、转换链、SHA-256、等级与禁限用途。快照依权利使用，无快照案例仅留链接。OSM 只留 2026-08-14 query/response hash；原始响应缺失、不可随包重放，故不进入 required design GeoJSON 或冒充测绘。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814" title="来源：DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/phase2-source-freeze.json#open_data_separation" title="空间数据：visual/assets/phase2-source-freeze.json#open_data_separation">空间数据</sup></p>',
+        '<p>第 2 期冻结表登记来源、日期、时空范围、复用边界、转换链、SHA-256、等级与禁限用途。早期 OSM 组是 2026-08-14 边界错位核对：只留 query/response hash，原始响应未登记、不可随包重放；它只产生下文 0% 与 667 m 两项低置信度警示，不能进入 required design GeoJSON 或冒充测绘。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814" title="来源：DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="sources.json#r5_evidence_separation" title="空间数据：sources.json#r5_evidence_separation">空间数据</sup></p><p>另一组是 2026-08-28 R3 场地识别背景：四个固定 OSM/Overpass 查询及原始响应、检索时间、query/raw/derived hash 与 ODbL 1.0 权利记录均随包保存、可重放；只支持道路/铁路、公园、已清权地标与粗粒度建筑肌理表达，不产生或回填 0%/667 m，不进入 required design GeoJSON，也不支持正式边界、文保控制、道路红线或测绘。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OSM-CONTEXT-20260828" title="来源：DATA-SRC-OSM-CONTEXT-20260828">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/r3-site-context-qa.json" title="空间数据：visual/assets/r3-site-context-qa.json">空间数据</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="sources.json#r5_evidence_separation" title="空间数据：sources.json#r5_evidence_separation">空间数据</sup></p>',
+      ],
+      [
+        '<p>不删不利、零值和未知：12 条候选已踏勘 0；情景用地缺口/重叠 0。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="cross_section_surveyed_count" title="指标：cross_section_surveyed_count">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_gap_area_sqm" title="指标：land_use_gap_area_sqm">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_overlap_area_sqm" title="指标：land_use_overlap_area_sqm">指标</sup> OSM 背景核对为遗址公园相交 0%、四条命名道路平均偏移 667 m。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OSM-CONTEXT-20260828" title="来源：DATA-SRC-OSM-CONTEXT-20260828">来源</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="osm_heritage_park_intersection_ratio" title="指标：osm_heritage_park_intersection_ratio">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="osm_named_street_average_offset_m" title="指标：osm_named_street_average_offset_m">指标</sup> FAR、高度、道路面积、客流、无障碍通过率、文保控制面积仍 <code>unknown</code>；OSM 原始响应缺失，故两项不计入 19 项随包复算，也不能修改 provisional 边界。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="floor_area_ratio" title="指标：floor_area_ratio">指标</sup></p>',
+        '<p>不删不利、零值和未知：12 条候选已踏勘 0；情景用地缺口/重叠 0。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="cross_section_surveyed_count" title="指标：cross_section_surveyed_count">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_gap_area_sqm" title="指标：land_use_gap_area_sqm">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_overlap_area_sqm" title="指标：land_use_overlap_area_sqm">指标</sup> 早期 2026-08-14 边界错位核对记录遗址公园相交 0%、四条命名道路平均偏移 667 m；其原始响应未登记，故两项不计入 19 项随包复算，也不能修改 provisional 边界。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814" title="来源：DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814">来源</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="osm_heritage_park_intersection_ratio" title="指标：osm_heritage_park_intersection_ratio">指标</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="osm_named_street_average_offset_m" title="指标：osm_named_street_average_offset_m">指标</sup> 2026-08-28 R3 的四份原始 OSM 快照虽然随包、可重放，却属于另一组场地识别查询，不回填这两项值或正式指标。<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OSM-CONTEXT-20260828" title="来源：DATA-SRC-OSM-CONTEXT-20260828">来源</sup> FAR、高度、道路面积、客流、无障碍通过率、文保控制面积仍 <code>unknown</code>。<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="floor_area_ratio" title="指标：floor_area_ratio">指标</sup></p>',
+      ],
+      ['<tr><td>指标状态、来源 marker、临时边界、图位</td><td>不提高置信度，不遗漏限制</td></tr>', '<tr><td>指标状态、来源 marker、临时边界、图位</td><td>不提高置信度，不遗漏限制</td></tr><tr><td>最终快照范围与日期</td><td>2026-08-29，在生成后逐对复核 2 份 Markdown、22 幅 PNG、4 份 HTML、4 份 PDF；两组 OSM 的来源与限制同强度</td></tr>'],
+      ['十项 claim 的章节、图表、数据、来源、限制见 <code>review_navigation.core_claims</code>；T07 仅记人工 parity，不替代机器检查。</p>', '十项 claim 的章节、图表、数据、来源、限制见 <code>review_navigation.core_claims</code>；T07 仅记人工 parity，不替代机器检查。最终逐路径哈希、范围、标准和结论见 <code>visual/assets/r5-final-snapshot-audit.json#/bilingual_audit</code>。</p>'],
+      ['<p>版权台账覆盖双语正文/HTML、F01—F11、A3/A0、字体、图标、数据、代码；新增/再生成资产须重开清权。医疗、法律、消防、交通、结构、能源、审批结论只由责任人员或专业团队作出。自检通过不代表入选、批准、发布或实施。</p>', '<p>2026-08-29 最终快照审计在全部来源检索与 R4 生成完成后执行：版权台账逐路径覆盖双语正文/HTML、F01—F11、A3/A0、字体及 OFL、封面、两组 OSM、R3-E 元数据、数据与代码；双语审计逐对覆盖主张、数字、来源/限制、图位、HTML 与 PDF，结果和哈希见 <code>visual/assets/r5-final-snapshot-audit.json</code>。新增或再生成资产须重开清权。医疗、法律、消防、交通、结构、能源、审批结论只由责任人员或专业团队作出。自检通过不代表入选、批准、发布或实施。</p>'],
+    ],
+    "report/proposal.en.html": [
+      [
+        '<p>The Phase 2 freeze records source, date, scope, reuse boundary, transformation, SHA-256, grade, and prohibited uses. Snapshots follow their rights records; URL-only cases retain links. OSM keeps only the 2026-08-14 query/response hashes; its raw response is absent and not package-replayable, so it never enters required design GeoJSON or becomes survey evidence.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814" title="Source: DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814">Source</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/phase2-source-freeze.json#open_data_separation" title="Spatial data: visual/assets/phase2-source-freeze.json#open_data_separation">Spatial data</sup></p>',
+        '<p>The Phase 2 freeze records source, date, scope, reuse boundary, transformation, SHA-256, grade, and prohibited uses. The early OSM group is the 2026-08-14 boundary-mismatch check: only query/response hashes remain, its raw response is unregistered and not package-replayable, and it produces only the two low-confidence 0% and 667 m warnings below. It never enters required design GeoJSON or becomes survey evidence.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814" title="Source: DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814">Source</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="sources.json#r5_evidence_separation" title="Spatial data: sources.json#r5_evidence_separation">Spatial data</sup></p><p>A separate group is the 2026-08-28 R3 site-recognition background: four fixed OSM/Overpass queries and raw responses, retrieval times, query/raw/derived hashes, and ODbL 1.0 rights records are packaged and replayable. They support only road/rail clues, parks, cleared landmarks, and coarse building morphology; they neither produce nor backfill 0%/667 m, enter required design GeoJSON, nor support official boundaries, heritage controls, road redlines, or survey.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OSM-CONTEXT-20260828" title="Source: DATA-SRC-OSM-CONTEXT-20260828">Source</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="visual/assets/r3-site-context-qa.json" title="Spatial data: visual/assets/r3-site-context-qa.json">Spatial data</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="sources.json#r5_evidence_separation" title="Spatial data: sources.json#r5_evidence_separation">Spatial data</sup></p>',
+      ],
+      [
+        '<p>Adverse, zero, and unknown results remain visible: 0 of 12 candidates are surveyed, while scenario land-use gap/overlap are both 0; those results return to count and topology metrics.<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="cross_section_surveyed_count" title="Metric: cross_section_surveyed_count">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_gap_area_sqm" title="Metric: land_use_gap_area_sqm">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_overlap_area_sqm" title="Metric: land_use_overlap_area_sqm">Metric</sup> The OSM background check records 0% heritage-park intersection and a 667 m mean offset to four named street proxies.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OSM-CONTEXT-20260828" title="Source: DATA-SRC-OSM-CONTEXT-20260828">Source</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="osm_heritage_park_intersection_ratio" title="Metric: osm_heritage_park_intersection_ratio">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="osm_named_street_average_offset_m" title="Metric: osm_named_street_average_offset_m">Metric</sup> FAR, height, road area, flows, accessibility pass rate, and heritage-control area remain <code>unknown</code>. Because the raw OSM response is absent, its two results are excluded from the 19 package-recalculable metrics and cannot alter the provisional boundary.<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="floor_area_ratio" title="Metric: floor_area_ratio">Metric</sup></p>',
+        '<p>Adverse, zero, and unknown results remain visible: 0 of 12 candidates are surveyed, while scenario land-use gap/overlap are both 0; those results return to count and topology metrics.<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="cross_section_surveyed_count" title="Metric: cross_section_surveyed_count">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_gap_area_sqm" title="Metric: land_use_gap_area_sqm">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="land_use_overlap_area_sqm" title="Metric: land_use_overlap_area_sqm">Metric</sup> The early 2026-08-14 boundary-mismatch check records 0% heritage-park intersection and a 667 m mean offset to four named street proxies. Its raw response is unregistered, so the two values remain outside the 19 package-recalculable metrics and cannot alter the provisional boundary.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814" title="Source: DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814">Source</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="osm_heritage_park_intersection_ratio" title="Metric: osm_heritage_park_intersection_ratio">Metric</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="osm_named_street_average_offset_m" title="Metric: osm_named_street_average_offset_m">Metric</sup> Although the four 2026-08-28 R3 raw OSM snapshots are packaged and replayable, they belong to a separate site-recognition query group and do not backfill these values or formal metrics.<sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="DATA-SRC-OSM-CONTEXT-20260828" title="Source: DATA-SRC-OSM-CONTEXT-20260828">Source</sup> FAR, height, road area, flows, accessibility pass rate, and heritage-control area remain <code>unknown</code>.<sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="floor_area_ratio" title="Metric: floor_area_ratio">Metric</sup></p>',
+      ],
+      ['<tr><td>Metric status, source markers, provisional boundary, figure position</td><td>No raised confidence or dropped limitation</td></tr>', '<tr><td>Metric status, source markers, provisional boundary, figure position</td><td>No raised confidence or dropped limitation</td></tr><tr><td>Final snapshot scope and date</td><td>2026-08-29, after generation: 2 Markdown files, 22 PNGs, 4 HTML files, and 4 PDFs reviewed pair by pair; both OSM groups retain equivalent source and limitation strength</td></tr>'],
+      ['Exact section, figure/table, data, source, and limitation anchors live in <code>review_navigation.core_claims</code>. T07 records the manual parity conclusion and does not replace machine checks.</p>', 'Exact section, figure/table, data, source, and limitation anchors live in <code>review_navigation.core_claims</code>. T07 records the manual parity conclusion and does not replace machine checks. Final path hashes, scope, criteria, and conclusion are recorded at <code>visual/assets/r5-final-snapshot-audit.json#/bilingual_audit</code>.</p>'],
+      ['<p>The path-level rights ledger covers bilingual text/HTML, F01–F11, A3/A0, fonts, icons, data, and code. Any new or regenerated asset reopens clearance. Medical, legal, fire, transport, structural, energy, and approval conclusions belong to accountable people or qualified teams. A passing self-check means only that the package may enter further review, not selection, approval, publication, or implementation.</p>', '<p>The final 2026-08-29 snapshot audit runs after every current source retrieval and R4 generation step. Its path-level rights scope covers bilingual text/HTML, F01–F11, A3/A0, fonts and OFL, the cover, both OSM groups, R3-E metadata, data, and code; its bilingual scope compares claims, numbers, sources/limits, figure positions, HTML, and PDFs. Results and hashes are recorded in <code>visual/assets/r5-final-snapshot-audit.json</code>. Any new or regenerated asset reopens clearance. Medical, legal, fire, transport, structural, energy, and approval conclusions belong to accountable people or qualified teams. A passing self-check means only that the package may enter further review, not selection, approval, publication, or implementation.</p>'],
+    ],
+  };
+  for (const [relative, replacements] of Object.entries(repairs)) {
+    const target = path.join(SUB, relative);
+    let text = fs.readFileSync(target, "utf8");
+    replacements.forEach(([oldValue, newValue], index) => { text = replaceExact(text, oldValue, newValue, `${relative} R5 repair ${index + 1}`); });
+    const finalSnapshotRow = relative.endsWith("proposal.en.html")
+      ? "<tr><td>Final snapshot scope and date</td><td>2026-08-29, after generation: 2 Markdown files, 22 PNGs, 4 HTML files, and 4 PDFs reviewed pair by pair; both OSM groups retain equivalent source and limitation strength</td></tr>"
+      : "<tr><td>最终快照范围与日期</td><td>2026-08-29，在生成后逐对复核 2 份 Markdown、22 幅 PNG、4 份 HTML、4 份 PDF；两组 OSM 的来源与限制同强度</td></tr>";
+    while (text.includes(finalSnapshotRow + finalSnapshotRow)) text = text.replaceAll(finalSnapshotRow + finalSnapshotRow, finalSnapshotRow);
+    fs.writeFileSync(target, text, "utf8");
+  }
+  assertR5ReportHtml();
+}
+
+function assertR5ReportHtml() {
+  for (const relative of ["report/proposal.html", "report/proposal.en.html"]) {
+    const text = fs.readFileSync(path.join(SUB, relative), "utf8");
+    const metricAt = text.indexOf('data-evidence-value="osm_heritage_park_intersection_ratio"');
+    const before = text.slice(0, metricAt);
+    if (metricAt < 0 || before.lastIndexOf('data-evidence-value="DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814"') <= before.lastIndexOf('data-evidence-value="DATA-SRC-OSM-CONTEXT-20260828"')) throw new Error(`${relative}: mismatch metrics are not bound to the early OSM group`);
+    if (!text.includes("visual/assets/r5-final-snapshot-audit.json#/bilingual_audit") || !text.includes("2026-08-29")) throw new Error(`${relative}: final snapshot audit disclosure missing`);
+    const rowNeedle = relative.endsWith("proposal.en.html") ? "Final snapshot scope and date" : "最终快照范围与日期";
+    if (text.split(rowNeedle).length - 1 !== 1) throw new Error(`${relative}: final snapshot T07 row must occur exactly once`);
+  }
 }
 
 function sha256(target) {
@@ -197,7 +265,7 @@ function updateFreeze() {
   const fileSha = Object.fromEntries(R4_OVERRIDE_INPUTS.map((relative) => [relative, sha256(path.join(SUB, relative))]));
   freeze.r4_regional_interface_override = {
     schema: "jz-r4-regional-interface-override/v1",
-    authority: "R4 changes IM12 regional-interface contracts and their exact bilingual carriers only. Geometry, SC01–SC12, IM01–IM13, the sole SC10+IM06 first use, Phase 3 state/authority/governance semantics, cost, operators, controllers, and real-world approval remain unchanged.",
+    authority: "R4 changes IM12 regional-interface contracts, their exact bilingual carriers, and the R5 top-level OSM evidence-separation crosswalk in sources.json only. The protected 28-record source array, geometry, SC01–SC12, IM01–IM13, the sole SC10+IM06 first use, Phase 3 state/authority/governance semantics, cost, operators, controllers, and real-world approval remain unchanged.",
     interface_ids: ["RI01", "RI02", "RI03", "RI04", "RI05"],
     status: "5 candidate contracts / 0 authorized / 0 operating / 0 field or live exchanges",
     file_sha256: fileSha,
@@ -296,6 +364,11 @@ function patchR3eOverlay(program) {
     "R4 semantic override",
   ));
   commands.push(replacementCommand(
+    "for (const [relative, expected] of Object.entries(contract.output_sha256)) {\n    const target = path.join(SUB, relative);\n    const actual = fs.existsSync(target) ? sha256(target) : \"missing\";\n    if (actual !== expected) failures.push(`${relative}: ${actual}`);\n  }",
+    "const r4OutputOverrides = readJson(FREEZE_PATH).r4_regional_interface_override?.file_sha256 ?? {};\n  for (const [relative, expected] of Object.entries(contract.output_sha256)) {\n    const target = path.join(SUB, relative);\n    const actual = fs.existsSync(target) ? sha256(target) : \"missing\";\n    const required = r4OutputOverrides[relative] ?? expected;\n    if (actual !== required) failures.push(`${relative}: ${actual}`);\n  }",
+    "R4 Phase 4 output override",
+  ));
+  commands.push(replacementCommand(
     '"assets/media/cover.webp",',
     '"assets/media/cover.webp",\n  "assets/figures/ai-ecosystem.png",\n  "assets/figures/ai-ecosystem.en.png",\n  "assets/figures/operations-pathway.png",\n  "assets/figures/operations-pathway.en.png",',
     "R4 figure outputs",
@@ -359,6 +432,7 @@ function writeR4Contract(contracts, browserVersion) {
     "visual/assets/phase3-red-team.json",
     "assumptions.json",
     "metrics.json",
+    "sources.json",
     "compliance_matrix.json",
     "design_depth_matrix.json",
     "proposal.md",
@@ -407,6 +481,7 @@ function checkR4() {
     if (actual !== expected) failures.push(`output ${relative}: ${actual}`);
   }
   if (contract.authority.interface_ids.join(",") !== contracts.interfaces.map((item) => item.interface_id).join(",")) failures.push("interface authority IDs drift");
+  assertR5ReportHtml();
   if (failures.length) throw new Error(`R4 generation contract drift:\n${failures.join("\n")}`);
   runR3e("check");
   console.log(JSON.stringify({ ok: true, interfaces: 5, authorized: 0, operating: 0, outputs: Object.keys(contract.output_sha256).length }, null, 2));
@@ -423,6 +498,8 @@ async function main() {
       console.log(JSON.stringify({ ok: true, figures: FIGURE_OUTPUTS, browser: browserVersion }, null, 2));
     } else {
       runR3e("generate");
+      repairR5ReportHtml();
+      updateFreeze();
       writeR4Contract(contracts, browserVersion);
       console.log(JSON.stringify({ ok: true, interfaces: 5, authorized: 0, operating: 0, figures: FIGURE_OUTPUTS.length, presentations: PRESENTATION_OUTPUTS.length }, null, 2));
     }

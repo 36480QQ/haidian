@@ -82,8 +82,8 @@
     {
       "id": "A-RIGHTS-001",
       "status": "cleared_for_submission",
-      "statement": "Path-level rights evidence was reopened and manually reconciled on 2026-08-27 for the Phase 2 source-graph repair. All six repaired links use already registered official or background-policy snapshots under their existing item-level limits; no new image, map, logo, raw OSM payload or third-party asset was introduced, and regenerated text, HTML, visual and PDF artifacts remain covered by report/copyright_statement.md.",
-      "impact": "The rights audit supports redistribution of this submission snapshot under its stated limits. It does not convert provisional data into official evidence or provide a legal non-infringement guarantee; any later asset change reopens the audit.",
+      "statement": "A final path-level rights reconciliation was completed on 2026-08-29 after all current source retrievals and R4 generation. The dated, hash-bound audit covers the two distinct OSM evidence groups, R3-E metadata, fonts and OFL records, all bilingual figures and HTML, four PDFs, the cover, structured evidence and generation scripts at visual/assets/r5-final-snapshot-audit.json#/rights_audit.",
+      "impact": "The final audit supports redistribution of this exact hashed submission snapshot under each registered item-level limit. It does not convert provisional or background data into official evidence and is not a legal non-infringement guarantee; any later byte change reopens the audit.",
       "affected_files": [
         "report/copyright_statement.md",
         "assets/figures/",
@@ -91,13 +91,13 @@
         "report/",
         "visual/"
       ],
-      "recalculation_trigger": "Any added or regenerated asset, font-source change, third-party media, or manifest hash change requires a new path-level rights reconciliation before publication."
+      "recalculation_trigger": "Any added or regenerated asset, source or font change, third-party media, audit-scope change, or manifest hash change requires a new dated path-level reconciliation and refreshed audit hashes before publication."
     },
     {
       "id": "A-BILINGUAL-001",
-      "status": "reviewed_2026-08-27",
-      "statement": "A dated manual comparison was completed on 2026-08-27 for the 13-section order, claims, figures, numbers, status language and evidence markers. The six repaired source links are paired at substantively equivalent Chinese/English claims, including the same non-generalization limits for generative AI, Article 39 barrier-free service contexts and the elderly smart-service policy.",
-      "impact": "The current bilingual snapshot is cleared for review as substantively aligned. This finding does not guarantee legal translation or future-file parity; any edit to paired text, figures, HTML or PDFs reopens the comparison.",
+      "status": "reviewed_2026-08-29",
+      "statement": "A final manual bilingual equivalence review was completed on 2026-08-29 after the current Markdown, figures, HTML and PDFs were generated. It covers section and claim order, every material number and source/limit marker, the two-OSM non-substitution statement, figure identifiers and positions, 11 figure pairs, four HTML files and four PDFs; paired path hashes and the conclusion are recorded at visual/assets/r5-final-snapshot-audit.json#/bilingual_audit.",
+      "impact": "The exact hashed bilingual snapshot is cleared for review as substantively equivalent without raised confidence or dropped limitations. This is not a legal-translation certification; any later byte change to a paired artifact reopens the review.",
       "affected_files": [
         "proposal.md",
         "proposal.en.md",
@@ -108,7 +108,7 @@
         "visual/index.html",
         "visual/index.en.html"
       ],
-      "recalculation_trigger": "Complete a dated human bilingual review covering proper names, claims, approximate indicators, source IDs, scenario limits, figure numbers and on-figure locations."
+      "recalculation_trigger": "After any paired-artifact change, repeat the dated human review across claims, numbers, sources and limitations, identifiers, figure positions, HTML and PDFs, then refresh paired hashes."
     },
     {
       "id": "A-CX-001",
@@ -143,8 +143,8 @@
     {
       "id": "A-OPEN-DATA-NEGATIVE-001",
       "status": "background_only_negative_result",
-      "statement": "The repository boundary-basis note records a 0% OSM heritage-park intersection and a 667 m average offset to four named OSM street centre-lines in a dated check. The raw OSM snapshot is not registered in the package.",
-      "impact": "These adverse results are retained as warnings. They neither invalidate nor validate the provisional polygon and cannot support survey, heritage-control, official-boundary or road-redline conclusions.",
+      "statement": "The repository boundary-basis note records a 0% OSM heritage-park intersection and a 667 m average offset to four named OSM street centre-lines from an early 2026-08-14 mismatch check. Its raw response is not registered. The separate 2026-08-28 R3 site-recognition group does include four replayable raw Overpass snapshots, but it has different queries and purposes and is not the source or recomputation basis for these two values.",
+      "impact": "The two early adverse results remain non-replayable warnings. The later replayable site-recognition background does not backfill them; neither group validates or invalidates the provisional polygon or supports survey, heritage-control, official-boundary or road-redline conclusions.",
       "affected_files": [
         "visual/assets/phase2-source-freeze.json",
         "metrics.json",
@@ -152,7 +152,7 @@
         "proposal.md",
         "proposal.en.md"
       ],
-      "recalculation_trigger": "Acquire an attributable, rights-cleared raw snapshot and/or authoritative geometry, register its hash and license, and rerun the comparison."
+      "recalculation_trigger": "Acquire the attributable raw response for the exact 2026-08-14 mismatch check and/or authoritative geometry, register its hash and rights, and rerun; never substitute the separate 2026-08-28 R3 snapshots."
     },
     {
       "id": "A-PROTOCOL-001",
