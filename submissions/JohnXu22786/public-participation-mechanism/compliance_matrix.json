@@ -1309,5 +1309,54 @@
    ],
    "evidence_summary_zh": "活动体系与长期运营：年度活动表（开放日/协作周/通报会/分享节，4 项，指标 annual_program_count=4）、开发者社区、场景开放与转化通道、参与联盟与年度公示构成长期运营骨架；成本分级表（低/中/高）与停止条件、退出机制保证可转化与可持续。"
   }
+ ],
+ "requirements_traceability": {
+  "source_registry": "sources.json",
+  "source_alias_registry": "sources.json#/aliases",
+  "unresolved_source_ids": [],
+  "feedback_review": {
+   "review_id": 5030656400,
+   "verdict": "CHANGES_REQUESTED",
+   "score": 70,
+   "items": [
+    {"feedback": "Make the concept spatially and operationally specific", "evidence": "proposal.md sections 重点区域详细设计; 内部三区两翼与外部协同边界; 京张资源—叙事—空间载体—使用边界; geometry/key_areas.geojson"},
+    {"feedback": "Show executable phase gates with samples, thresholds, records, owners, escalation and rollback", "evidence": "proposal.md 三项行业测试协议; 三期分级与阶段门; G0/G1/G2 minimum-deliverable table"},
+    {"feedback": "Make participation selection, minority record, rejection and appeal operational", "evidence": "proposal.md 参与代表遴选与利益冲突; 服务流程与人工升级"},
+    {"feedback": "Resolve source aliases across matrices", "evidence": "sources.json#/aliases; all matrix source_ids checked against alias registry"},
+    {"feedback": "Preserve honest unknowns and research hypotheses", "evidence": "assumptions.json; proposal.md risk and boundary clauses; six SRC-GLOBAL-CASE entries remain research_hypothesis"},
+    {"feedback": "Deliver bilingual, readable figures and drawings", "evidence": "assets/figures/*.{png,en.png}; drawings/a0-boards*.pdf; drawings/a3-booklet*.pdf; visual/assets/previews/*"}
+  ]
+ },
+ "agent_deliverables": {
+  "agent.1": {"sections": ["设计依据与资料清单", "三层范围工作框架", "重点区域详细设计", "内部三区两翼与外部协同边界"], "figures": ["assets/figures/framework-three-areas.png", "assets/figures/site-overview.png"], "metrics": ["site_area_sqm", "green_ratio", "public_space_ratio"]},
+  "agent.2": {"sections": ["AI 创新生态、人才画像与 AI+ 场景", "内部三区两翼与外部协同边界"], "figures": ["assets/figures/ecosystem-atlas.png"], "metrics": ["global_case_count", "persona_count"], "evidence": "six cases registered in sources.json; research_hypothesis retained"},
+  "agent.3": {"sections": ["AI 创新生态、人才画像与 AI+ 场景", "三项行业测试协议"], "figures": ["assets/figures/mobility-bluegreen.png"], "metrics": ["scenario_card_count", "industry_test_scenario_count"], "evidence": "S01-S10 and three protocols with human review/stop rules"},
+  "agent.4": {"sections": ["重点区域详细设计", "东西缝合与南北贯通", "蓝绿空间、公共空间与城市风貌"], "figures": ["assets/figures/key-areas.png", "assets/figures/mobility-bluegreen.png"], "evidence": "three landmarks, reversible component library, heritage and safety boundaries"},
+  "agent.5": {"sections": ["蓝绿空间、公共空间与城市风貌", "京张资源—叙事—空间载体—使用边界", "参考资料"], "figures": ["assets/figures/logo-parjz.png"], "evidence": "heritage narrative, signage grammar, bilingual publication and rights limits"},
+  "agent.6": {"sections": ["更新项目清单、实施政策与分期计划", "年度活动体系", "长期运营"], "figures": ["assets/figures/ecosystem-atlas.png"], "metrics": ["annual_program_count", "phase_count"], "evidence": "four recurring event types, developer/scenario/alliance conversion path"}
+ },
+ "review_dimensions": {
+  "objective_alignment": "proposal.md summary; 设计依据与资料清单; framework-three-areas.png",
+  "function_match": "三层范围工作框架; 内部三区两翼与外部协同边界; compliance_matrix requirements 1.3-1.5",
+  "brand_identity": "蓝绿空间、公共空间与城市风貌; assets/figures/logo-parjz.png; report/copyright_statement.md",
+  "regional_synergy": "三层范围工作框架; 外部协同边界; framework-three-areas.png",
+  "planning_innovation": "总体设计范围城市更新与控规深度城市设计; 用地与复算 rules",
+  "industry_support": "AI 创新生态; 三区两翼 mapping; three test protocols; ecosystem-atlas.png",
+  "scenario_perceptibility": "S01-S10 scenario table; 三节点; mobility-bluegreen.png",
+  "spatial_clarity": "重点区域详细设计; key_areas.geojson; site-overview.png",
+  "transferability": "G0/G1/G2 table; RACI; reversible component library",
+  "expression_completeness": "proposal.md/proposal.en.md; eight figure pairs; A0/A3 drawings; visual/index.html; offline fallback",
+  "public_compliance": "risk/copyright section; assumptions.json; sources.json; unknown/to_verify markings",
+  "international_communication": "proposal.en.md; English figure counterparts; multilingual service and publication",
+  "long_term_operation_value": "annual event system; developer community; scenario open operation; alliance and annual archive"
+ },
+ "disabled_items_and_boundaries": [
+  {"item": "no FAR, height, building intensity, plot-level retain/renovate/demolish or road redline conclusion", "evidence": "proposal.md opening boundary clause; 用地、建筑规模与拆改留方案"},
+  {"item": "no road/rail alignment, bridge/tunnel, underground, municipal-capacity or engineering conclusion", "evidence": "交通、轨道、市政与公共服务设施; east-west/north-south concept wording"},
+  {"item": "no land title, investment, policy, government, enterprise or partnership commitment", "evidence": "三区两翼 table; assumptions.json; report/copyright_statement.md"},
+  {"item": "no non-public, personal or individual-identifying data; no excessive surveillance", "evidence": "S01-S10 privacy controls; data governance; test protocol privacy boundary"},
+  {"item": "no unlicensed trademark, font, image, portrait or paper figure", "evidence": "report/copyright_statement.md; asset-rights ledger; source reuse boundaries"},
+  {"item": "all concept locations, values, official controls and baselines are provisional or unknown/to_verify", "evidence": "assumptions.json; geometry metadata; metrics.json recompute triggers"}
  ]
+ }
 }

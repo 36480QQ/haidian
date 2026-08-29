@@ -23,3 +23,10 @@
 - Manifest: 14 new entries (en figures/PDFs/HTML), language=en + translation_of on every English counterpart, data_confidence=mixed_provisional_and_conceptual, hashes refreshed after every content change.
 - Gates: all four gates pass (deterministic/spatial/visual/professional), self_check.json persisted formal-review-ready with figure_qc; score_rubric.py weighted_pct=100.0, mandatory_rejections=[], reviewer_gaps=[].
 - Known organizer-side gaps (unchanged): official geometry, statutory controls and site baseline still unpublished; all geometry-derived values remain provisional with recompute triggers and are annotated as participant provisional model data, not authoritative data.
+
+## v2.2.0 - 2026-08-29 (Codex repair round)
+
+- Added a bilingual operational record contract: record states, source/version hashes, AI-versus-human responsibility, public-readable rejection reasons, minority-opinion retention, appeal routes, correction/withdrawal and G0 rollback triggers.
+- Tightened the three protocol-to-phase-gate evidence chain with sample denominator, baseline, temporary shadow-test bands, record owner and exit handling; organizer baseline and statutory compliance remain unknown/to_verify.
+- Replaced stale generation provenance with direct Codex terminal editing and local repository validators; updated the package-geometry source publisher accordingly.
+- Regenerated bilingual figures and A0/A3 boards with local package data; English counterparts contain English-only labels and explicit provisional/source notes.

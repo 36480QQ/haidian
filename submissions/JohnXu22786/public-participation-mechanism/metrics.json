@@ -1,5 +1,8 @@
 {
   "schema_version": "0.1.0",
+  "recompute_version": "v2.1-r2",
+  "recompute_date": "2026-08-28",
+  "recompute_trigger": "round-2 content-depth repair; no official-data change yet",
   "units": {
     "length": "m",
     "area": "sqm"
@@ -148,7 +151,18 @@
       "source_files": [
         "proposal.md"
       ],
-      "formula": "count(industry validation protocol table rows in proposal.md section 'AI 创新生态、人才画像与 AI+ 场景')",
+      "formula": "count(industry validation protocol table rows in proposal.md section 'AI 创新生态、人才画像与 AI+ 场景'); each row fixes entry condition / verification method / exit-rollback trigger / result destination",
+      "confidence": "high",
+      "assumptions": []
+    },
+    "scenario_card_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "proposal.md"
+      ],
+      "formula": "count(AI+ scenario card rows in proposal.md section 'AI 创新生态、人才画像与 AI+ 场景'); each card fills 11 fields (user/data/space/model/operator/human backstop/privacy control/failure mode/phase gate/effectiveness indicator/stop condition)",
       "confidence": "high",
       "assumptions": []
     },

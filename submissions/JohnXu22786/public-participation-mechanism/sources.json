@@ -1,5 +1,10 @@
 {
  "schema_version": "0.1.0",
+ "aliases": {
+  "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509": "DATA-SRC-OFFICIAL-ANNOUNCEMENT",
+  "DATA-SRC-AGENT-TASKBOOK-20260518": "DATA-SRC-AGENT-TASKBOOK",
+  "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605": "DATA-SRC-PROVISIONAL-BOUNDARIES"
+ },
  "sources": [
   {
    "source_id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT",
@@ -437,7 +442,7 @@
   {
    "source_id": "PACKAGE-GEOMETRY",
    "title": "本方案 geometry 层（provisional 概念设计）",
-   "publisher": "JohnXu22786 / dsh-haidian-agent",
+      "publisher": "JohnXu22786 / direct Codex terminal",
    "source_kind": "agent_generated_design",
    "url": "geometry/",
    "published_date": "2026-08-24",
