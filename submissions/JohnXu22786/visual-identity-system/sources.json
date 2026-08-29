@@ -542,7 +542,7 @@
       "timeliness_level": "T0",
       "public_access_status": "cleared_for_repo",
       "license": "participant_original",
-      "license_summary": "Original AI-generated design geometry, free for repository display.",
+      "license_summary": "Participant-produced concept geometry for repository display only; external reuse and any planning reliance remain verification pending.",
       "review_status": "self_reviewed",
       "usable_for_formal": "provisional_only",
       "allowed_uses": [
@@ -557,12 +557,51 @@
       "topics": [
         "geometry"
       ],
-      "notes_zh": "参与方自产设计几何，标注 provisional。",
+      "notes_zh": "参与方自产设计几何，标注 provisional；仅用于仓库展示与机器校验，外部复用和规划依赖待核实。",
       "provenance": {
         "generator": "JohnXu22786 participant concept model",
         "generation_method": "participant-authored concept geometry + deterministic geometry program",
         "limitations": "low confidence conceptual envelopes"
       }
+    },
+    {
+      "source_id": "PACKAGE-ASSETS-20260829",
+      "title": "本方案视觉资产、字体与导出文件登记",
+      "publisher": "JohnXu22786 participant self-record",
+      "source_kind": "participant_self_record",
+      "url": "assets/figures/; drawings/; report/; visual/",
+      "published_date": "2026-08-29",
+      "accessed_date": "2026-08-29",
+      "file_type": "mixed_static_assets",
+      "authority_level": "SELF-DECLARED",
+      "timeliness_level": "T0",
+      "public_access_status": "cleared_for_repo",
+      "license": "participant_self_record",
+      "license_summary": "PNG figures, A0/A3 PDFs, rendered HTML, and layout rules are participant-produced concept outputs for COMMUNITY-DISPLAY-ONLY review; font embedding uses local Noto Sans SC and system Latin fonts, with current external reuse terms verification pending.",
+      "review_status": "self_reviewed",
+      "usable_for_formal": "self_record",
+      "allowed_uses": [
+        "repository display and proposal review",
+        "local visual and text validation"
+      ],
+      "prohibited_uses": [
+        "claiming third-party endorsement or asset clearance",
+        "external production, registration, or redistribution before item-level rights review",
+        "treating provisional geometry as an official boundary"
+      ],
+      "asset_paths": [
+        "assets/figures/*.png",
+        "drawings/a0-boards.pdf",
+        "drawings/a0-boards.en.pdf",
+        "drawings/a3-booklet.pdf",
+        "drawings/a3-booklet.en.pdf",
+        "report/proposal.html",
+        "report/proposal.en.html",
+        "visual/index.html",
+        "visual/index.en.html"
+      ],
+      "font_status": "Noto Sans SC embedding source and system Latin font terms are verification pending; no font file is redistributed.",
+      "notes_zh": "本条登记本包自产 PNG、A0/A3 PDF、HTML 及排版规则；不复制第三方 logo 或页面素材。字体仅作本地渲染，外部复用、生产和再分发须逐项复核。"
     }
   ]
 }

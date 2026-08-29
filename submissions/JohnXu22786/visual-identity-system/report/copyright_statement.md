@@ -9,7 +9,7 @@ All submitted text, geometry, diagrams, PDFs, and static HTML are participant-pr
 - Public announcement, taskbook, standards, and laws are cited by source ID and used only for the stated design-basis or compliance-reference purpose.
 - The six case entries are reference-only. Their official URLs, publisher, access date, publication-date status, attribution, permitted uses, and prohibited uses are recorded per item in sources.json. No case logo, screenshot, page image, or page-specific design asset is copied.
 - Geometry, metrics, diagrams, colour drafts, icon rules, layouts, HTML, and PDFs are original package outputs. Geometry is provisional and is not an official boundary or planning control.
-- Fonts are legally embeddable system/OFL resources used for rendering; font files are not redistributed in this package. English surfaces were checked for functional Chinese residue.
+- Fonts are rendering inputs, not a blanket rights claim: the current Noto Sans SC embedding source and system Latin font terms remain verification pending; font files are not redistributed in this package. English surfaces are checked for functional Chinese residue after each export.
 
 ## Rights and review limits
 
