@@ -221,6 +221,126 @@
       "formula": "count(annual programme rows in proposal.md)",
       "confidence": "high",
       "assumptions": []
+    },
+    "route_review_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md"],
+      "formula": "reviewed_route_drafts / route_drafts_presented",
+      "confidence": "unknown",
+      "assumptions": ["Pilot sample, denominator and threshold are to_verify before the stage gate."],
+      "reason": "No operational pilot or current-site baseline is available."
+    },
+    "readability_review_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md"],
+      "formula": "human_reviewed_versions / versions_presented",
+      "confidence": "unknown",
+      "assumptions": ["Pilot sample, denominator and threshold are to_verify before the stage gate."],
+      "reason": "No operational pilot or current-site baseline is available."
+    },
+    "supply_hint_directional_error_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md"],
+      "formula": "directionally_incorrect_hints / hints_reviewed",
+      "confidence": "unknown",
+      "assumptions": ["Direction definition and pilot denominator are to_verify with merchants."],
+      "reason": "No shadow-test observation exists yet."
+    },
+    "source_card_verified_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md"],
+      "formula": "source_cards_with_current_proof / source_cards_presented",
+      "confidence": "unknown",
+      "assumptions": ["Proof standard and sample are to_verify with the source administrator."],
+      "reason": "No merchant source-card pilot has been run."
+    },
+    "handover_mismatch_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md"],
+      "formula": "mismatched_candidate_handover_records / candidate_records_reviewed",
+      "confidence": "unknown",
+      "assumptions": ["Professional review sample and mismatch definition are to_verify."],
+      "reason": "No cold-chain candidate protocol has been run."
+    },
+    "booking_fallback_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md"],
+      "formula": "bookings_completed_by_offline_or_queue_fallback / booking_requests",
+      "confidence": "unknown",
+      "assumptions": ["Pilot denominator and reporting interval are to_verify."],
+      "reason": "No shared-equipment booking service exists in the concept package."
+    },
+    "knowledge_review_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md"],
+      "formula": "knowledge_answers_sampled_by_educator / knowledge_answers_presented",
+      "confidence": "unknown",
+      "assumptions": ["Sampling plan and acceptable review interval are to_verify."],
+      "reason": "No food-knowledge service baseline is available."
+    },
+    "allergen_omission_count": {
+      "status": "unknown",
+      "value": null,
+      "unit": "count",
+      "source_files": ["proposal.md"],
+      "formula": "known_allergen_omissions_found_in_review",
+      "confidence": "unknown",
+      "assumptions": ["Original labels and professional review scope are to_verify before any test."],
+      "reason": "No menu or allergen pilot has been supplied."
+    },
+    "wayfinding_access_pass_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md"],
+      "formula": "accessible_routes_passed_in_walkthrough / accessible_routes_tested",
+      "confidence": "unknown",
+      "assumptions": ["Walkthrough protocol and accessible-route definition are to_verify."],
+      "reason": "No on-site accessibility walkthrough has been performed."
+    },
+    "maintenance_review_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md"],
+      "formula": "maintenance_suggestions_confirmed_by_technician / maintenance_suggestions",
+      "confidence": "unknown",
+      "assumptions": ["Technician sampling and service window are to_verify."],
+      "reason": "No equipment-service pilot or asset register is available."
+    },
+    "activity_access_parity": {
+      "status": "unknown",
+      "value": null,
+      "unit": "index",
+      "source_files": ["proposal.md"],
+      "formula": "compare_accessible_and_standard_signup_completion_by_same_activity_window",
+      "confidence": "unknown",
+      "assumptions": ["Privacy-safe comparison method and sample are to_verify."],
+      "reason": "No activity sign-up baseline exists."
+    },
+    "annual_notice_review_rate": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": ["proposal.md"],
+      "formula": "annual_notice_rows_with_joint_review / annual_notice_rows_published",
+      "confidence": "unknown",
+      "assumptions": ["Annual reporting fields and reviewer roster are to_verify."],
+      "reason": "No annual operating cycle has occurred."
     }
   }
 }

@@ -421,7 +421,7 @@
    "mandatory": true,
    "report_sections": [
     "蓝绿空间、公共空间与城市风貌",
-    "品牌与食物系统（FoodChain JZ 原创）"
+    "蓝绿空间、公共空间与城市风貌"
    ],
    "geojson_layers": [
     "geometry/green_space.geojson"
@@ -681,7 +681,7 @@
    "mandatory": true,
    "report_sections": [
     "重点区域详细设计",
-    "品牌与食物系统（FoodChain JZ 原创）"
+    "蓝绿空间、公共空间与城市风貌"
    ],
    "geojson_layers": [
     "geometry/key_areas.geojson",
@@ -716,7 +716,7 @@
    "title_zh": "百年京张文化、中关村文化与AI新文化融合叙事设计",
    "mandatory": true,
    "report_sections": [
-    "品牌与食物系统（FoodChain JZ 原创）",
+    "蓝绿空间、公共空间与城市风貌",
     "设计依据与资料清单"
    ],
    "geojson_layers": [
@@ -775,5 +775,41 @@
    ],
    "evidence_summary_zh": "agent.6 以 4 类年度活动品牌（开放日/体验周/季度通报/市场剧场文化节）+ 3 阶段分期（1-3/3-5/5-10 年）+ 决策门控机制 + 7 类用户与协同主体（主管部门/运营机构/高校/企业/社区/志愿者）+ 食物系统开发者社区（探索）+ 开发者社区机制（开源组件/导视数据接口/年度积分激励）+ 人才/企业转化机制回应；不预设招商、资金或产值承诺。"
   }
- ]
+  ],
+  "requirements_traceability": {
+    "status": "complete_with_explicit_data_gaps",
+    "source_of_truth": "refs/brief_site-package_agent_taskbook.json",
+    "note": "The arrays below are an audit contract: each task, supplementary review dimension and forbidden/boundary clause points to human-readable sections, figures, metrics and evidence records. Unknown or to_verify items are not treated as facts.",
+    "agent_tasks": [
+      {"requirement_id":"agent.1","proposal_anchors":["设计依据与资料清单","三层范围工作框架","统筹研究范围产业与未来城市研究","食链智证视觉识别与 Logo 方向"],"drawing_refs":["drawings/a0-boards.pdf","drawings/a3-booklet.pdf","assets/figures/site-overview.png","assets/figures/land-use-structure.png"],"metric_refs":["site_area_sqm","key_area_count"],"evidence_refs":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509","DATA-SRC-AGENT-TASKBOOK-20260518","A-BOUNDARY-001","A-TM-001","BOUNDARY_TRUST"]},
+      {"requirement_id":"agent.2","proposal_anchors":["统筹研究范围产业与未来城市研究","六个可追溯生态参照","外部协同"],"drawing_refs":["assets/figures/site-overview.png","assets/figures/metrics-evidence.png","drawings/a0-boards.pdf"],"metric_refs":["global_case_count","annual_program_count","land_use_zone_count"],"evidence_refs":["CASE-FABLABS","CASE-STATION-F","CASE-BLOCK71","CASE-FOODVALLEY","CASE-GROWNYC","CASE-FAO-URBAN-FOOD","A-DESIGN-001"]},
+      {"requirement_id":"agent.3","proposal_anchors":["AI 创新生态、人才画像与 AI+ 场景","12 张场景卡","三项产业测试协议","空间边界与几何证据登记"],"drawing_refs":["assets/figures/key-areas.png","assets/figures/mobility-bluegreen.png","drawings/a3-booklet.pdf"],"metric_refs":["scenario_card_count","industry_test_scenario_count","persona_count","route_review_rate","handover_mismatch_rate"],"evidence_refs":["DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES","DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW","A-PRIVACY-001","PROFESSIONAL_EVIDENCE"]},
+      {"requirement_id":"agent.4","proposal_anchors":["重点区域详细设计","蓝绿空间、公共空间与城市风貌","用地、建筑规模与拆改留方案"],"drawing_refs":["assets/figures/key-areas.png","assets/figures/blue-green.png","drawings/a0-boards.pdf"],"metric_refs":["landmark_count","scenario_node_count","green_ratio","public_space_ratio"],"evidence_refs":["DATA-SRC-AGENT-TASKBOOK-20260518","DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","A-CONTROLS-001","KEY_AREAS_TRUST","VISUAL_STATIC"]},
+      {"requirement_id":"agent.5","proposal_anchors":["设计依据与资料清单","统筹研究范围产业与未来城市研究","食链智证视觉识别与 Logo 方向","蓝绿空间、公共空间与城市风貌","参考资料"],"drawing_refs":["assets/figures/site-overview.png","assets/figures/key-areas.png","assets/figures/blue-green.png","assets/figures/site-overview.en.png"],"metric_refs":["global_case_count","landmark_count"],"evidence_refs":["DATA-SRC-AGENT-TASKBOOK-20260518","A-TM-001","VISUAL_STATIC"]},
+      {"requirement_id":"agent.6","proposal_anchors":["更新项目清单、实施政策与分期计划","指标体系、面积复算与合规矩阵","风险、版权与合规说明"],"drawing_refs":["assets/figures/metrics-evidence.png","drawings/a0-boards.pdf","drawings/a3-booklet.pdf"],"metric_refs":["phase_count","annual_program_count","annual_notice_review_rate"],"evidence_refs":["DATA-SRC-AGENT-TASKBOOK-20260518","A-EVENT-001","A-PRIVACY-001","A-DATA-001","DETERMINISTIC_VALIDATION"]}
+    ],
+    "review_dimensions": [
+      {"dimension_id":"objective_alignment","title_zh":"目标契合度","proposal_anchors":["设计依据与资料清单","三层范围工作框架","三大定位转译"],"drawing_refs":["assets/figures/site-overview.png","assets/figures/land-use-structure.png"],"metric_refs":["site_area_sqm"],"evidence_refs":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509","DATA-SRC-AGENT-TASKBOOK-20260518","A-BOUNDARY-001"]},
+      {"dimension_id":"function_match","title_zh":"功能匹配度","proposal_anchors":["五大功能与产业机制","总体设计范围城市更新与控规深度城市设计"],"drawing_refs":["assets/figures/land-use-structure.png","assets/figures/key-areas.png"],"metric_refs":["key_area_count","phase_count"],"evidence_refs":["DATA-SRC-AGENT-TASKBOOK-20260518","A-DESIGN-001"]},
+      {"dimension_id":"brand_identity","title_zh":"品牌识别度","proposal_anchors":["食链智证视觉识别与 Logo 方向","蓝绿空间、公共空间与城市风貌"],"drawing_refs":["assets/figures/site-overview.png","assets/figures/key-areas.png"],"metric_refs":["landmark_count"],"evidence_refs":["DATA-SRC-AGENT-TASKBOOK-20260518","A-TM-001","VISUAL_STATIC"]},
+      {"dimension_id":"regional_synergy","title_zh":"区域协同性","proposal_anchors":["外部协同","三层范围工作框架"],"drawing_refs":["assets/figures/site-overview.png"],"metric_refs":["global_case_count","annual_program_count"],"evidence_refs":["DATA-SRC-AGENT-TASKBOOK-20260518","A-DESIGN-001"],"data_gap":"外部对象未在本包中虚构坐标或合作关系；具体接口 to_verify."},
+      {"dimension_id":"planning_innovation","title_zh":"规划创新性","proposal_anchors":["总体设计范围城市更新与控规深度城市设计","用地、建筑规模与拆改留方案","交通、轨道、市政与公共服务设施","蓝绿空间、公共空间与城市风貌"],"drawing_refs":["assets/figures/land-use-structure.png","assets/figures/mobility-bluegreen.png"],"metric_refs":["green_ratio","public_space_ratio"],"evidence_refs":["MOHURD-URBAN-DESIGN-MEASURES","MOHURD-CONTROL-DETAILED-PLANNING","A-CONTROLS-001"]},
+      {"dimension_id":"industry_support","title_zh":"产业支撑度","proposal_anchors":["六个可追溯生态参照","三项产业测试协议","更新项目清单、实施政策与分期计划"],"drawing_refs":["assets/figures/key-areas.png","assets/figures/metrics-evidence.png"],"metric_refs":["global_case_count","industry_test_scenario_count"],"evidence_refs":["CASE-FOODVALLEY","CASE-GROWNYC","CASE-FAO-URBAN-FOOD","A-EVENT-001"]},
+      {"dimension_id":"scenario_perceptibility","title_zh":"场景可感知度","proposal_anchors":["食育慢行回路的体验序列","12 张场景卡","重点区域详细设计"],"drawing_refs":["assets/figures/key-areas.png","assets/figures/blue-green.png"],"metric_refs":["scenario_card_count","scenario_node_count","route_review_rate"],"evidence_refs":["A-PRIVACY-001","PROFESSIONAL_EVIDENCE"]},
+      {"dimension_id":"spatial_clarity","title_zh":"空间明确性","proposal_anchors":["空间边界与几何证据登记","重点区域详细设计","指标体系、面积复算与合规矩阵"],"drawing_refs":["assets/figures/site-overview.png","assets/figures/key-areas.png","drawings/a0-boards.pdf"],"metric_refs":["site_area_sqm","key_area_count","green_ratio","public_space_ratio"],"evidence_refs":["geometry/site_boundary.geojson","geometry/key_areas.geojson","DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","A-BOUNDARY-001","SPATIAL_REVIEW"]},
+      {"dimension_id":"transferability","title_zh":"可转化性","proposal_anchors":["三项产业测试协议","更新项目清单、实施政策与分期计划","风险、版权与合规说明"],"drawing_refs":["drawings/a0-boards.pdf","drawings/a3-booklet.pdf"],"metric_refs":["phase_count","annual_program_count","annual_notice_review_rate"],"evidence_refs":["A-EVENT-001","A-CONTROLS-001","DETERMINISTIC_VALIDATION"]},
+      {"dimension_id":"expression_completeness","title_zh":"表达完整性","proposal_anchors":["13 个固定二级标题","参考资料","中英文双语文件配对"],"drawing_refs":["assets/figures/site-overview.png","assets/figures/land-use-structure.png","assets/figures/key-areas.png","assets/figures/mobility-bluegreen.png","assets/figures/blue-green.png","assets/figures/metrics-evidence.png","drawings/a0-boards.pdf","drawings/a3-booklet.pdf"],"metric_refs":["site_area_sqm","green_ratio","public_space_ratio"],"evidence_refs":["VISUAL_STATIC","DETERMINISTIC_VALIDATION"]},
+      {"dimension_id":"public_compliance","title_zh":"公开合规性","proposal_anchors":["风险、版权与合规说明","居民意见通道","指标体系、面积复算与合规矩阵"],"drawing_refs":["assets/figures/metrics-evidence.png","assets/figures/blue-green.png"],"metric_refs":["annual_notice_review_rate","allergen_omission_count"],"evidence_refs":["DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES","DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW","A-PRIVACY-001","A-TM-001"]},
+      {"dimension_id":"international_communication","title_zh":"国际传播力","proposal_anchors":["国际传播","参考资料","双语 Logo/导视方向"],"drawing_refs":["assets/figures/site-overview.en.png","assets/figures/key-areas.en.png","assets/figures/metrics-evidence.en.png"],"metric_refs":["global_case_count","annual_program_count"],"evidence_refs":["CASE-FABLABS","CASE-STATION-F","CASE-FOODVALLEY","CASE-FAO-URBAN-FOOD","A-TM-001"]},
+      {"dimension_id":"long_term_operation_value","title_zh":"长期运营价值","proposal_anchors":["开发者社区与年度活动","更新项目清单、实施政策与分期计划","风险、版权与合规说明"],"drawing_refs":["assets/figures/metrics-evidence.png","drawings/a0-boards.pdf"],"metric_refs":["annual_program_count","phase_count","annual_notice_review_rate"],"evidence_refs":["A-EVENT-001","A-PRIVACY-001","DETERMINISTIC_VALIDATION"]}
+    ],
+    "disabled_items_and_boundaries": [
+      {"item_id":"privacy_or_classified_data","clause_zh":"不得使用个人隐私、涉密或非公开空间数据；不得大规模个体识别式监控。","proposal_anchors":["12 张场景卡","风险、版权与合规说明"],"drawing_refs":["assets/figures/blue-green.png","assets/figures/mobility-bluegreen.png"],"metric_refs":["handover_mismatch_rate","allergen_omission_count"],"evidence_refs":["A-PRIVACY-001","DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES","PROFESSIONAL_EVIDENCE"],"status":"controlled"},
+      {"item_id":"fabricated_endorsement_or_approval","clause_zh":"不得伪造官方背书、审批、政府承诺、合作或已批准运营。","proposal_anchors":["编制定位","外部协同","更新项目清单、实施政策与分期计划"],"drawing_refs":["assets/figures/site-overview.png","drawings/a0-boards.pdf"],"metric_refs":["annual_program_count","phase_count"],"evidence_refs":["DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509","A-EVENT-001","A-DESIGN-001"],"status":"controlled"},
+      {"item_id":"statutory_or_engineering_conclusion","clause_zh":"不得给出控规调整、容积率、高度、拆改留、道路红线、轨道、桥隧、市政容量或投资结论。","proposal_anchors":["用地、建筑规模与拆改留方案","交通、轨道、市政与公共服务设施","风险、版权与合规说明"],"drawing_refs":["assets/figures/land-use-structure.png","assets/figures/mobility-bluegreen.png"],"metric_refs":["site_area_sqm","green_ratio","public_space_ratio"],"evidence_refs":["A-CONTROLS-001","A-DATA-001","MOHURD-CONTROL-DETAILED-PLANNING"],"status":"controlled"},
+      {"item_id":"official_boundary_or_land_decision","clause_zh":"provisional 几何不得作为 official redline、权属、选址或精确面积依据；正式数据到位后复算。","proposal_anchors":["空间边界与几何证据登记","指标体系、面积复算与合规矩阵"],"drawing_refs":["assets/figures/site-overview.png","assets/figures/key-areas.png"],"metric_refs":["site_area_sqm","green_ratio","public_space_ratio"],"evidence_refs":["geometry/site_boundary.geojson","geometry/key_areas.geojson","DATA-SRC-PROVISIONAL-BOUNDARIES-20260605","A-BOUNDARY-001","SPATIAL_REVIEW"],"status":"data_gap"},
+      {"item_id":"unauthorized_rights_or_assets","clause_zh":"不得未经授权使用字体、图片、商标、人物、论文图像或企业标识。","proposal_anchors":["食链智证视觉识别与 Logo 方向","风险、版权与合规说明","参考资料"],"drawing_refs":["assets/figures/site-overview.png","assets/figures/key-areas.png"],"metric_refs":["global_case_count","landmark_count"],"evidence_refs":["A-TM-001","report/copyright_statement.md","sources.json"],"status":"controlled_with_rights_to_verify"},
+      {"item_id":"agent_task_coverage","clause_zh":"agent.1—agent.6 必须均有实质回应，不得只写口号。","proposal_anchors":["统筹研究范围产业与未来城市研究","重点区域详细设计","AI 创新生态、人才画像与 AI+ 场景","更新项目清单、实施政策与分期计划"],"drawing_refs":["assets/figures/metrics-evidence.png","assets/figures/site-overview.png"],"metric_refs":["scenario_card_count","industry_test_scenario_count","annual_program_count"],"evidence_refs":["requirements_traceability.agent_tasks","PROFESSIONAL_EVIDENCE","DETERMINISTIC_VALIDATION"],"status":"controlled"}
+    ]
+  }
 }

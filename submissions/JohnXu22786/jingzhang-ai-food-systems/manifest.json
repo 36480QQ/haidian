@@ -123,19 +123,19 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "dba0ed15c93b7af60d2379f84b5e4c27c72d28f6e6c437435b008e0b94b91a2f"
+      "sha256": "8187ba3c359c6ac06570e60b9921b9a5bacd4e756724f0cdfda899848c437759"
     },
     {
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "bc4dbb07912d92657e2367006e38b99351c52acd1259e29e093a61b5dcb80b6a"
+      "sha256": "89f4c2b7301693a0a6891a42a7a6a7bb5bd3d211d1b4af254b49ecce11acc004"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "de51809f1af140cdb028978fef51a936968a03f504f1e0a170bdb8e575b16d49"
+      "sha256": "d313edc59cf08505d2f4d4b6fe8034d7a1c466a36840b2bc08cb402388be8cfe"
     },
     {
       "path": "design_depth_matrix.json",
@@ -207,7 +207,7 @@
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "39711c20917fccf174fc01509eb005406d2651da09048f6eee7e42057402b3e6"
+      "sha256": "f4a9a5d2b3b2578c0f94f3c0905f7a173a9a3ed5cd016435182a3f4ddfbeb9d5"
     },
     {
       "path": "geometry/public_space.geojson",
@@ -231,7 +231,7 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "1ed972cac293e11c366a18607ed5d4530be63dc9f04310d1b4939577e7acc48e"
+      "sha256": "d65470c1e8db5389e671e13f079aee3285ff93ad41dbc2e2b0f6811058aa4050"
     },
     {
       "path": "proposal.en.md",
@@ -239,20 +239,26 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "14710d85c14db1a48e6270533dcd85ee5c0d767e7815ecdb01b7e9157dd6a0c9"
+      "sha256": "9b1c936f6ca8463fb8c6a14edce911d7dda6b7ae78b7566d653949ce2d87c38e"
     },
     {
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "426e557c3048f8666029a2d5db40afe98aeb2be3fc97e86dce5863f4a9c6d34c"
+      "sha256": "f04bcf4120acf6b4a83cbcc41c011e74505a993131a4ef77dd427c8e4b5beac2"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
       "sha256": "70a2e8c2fcc9ab02b4d3077b96236ecb3485ca1852b27a252a4caa9b607dce99"
+    },
+    {
+      "path": "visual/assets/asset_rights_ledger.json",
+      "role": "asset",
+      "required": true,
+      "sha256": "830592bb354b502ea18bfa87289e472ca3feb033a4b9dff6cf0bb7f5760b5e3e"
     },
     {
       "path": "report/narrative.md",
@@ -267,20 +273,20 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "596c9e375c7411b581e4bbefe2a53c6b7756c79f5a7bc6d78ec6800ab164b7b7"
+      "sha256": "54e34a702dc9c0ca2e268c0e110c1e8c2e4b0a53089c97062e92082c71455bef"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "4a9f415939affebff4c0c86ff6db249bb51358972c9aa7988a9e3e1eedf18d60"
+      "sha256": "65dc5cb76f0bd6a78ca8cbfa519a7207fa87f9008a131dbc13afbc3ac2340207"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "696ff0732c53d718cfcef44022308214ea0042687a72371c4b5fe61fe957713e"
+      "sha256": "b388394e5cdd9ebe909d3900c6d972646a787fcf8dc9b50f323fa293928fbea5"
     },
     {
       "path": "sources.json",
@@ -300,14 +306,14 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "447ebfe7b766c37d51ab2e338dc39f027735a7f495455e22de95d975d0c3fce8"
+      "sha256": "318a0a3372ec9c0935b55e3329b7d8063007df3f4e078555ed9194639420b2a0"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "9ce4bb5a83d76e0233569d165671c1f0ee466e06bb89f4c6c53108620e8bc7c3"
+      "sha256": "109eeb817731b140f9b8bad9eace5a356893444ced6ac3b9788c711b821e9296"
     }
   ],
   "validation_claim": {

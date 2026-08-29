@@ -9,3 +9,11 @@
 - Reconciled formal `site_area_sqm`, `green_ratio` and `public_space_ratio` values across geometry, `metrics.json` and visual `data-value` attributes; all remain provisional.
 - Replaced agent metadata so this package records direct Codex assembly without an external harness or background agent.
 - Self-check reports and manifest hashes are generated only after final package validation.
+
+## v0.2 - 2026-08-29
+
+- Added explicit spatial/geometric evidence registration for `SITE-001` and the three key areas; official boundaries, ownership and controls remain `unknown/to_verify`.
+- Expanded all 12 scenario cards and all 3 industry test protocols to show inputs, model and human review, outputs, responsibility, metrics and exit conditions.
+- Added a machine-readable requirements traceability block covering agent.1-agent.6, all 13 review dimensions, disabled items and boundary clauses.
+- Added 12 operational metrics as honest `unknown` values plus an operational-baseline assumption; no local scorer result is treated as CocoSgt review.
+- Updated the phase language to near 1-3 years, mid 3-5 years and long 5-10 years with stage gates.

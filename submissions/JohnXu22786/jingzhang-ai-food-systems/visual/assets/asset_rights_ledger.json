@@ -1,0 +1,18 @@
+{
+  "updated": "2026-08-29",
+  "note": "Asset rights ledger for PR review; not legal advice.",
+  "controls": [
+    "No webpage images, institutional marks, portraits, protected font files or third-party page chrome are copied into this package.",
+    "External references retain publisher, URL, access date, license and allowed/prohibited uses in sources.json.",
+    "Concept figures and geometry are participant-authored or provisional and are for community display/review only.",
+    "Official boundaries, title, permissions, brand clearance, font provenance and independent redistribution remain to_verify."
+  ],
+  "asset_groups": [
+    {"group": "concept_figures", "paths": ["assets/figures/*.png"], "provenance": "participant-authored concept diagrams", "rights": "COMMUNITY-DISPLAY-ONLY", "allowed_use": "PR review and community display", "prohibited_or_pending": "external relicensing, commercial use, institutional/person implication to_verify"},
+    {"group": "drawings", "paths": ["drawings/*.pdf"], "provenance": "layout from package text, GeoJSON and figures", "rights": "COMMUNITY-DISPLAY-ONLY", "allowed_use": "concept expression and review", "prohibited_or_pending": "not statutory, construction or approval drawings"},
+    {"group": "concept_geometry", "paths": ["geometry/*.geojson"], "provenance": "package-authored conceptual layers", "rights": "provisional; official_boundary=false", "allowed_use": "spatial relationship and formula recalculation", "prohibited_or_pending": "redline, title, site decision, control or precise official area to_verify"},
+    {"group": "html_previews", "paths": ["visual/index.html", "visual/index.en.html", "report/*.html"], "provenance": "package text and local figures with system-font fallback", "rights": "participant-authored local rendering", "allowed_use": "offline review", "prohibited_or_pending": "font provenance and independent redistribution to_verify"},
+    {"group": "external_references", "paths": ["sources.json CASE-* and DATA-SRC-*"], "provenance": "public web or cleared user taskbook, text reference only", "rights": "reference_only or cleared_user_document", "allowed_use": "case/method/source summary", "prohibited_or_pending": "no copied image, logo, page chrome, endorsement, partnership or approval"},
+    {"group": "names_and_logos", "paths": ["proposal.md, proposal.en.md and figure text"], "provenance": "package concept names FoodChain JZ / 食链智证", "rights": "unregistered and uncleared", "allowed_use": "internal package codename", "prohibited_or_pending": "trademark search, conflict and external authorization to_verify"}
+  ]
+}

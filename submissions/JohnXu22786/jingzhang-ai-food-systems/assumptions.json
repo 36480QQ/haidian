@@ -49,6 +49,13 @@
       "statement_en": "Monthly developer clinics, quarterly co-design, the annual FoodChain Evidence day and annual notice are suggested operations, not official events or investment commitments.",
       "category": "operation",
       "status": "concept"
+    },
+    {
+      "assumption_id": "A-OPERATIONAL-001",
+      "statement_zh": "12 项运营指标没有现状或试点基线；样本、分母、阈值、记录责任人和复核周期须在试点章程中由运营方与公众共同确认，当前均为 unknown/to_verify。",
+      "statement_en": "The 12 operational metrics have no current or pilot baseline; sample, denominator, threshold, owner and review cadence must be confirmed in a pilot charter with operators and the public, and remain unknown/to_verify for now.",
+      "category": "operational_baseline",
+      "status": "accepted_limitation"
     }
   ]
 }
