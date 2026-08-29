@@ -97,16 +97,16 @@
       "id": "F07",
       "slug": "ai-ecosystem",
       "paths": {"zh": "assets/figures/ai-ecosystem.png", "en": "assets/figures/ai-ecosystem.en.png"},
-      "title_zh": "AI 创新生态：三区两翼协同回路",
-      "title_en": "AI Innovation Ecosystem: Three Areas + Two Wings",
-      "judgment_zh": "空间、人才、算力、数据、场景与治理通过 Gate 形成可复核循环。",
-      "judgment_en": "Space, talent, compute, data, scenarios, and governance form a gated, auditable loop.",
-      "alt_zh": "F07 三区两翼与土地、空间、产业、资金、人才、算力、数据、场景八要素的有 Gate 协同回路。",
-      "alt_en": "F07 gated collaboration loop joining Three Areas and Two Wings with land, space, industry, capital, talent, compute, data, and scenarios.",
-      "anchors": ["CL07", "agent.2", "background cases only"],
+      "title_zh": "AI 创新生态：八要素内环与五域未激活接口",
+      "title_en": "AI Innovation Ecosystem: Internal Loop + Five Inactive Interfaces",
+      "judgment_zh": "八要素通过 Gate 形成可复核内环；RI01—RI05 仅以候选 / 未授权合同停在授权边界外。",
+      "judgment_en": "Eight elements form a gated, auditable internal loop; RI01–RI05 remain Candidate / Not Authorized outside the authorization boundary.",
+      "alt_zh": "F07 三区两翼与八要素的有 Gate 内环；底部外层带列出北纬社区、未来科学城、怀柔科学城、经开区、京津冀五个空心虚线候选接口、各自首件交付物与未授权状态，全部与内环断开。",
+      "alt_en": "F07 gated internal loop joining Three Areas and Two Wings with eight elements; a detached lower outer band lists five hollow dashed candidate interfaces, each with its first deliverable and Not Authorized status.",
+      "anchors": ["CL07", "agent.1", "agent.2", "IM12", "RI01-RI05", "regional_interface_contract_count=5", "regional_interface_authorized_count=0", "participant-authored design hypotheses"],
       "a3_page": 8,
       "a0_board": 2,
-      "status_terms": ["background-only", "design-target"]
+      "status_terms": ["background-only", "design-target", "candidate_not_authorized", "authorization gate closed"]
     },
     {
       "id": "F08",
@@ -159,14 +159,14 @@
       "paths": {"zh": "assets/figures/operations-pathway.png", "en": "assets/figures/operations-pathway.en.png"},
       "title_zh": "运行、接管、申诉、停止与撤场",
       "title_en": "Operate, Take Over, Appeal, Stop, and Remove",
-      "judgment_zh": "9 状态、15 转换、SC10＋IM06 唯一首用、投诉申诉与 13 项负处置共同约束退出。",
-      "judgment_en": "Nine states, fifteen transitions, the sole SC10+IM06 first use, complaint and appeal, and thirteen adverse dispositions jointly constrain exit.",
-      "alt_zh": "F11 运行、Human Takeover、投诉申诉、暂停停止、撤场归档的完整路径；含 SC10 加 IM06 唯一首用预检和保留的不通过、停止或 unknown 结果。",
-      "alt_en": "F11 complete path for operation, Human Takeover, complaint and appeal, pause and stop, removal and archive; includes the sole SC10 plus IM06 preflight and retained fail, stop, or unknown outcomes.",
-      "anchors": ["CL06", "CL09", "CL10", "9 states", "15 transitions", "SC10+IM06 only", "16 red-team tests", "13 fail-stop-unknown"],
+      "judgment_zh": "9 状态、15 转换与唯一 SC10＋IM06 首用仍约束退出；区域接口准备度仅为 5 合同 / 0 授权 / 0 运行。",
+      "judgment_en": "Nine states, fifteen transitions, and the sole SC10+IM06 first use still constrain exit; regional-interface readiness is only 5 contracts / 0 authorized / 0 operating.",
+      "alt_zh": "F11 运行、Human Takeover、投诉申诉、暂停停止、撤场归档的完整路径；含唯一首用预检、保留的不通过停止或 unknown 结果，以及与生命周期分隔的区域接口 5 合同、0 授权、0 运行小型状态块。",
+      "alt_en": "F11 complete path for operation, Human Takeover, complaint and appeal, pause and stop, removal and archive; includes the sole first-use preflight, retained fail, stop, or unknown outcomes, and a lifecycle-separated mini status block showing five regional-interface contracts, zero authorized, and zero operating.",
+      "anchors": ["CL06", "CL09", "CL10", "9 states", "15 transitions", "SC10+IM06 only", "16 red-team tests", "13 fail-stop-unknown", "RI contracts 5", "RI authorized 0", "RI operating 0"],
       "a3_page": 12,
       "a0_board": 2,
-      "status_terms": ["Human Takeover", "complaint", "appeal", "stop", "remove", "archive", "unknown"]
+      "status_terms": ["Human Takeover", "complaint", "appeal", "stop", "remove", "archive", "unknown", "candidate_not_authorized"]
     }
   ]
 }

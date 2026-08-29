@@ -317,15 +317,15 @@
     "protocol_selectors": "69/69",
     "selector_expanded_targets": 317,
     "sources": "19 / 0 orphan",
-    "metrics": "27 total / 21 known / 6 unknown / 19 independently recomputable",
+    "metrics": "29 total / 23 known / 6 unknown / 21 independently recomputable; Phase 2 spatial summary remains 21 known / 19 independently recomputable",
     "red_team": "16 tests / 13 retained fail-stop-unknown",
     "proposal_sections": "13 zh / 13 en",
     "geometry_metrics_sources_protocol_mutation_allowed": false
   },
   "allowed_phase4_mutation": {
-    "scope": "presentation layer only",
-    "files": "phase4 audit/freeze/contracts/generator; cover; four PDFs; four HTML carriers; F08/F11 presentation renderings; presentation CSS/JS; manifest/self_check/changelog/copyright statement",
-    "restriction": "no new facts, sources, metrics, geometry, IDs, scenarios, actions, claims, authority, evidence grade, or implementation status"
+    "scope": "presentation layer plus bounded R4 IM12 regional-interface structured authority",
+    "files": "phase4 audit/freeze/contracts/generator; cover; four PDFs; four HTML carriers; F08/F11 presentation renderings; presentation CSS/JS; manifest/self_check/changelog/copyright statement; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers; R4 contracts, IM12 pointer, two contract-state metrics, F07, F11 readiness, bilingual proposal/registry/layout carriers",
+    "restriction": "No geometry, source claim, approval, external capability, partnership, appointment, cost, SC13, IM14, F12, additional flagship, or additional first use."
   },
   "phase3_phase4_handoff": {
     "schema": "jz-phase3-phase4-handoff/v1",
@@ -361,7 +361,9 @@
         "assets/figures/mobility-bluegreen.en.png",
         "assets/figures/mobility-bluegreen.png",
         "assets/figures/site-overview.en.png",
-        "assets/figures/site-overview.png"
+        "assets/figures/site-overview.png",
+        "assets/figures/ai-ecosystem.en.png",
+        "assets/figures/ai-ecosystem.png"
       ],
       "allowed_phase4_output_overrides": [
         "drawings/a0-boards.en.pdf",
@@ -374,11 +376,11 @@
         "visual/assets/visual.css",
         "visual/assets/visual.js",
         "visual/index.en.html",
-        "visual/index.html"
+        "visual/index.html",
+        "assets/figures/operations-pathway.en.png",
+        "assets/figures/operations-pathway.png"
       ],
       "phase3_outputs_preserved_byte_for_byte": [
-        "assets/figures/operations-pathway.en.png",
-        "assets/figures/operations-pathway.png",
         "assets/figures/scenario-matrix.en.png",
         "assets/figures/scenario-matrix.png"
       ],
@@ -390,7 +392,8 @@
         "handoff_audit": 0
       },
       "nonzero_phase3_byte_checks_mean": "historical bytes were explicitly superseded; they are expected diagnostics on the final candidate and are not Phase 3 semantic failures",
-      "restriction": "Only the exact listed paths may differ from the Phase 3 byte snapshot, and each current byte must match its declared Phase 2 repair or Phase 4 generation owner. Geometry, metrics, sources, evidence grades, protocol/governance/red-team authority, IDs, claims, and implementation status remain outside the override set."
+      "restriction": "Only the exact listed paths may differ from the Phase 3 byte snapshot, and each current byte must match its declared Phase 2 repair or Phase 4 generation owner. Geometry, metrics, sources, evidence grades, protocol/governance/red-team authority, IDs, claims, and implementation status remain outside the override set.",
+      "r4_owner_contract": "visual/assets/r4-regional-interface-generation-contract.json"
     },
     "full_chain_mode": {
       "phase3_historical_replay": "Restore the Phase 3 generator and protocol auditor at the submission root of detached d673846a83d03e6adafa48d5b068601a3d88330a; generator --check and protocol audit with and without --require-generated must all exit 0.",
@@ -631,5 +634,44 @@
       "R3-E bilingual Markdown authority, official-reference tier normalization, cross-media carrier assertions, and PDF layout repair only"
     ],
     "authority": "local repair only; no commit, push, PR, approval, publication, or official-score claim"
+  },
+  "r4_regional_interface_override": {
+    "schema": "jz-r4-regional-interface-override/v1",
+    "authority": "R4 changes IM12 regional-interface contracts, their exact bilingual carriers, and the R5 top-level OSM evidence-separation crosswalk in sources.json only. The protected 28-record source array, geometry, SC01–SC12, IM01–IM13, the sole SC10+IM06 first use, Phase 3 state/authority/governance semantics, cost, operators, controllers, and real-world approval remain unchanged.",
+    "interface_ids": [
+      "RI01",
+      "RI02",
+      "RI03",
+      "RI04",
+      "RI05"
+    ],
+    "status": "5 candidate contracts / 0 authorized / 0 operating / 0 field or live exchanges",
+    "file_sha256": {
+      "assets/figures/ai-ecosystem.png": "413a3083c6463c9ab5d113fb3fbcebee8b48d39280e68d15ae47a5c1c0f0655c",
+      "assets/figures/ai-ecosystem.en.png": "154bf31c7b06fc66000d9a98900c52e56a79bce2641ef004e92d60f899a158cb",
+      "assets/figures/operations-pathway.png": "c4b29de5657934ccef645db914ab9aa56d62100906e47432639fd654614231c3",
+      "assets/figures/operations-pathway.en.png": "d6e600f2fa58aad8f964e989986cbf8a5cb19cde58636fdd6fdf1593a321480c",
+      "report/proposal.html": "39e2535a6cf593a68fadb35f5cd5cb18033889ba51aaa1f2281936cc786f7ae5",
+      "report/proposal.en.html": "6a1b2273eae6486cd6f079ca1c571910a5417ae571858325d7c24f4971d98539",
+      "metrics.json": "111bca3622fffe098f0f41121aab496099f38dcca7e8a141a33426ba8d68f16d",
+      "assumptions.json": "870e9089313272ad531804643c736b6cf16c82b068c8d9884d44e6de2206249b",
+      "sources.json": "32627202cfcc56c09580f3ae29aee375cb27f7df417927ac8c590c9cbf4086ec",
+      "compliance_matrix.json": "a6336ee03516769a0a511bb845320ddcc06fc0ef9820cee0cc7bf41d62a9b8b9",
+      "design_depth_matrix.json": "94b4880e19033a5db9f383a84eca6f3332a4b4fadfbe51c923c56d3b56764862",
+      "proposal.md": "74d01206c58a93a2748ba8cc96f7572e712afd8f2e1bb5c47a8b0aa968bf9ce0",
+      "proposal.en.md": "848742d69ba842843ddff4c4ef3ef5436435ae36b9c5bb4315723b9aad061b91",
+      "visual/assets/phase4-figure-registry.json": "b7ea7916f06bd397a0ab630de618efda895e612979c1b732463a8b5edc56842f",
+      "visual/assets/phase4-layout-contract.json": "1cf8b0ce2be47da37ad261ba9eacde594a9f0db7de8da02d901ec03045e22c1b",
+      "visual/assets/regional-interface-contracts.json": "96d370bf605ba5b7094683f30025549a62620384cafcd881a2967ea6565a721c",
+      "visual/assets/r4-regional-interface-generator.js": "64738817a052a777fe8231edea452bc71af92c177ed0dd33944f311997f20ed1"
+    },
+    "output_overrides": [
+      "assets/figures/ai-ecosystem.png",
+      "assets/figures/ai-ecosystem.en.png",
+      "assets/figures/operations-pathway.png",
+      "assets/figures/operations-pathway.en.png"
+    ],
+    "generator": "visual/assets/r4-regional-interface-generator.js",
+    "contract": "visual/assets/r4-regional-interface-generation-contract.json"
   }
 }

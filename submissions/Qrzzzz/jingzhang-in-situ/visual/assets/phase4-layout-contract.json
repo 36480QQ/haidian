@@ -54,11 +54,11 @@
     {"page": 5, "role": "responsibility-transects", "main_judgment": "twelve unsurveyed candidates, three relational targets", "figures": ["F04"]},
     {"page": 6, "role": "metrics-evidence", "main_judgment": "evidence before promise; six unknowns remain visible", "figures": ["F05"]},
     {"page": 7, "role": "identity", "main_judgment": "one belt, three interfaces, one reversible grammar", "figures": ["F06"]},
-    {"page": 8, "role": "ecosystem", "main_judgment": "eight elements move through a gated loop", "figures": ["F07"]},
+    {"page": 8, "role": "ecosystem", "main_judgment": "eight elements move through a gated internal loop; five regional interfaces remain detached and unauthorized", "figures": ["F07"]},
     {"page": 9, "role": "scenario-authority", "main_judgment": "AI limits and Human Takeover are directly readable", "figures": ["F08"], "direct_summary": true},
     {"page": 10, "role": "landmarks-components", "main_judgment": "reviewable, correctable, withdrawable contributions", "figures": ["F09"]},
     {"page": 11, "role": "culture-wayfinding", "main_judgment": "three cultural strands, six-level wayfinding", "figures": ["F10"]},
-    {"page": 12, "role": "operations-exit", "main_judgment": "complaint, takeover, stop, removal, archive, and adverse outcomes", "figures": ["F11"], "direct_summary": true}
+    {"page": 12, "role": "operations-exit", "main_judgment": "complaint, takeover, stop, removal, archive, adverse outcomes, and regional-interface readiness 5/0/0", "figures": ["F11"], "direct_summary": true}
   ],
   "a0_boards": [
     {
@@ -73,7 +73,7 @@
       "board": 2,
       "role": "scenario-to-exit",
       "distant_read": "AI may assist; humans decide rights, safety, approval, stop, and reopen",
-      "midrange_read": ["SC01/SC05/SC10 flagships", "SC10+IM06 only", "Human Takeover", "13 adverse dispositions"],
+      "midrange_read": ["SC01/SC05/SC10 flagships", "SC10+IM06 only", "Human Takeover", "13 adverse dispositions", "regional interfaces: 5 contracts / 0 authorized / 0 operating"],
       "near_read": ["F06", "F07", "F08", "F09", "F10", "F11"],
       "dominant_figures": ["F08", "F11"]
     }
@@ -86,7 +86,7 @@
     "unknown_metrics": ["floor area ratio", "building height", "road area", "footfall", "accessible pass rate", "heritage-control area"],
     "provisional_key_areas": 3,
     "controller_unknown": 12,
-    "incomplete_or_unauthorized": ["legal review", "accessibility audit", "safety certification", "site survey", "operator appointment", "official approval"]
+    "incomplete_or_unauthorized": ["legal review", "accessibility audit", "safety certification", "site survey", "operator appointment", "official approval", "regional-interface authorization", "regional first-party factual basis and accountable interface roles"]
   },
   "outputs": [
     {"path": "assets/media/cover.webp", "role": "media_poster", "language": "neutral bilingual"},

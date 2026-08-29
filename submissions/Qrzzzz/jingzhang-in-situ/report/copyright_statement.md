@@ -16,12 +16,12 @@
 
 | 精确路径 | 作者/生成方式 | 来源与许可基础 | 嵌入/再分发 | 限制 | 状态 |
 |---|---|---|---|---|---|
-| `proposal.md`; `proposal.en.md`; `report/narrative.md` | 投稿者在 Codex 辅助下编写和修订 | 投稿者原创表达；事实和案例仅按 `sources.json` 的逐项边界引用；投稿标签 `COMMUNITY-DISPLAY-ONLY` | 随投稿包再分发 | AI 辅助不构成不侵权保证；英文版本已于 2026-08-27 对照专名、主张强度、编号、来源标记和限制完成终稿复核 | `cleared`；最终 SHA-256 由 manifest 逐路径记录 |
-| `agent.json`; `manifest.json`; `self_check.json`; `metrics.json`; `assumptions.json`; `sources.json`; `compliance_matrix.json`; `standard_matrix.json`; `design_depth_matrix.json`; `visual/assets/phase2-source-freeze.json` | 投稿者与仓库脚本生成/维护的结构化元数据 | 仓库 schema、任务书与已登记来源；不复制其他投稿的表达、图件或专有资产 | 随投稿包再分发 | schema 兼容不代表现实数据获专业确认；URL-only 来源只冻结 canonical metadata hash，不把它误写成网页内容 hash | `cleared`；2026-08-27 与最终 manifest 对账 |
+| `proposal.md`; `proposal.en.md`; `report/narrative.md` | 投稿者在 Codex 辅助下编写和修订 | 投稿者原创表达；事实和案例仅按 `sources.json` 的逐项边界引用；投稿标签 `COMMUNITY-DISPLAY-ONLY` | 随投稿包再分发 | AI 辅助不构成不侵权保证；最终中英文版本已于 2026-08-29 在全部来源与衍生物成型后，对照专名、主张强度、数字、编号、来源/限制和图位完成终稿复核 | `cleared`；逐路径 SHA-256 与结论见 `visual/assets/r5-final-snapshot-audit.json` |
+| `agent.json`; `manifest.json`; `self_check.json`; `metrics.json`; `assumptions.json`; `sources.json`; `compliance_matrix.json`; `standard_matrix.json`; `design_depth_matrix.json`; `visual/assets/phase2-source-freeze.json`; `visual/assets/regional-interface-contracts.json`; `visual/assets/r4-regional-interface-generation-contract.json`; `visual/assets/r5-final-snapshot-audit.json` | 投稿者与仓库脚本生成/维护的结构化元数据 | 仓库 schema、任务书与已登记来源；R4 五域功能、合同字段与验收/停止规则为投稿者原创设计假设；R5 只登记最终快照的来源分组、权利/双语复核范围和路径哈希，不复制外部机构内部材料、其他投稿表达、图件或专有资产 | 随投稿包再分发 | schema、合同或哈希完整不代表外部对象授权、合作、数据、能力或运行事实；五域当前固定为 5 合同 / 0 授权 / 0 运行 / 0 真实交换 | `cleared`；最终 SHA-256 由 manifest 与 R5 审计逐路径记录 |
 
 `sources.json` 中的全球案例仅允许短篇事实转述、署名和链接，不复制网页图片、Logo、地图、长段文字或版式，也不在本地镜像页面。案例机制属于 `background_only`，不得替代本地现状、法定控制、合作承诺或绩效证据。
 
-2026-08-27 的二期独立审核修复只为六条既有来源补齐主张与结构化 consumer。R3 于 2026-08-28 另行增加一条 `background_only` OSM/Overpass 来源：四个固定查询、原始响应、检索时间、原始/压缩/派生哈希、转换链与 ODbL 1.0 署名均随包保存；它只支持道路、铁路线索、公园、地标和粗粒度建筑肌理识别，不改变既有来源等级，也不进入 required design GeoJSON。
+两组 OSM 证据不可混写：2026-08-14 的早期边界错位核对只在仓库依据说明中保留 query/response hash，原始响应未登记、不可随包重放，是 0% 遗址公园相交和 667 m 命名道路平均偏移两项低置信度警示的唯一来源。R3 于 2026-08-28 另行增加一条 `background_only` OSM/Overpass 来源：四个固定查询、原始响应、检索时间、原始/压缩/派生哈希、转换链与 ODbL 1.0 署名均随包保存、可重放；它只支持道路、铁路线索、公园、地标和粗粒度建筑肌理识别，不回填 0%/667 m，不改变既有来源等级，也不进入 required design GeoJSON。逐组边界见 `sources.json#/r5_evidence_separation`。
 
 R3-E 于 2026-08-28 以 append-only 方式增加八条主管部门/政府公开网页或标准公告元数据，只保存发布者、URL、发布日期/检索日期、响应或附件哈希、用途与禁止用途，不再分发网页正文或标准附件。其允许用途仅为定位规划、权属查询、文保、无障碍、消防和慢行专业审查接口；页面可公开访问不等于授予正文/附件再分发权，也不等于项目级 GIS/CAD、专业签章、运营授权或批准。`visual/assets/r3e-official-source-snapshots.json#/rights_contract` 将 `full_response_bodies_redistributed`、`geometry_generation_allowed` 与 `professional_or_approval_claim_allowed` 均固定为 `false`。
 
@@ -48,11 +48,11 @@ GeoJSON 中的数值小数位只服务机器复算，不提高来源权威；对
 | F04 | `assets/figures/mobility-bluegreen.png` | `assets/figures/mobility-bluegreen.en.png` | R3 重生成；开放背景定位 CX01—CX12，只深化 CX02/CX05/CX10，并直接说明大钟寺场地条件→CX10→`SC10 + IM06 only`→Human Takeover；其余九条保持 candidate/not surveyed |
 | F05 | `assets/figures/metrics-evidence.png` | `assets/figures/metrics-evidence.en.png` | Phase 2 重生成；显示可复算计数、负/零/未知结果、来源哈希和重算触发链 |
 | F06 | `assets/figures/identity-system.png` | `assets/figures/identity-system.en.png` | 已生成；Logo 为原创几何，不使用铁路标识、企业商标或未授权字标 |
-| F07 | `assets/figures/ai-ecosystem.png` | `assets/figures/ai-ecosystem.en.png` | 已生成；全球案例机制仅作有来源的背景转述，不复制案例视觉资产 |
+| F07 | `assets/figures/ai-ecosystem.png` | `assets/figures/ai-ecosystem.en.png` | R4 重生成；内部八要素回路保持主视觉，RI01—RI05 仅以空心、虚线、断开的未授权插口呈现；不复制对象 Logo、地图或视觉资产 |
 | F08 | `assets/figures/scenario-matrix.png` | `assets/figures/scenario-matrix.en.png` | 已生成；场景、角色、数据流和界面符号均为原创示意 |
 | F09 | `assets/figures/landmarks-components.png` | `assets/figures/landmarks-components.en.png` | 已生成；地标、组件库和贡献展示为概念设计，不使用第三方人物肖像、Logo 或荣誉标志 |
-| F10 | `assets/figures/culture-wayfinding.png` | `assets/figures/culture-wayfinding.en.png` | 已生成；六级导视符号为原创，专名、固定状态词与双语文本于 2026-08-27 完成人工复核 |
-| F11 | `assets/figures/operations-pathway.png` | `assets/figures/operations-pathway.en.png` | 已生成；运营主体、资金、审批和服务能力均明确为建议，不写成既定承诺 |
+| F10 | `assets/figures/culture-wayfinding.png` | `assets/figures/culture-wayfinding.en.png` | 已生成；六级导视符号为原创，专名、固定状态词与双语文本于 2026-08-29 随最终 11 幅图对完成人工复核 |
+| F11 | `assets/figures/operations-pathway.png` | `assets/figures/operations-pathway.en.png` | R4 重生成；5/0/0 readiness 为独立状态块，不进入九状态生命周期或投诉路径；运营主体、资金、审批、外部授权与服务能力均不写成既定承诺 |
 
 F01—F04 由 R3 合法演进的 Phase 2 扩展源从同一 required GeoJSON/metrics 与隔离的 OSM 背景重建；F05 与 F06—F11 哈希不变。四份 PDF 和双语 HTML 再由 Phase 4 同批生成；最终哈希由 `manifest.json` 逐路径记录，任何重渲染都会触发重新核验。
 
@@ -60,7 +60,7 @@ F01—F04 由 R3 合法演进的 Phase 2 扩展源从同一 required GeoJSON/met
 
 | 精确路径 | 生成链 | 嵌入资产 | 许可与限制 | 状态 |
 |---|---|---|---|---|
-| `drawings/a3-booklet.pdf`; `drawings/a3-booklet.en.pdf`; `drawings/a0-boards.pdf`; `drawings/a0-boards.en.pdf` | Phase 4 由 `visual/assets/phase4-presentation-sources.json#/sources/0` 指向的内嵌生成源，从同一图号登记表、页级布局合同、本地图件与本地字体语义 HTML，经 Chromium CDP `Page.printToPDF` 的 tagged-PDF/outline 选项输出；该对象声明 `restore_as=phase4-presentation-generator.mjs`，`source` UTF-8/LF 字节 SHA-256 为 `a80e1ff0726278d072cb56c782a01ae895bc1b2c6bf5323f166d197a52a4cdb7`，仅在复核临时目录恢复，不是投稿包内实体路径 | 图件、可选择文本和 Noto Sans SC PDF 子集字体 | Chromium/Playwright 只承担本地渲染；不改变内容权利。四份 PDF 以页面尺寸、结构树、书签、语言、阅读顺序、渲染像素、可读文本与嵌入字体链复核，不声明 whole-file bit-for-bit 或 PDF/UA 合规 | `cleared`；Phase 4 的 28 页、结构标签与 200 DPI 复核见 `visual/assets/phase4-pdf-qa.json`，任何重渲染后须重查 |
+| `drawings/a3-booklet.pdf`; `drawings/a3-booklet.en.pdf`; `drawings/a0-boards.pdf`; `drawings/a0-boards.en.pdf` | Phase 4 由 `visual/assets/phase4-presentation-sources.json#/sources/0` 的冻结内嵌源生成；R4 再由实体、可审阅的 `visual/assets/r4-regional-interface-generator.js` 在内存中施加仅限 IM12/F07/F11 的双语补丁并经 Chromium CDP 输出。wrapper 同时从已登记 Phase 3 源恢复干净 F11 基底，避免重复叠加；输入/输出哈希记录在 R4 生成合同 | 已登记图件、可选择文本和 Noto Sans SC PDF 子集字体；没有新增外部图片、地图、Logo、字体或远程资源 | Node/Playwright/Chromium 只承担本地确定性渲染；四份 PDF 复核页面数量/尺寸、结构树、书签、语言、阅读顺序、渲染像素、可读文本与嵌入字体链，不声明 whole-file bit-for-bit 或 PDF/UA 合规 | `cleared`；任何重渲染后须重跑生成合同、PDF/HTML QA、manifest 与 self-check |
 | `report/proposal.html`; `report/proposal.en.html`; `visual/index.html`; `visual/index.en.html` | 仓库/本地渲染脚本生成的离线 HTML | 本地图件、本地 CSS、`visual/assets/font-subset.css` 中的本地字体数据，以及复用 `assets/figures/identity-system.png` 的本地 favicon | 不使用 CDN、远程脚本、远程地图瓦片、iframe 或远程字体；四份 HTML 均显式声明本地 favicon，不产生隐式 `/favicon.ico` 请求 | `cleared`，网络、应用资源与缺字检查通过；双语语义仍按独立人工复核处理 |
 
 ## 6. 字体
@@ -87,11 +87,13 @@ Phase 4 新增 `assets/media/cover.webp`。它不是照片、测绘底图、效�
 | 路径/工具 | 用途 | 许可证/权利边界 | 状态 |
 |---|---|---|---|
 | `scripts/render_proposal_html.py`; `scripts/scaffold_ai_submission.py` | 仓库 HTML/投稿脚手架与渲染流程 | 最终实时上游基线 `349a767d157798a6f1ec6d0e12ed97cabdacdb05`；不把工具权利误写成输出内容许可 | `cleared` 作为生成证据；脚本本身不随投稿包重复分发 |
-| `visual/assets/rebuild-visuals-source.json` | 当前 F01—F11、PDF、visual HTML 与字体子集生成器的可审阅 Python 源码快照 | 因投稿白名单不接受 `.py`，以 JSON 的 `source` 字段随包分发并纳入 manifest；还原后的 Python 源 SHA-256 为 `54fdc9bf0241f4bb4f98420c408af8c9e43edf87c5d3c31ef67f71578aa0b8cf`。JSON 同时保存精确工具版本、字体哈希、F08 carrier 合同、Git blob/LF 字节域及 PDF/WOFF2 非 bit-exact 边界 | `cleared`；2026-08-27 重建后已复核，审阅者可直接提取并运行 |
+| `visual/assets/rebuild-visuals-source.json` | 当前 F01—F11、PDF、visual HTML 与字体子集生成器的可审阅 Python 源码快照 | 因投稿白名单不接受 `.py`，以 JSON 的 `source` 字段随包分发并纳入 manifest；还原后的 Python 源 SHA-256 为 `54fdc9bf0241f4bb4f98420c408af8c9e43edf87c5d3c31ef67f71578aa0b8cf`。JSON 同时保存精确工具版本、字体哈希、F08 carrier 合同、Git blob/LF 字节域及 PDF/WOFF2 非 bit-exact 边界 | `cleared`；最终路径于 2026-08-29 纳入 R5 权利审计，审阅者可直接提取并运行 |
 | `visual/assets/phase2-spatial-evidence-source.json`; `visual/assets/phase2-visual-generator-source.json` | Phase 2 GeoJSON/metrics/source-freeze 与 F01—F05/HTML/PDF 的可审阅 Python 源码快照 | 以允许的 JSON `source` 字段分发，分别保存源 SHA、恢复文件名、依赖版本与生成合同；前者不抓取网络空间数据，后者复用已登记 Noto 字体链 | `cleared`；最终 JSON 与生成输出 SHA-256 由 manifest 记录 |
 | `visual/assets/phase4-presentation-sources.json#/sources/0`; `visual/assets/phase4-presentation-sources.json#/sources/1` | Phase 4 封面、A3/A0、HTML 可访问层、字体子集和生成冻结合同的内嵌可运行源对象；分别声明 `restore_as=phase4-presentation-generator.mjs` 与 `restore_as=phase4-font-subset.py`，不是投稿包内实体脚本路径 | 两个对象的 `source` UTF-8/LF 字节 SHA-256 分别为 `a80e1ff0726278d072cb56c782a01ae895bc1b2c6bf5323f166d197a52a4cdb7` 与 `4cdee69c5e326142abe607e62ce5438c534846fd613ad1860e24ecface3cebae`；只读取本包已登记图件、布局/图号登记表、隔离的 R3 开放背景和冻结权威输入，禁止把派生表达写回 GeoJSON、metrics、协议或治理权威文件 | `cleared`；JSON Pointer、`restore_as` 与嵌入字节哈希由 `phase4-source-freeze.json#/phase3_phase4_handoff/embedded_source_rights` 机器核验；工具链、输入/输出 SHA-256 和不可变边界由 `phase4-generation-contract.json` 记录 |
 | `visual/assets/r3e-implementation-sources.json#/sources/0/source_lines` | R3-E 六类实施证据审计源；对象声明 `restore_as=r3e-implementation-audit.py`，不是投稿包内实体脚本路径 | 按行以 UTF-8/LF 恢复后的完整字节 SHA-256 为 `a34aa8f5fd6b2c708eb0627dbb9fac6eba6ac40fd52a370e323a7672c021fedd`；只读核对官方来源边界、append-only 台账、冻结输入、CX 归一化数量、未知成本、责任缺口、桌面专业清单与合成演练，并提供七个内存篡改负例 | `cleared`；不得把审计结果称作官方评分、专业签署、现场演练或批准 |
 | `visual/assets/r3e-implementation-sources.json#/sources/1/source_lines` | R3-E Phase 4 表达覆盖源；对象声明 `restore_as=r3e-presentation-overlay.mjs`，不是投稿包内实体脚本路径 | 按行以 UTF-8/LF 恢复后的完整字节 SHA-256 为 `df9f9fb6142b886f2b8cbbf77a8d40c900f0bc9dca72acdce146d4041ebb86a2`；在内存中补丁化已冻结的 Phase 4 生成源，只把“动作→证据→责任/成本→验收/停止”接入现有 F08/F11、A0/A3 和双语 HTML，并硬断言四入口各有且仅有一个实施证据区；不写回 required geometry、metrics、proposal 或 Phase 3 权威文件 | `cleared`；JSON Pointer、`restore_as`、嵌入字节哈希与禁止用途由 `phase4-source-freeze.json#/r3e_implementation_evidence` 机器核验 |
+| `visual/assets/r4-regional-interface-generator.js` | R4 实体生成/审计 wrapper；恢复已登记 Phase 3 F11 基底，生成 F07/F11 双语 PNG，在内存中补丁化冻结的 R3-E/Phase 4 源并重建四 PDF 与四 HTML，同时复算 RI01—RI05、5/0/0、双语必填字段与输入/输出 SHA-256 | 投稿者/agent 原创代码；只读取随包已登记 JSON、内嵌生成源、本地字体与本地图件，不联网、不抓取新数据、不加载第三方视觉资产，不改变 geometry、来源等级、SC/IM 编号、唯一首用或外部授权状态 | `cleared`；精确实体文件 SHA-256、工具版本和生成输出哈希由最终 manifest 与 R4 生成合同记录 |
+| `visual/assets/r5-final-snapshot-audit.js`; `visual/assets/r5-final-snapshot-audit.json` | R5 最终快照审计器及其持久结果；在全部来源检索和 R4 生成结束后枚举权利范围及中英成对范围，复核两组 OSM 不替代规则，并记录逐路径 SHA-256、字节数、日期和结论 | 投稿者/agent 原创审计代码与元数据；只读本包文件，不联网、不改变任何设计、来源等级、权利条件或专业判断 | `cleared`；任何已审计路径字节变化都会使 `--check` 失败并要求重新人工复核 |
 | `visual/assets/r3e-official-source-snapshots.json`; `visual/assets/r3e-implementation-evidence.json`; `visual/assets/r3e-implementation-qa.json` | 投稿者/agent 编制的来源元数据、实施就绪支持合同与可复算 QA | 只包含短篇事实转述、官方链接/哈希、设计目标、公式、状态、缺口和合成桌面测试；八个外部网页/附件正文不随包再分发 | `cleared` 用于本包结构化元数据；外部内容仍受各发布者权利声明约束，且不得生成官方几何、价格承诺、专业意见、运营绩效或批准结论 |
 | Playwright 1.62.1；Chromium 151.0.7922.34 | 本地封面截图、离线 HTML 浏览器 QA 与四份 tagged PDF 生成 | Apache-2.0 / Chromium 项目许可；只作渲染与检查，不带入远程内容、商标或输出事实 | `cleared`；当前四 HTML 远程请求、追踪与外部资源均为 0；两份 report 为无脚本原生 details，两份 Visual 才加载本地 `visual.js` |
 | Pillow 12.2.0 | PNG 绘制 | MIT-CMU 类许可；工具许可不改变输入数据或输出内容权利 | `cleared` |
@@ -103,12 +105,12 @@ Phase 4 新增 `assets/media/cover.webp`。它不是照片、测绘底图、效�
 
 ## 9. 发布前封口检查
 
-2026-08-28 的 R3 只深化表达/背景证据层：固定 OSM/Overpass 数据依 ODbL 随包再分发并可重放，F01—F04 由登记的 Pillow/Noto 链生成，A3/A0、封面与可访问 HTML 由登记的 Playwright/Chromium/Noto 链生成。新增背景、坐标格、比例尺、bbox 断言、负例和 QA 记录只证明当前字节的来源与排版检查结果，不构成测绘、红线、宗地、文保、法律、无障碍、安全、运营、审批或 PDF/UA 认证。
+2026-08-29 的 R4 只深化 IM12 五域候选接口及其 F07/F11 表达：RI01—RI05、两项状态计数、四幅重生成图件、四 HTML 和四 PDF 均来自本包登记的参与者原创合同与本地生成链。没有新增第三方素材、外部数据或现实合作证据；5 合同 / 0 授权 / 0 运行 / 0 真实交换只证明候选机制已写成，不构成外部对象能力、合作意向、授权、交换、运营、采购、审批、实施、专业签署或 PDF/UA 认证。R5 随后在实际成型文件上完成 2026-08-29 最终审计，逐路径覆盖 2026-08-28 OSM 快照、R3-E 元数据、字体/OFL、22 幅图、4 HTML、4 PDF、封面与结构化证据，并完成同日双语等价复核；精确范围、时间和哈希以 `visual/assets/r5-final-snapshot-audit.json` 为准。
 
 1. 以最终 manifest 展开全部文件路径，禁止用无边界通配符掩盖遗漏。
 2. 核对 F01—F11 中英文实际文件名、生成输入、字体和输出哈希。
 3. 核对 `visual/assets/font-subset.css` 的 data-URI 子集、OFL 来源记录，并保持 HTML 网络请求为零。
 4. 用 PDF 字体检查工具确认四份 PDF 仅嵌入 Noto 子集，且许可证记录一致。
 5. 保留 Pillow、ReportLab、fontTools、Brotli 与随包渲染脚本证据；PDF 只按页面像素/版式/字体链复现，WOFF2 只按 glyph/cmap/字体属性/渲染像素复现，均不宣称整文件字节一致；未完成权利核验的可选封面已移除。
-6. Phase 2 人工双语等价审查须覆盖 13 章顺序、主命题、四个一级消息、十项 claim、三处 5+3、三代表横断面、指标与负结果、SC/CX/IM/AP/U/C/TVS 与 F/T 编号、来源标记、图位和临时状态措辞。
+6. 最终人工双语等价审查须在全部衍生物生成后覆盖 13 章顺序、主命题、四个一级消息、十项 claim、三处 5+3、三代表横断面、指标与负结果、两组 OSM 的不替代关系、SC/CX/IM/AP/U/C/TVS 与 F/T 编号、来源/限制、22 幅图位、4 HTML 和 4 PDF。
 7. 对照最终 SHA-256 更新本台账；任何文件重渲染后原有清权状态自动退回 `needs_evidence`，直至重新复核。

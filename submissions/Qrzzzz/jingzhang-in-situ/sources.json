@@ -1,7 +1,47 @@
 {
   "schema_version": "0.1.0",
-  "accessed_date": "2026-08-27",
+  "accessed_date": "2026-08-29",
   "source_use_policy": "Only claim-specific sources may be cited as evidence. Processed packs are navigation aids; public cases and the eight R3-E official references are background-only desktop-review inputs; provisional geometry is never an official or precise spatial basis.",
+  "r5_evidence_separation": {
+    "reviewed_date": "2026-08-29",
+    "purpose": "Prevent two temporally and functionally distinct OSM evidence groups from being conflated.",
+    "groups": [
+      {
+        "group_id": "OSM-EARLY-MISMATCH-20260814",
+        "source_id": "DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814",
+        "role": "background_only_negative_boundary_mismatch_check",
+        "package_replayability": "not_replayable_raw_response_not_registered",
+        "supports_only": [
+          "osm_heritage_park_intersection_ratio=0.0",
+          "osm_named_street_average_offset_m=667.0"
+        ],
+        "does_not_support": [
+          "official boundary",
+          "survey",
+          "heritage control",
+          "road redline"
+        ]
+      },
+      {
+        "group_id": "OSM-R3-SITE-RECOGNITION-20260828",
+        "source_id": "DATA-SRC-OSM-CONTEXT-20260828",
+        "role": "background_only_site_recognition",
+        "package_replayability": "replayable_four_raw_overpass_snapshots_with_query_raw_and_derived_hashes",
+        "supports_only": [
+          "coarse road and rail clues",
+          "parks and cleared landmarks",
+          "coarse building morphology in R3 presentation backgrounds"
+        ],
+        "does_not_support": [
+          "the 2026-08-14 zero-percent intersection result",
+          "the 2026-08-14 667-metre offset result",
+          "required design GeoJSON",
+          "official boundary, survey, heritage control or road redline"
+        ]
+      }
+    ],
+    "non_substitution_rule": "The later replayable R3 site-recognition package does not retroactively supply the missing raw response or recomputation basis for the earlier mismatch metrics."
+  },
   "sources": [
     {
       "id": "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",

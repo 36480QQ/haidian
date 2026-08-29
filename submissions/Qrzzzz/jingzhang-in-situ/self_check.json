@@ -110,7 +110,13 @@
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3e-implementation-qa.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3e-implementation-sources.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r3e-official-source-snapshots.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r4-regional-interface-generation-contract.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r4-regional-interface-generator.js",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r4-regional-interface-qa.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r5-final-snapshot-audit.js",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/r5-final-snapshot-audit.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/rebuild-visuals-source.json",
+        "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/regional-interface-contracts.json",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/visual.css",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/assets/visual.js",
         "submissions/Qrzzzz/jingzhang-in-situ/visual/index.en.html",
@@ -119,7 +125,7 @@
       "ai_package_stages": {
         "submissions/Qrzzzz/jingzhang-in-situ": "formal"
       },
-      "total_bytes": 14728757,
+      "total_bytes": 15356349,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -198,15 +204,15 @@
       "summary": {
         "standard_matrix_items": 9,
         "design_depth_items": 15,
-        "known_metric_refs_required": 21,
+        "known_metric_refs_required": 23,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 28,
           "standard": 6,
           "depth": 15,
-          "data": 18,
-          "metric": 20
+          "data": 19,
+          "metric": 22
         }
       }
     },

@@ -17,16 +17,21 @@
         "geometry/phasing.geojson"
       ],
       "metrics": [
-        "key_area_count"
+        "key_area_count",
+        "regional_interface_contract_count",
+        "regional_interface_authorized_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
         "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "F07 AI生态与八要素回路",
+        "F07 AI生态、八要素回路与五域未激活接口",
         "F08 十二场景图谱",
         "F11 年度运营与转化路径"
+      ],
+      "structured_evidence": [
+        "visual/assets/regional-interface-contracts.json#/interfaces"
       ],
       "source_ids": [
         "DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509",
@@ -142,7 +147,9 @@
       ],
       "metrics": [
         "site_area_sqm",
-        "key_area_count"
+        "key_area_count",
+        "regional_interface_contract_count",
+        "regional_interface_authorized_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -730,7 +737,9 @@
       ],
       "metrics": [
         "site_area_sqm",
-        "key_area_count"
+        "key_area_count",
+        "regional_interface_contract_count",
+        "regional_interface_authorized_count"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -739,7 +748,12 @@
       "visual_sections": [
         "F01 三层范围三区两翼",
         "F06 命名与Logo方向",
+        "F07 五域未激活区域接口",
         "T01 三定位五功能"
+      ],
+      "structured_evidence": [
+        "visual/assets/regional-interface-contracts.json#/interfaces",
+        "design_depth_matrix.json#/items/11/implementation_projects[implementation_id=IM12]"
       ],
       "source_ids": [
         "DATA-SRC-AGENT-TASKBOOK-20260518",
@@ -761,7 +775,8 @@
             "T01"
           ],
           "figure_refs": [
-            "F01"
+            "F01",
+            "F07"
           ],
           "drawing_pages": [
             "A3 p2",
@@ -785,14 +800,18 @@
         "overall_structure_diagram": {
           "proposal_section": "三层范围工作框架 / 十二个生活横断面",
           "figure_refs": [
-            "F01"
+            "F01",
+            "F07"
           ],
           "drawing_pages": [
             "A3 p2",
-            "A0 Board 1"
+            "A3 p8",
+            "A0 Board 1",
+            "A0 Board 2"
           ],
           "visual_ids": [
-            "site-overview"
+            "site-overview",
+            "ai-ecosystem"
           ]
         },
         "compliance_matrix_entry": {
@@ -801,11 +820,13 @@
         "visual_index_section": {
           "figure_refs": [
             "F01",
-            "F06"
+            "F06",
+            "F07"
           ],
           "visual_ids": [
             "site-overview",
-            "identity-system"
+            "identity-system",
+            "ai-ecosystem"
           ]
         }
       }
@@ -1435,9 +1456,11 @@
           "site_area_sqm"
         ],
         "source_ids": [
-          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
+          "DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814",
+          "DATA-SRC-OSM-CONTEXT-20260828"
         ],
-        "limitation_zh": "不支持红线、权属、FAR、高度或工程判断。"
+        "limitation_zh": "不支持红线、权属、FAR、高度或工程判断。2026-08-14 不可重放的错位核对只产生 0%/667 m 警示；2026-08-28 可重放的 R3 场地识别快照是另一证据组，不能回填前两项指标。"
       },
       {
         "id": "CL03",
@@ -1524,24 +1547,28 @@
         "limitation_zh": "没有责任人或高风险问题不能闭环即不进入或停止。"
       },
       {
-        "id": "CL07",
-        "claim_zh": "八要素经研究、匹配、受控测试、公共共测和反馈形成有 Gate 的循环。",
-        "claim_en": "Eight elements form a gated research, matching, controlled-test, public-co-test, and feedback loop.",
+      "id": "CL07",
+      "claim_zh": "八要素形成有 Gate 的内部循环；IM12 另以 RI01—RI05 五项差异化、未激活合同定义对外交换边界。",
+      "claim_en": "Eight elements form a gated internal loop, while IM12 separately defines external exchange boundaries through five differentiated, inactive RI01–RI05 contracts.",
         "proposal_sections": [
           "统筹研究范围产业与未来城市研究"
         ],
         "table_refs": [
           "T02"
         ],
-        "figure_refs": [
-          "F07"
-        ],
+      "figure_refs": [
+        "F07"
+      ],
+      "structured_refs": [
+        "visual/assets/regional-interface-contracts.json#/interfaces",
+        "design_depth_matrix.json#/items/11/implementation_projects[implementation_id=IM12]"
+      ],
         "source_ids": [
           "CASE-SEOUL-AI-HUB-20250710",
           "CASE-SINGAPORE-ONE-NORTH-20230703",
           "CASE-AMSTERDAM-MARINETERREIN"
         ],
-        "limitation_zh": "案例仅支持背景机制，不支持本地数字或合作。"
+      "limitation_zh": "五域功能均为参与者设计假设；案例仅支持背景机制，不支持外部对象既有能力、本地数字、授权、运行或合作。"
       },
       {
         "id": "CL08",
@@ -1808,6 +1835,14 @@
           "IM11",
           "IM12"
         ],
+        "regional_interfaces_ref": "visual/assets/regional-interface-contracts.json#/interfaces",
+        "regional_interface_ids": [
+          "RI01",
+          "RI02",
+          "RI03",
+          "RI04",
+          "RI05"
+        ],
         "gate": "逐项活动许可、资源、责任与机构授权齐备",
         "withdrawal": "无许可或授权即取消，不称既有合作"
       }
@@ -2037,7 +2072,8 @@
       "shared_lifecycle": "9 states with transition trigger/role/evidence/public-status/rollback/no-auto",
       "data_governance": "6 categories + 12 scenario profiles + 6 equivalent-service groups",
       "red_team": "16 tests; 12 retained fail_stop/unknown_stop/fail_pause outcomes",
-      "implementation_readiness": "3 normalized CX quantities + unpriced cost/resource model + RACI gaps + 10 desktop checks + 6 synthetic exercises / 0 field tests"
+      "implementation_readiness": "3 normalized CX quantities + unpriced cost/resource model + RACI gaps + 10 desktop checks + 6 synthetic exercises / 0 field tests",
+      "regional_interfaces": "5 candidate contracts / 0 authorized / 0 operating / 0 field or live exchanges"
     },
     "phase2_spatial_evidence": {
       "source_freeze": "visual/assets/phase2-source-freeze.json",
@@ -2126,7 +2162,7 @@
       "f11_judgment": "One shared lifecycle links accountable evidence, complaint/appeal, Human Takeover, SC10+IM06 preflight, stop, removal, archive, and written reopening.",
       "authority_model": "AI may suggest, sort, translate, assist verification, or prompt; implementation approval, rights changes, sanctions, resource denial, stop, and reopening are human-only.",
       "governance_boundary": "No compliance, consent, operator appointment, safety certification, accessibility audit, partnership, or funding is claimed.",
-      "protected_phase2": "All geometry plus F01-F07 and F09-F10 remain byte-frozen to HEAD 554979e4bc66f21fbdf53e4cde85ed94afe4421c."
+      "protected_phase2": "All geometry plus F01-F06 and F09-F10 remain byte-frozen to the inherited Phase 2 authority. F07 is the sole R4 figure override and retains the existing internal-loop semantics while adding five inactive regional-interface contracts."
     },
     "r3e_implementation_readiness": {
       "status": "desktop_review_ready_not_implementation_ready",
@@ -2176,6 +2212,41 @@
       "synthetic_tabletop_tests": 6,
       "field_or_operational_tests": 0,
       "limitation": "Supporting desktop evidence only; not survey, formal estimate, appointment, professional sign-off, approval, field drill, or operating performance."
+    },
+    "r4_regional_interface_closeout": {
+      "status": "candidate_contracts_complete_not_authorized_not_operating",
+      "taskbook_anchor": "brief/site-package/agent_taskbook.json#agent.1",
+      "claim_anchor": "CL07",
+      "implementation_anchor": "design_depth_matrix.json#/items/11/implementation_projects[implementation_id=IM12]",
+      "contract_anchor": "visual/assets/regional-interface-contracts.json#/interfaces",
+      "figure_anchor": "F07",
+      "readiness_anchor": "F11",
+      "interface_ids": [
+        "RI01",
+        "RI02",
+        "RI03",
+        "RI04",
+        "RI05"
+      ],
+      "contract_count": 5,
+      "authorized_count": 0,
+      "operating_count": 0,
+      "field_or_live_exchange_count": 0,
+      "activation": "written authorization + first-party factual basis + named accountable interface lead",
+      "scope_limit": "Participant-authored design hypotheses only; no external capability, partnership, appointment, resource, procurement, field exchange, implementation, or operating result is claimed."
+    },
+    "r5_final_snapshot_closeout": {
+      "status": "final_snapshot_rights_and_bilingual_audited",
+      "reviewed_date": "2026-08-29",
+      "audit_ref": "visual/assets/r5-final-snapshot-audit.json",
+      "source_separation_ref": "sources.json#/r5_evidence_separation",
+      "osm_evidence_groups": {
+        "early_mismatch_2026_08_14": "non-replayable; sole source of 0% and 667 m warnings",
+        "r3_site_recognition_2026_08_28": "four replayable raw Overpass snapshots; background presentation only; no metric backfill"
+      },
+      "rights_scope": "Sources and limits, R3 OSM snapshots, R3-E metadata, fonts/OFL, cover, structured evidence, 22 bilingual figure PNGs, four HTML files and four PDFs with per-path SHA-256.",
+      "bilingual_scope": "Claims, numbers, source/limitation strength, identifiers, figure positions, two Markdown files, 11 figure pairs, four HTML files and four PDFs.",
+      "reopen_rule": "Any later byte change in an audited path invalidates the corresponding final-snapshot conclusion until the dated audit and hashes are regenerated."
     }
   }
 }

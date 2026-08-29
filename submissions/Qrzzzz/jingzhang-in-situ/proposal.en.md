@@ -21,7 +21,9 @@ Four primary messages organize the submission: (1) threefold presence; (2) one s
 
 The announcement, agent taskbook, site package, registry, and local standard snapshots define the task and claim strength. Processed material is navigation only.[source:DATA-SRC-OFFICIAL-ANNOUNCEMENT-20260509] [source:DATA-SRC-AGENT-TASKBOOK-20260518] [source:REPO-SOURCE-REGISTRY]
 
-The Phase 2 freeze records source, date, scope, reuse boundary, transformation, SHA-256, grade, and prohibited uses. Snapshots follow their rights records; URL-only cases retain links. OSM keeps only the 2026-08-14 query/response hashes; its raw response is absent and not package-replayable, so it never enters required design GeoJSON or becomes survey evidence.[source:DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814] [data:visual/assets/phase2-source-freeze.json#open_data_separation]
+The Phase 2 freeze records source, date, scope, reuse boundary, transformation, SHA-256, grade, and prohibited uses. The early OSM group is the 2026-08-14 boundary-mismatch check: only query/response hashes remain, its raw response is unregistered and not package-replayable, and it produces only the two low-confidence 0% and 667 m warnings below. It never enters required design GeoJSON or becomes survey evidence.[source:DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814] [data:sources.json#r5_evidence_separation]
+
+A separate group is the 2026-08-28 R3 site-recognition background: four fixed OSM/Overpass queries and raw responses, retrieval times, query/raw/derived hashes, and ODbL 1.0 rights records are packaged and replayable. They support only road/rail clues, parks, cleared landmarks, and coarse building morphology; they neither produce nor backfill 0%/667 m, enter required design GeoJSON, nor support official boundaries, heritage controls, road redlines, or survey.[source:DATA-SRC-OSM-CONTEXT-20260828] [data:visual/assets/r3-site-context-qa.json] [data:sources.json#r5_evidence_separation]
 
 No official polygons exist for the three scopes or key areas. SITE/KEY_AREA are rough provisional constraints for graphics, checks, and scenario comparison; they establish no redline, rights, approval, statutory use, precise area, or feasibility. Official boundaries trigger one-batch recalculation of layers, metrics, F01–F11, HTML, and PDFs.[source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605] [data:geometry/site_boundary.geojson#SITE-001]
 
@@ -81,7 +83,19 @@ Challenge-led validation and reversible temporary use inform only gates.[source:
 
 ### Ecosystem map and eight enabling elements
 
-F07 moves land, space, industry, capital, talent, compute, data, and scenarios through research→matching→controlled testing→public co-testing→feedback. Complaints, failures, costs, and revisions return to research. Land, capital, compute, and external regions remain authorization-dependent conditions, not committed resources or partners.[source:DATA-SRC-AGENT-TASKBOOK-20260518] [depth:overall_spatial_structure]
+F07 moves land, space, industry, capital, talent, compute, data, and scenarios through research→matching→controlled testing→public co-testing→feedback. Complaints, failures, costs, and revisions return to research. Land, capital, and compute remain authorization-dependent. External regions do not enter the internal loop: IM12 instead gives RI01–RI05 separate inactive contracts for purpose, minimum input, first deliverable, authorization Gate, and stop rule.[source:DATA-SRC-AGENT-TASKBOOK-20260518] [depth:overall_spatial_structure]
+
+All five domains are participant-authored design hypotheses—not existing functions, partnership intent, or resource commitments. The present state is five contracts, zero authorized, zero operating, and zero field or live exchanges.[metric:regional_interface_contract_count] [metric:regional_interface_authorized_count]
+
+| Target / interface purpose | Jing-Zhang output | Minimum inbound material | First deliverable | Current status / why it cannot start |
+| --- | --- | --- | --- | --- |
+| RI01 Beiwei Community: translate people-present into everyday public-service equivalence | SC08/SC12 four-path equivalence, Human Takeover, accessible complaint, and failure-handoff patterns | Authorized de-identified issue taxonomy; first-party service catalogue, window/scenario, and accessibility notice | *Everyday Public-Service Equivalent-Path Package* | Candidate / Not Authorized; no per-scope mandate, first-party facts, or accountable role |
+| RI02 Future Science City: turn a public research question into a bounded, stoppable urban-validation task | TVS-1–3, evidence-field–professional-Gate–stop template, and low-tech checklist | Cleared public question, applicability/use limits, safety class, and data class | *Research-Question-to-Urban-Validation Task Card* | Candidate / Not Authorized; no disclosure permission, material rights, or scenario mandate |
+| RI03 Huairou Science City: test science translation, access, and error rollback | F10 bilingual status, SC11 source review, and SC12 static/human fallback | Cleared public science summary, rights/access rules, cautions, and scenario boundary | *Science-Communication-and-Access Tabletop Stress-Test Package* | Candidate / Not Authorized; no content rights, access boundary, or accountable role |
+| RI04 Economic-Technological Development Area: extend reversible-component responsibility to manufacture, maintenance, and removal | C01–C09 power-off/assembly, maintenance/human substitution, and SC10 stop logs | Supplier-neutral manufacturability, material/safety/maintenance/disassembly feedback, and failure conditions | *Reversible-Prototype Manufacturing–Maintenance Handover Sheet* | Candidate / Not Authorized; no confirmed entity, rights boundary, professional role, or manufacturing conclusion |
+| RI05 Beijing–Tianjin–Hebei: compare different public urban contexts under one rule set | Nine states/fifteen transitions, evidence grades, negative results/takeover, and four result classes | First-party public rule/context, source rights, definitions, and non-comparability | *Same-Rule / Different-Context Comparison Package* | Candidate / Not Authorized; no per-context mandate, first-party facts, or cross-regional governance arrangement |
+
+The complete bilingual contracts are at `visual/assets/regional-interface-contracts.json#/interfaces`. That file is authoritative for prohibited inputs, Jing-Zhang accountability, counterparty role types after authorization, review triggers, and per-interface stop rules. Any prohibited input, misleading partnership wording, or missing Gate produces only stop/withdrawal—never an “established coordination” result.
 
 ![F07 Three Zones and Two Wings AI Ecosystem and Eight-Element Loop](assets/figures/ai-ecosystem.en.png)
 
@@ -244,7 +258,7 @@ The front stage shows seven packages. Thirteen per-IM machine objects live at `d
 | AP4 AI Origin prototype | IM05 | SC05/06/07 matching and service | Leak, mismatch, unclear facility returns to human |
 | AP5 Dazhongsi prototype | IM06 | SC09/10/11 arrival, trial, and culture | Rights, safety, or complaint failure removes |
 | AP6 Public interface and identity | IM07–IM10 | Landmarks, components, wayfinding, ledger, and all-prototypes SC12 | Rights, maintenance, fact, or consent failure removes |
-| AP7 Operation and collaboration | IM11–IM12 | Candidate annual activity and external issues | No permit/authorization means no operation/partnership claim |
+| AP7 Operation and collaboration | IM11–IM12 | Candidate annual activity; five-domain first-exchange contracts RI01–RI05 | No per-interface authorization, first-party fact, or accountable role means no exchange, operation, or partnership claim |
 
 ### Implementation-maturity evidence and current NO-GO
 
@@ -260,9 +274,9 @@ Sixteen independent adversarial tabletop tests cover wrong advice, bias/inequali
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Phase 2 records 21 known/documented metrics; 19 can be independently recalculated from package GeoJSON and structured fields. Areas and lengths use EPSG:4548 with a ≤0.5% tolerance; counts require exact equality. Every metric follows baseline–action–target or observation window–evidence status–rerun trigger and retains `status/value/unit/source_files/formula/confidence/assumptions`.[metric:site_area_sqm] [metric:candidate_cross_section_total_length_m] [depth:metrics_recalculation]
+The spatial-evidence baseline remains 21 known/documented metrics, 19 independently recalculable from package GeoJSON and structured fields. Areas and lengths use EPSG:4548 with a ≤0.5% tolerance; counts require exact equality.[metric:site_area_sqm] [metric:candidate_cross_section_total_length_m] This round adds two contract-state counts—five RI contracts and zero authorized—computed from one JSON; they do not count institutions, projects, partnerships, or performance.[metric:regional_interface_contract_count] [metric:regional_interface_authorized_count] [depth:metrics_recalculation]
 
-Adverse, zero, and unknown results remain visible: 0 of 12 candidates are surveyed, while scenario land-use gap/overlap are both 0; those results return to count and topology metrics.[metric:cross_section_surveyed_count] [metric:land_use_gap_area_sqm] [metric:land_use_overlap_area_sqm] The OSM background check records 0% heritage-park intersection and a 667 m mean offset to four named street proxies.[source:DATA-SRC-OSM-CONTEXT-20260828] [metric:osm_heritage_park_intersection_ratio] [metric:osm_named_street_average_offset_m] FAR, height, road area, flows, accessibility pass rate, and heritage-control area remain `unknown`. Because the raw OSM response is absent, its two results are excluded from the 19 package-recalculable metrics and cannot alter the provisional boundary.[metric:floor_area_ratio]
+Adverse, zero, and unknown results remain visible: 0 of 12 candidates are surveyed, while scenario land-use gap/overlap are both 0; those results return to count and topology metrics.[metric:cross_section_surveyed_count] [metric:land_use_gap_area_sqm] [metric:land_use_overlap_area_sqm] The early 2026-08-14 boundary-mismatch check records 0% heritage-park intersection and a 667 m mean offset to four named street proxies. Its raw response is unregistered, so the two values remain outside the 19 package-recalculable metrics and cannot alter the provisional boundary.[source:DATA-SRC-PROVISIONAL-BOUNDARY-BASIS-20260814] [metric:osm_heritage_park_intersection_ratio] [metric:osm_named_street_average_offset_m] Although the four 2026-08-28 R3 raw OSM snapshots are packaged and replayable, they belong to a separate site-recognition query group and do not backfill these values or formal metrics.[source:DATA-SRC-OSM-CONTEXT-20260828] FAR, height, road area, flows, accessibility pass rate, and heritage-control area remain `unknown`.[metric:floor_area_ratio]
 
 F05 shows evidence authority and recalculation. The three matrices preserve detailed backend evidence. All 31 required outputs for agent.1–agent.6 receive individual section, figure, table, or structured-file anchors in `compliance_matrix.json`; repeated generic file lists no longer stand in for proof.[standard:MOHURD-ARCH-DESIGN-DEPTH-2016] [source:REPO-SOURCE-REGISTRY]
 
@@ -276,7 +290,7 @@ F05 shows evidence authority and recalculation. The three matrices preserve deta
 4. **Three prototypes:** Zhongzhiyuan validates, AI Origin translates, Dazhongsi hosts public trial; Key Areas and F03/F09; all polygons provisional.
 5. **3+9 scenarios:** SC01/05/10 carry the full loop and nine add safeguards; T04/F08; twelve-scenario backend unchanged.
 6. **Responsibility contract:** each SC keeps data, operator, human, low-tech, appeal, entry, evaluation, exit; T03/T04/F08; real performance unknown.
-7. **Eight-element gate loop:** research, matching, test, public co-test, feedback; T02/F07; cases support background mechanisms only.
+7. **Eight-element internal loop + five-domain interfaces:** internal Gates connect the eight elements; IM12 defines five differentiated, inactive RI01–RI05 exchange contracts; T02/F07; target functions are design hypotheses, not existing partnerships.
 8. **Reversible renewal:** KEEP/OPEN/INTENSIFY precede permanence; F02/F04/F05; no invented FAR, height, redline.
 9. **One first-use trial:** existing SC10+IM06 runs within a written window, then withdraws; T06/F08/F11; no new SC or IM.
 10. **Seven packages/audit:** AP1–AP7 cover IM01–IM13 and anchor 6 agents/31 outputs; T06/F05/F11 and matrices; completeness means submission evidence only.
@@ -289,14 +303,15 @@ The human-readable 31-output route is six lines: agent.1 narrative / name / logo
 | Proper names, threefold presence, six-level wayfinding, fixed states | Compared item by item |
 | SC/CX/IM/AP/U/C/TVS and F/T IDs | Same sets and groupings |
 | Metric status, source markers, provisional boundary, figure position | No raised confidence or dropped limitation |
+| Final snapshot scope and date | 2026-08-29, after generation: 2 Markdown files, 22 PNGs, 4 HTML files, and 4 PDFs reviewed pair by pair; both OSM groups retain equivalent source and limitation strength |
 
-Exact section, figure/table, data, source, and limitation anchors live in `review_navigation.core_claims`. T07 records the manual parity conclusion and does not replace machine checks.
+Exact section, figure/table, data, source, and limitation anchors live in `review_navigation.core_claims`. T07 records the manual parity conclusion and does not replace machine checks. Final path hashes, scope, criteria, and conclusion are recorded at `visual/assets/r5-final-snapshot-audit.json#/bilingual_audit`.
 
 ## Risk, Copyright, and Compliance
 
 Key gaps are official boundaries, controls/rights, building conditions, transport/municipal/fire, heritage/ecology, enterprise/talent data, and real demand. Key risks are treating provisional data as official, AI bypassing humans, activities becoming promises, bilingual text weakening limits, and rights chains breaking. The response is to pause the claim, register the gap, await authorized input, and recalculate together.[depth:risk_missing_data]
 
-The path-level rights ledger covers bilingual text/HTML, F01–F11, A3/A0, fonts, icons, data, and code. Any new or regenerated asset reopens clearance. Medical, legal, fire, transport, structural, energy, and approval conclusions belong to accountable people or qualified teams. A passing self-check means only that the package may enter further review, not selection, approval, publication, or implementation.
+The final 2026-08-29 snapshot audit runs after every current source retrieval and R4 generation step. Its path-level rights scope covers bilingual text/HTML, F01–F11, A3/A0, fonts and OFL, the cover, both OSM groups, R3-E metadata, data, and code; its bilingual scope compares claims, numbers, sources/limits, figure positions, HTML, and PDFs. Results and hashes are recorded in `visual/assets/r5-final-snapshot-audit.json`. Any new or regenerated asset reopens clearance. Medical, legal, fire, transport, structural, energy, and approval conclusions belong to accountable people or qualified teams. A passing self-check means only that the package may enter further review, not selection, approval, publication, or implementation.
 
 Phase 3 still marks named operators, case-specific lawful basis, personal-data conditions, numeric complaint windows, on-site staffing, and accessibility/fire/energy/removal feasibility as `requires legal review`, `design-target`, or `unknown`. Controller, operator, and professional roles are accountability placeholders rather than existing appointments. Sources support boundary reasoning only; they do not prove compliance, consent, government/company cooperation, or funding.
 
