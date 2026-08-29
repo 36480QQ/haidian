@@ -29,9 +29,11 @@ Brand identity direction (concept logo and visual identity, see figure): the mar
 
 ## Design Basis and Source List
 
-The list of public historical materials, planning reports and general standards below is a concept-stage working reference list, not data this package has obtained; all data actually used by this package are listed in sources.json, and everything not obtained is honestly recorded in the risk and missing-data sections. Basis: the international open-call brief and technical documents; Beijing master plan, district plans and public regulatory-plan materials along the corridor; public materials on the Jingzhang Railway Heritage Park plan and greenway design; public materials on rail station siting and suburban rail operation; public standards on TOD, urban renewal and slow-mode transport. The concept-stage data list - base survey maps, current land use and ownership boundaries, rail and municipal network drawings, heritage inventories, industry and population data, site imagery - has not been obtained; formal deepening must rely on measured surveys and official materials; all data in this proposal are elastic ranges or indications, never fabricated official data.
+The list of public historical materials, planning reports and general standards below is a concept-stage working reference list, not data this package has obtained; all data actually used by this package are listed in sources.json, and everything not obtained is honestly recorded in the risk and missing-data sections. Basis: the international open-call brief and technical documents; Beijing master plan, district plans and public regulatory-plan materials along the corridor; public materials on the Jingzhang Railway Heritage Park plan and greenway design; public materials on rail station siting and suburban rail operation; public standards on TOD, urban renewal and slow-mode transport.
 
-> **Evidence**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT] and [source:DATA-SRC-AGENT-TASKBOOK] (text-basis anchors); [source:DATA-SRC-PROVISIONAL-BOUNDARIES] (provisional rough boundaries).
+The concept-stage data list - base survey maps, current land use and ownership boundaries, rail and municipal network drawings, heritage inventories, industry and population data, site imagery - has not been obtained; formal deepening must rely on measured surveys and official materials; all data in this proposal are elastic ranges or indications, never fabricated official data. The package's external-data handling rules are: (a) the official announcement and taskbook are used only as text basis, not as geometry or numeric source; (b) official and semi-official publications (master plan, district plan, rail operation bulletins, Jingzhang Railway Heritage Park public materials) are registered as public sources, with versions and page numbers to be re-verified and completed item by item in the formal deliverable; (c) third-party and commercial sources (case reports, industry studies) are used as concept reference and mechanism inspiration only, not as quantitative indicator source; (d) self-produced provisional geometry and metrics.json carry the "provisional" stamp and serve as concept indication only, to be fully recalculated and versioned after official data release.
+
+> **Evidence**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT] and [source:DATA-SRC-AGENT-TASKBOOK] (text-basis anchors); [source:DATA-SRC-PROVISIONAL-BOUNDARIES] (provisional rough boundaries); [source:PACKAGE-SOURCES] (source ledger).
 
 ## Three-Level Scope Framework
 
@@ -119,34 +121,40 @@ Personas focus on five talent types: algorithm engineers, data and compute opera
 | Research translator | University joint conversion inn | University alliance, disclosure, incubation |
 | City digital operator | Operations platform and dispatch | Human review, tiered authorisation, runtime monitoring |
 
-The five AI+ scenarios map one-to-one onto six urban domains (concept): dispatch AI and slow-mode planning AI serve transport; joint-operations AI serves industry and space; deck-property O&M AI serves space and public services; public feedback AI serves public services, culture and governance - a six-domain coverage matrix. All scenarios process anonymised aggregates only, with human review of key decisions, no individual-identifying tracking and no over-monitoring; sandbox experiments require access registration and human review (concept).
+### Twelve scenario cards (11-field schema: user / data / space / model / operator / human-fallback / privacy / failure-mode / stage-gate / KPI / stop-condition)
 
-| Card No. | Scenario card | Spatial carrier | AI capability & data boundary | Operating party |
-|---|---|---|---|---|
-| 1-1 | Peak feeder dispatch | Nexus hub, Mobility Loop | Anonymised aggregate simulation; dispatch orders human-reviewed | Rail & bus operators, station-city platform |
-| 1-2 | Event-exit time-shared guidance | Nexus station square | Time-phased guidance simulation; anonymised only | Platform with traffic authority |
-| 1-3 | Last-mile responsive feeder | Loop, community stops | Demand anonymised; booking and rotation | Platform, community volunteers |
-| 2-1 | Deck business joint operation | Nexus deck | Anonymised usage analysis; business decisions human-reviewed | Property & industry operators |
-| 2-2 | Space efficiency analysis | Three-node public space | Occupancy anonymised; plans disclosed | Professional team, platform |
-| 3-1 | Slow-mode route optimisation | Loop, continuous axis | Trajectories anonymised; plans reviewed then disclosed | Planning team, streets & community |
-| 3-2 | Greenway link evaluation | Gallery greenway | Gap identification; anonymised only | Planning team, volunteers |
-| 4-1 | Deck smart O&M and energy | Gallery deck mix | Equipment/energy anonymised; no personal profiling | Property operator |
-| 4-2 | Equipment health prediction | Hub electromechanical | Anonymised status; maintenance orders human-reviewed | Professional O&M team |
-| 5-1 | Anonymised opinion clustering | Gallery living room, online | Opinions anonymised, human-reviewed, disclosed | Community, volunteers, platform |
-| 5-2 | Service & governance loop | Node service counters | Tiered handling; annual disclosure | Station-City Council, platform |
-| 5-3 | Annual disclosure visualisation | Operations platform | Annual anonymised report; human review | Platform, third-party evaluator |
+The twelve scenario cards below cover the five AI+ scenario families (dispatch, joint operations, slow-mode planning, deck O&M, public feedback). Each card gives the 11-field standardised registration so every card can be piloted, reviewed and stopped independently. All scenarios process anonymised aggregates only, key decisions are human-reviewed, no individual-identifying tracking and no over-monitoring; AI outputs are advisory only and do not replace statutory transport organisation, approval or operational duties.
+
+| No. | User | Data (boundary) | Spatial carrier | Model / capability | Operator | Human fallback | Privacy control | Failure mode | Stage gate | KPI | Stop condition |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1-1 | Peak commuter, dispatch operator | Anonymised aggregate (5-min bucket) | Nexus hub hall + deck | Anonymised dispatch simulation | Rail & bus operator + station-city platform | Dispatch order human-reviewed | Anonymised / 5-min / no profile | Simulation drift, false alarms | Benchmark test + false-alarm rate ≤ 5% | Transfer walk time, delay rate | False-alarm rate > 5% or human overload -> pause |
+| 1-2 | Event-exit participant | Anonymised time-phased count | Nexus station square | Time-phased guidance sim | Platform + traffic authority | On-site command | Anonymised / no cross-scenario | Forecast bias, conflict | Double-blind + field error ≤ 10% | Dispersal time, complaint rate | Error > 15% -> pause & recalc |
+| 1-3 | Last-mile commuter, resident | Anonymised demand (30-min window) | Loop, community stops | Demand-response model | Platform + community volunteers | Volunteer rotation + manual dispatch | Anonymised / 30-min / no trajectory | Demand mismatch | Pilot ≥ 80% coverage in 3 months | Response time, unmet rate | Unmet rate > 20% -> pause & add capacity |
+| 2-1 | Property operator, tenant | Anonymised usage stats | Nexus deck | Function-linkage proposal | Property + industry operator | Decisions human-reviewed | Anonymised / no tenant ID | Format mismatch, low yield | Double-blind + quarterly review | Deck usage efficiency, satisfaction | Satisfaction < 60% -> reset |
+| 2-2 | Public, platform | Anonymised occupancy | Three-node public space | Occupancy analysis | Professional team + platform | Plan disclosure | Anonymised / no location fingerprint | Holiday surge, weather | Pilot ≥ 2 full months | Utilisation, event load | Use rate < 30% for 3 months -> pause |
+| 3-1 | Walking/cycling commuter | Anonymised trajectory (de-id) | Loop, continuous axis | Path optimisation sim | Planning team + street/community | Plan human-reviewed, disclosed | Anonymised / 5-m grid / no stitching | Path deviation, coverage bias | Trial + field survey + disclosure | Slow-mode continuity, accessibility | Failure > 15% -> pause & reset |
+| 3-2 | Nearby resident, tourist | Anonymised gap detection | Gallery greenway | Linkage evaluation | Planning team + volunteers | Disclosure review | Anonymised / 50-m grid | False-positive gap | Double-blind + community council | Gap closures, retrofit rate | False-positive > 10% -> pause |
+| 4-1 | Property O&M | Equipment/energy anonymised | Gallery deck mix | Energy forecast | Property operator | Maintenance order human-reviewed | Anonymised / no profile | Forecast drift, anomaly | Benchmark + error ≤ 8% | Energy intensity, response time | Error > 15% -> pause |
+| 4-2 | O&M shift operator | Equipment status anonymised | Hub electromechanical | Health prediction | Professional O&M team | Maintenance order human-reviewed | Anonymised / equipment ID | Miss / false alarm | Double-blind + monthly review | Prediction accuracy, response time | Accuracy < 70% -> pause |
+| 5-1 | Public, volunteer | Anonymised opinion text | Gallery living room + online | Opinion clustering | Community + volunteers + platform | Human review + disclosure | Anonymised / no personal ID | Cluster drift, sensitive words | Pilot ≥ 1 full cycle | Handling rate, disclosure timeliness | Miss rate > 5% -> pause |
+| 5-2 | Resident, shop, firm | Anonymised feedback tier | Three-node service counter | Tiered closed loop | Station-City Council + platform | Human review + council | Anonymised / no contact info | Escalation timeout | Monthly review + council | Closed-loop rate, disclosure completion | Loop rate < 80% -> pause |
+| 5-3 | Public, third party | Anonymised annual aggregate | Operations platform | Annual visualisation | Platform + third-party evaluator | Third-party review | Anonymised / annual disclosure | Data mismatch, drift | Third-party annual review | Disclosure completion, pass rate | Review failure -> re-do entire block |
 
 Scenario-space-operation matrix (concept): dispatch AI - Nexus hub/Loop - proposal-based dispatch, decision authority with rail and bus operators, KPI transfer delay and walk time; joint-operations AI - deck spaces - proposal-based joint operations, authority with property operators, KPI deck usage efficiency; slow-mode AI - continuous axis - plan-disclosure model, authority with planning and streets, KPI slow-mode continuity and accessibility compliance; deck O&M AI - electromechanical and energy - maintenance-advice model, authority with property firms, KPI energy and fault response; feedback AI - living room and online - closed loop, authority with the Station-City Council, KPI handling rate and annual disclosure completion.
 
-AI technical protocols (concept): model evaluation - benchmark tests and false-alarm statistics; unqualified scenarios do not go live; data quality - unified anonymised aggregation calibre and data-quality rules; missing ledgers are never fabricated; error stratification - predictions and simulations are stratified by error bands with confidence labels for decision reference only; runtime monitoring - all scenarios are monitored with human review and stop conditions retained; no scenario may perform individual-identifying tracking. Honest baseline calibre: no measured ridership, energy or operation baselines exist at this stage; the three industry test scenarios first establish a "baseline and reproducibility protocol" on public simulations and anonymised aggregates - fixed input-data versions, random seeds, evaluation metrics and error-stratification rules form a reproducible experimental recipe, and results serve concept checking only; after official ledgers and measured data arrive, the concept baselines are recalculated against measured baselines and replaced, and scenarios that fail to meet the bar do not go live (concept). Data lifecycle: anonymised at collection, aggregated storage, tiered access, scheduled deletion; model boundary: AI outputs are advisory only and never replace statutory transport organisation, approval or operational duties. Industry test-scenario protocols (3, concept) - limited to anonymised aggregates and simulated data; results serve concept checking only and are recalculated after official ledgers arrive:
+### Three industry test scenarios (access / exit / verification)
 
-| Test scenario | Test content & protocol | Data & acceptance calibre |
-|---|---|---|
-| Feeder dispatch prototype test | Peak/event dual-scenario simulation; orders human-reviewed | Anonymised simulated data; benchmark + false-alarm stats; error bands |
-| Joint-operations sandbox test | Deck business and public-space usage simulation; decisions human-reviewed | Sandbox anonymised data; runtime monitoring + stop conditions |
-| Slow-mode planning test | Greenway link and route optimisation; plans human-reviewed, disclosed | Anonymised trajectory samples; test-disclose-register loop |
+The three industry test-scenario protocols below all specify access conditions, exit conditions, and verification methods (including benchmark tests, false-alarm statistics, error stratification and runtime monitoring). Limited to anonymised aggregates and simulation data, results serve concept checks only and are recalculated after official ledgers arrive.
 
-> **Evidence**: [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES] (AI content governance reference); [metric:global_case_count], [metric:persona_count], .
+| Industry test scenario | Access conditions | Verification method | Exit conditions | Recalc trigger |
+|---|---|---|---|---|
+| Feeder dispatch prototype test | Sandbox access, benchmark pass, false-alarm rate ≤ 5% | Peak / event two-scenario anonymous sim; dispatch order human-reviewed; error stratification by hour/station | False-alarm rate > 5% or human overload | Recalculate against measured baseline when ridership ledger arrives |
+| Joint-operations sandbox test | Property + operator agreement, deck format de-id, runtime monitoring | Deck + public-space usage sim; business decision human-reviewed; monthly disclosure + quarterly review | Satisfaction < 60% for 2 consecutive months | Annual pilot evaluation + measured yield recalc |
+| Slow-mode planning test | Path data de-id, planning team + community double-blind check | Greenway link + path optimisation sim; plan human-reviewed then disclosed; test -> disclose -> register loop | Field-survey error > 15% | Field measurement + community council feedback recalc |
+
+AI technical protocols (concept): model evaluation - benchmark tests and false-alarm statistics; unqualified scenarios do not go live; data quality - unified anonymised aggregation calibre and data-quality rules; missing ledgers are never fabricated; error stratification - predictions and simulations are stratified by error bands with confidence labels for decision reference only; runtime monitoring - all scenarios are monitored with human review and stop conditions retained; no scenario may perform individual-identifying tracking. Honest baseline calibre: no measured ridership, energy or operation baselines exist at this stage; the three industry test scenarios first establish a "baseline and reproducibility protocol" on public simulations and anonymised aggregates - fixed input-data versions, random seeds, evaluation metrics and error-stratification rules form a reproducible experimental recipe, and results serve concept checking only; after official ledgers and measured data arrive, the concept baselines are recalculated against measured baselines and replaced, and scenarios that fail to meet the bar do not go live (concept). Data lifecycle: anonymised at collection, aggregated storage, tiered access, scheduled deletion; model boundary: AI outputs are advisory only and never replace statutory transport organisation, approval or operational duties.
+
+> **Evidence**: [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES] (AI content governance reference); [metric:scenario_card_count=12], [metric:industry_test_scenario_count=3], [metric:persona_count=5], .
 
 ## Land Use, Building Scale, and Retain-Renovate-Demolish Strategy
 
@@ -176,11 +184,50 @@ Public space is all-weather, all-ages-friendly and operable, serving seniors, yo
 
 ## Renewal Projects, Implementation Policy, and Phasing
 
-The four-type project list (Nexus pilot / Loop completion / Gallery stitching / operations-platform launch) is conceptual; scales and investment estimates are suggestions; policy suggestions (design-with-plan land bids, multi-party co-building, review mechanisms) all require lawful review and are not government or operator commitments. A five-type project library - Nexus hub renewal, Loop facility upgrade, Gallery greenway completion, old-neighbourhood micro-renewal, industry-building conversion - is prioritised by urgency and investment type. Policy suggestions: TOD integrated bundled land bids, FAR-bonus-to-public-space-contribution linkage, public-private partnership, and a corridor-specific renewal policy - all directions only, with FAR-type bonuses based on official control conditions and no preset values. Phasing: near term (1-3 years) demonstration nodes and greenway completion in pilot areas (Zhongzhiyuan Nexus pilot, Loop completion segment, Gallery stitching segment); mid term (3-5 years) area-wide renewal with the three-node feeder rings completed; far term (5-10 years) corridor-wide optimisation and brand-asset accumulation.
+The concept-level landing of RAIL-JZ is organised as a "five-type project library + three-phase stage-gates + four-class governance actions (lead / collaborate / stop / exit)". All entries are concept suggestions and reference material, not commitments to implementing entities, sequencing or scale; this section is the implementability registration, and every project waits for official regulatory conditions, rail-operation safety assessment, fire assessment, and heritage/municipal capacity verification before kick-off item by item.
 
-Implementation division (lead/collaborate, concept): station complex development - government coordination with rail operators leading, firms and professional teams collaborating; slow-mode and green works - planning and municipal departments leading, communities and volunteers collaborating; operations platform - operation teams leading with residents and shop keepers collaborating; AI scenario verification - universities and professional teams leading with the platform collaborating. Stop and exit conditions: scenario access uses an annual-evaluation renewal, exit on failure of anonymised-aggregation data-quality or human-review requirements; pilot projects carry stop conditions triggered by major changes in control conditions, ridership ledgers or ownership materials, pausing and recalculating; all mechanisms are concept suggestions, not contract arrangements.
+### Five-type project library (sorted by urgency and investment type)
 
-Annual event brand system (concept, table below): three annual flagship activities - Rail Open Day, Station-City Co-Build Workshop, Slow-Mode Experience Season - over monthly regular activities and weekly scenario booking updates; participation points, opinion disclosure and the co-build covenant are suggestions. Public experience operations: booking, rotation and volunteer-guided tours (concept). Developer community: the Developer Community · Station-City Hack Week opens the data sandbox and API test registration; outputs are human-reviewed and disclosed, forming a test-register-disclose-iterate conversion pathway. International communication: bilingual copy packages built around the "centennial Jingzhang - Zhongguancun innovation - AI rebirth" narrative and annual events (visual page and booklet). Talent and firm conversion pathways (suggested): talent along test - internship - co-creation project - incubation; firms along test occupancy - industry-alliance registration - funding matching. Annual evaluation indicators: event attendance, scenario registrations, developer-community activity, resident satisfaction, anonymised-data quality score, annual-disclosure completion.
+| Project library | Core carrier | Lead / collaborate (>=3 actor types) | Concept-level KPIs |
+|---|---|---|---|
+| 1) Nexus hub renewal | Nexus hub vertical interchange + deck mix | Rail & bus operator (lead) / planning & municipal / property operator / station-city platform (collaborate) | Daily transfer passenger flow, transfer walk time, deck utilisation |
+| 2) Loop facility upgrade | Loop P+R, cycling feeder roof garden, continuous slow ring | Planning & municipal (lead) / street community / bus + bike-share operators (collaborate) | Slow-mode feeder share, continuous shading coverage, accessibility compliance |
+| 3) Gallery greenway completion | Gallery greenway, deck & under-bridge, pocket parks | Planning & municipal (lead) / street community / greenway O&M (collaborate) | Greenway gap closures, pocket park count, under-bridge opening rate |
+| 4) Old-neighbourhood micro-renewal | Existing residential + public space, slow streets, age-friendly retrofit | Street community (lead) / resident council / property & volunteer orgs (collaborate) | Micro-renewal units, resident satisfaction, dedicated spaces for children/seniors |
+| 5) Industry-building conversion | Low-efficiency plants + old buildings around stations, functional conversion | Industry operator (lead) / property operator / universities + dev community (collaborate) | Conversion rate, building efficiency, incubator occupancy |
+
+### Three-phase stage-gates (1-3 / 3-5 / 5-10 years)
+
+The table below gives the per-phase project list, lead/collaborate actors, stage-gate thresholds and stop/exit conditions. Pilot zones are limited to the three key nodes within the provisional overall design area (Zhongzhiyuan Nexus pilot, Beijing AI Origin Community Loop completion segment, Dazhongsi Gallery stitching segment); final siting waits for official boundaries.
+
+| Phase | Task list | Lead / collaborate | Stage gate | Stop / exit | Pilot zone |
+|---|---|---|---|---|---|
+| Near 1-3 yr | Nexus deck pilot segment; Loop P+R roof garden first segment; Gallery greenway first segment; operations platform V1 (event-level); cards 1-1/1-3/5-1 pilot | Rail & bus + street community + property operator (>=3 types) | Pilot segment open; platform event-level access; cards 1-1/1-3 false-alarm rate <= 5% | 6-month pilot KPI < 80% -> pause; control/rail conditions not released -> no next phase | Zhongzhiyuan Nexus pilot, AI Origin Community Loop first segment, Dazhongsi Gallery first segment |
+| Mid 3-5 yr | Loop completion + slow axis; Gallery stitching line; industry building conversion phase 1; platform V2 (space-level); cards 1-2/2-1/2-2/3-1/3-2/4-1/4-2/5-2 expansion | Planning & municipal + industry operator + universities + dev community (>=3 types) | Loop closed; slow-axis continuous shading >= 80%; platform space-level access; 8 cards through stage-gates | Monthly feedback evaluation fails or council stalls -> pause; measured baseline unavailable -> keep concept baseline | All three key nodes full coverage |
+| Far 5-10 yr | Corridor-wide coordination mature; slow network + public space mature; brand-asset accumulation; platform V3 (governance-level); card 5-3 annual disclosure + all-card annual review | Government + Station-City Council + third-party evaluator (>=3 types) | Three-tier platform event->space->governance transition; AI governance three-line annual disclosure done | Third-party annual review fails -> redo block; provisional boundary recalc requires re-alignment | Overall design area |
+
+### Implementation policy suggestions (bundled land bid / multi-actor / opinion review / alliance / volunteer / reservation / rotation / tiered)
+
+| Policy direction | Policy content (concept) | Basis and boundary |
+|---|---|---|
+| Bundled land bid | Three key nodes use the "three-bundled" approach (scheme + operation plan + public-space contribution), aligned with official regulatory conditions | No preset values; FAR-type bonuses based on official control conditions |
+| Multi-actor co-building | Government (coordinate) + rail & bus operator (lead) + firms (participate) + universities + dev community (co-create) + residents & shops (oversee) | At least 5 actor types; alliance registration, council and volunteer orgs in parallel |
+| Opinion review mechanism | Public opinion -> Station-City Council classification -> human review -> tiered into annual disclosure | Anonymised aggregation + human review + disclosure triad; does not replace statutory approval |
+| Alliance registration | Industry, developer, community alliances registered by type and disclosed periodically | Registration is a concept collaboration record, not an administrative license |
+| Volunteer & rotation | Public living rooms, under-bridge spaces, slow inns: volunteer guides and rotation roles | Concept mechanism, not employment |
+| Reservation mechanism | Gallery living room, under-bridge space, modular performance venue: reservation use | Concept mechanism; must not impede public openness |
+| Tiered feedback | Public opinion handled at on-site / node / station-city levels | Matches Station-City Council and platform responsibilities |
+
+### Original mechanism names (>=3 quoted concepts)
+
+- "Station-City Council": government, operators and resident/community representatives jointly form it, taking on node-level and station-city-level opinion review and decision advice (concept).
+- "Rail Honour Wall": public nomination, opinion disclosure, honour registration, exhibits station-city co-builders (individuals and teams) and annual activity outcomes (concept).
+- "Station-City Co-Build Covenant": community, operators and developers jointly sign a covenant, serving as the basis for node-level council and disclosure (concept).
+- "Public Participation Points": feedback, council participation, volunteer hours and space reservations are tracked as points, disclosed annually and used for honour registration (concept).
+- "Developer Community - Station-City Hack Week": open data sandbox and API test registration, human-reviewed and disclosed outputs, forming the test-register-disclose-iterate conversion pathway (concept).
+- "Station-City Pact Season": quarterly commitment-delivery-review cycle, linked to the "Rail Honour Wall" annual disclosure (concept).
+
+### Annual event brand system (concept)
 
 | Brand | Annual activity | Frequency & participation | Evaluation indicator |
 |---|---|---|---|
@@ -188,33 +235,99 @@ Annual event brand system (concept, table below): three annual flagship activiti
 | Station-City Co-Build Workshop | Shared agenda workshops | Quarterly, residents/shops/universities/firms | Topics adopted, participation, disclosure |
 | Slow-Mode Experience Season | Ride-and-walk check-ins | Twice yearly | Experience counts, share change, volunteer hours |
 
-Governance mechanism suggestions (three consecutive statements, concept): station-city decisions should be made by a Station-City Council composed of government, operators and resident-community representatives; decision basis and key milestones should be disclosed through opinion disclosure and anonymised aggregate reports; outcomes should be closed by third-party evaluation, volunteer monitoring and tiered feedback rectification - all suggestions for professional and operating teams to continue discussing, not confirmed arrangements. Resident feedback channel: online anonymised feedback and offline council sessions in parallel; opinions are human-reviewed and tiered into the annual disclosure. Cohort impact assessment and participation records (concept protocol): cohort-specific impact pre-assessment and annual follow-up records for seniors, children, people with disabilities, people with low digital capability, night-time users and students; participation records are kept as anonymised aggregates only, disclosed annually, and feed spatial and service adjustment - they never form individual profiles.
+### Governance mechanism suggestions (three consecutive statements)
 
-> **Evidence**: [source:DATA-SRC-AGENT-TASKBOOK] (phasing and implementation items); [metric:phase_count], [metric:annual_program_count].
+station-city decisions should be made by a Station-City Council composed of government, operators and resident-community representatives; decision basis and key milestones should be disclosed through opinion disclosure and anonymised aggregate reports; outcomes should be closed by third-party evaluation, volunteer monitoring and tiered feedback rectification - all suggestions for professional and operating teams to continue discussing, not confirmed arrangements.
+
+### Resident feedback channel and annual disclosure
+
+Online anonymised feedback and offline council sessions in parallel (>=3 channels: online anonymous, offline council, annual disclosure); opinions are human-reviewed and tiered into the annual disclosure at on-site / node / station-city levels; cohort impact assessment and participation records (concept protocol): cohort-specific impact pre-assessment and annual follow-up records for seniors, children, people with disabilities, people with low digital capability, night-time users and students; participation records are kept as anonymised aggregates only, disclosed annually, and feed spatial and service adjustment - they never form individual profiles.
+
+> **Evidence**: [source:DATA-SRC-AGENT-TASKBOOK] (phasing and implementation items); [metric:phase_count=3], [metric:project_lib_count=5], [metric:pilot_zone_count=3], .
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-The conceptual indicator system (with source/formula/confidence/use-limit/recalc-trigger) is in the table below, all concept calibre: rail-station 800 m coverage population and jobs, Loop slow-mode transfer share, Gallery public-space continuity, blue-green coverage, deck joint-development intensity and AI-scenario adoption are expressed as target ranges only, with no concluding values.
+### Conceptual indicator system (with source / formula / confidence / use-limit / recalc-trigger)
+
+All entries are concept calibre: rail-station 800 m coverage population and jobs, Loop slow-mode transfer share, Gallery public-space continuity, blue-green coverage, deck joint-development intensity and AI-scenario adoption are expressed as target ranges only, with no concluding values.
 
 | Indicator | Data source | Formula / calibre | Confidence | Use limit | Recalc trigger |
 |---|---|---|---|---|---|
 | green_ratio | metrics.json + green_space/site_boundary | green area / overall area (EPSG:4548) | low | Concept display | Official geometry release |
 | public_space_ratio | metrics.json + public_space/site_boundary | public space / overall area | low | Concept display | Official geometry release |
 | site_area_sqm | metrics.json + site_boundary | polygon area (~11.41 km²) | medium | Concept display | Official boundary release |
-| Green-mode share (range) | concept target range | ~70%-80% green travel | concept | Not a ridership forecast | Ridership ledger arrival |
-| Scenario/activity counts | proposal tables | cards 12 / cases 6 / events 3 / phases 3 | high | counting calibre | Content revision |
-
-Area recalculation: this package anchors on official announcement text (coordination ~43.6 km², overall ~11.4 km², key ~368.4 ha); the overall design area uses the provisional substitute boundary with a recalculated area of ~11.41 km², and the three key areas recalculate to ~192.1 / 104.3 / 72.0 ha; these values are concept checks only, not official precise areas; after official graphics are released, the full recalculation runs in a unified coordinate system with a recalculation version number. Cost and investment use qualitative tiers only (low/medium/high) with estimation method, price base, scope, confidence and recalc trigger; no precise currency amounts. Compliance matrix: item-by-item review against the master plan, regulatory plans, rail and suburban-rail management rules and greenway protection requirements, marking conforming, diverging and to-be-adjusted items to keep the concept within compliance red lines (compliance_matrix.json and standard_matrix.json).
+| slow_mode_share | Concept target range | ~70%-80% green travel | concept | Not a ridership forecast | Ridership ledger arrival |
+| Station-city function mix | Concept target range | Deck + station-adjacent function mix (~30%-50%) | concept | Not a control commitment | Regulatory conditions release |
+| Slow-mode continuity | Concept target range | Continuous shading & accessibility compliance (~70%-85%) | concept | Not an engineering commitment | Field survey + measurement |
+| Public-space continuity | Concept target range | Three-node greenway stitch index (>= 80%) | concept | Not an operation commitment | Greenway operation ledger |
+| Scenario adoption count | proposal.md scenario cards | 12 cards (5 AI+ families) | high | counting calibre | Content revision |
+| Case library | proposal.md table | 6 global cases | high | counting calibre | Content revision |
+| Stage gate | proposal.md table | 3 phases (near 1-3 / mid 3-5 / far 5-10) | high | counting calibre | Content revision |
+| Annual program | proposal.md table | 3 annual brands | high | counting calibre | Content revision |
+| Pilot zone | proposal.md table | 3 key nodes | high | counting calibre | Content revision |
+| Actor types | proposal.md table | >= 3 lead + >= 3 collaborate | high | counting calibre | Content revision |
+| Original mechanism names | proposal.md table | >= 3 quoted mechanism names | high | counting calibre | Content revision |
+| Five-type project library | proposal.md table | 5 types (Nexus / Loop / Gallery / micro-renewal / building) | high | counting calibre | Content revision |
+| Stage-gate count | proposal.md table | >= 3 (event / space / governance) | high | counting calibre | Content revision |
+| Industry test scenario | proposal.md table | 3 (access / verification / exit) | high | counting calibre | Content revision |
 
 ![Core metric evidence](assets/figures/metrics-evidence.en.png)
 
-> **Evidence**: [metric:green_ratio], [metric:public_space_ratio], [source:PACKAGE-GEOMETRY], .
+### Area recalculation (provisional boundary + official recalc trigger)
+
+The package anchors on official announcement text (coordination ~43.6 km², overall ~11.4 km², key ~368.4 ha); the overall design area uses the provisional substitute boundary with a recalculated area of ~11.41 km², and the three key areas recalculate to ~192.1 / 104.3 / 72.0 ha; these values are concept checks only, not official precise areas; after official graphics are released, the full recalculation runs in a unified coordinate system with a recalculation version number. Cost and investment use qualitative tiers only (low/medium/high) with estimation method, price base, scope, confidence and recalc trigger; no precise currency amounts. Per-project-library qualitative cost tiering:
+
+| Project library | Cost tier | Estimation method | Price base | Scope | Confidence | Recalc trigger |
+|---|---|---|---|---|---|---|
+| 1) Nexus hub renewal | High | TOD investment-intensity analogy with scale factor | concept base | Vertical interchange, deck mix, platform access | concept | Recalc after regulatory release |
+| 2) Loop facility upgrade | Medium | Slow-mode feeder project unit-price analogy | concept base | P+R, cycling feeder, continuous slow ring | concept | Recalc after control + rail conditions |
+| 3) Gallery greenway completion | Medium | Greenway + under-bridge conversion analogy | concept base | Greenway stitching, under-bridge, pocket parks | concept | Recalc after greenway protection requirements |
+| 4) Old-neighbourhood micro-renewal | Low-medium | Micro-renewal unit-price analogy | concept base | Age-friendly retrofit, slow streets, public space | concept | Recalc after community + ownership data |
+| 5) Industry-building conversion | Medium | Functional-conversion unit-price analogy | concept base | Low-efficiency plant conversion, incubator space | concept | Recalc after industry-operator agreement |
+
+### Compliance matrix
+
+Item-by-item review against the master plan, regulatory plans, rail and suburban-rail management rules and greenway protection requirements, marking conforming, diverging and to-be-adjusted items to keep the concept within compliance red lines (compliance_matrix.json and standard_matrix.json). The coverage:
+
+| Compliance dimension | Coverage | Status |
+|---|---|---|
+| Beijing master plan & district plans | RAIL-JZ and three-district two-wing landing | Conceptually consistent; awaits official boundary |
+| Regulatory plan & land-use classification | Land use, green ratio, public-space ratio | No preset values; awaits regulatory conditions |
+| Rail & suburban-rail management | Station siting, safety protection zone, operation safety | Concept; awaits professional review |
+| Greenway & open-space protection | Jingzhang Railway Heritage Park, historical relics | Concept; awaits heritage assessment |
+| Accessibility & environment | Accessibility + age-friendly, bilingual/multilingual services | Design baseline; not generalised |
+| AI governance | Anonymised aggregation, human review, no over-monitoring | Three-line form throughout |
+| Risk & copyright | Concept boundary, source labelling, brand prior rights | Registered |
+
+### 11-field standardised indicator registration
+
+All conceptual indicators are registered under the five fields (data source / formula / confidence / use-limit / recalc-trigger) so they can be independently reviewed and replaced. Together with the 11-field scenario card schema (user / data / space / model / operator / human-fallback / privacy / failure-mode / stage-gate / KPI / stop-condition), they form the package's conceptual registration language.
+
+> **Evidence**: [metric:green_ratio], [metric:public_space_ratio], [metric:site_area_sqm] from package metrics. Geometry evidence is registered in [source:PACKAGE-GEOMETRY]; the AI ecosystem and scenario counts ([metric:scenario_card_count=12]) are detailed in the AI section below.
 
 ## Risk, Copyright, and Compliance
 
-Risks: provisional boundaries may change; ownership and relocation carry uncertainty; existing municipal capacity constrains; AI scenarios are privacy-sensitive - answered with anonymised aggregation plus human review and no over-monitoring. Ridership and rail-operation ledgers, building age and ownership, per-building heritage clues and municipal capacity have not been obtained; before any formal implementation, multi-department joint review, rail-operation safety assessment, heritage protection and fire assessment are required; pilots carry stop conditions and recalc triggers (implementation section). Copyright: RAIL·JZ, the Fusion Ring system and the three node names are original names and concepts of this submission; all text, figures, geometry and program-generated content are the participant's originals, licensed COMMUNITY-DISPLAY-ONLY for public display and discussion in this open call; deepening use by later professional teams within this call must follow the call rules and obtain separate permission from the organiser and relevant right-holders; cited materials are attributed and linked to the licence and use-boundary registrations in sources.json, with page numbers to be completed and re-verified when the formal deliverable is compiled. Prior rights and use boundary: no official trademark search has been completed at concept stage; RAIL·JZ and the three node names/marks are internal working codenames only, not for external registration or commercial use, to be re-assessed after clearance; nothing here waives rights or asserts acquired prior rights. Compliance: all laws and Beijing regulations are followed; accessibility and multilingual services are baselines for specific service scenarios only, not generalised compliance claims; all conclusions are conceptual suggestions and reference material, not statutory plans, approvals or implementation commitments; data use follows the permitted boundaries in sources.json; no unauthorised or non-public spatial data are used.
+Risks: provisional boundaries may change; ownership and relocation carry uncertainty; existing municipal capacity constrains; AI scenarios are privacy-sensitive - answered with anonymised aggregation plus human review and no over-monitoring. Ridership and rail-operation ledgers, building age and ownership, per-building heritage clues and municipal capacity have not been obtained; before any formal implementation, multi-department joint review, rail-operation safety assessment, heritage protection and fire assessment are required; pilots carry stop conditions and recalc triggers (implementation section). Copyright: RAIL-JZ, the Fusion Ring system and the three node names are original names and concepts of this submission; all text, figures, geometry and program-generated content are the participant's originals, licensed COMMUNITY-DISPLAY-ONLY for public display and discussion in this open call; deepening use by later professional teams within this call must follow the call rules and obtain separate permission from the organiser and relevant right-holders; cited materials are attributed and linked to the licence and use-boundary registrations in sources.json, with page numbers to be completed and re-verified when the formal deliverable is compiled.
 
-> **Evidence**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT] (call rules for ownership and compliance wording); [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES], [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] (compliance baselines, not generalised);  (risk geometry from this package).
+### Brand prior-rights and use boundary (brand use ledger)
+
+| Asset | Use | License | Source / origin | Prior-rights status | Disposition |
+|---|---|---|---|---|---|
+| Fusion Ring (zh main name) | Internal working code / open-call display | Internal use | Participant original | Concept-stage unsearched | No external registration / search before commercial use |
+| RAIL-JZ (en abbreviation) | Internal working code / open-call display | Internal use | Participant original | Concept-stage unsearched | No external registration / search before commercial use |
+| Nexus / Mobility Loop / Co-Built Gallery (three-node names) | Internal working code / open-call display | Internal use | Participant original | Concept-stage unsearched | No external registration / search before commercial use |
+| Station-City Council / Rail Honour Wall / Co-Build Covenant / Public Participation Points / Dev Community - Hack Week / Pact Season (mechanism names) | Internal working code / open-call display | Internal use | Participant original | Concept-stage unsearched | No external registration / search before commercial use |
+| Logo concept (logo-concept.png/.en.png) | Internal working code / open-call display | Internal use | Participant original + Noto Sans SC (OFL) | Concept-stage unsearched | No external registration / search before commercial use |
+| Font Noto Sans SC | Figures and bilingual text | OFL 1.1 open | SIL OFL | OFL confirmed | Registered in sources.json |
+| Beijing master plan, district plan public materials | Text basis | public | public source | public | Registered in sources.json |
+| Jingzhang Railway Heritage Park plan and greenway public materials | Text basis | public | public source | public | Registered in sources.json |
+| King's Cross / Shibuya / MTR R+P / Jurong Lake / Futako-Tamagawa / Grand Front Osaka 6 global cases | Concept reference / mechanism inspiration | public | public source | public | Registered in sources.json (publisher/URL/date/license) |
+
+Brand prior-rights and use boundary (formal statement): no official trademark search has been completed at concept stage; RAIL-JZ and the three node names/marks are internal working codenames only, not for external registration or commercial use, to be re-assessed after clearance; the search and clearance above do not waive rights nor assert acquired prior rights; fonts are all OFL/Apache licensed; logo and palette are participant original; no third-party trademark, portrait or copyrighted material is used without authorisation.
+
+Compliance: all laws and Beijing regulations are followed; accessibility and multilingual services are baselines for specific service scenarios only, not generalised compliance claims; all conclusions are conceptual suggestions and reference material, not statutory plans, approvals or implementation commitments; data use follows the permitted boundaries in sources.json; no unauthorised or non-public spatial data, no sensitive data.
+
+> **Evidence**: [source:DATA-SRC-OFFICIAL-ANNOUNCEMENT] (call rules for ownership and compliance wording); [source:DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES], [source:DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW] (compliance baselines, not generalised). Risk geometry from this package; source ledger and license boundary registered in [source:PACKAGE-SOURCES].
 
 ## References
 

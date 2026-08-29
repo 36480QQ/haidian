@@ -150,7 +150,9 @@
    ],
    "formula": "count(industry_validation scenario cards)",
    "confidence": "high",
-   "assumptions": []
+   "assumptions": [
+    "Each card has access / verification / exit conditions"
+   ]
   },
   "persona_count": {
    "status": "known",
@@ -197,6 +199,80 @@
    "formula": "count(annual event system)",
    "confidence": "high",
    "assumptions": []
+  },
+  "scenario_card_count": {
+   "status": "known",
+   "value": 12,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "count(AI+ scenario cards in ## AI 创新生态)",
+   "confidence": "high",
+   "assumptions": [
+    "Each card is a distinct AI+ scenario with 11-field schema"
+   ]
+  },
+  "project_lib_count": {
+   "status": "known",
+   "value": 5,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "count(five-type project library rows)",
+   "confidence": "high",
+   "assumptions": [
+    "Five-type project library: Nexus/Loop/Gallery/micro-renewal/industry-building"
+   ]
+  },
+  "pilot_zone_count": {
+   "status": "known",
+   "value": 3,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "count(three pilot zones in the three key nodes)",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "phase_gate_count": {
+   "status": "known",
+   "value": 3,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "count(stage-gate levels: event / space / governance)",
+   "confidence": "high",
+   "assumptions": []
+  },
+  "actor_type_count": {
+   "status": "known",
+   "value": 5,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "count(distinct actor types in lead+collaborate)",
+   "confidence": "high",
+   "assumptions": [
+    "Government / rail & bus / property / industry / university / community = at least 5 types"
+   ]
+  },
+  "original_mechanism_count": {
+   "status": "known",
+   "value": 6,
+   "unit": "count",
+   "source_files": [
+    "proposal.md"
+   ],
+   "formula": "count(quoted original mechanism names)",
+   "confidence": "high",
+   "assumptions": [
+    "Station-City Council, Rail Honour Wall, Co-Build Covenant, Public Participation Points, Dev Community - Hack Week, Pact Season"
+   ]
   }
  }
 }

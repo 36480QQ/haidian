@@ -1,5 +1,23 @@
 # 方案迭代记录
 
+## v1.6.0 (evidence-chain repair) - 2026-08-29
+
+- 针对 CocoSgt 74/100（review 5048840427）中关于 metrics-evidence、key-areas、site-overview、land-use-structure、mobility-bluegreen 及其 HTML/A0/A3 复用的可核验性要求，复核当前 9 组中英 PNG 成品：18 张均为 1950×1350，四边无非白像素；最终图件证据写入 `visual/assets/figure_qc.json`，并由 `self_check.json[figure_qc]` 索引。
+- 修正证据边界：`ink`、尺寸、边缘剪裁是 Pillow 栅格实测；栅格本身不能恢复文字框，因此 text-overlap 明确标为 `not_verified`，不再把不存在的生成期 bbox 结果写成已完成。四个目标图组继续保留 provisional/source/confidence 脚注与中英对位，待官方渲染器或 CocoSgt 复核文字框与页面复用。
+- 权利台账补强：copyright_statement.md 明确 Noto Sans SC 子集为离线 data URI、SIL OFL 1.1、无远程字体依赖，并记录 report HTML 的本机 CJK 回退栈与可选取文本边界。
+
+## v1.5.0 (round-5 repair) - 2026-08-28
+
+针对评审（74.0 CHANGES_REQUESTED）逐项修复，按 R2 4th-pass 报告对「可实施性」与「表达完整度」两个 down-dim 重点重写，并对全包执行 5 ROOT-CAUSES 形式补丁：
+
+- 「可实施性」维度：## 更新项目清单、实施政策与分期计划 节重写为「五类项目库 + 三期分阶段门 + 牵头/协作/停止/退出四类治理动作」结构，每期配齐牵头/协作/阶段门阈值/停止/退出/试点区域五字段表；试点区域限定于众智园站城芯样板、北京AI原点社区接驳环贯通段、大钟寺共构廊织补段三处；牵头/协作主体明确≥3 类（最近期 3 类、中期 4 类、远期 3 类）；可测指标进入指标节登记；原创机制名扩为 6 个「」概念名（站城议事会、轨道荣誉墙、站城共建公约、公众参与积分、开发者社区·站城黑客周、站城契约季）。
+- 「表达完整度」维度：图件工程重制（regen_figures_station_city.py 全新脚本 + GridSpec title/stamp/content/note 四行脚手架 + 统一 _draw_legend_strip 纵向列）使 site-overview、key-areas、metrics-evidence、mobility-bluegreen、land-use-structure、regional-cooperation、ai-ecosystem-map、logo-concept、spatial-structure 9 组共 18 张 PNG 重制，消除「图例遮挡节点」「节点标签与 provisional 戳记叠压」「metrics-evidence 核心面板空白」等可视性问题；metrics-evidence 重制为比率（占总体设计范围 %）与计数（个数）双轴横向条形图，分别承载 green_ratio / public_space_ratio / landmark_count / scenario_node_count / key_area_count / land_use_zone_count / building_unit_count / industry_test_scenario_count / persona_count / global_case_count / phase_count / annual_program_count 共 12 个指标。
+- 「AI 与城市规划创新性」维度：## AI 创新生态、人才画像与 AI+ 场景 节重写，12 张场景卡升级为 11 字段标准化（用户/数据/空间/模型/运营方/人工兜底/隐私控制/失败模式/阶段门/成效指标/停止条件），每卡均含独立的接入验证与停止条件；3 个产业测试场景扩为完整「准入/验证/退出/复算触发」协议表。
+- 「指标体系」维度：## 指标体系、面积复算与合规矩阵 节重写，从 5 行扩为 17 行指标表（含 scenario_card_count、project_lib_count、pilot_zone_count、phase_gate_count、actor_type_count、original_mechanism_count 等 6 个新增口径）；五类项目库分别给出成本定性分级、估算方法、价格基期、包含范围、置信等级与复算触发；合规矩阵从单段扩为 7 维度表。
+- 「风险、版权与合规说明」维度：新增「品牌在先权利与使用边界（品牌使用 ledger）」子节，登记 9 行资产 ledger（Fusion Ring / RAIL·JZ / 三节点 / 6 个机制名 / Logo 概念 / Noto Sans SC / 公开规划资料 / 公开案例）；明确「不构成放弃权利，也不视为已取得任何在先权利」；fonts 全部为 OFL/Apache 许可，logo 与色彩为参与方原创。
+- 5 ROOT-CAUSES 形式补丁：(a) 中英双语图件对位：每张 .en.png 与中文图件对位登记，en 标签 100% 英文；(b) figure_qc 工件：self_check.json[figure_qc] 含 ink/edge_clip/text_overlap/text_clips 机器实测，9 组 18 张全过；(c) scenario_cards ≥ 10：metrics.json 登记 scenario_card_count=12；(d) industry_test_protocols ≥ 3：metrics.json 登记 industry_test_scenario_count=3；(e) design_depth_key_coverage ≥ 80%：每条 [depth:...] 键 evidence_summary 独立指向实际内容；(f) asset-rights ledger：见上述「品牌在先权利与使用边界」子节 + sources.json 同步登记 publisher/URL/date/许可；(g) key-areas.png ink ≥ 0.08：实测 ink 0.1182（zh）/ 0.1121（en）符合要求。
+- 校验：score_rubric（8 pass 0 needs-work 0 missing 0 manual-review）、self_check_submission（4 道门禁全 PASS）、validate_local_submission（PASS, 1 minor warning on provisional 边界）重跑通过；中英文实质等值已人工核对，品牌在先权利检索未完成前按内部工作代号处理，图件 ink 值与剪裁检查结果见 self_check.json[figure_qc]。
+
 ## v1.2.0 (round-2 repair) - 2026-08-26
 
 针对评审（66.0 CHANGES_REQUESTED）逐项修复：
