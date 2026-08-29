@@ -35,6 +35,45 @@ Haidian already concentrates universities, research institutes, platform enterpr
 
 The future-city hypothesis is that an AI district should not be defined by screens, robots, or a technology-themed skyline. It should be defined by whether knowledge, people, services, and public space can cross institutional boundaries safely and conveniently. AI must become visible as a public capability with clear human review, accessibility, data minimization, and fallback service. The “New Datum” is therefore both a spatial structure and a six-part evaluation method: walking continuity, open ground floors, all-day use, cultural legibility, public value, and human-review capacity.
 
+### Three Positions, Five Functions, Three Areas and Two Wings
+
+The three positions form one value chain: the **AI Fusion Innovation Belt** connects university research, open-source work, validation, and enterprise conversion; the **Urban AI Life Experience Belt** makes public service and talent life accessible with human and non-digital alternatives; and the **Century-old Jing-Zhang Cultural Belt** builds identity through railway heritage, innovation history, and renewable public content. Five spatial functions—research, open validation, enterprise services, talent life, and cultural communication—are assigned to differentiated interfaces rather than repeated slogans [source:AGENT-TASKBOOK].
+
+| Unit | Primary duty | Inputs / outputs | Explicit interface and spatial action | Boundary |
+| --- | --- | --- | --- | --- |
+| Zhongzhiyuan | Full-stack validation, standards, safety | Compute/models/test needs → review records and reusable protocols | JZ-02 Qinghe edge + T1 trustworthy-agent sandbox | Professional evaluator required |
+| AI Origin | University conversion, open source, talent | Talent/research/code → prototypes, teams, service needs | JZ-03 conversion street + open-source release hall | No presumed IP or campus authorization |
+| Dazhongsi | Enterprise release and international exchange | Firms/capital/customer scenarios → service leads, jobs, content | JZ-04 four-quadrant link + release hall | No promised investment or tenancy |
+| Zhongguancun Services Wing | Legal, IP, finance, talent service interface | Verified service information → professionally reviewed cases | Staffed enterprise-service counter at AI Origin | **Proposed interface**, not an existing partnership |
+| Xiaoyue River Scenario Wing | Urban-life validation interface | Community needs and scenario applications → feedback and withdrawal records | T3 trusted service station + community observer seat | **Proposed interface**, subject to approval |
+
+Talent, compute, data, capital, scenarios, and public-service flows each have a return path. Data entering a sandbox is minimum-necessary, de-identified, synthetic, or authorized; capital is an expert-service connection, not a funding promise; public services retain staffed and paper routes. Evidence: **A3-20/A3-21; A0-04**.
+
+### Six Global Cases: Adopt Mechanisms, Not Images
+
+| Case | Comparable condition | Adopt | Do not transplant | Jing-Zhang translation |
+| --- | --- | --- | --- | --- |
+| Singapore one-north | Research, firms, start-ups, urban services | District network, shared launch space, walk/transit links | Land and governance model | Shared validation + cross-area service catalogue [source:CASE-ONE-NORTH] |
+| Kendall Square | University research beside dense innovation district | Mixed R&D/living/retail and public open space | Market, ownership, intensity | Open ground floors + near-campus conversion [source:CASE-KENDALL] |
+| Paris-Saclay | Multi-node research cluster | Single innovation gateway and campus-city public ground | National scale and investment | Distributed “One Spine, Five Datums” gateways [source:CASE-PARIS-SACLAY] |
+| Barcelona 22@ | Industrial-area renewal | Mixed use and phased renewal | Regulation, housing, industry mix | Reversible retain-adapt-renew method [source:CASE-22BARCELONA] |
+| Toronto MaRS | Urban research-commercialization hub | Professional services co-located with labs, work and events | Institutional brand and finance model | Dazhongsi release hall + services wing [source:CASE-MARS] |
+| Brainport Eindhoven | Regional network of specialist campuses | Shared facilities and research-test-scale cycle | Manufacturing supply-chain base | Three-area specialization + transferable test protocol [source:CASE-BRAINPORT] |
+
+These sources establish public mechanisms only; they do not establish collaboration with the project. Evidence: **A3-20; A0-04; `sources.json`**.
+
+### Proposed Regional Interfaces
+
+| Partner context | Theme / exchanged element | Jing-Zhang node | Responsibility | Evidence status |
+| --- | --- | --- | --- | --- |
+| BFSU AI Community | International talent, community feedback, bilingual content | Dazhongsi release hall | Urban-service proposal | Direction published; collaboration unconfirmed [source:REGION-BEIWAI] |
+| Future Science City | Advanced energy and research translation | Zhongzhiyuan low-carbon validation | Thematic proposal | Regional role published; project link unconfirmed [source:REGION-FUTURE-SCIENCE] |
+| Huairou Science City | Major facilities and original research | AI Origin Coordinate Hall | Research-communication proposal | Regional role published; project link unconfirmed [source:REGION-HUAIROU] |
+| Beijing E-Town | AI+ industry and application scenarios | T1/T2 scenario desk | Industry-scenario proposal | Policy direction published; collaboration unconfirmed [source:REGION-ETOWN] |
+| Beijing-Tianjin-Hebei innovation network | Research, industry, talent | Annual Public Life Week | Network proposal | Institutional role published; event link unconfirmed [source:REGION-JJJ] |
+
+Every regional relationship follows issue proposal → mutual confirmation → professional review → limited pilot → public review. No joint release, co-built base, or committed input is claimed before confirmation. Evidence: **A3-21; A0-04**.
+
 ## Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The Jing-Zhang Railway Heritage Park becomes the innovation public spine rather than a residual linear green strip. Five east-west datums reconnect the fragmented urban fabric: the Northern Gateway Datum links Qinghe, Zhongzhiyuan, and the Fifth Ring Road; the Academy Co-Creation Datum connects campuses and research institutes; the AI Origin Datum links Wudaokou, university neighborhoods, and commercialization services; the Jimen Community Datum integrates education, health, and everyday public services; and the Dazhongsi Urban Release Datum links the transit station, four quadrants, public demonstration, and international exchange.
@@ -79,11 +118,54 @@ The Jing-Zhang Railway Heritage Park is structured as a sequence of ecological m
 
 Urban Character combines three narratives without reducing them to decorative motifs: the technological and civic meaning of the historic Jing-Zhang Railway; Zhongguancun's culture of experimentation, open learning, and commercialization; and an AI culture based on transparency, contribution, human review, and public benefit. Three pilgrimage landmarks are proposed as public institutions rather than iconic objects: the AI Origin Coordinate Hall, the “Century of Jing-Zhang / Century Ahead” Time Station, and the World Urban Agent Charter Square. Their content, annual programs, and public contribution records create identity over time [standard:MOHURD-URBAN-DESIGN-MEASURES] [depth:blue_green_public_space].
 
+### Seven Public-Space Components and Four Brand Layers
+
+| ID | Component | Minimum kit / location | Operations and exit |
+| --- | --- | --- | --- |
+| C1 | Innovation porch | Shelter, seat, power, bilingual map at datum/park junction | Remains ordinary rest space without operator |
+| C2 | Open validation deck | Enclosable test surface, observers, emergency stop at Zhongzhiyuan | Closed without approval, insurance, and staff |
+| C3 | Human-service island | Counter, paper process, accessible queue at T3 nodes | Operates independently when digital system is off |
+| C4 | Low-carbon compute kiosk | Cabinet, thermal management, disclosure screen | No equipment before energy and safety review |
+| C5 | Contribution datum wall | Replaceable licensed panels and withdrawal entry | Remove on expiry or sustained rights claim |
+| C6 | Walking repair kit | Continuous surface, ramp, light, docking at gaps | Downgrade to wayfinding if traffic review fails |
+| C7 | Blue-green learning station | Stormwater display, seating, interpretation at river/park edge | Flood and ecology constraints prevail |
+
+Branding uses four layers: L1 “Jing-Zhang New Datum” wordmark and sleeper/data-tick motif; L2 green, blue-violet, and warm-orange zone bands; L3 five datum IDs and walking-time wayfinding; L4 content labels showing source, date, authorization, AI/real status, and withdrawal entry. Heritage, operating-event, and temporary enterprise content remain separate; corporate marks never become permanent civic wayfinding. Evidence: **A3-24/A3-25; A0-05; HTML `#components-brand`**.
+
 ## Renewal Projects, Implementation Policy, and Phasing
 
 Six initial project packages organize implementation: heritage-park walking-gap repair; the Zhongzhiyuan Qinghe innovation edge; the AI Origin near-campus commercialization street; Dazhongsi four-quadrant pedestrian links; AI public-service and edge-computing nodes; and the annual Global AI Public Life Week route. Each package identifies location, public value, dependency, responsible partnership, risk, and evaluation method. These are project proposals, not confirmed budgets, land commitments, or government implementation decisions [data:geometry/phasing.geojson#PHASE-001] [depth:renewal_project_list].
 
 Phasing separates reversible pilots from capital works. Near-term actions include wayfinding, temporary open-source and community programs, accessibility audits, staffed service pilots, and controlled testing. Medium-term actions adapt ground floors, courtyards, station approaches, and blue-green links after ownership and technical review. Long-term actions address major crossings, infrastructure renewal, and regulatory integration. Weekly developer schools and community AI clinics sustain daily use; quarterly Scenario Access Days test services; the annual public-life week connects the three zones and five datums. Public-space use, cross-district walking, accessibility, human-transfer success, youth participation, and complaint closure are more important than publicity volume [depth:phasing_implementation].
+
+### MVP-to-Operation Implementation Matrix
+
+| Item | MVP | Lead role / operator and reviewer | Current dependency | Phase/cadence | Pause or exit |
+| --- | --- | --- | --- | --- | --- |
+| JZ-01 | One reversible gap repair | Public-space coordinator / traffic + accessibility review | Road boundary, under-bridge rights, traffic | Near / quarterly | Safety failure or increased conflict |
+| JZ-02 | One Qinghe edge segment | Park/river coordinator / landscape + water review | Blue line, flood, ecology | Near / seasonal | Flood or ecology conflict |
+| JZ-03 | One ground-floor conversion desk | Renewal coordinator / operator + legal/IP advisers | Ownership, campus interface | Near / half-year | No operator or unmanaged disturbance |
+| JZ-04 | One continuous four-quadrant path | Station coordinator / traffic, utility, accessibility review | Station, junction, utilities | Mid / gate review | Traffic or fire-safety failure |
+| JZ-05 | One dual-route AI service node | Public-service coordinator / specialist + data review | Energy, compute, service authorization | Near / monthly audit | Overreach, unresolved complaint, no human route |
+| JZ-06 | One-day public route | Event coordinator / safety + rights review | Venue permission, content rights, capacity | Annual | Missing permit, excess capacity, rights dispute |
+| T1 | Three standardized tests | Scenario-platform lead / independent evaluator | Protocol and synthetic/authorized data | Near / each batch | No reliable human takeover |
+| T2 | 100 m controlled loop | Park mobility lead / traffic + device owner | Road right, insurance, stop and staff | Mid / each release | Pedestrian conflict or loss of control |
+| T3 | One staffed dual-track counter | Community-service lead / relevant professionals | Service authorization and paper route | Near / monthly | Replaces professional judgment or excludes users |
+| Annual event | One-day minimum viable week | Multi-party forum / event, safety, rights, community review | Permission, rights, capacity, complaints | Annual review | Promotion displaces public value or disturbance persists |
+
+Budgets, land ownership, statutory approval bodies, and named operators remain **unknown**. Evidence: **A3-26/A3-28; A0-06; HTML `#implementation-matrix`**.
+
+### Seven-Step Participation-to-Service Path
+
+1. Entry through online, paper, or assisted in-person channels.
+2. Screening of purpose, space, data, rights, qualifications, and conflicts.
+3. A limited pilot with bounded place, time, users, and data.
+4. Public release only for authorized, explainable outcomes labeled as pilot/concept/non-approval evidence.
+5. Handoff to verified legal, IP, finance, recruitment, housing, or learning services; the urban agent does not make final decisions.
+6. Annual review using completion, accessibility, human transfer, complaint closure, and spatial impact.
+7. Content withdrawal triggered by rights holders, community observers, or professional review, with an audit record and no unnecessary personal data retention.
+
+This transferable operating proposal is not an existing administrative approval process. Evidence: **A3-27; A0-06; HTML `#conversion-path`**.
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 

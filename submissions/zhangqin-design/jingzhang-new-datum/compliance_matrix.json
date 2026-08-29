@@ -1,5 +1,17 @@
 {
   "schema_version": "0.1.0",
+  "review_repair_index": {
+    "agent.1": {"proposal_anchors":["统筹研究范围产业与未来城市研究 / 三大定位—五大功能—三区两翼"],"pdf_pages":["drawings/a3-booklet.pdf#page=20","drawings/a3-booklet.pdf#page=21","drawings/a3-booklet.pdf#page=29","drawings/a0-boards.pdf#page=4"],"html_anchors":["visual/index.html#ecosystem-synergy"]},
+    "agent.2": {"proposal_anchors":["统筹研究范围产业与未来城市研究 / 全球案例校准"],"pdf_pages":["drawings/a3-booklet.pdf#page=20","drawings/a0-boards.pdf#page=4"],"html_anchors":["visual/index.html#ecosystem-synergy"],"source_ids":["CASE-ONE-NORTH","CASE-KENDALL","CASE-PARIS-SACLAY","CASE-22BARCELONA","CASE-MARS","CASE-BRAINPORT"]},
+    "regional_synergy": {"proposal_anchors":["统筹研究范围产业与未来城市研究 / 区域协同接口"],"pdf_pages":["drawings/a3-booklet.pdf#page=21","drawings/a0-boards.pdf#page=4"],"html_anchors":["visual/index.html#ecosystem-synergy"],"evidence_status":"all relationships are proposals; collaboration unconfirmed"},
+    "agent.3": {"proposal_anchors":["AI城市功能场景策划 / 五类人物、十类场景与三项测试"],"pdf_pages":["drawings/a3-booklet.pdf#page=22","drawings/a3-booklet.pdf#page=23","drawings/a0-boards.pdf#page=3"],"html_anchors":["visual/index.html#scenario-register"]},
+    "agent.4": {"proposal_anchors":["蓝绿空间、公共空间与城市风貌 / 七类公共空间组件与三座可运营地标"],"pdf_pages":["drawings/a3-booklet.pdf#page=24","drawings/a0-boards.pdf#page=5"],"html_anchors":["visual/index.html#components-brand"]},
+    "agent.5": {"proposal_anchors":["蓝绿空间、公共空间与城市风貌 / 三层文化叙事与四层品牌导视"],"pdf_pages":["drawings/a3-booklet.pdf#page=25","drawings/a0-boards.pdf#page=5"],"html_anchors":["visual/index.html#components-brand"]},
+    "implementation": {"proposal_anchors":["更新项目清单、实施政策与分期计划 / MVP—运营—退出实施矩阵"],"pdf_pages":["drawings/a3-booklet.pdf#page=26","drawings/a3-booklet.pdf#page=28","drawings/a0-boards.pdf#page=6"],"html_anchors":["visual/index.html#implementation-matrix"]},
+    "agent.6": {"proposal_anchors":["更新项目清单、实施政策与分期计划 / 从参与到企业/人才服务的七步转化链"],"pdf_pages":["drawings/a3-booklet.pdf#page=27","drawings/a0-boards.pdf#page=6"],"html_anchors":["visual/index.html#conversion-path"]},
+    "synthetic_media": {"local_label":"AI-generated conceptual visualization / AI生成概念图；非现状照片、非审批或建成证据","applies_to":["all drawing PDF pages","assets/figures/key-areas.png","assets/figures/key-areas.en.png"],"rights_record":"report/copyright_statement.md"},
+    "offline_cjk_font": {"asset":"visual/assets/font.css","pdf_embedding":"TrueType subsets embedded inside drawing PDFs","license":"SIL Open Font License 1.1","license_url":"https://github.com/notofonts/noto-cjk/blob/main/Sans/LICENSE","used_by":["report/proposal.html","report/proposal.en.html","visual/index.html","visual/index.en.html","drawings/a3-booklet.pdf","drawings/a3-booklet.en.pdf","drawings/a0-boards.pdf","drawings/a0-boards.en.pdf"]}
+  },
   "requirements": [
     {
       "requirement_id": "1.3.1",
