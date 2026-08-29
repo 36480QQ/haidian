@@ -312,6 +312,16 @@
       "authority_level": "authoritative_media",
       "source_type": "official_public",
       "usage": "桥下闲置空间功能提升已是本区在推的既有工作方向，用于支撑大钟寺段桥下通廊由无序停车转为公共使用的断面建议——本方案据此把该建议表述为接续既有工作口径的概念深化，不指定具体桥位、不处置权属。注：本条为媒体报道口径，具体处数与新增车位数未逐字核到，正文不引用其数字。"
+    },
+    {
+      "id": "FONT-NOTOSANSSC-OFL",
+      "title": "Noto Sans SC（思源黑体简体中文，Adobe 原创、Google Noto 发行）",
+      "publisher": "Adobe Systems Incorporated（版权方）／SIL Open Font License 1.1（许可）",
+      "url": "http://scripts.sil.org/OFL",
+      "accessed_date": "2026-08-29",
+      "source_type": "user_provided_cleared",
+      "authority_level": "",
+      "usage": "随包字体。本包 report/proposal.html、report/proposal.en.html、visual/index.html、visual/index.en.html 四个 HTML 以 @font-face 引用 visual/assets/fonts/NotoSansSC-subset.woff，以保证在没有中文系统字体的环境（如评审用的离线容器）中，中文标题、正文、导航与图注不出现豆腐块。该文件为原字体按本包四个 HTML 实际用字（1551 个码位）子集化后的 WOFF，字体族名改为「NotoSansSC Subset」以与系统同名字体区分。许可证与版权字段取自字体文件自身的 name 表：版权 © 2014, 2015 Adobe Systems Incorporated；许可 SIL Open Font License, Version 1.1（未声明保留字体名，故子集化与改名均为该许可允许的行为）。"
     }
   ]
 }

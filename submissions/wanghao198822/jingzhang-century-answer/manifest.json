@@ -50,13 +50,13 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "9f3e5d6785f675cd5d2e7f91d6d8328cfc59878ed86bc816c7bf8cde399faeb9"
+      "sha256": "0b0b3907d70497a0e1353b58aa9716734279dae104fc44c2c868dca6548be570"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "0bfb877f352fca66ee293f7d833ac62e5e618493fc10e6cd881e74e3c0221d40"
+      "sha256": "1d72c811d95d1741e88189c077859016e5100a66c17ac71df4c8f77e20793445"
     },
     {
       "path": "compliance_matrix.json",
@@ -99,7 +99,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "56afd98b016ecd1a461129ab3f5ea48967cdc94e48f40f9d6918c37b0b63ff69"
+      "sha256": "10bb2859a158e34ebae1e3eb86559b17f5f5a95ebc2cc428f3c66535f657d5df"
     },
     {
       "path": "report/narrative.md",
@@ -111,7 +111,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "dd7c4b780a908baad6197b6e09d6f670b215d97cbe0c3f4cb5c512a8eb62ff62"
+      "sha256": "50332927ae3891475d244dec6dfaee9f28a162b069f5cee2e5b562ae6cf206e7"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -132,7 +132,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "3742d4140d09f77ea2775a925837a91cc5927289c14b91f4ff4cafff85b3a138"
+      "sha256": "33d6834bed1d1c525714ad32d7560b96b3df8daa3a55c88bf58fa0989f39894e"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -237,7 +237,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "1b1e15dfcb198acde51060d04177273137e6be99a50689c66774a8efdbcf074f"
+      "sha256": "ac8c20223ad049840915558a4a1b8e03575bd0a1bb45b1d7b0a8f10871c63f99"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -261,7 +261,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "db89c95beb6cc02ca62fd0ae5a41a849f45d3cb796f25fedf1f448291f82e24f"
+      "sha256": "65895ef8c46cb56b9ab54fd90d3ee2d077836f9226afcd2b8556f3d96ac9f1f1"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -728,6 +728,17 @@
       "title_en": "Answer Origin forecourt",
       "description_zh": "清华园车站站前素广场鸟瞰：老站房本体不动，0.6 公顷留白广场上只有零公里桩与应答簿两件小体量物件，校园围墙改为通透格栅界面。AI 生成概念意象，未经坐标配准，不表达用地与尺寸。",
       "description_en": "An aerial of the plain forecourt at Tsinghuayuan Station: the 1910 station house untouched, only the Kilometre-Zero Post and the Answer Book on 0.6 ha of deliberate emptiness, the campus wall rebuilt as a permeable lattice. AI-generated concept imagery, not coordinate-registered; it expresses no land use or dimensions."
+    },
+    {
+      "path": "visual/assets/fonts/notosanssc-subset.css",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "383ace0279276d0f29d064dfb31de2b1904a081a97324dc72fcb7416effea6ed",
+      "title_zh": "随包中文字体子集（Noto Sans SC，SIL OFL 1.1）",
+      "title_en": "Bundled Chinese font subset (Noto Sans SC, SIL OFL 1.1)",
+      "description_zh": "四个必需 HTML（report/proposal.html、report/proposal.en.html、visual/index.html、visual/index.en.html）共用的随包中文字体，以 @font-face 引用，使中文在**没有安装中文字体的环境**（例如评审所用的离线容器）中仍能正常显示，而不是回退失败成方框。原字体 Noto Sans SC（版权 © 2014, 2015 Adobe Systems Incorporated，SIL Open Font License 1.1，未声明保留字体名），按四个 HTML 的实际用字子集化为 1551 个码位、族名改为「NotoSansSC Subset」。包内不允许字体扩展名，故字体以 WOFF2 的 data: URI 内嵌于本 CSS；实测 file:// 下可正常加载。许可与来源另见 report/copyright_statement.md 与 sources.json:FONT-NOTOSANSSC-OFL。",
+      "description_en": "The Chinese font shared by the four required HTML files (report/proposal.html, report/proposal.en.html, visual/index.html, visual/index.en.html) via @font-face, so that Chinese text stays readable in environments with no Chinese system font — such as the reviewer's offline container — instead of falling back to empty boxes. The source face is Noto Sans SC (© 2014, 2015 Adobe Systems Incorporated, SIL Open Font License 1.1, no Reserved Font Name), subset to the 1551 codepoints these four files actually use and renamed to \"NotoSansSC Subset\". Font file extensions are not permitted inside the package, so the WOFF2 is embedded as a data: URI in this CSS; loading under file:// was verified. Licence and provenance: report/copyright_statement.md and sources.json:FONT-NOTOSANSSC-OFL."
     },
     {
       "path": "visual/assets/three.min.js",

@@ -52,4 +52,8 @@
 
 全部提示词由本方案自行撰写，依据为本包 `proposal.md` 正文口径；除上述已注明的 CC 许可参考图外，未使用任何第三方图像、影像、音频或受版权保护的素材作为输入。AI 生成画面仅用于表达空间意象，**不作为形式、尺寸、材料、树种或工程做法的设计依据**；凡与正文口径不一致之处，一律以断面图与正文为准，已知差异已在 `narrative.vtt` 与 `narrative-transcript.md` 中逐条声明。
 
-**第三方开源组件声明**：本包随附 three.js r160 压缩运行库（`visual/assets/three.min.js`，MIT 许可，版权归 three.js 作者），仅用于「人字之跃」三维示意的本地离线渲染，无网络请求、无数据上传；其 MIT 许可允许随包分发，原始许可文本见 https://github.com/mrdoob/three.js/blob/dev/LICENSE 。除此之外本包不含任何其他第三方代码库。
+**第三方开源组件声明**：本包随附 three.js r160 压缩运行库（`visual/assets/three.min.js`，MIT 许可，版权归 three.js 作者），仅用于「人字之跃」三维示意的本地离线渲染，无网络请求、无数据上传；其 MIT 许可允许随包分发，原始许可文本见 https://github.com/mrdoob/three.js/blob/dev/LICENSE 。
+
+本包另随附一个开源中文字体子集 `visual/assets/fonts/NotoSansSC-subset.woff`（约 210 KB）——原字体为 **Noto Sans SC**（思源黑体简体中文；版权 © 2014, 2015 Adobe Systems Incorporated，由 Google 以 Noto 系列发行），许可 **SIL Open Font License 1.1**。版权与许可字段取自字体文件自身的 name 表（nameID 0 / 13 / 14），许可证全文见 http://scripts.sil.org/OFL 。**该字体未声明保留字体名（Reserved Font Name），故 OFL 1.1 允许子集化与改名**：本包按四个必需 HTML 的实际用字子集化为 1551 个码位，字体族名改为「NotoSansSC Subset」，以便与系统上同名字体相区分、并可验证页面用的确实是随包字体。**用途**：`report/proposal.html`、`report/proposal.en.html`、`visual/index.html`、`visual/index.en.html` 四个 HTML 以 `@font-face` 引用它，使中文在**没有安装中文字体的环境**（例如评审所用的离线容器）中仍能正常显示，而不是回退失败成方框。OFL 允许随包分发；字体仅用于文字显示，不作任何再授权主张。
+
+除 three.js 与上述字体外，本包不含任何其他第三方代码库或字体。
