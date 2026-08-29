@@ -17,13 +17,23 @@ scenarios: ["enterprise-service-copilot", "ai-traffic-walkability", "robot-deliv
 
 ## Enterprise growth contract: one mainline from real problem to public return
 
-The proposal keeps its full seven-part health check, twelve scenarios, fifteen projects, international cases and Agent governance, but gives them one order of precedence: **real problem → bounded validation → first order → independent survival → public return**. Universities and leading firms are anchors that expose real problems; the open district is a bounded validation field; a first order is the first enterprise-growth gate; repeat demand and a transparent non-subsidy unit account test independent survival; a reusable public asset is the condition for expansion. “Independent survival” is not a forecast or profit promise. It is reviewed only after field operation through non-subsidy income, direct cost, repeat/retention and cash-gap evidence.[assumption:A-PUBLIC-RETURN-010]
+The proposal keeps its full seven-part health check, twelve scenarios, fifteen projects, international cases and Agent governance, but gives them one canonical protocol: **five enterprise states + three spatial engines + four human release gates + one public-value expansion condition**. The five states are real problem → bounded validation → first order → independent survival → public return. Zhongzhiyuan is the bounded-validation engine, AI Origin is the team-incubation engine, and Dazhongsi is the first-order/compliance engine. Named people—not Agents—release the problem, safety, transaction and public-value gates. “Independent survival” is not a forecast or profit promise. It is reviewed only after field operation through non-subsidy income, direct cost, repeat/retention and cash-gap evidence.[assumption:A-PUBLIC-RETURN-010]
+
+![One person, three nodes, one day](assets/figures/node-experience.en.png)
 
 ![Enterprise growth contract](assets/figures/growth-contract.en.png)
 
 Three flagship prototype packages make the contract spatial and operable without deleting the remaining project library: FP-Z combines Z1 shared validation and Z3 bounded testing; FP-O combines O1 open-source clinic and O2 founder residency; FP-D combines D1 first-order service and D3 pre-compliance. Each follows a twelve-week taskbook sequence—baseline, reversible insertion, operation, review/restore—with a named problem owner, professional safety sign-off, operator, non-deprivation safeguard, acceptance evidence and a physical recovery route. Twelve weeks is not an approved construction schedule.[assumption:A-FLAGSHIP-PILOT-009]
 
 ![Three flagship prototype contracts](assets/figures/flagship-pilots.en.png)
+
+![Three site-specific AI-space judgment chains](assets/figures/spatial-judgment.en.png)
+
+The Agent may compile evidence gaps, compare reversible layouts and draft logs, but it cannot sign a spatial action. Each core follows the same sequence—input evidence → Agent assistance → professional human decision → reversible spatial action → stop/recovery—while using a different spatial object. Every route retains a staffed/non-AI equivalent.[depth:risk_missing_data]
+
+![Implementation-readiness register](assets/figures/implementation-readiness.en.png)
+
+All fifteen projects have an E2 concept handoff record, but responsible/accountable entities, professional sign-off and field authorization remain unknown or not signed. Therefore **0/15 projects are ready for field operation**. The register fails closed: missing one prerequisite blocks entry to the field; drawing completeness never substitutes for approvals, contracts or professional liability.[depth:risk_missing_data]
 
 Expansion is denied unless the pilot returns an open public asset, retains at least 20% affordable service hours, keeps a human/non-AI route open, records failure and exit, and is co-reviewed by the operator, professionals and at least two resident representatives. Public-return assets include de-identified validation protocols, compatibility/failure libraries, open contribution roadmaps, public clinic hours, problem catalogues, procurement-boundary templates and compliance checklists. Field outcomes remain null before real operation and human sign-off.[depth:risk_missing_data]
 
@@ -912,7 +922,7 @@ Every claimed mechanism points to a document, figure, owner, limit and acceptanc
 
 The machine-readable record `visual/assets/qa-proofing-record.json` checks all **124 PDF pages** across the four bilingual A0/A3 files for text blocks outside the page box, inventories every embedded font, compares bilingual page/kind/image sequences, checks all four HTML entries for remote active dependencies and missing image alternative text, and records contrast ratios for the core palette. The release condition is zero out-of-page text blocks, zero non-OFL embedded fonts, zero missing image alternatives and zero remote active dependencies. This is the contributor's repeatable self-check—not accessibility certification, legal clearance, engineering sign-off or assistive-technology user testing.
 
-The rights ledger groups authored text/methods, official/public sources, provisional geometry, code-generated drawings, AI concept views, brand/basic geometry, fonts and finished layouts. Noto Sans SC subsets in the PDFs use the SIL Open Font License; no standalone font files are shipped. AI views remain removable experience images, while plans, sections, GeoJSON and contracts preserve the core evidence chain.[source:RIGHTS-NOTO-OFL]
+The rights ledger groups authored text/methods, official/public sources, provisional geometry, code-generated drawings, AI concept views, brand/basic geometry, fonts and finished layouts. Noto Sans SC subsets in the PDFs and the local offline HTML WOFF2 use the SIL Open Font License; the Web subset is embedded in a local CSS data URL, ships with an OFL JSON record and is limited to characters used by the four HTML entries. AI views remain removable experience images, while plans, sections, GeoJSON and contracts preserve the core evidence chain.[source:RIGHTS-NOTO-OFL]
 
 
 ## Metrics, Area Recalculation, and Compliance Matrix

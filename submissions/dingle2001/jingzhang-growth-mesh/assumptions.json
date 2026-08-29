@@ -60,6 +60,12 @@
       "status": "proposed_gate",
       "statement": "Expansion requires a public-return package and an independent-survival review after real operation.",
       "impact": "No current enterprise survival or public-return result is claimed; all result fields remain null before field evidence and human sign-off."
+    },
+    {
+      "id": "A-IMPLEMENTATION-READINESS-011",
+      "status": "fail_closed_handoff",
+      "statement": "All fifteen project records are E2 concept handoffs; responsible/accountable entities, professional sign-off and field authorization remain unknown or not signed.",
+      "impact": "Zero projects are represented as ready for field operation. Missing one prerequisite blocks release; drawings never substitute for approval, contract or professional duty."
     }
   ]
 }
