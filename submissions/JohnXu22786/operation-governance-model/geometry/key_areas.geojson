@@ -26,6 +26,10 @@
     "derivation_method": "按公告自北向南第一处、众智园AI自主创新加速区、约192.1公顷及五环路/清河相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。",
     "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。",
     "label_zh": "众智园AI自主创新加速区",
+    "corridor_reference": "西直门—五道口—清华段（provisional线性参考，不是本片区边界）",
+    "concept_node_overlay": "开发者工坊 / Developer Workshop（运营接口概念映射，非面状替代）",
+    "overlay_status": "conceptual_overlay_only",
+    "mapping_note": "area_id为重点片区稳定标识；见report/coordination_crosswalk.md",
     "official_area_sqm": 1921000.0
    },
    "geometry": {
@@ -80,6 +84,10 @@
     "derivation_method": "按公告自北向南第二处、北京AI原点社区、约104.3公顷及五道口/清华东路西口相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。",
     "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。",
     "label_zh": "北京AI原点社区",
+    "corridor_reference": "西直门—五道口—清华段（provisional线性参考，不是本片区边界）",
+    "concept_node_overlay": "场景开放台 / Scenario Deck（运营接口概念映射，非面状替代）",
+    "overlay_status": "conceptual_overlay_only",
+    "mapping_note": "area_id为重点片区稳定标识；见report/coordination_crosswalk.md",
     "official_area_sqm": 1043000.0
    },
    "geometry": {
@@ -134,6 +142,10 @@
     "derivation_method": "按公告自北向南第三处、大钟寺AI产业聚集区、约72.0公顷及大钟寺站相关任务线索，在临时总体设计范围内粗略定位并校核面积；公告未给出四至，矩形边不得解释为地块或道路红线。",
     "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。",
     "label_zh": "大钟寺AI产业集聚区",
+    "corridor_reference": "西直门—五道口—清华段（provisional线性参考，不是本片区边界）",
+    "concept_node_overlay": "活动中枢 / Event Hub（运营接口概念映射，非面状替代）",
+    "overlay_status": "conceptual_overlay_only",
+    "mapping_note": "area_id为重点片区稳定标识；见report/coordination_crosswalk.md",
     "official_area_sqm": 720000.0
    },
    "geometry": {

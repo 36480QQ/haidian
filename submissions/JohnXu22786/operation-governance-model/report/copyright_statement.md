@@ -12,7 +12,7 @@ OPS·JZ 与「运营智环」为本方案在概念阶段使用的**内部工作�
 |---|---|---|---|---|---|
 | OPS·JZ 名称与中文释义「运营智环」 | 本包原创概念方向（JohnXu22786/dsh-haidian-agent） | COMMUNITY-DISPLAY-ONLY；内部工作代号，未完成商标检索前不对外使用与注册 | 不允许擅自变更含义 | 引用时标注来源 | 仅限本征集展示语境嵌入 |
 | Logo 方向板（logo-opsjz.png / .en.png） | 本包原创图形（AI 生成后人工整饰） | COMMUNITY-DISPLAY-ONLY；展示性概念方向，非最终商标 | 概念阶段可迭代 | 展示时标注「概念」 | 仅限本包 HTML/PDF/图件 |
-| 中文字体 | Microsoft YaHei（Windows 系统字体，PDF 渲染） | 系统字体许可；仅用于本包 PDF 内部渲染 | 不修改 | 无需署名 | 仅限本包 PDF |
+| 中文字体 | Noto Sans SC（本地静态字体，PDF/PNG 渲染） | SIL Open Font License 1.1；允许本包离线生成与再分发，保留许可与版权声明 | 允许子集化/静态渲染 | 保留 OFL 版权与许可声明 | 本包 PDF、PNG 与生成时的离线 HTML；不依赖接收者系统字体 |
 | 网页嵌入字体 | Noto Sans SC（SIL Open Font License 1.1） | OFL 许可，允许嵌入与再分发（含子集化） | 允许子集化 | 保留 OFL 版权与许可声明 | 以 data:font 嵌入 4 个 HTML 页面 |
 | 图像与图表（assets/figures/*.png） | 本包原创生成（基于本包 geometry 与指标） | COMMUNITY-DISPLAY-ONLY | 允许本包内迭代 | 标注「概念图」 | 仅限本包 HTML/PDF/图件 |
 | 地图与几何（geometry/*.geojson） | 本包自产 provisional 概念几何（基于维护者 provisional 边界） | COMMUNITY-DISPLAY-ONLY；provisional_only，不得作为红线或审批依据 | 官方数据发布后复算 | 标注 provisional | 仅限本包展示与自检 |
