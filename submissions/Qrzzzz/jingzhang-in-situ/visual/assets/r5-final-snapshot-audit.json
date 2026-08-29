@@ -1,6 +1,6 @@
 {
   "schema": "jz-r5-final-snapshot-audit/v1",
-  "review_completed_at": "2026-08-29T06:09:04Z",
+  "review_completed_at": "2026-08-29T06:53:40Z",
   "authority": {
     "reviewer": "OpenAI Codex participant-side final snapshot review",
     "method": "Manual semantic and rendered-artifact review plus deterministic per-path hashing",
@@ -134,13 +134,13 @@
       },
       {
         "path": "assets/figures/site-overview.en.png",
-        "bytes": 215917,
-        "sha256": "dddfa651d9713ecd5f9b7b89a9d5eff750787b2e70b13b2a40c25eb59b144783"
+        "bytes": 214218,
+        "sha256": "66ceef624ad90c80074d7c529af8060f309ea63c989527b31e816d3e59bea612"
       },
       {
         "path": "assets/figures/site-overview.png",
-        "bytes": 268236,
-        "sha256": "5000a0c3891512502b4dfd2ec354f92af3891ce3e2ffa89386a2c6e4540649d5"
+        "bytes": 276080,
+        "sha256": "fc939523b5b8b9ad549a3085e35279abee114634b2da1ba2fa5a4fd65e4d5fb8"
       },
       {
         "path": "assets/media/cover.webp",
@@ -154,8 +154,8 @@
       },
       {
         "path": "changelog.md",
-        "bytes": 23651,
-        "sha256": "9b6e36bde56e8bf3352a26212b366cd0e70e52f2a2d769532775133d496076fc"
+        "bytes": 24909,
+        "sha256": "929daba8db10e7cea5d29d61066ff1a0d7f6754bc8e5a8614137b14a9f1a365c"
       },
       {
         "path": "compliance_matrix.json",
@@ -169,23 +169,23 @@
       },
       {
         "path": "drawings/a0-boards.en.pdf",
-        "bytes": 1059078,
-        "sha256": "44d8fb7397eee1a4d97047ad4bf14534777b2c7ac29e9690279f2d714bd53e23"
+        "bytes": 1057425,
+        "sha256": "5c809e3751108aa3c90f9602d81cd8d8e608cee47fcff3e560a625d268cce5a7"
       },
       {
         "path": "drawings/a0-boards.pdf",
-        "bytes": 1250905,
-        "sha256": "44d1eb6001b511d15132981364f12a78b48e4656e45ca7261ff0734ad47d24c4"
+        "bytes": 1255589,
+        "sha256": "121fba47757b68dc43117a93a21c251705a3b59df35b8f0cb8706962868ad3f2"
       },
       {
         "path": "drawings/a3-booklet.en.pdf",
-        "bytes": 2105128,
-        "sha256": "b58e2871bd2f8798d619da0451a2692ff878e5a9744ba9f6ca54f94c59c9cd7f"
+        "bytes": 2103644,
+        "sha256": "82e74d806d9ef076c41f47eb5404e3cd2c085c1f8f1b58333cea09806220682f"
       },
       {
         "path": "drawings/a3-booklet.pdf",
-        "bytes": 2377177,
-        "sha256": "679a2320a75e46caafb451d52a34ec44ad01bc837b2be665102421d7f714b548"
+        "bytes": 2382667,
+        "sha256": "5fc0b68017e9e010280d840824ed9203b7fb0402caa9e0e670da325f0256b8ea"
       },
       {
         "path": "metrics.json",
@@ -204,8 +204,8 @@
       },
       {
         "path": "report/copyright_statement.md",
-        "bytes": 24775,
-        "sha256": "a41930a287dad7fe650b4b4c866cfc6537725bf124f8d06fb757901c13ba0308"
+        "bytes": 24966,
+        "sha256": "fdde16c01575b741a52e5edb224c4e2f1e94c827080af000ae8032448e517981"
       },
       {
         "path": "report/narrative.md",
@@ -214,13 +214,13 @@
       },
       {
         "path": "report/proposal.en.html",
-        "bytes": 89871,
-        "sha256": "6a1b2273eae6486cd6f079ca1c571910a5417ae571858325d7c24f4971d98539"
+        "bytes": 90396,
+        "sha256": "6cbcb9bd818f0bdbbbc867555a7392fab5ba212d8128f2ee7c2e36aedad66b08"
       },
       {
         "path": "report/proposal.html",
-        "bytes": 78285,
-        "sha256": "39e2535a6cf593a68fadb35f5cd5cb18033889ba51aaa1f2281936cc786f7ae5"
+        "bytes": 78798,
+        "sha256": "1870b78f7025ee6dd214873c3a049dfc343ccff1f42f5451c3f56276793f870c"
       },
       {
         "path": "sources.json",
@@ -250,7 +250,7 @@
       {
         "path": "visual/assets/phase4-generation-contract.json",
         "bytes": 50694,
-        "sha256": "cbc8db891d29dca9a3d58a57a6f12f7731340386f25c99148401a30038491f97"
+        "sha256": "e627e122713ec3b091f9505a45776a9abb0e86d9bba5ec02f02062a5d6671b65"
       },
       {
         "path": "visual/assets/phase4-presentation-sources.json",
@@ -259,8 +259,8 @@
       },
       {
         "path": "visual/assets/phase4-source-freeze.json",
-        "bytes": 41698,
-        "sha256": "268f786e8f131b55dc24737920741b2a6bfb64ae841be8db75222cfbb59abfef"
+        "bytes": 43745,
+        "sha256": "cb9afc890d86ec46115d46f90998a936b70c0322dd3770b16b486edf8632a41a"
       },
       {
         "path": "visual/assets/r3-osm-ai_origin-snapshot.json",
@@ -324,13 +324,13 @@
       },
       {
         "path": "visual/assets/r4-regional-interface-generation-contract.json",
-        "bytes": 4520,
-        "sha256": "c0a5865fb6b32d800cfb216b167912eb70024916cdbbb76adb9f43dc08088d7e"
+        "bytes": 5377,
+        "sha256": "d70cf0298c296e5b005629b432dce4509f70d4e1966c25538145022b919ac2fb"
       },
       {
         "path": "visual/assets/r4-regional-interface-generator.js",
-        "bytes": 55923,
-        "sha256": "64738817a052a777fe8231edea452bc71af92c177ed0dd33944f311997f20ed1"
+        "bytes": 70051,
+        "sha256": "790d0146ebc3667d61db432661b14fb0dcd63e716dc4af5ab2ce416ae734bcc2"
       },
       {
         "path": "visual/assets/r4-regional-interface-qa.json",
@@ -354,16 +354,16 @@
       },
       {
         "path": "visual/index.en.html",
-        "bytes": 21673,
-        "sha256": "8c0e0097d6d9f7d0f277228acedb109c11bd68d6f2c2e46a6d519135724e7327"
+        "bytes": 21903,
+        "sha256": "c29f52a9c342ad6597f4d39a0f01a86ce41e53678b68404ae00abf63797801f5"
       },
       {
         "path": "visual/index.html",
-        "bytes": 19816,
-        "sha256": "fcc4eadd118ab7cf69479201b473058bb43473d52dc70cd76e2f7c858fa99f6f"
+        "bytes": 20034,
+        "sha256": "a7664e30031dcb3283acc61bc4cbee831c94d6ec6394e16bf577c1c4557e013c"
       }
     ],
-    "coverage_sha256": "a813c830ee81fe0b4bec5155d5dac2ab5c2f7a65bb97968ca5833010f0f5af42",
+    "coverage_sha256": "d67a281f5372077efcc5d84464dc8f197cf798144583394876980a2f8e4fac2f",
     "conclusion": "cleared_for_submission_under_registered_item_level_limits",
     "reopen_rule": "Any audited path byte change reopens clearance until a new dated review and hash set are written."
   },
@@ -403,13 +403,13 @@
         "en": "assets/figures/site-overview.en.png",
         "zh_record": {
           "path": "assets/figures/site-overview.png",
-          "bytes": 268236,
-          "sha256": "5000a0c3891512502b4dfd2ec354f92af3891ce3e2ffa89386a2c6e4540649d5"
+          "bytes": 276080,
+          "sha256": "fc939523b5b8b9ad549a3085e35279abee114634b2da1ba2fa5a4fd65e4d5fb8"
         },
         "en_record": {
           "path": "assets/figures/site-overview.en.png",
-          "bytes": 215917,
-          "sha256": "dddfa651d9713ecd5f9b7b89a9d5eff750787b2e70b13b2a40c25eb59b144783"
+          "bytes": 214218,
+          "sha256": "66ceef624ad90c80074d7c529af8060f309ea63c989527b31e816d3e59bea612"
         },
         "manual_finding": "substantively_equivalent_same_claim_strength_and_limits"
       },
@@ -590,13 +590,13 @@
         "en": "report/proposal.en.html",
         "zh_record": {
           "path": "report/proposal.html",
-          "bytes": 78285,
-          "sha256": "39e2535a6cf593a68fadb35f5cd5cb18033889ba51aaa1f2281936cc786f7ae5"
+          "bytes": 78798,
+          "sha256": "1870b78f7025ee6dd214873c3a049dfc343ccff1f42f5451c3f56276793f870c"
         },
         "en_record": {
           "path": "report/proposal.en.html",
-          "bytes": 89871,
-          "sha256": "6a1b2273eae6486cd6f079ca1c571910a5417ae571858325d7c24f4971d98539"
+          "bytes": 90396,
+          "sha256": "6cbcb9bd818f0bdbbbc867555a7392fab5ba212d8128f2ee7c2e36aedad66b08"
         },
         "manual_finding": "substantively_equivalent_same_claim_strength_and_limits"
       },
@@ -607,13 +607,13 @@
         "en": "visual/index.en.html",
         "zh_record": {
           "path": "visual/index.html",
-          "bytes": 19816,
-          "sha256": "fcc4eadd118ab7cf69479201b473058bb43473d52dc70cd76e2f7c858fa99f6f"
+          "bytes": 20034,
+          "sha256": "a7664e30031dcb3283acc61bc4cbee831c94d6ec6394e16bf577c1c4557e013c"
         },
         "en_record": {
           "path": "visual/index.en.html",
-          "bytes": 21673,
-          "sha256": "8c0e0097d6d9f7d0f277228acedb109c11bd68d6f2c2e46a6d519135724e7327"
+          "bytes": 21903,
+          "sha256": "c29f52a9c342ad6597f4d39a0f01a86ce41e53678b68404ae00abf63797801f5"
         },
         "manual_finding": "substantively_equivalent_same_claim_strength_and_limits"
       },
@@ -624,13 +624,13 @@
         "en": "drawings/a3-booklet.en.pdf",
         "zh_record": {
           "path": "drawings/a3-booklet.pdf",
-          "bytes": 2377177,
-          "sha256": "679a2320a75e46caafb451d52a34ec44ad01bc837b2be665102421d7f714b548"
+          "bytes": 2382667,
+          "sha256": "5fc0b68017e9e010280d840824ed9203b7fb0402caa9e0e670da325f0256b8ea"
         },
         "en_record": {
           "path": "drawings/a3-booklet.en.pdf",
-          "bytes": 2105128,
-          "sha256": "b58e2871bd2f8798d619da0451a2692ff878e5a9744ba9f6ca54f94c59c9cd7f"
+          "bytes": 2103644,
+          "sha256": "82e74d806d9ef076c41f47eb5404e3cd2c085c1f8f1b58333cea09806220682f"
         },
         "manual_finding": "substantively_equivalent_same_claim_strength_and_limits"
       },
@@ -641,18 +641,18 @@
         "en": "drawings/a0-boards.en.pdf",
         "zh_record": {
           "path": "drawings/a0-boards.pdf",
-          "bytes": 1250905,
-          "sha256": "44d1eb6001b511d15132981364f12a78b48e4656e45ca7261ff0734ad47d24c4"
+          "bytes": 1255589,
+          "sha256": "121fba47757b68dc43117a93a21c251705a3b59df35b8f0cb8706962868ad3f2"
         },
         "en_record": {
           "path": "drawings/a0-boards.en.pdf",
-          "bytes": 1059078,
-          "sha256": "44d8fb7397eee1a4d97047ad4bf14534777b2c7ac29e9690279f2d714bd53e23"
+          "bytes": 1057425,
+          "sha256": "5c809e3751108aa3c90f9602d81cd8d8e608cee47fcff3e560a625d268cce5a7"
         },
         "manual_finding": "substantively_equivalent_same_claim_strength_and_limits"
       }
     ],
-    "coverage_sha256": "6bae33ff76792bd15464b5c44c7310a24936c7cb2b37a12b57d4acf118223299",
+    "coverage_sha256": "1ba51296c0efddf1e08a48cd78d056149d7a39ec3a3902e1479a8ebbec65d952",
     "conclusion": "substantively_equivalent_no_raised_confidence_or_dropped_limitation",
     "reopen_rule": "Any paired artifact byte change reopens the bilingual review until all criteria are rechecked and pair hashes are refreshed."
   },

@@ -13,6 +13,8 @@ const SUB = path.dirname(VISUAL);
 const FIGURES = path.join(SUB, "assets", "figures");
 const CONTRACTS_PATH = path.join(ASSETS, "regional-interface-contracts.json");
 const R3E_BUNDLE_PATH = path.join(ASSETS, "r3e-implementation-sources.json");
+const PHASE2_VISUAL_SOURCE_PATH = path.join(ASSETS, "phase2-visual-generator-source.json");
+const PHASE2_VISUAL_CONTRACT_PATH = path.join(ASSETS, "phase2-visual-generation-contract.json");
 const FREEZE_PATH = path.join(ASSETS, "phase4-source-freeze.json");
 const PHASE4_CONTRACT_PATH = path.join(ASSETS, "phase4-generation-contract.json");
 const R4_CONTRACT_PATH = path.join(ASSETS, "r4-regional-interface-generation-contract.json");
@@ -20,6 +22,8 @@ const mode = process.argv.includes("--generate") ? "generate" : process.argv.inc
 if (!mode) throw new Error("Use --generate, --figures-only, or --check");
 
 const FIGURE_OUTPUTS = [
+  "assets/figures/site-overview.png",
+  "assets/figures/site-overview.en.png",
   "assets/figures/ai-ecosystem.png",
   "assets/figures/ai-ecosystem.en.png",
   "assets/figures/operations-pathway.png",
@@ -48,6 +52,8 @@ const R4_OVERRIDE_INPUTS = [
   "proposal.en.md",
   "visual/assets/phase4-figure-registry.json",
   "visual/assets/phase4-layout-contract.json",
+  "visual/assets/phase2-visual-generator-source.json",
+  "visual/assets/phase2-visual-generation-contract.json",
   "visual/assets/regional-interface-contracts.json",
   "visual/assets/r4-regional-interface-generator.js",
 ];
@@ -71,6 +77,144 @@ function replaceExact(text, oldValue, newValue, label) {
   }
   if (text.indexOf(oldValue, first + oldValue.length) >= 0) throw new Error(`${label} is non-unique`);
   return text.slice(0, first) + newValue + text.slice(first + oldValue.length);
+}
+
+function runR6Readability() {
+  const record = readJson(PHASE2_VISUAL_SOURCE_PATH);
+  let source = record.source;
+  const recordedHash = crypto.createHash("sha256").update(Buffer.from(source, "utf8")).digest("hex");
+  if (recordedHash !== record.source_sha256) throw new Error(`Phase 2 visual source hash drift: ${recordedHash}`);
+
+  const readabilityState = "R3_COMMON_SCALE_ASSERTIONS = []\nF01_READABILITY_ASSERTIONS = []\n";
+  while (source.includes(`${readabilityState}F01_READABILITY_ASSERTIONS = []\n`)) {
+    source = source.replace(`${readabilityState}F01_READABILITY_ASSERTIONS = []\n`, readabilityState);
+  }
+  if (!source.includes(readabilityState)) {
+    source = replaceExact(source, "R3_COMMON_SCALE_ASSERTIONS = []\n", readabilityState, "R6 readability assertion state");
+  }
+  source = replaceExact(
+    source,
+    `    attribution = R3_CONTEXT["license"]["attribution_zh" if b.lang == "zh" else "attribution_en"]
+    b.text((box[0] + 12, box[3] - 24), attribution, 10, B.MUTED, True)`,
+    `    attribution = R3_CONTEXT["license"]["attribution_zh" if b.lang == "zh" else "attribution_en"]
+    if map_id == "F01-corridor":
+        attribution_size = 18
+        attribution_xy = (box[0] + 14, box[3] - 58)
+        attribution_bbox = b.d.textbbox(attribution_xy, attribution, font=b.font(attribution_size))
+        attribution_background = (attribution_bbox[0] - 7, attribution_bbox[1] - 5, attribution_bbox[2] + 7, attribution_bbox[3] + 5)
+        b.d.rounded_rectangle(attribution_background, radius=6, fill="#F6F2EAEA")
+        b.text(attribution_xy, attribution, attribution_size, B.MUTED)
+        assertion = {
+            "element": "F01 map attribution",
+            "language": b.lang,
+            "font_px": attribution_size,
+            "effective_px_at_1440_preview": round(attribution_size * 1440 / B.W, 2),
+            "bbox_px": list(attribution_bbox),
+            "background_bbox_px": list(attribution_background),
+            "bottom_clearance_px": box[3] - attribution_background[3],
+            "inside_map": attribution_background[0] >= box[0] and attribution_background[1] >= box[1] and attribution_background[2] <= box[2] and attribution_background[3] <= box[3],
+        }
+        F01_READABILITY_ASSERTIONS.append(assertion)
+        if not assertion["inside_map"] or assertion["effective_px_at_1440_preview"] < 10 or assertion["bottom_clearance_px"] < 28:
+            raise RuntimeError(f"F01 attribution readability failed: {assertion}")
+    else:
+        b.text((box[0] + 12, box[3] - 24), attribution, 10, B.MUTED, True)`,
+    "R6 F01 attribution hierarchy",
+  );
+  source = replaceExact(
+    source,
+    `def metric_card(b, box, value, label, metric_id, color=B.ORANGE, note=""):
+    b.rounded(box, B.PAPER, B.LINE, 22, 2)
+    x0, y0, x1, _ = box
+    b.text((x0 + 28, y0 + 24), value, 48, color, True)
+    value_bbox = b.d.textbbox((x0 + 28, y0 + 24), value, font=b.font(48, True))
+    label_y = max(y0 + 91, value_bbox[3] + 16)
+    b.text((x0 + 28, label_y), b.wrap(label, 20), 22, B.INK, True)
+    b.text((x0 + 28, label_y + 60), f"[metric:{metric_id}]", 17, B.MUTED)
+    if note:
+        b.text((x0 + 28, label_y + 96), b.wrap(note, 30), 17, B.MUTED)`,
+    `def metric_card(b, box, value, label, metric_id, color=B.ORANGE, note=""):
+    b.rounded(box, B.PAPER, B.LINE, 22, 2)
+    x0, y0, x1, y1 = box
+    b.text((x0 + 28, y0 + 24), value, 48, color, True)
+    value_bbox = b.d.textbbox((x0 + 28, y0 + 24), value, font=b.font(48, True))
+    label_y = max(y0 + 91, value_bbox[3] + 16)
+    label_width = 32 if metric_id == "cross_section_candidate_count" and b.lang == "en" else 20
+    label_text = b.wrap(label, label_width)
+    label_xy = (x0 + 28, label_y)
+    b.text(label_xy, label_text, 22, B.INK, True)
+    label_bbox = b.d.multiline_textbbox(label_xy, label_text, font=b.font(22, True), spacing=6)
+    marker = f"[metric:{metric_id}]"
+    marker_y = label_bbox[3] + 14 if metric_id == "cross_section_candidate_count" else label_y + 60
+    marker_xy = (x0 + 28, marker_y)
+    b.text(marker_xy, marker, 17, B.MUTED)
+    marker_bbox = b.d.textbbox(marker_xy, marker, font=b.font(17))
+    note_bbox = None
+    if note:
+        note_xy = (x0 + 28, marker_bbox[3] + 14)
+        note_text = b.wrap(note, 30)
+        b.text(note_xy, note_text, 17, B.MUTED)
+        note_bbox = b.d.multiline_textbbox(note_xy, note_text, font=b.font(17), spacing=6)
+    if metric_id == "cross_section_candidate_count":
+        assertion = {
+            "element": "F01 English candidate metric card" if b.lang == "en" else "F01 Chinese candidate metric card",
+            "language": b.lang,
+            "value_bbox_px": list(value_bbox),
+            "label_bbox_px": list(label_bbox),
+            "marker_bbox_px": list(marker_bbox),
+            "label_marker_gap_px": marker_bbox[1] - label_bbox[3],
+            "inside_card": marker_bbox[2] <= x1 - 24 and marker_bbox[3] <= y1 - 18,
+            "intersections": int(label_bbox[3] > marker_bbox[1]),
+        }
+        F01_READABILITY_ASSERTIONS.append(assertion)
+        if assertion["intersections"] or assertion["label_marker_gap_px"] < 12 or not assertion["inside_card"]:
+            raise RuntimeError(f"F01 metric-card readability failed: {assertion}")`,
+    "R6 F01 metric-card layout",
+  );
+  source = replaceExact(
+    source,
+    `    b.text((110, 1290), "SITE-001 · PROVISIONAL ROUGH · CX01—12 CANDIDATE / NOT SURVEYED", 15, B.MUTED, True)`,
+    `    b.text((110, 1284), "SITE-001 · PROVISIONAL ROUGH · CX01—12 CANDIDATE / NOT SURVEYED", 18, B.MUTED, True)`,
+    "R6 F01 map status footnote",
+  );
+  source = replaceExact(
+    source,
+    `    R3_COMMON_SCALE_ASSERTIONS.clear()
+    toolchain = B.verify_toolchain()`,
+    `    R3_COMMON_SCALE_ASSERTIONS.clear()
+    F01_READABILITY_ASSERTIONS.clear()
+    toolchain = B.verify_toolchain()`,
+    "R6 readability assertion reset",
+  );
+  const readabilityContract = `        "f01_readability_assertion": {
+            "required_intersections": 0,
+            "minimum_label_marker_gap_px": 12,
+            "minimum_effective_attribution_px_at_1440_preview": 10,
+            "assertions": F01_READABILITY_ASSERTIONS,
+        },
+`;
+  while (source.includes(`${readabilityContract}${readabilityContract}`)) {
+    source = source.replace(`${readabilityContract}${readabilityContract}`, readabilityContract);
+  }
+  if (!source.includes(readabilityContract)) {
+    source = replaceExact(source, `        "f02_legend_bbox_assertion": {`, `${readabilityContract}        "f02_legend_bbox_assertion": {`, "R6 readability contract");
+  }
+
+  const temporary = path.join(ASSETS, `.r6-phase2-visual-${process.pid}.py`);
+  fs.writeFileSync(temporary, source.replace(/\r\n/g, "\n"), "utf8");
+  try {
+    const python = process.env.R6_VISUAL_PYTHON || "python";
+    const result = spawnSync(python, [temporary], { stdio: "inherit", env: { ...process.env, PYTHONIOENCODING: "utf-8" } });
+    if (result.status !== 0) throw new Error(`R6 Phase 2 visual generator exited ${result.status}`);
+  } finally {
+    fs.rmSync(temporary, { force: true });
+  }
+  const refreshed = readJson(PHASE2_VISUAL_SOURCE_PATH);
+  const refreshedHash = crypto.createHash("sha256").update(Buffer.from(refreshed.source, "utf8")).digest("hex");
+  if (refreshedHash !== refreshed.source_sha256 || !refreshed.source.includes("F01_READABILITY_ASSERTIONS")) throw new Error("R6 source snapshot did not bind the repaired generator");
+  const contract = readJson(PHASE2_VISUAL_CONTRACT_PATH);
+  const assertions = contract.f01_readability_assertion?.assertions ?? [];
+  if (assertions.length !== 4 || assertions.some((item) => item.intersections || item.inside_card === false || item.inside_map === false)) throw new Error(`R6 readability assertions failed: ${JSON.stringify(assertions)}`);
 }
 
 function repairR5ReportHtml() {
@@ -265,11 +409,12 @@ function updateFreeze() {
   const fileSha = Object.fromEntries(R4_OVERRIDE_INPUTS.map((relative) => [relative, sha256(path.join(SUB, relative))]));
   freeze.r4_regional_interface_override = {
     schema: "jz-r4-regional-interface-override/v1",
-    authority: "R4 changes IM12 regional-interface contracts, their exact bilingual carriers, and the R5 top-level OSM evidence-separation crosswalk in sources.json only. The protected 28-record source array, geometry, SC01–SC12, IM01–IM13, the sole SC10+IM06 first use, Phase 3 state/authority/governance semantics, cost, operators, controllers, and real-world approval remain unchanged.",
+    authority: "R4 changes IM12 regional-interface contracts, their exact bilingual carriers, and the R5 top-level OSM evidence-separation crosswalk in sources.json. R6 changes only the authoritative F01 bilingual presentation layout: metric-card hierarchy plus larger visible map status/ODbL attribution, with no claim, metric, geometry, source, or authority change. The protected 28-record source array, geometry, SC01–SC12, IM01–IM13, the sole SC10+IM06 first use, Phase 3 state/authority/governance semantics, cost, operators, controllers, and real-world approval remain unchanged.",
     interface_ids: ["RI01", "RI02", "RI03", "RI04", "RI05"],
     status: "5 candidate contracts / 0 authorized / 0 operating / 0 field or live exchanges",
     file_sha256: fileSha,
     output_overrides: FIGURE_OUTPUTS,
+    readability_override: "F01 bilingual metric-card and map-footnote presentation only; machine assertions require zero overlap/crop and >=10 px effective attribution at a 1440 px preview.",
     generator: "visual/assets/r4-regional-interface-generator.js",
     contract: "visual/assets/r4-regional-interface-generation-contract.json",
   };
@@ -281,6 +426,7 @@ function updateFreeze() {
   if (finalCandidate) {
     for (const relative of ["assets/figures/operations-pathway.en.png", "assets/figures/operations-pathway.png"]) if (!finalCandidate.allowed_phase4_output_overrides.includes(relative)) finalCandidate.allowed_phase4_output_overrides.push(relative);
     for (const relative of ["assets/figures/ai-ecosystem.en.png", "assets/figures/ai-ecosystem.png"]) if (!finalCandidate.allowed_post_phase3_protected_overrides.includes(relative)) finalCandidate.allowed_post_phase3_protected_overrides.push(relative);
+    for (const relative of ["assets/figures/site-overview.en.png", "assets/figures/site-overview.png"]) if (!finalCandidate.allowed_post_phase3_protected_overrides.includes(relative)) finalCandidate.allowed_post_phase3_protected_overrides.push(relative);
     finalCandidate.phase3_outputs_preserved_byte_for_byte = finalCandidate.phase3_outputs_preserved_byte_for_byte.filter((relative) => !relative.includes("operations-pathway"));
     finalCandidate.r4_owner_contract = "visual/assets/r4-regional-interface-generation-contract.json";
   }
@@ -309,8 +455,23 @@ function patchR3eOverlay(program) {
   ));
   commands.push(replacementCommand(
     'if (!figure.includes("data-zoom-src")) figure += button;',
-    'figure = figure.replace(/<button class="zoom-trigger"[\\s\\S]*?<\\/button>/, button);\n    if (!figure.includes("data-zoom-src")) figure += button;',
+    'figure = figure.replace(/<button class="zoom-trigger"[\\s\\S]*?<\\/button>/, button);\n    figure = figure.replace(/<p class="f01-source-note"[\\s\\S]*?<\\/p>/, "");\n    if (!figure.includes("data-zoom-src")) figure += button;\n    if (item.id === "F01") { const note = lang === "zh" ? "图内来源与限制：© OpenStreetMap 贡献者 · ODbL 1.0；开放资料推导背景，非测绘、法定控制或道路红线。SITE-001 与 CX01—12 均为临时 / 候选状态。" : "In-figure source + limits: © OpenStreetMap contributors · ODbL 1.0; open-data-derived context, not survey, statutory control, or road redline. SITE-001 and CX01–12 remain provisional / candidate."; figure += `<p class="f01-source-note">${esc(note)}</p>`; }',
     "R4 zoom metadata refresh",
+  ));
+  commands.push(replacementCommand(
+    ".zoom-trigger{display:block;width:calc(100% - 2rem);margin:.7rem 1rem 1rem;padding:.62rem;border:2px solid var(--ink);background:white;color:var(--ink);font:inherit;font-weight:800;cursor:pointer}",
+    ".zoom-trigger{display:block;width:calc(100% - 2rem);margin:.7rem 1rem 1rem;padding:.62rem;border:2px solid var(--ink);background:white;color:var(--ink);font:inherit;font-weight:800;cursor:pointer}.f01-source-note{display:block;margin:.2rem 1rem 1rem;padding:.7rem .8rem;border-left:5px solid var(--orange);background:#f7f2e8;color:var(--muted);font-size:max(.9rem,12px);line-height:1.45;font-weight:700}",
+    "R6 visual F01 readable source note CSS",
+  ));
+  commands.push(replacementCommand(
+    'html = html.replace(figurePattern, `$1<strong>${item.id} · ${esc(title)}</strong><span>${esc(summary)}</span>$2`);',
+    'const readableSourceNote = item.id === "F01" ? `<small class="f01-source-note">${esc(lang === "zh" ? "图内来源与限制：© OpenStreetMap 贡献者 · ODbL 1.0；开放资料推导背景，非测绘、法定控制或道路红线。SITE-001 与 CX01—12 均为临时 / 候选状态。" : "In-figure source + limits: © OpenStreetMap contributors · ODbL 1.0; open-data-derived context, not survey, statutory control, or road redline. SITE-001 and CX01–12 remain provisional / candidate.")}</small>` : "";\n    html = html.replace(figurePattern, `$1<strong>${item.id} · ${esc(title)}</strong><span>${esc(summary)}</span>${readableSourceNote}$2`);',
+    "R6 report F01 readable source note",
+  ));
+  commands.push(replacementCommand(
+    ".phase4-guide p{margin:.8rem 0}",
+    ".phase4-guide p{margin:.8rem 0}.proposal-figure .f01-source-note{display:block;margin-top:.65rem;padding:.7rem .8rem;border-left:5px solid #b53a21;background:#f7f2e8;color:#596260;font-size:max(.9rem,12px);line-height:1.45;font-weight:700}",
+    "R6 report F01 source note CSS",
   ));
   commands.push(replacementCommand(
     "let R3E_QA = null;",
@@ -347,6 +508,21 @@ function patchR3eOverlay(program) {
     ".governance-cards{min-height:0;display:grid;grid-template-rows:repeat(3,minmax(0,1fr))}",
     ".governance-cards{min-height:0;display:grid;grid-template-rows:repeat(4,minmax(0,1fr))}",
     "R4 F11 readiness governance card",
+  ));
+  commands.push(replacementCommand(
+    '  const image = dataUrl(path.join(SUB, item.paths[lang]));\n  return `<section class="figure-card ${className}" aria-labelledby="${item.id.toLowerCase()}-title"><img src="${image}" alt="${esc(alt)}"><div class="figure-caption"><strong id="${item.id.toLowerCase()}-title">${item.id} · ${esc(title)}</strong><span>${esc(judgment)}</span></div></section>`;',
+    '  const image = dataUrl(path.join(SUB, item.paths[lang]));\n  const sourceNote = item.id === "F01" ? `<small class="f01-source-copy">${esc(lang === "zh" ? "来源与限制：© OpenStreetMap 贡献者 · ODbL 1.0；开放资料背景，非测绘 / 法定控制 / 道路红线；SITE-001 与 CX01—12 为临时 / 候选。" : "Source + limits: © OpenStreetMap contributors · ODbL 1.0; open-data context, not survey / statutory control / road redline; SITE-001 and CX01–12 are provisional / candidate.")}</small>` : "";\n  return `<section class="figure-card ${className}" aria-labelledby="${item.id.toLowerCase()}-title"><img src="${image}" alt="${esc(alt)}"><div class="figure-caption"><strong id="${item.id.toLowerCase()}-title">${item.id} · ${esc(title)}</strong><span>${esc(judgment)}</span>${sourceNote}</div></section>`;',
+    "R6 PDF F01 source note carrier",
+  ));
+  commands.push(replacementCommand(
+    ".figure-card .figure-caption span{color:${COLORS.muted};font-weight:700}",
+    ".figure-card .figure-caption span{color:${COLORS.muted};font-weight:700}.f01-source-copy{display:none}",
+    "R6 PDF F01 source note base CSS",
+  ));
+  commands.push(replacementCommand(
+    ".a3-page .figure-card .figure-caption{min-height:16mm;padding:3mm 4mm}",
+    ".a3-page .figure-card .figure-caption{min-height:16mm;padding:3mm 4mm}.a3-page.figure-f01 .figure-card{grid-template-rows:minmax(0,1fr) auto}.a3-page.figure-f01 .figure-card .figure-caption{display:block;min-height:11mm;padding:2mm 3mm;border-top:.8mm solid ${COLORS.orange};background:#f7f2e8}.a3-page.figure-f01 .figure-card .figure-caption strong,.a3-page.figure-f01 .figure-card .figure-caption span{display:none}.a3-page.figure-f01 .f01-source-copy{display:block;color:${COLORS.muted};font-size:8.5pt;line-height:1.2;font-weight:700}",
+    "R6 A3 F01 duplicate caption removal",
   ));
   commands.push(replacementCommand(
     "const failures = [];\n  const protectedFiles = freeze.protected_phase2_inputs.files;",
@@ -425,6 +601,8 @@ function writeR4Contract(contracts, browserVersion) {
     "visual/assets/r4-regional-interface-generator.js",
     "visual/assets/phase4-figure-registry.json",
     "visual/assets/phase4-layout-contract.json",
+    "visual/assets/phase2-visual-generator-source.json",
+    "visual/assets/phase2-visual-generation-contract.json",
     "visual/assets/phase3-governance-generator-source.json",
     "visual/assets/rebuild-visuals-source.json",
     "visual/assets/phase3-protocol-contracts.json",
@@ -453,6 +631,7 @@ function writeR4Contract(contracts, browserVersion) {
     toolchain: { node: process.version, playwright: playwrightVersion, chromium: browserVersion },
     visual_contract: {
       canvas_px: [2400, 1600],
+      f01_r6: "candidate metric value / label / marker use measured non-overlapping bboxes; map status and OSM/ODbL attribution are 18 px, with the attribution on an opaque support and equivalent to >=10 px at a 1440 px image preview; report/visual HTML repeat source and limits at >=12 CSS px, while A3 replaces the duplicate title/judgment caption with an 8.5 pt source/limit line",
       f07: "existing internal loop retains dominant visual weight; five hollow dashed interfaces remain physically disconnected below a closed authorization boundary",
       f11: "readiness is a separate header block in standalone F11 and a separate governance card in native A3/A0, never a lifecycle state or complaint-path overlay; it reports 5 contracts / 0 authorized / 0 operating",
       standalone_png_minimum_new_text_px: 21,
@@ -492,6 +671,7 @@ async function main() {
     checkR4();
   } else {
     const contracts = assertContracts();
+    runR6Readability();
     const browserVersion = await renderFigures(contracts);
     updateFreeze();
     if (mode === "figures-only") {
