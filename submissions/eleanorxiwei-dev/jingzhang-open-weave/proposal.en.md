@@ -44,6 +44,16 @@ The Zhongguancun technology-service wing would connect intellectual property, st
 
 In this proposal, a future city is not seamless surveillance. Each public AI interface should disclose data categories, purpose, retention, human contact, and appeal. Each industrial test needs a time-space fence, a stop condition, and an after-action report. Each recommendation system must preserve a non-algorithmic route.
 
+## 3A Identity System and Regional Innovation Interfaces
+
+The original Open Weave master mark combines an open loop with a folded weave line. The loop represents a public interface that people may enter or leave; the folded line refers to both a railway switch and the letter W. It does not use an existing company, institutional, or government mark. The standard palette is navy, cyan, and orange; formal applications may use navy monochrome or reversed white. Clear space equals the frame stroke x. Minimum width is 18 mm in print and 72 px on screen. Chinese and bilingual text uses Noto Sans SC under the SIL Open Font License 1.1; the source, licence, and local font asset are registered in `sources.json` and the copyright statement.
+
+The identity has three levels. The Open Weave master identity carries the belt-wide narrative and open archive. Railway-cultural wayfinding and the three verification-community identifiers inherit its grid and palette. The annual Open Weave Week sub-brand may change year and theme colour but may not replace the master. Trademark clearance, accessibility contrast, fabrication, and street-furniture applications remain tasks for professional development.
+
+Regional collaboration is framed as a four-step proposed interface: publish a problem list, reserve joint participation slots, run bounded tests, and release a bilingual archive. Beiwei Community would bring civic needs and feedback; Future Science City would connect joint R&D; Huairou Science City would connect large scientific facilities and fundamental research; BDA would connect industry testing and supply chains; Jing-Jin-Ji would connect transfer and talent networks. Quarterly problem lists, short joint residencies, and an annual open week are proposals only. No signed agreement, funding, project, data-sharing arrangement, or government commitment is asserted. [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]
+
+![Original identity, usage rules, and proposed regional innovation interfaces](assets/figures/identity-regional-network.en.png)
+
 ## 4 Overall Design Area: Urban Renewal and Regulatory-Plan-Level Urban Design
 
 The renewal method is "open with low disturbance." Nine concept zones cover the provisional boundary without gaps or overlaps and organise research, culture, education, living, community service, commerce, parks, and deliberate reserve space. They explain relationships and do not imitate an approved regulatory plan. Spatial actions are limited to four reference types: retain and open the ground floor; retain and repair links through passages or corners; renovate for shared laboratories or incubation; and discuss new prototypes only as capacity options.

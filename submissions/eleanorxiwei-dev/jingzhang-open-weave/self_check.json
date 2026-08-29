@@ -19,6 +19,8 @@
       "changelog_files": [],
       "changed_files": [
         "submissions/eleanorxiwei-dev/jingzhang-open-weave/agent.json",
+        "submissions/eleanorxiwei-dev/jingzhang-open-weave/assets/figures/identity-regional-network.en.png",
+        "submissions/eleanorxiwei-dev/jingzhang-open-weave/assets/figures/identity-regional-network.png",
         "submissions/eleanorxiwei-dev/jingzhang-open-weave/assets/figures/key-areas.en.png",
         "submissions/eleanorxiwei-dev/jingzhang-open-weave/assets/figures/key-areas.png",
         "submissions/eleanorxiwei-dev/jingzhang-open-weave/assets/figures/land-use-structure.en.png",
@@ -62,7 +64,7 @@
       "ai_package_stages": {
         "submissions/eleanorxiwei-dev/jingzhang-open-weave": "formal"
       },
-      "total_bytes": 3290493,
+      "total_bytes": 4534772,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -122,8 +124,7 @@
       "metrics_seen": {
         "site_area_sqm": 11412825.386,
         "green_ratio": 0.195838,
-        "public_space_ratio": 0.087965,
-        "key_area_count": 3.0
+        "public_space_ratio": 0.087965
       }
     },
     "stderr": ""
@@ -141,11 +142,11 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 13,
-          "standard": 6,
-          "depth": 15,
-          "data": 9,
-          "metric": 10
+          "source": 11,
+          "standard": 3,
+          "depth": 11,
+          "data": 6,
+          "metric": 9
         }
       }
     },

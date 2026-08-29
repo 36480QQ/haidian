@@ -20,13 +20,9 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 设计依据与资料清单
 
-设计首先服从公开征集公告的三层范围、三大目标与设计任务，同时响应面向智能体任务书的共创原则、功能定位和六项必答任务。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK]
+设计首先服从公开征集公告的三层范围、三大目标与设计任务，同时响应面向智能体任务书的十条共创原则、三大定位、五大功能、三区两翼和六项必答任务。资料分为四层：官方公告与正式标准用于确定任务及专业表达边界；清权任务书用于确定AI原生场景、品牌和运营要求；仓库 source registry 用于判断资料能否支撑 formal 结论；临时边界只用于生成、展示与入口自检。案例研究均为背景机制，不能支撑本项目红线、控规指标或实施承诺。[source:OFFICIAL-ANNOUNCEMENT] [source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]
 
-资料按权威性分层：官方公告与正式标准确定任务及专业表达边界；清权任务书确定AI原生场景、品牌和运营要求；仓库 source registry 判断资料能否支撑 formal 结论；临时边界只用于生成、展示与入口自检。[source:SOURCE-REGISTRY] [source:SITE-PACKAGE] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
-
-案例研究只提炼背景机制，不能支撑本项目红线、控规指标或实施承诺。专业深度以城市设计、控规编制、用地分类和建筑设计文件深度标准为参照，并在缺少正式条件时主动保持未知。[standard:MOHURD-URBAN-DESIGN-MEASURES] [standard:MOHURD-CONTROL-DETAILED-PLANNING] [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]
-
-本方案没有使用商业地图截图、OSM推测红线、新闻图片、企业内部数据或个人信息。现状企业、人口、权属、市政、文保、树木及建筑质量调查均视为待补专业资料；因此图层表达的是“设计问题如何被组织”，而不是“现实条件已经被证明”。`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 的 `official_boundary=false`、`geometry_role=provisional_constraint` 是贯穿正文、图纸、HTML与指标的硬约束。[source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [data:geometry/site_boundary.geojson#SITE-001]
+本方案没有使用商业地图截图、OSM推测红线、新闻图片、企业内部数据或个人信息。现状企业、人口、权属、市政、文保、树木及建筑质量调查均视为待补专业资料；因此图层表达的是“设计问题如何被组织”，而不是“现实条件已经被证明”。`geometry/site_boundary.geojson` 与 `geometry/key_areas.geojson` 的 `official_boundary=false`、`geometry_role=provisional_constraint` 是贯穿正文、图纸、HTML与指标的硬约束。
 
 ![总体概念、资料边界与开放经纬](assets/figures/site-overview.png)
 
@@ -34,9 +30,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 统筹研究范围回答“海淀AI创新链如何与城市生活共同演化”；总体设计范围回答“产业、更新、交通、市政、蓝绿和风貌如何形成一套空间语法”；三处重点区回答“不同创新环节如何变成可验证的街区原型”。三层不是三套孤立图纸：上层提出开放接口和治理原则，中层把原则转成走廊、节点和用地组织，下层以众智园、AI原点社区、大钟寺三种验证社区进行对照试验。
 
-总体结构概括为“一轨脊、三验证社区、九织片、十二场景驿站”。一轨脊承担文化展示、慢行和公共参与；三验证社区分别面向全栈技术验证、成果转化与人才生活、AI原生服务消费；九织片是完整覆盖临时总体边界的九个概念性用地区；十二驿站把场景、责任、运行时段和人工复核绑定到具体空间类型。该结构对应 [depth:three_level_scope_framework] 与 [depth:overall_spatial_structure]。
-
-空间数据通过 [data:geometry/land_use.geojson#LU-001]、[data:geometry/roads.geojson#ROAD-001] 和 [metric:land_use_zone_count] 提供可复核索引。
+总体结构概括为“一轨脊、三验证社区、九织片、十二场景驿站”。一轨脊承担文化展示、慢行和公共参与；三验证社区分别面向全栈技术验证、成果转化与人才生活、AI原生服务消费；九织片是完整覆盖临时总体边界的九个概念性用地区；十二驿站把场景、责任、运行时段和人工复核绑定到具体空间类型。该结构通过 [depth:three_level_scope_framework]、[data:geometry/land_use.geojson#LU-001] 和 [metric:land_use_zone_count] 提供可复核索引；完整证据映射见结构化合规矩阵。
 
 ![九织片用地结构与三层范围传导](assets/figures/land-use-structure.png)
 
@@ -48,15 +42,23 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 “未来城市”在本方案中不是无感监控，而是可见、可选择、可退出的服务。每个公共AI界面应展示数据来源类别、处理目的、保存期限、人工联系人和申诉入口；每个产业测试应有时空围栏、停止条件和复盘报告；每个推荐系统应提供非算法通道。这样的治理要求与空间结构共同落实 [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK]、[depth:existing_conditions_diagnosis] 和 [source:SOURCE-REGISTRY]。
 
+## 视觉识别系统与区域创新协同接口
+
+“京张开源经纬”母标识由一条开放环线与一条折返经纬线构成：环线表示可进入、可退出的公共接口，折线同时借用铁路道岔与字母 W 的结构，不使用既有企业、机构或政府标志。标准版采用海军蓝、青色与橙色；正式文件可使用海军蓝单色或反白版。安全空间为标识外框线宽 x，印刷最小宽度 18 mm、屏幕最小宽度 72 px。中文及双语正文采用 Noto Sans SC，其 SIL Open Font License 1.1、来源与内嵌离线字体子集已登记在 `sources.json` 和版权声明中。[source:FONT-NOTO-SANS-SC]
+
+品牌层级分为三级：一级是“京张开源经纬”创新带母品牌，负责跨片区共同叙事和开源档案；二级是铁路文化导视与三处验证社区子标识，只能继承母品牌网格和色彩；三级是年度 Open Weave Week 活动子品牌，可更换年份和主题色，但不得取代母品牌。该体系是原创设计方向，后续商标检索、无障碍对比度、制作材料和城市家具应用仍需专业深化。
+
+区域协同采用“问题清单—联合席位—受控试验—双语归档”四步建议机制：北纬社区提供社区需求与反馈，未来科学城连接联合研发，怀柔科学城连接大科学装置与基础研究，经开区连接产业测试和供应链，京津冀连接成果转化与人才网络。建议设置季度问题清单、短期联合测试席位和年度开放周，不声明已经签约，不虚构资金、项目或政府承诺；任何合作主体、时间、预算和数据共享须另行核实并依法审批。[source:AGENT-TASKBOOK] [source:SOURCE-REGISTRY]
+
+![原创标识系统、使用规范与区域创新协同接口](assets/figures/identity-regional-network.png)
+
 ## 总体设计范围城市更新与控规深度城市设计
 
 总体设计以“低扰动开放”为更新方法。九织片完整覆盖临时边界：科研、文化、教育、居住、社区服务、商业服务、公园绿地和弹性留白均采用国土空间分类子集；但这些分区只用于阐明功能关系，不替代已批控规。空间动作分为四类：保留并开放首层、保留并以连廊或街角改善联系、改造为共享实验/孵化空间、新建原型仅作容量讨论。任何单栋结论都须在权属、结构、消防、文保和经济性调查后由专业团队判断。
 
 建筑形态采用“轨脊低界面、节点可识别、街坊可渗透”的参考原则：沿公共轨脊优先连续檐下空间和可进入首层；三核用公共楼梯、共享大厅、可观看实验界面形成城市性；邻近居住和校园界面控制噪声、眩光与夜间活动。由于官方容积率、建筑高度、密度、绿地率和退线缺失，`floor_area_ratio` 保持 unknown，不以方案数值制造确定性。建筑基底指标只验证图层内部一致性，[metric:building_footprint_area_sqm] 不能被解释为审定建设规模。
 
-更新价值通过“是否改善公共连接、是否提供共享能力、是否降低试点风险、是否保留历史可读性”评估，而不是只以新增建筑量排序。该方法落实 [standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING] 与 [depth:land_use_layout]。
-
-强度和形态在缺少官方条件时保持未知，对应 [depth:development_intensity_controls] 与 [depth:height_massing_character]。
+更新价值通过“是否改善公共连接、是否提供共享能力、是否降低试点风险、是否保留历史可读性”评估，而不是只以新增建筑量排序。该方法落实 [standard:MOHURD-URBAN-DESIGN-MEASURES]、[depth:land_use_layout] 与 [depth:height_massing_character]；其余专业映射见 `standard_matrix.json` 和 `design_depth_matrix.json`。
 
 ## 重点区域详细设计
 
@@ -80,7 +82,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 `land_use.geojson` 由共享格网切分临时边界，形成九个无缝、不重叠、完整覆盖的概念分区；其目的在于验证数据拓扑与功能协同，而非模拟官方地块。科研和教育空间位于开放经纬的创新接口，文化和商业服务增强轨脊可读性，社区服务与居住支持职住学日常，公园绿地提供连续公共骨架，留白区明确提示“资料不足时不急于给答案”。用地编码依据 [standard:MNR-LAND-USE-CLASSIFICATION-GUIDE]。
 
-建筑原型图层以七个组团表示不同更新策略：开放首层、共享实验改造、社区服务连接、创新填充、孵化改造、商业再编程和人才生活参考新建。分类不是资产调查，也不是单栋拆改留结论；正式深化须增加建筑年代、结构安全、权属、租约、消防、能耗、历史价值和使用者意见。方案不计算总建筑面积和容积率，因为缺乏楼层与官方控规条件；只保留 [data:geometry/buildings.geojson#BLDG-001]、[metric:building_footprint_area_sqm] 与 [depth:retain_renovate_demolish] 作为原型基底的可复核证据。
+建筑原型图层以七个组团表示不同更新策略：开放首层、共享实验改造、社区服务连接、创新填充、孵化改造、商业再编程和人才生活参考新建。分类不是资产调查，也不是单栋拆改留结论；正式深化须增加建筑年代、结构安全、权属、租约、消防、能耗、历史价值和使用者意见。方案不计算总建筑面积和容积率，因为缺乏楼层与官方控规条件；只保留 [data:geometry/buildings.geojson#BLDG-001] 与 [metric:building_footprint_area_sqm] 作为原型基底的可复核证据。
 
 ## 交通、轨道、市政与公共服务设施
 
@@ -90,11 +92,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 蓝绿空间、公共空间与城市风貌
 
-蓝绿系统以轨脊线性空间为基底，叠加三处创新花园与东西生态联络，形成可步行、可休憩、可科普、可做低风险试验的连续网络。`green_space.geojson` 与 `public_space.geojson` 由同一投影几何生成，分别说明生态开敞空间和公共活动界面；两者可以复合但不被混同为法定绿地。[data:geometry/green_space.geojson#GREEN-001] [data:geometry/public_space.geojson#PUBLIC-001]
-
-面积类指标 [metric:green_space_area_sqm] 与 [metric:public_space_area_sqm] 均注明“概念性内部复算”。
-
-比例类指标 [metric:green_ratio] 与 [metric:public_space_ratio] 同样不得解释为法定控制值。
+蓝绿系统以轨脊线性空间为基底，叠加三处创新花园与东西生态联络，形成可步行、可休憩、可科普、可做低风险试验的连续网络。`green_space.geojson` 与 `public_space.geojson` 由同一投影几何生成，分别说明生态开敞空间和公共活动界面；两者可以复合但不被混同为法定绿地。方案指标 [metric:green_space_area_sqm]、[metric:green_ratio] 与 [metric:public_space_ratio] 均注明“概念性内部复算”，完整指标见 `metrics.json`。
 
 城市风貌采用“铁路材料记忆+中关村开放实验+AI责任可视化”三层语言：地面铺装和构件以轨道节奏与工业尺度提供历史线索；建筑首层以可观看的制作、讲解和展示形成创新文化；AI界面用状态灯、数据说明牌和人工联系人让责任被看见。未经授权不使用人物肖像、企业标识或历史图片。该策略落实 [standard:MOHURD-URBAN-DESIGN-MEASURES] 与 [depth:blue_green_public_space]。
 
@@ -112,9 +110,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 指标分三类：第一类是公告给出的约数，只用于确认任务尺度；第二类是基于临时边界与设计图层的内部一致性指标；第三类是缺乏官方条件而保持 unknown 的法定控制项。所有几何在 EPSG:4548 中复算，再以 EPSG:4326 交换。临时 site area [metric:site_area_sqm]、原型建筑基底、绿地与公共空间面积/比例、概念线长、重点区数量、用地区数量和分期数量均可从 GeoJSON 重算；但不应与公告约11.4平方公里或约368.4公顷混为精确红线面积。
 
-compliance_matrix 覆盖公告 1.3、1.4、1.5 以及 agent.1—agent.6；standard_matrix 覆盖所有 mandatory 专业标准；design_depth_matrix 的十五个 required item 均有正文、图纸、几何、指标、来源、假设和自检证据。[depth:metrics_recalculation]
-
-`MOHURD-ARCH-DESIGN-DEPTH-2016` 当前缺少官方本地正文，因此仅作为待补参考项，不能宣称已形成建筑工程设计文件。图、HTML和PDF只解释数据，不改变其权威顺序。[standard:MOHURD-ARCH-DESIGN-DEPTH-2016]
+compliance_matrix 覆盖公告 1.3、1.4、1.5 以及 agent.1—agent.6；standard_matrix 覆盖所有 mandatory 专业标准；design_depth_matrix 的十五个 required item 均有正文、图纸、几何、指标、来源、假设和自检证据。`MOHURD-ARCH-DESIGN-DEPTH-2016` 当前缺少官方本地正文，因此仅作为待补参考项，不能宣称已形成建筑工程设计文件。图、HTML和PDF只解释数据，不改变其权威顺序。
 
 ![指标复算、证据链与自检状态](assets/figures/metrics-evidence.png)
 
@@ -132,3 +128,4 @@ compliance_matrix 覆盖公告 1.3、1.4、1.5 以及 agent.1—agent.6；standa
 4. `data/source_registry.json` 与 `brief/site-package/geometry/provisional_boundaries.geojson` [source:PROCESSED-FACT-PACK]。
 5. MaRS [source:CASE-MARS]、Knowledge Quarter London [source:CASE-KQ-LONDON]、Paris-Saclay [source:CASE-PARIS-SACLAY]、one-north [source:CASE-ONE-NORTH]、22@ Barcelona [source:CASE-22-BARCELONA]、Brainport Eindhoven [source:CASE-BRAINPORT] 官方网站，仅作背景机制研究。
 
+完整证据索引见 `compliance_matrix.json`、`standard_matrix.json`、`design_depth_matrix.json` 与 `metrics.json`。
