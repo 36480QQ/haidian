@@ -1,5 +1,12 @@
 # 方案迭代记录
 
+## v1.7.0 (CocoSgt blocker repair) - 2026-08-29
+
+- 针对最新 CocoSgt review 5056488118（74/100、CHANGES_REQUESTED）将 agent.2 的案例证据重构为六个真实全球 AI 创新生态案例：AI Singapore 100E、IMDA AI Verify、IMDA Project Moonshot、Helsinki AI Register、Pan-Canadian AI Strategy、Mila ecosystem；每例在 proposal.md / proposal.en.md 与 sources.json 登记发布者、URL、时间、可核查事实、引用/许可边界、三节点/两翼转译机制和不可照搬条件。原六个 TOD/站区案例另列为站城参照组，不再计作 AI 生态证据；metrics.json 的 global_case_count=6 仅计前者。
+- 针对 agent.4 实际重绘 key-areas.png 与 key-areas.en.png：三列各含场地级概念平面、代表性四带断面和五步用户旅程，图中真实标出换乘/慢行路径、绿带缝合、公共空间、AI 服务/测试点、人工兜底和运营界面；同步重制 A0/A3 中英文 PDF、重新生成 report/proposal.html 与 report/proposal.en.html，并更新 design_depth_matrix.json、compliance_matrix.json 的可见证据描述。所有几何仍标为 provisional，图件不表达结构、消防、红线、官方尺寸或施工结论。
+- 视觉权利与质量：报告 HTML 内嵌 Noto Sans SC WOFF2 子集（SIL OFL 1.1，sources.json / copyright_statement.md 有台账）；figure_qc.json 重新记录 18 张最终 PNG 的尺寸、墨迹比与四边裁切扫描，文字框重叠继续诚实标记为 not_verified。A0 为 2 页、A3 为 6 页，代表页已用 Poppler 栅格渲染复核。
+- 本轮正式验证：refresh_submission_manifest 成功；self_check_submission 四门 ok=true、can_enter_formal_review=true；validate_local_submission --strict-manifest ok=true；manifest_schema.schema_errors 无错误。仅保留 provisional boundary 的既有非阻断 warning；本地通过不等于 CocoSgt 官评通过。
+
 ## v1.6.0 (evidence-chain repair) - 2026-08-29
 
 - 针对 CocoSgt 74/100（review 5048840427）中关于 metrics-evidence、key-areas、site-overview、land-use-structure、mobility-bluegreen 及其 HTML/A0/A3 复用的可核验性要求，复核当前 9 组中英 PNG 成品：18 张均为 1950×1350，四边无非白像素；最终图件证据写入 `visual/assets/figure_qc.json`，并由 `self_check.json[figure_qc]` 索引。
