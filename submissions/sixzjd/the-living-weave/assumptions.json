@@ -96,6 +96,30 @@
       "scope": "compliance",
       "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation.",
       "mitigation": "Replace provisional data with official documents before professional scoring."
+    },
+    {
+      "id": "ASSUMP-013",
+      "title": "Two-wing structure adopted from public official reporting",
+      "detail": "The west Zhongguancun Sci-Tech Service Wing and east Xiaoyuehe Scenario-Empowerment Wing follow the \"Three Zones, Two Wings\" wording in an April 2026 article on the Beijing Municipal Science and Technology Commission website. Wing extents are not bounded by any official geometry, and the reported ~37 km2 scale differs from the taskbook 43.6 km2 coordinated research scope.",
+      "scope": "regional_structure",
+      "impact": "Wing contents are coordination-level concepts without site boundaries or development-intensity assumptions; area figures from the media report are never mixed into this proposal's metrics.",
+      "mitigation": "All wing content is woven into existing streets, canal blue lines, and public space; when official boundary and waterway data become available, alignments and indicators are recalculated and official naming takes precedence."
+    },
+    {
+      "id": "ASSUMP-014",
+      "title": "Regional collaboration counterparts are conceptual and non-binding",
+      "detail": "Regional counterparts named in Section 9.5 (Zhongguancun AI Beiwai Community, the Three Cities and One Area platform, Zhangjiakou, neighboring sub-districts, global nodes) are described from public reporting as conceptual collaboration directions. No agreement, authorization, or commitment exists with any counterpart.",
+      "scope": "regeneration_implementation",
+      "impact": "None of the described collaborations can be read as signed partnerships, service guarantees, or investment commitments.",
+      "mitigation": "Any implementation requires separate authorization from the counterpart institutions; monitored indicators are limited to voluntary referrals and feedback, and collaboration remains appealable and exitable."
+    },
+    {
+      "id": "ASSUMP-015",
+      "title": "Accessibility baseline pending on-site audit",
+      "detail": "accessibility_completion remains unknown until a real sidewalk audit (curb ramps, dropped kerbs, crossing facilities) is carried out. The measurement plan registered in metrics.json defines the formula, data source, and quarterly re-measurement cadence.",
+      "scope": "public_interest",
+      "impact": "Inclusive-performance claims stay qualitative during the concept stage; no accessibility value is fabricated.",
+      "mitigation": "Publish the audit protocol and baseline results when operational data becomes available; until then the metric stays unknown by design rather than being backfilled."
     }
   ]
 }

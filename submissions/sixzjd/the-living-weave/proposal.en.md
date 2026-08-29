@@ -115,6 +115,14 @@ The branding core of the proposal is **"The Living Weave"** [source:AGENT-TASKBO
 
 The visual identity system proposes "warp-weft interlace" as its core graphic motif, abstracting the crossing relationship between the parallel lines of railway tracks (warp) and transverse connections (weft) into a logo system. All brand typography, imagery, and logos must use cleared sources; no unauthorized third-party intellectual property may be used.
 
+On this basis, the proposal turns the brand guidelines into verifiable deliverables: two original vector assets ship with the package — `visual/assets/brand/living-weave-mark.svg` (the mark: three warp threads and two weft threads interlacing over-and-under, with one weft in the accent color to signify "a new weft woven into an old warp") and `visual/assets/brand/living-weave-pattern.svg` (a tileable pattern for signage backgrounds and event materials). Key guidelines:
+
+- **Color**: primary "Jingzhang Teal" (#1F4E46, from green rolling stock and riverside water), secondary "Warp-Weft Cream" (#F2EDE4, rice paper and track ballast), accent "Jacquard Orange" (#D2622A, Jacquard loom timber and safety signalling), body-text charcoal (#26262B). Color combinations must meet WCAG AA text contrast.
+- **Typography**: Source Han Sans (SIL OFL 1.1) is recommended for Chinese, Inter (SIL OFL 1.1) for Latin text and figures; both are open-licensed and clearable. No unauthorized commercial fonts.
+- **Graphic extension**: minimum mark size 24 px; pattern density comes in open, medium, and dense grades, matching the signage backgrounds of the open-weave, weft, and dense-weave districts. Distortion, drop shadows, and rotated warp/weft directions are prohibited (warp stays vertical, weft stays horizontal).
+- **Media application**: four templates — signage totems, event materials, document headers, and offline web footers; bilingual signage appears as a horizontal pair, Chinese above English.
+- **Bilingual tagline pair**: Chinese "百年京张，织就未来" and English "Weaving a century into what's next." The two lines must always be used as a pair, never alone.
+
 ### 3.3 Future Urban Form: How AI Changes the Fabric's Pattern
 
 Artificial intelligence is transforming the way people work, live, socialize, learn, commute, and access public services. The proposal translates these changes into spatial responses:
@@ -144,6 +152,19 @@ The proposal selects the following global cases as benchmarks, each representing
 | The Silk Road | Civilization-scale weave network | China's earliest "cross-civilization innovation network" — how technology and culture interlaced through trade routes |
 
 Detailed analysis of benchmark cases, applicability assessments, and localization recommendations are stored in `report/ecosystem_cases.md`.
+
+### 3.5 Stitching the Two Wings: Aligning with the Official "Three Zones, Two Wings" Structure
+
+An April 2026 public article on the website of the Beijing Municipal Science and Technology Commission (and Zhongguancun Science Park Management Committee) describes the belt as "Three Zones, Two Wings": the Xuebeiyuan AI Self-Driven Innovation Acceleration Zone in the north, the AI Origin Community in the center, the Dazhongsi AI Industry Cluster Zone in the south, flanked by the Zhongguancun Sci-Tech Service Wing on the west and the Xiaoyuehe Scenario-Empowerment Wing on the east, with a publicly reported total area of about 37 km² [source:KW-SANQU-LIANGYI] [assumption:ASSUMP-013]. The proposal's "One Warp, Three Wefts" weave aligns with this structure item by item; in the fabric language, the two wings are the **selvage** — the two lateral bands that lock the structure and keep the fabric from unraveling.
+
+Scale note: the public reporting uses roughly 37 km², while the coordinated research scope of this taskbook is 43.6 km²; the difference stems from boundary demarcation and statistical methods [assumption:ASSUMP-013]. All area metrics in this proposal are recomputed strictly from the taskbook's three scope tiers and the provisional boundary; the two figures are never mixed. The wings are a coordination-layer structure and add no new floor-area assumptions.
+
+- **Central AI Origin Community and Southern Dazhongsi AI Industry Cluster Zone**: these correspond directly to the two key areas in Sections 5.3 and 5.4.
+- **Northern Xuebeiyuan AI Self-Driven Innovation Acceleration Zone**: this corresponds to the Zhongzhiyuan Open Weave District in Section 5.2 (taskbook area A1). "Zhongzhiyuan" is this proposal's name and "Xuebeiyuan" the public-reporting name for the same area; official documents take precedence.
+- **Western Zhongguancun Sci-Tech Service Wing**: this is not new developable land. It "stitches" Zhongguancun Street's existing sci-tech service capacity — IP, legal, consulting, testing, and pilot-scale matching — into the Jingzhang warp. The stitching nodes are the two "selvage seams" at Dazhongsi Station and Wudaokou Station: the four-quadrant pedestrian loop at Dazhongsi (JZ-06) faces the Zhongguancun east office side, and the technology-transfer street (JZ-04) faces the Xueyuan Road university side; the service frontage stays within walking reach along the wefts.
+- **Eastern Xiaoyuehe Scenario-Empowerment Wing**: the Xiaoyuehe canal flows north into the Qinghe, roughly parallel to the Jingzhang warp. The proposal introduces the **Xiaoyuehe Continuous Public Experience Path** as a conceptual corridor: a continuous slow-traffic experience line along the canal and its riverside green edges, linking the Qinghe innovation frontage (JZ-02) at its north end and passing university east gates, community pocket parks, and waterfront walks, with AI scenario experience points (slow-traffic navigation, environmental sensing, community service terminals) along the way [data:geometry/roads.geojson#ROAD-001] [depth:scenario_evidence]. Scenario cards thereby gain two continuous public carriers — the warp (heritage park) and the east wing (Xiaoyuehe) — answering the "scenario empowerment" positioning. The path is a conceptual suggestion; alignment, ownership, and blue-line conditions await official waterway and utility data.
+
+The two wings share the same scenario-governance, permitting, and exit mechanisms as the three key areas and the annual operations (Section 9.5). All wing content is woven into existing streets, canal blue lines, and public space, with no new development-intensity assumptions.
 
 ---
 
@@ -443,12 +464,21 @@ The proposal recommends establishing a wayfinding signage system with "warp-weft
 - Be bilingual (Chinese and English), prioritizing the competition's recommended translations.
 - Provide multilingual guided tours and digital narration at the three pilgrimage landmarks.
 - Propose a "Living Weave" cultural-symbol system and an AI-contributor honor-display scheme.
+- Reuse the original mark and pattern assets under `visual/assets/brand/` (guidelines in Section 3.2) so that full-line signage, event materials, and the offline web pages stay visually consistent.
 
 ### 9.5 Annual Operations and Regional Collaboration
 
 Living Weave is not a one-off festival identity, but an annual operating framework: an open-source and university-transfer week in spring, public scenario test days in summer, an international pitch and developer week in autumn, and a Jingzhang railway-culture and accessible-walking season in winter. Every activity is conditional on permits, safety, accessibility, consultation with nearby businesses, and a published post-event review; routes can change within permitted public space and never presume priority over residents' daily life.
 
-The research scope organizes collaboration as “university origination - Haidian conversion - Jingzhang coordination - global communication”: universities and institutes provide voluntary showcases, park service organizations support enterprise conversion, and the two cities coordinate talent, events, and industrial services only within their respective approvals and authorizations. Operating KPIs are limited to accessible participation, participant satisfaction, voluntary local-business feedback, completed enterprise-service referrals, and complaint closure. They are not investment promises or governmental performance findings [source:AGENT-TASKBOOK].
+The research scope organizes collaboration as “university origination - Haidian conversion - Jingzhang coordination - global communication.” Regional collaboration is grounded in five nameable counterparts, all conceptual directions that constitute no agreement, authorization, or promise [assumption:ASSUMP-014]:
+
+- **North: Zhongguancun AI Beiwai Community.** Haidian's public "Two Zones, One Belt" AI innovation street uses the Jingzhang Railway Heritage Park green belt to link the AI Origin Community in the south with the Zhongguancun AI Beiwai Community in the north — "southern origination, northern conversion, belt as the link" [source:HAIDIAN-TWO-ZONES-ONE-BELT]. The three key areas of this proposal sit in the middle segment of the "belt" and connect northward along the Jingzhang corridor for collaboration and spillover in technology conversion and industrial space.
+- **The "Three Cities and One Area" main platform.** Beijing designates Zhongguancun Science City, Huairou Science City, Future Science City, and the Innovative Industry Cluster Demonstration Area (including the Beijing Economic-Technological Development Area) as the main platform for building the international S&T innovation center [source:BEIJING-THREE-CITIES-ONE-AREA]. Conceptual collaboration directions: Zhongguancun Science City — same-domain articulation of original research and sci-tech services (the west wing of Section 3.5); Huairou Science City — data and computing demands from large scientific facilities validated as application scenarios in the belt; Future Science City — collaboration on energy and central-enterprise R&D resources; the Development Area (Yizhuang) — two-way exchange of mature intelligent-manufacturing supply and scaled autonomous-driving scenarios.
+- **Beijing-Tianjin-Hebei and Zhangjiakou.** The Jingzhang Railway's terminus was Zhangjiakou; the Jingzhang high-speed railway and green electricity are its contemporary continuation. The conceptual direction with Zhangjiakou is green computing and ice-snow tourism scenarios, echoing the century-old Jingzhang narrative of "speed and connection." No agreement exists or is implied; this is open, narrative-level docking only.
+- **Neighboring sub-districts and communities.** Communities and businesses of Qinghe, Xueyuan Road, Beixiaguan and nearby streets participate through the community review and business-consultation mechanisms of Section 6.5; collaboration is voluntary, appealable, and exitable, never top-down assignment.
+- **Global nodes.** Through the Global AI Activity Week (JZ-09) and the international reception functions of the three pilgrimage landmarks, the belt keeps an open connection to the global innovation network, with communication following the bilingual guidelines of Section 3.2.
+
+Operating KPIs are limited to accessible participation, participant satisfaction, voluntary local-business feedback, completed enterprise-service referrals, and complaint closure. They are not investment promises or governmental performance findings [source:AGENT-TASKBOOK].
 
 ---
 
@@ -541,6 +571,8 @@ Floor-area ratio, building height, building density, setback lines, road red lin
 
 AI innovation index, talent density, industrial-service satisfaction, slow-traffic accessibility, event participation, scenario usage frequency — these indicators must be continuously collected and calibrated during the operational phase; only the framework is proposed at this stage.
 
+Among them, the accessible-route completion rate (`accessibility_completion`) is honestly registered as `unknown`, but its measurement path is explicit: the numerator is the length of continuous accessible routes (segments with complete curb ramps, dropped kerbs, and crossing facilities), the denominator is the total planned accessible-route length, and the data comes from on-site sidewalk audits; during operation it is re-measured quarterly and published. Until real audit data exists, no number is entered, avoiding false precision [metric:accessibility_completion].
+
 ![Core indicator recalculation and evidence chain](assets/figures/metrics-evidence.png)
 
 ### 11.2 Compliance Matrix
@@ -552,12 +584,14 @@ Key coverage relationships:
 - Notice 1.3 (Build a world-class AI innovation ecosystem) -> Sections 2, 3
 - Notice 1.4 (Overall design scope urban regeneration) -> Sections 4, 7, 8
 - Notice 1.5 (Key area detailed design) -> Section 5
-- agent.1 (Overall concept and functional coordination) -> Sections 2 and 4
+- agent.1 (Overall concept and functional coordination) -> Sections 2, 3 and 4
 - agent.2 (Full-stack innovation ecosystem) -> Sections 3 and 5
-- agent.3 (AI-enabled scenarios) -> Section 6
+- agent.3 (AI-enabled scenarios) -> Sections 3 and 6
 - agent.4 (Public space, native AI services and landmarks) -> Sections 5 and 9
 - agent.5 (Jing-Zhang, Zhongguancun and AI cultural narrative) -> Sections 3, 8 and 9
-- agent.6 (Global activities and long-term operations) -> Section 10
+- agent.6 (Global activities and long-term operations) -> Sections 9 and 10
+
+Among them, the "two-wing stitching" of Section 3.5 simultaneously serves agent.1 (structural coordination), agent.3 (scenario carriers), and agent.6 (regional collaboration); it is this proposal's direct response to the official "Three Zones, Two Wings" structure.
 
 ---
 
@@ -603,6 +637,13 @@ The primary proposal document is in Chinese; a complete English counterpart tran
 | Open Weave (疏织) | Open Weave |
 | Dense Weave (密织) | Dense Weave |
 | Structured Weave (结构织) | Structured Weave |
+| Three Zones, Two Wings (三区两翼) | Three Zones, Two Wings |
+| Two Wings / Selvage (两翼 / 织边) | Two Wings / Selvage |
+| Zhongguancun Sci-Tech Service Wing (中关村科技服务翼) | Zhongguancun Sci-Tech Service Wing |
+| Xiaoyuehe Scenario-Empowerment Wing (小月河场景赋能翼) | Xiaoyuehe Scenario-Empowerment Wing |
+| Two Zones, One Belt (两区一带) | Two Zones, One Belt |
+| Brand Guidelines (品牌规范) | Brand Guidelines |
+| Xiaoyuehe Continuous Public Experience Path (小月河连续公共体验路径) | Xiaoyuehe Continuous Public Experience Path |
 
 ### 12.4 Compliance Statement
 
@@ -635,6 +676,9 @@ This proposal complies with the following requirements:
 - [source:SOURCE-REGISTRY] Source Registry
 - [source:PROCESSED-FACT-PACK] Processed Fact Pack navigation layer
 - [source:SITE-PACKAGE] Site materials package
+- [source:KW-SANQU-LIANGYI] Beijing Municipal Science & Technology Commission website article: "Three Zones, Two Wings Build a World-Class AI Agglomeration" (2026-04, background reference)
+- [source:BEIJING-THREE-CITIES-ONE-AREA] Beijing Municipal Science & Technology Commission website: "Three Cities and One Area" topic page (background reference)
+- [source:HAIDIAN-TWO-ZONES-ONE-BELT] Beijing Daily (official Haidian account): "Haidian Builds the 'Two Zones, One Belt' AI Innovation Street" (2026-01, background reference)
 
 ### 13.3 Structured Indexes
 

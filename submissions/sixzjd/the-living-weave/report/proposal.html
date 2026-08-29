@@ -51,6 +51,12 @@ code {
   padding: 0.1em 0.35em;
   border-radius: 4px;
 }
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 .summary { color: var(--muted); font-size: 17px; }
 .translation-link a { color: var(--accent); font-weight: 700; }
 .proposal-table { margin: 20px 0 26px; overflow-x: auto; }
@@ -173,6 +179,14 @@ code {
 <li><strong>The Living Weave</strong>——英文命名强调&quot;活的&quot;。织物不是完成品，它随着穿着者的身体、运动和生活方式不断变化。城市亦然。</li>
 </ul>
 <p>视觉识别系统建议以&quot;经纬交织&quot;为核心图形母题，将铁路轨道的平行线（经线）与横向连接（纬线）的交叉关系抽象为标志系统。所有品牌字体、图像和标识均须使用清权来源，不得使用未授权的第三方知识产权。</p>
+<p>在此基础上，方案将品牌规范落为可核验的交付物，随包提供两个原创矢量资产：<code>visual/assets/brand/living-weave-mark.svg</code>（标志——三条经线与两条纬线以一上一下方式交织，一条纬线用强调色表示&quot;新纬线织入旧经线&quot;）与 <code>visual/assets/brand/living-weave-pattern.svg</code>（可平铺纹样，用于导视底纹和活动物料）。规范要点：</p>
+<ul>
+<li><strong>色彩</strong>：主色&quot;京张青&quot;（#1F4E46，取自绿皮火车与滨河水色），辅色&quot;经纬米&quot;（#F2EDE4，宣纸与道砟色）、&quot;提花橙&quot;（#D2622A，提花机木构与安全警示色），正文深灰（#26262B）。色彩组合须满足 WCAG AA 文本对比度。</li>
+<li><strong>字体</strong>：中文建议思源黑体（SIL OFL 1.1），英文与数字建议 Inter（SIL OFL 1.1），均为开源可清权字体；不得引入未授权商业字体。</li>
+<li><strong>图形延展</strong>：标志最小使用尺寸 24 px；纹样密度分疏、中、密三档，分别对应疏织区、纬织带、密织区的导视底纹；禁止拉伸变形、加投影或改变经纬方向（经线恒为垂直、纬线恒为水平）。</li>
+<li><strong>媒介应用</strong>：导视立牌、活动物料、文档页眉与离线网页页脚四类模板；双语标识横排成对出现，中文在上、英文在下。</li>
+<li><strong>双语传播主文案</strong>：中文&quot;百年京张，织就未来&quot;；英文 &quot;Weaving a century into what&#x27;s next.&quot;。两句必须成对使用，不单独出现。</li>
+</ul>
 <h3>3.3 未来城市形态：AI 如何改变织物的纹样</h3>
 <p>人工智能正在改变工作、生活、社交、学习、交通和公共服务的方式。方案将这些变化转译为空间响应：</p>
 <div class="proposal-table"><table><thead><tr><th>变化维度</th><th>AI 时代的趋势</th><th>空间响应</th></tr></thead><tbody><tr><td>工作</td><td>远程协作、AI 辅助开发、弹性办公</td><td>分布式共享办公节点、端侧算力驿站</td></tr><tr><td>生活</td><td>智能配送、AI 管家、个性化服务</td><td>社区级 AI 生活服务样板街</td></tr><tr><td>学习</td><td>跨校选课、AI 辅导、终身学习</td><td>校区—园区慢行缝合、AI 教育体验点</td></tr><tr><td>交通</td><td>自动驾驶、智能导航、需求响应公交</td><td>AI 慢行导航、轨道站点一体化接驳</td></tr><tr><td>公共服务</td><td>智慧医疗、AI 法律咨询、数字政务</td><td>嵌入式社区 AI 服务终端</td></tr><tr><td>文化</td><td>数字遗产、虚拟展览、AI 创作</td><td>京张数字文化体验馆、AI 艺术装置</td></tr></tbody></table></div>
@@ -181,6 +195,16 @@ code {
 <p>方案选择以下全球案例作为对标参照，每个案例代表一种&quot;织法&quot; <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>：</p>
 <div class="proposal-table"><table><thead><tr><th>案例</th><th>织法类型</th><th>对标启示</th></tr></thead><tbody><tr><td>深圳华强北</td><td>自下而上的密织</td><td>从电子元器件市场到硬件创新生态的自发织造</td></tr><tr><td>深圳前海</td><td>政策引导的结构织</td><td>填海新城如何通过制度创新快速成网</td></tr><tr><td>波士顿创新区</td><td>产学研疏织</td><td>MIT/哈佛周边创新区如何通过慢行系统和公共空间连接碎片化地块</td></tr><tr><td>特拉维夫</td><td>创业国家的全域织</td><td>国家级创新生态如何从军事技术溢出到民用创业</td></tr><tr><td>新加坡裕廊湖区</td><td>产城融合的新织</td><td>从工业区到&quot;生命科学与 AI 创新枢纽&quot;的转型路径</td></tr><tr><td>丝绸之路</td><td>文明级织网</td><td>中国最早的&quot;跨文明创新网络&quot;——技术与文化如何通过贸易路线交织</td></tr></tbody></table></div>
 <p>对标案例的详细分析、适用性评估和本地化建议保存在 <code>report/ecosystem_cases.md</code> 中。</p>
+<h3>3.5 两翼缝合：与官方&quot;三区两翼&quot;结构的对接</h3>
+<p>北京市科学技术委员会、中关村科技园区管理委员会官网 2026 年 4 月的公开文章将创新带表述为&quot;三区两翼&quot;：北部学北园AI自主创新加速区、中部AI原点社区、南部大钟寺AI产业集聚区，西侧中关村科技服务翼、东侧小月河场景赋能翼，公开报道总面积约 37 平方公里 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="KW-SANQU-LIANGYI" title="来源：KW-SANQU-LIANGYI">来源</sup> [assumption:ASSUMP-013]。本方案&quot;一经三纬&quot;的织法与该结构逐项对接，两翼在织物语言中即&quot;织边&quot;（selvage）——固定织物结构、防止边缘脱散的两条侧向织带。</p>
+<p>口径说明：公开报道口径约 37 平方公里，本任务书统筹研究范围为 43.6 平方公里，差异源于边界划分与统计口径不同 [assumption:ASSUMP-013]。本方案全部面积指标仍以任务书三层范围与 provisional 边界复算为准，不混用两套数字；两翼为协同层结构，不新增建设量指标。</p>
+<ul>
+<li><strong>中部AI原点社区、南部大钟寺AI产业集聚区</strong>：分别对应本方案第 5.3、5.4 节两处重点区，对接关系直接。</li>
+<li><strong>北部学北园AI自主创新加速区</strong>：对应第 5.2 节众智园疏织区（任务书 A1 分区）。&quot;众智园&quot;为本方案命名，&quot;学北园&quot;为公开报道口径，两者指代同一片区；正式文件应以官方名称为准。</li>
+<li><strong>西侧中关村科技服务翼</strong>：不是新增建设用地，而是把中关村大街既有的知识产权、法务、咨询、检验检测和中试对接等科技服务能力&quot;缝&quot;进京张经线。缝合节点为大钟寺站与五道口站两个&quot;翼缝&quot;：大钟寺站四象限步行连通（JZ-06）面向中关村东侧办公区，成果转化街（JZ-04）面向学院路高校侧需求，科技服务界面沿纬线步行可达。</li>
+<li><strong>东侧小月河场景赋能翼</strong>：小月河北入清河，与京张经线大致平行。方案提出<strong>小月河连续公共体验路径</strong>作为概念性廊道：沿小月河及滨河绿带布置连续慢行体验线，北端衔接清河创新界面（JZ-02），串联高校东门、社区口袋公园与滨水步道，沿线布设慢行导航、环境感知、社区服务终端等 AI 场景体验点 <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/roads.geojson#ROAD-001" title="空间数据：geometry/roads.geojson#ROAD-001">空间数据</sup> <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="scenario_evidence" title="深度：scenario_evidence">深度</sup>。由此，场景卡在&quot;经线（遗址公园）+ 东翼（小月河）&quot;两条公共载体上形成连续可感的体验动线，回应&quot;场景赋能&quot;的定位。该路径为概念建议，具体线位、权属与蓝线条件待官方水系和市政资料确认。</li>
+</ul>
+<p>两翼与三处重点区、年度运营（第 9.5 节）共用同一套场景治理、许可与退出机制；两翼内容全部沿既有街道、河道蓝线和公共空间织入，不新增开发强度假设。</p>
 <p>---</p>
 <h2>4. 总体设计范围城市更新与控规深度城市设计</h2>
 <h3>4.1 城市更新的&quot;拆经穿纬&quot;</h3>
@@ -354,10 +378,19 @@ code {
 <li>中英双语标注，优先使用赛事推荐译法。</li>
 <li>在三个朝圣地标设置多语导览和数字解说。</li>
 <li>提出&quot;京张织&quot;文化符号体系和 AI 贡献者荣誉展示方案。</li>
+<li>复用 <code>visual/assets/brand/</code> 下的原创标志与纹样资产（规范见第 3.2 节），保证全线导视、活动物料与离线网页的视觉一致性。</li>
 </ul>
 <h3>9.5 年度运营与区域协同</h3>
 <p>“京张织”不是一次性节庆标识，而是年度运营框架：春季开源与高校成果周、夏季公众场景测试日、秋季国际路演与开发者周、冬季京张铁路文化与无障碍步行季。每场活动均以许可、安全、无障碍、周边商户协商和活动后公开复盘为前提；活动路线可在公共空间许可范围内调整，不预设对居民生活的优先权。</p>
-<p>统筹研究范围以“高校策源—海淀转化—京张协同—全球传播”组织合作：高校和研究机构提供自愿参与的成果展示，园区服务机构承接企业转化，京张两地在各自批准与授权范围内开展人才、展会和产业服务对接。拟监测的转化指标仅作为运营 KPI，包括活动无障碍参与率、参与者满意度、周边商户自愿反馈、企业服务转介完成率和投诉闭环率；它们不是招商承诺或政府绩效结论 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>。</p>
+<p>统筹研究范围以“高校策源—海淀转化—京张协同—全球传播”组织合作。区域协同落在五个可指认的对象上，全部为概念性协同方向，不构成任何协议、授权或承诺 [assumption:ASSUMP-014]：</p>
+<ul>
+<li><strong>北侧：中关村AI北纬社区</strong>。海淀区“两区一带”人工智能创新街区的公开表述，是以京张铁路遗址公园绿带串联南部AI原点社区与北部AI北纬社区，形成“南部策源、北部转化、绿带链接” <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="HAIDIAN-TWO-ZONES-ONE-BELT" title="来源：HAIDIAN-TWO-ZONES-ONE-BELT">来源</sup>。本方案三处重点区位于“一带”中段，向北沿京张廊道与北纬社区衔接，承接成果转化和产业空间的协作外溢。</li>
+<li><strong>“三城一区”主平台</strong>。北京市以中关村科学城、怀柔科学城、未来科学城和创新型产业集群示范区（含北京经济技术开发区）作为国际科技创新中心建设主平台 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="BEIJING-THREE-CITIES-ONE-AREA" title="来源：BEIJING-THREE-CITIES-ONE-AREA">来源</sup>。与三城一区的概念性协同方向：中关村科学城——原始创新与科技服务同域衔接（即第 3.5 节西翼）；怀柔科学城——大科学装置产生的数据与算力需求可在创新带做应用场景验证；未来科学城——能源与央企研发资源协作；经开区（亦庄）——智能制造成熟供给与自动驾驶规模化场景的双向输出。</li>
+<li><strong>京津冀与张家口</strong>。京张铁路的终点是张家口，京张高铁与绿色电力是其当代延续。创新带与张家口的概念性协同方向为绿色算力与冰雪文旅场景，呼应百年京张“速度与联通”的叙事；该方向无任何已签协议，仅为叙事与场景层面的开放对接。</li>
+<li><strong>周边街区与社区</strong>。清河、学院路、北下关等街道的社区和商户，通过第 6.5 节的社区评议与商户协商机制参与协同；协同不是自上而下的指派，而是可申诉、可退出的自愿合作。</li>
+<li><strong>全球节点</strong>。依托全球 AI 活动周（JZ-09）与三处朝圣地标的国际接待功能，保持与全球创新网络的开放连接，传播语言遵循第 3.2 节双语规范。</li>
+</ul>
+<p>拟监测的转化指标仅作为运营 KPI，包括活动无障碍参与率、参与者满意度、周边商户自愿反馈、企业服务转介完成率和投诉闭环率；它们不是招商承诺或政府绩效结论 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="AGENT-TASKBOOK" title="来源：AGENT-TASKBOOK">来源</sup>。</p>
 <p>---</p>
 <h2>10. 更新项目清单、实施政策与分期计划</h2>
 <h3>10.1 更新项目清单</h3>
@@ -397,6 +430,7 @@ code {
 <p>容积率、建筑高度、建筑密度、退线、道路红线、设施标准——当前均列为 <code>unknown</code> 或 <code>pending_control</code>，待正式控规条件确认后填入。</p>
 <p><strong>第三类：绩效指标</strong>（需运营数据持续校准）</p>
 <p>AI 创新指数、人才密度、产业服务满意度、慢行可达性、活动参与度、场景使用频次——这些指标需要在运营阶段持续采集和校准，当前仅提出框架。</p>
+<p>其中无障碍路线完成率（<code>accessibility_completion</code>）当前如实登记为 <code>unknown</code>，但测量路径已经明确：分子为连续无障碍路径长度（坡口、缘石坡道、过街设施齐全的路段），分母为规划无障碍路径总长度，数据来自现状人行道现场审计；运营期按季度复测并公开结果。在真实审计数据产生之前，本方案不填入任何数值，避免伪精确 <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="accessibility_completion" title="指标：accessibility_completion">指标</sup>。</p>
 <figure class="proposal-figure"><img src="../assets/figures/metrics-evidence.png" alt="核心指标复算与证据链"><figcaption>核心指标复算与证据链</figcaption></figure>
 <h3>11.2 合规矩阵</h3>
 <p>合规矩阵（<code>compliance_matrix.json</code>）是任务响应性的主控文件。每条公告任务和 agent_taskbook 任务都对应到报告章节、图层、指标、图纸、HTML 页面、来源、假设和自检项。</p>
@@ -405,13 +439,14 @@ code {
 <li>公告 1.3（构建世界级 AI 创新生态体系）→ 第 2、3 节</li>
 <li>公告 1.4（总体设计范围城市更新）→ 第 4、7、8 节</li>
 <li>公告 1.5（重点区域详细设计）→ 第 5 节</li>
-<li>agent.1（总体概念与功能统筹）→ 第 2、4 节</li>
+<li>agent.1（总体概念与功能统筹）→ 第 2、3、4 节</li>
 <li>agent.2（全栈创新生态）→ 第 3、5 节</li>
-<li>agent.3（AI+场景赋能）→ 第 6 节</li>
+<li>agent.3（AI+场景赋能）→ 第 3、6 节</li>
 <li>agent.4（公共空间、智能原生业态与地标）→ 第 5、9 节</li>
 <li>agent.5（京张、中关村与 AI 新文化叙事）→ 第 3、8、9 节</li>
-<li>agent.6（全球活动与长期运营）→ 第 10 节</li>
+<li>agent.6（全球活动与长期运营）→ 第 9、10 节</li>
 </ul>
+<p>其中第 3.5 节的&quot;两翼缝合&quot;同时服务 agent.1（结构统筹）、agent.3（场景赋能载体）和 agent.6（区域协同），是本方案对官方&quot;三区两翼&quot;结构的直接回应。</p>
 <p>---</p>
 <h2>12. 风险、版权与合规说明</h2>
 <h3>12.1 数据风险与精度警示</h3>
@@ -433,7 +468,7 @@ code {
 <p><code>report/copyright_statement.md</code> 逐项登记图件、案例卡、PDF 与离线网页的作者/生成方式、输入来源和再分发状态。OpenStreetMap、历史材料和全球案例仅在 <code>sources.json</code> 中作为背景参考；本包不复制其照片、Logo、瓦片或专有图纸，也不将其作为法定规划依据。</p>
 <h3>12.3 双语要求</h3>
 <p>方案主文件使用中文，通过 <code>proposal.en.md</code> 提供完整英文对照译文。译文优先使用 <code>docs/terminology-glossary.md</code> 的赛事推荐译法。核心术语对照：</p>
-<div class="proposal-table"><table><thead><tr><th>中文</th><th>英文</th></tr></thead><tbody><tr><td>经线</td><td>Warp</td></tr><tr><td>纬线</td><td>Weft</td></tr><tr><td>织物</td><td>Fabric / Weave</td></tr><tr><td>提花机</td><td>Jacquard Mechanism</td></tr><tr><td>提花治理协议</td><td>Jacquard Governance Protocol</td></tr><tr><td>织密度梯度</td><td>Weave Density Gradient</td></tr><tr><td>可逆纬线</td><td>Reversible Weft</td></tr><tr><td>纹样库</td><td>Pattern Library</td></tr><tr><td>场景卡</td><td>Scenario Card</td></tr><tr><td>朝圣地标</td><td>Pilgrimage Landmark</td></tr><tr><td>疏织</td><td>Open Weave</td></tr><tr><td>密织</td><td>Dense Weave</td></tr><tr><td>结构织</td><td>Structured Weave</td></tr></tbody></table></div>
+<div class="proposal-table"><table><thead><tr><th>中文</th><th>英文</th></tr></thead><tbody><tr><td>经线</td><td>Warp</td></tr><tr><td>纬线</td><td>Weft</td></tr><tr><td>织物</td><td>Fabric / Weave</td></tr><tr><td>提花机</td><td>Jacquard Mechanism</td></tr><tr><td>提花治理协议</td><td>Jacquard Governance Protocol</td></tr><tr><td>织密度梯度</td><td>Weave Density Gradient</td></tr><tr><td>可逆纬线</td><td>Reversible Weft</td></tr><tr><td>纹样库</td><td>Pattern Library</td></tr><tr><td>场景卡</td><td>Scenario Card</td></tr><tr><td>朝圣地标</td><td>Pilgrimage Landmark</td></tr><tr><td>疏织</td><td>Open Weave</td></tr><tr><td>密织</td><td>Dense Weave</td></tr><tr><td>结构织</td><td>Structured Weave</td></tr><tr><td>三区两翼</td><td>Three Zones, Two Wings</td></tr><tr><td>两翼 / 织边</td><td>Two Wings / Selvage</td></tr><tr><td>中关村科技服务翼</td><td>Zhongguancun Sci-Tech Service Wing</td></tr><tr><td>小月河场景赋能翼</td><td>Xiaoyuehe Scenario-Empowerment Wing</td></tr><tr><td>两区一带</td><td>Two Zones, One Belt</td></tr><tr><td>品牌规范</td><td>Brand Guidelines</td></tr><tr><td>小月河连续公共体验路径</td><td>Xiaoyuehe Continuous Public Experience Path</td></tr></tbody></table></div>
 <h3>12.4 合规声明</h3>
 <p>本方案遵守以下合规要求：</p>
 <ul>
@@ -462,6 +497,9 @@ code {
 <li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SOURCE-REGISTRY" title="来源：SOURCE-REGISTRY">来源</sup> 来源登记表</li>
 <li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="PROCESSED-FACT-PACK" title="来源：PROCESSED-FACT-PACK">来源</sup> 事实包导航层</li>
 <li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="SITE-PACKAGE" title="来源：SITE-PACKAGE">来源</sup> 场地资料包</li>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="KW-SANQU-LIANGYI" title="来源：KW-SANQU-LIANGYI">来源</sup> 北京市科委、中关村管委会官网公开文章：三区两翼打造世界级AI集聚地（2026-04，背景参考）</li>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="BEIJING-THREE-CITIES-ONE-AREA" title="来源：BEIJING-THREE-CITIES-ONE-AREA">来源</sup> 北京市科委、中关村管委会官网：&quot;三城一区&quot;专题页（背景参考）</li>
+<li><sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="HAIDIAN-TWO-ZONES-ONE-BELT" title="来源：HAIDIAN-TWO-ZONES-ONE-BELT">来源</sup> 北京日报客户端（北京海淀官方发布）：海淀打造&quot;两区一带&quot;人工智能创新街区（2026-01，背景参考）</li>
 </ul>
 <h3>13.3 结构化索引</h3>
 <ul>
