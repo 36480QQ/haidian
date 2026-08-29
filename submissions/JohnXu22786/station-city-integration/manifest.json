@@ -319,13 +319,13 @@
       "role": "other",
       "required": false,
       "role_detail": "figure_qc_raster_audit",
-      "sha256": "5e580fe153db88bd107e4ea7273afce59e5c93626c90e087c05e0870817b0cc8"
+      "sha256": "904605cd492c9d270e1f6937a41bd184da56a4e1be75f4f69434dd991039f64f"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f6273b4601e64ac177433438e6bb3137ced6a9d0199d1f639b55b2c15df05fae"
+      "sha256": "fca4fb82fdc4889ad01eda33ce92f184594022ed0338dc47b44e8c999b29fd8e"
     },
     {
       "path": "sources.json",
@@ -358,7 +358,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": false,
-      "sha256": "1be3220e5f138e8a0db39ff9d5c0b5f7b33af4ba83458ce5d42c1d37ade81387"
+      "sha256": "96c14d2cf6e99bf39d7dc77ea7c64da0048f36e293410f9282de0bdb4167d275"
     }
   ],
   "validation_claim": {
