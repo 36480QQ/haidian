@@ -6,6 +6,16 @@ The proposal makes one spatial decision: verification may not occupy the ground 
 
 方案只作一项空间裁决：验证不得接管普通任务所需地面。众智园以平行绕行和旁置验证庭回答；原点社区以一街两院四个可撤回节点回答；大钟寺以净空四向通勤和路外信息厅/人工台回答。
 
+## Policy-to-public-task firewall / 政策—公共任务防误读层
+
+R66 does not add a policy-themed design direction. It turns six already relevant, registered policy inputs into one bounded reviewer route: source scope → ordinary public task → G1 prerequisite → stop rule → prohibited inference. AI+ direction becomes a same-task dual-route design gate rather than a deployment mandate; Barrier-Free Environment Construction Law Article 39 remains limited to its listed public-service matters; the elderly smart-technology plan remains `background_only`; generative-AI complaint handling creates no fabricated statutory day count or general opt-out; content labelling is conditional on actually producing and distributing generated content; and Haidian policy grouping creates no partner or delivery promise.
+
+第66轮不新增“政策主题”方案方向，而是把六项已相关、已登记的政策输入组织成唯一追证路线：来源适用范围 → 普通公共任务 → G1 前置 → 停止规则 → 禁止推论。“人工智能+”只转成同任务双路径的设计进入门，不是部署命令；无障碍法第三十九条只限列举公共服务事项；适老化方案继续保持 `background_only`；生成式 AI 投诉处理不产生虚构法定天数或一般退出权；内容标识仅在实际生成并传播内容时触发；海淀政策分组不构成伙伴或落地承诺。
+
+The six mappings are synchronized across paired proposals/reports, both offline visual evidence sections, A3-13, A0-07 and `visual/assets/policy-to-task-register.json`. Source records rise from 49 to 52 and the exact-package rights inventory from 157 to 158 paths because one new contributor-authored register is distributed. No geometry, metric, page, media, scene, project, key area, governance contract, real actor, approval or maturity changes. This is contributor interpretation for a G0 concept package, not legal advice or a compliance finding.
+
+六条映射已同步到双语 proposal/report、两份离线 visual 的证据区、A3-13、A0-07 和 `visual/assets/policy-to-task-register.json`。来源由 49 条增至 52 条；因新增一份投稿方编写的登记表，精确包权利路径由 157 增至 158。geometry、指标、页数、媒体、场景、项目、重点区、治理合同、现实人物、批准和成熟度均未改变。本层是 G0 概念包的投稿方限界解释，不是法律意见或合规结论。
+
 ## Duty-acceptance gate / 责任接收门
 
 R64 makes the next professional question visible without inventing its answer: after a person completes the ordinary task, who may let verification continue? The sole pre-G1 candidate now passes through accountability/operations, public parity and independent-retest role types, then three grouped H01-H07 decisions. Any missing item means refuse real-world start and retain NO-GO; all seven closed only permits considering G1. Real acceptance remains 0/7, approvals 0 and field execution 0. Ordinary routes and printed/staffed same-task service do not wait for duty acceptance, and fault stops verification only.

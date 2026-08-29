@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "5ef0b9fbdbb215b451134c9fcd1cf76cbb9fa67ef3ac7309d17d21dfa2f10cce"
+      "sha256": "dfaca64198127102f9e1ae439d65cdffdfd8d97c7066f1840706e24cde5ad3d5"
     },
     {
       "path": "agent.json",
@@ -44,7 +44,7 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "11bc46ac9960131888336a83f32b5776aa5f451f7bea5632ac5dd6a469f6f085"
+      "sha256": "a5ad8cc6caba7450f474e2a835e22e89d14082d2e2f00e92b000f48af6426037"
     },
     {
       "path": "sources.json",
@@ -56,13 +56,13 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "f21f2193e9c831686a3315c4afdf663407554f1429e6ca080024e876f394c00b"
+      "sha256": "074158a2ada5d7021fed57c1a68d9df33d6b92eb165dc7511c37ce7c5d82fab4"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "110c644fa49f5918447be3508c091fc601c7657d49011b7d7a1f23da72bb1902"
+      "sha256": "975a4320043c5bf0e948028ce04afedb1f61e25b73fdd6e662fe5156f6a8c592"
     },
     {
       "path": "standard_matrix.json",
@@ -74,14 +74,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "f208a65b9759cc4ef6c9cd02ffb7e166b24531e980d42eadcab19d123c71267a"
+      "sha256": "54717d9245a05835ff0476d7ca5438c29127c6c673927f8796d792e248ea0e98"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "c3c5b1d795b37b1e20077a363af0c7401c5cf6988a1310a1936c6cdd5958d5b9"
+      "sha256": "57863688ceb6341973a0921c339146272bcb401a7849dd217c1c3434f97a1dd0"
     },
     {
       "path": "report/narrative.md",
@@ -100,28 +100,29 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "c8486cc90284cfffa6eebb7fbf53ba2a384a5ce8750c93acf922353563d81ee2"
+      "sha256": "3abf62d48c06874de9829ff3be0f03688df2763296945e586a3fce4f88042c67"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "96e046b05ac4cd9a0f322c5fd24f048ea8fb1595b498ac1ffec0ea09a9bb63da"
+      "sha256": "791f13a7ece5e4c47b9ca2354b1a13bd4dc29e88c7b109a080417b015a7485a7"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "56c914df9eaad533a2cd4cb8af5ac1c0a0f84cb172e223b555c20311b1a93d65"
+      "sha256": "d665bd1c8e8c46fae5e475d6a510a2c9da95587e55c2cdfa9ef5dae31f251b59"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "8fe96246e937c2b2a279d821382b30d90cfac733bdcbf9eb5459e2b6be04ae94"
+      "description_zh": "评审包五组核心固定图之一。首屏为三处重点区街道层级空间体验与构件落位：建筑首层、人物与轮椅尺度、绿化、骑行、答卷亭、人工兜底及 21/23/24 m 完整断面；下部为三片区放大总平面。概念表达，不是现状照片、审批效果图或工程承诺。",
+      "sha256": "be8706ad477b50515552d5ad07d0e8a27944cb1cc082fa3be631fa0ef7f3a4f0"
     },
     {
       "path": "assets/figures/land-use-structure.png",
@@ -218,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e54cdb01fe6151a6feb2c2dd3069e703a39219316dbf7dfd77e1a9ec9352c33b"
+      "sha256": "e5c0ad7bf98dc17149e70e340e665650bb87d8b921b0f31019d969587026a6c3"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "27e4060516067203cc702611d09c9764aeaaf7ec83c5f457a51fd49c2fbfc1ae"
+      "sha256": "4665284039d7d69eefaa7aa0077472301e96a1511b47739598d4a2cfcd6931bb"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -234,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "fbfd393d95343c64392adc5a271758844823ed4a45ab25e4f928dc9218bc97f9"
+      "sha256": "d6d1b36e140ddd93c4411d7df600b640b520e0b1475fadcbf7862011152b5969"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -242,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "c5847cb6eece14d05ac0981adecb6a6f18b4193de1438a9a90dd988905c486b8"
+      "sha256": "e786aa9e07c82f25d8cb9039ed22d8967bf1e3b372d4048290056d7d9dd0cfdb"
     },
     {
       "path": "visual/index.en.html",
@@ -250,7 +251,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "dd3a48417bab9bfeef3b141e41890d790c79452a48c35deda50fde6bfc629852"
+      "sha256": "0ca8b05d4975105975cf0cf870be96f7b5b065ae92df7fd875221a0092ac5bc0"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -258,7 +259,8 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/key-areas.png",
-      "sha256": "0cacc6e8fbe73474ec767505a57d2dfc454ca17992c1c45c0eca96f2d894a7a3"
+      "description_en": "One of the five fixed figure pairs supplied to the reviewer. It leads with street-level spatial experience and component placement in the three key areas: ground-floor facades, people and wheelchair scale, planting, cycling, kiosks, human fallback and complete 21/23/24 m sections; enlarged plans follow below. Conceptual expression, not a site photograph, approval rendering or engineering promise.",
+      "sha256": "23cd5191c5e363cf329f3490436df748c86b6c007f31fa079cb7fd5a02eaec4c"
     },
     {
       "path": "assets/figures/land-use-structure.en.png",
@@ -296,7 +298,7 @@
       "path": "changelog.md",
       "role": "changelog",
       "required": true,
-      "sha256": "1e009a2064533da676e0eee44734da46bc17a23904034420776b103ec21d154e"
+      "sha256": "69e34a6c9460a450f1dc5e1d55805aefe5abe574ac54b39189caa999b4ce91dd"
     }
   ],
   "validation_claim": {

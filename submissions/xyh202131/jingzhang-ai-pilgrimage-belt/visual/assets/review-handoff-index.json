@@ -1,8 +1,15 @@
 {
   "schema_version": "2.0",
-  "index_id": "JZ-REVIEW-HANDOFF-R65.0",
-  "publication_revision": "65.0",
+  "index_id": "JZ-REVIEW-HANDOFF-R68.0",
+  "publication_revision": "68.0",
   "as_of": "2026-08-28",
+  "review_status_semantics": {
+    "current_package_state_authority": "manifest.json and self_check.json on the current exact head",
+    "external_review_binding": "Every external review conclusion applies only to its reviewed_head.",
+    "predecessor_review": "PR #4136 completed a formal-review-ready review on c01d915ac819f51b77ce148c1c9a6be09e149eb7; after this package changes, that conclusion is predecessor history rather than a claim about the new head.",
+    "new_head_rule": "A new PR exact head remains unreviewed until an external review explicitly binds that head; contributor gates cannot prefill an external verdict.",
+    "history_route": "visual/assets/data-gap-closure-register.json preserves completed review history and superseded action registers without labelling them current."
+  },
   "reading_routes": [
     {
       "time": "30_seconds",
@@ -26,6 +33,7 @@
       "question": "How does a claim return to evidence, rights and professional veto?",
       "primary_answer": "visual/assets/professional-handoff-candidate.json",
       "source_governance": "visual/assets/source-governance-register.json",
+      "policy_to_task_firewall": "visual/assets/policy-to-task-register.json",
       "rights": "visual/assets/rights-clearance-ledger.json"
     }
   ],
@@ -71,6 +79,7 @@
     ],
     "detail_on_demand": [
       "visual/assets/source-governance-register.json",
+      "visual/assets/policy-to-task-register.json",
       "visual/assets/rights-clearance-ledger.json",
       "visual/assets/field-evidence-intake-contract.json",
       "visual/assets/bilingual-material-equivalence.json",
@@ -258,5 +267,32 @@
     },
     "surface": "visual/index.html#s5; assets/figures/review-professional-handoff.png; visual/assets/professional-handoff-candidate.json#/frontstage_duty_acceptance_decision",
     "boundary": "Contributor reading contract only; not a new governance contract, real role assignment, professional opinion, acceptance, approval or field result."
+  },
+  "policy_to_public_task_firewall": {
+    "audit_type": "contributor_bounded_policy_translation",
+    "before_state": {
+      "package_source_records": 49,
+      "proposal_stated_source_records": 48,
+      "structured_policy_to_task_mapping_count": 0,
+      "finding": "Policy direction existed in prose and sources, but a reviewer could not see one bounded route from policy scope to ordinary task, G1 entry condition, stop rule and prohibited inference."
+    },
+    "current_state": {
+      "package_source_records": 52,
+      "structured_policy_to_task_mapping_count": 6,
+      "primary_surface": "proposal.md policy entry-gate table; visual/index.html#s6; A3-13 and A0-07",
+      "machine_readable_surface": "visual/assets/policy-to-task-register.json",
+      "core_rule": "Policy sets a design entry gate; it does not create site approval, partnership, enforcement authority, field outcome or accepted professional duty.",
+      "rights_path_coverage": "158/158",
+      "new_media": false
+    },
+    "bounded_examples": [
+      "AI+ direction becomes same-task dual-route design intent rather than a deployment mandate",
+      "Barrier-Free Environment Construction Law Article 39 remains limited to its listed public-service matters",
+      "The elderly smart-technology plan remains background-only context for parallel traditional and smart channels",
+      "Generative-AI complaint handling does not create a fabricated statutory day count or general opt-out",
+      "Content-label rules apply only when generated content is actually produced and distributed",
+      "Haidian policy grouping informs optional testing questions, not partner or delivery commitments"
+    ],
+    "boundary": "Contributor interpretation for this G0 concept package only; not legal advice, an implementation decision, statutory compliance finding, organizer instruction, government approval or professional acceptance."
   }
 }

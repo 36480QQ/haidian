@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-08-28",
-  "central_registry_snapshot_count": 9,
-  "package_source_count": 49,
+  "central_registry_snapshot_count": 12,
+  "package_source_count": 52,
   "method_zh": "中央登记只决定中央来源状态；投稿方自采与自编来源保持包内身份，不因公开或较新自动升级为正式依据。",
   "method_en": "The central registry governs central-source status only. Participant-collected and package-authored sources retain package-local status and are never upgraded merely for being public or recent.",
   "records": [
@@ -176,6 +176,33 @@
       "authority_level": "official_policy",
       "redistributed_third_party_media": false,
       "review_rule": "Use only within the source record's stated scope, date, authority and limitations."
+    },
+    {
+      "source_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
+      "central_registry_id": "DATA-SRC-GENERATIVE-AI-INTERIM-MEASURES",
+      "governance_status": "central_approved_formal",
+      "claim_capacity": "formal_claim_within_registered_scope",
+      "authority_level": "A0",
+      "redistributed_third_party_media": false,
+      "review_rule": "Apply only to public-facing generative-content services under the registered Article 2 scope; keep Articles 14, 15 and 17 within the central registry's explicit limits."
+    },
+    {
+      "source_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
+      "central_registry_id": "DATA-SRC-BARRIER-FREE-ENVIRONMENT-LAW",
+      "governance_status": "central_approved_formal",
+      "claim_capacity": "formal_claim_within_registered_scope",
+      "authority_level": "A0",
+      "redistributed_third_party_media": false,
+      "review_rule": "Apply Article 39 human-operated service only to the listed medical, social-security, financial or living-payment service matters; do not generalize it to every public space or interface."
+    },
+    {
+      "source_id": "DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45",
+      "central_registry_id": "DATA-SRC-ELDERLY-SMART-TECH-PLAN-2020-45",
+      "governance_status": "central_background_only",
+      "claim_capacity": "background_context_only",
+      "authority_level": "A0_background_only",
+      "redistributed_third_party_media": false,
+      "review_rule": "Use only as national background for parallel traditional and smart channels; do not infer local implementation, compliance, demand or site control."
     },
     {
       "source_id": "JZ-PARK-2023",

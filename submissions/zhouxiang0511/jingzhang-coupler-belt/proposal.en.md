@@ -1,5 +1,5 @@
 ---
-title: "Jingzhang Coupler Belt: A Composable City — From the 1909 Automatic Coupler to an Open-Interface City"
+title: "JingZhang Co-Intelligence Express: A Composable City — From the 1909 Automatic Coupler to an Open-Interface City"
 author_github: "zhouxiang0511"
 language: "en"
 proposal_format_version: "2"
@@ -12,7 +12,7 @@ scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-c
 iteration: "v0.2"
 ---
 
-# Jingzhang Coupler Belt: A Composable City
+# JingZhang Co-Intelligence Express: A Composable City
 
 ## Design Basis and Source List
 
@@ -46,7 +46,7 @@ Boundary note: the official precise polygon has not yet been released; this prop
 - **Act II · Innovation (1980s–2020s)**: universities gathered first along the railway (the Tsinghua School in 1911, etc.), then Zhongguancun rose — from "Electronics Street" to the National Independent Innovation Demonstration Zone, **proving to the path of "only following" that "we can innovate"** (technological self-reliance) [source:JZ-PARK-PHASE1-20211014].
 - **Act III · Co-Intelligence (2026)**: Haidian hands 43.6 square kilometers to agents to explore humans and AI co-building the city. What this generation must prove is — **that humans can safely work alongside artificial intelligence** (governance self-reliance): connections have standards, exit has freedom, and safety is guaranteed, while **the master switch always stays in human hands**. When it opened in 2019, the Jingzhang high-speed railway was already the "world's first intelligent high-speed railway with a design speed of 350 km/h" [source:JZ-HISTORY-HSR-20191230] — the intelligent gene was already written into this track's contemporary extension.
 
-**Primary name: "Jingzhang Coupler Belt" (English: Jingzhang Coupler Belt, JCB) — a Composable City of Co-Intelligence between humans and agents.**
+**Primary name: "JingZhang Co-Intelligence Express" (English: JingZhang Co-Intelligence Express, JCE) — a Composable City of Co-Intelligence between humans and agents.**
 
 The plain-language translation of the "coupler": **the automatic coupler is the "USB port" of a hundred years ago** — letting railcars connect in a standardized way, couple and uncouple at any time, and marshal safely. An honest note is needed: the coupler was not invented by Zhan Tianyou (the American engineer Janney/Jiang Ni obtained patents as early as 1868 and 1873, confirmed by both the China State Railway Group official website and the 1982 scholarly study); Zhan Tianyou **introduced and promoted** it and repeatedly stated that it was not his own work — **introducing and promoting is also self-driven innovation** [source:C-RAILWAY-JZ-COUPLER] [source:JZ-COUPLER-DEBATE-1982] (assumption A-HISTORY-001). This proposal scales this century-old coupling wisdom of "coupler = standard interface" up to the city scale:
 
@@ -284,6 +284,37 @@ The renewal projects total 21 items [metric:renewal_project_count]; all are conc
 
 Implementation policy recommendations (conceptual directions): a "application—review—testing—exit" closed loop for scenario access, open public data and open-source licensing, co-building of the developer community, and public participation and human review systems. All policy and funding arrangements are directions for deepening [source:AGENT-TASKBOOK].
 
+
+### First-100-Days Work Packages and No-AI Baseline (verifiable deliverables)
+
+No AI scenario ends at "deploying AI"; the near-term delivery is five verifiable work packages (machine-readable protocol in `visual/assets/governance-protocol.json`, audited deterministically by `verify-governance.js`):
+
+| Work package | Days | Deliverable / acceptance |
+| --- | --- | --- |
+| Base map and rights freeze | Days 1–20 | Official base map, ownership, and approval-issue checklist frozen with version archive |
+| Continuous accessible spine | Days 21–40 | Step-free route mock-up, wheelchair/stroller pass-through, and emergency-stop walk test records |
+| Three reversible demo nodes | Days 41–60 | Reinstallable prototypes ready with mechanical keys, staff post, and fixed signage |
+| No-AI baseline operation | Days 61–80 | Fixed signage + paper rules + manual scheduling form a self-sufficient public service; cancellation reasons published |
+| Shadow-mode comparison and public-interest review | Days 81–100 | AI vs no-AI baseline compared in parallel; a public-interest review panel decides keep / revise / remove |
+
+**No-AI baseline (FT-03)**: every pilot runs in parallel with a "no-AI, same staff, same site, same opening hours" baseline; AI is kept to the next round only if it proves net public value (reduced waiting, missed reporting, or repetitive labor) without lowering safety, fairness, or accessibility. If there is no net value, keep the spatial upgrade and human service and remove the model — never remove basic passage [data:visual/assets/governance-protocol.json].
+
+### Implementation Responsibility Matrix (initial projects)
+
+The 21 renewal projects are supplemented by "lead-entity type / start gate / stage acceptance / exit asset" per the protocol (entities and funding are conceptual suggestions and do not constitute confirmed arrangements):
+
+| Project | Lead type (suggested) | Cost tier | Start gate | Stage acceptance / exit asset |
+| --- | --- | --- | --- | --- |
+| P01 Base map and rights freeze | Planning—heritage joint team | L | Rights and fact review passed | Traceable base-map index; contested data kept as cleared |
+| P02 Accessible spine | Transport—park joint team | H | Route audit and fire access passed | Full-chain task passed; accessible paths and signage retained |
+| P03 Three reversible demo nodes | Public operator | M | Manual fallback fully ready | Three field tests passed; movable components withdrawn on failure |
+| P04 No-AI baseline | Public operator | L | Fixed signage / paper rules / mechanical keys ready | Baseline records published; human service retained |
+| P05 Shadow-mode review | Independent public-interest review panel | L | Appeal deadlines and public log ready | Keep / revise / remove decision; audit ledger archived |
+| P06 Coupler Plaza open-interface site | Government platform company + authorized third party | M | Data protection and human review point ready | Usage/complaint/accessibility KPIs met; uncouple on violation |
+| P07 Interlocking Tower governance experience | Government platform company | M | Interlock demo and staffed post ready | Governance-rule readability assessed; stop on state mismatch |
+| P08 Robot low-speed delivery demo | Park operator + delivery enterprise | M | Traffic-safety audit and manual takeover drill passed | Zero tolerance for incidents; stop and switch to manual on route mismatch |
+| P09 City-agent emergency drill field | Governance agency + enterprise | H | Emergency plan and interlock drill passed | Takeover within 5 minutes; review and rectify on timeout |
+
 ### Operations Ledger and Three-Year Operating Model (agent.6)
 
 Landing the 21 conceptual renewal projects into a "near/medium/long term × operating-entity type / preconditions / KPIs / feedback / maintenance / stop-and-exit" ledger (**entities and funding are all conceptual suggestions and do not constitute confirmed arrangements**) [depth:renewal_project_list]:
@@ -336,6 +367,14 @@ Floor area ratio and building height depend on undisclosed regulatory-plan condi
 - **Accessibility and inclusion**: the manual service requirement of Article 39, paragraph 2 of the *Barrier-Free Environment Construction Law* is implemented in AI+ healthcare/social-security/finance/payment scenarios; intelligent and traditional services run in parallel [standard:BARRIER-FREE-ENVIRONMENT-LAW].
 - **Materials to be supplemented**: official boundary, regulatory-plan conditions, road red lines, ownership, municipal, and engineering materials are to be recalculated as a whole once official/rights-cleared documents are available (see the checklists in `assumptions.json` and `risk.json`).
 
+
+### Copyright & Rights-Clearance Summary (see `report/copyright_statement.md`)
+
+**Per-item clearance status (whole package)**: ① self-authored text/code/figures (AI Agent generated) are cleared; ② OSM base map is released only as derived statistics (ODbL 1.0, credited in figures); ③ Noto Sans SC subset (OFL 1.1) embedded in offline HTML, redistributable with the package; ④ conceptual renders/cover generated by Doubao Seedream 5.0 (Volcano Ark API) with platform watermark, generation traceability registered; ⑤ case and 2026 public-fact sources registered item by item in `sources.json` (URL/date/license/restriction, pending_review); ⑥ no unauthorized trademarks, typefaces, images, portraits, or paper figures are used.
+
+**Brand registration (conceptual version)**: the primary name "JingZhang Co-Intelligence Express (JCE)", the JZ/∞ mark (`visual/assets/logo-mark.svg`, original vector with archived geometry parameters), standard colors, and event names are original; unregistered and no trademark authorized; trademark search and professional finalization are executed before brand production (conditional trigger 5.5).
+
+**Bilingual equivalence**: `verify_bilingual_equivalence.py` deterministic gate PASS (zh 165 / en 164 markers, 13=13 sections); human review record in the copyright statement (15-item substantive equivalence check).
 ### Conditional-Trigger Response (Data gaps · Responsibility · Action)
 
 | Trigger condition | Responsibility | Action |

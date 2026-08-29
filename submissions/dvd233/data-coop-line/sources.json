@@ -303,6 +303,16 @@
       "path": "report/copyright_statement.md",
       "source_type": "participant_method_disclosure",
       "usage": "Discloses AI assistance, data-driven figures, local fonts, excluded third-party assets and provisional geometry status."
+    },
+    {
+      "id": "FONT-NOTO-SANS-SC",
+      "source_type": "open_licensed_font",
+      "publisher": "Google (Noto project), SIL Open Font License 1.1",
+      "accessed_at": "2026-08-24",
+      "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+      "license_or_reuse_terms": "SIL Open Font License 1.1 (license text confirmed in the font name table; http://scripts.sil.org/OFL). Subsetting and embedding permitted; no Reserved Font Name is claimed for the subset files.",
+      "usage": "Subsetted (package-text glyphs only) woff2 webfonts embedded via @font-face in the bilingual HTML carriers so Chinese text renders in font-deprived review environments; local() system copies are preferred when present.",
+      "limitations": "Subsets cover only the glyphs used by this package's current carriers; they are not a general-purpose font distribution. The package does not redistribute the original full font files."
     }
   ]
 }

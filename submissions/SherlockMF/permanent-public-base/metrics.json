@@ -785,6 +785,191 @@
       "recovery_condition": "gap at or below 5 minutes for two windows",
       "responsible_role": "public-interest reviewer",
       "official_or_statutory": false
+    },
+    "dazhongsi_base_active_service_area_sqm": {
+      "status": "known",
+      "value": 734.93,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/phasing.geojson",
+        "visual/assets/dazhongsi-operating-envelope.json"
+      ],
+      "formula": "area(D1 + D2, EPSG:4548); retain unrounded projected component areas and round display to 0.01 sqm",
+      "confidence": "low",
+      "assumptions": [
+        "A-M2-01"
+      ],
+      "name_zh": "大钟寺基准情景主动服务面积",
+      "name_en": "Dazhongsi Base active service area",
+      "evidence_classification": "PARTICIPANT_ASSUMPTION_DERIVED",
+      "range_low": 367.47,
+      "range_high": 1102.4,
+      "range_unit": "sqm",
+      "official_or_statutory": false,
+      "recalculation_trigger": "Recalculate after any D1-D3 geometry, component-selection or survey update."
+    },
+    "dazhongsi_base_capacity_persons": {
+      "status": "known",
+      "value": 29,
+      "unit": "count",
+      "intended_unit": "persons",
+      "source_files": [
+        "visual/assets/dazhongsi-operating-envelope.json"
+      ],
+      "formula": "round_half_up(734.93 sqm * 0.40 usable fraction / 10 sqm per person, 1 person)",
+      "confidence": "low",
+      "assumptions": [
+        "A-M2-02"
+      ],
+      "name_zh": "大钟寺基准情景算术容量",
+      "name_en": "Dazhongsi Base arithmetic capacity",
+      "evidence_classification": "PARTICIPANT_ASSUMPTION_DERIVED",
+      "range_low": 20,
+      "range_high": 44,
+      "range_unit": "persons",
+      "official_or_statutory": false,
+      "recalculation_trigger": "Replace after verified occupancy, fire, accessibility and operating-layout review."
+    },
+    "dazhongsi_base_annual_open_hours": {
+      "status": "known",
+      "value": 1350,
+      "unit": "none",
+      "intended_unit": "hours/year",
+      "source_files": [
+        "visual/assets/dazhongsi-operating-envelope.json"
+      ],
+      "formula": "Base participant operating assumption; low/base/high = 900/1350/1800 hours per year",
+      "confidence": "low",
+      "assumptions": [
+        "A-M2-02"
+      ],
+      "name_zh": "大钟寺基准情景年度开放小时",
+      "name_en": "Dazhongsi Base annual open hours",
+      "evidence_classification": "PARTICIPANT_ASSUMPTION",
+      "range_low": 900,
+      "range_high": 1800,
+      "range_unit": "hours/year",
+      "official_or_statutory": false,
+      "recalculation_trigger": "Recalculate when an approved calendar or operator plan differs by more than 10%."
+    },
+    "dazhongsi_base_fte_required": {
+      "status": "known",
+      "value": 3.0,
+      "unrounded_value": 2.986875,
+      "unit": "none",
+      "intended_unit": "FTE",
+      "source_files": [
+        "visual/assets/dazhongsi-operating-envelope.json"
+      ],
+      "formula": "fte_required_unrounded = 3 staffed positions * 1350 open hours/year * 1.18 coverage factor / 1600 productive hours/FTE-year = 2.986875 FTE; display fte_required = round_half_up(2.986875, 0.1 FTE) = 3.0 FTE",
+      "confidence": "low",
+      "assumptions": [
+        "A-M2-03"
+      ],
+      "name_zh": "大钟寺基准情景所需FTE",
+      "name_en": "Dazhongsi Base FTE required",
+      "evidence_classification": "PARTICIPANT_ASSUMPTION_DERIVED",
+      "range_low": 1.3,
+      "range_high": 5.3,
+      "range_unit": "FTE",
+      "official_or_statutory": false,
+      "recalculation_trigger": "Recalculate after approved hours, positions, coverage or productive-hours inputs."
+    },
+    "dazhongsi_base_capex_rom_cny": {
+      "status": "known",
+      "value": 4650000,
+      "unit": "none",
+      "intended_unit": "CNY ROM",
+      "source_files": [
+        "visual/assets/dazhongsi-operating-envelope.json"
+      ],
+      "formula": "round_half_up((734.93 sqm * 4200 CNY/sqm + 800000 CNY equipment allowance) * 1.20, 50000 CNY)",
+      "confidence": "low",
+      "assumptions": [
+        "A-M2-04"
+      ],
+      "name_zh": "大钟寺基准情景CAPEX数量级",
+      "name_en": "Dazhongsi Base CAPEX ROM",
+      "evidence_classification": "PARTICIPANT_ASSUMPTION_DERIVED",
+      "range_low": 2650000,
+      "range_high": 8050000,
+      "range_unit": "CNY ROM",
+      "official_or_statutory": false,
+      "recalculation_trigger": "Replace when a professional estimate changes any rate or allowance by more than 20%."
+    },
+    "dazhongsi_base_opex_annual_rom_cny": {
+      "status": "known",
+      "value": 1190000,
+      "unit": "none",
+      "intended_unit": "CNY/year ROM",
+      "source_files": [
+        "visual/assets/dazhongsi-operating-envelope.json"
+      ],
+      "formula": "round_half_up(2.986875 unrounded FTE * 200000 CNY/FTE-year + 1350 hours * 140 CNY/open-hour + 400000 CNY fixed allowance, 10000 CNY) = 1190000 CNY/year ROM",
+      "fte_required_unrounded": 2.986875,
+      "confidence": "low",
+      "assumptions": [
+        "A-M2-04"
+      ],
+      "name_zh": "大钟寺基准情景年度OPEX数量级",
+      "name_en": "Dazhongsi Base annual OPEX ROM",
+      "evidence_classification": "PARTICIPANT_ASSUMPTION_DERIVED",
+      "range_low": 510000,
+      "range_high": 2530000,
+      "range_unit": "CNY/year ROM",
+      "official_or_statutory": false,
+      "recalculation_trigger": "Replace after approved staffing, hours, wage, service-hour and fixed-cost inputs."
+    },
+    "dazhongsi_no_build_capex_rom_cny": {
+      "status": "known",
+      "value": 900000,
+      "unit": "none",
+      "intended_unit": "CNY ROM",
+      "source_files": [
+        "visual/assets/dazhongsi-operating-envelope.json"
+      ],
+      "formula": "base: 250000 CNY clear-line markings and bilingual wayfinding + 400000 CNY seating/shade + 250000 CNY staffed-window setup = 900000 CNY ROM; low/high use the corresponding published component bands",
+      "component_ranges_cny_rom": {
+        "clear_line_markings_and_fixed_wayfinding": [150000, 250000, 400000],
+        "seating_and_shade_package": [250000, 400000, 650000],
+        "staffed_window_setup": [150000, 250000, 400000]
+      },
+      "confidence": "low",
+      "assumptions": [
+        "A-M2-05"
+      ],
+      "name_zh": "大钟寺不建设情景公共基底CAPEX数量级",
+      "name_en": "Dazhongsi No-build public-base CAPEX ROM",
+      "evidence_classification": "PARTICIPANT_ASSUMPTION_DERIVED",
+      "range_low": 550000,
+      "range_high": 1450000,
+      "range_unit": "CNY ROM",
+      "official_or_statutory": false,
+      "recalculation_trigger": "Replace after a professional public-base estimate and operator plan."
+    },
+    "dazhongsi_no_build_opex_annual_rom_cny": {
+      "status": "known",
+      "value": 290000,
+      "unit": "none",
+      "intended_unit": "CNY/year ROM",
+      "source_files": [
+        "visual/assets/dazhongsi-operating-envelope.json"
+      ],
+      "formula": "base: round_half_up(0.66375 unrounded FTE * 200000 CNY/FTE-year + 160000 CNY fixed manual-service allowance, 10000 CNY) = 290000 CNY/year ROM; low/high use the corresponding published bands",
+      "fte_required_unrounded_range": [0.4425, 0.66375, 1.77],
+      "fixed_manual_service_allowance_cny_range": [110000, 160000, 250000],
+      "confidence": "low",
+      "assumptions": [
+        "A-M2-05"
+      ],
+      "name_zh": "大钟寺不建设情景年度OPEX数量级",
+      "name_en": "Dazhongsi No-build annual OPEX ROM",
+      "evidence_classification": "PARTICIPANT_ASSUMPTION_DERIVED",
+      "range_low": 170000,
+      "range_high": 750000,
+      "range_unit": "CNY/year ROM",
+      "official_or_statutory": false,
+      "recalculation_trigger": "Replace after approved staffed-window hours and loaded staff cost."
     }
   }
 }

@@ -857,7 +857,8 @@
       "mandatory": true,
       "report_sections": [
         "三层范围工作框架",
-        "统筹研究范围产业与未来城市研究"
+        "统筹研究范围产业与未来城市研究",
+        "P3-01｜品牌识别与视觉系统：两条正线，一张会到期的票"
       ],
       "geojson_layers": [
         "geometry/site_boundary.geojson",
@@ -866,7 +867,15 @@
       ],
       "metrics": [
         "site_area_sqm",
-        "key_area_count"
+        "key_area_count",
+        "brand_identity_contrast_pair_total",
+        "brand_identity_contrast_pair_passed",
+        "brand_identity_lockup_bilingual_coverage_ratio",
+        "brand_identity_no_color_only_coverage_ratio",
+        "brand_identity_application_anchor_coverage_ratio",
+        "brand_identity_negative_fixture_fail_closed_total",
+        "brand_identity_audit_case_total",
+        "brand_identity_audit_case_passed"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -875,7 +884,8 @@
       "visual_sections": [
         "总览地图",
         "三层范围",
-        "任务覆盖"
+        "任务覆盖",
+        "品牌识别"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -885,7 +895,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-BRAND-IDENTITY-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1064,7 +1075,8 @@
       "mandatory": true,
       "report_sections": [
         "蓝绿空间、公共空间与城市风貌",
-        "统筹研究范围产业与未来城市研究"
+        "统筹研究范围产业与未来城市研究",
+        "P3-01｜品牌识别与视觉系统：两条正线，一张会到期的票"
       ],
       "geojson_layers": [
         "geometry/green_space.geojson",
@@ -1072,7 +1084,15 @@
       ],
       "metrics": [
         "scenario_node_count",
-        "green_ratio"
+        "green_ratio",
+        "brand_identity_contrast_pair_total",
+        "brand_identity_contrast_pair_passed",
+        "brand_identity_lockup_bilingual_coverage_ratio",
+        "brand_identity_no_color_only_coverage_ratio",
+        "brand_identity_application_anchor_coverage_ratio",
+        "brand_identity_negative_fixture_fail_closed_total",
+        "brand_identity_audit_case_total",
+        "brand_identity_audit_case_passed"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1081,7 +1101,8 @@
       "visual_sections": [
         "总览地图",
         "蓝绿公共空间",
-        "来源"
+        "来源",
+        "品牌识别"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -1091,7 +1112,8 @@
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
-        "A-CONTROLS-001"
+        "A-CONTROLS-001",
+        "A-BRAND-IDENTITY-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",
@@ -1106,7 +1128,8 @@
       "mandatory": true,
       "report_sections": [
         "更新项目清单、实施政策与分期计划",
-        "风险、版权与合规说明"
+        "风险、版权与合规说明",
+        "P3-01｜品牌识别与视觉系统：两条正线，一张会到期的票"
       ],
       "geojson_layers": [
         "geometry/phasing.geojson",
@@ -1125,7 +1148,15 @@
         "synthetic_capacity_project_gate_passed",
         "synthetic_capacity_negative_path_fail_closed_total",
         "synthetic_capacity_minimum_headroom_requests",
-        "synthetic_capacity_no_data_to_data_capacity_ratio"
+        "synthetic_capacity_no_data_to_data_capacity_ratio",
+        "brand_identity_contrast_pair_total",
+        "brand_identity_contrast_pair_passed",
+        "brand_identity_lockup_bilingual_coverage_ratio",
+        "brand_identity_no_color_only_coverage_ratio",
+        "brand_identity_application_anchor_coverage_ratio",
+        "brand_identity_negative_fixture_fail_closed_total",
+        "brand_identity_audit_case_total",
+        "brand_identity_audit_case_passed"
       ],
       "drawings": [
         "drawings/a3-booklet.pdf",
@@ -1136,7 +1167,8 @@
         "核心指标",
         "假设",
         "到期数据票 E2 契约",
-        "合成容量准入包络"
+        "合成容量准入包络",
+        "品牌识别"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
@@ -1151,7 +1183,8 @@
         "A-WITHDRAWAL-001",
         "A-EXPIRING-TICKET-001",
         "A-EXPIRING-TICKET-THRESHOLDS-001",
-        "A-SYNTHETIC-CAPACITY-001"
+        "A-SYNTHETIC-CAPACITY-001",
+        "A-BRAND-IDENTITY-001"
       ],
       "self_check_ids": [
         "DETERMINISTIC_VALIDATION",

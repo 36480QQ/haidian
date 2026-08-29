@@ -67,16 +67,19 @@
         "submissions/zhouxiang0511/jingzhang-coupler-belt/self_check.json",
         "submissions/zhouxiang0511/jingzhang-coupler-belt/sources.json",
         "submissions/zhouxiang0511/jingzhang-coupler-belt/standard_matrix.json",
+        "submissions/zhouxiang0511/jingzhang-coupler-belt/visual/assets/governance-audit.json",
+        "submissions/zhouxiang0511/jingzhang-coupler-belt/visual/assets/governance-protocol.json",
         "submissions/zhouxiang0511/jingzhang-coupler-belt/visual/assets/logo-mark.svg",
         "submissions/zhouxiang0511/jingzhang-coupler-belt/visual/assets/renewal-projects.json",
         "submissions/zhouxiang0511/jingzhang-coupler-belt/visual/assets/scenario-cards.json",
+        "submissions/zhouxiang0511/jingzhang-coupler-belt/visual/assets/verify-governance.js",
         "submissions/zhouxiang0511/jingzhang-coupler-belt/visual/index.en.html",
         "submissions/zhouxiang0511/jingzhang-coupler-belt/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/zhouxiang0511/jingzhang-coupler-belt": "formal"
       },
-      "total_bytes": 25080727,
+      "total_bytes": 25821983,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -144,6 +147,11 @@
         "pilgrimage_landmark_count": 3.0,
         "industry_test_scenario_count": 4.0,
         "renewal_project_count": 21.0,
+        "gate_protocol_record_count": 12.0,
+        "human_authority_coverage": 1.0,
+        "manual_fallback_coverage": 1.0,
+        "data_minimization_coverage": 1.0,
+        "first_100_days_work_package_count": 5.0,
         "green_space_area_sqm": 3581524.507,
         "public_space_area_sqm": 565043.34,
         "land_use_area_sqm": 11412849.063
@@ -160,14 +168,14 @@
       "summary": {
         "standard_matrix_items": 7,
         "design_depth_items": 15,
-        "known_metric_refs_required": 13,
+        "known_metric_refs_required": 22,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
           "source": 20,
           "standard": 7,
           "depth": 13,
-          "data": 24,
+          "data": 25,
           "metric": 12
         }
       }

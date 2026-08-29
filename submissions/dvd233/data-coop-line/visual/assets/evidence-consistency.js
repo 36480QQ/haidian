@@ -261,7 +261,7 @@ def decoded_image_hashes(relative):
             hashes.append(hashlib.sha256(decoded).hexdigest())
     return hashes
 
-for pdf_relative, figure_relative in pairs.items():
+for pdf_relative, figure_relative in pairs:
     expected = pixel_hash(figure_relative)
     matches = decoded_image_hashes(pdf_relative).count(expected)
     if matches != 1:
@@ -342,17 +342,23 @@ function auditPdfMetricsPixels() {
   const candidates = process.env.DATA_COOP_PYTHON
     ? [[process.env.DATA_COOP_PYTHON, []], ...defaultCandidates]
     : defaultCandidates;
-  const pairs = {
-    "drawings/a0-boards.en.pdf": "assets/figures/metrics-evidence.en.png",
-    "drawings/a0-boards.pdf": "assets/figures/metrics-evidence.png",
-    "drawings/a3-booklet.en.pdf": "assets/figures/metrics-evidence.en.png",
-    "drawings/a3-booklet.pdf": "assets/figures/metrics-evidence.png",
-  };
+  const pairs = [
+    ["drawings/a0-boards.en.pdf", "assets/figures/metrics-evidence.en.png"],
+    ["drawings/a0-boards.pdf", "assets/figures/metrics-evidence.png"],
+    ["drawings/a3-booklet.en.pdf", "assets/figures/metrics-evidence.en.png"],
+    ["drawings/a3-booklet.pdf", "assets/figures/metrics-evidence.png"],
+  ];
+  const brandPairs = [
+    ["drawings/a0-boards.en.pdf", "assets/figures/brand-identity.en.png"],
+    ["drawings/a0-boards.pdf", "assets/figures/brand-identity.png"],
+    ["drawings/a3-booklet.en.pdf", "assets/figures/brand-identity.en.png"],
+    ["drawings/a3-booklet.pdf", "assets/figures/brand-identity.png"],
+  ];
   const failures = [];
   for (const [command, prefix] of candidates) {
     const result = childProcess.spawnSync(
       command,
-      [...prefix, "-c", PYTHON_PDF_RASTER_AUDITOR, ROOT, JSON.stringify(pairs)],
+      [...prefix, "-c", PYTHON_PDF_RASTER_AUDITOR, ROOT, JSON.stringify([...pairs, ...brandPairs])],
       {
         encoding: "utf8",
         windowsHide: true,

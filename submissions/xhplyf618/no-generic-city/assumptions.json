@@ -4,7 +4,7 @@
     {
       "id": "A-GEOM-001",
       "status": "controlled_provisional_input",
-      "statement": "Official or explicitly rights-cleared SITE_BOUNDARY and KEY_AREA polygons are unavailable. The repository provisional rough polygons at 7f1f45d719f89fd40ff01a772de5119496c8129f are used as replaceable low-confidence constraints.",
+      "statement": "Official or explicitly rights-cleared SITE_BOUNDARY and KEY_AREA polygons are unavailable. The repository provisional rough polygons at a57cd13707ea5f65a8701fa3d0924aa2ee35d716 are used as replaceable low-confidence constraints.",
       "impact": "They support conceptual geometry and recalculation only; all derived layers and artifacts must be replaced when official or rights-cleared geometry appears."
     },
     {
@@ -58,14 +58,14 @@
     {
       "id": "A-UPSTREAM-001",
       "status": "verified_snapshot",
-      "statement": "The package is built against open-city-ai/haidian at 7f1f45d719f89fd40ff01a772de5119496c8129f, verified on 2026-08-27.",
+      "statement": "The package is built against open-city-ai/haidian at a57cd13707ea5f65a8701fa3d0924aa2ee35d716, verified on 2026-08-28.",
       "impact": "A later repository state requires a new drift review before any external submission."
     },
     {
       "id": "A-EXTERNAL-001",
-      "status": "authorized_pull_request_under_review",
-      "statement": "The proposal is publicly available in authorised pull request #4095 and is being revised in response to a maintainer review.",
-      "impact": "The builder itself performs no external action. A pull request, successful machine validation and requested changes do not imply publication, selection, approval, implementation or government endorsement."
+      "status": "intake_accepted_baseline_local_candidate_not_submitted",
+      "statement": "The 91-point baseline was accepted for repository intake through pull request #4095. This score-lift candidate exists locally only and has not been submitted as a new revision.",
+      "impact": "The builder itself performs no external action. Repository intake does not imply gallery publication, award selection, implementation approval or government endorsement; any new pull request or push requires separate human authorisation."
     }
   ]
 }

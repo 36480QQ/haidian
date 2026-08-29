@@ -4,10 +4,10 @@ author_github: "dw-zhu-si"
 language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "A three-scale urban design framework with VERIFY—LEARN—LIVE—ADOPT/RETIRE evidence gates; DR-01 uses two independent recalculations and one deliberate failure to prove that hard gates cannot be averaged and failures downgrade. Real projects remain HOLD and all locations provisional."
+summary: "One spine, three distinct spatial prototypes and one no-new-build 90-day MVP test whether existing places can serve more people across more hours. A four-day/four-band baseline, six delivery-evidence closures and independent review decide renewal, revision or retirement; all real projects remain HOLD and all locations provisional."
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "13.0.0-decision-replay"
+version: "14.0.0-evidence-balance"
 ---
 
 # COMMON TIME JING-ZHANG
@@ -48,7 +48,7 @@ The professional response references the official call, agent taskbook, national
 
 The working identity is **COMMON TIME JING-ZHANG / 共时京张**. Its concept mark consists of two parallel tracks, four time points and one open gap: the tracks connect railway memory with contemporary public life; the points denote `VERIFY—LEARN—LIVE—ADOPT/RETIRE`; the gap keeps human judgement, appeal and exit visible. It is a submission-stage identity direction, not an official mark or endorsement by the organisers, railway, schools, companies or heritage authorities.
 
-The system uses evidence blue, verification orange, public green and unknown grey; every drawing separates fact, interpretation, proposal and `HOLD`. VERIFY, LEARN and LIVE are evidence states rather than property brands. Cultural wayfinding carries the source, version, correction route and maintenance owner instead of imitating locomotives, bells, university marks or company logos. COMMON TIME CYCLE material must name the problem owner, current gate, next responsibility and evidence status rather than inventing an official event calendar. Typography uses locally available neutral sans-serif or openly licensed substitutes; the package distributes no font files and requires black-and-white, colour-blind and low-ink legibility.
+The system uses evidence blue, verification orange, public green and unknown grey; every drawing separates fact, interpretation, proposal and `HOLD`. VERIFY, LEARN and LIVE are evidence states rather than property brands. Cultural wayfinding carries the source, version, correction route and maintenance owner instead of imitating locomotives, bells, university marks or company logos. COMMON TIME CYCLE material must name the problem owner, current gate, next responsibility and evidence status rather than inventing an official event calendar. Typography uses a neutral sans-serif direction and openly licensed substitutes. To remain readable in an offline review environment without system CJK fonts, `visual/assets/common-time-font.css` embeds a `Noto Sans SC` variable-font subset in a valid single-line data URL; the complete `SIL Open Font License 1.1` is retained in the same file header. Graphics also retain black-and-white, colour-blind and low-ink legibility.
 
 Minimum international copy: `COMMON TIME JING-ZHANG is a proposal for a civic AI adoption belt where every deployment must identify a real problem owner, pass an independent test, retain a human route, and remain reversible.` Every outward-facing version also states: `Concept proposal · not an approved plan · provisional spatial relationships · professional verification required.` [source:AGENT-TASKBOOK]
 
@@ -109,22 +109,6 @@ Project-specific title holders, authorised operators, named accountable people, 
 
 Only evidence tickets carrying source, licence, version, time and state can move between roles. Person-level raw observations from `SENSE` do not move onward; `COMPARE` receives de-identified aggregates; `MATCH` and `SIMULATE` propose but do not decide; `EXPLAIN` never reads controlled-test raw data; `AUDIT` preserves immutable decision snapshots. Paper registration, fixed rules, human explanation and on-site management remain valid whenever a role is offline or fails.
 
-### DR-01 Reproducible Decision Replay | Tabletop Logic Test, Not Field Performance
-
-To replace a verbal claim of auditability with something a reviewer can recalculate, the package adds one synthetic fixture. It asks one question: **inside an already authorised existing ground floor/court, which option may enter D31–60—K0 paper-and-staff baseline, K1 movable hybrid learning island, or K2 fixed personalised kiosk?** Fixture `1/0` values test the rule only and are never written back as real authority or field passes; all three real projects remain `HOLD`.
-
-The eight hard gates are `authority, fire/access, quiet edge, offline parity, privacy, human takeover, reversibility, exit reserve`. First calculate `eligible(k)=product(gate_i)`. Only rows with `eligible=1` are compared lexicographically by `verifiable evidence channels → removable parts → fewer fixed parts`. No composite weight may average away a failed hard gate.
-
-| Option | Eight-gate simulated vector | Evidence channels | Removable parts | Fixed parts | Path A: formula | Path B: row enumeration |
-| --- | --- | ---: | ---: | ---: | --- | --- |
-| K0 paper material + staffed service | `1,1,1,1,1,1,1,1` | 2 | 4 | 0 | eligible, rank 2 | retained as the non-AI baseline |
-| K1 movable island + rights-cleared digital aid | `1,1,1,1,1,1,1,1` | 4 | 5 | 0 | **select K1** | **select K1** |
-| K2 fixed personalised kiosk | `1,1,1,0,0,1,0,1` | 5 | 1 | 3 | three gate failures; not ranked | exits before its channel count can compensate |
-
-Independent method A calculates gate products and ordering. Method B does not call that formula; it enumerates rows, removes failures, then compares the remaining fields. Both return K1. A mutation then changes K1 offline parity from `1` to `0`; the expected result must downgrade from K1 to K0. Returning K1 would fail the test. This counterexample proves that gates cannot be reweighted, averaged or moved silently.
-
-In this tabletop fixture K1 produces only reversible relationships: `public entry → clear route → movable tables`, with parallel `paper shelf, staffed desk, unplug-ready aid and visible stop`. It creates no statutory dimensions, demolition decision or automated approval. Real P-L01 may replay the same rule with real inputs only after title/operation authority, field baseline, co-signed thresholds, real CAPEX/OPEX, independent appointment and official geometry exist. Figure 06 and the A3 first page show the same fixture; `metrics.json` and `design_depth_matrix.json` retain the machine-readable copy. [metric:decision_replay_fixture_count] [metric:decision_replay_independent_method_count] [metric:decision_replay_mutation_count]
-
 ### First 90-Day MVP | P-L01 Beijing AI Origin Public Learning Court
 
 The three project contracts remain distinct, but the first cycle narrows to **one no-new-build MVP with the lowest dependency on official geometry**: a reversible public learning service in an authorised existing city-side ground floor or court. No site has been authorised, so place and date remain `PENDING`; the following is a relative schedule after a valid start, not a claim of completed work.
@@ -138,6 +122,10 @@ The three project contracts remain distinct, but the first cycle narrows to **on
 | D76–90 public decision | human service and removal conditions remain; no automatic extension | `SIMULATE` compares renewal, revision and retirement consequences; a human meeting decides | 90-day review, `RENEW / REVISE / RETIRE`, deletion/return/restoration proof | no joint decision, OPEX or retirement reserve: `RETIRE` |
 
 The minimum kit is movable furniture, paper/static wayfinding, a staffed desk, unplug-ready equipment and restorable markings—no fixed building, campus-access change or personal identification. RMB values are not prefilled. The cost book uses `CAPEX = survey + accessible light retrofit + reversible kit + approvals/insurance + removal contingency` and `OPEX = staffing + rights clearance + maintenance/energy + independent evaluation + appeal + retirement reserve`, with quantity, source date, procurement route and payment responsibility. Only real authority, quantities/quotes, co-signed thresholds and an independent commission may move a field from `PENDING` to `VERIFIED`.
+
+#### Audit Appendix DR-01 | Hard-Gate Logic Only
+
+DR-01 is a synthetic unit test attached to the 90-day MVP, not a spatial concept, field result or implementation claim. It treats `authority, fire/access, quiet edge, offline parity, privacy, human takeover, reversibility and exit reserve` as eight non-compensable gates. Under simulated inputs, K0 paper-and-staff service and K1 movable learning island are eligible, while K2 fixed personalised kiosk exits after offline-parity, privacy and reversibility failures; both a formula path and row enumeration select K1. Deliberately changing K1 offline parity from `1` to `0` must downgrade the result to K0. The fixture proves only that the rule is reproducible and failure triggers downgrade. Real P-L01 still requires title/operation authority, field baselines, co-signed thresholds, real CAPEX/OPEX, independent appointment and official geometry. Machine-readable copies remain in `metrics.json` and `design_depth_matrix.json`; the test no longer occupies review first screens or PDF front pages. [metric:decision_replay_fixture_count] [metric:decision_replay_independent_method_count] [metric:decision_replay_mutation_count]
 
 ### Five Named Regional Coordination Interfaces
 
@@ -239,7 +227,7 @@ The terms of reference lock P0 preregistration, P1 four-day/day-night baseline, 
 
 #### 6. Full-package recalculation after official geometry
 
-As of 2026-08-20, the official repository at `main@362986d3040b98891d8f99b07f25b2dd165cb3fa` provides only provisional boundaries, their basis note and a study frame in its geometry directory. The data explicitly states `official_boundary=false`; no package area, ratio, location or section is statutory. [source:OFFICIAL-CURRENT-REPO-GEOMETRY-20260820]
+As of 2026-08-20, the official repository snapshot `d1ff9415abb4b0d916757f65658e7d77f5c91697` provides only provisional boundaries, their basis note and a study frame in its geometry directory; this exact hash matches the snapshot URL in [source:OFFICIAL-CURRENT-REPO-GEOMETRY-20260820]. The data explicitly states `official_boundary=false`; no package area, ratio, location or section is statutory. [source:OFFICIAL-CURRENT-REPO-GEOMETRY-20260820]
 
 Publication of any official scope, key area, parcel, road/river/green or heritage control triggers ten steps: freeze source/licence/date/SHA-256; confirm CRS/vertical datum/accuracy; preserve the original and make projected copies; test topology/nulls/overlaps/extents; clip and recalculate every GeoJSON metric; re-mark unresolved statutory/professional gates; regenerate bilingual PNGs, four PDFs and two HTML views; update `metrics/sources/assumptions/manifest/self_check`; commission an independent reproduction; publish itemised differences and a `GO/HOLD/PIVOT/RETIRE` decision. Every drawing retains the provisional notice until this completes. Status: `RECALCULATION SOP READY / OFFICIAL GEOMETRY PENDING`. [metric:official_geometry_recalculation_step_count]
 
@@ -336,7 +324,7 @@ Railway, Zhongguancun and AI are related here by design interpretation, not by a
 | OpenStreetMap background | Level-C public background with ODbL attribution | low-authority relationships only; not official GIS, cadastral, survey or engineering proof |
 | AI concept images | project-generated and labelled AI-generated, non-existing, non-official and pending survey | cannot prove built condition, real view, dimensions, ownership or approval |
 | Official/institutional public material | summarised and linked through `sources.json` | no full-work copying and no conversion of policy language into project authorisation, funding or commitment |
-| Fonts | no font file is distributed in this package | verify embedding rights or substitute an open font, then perform machine and human checks before publication |
+| Fonts | CSS embeds a `Noto Sans SC` variable-font subset in a single-line data URL under `SIL Open Font License 1.1`; full licence text is retained in the same file header | preserve font licence and source notice when copying the package; perform machine font-load and human legibility checks after each export |
 | Bilingual and tool output | both languages use the same fact states; tool output retains provenance | tool licensing does not approve source content; bilingual planning edit and human fact review remain pending before external publication |
 
 All spatial, policy, operating, event and identity proposals are concepts for professional development. They are not government approval, professional certification, investment, construction, procurement, tenant, operation or event commitments.

@@ -20,6 +20,8 @@
       ],
       "changed_files": [
         "submissions/dvd233/data-coop-line/agent.json",
+        "submissions/dvd233/data-coop-line/assets/figures/brand-identity.en.png",
+        "submissions/dvd233/data-coop-line/assets/figures/brand-identity.png",
         "submissions/dvd233/data-coop-line/assets/figures/dazhongsi-drill-tests.en.png",
         "submissions/dvd233/data-coop-line/assets/figures/dazhongsi-drill-tests.png",
         "submissions/dvd233/data-coop-line/assets/figures/dazhongsi-field-validation-pack.en.png",
@@ -38,6 +40,8 @@
         "submissions/dvd233/data-coop-line/assets/figures/reviewer-evidence-spine.png",
         "submissions/dvd233/data-coop-line/assets/figures/site-overview.en.png",
         "submissions/dvd233/data-coop-line/assets/figures/site-overview.png",
+        "submissions/dvd233/data-coop-line/assets/figures/station-section.en.png",
+        "submissions/dvd233/data-coop-line/assets/figures/station-section.png",
         "submissions/dvd233/data-coop-line/assets/media/cover.webp",
         "submissions/dvd233/data-coop-line/assets/media/experience-poster.webp",
         "submissions/dvd233/data-coop-line/assets/media/experience.md",
@@ -72,6 +76,13 @@
         "submissions/dvd233/data-coop-line/self_check.json",
         "submissions/dvd233/data-coop-line/sources.json",
         "submissions/dvd233/data-coop-line/standard_matrix.json",
+        "submissions/dvd233/data-coop-line/visual/assets/brand-identity-audit.js",
+        "submissions/dvd233/data-coop-line/visual/assets/brand-identity-system.json",
+        "submissions/dvd233/data-coop-line/visual/assets/brand/logo-lockup-bilingual.svg",
+        "submissions/dvd233/data-coop-line/visual/assets/brand/logo-lockup-en.svg",
+        "submissions/dvd233/data-coop-line/visual/assets/brand/logo-lockup-zh.svg",
+        "submissions/dvd233/data-coop-line/visual/assets/brand/logo-mark-mono.svg",
+        "submissions/dvd233/data-coop-line/visual/assets/brand/logo-mark.svg",
         "submissions/dvd233/data-coop-line/visual/assets/dazhongsi-drill-test-runner.js",
         "submissions/dvd233/data-coop-line/visual/assets/dazhongsi-drill-tests.json",
         "submissions/dvd233/data-coop-line/visual/assets/dazhongsi-field-validation-audit.js",
@@ -79,6 +90,9 @@
         "submissions/dvd233/data-coop-line/visual/assets/evidence-consistency.js",
         "submissions/dvd233/data-coop-line/visual/assets/evidence-snapshot.json",
         "submissions/dvd233/data-coop-line/visual/assets/expiring-data-ticket-protocol.json",
+        "submissions/dvd233/data-coop-line/visual/assets/fonts-noto-subset.css",
+        "submissions/dvd233/data-coop-line/visual/assets/implementation-readiness-audit.js",
+        "submissions/dvd233/data-coop-line/visual/assets/implementation-readiness-register.json",
         "submissions/dvd233/data-coop-line/visual/assets/planning-alignment-audit.js",
         "submissions/dvd233/data-coop-line/visual/assets/planning-alignment-register.json",
         "submissions/dvd233/data-coop-line/visual/assets/reviewer-evidence-spine-audit.js",
@@ -91,7 +105,7 @@
       "ai_package_stages": {
         "submissions/dvd233/data-coop-line": "formal"
       },
-      "total_bytes": 14863406,
+      "total_bytes": 20136202,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -149,6 +163,11 @@
       "ok": true,
       "issues": [],
       "metrics_seen": {
+        "brand_identity_contrast_pair_passed": 15.0,
+        "brand_identity_no_color_only_coverage_ratio": 1.0,
+        "brand_identity_lockup_bilingual_coverage_ratio": 1.0,
+        "brand_identity_application_anchor_coverage_ratio": 1.0,
+        "brand_identity_negative_fixture_fail_closed_total": 6.0,
         "expiring_ticket_synthetic_case_total": 2.0,
         "expiring_ticket_synthetic_case_passed": 2.0,
         "expiring_ticket_negative_path_fail_closed_total": 10.0,
@@ -184,15 +203,15 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 33,
+        "known_metric_refs_required": 41,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 17,
+          "source": 18,
           "standard": 1,
           "depth": 13,
-          "data": 14,
-          "metric": 27
+          "data": 16,
+          "metric": 32
         }
       }
     },

@@ -6,10 +6,10 @@ translation_file: "proposal.en.md"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 license: "COMMUNITY-DISPLAY-ONLY"
-summary: "以时段基线、三尺度空间系统和 VERIFY—LEARN—LIVE—ADOPT/RETIRE 回路检验存量空间；DR-01 用两条独立复算与一次故意失败验证硬门不可平均、结果可降级，所有真实项目与空间落位仍为 HOLD/provisional。"
+summary: "以一脊三钟、三处差异化空间原型和一个无新建的 90 日 MVP，检验存量空间能否在更多时间服务更多人；四日四时窗基线、六项实施证据和独立评估共同决定续期、修订或退役，所有真实项目与空间落位仍为 HOLD/provisional。"
 tracks: ["ai-traffic-walkability", "enterprise-services-ecosystem", "civic-agent-governance"]
 scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review"]
-version: "13.0.0-decision-replay"
+version: "14.0.0-evidence-balance"
 ---
 
 # 共时京张 / COMMON TIME
@@ -83,7 +83,7 @@ version: "13.0.0-decision-replay"
 | 文化导视 | 证据票据、方向标、版本日期、勘误入口 | 事实、解释、拟议设施分层 | 不复制机车、钟体、校徽、企业 Logo 或伪遗产 |
 | 活动品牌 | COMMON TIME CYCLE | 每次活动显示问题业主、阶段门、后续责任和事实状态 | 不把设想活动写成政府确定日程 |
 
-字体方向采用系统可用的中性无衬线字体与开放授权替代，不在投稿包中分发字体文件；图形优先黑白可识别、色盲友好和低墨印刷。实景照片、分析图、概念效果图继续分栏并保留来源/生成状态。文化标识与一带总体 Logo 不混同。[source:AGENT-TASKBOOK]
+字体方向采用中性无衬线字体与开放授权替代；为保证无网络、无系统中文字体的评审环境可读，离线 HTML 在 `visual/assets/common-time-font.css` 中以合法的单行 data URL 内嵌 `Noto Sans SC` 可变字体子集，并在同一文件头保留完整 `SIL Open Font License 1.1`。图形优先黑白可识别、色盲友好和低墨印刷。实景照片、分析图、概念效果图继续分栏并保留来源/生成状态。文化标识与一带总体 Logo 不混同。[source:AGENT-TASKBOOK]
 
 ### 3. 最小国际传播副本
 
@@ -158,22 +158,6 @@ version: "13.0.0-decision-replay"
 
 六个角色之间只传递带来源、许可、版本、时间和状态的“证据票据”。`SENSE` 的个人级原始记录不得进入其他角色；`COMPARE` 只接收去标识化汇总；`MATCH` 与 `SIMULATE` 只能提出候选；`EXPLAIN` 不读取受控测试原始数据；`AUDIT` 只保留不可静默改写的决定快照。任一角色离线或失效时，纸面登记、固定规则、人工讲解和人工现场管理继续有效。
 
-### DR-01 可复算决策回放｜桌面逻辑测试，不是现场绩效
-
-为避免只用文字宣称“可审计”，本包增加一个可由评审者手算的合成夹具。问题只有一个：**在已授权的既有首层/院落中，K0 纸质人工基线、K1 可移动混合共学岛、K2 固定个性化终端，哪一个允许进入 D31—60？** 夹具中的 `1/0` 只用于测试规则，绝不回写成真实授权或现场通过；三个真实项目仍为 `HOLD`。
-
-八个硬门依次为 `授权、消防/无障碍、安静边界、纸数同效、隐私、人工接管、可逆、退役金`。先算 `eligible(k)=Π gate_i`；只有 `eligible=1` 的行，才按 `可核验渠道数 → 可撤构件数 → 更少固定构件` 做确定性的字典序比较，不设可把硬门失败平均掉的综合权重。
-
-| 候选 | 八门模拟向量 | 可核验渠道 | 可撤构件 | 固定构件 | 路径 A：公式 | 路径 B：逐行枚举 |
-| --- | --- | ---: | ---: | ---: | --- | --- |
-| K0 纸质资料＋人工服务 | `1,1,1,1,1,1,1,1` | 2 | 4 | 0 | 合格，次序 2 | 合格，保留为非 AI 基线 |
-| K1 移动共学岛＋清权数字辅助 | `1,1,1,1,1,1,1,1` | 4 | 5 | 0 | **选择 K1** | **选择 K1** |
-| K2 固定个性化终端 | `1,1,1,0,0,1,0,1` | 5 | 1 | 3 | 三门失败，不排序 | 先退出，不以高渠道数补偿 |
-
-独立方法 A 直接计算门乘积并排序；方法 B 不调用同一公式，只逐行排除失败项后比较剩余字段。两条路径都得到 K1。随后做一次变异测试：把 K1 的“纸数同效”从 `1` 改为 `0`，预期结果必须从 K1 降级到 K0；若仍输出 K1，测试即失败。这个反例证明门槛不能被调权、平均或静默移动。
-
-K1 在桌面测试中只生成一组可撤关系：`公共入口 → 连续通行 → 移动桌岛`，并联 `纸质资料、人工服务、可拔电辅助、可见急停`；不生成法定尺寸、拆建决定或自动批准。真实 P-L01 只有取得产权/运营授权、现场基线、共同阈值、真实 CAPEX/OPEX、独立委任和官方几何后，才可用真实输入重放同一规则。图 06 与 A3 首页给出同一夹具，`metrics.json` 和 `design_depth_matrix.json` 保留机器可读副本。[metric:decision_replay_fixture_count] [metric:decision_replay_independent_method_count] [metric:decision_replay_mutation_count]
-
 ### 首个 90 日 MVP｜P-L01 北京 AI 原点公共共学院
 
 三地仍保持各自项目合同，但首轮只收敛 **一个无需新建、对官方边界依赖最低的 90 日 MVP**：在经产权与运营授权的既有城市侧首层或院落内，试用可撤场的公共共学服务。场地尚未授权，因此地点与日期保持 `PENDING`；以下是启动后相对日程，不是已发生事实。
@@ -187,6 +171,10 @@ K1 在桌面测试中只生成一组可撤关系：`公共入口 → 连续通�
 | D76—90 公共决定 | 保留人工服务与撤场条件，不默认延长 | `SIMULATE` 只比较续期/修订/退役后果；人类会议决定 | 90 日效果评议、`RENEW / REVISE / RETIRE`、删除/返还/恢复证明 | 未获共同决定、OPEX 或退役资金：`RETIRE` |
 
 最小构件只有可移动桌椅、纸质与静态导引、人工服务台、可拔电设备和可恢复标识；没有固定建筑、校园门禁改造或个人识别。成本不预填人民币，统一按 `CAPEX = 调查 + 无障碍轻改 + 可逆构件 + 审批/保险 + 撤场预备`、`OPEX = 人员 + 内容清权 + 维护/能耗 + 独立评估 + 申诉 + 退役储备` 建账，并同时记录数量、单价来源、日期、采购路径和付款责任。只有正式授权、真实工程量/报价、共同阈值和独立委托到位后才允许从 `PENDING` 转为 `VERIFIED`。
+
+#### 审计附录 DR-01｜只验证硬门逻辑
+
+DR-01 是附属于 90 日 MVP 的合成单元测试，不是空间概念、现场绩效或实施证据。它把 `授权、消防/无障碍、安静边界、纸数同效、隐私、人工接管、可逆、退役金` 设为不可平均的八个硬门：K0 纸质人工基线与 K1 可移动共学岛在模拟输入中合格，K2 固定个性化终端因纸数同效、隐私和可逆三门失败先退出；公式法与逐行枚举法都选择 K1。把 K1 的纸数同效从 `1` 故意改为 `0` 后，结果必须降级到 K0。该夹具只证明规则可复算、失败会触发降级；真实 P-L01 仍须取得产权/运营授权、现场基线、共同阈值、真实 CAPEX/OPEX、独立委任和官方几何。机器可读副本保留在 `metrics.json` 与 `design_depth_matrix.json`，不再重复占用评审首屏和 PDF 首页。[metric:decision_replay_fixture_count] [metric:decision_replay_independent_method_count] [metric:decision_replay_mutation_count]
 
 ### 五个指定区域协同接口
 
@@ -351,7 +339,7 @@ K1 在桌面测试中只生成一组可撤关系：`公共入口 → 连续通�
 
 #### 6. 官方边界发布后的整包重算
 
-截至 2026-08-20，官方仓库 `main@362986d3040b98891d8f99b07f25b2dd165cb3fa` 的 geometry 目录仍只有临时粗略边界、依据说明和研究框；数据明确标记 `official_boundary=false`，因此本包任何面积、比例、位置和剖面都不是法定结果。[source:OFFICIAL-CURRENT-REPO-GEOMETRY-20260820]
+截至 2026-08-20，官方仓库快照 `d1ff9415abb4b0d916757f65658e7d77f5c91697` 的 geometry 目录仍只有临时粗略边界、依据说明和研究框；该精确哈希与 [source:OFFICIAL-CURRENT-REPO-GEOMETRY-20260820] 的快照 URL 一致。数据明确标记 `official_boundary=false`，因此本包任何面积、比例、位置和剖面都不是法定结果。[source:OFFICIAL-CURRENT-REPO-GEOMETRY-20260820]
 
 官方范围、重点区、宗地、道路/河道/绿线或文保控制任一发布即触发十步重算：①冻结来源、许可、发布日期与 SHA-256；②确认 CRS/垂直基准/精度；③保留原始层并生成投影副本；④做拓扑、空值、重叠与范围检查；⑤裁切和重算全部 GeoJSON 指标；⑥重新标注仍未知的法定/专业门；⑦重绘双语 PNG、四份 PDF 与两份 HTML；⑧更新 `metrics/sources/assumptions/manifest/self_check`；⑨由未参与计算者独立复算；⑩发布逐项差异和 `GO/HOLD/PIVOT/RETIRE` 决定。所有图面在复算完成前继续显示 provisional 声明。当前状态：`RECALCULATION SOP READY / OFFICIAL GEOMETRY PENDING`。[metric:official_geometry_recalculation_step_count]
 
@@ -572,7 +560,7 @@ CT-02、03、06、10 是四个受控 testbed [metric:industry_testbed_count]。�
 | OpenStreetMap 背景 | 按 ODbL 归属的 C 级公开背景 | 仅表达低权威关系，不是官方 GIS、地籍、测绘或工程核验 |
 | AI 概念效果图 | 本项目生成，已标“AI 生成、非现状、非官方、待测绘核验” | 不可用于证明已建、实景、尺寸、权属或审批 |
 | 官方/机构公开资料 | 摘要引用并回链 `sources.json` | 不整部复制，不把政策语言写成本项目授权、资助或承诺 |
-| 字体 | 投稿包不分发字体文件 | 正式出版前需确认嵌入许可或用开放字体替换，并做机检与人工检查 |
+| 字体 | CSS 以单行 data URL 内嵌 `Noto Sans SC` 可变字体子集；按 `SIL Open Font License 1.1` 使用，许可全文位于同一文件头 | 对外复制时保留字体许可与来源说明；每次导出后做字体加载机检和人工可读性检查 |
 | 双语与工具输出 | 中英内容按同一事实状态编辑；工具输出保留溯源 | 不把工具许可理解为内容来源批准；正式外发前仍待双语规划编辑和人工事实复核 |
 
 所有空间、政策、运营、活动和品牌动作均为概念建议、参考方案或供专业团队深化研究的工作框架；不构成政府审定、专业批准、投资、建设、采购、招商、运营或活动承诺。
