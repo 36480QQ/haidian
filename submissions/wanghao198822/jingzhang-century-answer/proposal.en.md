@@ -11,7 +11,6 @@ tracks: ["jingzhang-heritage-narrative", "youth-friendly-public-space", "ai-orig
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-health-service-navigation"]
 ---
 
-# The Century Answer (百年应答)
 
 In 1909, Zhan Tianyou used the Jing-Zhang Railway to answer a question of the century: could the Chinese people build a railway on their own? Today, beside the roughly 9-kilometre heritage park released by that same railway, more than 2,000 AI enterprises in Haidian are answering a new question: can China build its own AI? This proposal turns the Jing-Zhang Railway Heritage Park into a century-spanning answer sheet laid open on the ground — for every large model independently registered in Haidian, a bronze rail spike is set into the edge of the walkway; when an enterprise inside the belt completes registration or an IPO, it rings the newly cast Answer Bell beside Dazhongsi; and every year on 25 March, Tsinghuayuan Railway Station hosts nothing but a public-interest commemorative open day. Citizens do not come to look at display boards — they crouch down and count the spikes: how far has China's independent innovation been nailed in?
 

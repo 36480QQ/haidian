@@ -11,7 +11,6 @@ tracks: ["jingzhang-heritage-narrative", "youth-friendly-public-space", "ai-orig
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed", "enterprise-service-copilot", "ai-health-service-navigation"]
 ---
 
-# 百年应答 The Century Answer
 
 1909年，詹天佑用京张铁路回答了一个百年之问：中国人能不能自己修铁路。今天，同一条铁路腾出的约9公里遗址公园旁，海淀2000余家AI企业正在回答一个新问题：中国能不能自己做AI。本方案把京张遗址公园做成一份摊开在大地上的百年答卷——每一款海淀自主备案的大模型，就在步道边缘钉下一颗铜道钉；带内企业完成备案或IPO，到大钟寺旁新铸的应答钟敲一响；每年3月25日，清华园车站只办公益性纪念开放日。市民不是来看展板的，他们蹲下来数道钉：中国自主创新，钉到第几颗了。
 

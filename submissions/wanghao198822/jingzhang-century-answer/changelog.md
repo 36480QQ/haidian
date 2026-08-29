@@ -1,5 +1,24 @@
 # 方案迭代记录
 
+## v0.33 - 2026-08-29
+
+- **`report/proposal.html` 与 `proposal.en.html` 的首屏标题重复已消除。** 根因：front-matter 的 `title:` 与正文首个 `# ` 同文，渲染器把两者都输出，于是甲方 1440×1600 的评审首屏里同一个标题占了两次黄金位置（同批 PR #4152 正因「大标题=小标题同串重复」被扣表达分）。**渲染器 `scripts/render_proposal_html.py` 属甲方仓库工具、投稿 PR 明令不得修改**（PR 模板：本 PR 不修改 `.github/`、`brief/`、`schema/`、`scripts/`），故改我们自己的四个文件。
+  - `proposal.md` / `proposal.en.md` 各删一行（与 title 同文的正文 H1）；`report/proposal.html` / `.en.html` 各删 hero 之后那一个 `<h1>`。**是手改产物、不是重新生成**——重新生成会冲掉为修复方框而加进 HTML 的字体 `<link>`；源与产物改的是同一处，两边不脱节。
+  - 自查：两个 md 各只有 1 行改动且就是那行 H1；`##` 章节数 13→13、13 项必需章节缺 0；中英各 −1 行、位置对应；五类证据锚点 `[source:]/[standard:]/[depth:]/[data:]/[metric:]` 改前改后均为 **237 个、分布完全相同**（87/29/47/59/15）。渲染后两页 `<h1>` 各剩 1 个。
+- **`visual/index.en.html` 首屏引言的孤字换行已消除。** 实测各行墨迹宽 `[617, 74, 629, 106]`——第 2、4 行只有一个词和两个词。**先试 `text-wrap:balance`，无效**：`.q` 内有 `<br>` 强制换行，balance 跨不过去（该死代码未留在包里）。改为只把英文页 `.q` 的 `max-width` 由 30em 调到 36em，令两句各占一行；**中文页保持 30em**（实测 `[576, 479]` 本就均衡，加宽反会拆坏）。现英文 `[697, 741]`，与中文版同为两行。
+- **甲方 2026-08-29 12:48 评审的唯一阻断项已修：`design_depth_matrix.json` 的「公共空间约3.9%」。** metrics.json 的 `public_space_ratio = 0.0193`，公式 `round(public_space_area_sqm / site_area_sqm, 6)`，实算 220,269.135 / 11,412,825.386 = 0.0193；metrics 里只有这一个公共空间比例指标，正文出现 1.93 三次、3.9% 零次——**是孤例错误，不是另一口径**，故按评审要求改为 1.93%，未另设新指标。同句的「绿地占提交范围约25%」一并写准为 25.04%（metrics `green_ratio = 0.250356`）。该句在展示页中英两版各有一份渲染副本，同步改正，共 3 处。
+- **顺着这条自查，又找出三处同类问题——都是「只改了 JSON、没同步展示页」**：
+  - 展示页中英两版的 `metrics_recalculation` 证据摘要仍写「公共空间比例约**3.93%**」。`design_depth_matrix.json` 里这一处早在 v0.15 就已改成 1.93%（changelog 有记录），**但页面那份渲染副本一直没跟上**，于是 JSON 说 1.93%、页面说 3.93%。已同步。
+  - **`design_depth_matrix.json`（13 处）与 `standard_matrix.json`（7 处）的 `self_check_ids` 仍是那批悬空 ID**（`BOUNDARY_TRUST` / `KEY_AREAS_TRUST` / `VISUAL_STATIC` / `LAND_USE_TOPOLOGY`）。v0.28 只修了 `compliance_matrix.json`，**当时的判据也只扫了 compliance_matrix**，于是另外两个矩阵原样留着且全绿。已按同一映射改指真实检查。
+  - 展示页中英两版各有 **41 处**旧 ID 的渲染副本（已核实全部落在「自检」块内），同步改正 82 处。
+- **两处判据的覆盖面按「手上那个例子」划，已扩**：
+  - `check_drift.py` 第 6b 项由只扫 `compliance_matrix.json` 扩到三个矩阵；新增第 6d 项——展示页「自检」块里渲染的 ID 也必须能在 `self_check.json` 解析到（**JSON 与页面各说各话就是这么留下的**）。
+  - `check_numbers.py` 的 `DOCS` 此前**根本不含三个矩阵与两个 report HTML**，甲方抓到的 3.9% 正是从这个缺口过去的；现已纳入，并新增「比例指标各产物数值必须等于 metrics.json」判据。为避免把矩阵拉进「必须出现该数字」类判据造成误报（矩阵本就不报场地面积与 122），另切出 `NARRATIVE_DOCS` 供存在性判据使用。判据放过两类合法写法：以整数作上界的行文（正文「公共空间率却不到2%」）与 changelog 的历史记述。
+  - 四条新判据全部以故意破坏验证过会 FAIL、还原后 PASS。
+- **全包复扫**：`public_space_ratio` 与 `green_ratio` 在 32 个文本文件中的全部出现均已一致，未解释的不符 0 处。
+- **本轮未做**（推迟）：A0 右下角缩略图 72 DPI 不可读、A0 中部留白、A3 底部小字——三项都要重跑 `make_drawings.py` 并重过整套版面审计，包体余量也不足，风险不成比例。
+- **复验**：四门 PASS · 漂移 PASS · 跨产物数字 PASS。
+
 ## v0.32 - 2026-08-29
 
 - **修复「声明与实况不符」：版权声明与 sources.json 里写的字体文件在包内不存在。** 上一轮因包规则不允许字体扩展名，字体交付形态从独立的 `.woff` 改成了「WOFF2 经 `data:` URI 内嵌于 `.css`」，但两处声明还停在旧方案上，写的是 `visual/assets/fonts/NotoSansSC-subset.woff`（约 210 KB）——**大小写、扩展名、形态三者都与包内实况不同，且该文件在包里根本不存在**。甲方对同批投稿的修复要求原话即「使可见成果与包内声明一致」，这类不符打的是风险合规与表达完整度两维。
