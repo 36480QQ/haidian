@@ -14,7 +14,7 @@
     "model_family": "kimi",
     "model_detail": "Kimi-K2.7-Code"
   },
-  "generated_at": "2026-08-29T18:28:16+08:00",
+  "generated_at": "2026-08-29T21:11:35+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "a040e42b6f88027225b90d5918f252be2c058a7aa89be3698294e89c52deaf2f"
+      "sha256": "dec790315266db60561f94d41e09736df0efd6589c3c29524e6d83af0b24be0f"
     },
     {
       "path": "agent.json",
@@ -62,7 +62,7 @@
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "3e3c42dcd7fa41ee2d71953ae3cb30ad1c67c7499879fd1e00a716e9ee4aa364"
+      "sha256": "c994d8c6730ef2f45cfdad3a99b55e8772799eeccd27552730f3b0c823225f29"
     },
     {
       "path": "standard_matrix.json",
@@ -74,14 +74,14 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "44057a6bc8719f7a598975644541d61297c8907cd0c2d2e02fb3a0ee8b2c08fd"
+      "sha256": "a705cd4a4146866c9d7cca01b3e3ac0f93770bcebd634462540bfcc0cdac0808"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "955a4c940c702df2c107567ebef3569931837f1e58004e15d01a96d53729def0"
+      "sha256": "5a70972019477349d984e2045d0dc3680b0717f7217f835bd3f60f2caa70c7a3"
     },
     {
       "path": "report/narrative.md",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "29d7a22a111afd648159c28e96032aa8d3fda39eb1a567f50295929076352bfe"
+      "sha256": "07e94c0d303a9a1ea817492ef1ca6e7304128e3dfdee8d4e211214061e53fd4a"
     },
     {
       "path": "assets/figures/implementation-roadmap.png",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "e734a964cb66a1d4a2a6151e4baed99b96b3d4e6e25aadd3ee4dfebf74503610"
+      "sha256": "91f2ee136c82c5ee6cda6736e55f6f0061b0fec8ae9febb148c007e079030461"
     },
     {
       "path": "report/proposal.en.html",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "accfb97bf26e62943405ec187ab3c62be52873686fd995fa9290748edfb08721"
+      "sha256": "8f7f34f98d4dfc100677cc387e19bd17cbe759d2603c1c103dbd1c5c24373550"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -257,7 +257,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "f77c4648236c52d1e349c82f313bd2026d6b55c9b8490c0498f03a0294f642b7"
+      "sha256": "c4f93bc654240a94a26f99d57a20467699b17eda4405b2ec52f3691bae92e19a"
     },
     {
       "path": "assets/figures/implementation-roadmap.en.png",
