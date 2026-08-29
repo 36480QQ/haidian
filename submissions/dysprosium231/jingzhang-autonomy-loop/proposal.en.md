@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "The Jing-Zhang heritage park becomes a 9.72 km variable-width Learning Spine that strings the three key areas and two wings into a closed research–validation–release–consumption–feedback loop; six east-west stitches restore lateral connection, three 15-minute scenario loops carry twelve AI scenario cards, and every conclusion rests on a gap-free, recomputable land-use partition."
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "ai-health-service-navigation", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # Centennial Jing-Zhang · Autonomy Loop: From the Switchback Railway to Human-Centred AI
@@ -161,6 +161,8 @@ Urban renewal most often fails by binding everything to heavy assets that need l
 ## Detailed Design of Key Areas
 
 Each key area is developed in seven parts: positioning, spatial structure, building renewal, mobility, public space, AI scenarios, and implementation risk. All three extents are rectangularised provisional ranges whose edges are not parcel lines or road redlines, so every conclusion below is directional [source:KEY-AREA-SOURCE] [data:geometry/key_areas.geojson#PROV-KEY-003] [metric:key_area_count].
+
+**Location-anchor disclosure (2026-08-29):** Public Issue #1029 records and independently checks that the provisional `PROV-KEY-003` polygon has a centroid of approximately 39.94692 N, 116.34850 E, about 2.26 km from Dazhongsi metro station, and falls around Beijing North Railway Station [source:ISSUE-1029] [data:geometry/key_areas.geojson#PROV-KEY-003]. Therefore, “Dazhongsi station” in this proposal comes from the announcement's task anchor; it does not mean that the current provisional polygon is station- or road-anchored. This proposal does not shift the inherited geometry. Once an official key-area polygon or official anchor relation is available, the Dazhongsi roads, public space, land use, buildings, phasing, metrics, drawings, and bilingual display must be recomputed as one package [depth:three_key_area_detailed_design].
 
 Under Article 9 of the Urban Design Management Measures, areas that must have key-area urban design include those "embodying the city's historical character" and "waterfront areas" — all three key areas here fall into both: the Jing-Zhang corridor forms the historical axis, and Qinghe and Xiaoyuehe form the waterfront frontage. The detailed design below is therefore organised to Article 10 of the same measures: coordinate municipal works, organise public-space function, attend to building scale, and state the direction of height, massing, style and colour control [standard:MOHURD-URBAN-DESIGN-MEASURES] [source:MOHURD-URBAN-DESIGN].
 

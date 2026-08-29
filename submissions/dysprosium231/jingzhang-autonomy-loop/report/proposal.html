@@ -51,6 +51,12 @@ code {
   padding: 0.1em 0.35em;
   border-radius: 4px;
 }
+:not(pre) > code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 .summary { color: var(--muted); font-size: 17px; }
 .translation-link a { color: var(--accent); font-weight: 700; }
 .proposal-table { margin: 20px 0 26px; overflow-x: auto; }
@@ -178,6 +184,7 @@ code {
 <p>城市更新最常见的失败方式，是把所有内容都绑定在需要长周期审批的重资产项目上，结果十年内什么都看不见。本方案提出<strong>轻重分离</strong>：把不依赖控规条件的内容（公共空间、慢行缝合、场景回路、荣誉展示、活动运营）放进近期，把依赖控规、权属与工程条件的内容（建筑更新、轨道一体化、市政扩容）放进中远期 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="renewal_project_list" title="深度：renewal_project_list">深度</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="phase_near_term_area_sqm" title="指标：phase_near_term_area_sqm">指标</sup>。</p>
 <h2>重点区域详细设计</h2>
 <p>三处重点区各按&quot;定位—空间结构—建筑更新—交通慢行—公共空间—AI场景—实施风险&quot;七段展开。三处片区的边界均为矩形化的临时范围，其边线不代表地块界线或道路红线，因此以下所有结论都是方向性的 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="KEY-AREA-SOURCE" title="来源：KEY-AREA-SOURCE">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-003" title="空间数据：geometry/key_areas.geojson#PROV-KEY-003">空间数据</sup> <sup class="evidence evidence-metric" data-evidence-kind="metric" data-evidence-value="key_area_count" title="指标：key_area_count">指标</sup>。</p>
+<p><strong>位置锚定披露（2026-08-29）</strong>：公开 Issue #1029 记录并复核了 <code>PROV-KEY-003</code> 的临时多边形质心约为北纬39.94692度、东经116.34850度，距大钟寺地铁站约2.26公里，且落在北京北站一带 <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="ISSUE-1029" title="来源：ISSUE-1029">来源</sup> <sup class="evidence evidence-data" data-evidence-kind="data" data-evidence-value="geometry/key_areas.geojson#PROV-KEY-003" title="空间数据：geometry/key_areas.geojson#PROV-KEY-003">空间数据</sup>。因此，正文中“大钟寺站”来自公告的任务锚点，不表示当前 provisional polygon 已完成站点或道路锚定；本方案不自行平移该几何。取得官方 key-area polygon 或明确的官方锚定关系后，必须连同大钟寺相关道路、公共空间、用地、建筑、分期、指标、图件和双语展示整体重算 <sup class="evidence evidence-depth" data-evidence-kind="depth" data-evidence-value="three_key_area_detailed_design" title="深度：three_key_area_detailed_design">深度</sup>。</p>
 <p>按城市设计管理办法第九条，应当编制重点地区城市设计的区域包括&quot;体现城市历史风貌的地区&quot;和&quot;滨水地区&quot;——本方案的三处重点区同时落在这两类之中：京张遗址走廊构成历史风貌轴，清河与小月河构成滨水界面。因此以下详细设计按该办法第十条的要求组织，即协调市政工程、组织公共空间功能、注重建筑空间尺度，并提出建筑高度、体量、风格、色彩的控制方向 <sup class="evidence evidence-standard" data-evidence-kind="standard" data-evidence-value="MOHURD-URBAN-DESIGN-MEASURES" title="标准：MOHURD-URBAN-DESIGN-MEASURES">标准</sup> <sup class="evidence evidence-source" data-evidence-kind="source" data-evidence-value="MOHURD-URBAN-DESIGN" title="来源：MOHURD-URBAN-DESIGN">来源</sup>。</p>
 <figure class="proposal-figure"><img src="../assets/figures/key-areas.png" alt="三处重点区域索引与设计任务图"><figcaption>三处重点区域索引与设计任务图</figcaption></figure>
 <h3>众智园AI自主创新加速区（192.92公顷）</h3>

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张遗址公园为一条9.72公里的变宽“学习脊”，把众智园、AI原点社区、大钟寺三处重点区与中关村科技服务翼、小月河场景赋能翼串成一条“研发—验证—发布—消费—反馈”的闭合回路；用6条东西缝合线实现东西缝合、用3条15分钟场景回路承载12张AI场景卡，并把全部结论建立在可复算的用地剖分与指标之上。"
 tracks: ["jingzhang-heritage-narrative", "ai-origin-community", "ai-traffic-walkability"]
 scenarios: ["ai-traffic-walkability", "ai-cultural-guide", "enterprise-service-copilot", "ai-health-service-navigation", "robot-delivery-low-speed", "public-safety-operations-review"]
-iteration: "v1.0"
+iteration: "v1.1"
 ---
 
 # 百年京张·自主回路：从人字形铁路到人本AI的城市学习回路
@@ -161,6 +161,8 @@ iteration: "v1.0"
 ## 重点区域详细设计
 
 三处重点区各按"定位—空间结构—建筑更新—交通慢行—公共空间—AI场景—实施风险"七段展开。三处片区的边界均为矩形化的临时范围，其边线不代表地块界线或道路红线，因此以下所有结论都是方向性的 [source:KEY-AREA-SOURCE] [data:geometry/key_areas.geojson#PROV-KEY-003] [metric:key_area_count]。
+
+**位置锚定披露（2026-08-29）**：公开 Issue #1029 记录并复核了 `PROV-KEY-003` 的临时多边形质心约为北纬39.94692度、东经116.34850度，距大钟寺地铁站约2.26公里，且落在北京北站一带 [source:ISSUE-1029] [data:geometry/key_areas.geojson#PROV-KEY-003]。因此，正文中“大钟寺站”来自公告的任务锚点，不表示当前 provisional polygon 已完成站点或道路锚定；本方案不自行平移该几何。取得官方 key-area polygon 或明确的官方锚定关系后，必须连同大钟寺相关道路、公共空间、用地、建筑、分期、指标、图件和双语展示整体重算 [depth:three_key_area_detailed_design]。
 
 按城市设计管理办法第九条，应当编制重点地区城市设计的区域包括"体现城市历史风貌的地区"和"滨水地区"——本方案的三处重点区同时落在这两类之中：京张遗址走廊构成历史风貌轴，清河与小月河构成滨水界面。因此以下详细设计按该办法第十条的要求组织，即协调市政工程、组织公共空间功能、注重建筑空间尺度，并提出建筑高度、体量、风格、色彩的控制方向 [standard:MOHURD-URBAN-DESIGN-MEASURES] [source:MOHURD-URBAN-DESIGN]。
 
