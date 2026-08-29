@@ -11,7 +11,7 @@
     "scenario_card_count": {"status":"known","value":10,"unit":"count","source_files":["proposal.md"],"formula":"count(S01..S10)","confidence":"high","assumptions":[]},
     "industry_test_scenario_count": {"status":"known","value":3,"unit":"count","source_files":["proposal.md"],"formula":"count(P1..P3)","confidence":"high","assumptions":[]},
     "persona_count": {"status":"known","value":6,"unit":"count","source_files":["proposal.md"],"formula":"count(P1..P6 persona_groups)","confidence":"high","assumptions":[]},
-    "global_case_count": {"status":"known","value":6,"unit":"count","source_files":["proposal.md","sources.json"],"formula":"count(SRC-GLOBAL-FABLABS..SRC-GLOBAL-BLOCK71)","confidence":"high","assumptions":[]},
+    "global_case_count": {"status":"known","value":5,"unit":"count","source_files":["proposal.md","sources.json"],"formula":"count(sources where review_status=verified_primary_page and usable_for_formal=mechanism_reference_only)","confidence":"high","assumptions":["2050 is retained as research_hypothesis and excluded from the formal count"]},
     "phase_count": {"status":"known","value":3,"unit":"count","source_files":["proposal.md","geometry/phasing.geojson"],"formula":"count(near_mid_long_phases)","confidence":"high","assumptions":[]},
     "annual_program_count": {"status":"known","value":4,"unit":"count","source_files":["proposal.md"],"formula":"count(concept_annual_programs)","confidence":"medium","assumptions":["A-OPERATIONS-001"]},
     "operating_baseline": {"status":"unknown","value":null,"unit":"none","source_files":["assumptions.json"],"formula":"not_available","confidence":"unknown","assumptions":["A-BASELINE-001"],"reason":"Staffing, demand, budget, sample frame and workload baseline are not supplied."}

@@ -15,7 +15,7 @@ summary: 面向公共原型、社区学习与 AI 生态协作的概念规划方�
 
 ## 设计依据与资料清单
 
-本包仅使用任务书、公开规范和包内参与者自行生成的几何/图形。正式来源逐条登记在 `sources.json`，其中官方公告与任务书用于任务边界，住建/自然资源/AI治理/无障碍材料用于方法参考；全球案例只作为 `research_hypothesis`，不支撑已发生的投资、效果或合作事实。现状建筑、权属、文保线、站点出入口、运营容量和官方控制条件均为 `unknown/to_verify`。
+本包仅使用任务书、公开规范和包内参与者自行生成的几何/图形。正式来源逐条登记在 `sources.json`，其中官方公告与任务书用于任务边界，住建/自然资源/AI治理/无障碍材料用于方法参考；全球案例仅提炼可核验页面上的机制线索，不支撑已发生的投资、效果或合作事实。现状建筑、权属、文保线、站点出入口、运营容量和官方控制条件均为 `unknown/to_verify`。
 
 机器可核验索引与逐项证据表见 `report/narrative.md`、`sources.json`、`compliance_matrix.json` 和 `design_depth_matrix.json`；本段只保留任务边界、官方公告与包内几何三类入口 [source:AGENT-TASKBOOK] [source:OFFICIAL-ANNOUNCEMENT] [data:geometry/site_boundary.geojson#all_features]。每个案例、标准、指标和深度项均以稳定 ID 回链，避免用连续标签替代证据。
 
@@ -93,10 +93,9 @@ AI 生态与场景深度按 [depth:three_key_area_detailed_design]、[metric:sce
 | STATION F | `SRC-GLOBAL-STATIONF`：官方主页标题 STATION F，访问 2026-08-29 | 共享创新空间、项目和服务接口 | 不主张入驻、招商或绩效移植 |
 | Hacker Dojo | `SRC-GLOBAL-HACKERDOJO`：官方主页标题 Hacker Dojo - Connect to Silicon Valley，访问 2026-08-29 | 会员/开发者自组织学习 | 不主张社群关系或规模 |
 | Chaihuo | `SRC-GLOBAL-CHAIHUO`：柴火创客官方主页标题 主页 - 柴火创客，访问 2026-08-29 | 社区创客学习与动手原型 | 不主张本地授权或供应链合作 |
-| 2050 Conference | `SRC-GLOBAL-2050`：官方站点 2050.org，访问 2026-08-29；页面标题待补核 | 周期性跨界交流 | 不作活动效果或品牌授权结论 |
-| BLOCK71 | `SRC-GLOBAL-BLOCK71`：原链接本轮返回 404 | 待研究问题：大学/创业支持接口 | 不进入正式案例证据链 |
+| Arduino Education | `SRC-GLOBAL-ARDUINO-EDUCATION`：Arduino 官方页面标题 Arduino Education，访问 2026-08-29 | 开放硬件学习与课堂到原型路径 | 不主张本地合作、产品背书或绩效移植 |
 
-案例只用于提出可验证的机制问题，不用于证明本地合作、企业名单、投资额、人数、产值、政策或政府承诺。每一条的页面标题、发布主体、访问日、发布日期状态、摘要证据位置、`review_status`、`usable_for_formal` 和许可限制均登记在 `sources.json`。
+正式案例计数为五个：Fab Labs、STATION F、Hacker Dojo、柴火创客、Arduino Education，均有可追溯的官方/项目主页面；2050 Conference 保留为一个排除在正式计数外的研究线索，待补核页面标题后才可升级。案例只用于提出可验证的机制问题，不用于证明本地合作、企业名单、投资额、人数、产值、政策或政府承诺。每一条的页面标题、发布主体、访问日、发布日期状态、摘要证据位置、`review_status`、`usable_for_formal` 和许可限制均登记在 `sources.json`。
 
 六类画像：P1 低数字素养及老年居民（纸笔/人工）；P2 视听、行动或认知障碍居民及照护者（陪走、替代路线）；P3 儿童与学生学习者（可解释样例和监护边界）；P4 社区工作者（可审计回执）；P5 工程师/开发者（可复现测试包）；P6 商户/访客（短时、可退订服务）。所有场景遵守三条底线：输入最小化且匿名聚合；模型/规则只生成建议、分类或草稿；涉及权益、公共安全、文保、无障碍或对外发布必须人工复核。AI 输出若无法解释、无法追溯或超出授权范围，直接停止，不进入公共屏。
 
@@ -166,9 +165,9 @@ RACI 角色：运营者负责入口、日志和维护；专业团队负责空间
 
 ## 指标体系、面积复算与合规矩阵
 
-指标复算遵循 [depth:metrics_recalculation]、[data:geometry/phasing.geojson#all_features] 和 [metric:site_area_sqm]；所有精确值都是参与者 provisional 模型值。
+指标复算遵循 [depth:metrics_recalculation]、[data:geometry/phasing.geojson#all_features] 和 [metric:site_area_sqm]；所有精确值都是参与者 provisional 模型值。 
 
-三项 formal 核心指标从本包 geometry 复算；面向人只显示“约 11.4 km²（参与者临时模型）”“约 12.3%”“约 7.3%”，精确复算值仅保留在 `metrics.json` 的机器字段。三者置信度均为 low，公式、来源、版本和触发条件写入 `metrics.json`；官方边界/用地/公共空间资料到位时必须联动复算并刷新 HTML、图件、PDF 与 manifest。这些不是官方现状。结构计数为场景卡 10、行业协议 3、画像 6、全球案例登记 6、阶段门 3；运营基线、人口、客流、预算、碳排、FAR 和高度均为 `unknown/to_verify`。
+三项 formal 核心指标从本包 geometry 复算；面向人只显示“约 11.4 km²（参与者临时模型）”“约 12.3%”“约 7.3%”，精确复算值仅保留在 `metrics.json` 的机器字段。三者置信度均为 low，公式、来源、版本和触发条件写入 `metrics.json`；官方边界/用地/公共空间资料到位时必须联动复算并刷新 HTML、图件、PDF 与 manifest。这些不是官方现状。结构计数为场景卡 10、行业协议 3、画像 6、全球案例正式计数 5（另有 1 个排除的研究线索）、阶段门 3；运营基线、人口、客流、预算、碳排、FAR 和高度均为 `unknown/to_verify`。
 
 指标记录字段固定为：指标名、分子/分母、空间范围、版本、来源、计算时间、责任人、置信度、复算触发。官方边界、用地、文保和控制条件发布后，同步更新 geometry、正文、HTML、图件、PDF、metrics 和 manifest。`compliance_matrix.json` 覆盖公告要求，`design_depth_matrix.json` 覆盖现状、结构、节点、实施、合规和表达深度。
 
