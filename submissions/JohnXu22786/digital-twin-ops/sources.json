@@ -396,42 +396,143 @@
     },
     {
       "source_id": "PACKAGE-GEOMETRY",
-      "title": "本方案 geometry 层(provisional 概念设计)",
-      "publisher": "Repository participant package artifact; exact upstream provenance to_verify",
-      "source_kind": "agent_generated_design",
+      "title": "本包自有 authored concept geometry（provisional）",
+      "publisher": "JohnXu22786 (participant-authored concept geometry)",
+      "source_kind": "participant_authored_geometry",
       "url": "geometry/",
-      "published_date": "2026-08-24",
-      "accessed_date": "2026-08-24",
+      "published_date": "2026-08-29",
+      "accessed_date": "2026-08-29",
       "file_type": "geojson",
-      "authority_level": "PROVENANCE_TO_VERIFY",
+      "authority_level": "PARTICIPANT_AUTHORED",
       "timeliness_level": "T0",
       "public_access_status": "cleared_for_repo",
-      "license_summary": "No third-party site asset is embedded; repository display scope is retained, while upstream authorship and any broader reuse right remain to_verify.",
-      "review_status": "to_verify",
+      "license": "COMMUNITY-DISPLAY-ONLY",
+      "license_summary": "No third-party geometry or basemap is embedded. The participant-authored artifact is granted for repository display and local machine checks only; broader derivative, commercial, official-boundary and construction reuse is not granted.",
+      "review_status": "approved",
       "usable_for_formal": "provisional_only",
       "allowed_uses": [
         "design intent visualization",
-        "machine validation"
+        "machine validation",
+        "local metric recalculation from the same package files"
       ],
       "prohibited_uses": [
         "official boundary",
-        "statutory control",
-        "construction commitment"
+        "statutory or regulatory control",
+        "survey, ownership or construction commitment",
+        "commercial or public-brand reuse"
       ],
       "topics": [
         "geometry"
       ],
-      "notes_zh": "参与方自产设计几何，标注 provisional。",
+      "notes_zh": "该条目为 JohnXu22786 在本包内直接 authored 的概念几何记录；不含第三方底图或复制几何。可复算、可渲染，但仍是 provisional，不是官方边界、测绘、权属、控规或施工依据。",
       "provenance": {
+        "author": "JohnXu22786",
+        "authorized_by": "JohnXu22786 as package author",
         "source_artifact": "Package GeoJSON layers under geometry/",
-        "generator": "to_verify",
-        "generation_method": "participant package artifact used for conceptual geometry and deterministic checks",
-        "limitations": "provisional envelopes; not an official boundary, survey, ownership or control source"
+        "generator": "Participant-authored GeoJSON; validated and rendered with Python 3.11, Shapely and PyProj from the package-local generation wrapper",
+        "generation_date": "2026-08-29",
+        "generation_method": "Author the concept layer vertices/features in EPSG:4548; retain polygons, lines and points as provisional envelopes or operational markers; validate closed polygons and finite coordinates; calculate areas from the same geometry files; render figures, HTML and PDF from those files.",
+        "upstream_inputs": [
+          "DATA-SRC-AGENT-TASKBOOK-2026-0518 (task vocabulary and scope names; no coordinate geometry copied)",
+          "DATA-SRC-OFFICIAL-ANNOUNCEMENT-2026-0509 (project wording and scope context; no coordinate geometry copied)",
+          "DATA-SRC-PROVISIONAL-BOUNDARIES-2026-0605 (provisional design-reference context only; no official polygon copied)",
+          "Participant-authored layer specification and feature properties in this package"
+        ],
+        "transformations": [
+          "Normalize authored feature coordinates and declare EPSG:4548 for package-local calculations",
+          "Validate polygon closure, finite coordinates and geometry validity before rendering",
+          "Union or polygon_area over the package-local layers for metrics; retain the same-calibre source paths",
+          "Render PNG figures and A0/A3 PDFs from the repaired package geometry; no official redline or survey inference"
+        ],
+        "license_and_rights": "No third-party geometry, basemap, image or dataset is embedded. JohnXu22786 authorizes repository display and local validation under COMMUNITY-DISPLAY-ONLY; no broader derivative, commercial, official or construction reuse is granted.",
+        "reuse_boundary": "Concept display, local machine validation and deterministic metric recomputation only. Do not reuse as an official boundary, statutory control, survey, ownership record, engineering basis, construction document or public/commercial brand asset.",
+        "provenance_status": "authored_record_complete; coordinate authority remains provisional",
+        "limitations": "Provisional envelopes and markers; not an official boundary, survey, ownership, heritage, regulatory-control or infrastructure-capacity source"
       },
-      "spatial_temporal_scope": "This package's participant-facing provisional GeoJSON layers; package date 2026-08-24; no official site survey, ownership or control geometry.",
-      "collection_method": "Repository package artifact used for conceptual rendering and deterministic geometry checks; exact upstream generation history is not independently verified.",
+      "reuse_boundary": "Repository display, local validation, figure generation and metric recomputation from the same package files only; no official, statutory, survey, ownership, engineering, construction, commercial or public-brand reuse.",
+      "spatial_temporal_scope": "Participant-authored provisional GeoJSON layers in this package, authored and regenerated 2026-08-29; no official site survey, ownership or control geometry.",
+      "collection_method": "The package author directly authored the GeoJSON features, recorded all non-coordinate textual inputs above, declared the coordinate system, ran geometry validity checks, calculated metrics from the same files and regenerated all dependent figures, HTML, PDFs and hashes.",
       "supported_claims": [
-        "self-contained provisional geometry for figures and local recalculation"
+        "self-contained participant-authored provisional geometry for figures and local recalculation",
+        "the artifact's authorship, generator, date, inputs, transformations, rights boundary and reuse boundary are recorded in this source entry"
+      ]
+    },
+    {
+      "source_id": "CULTURE-HISTORY-JINGZHANG-NRA-2017",
+      "title": "百年京张 世纪经典",
+      "publisher": "国家铁路局",
+      "source_kind": "public_official_page",
+      "url": "https://source.nra.gov.cn/tlfc/tpsy/202204/t20220405_293018.shtml",
+      "published_date": "2017-06-26",
+      "accessed_date": "2026-08-29",
+      "file_type": "html",
+      "authority_level": "A0",
+      "timeliness_level": "T2",
+      "public_access_status": "public_official_page",
+      "license": "Public official page; attributed textual citation only",
+      "license_summary": "Public National Railway Administration page used for bounded historical facts. No page images, layout or third-party editorial material is copied.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "cite the 1905–1909 Jingzhang construction period",
+        "cite the public account of Chinese-led surveying, design, construction and management as cultural narrative context"
+      ],
+      "prohibited_uses": [
+        "claiming project-site heritage verification or legal heritage status",
+        "copying photographs, page graphics or other page assets",
+        "inferring current ownership, boundary or conservation obligations"
+      ],
+      "topics": [
+        "culture",
+        "history",
+        "jingzhang"
+      ],
+      "notes_zh": "国家铁路局公开页用于有限的京张铁路建造史实叙事：1905—1909年建设及中国人自主勘测、设计、施工、管理。只引用文字事实，不复制页面图片，也不把它当作项目现场文保核查。",
+      "reuse_boundary": "Attributed textual history reference for concept culture, signage and international narrative; no image, page-design, heritage-status or project-boundary reuse.",
+      "spatial_temporal_scope": "Jingzhang Railway history, 1905–1909 construction period; public page published 2017-06-26; not a current site survey.",
+      "collection_method": "Read the public National Railway Administration page and extracted only the bounded historical statements used in the culture table.",
+      "supported_claims": [
+        "the cited public page describes Jingzhang construction in 1905–1909",
+        "the cited public page describes Chinese-led surveying, design, construction and management"
+      ]
+    },
+    {
+      "source_id": "CULTURE-ZGC-HISTORY-BEIJING",
+      "title": "中关村国家自主创新示范区介绍",
+      "publisher": "北京市科学技术委员会、中关村科技园区管理委员会",
+      "source_kind": "public_official_page",
+      "url": "https://kw.beijing.gov.cn/ztzl/rdzt/zgcsfq/index.html",
+      "published_date": null,
+      "accessed_date": "2026-08-29",
+      "file_type": "html",
+      "authority_level": "A0",
+      "timeliness_level": "T1",
+      "public_access_status": "public_official_page",
+      "license": "Public official page; attributed textual citation only",
+      "license_summary": "Public Beijing science/technology and Zhongguancun commission page used for bounded historical/current-clue wording. No page images, logos or third-party editorial material is copied.",
+      "review_status": "approved",
+      "usable_for_formal": "yes",
+      "allowed_uses": [
+        "cite the public development narrative from the 1980s electronics street to the national innovation-demonstration ecosystem",
+        "use as a current-clue layer for concept culture and open innovation service narrative"
+      ],
+      "prohibited_uses": [
+        "claiming project-level enterprise, investment, ownership or performance facts",
+        "copying government logos, page assets or institutional marks",
+        "inferring site boundary, control-plan status or current facility condition"
+      ],
+      "topics": [
+        "culture",
+        "innovation",
+        "zhongguancun"
+      ],
+      "notes_zh": "北京市科委/中关村管委会公开沿革页用于中关村创新文化的现状线索：20世纪80年代电子一条街及其向国家自主创新示范区的发展叙事。仅作文化线索，不主张项目级企业、权属、投资、设施或规划事实。",
+      "reuse_boundary": "Attributed textual current-clue reference for concept culture, signage, events and international narrative; no logo, page asset, institutional endorsement or project-fact reuse.",
+      "spatial_temporal_scope": "Public Zhongguancun development narrative from the 1980s electronics-street origin through the national innovation-demonstration context; page publication date not stated; accessed 2026-08-29.",
+      "collection_method": "Read the public Beijing commission page and extracted only the bounded development narrative used in the culture table; no logo or image was reused.",
+      "supported_claims": [
+        "the cited public page presents an origin narrative in the 1980s electronics street",
+        "the cited public page presents the development into a national innovation-demonstration ecosystem"
       ]
     },
     {

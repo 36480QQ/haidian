@@ -40,7 +40,9 @@
         "DATA-SRC-AGENT-TASKBOOK-2026-0518",
         "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
         "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
-        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311"
+        "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
+        "PACKAGE-GEOMETRY",
+        "BRAND-SEARCH-3883-20260829"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -1006,7 +1008,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "一带总体概念：京张运营概念——数字孪生运营体系的总体统筹。"
+      "evidence_summary_zh": "一带总体概念：京张运营概念——数字孪生运营体系的总体统筹；新增现行无图形中英文文字标识规范（字标、色板、字体、留白、安全区、最小尺寸、应用和清权边界），并以“中关村科技服务翼↔西翼协同带、小月河场景赋能翼↔东翼协同带”映射三区、三节点、五大功能，图册、HTML与PDF同步。"
     },
     {
       "requirement_id": "agent.2",
@@ -1218,7 +1220,10 @@
         "DATA-SRC-MOHURD-URBAN-DESIGN-MEASURES",
         "DATA-SRC-MOHURD-CONTROL-DETAILED-PLANNING",
         "DATA-SRC-MNR-LAND-USE-CLASSIFICATION-202311",
-        "DATA-SRC-BJ-KW-THREE-AREAS-WINGS-2026-0403"
+        "DATA-SRC-BJ-KW-THREE-AREAS-WINGS-2026-0403",
+        "CULTURE-HISTORY-JINGZHANG-NRA-2017",
+        "CULTURE-ZGC-HISTORY-BEIJING",
+        "PACKAGE-GEOMETRY"
       ],
       "assumption_ids": [
         "A-BOUNDARY-001",
@@ -1234,7 +1239,7 @@
         "VISUAL_PACKAGING",
         "PROFESSIONAL_EVIDENCE"
       ],
-      "evidence_summary_zh": "文化与铁路叙事仅以公告/任务书项目文本语境、已登记的“三区两翼”公开背景页和本包原创概念表达为依据；未使用独立历史、遗址公园规划、中关村文化、总体/分区规划、CIM导则或现场踏勘/草图资料，未核验史实降级为概念建议或 unknown/to_verify。"
+      "evidence_summary_zh": "文化资源系统分三层：国家铁路局公开页核验京张1905—1909年建造及中国人自主勘测设计施工管理史实；北京市科委/中关村管委会公开页核验中关村20世纪80年代电子一条街到国家自主创新示范区的现状线索；“运行档案·共创议事·可逆展陈”为本包原创概念。三层分别映射空间、双语导视、活动和国际叙事，几何为本包 authored provisional 记录，未使用自采踏勘/草图或未清权标识。"
     },
     {
       "requirement_id": "agent.6",

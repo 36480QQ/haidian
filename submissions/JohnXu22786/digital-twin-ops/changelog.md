@@ -1,4 +1,12 @@
 # 方案迭代记录
+## v0.6.0 - 2026-08-29 (repair round 10, CocoSgt review 5057461759 / 76.0 CHANGES_REQUESTED)
+
+- Restored the taskbook wing names in both proposals and all derived surfaces: Zhongguancun Technology Service Wing / 中关村科技服务翼 and Xiaoyuehe Scenario Empowerment Wing / 小月河场景赋能翼. Added the one-to-one mapping to the custom West/East Coordination Bands, three areas, three nodes and five functions, including the belt-structure figure, visual indexes, A0 boards and A3 booklets.
+- Added agent.1's current rights-safe visual direction: a graphic-free bilingual wordmark, exact palette, Noto Sans SC weights, clear space/safe area, minimum sizes, applications and explicit non-trademark/public-use boundary. No uncleared legacy name or graphic mark was restored.
+- Added agent.5's sourced culture system using the National Railway Administration Jingzhang history page and Beijing science/technology/Zhongguancun commission development page. History, current clues and original AI culture are separated and mapped to space, wayfinding, events and international narrative.
+- Closed the `data:PACKAGE-GEOMETRY` provenance gap with participant author, generator, generation date, all upstream inputs, transformations, licence and reuse boundary. Metrics remain derived from the same EPSG:4548 package files; all figures, HTML, PDFs and hashes were regenerated/refreshed.
+- Repaired the English site-overview, key-areas and mobility-bluegreen maps with an explicit `N` and visible north arrow; paired Chinese maps retain the explicit north marker. Regenerated the full bilingual figure/PDF set and re-embedded HTML fonts.
+
 ## v0.5.0 - 2026-08-29 (repair round 9, CocoSgt review 5057296002 / 78.0 CHANGES_REQUESTED)
 
 - Corrected the source-audit contract across the bilingual proposals, copyright statement, compliance/design-depth/standard matrices and visual indexes. The package now lists only actually used, verifiable sources: the announcement/taskbook, the registered “three areas, two wings” context page, applicable standards/regulations, provisional geometry, public digital-twin cases and rights records.
