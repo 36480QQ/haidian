@@ -1,4 +1,9 @@
 # 方案迭代记录
+## v0.5.0 - 2026-08-29 (repair round 9, CocoSgt review 5057296002 / 78.0 CHANGES_REQUESTED)
+
+- Corrected the source-audit contract across the bilingual proposals, copyright statement, compliance/design-depth/standard matrices and visual indexes. The package now lists only actually used, verifiable sources: the announcement/taskbook, the registered “three areas, two wings” context page, applicable standards/regulations, provisional geometry, public digital-twin cases and rights records.
+- Removed stale claims of self-collected survey/sketch material and independent heritage-park, Zhongguancun-culture, master/district-plan, project-level renewal/control-plan and CIM-guideline evidence. The heritage-park phrase is retained only as announcement/taskbook context; absent field material is not given a fabricated author/privacy log.
+- Re-rendered bilingual proposal HTML, re-embedded the offline font, and regenerated the current figure/PDF set from the existing deterministic pipeline. Official geometry, heritage records and operational baselines remain unknown/to_verify.
 
 ## v0.4.0 - 2026-08-29 (repair round 6, CocoSgt review 5048751415 / 88.0 CHANGES_REQUESTED)
 
