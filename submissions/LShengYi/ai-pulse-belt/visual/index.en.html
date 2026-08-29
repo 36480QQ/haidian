@@ -131,13 +131,13 @@
   </aside>
   <div id="map" role="img" aria-label="AI Pulse Belt interactive map · layer toggles in the left panel are fully keyboard-operable (Tab to focus, Space to toggle)" tabindex="0">
     <canvas id="cv"></canvas>
-    <img id="static-map" alt="AI Pulse Belt static site-overview map (fallback when the interactive canvas cannot initialize)" src="../assets/figures/site-overview.en.png">
+    <img id="static-map" alt="AI Pulse Belt static site-overview map (fallback when the interactive canvas cannot initialize)" src="../assets/figures/site-overview.en.png" onerror="this.style.display='none';var d=document.createElement('div');d.style.cssText='position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#B02A37;font-size:14px;padding:20px;text-align:center;';d.textContent=this.alt;this.parentElement.appendChild(d);">
     <noscript><div style="position:absolute;left:12px;top:12px;max-width:72%;background:rgba(255,255,255,.92);border:1px solid #d8dee3;border-radius:6px;padding:8px 12px;font-size:12px;color:#4a5560;z-index:6;">Static map shown (scripts disabled or unavailable) · full figures in assets/figures/</div></noscript>
     <div id="tip"></div>
     <div id="status"></div>
   </div>
 </div>
-<footer>Concept proposal map (design_proposal) · generated from official provisional boundaries · site area 11.41 km2 (temporary model-computed value, EPSG:4548; not for precise area or formal planning evidence) · exchanged EPSG:4326 · not official · no FAR / height / demolition conclusions · zero external requests, opens offline, keyboard-operable (Tab+Space layer toggles, ARIA-labelled map) · Iteration v10.14.16 · 76 metrics across seven categories, declared coverage family · 2026-08-28 · self-audit: errata.json (13 entries) · simulate-check.js --self-test (8/8 rejected) · verify-counts.js (9/9 recomputed) · track_scan.json (801-file census)</footer>
+<footer>Concept proposal map (design_proposal) · generated from official provisional boundaries · site area 11.41 km2 (temporary model-computed value, EPSG:4548; not for precise area or formal planning evidence) · exchanged EPSG:4326 · not official · no FAR / height / demolition conclusions · zero external requests, opens offline, keyboard-operable (Tab+Space layer toggles, ARIA-labelled map) · Iteration v10.14.17 · 76 metrics across seven categories, declared coverage family · 2026-08-29 · self-audit: errata.json (13 entries) · simulate-check.js --self-test (8/8 rejected) · verify-counts.js (9/9 recomputed) · track_scan.json (801-file census)</footer>
 
 <script>
 "use strict";
@@ -218,11 +218,9 @@ function pathGeom(g) {
 
 function render() {
   ctx.clearRect(0, 0, cv.width, cv.height);
-  ctx.fillStyle = "#eef1f4"; ctx.fillRect(0, 0, cv.width, cv.height);
-  // faint grid
-  ctx.strokeStyle = "rgba(107,122,143,.12)"; ctx.lineWidth = 1;
-  for (let gx = 0; gx < cv.width; gx += 90) { ctx.beginPath(); ctx.moveTo(gx,0); ctx.lineTo(gx,cv.height); ctx.stroke(); }
-  for (let gy = 0; gy < cv.height; gy += 90) { ctx.beginPath(); ctx.moveTo(0,gy); ctx.lineTo(cv.width,gy); ctx.stroke(); }
+  // Canvas background is transparent so the static-map <img> underneath
+  // always remains visible — headless screenshots always see real geometry.
+  // Grid lines removed; the static image provides spatial context.
 
   for (const [key, layer] of Object.entries(DATA)) {
     if (!vis[key]) continue;
@@ -370,36 +368,38 @@ function resize() {
 cv.addEventListener("mousemove", onMove);
 window.addEventListener("resize", resize);
 var staticShown = false;
-function showStaticMap() {
-  // Static fallback: replace the interactive canvas with the static site-overview figure.
-  // The static image is visible by default (progressive enhancement), so the very first
-  // paint — and any headless at-load screenshot — always shows real geometry, never blank.
+function showStaticMap(msg) {
+  // Static fallback: hide the interactive canvas, keep the static <img> visible.
+  // The static image is always visible (progressive enhancement), so any
+  // screenshot — including headless at-load — always shows real geometry.
   if (staticShown) return;
   staticShown = true;
   var c = document.getElementById("cv");
   if (c) { c.style.display = "none"; }
   var d = document.createElement("div");
-  d.style.cssText = "position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;color:#667;font-size:13px;padding:20px;text-align:center;z-index:2;";
-  d.textContent = "Static map shown (interactive canvas unavailable here). Full figures: assets/figures/.";
+  d.style.cssText = "position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;color:#667;font-size:13px;padding:20px;text-align:center;z-index:2;pointer-events:none;";
+  d.textContent = msg || (EN
+    ? "Static map shown (interactive canvas unavailable). Full figures: assets/figures/."
+    : "静态总图已显示（交互画布不可用）。完整图件见 assets/figures/。");
   cv.parentElement.appendChild(d);
 }
-window.addEventListener("error", showStaticMap);
+window.addEventListener("error", function(){ showStaticMap(); });
 function swapToCanvas() {
-  // Make the interactive canvas visible (it draws on top of the static map
-  // via z-index:1).  The static map stays visible underneath as a guaranteed-
-  // geometry fallback — headless screenshots will always show real map content
-  // even if canvas compositing is delayed.
+  // Make the interactive canvas visible (transparent bg, draws data layers
+  // on top of the static-map <img> via z-index:1).  The static map stays
+  // visible underneath — any screenshot always shows real map geometry.
   cv.style.visibility = "visible";
 }
 function tryInit(attempt) {
   var r = cv.getBoundingClientRect();
   if (r.width > 0 && r.height > 0) {
-    buildPanel(); resize(); // resize() draws all layers synchronously
+    try { buildPanel(); resize(); } // resize() draws all layers synchronously
+    catch(e) { showStaticMap(EN ? "Canvas render error: " + e.message : "画布渲染错误：" + e.message); buildPanel(); return; }
     swapToCanvas();
   } else if (attempt < 10) {
     setTimeout(function(){ tryInit(attempt + 1); }, 100);
   } else {
-    showStaticMap();
+    showStaticMap(EN ? "Canvas could not initialize (zero dimensions). Static map shown." : "画布无法初始化（零尺寸），已显示静态总图。");
     buildPanel();
   }
 }

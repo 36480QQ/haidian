@@ -1,3 +1,7 @@
+## v10.14.17（2026-08-29）
+
+- **评审七维修复轮（v10.14.16=86 分评审 3 项阻断修复，zh/en 同步）**：① visual/index.html 评审首屏空白——canvas 实心 fillRect(#eef1f4) 背景与网格覆盖 static-map 底图，改为透明画布（不画背景/网格），数据图层直接叠在 static-map <img> 上方（z-index:1），首屏截图必见真实几何；tryInit 加 try/catch 与零尺寸明确错误提示；static-map <img> 加 onerror 显示替代文本；② 无障碍结果性主张越级——"屏幕阅读器用户可完成全部图层浏览"改为"按无障碍原则设计、待具名辅助技术测试确认（不得以机器视觉 PASS 代替无障碍认证）"；③ 静态图页脚裁切/标签碰撞/留白——key-areas 图高 6.2→7.2 英寸（减标签压缩），页脚 y 0.022→0.042 + fontsize 8.5→7.8 + 短化来源文本，tight_layout 底边 0.04→0.07；metrics-evidence 链副标 y 0.855→0.842 + fontsize 8.8→8.2 + 短化，页脚 y 0.018→0.035 + fontsize 8.5→7.8 + 短化；land-use/site-overview 加 tight_layout(pad=1.2) 减留白；全部 zh/en 图件重渲。
+
 ## v10.14.15（2026-08-28）
 
 - **评审七维修复轮（v10.14.14=77 分评审 6 项阻断修复，zh/en 同步）**：① 图件与 HTML 字体链离线复核（标准 base64 + font-display:block，4 个 HTML 全部内嵌 Noto Sans CJK SC 子集，零网络请求复核通过）；② 残留预算/年度运营金额矛盾清除（ASSUME-005、metrics.json、正文口径统一为撤回非运作，正文删除残留金额数值）；③ 商业用地 05/09 全链路统一（指标 ID、公式、图例、正文、图件同步，比例重算）；④ 无人机/智能网联汽车/车路云等 5 项来源按 source_registry_summary 降级为 background_only + needs_review，删除"已核实正式依据"越级语态；⑤ 面积与 0.11% 偏差全部标注"临时模型计算值，不得用于精确面积或正式规划证据"，警示移至图题/指标旁（gen_03 图题下免责行 + 表 A17 指标旁标注）；⑥ 视觉 QA——（en: ）空占位删除、图件标签碰撞与页脚裁切修复（REV 缩短为单行、图例下移）、PNG/A3A0/HTML 全部重渲。
