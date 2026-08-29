@@ -311,12 +311,12 @@
     },
     "persona_count": {
       "status": "known",
-      "value": 7,
+      "value": 8,
       "unit": "count",
       "source_files": [
         "proposal.md#S5"
       ],
-      "formula": "declared count: 7 user personas",
+      "formula": "declared count: 8 user personas",
       "confidence": "high",
       "assumptions": [
         "Counts are declared proposal elements, auditable in the named files."
@@ -415,12 +415,12 @@
     },
     "investment_item_count": {
       "status": "known",
-      "value": 11,
+      "value": 12,
       "unit": "count",
       "source_files": [
         "proposal.md#S10"
       ],
-      "formula": "declared count: 11 one-off construction items JZ-01..JZ-11",
+      "formula": "declared count: 12 one-off construction items JZ-01..JZ-12",
       "confidence": "high",
       "assumptions": [
         "Counts are declared proposal elements, auditable in the named files."

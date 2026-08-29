@@ -4,7 +4,7 @@ author_github: "LShengYi"
 language: "en"
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-iteration: "22"
+iteration: "23"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "AI Pulse Belt: the engineering tradition of the centennial Jing-Zhang Railway 'iron pulse' — inspectable, verifiable, retired — is translated into a public protocol for the AI era: before any AI service enters public space, it must be declarable, testable, releasable, and retirable (P1-P4), each beat paired with a spatial interface and passing evidence. An offline synthetic rehearsal of 120 checks blocks all 105 failure branches, with zero services released (all currently not authorized, not field-run); 76 metrics (61 known) are recomputable, and the three-level scope, the three key areas, and the 12 scenario cards respond to announcement clauses 1.4/1.5 and the agent.1-6 tasks. All content is conceptual recommendation; once official boundaries and existing-condition surveys are released, everything is recomputed under the P4 procedure."
@@ -64,7 +64,7 @@ This section provides review-dimension evidence indexes, response checklists; re
 
 Applies to all narrative, tables, figures, JSON, and media scripts; every downgrade traceable via changelog.
 
-**Version traceability**: iteration **v10.14.17**(2026-08-29, frontmatter 22); per-round records in `changelog.md`. **v10.14.0** = compliance-repair: needs_review source downgraded(HAIDIAN-URBAN-RENEWAL-2025 removed, Table B4 reworded as schematic numbering); UAS rules updated to 2026 Beijing Municipal UAS Regulations(No. 50, effective 2026-05-01; Beijing-wide controlled airspace, prior application required)—cards, standards matrix, source registry synced; metric count 61/76 known(metrics.json). **v10.14.14** = seven-dimension review repair(prices deleted, 100-day split, red-line scopes, data minimization, en tables A14–A21/C1–C5 95/95). QA(E12): pixel-level figure review—title bands 46–94 px apart, zero duplicate subtitle rows, boundaries machine-checkable; "title clipped" refuted.
+**Version traceability**: iteration **v10.14.18**(2026-08-29, frontmatter 23); per-round records in `changelog.md`. **v10.14.0** = compliance-repair: needs_review source downgraded(HAIDIAN-URBAN-RENEWAL-2025 removed, Table B4 reworded as schematic numbering); UAS rules updated to 2026 Beijing Municipal UAS Regulations(No. 50, effective 2026-05-01; Beijing-wide controlled airspace, prior application required)—cards, standards matrix, source registry synced; metric count 61/76 known(metrics.json). **v10.14.14** = seven-dimension review repair(prices deleted, 100-day split, red-line scopes, data minimization, en tables A14–A21/C1–C5 95/95). QA(E12): pixel-level figure review—title bands 46–94 px apart, zero duplicate subtitle rows, boundaries machine-checkable; "title clipped" refuted.
 
 **Table A1 One-page review entry (review-dimension evidence index — every row gives an openable file and runnable command; machine-verifiable items re-run offline)**
 
@@ -254,7 +254,7 @@ The complete review set Any single failure blocks submission; all checks re-run 
 |Geometry/spatial|9 layer topology/CRS/seamless coverage|Official gate G2|9/9|
 |Drawings & visuals|PDF pages >0; HTML zero external links, opens offline|Official gate G3|PASS|
 |Media & subtitles|audio 171.62 s = film = last subtitle 00:02:51.508|Duration read + VTT timestamp|171.62 s, 3/3|
-|Copyright ledger|37 per-asset rights rows(media/fonts/icons/base map/LOGO)|report/copyright_statement.md|37/37|
+|Copyright ledger|35 per-asset rights rows(media/fonts/icons/base map/LOGO)|report/copyright_statement.md|35/35|
 |Script syntax|visual/assets/*.js|`node --check` per file|all pass|
 |Four gates|finalize→self_check(formal-review-ready)→preflight→pre_push_guard|Official chain|all PASS|
 
@@ -1020,9 +1020,9 @@ AI governance suggestions follow data-minimization, public-source, explainabilit
 
 The bottom-line indicators, four-beat protocol form a complete "admission—operation—retirement" evidence chain: each indicator has a designated verification action, a public evidence form, so reviewers, public can recheck table row by row instead of trusting proposal's self-report. These five are district-wide thresholds, not decorative promises on individual cards.
 
-**Legal basis of the three red lines and this proposal's self-imposed increments**: reading current laws article by article, each red line's statutory scope is stated separately from this proposal's self-imposed additions(proposal standard ≥ statutory duty = "self-imposed equivalent or stricter"; beyond statutory scope = "proposal self-imposed"). Basis verified from official full texts; article numbers and gist quoted faithfully:
+**Legal basis of the three red lines and this proposal's self-imposed increments**: reading current laws article by article, each red line's statutory scope is stated separately from this proposal's self-imposed additions(proposal standard ≥ statutory duty = "self-imposed equivalent or stricter"; beyond statutory scope = "proposal self-imposed"). Basis cited from registered texts; pending legal review:
 
-| This proposal's rule | Legal basis (verified) | Change in force |
+| This proposal's rule | Legal basis (cited; pending legal review) | Change in force |
 | --- | --- | --- |
 |Every service must have a **no-AI equivalent path**(no launch without a human-equivalent path)|Law of the PRC on Barrier-Free Environment Building, **Article 39**: public-service premises involving healthcare, social security, financial services, or utility payment shall **retain on-site guidance, manual handling as traditional service modes** [standard:BARRIER-FREE-ENVIRONMENT-LAW]|From "designer goodwill" to a **legal obligation**—public services may not be left with only an AI route|
 |**Stop generation and transmission on discovery**, no observing first(five rollback-trigger emergency stop valves)|Interim Measures for the Management of Generative AI Services, **Article 14**: providers discovering unlawful content shall promptly take **stopping generation, stopping transmission, and eliminating** measures, report to competent authorities [standard:GENERATIVE-AI-INTERIM-MEASURES]|From "this proposal's stop rule" to a **provider obligation**|
@@ -1644,7 +1644,7 @@ The compliance matrix covers all mandatory tasks of announcement clauses 1.3, 1.
 
 The eight disciplines map item by item to boundary clause(agent_taskbook.boundary_clause's "land ownership, investment estimates, development sequencing, and approval judgments") and are registered in compliance_matrix.json, risk.json; if any item is ever misread as a formal conclusion, this list is clarification baseline.
 
-**Per-asset rights summary**: all 52 asset files itemized in `report/copyright_statement.md`(37-line ledger); table below gives fabrication chain, rights status, and verification location per class—reviewers can open ledger line to verify:
+**Per-asset rights summary**: all 52 asset files itemized in `report/copyright_statement.md`(35-line ledger); table below gives fabrication chain, rights status, and verification location per class—reviewers can open ledger line to verify:
 
 | Asset class | Source / fabrication | License / rights status | Verification location |
 | --- | --- | --- | --- |
