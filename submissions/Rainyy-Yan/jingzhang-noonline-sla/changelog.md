@@ -1,5 +1,13 @@
 # 方案迭代记录 / Iteration Changelog
 
+## v4.7 - 2026-08-29
+
+**Phase 0 evidence register, without factual upgrades**
+
+- Adds one machine-readable, editable register with 12 data requests, 45 field-verification tasks, 11 release gates, and blank responsibility and close-out fields for a future authorised team.
+- Every permission, named role, funding path, site condition, professional conclusion, and Verified SLA outcome remains blank, unknown, or HOLD until independently evidenced.
+- The register supplements, rather than replaces, the V4.4 and V4.6 Phase 0 framework; it does not claim an exercise, approval, construction, procurement, or operating service.
+
 ## v4.6 award refinement: reversible field kit and handover - 2026-08-29
 
 **Material and handover scale.** A participant-authored, non-site-specific field-kit material study now sits alongside the three Phase 1 concept perspectives. It makes five reversible conceptual components readable at an intermediate scale: a light shade frame, movable stay module, physical information marker, removable safety buffer, and tactile/human-handover interface. The paired bilingual proposal and offline visual also expose five blank templates for future authorised parties to release, observe, run, stop/reroute and close out one bounded exercise.

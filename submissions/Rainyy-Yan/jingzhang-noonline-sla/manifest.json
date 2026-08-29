@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "64c1df01555ca9c487dacf328b4dd151d9beb8933cc8d1d8ab321dde99d5afcc"
+      "sha256": "f0dfa488097014dfafe40a2d9aa12a8127fc7650e54776f42c358ea14ffe5d3a"
     },
     {
       "path": "compliance_matrix.json",
@@ -332,7 +332,7 @@
       "role": "changelog",
       "required": true,
       "language": "neutral",
-      "sha256": "4256cb2c88393482770d98bacbe0fff868447f8e7593917aa5ca1486b5a57525"
+      "sha256": "1efb10b82db6acb30d5607f23b082dd2a4e1963ce4c74eb3066a81a9f860d3f1"
     },
     {
       "path": "visual/assets/sla-engine-diagram.svg",
@@ -806,6 +806,13 @@
       "required": false,
       "language": "neutral",
       "sha256": "8ea9298b8edd4a9c8c52c42c5b48e17847ce38cb9853c4f66e64dd299d9e8118"
+    },
+    {
+      "path": "visual/assets/v4_7-phase0-activation-evidence-register.json",
+      "role": "evidence_data",
+      "required": false,
+      "language": "neutral",
+      "sha256": "b1622a1f2be77cda57e3a97469b33ebf930e69d7b3dd274b3c6eb1a9873c9d78"
     }
   ],
   "validation_claim": {
