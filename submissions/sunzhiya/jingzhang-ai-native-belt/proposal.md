@@ -1143,3 +1143,45 @@ node visual/assets/evidence-audit.js
 ## 复算接口的边界声明（v4.28）
 
 **复算接口的边界声明（v4.28）**：本方案定义的复算接口仅覆盖 `metrics.json` 中的派生指标项（面积、长度、比率、绿地/公共空间比、覆盖度等）以及引用这些指标的矩阵文件；**不**覆盖正文中的结论方向、项目优先级、场景—空间—运营矩阵中的判断、以及依赖人工价值取舍的策略表述。官方数据到位后，须经专业团队基于复算结果人工复核，并按需重新生成中英文正文、图件、HTML、PDF 与场景矩阵；本条拒绝任何「仅替换边界即自动更新」「结论方向不变」「正文无需改写」等绝对表述。
+
+
+## 实施前置条件登记表（v4.32）
+
+**目的**：把"方案级实施框架"转译为"实施就绪度登记表"，使专业团队能按本表逐项关闭条件、接管项目。每项均给出当前状态、关闭触发、责任方、验证方式、时间窗口；任何未关闭项不构成对开工的承诺。
+
+### A. 资金与责任人（A-EXIT-001 类）
+
+| ID | 当前状态 | 关闭触发 | 责任方 | 验证方式 | 时间窗口 |
+|---|---|---|---|---|---|
+| **A-EXIT-001** 撤除准备金、备件库存、退役记录 | `designed_but_unfunded`（`assumptions.json#A-EXIT-001`） | 任一 R-01—R-12 进入可研、法定规划或工程设计前必须关闭 | 项目方 R / 街道办或文化主管部门 A / 平台公司+第三方受托 C | `assumptions.json` 状态改为 `funded_with_owner` 并附预算责任人实名、年度预算额度、独立托管账户 ID | 动工前至少 90 天；不满足则触发 X07 被动安全默认模式 |
+
+### B. 官方控制指标（`metrics.json` 4 个 null 项）
+
+| 指标 | 当前状态 | 关闭触发 | 责任方 | 验证方式 |
+|---|---|---|---|---|
+| `floor_area_ratio` | `unknown / null` | 官方控规批复（建筑密度、容积率、限高） | 政府规划部门发布 | `metrics.json` status → `known/有限值` 且 confidence ≥ medium；按 EPSG:4548 重算 |
+| `building_height_limit_m` | `unknown / null` | 机场净空 + 文保紫线 + 铁路安全净距三约束叠加 | 规划/文物/铁路主管部门联合发布 | `metrics.json` status → `known/有限值`；`assumptions` 附三约束 official_boundary 链接 |
+| `resident_population` | `unknown / null` | 走廊粒度现状人口普查/统计资料 | 统计部门发布 | `metrics.json` status → `known/有限值`；附数据来源 URL |
+| `parking_supply_spaces` | `not_applicable`（概念阶段不主张数字） | 控制性详细规划阶段 | 本包输出方法学；专业团队详细规划阶段填写 | `metrics.json` status → `known/有限值` |
+
+### C. 数据缺口（`metrics.json` 中 `pending_official_*` 与 `recalculation_status: blocked_*`）
+
+| 指标 | 当前状态 | 关闭触发 | 责任方 | 验证方式 |
+|---|---|---|---|---|
+| `site_area_sqm` | `pending_official_boundary` | 官方总体边界与重点区 polygon 发布 | 主办方 | 替换 `geometry/site_boundary.geojson` 并重算 | `metrics.json` 自动更新 |
+| `green_space_area_sqm` | `pending_official_boundary` | 官方绿线/蓝线 | 规划/园林部门 | 重裁 `geometry/green_space.geojson` 并重算 | `metrics.json` 自动更新 |
+| `public_space_area_sqm` | `pending_official_boundary` | 官方公共空间布局 | 规划/街道 | 重裁 `geometry/public_space.geojson` 并重算 | `metrics.json` 自动更新 |
+| `building_footprint_area_sqm` | `pending_building_survey` | 现状建筑普查 | 主办方 | 替换 `geometry/buildings.geojson` 并重算 | `metrics.json` 自动更新 |
+| `road_network_length_m` | `pending_official_road_redlines` | 官方道路红线 | 交通部门 | 替换 `geometry/roads.geojson` 并重算 | `metrics.json` 自动更新 |
+| `key_area_count` | `pending_official_boundary` | 官方重点区 polygon | 主办方 | 替换 `geometry/key_areas.geojson` | 自动更新 |
+
+### D. 被动安全默认（funding/budget 不到位时自动生效）
+
+当 A-EXIT-001 仍为 `designed_but_unfunded`，所有触点部署默认进入**被动安全模式**：
+- 人工柜台优先（不依赖 AI 接口）
+- 不记录儿童与脆弱人群数据（最小化数据收集）
+- 不推送个性化推荐（按 X08 触点契约）
+- 设备带可视物理关停开关（任何用户可立即关停）
+- 闸门与撤除通路随时可达（无障碍连续 + 5 分钟人工可达）
+
+**以上登记不构成对实施时间、预算额度、责任人、官方数据发布窗口的具体承诺；只在数据/资金/审批到位时，按本表机制逐项关闭。**

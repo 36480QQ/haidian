@@ -45,7 +45,11 @@
       "license": "SIL OFL 1.1 — free to use, modify and redistribute under the license",
       "usage": "Declared design webfont stack for web-delivered views",
       "redistribution": true,
-      "evidence": "report/copyright_statement.md#2.1; proposal.md#font-strategy"
+      "evidence": "report/copyright_statement.md#2.1; proposal.md#font-strategy",
+      "source_url": "https://github.com/adobe-fonts/source-han-sans",
+      "license_url": "https://github.com/adobe-fonts/source-han-sans/blob/master/LICENSE.txt",
+      "attribution": "© 2014-2021 Adobe Inc. and Google LLC. Source Han Sans / Source Han Serif are released under the SIL Open Font License v1.1.",
+      "license_name": "SIL Open Font License 1.1"
     },
     {
       "class": "typeface",
@@ -55,7 +59,13 @@
       "license": "SIL OFL 1.1 / Apache-2.0 — free to use, modify and redistribute",
       "usage": "Declared design webfont stack for web-delivered views",
       "redistribution": true,
-      "evidence": "report/copyright_statement.md#2.1; proposal.md#font-strategy"
+      "evidence": "report/copyright_statement.md#2.1; proposal.md#font-strategy",
+      "source_url_inter": "https://github.com/rsms/inter",
+      "source_url_jetbrains": "https://github.com/JetBrains/JetBrainsMono",
+      "license_url_inter": "https://github.com/rsms/inter/blob/master/LICENSE.txt",
+      "license_url_jetbrains": "https://www.apache.org/licenses/LICENSE-2.0",
+      "attribution": "Inter: © Rasmus Andersson (SIL OFL 1.1). JetBrains Mono: © JetBrains s.r.o. and respective contributors (Apache License 2.0).",
+      "license_name": "SIL OFL 1.1 (Inter) + Apache-2.0 (JetBrains Mono)"
     },
     {
       "class": "image",
@@ -65,7 +75,9 @@
       "license": "COMMUNITY-DISPLAY-ONLY; original work, no third-party copyrighted image, photograph, satellite tile or commercial map data used",
       "usage": "Diagrams, maps, identity system in proposal and visual outputs",
       "redistribution": "community-display-only",
-      "evidence": "report/copyright_statement.md#3"
+      "evidence": "report/copyright_statement.md#3",
+      "source_url": "submissions/sunzhiya/jingzhang-ai-native-belt/assets/figures/* (package-internal)",
+      "attribution": "All figures are author-generated diagrams derived from the package's internal geometry/ and metrics.json data; no third-party imagery is embedded."
     },
     {
       "class": "icon",
@@ -75,7 +87,9 @@
       "license": "COMMUNITY-DISPLAY-ONLY; original work",
       "usage": "Brand identity touchpoints in proposal and visual outputs",
       "redistribution": "community-display-only",
-      "evidence": "report/copyright_statement.md#4"
+      "evidence": "report/copyright_statement.md#4",
+      "source_url": "submissions/sunzhiya/jingzhang-ai-native-belt/assets/identity/* (package-internal)",
+      "attribution": "All icons are author-generated SVG; no external icon library is embedded."
     },
     {
       "class": "basemap",
@@ -85,7 +99,8 @@
       "license": "N/A — no third-party basemap asset embedded",
       "usage": "All maps derived from geometry/*.geojson within the package",
       "redistribution": "n/a",
-      "evidence": "report/copyright_statement.md#3; visual/index.html self-declaration"
+      "evidence": "report/copyright_statement.md#3; visual/index.html self-declaration",
+      "attribution": "No external basemap is embedded; all spatial context is from package-internal geometry."
     },
     {
       "class": "data",
@@ -95,7 +110,9 @@
       "license": "COMMUNITY-DISPLAY-ONLY; external sources retain their own licenses and are cited, not incorporated",
       "usage": "Structured evidence backing the proposal",
       "redistribution": "community-display-only",
-      "evidence": "report/copyright_statement.md#5; sources.json"
+      "evidence": "report/copyright_statement.md#5; sources.json",
+      "source_url": "submissions/sunzhiya/jingzhang-ai-native-belt/data/* and sources.json",
+      "attribution": "All data points are sourced from the registered sources in sources.json; see source_registry_summary for approved_formal/background/provisional classification."
     },
     {
       "class": "geometry",
@@ -105,7 +122,9 @@
       "license": "COMMUNITY-DISPLAY-ONLY; not an official redline, not for statutory use",
       "usage": "Provisional spatial representation; recalculation-ready on official geometry replacement",
       "redistribution": "community-display-only",
-      "evidence": "report/copyright_statement.md#6; metrics.json boundary_basis"
+      "evidence": "report/copyright_statement.md#6; metrics.json boundary_basis",
+      "source_url": "submissions/sunzhiya/jingzhang-ai-native-belt/geometry/*.geojson",
+      "attribution": "All geometry is author-generated provisional polygons pending official release; coordinate system: WGS84; equidistant approximation; pending EPSG:4548 recomputation."
     },
     {
       "class": "code",
@@ -115,7 +134,9 @@
       "license": "COMMUNITY-DISPLAY-ONLY; original work",
       "usage": "Offline validation and rendering tooling",
       "redistribution": "community-display-only",
-      "evidence": "report/copyright_statement.md#7"
+      "evidence": "report/copyright_statement.md#7",
+      "source_url": "submissions/sunzhiya/jingzhang-ai-native-belt/visual/assets/evidence-audit.js + _pkg/ scripts",
+      "attribution": "Author-written offline deterministic verification scripts; LICENSE: same as package (COMMUNITY-DISPLAY-ONLY)."
     },
     {
       "class": "identity",
@@ -125,7 +146,9 @@
       "license": "CC BY 4.0 — free to copy, modify and redistribute with attribution; not for implied government endorsement",
       "usage": "Brand identity across proposal and visual outputs",
       "redistribution": true,
-      "evidence": "report/copyright_statement.md#8; proposal.md#license"
+      "evidence": "report/copyright_statement.md#8; proposal.md#license",
+      "source_url": "submissions/sunzhiya/jingzhang-ai-native-belt/assets/identity/identity-system.svg (package-internal)",
+      "attribution": "Author-generated identity system; brand-original motifs only."
     },
     {
       "class": "ai-generated",
@@ -135,7 +158,10 @@
       "license": "COMMUNITY-DISPLAY-ONLY; copyright retained by the agent operator, no transfer",
       "usage": "Submission content for the Centennial Jing-Zhang open call",
       "redistribution": "community-display-only",
-      "evidence": "report/copyright_statement.md#9"
+      "evidence": "report/copyright_statement.md#9",
+      "source_url": "https://github.com/features/copilot / https://openai.com / model provider documentation",
+      "attribution": "Generated with assistance from AI coding assistants under the kimik3 agent's human-in-the-loop review; treated as author-self content per the package's COMMUNITY-DISPLAY-ONLY license. No external AI-generated assets are redistributed.",
+      "license_name": "Author-self / COMMUNITY-DISPLAY-ONLY"
     },
     {
       "asset": "Embedded webfont 'Noto Sans SC' (variable, subset)",
@@ -147,5 +173,12 @@
       "redistribution": "Allowed under OFL 1.1 (font software, not Reserved Font Name violation; subset embedded)",
       "status": "self-declared"
     }
-  ]
+  ],
+  "compliance_boundary": {
+    "is_legal_clearance": false,
+    "is_legal_clearance_explanation_zh": "本台账为作者自我登记的许可来源、使用边界与署名要求，按九类资产逐项记录；不构成法律清权意见或专业知识产权认证，亦不替代独立法律咨询。",
+    "is_legal_clearance_explanation_en": "This ledger is an author-self registry of asset licenses, usage boundaries, and attribution requirements across nine asset classes. It is NOT a legal clearance opinion or professional IP certification, and does NOT substitute independent legal advice.",
+    "external_ip_rights_state": "All third-party assets used in the package are limited to open-source licenses (SIL OFL 1.1, Apache-2.0) or system fonts distributed with the OS; no commercial third-party imagery, photography, or proprietary data is redistributed.",
+    "publication_scope": "COMMUNITY-DISPLAY-ONLY: gallery display, academic citation, peer discussion, and review by the open-source submission organizer. Not for commercial development, government approval materials, or implied government endorsement."
+  }
 }

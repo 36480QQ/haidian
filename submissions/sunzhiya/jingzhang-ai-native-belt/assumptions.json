@@ -116,7 +116,21 @@
       "id": "A-EXIT-001",
       "status": "designed_but_unfunded",
       "statement": "Removal reserves, spare-part stocks and retirement records are designed into the phasing but have no confirmed budget owner.",
-      "impact": "Any component without an accountable owner and a safe passive fallback must be frozen rather than scaled."
+      "impact": "Any component without an accountable owner and a safe passive fallback must be frozen rather than scaled.",
+      "closure_conditions": {
+        "trigger_event_zh": "在任一 R-01—R-12 编号项目进入可研、法定规划或工程设计阶段前，必须先完成 A-EXIT-001 的关闭。",
+        "trigger_event_en": "Before any R-01 to R-12 numbered renewal project enters feasibility, statutory planning, or engineering design stage, A-EXIT-001 must be closed.",
+        "responsibility_zh": "建议主体：项目方（由一期 RACI 矩阵 R 列登记）；问责：街道办或文化主管部门（A 列）；协商：平台公司、第三方受托机构（C 列）。",
+        "responsibility_en": "Responsible: project owner (R in the phase-1 RACI); Accountable: sub-district office or cultural authority (A); Consulted: platform operator, third-party trustee (C).",
+        "verification_zh": "在 assumptions.json 中将 A-EXIT-001 status 从 designed_but_unfunded 改为 funded_with_owner，附预算责任人实名、年度预算额度、独立托管账户 ID；并更新 X14 数据信托登记。",
+        "verification_en": "Update A-EXIT-001 status from designed_but_unfunded to funded_with_owner in assumptions.json, attaching the budget owner's real name, annual budget envelope, and independent escrow account ID; also update the X14 data-trust register.",
+        "time_window_zh": "应在每个项目动工前至少 90 天完成关闭；不满足则 X07 场景公摊池条款强制要求保留冗余设备并实施被动安全模式。",
+        "time_window_en": "Must be closed at least 90 days before any project breaks ground; if not met, the X07 scenario-pool clause forces retention of redundant equipment and a passive-safety mode."
+      },
+      "passive_safety_default": {
+        "default_when_unfunded_zh": "若 A-EXIT-001 仍未关闭，触点部署默认进入被动安全模式：人工柜台优先、不记录儿童与脆弱人群数据、不推送个性化推荐、设备带可视物理关停开关、闸门与撤除通路随时可达。",
+        "default_when_unfunded_en": "If A-EXIT-001 remains unfunded, contact deployment defaults to passive-safety mode: staffed counter priority, no data capture for children or vulnerable groups, no personalised recommendation, devices carry a visible physical stop switch, gates and removal routes always reachable."
+      }
     },
     {
       "id": "A-PARTICIPATION-001",
