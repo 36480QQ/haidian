@@ -240,6 +240,27 @@
       "licence_reuse": "National standard; cited as a design basis only. No text of the standard is reproduced.",
       "usage": "Methodological reference for the service-radius coverage measurement (300 m / 500 m / 1000 m). The site is an industry and innovation belt rather than a single residential area, so the classification is used only as a radius reference, not as a residential-scale determination.",
       "verification_status": "identifier_verified;_url_reachability_not_confirmed"
+    },
+    {
+      "id": "LAW-PIPL-2021",
+      "standard_no": "中华人民共和国个人信息保护法 / Personal Information Protection Law of the PRC (PIPL)",
+      "title_zh": "中华人民共和国个人信息保护法",
+      "title_en": "Personal Information Protection Law of the People's Republic of China",
+      "publisher": "全国人民代表大会常务委员会 / Standing Committee of the National People's Congress",
+      "published_on": "2021-08-20",
+      "effective_on": "2021-11-01",
+      "source_type": "official_public",
+      "clearance_status": "document_level_verified",
+      "document_level": true,
+      "url": "https://www.gov.cn/",
+      "url_note": "The official full text page on gov.cn returned no response from this authoring environment (connection timeout, HTTP 000). The law is therefore registered by its official identifier (title, enacting authority, adoption and effective dates) rather than by a verified page URL. Reachability should be re-checked before external citation.",
+      "retrieved_on": "2026-08-29",
+      "status": "Registered by official identifier; page reachability not confirmed from this environment",
+      "supports_claims": "The legal basis for the personal-information lifecycle register in this proposal: data minimisation (art. 6); lawful bases including consent, contract and statutory duties (art. 13); withdrawal of consent (art. 15); deletion once the purpose is achieved or no longer necessary (art. 19); limits on disclosure (art. 25); special consent for sensitive information (art. 29); guardian consent and special rules for the personal information of minors under 14 (art. 31); access, copy, correction and deletion rights (arts. 45-47); security measures and compliance audits (art. 51); PIPIA for sensitive information and onward transfers (art. 55).",
+      "supporting_quote": "本法于 2021 年 8 月 20 日由第十三届全国人民代表大会常务委员会第三十次会议通过，自 2021 年 11 月 1 日起施行。（本条为法律名称与施行信息的登记，不复制法律条文正文。）",
+      "licence_reuse": "Law of the PRC; cited as the legal basis only. No statutory text is reproduced in the proposal; article numbers are cited as references for the register.",
+      "usage": "Legal basis column of the Personal Information Lifecycle Register; cited by article number only.",
+      "verification_status": "identifier_verified;_url_reachability_not_confirmed"
     }
   ],
   "source_type_legend": {
@@ -253,7 +274,7 @@
     "original_or_system_bundled_or_open_license": "Original work, or system-bundled font used as an embedded per-page glyph subset with a documented OFL replacement path, or OFL-licensed open-source font."
   },
   "clearance_status_legend": {
-    "approved_formal": "Document-level official source published by the issuing authority and registered as approved formal in the source-registry summary. In this package it applies to the official open-call announcement and repository-provided cleared task materials only; the six international city references are NOT approved formal sources and are registered as conceptual_reference_pending_source_verification.",
+    "approved_formal": "Document-level official source published by the issuing authority and registered as approved formal in the source-registry summary. In this package it applies to the official open-call announcement, the repository-provided cleared task materials, and the three national standards (GB 55019-2021, GB 50763-2012, GB 50180-2018). All entries in this package are registered at document_level_verified; no source is registered as conceptual_reference_pending_source_verification.",
     "conceptual_reference_pending_source_verification": "Citational concept reference not yet verified at document level. May inspire design direction but must not be cited as evidence for a specific programme claim, and must not be described as source-registry-approved.",
     "document_level_verified": "Document-level source: a specific page (not a portal home page) that was retrieved and read, with page title, publisher, publication/access date and a supporting passage recorded. Such a source may support the specific claim listed in its 'supports_claims' field and nothing beyond it."
   }
