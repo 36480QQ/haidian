@@ -1,35 +1,28 @@
 # Formal Narrative
 
-This narrative is derived from the structured AI package. Geometry, metrics, compliance matrix, drawings, and visual/index.html remain cross-checked deliverables.
+This evidence supplement is derived from the structured AI package. Geometry, metrics, compliance matrices, drawings and the visual index remain provisional concept deliverables; the package makes no approval, partnership, operational-performance or funding claim.
 
-# 场景卡清单 (scenario_cards)
+## Global AI ecosystem evidence
 
-本包定义了 12 张概念场景卡，覆盖交通/产业/空间/公共服务/文化/治理六域。表内机构均为建议责任角色，不表示已获授权、合作或实际调度权限。
-所有场景卡均为**概念建议**，非确定决策；执行前需复核官方数据与现场踏勘。
+The formal count is `global_case_count=5`. The five cases below are first-party records in `sources.json`; each record includes publisher, URL, publication date or undated status, access date, verified fact, citation/licence boundary, transferable mechanism and non-copy condition. The two background references C05/C06 and the station/space precedents are excluded from this count.
 
-| 编号 | 主题 | 所属域 | 触发条件 | 关键指标 | 责任主体 |
-|---|---|---|---|---|---|
-| SC-01 | 通勤潮汐仿真 | 交通 | 早高峰进出站刷卡 | 站台拥挤度、出站时间 | 京张铁路公司、海淀交通分局 |
-| SC-02 | AI 产业签约仪式 | 产业 | 新签 AI 总部 | 落地企业数、注册资本 | 海淀科委、属地街道 |
-| SC-03 | 节点共创工作坊 | 空间 | 周末社区召集 | 参与人数、产出方案 | 街道办、设计单位 |
-| SC-04 | 老年慢行评估 | 公共服务 | 老年人日常出行 | 步行距离、无障碍率 | 民政局、街道办 |
-| SC-05 | 校园 AI 开放日 | 文化 | 高校开放日 | 参与师生数 | 高校联盟、街道办 |
-| SC-06 | 公共议事日 | 治理 | 季度议事 | 提案数、采纳数 | 居委会、居民代表 |
-| SC-07 | 国际设计驻地 | 文化 | 驻地计划 | 驻地人数、作品数 | 文旅局、运营方 |
-| SC-08 | 应急韧性演练 | 治理 | 极端天气预警 | 启动时长、覆盖人数 | 应急管理局、街道办 |
-| SC-09 | 数据要素试算 | 产业 | 公共数据授权 | 数据集数、调用次数 | 海淀数据局、运营方 |
-| SC-10 | 儿童通学路径 | 公共服务 | 上下学时段 | 路径安全度 | 教委、家长代表 |
-| SC-11 | 夜跑/晨跑 | 公共服务 | 季节性运动 | 参与人数、投诉数 | 体育局、街道办 |
-| SC-12 | 媒体开放周 | 文化 | 媒体季 | 报道数、海外传播 | 宣传部、运营方 |
+| Case | First-party source | Verified fact | Local translation / non-copy boundary |
+|---|---|---|---|
+| C01 Helsinki AI Register | City of Helsinki; source URL and date status in `sources.json` | Public window into city AI systems with overview, detail and feedback; human control and resident permission are stated | Local register + feedback loop; local authority/privacy/accessibility review first; no Helsinki page, logo, records or governance claim copied |
+| C02 Dutch Government Algorithm Register | Government of the Netherlands; landing-page date not stated | Government algorithm information is published, with 1322 entries shown and an impact/high-risk focus | Local disclosure by impact and owner; do not import Dutch records, thresholds, law or compliance meaning |
+| C03 Singapore AI Verify | Singapore IMDA; fact sheet published 2022-06-01 | AI governance testing framework and toolkit MVP for objective, verifiable responsible-AI evidence | Local scenario test gates and human sign-off; not AI Verify/IMDA certification, tool, logo or partnership |
+| C04 UK AI Security Institute | UK DSIT / AISI; landing-page date not stated | State-backed AI-safety organisation covering research, infrastructure and risk-mitigation testing | Independent evaluation and stop/exit gate; no UK support, local partnership, safety certification or name/logo |
+| C07 NIST AI RMF 1.0 | U.S. NIST; published 2023-01-26 | Voluntary, rights-preserving, non-sector-specific and use-case-agnostic risk framework | Govern/Map/Measure/Manage review structure; no NIST compliance, certification or endorsement claim |
 
-# 行业测试协议清单 (industry_test_protocols)
+The mechanism map is `assets/figures/ai-ecosystem.png` and its English counterpart. It connects these evidence records to eight concept support conditions: land, space, industry, finance, talent, compute, data and scenarios. The arrows describe a proposed local translation—research, enterprise transfer, community use and public governance—not an existing ecosystem fact.
 
-本包列出 3 套行业测试协议，对应不同业态的接入与评估流程。
-所有协议均为**概念参考**，非行业标准；具体执行需由相应主管部门审定。
+## Concept scene and test evidence
 
-| 协议号 | 协议名 | 适用范围 | 评估维度 | 关键指标 | 责任主体 |
-|---|---|---|---|---|---|
-| ITP-01 | AI 场景准入测试 | AI 类场景落地 | 安全 / 隐私 / 可达性 | 准入通过率、复核频次 | 运营方 + 第三方 |
-| ITP-02 | 公共空间试点 | 街角/广场/绿道 | 步行穿越、停留时长 | 使用人数、满意率 | 街道办 + 运营方 |
-| ITP-03 | 数据要素接出测试 | 公共数据授权 | 脱敏、聚合、最小必要 | 接出通过率、异常率 | 海淀数据局 + 第三方 |
+The package contains 12 AI+ scene cards (S01–S12) and three industry test protocols (T01–T03). Each card records an input boundary, model or rule, output, human reviewer, suggested sample/threshold and stop condition. All sample sizes and thresholds are `to_verify`; no real population, sensor, emergency or performance data is claimed. The common safeguards are anonymous aggregates, data minimisation, human approval, manual fallback, public explanation, appeal and pause/exit.
+
+The three spatial nodes remain differentiated: Dual-Use Hall for staffed interchange and conversion control; Convertible Gallery for the linear slow-mode, storage and interface link; and Resilience Court for accessible community service, assisted communication and shelter-front functions. Locations and geometry remain provisional until official boundary, ownership, rail, fire, heritage, structure, utility and accessibility checks are complete.
+
+## Rights and reproducibility
+
+The complete path-level rights ledger is `report/copyright_statement.md`. It covers all figures and their bilingual pairs, PDFs, HTML embedded resources, font, geometry/data, code, working mark, source records and current-round Codex-generated material. Noto Sans SC uses the local font hash recorded in `sources.json` and the complete embedded OFL 1.1 proof in this allowed report file. No third-party image, map tile, screenshot or logo is embedded; any cited page content is citation-only.
 
