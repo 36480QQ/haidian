@@ -146,7 +146,6 @@
       "value": 12,
       "unit": "count",
       "source_files": [
-        "proposal.md",
         "proposal.md"
       ],
       "formula": "count(S01-S12 concept scene cards)",
@@ -179,14 +178,13 @@
     },
     "global_case_count": {
       "status": "known",
-      "value": 6,
+      "value": 2,
       "unit": "count",
       "source_files": [
-        "proposal.md",
         "sources.json"
       ],
-      "formula": "count(global ecosystem mechanism cases)",
-      "confidence": "high",
+      "formula": "count(sources where case_group == global_ai_ecosystem and counted_in_global_case_count == true)",
+      "confidence": "medium",
       "assumptions": []
     },
     "phase_count": {
