@@ -11,7 +11,8 @@
     "geometry_role": "provisional_constraint",
     "statement": "No official precise redline exists in the public site package. Every area and ratio below is computed from the provisional rough boundary and is a provisional measure only. These values must not be used as a statutory area basis, nor for approval, tendering, or investment decisions.",
     "planar_approximation": "M_PER_DEG_LAT=110540; M_PER_DEG_LON=111320*cos(39.98275). One documented constant pair is used for every derived area and length in this package.",
-    "recalculation_interface": "Replace geometry/site_boundary.geojson with the official geometry and re-run the recalculation; all derived metrics update without any change to the proposal text."
+    "recalculation_interface": "Replace geometry/site_boundary.geojson with the official geometry and re-run the recalculation; **derived metrics in metrics.json update automatically, but conclusions, project priorities, scenario-spatial-operation matrices, and any prose in proposal.md, HTML, PDFs, and figures must be re-reviewed and re-rendered by the professional team after the official data is released**. This interface does not cover narrative, conclusions, or human-value trade-offs.",
+    "manual_recheck_boundary": "Derived area/length/ratio metrics update on geometry replacement; conclusions, project priorities, and prose must be re-checked by the professional team, not auto-updated."
   },
   "metric_families": {
     "spatial": "Derived from the nine GeoJSON layers with a single documented planar approximation.",
@@ -264,7 +265,7 @@
       "official_basis": false,
       "recalculation_status": "not_required",
       "assumptions": [
-        "Counts the scenarios that reach industrial validation in the Dazhongsi cluster."
+        "Counts the three scenarios whose declared purpose is industrial validation (S02 low-speed device right-of-way, S06 compute tide, S10 open-scenario booking); their spatial anchor follows each scenario card's actual location, not a single cluster. See proposal.md scenarios table for each card's location."
       ]
     },
     "numbered_renewal_project_count": {

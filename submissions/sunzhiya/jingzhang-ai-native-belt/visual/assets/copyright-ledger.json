@@ -136,6 +136,16 @@
       "usage": "Submission content for the Centennial Jing-Zhang open call",
       "redistribution": "community-display-only",
       "evidence": "report/copyright_statement.md#9"
+    },
+    {
+      "asset": "Embedded webfont 'Noto Sans SC' (variable, subset)",
+      "type": "font",
+      "license": "SIL Open Font License 1.1",
+      "source": "https://fonts.google.com/noto/specimen/Noto+Sans+SC (bundled with Windows; upstream Google Noto CJK)",
+      "version": "upstream Noto Sans SC VF",
+      "usage": "Embedded as base64 woff2 in report/proposal.html, report/proposal.en.html, visual/index.html, visual/index.en.html for offline CJK rendering",
+      "redistribution": "Allowed under OFL 1.1 (font software, not Reserved Font Name violation; subset embedded)",
+      "status": "self-declared"
     }
   ]
 }

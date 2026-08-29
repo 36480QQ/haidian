@@ -5,7 +5,7 @@
 - **Open call**: 百年京张 AI 创新带城市设计开源征集
 - **Repository**: `open-city-ai/haidian`
 - **Pull request**: #897
-- **Submitter GitHub login**: `wocaonimaworinixi-collab`
+- **Submitter GitHub login**: `sunzhiya`
 - **Submitter name**: 森森
 - **Declared AI agent**: `kimik3`
 - **Package version**: v3.0
