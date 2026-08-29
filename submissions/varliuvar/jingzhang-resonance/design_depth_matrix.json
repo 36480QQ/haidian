@@ -506,7 +506,12 @@
       ],
       "current_reality_state": "AI 测试样本、负荷、管线、数据与运维条件未完成专业验证。",
       "participant_complete": false,
-      "completeness_limited_by": ["verified test environment", "data permission", "municipal capacity", "privacy, safety, and operations review"],
+      "completeness_limited_by": [
+        "verified test environment",
+        "data permission",
+        "municipal capacity",
+        "privacy, safety, and operations review"
+      ],
       "ai_review_structured_summary": {
         "sample_id": "S-T04-AI-TEST",
         "scenario_id": "T-04",
@@ -578,7 +583,12 @@
       ],
       "current_reality_state": "低扰动空间样本和 T-01 现场安全、无障碍、生态及运维复核尚未完成。",
       "participant_complete": false,
-      "completeness_limited_by": ["verified site conditions", "accessibility review", "ecology and safety review", "maintenance responsibility"],
+      "completeness_limited_by": [
+        "verified site conditions",
+        "accessibility review",
+        "ecology and safety review",
+        "maintenance responsibility"
+      ],
       "ai_review_structured_summary": {
         "sample_id": "S-LOW-DISTURBANCE-SPATIAL",
         "sample_type": "low_disturbance_spatial",
@@ -652,7 +662,12 @@
       ],
       "current_reality_state": "三处点位仍是研究表达；优先场景治理矩阵与参与者空间样本方法已完成，官方重点区边界、现场尺寸、许可和专业复核仍未完成。",
       "participant_complete": false,
-      "completeness_limited_by": ["official key-area polygons", "field survey", "site access", "safety, accessibility, and operator review"],
+      "completeness_limited_by": [
+        "official key-area polygons",
+        "field survey",
+        "site access",
+        "safety, accessibility, and operator review"
+      ],
       "external_dependencies": [
         "官方重点区 polygon 和真实场地条件",
         "场地、安全、无障碍和运营评审角色"
@@ -716,7 +731,13 @@
       ],
       "current_reality_state": "更新项目清单是概念级参与者建议，牵头角色、预算、许可、场地和运营责任未落实。",
       "participant_complete": false,
-      "completeness_limited_by": ["authorized lead role", "budget", "permit", "site access", "operations responsibility"],
+      "completeness_limited_by": [
+        "authorized lead role",
+        "budget",
+        "permit",
+        "site access",
+        "operations responsibility"
+      ],
       "external_dependencies": [
         "授权参与者和维护运营角色",
         "预算、许可、场地与实施条件"
@@ -780,7 +801,12 @@
       ],
       "current_reality_state": "分期是概念级参与者建议，决策角色、先决修复、预算、许可和验收责任未落实。",
       "participant_complete": false,
-      "completeness_limited_by": ["R01-R12 evidence", "authorized decision role", "budget and permits", "implementation acceptance responsibility"],
+      "completeness_limited_by": [
+        "R01-R12 evidence",
+        "authorized decision role",
+        "budget and permits",
+        "implementation acceptance responsibility"
+      ],
       "external_dependencies": [
         "R01-R12 的前置修复证据",
         "授权决策、实施和维护评审角色"
@@ -899,24 +925,58 @@
         "visual/assets/ai-review-layer.json",
         "visual/assets/asset-rights-ledger.json"
       ],
-      "current_reality_state": "权利台账与 AR-013 的 38 条逐组件记录已登记，10/10 独立 AI 双语机器复核、两处图文冲突修正及参与者模型声明已完成；AR-010 的 N01 页 13 瓦片拼接已由参与者自制抽象底板替换并从已交付派生物移除，AR-013 仍有 36 个组件缺少精确 provider/run，维护者工作流负责人工语义抽查与复评。AR-010 的 Esri 证据仅支持带署名的非商业 /export 静态派生图，不包含原始瓦片、离线底图包、自托管、商用或独立源图复用。",
+      "current_reality_state": "AR-013 已闭合为 34 条逐组件记录 / 22 个唯一块：32/20 对应六个 Tokai gpt-image-2 运行，2/2 对应第 14 页 Oskyi 运行；Tokai provider response ID 与服务条款归档不存在，保持 null，并由本地归档键、运行文件、哈希、变换和像素匹配支撑。第 13 页两处百度搜索裁切已替换并从派生物移除，第 15 页两处 Esri 组件已精确归入 AR-010。当前候选尚未由维护者复评。",
       "participant_complete": true,
-      "completeness_limited_by": ["maintainer human semantic spot-check and final maintainer QA are external review-process responsibilities, not missing participant artifacts", "official-register trademark review only before formal public-brand use"],
+      "completeness_limited_by": [
+        "maintainer human semantic spot-check and final maintainer QA are external review-process responsibilities, not missing participant artifacts",
+        "official-register trademark review only before formal public-brand use"
+      ],
       "ai_review_structured_summary": {
-        "score_total": 84,
-        "reviewed_baseline_sha256": "34aeb29893414ae9eeace69348abf21fc4addbc511abfb0b23efb1364ebb4b9a",
-        "previous_reviewed_baseline_score_total": 89,
-        "previous_reviewed_baseline_sha256": "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0",
+        "score_total": 88,
+        "reviewed_baseline_sha256": "5431dfdfd6e6fde1df6e68f66a48a737eef71eaf87abc38a8f57ef683bd68603",
+        "previous_reviewed_baseline_score_total": 84,
+        "previous_reviewed_baseline_sha256": "34aeb29893414ae9eeace69348abf21fc4addbc511abfb0b23efb1364ebb4b9a",
         "formal_review": false,
-        "repair_counts": {"complete": 13, "in_progress": 0, "external_dependency": 2, "not_started": 0},
-        "open_feedback_ids": ["F-20260825-01"],
-        "rights_root_gap_ids": ["AR-013"],
-        "rights_inherited_delivery_group_ids": ["AR-002", "AR-003", "AR-004", "AR-006", "AR-007"],
+        "repair_counts": {
+          "complete": 13,
+          "in_progress": 0,
+          "external_dependency": 2,
+          "not_started": 0
+        },
+        "open_feedback_ids": [
+          "F-20260825-01"
+        ],
+        "rights_root_gap_ids": [],
+        "rights_inherited_delivery_group_ids": [
+          "AR-002",
+          "AR-003",
+          "AR-004",
+          "AR-006",
+          "AR-007"
+        ],
         "conditional_public_brand_review_ids": [],
-        "publication_clearance": false,
-        "publication_state": "pending_visual_rights_reconciliation",
+        "publication_clearance": true,
+        "publication_state": "cleared_for_declared_scope_pending_maintainer_re_review",
         "rights_ledger_path": "visual/assets/asset-rights-ledger.json",
-        "manifest_registration_state": "finalized_with_r13_records_listed"
+        "manifest_registration_state": "finalized_with_r13_records_listed",
+        "reviewed_baseline_sha256_prefix": "5431dfdfd6e6",
+        "gate": "request_changes",
+        "historical_reviews": [
+          {
+            "score_total": 89,
+            "package_sha256": "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0"
+          },
+          {
+            "score_total": 84,
+            "package_sha256": "34aeb29893414ae9eeace69348abf21fc4addbc511abfb0b23efb1364ebb4b9a"
+          },
+          {
+            "score_total": 88,
+            "package_sha256": "5431dfdfd6e6fde1df6e68f66a48a737eef71eaf87abc38a8f57ef683bd68603"
+          }
+        ],
+        "candidate_review_state": "unreviewed",
+        "candidate_score_total": null
       },
       "external_dependencies": [
         "维护者人工语义抽查与最终 QA；正式品牌使用前的商标审查"

@@ -1,14 +1,18 @@
 {
   "schema_version": "1.0.0",
-  "recorded_at": "2026-08-28T19:10:00+08:00",
+  "recorded_at": "2026-08-29T00:00:00+08:00",
   "audience": "maintainer_ai_review",
   "source_ledger": "visual/assets/asset-rights-ledger.json",
-  "package_publication_state": "pending_visual_rights_reconciliation",
+  "package_publication_state": "cleared_for_declared_scope_pending_maintainer_re_review",
   "disposition_semantics": {
-    "cleared_with_evidence": "Retain only within the scope stated by the corresponding ledger evidence.",
+    "cleared_with_evidence": "Retain only within the scope stated by the corresponding ledger evidence. For AR-013 this means generation lineage plus participant limited-release authorization, not provider terms authorization.",
     "replaced_with_cleared_asset": "The shipped output must point to a documented replacement and its source/output hashes.",
     "excluded_from_public_package": "Not used for the current shipped set; retained only as a historical vocabulary value.",
-    "unresolved_pending_permission_or_replacement": "The asset remains in the review package but is not cleared for publication; provider permission, replacement, or removal is required."
+    "unresolved_pending_permission_or_replacement": "The asset remains in the review package but is not cleared for publication; provider permission, replacement, or removal is required.",
+    "ar013_evidence_scope": "generation_lineage_and_participant_limited_release_authorization",
+    "ar013_output_use_basis": "Participant-controlled inputs, reproducible local run evidence, exact shipped-component mapping, and participant authorization for this PR and noncommercial static community review only.",
+    "ar013_provider_terms_evidence": null,
+    "ar013_provider_terms_authorization_claimed": false
   },
   "decisions": [
     {
@@ -84,8 +88,8 @@
         "former_page": "13",
         "former_raster_sha256": "b80d5952832d6699804af2c26da2de08c65b0f73296753b50f0971b1624eb992",
         "replacement_asset_sha256": "b456ade7809f5ce2b602ad02163dfd0a7b76d1dc4e1f5e7a892d540e81592231",
-        "replacement_png_sha256": "8a3e0b1eb5e19f552c6b9aacbb50422935517552e2ca7308fea0bec1592b717f",
-        "replacement_clean_svg_sha256": "fcc40ce96bcb29bb43c43aec82ccddb21a333355f0f42b6265c30ad8c7e9504b",
+        "replacement_png_sha256": "6eb97eb2c91b704b1088c232fd3177a2849887a09bdb6c4b6814c8bbc7571ea9",
+        "replacement_clean_svg_sha256": "8f318818abab65e413e37e43509bce9a25e2d97d1baeb070e09162bd0fbcd944",
         "removed_raster_absent": true
       }
     },
@@ -106,40 +110,54 @@
     {
       "asset_group_id": "AR-013",
       "current_package_presence": true,
-      "public_disposition": "unresolved_pending_permission_or_replacement",
-      "implementation_status": "held_pending_exact_provider_run_mapping_and_final_derivative_reconciliation",
-      "blocking_dependency": "Exact provider/run evidence is available only for page-14 components and cover; reconcile remaining 36 component records and affected derivatives."
+      "public_disposition": "cleared_with_evidence",
+      "implementation_status": "component_lineage_complete_and_derivatives_reconciled",
+      "blocking_dependency": null,
+      "clearance_status": "cleared_for_participant_declared_noncommercial_review_scope_without_provider_terms_evidence",
+      "evidence_scope": "generation_lineage_and_participant_limited_release_authorization",
+      "output_use_basis": "Participant-controlled inputs, reproducible local run evidence, exact shipped-component mapping, and participant authorization for this PR and noncommercial static community review only.",
+      "provider_terms_evidence": null,
+      "provider_terms_authorization_claimed": false,
+      "commercial_or_standalone_reuse": false
     }
   ],
   "release_actions": [
     {
       "priority": 1,
-      "action": "Record the completed AR-010 page-13 replacement and retain Esri evidence only for the remaining attributed /export derivatives.",
-      "acceptance": "AR-010 is replaced_with_cleared_asset after the former page-13 tiled raster is absent from the shipped clean SVG/PNG/PDF derivatives; no raw tiles or offline package is shipped."
+      "action": "Retain the completed AR-010 replacement and exact page-15 Esri mappings with the current provider credit.",
+      "acceptance": "Former page-13 Baidu crops are absent; page-15 Esri components are exactly mapped; no raw tiles or offline basemap package is shipped."
     },
     {
       "priority": 2,
-      "action": "Hold AR-013 publication pending exact provider/run reconciliation for the 36 components without precise records.",
-      "acceptance": "The two page-14 components and cover retain exact Oskyi evidence; the other 36 records remain explicitly unknown until reconciled."
+      "action": "Retain AR-013 under the declared participant PR and noncommercial static-review scope.",
+      "acceptance": "34 records / 22 unique blocks are mapped as 32/20 Tokai plus 2/2 Oskyi; Tokai provider IDs and terms remain null rather than inferred."
     }
   ],
   "summary": {
     "decision_count": 13,
-    "cleared_with_evidence_group_count": 11,
+    "cleared_with_evidence_group_count": 12,
     "replaced_with_cleared_asset_group_count": 1,
     "excluded_from_public_package_group_count": 0,
-    "unresolved_current_package_group_count": 1,
-    "unresolved_current_package_group_ids": ["AR-013"],
+    "unresolved_current_package_group_count": 0,
+    "unresolved_current_package_group_ids": [],
     "current_package_excluded_but_physically_present_group_ids": [],
-    "root_publication_evidence_gap_count": 1,
-    "root_publication_evidence_gap_ids": ["AR-013"],
-    "inherited_delivery_group_ids": ["AR-002", "AR-003", "AR-004", "AR-006", "AR-007"],
-    "conditional_public_brand_review_ids": ["AR-005"],
-    "publishable_now": false,
-    "claim_boundary": "The package remains pending visual rights reconciliation because AR-013 still has an unresolved provenance gap. AR-010 is a documented replacement-cleared group: the former N01 page-13 tiled raster was removed and replaced with a participant-authored abstract base, while Esri evidence applies only to the remaining attributed /export derivatives. AR-013 has exact Oskyi evidence only for page-14 components and the cover derivative; the other 36 provider/run fields remain unknown. No raw-tile or offline-basemap redistribution, commercial use, standalone-source reuse, self-hosting, sublicensing, provider endorsement, legal approval, or statutory approval is claimed."
+    "root_publication_evidence_gap_count": 0,
+    "root_publication_evidence_gap_ids": [],
+    "inherited_delivery_group_ids": [
+      "AR-002",
+      "AR-003",
+      "AR-004",
+      "AR-006",
+      "AR-007"
+    ],
+    "conditional_public_brand_review_ids": [
+      "AR-005"
+    ],
+    "publishable_now": true,
+    "claim_boundary": "All asset groups are closed for the participant PR and noncommercial static-review scope. AR-013 cleared_with_evidence means complete generation lineage plus participant limited-release authorization only, not provider terms authorization; provider terms remain null and commercial or standalone reuse remains false. Maintainer re-review and broader publication remain separate."
   },
-  "clearance_complete": false,
-  "publication_clearance": false,
+  "clearance_complete": true,
+  "publication_clearance": true,
   "excluded_asset_groups": [],
-  "disposition_rule": "Eleven groups remain cleared within the declared limited scope. AR-010 is a documented replacement-cleared group; AR-013 remains unresolved_pending_permission_or_replacement until its stated provenance gap is reconciled."
+  "disposition_rule": "Twelve groups are cleared with evidence within the declared limited scope; AR-010 is replacement-cleared with exact retained Esri mappings. No unresolved current-package asset group remains."
 }

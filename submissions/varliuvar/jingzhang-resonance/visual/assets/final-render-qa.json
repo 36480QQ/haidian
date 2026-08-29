@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "recorded_on": "2026-08-28",
+  "recorded_on": "2026-08-29",
   "status": "participant_render_qa_complete",
   "post_remediation_recheck": {
     "completed": true,
@@ -19,7 +19,8 @@
       "all selected pages nonblank",
       "dependency-stage wording visible with no fixed-year claim",
       "mobility interfaces described as proposed rather than verified",
-      "AR-010 replacement credit and AR-013 pending-provenance boundary visible where applicable",
+      "AR-010 attribution and AR-013 34/22 mixed-provider boundary visible where applicable",
+      "INTERNAL RESEARCH / 内部研究 absent from repaired derivatives",
       "no observed clipping or overlap"
     ],
     "full_page_counts": {
@@ -43,7 +44,7 @@
     },
     "renderer": "Playwright Chromium 1228 headless local-file render",
     "font_source": "visual/assets/review-font.css",
-    "font_codepoint_coverage": "Noto Sans SC subset covers 881/881 unique CJK codepoints across the four final HTML files; shared CSS linkage checked in both proposal HTML files and both visualization indexes",
+    "font_codepoint_coverage": "Noto Sans SC subset covers 888/888 unique CJK codepoints across the four final HTML files; shared CSS linkage checked in both proposal HTML files and both visualization indexes",
     "visual_checks": [
       "no missing-glyph boxes",
       "no incoherent overlap",
@@ -51,7 +52,7 @@
       "AI review layer remains visually separated from human content"
     ],
     "preview_contact_sheet": "local QA evidence only; not shipped in the submission",
-    "browser_status": "pass_playwright_chromium_1228_1440x1600_and_390x844_2026-08-28",
+    "browser_status": "pass_existing_layout_plus_current_font_coverage_audit_2026-08-29",
     "browser_qa_evidence": "local participant QA report .superpowers/sdd/2026-08-27-jingzhang-score-repair-plan/browser_visual_qa-report.md; report and screenshots are not shipped"
   },
   "pdf": {
@@ -80,9 +81,9 @@
     "font_audit": "visual/assets/pdf-font-audit.json",
     "rendering_tradeoff": "Image-only PDF export removes runtime font dependency, but text is not searchable or selectable.",
     "visual_checks": [
-      "page counts verified with pdfinfo",
+      "page counts verified for all four PDFs",
       "font-independent image-only rendering recorded in pdf-font-audit.json",
-      "claim-boundary/provider-credit wording retained for AR-010 replacement credit and AR-013 pending provenance"
+      "Esri credit and repaired R2 source wording retained; AR-013 pending-provenance wording removed"
     ],
     "compression_qa": {
       "a3_zh": {
@@ -119,5 +120,5 @@
     "manual_contact_sheet_check": "pass"
   },
   "artifact_hash_authority": "manifest.json",
-  "claim_boundary": "Participant visual QA checks rendering and layout only. Independent translation review, accessibility certification, professional approval, and rights clearance remain separate."
+  "claim_boundary": "Participant visual QA checks rendering and layout. Rights clearance is recorded separately in the asset ledger; independent translation, accessibility, professional admission, and maintainer publication decisions remain separate."
 }

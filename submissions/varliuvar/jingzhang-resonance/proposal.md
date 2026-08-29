@@ -336,7 +336,7 @@ AI 只取得限时、限地、可撤销的使用许可。
 
 ## 风险、版权与合规说明
 
-本次提交已确认：`author_github=varliuvar` 同时是 PR 作者、最终人类提交者和设计署名；AI 协作者、运行角色与生成分工见 `agent.json` 和 `visual/assets/brand-model-provenance.json`。AR-013 的 38 个生成或编辑组件已按可用证据强度登记工作流、日期、输入权利、编辑、输出哈希和复用边界，未知的精确 provider/run 不作推断。AR-010 已核验 Esri World Imagery 的公开图层元数据、Esri Master License Agreement、官方静态出版说明和引用要求。包内仅发布带注记的非商业静态派生图，不发布原始瓦片、离线底图包或可独立复用的源图；当前来源署名和适用边界见 `visual/assets/asset-rights-ledger.json`。
+本次提交已确认：`author_github=varliuvar` 同时是 PR 作者、最终人类提交者和设计署名；AI 协作者、运行角色与生成分工见 `agent.json` 和 `visual/assets/brand-model-provenance.json`。AR-013 已闭合为 34 条生成或编辑组件记录 / 22 个唯一嵌入块：其中 32/20 对应六个 Tokai gpt-image-2 运行，2/2 对应第 14 页 Oskyi 运行；Tokai 响应没有 provider response ID 或服务条款归档，相关字段如实保持 null，并由本地归档键、运行文件、哈希、变换与像素匹配支撑。AR-010 已核验 Esri World Imagery 的公开图层元数据、Esri Master License Agreement、官方静态出版说明和引用要求。包内仅发布带注记的非商业静态派生图，不发布原始瓦片、离线底图包或可独立复用的源图；当前来源署名和适用边界见 `visual/assets/asset-rights-ledger.json`。
 
 上述结论由 V13 终检成果、节点完整附件和风险清单共同支撑 [source:V13-ANALYSIS] [source:NODE-ARCHIVE] [depth:risk_missing_data]。
 

@@ -2,10 +2,27 @@
   "schema_version": "1.0.0",
   "audience": "maintainer_ai_review",
   "purpose": "Reviewer navigation and explicit participant-controlled repair evidence only.",
-  "reviewed_baseline_sha256": "34aeb29893414ae9eeace69348abf21fc4addbc511abfb0b23efb1364ebb4b9a",
-  "prior_reviewed_baseline": {
-    "score_total": 89,
-    "package_sha256": "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0"
+  "review_history": [
+    {
+      "score_total": 89,
+      "package_sha256": "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0",
+      "historical": true
+    },
+    {
+      "score_total": 84,
+      "package_sha256": "34aeb29893414ae9eeace69348abf21fc4addbc511abfb0b23efb1364ebb4b9a",
+      "historical": true
+    },
+    {
+      "score_total": 88,
+      "package_sha256": "5431dfdfd6e6fde1df6e68f66a48a737eef71eaf87abc38a8f57ef683bd68603",
+      "historical": true,
+      "latest_historical": true
+    }
+  ],
+  "latest_historical_review": {
+    "score_total": 88,
+    "package_sha256": "5431dfdfd6e6fde1df6e68f66a48a737eef71eaf87abc38a8f57ef683bd68603"
   },
   "human_layer_policy": {
     "proposal_body_rewrite_allowed": false,
@@ -24,152 +41,156 @@
     "manifest_listed": true,
     "claim_boundary": "The AI review layer, its current evidence, and the R13 gate-record files are manifest-listed; registration does not imply maintainer approval, rights clearance, professional review, or publication authorization."
   },
-  "formal_review_gate": {
-    "review_state": "request_changes",
+  "current_candidate": {
+    "review_state": "unreviewed",
     "formal_review": false,
-        "score_total": 84,
-        "previous_reviewed_baseline_score_total": 89,
+    "score_total": null,
     "score_max": 100,
-    "score_status": "latest_reviewed_baseline_not_recalculated_after_round_2_repairs",
-    "publication_state": "pending_visual_rights_reconciliation",
+    "score_status": "not_scored_after_repairs",
+    "package_state": "ready_for_maintainer_re_review",
+    "publication_state": "cleared_for_declared_scope_pending_maintainer_re_review",
     "participant_remediation_status": {
       "repository_self_check": "pass_can_enter_formal_review_true",
       "ai_review_layer_check": "pass",
       "repair_state_counts": {
         "complete": 13,
         "in_progress": 0,
-          "external_dependency": 2,
+        "external_dependency": 2,
         "not_started": 0
       },
       "participant_controlled_submission_work": "complete_for_declared_noncommercial_static_publication_scope",
       "maintainer_re_review_required": true,
-      "publication_clearance": false
+      "publication_clearance": true
     },
     "gate_owner_role_type": "maintainer_reviewer",
     "institution_status": "unknown",
-    "claim_boundary": "The 84/100 request-changes result is the latest historical reviewed baseline and the previous 89/100 review is retained; neither is recalculated for the current worktree. Participant records preserve the remaining AR-013 evidence gap; AR-010 is documented as replacement-cleared within scope. These records cannot replace a maintainer re-review, formal jury decision, planning approval, or publication decision."
+    "claim_boundary": "The repaired current candidate is unreviewed and has no score. Its limited participant-controlled rights clearance and ready-for-maintainer-re-review package state do not constitute maintainer re-review, formal professional review, legal or statutory approval, commercial-use authorization, or authorization to redistribute source assets independently."
   },
-  "rubric_dimensions": [
-    {
-      "id": "brief_alignment",
-      "score": 5,
-      "score_max": 5,
-      "participant_re_review_target": 5,
-      "findings": [
-        "The latest review awarded 5/5: the three-scope structure, Jing-Zhang public-space spine, three key areas, agent.1-agent.6 coverage, and regional relationship boundaries are explicit and evidence-linked, while official boundary precision remains provisional."
-      ],
-      "evidence": [
-        "compliance_matrix.json",
-        "design_depth_matrix.json"
-      ],
-      "boundaries": [
-        "Coverage records do not prove official boundary accuracy or authority acceptance."
-      ]
-    },
-    {
-      "id": "originality",
-      "score": 5,
-      "score_max": 5,
-      "participant_re_review_target": 5,
-      "re_review_case": "The three voices are not a naming layer: the weakest-item rule, AI-not-a-fourth-voice rule, and admission-pause-exit-retest cycle form one recognizable system across brand, spatial structure, 14 scenario cards, governance records, and long-term operation. This concept-to-rule-to-space-to-operation continuity is the exceptional evidence requested for 5/5 re-review.",
-      "findings": [
-        "The latest review awarded 5/5 for the distinctive three-voice framework, weakest-item rule, and the rule that AI is not a fourth voice. Those ideas are operationalized through admission, pause, exit, and retest mechanisms rather than used as a visual metaphor only."
-      ],
-      "evidence": [
-        "visual/index.html",
-        "visual/index.en.html"
-      ],
-      "boundaries": [
-        "Logo registration and publication clearance are conditional brand and rights matters. They do not reduce the originality of the already evidenced concept and operating mechanism; each rubric dimension should be calibrated independently."
-      ]
-    },
-    {
-      "id": "ai_planning_innovation",
-      "score": 5,
-      "score_max": 5,
-      "participant_re_review_target": 5,
-      "findings": [
-        "AI scenarios are linked to spatial, operational, and governance questions rather than treated only as imagery."
-      ],
-      "evidence": [
-        "compliance_matrix.json",
-        "design_depth_matrix.json"
-      ],
-      "boundaries": [
-        "No scenario is represented as deployed, validated, procured, or institutionally endorsed."
-      ]
-    },
-    {
-      "id": "implementation_feasibility",
-      "score": 4,
-      "score_max": 5,
-      "participant_re_review_target": 5,
-      "score_status": "latest_reviewed_baseline_not_recalculated_after_round_2_repairs",
-      "findings": [
-        "The latest review awarded 4/5: dependency-led phasing, location-time-boundary-exit gates, role types, measurable indicators, reversible samples, and explicit external data and operator dependencies are present. Formal geometry, permissions, and site/operator evidence remain outside the participant package."
-      ],
-      "evidence": [
-        "visual/assets/bilingual-equivalence.json",
-        "visual/assets/final-render-qa.json",
-        "design_depth_matrix.json"
-      ],
-      "boundaries": [
-        "The two cited inconsistencies are closed in participant-controlled artifacts. Organizer-missing official geometry and later site/operator permissions are explicitly non-scoring conditions under the repository rubric; concept feasibility is not represented as engineering approval."
-      ]
-    },
-    {
-      "id": "public_interest_inclusion",
-      "score": 5,
-      "score_max": 5,
-      "participant_re_review_target": 5,
-      "findings": [
-        "Public access, older people, safety, ecology, and explainability are visible priorities."
-      ],
-      "evidence": [
-        "visual/index.html",
-        "compliance_matrix.json"
-      ],
-      "boundaries": [
-        "Participant groups have not been documented as consulted or consenting."
-      ]
-    },
-    {
-      "id": "risk_compliance",
-      "score": 3,
-      "score_max": 5,
-      "participant_re_review_target": 5,
-      "score_status": "reviewed_baseline_not_recalculated",
-      "findings": [
-        "The latest historical review awarded 3/5 because AR-010 map/satellite rights, AR-013 generated-component lineage, and final attribution were unresolved in that reviewed package. Current records document the completed AR-010 page-13 replacement; 36 AR-013 components still have unknown exact provider/run. Only retained attributed /export derivatives have Esri static-publication evidence."
-      ],
-      "evidence": [
-        "visual/assets/asset-rights-ledger.json",
-        "visual/assets/asset-clearance-disposition.json",
-        "visual/assets/brand-model-provenance.json"
-      ],
-      "boundaries": [
-        "The AR-010 clearance is scope-limited: it covers only the attributed static-map derivatives in this participant PR and noncommercial community-review package. It does not claim permission for raw-tile redistribution, offline basemap packages, self-hosting, commercial use, standalone source reuse, provider endorsement, or statutory approval."
-      ]
-    },
-    {
-      "id": "expression_completeness",
-      "score": 4,
-      "score_max": 5,
-      "participant_re_review_target": 5,
-      "score_status": "reviewed_baseline_not_recalculated",
-      "findings": [
-        "The latest review awarded 4/5 after the trusted bilingual gate passed and the supplied Chinese and English previews showed consistent, readable counterparts. The remaining required repairs concern rights, downstream consistency, and attribution rather than a new narrative or visual-design rewrite."
-      ],
-      "evidence": [
-        "visual/assets/bilingual-equivalence.json",
-        "visual/assets/pdf-font-audit.json",
-        "visual/assets/final-render-qa.json"
-      ],
-      "boundaries": [
-        "Participant-controlled bilingual and rendering work is complete. Repository policy assigns semantic human spot-checking and publication approval to the maintainer workflow; absence of participant-provided certified translation is not a listed intake deliverable. Independent AI review is not mislabeled as human or certified approval."
-      ]
-    }
-  ],
+  "historical_84_review_snapshot": {
+    "score_total": 84,
+    "package_sha256": "34aeb29893414ae9eeace69348abf21fc4addbc511abfb0b23efb1364ebb4b9a",
+    "rubric_dimensions": [
+      {
+        "id": "brief_alignment",
+        "score": 5,
+        "score_max": 5,
+        "participant_re_review_target": 5,
+        "findings": [
+          "The latest review awarded 5/5: the three-scope structure, Jing-Zhang public-space spine, three key areas, agent.1-agent.6 coverage, and regional relationship boundaries are explicit and evidence-linked, while official boundary precision remains provisional."
+        ],
+        "evidence": [
+          "compliance_matrix.json",
+          "design_depth_matrix.json"
+        ],
+        "boundaries": [
+          "Coverage records do not prove official boundary accuracy or authority acceptance."
+        ]
+      },
+      {
+        "id": "originality",
+        "score": 5,
+        "score_max": 5,
+        "participant_re_review_target": 5,
+        "re_review_case": "The three voices are not a naming layer: the weakest-item rule, AI-not-a-fourth-voice rule, and admission-pause-exit-retest cycle form one recognizable system across brand, spatial structure, 14 scenario cards, governance records, and long-term operation. This concept-to-rule-to-space-to-operation continuity is the exceptional evidence requested for 5/5 re-review.",
+        "findings": [
+          "The latest review awarded 5/5 for the distinctive three-voice framework, weakest-item rule, and the rule that AI is not a fourth voice. Those ideas are operationalized through admission, pause, exit, and retest mechanisms rather than used as a visual metaphor only."
+        ],
+        "evidence": [
+          "visual/index.html",
+          "visual/index.en.html"
+        ],
+        "boundaries": [
+          "Logo registration and publication clearance are conditional brand and rights matters. They do not reduce the originality of the already evidenced concept and operating mechanism; each rubric dimension should be calibrated independently."
+        ]
+      },
+      {
+        "id": "ai_planning_innovation",
+        "score": 5,
+        "score_max": 5,
+        "participant_re_review_target": 5,
+        "findings": [
+          "AI scenarios are linked to spatial, operational, and governance questions rather than treated only as imagery."
+        ],
+        "evidence": [
+          "compliance_matrix.json",
+          "design_depth_matrix.json"
+        ],
+        "boundaries": [
+          "No scenario is represented as deployed, validated, procured, or institutionally endorsed."
+        ]
+      },
+      {
+        "id": "implementation_feasibility",
+        "score": 4,
+        "score_max": 5,
+        "participant_re_review_target": 5,
+        "score_status": "latest_reviewed_baseline_not_recalculated_after_round_2_repairs",
+        "findings": [
+          "The latest review awarded 4/5: dependency-led phasing, location-time-boundary-exit gates, role types, measurable indicators, reversible samples, and explicit external data and operator dependencies are present. Formal geometry, permissions, and site/operator evidence remain outside the participant package."
+        ],
+        "evidence": [
+          "visual/assets/bilingual-equivalence.json",
+          "visual/assets/final-render-qa.json",
+          "design_depth_matrix.json"
+        ],
+        "boundaries": [
+          "The two cited inconsistencies are closed in participant-controlled artifacts. Organizer-missing official geometry and later site/operator permissions are explicitly non-scoring conditions under the repository rubric; concept feasibility is not represented as engineering approval."
+        ]
+      },
+      {
+        "id": "public_interest_inclusion",
+        "score": 5,
+        "score_max": 5,
+        "participant_re_review_target": 5,
+        "findings": [
+          "Public access, older people, safety, ecology, and explainability are visible priorities."
+        ],
+        "evidence": [
+          "visual/index.html",
+          "compliance_matrix.json"
+        ],
+        "boundaries": [
+          "Participant groups have not been documented as consulted or consenting."
+        ]
+      },
+      {
+        "id": "risk_compliance",
+        "score": 3,
+        "score_max": 5,
+        "participant_re_review_target": 5,
+        "score_status": "reviewed_baseline_not_recalculated",
+        "findings": [
+          "The latest historical review awarded 3/5 because AR-010 map/satellite rights, AR-013 generated-component lineage, and final attribution were unresolved in that reviewed package. Current records document the completed AR-010 page-13 replacement; 36 AR-013 components still have unknown exact provider/run. Only retained attributed /export derivatives have Esri static-publication evidence."
+        ],
+        "evidence": [
+          "visual/assets/asset-rights-ledger.json",
+          "visual/assets/asset-clearance-disposition.json",
+          "visual/assets/brand-model-provenance.json"
+        ],
+        "boundaries": [
+          "The AR-010 clearance is scope-limited: it covers only the attributed static-map derivatives in this participant PR and noncommercial community-review package. It does not claim permission for raw-tile redistribution, offline basemap packages, self-hosting, commercial use, standalone source reuse, provider endorsement, or statutory approval."
+        ]
+      },
+      {
+        "id": "expression_completeness",
+        "score": 4,
+        "score_max": 5,
+        "participant_re_review_target": 5,
+        "score_status": "reviewed_baseline_not_recalculated",
+        "findings": [
+          "The latest review awarded 4/5 after the trusted bilingual gate passed and the supplied Chinese and English previews showed consistent, readable counterparts. The remaining required repairs concern rights, downstream consistency, and attribution rather than a new narrative or visual-design rewrite."
+        ],
+        "evidence": [
+          "visual/assets/bilingual-equivalence.json",
+          "visual/assets/pdf-font-audit.json",
+          "visual/assets/final-render-qa.json"
+        ],
+        "boundaries": [
+          "Participant-controlled bilingual and rendering work is complete. Repository policy assigns semantic human spot-checking and publication approval to the maintainer workflow; absence of participant-provided certified translation is not a listed intake deliverable. Independent AI review is not mislabeled as human or certified approval."
+        ]
+      }
+    ]
+  },
   "repair_register": [
     {
       "id": "R01",
@@ -353,7 +374,7 @@
       "id": "F-20260825-01",
       "review_source": "maintainer_ai_review_full_pdf",
       "dimension_id": "expression_completeness",
-      "feedback_summary": "The latest historical review scored 84/100; the previous review scored 89/100. Neither score is recalculated for the current worktree. The review requests four participant-side actions before formal professional review: resolve AR-010 map/satellite rights component by component; complete AR-013 generated-component lineage at available evidence strength; refresh all affected derivatives and records consistently; and reconcile varliuvar with the final human and AI collaborator credits.",
+      "feedback_summary": "This feedback belongs to the historical 84/100 package snapshot (SHA-256 34aeb29893414ae9eeace69348abf21fc4addbc511abfb0b23efb1364ebb4b9a), following the historical 89/100 snapshot. It is retained as provenance and is not a score or decision for the current candidate. The review requested four participant-side actions before formal professional review: resolve AR-010 map/satellite rights component by component; complete AR-013 generated-component lineage at available evidence strength; refresh all affected derivatives and records consistently; and reconcile varliuvar with the final human and AI collaborator credits.",
       "requested_action": "Keep the human narrative frozen. Preserve the completed AR-013 component register, package-consistency records, and varliuvar attribution. Resolve AR-010 with provider permission or a cleared visual replacement before claiming publication clearance.",
       "human_narrative_change_required": false,
       "status": "open",
@@ -365,7 +386,7 @@
         "visual/assets/final-gates.json",
         "visual/assets/final-render-qa.json"
       ],
-      "resolution_note": "The human narrative remains frozen. AR-013 has 38 component-level records at the available evidence strength; downstream records and hashes are refreshed; varliuvar is consistently recorded as PR author, final human submitter, and design signatory, with declared AI roles. AR-010 now records the Esri license, official static-publication and citation guidance, current provider credit, shipped component mappings, and the exclusion of raw tiles and offline basemap packages. All participant-controlled repairs are complete within the declared scope; maintainer re-review remains pending."
+      "resolution_note": "The human narrative remains frozen. AR-013 has 34 component records / 22 unique blocks: Tokai 32/20 plus Oskyi page 14 2/2. Tokai provider_response_id and provider_terms_evidence remain null, with local_archive_key stored separately. The former page-13 Baidu blocks are replaced, and both page-15 blocks are exactly mapped to AR-010. Participant-controlled repairs and limited-scope clearance are complete; the current candidate remains unreviewed with no score and maintainer re-review remains pending."
     }
   ],
   "regional_collaboration": {
@@ -585,20 +606,28 @@
     "claim_boundary": "Independent AI review passes the corrected English counterparts and all participant-controlled bilingual artifacts are complete. The machine-review addendum remains an audit trail, not a human, certified, official, legal, planning, or publication approval; repository policy assigns the human semantic spot-check to the maintainer workflow."
   },
   "rights_summary": {
-    "status": "inventory_complete_declared_scope_clearance_pending",
+    "status": "declared_scope_clearance_complete_ready_for_maintainer_re_review",
     "asset_ledger_complete": true,
-    "clearance_complete": false,
-    "affected_current_package_group_ids": ["AR-013"],
-    "root_publication_evidence_gap_count": 1,
-    "root_publication_evidence_gap_ids": ["AR-013"],
-    "publication_clearance": false,
+    "clearance_complete": true,
+    "affected_current_package_group_ids": [],
+    "root_publication_evidence_gap_count": 0,
+    "root_publication_evidence_gap_ids": [],
+    "publication_clearance": true,
     "scope": "Participant PR and noncommercial static-publication/community-review scope; maintainer re-review remains pending",
     "evidence_paths": [
       "visual/assets/asset-rights-ledger.json",
       "visual/assets/asset-clearance-disposition.json",
       "visual/assets/brand-model-provenance.json"
     ],
-    "claim_boundary": "AR-013 has component records but exact provider/run mapping is unavailable for 36 components. AR-010 is replacement-cleared within scope: the N01 tiled capture was removed from shipped derivatives and replaced with a participant-authored abstract base; Esri evidence covers only retained attributed /export derivatives. No raw-tile or offline-basemap redistribution, commercial use, standalone-source reuse, self-hosting, sublicensing, provider endorsement, legal approval, statutory approval, or maintainer publication decision is claimed."
+    "claim_boundary": "AR-013 generation provenance is reconciled for 34 records / 22 unique blocks. cleared_with_evidence means lineage evidence plus participant authorization for this PR and noncommercial static community review only; it does not mean provider terms authorization. Tokai provider IDs and terms remain null, and commercial use, standalone-source redistribution, provider endorsement, broader publication rights, maintainer re-review, formal professional review, and legal or statutory approval are not claimed.",
+    "ar013_clearance_semantics": {
+      "status": "cleared_for_participant_declared_noncommercial_review_scope_without_provider_terms_evidence",
+      "evidence_scope": "generation_lineage_and_participant_limited_release_authorization",
+      "output_use_basis": "Participant-controlled inputs, reproducible local run evidence, exact shipped-component mapping, and participant authorization for this PR and noncommercial static community review only.",
+      "provider_terms_evidence": null,
+      "provider_terms_authorization_claimed": false,
+      "commercial_or_standalone_reuse": false
+    }
   },
   "claim_boundary": "Participant-authored review navigation; not official approval, field evidence, institutional commitment, budget, procurement, or implementation permission."
 }

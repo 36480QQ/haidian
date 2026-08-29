@@ -8,7 +8,7 @@
 
 附件含 Tokai、Oskyi、GPT-image 等生成或编辑图。它们统一按“视觉意向 / 研究表达 / 非现状 / 非测绘 / 非法定方案”使用，不得描述为现场摄影、测绘成果、已建方案或政府批准方案。
 
-逐资产或资产组盘点已经写入 `visual/assets/asset-rights-ledger.json`。AR-013 共登记 38 个生成或编辑组件；每项均保留工作流角色、批次或日期、输入权利、编辑记录、输出哈希、复用边界和证据强度。仅页 14 的两个组件及其封面派生图具有精确的 Oskyi、gpt-image-2、prompt、输入、输出、run 和成品像素映射证据；其余 36 个组件没有精确 provider/run，保持 `unknown`/`null`，不从目录名或模型角色声明推断。模型名称只表示来源谱系，不构成权利证据。
+逐资产或资产组盘点已经写入 `visual/assets/asset-rights-ledger.json`。AR-013 共登记 34 条生成或编辑组件记录 / 22 个唯一嵌入块：32/20 精确映射到六个 Tokai gpt-image-2 运行，2/2 精确映射到第 14 页 Oskyi 运行。Tokai 归档没有 provider response ID 和服务条款文件，因此相应字段保持 `null`，另以本地归档键、response/preflight/metadata/image 哈希、脚本变换和像素匹配记录支撑；不把本地键冒充服务商 ID，也不把参与者发布范围冒充服务商条款。
 
 ## 第三方与公开资料
 
@@ -18,7 +18,7 @@
 
 机器评审专用记录分为三份：`asset-rights-ledger.json` 负责来源、创作者角色、许可、工具、变换和哈希；`asset-clearance-disposition.json` 负责公开处置；`brand-model-provenance.json` 负责品牌、模型与现有 run 证据。公开处置使用 `cleared_with_evidence`、`replaced_with_cleared_asset`、`excluded_from_public_package` 和 `unresolved_pending_permission_or_replacement`；未知项不会写成已清权。
 
-本次评审包已完成资产盘点，并保留 AR-010 的随包 Esri 证据与 AR-013 的真实 Oskyi 运行记录；AR-010 的 N01 页 13 瓦片拼接已替换为参与者自制抽象底板，当前唯一根权利缺口是 AR-013 其余 36 个组件的精确 provider/run。当前 `package_publication_state` 为 `pending_visual_rights_reconciliation`，`publication_clearance=false`；在 AR-013 证据闭合前不恢复可发布状态。维护者复评与更广范围的发布决定仍独立进行。
+本次候选包已闭合 R1/R2：第 13 页两处百度图片搜索裁切已由参与者自制矢量抽象表达替换并从当前派生物移除；第 15 页两处 Esri 组件已按哈希精确归入 AR-010；AR-013 已完成 34/22 的混合服务商证据映射。`package_publication_state=cleared_for_declared_scope_pending_maintainer_re_review`、`publication_clearance=true` 仅适用于本 PR 与非商业静态社区评审范围，不表示商业清权、专业评审准入、维护者批准或更广范围发布授权。
 
 ## 提交许可
 

@@ -73,7 +73,7 @@
       "checked_on": "2026-08-27",
       "required_attribution": "Esri, Vantor, Earthstar Geographics, and the GIS User Community",
       "evidence_index_path": "visual/assets/esri-evidence-index.json",
-      "evidence_index_sha256": "a94ab8a521f05718d361f1d05a59a97c826fd1301d99ff04672534bf20409a44",
+      "evidence_index_sha256": "7f10c28907610ecde23f188bca004f14486558bed879873b09ca7247504ec1ed",
       "evidence_snapshots": [
         {
           "path": "visual/assets/esri-world-imagery-item-20260827.json",
@@ -94,8 +94,8 @@
         "former_page": "assets/analysis-18/jingzhang_analysis_v13_pilot_13_dazhongsi.png",
         "former_raster_sha256": "b80d5952832d6699804af2c26da2de08c65b0f73296753b50f0971b1624eb992",
         "replacement_asset_sha256": "b456ade7809f5ce2b602ad02163dfd0a7b76d1dc4e1f5e7a892d540e81592231",
-        "replacement_clean_svg_sha256": "fcc40ce96bcb29bb43c43aec82ccddb21a333355f0f42b6265c30ad8c7e9504b",
-        "replacement_png_sha256": "8a3e0b1eb5e19f552c6b9aacbb50422935517552e2ca7308fea0bec1592b717f",
+        "replacement_clean_svg_sha256": "8f318818abab65e413e37e43509bce9a25e2d97d1baeb070e09162bd0fbcd944",
+        "replacement_png_sha256": "6eb97eb2c91b704b1088c232fd3177a2849887a09bdb6c4b6814c8bbc7571ea9",
         "removed_raster_absent": true
       },
       "scope_boundary": "The snapshots support the retained /export-derived static maps. The former N01 page-13 tiled-service capture has been removed from shipped derivatives and replaced with a participant-authored abstract base. The evidence does not authorize raw-tile redistribution, offline basemap packages, self-hosting, commercial use, standalone source reuse, sublicensing, or provider endorsement.",
@@ -110,11 +110,11 @@
       "manifest_listed": true,
       "usage": "Participant-authored reviewer navigation and remediation register only; not maintainer endorsement, design prose, source authority, institutional commitment, approval, or publication authorization.",
       "ai_review_input_summary": {
-        "reviewed_baseline_sha256_prefix": "34aeb2989341",
+        "reviewed_baseline_sha256_prefix": "5431dfdfd6e6",
         "gate": "request_changes",
         "formal_review": false,
-        "score_total": 84,
-        "previous_reviewed_baseline_score_total": 89,
+        "score_total": 88,
+        "previous_reviewed_baseline_score_total": 84,
         "dimension_ids": [
           "brief_alignment",
           "originality",
@@ -156,7 +156,33 @@
         "deepened_sample_ids": [
           "S-LOW-DISTURBANCE-SPATIAL",
           "S-T04-AI-TEST"
-        ]
+        ],
+        "reviewed_baseline_sha256": "5431dfdfd6e6fde1df6e68f66a48a737eef71eaf87abc38a8f57ef683bd68603",
+        "previous_reviewed_baseline_sha256": "34aeb29893414ae9eeace69348abf21fc4addbc511abfb0b23efb1364ebb4b9a",
+        "historical_reviews": [
+          {
+            "score_total": 89,
+            "package_sha256": "53ae6be5a3787ab225f187d6d39342cddbd6db6343d5558eb99d7a06a12fedb0"
+          },
+          {
+            "score_total": 84,
+            "package_sha256": "34aeb29893414ae9eeace69348abf21fc4addbc511abfb0b23efb1364ebb4b9a"
+          },
+          {
+            "score_total": 88,
+            "package_sha256": "5431dfdfd6e6fde1df6e68f66a48a737eef71eaf87abc38a8f57ef683bd68603"
+          }
+        ],
+        "candidate_review_state": "unreviewed",
+        "candidate_score_total": null,
+        "publication_clearance": true,
+        "publication_state": "cleared_for_declared_scope_pending_maintainer_re_review",
+        "ar013_component_record_count": 34,
+        "ar013_unique_block_count": 22,
+        "ar013_tokai_record_count": 32,
+        "ar013_tokai_unique_block_count": 20,
+        "ar013_oskyi_record_count": 2,
+        "ar013_oskyi_unique_block_count": 2
       }
     },
     {
@@ -167,25 +193,39 @@
       "usage": "Asset-or-group inventory for R06 covering shipped text/data, V13 sheets, core and English figures, PDFs, cover, fonts, code dependencies, map/satellite components, street-view/category checks, case imagery, logo/trademark status, and generated visuals.",
       "clearance_summary": {
         "asset_ledger_complete": true,
-        "clearance_complete": false,
-        "root_publication_evidence_gap_count": 1,
-        "root_publication_evidence_gap_ids": [
-          "AR-013"
-        ],
-        "publication_clearance": false,
-        "publication_state": "pending_visual_rights_reconciliation",
+        "clearance_complete": true,
+        "root_publication_evidence_gap_count": 0,
+        "root_publication_evidence_gap_ids": [],
+        "publication_clearance": true,
+        "publication_state": "cleared_for_declared_scope_pending_maintainer_re_review",
         "scope": "Participant PR and noncommercial static-publication/community-review scope"
       },
-      "claim_boundary": "AR-010 is replacement-cleared within the declared scope: the former N01 page-13 tiled capture was removed from shipped derivatives and replaced with a participant-authored abstract base. AR-013 has exact Oskyi mapping only for the two page-14 components and cover derivative; the remaining 36 provider/run fields are unknown. No raw-tile/offline-basemap redistribution, commercial use, standalone-source reuse, model-name-based rights claim, or legal approval is implied."
+      "claim_boundary": "AR-013 is closed at 34 records / 22 unique blocks for participant-authorized PR and noncommercial static community review. cleared_with_evidence means generation lineage plus participant limited-release authorization, not provider terms authorization; Tokai provider IDs and terms remain null, and commercial/standalone reuse remains false.",
+      "ar013_clearance_semantics": {
+        "status": "cleared_for_participant_declared_noncommercial_review_scope_without_provider_terms_evidence",
+        "evidence_scope": "generation_lineage_and_participant_limited_release_authorization",
+        "output_use_basis": "Participant-controlled inputs, reproducible local run evidence, exact shipped-component mapping, and participant authorization for this PR and noncommercial static community review only.",
+        "provider_terms_evidence": null,
+        "provider_terms_authorization_claimed": false,
+        "commercial_or_standalone_reuse": false
+      }
     },
     {
       "id": "ASSET-CLEARANCE-DISPOSITION",
       "path": "visual/assets/asset-clearance-disposition.json",
       "source_type": "participant_generated_release_boundary",
       "ownership": "participant_generated",
-      "usage": "R07 disposition record documenting the completed AR-010 replacement and holding only AR-013 pending provenance reconciliation while retaining the other eleven group decisions.",
-      "publication_state": "pending_visual_rights_reconciliation",
-      "claim_boundary": "Publication clearance is withheld only for AR-013; AR-010 is replacement-cleared within its declared scope. Maintainer re-review and any broader publication decision remain separate."
+      "usage": "R07 disposition record documenting completed limited-scope decisions for all asset groups, including AR-013 generation lineage plus participant limited-release authorization.",
+      "publication_state": "cleared_for_declared_scope_pending_maintainer_re_review",
+      "claim_boundary": "All groups are closed only for the declared participant PR and noncommercial static-review scope. AR-013 clearance does not claim provider terms authorization, commercial reuse, or standalone-source redistribution.",
+      "ar013_clearance_semantics": {
+        "status": "cleared_for_participant_declared_noncommercial_review_scope_without_provider_terms_evidence",
+        "evidence_scope": "generation_lineage_and_participant_limited_release_authorization",
+        "output_use_basis": "Participant-controlled inputs, reproducible local run evidence, exact shipped-component mapping, and participant authorization for this PR and noncommercial static community review only.",
+        "provider_terms_evidence": null,
+        "provider_terms_authorization_claimed": false,
+        "commercial_or_standalone_reuse": false
+      }
     },
     {
       "id": "BRAND-MODEL-PROVENANCE",
@@ -193,8 +233,16 @@
       "source_type": "participant_generated_provenance_register",
       "ownership": "participant_generated",
       "usage": "R12 register for the working brand, declared agent/model role groups, and existing Tokai/Oskyi/GPT-image/OSM/Esri evidence at its actual verification strength.",
-      "publication_state": "pending_visual_rights_reconciliation",
-      "claim_boundary": "Only the two page-14 components and cover derivative have exact Oskyi mapping. The remaining 36 component provider/run fields are explicitly unknown, and model names are not rights evidence."
+      "publication_state": "cleared_for_declared_scope_pending_maintainer_re_review",
+      "claim_boundary": "AR-013 records 32/20 Tokai components and 2/2 Oskyi page-14 components. Tokai provider response IDs and provider terms are absent and remain null; reproducible local archive keys, hashes, transforms, and pixel matches are recorded without inference.",
+      "ar013_clearance_semantics": {
+        "status": "cleared_for_participant_declared_noncommercial_review_scope_without_provider_terms_evidence",
+        "evidence_scope": "generation_lineage_and_participant_limited_release_authorization",
+        "output_use_basis": "Participant-controlled inputs, reproducible local run evidence, exact shipped-component mapping, and participant authorization for this PR and noncommercial static community review only.",
+        "provider_terms_evidence": null,
+        "provider_terms_authorization_claimed": false,
+        "commercial_or_standalone_reuse": false
+      }
     },
     {
       "id": "NOTO-SANS-SC-OFL",
