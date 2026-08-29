@@ -1,5 +1,11 @@
 # 方案迭代记录 / Iteration Changelog
 
+## v4.6 award refinement: reversible field kit and handover - 2026-08-29
+
+**Material and handover scale.** A participant-authored, non-site-specific field-kit material study now sits alongside the three Phase 1 concept perspectives. It makes five reversible conceptual components readable at an intermediate scale: a light shade frame, movable stay module, physical information marker, removable safety buffer, and tactile/human-handover interface. The paired bilingual proposal and offline visual also expose five blank templates for future authorised parties to release, observe, run, stop/reroute and close out one bounded exercise.
+
+**Evidence boundary unchanged.** The new image, templates and offline walkthrough are neither construction drawings nor proof of existing components, dimensions, accessibility, permission, budget, procurement, named operations, maintenance, implementation or Verified SLA. They supply a future handover language only: blank, expired, missing or unauditable records retain HOLD; a stop decision takes priority over a test or AI suggestion.
+
 ## v4.6 offline CJK report repair - 2026-08-29
 
 **Required readability repair.** The two required report HTML files again load the project-local OFL-licensed CJK font before their system fallbacks. The embedded WOFF2 has been regenerated from the four current bilingual HTML deliverables, so the report title, summary, body, figure captions, evidence labels and the English-page Chinese return link remain readable in a network-free environment without a system Chinese font.

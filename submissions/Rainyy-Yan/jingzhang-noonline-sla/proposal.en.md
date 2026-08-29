@@ -163,6 +163,14 @@ V4.5 condenses the abstract relationships of the three key areas into three visi
 
 The three views and table do not raise any Verified SLA or approve a Phase 1 pilot, construction or operation. They only let a future authorised team review one bounded exercise and hand it over using the same spatial, evidence and stop language.
 
+### V4.6 field kit and handover pack: material and close-out scale for reversibility
+
+V4.6 adds one non-site-specific, non-engineering field-kit view to supply the intermediate scale between the three eye-level perspectives: a light shade frame, movable stay module, physical information marker, removable safety buffer, and tactile/human-handover interface. It expresses how navy frames, warm timber, pale shade and low buffers can support a public clearway, no-device path and human stop authority. It supplies no dimensions, bill of quantities, performance claim, supplier, site position or technical conclusion.[source:DESIGN-VISUAL-V4_6] [data:visual/assets/v4_6-reversible-field-kit-and-handover.json#concept_kit]
+
+![Noonline SLA conceptual reversible field kit: shade frame, movable stay module, physical information, removable buffer and tactile or human-handover interface; non-site-specific and non-engineering](assets/media/v4_6-reversible-field-kit.png)
+
+The same pack provides five **blank** templates for a future authorised party to complete: pre-activation release, public-clearway and no-device-path check, bounded exercise run sheet, stop/downgrade/reroute decision, and removal-to-baseline close-out. They make an auditable sequence from authorised records to human verification, bounded exercise, immediate stop and return-to-baseline. Any blank, expired, missing or unauditable field retains HOLD; neither AI nor this concept image can fill the gap.[data:visual/assets/v4_6-reversible-field-kit-and-handover.json#blank_handover_templates]
+
 
 **Target SLA** is the intended design grade. **Verified SLA** is the grade current evidence can support. The Engine result remains: SLA-A = B, SLA-B = C and SLA-C = C. Missing any critical item among field-verified shade continuity, continuous exposure, real node location, water/seat state, public entry, key crossing, summer detour and human-service hours blocks promotion to A [data:visual/assets/noonline-sla-report.json#routes].
 

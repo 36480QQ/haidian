@@ -171,6 +171,14 @@ V4.5 将三个重点区的抽象关系进一步压缩为三张“看得见、可
 
 三张图与表不提高任何 Verified SLA，也不构成对 Phase 1 试点、施工或运营的批准；它们只是让未来授权团队可以用同一套空间、证据与停止语言审查一次有限演练并完成移交。
 
+### V4.6 原型构件与交接包：把可逆性画到材料与结项尺度
+
+V4.6 增加一张非现场、非工程的可逆构件图，补足三张人视图之间的中间尺度：轻型遮阴框架、可移动停留模块、实体信息标记、可拆安全缓冲，以及触觉与人工交接界面。它表达的是深蓝、暖木、浅色遮阴和低位缓冲如何共同服务公共清晰带、无设备路径和人工停止，而不提供尺寸、清单、性能、供货、现场位置或技术结论。[source:DESIGN-VISUAL-V4_6] [data:visual/assets/v4_6-reversible-field-kit-and-handover.json#concept_kit]
+
+![Noonline SLA 可逆构件与材料概念图：遮阴框架、移动停留、实体信息、可拆缓冲与触觉/人工交接界面，非现场、非工程表达](assets/media/v4_6-reversible-field-kit.png)
+
+同一交接包还提供五张**空白**模板，留给未来授权主体填写：启用前放行、公共清晰带与无设备路径核验、有限演练运行、停止/降级/改线决定，以及撤场归零结项。它们把“收到授权记录 → 人类核验 → 有边界演练 → 触发即停止 → 清场并归档”连成可审计序列；任何空白、过期、缺失或不可审计字段都维持 HOLD，不能由 AI 或这张概念图补足。[data:visual/assets/v4_6-reversible-field-kit-and-handover.json#blank_handover_templates]
+
 
 **Target SLA** 是设计希望达到的等级；**Verified SLA** 是当前证据可以支持的等级。当前 Engine 结果保持：SLA-A = B、SLA-B = C、SLA-C = C。缺少现场遮阴连续性、连续暴晒、真实节点位置、饮水/座椅状态、公共入口、关键过街、夏季绕行和人工服务时段中的任一关键项，都不得自动升级到 A [data:visual/assets/noonline-sla-report.json#routes]。
 
