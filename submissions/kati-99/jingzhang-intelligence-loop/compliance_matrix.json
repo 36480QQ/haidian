@@ -546,7 +546,13 @@
         "VISUAL_STATIC"
       ],
       "compliance_status": "provisional",
-      "provisional_note": "本要求涉及控规/重点区官方控制参数（FAR、高度、密度、红线、权属等），因官方控规与权属条件未发布，本包以方法、图层、指标、图纸与 HTML 表达对应深度，具体管控数值保持 unknown 或 pending_control，不得作为审定结论。"
+      "provisional_note": "本要求涉及控规/重点区官方控制参数（FAR、高度、密度、红线、权属等），因官方控规与权属条件未发布，本包以方法、图层、指标、图纸与 HTML 表达对应深度，具体管控数值保持 unknown 或 pending_control，不得作为审定结论。",
+      "implementation_evidence": [
+        "投资估算与资金渠道（相对量级，非预算/非报价）",
+        "实施前置条件矩阵",
+        "分期验收标准与可核查交付物",
+        "实施风险登记表"
+      ]
     },
     {
       "requirement_id": "1.5.2.3",
@@ -1109,6 +1115,9 @@
         "SCN-08-DATA",
         "SCN-09-LIFE",
         "SCN-10-WEEK"
+      ],
+      "privacy_evidence": [
+        "个人信息生命周期登记（场景 05/07/09/10 与儿童到离校）"
       ]
     },
     {
@@ -1175,6 +1184,11 @@
         "SCN-08-DATA",
         "SCN-09-LIFE",
         "SCN-10-WEEK"
+      ],
+      "inclusion_evidence": [
+        "无障碍与包容性设计依据（国家标准）",
+        "服务半径与覆盖度测算（直线距离近似，待补录后重算）",
+        "分人群需求—载体—供给—核验指标对应表"
       ]
     },
     {
@@ -1287,7 +1301,7 @@
     }
   ],
   "review_stage_note": "本包 23 项需求响应状态：1.3.* 与 agent.* 为 addressed（结构、章节、证据完整）；1.4.* 与 1.5.* 为 provisional（因官方控规、重点区与权属条件未发布，本包以方法、图层、指标、图纸、HTML 表达对应深度，管控数值待官方发布后重算）。本表的 addressed 状态不表示已取得官方审定，仅表示在当前提交包内有可追溯证据。 场景卡逐卡结构化记录见 scenario_cards 子表（SCN-01 至 SCN-10），由 agent.3/agent.4 的 scenario_card_ids 专属引用；中关村科技服务翼与小月河场景赋能翼已作为章节回填 agent.1/agent.2。",
-  "generated_at": "2026-08-28T22:26:31+08:00",
+  "generated_at": "2026-08-29T11:55:18+08:00",
   "public_feedback": {
     "description": "公众参与反馈登记子表。每条反馈按 (scenario, feedback, responsible, response_deadline) 四元组登记；回复时限 <= 15 日，涉及安全/隐私/歧视风险的由海淀区与独立顾问 7 日内评估并决定是否暂停场景节点。当前为征集阶段占位，实施期真实反馈条目在此追加。",
     "schema": [
