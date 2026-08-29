@@ -18,4 +18,10 @@
 - Changed manifest data confidence from high to mixed and scoped it to structural/package validation; spatial and operational claims remain provisional, low, medium or unknown/to_verify.
 - Regenerated bilingual figures and A0/A3 drawings after the English layout correction; HTML font embedding and manifest hashes are refreshed after rendering.
 
+## 2026-08-29 — CocoSgt 5057513241 remediation round
+
+- Unified the structured primary brand to `PAR·JZ`: corrected `A-RIGHTS-001`, the agent.1/agent.5 logo traceability paths, and the rights ledger so every package reference resolves to the manifest-registered `assets/figures/logo-parjz.png`.
+- Closed the source traceability loop by removing the unsupported `SOURCE-REGISTRY` and `PROCESSED-FACT-PACK` labels from all source-id arrays in `compliance_matrix.json`, `standard_matrix.json`, and `design_depth_matrix.json`; the remaining source IDs resolve to canonical records in `sources.json`, with `unresolved_source_ids` empty.
+- Refreshed manifest hashes and persisted the passing four-gate self-check; no drawings or rendered bilingual surfaces required regeneration because the repair changed only structured traceability and rights metadata.
+
 This package is intended for review and community discussion only. It is not a statutory plan, approval, procurement, investment or construction document.
