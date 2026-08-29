@@ -278,9 +278,11 @@ AI 技术协议（概念）：模型评测采用公开基准测试并与任务�
 
 | 指标 | 数据口径与公式 | 置信等级 | 用途限制 | 复算触发 |
 | --- | --- | --- | --- | --- |
-| site_area_sqm | geometry/site_boundary.geojson 多边形面积（EPSG:4548） | 中 | 概念示意，不作审批依据 | 官方几何发布 |
-| green_ratio | green_space.geojson 面积 ÷ site_area | 低 | 概念示意，不作审批依据 | 官方绿线数据 |
-| public_space_ratio | public_space.geojson 面积 ÷ site_area | 低 | 概念示意，不作审批依据 | 官方用地数据 |
+| site_area_sqm | geometry/site_boundary.geojson 多边形面积（EPSG:4548）；机器值仅供复算，面向人显示“约 11.4 km²（参与者临时模型）” | 低 | 概念示意，不作审批依据，不得展示机器精确面积 | 官方几何与边界发布后复算 |
+| green_ratio | green_space.geojson 面积 ÷ site_area；面向人显示“约 11%（参与者临时模型）” | 低 | 概念示意，不作审批依据 | 官方绿线与边界发布后复算 |
+| public_space_ratio | public_space.geojson 面积 ÷ site_area；面向人显示“约 0.3%（参与者临时模型）” | 低 | 概念示意，不作审批依据 | 官方用地与边界发布后复算 |
+
+面向公众的统一口径是：**约 11.4 km²（参与者临时模型）**；机器精确值仍保存在 `metrics.json`，仅用于几何复算与差异检测，不得作为精确面积展示。三项核心指标的来源分别为 `geometry/site_boundary.geojson`、`geometry/green_space.geojson`、`geometry/public_space.geojson` 及其共同边界；公式、警示和 `recompute_trigger` 同步登记在 `metrics.json`。组织方发布正式边界、绿线或用地数据后，由责任人保留旧版本、记录新源版本与 SHA，按同一公式复算并重新生成图件、HTML、PDF、PNG 和 manifest 哈希。
 
 ### 过程观测指标（参与机制运行观测；每项均为可测指标名称）
 
@@ -301,7 +303,7 @@ AI 技术协议（概念）：模型评测采用公开基准测试并与任务�
 
 ### 面积复算口径
 
-三项 formal 核心指标的复算值以本包 geometry 为准，属参与者临时模型数据，不宣称权威数据；面积与官方公告三层范围口径一致（按公告自算、非官方核发）；显示均降精度（约 11.4 km²、0.11、0.3% 等），官方数据发布后整体复算并标注复算版本。
+三项 formal 核心指标的机器复算值以本包 geometry 为准，属参与者临时模型数据，不宣称权威数据；面积与官方公告三层范围口径一致（按公告自算、非官方核发）。面向人、图件、HTML 和 PDF 统一显示“约 11.4 km²（参与者临时模型）”、 “约 11%（参与者临时模型）”和“约 0.3%（参与者临时模型）”；机器精确值只保留在 `metrics.json` 供复算。正式几何、绿线或用地数据发布即触发整体复算、警示更新和版本留痕。
 
 ### 复算触发与版本管理
 
@@ -327,7 +329,7 @@ AI 治理三句底线贯穿全程：仅匿名聚合、关键决策人工复核�
 | Logo | 参与智环 PAR·JZ 标识 | 自研（参与者） | 概念阶段、社区展示 | 未完成商标检索（内部工作代号） |
 | Logo | 议题协作厅 Z1／证据核验站 Z2／分享公示廊 Z3 节点名 | 自研（参与者） | 概念阶段、社区展示 | 未完成商标检索（内部工作代号） |
 | Logo | 议事公约机制名 | 自研（参与者） | 概念阶段、社区展示 | 未完成商标检索（内部工作代号） |
-| 字体 | `NotoSansSC-Static.ttf`，Noto Sans SC Regular；Version 2.04;241114210130;non-release；SHA-256 `628654215a32e94c84f830237918dab66d74e73d303349e16aa921f3f29809d9` | 本地字体文件；上游 Noto 通常以 OFL-1.1 发布，但本包未附上游许可原文，许可状态为 `to_verify` | HTML 内嵌 subset；PDF/PNG 使用本机 Matplotlib 字体注册 | 不声称已完成字体授权清查；以 `report/copyright_statement.md` 为准 |
+| 字体 | `NotoSansSC-Static.ttf`，Noto Sans SC Regular；Version 2.04;241114210130;non-release；SHA-256 `628654215a32e94c84f830237918dab66d74e73d303349e16aa921f3f29809d9` | 字体 name table 含 SIL OFL-1.1 通知与 OFL URL；完整原文、官方来源、取得方式、嵌入位置与复用边界均保留于 `report/copyright_statement.md`；精确上游 revision `unknown/to_verify` | 四个离线 HTML 以 WOFF data URI 内嵌；PNG/PDF 均由同一 TTF 渲染 | 包内证据链已闭合至该 SHA；不声称法律意见、未保留的上游 revision 或超出本包范围的再分发权 |
 | 图标 / 图像素材 | 圆点、矩形、箭头、路线线、图例色块、北箭头/比例提示等 | 参与者自产的默认几何符号；未取用第三方图标库 | 概念图件与图例 | 2026-08-29 由 `regen_3889_visuals.py` 生成；不主张第三方图标权 |
 | PAR·JZ / Z1–Z3 名称与标识 | “参与智环 / PAR·JZ”“议题协作厅 / Z1”“证据核验站 / Z2”“分享公示廊 / Z3” | 内部工作代号、参与者自产文字与几何 logo | 方案识别与概念展示 | 2026-08-29 做了包内/仓库/分支近似检索；未做商标数据库、域名或法律清查，不主张在先权或官方背书 |
 | 生成图与版式 | 全部 PNG、A0/A3 PDF、HTML 版式 | 作者：JohnXu22786 / Codex 直接生成；日期：2026-08-29；工具：Python、Matplotlib、Pillow、仓库渲染脚本；模型：无生成式模型，确定性重绘 | 竞赛包审阅、离线预览、社区讨论 | 无第三方图片、远程 CDN、外部模型输出或未登记素材；不得拆分为官方宣传资产 |

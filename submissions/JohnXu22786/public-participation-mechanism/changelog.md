@@ -1,11 +1,17 @@
 # 方案迭代记录
 
+## v2.4.0 - 2026-08-29 (Codex round: CocoSgt 84 font and precision blockers)
+
+- Closed the package-level Noto Sans SC evidence chain: retained the complete OFL-1.1 text, linked the local binary family/version/SHA-256 to official Noto references and the repository-local obtaining method, and recorded the four HTML embedding surfaces plus PNG/PDF rendering basis. The exact upstream revision remains `unknown/to_verify`; no legal authorization is invented.
+- Unified human-facing core-metric labels to `约 11.4 km²（参与者临时模型）`, `约 11%（参与者临时模型）`, and `约 0.3%（参与者临时模型）` (English equivalents in the English package). Machine values remain only for recomputation, all three confidence values are `low`, and source/formula/warning/recompute triggers are synchronized in metrics.json.
+- Regenerated bilingual metric figures, A0/A3 drawings, report HTML, offline previews and manifest hashes. This round addresses review 5056795026 P0 requests; it does not assert CocoSgt approval.
+
 ## v2.3.0 - 2026-08-29 (Codex round: CocoSgt 81 feedback)
 
 - `sources.json` now records a dated retrieval, exact page title/publisher, evidence location, summary and reuse boundary for `SRC-GLOBAL-CASE-01..06`. Cases 01, 02 and 06 were downgraded to `no_research_question_only` because the retrieved page/path or claimed termination evidence was not verifiable; 03, 04 and 05 remain direct-page `mechanism_reference_only` references with no inferred publication date or outcome claim.
 - Replaced the incomplete rights note in `report/copyright_statement.md` and both proposal ledgers with exact Noto Sans SC family/version/SHA-256, `to_verify` license provenance, author/date/tool/model for generated figures, participant-drawn symbol inventory, PAR·JZ/Z1–Z3 internal-codename status, dated approximate-search limitation, and package-only reuse boundaries.
 - Patched `regen_3889_visuals.py` so the land-use figure visibly carries all eight labels and ratios, including `交通运输用地 5%` / `留白用地（弹性） 5%` and `Transport 5%` / `Flexible reserve 5%`; regenerated bilingual figures and A0/A3 boards, re-rendered report HTML, and synchronized both visual indexes.
-- Manifest hashes and `self_check.json` are refreshed only after the above derived artifacts were regenerated. This round does not assert CocoSgt approval; the latest official result known before push remains review 5056510589, 81/100 CHANGES_REQUESTED.
+- Manifest hashes and `self_check.json` are refreshed only after the above derived artifacts were regenerated. That historical round did not assert CocoSgt approval; the subsequent official result addressed in v2.4.0 is review 5056795026, 84/100 CHANGES_REQUESTED.
 
 ## v0.1.0 - 2026-08-24
 

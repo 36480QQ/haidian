@@ -269,6 +269,34 @@
    "license": "cite-only reference reuse of public law facts"
   },
   {
+   "source_id": "ASSET-FONT-NOTO-SANS-SC",
+   "title": "Noto Sans SC / Noto CJK font family and SIL Open Font License 1.1",
+   "publisher": "Noto CJK project / Google Fonts; license by SIL Open Font License",
+   "source_kind": "font_provenance",
+   "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+   "official_project_url": "https://github.com/notofonts/noto-cjk",
+   "published_date": "not stated for the local build input",
+   "accessed_date": "2026-08-29",
+   "file_type": "font_and_license",
+   "authority_level": "A1",
+   "timeliness_level": "T2",
+   "public_access_status": "public_official_reference_plus_local_build_input",
+   "license_summary": "The local TTF name table carries the SIL OFL 1.1 notice and OFL URL; the complete OFL text is retained in report/copyright_statement.md.",
+   "review_status": "verified_binary_metadata_license_text_retained_exact_upstream_revision_unknown",
+   "usable_for_formal": "package_rendering_only",
+   "allowed_uses": [
+    "embedded WOFF subsets and participant-rendered PNG/PDF/HTML in this package"
+   ],
+   "prohibited_uses": [
+    "standalone font resale",
+    "claiming exact upstream repository revision or legal clearance beyond the recorded evidence"
+   ],
+   "evidence_location": "refs/fonts/NotoSansSC-Static.ttf name records: family Noto Sans SC, version 2.04;241114210130;non-release, SIL OFL 1.1 notice and http://scripts.sil.org/OFL; source SHA-256 628654215a32e94c84f830237918dab66d74e73d303349e16aa921f3f29809d9; provenance and complete license at report/copyright_statement.md.",
+   "obtaining_method": "Read-only repository-local build input at refs/fonts/NotoSansSC-Static.ttf; no standalone binary was added to the submission.",
+   "reuse_boundary": "Use is limited to this package's offline review surfaces; exact upstream revision remains unknown/to_verify.",
+   "license": "SIL Open Font License 1.1; complete text retained in report/licenses/OFL-1.1.txt"
+  },
+  {
    "source_id": "SRC-GLOBAL-CASE-01",
    "title": "Smart Nation Singapore (official programme homepage; strategy page not verified)",
    "publisher": "Smart Nation and Digital Government Office, Singapore",

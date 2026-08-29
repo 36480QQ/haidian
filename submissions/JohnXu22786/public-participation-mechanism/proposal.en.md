@@ -276,9 +276,11 @@ The concept indicator system is an observation-caliber set without hard targets;
 
 | Metric | Data caliber and formula | Confidence | Use limit | Recompute trigger |
 | --- | --- | --- | --- | --- |
-| site_area_sqm | polygon area of geometry/site_boundary.geojson (EPSG:4548) | medium | concept display only, not an approval basis | official geometry release |
-| green_ratio | green_space area / site_area | low | concept display only | official green-line data |
-| public_space_ratio | public_space area / site_area | low | concept display only | official land-use data |
+| site_area_sqm | polygon area of geometry/site_boundary.geojson (EPSG:4548); machine value is for recomputation only, human display is “about 11.4 km² (participant provisional model)” | low | concept display only; never display the machine area as precise | official geometry and boundary release |
+| green_ratio | green_space area / site_area; human display is “about 11% (participant provisional model)” | low | concept display only | official green-line and boundary release |
+| public_space_ratio | public_space area / site_area; human display is “about 0.3% (participant provisional model)” | low | concept display only | official land-use and boundary release |
+
+The single public-facing caliber is: **about 11.4 km² (participant provisional model)**. The machine value remains in `metrics.json` only for geometry recomputation and difference detection; it must not be presented as a precise area. Sources are `geometry/site_boundary.geojson`, `geometry/green_space.geojson`, `geometry/public_space.geojson` and their shared provisional boundary. Formula, warning and `recompute_trigger` are synchronized in `metrics.json`. When the organizer releases official geometry, green-line or land-use data, the accountable owner preserves the prior version, records the new source version and SHA, recomputes with the same formula, and regenerates figures, HTML, PDF, PNG and manifest hashes.
 
 ### Process-observation indicators (operational observation of the mechanism; each row is a measurable indicator name)
 
@@ -299,7 +301,7 @@ The concept indicator system is an observation-caliber set without hard targets;
 
 ### Area recalculation caliber
 
-The three formal core metrics are recomputed from this package's geometry — participant provisional model data, not claimed as authoritative; areas are consistent with the official three-tier scopes (self-computed per the announcement, not officially issued); all displays are reduced-precision (about 11.4 km2, 0.11, 0.0032, etc.), with a full recompute and version note when official data are published.
+The three formal core metrics are machine-recomputed from this package's geometry — participant provisional model data, not claimed as authoritative; areas are consistent with the official three-tier scopes (self-computed per the announcement, not officially issued). Human-facing text, figures, HTML and PDF use the synchronized labels “about 11.4 km² (participant provisional model)”, “about 11% (participant provisional model)” and “about 0.3% (participant provisional model)”; precise machine values remain only in `metrics.json` for recomputation. Official geometry, green-line or land-use release triggers a full recomputation, warning update and version record.
 
 ### Recompute trigger and version management
 
@@ -325,7 +327,7 @@ Three governance sentences run through the whole package: only anonymized aggreg
 | Logo | PAR-JZ Participation Ring mark | self-developed (participant) | concept stage, community display | trademark search not completed (internal working codename) |
 | Logo | Z1 Issue Collaboration Hall / Z2 Evidence Verification Station / Z3 Sharing and Publicity Gallery node names | self-developed (participant) | concept stage, community display | trademark search not completed (internal working codename) |
 | Logo | Deliberation Covenant mechanism name | self-developed (participant) | concept stage, community display | trademark search not completed (internal working codename) |
-| Font | `NotoSansSC-Static.ttf`, Noto Sans SC Regular; Version 2.04;241114210130;non-release; SHA-256 `628654215a32e94c84f830237918dab66d74e73d303349e16aa921f3f29809d9` | local font file; upstream Noto is commonly distributed under OFL-1.1, but this package does not include the upstream license text, so license remains `to_verify` | subset embedded in HTML; registered for Matplotlib PDF/PNG rendering | no claim of completed font clearance; see `report/copyright_statement.md` |
+| Font | `NotoSansSC-Static.ttf`, Noto Sans SC Regular; Version 2.04;241114210130;non-release; SHA-256 `628654215a32e94c84f830237918dab66d74e73d303349e16aa921f3f29809d9` | the font name table carries the SIL OFL 1.1 notice and URL; complete text, official source, obtaining method, embedding locations and reuse boundary are retained at `report/copyright_statement.md`; exact upstream revision is `unknown/to_verify` | WOFF data-URI subsets embedded in all four offline HTML surfaces; PNG/PDF rendered from the same TTF | package-level evidence chain is closed to this SHA; no legal opinion, unretained upstream revision or out-of-package redistribution right is claimed |
 | Icons / image elements | dots, rectangles, arrows, route lines, legend swatches, north/scale cues | participant-drawn default geometric symbols; no third-party icon library | concept figures and legends | generated 2026-08-29 by `regen_3889_visuals.py`; no third-party icon rights claimed |
 | PAR·JZ / Z1–Z3 names and marks | “参与智环 / PAR·JZ”, “Issue Collaboration Hall / Z1”, “Evidence Verification Station / Z2”, “Sharing and Publicity Gallery / Z3” | internal working codenames and participant-made text/geometric logo | concept identification and display | dated 2026-08-29 approximate search across package/repository/branch; no trademark database, domain or legal clearance; no prior-right or endorsement claim |
 | Generated figures and layout | all PNG, A0/A3 PDFs and HTML layout | author: JohnXu22786 / Codex direct; date: 2026-08-29; tools: Python, Matplotlib, Pillow and repository renderers; model: none, deterministic rendering | competition review, offline preview and community discussion | no third-party images, remote CDN, external model output or unregistered asset; not an official promotional asset |
