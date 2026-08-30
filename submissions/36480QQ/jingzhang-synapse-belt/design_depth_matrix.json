@@ -9,94 +9,341 @@
   "items": [
     {
       "item_id": "existing_conditions_diagnosis",
-      "depth_level": "conceptual_recommendation",
-      "gap": "概念定位清晰，缺法定上位规划对接文本",
-      "next_step_to_formal": "补充上位规划对接章节"
+      "professional_dimension": "现状诊断/场地分析",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §1.1/§2.1 提供区位/产业/生态现状诊断，geometry 各图层呈现场地空间现状",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "项目概述"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson"
+      ],
+      "metric_refs": [],
+      "source_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A1-provisional-boundary"
+      ],
+      "self_check_ids": []
     },
     {
       "item_id": "three_level_scope_framework",
-      "depth_level": "conceptual_recommendation",
-      "gap": "三区两翼结构明确，缺精确坐标",
-      "next_step_to_formal": "官方红线后复算"
+      "professional_dimension": "三层范围框架/空间结构",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §1.2/§3.1 明确统筹/总体/重点三层范围及三带结构；key_areas.geojson 含三重点区域坐标",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "总体概念"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "metrics.json"
+      ],
+      "source_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A1-provisional-boundary"
+      ],
+      "self_check_ids": []
     },
     {
       "item_id": "overall_spatial_structure",
-      "depth_level": "conceptual_recommendation",
-      "gap": "五功能落位完成",
-      "next_step_to_formal": "待控规指标支撑"
+      "professional_dimension": "总体空间结构",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §3.2 详述三脉结构（创新脉/生态脉/文化脉）、五功能（AI服务/生态/产业/文化/生活）",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "总体概念",
+        "总体城市设计"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson"
+      ],
+      "metric_refs": [],
+      "source_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": []
     },
     {
       "item_id": "land_use_layout",
-      "depth_level": "conceptual_recommendation",
-      "gap": "全栈自主概念完整",
-      "next_step_to_formal": "缺建筑/交通/市政详规"
+      "professional_dimension": "用地布局",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §4.1/§4.2 提供用地分类及开发强度概念建议；land_use.geojson 含 123 个地块图斑",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "用地与建筑"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [],
+      "source_ids": [
+        "MNR-LAND-USE-CLASSIFICATION-GUIDE"
+      ],
+      "assumption_ids": [
+        "A1-provisional-boundary"
+      ],
+      "self_check_ids": []
     },
     {
       "item_id": "development_intensity_controls",
-      "depth_level": "conceptual_recommendation",
-      "gap": "生态/人才客厅概念",
-      "next_step_to_formal": "缺现状建筑与容量"
+      "professional_dimension": "开发强度管控",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §4.2 提供概念容积率区间（0.5-4.5）及高度管控策略，缺正式控规指标",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "用地与建筑"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [],
+      "metric_refs": [],
+      "source_ids": [
+        "MOHURD-CONTROL-DETAILED-PLANNING"
+      ],
+      "assumption_ids": [
+        "A1-provisional-boundary"
+      ],
+      "self_check_ids": []
     },
     {
       "item_id": "height_massing_character",
-      "depth_level": "conceptual_recommendation",
-      "gap": "智能原生业态概念",
-      "next_step_to_formal": "缺商业容量与交通评估"
+      "professional_dimension": "高度与体量形态",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §4.3 提出 AI 原生高度分区策略（核心 100m/配套 60m/生态优先）",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "重点区域设计"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [],
+      "metric_refs": [],
+      "source_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A1-provisional-boundary"
+      ],
+      "self_check_ids": []
     },
     {
       "item_id": "retain_renovate_demolish",
-      "depth_level": "conceptual_recommendation",
-      "gap": "骨架与诱导概念",
-      "next_step_to_formal": "无红线/断面/客流数据"
+      "professional_dimension": "保留/改造/拆除策略",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §4.4 提出骨架保留/功能更新/拆除重建分类策略，buildings.geojson 含 40 个建筑图斑",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "更新项目与分期"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [
+        "geometry/buildings.geojson"
+      ],
+      "metric_refs": [],
+      "source_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": []
     },
     {
       "item_id": "traffic_rail_slow_parking",
-      "depth_level": "conceptual_recommendation",
-      "gap": "公共空间网络概念",
-      "next_step_to_formal": "缺精确绿地率法定值"
+      "professional_dimension": "交通与慢行系统",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §5.1/§5.2 提出轨道/步行/停车概念方案；roads.geojson 含 6 条道路中心线",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "交通与公共空间"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [],
+      "source_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": []
     },
     {
       "item_id": "municipal_new_infrastructure",
-      "depth_level": "directional_only",
-      "gap": "仅方向性建议",
-      "next_step_to_formal": "缺市政管线/安全约束"
+      "professional_dimension": "市政与新型基础设施",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §5.3 提出数字孪生/算力网络/绿色能源概念建议（方向性，缺管线详规）",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "交通与公共空间"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [],
+      "metric_refs": [],
+      "source_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": []
     },
     {
       "item_id": "blue_green_public_space",
-      "depth_level": "conceptual_recommendation",
-      "gap": "12场景卡+验证+画像",
-      "next_step_to_formal": "待实测与迭代数据"
+      "professional_dimension": "蓝绿公共空间",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §5.2/§5.3 描述蓝绿空间体系及蓝绿公共空间；green_space.geojson 1 个图层，public_space.geojson 4 个公共空间",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "交通与公共空间"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "metrics.json"
+      ],
+      "source_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": []
     },
     {
       "item_id": "three_key_area_detailed_design",
-      "depth_level": "conceptual_recommendation",
-      "gap": "三层文化+国际传播文案",
-      "next_step_to_formal": "待融媒体资源落地"
+      "professional_dimension": "三重点区域详细设计",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §6 众智园（192.1ha）/AI原点（104.3ha）/大钟寺（72.0ha）三区各含详细设计说明；key_areas.geojson 含三区坐标",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "重点区域设计"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [],
+      "source_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "A1-provisional-boundary"
+      ],
+      "self_check_ids": []
     },
     {
       "item_id": "renewal_project_list",
-      "depth_level": "conceptual_recommendation",
-      "gap": "概念方案，待官方数据深化",
-      "next_step_to_formal": "补充法定规划对接"
+      "professional_dimension": "更新项目清单",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §7.2/§7.3 列举优先项目（京张高铁新生/AI原点激活等）；phasing.geojson 含三期时序",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "更新项目与分期"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [
+        "geometry/phasing.geojson"
+      ],
+      "metric_refs": [],
+      "source_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": []
     },
     {
       "item_id": "phasing_implementation",
-      "depth_level": "conceptual_recommendation",
-      "gap": "概念方案，待官方数据深化",
-      "next_step_to_formal": "补充法定规划对接"
+      "professional_dimension": "分期实施计划",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "proposal.md §7.3 提出近期（1-3年）/中期（3-7年）/远期（7年+）分期策略；phasing.geojson 三期图层",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "更新项目与分期"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [
+        "geometry/phasing.geojson"
+      ],
+      "metric_refs": [],
+      "source_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [],
+      "self_check_ids": []
     },
     {
       "item_id": "metrics_recalculation",
-      "depth_level": "conceptual_recommendation",
-      "gap": "概念方案，待官方数据深化",
-      "next_step_to_formal": "补充法定规划对接"
+      "professional_dimension": "核心指标核算",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "metrics.json 提供 site_area_sqm/green_ratio/public_space_ratio 等 15 个指标，status=known，来源为 EPSG:4548 投影计算",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "核心指标"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "metric_refs": [
+        "metrics.json"
+      ],
+      "source_ids": [],
+      "assumption_ids": [
+        "A1-provisional-boundary"
+      ],
+      "self_check_ids": []
     },
     {
       "item_id": "risk_missing_data",
-      "depth_level": "conceptual_recommendation",
-      "gap": "概念方案，待官方数据深化",
-      "next_step_to_formal": "补充法定规划对接"
+      "professional_dimension": "风险与数据缺口识别",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "assumptions.json 记录全部数据缺口假设（官方红线/控规指标/交通OD数据等），sources.json 记录数据来源",
+      "completeness_limited_by": null,
+      "proposal_sections": [
+        "假设与局限"
+      ],
+      "drawing_refs": [],
+      "geometry_refs": [],
+      "metric_refs": [],
+      "source_ids": [],
+      "assumption_ids": [
+        "A1-provisional-boundary",
+        "A2-epsg4548-coordsys",
+        "A3-no-fabricated-data"
+      ],
+      "self_check_ids": []
     }
-  ],
-  "overall_depth": "conceptual_recommendation (开源共创概念方案；非法定正式成果)"
+  ]
 }
