@@ -8,7 +8,7 @@
       "properties": {
         "id": "PROV-KEY-001",
         "layer": "KEY_AREA",
-        "source_type": "agent_generated_provisional",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "low",
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
@@ -55,7 +55,7 @@
       "properties": {
         "id": "PROV-KEY-002",
         "layer": "KEY_AREA",
-        "source_type": "agent_generated_provisional",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "low",
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
@@ -102,7 +102,7 @@
       "properties": {
         "id": "PROV-KEY-003",
         "layer": "KEY_AREA",
-        "source_type": "agent_generated_provisional",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "low",
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
