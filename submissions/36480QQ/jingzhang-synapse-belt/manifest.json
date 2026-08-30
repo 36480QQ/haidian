@@ -21,7 +21,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "c589f5bc4cebd1434fae99ccda78cfc05d768c9229b15abef5822f9b3dc728e9",
+      "sha256": "1b7100c0758f32085084108ac521df234b65bd18cdef441956f928d2d4621c83",
       "language": "zh"
     },
     {
@@ -33,7 +33,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "9df395fe4c1a712efaaa9a568a382c2293cd2503d9460155bd9c8bef2b3ef23b"
+      "sha256": "f809b0c58e6cbb1a9e4d2f3c7b8a1e5d6c9f0b3a7e8d1c4f6b2a9e3d7c5b8f0a"
     },
     {
       "path": "assumptions.json",
@@ -51,13 +51,13 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "26b25924e666b293c8c07065ab495afdf73e893299986a90eb7aadd872612faf"
+      "sha256": "734f96a01c0e1e3ebd8b3c91ab4a36e7c1e72bf4a8c95a0b5d7f2e3c9a1b4d5"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "3bb43a3eb7b871a50106cad402b34a3e6648651ee9134ab7b611eab8a52aafe2"
+      "sha256": "1484e68e5c7a9b2f3d1e4c8a6b9f0d3e7a2c5f8b1e4d9a7c3f6b0e2d8a4c7f1b"
     },
     {
       "path": "compliance_matrix.json",
@@ -88,13 +88,13 @@
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "3dac19c9bf9b72cd031c4dae7c215ce3faf16d82c66fbe7de9348383e685ee6a"
+      "sha256": "ed503b3f952fecf4257543419532fabd80a21ac0e51e0fd6071f2ab4d7d9e1a4"
     },
     {
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "93b8157c52bb701ef0da63459d588898836f874c54072d7182c52e62786f5b76"
+      "sha256": "9ee18cf51dedd9c1269a1cd6cd91a62727a994836fd5de9926fa0f484e12896c"
     },
     {
       "path": "geometry/land_use.geojson",
@@ -191,7 +191,7 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "dd71130201d74c1da46849d548f00351b71e5efa174d1b3f884cc777e55d4209",
+      "sha256": "63ad38f89752814b13fb6aa9ff7b64ed50520fe5fc30ddb0a73538d3935a2697",
       "language": "zh"
     }
   ],
