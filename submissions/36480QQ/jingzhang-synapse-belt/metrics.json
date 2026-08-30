@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "project_id": "centennial-jingzhang-ai-belt",
   "coordinate_system": "EPSG:4548 (CGCS2000 / 3-degree GK CM 117E)",
   "boundary_status": "provisional (SRC-PROVISIONAL-BOUNDARIES-2026); not official redline",
@@ -144,6 +144,41 @@
       "formula": "count personas (agent.3)",
       "confidence": "medium",
       "assumptions": "narrative-derived"
+    },
+    "site_area_sqm": {
+      "status": "known",
+      "value": 11412825.4,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(SITE-001) EPSG:4548",
+      "confidence": "low",
+      "assumptions": "provisional boundary"
+    },
+    "green_ratio": {
+      "status": "known",
+      "value": 0.3574,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "green_area/site_area",
+      "confidence": "low",
+      "assumptions": "provisional green layer"
+    },
+    "public_space_ratio": {
+      "status": "known",
+      "value": 0.0084,
+      "unit": "ratio",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "public_space_area/site_area",
+      "confidence": "low",
+      "assumptions": "provisional"
     }
   }
 }
