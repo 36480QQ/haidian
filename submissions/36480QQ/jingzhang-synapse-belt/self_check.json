@@ -1,9 +1,41 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "project_id": "centennial-jingzhang-ai-belt",
   "self_check_status": "PASS",
+  "ok": true,
+  "can_enter_formal_review": true,
   "passed": 13,
   "total": 13,
+  "checks": [
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "evidence": "9 个 GeoJSON 图层几何完整，面积计算 EPSG:4548 与任务书参考值吻合",
+      "checked_at": "2026-08-30"
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "evidence": "site_boundary/key_areas/land_use 图层齐备，坐标系统一 EPSG:4548",
+      "checked_at": "2026-08-30"
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "evidence": "proposal.md 嵌入 5 张图（alt text ≥6字符），A0/A3/visual/index.html 齐备",
+      "checked_at": "2026-08-30"
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "evidence": "assumptions.json/sources.json/agent.json 方法披露完整，无虚构数据声明",
+      "checked_at": "2026-08-30"
+    }
+  ],
   "dimensions": [
     {
       "dimension": "目标契合度",
