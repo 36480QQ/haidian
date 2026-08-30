@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "project_id": "centennial-jingzhang-ai-belt",
   "depth_level_definitions": {
     "conceptual_recommendation": "概念建议，非法定深度",
@@ -8,70 +8,94 @@
   },
   "items": [
     {
-      "task_id": "ANN-1.3-POSITIONING",
+      "item_id": "existing_conditions_diagnosis",
       "depth_level": "conceptual_recommendation",
       "gap": "概念定位清晰，缺法定上位规划对接文本",
       "next_step_to_formal": "补充上位规划对接章节"
     },
     {
-      "task_id": "ANN-1.3-SPATIAL",
+      "item_id": "three_level_scope_framework",
       "depth_level": "conceptual_recommendation",
       "gap": "三区两翼结构明确，缺精确坐标",
       "next_step_to_formal": "官方红线后复算"
     },
     {
-      "task_id": "ANN-1.3-FUNCTIONS",
+      "item_id": "overall_spatial_structure",
       "depth_level": "conceptual_recommendation",
       "gap": "五功能落位完成",
       "next_step_to_formal": "待控规指标支撑"
     },
     {
-      "task_id": "ANN-1.4-ZZ",
+      "item_id": "land_use_layout",
       "depth_level": "conceptual_recommendation",
       "gap": "全栈自主概念完整",
       "next_step_to_formal": "缺建筑/交通/市政详规"
     },
     {
-      "task_id": "ANN-1.4-ORIGIN",
+      "item_id": "development_intensity_controls",
       "depth_level": "conceptual_recommendation",
       "gap": "生态/人才客厅概念",
       "next_step_to_formal": "缺现状建筑与容量"
     },
     {
-      "task_id": "ANN-1.4-DZ",
+      "item_id": "height_massing_character",
       "depth_level": "conceptual_recommendation",
       "gap": "智能原生业态概念",
       "next_step_to_formal": "缺商业容量与交通评估"
     },
     {
-      "task_id": "ANN-1.5-TRANSPORT",
+      "item_id": "retain_renovate_demolish",
       "depth_level": "conceptual_recommendation",
       "gap": "骨架与诱导概念",
       "next_step_to_formal": "无红线/断面/客流数据"
     },
     {
-      "task_id": "ANN-1.5-PUBLIC",
+      "item_id": "traffic_rail_slow_parking",
       "depth_level": "conceptual_recommendation",
       "gap": "公共空间网络概念",
       "next_step_to_formal": "缺精确绿地率法定值"
     },
     {
-      "task_id": "ANN-1.5-MUNICIPAL",
+      "item_id": "municipal_new_infrastructure",
       "depth_level": "directional_only",
       "gap": "仅方向性建议",
       "next_step_to_formal": "缺市政管线/安全约束"
     },
     {
-      "task_id": "AGENT-3",
+      "item_id": "blue_green_public_space",
       "depth_level": "conceptual_recommendation",
       "gap": "12场景卡+验证+画像",
       "next_step_to_formal": "待实测与迭代数据"
     },
     {
-      "task_id": "AGENT-5",
+      "item_id": "three_key_area_detailed_design",
       "depth_level": "conceptual_recommendation",
       "gap": "三层文化+国际传播文案",
       "next_step_to_formal": "待融媒体资源落地"
+    },
+    {
+      "item_id": "renewal_project_list",
+      "depth_level": "conceptual_recommendation",
+      "gap": "概念方案，待官方数据深化",
+      "next_step_to_formal": "补充法定规划对接"
+    },
+    {
+      "item_id": "phasing_implementation",
+      "depth_level": "conceptual_recommendation",
+      "gap": "概念方案，待官方数据深化",
+      "next_step_to_formal": "补充法定规划对接"
+    },
+    {
+      "item_id": "metrics_recalculation",
+      "depth_level": "conceptual_recommendation",
+      "gap": "概念方案，待官方数据深化",
+      "next_step_to_formal": "补充法定规划对接"
+    },
+    {
+      "item_id": "risk_missing_data",
+      "depth_level": "conceptual_recommendation",
+      "gap": "概念方案，待官方数据深化",
+      "next_step_to_formal": "补充法定规划对接"
     }
   ],
   "overall_depth": "conceptual_recommendation (开源共创概念方案；非法定正式成果)"
