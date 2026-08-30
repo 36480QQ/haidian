@@ -57,13 +57,13 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "1484e68ea8e18aeba2ff3af298e5d7f0ed3949d24e5a8c831ab6521058150317"
+      "sha256": "34ffe6ed51a11189921fb2471203fc623d9c144f42a1c34b748f51a7a0c875aa"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "cd3e4f4747af831d5609a18a5c619c55d879b92fc4890981699c7a967f42c91e"
+      "sha256": "b1647496c4ec0602ccf9753a2897a1dfd5456a20fcc3b8e91214b6104e427d6b"
     },
     {
       "path": "metrics.json",
@@ -106,7 +106,7 @@
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "01a7896507d7d5ce9bec0539ca8270bc4ccb607e5bcddeb533e117b10acb3c77"
+      "sha256": "43dca80732d2057a576e508869c5f5829a5327d859c8f98f5fa57d6a02a8d06a"
     },
     {
       "path": "geometry/roads.geojson",
@@ -184,7 +184,7 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "e27726476e578ce8ab7dc5c7ec8c008606eb71c4ad1580a6f513cd6a21780f2e",
+      "sha256": "bab52e7d00698a5acdb1d5892f3ed738605c42d4e4fe3fabf08f52f4671e7211",
       "language": "zh"
     },
     {
