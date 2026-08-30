@@ -1,243 +1,2053 @@
 {
-  "schema_version": "0.1.0",
-  "project_id": "centennial-jingzhang-ai-belt",
-  "principle": "all items are conceptual recommendations; no statutory planning conclusions",
-  "announcement_tasks": [
-    {
-      "task_id": "ANN-1.3-POSITIONING",
-      "task_source": "征集公告1.3",
-      "description": "总体定位：三大带（百年京张文化带/都市AI生活体验带/AI融合创新带）",
-      "covered": true,
-      "evidence": [
-        "proposal.md#1.3"
-      ],
-      "confidence": "medium",
-      "notes": "概念方案，非法定结论"
-    },
-    {
-      "task_id": "ANN-1.3-SPATIAL",
-      "task_source": "征集公告1.3",
-      "description": "三区两翼空间结构",
-      "covered": true,
-      "evidence": [
-        "proposal.md#1.5",
-        "geometry/key_areas.geojson"
-      ],
-      "confidence": "medium",
-      "notes": "概念方案"
-    },
-    {
-      "task_id": "ANN-1.3-FUNCTIONS",
-      "task_source": "征集公告1.3",
-      "description": "五大功能落位",
-      "covered": true,
-      "evidence": [
-        "proposal.md#1.4",
-        "proposal.md#2"
-      ],
-      "confidence": "medium",
-      "notes": "概念方案"
-    },
-    {
-      "task_id": "ANN-1.3-DETAILED",
-      "task_source": "征集公告1.3",
-      "description": "三处重点区域详细设计",
-      "covered": true,
-      "evidence": [
-        "geometry/key_areas.geojson",
-        "geometry/phasing.geojson",
-        "proposal.md#2"
-      ],
-      "confidence": "low",
-      "notes": "基于临时边界，缺官方红线"
-    },
-    {
-      "task_id": "ANN-1.3-SPECIAL",
-      "task_source": "征集公告1.3",
-      "description": "专项城市设计+国际传播",
-      "covered": true,
-      "evidence": [
-        "proposal.md#2.4",
-        "proposal.md#3"
-      ],
-      "confidence": "medium",
-      "notes": "国际传播为媒体融合强项"
-    },
-    {
-      "task_id": "ANN-1.3-OPERATION",
-      "task_source": "征集公告1.3",
-      "description": "全球活动体系与长效运营",
-      "covered": true,
-      "evidence": [
-        "proposal.md#4"
-      ],
-      "confidence": "medium",
-      "notes": "运营机制概念"
-    },
-    {
-      "task_id": "ANN-1.4-ZZ",
-      "task_source": "征集公告1.4",
-      "description": "众智园AI自主创新加速区详细设计",
-      "covered": true,
-      "evidence": [
-        "geometry/key_areas.geojson",
-        "proposal.md#2.1"
-      ],
-      "confidence": "low",
-      "notes": "临时边界"
-    },
-    {
-      "task_id": "ANN-1.4-ORIGIN",
-      "task_source": "征集公告1.4",
-      "description": "北京AI原点社区详细设计",
-      "covered": true,
-      "evidence": [
-        "geometry/key_areas.geojson",
-        "proposal.md#2.2"
-      ],
-      "confidence": "low",
-      "notes": "临时边界"
-    },
-    {
-      "task_id": "ANN-1.4-DZ",
-      "task_source": "征集公告1.4",
-      "description": "大钟寺AI产业集聚区详细设计",
-      "covered": true,
-      "evidence": [
-        "geometry/key_areas.geojson",
-        "proposal.md#2.4"
-      ],
-      "confidence": "low",
-      "notes": "临时边界"
-    },
-    {
-      "task_id": "ANN-1.5-TRANSPORT",
-      "task_source": "征集公告1.5",
-      "description": "综合交通体系",
-      "covered": true,
-      "evidence": [
-        "geometry/roads.geojson",
-        "proposal.md#5"
-      ],
-      "confidence": "low",
-      "notes": "仅概念，无红线/工程"
-    },
-    {
-      "task_id": "ANN-1.5-PUBLIC",
-      "task_source": "征集公告1.5",
-      "description": "公共空间与景观环境",
-      "covered": true,
-      "evidence": [
-        "geometry/public_space.geojson",
-        "geometry/green_space.geojson",
-        "proposal.md#2.4"
-      ],
-      "confidence": "low",
-      "notes": "概念图层"
-    },
-    {
-      "task_id": "ANN-1.5-MUNICIPAL",
-      "task_source": "征集公告1.5",
-      "description": "市政与智慧化",
-      "covered": true,
-      "evidence": [
-        "proposal.md#5"
-      ],
-      "confidence": "low",
-      "notes": "方向性建议，缺市政资料"
-    },
-    {
-      "task_id": "ANN-1.5-IMPLEMENT",
-      "task_source": "征集公告1.5",
-      "description": "实施传导与近期行动",
-      "covered": true,
-      "evidence": [
-        "geometry/phasing.geojson",
-        "proposal.md#5"
-      ],
-      "confidence": "medium",
-      "notes": "三期分期概念"
-    }
-  ],
-  "agent_tasks": [
-    {
-      "task_id": "AGENT-1",
-      "task_source": "智能体任务1",
-      "description": "总体概念：命名/Logo/三定位/五功能/三区两翼/空间结构",
-      "covered": true,
-      "evidence": [
-        "proposal.md#0",
-        "proposal.md#1"
-      ],
-      "confidence": "medium",
-      "notes": "原创命名体系，Logo为概念方向"
-    },
-    {
-      "task_id": "AGENT-2",
-      "task_source": "智能体任务2",
-      "description": "AI全栈自主+世界级生态（5-8案例/生态地图/要素机制）",
-      "covered": true,
-      "evidence": [
-        "proposal.md#2.1",
-        "proposal.md#2.2"
-      ],
-      "confidence": "medium",
-      "notes": "案例为真实公开案例"
-    },
-    {
-      "task_id": "AGENT-3",
-      "task_source": "智能体任务3",
-      "description": "AI+场景范式（≥10场景卡/≥3验证/≥5画像/映射）",
-      "covered": true,
-      "evidence": [
-        "proposal.md#2.3"
-      ],
-      "confidence": "medium",
-      "notes": "含12场景卡/3验证/6画像"
-    },
-    {
-      "task_id": "AGENT-4",
-      "task_source": "智能体任务4",
-      "description": "公共空间+地标（≥3朝圣地标/荣耀墙/组件库）",
-      "covered": true,
-      "evidence": [
-        "proposal.md#2.4",
-        "geometry/public_space.geojson"
-      ],
-      "confidence": "low",
-      "notes": "含4地标，几何为概念"
-    },
-    {
-      "task_id": "AGENT-5",
-      "task_source": "智能体任务5",
-      "description": "文化叙事+品牌+国际传播",
-      "covered": true,
-      "evidence": [
-        "proposal.md#3"
-      ],
-      "confidence": "medium",
-      "notes": "媒体融合/国际传播契合度高"
-    },
-    {
-      "task_id": "AGENT-6",
-      "task_source": "智能体任务6",
-      "description": "全球活动体系+长效运营+转化路径",
-      "covered": true,
-      "evidence": [
-        "proposal.md#4"
-      ],
-      "confidence": "medium",
-      "notes": "运营机制概念"
-    }
-  ],
-  "coverage_summary": {
-    "announcement_tasks_total": 13,
-    "announcement_tasks_covered": 13,
-    "agent_tasks_total": 6,
-    "agent_tasks_covered": 6
-  },
+  "schema_version": "0.2.0",
+  "project_id": "jingzhang-synapse-belt",
   "requirements": [
-    "本方案遵守开源共创宪章十条",
-    "方案内容仅使用已授权或公开数据"
+    {
+      "requirement_id": "1.3.1",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.3.2",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.3.3",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.4.1",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.4.2",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.4.3",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.1.1",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.1.2",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.1",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.2",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.3",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.4",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.2.5",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.required",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.1",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.2",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "1.5.3.3",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "agent.1",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "agent.2",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "agent.3",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "agent.4",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "agent.5",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    },
+    {
+      "requirement_id": "agent.6",
+      "mandatory": true,
+      "report_sections": [
+        "## 设计依据与资料清单",
+        "## 三层范围工作框架",
+        "## 重点区域详细设计",
+        "## 用地、建筑规模与拆改留方案",
+        "## 交通、轨道、市政与公共服务设施",
+        "## 蓝绿空间、公共空间与城市风貌",
+        "## 更新项目清单、实施政策与分期计划",
+        "## 指标体系、面积复算与合规矩阵",
+        "## 风险、版权与合规说明",
+        "## 参考资料"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "key_areas",
+        "land_use",
+        "roads",
+        "buildings",
+        "green_space",
+        "public_space",
+        "constraints",
+        "phasing"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio",
+        "total_site_area",
+        "key_area_zhongzhiyuan",
+        "key_area_ai_origin",
+        "key_area_dazhongsi",
+        "green_space_ratio",
+        "public_space_area",
+        "land_use_composition",
+        "building_footprint_count",
+        "road_centerline_length",
+        "scenario_node_count",
+        "ai_landmark_count",
+        "persona_count"
+      ],
+      "drawings": [
+        "a0-boards.pdf",
+        "a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "总览地图",
+        "三层范围",
+        "重点区域",
+        "用地分区",
+        "交通慢行",
+        "蓝绿公共空间",
+        "建筑",
+        "更新项目",
+        "AI场景",
+        "核心指标",
+        "任务覆盖",
+        "自检状态",
+        "来源",
+        "假设"
+      ],
+      "source_ids": [
+        "SRC-2026-0518-AGENT-OPEN-CALL-TASKBOOK",
+        "SRC-PROVISIONAL-BOUNDARIES-2026",
+        "SRC-2026-BJ-GH-QUAL-PREANNOUNCEMENT",
+        "SRC-2026-BJ-KW-THREE-AREAS-WINGS",
+        "SRC-2017-MOHURD-URBAN-DESIGN-MEASURES",
+        "SRC-MOHURD-CONTROL-DETAILED-PLANNING",
+        "SRC-2026-HAIDIAN-1X1",
+        "SRC-2023-MNR-LAND-USE-CLASSIFICATION",
+        "SRC-OSM-COPYRIGHT",
+        "SRC-SUBMISSION-GEOMETRY-2026"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "self_check_ids": [
+        "DETERMINISTIC_VALIDATION",
+        "SPATIAL_REVIEW",
+        "VISUAL_PACKAGING",
+        "PROFESSIONAL_EVIDENCE"
+      ]
+    }
   ]
 }
