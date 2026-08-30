@@ -14,154 +14,183 @@
     "model_family": "other",
     "model_detail": "QClaw 智能体 + Python (shapely/pyproj/matplotlib/reportlab)"
   },
-  "generated_at": "2026-08-30T01:13:38Z",
+  "generated_at": "2026-08-30T01:19:26Z",
   "cover_image": null,
   "files": [
     {
       "path": "proposal.md",
       "role": "narrative",
+      "required": true,
       "sha256": "c589f5bc4cebd1434fae99ccda78cfc05d768c9229b15abef5822f9b3dc728e9",
       "language": "zh"
     },
     {
       "path": "manifest.json",
-      "role": "manifest"
+      "role": "manifest",
+      "required": true
     },
     {
       "path": "agent.json",
       "role": "agent_card",
+      "required": true,
       "sha256": "9df395fe4c1a712efaaa9a568a382c2293cd2503d9460155bd9c8bef2b3ef23b"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
+      "required": true,
       "sha256": "ef0834bc27232ac6b75a78e6137101a0e2bcc7449bc6150774f9cdc847aa56e7"
     },
     {
       "path": "sources.json",
       "role": "sources",
+      "required": true,
       "sha256": "75c00914ce0349126ba68f1947c32aeb8a2cc9996074a1e311c8f0c37976bf6a"
     },
     {
       "path": "standard_matrix.json",
       "role": "standard_matrix",
+      "required": true,
       "sha256": "26b25924e666b293c8c07065ab495afdf73e893299986a90eb7aadd872612faf"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
+      "required": true,
       "sha256": "3bb43a3eb7b871a50106cad402b34a3e6648651ee9134ab7b611eab8a52aafe2"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
+      "required": true,
       "sha256": "cd3e4f4747af831d5609a18a5c619c55d879b92fc4890981699c7a967f42c91e"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
+      "required": true,
       "sha256": "09b5581dc0f954f75030e4e2fe23d7115c13f11ee266974387f5cf4a523977a6"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
+      "required": true,
       "sha256": "135dcd6ea69ec1cc1de72628164e576cb9d11f31e3965d4bd22b28430f88c920"
     },
     {
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
+      "required": true,
       "sha256": "70688aa4483947cfd6218ac2a44c537452cc5f604584b638c5df7c745743ffb5",
       "language": "zh"
     },
     {
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
+      "required": true,
       "sha256": "3dac19c9bf9b72cd031c4dae7c215ce3faf16d82c66fbe7de9348383e685ee6a"
     },
     {
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
+      "required": true,
       "sha256": "93b8157c52bb701ef0da63459d588898836f874c54072d7182c52e62786f5b76"
     },
     {
       "path": "geometry/land_use.geojson",
       "role": "geometry",
+      "required": true,
       "sha256": "836372f76017205ed31b0dd9c231d3c6d98f6caa3c7eae726e362cf0c70d60c1"
     },
     {
       "path": "geometry/buildings.geojson",
       "role": "geometry",
+      "required": true,
       "sha256": "01a7896507d7d5ce9bec0539ca8270bc4ccb607e5bcddeb533e117b10acb3c77"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
+      "required": true,
       "sha256": "1964a6dc279b7cdcfa5f3244a8f903ecc82ba39a380ebc980f8b9858112d7b81"
     },
     {
       "path": "geometry/green_space.geojson",
       "role": "geometry",
+      "required": true,
       "sha256": "f39338950cc9030bc45f9d799a39bc8f93d31f82b37c33e9cc9e037620884a40"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
+      "required": true,
       "sha256": "28036a9eb44e5699dd074d56abae8682c41fb96c26a7068bcfad08351ed3106b"
     },
     {
       "path": "geometry/phasing.geojson",
       "role": "geometry",
+      "required": true,
       "sha256": "6b14da7b047bda4f047bbf022d433ea9490b0869e8a4824cdfd25693f12d1452"
     },
     {
       "path": "geometry/constraints.geojson",
       "role": "geometry",
+      "required": true,
       "sha256": "15b8ce4f5677c266584a99cf7cd40acbbc180a05c4e048e5f7f15cf2acd13eae"
     },
     {
       "path": "assets/figures/site-overview.png",
       "role": "figure",
+      "required": true,
       "sha256": "717b0426ed18d8abe83584d4efb2de393c179c7c061212348ed3ac4bf86dfded"
     },
     {
       "path": "assets/figures/key-areas.png",
       "role": "figure",
+      "required": true,
       "sha256": "376129aaabf5f3dde21f9113ffbfc80643210fba1d20c7c266f074b20c4acf47"
     },
     {
       "path": "assets/figures/land-use-structure.png",
       "role": "figure",
+      "required": true,
       "sha256": "9d7109bc4df41b133cebf3748711cc26872ed5f9875766d6e9cca1d325c6286b"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
       "role": "figure",
+      "required": true,
       "sha256": "10dabdb87fa34bef3c67819473adbc22e9a36574a989532165581b322a1fd806"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
       "role": "figure",
+      "required": true,
       "sha256": "0a89937330592cf49513f5e3cab0d5265181c2dde7f239ff44c70c1057e9d1a7"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
+      "required": true,
       "sha256": "db4f1040592c625d9db97c2652550bf2de9cec9293b1cc5a5505924d05e80255"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
+      "required": true,
       "sha256": "efc8663c07506e42129910a6bcb255ff2383832a2839abe9341e720dc34ec643"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
+      "required": true,
       "sha256": "e27726476e578ce8ab7dc5c7ec8c008606eb71c4ad1580a6f513cd6a21780f2e",
       "language": "zh"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
+      "required": true,
       "sha256": "dd71130201d74c1da46849d548f00351b71e5efa174d1b3f884cc777e55d4209",
       "language": "zh"
     }
