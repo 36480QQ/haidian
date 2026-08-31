@@ -193,6 +193,83 @@
       "required": true,
       "sha256": "63ad38f89752814b13fb6aa9ff7b64ed50520fe5fc30ddb0a73538d3935a2697",
       "language": "zh"
+    },
+    {
+      "path": "proposal.en.md",
+      "role": "narrative",
+      "required": true,
+      "sha256": "b54c634faae2bb4cabeed0284812d2a0befd0952c08ba6da11bddb17d3fa425c",
+      "language": "en"
+    },
+    {
+      "path": "assets/figures/site-overview.en.png",
+      "role": "figure",
+      "required": true,
+      "sha256": "aed8085bd070a9c741a6bc25c38f7713af6809095e759af39900bbe6d32eca7f",
+      "language": "en"
+    },
+    {
+      "path": "assets/figures/key-areas.en.png",
+      "role": "figure",
+      "required": true,
+      "sha256": "1f9a5b844de15991991c4d79a5ca681c717537ea9919648d8d68f71ca74744ca",
+      "language": "en"
+    },
+    {
+      "path": "assets/figures/land-use-structure.en.png",
+      "role": "figure",
+      "required": true,
+      "sha256": "885ea1488aca1cbd44b8f043eb4c74002b15026604e3f0b351716208df8174bc",
+      "language": "en"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.en.png",
+      "role": "figure",
+      "required": true,
+      "sha256": "30ebea36cf201680f224b5c4f12dd08ea2949a0e01aa989012a443c4e11f452a",
+      "language": "en"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.en.png",
+      "role": "figure",
+      "required": true,
+      "sha256": "49ed9e86e3e4148dfe28dbf5bceca48f5baebbfe392a776c2c9ec257be116fc7",
+      "language": "en"
+    },
+    {
+      "path": "drawings/a0-boards.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "sha256": "ce1edd1d5ca489a8d8a26df846ef1a6260a04cef315fcf298803385516d9defe",
+      "language": "en"
+    },
+    {
+      "path": "drawings/a3-booklet.en.pdf",
+      "role": "drawing",
+      "required": true,
+      "sha256": "2fe77201ef76fc942d69d8a10848aa631d903d2576e45d5f32edcda07eb63faa",
+      "language": "en"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "role": "report_html",
+      "required": true,
+      "sha256": "c4e3295c42613378aa9b89ce659feb849e596946ca69066aa0c4deecc0b28f16",
+      "language": "en"
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visual_index",
+      "required": true,
+      "sha256": "1e7210f7142438fef0c589877fe1e70a45795f495bc4490ecc8b131f6a3c21bb",
+      "language": "en"
+    },
+    {
+      "path": "report/copyright_statement.en.md",
+      "role": "copyright",
+      "required": true,
+      "sha256": "21781a1e53a093fd2c0870b03b3bb903e7e4355ff48b557c3701e984549730ed",
+      "language": "en"
     }
   ],
   "validation_claim": {
