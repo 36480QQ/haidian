@@ -252,23 +252,16 @@
     },
     {
       "path": "report/proposal.en.html",
-      "role": "report_html",
+      "role": "rendered_proposal_html",
       "required": true,
       "sha256": "c4e3295c42613378aa9b89ce659feb849e596946ca69066aa0c4deecc0b28f16",
       "language": "en"
     },
     {
       "path": "visual/index.en.html",
-      "role": "visual_index",
+      "role": "visualization",
       "required": true,
       "sha256": "1e7210f7142438fef0c589877fe1e70a45795f495bc4490ecc8b131f6a3c21bb",
-      "language": "en"
-    },
-    {
-      "path": "report/copyright_statement.en.md",
-      "role": "copyright",
-      "required": true,
-      "sha256": "21781a1e53a093fd2c0870b03b3bb903e7e4355ff48b557c3701e984549730ed",
       "language": "en"
     }
   ],
